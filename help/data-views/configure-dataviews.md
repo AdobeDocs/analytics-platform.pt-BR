@@ -2,7 +2,7 @@
 title: Configurar exibições de dados e atribuição
 description: Descreve como criar uma exibição de dados para um conjunto de dados da plataforma no Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
+source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
 ---
 
@@ -32,7 +32,7 @@ Lembre-se disso antes de aplicar as configurações de atribuição:
 Depois de [definir e salvar as configurações](/help/data-views/create-dataview.md) de exibição de dados e adicionar componentes, você estará pronto para especificar as configurações de atribuição, se optar por fazê-lo. Você pode especificar configurações de atribuição/expiração/pesquisa para dimensões e métricas. Se, por exemplo, você quiser que a atribuição de uma dimensão persista, você provavelmente desejará definir um tempo de expiração personalizado. Por exemplo, se você quiser que uma dimensão &quot;Código de rastreamento&quot; (uma variável de campanha) seja definida como atribuição &quot;Último contato&quot; para persistir por uma semana, adicione uma expiração personalizada de uma semana.
 
 >[!IMPORTANT]
->Você pode optar por não definir a alocação/expiração. Nesse caso, as dimensões se comportarão como... . As métricas sem configurações de atribuição definidas herdarão as configurações da dimensão à qual essa métrica é aplicada.
+>Você pode optar por não definir a alocação/expiração. Nesse caso, as dimensões se comportarão como props (modelo de atribuição &quot;Same Touch&quot;). As métricas sem configurações de atribuição definidas herdarão as configurações da dimensão à qual essa métrica é aplicada.
 
 ![](assets/edit-component.png)
 
@@ -72,7 +72,7 @@ Especifica um período de tempo, ou evento, após o qual o valor da dimensão ex
 | Pessoa (Janela de Relatório) | Anteriormente conhecido como o nível &quot;Visitante&quot;. Os eventos de conversão não vinculados a essa pessoa não estão associados à dimensão ou métrica. |
 | Tempo personalizado | Especifique os minutos, horas, dias, meses ou trimestres personalizados. Os eventos de conversão além do período de tempo especificado não estão associados à dimensão ou à métrica. |
 
-Para obter mais informações, consulte o documento [IQ de](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)Atribuição.
+Para obter mais informações, consulte o documento [IQ de](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)atribuição.
 
 ### Janela de lookback
 
