@@ -2,7 +2,7 @@
 title: Perguntas frequentes sobre análise de jornada do cliente
 description: Análise de jornada do cliente - Perguntas frequentes.
 translation-type: tm+mt
-source-git-commit: cca701c2a18d094ee4b172b032c125e710b51ff0
+source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
 
 ---
 
@@ -32,5 +32,5 @@ source-git-commit: cca701c2a18d094ee4b172b032c125e710b51ff0
 | Onde estão todas as minhas configurações de persistência de sessão e variável agora? | A Análise de jornada do cliente aplica todas essas configurações no momento do relatório, e essas configurações agora vivem em Exibições de dados. As alterações nessas configurações agora são retroativas e você pode ter várias versões usando várias Exibições de dados! |
 | O que acontece com nossos segmentos atuais/métricas calculadas? | A Análise de jornada do cliente não usa mais eVars, props ou eventos e, em vez disso, usa qualquer esquema AEP. Isso significa que nenhum dos segmentos ou métricas de cálculo existentes são compatíveis com a Análise de jornada do cliente. |
 | Como o Customer Journey Analytics lida com `Uniques Exceeded` limitações? | A Análise de jornada do cliente não tem limitações de valor exclusivas, portanto não é necessário se preocupar com elas! |
-| Se eu for um [!DNL Data Workbench] cliente atual, posso mudar para o Customer Journey Analytics agora? | Depende. Se você depender muito do Unified Customer Process (UCP), aguarde até que a correção seja implementada. Se você já tiver altas taxas de autenticação do cliente, ou se quiser que todos os seus dados estejam em um local, ou se quiser se livrar das eVars, o Customer Journey Analytics pode se encaixar bem. |
+| Se eu for um [!DNL Data Workbench] cliente atual, posso mudar para o Customer Journey Analytics agora? | Depende. Se você depender muito do Unified Customer Process (UCP), aguarde até que a correção seja implementada. Se você já tiver altas taxas de autenticação do cliente, ou se quiser que todos os seus dados estejam em um lugar, ou se quiser se livrar das eVars, o Customer Journey Analytics pode ser uma boa opção. |
 
