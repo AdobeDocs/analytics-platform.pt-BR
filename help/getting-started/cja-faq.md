@@ -2,7 +2,7 @@
 title: Perguntas frequentes sobre análise de jornada do cliente
 description: Análise de jornada do cliente - Perguntas frequentes.
 translation-type: tm+mt
-source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
+source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 17a61026bc92d1fe12c09848f3f249ab50057a5a
 | **Pré-requisitos** |  |
 | Você precisa do Gráfico de dispositivos ou do Device Coop para a Análise de jornada do cliente? | Não, o Gráfico de dispositivos privados ou o Device Coop não são necessários para a Análise de jornada do cliente. Na verdade, eles ainda não são apoiados. |
 | Você precisa da Experience Cloud ID (ECID) para a Análise de jornada do cliente? | Não, o Customer Journey Analytics suporta qualquer ID em um conjunto de dados, seja ECID ou outra ID escolhida. |
-| E se você precisar ETL dos seus dados antes do Customer Journey Analytics? | Atualmente, você precisa trabalhar com um parceiro ETL (Unifi ou Informatica) se precisar transformar seus dados antes de colocá-los na AEP. Se você precisar de ETL depois que os dados já tiverem sido assimilados, o AEP Query Services fornecerá algumas opções limitadas. |
+| E se você precisar ETL (Extrair, Transformar, Carregar) seus dados antes do Customer Journey Analytics? | Atualmente, você precisa trabalhar com um parceiro ETL (Unifi ou Informatica) se precisar transformar seus dados antes de colocá-los na AEP. Se você precisar de ETL depois que os dados já tiverem sido assimilados, o AEP Query Services fornecerá algumas opções limitadas. |
 | **Ortografia** |  |
 | O Customer Journey Analytics pode &quot;unir&quot; entre dispositivos ou conjuntos de dados? | Não. A Análise de jornada do cliente é um sistema analítico &quot;traga sua própria ID&quot;. Os planos para uma boa abordagem costuradora estão em andamento. |
 | A sutura de comportamento anônimo para comportamento autenticado é compatível? | Não, ainda não. |
