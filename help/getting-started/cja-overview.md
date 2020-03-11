@@ -2,7 +2,7 @@
 title: Visão geral da análise de jornada do cliente
 description: Introdução ao Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 7afdf490d0a63b1286a1a646a487ee96d4b6ed8f
+source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
 
 ---
 
@@ -11,28 +11,22 @@ source-git-commit: 7afdf490d0a63b1286a1a646a487ee96d4b6ed8f
 
 O Customer Journey Analytics é um recurso do Analytics que permite usar o poder da Analysis Workspace com dados da Adobe Experience Platform. Ele pode detalhar, filtrar, consultar e visualizar o valor dos dados dos anos, e é combinado com a capacidade da Plataforma de armazenar todos os tipos de esquemas e tipos de dados. Usando o Modelo de Dados de **Experiência (XDM)**, os dados podem ser representados e organizados uniformemente, prontos para combinação e exploração. **O Experience Query Services** permite que você use ferramentas e estruturas compatíveis com SQL para consultar e manipular todos os seus dados.
 
-## Comparação de CJA à Analysis Workspace
+## Comparação de CJA ao Adobe Analytics tradicional
 
 O Customer Journey Analytics expande o escopo do Analytics, oferecendo recursos de canal cruzado fáceis de usar e removendo limitações em versões anteriores do Adobe Analytics. Algumas melhorias notáveis são:
 
 * **Variáveis e eventos** ilimitados: Os conceitos de eVars, props e eventos não existem mais. Os dados são focados principalmente em dimensões e métricas. Os conjuntos de dados podem ter uma quantidade ilimitada de dimensões e métricas exclusivas.
-* **Únicos** ilimitados: A plataforma Adobe Experience não está restrita a quaisquer limitações exclusivas, como os valores exclusivos de 500k nos conjuntos de relatórios tradicionais.
+* **Valores** exclusivos ilimitados: A plataforma Adobe Experience não está restrita a quaisquer limitações exclusivas, como os valores exclusivos de 500k nos conjuntos de relatórios tradicionais.
 * **Alterar dados** históricos: Usando a Adobe Experience Platform, os dados podem ser removidos ou corrigidos.
 * **Dados** do conjunto de relatórios cruzados: As implementações existentes de vários conjuntos de dados podem ser combinadas na Plataforma.
 
 A versão inicial do Customer Journey Analytics inclui muitos dos recursos incluídos na Analysis Workspace. Para obter uma lista completa, consulte Suporte [a recursos de Análise de jornada do](cja-aa.md)cliente.
 
-### Atualizações de terminologia
+## Comparação do CJA com o Cross-Device Analytics
 
-Vários recursos no CJA foram renomeados para alinhar-se aos padrões do setor. Alguns nomes atualizados incluem:
+[O Cross-Device Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) é integrado ao Adobe Experience Platform Identity Service, utilizando o Gráfico cooperativo ou o Gráfico privado, para identificar como os dispositivos digitais são mapeados para pessoas. Ele está disponível para clientes do Adobe Analytics Ultimate.
 
-* Os segmentos agora são conhecidos como &quot;Filtros&quot;
-* Conjuntos de relatórios virtuais agora são conhecidos como &quot;Exibições&quot;
-* As classificações agora são conhecidas como &quot;Conjuntos de dados de pesquisa&quot;
-* Os atributos do cliente agora são conhecidos como &quot;Conjuntos de dados de perfil&quot;
-* Os contêineres de ocorrência agora são conhecidos como contêineres &quot;Evento&quot;
-* Os contêineres de visita agora são conhecidos como contêineres &quot;Sessão&quot;
-* Os contêineres de visitante agora são conhecidos como contêineres &quot;Pessoa&quot;
+O CJA se integra aos conjuntos de dados da plataforma Adobe Experience e permite a análise entre canais na Analysis Workspace. Embora o CJA ainda não se integre aos gráficos de identidade cooperativa ou privada, você pode &quot;reunir sua própria ID&quot; para unir conjuntos de dados, e esses conjuntos de dados podem ir além dos dados digitais para incluir pontos de contato online e offline. Os pré-requisitos CJA são abordados com mais detalhes abaixo.
 
 ## Casos de uso de chave
 
@@ -47,7 +41,7 @@ A Análise de jornada do cliente permite:
 
 ## Pré-requisitos
 
-Antes de começar a usar o Customer Journey Analytics, as seguintes etapas devem ser concluídas:
+Antes de começar a usar o Customer Journey Analytics, os seguintes pré-requisitos devem ser atendidos:
 
 * Sua organização tem um contrato ativo com o Adobe Analytics for Select, Prime ou Ultimate com o complemento Customer Journey Analytics. Se você não tiver certeza de que tipo de contrato possui ou se não tem certeza se tem o complemento CJA, entre em contato com o Gerente de conta de sua organização.
 * Sua organização foi provisionada para a Adobe Experience Platform.
@@ -63,6 +57,18 @@ Para criar conexões, adicionar conjuntos de dados, etc., você precisa das segu
    * Gerenciar namespaces de identidade
    * Exibir caixas de proteção
 * Para acessar a Análise de jornada do cliente ou fazer uma conexão, você também precisará ser adicionado a um Perfil de produto da Análise de jornada do cliente no [Admin Console](https://adminconsole.adobe.com/enterprise/).
+
+### Atualizações de terminologia
+
+Vários recursos no CJA foram renomeados para alinhar-se aos padrões do setor. Alguns nomes atualizados incluem:
+
+* Os segmentos agora são conhecidos como &quot;Filtros&quot;.
+* Os Conjuntos de relatórios virtuais agora são conhecidos como &quot;Exibições&quot;.
+* As classificações agora são conhecidas como &quot;Conjuntos de dados de pesquisa&quot;.
+* Os atributos do cliente agora são conhecidos como &quot;Conjuntos de dados de perfil&quot;.
+* Os contêineres de ocorrência agora são conhecidos como contêineres de &quot;Evento&quot;.
+* Os contêineres de visita agora são conhecidos como contêineres &quot;Sessão&quot;.
+* Os contêineres de visitante agora são conhecidos como contêineres &quot;Pessoa&quot;.
 
 ## Outros recursos criados na Adobe Experience Platform
 
