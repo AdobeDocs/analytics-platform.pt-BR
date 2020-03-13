@@ -13,7 +13,7 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
+source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 
 ---
 
@@ -34,6 +34,7 @@ source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 + Conexões {#cja-connections}
    + [Criar uma conexão](connections/create-connection.md)
    + [Gerenciar conexões](connections/manage-connection.md)
+   + [Conjuntos de dados combinados](connections/combined-dataset.md)
 + Data Views {#cja-dataviews}
    + [Criar uma exibição de dados](data-views/create-dataview.md)
    + [Configurar exibições de dados e atribuição](data-views/configure-dataviews.md)
