@@ -2,7 +2,7 @@
 title: Gerenciar intervalos de datas
 description: Compartilhe, renomeie ou exclua intervalos de datas na Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
+source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
 ---
 
@@ -29,7 +29,7 @@ O gerente de intervalo de datas inclui as seguintes opções:
 Clique na caixa de seleção ao lado de um ou mais intervalos de datas para obter mais opções.
 
 * **Tag**: Aplicar uma tag a todos os intervalos de datas selecionados. As tags ajudam a organizar intervalos de datas e permitem filtrá-los usando a coluna esquerda.
-* **Compartilhar**: Compartilhe uma tag com outros usuários da Experience Cloud. Se você for um administrador de produtos, também poderá compartilhar com a organização ou grupos inteiros. Os intervalos de datas compartilhados com outros usuários em sua organização incluem um ícone ![compartilhado](../assets/shared.png) ao lado do título.
+* **Compartilhar**: Compartilhe um intervalo de datas com outros usuários da Experience Cloud. Se você for um administrador de produtos, também poderá compartilhar com a organização ou grupos inteiros. Os intervalos de datas compartilhados com outros usuários em sua organização incluem um ícone ![compartilhado](../assets/shared.png) ao lado do título.
 * **Excluir**: Exclua permanentemente os intervalos de datas selecionados.
 * **Renomear**: Se um único intervalo de datas for selecionado, é possível alterar seu título.
 * **Aprovar**: Se você for um administrador do produto, poderá adicionar um carimbo de aprovação a um intervalo de datas. Os intervalos de datas aprovados informam aos usuários em sua organização que eles são &quot;oficiais&quot;, diferindo-os dos intervalos de datas criados por outros usuários em sua organização. Os intervalos de datas aprovados incluem um ícone ![aprovado](../assets/approved.png) ao lado do título.
