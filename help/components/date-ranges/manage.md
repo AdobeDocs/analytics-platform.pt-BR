@@ -11,7 +11,7 @@ source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
 Use o gerenciador de intervalo de datas para compartilhar, renomear ou excluir intervalos de datas. Para acessar o gerente de data:
 
-1. Faça logon em [analytics.adobe.com](https://analytics.adobe.com) usando suas credenciais da AdobeID.
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. Navegue até [!UICONTROL Components] > [!UICONTROL Date Ranges].
 
 ## Interface
