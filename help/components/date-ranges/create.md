@@ -16,7 +16,7 @@ Você pode criar um intervalo de datas personalizado usando um dos dois métodos
 
 Para criar um intervalo de datas no gerenciador de intervalo de datas:
 
-1. Faça logon em [analytics.adobe.com](https://analytics.adobe.com) usando suas credenciais da AdobeID.
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. Navegue até [!UICONTROL Components] > [!UICONTROL Date Ranges].
 1. Clique no [!UICONTROL Add] botão para abrir a janela modal que cria um intervalo de datas.
 
