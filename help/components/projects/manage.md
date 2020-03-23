@@ -11,7 +11,7 @@ source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
 
 Use o gerente do projeto para compartilhar, renomear ou excluir projetos. Para acessar o gerente de data:
 
-1. Faça logon em [analytics.adobe.com](https://analytics.adobe.com) usando suas credenciais da AdobeID.
+1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
 1. Navegue até [!UICONTROL Components] > [!UICONTROL Projects].
 
 ## Interface
