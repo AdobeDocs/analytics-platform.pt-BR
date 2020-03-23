@@ -72,7 +72,7 @@ Especifica um período de tempo, ou evento, após o qual o valor da dimensão ex
 | Pessoa (Janela de Relatório) | Anteriormente conhecido como o nível &quot;Visitante&quot;. Os eventos de conversão não vinculados a essa pessoa não estão associados à dimensão ou métrica. |
 | Tempo personalizado | Especifique os minutos, horas, dias, meses ou trimestres personalizados. Os eventos de conversão além do período de tempo especificado não estão associados à dimensão ou à métrica. |
 
-Para obter mais informações, consulte o documento [IQ de](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)atribuição.
+Para obter mais informações, consulte o documento [IQ de](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)Atribuição.
 
 ### Janela de lookback
 
