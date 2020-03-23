@@ -653,7 +653,7 @@ O valor de retorno é a probabilidade de exibição da estatística de teste x, 
 
 **Exemplos:**
 
-1. Use-o para encontrar valores atípicos:
+1. Use-o para encontrar outliers:
 
    ```
    t_test( zscore(bouncerate), row-count-1, 2)
