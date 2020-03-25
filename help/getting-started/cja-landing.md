@@ -1,6 +1,6 @@
 ---
 title: Documentação do produto Análise de jornada do cliente
-description: Página inicial do Customer Journey Analytics.
+description: landing page de análise de jornada do cliente.
 translation-type: tm+mt
 source-git-commit: 61cf17635c73a400b0c3a52666d75a771fca1a47
 
@@ -11,7 +11,7 @@ source-git-commit: 61cf17635c73a400b0c3a52666d75a771fca1a47
 
 Este guia de documentação técnica fornece ajuda para o Customer Journey Analytics. O Customer Journey Analytics permite trazer os dados dos clientes de qualquer canal que escolher — on-line e off-line — para a Adobe Experience Platform e, em seguida, analisar estes dados da mesma forma que faria com os dados digitais existentes usando o Analysis Workspace hoje.
 
-A Análise de jornada do cliente permite controlar como você conecta seus dados online e offline na Analysis Workspace em qualquer ID de cliente comum, permitindo, finalmente, que você faça atribuição, segmentação, fluxo, fallout etc. em todo o conjunto de dados do cliente no Adobe Analytics.
+O Customer Journey Analytics permite controlar como você conecta seus dados online e offline na Análise Workspace em qualquer ID de cliente comum, permitindo, finalmente, que você faça atribuição, segmentação, fluxo, fallout etc. em todo o conjunto de dados do cliente no Adobe Analytics.
 
 Os clientes do Analytics Select, Prime e Ultimate podem adquirir esse produto complementar. Entre em contato com a equipe de sua conta da Adobe para obter mais informações.
 
