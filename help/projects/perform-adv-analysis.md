@@ -1,13 +1,13 @@
 ---
-title: Executar análise avançada no Customer Journey Analytics
-description: Descreve como fazer análises avançadas de Análise de jornada do cliente no Workspace.
+title: Realizar análise avançada no Customer Journey Analytics
+description: Descreve como fazer a análise avançada de Análise de jornada do cliente no Workspace.
 translation-type: tm+mt
 source-git-commit: 1cddd8624826bddb89c9b362ec91a2c0c30c7a6f
 
 ---
 
 
-# Execute análise avançada
+# Executar análise avançada
 
 Introduza a frase aqui.
 
