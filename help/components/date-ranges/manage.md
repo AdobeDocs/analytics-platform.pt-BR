@@ -1,6 +1,6 @@
 ---
 title: Gerenciar intervalos de datas
-description: Compartilhe, renomeie ou exclua intervalos de datas na Analysis Workspace.
+description: Compartilhe, renomeie ou exclua intervalos de datas na área de trabalho da Análise.
 translation-type: tm+mt
 source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
 
@@ -16,13 +16,13 @@ Use o gerenciador de intervalo de datas para compartilhar, renomear ou excluir i
 
 ## Interface
 
-![Interface do usuário](../assets/date-range-ui.png)
+![IU](../assets/date-range-ui.png)
 
 O gerente de intervalo de datas inclui as seguintes opções:
 
 * **Adicionar**: Criar um novo intervalo de datas. Consulte [criar um intervalo](create.md) de datas para obter mais informações.
 * **Pesquisar por título**: Procure um intervalo de datas por título. Os resultados são filtrados com base no texto inserido aqui.
-* **Filtro**: Filtre os intervalos de datas usando a coluna esquerda. Você pode filtrar por tag personalizada, proprietário, criado por você, seus favoritos, aprovado ou compartilhado com você. Você também pode procurar os filtros desejados.
+* **Filtro**: Filtre os intervalos de datas usando a coluna esquerda. Você pode filtrar por tag personalizada, proprietário, criado por você, seus favoritos, aprovado ou compartilhado com você. Você também pode procurar filtros desejados.
 * **Favorito**: Clique no ícone de ![estrela](../assets/star.png) ao lado de um intervalo de datas para adicioná-lo aos seus favoritos.
 * **Personalizar colunas**: Clique no ícone de ![colunas](../assets/columns.png) para mostrar ou ocultar colunas no gerenciador de intervalo de datas.
 
