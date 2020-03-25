@@ -1,6 +1,6 @@
 ---
 title: Criar uma métrica calculada
-description: Saiba como criar uma métrica calculada para usar na Analysis Workspace.
+description: Saiba como criar uma métrica calculada para usar na área de trabalho da Análise.
 translation-type: tm+mt
 source-git-commit: 076ee40e5aef1773976545692378f1b8a55089d4
 
