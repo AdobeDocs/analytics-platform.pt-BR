@@ -13,8 +13,8 @@ Depois de criar uma ou mais conexões, você pode gerenciá-las no Gerenciador d
 
 * Exclua uma conexão.
 * Renomeie uma conexão.
-* Crie uma exibição de dados de uma conexão.
-* Iniciar e parar o streaming de dados.
+* Crie uma visualização de dados a partir de uma conexão.
+* Start e interrupção do fluxo de dados.
 
 ![Gerenciador de conexões](assets/connections-manager.png)
 
@@ -28,7 +28,7 @@ Depois de criar uma ou mais conexões, você pode gerenciá-las no Gerenciador d
    |---|---|
    | Excluir | A exclusão de uma conexão não exclui o conjunto de dados, pois os dados ainda estão na Adobe Experience Platform. |
    | Renomear | Renomeando uma conexão... |
-   | Criar Data View | Esse link leva você ao construtor [de visualização de](/help/data-views/create-dataview.md)dados. |
-   | Iniciar ou parar o fluxo de dados | &quot;Streaming&quot; significa que, se quaisquer novos lotes forem adicionados a qualquer um dos conjuntos de dados na conexão, esses novos dados serão trazidos para o Customer Journey Analytics para geração de relatórios. |
+   | Criar Data View | Esse link leva você ao construtor [de visualizações de](/help/data-views/create-dataview.md)dados. |
+   | Start ou interrupção do fluxo de dados | &quot;Streaming&quot; significa que, se quaisquer novos lotes forem adicionados a qualquer um dos conjuntos de dados na conexão, esses novos dados serão trazidos para o Customer Journey Analytics para relatórios. |
 
 
