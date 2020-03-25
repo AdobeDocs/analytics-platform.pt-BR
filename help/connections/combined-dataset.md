@@ -9,9 +9,9 @@ source-git-commit: f9cdcb8a6efe688d553929c3081f3239e0691cd9
 
 # Conjuntos de dados combinados
 
-Quando você cria uma conexão, o CJA combina todos os esquemas e conjuntos de dados em um único conjunto de dados. Esse &quot;conjunto de dados combinado&quot; é o que o CJA usa para gerar relatórios. Ao incluir vários esquemas ou conjuntos de dados em uma conexão:
+Quando você cria uma conexão, o CJA combina todos os schemas e conjuntos de dados em um único conjunto de dados. Esse &quot;conjunto de dados combinado&quot; é o que o CJA usa para o relatórios. Ao incluir vários schemas ou conjuntos de dados em uma conexão:
 
-* Os esquemas são combinados. Campos de esquema duplicados são mesclados.
+* Schemas são combinados. Os campos de schema do Duplicado são unidos.
 * A coluna &quot;ID da pessoa&quot; de cada conjunto de dados é unida em uma única coluna, independentemente do nome. Essa coluna é a base para identificar visitantes únicos no CJA.
 * As linhas são processadas com base no carimbo de data e hora.
 
@@ -36,7 +36,7 @@ Considere o exemplo a seguir. Você tem dois conjuntos de dados, cada um com cam
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  | `Triangle` | `3.1` |
 
-Quando você cria uma conexão usando esses dois conjuntos de dados, a tabela a seguir é usada para relatórios.
+Quando você cria uma conexão usando esses dois conjuntos de dados, a tabela a seguir é usada para o relatórios.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -50,7 +50,7 @@ Quando você cria uma conexão usando esses dois conjuntos de dados, a tabela a 
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
 
-Esse conjunto de dados combinado é o que é usado nos relatórios. Não importa de que conjunto de dados uma linha provém; O CJA trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados o mesmo visitante único. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão.
+Esse conjunto de dados combinado é o que é usado no relatórios. Não importa de que conjunto de dados uma linha provém; O CJA trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados o mesmo visitante exclusivo. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão.
 
 Este conceito também se aplica à atribuição. Não importa de que conjunto de dados uma linha provém; a atribuição funciona exatamente como se todos os eventos viessem de um único conjunto de dados. Usando as tabelas acima como exemplo:
 
