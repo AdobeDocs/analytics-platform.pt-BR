@@ -13,7 +13,7 @@ De modo geral, todas as configurações relacionadas à privacidade no Customer 
 
 ## RGPD
 
-A Análise de jornada do cliente não assinará diretamente o Serviço Central do Regulamento Geral de Proteção de Dados (RGPD) e herdará todas as alterações no conjunto de dados feitas na plataforma da experiência. Dependemos do Lago de Dados da Plataforma para aplicar solicitações de exclusão do RGPD e notificá-los quando tiverem sido concluídos no Pipeline. Ouvimos Pipeline e sincronizamos todas as alterações em lotes afetados no Customer Journey Analytics para conjuntos de dados de eventos. Os conjuntos de dados de perfil e pesquisa afetados pelas solicitações de exclusão do RGPD serão totalmente assimilados novamente após cada solicitação de exclusão. Podemos garantir que as solicitações de exclusão sejam executadas dentro de 7 dias de um evento de exclusão no Data Lake.
+A Análise de jornada do cliente não assinará diretamente o Serviço Central do Regulamento Geral de Proteção de Dados (RGPD) e herdará todas as alterações no conjunto de dados feitas na plataforma da experiência. Dependemos do Lago de Dados da Plataforma para aplicar solicitações de exclusão do RGPD e notificá-los quando tiverem sido concluídos no Pipeline. Ouvimos Pipeline e sincronizamos todas as alterações em lotes afetados no Customer Journey Analytics para conjuntos de dados de evento. Os conjuntos de dados de Perfil e pesquisa afetados pelas solicitações de exclusão do RGPD serão totalmente assimilados novamente após cada solicitação de exclusão. Podemos garantir que as solicitações de exclusão sejam executadas dentro de 7 dias de um evento de exclusão no Data Lake.
 
 ## CCPA
 
