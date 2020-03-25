@@ -68,7 +68,7 @@ Observe que os recursos a seguir podem se referir ao uso do Workspace no produto
 
 * Publicações no blog:
    * [Empowering Organizations with Smarter Analysis](https://theblog.adobe.com/adobe-analytics-fall-2016-release-empowering-organizations-smarter-analysis/)
-   * [Analysis Workspace: O molho secreto está ficando mais forte](https://theblog.adobe.com/analysis-workspace-secret-sauce-getting-tastier/)
+   * [Área de trabalho da Análise: O molho secreto está ficando mais forte](https://theblog.adobe.com/analysis-workspace-secret-sauce-getting-tastier/)
    * [Why You Should Be Using Analysis Workspace](https://theblog.adobe.com/why-you-should-be-using-analysis-workspace-in-adobe-analytics/)
    * [5 Tips to Maximize Your Productivity with Analysis Workspace](https://theblog.adobe.com/5-tips-maximize-productivity-analysis-workspace/)
 
