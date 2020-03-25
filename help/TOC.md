@@ -29,18 +29,18 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
    + [Glossário CJA](getting-started/cja-glossary.md)
 + Projetos da Workspace {#cja-reporting}
    + [Introdução ao Workspace](projects/workspace-basics.md)
-   + [Executar análise básica](projects/perform-basic-analysis.md)
-   + [Execute análise avançada](projects/perform-adv-analysis.md)
+   + [Realizar análise básica](projects/perform-basic-analysis.md)
+   + [Executar análise avançada](projects/perform-adv-analysis.md)
 + Conexões {#cja-connections}
    + [Criar uma conexão](connections/create-connection.md)
    + [Gerenciar conexões](connections/manage-connection.md)
    + [Conjuntos de dados combinados](connections/combined-dataset.md)
 + Data Views {#cja-dataviews}
-   + [Criar uma exibição de dados](data-views/create-dataview.md)
-   + [Configurar exibições de dados e atribuição](data-views/configure-dataviews.md)
+   + [Criar uma visualização de dados](data-views/create-dataview.md)
+   + [Configurar visualizações de dados e atribuição](data-views/configure-dataviews.md)
 + Componentes {#cja-components}
-   + Filtros {#cja-filters}
-      + [Visão geral dos filtros](components/filters/filters-overview.md)
+   + Filters {#cja-filters}
+      + [Visão geral dos Filtros](components/filters/filters-overview.md)
       + [Criar um filtro](components/filters/create-filters.md)
       + [Gerenciar filtros](components/filters/manage-filters.md)
    + Métricas calculadas {#cja-calcmetrics}
@@ -60,5 +60,5 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 + Casos de uso {#cja-usecases}
    + [Casos de uso da Análise de jornada do cliente](use-cases/cja-usecases.md)
 + Privacy {#cja-privacy}
-   + [Visão geral de privacidade](privacy/privacy-overview.md)
+   + [Visão geral da privacidade](privacy/privacy-overview.md)
 + [Atualizações da documentação do CJA](doc-changes.md)
