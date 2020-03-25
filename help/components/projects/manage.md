@@ -1,6 +1,6 @@
 ---
 title: Gerenciar projetos
-description: Compartilhe, exclua ou renomeie projetos na Analysis Workspace.
+description: Compartilhe, exclua ou renomeie projetos na área de trabalho da Análise.
 translation-type: tm+mt
 source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
 
@@ -16,13 +16,13 @@ Use o gerente do projeto para compartilhar, renomear ou excluir projetos. Para a
 
 ## Interface
 
-![Interface do usuário](../assets/project-ui.png)
+![IU](../assets/project-ui.png)
 
 O gerente do projeto inclui as seguintes opções:
 
 * **Adicionar**: Crie um novo projeto. Consulte [criar um projeto](create.md) para obter mais informações.
 * **Pesquisar por título**: Procure um projeto por título. Os resultados são filtrados com base no texto inserido aqui.
-* **Filtro**: Filtre projetos usando a coluna esquerda. Você pode filtrar por tag personalizada, proprietário, criado por você, seus favoritos, aprovado ou compartilhado com você. Você também pode procurar os filtros desejados.
+* **Filtro**: Filtre projetos usando a coluna esquerda. Você pode filtrar por tag personalizada, proprietário, criado por você, seus favoritos, aprovado ou compartilhado com você. Você também pode procurar filtros desejados.
 * **Favorito**: Clique no ícone de ![estrela](../assets/star.png) ao lado de um projeto para adicioná-lo aos seus favoritos.
 * **Personalizar colunas**: Clique no ícone de ![colunas](../assets/columns.png) para mostrar ou ocultar colunas no gerenciador de projetos.
 
