@@ -1,6 +1,6 @@
 ---
 title: Visão geral dos intervalos de data
-description: Saiba quais intervalos de datas são e como usá-los em relatórios.
+description: Saiba quais são os intervalos de datas e como usá-los no relatórios.
 translation-type: tm+mt
 source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
 
