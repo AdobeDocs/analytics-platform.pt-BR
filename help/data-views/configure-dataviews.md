@@ -1,6 +1,6 @@
 ---
-title: Configurar exibições de dados e atribuição
-description: Descreve como criar uma exibição de dados para um conjunto de dados da plataforma no Customer Journey Analytics
+title: Configurar visualizações de dados e atribuição
+description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics
 translation-type: tm+mt
 source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
@@ -9,13 +9,13 @@ source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
 # Configurações de componente e atribuição
 
-As eVars, props e eventos no sentido tradicional do Adobe Analytics não existem mais no Análise de jornada do cliente. Em vez disso, você tem elementos de esquema ilimitados (dimensões, métricas, campos de lista). Todas as configurações de atribuição usadas para aplicar a eVars e props durante o processo de coleta de dados agora são aplicadas no momento da consulta - também conhecido como processamento do tempo do relatório.
+As eVars, props e eventos no sentido tradicional do Adobe Analytics não existem mais no Análise de jornada do cliente. Em vez disso, você tem elementos de schema ilimitados (dimensões, métricas, campos de lista). Todas as configurações de atribuição usadas para aplicar a eVars e props durante o processo de coleta de dados agora são aplicadas no momento do query - também conhecido como processamento no tempo do relatório.
 
 Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) para obter uma visão geral do vídeo.
 
 Lembre-se disso antes de aplicar as configurações de atribuição:
 
-* Na interface do usuário das exibições de dados, especifique a atribuição padrão. **Observação**: Posteriormente, você poderá substituir essas configurações em projetos do Workspace. No entanto, essa funcionalidade não está disponível no momento.
+* Na interface do usuário do visualização de dados, especifique a atribuição padrão. **Observação**: Posteriormente, você poderá substituir essas configurações em projetos do Workspace. No entanto, essa funcionalidade não está disponível no momento.
 
 * As configurações de atribuição no Análise de jornada do cliente não são destrutivas e retroativas. Em outras palavras, você não pode prejudicar irreparavelmente seus conjuntos de dados no Análise de jornada do cliente. Mesmo se você excluir algo acidentalmente, sempre poderá voltar para a plataforma Experience e trazer o conjunto de dados de volta para dentro. (Tenha em mente, no entanto, que trazer o conjunto de dados de volta implica custos adicionais.)
 
@@ -29,7 +29,7 @@ Lembre-se disso antes de aplicar as configurações de atribuição:
 
 ## Especificar configurações de componente e atribuição
 
-Depois de [definir e salvar as configurações](/help/data-views/create-dataview.md) de exibição de dados e adicionar componentes, você estará pronto para especificar as configurações de atribuição, se optar por fazê-lo. Você pode especificar configurações de atribuição/expiração/pesquisa para dimensões e métricas. Se, por exemplo, você quiser que a atribuição de uma dimensão persista, você provavelmente desejará definir um tempo de expiração personalizado. Por exemplo, se você quiser que uma dimensão &quot;Código de rastreamento&quot; (uma variável de campanha) seja definida como atribuição &quot;Último contato&quot; para persistir por uma semana, adicione uma expiração personalizada de uma semana.
+Depois de [definir e salvar configurações](/help/data-views/create-dataview.md) de visualização de dados e componentes adicionados, você estará pronto para especificar configurações de atribuição, se optar por fazê-lo. Você pode especificar configurações de atribuição/expiração/pesquisa para dimensões e métricas. Se, por exemplo, você quiser que a atribuição de uma dimensão persista, você provavelmente desejará definir um tempo de expiração personalizado. Por exemplo, se você quiser que uma dimensão &quot;Código de rastreamento&quot; (uma variável de campanha) seja definida como atribuição &quot;Último contato&quot; para persistir por uma semana, adicione uma expiração personalizada de uma semana.
 
 >[!IMPORTANT]
 >Você pode optar por não definir a alocação/expiração. Nesse caso, as dimensões se comportarão como props (modelo de atribuição &quot;Same Touch&quot;). As métricas sem configurações de atribuição definidas herdarão as configurações da dimensão à qual essa métrica é aplicada.
@@ -38,7 +38,7 @@ Depois de [definir e salvar as configurações](/help/data-views/create-dataview
 
 1. Especifique as configurações de componente e atribuição para dimensões e métricas. Consulte abaixo para obter informações sobre configurações individuais.
 
-1. Clique em **[!UICONTROL Save]** para salvar sua exibição de dados.
+1. Clique em **[!UICONTROL Save]** para salvar sua visualização de dados.
 
 
 ### Configuração do componente
@@ -68,15 +68,15 @@ Especifica um período de tempo, ou evento, após o qual o valor da dimensão ex
 
 | Configuração | Definição |
 |---|---|
-| Sessão | Anteriormente conhecido como o nível de &quot;Visita&quot;. Os eventos de conversão além da exibição de página ou sessão não estão associados à dimensão ou métrica. |
-| Pessoa (Janela de Relatório) | Anteriormente conhecido como o nível &quot;Visitante&quot;. Os eventos de conversão não vinculados a essa pessoa não estão associados à dimensão ou métrica. |
-| Tempo personalizado | Especifique os minutos, horas, dias, meses ou trimestres personalizados. Os eventos de conversão além do período de tempo especificado não estão associados à dimensão ou à métrica. |
+| Sessão | Anteriormente conhecido como o nível de &quot;Visita&quot;. eventos de conversão além da visualização de página ou sessão não estão associados à dimensão ou métrica. |
+| Pessoa (Janela Relatórios) | Anteriormente conhecido como o nível &quot;Visitante&quot;. eventos de conversão não vinculados a essa pessoa não estão associados à dimensão ou métrica. |
+| Tempo personalizado | Especifique os minutos, horas, dias, meses ou trimestres personalizados. eventos de conversão além do período de tempo especificado não estão associados à dimensão ou à métrica. |
 
-Para obter mais informações, consulte o documento [IQ de](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)Atribuição.
+Para obter mais informações, consulte o documento [IQ de](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)atribuição.
 
-### Janela de lookback
+### Janela de pesquisa
 
 As janelas de retrospectiva representam quanto tempo uma conversão deve retroceder para incluir pontos de contato. Os modelos de atribuição que dão mais crédito às primeiras interações veem diferenças maiores ao exibir diferentes janelas de retrospectiva.
 
-* **Sessão:** Procura até o início de uma sessão em que uma conversão aconteceu. As janelas de pesquisa de visitas são estreitas, pois não parecem além da sessão. As janelas de pesquisa de sessão respeitam a definição de visita modificada em exibições de dados.
-* **Pessoa (janela de relatório):** Verifica todas as sessões até o primeiro dia do mês do intervalo de datas atual. As janelas de pesquisa pessoal são amplas, pois podem abranger muitas sessões. Por exemplo, se o intervalo de datas do relatório for de 15 de setembro a 30 de setembro, o intervalo de datas de consulta pessoal incluirá 1 de setembro a 30 de setembro.
+* **Sessão:** Procura até o início de uma sessão em que uma conversão aconteceu. As janelas de pesquisa de visitas são estreitas, pois não parecem além da sessão. As janelas de pesquisa de sessão respeitam a definição de visita modificada nas visualizações de dados.
+* **Pessoa (janela do relatórios):** Verifica todas as sessões até o primeiro dia do mês do intervalo de datas atual. As janelas de pesquisa pessoal são amplas, pois podem abranger muitas sessões. Por exemplo, se o intervalo de datas do relatório for de 15 de setembro a 30 de setembro, o intervalo de datas de consulta pessoal incluirá 1 de setembro a 30 de setembro.
