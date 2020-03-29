@@ -1,19 +1,19 @@
 ---
-title: Visão geral de privacidade da Análise de jornada do cliente
-description: Descreve como as configurações de privacidade funcionam no Análise de jornada do cliente.
-translation-type: tm+mt
+title: Visão geral de privacidade do Customer Journey Analytics
+description: Descreve como as configurações de privacidade funcionam no Customer Journey Analytics.
+translation-type: ht
 source-git-commit: 415a4a7f7d540a0329f973042d1c6a6a285d5b1b
 
 ---
 
 
-# Visão geral de privacidade da Análise de jornada do cliente
+# Visão geral de privacidade do Customer Journey Analytics
 
 De modo geral, todas as configurações relacionadas à privacidade no Customer Journey Analytics são herdadas da Adobe Experience Platform.
 
-## RGPD
+## GDPR
 
-A Análise de jornada do cliente não assinará diretamente o Serviço Central do Regulamento Geral de Proteção de Dados (RGPD) e herdará todas as alterações no conjunto de dados feitas na plataforma da experiência. Dependemos do Lago de Dados da Plataforma para aplicar solicitações de exclusão do RGPD e notificá-los quando tiverem sido concluídos no Pipeline. Ouvimos Pipeline e sincronizamos todas as alterações em lotes afetados no Customer Journey Analytics para conjuntos de dados de evento. Os conjuntos de dados de Perfil e pesquisa afetados pelas solicitações de exclusão do RGPD serão totalmente assimilados novamente após cada solicitação de exclusão. Podemos garantir que as solicitações de exclusão sejam executadas dentro de 7 dias de um evento de exclusão no Data Lake.
+O Customer Journey Analytics não assinará diretamente o Serviço central do Regulamento Geral sobre a Proteção de Dados (GDPR) e herdará todas as alterações no conjunto de dados feitas na Experience Platform. Dependemos do Platform Data Lake para aplicar solicitações de exclusão do GDPR e notificá-los quando tiverem sido concluídos no Pipeline. Ouvimos o Pipeline e sincronizamos todas as alterações em lotes afetados no Customer Journey Analytics para conjuntos de dados de evento. Os conjuntos de dados de Perfil e Pesquisa afetados pelas solicitações de exclusão do GDPR serão assimilados novamente após cada solicitação de exclusão. Garantimos que as solicitações de exclusão sejam executadas dentro de 7 dias de um evento de exclusão no Data Lake.
 
 ## CCPA
 
