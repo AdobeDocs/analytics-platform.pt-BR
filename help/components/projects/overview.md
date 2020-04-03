@@ -1,5 +1,5 @@
 ---
-title: Visão geral dos projetos
+title: Visão geral dos Projetos
 description: Organize e mantenha projetos na área de trabalho da Análise.
 translation-type: tm+mt
 source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
@@ -7,7 +7,7 @@ source-git-commit: 542d394e9f20b10b932c8f444de096381ba25a17
 ---
 
 
-# Visão geral dos projetos
+# Visão geral dos Projetos
 
 Os projetos são o &quot;arquivo&quot; abrangente usado na área de trabalho da Análise. Eles contêm um ou mais painéis, que permitem organizar visualizações.
 
