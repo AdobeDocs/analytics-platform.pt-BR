@@ -1,5 +1,5 @@
 ---
-title: Casos de uso da Análise de jornada do cliente
+title: Casos de uso do Customer Journey Analytics
 description: Casos de uso do Customer Journey Analytics
 translation-type: tm+mt
 source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
@@ -7,7 +7,7 @@ source-git-commit: 8aa4ee719a7e2815cab94448a359b8dcba1307ec
 ---
 
 
-# Casos de uso da Análise de jornada do cliente
+# Casos de uso do Customer Journey Analytics
 
 A Análise de jornada do cliente permite os seguintes casos principais de uso:
 
