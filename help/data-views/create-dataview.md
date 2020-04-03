@@ -1,5 +1,5 @@
 ---
-title: Criar uma visualização de dados
+title: Criar uma exibição de dados
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no CJA (Customer Journey Analytics).
 translation-type: tm+mt
 source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
@@ -7,7 +7,7 @@ source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
 ---
 
 
-# Criar uma visualização de dados
+# Criar uma exibição de dados
 
 Uma visualização de dados é semelhante a um conjunto de relatórios virtual no Analytics, na medida em que, no sentido, é uma visualização &quot;filtrada&quot; dos dados. É possível criar visualizações de dados diferentes para a mesma conexão, com configurações diferentes para o tempo limite da visita, atribuição etc. É possível criar várias visualizações de dados para um único conjunto de dados. Por exemplo, você pode ter uma visualização de dados em que todas as dimensões estão definidas como &quot;Último contato&quot; e, simultaneamente, outra visualização de dados (com base no mesmo conjunto de dados) com todas as dimensões definidas como &quot;Primeiro contato&quot;.
 
