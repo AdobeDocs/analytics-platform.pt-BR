@@ -1,5 +1,5 @@
 ---
-title: Configurar visualizações de dados e atribuição
+title: Configurar exibições de dados e atribuição
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics
 translation-type: tm+mt
 source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
@@ -9,7 +9,7 @@ source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
 
 # Configurações de componente e atribuição
 
-As eVars, props e eventos no sentido tradicional do Adobe Analytics não existem mais no Análise de jornada do cliente. Em vez disso, você tem elementos de schema ilimitados (dimensões, métricas, campos de lista). Todas as configurações de atribuição usadas para aplicar a eVars e props durante o processo de coleta de dados agora são aplicadas no momento do query - também conhecido como processamento no tempo do relatório.
+eVars, props e eventos no sentido tradicional do Adobe Analytics não existem mais no Customer Journey Analytics. Em vez disso, você tem elementos de schema ilimitados (dimensões, métricas, campos de lista). Todas as configurações de atribuição usadas para aplicar a eVars e props durante o processo de coleta de dados agora são aplicadas no momento do query - também conhecido como processamento no tempo do relatório.
 
 Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) para obter uma visão geral do vídeo.
 
