@@ -1,5 +1,5 @@
 ---
-title: Atualizações da documentação do CJA
+title: Atualizações da documentação CJA
 description: 'Atualizações de conteúdo do Lista para a documentação do Customer Journey Analytics definida desde dezembro de 2019. '
 translation-type: tm+mt
 source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
