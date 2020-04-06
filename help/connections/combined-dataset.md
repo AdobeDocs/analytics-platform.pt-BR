@@ -2,7 +2,7 @@
 title: Conjuntos de dados combinados
 description: Saiba como o CJA cria uma conexão combinando conjuntos de dados.
 translation-type: tm+mt
-source-git-commit: f9cdcb8a6efe688d553929c3081f3239e0691cd9
+source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
 
 ---
 
@@ -19,7 +19,7 @@ Quando você cria uma conexão, o CJA combina todos os schemas e conjuntos de da
 
 Considere o exemplo a seguir. Você tem dois conjuntos de dados, cada um com campos diferentes contendo dados diferentes.
 
-> [!NOTE] A Adobe Experience Platform normalmente armazena o carimbo de data e hora em milissegundos do Unix. Para leitura neste exemplo, data e hora são usadas.
+>[!NOTE] A Adobe Experience Platform normalmente armazena o carimbo de data e hora em milissegundos do Unix. Para leitura neste exemplo, data e hora são usadas.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
