@@ -2,7 +2,7 @@
 title: Criar uma exibição de dados
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no CJA (Customer Journey Analytics).
 translation-type: tm+mt
-source-git-commit: c85b5d2e702a38aa6569da893a25bacd39604f8a
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 ## Pré-requisito
 
-Antes de criar visualizações de dados, é necessário [configurar uma ou mais conexões com os conjuntos de dados](/help/connections/create-connection.md)da plataforma Adobe Experience.
+Antes de poder criar visualizações de dados, é necessário [configurar uma ou mais conexões com os conjuntos de dados da plataforma] Experience](/help/connections/create-connection.md).
 
 ## Definir configurações
 
@@ -27,7 +27,7 @@ Antes de criar visualizações de dados, é necessário [configurar uma ou mais 
 
    | Configuração da sessão | Definição |
    |---|---|
-   | Conexão | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém os conjuntos de dados da plataforma. |
+   | Conexão | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém os [!UICONTROL Experience Platform] conjuntos de dados. |
    | Nome | É obrigatório dar um nome à visualização de dados. |
    | Descrição | Uma descrição detalhada não é obrigatória, mas recomendada. |
    | Adicionar tags | As tags permitem que você organize suas visualizações de dados no categoria. |
