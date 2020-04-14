@@ -2,7 +2,7 @@
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos de Análise de jornada do cliente em comparação aos recursos do Adobe Analytics definidos.
 translation-type: tm+mt
-source-git-commit: 1d65b22ab2323bebf42b2782b2bab2ed52869a02
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -28,7 +28,7 @@ As tabelas a seguir listas quais recursos do Adobe Analytics são suportados, pa
 | Conjuntos de relatórios virtuais | Agora chamado [de Visualizações](/help/data-views/create-dataview.md)de dados. |
 | Curadoria do componente VRS | Agora parte das Visualizações de dados. |
 | Processamento de tempo do relatório | O CJA depende exclusivamente do Processamento de tempo do relatório. |
-| Exclusão do RGPD | Observe que o RGPD agora é manipulado em coordenação com a Adobe Experience Platform - o CJA herda quaisquer alterações de dados que a Experience Platform fizer nos conjuntos de dados subjacentes. |
+| Exclusão do RGPD | Observe que o RGPD agora é manipulado em coordenação com [!UICONTROL Experience Platform] - o CJA herda qualquer alteração de dados feita [!UICONTROL Experience Platform] nos conjuntos de dados subjacentes. |
 
 ## Suportado com limitações
 
@@ -36,7 +36,7 @@ As tabelas a seguir listas quais recursos do Adobe Analytics são suportados, pa
 | --- | --- |
 | Variável de produto | A variável product atualmente disponível para o relatórios para dados que estejam em conformidade com o schema Experience Evento (usando especificamente o objeto productListItems). |
 | Visualizações | Todas as visualizações são suportadas, exceto a visualização do Mapa. |
-| Audiências do AAM | Se os clientes estiverem usando conjuntos de dados do Conector de dados do Analytics, esses dados farão parte dos dados ADC. |
+| Audiências do AAM | Se os clientes estiverem usando [!UICONTROL Analytics Data Connector] conjuntos de dados, esses dados farão parte dos dados ADC. |
 | Compartilhamento de projeto | O compartilhamento de projetos só é suportado entre usuários do CJA - não há compartilhamento de projetos entre o CJA e a área de trabalho de Análise tradicional. |
 | Sessões personalizadas | Suporte para todos os recursos personalizados de sessão que não sejam ocorrências em segundo plano móveis. |
 | Configurações de persistência de eVar | As eVars não fazem mais parte do CJA. No entanto, as configurações de persistência agora fazem parte das Visualizações de dados e estão disponíveis para todas as dimensões. Lembre-se de que a persistência se baseia no processamento de tempo do relatório, não no processamento da coleta de dados. Isso significa que toda a persistência se baseará no intervalo de datas do relatórios em vez da totalidade dos dados. |
@@ -50,9 +50,9 @@ As tabelas a seguir listas quais recursos do Adobe Analytics são suportados, pa
 | Dimensões predefinidas da área de trabalho de Análise (por exemplo, Tipo de navegador, Tipo de Quem indicou, Canais de marketing, Número de visitas etc.) | O CJA não fornece essas dimensões nativamente. Para clientes que usam o ADC (Analytics Data Connector), algumas dessas dimensões estão disponíveis, mas não todas. Consulte a nossa [documentação sobre quais variáveis do Analytics são suportadas por meio do ADC](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Painéis | Os painéis em branco, de atribuição e de forma livre são totalmente compatíveis. A Comparação de segmentos não é suportada. |
 | eVars de comercialização | As eVars de comercialização funcionarão somente com conjuntos de dados baseados em ADC, a menos que estejam em conformidade estrita com o mesmo schema XDM (similar às limitações de lista do produto acima). |
-| Filtragem de bot | Para conjuntos de dados baseados no ADC (Analytics Data Connector), a filtragem de bot é aplicada. A lógica geral de filtragem de bot para outros conjuntos de dados não é executada pela plataforma de experiência ou CJA. |
+| Filtragem de bot | Para conjuntos de dados baseados no ADC (Analytics Data Connector), a filtragem de bot é aplicada. A lógica geral de filtragem de bot para outros conjuntos de dados não é executada pelo [!UICONTROL Experience Platform] ou CJA. |
 | Regras de processamento | Para conjuntos de dados baseados em ADC, as regras de processamento ainda são aplicadas. |
-| Correção de identidade entre dispositivos | Os clientes estão limitados a pontos &quot;únicos&quot; dos dados por meio do Serviço de Query, ou atualmente devem aplicar essa lógica aos dados antes da ingestão dos dados da plataforma de experiência. |
+| Correção de identidade entre dispositivos | Os clientes estão limitados a pontos &quot;únicos&quot; dos dados por meio do Serviço de Query, ou atualmente devem aplicar essa lógica aos dados antes da ingestão dos [!UICONTROL Experience Platform] dados. |
 
 ## Não suportado no momento, mas planejado
 
@@ -95,6 +95,6 @@ As tabelas a seguir listas quais recursos do Adobe Analytics são suportados, pa
 | Públicos alvos do Relatórios e análises |  |
 | Eventos de calendário do Relatórios e análises |  |
 | Ad Hoc Analysis |  |
-| Data Warehouse Relatórios | O Adobe Experience Platform Query Service será a nova interface para esses casos de uso no CJA. |
+| Data Warehouse Relatórios | [!UICONTROL Experience Platform Query Service] será a nova interface para esses casos de uso no CJA. |
 | Mobile Services |  |
 | Feeds de dados |  |
