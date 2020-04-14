@@ -2,7 +2,7 @@
 title: Configurar exibições de dados e atribuição
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 71d666b89860813d4e578c2f3c786da8d471a874
+source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
 
@@ -17,7 +17,7 @@ Lembre-se disso antes de aplicar as configurações de atribuição:
 
 * Na interface do usuário do visualização de dados, especifique a atribuição padrão. **Observação**: Posteriormente, você poderá substituir essas configurações em projetos do Workspace. No entanto, essa funcionalidade não está disponível no momento.
 
-* As configurações de atribuição no Análise de jornada do cliente não são destrutivas e retroativas. Em outras palavras, você não pode prejudicar irreparavelmente seus conjuntos de dados no Análise de jornada do cliente. Mesmo se você excluir algo acidentalmente, sempre poderá voltar para a plataforma Experience e trazer o conjunto de dados de volta para dentro. (Tenha em mente, no entanto, que trazer o conjunto de dados de volta implica custos adicionais.)
+* As configurações de atribuição no Análise de jornada do cliente não são destrutivas e retroativas. Em outras palavras, você não pode prejudicar irreparavelmente seus conjuntos de dados no Análise de jornada do cliente. Mesmo que você exclua algo acidentalmente, sempre pode voltar para [!UICONTROL Experience Platform] trazer o conjunto de dados de volta. (Tenha em mente, no entanto, que trazer o conjunto de dados de volta implica custos adicionais.)
 
 * Se desejar que uma dimensão &quot;se comporte&quot; como uma eVar tradicional (variável de conversão), configure-a com a atribuição &quot;Visita de último toque&quot; por padrão.
 
@@ -72,7 +72,7 @@ Especifica um período de tempo, ou evento, após o qual o valor da dimensão ex
 | Pessoa (Janela Relatórios) | Anteriormente conhecido como o nível &quot;Visitante&quot;. eventos de conversão não vinculados a essa pessoa não estão associados à dimensão ou métrica. |
 | Tempo personalizado | Especifique os minutos, horas, dias, meses ou trimestres personalizados. eventos de conversão além do período de tempo especificado não estão associados à dimensão ou à métrica. |
 
-Para obter mais informações, consulte o documento [IQ de](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)Atribuição.
+Para obter mais informações, consulte o documento [IQ de](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)atribuição.
 
 ### Janela de pesquisa
 
