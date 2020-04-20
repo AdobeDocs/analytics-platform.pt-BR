@@ -1,7 +1,7 @@
 ---
 title: Perguntas frequentes sobre Customer Journey Analytics
 description: Customer Journey Analytics - Perguntas frequentes.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 69f9154387ec11e9b1ec6f867ebab6d556451a9a
 
 ---
@@ -12,17 +12,17 @@ source-git-commit: 69f9154387ec11e9b1ec6f867ebab6d556451a9a
 | Pergunta | Resposta |
 |---|---|
 | **Pré-requisitos** |  |
-| Do you need Device Graph or Device Coop for [!UICONTROL Customer Journey Analytics]? | No, Private Device Graph or Device Coop are not required for [!UICONTROL Customer Journey Analytics]. Na verdade, eles ainda não são compatíveis. |
-| Do you need Experience Cloud ID (ECID) for [!UICONTROL Customer Journey Analytics]? | No, [!UICONTROL Customer Journey Analytics] supports any ID in a dataset, whether that&#39;s ECID or any other ID you choose. |
+| Você precisa do Device Graph ou Device Coop para o [!UICONTROL Customer Journey Analytics]? | Não, o Private Device Graph ou Device Coop não são necessários para o [!UICONTROL Customer Journey Analytics]. Na verdade, eles ainda não são compatíveis. |
+| Você precisa da Experience Cloud ID (ECID) para o [!UICONTROL Customer Journey Analytics]? | Não, o [!UICONTROL Customer Journey Analytics] suporta qualquer ID em um conjunto de dados, seja ECID ou qualquer outra ID que você escolher. |
 | E se for necessário extrair, transformar, carregar (ETL) seus dados antes do Customer Journey Analytics? | Atualmente, você precisa trabalhar com um parceiro de ETL (Unifi ou Informatica) se for necessário transformar os dados antes de colocá-los na AEP. Se ETL for necessário depois que os dados já tiverem sido assimilados, os Serviços de consulta da AEP fornecem algumas opções limitadas. |
 | **Costura** |  |
-| Can [!UICONTROL Customer Journey Analytics] &quot;stitch&quot; across devices or across datasets? | Não. [!UICONTROL Customer Journey Analytics] é um sistema de análise &quot;traga sua própria ID&quot;. Os planos para uma boa abordagem de costura estão em andamento. |
+| O [!UICONTROL Customer Journey Analytics] é capaz de &quot;costurar&quot; entre dispositivos ou conjuntos de dados? | Não. O [!UICONTROL Customer Journey Analytics] é um sistema analítico do tipo &quot;traga sua própria ID&quot;. Os planos para uma boa abordagem de costura estão em andamento. |
 | A costura de comportamento anônimo para comportamento autenticado é compatível? | Não, ainda não. |
-| **Obter dados em[!UICONTROL Customer Journey Analytics]** |  |
-| Qual é a latência esperada para [!UICONTROL Customer Journey Analytics] continuar [!UICONTROL Experience Platform]? | <ul><li>Em carga normal: &lt; 60 minutos <br>**Observação:** no caso de um volume de dados excepcionalmente elevado por meio do pipeline, poderá demorar até 24 horas.</li><li>Dados de preenchimento retroativo (até 10 bilhões de eventos): &lt; 4 semanas</li></ul> |
-| How do you connect online data to offline data in [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Customer Journey Analytics] é um sistema de análise &quot;trazer sua própria ID&quot;. As long as the person ID matches between datasets, [!UICONTROL Customer Journey Analytics] can connect segments, attribution, flow, fallout, etc. em todos os conjuntos de dados. |
-| Como posso trazer meus dados offline para o Customer Journey Analytics? | Os clientes devem primeiro trazer quaisquer dados para a plataforma da experiência antes de poder usá-los com a Análise de jornada do cliente. A equipe de integração de dados da Experience Platform pode ajudar a fornecer recomendações ou consultoria aos clientes, se necessário. |
-| Como posso obter dados do Analytics no Customer Journey Analytics? | Os dados do Analytics podem ser conectados à Experience Platform por meio do Analytics Data Connector. A maioria dos campos do Analytics é trazida para o formato XDM, mas outros campos ainda não estão disponíveis (como dimensões de Canais de marketing). |
+| **Obtenção de informações de dados [!UICONTROL Customer Journey Analytics]** |  |
+| Qual é a latência esperada do [!UICONTROL Customer Journey Analytics] no [!UICONTROL Experience Platform]? | <ul><li>Em carga normal: &lt; 60 minutos <br>**Observação:** no caso de um volume de dados excepcionalmente elevado por meio do pipeline, poderá demorar até 24 horas.</li><li>Dados de preenchimento retroativo (até 10 bilhões de eventos): &lt; 4 semanas</li></ul> |
+| Como conectar dados online a dados offline no [!UICONTROL Customer Journey Analytics]? | O [!UICONTROL Customer Journey Analytics] é um sistema analítico do tipo &quot;traga sua própria ID&quot;. Contanto que a ID da pessoa corresponda entre os conjuntos de dados, o [!UICONTROL Customer Journey Analytics] pode conectar segmentos, atribuição, fluxo, fallout, etc. em todos os conjuntos de dados. |
+| Como posso trazer meus dados offline para o Customer Journey Analytics? | Os clientes devem primeiro trazer os dados para a Experience Platform, antes que possam usá-los com o Customer Journey Analytics. A equipe de integração de dados da Experience Platform pode ajudar a fornecer recomendações ou consultoria aos clientes, se necessário. |
+| Como posso obter dados do Analytics no Customer Journey Analytics? | Os dados do Analytics podem ser conectados à Experience Platform por meio do Conector de dados do Analytics. A maioria dos campos do Analytics é trazida para o formato XDM, mas outros campos ainda não estão disponíveis (como dimensões de Canais de marketing). |
 | Qual é o tempo de montagem dos elementos do conjunto de dados em uma exibição de dados? | Algumas horas para começar e alguns dias para preencher retroativamente os últimos 13 meses de dados. |
 | É necessário trazer os dados de PII para estabelecer as conexões entre os dados? | Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que não seja PII. |
 | **Componentes tradicionais do Analytics** |  |
