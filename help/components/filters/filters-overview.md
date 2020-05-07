@@ -2,7 +2,10 @@
 title: Visão geral dos Filtros
 description: Entenda para que filtros são usados e como criar um filtro simples.
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: 09dcb36b96d95276b357e0f1308a977f5db5d711
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 15%
 
 ---
 
@@ -16,13 +19,13 @@ Os Filtros podem ser baseados em atributos (tipo de navegador, dispositivo, núm
 Você pode criar e salvar filtros no Construtor de filtro ou gerar filtros de uma visualização de Fallout (no Workspace). Além disso, filtros podem ser usados juntos como filtros empilhados.
 
 >[!IMPORTANT]
-Filtros são conhecidos como &quot;segmentos&quot; no Adobe Analytics. Renomeamos segmentos para filtros porque a Adobe Experience Platform tem uma definição diferente de &quot;segmento&quot;. Um segmento no AEP se refere a...
+>Filtros são conhecidos como &quot;segmentos&quot; no Adobe Analytics. Renomeamos segmentos para filtros porque a Adobe Experience Platform tem uma definição diferente de &quot;segmento&quot;.
 
-A filtragem inclui o Construtor [de](/help/components/filters/create-filters.md) filtros para construir filtros e executar um pré-teste, e o Gerenciador [de](/help/components/filters/manage-filters.md) filtros para coletar, marcar, aprovar, definir a segurança e compartilhar filtros em sua organização.
+Filtering includes the [Filter Builder](/help/components/filters/create-filters.md) to construct filters and run a pre-test, and the [Filter Manager](/help/components/filters/manage-filters.md) to collect, tag, approve, set security, and share filters across your organization.
 
 ## filtros sequenciais
 
-filtros sequenciais permitem identificar visitantes com base na navegação e na visualização de página no site, fornecendo um filtro de ações e interações definidas. Os segmentos sequenciais ajudam a identificar o que um visitante gosta e o que um visitante evita. Ao criar filtros sequenciais, o operador ENTÃO é usado para definir e ordenar a navegação do visitante.
+filtros sequenciais permitem identificar visitantes com base na navegação e na visualização de página no site, fornecendo um filtro de ações e interações definidas. Os segmentos sequenciais ajudam você a identificar o que um visitante gosta e o que um visitante evita. Ao criar filtros sequenciais, o operador ENTÃO é usado para definir e ordenar a navegação do visitante.
 
 Exemplo:
 
@@ -39,7 +42,7 @@ Os Filtros são baseados em uma hierarquia de nível de Pessoa, Sessão e Evento
 >[!NOTE]
 >O container Pessoa era anteriormente conhecido como o container do Visitante. O container Session era chamado de container Visita, e o container Evento costumava ser o container Ocorrência.
 
-Um Filtro define condições para filtrar um visitante com base em seus atributos ou interações com o site. Para definir condições em um filtro, defina regras para filtrar visitantes com base nas características do visitante e/ou nas características de navegação. Para detalhar ainda mais os dados do visitante, você pode filtrar com base em visitas específicas e/ou ocorrências de visualização de página para cada visitante. O Construtor de filtro fornece uma arquitetura simples para criar esses subconjuntos e aplicar regras como container aninhados e hierárquicos, Pessoa, Sessão ou Evento.
+Um Filtro define condições para filtrar um visitante com base em seus atributos ou interações com o site. Para definir condições em um filtro, defina regras para filtrar visitantes com base nas características do visitante e/ou nas características de navegação. Para detalhar ainda mais os dados do visitante, você pode filtrar com base em visitantes específicos e/ou ocorrências de visualização de página para cada visitante. O Construtor de filtro fornece uma arquitetura simples para criar esses subconjuntos e aplicar regras como container aninhados e hierárquicos, Pessoa, Sessão ou Evento.
 
 A arquitetura de container empregada no Construtor de filtro define a Pessoa como o container mais externo, contendo dados abrangentes específicos para o visitante em visitas e visualizações de página. Um container de sessão aninhado permite que você defina regras para detalhar os dados do visitante com base em sessões, e um container de Evento aninhado permite detalhar as informações do visitante com base em visualizações de página individuais. Cada container permite que você informe o histórico de um visitante, as interações detalhadas por sessões ou detalhe eventos individuais.
 
@@ -50,7 +53,7 @@ Os container da pessoa podem incluir valores com base no histórico geral do vis
 
 * Dias Antes da Primeira Compra
 
-* Página de Entrada Original
+* Página de entrada original
 
 * Domínios de referência originais
 
@@ -76,7 +79,7 @@ Os container de sessão incluem valores com base na ocorrência por sessão:
 
 ### container Evento
 
-O container Evento define quais eventos de página você gostaria de incluir ou excluir de um filtro. É o mais restrito dos container disponíveis para permitir identificar cliques específicos e visualização de página onde uma condição é verdadeira, permitindo que você visualização um único código de rastreamento ou isole o comportamento em uma seção específica do site. Você também pode indicar um valor específico quando uma ação ocorre, como o canal de marketing quando um pedido é feito.
+O container Evento define quais eventos de página você gostaria de incluir ou excluir de um filtro. É o mais estrito dos contêineres disponível para permitir a identificação de cliques e visualizações de página específicos, nos quais a condição é verdadeira, o que lhe permite visualizar um único código de rastreamento, ou isolar um comportamento em uma seção específica do site. Você também pode desejar indicar um valor específico quando uma ação ocorre, como o canal de marketing quando um pedido é efetuado.
 
 Os container de Eventos incluem valores com base em detalhamentos de página única:
 
