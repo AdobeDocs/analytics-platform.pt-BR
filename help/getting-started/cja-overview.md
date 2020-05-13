@@ -2,7 +2,10 @@
 title: Visão geral do Customer Journey Analytics
 description: Introdução ao Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 336adb3762258cc657ffa5c74a50d28e6f63c7db
+source-git-commit: 6f5c3c073069ca7f428d971515342c1a636795e3
+workflow-type: tm+mt
+source-wordcount: '1137'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +27,7 @@ A versão inicial do Customer Journey Analytics inclui muitos dos recursos inclu
 
 ## Comparação do CJA com o Cross-Device Analytics
 
-[O Cross-Device Analytics](https://docs.adobe.com/content/help/en/analytics/components/cda/cda-home.html) é integrado ao Adobe Experience Platform Identity Service, utilizando o Gráfico cooperativo ou o Gráfico privado, para identificar como os dispositivos digitais são mapeados para pessoas. Ele está disponível para clientes do Adobe Analytics Ultimate.
+[O Cross-Device Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/components/cda/cda-home.html) é integrado ao Adobe Experience Platform Identity Service, utilizando o Gráfico cooperativo ou o Gráfico privado, para identificar como os dispositivos digitais são mapeados para pessoas. Ele está disponível para clientes do Adobe Analytics Ultimate.
 
 O CJA integra-se aos conjuntos de dados da plataforma Adobe Experience e habilita a análise entre canais na área de trabalho da Análise. Embora o CJA ainda não se integre aos gráficos de identidade cooperativa ou privada, você pode &quot;reunir sua própria ID&quot; para unir conjuntos de dados, e esses conjuntos de dados podem ir além dos dados digitais para incluir pontos de contato online e offline. Os pré-requisitos CJA são abordados com mais detalhes abaixo.
 
