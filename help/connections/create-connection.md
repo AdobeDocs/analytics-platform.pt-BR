@@ -2,9 +2,9 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: b81116bba59c4b52dfe5b8b628c581e332a05c48
+source-git-commit: 674835d9c8b79850051729c875bc67f0e4052a66
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 4%
 
 ---
@@ -24,11 +24,11 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 1. Clique em **[!UICONTROL Criar nova conexão]** na parte superior direita.
 
-![Criar conexão](assets/create-connection.png)
+   ![Criar conexão](assets/create-connection.png)
 
 1. Primeiro, escolha uma caixa de proteção na Plataforma de experiência que contenha os conjuntos de dados aos quais deseja criar uma conexão. A plataforma Adobe Experience fornece [caixas de proteção](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) que particionam uma única instância da plataforma em ambientes virtuais separados para ajudar a desenvolver e desenvolver aplicativos de experiência digital. Você pode considerar caixas de proteção como &quot;silos de dados&quot; que contêm conjuntos de dados. As caixas de proteção são usadas para controlar o acesso aos conjuntos de dados. Não é possível acessar dados em caixas de proteção.
 
-1. Depois de selecionar a caixa de proteção, o painel esquerdo mostra todos os conjuntos de dados na caixa de proteção da qual você pode obter. Selecione um ou mais conjuntos de dados que deseja obter na Análise [!UICONTROL de jornada do] cliente e clique em **[!UICONTROL Adicionar]**. (Se você tiver vários conjuntos de dados para escolher, poderá pesquisar os corretos usando a barra de pesquisa acima da lista de conjuntos de dados.)
+1. Depois de selecionar a caixa de proteção, o painel esquerdo mostra todos os conjuntos de dados nessa caixa de proteção da qual você pode obter. Selecione um ou mais conjuntos de dados que deseja obter na Análise [!UICONTROL de jornada do] cliente e clique em **[!UICONTROL Adicionar]**. (Se você tiver vários conjuntos de dados para escolher, poderá pesquisar os corretos usando a barra de pesquisa acima da lista de conjuntos de dados.)
 
 1. Em seguida, para cada conjunto de dados adicionado a essa conexão, o [!UICONTROL Customer Journey Analytics] define automaticamente o tipo de conjunto de dados com base nos dados recebidos. Há três tipos diferentes de conjunto de dados: [!UICONTROL Dados do Evento] , dados do [!UICONTROL Perfil] e dados da [!UICONTROL pesquisa] .
 
