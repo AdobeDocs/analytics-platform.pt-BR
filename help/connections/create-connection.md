@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 4b672b0decfecc5a3c607ad966ebb2ecbf178a96
+source-git-commit: 204eb143d513b9b73fad020efabe6891a1253608
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 69%
+source-wordcount: '889'
+ht-degree: 68%
 
 ---
 
@@ -26,12 +26,17 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
    ![Criar conexão](assets/create-connection.png)
 
-1. Primeiro, em **[!UICONTROL Selecionar conjuntos de dados]**, escolha uma [!UICONTROL caixa de proteção] na plataforma da experiência que contenha os conjuntos de dados aos quais deseja criar uma conexão.
-A plataforma Adobe Experience fornece [caixas de proteção](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) que particionam uma única instância da Plataforma em ambientes virtuais separados. Você pode considerar [!UICONTROL caixas de proteção] como &quot;silos de dados&quot; que contêm conjuntos de dados e são usadas para controlar o acesso a conjuntos de dados. Observe que não é possível acessar dados em [!UICONTROL caixas de proteção].
+1. Escolha uma caixa de proteção na Plataforma de experiência que contenha os conjuntos de dados aos quais deseja criar uma conexão.
 
-1. Depois de selecionar a caixa de proteção, o painel esquerdo mostra todos os conjuntos de dados nessa caixa de proteção da qual você pode obter. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**. (Se tiver vários conjuntos de dados para escolher, você poderá pesquisar os corretos usando a barra de pesquisa acima da lista de conjuntos de dados.)
+   A plataforma Adobe Experience fornece [caixas de proteção](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) que particionam uma única instância da plataforma em ambientes virtuais separados para ajudar a desenvolver e desenvolver aplicativos de experiência digital. Você pode considerar caixas de proteção como &quot;silos de dados&quot; que contêm conjuntos de dados. As caixas de proteção são usadas para controlar o acesso aos conjuntos de dados. Não é possível acessar dados em caixas de proteção. Depois de selecionar a caixa de proteção, o painel esquerdo mostra todos os conjuntos de dados nessa caixa de proteção da qual você pode obter.
 
-1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in. There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
+1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
+
+   (Se tiver vários conjuntos de dados para escolher, você poderá pesquisar os corretos usando a barra de pesquisa acima da lista de conjuntos de dados.)
+
+1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in.
+
+   There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
    | Tipo do conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID da pessoa |
    |---|---|---|---|---|
@@ -39,7 +44,7 @@ A plataforma Adobe Experience fornece [caixas de proteção](https://docs.adobe.
    | [!UICONTROL Pesquisar] | Análogo a um arquivo de Classificações. Esses dados são usados para procurar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode carregar dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. | N/D | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento &quot;Gravar&quot;, exceto a classe &quot;Perfil individual XDM&quot;. | N/D |
    | [!UICONTROL Perfil] | Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe &quot;Perfil individual XDM&quot;. | Você pode escolher a ID de pessoa que deseja incluir. Cada conjunto de dados definido no [!DNL Experience Platform] tem seu próprio conjunto de uma ou mais IDs de pessoa definidas, como ID de cookie, ID com título, ID de usuário, código de rastreamento etc.<br>![ID de pessoa](assets/person-id.png)**Observação:** se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatórios refletirá isso. Para realmente unir conjuntos de dados, é necessário usar a mesma ID de pessoa. |
 
-1. Clicar em **[!UICONTROL Avançar]** leva você para a caixa de diálogo [!UICONTROL Criar conexão] .
+1. Clique em **[!UICONTROL Avançar]** para acessar a caixa de diálogo [!UICONTROL Criar conexão] .
 
    ![Criar conexão](assets/create-connection2.png)
 
