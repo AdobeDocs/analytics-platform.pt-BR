@@ -2,7 +2,10 @@
 title: Introdução à Análise de jornada do cliente
 description: Introdução à Análise de jornada do cliente.
 translation-type: tm+mt
-source-git-commit: fb2b5868db69bfff3345abcd69b0b70112fdcf3c
+source-git-commit: e30bbae59e11bbf93668ffe072508727f6efdd51
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 1%
 
 ---
 
@@ -11,48 +14,19 @@ source-git-commit: fb2b5868db69bfff3345abcd69b0b70112fdcf3c
 
 Para implementar a Análise de jornada do cliente, é necessário seguir esse fluxo de trabalho. Algumas tarefas iniciais são executadas na Adobe Experience Platform e outras na Análise de jornada do cliente.
 
-| Tarefa | Quando executado | Detalhes |
-|---|---|---|
-| **Etapa 1: Obtenha seus dados na Adobe Experience Platform** | Adobe Experience Platform | Existem várias maneiras de assimilar dados para casos de uso de streaming e lote, incluindo APIs e uma interface gráfica para upload de dados. A Experience Platform pode trazer dados de coisas como:<ul><li>armazenamento S3</li><li>Armazenamento Blob do Azure</li><li>Kafka Streams</li><li>Transferências SFTP</li><li>Carregamentos de arquivo CSV</li><li>Carregamentos de arquivo JSON</li></ul> |
-| **Etapa 2: Preparar seu schema de dados** | Adobe Experience Platform | Use o [Adobe Experience Data Model (XDM)](https://www.adobe.io/apis/experienceplatform/home/xdm.html) para padronizar os dados de experiência do cliente e definir schemas para o gerenciamento da experiência do cliente. |
-| **Etapa 3: Criar um conjunto de dados com base no schema** | Adobe Experience Platform | Os dados na plataforma consistem em conjuntos de dados, como conjuntos de dados de email, conjuntos de dados CRM, conjuntos de dados POS, conjunto de dados do Adobe Analytics etc. Cada conjunto de dados consiste em um schema e em lotes de dados. Você pode criar um conjunto de dados [na Experience Platform](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_dataset_tutorial/creating_a_dataset_tutorial.md).<br>Embora o schema para conjuntos de dados que podem ser importados para o Customer Journey Analytics seja flexível, ele deve estar em conformidade com algumas regras básicas. É melhor garantir que seus dados atendam a esses requisitos antes de carregá-los na Plataforma. (Observe que o schema inclui métricas e dimensões.)<br>Existem três tipos de dados compatíveis com o Análise de jornada do cliente:<ul><li>**Dados** do Evento: Dados que representam eventos no tempo (por exemplo, visitas da Web, interações, transações, dados de POS, dados de pesquisa, dados de impressão de anúncio etc.). Esses são dados típicos de sequência de cliques, com uma ID do cliente ou uma ID de cookie e um carimbo de data e hora. Com os dados do Evento, permitimos que você use a ID que desejar.</li><li>**Dados** de pesquisa: Esses dados são usados para pesquisar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode carregar dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos.</li><li>**Dados** do Perfil: Dados aplicados a seus visitantes, usuários ou clientes nos dados do Evento. Por exemplo, permite carregar dados do CRM sobre seus clientes.</li></ul> |
-| **Etapa 4:Criar conexões entre conjuntos de dados da plataforma e Análises de jornada do cliente** | Análise da jornada do cliente | See [Create a connection](/help/connections/create-connection.md). |
-| **Etapa 5: Criar visualizações de dados** | Análise da jornada do cliente | See [Create a data view](/help/data-views/create-dataview.md). |
-| **Etapa 6: Relatório dos dados entre canais no Workspace** | Análise da jornada do cliente | Consulte [Realizar análise](/help/projects/perform-basic-analysis.md) básica e [Realizar análise](/help/projects/perform-adv-analysis.md)avançada. |
-
 ## Pré-requisitos
 
 A Análise de jornada do cliente está disponível para clientes que
 
 * São clientes do Adobe Analytics [Select, Prime ou Ultimate](https://www.adobe.com/analytics/compare-adobe-analytics-packages.html) e
-* São provisionados para a [Adobe Experience Platform](https://www.adobe.com/experience-platform.html)e
+* São provisionados para a [Adobe Experience Platform](https://www.adobe.com/br/experience-platform.html)e
 * Adquiriu a SKU do Customer Journey Analytics
 
-## Preparar seu schema de dados
+## Fluxo de trabalho
 
-[Criar um schema usando o Editor de Schemas](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_editor_tutorial/schema_editor_tutorial.md)
-
-## Etapa 1: Obtenha seus dados na Adobe Experience Platform
-
-Antes de poder aproveitar os dados da plataforma Experience no CJA, é necessário assimilar esses dados na Plataforma. Há várias maneiras de fazer isso:
-
-* Se você quiser trazer seus dados existentes do Adobe Analytics, use o Adobe Analytics Platform Connector.
-* Para assimilar outros dados, use formatos como: Armazenamento S3, Armazenamento Blob do Azure, Fluxos Kafka, Transferências SFTP, Uploads de arquivos CSV, Uploads de arquivos JSON
-
-### Etapa 1a: Traga seus dados atuais do Analytics para a Adobe Experience Platform
-
-Use o Adobe Analytics Platform Connector pronto para usar o Adobe Analytics Platform para trazer os dados tradicionais do Adobe Analytics para a Plataforma. Você pode criar uma conexão de origem por conjunto de relatórios. Consulte [Criar uma conexão de origem com o Adobe Analytics](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/sources_tutorial/adobe-analytics-ui-tutorial.md) na documentação da plataforma Adobe Experience.
-
-Depois que a conexão é criada, um schema de público alvo e um conjunto de dados são criados automaticamente para conter os dados recebidos. Além disso, ocorre o preenchimento retroativo de dados e ingere até 13 meses de dados históricos. Quando a ingestão inicial for concluída, você poderá continuar `Step 4` a criar uma conexão entre esse conjunto de dados do Analytics e o Análise de jornada do cliente.
-
-### Etapa 1b: Ingressar outros tipos de dados
-
-[A ingestão](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/ingest_architectural_overview.md) em lote permite que você ingira dados na Experience Platform como arquivos em lote. Lotes são unidades de dados que consistem em um ou mais arquivos a serem ingeridos como uma única unidade. Depois de ingeridos, os lotes fornecem metadados que descrevem o número de registros ingeridos com êxito, bem como quaisquer registros com falha e mensagens de erro associadas. Os arquivos de dados carregados manualmente, como arquivos .CSV simples (mapeados para schemas XDM) e os dataframes do Parquet devem ser assimilados usando esse método.
-
-[A ingestão](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/streaming_ingest/streaming_ingest_overview.md) de streaming permite enviar dados de dispositivos cliente e servidor para a plataforma Experience em tempo real.
-
-[Outros conectores](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/acp-connectors-overview.md) de origem permitem que você ingira dados de fontes externas, ao mesmo tempo em que lhe fornece a capacidade de estruturar, rotular e aprimorar os dados recebidos usando os serviços da plataforma. Você pode assimilar dados de várias fontes, como aplicativos da Adobe (Adobe Analytics, Audiência Manager, Experience Platform Launch, Público alvo), armazenamento baseado em nuvem (Azure Blob, Amazon S3, FTP/SFTP, Armazenamento do Google Cloud), software de terceiros e seu CRM (Microsoft Dynamics 365, Salesforce).
-
-## Etapa 2: Preparar seu schema de dados
-
-bnbnbnbn
+| Tarefa | Detalhes |
+|---|---|---|
+| **Etapa 1: Obtenha seus dados na Adobe Experience Platform** | Esta etapa, realizada na Adobe Experience Platform, envolve várias subetapas:<br>**Etapa 1a: Prepare seu schema **de dados: Use o[Adobe Experience Data Model (XDM)](https://www.adobe.io/apis/experienceplatform/home/xdm.html)para padronizar os dados de experiência do cliente e[definir schemas](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/schema_editor_tutorial/schema_editor_tutorial.md)para o gerenciamento da experiência do cliente.<br>**Etapa 1b: Crie um conjunto de dados com base no schema**: Os dados na plataforma consistem em conjuntos de dados, como conjuntos de dados de email, conjuntos de dados CRM, conjuntos de dados POS, conjunto de dados do Adobe Analytics etc. Cada conjunto de dados consiste em um schema e em lotes de dados. Você pode criar um conjunto de dados [na Experience Platform](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_dataset_tutorial/creating_a_dataset_tutorial.md).<br>**Etapa 1c: Ingressar dados na plataforma **Experience: Use o Adobe Analytics Platform Connector pronto para usar o Adobe Analytics Platform para trazer os dados tradicionais do Adobe Analytics para a Plataforma. Você pode criar uma conexão de origem por conjunto de relatórios. Consulte[Criar uma conexão de origem com o Adobe Analytics](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/sources_tutorial/adobe-analytics-ui-tutorial.md)na documentação da plataforma Adobe Experience. Depois que a conexão é criada, um schema de público alvo e um conjunto de dados são criados automaticamente para conter os dados recebidos. Além disso, ocorre o preenchimento retroativo de dados e ingere até 13 meses de dados históricos. Quando a ingestão inicial for concluída, você poderá continuar`Step 2`a criar uma conexão entre esse conjunto de dados do Analytics e o Análise de jornada do cliente.<br>Ou você pode assimilar outros tipos de dados por meio da ingestão[em](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/ingest_architectural_overview/ingest_architectural_overview.md)lote, ingestão[em](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/streaming_ingest/streaming_ingest_overview.md)sequência ou por meio de conectores[de](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/acp-connectors-overview.md)outra fonte. |
+| **Etapa 2: Criar conexões entre conjuntos de dados da plataforma e Análise de jornada do cliente** | Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao Workspace. Para criar relatórios sobre conjuntos de dados da plataforma Experience, primeiro é necessário estabelecer uma conexão entre conjuntos de dados na plataforma Experience e na Workspace.<br>Consulte [Criar uma conexão](/help/connections/create-connection.md). |
+| **Etapa 3: Criar visualizações de dados** | Uma visualização de dados é uma visualização &quot;filtrada&quot; dos dados. É possível criar visualizações de dados diferentes para a mesma conexão, com configurações diferentes para o tempo limite da visita, atribuição etc. É possível criar várias visualizações de dados para um único conjunto de dados.<br>Consulte [Criar uma visualização](/help/data-views/create-dataview.md)de dados. |
+| **Etapa 4: Relatório dos dados entre canais no Workspace** | Depois de criar conexões e visualizações de dados, analise os dados que você trouxe usando o poder e a flexibilidade da Análise Workspace.<br>Consulte [Realizar análise](/help/projects/perform-basic-analysis.md) básica e [Realizar análise](/help/projects/perform-adv-analysis.md)avançada. |
