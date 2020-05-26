@@ -2,7 +2,10 @@
 title: Conjuntos de dados combinados
 description: Saiba como o CJA cria uma conexão combinando conjuntos de dados.
 translation-type: tm+mt
-source-git-commit: 2dab33dca173fcc0eab657b810e85e4740e5d7e0
+source-git-commit: fa354af31237c4963ba0affa89652bfdeae45ea0
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 6%
 
 ---
 
@@ -58,8 +61,8 @@ Se sua conexão incluísse apenas a primeira tabela e não a segunda, puxar um r
 
 | string_color | metric_a |
 | --- | --- |
-| Azul  | 5 |
 | Não especificado | 6 |
+| Azul  | 3 |
 | Vermelho  | 2 |
 
 No entanto, se você incluiu ambas as tabelas em sua conexão, a atribuição será alterada, pois `user_847` está em ambos os conjuntos de dados. Uma linha dos atributos do segundo conjunto de dados `metric_a` para &#39;Amarelo&#39;, onde não foram especificados anteriormente:
@@ -67,5 +70,5 @@ No entanto, se você incluiu ambas as tabelas em sua conexão, a atribuição se
 | string_color | metric_a |
 | --- | --- |
 | Amarelo | 6 |
-| Vermelho  | 2 |
 | Azul  | 3 |
+| Vermelho  | 2 |
