@@ -1,7 +1,7 @@
 ---
 title: Gerenciar filtros
-description: saiba como gerenciar filtros no Análise de jornada do cliente
-translation-type: tm+mt
+description: saiba como gerenciar filtros no Customer Journey Analytics
+translation-type: ht
 source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 ---
@@ -9,69 +9,69 @@ source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
 
 # Gerenciar filtros
 
-O Gerenciador de filtro oferta várias maneiras de preparar segmentos, como compartilhamento, marcação, aprovação, cópia, exclusão e marcação como favoritos.
+O Gerenciador de filtros oferece várias formas de cuidar de segmentos, como compartilhar, marcar, aprovar, copiar, excluir e marcar como favoritos.
 
-O Gerenciador de filtro mostra todos os filtros que você possui e que foram compartilhados com você. Usuários de nível administrativo podem ver todos os filtros na organização. Esta visão geral apresenta a interface do usuário e os recursos do Gerenciador de filtro.
+O Gerenciador de filtros mostra todos os seus filtros e os compartilhados com você. Os usuários de nível administrativo podem visualizar todos os filtros na organização. Essa visão geral apresenta a interface do usuário e os recursos do Gerenciador de filtros.
 
 Acesse o Gerenciador de filtros indo até **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** na navegação superior.
 
-## IU do Gerenciador de Filtros
+## IU do Gerenciador de filtros
 
 ![](assets/filter-manager-ui.png)
 
 | # | Recurso da interface do usuário | Descrição |
 |---|---|---|
-| 1 | Barra de ferramentas de gerenciamento de filtro | Depois de marcar um filtro, essa barra de ferramentas será exibida. A maioria das tarefas de gerenciamento pode ser concluída nesta barra de ferramentas. |
-| 2 | Caixas de seleção | Verifique um filtro para gerenciá-lo. |
-| 4 | Favoritos | Clicar na estrela ao lado de um filtro torna a estrela amarela e marca o filtro como favorito. |
-| 5 | Título e descrição | Fornecido no Construtor de filtro. Para editar o título e a descrição, clique no link do título - isso leva você de volta ao Construtor de filtro. |
+| 1 | Barra de ferramentas do gerenciamento de filtros | Depois de marcar um filtro, essa barra de ferramentas aparece. A maioria das tarefas de gerenciamento podem ser concluídas a partir dessa barra de ferramentas. |
+| 2 | Caixas de seleção | Marque um filtro para gerenciá-lo. |
+| 4 | Favoritos | Ao clicar na estrela ao lado de um filtro, ela fica amarela e marca o filtro como favorito. |
+| 5 | Título e descrição | Fornecidos no Construtor de filtros. Para editar o título e a descrição, clique no link de título; isso leva você até o Construtor de filtros. |
 | 6 | Conjuntos de relatórios | Essa coluna indica em qual conjunto de relatórios o filtro foi salvo pela última vez. |
-| 7 | Proprietário | Indica quem pertence o filtro. Como não administrador, você pode ver somente filtros que possui ou que foram compartilhados com você. |
-| 8 | Tags (não marcadas no seletor de colunas, portanto a coluna não aparece) | Tags aplicadas ao filtro, por você ou por pessoas que compartilharam o filtro com você. |
-| 9 | Compartilhado com | Pessoas ou grupos do Lista (somente Administrador) ou Todos (somente Administrador) com os quais você compartilhou o filtro. |
+| 7 | Proprietário | Indica quem é o proprietário do filtro. Como um usuário não administrativo, você pode ver somente os filtros que possui ou que foram compartilhados com você. |
+| 8 | Tags (não marcadas no seletor de colunas, portanto, a coluna não aparece) | Tags aplicadas ao filtro, por você ou outras pessoas que compartilharam o filtro com você. |
+| 9 | Compartilhado com | Lista indivíduos ou grupos (somente Administrador) ou Todos (somente Administrador) com os quais você compartilhou o filtro. |
 | 10 | Data de modificação | Mostra a data em que o filtro foi modificado pela última vez. |
-| 11 | Seletor de colunas | (Parte superior direita) Permite selecionar quais colunas serão exibidas no Gerenciador de filtros. |
-| 12 | Ícone Compartilhado  | Indica que este filtro é compartilhado por você ou com você. |
-| 13 | Ícone Aprovado  | Indica que este filtro foi aprovado por um Administrador. |
-| 14 | Outros Filtros | Permite que você veja filtros por Tags, Report Suites, Proprietários e Outros (Mostrar tudo, Meu, Compartilhado comigo, Aprovado, Favoritos). |
+| 11 | Seletor de coluna | (Parte superior direita) Permite selecionar quais colunas serão exibidas no Gerenciador de filtros. |
+| 12 | Ícone Compartilhado | Indica que este filtro foi compartilhado por você ou com você. |
+| 13 | Ícone Aprovado | Indica que o filtro foi aprovado pelo Administrador. |
+| 14 | Outros filtros | Permite que você veja os filtros em Tags, Conjuntos de relatórios, Proprietários e Outros (Exibir tudo, Meus, Compartilhados comigo, Aprovados, Favoritos). |
 
-## Planeje filtros
+## Planejar filtros
 
-A dedicação de algum tempo para planejar segmentos aumenta as chances de que eles sejam úteis para sua organização e que seus números sejam mantidos em verificação.
+Ao dedicar algum tempo para planejar segmentos melhora a probabilidade de que serão úteis para a organização e seus números serão mantidos sob controle.
 
-* Considere a audiência: Quem vai consumi-la? Com quem você vai compartilhar? Quais grupos de pessoas usarão esse filtro e como devo marcá-lo de acordo? Isso também significa fornecer uma boa descrição do filtro. No mínimo, a descrição deve responder a estas perguntas:
+* Considere o público-alvo: quem consumirá? Com quem você compartilhará? Quais grupos de pessoas usarão esse filtro e como devo marcá-lo apropriadamente? Isso também significa fornecer uma boa descrição do filtro. No mínimo, a descrição deve responder a estas perguntas:
 
-   * Para que serve este filtro?
+   * Para que este filtro serve?
 
    * Quando devo usar este filtro?
 
-* Determine o escopo do filtro. Qual container [de](/help/components/filters/filters-overview.md) filtro melhor representa o escopo? Use o menor container possível.
+* Determine o escopo do filtro. Qual [contêiner de filtro](/help/components/filters/filters-overview.md) melhor representa o escopo? Use o menor contêiner possível.
 
-* Decida quais elementos devem ser incluídos na definição do filtro e quais valores.
+* Decida quais elementos devem ser incluídos na definição do filtro e quais destes valores.
 
-* Considere como você deseja que seu processo de aprovação se desdobre. Uma única pessoa irá rever e aprovar filtros ou será uma decisão da comissão?
+* Considera como você deseja que o processo de aprovação se desenvolva. Uma única pessoa analisará e aprovará os filtros ou será uma decisão de comitê?
 
-* Defina seus filtros com visualização para uma biblioteca de filtros que oferece aos usuários empresariais a capacidade de empilhar e reutilizar partes de filtros ou componentes de forma modular. Quais &quot;módulos&quot; você precisa definir para transformar essa biblioteca em uma realidade?
+* Defina seus filtros com uma visualização para uma biblioteca de filtros que confere aos usuários de negócios a capacidade de empilhar e reutilizar partes de filtros ou componentes de forma modular. Quais &quot;módulos&quot; você precisa definir para transformar essa biblioteca em uma realidade?
 
-### filtros de tags
+### Marcar filtros
 
-No Gerenciador de filtros, filtros de marcação permitem organizá-los. Todos os usuários podem criar tags para filtros e aplicar uma ou mais tags a um segmento. No entanto, você pode ver tags somente para os filtros que possui ou que foram compartilhados com você.
+No Gerenciador de filtros, a marcação de filtros permite que você os organize. Todos os usuários podem criar tags para filtros e aplicar uma ou mais tags a um filtro. No entanto, você pode visualizar tags somente para seus filtros ou os compartilhados com você.
 
 Que tipos de tags você deve criar? Estas são algumas sugestões para tags úteis:
 
-* Tags baseadas em nomes de equipe, como Marketing social, Marketing móvel.
+* Tags com base em nomes de equipe, como Marketing social, Marketing móvel.
 
-* Tags de projeto (tags de análise), como análise de página de entrada.
+* Tags de projeto (tags de análise), como análises de página de entrada.
 
-* Tags de Categoria: Masculino; geografia.
+* Tags de categoria: masculino; geografia.
 
-* Tags de fluxo de trabalho: A aprovar; Preparado para (uma unidade de negócio específica)
+* Tags de fluxo de trabalho: para ser aprovado; auxiliar para (uma unidade de negócios específica).
 
 Para marcar um filtro:
 
-1. No Gerenciador de filtros, marque a caixa de seleção ao lado do filtro que deseja marcar. A barra de ferramentas do gerenciamento de filtros é exibida.
+1. No Gerenciador de filtros, marque a caixa de seleção ao lado do filtro que você deseja marcar. A barra de ferramentas de gerenciamento de filtros aparece.
 
-1. Click **[!UICONTROL Tag]** and either
+1. Clique em **[!UICONTROL Tag]** e
 
    * selecione a partir das tags existentes, ou
 
@@ -79,18 +79,18 @@ Para marcar um filtro:
 
 1. Clique em **[!UICONTROL Tag]** novamente e marque o segmento.
 
-A tag agora deve aparecer na coluna Tags. (Clique no ícone de engrenagem na parte superior direita para gerenciar as colunas.)
-You can also filter on tags by going to **[!UICONTROL Filters > Tags]**.
+A tag agora deve aparecer na coluna Tags. (Clique no ícone de engrenagem na parte superior direita para gerenciar suas colunas).
+Também é possível filtrar em tags acessando **[!UICONTROL Filters > Tags]**.
 
 ### Aprovar filtros
 
-No Gerenciador de filtros, é possível configurar um fluxo de trabalho que inclua o filtro de aprovação para vários níveis de aplicativo, para departamentos ou grupos específicos e consistente com as políticas de relatórios.
+No Gerenciador de filtros você pode configurar um fluxo de trabalho que inclui a aprovação de filtros para vários níveis do aplicativo, para departamentos ou grupos específicos, e que seja consistente com políticas de relatórios.
 
-Veja como sinalizar um filtro conforme aprovado:
+Esta é a forma de marcar um filtro como aprovado:
 
-1. No Gerenciador de filtros, marque a caixa de seleção à esquerda do título Filtro.
+1. No Gerenciador de filtros, marque a caixa de seleção à esquerda do título do Filtro.
 
-1. Clique **[!UICONTROL Approve]** na barra de tarefa do gerenciamento de filtro.
+1. Clique em **[!UICONTROL Approve]** na barra de tarefas de gerenciamento de filtro.
 
 1. Considere compartilhar os segmentos aprovados na organização.
 
@@ -100,39 +100,39 @@ Veja como sinalizar um filtro conforme aprovado:
 
    ![](assets/seg_approved.png)
 
-1. You can also unapprove an approved segment by clicking **[!UICONTROL Unapprove]**.
+1. Também é possível cancelar a aprovação de um filtro aprovado ao clicar em **[!UICONTROL Unapprove]**.
 
 ### Compartilhar filtros
 
-Dependendo das suas permissões, você pode compartilhar filtros com toda a organização, grupos ou usuários individuais.
+Dependendo das permissões, você pode compartilhar filtros com organizações, grupos ou usuários individuais.
 
 | Administrador | Não administrador |
 |---|---|
-| Pode compartilhar filtros com Todos, Grupos e Usuários. Consulte a documentação [do Console de](https://helpx.adobe.com/enterprise/using/manage-products-and-profiles.html) administração para obter mais informações. | Pode compartilhar filtros somente com usuários individuais. |
+| Pode compartilhar filtros com Todos, Grupos e Usuários. Consulte a [documentação do Admin Console](https://helpx.adobe.com/br/enterprise/using/manage-products-and-profiles.html) para obter mais informações. | Pode compartilhar filtros somente com usuários individuais. |
 
-Quando você deve compartilhar filtros com toda a empresa em vez de apenas um grupo de usuários ou indivíduos? Estas são algumas das práticas recomendadas que você pode seguir:
+Quando você deve compartilhar filtros com a empresa inteira em comparação a apenas um grupo de usuário ou indivíduos? Estas são algumas das práticas recomendadas que você pode seguir:
 
-* Como administrador, compartilhe um filtro com Todos se ele for útil para a empresa inteira e se todos se sentirem confortáveis em usá-lo. Nesse caso, você também deve considerar torná-lo um filtro aprovado.
+* Como administrador, compartilhe um filtro com Todos se ele for usado por toda a empresa e se todos souberem como utilizá-lo. Nesse caso, você também deve considerar torná-lo um filtro aprovado.
 
-* Como administrador, compartilhe um filtro com um Perfil de produto específico se o filtro fornecer um bom valor comercial para essa equipe. Não aprove oficialmente esse tipo de filtro.
+* Como administrador, compartilhe um filtro com um Perfil de produto específico se o filtro oferecer bom valor de negócios para a equipe. Não aprove oficialmente esse tipo de filtro.
 
-* Como Administrador ou usuário individual, compartilhe um filtro com outros indivíduos para vetar e validar um filtro. Se não for útil, é possível descartá-la. Não aprove oficialmente esse tipo de filtro.
+* Como administrador ou usuário individual, compartilhe um filtro com outros indivíduos para vetar e validar um filtro. Se não for útil, é possível descartá-la. Não aprove oficialmente esse tipo de filtro.
 
 Para compartilhar um filtro:
 
-1. No Gerenciador de filtros, marque a caixa de seleção ao lado do filtro que deseja compartilhar.
+1. No Gerenciador de filtros, marque a caixa de seleção ao lado do filtro que você deseja compartilhar.
 
 1. Na barra de ferramentas do gerenciamento de filtros, clique em **[!UICONTROL Share]**.
 
-1. Se você for um Administrador, é possível selecionar Tudo ou escolher a partir de Grupos e Usuários na organização. Como um não Administrador, você pode usar somente os usuários individuais. Use o campo Pesquisa para pesquisar por grupos ou usuários. Clique em **[!UICONTROL Share]**. The Shared icon appears next to the filter: ![](assets/share_icon.png)
+1. Se você for um Administrador, é possível selecionar Tudo ou escolher a partir de Grupos e Usuários na organização. Como um não Administrador, você pode usar somente os usuários individuais. Use o campo Pesquisa para pesquisar por grupos ou usuários. Clique em **[!UICONTROL Share]**. O ícone Compartilhado aparece ao lado do filtro: ![](assets/share_icon.png)
 
-1. Você pode filtrar filtros compartilhados com você indo até Filtros > Outros Filtros > Compartilhados comigo.
+1. É possível filtrar por filtros compartilhados com você em Filtros > Outros filtros > Compartilhados comigo.
 
 ### Marcar filtros como favoritos
 
 Outra maneira de organizá-los para facilitar o uso é marcar os segmentos como favoritos.
 
-1. No Gerenciador de filtros, verifique a estrela ao lado de qualquer filtro que você deseja marcar como favorito. A estrela fica amarela quando você a seleciona.
+1. No Gerenciador de filtros, marque a estrala ao lado de qualquer filtro que você deseja marcar como favorito. A estrela fica amarela ao selecioná-la.
 
 1. Você também pode filtrar por favoritos em Filtros > Outros filtros > Favoritos.
 
