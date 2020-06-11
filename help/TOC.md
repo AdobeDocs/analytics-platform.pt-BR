@@ -2,9 +2,9 @@
 git-repo: https://github.com/adobedocs/analytics-platform.en
 cloud: experience-cloud
 product: adobe analytics
-sub-product: customer journey
+sub-product: jornada do cliente
 index: true
-user-guide-title: Customer Journey Analytics Guide
+user-guide-title: Guia do Customer Journey Analytics
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/br/support/experience-cloud.html
 solution-image: assets/experience-cloud-logo-24.png
@@ -12,7 +12,7 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
 
 ---
@@ -35,7 +35,7 @@ source-git-commit: 66757840b75d09727bf2ac94abb76a1b44af083b
    + [Criar uma conexão](connections/create-connection.md)
    + [Gerenciar conexões](connections/manage-connection.md)
    + [Conjuntos de dados combinados](connections/combined-dataset.md)
-+ Data Views {#cja-dataviews}
++ Visualizações de dados {#cja-dataviews}
    + [Criar uma exibição de dados](data-views/create-dataview.md)
    + [Configurar exibições de dados e atribuição](data-views/configure-dataviews.md)
 + Componentes {#cja-components}
