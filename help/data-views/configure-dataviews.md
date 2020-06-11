@@ -1,7 +1,7 @@
 ---
 title: Configurar exibições de dados e atribuição
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 ---
@@ -9,47 +9,47 @@ source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
 
 # Configurações de componente e atribuição
 
-eVars, props e eventos no sentido tradicional do Adobe Analytics não existem mais no Customer Journey Analytics. Em vez disso, você tem elementos de schema ilimitados (dimensões, métricas, campos de lista). Todas as configurações de atribuição usadas para aplicar a eVars e props durante o processo de coleta de dados agora são aplicadas no momento do query - também conhecido como processamento no tempo do relatório.
+eVars, props e eventos no sentido tradicional do Adobe Analytics não existem mais no Customer Journey Analytics. Em vez disso, você tem elementos de esquema ilimitados (dimensões, métricas, campos de lista). Todas as configurações de atribuição usadas para aplicar a eVars e props durante o processo de coleta de dados agora são aplicadas no momento do query - também conhecido como processamento no tempo do relatório.
 
 Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/attribution-settings-in-data-views.html) para obter uma visão geral do vídeo.
 
 Lembre-se disso antes de aplicar as configurações de atribuição:
 
-* Na interface do usuário do visualização de dados, especifique a atribuição padrão. **Observação**: Posteriormente, você poderá substituir essas configurações em projetos do Workspace. No entanto, essa funcionalidade não está disponível no momento.
+* Na interface do usuário das visualizações de dados, especifique a atribuição padrão. **Observação**: posteriormente, você poderá substituir essas configurações em projetos do Workspace. No entanto, essa funcionalidade não está disponível no momento.
 
-* As configurações de atribuição no Análise de jornada do cliente não são destrutivas e retroativas. Em outras palavras, você não pode prejudicar irreparavelmente seus conjuntos de dados no Análise de jornada do cliente. Mesmo que você exclua algo acidentalmente, sempre pode voltar para [!UICONTROL Experience Platform] trazer o conjunto de dados de volta. (Tenha em mente, no entanto, que trazer o conjunto de dados de volta implica custos adicionais.)
+* As configurações de atribuição no Customer Journey Analytics não são destrutivas e retroativas. Em outras palavras, você não pode prejudicar irreparavelmente seus conjuntos de dados no Customer Journey Analytics. Mesmo que você exclua algo acidentalmente, sempre é possível voltar ao [!UICONTROL Experience Platform] e trazer o conjunto de dados de volta. (Tenha em mente, no entanto, que trazer o conjunto de dados de volta implica custos adicionais.)
 
-* Se desejar que uma dimensão &quot;se comporte&quot; como uma eVar tradicional (variável de conversão), configure-a com a atribuição &quot;Visita de último toque&quot; por padrão.
+* Se você quiser ter uma dimensão &quot;comporte-se&quot; como um eVar tradicional (variável de conversão), configure-a com a atribuição &quot;Visita de último toque&quot; por padrão.
 
-* Se desejar que uma dimensão &quot;se comporte&quot; como uma prop tradicional (variável de tráfego), configure-a com atribuição &quot;Mesmo toque&quot; por padrão.
+* Se você quiser ter uma dimensão &quot;comporte-se&quot; como uma prop tradicional (variável de tráfego), configure-a com a atribuição &quot;Mesmo toque&quot; por padrão.
 
-* Se você deseja que uma métrica &quot;se comporte&quot; como uma métrica padrão, não é necessário alterar nada.
+* Se você quiser ter uma métrica &quot;comporte-se&quot; como uma métrica padrão, não é necessário alterar nada.
 
 * As configurações de atribuição de métricas substituem as configurações de atribuição de dimensões.
 
 ## Especificar configurações de componente e atribuição
 
-Depois de [definir e salvar configurações](/help/data-views/create-dataview.md) de visualização de dados e componentes adicionados, você estará pronto para especificar configurações de atribuição, se optar por fazê-lo. Você pode especificar configurações de atribuição/expiração/pesquisa para dimensões e métricas. Se, por exemplo, você quiser que a atribuição de uma dimensão persista, você provavelmente desejará definir um tempo de expiração personalizado. Por exemplo, se você quiser que uma dimensão &quot;Código de rastreamento&quot; (uma variável de campanha) seja definida como atribuição &quot;Último contato&quot; para persistir por uma semana, adicione uma expiração personalizada de uma semana.
+Depois de [definir e salvar configurações de visualização de dados](/help/data-views/create-dataview.md) e componentes adicionados, você estará pronto para especificar configurações de atribuição, se optar por fazê-lo. Você pode especificar configurações de atribuição/expiração/pesquisa para dimensões e métricas. Se, por exemplo, você quiser que a atribuição de uma dimensão persista, você provavelmente desejará definir um tempo de expiração personalizado. Por exemplo, se você quiser que uma dimensão &quot;Código de rastreamento&quot; (uma variável de campanha) seja definida como uma atribuição &quot;Último contato&quot; para persistir por uma semana, adicione uma expiração personalizada de uma semana.
 
 >[!IMPORTANT]
->Você pode optar por não definir a alocação/expiração. Nesse caso, as dimensões se comportarão como props (modelo de atribuição &quot;Same Touch&quot;). As métricas sem configurações de atribuição definidas herdarão as configurações da dimensão à qual essa métrica é aplicada.
+>Você pode optar por não definir a alocação/expiração. Nesse caso, as dimensões se comportarão como props (modelo de atribuição &quot;Mesmo toque&quot;). As métricas sem configurações de atribuição definidas herdarão as configurações da dimensão à qual essa métrica é aplicada.
 
 ![](assets/edit-component.png)
 
-1. Especifique as configurações de componente e atribuição para dimensões e métricas. Consulte abaixo para obter informações sobre configurações individuais.
+1. Especifique as configurações de componente e atribuição para dimensões e métricas. Consulte a seção abaixo para obter informações sobre configurações individuais.
 
-1. Clique em **[!UICONTROL Save]** para salvar sua visualização de dados.
+1. Clique em **[!UICONTROL Save]** para salvar a visualização de dados.
 
 
 ### Configuração do componente
 
-É possível alterar o nome da métrica ou da dimensão para algo mais fácil de usar. Observe que o nome subjacente não é alterado, apenas o nome de exibição.
+É possível alterar o nome da métrica ou da dimensão para algo mais simples. Observe que o nome subjacente não é alterado, apenas o nome de exibição.
 
 ### Modelo de atribuição
 
-O modelo descreve a distribuição de conversões para os eventos em um grupo. Por exemplo, primeiro ou último contato. Determina como a Análise de jornada do cliente atribui crédito por um evento bem-sucedido se uma variável receber vários valores antes do evento.
+O modelo descreve a distribuição de conversões para os eventos em um grupo. Por exemplo, primeiro ou último contato. Determina como o Customer Journey Analytics atribuirá crédito por um evento bem-sucedido se uma variável receber vários valores antes do evento.
 
-| Ícone da interface do usuário | Modelos de atribuição | Definição | Quando usar |
+| Ícone da interface do usuário | Modelo de atribuição | Definição | Quando usar |
 | --- | --- | --- | --- |
 | ![Último contato](assets/last_touch1.png) | Último contato | Dá 100% de crédito ao ponto de contato mais recente antes da conversão. | É o modelo de atribuição mais básico e comum. É utilizado com frequência para conversões com um ciclo de curto consideração. O modelo Último contato é usado por equipes responsáveis por gerenciar marketing de pesquisa ou analisar palavras-chave de pesquisa interna. |
 | ![Primeiro contato](assets/first_touch.png) | Primeiro contato | Dá 100% de crédito ao primeiro ponto de contato visto na janela de retrospectiva de atribuição. | Também é um modelo de atribuição comum e útil para analisar canais de marketing com o fim de impulsionar a percepção da marca ou a conquista de clientes. O modelo Primeiro contato é usado com frequência por equipes de marketing de exibição ou de marketing social, mas também é útil para avaliar a eficiência das recomendações locais de produtos. |
@@ -64,19 +64,19 @@ O modelo descreve a distribuição de conversões para os eventos em um grupo. P
 
 ### Expiração
 
-Especifica um período de tempo, ou evento, após o qual o valor da dimensão expira (não recebe mais crédito por eventos bem-sucedidos). Você pode definir a expiração da atribuição no nível da sessão, pessoa ou personalizado.
+Especifica o período ou evento após o qual o valor de dimensão expira (não recebe mais crédito por eventos bem-sucedidos). Você pode definir a expiração da atribuição no nível da sessão, pessoa ou personalizado.
 
 | Configuração | Definição |
 |---|---|
-| Sessão | Anteriormente conhecido como o nível de &quot;Visita&quot;. eventos de conversão além da visualização de página ou sessão não estão associados à dimensão ou métrica. |
-| Pessoa (Janela Relatórios) | Anteriormente conhecido como o nível &quot;Visitante&quot;. eventos de conversão não vinculados a essa pessoa não estão associados à dimensão ou métrica. |
-| Tempo personalizado | Especifique os minutos, horas, dias, meses ou trimestres personalizados. eventos de conversão além do período de tempo especificado não estão associados à dimensão ou à métrica. |
+| Sessão | Anteriormente conhecido como o nível de &quot;Visita&quot;. Os eventos de conversão além da exibição de página ou da sessão não estão associados à dimensão ou métrica. |
+| Pessoa (Janela Relatórios) | Anteriormente conhecido como o nível &quot;Visitante&quot;. Eventos de conversão não vinculados a essa pessoa não estão associados à dimensão ou métrica. |
+| Tempo personalizado | Especifique os minutos, horas, dias, meses ou trimestres personalizados. Os eventos de conversão além do período especificado não estão associados à dimensão ou métrica. |
 
-Para obter mais informações, consulte o documento [IQ de](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/attribution/attribution.html)atribuição.
+Para obter mais informações, consulte o [documento Attribution IQ](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/panels/attribution/attribution.html).
 
-### Janela de pesquisa
+### Janela de lookback
 
 As janelas de retrospectiva representam quanto tempo uma conversão deve retroceder para incluir pontos de contato. Os modelos de atribuição que dão mais crédito às primeiras interações veem diferenças maiores ao exibir diferentes janelas de retrospectiva.
 
-* **Sessão:** Procura até o início de uma sessão em que uma conversão aconteceu. As janelas de pesquisa de visitas são estreitas, pois não parecem além da sessão. As janelas de pesquisa de sessão respeitam a definição de visita modificada nas visualizações de dados.
-* **Pessoa (janela do relatórios):** Verifica todas as sessões até o primeiro dia do mês do intervalo de datas atual. As janelas de pesquisa pessoal são amplas, pois podem abranger muitas sessões. Por exemplo, se o intervalo de datas do relatório for de 15 de setembro a 30 de setembro, o intervalo de datas de consulta pessoal incluirá 1 de setembro a 30 de setembro.
+* **Sessão:** retroage até o início de uma sessão em que ocorreu uma conversão. As janelas de retrospectiva de visita são pequenas, pois não consideram nada além da sessão. As janelas de retrospectiva de sessão respeitam a definição de visita modificada nas visualizações de dados.
+* **Pessoa (janela de relatórios):** verifica todas as sessões até o primeiro dia do mês do intervalo de datas atual. As janelas de retrospectiva de pessoa são amplas, pois podem abranger muitas sessões. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da pessoa será de 1º a 30 de setembro.
