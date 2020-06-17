@@ -1,22 +1,27 @@
 ---
 title: Gerenciar intervalos de datas
-description: Compartilhe, renomeie ou exclua intervalos de datas na área de trabalho da Análise.
+description: Compartilhe, renomeie ou exclua intervalos de datas no Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: cd854a7543a6e31abb9cffd2657c75366cfe2737
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 5%
 
 ---
 
 
 # Gerenciar intervalos de datas
 
+>[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+
 Use o gerenciador de intervalo de datas para compartilhar, renomear ou excluir intervalos de datas. Para acessar o gerente de data:
 
 1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
-1. Navegue até [!UICONTROL Components] > [!UICONTROL Date Ranges].
+1. Navegue até [!UICONTROL Componentes] > Intervalos [!UICONTROL de datas].
 
 ## Interface
 
-![IU](../assets/date-range-ui.png)
+![Interface do usuário](../assets/date-range-ui.png)
 
 O gerente de intervalo de datas inclui as seguintes opções:
 
@@ -29,7 +34,7 @@ O gerente de intervalo de datas inclui as seguintes opções:
 Clique na caixa de seleção ao lado de um ou mais intervalos de datas para obter mais opções.
 
 * **Tag**: Aplicar uma tag a todos os intervalos de datas selecionados. As tags ajudam a organizar intervalos de datas e permitem filtrá-los usando a coluna esquerda.
-* **Compartilhar**: Compartilhe um intervalo de datas com outros usuários da Experience Cloud. Se você for um administrador de produtos, também poderá compartilhar com a organização ou grupos inteiros. Os intervalos de datas compartilhados com outros usuários em sua organização incluem um ícone ![compartilhado](../assets/shared.png) ao lado do título.
+* **Compartilhar**: Compartilhe um intervalo de datas com outros usuários do Experience Cloud. Se você for um administrador de produtos, também poderá compartilhar com a organização ou grupos inteiros. Os intervalos de datas compartilhados com outros usuários em sua organização incluem um ícone ![compartilhado](../assets/shared.png) ao lado do título.
 * **Excluir**: Exclua permanentemente os intervalos de datas selecionados.
 * **Renomear**: Se um único intervalo de datas for selecionado, é possível alterar seu título.
 * **Aprovar**: Se você for um administrador do produto, poderá adicionar um carimbo de aprovação a um intervalo de datas. Os intervalos de datas aprovados informam aos usuários em sua organização que eles são &quot;oficiais&quot;, diferindo-os dos intervalos de datas criados por outros usuários em sua organização. Os intervalos de datas aprovados incluem um ícone ![aprovado](../assets/approved.png) ao lado do título.
