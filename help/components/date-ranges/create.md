@@ -2,12 +2,17 @@
 title: Criar um intervalo de datas
 description: Crie um intervalo de datas para uso no relatórios.
 translation-type: tm+mt
-source-git-commit: 2452490cc2f147cfd87540a68be2d0c219d8744f
+source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 4%
 
 ---
 
 
 # Criar um intervalo de datas
+
+>[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Você pode criar um intervalo de datas personalizado usando um dos dois métodos a seguir:
 
@@ -17,8 +22,8 @@ Você pode criar um intervalo de datas personalizado usando um dos dois métodos
 Para criar um intervalo de datas no gerenciador de intervalo de datas:
 
 1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
-1. Navegue até [!UICONTROL Components] > [!UICONTROL Date Ranges].
-1. Clique no [!UICONTROL Add] botão para abrir a janela modal que cria um intervalo de datas.
+1. Navegue até [!UICONTROL Componentes] > Intervalos [!UICONTROL de datas].
+1. Clique no botão [!UICONTROL Adicionar] para abrir a janela modal que cria um intervalo de datas.
 
 ## Criar uma janela modal de intervalo de datas
 
