@@ -13,10 +13,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 17e6cc8f79c542465971162666d846e2b1e0da58
+source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 90%
+source-wordcount: '379'
+ht-degree: 89%
 
 ---
 
@@ -115,6 +115,7 @@ ht-degree: 90%
       + [Limitações da Analysis Workspace](analysis-workspace/workspace-faq/aw-limitations.md)
       + [Requisitos de administração](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Acessibilidade no Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
+      + [Longa cauda em Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Componentes {#cja-components}
    + [Visão geral dos componentes](components/overview.md)
    + Dimensões {#dimensions}
