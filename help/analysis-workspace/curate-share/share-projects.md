@@ -3,10 +3,10 @@ description: Compartilhamento de projetos e funções de projeto no Workspace
 keywords: Analysis Workspace sharing
 title: Compartilhar projetos da Workspace
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 92dfb091a004ca7403f67e3f16527ea1e39cd01a
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 10%
+source-wordcount: '992'
+ht-degree: 7%
 
 ---
 
@@ -17,32 +17,29 @@ ht-degree: 10%
 
 O compartilhamento disponibiliza um projeto para outros usuários do Analysis Workspace em sua organização. Qualquer [preparação](curate.md) aplicada será refletida quando os recipient abrirem o projeto.
 
-## Funções do projeto
+## Funções do projeto {#Roles}
 
-É possível adicionar recipient a uma das três funções do projeto. As funções do projeto estão vinculadas ao usuário e à ID do projeto específica.
-
->[!NOTE]
-> As funções de projeto são independentes das permissões de usuário gerenciadas no console de administração de Experience Cloud.
+É possível adicionar recipient a uma das três funções do projeto. As funções do projeto estão vinculadas ao usuário e à ID do projeto específica. As funções do projeto são independentes das permissões de usuário gerenciadas no console [administrativo da](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/admin-getting-started.html)Adobe Experience Cloud.
 
 | Função | Controle de projeto |
 |---|---|
-| Pode editar | Os destinatários podem Salvar alterações em um projeto e trabalhar como coproprietários.<br>Essa função é útil se você quiser colaborar com colegas em um projeto. |
-| Pode duplicar | Os destinatários podem Salvar como e ter acesso ao painel à esquerda. As interações não são limitadas.<br>Essa função é útil se você deseja compartilhar um projeto com usuários que entendem os dados de sua organização e como usar o Analysis Workspace, mas não deseja alterar seu projeto salvo. |
-| Pode exibir | Os Recipient não podem Salvar como e não têm acesso ao painel esquerdo. As interações também são limitadas.<br>Essa função é útil se você deseja compartilhar um projeto com usuários menos familiarizados com a estrutura de dados de sua organização, o Analysis Workspace ou o Adobe Analytics em geral. No entanto, você ainda deseja que eles consumam dados e insights em um ambiente seguro.<br>Saiba mais sobre a experiência [do projeto](/help/analysis-workspace/curate-share/view-only-projects.md)Can visualização. |
+| Pode editar | Os destinatários podem Salvar alterações em um projeto e trabalhar como coproprietários. Essa função é útil se você deseja co-editar projetos com outros colegas.<br>Observação: No momento, o Analysis Workspace não oferece suporte à colaboração ao vivo, portanto, recomenda-se que somente um usuário edite um projeto em um determinado momento. Se os projetos forem salvos ao mesmo tempo, a última versão será mantida. |
+| Pode duplicar | Os Recipient podem Salvar como e ter acesso ao painel esquerdo. As interações entre projetos não são limitadas nesta função. Essa função é útil se você deseja compartilhar um projeto com usuários que entendem os dados de sua organização e como usar o Analysis Workspace, mas não deseja alterar seu projeto. |
+| Pode exibir | Os Recipient não podem Salvar como e não têm acesso ao painel esquerdo. As interações do projeto também são limitadas. Essa função é útil se você deseja compartilhar um projeto com usuários menos familiarizados com a estrutura de dados de sua organização, o Analysis Workspace ou o Adobe Analytics em geral. No entanto, você ainda deseja que eles consumam dados e insights em um ambiente seguro.<br>Saiba mais sobre a experiência [do projeto](/help/analysis-workspace/curate-share/view-only-projects.md)Can visualização. |
 
 ### Nenhuma função atribuída
 
-Se uma função não for atribuída a um recipient e ele receber um link para o projeto ([!UICONTROL Compartilhar] > [!UICONTROL Obter link]do projeto), ele será colocado na função [!UICONTROL &quot;Pode visualização&quot;] por padrão.
+Se uma função não for atribuída a um recipient e ele receber um link para o projeto (**[!UICONTROL Compartilhar]>[!UICONTROL Obter link]** do projeto), ele será colocado na função **[!UICONTROL Pode visualização]** por padrão.
 
 ### Várias funções atribuídas
 
-Se um recipient for colocado em várias funções, ele sempre terá o maior controle. Isso pode ocorrer se um usuário for adicionado como um indivíduo e como parte de um grupo. Por exemplo, se o usuário 1 receber as funções Pode editar e [!UICONTROL &quot;Pode visualização&quot;] , ele terá o controle [!UICONTROL &quot;Pode editar&quot;] do projeto.
+Se um recipient for colocado em várias funções, ele sempre terá a maior experiência. Isso pode ocorrer se um usuário for adicionado como um indivíduo e como parte de um grupo. Por exemplo, se um usuário receber a função **[!UICONTROL Pode editar]** como um indivíduo e a função **[!UICONTROL Pode visualização]** como membro de um grupo, ele receberá uma experiência **[!UICONTROL Pode editar]** o projeto.
 
 ### Administradores e funções
 
-Os administradores colocados em uma função [!UICONTROL&quot;Pode duplicado&quot;] ou [!UICONTROL &quot;Pode visualização&quot;] receberão essas experiências limitadas quando abrirem um projeto. Se desejar, um Administrador pode aumentar sua função para [!UICONTROL &quot;Pode editar&quot;] a qualquer momento por meio de [!UICONTROL Componentes] > [!UICONTROL Projetos].
+Os administradores colocados em uma função **[!UICONTROL Can duplicado]** ou **[!UICONTROL Can visualização]** receberão essas experiências limitadas quando abrirem um projeto. Se desejar, um Administrador pode aumentar sua função para **[!UICONTROL Pode editar]** a qualquer momento por meio de **[!UICONTROL Componentes]>[!UICONTROL Projetos]**.
 
-## Adicionar recipient ao projeto compartilhado
+## Adicionar recipient ao projeto compartilhado {#Add}
 
 Para adicionar recipient ao seu projeto compartilhado:
 
@@ -59,16 +56,16 @@ Você também pode clicar em **[!UICONTROL Preparar e compartilhar]** para aplic
 
 ![](assets/share-proj-modal.png)
 
-## Compartilhar em grupos de recipient
+## Compartilhar em grupos de recipient {#Groups}
 
-Todos os usuários podem compartilhar projetos em grupos, que são uma coleção de recipient. No Adobe Analytics, os grupos são definidos por perfis de produtos na Adobe Experience Cloud.
+Todos os usuários podem compartilhar projetos em grupos, que são uma coleção de recipient. No Adobe Analytics, os grupos são definidos por perfis de produtos no console [administrativo da](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/admin-getting-started.html)Adobe Experience Cloud.
 
 * Os administradores podem compartilhar com qualquer grupo, incluindo &quot;Todos&quot;.
 * Os não administradores podem compartilhar com grupos dos quais são membros, com exceção de &quot;Todos&quot;.
 
-## Compartilhar projetos no Gerenciador de projetos
+## Compartilhar projetos no Gerenciador de projetos {#Manager}
 
-Os projetos também podem ser compartilhados de [!UICONTROL Componentes] > [!UICONTROL Projetos]. Um único projeto pode ser compartilhado seguindo as mesmas etapas acima.
+Os projetos também podem ser compartilhados de **[!UICONTROL Componentes]>[!UICONTROL Projetos]**. Um único projeto pode ser compartilhado seguindo as mesmas etapas acima.
 
 Se vários projetos forem selecionados para compartilhamento, os recipient serão adicionados à lista existente de recipient para cada projeto. Por exemplo:
 
@@ -77,4 +74,14 @@ Se vários projetos forem selecionados para compartilhamento, os recipient serã
 * Com os projetos A e B selecionados, os usuários 4 e 7 são adicionados às listas do recipient. A nova lista de recipient para cada projeto agora é:
    * Projeto A: 1, 2, 3, 4, 7
    * Projeto B: 4, 5, 6, 7
+
    ![](assets/mult-proj-sharing.png)
+
+## Perguntas frequentes {#FAQs}
+
+| Pergunta | Resposta |
+|---|---|
+| O que acontece se dois editores salvam um projeto ao mesmo tempo? | As alterações não são mescladas e a última versão do projeto salva será mantida. Atualmente, o Analysis Workspace não oferece suporte à colaboração em tempo real. |
+| Como administrador, que experiência de projeto irei ver? | Os administradores colocados em uma função **[!UICONTROL Can duplicado]** ou **[!UICONTROL Can visualização]** receberão essas experiências limitadas quando abrirem um projeto. Se desejar, um Administrador pode aumentar sua função para **[!UICONTROL Pode editar]** a qualquer momento por meio de **[!UICONTROL Componentes]>[!UICONTROL Projetos]**. |
+| O que acontece se um usuário for colocado em uma função como indivíduo e outra como membro de um grupo? | Se um recipient for colocado em várias funções, ele sempre receberá a experiência mais alta. Por exemplo, se um usuário receber a função **[!UICONTROL Pode editar]** como um indivíduo e a função **[!UICONTROL Pode visualização]** como membro de um grupo, ele receberá uma experiência **[!UICONTROL Pode editar]** o projeto. |
+| Por que um usuário recebe uma experiência somente de Visualização quando recebe um link de projeto? | Se uma função não for atribuída a um recipient e ele receber um link para o projeto (**[!UICONTROL Compartilhar]>[!UICONTROL Obter link]** do projeto), ele será colocado na função **[!UICONTROL Pode visualização]** por padrão. Se o usuário desejar um aumento na função do projeto, o proprietário ou editor do projeto poderá adicioná-los ao duplicado Can ou Pode editar a função por meio do modal de compartilhamento do projeto. |
