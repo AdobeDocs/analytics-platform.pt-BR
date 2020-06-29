@@ -1,24 +1,24 @@
 ---
-title: Uso de matrizes de objetos
-description: Entenda como o CJA relata sobre hierarquias de dados.
-translation-type: tm+mt
+title: Uso de arrays de objetos
+description: Entenda como o CJA cria relatórios sobre hierarquias de dados.
+translation-type: ht
 source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Uso de matrizes de objetos
+# Uso de arrays de objetos
 
-Alguns schemas da plataforma podem ter matrizes de objetos. Um dos exemplos mais comuns seria um carrinho de compras, que contém vários produtos. Cada produto tem um nome, SKU, categoria, preço, quantidade e qualquer outra dimensão que você deseja rastrear. Todas essas facetas têm requisitos separados, mas todos devem se encaixar na mesma ocorrência.
+Alguns schemas da plataforma podem ter arrays de objetos. Um dos exemplos mais comuns seria um carrinho de compras, que contém vários produtos. Cada produto tem um nome, SKU, categoria, preço, quantidade e qualquer outra dimensão que você quiser rastrear. Todas essas facetas têm requisitos separados, mas todos devem se encaixar na mesma ocorrência.
 
-Em versões anteriores do Adobe Analytics, esse feito foi realizado usando a `products` variável. Era uma string concatenada separada por ponto-e-vírgula (`;`) para separar facetas de um produto, enquanto vírgulas (`,`) delineavam produtos. Era a única variável com suporte limitado a &quot;arrays de objetos&quot;. Variáveis de vários valores, como listas vars, podem suportar o equivalente de arrays, mas não podem suportar &quot;arrays de objetos&quot;. O CJA amplia esse conceito ao suportar arbitrariamente hierarquias profundas em uma única linha de dados, um recurso indisponível em qualquer versão anterior do Adobe Analytics.
+Em versões anteriores do Adobe Analytics, esse recurso era realizado usando a variável `products`. Era uma string concatenada separada por ponto-e-vírgula (`;`) para separar facetas de um produto, enquanto vírgulas (`,`) delineavam produtos. Era a única variável com suporte limitado a &quot;arrays de objetos&quot;. Variáveis multivalor, como variáveis de listas, podem oferecer suporte ao equivalente a arrays, mas não a &quot;arrays de objetos&quot;. O CJA amplia esse conceito ao oferecer suporte arbitrariamente a hierarquias profundas em uma única linha de dados, um recurso indisponível em qualquer versão anterior do Adobe Analytics.
 
 ## Mesmo exemplo de ocorrência
 
-A seguinte ocorrência é um objeto JSON que representa uma compra feita por um cliente de uma máquina de lavar e secador.
+A seguinte ocorrência é um objeto JSON que representa uma compra feita por um cliente de uma máquina de lavar e secar.
 
 ```json
 {
@@ -67,12 +67,12 @@ Ao criar uma visualização de dados, as seguintes dimensões e métricas estão
 * **Dimensões:**
    * ID
    * produto : SKU
-   * produto : name
+   * produto : nome
    * produto : order_id
    * produto : garantia : cobertura
    * produto : garantia : comprimento
-   * produto : garantia : name
-   * produto : garantia : type
+   * produto : garantia : nome
+   * produto : garantia : tipo
 * **Métricas:**
    * produto : ordens
    * produto : unidades
@@ -80,9 +80,9 @@ Ao criar uma visualização de dados, as seguintes dimensões e métricas estão
    * produto : garantia
    * produto : garantia : receita
 
-### Exemplos de ocorrências idênticas (comportamento do relatórios)
+### Exemplos de ocorrências idênticas (comportamento do relatório)
 
-Usando apenas a ocorrência acima, as tabelas a seguir mostram os relatórios da Workspace com algumas combinações de dimensão e métrica.
+Usando apenas a ocorrência acima, as tabelas a seguir mostram os relatórios do Workspace com algumas combinações de dimensão e métrica.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -134,7 +134,7 @@ O CJA observa seletivamente a dimensão e as métricas do objeto com base na tab
 +}
 ```
 
-Se você quiser relatar apenas a receita da garantia, seu projeto terá a seguinte aparência:
+Se você quiser relatar apenas a receita da garantia, o projeto terá a seguinte aparência:
 
 | `product : warranty : coverage` | `product : warranty : revenue` |
 | --- | --- |
@@ -186,7 +186,7 @@ O CJA observa essas partes da ocorrência para gerar o relatório:
 +}
 ```
 
-Como o secador não incluiu uma garantia, ela não está incluída na tabela.
+Como a secadora não incluiu uma garantia, ela não está na tabela.
 
 Como é possível combinar qualquer dimensão com qualquer métrica, a tabela a seguir mostra como os dados seriam usados com valores de dimensão não especificados:
 
@@ -196,7 +196,7 @@ Como é possível combinar qualquer dimensão com qualquer métrica, a tabela a 
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-Um pedido de produto existe sem um nome de garantia vinculado a ele, portanto, o valor da dimensão atribui a &#39;Não especificado&#39;. A mesma situação também se aplica ao pedido de garantia do produto:
+Um pedido de produto existe sem um nome de garantia vinculado a ele, portanto, o valor da dimensão atribui a “Não especificado”. A mesma situação também se aplica ao pedido de garantia do produto:
 
 ```diff
 {
@@ -240,7 +240,7 @@ Um pedido de produto existe sem um nome de garantia vinculado a ele, portanto, o
 +}
 ```
 
-Observe as ordens que não têm um nome vinculado a elas. Essas são as ordens atribuídas ao valor de dimensão &#39;Não especificado&#39;.
+Observe as ordens que não têm um nome vinculado a elas. Essas são as ordens atribuídas ao valor de dimensão “Não especificado”.
 
 ### Combinar métricas
 
@@ -254,7 +254,7 @@ O CJA não combina nativamente métricas com nomes semelhantes se estiverem em n
 
 Entretanto, é possível criar uma métrica calculada que combine as métricas desejadas:
 
-Métrica calculada &quot;Receita total&quot;: `[product : revenue] + [product : warranty : revenue]`
+Métrica calculada “Receita total”: `[product : revenue] + [product : warranty : revenue]`
 
 A aplicação dessa métrica calculada exibe os resultados desejados:
 
