@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 89%
 + Visualizações de dados {#cja-dataviews}
    + [Criar uma exibição de dados](data-views/create-dataview.md)
    + [Configurar exibições de dados e atribuição](data-views/configure-dataviews.md)
-+ Workspace projects {#cja-workspace}
++ Projetos do Workspace {#cja-workspace}
    + [Visão geral do Analysis Workspace](analysis-workspace/home.md)
    + [Realizar análise básica](analysis-workspace/perform-basic-analysis.md)
    + [Realizar análise avançada](analysis-workspace/perform-adv-analysis.md)
@@ -89,11 +89,11 @@ ht-degree: 89%
       + [Painel de atribuição](analysis-workspace/c-panels/attribution.md)
       + [Painel em branco](analysis-workspace/c-panels/blank-panel.md)
       + [Painel de forma livre](analysis-workspace/c-panels/freeform-panel.md)
-      + [Painel Quick Insights](analysis-workspace/c-panels/quickinsight.md)
+      + [Painel do Quick Insights](analysis-workspace/c-panels/quickinsight.md)
    + Prepare ou compartilhe projetos {#curate-share}
-      + [Preparar projetos da Workspace](analysis-workspace/curate-share/curate.md)
-      + [Compartilhar projetos da Workspace](analysis-workspace/curate-share/share-projects.md)
-      + [Projetos da área de trabalho somente para Visualização](analysis-workspace/curate-share/view-only-projects.md)
+      + [Preparar projetos do Workspace](analysis-workspace/curate-share/curate.md)
+      + [Compartilhar projetos do Workspace](analysis-workspace/curate-share/share-projects.md)
+      + [Projetos do Workspace somente para visualização](analysis-workspace/curate-share/view-only-projects.md)
       + [Baixar arquivos PDF ou CSV](analysis-workspace/curate-share/download-send.md)
       + [Compartilhar e programar arquivos de projeto](analysis-workspace/curate-share/send-schedule-files.md)
       + [Envio de arquivo - Agendamento do envio de um projeto](analysis-workspace/curate-share/t-schedule-report.md)
@@ -142,7 +142,7 @@ ht-degree: 89%
       + [Comparação de data](components/date-ranges/time-comparison.md)
 + Casos de uso {#cja-usecases}
    + [Casos de uso do Customer Journey Analytics](use-cases/cja-usecases.md)
-   + [Uso de matrizes de objetos](use-cases/object-arrays.md)
+   + [Uso de arrays de objetos](use-cases/object-arrays.md)
 + Privacidade {#cja-privacy}
    + [Visão geral de privacidade](privacy/privacy-overview.md)
 + [Atualizações da documentação CJA](doc-changes.md)
