@@ -4,21 +4,25 @@ keywords: fallout and segmentation;segments in fallout analysis;compare segments
 title: Aplicar segmentos na análise de fallout
 uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
 
 # Aplicar filtros na análise de fallout
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Você pode criar filtros a partir de um ponto de contato, adicionar segmentos como ponto de contato e comparar workflows principais em vários filtros no Analysis Workspace.
 
->[!IMPORTANT] Os Filtros usados como pontos de verificação no Fallout devem usar um container que esteja em um nível inferior ao contexto geral da visualização do Fallout. Com um Fallout de contexto de visitante, os filtros usados como pontos de verificação devem ser filtros baseados em visita ou ocorrência. Com um Fallout de contexto de visita, os filtros usados como ponto de verificação devem ser segmentos baseados em ocorrências. Se você usar uma combinação inválida, o fallout será de 100%. Adicionamos um aviso à visualização de Fallout que será exibida quando você adicionar um filtro incompatível como ponto de contato. Determinadas combinações inválidas de container de filtro resultarão em diagramas de Fallout inválidos, como:
+>[!IMPORTANT]
+>
+>Os Filtros usados como pontos de verificação no Fallout devem usar um container que esteja em um nível inferior ao contexto geral da visualização do Fallout. Com um Fallout de contexto de visitante, os filtros usados como pontos de verificação devem ser filtros baseados em visita ou ocorrência. Com um Fallout de contexto de visita, os filtros usados como ponto de verificação devem ser segmentos baseados em ocorrências. Se você usar uma combinação inválida, o fallout será de 100%. Adicionamos um aviso à visualização de Fallout que será exibida quando você adicionar um filtro incompatível como ponto de contato. Determinadas combinações inválidas de container de filtro resultarão em diagramas de Fallout inválidos, como:
 
 * Usar um filtro baseado em visitante como ponto de contato dentro de uma visualização de Fallout de contexto de visitante
 * Usar um filtro baseado em visitante como ponto de contato dentro de uma visualização de Fallout de contexto de visita
