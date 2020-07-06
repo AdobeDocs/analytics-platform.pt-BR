@@ -2,7 +2,7 @@
 title: Visão geral dos componentes
 description: Saiba quais componentes o CJA oferece e como usá-los no relatórios.
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 86%
@@ -38,13 +38,15 @@ See [Create a project](/help/analysis-workspace/home.md) for information about u
 
 Há várias maneiras de gerenciar componentes (individualmente ou ao selecionar mais de um). Clique com o botão direito em um componente ou clique em **[!UICONTROL Ações]** na parte superior da lista de componentes.
 
->[!NOTE] Essas ações não se aplicam aos componentes de Tempo.
+>[!NOTE]
+>
+>Essas ações não se aplicam aos componentes de Tempo.
 
 | Ação de componente | Descrição |
 |--- |--- |
-| Adicionar tag | Organize ou gerencie componentes aplicando tags. Assim, o componente é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos |
+| Adicionar tag | Organize ou gerencie componentes aplicando tags. Assim, o componente é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos. |
 | Marcar como favorito | Adicione o componente à sua lista de favoritos. Assim, ele é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos. |
-| Aprovar | Aprove o componente para torná-lo canônico. Assim, o componente é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos |
+| Aprovar | Aprove o componente para torná-lo canônico. Assim, o componente é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos. |
 | Compartilhar | Aplica-se somente a segmentos. |
 | Excluir | Aplica-se somente a segmentos. |
 
