@@ -2,7 +2,7 @@
 title: Atribuição algorítmica
 description: Detalhes sobre o modelo de atribuição algorítmica.
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 7%
@@ -12,9 +12,13 @@ ht-degree: 7%
 
 # Atribuição algorítmica
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
->[!NOTE] **[!UICONTROL A atribuição]** algorítmica está atualmente em testes limitados. Consulte Versões [de recursos do](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html) Adobe Analytics para obter mais informações.
+>[!NOTE]
+>
+>**[!UICONTROL A atribuição]** algorítmica está atualmente em testes limitados. Consulte Versões [de recursos do](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html) Adobe Analytics para obter mais informações.
 
 O modelo [de](models.md) atribuição Algorítmico no Analysis Workspace difere de outros modelos, na medida em que usa técnicas estatísticas para alocar crédito entre os valores de dimensão em seu relatório ou tabela de forma livre. Como todos os outros modelos de atribuição no Analysis Workspace, ele pode ser usado em qualquer dimensão ou métrica e suporta segmentação ilimitada e detalhamentos e distribui 100% das conversões para a(s) dimensão(ões) na tabela (também conhecida como atribuição &quot;fracional&quot;).
 
@@ -25,4 +29,6 @@ Em um nível alto, o cálculo de atribuição do crédito de conversão para cad
 * Shapley, Lloyd S. (1953). Um valor para jogos em pessoa. *Contribuições para a Teoria dos Jogos, 2(28)*, 307-317.
 * Harsanyi, John C. (1963). Um modelo de negociação simplificado para o jogo cooperativo n-pessoalmente. *International Economic Review 4(2)*, 194-220.
 
->[!NOTE] O resultado da atribuição algorítmica só difere de outros modelos quando existem vários pontos de contato dentro da janela de pesquisa. As conversões com um único ponto de contato recebem 100% de crédito independentemente do modelo de atribuição.
+>[!NOTE]
+>
+>O resultado da atribuição algorítmica só difere de outros modelos quando existem vários pontos de contato dentro da janela de pesquisa. As conversões com um único ponto de contato recebem 100% de crédito independentemente do modelo de atribuição.
