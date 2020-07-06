@@ -3,7 +3,7 @@ description: A visualização Venn permite que você arraste até três segmento
 title: Venn
 uuid: 0a743378-f588-417f-9108-4a1313d6bfeb
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 82%
@@ -13,7 +13,9 @@ ht-degree: 82%
 
 # Venn
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 A visualização Venn permite que você arraste até três segmentos (de Componentes) e uma métrica para criar um diagrama Venn.
 
