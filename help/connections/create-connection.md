@@ -2,7 +2,7 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 204eb143d513b9b73fad020efabe6891a1253608
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 68%
@@ -16,7 +16,9 @@ A connection lets you integrate datasets from [!DNL Adobe Experience Platform] i
 
 Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) para obter uma visão geral do vídeo.
 
->[!IMPORTANT] É possível combinar vários conjuntos de dados do [!DNL Experience Platform] em uma única conexão.
+>[!IMPORTANT]
+>
+>É possível combinar vários conjuntos de dados do [!DNL Experience Platform] em uma única conexão.
 
 1. Acesse [https://analytics.adobe.com](https://analytics.adobe.com).
 
@@ -26,9 +28,9 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
    ![Criar conexão](assets/create-connection.png)
 
-1. Escolha uma caixa de proteção na Plataforma de experiência que contenha os conjuntos de dados aos quais deseja criar uma conexão.
+1. Escolha uma caixa de proteção no Experience Platform que contenha os conjuntos de dados aos quais deseja criar uma conexão.
 
-   A plataforma Adobe Experience fornece [caixas de proteção](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) que particionam uma única instância da plataforma em ambientes virtuais separados para ajudar a desenvolver e desenvolver aplicativos de experiência digital. Você pode considerar caixas de proteção como &quot;silos de dados&quot; que contêm conjuntos de dados. As caixas de proteção são usadas para controlar o acesso aos conjuntos de dados. Não é possível acessar dados em caixas de proteção. Depois de selecionar a caixa de proteção, o painel esquerdo mostra todos os conjuntos de dados nessa caixa de proteção da qual você pode obter.
+   O Adobe Experience Platform fornece [caixas de proteção](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html) que particionam uma única instância do Platform em ambientes virtuais separados para ajudar a desenvolver e desenvolver aplicativos de experiência digital. Você pode considerar caixas de proteção como &quot;silos de dados&quot; que contêm conjuntos de dados. As caixas de proteção são usadas para controlar o acesso aos conjuntos de dados. Não é possível acessar dados em caixas de proteção. Depois de selecionar a caixa de proteção, o painel esquerdo mostra todos os conjuntos de dados nessa caixa de proteção da qual você pode obter.
 
 1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
 
