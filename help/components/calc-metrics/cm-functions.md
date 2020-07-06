@@ -2,7 +2,7 @@
 title: Referência - funções básicas
 description: 'O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas. '
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 97%
@@ -12,13 +12,17 @@ ht-degree: 97%
 
 # Referência - funções básicas
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas.
 
 Veja uma lista em ordem alfabética das funções e suas definições.
 
->[!NOTE] Sempre que [!DNL metric] for definida como um argumento em uma função, outras expressões de métricas também serão permitidas. Por exemplo, [!DNL MAXV(metrics)] também permite [!DNL MAXV(PageViews + Visits).]
+>[!NOTE]
+>
+>Sempre que [!DNL metric] for definida como um argumento em uma função, outras expressões de métricas também serão permitidas. Por exemplo, [!DNL MAXV(metrics)] também permite [!DNL MAXV(PageViews + Visits).]
 
 ## Funções de tabela versus Funções de linha
 
@@ -218,7 +222,7 @@ ROUND(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *number* | A métrica que deseja arredondar. |
+| *número* | A métrica que deseja arredondar. |
 
 Arredondar sem um parâmetro de dígitos é igual a arredondar com um parâmetro de dígitos de 0; ou seja, arredondar para o número inteiro mais próximo. Com um parâmetro de dígitos, ele retorna o mesmo número de dígitos à direita da casa decimal. Se os dígitos forem negativos, retornará zeros à esquerda da casa decimal.
 
@@ -255,7 +259,7 @@ SQRT(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *number* | A métrica para a qual você deseja obter a raiz quadrada. |
+| *número* | A métrica para a qual você deseja obter a raiz quadrada. |
 
 ## Desvio padrão (Tabela)
 
