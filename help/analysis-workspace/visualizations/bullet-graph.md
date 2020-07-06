@@ -3,7 +3,7 @@ description: Permite ver a comparação ou a medição de um valor em relação 
 title: Gráfico de marcadores
 uuid: 2f133189-2a50-45af-b225-7d2b433fbef5
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 80%
@@ -13,7 +13,9 @@ ht-degree: 80%
 
 # Gráfico de marcadores
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Permite ver a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas).
 
