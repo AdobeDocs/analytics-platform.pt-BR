@@ -3,7 +3,7 @@ description: 'null'
 title: Visão geral do Fluxo
 uuid: fc22b573-2d18-4c29-866c-f317c920d27a
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 90%
@@ -13,7 +13,9 @@ ht-degree: 90%
 
 # Visão geral do fluxo
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O recurso Fluxo mostra os caminhos do cliente pelos seus sites e aplicativos.
 
@@ -23,7 +25,9 @@ Ele permite:
 * Analisar para onde os clientes vão antes e depois de pontos de verificação específicos, como a entrada, uma dimensão específica ou a saída
 * Criar segmentos, designando um ponto específico em um determinado caminho
 
->[!NOTE] Para obter informações sobre como os resultados da aplicação de segmentos ao Fluxo podem ser diferentes no Analysis Workspace e no Reports &amp; Analytics/Ad Hoc Analysis, consulte [Segmentação como base para Fluxo e Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
+>[!NOTE]
+>
+>Para obter informações sobre como os resultados da aplicação de segmentos ao Fluxo podem ser diferentes no Analysis Workspace e no Reports &amp; Analytics/Ad Hoc Analysis, consulte [Segmentação como base para Fluxo e Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
 [Visualização do Fluxo no YouTube](https://www.youtube.com/watch?v=3R1HTM7y_RM&amp;index=55&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (4:56)
 
