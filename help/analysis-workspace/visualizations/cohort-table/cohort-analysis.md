@@ -2,7 +2,7 @@
 title: O que é a análise de coorte?
 description: Saiba mais sobre a análise de coorte no Analysis Workspace
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 48%
@@ -12,7 +12,9 @@ ht-degree: 48%
 
 # What is [!UICONTROL Cohort Analysis]?
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 A *`cohort`* é um grupo de pessoas com características comuns em um período específico. [!UICONTROL A análise de coorte é útil, por exemplo, quando você deseja saber como uma coorte interage com uma marca. ] Você pode detectar facilmente as mudanças nas tendências e atuar de acordo com elas. (Explanations of [!UICONTROL Cohort Analysis] are available on the web, such as at [Cohort Analysis 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
 
@@ -32,7 +34,9 @@ Examples of what you can do with [!UICONTROL Cohort Analysis]:
 
 >[!IMPORTANT]
 >
->[!UICONTROL A Análise] de coorte não oferece suporte a métricas não filtráveis (incluindo métricas calculadas), métricas que não sejam inteiros (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em segmentos podem ser usadas em
+>[!UICONTROL Análise de coorte]
+>
+>não oferece suporte a métricas não filtráveis (incluindo métricas calculadas), métricas que não sejam inteiros (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em segmentos podem ser usadas em
 >[!UICONTROL Análise]de coorte, que só pode ser aumentada em 1 de cada vez.
 
 ## Recursos da análise de coorte
