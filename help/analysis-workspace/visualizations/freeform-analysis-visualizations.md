@@ -3,7 +3,7 @@ description: Saiba mais sobre visualizações e configurações de exibição no
 keywords: Analysis Workspace
 title: Visão geral das visualizações
 translation-type: tm+mt
-source-git-commit: c6d98c03362617d34213e5d0d4ca35a24350b26c
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 97%
@@ -13,7 +13,9 @@ ht-degree: 97%
 
 # Visão geral das visualizações
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O Workspace oferece várias visualizações que permitem gerar representações visuais de seus dados, como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão e outros. Cada visualização tem suas próprias configurações que podem ser gerenciadas. Clique no nome da visualização para obter informações mais detalhadas.
 
@@ -30,7 +32,7 @@ Vídeo do YouTube: [Tipos de visualização no Analysis Workspace](https://www.y
 | [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) | Mostra os caminhos do cliente pelos sites e aplicativos. |
 | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table.md) | Uma tabela de forma livre não é apenas uma tabela de dados, mas também uma visualização interativa. |
 | [Histograma](/help/analysis-workspace/visualizations/histogram.md) | Um histograma é semelhante a um gráfico de barras, mas agrupa os números em intervalos (grupos). |
-| [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) | Mostra barras verticais que representam vários valores de uma ou mais métricas. |
+| [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) | Mostra barras horizontais que representam vários valores de uma ou mais métricas. |
 | [Linha](/help/analysis-workspace/visualizations/line.md) | Representa as métricas que usam uma linha para mostrar como os valores são alterados durante um período. Um gráfico de linha pode ser usado apenas quando o horário for usado como uma dimensão. |
 | [Gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | Mostra a relação entre valores de dimensão e até três métricas. |
 | [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Dependendo da célula selecionada, essa visualização mostra os totais e os resumos. |
