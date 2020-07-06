@@ -2,17 +2,19 @@
 title: Modelos de atribuição e janelas de pesquisa
 description: Como diferentes tipos de atribuição dividem crédito entre valores de dimensão.
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1542'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
 
 # Modelos de atribuição e janelas de pesquisa
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O conceito de atribuição no Adobe Analytics requer dois componentes:
 
@@ -45,7 +47,9 @@ As janelas de retrospectiva representam quanto tempo uma conversão deve retroce
 
 * **Janela de pesquisa personalizada:** Permite expandir a janela de atribuição além do intervalo de datas do relatórios até um máximo de 90 dias. As janelas de pesquisa personalizadas são avaliadas em cada conversão no período do relatórios. Por exemplo, para uma conversão que ocorre em 20 de fevereiro, uma janela de pesquisa de 10 dias avaliaria todos os pontos de contato de dimensão de 10 a 20 de fevereiro no modelo de atribuição.
 
->[!NOTE] **[!UICONTROL As janelas]** de pesquisa personalizadas estão atualmente em testes limitados. Consulte Versões [de recursos do](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html) Adobe Analytics para obter mais informações.
+>[!NOTE]
+>
+>**[!UICONTROL As janelas]** de pesquisa personalizadas estão atualmente em testes limitados. Consulte Versões [de recursos do](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html) Adobe Analytics para obter mais informações.
 
 ## Exemplo
 
@@ -76,4 +80,6 @@ Dependendo da janela de retrospectiva e do modelo de atribuição, os canais rec
       * Redes sociais: 18,6%, crédito de US$ 9,32
       * Pesquisa paga: 13,8%, crédito de US$ 6,92
 
->[!TIP] Outros eventos de conversão, como pedidos ou eventos personalizados, também são divididos se o crédito pertencer a mais de um canal. Por exemplo, se dois canais contribuem para um evento personalizado usando um modelo de atribuição Linear, ambos os canais obtêm 0,5 do evento personalizado. Essas frações de evento são somadas em todas as visitas e em seguida arredondadas para o número inteiro mais próximo para o relatório.
+>[!NOTE]
+>
+>Outros eventos de conversão, como pedidos ou eventos personalizados, também são divididos se o crédito pertencer a mais de um canal. Por exemplo, se dois canais contribuem para um evento personalizado usando um modelo de atribuição Linear, ambos os canais obtêm 0,5 do evento personalizado. Essas frações de evento são somadas em todas as visitas e em seguida arredondadas para o número inteiro mais próximo para o relatório.
