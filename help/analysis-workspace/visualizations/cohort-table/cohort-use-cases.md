@@ -5,17 +5,19 @@ title: Casos de uso da análise de coorte
 topic: Reports and analytics
 uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
 
 # [!UICONTROL Casos de uso de Análise] de coorte
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Use case examples for [!UICONTROL Cohort Analysis].
 
@@ -25,9 +27,9 @@ Suponha que você queira analisar o modo como os usuários usam o aplicativo ins
 
 You can create a six-month [!UICONTROL Cohort Analysis]:
 
-**Granularidade**: mensalmente, de janeiro a junho de 2015.
+**Granularidade**: mensalmente, de janeiro a junho de 2015
 
-**Métrica de inclusão**: instalações de aplicativos.
+**Métrica de inclusão**: instalações de aplicativos
 
 **Métrica de retorno**: sessões ou inicializações
 
@@ -59,7 +61,7 @@ Uma grande empresa de seguros impulsiona muito engajamento de cliente por meio d
 
 ## Caso de uso de adesão de campanha
 
-Uma empresa de mídia multinacional usa campanhas direcionadas para direcionar usuários a suas várias plataformas para gerar engajamento. O gasto com anúncios por plataforma baseia-se no engajamento e na retenção do cliente. Portanto, campanhas bem-sucedidas são essenciais para o sucesso dos negócios. They use our new [!UICONTROL Custom Dimension] Cohort feature in [!UICONTROL Cohort] Tables to compare various campaigns side-by-side to identify which campaigns are most effective at acquiring and retaining users to increase engagement. Em seguida, eles podem identificar quais aspectos fazem com que uma campanha tenha sucesso e aplicá-la a outras campanhas para aumentar o envolvimento em várias plataformas.
+Uma empresa de mídia multinacional usa campanhas direcionadas para direcionar usuários a suas várias plataformas para gerar engajamento. O gasto com anúncios por plataforma baseia-se no engajamento e na retenção do cliente. Portanto, campanhas bem-sucedidas são essenciais para o sucesso dos negócios. They use our new [!UICONTROL Custom Dimension] Cohort feature in [!UICONTROL Cohort] Tables to compare various campaigns side-by-side to identify which campaigns are most effective at acquiring and retaining users to increase engagement. Podem identificar quais aspectos tornam uma campanha bem-sucedida e aplicá-los a outras campanhas para aumentar o engajamento nas várias plataformas.
 
 ## Caso de uso de lançamento de produto
 
