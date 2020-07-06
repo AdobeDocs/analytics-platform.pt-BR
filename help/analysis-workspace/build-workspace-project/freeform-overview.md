@@ -5,7 +5,7 @@ title: Criar projeto - visão geral
 topic: Reports and analytics
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 96%
@@ -15,7 +15,9 @@ ht-degree: 96%
 
 # Criar projeto - visão geral
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
@@ -55,7 +57,7 @@ A página da lista de projeto do Workspace contém as informações a seguir:
 | Configuração | Descrição |
 |---|---|
 | Projeto   Nome | O nome fornecido ao projeto. Você pode clicar duas vezes no nome para editá-lo. |
-| Criado por | Nome do proprietário do projeto |
+| Criado por | Nome do proprietário do projeto. |
 | Última modificação | Data da última modificação do projeto. |
 | Tags | Lista qualquer tag aplicada a um projeto para classificar com mais facilidade. Além disso, também é possível adicionar tags a projetos ao salvá-los. Exiba as tags de um projeto na Página inicial do Workspace na coluna [!UICONTROL Tags]. |
 | Descrição | Uma descrição é útil para esclarecer a finalidade de um projeto. Você pode clicar duas vezes na descrição para editá-la. |
@@ -71,7 +73,9 @@ O menu superior de Projetos tem a seguinte aparência:
 
 O submenu contém as seguintes opções.
 
->[!NOTE] As opções marcadas com um asterisco (*) são exibidas somente em projetos **salvos**.
+>[!NOTE]
+>
+>As opções marcadas com um asterisco (*) são exibidas somente em projetos **salvos**.
 
 | Projeto | Editar | Inserir | Componentes | Compartilhar | Ajuda |
 |---|---|---|---|---|---|
