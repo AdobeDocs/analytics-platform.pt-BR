@@ -1,19 +1,21 @@
 ---
 description: Projetos somente Visualização no Workspace
 keywords: View-only projects
-title: Projetos da área de trabalho somente para Visualização
+title: Projetos do Workspace somente para visualização
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
 
-# Projetos da área de trabalho somente para Visualização
+# Projetos do Workspace somente para visualização
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Você pode compartilhar projetos como &quot;somente visualização&quot; para recipient por meio do fluxo de trabalho [de compartilhamento do](/help/analysis-workspace/curate-share/share-projects.md)projeto. Os Recipient colocados na função Pode Visualização receberão uma experiência de projeto mais limitada. Isso pode ser desejado se você estiver compartilhando um projeto com usuários menos familiarizados com a estrutura de dados de sua organização, o Analysis Workspace ou o Adobe Analytics em geral, mas ainda assim quiser que eles consumam dados e insights em um ambiente seguro.
 
