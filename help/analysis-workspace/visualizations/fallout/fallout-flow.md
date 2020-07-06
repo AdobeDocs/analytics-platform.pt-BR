@@ -3,7 +3,7 @@ description: 'null'
 title: Visão geral de fallout
 uuid: 2d98899e-e401-4d7a-8af0-de0002f84178
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 95%
@@ -13,14 +13,16 @@ ht-degree: 95%
 
 # Visão geral de fallout
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 As visualizações de Fallout oferecem mais opções para criar relatórios de fallout. Os relatórios de fallout mostram onde os visitantes saíram e continuaram em uma sequência predefinida de páginas.
 
 As visualizações de fallout permitem
 
 * Fazer comparações lado a lado de dois segmentos diferentes no mesmo relatório
-* Arrastar, soltar e reorganizar as etapas do funil (pontos de contato)
+* Arrastar, soltar e reorganizar as etapas do funil (pontos de contato).
 * Combinar valores de diferentes dimensões e métricas
 * Criar um relatório de fallout multidimensional
 * Identificar o que os clientes acessam imediatamente depois de sair
