@@ -2,7 +2,7 @@
 title: Painel de atribuição
 description: Como usar e interpretar o painel de atribuição no Analysis Workspace.
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 14%
@@ -12,7 +12,9 @@ ht-degree: 14%
 
 # Painel de atribuição
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O painel de atribuição é uma maneira fácil para criar uma análise comparando vários modelos de atribuição. É um recurso no QI [de](../attribution/overview.md) atribuição que oferece um espaço de trabalho dedicado para usar e comparar modelos de atribuição.
 
