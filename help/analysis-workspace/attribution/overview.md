@@ -2,7 +2,7 @@
 title: Visão geral da Atribuição
 description: O conceito de atribuição de crédito de um evento bem-sucedido a vários valores de dimensão.
 translation-type: tm+mt
-source-git-commit: 05bc0b378c962f4513ab292d518e32f5f70f7dfd
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 50%
@@ -12,7 +12,9 @@ ht-degree: 50%
 
 # Visão geral da Atribuição
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 A atribuição oferece aos analistas a capacidade de personalizar como os valores de dimensão recebem crédito por eventos bem-sucedidos. Por exemplo:
 
