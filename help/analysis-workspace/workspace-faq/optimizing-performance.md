@@ -3,7 +3,7 @@ description: 'null'
 title: Otimizar o desempenho do Analysis Workspace
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: fc5a462f3d216d8cae3ce060a45ec79a44c4c918
+source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 98%
@@ -13,7 +13,9 @@ ht-degree: 98%
 
 # Otimizar o desempenho do Analysis Workspace
 
->[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Certos fatores podem influenciar o desempenho de um projeto no Analysis Workspace. É importante saber quais são os contribuidores antes de iniciar a criação de um projeto, para planejar e criar o projeto da melhor maneira. Veja abaixo uma lista de fatores que impactam o desempenho e as práticas recomendadas para a otimização do seu projeto. O desempenho do Analysis Workspace é uma das prioridades da Adobe e algo que aprimoramos a cada dia.
 
@@ -32,9 +34,9 @@ Segmentos intricados podem ter um impacto significativo no desempenho do projeto
 
 Embora alguns dos fatores de complexidade não possam ser evitados, pense em oportunidades para reduzir a complexidade de seus segmentos. Em geral, quanto mais específico você puder ser com os critérios do seu segmento, melhor. Por exemplo:
 
-* Com contêineres, usar um só contêiner na parte superior do segmento será mais rápido que uma série de contêineres aninhados.
-* Com operadores, &quot;igual&quot; será mais rápido que &quot;contém&quot; e &quot;igual a qualquer um&quot; será mais rápido que &quot;contém qualquer um&quot;.
-* Com muitos critérios, operadores AND serão mais rápidos que uma série de operadores OR. Além disso, procure oportunidades para reduzir muitas declarações OR em uma única declaração &quot;igual a qualquer uma&quot;.
+* Com contêineres, usar um só contêiner na parte superior do segmento será mais rápido que uma série de contêineres aninhados
+* Com operadores, &quot;igual&quot; será mais rápido que &quot;contém&quot; e &quot;igual a qualquer um&quot; será mais rápido que &quot;contém qualquer um&quot;
+* Com muitos critérios, operadores AND serão mais rápidos que uma série de operadores OR. Além disso, procure oportunidades para reduzir muitas declarações OR em uma única declaração &quot;igual a qualquer uma&quot;
 
 Além disso, as [classificações](https://docs.adobe.com/content/help/pt-BR/analytics/components/classifications/c-classifications.html) podem ajudar a consolidar muitos valores em grupos concisos a partir dos quais você pode criar segmentos. A segmentação nos grupos de classificação oferece benefícios de desempenho em segmentos com muitas instruções OR ou com o critério “contém”.
 
