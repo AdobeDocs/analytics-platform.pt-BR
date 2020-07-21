@@ -1,43 +1,53 @@
 ---
-description: Como interagir com linhas estáticas em tabelas.
-title: Linhas estáticas x dinâmicas
-uuid: caf033ef-d252-4f8a-802e-7edbbac5c8c0
+title: Valores de dimensão dinâmicos vs estáticos
+description: Como interagir com valores de dimensão dinâmicos e estáticos em tabelas.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 0477302df92ccab30d9f3a45cc7b22f2112a0c70
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 91%
+source-wordcount: '510'
+ht-degree: 8%
 
 ---
 
 
-# Linhas estáticas x dinâmicas
+# Valores de dimensão dinâmicos vs estáticos em tabelas de forma livre
 
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>[!NOTE] Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
-Os gráficos do Analysis Workspace geram linhas “dinâmicas” quando você solta uma dimensão no gráfico - o que significa que todos os itens que correspondem à dimensão, para uma determinada métrica, são posicionados no gráfico.
+Nas tabelas de forma livre, as linhas e colunas podem conter vários valores de componentes nelas. Esses valores podem ser dinâmicos (alterar com o tempo) ou estáticos (não mudar com o tempo), dependendo da análise que você deseja criar.
 
-Por exemplo, ao arrastar a dimensão de Navegador na tabela, todos os itens da dimensão (por exemplo, navegador do Android, Safari móvel, Firefox, etc.) são colocados de maneira dinâmica no gráfico.
+## Valores de dimensão dinâmicos
 
-Por outro lado, assim que você selecionar e arrastar manualmente uma métrica, segmento, intervalo de dados ou item de dimensão individual em um gráfico, o resultado é uma linha ou lista codificada ou “estática”. É possível interagir com uma linha estática destas maneiras:
+Os valores de dimensão dinâmica mudam com o tempo e dependem da métrica que está sendo classificada na tabela de forma livre. Os valores de dimensão dinâmica são preferenciais quando você deseja analisar os itens principais de um determinado período de tempo.
 
-* Clique no ícone de Visualização nas linhas estáticas que permite visualizar os segmentos, métricas, intervalos de datas.
-* Clique no ícone de “x” para excluir a linha do gráfico.
-* Restrinja quantas linhas deseja exibir e permita paginação.
-* Adicione “itens de dimensões mistas”. Por exemplo, adicione um item de uma dimensão de navegador e outro item de uma dimensão de produto.
+Quando você solta uma dimensão em uma tabela de forma livre, linhas dinâmicas são retornadas. Eles representam os itens principais que correspondem à dimensão de uma determinada métrica e período de tempo. Também é possível soltar uma dimensão em colunas de tabela de forma livre e a dimensão se expande automaticamente para os 5 valores de dimensão principais.
 
-   Exemplo:
+Por exemplo, quando você arrasta a dimensão Tipo de navegador para a tabela, os valores de dimensão Tipo de navegador principais (por exemplo, Microsoft, Apple, Google etc.) retornar dinamicamente às linhas da tabela. Se forem soltos em uma coluna, os 5 valores de dimensão Tipo de navegador principais retornarão dinamicamente.
 
-   ![](assets/static_rows.png)
+Os valores de dimensão dinâmica têm a opção de filtro de linha e **não** têm ícones de bloqueio e X presentes.
 
-Além disso, é possível alterar o modo de cálculo dos totais da coluna (somente) quando você está em um modo de linha estática. Clique no ícone de engrenagem e alterne entre estas duas opções:
+## Valores de dimensão estática
 
-![](assets/column-totals.png)
+Valores de dimensão estática não mudam com o tempo; são componentes fixos que são sempre retornados em uma tabela de forma livre. Os valores de dimensão estática são preferenciais quando você deseja sempre analisar o mesmo item, seja campanhas específicas ou dias específicos da semana.
 
-| Opção | Descrição |
-|---|---|
-| (Padrão) Calcule os totais somando os valores que estão atualmente em cada coluna. | Esta opção calcula somente as linhas que estão atualmente no gráfico. (Cálculo do lado do cliente) |
-| Calcule as somas com base em todas as linhas para cada métrica. | Esta opção inclui todos os itens de dimensão para esta dimensão, até mesmo aqueles que não estão listados no gráfico. (Cálculo do lado do servidor) |
+Sempre que você selecionar e soltar manualmente valores de componentes específicos (dimensão, métrica, segmento, intervalo de datas) em uma tabela, o resultado será uma lista estática de linhas ou colunas. Valores de dimensão estática também podem ser criados se você optar por:
 
+* Em linhas, clique com o botão direito do mouse em > [!UICONTROL Exibir somente linhas selecionadas]
+* Em colunas, clique com o botão direito do mouse em > [!UICONTROL Tornar o item estático]
+
+Por exemplo, ao arrastar sobre itens específicos do Tipo de navegador, como Microsoft e Apple, esses 2 itens específicos sempre são puxados para a tabela.
+
+Valores de dimensão estática **não** têm a opção de filtro de linha. Em vez disso, os ícones de bloqueio e X estão presentes em cada item. Clique no ícone X para remover esse valor de dimensão da tabela.
+
+## Valores de dimensão mistos
+
+Valores de dimensão de diferentes dimensões podem ser adicionados à mesma tabela. O cabeçalho da linha indica &quot;Dimensões mistas&quot; nesses casos. Esses valores de dimensão são estáticos. Por exemplo, adicionar valores de dimensão específicos da dimensão Tipo de navegador e outros valores de dimensão da dimensão Navegador.
+
+## Total de linhas de forma livre
+
+As linhas dinâmicas e estáticas se comportam de forma diferente na linha de total de forma livre. Por padrão:
+
+* As linhas dinâmicas são somadas nas métricas do lado do servidor e de remoção de duplicados, como visitas ou visitantes
+* As linhas estáticas são somadas do lado do cliente e **não** anulam as métricas de duplicado.
+
+[Saiba mais sobre as opções de total](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html) do Workspace para linhas dinâmicas e estáticas.
