@@ -1,11 +1,11 @@
 ---
 title: Visão geral da Atribuição
-description: O conceito de atribuição de crédito de um evento bem-sucedido a vários valores de dimensão.
+description: O conceito de atribuição de crédito de um evento bem-sucedido a vários itens de dimensão.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 50%
+ht-degree: 56%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
-A atribuição oferece aos analistas a capacidade de personalizar como os valores de dimensão recebem crédito por eventos bem-sucedidos. Por exemplo:
+A atribuição oferece aos analistas a capacidade de personalizar como os itens de dimensão recebem crédito por eventos bem-sucedidos. Por exemplo:
 
 1. Um visitante do site clica em um link de pesquisa pago para uma de suas páginas de produtos. O usuário adiciona o produto ao carrinho, mas não o compra.
 2. No dia seguinte, veja uma publicação de mídia social de um de seus amigos, clique no link e conclua a compra.
