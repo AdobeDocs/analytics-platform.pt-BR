@@ -5,10 +5,10 @@ title: Analisar dimensões
 topic: Reports and analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 64%
+ht-degree: 68%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Analise dimensões e itens de dimensão no Analysis Workspace.
 
@@ -28,7 +28,7 @@ Analise os seus dados de formas ilimitadas, de acordo com as suas necessidades e
 
    ![Resultado da etapa](assets/fa_data_table_actions.png)
 
-   Você pode analisar métricas por valores de dimensão ou segmentos de público-alvo em todos os períodos selecionados. É possível especificar ainda mais para um nível mais granular.
+   É possível detalhar métricas por itens de dimensão ou segmentos de audiência nos períodos selecionados. É possível especificar ainda mais para um nível mais granular.
 
    >[!NOTE] O número de detalhamentos exibidos na tabela é limitado a 200. Esse limite vai aumentar para a exportação de detalhamentos.
 
