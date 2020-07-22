@@ -1,11 +1,11 @@
 ---
 title: Uso de arrays de objetos
 description: Entenda como o CJA cria relatórios sobre hierarquias de dados.
-translation-type: ht
-source-git-commit: 52fecf03cc503fa59101f6280c671e153e2129e9
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -188,7 +188,7 @@ O CJA observa essas partes da ocorrência para gerar o relatório:
 
 Como a secadora não incluiu uma garantia, ela não está na tabela.
 
-Como é possível combinar qualquer dimensão com qualquer métrica, a tabela a seguir mostra como os dados seriam usados com valores de dimensão não especificados:
+Como é possível combinar qualquer dimensão com qualquer métrica, a tabela a seguir mostra como os dados devem ser usados com itens de dimensão não especificados:
 
 | `product : warranty : name` | `product : orders` | `product : warranty : orders` |
 | --- | --- | --- |
@@ -196,7 +196,7 @@ Como é possível combinar qualquer dimensão com qualquer métrica, a tabela a 
 | `Unspecified` | `2` | `1` |
 | `Total` | `2` | `2` |
 
-Um pedido de produto existe sem um nome de garantia vinculado a ele, portanto, o valor da dimensão atribui a “Não especificado”. A mesma situação também se aplica ao pedido de garantia do produto:
+Um pedido de produto existe sem um nome de garantia vinculado a ele, portanto, o item de dimensão atribui a &#39;Não especificado&#39;. A mesma situação também se aplica ao pedido de garantia do produto:
 
 ```diff
 {
@@ -240,7 +240,7 @@ Um pedido de produto existe sem um nome de garantia vinculado a ele, portanto, o
 +}
 ```
 
-Observe as ordens que não têm um nome vinculado a elas. Essas são as ordens atribuídas ao valor de dimensão “Não especificado”.
+Observe as ordens que não têm um nome vinculado a elas. Essas são as ordens atribuídas ao item de dimensão &quot;Não especificado&quot;.
 
 ### Combinar métricas
 
