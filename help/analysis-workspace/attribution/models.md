@@ -1,11 +1,11 @@
 ---
 title: Modelos de atribuição e janelas de pesquisa
-description: Como diferentes tipos de atribuição dividem crédito entre valores de dimensão.
+description: Como diferentes tipos de atribuição dividem crédito entre itens de dimensão.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '1542'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O conceito de atribuição no Adobe Analytics requer dois componentes:
 
