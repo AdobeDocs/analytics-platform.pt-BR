@@ -1,11 +1,11 @@
 ---
-title: Itens de dimensão dinâmicos vs estáticos
+title: Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre
 description: Como interagir com itens de dimensão dinâmicos e estáticos em tabelas.
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 8%
+source-wordcount: '518'
+ht-degree: 9%
 
 ---
 
@@ -26,6 +26,8 @@ Por exemplo, quando você arrasta a dimensão Tipo de navegador para a tabela, o
 
 Os itens de dimensão dinâmica têm a opção de filtro de linha e **não** têm ícones de bloqueio e X presentes.
 
+![](assets/dynamic-items.png)
+
 ## Itens de dimensão estática
 
 Os itens de dimensão estática não mudam com o tempo; são componentes fixos que são sempre retornados em uma tabela de forma livre. Os itens de dimensão estática são preferidos quando você deseja sempre analisar o mesmo item, sejam campanhas específicas ou dias específicos da semana.
@@ -39,15 +41,18 @@ Por exemplo, ao arrastar sobre itens específicos do Tipo de navegador, como Mic
 
 Os itens de dimensão estática **não** têm a opção de filtro de linha. Em vez disso, os ícones de bloqueio e X estão presentes em cada item. Clique no ícone X para remover esse item de dimensão da tabela.
 
+![](assets/static-items.png)
+
 ## Itens de dimensão mistos
 
 Itens de dimensão de diferentes dimensões podem ser adicionados à mesma tabela. O cabeçalho da linha indica &quot;Dimensões mistas&quot; nesses casos. Esses itens de dimensão são estáticos. Por exemplo, adicionar itens de dimensão específicos da dimensão Tipo de navegador e outros itens de dimensão da dimensão Navegador.
+
+![](assets/mixed-dimensions.png)
 
 ## Total de linhas de forma livre
 
 As linhas dinâmicas e estáticas se comportam de forma diferente na linha de total de forma livre. Por padrão:
 
 * As linhas dinâmicas são somadas nas métricas do lado do servidor e de remoção de duplicados, como visitas ou visitantes
-* As linhas estáticas são somadas do lado do cliente e **não** anulam as métricas de duplicado.
+* As linhas estáticas são somadas do lado do cliente e **não** anulam as métricas de duplicado. Para calcular o lado total do servidor da linha, altere a configuração Linha para **Mostrar total** geral. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html)
 
-[Saiba mais sobre as opções de total](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/build-workspace-project/workspace-totals.html) do Workspace para linhas dinâmicas e estáticas.
