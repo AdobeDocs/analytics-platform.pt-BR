@@ -1,5 +1,5 @@
 ---
-git-repo: https://github.com/adobedocs/analytics-platform.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.pt-BR
 cloud: experience-cloud
 product: adobe analytics
 sub-product: jornada do cliente
@@ -12,11 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: 8f59697b2bb282a1057267131343229e12dd5111
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
+workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 100%
       + Configurações de coluna e linha {#column-row-settings}
          + [Configurações de coluna](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
          + [Configurações de linha](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [Linhas Manuais x Dinâmicas](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Itens dinâmicos vs. estáticos](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
       + [Configurações Desfazer e Refazer](analysis-workspace/build-workspace-project/undo-redo.md)
       + [Teclas de atalho disponíveis na Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Paginação, filtragem e classificação de tabelas](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
