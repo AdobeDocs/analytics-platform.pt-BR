@@ -1,11 +1,11 @@
 ---
 title: Configurar exibições de dados e atribuição
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Lembre-se disso antes de aplicar as configurações de atribuição:
 
 * Na interface do usuário das visualizações de dados, especifique a atribuição padrão. **Observação**: posteriormente, você poderá substituir essas configurações em projetos do Workspace. No entanto, essa funcionalidade não está disponível no momento.
 
-* As configurações de atribuição no Customer Journey Analytics não são destrutivas e retroativas. Em outras palavras, você não pode prejudicar irreparavelmente seus conjuntos de dados no Customer Journey Analytics. Even if you accidentally delete something, you can always go back to [!UICONTROL Experience Platform] and bring the dataset back in. (Tenha em mente, no entanto, que trazer o conjunto de dados de volta implica custos adicionais.)
+* As configurações de atribuição no Customer Journey Analytics não são destrutivas e retroativas. Em outras palavras, você não pode prejudicar irreparavelmente seus conjuntos de dados no Customer Journey Analytics. Mesmo que você exclua algo acidentalmente, sempre é possível voltar à [!UICONTROL Experience Platform] e trazer o conjunto de dados de volta. (Tenha em mente, no entanto, que trazer o conjunto de dados de volta implica custos adicionais.)
 
 * Se você quiser ter uma dimensão &quot;comporte-se&quot; como um eVar tradicional (variável de conversão), configure-a com a atribuição &quot;Visita de último toque&quot; por padrão.
 
@@ -41,7 +41,7 @@ Depois de [definir e salvar configurações de visualização de dados](/help/da
 
 1. Especifique as configurações de componente e atribuição para dimensões e métricas. Consulte a seção abaixo para obter informações sobre configurações individuais.
 
-1. Click **[!UICONTROL Save]** to save your data view.
+1. Clique em **[!UICONTROL Salvar]** para salvar a visualização de dados.
 
 
 ### Configuração do componente
@@ -67,7 +67,7 @@ O modelo descreve a distribuição de conversões para os eventos em um grupo. P
 
 ### Expiração
 
-Especifica um período de tempo, ou evento, após o qual o item de dimensão expira (não recebe mais crédito por eventos bem-sucedidos). Você pode definir a expiração da atribuição no nível da sessão, pessoa ou personalizado.
+Especifica o período ou evento após o qual o item de dimensão expira (não recebe mais crédito por eventos bem-sucedidos). Você pode definir a expiração da atribuição no nível da sessão, pessoa ou personalizado.
 
 | Configuração | Definição |
 |---|---|
@@ -75,7 +75,7 @@ Especifica um período de tempo, ou evento, após o qual o item de dimensão exp
 | Pessoa (Janela Relatórios) | Anteriormente conhecido como o nível &quot;Visitante&quot;. Eventos de conversão não vinculados a essa pessoa não estão associados à dimensão ou métrica. |
 | Tempo personalizado | Especifique os minutos, horas, dias, meses ou trimestres personalizados. Os eventos de conversão além do período especificado não estão associados à dimensão ou métrica. |
 
-Para obter mais informações, consulte o [documento Attribution IQ](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/panels/attribution/attribution.html).
+Para obter mais informações, consulte o [documento Attribution IQ](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/attribution/models.html).
 
 ### Janela de lookback
 
