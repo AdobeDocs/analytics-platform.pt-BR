@@ -1,11 +1,11 @@
 ---
 title: Visão geral dos componentes
 description: Saiba quais componentes o CJA oferece e como usá-los no relatórios.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -15,24 +15,24 @@ ht-degree: 82%
 Os componentes são recursos do Customer Journey Analytics que podem ser usados em relatórios ou complementar os recursos do relatórios. Você pode gerenciar esses componentes usando as seguintes etapas:
 
 1. Faça logon em [analytics.adobe.com](https://analytics.adobe.com) usando as credenciais da Adobe ID.
-2. Navigate to [!UICONTORL Components] > [!UICONTROL Components] in the header menu.
+2. Acesse [!UICONTORL Componentes] > [!UICONTROL Componentes] no menu de cabeçalho.
 
 Você pode gerenciar os seguintes componentes:
 
-* [**Filtros **](filters/filters-overview.md): Excluir partes de seus dados para se concentrar em itens de dimensão comuns
+* [**Filtros:**](filters/filters-overview.md) exclua partes dos dados para se concentrar em itens de dimensão comuns
 * [**Métricas calculadas:**](calc-metrics/calc-metr-overview.md) use métricas e fórmulas como novos componentes para usar nos relatórios
 * [**Intervalos de datas:**](date-ranges/overview.md) personalize e refine os intervalos de datas nas ofertas do Analysis Workspace
 * [**Projetos:**](/help/analysis-workspace/home.md) organize e mantenha seus projetos no Analysis Workspace
 
-## componentes Analysis Workspace
+## Componentes do Analysis Workspace
 
 Os componentes do Analysis Workspace são métricas, dimensões, segmentos e granularidades que você pode arrastar e soltar em um projeto. Os componentes personalizados que você criou são adicionados a esses painéis, como intervalos de data personalizados.
 
-Para acessar o painel Componentes, clique no ícone **[!UICONTROL Componentes]** no painel à esquerda. You can switch among Panels (Blank panel, [Freeform panel](/help/analysis-workspace/visualizations/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md), or [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md) panel), [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), and Components using the left-rail icons or by using [hotkeys](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
+Para acessar o painel Componentes, clique no ícone **[!UICONTROL Componentes]** no painel à esquerda. Você pode alternar entre Painéis (Painel em branco, [Painel de forma livre](/help/analysis-workspace/visualizations/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md) ou painel do [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), [Visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) e Componentes usando os ícones do painel esquerdo ou usando [teclas de atalho](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
 ![](assets/components.png)
 
-See [Create a project](/help/analysis-workspace/home.md) for information about using Components in a project.
+Consulte [Criar um projeto](/help/analysis-workspace/home.md) para obter informações sobre como usar os Componentes em um projeto.
 
 ## Ações dos componentes
 
