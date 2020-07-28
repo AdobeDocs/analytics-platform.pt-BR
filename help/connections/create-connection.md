@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 2bbfe2296d658dd38464a4a9d7810ae6d6eda306
+source-git-commit: 756c6e7c187b76636cf96d18c949908a97db51ed
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 45%
+source-wordcount: '1626'
+ht-degree: 38%
 
 ---
 
@@ -70,7 +70,7 @@ No lado direito, agora é possível configurar o conjunto de dados adicionado.
 
 O Customer Journey Analytics agora oferece suporte à capacidade de usar o Mapa de identidade para sua ID de pessoa. O Mapa de identidade é uma estrutura de dados de mapa que permite que alguém carregue pares de chaves -> valores. As chaves são namespaces de identidade e o valor é uma estrutura que contém o valor de identidade. O Mapa de identidade existe em cada linha/evento carregado e é preenchido de acordo com cada linha.
 
-O Mapa de identidade está disponível para qualquer conjunto de dados que use um schema com base na classe XDM do ExperienceEvent. Ao selecionar um conjunto de dados a ser incluído em uma conexão CJA, você tem a opção de selecionar um campo como a ID primária ou o Mapa de identidade:
+O Mapa de identidade está disponível para qualquer conjunto de dados que use um schema com base na classe XDM [](https://docs.adobe.com/content/help/pt-BR/experience-platform/xdm/home.html) ExperienceEvent. Ao selecionar um conjunto de dados a ser incluído em uma conexão CJA, você tem a opção de selecionar um campo como a ID primária ou o Mapa de identidade:
 
 ![](assets/idmap1.png)
 
@@ -80,6 +80,15 @@ Se você selecionar o Mapa de identidade, você terá duas opções adicionais d
 |---|---|
 | [!UICONTROL Usar namespace da ID primária] | Isso instrui o CJA, por linha, a localizar a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e a usar como a ID de pessoa para essa linha. Isso significa que essa é a chave primária que será usada no Experience Platform para particionamento. Ele também é o principal candidato para uso como a ID do visitante do CJA (dependendo de como o conjunto de dados está configurado em uma conexão CJA). |
 | [!UICONTROL Namespace] | (Essa opção só estará disponível se você não usar a Namespace de ID primária.) As namespaces de identidade são um componente do Serviço [de identidade do](https://docs.adobe.com/content/help/en/experience-platform/identity/namespaces.html) Adobe Experience Platform que serve como indicadores do contexto ao qual uma identidade está relacionada. Se você especificar uma namespace, o CJA pesquisará no Mapa de identidade de cada linha por essa chave de namespace e usará a identidade sob essa namespace como a ID de pessoa para essa linha. Observe que, como o CJA não pode fazer uma verificação completa do conjunto de dados de todas as linhas para determinar quais namespaces estão realmente presentes, todas as namespaces possíveis são listadas na lista suspensa. Você precisa saber quais namespaces são especificadas nos dados; isso não pode ser detectado automaticamente. |
+
+### Casos de borda do Mapa de Identidade
+
+Esta tabela mostra as duas opções de configuração quando houver casos de borda e como eles são tratados:
+
+| Opção | Nenhuma ID está presente no Mapa de identidade | Nenhuma ID está marcada como primária | Várias IDs são marcadas como primárias | A ID única está marcada como primária | namespace inválida com uma ID marcada como primária |
+|---|---|---|---|---|---|
+| **&quot;Use Primary ID Namespace&quot; marcado** | A linha é solta pelo CJA. | A linha é solta pelo CJA, pois nenhuma ID primária é especificada. | Todas as IDs marcadas como primárias, em todas as namespaces, são extraídas em uma lista. São então classificadas alfabeticamente; com essa nova classificação, a primeira namespace com sua primeira ID é usada como a ID da pessoa. | A ID única marcada como primária é usada como a ID da pessoa. | Embora a namespace possa ser inválida (não presente no AEP), o CJA usará a ID primária sob essa namespace como a ID da pessoa. |
+| **namespace do mapa de identidade específico selecionada** | A linha é solta pelo CJA. | Todas as IDs na namespace selecionada são extraídas em uma lista e a primeira é usada como a ID da pessoa. | Todas as IDs na namespace selecionada são extraídas em uma lista e a primeira é usada como a ID da pessoa. | Todas as IDs na namespace selecionada são extraídas em uma lista e a primeira é usada como a ID da pessoa. | Todas as IDs na namespace selecionada são extraídas em uma lista e a primeira é usada como a ID da pessoa. (Somente uma namespace válida pode ser selecionada no momento da criação da conexão, portanto, não é possível que uma namespace/ID inválida seja usada como ID de pessoa) |
 
 ## Habilitar conexão
 
