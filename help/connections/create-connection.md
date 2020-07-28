@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
+source-git-commit: 63ddde92f1ea5e5e8129888909ac03ac89096b71
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 64%
+source-wordcount: '999'
+ht-degree: 59%
 
 ---
 
@@ -26,7 +26,7 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 1. Clique em **[!UICONTROL Criar nova conexão]** na parte superior direita.
 
-   ![Criar conexão](assets/create-connection.png)
+   ![Criar conexão](assets/create-connection0.png)
 
 1. Escolha uma caixa de proteção no Experience Platform que contenha os conjuntos de dados aos quais deseja criar uma conexão.
 
@@ -40,6 +40,8 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 No lado direito, agora é possível configurar o conjunto de dados adicionado.
 
+![Configurar conjunto de dados](assets/create-connection.png)
+
 1. **[!UICONTROL Tipo]** de conjunto de dados: Para cada conjunto de dados adicionado a essa conexão, o [!UICONTROL Customer Journey Analytics] define automaticamente o tipo de conjunto de dados com base nos dados recebidos.
 
    There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
@@ -52,19 +54,27 @@ No lado direito, agora é possível configurar o conjunto de dados adicionado.
 
 1. **[!UICONTROL ID]** do conjunto de dados: Essa ID é gerada automaticamente.
 
-1. **[!UICONTROL Carimbo de data e hora]**: adicionar conteúdo aqui
+1. **[!UICONTROL Carimbo]** de data/hora: adicionar conteúdo aqui
 
-1. **[!UICONTROL Esquema]**:
+1. **[!UICONTROL Schema]**: Este é o schema com base no qual o conjunto de dados foi criado no Adobe Experience Platform.
 
-1. **[!UICONTROL ID da pessoa]**:
+1. **[!UICONTROL ID]** da pessoa: Selecione uma ID de pessoa das identidades disponíveis definidas no schema de conjunto de dados no Experience Platform.
+
+   >[!IMPORTANT]
+   >
+   >Se não houver IDs de pessoa para escolher, isso significa que uma ou mais IDs de pessoa não foram definidas no schema. Visualização [neste vídeo](https://youtu.be/G_ttmGl_LRU) sobre como definir uma identidade no Experience Platform.
 
 1. Clique em **[!UICONTROL Avançar]** para acessar a caixa de diálogo [!UICONTROL Ativar conexão] .
 
-   ![Habilitar conexão](assets/create-connection2.png)
+### Mapa de identidade
+
+
 
 ## Habilitar conexão
 
-1. In the [!UICONTROL Create Connection] dialog, define these settings:
+![Habilitar conexão](assets/create-connection2.png)
+
+1. Para habilitar uma conexão, defina estas configurações:
 
    | Campo | Descrição |
    |---|---|
