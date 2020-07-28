@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 220f164ae128c47aa89b319829336a5fc1b3d8c4
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 68%
+source-wordcount: '923'
+ht-degree: 64%
 
 ---
 
@@ -34,9 +34,13 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 1. Select one or more dataset(s) you want to pull into [!UICONTROL Customer Journey Analytics] and click **[!UICONTROL Add]**.
 
-   (Se tiver vários conjuntos de dados para escolher, você poderá pesquisar os corretos usando a barra de pesquisa acima da lista de conjuntos de dados.)
+   (If you have a lot of datasets to choose from, you can search for the right one(s) using the **[!UICONTROL Search datasets]** search bar above the list of datasets.)
 
-1. Next, for each dataset that you added to this connection, [!UICONTROL Customer Journey Analytics] automatically sets the dataset type based on the data coming in.
+## Configurar conjunto de dados
+
+No lado direito, agora é possível configurar o conjunto de dados adicionado.
+
+1. **[!UICONTROL Tipo]** de conjunto de dados: Para cada conjunto de dados adicionado a essa conexão, o [!UICONTROL Customer Journey Analytics] define automaticamente o tipo de conjunto de dados com base nos dados recebidos.
 
    There are 3 different dataset types: [!UICONTROL Event] data, [!UICONTROL Profile] data, and [!UICONTROL Lookup] data.
 
@@ -46,15 +50,25 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
    | [!UICONTROL Pesquisar] | Análogo a um arquivo de Classificações. Esses dados são usados para procurar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode carregar dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. | N/D | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento &quot;Gravar&quot;, exceto a classe &quot;Perfil individual XDM&quot;. | N/D |
    | [!UICONTROL Perfil] | Analogous to [!UICONTROL Customer Attributes] - for non-changing and non-temporal attributes. Data that is applied to your visitors, users, or customers in the [!UICONTROL Event] data. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe &quot;Perfil individual XDM&quot;. | Você pode escolher a ID de pessoa que deseja incluir. Cada conjunto de dados definido no [!DNL Experience Platform] tem seu próprio conjunto de uma ou mais IDs de pessoa definidas, como ID de cookie, ID com título, ID de usuário, código de rastreamento etc.<br>![ID de pessoa](assets/person-id.png)**Observação:** se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatórios refletirá isso. Para realmente unir conjuntos de dados, é necessário usar a mesma ID de pessoa. |
 
-1. Clique em **[!UICONTROL Avançar]** para acessar a caixa de diálogo [!UICONTROL Criar conexão] .
+1. **[!UICONTROL ID]** do conjunto de dados: Essa ID é gerada automaticamente.
 
-   ![Criar conexão](assets/create-connection2.png)
+1. **[!UICONTROL Carimbo de data e hora]**: adicionar conteúdo aqui
+
+1. **[!UICONTROL Esquema]**:
+
+1. **[!UICONTROL ID da pessoa]**:
+
+1. Clique em **[!UICONTROL Avançar]** para acessar a caixa de diálogo [!UICONTROL Ativar conexão] .
+
+   ![Habilitar conexão](assets/create-connection2.png)
+
+## Habilitar conexão
 
 1. In the [!UICONTROL Create Connection] dialog, define these settings:
 
    | Campo | Descrição |
    |---|---|
-   | [!UICONTROL Conexão de nome] | Dê um nome descritivo à conexão. A conexão não pode ser salva sem um nome. |
+   | [!UICONTROL Nomear a conexão] | Dê um nome descritivo à conexão. A conexão não pode ser salva sem um nome. |
    | [!UICONTROL Descrição] | Adicione mais detalhes para diferenciar essa conexão de outras pessoas. |
    | [!UICONTROL Conjuntos de dados] | Os conjuntos de dados incluídos nesta conexão. |
    | [!UICONTROL Importe automaticamente todos os novos conjuntos de dados nesta conexão, começando hoje mesmo.] | Select this option if you want to establish an ongoing connection, so that any new data batches that get added to the datasets in this connection automatically flow into [!UICONTROL Workspace]. |
