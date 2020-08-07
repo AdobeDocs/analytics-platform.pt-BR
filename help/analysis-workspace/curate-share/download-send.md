@@ -3,10 +3,10 @@ description: É possível baixar projetos salvos ou não salvos em formatos PDF 
 title: Baixar arquivos PDF ou CSV
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 387e9755d963e70a9ba8dbc5f1f01f83541b5511
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 68%
+source-wordcount: '382'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 68%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 É possível baixar projetos salvos ou não salvos em formatos PDF e CSV.
 
@@ -25,8 +25,8 @@ Lembre-se:
 
 * A visualização do fallout também está disponível no formato CSV.
 * Quando renderizamos um projeto para PDF, somente incluímos o que está na página. Se um projeto tiver visualizações e painéis com tamanhos personalizados, é necessário alterá-los para terem tamanhos automáticos (botão no canto superior direito) para que não haja truncamento de conteúdo.
-* Os PDFs baixados no navegador podem levar vários minutos para serem exportados. Isso ocorre porque precisamos executar novamente o projeto inteiro em nossos servidores antes de renderizá-lo no formato PDF. Recomendamos não sair do projeto até que o PDF seja baixado no seu navegador. No entanto, você pode continuar fazendo alterações no projeto enquanto espera.
-* Estamos cientes de que, se você tiver projetos muito longos da Workspace, os PDFs serão exportados como uma página gigante, em vez de como um documento paginado. Estamos trabalhando em uma melhoria na exportação de PDF do Workspace que permitirá a paginação.
+* Os PDFs baixados no navegador podem levar vários minutos para serem exportados. Isso ocorre porque precisamos executar novamente o projeto inteiro em nossos servidores antes de renderizá-lo no formato PDF. Recomendamos não sair do projeto até que o PDF seja baixado no navegador. No entanto, você pode continuar fazendo alterações no projeto enquanto espera.
+* Estamos cientes de que, se você tiver projetos muito longos do Workspace, os PDFs serão exportados como uma página gigante, em vez de como um documento paginado. Estamos trabalhando em uma melhoria na exportação de PDF do Workspace que permitirá a paginação.
 
 1. Criar ou abrir um projeto.
 1. Clique em **[!UICONTROL Projeto]** > **[!UICONTROL Baixar CSV (ou PDF).]**
@@ -40,6 +40,6 @@ Em 11 de abril de 2019, foram feitas várias alterações nos **[!CSV downloads]
 * As tabelas de coorte mostram apenas valores brutos; as porcentagens foram removidas.
 * Se um número for inválido, é exibida uma célula vazia.
 
->[!NObservação:]
+>[!NOTE]
 >
-> os valores numéricos que usam vírgula como separador decimal continuarão a ser incluídos entre aspas no CSV exportado.
+>os valores numéricos que usam vírgula como separador decimal continuarão a ser incluídos entre aspas no CSV exportado.
