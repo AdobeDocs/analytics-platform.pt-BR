@@ -3,10 +3,10 @@ description: Modelos no Workspace
 title: Modelos
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c7bf87b4ff3a7d0da930a22336db762fa3d74393
 workflow-type: tm+mt
 source-wordcount: '1420'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Você pode criar um projeto a partir de:
 
 * **Projeto em branco (padrão)**: para obter instruções, consulte [Criar um projeto no Analysis Workspace](/help/analysis-workspace/home.md).
 * **Modelo padrão**: esses modelos são criados pela Adobe e fornecidos com o produto.
-* **Modelo** personalizado: Esses modelos podem ser criados, compartilhados ou excluídos por usuários com direitos de administrador ou por não administradores, desde que tenham recebido a [!UICONTROL Analysis Workspace: A permissão Salvar como modelo] no Admin Console. [Saiba mais...](https://docs.adobe.com/content/help/pt-BR/analytics/admin/admin-console/permissions/product-profile.html)
+* **Modelo personalizado**: esses modelos podem ser criados, compartilhados ou excluídos por usuários com direitos de administrador ou por não administradores, desde que tenham recebido a permissão [!UICONTROL Analysis Workspace: salvar como modelo] no Admin Console. [Saiba mais...](https://docs.adobe.com/content/help/pt-BR/analytics/admin/admin-console/permissions/product-profile.html)
 
 ![](assets/start_modal.png)
 
@@ -133,7 +133,7 @@ O modelo é baseado na métrica de Pessoas, que é uma versão deduplicada da m�
 
 ### QI da jornada: modelo de Análise entre dispositivos
 
-<!-->This content is mirrored in the CDA doc.<-->
+<!--This content is mirrored in the CDA doc.-->
 
 Esse modelo permite que você veja dados essenciais de desempenho entre dispositivos. Ele está disponível somente para clientes que têm acesso ao [Cross-Device Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/components/cda/cda-home.html) (CDA).
 
