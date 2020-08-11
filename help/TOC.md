@@ -12,11 +12,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: ee508a9186c02b4ee278a083ff0c75d2412a22e8
-workflow-type: ht
-source-wordcount: '379'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 41ad1eeb2510fce0d73c7f14fe11621445e43420
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 100%
    + [Visão geral do Analysis Workspace](analysis-workspace/home.md)
    + [Realizar análise básica](analysis-workspace/perform-basic-analysis.md)
    + [Realizar análise avançada](analysis-workspace/perform-adv-analysis.md)
-   + Criar um projeto da Workspace {#build-workspace-project}
+   + Criar um projeto do Workspace {#build-workspace-project}
       + [Criar projeto - visão geral](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Modelos de projeto](analysis-workspace/build-workspace-project/starter-projects.md)
       + Configurações de coluna e linha {#column-row-settings}
@@ -71,7 +71,7 @@ ht-degree: 100%
          + [Visão geral do fluxo](analysis-workspace/visualizations/c-flow/flow.md)
          + [Configurar uma visualização de fluxo](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
          + [Configurações de fluxo](analysis-workspace/visualizations/c-flow/flow-settings.md)
-         + [Fluxos inter dimensionais](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
+         + [Fluxos interdimensionais](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [Histograma](analysis-workspace/visualizations/histogram.md)
       + [Venn](analysis-workspace/visualizations/venn.md)
       + [Área e Área empilhada](analysis-workspace/visualizations/area.md)
@@ -103,8 +103,8 @@ ht-degree: 100%
       + [Modelos de atribuição e janelas de pesquisa](analysis-workspace/attribution/models.md)
       + [Atribuição algorítmica](analysis-workspace/attribution/algorithmic.md)
       + [Perguntas frequentes](analysis-workspace/attribution/faq.md)
-   + Analista virtual {#virtual-analyst}
-      + [Visão geral do Analista virtual](analysis-workspace/virtual-analyst/overview.md)
+   + Virtual Analyst {#virtual-analyst}
+      + [Visão geral do Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
       + Detecção de anomalias {#anomaly-detection}
          + [Visão geral da Detecção de anomalias](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
          + [Exibir anomalias na Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
@@ -139,10 +139,11 @@ ht-degree: 100%
       + [Gerenciar intervalos de datas](components/date-ranges/manage.md)
       + [Visão geral do calendário](components/date-ranges/calendar.md)
       + [Criar intervalos de datas personalizados](components/date-ranges/custom-date-ranges.md)
-      + [Comparação de data](components/date-ranges/time-comparison.md)
+      + [Comparação de datas](components/date-ranges/time-comparison.md)
 + Casos de uso {#cja-usecases}
    + [Casos de uso do Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Uso de arrays de objetos](use-cases/object-arrays.md)
+   + [(B2B) Adicionar dados em nível de conta como um conjunto de dados de pesquisa](use-cases/b2b.md)
 + Privacidade {#cja-privacy}
    + [Visão geral de privacidade](privacy/privacy-overview.md)
 + [Atualizações da documentação CJA](doc-changes.md)
