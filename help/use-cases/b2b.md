@@ -2,9 +2,9 @@
 title: (B2B) Adicionar dados em nível de conta como um conjunto de dados de pesquisa
 description: Saiba como adicionar dados baseados em conta como um conjunto de dados de pesquisa ao CJA
 translation-type: tm+mt
-source-git-commit: 721915ffdc9f196a13a360fb5ac145f750788bcf
+source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '851'
 ht-degree: 1%
 
 ---
@@ -46,8 +46,15 @@ Depois que o schema for criado, será necessário criar um conjunto de dados de 
 1. Nomeie o conjunto de dados (em nosso exemplo, Informações B2B) e forneça uma descrição.
 1. Clique em **[!UICONTROL Concluir]**.
 
+## 3. Insira dados no Experience Platform
 
-## 3. Combinar conjuntos de dados em uma conexão (Customer Journey Analytics)
+Instruções sobre como [Mapear um arquivo CSV para um schema XDM](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html) deve ajudar se você estiver usando um arquivo CSV.
+
+[Outros métodos](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) estão disponíveis também.
+
+A integração dos dados e o estabelecimento da pesquisa levam de 2 a 4 horas, dependendo do tamanho da tabela de pesquisa.
+
+## 4. Combinar conjuntos de dados em uma conexão (Customer Journey Analytics)
 
 Neste exemplo, estamos combinando 3 conjuntos de dados em uma conexão CJA:
 
@@ -61,20 +68,18 @@ Veja como você combina os conjuntos de dados:
 
 1. Na Customer Journey Analytics, selecione a variável **[!UICONTROL Conexões]** guia.
 1. Selecione os conjuntos de dados (no nosso exemplo, os três acima) que deseja combinar.
-1. (Não tenho certeza se esta é a etapa...) Para o conjunto de dados de Informações B2B, selecione a variável `accountID` chave que será usada na tabela de pesquisa. Em seguida, selecione sua chave correspondente (dimensão correspondente), também `accountID` no conjunto de dados do evento.
+1. Para o conjunto de dados de Informações B2B, selecione a variável `accountID` chave que será usada na tabela de pesquisa. Em seguida, selecione sua chave correspondente (dimensão correspondente), também `accountID` no conjunto de dados do evento.
 1. Clique em **[!UICONTROL Próximo]**.
 1. Nomeie e descreva a conexão e configure-a de acordo com [estas instruções](/help/connections/create-connection.md).
 1. Clique em **[!UICONTROL Salvar]**.
 
-Agora os dados serão ingeridos. A integração dos dados e o estabelecimento da pesquisa levam de 2 a 4 horas, dependendo do tamanho da tabela de pesquisa.
-
-## Criar uma visualização de dados a partir desta conexão
+## 5. Criar uma visualização de dados a partir desta conexão
 
 Siga as instruções em [criação de exibições de dados](/help/data-views/create-dataview.md).
 
 * Adicione todos os componentes (dimensões e métricas) necessários dos conjuntos de dados.
 
-## Analisar os dados no Workspace
+## 6. Analisar os dados no Workspace
 
 Agora você pode criar projetos do Workspace com base nos dados de todos os três conjuntos de dados.
 
