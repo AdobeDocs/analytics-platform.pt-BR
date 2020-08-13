@@ -1,11 +1,11 @@
 ---
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
-translation-type: ht
-source-git-commit: 756c6e7c187b76636cf96d18c949908a97db51ed
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 92702a78f4b3d3413f91d896749db10102412fba
+workflow-type: tm+mt
+source-wordcount: '1639'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,8 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 >
 >É possível combinar vários conjuntos de dados do [!DNL Experience Platform] em uma única conexão.
 
+## Selecionar caixa de proteção e conjuntos de dados
+
 1. Acesse [https://analytics.adobe.com](https://analytics.adobe.com).
 
 1. Clique na guia **[!UICONTROL Conexões]**.
@@ -30,7 +32,11 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 1. Escolha uma sandbox na Experience Platform que contenha os conjuntos de dados para os quais você deseja criar uma conexão.
 
-   A Adobe Experience Platform fornece [sandboxes](https://docs.adobe.com/content/help/pt-BR/experience-platform/sandbox/home.html) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Você pode considerar as sandboxes como &quot;silos de dados&quot; que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados. Não é possível acessar dados em sandboxes. Depois de selecionar a sandbox, o painel esquerdo mostra todos os conjuntos de dados que você pode obter dela.
+   A Adobe Experience Platform fornece [sandboxes](https://docs.adobe.com/content/help/pt-BR/experience-platform/sandbox/home.html) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Você pode considerar as sandboxes como &quot;silos de dados&quot; que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.  Depois de selecionar a sandbox, o painel esquerdo mostra todos os conjuntos de dados que você pode obter dela.
+
+   >[!IMPORTANT]
+   >
+   >Não é possível acessar dados em caixas de proteção, ou seja, você só pode combinar conjuntos de dados em uma caixa de proteção.
 
 1. Selecione um ou mais conjuntos de dados que você deseja transferir para o [!UICONTROL Customer Journey Analytics] e clique em **[!UICONTROL Adicionar]**.
 
@@ -50,7 +56,7 @@ No lado direito, agora é possível configurar o conjunto de dados adicionado.
    |---|---|---|---|---|
    | [!UICONTROL Evento] | Dados que representam eventos no tempo (por exemplo, visitas da Web, interações, transações, dados de POS, dados de pesquisa, dados de impressão de anúncio etc.). Por exemplo, eles podem ser dados de sequência de cliques típicos, com uma ID do cliente ou uma ID do cookie e um carimbo de data e hora. Com os dados do Evento, você tem flexibilidade para saber qual ID é usada como a ID da pessoa. | É automaticamente definido para o campo de carimbo de data e hora padrão a partir de esquemas baseados em eventos no [UICONTROL Experience Platform]. | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento &quot;Série de tempo&quot;. Exemplos incluem &quot;Evento de experiência XDM&quot; ou &quot;Evento de decisão XDM&quot;. | Você pode escolher a ID de pessoa que deseja incluir. Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas opções pode ser usada como a ID de pessoa. Os exemplos incluem ID de cookie, ID com título, ID de usuário, código de rastreamento etc. |
    | [!UICONTROL Pesquisa] | Análogo a um arquivo de Classificações. Esses dados são usados para procurar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode carregar dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. | N/D | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento &quot;Gravar&quot;, exceto a classe &quot;Perfil individual XDM&quot;. | N/D |
-   | [!UICONTROL Perfil] | Análogo a [!UICONTROL Atributos do cliente] - para atributos não variáveis e não temporais. Dados que são aplicados aos visitantes, usuários ou clientes nos dados de [!UICONTROL Evento]. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe &quot;Perfil individual XDM&quot;. | Você pode escolher a ID de pessoa que deseja incluir. Cada conjunto de dados definido no [!DNL Experience Platform] tem seu próprio conjunto de uma ou mais IDs de pessoa definidas, como ID de cookie, ID com título, ID de usuário, código de rastreamento etc.<br>![ID de pessoa](assets/person-id.png)**Observação:** se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatórios refletirá isso. Para realmente unir conjuntos de dados, é necessário usar a mesma ID de pessoa. |
+   | [!UICONTROL Perfil] | Análogo a [!UICONTROL Atributos do cliente] - para atributos não variáveis e não temporais. Dados que são aplicados aos visitantes, usuários ou clientes nos dados de [!UICONTROL Evento]. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe &quot;Perfil individual XDM&quot;. | Você pode escolher a ID de pessoa que deseja incluir. Cada conjunto de dados definido no [!DNL Experience Platform] tem seu próprio conjunto de uma ou mais IDs de pessoa definidas, como ID de cookie, ID com título, ID de usuário, código de rastreamento etc.<br>![ID de pessoa ](assets/person-id.png)**Observação:** se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatórios refletirá isso. Para realmente unir conjuntos de dados, é necessário usar a mesma ID de pessoa. |
 
 1. **[!UICONTROL ID do conjunto de dados]**: essa ID é gerada automaticamente.
 
