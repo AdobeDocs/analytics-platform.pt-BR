@@ -1,11 +1,11 @@
 ---
 title: Glossário do Customer Journey Analytics
 description: Glossário do Customer Journey Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 307bfae11f44d088aa8d004f1f7ddd17375f60fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Alguns termos do Customer Journey Analytics diferem de como eles têm sido usado
 | Novo termo do Customer Journey Analytics | Termo do Adobe Analytics | Descrição |
 |---|---|---|
 | Conjunto de dados de pesquisa | Classificação | Use a pesquisa para recuperar o valor do conjunto de dados especificado para uma chave/chave correspondente (em um conjunto de dados de evento) onde há uma relação de 1 para 1. Por exemplo, você pode especificar &quot;tracking_code&quot; como a chave que corresponde ao &quot;tracking_code&quot; no conjunto de dados do evento. |
-| Conjunto de dados do perfil | Atributo do cliente | Se você capturar os dados de clientes de empresas em um banco de dados de gerenciamento de relacionamento com o cliente (CRM), será possível fazer upload dos dados em um conjunto de dados de perfil na Adobe Experience Platform. Depois de criar uma conexão com esse conjunto de dados no Customer Journey Analytics e criar uma visualização de dados, use os dados no Workspace. |
+| Conjunto de dados Perfil | Atributo do cliente | Se você capturar os dados de clientes de empresas em um banco de dados de gerenciamento de relacionamento com o cliente (CRM), será possível fazer upload dos dados em um conjunto de dados de perfil na Adobe Experience Platform. Depois de criar uma conexão com esse conjunto de dados no Customer Journey Analytics e criar uma visualização de dados, use os dados no Workspace. |
 | Empresa de logon | Organização da Experience Cloud | Consulte [Organizações e vinculação de contas](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | N/D | Conjunto de relatórios | Os conjuntos de relatórios no sentido tradicional do Adobe Analytics não existem mais. Em vez disso, você cria [visualizações de dados](/help/data-views/create-dataview.md) (virtuais) a partir dos conjuntos de dados da Plataforma aos quais você estabeleceu conexões. |
 | Filtro | Segmento | Segmentos agora são filtros. Os filtros no Customer Journey Analytics se comportam da mesma forma que os segmentos. Somente a terminologia mudou. |
