@@ -1,47 +1,47 @@
 ---
-title: (B2B) Adicionar dados em nível de conta como um conjunto de dados de pesquisa
+title: (B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa
 description: Saiba como adicionar dados baseados em conta como um conjunto de dados de pesquisa ao CJA
 translation-type: tm+mt
 source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 1%
+ht-degree: 90%
 
 ---
 
 
-# (B2B) Adicionar dados em nível de conta como um conjunto de dados de pesquisa
+# (B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa
 
-Este caso de uso B2B mostra como especificar seus dados em um nível de conta em vez de um nível de pessoa para análise. A análise em nível de conta pode responder perguntas como
+Este caso de uso B2B mostra como especificar os dados a um nível de conta em vez de a um nível de pessoa para análise. A análise a nível de conta pode responder perguntas como
 
 * Que nome de empresa corresponde a esta conta?
 * Quantos funcionários estão associados a esta conta/empresa?
 * Que funções estão representadas nesta conta?
-* Como essa conta funciona como um todo em relação a uma campanha de marketing específica, em comparação com outra conta?
-* Algumas funções (como o Gerente de TI) em uma conta estão se comportando de forma diferente da mesma função em uma conta diferente?
+* Como essa conta funciona no geral, com relação a uma campanha de marketing específica, em comparação a outra conta?
+* Algumas funções (como o Gerente de TI) em uma conta estão se comportando de forma diferente da mesma função em outra conta?
 
-Você consegue tudo isso trazendo as informações no nível da conta como um [pesquisa](/help/getting-started/cja-glossary.md) conjunto de dados (semelhante às classificações no Adobe Analytics tradicional).
+Você consegue tudo isso trazendo as informações no nível de conta como um conjunto de dados de [pesquisa](/help/getting-started/cja-glossary.md) (semelhante às classificações no Adobe Analytics tradicional).
 
-Primeiro, você cria um schema de pesquisa no Adobe Experience Platform e, em seguida, cria um conjunto de dados de tabela de pesquisa ao assimilar dados de nível de conta baseados em .csv. Em seguida, você continua a criar uma conexão CJA que combina diferentes conjuntos de dados, incluindo o conjunto de pesquisa que você criou. Em seguida, você cria uma visualização de dados e finalmente pode utilizar todos esses dados no Workspace.
+Primeiro, você cria um esquema de pesquisa na Adobe Experience Platform e depois cria um conjunto de dados de tabela de pesquisa assimilando dados de nível de conta baseados em .csv. Em seguida, você cria uma conexão CJA que combina diferentes conjuntos de dados, incluindo o conjunto de pesquisa criado. Depois disso, cria uma visualização de dados e, finalmente, pode utilizar todos esses dados no Workspace.
 
 >[!NOTE]
 >
 >As tabelas de pesquisa podem ter até 1 GB.
 
-## 1. Criar schema de pesquisa (Experience Platform)
+## 1. Criar esquema de pesquisa (Experience Platform)
 
-Criar seu próprio schema para a [pesquisa](/help/getting-started/cja-glossary.md) a tabela garante que o conjunto de dados usado estará disponível no CJA com a configuração correta (tipo de registro). A melhor prática é [criar uma classe de schema personalizada](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) chamado de &quot;Pesquisa&quot;, vazio de qualquer elemento, que pode ser reutilizado para todas as tabelas de pesquisa.
+Criar seu próprio esquema para a tabela de [pesquisa](/help/getting-started/cja-glossary.md) garante que o conjunto de dados usado estará disponível no CJA com a configuração correta (tipo de registro). Uma prática recomendada é [criar uma classe de esquema personalizada](https://docs.adobe.com/content/help/pt-BR/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) chamada &quot;Pesquisa&quot;, sem elementos, que pode ser reutilizada para todas as tabelas de pesquisa.
 
 ![](assets/create-new-class.png)
 
 ## 2. Criar conjunto de dados de pesquisa (Experience Platform)
 
-Depois que o schema for criado, será necessário criar um conjunto de dados de pesquisa a partir desse schema, no Experience Platform. Este conjunto de dados de pesquisa contém informações de marketing em nível de conta, como: Nome da empresa, número total de funcionários, nome do domínio, a que setor eles pertencem, receita anual, se eles são clientes atuais do Experience Platform ou não, em que estágio de vendas eles estão, qual equipe dentro da conta está usando CJA etc.
+Depois de criar o esquema, é necessário criar um conjunto de dados de pesquisa a partir dele, na Experience Platform. Esse conjunto de dados de pesquisa contém informações de marketing a nível de conta, como: nome da empresa, número total de funcionários, nome do domínio, a que setor pertencem, receita anual, se são clientes atuais da Experience Platform ou não, em que estágio de vendas estão, qual equipe dentro da conta está usando o CJA etc.
 
-1. No Adobe Experience Platform, vá para **[!UICONTROL gestão de dados > Conjuntos de dados]**.
+1. Na Adobe Experience Platform, acesse **[!UICONTROL Gerenciamento de dados > Conjuntos de dados]**.
 1. Clique em **[!UICONTROL + Criar conjunto de dados]**.
-1. Clique em **[!UICONTROL Criar conjunto de dados a partir do schema]**.
-1. Selecione a classe de Schema de pesquisa que você criou.
+1. Clique em **[!UICONTROL Criar conjunto de dados a partir do esquema]**.
+1. Selecione a classe Esquema de pesquisa criada.
 1. Clique em **[!UICONTROL Próximo]**.
 1. Nomeie o conjunto de dados (em nosso exemplo, Informações B2B) e forneça uma descrição.
 1. Clique em **[!UICONTROL Concluir]**.
@@ -52,40 +52,40 @@ Instruções sobre como [Mapear um arquivo CSV para um schema XDM](https://docs.
 
 [Outros métodos](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) estão disponíveis também.
 
-A integração dos dados e o estabelecimento da pesquisa levam de 2 a 4 horas, dependendo do tamanho da tabela de pesquisa.
+A assimilação dos dados e o estabelecimento da pesquisa levam de 2 a 4 horas, dependendo do tamanho da tabela de pesquisa.
 
 ## 4. Combinar conjuntos de dados em uma conexão (Customer Journey Analytics)
 
-Neste exemplo, estamos combinando 3 conjuntos de dados em uma conexão CJA:
+Neste exemplo, estamos combinando 3 conjuntos de dados em uma conexão do CJA:
 
-| Nome do conjunto de dados | Descrição | Classe de Schema AEP | Detalhes do conjunto de dados |
+| Nome do conjunto de dados | Descrição | Classe de esquema da AEP | Detalhes do conjunto de dados |
 |---|---|---|---|
-| Impressão B2B | Contém dados de sequência de cliques e nível de evento no nível da conta. Por exemplo, ele contém a ID de email e a ID de conta correspondente, bem como o nome de marketing, para a execução de anúncios de marketing. Também inclui as impressões desses anúncios, por usuário. | Com base na classe de schema XDM ExperienceEvent | A variável `emailID` é usado como a identidade primária e recebe uma `Customer ID` namespace. Como resultado, será exibido como padrão **[!UICONTROL ID da pessoa]** em Customer Journey Analytics. ![Impressões](assets/impressions-mixins.png) |
-| Perfil B2B | Este conjunto de dados de perfil informa mais sobre os usuários em uma conta, como seu cargo, a qual conta eles pertencem, seu perfil do LinkedIn etc. | Com base na classe de schema de Perfil individual XDM | Não é necessário selecionar `emailID` como a ID primária neste schema. Certifique-se de ativar **[!UICONTROL Perfil]**; caso contrário, o CJA não será capaz de conectar a variável `emailID` no Perfil B2B com a variável `emailID` nos dados de impressão B2B. (Esse recurso é chamado de costura baseada em campo.) ![Perfil](assets/profile-mixins.png) |
-| Informações de B2B | Consulte &quot;Criar conjunto de dados de pesquisa&quot; acima. | B2BAccount (classe de schema de pesquisa personalizada) | A relação entre `accountID` e o conjunto de dados de impressões B2B foi criado automaticamente ao conectar o conjunto de dados de informações B2B ao conjunto de dados de impressões B2B no CJA, conforme descrito nas etapas abaixo. ![Pesquisa](assets/lookup-mixins.png) |
+| Impressão B2B | Contém dados de sequência de cliques e nível de evento no nível de conta. Por exemplo, contém a ID de email e a ID de conta correspondente, além do nome de marketing, para a execução de anúncios de marketing. Também inclui as impressões desses anúncios, por usuário. | Com base na classe de esquema XDM ExperienceEvent | O `emailID` é usado como a identidade primária e recebe um namespace `Customer ID`. Como resultado, será exibido como a **[!UICONTROL ID de pessoa]** padrão no Customer Journey Analytics. ![Impressões](assets/impressions-mixins.png) |
+| Perfil B2B | Este conjunto de dados de perfil informa mais sobre os usuários em uma conta, como o cargo, a qual conta eles pertencem, o perfil do LinkedIn etc. | Com base na classe de esquema Perfil individual XDM | Não é necessário selecionar `emailID` como a ID primária neste esquema. Certifique-se de ativar o **[!UICONTROL Perfil]**; caso contrário, o CJA não será capaz de conectar a `emailID` ao Perfil B2B com a `emailID` nos dados de impressão B2B. (Esse recurso é chamado de combinação baseada em campo.) ![Perfil](assets/profile-mixins.png) |
+| Informações B2B | Consulte &quot;Criar conjunto de dados de pesquisa&quot; acima. | B2BAccount (classe de esquema de pesquisa personalizada) | A relação entre `accountID` e o conjunto de dados Impressões B2B foi criada automaticamente ao conectar o conjunto de dados Informações B2B ao conjunto de dados Impressões B2B no CJA, conforme descrito nas etapas abaixo. ![Pesquisa](assets/lookup-mixins.png) |
 
-Veja como você combina os conjuntos de dados:
+Veja como combinar conjuntos de dados:
 
-1. Na Customer Journey Analytics, selecione a variável **[!UICONTROL Conexões]** guia.
+1. No Customer Journey Analytics, selecione a guia **[!UICONTROL Conexões]**.
 1. Selecione os conjuntos de dados (no nosso exemplo, os três acima) que deseja combinar.
-1. Para o conjunto de dados de Informações B2B, selecione a variável `accountID` chave que será usada na tabela de pesquisa. Em seguida, selecione sua chave correspondente (dimensão correspondente), também `accountID` no conjunto de dados do evento.
+1. Para o conjunto de dados de Informações B2B, selecione a variável `accountID` chave que será usada na tabela de pesquisa. Em seguida, selecione a chave correspondente (dimensão correspondente), também `accountID` no conjunto de dados do evento.
 1. Clique em **[!UICONTROL Próximo]**.
 1. Nomeie e descreva a conexão e configure-a de acordo com [estas instruções](/help/connections/create-connection.md).
 1. Clique em **[!UICONTROL Salvar]**.
 
 ## 5. Criar uma visualização de dados a partir desta conexão
 
-Siga as instruções em [criação de exibições de dados](/help/data-views/create-dataview.md).
+Siga as instruções em [criar exibições de dados](/help/data-views/create-dataview.md).
 
 * Adicione todos os componentes (dimensões e métricas) necessários dos conjuntos de dados.
 
 ## 6. Analisar os dados no Workspace
 
-Agora você pode criar projetos do Workspace com base nos dados de todos os três conjuntos de dados.
+Agora é possível criar projetos do Workspace com base nos dados de todos os três conjuntos de dados.
 
-Por exemplo, você pode encontrar respostas para as respostas apresentadas na introdução:
+Por exemplo, encontre respostas para as perguntas apresentadas na introdução:
 
-* Analise emailID por accountID para descobrir a empresa à qual uma ID de email pertence.
+* Detalhe a emailID por accountID para descobrir a empresa à qual uma ID de email pertence.
 * Quantos funcionários estão mapeados para uma ID de conta específica?
 * A que setor uma ID de conta pertence?
 
