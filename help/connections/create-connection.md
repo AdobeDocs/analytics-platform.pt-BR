@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: bbe86f2d6e052262f0e8a84bca0996f4e2589433
+source-git-commit: 297ed03ff59cc8d719a6bf0984e82597e8d33392
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 97%
+source-wordcount: '1655'
+ht-degree: 96%
 
 ---
 
@@ -36,7 +36,7 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
    >[!IMPORTANT]
    >
-   >Não é possível acessar dados em caixas de proteção, ou seja, você só pode combinar conjuntos de dados em uma caixa de proteção.
+   >Não é possível acessar dados em caixas de proteção, ou seja, você só pode combinar conjuntos de dados localizados na mesma caixa de proteção.
 
 1. Selecione um ou mais conjuntos de dados que você deseja transferir para o [!UICONTROL Customer Journey Analytics] e clique em **[!UICONTROL Adicionar]**.
 
