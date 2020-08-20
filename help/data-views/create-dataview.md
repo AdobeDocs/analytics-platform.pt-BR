@@ -1,8 +1,11 @@
 ---
 title: Criar uma exibição de dados
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics (CJA).
-translation-type: ht
-source-git-commit: d6101371fc9c055a73c7b7bcd1a8d6d6fdc13322
+translation-type: tm+mt
+source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 83%
 
 ---
 
@@ -17,17 +20,17 @@ Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cj
 
 ## Pré-requisito
 
-Antes de criar visualizações de dados, é necessário [configurar uma ou mais conexões com os conjuntos de dados da Experience Platform] (/help/connections/create-connection.md).
+Antes de criar visualizações de dados, é necessário [configurar uma ou mais conexões para conjuntos de dados de Experience Platform](/help/connections/create-connection.md).
 
 ## Definir configurações
 
-1. No Customer Journey Analytics, vá para a guia **[!UICONTROL Data Views]**.
+1. Na Customer Journey Analytics, vá para a **[!UICONTROL Visualizações de dados]** guia.
 
-1. Clique em **[!UICONTROL Add]** para adicionar uma visualização de dados e definir suas configurações.
+1. Clique em **[!UICONTROL Adicionar]** para adicionar uma visualização de dados e definir suas configurações.
 
    | Configuração da sessão | Definição |
    |---|---|
-   | Conexão | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém os conjuntos de dados do [!UICONTROL Experience Platform]. |
+   | Conexão | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém a variável [!UICONTROL Experience Platform] conjunto de dados |
    | Nome | É obrigatório dar um nome à visualização de dados. |
    | Descrição | Uma descrição detalhada não é obrigatória, mas é recomendada. |
    | Adicionar tags | As tags permitem organizar as visualizações de dados em categorias. |
@@ -36,15 +39,15 @@ Antes de criar visualizações de dados, é necessário [configurar uma ou mais 
    | Iniciar nova sessão com evento | Uma nova sessão começa quando um evento é acionado, independente do fato de uma sessão ter ultrapassado o tempo limite. A sessão recentemente criada inclui o evento que a iniciou. Além disso, é possível usar vários eventos para começar uma sessão e uma nova sessão é acionada se qualquer um desses eventos for observado nos dados. Esta configuração afetará a contagem de visitas, o contêiner de segmentação de sessões e a lógica de expiração de visitas nas dimensões. |
    | Adicionar filtros | &quot;Filtros&quot; é o termo para &quot;segmentos&quot; no Customer Journey Analytics. Se você quiser filtrar os dados, arraste o filtro apropriado para cá a partir do painel esquerdo. Se você não selecionar um filtro, a visualização de dados conterá todos os dados. |
 
-1. Clique em **[!UICONTROL Continue]**.
+1. Clique em **[!UICONTROL Continuar]**.
 
 ## Adicionar componentes
 
-1. Agora é hora de adicionar componentes (dimensões, métricas) à visualização de dados (semelhante à experiência de curadoria em conjuntos de relatórios virtuais). Observe que cada um dos campos nos conjuntos de dados agora é convertido em dimensões ou métricas. Arraste dimensões e métricas para o painel ou clique em **[!UICONTROL Selecionar tudo]** para adicionar todos os componentes.
+1. Agora é hora de adicionar componentes (dimensões, métricas) à visualização de dados (semelhante à experiência de curadoria em conjuntos de relatórios virtuais). Observe que cada um dos campos nos conjuntos de dados agora é convertido em dimensões ou métricas. Arraste dimensões e métricas para o painel ou **[!UICONTROL Selecionar tudo]** para adicionar todos os componentes.
 
    ![](assets/add-all-components.png)
 
-1. Clique na guia **[!UICONTROL Add Components]** para adicionar dimensões e métricas à visualização de dados.
+1. Clique no botão **[!UICONTROL Adicionar componentes]** para adicionar dimensões e métricas à visualização de dados.
 
    ![](assets/add-all-components2.png)
 
