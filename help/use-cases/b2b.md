@@ -1,11 +1,11 @@
 ---
 title: (B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa
 description: Saiba como adicionar dados baseados em conta como um conjunto de dados de pesquisa ao CJA
-translation-type: ht
-source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
-workflow-type: ht
-source-wordcount: '851'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: de5717d42fbe29554351a789cce594ac9ad47ee1
+workflow-type: tm+mt
+source-wordcount: '939'
+ht-degree: 89%
 
 ---
 
@@ -37,6 +37,12 @@ Criar seu próprio esquema para a tabela de [pesquisa](/help/getting-started/cja
 ## 2. Criar conjunto de dados de pesquisa (Experience Platform)
 
 Depois de criar o esquema, é necessário criar um conjunto de dados de pesquisa a partir dele, na Experience Platform. Esse conjunto de dados de pesquisa contém informações de marketing a nível de conta, como: nome da empresa, número total de funcionários, nome do domínio, a que setor pertencem, receita anual, se são clientes atuais da Experience Platform ou não, em que estágio de vendas estão, qual equipe dentro da conta está usando o CJA etc.
+
+>[!IMPORTANT]
+>
+>O CJA não suporta inteiros em conjuntos de dados de pesquisa. Se você adicionar os campos inteiros no schema XDM para o conjunto de dados de pesquisa, não será possível usar esses números inteiros como métricas ou métricas calculadas. Por exemplo, se yearRevenue ou totalWorkers forem definidos como inteiros, eles serão exibidos como &quot;0&quot; no relatórios no CJA. No entanto, se você atribuí-las como strings, poderá usá-las como informações de pesquisa.
+
+Por exemplo, yearRevenue ou totalWorkers são definidos como Inteiro no exemplo a seguir, esse é o motivo, mostrando &quot;0&quot; no CJA.
 
 1. Na Adobe Experience Platform, acesse **[!UICONTROL Gerenciamento de dados > Conjuntos de dados]**.
 1. Clique em **[!UICONTROL + Criar conjunto de dados]**.
@@ -73,9 +79,9 @@ Veja como combinar conjuntos de dados:
 1. Nomeie e descreva a conexão e configure-a de acordo com [estas instruções](/help/connections/create-connection.md).
 1. Clique em **[!UICONTROL Salvar]**.
 
-## 5. Criar uma exibição de dados desta conexão
+## 5. Criar uma visualização de dados a partir desta conexão
 
-Siga as instruções em [criar exibições de dados](/help/data-views/create-dataview.md).
+Siga as instruções em [criação de visualizações de dados](/help/data-views/create-dataview.md).
 
 * Adicione todos os componentes (dimensões e métricas) necessários dos conjuntos de dados.
 
