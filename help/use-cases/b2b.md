@@ -1,11 +1,11 @@
 ---
 title: (B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa
 description: Saiba como adicionar dados baseados em conta como um conjunto de dados de pesquisa ao CJA
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e3d4a672c33b8c536246836a062d544e3d5b8a01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '851'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -46,13 +46,13 @@ Depois de criar o esquema, é necessário criar um conjunto de dados de pesquisa
 1. Nomeie o conjunto de dados (em nosso exemplo, Informações B2B) e forneça uma descrição.
 1. Clique em **[!UICONTROL Concluir]**.
 
-## 3. Insira dados no Experience Platform
+## 3. Assimilar dados na Experience Platform
 
-Instruções sobre como [Mapear um arquivo CSV para um schema XDM](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html) deve ajudar se você estiver usando um arquivo CSV.
+As instruções sobre como [Mapear um arquivo CSV para um schema XDM](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/tutorials/map-a-csv-file.html) devem ajudar se você estiver usando um arquivo CSV.
 
-[Outros métodos](https://docs.adobe.com/content/help/en/experience-platform/ingestion/home.html) estão disponíveis também.
+[Outros métodos](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html) também estão disponíveis.
 
-A assimilação dos dados e o estabelecimento da pesquisa levam de 2 a 4 horas, dependendo do tamanho da tabela de pesquisa.
+A assimilação de dados e o estabelecimento da pesquisa levam de 2 a 4 horas, dependendo do tamanho da tabela de pesquisa.
 
 ## 4. Combinar conjuntos de dados em uma conexão (Customer Journey Analytics)
 
@@ -68,12 +68,12 @@ Veja como combinar conjuntos de dados:
 
 1. No Customer Journey Analytics, selecione a guia **[!UICONTROL Conexões]**.
 1. Selecione os conjuntos de dados (no nosso exemplo, os três acima) que deseja combinar.
-1. Para o conjunto de dados de Informações B2B, selecione a variável `accountID` chave que será usada na tabela de pesquisa. Em seguida, selecione a chave correspondente (dimensão correspondente), também `accountID` no conjunto de dados do evento.
+1. Para o conjunto de dados de Informações B2B, selecione a chave `accountID` que será usada na tabela de pesquisa. Em seguida, selecione a chave correspondente (dimensão correspondente), também `accountID` no conjunto de dados do evento.
 1. Clique em **[!UICONTROL Próximo]**.
 1. Nomeie e descreva a conexão e configure-a de acordo com [estas instruções](/help/connections/create-connection.md).
 1. Clique em **[!UICONTROL Salvar]**.
 
-## 5. Criar uma visualização de dados a partir desta conexão
+## 5. Criar uma exibição de dados desta conexão
 
 Siga as instruções em [criar exibições de dados](/help/data-views/create-dataview.md).
 
