@@ -1,9 +1,9 @@
 ---
 title: Visão geral dos componentes
 description: Saiba quais componentes o CJA oferece e como usá-los no relatórios.
-translation-type: ht
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e3457b3ad6c991844f83c2213a4991e1e8879e97
+workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 Os componentes são recursos do Customer Journey Analytics que podem ser usados em relatórios ou complementar os recursos do relatórios. Você pode gerenciar esses componentes usando as seguintes etapas:
 
 1. Faça logon em [analytics.adobe.com](https://analytics.adobe.com) usando as credenciais da Adobe ID.
-2. Acesse [!UICONTORL Componentes] > [!UICONTROL Componentes] no menu de cabeçalho.
+2. Acesse [!UICONTROL Componentes] > [!UICONTROL Componentes] no menu de cabeçalho.
 
 Você pode gerenciar os seguintes componentes:
 
