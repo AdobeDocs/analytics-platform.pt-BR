@@ -3,23 +3,19 @@ description: As configurações de coluna permitem que você configure a formata
 title: Configurações de coluna
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: d49e07d14d1b202d9cc12f42d60083c052a1c364
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 93%
+source-wordcount: '628'
+ht-degree: 97%
 
 ---
 
 
-# Configurações de coluna
+# [!UICONTROL Configurações de coluna]
 
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+[!UICONTROL Configurações da coluna] permite configurar a formatação de colunas, algumas das quais podem ser condicionais.
 
-As configurações de coluna permitem que você configure a formatação da coluna; alguns elementos podem ser condicionais.
-
-## Configurações de coluna {#section_C5A9C13553BF4BFDAD7FACE0139AECA3}
+## Editar [!UICONTROL Configurações da coluna] {#column-settings}
 
 Para acessar [!UICONTROL Configurações de coluna], arraste uma Tabela de forma livre para o projeto e clique no ícone de engrenagem no cabeçalho da coluna.
 
@@ -28,7 +24,7 @@ Para acessar [!UICONTROL Configurações de coluna], arraste uma Tabela de forma
 É possível editar as configurações de **diversas colunas de uma só vez**. Basta selecionar várias colunas e clicar no ícone de configurações de qualquer uma dessas colunas. Todas as alterações feitas serão aplicadas a todas as colunas com as células selecionadas.
 
 | Elemento | Descrição |
-|--- |--- |
+| --- | --- |
 | Número | Determina se uma célula exibe ou oculta o valor numérico para a métrica. Por exemplo, se a métrica for Exibições de página, o valor numérico será o número de exibições de página para o item da linha. |
 | Porcentagem | Determina se uma célula exibe ou oculta o valor percentual para a métrica. Por exemplo, se a métrica for Exibições de página, o valor percentual será o número de exibições de página para o item da linha dividido pelo total de exibições de página para a coluna.  Observação: podemos apresentar percentuais maiores que 100%, para maior precisão. Também fixamos o limite superior como 1.000% para garantir que as colunas possam aumentar em largura. |
 | Anomalias | Determina se a detecção de anomalias é executada nos valores desta coluna. |
@@ -39,33 +35,30 @@ Para acessar [!UICONTROL Configurações de coluna], arraste uma Tabela de forma
 | Formatação condicional | Consulte a seção abaixo. |
 | Visualização de célula de tabela | Mostra uma visualização de como cada célula é exibida com a aplicação das opções de formatação atuais selecionadas. |
 
-
-## Formatação condicional {#section_3DD847151DA14914888A70FC4FD7BDFB}
+## Formatação condicional {#conditional-formatting}
 
 A formatação condicional aplica formatação a limites superiores, intermediários e inferiores que você pode definir. A aplicação de formatação condicional (cores, etc.) nas tabelas de forma livre também é ativada automaticamente nos detalhamentos, a menos que sejam selecionados limites “Personalizados”.
 
 ![](assets/conditional-formatting.png)
 
 | Elemento | Descrição |
-|--- |--- |
-| Formatação condicional | Aplica as seguintes cores a células, com base nos valores dos dados: <ul><li>Verde: valores altos</li><li>Amarelo: valores intermediários</li><li>Vermelho: valores baixos</li></ul><br>Substituir uma dimensão na tabela redefine os limites da formatação condicional. Substituir uma métrica recalcula os limites da coluna (na qual haja uma métrica no eixo X e uma dimensão no eixo Y). |
-| Usar limites de porcentagem | Permite usar limites superiores, medianos e inferiores com base nos valores de porcentagem para cada métrica. Isso funciona com métricas exclusivamente baseadas em porcentagem (como a Taxa de retorno), além de métricas que possuem uma contagem e uma porcentagem (como Exibições de página). |
-| Gerado automaticamente | Gera automaticamente limites de formatação condicional. O limite superior é o valor mais alto na coluna. O limite inferior é o menor valor e o ponto intermediário é a média entre os limites superior e inferior. |
-| Personalizado | Você pode atribuir os valores manualmente para os campos de limite Superior, Intermediário e Inferior para formatação condicional. Isso oferece a flexibilidade de determinar quando o valor de uma coluna se torna bom, médio ou ruim. |
-| Visualização de célula de tabela | Mostra uma visualização de como cada célula é exibida com a aplicação das opções de formatação atuais selecionadas. |
+| --- | --- |
+| Formatação condicional | Aplica as seguintes cores a células, com base nos valores dos dados: <ul><li>Verde: valores altos</li><li>Amarelo: valores intermediários</li><li>Vermelho: valores baixos</li></ul> <br> Substituir uma dimensão na tabela redefine os limites da formatação condicional. Substituir uma métrica recalcula os limites da coluna (na qual haja uma métrica no eixo X e uma dimensão no eixo Y). |
+| Usar limites de porcentagem | Alterar para que o intervalo limite se baseie em percentagens em vez de valores absolutos. Isso funciona com métricas exclusivamente baseadas em porcentagem (como a Taxa de retorno), além de métricas que possuem uma contagem e uma porcentagem (como Exibições de página). |
+| Gerado automaticamente | Calcular limites superior/médio/inferior automaticamente de acordo com os dados. O limite superior é o valor mais alto na coluna. O limite inferior é o menor valor e o ponto intermediário é a média entre os limites superior e inferior. |
+| Personalizado | Atribuir limites superior/médio/inferior manualmente. Isso oferece a flexibilidade de determinar quando o valor de uma coluna se torna bom, médio ou ruim. |
 
-## Usar modelo de atribuição não-padrão
+## Usar modelo de atribuição não-padrão {#attribution}
 
-Analysis Workspace suporta [atribuição](../../attribution/overview.md) para quase qualquer métrica.
+O Analysis Workspace aceita a [atribuição](../../attribution/overview.md) para quase qualquer métrica.
 
 1. Clique no ícone de Configurações (engrenagem) em uma coluna de Tabela de forma livre.
 
    ![Caixa de seleção Atribuição](assets/attribution-checkbox.png)
 
-2. Em **[!UICONTROL Configurações de dados]**, marque a opção **[!UICONTROL Usar modelo de atribuição não padrão]**. For more information on different attribution models, see [Attribution models](../../attribution/models.md).
+1. Em **[!UICONTROL Configurações de dados]**, marque a opção **[!UICONTROL Usar modelo de atribuição não padrão]**. Para obter mais informações sobre os diferentes modelos de atribuição, consulte [Modelos de atribuição](../../attribution/models.md).
 
    ![Selecionar modelo de atribuição](assets/attribution-select.png)
-
 
 >[!MORELIKETHIS]
 >
