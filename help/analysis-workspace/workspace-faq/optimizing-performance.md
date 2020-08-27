@@ -3,19 +3,15 @@ description: 'null'
 title: Otimizar o desempenho do Analysis Workspace
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: d49e07d14d1b202d9cc12f42d60083c052a1c364
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 98%
+source-wordcount: '1315'
+ht-degree: 85%
 
 ---
 
 
 # Otimizar o desempenho do Analysis Workspace
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Certos fatores podem influenciar o desempenho de um projeto no Analysis Workspace. É importante saber quais são os contribuidores antes de iniciar a criação de um projeto, para planejar e criar o projeto da melhor maneira. Veja abaixo uma lista de fatores que impactam o desempenho e as práticas recomendadas para a otimização do seu projeto. O desempenho do Analysis Workspace é uma das prioridades da Adobe e algo que aprimoramos a cada dia.
 
@@ -44,17 +40,15 @@ Além disso, as [classificações](https://docs.adobe.com/content/help/pt-BR/ana
 
 O intervalo de dados solicitado no decorrer do projeto influenciará o desempenho do Analysis Workspace.
 
-**Práticas recomendadas para o intervalo de datas**
+**Práticas recomendadas para intervalos de datas**
 
-Quando possível, não insira mais dados do que o necessário.
+Quando possível, não insira mais dados do que o necessário. Restrinja o calendário do painel às datas relevantes para a sua análise ou use componentes de intervalo de datas (componentes roxos) nas tabelas de forma livre. Os intervalos de datas usados em uma tabela substituem o intervalo de datas do painel. Por exemplo, você pode adicionar mês passado, semana passada e ontem às colunas da tabela para solicitar esses intervalos de dados específicos. Para mais informações sobre o uso de intervalos de datas no Analysis Workspace, assista a [este vídeo](https://www.youtube.com/watch?v=MIkT6FZ5gKk).
 
-Lembre-se de que os intervalos de data (componentes em roxo) substituem o painel de intervalo de data. Como resultado, caso esteja utilizando os intervalos de data como colunas (por exemplo, colunas de último mês, última semana e de ontem), o painel de intervalo de data não precisa abranger as colunas de intervalos de data. Pode simplesmente ser definido para ontem, porque os intervalos de data usados na tabela de forma livre substituirão o painel. Para mais informações sobre o uso de intervalos de datas no Analysis Workspace, assista a [este vídeo](https://www.youtube.com/watch?v=ybmv6EBmhn0).
-
-Com as [opções de comparação de datas](/help/components/date-ranges/time-comparison.md) você pode inserir os períodos de dados específicos que deseja comparar. Por exemplo. caso precise mostrar os dados do mês passado comparados aos do mesmo mês do ano passado, ao invés de configurar o painel para os últimos 13 meses de dados, use a opção de comparação de períodos para apresentar o desempenho de ano a ano.
+Minimize o número de comparações ano a ano usadas no projeto. Quando uma comparação ano após ano é calculada, ela analisa os 13 meses completos de dados entre os meses de juros. Isso tem o mesmo impacto que alterar o intervalo de datas do painel para durar 13 meses.
 
 ## Número de visualizações
 
-O número de visualizações de gráfico contidas em um projeto afetará a capacidade geral de resposta do Analysis Workspace.
+O número de visualizações contidas em um projeto afetará a capacidade de resposta geral do Analysis Workspace. Isso ocorre porque cada visualização, seja uma tabela ou gráfico, tem uma fonte de dados que precisa ser solicitada.
 
 **Prática recomendada para o número de visualizações**
 
@@ -67,7 +61,7 @@ O tipo de visualização (por exemplo, fallout ou tabela de forma livre) adicion
 * Intervalo de dados solicitados, como mencionado acima
 * Números de segmentos aplicados, por exemplo, segmentos usados como linhas de uma tabela de forma livre
 * Uso de segmentos intricados
-* Linhas ou colunas de itens estáticas em tabelas de forma livre
+* [Linhas ou colunas de itens estáticas em tabelas de forma livre](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.html)
 * Filtros aplicados a linhas em tabelas de forma livre
 * Número de métricas incluídas, métricas especialmente calculadas que usam segmentos
 
@@ -87,14 +81,14 @@ Não tente adicionar tudo a um só projeto e, sim, criar projetos distintos que 
 
 Caso deseje mais organização nos projetos, lembre-se de que a [vinculação direta](https://www.youtube.com/watch?v=6IOEewflG2U) ao seu projeto é uma opção. Crie um índice interno de projetos de forma que os participantes possam encontrar o que precisam mais facilmente.
 
-Caso necessite de muitos painéis em uma Workspace, reduza os painéis antes de salvar e compartilhar. Quando um projeto é carregado, o Analysis Workspace somente carregará o conteúdo dos painéis expandidos. Os painéis reduzidos não serão carregados até que o usuário os expanda. Essa abordagem auxilia de duas formas:
+Se vários painéis forem necessários em um projeto, recolha os painéis antes de salvar e compartilhar. Quando um projeto é carregado, o Analysis Workspace somente carregará o conteúdo dos painéis expandidos. Os painéis reduzidos não serão carregados até que o usuário os expanda. Essa abordagem auxilia de duas formas:
 
 * Os painéis reduzidos são salvos em um tempo de carregamento geral de um projeto
 * Os painéis reduzidos são uma boa forma de organizar seus projetos de maneira lógica para o consumidor do relatório
 
 ## Tamanho do conjunto de relatórios
 
-O tamanho do conjunto de relatórios pode parecer um fator determinante, mas na verdade ele representa um pequeno papel no desempenho do projeto, devido ao processamento de dados da Adobe.
+O tamanho do conjunto de relatórios pode parecer um fator determinante, mas na verdade ele representa um pequeno papel no desempenho do projeto, devido ao processamento de dados da Adobe.  Pode haver exceções a esta regra; consulte sua equipe de implementação ou um especialista em Adobe para determinar se há melhorias de implementação que podem ser feitas para melhorar a experiência geral no Adobe Analytics.
 
 ## Número de usuários simultâneos do Analysis Workspace
 
