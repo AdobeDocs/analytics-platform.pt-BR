@@ -1,11 +1,11 @@
 ---
 title: Perguntas frequentes sobre Customer Journey Analytics
 description: Customer Journey Analytics - Perguntas frequentes.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 297ed03ff59cc8d719a6bf0984e82597e8d33392
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '806'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -15,18 +15,18 @@ ht-degree: 69%
 | Pergunta | Resposta |
 | --- | --- |
 | **Pré-requisitos** |  |
-| É necessário o Gráfico de dispositivos ou o Device Coop para [!UICONTROL Customer Journey Analytics]? | Não, o Gráfico de dispositivos privados ou o Device Coop não são necessários para [!UICONTROL Customer Journey Analytics]. Na verdade, eles ainda não são compatíveis. |
-| Preciso de uma ID de Experience Cloud (ECID) para [!UICONTROL Customer Journey Analytics]? | Não, [!UICONTROL Customer Journey Analytics] suporta qualquer ID em um conjunto de dados, seja ECID ou qualquer outra ID escolhida. |
-| E se eu precisar ETL (Extrair, Transformar, Carregar) meus dados antes do Customer Journey Analytics? | Atualmente, você precisa trabalhar com um parceiro de ETL (Unifi ou Informatica) se for necessário transformar os dados antes de colocá-los na AEP. Se você precisar de ETL depois que os dados já tiverem sido assimilados, os Serviços de Query AEP fornecem algumas opções limitadas. |
+| O Device Graph ou o Device Coop é necessário para o [!UICONTROL Customer Journey Analytics]? | Não, o Device Graph ou o Device Coop não é necessário para o [!UICONTROL Customer Journey Analytics]. Na verdade, eles ainda não são compatíveis. |
+| A Experience Cloud ID (ECID) é necessária para o [!UICONTROL Customer Journey Analytics]? | Não, o [!UICONTROL Customer Journey Analytics] é compatível com qualquer ID em um conjunto de dados, seja ECID ou outra ID escolhida. |
+| E se for necessário extrair, transformar, carregar (ETL) meus dados antes do Customer Journey Analytics? | Atualmente, você precisa trabalhar com um parceiro de ETL (Unifi ou Informatica) se for necessário transformar os dados antes de colocá-los na AEP. Se ETL for necessário depois que os dados já tiverem sido assimilados, os Serviços de consulta da AEP fornecem algumas opções limitadas. |
 | **Costura** |  |
-| Can [!UICONTROL Customer Journey Analytics] &quot;costura&quot; entre dispositivos ou entre conjuntos de dados? | Não. [!UICONTROL O Customer Journey Analytics é um sistema de análise &quot;traga sua própria ID&quot;. ] Os planos para uma boa abordagem de costura estão em andamento. |
+| O [!UICONTROL Customer Journey Analytics] pode &quot;costurar&quot; todos os dispositivos ou conjuntos de dados? | Não. O [!UICONTROL Customer Journey Analytics] é um sistema de análise &quot;traga sua própria ID&quot;. Os planos para uma boa abordagem de costura estão em andamento. |
 | A costura de comportamento anônimo para comportamento autenticado é compatível? | Não, ainda não. |
-| **[!UICONTROL Obtenção de dados para o Customer Journey Analytics]** |  |
-| É possível combinar dados de diferentes caixas de proteção de Experience Platform em uma conexão CJA? | Não, você não pode acessar dados em caixas de proteção. É possível combinar somente conjuntos de dados localizados na mesma caixa de proteção. [Saiba mais...](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
-| Qual é a latência esperada para [!UICONTROL Customer Journey Analytics] on [!UICONTROL Experience Platform]? | <ul><li>Em carga normal: &lt; 60 minutos <br>**Observação:** no caso de um volume de dados excepcionalmente elevado por meio do pipeline, poderá demorar até 24 horas.</li><li>Dados de preenchimento retroativo (até 10 bilhões de eventos): &lt; 4 semanas.</li></ul> |
-| Como faço para conectar dados online aos dados offline em [!UICONTROL Customer Journey Analytics]? | [!UICONTROL O Customer Journey Analytics é um sistema de análise &quot;traga sua própria ID&quot;. ] Desde que a ID da pessoa corresponda entre conjuntos de dados, [!UICONTROL Customer Journey Analytics] pode conectar segmentos, atribuição, fluxo, fallout etc. em todos os conjuntos de dados. |
-| Como posso trazer meus dados offline para o Customer Journey Analytics? | Primeiro, você deve trazer todos os dados para o Experience Platform antes de usá-los com o Customer Journey Analytics. A equipe de Experience Platform pode ajudar a fornecer recomendações ou consultoria para você, se necessário. |
-| Como posso obter dados do Analytics no Customer Journey Analytics? | Os dados do Analytics podem ser conectados ao Experience Platform por meio da variável [Conector de dados do Analytics](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/adobe-applications/analytics.html). A maioria dos campos do Analytics é trazida para o formato XDM, mas outros campos ainda não estão disponíveis (como dimensões de Canais de marketing). |
+| **Obtenção de dados para o [!UICONTROL Customer Journey Analytics]** |  |
+| É possível combinar dados de diferentes sandboxes da Experience Platform em uma conexão do CJA? | Não, não é possível acessar dados em sandboxes. É possível combinar somente conjuntos de dados localizados na mesma sandbox. [Saiba mais...](https://docs.adobe.com/content/help/pt-BR/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
+| Qual é a latência esperada para o [!UICONTROL Customer Journey Analytics] na [!UICONTROL Experience Platform]? | <ul><li>Em carga normal: &lt; 60 minutos <br>**Observação:** no caso de um volume de dados excepcionalmente elevado por meio do pipeline, poderá demorar até 24 horas.</li><li>Dados de preenchimento retroativo (até 10 bilhões de eventos): &lt; 4 semanas.</li></ul> |
+| Como conectar os dados online aos dados offline no [!UICONTROL Customer Journey Analytics]? | O [!UICONTROL Customer Journey Analytics] é um sistema de análise &quot;traga sua própria ID&quot;. Contanto que a ID da pessoa corresponda entre os conjuntos de dados, o [!UICONTROL Customer Journey Analytics] pode conectar segmentos, atribuição, fluxo, fallout, etc. em todos os conjuntos de dados. |
+| Como posso trazer meus dados offline para o Customer Journey Analytics? | Você deve primeiro trazer os dados para a Experience Platform antes de usá-los com o Customer Journey Analytics. A equipe de integração de dados da Experience Platform pode ajudar a fornecer recomendações ou consultoria a você, se necessário. |
+| Como posso obter dados do Analytics no Customer Journey Analytics? | Os dados do Analytics podem ser conectados à Experience Platform por meio do [Conector de dados do Analytics](https://docs.adobe.com/content/help/pt-BR/experience-platform/sources/connectors/adobe-applications/analytics.html). A maioria dos campos do Analytics é trazida para o formato XDM, mas outros campos ainda não estão disponíveis (como dimensões de Canais de marketing). |
 | Qual é o tempo de montagem dos elementos do conjunto de dados em uma exibição de dados? | Algumas horas para começar e alguns dias para preencher retroativamente os últimos 13 meses de dados. |
 | É necessário trazer os dados de PII para estabelecer as conexões entre os dados? | Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que não seja PII. |
 | **Componentes tradicionais do Analytics** |  |
