@@ -1,18 +1,18 @@
 ---
-title: Usar matrizes de objetos
+title: Uso de arrays de objetos
 description: Entenda como o CJA cria relatórios sobre hierarquias de dados.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Usar matrizes de objetos
+# Uso de arrays de objetos
 
-Alguns schemas da plataforma podem ter arrays de objetos. Um dos exemplos mais comuns seria um carrinho de compras, que contém vários produtos. Cada produto tem um nome, SKU, categoria, preço, quantidade e qualquer outra dimensão que você quiser rastrear. Todas essas facetas têm requisitos separados, mas todos devem se encaixar na mesma ocorrência.
+Alguns esquemas da plataforma podem ter arrays de objetos. Um dos exemplos mais comuns seria um carrinho de compras, que contém vários produtos. Cada produto tem um nome, SKU, categoria, preço, quantidade e qualquer outra dimensão que você quiser rastrear. Todas essas facetas têm requisitos separados, mas todos devem se encaixar na mesma ocorrência.
 
 Em versões anteriores do Adobe Analytics, esse recurso era realizado usando a variável `products`. Era uma string concatenada separada por ponto-e-vírgula (`;`) para separar facetas de um produto, enquanto vírgulas (`,`) delineavam produtos. Era a única variável com suporte limitado a &quot;arrays de objetos&quot;. Variáveis multivalor, como variáveis de listas, podem oferecer suporte ao equivalente a arrays, mas não a &quot;arrays de objetos&quot;. O CJA amplia esse conceito ao oferecer suporte arbitrariamente a hierarquias profundas em uma única linha de dados, um recurso indisponível em qualquer versão anterior do Adobe Analytics.
 
@@ -62,7 +62,7 @@ A seguinte ocorrência é um objeto JSON que representa uma compra feita por um 
 }
 ```
 
-Ao criar uma visualização de dados, as seguintes dimensões e métricas estão disponíveis (com base no schema):
+Ao criar uma visualização de dados, as seguintes dimensões e métricas estão disponíveis (com base no esquema):
 
 * **Dimensões:**
    * ID
