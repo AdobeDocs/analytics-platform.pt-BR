@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 4%
+ht-degree: 10%
 
 ---
 
@@ -14,26 +14,26 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Você pode criar um intervalo de datas personalizado usando um dos dois métodos a seguir:
 
-* Diretamente em um projeto de espaço de trabalho clicando no botão &#39;`+`&#39; ao lado da lista dos componentes do intervalo de datas à esquerda
+* Diretamente em um projeto de espaço de trabalho, clicando em`+`botão &#39; ao lado da lista dos componentes do intervalo de datas à esquerda
 * No gerenciador de intervalo de datas
 
 Para criar um intervalo de datas no gerenciador de intervalo de datas:
 
-1. Log in to [analytics.adobe.com](https://analytics.adobe.com) using your AdobeID credentials.
-1. Navegue até [!UICONTROL Componentes] > Intervalos [!UICONTROL de datas].
+1. Fazer logon em [analytics.adobe.com](https://analytics.adobe.com) usando suas credenciais da AdobeID.
+1. Navegue até [!UICONTROL Componentes] > [!UICONTROL Intervalos de datas].
 1. Clique no botão [!UICONTROL Adicionar] para abrir a janela modal que cria um intervalo de datas.
 
 ## Criar uma janela modal de intervalo de datas
 
 A janela modal tem quatro campos que podem ser editados:
 
-* **Intervalo** de datas: O intervalo de datas desejado para este componente.
+* **Intervalo de datas**: O intervalo de datas desejado para este componente.
 * **Título**: O nome que deseja para este componente. O título é usado em projetos de espaço de trabalho.
-* **Descrição**: A descrição que deseja para este componente. A descrição é vista ao clicar no ícone ![i](../assets/i.png) .
+* **Descrição**: A descrição que deseja para este componente. A descrição é vista ao clicar no botão ![i](../assets/i.png) ícone.
 * **Tags**: Use tags para organizar seus intervalos de datas. Um intervalo de datas pode pertencer a várias tags.
 
 ## Selecionar um intervalo de datas
@@ -41,8 +41,8 @@ A janela modal tem quatro campos que podem ser editados:
 Ao clicar no intervalo de datas na janela modal, você tem várias opções:
 
 * **Calendário**: Selecione o start e a data de término.
-* **Usar datas** acumuladas: Marque esta caixa se desejar que o intervalo de datas mude com o passar do tempo. Não marque esta caixa se quiser que o intervalo de datas permaneça estático.
-* **Selecionar predefinição**: Use essa lista suspensa se desejar um intervalo de datas personalizado com base em um intervalo que o Adobe oferta usa por padrão. Ao selecionar uma predefinição, você pode personalizar ainda mais o intervalo de datas para atender às suas necessidades. Isso não afeta a predefinição que o Adobe oferta.
+* **Usar datas do acumulado**: Marque esta caixa se desejar que o intervalo de datas mude com o passar do tempo. Não marque esta caixa se quiser que o intervalo de datas permaneça estático.
+* **Selecionar predefinição**: Use essa lista suspensa se desejar um intervalo de datas personalizado com base em um intervalo que Adobe oferta por padrão. Ao selecionar uma predefinição, você pode personalizar ainda mais o intervalo de datas para atender às suas necessidades. Isso não afeta a predefinição que o Adobe oferta.
 
 ## Intervalos de datas em andamento
 
