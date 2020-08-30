@@ -1,9 +1,9 @@
 ---
 title: Criar uma exibição de dados
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics (CJA).
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 100%
 
