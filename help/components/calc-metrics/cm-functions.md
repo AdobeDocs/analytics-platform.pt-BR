@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas.
 
@@ -50,7 +50,7 @@ MAXV(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | Uma métrica que você gostaria de avaliar. |
+| *métrica* | Uma métrica que você gostaria de avaliar. |
 
 ## Mínimo da coluna
 
@@ -62,7 +62,7 @@ MINV(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | Uma métrica que você gostaria de avaliar. |
+| *métrica* | Uma métrica que você gostaria de avaliar. |
 
 ## Soma da coluna
 
@@ -74,7 +74,7 @@ SUM(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter o valor total ou soma. |
+| *métrica* | A métrica para a qual você deseja obter o valor total ou soma. |
 
 ## Contagem (Tabela)
 
@@ -86,7 +86,7 @@ COUNT(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica que deseja contar. |
+| *métrica* | A métrica que deseja contar. |
 
 ## Expoente (Linha)
 
@@ -98,7 +98,7 @@ EXP(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O exponente aplicado à base *e*. |
+| *métrica* | O exponente aplicado à base *e*. |
 
 ## Exponenciação
 
@@ -118,7 +118,7 @@ MEAN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a média. |
+| *métrica* | A métrica para a qual você deseja obter a média. |
 
 ## Mediana (Tabela)
 
@@ -130,7 +130,7 @@ MEDIAN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a mediana. |
+| *métrica* | A métrica para a qual você deseja obter a mediana. |
 
 ## Módulo
 
@@ -173,7 +173,7 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>métrica</i> </td> 
    <td colname="col2"> A coluna de métrica que define a posição relativa. </td> 
   </tr> 
   <tr> 
@@ -200,7 +200,7 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>métrica</i> </td> 
    <td colname="col2"> A métrica para a qual você deseja obter o valor do quartil. </td> 
   </tr> 
   <tr> 
@@ -304,7 +304,7 @@ VARIANCE(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a variação. |
+| *métrica* | A métrica para a qual você deseja obter a variação. |
 
 Para calcular uma variação, considere uma coluna inteira de números. Nessa lista de números, calcule primeiro a média. Após obter a média, faça o seguinte em cada entrada:
 
