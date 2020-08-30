@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 87%
+ht-degree: 93%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Veja a seguir uma lista de limitações conhecidas do Analysis Workspace e seus componentes relacionados:
 
@@ -39,7 +39,7 @@ Veja a seguir uma lista de limitações conhecidas do Analysis Workspace e seus 
 ## Componentes > Filtros
 
 * Determinadas métricas e dimensões não são segmentáveis, como [!UICONTROL Ocorrências], [!UICONTROL Visitantes únicos], etc.
-* Certain components and operators are unavailable if a filter is created from Workspace (as opposed to being created from [!UICONTROL Components > Filters]). Por exemplo, Endereço IP.
+* Determinados componentes e operadores não estarão disponíveis se um filtro for criado a partir do Workspace (em vez de ser criado a partir de [!UICONTROL Componentes > Filtros]). Por exemplo, Endereço IP.
 
 ## Componentes > Métricas calculadas
 
