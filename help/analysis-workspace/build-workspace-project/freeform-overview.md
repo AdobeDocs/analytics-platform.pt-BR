@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**
 
@@ -56,7 +56,7 @@ A página da lista de projeto do Workspace contém as informações a seguir:
 
 | Configuração | Descrição |
 |---|---|
-| Projeto   Nome | O nome fornecido ao projeto. Você pode clicar duas vezes no nome para editá-lo. |
+| Projeto Nome | O nome fornecido ao projeto. Você pode clicar duas vezes no nome para editá-lo. |
 | Criado por | Nome do proprietário do projeto. |
 | Última modificação | Data da última modificação do projeto. |
 | Tags | Lista qualquer tag aplicada a um projeto para classificar com mais facilidade. Além disso, também é possível adicionar tags a projetos ao salvá-los. Exiba as tags de um projeto na Página inicial do Workspace na coluna [!UICONTROL Tags]. |
@@ -79,7 +79,7 @@ O submenu contém as seguintes opções.
 
 | Projeto | Editar | Inserir | Componentes | Compartilhar | Ajuda |
 |---|---|---|---|---|---|
-| Novo | Recurso Desfazer | Novo painel | Novo segmento | Compartilhar projeto | Vídeos |
+| Novo | Desfazer | Novo painel | Novo segmento | Compartilhar projeto | Vídeos |
 | Abrir | Limpar | Novo painel de forma livre | Nova métrica | Obter link do projeto* | Teclas de atalho |
 | Salvar | Limpar tudo | Novo painel de Comparação de segmentos | Novo intervalo de datas | Enviar arquivo agora* | Fórum de ajuda |
 | Salvar como* |  | Nova tabela de forma livre | Novo alerta | Enviar arquivo agendado* |  |
