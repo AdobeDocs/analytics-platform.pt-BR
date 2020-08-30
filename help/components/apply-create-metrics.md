@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Há duas formas de utilizar as métricas no Analysis Workspace.
 
 >[!NOTE]
 >
->Embora seja aparentemente simples, o uso das métricas é potente. É possível adicionar métricas a um relatório arrastando a métrica apropriada para a seção de métricas de uma tabela. Também é possível detalhar dimensões por métricas, fornecendo controle detalhado sobre a exibição da tabela. Além disso, você pode inserir uma métrica como uma dimensão e uma dimensão como uma métrica para criar um relatório de horas extras. Teste os vários componentes e veja o que você pode fazer. As possibilidades são infinitas.
+>Embora seja aparentemente simples, o uso das métricas é eficiente. É possível adicionar métricas a um relatório arrastando a métrica apropriada para a seção de métricas de uma tabela. Também é possível detalhar dimensões por métricas, fornecendo controle detalhado sobre a exibição da tabela. Além disso, você pode inserir uma métrica como uma dimensão e uma dimensão como uma métrica para criar um relatório de horas extras. Teste os vários componentes e veja o que você pode fazer. As possibilidades são infinitas.
 
 Ou clique em **[!UICONTROL Componentes]** > **[!UICONTROL Nova métrica]**. Você será redirecionado para o [Criador de métricas calculadas](https://docs.adobe.com/content/help/pt-BR/analytics/components/calculated-metrics/cm-overview.html), que permite criar métricas personalizadas a partir das existentes.
 
@@ -37,4 +37,4 @@ Se você deseja comparar um modelo com outro de maneira fácil e rápida, clique
 
 ![Comparar atribuição](assets/compare-attribution.png)
 
-Esse atalho permite que você compare rápida e facilmente um modelo de atribuição a outro sem arrastar uma métrica e configurá-la duas vezes.
+Esse atalho permite comparar de forma rápida e fácil um modelo de atribuição com outro, sem arrastar uma métrica e configurá-la duas vezes.
