@@ -1,9 +1,9 @@
 ---
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 59b949cf67c26226f4d337c566641f68e76b41ec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 100%
 
