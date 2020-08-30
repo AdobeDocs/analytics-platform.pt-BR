@@ -22,15 +22,15 @@ Se qualquer servidor individual que estiver processando um subconjunto de dados 
 
 ## Diferenças entre &#39;Longa Cauda&#39; e &#39;Baixo Tráfego&#39;
 
-Nas versões anteriores do Adobe Analytics, uma arquitetura de processamento diferente era usada. Os dados eram processados no momento em que eram coletados. Os itens de dimensão foram colocados em &#39;Baixo tráfego&#39; depois que uma dimensão alcançou valores exclusivos de 500K e aplicou uma filtragem mais agressiva em valores exclusivos de 1M. A contagem de valores únicos foi redefinida no início de cada mês do calendário. Os dados processados eram permanentes; não havia como obter os dados existentes do &quot;tráfego baixo&quot;.
+Nas versões anteriores do Adobe Analytics, uma arquitetura de processamento diferente era usada. Os dados eram processados no momento em que eram coletados. Os itens de Dimension foram colocados em &#39;Baixo tráfego&#39; depois que uma dimensão alcançou valores exclusivos de 500K e aplicou uma filtragem mais agressiva em valores exclusivos de 1M. A contagem de valores únicos foi redefinida no início de cada mês do calendário. Os dados processados eram permanentes; não havia como obter os dados existentes do &quot;tráfego baixo&quot;.
 
 No CJA, os itens de dimensão são colocados somente em &#39;Longa Cauda&#39; se um servidor de processamento individual contiver mais de 500K valores únicos. Os dados processados não são permanentes, o que significa que você pode reduzir o item de dimensão &#39;Longa Cauda&#39; modificando seu relatório.
 
 ## Reduzir o item de dimensão &quot;Longa Cauda&quot;
 
-Se você quiser reduzir o item de dimensão &quot;Longa Cauda&quot;, a Adobe recomenda qualquer uma das seguintes opções:
+Se você quiser reduzir o item de dimensão &quot;Longa Cauda&quot;, o Adobe recomenda qualquer uma das seguintes opções:
 
 * Use um segmento. Os segmentos se aplicam no momento em que cada servidor processa um subconjunto de dados. A limitação do número de valores únicos que eles retornam reduz o item de dimensão &#39;Longa Cauda&#39;.
 * Use uma dimensão de conjunto de dados de pesquisa. As dimensões do conjunto de dados de pesquisa combinam itens de dimensão do conjunto de dados de evento, que limitam o número de valores únicos retornados.
 
-Em geral, é difícil consumir um relatório que contenha mais de 500 mil itens de dimensão exclusivos. Se você aplicar um segmento ou uma dimensão de conjunto de dados de pesquisa, poderá reduzir a presença de &quot;Longa Cauda&quot; enquanto facilita o consumo do relatório. A Adobe planeja melhorar essa experiência com o desenvolvimento do CJA.
+Em geral, é difícil consumir um relatório que contenha mais de 500 mil itens de dimensão exclusivos. Se você aplicar um segmento ou uma dimensão de conjunto de dados de pesquisa, poderá reduzir a presença de &quot;Longa Cauda&quot; enquanto facilita o consumo do relatório. A Adobe planeja melhorar essa experiência à medida que a CJA for desenvolvendo mais.
