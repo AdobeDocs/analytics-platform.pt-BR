@@ -1,9 +1,9 @@
 ---
 title: Configurar exibições de dados e atribuição
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1523'
 ht-degree: 100%
 
