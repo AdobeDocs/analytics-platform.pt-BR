@@ -1,16 +1,16 @@
 ---
-title: Visão geral da Atribuição
+title: Visão geral da atribuição
 description: O conceito de atribuição de crédito de um evento bem-sucedido a vários itens de dimensão.
 translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 56%
+ht-degree: 93%
 
 ---
 
 
-# Visão geral da Atribuição
+# Visão geral da atribuição
 
 >[!NOTE]
 >
@@ -21,9 +21,9 @@ A atribuição oferece aos analistas a capacidade de personalizar como os itens 
 1. Um visitante do site clica em um link de pesquisa pago para uma de suas páginas de produtos. O usuário adiciona o produto ao carrinho, mas não o compra.
 2. No dia seguinte, veja uma publicação de mídia social de um de seus amigos, clique no link e conclua a compra.
 
-Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquisa paga. Em outros relatórios, você pode desejar que a ordem seja atribuída ao Social. A atribuição permite controlar esse aspecto do relatórios. Ele está disponível para todas as organizações no Adobe Analytics Ultimate, Prime, Select e Foundation. Se você não tiver certeza de qual tipo de contrato tem com a Adobe, entre em contato com o Gerente de conta de sua organização.
+Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquisa paga. Em outros relatórios, você pode desejar que a ordem seja atribuída ao Social. A atribuição permite controlar esse aspecto dos relatórios. Ele está disponível para todas as organizações no Adobe Analytics Ultimate, Prime, Select e Foundation. Se você não tiver certeza de qual tipo de contrato tem com a Adobe, entre em contato com o Gerente de conta da sua organização.
 
-## Valor do QI de Atribuição
+## Valor do Attribution IQ
 
 A jornada do cliente não é linear e é muitas vezes imprevisível. Cada cliente atua no seu ritmo e com frequência voltam, param, reiniciam ou adotam outros comportamentos não lineares. Essas ações orgânicas dificultam a identificação do impacto dos esforços de marketing na jornada do cliente. Também dificultam os esforços para unir vários canais de dados.
 
@@ -44,7 +44,7 @@ O Adobe Analytics aprimora a atribuição ao permitir:
 
 O Attribution IQ inclui os seguintes recursos:
 
-* [Painel](../c-panels/attribution.md)de atribuição: Pegue qualquer dimensão e métrica e compare-a rapidamente com diferentes modelos de atribuição.
-* [Aplicar atribuição a uma métrica](../build-workspace-project/column-row-settings/column-settings.md): Use uma atribuição não padrão em qualquer métrica em um projeto.
-* [Aplicar atribuição a um detalhamento](/help/components/dimensions/t-breakdown-fa.md): Use uma atribuição não padrão em um detalhamento.
-* [Comparar modelos](/help/components/apply-create-metrics.md)de atribuição: Veja rapidamente como os diferentes modelos de atribuição são comparados para qualquer métrica.
+* [Painel de atribuição](../c-panels/attribution.md): pegue qualquer dimensão e métrica e compare-a rapidamente com diferentes modelos de atribuição.
+* [Aplicar atribuição a uma métrica](../build-workspace-project/column-row-settings/column-settings.md): use uma atribuição não padrão em qualquer métrica em um projeto.
+* [Aplicar atribuição a um detalhamento](/help/components/dimensions/t-breakdown-fa.md): use uma atribuição não padrão em um detalhamento.
+* [Comparar modelos de atribuição](/help/components/apply-create-metrics.md): veja rapidamente como os diferentes modelos de atribuição são comparados para qualquer métrica.
