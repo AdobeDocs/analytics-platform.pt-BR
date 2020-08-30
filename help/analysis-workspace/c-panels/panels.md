@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '507'
-ht-degree: 80%
+ht-degree: 91%
 
 ---
 
@@ -14,20 +14,20 @@ ht-degree: 80%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
-Um painel é uma coleção de tabelas e visualizações. Você pode acessar painéis usando o ícone superior esquerdo no Workspace. Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos de tempo, unidades comerciais, geografia etc. Estes quatro tipos de painéis estão disponíveis no Analysis Workspace para Customer Journey Analytics:
+Um painel é uma coleção de tabelas e visualizações. Você pode acessar painéis usando o ícone superior esquerdo no Workspace. Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos de tempo, unidades comerciais, geografia etc. Estes quatro tipos de painéis estão disponíveis no Analysis Workspace para o Customer Journey Analytics:
 
 * [Painel em branco](blank-panel.md)
 * [Painel do Quick Insights](quickinsight.md)
 * [Painel de atribuição](attribution.md)
 * [Painel de forma livre](freeform-panel.md)
 
-Insights rápidos, painéis em branco e de forma livre são ótimos locais para start de sua análise, enquanto o painel QI de atribuição se presta a análises mais avançadas. Um `"+"` botão está disponível em projetos para que você possa adicionar painéis em branco a qualquer momento.
+Insights rápidos, painéis em branco e de forma livre são ótimos locais para start de sua análise, enquanto o painel Attribution IQ se presta a análises mais avançadas. Um botão `"+"` está disponível nos projetos para que você possa adicionar painéis em branco a qualquer momento.
 
-The default starting panel is the Freeform panel, but you can make the [blank panel](/help/analysis-workspace/c-panels/blank-panel.md) your default as well.
+O painel inicial padrão é o Painel de forma livre, mas também é possível definir o [Painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) como o padrão.
 
-## filtros suspensos em painéis
+## Filtros suspensos em painéis
 
 A área de soltar do painel agora tem recursos suspensos de filtragem. Esses filtros permitem interagir com os dados do projeto de forma controlada para fazer análises mais detalhadas, simplificar seus projetos e/ou compartilhar insights com outras pessoas.
 
