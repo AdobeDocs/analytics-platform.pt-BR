@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '2949'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Para acessar essas funções, selecione **[!UICONTROL Mostrar avançadas]** na lista suspensa **[!UICONTROL Funções]**.
 
@@ -32,11 +32,11 @@ Por outro lado, se você possuir duas métricas de interesse, pode não ser corr
 
 ## E
 
-Retorna o valor do seu argumento. Use NÃO para garantir que um valor não seja igual a um determinado valor.
+Retorna o valor do seu argumento. Use NOT para garantir que um valor não seja igual a um determinado valor.
 
 >[!NOTE]
 >
->0 (zero) significa Falso, e qualquer outro valor é True.
+>0 (zero) significa False, e qualquer outro valor é True.
 
 ```
 AND(logical_test1,[logical_test2],...)
@@ -44,7 +44,7 @@ AND(logical_test1,[logical_test2],...)
 
 | Argumento | Descrição |
 |---|---|
-| *logical_test1* | Obrigatório. Qualquer valor ou expressão que possa ser avaliado como VERDADEIRO ou FALSO. |
+| *logical_test1* | Obrigatório. Qualquer valor ou expressão que possa ser avaliado como TRUE ou FALSE. |
 | *logical_test2* | Opcional. Condições adicionais que você deseja avaliar como VERDADEIRO ou FALSO. |
 
 ## Contagem distinta aproximada (dimensão)
@@ -103,7 +103,7 @@ ASIN(metric)
 
 | Argumento |  |
 |---|---|
-| *metric* | O cosseno do ângulo que você deseja de -1 a 1. |
+| *métrica* | O cosseno do ângulo que você deseja de -1 a 1. |
 
 ## Arco tangente (Linha)
 
@@ -115,7 +115,7 @@ ATAN(metric)
 
 | Argumento |  |
 |---|---|
-| *metric* | O cosseno do ângulo que você deseja de -1 a 1. |
+| *métrica* | O cosseno do ângulo que você deseja de -1 a 1. |
 
 ## Regressão exponencial: valor previsto de Y (Linha)
 
@@ -165,7 +165,7 @@ CEILING(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica que deseja arredondar. |
+| *métrica* | A métrica que deseja arredondar. |
 
 ## Cosseno (Linha)
 
@@ -177,7 +177,7 @@ COS(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja obter o cosseno. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja obter o cosseno. |
 
 ## Raiz cúbica
 
@@ -189,7 +189,7 @@ CBRT(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a raiz cúbica. |
+| *métrica* | A métrica para a qual você deseja obter a raiz cúbica. |
 
 ## Cumulativo
 
@@ -273,7 +273,7 @@ FLOOR(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica que deseja arredondar. |
+| *métrica* | A métrica que deseja arredondar. |
 
 ## Maior que
 
@@ -293,7 +293,7 @@ COSH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja descobrir o cosseno hiperbólico. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir o cosseno hiperbólico. |
 
 ## Seno hiperbólico (Linha)
 
@@ -305,7 +305,7 @@ SINH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja descobrir o seno hiperbólico. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir o seno hiperbólico. |
 
 ## Tangente hiperbólica (Linha)
 
@@ -317,11 +317,11 @@ TANH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja descobrir a tangente hiperbólica. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir a tangente hiperbólica. |
 
 ## Se (Linha)
 
-A função SE retorna um valor se uma condição especificada for considerada VERDADEIRO, e outro valor se a condição for considerada FALSO.
+A função IF retorna um valor se uma condição especificada for considerada TRUE, e outro valor se a condição for considerada FALSE.
 
 ```
 IF(logical_test, [value_if_true], [value_if_false])
@@ -329,9 +329,9 @@ IF(logical_test, [value_if_true], [value_if_false])
 
 | Argumento | Descrição |
 |---|---|
-| *logical_test* | Obrigatório. Qualquer valor ou expressão que possa ser avaliado como VERDADEIRO ou FALSO. |
-| *[value_if_true]* | O valor que você deseja retornar se o argumento *logical_test* for considerado VERDADEIRO. (Caso não tenha sido incluído, o padrão para este argumento é 0.) |
-| *[value_if_false]* | O valor que você deseja retornar se o argumento *logical_test* for considerado FALSO. (Caso não tenha sido incluído, o padrão para este argumento é 0.) |
+| *logical_test* | Obrigatório. Qualquer valor ou expressão que possa ser avaliado como TRUE ou FALSE. |
+| *[value_if_true]* | O valor que você deseja retornar se o argumento *logical_test* for considerado TRUE. (Caso não tenha sido incluído, o padrão para este argumento é 0.) |
+| *[value_if_false]* | O valor que você deseja retornar se o argumento *logical_test* for considerado FALSE. (Caso não tenha sido incluído, o padrão para este argumento é 0.) |
 
 ## Menor que
 
@@ -367,7 +367,7 @@ LOG10(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O número real positivo para o qual você deseja obter o logaritmo de base 10. |
+| *métrica* | O número real positivo para o qual você deseja obter o logaritmo de base 10. |
 
 ## Regressão logarítmica: coeficiente de correlação (Tabela)
 
@@ -384,7 +384,7 @@ CORREL.LOG(metric_X,metric_Y)
 
 ## Regressão logarítmica: intercepto (Tabela)
 
-Retorna o intercepto *b* como a regressão dos quadrados mínimos entre duas colunas de métrica (*metric_X* e *metric_Y*) para a equação de regressão [!DNL Y = a ln(X) + b]. É calculada usando a equação de INTERCEPTO.
+Retorna o intercepto *b* como a regressão dos quadrados mínimos entre duas colunas de métrica (*metric_X* e *metric_Y*) para a equação de regressão [!DNL Y = a ln(X) + b]. É calculada usando a equação de INTERCEPT.
 
 ```
 INTERCEPT.LOG(metric_X, metric_Y)
@@ -397,7 +397,7 @@ INTERCEPT.LOG(metric_X, metric_Y)
 
 ## Regressão logarítmica: valor previsto de Y (Linha)
 
-Calcula os valores previstos de [!DNL y] (metric_Y), tendo em conta os valores de [!DNL x] conhecidos (metric_X) e usando o método dos quadrados mínimos para calcular a linha de melhor ajuste, com base em [!DNL Y = a ln(X) + b]. É calculada usando a equação de ESTIMATIVA.
+Calcula os valores previstos de [!DNL y] (metric_Y), tendo em conta os valores de [!DNL x] conhecidos (metric_X) e usando o método dos quadrados mínimos para calcular a linha de melhor ajuste, com base em [!DNL Y = a ln(X) + b]. É calculada usando a equação de ESTIMATE.
 
 Em análises de regressão, esta função calcula os valores previstos de [!DNL y] (*metric_Y*), conhecidos os valores de [!DNL x] (*metric_X*) e usando o logaritmo para calcular a linha de melhor ajuste para a equação de regressão [!DNL Y = a ln(X) + b]. O valor de [!DNL a] corresponde a cada valor de x, e [!DNL b] refere-se a um valor constante.
 
@@ -412,7 +412,7 @@ ESTIMATE.LOG(metric_X, metric_Y)
 
 ## Regressão logarítmica: inclinação (Tabela)
 
-Retorna a inclinação *a* entre duas colunas de métrica (*metric_X* e *metric_Y*) para a equação de regressão [!DNL Y = a ln(X) + b]. É calculada usando a equação de INCLINAÇÃO.
+Retorna a inclinação *a* entre duas colunas de métrica (*metric_X* e *metric_Y*) para a equação de regressão [!DNL Y = a ln(X) + b]. É calculada usando a equação de SLOPE.
 
 ```
 SLOPE.LOG(metric_A, metric_B)
@@ -433,7 +433,7 @@ LN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O número real positivo para o qual você deseja obter o logaritmo natural. |
+| *métrica* | O número real positivo para o qual você deseja obter o logaritmo natural. |
 
 ## NÃO
 
@@ -445,9 +445,9 @@ NOT(logical)
 
 | Argumento | Descrição |
 |---|---|
-| *logical* | Obrigatório. Um valor ou expressão que pode ser avaliado como VERDADEIRO ou FALSO. |
+| *logical* | Obrigatório. Um valor ou expressão que pode ser avaliado como TRUE ou FALSE. |
 
-A utilização do NÃO exige conhecer se as expressões (&lt;, >, =, &lt;> etc.) retornam os valores 0 ou 1.
+A utilização do NOT exige conhecer se as expressões (&lt;, >, =, &lt;> etc.) retornam os valores 0 ou 1.
 
 ## Diferente de
 
@@ -455,11 +455,11 @@ Retorna todos os itens que não contêm a correspondência exata do valor inseri
 
 ## Ou (Linha)
 
-Retorna TRUE se qualquer argumento for VERDADEIRO, ou FALSE se todos os argumentos forem FALSOS.
+Retorna TRUE se qualquer argumento for TRUE, ou FALSE se todos os argumentos forem FALSE.
 
 >[!NOTE]
 >
->0 (zero) significa Falso, e qualquer outro valor é True.
+>0 (zero) significa False, e qualquer outro valor é True.
 
 ```
 OR(logical_test1,[logical_test2],...)
@@ -467,7 +467,7 @@ OR(logical_test1,[logical_test2],...)
 
 | Argumento | Descrição |
 |---|---|
-| *logical_test1* | Obrigatório. Qualquer valor ou expressão que possa ser avaliado como VERDADEIRO ou FALSO. |
+| *logical_test1* | Obrigatório. Qualquer valor ou expressão que possa ser avaliado como TRUE ou FALSE. |
 | *logical_test2* | Opcional. Condições adicionais que você deseja avaliar como VERDADEIRO ou FALSO. |
 
 ## Pi
@@ -529,7 +529,7 @@ SLOPE.POWER(metric_X, metric_Y)
 
 | Argumento | Descrição |
 |---|---|
-| *metric_X* | Uma métrica que você designaria como um dado dependente. |
+| *Y_X* | Uma métrica que você designaria como um dado dependente. |
 | *metric_Y* | Uma métrica que você gostaria de designar como um dado independente. |
 
 ## Regressão quadrática: coeficiente de correlação (Tabela)
@@ -646,7 +646,7 @@ SIN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja obter o seno. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja obter o seno. |
 
 ## Pontuação T
 
@@ -688,7 +688,7 @@ TAN (metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja obter a tangente. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja obter a tangente. |
 
 ## Pontuação Z (Linha)
 
@@ -715,7 +715,7 @@ Pontuação Z (métrica)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>métrica</i> </td> 
    <td colname="col2"> <p> Retorna o valor do seu primeiro argumento diferente de zero. </p> </td> 
   </tr> 
  </tbody> 
