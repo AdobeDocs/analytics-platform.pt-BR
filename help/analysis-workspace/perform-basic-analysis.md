@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 72%
+ht-degree: 86%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 72%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Depois de criar conexões e visualizações de dados, analise os dados que você trouxe usando o potencial e a flexibilidade do Analysis Workspace. Experimente e arraste dimensões e métricas, altere configurações de atribuição de dimensões e métricas, nomes amigáveis, fuso horário, configurações de sessão etc.
 
@@ -24,7 +24,7 @@ Esta é uma amostra de visualizações básicas no Workspace. Por exemplo, você
 
 * Criar um relatório de tendências de receita online versus na loja que compare as duas fontes de dados ao longo do tempo.
 
-* Dimensione o tamanho da audiência por fontes de dados, como dados de impressão de anúncio, dados da Adobe Analytics, dados de email, dados do POS, dados da central de atendimento e dados de pesquisa.
+* Dimensione o tamanho da audiência por fontes de dados, como dados de impressão do anúncio, dados da Adobe Analytics, dados de email, dados do POS, dados da central de atendimento e dados de pesquisa.
 
 ![](assets/cja-basic-analysis.png)
 
