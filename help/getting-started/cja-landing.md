@@ -1,9 +1,9 @@
 ---
 title: Documentação de produto do Customer Journey Analytics
 description: Página de aterrissagem do Customer Journey Analytics.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 76cedb931085e8b5b59d7c5c3929bf4b5c010d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
 
