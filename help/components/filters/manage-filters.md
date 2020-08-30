@@ -1,8 +1,11 @@
 ---
 title: Gerenciar filtros
 description: saiba como gerenciar filtros no Customer Journey Analytics
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+workflow-type: tm+mt
+source-wordcount: '1109'
+ht-degree: 96%
 
 ---
 
@@ -13,7 +16,7 @@ O Gerenciador de filtros oferece várias formas de cuidar de segmentos, como com
 
 O Gerenciador de filtros mostra todos os seus filtros e os compartilhados com você. Os usuários de nível administrativo podem visualizar todos os filtros na organização. Essa visão geral apresenta a interface do usuário e os recursos do Gerenciador de filtros.
 
-Acesse o Gerenciador de filtros indo até **[!UICONTROL Customer Journey Analysis]** > **[!UICONTROL Components]** > **[!UICONTROL Filters]** na navegação superior.
+Acesse o Gerenciador de filtro indo para **[!UICONTROL Análise de Jornada do Cliente]** > **[!UICONTROL Componentes]** > **[!UICONTROL Filtros]** na navegação superior.
 
 ## IU do Gerenciador de filtros
 
@@ -75,12 +78,12 @@ Para marcar um filtro:
 
    * selecione a partir das tags existentes, ou
 
-   * digite um novo nome de tag e pressione **[!UICONTROL Enter]**.
+   * insira um novo nome de tag e pressione **[!UICONTROL Enter]**.
 
 1. Clique em **[!UICONTROL Tag]** novamente e marque o segmento.
 
 A tag agora deve aparecer na coluna Tags. (Clique no ícone de engrenagem na parte superior direita para gerenciar suas colunas).
-Também é possível filtrar em tags acessando **[!UICONTROL Filters > Tags]**.
+Também é possível filtrar tags em **[!UICONTROL Filtros > Tags]**.
 
 ### Aprovar filtros
 
@@ -90,7 +93,7 @@ Esta é a forma de marcar um filtro como aprovado:
 
 1. No Gerenciador de filtros, marque a caixa de seleção à esquerda do título do Filtro.
 
-1. Clique em **[!UICONTROL Approve]** na barra de tarefas de gerenciamento de filtro.
+1. Clique em **[!UICONTROL Aprovar]** na barra de tarefa do gerenciamento de filtros.
 
 1. Considere compartilhar os segmentos aprovados na organização.
 
@@ -100,7 +103,7 @@ Esta é a forma de marcar um filtro como aprovado:
 
    ![](assets/seg_approved.png)
 
-1. Também é possível cancelar a aprovação de um filtro aprovado ao clicar em **[!UICONTROL Unapprove]**.
+1. Também é possível cancelar a aprovação de um segmento aprovado ao clicar em **[!UICONTROL Cancelar aprovação]**.
 
 ### Compartilhar filtros
 
@@ -122,9 +125,9 @@ Para compartilhar um filtro:
 
 1. No Gerenciador de filtros, marque a caixa de seleção ao lado do filtro que você deseja compartilhar.
 
-1. Na barra de ferramentas do gerenciamento de filtros, clique em **[!UICONTROL Share]**.
+1. Na barra de ferramentas do gerenciamento de filtros, clique em **[!UICONTROL Compartilhar]**.
 
-1. Se você for um Administrador, é possível selecionar Tudo ou escolher a partir de Grupos e Usuários na organização. Como um não Administrador, você pode usar somente os usuários individuais. Use o campo Pesquisa para pesquisar por grupos ou usuários. Clique em **[!UICONTROL Share]**. O ícone Compartilhado aparece ao lado do filtro: ![](assets/share_icon.png)
+1. Se você for um Administrador, é possível selecionar Tudo ou escolher a partir de Grupos e Usuários na organização. Como um não Administrador, você pode usar somente os usuários individuais. Use o campo Pesquisa para pesquisar por grupos ou usuários. Clique em **[!UICONTROL Compartilhar]**. O ícone Compartilhado aparece ao lado do filtro: ![](assets/share_icon.png)
 
 1. É possível filtrar por filtros compartilhados com você em Filtros > Outros filtros > Compartilhados comigo.
 
