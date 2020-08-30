@@ -3,9 +3,9 @@ keywords: Analysis Workspace
 title: Visão geral do Analysis Workspace
 topic: Reports and analytics
 uuid: 4df6be48-2c88-4b9d-9536-ed64ffbb6ee4
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Um projeto pode conter tabelas de dados e qualquer número de visualizações pa
 
 ## Duas maneiras de criar uma tabela
 
-## Abordagem comum da análise
+## Abordagem comum da análises
 
 ### Etapa 1: Analisar uma dimensão
 
