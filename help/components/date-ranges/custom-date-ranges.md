@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
 workflow-type: tm+mt
 source-wordcount: '281'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html)tradicional. [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Crie intervalos de datas personalizados no Analysis Workspace e salve-os como Componentes de tempo.
 
