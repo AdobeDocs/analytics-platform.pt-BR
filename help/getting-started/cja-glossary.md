@@ -1,9 +1,9 @@
 ---
 title: Glossário do Customer Journey Analytics
 description: Glossário do Customer Journey Analytics.
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 307bfae11f44d088aa8d004f1f7ddd17375f60fc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 100%
 
