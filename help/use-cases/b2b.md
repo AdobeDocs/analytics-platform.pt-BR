@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 46cb6c92d4a6a7ceddb687e7668c1588559f87a7
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +40,9 @@ Depois de criar o esquema, é necessário criar um conjunto de dados de pesquisa
 
 >[!IMPORTANT]
 >
->O CJA não suporta inteiros em conjuntos de dados de pesquisa. Se você adicionar os campos inteiros no schema XDM para o conjunto de dados de pesquisa, não será possível usar esses números inteiros como métricas ou métricas calculadas. Por exemplo, se yearRevenue ou totalWorkers forem definidos como inteiros, eles serão exibidos como &quot;0&quot; no relatórios no CJA. No entanto, se você atribuí-las como strings, poderá usá-las como informações de pesquisa.
+>O CJA não aceita números inteiros em conjuntos de dados de pesquisa. Se você adicionar os campos inteiros no esquema XDM para o conjunto de dados de pesquisa, não será possível usar esses números inteiros como métricas ou métricas calculadas. Por exemplo, se annualRevenue ou totalEmployees forem definidos como inteiros, eles serão exibidos como “0” nos relatórios no CJA. No entanto, se você atribuí-los como strings, poderá usá-los como informações de pesquisa.
 
-Por exemplo, yearRevenue ou totalWorkers são definidos como Inteiro no exemplo a seguir, esse é o motivo, mostrando &quot;0&quot; no CJA.
+Por exemplo, annualRevenue ou totalEmployees são definidos como um inteiro no exemplo a seguir, por isso eles são exibidos como “0” no CJA.
 
 1. Na Adobe Experience Platform, acesse **[!UICONTROL Gerenciamento de dados > Conjuntos de dados]**.
 1. Clique em **[!UICONTROL + Criar conjunto de dados]**.
@@ -54,7 +54,7 @@ Por exemplo, yearRevenue ou totalWorkers são definidos como Inteiro no exemplo 
 
 ## 3. Assimilar dados na Experience Platform
 
-As instruções sobre como [Mapear um arquivo CSV para um schema XDM](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/tutorials/map-a-csv-file.html) devem ajudar se você estiver usando um arquivo CSV.
+As instruções sobre como [Mapear um arquivo CSV para um esquema XDM](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/tutorials/map-a-csv-file.html) devem ajudar se você estiver usando um arquivo CSV.
 
 [Outros métodos](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html) também estão disponíveis.
 
