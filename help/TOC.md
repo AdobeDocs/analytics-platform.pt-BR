@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: ef0e1823e1343266853253fe29dc25d58c88cdee
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -104,8 +104,8 @@ ht-degree: 99%
       + [Modelos de atribuição e janelas de pesquisa](analysis-workspace/attribution/models.md)
       + [Atribuição algorítmica](analysis-workspace/attribution/algorithmic.md)
       + [Perguntas frequentes](analysis-workspace/attribution/faq.md)
-   + Virtual Analyst {#virtual-analyst}
-      + [Visão geral do Virtual Analyst](analysis-workspace/virtual-analyst/overview.md)
+   + Analista virtual {#virtual-analyst}
+      + [Visão geral do Analista virtual](analysis-workspace/virtual-analyst/overview.md)
       + Detecção de anomalias {#anomaly-detection}
          + [Visão geral da Detecção de anomalias](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
          + [Exibir anomalias na Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
