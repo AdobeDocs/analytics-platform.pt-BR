@@ -2,10 +2,10 @@
 title: Visão geral do Customer Journey Analytics
 description: Introdução ao Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6f5c3c073069ca7f428d971515342c1a636795e3
+source-git-commit: 7fb439c0796f94e79ae2b738b71cfa85b86f2e8f
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 100%
+source-wordcount: '1202'
+ht-degree: 87%
 
 ---
 
@@ -54,16 +54,20 @@ Antes de começar a usar o Customer Journey Analytics, os seguintes pré-requisi
 Para criar conexões, adicionar conjuntos de dados, etc., você precisa das seguintes permissões no [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
 * Para gerenciar conjuntos de dados na Experience Platform, você deve fazer parte de um Perfil de produto da plataforma que oferece a permissão &quot;Gerenciar conjuntos de dados&quot;. Para obter mais informações, consulte [Controle de acesso na Adobe Experience Platform](https://docs.adobe.com/content/help/pt-BR/experience-platform/landing/home.translate.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-overview.md).
-* Para criar uma conexão com um conjunto de dados da Plataforma, você deve fazer parte de um Perfil de produto da Plataforma que oferece as seguintes permissões:
+* Para criar uma conexão com um conjunto de dados de Experience Platform, você deve fazer parte de um Perfil de Produto de Plataforma que oferece as seguintes permissões:
    * Visualizar esquemas
    * Visualizar conjuntos de dados
    * Gerenciar namespaces de identidade
    * Visualizar sandboxes
-* Para acessar o Customer Journey Analytics ou fazer uma conexão, você também precisará ser adicionado a um Perfil de produto do Customer Journey Analytics no [Admin Console](https://adminconsole.adobe.com/enterprise/).
+* A partir de 9 de setembro de 2020, para acessar o Customer Journey Analytics ou fazer uma conexão, você também precisará ser adicionado como Administrador a um Perfil de produto Customer Journey Analytics na [Admin Console](https://adminconsole.adobe.com/enterprise/). Os administradores têm as seguintes permissões:
+   * Criar/atualizar/excluir conexões ou Visualizações de dados
+   * Atualizar/excluir projetos, filtros, métricas de cálculo ou segmentos criados por outros usuários
+   * Compartilhar um projeto da Workspace para todos os usuários
+* Os não administradores (usuários) no Customer Journey Analytics não podem visualização de Visualizações de dados ou conexões, mas podem criar filtros, projetos e métricas calculadas.
 
 ### Atualizações de terminologia
 
-Vários recursos no CJA foram renomeados para alinhar-se aos padrões do setor. Alguns nomes atualizados:
+Vários recursos no CJA foram renomeados, em comparação ao Adobe Analytics tradicional, para alinhar-se aos padrões do setor. Alguns termos atualizados incluem:
 
 * Os segmentos agora são conhecidos como &quot;Filtros&quot;.
 * Os Conjuntos de relatórios virtuais agora são conhecidos como &quot;Visualizações&quot;.
@@ -75,7 +79,7 @@ Vários recursos no CJA foram renomeados para alinhar-se aos padrões do setor. 
 
 ## Outros recursos criados na Adobe Experience Platform
 
-O Customer Journey Analytics é um recurso entre muitos que dependem da Adobe Experience Platform. Vários outros recursos, também criados na plataforma, permitem que você aproveite ao máximo seus dados.
+O Customer Journey Analytics é um recurso entre muitos que dependem da Adobe Experience Platform. Vários outros recursos, também criados no Experience Platform, permitem que você aproveite ao máximo seus dados.
 
 A Adobe Experience Platform permite centralizar e padronizar dados e conteúdo de clientes de qualquer sistema e aplicar a ciência de dados e o aprendizado de máquina para melhorar o design e o delivery de experiências personalizadas. Os dados do cliente na plataforma são armazenados como conjuntos de dados, que consistem em um esquema e lotes de dados. Para obter mais detalhes sobre a plataforma, consulte a [Visão geral da arquitetura da Adobe Experience Platform](https://docs.adobe.com/content/help/pt-BR/experience-platform/landing/home.translate.html).
 
