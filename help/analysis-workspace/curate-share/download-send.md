@@ -3,15 +3,19 @@ description: É possível baixar dados da Analysis Workspace copiando-os ou nos 
 title: Baixar arquivos PDF ou CSV
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
+source-git-commit: 23856a744ce66ac03656d84f72b4bce4cdef253a
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 8%
+source-wordcount: '1048'
+ht-degree: 11%
 
 ---
 
 
 # Baixar arquivos PDF ou CSV da Workspace
+
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Existem várias maneiras diferentes de exportar dados da Analysis Workspace, dependendo do conjunto de dados que você deseja analisar fora da ferramenta e de quem precisa receber as informações. Os dados exportados podem estar na forma de dados copiados, arquivos CSV ou PDF. Geralmente, um PDF é preferido se você deseja que as visualizações sejam incluídas no arquivo, enquanto um CSV (ou dados copiados) é preferido se você quiser apenas dados de texto simples.
 
@@ -36,7 +40,7 @@ Para downloads de projetos, lembre-se:
 
 A opção de clique com o botão direito **[!UICONTROL Copiar para a área de transferência]** permite que você copie rapidamente os dados do Workspace e os cole em outro lugar.
 
-* Se desejar que a tabela exibida seja copiada, clique com o botão direito do mouse no cabeçalho da tabela e escolha **Copiar dados exibidos para a área de transferência**.
+* Se desejar que a tabela exibida seja copiada, clique com o botão direito do mouse no cabeçalho da tabela e escolha **Copiar dados para a área de transferência**.
 * Se desejar que um subconjunto de dados seja copiado, faça uma seleção na tabela e clique com o botão direito do mouse em > **Copiar seleção para a área de transferência**.
 
 Além disso, a tecla de atalho `Ctrl+C` copia sua seleção para a área de transferência. Depois de copiada, você pode entrar em outra ferramenta e colar as informações (ou pressionar `Ctrl+V`).
@@ -47,15 +51,14 @@ Além disso, a tecla de atalho `Ctrl+C` copia sua seleção para a área de tran
 
 A opção de clique com o botão direito **[!UICONTROL Baixar dados como CSV]** permite baixar uma tabela de dados ou a fonte de dados de qualquer visualização como CSV.
 
-* No cabeçalho de qualquer tabela, clique com o botão direito do mouse **[!UICONTROL Baixar dados exibidos como CSV]**. Isso baixa os dados exibidos na tabela como um CSV.
+* No cabeçalho de qualquer tabela ou visualização, clique com o botão direito do mouse **[!UICONTROL Baixar dados como CSV]**. Isso baixa os dados exibidos na tabela ou na fonte de dados subjacente para uma visualização como CSV. Observação: a visualização do mapa não suporta essa opção.
 * Se uma seleção for feita na tabela, a opção indicará **[!UICONTROL Baixar seleção como CSV]**. Somente a seleção é baixada com essa opção, em vez da tabela exibida completa.
-* No cabeçalho de qualquer visualização, clique com o botão direito do mouse **[!UICONTROL Baixar dados como CSV]**. Isso baixa a tabela da fonte de dados para uma visualização como CSV. Observação: a visualização do mapa não suporta essa opção.
 
 ![](assets/download-data-viz.png)
 
 ## Baixar itens como CSV {#download-items}
 
-Se desejar analisar mais que as 400 linhas de dados visíveis em uma tabela, clique com o botão direito do mouse no cabeçalho da tabela ou em qualquer linha e selecione **Baixar itens como CSV (nome do Dimension)**. Essa opção exportará até 50.000 itens de dimensão para a dimensão selecionada (com base na classificação da tabela), com filtros e segmentos aplicados. Se você escolher essa opção na parte superior da tabela, a primeira dimensão da tabela será exportada. Embora nenhum limite seja aplicado na tabela de forma livre, recomenda-se que a opção Download de itens seja usada em tabelas com menos de 20 colunas para garantir o desempenho ideal.
+Se desejar analisar mais que as 400 linhas de dados visíveis em uma tabela, clique com o botão direito do mouse no cabeçalho da tabela ou em qualquer linha e selecione **Baixar itens como CSV (nome do Dimension)**. Essa opção exportará até 50.000 itens de dimensão (com base na classificação da tabela) para a dimensão selecionada, com filtros e segmentos aplicados. Se você escolher essa opção na parte superior da tabela, a primeira dimensão da tabela será exportada. Embora nenhum limite seja aplicado na tabela de forma livre, recomenda-se que a opção Download de itens seja usada em tabelas com menos de 20 colunas para garantir o desempenho ideal.
 
 >[!TIP]
 >
