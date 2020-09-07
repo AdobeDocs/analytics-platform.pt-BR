@@ -1,11 +1,11 @@
 ---
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '879'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Intervalos de datas | O suporte ao Calendário personalizado está planejado. |
 | Métricas calculadas | Observe que qualquer métrica de cálculo existente no Analysis Workspace tradicional não será transferida para o CJA. |
 | Segmentos | Agora denominado &quot;Filtros&quot; - observe que qualquer segmento existente no Analysis Workspace tradicional não será transferido para o CJA. |
-| Detecção de anomalias | Suporte total a partir de setembro de 2020 |
+| Detecção de anomalias | Suporte total a partir de setembro de 2020. |
 | Attribution IQ | Suporte completo. |
 | Curadoria do projeto | Suporte completo. |
 | Vinculação de projetos | Suporte completo. |
@@ -96,6 +96,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 * Públicos-alvos do Reports &amp; Analytics
 * Eventos de calendário do Reports &amp; Analytics
 * Ad Hoc Analysis
-* relatórios Data Warehouse - [!UICONTROL Serviço de Query Experience Platform] será a nova interface para esses casos de uso no CJA.
+* Relatórios do Data Warehouse - [!UICONTROL O Serviço de query da Experience Platform] será a nova interface para esses casos de uso no CJA.
 * Mobile Services
 * Feeds de dados
