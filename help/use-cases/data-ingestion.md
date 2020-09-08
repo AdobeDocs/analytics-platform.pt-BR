@@ -2,17 +2,17 @@
 title: Opções de ingestão de dados para Customer Journey Analytics
 description: Entenda as diferentes maneiras de assimilar dados no Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 540b170c3429f04b7f63872b30cbb01852d30179
+source-git-commit: 32dd6194ab2777652c3fb7df5fadd42395a0697d
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 32%
+source-wordcount: '515'
+ht-degree: 31%
 
 ---
 
 
 # Opções de ingestão de dados para Customer Journey Analytics
 
-Você tem várias opções quando se trata de assimilar dados em Customer Journey Analytics. Alguns deles presumem que você deseja mover os dados tradicionais da Adobe Analytics, outros presumem que você ingere dados diretamente da Adobe Experience Platform.
+Você tem várias opções quando se trata de assimilar dados em Customer Journey Analytics. Alguns deles presumem que você deseja mover os dados tradicionais da Adobe Analytics, outros presumem que você ingere dados diretamente da Adobe Experience Platform. Essa referência fornece etapas de alto nível para seguir.
 
 ## Obter dados da Adobe Analytics tradicional
 
