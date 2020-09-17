@@ -5,6 +5,9 @@ product: adobe analytics
 sub-product: jornada do cliente
 index: true
 user-guide-title: Guia do Customer Journey Analytics
+user-guide-description: This guide provides self-help assistance for Customer Journey Analytics.
+breadcrumb-title: Customer Journey Analytics Guide
+breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
 solution-title: Experience Cloud
 solution-hub-url: https://helpx.adobe.com/br/support/experience-cloud.html
 solution-image: assets/experience-cloud-logo-24.png
@@ -12,16 +15,16 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
-translation-type: ht
-source-git-commit: abaa78767bb4329ef02b086752eed9d7a0e827af
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1c5f134fc28fd02d58117d72db9afe5ada84cd40
+workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 100%
 
 ---
 
 
-# Ajuda do Customer Journey Analytics {#using}
+# Guia do Customer Journey Analytics {#using}
 
 + [Documentação de produto do Customer Journey Analytics](getting-started/cja-landing.md)
 + Visão geral do Customer Journey Analytics {#cja-overview}
