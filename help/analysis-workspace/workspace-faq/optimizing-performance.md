@@ -1,108 +1,87 @@
 ---
-description: 'null'
-title: Otimizar o desempenho do Analysis Workspace
+description: Fatores que afetam o desempenho e as otimizações recomendadas do Workspace
+title: Fatores de desempenho e otimização da Analysis Workspace
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: d49e07d14d1b202d9cc12f42d60083c052a1c364
+source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 85%
+source-wordcount: '2029'
+ht-degree: 20%
 
 ---
 
 
-# Otimizar o desempenho do Analysis Workspace
+# Fatores de desempenho e otimização da Analysis Workspace
 
-Certos fatores podem influenciar o desempenho de um projeto no Analysis Workspace. É importante saber quais são os contribuidores antes de iniciar a criação de um projeto, para planejar e criar o projeto da melhor maneira. Veja abaixo uma lista de fatores que impactam o desempenho e as práticas recomendadas para a otimização do seu projeto. O desempenho do Analysis Workspace é uma das prioridades da Adobe e algo que aprimoramos a cada dia.
+Vários fatores podem influenciar o desempenho de um projeto dentro da Analysis Workspace. É importante saber quais são os contribuidores antes de você start construir um projeto para que você possa planejar e construir o projeto da maneira mais ideal. Esta página inclui uma lista de fatores que afetarão o desempenho e as otimizações recomendadas que você pode fazer para garantir o desempenho máximo no Analysis Workspace.
 
-## Complexidade da lógica de segmentos
+>[!IMPORTANT OBSERVAÇÃO]
+>
+>A página Desempenho no Analysis Workspace está em versão limitada. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html)
 
-Segmentos intricados podem ter um impacto significativo no desempenho do projeto. Veja a seguir alguns fatores que adicionam complexidade a um segmento (em uma ordem aproximada de impacto):
+## Ajuda > Desempenho no Analysis Workspace
 
-* Operadores de “contém”, “contém qualquer um de”, “corresponde”, “começa com” ou “termina com”
-* Segmentação sequencial, especialmente quando restrições de dimensão (Dentro/Depois de) são usadas
-* Número de itens de dimensão exclusivos em dimensões usadas no segmento (por exemplo, Página = &#39;A&#39; quando a Página tem 10 itens exclusivos será mais rápida que a Página = &#39;A&#39; quando a Página tiver 100000 itens exclusivos)
-* O número de diferentes dimensões usadas (por exemplo, Página = &#39;Página inicial&#39; e Página = &#39;Resultados da pesquisa&#39;) será mais rápido que eVar 1 = &#39;vermelho&#39; e eVar 2 = &#39;azul&#39;)
-* Muitos operadores OR (em vez de AND)
-* Contêineres aninhados que variam no escopo (por exemplo, “Ocorrência” dentro de “Visita” dentro de “Visitante”)
+Sob **[!UICONTROL Analysis Workspace > Ajuda > Desempenho]**, você pode ver fatores que afetam o desempenho do seu projeto, incluindo fatores de rede, navegador e projeto. Para obter os resultados mais precisos, permita que o projeto seja totalmente carregado antes de abrir a página Desempenho. Além disso, você pode **Baixar como CSV** o conteúdo de desempenho para compartilhar facilmente com o Atendimento ao cliente do Adobe ou com suas equipes internas de TI.
 
-**Práticas recomendadas para a complexidade lógica**
+>[!NOTE]
+>
+>As informações na página Desempenho variam cada vez que o modal é aberto, já que os fatores estão sujeitos a alterações. Além disso, o Adobe continuará refinando os limites recomendados à medida que mais dados estiverem disponíveis.
 
-Embora alguns dos fatores de complexidade não possam ser evitados, pense em oportunidades para reduzir a complexidade de seus segmentos. Em geral, quanto mais específico você puder ser com os critérios do seu segmento, melhor. Por exemplo:
+![](assets/performance-modal.png)
 
-* Com contêineres, usar um só contêiner na parte superior do segmento será mais rápido que uma série de contêineres aninhados
-* Com operadores, &quot;igual&quot; será mais rápido que &quot;contém&quot; e &quot;igual a qualquer um&quot; será mais rápido que &quot;contém qualquer um&quot;
-* Com muitos critérios, operadores AND serão mais rápidos que uma série de operadores OR. Além disso, procure oportunidades para reduzir muitas declarações OR em uma única declaração &quot;igual a qualquer uma&quot;
+## Fatores de rede
 
-Além disso, as [classificações](https://docs.adobe.com/content/help/pt-BR/analytics/components/classifications/c-classifications.html) podem ajudar a consolidar muitos valores em grupos concisos a partir dos quais você pode criar segmentos. A segmentação nos grupos de classificação oferece benefícios de desempenho em segmentos com muitas instruções OR ou com o critério “contém”.
+**[!UICONTROL Ajuda > Desempenho]** os fatores de rede incluem:
 
-## Intervalo de dados solicitado
+| Fator | Definição | Influenciado por | Otimização |
+| --- | --- |--- | --- |
+| Conexão com a Adobe | O Adobe envia 10 chamadas de teste quando a página de desempenho é aberta. Isso representa a porcentagem dessas chamadas para a Adobe que tiveram sucesso. | Problemas de rede local ou problemas de Adobe afetarão esse fator. | Verifique status.adobe.com para verificar se há problemas de serviço conhecidos. Em seguida, valide sua conexão de rede local. |
+| Largura de banda de internet | A estimativa do seu navegador da largura de banda em seu local, testada apenas para o Google Chrome. O limite recomendado é de 2,0 MB/s. | Sua conexão de rede local afetará esse fator. | Valide a conexão de rede local. |
+| Latência de internet | O Adobe envia 10 chamadas de teste quando a página de desempenho é aberta. Isso representa o tempo médio necessário para cada solicitação ir para o Adobe e ser retornada. Em termos mais simples, é uma medida da velocidade da Internet entre a sua localização e o seu Adobe. O limite recomendado é &lt; 1 segundo. | Problemas de rede local, muitas guias de navegador abertas ou problemas de Adobe afetarão esse fator. | Verifique status.adobe.com para verificar se há problemas de serviço conhecidos. Em seguida, valide sua conexão de rede local e feche guias de navegador não usadas. |
 
-O intervalo de dados solicitado no decorrer do projeto influenciará o desempenho do Analysis Workspace.
+## Fatores do navegador
 
-**Práticas recomendadas para intervalos de datas**
+**[!UICONTROL Ajuda > Desempenho]** os fatores do navegador incluem:
 
-Quando possível, não insira mais dados do que o necessário. Restrinja o calendário do painel às datas relevantes para a sua análise ou use componentes de intervalo de datas (componentes roxos) nas tabelas de forma livre. Os intervalos de datas usados em uma tabela substituem o intervalo de datas do painel. Por exemplo, você pode adicionar mês passado, semana passada e ontem às colunas da tabela para solicitar esses intervalos de dados específicos. Para mais informações sobre o uso de intervalos de datas no Analysis Workspace, assista a [este vídeo](https://www.youtube.com/watch?v=MIkT6FZ5gKk).
+| Fator | Definição | Influenciado por | Otimização |
+| --- | --- | --- | --- |
+| Velocidade de computação | Quão rápido o computador executa um teste de processamento. O limite recomendado é &lt; 750 ms. | Seu hardware e programas simultâneos afetarão esse fator. | Abra o Gerenciador de Tarefas (PC) ou o Monitor de Atividades (Mac) do seu computador para determinar se é possível fechar programas. Em seguida, feche guias de navegador não usadas ou outros programas. <br><br>Se essas ações não ajudarem, discuta os detalhes de hardware com sua equipe de TI. |
+| Memória usada | Cada guia Espaço de trabalho em um navegador Google Chrome compartilha 4 GB de memória no total (o Firefox tem um limite maior). Isso representa a porcentagem da redução de memória que está sendo consumida pelo projeto atual. O limite recomendado é o limite de 3500 MB, que é o ponto no qual o Workspace começará a encontrar erros de memória. | Trabalhar em várias guias ou baixar 50000 linhas de dados contribuirá para o aumento do uso da memória. | Se você receber um erro de memória, recomenda-se que outras guias do Workspace sejam fechadas e/ou que os downloads de linha 50000 sejam executados uma de cada vez. |
+| Armazenamento local usado | Dados armazenados localmente em seu computador para uso no navegador. Cada origem (por exemplo, experience.adobe.com) tem uma alocação de 10 MB. | A Analysis Workspace usa o armazenamento local para várias funções, inclusive para armazenar projetos salvos automaticamente (existentes), configurações do usuário e sinalizadores de recursos. | Para garantir que as funções do Analysis Workspace não sejam interrompidas, limpe o armazenamento local do domínio experience.adobe.com. |
+| Velocidade de renderização | &quot;FPS&quot; significa &quot;Quadros por segundo&quot;, que é quantas vezes por segundo o navegador desenha a página em sua tela. 24 FPS é normalmente o que o olho humano pode observar; se o FPS for menor que isso, você observará problemas de renderização no Workspace. | O FPS é afetado pela multitarefa em vários projetos do Workspace de uma só vez e pelo tamanho do projeto que está sendo visualizado. Outros programas em execução no computador podem causar impacto, como streaming, scanners em segundo plano etc. Além disso, seu hardware afetará esse fator. | Abra o Gerenciador de Tarefas (PC) ou o Monitor de Atividades (Mac) do seu computador para determinar se é possível fechar programas. Em seguida, feche guias de navegador não usadas ou outros programas. <br><br>Se essas ações não ajudarem, discuta os detalhes de hardware com sua equipe de TI. |
 
-Minimize o número de comparações ano a ano usadas no projeto. Quando uma comparação ano após ano é calculada, ela analisa os 13 meses completos de dados entre os meses de juros. Isso tem o mesmo impacto que alterar o intervalo de datas do painel para durar 13 meses.
+## Fatores de projeto
 
-## Número de visualizações
+**[!UICONTROL Ajuda > Desempenho]** os fatores do projeto incluem:
 
-O número de visualizações contidas em um projeto afetará a capacidade de resposta geral do Analysis Workspace. Isso ocorre porque cada visualização, seja uma tabela ou gráfico, tem uma fonte de dados que precisa ser solicitada.
+| Fator | Definição | Otimização |
+| --- | --- | --- |
+| Número de queries | O número total de query (solicitações) feitos ao Adobe para recuperar dados exibidos no projeto. Os query incluem solicitações classificadas para tabelas, detecção de anomalias, linhas cintilantes, componentes mostrados no painel esquerdo e muito mais. Exclui painéis e visualizações recolhidos. O limite recomendado é 100. | Simplifique seu projeto, sempre que possível, dividindo dados em vários projetos que atendem a uma finalidade específica ou a um grupo de participantes. Use tags para organizar projetos em temas e use [vinculação direta](/help/analysis-workspace/curate-share/shareable-links.md) criar um índice interno para que as partes interessadas possam encontrar mais facilmente o que precisam. |
+| Painéis expandidos (fora do total de painéis) | O número de painéis expandidos do número total de painéis no projeto. O limite recomendado é 5. | Depois de tomar as etapas para simplificar seu projeto, recolha os painéis no seu projeto que não precisam ser exibidos quando carregados. Quando o projeto for aberto, somente os painéis expandidos serão processados. Os painéis reduzidos não serão processados até que o usuário os expanda. |
+| Visualizações expandidas (do total de visualizações) | O número de tabelas expandidas e visualizações fora do total do projeto. Exclui fontes de dados ocultas. O limite recomendado é 15. | Depois de seguir as etapas para simplificar o projeto, recolha as visualizações no projeto que não precisam ser visualizadas quando carregadas. Priorize os visuais mais importantes para o consumidor do relatório e divida os visuais de suporte em um painel ou projeto separado e mais detalhado, se necessário. |
+| Número de células de forma livre | O número total de células da tabela de forma livre no projeto, calculado por linhas * colunas em todas as tabelas. Exclui fontes de dados ocultas. O limite recomendado é 4000. | Reduza o número de colunas na tabela somente para os pontos de dados mais relevantes. Reduza o número de linhas na tabela ajustando o número de linhas exibidas, aplicando um filtro de tabela ou aplicando um segmento. |
+| Componentes disponíveis | O número total de componentes recuperados no painel esquerdo do projeto, em todos os conjuntos de relatórios do projeto. O limite recomendado é 2000. | Fale com o administrador do produto sobre como criar um conjunto de relatórios virtuais com curadoria que tenha um conjunto de componentes mais adaptado. |
+| Componentes usados | O número total de componentes usados no projeto. O limite recomendado é 100. | O número de componentes usados não é um influenciador direto do desempenho. No entanto, a complexidade desses componentes contribuirá para o desempenho do projeto. Consulte as otimizações recomendadas na seção &quot;Fatores adicionais&quot; abaixo. |
+| Maior intervalo de datas | Esse fator exibe o intervalo de datas mais longo usado no projeto. O limite recomendado é de 1 ano. | Quando possível, não insira mais dados do que o necessário. Restrinja o calendário do painel às datas relevantes para a sua análise ou use componentes de intervalo de datas (componentes roxos) nas tabelas de forma livre. Os intervalos de datas usados em uma tabela substituem o intervalo de datas do painel. Por exemplo, você pode adicionar mês passado, semana passada e ontem às colunas da tabela para solicitar esses intervalos de dados específicos. Para obter mais informações sobre o uso de intervalos de datas no Analysis Workspace, assista a [este vídeo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/date-ranges-and-calendar-in-analysis-workspace.html). <br><br>Além disso, minimize o número de comparações ano a ano usadas no projeto. Quando uma comparação ano a ano é calculada, ela analisa os 13 meses completos de dados entre os meses de interesse. Essa ação tem o mesmo impacto que alterar o intervalo de datas do painel para durar 13 meses. |
 
-**Prática recomendada para o número de visualizações**
+## Fatores adicionais
 
-Diminua o número de visualizações em seu projeto. O Analysis Workspace está fazendo diversas transformações nos bastidores em cada visual que você adiciona, sendo assim, priorize os visuais mais importantes para o consumidor do relatório e separe visuais de suporte em um projeto mais detalhado, caso necessário.
+Outros fatores que não estão incluídos em Ajuda > Desempenho incluem:
 
-## Complexidade de visualizações (segmentos, métricas, filtros)
+| Fator | Definição | Influenciado por | Otimização |
+| --- | --- | --- | --- |
+| Filtrar complexidade | Filtros complexos podem ter um impacto significativo no desempenho do projeto. | Os fatores que adicionam complexidade a um filtro (em ordem decrescente de impacto) incluem: <ul><li>Operadores de “contém”, “contém qualquer um de”, “corresponde”, “começa com” ou “termina com” </li><li>Filtros sequenciais, especialmente quando restrições de dimensão (Dentro/Depois) são usadas </li><li>Número de itens de dimensão exclusivos em dimensões usadas no segmento (por exemplo, Página = &#39;A&#39; quando a Página tem 10 itens exclusivos será mais rápida que a Página = &#39;A&#39; quando a Página tiver 100000 itens exclusivos) </li><li>O número de diferentes dimensões usadas (por exemplo, Página = &#39;Página inicial&#39; e Página = &#39;Resultados da pesquisa&#39;) será mais rápido que eVar 1 = &#39;vermelho&#39; e eVar 2 = &#39;azul&#39;)</li><li>Muitos operadores OR (em vez de AND)</li><li>Contêineres aninhados que variam no escopo (por exemplo, “Ocorrência” dentro de “Visita” dentro de “Visitante”)</li></ul> | Embora alguns dos fatores de complexidade não possam ser evitados, procure oportunidades para reduzir a complexidade de seus filtros. Em geral, quanto mais específico você estiver com seus critérios de filtragem, melhor. Por exemplo:<ul><li>Com contêineres, usar um só contêiner na parte superior do segmento será mais rápido que uma série de contêineres aninhados</li><li>Com operadores, &quot;igual&quot; será mais rápido que &quot;contém&quot; e &quot;igual a qualquer um&quot; será mais rápido que &quot;contém qualquer um&quot;</li><li>Com muitos critérios, operadores AND serão mais rápidos que uma série de operadores OR.</li><li>Procure oportunidades para reduzir muitas declarações OR em uma única declaração &quot;igual a qualquer uma&quot;.</li></ul> |
+| Complexidade da visualização (filtros, métricas) | O tipo de visualização (por exemplo, fallout vs. uma tabela de forma livre) adicionado a um projeto por si só não influencia muito o desempenho do projeto. É a complexidade da visualização que adiciona ao tempo de processamento. | Fatores que adicionam complexidade à visualização incluem:<ul><li>Intervalo de dados solicitado</li><li>Número de filtros aplicados; por exemplo, filtros usados como linhas de uma tabela de forma livre</li><li>Utilização de filtros complexos</li><li>[Linhas ou colunas de itens estáticas em tabelas de forma livre](/help/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)</li><li>Filtros aplicados a linhas em tabelas de forma livre</li><li>Número de métricas incluídas, especialmente métricas calculadas que usam filtros</li></ul> | Se você perceber que seus projetos não estão sendo carregados o mais rápido que você gostaria, tente substituir alguns filtros por eVars e filtros, onde possível.<br><br>Se você se encontrar usando continuamente segmentos e métricas calculadas para pontos de dados importantes para sua empresa, considere melhorar sua implementação para capturar esses pontos de dados de forma mais direta. O uso de um gerenciador de tags como a Adobe Experience Platform Launch e as regras de processamento do Adobe pode tornar a implementação rápida e fácil de implementar. |
 
-O tipo de visualização (por exemplo, fallout ou tabela de forma livre) adicionado a um projeto não influencia muito o desempenho do projeto. É a complexidade da visualização que aumentará o tempo de processamento. Fatores que adicionam complexidade à visualização incluem:
+## Mensagens de erro comuns
 
-* Intervalo de dados solicitados, como mencionado acima
-* Números de segmentos aplicados, por exemplo, segmentos usados como linhas de uma tabela de forma livre
-* Uso de segmentos intricados
-* [Linhas ou colunas de itens estáticas em tabelas de forma livre](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.html)
-* Filtros aplicados a linhas em tabelas de forma livre
-* Número de métricas incluídas, métricas especialmente calculadas que usam segmentos
+Você pode encontrar erros ao interagir com a Analysis Workspace que também influenciarão o desempenho. Os tipos de erro mais comuns, por que ocorrem e as otimizações que podem ser feitas estão listados abaixo.
 
-**Prática recomendada para a complexidade da visualização**
-
-Se você observar que seus projetos não estão carregando rápido como gostaria, tente substituir alguns segmentos por eVars e filtros, se possível.
-
-Se você estiver sempre usando segmentos e métricas calculadas em dados importantes para sua empresa, tente aprimorar sua implementação para capturar esses dados de forma mais direta. O uso de um gerenciador de tags como o Adobe Experience Platform Launch e das regras de processamento da Adobe facilita e agiliza as alterações na implementação. Para entender melhor como simplificar segmentos complexos, consulte “Complexidade da lógica de segmento”, disponível acima.
-
-## Número de painéis
-
-Um painel pode conter diversas visualizações e, como resultado, o número de painéis também pode influenciar a capacidade geral de resposta do Analysis Workspace.
-
-**Prática recomendada para o número de painéis**
-
-Não tente adicionar tudo a um só projeto e, sim, criar projetos distintos que atendam a um propósito ou grupo de participantes específico. Use as tags para organizar projetos em temas chave e compartilhe projetos relacionados com grupos de participante.
-
-Caso deseje mais organização nos projetos, lembre-se de que a [vinculação direta](https://www.youtube.com/watch?v=6IOEewflG2U) ao seu projeto é uma opção. Crie um índice interno de projetos de forma que os participantes possam encontrar o que precisam mais facilmente.
-
-Se vários painéis forem necessários em um projeto, recolha os painéis antes de salvar e compartilhar. Quando um projeto é carregado, o Analysis Workspace somente carregará o conteúdo dos painéis expandidos. Os painéis reduzidos não serão carregados até que o usuário os expanda. Essa abordagem auxilia de duas formas:
-
-* Os painéis reduzidos são salvos em um tempo de carregamento geral de um projeto
-* Os painéis reduzidos são uma boa forma de organizar seus projetos de maneira lógica para o consumidor do relatório
-
-## Tamanho do conjunto de relatórios
-
-O tamanho do conjunto de relatórios pode parecer um fator determinante, mas na verdade ele representa um pequeno papel no desempenho do projeto, devido ao processamento de dados da Adobe.  Pode haver exceções a esta regra; consulte sua equipe de implementação ou um especialista em Adobe para determinar se há melhorias de implementação que podem ser feitas para melhorar a experiência geral no Adobe Analytics.
-
-## Número de usuários simultâneos do Analysis Workspace
-
-O número de usuários simultâneos do Analysis Workspace ou de projetos específicos não tem um efeito substancial no desempenho do Analysis Workspace, se os usuários estiverem acessando conjuntos de relatórios diferentes. Se os usuários simultâneos estiverem acessando o mesmo conjunto de relatórios, o desempenho será afetado.
-
-## Mensagens de erro comuns no Analysis Workspace
-
-Você pode encontrar erros ao interagir com o Analysis Workspace. Os erros podem ocorrer por vários motivos. Veja abaixo os mais comuns.
-
-| Mensagem de erro | Por que isso ocorre? |
-|---|---|
-| `The report suite is experiencing unusually heavy reporting. Please try again later.` | Sua organização está tentando executar muitas solicitações simultâneas em relação a um conjunto de relatórios específico. Os fatores que contribuem para esse erro são solicitações de API, projetos agendados, relatórios agendados, alertas agendados e usuários simultâneos que fazem solicitações de relatórios. Recomendamos que suas solicitações e agendamentos para o conjunto de relatórios sejam distribuídos de forma mais uniforme ao longo do dia. |
-| `A system error has occurred. Please log a Customer Care request under Help > Submit Support Ticket and include your error code.` | A Adobe está enfrentando um problema que precisa ser resolvido. Recomendamos que você envie o código de erro por meio de uma solicitação do Atendimento ao cliente. |
-| `The request is too complex.` | Sua solicitação de relatório é muito grande e não pode ser executada. Os fatores que contribuem para esse erro são o tamanho da solicitação (provocando expiração do tempo), muitos itens correspondentes em um segmento ou filtro de pesquisa, muitas métricas incluídas, combinações de dimensão e métrica incompatíveis etc. Recomendamos que você simplifique sua solicitação. |
-| `One of the segments or the search in this visualization contains a text search that returned too many results.` | Recomendamos restringir seus critérios de texto de pesquisa e tentar a solicitação novamente. |
-| `This dimension does not currently support non-default attribution models.` | Recomendamos a substituição da dimensão na tabela por uma que seja compatível com o [Attribution IQ](../attribution/overview.md). |
-| `Your request failed as a result of too many columns or pre-configured rows.` | Recomendamos remover algumas colunas ou linhas, ou dividir em visualizações separadas. |
+| Mensagem de erro | Por que isso ocorre? | Otimização |
+| --- | --- | --- |
+| [!UICONTROL O conjunto de relatórios está apresentando um volume excessivo anormal. Tente novamente mais tarde.] | Sua organização está tentando executar muitas solicitações simultâneas em relação a um conjunto de relatórios específico. Os fatores que contribuem para esse erro são solicitações de API, projetos agendados, relatórios agendados, alertas agendados e usuários simultâneos que fazem solicitações de relatórios. | Espalhe suas solicitações e agendamentos para o conjunto de relatórios de forma mais uniforme ao longo do dia. |
+| [!UICONTROL Ocorreu um erro de sistema. Registre uma solicitação de Atendimento ao cliente em Ajuda > Enviar tíquete de suporte e inclua seu código de erro.] | A Adobe está enfrentando um problema que precisa ser resolvido. | Envie o código de erro ao Atendimento ao cliente. |
+| [!UICONTROL A solicitação é muito complexa.] | Sua solicitação de relatório é muito grande e não pode ser executada. Os fatores que contribuem para esse erro são o tamanho da solicitação (provocando expiração do tempo), muitos itens correspondentes em um segmento ou filtro de pesquisa, muitas métricas incluídas, combinações de dimensão e métrica incompatíveis etc. | Simplifique sua solicitação removendo algumas colunas ou linhas na tabela ou considere dividir a tabela em solicitações separadas. |
+| [!UICONTROL Um dos segmentos ou a pesquisa nesta visualização contém uma pesquisa de texto que retornou muitos resultados.] | O critério do segmento ou o filtro de relatório é muito amplo. | Restrinja seus critérios de texto de pesquisa e tente a solicitação novamente. |
+| [!UICONTROL No momento, esta dimensão não oferece suporte a modelos de atribuição não-padrão.] | Não há suporte para atribuição não padrão para a dimensão que você está usando. | Substitua a dimensão na tabela por uma que seja compatível com [Attribution IQ](/help/analysis-workspace/attribution/overview.md). |
+| [!UICONTROL Sua solicitação falhou como resultado de muitas colunas ou linhas pré-configuradas.] | Sua tabela tem muitas células de forma livre (linha * colunas). | Remova colunas ou linhas na tabela ou considere dividir a tabela em solicitações separadas. |
