@@ -2,10 +2,10 @@
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 translation-type: tm+mt
-source-git-commit: 7996f71206e2d94642c49eb0bdfd79e384dfd8a3
+source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
 workflow-type: tm+mt
-source-wordcount: '877'
-ht-degree: 99%
+source-wordcount: '885'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Os filtros podem ser baseados em atributos (tipo de navegador, dispositivo, núm
 Você pode criar e salvar filtros no Construtor de filtros ou gerar filtros de uma visualização de Fallout (no Workspace). Além disso, filtros podem ser usados juntos como filtros empilhados.
 
 >[!IMPORTANT]
->Filtros são conhecidos como &quot;segmentos&quot; no Adobe Analytics. Renomeamos os segmentos para filtros porque a Adobe Experience Platform tem uma definição diferente de &quot;segmento&quot;.
+>Filtros são conhecidos como &quot;segmentos&quot; no Adobe Analytics. Renomeamos segmentos para filtros porque a Adobe Experience Platform [uma definição diferente de &quot;segmento&quot;](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html).
 
 A filtragem inclui o [Construtor de filtros](/help/components/filters/create-filters.md) para construir segmentos e executar um pré-teste, e o [Gerenciador de filtros](/help/components/filters/manage-filters.md) para coletar, marcar, aprovar, definir a segurança e compartilhar filtros na organização.
 
@@ -32,7 +32,7 @@ Exemplo:
 ![](assets/sequential_fil.png)
 
 | Visita um | Visita dois | Visita três |
-|---|---|---|
+| --- | --- | --- |
 | O visitante foi para a página de aterrissagem principal (A), excluiu a página da campanha (B) e, em seguida, visualizou a página do Produto (C). | O visitante novamente foi para a página de aterrissagem principal (A), excluiu a página da campanha (B) e, novamente, foi para a página do Produto (C), em seguida, foi para a nova página (D). | O visitante entrou e seguiu o mesmo caminho da primeira e segunda visita, em seguida, excluiu a página F para ir diretamente para a página de produto direcionada (G). |
 
 ## Filtrar contêineres
@@ -51,9 +51,7 @@ A arquitetura de contêiner empregada no Construtor de filtros define Pessoa com
 O contêiner Pessoa inclui cada visita e visualização de página de visitante em um período especificado. Um filtro no nível de Pessoa retorna a página que atende à condição, além de todas as páginas visualizadas pelo visitante (e somente restrita pelos intervalos de datas definidos). Como o contêiner mais amplamente definido, os relatórios gerados no nível do contêiner Pessoa retornarão visualizações de página em todas as visitas e permite que você gere uma análise multivisita. Consequentemente, o contêiner Pessoa é o mais suscetível às mudanças com base em intervalos de datas definidos. Os contêineres Pessoa podem incluir valores com base no histórico geral do visitante.
 
 * Dias antes da primeira compra
-
 * Página de entrada original
-
 * Domínios de referência originais
 
 ### Contêiner sessão
@@ -61,19 +59,14 @@ O contêiner Pessoa inclui cada visita e visualização de página de visitante 
 O contêiner Sessão permite identificar as interações de página, campanhas ou conversões de uma sessão da específica. O contêiner Sessão é o mais usado porque capta comportamentos para a sessão de visita inteira depois que a regra é atendida e permite definir quais sessões você deseja incluir ou excluir na criação e aplicação de um segmento. Ele pode ajudá-lo a responder a estas perguntas:
 
 * Quantos visitantes visualizaram a seção Notícias e Esportes na mesma sessão?
-
 * Quais páginas contribuíram para uma conversão bem-sucedida em uma venda?
 
 Os contêineres Sessão incluem valores de acordo com a ocorrência por visita:
 
 * Número da sessão
-
 * Página de entrada
-
 * Frequência de Retorno
-
 * Métricas de participação
-
 * Métricas alocadas linearmente
 
 ### Contêiner evento
@@ -83,9 +76,6 @@ O contêiner Evento define quais eventos de página você deseja incluir ou excl
 Os container de evento incluem detalhamentos de página única baseados em valores:
 
 * Produtos
-
 * Props de lista
-
 * Dimensões de lista
-
 * Dimensões de merchandising (no contexto de eventos)
