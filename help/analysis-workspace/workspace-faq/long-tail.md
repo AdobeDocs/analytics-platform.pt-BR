@@ -2,7 +2,7 @@
 title: Item de dimensão Longo
 description: Explica o item de dimensão "Cauda longa" e por que ele aparece no relatórios.
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: ff1a11a18de0825b6338de98865e3bddeef14f39
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -30,7 +30,7 @@ No CJA, os itens de dimensão são colocados somente em &#39;Longa Cauda&#39; se
 
 Se você quiser reduzir o item de dimensão &quot;Longa Cauda&quot;, o Adobe recomenda qualquer uma das seguintes opções:
 
-* Use um segmento. Os segmentos se aplicam no momento em que cada servidor processa um subconjunto de dados. A limitação do número de valores únicos que eles retornam reduz o item de dimensão &#39;Longa Cauda&#39;.
+* Use um filtro. Os filtros se aplicam no momento em que cada servidor processa um subconjunto de dados. A limitação do número de valores únicos que eles retornam reduz o item de dimensão &#39;Longa Cauda&#39;.
 * Use uma dimensão de conjunto de dados de pesquisa. As dimensões do conjunto de dados de pesquisa combinam itens de dimensão do conjunto de dados de evento, que limitam o número de valores únicos retornados.
 
 Em geral, é difícil consumir um relatório que contenha mais de 500 mil itens de dimensão exclusivos. Se você aplicar um segmento ou uma dimensão de conjunto de dados de pesquisa, poderá reduzir a presença de &quot;Longa Cauda&quot; enquanto facilita o consumo do relatório. A Adobe planeja melhorar essa experiência à medida que a CJA for desenvolvendo mais.
