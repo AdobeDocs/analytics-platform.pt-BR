@@ -2,10 +2,10 @@
 title: Visão geral dos componentes
 description: Saiba quais componentes o CJA oferece e como usá-los no relatórios.
 translation-type: tm+mt
-source-git-commit: e3457b3ad6c991844f83c2213a4991e1e8879e97
+source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 100%
+source-wordcount: '343'
+ht-degree: 97%
 
 ---
 
@@ -44,11 +44,12 @@ Há várias maneiras de gerenciar componentes (individualmente ou ao selecionar 
 
 | Ação de componente | Descrição |
 |--- |--- |
-| Adicionar tag | Organize ou gerencie componentes aplicando tags. Assim, o componente é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos. |
+| Tag | Organize ou gerencie componentes aplicando tags. Assim, o componente é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos. |
 | Marcar como favorito | Adicione o componente à sua lista de favoritos. Assim, ele é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos. |
 | Aprovar | Aprove o componente para torná-lo canônico. Assim, o componente é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos. |
 | Compartilhar | Aplica-se somente a segmentos. |
 | Excluir | Aplica-se somente a segmentos. |
 
-[Criação de métricas, segmentos e datas no YouTube](https://www.youtube.com/watch?v=XXJuNAte8E8&amp;index=25&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS) (2:51)
+Assista ao vídeo Criar métricas, segmentos e datas:
 
+>[!VIDEO](https://video.tv.adobe.com/v/23979)
