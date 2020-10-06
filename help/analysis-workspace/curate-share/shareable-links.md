@@ -3,10 +3,10 @@ description: Saiba como criar links compartilháveis para projetos ou visualiza�
 keywords: Analysis Workspace sharing
 title: Criar links compartilháveis
 translation-type: tm+mt
-source-git-commit: 814e02648607b6f06e2743cd054c14c892200b44
+source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '296'
+ht-degree: 93%
 
 ---
 
@@ -17,25 +17,25 @@ O Analysis Workspace oferece várias maneiras de compartilhar um projeto com seu
 
 ## Obter link do projeto {#project-link}
 
-Para compartilhar um link para o projeto completo, acesse **[!UICONTROL Compartilhar > obter link do projeto]**. Se o recipient do link não tiver recebido uma [função do projeto](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/curate-share/share-projects.html), os Administradores receberão a função **[!UICONTROL Pode editar]** e os não administradores a função **[!UICONTROL Pode duplicar]** experiências.
+Para compartilhar um link para o projeto completo, acesse **[!UICONTROL Compartilhar > Obter link do projeto]**. Se o recipient do link não tiver uma [função de projeto](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/curate-share/share-projects.html) atribuída, os administradores receberão a função **[!UICONTROL Pode editar]** e os não administradores receberão experiências **[!UICONTROL Pode duplicar]** experiências.
 
 ![](assets/get-project-link.png)
 
 ## Obter o painel ou link de visualização {#panel-link}
 
-Você também pode compartilhar um link para uma parte específica de um projeto, como um painel ou uma visualização individual. Por vezes, esse compartilhamento é chamado de intravinculação. Ele pode ser útil para chamar a atenção dos usuários para os principais insights do projeto.
+Você também pode compartilhar um link para uma parte específica de um projeto, como um painel ou uma visualização individual. Às vezes, esse compartilhamento é chamado de intravinculação. Ele pode ser útil para chamar a atenção de seus usuários para os principais insights do projeto.
 
-* Em qualquer cabeçalho do painel, clique com o botão direito do mouse em **[!UICONTROL Obter link do painel]**
+* Em qualquer cabeçalho do painel, clique com o botão direito do mouse no link **[!UICONTROL Obter painel]**
 * Em qualquer tabela ou cabeçalho de visualização, clique com o botão direito do mouse em **[!UICONTROL Obter link de visualização]**
 
-[Assista ao vídeo](https://www.youtube.com/watch?v=lvmAdKNfWQw) sobre como criar links e usá-los para direcionar recipient para partes específicas do seu projeto.
+[Assista ao vídeo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) sobre como criar links e usá-los para direcionar recipients para partes específicas do seu projeto.
 
 ![](assets/get-viz-link.png)
 
 ## Usar links em um índice {#TOC}
 
-Uma dica para aproveitar as várias opções de link é sempre incluir um índice na parte superior do projeto do Workspace. No índice, você pode vincular a outros projetos relevantes, painéis específicos e visualizações específicas. Dessa forma, o recipient navega pelo projeto com mais facilidade.
+Uma dica para aproveitar as várias opções de link é sempre incluir um índice na parte superior do projeto do Workspace. No índice, você pode vincular a outros projetos relevantes, painéis específicos e visualizações específicas. Dessa forma, o recipient do projeto consegue navegar com mais facilidade.
 
-[Assista ao vídeo](https://www.youtube.com/watch?v=Xo6fTguWm-M) sobre como criar um índice usando links e o editor de rich text do Workspace.
+[Assista ao vídeo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) sobre como construir um índice usando links e o editor de rich text do Workspace.
 
 ![](assets/toc.png)
