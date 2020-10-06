@@ -2,10 +2,10 @@
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 translation-type: tm+mt
-source-git-commit: 09dcb36b96d95276b357e0f1308a977f5db5d711
+source-git-commit: 7996f71206e2d94642c49eb0bdfd79e384dfd8a3
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 100%
+source-wordcount: '877'
+ht-degree: 99%
 
 ---
 
@@ -80,11 +80,11 @@ Os contêineres Sessão incluem valores de acordo com a ocorrência por visita:
 
 O contêiner Evento define quais eventos de página você deseja incluir ou excluir de um filtro. É o mais estrito dos contêineres disponível para permitir a identificação de cliques e visualizações de página específicos, nos quais a condição é verdadeira, o que lhe permite visualizar um único código de rastreamento, ou isolar um comportamento em uma seção específica do site. Você também pode desejar indicar um valor específico quando uma ação ocorre, como o canal de marketing quando um pedido é efetuado.
 
-Os contêineres Evento incluem valores de acordo com detalhamentos de página única:
+Os container de evento incluem detalhamentos de página única baseados em valores:
 
 * Produtos
 
-* Propriedades de lista
+* Props de lista
 
 * Dimensões de lista
 
