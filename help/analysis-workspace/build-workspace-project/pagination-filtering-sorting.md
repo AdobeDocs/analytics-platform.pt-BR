@@ -3,25 +3,21 @@ description: 'null'
 title: Paginação, filtragem e classificação de tabelas
 uuid: 53263cec-c378-459b-9689-6adaeb66e5c9
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 658561ae2f84ab1de87dbb224e3e1b663f64383f
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 100%
+source-wordcount: '92'
+ht-degree: 81%
 
 ---
 
 
 # Paginação, filtragem e classificação de tabelas
 
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+Para obter uma visão geral, assista a este tutorial em vídeo:
 
-Para ter uma visão geral, assista a este vídeo no YouTube:
+[Paginação, filtragem e classificação de tabelas no Analysis Workspace](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
 
-[Paginação, filtragem e classificação de tabelas no Analysis Workspace](https://www.youtube.com/watch?v=2zxpRPCGspg)
-
-## Opções de filtragem avançadas
+## Opções de filtragem avançadas {#section_36E92E31442B4EBCB052073590C1F025}
 
 Clicar no ícone de filtro e, em seguida, em Mostrar avançadas próximo a uma dimensão em uma tabela de forma livre permite filtrar usando o critério a seguir:
 
@@ -32,7 +28,7 @@ Clicar no ícone de filtro e, em seguida, em Mostrar avançadas próximo a uma d
 * Contém a frase
 * Não contém nenhum termo
 * Não contém a frase
-* Igual
+* Igual a
 * Não é igual
 * Começa com
 * Termina com
