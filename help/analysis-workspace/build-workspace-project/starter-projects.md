@@ -3,10 +3,10 @@ description: Modelos no Workspace
 title: Modelos
 uuid: d6d1b745-a684-41c1-879b-9f9a9503fe00
 translation-type: tm+mt
-source-git-commit: 43487b0dc9d0246fc4750fcc0175055899a198b5
+source-git-commit: bb75be2608a9eedaa856cfb5f0a233fff7f8c074
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 99%
+source-wordcount: '1395'
+ht-degree: 97%
 
 ---
 
@@ -59,7 +59,7 @@ Quando você abre um Workspace pela primeira vez, os modelos ficam disponíveis 
 
 Você pode usar esses modelos pré-preenchidos como estão ou adaptá-los às suas necessidades (adicionando ou substituindo métricas ou visualizações, por exemplo) e salvá-los com um novo nome.
 
-[Modelos padrão do Analysis Workspace no YouTube](https://www.youtube.com/watch?v=aRgYwPneVXg&amp;list=PL2tCx83mn7GuNnQdYGOtlyCu0V5mEZ8sS&amp;index=6) (2:46)
+>[!VIDEO](https://video.tv.adobe.com/v/23960) (2:46)
 
 Estes são os modelos disponíveis e as perguntas que cada modelo ajuda a responder.
 
@@ -81,16 +81,16 @@ Esses modelos padrão orientam você pela terminologia e etapas comuns para cria
 
 ### Comércio
 
-* **Magento: marketing e comércio**: esse modelo detalha sua conversão de comércio eletrônico por atribuição de canal de marketing, além de fornecer informações por palavra-chave de pesquisa, página de aterrissagem, localização geográfica e muito mais. Para ter uma visão geral, assista ao vídeo:
+* **Magento: Marketing e comércio**: Este modelo detalha sua conversão de comércio eletrônico por atribuição de canal de marketing, além de fornecer informações por palavra-chave de pesquisa, landing page, localização geográfica e muito mais. Para ter uma visão geral, assista ao vídeo:
 
->[!VIDEO](https://www.youtube.com/watch?v=AQOViVLEMHw)
+>[!VIDEO](https://video.tv.adobe.com/v/28164)
 
 ### Mídia
 
 * **Consumo de áudio**: que conteúdo está sendo mais consumido pelos usuários, resultando em interações?
 * **Recenticidade - Frequência - Fidelidade**: quem são meus leitores fiéis?
 
-### Dispositivos móveis
+### Dispositivo móvel
 
 >[!IMPORTANT]
 >
