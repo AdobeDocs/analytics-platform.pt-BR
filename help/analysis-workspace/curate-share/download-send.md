@@ -3,9 +3,9 @@ description: É possível baixar dados da Analysis Workspace copiando-os ou nos 
 title: Baixar arquivos PDF ou CSV
 uuid: 8af5f3d7-5870-4ed6-8a9f-ef290a48ef5f
 translation-type: tm+mt
-source-git-commit: 1f7771ced6e57b1fa288bd197d467dcd6de39b4f
+source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1044'
 ht-degree: 12%
 
 ---
@@ -96,4 +96,6 @@ Se você solicitar mais de um download por vez, receberá uma notificação de q
 | --- | --- |
 | Por que meu PDF baixado é uma página? | O Workspace não pagina os PDFs baixados no momento. |
 | É possível exportar mais de 50.000 itens com a opção &quot;Baixar itens como CSV&quot;? | Embora cada download possa conter até 50.000 itens de dimensão, você pode alterar a classificação da tabela para recuperar itens de cauda mais longos ou aplicar um filtro para baixar itens mais específicos. |
-| O que faz **[!UICONTROL Copiar visualização]** faz? | **[!UICONTROL Copiar visualização]** não é uma opção de exportação. Permite copiar uma visualização ou painel de um local no Workspace para outro. Por exemplo, de um painel para outro no mesmo projeto ou de um projeto para outro. Assista ao vídeo: >[!VIDEO](https://video.tv.adobe.com/v/23724) |
+| O que faz **[!UICONTROL Copiar visualização]** faz? | **[!UICONTROL Copiar visualização]** não é uma opção de exportação. Permite copiar uma visualização ou painel de um local no Workspace para outro. Por exemplo, de um painel para outro no mesmo projeto ou de um projeto para outro. Assista ao vídeo abaixo. |
+
+>[!VIDEO](https://video.tv.adobe.com/v/23724)
