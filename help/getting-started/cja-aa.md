@@ -1,11 +1,11 @@
 ---
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
-translation-type: ht
-source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
-workflow-type: ht
-source-wordcount: '879'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: b0b8d62eaa7ca539b04677c308fbb33345e110fe
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Intervalos de datas | O suporte ao Calendário personalizado está planejado. |
 | Métricas calculadas | Observe que qualquer métrica de cálculo existente no Analysis Workspace tradicional não será transferida para o CJA. |
 | Segmentos | Agora denominado &quot;Filtros&quot; - observe que qualquer segmento existente no Analysis Workspace tradicional não será transferido para o CJA. |
-| Detecção de anomalias | Suporte total a partir de setembro de 2020. |
+| Detecção de anomalias | Suporte completo. |
 | Attribution IQ | Suporte completo. |
 | Curadoria do projeto | Suporte completo. |
 | Vinculação de projetos | Suporte completo. |
@@ -33,6 +33,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Curadoria do componente VRS | Agora parte das Visualizações de dados. |
 | Processamento de tempo do relatório | O CJA depende exclusivamente do Processamento de tempo do relatório. |
 | Exclusão do GDPR | Observe que o GDPR agora é manipulado em coordenação com a [!UICONTROL Experience Platform] - o CJA herda qualquer alteração de dados que a [!UICONTROL Experience Platform] faz nos conjuntos de dados subjacentes. |
+| Permissões do usuário/Controles de acesso de dados | A CJA faz a distinção entre administradores e usuários de produtos Adobe Admin Console. Somente administradores de produtos podem 1) criar/atualizar/excluir conexões ou Visualizações de dados, 2) atualizar/excluir projetos, filtros ou métricas de cálculo que foram criadas por outros usuários e 3) compartilhar um projeto da Workspace para todos os usuários |
 
 ## Compatível com limitações
 
@@ -52,7 +53,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Recurso | Notas |
 | --- | --- |
 | Dimensões predefinidas do Analysis Workspace (por exemplo, Tipo de navegador, Tipo de referenciador, Canais de marketing, Número de visitas etc.) | O CJA não fornece essas dimensões nativamente. Para clientes que usam o ADC (Analytics Data Connector), algumas dessas dimensões estão disponíveis, mas não todas. Consulte nossa [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos e Analytics for Target (A4T) não são compatíveis. |
+| Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos, Analytics para Público alvo (A4T) e Visualizadores simultâneos de mídia não são suportados. |
 | eVar de merchandising | As eVars de merchandising funcionarão somente com conjuntos de dados do ADC, a menos que estejam em conformidade estrita com o mesmo esquema XDM (similar às limitações da lista de produtos acima). |
 | Filtragem de bot | Para conjuntos de dados do ADC (Analytics Data Connector), a filtragem de bot é aplicada. A lógica geral de filtragem de bot para outros conjuntos de dados não é executada pela [!UICONTROL Experience Platform] ou pelo CJA. |
 | Regras de processamento | Para conjuntos de dados do ADC, as regras de processamento ainda são aplicadas. |
@@ -65,7 +66,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Análise de contribuição | Suporte planejado. |
 | Segment IQ | Suporte planejado. |
 | Publicação de segmentos (envio de segmentos do Workspace para a Experience Cloud) | Suporte planejado. |
-| Permissões do usuário/Controles de acesso de dados | Todos os usuários no CJA têm os mesmos controles de acesso, o que significa que todos os usuários têm acesso a todas as conexões, visualizações de dados etc. Basicamente, todos os usuários são usuários de nível administrativo no CJA. Suporte previsto para 2020. |
 | Download do CSV | Suporte planejado. |
 | Relatórios/projetos agendados | Suporte planejado. |
 | Alertas | Suporte planejado. |
