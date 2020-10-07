@@ -3,9 +3,9 @@ description: Fatores que afetam o desempenho e as otimizações recomendadas do 
 title: Fatores de desempenho e otimização da Analysis Workspace
 uuid: de51d03d-d555-4f0e-b19c-4a8f140770fc
 translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+source-git-commit: 21bf268600c12dbf1db24dbc10028a0c29fc48a7
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2028'
 ht-degree: 20%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 20%
 
 Vários fatores podem influenciar o desempenho de um projeto dentro da Analysis Workspace. É importante saber quais são os contribuidores antes de você start construir um projeto para que você possa planejar e construir o projeto da maneira mais ideal. Esta página inclui uma lista de fatores que afetarão o desempenho e as otimizações recomendadas que você pode fazer para garantir o desempenho máximo no Analysis Workspace.
 
->[!IMPORTANT OBSERVAÇÃO]
+>[!IMPORTANT]
 >
 >A página Desempenho no Analysis Workspace está em versão limitada. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html)
 
