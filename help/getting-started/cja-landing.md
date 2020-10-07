@@ -1,9 +1,9 @@
 ---
 title: Guia do Customer Journey Analytics
 description: Página de aterrissagem do Customer Journey Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8cf9f257ccf2afd830a7f8e211c8e42b3f786e86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
 ht-degree: 100%
 
