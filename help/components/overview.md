@@ -1,11 +1,11 @@
 ---
 title: Visão geral dos componentes
 description: Saiba quais componentes o CJA oferece e como usá-los no relatórios.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '343'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -52,4 +52,4 @@ Há várias maneiras de gerenciar componentes (individualmente ou ao selecionar 
 
 Assista ao vídeo Criar métricas, segmentos e datas:
 
->[!VIDEO](https://video.tv.adobe.com/v/23979)
+>[!VIDEO](https://video.tv.adobe.com/v/23979?captions=por_br)
