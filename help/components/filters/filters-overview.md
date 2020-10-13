@@ -1,11 +1,11 @@
 ---
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '885'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Os filtros podem ser baseados em atributos (tipo de navegador, dispositivo, núm
 Você pode criar e salvar filtros no Construtor de filtros ou gerar filtros de uma visualização de Fallout (no Workspace). Além disso, filtros podem ser usados juntos como filtros empilhados.
 
 >[!IMPORTANT]
->Filtros são conhecidos como &quot;segmentos&quot; no Adobe Analytics. Renomeamos segmentos para filtros porque a Adobe Experience Platform [uma definição diferente de &quot;segmento&quot;](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html).
+>Filtros são conhecidos como “segmentos” no Adobe Analytics. Renomeamos os segmentos para filtros porque a Adobe Experience Platform tem [uma definição diferente de “segmento”](https://docs.adobe.com/content/help/pt-BR/experience-platform/segmentation/home.html).
 
 A filtragem inclui o [Construtor de filtros](/help/components/filters/create-filters.md) para construir segmentos e executar um pré-teste, e o [Gerenciador de filtros](/help/components/filters/manage-filters.md) para coletar, marcar, aprovar, definir a segurança e compartilhar filtros na organização.
 
@@ -73,7 +73,7 @@ Os contêineres Sessão incluem valores de acordo com a ocorrência por visita:
 
 O contêiner Evento define quais eventos de página você deseja incluir ou excluir de um filtro. É o mais estrito dos contêineres disponível para permitir a identificação de cliques e visualizações de página específicos, nos quais a condição é verdadeira, o que lhe permite visualizar um único código de rastreamento, ou isolar um comportamento em uma seção específica do site. Você também pode desejar indicar um valor específico quando uma ação ocorre, como o canal de marketing quando um pedido é efetuado.
 
-Os container de evento incluem detalhamentos de página única baseados em valores:
+Os contêineres de evento contam com detalhamentos de página única com base em valores:
 
 * Produtos
 * Props de lista
