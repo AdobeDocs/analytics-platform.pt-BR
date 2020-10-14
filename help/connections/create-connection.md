@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 59b949cf67c26226f4d337c566641f68e76b41ec
+source-git-commit: fb7b28c0525f7ac6bf8d8e346116c86952a438aa
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 100%
+source-wordcount: '1671'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ No lado direito, agora é possível configurar os conjuntos de dados adicionados
 
 1. **[!UICONTROL ID do conjunto de dados]**: essa ID é gerada automaticamente.
 
-1. **[!UICONTROL Carimbo de data/hora]**: adicionar conteúdo aqui
+1. **[!UICONTROL Carimbo de data e hora]**: Somente para conjuntos de dados de evento, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão a partir de schemas baseados em eventos em [!UICONTROL Experience Platform].
 
 1. **[!UICONTROL Esquema]**: é o [esquema](https://docs.adobe.com/content/help/pt-BR/experience-platform/xdm/schema/composition.html) que foi usado como base para criar o conjunto de dados na Adobe Experience Platform.
 
