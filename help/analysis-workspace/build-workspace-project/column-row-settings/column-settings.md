@@ -3,19 +3,19 @@ description: As configurações de coluna permitem que você configure a formata
 title: Configurações de coluna
 uuid: 151d66da-04f7-4d0f-985c-4fdd92bc1308
 translation-type: tm+mt
-source-git-commit: d49e07d14d1b202d9cc12f42d60083c052a1c364
+source-git-commit: 12172ab612db8ebb78bcf4b2c1b68f125c7d5a34
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # [!UICONTROL Configurações de coluna]
 
-[!UICONTROL Configurações da coluna] permite configurar a formatação de colunas, algumas das quais podem ser condicionais.
+As [!UICONTROL Configurações de coluna] permitem que você configure a formatação da coluna; alguns elementos podem ser condicionais.
 
-## Editar [!UICONTROL Configurações da coluna] {#column-settings}
+## Editar [!UICONTROL Configurações de coluna] {#edit-column-settings}
 
 Para acessar [!UICONTROL Configurações de coluna], arraste uma Tabela de forma livre para o projeto e clique no ícone de engrenagem no cabeçalho da coluna.
 
