@@ -2,9 +2,9 @@
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: b0b8d62eaa7ca539b04677c308fbb33345e110fe
+source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '871'
 ht-degree: 93%
 
 ---
@@ -41,7 +41,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | --- | --- |
 | Variável de produto | A variável de produto atualmente disponível para relatórios de dados que estão em conformidade com o esquema Evento de experiência (usando especificamente o objeto productListItems). |
 | Visualizações | Todas as visualizações são compatíveis, exceto a visualização do Mapa. |
-| Públicos-alvo do AAM | Se os clientes estiverem usando conjuntos de dados do [!UICONTROL Analytics Data Connector], esses dados farão parte dos dados ADC. |
 | Compartilhamento de projeto | O compartilhamento de projetos só é compatível entre usuários do CJA - não há compartilhamento de projetos entre o CJA e o Analysis Workspace tradicional. |
 | Sessões personalizadas | Suporte para todos os recursos personalizados de sessão que não sejam ocorrências em segundo plano móveis. |
 | Configurações de persistência de eVar | As eVars não fazem mais parte do CJA. No entanto, as configurações de persistência agora fazem parte das Visualizações de dados e estão disponíveis para todas as dimensões. Lembre-se de que a persistência se baseia no processamento de tempo do relatório, não no processamento da coleta de dados. Isso significa que toda a persistência se baseará no intervalo de datas do relatório em vez da totalidade dos dados. |
