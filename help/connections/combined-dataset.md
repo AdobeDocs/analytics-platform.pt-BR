@@ -1,18 +1,18 @@
 ---
 title: Conjuntos de dados de evento combinados
 description: Saiba como o CJA cria uma conexão combinando conjuntos de dados.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ef05a948cb2036db24c8e308695e3615613d98d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
 # Conjuntos de dados de evento combinados
 
-Ao criar uma conexão, o CJA combina todos os esquemas e conjuntos de dados em um único conjunto de dados. Esse &quot;conjunto de dados de evento combinado&quot; é o que o CJA usa para o relatórios. Ao incluir vários esquemas ou conjuntos de dados em uma conexão:
+Ao criar uma conexão, o CJA combina todos os esquemas e conjuntos de dados em um único conjunto de dados. Esse &quot;conjunto de dados combinados&quot; é o que o CJA usa para os relatórios. Ao incluir vários esquemas ou conjuntos de dados em uma conexão:
 
 * Os esquemas são combinados. Os campos de esquema duplicados são unidos.
 * A coluna &quot;ID de pessoa&quot; de cada conjunto de dados é unida em uma única coluna, independentemente do nome. Essa coluna é a base para identificar visitantes únicos no CJA.
@@ -20,7 +20,7 @@ Ao criar uma conexão, o CJA combina todos os esquemas e conjuntos de dados em u
 
 ## Exemplo
 
-Considere o exemplo a seguir. Você tem dois conjuntos de dados de evento, cada um com campos diferentes contendo dados diferentes.
+Considere o exemplo a seguir. Você tem dois conjuntos de dados de eventos, cada um com campos diferentes contendo dados diferentes.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Considere o exemplo a seguir. Você tem dois conjuntos de dados de evento, cada 
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  | `Triangle` | `3.1` |
 
-Quando você cria uma conexão usando esses dois conjuntos de dados de evento, a tabela a seguir é usada para o relatórios.
+Ao criar uma conexão usando esses dois conjuntos de dados de eventos, a tabela a seguir é usada para os relatórios.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -55,7 +55,7 @@ Quando você cria uma conexão usando esses dois conjuntos de dados de evento, a
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
 
-Esse conjunto de dados de evento combinado é o que é usado no relatórios. Não importa de que conjunto de dados uma linha é derivada; o CJA trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados o mesmo visitante exclusivo. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão.
+Esse conjunto de dados combinados de eventos é o que é usado nos relatórios. Não importa de que conjunto de dados uma linha é derivada; o CJA trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados o mesmo visitante exclusivo. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão.
 
 Este conceito também se aplica à atribuição. Não importa de que conjunto de dados uma linha é derivada; a atribuição funciona exatamente como se todos os eventos viessem de um único conjunto de dados. Usando as tabelas acima como exemplo:
 
