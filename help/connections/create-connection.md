@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: eb7d7d80ee07298f7d0fe308bdc93a3435f2c381
+source-git-commit: 64c77d3080bc2a36af4e80a854f10adce2632064
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 97%
+source-wordcount: '1819'
+ht-degree: 84%
 
 ---
 
@@ -60,7 +60,7 @@ No lado direito, agora é possível configurar os conjuntos de dados adicionados
 
 1. **[!UICONTROL ID do conjunto de dados]**: essa ID é gerada automaticamente.
 
-1. **[!UICONTROL Carimbo de data e hora]**: Somente para conjuntos de dados de evento, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão a partir de schemas baseados em eventos em [!UICONTROL Experience Platform].
+1. **[!UICONTROL Carimbo de data e hora]**: somente para conjuntos de dados de eventos, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão em esquemas baseados em eventos na [!UICONTROL Experience Platform].
 
 1. **[!UICONTROL Esquema]**: é o [esquema](https://docs.adobe.com/content/help/pt-BR/experience-platform/xdm/schema/composition.html) que foi usado como base para criar o conjunto de dados na Adobe Experience Platform.
 
@@ -100,22 +100,26 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 
 ![Habilitar conexão](assets/create-connection2.png)
 
-1. Para habilitar uma conexão, defina estas configurações:
+1. Para habilitar uma conexão, defina essas configurações para toda a conexão, ou seja, todos os conjuntos de dados na conexão:
 
    | Opção | Descrição |
-   |---|---|
+   | --- | --- |
    | [!UICONTROL Nomear a conexão] | Dê um nome descritivo à conexão. A conexão não pode ser salva sem um nome. |
    | [!UICONTROL Descrição] | Adicione mais detalhes para diferenciar essa conexão de outras pessoas. |
    | [!UICONTROL Conjuntos de dados] | Os conjuntos de dados incluídos nesta conexão. |
    | [!UICONTROL Importe automaticamente todos os novos conjuntos de dados nesta conexão, a partir de hoje.] | Selecione essa opção se quiser estabelecer uma conexão contínua, para que qualquer novo lote de dados adicionado aos conjuntos de dados nesta conexão continuem automaticamente fluindo para o [!UICONTROL Workspace]. |
-   | [!UICONTROL Importar todos os dados existentes] | Ao selecionar essa opção e salvar a conexão, todos os dados existentes (históricos) do [!DNL Experience Platform] de todos os conjuntos de dados que estão nessa conexão serão importados. No futuro, todos os dados históricos existentes para qualquer conjunto de dados novo adicionado a essa conexão salva também serão importados automaticamente. <br>**Observe que, uma vez que essa conexão é salva, essa configuração não pode ser alterada.** |
+   | [!UICONTROL Importar todos os dados existentes] | Quando você seleciona essa opção e salva a conexão, todos os dados existentes (históricos) de [!DNL Experience Platform] para todos os conjuntos de dados nesta conexão serão importados ou preenchidos retroativamente. No futuro, todos os dados históricos existentes para qualquer conjunto de dados novo adicionado a essa conexão salva também serão importados automaticamente. <br>**Observe que, uma vez que essa conexão é salva, essa configuração não pode ser alterada.** |
+   | [!UICONTROL Número médio de eventos diários] | É necessário especificar o número médio de eventos diários a serem importados (novos dados) **e** dados de preenchimento retroativo) para todos os conjuntos de dados na conexão. Isso permite que o Adobe aloce espaço suficiente para esses dados.<br>Se você não souber o número médio de eventos diários que sua empresa vai importar, é possível realizar um query SQL simples em [Serviços de Query Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) para descobrir.<!--Rohit to provide and make sure we include multiple datasets.--> |
 
-   **Lembre-se:**
+1. Clique em **[!UICONTROL Salvar e criar visualização de dados]**. Para obter a documentação, consulte [criar uma visualização de dados](/help/data-views/create-dataview.md).
 
-   * Se o tamanho cumulativo dos dados históricos de todos os conjuntos de dados na conexão exceder 1,5 bilhão de linhas, uma mensagem de erro indicará que você não pode importar essa quantidade de dados históricos. No entanto, você poderia adicionar um conjunto de dados com 1 bilhão de linhas de dados históricos, importar esses dados e, uma semana depois, adicionar outro conjunto de dados do mesmo tamanho e importar seus dados históricos.
-   * Priorizamos novos dados adicionados a um conjunto de dados na conexão, de modo que esses dados tenham a latência mais baixa.
-   * Todos os dados de preenchimento retroativo (históricos) são importados a uma taxa mais lenta (até 13 meses de dados, independentemente do tamanho).
+### Dados históricos de preenchimento retroativo
 
-1. Clique em **[!UICONTROL Salvar]**.
+**[!UICONTROL Importar todos os dados existentes]** permite preencher retroativamente os dados históricos. Lembre-se:
 
-A próxima etapa do fluxo de trabalho é [criar uma visualização de dados](/help/data-views/create-dataview.md).
+* Priorizamos novos dados adicionados a um conjunto de dados na conexão, de modo que esses novos dados tenham a latência mais baixa.
+* Qualquer dado de preenchimento retroativo (histórico) é importado em uma taxa mais lenta. A latência é influenciada pela quantidade de dados históricos que você tem, combinada com a variável **[!UICONTROL Número médio de eventos diários]** configuração selecionada. Por exemplo, se você tiver mais de um bilhão de linhas de dados por dia, mais 3 anos de dados históricos, isso pode levar várias semanas para importar. Por outro lado, se você tem menos de um milhão de linhas por dia e uma semana de dados históricos, isso levaria menos de uma hora.
+* O preenchimento retroativo se aplica a toda a conexão, não a cada conjunto de dados individualmente.
+* A variável [Conector de dados Adobe Analytics](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importações até 13 meses de dados, independentemente da sua dimensão.
+
+<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
