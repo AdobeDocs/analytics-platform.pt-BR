@@ -2,7 +2,7 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 619eaeabfbd0fb6a7205488075c1c9cfb0fd5a26
+source-git-commit: 3f57da53a377f357109a828721e7f3b2c964a1eb
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 83%
@@ -109,7 +109,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
    | [!UICONTROL Conjuntos de dados] | Os conjuntos de dados incluídos nesta conexão. |
    | [!UICONTROL Importe automaticamente todos os novos conjuntos de dados nesta conexão, a partir de hoje.] | Selecione essa opção se quiser estabelecer uma conexão contínua, para que qualquer novo lote de dados adicionado aos conjuntos de dados nesta conexão continuem automaticamente fluindo para o [!UICONTROL Workspace]. |
    | [!UICONTROL Importar todos os dados existentes] | Quando você seleciona essa opção e salva a conexão, todos os dados existentes (históricos) de [!DNL Experience Platform] para todos os conjuntos de dados nesta conexão serão importados ou preenchidos retroativamente. No futuro, todos os dados históricos existentes para qualquer conjunto de dados novo adicionado a essa conexão salva também serão importados automaticamente. Consulte também [Dados históricos de preenchimento retroativo](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) abaixo.<br>**Observe que, uma vez que essa conexão é salva, essa configuração não pode ser alterada.** |
-   | [!UICONTROL Número médio de eventos diários] | É necessário especificar o número médio de eventos diários a serem importados (novos dados) **e** dados de preenchimento retroativo) para todos os conjuntos de dados na conexão. Isso permite que o Adobe aloce espaço suficiente para esses dados.<br>Se você não souber o número médio de eventos diários que sua empresa vai importar, é possível realizar um query SQL simples em [Serviços de Query Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) para descobrir. Estas são as seleções para esta opção: ![eventos diários](assets/daily_size.png) |
+   | [!UICONTROL Número médio de eventos diários] | É necessário especificar o número médio de eventos diários a serem importados (novos dados) **e** dados de preenchimento retroativo) para todos os conjuntos de dados na conexão. Isso permite que o Adobe aloce espaço suficiente para esses dados.<br>Se você não souber o número médio de eventos diários que sua empresa vai importar, é possível realizar um query SQL simples em [Serviços de Query Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) para descobrir. Estas são as seleções para esta opção:<br>![eventos diários](assets/daily_size.png) |
 
 1. Clique em **[!UICONTROL Salvar e criar visualização de dados]**. Para obter a documentação, consulte [criar uma visualização de dados](/help/data-views/create-dataview.md).
 
