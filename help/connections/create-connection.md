@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 3f57da53a377f357109a828721e7f3b2c964a1eb
+source-git-commit: f1dcbd209a9b523db1c18ad0d81fcca0b7877a19
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 83%
+source-wordcount: '1879'
+ht-degree: 82%
 
 ---
 
@@ -109,7 +109,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
    | [!UICONTROL Conjuntos de dados] | Os conjuntos de dados incluídos nesta conexão. |
    | [!UICONTROL Importe automaticamente todos os novos conjuntos de dados nesta conexão, a partir de hoje.] | Selecione essa opção se quiser estabelecer uma conexão contínua, para que qualquer novo lote de dados adicionado aos conjuntos de dados nesta conexão continuem automaticamente fluindo para o [!UICONTROL Workspace]. |
    | [!UICONTROL Importar todos os dados existentes] | Quando você seleciona essa opção e salva a conexão, todos os dados existentes (históricos) de [!DNL Experience Platform] para todos os conjuntos de dados nesta conexão serão importados ou preenchidos retroativamente. No futuro, todos os dados históricos existentes para qualquer conjunto de dados novo adicionado a essa conexão salva também serão importados automaticamente. Consulte também [Dados históricos de preenchimento retroativo](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) abaixo.<br>**Observe que, uma vez que essa conexão é salva, essa configuração não pode ser alterada.** |
-   | [!UICONTROL Número médio de eventos diários] | É necessário especificar o número médio de eventos diários a serem importados (novos dados) **e** dados de preenchimento retroativo) para todos os conjuntos de dados na conexão. Isso permite que o Adobe aloce espaço suficiente para esses dados.<br>Se você não souber o número médio de eventos diários que sua empresa vai importar, é possível realizar um query SQL simples em [Serviços de Query Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) para descobrir. Estas são as seleções para esta opção:<br>![eventos diários](assets/daily_size.png) |
+   | [!UICONTROL Número médio de eventos diários] | É necessário especificar o número médio de eventos diários a serem importados (novos dados) **e** dados de preenchimento retroativo) para todos os conjuntos de dados na conexão. Selecione uma opção no menu suspenso. Isso permite que o Adobe aloce espaço suficiente para esses dados.<br>Se você não souber o número médio de eventos diários que sua empresa vai importar, é possível realizar um query SQL simples em [Serviços de Query Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) para descobrir. |
 
 1. Clique em **[!UICONTROL Salvar e criar visualização de dados]**. Para obter a documentação, consulte [criar uma visualização de dados](/help/data-views/create-dataview.md).
 
@@ -117,6 +117,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 
 **[!UICONTROL Importar todos os dados existentes]** permite preencher retroativamente os dados históricos. Lembre-se:
 
+* Removemos a limitação de preenchimento retroativo (importação de dados históricos). Anteriormente, você poderia preencher retroativamente um máximo de 2,5 bilhões de linhas por conta própria e, caso contrário, precisaria de envolvimento com a engenharia. Agora, você pode preencher os dados por conta própria, sem qualquer limitação.
 * Priorizamos novos dados adicionados a um conjunto de dados na conexão, de modo que esses novos dados tenham a latência mais baixa.
 * Qualquer dado de preenchimento retroativo (histórico) é importado em uma taxa mais lenta. A latência é influenciada pela quantidade de dados históricos que você tem, combinada com a variável **[!UICONTROL Número médio de eventos diários]** configuração selecionada. Por exemplo, se você tiver mais de um bilhão de linhas de dados por dia, mais 3 anos de dados históricos, isso pode levar várias semanas para importar. Por outro lado, se você tem menos de um milhão de linhas por dia e uma semana de dados históricos, isso levaria menos de uma hora.
 * O preenchimento retroativo se aplica a toda a conexão, não a cada conjunto de dados individualmente.
