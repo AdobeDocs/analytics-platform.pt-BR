@@ -1,17 +1,17 @@
 ---
 description: Compartilhamento de projetos e funções de projeto no Workspace
 keywords: Analysis Workspace sharing
-title: Compartilhar projetos do Workspace
+title: Compartilhar projetos
 translation-type: tm+mt
-source-git-commit: afe5b341ea1b442c23561299fbffce59dae45930
+source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 94%
+source-wordcount: '1100'
+ht-degree: 100%
 
 ---
 
 
-# Compartilhar projetos do Workspace
+# Compartilhar projetos
 
 O compartilhamento disponibiliza um projeto para outros usuários do Analysis Workspace em sua organização. Qualquer [preparação](curate.md) aplicada será refletida quando os recipients abrirem o projeto.
 
@@ -30,7 +30,7 @@ O compartilhamento disponibiliza um projeto para outros usuários do Analysis Wo
 
 ### Nenhuma função atribuída (recipient de link do projeto)
 
-Se um recipient não receber uma função e receber uma [link](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) ao projeto (**[!UICONTROL Compartilhar]>[!UICONTROL Obter link do projeto]**), eles serão colocados em uma função por padrão. Os administradores recebem a função **[!UICONTROL Pode editar]** e os não administradores recebem a função **[!UICONTROL Pode duplicar]**.
+Se uma função não for atribuída a um recipient e ele receber um [link](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) para o projeto (**[!UICONTROL Compartilhar] > [!UICONTROL Obter link do projeto]**), ele será colocado em uma função por padrão. Os administradores recebem a função **[!UICONTROL Pode editar]** e os não administradores recebem a função **[!UICONTROL Pode duplicar]**.
 
 ### Várias funções atribuídas
 
@@ -38,7 +38,7 @@ Se um recipient for colocado em várias funções, ele sempre terá a maior expe
 
 ### Administradores e funções
 
-Os administradores colocados em uma função **[!UICONTROL Pode duplicar]** ou **[!UICONTROL Pode visualizar]** receberão essas experiências limitadas quando abrirem um projeto. Se desejar, um Administrador pode aumentar sua função para **[!UICONTROL Pode editar]** a qualquer momento por meio de **[!UICONTROL Componentes]>[!UICONTROL Projetos]**.
+Os administradores colocados em uma função **[!UICONTROL Pode duplicar]** ou **[!UICONTROL Pode visualizar]** receberão essas experiências limitadas quando abrirem um projeto. Se desejar, um Administrador pode aumentar sua função para **[!UICONTROL Pode editar]** a qualquer momento por meio de **[!UICONTROL Componentes] > [!UICONTROL Projetos]**.
 
 ## Adicionar recipients ao projeto compartilhado {#Add}
 
@@ -53,7 +53,7 @@ Após compartilhados, esses componentes aparecem no menu suspenso de componentes
 1. (Opcional) Defina esta página como a landing page para recipients.
 Essa configuração não persiste: é uma ação única no momento do compartilhamento.
 1. Clique em Compartilhar.
-Você também pode clicar em **[!UICONTROL Preparar e compartilhar]** para aplicar automaticamente a preparação do projeto. Se um projeto já tiver sido compartilhado, esses botões dirão **[!UICONTROL Atualizar]** e **[!UICONTROL Preparar e atualizar]**. Saiba mais sobre [Preparação de projeto](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/curate.html).
+Você também pode clicar em **[!UICONTROL Preparar e compartilhar]** para aplicar automaticamente a preparação do projeto. Se um projeto já tiver sido compartilhado, esses botões dirão **[!UICONTROL Atualizar]** e **[!UICONTROL Preparar e atualizar]**. Saiba mais sobre [Preparação de projeto](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/curate-share/curate.html).
 
 ![](assets/share-proj-modal.png)
 
@@ -66,11 +66,11 @@ Todos os usuários podem compartilhar projetos em grupos, que são uma coleção
 
 ## Compartilhar um link de projeto {#Links}
 
-Você pode obter um link para um projeto em **[!UICONTROL Compartilhar]>[!UICONTROL Obter link de projeto]**. Quando clicados, os recipients deverão fazer logon antes de acessar o projeto. Se o recipient não tiver sido colocado em uma função, ele receberá uma função padrão. Os administradores recebem a função **[!UICONTROL Pode editar]** e os não administradores recebem a função **[!UICONTROL Pode duplicar]**. [Saiba mais](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) sobre como criar links compartilháveis para projetos do Workspace.
+Você pode obter um link para um projeto em **[!UICONTROL Compartilhar] > [!UICONTROL Obter link de projeto]**. Quando clicados, os recipients deverão fazer logon antes de acessar o projeto. Se o recipient não tiver sido colocado em uma função, ele receberá uma função padrão. Os administradores recebem a função **[!UICONTROL Pode editar]** e os não administradores recebem a função **[!UICONTROL Pode duplicar]**. [Saiba mais](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) sobre como criar links compartilháveis para projetos do Workspace.
 
 ## Compartilhar projetos no Gerenciador de projetos {#Manager}
 
-Os projetos também podem ser compartilhados em **[!UICONTROL Componentes]>[!UICONTROL Projetos]**. Um único projeto pode ser compartilhado seguindo as mesmas etapas acima.  Se vários projetos forem selecionados para compartilhamento, os recipients serão adicionados à lista existente de recipients para cada projeto.
+Os projetos também podem ser compartilhados em **[!UICONTROL Componentes] > [!UICONTROL Projetos]**. Um único projeto pode ser compartilhado seguindo as mesmas etapas acima.  Se vários projetos forem selecionados para compartilhamento, os recipients serão adicionados à lista existente de recipients para cada projeto.
 
 Por exemplo:
 
@@ -89,6 +89,6 @@ Com os projetos A e B selecionados, os recipients 4 e 7 são adicionados às lis
 | Pergunta | Resposta |
 |---|---|
 | O que acontece se dois editores salvam um projeto ao mesmo tempo? | As alterações não são mescladas e a última versão do projeto salva será mantida. Atualmente, o Analysis Workspace não oferece suporte à colaboração em tempo real. |
-| Como administrador, que experiência de projeto verei? | Os administradores colocados em uma função **[!UICONTROL Pode duplicar]** ou **[!UICONTROL Pode visualizar]** receberão essas experiências limitadas quando abrirem um projeto. Se desejar, um Administrador pode aumentar sua função para **[!UICONTROL Pode editar]** a qualquer momento por meio de **[!UICONTROL Componentes]>[!UICONTROL Projetos]**. |
+| Como administrador, que experiência de projeto verei? | Os administradores colocados em uma função **[!UICONTROL Pode duplicar]** ou **[!UICONTROL Pode visualizar]** receberão essas experiências limitadas quando abrirem um projeto. Se desejar, um Administrador pode aumentar sua função para **[!UICONTROL Pode editar]** a qualquer momento por meio de **[!UICONTROL Componentes] > [!UICONTROL Projetos]**. |
 | O que acontece se um recipient é colocado em uma função como indivíduo e outra como membro de um grupo? | Se um recipient for colocado em várias funções, ele sempre receberá a experiência mais alta. Por exemplo, se um recipient receber a função **[!UICONTROL Pode editar]** como um indivíduo e a função **[!UICONTROL Pode visualizar]** como membro de um grupo, ele receberá uma experiência de projeto **[!UICONTROL Pode editar]**. |
-| Que experiência um recipient obtém se abrir um link de projeto? | Os recipients recebem a função que você os colocou no modal de compartilhamento. Se uma função não for atribuída a um recipient e ele receber um link para o projeto (**[!UICONTROL Compartilhar]>[!UICONTROL Obter link do projeto]**), ele será colocado em uma função por padrão. Os administradores recebem a função **[!UICONTROL Pode editar]** e os não administradores recebem a função **[!UICONTROL Pode duplicar]**. |
+| Que experiência um recipient obtém se abrir um link de projeto? | Os recipients recebem a função que você os colocou no modal de compartilhamento. Se uma função não for atribuída a um recipient e ele receber um link para o projeto (**[!UICONTROL Compartilhar] > [!UICONTROL Obter link do projeto]**), ele será colocado em uma função por padrão. Os administradores recebem a função **[!UICONTROL Pode editar]** e os não administradores recebem a função **[!UICONTROL Pode duplicar]**. |
