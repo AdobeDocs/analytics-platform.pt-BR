@@ -3,19 +3,15 @@ description: A preparação permite limitar os componentes antes de compartilhar
 keywords: Analysis Workspace curation
 title: 'Preparar projetos do '
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '489'
 ht-degree: 100%
 
 ---
 
 
 # Preparar projetos do 
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 A preparação permite limitar os componentes (dimensões, métricas, segmentos, intervalos de datas) antes de compartilhar um projeto. Quando um recipient abrir o projeto, ele verá um conjunto limitado de componentes que você preparou para eles. A preparação é uma etapa opcional, mas recomendada, antes de compartilhar um projeto.
 
@@ -43,6 +39,7 @@ Quando um recipient abrir um projeto preparado, ele verá apenas o conjunto prep
 ## Remover preparação do projeto
 
 Para remover a preparação do projeto e restaurar o conjunto completo de componentes no painel esquerdo:
+
 1. Clique em **[!UICONTROL Compartilhar]** > **[!UICONTROL Preparar dados do projeto]**.
 1. Clique em **[!UICONTROL Remover preparação]**
 1. Clique em **[!UICONTROL Concluído]**.
