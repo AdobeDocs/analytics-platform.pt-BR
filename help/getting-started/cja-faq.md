@@ -1,11 +1,11 @@
 ---
 title: Perguntas frequentes sobre Customer Journey Analytics
 description: Customer Journey Analytics - Perguntas frequentes.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d700146427505e464df4006204f730751e315524
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '824'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 96%
 
 | Pergunta | Resposta |
 | --- | --- |
-| O que isso significa para nosso produto tradicional do Adobe Analytics? | O Customer Journey Analytics é nosso produto de análise da próxima geração. A evolução dos nossos produtos atuais para o Customer Journey Analytics levará anos e precisará de muita coordenação conjunta. Para obter mais informações, consulte [Suporte a recursos de Customer Journey Analytics](/help/getting-started/cja-aa.md). |
+| O que isso significa para nosso produto tradicional do Adobe Analytics? | O Customer Journey Analytics é nosso produto de análise da próxima geração. A evolução dos nossos produtos atuais para o Customer Journey Analytics levará anos e precisará de muita coordenação conjunta. Para obter mais informações, consulte [Suporte aos recursos do Customer Journey Analytics](/help/getting-started/cja-aa.md). |
 | É possível compartilhar segmentos do Customer Journey Analytics com a AEP ou outras soluções? | Ainda não. Estamos buscando formas novas e inovadoras de compartilhar segmentos do Customer Journey Analytics para a AEP no futuro, que não tenham um atraso tão grande. Dito isso, você pode compartilhar a saída dos Serviços de consulta com o Perfil unificado, como uma possível solução alternativa. |
 | O que aconteceu com minha antiga configuração do eVar? | eVars, props e eventos no sentido tradicional do Adobe Analytics não existem mais no Customer Journey Analytics. Você tem elementos de esquema ilimitados (dimensões, métricas, campos de lista). Portanto, todas as configurações de atribuição que você costumava aplicar durante o processo de coleta de dados agora são aplicadas no momento da consulta. |
 | Onde estão todas as minhas configurações de sessão e persistência de variável agora? | O Customer Journey Analytics aplica todas essas configurações no momento do relatório e essas configurações agora residem na Exibição de dados. As alterações nessas configurações agora são retroativas e você pode ter várias versões usando várias Exibições de dados! |
