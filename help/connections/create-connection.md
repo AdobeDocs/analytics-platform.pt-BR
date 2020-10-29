@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 translation-type: tm+mt
-source-git-commit: 240c0d33eb3db8bd3618698cac7f61f88048e953
+source-git-commit: 55347b8704fa93bdc833faec68b8da6dd589420b
 workflow-type: tm+mt
-source-wordcount: '1885'
-ht-degree: 81%
+source-wordcount: '1957'
+ht-degree: 78%
 
 ---
 
@@ -109,7 +109,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
    | [!UICONTROL Conjuntos de dados] | Os conjuntos de dados incluídos nesta conexão. |
    | [!UICONTROL Importe automaticamente todos os novos conjuntos de dados nesta conexão, a partir de hoje.] | Selecione essa opção se quiser estabelecer uma conexão contínua, para que qualquer novo lote de dados adicionado aos conjuntos de dados nesta conexão continuem automaticamente fluindo para o [!UICONTROL Workspace]. |
    | [!UICONTROL Importar todos os dados existentes] | Quando você seleciona essa opção e salva a conexão, todos os dados existentes (históricos) de [!DNL Experience Platform] para todos os conjuntos de dados nesta conexão serão importados ou preenchidos retroativamente. No futuro, todos os dados históricos existentes para qualquer conjunto de dados novo adicionado a essa conexão salva também serão importados automaticamente. Consulte também [Dados históricos de preenchimento retroativo](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) abaixo.<br>**Observe que, uma vez que essa conexão é salva, essa configuração não pode ser alterada.** |
-   | [!UICONTROL Número médio de eventos diários] | É necessário especificar o número médio de eventos diários a serem importados (novos dados) **e** dados de preenchimento retroativo) para todos os conjuntos de dados na conexão. Selecione uma opção no menu suspenso. Isso permite que o Adobe aloce espaço suficiente para esses dados.<br>Se você não souber o número médio de eventos diários que sua empresa vai importar, é possível realizar um query SQL simples em [Serviços de Query Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) para descobrir. O query seria assim:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;` |
+   | [!UICONTROL Número médio de eventos diários] | É necessário especificar o número médio de eventos diários a serem importados (novos dados) **e** dados de preenchimento retroativo) para todos os conjuntos de dados na conexão. Selecione uma opção no menu suspenso. Isso permite que o Adobe aloce espaço suficiente para esses dados.<br>Se você não souber o número médio de eventos diários que sua empresa vai importar, é possível realizar um query SQL simples em [Serviços de Query Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) para descobrir.<br>Consulte &quot;Calcular o número médio de eventos diários&quot; abaixo. |
 
 1. Clique em **[!UICONTROL Salvar e criar visualização de dados]**. Para obter a documentação, consulte [criar uma visualização de dados](/help/data-views/create-dataview.md).
 
@@ -123,4 +123,13 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 * O preenchimento retroativo se aplica a toda a conexão, não a cada conjunto de dados individualmente.
 * A variável [Conector de dados Adobe Analytics](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importações até 13 meses de dados, independentemente da sua dimensão.
 
-<!--If you do not know the average number of daily events your company is going to import, you can do a simple SQL query in [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) to find out. Rohit to provide and make sure we include multiple datasets.-->
+### Calcular o número médio de eventos diários
+
+Esse cálculo deve ser feito para cada conjunto de dados relacionado.
+
+1. Ir para [Serviços de Query Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) e criar um novo query.
+
+1. O query seria assim:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+
+* Neste exemplo, &quot;analytics_demo_data&quot; é o nome do conjunto de dados.
+* Execute o `Show Tables` query para mostrar todos os conjuntos de dados existentes no AEP.
