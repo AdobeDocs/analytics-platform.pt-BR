@@ -3,19 +3,15 @@ description: Projetos somente visualização no Workspace
 keywords: View-only projects
 title: Projetos do somente para visualização
 translation-type: tm+mt
-source-git-commit: b1e1548d05859f392902bb71f946fae01c5cb8c8
+source-git-commit: 9af9d7331d70fa37e1f138cb5a4b4064c34fec5e
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '246'
 ht-degree: 100%
 
 ---
 
 
 # Projetos do somente para visualização
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Você pode compartilhar projetos &quot;somente para visualização&quot; com os recipients por meio do [Fluxo de trabalho de compartilhamento do projeto](/help/analysis-workspace/curate-share/share-projects.md). Os recipient colocados na função Pode visualizar terão uma experiência de projeto mais limitada. Essa opção pode ser útil se você estiver compartilhando um projeto com usuários menos familiarizados com a estrutura de dados da sua organização, com o Analysis Workspace ou o Adobe Analytics em geral, mas ainda assim quiser que eles consumam dados e insights em um ambiente seguro.
 
@@ -40,7 +36,7 @@ As interações desativadas em um projeto somente visualização incluem:
 Algumas das interações ativadas mais importantes em um projeto somente visualização incluem:
 
 | Área | Interações ativadas |
-|---|---|
+| --- | --- |
 | Tabela de forma livre | <ul><li>Paginação e classificação</li><li>Passagem</li><li>Seleções de células que atualizam visualizações vinculadas</li><li>Clique com o botão direito do mouse em > Obter link de visualização</li><li>Clique com o botão direito do mouse em > Copiar para a área de transferência</li></ul> |
 | Visualizações | <ul><li>Clicar para ativar/desativar legenda</li><li>Passagem</li><li>Clique com o botão direito do mouse em > Obter link de visualização</li><li>Recolher/expandir</li><li>Fluxo - expandir nós de fluxo</li><li>Mapa - zoom</li></ul> |
 | Painéis | <ul><li>Filtros suspensos interativos</li><li>Clique com o botão direito do mouse em > Obter link do painel</li><li>Recolher/expandir</li></ul> |
