@@ -1,11 +1,11 @@
 ---
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
-translation-type: ht
-source-git-commit: b870cf19c05d92de33edfbc0a6142b7b146256d3
-workflow-type: ht
-source-wordcount: '871'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
+workflow-type: tm+mt
+source-wordcount: '945'
+ht-degree: 94%
 
 ---
 
@@ -46,6 +46,8 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Configurações de persistência de eVar | As eVars não fazem mais parte do CJA. No entanto, as configurações de persistência agora fazem parte das Visualizações de dados e estão disponíveis para todas as dimensões. Lembre-se de que a persistência se baseia no processamento de tempo do relatório, não no processamento da coleta de dados. Isso significa que toda a persistência se baseará no intervalo de datas do relatório em vez da totalidade dos dados. |
 | Classificações | Agora chamados de &quot;Conjuntos de dados de pesquisa&quot;, eles não são importados automaticamente do Analytics tradicional. Eles terão que ser carregados para a AEP antes de serem disponibilizados no CJA. |
 | Atributos do cliente | Agora, chamados de &quot;Conjuntos de dados de perfis&quot;, eles não são importados automaticamente da Experience Cloud, mas precisarão ser carregados para a AEP antes de estarem disponíveis no CJA. |
+| Dimensões de dispositivo, navegador, tecnologia | Essas dimensões são incluídas automaticamente quando um conjunto de dados AEP inclui campos de schema XDM específicos e está em conformidade com a classe de Evento de experiência XDM. |
+| Métricas e dimensões de Entradas, Saídas e Tempo gasto | Suportado (Entradas e Saídas agora são chamadas de Start de sessão e Términos de sessão) e são calculados de uma maneira ligeiramente diferente. |
 
 ## Suporte parcial
 
@@ -66,6 +68,10 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Segment IQ | Suporte planejado. |
 | Publicação de segmentos (envio de segmentos do Workspace para a Experience Cloud) | Suporte planejado. |
 | Download do CSV | Suporte planejado. |
+| Desduplicação de métrica | Suporte planejado. |
+| Calendários personalizados | Suporte planejado. |
+| Desduplicação de métrica | Suporte planejado. |
+| Persistência da variável de comercialização | Suporte planejado. |
 | Relatórios/projetos agendados | Suporte planejado. |
 | Alertas | Suporte planejado. |
 | Calendários personalizados | Suporte planejado. |
