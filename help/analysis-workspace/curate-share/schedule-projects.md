@@ -4,15 +4,19 @@ keywords: Analysis Workspace
 title: Gerenciador de agendamento de projetos
 uuid: 28e3e0de-3cca-40b1-a9de-93a10bd31646
 translation-type: tm+mt
-source-git-commit: 6f8973fe6277f3b28b13a61cd65d630398fb3aaa
+source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '185'
 ht-degree: 100%
 
 ---
 
 
 # Gerenciador de agendamento de projetos
+
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Gerencie projetos do Analysis Workspace.
 
