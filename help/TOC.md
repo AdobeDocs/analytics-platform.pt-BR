@@ -16,10 +16,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: a5f7a17d99d5ea7c8f944d02fb304bddf759030a
+source-git-commit: 1a1b439f4b2c8d7a03dd6431edd5271fc5af0b18
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '404'
+ht-degree: 99%
 
 ---
 
@@ -47,21 +47,21 @@ ht-degree: 100%
    + Criar um projeto do Workspace {#build-workspace-project}
       + [Criar projeto - visão geral](analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Salvar projetos](analysis-workspace/build-workspace-project/save-projects.md)
-      + [Modelos de projeto](analysis-workspace/build-workspace-project/starter-projects.md)
-      + Configurações de coluna e linha {#column-row-settings}
-         + [Configurações de coluna](analysis-workspace/build-workspace-project/column-row-settings/column-settings.md)
-         + [Configurações de linha](analysis-workspace/build-workspace-project/column-row-settings/table-settings.md)
-         + [Itens dinâmicos vs. estáticos](analysis-workspace/build-workspace-project/column-row-settings/manual-vs-dynamic-rows.md)
-      + [Configurações Desfazer e Refazer](analysis-workspace/build-workspace-project/undo-redo.md)
-      + [Teclas de atalho disponíveis na Analysis Workspace](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
-      + [Paginação, filtragem e classificação de tabelas](analysis-workspace/build-workspace-project/pagination-filtering-sorting.md)
+      + [Modelos](analysis-workspace/build-workspace-project/starter-projects.md)
+      + [Teclas de atalho (atalhos)](analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Paletas de cores](analysis-workspace/build-workspace-project/color-palettes.md)
       + [Exibir densidade](analysis-workspace/build-workspace-project/view-density.md)
-      + [Totais do Workspace](analysis-workspace/build-workspace-project/workspace-totals.md)
    + Visualizações {#visualizations}
       + [Visão geral das visualizações](analysis-workspace/visualizations/freeform-analysis-visualizations.md)
       + [Gerenciar fontes de dados](analysis-workspace/visualizations/t-sync-visualization.md)
-      + [Tabela de forma livre](analysis-workspace/visualizations/freeform-table.md)
+      + Tabela de forma livre {#freeform-table}
+         + [Tabela de forma livre](analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + Configurações de coluna e linha {#column-row-settings}
+            + [Configurações de coluna](analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
+            + [Configurações de linha](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
+            + [Itens dinâmicos vs. estáticos](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
+         + [Paginação, filtragem e classificação de tabelas](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
+         + [Totais do Workspace](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Tabela de coorte {#cohort-table}
          + [O que é a Análise de coorte?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Configurar um relatório de análise de coorte](analysis-workspace/visualizations/cohort-table/t-cohort.md)
