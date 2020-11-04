@@ -1,19 +1,17 @@
 ---
-description: Interações de teclado, teclas de atalho e comportamentos para apontar e clicar disponíveis no Analysis Workspace.
+description: Interações de teclado, teclas de atalho e comportamentos para apontar e clicar em comportamentos disponíveis no Analysis Workspace.
 keywords: Analysis Workspace
-title: Teclas de atalho (atalhos) disponíveis no Analysis Workspace
-topic: Reports and analytics
-uuid: 1ee93ce3-acab-44f8-abdc-9a68ced35d32
+title: Teclas de atalho (atalhos)
 translation-type: tm+mt
-source-git-commit: 158c9da54f7d5dcdd0cca6223b5d4833df53abb7
+source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 77%
+source-wordcount: '306'
+ht-degree: 98%
 
 ---
 
 
-# Teclas de atalho (atalhos) disponíveis no Analysis Workspace
+# Teclas de atalho (atalhos)
 
 Teclas de atalho (atalhos do teclado) estão disponíveis no Analysis Workspace para navegação, análise e democratização ininterruptas.
 
@@ -28,12 +26,12 @@ Observação: `CTRL` = Windows e `command` = Mac
 | Ir para o painel Painéis | alt + shift + 1 |
 | Ir para o painel Visualizações | alt + shift + 2 |
 | Ir para o painel Componentes | alt + shift + 3 |
-| Recolher/Expandir todos os painéis | alt + m |
+| Recolher/expandir todos os painéis | alt + m |
 | Recolher/expandir painel ativo | alt + ctrl + m |
-| Move para o próximo painel | alt + Tecla direita |
-| Mover para o painel anterior | alt + Tecla Esquerda |
+| Mover para o próximo painel | alt + Seta direita |
+| Mover para o painel anterior | alt + Seta esquerda |
 
-## ações de análise
+## Ações de análise
 
 | Ação | Atalho |
 |---|---|
@@ -54,12 +52,12 @@ Observação: `CTRL` = Windows e `command` = Mac
 
 | Ação | Atalho |
 |---|---|
-| Novo Analytics para o painel Públicos alvos | alt + g |
+| Novo painel Analytics for Target | alt + g |
 | Novo painel de atribuição | alt + e |
 | Novo painel em branco | alt + b |
 | Novo painel de forma livre | alt + a |
 | Painel de visualizadores simultâneos de novas mídias | alt + h |
-| Novo Painel Quick Insights | alt + f |
+| Novo painel Quick Insights | alt + f |
 | Novo painel de Comparação de segmentos | alt + c |
 | Nova tabela de forma livre | alt + 1 |
 | Novo gráfico de linha | alt + 2 |
