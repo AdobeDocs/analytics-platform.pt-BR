@@ -2,10 +2,10 @@
 title: Perguntas frequentes sobre Customer Journey Analytics
 description: Customer Journey Analytics - Perguntas frequentes.
 translation-type: tm+mt
-source-git-commit: 830e7d71ad38539d1a73fe2df9f8886956f57acc
+source-git-commit: 1f8526e0b48e334a62776eb2ca4fbf09febf4dd4
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 42%
+source-wordcount: '1296'
+ht-degree: 41%
 
 ---
 
@@ -61,7 +61,7 @@ Quando se trata de eliminação, estamos preocupados com seis componentes: sandb
 | Excluir um schema em [!UICONTROL Adobe Experience Platform], mas não os conjuntos de dados associados a este schema? | [!UICONTROL Adobe Experience Platform] não permite a exclusão de schemas que têm um ou mais conjuntos de dados associados a eles. No entanto, um Administrador com o conjunto apropriado de direitos pode excluir os conjuntos de dados primeiro e, em seguida, excluir o schema. |
 | Excluir um conjunto de dados em [!UICONTROL Adobe Experience Platform]? | A exclusão de um conjunto de dados no AEP interromperá o fluxo de dados desse conjunto de dados para qualquer Conexão que inclua esse conjunto de dados. Todos os dados desse conjunto de dados não são excluídos automaticamente das Conexões CJA associadas. |
 | Excluir um conjunto de dados em [!UICONTROL Customer Journey Analytics]? | Atualmente, não é possível excluir um conjunto de dados em uma conexão que foi salva. Você teria que excluir toda a conexão e o start. (No entanto, você pode excluir um conjunto de dados em [!UICONTROL Adobe Experience Platform].) |
-| Excluir um lote de um conjunto de dados (em [!UICONTROL Adobe Experience Platform])? | Se um lote for excluído de um conjunto de dados AEP, o mesmo lote será removido de qualquer Conexão CJA que contenha esse lote específico. |
+| Excluir um lote de um conjunto de dados (em [!UICONTROL Adobe Experience Platform])? | Se um lote for excluído de um [!UICONTROL Adobe Experience Platform] conjunto de dados, o mesmo lote será removido de qualquer Conexão CJA que contenha esse lote específico.  O CJA é notificado de exclusões de lote em [!UICONTROL Adobe Experience Platform]. |
 | Excluir um lote **enquanto estiver sendo ingerido** into [!UICONTROL Customer Journey Analytics]? | Se houver apenas um lote no conjunto de dados, nenhum dado ou dado parcial desse lote será exibido em [!UICONTROL Customer Journey Analytics]. A ingestão será revertida. Por exemplo, se houver 5 lotes no conjunto de dados e 3 deles já tiverem sido ingeridos quando o conjunto de dados tiver sido excluído, os dados desses 3 lotes aparecerão em [!UICONTROL Customer Journey Analytics]. |
 | Excluir uma conexão em [!UICONTROL Customer Journey Analytics]? | Uma mensagem de erro indicará que:<ul><li>Quaisquer visualizações de dados criadas para a conexão excluída não funcionarão mais.</li><li> Da mesma forma, quaisquer projetos do Workspace que dependam de visualizações de dados na conexão excluída deixarão de funcionar.</li></ul> |
 | Excluir uma visualização de dados em [!UICONTROL Customer Journey Analytics]? | Uma mensagem de erro indicará que todos os projetos do Workspace que dependem dessa visualização de dados excluída deixarão de funcionar. |
