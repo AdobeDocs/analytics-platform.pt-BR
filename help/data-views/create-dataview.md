@@ -2,10 +2,10 @@
 title: Criar uma exibição de dados
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics (CJA).
 translation-type: tm+mt
-source-git-commit: de265170126c1a9fc1f66364a79a74ff487d0b71
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 94%
 
 ---
 
@@ -54,3 +54,7 @@ Antes de criar visualizações de dados, é necessário [configurar uma ou mais 
 1. (Opcional) É possível renomear um componente com um nome simples ou alterar suas configurações de atribuição selecionando-o e editando sua configuração. Observe que o nome subjacente é preservado. Para obter mais informações, consulte [Configurar visualizações de dados e atribuição](/help/data-views/configure-dataviews.md).
 
 1. As próximas etapas são para [especificar configurações de componentes e atribuições](/help/data-views/configure-dataviews.md).
+
+## Excluir visualizações de dados
+
+Se você excluir uma visualização de dados em [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que quaisquer projetos do Workspace que dependerem dessa visualização de dados excluída deixarão de funcionar.
