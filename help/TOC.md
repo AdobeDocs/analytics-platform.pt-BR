@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 5fe2177d8e1da64304b0f9c84caa5383b6909d06
+source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 99%
+source-wordcount: '407'
+ht-degree: 98%
 
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 99%
 + Conexões {#cja-connections}
    + [Criar uma conexão](connections/create-connection.md)
    + [Gerenciar conexões](connections/manage-connection.md)
+   + [Estimar tamanho da conexão](connections/estimate-connection-size.md)
    + [Conjuntos de dados de eventos combinados](connections/combined-dataset.md)
 + Visualizações de dados {#cja-dataviews}
    + [Criar uma exibição de dados](data-views/create-dataview.md)
