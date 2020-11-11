@@ -2,10 +2,10 @@
 title: Atualizações da documentação CJA
 description: 'Atualizações de conteúdo do Lista para a documentação do Customer Journey Analytics desde dezembro de 2019. '
 translation-type: tm+mt
-source-git-commit: a87fa5e09962787849541d8c98a59566f867fc8b
+source-git-commit: fa70d59a4c30b78c09ea9d11dfc804bf12e9b603
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 24%
+source-wordcount: '171'
+ht-degree: 19%
 
 ---
 
@@ -16,10 +16,15 @@ As seguintes atualizações foram feitas na documentação do CJA desde o seu in
 
 | Data | Descrição da atualização |
 | --- | --- |
-| 2 de setembro de 2020 | Seção atualizada em [permissões do usuário](https://docs.adobe.com/content/help/pt-BR/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions) |
+| 11 de novembro de 2020 | Adicionado um tópico em [Estimar o tamanho da conexão](/help/connections/estimate-connection-size.md) para fins de faturamento. |
+| 10 de novembro de 2020 | Adicionada uma seção sobre as implicações da exclusão de componentes de dados para as [Perguntas frequentes](/help/getting-started/cja-faq.md). |
+| 2 de novembro de 2020 | Atualizações para a página de [suporte a recursos de Customer Journey Analytics](/help/getting-started/cja-aa.md). |
+| 7 de outubro de 2020 | Adicionado um tópico em [conjuntos de dados de evento combinados](/help/connections/combined-dataset.md). |
+| 15 de setembro de 2020 | Adicionado um novo tópico em [ingestão de dados](/help/use-cases/data-ingestion.md). |
+| 2 de setembro de 2020 | Seção atualizada em [permissões de usuário](https://docs.adobe.com/content/help/pt-BR/analytics-platform/using/cja-overview/cja-overview.html#user-access-permissions) |
 | 7 de agosto de 2020 | Novo tópico em [Caso de uso B2B - conjunto de dados de pesquisa](/help/use-cases/b2b.md) adicionado. |
-| Julho de 2020 | Foram adicionadas informações sobre [Opção de Mapa de identidade para ID de pessoa](https://docs.adobe.com/content/help/pt-BR/analytics-platform/using/cja-connections/create-connection.html#use-identity-map-as-a-person-id) |
-| Julho de 2020 | Novo tópico em [matrizes de objetos](/help/use-cases/object-arrays.md) ou &quot;hierarquias de dados&quot; adicionadas. |
-| 14 de abril de 2020 | Atualizações para a interface de usuário mais recente no [Criar conexões](/help/connections/create-connection.md) tópico. |
-| 27 de fevereiro de 2020 | Atualizações para o [Suporte a recursos de Customer Journey Analytics](/help/getting-started/cja-aa.md) página. |
+| Julho de 2020 | Foram adicionadas informações sobre a opção [Mapa de identidade para ID de pessoa](https://docs.adobe.com/content/help/pt-BR/analytics-platform/using/cja-connections/create-connection.html#use-identity-map-as-a-person-id) |
+| Julho de 2020 | Novo tópico em [matrizes de objetos](/help/use-cases/object-arrays.md) ou &#39;hierarquias de dados&#39; adicionado. |
+| 14 de abril de 2020 | Atualizações para a interface mais recente no tópico [Criar conexões](/help/connections/create-connection.md). |
+| 27 de fevereiro de 2020 | Atualizações para a página de [suporte a recursos de Customer Journey Analytics](/help/getting-started/cja-aa.md). |
 | 2019 de dezembro | Primeiro rascunho da documentação do CJA |
