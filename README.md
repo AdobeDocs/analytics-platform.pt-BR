@@ -1,16 +1,12 @@
 ---
-source-git-commit: ed44f33e545df2e52566bd922fa40d9692df6bf2
+source-git-commit: 5b484b851919607226c0deed6b5d62d1eafea50b
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '521'
-ht-degree: 84%
+source-wordcount: '439'
+ht-degree: 98%
 
 ---
 # Documentação do Contribute para o Customer Journey Analytics
-
-| EXL-PR | EXL | Visualização | Ativar | Publicado | Ajuda |
-|--- |--- |--- |--- |--- |--- |
-| [![Status da compilação](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_pr-exl/lastBuild/) | [![Status da compilação](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/analytics-platform.en_exl/lastBuild/lastBuild) | [URL de pré-visualização](https://experienceleague.corp.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) | [ativate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live URL](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=en) | [Guia de criação](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Aceitamos contribuições de nossa comunidade e de funcionários da Adobe que estão fora das equipes de documentação.
 
@@ -24,7 +20,7 @@ Consulte o [Guia do colaborador dos documentos da Adobe](https://docs.adobe.com/
 
 A maneira como você contribui depende de quem você é e do tipo de alterações com as quais deseja contribuir:
 
-### Pequenas alterações
+### Pequenas alterações 
 
 Se você estiver contribuindo com pequenas atualizações de boa vontade, visite o artigo e clique no link **Editar** do artigo, que vai para a origem GitHub do artigo. Em seguida, use a interface do usuário do GitHub para fazer as atualizações. Consulte o [Guia geral de colaborador do Adobe Docs](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) para obter mais informações.
 
