@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Ele permite:
 >
 >Para obter informações sobre como os resultados da aplicação de segmentos ao Fluxo podem ser diferentes no Analysis Workspace e no Reports &amp; Analytics/Ad Hoc Analysis, consulte [Segmentação como base para Fluxo e Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md).
 
-[Tutorial em vídeo de Visualização de fluxo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html)(4:56)
+[Tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=pt-BR) em vídeo de Visualização de fluxo (4:56)
 
 ## Fluxos interdimensionais {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
