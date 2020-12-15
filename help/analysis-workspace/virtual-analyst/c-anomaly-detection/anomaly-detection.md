@@ -15,7 +15,7 @@ ht-degree: 92%
 
 Você pode ver e analisar anomalias de dados de forma contextual no Analysis Workspace.
 
-[Tutorial em vídeo Detecção de anomalias](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
+[Tutorial](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html)  em vídeo da Detecção de anomalias (4:53)
 
 A Detecção de anomalias oferece um método estatístico para determinar como uma certa métrica foi alterada com relação aos dados anteriores.
 
