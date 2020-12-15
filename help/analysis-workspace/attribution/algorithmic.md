@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 78%
+ht-degree: 95%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->**[!UICONTROL Atribuição algorítmica]** está atualmente em testes limitados. Consulte [Versões de recursos do Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html) para obter mais informações.
+>**[!UICONTROL A]** atribuição algorítmica está atualmente em testes limitados. Consulte [Versões de recursos do Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html) para obter mais informações.
 
-O Algoritmo [modelo de atribuição](models.md) no Analysis Workspace é diferente de outros modelos, pois usa técnicas estatísticas para alocar crédito entre os itens de dimensão no relatório ou tabela de forma livre. Como todos os outros modelos de atribuição no Analysis Workspace, ele pode ser usado em qualquer dimensão ou métrica e aceita segmentação ilimitada e detalhamentos e distribui 100% das conversões para a(s) dimensão(ões) na tabela (também conhecida como atribuição &quot;fracional&quot;).
+O [modelo de atribuição](models.md) algorítmica no Analysis Workspace difere de outros modelos na medida em que usa técnicas estatísticas para alocar crédito entre os itens de dimensão em seu relatório ou tabela de forma livre. Como todos os outros modelos de atribuição no Analysis Workspace, ele pode ser usado em qualquer dimensão ou métrica e aceita segmentação ilimitada e detalhamentos e distribui 100% das conversões para a(s) dimensão(ões) na tabela (também conhecida como atribuição &quot;fracional&quot;).
 
 O algoritmo usado para atribuição é baseado no Harsanyi Dividend da teoria dos jogos cooperativos. O dividendo de Harsanyi é uma generalização da solução de valor de Shapley (batizada de Lloyd Shapley, economista vencedor do Nobel) para distribuir crédito entre os jogadores em um jogo com contribuições desiguais para o resultado.
 
