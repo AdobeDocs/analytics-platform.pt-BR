@@ -226,7 +226,7 @@ Retorna itens que possuem o mesmo valor numérico ou de sequência.
 
 ## Regressão exponencial_ Coeficiente de correlação (Tabela)
 
-Retorna o coeficiente de correlação *r* entre duas colunas de métrica (*metric_A* e *metric_B*) para a equação de regressão .
+Retorna o coeficiente de correlação *r* entre duas colunas de métrica (*metric_A* e *metric_B*) para a equação de regressão.
 
 ```
 CORREL.EXP(metric_X, metric_Y)
@@ -508,7 +508,7 @@ Retorna o intercepto *b* entre duas colunas de métrica (*metric_X* e *metric_Y*
 
 ## Regressão de potência: valor previsto de Y (Linha)
 
-Calcula os valores previstos de [!DNL y] ([!DNL metric_Y]), tendo em conta os valores de [!DNL x] conhecidos ([!DNL metric_X]) e usando o método dos &quot;quadrados mínimos&quot; para calcular linha de melhor ajuste para [!DNL Y = b*X]a.
+Calcula os valores previstos de [!DNL y] ([!DNL metric_Y]), tendo em conta os valores de [!DNL x] conhecidos ([!DNL metric_X]) e usando o método dos &quot;quadrados mínimos&quot; para calcular linha de melhor ajuste para [!DNL Y = b*X] a.
 
 ```
  ESTIMATE.POWER(metric_X, metric_Y)
@@ -529,7 +529,7 @@ SLOPE.POWER(metric_X, metric_Y)
 
 | Argumento | Descrição |
 |---|---|
-| *Y_X* | Uma métrica que você designaria como um dado dependente. |
+| *metric_X* | Uma métrica que você designaria como um dado dependente. |
 | *metric_Y* | Uma métrica que você gostaria de designar como um dado independente. |
 
 ## Regressão quadrática: coeficiente de correlação (Tabela)
