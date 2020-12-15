@@ -37,4 +37,4 @@ Se você criar um relatório de espaço de trabalho com êxito, mas não houver 
 * Verifique novamente o conjunto de relatórios e veja se ele está preenchido com dados.
 * Se você aplicar um segmento no seu relatório, os critérios do segmento podem não corresponder a nenhum dado. Tente remover o segmento ou ajustar a definição do segmento.
 * Verifique o intervalo de datas no canto superior direito e verifique se ele está definido como um valor que você esperaria.
-* Acesse seu site e use o [Depurador](https://docs.adobe.com/content/help/pt-BR/debugger/using/experience-cloud-debugger.html) para verificar se os dados estão sendo coletados.
+* Acesse seu site e use o [Depurador](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=pt-BR) para verificar se os dados estão sendo coletados.
