@@ -30,7 +30,7 @@ Você pode criar filtros a partir de um ponto de contato, adicionar segmentos co
 
 ## Criar um filtro a partir de um ponto de contato {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
-1. Crie um filtro a partir de um ponto de contato específico em que você esteja especialmente interessado e que possa ser útil para aplicar a outros relatórios. Você faz isso clicando com o botão direito do mouse no ponto de contato e selecionando **[!UICONTROL Criar filtro a partir do ponto de contato]**.
+1. Crie um filtro a partir de um ponto de contato específico em que você esteja especialmente interessado e que possa ser útil para aplicar a outros relatórios. Para fazer isso, clique com o botão direito do mouse no ponto de contato e selecione **[!UICONTROL Criar filtro do ponto de contato]**.
 
    ![](assets/segment-from-touchpoint.png)
 
@@ -54,7 +54,7 @@ Ou você pode criar um ponto de contato AND arrastando o filtro de usuários dos
 
 É possível comparar um número ilimitado de filtros na visualização de Fallout.
 
-1. Selecione os segmentos que deseja comparar no [!UICONTROL Filtro] no trilho à esquerda. Em nosso exemplo, selecionamos dois segmentos: usuários dos EUA e usuários de fora dos EUA.
+1. Selecione os segmentos que deseja comparar no painel [!UICONTROL Filtro] à esquerda. Em nosso exemplo, selecionamos dois segmentos: usuários dos EUA e usuários de fora dos EUA.
 1. Arraste-os para a área de depósito Filtro na parte superior.
 
    ![](assets/segment-drop.png)
