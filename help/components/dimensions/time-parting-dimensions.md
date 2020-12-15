@@ -32,7 +32,7 @@ As dimensões de separação de tempo no Analysis Workspace incluem:
 |--- |--- |
 | Hora do dia | 0-23 |
 | AM/PM | AM, PM |
-| Dias da semana | Segunda, terça, quarta, quinta, sexta, sábado, domingo |
+| Dia da semana | Segunda, terça, quarta, quinta, sexta, sábado, domingo |
 | Final de semana/Dia da semana | Final de semana, Dia da semana |
 | Dia do mês | 1-31 |
 | Mês do ano | Janeiro - Dezembro |
