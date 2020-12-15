@@ -49,7 +49,7 @@ As janelas de retrospectiva representam quanto tempo uma conversão deve retroce
 
 >[!NOTE]
 >
->**[!UICONTROL Janelas de pesquisa personalizadas]** estão atualmente em testes limitados. Consulte [Versões de recursos do Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html) para obter mais informações.
+>**[!UICONTROL As]** janelas de pesquisa personalizadas estão atualmente em testes limitados. Consulte [Versões de recursos do Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html) para obter mais informações.
 
 ## Exemplo
 
