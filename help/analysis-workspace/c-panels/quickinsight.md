@@ -18,7 +18,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Insights rápidos]** no momento, o painel está em testes limitados. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html)
+>**[!UICONTROL O]** painel Quick Insightsestá atualmente em testes limitados. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html)
 
 O painel do [!UICONTROL Quick Insights] fornece orientação para não analistas e novos usuários do [!UICONTROL Analysis Workspace] para saber como responder a perguntas comerciais de forma rápida e fácil. É também uma excelente ferramenta para usuários avançados que desejam responder rapidamente a uma pergunta simples sem precisar criar uma tabela.
 
@@ -94,11 +94,11 @@ Outras dicas úteis aparecerão no [!UICONTROL Quick Insights Builder], algumas 
 
    ![](assets/qibuilder5.png)
 
-* **Adicionar mais métricas**: você pode adicionar até mais duas métricas usando o operador E para adicioná-las à tabela.
+* **Adicionar mais métricas**: você pode adicionar até mais duas métricas usando o operador AND para adicioná-las à tabela.
 
    ![](assets/qibuilder6.png)
 
-* **Adicionar mais segmentos**: você pode adicionar até mais 2 segmentos usando os operadores E ou OU para adicioná-los à tabela. Observe o que acontece com a tabela quando você adiciona usuários móveis OU Visitantes leais. Eles ficam próximos um do outro, acima das métricas. Se você adicionasse Usuários móveis E Visitantes fidelizados, veria os resultados de ambos os segmentos juntos e eles seriam empilhados um sobre o outro na tabela.
+* **Adicionar mais segmentos**: você pode adicionar até mais 2 segmentos usando os operadores E ou OU para adicioná-los à tabela. Observe o que acontece com a tabela quando você adiciona usuários móveis OR Visitantes leais. Eles ficam próximos um do outro, acima das métricas. Se você adicionasse Usuários móveis AND Visitantes fidelizados, veria os resultados de ambos os segmentos juntos e eles seriam empilhados um sobre o outro na tabela.
 
    ![](assets/qibuilder7.png)
 
