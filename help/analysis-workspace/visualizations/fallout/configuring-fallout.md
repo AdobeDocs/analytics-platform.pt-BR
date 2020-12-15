@@ -68,7 +68,7 @@ Você pode definir o caminho das eVars, incluindo eVars de comercialização e [
 
 | Configuração | Descrição |
 |--- |--- |
-| Contêiner de fallout <ul><li>Visita</li><li>Visitante.</li></ul> | Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. O padrão é Visitante.  Essas configurações ajudam você a entender o envolvimento no nível dos visitantes (ao longo das visitas) ou restringir a análise a uma só visita. |
+| Contêiner de fallout <ul><li>Visita</li><li>Visitante</li></ul> | Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. O padrão é Visitante.  Essas configurações ajudam você a entender o envolvimento no nível dos visitantes (ao longo das visitas) ou restringir a análise a uma só visita. |
 | Mostrar “Todos os visitantes” como primeiro ponto de contato | Você pode desmarcar isso se não quiser ter “Todos os visitantes” como primeiro ponto de contato. |
 
 Quando você **clicar com o botão direito em um ponto de contato**, as seguintes opções são exibidas:
