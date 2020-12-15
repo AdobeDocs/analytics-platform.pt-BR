@@ -64,7 +64,7 @@ O [!UICONTROL Analysis Workspace] oferece um conjunto avançado de [atalhos de t
 | Ctrl + Shift + D | Novo intervalo de datas |
 | Ctrl + Shift + E | Novo segmento |
 | Ctrl + Z | Desfazer |
-| Manter shift pressionado (na área do segmento) | Criar um [filtro suspenso](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) |
+| Manter shift pressionado (na área do segmento) | Criar um [filtro suspenso](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) |
 
 #### Democratização
 
