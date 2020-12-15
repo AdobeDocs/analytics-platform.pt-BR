@@ -57,4 +57,4 @@ Veja a seguir uma lista de limitações conhecidas do Analysis Workspace e seus 
 
 ## Attribution IQ
 
-* Não há suporte para subconjunto de métricas no [!UICONTROL Attribution IQ]. Para obter uma lista completa, consulte as Perguntas frequentes sobre [Attribution IQ](../attribution/faq.md).
+* Não há suporte para subconjunto de métricas no [!UICONTROL Attribution IQ]. Para obter uma lista completa, consulte as [Perguntas frequentes sobre Attribution IQ](../attribution/faq.md).
