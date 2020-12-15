@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ O painel de atribuição é compatível com todas as dimensões. As métricas n�
 * Saídas
 * Páginas não encontradas
 * Pesquisas
-* Visitas únicas à página
+* Visitas em única página
 * Acesso único
 
 **A atribuição funciona com classificações?**
@@ -77,7 +77,7 @@ Como as dimensões do canal de marketing dependem de uma definição de visita t
 
 Algumas dimensões do Analytics podem conter vários valores em uma só ocorrência. Exemplos comuns incluem list vars e a variável products.
 
-Quando a atribuição é aplicada a ocorrências de vários valores, todos os valores na mesma ocorrência recebem o mesmo crédito. Como muitos valores podem receber esse crédito, o total do relatório pode ser diferente se você somar cada item de linha individual. O total do relatório é desduplicado, enquanto cada item de dimensão individual recebe o crédito adequado.
+Quando a atribuição é aplicada a ocorrências de vários valores, todos os valores na mesma ocorrência recebem o mesmo crédito. Como muitos valores podem receber esse crédito, o total do relatório pode ser diferente se você somar cada item de linha individual. O total do relatório é deduplicado, enquanto cada item de dimensão individual recebe o crédito adequado.
 
 **Como a atribuição funciona com a segmentação?**
 
