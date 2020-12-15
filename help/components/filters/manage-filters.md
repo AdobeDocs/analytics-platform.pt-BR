@@ -16,7 +16,7 @@ O Gerenciador de filtros oferece várias formas de cuidar de segmentos, como com
 
 O Gerenciador de filtros mostra todos os seus filtros e os compartilhados com você. Os usuários de nível administrativo podem visualizar todos os filtros na organização. Essa visão geral apresenta a interface do usuário e os recursos do Gerenciador de filtros.
 
-Acesse o Gerenciador de filtro indo para **[!UICONTROL Análise de Jornada do Cliente]** > **[!UICONTROL Componentes]** > **[!UICONTROL Filtros]** na navegação superior.
+Acesse o Gerenciador de filtro indo até **[!UICONTROL Análise de jornada do cliente]** > **[!UICONTROL Componentes]** > **[!UICONTROL Filtros]** na navegação superior.
 
 ## IU do Gerenciador de filtros
 
@@ -78,7 +78,7 @@ Para marcar um filtro:
 
    * selecione a partir das tags existentes, ou
 
-   * insira um novo nome de tag e pressione **[!UICONTROL Enter]**.
+   * digite um novo nome de tag e pressione **[!UICONTROL Enter]**.
 
 1. Clique em **[!UICONTROL Tag]** novamente e marque o segmento.
 
