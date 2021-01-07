@@ -2,10 +2,10 @@
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: a4a655c5ee6aa8f72ba527baf5e841f76d9b9486
+source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 94%
+source-wordcount: '985'
+ht-degree: 89%
 
 ---
 
@@ -40,6 +40,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Recurso | Notas |
 | --- | --- |
 | Variável de produto | A variável de produto atualmente disponível para relatórios de dados que estão em conformidade com o esquema Evento de experiência (usando especificamente o objeto productListItems). |
+| Canais de marketing | Os dados de Canais de marketing agora fluem para o CJA por meio do Conector de dados do Analytics. As regras do Canal de marketing ainda devem ser configuradas no Adobe Analytics tradicional. Algumas regras não são suportadas. Para obter mais detalhes, consulte [a documentação dos Canais de marketing CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases). |
 | Visualizações | Todas as visualizações são compatíveis, exceto a visualização do Mapa. |
 | Compartilhamento de projeto | O compartilhamento de projetos só é compatível entre usuários do CJA - não há compartilhamento de projetos entre o CJA e o Analysis Workspace tradicional. |
 | Sessões personalizadas | Suporte para todos os recursos personalizados de sessão que não sejam ocorrências em segundo plano móveis. |
@@ -75,10 +76,11 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Relatórios/projetos agendados | Suporte planejado. |
 | Alertas | Suporte planejado. |
 | Calendários personalizados | Suporte planejado. |
-| Canais de marketing | Suporte planejado. |
 | Exportação de PDF | Suporte planejado. |
 | Acesso à API de relatórios | Suporte planejado - só estará disponível com a API 2.0. |
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
+| Report Builder (plug-in do Excel) | Suporte planejado. |
+| Relatório em tempo real | Suporte planejado. |
 
 ## Suporte ainda não planejado.
 
@@ -87,11 +89,9 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | A4T | Suporte ainda não planejado. |
 | Media Analytics | Suporte ainda não planejado. |
 | Advertising Cloud | Suporte ainda não planejado. |
-| Report Builder (plug-in do Excel) | Suporte ainda não planejado. |
 | Activity Map | Suporte ainda não planejado. |
 | Criador de regras de classificação | Suporte ainda não planejado. |
 | Fontes de dados de resumo | Suporte ainda não planejado. |
-| Relatório em tempo real | Suporte ainda não planejado. |
 
 ## Nunca terá suporte
 
