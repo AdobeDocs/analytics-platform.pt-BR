@@ -3,19 +3,15 @@ description: Use o Número do resumo e as Visualizações de alteração para ex
 title: Número do resumo e alteração do resumo
 uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
 translation-type: tm+mt
-source-git-commit: 9733d6471e6f1c886fd27b702654349d6760870c
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '462'
 ht-degree: 100%
 
 ---
 
 
 # Número do resumo e alteração do resumo
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 ## Visualização do número de resumo {#summary-number}
 
@@ -26,7 +22,15 @@ Use a visualização Número do resumo para realçar um grande número que é im
 * Se mais de uma célula estiver selecionada, mostra a primeira célula selecionada.
 * Se a coluna estiver selecionada, escolhe o primeiro valor de célula na coluna.
 
-![Número do resumo](assets/summary-number.png)
+Clique na engrenagem **Configurações de visualização** no canto superior direito para definir as configurações de Número do resumo:
+
+| Configuração | Definição |
+|--- |--- |
+| Porcentagens | Exiba porcentagens em vez de números brutos. |
+| Legenda visível | Exiba informações sobre a métrica mostrada. |
+| Abreviar valor | Escolha abreviar valores e mostrar até 3 casas decimais. |
+| Resumir valor por | Opte por exibir o máximo, mínimo, médio, mediano ou soma para uma seleção de dados. |
+
 
 Clique na engrenagem **Configurações de visualização** no canto superior direito para definir as configurações de Número do resumo:
 
@@ -36,6 +40,7 @@ Clique na engrenagem **Configurações de visualização** no canto superior dir
 | Legenda visível | Exiba informações sobre a métrica mostrada. |
 | Abreviar valor | Escolha abreviar valores e mostrar até 3 casas decimais. |
 | Resumir valor por | Opte por exibir o máximo, mínimo, médio, mediano ou soma para uma seleção de dados. |
+
 
 ## Visualização da alteração do resumo {#summary-change}
 
@@ -50,7 +55,9 @@ Essa visualização se comporta das seguintes maneiras:
 * Se um intervalo de células estiver selecionado, compara a primeira com a última célula selecionada no intervalo.
 * Se a coluna estiver selecionada, compara o primeiro valor a si mesmo, mostrando uma alteração de 0.
 
-![Alteração de resumo](assets/summary-change.png)
+
+![](assets/summary-change.png)
+
 
 Clique na engrenagem **Configurações de visualização** no canto superior direito para definir as configurações de Alteração de resumo:
 
