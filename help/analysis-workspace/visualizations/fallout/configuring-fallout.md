@@ -3,19 +3,15 @@ description: 'null'
 title: Configurar uma visualização de fallout
 uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
 
 
 # Configurar uma visualização de fallout
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Você pode especificar os pontos de contato para criar uma sequência de fallout multidimensional. Geralmente, um ponto de contato é uma página no seu site. Contudo, pontos de contato não estão limitados a páginas. Por exemplo, você pode adicionar eventos, como unidades, bem como visitantes exclusivos e visitantes que retornam. Você também pode adicionar dimensões, como uma categoria, tipo de navegador ou termo de pesquisa interno.
 
@@ -69,7 +65,6 @@ Você pode definir o caminho das eVars, incluindo eVars de comercialização e [
 | Configuração | Descrição |
 |--- |--- |
 | Contêiner de fallout <ul><li>Visita</li><li>Visitante</li></ul> | Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. O padrão é Visitante.  Essas configurações ajudam você a entender o envolvimento no nível dos visitantes (ao longo das visitas) ou restringir a análise a uma só visita. |
-| Mostrar “Todos os visitantes” como primeiro ponto de contato | Você pode desmarcar isso se não quiser ter “Todos os visitantes” como primeiro ponto de contato. |
 
 Quando você **clicar com o botão direito em um ponto de contato**, as seguintes opções são exibidas:
 
