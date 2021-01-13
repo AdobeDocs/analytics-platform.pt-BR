@@ -2,19 +2,15 @@
 description: Recursos de suporte para acessibilidade no Analysis Workspace
 title: Acessibilidade no Analysis Workspace
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 100%
+source-wordcount: '661'
+ht-degree: 82%
 
 ---
 
 
 # Acessibilidade no Analysis Workspace
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Saiba mais sobre o suporte de acessibilidade no [!UICONTROL Analysis Workspace], a principal ferramenta de análise do Adobe Analytics.
 
@@ -26,11 +22,20 @@ O [!UICONTROL Analysis Workspace] fornece algumas ferramentas que o tornam acess
 
 A navegação no [!UICONTROL Analysis Workspace] funciona de cima > para baixo e da esquerda > à direita. Os seguintes elementos de navegação facilitam a acessibilidade:
 
-* A tecla `F6` ativa atalhos de marcos
-* A chave `Tab` se move entre elementos individuais.
+* A tecla `Tab` ativa atalhos de marcos, alternando entre seções maiores dentro do Workspace. No painel esquerdo, `Tab` também permite que você se mova de uma opção arrastável para a próxima.
+* A movimentação `left/right arrows` entre elementos individuais depois de `Tab` a destacar.
+* O `F6` navega até o primeiro painel do projeto e se move entre as visualizações dentro desse painel. Em seguida, ele se move para o próximo painel do projeto e se repete.
 * Nós aplicamos indicadores de foco para que os usuários de teclado com visão tenham uma indicação clara de qual elemento de interface do usuário tem foco no momento. O indicador é uma borda azul em torno do elemento selecionado.
 
    ![Indicador de foco](assets/focus-indicator.png)
+
+### Navegação no teclado para a barra de menus
+
+1. Pressione a tecla até acessar a barra de menus.
+1. Use as teclas de seta para a esquerda/direita para navegar até o menu desejado.
+1. Pressione `Enter` para selecionar o menu e mostrar suas opções.
+1. Use as teclas de seta para cima/para baixo para navegar até a opção de menu desejada.
+1. Pressione `Enter` para selecionar a opção.
 
 ### Navegação no teclado para interações de arrastar e soltar
 
@@ -43,7 +48,7 @@ O [!UICONTROL Analysis Workspace] é uma interface de usuário de arrastar e sol
 
 ### Atalhos de teclado (teclas de atalho)
 
-O [!UICONTROL Analysis Workspace] oferece um conjunto avançado de [atalhos de teclado](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) para um fluxo de trabalho mais simples. Alguns atalhos comuns para navegação, criação de análises e democratização do insight estão listados abaixo.
+O [!UICONTROL Analysis Workspace] oferece um conjunto avançado de [atalhos de teclado](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.html?lang=pt-BR) para um fluxo de trabalho mais simples. Alguns atalhos comuns para navegação, criação de análises e democratização do insight estão listados abaixo.
 
 #### Navegação
 
@@ -85,7 +90,7 @@ Um leitor de tela lê o texto que aparece na tela do computador. Ele também lê
 
 O [!UICONTROL Analysis Workspace] se esforça para obter a conformidade WCAG 2.1 AA, incluindo os requisitos para contraste de cores.
 
-Além disso, os usuários podem definir sua própria paleta de cores preferencial para um projeto em **[!UICONTROL Projeto]** > **[!UICONTROL Configurações do projeto]** > [Paleta de cores do projeto](/help/analysis-workspace/build-workspace-project/color-palettes.md).
+Além disso, os usuários podem definir sua própria paleta de cores preferencial para um projeto em **[!UICONTROL Projeto]** > **[!UICONTROL Configurações do projeto]** > [Paleta de cores do projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=pt-BR).
 
 ## Validação de campo necessária nos construtores de componentes
 
