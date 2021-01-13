@@ -3,9 +3,9 @@ description: A sincronização de visualizações permite que você controle qua
 keywords: Analysis Workspace;Synchronize visualization with data source
 title: Gerenciar fontes de dados
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '562'
 ht-degree: 100%
 
 ---
@@ -13,17 +13,13 @@ ht-degree: 100%
 
 # Gerenciar fontes de dados
 
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
-
 A sincronização de visualizações permite que você controle qual tabela de dados ou fonte de dados corresponde a uma visualização.
 
 **Dica:** saiba quais visualizações têm relação umas com as outras pela cor do ponto ao lado do título. Cores iguais significam que as visualizações têm como base a mesma fonte de dados.
 
 O gerenciamento de uma fonte de dados permite exibir a fonte de dados ou bloquear a seleção. Essas configurações determinam a maneira como a visualização muda (ou não muda) quando chegam novos dados.
 
-1. [Crie um projeto](/help/analysis-workspace/home.md) com uma tabela de dados e uma [visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+1. [Crie um projeto](//help/analysis-workspace/home.md) com uma tabela de dados e uma [visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 1. Na tabela de dados, selecione as células (fonte de dados) que você deseja associar à visualização.
 1. Na visualização, clique no ponto ao lado do título para abrir a caixa de diálogo **[!UICONTROL Fonte de dados]**. Selecione **[!UICONTROL Exibir fonte de dados]** ou **[!UICONTROL Bloquear seleção]**.
 
