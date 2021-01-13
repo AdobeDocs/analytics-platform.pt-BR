@@ -3,19 +3,15 @@ description: Exibe dados hierárquicos (estruturados em formato de árvore) como
 title: Mapas de árvore
 uuid: 4e1ec255-d43e-46f2-ac62-296f15218799
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '94'
 ht-degree: 100%
 
 ---
 
 
 # Mapas de árvore
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Exibe dados hierárquicos (estruturados em formato de árvore) como um conjunto de retângulos aninhados.
 
