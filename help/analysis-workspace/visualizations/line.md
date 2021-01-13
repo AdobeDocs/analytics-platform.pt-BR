@@ -3,27 +3,19 @@ description: Use a visualização de linha para descrever conjuntos de dados com
 title: Linha
 uuid: 0508ff29-43fe-4f3a-a5f7-051869271b55
 translation-type: tm+mt
-source-git-commit: 4f163e32787a732526511aeda5f6c1e32becb490
+source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 94%
+source-wordcount: '511'
+ht-degree: 65%
 
 ---
 
 
 # Linha
 
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
-
 A visualização de linha representa as métricas que usam uma linha para mostrar como os valores são alterados em um período. Um gráfico de linha pode ser usado apenas quando o horário for usado como uma dimensão.
 
 ![Visualização de linha](assets/line-viz.png)
-
->[!IMPORTANT]
->
->Algumas configurações de visualização de Linha, como [!UICONTROL Mostrar linha de tendência], estão atualmente em testes limitados. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html)
 
 Clique no ícone de engrenagem na parte superior direita da visualização de linha para acessar as [**Configurações de visualização**](freeform-analysis-visualizations.md) disponíveis. As configurações são categorizadas em:
 
@@ -45,11 +37,15 @@ Em **[!UICONTROL Configurações de visualização]** > **[!UICONTROL Sobreposi�
 
 ## Mostrar sobreposição de linha de tendência
 
-Em **[!UICONTROL Configurações de visualização]** > **[!UICONTROL Sobreposições]** > **[!UICONTROL Mostrar linha de tendência]**, você pode optar por adicionar uma linha de tendência de regressão à sua série de linhas. As linhas de tendência ajudam a descrever um padrão mais claro nos dados.
+Em **[!UICONTROL Configurações de visualização]** > **[!UICONTROL Sobreposições]** > **[!UICONTROL Mostrar linha de tendência]**, você pode optar por adicionar uma regressão ou mover a linha de tendência média para a sua série de linhas. As linhas de tendência ajudam a descrever um padrão mais claro nos dados.
+
+>[!TIP]
+>
+>Recomenda-se que as linhas de tendência sejam aplicadas aos dados que não incluem datas atuais (dados parciais) ou futuras, já que isso distorcerá a linha de tendência. No entanto, se você precisar incluir datas futuras, remova zeros dos dados para evitar inclinações para esses dias. Para fazer isso, vá para a tabela de fonte de dados da visualização, escolha sua coluna de métrica e ative **[!UICONTROL Configurações de coluna]** > **[!UICONTROL Interpretar zero como nenhum valor]**.
 
 ![Linha de tendência linear](assets/show-linear-trendline.png)
 
-Todos os modelos são adequados usando quadrados mínimos comuns:
+Todas as tendências do modelo de regressão são são ajustadas usando quadrados mínimos normais:
 
 | Modelo | Descrição |
 | --- | --- |
@@ -58,3 +54,4 @@ Todos os modelos são adequados usando quadrados mínimos comuns:
 | Exponencial | Cria uma linha curva e é útil quando os dados aumentam ou caem em taxas constantemente crescentes. Essa opção não deve ser usada se os dados contiverem valores zero ou negativos. Equação: `y = a + e^(b * x)` |
 | Potência | Cria uma linha curva e é útil para conjuntos de dados que comparam medidas que aumentam a uma taxa específica. Essa opção não deve ser usada se os dados contiverem valores zero ou negativos. Equação: `y = a * x^b` |
 | Quadrático | Encontra o melhor ajuste para um conjunto de dados em forma de parábola (côncavo para cima ou para baixo). Equação: `y = a + b * x + c * x^2` |
+| Média móvel | Cria uma linha de tendência suave com base em um conjunto de médias. Também conhecida como média móvel, uma média móvel usa um número específico de pontos de dados (determinado pela seleção de &quot;Períodos&quot;), faz a média deles e usa a média como um ponto na linha. Os exemplos incluem média móvel de 7 dias ou média móvel de 4 semanas. |
