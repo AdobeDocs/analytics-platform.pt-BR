@@ -2,10 +2,10 @@
 description: Um painel é uma coleção de tabelas e visualizações
 title: Visão geral dos painéis
 translation-type: tm+mt
-source-git-commit: 7f6afbb7c0376791c286021d9ffe4ac670ed7bd7
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 9%
+source-wordcount: '813'
+ht-degree: 10%
 
 ---
 
@@ -27,14 +27,6 @@ Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode
 
 O painel inicial padrão é o painel [!UICONTROL Forma livre], mas você também pode tornar o painel em branco[o padrão.](/help/analysis-workspace/c-panels/blank-panel.md)
 
-## Conjunto de relatórios {#report-suite}
-
-Tabelas e visualizações em um painel derivam dados do [!UICONTROL conjunto de relatórios] selecionado na parte superior direita do painel. O conjunto de relatórios também determina quais componentes estão disponíveis no painel esquerdo. Em um projeto, você pode usar um ou [vários conjuntos de relatórios](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/multiple-report-suites.html?lang=pt-BR) dependendo dos casos de uso da análise. Para aplicar um único conjunto de relatórios a todos os painéis em um projeto, **clique com o botão direito do mouse no cabeçalho do painel > Aplicar conjunto de relatórios a todos os painéis**.
-
-A lista dos conjuntos de relatórios é classificada na relevância, que é definida pela Adobe com base na frequência e na recentemente usada pelo usuário atual e na frequência com que o conjunto é usado na organização.
-
-![](assets/panel-report-suite.png)
-
 ## Calendário {#calendar}
 
 O calendário do painel controla o intervalo de relatórios para tabelas e visualizações em um painel.
@@ -49,15 +41,15 @@ A área suspensa do painel permite que você aplique filtros de segmento e lista
 
 ### Filtros de segmento
 
-Arraste e solte qualquer segmento do painel esquerdo na área suspensa do painel para começar a filtrar o painel.
+Arraste e solte quaisquer Filtros do painel esquerdo na área suspensa do painel para começar a filtrar o painel.
 
 ![](assets/segment-filter.png)
 
-### Filtros de segmento Ad-hoc
+### Filtros Ad-hoc
 
-Os componentes que não são de segmento também podem ser arrastados diretamente para a área de depósito para criar segmentos ad-hoc, economizando tempo e esforço de ir para o Construtor de segmentos. Segmentos criados dessa forma são definidos automaticamente como segmentos de nível de ocorrência. Essa definição pode ser modificada clicando no ícone de informações (i) ao lado do segmento, depois no ícone de edição em forma de lápis e editando-o no Construtor de segmentos.
+Os componentes que não são de segmento também podem ser arrastados diretamente para a área de depósito para criar filtros ad-hoc, economizando tempo e esforço de ir para o Construtor de filtro. Filtros criados dessa forma são automaticamente definidos como filtros de nível de ocorrência. Essa definição pode ser modificada clicando no ícone de informações (i) ao lado do filtro, depois no ícone de edição em forma de lápis e editando-o no Construtor de filtro.
 
-Os segmentos ad-hoc são locais para o projeto e não serão exibidos no painel esquerdo, a menos que você os torne públicos.
+Filtros ad-hoc são locais para o projeto e não aparecerão no painel esquerdo, a menos que você os torne públicos.
 
 ![](assets/adhoc-segment-filter.png)
 
@@ -89,11 +81,10 @@ As seguintes configurações estão disponíveis:
 
 | Configuração | Descrição |
 | --- | --- |
-| Inserir painel/visualização copiados | Permite colar (&quot;inserir&quot;) um painel ou visualização copiados em outro local do projeto ou em um projeto completamente diferente. |
-| Painel Copiar | Permite que você clique com o botão direito do mouse e copie um painel, para que você possa inseri-lo em outro lugar dentro do projeto ou em um projeto completamente diferente. |
-| Aplicar conjunto de relatórios a todos os painéis | Permite aplicar o conjunto de relatórios do painel ativo a todos os painéis do projeto. |
-| Painel duplicado | Faz um duplicado exato do painel atual, que pode ser modificado. |
-| Recolher/Expandir todos os painéis | Recolhe e expande todos os painéis do projeto. |
-| Recolher/Expandir todas as visualizações no painel | Reduz e expande todas as visualizações no painel atual. |
-| Editar descrição | Adicione (ou edite) uma descrição de texto para o painel. |
-| Obter link do painel | Permite direcionar alguém a um painel específico em um projeto. Quando o link for clicado, o recipient será solicitado a fazer login antes de ser direcionado para o painel exato ao qual está vinculado. |
+| [!UICONTROL Inserir painel/visualização copiados] | Permite colar (&quot;inserir&quot;) um painel ou visualização copiados em outro local do projeto ou em um projeto completamente diferente. |
+| [!UICONTROL Painel Copiar] | Permite que você clique com o botão direito do mouse e copie um painel, para que você possa inseri-lo em outro lugar dentro do projeto ou em um projeto completamente diferente. |
+| [!UICONTROL Painel duplicado] | Faz um duplicado exato do painel atual, que pode ser modificado. |
+| [!UICONTROL Recolher/Expandir todos os painéis] | Recolhe e expande todos os painéis do projeto. |
+| [!UICONTROL Recolher/Expandir todas as visualizações no painel] | Reduz e expande todas as visualizações no painel atual. |
+| [!UICONTROL Editar descrição] | Adicione (ou edite) uma descrição de texto para o painel. |
+| [!UICONTROL Obter link do painel] | Permite direcionar alguém a um painel específico em um projeto. Quando o link for clicado, o recipient será solicitado a fazer login antes de ser direcionado para o painel exato ao qual está vinculado. |
