@@ -1,12 +1,12 @@
 ---
-description: Alterações e aprimoramentos feitas à opção de Desfazer no Analysis Workspace.
+description: Saiba mais sobre as opções Desfazer e Refazer no Analysis Workspace.
 title: Configurações Desfazer e Refazer
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
