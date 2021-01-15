@@ -1,12 +1,11 @@
 ---
-description: 'null'
+description: Configurações para a visualização Fluxo no Workspace
 title: Configurações de fluxo
-uuid: 99822765-1d4f-4c23-a787-b089089cb8d7
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 100%
+source-wordcount: '241'
+ht-degree: 97%
 
 ---
 
@@ -14,14 +13,14 @@ ht-degree: 100%
 # Configurações de fluxo
 
 | Configuração | Descrição |
-|--- |--- |
+| --- | --- |
 | Contêiner de fluxo | <ul><li>Visita</li><li>Visitante</li></ul> Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. Essas configurações ajudam você a entender o envolvimento no nível dos visitantes (ao longo das visitas) ou restringir a análise a uma só visita. |
-| Opções de fluxo | <ul><li>Rótulos de quebra de linha</li></ul> Normalmente, os rótulos nos Elementos de fluxo são truncados para não poluir visualmente a tela, mas é possível tornar todos os rótulos visíveis ao selecionar esta caixa.  Padrão = desmarcado.<ul><li>Incluir instâncias repetidas</li></ul> As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas, por exemplo, recarregamentos de página. No entanto, as repetições não podem ser removidas das Visualizações de fluxo que incluem dimensões com vários valores, como listVars, listProps, s.product, eVars de merchandising etc. |
+| Opções de fluxo | <ul><li>Rótulos de quebra de linha</li></ul> Normalmente, os rótulos nos Elementos de fluxo são truncados para não poluir visualmente a tela, mas é possível tornar todos os rótulos visíveis ao selecionar esta caixa.  Padrão = desmarcado.<ul><li>Incluir instâncias repetidas</li></ul> As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas, por exemplo, recarregamentos de página. No entanto, as repetições não podem ser removidas das Visualizações de fluxo que incluem dimensões com vários valores, como listVars, listProps, s.product, eVars de merchandising etc.. |
 
 ## Opções de clique com o botão direito do mouse
 
 | Opção | Descrição |
-|--- |--- |
+| --- | --- |
 | Concentre-se neste nó | Altere o foco para o nó selecionado. O nó de foco é exibido no centro do diagrama de fluxo. |
 | Recomeçar | Retomar ao criador de diagrama de Forma livre, no qual você pode criar um novo diagrama de Fluxo. |
 | Criar segmentos a partir deste ponto no fluxo | Criar um segmento. Isso leva você ao Construtor de segmentos, onde você pode configurar o novo segmento. |
