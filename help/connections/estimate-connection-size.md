@@ -2,7 +2,7 @@
 title: Estimar tamanho da conexão
 description: Relatar sobre o uso atual do Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 1f496175e504cefed4239aab454744ecae72a6ea
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -54,4 +54,4 @@ Em alguns casos, você pode notar que o número total de eventos ingeridos pela 
 
 1. Além disso, se verificarmos [!UICONTROL Adobe Experience Platform], não há conjunto de dados com a ID &quot;5f21c12b732044194bffc1d0&quot;, portanto, alguém excluiu esse conjunto de dados específico de [!UICONTROL Adobe Experience Platform] quando a conexão inicial estava sendo criada. Mais tarde, ele foi adicionado ao [!UICONTROL Customer Journey Analytics] novamente, mas um [!UICONTROL ID do conjunto de dados da plataforma] diferente foi gerado pelo [!UICONTROL Adobe Experience Platform].
 
-   Leia mais sobre as [implicações do conjunto de dados e da exclusão de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) em [!UICONTROL Customer Journey Analytics] e [!UICONTROL Adobe Experience Platform].
+Leia mais sobre as [implicações do conjunto de dados e da exclusão de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) em [!UICONTROL Customer Journey Analytics] e [!UICONTROL Adobe Experience Platform].
