@@ -1,12 +1,11 @@
 ---
-description: 'null'
+description: Saiba como especificar os pontos de contato para criar uma sequência de fallout multidimensional.
 title: Configurar uma visualização de fallout
-uuid: fc117745-baf3-46fb-873d-9307092cc337
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 100%
+source-wordcount: '690'
+ht-degree: 98%
 
 ---
 
