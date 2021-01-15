@@ -2,10 +2,10 @@
 title: Opções de assimilação de dados para o Customer Journey Analytics
 description: Entenda as diferentes maneiras de assimilar dados no Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 8a3a868ff4e2fbbcdf83ff7769382c6a92f78ec2
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 61%
+source-wordcount: '968'
+ht-degree: 63%
 
 ---
 
@@ -34,15 +34,9 @@ Esse fluxo de trabalho utiliza o Adobe Analytics Data Connector e varia dependen
 
 ## Ingressar dados via Adobe Experience Platform Web SDK e Edge Network
 
-[O Adobe Experience Platform Web ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) SDK é uma biblioteca JavaScript do lado do cliente que permite que os clientes da Adobe Experience Cloud interajam com os vários serviços na Experience Cloud por meio da Adobe Experience Platform Edge Network. Você pode configurar essa ingestão com ou sem o Launch.
+[O Adobe Experience Platform Web ](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en) SDK é uma biblioteca JavaScript do lado do cliente que permite que os clientes da Adobe Experience Cloud interajam com os vários serviços na Experience Cloud por meio da Adobe Experience Platform Edge Network.
 
-### Sem lançamento
-
-Este link não funciona: https://docs.adobe.com/content/help/en/experience-platform/edge/get-started/quick-start-without-launch.html. Isso ainda é possível sem o Launch?
-
-### Com o Launch
-
-1. [Configure a ](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) extensão AEP Web SDK para enviar dados para a Adobe Experience Cloud a partir das propriedades da Web, por meio da Adobe Experience Platform Edge Network.
+1. [Configure a extensão AEP Web SDK no ](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/aep-extension/overview.html?lang=en#configure-the-aep-web-sdk-extension) Launchpara enviar dados para a Adobe Experience Cloud a partir das propriedades da Web, por meio da Adobe Experience Platform Edge Network.
 1. Use o [Customer Journey Analytics](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-getting-started.html) para criar uma ou mais conexões e visualizações de dados que informarão seu relatórios entre canais.
 
 ## Ingressar dados com ingestão em lote e ingestão em streaming
