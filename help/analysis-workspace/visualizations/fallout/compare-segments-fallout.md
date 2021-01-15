@@ -1,10 +1,9 @@
 ---
 description: Você pode criar segmentos a partir de um ponto de contato, adicionar segmentos como ponto de contato e comparar fluxos de trabalho principais em vários segmentos no Analysis Workspace.
 keywords: fallout and segmentation;segments in fallout analysis;compare segments in fallout
-title: Aplicar segmentos na análise de fallout
-uuid: e87a33df-160e-4943-8d02-4d6609ae3bb1
+title: Aplicar filtros na análise de fallout
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 23%
