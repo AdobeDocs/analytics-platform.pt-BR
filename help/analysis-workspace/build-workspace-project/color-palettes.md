@@ -1,12 +1,12 @@
 ---
-description: 'null'
-title: Paletas de cores
+description: Como alterar a paleta de cores de visualização ou especificar sua própria paleta de cores personalizada.
+title: Paleta de cores de visualização
 uuid: 18252889-8dc0-48fa-820f-df534156c22f
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '247'
+ht-degree: 91%
 
 ---
 
