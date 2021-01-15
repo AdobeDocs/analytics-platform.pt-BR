@@ -2,10 +2,10 @@
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: 55b03e01494a5989ab05aa391df5155bcf9d188f
+source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 89%
+source-wordcount: '986'
+ht-degree: 87%
 
 ---
 
@@ -32,7 +32,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Conjuntos de relatórios virtuais | Agora chamado de [Visualizações de dados](/help/data-views/create-dataview.md). |
 | Curadoria do componente VRS | Agora parte das Visualizações de dados. |
 | Processamento de tempo do relatório | O CJA depende exclusivamente do Processamento de tempo do relatório. |
-| Exclusão do GDPR | Observe que o GDPR agora é manipulado em coordenação com a [!UICONTROL Experience Platform] - o CJA herda qualquer alteração de dados que a [!UICONTROL Experience Platform] faz nos conjuntos de dados subjacentes. |
+| Exclusão do GDPR | Observe que o RGPD agora é manipulado em coordenação com [!UICONTROL Adobe Experience Platform] - o CJA herda quaisquer alterações de dados [!UICONTROL Experience Platform] feitas nos conjuntos de dados subjacentes. |
 | Permissões do usuário/Controles de acesso de dados | O CJA faz a distinção entre administradores e usuários de produtos do Adobe Admin Console. Somente administradores de produtos podem 1) criar/atualizar/excluir conexões ou visualizações de dados, 2) atualizar/excluir projetos, filtros ou métricas de cálculo que foram criadas por outros usuários e 3) compartilhar um projeto do Workspace com todos os usuários |
 
 ## Compatível com limitações
