@@ -5,39 +5,39 @@ translation-type: tm+mt
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 10%
+ht-degree: 86%
 
 ---
 
 
 # Visão geral dos painéis
 
-Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode acessar os painéis a partir do ícone superior esquerdo no Workspace ou um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos de tempo, conjuntos de relatórios ou caso de uso de análise. Os seguintes tipos de painel estão disponíveis no Analysis Workspace:
+Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode acessar os painéis por meio do ícone superior esquerdo no Workspace ou um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos, conjuntos de relatórios ou caso de uso de análise. Os seguintes tipos de painel estão disponíveis no Analysis Workspace:
 
 | Nome do painel | Descrição |
 | --- | --- |
-| [Painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) | Escolha entre os painéis e visualizações disponíveis para start da análise. |
+| [Painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) | Escolha entre os painéis e visualizações disponíveis para iniciar a análise. |
 | [Painel do Quick Insights](quickinsight.md) | Crie rapidamente uma tabela de forma livre e uma visualização de acompanhamento para analisar e descobrir insights mais rapidamente. |
-| [Painel de atribuição](attribution.md) | Compare e visualize rapidamente qualquer número de modelos de atribuição usando qualquer dimensão e métrica de conversão. |
-| [Painel de forma livre](freeform-panel.md) | Realize comparações e detalhamentos ilimitados e, em seguida, adicione visualizações para contar uma história de dados avançada. |
+| [Painel de atribuição](attribution.md) | Compare e visualize modelos de atribuição rapidamente usando qualquer dimensão e métrica de conversão. |
+| [Painel de forma livre](freeform-panel.md) | Realize comparações e detalhamentos ilimitados e, em seguida, adicione visualizações para obter uma visão ampla dos dados. |
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Insights] rápidos, painéis   em branco e   em forma livre são ótimos locais para start de sua análise, enquanto o  [!UICONTROL Analytics para Públicos alvos],  [!UICONTROL Attribution IQ],  [!UICONTROL visualizadores simultâneos de ] mídia e  [!UICONTROL comparação de ] segmentos se prestam a análises mais avançadas. Um botão `"+"` está disponível nos projetos para que você possa adicionar painéis em branco a qualquer momento.
+[!UICONTROL Os painéis Insights rápidos], [!UICONTROL Em branco] e [!UICONTROL Forma livre] são ótimos locais para iniciar a análise, enquanto o [!UICONTROL Analytics for Target], [!UICONTROL Attribution IQ], [!UICONTROL Visualizadores simultâneos de mídia] e [!UICONTROL Comparação de segmento] se prestam a análises mais avançadas. Um botão `"+"` está disponível nos projetos para que você possa adicionar painéis em branco a qualquer momento.
 
-O painel inicial padrão é o painel [!UICONTROL Forma livre], mas você também pode tornar o painel em branco[o padrão.](/help/analysis-workspace/c-panels/blank-panel.md)
+O painel inicial padrão é o painel [!UICONTROL Forma livre], mas você também pode definir o [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) como padrão.
 
 ## Calendário {#calendar}
 
 O calendário do painel controla o intervalo de relatórios para tabelas e visualizações em um painel.
 
-Observação: Se um componente de intervalo de datas (roxo) for usado em uma tabela, visualização ou zona suspensa do painel, ele substituirá o calendário do painel.
+Observação: se um componente de intervalo de datas (roxo) for usado em uma tabela, uma visualização ou uma zona suspensa do painel, ele substituirá o calendário do painel.
 
 ![](assets/panel-calendar.png)
 
-## Dropzone {#dropzone}
+## Zona suspensa {#dropzone}
 
-A área suspensa do painel permite que você aplique filtros de segmento e lista suspensa a todas as tabelas e visualizações em um painel. Você pode aplicar um ou vários filtros a um painel. O título acima de cada filtro pode ser modificado clicando no lápis de edição ou você pode clicar com o botão direito do mouse para removê-lo completamente.
+A área suspensa do painel permite aplicar filtros de segmento e lista suspensa a todas as tabelas e visualizações em um painel. Você pode aplicar um ou vários filtros a um painel. O título acima de cada filtro pode ser modificado clicando no lápis de edição ou você pode clicar com o botão direito do mouse para removê-lo completamente.
 
 ### Filtros de segmento
 
@@ -57,23 +57,23 @@ Filtros ad-hoc são locais para o projeto e não aparecerão no painel esquerdo,
 
 Além dos filtros de segmento, os filtros suspensos permitem que você interaja com os dados de forma controlada. Por exemplo, você pode adicionar um filtro suspenso para Tipos de dispositivo móvel para segmentar o painel por Tablet, Celular ou Desktop.
 
-Filtros suspensos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes segmentos de País aplicados, poderá consolidar todas as versões em um único projeto e adicionar um filtro suspenso de País.
+Filtros suspensos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes segmentos de País aplicados, será possível consolidar todas as versões em um único projeto e adicionar um filtro suspenso de País.
 
 ![](assets/dropdown-filter-intro.png)
 
 Para criar filtros suspensos:
 
-1. Para criar um filtro suspenso usando [!UICONTROL itens de Dimension], como valores dentro da dimensão [!UICONTROL Canal de marketing], clique no ícone de seta para a direita ao lado da dimensão no painel esquerdo. Isso exporá todos os itens disponíveis. Selecione um ou vários itens do componente no painel esquerdo e solte-os no painel **enquanto mantém pressionada a tecla Shift**. Isso transformará os componentes em um filtro suspenso, em vez de em um único segmento.
-1. Para criar um filtro suspenso usando outro componente, como métricas, segmentos ou intervalos de datas, selecione de um tipo de componente no painel esquerdo e solte na área suspensa do painel **enquanto mantém pressionada a tecla Shift**.
+1. Para criar um filtro suspenso usando [!UICONTROL itens de Dimension], como valores dentro da dimensão [!UICONTROL Canal de marketing], clique no ícone de seta para a direita ao lado da dimensão no painel esquerdo. Essa ação expõe todos os itens disponíveis. Selecione um ou vários itens do componente no painel esquerdo e solte-os na área suspensa do painel **enquanto mantém pressionada a tecla Shift**. Isso transformará os componentes em um filtro suspenso, em vez de em um segmento único.
+1. Para criar um filtro suspenso usando outro componente, como métricas, segmentos ou intervalos de datas, selecione um tipo de componente no painel esquerdo e solte na área suspensa do painel **enquanto mantém pressionada a tecla Shift**.
 1. Selecione uma das opções na lista suspensa para alterar os dados no painel. Também é possível optar por não filtrar os dados do painel ao selecionar **[!UICONTROL Nenhum filtro]**.
 
 ![](assets/create-dropdown.png)
 
-[Assista ao ](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) vídeo para saber mais sobre como adicionar filtros suspensos ao seu projeto.
+[Assista ao vídeo](https://docs.adobe.com/content/help/pt-BR/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) para saber mais sobre como adicionar filtros suspensos ao seu projeto.
 
 ## Clique com o botão direito do mouse no menu {#right-click}
 
-A funcionalidade adicional para um painel está disponível ao clicar com o botão direito do mouse no cabeçalho do painel.
+A funcionalidade adicional para um painel está disponível clicando com o botão direito do mouse no cabeçalho do painel.
 
 ![](assets/right-click-menu.png)
 
@@ -81,10 +81,10 @@ As seguintes configurações estão disponíveis:
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL Inserir painel/visualização copiados] | Permite colar (&quot;inserir&quot;) um painel ou visualização copiados em outro local do projeto ou em um projeto completamente diferente. |
-| [!UICONTROL Painel Copiar] | Permite que você clique com o botão direito do mouse e copie um painel, para que você possa inseri-lo em outro lugar dentro do projeto ou em um projeto completamente diferente. |
-| [!UICONTROL Painel duplicado] | Faz um duplicado exato do painel atual, que pode ser modificado. |
-| [!UICONTROL Recolher/Expandir todos os painéis] | Recolhe e expande todos os painéis do projeto. |
-| [!UICONTROL Recolher/Expandir todas as visualizações no painel] | Reduz e expande todas as visualizações no painel atual. |
+| [!UICONTROL Inserir visualização/painel copiado] | Permite colar (“inserir”) um painel ou visualização copiada em outro lugar no projeto ou em outro projeto completamente diferente. |
+| [!UICONTROL Copiar painel] | Permite clicar com o botão direito do mouse e copiar um painel, para que você possa inseri-lo em outro lugar no projeto ou em um projeto completamente diferente. |
+| [!UICONTROL Duplicar o painel] | Cria uma duplicata exata do painel atual, que você pode modificar. |
+| [!UICONTROL Recolher/expandir todos os painéis] | Recolhe e expande todos os painéis do projeto. |
+| [!UICONTROL Recolher/Expandir todas as visualizações no painel] | Recolhe e expande todas as visualizações no painel atual. |
 | [!UICONTROL Editar descrição] | Adicione (ou edite) uma descrição de texto para o painel. |
-| [!UICONTROL Obter link do painel] | Permite direcionar alguém a um painel específico em um projeto. Quando o link for clicado, o recipient será solicitado a fazer login antes de ser direcionado para o painel exato ao qual está vinculado. |
+| [!UICONTROL Obter link do painel] | Permite direcionar alguém a um painel específico em um projeto. Quando o link for clicado, o destinatário será solicitado a fazer logon antes de ser direcionado para o painel exato que está vinculado. |
