@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
 workflow-type: tm+mt
 source-wordcount: '1366'
-ht-degree: 27%
+ht-degree: 28%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 27%
 
 Os projetos do Workspace permitem combinar componentes de dados, tabelas e visualizações para criar sua análise e compartilhar com qualquer pessoa em sua organização. Antes de iniciar seu primeiro projeto, saiba mais sobre como acessar, navegar e gerenciar seus projetos.
 
-## Lista do projeto {#project-list}
+## Lista de projetos {#project-list}
 
 Quando você acessa **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]** pela primeira vez, a página lista todos os projetos que você possui ou que foram compartilhados com você. Essa também é a landing page do Adobe Analytics, a menos que você tenha definido uma landing page personalizada anteriormente.
 
@@ -88,7 +88,7 @@ Os componentes (Dimension, Métricas, Segmentos, Intervalos de datas) no painel 
 
 A tela do projeto é onde você reúne painéis, tabelas, visualizações e componentes para criar sua análise. Um projeto pode conter muitos painéis e cada painel pode conter muitas tabelas e visualizações.
 
-Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos de tempo, conjuntos de relatórios ou caso de uso de análise. O painel ativo terá uma borda azul ao seu redor e determina quais componentes estão disponíveis no painel esquerdo.
+Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos, conjuntos de relatórios ou caso de uso de análise. O painel ativo terá uma borda azul ao seu redor e determina quais componentes estão disponíveis no painel esquerdo.
 
 Dependendo do ponto de partida escolhido para seus projetos, você terá uma [tabela de forma livre](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html) ou um [painel em branco](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html) na tela para começar. A maneira mais rápida de analisar o start é selecionar um ou vários componentes e simplesmente arrastá-los e soltá-los na tela do projeto. Uma tabela de dados será automaticamente renderizada para você. [Saiba ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table.html) mais sobre as diferentes opções para criar uma tabela, ou aproveite nosso  [tutorial de ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?#training-tutorial) treinamento para obter mais orientações sobre como criar seu primeiro projeto.
 
