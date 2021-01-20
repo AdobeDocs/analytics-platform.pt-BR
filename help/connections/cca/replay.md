@@ -1,8 +1,8 @@
 ---
 title: Como funcionam as repetições
-description: Entenda o conceito de "repetição" no Cross-canal Analytics
+description: Entenda o conceito de "repetição" no Cross-Canal Analytics
 translation-type: tm+mt
-source-git-commit: 26486c79f6d94db1aa795bf024f581cad74c25f6
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 16%
@@ -12,7 +12,7 @@ ht-degree: 16%
 
 # Como funcionam as repetições
 
-O Cross-canal Analytics envia dois dados em uma determinada conexão:
+O Cross-Canal Analytics envia dois dados em uma determinada conexão:
 
 * **Arranque ao vivo**: O CCA tenta costurar cada ocorrência à medida que entra. Geralmente, os novos dispositivos da rede para o conjunto de dados que nunca fizeram logon não são agrupados nesse nível. Os dispositivos já reconhecidos são imediatamente compilados.
 * **Reproduzir**: Dados de &quot;reproduz&quot; de CCA com base em identificadores únicos que ele aprendeu. Nesse estágio, novos dispositivos para a conexão se tornam costurados. Adobe oferta dois intervalos de repetição:
