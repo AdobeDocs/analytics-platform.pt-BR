@@ -1,8 +1,8 @@
 ---
-title: Perguntas frequentes sobre análise de canais cruzados
-description: Perguntas frequentes sobre o Cross-canal Analytics
+title: Perguntas frequentes sobre análise de Canais cruzados
+description: Perguntas frequentes sobre o Cross-Canal Analytics
 translation-type: tm+mt
-source-git-commit: dd4e7e5cd04db6483f0e4a1f3161f23f8a5a8294
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 20%
@@ -41,8 +41,8 @@ O número de IDs persistentes é irrelevante em favor da ID transitória. Um ún
 
 ## Quando eu entrar em contato com meu Gerente de conta com as informações desejadas, quanto tempo leva para o conjunto de dados rechaveado ficar disponível?
 
-A correção ao vivo está disponível aproximadamente 1 semana depois que o Adobe ativa o Cross-canal Analytics. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de 1 milhão de eventos por dia) normalmente levam alguns dias, enquanto grandes conjuntos de dados (1 bilhão de eventos por dia) podem levar uma semana ou mais.
+A correção ao vivo está disponível aproximadamente 1 semana depois que o Adobe ativa o Cross-Canal Analytics. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de 1 milhão de eventos por dia) normalmente levam alguns dias, enquanto grandes conjuntos de dados (1 bilhão de eventos por dia) podem levar uma semana ou mais.
 
-## Como o Cross-canal Analytics lida com solicitações GDPR e CCPA?
+## Como o Cross-Canal Analytics lida com solicitações GDPR e CCPA?
 
 O Adobe lida com solicitações do RGPD e CCPA de acordo com as leis locais e internacionais. O Adobe oferta o [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e rechaveados.
