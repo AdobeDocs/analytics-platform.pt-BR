@@ -2,9 +2,9 @@
 title: Importar centro de atendimento e dados da Web
 description: Saiba como criar um conjunto de dados que vincula os dados da central de atendimento e do site.
 translation-type: tm+mt
-source-git-commit: 8d2f70ad47dcf9b97808da3a04d32d3412a1f0c8
+source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '679'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Importar centro de atendimento e dados da Web
 
-O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar conjuntos de dados de diferentes fontes em um único projeto do Workspace. Use este guia para entender como sua organização pode unir dados de seu site para dados que se originam de sua central de atendimento.
+O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar conjuntos de dados de diferentes fontes em um único projeto do Workspace. Use este guia para entender como sua organização pode combinar dados do site com dados da central de atendimento.
 
 ## Pré-requisitos
 
@@ -31,7 +31,7 @@ O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar 
 
 ## Importar dados da Web e da central de atendimento para a plataforma
 
-Comece a importar dados para o Adobe Experience Platform. Consulte [Criar um schema](https://docs.adobe.com/content/help/pt-BR/experience-platform/xdm/tutorials/create-schema-ui.html) e [Ingest data](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html) na documentação do Adobe Experience Platform.
+Importe seus dados para o Adobe Experience Platform. Consulte [Criar um schema](https://docs.adobe.com/content/help/pt-BR/experience-platform/xdm/tutorials/create-schema-ui.html) e [Ingest data](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html) na documentação do Adobe Experience Platform.
 
 Ao importar dados para a Plataforma, as seguintes dicas podem ajudar a aumentar o insight nos relatórios resultantes:
 
@@ -43,7 +43,7 @@ Ao importar dados para a Plataforma, as seguintes dicas podem ajudar a aumentar 
 CJA requer um identificador comum para gerar um [conjunto de dados combinado](../connections/combined-dataset.md).
 
 * Se seus conjuntos de dados já tiverem um identificador comum em cada evento em ambos os conjuntos de dados, você poderá ignorar essa etapa e continuar a criar uma conexão.
-* Se um de seus conjuntos de dados tiver um identificador comum em apenas alguns eventos, você poderá unir dados usando o Cross-canal Analytics. Consulte [Visão geral do Cross-canal Analytics](/help/connections/cca/overview.md) para obter etapas para habilitar o CCA para esses dois conjuntos de dados.
+* Se um de seus conjuntos de dados tiver um identificador comum em apenas alguns eventos, você poderá unir dados usando o Cross-Canal Analytics. Consulte [Visão geral do Cross-Canal Analytics](/help/connections/cca/overview.md) para obter etapas para habilitar o CCA para esses dois conjuntos de dados.
 
 ## Criar uma conexão no CJA
 
@@ -100,9 +100,19 @@ step 3: call
 another good one
 
 step 1: all sessions
-step 2: -->
+step 2: 
 
-<!--  use target (AB testing) to test new versions of these pages so they reduce calls (using an eVar to determine A/B?)
-  filter by specific call reason using workspace dropdowns
-  visualize flow of pages > call reason 
--->
+Orrr we could also use dataset ID
+
+### Site sections that result in a call within 30 minutes
+
+Slide 4
+
+Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+
+wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
+
+use sequential segmentation, but you lose the ability to use attribution IQ
+
+## What to do when you've found insight -->
+
