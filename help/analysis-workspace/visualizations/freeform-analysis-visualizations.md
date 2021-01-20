@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 42%
+ht-degree: 44%
 
 ---
 
@@ -86,7 +86,7 @@ A funcionalidade adicional para uma visualização está disponível ao clicar c
 
 | Configuração | Descrição |
 | --- | --- |
-| Inserir painel/visualização copiados | Permite colar (&quot;inserir&quot;) um painel ou visualização copiados em outro local do projeto ou em um projeto completamente diferente. |
+| Inserir visualização/painel copiado | Permite colar (“inserir”) um painel ou visualização copiada em outro lugar no projeto ou em outro projeto completamente diferente. |
 | Copiar visualização | Permite clicar com o botão direito do mouse e copiar uma visualização, para que você possa inseri-la em outro lugar dentro do projeto ou em um projeto completamente diferente. |
 | [Baixar itens como CSV](/help/analysis-workspace/curate-share/download-send.md) | Baixe até 50.000 itens de dimensão para a dimensão selecionada como um CSV. |
 | [Baixar dados como CSV](/help/analysis-workspace/curate-share/download-send.md) | Baixe a fonte de dados de visualização como um CSV. |
