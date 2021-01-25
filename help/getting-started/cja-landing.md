@@ -1,11 +1,11 @@
 ---
 title: Guia do Customer Journey Analytics
 description: Página de aterrissagem do Customer Journey Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4c4463fe1c7454ede80330d8889bc4157eb99fca
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Os clientes do Analytics Select, Prime e Ultimate podem adquirir esse produto co
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Itens novos ou especiais</b> </p> <p> 
      <ul>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR#cja-connections"> Nova documentação sobre o Cross-Canal Analytics (IDs de identificação no Customer Journey Analytics)  </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en#admin-access-permissions"> Requisitos atualizados de permissões do usuário  </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en#cja-usecases"> Uso de arrays de objetos </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR#cja-connections"> Nova documentação sobre o Cross-Channel Analytics (compilação de IDs no Customer Journey Analytics) </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR#admin-access-permissions"> Requisitos atualizados de permissões do usuário </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=pt-BR#cja-usecases"> Uso de arrays de objetos </a> </li>
       <li><a href="https://docs.adobe.com/content/help/pt-BR/analytics-platform/using/cja-usecases/b2b.html"> Adicionar dados a nível de conta como um conjunto de dados de pesquisa </a> </li>
       <li><a href="https://docs.adobe.com/content/help/pt-BR/analytics-platform/using/cja-overview/cja-getting-started.html"> Introdução ao Customer Journey Analytics </a> </li> 
       <li><a href="https://docs.adobe.com/content/help/pt-BR/analytics-platform/using/cja-overview/cja-faq.html"> Perguntas frequentes</a> </li> 
