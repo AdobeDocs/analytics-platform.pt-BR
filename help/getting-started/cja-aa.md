@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 87%
+ht-degree: 97%
 
 ---
 
@@ -33,28 +33,28 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Curadoria do componente VRS | Agora parte das Visualizações de dados. |
 | Processamento de tempo do relatório | O CJA depende exclusivamente do Processamento de tempo do relatório. |
 | Exclusão do GDPR | Observe que o RGPD agora é manipulado em coordenação com [!UICONTROL Adobe Experience Platform] - o CJA herda quaisquer alterações de dados [!UICONTROL Experience Platform] feitas nos conjuntos de dados subjacentes. |
-| Permissões do usuário/Controles de acesso de dados | O CJA faz a distinção entre administradores e usuários de produtos do Adobe Admin Console. Somente administradores de produtos podem 1) criar/atualizar/excluir conexões ou visualizações de dados, 2) atualizar/excluir projetos, filtros ou métricas de cálculo que foram criadas por outros usuários e 3) compartilhar um projeto do Workspace com todos os usuários |
+| Permissões do usuário/Controles de acesso de dados | O CJA faz a distinção entre administradores e usuários de produtos do Adobe Admin Console. Somente administradores de produtos podem 1) criar/atualizar/excluir conexões ou visualizações de dados, 2) atualizar/excluir projetos, filtros ou métricas de cálculo que foram criadas por outros usuários e 3) compartilhar um projeto do Workspace com todos os usuários. |
 
 ## Compatível com limitações
 
 | Recurso | Notas |
 | --- | --- |
 | Variável de produto | A variável de produto atualmente disponível para relatórios de dados que estão em conformidade com o esquema Evento de experiência (usando especificamente o objeto productListItems). |
-| Canais de marketing | Os dados de Canais de marketing agora fluem para o CJA por meio do Conector de dados do Analytics. As regras do Canal de marketing ainda devem ser configuradas no Adobe Analytics tradicional. Algumas regras não são suportadas. Para obter mais detalhes, consulte [a documentação dos Canais de marketing CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en#cja-usecases). |
+| Canais de marketing | Os dados de Canais de marketing agora fluem para o CJA por meio do Conector de dados do Analytics. As regras do Canal de marketing ainda devem ser configuradas no Adobe Analytics tradicional. Algumas regras não são suportadas. Para obter mais detalhes, consulte a [documentação dos Canais de marketing do CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=pt-BR#cja-usecases). |
 | Visualizações | Todas as visualizações são compatíveis, exceto a visualização do Mapa. |
 | Compartilhamento de projeto | O compartilhamento de projetos só é compatível entre usuários do CJA - não há compartilhamento de projetos entre o CJA e o Analysis Workspace tradicional. |
 | Sessões personalizadas | Suporte para todos os recursos personalizados de sessão que não sejam ocorrências em segundo plano móveis. |
 | Configurações de persistência de eVar | As eVars não fazem mais parte do CJA. No entanto, as configurações de persistência agora fazem parte das Visualizações de dados e estão disponíveis para todas as dimensões. Lembre-se de que a persistência se baseia no processamento de tempo do relatório, não no processamento da coleta de dados. Isso significa que toda a persistência se baseará no intervalo de datas do relatório em vez da totalidade dos dados. |
 | Classificações | Agora chamados de &quot;Conjuntos de dados de pesquisa&quot;, eles não são importados automaticamente do Analytics tradicional. Eles terão que ser carregados para a AEP antes de serem disponibilizados no CJA. |
 | Atributos do cliente | Agora, chamados de &quot;Conjuntos de dados de perfis&quot;, eles não são importados automaticamente da Experience Cloud, mas precisarão ser carregados para a AEP antes de estarem disponíveis no CJA. |
-| Dimensões de dispositivo, navegador, tecnologia | Essas dimensões são incluídas automaticamente quando um conjunto de dados AEP inclui campos de schema XDM específicos e está em conformidade com a classe de Evento de experiência XDM. |
-| Métricas e dimensões de Entradas, Saídas e Tempo gasto | Suportado (Entradas e Saídas agora são chamadas de Start de sessão e Términos de sessão) e são calculados de uma maneira ligeiramente diferente. |
+| Dimensões de Dispositivo, Navegador, Tecnologia | Essas dimensões são incluídas automaticamente quando um conjunto de dados do AEP inclui campos de esquema XDM específicos e está em conformidade com a classe de Evento de experiência XDM. |
+| Métricas e dimensões de Entradas, Saídas e Tempo gasto | Suportados (Entradas e Saídas agora são chamadas de Inícios de sessão e Términos de sessão) e são calculados de uma maneira ligeiramente diferente. |
 
 ## Suporte parcial
 
 | Recurso | Notas |
 | --- | --- |
-| Dimensões predefinidas do Analysis Workspace (por exemplo, Tipo de navegador, Tipo de referenciador, Canais de marketing, Número de visitas etc.) | O CJA não fornece essas dimensões nativamente. Para clientes que usam o ADC (Conector de dados Analytics), algumas dessas dimensões estão disponíveis, mas não todas. Consulte nossa [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.translate.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
+| Dimensões predefinidas do Analysis Workspace (por exemplo, Tipo de navegador, Tipo de referenciador, Canais de marketing, Número de visitas etc.) | O CJA não fornece essas dimensões nativamente. Para clientes que usam o ADC (Conector de dados Analytics), algumas dessas dimensões estão disponíveis, mas não todas. Consulte nossa [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos, Analytics for Target (A4T) e Visualizadores simultâneos de mídia não são compatíveis. |
 | eVar de merchandising | As eVars de merchandising funcionarão somente com conjuntos de dados do ADC, a menos que estejam em conformidade estrita com o mesmo esquema XDM (similar às limitações da lista de produtos acima). |
 | Filtragem de bot | Para conjuntos de dados do ADC (Conector de dados Analytics), a filtragem de bot é aplicada. A lógica geral de filtragem de bot para outros conjuntos de dados não é executada pela [!UICONTROL Experience Platform] ou pelo CJA. |
@@ -72,7 +72,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Desduplicação de métrica | Suporte planejado. |
 | Calendários personalizados | Suporte planejado. |
 | Desduplicação de métrica | Suporte planejado. |
-| Persistência da variável de comercialização | Suporte planejado. |
+| Persistência da variável de merchandising | Suporte planejado. |
 | Relatórios/projetos agendados | Suporte planejado. |
 | Alertas | Suporte planejado. |
 | Calendários personalizados | Suporte planejado. |
