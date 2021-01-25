@@ -1,20 +1,20 @@
 ---
 description: Paginação, filtragem e classificação de tabelas no Workspace
 title: Paginação, filtragem e classificação de tabelas
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 
 # Paginação, filtragem e classificação de tabelas
 
-Para obter uma visão geral, assista a este tutorial em vídeo:
+Para ter uma visão geral, assista a este tutorial em vídeo:
 
-[Paginação, filtragem e classificação de tabelas no Analysis Workspace](https://docs.adobe.com/help/en/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
+[Paginação, filtragem e classificação de tabelas no Analysis Workspace](https://docs.adobe.com/help/pt-BR/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
 
 ## Opções de filtragem avançadas {#section_36E92E31442B4EBCB052073590C1F025}
 
