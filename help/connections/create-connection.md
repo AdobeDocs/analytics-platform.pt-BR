@@ -1,11 +1,11 @@
 ---
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1957'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 Uma conexão permite integrar conjuntos de dados do [!DNL Adobe Experience Platform] ao [!UICONTROL Workspace]. Para criar relatórios sobre conjuntos de dados do [!DNL Experience Platform], primeiro é necessário estabelecer uma conexão entre os conjuntos de dados no [!DNL Experience Platform] e no [!UICONTROL Workspace].
 
-Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) para obter uma visão geral do vídeo.
+Clique [aqui](https://docs.adobe.com/content/help/pt-BR/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) para obter uma visão geral do vídeo.
 
 >[!IMPORTANT]
 >
@@ -117,19 +117,19 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 
 **[!UICONTROL Importar todos os dados existentes]** permite o preenchimento retroativo de dados históricos. Lembre-se:
 
-* Removemos a limitação de preenchimento retroativo (importação de dados históricos). Anteriormente, você poderia usar o preenchimento retroativo em um máximo de 2,5 bilhões de linhas por conta própria e, caso contrário, precisaria recorrer à engenharia. Agora, você pode preencher os dados por conta própria, sem limitações.
+* Removemos a limitação de preenchimento retroativo (importação de dados históricos). Anteriormente, você poderia usar o preenchimento retroativo em um máximo de 2,5 bilhões de linhas por conta própria e, caso contrário, precisaria recorrer à engenharia. Agora, você pode usar o preenchimento retroativo de dados por conta própria, sem qualquer limitação.
 * Priorizamos novos dados adicionados a um conjunto de dados na conexão, de modo que esses dados tenham a latência mais baixa.
 * Qualquer dado de preenchimento retroativo (histórico) é importado em uma taxa mais lenta. A latência é influenciada pela quantidade de dados históricos que você tem, combinada com a configuração de **[!UICONTROL Número médio de eventos diários]** selecionada. Por exemplo, se você tiver mais de um bilhão de linhas de dados por dia, mais 3 anos de dados históricos, pode demorar várias semanas para importar. Por outro lado, se você tiver menos de um milhão de linhas por dia e uma semana de dados históricos, demoraria menos de uma hora.
 * O preenchimento retroativo se aplica a toda a conexão, não a cada conjunto de dados individualmente.
-* O [Adobe Analytics Source Connector](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importa até 13 meses de dados, independentemente do tamanho.
+* O [Conector de origem do Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/platform-learn/tutorials/data-ingestion/ingest-data-from-adobe-analytics.html) importa até 13 meses de dados, independentemente do tamanho.
 
 ### Calcular o número médio de eventos diários
 
-Esse cálculo deve ser feito para cada conjunto de dados relacionado.
+Esse cálculo deve ser concluído para cada conjunto de dados na conexão.
 
-1. Vá para [Adobe Experience Platform Query Services](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) e crie um novo query.
+1. Vá para os [Serviços de consulta da Adobe Experience Platform](https://docs.adobe.com/content/help/pt-BR/experience-platform/query/home.html) e crie uma nova consulta.
 
-1. O query seria semelhante a:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
+1. A consulta seria semelhante a:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
 * Neste exemplo, &quot;analytics_demo_data&quot; é o nome do conjunto de dados.
-* Execute o query `Show Tables` para mostrar todos os conjuntos de dados existentes no AEP.
+* Execute a consulta `Show Tables` para mostrar todos os conjuntos de dados existentes na AEP.
