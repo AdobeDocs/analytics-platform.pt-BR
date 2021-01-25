@@ -1,9 +1,9 @@
 ---
 description: Saiba mais sobre as diferentes opções de salvar, incluindo salvar automaticamente, salvar como e salvar como modelo.
 title: Salvar projetos
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f01585ffdc0b54d1b21b035278869e59bd4947dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
 ht-degree: 100%
 
