@@ -1,11 +1,11 @@
 ---
 title: Criar uma exibição de dados
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics (CJA).
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '572'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Uma visualização de dados é semelhante a um conjunto de relatórios virtual n
 
 Os projetos do Workspace no Customer Journey Analytics são baseados em visualizações de dados.
 
-Clique [aqui](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/basic-configuration-for-data-views.html) para obter uma visão geral do vídeo.
+Clique [aqui](https://docs.adobe.com/content/help/pt-BR/platform-learn/tutorials/cja/basic-configuration-for-data-views.html) para obter uma visão geral do vídeo.
 
 ## Pré-requisito
 
@@ -57,4 +57,4 @@ Antes de criar visualizações de dados, é necessário [configurar uma ou mais 
 
 ## Excluir visualizações de dados
 
-Se você excluir uma visualização de dados em [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que quaisquer projetos do Workspace que dependerem dessa visualização de dados excluída deixarão de funcionar.
+Se você excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que qualquer projeto do Workspace que depende dessa visualização de dados excluída deixará de funcionar.
