@@ -1,11 +1,11 @@
 ---
 title: Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre
 description: Como interagir com itens de dimensão dinâmicos e estáticos em tabelas.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '519'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Os itens de dimensão estáticos não mudam com o tempo; são componentes fixos 
 
 Sempre que você selecionar e soltar manualmente valores de componentes específicos (dimensão, métrica, segmento, intervalo de datas) em uma tabela, o resultado será uma lista estática de linhas ou colunas. Os itens de dimensão estáticos também podem ser criados se você optar por:
 
-* Em linhas, clique com o botão direito do mouse em > [!UICONTROL Exibir somente linhas selecionadas]
+* Nas linhas, clique com o botão direito do mouse em > [!UICONTROL Exibir somente linhas selecionadas]
 * Nas colunas, clique com o botão direito do mouse em > [!UICONTROL Tornar o item estático]
 
 Por exemplo, ao arrastar sobre itens específicos Tipo de navegador, como Microsoft e Apple, esses 2 itens específicos sempre são puxados para a tabela.
@@ -56,5 +56,5 @@ Itens de dimensão de diferentes dimensões podem ser adicionados à mesma tabel
 As linhas dinâmicas e estáticas se comportam de maneira diferente na linha total de forma livre. Por padrão:
 
 * As linhas dinâmicas são somadas no lado do servidor e deduplicam métricas como visitas ou visitantes
-* As linhas estáticas são somadas no lado do cliente e **não** deduplicam as métricas. Para calcular o total de linhas do lado do servidor, altere a configuração de linha para **Mostrar total geral**. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=pt-BR)
+* As linhas estáticas são somadas no lado do cliente e **não** deduplicam as métricas. Para calcular o total de linhas do lado do servidor, altere a configuração de linha para **Mostrar total geral**. [Saiba mais](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html)
 
