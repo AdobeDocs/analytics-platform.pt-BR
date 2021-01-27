@@ -1,11 +1,11 @@
 ---
 description: Mostra os 5 principais valores para dimensões que não sejam de tempo (e 15 para dimensões de tempo).
-title: Visualizar dimensões
+title: Como pré-visualização dimensões na área de trabalho CJA
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 7e000de9ed4c63e69a5a69ecdb3b12bb3894e0bc
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 95%
+source-wordcount: '230'
+ht-degree: 92%
 
 ---
 
