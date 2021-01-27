@@ -1,24 +1,28 @@
 ---
 description: Paginação, filtragem e classificação de tabelas no Workspace
 title: Paginação, filtragem e classificação de tabelas
-translation-type: ht
-source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: ht
-source-wordcount: '97'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 71401db7bf034136eb053f559962b1eb49175ec1
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 35%
 
 ---
 
 
 # Paginação, filtragem e classificação de tabelas
 
-Para ter uma visão geral, assista a este tutorial em vídeo:
+>[!NOTE]
+>
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
-[Paginação, filtragem e classificação de tabelas no Analysis Workspace](https://docs.adobe.com/help/pt-BR/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/pagination-filtering-sorting-tables.html)
+Para obter uma visão geral das tabelas de paginação, filtragem e classificação no Analysis Workspace, assista a este tutorial em vídeo:
+
+>[!VIDEO](https://publish.tv.adobe.com/bucket/1/category/2282/video/23968/)
 
 ## Opções de filtragem avançadas {#section_36E92E31442B4EBCB052073590C1F025}
 
-Clicar no ícone de filtro e, em seguida, em Mostrar avançadas próximo a uma dimensão em uma tabela de forma livre permite filtrar usando o critério a seguir:
+Clicar no ícone de filtro e depois em **[!UICONTROL Mostrar avançado]**, ao lado de uma dimensão em uma tabela de forma livre permite filtrar usando os seguintes critérios. É possível aplicar várias regras de filtragem.
 
 * Contém
 * Não contém
@@ -34,3 +38,15 @@ Clicar no ícone de filtro e, em seguida, em Mostrar avançadas próximo a uma d
 
 ![](assets/advanced-filter.png)
 
+## Dimension na classificação em tabelas de forma livre
+
+>[!NOTE]
+>
+>A classificação de Dimension aplica-se somente às tabelas de forma livre no Customer Journey Analytics, não no Adobe Analytics tradicional. A classificação de métricas pode ser feita em ambas as versões do Analytics.
+
+1. Em qualquer tabela de forma livre em um projeto, clique na seta ao lado do nome da dimensão:
+
+Insira a captura de tela aqui.
+
+* A seta para baixo classifica em ordem decrescente e a seta para cima (padrão) em ordem crescente.
+* É possível classificar dimensões alfabeticamente ou numericamente. Por exemplo, você pode ter etapas numeradas em um fluxo de trabalho e pode desejar classificar pelo número da etapa. Você pode classificar uma dimensão relacionada a datas por data. Ou você poderia classificar uma dimensão de nome de produto em ordem alfabética.
