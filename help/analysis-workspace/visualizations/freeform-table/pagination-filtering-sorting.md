@@ -2,10 +2,10 @@
 description: Paginação, filtragem e classificação de tabelas no Workspace
 title: Paginação, filtragem e classificação de tabelas
 translation-type: tm+mt
-source-git-commit: 71401db7bf034136eb053f559962b1eb49175ec1
+source-git-commit: 7e000de9ed4c63e69a5a69ecdb3b12bb3894e0bc
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 35%
+source-wordcount: '235'
+ht-degree: 36%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 35%
 
 Para obter uma visão geral das tabelas de paginação, filtragem e classificação no Analysis Workspace, assista a este tutorial em vídeo:
 
->[!VIDEO](https://publish.tv.adobe.com/bucket/1/category/2282/video/23968/)
+>[!VIDEO](https://video.tv.adobe.com/v/23968)
 
 ## Opções de filtragem avançadas {#section_36E92E31442B4EBCB052073590C1F025}
 
