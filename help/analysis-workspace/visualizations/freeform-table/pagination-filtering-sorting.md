@@ -2,7 +2,7 @@
 description: Paginação, filtragem e classificação de tabelas no Workspace
 title: Paginação, filtragem e classificação de tabelas
 translation-type: tm+mt
-source-git-commit: 7e000de9ed4c63e69a5a69ecdb3b12bb3894e0bc
+source-git-commit: 7274e44dedb3eef89119d886e72c1454d914da0f
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 36%
@@ -46,7 +46,7 @@ Clicar no ícone de filtro e depois em **[!UICONTROL Mostrar avançado]**, ao la
 
 1. Em qualquer tabela de forma livre em um projeto, clique na seta ao lado do nome da dimensão:
 
-Insira a captura de tela aqui.
+![](assets/sort-dimensions.png)
 
 * A seta para baixo classifica em ordem decrescente e a seta para cima (padrão) em ordem crescente.
-* É possível classificar dimensões alfabeticamente ou numericamente. Por exemplo, você pode ter etapas numeradas em um fluxo de trabalho e pode desejar classificar pelo número da etapa. Você pode classificar uma dimensão relacionada a datas por data. Ou você poderia classificar uma dimensão de nome de produto em ordem alfabética.
+* É possível classificar dimensões alfabeticamente ou numericamente. Por exemplo, você pode ter etapas numeradas em um fluxo de trabalho e pode desejar classificar pelo número da etapa. Você pode classificar uma dimensão relacionada a datas por data. Ou você poderia classificar as fontes de dados em ordem alfabética, como na captura de tela acima.
