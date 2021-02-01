@@ -2,10 +2,10 @@
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 translation-type: tm+mt
-source-git-commit: c70662468126279110f14291c135a3f60dd919db
+source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 75%
+source-wordcount: '1014'
+ht-degree: 76%
 
 ---
 
@@ -34,6 +34,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Processamento de tempo do relatório | O CJA depende exclusivamente do Processamento de tempo do relatório. |
 | Exclusão do GDPR | Observe que o RGPD agora é manipulado em coordenação com [!UICONTROL Adobe Experience Platform] - o CJA herda quaisquer alterações de dados [!UICONTROL Experience Platform] feitas nos conjuntos de dados subjacentes. |
 | Permissões do usuário/Controles de acesso de dados | O CJA faz a distinção entre administradores e usuários de produtos do Adobe Admin Console. Somente administradores de produtos podem 1) criar/atualizar/excluir conexões ou visualizações de dados, 2) atualizar/excluir projetos, filtros ou métricas de cálculo que foram criadas por outros usuários e 3) compartilhar um projeto do Workspace com todos os usuários. |
+| Arranque entre dispositivos/canais | Consulte [Análises de Canais cruzados](/help/connections/cca/overview.md). |
 | Dimensões Analysis Workspace predefinidas (por exemplo, Tipo de navegador, Tipo de Quem indicou, Sistema operacional etc.) | O CJA fornece essas dimensões nativamente, desde que os campos base do XDM (como agente do usuário ou ID do dispositivo) sejam preenchidos. Para clientes que usam o ADC (Conector de dados Analytics), algumas dessas dimensões estão disponíveis, mas não todas. Consulte nossa [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Acesso à API de relatórios | Atualmente disponível usando a API do Analytics 2.0. |
 
@@ -59,8 +60,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos, Analytics for Target (A4T) e Visualizadores simultâneos de mídia não são compatíveis. |
 | eVar de merchandising | O comportamento das eVars de comercialização pode ser obtido usando dimensões em um Object Array, dado que um eVar de comercialização não está definido para usar persistência. Atualmente, a persistência da dimensão de comercialização não está disponível. |
 | Filtragem de bot | Para conjuntos de dados do ADC (Conector de dados Analytics), a filtragem de bot é aplicada. A lógica geral de filtragem de bot para outros conjuntos de dados não é executada pela [!UICONTROL Experience Platform] ou pelo CJA. |
-| Regras de processamento | Para conjuntos de dados do ADC, as regras de processamento ainda são aplicadas. |
-| Correção de identidade entre dispositivos | O CJA oferece suporte à identificação entre dispositivos e canais em uma base contínua, incluindo a reafirmação periódica dos dados históricos. Atualmente, isso só pode ser feito usando uma única identidade definida pelo cliente em combinação com uma única ID de cookie. |
+| Regras de processamento | Para conjuntos de dados baseados no Analytics Data Connector, as regras de processamento ainda são aplicadas. |
 | Media Analytics | Os dados de mídia estão disponíveis como parte do Conector de dados do Analytics. |
 
 ## Sem suporte no momento, mas planejado
