@@ -17,11 +17,11 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,10 +40,10 @@ ht-degree: 98%
    + [Gerenciar conexões](connections/manage-connection.md)
    + [Estimar tamanho da conexão](connections/estimate-connection-size.md)
    + [Conjuntos de dados de eventos combinados](connections/combined-dataset.md)
-   + Análises de Canais cruzados {#cca}
-      + [Visão geral do Cross-Canal Analytics](connections/cca/overview.md)
+   + Análise de vários canais {#cca}
+      + [Visão geral da Análise de vários canais](connections/cca/overview.md)
       + [Como funcionam as repetições](connections/cca/replay.md)
-      + [Perguntas frequentes sobre análise de Canais cruzados](connections/cca/faq.md)
+      + [Perguntas frequentes sobre a Análise de vários canais](connections/cca/faq.md)
 + Visualizações de dados {#cja-dataviews}
    + [Criar uma exibição de dados](data-views/create-dataview.md)
    + [Configurar exibições de dados e atribuição](data-views/configure-dataviews.md)
