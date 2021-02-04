@@ -2,11 +2,11 @@
 description: Saiba mais sobre as opções Desfazer e Refazer no Analysis Workspace.
 title: Configurações Desfazer e Refazer
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
