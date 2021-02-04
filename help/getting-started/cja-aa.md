@@ -4,8 +4,8 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 translation-type: tm+mt
 source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 76%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Conjuntos de relatórios virtuais | Agora chamado de [Visualizações de dados](/help/data-views/create-dataview.md). |
 | Curadoria do componente VRS | Agora parte das Visualizações de dados. |
 | Processamento de tempo do relatório | O CJA depende exclusivamente do Processamento de tempo do relatório. |
-| Exclusão do GDPR | Observe que o RGPD agora é manipulado em coordenação com [!UICONTROL Adobe Experience Platform] - o CJA herda quaisquer alterações de dados [!UICONTROL Experience Platform] feitas nos conjuntos de dados subjacentes. |
+| Exclusão do GDPR | Observe que o GDPR agora é manipulado em coordenação com a [!UICONTROL Adobe Experience Platform] - O CJA herda todas as alterações de dados que a [!UICONTROL Experience Platform] faz nos conjuntos de dados adjacentes. |
 | Permissões do usuário/Controles de acesso de dados | O CJA faz a distinção entre administradores e usuários de produtos do Adobe Admin Console. Somente administradores de produtos podem 1) criar/atualizar/excluir conexões ou visualizações de dados, 2) atualizar/excluir projetos, filtros ou métricas de cálculo que foram criadas por outros usuários e 3) compartilhar um projeto do Workspace com todos os usuários. |
 | Arranque entre dispositivos/canais | Consulte [Análises de Canais cruzados](/help/connections/cca/overview.md). |
 | Dimensões Analysis Workspace predefinidas (por exemplo, Tipo de navegador, Tipo de Quem indicou, Sistema operacional etc.) | O CJA fornece essas dimensões nativamente, desde que os campos base do XDM (como agente do usuário ou ID do dispositivo) sejam preenchidos. Para clientes que usam o ADC (Conector de dados Analytics), algumas dessas dimensões estão disponíveis, mas não todas. Consulte nossa [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
