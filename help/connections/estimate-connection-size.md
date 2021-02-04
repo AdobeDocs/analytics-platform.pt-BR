@@ -1,9 +1,9 @@
 ---
 title: Estimar tamanho da conexão
 description: Relatar o uso atual do Customer Journey Analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '612'
 ht-degree: 100%
 
