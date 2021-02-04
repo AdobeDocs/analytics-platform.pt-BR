@@ -1,18 +1,18 @@
 ---
-title: Perguntas frequentes sobre análise de Canais cruzados
-description: Perguntas frequentes sobre o Cross-Canal Analytics
-translation-type: tm+mt
+title: Perguntas frequentes sobre a Análise de vários canais
+description: Perguntas frequentes sobre a Análise de vários canais
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '460'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # Perguntas frequentes
 
-## Como posso usar o CCA para ver como as pessoas mudam de um tipo de canal para outro?
+## Como posso usar a AVC para ver como as pessoas mudam de um tipo de canal para outro?
 
 Você pode usar uma visualização de Fluxo com a dimensão ID de conjunto de dados.
 
@@ -23,9 +23,9 @@ Você pode usar uma visualização de Fluxo com a dimensão ID de conjunto de da
 
 Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá usar um conjunto de dados de pesquisa.
 
-## Até que ponto o CCA faz o rechaveamento de visitantes?
+## Até que ponto a AVC faz o rechaveamento de visitantes?
 
-A janela de pesquisa para rechaveamento depende da frequência desejada de [repetição](replay.md) de dados. Por exemplo, se você configurar o CCA para repetir os dados uma vez por semana, a janela de pesquisa para rechaveamento será de sete dias. Se você configurar o CCA para repetir dados todos os dias, a janela de pesquisa para rechaveamento será de um dia.
+A janela de pesquisa para rechaveamento depende da frequência desejada de [repetição](replay.md) de dados. Por exemplo, se você configurar a AVC para repetir os dados uma vez por semana, a janela de pesquisa para rechaveamento será de sete dias. Se você configurar a AVC para repetir dados todos os dias, a janela de pesquisa para rechaveamento será de um dia.
 
 ## Como os dispositivos compartilhados são manipulados?
 
@@ -33,16 +33,16 @@ Em algumas situações, é possível que várias pessoas façam logon no mesmo d
 
 A ID transitória substitui a ID persistente; portanto, os dispositivos compartilhados são considerados pessoas separadas (mesmo que sejam originários do mesmo dispositivo).
 
-## Como o CCA lida com situações em que uma única pessoa tem um grande número de IDs persistentes?
+## Como a AVC lida com situações em que uma única pessoa tem um grande número de IDs persistentes?
 
 Em algumas situações, um usuário individual pode ser associado a um grande número de IDs persistentes. Os exemplos incluem a limpeza frequente de cookies do navegador ou o uso do modo privado/anônimo do navegador.
 
-O número de IDs persistentes é irrelevante em favor da ID transitória. Um único usuário pode pertencer a qualquer número de dispositivos sem afetar a capacidade do CCA de compilar entre dispositivos.
+O número de IDs persistentes é irrelevante em favor da ID transitória. Um único usuário pode pertencer a qualquer número de dispositivos sem afetar a capacidade da AVC de compilar entre dispositivos.
 
 ## Quando eu entrar em contato com meu Gerente de conta com as informações desejadas, quanto tempo levará para o conjunto de dados rechaveado ficar disponível?
 
-A correção ao vivo está disponível aproximadamente 1 semana depois que o Adobe ativa o Cross-Canal Analytics. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de um milhão de eventos por dia) normalmente levam alguns dias, enquanto grandes conjuntos de dados (um bilhão de eventos por dia) podem levar uma semana ou mais.
+A compilação em tempo real está disponível aproximadamente uma semana depois de a Adobe ativar a Análise de vários canais. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de um milhão de eventos por dia) normalmente levam alguns dias, enquanto grandes conjuntos de dados (um bilhão de eventos por dia) podem levar uma semana ou mais.
 
-## Como o Cross-Canal Analytics lida com solicitações GDPR e CCPA?
+## Como a Análise de vários canaiss lida com solicitações do GDPR e CCPA?
 
 O Adobe lida com solicitações do GDPR e CCPA de acordo com as leis locais e internacionais. A Adobe oferece o [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e rechaveados.
