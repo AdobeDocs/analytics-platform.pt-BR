@@ -2,11 +2,11 @@
 keywords: Analysis Workspace
 title: Visão geral do Analysis Workspace
 description: Visão geral dos recursos do Analysis Workspace
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ O Analysis Workspace é uma ferramenta de navegador flexível que permite criar 
 
 Se você tiver apenas alguns minutos, assista a esta breve visão geral para ver o que é possível.
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12&captions=por_br)
 
 ## Faça logon no Adobe Analytics {#login}
 
