@@ -1,11 +1,11 @@
 ---
 title: Importação de dados da central de atendimento e da Web
 description: Saiba como criar um conjunto de dados que vincula os dados da central de atendimento e do site.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar 
 
 ## Importação de dados da Web e da central de atendimento para a Plataforma
 
-Importe seus dados para o Adobe Experience Platform. Consulte [Criar um esquema](https://docs.adobe.com/content/help/pt-BR/experience-platform/xdm/tutorials/create-schema-ui.html) e [Assimilar dados](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html) na documentação da Adobe Experience Platform.
+Importe os dados para a Adobe Experience Platform. Consulte [Criar um esquema](https://docs.adobe.com/content/help/pt-BR/experience-platform/xdm/tutorials/create-schema-ui.html) e [Assimilar dados](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html) na documentação da Adobe Experience Platform.
 
 Ao importar dados para a Plataforma, as seguintes dicas podem proporcionar mais insights nos relatórios resultantes:
 
@@ -43,13 +43,13 @@ Ao importar dados para a Plataforma, as seguintes dicas podem proporcionar mais 
 O CJA exige um identificador comum para gerar um [conjunto de dados combinado](../connections/combined-dataset.md).
 
 * Se seus conjuntos de dados já tiverem um identificador comum em cada evento em ambos os conjuntos de dados, você poderá ignorar essa etapa e continuar criando uma conexão.
-* Se um de seus conjuntos de dados tiver um identificador comum em apenas alguns eventos, você poderá unir dados usando o Cross-Canal Analytics. Consulte [Visão geral do Cross-Canal Analytics](/help/connections/cca/overview.md) para obter etapas para habilitar o CCA para esses dois conjuntos de dados.
+* Se um de seus conjuntos de dados tiver um identificador comum em apenas alguns eventos, você poderá compilar os dados usando o Cross-Channel Analytics. Consulte a [visão geral da Análise de vários canais](/help/connections/cca/overview.md) para ver as etapas para habilitar a AVC para esses dois conjuntos de dados.
 
 ## Criar uma conexão no CJA
 
 [Criar uma conexão](/help/connections/create-connection.md) no CJA.
 
-* Se o CCA for usado, um novo conjunto de dados compilado estará disponível para você usar. Use o campo ID compilado recém-criado como a ID de pessoa.
+* Se a AVC for usado, um novo conjunto de dados compilado estará disponível para você usar. Use o campo ID compilado recém-criado como a ID de pessoa.
 * Caso contrário, você pode selecionar os conjuntos de dados originais da Web e da central de atendimento para uso na conexão.
 
 ## Criar uma exibição de dados
@@ -63,7 +63,7 @@ As visualizações a seguir podem ser usadas para obter insights do conjunto de 
 
 ### Sobreposição do conjunto de dados
 
-Essa visualização ajuda você a entender como o CCA compila os dados.
+Essa visualização ajuda você a entender como a AVC compila os dados.
 
 1. Crie dois filtros. A variável usada nesses dois filtros é a mesma variável mencionada acima que reflete a origem de dados de cada evento. Consulte [Criar um filtro](/help/components/filters/create-filters.md) para obter mais informações.
    * Container de pessoa em que a ID do conjunto de dados é igual aos seus dados da Web
