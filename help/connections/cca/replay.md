@@ -1,27 +1,27 @@
 ---
 title: Como funcionam as repetições
-description: Entenda o conceito de "repetição" no Cross-Canal Analytics
-translation-type: tm+mt
+description: Entenda o conceito de “repetição” na Análise de vários canais
+translation-type: ht
 source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Como funcionam as repetições
 
-O Cross-Canal Analytics envia dois dados em uma determinada conexão:
+A Análise de vários canais faz duas passagens de dados em uma determinada conexão:
 
-* **Compilação em tempo real**: o CCA tenta compilar cada hit à medida que ele chega. Os novos dispositivos de rede para o conjunto de dados que nunca se conectaram normalmente não são compilados neste nível. Os dispositivos já reconhecidos são imediatamente compilados.
-* **Repetição**: o CCA &quot;repete&quot; dados com base em identificadores únicos que ele aprendeu. É nesse estágio que os novos dispositivos da conexão são compilados. A Adobe oferece dois intervalos de repetição:
+* **Compilação em tempo real**: a AVC tenta compilar cada hit à medida que ele chega. Os novos dispositivos de rede para o conjunto de dados que nunca se conectaram normalmente não são compilados neste nível. Os dispositivos já reconhecidos são imediatamente compilados.
+* **Repetição**: a AVC “repete” dados com base em identificadores únicos que ele aprendeu. É nesse estágio que os novos dispositivos da conexão são compilados. A Adobe oferece dois intervalos de repetição:
    * Diariamente: os dados são repetidos todos os dias com uma janela de retrospectiva de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os visitantes não autenticados devem se autenticar no mesmo dia em que visitam o site.
    * Semanalmente: os dados são repetidos uma vez por semana com uma janela de retrospectiva de sete dias. Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, dados com menos de uma semana não são compilados.
 
 ## Etapa 1: compilação em tempo real
 
-O CCA tenta compilar cada evento após a coleção em dispositivos e canais conhecidos. Considere o exemplo a seguir, em que Bob usa dois canais diferentes.
+A AVC tenta compilar cada evento após a coleção em dispositivos e canais conhecidos. Considere o exemplo a seguir, em que Bob usa dois canais diferentes.
 
 *Dados como aparecem no dia em que são coletados:*
 
@@ -41,7 +41,7 @@ A atribuição funciona assim que a variável personalizada de identificação s
 
 ## Etapa 2: Repetir a compilação
 
-Em intervalos regulares (uma vez por semana ou uma vez por dia, dependendo da janela de pesquisa escolhida), o CCA recalcula os dados históricos com base nos dispositivos que agora ele reconhece. Se um dispositivo enviar dados inicialmente sem autenticação e fizer logon, o CCA vinculará esses eventos não autenticados à pessoa correta. A tabela a seguir representa os mesmos dados acima, mas mostra números diferentes com base na repetição dos dados.
+Em intervalos regulares (uma vez por semana ou uma vez por dia, dependendo da janela de pesquisa escolhida), a AVC recalcula os dados históricos com base nos dispositivos que agora ele reconhece. Se um dispositivo enviar dados inicialmente sem autenticação e fizer logon, a AVC vinculará esses eventos não autenticados à pessoa correta. A tabela a seguir representa os mesmos dados acima, mas mostra números diferentes com base na repetição dos dados.
 
 *Os mesmos dados após a repetição:*
 
@@ -57,5 +57,5 @@ Em intervalos regulares (uma vez por semana ou uma vez por dia, dependendo da ja
 
 ## Recapitulação
 
-* O CCA costuma compilar imediatamente dispositivos conhecidos, mas não compila imediatamente dispositivos novos ou não reconhecidos.
+* A AVC costuma compilar imediatamente dispositivos conhecidos, mas não compila imediatamente dispositivos novos ou não reconhecidos.
 * Os dados são repetidos em intervalos regulares e alteram os dados históricos na conexão com base nos dispositivos que eles aprenderam a identificar.
