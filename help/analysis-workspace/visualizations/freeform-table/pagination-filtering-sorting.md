@@ -1,11 +1,11 @@
 ---
 description: Paginação, filtragem e classificação de tabelas no Workspace
 title: Paginação, filtragem e classificação de tabelas
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7274e44dedb3eef89119d886e72c1454d914da0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Para obter uma visão geral das tabelas de paginação, filtragem e classificaç
 
 ## Opções de filtragem avançadas {#section_36E92E31442B4EBCB052073590C1F025}
 
-Clicar no ícone de filtro e depois em **[!UICONTROL Mostrar avançado]**, ao lado de uma dimensão em uma tabela de forma livre permite filtrar usando os seguintes critérios. É possível aplicar várias regras de filtragem.
+Clicar no ícone de filtro e, em seguida, em **[!UICONTROL Mostrar avançado]** próximo a uma dimensão em uma tabela de forma livre permite filtrar usando os critérios a seguir. É possível aplicar várias regras de filtragem.
 
 * Contém
 * Não contém
@@ -38,15 +38,15 @@ Clicar no ícone de filtro e depois em **[!UICONTROL Mostrar avançado]**, ao la
 
 ![](assets/advanced-filter.png)
 
-## Dimension na classificação em tabelas de forma livre
+## Classificação de dimensões em tabelas de forma livre
 
 >[!NOTE]
 >
->A classificação de Dimension aplica-se somente às tabelas de forma livre no Customer Journey Analytics, não no Adobe Analytics tradicional. A classificação de métricas pode ser feita em ambas as versões do Analytics.
+>A classificação de dimensões aplica-se somente às tabelas de forma livre no Customer Journey Analytics, não no Adobe Analytics tradicional. A classificação de métricas pode ser feita nas duas as versões do Analytics.
 
-1. Em qualquer tabela de forma livre em um projeto, clique na seta ao lado do nome da dimensão:
+1. Em qualquer tabela de forma livre de um projeto, clique na seta ao lado do nome da dimensão:
 
 ![](assets/sort-dimensions.png)
 
-* A seta para baixo classifica em ordem decrescente e a seta para cima (padrão) em ordem crescente.
-* É possível classificar dimensões alfabeticamente ou numericamente. Por exemplo, você pode ter etapas numeradas em um fluxo de trabalho e pode desejar classificar pelo número da etapa. Você pode classificar uma dimensão relacionada a datas por data. Ou você poderia classificar as fontes de dados em ordem alfabética, como na captura de tela acima.
+* A seta para baixo classifica em ordem decrescente e a seta para cima (padrão), em ordem crescente.
+* É possível classificar dimensões alfabeticamente ou numericamente. Por exemplo, pode ser que você tenha etapas numeradas em um fluxo de trabalho e deseje classificar pelo número da etapa. É possível classificar uma dimensão por data. Ou você pode classificar as fontes de dados em ordem alfabética, como na captura de tela acima.
