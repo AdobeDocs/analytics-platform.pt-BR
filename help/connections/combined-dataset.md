@@ -1,11 +1,11 @@
 ---
 title: Conjuntos de dados de evento combinados
 description: Saiba como o CJA cria uma conexão combinando conjuntos de dados.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b6bfb14b594f42efc114bbde1b047b814e1cf653
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Ao criar uma conexão, o CJA combina todos os esquemas e conjuntos de dados em u
 * A coluna &quot;ID de pessoa&quot; de cada conjunto de dados é unida em uma única coluna, independentemente do nome. Essa coluna é a base para identificar visitantes únicos no CJA.
 * As linhas são processadas com base no carimbo de data e hora.
 
-O conceito de conjuntos de dados combinados é semelhante ao conceito de combinação de conjuntos de relatórios na Adobe Analytics tradicional.
+O conceito de conjuntos de dados combinados é semelhante ao conceito de combinação de conjuntos de relatórios no Adobe Analytics tradicional.
 
 ## Exemplo
 
