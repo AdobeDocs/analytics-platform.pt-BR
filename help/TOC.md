@@ -4,7 +4,7 @@ cloud: experience-cloud
 product: adobe analytics
 sub-product: jornada do cliente
 solution: Customer Journey Analytics
-type: Documentation
+type: Documentação
 index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
@@ -17,10 +17,10 @@ getting-started-title: Experience League
 getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b9204d42a1a319f6fed7d3f9b1d0145464378aa8
-workflow-type: ht
-source-wordcount: '430'
+workflow-type: tm+mt
+source-wordcount: '431'
 ht-degree: 100%
 
 ---
