@@ -2,9 +2,9 @@
 title: Referência - funções básicas
 description: 'O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas. '
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1079'
 ht-degree: 100%
 
 ---
@@ -185,7 +185,7 @@ PERCENTILE(metric,k)
 
 ## Quartil (Tabela)
 
-Retorna o quartil de valores de uma métrica. Por exemplo, os quartis podem ser usados para encontrar a porcentagem de 25% dos produtos com maior receita. MINV, MEDIAN, e MAXV retornam o mesmo valor que QUARTIL quando o quartil é igual a 0 (zero), 2 e 4, respectivamente.
+Retorna o quartil de valores de uma métrica. Por exemplo, os quartis podem ser usados para encontrar a porcentagem de 25% dos produtos com maior receita. MINV, MEDIAN, e MAXV retornam o mesmo valor que QUARTILE quando o quartil é igual a 0 (zero), 2 e 4, respectivamente.
 
 ```
 QUARTILE(metric,quart)
@@ -210,11 +210,11 @@ QUARTILE(metric,quart)
  </tbody> 
 </table>
 
-*Se *quart* = 0, QUARTIL retorna o valor mínimo. Se *quart* = 1, QUARTIL retorna o primeiro quartil (percentil 25). Se *quart* = 2, QUARTIL retorna o primeiro quartil (percentil 50). Se *quart* = 3, QUARTIL retorna o primeiro quartil (percentil 75). Se *quart* = 4, QUARTIL retorna o valor máximo.
+*Se *quart* = 0, QUARTILE retorna o valor mínimo. Se *quart* = 1, QUARTILE retorna o primeiro quartil (percentil 25). Se *quart* = 2, QUARTILE retorna o primeiro quartil (percentil 50). Se *quart* = 3, QUARTILE retorna o primeiro quartil (percentil 75). Se *quart* = 4, QUARTILE retorna o valor máximo.
 
 ## Arredondar
 
-Retorna o número inteiro mais próximo para um determinado valor. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula Arredondar(*Receita*) para arredondar a receita para o número inteiro mais próximo; neste caso, US$569. Um produto de US$569,51 será arredondado para o valor inteiro mais próximo, ou seja, US$570.
+Retorna o número inteiro mais próximo para um determinado valor. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula Round(*Receita*) para arredondar a receita para o número inteiro mais próximo; neste caso, US$569. Um produto de US$569,51 será arredondado para o valor inteiro mais próximo, ou seja, US$570.
 
 ```
 ROUND(metric)
@@ -292,7 +292,7 @@ STDEV(metric)
 
 Retorna a variação baseada em uma amostra da população de dados.
 
-A equação de VARIAÇÃO é:
+A equação de VARIANCE é:
 
 ![](assets/variance_eq.png)
 
@@ -324,10 +324,4 @@ Por exemplo, digamos que você tenha uma coluna de três itens:
 
 3
 
-A média dessa coluna é 2. A variação da coluna será ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3. Na Ad Hoc Analysis, isso terá a seguinte aparência:
-
-1 2/3
-
-2 2/3
-
-3 2/3
+A média dessa coluna é 2. A variação da coluna será ((1 - 2)² + (2 - 2)² + (3 - 2)²/3 = 2/3.
