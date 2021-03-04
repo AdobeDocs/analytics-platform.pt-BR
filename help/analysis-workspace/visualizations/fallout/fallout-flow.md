@@ -1,11 +1,11 @@
 ---
-description: As visualizações de fallout mostram onde os visitantes saíram (caíram) e continuaram (caíram) por uma sequência predefinida de páginas.
+description: As visualizações de Fallout mostram onde os visitantes saíram e continuaram em uma sequência predefinida de páginas.
 title: Visão geral de fallout
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 95%
+source-wordcount: '515'
+ht-degree: 81%
 
 ---
 
@@ -32,11 +32,11 @@ Uma visualização de fallout é útil para analisar:
 * Fluxos gerais de escopo mais amplo: das pessoas que visualizaram a página inicial, esse fluxo mostra quantas fizeram uma pesquisa e quantas delas eventualmente acessaram um item específico.
 * Correlações entre eventos no site. As correlações mostram a porcentagem de pessoas que acessaram sua política de privacidade e que fizeram uma compra.
 
-[Tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=pt-BR)  em vídeo de Visualização de fallout (4:15)
+[Tutorial em vídeo de Visualização de fallout](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=pt-BR)  (4:15)
 
 ## Segmentação como base para fluxo e fallout {#section_654F37A398C24DDDB1552A543EE29AA9}
 
-Os segmentos aplicados a painéis do Workspace funcionam de uma forma um pouco diferente que os segmentos aplicados a relatórios de fallout e de fluxo no Reports &amp; Analytics e na Ad Hoc Analysis. Na maior parte do tempo, eles fornecem os mesmos resultados. A principal diferença é que o Reports &amp; Analytics e a Ad Hoc Analysis aplicam o segmento em cada etapa da sequência. Isso pode ter resultados um pouco diferentes.
+Os segmentos aplicados a painéis do Workspace funcionam de uma forma um pouco diferente que os segmentos aplicados a relatórios de fallout e de fluxo no Reports &amp; Analytics no Adobe Analytics. Na maior parte do tempo, eles fornecem os mesmos resultados. A principal diferença é que o Reports &amp; Analytics aplica o segmento em cada etapa da sequência. Isso pode ter resultados um pouco diferentes.
 
 Veja um exemplo de fallout de duas etapas:
 
@@ -46,13 +46,13 @@ Se você aplicar um segmento no nível do painel do Workspace, o segmento é com
 
 ![](assets/fallout_seg.png)
 
-Por contraste, quando o Reports &amp; Analytics e a Ad Hoc Analysis calculam o segmento, ele é combinado da seguinte forma:
+Por outro lado, quando o Reports &amp; Analytics calcula o segmento, ele é combinado da seguinte maneira:
 
 ![](assets/fallout_segments3.png)
 
-O Reports &amp; Analytics e a Ad Hoc Analysis combinam o segmento a cada etapa. Quando os contêineres estão no mesmo nível que o fallout (nível de visita ou de visitante, por exemplo), isso resultará na correspondência do nome de visitas ou de visitantes.
+O Reports &amp; Analytics combina o segmento a cada etapa. Quando os contêineres estão no mesmo nível que o fallout (nível de visita ou de visitante, por exemplo), isso resultará na correspondência do nome de visitas ou de visitantes.
 
-Contudo, se o segmento aplicado ao painel for menor que o nível do fallout (nível de ocorrência, por exemplo), o segmento mostrará resultados diferentes devido a como ele é combinado pelo relatório. Para reiterar, na maioria das circunstâncias o número no Analysis Workspace corresponde àqueles no Reports &amp; Analytics e na Ad Hoc Analysis. Eles **não** corresponderão somente se todos os casos abaixo forem verdadeiros:
+Contudo, se o segmento aplicado ao painel for menor que o nível do fallout (nível de ocorrência, por exemplo), o segmento mostrará resultados diferentes devido a como ele é combinado pelo relatório. Para reiterar, na maioria das circunstâncias o número no Analysis Workspace corresponde àqueles no Reports &amp; Analytics. Eles **não** corresponderão somente se todos os casos abaixo forem verdadeiros:
 
 * O segmento não está no mesmo nível do fallout.
 * O segmento possui uma variável na qual o visitante/visita pode ter vários valores durante uma visita/visitante.
