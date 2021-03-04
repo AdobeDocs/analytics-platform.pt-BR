@@ -1,11 +1,11 @@
 ---
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
-translation-type: ht
-source-git-commit: b77165ee5994ec59e346cf6314a7e051ffa07524
-workflow-type: ht
-source-wordcount: '1014'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+workflow-type: tm+mt
+source-wordcount: '1035'
+ht-degree: 93%
 
 ---
 
@@ -16,11 +16,11 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 
 ## Recursos/componentes totalmente compatíveis
 
-| Recurso do Adobe Analytics | Notas |
+| Recurso do Adobe Analytics | Observações sobre o apoio |
 | --- | --- |
 | Métricas | O CJA usa o Experience Data Model (XDM) e oferece suporte a métricas ilimitadas e não está vinculado aos eventos bem-sucedidos personalizados do Analytics tradicional. Observe que algumas métricas padrão foram renomeadas do Analytics tradicional: Visitantes = Pessoas, Visitas = Sessões, Ocorrências = Eventos. |
-| Dimensões | O CJA usa o XDM e oferece suporte a dimensões ilimitadas e não está vinculado aos eventos bem-sucedidos personalizados do Analytics tradicional. |
-| Variáveis de lista/Props de lista | O CJA usa o XDM e oferece suporte a variáveis de lista ilimitadas. |
+| Dimensões | O CJA usa o XDM e oferece suporte a dimensões ilimitadas e não está vinculado a eVars personalizadas ou props do Analytics tradicional. |
+| Variáveis de lista/Props de lista | O CJA usa o XDM e oferece suporte a matrizes de sequência ilimitadas que podem ser usadas de forma semelhante a listVars. |
 | Intervalos de datas | O suporte ao Calendário personalizado está planejado. |
 | Métricas calculadas | Observe que qualquer métrica de cálculo existente no Analysis Workspace tradicional não será transferida para o CJA. |
 | Segmentos | Agora denominado &quot;Filtros&quot; - observe que qualquer segmento existente no Analysis Workspace tradicional não será transferido para o CJA. |
@@ -80,6 +80,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
 | Report Builder (plug-in do Excel) | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
+| Relatórios do Data Warehouse (exportação de linha de 100%) | O suporte é planejado na interface do Analysis Workspace. [!UICONTROL O Experience Platform Query ] Service também fornece uma interface para esses casos de uso no CJA. |
 
 ## Suporte ainda não planejado.
 
@@ -90,6 +91,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Activity Map | Suporte ainda não planejado. |
 | Criador de regras de classificação | Suporte ainda não planejado. |
 | Fontes de dados de resumo | Suporte ainda não planejado. |
+| Feeds de dados | Suporte ainda não planejado. |
 
 ## Nunca terá suporte
 
@@ -98,7 +100,4 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 * Marcadores do Reports &amp; Analytics
 * Públicos-alvos do Reports &amp; Analytics
 * Eventos de calendário do Reports &amp; Analytics
-* Ad Hoc Analysis
-* Relatórios do Data Warehouse - [!UICONTROL Experience Platform Query Service] será a nova interface para esses casos de uso no CJA.
 * Mobile Services
-* Feeds de dados
