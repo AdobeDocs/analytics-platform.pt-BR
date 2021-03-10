@@ -1,11 +1,11 @@
 ---
 title: Visão geral da Análise de vários canais
 description: Rechavear IDs de visitante de vários conjuntos de dados para compilar visitantes.
-translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: ht
-source-wordcount: '787'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 93%
 
 ---
 
@@ -45,6 +45,8 @@ A Análise de vários canais é um recurso inovador e robusto, mas tem limitaç�
 * Somente conjuntos de dados de evento são suportados. Outros conjuntos de dados, como conjuntos de dados de pesquisa, não são suportados.
 * Não há suporte para mapas de ID personalizados usados em sua organização.
 * O gráfico Cooperativo e o gráfico Privado da Adobe não são suportados.
+* O Cross-Channel Analytics não transforma o campo usado para compilar de qualquer maneira. A compilação em campo usa o valor no campo especificado, como ele existe no conjunto de dados não corrigido no lago de dados. Por exemplo, se às vezes a palavra &quot;Bob&quot; aparecer no campo e, às vezes, a palavra &quot;BOB&quot; aparecer, elas serão tratadas como duas pessoas separadas.
+
 
 ## Habilitar a Análise de vários canais
 
