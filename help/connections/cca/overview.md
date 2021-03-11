@@ -2,10 +2,10 @@
 title: Visão geral da Análise de vários canais
 description: Rechavear IDs de visitante de vários conjuntos de dados para compilar visitantes.
 translation-type: tm+mt
-source-git-commit: 23a7a52ed6fc0a39ce1466a6d7b658dbdf7c6c14
+source-git-commit: cc78a3941a4179be0dbf46055fea60df8e7e8b97
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 93%
+source-wordcount: '898'
+ht-degree: 84%
 
 ---
 
@@ -59,7 +59,8 @@ Depois que sua organização atender a todos os pré-requisitos e entender suas 
    * O nome da coluna da ID persistente do conjunto de dados desejado (Identificador que aparece em cada linha)
    * O nome da coluna da ID transitória para o conjunto de dados desejado (o link do identificador de pessoa entre conjuntos de dados)
    * Sua preferência por frequência de [repetição](replay.md) e duração da retrospectiva. As opções incluem uma repetição uma vez por semana com uma janela de retrospectiva de sete dias ou uma repetição todos os dias com uma janela de retrospectiva de um dia.
-1. O Gerente de conta da Adobe habilita a Análise de vários canais após receber sua solicitação. Depois de ativado, um novo conjunto de dados rechaveado aparece na Adobe Experience Platform contendo uma nova coluna de ID de pessoa. Seu Gerente de conta da Adobe pode fornecer a nova ID do conjunto de dados e o nome da coluna da ID de pessoa.
+1. O Gerente de conta do Adobe trabalhará com a engenharia do Adobe para ativar o Cross-Channel Analytics ao receber sua solicitação. Depois de habilitado, um novo conjunto de dados rechaveado que contém uma nova coluna de ID de pessoa é exibido no Adobe Experience Platform. Seu Gerente de conta da Adobe pode fornecer a nova ID do conjunto de dados e o nome da coluna da ID de pessoa.
+1. Quando ativado pela primeira vez, o Adobe fornecerá um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não corrigidos até aquele momento.
 1. [Crie uma conexão](../create-connection.md) no CJA usando o conjunto de dados recém-gerado e quaisquer outros conjuntos de dados que você deseja incluir. Escolha a ID de pessoa correta para cada conjunto de dados.
 1. [Crie uma visualização de dados](/help/data-views/create-dataview.md) com base na conexão.
 
