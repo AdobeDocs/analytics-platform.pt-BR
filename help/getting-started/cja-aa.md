@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Recurso do Adobe Analytics | Observações sobre o apoio |
 | --- | --- |
 | Métricas | O CJA usa o Experience Data Model (XDM) e oferece suporte a métricas ilimitadas e não está vinculado aos eventos bem-sucedidos personalizados do Analytics tradicional. Observe que algumas métricas padrão foram renomeadas do Analytics tradicional: Visitantes = Pessoas, Visitas = Sessões, Ocorrências = Eventos. |
-| Dimensões | O CJA usa o XDM e oferece suporte a dimensões ilimitadas e não está vinculado a eVars personalizadas ou props do Analytics tradicional. |
+| Dimensões | O CJA usa o XDM, oferece suporte a dimensões ilimitadas e não está vinculado a eVars ou props personalizados do Analytics tradicional. |
 | Variáveis de lista/Props de lista | O CJA usa o XDM e oferece suporte a matrizes de sequência ilimitadas que podem ser usadas de forma semelhante a listVars. |
 | Intervalos de datas | O suporte ao Calendário personalizado está planejado. |
 | Métricas calculadas | Observe que qualquer métrica de cálculo existente no Analysis Workspace tradicional não será transferida para o CJA. |
@@ -80,9 +80,9 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
 | Report Builder (plug-in do Excel) | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
-| Relatórios do Data Warehouse (exportação de linha de 100%) | O suporte é planejado na interface do Analysis Workspace. [!UICONTROL O Experience Platform Query ] Service também fornece uma interface para esses casos de uso no CJA. |
+| Relatórios do Data Warehouse (exportação de 100% de linhas) | O suporte é planejado na interface do Analysis Workspace. [!UICONTROL O serviço de query da Experience Platform] também fornece uma interface para esses casos de uso no CJA. |
 
-## Suporte ainda não planejado.
+## Suporte ainda não planejado
 
 | Recurso | Notas |
 | --- | --- |
