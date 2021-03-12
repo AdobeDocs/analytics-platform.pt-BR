@@ -1,11 +1,11 @@
 ---
 title: Visão geral dos componentes
 description: Saiba quais componentes o CJA oferece e como usá-los no relatórios.
-translation-type: ht
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
-workflow-type: ht
-source-wordcount: '343'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c1699c4319b3b840d8420f3ffa1a4bd1c1d9a4d4
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 57%
 
 ---
 
@@ -52,4 +52,16 @@ Há várias maneiras de gerenciar componentes (individualmente ou ao selecionar 
 
 Assista ao vídeo Criar métricas, segmentos e datas:
 
->[!VIDEO](https://video.tv.adobe.com/v/23979?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/23979)
+
+## Permissões de acesso a componentes
+
+Os administradores podem preparar (via [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=en#manage-users-and-products)) quais componentes são expostos aos usuários no relatório. A tabela a seguir mostra como essas permissões de acesso a componentes se comportam:
+
+| Tipo de preparação | O administrador pode visualizar | O proprietário do projeto que não é administrador (ou a função de edição) pode ver | Função duplicada de não administrador |
+| --- | --- | --- | --- |
+| **Componentes &quot;ocultos&quot; de uma visualização de dados** | Todos os componentes de visualização de dados disponíveis para relatórios (os componentes ocultos exigem o clique em &quot;Mostrar tudo&quot;) | Não disponível para relatório | Não disponível para relatório |
+| **Componentes adicionados ou removidos de uma visualização de dados** | Somente componentes adicionados à visualização de dados (ocultos ou não ocultos). Os administradores não podem criar relatórios sobre campos ou componentes que não estão definidos pela visualização de dados. | Somente componentes adicionados à visualização de dados ou componentes de propriedade ou compartilhados com o usuário. Componentes ocultos não estão disponíveis (como curadoria de VRS). | Somente os componentes adicionados ao DV não estão ocultos e foram incluídos na preparação do projeto. |
+| **Componentes preparados em um projeto** | Todos os componentes de visualização de dados disponíveis para relatórios (os componentes ocultos exigem o clique em &quot;Mostrar tudo&quot;) | Todos os componentes de visualização de dados não ocultos (requer clicar em &quot;mostrar tudo&quot;) | Somente componentes preparados, além de quaisquer componentes de propriedade ou compartilhados com o usuário |
+| **Projeto preparado usando uma visualização de dados com componentes ocultos** | Todos os componentes de dados disponíveis para relatórios (componentes ocultos e não preparados exigem o clique em &quot;Mostrar tudo&quot;) | Todos os componentes de projeto não preparados, todos os componentes de visualização de dados não ocultos e quaisquer componentes de propriedade ou compartilhados pelo usuário | Somente componentes preparados, além de quaisquer componentes de propriedade ou compartilhados com o usuário |
+
