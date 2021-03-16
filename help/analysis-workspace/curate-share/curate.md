@@ -1,26 +1,22 @@
 ---
 description: A preparação permite limitar os componentes antes de compartilhar um projeto.
-keywords: Analysis Workspace curation
-title: 'Preparar projetos do '
+keywords: Preparação do Analysis Workspace
+title: Preparar projetos do
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 100%
+source-wordcount: '516'
+ht-degree: 50%
 
 ---
 
 
-# Preparar projetos do 
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+# Preparar projetos do
 
 A preparação permite limitar os componentes (dimensões, métricas, segmentos, intervalos de datas) antes de compartilhar um projeto. Quando um recipient abrir o projeto, ele verá um conjunto limitado de componentes que você preparou para eles. A preparação é uma etapa opcional, mas recomendada, antes de compartilhar um projeto.
 
 >[!NOTE]
-> Os perfis de produto são o principal mecanismo que controla os componentes que um usuário pode ver. Eles são gerenciados por meio do Adobe Experience Cloud Admin Console. A Preparação é um filtro secundário.
+> Os perfis de produto são o principal mecanismo que controla os componentes que um usuário pode ver. Eles são gerenciados por meio do [Adobe Experience Cloud Admin Console](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/admin-getting-started.html). A Preparação é um filtro secundário.
 
 ## Aplicar preparação de projeto
 
@@ -45,26 +41,21 @@ Quando um recipient abrir um projeto preparado, ele verá apenas o conjunto prep
 Para remover a preparação do projeto e restaurar o conjunto completo de componentes no painel esquerdo:
 
 1. Clique em **[!UICONTROL Compartilhar]** > **[!UICONTROL Preparar dados do projeto]**.
-1. Clique em **[!UICONTROL Remover preparação]**
+1. Clique em **[!UICONTROL Remover preparação]**.
 1. Clique em **[!UICONTROL Concluído]**.
 
-## Preparação do Conjunto de relatórios virtual (VRS)
+## Opções de curadoria de componentes
 
-Para aplicar curadoria em um nível de conjunto de relatórios, de modo que se aplique a muitos projetos ao mesmo tempo, é possível [preparar componentes em um conjunto de relatórios virtuais (VRS)](https://docs.adobe.com/content/help/pt-BR/analytics/components/virtual-report-suites/vrs-components.html).
-
->[!NOTE]
-> A reparação do VRS é sempre aplicada antes da preparação do projeto. Isso significa que, mesmo se o projeto preparado incluir determinados componentes, eles serão filtrados se o VRS não preparado não os incluir.
-
-## Opção Mostrar todos os componentes
-
-Em um projeto com curadoria de VRS, o recipient terá a opção de **[!UICONTROL Mostrar todos]** os componentes no painel esquerdo. [!UICONTROL Mostrar tudo] revela conjuntos diferentes de componentes, dependendo do/da:
+Em um projeto preparado, o recipient terá a opção de **[!UICONTROL Mostrar todos]** componentes no painel esquerdo. [!UICONTROL Mostrar tudo] revela conjuntos diferentes de componentes, dependendo do/da:
 
 * Nível de permissão do usuário (admin ou non-admin)
 * Função do projeto (proprietário/editor ou não)
-* Tipo de preparação aplicada (VRS ou projeto)
+* Tipo de preparação aplicada (no nível do projeto)
 
-| Tipo de preparação | Administradores | Proprietário do projeto não administrativo ou função de edição | Função de duplicação ou visualização não administrativo |
-|---|---|---|---|
-| Conjunto de relatórios virtual preparado | Todos os componentes de VRS não preparados | Componentes de VRS não preparados de propriedade desta função ou compartilhados com ela | Componentes de VRS não preparados de propriedade desta função ou compartilhados com ela |
-| Projeto preparado | Todos os componentes de projeto não preparados | Todos os componentes de projeto não preparados | Componentes de projeto não preparados de propriedade desta função ou compartilhados com ela |
-| Projeto preparado em um conjunto de relatórios virtual preparado | Todos os componentes não preparados, exibidos em **[!UICONTROL Componentes de projeto não preparados]** e **[!UICONTROL Componentes de VRS não preparados]** | Todos os componentes de projeto não preparados e os componentes de VRS não preparados dessa função ou que foram compartilhados com ela | Componentes de projeto e de VRS não preparados de propriedade dessa função ou compartilhados com ela |
+| Tipo de preparação | O administrador pode visualizar | O proprietário do projeto que não é administrador (ou a função de edição) pode ver | A função duplicada de não administrador pode ver |
+| --- | --- | --- | --- |
+| **Componentes &quot;ocultos&quot; de uma visualização de dados** | Todos os componentes de visualização de dados disponíveis para relatórios (os componentes ocultos exigem o clique em &quot;Mostrar tudo&quot;) | Não disponível para relatório | Não disponível para relatório |
+| **Componentes adicionados ou removidos de uma visualização de dados** | Somente componentes adicionados à visualização de dados (ocultos ou não ocultos). Os administradores não podem criar relatórios sobre campos ou componentes que não estão definidos pela visualização de dados. | Somente componentes adicionados à visualização de dados ou componentes de propriedade ou compartilhados com o usuário. Componentes ocultos não estão disponíveis (como curadoria de VRS). | Somente os componentes adicionados ao DV não estão ocultos e foram incluídos na preparação do projeto. |
+| **Componentes preparados em um projeto** | Todos os componentes de visualização de dados disponíveis para relatórios (os componentes ocultos exigem o clique em &quot;Mostrar tudo&quot;) | Todos os componentes de visualização de dados não ocultos (requer clicar em &quot;mostrar tudo&quot;) | Somente componentes preparados, além de quaisquer componentes de propriedade ou compartilhados com o usuário |
+| **Projeto preparado usando uma visualização de dados com componentes ocultos** | Todos os componentes de dados disponíveis para relatórios (componentes ocultos e não preparados exigem o clique em &quot;Mostrar tudo&quot;) | Todos os componentes de projeto não preparados, todos os componentes de visualização de dados não ocultos e quaisquer componentes de propriedade ou compartilhados pelo usuário | Somente componentes preparados, além de quaisquer componentes de propriedade ou compartilhados com o usuário |
+
