@@ -2,10 +2,10 @@
 title: Visão geral dos componentes
 description: Saiba quais componentes o CJA oferece e como usá-los no relatórios.
 translation-type: tm+mt
-source-git-commit: c1699c4319b3b840d8420f3ffa1a4bd1c1d9a4d4
+source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 57%
+source-wordcount: '360'
+ht-degree: 95%
 
 ---
 
@@ -43,10 +43,10 @@ Há várias maneiras de gerenciar componentes (individualmente ou ao selecionar 
 >Essas ações não se aplicam aos componentes de Tempo.
 
 | Ação de componente | Descrição |
-|--- |--- |
-| Tag | Organize ou gerencie componentes aplicando tags. Assim, o componente é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos. |
-| Marcar como favorito | Adicione o componente à sua lista de favoritos. Assim, ele é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos. |
-| Aprovar | Aprove o componente para torná-lo canônico. Assim, o componente é exibido no gerenciador de componente respectivo, como Analytics > Componentes > Segmentos, ou Analytics > Componentes > Projetos. |
+| --- | --- |
+| Tag | Organize ou gerencie componentes aplicando tags. Em seguida, ele é exibido no gerenciador de componente respectivo, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Segmentos], ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos] |
+| Marcar como favorito | Adicione o componente à sua lista de favoritos. Em seguida, ele é exibido no gerenciador de componente respectivo, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Segmentos], ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos]. |
+| Aprovar | Aprove o componente para torná-lo canônico. Em seguida, ele é exibido no gerenciador de componente respectivo, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Segmentos], ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos] |
 | Compartilhar | Aplica-se somente a segmentos. |
 | Excluir | Aplica-se somente a segmentos. |
 
@@ -56,12 +56,4 @@ Assista ao vídeo Criar métricas, segmentos e datas:
 
 ## Permissões de acesso a componentes
 
-Os administradores podem preparar (via [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=en#manage-users-and-products)) quais componentes são expostos aos usuários no relatório. A tabela a seguir mostra como essas permissões de acesso a componentes se comportam:
-
-| Tipo de preparação | O administrador pode visualizar | O proprietário do projeto que não é administrador (ou a função de edição) pode ver | Função duplicada de não administrador |
-| --- | --- | --- | --- |
-| **Componentes &quot;ocultos&quot; de uma visualização de dados** | Todos os componentes de visualização de dados disponíveis para relatórios (os componentes ocultos exigem o clique em &quot;Mostrar tudo&quot;) | Não disponível para relatório | Não disponível para relatório |
-| **Componentes adicionados ou removidos de uma visualização de dados** | Somente componentes adicionados à visualização de dados (ocultos ou não ocultos). Os administradores não podem criar relatórios sobre campos ou componentes que não estão definidos pela visualização de dados. | Somente componentes adicionados à visualização de dados ou componentes de propriedade ou compartilhados com o usuário. Componentes ocultos não estão disponíveis (como curadoria de VRS). | Somente os componentes adicionados ao DV não estão ocultos e foram incluídos na preparação do projeto. |
-| **Componentes preparados em um projeto** | Todos os componentes de visualização de dados disponíveis para relatórios (os componentes ocultos exigem o clique em &quot;Mostrar tudo&quot;) | Todos os componentes de visualização de dados não ocultos (requer clicar em &quot;mostrar tudo&quot;) | Somente componentes preparados, além de quaisquer componentes de propriedade ou compartilhados com o usuário |
-| **Projeto preparado usando uma visualização de dados com componentes ocultos** | Todos os componentes de dados disponíveis para relatórios (componentes ocultos e não preparados exigem o clique em &quot;Mostrar tudo&quot;) | Todos os componentes de projeto não preparados, todos os componentes de visualização de dados não ocultos e quaisquer componentes de propriedade ou compartilhados pelo usuário | Somente componentes preparados, além de quaisquer componentes de propriedade ou compartilhados com o usuário |
-
+No Analysis Workspace, os administradores podem [preparar](/help/analysis-workspace/curate-share/curate.md) quais componentes são expostos aos usuários no relatório.
