@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
 workflow-type: tm+mt
 source-wordcount: '1076'
-ht-degree: 70%
+ht-degree: 83%
 
 ---
 
@@ -45,7 +45,7 @@ A Análise de vários canais é um recurso inovador e robusto, mas tem limitaç�
 * Somente conjuntos de dados de evento são suportados. Outros conjuntos de dados, como conjuntos de dados de pesquisa, não são suportados.
 * Não há suporte para mapas de ID personalizados usados em sua organização.
 * O gráfico Cooperativo e o gráfico Privado da Adobe não são suportados.
-* O Cross-Channel Analytics não transforma o campo usado para compilar de qualquer maneira. A compilação em campo usa o valor no campo especificado, como ele existe no conjunto de dados não corrigido no lago de dados. O processo de empacotamento faz distinção entre maiúsculas e minúsculas. Por exemplo, se às vezes a palavra &quot;Bob&quot; aparecer no campo e, às vezes, a palavra &quot;BOB&quot; aparecer, elas serão tratadas como duas pessoas separadas.
+* O Cross-Channel Analytics não transforma de maneira alguma o campo usado para compilação. A compilação em campo usa o valor no campo especificado, como ele existe no conjunto de dados não compilado no data lake. O processo de empacotamento faz distinção entre maiúsculas e minúsculas. Por exemplo, se às vezes aparecer no campo a palavra &quot;Bob&quot; e, às vezes, a palavra &quot;BOB&quot;, elas serão tratadas como duas pessoas separadas.
 * Considerando que a compilação em campo diferencia maiúsculas de minúsculas, para conjuntos de dados do Analytics gerados pelo conector de dados do Analytics, o Adobe recomenda a revisão de quaisquer regras VISTA ou regras de processamento que se aplicam ao campo de ID transitório para garantir que nenhuma dessas regras esteja introduzindo novos formulários da mesma ID. Por exemplo, você deve garantir que nenhuma VISTA ou regra de processamento esteja introduzindo letras minúsculas no campo de ID transitório em apenas uma parte dos eventos.
 * A compilação em campo não combina nem concatena campos.
 * O campo de ID transitório deve conter um único tipo de ID (ou seja, IDs de um único namespace). Por exemplo, o campo ID transitório não deve conter uma combinação de IDs de logon e IDs de email.
@@ -63,8 +63,8 @@ Depois que sua organização atender a todos os pré-requisitos e entender suas 
    * O nome da coluna da ID persistente do conjunto de dados desejado (Identificador que aparece em cada linha)
    * O nome da coluna da ID transitória para o conjunto de dados desejado (o link do identificador de pessoa entre conjuntos de dados)
    * Sua preferência por frequência de [repetição](replay.md) e duração da retrospectiva. As opções incluem uma repetição uma vez por semana com uma janela de retrospectiva de sete dias ou uma repetição todos os dias com uma janela de retrospectiva de um dia.
-1. O Gerente de conta do Adobe trabalhará com a engenharia do Adobe para ativar o Cross-Channel Analytics ao receber sua solicitação. Depois de habilitado, um novo conjunto de dados rechaveado que contém uma nova coluna de ID de pessoa é exibido no Adobe Experience Platform. Seu Gerente de conta da Adobe pode fornecer a nova ID do conjunto de dados e o nome da coluna da ID de pessoa.
-1. Quando ativado pela primeira vez, o Adobe fornecerá um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não corrigidos até aquele momento.
+1. O Gerente de conta da Adobe trabalhará com a equipe de engenharia da Adobe para ativar o Cross-Channel Analytics ao receber sua solicitação. Depois de habilitado, um novo conjunto de dados rechaveado que contém uma nova coluna de ID de pessoa é exibido na Adobe Experience Platform. Seu Gerente de conta da Adobe pode fornecer a nova ID do conjunto de dados e o nome da coluna da ID de pessoa.
+1. Quando ativado pela primeira vez, a Adobe fornecerá um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento.
 1. [Crie uma conexão](../create-connection.md) no CJA usando o conjunto de dados recém-gerado e quaisquer outros conjuntos de dados que você deseja incluir. Escolha a ID de pessoa correta para cada conjunto de dados.
 1. [Crie uma visualização de dados](/help/data-views/create-dataview.md) com base na conexão.
 
