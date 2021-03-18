@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 
 ## Recursos/componentes totalmente compatíveis
 
-| Recurso do Adobe Analytics | Observações sobre o apoio |
+| Recurso do Adobe Analytics | Observações sobre suporte |
 | --- | --- |
 | Métricas | O CJA usa o Experience Data Model (XDM) e oferece suporte a métricas ilimitadas e não está vinculado aos eventos bem-sucedidos personalizados do Analytics tradicional. Observe que algumas métricas padrão foram renomeadas do Analytics tradicional: Visitantes = Pessoas, Visitas = Sessões, Ocorrências = Eventos. |
 | Dimensões | O CJA usa o XDM, oferece suporte a dimensões ilimitadas e não está vinculado a eVars ou props personalizados do Analytics tradicional. |
