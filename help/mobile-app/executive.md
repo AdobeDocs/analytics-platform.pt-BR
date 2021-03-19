@@ -1,23 +1,23 @@
 ---
 description: Instruções para usar os scorecards de painéis.
-title: Guia executivo de painéis do Adobe Analytics
+title: Guia executivo de painéis do Analytics
 translation-type: tm+mt
-source-git-commit: 132aba710395c46e123b4c13d6d8ef32c86d2e15
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 100%
+source-wordcount: '1290'
+ht-degree: 91%
 
 ---
 
 
-# Painéis do Adobe Analytics: guia de início rápido do usuário executivo
+# Painéis do Analytics: guia de início rápido do usuário executivo
 
-As informações a seguir fornecem aos usuários executivos informações sobre as práticas recomendadas para usar e exibir painéis do Adobe Analytics. Para ver um vídeo demonstrando essas informações, consulte [painéis do Adobe Analytics na experiência no aplicativo](https://youtu.be/QXqQ_PkArbA).
+As informações a seguir fornecem aos usuários executivos informações sobre as práticas recomendadas para usar e exibir painéis do Analytics. Para ver um vídeo demonstrando essas informações, consulte [painéis do Analytics na experiência no aplicativo](https://youtu.be/QXqQ_PkArbA).
 
 
 ## Introdução
 
-Os painéis do Adobe Analytics fornecem insights a qualquer hora e em qualquer lugar do Adobe Analytics.  O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. Os painéis são aceitos em sistemas operacionais iOS e Android.
+Os painéis do Analytics fornecem insights a qualquer hora e em qualquer lugar do Customer Journey Analytics.  O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. Os painéis são aceitos em sistemas operacionais iOS e Android.
 
 ## Mais informações sobre este guia
 
@@ -27,8 +27,8 @@ Este guia tem como objetivo ajudar usuários executivos a ler e interpretar Scor
 
 | Termo | Definição |
 |--- |--- |
-| Consumidor | Usuário executivo que visualiza as métricas principais e informações do Analytics em um dispositivo móvel |
-| Curador | Usuário com conhecimento de dados que encontra e distribui informações do Analytics e configura os Scorecards para serem visualizados pelo consumidor |
+| Consumidor | Usuário executivo que visualiza as principais métricas e insights do CJA em um dispositivo móvel |
+| Curador | Usuário com conhecimento de dados que encontra e distribui informações do CJA e configura os Scorecards para serem visualizados pelo consumidor |
 | Preparação | O ato de criar ou editar um scorecard para dispositivos móveis com métricas, dimensões e outros componentes relevantes para o consumidor |
 | Scorecard | Uma exibição de painéis que contém um ou mais blocos |
 | Bloco | Uma renderização para uma métrica em uma Exibição de scorecard |
@@ -44,22 +44,22 @@ Para usar os painéis de maneira eficaz, você precisará do curador do Scorecar
 
 Para acessar os Scorecards nos painéis, verifique se:
 
-* Você possui um logon válido no Adobe Analytics
+* Você tem um login válido no Customer Journey Analytics
 * O curador criou corretamente os Scorecards para dispositivos móveis e os compartilhou com você
 
-### Painéis de download e instalação
+### Baixar e instalar painéis
 
 Para baixar e instalar o aplicativo, siga as etapas de acordo com o sistema operacional do dispositivo.
 
 **Para usuários executivos no iOS:**
 
-Clique no link a seguir (ele também está disponível no Analytics em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
+Clique no link a seguir (ele também está disponível no CJA em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo Móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
 
 [Link para iOS](https://apple.co/2zXq0aN)
 
 **Para usuários executivos no Android:**
 
-Clique no link a seguir (ele também está disponível no Analytics em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
+Clique no link a seguir (ele também está disponível no CJA em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo Móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
 
 [Link do Android](https://bit.ly/2LM38Oo)
 
