@@ -2,7 +2,7 @@
 title: Como definir as preferências do usuário no Analysis Workspace
 description: É possível definir preferências gerais e de projeto para usuários.
 translation-type: tm+mt
-source-git-commit: 90b69c13a7a63228f62c4b6291b3d66f8e3c821b
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 18%
@@ -36,8 +36,8 @@ As preferências do projeto se aplicam a novos projetos e painéis criados no An
 | Seção | Preferência | Opções |
 | --- | --- | --- |
 | **Exibir** |  |  |
-|  | [Densidade da exibição](https://experienceleague.adobe.com/docs/analytics-platform//using/cja-workspace/build-workspace-project/view-density.html) | <ul><li>Compacto</li><li>Confortável</li><li>Expandido (padrão)</li></ul> |
-|  | [Paleta de cores](https://experienceleague.adobe.com/docs/analytics-platform//using/cja-workspace/build-workspace-project/color-palettes.html) | <ul><li>paletas fornecidas por Adobe (padrão)</li><li>Paletas definidas pelo cliente</li></ul> |
+|  | [Densidade da exibição](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density.html) | <ul><li>Compacto</li><li>Confortável</li><li>Expandido (padrão)</li></ul> |
+|  | [Paleta de cores](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/color-palettes.html) | <ul><li>paletas fornecidas por Adobe (padrão)</li><li>Paletas definidas pelo cliente</li></ul> |
 | **Dados** |  |  |
 |  | [Conjuntos de relatórios](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#report-suite) | <ul><li>Mais recente (padrão)</li><li>Específico - escolhido de uma lista</li></ul> |
 |  | [Calendário](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?#calendar) | Lista de intervalos de datas prontos para uso, incluindo **[!UICONTROL Este mês]** (padrão) |
