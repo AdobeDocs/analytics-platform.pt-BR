@@ -1,20 +1,20 @@
 ---
-title: Painéis Customer Journey Analytics - Visão geral
+title: Painéis do Analytics - Visão geral
 description: Documentação do produto e autoajuda dos painéis do Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6a2e32f6bdac3b47a74e262c0b0e0f4f93b2dc4d
+source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 79%
+source-wordcount: '204'
+ht-degree: 87%
 
 ---
 
 
-# Customer Journey Analytics [!UICONTROL painéis] - Visão geral
+# Analytics [!UICONTROL painéis] - Visão geral
 
-**Os  ** painéis do Customer Journey Analytics fornecem insights a qualquer hora e em qualquer lugar do Customer Journey Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. O aplicativo móvel é compatível com os sistemas operacionais iOS e Android.
+**Os  ** painéis do Analytics fornecem insights a qualquer hora e em qualquer lugar do Customer Journey Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. O aplicativo móvel é compatível com os sistemas operacionais iOS e Android.
 
-Para saber mais sobre o Customer Journey Analytics [!UICONTROL dashboards], consulte os seguintes recursos:
+Para saber mais sobre os [!UICONTROL painéis] do Analytics, consulte os seguintes recursos:
 
 * [Guia do curador](/help/mobile-app/curator.md): este guia tem como objetivo ajudar os curadores de dados a configurar os scorecards para os usuários executivos nos [!UICONTROL painéis]. Os curadores podem ser administradores organizacionais ou pessoas em outras funções responsáveis pela configuração dos Scorecards.
 
