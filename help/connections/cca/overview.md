@@ -1,11 +1,11 @@
 ---
 title: Visão geral da Análise de vários canais
 description: Rechavear IDs de visitante de vários conjuntos de dados para compilar visitantes.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1076'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -45,11 +45,11 @@ A Análise de vários canais é um recurso inovador e robusto, mas tem limitaç�
 * Somente conjuntos de dados de evento são suportados. Outros conjuntos de dados, como conjuntos de dados de pesquisa, não são suportados.
 * Não há suporte para mapas de ID personalizados usados em sua organização.
 * O gráfico Cooperativo e o gráfico Privado da Adobe não são suportados.
-* O Cross-Channel Analytics não transforma de maneira alguma o campo usado para compilação. A compilação em campo usa o valor no campo especificado, como ele existe no conjunto de dados não compilado no data lake. O processo de empacotamento faz distinção entre maiúsculas e minúsculas. Por exemplo, se às vezes aparecer no campo a palavra &quot;Bob&quot; e, às vezes, a palavra &quot;BOB&quot;, elas serão tratadas como duas pessoas separadas.
-* Considerando que a compilação em campo diferencia maiúsculas de minúsculas, para conjuntos de dados do Analytics gerados pelo conector de dados do Analytics, o Adobe recomenda a revisão de quaisquer regras VISTA ou regras de processamento que se aplicam ao campo de ID transitório para garantir que nenhuma dessas regras esteja introduzindo novos formulários da mesma ID. Por exemplo, você deve garantir que nenhuma VISTA ou regra de processamento esteja introduzindo letras minúsculas no campo de ID transitório em apenas uma parte dos eventos.
+* O Cross-Channel Analytics não transforma de maneira alguma o campo usado para compilação. A compilação em campo usa o valor no campo especificado, como ele existe no conjunto de dados não compilado no data lake. O processo de compilação diferencia maiúsculas de minúsculas. Por exemplo, se às vezes aparecer no campo a palavra &quot;Bob&quot; e, às vezes, a palavra &quot;BOB&quot;, elas serão tratadas como duas pessoas separadas.
+* Considerando que a compilação em campo diferencia maiúsculas de minúsculas, para conjuntos de dados do Analytics gerados pelo conector de dados do Analytics, a Adobe recomenda analisar todas as regras VISTA ou regras de processamento que se aplicam ao campo de ID transitória para garantir que nenhuma dessas regras esteja introduzindo novos formulários da mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID transitória em apenas uma parte dos eventos.
 * A compilação em campo não combina nem concatena campos.
-* O campo de ID transitório deve conter um único tipo de ID (ou seja, IDs de um único namespace). Por exemplo, o campo ID transitório não deve conter uma combinação de IDs de logon e IDs de email.
-* Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID transitório, a compilação em campo será escolhida com base na ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação em campo escolherá Ann.
+* O campo de ID transitória deve conter um único tipo de ID (ou seja, IDs de um único namespace). Por exemplo, o campo ID transitória não deve conter uma combinação de IDs de logon e IDs de email.
+* Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID transitória, a compilação em campo será escolhida por ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação baseada em campo escolherá Ann.
 
 
 ## Habilitar a Análise de vários canais
