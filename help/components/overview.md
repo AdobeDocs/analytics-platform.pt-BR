@@ -1,11 +1,11 @@
 ---
 title: Visão geral dos componentes
 description: Saiba quais componentes o CJA oferece e como usá-los no relatórios.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -56,4 +56,4 @@ Assista ao vídeo Criar métricas, segmentos e datas:
 
 ## Permissões de acesso a componentes
 
-No Analysis Workspace, os administradores podem [preparar](/help/analysis-workspace/curate-share/curate.md) quais componentes são expostos aos usuários no relatório.
+No Analysis Workspace, os administradores podem [preparar](/help/analysis-workspace/curate-share/curate.md) quais componentes são expostos aos usuários nos relatórios.
