@@ -2,10 +2,10 @@
 description: Instruções para configuração de scorecards para painéis.
 title: Guia do curador de painéis de Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6a2e32f6bdac3b47a74e262c0b0e0f4f93b2dc4d
+source-git-commit: 026771a61bcbd0eec8cb59a1d06f3dad0b96acf6
 workflow-type: tm+mt
-source-wordcount: '2379'
-ht-degree: 93%
+source-wordcount: '2403'
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ As informações a seguir instruem os curadores de dados do Adobe Analytics sobr
 
 ## Introdução
 
-Os painéis do Analytics fornecem insights a qualquer hora e em qualquer lugar com base nos dados de Customer Journey Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos criados e compartilhados a partir da interface do usuário de desktop do Customer Journey Analytics. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. Você pode adaptar os Scorecards de acordo com os dados mais importantes para você. Os painéis do Analytics são aceitos em sistemas operacionais iOS e Android.
+Os painéis do Adobe Analytics fornecem insights a qualquer hora e em qualquer lugar com base nos dados de Customer Journey Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos criados e compartilhados a partir da interface do usuário de desktop do Customer Journey Analytics. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode tocar para obter detalhamentos mais detalhados e exibições de dados de tendências. Você pode adaptar os Scorecards de acordo com os dados mais importantes para você. Os painéis do Analytics são aceitos em sistemas operacionais iOS e Android.
 
 ## Mais informações sobre este guia
 
@@ -26,10 +26,10 @@ Este guia tem como objetivo ajudar os curadores de dados do Customer Journey Ana
 
 ## Glossário de termos
 
-A tabela a seguir descreve os termos para entender o público-alvo, as funções e a operação dos painéis do Customer Journey Analytics.
+A tabela a seguir descreve os termos para entender o público-alvo, as funções e a operação dos painéis do Analytics.
 
 | Termo | Definição |
-| --- | --- |
+|--- |--- |
 | Consumidor | Usuário executivo que visualiza as principais métricas e insights do CJA em um dispositivo móvel |
 | Curador | Usuário com conhecimento de dados que encontra e distribui informações do CJA e configura os Scorecards para serem visualizados pelo consumidor |
 | Preparação | O ato de criar ou editar um Scorecard para dispositivos móveis com métricas, dimensões e outros componentes relevantes para o consumidor |
@@ -60,31 +60,31 @@ Você pode acessar o modelo de [!UICONTROL Scorecard para dispositivos móveis e
 
 **Criar um novo projeto**
 
-1. Abra o CJA e clique na guia **[!UICONTROL Workspace]** .
-2. Clique em **[!UICONTROL Criar novo projeto]** e selecione o modelo de projeto **[!UICONTROL Scorecard para dispositivos móveis em branco]**.
-3. Clique em **[!UICONTROL Criar]**.
+1. Abra o Customer Journey Analytics e clique em **Projects**.
+2. Clique no botão **[!UICONTROL Criar novo projeto]** e selecione o modelo de projeto de **[!UICONTROL Scorecard para dispositivos móveis em branco]**.
+3. Clique no botão **[!UICONTROL Criar]**.
 
-![Modelo de Scorecard](assets/new_template.png)
+![Modelo de Scorecard](assets/new_template_cja.png)
 
 **Adicionar um projeto**
 
-Na tela **[!UICONTROL Projetos]**, na guia **[!UICONTROL Componentes]**, clique em **[!UICONTROL Adicionar]** e selecione **[!UICONTROL Scorecard Móvel]**.
+Na tela **[!UICONTROL Projetos]**, na guia **[!UICONTROL Componentes]**, clique no botão **[!UICONTROL Adicionar]** e selecione **[!UICONTROL Scorecard para dispositivos móveis]**.
 
 ![Adicionar projetos](assets/add_project.png)
 
-**Usar [!DNL Analytics] ferramentas**
+**Ou**
 
-No [!DNL Analytics], clique no menu **[!UICONTROL Ferramentas]** e selecione **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**. Na tela seguinte, clique no botão **[!UICONTROL Criar novo scorecard]**.
+No menu **[!UICONTROL Ferramentas]** selecione **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**. Na tela seguinte, clique no botão **[!UICONTROL Criar novo scorecard]**.
 
 ### Configure o Scorecard com os dados e salve
 
 Para implementar o modelo de Scorecard:
 
-1. Em **[!UICONTROL Propriedades]** (no painel direito), especifique um **[!UICONTROL Conjunto de relatórios do projeto]** cujos dados você deseja usar.
+1. Em **[!UICONTROL Properties]** (no painel direito), especifique um **[!UICONTROL Project data view]** a partir do qual deseja usar os dados.
 
-   ![Seleção de conjunto de relatórios](assets/properties_save.png)
+   ![Seleção da exibição de data](assets/properties_save.png)
 
-1. Para adicionar um novo bloco ao Scorecard, arraste uma métrica do painel esquerdo e solte-a na zona **[!UICONTROL Arrastar e soltar métricas aqui]**. Também é possível inserir uma métrica entre dois blocos usando um fluxo de trabalho semelhante.
+2. Para adicionar um novo bloco ao Scorecard, arraste uma métrica do painel esquerdo e solte-a na zona **[!UICONTROL Arrastar e soltar métricas aqui]**. Também é possível inserir uma métrica entre dois blocos usando um fluxo de trabalho semelhante.
 
    ![Adicionar blocos](assets/build_list.png)
 
@@ -92,13 +92,13 @@ Para implementar o modelo de Scorecard:
    *Em cada bloco, é possível acessar uma exibição detalhada que mostra informações adicionais sobre a métrica, como itens principais para uma lista de dimensões relacionadas.*
 
 
-1. Para adicionar uma dimensão relacionada a uma métrica, arraste uma dimensão do painel esquerdo e solte-a em um bloco. Por exemplo, você pode adicionar dimensões apropriadas (como **[!DNL DMA Region]**, neste exemplo) às métricas **[!UICONTROL Visitantes únicos]** arrastando e soltando no bloco; as dimensões que você adicionar aparecerão na seção de detalhamento das **[!UICONTROL Propriedades]** específicas do bloco. É possível adicionar várias dimensões a cada bloco.
+3. Para adicionar uma dimensão relacionada a uma métrica, arraste uma dimensão do painel esquerdo e solte-a em um bloco. Por exemplo, você pode adicionar dimensões apropriadas (como **[!DNL DMA Region]**, neste exemplo) às métricas **[!UICONTROL Visitantes únicos]** arrastando e soltando no bloco; as dimensões que você adicionar aparecerão na seção de detalhamento das **[!UICONTROL Propriedades]** específicas do bloco. É possível adicionar várias dimensões a cada bloco.
 
    ![Adicionar dimensões](assets/layer_dimensions.png)
 
-   Também é possível adicionar uma dimensão a todos os blocos, soltando-a na tela Scorecard.
-
    Quando você clica em um bloco no Construtor de scorecards, o painel direito exibe as propriedades e características associadas a esse bloco. Nesse painel, você pode fornecer um novo **[!UICONTROL Título]** para o bloco e, como alternativa, configurá-lo especificando os componentes, em vez de arrastá-los e soltá-los no painel esquerdo.
+
+   ![Mosaico de propriedades](assets/properties_tile.png)
 
    Além disso, se você clicar nos blocos, um pop-up dinâmico mostrará como a exibição Detalhamento aparecerá para o usuário executivo no aplicativo. Se nenhuma dimensão tiver sido aplicada ao bloco, a dimensão de detalhamento será a **hora** ou os **dias**, dependendo do intervalo de datas padrão.
 
@@ -106,23 +106,35 @@ Para implementar o modelo de Scorecard:
 
    Cada dimensão adicionada ao bloco será mostrada em uma lista suspensa na exibição detalhada do aplicativo. O usuário executivo pode então escolher entre as opções indicadas na lista suspensa.
 
-1. Para aplicar segmentos a blocos individuais, arraste um segmento do painel esquerdo e solte-o diretamente na parte superior do bloco. Se você deseja aplicar o segmento a todos os blocos no Scorecard, solte o bloco em cima do scorecard. Ou você também pode aplicar segmentos selecionando segmentos no menu de filtro abaixo dos intervalos de datas. Você [configura e aplica filtros para seus Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que faria no Adobe Analytics Workspace.
+4. Para aplicar filtros a blocos individuais, arraste um filtro do painel esquerdo e solte-o diretamente na parte superior do bloco. Se quiser aplicar o filtro a todos os blocos no Scorecard, solte o bloco na parte superior do scorecard. Ou também é possível aplicar filtros selecionando filtros no menu de filtro abaixo dos intervalos de datas. Você [configura e aplica filtros para seus Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que faria no Adobe Analytics Workspace.
 
-   ![Criar segmentos para filtro](assets/segment_ui.png)
+   ![Criar um filtro](assets/segment_ui.png)
 
-1. Da mesma forma, para remover um componente aplicado a todo o Scorecard, clique em qualquer lugar do Scorecard fora dos blocos e remova-o clicando no **x** que aparece quando você passa o mouse sobre o componente, conforme mostrado abaixo para o segmento do **[!DNL Mobile Customers]**:
+5. Da mesma forma, para remover um componente aplicado a todo o Scorecard, clique em qualquer lugar do Scorecard fora dos blocos e remova-o clicando no **x** exibido quando você passa o mouse sobre o componente, conforme mostrado abaixo para o filtro **Novas visitas**:
 
    ![Remover_componentes](assets/new_remove.png)
 
-1. Nas **[!UICONTROL Propriedades]** do Scorecard, você também pode especificar o seguinte opcionalmente:
+6. Adicione e remova combinações de intervalo de datas que podem ser selecionadas no scorecard selecionando o menu suspenso Intervalo de datas.
 
-   * Um **[!UICONTROL Intervalo de datas padrão]**. Os intervalos especificados aqui serão os mesmos aplicados ao primeiro acesso do usuário executivo ao Scorecard em seu aplicativo.
+   ![Novo cartão de pontuação](assets/new_score_card.png)
 
-   * Um **[!UICONTROL Intervalo de datas de comparação]**
+   Cada novo scorecard começa com 6 combinações de intervalo de datas focadas nos dados de hoje e ontem. Você pode remover intervalos de datas desnecessários clicando no x ou editar cada combinação de intervalo de datas clicando no lápis.
 
-   * Quaisquer **[!UICONTROL segmentos]** a serem aplicados a todo o Scorecard
+   ![Novo cartão de pontuação2](assets/new_score_card2.png)
 
-1. Para nomear o Scorecard, clique no namespace no canto superior esquerdo da tela e digite o novo nome.
+   Para criar ou alterar uma data primária, use o menu suspenso para selecionar a partir de intervalos de datas disponíveis ou arraste e solte um componente de data do painel direito na área designada.
+
+   ![Novo cartão de pontuação3](assets/new_score_card3.png)
+
+   Para criar uma data de comparação, você pode selecionar entre predefinições convenientes para comparações de tempo comuns no menu suspenso. Você também pode arrastar e soltar um componente de data no painel direito.
+
+   ![Novo cartão de pontuação4](assets/new_score_card4.png)
+
+   Se o intervalo de datas desejado ainda não tiver sido criado, é possível criar um novo clicando no ícone do calendário.
+
+   ![Novo cartão de pontuação4](assets/new_score_card5.png)
+
+7. Isso o levará ao construtor de intervalo de datas, onde é possível criar e salvar um novo componente de intervalo de datas. Para nomear o Scorecard, clique no namespace no canto superior esquerdo da tela e digite o novo nome.
 
    ![Nomeação_Scorecards](assets/new_name.png)
 
@@ -158,7 +170,7 @@ Para ajudar os usuários executivos a acessar os Scorecards no aplicativo, verif
 * Os requisitos mínimos do sistema operacional móvel dos dispositivos são iOS versão 10 ou superior ou Android versão 4.4 (KitKat) ou superior
 * Eles possuem um logon válido no Adobe Analytics
 * Você criou corretamente os Scorecards para dispositivos móveis para eles e compartilhou esses Scorecards com eles
-* Eles têm acesso à Analysis Workspace e ao conjunto de relatórios em o Scorecard se baseia
+* Eles têm acesso ao Analysis Workspace e à visualização de dados na qual o Scorecard se baseia
 * Eles têm acesso aos Componentes incluídos no Scorecard. Observe que é possível selecionar uma opção ao compartilhar os Scorecards para **[!UICONTROL Compartilhar componentes inseridos]**.
 
 ### Ajudar os usuários executivos com o aplicativo
@@ -201,7 +213,7 @@ Para ajudar usuários executivos:
    * Verifique se o usuário executivo pode fazer logon na instância correta do Analytics e se o Scorecard foi compartilhado.
 
 
-3. Explique ao usuário executivo como os blocos aparecem nos Scorecards que você compartilha (o primeiro Scorecard abaixo é definido no modo escuro; consulte **[!UICONTROL Preferências]** abaixo se você achar que seu usuário executivo prefere essa opção de visualização):
+3. Explique ao usuário executivo como os blocos aparecem nos Scorecards que você compartilha (o primeiro Scorecard abaixo é definido no modo escuro; consulte **[!UICONTROL Preferências]** abaixo se você achar que o usuário executivo prefere esta opção de visualização):
 
    ![Explicar blocos](assets/newexplain.png)
 
@@ -225,13 +237,9 @@ Para ajudar usuários executivos:
 
    * Uma tabela é incluída para exibir dados de dimensões adicionadas ao bloco. Toque na seta para baixo para selecionar dimensões. Se nenhuma dimensão tiver sido adicionada ao bloco, a tabela exibirá os dados do gráfico.
 
-5. Para alterar os intervalos de datas do Scorecard:
+5. Para alterar os intervalos de datas do Scorecard, toque no cabeçalho Data e selecione a combinação de intervalo de datas principal e de comparação que deseja visualizar.
 
    ![Alterar datas](assets/changedate.png)
-
-   * Você também pode alterar os intervalos de datas na exibição de Detalhamento mostrada acima da mesma maneira.
-
-   * Dependendo do intervalo em que você tocar (**Dia**, **Semana**, **Mês** ou **Ano**), você verá duas opções para os intervalos de datas - o período de tempo atual ou o imediatamente anterior. Toque em uma dessas duas opções para selecionar o primeiro intervalo. Na lista **[!UICONTROL COMPARAR COM]**, toque em uma das opções apresentadas para comparar os dados desse período com o primeiro intervalo de datas selecionado. Toque em **[!UICONTROL Concluído]** no canto superior direito da tela. O campo **[!UICONTROL Intervalos de datas]** e os blocos de Scorecard são atualizados com os novos dados de comparação dos novos intervalos selecionados.
 
 6. Para deixar comentários sobre este aplicativo:
 
