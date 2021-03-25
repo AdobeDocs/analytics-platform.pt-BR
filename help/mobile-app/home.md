@@ -2,17 +2,17 @@
 title: Painéis do Analytics - Visão geral
 description: Documentação do produto e autoajuda dos painéis do Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: c315339265facd7bd76f7d0c43c32ed394b53c5d
+source-git-commit: 8b8fa177b1fdfc760845b1fad7c145da68c320c8
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 87%
+source-wordcount: '208'
+ht-degree: 73%
 
 ---
 
 
 # Analytics [!UICONTROL painéis] - Visão geral
 
-**Os  ** painéis do Analytics fornecem insights a qualquer hora e em qualquer lugar do Customer Journey Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. O aplicativo móvel é compatível com os sistemas operacionais iOS e Android.
+**Os  ** painéis do Analytics fornecem insights a qualquer hora e em qualquer lugar do Adobe Analytics, incluindo o Customer Journey Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode tocar para obter detalhamentos mais detalhados e exibições de dados de tendências. O aplicativo móvel é compatível com os sistemas operacionais iOS e Android.
 
 Para saber mais sobre os [!UICONTROL painéis] do Analytics, consulte os seguintes recursos:
 
