@@ -1,11 +1,11 @@
 ---
 title: O que é uma visualização de dados no Customer Journey Analytics?
-description: null
+description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão do CJA, como métricas, dimensões, sessões etc.
 translation-type: tm+mt
-source-git-commit: 0f116524c0c3937ddddce6b50b3d9f8519e9157f
+source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 6%
+source-wordcount: '1126'
+ht-degree: 7%
 
 ---
 
@@ -52,13 +52,15 @@ A atualização mais recente das visualizações de dados oferece muito mais fle
 ## Pré-requisito
 
 * Antes de criar visualizações de dados, é necessário [configurar uma ou mais conexões com os conjuntos de dados da Experience Platform](/help/connections/create-connection.md).
-* Para criar ou gerenciar uma visualização de dados, você precisa das seguintes permissões no Adobe Admin Console:
+* Para criar ou gerenciar uma visualização de dados, você precisa de um [conjunto de permissões no Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR#admin-access-permissions).
 
 ## Exibir informações sobre um componente
 
 Clique no ícone (i) de informações no Workspace para exibir em qual campo de esquema um componente se baseia e suas configurações, como uma descrição.
 
 ## Configurações de visualização de dados que você pode substituir no Workspace
+
+Algumas configurações de visualização de dados podem ser substituídas no Analysis Workspace no nível do projeto, outras não.
 
 * Janela de lookback
 * Atribuição de métrica
@@ -70,10 +72,6 @@ Clique no ícone (i) de informações no Workspace para exibir em qual campo de 
 * Formatação de métrica
 * Nome da visualização de dados
 * Alocação de Dimension
-
-## Nenhum valor
-
-Você pode decidir o que chamar essa dimensão Nenhum/Nenhum valor/Não especificado e se ela deve ficar visível para os usuários no relatório. No entanto, administradores e usuários (para projetos que eles possuem) podem alterar a configuração de visibilidade no Workspace.
 
 ## Excluir visualizações de dados
 
