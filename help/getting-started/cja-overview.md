@@ -2,10 +2,10 @@
 title: Visão geral do Customer Journey Analytics
 description: Saiba como o Customer Journey Analytics permite usar o Analysis Workspace com dados da Experience Platform.
 translation-type: tm+mt
-source-git-commit: f52a6788a0a5f3aea23fc783e479c3f8a23a260d
+source-git-commit: 0f5e9c117f12ef070733df032b078ad70ce7c52b
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 100%
+source-wordcount: '1226'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ O Customer Journey Analytics é um recurso do Analytics que permite usar o poten
 O Customer Journey Analytics expande o escopo do Analytics, oferecendo recursos fáceis de usar entre canais e removendo limitações em versões anteriores do Adobe Analytics. Estas são algumas melhorias notáveis:
 
 * **Variáveis e eventos ilimitados**: os conceitos de eVars, props e eventos não existem mais. Os dados se concentram principalmente em dimensões e métricas. Os conjuntos de dados podem ter uma quantidade ilimitada de dimensões e métricas exclusivas.
-* **Valores exclusivos ilimitados**: a Adobe Experience Platform não está restrita a qualquer limitação exclusiva, como os valores exclusivos de 500k nos conjuntos de relatórios tradicionais.
+* **Valores únicos ilimitados**: a Adobe Experience Platform não está restrita a qualquer limitação exclusiva, como os valores únicos de 500k nos conjuntos de relatórios tradicionais.
 * **Alterar dados históricos**: com a Adobe Experience Platform, os dados podem ser removidos ou corrigidos.
 * **Dados entre conjuntos de relatórios**: as implementações existentes de vários conjuntos de dados podem ser combinadas na Platform.
 
@@ -53,7 +53,7 @@ Antes de começar a usar o Customer Journey Analytics, os seguintes pré-requisi
 
 Para criar conexões, adicionar conjuntos de dados, etc., você precisa das seguintes permissões no [Admin Console](https://adminconsole.adobe.com/enterprise/):
 
-* A partir de 9 de setembro de 2020, para acessar o Customer Journey Analytics ou fazer uma conexão, você precisará ser adicionado como administrador do **produto do Customer Journey Analytics** no [Admin Console](https://adminconsole.adobe.com/enterprise/). Os administradores de produtos recebem as seguintes permissões:
+* Para acessar o Customer Journey Analytics ou fazer uma conexão, você precisará ser adicionado como Administrador ao **Customer Journey Analytics Product** no [Admin Console](https://adminconsole.adobe.com/enterprise/). Os administradores de produtos recebem as seguintes permissões:
    * Criar/atualizar/excluir conexões ou Visualizações de dados
    * Atualizar/excluir projetos, filtros, métricas de cálculo ou segmentos criados por outros usuários
    * Compartilhar um projeto do Workspace para todos os usuários
