@@ -2,10 +2,10 @@
 title: O que é uma visualização de dados no Customer Journey Analytics?
 description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão do CJA, como métricas, dimensões, sessões etc.
 translation-type: tm+mt
-source-git-commit: 3b9a740d50d99315a5609133917dfd0714afa6cc
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 7%
+source-wordcount: '1127'
+ht-degree: 4%
 
 ---
 
@@ -75,4 +75,4 @@ Algumas configurações de visualização de dados podem ser substituídas no An
 
 ## Excluir visualizações de dados
 
-Se você excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que qualquer projeto do Workspace que depende dessa visualização de dados excluída deixará de funcionar.
+Se você excluir uma visualização de dados em [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que os projetos do Workspace que dependerem dessa visualização de dados excluída não funcionarão mais.
