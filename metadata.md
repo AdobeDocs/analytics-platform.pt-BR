@@ -7,16 +7,20 @@ getting-started-title: Introdução
 getting-started-url: https://helpx.adobe.com/br/experience-cloud-core-services/get-started.html
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/analytics/how-to/adobe-launch-publishing-process.html
-git-repo: https://github.com/AdobeDocs/analytics-platform.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.pt-BR
+description: Esse arquivo inclui metadados de nível de acordo de recompra que passam para arquivos TOC.md do guia do usuário no acordo de recompra.
 translation-type: tm+mt
-source-git-commit: 8559ff2f6e311822bc8021e98c2c8c72880bbe8a
+source-git-commit: 7f846ac36d787159d25aaf9ff7240e3a51979408
+workflow-type: tm+mt
+source-wordcount: '150'
+ht-degree: 86%
 
 ---
 
 
 # Metadados para uso interno
 
-O arquivo metadata.md inclui metadados de nível de repositório transmitidos para os arquivos TOC.md do guia do usuário no repositório. Se desejar alterar o conteúdo metadata. md para qualquer guia do usuário, faça isso em qualquer arquivo TOC. md.
+O arquivo metadata.md inclui metadados de nível de repositório transmitidos para os arquivos TOC.md do guia do usuário no repositório. Se desejar alterar o conteúdo metadata.md para qualquer guia do usuário, faça isso em qualquer arquivo TOC.md.
 
 | metadados | o que faz |
 |--- |--- |
