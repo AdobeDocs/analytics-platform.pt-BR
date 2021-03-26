@@ -2,10 +2,10 @@
 title: Visão geral das métricas calculadas
 description: 'Saiba mais sobre '
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 100%
+source-wordcount: '510'
+ht-degree: 82%
 
 ---
 
@@ -47,3 +47,12 @@ Veja uma comparação entre os recursos de Métricas calculadas e Métricas calc
 | Gerenciador de métricas calculadas | <ul><li>Compartilhar métricas com outras pessoas.</li><li>Aprovar e controlar métricas.</li><li>Organizar (marcar com tags) suas métricas de forma que as pessoas possam encontrá-las.</li><li>Excluir métricas.</li><li>Renomear as métricas.</li></ul> |
 | API para métricas calculadas | Parte do conjunto de APIs do Adobe Analytics 2.0. |
 
+## Modelos de métricas calculadas no CJA
+
+| Nome da métrica calculada | Descrição da métrica calculada |
+| --- | --- |
+| Sessões por Pessoa | Número médio de sessões por pessoa |
+| Taxa de início da sessão | A porcentagem de tempo em que qualquer item de dimensão ocorreu no primeiro evento de uma sessão. |
+| Taxa de Término da Sessão | A porcentagem de tempo em que qualquer item de dimensão ocorreu no último evento de uma sessão. |
+| Tempo gasto por pessoa | A quantidade média de tempo que uma pessoa gastou em um determinado item de dimensão. |
+| Tempo Gasto por Sessão | A quantidade média de tempo que uma pessoa gastou por Sessão em qualquer item de dimensão. |
