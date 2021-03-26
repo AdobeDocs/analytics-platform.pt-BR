@@ -2,10 +2,10 @@
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 translation-type: tm+mt
-source-git-commit: 74b99933fb1b599c829e11117c41235754c189b9
+source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '967'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,7 @@ Exemplo:
 
 | Visita um | Visita dois | Visita três |
 | --- | --- | --- |
-| O visitante foi para a página de aterrissagem principal (A), excluiu a página da campanha (B) e, em seguida, visualizou a página do Produto (C). | O visitante novamente foi para a página de aterrissagem principal (A), excluiu a página da campanha (B) e, novamente, foi para a página do Produto (C), em seguida, foi para a nova página (D). | O visitante entrou e seguiu o mesmo caminho da primeira e segunda visita, em seguida, excluiu a página F para ir diretamente para a página de produto direcionada (G). |
+| O visitante foi para a página inicial principal (A), excluiu a página da campanha (B) e, em seguida, visualizou a página do produto (C). | O visitante novamente foi para a página inicial principal (A), excluiu a página da campanha (B) e, novamente, foi para a página do produto (C), em seguida, foi para a nova página (D). | O visitante entrou e seguiu o mesmo caminho da primeira e segunda visita, em seguida, excluiu a página F para ir diretamente para a página de produto direcionada (G). |
 
 ## Filtrar contêineres
 
@@ -79,3 +79,11 @@ Os contêineres de evento contam com detalhamentos de página única com base em
 * Props de lista
 * Dimensões de lista
 * Dimensões de merchandising (no contexto de eventos)
+
+## Modelo de filtro pronto para uso
+
+O Analytics tradicional vem com muitos segmentos de modelo (filtros) e métricas calculadas prontos para uso. Muitas delas não se aplicam ao CJA ou precisarão ser renomeadas ou recriadas. Outros dependerão de uma solução para variáveis sensíveis ao contexto no CJA.
+
+| Nome do filtro | Descrição |
+| --- | --- |
+| Todos os dados | Este é um filtro obrigatório análogo ao segmento &quot;Todas as visitas&quot; no Adobe Analytics tradicional. Ele é adicionado dinamicamente aos relatórios quando uma métrica é adicionada à linha de uma tabela de Forma livre. |
