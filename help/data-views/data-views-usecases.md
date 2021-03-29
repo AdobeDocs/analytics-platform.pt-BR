@@ -2,17 +2,17 @@
 title: Casos de uso para visualizações de dados no Customer Journey Analytics
 description: Vários casos de uso que mostram a flexibilidade e o poder das visualizações de dados no Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 6ca345f61ccdcdf9e3befd733a30dcb3fc79ee7a
+source-git-commit: f8dfc10b926031838d084acf3dadd9ce3f83541e
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Casos de uso de visualizações de dados
 
-As possibilidades de
+Esses casos de uso que mostram a flexibilidade e o poder das visualizações de dados no Customer Journey Analytics.
 
 ## Criar uma métrica de Pedidos a partir de um campo de esquema pageTitle (cadeia de caracteres)
 
