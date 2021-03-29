@@ -2,15 +2,19 @@
 title: Casos de uso para visualizações de dados no Customer Journey Analytics
 description: Vários casos de uso que mostram a flexibilidade e o poder das visualizações de dados no Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: f8dfc10b926031838d084acf3dadd9ce3f83541e
+source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '308'
+ht-degree: 1%
 
 ---
 
 
 # Casos de uso de visualizações de dados
+
+>[!IMPORTANT]
+>
+>Essa funcionalidade está atualmente em testes limitados.
 
 Esses casos de uso que mostram a flexibilidade e o poder das visualizações de dados no Customer Journey Analytics.
 
