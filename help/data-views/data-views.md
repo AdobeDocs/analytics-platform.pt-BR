@@ -2,15 +2,19 @@
 title: O que é uma visualização de dados no Customer Journey Analytics?
 description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão do CJA, como métricas, dimensões, sessões etc.
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1134'
 ht-degree: 4%
 
 ---
 
 
 # O que é uma visualização de dados?
+
+>[!IMPORTANT]
+>
+>Essa funcionalidade está atualmente em testes limitados.
 
 Uma visualização de dados fica sobre um Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). Uma conexão combina um ou mais conjuntos de dados do Adobe Experience Platform e os conecta ao CJA. A visualização de dados especifica como você deseja interpretar elementos dos dados na conexão, como métricas, dimensões, sessões etc. As visualizações de dados são definidas em preparação para relatórios sobre os dados no Workspace.
 
@@ -31,7 +35,7 @@ A atualização mais recente das visualizações de dados oferece muito mais fle
 
 * **É possível criar várias métricas com diferentes modelos de atribuição ou com** janelas de retrospectiva diferentes a partir do mesmo campo de esquema.
 
-* **Você pode editar a ID de um componente** , usada para compatibilidade entre visualizações de dados. A ID do componente é o que a API de relatórios usa para identificar uma métrica ou dimensão específica. Como você pode criar arbitrariamente muitas métricas ou dimensões de um campo XDM, ofereceremos a opção de definir sua própria ID de componente. Como resultado, uma métrica usada em um projeto do Workspace pode ser compatível entre as visualizações de dados (e a API), mesmo que seja baseada em campos totalmente diferentes de conexões ou visualizações de dados diferentes ou de um esquema diferente no XDM.
+* **Você pode editar a ID de um componente** , usada para compatibilidade entre visualizações de dados. A ID do componente é o que a API de relatórios usa para identificar uma métrica ou dimensão específica. Como é possível criar arbitrariamente muitas métricas ou dimensões a partir de um campo XDM, ofereceremos a opção de definir sua própria ID de componente. Como resultado, uma métrica usada em um projeto do Workspace pode ser compatível entre as visualizações de dados (e a API), mesmo que seja baseada em campos totalmente diferentes de conexões ou visualizações de dados diferentes ou de um esquema diferente no XDM.
 
 * **Você pode especificar o nome amigável do componente que aparecerá no Analysis Workspace**. Por padrão, esse nome é herdado do nome de exibição do esquema, mas agora você pode substituí-lo para essa Exibição de dados específica. (Também é assim que a curadoria de componentes funciona em Conjuntos de relatórios virtuais no Adobe Analytics tradicional).
 
