@@ -2,7 +2,7 @@
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 translation-type: tm+mt
-source-git-commit: 6cfab7fc7ce3360b5ea2ed8bdd7f3e0a8e76a24d
+source-git-commit: 7db2474bf3cd16863c597295399a262c328172dc
 workflow-type: tm+mt
 source-wordcount: '2464'
 ht-degree: 8%
@@ -19,7 +19,7 @@ A criação de uma visualização de dados envolve a criação de métricas e di
 1. No Customer Journey Analytics, acesse a guia **Visualizações de dados**.
 2. Clique em **Adicionar** para criar uma nova visualização de dados e definir suas configurações.
 
-![](assets/)
+![](assets/new-data-view.png)
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
