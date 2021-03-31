@@ -2,9 +2,9 @@
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 translation-type: tm+mt
-source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
+source-git-commit: 6d3298731ae387f626aeadc67529482e9455775f
 workflow-type: tm+mt
-source-wordcount: '2609'
+source-wordcount: '2566'
 ht-degree: 6%
 
 ---
@@ -122,7 +122,6 @@ Por exemplo, você pode criar uma dimensão fora do campo pageTitle , mas chamá
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
-| [!UICONTROL Contar valores] | Isso permite criar uma contagem do número de vezes que um campo Booliano foi definido como `true`; como uma métrica. Por exemplo, o número de [!UICONTROL Exibições de página], onde um campo booleano chamado `isPage` é definido como `true`. |
 | [!UICONTROL Contar instâncias] | Permite especificar se um campo numérico ou de tipo de data usado como uma métrica deve contar os horários em que foi definido, em vez do valor propriamente dito.<br> Se desejar adicionar as instâncias de um campo numérico e quiser simplesmente adicionar o número de vezes que um campo foi  ** diferente do valor real nele contido.<br>Isso é útil para criar uma métrica de   Pedidos a partir de um campo de   Receita, por exemplo. Se a receita foi definida, devemos contar 1 pedido único em vez do valor numérico da receita. |
 
 ### Definir configurações [!UICONTROL Nenhuma opção de valor]
@@ -160,7 +159,7 @@ Por exemplo, um bucket de &quot;entre 5 e 10&quot; será exibido como um item de
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
-| [!UICONTROL Valor do bloco] | Permite criar uma versão classificada de uma dimensão numérica. Isso permite relatar períodos de receita ou outros valores numéricos como uma dimensão no relatório. Você pode criar até 5 compartimentos. |
+| [!UICONTROL Valor do bloco] | Permite criar uma versão classificada de uma dimensão numérica. Isso permite relatar períodos de receita ou outros valores numéricos como uma dimensão no relatório. |
 | [!UICONTROL Até] | Permite especificar os limites da primeira categoria de dimensão numérica. Isso se aplica somente a dimensões numéricas. |
 | [!UICONTROL Entre e até] | Permite que você especifique os limites de compartimentos de dimensão numérica subsequentes. |
 | [!UICONTROL Adicionar bloco] | Permite adicionar outro bucket ao dimensionamento de dimensão numérica. |
@@ -190,7 +189,7 @@ Componentes padrão obrigatórios
 
 ### Componentes padrão opcionais
 
-Alguns componentes do sistema são necessários em qualquer Exibição de dados para facilitar os recursos de relatório no Analysis Workspace, enquanto os abaixo são opcionais.
+Alguns componentes do sistema são necessários em qualquer visualização de dados para facilitar os recursos de relatórios no Analysis Workspace, enquanto os abaixo são opcionais.
 
 | Nome do componente | Dimension ou métrica | Notas |
 | --- | --- | --- |
