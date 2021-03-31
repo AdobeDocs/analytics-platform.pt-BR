@@ -2,9 +2,9 @@
 title: O que é uma visualização de dados no Customer Journey Analytics?
 description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão do CJA, como métricas, dimensões, sessões etc.
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1133'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->Essa funcionalidade está atualmente em testes limitados.
+>Essa funcionalidade estará disponível em geral em 22 de abril de 2021.
 
 Uma visualização de dados fica sobre um Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). Uma conexão combina um ou mais conjuntos de dados do Adobe Experience Platform e os conecta ao CJA. A visualização de dados especifica como você deseja interpretar elementos dos dados na conexão, como métricas, dimensões, sessões etc. As visualizações de dados são definidas em preparação para relatórios sobre os dados no Workspace.
 
@@ -35,17 +35,17 @@ A atualização mais recente das visualizações de dados oferece muito mais fle
 
 * **É possível criar várias métricas com diferentes modelos de atribuição ou com** janelas de retrospectiva diferentes a partir do mesmo campo de esquema.
 
-* **Você pode editar a ID de um componente** , usada para compatibilidade entre visualizações de dados. A ID do componente é o que a API de relatórios usa para identificar uma métrica ou dimensão específica. Como é possível criar arbitrariamente muitas métricas ou dimensões a partir de um campo XDM, ofereceremos a opção de definir sua própria ID de componente. Como resultado, uma métrica usada em um projeto do Workspace pode ser compatível entre as visualizações de dados (e a API), mesmo que seja baseada em campos totalmente diferentes de conexões ou visualizações de dados diferentes ou de um esquema diferente no XDM.
+* **Você pode editar a ID de um componente** , usada para compatibilidade entre visualizações de dados. A ID do componente é o que a API de relatórios usa para identificar uma métrica ou dimensão específica. Como você pode criar arbitrariamente muitas métricas ou dimensões de um campo XDM, ofereceremos a opção de definir sua própria ID de componente. Como resultado, uma métrica usada em um projeto do Workspace pode ser compatível entre as visualizações de dados (e a API), mesmo que seja baseada em campos totalmente diferentes de conexões ou visualizações de dados diferentes ou de um esquema diferente no XDM.
 
-* **Você pode especificar o nome amigável do componente que aparecerá no Analysis Workspace**. Por padrão, esse nome é herdado do nome de exibição do esquema, mas agora você pode substituí-lo para essa Exibição de dados específica. (Também é assim que a curadoria de componentes funciona em Conjuntos de relatórios virtuais no Adobe Analytics tradicional).
+* **Você pode especificar o nome amigável do componente que aparecerá no Analysis Workspace**. Por padrão, esse nome é herdado do nome de exibição do schema, mas agora você pode substituí-lo para essa visualização de dados específica. (Também é assim que a curadoria de componentes funciona em Conjuntos de relatórios virtuais no Adobe Analytics tradicional).
 
 * **Você pode exibir mais informações relacionadas ao schema sobre componentes** , como: de que tipo de conjunto de dados (evento, perfil, pesquisa) ele veio; qual tipo de schema (cadeia de caracteres, número inteiro, etc.) De onde provém; e seu caminho de esquema (o campo XDM no qual ele se baseia).
 
 * **Você pode marcar um** componente para facilitar a pesquisa por ele no Workspace.
 
-* **Você pode ocultar um componente no relatório**. Algumas métricas e configurações de dimensões no DV2 exigiram uma segunda métrica ou dimensão para configuração (como desduplicação de métrica ou desduplicação de compra, por exemplo). Isso permite definir uma métrica ou dimensão que pode ser usada nas configurações de outra métrica ou dimensão sem ser exposta diretamente no relatório (como ID de compra).
+* **Você pode ocultar um componente no relatório**. Algumas configurações de métricas e dimensões exigem uma segunda métrica ou dimensão para configuração (como desduplicação de métrica ou desduplicação de compra, por exemplo). Isso permite definir uma métrica ou dimensão que pode ser usada nas configurações de outra métrica ou dimensão sem ser exposta diretamente no relatório (como ID de compra).
 
-* **É possível aplicar formatação a uma métrica** , como mostrar decimais, hora, porcentagem ou moeda; Especificação de casas decimais; apresentando a tendência ascendente como verde ou vermelho; e especificando opções de moeda.
+* **É possível aplicar formatação a uma métrica**, como mostrar decimais, hora, porcentagem ou moeda; Especificação de casas decimais; apresentando a tendência ascendente como verde ou vermelho; e especificando opções de moeda.
 
 * Você pode **criar uma métrica ou dimensão com base em apenas alguns dos valores no campo de esquema**. Por exemplo, se você quisesse uma métrica de &quot;erros&quot;, poderia criar uma métrica a partir do campo de nome da página, mas incluir apenas páginas que contenham a palavra &quot;erro&quot;. A métrica de erros criada a partir disso é suportada por filtros, inserível em métricas calculadas e funciona com atribuição, fluxo, fallout, etc.
 
