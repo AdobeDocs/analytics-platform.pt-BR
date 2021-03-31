@@ -2,9 +2,9 @@
 title: Casos de uso para visualizações de dados no Customer Journey Analytics
 description: Vários casos de uso que mostram a flexibilidade e o poder das visualizações de dados no Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: b260930c5ffd50a428e5502695e159538ff8cb73
+source-git-commit: 1071ee32d0ff7fef1d3e96cb81c210dd521cedf0
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '334'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Essa funcionalidade está atualmente em testes limitados.
+>Essa funcionalidade estará disponível em geral em 22 de abril de 2021.
 
 Esses casos de uso que mostram a flexibilidade e o poder das visualizações de dados no Customer Journey Analytics.
 
@@ -38,7 +38,12 @@ Você também pode criar outra métrica [!UICONTROL Orders] do mesmo campo e esp
 Anteriormente, os números inteiros eram automaticamente tratados como métricas no CJA. Agora, os números (incluindo eventos personalizados do Adobe Analytics) podem ser tratados como dimensões. Exemplo:
 
 1. Arraste o inteiro [!UICONTROL call_length_min] até a seção [!UICONTROL Dimension] em [!UICONTROL Componentes incluídos]:
+
    ![](assets/integers.png)
 
-1. Agora você pode adicionar [!UICONTROL Value Bucketing] para apresentar essa dimensão de forma segmentada nos relatórios. Caso contrário, cada instância dessa dimensão apareceria como um item de linha no Workspace.
+1. Agora você pode adicionar [!UICONTROL Value Bucketing] para apresentar essa dimensão de forma segmentada nos relatórios. (Sem o agrupamento, cada instância dessa dimensão seria exibida como um item de linha no relatório do Workspace.)
+
    ![](assets/bucketing.png)
+
+Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview2.md).
+Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).
