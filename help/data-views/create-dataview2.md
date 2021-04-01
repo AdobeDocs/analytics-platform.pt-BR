@@ -2,9 +2,9 @@
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 translation-type: tm+mt
-source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '2607'
+source-wordcount: '2599'
 ht-degree: 6%
 
 ---
@@ -144,7 +144,7 @@ Observe também que qualquer item especificado neste campo pode ser usado para o
 
 ![](assets/persistence.png)
 
-Essas configurações são semelhantes às configurações de eVar no Adobe Analytics tradicional.
+Para obter mais informações, consulte o tópico em [Persistência](/help/data-views/persistence.md).
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
@@ -215,7 +215,7 @@ Também é possível filtrar por conjuntos de dados e se um campo de esquema con
 
 ## 3. Adicionar um filtro global à visualização de dados
 
-Você pode adicionar filtros (conhecidos anteriormente como segmentos) que se aplicam a toda a visualização de dados, de modo semelhante à visualização filtrada dos dados nos Conjuntos de relatórios virtuais (Adobe Analytics tradicional).
+É possível adicionar filtros que se aplicam a toda a visualização de dados. Esse filtro será aplicado a qualquer relatório que você executar no Workspace.
 
 1. Clique na guia [!UICONTROL Settings] em [!UICONTROL Data views].
 1. Arraste um filtro da lista no painel à esquerda para o campo [!UICONTROL Add filters].
