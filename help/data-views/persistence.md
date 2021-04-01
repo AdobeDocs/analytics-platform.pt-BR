@@ -1,10 +1,10 @@
 ---
-title: O que é persistência no Customer Journey Analytics?
+title: O que é persistência de dimensão no Customer Journey Analytics?
 description: A persistência de Dimension é uma combinação de alocação e expiração. Juntos, eles determinam quais valores de dimensão persistem.
 translation-type: tm+mt
-source-git-commit: 09f49cff89d69ae630e917243425967dbf56a9ed
+source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '524'
 ht-degree: 72%
 
 ---
