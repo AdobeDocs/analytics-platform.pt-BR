@@ -2,9 +2,9 @@
 title: O que é uma visualização de dados no Customer Journey Analytics?
 description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão do CJA, como métricas, dimensões, sessões etc.
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: 5de8faaf750dacaafe885f0c475f7240126f302f
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1087'
 ht-degree: 4%
 
 ---
@@ -16,9 +16,11 @@ ht-degree: 4%
 >
 >Essa funcionalidade estará disponível em geral em 22 de abril de 2021.
 
-Uma visualização de dados fica sobre um Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). Uma conexão combina um ou mais conjuntos de dados do Adobe Experience Platform e os conecta ao CJA. A visualização de dados especifica como você deseja interpretar elementos dos dados na conexão, como métricas, dimensões, sessões etc. As visualizações de dados são definidas em preparação para relatórios sobre os dados no Workspace. As exibições de dados são retroativas e não destrutivas. Em outras palavras, eles não alterarão seus dados subjacentes permanentemente.
+Uma visualização de dados fica sobre um Customer Journey Analytics (CJA) [connection](/help/connections/create-connection.md). Uma conexão combina um ou mais conjuntos de dados do Adobe Experience Platform e os conecta ao CJA. A visualização de dados especifica como você deseja interpretar elementos dos dados na conexão, como métricas, dimensões, sessões etc. As visualizações de dados são definidas em preparação para relatórios sobre os dados no Workspace.
 
-Se você já tiver usado o Adobe Analytics tradicional, uma visualização de dados será semelhante a um conjunto de relatórios virtual, na medida em que pode ser uma visualização &quot;filtrada&quot; dos dados.
+>[!NOTE]
+>
+>Todas as configurações selecionadas ou alteradas em uma visualização de dados são retroativas e não destrutivas. Em outras palavras, eles não alterarão seus dados subjacentes permanentemente.
 
 Você pode criar visualizações de dados diferentes para a mesma conexão, com conjuntos de componentes muito diferentes (dimensões/métricas). Ou criar visualizações de dados com configurações diferentes para o tempo limite da visita, atribuição etc. Por exemplo, você pode ter uma visualização de dados em que todas as dimensões estão definidas como [!UICONTROL Último contato] e, simultaneamente, outra visualização de dados (com base no mesmo conjunto de dados) com todas as dimensões definidas como [!UICONTROL Primeiro contato].
 
@@ -35,9 +37,9 @@ A atualização mais recente das visualizações de dados oferece muito mais fle
 
 * **É possível criar várias métricas com diferentes modelos de atribuição ou com** janelas de retrospectiva diferentes a partir do mesmo campo de esquema.
 
-* **Você pode editar a ID de um componente** , usada para compatibilidade entre visualizações de dados. A ID do componente é o que a API de relatórios usa para identificar uma métrica ou dimensão específica. Como é possível criar arbitrariamente muitas métricas ou dimensões a partir de um campo XDM, ofereceremos a opção de definir sua própria ID de componente. Como resultado, uma métrica usada em um projeto do Workspace pode ser compatível entre as visualizações de dados (e a API), mesmo que seja baseada em campos totalmente diferentes de conexões ou visualizações de dados diferentes ou de um esquema diferente no XDM.
+* **Você pode editar a ID de um componente** , usada para compatibilidade entre visualizações de dados. A ID do componente é o que a API de relatórios usa para identificar uma métrica ou dimensão específica. Como você pode criar arbitrariamente muitas métricas ou dimensões de um campo XDM, ofereceremos a opção de definir sua própria ID de componente. Como resultado, uma métrica usada em um projeto do Workspace pode ser compatível entre as visualizações de dados (e a API), mesmo que seja baseada em campos totalmente diferentes de conexões ou visualizações de dados diferentes ou de um esquema diferente no XDM.
 
-* **Você pode especificar o nome amigável do componente que aparecerá no Analysis Workspace**. Por padrão, esse nome é herdado do nome de exibição do schema, mas agora você pode substituí-lo para essa visualização de dados específica. (Também é assim que a curadoria de componentes funciona em Conjuntos de relatórios virtuais no Adobe Analytics tradicional).
+* **Você pode especificar o nome amigável do componente que aparecerá no Analysis Workspace**. Por padrão, esse nome é herdado do nome de exibição do schema, mas agora você pode substituí-lo para essa visualização de dados específica.
 
 * **Você pode exibir mais informações relacionadas ao schema sobre componentes** , como: de que tipo de conjunto de dados (evento, perfil, pesquisa) ele veio; qual tipo de schema (cadeia de caracteres, número inteiro, etc.) De onde provém; e seu caminho de esquema (o campo XDM no qual ele se baseia).
 
@@ -57,10 +59,6 @@ A atualização mais recente das visualizações de dados oferece muito mais fle
 
 * Antes de criar visualizações de dados, é necessário [configurar uma ou mais conexões com os conjuntos de dados da Experience Platform](/help/connections/create-connection.md).
 * Para criar ou gerenciar uma visualização de dados, você precisa de um [conjunto de permissões no Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR#admin-access-permissions).
-
-## Exibir informações sobre um componente
-
-Clique no ícone (i) de informações no Workspace para exibir em qual campo de esquema um componente se baseia e suas configurações, como uma descrição.
 
 ## Configurações de visualização de dados que você pode substituir no Workspace
 
