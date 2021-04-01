@@ -2,9 +2,9 @@
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 translation-type: tm+mt
-source-git-commit: c1f5048e33d52a71db9811c22f49c237ac583817
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '957'
 ht-degree: 92%
 
 ---
@@ -86,4 +86,4 @@ O Analytics tradicional vem com muitos segmentos de modelo (filtros) e métricas
 
 | Nome do filtro | Descrição |
 | --- | --- |
-| Todos os dados | Este é um filtro obrigatório análogo ao segmento &quot;Todas as visitas&quot; no Adobe Analytics tradicional. Ele é adicionado dinamicamente aos relatórios quando uma métrica é adicionada à linha de uma tabela de Forma livre. |
+| Todos os dados | Esse é um filtro necessário que é adicionado dinamicamente aos relatórios quando uma métrica é adicionada à linha de uma tabela de Forma livre. |
