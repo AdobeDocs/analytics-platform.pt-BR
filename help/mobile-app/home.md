@@ -5,12 +5,12 @@ translation-type: tm+mt
 source-git-commit: 8b8fa177b1fdfc760845b1fad7c145da68c320c8
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 73%
+ht-degree: 80%
 
 ---
 
 
-# Analytics [!UICONTROL painéis] - Visão geral
+# [!UICONTROL Painéis] do Analytics - Visão geral
 
 **Os  ** painéis do Analytics fornecem insights a qualquer hora e em qualquer lugar do Adobe Analytics, incluindo o Customer Journey Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode tocar para obter detalhamentos mais detalhados e exibições de dados de tendências. O aplicativo móvel é compatível com os sistemas operacionais iOS e Android.
 
