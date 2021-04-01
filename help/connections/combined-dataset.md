@@ -1,10 +1,10 @@
 ---
 title: Conjuntos de dados de evento combinados
 description: Saiba como o CJA cria uma conexão combinando conjuntos de dados.
-translation-type: ht
-source-git-commit: b6bfb14b594f42efc114bbde1b047b814e1cf653
-workflow-type: ht
-source-wordcount: '344'
+translation-type: tm+mt
+source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+workflow-type: tm+mt
+source-wordcount: '326'
 ht-degree: 100%
 
 ---
@@ -17,8 +17,6 @@ Ao criar uma conexão, o CJA combina todos os esquemas e conjuntos de dados em u
 * Os esquemas são combinados. Os campos de esquema duplicados são unidos.
 * A coluna &quot;ID de pessoa&quot; de cada conjunto de dados é unida em uma única coluna, independentemente do nome. Essa coluna é a base para identificar visitantes únicos no CJA.
 * As linhas são processadas com base no carimbo de data e hora.
-
-O conceito de conjuntos de dados combinados é semelhante ao conceito de combinação de conjuntos de relatórios no Adobe Analytics tradicional.
 
 ## Exemplo
 
@@ -57,7 +55,7 @@ Ao criar uma conexão usando esses dois conjuntos de dados de eventos, a tabela 
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
 
-Esse conjunto de dados combinados de eventos é o que é usado nos relatórios. Não importa de que conjunto de dados uma linha é derivada; o CJA trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados o mesmo visitante exclusivo. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão.
+Esse conjunto de dados combinados de eventos é o que é usado nos relatórios. Não importa de que conjunto de dados uma linha é derivada; o CJA trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados o mesmo visitante único. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão.
 
 Este conceito também se aplica à atribuição. Não importa de que conjunto de dados uma linha é derivada; a atribuição funciona exatamente como se todos os eventos viessem de um único conjunto de dados. Usando as tabelas acima como exemplo:
 
