@@ -1,11 +1,11 @@
 ---
 description: Instruções para configuração de scorecards para painéis.
-title: Guia do curador de painéis de Customer Journey Analytics
+title: Manual do curador de painéis do Customer Journey Analytics
 translation-type: tm+mt
 source-git-commit: 026771a61bcbd0eec8cb59a1d06f3dad0b96acf6
 workflow-type: tm+mt
 source-wordcount: '2403'
-ht-degree: 77%
+ht-degree: 81%
 
 ---
 
@@ -18,11 +18,11 @@ As informações a seguir instruem os curadores de dados do Adobe Analytics sobr
 
 ## Introdução
 
-Os painéis do Adobe Analytics fornecem insights a qualquer hora e em qualquer lugar com base nos dados de Customer Journey Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos criados e compartilhados a partir da interface do usuário de desktop do Customer Journey Analytics. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode tocar para obter detalhamentos mais detalhados e exibições de dados de tendências. Você pode adaptar os Scorecards de acordo com os dados mais importantes para você. Os painéis do Analytics são aceitos em sistemas operacionais iOS e Android.
+Os painéis do Adobe Analytics fornecem insights a qualquer hora e em qualquer lugar com base nos dados de Customer Journey Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos criados e compartilhados na interface de desktop do Customer Journey Analytics. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode tocar para obter detalhamentos mais detalhados e exibições de dados de tendências. Você pode adaptar os Scorecards de acordo com os dados mais importantes para você. Os painéis do Analytics são aceitos em sistemas operacionais iOS e Android.
 
 ## Mais informações sobre este guia
 
-Este guia tem como objetivo ajudar os curadores de dados do Customer Journey Analytics a configurar os scorecards para os usuários executivos nos painéis. Os curadores podem ser administradores organizacionais ou pessoas em outras funções responsáveis pela configuração dos Scorecards para aplicativos, que permitem aos usuários executivos visualizar uma ampla renderização de dados sumários importantes de maneira rápida e fácil em seus próprios dispositivos móveis. Embora os usuários executivos sejam os usuários finais dos painéis do Analytics, este guia ajudará os curadores de dados a configurar o aplicativo de maneira eficaz para esses usuários.
+Este manual tem como objetivo ajudar os curadores de dados do Customer Journey Analytics a configurar os scorecards para os usuários executivos nos painéis. Os curadores podem ser administradores organizacionais ou pessoas em outras funções responsáveis pela configuração dos Scorecards para aplicativos, que permitem aos usuários executivos visualizar uma ampla renderização de dados sumários importantes de maneira rápida e fácil em seus próprios dispositivos móveis. Embora os usuários executivos sejam os usuários finais dos painéis do Analytics, este guia ajudará os curadores de dados a configurar o aplicativo de maneira eficaz para esses usuários.
 
 ## Glossário de termos
 
@@ -30,8 +30,8 @@ A tabela a seguir descreve os termos para entender o público-alvo, as funções
 
 | Termo | Definição |
 |--- |--- |
-| Consumidor | Usuário executivo que visualiza as principais métricas e insights do CJA em um dispositivo móvel |
-| Curador | Usuário com conhecimento de dados que encontra e distribui informações do CJA e configura os Scorecards para serem visualizados pelo consumidor |
+| Consumidor | Usuário executivo que visualiza os insights e as métricas principais do CJA em um dispositivo móvel |
+| Curador | Usuário com conhecimento de dados que encontra e distribui insights do CJA e configura os scorecards para serem visualizados pelo consumidor |
 | Preparação | O ato de criar ou editar um Scorecard para dispositivos móveis com métricas, dimensões e outros componentes relevantes para o consumidor |
 | Scorecard | Uma exibição de painéis que contém um ou mais blocos |
 | Bloco | Uma renderização para uma métrica em uma Exibição de scorecard |
@@ -270,4 +270,4 @@ Toque na opção e informe o endereço de email no campo superior e a pergunta n
 
 >[!IMPORTANT]
 >
->A partir de outubro de 2020, o Adobe lançou gradualmente uma série de melhorias para otimizar o desempenho do aplicativo &quot;Adobe Analytics dashboards&quot;. Essas melhorias se concentram no armazenamento em cache de dados históricos do Analytics que são usados para preencher scorecards com datas (exceto o dia atual). Esses dados serão armazenados em cache por até 24 horas em uma conta de armazenamento na nuvem pública segura do Microsoft Azure. Entre em contato com seu CSM se não quiser aceitar esses recursos de melhoria de desempenho.
+>Desde outubro de 2020, a Adobe está lançando gradualmente uma série de melhorias para otimizar o desempenho do aplicativo &quot;Painéis do Adobe Analytics&quot;. Essas melhorias se concentram no armazenamento em cache de dados históricos do Analytics que são usados para preencher scorecards com datas (exceto o dia atual). Esses dados serão armazenados em cache por até 24 horas em uma conta de armazenamento na nuvem pública segura do Microsoft Azure. Entre em contato com seu CSM se não quiser aceitar esses recursos de melhoria de desempenho.
