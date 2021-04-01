@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: cfda4791c89a0fa1023bea6033b0244b29f45f12
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ As informações a seguir fornecem aos usuários executivos informações sobre 
 
 ## Introdução
 
-Os painéis do Analytics fornecem insights a qualquer hora e em qualquer lugar do Customer Journey Analytics.  O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. Os painéis são aceitos em sistemas operacionais iOS e Android.
+Os painéis do Analytics fornecem insights do Customer Journey Analytics a qualquer hora e em qualquer lugar.  O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. Os painéis são aceitos em sistemas operacionais iOS e Android.
 
 ## Mais informações sobre este guia
 
@@ -27,8 +27,8 @@ Este guia tem como objetivo ajudar usuários executivos a ler e interpretar Scor
 
 | Termo | Definição |
 |--- |--- |
-| Consumidor | Usuário executivo que visualiza as principais métricas e insights do CJA em um dispositivo móvel |
-| Curador | Usuário com conhecimento de dados que encontra e distribui informações do CJA e configura os Scorecards para serem visualizados pelo consumidor |
+| Consumidor | Usuário executivo que visualiza os insights e as métricas principais do CJA em um dispositivo móvel |
+| Curador | Usuário com conhecimento de dados que encontra e distribui insights do CJA e configura os scorecards para serem visualizados pelo consumidor |
 | Preparação | O ato de criar ou editar um scorecard para dispositivos móveis com métricas, dimensões e outros componentes relevantes para o consumidor |
 | Scorecard | Uma exibição de painéis que contém um ou mais blocos |
 | Bloco | Uma renderização para uma métrica em uma Exibição de scorecard |
@@ -44,22 +44,22 @@ Para usar os painéis de maneira eficaz, você precisará do curador do Scorecar
 
 Para acessar os Scorecards nos painéis, verifique se:
 
-* Você tem um login válido no Customer Journey Analytics
+* Você tem um logon válido no Customer Journey Analytics
 * O curador criou corretamente os Scorecards para dispositivos móveis e os compartilhou com você
 
-### Baixar e instalar painéis
+### Painéis de download e instalação
 
 Para baixar e instalar o aplicativo, siga as etapas de acordo com o sistema operacional do dispositivo.
 
 **Para usuários executivos no iOS:**
 
-Clique no link a seguir (ele também está disponível no CJA em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo Móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
+Clique no link a seguir (ele também está disponível no CJA em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
 
 [Link para iOS](https://apple.co/2zXq0aN)
 
 **Para usuários executivos no Android:**
 
-Clique no link a seguir (ele também está disponível no CJA em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo Móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
+Clique no link a seguir (ele também está disponível no CJA em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
 
 [Link do Android](https://bit.ly/2LM38Oo)
 
