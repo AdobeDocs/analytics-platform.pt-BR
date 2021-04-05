@@ -1,14 +1,14 @@
 ---
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
+exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 6%
+source-wordcount: '2813'
+ht-degree: 11%
 
 ---
-
 
 # Criar uma nova visualização de dados
 
@@ -45,7 +45,10 @@ Em seguida, você pode criar métricas e dimensões a partir de elementos do esq
 
 ![](assets/components-tab.png)
 
-Você pode ver a [!UICONTROL Connection] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo. Os componentes já presentes são os componentes obrigatórios padrão (gerados pelo sistema).
+Você pode ver a [!UICONTROL Connection] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo. Lembre-se:
+
+* Os componentes já incluídos são os componentes obrigatórios padrão (gerados pelo sistema).
+* Também aplicamos o filtro **[!UICONTROL Contém dados]** por padrão, para que sejam exibidos apenas campos de Esquema que contêm dados. Se estiver procurando um campo que não contenha dados, basta remover o filtro .
 
 1. Agora arraste um campo de esquema, como [!UICONTROL pageTitle], do painel esquerdo para a seção Métricas ou Dimension.
 
@@ -173,35 +176,35 @@ Além de criar métricas e dimensões a partir de elementos do esquema, você ta
 
 ![](assets/standard-components.png)
 
-Componentes padrão obrigatórios
+Por padrão, os componentes padrão obrigatórios são adicionados à visualização de dados.
 
 | Nome do componente | Dimension ou métrica | Notas |
 | --- | --- | --- |
-| [!UICONTROL Pessoas] | Métrica | Anteriormente conhecido como [!UICONTROL Visitantes únicos] no Analytics tradicional. Essa métrica é baseada na ID de pessoa especificada em uma conexão. |
-| [!UICONTROL Sessões] | Métrica | Anteriormente conhecido como [!UICONTROL Visitas] no Analytics tradicional. Essa métrica é baseada nas configurações de sessão especificadas abaixo. |
-| [!UICONTROL Eventos] | Métrica | Anteriormente conhecido como [!UICONTROL Ocorrências] no Analytics tradicional. Essa métrica representa o número de linhas de todos os conjuntos de dados de eventos em uma conexão. |
-| [!UICONTROL Dia] | Dimensão |  |
-| [!UICONTROL Semana] | Dimensão |  |
-| [!UICONTROL Mês] | Dimensão |  |
-| [!UICONTROL Trimestre] | Dimensão |  |
-| [!UICONTROL Ano] | Dimensão |  |
-| [!UICONTROL Hora] | Dimensão |  |
-| [!UICONTROL Minuto] | Dimensão |  |
+| [!UICONTROL Pessoas] | Métrica | Essa métrica é baseada na ID de pessoa especificada em uma conexão. |
+| [!UICONTROL Sessões] | Métrica | Essa métrica é baseada nas configurações de sessão especificadas abaixo. |
+| [!UICONTROL Eventos] | Métrica | Essa métrica representa o número de linhas de todos os conjuntos de dados de eventos em uma conexão. |
+| [!UICONTROL Dia] | Dimensão | A dimensão &quot;Dia&quot; informa o dia em que uma determinada métrica ocorreu. O primeiro item de dimensão é o primeiro dia no intervalo de datas, e o último item de dimensão é o último dia no intervalo de datas. |
+| [!UICONTROL Semana] | Dimensão | A dimensão &quot;Semana&quot; informa a semana em que uma determinada métrica ocorreu. O primeiro item de dimensão é a primeira semana no intervalo de datas, e o último item de dimensão é a última semana no intervalo de datas. |
+| [!UICONTROL Mês] | Dimensão | A dimensão Mês informa o mês em que uma determinada métrica ocorreu. O primeiro item de dimensão é o primeiro mês no intervalo de datas, e o último item de dimensão é o último mês no intervalo de datas. |
+| [!UICONTROL Trimestre] | Dimensão | A dimensão &quot;Trimestre&quot; informa o trimestre em que uma determinada métrica ocorreu. O primeiro item de dimensão é o primeiro trimestre no intervalo de datas, e o último item de dimensão é o último trimestre no intervalo de datas. |
+| [!UICONTROL Ano] | Dimensão | A dimensão &quot;Ano&quot; informa o ano em que uma determinada métrica ocorreu. O primeiro item de dimensão é o primeiro ano no intervalo de datas, e o último item de dimensão é o ano mais recente no intervalo de datas. |
+| [!UICONTROL Hora] | Dimensão | A dimensão &quot;Hora&quot; informa a hora em que uma determinada métrica ocorreu (arredondada para baixo). O primeiro item de dimensão é a primeira hora no intervalo de datas, e o último item de dimensão é a última hora no intervalo de datas. |
+| [!UICONTROL Minuto] | Dimensão | A dimensão &quot;Minuto&quot; informa o minuto em que uma determinada métrica ocorreu (arredondado para baixo). O primeiro item de dimensão é o primeiro minuto no intervalo de datas, e o último item de dimensão é o último minuto no intervalo de datas. |
 
 ### Componentes padrão opcionais
 
-Alguns componentes do sistema são necessários em qualquer visualização de dados para facilitar os recursos de relatórios no Analysis Workspace, enquanto os abaixo são opcionais.
+Os componentes padrão opcionais estão disponíveis na guia **[!UICONTROL Componentes padrão]**.
 
 | Nome do componente | Dimension ou métrica | Notas |
 | --- | --- | --- |
-| [!UICONTROL Sessão inicia] | Métrica | Essa métrica conta o número de eventos que foram o primeiro evento de uma sessão. Quando usado em uma definição de filtro (por exemplo, &#39;[!UICONTROL Session Starts] exists&#39;), ela filtra somente para o primeiro evento de cada sessão. Observe que esse é um comportamento diferente de [!UICONTROL Entries], pois sempre conta o primeiro evento de uma sessão - não o primeiro valor presente para uma dimensão em uma sessão. |
-| [!UICONTROL Sessão termina] | Métrica | Essa métrica conta o número de eventos que foram o último evento de uma sessão. Semelhante a [!UICONTROL Inícios de sessão], também pode ser usado em uma definição de filtro para filtrar os itens para o último evento de cada sessão. Observe que esse é um comportamento diferente de [!UICONTROL Saídas] na medida em que sempre conta o último evento de uma sessão - não o último valor presente para uma dimensão em uma sessão. |
-| [!UICONTROL Tempo gasto (segundos)] | Métrica | A métrica [!UICONTROL Tempo gasto] funciona de forma semelhante à do Adobe Analytics tradicional - adicionando o tempo entre dois valores diferentes para uma dimensão. No entanto, usando a métrica Inícios de sessão e Término de sessão, os clientes podem criar as próprias métricas calculadas [!UICONTROL Tempo gasto por pessoa] e [!UICONTROL Tempo gasto por sessão] (consulte Filtros de OOTB e métricas de cálculo abaixo). |
-| [!UICONTROL Tempo gasto por evento] | Dimensão | Funcionalmente, isso é apenas uma divisão da métrica acima. Fornecemos buckets padrão, mas permitimos que você mude os buckets para o que quiser. |
-| [!UICONTROL Tempo gasto por sessão] | Dimensão |  |
-| [!UICONTROL Tempo gasto por pessoa] | Dimensão |  |
-| [!UICONTROL ID em lote] | Dimensão |  |
-| [!UICONTROL ID do conjunto de dados] | Dimensão |  |
+| [!UICONTROL Sessão inicia] | Métrica | Essa métrica conta o número de eventos que foram o primeiro evento de uma sessão. Quando usado em uma definição de filtro (por exemplo, &#39;[!UICONTROL Session Starts] exists&#39;), ela filtra somente para o primeiro evento de cada sessão. |
+| [!UICONTROL Sessão termina] | Métrica | Essa métrica conta o número de eventos que foram o último evento de uma sessão. Semelhante a [!UICONTROL Inícios de sessão], também pode ser usado em uma definição de filtro para filtrar os itens para o último evento de cada sessão. |
+| [!UICONTROL Tempo gasto (segundos)] | Métrica | A métrica [!UICONTROL Tempo gasto] adiciona o tempo entre dois valores diferentes para uma dimensão. |
+| [!UICONTROL Tempo gasto por evento] | Dimensão | [!UICONTROL Tempo gasto por ] evento define a  [!UICONTROL métrica Tempo ] gasto em   eventos. |
+| [!UICONTROL Tempo gasto por sessão] | Dimensão | [!UICONTROL Tempo gasto por ] sessão classifica a  [!UICONTROL métrica Tempo ] gasto em   sessões. |
+| [!UICONTROL Tempo gasto por pessoa] | Dimensão | [!UICONTROL Tempo gasto por ] personalização define a métrica  [!UICONTROL Tempo ] gasto em   personalizações. |
+| [!UICONTROL ID em lote] | Dimensão | Representa o lote de Experience Platform do qual um [!UICONTROL Event] fez parte. |
+| [!UICONTROL ID do conjunto de dados] | Dimensão | Representa o conjunto de dados Experience Platform do qual um [!UICONTROL Event] fazia parte. |
 
 ### Filtrar campos de esquema e dimensões/métricas
 
@@ -209,9 +212,10 @@ Você pode filtrar campos de esquema no painel esquerdo pelos seguintes tipos de
 
 ![](assets/filter-fields.png)
 
-Também é possível filtrar por conjuntos de dados e se um campo de esquema contém dados ou se é uma identidade:
+Também é possível filtrar por conjuntos de dados e por se um campo de esquema contém dados ou se é uma identidade. Por padrão, aplicamos o filtro **[!UICONTROL Contém dados]** a todas as visualizações de dados.
 
 ![](assets/filter-other.png)
+
 
 ## 3. Adicionar um filtro global à visualização de dados
 
