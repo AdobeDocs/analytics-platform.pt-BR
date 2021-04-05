@@ -1,20 +1,20 @@
 ---
 title: O que é persistência de dimensão no Customer Journey Analytics?
 description: A persistência de Dimension é uma combinação de alocação e expiração. Juntos, eles determinam quais valores de dimensão persistem.
+exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: efe92e25229addadf57bff3f2ba73d831a3161ea
+source-git-commit: 16e43f5d938ac25445f382e5eba8fc12e0e67161
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '598'
 ht-degree: 18%
 
 ---
-
 
 # Persistência
 
 A persistência de Dimension é uma combinação de alocação e expiração. Juntos, eles determinam quais valores de dimensão persistem. O Adobe recomenda que você discuta em sua organização como vários valores de cada dimensão são tratados (alocação) e quando os valores de dimensão param de persistir nos dados (expiração).
 
-* Por padrão, um valor de dimensão usa ? alocação.
+* Por padrão, um valor de dimensão usa [WHAT?] alocação.
 * Por padrão, um valor de dimensão usa uma expiração de [!UICONTROL Session].
 
 ## Alocação
@@ -43,7 +43,7 @@ Este é um exemplo de antes e depois da alocação [!UICONTROL Original]:
 
 | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
+| timestamp (min) | 3 | 2 | 3 | 6 | 7 |
 | valores originais |  | C | B |  | A |
 | Alocação original |  | C | C | C | C |
 
@@ -53,7 +53,7 @@ Essa nova alocação de dimensão pode ser aplicada a dimensões baseadas em mat
 
 | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 3 | 2 | 3 | 6 | 7 |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
 | valores originais | A | B | C |  | A |
 | pós-persistência | A | A,B | A,B,C | B,C | A,C |
 
@@ -71,7 +71,7 @@ Esses dois novos modelos de alocação pegam o primeiro ou o último valor obser
 
 | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 3 | 2 | 3 | 6 | 7 |
+| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
 | valores originais |  | C | B |  | A |
 | first known | C | C | C | C | C |
 | last known | A | A | A | A | A |
@@ -95,4 +95,3 @@ Há quatro maneiras de expirar um valor de dimensão:
 **Alocação**: Pense na alocação como &quot;transformação de dados&quot; da dimensão. A alocação ocorre antes da filtragem. Se você criar um filtro, ele será destacado da dimensão transformada.
 
 **Atribuição**: Como estou distribuindo o crédito de uma métrica para a dimensão à qual ela é aplicada? A atribuição ocorre após a filtragem.
-
