@@ -1,14 +1,14 @@
 ---
 title: Perguntas frequentes sobre Atribuição
 description: Obtenha respostas para perguntas frequentes sobre atribuição.
+exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 translation-type: tm+mt
-source-git-commit: e4bef70f72019bdceb09938dffe2fd266ff4248d
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 93%
+source-wordcount: '307'
+ht-degree: 88%
 
 ---
-
 
 # Perguntas frequentes sobre Atribuição
 
@@ -26,7 +26,7 @@ Essas datas extras aparecem devido à janela de retrospectiva do visitante. Cons
 
 **Quando devo usar retrospectiva de atribuição de visita e quando devo usar retrospectiva de atribuição de visitante?**
 
-A escolha da retrospectiva de atribuição depende do seu caso de uso. Se as conversões normalmente levam mais tempo do que uma visita única, recomenda-se a retrospectiva de visitante. Criar um conjunto de relatórios virtual com uma definição de visita mais longa também é uma solução possível.
+A escolha da retrospectiva de atribuição depende do seu caso de uso. Se as conversões normalmente levam mais tempo do que uma visita única, recomenda-se a retrospectiva de visitante. Criar uma visualização de dados com uma definição de visita mais longa também é uma solução possível.
 
 **Como funciona a comparação de props e eVars na atribuição?**
 
