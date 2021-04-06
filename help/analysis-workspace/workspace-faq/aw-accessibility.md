@@ -1,14 +1,14 @@
 ---
 description: Recursos de suporte para acessibilidade no Analysis Workspace
 title: Acessibilidade no Analysis Workspace
+exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 translation-type: tm+mt
-source-git-commit: e004a2a8ec24113ae8b62a9d30c10fe0eb763460
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
-
 
 # Acessibilidade no Analysis Workspace
 
@@ -22,20 +22,20 @@ O [!UICONTROL Analysis Workspace] fornece algumas ferramentas que o tornam acess
 
 A navegação no [!UICONTROL Analysis Workspace] funciona de cima > para baixo e da esquerda > à direita. Os seguintes elementos de navegação facilitam a acessibilidade:
 
-* A tecla `Tab` ativa atalhos de marcos, alternando entre seções maiores dentro do Workspace. No painel esquerdo, `Tab` também permite que você se mova de uma opção arrastável para a próxima.
-* A movimentação `left/right arrows` entre elementos individuais depois de `Tab` a destacar.
-* O `F6` navega até o primeiro painel do projeto e se move entre as visualizações dentro desse painel. Em seguida, ele se move para o próximo painel do projeto e se repete.
+* A tecla `Tab` ativa atalhos de marcos, alternando entre seções maiores no Workspace. No painel à esquerda, `Tab` também permite mover de uma opção arrastável para a próxima.
+* A movimentação `left/right arrows` entre elementos individuais depois de `Tab` realçá-la.
+* O `F6` navega até o primeiro painel no projeto e se move entre as visualizações nesse painel. Em seguida, ele é movido para o próximo painel no projeto e repete.
 * Nós aplicamos indicadores de foco para que os usuários de teclado com visão tenham uma indicação clara de qual elemento de interface do usuário tem foco no momento. O indicador é uma borda azul em torno do elemento selecionado.
 
    ![Indicador de foco](assets/focus-indicator.png)
 
-### Navegação no teclado para a barra de menus
+### Navegação do teclado para a barra de menus
 
-1. Pressione a tecla até acessar a barra de menus.
+1. Pressione até que a barra de menu seja atingida.
 1. Use as teclas de seta para a esquerda/direita para navegar até o menu desejado.
 1. Pressione `Enter` para selecionar o menu e mostrar suas opções.
 1. Use as teclas de seta para cima/para baixo para navegar até a opção de menu desejada.
-1. Pressione `Enter` para selecionar a opção.
+1. Pressione `Enter` para selecionar a opção .
 
 ### Navegação no teclado para interações de arrastar e soltar
 
@@ -67,9 +67,9 @@ O [!UICONTROL Analysis Workspace] oferece um conjunto avançado de [atalhos de t
 | Alt + 1 | Nova tabela de forma livre |
 | Ctrl + Shift + C | Nova métrica calculada |
 | Ctrl + Shift + D | Novo intervalo de datas |
-| Ctrl + Shift + E | Novo segmento |
+| Ctrl + Shift + E | Novo filtro |
 | Ctrl + Z | Desfazer |
-| Manter shift pressionado (na área do segmento) | Criar um [filtro suspenso](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) |
+| Manter shift pressionado (na área do filtro do painel) | Criar um [filtro suspenso](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) |
 
 #### Democratização
 
