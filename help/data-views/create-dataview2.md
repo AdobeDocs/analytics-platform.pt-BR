@@ -3,10 +3,10 @@ title: Como criar uma nova visualização de dados no Customer Journey Analytics
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: c021892119cbebccaa49e5c04fd7cc7450cce8c6
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '2814'
-ht-degree: 11%
+source-wordcount: '2805'
+ht-degree: 12%
 
 ---
 
@@ -75,7 +75,7 @@ Por exemplo, no campo **[!UICONTROL pageTitle]**, é possível criar uma dimens�
 | [!UICONTROL Tags] | Opcional. Permite marcar o componente com tags personalizadas ou prontas para uso para facilitar a pesquisa/filtragem na interface do usuário do Analysis Workspace. |
 | [!UICONTROL Nome do campo] | O nome do campo de esquema. |
 | [!UICONTROL Tipo de conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de conjunto de dados (evento, pesquisa ou perfil) o componente veio. |
-| [!UICONTROL Conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de campo o componente veio (por exemplo, String, Integer, etc.). Este campo pode conter vários conjuntos de dados, como quando você está combinando vários conjuntos de relatórios. |
+| [!UICONTROL Conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de campo o componente veio (por exemplo, String, Integer, etc.). Este campo pode conter vários conjuntos de dados. |
 | [!UICONTROL Tipo de esquema] | Refere-se a se o componente é uma string, um inteiro, etc. |
 | [!UICONTROL ID de componente] | Obrigatório. A [API CJA](https://adobe.io/cja-apis/docs) usa esse campo para fazer referência ao componente. Você pode clicar no ícone editar e modificar essa ID de componente. No entanto, alterar essa ID de componente interrompe todos os projetos existentes do Workspace que contêm esse componente.<br>Se você criar outra visualização de dados que use um campo diferente para uma dimensão pageTitle, será possível renomeá-la e tornar a visualização de dados cruzados compatível. |
 | [!UICONTROL Path] | Obrigatório. Um campo não editável que mostra o caminho do esquema de onde o componente veio. |
