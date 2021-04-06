@@ -2,10 +2,10 @@
 description: Saiba mais sobre as opções Desfazer e Refazer no Analysis Workspace.
 title: Configurações Desfazer e Refazer
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
-translation-type: ht
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: ht
-source-wordcount: '298'
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '287'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 100%
 
 * **[!UICONTROL Novo projeto]** ou **[!UICONTROL Abrir projeto existente]** limpa a pilha de **[!UICONTROL Desfazer]**
 
-* É possível desfazer/refazer uma alteração no conjunto de relatórios.
 * Uma mensagem de desfazer/refazer próxima ao nome do projeto indica quando uma ação de desfazer ou refazer estiver em andamento.
 * Você pode usar estas [teclas de atalho](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md):
 
@@ -36,7 +35,6 @@ ht-degree: 100%
 * Análise de contribuição
 * Comparação de segmentos
 * Nome do projeto
-* Seleção de conjunto de relatórios
 * Adicionar ou remover uma visualização
 * Abrir ou fechar um painel ou uma visualização
 * Inserir usando teclas de atalho (CTRL(CMD)+Z para Desfazer), (CTRL(CMD)+SHIFT+Z para Refazer)
@@ -64,7 +62,7 @@ ht-degree: 100%
 ## O que não pode ser refeito ou desfeito {#section_65BB313E048F4744B692926362873230}
 
 * Informações do projeto e alterações em configurações (Adicionar tags, Alterar descrição, Configuração de contagem de instâncias repetidas)
-* Definir como página de aterrissagem
+* Definir como página inicial
 * Adicionar novo (Segmento/Métrica/Intervalo de datas/Alerta)
 * Compartilhar projeto, Obter link do projeto, Enviar arquivo (Agora ou Agendar)
 * Criar segmento para este caminho na Visualização de fluxo
