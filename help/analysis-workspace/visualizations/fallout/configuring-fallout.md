@@ -1,20 +1,20 @@
 ---
 description: Saiba como especificar os pontos de contato para criar uma sequência de fallout multidimensional.
 title: Configurar uma visualização de fallout
+exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 translation-type: tm+mt
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '690'
-ht-degree: 98%
+ht-degree: 85%
 
 ---
-
 
 # Configurar uma visualização de fallout
 
 Você pode especificar os pontos de contato para criar uma sequência de fallout multidimensional. Geralmente, um ponto de contato é uma página no seu site. Contudo, pontos de contato não estão limitados a páginas. Por exemplo, você pode adicionar eventos, como unidades, bem como visitantes exclusivos e visitantes que retornam. Você também pode adicionar dimensões, como uma categoria, tipo de navegador ou termo de pesquisa interno.
 
-Você também pode adicionar segmentos em um ponto de contato. Por exemplo, você pode querer comparar segmentos, como usuários de iOS e Android. Arraste os segmentos desejados para o topo do fallout e as informações sobre os segmentos são adicionadas ao relatório de fallout. Se quiser exibir somente esses segmentos, você pode remover a linha de base de Todas as visitas.
+Você pode até mesmo adicionar filtros em um ponto de contato. Por exemplo, talvez você queira comparar filtros, como usuários de iOS e Android. Arraste os filtros desejados até a parte superior do fallout e as informações sobre eles são adicionadas ao relatório de fallout. Se quiser mostrar apenas esses filtros, é possível remover a linha de base Todas as visitas .
 
 Não há limite de número de etapas que você pode adicionar ou do número de dimensões usadas.
 
@@ -38,7 +38,7 @@ Você pode definir o caminho das eVars, incluindo eVars de comercialização e [
 
    >[!NOTE]
    >
-   >Quando são vários segmentos, eles são ligados com AND, mas quando são vários itens (como itens de dimensão e métricas), são ligados com OR.
+   >Vários filtros são unidos com AND, mas vários itens, como itens de dimensão e métricas, são unidos com OR.
 
    ![](assets/multiple_obj_touchpoint.png)
 
@@ -74,4 +74,4 @@ Quando você **clicar com o botão direito em um ponto de contato**, as seguinte
 | Executar tendência de todos os pontos de contato (%) | Executa a tendência de todas as porcentagens de pontos de contato no fallout (exceto “Todas as visitas”, se incluso), no mesmo gráfico. |
 | Analisar fallthrough neste ponto de contato | Visualize o que os visitantes fizeram entre dois pontos de contato (este ponto de contato e o próximo ponto de contato), se continuaram até o próximo ponto de contato. Isso cria uma tabela de forma livre, mostrando suas dimensões. Você pode substituir dimensões e outros elementos da tabela. |
 | Analisar o fallout neste ponto de contato | Veja o que as pessoas que não entraram no funil fizeram imediatamente depois da etapa selecionada. |
-| Criar segmentos a partir do ponto de contato | Crie um novo segmento a partir do ponto de contato selecionado. |
+| Criar filtro a partir do ponto de contato | Crie um novo filtro a partir do ponto de contato selecionado. |
