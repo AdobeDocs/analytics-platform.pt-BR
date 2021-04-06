@@ -1,14 +1,14 @@
 ---
 title: Atribuição algorítmica
 description: Detalhes sobre o modelo de atribuição algorítmica.
+exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
 translation-type: tm+mt
-source-git-commit: e32311ce4975107e1b7ca2cb2eaadc2c68a93c92
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 95%
+ht-degree: 82%
 
 ---
-
 
 # Atribuição algorítmica
 
@@ -20,7 +20,7 @@ ht-degree: 95%
 >
 >**[!UICONTROL A]** atribuição algorítmica está atualmente em testes limitados. Consulte [Versões de recursos do Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html) para obter mais informações.
 
-O [modelo de atribuição](models.md) algorítmica no Analysis Workspace difere de outros modelos na medida em que usa técnicas estatísticas para alocar crédito entre os itens de dimensão em seu relatório ou tabela de forma livre. Como todos os outros modelos de atribuição no Analysis Workspace, ele pode ser usado em qualquer dimensão ou métrica e aceita segmentação ilimitada e detalhamentos e distribui 100% das conversões para a(s) dimensão(ões) na tabela (também conhecida como atribuição &quot;fracional&quot;).
+O [modelo de atribuição](models.md) algorítmica no Analysis Workspace difere de outros modelos na medida em que usa técnicas estatísticas para alocar crédito entre os itens de dimensão em seu relatório ou tabela de forma livre. Como todos os outros modelos de atribuição no Analysis Workspace, ele pode ser usado em qualquer dimensão ou métrica e oferece suporte a filtros e detalhamentos ilimitados e distribui 100% das conversões para a(s) dimensão(ões) na tabela (também conhecida como atribuição &quot;fracional&quot;).
 
 O algoritmo usado para atribuição é baseado no Harsanyi Dividend da teoria dos jogos cooperativos. O dividendo de Harsanyi é uma generalização da solução de valor de Shapley (batizada de Lloyd Shapley, economista vencedor do Nobel) para distribuir crédito entre os jogadores em um jogo com contribuições desiguais para o resultado.
 
