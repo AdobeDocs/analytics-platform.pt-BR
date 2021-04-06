@@ -3,9 +3,9 @@ title: Como criar uma nova visualização de dados no Customer Journey Analytics
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2802'
 ht-degree: 12%
 
 ---
@@ -106,7 +106,7 @@ As configurações de formato são somente para métricas.
 
 ### Configurar as configurações Incluir/Excluir valores
 
-Essa configuração permite modificar os dados subjacentes nos quais você está relatando, no momento da consulta. Não é o mesmo que um filtro (anteriormente chamado de segmento). Mas os filtros respeitarão essa nova dimensão, assim como a definição de caminho e a atribuição.
+Essa configuração permite modificar os dados subjacentes nos quais você está relatando, no momento da consulta. Não é o mesmo que um filtro. Mas os filtros respeitarão essa nova dimensão, assim como a definição de caminho e a atribuição.
 
 Por exemplo, você pode criar uma dimensão fora do campo pageTitle , mas chamá-la de &quot;páginas de erro&quot; e incluir qualquer página que [!UICONTROL contenha a frase] &quot;erro&quot;.
 
@@ -115,7 +115,7 @@ Por exemplo, você pode criar uma dimensão fora do campo pageTitle , mas chamá
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
 | [!UICONTROL Diferencia maiúsculas de minúsculas] | Padrão = Ativado. Essa configuração se aplica somente à seção [!UICONTROL Incluir/Excluir valores]. Isso permite dizer se a regra de inclusão/exclusão que você está aplicando deve diferenciar maiúsculas de minúsculas. |
-| [!UICONTROL Corresponder] | Permite especificar quais valores você gostaria de considerar para os relatórios antes da atribuição e segmentação (por exemplo, use apenas valores contendo a frase &quot;erro&quot;). Você pode especificar: **[!UICONTROL Se todos os critérios forem atendidos]**, ou **[!UICONTROL Se algum critério for atendido]**. |
+| [!UICONTROL Corresponder] | Permite que você especifique quais valores deseja considerar para relatórios antes da atribuição e filtros (por exemplo, use apenas valores contendo a frase &quot;erro&quot;). Você pode especificar: **[!UICONTROL Se todos os critérios forem atendidos]**, ou **[!UICONTROL Se algum critério for atendido]**. |
 | [!UICONTROL Critérios] | Permite especificar a lógica de correspondência que deve ser aplicada a uma regra de filtro específica.<ul><li>**Sequência**: Contém a frase, Contém qualquer termo, Contém todos os termos, Não contém nenhum termo, Não contém a frase, É igual, Não é igual, Começa com, Termina com</li><li>**Duplo/Número inteiro**: é igual, não é igual, é maior que, é menor que, é maior que ou igual a, é menor que ou igual a</li><li>**Data**: é igual a, não é igual, é posterior a, é anterior, ocorre dentro de</li></ul> |
 | [!UICONTROL Corresponder operando] | Permite especificar o operando de correspondência ao qual o operador de correspondência deve ser aplicado.<ul><li>**Sequência**: Campo de texto</li><li>**Duplo/Número inteiro**: Campo de texto com setas para cima/para baixo para valores numéricos</li><li>**Data**: Seletor de granularidade do dia (calendário)</li><li>**Data Hora**: Seletor de granularidade de data e hora</li></ul> |
 | [!UICONTROL Adicionar regra] | Permite especificar um operador e um operando de correspondência adicional. |
