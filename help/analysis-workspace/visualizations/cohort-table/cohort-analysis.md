@@ -1,20 +1,20 @@
 ---
 title: O que é a análise de coorte?
 description: Saiba mais sobre a análise de coorte no Analysis Workspace
+exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 translation-type: tm+mt
-source-git-commit: ff1a11a18de0825b6338de98865e3bddeef14f39
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 97%
+ht-degree: 84%
 
 ---
 
-
 # O que é a [!UICONTROL análise de coorte]?
 
-A *`cohort`* é um grupo de pessoas com características comuns em um período específico. A [!UICONTROL análise de coorte] é útil, por exemplo, quando você deseja saber como uma coorte interage com uma marca. Você pode detectar facilmente as mudanças nas tendências e atuar de acordo com elas. (Há explicações sobre a [!UICONTROL análise de coorte] disponíveis na Web, por exemplo, em [Análise de coorte 101](https://en.wikipedia.org/wiki/Cohort_analysis).)
+A *`cohort`* é um grupo de pessoas com características comuns em um período específico. A [!UICONTROL análise de coorte] é útil, por exemplo, quando você deseja saber como uma coorte interage com uma marca. Você pode detectar facilmente as mudanças nas tendências e atuar de acordo com elas. (Há explicações sobre a [!UICONTROL análise de coorte] disponíveis na Web, por exemplo, em [Análise de coorte 101](https://pt.wikipedia.org/wiki/An%C3%A1lise_de_coorte).)
 
-Após criar um relatório de coorte, você pode preparar seus componentes (dimensões, métricas e segmentos específicos), em seguida, compartilhá-lo com qualquer pessoa. Consulte [Preparar e compartilhar](/help/analysis-workspace/curate-share/curate.md).
+Depois de criar um relatório de coorte, você pode preparar seus componentes (dimensões, métricas e filtros específicos) e, em seguida, compartilhá-lo com qualquer pessoa. Consulte [Preparar e compartilhar](/help/analysis-workspace/curate-share/curate.md).
 
 Exemplos do que você pode fazer com a [!UICONTROL análise de coorte]:
 
@@ -26,13 +26,13 @@ Exemplos do que você pode fazer com a [!UICONTROL análise de coorte]:
 
 A [!UICONTROL Análise de coorte] está disponível a todos os clientes do Adobe Analytics com direitos de acesso ao [!UICONTROL Analysis Workspace].
 
-[Tutorial](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html)  em vídeo de Análise de coorte (4:36)
+[Tutorial em vídeo da Análise de coorte](https://docs.adobe.com/content/help/pt-BR/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
 
 >[!IMPORTANT]
 >
 >[!UICONTROL Análise de coorte]
 >
->não aceita métricas não segmentáveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em segmentos podem ser usadas na
+>não suporta métricas não filtráveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em filtros podem ser usadas em
 >[!UICONTROL Análise de coorte], que só pode ser aumentada em 1 de cada vez.
 
 ## Recursos da análise de coorte
@@ -41,13 +41,13 @@ Os seguintes recursos permitem o controle ajustado dos coortes que você está c
 
 ### Tabela de [!UICONTROL retenção]
 
-Um relatório de coorte de [!UICONTROL retenção] registram os visitantes: cada célula de dados mostra o número bruto e a porcentagem de visitantes da coorte que realizaram a ação durante esse período. É possível incluir até 3 métricas e 10 segmentos.
+Um relatório de coorte de [!UICONTROL retenção] registram os visitantes: cada célula de dados mostra o número bruto e a porcentagem de visitantes da coorte que realizaram a ação durante esse período. É possível incluir até 3 métricas e até 10 filtros.
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL Tabela de abandono]
 
-A coorte de [!UICONTROL churn] é o inverso da tabela de retenção e mostra os visitantes que abandonaram ou que nunca atenderam aos critérios de retorno da sua coorte ao longo do tempo. É possível incluir até 3 métricas e 10 segmentos.
+A coorte de [!UICONTROL churn] é o inverso da tabela de retenção e mostra os visitantes que abandonaram ou que nunca atenderam aos critérios de retorno da sua coorte ao longo do tempo. É possível incluir até 3 métricas e até 10 filtros.
 
 ![](assets/churn-report.png)
 
@@ -70,4 +70,3 @@ Crie coortes com base em uma dimensão selecionada, em vez de coortes com base e
 ![](assets/cohort-customizable-cohort-row.png)
 
 Para obter instruções sobre como configurar e executar um relatório de coorte, acesse [Configurar um relatório de análise de coorte](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
-
