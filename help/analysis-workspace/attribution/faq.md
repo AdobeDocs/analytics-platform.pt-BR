@@ -3,9 +3,9 @@ title: Perguntas frequentes sobre Atribuição
 description: Obtenha respostas para perguntas frequentes sobre atribuição.
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '308'
 ht-degree: 88%
 
 ---
@@ -53,4 +53,4 @@ O painel de atribuição é compatível com todas as dimensões. As métricas n�
 
 **Como a atribuição funciona com filtros?**
 
-A atribuição sempre é executada antes dos filtros e a segmentação é executada antes de qualquer outro filtro de relatório ser aplicado.
+A atribuição sempre é executada antes dos filtros e os filtros globais são executados antes de qualquer outro filtro de relatório ser aplicado.
