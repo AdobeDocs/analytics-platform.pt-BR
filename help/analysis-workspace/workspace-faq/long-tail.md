@@ -1,36 +1,36 @@
 ---
-title: Item de dimensão Longo
-description: Explica o item de dimensão "Cauda longa" e por que ele aparece no relatórios.
+title: Item de dimensão de Cauda Longa
+description: Explica o item de dimensão "Cauda longa" e por que ele aparece no relatório.
+exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
 translation-type: tm+mt
-source-git-commit: 3dc9d0d0a1f65a4205120895c35aa508f080c25d
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
 
 ---
 
+# Item de dimensão de Cauda Longa
 
-# Item de dimensão Longo
+Se você usar uma dimensão que contém um grande número de valores únicos, às vezes poderá ver um valor no relatório rotulado **[!UICONTROL Cauda longa]**. Esse item de dimensão significa que a arquitetura de relatórios que o CJA usa continha muitos valores únicos para ser processada.
 
-Se você usar uma dimensão que contém um grande número de valores únicos, às vezes você pode ver um valor no relatórios chamado **[!UICONTROL Cauda longa]**. Esse item de dimensão significa que a arquitetura do relatórios que o CJA usa continha muitos valores únicos para que fosse processada.
+## Arquitetura de processamento CJA e valores exclusivos
 
-## Arquitetura de processamento CJA e valores únicos
+O CJA processa relatórios no momento em que são executados, distribuindo o conjunto de dados combinado a vários servidores. Os dados por servidor de processamento são agrupados pela ID de pessoa, o que significa que um único servidor de processamento contém todos os dados de uma determinada pessoa. Depois que terminar o processamento, ele entregará seu subconjunto de dados processados a um servidor agregador. Todos os subconjuntos de dados processados são combinados e retornados no formato de um relatório do Workspace.
 
-O CJA processa relatórios no momento em que são executados, distribuindo o conjunto de dados combinado para vários servidores. Os dados por servidor de processamento são agrupados por ID de pessoa, o que significa que um único servidor de processamento contém todos os dados de uma determinada pessoa. Quando terminar o processamento, ele enviará seu subconjunto de dados processados para um servidor agregador. Todos os subconjuntos de dados processados são combinados e retornados na forma de um relatório do Workspace.
+Se qualquer servidor individual que esteja processando um subconjunto de dados encontrar mais de 500.000 itens de dimensão exclusivos, ele retornará os 500.000 itens de dimensão principais de seu próprio subconjunto e retornará o restante em &#39;[!UICONTROL Long Tail]&#39;. O item de dimensão &#39;[!UICONTROL Long Tail]&#39; visualizado em um relatório do Workspace é o total agregado de cada valor individual do servidor de processamento que excedeu 500 mil valores exclusivos.
 
-Se um servidor individual que processa um subconjunto de dados encontrar mais de 500.000 itens de dimensão únicos, ele retornará os 500.000 itens de dimensão principais de seu próprio subconjunto, em seguida, retornará o restante em &#39;[!UICONTROL Longo Cauda]&#39;. O item de dimensão &#39;[!UICONTROL Longa Cauda]&#39; visto em um relatório da Workspace é o total agregado de valores individuais de cada servidor de processamento que excederam 500 K de valores únicos.
+## Diferenças entre &quot;Longo caminho&quot; e &quot;Tráfego baixo&quot;
 
-## Diferenças entre &#39;Longa Cauda&#39; e &#39;Baixo Tráfego&#39;
+Em versões anteriores do Adobe Analytics, uma arquitetura de processamento diferente era usada. Os dados eram processados no momento em que eram coletados. Os itens de Dimension foram colocados em &quot;Tráfego baixo&quot; após uma dimensão ter atingido 500 K de valores únicos e aplicado uma filtragem mais agressiva em valores exclusivos de 1M. A contagem de valor único foi redefinida no início de cada mês. Os dados processados eram permanentes; não havia como obter dados existentes do &quot;Tráfego baixo&quot;.
 
-Nas versões anteriores do Adobe Analytics, uma arquitetura de processamento diferente era usada. Os dados eram processados no momento em que eram coletados. Os itens de Dimension foram colocados em &#39;Baixo tráfego&#39; depois que uma dimensão alcançou valores exclusivos de 500K e aplicou uma filtragem mais agressiva em valores exclusivos de 1M. A contagem de valores únicos foi redefinida no início de cada mês do calendário. Os dados processados eram permanentes; não havia como obter os dados existentes do &quot;tráfego baixo&quot;.
+No CJA, os itens de dimensão são colocados apenas em &quot;Cauda longa&quot; se um servidor de processamento individual contiver mais de 500 mil valores únicos. Os dados processados não são permanentes, o que significa que você pode reduzir o item de dimensão &quot;Cauda longa&quot; modificando seu relatório.
 
-No CJA, os itens de dimensão são colocados somente em &#39;Longa Cauda&#39; se um servidor de processamento individual contiver mais de 500K valores únicos. Os dados processados não são permanentes, o que significa que você pode reduzir o item de dimensão &#39;Longa Cauda&#39; modificando seu relatório.
+## Reduza o item de dimensão &quot;Cauda longa&quot;
 
-## Reduzir o item de dimensão &quot;Longa Cauda&quot;
+Se quiser reduzir o item de dimensão &quot;Cauda longa&quot;, o Adobe recomenda qualquer um dos seguintes:
 
-Se você quiser reduzir o item de dimensão &quot;Longa Cauda&quot;, o Adobe recomenda qualquer uma das seguintes opções:
+* Use um [filtro](/help/components/filters/create-filters.md). Os filtros se aplicam no momento em que cada servidor processa um subconjunto de dados. Limitar o número de valores únicos retornados reduz o item de dimensão &quot;Cauda longa&quot;.
+* Use uma dimensão de conjunto de dados de pesquisa. As dimensões do conjunto de dados de pesquisa combinam itens de dimensão do conjunto de dados do evento, que limitam o número de valores únicos retornados.
 
-* Use um [filtro](/help/components/filters/create-filters.md). Os filtros se aplicam no momento em que cada servidor processa um subconjunto de dados. A limitação do número de valores únicos que eles retornam reduz o item de dimensão &#39;Longa Cauda&#39;.
-* Use uma dimensão de conjunto de dados de pesquisa. As dimensões do conjunto de dados de pesquisa combinam itens de dimensão do conjunto de dados de evento, que limitam o número de valores únicos retornados.
-
-Em geral, é difícil consumir um relatório que contenha mais de 500 mil itens de dimensão exclusivos. Se você aplicar um segmento ou uma dimensão de conjunto de dados de pesquisa, poderá reduzir a presença de &quot;Longa Cauda&quot; enquanto facilita o consumo do relatório. A Adobe planeja melhorar essa experiência à medida que a CJA for desenvolvendo mais.
+Em geral, é difícil consumir um relatório que contém mais de 500 mil itens de dimensão exclusivos. Se você aplicar um filtro ou uma dimensão de conjunto de dados de pesquisa, poderá reduzir a presença de &quot;Longo caminho&quot; enquanto facilita o consumo de seu relatório. O Adobe pretende melhorar essa experiência à medida que o CJA for sendo desenvolvido.
