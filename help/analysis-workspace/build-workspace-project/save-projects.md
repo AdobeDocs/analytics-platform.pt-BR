@@ -1,10 +1,11 @@
 ---
 description: Saiba mais sobre as diferentes opções de salvar, incluindo salvar automaticamente, salvar como e salvar como modelo.
 title: Salvar projetos
-translation-type: ht
-source-git-commit: f01585ffdc0b54d1b21b035278869e59bd4947dc
-workflow-type: ht
-source-wordcount: '313'
+exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '303'
 ht-degree: 100%
 
 ---
@@ -21,7 +22,7 @@ Há diferentes ações de salvamento que podem ser feitas no menu **[!UICONTROL 
 |---|---| 
 | **[!UICONTROL Salvar]** | Salve as alterações no seu projeto. Se o projeto for compartilhado, os recipients do projeto também verão as alterações. Ao salvar seu projeto pela primeira vez, você será solicitado a fornecer um nome, uma descrição (opcional) e adicionar tags (opcional). |
 | **[!UICONTROL Salvar como]** | Crie um duplicado do seu projeto. O projeto original não será afetado. |
-| **[!UICONTROL Salvar como modelo]** | Salve seu projeto como um [modelo personalizado](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) que fica disponível para sua organização em **[!UICONTROL Projeto > Novo]** |
+| **[!UICONTROL Salvar como modelo]** | Salve seu projeto como um modelo personalizado que fica disponível para sua organização em **[!UICONTROL Projeto > Novo]** |
 
 ![](assets/save-project.png)
 
