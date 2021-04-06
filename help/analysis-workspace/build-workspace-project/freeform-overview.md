@@ -5,10 +5,10 @@ title: Visão geral dos Projetos
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: 18a76c92e37cf515dd02ebcebcc8d5e9d70a3ec0
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 94%
+source-wordcount: '1165'
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ A página da lista de projeto do Workspace contém as informações a seguir:
 
 | Elemento | Descrição |
 |---|---|
-| [Criar novo projeto](/help/analysis-workspace/home.md) | Clique neste link para iniciar um novo projeto do zero ou em um [modelo](/help/analysis-workspace/build-workspace-project/starter-projects.md) criado para você. |
+| [Criar novo projeto](/help/analysis-workspace/home.md) | Clique nesse link para criar um novo projeto a partir do zero. |
 | Gerenciar projetos | Clicar nesse link o direciona para o Gerenciador de componentes de projetos (**[!UICONTROL Analytics]** > **[!UICONTROL Componentes]** > **[!UICONTROL Projetos]**), que lista todos os projetos e permite marcar, compartilhar, excluir, renomear, aprovar e exportar projetos para CSV. |
 | Definir como página inicial | Transforma esta página em sua página inicial do Workspace. |
 | [Exibir tutoriais](/help/analysis-workspace/home.md) | Direciona você para os tutoriais em vídeo do Analysis Workspace. |
@@ -47,12 +47,12 @@ Em um projeto, o menu fornece opções para gerenciar o projeto, adicionar compo
 
 | Item de menu | Descrição |
 |---|---|
-| Projeto | Inclui ações comuns para o gerenciamento de projetos, incluindo Novo, Abrir, Salvar, Salvar como e [Salvar como modelo](/help/analysis-workspace/build-workspace-project/starter-projects.md). Você também pode atualizar o projeto inteiro para recuperar os dados e as definições mais recentes clicando em Atualizar projeto. A opção [Download de CSV e PDF](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=pt-BR) permite exportar dados do Workspace. [Informações e configurações do projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/freeform-overview.html?lang=pt-BR#info-settings) oferecem muitas opções para gerenciar seu projeto. |
+| Projeto | Inclui ações comuns para o gerenciamento de projetos, incluindo Novo, Abrir, Salvar, Salvar como e Salvar como modelo. Você também pode atualizar o projeto inteiro para recuperar os dados e as definições mais recentes clicando em Atualizar projeto. A opção [Download de CSV e PDF](/help/analysis-workspace/curate-share/download-send.md) permite exportar dados do Workspace. **Informações e configurações do projeto**  (veja abaixo) oferecem muitas opções para gerenciar o projeto. |
 | Editar | Desfazer ou refazer a última ação. Limpar tudo redefinirá seu projeto para um ponto de partida em branco. |
 | Inserir | Insira novos painéis ou visualizações nesse menu. Você também pode inserir novos painéis e visualizações no painel esquerdo. |
-| [Componentes](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=pt-BR) | Crie novos segmentos, métricas calculadas, intervalo de datas ou componentes de alerta do seu projeto. Você também pode criar novos componentes no painel esquerdo. Se as definições de componente foram alteradas recentemente, Atualizar componentes recuperará as definições mais recentes. |
-| [Compartilhar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/send-schedule-files.html?lang=pt-BR) | Você pode preparar, compartilhar e agendar projetos em PDF/CSV para recipients em sua organização. |
-| Ajuda | Acesse a documentação de ajuda, os vídeos e a comunidade da Experience League [do Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Gerencie a visibilidade das dicas do Workspace, bem como do [depurador](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Encontre detalhes sobre o Workspace e fatores que afetam o [desempenho](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/workspace-faq/optimizing-performance.html?lang=pt-BR) do projeto. |
+| [Componentes](/help/components/overview.md) | Crie novos filtros, métricas calculadas, intervalo de datas ou componentes de alerta do seu projeto. Você também pode criar novos componentes no painel esquerdo. Se as definições de componente foram alteradas recentemente, Atualizar componentes recuperará as definições mais recentes. |
+| [Compartilhar](/help/analysis-workspace/curate-share/send-schedule-files.md) | Prepare, compartilhe e agende projetos em PDF/CSV para recipients em sua organização. |
+| Ajuda | Acesse a documentação de ajuda, os vídeos e a comunidade da Experience League [do Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community). Gerencie a visibilidade das dicas do Workspace, bem como do [depurador](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Encontre detalhes sobre o Workspace e fatores que afetam o [desempenho](/help/analysis-workspace/workspace-faq/optimizing-performance.md) do projeto. |
 | Botão Compartilhar ou Proprietário | Se você estiver em um projeto Próprio ou Editar, o botão Compartilhar na parte superior direita oferecerá acesso com um clique para gerenciar os recipients do projeto. Se você estiver em uma função Duplicar ou Exibir do projeto, verá o nome do proprietário do projeto. |
 
 ### Informações e configurações do projeto {#info-settings}
@@ -106,7 +106,7 @@ As ações a seguir são comuns no Gerenciador de projetos e podem ser executada
 
 | Ação | Descrição |
 |---|---|
-| Adicionar | Crie um novo projeto do zero ou inicie com um [modelo](/help/analysis-workspace/build-workspace-project/starter-projects.md). |
+| Adicionar | Crie um novo projeto do zero. |
 | Marcar ou aprovar | Escolha &quot;Marcar&quot; ou &quot;Aprovar&quot; para organizar os projetos e facilitar a pesquisa. |
 | [Compartilhar](/help/analysis-workspace/curate-share/share-projects.md) | Disponibilize um projeto para outros usuários do Analysis Workspace em sua organização. |
 | Excluir | Exclua o projeto. |
