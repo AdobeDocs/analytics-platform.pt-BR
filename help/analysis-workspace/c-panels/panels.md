@@ -1,18 +1,18 @@
 ---
 description: Um painel é uma coleção de tabelas e visualizações
 title: Visão geral dos painéis
+exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 translation-type: tm+mt
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 86%
+ht-degree: 84%
 
 ---
 
-
 # Visão geral dos painéis
 
-Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode acessar os painéis por meio do ícone superior esquerdo no Workspace ou um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos, conjuntos de relatórios ou caso de uso de análise. Os seguintes tipos de painel estão disponíveis no Analysis Workspace:
+Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode acessar os painéis por meio do ícone superior esquerdo no Workspace ou um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). Painéis são úteis quando você deseja organizar seus projetos de acordo com períodos de tempo, visualizações de dados ou caso de uso de análise. Os seguintes tipos de painel estão disponíveis no Analysis Workspace:
 
 | Nome do painel | Descrição |
 | --- | --- |
@@ -41,15 +41,15 @@ A área suspensa do painel permite aplicar filtros de segmento e lista suspensa 
 
 ### Filtros de segmento
 
-Arraste e solte quaisquer Filtros do painel esquerdo na área suspensa do painel para começar a filtrar o painel.
+Arraste e solte quaisquer Filtros do painel esquerdo na área de soltar do painel para começar a filtrar o painel.
 
 ![](assets/segment-filter.png)
 
-### Filtros Ad-hoc
+### Filtros ad hoc
 
-Os componentes que não são de segmento também podem ser arrastados diretamente para a área de depósito para criar filtros ad-hoc, economizando tempo e esforço de ir para o Construtor de filtro. Filtros criados dessa forma são automaticamente definidos como filtros de nível de ocorrência. Essa definição pode ser modificada clicando no ícone de informações (i) ao lado do filtro, depois no ícone de edição em forma de lápis e editando-o no Construtor de filtro.
+Os componentes não segmentados também podem ser arrastados diretamente para a área de soltar para criar filtros ad-hoc, economizando tempo e esforço de ir para o Construtor de filtros. Os filtros criados dessa forma são definidos automaticamente como filtros de nível de ocorrência. Essa definição pode ser modificada ao clicar no ícone de informações (i) ao lado do filtro, em seguida no ícone de edição em forma de lápis e editá-lo no Construtor de filtros.
 
-Filtros ad-hoc são locais para o projeto e não aparecerão no painel esquerdo, a menos que você os torne públicos.
+Filtros ad-hoc são locais para o projeto e não serão exibidos no painel esquerdo, a menos que você os torne públicos.
 
 ![](assets/adhoc-segment-filter.png)
 
