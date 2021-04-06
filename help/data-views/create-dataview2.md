@@ -3,9 +3,9 @@ title: Como criar uma nova visualização de dados no Customer Journey Analytics
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 translation-type: tm+mt
-source-git-commit: 3c5cd2aa571d99b4c04aaf24b86d5e64fc8acec6
+source-git-commit: c021892119cbebccaa49e5c04fd7cc7450cce8c6
 workflow-type: tm+mt
-source-wordcount: '2813'
+source-wordcount: '2814'
 ht-degree: 11%
 
 ---
@@ -219,7 +219,7 @@ Também é possível filtrar por conjuntos de dados e por se um campo de esquema
 
 ## 3. Adicionar um filtro global à visualização de dados
 
-É possível adicionar filtros que se aplicam a toda a visualização de dados. Esse filtro será aplicado a qualquer relatório que você executar no Workspace.
+É possível adicionar filtros que se aplicam a toda a visualização de dados. Esse filtro será aplicado a qualquer relatório executado no Workspace.
 
 1. Clique na guia [!UICONTROL Settings] em [!UICONTROL Data views].
 1. Arraste um filtro da lista no painel à esquerda para o campo [!UICONTROL Add filters].
