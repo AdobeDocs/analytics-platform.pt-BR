@@ -3,10 +3,10 @@ title: Criar uma exibição de dados
 description: Descreve como criar uma visualização de dados para um conjunto de dados da plataforma no Customer Journey Analytics (CJA).
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 97%
+source-wordcount: '553'
+ht-degree: 94%
 
 ---
 
@@ -35,9 +35,9 @@ Antes de criar visualizações de dados, é necessário [configurar uma ou mais 
    | Descrição | Uma descrição detalhada não é obrigatória, mas é recomendada. |
    | Adicionar tags | As tags permitem organizar as visualizações de dados em categorias. |
    | Fuso horário | Escolha o fuso horário para a visualização de dados. |
-   | Tempo limite da sessão | Selecione a definição de &quot;sessão&quot;. A configuração de tempo limite de sessão define a quantidade de inatividade que um visitante único deve ter antes que uma nova sessão seja iniciada automaticamente. O padrão é 30 minutos. Por exemplo, se o tempo limite de sessão for definido para 45 minutos, um novo grupo de sessões será criado para cada sequência de ocorrências coletadas, separadas por 45 minutos de inatividade. <!--This setting impacts not only your visit counts, but also how visit segment containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
-   | Iniciar nova sessão com evento | Uma nova sessão começa quando um evento é acionado, independente do fato de uma sessão ter ultrapassado o tempo limite. A sessão recentemente criada inclui o evento que a iniciou. Além disso, é possível usar vários eventos para começar uma sessão e uma nova sessão é acionada se qualquer um desses eventos for observado nos dados. Esta configuração afetará a contagem de visitas, o contêiner de segmentação de sessões e a lógica de expiração de visitas nas dimensões. |
-   | Adicionar filtros | &quot;Filtros&quot; é o termo para &quot;segmentos&quot; no Customer Journey Analytics. Se você quiser filtrar os dados, arraste o filtro apropriado para cá a partir do painel esquerdo. Se você não selecionar um filtro, a visualização de dados conterá todos os dados. |
+   | Tempo limite da sessão | Selecione a definição de &quot;sessão&quot;. A configuração de tempo limite de sessão define a quantidade de inatividade que um visitante único deve ter antes que uma nova sessão seja iniciada automaticamente. O padrão é 30 minutos. Por exemplo, se o tempo limite de sessão for definido para 45 minutos, um novo grupo de sessões será criado para cada sequência de ocorrências coletadas, separadas por 45 minutos de inatividade. <!--This setting impacts not only your visit counts, but also how visit filter containers are evaluated, and the visit expiration logic for any eVars expiring on visit. Decreasing the session timeout will likely increase the total number of visits in your reporting, while increasing the visit timeout will likely decrease the total number of visits in your reporting. This needs to be reviewed.--> |
+   | Iniciar nova sessão com evento | Uma nova sessão começa quando um evento é acionado, independente do fato de uma sessão ter ultrapassado o tempo limite. A sessão recentemente criada inclui o evento que a iniciou. Além disso, é possível usar vários eventos para começar uma sessão e uma nova sessão é acionada se qualquer um desses eventos for observado nos dados. Essa configuração afetará a contagem de visitas, o contêiner de filtro Sessão (anteriormente Visita) e a lógica de expiração de visitas nas dimensões. |
+   | Adicionar filtros | Se você quiser filtrar os dados, arraste o filtro apropriado para cá a partir do painel esquerdo. Se você não selecionar um filtro, a visualização de dados conterá todos os dados. |
 
 1. Clique em **[!UICONTROL Continuar]**.
 
