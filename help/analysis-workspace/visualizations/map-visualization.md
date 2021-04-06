@@ -1,10 +1,10 @@
 ---
 description: Saiba como criar um mapa visual de qualquer métrica no Analysis Workspace.
 title: Mapa
-translation-type: ht
-source-git-commit: ab1ea4c75c4c28f196c6793a819ce4dbe656d52c
-workflow-type: ht
-source-wordcount: '632'
+translation-type: tm+mt
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+workflow-type: tm+mt
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
@@ -30,19 +30,6 @@ A visualização de mapa no Analysis Workspace
 
 1. Arraste uma métrica da lista de métricas (incluindo métricas calculadas).
 1. Especifique a fonte de dados da qual deseja desenhar. (Esta caixa de diálogo só será exibida se você tiver um rastreamento de localização ativado para os dados do aplicativo móvel.)
-
-<table id="table_CD54B433464B4282A7524FB187016C47"> 
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p><b>Lat/long móveis</b> </p> </td> 
-   <td colname="col2"> <p>Esta opção representa dados do aplicativo móvel. </p> <p>Você verá esta opção se ela estiver ativada para o conjunto de relatórios em <span class="ignoretag"> <span class="uicontrol"> Analytics </span> &gt; <span class="uicontrol"> Admin </span> &gt; <span class="uicontrol"> Conjuntos de relatórios </span> &gt; <span class="uicontrol"> &lt;selecionar conjunto de relatórios&gt; </span> &gt; <span class="uicontrol"> Editar configurações </span> &gt; <span class="uicontrol"> Gerenciamento móvel </span> &gt; <span class="uicontrol"> Ativar rastreamento de localização</span></span>. </p> <p>Esta é a configuração padrão (caso o rastreamento de localização esteja ativado). </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Dimensão geográfica</b> </p> </td> 
-   <td colname="col2"> <p>Esta opção representa dados de segmentação geográfica sobre a localização do visitante com base no endereço IP do visitante. Esses dados são transformados em País, Região e Cidade. Observe que eles não atingem o nível de DMA ou Código Postal. </p> <p>Quase todos os conjuntos de relatórios têm essa dimensão ativada. Se o seu não tiver, entre em contato com o Atendimento ao cliente da Adobe para ativar os relatórios geográficos. </p> </td> 
-  </tr> 
- </tbody> 
-</table>
 
 1. Clique em **[!UICONTROL Criar]**.
 
