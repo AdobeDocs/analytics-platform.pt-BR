@@ -1,14 +1,14 @@
 ---
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
+exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 92%
+source-wordcount: '926'
+ht-degree: 86%
 
 ---
-
 
 # Visão geral dos filtros
 
@@ -18,14 +18,11 @@ Os filtros podem ser baseados em atributos (tipo de navegador, dispositivo, núm
 
 Você pode criar e salvar filtros no Construtor de filtros ou gerar filtros de uma visualização de Fallout (no Workspace). Além disso, filtros podem ser usados juntos como filtros empilhados.
 
->[!IMPORTANT]
->Filtros são conhecidos como “segmentos” no Adobe Analytics. Renomeamos os segmentos para filtros porque a Adobe Experience Platform tem [uma definição diferente de “segmento”](https://docs.adobe.com/content/help/pt-BR/experience-platform/segmentation/home.html).
-
 A filtragem inclui o [Construtor de filtros](/help/components/filters/create-filters.md) para construir segmentos e executar um pré-teste, e o [Gerenciador de filtros](/help/components/filters/manage-filters.md) para coletar, marcar, aprovar, definir a segurança e compartilhar filtros na organização.
 
 ## Filtros sequenciais
 
-Os filtros sequenciais permitem identificar visitantes de acordo com a navegação e visualização de página no site, o que fornece um filtro de ações e interações definidas. Os segmentos sequenciais ajudam você a identificar o que um visitante gosta e o que um visitante evita. Ao construir filtros sequenciais, o operador ENTÃO é usado para definir e organizar a navegação do visitante.
+Os filtros sequenciais permitem identificar visitantes de acordo com a navegação e visualização de página no site, o que fornece um filtro de ações e interações definidas. Os filtros sequenciais ajudam você a identificar o que um visitante gosta e o que um visitante evita. Ao construir filtros sequenciais, o operador ENTÃO é usado para definir e organizar a navegação do visitante.
 
 Exemplo:
 
@@ -56,7 +53,7 @@ O contêiner Pessoa inclui cada visita e visualização de página de visitante 
 
 ### Contêiner sessão
 
-O contêiner Sessão permite identificar as interações de página, campanhas ou conversões de uma sessão da específica. O contêiner Sessão é o mais usado porque capta comportamentos para a sessão de visita inteira depois que a regra é atendida e permite definir quais sessões você deseja incluir ou excluir na criação e aplicação de um segmento. Ele pode ajudá-lo a responder a estas perguntas:
+O contêiner Sessão permite identificar as interações de página, campanhas ou conversões de uma sessão da específica. O contêiner Sessão é o mais usado porque capta comportamentos para a sessão de visita inteira depois que a regra é atendida e permite definir quais sessões você deseja incluir ou excluir na criação e aplicação de um filtro. Ele pode ajudá-lo a responder a estas perguntas:
 
 * Quantos visitantes visualizaram a seção Notícias e Esportes na mesma sessão?
 * Quais páginas contribuíram para uma conversão bem-sucedida em uma venda?
@@ -82,7 +79,7 @@ Os contêineres de evento contam com detalhamentos de página única com base em
 
 ## Modelo de filtro pronto para uso
 
-O Analytics tradicional vem com muitos segmentos de modelo (filtros) e métricas calculadas prontos para uso. Muitas delas não se aplicam ao CJA ou precisarão ser renomeadas ou recriadas. Outros dependerão de uma solução para variáveis sensíveis ao contexto no CJA.
+O Analytics tradicional vem com vários filtros de modelo (filtros) e métricas calculadas prontos para uso. Muitas delas não se aplicam ao CJA ou precisarão ser renomeadas ou recriadas. Outros dependerão de uma solução para variáveis sensíveis ao contexto no CJA.
 
 | Nome do filtro | Descrição |
 | --- | --- |
