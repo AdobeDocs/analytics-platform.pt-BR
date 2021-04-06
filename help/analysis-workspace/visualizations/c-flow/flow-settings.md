@@ -1,14 +1,14 @@
 ---
-description: Configurações para a visualização Fluxo no Workspace
+description: Configurações da visualização de Fluxo no Workspace
 title: Configurações de fluxo
+exl-id: 85de8ee7-b79f-4ac4-9601-a4e7f6fb3b2a
 translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 97%
+ht-degree: 88%
 
 ---
-
 
 # Configurações de fluxo
 
@@ -23,7 +23,7 @@ ht-degree: 97%
 | --- | --- |
 | Concentre-se neste nó | Altere o foco para o nó selecionado. O nó de foco é exibido no centro do diagrama de fluxo. |
 | Recomeçar | Retomar ao criador de diagrama de Forma livre, no qual você pode criar um novo diagrama de Fluxo. |
-| Criar segmentos a partir deste ponto no fluxo | Criar um segmento. Isso leva você ao Construtor de segmentos, onde você pode configurar o novo segmento. |
+| Criar filtro a partir deste ponto no fluxo | Criar um filtro. Isso leva você ao Construtor de filtros, onde é possível configurar o novo filtro. |
 | Detalhamento | Detalhe o nó por Dimensões, Métricas ou Tempo disponíveis. |
 | Tendência | Crie um diagrama de tendências para o nó. |
 | Expandir toda a coluna | Expanda uma coluna para exibir todos os nós. Por padrão, somente os cinco principais nós são exibidos. |
