@@ -3,10 +3,10 @@ description: Saiba mais sobre as opções Desfazer e Refazer no Analysis Workspa
 title: Configurações Desfazer e Refazer
 uuid: a4dbc169-5fd7-4383-aee0-6b5ba1c235ab
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,6 @@ ht-degree: 100%
 * Limpar tudo
 * Período
 * Análise de contribuição
-* Comparação de segmentos
 * Nome do projeto
 * Adicionar ou remover uma visualização
 * Abrir ou fechar um painel ou uma visualização
@@ -45,7 +44,7 @@ ht-degree: 100%
 * Opções de clique com o botão direito do mouse de Forma livre
 * Seleção
 * Seleção da legenda da visualização
-* Adicionar um segmento a um painel
+* Adicionar um filtro a um painel
 * Configurações de visualização em gráficos
 * Editar etiquetas de legenda
 * Visualização mágica
@@ -63,9 +62,9 @@ ht-degree: 100%
 
 * Informações do projeto e alterações em configurações (Adicionar tags, Alterar descrição, Configuração de contagem de instâncias repetidas)
 * Definir como página inicial
-* Adicionar novo (Segmento/Métrica/Intervalo de datas/Alerta)
+* Adicionar novo (Filtro/Métrica/Intervalo de datas/Alerta)
 * Compartilhar projeto, Obter link do projeto, Enviar arquivo (Agora ou Agendar)
-* Criar segmento para este caminho na Visualização de fluxo
+* Criar filtro para este caminho na Visualização de fluxo
 * Criar métrica calculada
 * Criar intervalo de datas
 
