@@ -2,10 +2,10 @@
 description: Crie um projeto e adicione componentes (dimensões, métricas, segmentos, intervalos de data) ao painel de forma livre.
 keywords: Analysis Workspace
 title: Criar um projeto do Workspace
-translation-type: ht
-source-git-commit: 7b9a65c865a3ae8803534a10fc1a2431247be091
-workflow-type: ht
-source-wordcount: '751'
+translation-type: tm+mt
+source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+workflow-type: tm+mt
+source-wordcount: '753'
 ht-degree: 100%
 
 ---
@@ -115,7 +115,7 @@ Esse artigo explica os elementos da interface do Analysis Workspace e mostra com
   </tr> 
   <tr> 
    <td colname="col1"> Segmentos (azul) </td> 
-   <td colname="col2"> <p>Podem ser arrastados somente no nível do painel, mas você pode criar segmentos em linha na tabela de dados. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Consulte  <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segmentos </a> para obter mais informações. </p> </td> 
+   <td colname="col2"> <p>Podem ser arrastados somente no nível do painel, mas você pode criar segmentos em linha na tabela de dados. </p> <p><img  src="assets/segments.png" id="image_5674B18BC3AB47A2B1FEE584E0FBF47C" /> </p> <p>Consulte <a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Segmentos </a> para obter mais informações. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Intervalos de datas e granularidades (roxo) </td> 
@@ -124,9 +124,9 @@ Esse artigo explica os elementos da interface do Analysis Workspace e mostra com
  </tbody> 
 </table>
 
-**[Visualizações](/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
+**[Visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)**
 
-O painel [!UICONTROL Visualizações] oferece gráficos, roscas, tabelas de dados, tabelas de [coorte](/help/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), diagramas de Venn padrão do Analytics e assim por diante. Você pode arrastar e soltar várias visualizações em seu projeto.
+O painel [!UICONTROL Visualizações] oferece gráficos, roscas, tabelas de dados, tabelas de [coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), diagramas de Venn padrão do Analytics e assim por diante. Você pode arrastar e soltar várias visualizações em seu projeto.
 
 ![Resultado da etapa](assets/visualizations.png)
 
@@ -149,11 +149,11 @@ O menu de opções permite executar as seguintes ações, que dependem da célul
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Adicionar coluna de período</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Adicionar coluna de período</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Comparar períodos</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/calendar-date-ranges/time-comparison.md"  > Comparar períodos</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -169,7 +169,7 @@ O menu de opções permite executar as seguintes ações, que dependem da célul
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > Detalhamento</a> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/dimensions/t-breakdown-fa.md"  > Detalhamento</a> 
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">Dimensões </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">Métricas </li> 
@@ -179,23 +179,23 @@ O menu de opções permite executar as seguintes ações, que dependem da célul
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualizar</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualizar</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/curate-share/download-send.md"  > Baixar como CSV</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/curate-share/download-send.md"  > Baixar como CSV</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/home.md"  > Colocar seleção em tendência</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/home.md"  > Colocar seleção em tendência</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/components/t-freeform-project-segment.md"  > Criar segmento a partir da seleção</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Criar segmento a partir da seleção</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analyze/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > Executar comparação intrassegmento</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/c-panels/c-segment-comparison/segment-comparison.md"  > Executar comparação intrassegmento</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
@@ -209,4 +209,4 @@ O menu de opções permite executar as seguintes ações, que dependem da célul
  </tbody> 
 </table>
 
-Consulte [Interações de teclado e mouse disponíveis no Analysis Workspace](/help/analyze/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) para obter informações sobre a cópia e a seleção de linhas.
+Consulte [Interações de teclado e mouse disponíveis no Analysis Workspace](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) para obter informações sobre a cópia e a seleção de linhas.
