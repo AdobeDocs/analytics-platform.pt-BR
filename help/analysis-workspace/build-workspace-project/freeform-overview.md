@@ -5,7 +5,7 @@ title: Visão geral dos Projetos
 uuid: a68be05d-f31e-4e6d-ad04-c784ecb0eb00
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 translation-type: tm+mt
-source-git-commit: 18a76c92e37cf515dd02ebcebcc8d5e9d70a3ec0
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 90%
@@ -80,7 +80,7 @@ Em um projeto, [painéis](/help/analysis-workspace/c-panels/panels.md), tabelas,
 
 Também é possível acessar visualizações e painéis no [Painel em branco](/help/analysis-workspace/c-panels/blank-panel.md).
 
-Os componentes (Dimension, Métricas, Segmentos, Intervalos de datas) no painel à esquerda estão relacionados à visualização de dados do painel ativo. O painel ativo terá uma borda azul ao seu redor e a exibição de dados ativa será listada na parte superior do painel do componente.
+Os componentes (Dimension, Métricas, Filtros, Intervalos de datas) no painel à esquerda estão relacionados à visualização de dados do painel ativo. O painel ativo terá uma borda azul ao seu redor e a exibição de dados ativa será listada na parte superior do painel do componente.
 
 ![](assets/left-rail.png)
 
