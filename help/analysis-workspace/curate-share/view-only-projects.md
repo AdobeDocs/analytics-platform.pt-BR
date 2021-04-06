@@ -1,15 +1,15 @@
 ---
 description: Projetos somente visualização no Workspace
-keywords: View-only projects
+keywords: Projetos do somente para visualização
 title: Projetos do somente para visualização
+exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 100%
 
 ---
-
 
 # Projetos do somente para visualização
 
@@ -26,7 +26,6 @@ Você pode compartilhar projetos &quot;somente para visualização&quot; com os 
 As interações desativadas em um projeto somente visualização incluem:
 
 * Painel esquerdo oculto
-* Conjunto de relatórios
 * Intervalo de datas do calendário do painel. Observação: se quiser conceder o controle do calendário aos recipients, adicione um [filtro suspenso com intervalo de datas](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
 * Filtragem de forma livre
 * Número de formas livres de linhas visíveis
@@ -44,4 +43,4 @@ Algumas das interações ativadas mais importantes em um projeto somente visuali
 | Tabela de forma livre | <ul><li>Paginação e classificação</li><li>Passagem</li><li>Seleções de células que atualizam visualizações vinculadas</li><li>Clique com o botão direito do mouse em > Obter link de visualização</li><li>Clique com o botão direito do mouse em > Copiar para a área de transferência</li></ul> |
 | Visualizações | <ul><li>Clicar para ativar/desativar legenda</li><li>Passagem</li><li>Clique com o botão direito do mouse em > Obter link de visualização</li><li>Recolher/expandir</li><li>Fluxo - expandir nós de fluxo</li><li>Mapa - zoom</li></ul> |
 | Painéis | <ul><li>Filtros suspensos interativos</li><li>Clique com o botão direito do mouse em > Obter link do painel</li><li>Recolher/expandir</li></ul> |
-| Projeto | <ul><li>Como inspecionar todos os ícones de informações</li><li>Menu Projeto - Novo, Abrir, Definir como landing page, Atualizar, Baixar CSV/PDF, Informações e configurações limitadas do projeto</li><li>Menu Compartilhar - Obter link do projeto, Enviar arquivo agora</li><li>Menu Ajuda - Todas as ações, exceto as opções de Dicas e Depurador</li></ul> |
+| Projeto | <ul><li>Como inspecionar todos os ícones de informações</li><li>Menu Projeto - Novo, Abrir, Definir como página inicial, Atualizar, Baixar CSV/PDF, Informações e configurações limitadas do projeto</li><li>Menu Compartilhar - Obter link do projeto, Enviar arquivo agora</li><li>Menu Ajuda - Todas as ações, exceto as opções de Dicas e Depurador</li></ul> |
