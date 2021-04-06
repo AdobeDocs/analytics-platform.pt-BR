@@ -1,14 +1,14 @@
 ---
 title: Gerenciar filtros
 description: saiba como gerenciar filtros no Customer Journey Analytics
+exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 translation-type: tm+mt
-source-git-commit: b521079bb9b3828ec3487b635366f5442f6fc4bd
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 96%
+source-wordcount: '1094'
+ht-degree: 94%
 
 ---
-
 
 # Gerenciar filtros
 
@@ -16,7 +16,7 @@ O Gerenciador de filtros oferece várias formas de cuidar de segmentos, como com
 
 O Gerenciador de filtros mostra todos os seus filtros e os compartilhados com você. Os usuários de nível administrativo podem visualizar todos os filtros na organização. Essa visão geral apresenta a interface do usuário e os recursos do Gerenciador de filtros.
 
-Acesse o Gerenciador de filtro indo até **[!UICONTROL Análise de jornada do cliente]** > **[!UICONTROL Componentes]** > **[!UICONTROL Filtros]** na navegação superior.
+Acesse o Gerenciador de filtros indo até **[!UICONTROL Análise de Jornada do cliente]** > **[!UICONTROL Componentes]** > **[!UICONTROL Filtros]** na navegação superior.
 
 ## IU do Gerenciador de filtros
 
@@ -28,7 +28,6 @@ Acesse o Gerenciador de filtro indo até **[!UICONTROL Análise de jornada do cl
 | 2 | Caixas de seleção | Marque um filtro para gerenciá-lo. |
 | 4 | Favoritos | Ao clicar na estrela ao lado de um filtro, ela fica amarela e marca o filtro como favorito. |
 | 5 | Título e descrição | Fornecidos no Construtor de filtros. Para editar o título e a descrição, clique no link de título; isso leva você até o Construtor de filtros. |
-| 6 | Conjuntos de relatórios | Essa coluna indica em qual conjunto de relatórios o filtro foi salvo pela última vez. |
 | 7 | Proprietário | Indica quem é o proprietário do filtro. Como um usuário não administrativo, você pode ver somente os filtros que possui ou que foram compartilhados com você. |
 | 8 | Tags (não marcadas no seletor de colunas, portanto, a coluna não aparece) | Tags aplicadas ao filtro, por você ou outras pessoas que compartilharam o filtro com você. |
 | 9 | Compartilhado com | Lista indivíduos ou grupos (somente Administrador) ou Todos (somente Administrador) com os quais você compartilhou o filtro. |
@@ -36,7 +35,7 @@ Acesse o Gerenciador de filtro indo até **[!UICONTROL Análise de jornada do cl
 | 11 | Seletor de coluna | (Parte superior direita) Permite selecionar quais colunas serão exibidas no Gerenciador de filtros. |
 | 12 | Ícone Compartilhado | Indica que este filtro foi compartilhado por você ou com você. |
 | 13 | Ícone Aprovado | Indica que o filtro foi aprovado pelo Administrador. |
-| 14 | Outros filtros | Permite que você veja os filtros em Tags, Conjuntos de relatórios, Proprietários e Outros (Exibir tudo, Meus, Compartilhados comigo, Aprovados, Favoritos). |
+| 14 | Outros filtros | Permite que você visualize filtros por Tags, Visualizações de dados, Proprietários e Outros (Mostrar tudo, Meu, Compartilhado comigo, Aprovado, Favoritos). |
 
 ## Planejar filtros
 
@@ -93,7 +92,7 @@ Esta é a forma de marcar um filtro como aprovado:
 
 1. No Gerenciador de filtros, marque a caixa de seleção à esquerda do título do Filtro.
 
-1. Clique em **[!UICONTROL Aprovar]** na barra de tarefa do gerenciamento de filtros.
+1. Clique em **[!UICONTROL Aprovar]** na barra de tarefas do gerenciamento de filtro.
 
 1. Considere compartilhar os segmentos aprovados na organização.
 
@@ -138,4 +137,3 @@ Outra maneira de organizá-los para facilitar o uso é marcar os segmentos como 
 1. No Gerenciador de filtros, marque a estrala ao lado de qualquer filtro que você deseja marcar como favorito. A estrela fica amarela ao selecioná-la.
 
 1. Você também pode filtrar por favoritos em Filtros > Outros filtros > Favoritos.
-
