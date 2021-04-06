@@ -4,16 +4,16 @@ keywords: Preparação do Analysis Workspace
 title: Preparar projetos do
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 translation-type: tm+mt
-source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 47%
+ht-degree: 44%
 
 ---
 
 # Preparar projetos do
 
-A preparação permite limitar os componentes (dimensões, métricas, segmentos, intervalos de datas) antes de compartilhar um projeto. Quando um recipient abrir o projeto, ele verá um conjunto limitado de componentes que você preparou para eles. A preparação é uma etapa opcional, mas recomendada, antes de compartilhar um projeto.
+A preparação permite limitar os componentes (dimensões, métricas, filtros, intervalos de datas) antes de compartilhar um projeto. Quando um recipient abrir o projeto, ele verá um conjunto limitado de componentes que você preparou para eles. A preparação é uma etapa opcional, mas recomendada, antes de compartilhar um projeto.
 
 >[!NOTE]
 > Os perfis de produto são o principal mecanismo que controla os componentes que um usuário pode ver. Eles são gerenciados por meio do [Adobe Experience Cloud Admin Console](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/admin-getting-started.html). A Preparação é um filtro secundário.
