@@ -1,14 +1,14 @@
 ---
 title: Visão geral do Customer Journey Analytics
 description: Saiba como o Customer Journey Analytics permite usar o Analysis Workspace com dados da Experience Platform.
+exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 translation-type: tm+mt
-source-git-commit: 0f5e9c117f12ef070733df032b078ad70ce7c52b
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 97%
+source-wordcount: '1217'
+ht-degree: 95%
 
 ---
-
 
 # Visão geral do Customer Journey Analytics
 
@@ -19,7 +19,7 @@ O Customer Journey Analytics é um recurso do Analytics que permite usar o poten
 O Customer Journey Analytics expande o escopo do Analytics, oferecendo recursos fáceis de usar entre canais e removendo limitações em versões anteriores do Adobe Analytics. Estas são algumas melhorias notáveis:
 
 * **Variáveis e eventos ilimitados**: os conceitos de eVars, props e eventos não existem mais. Os dados se concentram principalmente em dimensões e métricas. Os conjuntos de dados podem ter uma quantidade ilimitada de dimensões e métricas exclusivas.
-* **Valores únicos ilimitados**: a Adobe Experience Platform não está restrita a qualquer limitação exclusiva, como os valores únicos de 500k nos conjuntos de relatórios tradicionais.
+* **Valores** exclusivos ilimitados: O Adobe Experience Platform não está restrito a qualquer limitação exclusiva.
 * **Alterar dados históricos**: com a Adobe Experience Platform, os dados podem ser removidos ou corrigidos.
 * **Dados entre conjuntos de relatórios**: as implementações existentes de vários conjuntos de dados podem ser combinadas na Platform.
 
@@ -74,7 +74,7 @@ Os não administradores de produto (usuários) no Customer Journey Analytics nã
 Vários recursos no CJA foram renomeados, em comparação ao Adobe Analytics tradicional, para alinhar-se aos padrões do setor. Alguns termos atualizados incluem:
 
 * Os segmentos agora são conhecidos como “Filtros”.
-* Os Conjuntos de relatórios virtuais agora são conhecidos como “Visualizações”.
+* Os Conjuntos de relatórios virtuais agora são conhecidos como &quot;Visualizações de dados&quot;.
 * As classificações agora são conhecidas como “Conjuntos de dados de pesquisa”.
 * Os atributos do cliente agora são conhecidos como “Conjuntos de dados de perfil”.
 * Os contêineres de ocorrência agora são conhecidos como Contêineres de “eventos”.
