@@ -2,16 +2,16 @@
 description: Exemplos de casos de uso da análise de coorte.
 keywords: Analysis Workspace
 title: Casos de uso da análise de coorte
-topic: Reports and analytics
+topic: Reports and Analytics
 uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
+exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 100%
+source-wordcount: '966'
+ht-degree: 82%
 
 ---
-
 
 # Casos de uso da [!UICONTROL análise de coorte]
 
@@ -51,9 +51,9 @@ Ao reconhecer que não pode perder os possíveis clientes em três meses, você 
 
 Verifique novamente o seu relatório de análise de coorte alguns meses depois. Para os grupos formados após o lançamento da campanha, a conversão para assinaturas pagas da Creative Cloud no terceiro mês subiu de 4-5% para 13-14%, resultando em centenas de milhares de dólares por coorte, para cada coorte mensal que atingir três meses a partir desse ponto em diante.
 
-## Caso de uso de segmentos de coorte complexos
+## Caso de uso de filtros de coorte complexos
 
-Uma grande cadeia de hotéis tem como alvo vários grupos de clientes para promoções e os monitora em relação ao desempenho. Para identificar os melhores grupos de coortes de usuário para fins de direcionamento, deve-se criar grupos de coorte muito específicos. Usando os critérios aumentados de [!UICONTROL Inclusão] e [!UICONTROL Retorno] aumentados em Tabelas de [!UICONTROL coorte], é possível definir os grupos de coorte ideais com várias métricas e segmentos para identificar grupos de clientes com baixo desempenho, para direcionar a tais grupos promoções e ofertas para aumentar a taxa de reservas.
+Uma grande cadeia de hotéis tem como alvo vários grupos de clientes para promoções e os monitora em relação ao desempenho. Para identificar os melhores grupos de coortes de usuário para fins de direcionamento, deve-se criar grupos de coorte muito específicos. Usando os critérios aumentados de [!UICONTROL Inclusão] e [!UICONTROL Retorno] nas tabelas de [!UICONTROL Coorte], é possível definir os agrupamentos de coorte ideais com várias métricas e filtros para identificar grupos de clientes com baixo desempenho, a fim de direcionar a tais grupos promoções e ofertas para aumentar as reservas.
 
 ## Caso de uso de preferência de versão do aplicativo
 
@@ -65,8 +65,8 @@ Uma empresa de mídia multinacional usa campanhas direcionadas para direcionar u
 
 ## Caso de uso de lançamento de produto
 
-Uma grande varejista de vestuário tem muitos segmentos de clientes específicos que geram grandes parcelas de receita para seus negócios. Cada segmento tem produtos específicos projetados e criados com o segmento em mente. A cada lançamento de produto, a empresa quer saber como o novo produto impulsionou as vendas para vários coortes ao longo do tempo. Usando a nova configuração de [!UICONTROL Tabela de latência] na [!UICONTROL Análise de coorte], é possível analisar o comportamento e a receita de pré-lançamento e pós-lançamento de um determinado segmento de cliente. Usando essas informações, pode-se identificar quais produtos estão gerando novas receitas e quais não estão ganhando força com os clientes.
+Um grande varejista de vestuário tem muitos filtros de cliente específicos que impulsionam grandes porções de receita para seus negócios. Cada filtro tem produtos específicos projetados e criados com o filtro em mente. A cada lançamento de produto, a empresa quer saber como o novo produto impulsionou as vendas para vários coortes ao longo do tempo. Usando a nova configuração [!UICONTROL Tabela de latência] em [!UICONTROL Análise de coorte], é possível analisar o comportamento e a receita de pré-lançamento e pós-lançamento de um determinado filtro de cliente. Usando essas informações, pode-se identificar quais produtos estão gerando novas receitas e quais não estão ganhando força com os clientes.
 
 ## Caso de uso de adesão individual: usuários mais fiéis
 
-Uma grande companhia aérea obtém a maior parte de seu sucesso e receita por meio de clientes repetidos e fiéis. Em muitos casos, seus viajantes fiéis compõem a maior parte de sua receita e manter esses clientes é fundamental para o sucesso a longo prazo. Identificar os clientes mais leais e consistentes pode ser difícil. Entretanto, usando a nova configuração [!UICONTROL Cálculo contínuo] na [!UICONTROL Análise de coorte], foi possível analisar segmentos de clientes fiéis e descobrir quais viajantes eram compradores repetidos mês a mês. Então, foi possível direcionar a esses viajantes recompensas e benefícios por sua fidelidade. Além disso, ao alternar o tipo de coorte de retenção para rotatividade (churn), também pode-se identificar quais clientes não eram compradores recorrentes mês a mês e direcionar esses segmentos com promoções, a fim de retomar o engajamento e garantir que permanecessem fiéis no futuro.
+Uma grande companhia aérea obtém a maior parte de seu sucesso e receita por meio de clientes repetidos e fiéis. Em muitos casos, seus viajantes fiéis compõem a maior parte de sua receita e manter esses clientes é fundamental para o sucesso a longo prazo. Identificar os clientes mais leais e consistentes pode ser difícil. No entanto, usando a nova configuração [!UICONTROL Cálculo contínuo] em [!UICONTROL Análise de coorte], foi possível analisar filtros de clientes fiéis e descobrir quais viajantes eram compradores repetidos mês a mês. Então, foi possível direcionar a esses viajantes recompensas e benefícios por sua fidelidade. Além disso, ao alternar o tipo de coorte de retenção para rotatividade, também foi possível identificar quais clientes não eram compradores repetidos mês a mês e direcionar esses filtros com promoções para reengajar-se com eles e garantir que permanecessem fiéis no futuro.
