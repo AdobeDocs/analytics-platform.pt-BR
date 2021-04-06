@@ -3,17 +3,17 @@ description: Crie um projeto e adicione componentes (dimensões, métricas, segm
 keywords: Analysis Workspace
 title: Criar um projeto do Workspace
 translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 100%
+source-wordcount: '672'
+ht-degree: 95%
 
 ---
 
 
 # Criar um projeto do Workspace
 
-Crie um projeto e adicione componentes (dimensões, métricas, segmentos, intervalos de data) ao painel de forma livre.
+Crie um projeto e adicione componentes (dimensões, métricas, filtros, intervalos de datas) ao painel de forma livre.
 
 Esse artigo explica os elementos da interface do Analysis Workspace e mostra como criar um projeto.
 
@@ -36,8 +36,7 @@ Esse artigo explica os elementos da interface do Analysis Workspace e mostra com
    Você pode criar um projeto a partir de
 
 * Um projeto em branco (padrão). Para obter instruções, consulte abaixo.
-* Um modelo padrão. Esses modelos são criados pela Adobe e enviados para o recurso instantâneo. Para obter instruções, consulte [Modelos](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
-* Um modelo personalizado. Esses modelos são criados por usuários com direitos de administrador. Para obter instruções, consulte [Modelos](/help/analyze/analysis-workspace/build-workspace-project/starter-projects.md)
+* Um modelo personalizado. Esses modelos são criados por usuários com direitos de administrador.
 
    ![](assets/start_modal.png)
 
@@ -49,10 +48,6 @@ Esse artigo explica os elementos da interface do Analysis Workspace e mostra com
    Um projeto em branco é exibido, mostrando um painel de forma livre e uma visualização da tabela de dados.
 
    ![](assets/fa_project_new.png)
-
-   >[!NOTE]
-   >
-   >Algumas vezes, a mensagem “Conjunto de relatórios incompatível” é mostrada ao carregar um projeto (ou alternar para um conjunto de relatórios) em que nem todos os componentes (métricas/dimensões) incluídos no projeto estão incluídos no conjunto de relatórios. É possível ver uma lista de componentes incompatíveis para que você saiba por que está recebendo a mensagem.
 
 <table id="table_3989E45D9D4241CBB2E58B29DA257B2F"> 
  <thead> 
@@ -89,7 +84,7 @@ Esse artigo explica os elementos da interface do Analysis Workspace e mostra com
    >
    >Depois de copiar/salvar como, os intralinks agora são do projeto em que estão, não do projeto original do qual foram copiados.
 
-## Adicionar Componentes e Visualizações {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
+## Adicionar componentes e visualizações {#task_CDAC9B3007BE4A3790AFAD3746D669B1}
 
 1. Crie seu projeto arrastando *`components`* e *`visualizations`* para o projeto.
 
@@ -134,7 +129,7 @@ O painel [!UICONTROL Visualizações] oferece gráficos, roscas, tabelas de dado
 
 1. Etapa
 
-## Use o menu de clique com botão direito para Personalizar os dados {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## Use o menu de contexto para personalizar seus dados {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 O menu de opções permite executar as seguintes ações, que dependem da célula na tabela na qual você clicou com o botão direito do mouse.
 
@@ -173,7 +168,7 @@ O menu de opções permite executar as seguintes ações, que dependem da célul
     <ul id="ul_18C83B8514AD4C1C86C071AA8402CB5C"> 
      <li id="li_6CA84ED293EA4940A7495DA9D9121264">Dimensões </li> 
      <li id="li_EA16EE017B2E4A6998918706938A21BF">Métricas </li> 
-     <li id="li_0405D339CD01405DB508A7D8D1A976B4">Segmentos </li> 
+     <li id="li_0405D339CD01405DB508A7D8D1A976B4">Filtros </li> 
      <li id="li_819CE81C552F49BB9C1B83ED3B42C5F7">Hora </li> 
     </ul> </td> 
    <td colname="col2"> </td> 
@@ -191,7 +186,7 @@ O menu de opções permite executar as seguintes ações, que dependem da célul
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Criar segmento a partir da seleção</a> </td> 
+   <td colname="col1"><a href="/help/analysis-workspace/components/t-freeform-project-segment.md"  > Criar filtro a partir da seleção</a> </td> 
    <td colname="col2"> </td> 
   </tr> 
   <tr> 
