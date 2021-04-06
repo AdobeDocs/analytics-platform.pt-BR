@@ -1,15 +1,15 @@
 ---
 description: Compartilhamento de projetos e funções de projeto no Workspace
-keywords: Analysis Workspace sharing
+keywords: Compartilhamento Analysis Workspace
 title: Compartilhar projetos
+exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 100%
+source-wordcount: '1138'
+ht-degree: 98%
 
 ---
-
 
 # Compartilhar projetos
 
@@ -52,9 +52,9 @@ Para adicionar recipients ao seu projeto compartilhado:
 Se houver alterações não salvas, você deverá salvar o projeto primeiro.
 1. Adicione recipients ou grupos de recipients.
 Consulte o ícone de ajuda na parte superior para obter descrições de cada função.
-1. (Opcional) Compartilhar componentes de projeto incorporados (segmentos, métricas calculadas e intervalos de data) com todos os destinatários.
+1. (Opcional) Compartilhe componentes de projeto incorporados (filtros, métricas calculadas e intervalos de datas) com todos os destinatários.
 Após compartilhados, esses componentes aparecem no menu suspenso de componentes do Workspace do recipient. Observe que essa configuração não persiste: é uma ação única no momento do compartilhamento.
-1. (Opcional) Defina esta página como a landing page para recipients.
+1. (Opcional) Defina esta página como a página inicial para recipients.
 Essa configuração não persiste: é uma ação única no momento do compartilhamento.
 1. Clique em Compartilhar.
 Você também pode clicar em **[!UICONTROL Preparar e compartilhar]** para aplicar automaticamente a preparação do projeto. Se um projeto já tiver sido compartilhado, esses botões dirão **[!UICONTROL Atualizar]** e **[!UICONTROL Preparar e atualizar]**. Saiba mais sobre [Preparação de projeto](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/curate-share/curate.html).
