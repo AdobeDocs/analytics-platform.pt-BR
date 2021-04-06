@@ -1,15 +1,15 @@
 ---
-description: Interações de teclado, teclas de atalho e comportamentos para apontar e clicar em comportamentos disponíveis no Analysis Workspace.
+description: Interações de teclado, teclas de atalho e comportamentos para apontar e clicar disponíveis no Analysis Workspace.
 keywords: Analysis Workspace
 title: Teclas de atalho (atalhos)
+exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 100%
 
 ---
-
 
 # Teclas de atalho (atalhos)
 
@@ -39,26 +39,23 @@ Observação: `CTRL` = Windows e `command` = Mac
 | Criar um alerta | ctrl (ou cmd) + shift + a |
 | Criar métrica calculada | ctrl (ou cmd) + shift + c |
 | Criar um intervalo de datas | ctrl (ou cmd) + shift + d |
-| Criar um segmento | ctrl (ou cmd) + shift + e |
+| Criar um filtro | ctrl (ou cmd) + shift + e |
 | Limpar tudo | alt + w |
 | Copiar | ctrl (ou cmd) + c |
 | Refazer | ctrl (ou cmd) + shift + z |
 | Desfazer | ctrl (ou cmd) + z |
 | Atualizar componentes | alt + shift + r |
 | Atualizar projeto | alt + r |
-| Definir como página de aterrissagem | ctrl (ou cmd) + shift + l |
+| Definir como página inicial | ctrl (ou cmd) + shift + l |
 
 ## Adicionar painéis e ações de visualização
 
 | Ação | Atalho |
 |---|---|
-| Novo painel Analytics for Target | alt + g |
 | Novo painel de atribuição | alt + e |
 | Novo painel em branco | alt + b |
 | Novo painel de forma livre | alt + a |
-| Painel de visualizadores simultâneos de novas mídias | alt + h |
 | Novo painel Quick Insights | alt + f |
-| Novo painel de Comparação de segmentos | alt + c |
 | Nova tabela de forma livre | alt + 1 |
 | Novo gráfico de linha | alt + 2 |
 | Novo gráfico de barras | alt + 3 |
