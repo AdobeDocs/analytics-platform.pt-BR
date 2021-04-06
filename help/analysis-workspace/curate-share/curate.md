@@ -2,14 +2,14 @@
 description: A preparação permite limitar os componentes antes de compartilhar um projeto.
 keywords: Preparação do Analysis Workspace
 title: Preparar projetos do
+exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 translation-type: tm+mt
-source-git-commit: 1fd11bf0f34b9e4698285e5d29fd57fbab5238be
+source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 50%
+source-wordcount: '495'
+ht-degree: 47%
 
 ---
-
 
 # Preparar projetos do
 
@@ -22,7 +22,6 @@ A preparação permite limitar os componentes (dimensões, métricas, segmentos,
 
 1. Clique em **[!UICONTROL Compartilhar]** > **[!UICONTROL Preparar dados do projeto]**.
 Os componentes usados no projeto serão adicionados automaticamente.
-   **Observação**: se um projeto tiver vários conjuntos de relatórios, você verá um campo de preparação para cada conjunto de relatórios no projeto.
 1. (Opcional) Para adicionar mais componentes, arraste os componentes que deseja compartilhar do painel esquerdo para o campo [!UICONTROL Preparar componentes].
 1. Clique em **[!UICONTROL Concluído]**.
 
@@ -58,4 +57,3 @@ Em um projeto preparado, o recipient terá a opção de **[!UICONTROL Mostrar to
 | **Componentes adicionados ou removidos de uma visualização de dados** | Somente componentes adicionados à visualização de dados (ocultos ou não ocultos). Os administradores não podem criar relatórios sobre campos ou componentes que não estão definidos pela visualização de dados. | Somente componentes adicionados à visualização de dados ou componentes de propriedade ou compartilhados com o usuário. Componentes ocultos não estão disponíveis (como curadoria de VRS). | Somente os componentes adicionados ao DV não estão ocultos e foram incluídos na preparação do projeto. |
 | **Componentes preparados em um projeto** | Todos os componentes de visualização de dados disponíveis para relatórios (os componentes ocultos exigem o clique em &quot;Mostrar tudo&quot;) | Todos os componentes de visualização de dados não ocultos (requer clicar em &quot;mostrar tudo&quot;) | Somente componentes preparados, além de quaisquer componentes de propriedade ou compartilhados com o usuário |
 | **Projeto preparado usando uma visualização de dados com componentes ocultos** | Todos os componentes de dados disponíveis para relatórios (componentes ocultos e não preparados exigem o clique em &quot;Mostrar tudo&quot;) | Todos os componentes de projeto não preparados, todos os componentes de visualização de dados não ocultos e quaisquer componentes de propriedade ou compartilhados pelo usuário | Somente componentes preparados, além de quaisquer componentes de propriedade ou compartilhados com o usuário |
-
