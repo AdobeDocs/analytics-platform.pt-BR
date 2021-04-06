@@ -1,14 +1,14 @@
 ---
 title: Visão geral da atribuição
 description: O conceito de atribuição de crédito de um evento bem-sucedido a vários itens de dimensão.
+exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
 translation-type: tm+mt
-source-git-commit: 1759bbf965e6b8d07e5a25867b73c3242dc49005
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
-
 
 # Visão geral da atribuição
 
@@ -35,7 +35,7 @@ O Adobe Analytics aprimora a atribuição ao permitir:
 * Utilizar comparação ilimitada de modelos de atribuição: compare dinamicamente quantos modelos desejar.
 * Evitar alterações de implementação: com processamento de tempo de relatório e sessões contextuais, o contexto da jornada do cliente pode ser incorporado e aplicado no tempo de execução.
 * Construir a sessão que melhor corresponde ao seu cenário de atribuição.
-* Detalhar atribuições por segmentos: compare facilmente o desempenho de seus canais de marketing entre segmentos importantes (ex: Clientes Novos vs. Repetidos, Produto X vs. Produto Y, Nível de fidelidade ou CLV).
+* Analisar atribuição por filtros: Compare facilmente o desempenho de seus canais de marketing em qualquer filtro importante (por exemplo, clientes novos e repetidos, produto X vs. produto Y, nível de fidelidade ou CLV).
 * Inspecionar canais cruzados e análises de multitoque: usando diagramas e histogramas de Venn e resultados de atribuição de tendência.
 * Analisar visualmente as principais sequências de marketing: explore visualmente caminhos que levaram à conversão usando as visualizações de fluxo de múltiplos nós e de fallout.
 * Criar métricas calculadas: use a quantidade de métodos de alocação de atribuição que desejar.
