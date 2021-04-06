@@ -2,16 +2,16 @@
 description: Analise dimensões e itens de dimensão no Analysis Workspace.
 keywords: Analysis Workspace
 title: Analisar dimensões
-topic: Reports and analytics
+topic: Reports and Analytics
 uuid: 0b888e26-f201-4405-99f9-755b3ee6cd18
+exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 translation-type: tm+mt
-source-git-commit: 1c82c7c2e61c170b6eb05bfda0c7a79e5a13c4e1
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 96%
+source-wordcount: '237'
+ht-degree: 79%
 
 ---
-
 
 # Analisar dimensões
 
@@ -21,14 +21,14 @@ ht-degree: 96%
 
 Analise dimensões e itens de dimensão no Analysis Workspace.
 
-Analise os seus dados de formas ilimitadas, de acordo com as suas necessidades específicas; crie consultas usando métricas, dimensões, segmentos, linhas do tempo e outros valores de detalhamento de análise relevantes.
+Analise seus dados de formas ilimitadas para atender às suas necessidades específicas; crie consultas usando métricas, dimensões, filtros, linhas do tempo e outros valores de detalhamento de análise relevantes.
 
 1. [Crie um projeto](/help/analysis-workspace/home.md) com uma tabela de dados.
 1. Na tabela de dados, clique com o botão direito em um item da linha e selecione **[!UICONTROL Detalhamento]** > *`<item>`*.
 
    ![Resultado da etapa](assets/fa_data_table_actions.png)
 
-   Você pode analisar métricas por itens de dimensão ou segmentos de público-alvo em todos os períodos selecionados. É possível especificar ainda mais para um nível mais granular.
+   Você pode analisar métricas por itens de dimensão ou filtros de público-alvo em todos os períodos selecionados. É possível especificar ainda mais para um nível mais granular.
 
    >[!NOTE]
    >
