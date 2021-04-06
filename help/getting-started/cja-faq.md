@@ -1,14 +1,14 @@
 ---
 title: Perguntas frequentes sobre Customer Journey Analytics
 description: Customer Journey Analytics - Perguntas frequentes.
-translation-type: ht
-source-git-commit: 65b51ff6a792a0407d8c73794c1bab4a6e3f0fa1
-workflow-type: ht
+exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
+translation-type: tm+mt
+source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+workflow-type: tm+mt
 source-wordcount: '1235'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
-
 
 # Perguntas frequentes
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 | --- | --- |
 | É possível combinar dados de diferentes sandboxes da [!UICONTROL Adobe Experience Platform] em uma conexão do [!UICONTROL Customer Journey Analytics]? | Não, não é possível acessar dados em sandboxes. É possível combinar somente conjuntos de dados localizados na mesma sandbox. [Saiba mais...](https://docs.adobe.com/content/help/pt-BR/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets) |
 | Qual é a latência esperada para o [!UICONTROL Customer Journey Analytics] na [!UICONTROL Adobe Experience Platform]? | <ul><li>Em carga normal: &lt; 60 minutos <br>**Observação:** no caso de um volume de dados excepcionalmente elevado por meio do pipeline, poderá demorar até 24 horas.</li><li>Dados de preenchimento retroativo (até 13 meses de dados, independentemente do tamanho): &lt; 4 semanas</li></ul> |
-| Como conectar os dados online aos dados offline no [!UICONTROL Customer Journey Analytics]? | O [!UICONTROL Customer Journey Analytics] é um sistema de análise &quot;traga sua própria ID&quot;. Contanto que a ID da pessoa corresponda entre os conjuntos de dados, o [!UICONTROL Customer Journey Analytics] pode conectar segmentos, atribuição, fluxo, fallout, etc. em todos os conjuntos de dados. |
+| Como conectar os dados online aos dados offline no [!UICONTROL Customer Journey Analytics]? | O [!UICONTROL Customer Journey Analytics] é um sistema de análise &quot;traga sua própria ID&quot;. Desde que a ID da pessoa corresponda entre os conjuntos de dados, [!UICONTROL Customer Journey Analytics] pode conectar filtros, atribuição, fluxo, fallout etc. em todos os conjuntos de dados. |
 | Como posso trazer meus dados offline para o [!UICONTROL Customer Journey Analytics]? | Você deve primeiro trazer os dados para a Experience Platform antes de usá-los com o [!UICONTROL Customer Journey Analytics]. A equipe de integração de dados da Experience Platform pode ajudar a fornecer recomendações ou consultoria a você, se necessário. |
 | Como posso obter dados do [!UICONTROL Adobe Analytics] no [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Os dados do Adobe Analytics] podem ser conectados à Experience Platform por meio do [Conector de origem do Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/experience-platform/sources/connectors/adobe-applications/analytics.html). A maioria dos campos do [!UICONTROL Adobe Analytics] é trazida para o formato XDM, mas outros campos ainda não estão disponíveis (como dimensões de [!UICONTROL Canais de marketing]). |
 | Qual é o tempo de montagem dos elementos do conjunto de dados em uma exibição de dados? | Algumas horas para começar e alguns dias para preencher retroativamente os últimos 13 meses de dados. |
@@ -44,7 +44,7 @@ ht-degree: 100%
 | Pergunta | Resposta |
 | --- | --- |
 | O que isso significa para nosso produto tradicional do [!UICONTROL Adobe Analytics]? | [!UICONTROL O Customer Journey Analytics] é nosso produto de análise da próxima geração. A evolução dos nossos produtos atuais para o [!UICONTROL Customer Journey Analytics] levará anos e precisará de muita coordenação. Para obter mais informações, consulte [Suporte aos recursos do Customer Journey Analytics](/help/getting-started/cja-aa.md). |
-| É possível compartilhar segmentos do [!UICONTROL Customer Journey Analytics] com a AEP e outras soluções? | Ainda não. Estamos buscando formas novas e inovadoras de compartilhar segmentos do [!UICONTROL Customer Journey Analytics] com a AEP no futuro sem um atraso tão grande. Dito isso, você pode compartilhar a saída dos Serviços de consulta com o Perfil unificado, como uma possível solução alternativa. |
+| Posso compartilhar filtros de [!UICONTROL Customer Journey Analytics] para AEP ou outras soluções? | Ainda não. Estamos buscando formas novas e inovadoras de compartilhar filtros de [!UICONTROL Customer Journey Analytics] para o AEP no futuro que não tenham um atraso tão grande. Dito isso, você pode compartilhar a saída dos Serviços de consulta com o Perfil unificado, como uma possível solução alternativa. |
 | O que aconteceu com minha antiga configuração do eVar? | eVars, props e eventos no sentido tradicional do Adobe Analytics não existem mais no [!UICONTROL Customer Journey Analytics]. Você tem elementos de esquema ilimitados (dimensões, métricas, campos de lista). Portanto, todas as configurações de atribuição que você costumava aplicar durante o processo de coleta de dados agora são aplicadas no momento da consulta. |
 | Onde estão todas as minhas configurações de sessão e persistência de variável agora? | [!UICONTROL O Customer Journey Analytics] aplica todas essas configurações no momento do relatório e essas configurações agora residem na Exibição de dados. As alterações nessas configurações agora são retroativas e você pode ter várias versões usando várias Exibições de dados! |
 | O que acontece com nossos segmentos/métricas calculadas atuais? | [!UICONTROL O Customer Journey Analytics] não usa mais eVars, props ou eventos e, em vez disso, usa qualquer esquema da AEP. Isso significa que nenhum dos segmentos ou métricas calculadas existentes é compatível com o [!UICONTROL Customer Journey Analytics]. |
