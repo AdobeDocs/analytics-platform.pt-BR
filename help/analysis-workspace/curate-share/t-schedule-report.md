@@ -2,14 +2,14 @@
 description: Envie um projeto do Analysis Workspace por email ou agende o seu envio.
 keywords: Analysis Workspace
 title: Agendar projetos
+exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 translation-type: tm+mt
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
+source-git-commit: 5f9dc79e666303165f07fd203e29a3daf478e980
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '488'
 ht-degree: 100%
 
 ---
-
 
 # Agendar projetos
 
@@ -30,7 +30,7 @@ Para enviar um arquivo imediatamente aos recipients por email:
 1. Clique em **Enviar agora**.
 1. (Opcional) Clique em **Mostrar opções de agendamento** para especificar um agendamento de delivery.
 
-![Enviar arquivo agora](assets/send-file-now.png)
+![Enviar arquivo agora](assets/send-file-no-scheduling-options.JPG)
 
 ## Enviar arquivo agendado
 
@@ -44,15 +44,13 @@ Para enviar um arquivo por email de acordo com uma programação recorrente a re
 1. Especifique a frequência do delivery. Cada frequência permite personalizações diferentes.
 1. Clique em **Enviar de acordo com a programação**.
 
-![](assets/send-on-schedule.png)
+![](assets/send-file.JPG)
 
 ## Gerenciador de agendamento de projetos
 
 Os projetos programados do Analysis Workspace podem ser gerenciados em **Analytics > Componentes > Projetos programados**.
 
 No Gerenciador de agendamento de projetos, é possível editar e excluir agendamentos de projetos recorrentes. Procure um agendamento na barra de pesquisa ou usando as opções de filtro no painel esquerdo. Você pode filtrar por tag, programação aprovada, proprietários e muito mais.
-
-![](assets/scheduled-project-manager.png)
 
 As ações a seguir são comuns no Gerenciador de projetos programados:
 
@@ -65,4 +63,4 @@ As ações a seguir são comuns no Gerenciador de projetos programados:
 | **Exibir programações expiradas** | Acesse o painel esquerdo > Outros filtros > Expirado para ver as programações que expiraram. Clique no título da programação para configurar uma nova programação de delivery. |
 | **Exibir ID de programação** | Acesse as opções de coluna na parte superior direita e adicione a coluna ID de programação à tabela. A ID programada geralmente é útil para depuração. |
 
-O Gerenciador de agendamento de projetos mostra os itens criados por um usuário específico. Se a conta de usuário estiver desabilitada no aplicativo, todas as entregas programadas são interrompidas. A propriedade do projeto programado pode ser **transferida** para um novo usuário em **Admin > Usuários e ativos do Analytics > Transferir ativos**.
+O Gerenciador de agendamento de projetos mostra os itens criados por um usuário específico. Se a conta de usuário estiver desabilitada no aplicativo, todas as entregas programadas são interrompidas.
