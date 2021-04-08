@@ -1,21 +1,21 @@
 ---
 title: O que é persistência de dimensão no Customer Journey Analytics?
-description: A persistência de Dimension é uma combinação de alocação e expiração. Juntos, eles determinam quais valores de dimensão persistem.
+description: A persistência de Dimension é uma combinação de alocação e expiração. Juntos, eles determinam como ou se os valores de dimensão persistem de um evento para outro.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: 16e43f5d938ac25445f382e5eba8fc12e0e67161
+source-git-commit: 7370caf3495ff707698022889bf17528582da803
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 18%
+source-wordcount: '554'
+ht-degree: 9%
 
 ---
 
 # Persistência
 
-A persistência de Dimension é uma combinação de alocação e expiração. Juntos, eles determinam quais valores de dimensão persistem. O Adobe recomenda que você discuta em sua organização como vários valores de cada dimensão são tratados (alocação) e quando os valores de dimensão param de persistir nos dados (expiração).
+A persistência de Dimension é uma combinação de alocação e expiração. Juntos, eles determinam como ou se os valores de dimensão persistem de um evento para outro. A persistência de Dimension é configurada em uma dimensão nas Visualizações de dados e é retroativa e não destrutiva para os dados aos quais é aplicada. A persistência de Dimension é uma transformação imediata de dados aplicada a uma dimensão que ocorre antes que a filtragem ou outras operações de análise sejam feitas nos relatórios.
 
-* Por padrão, um valor de dimensão usa [WHAT?] alocação.
-* Por padrão, um valor de dimensão usa uma expiração de [!UICONTROL Session].
+* Por padrão, um valor de dimensão não tem persistência ativada.
+* Por padrão, quando qualquer modelo de alocação é ativado por uma dimensão, uma expiração de [!UICONTROL Session] é usada.
 
 ## Alocação
 
@@ -24,59 +24,33 @@ A alocação aplica uma transformação ao valor subjacente que você está usan
 * Mais recente
 * Original
 * Todas
-* Primeiro conhecido
-* Último conhecimento
 
 ### [!UICONTROL Mais ] recente alocação
 
-Este é um exemplo anterior e posterior de [!UICONTROL Alocação mais recente]:
+A alocação mais recente manterá o valor mais recente (por carimbo de data e hora) presente na dimensão. Quaisquer valores subsequentes que ocorrerem na mesma Sessão substituirão o valor que persistiu anteriormente. Observe que, se &quot;Tratar &quot;Nenhum valor&quot; como um valor&quot; tiver sido selecionado nessa dimensão, os valores em branco serão substituídos por &quot;Nenhum valor&quot; antes da persistência ser aplicada. Este é um exemplo anterior e posterior de [!UICONTROL Alocação mais recente] supondo que uma [!UICONTROL Sessão] seja usada para expiração e todos os eventos ocorram em uma [!UICONTROL Sessão]:
 
 | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| valores originais |  | C | B |  | A |
+| valores do conjunto de dados |  | C | B |  | A |
 | Alocação mais recente |  | C | B | B | A |
 
 ###  Alocação original
 
-Este é um exemplo de antes e depois da alocação [!UICONTROL Original]:
+A alocação original manterá o valor original (por carimbo de data e hora) presente na dimensão por um período de expiração. Este é um exemplo de antes e depois da alocação [!UICONTROL Original]:
 
 | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 3 | 2 | 3 | 6 | 7 |
-| valores originais |  | C | B |  | A |
+| valores do conjunto de dados |  | C | B |  | A |
 | Alocação original |  | C | C | C | C |
 
 ###  Alocação
 
-Essa nova alocação de dimensão pode ser aplicada a dimensões baseadas em matriz ou dimensões de valor único. Ela age de forma semelhante ao modelo de atribuição [!UICONTROL Participação] para métricas. A diferença é que valores individuais dentro do campo podem expirar em pontos diferentes. Por exemplo, digamos que temos 5 eventos em um campo de cadeia de caracteres, com a alocação definida como &quot;Todos&quot; e a expiração definida como 5 minutos. Esperamos o seguinte comportamento:
+Essa alocação de dimensão pode ser aplicada a dimensões baseadas em matriz ou dimensões de valor único. Ela age de forma semelhante ao modelo de atribuição [!UICONTROL Participação] para métricas. Uma diferença importante é que as dimensões com Toda alocação podem ser usadas nas definições de Filtro. Por exemplo, digamos que tenhamos 5 eventos em um campo de string, com alocação definida como &quot;Tudo&quot; e expiração definida como 5 minutos:
 
 | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
 | --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| valores originais | A | B | C |  | A |
-| pós-persistência | A | A,B | A,B,C | B,C | A,C |
-
-Observe que o valor de A persiste até atingir a marca de 5 minutos, enquanto B e C continuam persistindo na Ocorrência 4, pois 5 minutos ainda não foram passados para esses valores. Observe que essa alocação criará uma dimensão de vários valores a partir de um campo de valor único. Esse modelo também deve ser compatível com dimensões baseadas em matriz:
-
-| Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
-| --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| valores originais | A,B | C | B,C |  | A |
-| pós-persistência | A,B | A,B,C | A,B,C | B,C | A,B,C |
-
-### Alocações &quot;First Known&quot; e &quot;Last Known&quot;
-
-Esses dois novos modelos de alocação pegam o primeiro ou o último valor observado para uma dimensão dentro de um escopo de persistência especificado (sessão, pessoa ou período de tempo personalizado com lookback) e o aplicam a todos os eventos dentro do escopo especificado. Exemplo:
-
-| Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
-| --- | --- | --- | --- | --- | --- |
-| timestamp (min) | 1 | 2 | 3 | 6 | 7 |
-| valores originais |  | C | B |  | A |
-| first known | C | C | C | C | C |
-| last known | A | A | A | A | A |
-
-O primeiro ou o último valor conhecido pode ser aplicado somente a uma sessão ou no escopo da pessoa (janela de relatórios) ou em um escopo personalizado ou baseado em tempo (essencialmente um escopo de pessoa com uma janela de pesquisa adicionada).
+| valores do conjunto de dados | A | B | C |  | A |
+| pós-persistência | A | A,B | A,B,C | A,B,C | A,B,C |
 
 ## Expiração
 
@@ -85,13 +59,12 @@ O primeiro ou o último valor conhecido pode ser aplicado somente a uma sessão 
 Há quatro maneiras de expirar um valor de dimensão:
 
 * Sessão (padrão): Expira após uma determinada sessão.
-* Pessoa: ?
-* Hora: Você pode definir o valor de dimensão para expirar após um período ou evento especificado.
-* Métrica: Você pode especificar qualquer uma das métricas definidas como o fim da expiração dessa dimensão (por exemplo, uma métrica de &quot;Compra&quot;).
-* Personalizado:
+* Pessoa: Expira no final da janela de relatórios.
+* Hora: Você pode definir o valor de dimensão para expirar após um período ou evento especificado. Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente .
+* Métrica: Você pode especificar qualquer uma das métricas definidas como o fim da expiração dessa dimensão (por exemplo, uma métrica de &quot;Compra&quot;). Essa expiração só está disponível para modelos de alocação Original e Mais recente .
 
 ### Qual é a diferença entre alocação e atribuição?
 
-**Alocação**: Pense na alocação como &quot;transformação de dados&quot; da dimensão. A alocação ocorre antes da filtragem. Se você criar um filtro, ele será destacado da dimensão transformada.
+**Alocação**: Considere a alocação como uma transformação de dados na dimensão. A alocação ocorre antes da filtragem. Se você criar um filtro, ele será destacado da dimensão transformada.
 
-**Atribuição**: Como estou distribuindo o crédito de uma métrica para a dimensão à qual ela é aplicada? A atribuição ocorre após a filtragem.
+**Atribuição**: Como estou distribuindo o crédito de uma métrica para a dimensão à qual ela é aplicada? A atribuição não é uma transformação de dados, aplica-se durante a agregação de dados e não afeta quais dados são incluídos usando um Filtro.
