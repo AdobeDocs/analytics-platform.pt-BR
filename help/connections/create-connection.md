@@ -1,20 +1,30 @@
 ---
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
+exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 translation-type: tm+mt
-source-git-commit: bbf33bd751a6f66f58dc40a5efb48bd2f1c29021
+source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 100%
+source-wordcount: '1974'
+ht-degree: 98%
 
 ---
-
 
 # Criar uma conexão
 
 Uma conexão permite integrar conjuntos de dados do [!DNL Adobe Experience Platform] ao [!UICONTROL Workspace]. Para criar relatórios sobre conjuntos de dados do [!DNL Experience Platform], primeiro é necessário estabelecer uma conexão entre os conjuntos de dados no [!DNL Experience Platform] e no [!UICONTROL Workspace].
 
 Clique [aqui](https://docs.adobe.com/content/help/pt-BR/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) para obter uma visão geral do vídeo.
+
+Para criar uma conexão CJA, você precisa das seguintes permissões:
+
+Adobe Experience Platform:
+* Modelagem de dados: Exibir esquemas, Gerenciar esquemas
+* Gerenciamento de dados: Visualizar conjuntos de dados, gerenciar conjuntos de dados
+* Assimilação de dados: Gerenciar fontes
+
+Customer Journey Analytics
+* Acesso de administrador do produto
 
 >[!IMPORTANT]
 >
