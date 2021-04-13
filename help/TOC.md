@@ -18,10 +18,10 @@ getting-started-url: https://landing.adobe.com/experience-league/
 tutorials-title: Tutoriais
 tutorials-url: https://helpx.adobe.com/br/experience-cloud/tutorials.html
 translation-type: tm+mt
-source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
+source-git-commit: 58842436ab3388ba10ad0df0b35c78f68b02f0a3
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 96%
+source-wordcount: '463'
+ht-degree: 95%
 
 ---
 
@@ -164,7 +164,7 @@ ht-degree: 96%
    + [Casos de uso da assimilação de dados](use-cases/data-ingestion.md)
    + [Usar dimensões do canal de marketing](use-cases/marketing-channels.md)
    + [Adicionar pesquisas globais aos seus conjuntos de dados](use-cases/global-lookups.md)
-   + [Configurar relatórios do Google Analytics no CJA](use-cases/ga-to-cja.md)
+   + [Assimilar dados do Google Analytics no Adobe Experience Platform](use-cases/ga-to-cja.md)
 + Painéis do Analytics {#cja-dashboards}
    + [Painéis do Analytics - Visão geral](mobile-app/home.md)
    + [Guia do curador](mobile-app/curator.md)
