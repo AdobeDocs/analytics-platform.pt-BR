@@ -1,11 +1,11 @@
 ---
-title: Como obter dados do Google Analytics no Adobe Experience Platform para análise no Customer Journey Analytics (CJA)
+title: Assimilar dados do Google Analytics no Adobe Experience Platform
 description: 'Explica como usar o Customer Journey Analytics (CJA) para assimilar seus dados de Google Analytics e firebase no Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: cc212d8b1e0a229fd246f6678a8dc8e5bbadce79
+source-git-commit: b6f62c1d53d023c230fbd7f8ad366ac5c6b13954
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1033'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ A maneira de trazer dados do Google Analytics para o Adobe Experience Platform d
 
 ### 1. Conecte seus dados do Google Analytics ao BigQuery
 
-Observe que as instruções a seguir são baseadas no Universal Google Analytics. Elas se aplicam aos dados históricos. Para obter instruções sobre dados de transmissão ao vivo, acesse Trazer dados de transmissão ao vivo para o AEP.
+Observe que as instruções a seguir são baseadas no Universal Google Analytics. Elas se aplicam aos dados históricos. Para obter instruções sobre dados de transmissão ao vivo, vá para [Traga dados de transmissão ao vivo para AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=en#ingest-live-streaming-google-analytics-data).
 
 Consulte [estas instruções](https://support.google.com/analytics/answer/3416092?hl=en).
 
@@ -84,7 +84,7 @@ Ou assista a este vídeo:
 
 ### 3. Exporte eventos Google Analytics no formato JSON para o Google Cloud Storage e salve-os em um bucket
 
-Em seguida, você importará os eventos do Google Analytics para o Google Cloud Storage no formato JSON. Então traga-o para a Experience Platform.
+Em seguida, você importará os eventos do Google Analytics para o Google Cloud Storage no formato JSON.
 
 Consulte [estas instruções](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
 
