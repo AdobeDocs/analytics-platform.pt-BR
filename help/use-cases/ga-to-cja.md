@@ -1,18 +1,18 @@
 ---
 title: Configurar relatórios do Google Analytics no Customer Journey Analytics
 description: null
+exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 1324ad5768a7ab215431b9447d9519367dfe17a0
+source-git-commit: 49b49f24dbc68b1d9e843e0f4522123e6792a438
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
 
-
 # Configurar relatórios do Google Analytics no Customer Journey Analytics
 
-
+Este caso de uso explica como obter os dados do Google Analytics no Adobe Experience Platform e
 
 ## Pré-requisitos
 
@@ -26,12 +26,12 @@ A maneira de trazer dados do Google Analytics para o Adobe Experience Platform d
 
 | Se você usar... | Você também precisa desta licença... | E faça isso... |
 | --- | --- | --- |
-| **Google Analytics universal** | Google Analytics 360 | Execute as etapas 1 - x das instruções abaixo |
-| **Google Analytics 4** | Versão GA gratuita ou Google Analytics 360 | Não é necessário o passo x nas instruções abaixo. |
+| **Google Analytics universal** | Google Analytics 360 | Execute as etapas 1 a 5 das instruções abaixo |
+| **Google Analytics 4** | Versão GA gratuita ou Google Analytics 360 | Execute as etapas 2 - 5 das instruções abaixo. Não é necessário o passo 1. |
 
 As instruções a seguir são baseadas no Universal Google Analytics.
 
-1. Conecte seus dados do Google Analytics ao BigQuery e
+1. Conecte seus dados do Google Analytics ao BigQuery para transformar alguns dados.
 Consulte [estas instruções](https://support.google.com/analytics/answer/3416092?hl=en).
 
 1. (Somente clientes do Universal Analytics) Transforme as sessões do Google Analytics em eventos no BigQuery.
@@ -55,4 +55,3 @@ Assista a este vídeo para obter instruções:
 1. Importar eventos GCS para o Adobe Experience Platform e mapear para o esquema XDM
 
 Esquema de exportação BigQuery (https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089)
-
