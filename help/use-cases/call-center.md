@@ -3,7 +3,7 @@ title: Importação de dados da central de atendimento e da Web
 description: Saiba como criar um conjunto de dados que vincula os dados da central de atendimento e do site.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 100%
@@ -80,7 +80,7 @@ Essa tabela de forma livre permite que você veja as principais páginas que con
 1. Arraste a dimensão que retém os nomes da página da Web para uma visualização de Tabela de forma livre.
 1. Substitua a métrica pela métrica da central de atendimento desejada para medir a conversão.
 1. Clique no ícone de engrenagem próximo ao cabeçalho da métrica. Clique em **[!UICONTROL Modelo de atribuição não padrão]**.
-1. Defina o [Modelo de atribuição](/help/data-views/configure-dataviews.md#Attribution-model) desejado.
+1. Defina o [Modelo de atribuição](/help/data-views/create-dataview.md) desejado.
 
 O relatório resultante mostra a métrica superior dos dados da central de atendimento. <!-- Complement with donut visualization -->
 
