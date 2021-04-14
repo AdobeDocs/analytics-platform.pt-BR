@@ -1,14 +1,14 @@
 ---
 title: Casos de uso para visualizações de dados no Customer Journey Analytics
 description: Vários casos de uso que mostram a flexibilidade e o poder das visualizações de dados no Customer Journey Analytics
+exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
-source-git-commit: b99e108e9f6dd1c27c6ebb9b443f995beb71bdbd
+source-git-commit: f9fae62af3d57b2b700c26a402c7232c0255806b
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
 
 ---
-
 
 # Casos de uso de visualizações de dados
 
@@ -45,5 +45,5 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
    ![](assets/bucketing.png)
 
-Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview2.md).
+Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview.md).
 Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).
