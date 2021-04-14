@@ -3,9 +3,9 @@ title: Assimilar dados do Google Analytics no Adobe Experience Platform
 description: 'Explica como usar o Customer Journey Analytics (CJA) para assimilar seus dados de Google Analytics e firebase no Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: c51b9d19bfcc1066c3bb58a605485e153d87f396
+source-git-commit: 0f1d7e0d26eefec46edabba4d0b8709c3bad6b8f
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1025'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,6 @@ Para obter instruções, assista a este vídeo:
 Depois que a Adobe Experience Platform começar a receber os dados Google Analytics ao vivo e você tiver preenchido os dados Google Analytics históricos do BigQuery, você estará pronto para entrar no CJA e
 [crie sua primeira conexão](/help/connections/create-connection.md). Essa conexão unirá os dados do GA aos outros dados do cliente usando uma &quot;ID do cliente&quot; comum.
 
-
 ## Fazer uma análise surpreendente no Workspace
 
-Para seguir
+Mais conteúdo aqui.
