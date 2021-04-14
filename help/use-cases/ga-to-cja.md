@@ -3,9 +3,9 @@ title: Assimilar dados do Google Analytics no Adobe Experience Platform
 description: 'Explica como usar o Customer Journey Analytics (CJA) para assimilar seus dados de Google Analytics e firebase no Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
+source-git-commit: 7ba17dd1fc27eefdfe061eb74b4e52c575647d2c
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1193'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,25 @@ Assista a este vídeo para obter instruções:
 
 Em seguida, você pode mapear os dados do evento do GA em um conjunto de dados existente criado anteriormente ou criar um novo conjunto de dados, usando o esquema XDM escolhido. Após selecionar o esquema, o Experience Platform aplica o aprendizado de máquina para mapear automaticamente cada um dos campos nos dados do Google Analytics para o [esquema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui).
 
+![](assets/schema-map.png)
+
 Os mapeamentos são muito fáceis de alterar e você pode até criar campos derivados ou calculados a partir dos dados do Google Analytics. Quando terminar de mapear os campos no esquema XDM, você poderá agendar essa importação de forma recorrente e aplicar a validação do erro durante o processo de ingestão. Isso garante que não haja problemas com os dados importados.
+
+**Campo calculado do carimbo de data e hora**
+
+Para o campo `timestamp` nos dados do Google Analytics, é necessário criar um campo calculado especial na interface do usuário do esquema Experience Platform. Clique em **[!UICONTROL Adicionar campo calculado]** e vincule a cadeia de caracteres `timestamp` em uma função `date`, da seguinte maneira:
+
+`date(timestamp, "yyyy-MM-dd HH:mm:ssZ")`
+
+Em seguida, é necessário salvar esse campo calculado na estrutura de dados do carimbo de data e hora no schema :
+
+![](assets/timestamp.png)
+
+**_id campo calculado XDM**
+
+O campo `_id` schema deve ter um valor nele - o CJA não se importa com o valor. É possível adicionar um &quot;1&quot; ao campo:
+
+![](assets/_id.png)
 
 ## Assimilar dados Google Analytics de transmissão ao vivo
 
