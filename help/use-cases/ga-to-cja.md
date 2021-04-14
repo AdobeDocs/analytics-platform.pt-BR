@@ -3,9 +3,9 @@ title: Assimilar dados do Google Analytics no Adobe Experience Platform
 description: 'Explica como usar o Customer Journey Analytics (CJA) para assimilar seus dados de Google Analytics e firebase no Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 0f1d7e0d26eefec46edabba4d0b8709c3bad6b8f
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1110'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ A maneira de trazer dados do Google Analytics para o Adobe Experience Platform d
 | **Universal Analytics** | Google Analytics 360 | Execute as etapas 1 a 5 das instruções abaixo |
 | **Google Analytics 4** | Versão GA gratuita ou Google Analytics 360 | Execute as etapas 1 e 3 a 5 das instruções abaixo. Não há necessidade da etapa 2. |
 
-## Assimilar dados históricos
+## Assimilar dados históricos (preenchimento retroativo)
 
 ### 1. Conecte seus dados do Google Analytics ao BigQuery
 
@@ -84,13 +84,20 @@ Ou assista a este vídeo:
 
 ### 3. Exporte eventos Google Analytics no formato JSON para o Google Cloud Storage e salve-os em um bucket
 
-Em seguida, você importará os eventos do Google Analytics para o Google Cloud Storage no formato JSON.
+Em seguida, você exportará os eventos do Google Analytics para o Google Cloud Storage no formato JSON. Basta clicar em **Exportar > Exportar para GCS**. Uma vez lá, os dados estão prontos para serem transferidos para o Adobe Experience Platform.
 
 Consulte [estas instruções](https://support.google.com/analytics/answer/3437719?hl=en&amp;ref_topic=3416089).
 
-### 4. Traga os dados do armazenamento do Google Cloud para o Experience Platform
+### 4. Importe os dados do Google Cloud Storage para o Experience Platform
 
-No Experience Platform, selecione **[!UICONTROL Fontes]** e localize a opção **[!UICONTROL Armazenamento do Google Cloud]**. A partir daí, basta encontrar o conjunto de dados que você salvou do Big Query.
+No Experience Platform, selecione **[!UICONTROL Fontes]** e localize a opção **[!UICONTROL Armazenamento do Google Cloud]**. A partir daí, basta encontrar o conjunto de dados que você salvou do BigQuery.
+
+Lembre-se:
+
+* Selecione o formato JSON.
+* Você pode selecionar um conjunto de dados existente ou criar um novo conjunto de dados (recomendado).
+* Certifique-se de selecionar o mesmo esquema para dados Google Analytics históricos e dados Google Analytics de transmissão ao vivo, mesmo que estejam em conjuntos de dados separados. Posteriormente, você pode mesclar os conjuntos de dados em uma conexão [CJA](/help/connections/combined-dataset.md).
+
 
 Assista a este vídeo para obter instruções:
 
@@ -98,7 +105,7 @@ Assista a este vídeo para obter instruções:
 
 ### 5. Importe eventos GCS para o Adobe Experience Platform e mapeie para o esquema XDM
 
-Em seguida, você pode mapear os dados do evento do GA em um conjunto de dados existente criado anteriormente ou criar um novo conjunto de dados usando o esquema XDM escolhido. Depois de selecionar o schema, o Experience Platform aplica o aprendizado de máquina para mapear automaticamente cada um dos campos nos dados do Google Analytics para seu próprio schema.
+Em seguida, você pode mapear os dados do evento do GA em um conjunto de dados existente criado anteriormente ou criar um novo conjunto de dados, usando o esquema XDM escolhido. Após selecionar o esquema, o Experience Platform aplica o aprendizado de máquina para mapear automaticamente cada um dos campos nos dados do Google Analytics para o [esquema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en#ui).
 
 Os mapeamentos são muito fáceis de alterar e você pode até criar campos derivados ou calculados a partir dos dados do Google Analytics. Quando terminar de mapear os campos no esquema XDM, você poderá agendar essa importação de forma recorrente e aplicar a validação do erro durante o processo de ingestão. Isso garante que não haja problemas com os dados importados.
 
