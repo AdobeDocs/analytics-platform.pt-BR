@@ -3,7 +3,7 @@ title: (B2B) Adicionar dados a nível de conta como um conjunto de dados de pesq
 description: Saiba como adicionar dados baseados em conta como um conjunto de dados de pesquisa ao CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 translation-type: tm+mt
-source-git-commit: 9bbc625aca9e0b8384b3e95d79fd695fda863f0b
+source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 89%
@@ -22,7 +22,7 @@ Este caso de uso B2B mostra como especificar seus dados em um nível de conta, e
 
 Você consegue tudo isso trazendo as informações no nível da conta como um conjunto de dados de [pesquisa](/help/getting-started/cja-glossary.md).
 
-Primeiro, você cria um esquema de pesquisa na Adobe Experience Platform e depois cria um conjunto de dados de tabela de pesquisa assimilando dados de nível de conta baseados em .csv. Em seguida, você cria uma conexão no Customer Journey Analytics (CJA0) que combina diferentes conjuntos de dados, incluindo o conjunto de pesquisa criado. Em seguida, você cria uma visualização de dados e finalmente pode utilizar todos esses dados no Workspace.
+Primeiro, você cria um esquema de pesquisa na Adobe Experience Platform e depois cria um conjunto de dados de tabela de pesquisa assimilando dados de nível de conta baseados em .csv. Em seguida, você cria uma conexão no Customer Journey Analytics (CJA0) que combina diferentes conjuntos de dados, incluindo o conjunto de pesquisa criado. Posteriormente, você cria uma visualização de dados e, por fim, pode utilizar todos esses dados no Workspace.
 
 >[!NOTE]
 >
