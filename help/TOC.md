@@ -47,8 +47,6 @@ ht-degree: 95%
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das visualizações de dados](data-views/data-views.md)
    + [Criar uma exibição de dados](data-views/create-dataview.md)
-   + [Criar uma visualização de dados 2](data-views/create-dataview2.md)
-   + [Configurar exibições de dados e atribuição](data-views/configure-dataviews.md)
    + [Casos de uso de visualizações de dados](data-views/data-views-usecases.md)
    + [Persistência](data-views/persistence.md)
 + Projetos do Workspace {#cja-workspace}
