@@ -2,9 +2,9 @@
 title: Dimension com muito alta cardinalidade em Customer Journey Analytics
 description: Descreve as práticas recomendadas para lidar com dimensões de alta cardinalidade no Customer Journey Analytics
 translation-type: tm+mt
-source-git-commit: 9af5c74164462851ac4a6cbc4764569789f677fc
+source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Dependendo do número de eventos em uma conexão CJA específica, as duas limita
 
 ### 1. As contagens de linhas podem não ser relatáveis com precisão
 
-As contagens de linhas em dimensões de alta cardinalidade podem não ser exatamente reportáveis. Quando isso acontecer, as tabelas de forma livre fornecerão uma indicação, conforme mostrado abaixo:
+As contagens de linhas em dimensões de alta cardinalidade podem não ser relatáveis com precisão. Quando isso acontecer, as tabelas de forma livre fornecerão uma indicação, conforme mostrado abaixo:
 
 ![](assets/high-cardinality.png)
 
@@ -45,7 +45,7 @@ Embora haja limitações para algumas métricas calculadas e contagens de linhas
 
 ## Práticas recomendadas para trabalhar com dimensões cardeal
 
-Para eliminar os avisos ou estimativas que podem ocorrer ao usar dimensões com alta cardinalidade, recomendamos que você reduza o número de linhas consideradas em seu relatório usando um dos seguintes métodos:
+Para eliminar os avisos ou estimativas que podem ocorrer ao usar dimensões com alta cardinalidade, recomendamos que você reduza o número de linhas consideradas em seu relatório, usando um dos seguintes métodos:
 
 * Adicione um filtro à coluna ou painel afetado.
 * Aplique uma pesquisa à tabela de forma livre.
