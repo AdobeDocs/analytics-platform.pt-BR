@@ -1,14 +1,14 @@
 ---
 title: Dimension com muito alta cardinalidade em Customer Journey Analytics
 description: Descreve as práticas recomendadas para lidar com dimensões de alta cardinalidade no Customer Journey Analytics
+exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 translation-type: tm+mt
-source-git-commit: d35ff80b7a3a3235f13640d88b0efcfb3e7cc30b
+source-git-commit: 8ae1cb5a84b26258fb30f6e630744b2e36a48e5c
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
-
 
 # Dimension com uma cardinalidade muito alta
 
@@ -49,7 +49,7 @@ Para eliminar os avisos ou estimativas que podem ocorrer ao usar dimensões com 
 
 * Adicione um filtro à coluna ou painel afetado.
 * Aplique uma pesquisa à tabela de forma livre.
-* Aplique um detalhamento às linhas de interesse ou use a dimensão altamente cardinal como uma dimensão de detalhamento
+* Aplique um detalhamento às linhas de interesse ou use a dimensão altamente cardinal como uma dimensão de detalhamento.
 * Adicione critérios de inclusão/exclusão à configuração da Exibição de dados da dimensão para restringir o número de valores únicos presentes na dimensão.
 
 O uso dessas técnicas geralmente pode eliminar quaisquer estimativas ou avisos indesejáveis que você tenha ao usar dimensões cardeal altas.
