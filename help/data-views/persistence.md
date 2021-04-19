@@ -3,9 +3,9 @@ title: O que é persistência de dimensão no Customer Journey Analytics?
 description: A persistência de Dimension é uma combinação de alocação e expiração. Juntos, eles determinam como ou se os valores de dimensão persistem de um evento para outro.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
-source-git-commit: 7370caf3495ff707698022889bf17528582da803
+source-git-commit: ffeada325825545ae0ab43f176e5d301cd1761ee
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '574'
 ht-degree: 9%
 
 ---
@@ -60,7 +60,7 @@ Há quatro maneiras de expirar um valor de dimensão:
 
 * Sessão (padrão): Expira após uma determinada sessão.
 * Pessoa: Expira no final da janela de relatórios.
-* Hora: Você pode definir o valor de dimensão para expirar após um período ou evento especificado. Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente .
+* Hora: É possível definir o valor de dimensão para expirar após um período de tempo especificado (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente . Ao usar a expiração com base no tempo, valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
 * Métrica: Você pode especificar qualquer uma das métricas definidas como o fim da expiração dessa dimensão (por exemplo, uma métrica de &quot;Compra&quot;). Essa expiração só está disponível para modelos de alocação Original e Mais recente .
 
 ### Qual é a diferença entre alocação e atribuição?
