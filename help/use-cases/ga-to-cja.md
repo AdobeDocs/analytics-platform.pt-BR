@@ -3,9 +3,9 @@ title: Assimilar dados do Google Analytics no Adobe Experience Platform
 description: 'Explica como usar o Customer Journey Analytics (CJA) para assimilar seus dados de Google Analytics e firebase no Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: 1dcc566f286b0399e5ebd1e06e9d42a9522a1684
+source-git-commit: de822eb00a5e205889b4fa96f729845ad4c7e356
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1217'
 ht-degree: 1%
 
 ---
@@ -99,10 +99,6 @@ Você pode mapear os dados do evento GA em um conjunto de dados existente criado
 ![](assets/schema-map.png)
 
 Os mapeamentos são muito fáceis de alterar e você pode até criar campos derivados ou calculados a partir dos dados do Google Analytics. Quando terminar de mapear os campos no esquema XDM, você poderá agendar essa importação de forma recorrente e aplicar a validação do erro durante o processo de ingestão. Isso garante que não haja problemas com os dados importados.
-
-Assista a este vídeo para obter instruções:
-
->[!VIDEO](https://video.tv.adobe.com/v/332641)
 
 **Campo calculado &#39;Carimbo de data e hora&#39;**
 
