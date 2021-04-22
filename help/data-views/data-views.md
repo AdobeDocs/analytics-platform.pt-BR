@@ -3,10 +3,10 @@ title: O que é uma visualização de dados no Customer Journey Analytics?
 description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão do CJA, como métricas, dimensões, sessões etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 translation-type: tm+mt
-source-git-commit: 8f3b57e0851441b86a282411674ffe67ed34ea32
+source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 91%
+ht-degree: 88%
 
 ---
 
@@ -16,7 +16,7 @@ Uma visualização de dados fica sobre uma conexão do [Customer Journey Analyti
 
 >[!NOTE]
 >
->Todas as configurações selecionadas ou alteradas em uma visualização de dados são retroativas e não destrutivas. Em outras palavras, elas não alterarão seus dados subjacentes permanentemente.
+>Todas as configurações selecionadas ou alteradas em uma visualização de dados são retroativas e não destrutivas. Em outras palavras, eles não alteram permanentemente os dados subjacentes.
 
 Você pode criar visualizações de dados diferentes para a mesma conexão, com conjuntos de componentes muito diferentes (dimensões/métricas). Ou criar visualizações de dados com configurações diferentes para o tempo limite da visita, atribuição etc. Por exemplo, você pode ter uma visualização de dados em que todas as dimensões estão definidas como [!UICONTROL Último contato] e, simultaneamente, outra visualização de dados (com base no mesmo conjunto de dados) com todas as dimensões definidas como [!UICONTROL Primeiro contato].
 
@@ -60,13 +60,13 @@ A atualização mais recente oferece muito mais flexibilidade no que você pode 
 
 Algumas configurações de visualização de dados podem ser substituídas no Analysis Workspace no nível do projeto, outras não.
 
-* Janela de lookback
+* [!UICONTROL Janela de lookback]
 * Atribuição de métrica
-* Se os usuários veem ou não o item da linha &quot;Nenhum valor&quot; em um relatório
+* Se os usuários veem ou não o item de linha [!UICONTROL Sem Valor] em um relatório
 
 ## Configurações de visualização de dados que não podem ser substituídas no Workspace
 
-* Tipo de componente
+* [!UICONTROL Tipo de componente]
 * Formatação de métrica
 * Nome da visualização de dados
 * Alocação de dimensão
