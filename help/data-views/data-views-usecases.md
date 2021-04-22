@@ -1,43 +1,43 @@
 ---
 title: Casos de uso para visualizações de dados no Customer Journey Analytics
-description: Vários casos de uso que mostram a flexibilidade e o poder das visualizações de dados no Customer Journey Analytics
+description: Vários casos de uso que mostram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 translation-type: tm+mt
 source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 # Casos de uso de visualizações de dados
 
-Esses casos de uso mostram a flexibilidade e o poder das visualizações de dados no Customer Journey Analytics.
+Esses casos de uso mostram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics.
 
-## Criar uma métrica de Pedidos a partir de um campo de esquema pageTitle (cadeia de caracteres)
+## Criar uma métrica de Pedidos de um campo de esquema pageTitle (sequência)
 
-Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica [!UICONTROL Orders] de um campo de esquema [!UICONTROL pageTitle] que seja uma cadeia de caracteres. Estas são as etapas:
+Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica [!UICONTROL Pedidos] de um campo de esquema [!UICONTROL pageTitle] que seja uma sequência. Estas são as etapas:
 
-1. Na guia Componentes, arraste o [!UICONTROL pageTitle] até a seção [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
+1. Na guia Componentes, arraste [!UICONTROL pageTitle] até a seção [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
    ![](assets/use-case1a.png)
-1. Agora, destaque a métrica que acabou de arrastar e renomeie-a em [!UICONTROL Configurações do componente] à direita:
+1. Agora, destaque a métrica que você acabou de arrastar e renomeie-a em [!UICONTROL Configurações do componente] à direita:
    ![](assets/orders.png)
 1. Abra a caixa de diálogo [!UICONTROL Incluir/Excluir valores] à direita e especifique o seguinte:
    ![](assets/orders2.png)
 
-   A frase &quot;confirmação&quot; indica que é um pedido. Depois de revisar todos os títulos de página onde esses critérios são atendidos, um &quot;1&quot; será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores incluídos/excluídos pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, filtros e em qualquer lugar que você pode usar as métricas padrão.
+   A frase &quot;confirmação&quot; indica que é um pedido. Depois de examinar todos os títulos de página em que esses critérios são atendidos, &quot;1&quot; será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores de inclusão/exclusão pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, filtros e em qualquer lugar que você puder usar as métricas padrão.
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
-Você também pode criar outra métrica [!UICONTROL Orders] do mesmo campo e especificar um modelo de atribuição diferente para ele, como [!UICONTROL Primeiro contato], e uma [!UICONTROL janela de lookback] diferente, como [!UICONTROL 30 dias].
+Você também pode criar outra métrica [!UICONTROL Pedidos] do mesmo campo e especificar um modelo de atribuição diferente para ele, como [!UICONTROL Primeiro contato], e uma [!UICONTROL janela de pesquisa] diferente, como [!UICONTROL 30 dias].
 
 ## Usar números inteiros como dimensões
 
 Anteriormente, os números inteiros eram automaticamente tratados como métricas no CJA. Agora, os números (incluindo eventos personalizados do Adobe Analytics) podem ser tratados como dimensões. Exemplo:
 
-1. Arraste o inteiro [!UICONTROL call_length_min] até a seção [!UICONTROL Dimension] em [!UICONTROL Componentes incluídos]:
+1. Arraste o inteiro [!UICONTROL call_length_min] até a seção [!UICONTROL Dimensões] em [!UICONTROL Componentes incluídos]:
 
    ![](assets/integers.png)
 
-1. Agora você pode adicionar [!UICONTROL Value Bucketing] para apresentar essa dimensão de forma segmentada nos relatórios. (Sem o agrupamento, cada instância dessa dimensão seria exibida como um item de linha no relatório do Workspace.)
+1. Agora você pode adicionar [!UICONTROL Classificação de valores] para apresentar essa dimensão de forma segmentada nos relatórios. (Sem a classificação, cada instância dessa dimensão seria exibida como um item da linha nos relatórios do Workspace.)
 
    ![](assets/bucketing.png)
 
