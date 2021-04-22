@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 86%
+ht-degree: 90%
 
 ---
 
@@ -79,7 +79,7 @@ Os contêineres de evento contam com detalhamentos de página única com base em
 
 ## Modelo de filtro pronto para uso
 
-O Analytics tradicional vem com vários filtros de modelo (filtros) e métricas calculadas prontos para uso. Muitas delas não se aplicam ao CJA ou precisarão ser renomeadas ou recriadas. Outros dependerão de uma solução para variáveis sensíveis ao contexto no CJA.
+O Analytics tradicional vem com vários filtros de modelo (filtros) e métricas calculadas prontos para uso. Muitos deles não se aplicam ao CJA ou precisarão ser renomeados ou recriados. Outros dependerão de uma solução para variáveis com reconhecimento de contexto no CJA.
 
 | Nome do filtro | Descrição |
 | --- | --- |
