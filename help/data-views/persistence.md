@@ -1,18 +1,18 @@
 ---
 title: O que é persistência de dimensão no Customer Journey Analytics?
-description: A persistência de Dimension é uma combinação de alocação e expiração. Juntos, eles determinam como ou se os valores de dimensão persistem de um evento para outro.
+description: A persistência de dimensão é uma combinação de alocação e expiração. Juntos, eles determinam como ou se os valores de dimensão persistem de um evento para outro.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 translation-type: tm+mt
 source-git-commit: ffeada325825545ae0ab43f176e5d301cd1761ee
 workflow-type: tm+mt
 source-wordcount: '574'
-ht-degree: 9%
+ht-degree: 13%
 
 ---
 
 # Persistência
 
-A persistência de Dimension é uma combinação de alocação e expiração. Juntos, eles determinam como ou se os valores de dimensão persistem de um evento para outro. A persistência de Dimension é configurada em uma dimensão nas Visualizações de dados e é retroativa e não destrutiva para os dados aos quais é aplicada. A persistência de Dimension é uma transformação imediata de dados aplicada a uma dimensão que ocorre antes que a filtragem ou outras operações de análise sejam feitas nos relatórios.
+A persistência de dimensão é uma combinação de alocação e expiração. Juntos, eles determinam como ou se os valores de dimensão persistem de um evento para outro. A persistência de Dimension é configurada em uma dimensão nas Visualizações de dados e é retroativa e não destrutiva para os dados aos quais é aplicada. A persistência de Dimension é uma transformação imediata de dados aplicada a uma dimensão que ocorre antes que a filtragem ou outras operações de análise sejam feitas nos relatórios.
 
 * Por padrão, um valor de dimensão não tem persistência ativada.
 * Por padrão, quando qualquer modelo de alocação é ativado por uma dimensão, uma expiração de [!UICONTROL Session] é usada.
