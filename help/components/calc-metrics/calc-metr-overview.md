@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
 workflow-type: tm+mt
 source-wordcount: '484'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -50,8 +50,8 @@ Veja uma comparação entre os recursos de Métricas calculadas e Métricas calc
 
 | Nome da métrica calculada | Descrição da métrica calculada |
 | --- | --- |
-| Sessões por Pessoa | Número médio de sessões por pessoa |
+| Sessões por pessoa | Número médio de sessões por pessoa |
 | Taxa de início da sessão | A porcentagem de tempo em que qualquer item de dimensão ocorreu no primeiro evento de uma sessão. |
-| Taxa de Término da Sessão | A porcentagem de tempo em que qualquer item de dimensão ocorreu no último evento de uma sessão. |
-| Tempo gasto por pessoa | A quantidade média de tempo que uma pessoa gastou em um determinado item de dimensão. |
-| Tempo Gasto por Sessão | A quantidade média de tempo que uma pessoa gastou por Sessão em qualquer item de dimensão. |
+| Taxa de término da sessão | A porcentagem de tempo em que qualquer item de dimensão ocorreu no último evento de uma sessão. |
+| Tempo gasto por pessoa | A quantidade média de tempo que uma pessoa gastou em determinado item de dimensão. |
+| Tempo gasto por sessão | A quantidade média de tempo que uma pessoa gastou por sessão em qualquer item de dimensão. |
