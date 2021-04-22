@@ -3,9 +3,9 @@ title: Assimilar dados do Google Analytics no Adobe Experience Platform
 description: 'Explica como usar o Customer Journey Analytics (CJA) para assimilar seus dados do Google Analytics no Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 translation-type: tm+mt
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
+source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1183'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,6 @@ Depois que a Adobe Experience Platform começar a receber os dados Google Analyt
 
 ## Próximas etapas
 
-* Criar uma visualização de dados com base nos dados do Google Analytics
-Em seguida, você [cria uma visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews) no CJA, com base na conexão que contém os dados do Google Analytics.
+* Crie uma [visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#cja-dataviews) com base na conexão que contém dados Google Analytics.
 
-* Faça uma análise surpreendente no [Workspace](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/home.html?lang=en#cja-workspace). Verifique novamente mais tarde em alguns casos de uso de relatórios.
+* Faça uma análise [surpreendente no Workspace](/help/use-cases/ga-to-cja-reporting.md).
