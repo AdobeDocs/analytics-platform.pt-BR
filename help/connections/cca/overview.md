@@ -1,14 +1,14 @@
 ---
 title: Visão geral da Análise de vários canais
 description: Rechavear IDs de visitante de vários conjuntos de dados para compilar visitantes.
-translation-type: ht
-source-git-commit: 1ac845af7255428d9df0fa7d4d733f60e014ed83
-workflow-type: ht
-source-wordcount: '1076'
-ht-degree: 100%
+exl-id: 69763313-de27-4487-8e32-8277f1f693d8
+translation-type: tm+mt
+source-git-commit: 5770817d9e72cfde4786c205ecbfb32f34fc13ab
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 95%
 
 ---
-
 
 # Visão geral da Análise de vários canais
 
@@ -50,6 +50,7 @@ A Análise de vários canais é um recurso inovador e robusto, mas tem limitaç�
 * A compilação em campo não combina nem concatena campos.
 * O campo de ID transitória deve conter um único tipo de ID (ou seja, IDs de um único namespace). Por exemplo, o campo ID transitória não deve conter uma combinação de IDs de logon e IDs de email.
 * Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID transitória, a compilação em campo será escolhida por ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação baseada em campo escolherá Ann.
+* O Cross-Channel Analytics rastreia cada valor de ID persistente por 1 ano (TTL = 1 ano). Se um dispositivo não tiver atividade por mais de um ano e começar a ter atividade novamente, os novos eventos serão associados a uma pessoa anônima até que o usuário seja reidentificado (por exemplo, por meio de um novo logon).
 
 
 ## Habilitar a Análise de vários canais
