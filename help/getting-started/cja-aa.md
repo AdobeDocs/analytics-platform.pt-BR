@@ -1,14 +1,14 @@
 ---
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
+exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+source-git-commit: 4b543a1566580a8f3060c2387928148d55be70f2
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 100%
+source-wordcount: '1037'
+ht-degree: 99%
 
 ---
-
 
 # Suporte a recursos do Customer Journey Analytics
 
@@ -36,7 +36,9 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Permissões do usuário/Controles de acesso de dados | O CJA faz a distinção entre administradores e usuários de produtos do Adobe Admin Console. Somente administradores de produtos podem 1) criar/atualizar/excluir conexões ou visualizações de dados, 2) atualizar/excluir projetos, filtros ou métricas de cálculo que foram criadas por outros usuários e 3) compartilhar um projeto do Workspace com todos os usuários. |
 | Compilação entre dispositivos/canais | Consulte [Cross-Channel Analytics](/help/connections/cca/overview.md). |
 | Dimensões do Analysis Workspace predefinidas (por exemplo, Tipo de navegador, Tipo de referenciador, Sistema operacional etc.) | O CJA fornece essas dimensões nativamente desde que os campos básicos do XDM (como agente do usuário ou ID do dispositivo) sejam preenchidos. Para clientes que usam o ADC (Conector de dados Analytics), algumas dessas dimensões estão disponíveis, mas não todas. Consulte nossa [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
-| Acesso à API de relatórios | Atualmente disponível usando a API 2.0 do Analytics. |
+| Acesso à API de relatórios | Agora disponível usando a [API CJA](https://www.adobe.io/cja-apis/docs/). |
+| Relatórios/projetos agendados | Suporte completo. |
+| Exportação de PDF | Suporte completo. |
 
 ## Compatível com limitações
 
@@ -74,9 +76,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Calendários personalizados | Suporte planejado. |
 | Desduplicação de métrica | Suporte planejado. |
 | Persistência da variável de merchandising | Suporte planejado. |
-| Relatórios/projetos agendados | Suporte planejado. |
 | Alertas | Suporte planejado. |
-| Exportação de PDF | Suporte planejado. |
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
 | Report Builder (plug-in do Excel) | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
