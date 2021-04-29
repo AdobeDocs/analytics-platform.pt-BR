@@ -3,10 +3,10 @@ title: Adicionar pesquisas globais aos seus conjuntos de dados
 description: Use pesquisas globais para aumentar os relatórios com dimensões úteis no Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 translation-type: tm+mt
-source-git-commit: e19e9b7d7a88232e1eeb7ddaa739389e26763c1a
+source-git-commit: 8224fd2fde787f0d3cf0cb983641efc588c316b0
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 95%
+source-wordcount: '383'
+ht-degree: 100%
 
 ---
 
@@ -20,10 +20,6 @@ No Adobe Analytics tradicional, essas dimensões são exibidas sozinhas, enquant
 ## Usar pesquisas globais com conjuntos de dados do Conector de dados da Adobe
 
 Os conjuntos de dados de pesquisa global são aplicados automaticamente no momento do relatório. Se você estiver usando o [Conector de dados do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR#connectors) e trouxer uma dimensão para a qual a Adobe fornece uma pesquisa global, aplicaremos automaticamente essa pesquisa global. Se um conjunto de dados de evento contiver campos [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR), poderemos aplicar pesquisas globais a ele.
-
-## Usar pesquisas globais com conjuntos de dados personalizados
-
-Uma chave precisa estar presente no conjunto de dados do evento compatível com os conjuntos de dados de pesquisa global. Contanto que você preencha os campos XDM corretos adicionando alguns de nossos esquemas padrão de [mixins da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/xdm/mixins/event/environment-details.html?lang=pt-BR#mixins), será possível fazer com que conjuntos de dados personalizados funcionem com pesquisas globais.
 
 ## Campos de pesquisa global disponíveis
 
