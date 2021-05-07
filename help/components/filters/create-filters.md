@@ -2,11 +2,11 @@
 title: Criar filtros
 description: Entenda a interface do usuário de criação de filtro.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 O Construtor de filtros fornece uma tela para arrastar e soltar métricas, dimensões, filtros e eventos para filtrar visitantes com base na lógica, nas regras e nos operadores da hierarquia do contêiner. Essa ferramenta de desenvolvimento integrada permite construir e salvar filtros simples ou complexos que identificam os atributos e as ações do visitante nas visitas e ocorrências da página.
 
-Você pode criar filtros instantâneos soltando qualquer tipo de componente (dimensão, item de dimensão, evento, métrica, filtro, modelo de filtro, intervalo de datas) na zona de soltar do filtro na parte superior de um painel.
+Você pode criar filtros instantâneos soltando qualquer tipo de componente (dimensão, item de dimensão, evento, métrica, filtro, modelo de filtro, intervalo de datas) na zona designada do filtro na parte superior de um painel.
 
 Os tipos de componentes são convertidos automaticamente em filtros. Como alternativa, você pode clicar no sinal “+” na caixa de depósito **[!UICONTROL Adicionar filtro]**.
 
