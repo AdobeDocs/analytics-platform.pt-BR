@@ -2,11 +2,11 @@
 title: Glossário do Customer Journey Analytics
 description: Glossário do Customer Journey Analytics.
 exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Alguns termos do Customer Journey Analytics diferem de como eles têm sido usado
 | Empresa de logon | Organização da Experience Cloud | Consulte [Organizações e vinculação de contas](https://docs.adobe.com/content/help/pt-BR/core-services/interface/manage-users-and-products/organizations.html#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | N/D | Conjunto de relatórios | Os conjuntos de relatórios no sentido tradicional do Adobe Analytics não existem mais. Em vez disso, você cria [visualizações de dados](/help/data-views/create-dataview.md) (virtuais) a partir dos conjuntos de dados da Plataforma aos quais você estabeleceu conexões. |
 | Filtro | Segmento | Segmentos agora são filtros. Os filtros no Customer Journey Analytics se comportam da mesma forma que os segmentos. Somente a terminologia mudou. |
-| Exibição de dados | Conjunto de relatórios virtual | No Adobe Analytics, um conjunto de relatórios virtual é uma exibição filtrada de um conjunto de relatórios pai. A principal diferença entre um conjunto de relatórios virtual e uma visualização de dados no CJA é que o conjunto de relatórios virtual é um subconjunto de um conjunto de relatórios &quot;base&quot; ou &quot;principal&quot; e, como tal, herda algumas de suas configurações. Como os conjuntos de relatórios principal/base não existem mais, você define visualizações de dados com suas próprias configurações. |
+| Exibição de dados | Conjunto de relatórios virtual | No Adobe Analytics, um conjunto de relatórios virtual é uma exibição filtrada de um conjunto de relatórios principal. A principal diferença entre um conjunto de relatórios virtual e uma visualização de dados no CJA é que o conjunto de relatórios virtual é um subconjunto de um conjunto de relatórios &quot;base&quot; ou &quot;principal&quot; e, como tal, herda algumas de suas configurações. Como os conjuntos de relatórios principal/base não existem mais, você define visualizações de dados com suas próprias configurações. |
 
 ## Glossário da Adobe Experience Platform
 
 A Adobe Experience Platform padroniza dados e conteúdo em toda a empresa, acionando perfis de consumidor em tempo real, permitindo a ciência de dados e acelerando a velocidade do conteúdo para impulsionar a personalização da experiência na jornada do cliente.
-Consulte o [Glossário da Adobe Experience Platform](https://docs.adobe.com/content/help/pt-BR/experience-platform/landing/glossary.translate.html) para obter mais informações.
+Consulte o [Glossário da Adobe Experience Platform](https://docs.adobe.com/content/help/pt-BR/experience-platform/landing/glossary.html) para obter mais informações.
