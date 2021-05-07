@@ -1,19 +1,19 @@
 ---
-description: Crie um projeto e adicione componentes (dimensões, métricas, filtros, intervalos de datas) ao painel de forma livre.
+description: Crie um projeto e adicione componentes (dimensões, métricas, filtros, intervalos de data) ao painel de forma livre.
 keywords: Analysis Workspace
 title: Criar um projeto do Workspace
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Criar um projeto do Workspace
 
-Crie um projeto e adicione componentes (dimensões, métricas, filtros, intervalos de datas) ao painel de forma livre.
+Crie um projeto e adicione componentes (dimensões, métricas, filtros, intervalos de data) ao painel de forma livre.
 
 Esse artigo explica os elementos da interface do Analysis Workspace e mostra como criar um projeto.
 
@@ -21,7 +21,7 @@ Esse artigo explica os elementos da interface do Analysis Workspace e mostra com
 
 1. Especifique a permissão de usuário para criar e preparar os projetos.
 
-   Antes de criar ou preparar um projeto do Analysis Workspace, os administradores devem adicionar você a um grupo com a permissão **[!UICONTROL Criar/preparar projetos no Analysis Workspace]** ativada ou ao grupo de usuários **[!UICONTROL Acesso a todos os relatórios]**. (**[!UICONTROL Administrador]** > **[!UICONTROL Gerenciamento do usuário]** > [Grupos](https://experienceleague.adobe.com/docs/analytics/admin/user-product-management/user-groups/groups.html?lang=pt-BR)).
+   Antes de criar ou preparar um projeto do Analysis Workspace, os administradores devem adicionar você a um grupo com a permissão **[!UICONTROL Criar/preparar projetos no Analysis Workspace]** ativada ou ao grupo de usuários **[!UICONTROL Acesso a todos os relatórios]**. (**[!UICONTROL Administrador]** > **[!UICONTROL Gerenciamento do usuário]** > [Grupos](https://docs.adobe.com/content/help/pt-BR/analytics/admin/user-product-management/user-groups/groups.html)).
 
 1. Na [!DNL Experience Cloud], clique em **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**.
 
@@ -59,7 +59,7 @@ Esse artigo explica os elementos da interface do Analysis Workspace e mostra com
  <tbody> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/components/analysis-workspace-components.md"  > Componentes</a> </td> 
-   <td colname="col2"> <p>Dimension, métricas, filtros e intervalos de datas que você pode arrastar para os projetos. </p> </td> 
+   <td colname="col2"> <p>Dimensões, métricas, filtros e intervalos de datas que você pode arrastar para os projetos. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><a href="/help/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.md"  > Visualizações</a> </td> 
@@ -90,7 +90,7 @@ Esse artigo explica os elementos da interface do Analysis Workspace e mostra com
 
    **Componentes**
 
-   A barra de ferramentas Componente exibe dimensões, métricas, filtros e intervalos de datas pesquisáveis que você usa com mais frequência.
+   A barra de ferramentas Componentes exibe dimensões, métricas, filtros e intervalos de datas pesquisáveis que são usados com mais frequência.
 
 <table id="table_4626163E26DE46CB86391868BBA3AD32"> 
  <thead> 
@@ -129,7 +129,7 @@ O painel [!UICONTROL Visualizações] oferece gráficos, roscas, tabelas de dado
 
 1. Etapa
 
-## Use o menu de contexto para personalizar seus dados {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
+## Use o menu de clique com botão direito para personalizar os dados {#concept_8117C300F21843B99F4E1B9AB7B11B6F}
 
 O menu de opções permite executar as seguintes ações, que dependem da célula na tabela na qual você clicou com o botão direito do mouse.
 
