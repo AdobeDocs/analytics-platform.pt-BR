@@ -2,17 +2,17 @@
 title: (B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa
 description: Saiba como adicionar dados baseados em conta como um conjunto de dados de pesquisa ao CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '932'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # (B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa
 
-Este caso de uso B2B mostra como especificar seus dados em um nível de conta, em vez de em um nível de pessoa para análise. A análise a nível de conta pode responder perguntas como
+Este caso de uso B2B mostra como especificar os dados a um nível de conta em vez de a um nível de pessoa para análise. A análise a nível de conta pode responder perguntas como
 
 * Que nome de empresa corresponde a esta conta?
 * Quantos funcionários estão associados a esta conta/empresa?
@@ -20,9 +20,9 @@ Este caso de uso B2B mostra como especificar seus dados em um nível de conta, e
 * Como essa conta funciona no geral, com relação a uma campanha de marketing específica, em comparação a outra conta?
 * Algumas funções (como o Gerente de TI) em uma conta estão se comportando de forma diferente da mesma função em outra conta?
 
-Você consegue tudo isso trazendo as informações no nível da conta como um conjunto de dados de [pesquisa](/help/getting-started/cja-glossary.md).
+Você consegue tudo isso incluindo as informações no nível da conta como um conjunto de dados de [pesquisa](/help/getting-started/cja-glossary.md).
 
-Primeiro, você cria um esquema de pesquisa na Adobe Experience Platform e depois cria um conjunto de dados de tabela de pesquisa assimilando dados de nível de conta baseados em .csv. Em seguida, você cria uma conexão no Customer Journey Analytics (CJA0) que combina diferentes conjuntos de dados, incluindo o conjunto de pesquisa criado. Posteriormente, você cria uma visualização de dados e, por fim, pode utilizar todos esses dados no Workspace.
+Primeiro, você cria um esquema de pesquisa na Adobe Experience Platform e depois cria um conjunto de dados de tabela de pesquisa assimilando dados de nível de conta baseados em .csv. Em seguida, você cria uma conexão no Customer Journey Analytics (CJA) que combina diferentes conjuntos de dados, incluindo o conjunto de pesquisa criado. Depois disso, cria uma visualização de dados e, finalmente, pode utilizar todos esses dados no Workspace.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Depois de criar o esquema, é necessário criar um conjunto de dados de pesquisa
 >
 >O CJA não aceita números inteiros em conjuntos de dados de pesquisa. Se você adicionar os campos inteiros no esquema XDM para o conjunto de dados de pesquisa, não será possível usar esses números inteiros como métricas ou métricas calculadas. Por exemplo, se annualRevenue ou totalEmployees forem definidos como inteiros, eles serão exibidos como “0” nos relatórios no CJA. No entanto, se você atribuí-los como strings, poderá usá-los como informações de pesquisa.
 
-Por exemplo, annualRevenue ou totalEmployees são definidos como um inteiro no exemplo a seguir - é por isso que estão mostrando &quot;0&quot; no CJA.
+Por exemplo, annualRevenue ou totalEmployees são definidos como um inteiro no exemplo a seguir, por isso eles são exibidos como “0” no CJA.
 
 1. Na Adobe Experience Platform, acesse **[!UICONTROL Gerenciamento de dados > Conjuntos de dados]**.
 1. Clique em **[!UICONTROL + Criar conjunto de dados]**.
