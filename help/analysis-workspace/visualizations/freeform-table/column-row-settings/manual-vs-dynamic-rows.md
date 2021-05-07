@@ -2,11 +2,11 @@
 title: Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre
 description: Como interagir com itens de dimensão dinâmicos e estáticos em tabelas.
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '519'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
