@@ -2,11 +2,11 @@
 title: Visão geral dos componentes
 description: Saiba quais componentes o CJA oferece e como usá-los no relatórios.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Você pode gerenciar os seguintes componentes:
 
 ## Componentes do Analysis Workspace
 
-Os componentes no Analysis Workspace consistem em métricas, dimensões, filtros e granularidades que você pode arrastar e soltar em um projeto. Os componentes personalizados que você criou são adicionados a esses painéis, como intervalos de data personalizados.
+Os componentes do Analysis Workspace são métricas, dimensões, filtros e granularidades de tempo que você pode arrastar e soltar em um projeto. Os componentes personalizados que você criou são adicionados a esses painéis, como intervalos de data personalizados.
 
 Para acessar o painel Componentes, clique no ícone **[!UICONTROL Componentes]** no painel à esquerda. Você pode alternar entre Painéis (Painel em branco, [Painel de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md) ou painel do [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), [Visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) e Componentes usando os ícones do painel esquerdo ou usando [teclas de atalho](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
@@ -44,11 +44,11 @@ Há várias maneiras de gerenciar componentes (individualmente ou ao selecionar 
 
 | Ação de componente | Descrição |
 | --- | --- |
-| Tag | Organize ou gerencie componentes aplicando tags. Assim, ele é exibido no gerenciador de componente respectivo, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Filtros], ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos] |
-| Marcar como favorito | Adicione o componente à sua lista de favoritos. Assim, ele é exibido no gerenciador de componente respectivo, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL filtros], ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos]. |
-| Aprovar | Aprove o componente para torná-lo canônico. Assim, ele é exibido no gerenciador de componente respectivo, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Filtros], ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos] |
-| Compartilhar | Aplica-se somente a filtros. |
-| Excluir | Aplica-se somente a filtros. |
+| Tag | Organize ou gerencie componentes aplicando tags. Em seguida, ele é exibido no respectivo gerenciador de componete, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Filtros] ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos] |
+| Marcar como favorito | Adicione o componente à sua lista de favoritos. Em seguida, ele é exibido no respectivo gerenciador de componente, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Filtros] ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos]. |
+| Aprovar | Aprove o componente para torná-lo canônico. Em seguida, ele é exibido no respectivo gerenciador de componente, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Filtros] ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos] |
+| Compartilhar | Aplicado somente a filtros. |
+| Excluir | Aplicado somente a filtros. |
 
 Assista ao vídeo Criar métricas, filtros e datas:
 
