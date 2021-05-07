@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
 workflow-type: tm+mt
 source-wordcount: '2795'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ A criação de uma visualização de dados envolve a criação de métricas e di
 | [!UICONTROL Descrição] | Uma descrição detalhada não é obrigatória, mas é recomendada. |
 | [!UICONTROL Fuso horário] | Escolha em qual fuso horário você deseja que seus dados sejam apresentados. |
 | [!UICONTROL Tags] | As tags permitem organizar as visualizações de dados em categorias. |
-| [!UICONTROL Contêineres] | É possível renomear os containers aqui e é assim que eles serão exibidos em qualquer projeto do Workspace com base nessa visualização de dados. Os contêineres são usados em filtros e fallout/fluxo, etc., para definir a amplitude ou o estreitamento do escopo ou do contexto. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) |
+| [!UICONTROL Contêineres] | É possível renomear os containers aqui e é assim que eles serão exibidos em qualquer projeto do Workspace com base nessa visualização de dados. Os containers são usados em filtros e fallout/fluxo para definir a amplitude ou o estreitamento do escopo ou do contexto. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) |
 | [!UICONTROL O nome do container de pessoa é...] | [!UICONTROL Pessoa] (padrão). O container [!UICONTROL Pessoa] inclui cada visita e exibição de página de visitante em um intervalo de tempo especificado. Você pode renomear como &quot;Usuário&quot; ou qualquer outro termo que desejar. |
 | [!UICONTROL O nome do container da sessão é...] | [!UICONTROL Sessão] (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear como &quot;Visita&quot; ou qualquer outro termo que desejar. |
 | [!UICONTROL O nome do container de evento é...] | [!UICONTROL Evento] (padrão). O container [!UICONTROL Evento] define quais eventos de página você deseja incluir ou excluir de um filtro. |
@@ -44,12 +44,12 @@ Em seguida, você pode criar métricas e dimensões com base em elementos do esq
 Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo. Lembre-se:
 
 * Os componentes já incluídos são os componentes obrigatórios padrão (gerados pelo sistema).
-* Também aplicamos o filtro **[!UICONTROL Contém dados]** por padrão, para que sejam exibidos apenas campos de Esquema que contêm dados. Se estiver procurando um campo que não contenha dados, basta remover o filtro .
+* Também aplicamos o filtro **[!UICONTROL Contém dados]** por padrão, para que sejam exibidos apenas campos de Esquema que contêm dados. Se estiver procurando um campo que não contém dados, bastará remover o filtro.
 
 1. Agora arraste um campo de esquema, como [!UICONTROL pageTitle], do painel esquerdo para a seção Métricas ou Dimensão.
 
    Você pode arrastar o mesmo campo de esquema nas seções de dimensões ou métricas várias vezes e configurar a mesma dimensão ou métrica de maneiras diferentes.
-Por exemplo, no campo **[!UICONTROL pageTitle]**, é possível criar uma dimensão chamada &quot;Páginas de produto&quot; e outra &quot;Páginas de erro&quot;, etc., renomeando o **[!UICONTROL Nome do componente]** à direita. No campo **[!UICONTROL pageTitle]**, você também pode criar métricas com base em um valor de sequência. Por exemplo, você pode criar uma ou mais métricas **[!UICONTROL Pedidos]** com diferentes configurações de atribuição e diferentes valores de inclusão/exclusão.
+Por exemplo, no campo **[!UICONTROL pageTitle]**, é possível criar uma dimensão chamada &quot;Páginas de produto&quot; e outra chamada &quot;Páginas de erro&quot; etc. renomeando o **[!UICONTROL Nome do componente]** à direita. No campo **[!UICONTROL pageTitle]**, você também pode criar métricas com base em um valor de sequência. Por exemplo, você pode criar uma ou mais métricas **[!UICONTROL Pedidos]** com diferentes configurações de atribuição e diferentes valores de inclusão/exclusão.
 
    ![](assets/components-tab-3.png)
 
@@ -111,7 +111,7 @@ Por exemplo, você pode criar uma dimensão fora do campo pageTitle, mas chamá-
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
 | [!UICONTROL Diferencia maiúsculas de minúsculas] | Padrão = Ativado. Essa configuração se aplica somente à seção [!UICONTROL Incluir/Excluir valores]. Isso permite dizer se a regra de inclusão/exclusão que você está aplicando deve diferenciar maiúsculas de minúsculas. |
-| [!UICONTROL Corresponder] | Permite que você especifique quais valores deseja considerar para relatórios antes da atribuição e filtros (por exemplo, use apenas valores contendo a frase &quot;erro&quot;). Você pode especificar: **[!UICONTROL Se todos os critérios forem atendidos]** ou **[!UICONTROL Se algum critério for atendido]**. |
+| [!UICONTROL Corresponder] | Permite especificar quais valores você gostaria de considerar para os relatórios antes da atribuição e filtros (por exemplo, usar apenas valores contendo a frase &quot;erro&quot;). Você pode especificar: **[!UICONTROL Se todos os critérios forem atendidos]** ou **[!UICONTROL Se algum critério for atendido]**. |
 | [!UICONTROL Critérios] | Permite especificar a lógica de correspondência que deve ser aplicada a uma regra de filtro específica.<ul><li>**Sequência**: Contém a frase, Contém qualquer termo, Contém todos os termos, Não contém nenhum termo, Não contém a frase, É igual, Não é igual, Começa com, Termina com</li><li>**Duplo/Número inteiro**: é igual, não é igual, é maior que, é menor que, é maior que ou igual a, é menor que ou igual a</li><li>**Data**: é igual a, não é igual, é posterior a, é anterior, ocorre dentro de</li></ul> |
 | [!UICONTROL Corresponder operando] | Permite especificar o operando correspondente ao qual o operador deve ser aplicado.<ul><li>**Sequência**: Campo de texto</li><li>**Duplo/Número inteiro**: Campo de texto com setas para cima/para baixo para valores numéricos</li><li>**Data**: Seletor de granularidade do dia (calendário)</li><li>**Data Hora**: Seletor de granularidade de data e hora</li></ul> |
 | [!UICONTROL Adicionar regra] | Permite especificar um operador e um operando de correspondência adicional. |
@@ -137,13 +137,13 @@ Observe também que qualquer item especificado neste campo pode ser usado para o
 | [!UICONTROL Se exibido, chame Nenhum valor...] | É aqui que você pode renomear **[!UICONTROL Nenhum valor]** para algo diferente. |
 | [!UICONTROL Não mostrar Nenhum valor por padrão] | Não mostra esse valor nos relatórios. |
 | [!UICONTROL Mostrar Nenhum valor por padrão] | Mostra esse valor nos relatórios. |
-| [!UICONTROL Tratar Nenhum valor como um valor] | Essa configuração substituirá valores em branco nos dados pelo texto especificado em [!UICONTROL Se mostrado, chame No value ...]. Por exemplo, se você tiver tipos de dispositivo móvel como a dimensão, poderá renomear o item **[!UICONTROL Nenhum valor]** para &quot;Desktop&quot;. Observe que, quando você alterar esse campo para um valor personalizado, ele será tratado como um valor de sequência de caracteres legítimo. Portanto, se você inserir o valor &quot;Vermelho&quot; nesse campo, qualquer instância da sequência &quot;Vermelho&quot; que for mostrada nos próprios dados também será inserida sob o mesmo item da linha especificado. |
+| [!UICONTROL Tratar Nenhum valor como um valor] | Essa configuração substituirá valores em branco nos dados pelo texto especificado em [!UICONTROL Se mostrado, chame No value...]. Por exemplo, se você tiver tipos de dispositivo móvel como a dimensão, poderá renomear o item **[!UICONTROL Nenhum valor]** para &quot;Desktop&quot;. Observe que, quando você alterar esse campo para um valor personalizado, ele será tratado como um valor de sequência de caracteres legítimo. Portanto, se você inserir o valor &quot;Vermelho&quot; nesse campo, qualquer instância da sequência &quot;Vermelho&quot; que for mostrada nos próprios dados também será inserida sob o mesmo item da linha especificado. |
 
 ### Definir configurações de persistência
 
 ![](assets/persistence.png)
 
-Para obter mais informações, consulte o tópico em [Persistência](/help/data-views/persistence.md).
+Para obter mais informações, consulte o tópico sobre [Persistência](/help/data-views/persistence.md).
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
@@ -179,13 +179,13 @@ Esses componentes padrão obrigatórios são adicionados a cada visualização d
 | [!UICONTROL Pessoas] | Métrica | Essa métrica é baseada na ID de pessoa especificada em uma [!UICONTROL Connection]. |
 | [!UICONTROL Sessões] | Métrica | Essa métrica se baseia nas configurações de sessão especificadas abaixo. |
 | [!UICONTROL Eventos] | Métrica | Essa métrica representa o número de linhas de todos os conjuntos de dados de eventos em uma [!UICONTROL Connection]. |
-| [!UICONTROL Dia] | Dimensão | A dimensão &quot;Dia&quot; informa o dia em que uma determinada métrica ocorreu. O primeiro item de dimensão é o primeiro dia no intervalo de datas, e o último item de dimensão é o último dia no intervalo de datas. |
-| [!UICONTROL Semana] | Dimensão | A dimensão &quot;Semana&quot; informa a semana em que uma determinada métrica ocorreu. O primeiro item de dimensão é a primeira semana no intervalo de datas, e o último item de dimensão é a última semana no intervalo de datas. |
-| [!UICONTROL Mês] | Dimensão | A dimensão Mês informa o mês em que uma determinada métrica ocorreu. O primeiro item de dimensão é o primeiro mês no intervalo de datas, e o último item de dimensão é o último mês no intervalo de datas. |
-| [!UICONTROL Trimestre] | Dimensão | A dimensão &quot;Trimestre&quot; informa o trimestre em que uma determinada métrica ocorreu. O primeiro item de dimensão é o primeiro trimestre no intervalo de datas, e o último item de dimensão é o último trimestre no intervalo de datas. |
-| [!UICONTROL Ano] | Dimensão | A dimensão &quot;Ano&quot; informa o ano em que uma determinada métrica ocorreu. O primeiro item de dimensão é o primeiro ano no intervalo de datas, e o último item de dimensão é o ano mais recente no intervalo de datas. |
-| [!UICONTROL Hora] | Dimensão | A dimensão &quot;Hora&quot; informa a hora em que uma determinada métrica ocorreu (arredondada para baixo). O primeiro item de dimensão é a primeira hora no intervalo de datas, e o último item de dimensão é a última hora no intervalo de datas. |
-| [!UICONTROL Minuto] | Dimensão | A dimensão &quot;Minuto&quot; informa o minuto em que uma determinada métrica ocorreu (arredondado para baixo). O primeiro item de dimensão é o primeiro minuto no intervalo de datas, e o último item de dimensão é o último minuto no intervalo de datas. |
+| [!UICONTROL Dia] | Dimensão | A dimensão “Dia” informa o dia em que determinada métrica ocorreu. O primeiro item de dimensão é o primeiro dia no intervalo de datas, e o último item de dimensão é o último dia no intervalo de datas. |
+| [!UICONTROL Semana] | Dimensão | A dimensão “Semana” informa a semana em que determinada métrica ocorreu. O primeiro item de dimensão é a primeira semana no intervalo de datas, e o último item de dimensão é a última semana no intervalo de datas. |
+| [!UICONTROL Mês] | Dimensão | A dimensão “Mês” informa o mês em que determinada métrica ocorreu. O primeiro item de dimensão é o primeiro mês no intervalo de datas, e o último item de dimensão é o último mês no intervalo de datas. |
+| [!UICONTROL Trimestre] | Dimensão | A dimensão “Trimestre” informa o trimestre em que determinada métrica ocorreu. O primeiro item de dimensão é o primeiro trimestre no intervalo de datas, e o último item de dimensão é o último trimestre no intervalo de datas. |
+| [!UICONTROL Ano] | Dimensão | A dimensão “Ano” relata o ano em que determinada métrica ocorreu. O primeiro item de dimensão é o primeiro ano no intervalo de datas, e o último item de dimensão é o ano mais recente no intervalo de datas. |
+| [!UICONTROL Hora] | Dimensão | A dimensão “Hora” informa a hora em que determinada métrica ocorreu (arredondada para baixo). O primeiro item de dimensão é a primeira hora no intervalo de datas, e o último item de dimensão é a última hora no intervalo de datas. |
+| [!UICONTROL Minuto] | Dimensão | A dimensão “Minuto” informa o minuto em que determinada métrica ocorreu (arredondado para baixo). O primeiro item de dimensão é o primeiro minuto no intervalo de datas, e o último item de dimensão é o último minuto no intervalo de datas. |
 
 ### Componentes padrão opcionais
 
@@ -196,11 +196,11 @@ Os componentes padrão opcionais estão disponíveis na guia **[!UICONTROL Compo
 | [!UICONTROL Sessão inicia] | Métrica | Essa métrica conta o número de eventos que foram o primeiro evento de uma sessão. Quando usado em uma definição de filtro (por exemplo, &quot;[!UICONTROL Inícios de sessão] existe&quot;), ela filtra somente para o primeiro evento de cada sessão. |
 | [!UICONTROL Sessão termina] | Métrica | Essa métrica conta o número de eventos que foram o último evento de uma sessão. Semelhante a [!UICONTROL Inícios de sessão], também pode ser usado em uma definição de filtro para filtrar os itens para o último evento de cada sessão. |
 | [!UICONTROL Tempo gasto (segundos)] | Métrica | A métrica [!UICONTROL Tempo gasto] adiciona o tempo entre dois valores diferentes para uma dimensão. |
-| [!UICONTROL Tempo gasto por evento] | Dimensão | [!UICONTROL Tempo gasto por ] evento define a  [!UICONTROL métrica Tempo ] gasto em   eventos. |
-| [!UICONTROL Tempo gasto por sessão] | Dimensão | [!UICONTROL Tempo gasto por ] sessão classifica a  [!UICONTROL métrica Tempo ] gasto em   sessões. |
-| [!UICONTROL Tempo gasto por pessoa] | Dimensão | [!UICONTROL Tempo gasto por pessoa] agrupa a métrica [!UICONTROL Tempo gasto] em compartimentos [!UICONTROL Pessoa]. |
-| [!UICONTROL ID em lote] | Dimensão | Representa o lote de Experience Platform do qual um [!UICONTROL Event] fez parte. |
-| [!UICONTROL ID do conjunto de dados] | Dimensão | Representa o conjunto de dados Experience Platform do qual um [!UICONTROL Event] fazia parte. |
+| [!UICONTROL Tempo gasto por evento] | Dimensão | [!UICONTROL Tempo gasto por evento] agrupa a métrica [!UICONTROL Tempo gasto] em compartimentos de [!UICONTROL Eventos]. |
+| [!UICONTROL Tempo gasto por sessão] | Dimensão | [!UICONTROL Tempo gasto por sessão] agrupa a métrica [!UICONTROL Tempo] em compartimentos de [!UICONTROL Sessão]. |
+| [!UICONTROL Tempo gasto por pessoa] | Dimensão | [!UICONTROL Tempo gasto por pessoa] agrupa a métrica [!UICONTROL Tempo gasto] em compartimentos de [!UICONTROL Pessoa]. |
+| [!UICONTROL ID em lote] | Dimensão | Representa o lote da Experience Platform do qual um [!UICONTROL Evento] fez parte. |
+| [!UICONTROL ID do conjunto de dados] | Dimensão | Representa o conjunto de dados Experience Platform do qual um [!UICONTROL Evento] fazia parte. |
 
 ### Filtrar campos de esquema e dimensões/métricas
 
