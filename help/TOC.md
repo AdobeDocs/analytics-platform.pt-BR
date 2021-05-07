@@ -10,11 +10,11 @@ user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 95%
       + [Visualizar dimensões](components/dimensions/view-dimensions.md)
       + [Analisar dimensões](components/dimensions/t-breakdown-fa.md)
       + [Dimensões de separação de tempo](components/dimensions/time-parting-dimensions.md)
-      + [Dimension com uma cardinalidade muito alta](components/dimensions/high-cardinality.md)
+      + [Dimensões com uma cardinalidade muito alta](components/dimensions/high-cardinality.md)
    + [Métricas](components/apply-create-metrics.md)
    + Filtros {#cja-filters}
       + [Visão geral dos Filtros](components/filters/filters-overview.md)
@@ -156,8 +156,8 @@ ht-degree: 95%
    + [Casos de uso da assimilação de dados](use-cases/data-ingestion.md)
    + [Usar dimensões do canal de marketing](use-cases/marketing-channels.md)
    + [Adicionar pesquisas globais aos seus conjuntos de dados](use-cases/global-lookups.md)
-   + [Assimilar dados do Google Analytics no Adobe Experience Platform](use-cases/ga-to-cja.md)
-   + [Relatório de dados de Google Analytics no CJA](use-cases/ga-to-cja-reporting.md)
+   + [Assimilar dados do Google Analytics na Adobe Experience Platform](use-cases/ga-to-cja.md)
+   + [Relatórios de dados do Google Analytics no CJA](use-cases/ga-to-cja-reporting.md)
 + Painéis do Analytics {#cja-dashboards}
    + [Painéis do Analytics - Visão geral](mobile-app/home.md)
    + [Guia do curador](mobile-app/curator.md)
