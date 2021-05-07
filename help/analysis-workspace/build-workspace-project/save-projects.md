@@ -2,9 +2,9 @@
 description: Saiba mais sobre as diferentes opções de salvar, incluindo salvar automaticamente, salvar como e salvar como modelo.
 title: Salvar projetos
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a0ea2be203aa2e0df7b195e259b6d98c0c027652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '303'
 ht-degree: 100%
 
