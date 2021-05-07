@@ -2,11 +2,11 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1974'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ Uma conexão permite integrar conjuntos de dados do [!DNL Adobe Experience Platf
 
 Clique [aqui](https://docs.adobe.com/content/help/pt-BR/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) para obter uma visão geral do vídeo.
 
-Para criar uma conexão CJA, você precisa das seguintes permissões:
+Para criar uma conexão do CJA, você precisa das seguintes permissões:
 
 Adobe Experience Platform:
 * Modelagem de dados: Exibir esquemas, Gerenciar esquemas
-* Gerenciamento de dados: Visualizar conjuntos de dados, gerenciar conjuntos de dados
+* Gerenciamento de dados: exibir conjuntos de dados, gerenciar conjuntos de dados
 * Assimilação de dados: Gerenciar fontes
 
 Customer Journey Analytics
-* Acesso de administrador do produto
+* Acesso do administrador do produto
 
 >[!IMPORTANT]
 >
@@ -137,7 +137,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 
 Esse cálculo deve ser concluído para cada conjunto de dados na conexão.
 
-1. Vá para os [Serviços de consulta da Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) e crie uma nova consulta.
+1. Vá para os [Serviços de consulta da Adobe Experience Platform](https://docs.adobe.com/content/help/pt-BR/experience-platform/query/home.html) e crie uma nova consulta.
 
 1. A consulta seria semelhante a:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
