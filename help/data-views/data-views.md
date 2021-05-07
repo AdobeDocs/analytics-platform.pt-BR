@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 9b45873dbdc1a400b849723051d921b49bff6d65
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ Uma visualização de dados fica sobre uma conexão do [Customer Journey Analyti
 >
 >Todas as configurações selecionadas ou alteradas em uma visualização de dados são retroativas e não destrutivas. Em outras palavras, eles não alteram permanentemente os dados subjacentes.
 
-Você pode criar visualizações de dados diferentes para a mesma conexão, com conjuntos de componentes muito diferentes (dimensões/métricas). Ou criar visualizações de dados com configurações diferentes para o tempo limite da visita, atribuição etc. Por exemplo, você pode ter uma visualização de dados em que todas as dimensões estão definidas como [!UICONTROL Último contato] e, simultaneamente, outra visualização de dados (com base no mesmo conjunto de dados) com todas as dimensões definidas como [!UICONTROL Primeiro contato].
+Você pode criar visualizações de dados diferentes para a mesma conexão, com conjuntos de componentes muito diferentes (dimensões/métricas). Ou criar visualizações de dados com configurações diferentes para o tempo limite da visita, atribuição etc. Por exemplo, você pode ter uma visualização de dados em que todas as dimensões estão definidas como [!UICONTROL Último contato], e, simultaneamente, outra visualização de dados (com base no mesmo conjunto de dados) com todas as dimensões definidas com [!UICONTROL Primeiro contato].
 
 Os projetos do Workspace no Customer Journey Analytics são baseados em visualizações de dados.
 
@@ -26,7 +26,7 @@ Os projetos do Workspace no Customer Journey Analytics são baseados em visualiz
 
 A atualização mais recente oferece muito mais flexibilidade no que você pode fazer com visualizações de dados. Esses aprimoramentos permitem **alterar espontaneamente as configurações do elemento de esquema nas Visualizações de dados, sem precisar alterar o esquema na Adobe Experience Platform ou reimplementar o ambiente do CJA**.
 
-* **Você pode alterar um componente de uma métrica para uma dimensão e vice-versa**. Você pode criar métricas de campos de sequência ou criar dimensões de campos numéricos. Isso facilita a vida, pois não é necessário criar um campo numérico no esquema XDM para cada métrica desejada. Em vez disso, você pode criá-lo espontaneamente na caixa de diálogo Visualizações de dados. Veja alguns exemplos:
+* **Você pode alterar um componente de uma métrica para uma dimensão e vice-versa**. Você pode criar métricas de campos de sequência ou criar dimensões de campos numéricos. Isso facilita a sua vida, pois não é necessário criar um campo numérico no esquema XDM para cada métrica desejada. Em vez disso, você pode criá-lo espontaneamente na caixa de diálogo Visualizações de dados. Veja alguns exemplos:
    * **Crie uma ou mais dimensões de um único campo de esquema**. É uma relação um para muitos. Por exemplo, é possível criar uma ou mais métricas de receita e/ou uma ou mais dimensões de receita de um único campo de esquema.
    * **Use um campo de sequência como métrica**: ao preencher um esquema na Experience Platform com um conjunto de dados, você pode não saber antecipadamente quais elementos do esquema são necessários. Por exemplo, talvez você não tenha percebido que precisava de uma métrica para &quot;Erros em uma página&quot;. Como resultado, você não criou um elemento de esquema numérico para esse efeito. Ao usar um elemento de sequência como métrica, agora é possível usar as configurações de visualizações de dados para especificar que, sempre que uma sequência contiver a palavra &quot;erro&quot;, ela poderá ser usada como métrica.
    * **Use um campo numérico como dimensão**: por exemplo, se você quiser obter a métrica receita da dimensão receita, ela mostrará cada valor como um item de dimensão ($100, $175, $1.000 etc.) e o número de instâncias para cada item de dimensão. A receita como uma métrica se comportaria como sempre.
