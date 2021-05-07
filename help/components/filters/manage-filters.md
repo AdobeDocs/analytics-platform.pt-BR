@@ -2,17 +2,17 @@
 title: Gerenciar filtros
 description: saiba como gerenciar filtros no Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1094'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Gerenciar filtros
 
-O Gerenciador de filtros oferece várias maneiras de preparar filtros, como compartilhar, marcar, aprovar, copiar, excluir e marcar como favoritos.
+O Gerenciador de filtros oferece várias maneiras de tratar segmentos, como compartilhar, marcar, aprovar, copiar, excluir e marcar como favoritos.
 
 O Gerenciador de filtros mostra todos os seus filtros e os compartilhados com você. Os usuários de nível administrativo podem visualizar todos os filtros na organização. Essa visão geral apresenta a interface do usuário e os recursos do Gerenciador de filtros.
 
@@ -35,11 +35,11 @@ Acesse o Gerenciador de filtros indo até **[!UICONTROL Análise de Jornada do c
 | 11 | Seletor de coluna | (Parte superior direita) Permite selecionar quais colunas serão exibidas no Gerenciador de filtros. |
 | 12 | Ícone Compartilhado | Indica que este filtro foi compartilhado por você ou com você. |
 | 13 | Ícone Aprovado | Indica que o filtro foi aprovado pelo Administrador. |
-| 14 | Outros filtros | Permite que você visualize filtros por Tags, Visualizações de dados, Proprietários e Outros (Mostrar tudo, Meu, Compartilhado comigo, Aprovado, Favoritos). |
+| 14 | Outros filtros | Permite que você veja os filtros por Tags, Visualizações de dados, Proprietários e Outros (Exibir tudo, Meus, Compartilhados comigo, Aprovados, Favoritos). |
 
 ## Planejar filtros
 
-Dedicar algum tempo para planejar filtros melhora a probabilidade de eles serem úteis para sua organização e seus números serão mantidos sob controle.
+Reservar algum tempo para planejar filtros aumenta a probabilidade de que eles sejam úteis para a organização e seus números sejam mantidos sob controle.
 
 * Considere o público-alvo: quem consumirá? Com quem você compartilhará? Quais grupos de pessoas usarão esse filtro e como devo marcá-lo apropriadamente? Isso também significa fornecer uma boa descrição do filtro. No mínimo, a descrição deve responder a estas perguntas:
 
@@ -79,7 +79,7 @@ Para marcar um filtro:
 
    * digite um novo nome de tag e pressione **[!UICONTROL Enter]**.
 
-1. Clique em **[!UICONTROL Tag]** novamente para marcar o filtro.
+1. Clique em **[!UICONTROL Tag]** novamente para adicionar uma tag ao filtro.
 
 A tag agora deve aparecer na coluna Tags. (Clique no ícone de engrenagem na parte superior direita para gerenciar suas colunas).
 Também é possível filtrar tags em **[!UICONTROL Filtros > Tags]**.
@@ -92,9 +92,9 @@ Esta é a forma de marcar um filtro como aprovado:
 
 1. No Gerenciador de filtros, marque a caixa de seleção à esquerda do título do Filtro.
 
-1. Clique em **[!UICONTROL Aprovar]** na barra de tarefas do gerenciamento de filtro.
+1. Clique em **[!UICONTROL Aprovar]** na barra de tarefas do gerenciador de filtros.
 
-1. Considere compartilhar os filtros aprovados na organização.
+1. Considere compartilhar os filtros aprovados com a sua organização.
 
 1. Clique em **[!UICONTROL OK]**.
 
@@ -102,7 +102,7 @@ Esta é a forma de marcar um filtro como aprovado:
 
    ![](assets/seg_approved.png)
 
-1. Também é possível cancelar a aprovação de um filtro aprovado ao clicar em **[!UICONTROL Cancelar aprovação]**.
+1. Também é possível cancelar a aprovação de um filtro aprovado clicando em **[!UICONTROL Cancelar aprovação]**.
 
 ### Compartilhar filtros
 
