@@ -2,11 +2,11 @@
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ A filtragem inclui o [Construtor de filtros](/help/components/filters/create-fil
 
 ## Filtros sequenciais
 
-Os filtros sequenciais permitem identificar visitantes de acordo com a navegação e visualização de página no site, o que fornece um filtro de ações e interações definidas. Os filtros sequenciais ajudam você a identificar o que um visitante gosta e o que um visitante evita. Ao construir filtros sequenciais, o operador ENTÃO é usado para definir e organizar a navegação do visitante.
+Os filtros sequenciais permitem identificar visitantes de acordo com a navegação e visualização de página no site, o que fornece um filtro de ações e interações definidas. Filtros sequenciais ajudam você a identificar do que um visitante gosta e o que ele evita. Ao construir filtros sequenciais, o operador THEN é usado para definir e organizar a navegação do visitante.
 
 Exemplo:
 
@@ -79,8 +79,8 @@ Os contêineres de evento contam com detalhamentos de página única com base em
 
 ## Modelo de filtro pronto para uso
 
-O Analytics tradicional vem com vários filtros de modelo (filtros) e métricas calculadas prontos para uso. Muitos deles não se aplicam ao CJA ou precisarão ser renomeados ou recriados. Outros dependerão de uma solução para variáveis com reconhecimento de contexto no CJA.
+O Analytics tradicional vem com muitos modelo de filtros (filtros) e métricas calculadas prontos para uso. Muitos deles não se aplicam ao CJA ou precisarão ser renomeados ou recriados. Outros dependerão de uma solução para variáveis com reconhecimento de contexto no CJA.
 
 | Nome do filtro | Descrição |
 | --- | --- |
-| Todos os dados | Esse é um filtro necessário que é adicionado dinamicamente aos relatórios quando uma métrica é adicionada à linha de uma tabela de Forma livre. |
+| Todos os dados | Esse é um filtro necessário que é adicionado dinamicamente aos relatórios quando uma métrica é adicionada à linha de uma Tabela de forma livre. |
