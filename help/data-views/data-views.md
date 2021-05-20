@@ -5,7 +5,7 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -61,7 +61,7 @@ Algumas configurações de visualização de dados podem ser substituídas no An
 
 * [!UICONTROL Janela de lookback]
 * Atribuição de métrica
-* Se os usuários veem ou não o item de linha [!UICONTROL Sem Valor] em um relatório
+* Se os usuários veem ou não o item da linha [!UICONTROL Nenhum valor] em um relatório.
 
 ## Configurações de visualização de dados que não podem ser substituídas no Workspace
 
@@ -72,7 +72,7 @@ Algumas configurações de visualização de dados podem ser substituídas no An
 
 ## Excluir visualizações de dados
 
-Se você excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que qualquer projeto do Workspace que depende dessa visualização de dados excluída deixará de funcionar.
+Se você excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que qualquer projeto do [!UICONTROL Workspace] que depende dessa visualização de dados excluída deixará de funcionar.
 
 ## Próximas etapas
 
