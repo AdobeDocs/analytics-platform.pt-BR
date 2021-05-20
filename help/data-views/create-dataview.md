@@ -2,11 +2,11 @@
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2795'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -176,9 +176,9 @@ Esses componentes padrão obrigatórios são adicionados a cada visualização d
 
 | Nome do componente | Dimensão ou métrica | Notas |
 | --- | --- | --- |
-| [!UICONTROL Pessoas] | Métrica | Essa métrica é baseada na ID de pessoa especificada em uma [!UICONTROL Connection]. |
+| [!UICONTROL Pessoas] | Métrica | Essa métrica se baseia na ID de pessoa especificada em uma [!UICONTROL Conexão]. |
 | [!UICONTROL Sessões] | Métrica | Essa métrica se baseia nas configurações de sessão especificadas abaixo. |
-| [!UICONTROL Eventos] | Métrica | Essa métrica representa o número de linhas de todos os conjuntos de dados de eventos em uma [!UICONTROL Connection]. |
+| [!UICONTROL Eventos] | Métrica | Essa métrica representa o número de linhas de todos os conjuntos de dados de eventos em uma [!UICONTROL Conexão]. |
 | [!UICONTROL Dia] | Dimensão | A dimensão “Dia” informa o dia em que determinada métrica ocorreu. O primeiro item de dimensão é o primeiro dia no intervalo de datas, e o último item de dimensão é o último dia no intervalo de datas. |
 | [!UICONTROL Semana] | Dimensão | A dimensão “Semana” informa a semana em que determinada métrica ocorreu. O primeiro item de dimensão é a primeira semana no intervalo de datas, e o último item de dimensão é a última semana no intervalo de datas. |
 | [!UICONTROL Mês] | Dimensão | A dimensão “Mês” informa o mês em que determinada métrica ocorreu. O primeiro item de dimensão é o primeiro mês no intervalo de datas, e o último item de dimensão é o último mês no intervalo de datas. |
