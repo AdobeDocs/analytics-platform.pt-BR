@@ -2,23 +2,23 @@
 title: Adicionar pesquisas globais aos seus conjuntos de dados
 description: Use pesquisas globais para aumentar os relatórios com dimensões úteis no Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26ee2b61fb80b55a7982d90941ec121547423cfc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # Adicionar pesquisas globais aos seus conjuntos de dados
 
-Pesquisas globais aprimoram a capacidade do Customer Journey Analytics de relatar algumas dimensões/atributos que não são úteis por si mesmos, mas são úteis quando unidos a outros dados. Exemplos incluem atributos de dispositivos móveis e atributos de dimensões de SO e navegador, como números de versão do navegador. Uma &quot;Pesquisa global&quot; é semelhante a um conjunto de dados de pesquisa. As pesquisas globais são aplicáveis em organizações Experience Cloud. Eles são aplicados automaticamente a todos os conjuntos de dados de eventos que contêm determinados campos de esquema XDM (veja abaixo os campos específicos). Existe um conjunto de dados de pesquisa global para cada localização de esquema que o Adobe está classificando.
+Pesquisas globais aprimoram a capacidade do Customer Journey Analytics de relatar algumas dimensões/atributos que não são úteis por si mesmos, mas são úteis quando unidos a outros dados. Exemplos incluem atributos de dispositivos móveis e atributos de dimensões de SO e navegador, como números de versão do navegador. Uma &quot;Pesquisa global&quot; é semelhante a um conjunto de dados de pesquisa. As pesquisas globais são aplicáveis em organizações da Experience Cloud. Elas são automaticamente aplicadas a todos os conjuntos de dados de evento que contêm determinados campos de esquema XDM (veja abaixo os campos específicos). Existe um conjunto de dados de pesquisa global para cada localização de esquema que a Adobe está classificando.
 
-No Adobe Analytics tradicional, essas dimensões são exibidas sozinhas, enquanto no CJA, é necessário incluir essas dimensões ativamente ao criar visualizações de dados. No workflow Conexões , você seleciona um conjunto de dados que é sinalizado como um com uma chave para pesquisa global. A interface do usuário de Exibições de dados sabe automaticamente incluir todas as dimensões de pesquisa globais disponíveis para relatórios. Os arquivos de pesquisa são automaticamente mantidos atualizados e disponíveis em todas as regiões e para todas as contas. Eles são armazenados em organizações específicas da região associadas ao cliente.
+No Adobe Analytics tradicional, essas dimensões são exibidas sozinhas, enquanto no CJA, é necessário incluir essas dimensões ativamente ao criar visualizações de dados. No fluxo de trabalho Conexões, você seleciona um conjunto de dados que é sinalizado com uma chave para pesquisa global. A interface de Exibições de dados inclui automaticamente todas as dimensões de pesquisa globais disponíveis para relatórios. Os arquivos de pesquisa são automaticamente mantidos atualizados e disponíveis em todas as regiões e para todas as contas. Eles são armazenados em organizações específicas da região associadas ao cliente.
 
 ## Usar pesquisas globais com conjuntos de dados do Conector de dados da Adobe
 
-Os conjuntos de dados de pesquisa global são aplicados automaticamente no momento do relatório. Se você usar o Conector de dados do Analytics e trazer uma dimensão para a qual o Adobe fornece uma pesquisa global, nós aplicamos automaticamente essa pesquisa global. Se um conjunto de dados de evento contiver campos XDM, poderemos aplicar pesquisas globais a ele.
+Os conjuntos de dados de pesquisa global são aplicados automaticamente no momento do relatório. Se você estiver usando o Conector de dados do Analytics e trouxer uma dimensão para a qual a Adobe fornece uma pesquisa global, aplicaremos automaticamente essa pesquisa global. Se um conjunto de dados de evento contiver campos XDM, poderemos aplicar pesquisas globais a ele.
 
 ## Campos de pesquisa global disponíveis
 
@@ -27,9 +27,9 @@ Os conjuntos de dados de pesquisa global são aplicados automaticamente no momen
 * `browser_group`
    * `browser_group`, `id`
 * `os`
-   * `os`,  `group_id`,  `id`
+   * `os`, `group_id`, `id`
 * `os_group`
-   * `os_group`,  `id`
+   * `os_group`, `id`
 * `mobile_audio_support - multi`
 * `mobile_color_depth`
 * `mobile_cookie_support`
