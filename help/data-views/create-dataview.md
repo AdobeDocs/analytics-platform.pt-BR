@@ -2,11 +2,10 @@
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-translation-type: ht
-source-git-commit: 199219322ca5cff48c83c66d1ad7cdab04845b2b
-workflow-type: ht
-source-wordcount: '2795'
-ht-degree: 100%
+source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+workflow-type: tm+mt
+source-wordcount: '2812'
+ht-degree: 99%
 
 ---
 
@@ -149,7 +148,7 @@ Para obter mais informações, consulte o tópico sobre [Persistência](/help/da
 | --- | --- |
 | [!UICONTROL Definir persistência] | Alternar tecla |
 | [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são: [!UICONTROL Mais recente], [!UICONTROL Original], [!UICONTROL Instância], [!UICONTROL Tudo]. Se você quiser que um valor persista (semelhante às eVars no Analytics tradicional), é aqui que ele deverá ser definido. A única diferença principal é que a persistência máxima que você pode definir é 90 dias. Além disso, [!UICONTROL Nunca expirar] não é uma opção. |
-| [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: [!UICONTROL Sessão] (padrão), [!UICONTROL Pessoa], [!UICONTROL Tempo], [!UICONTROL Métrica]. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). [!UICONTROL Métrica] permite especificar qualquer uma das métricas definidas como a expiração dessa dimensão (por exemplo, uma métrica de [!UICONTROL Compra]). |
+| [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: [!UICONTROL Sessão] (padrão), [!UICONTROL Pessoa], [!UICONTROL Tempo], [!UICONTROL Métrica]. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). [!UICONTROL Métrica] permite especificar qualquer uma das métricas definidas como a expiração dessa dimensão (por exemplo, uma métrica de [!UICONTROL Compra]).<br>**Observação**: Não é possível definir uma expiração personalizada para uma dimensão ao selecionar uma alocação de  [!UICONTROL Todos]. |
 
 ### Definir configurações de intervalo de valor
 
