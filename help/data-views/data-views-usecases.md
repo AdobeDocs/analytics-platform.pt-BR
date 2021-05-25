@@ -2,11 +2,10 @@
 title: Casos de uso para visualizações de dados no Customer Journey Analytics
 description: Vários casos de uso que mostram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-translation-type: ht
-source-git-commit: 37c667b9c3f85e781c79a6595648be63c686649b
-workflow-type: ht
-source-wordcount: '342'
-ht-degree: 100%
+source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 90%
 
 ---
 
@@ -40,6 +39,14 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 1. Agora você pode adicionar [!UICONTROL Classificação de valores] para apresentar essa dimensão de forma segmentada nos relatórios. (Sem a classificação, cada instância dessa dimensão seria exibida como um item da linha nos relatórios do Workspace.)
 
    ![](assets/bucketing.png)
+
+## Usar dimensões numéricas como &quot;métricas&quot; em diagramas de fluxo
+
+Você pode usar uma dimensão numérica para inserir &quot;métricas&quot; na visualização [!UICONTROL  Fluxo]. O exemplo abaixo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
+
+![](assets/flow.png)
+
+## Incluir ou excluir valores de métrica
 
 Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview.md).
 Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).
