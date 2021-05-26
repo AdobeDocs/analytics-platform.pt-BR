@@ -2,10 +2,10 @@
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 3553a6a684bc2cd015d1b2ad6a3b02987d6d6bb2
+source-git-commit: 473b6679619c9e523997044eaa080025a762bb8d
 workflow-type: tm+mt
-source-wordcount: '2812'
-ht-degree: 99%
+source-wordcount: '2848'
+ht-degree: 98%
 
 ---
 
@@ -71,9 +71,9 @@ Por exemplo, no campo **[!UICONTROL pageTitle]**, é possível criar uma dimens�
 | [!UICONTROL Nome do campo] | O nome do campo de esquema. |
 | [!UICONTROL Tipo de conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de conjunto de dados (evento, pesquisa ou perfil) o componente veio. |
 | [!UICONTROL Conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de campo o componente veio (por exemplo, sequência, inteiro etc.). Este campo pode conter vários conjuntos de dados. |
-| [!UICONTROL Tipo de esquema] | Indica se o componente é uma sequência, um inteiro etc. |
+| [!UICONTROL Tipo de dados de esquema] | Indica se o componente é uma sequência, um inteiro etc. |
 | [!UICONTROL ID de componente] | Obrigatório. A [API CJA](https://adobe.io/cja-apis/docs) usa esse campo para fazer referência ao componente. Você pode clicar no ícone editar e modificar essa ID de componente. No entanto, alterar essa ID de componente interrompe todos os projetos existentes do Workspace que contêm esse componente.<br>Se você criar outra visualização de dados que use um campo diferente para uma dimensão pageTitle, será possível renomeá-la e tornar a visualização compatível com dados cruzados. |
-| [!UICONTROL Caminho] | Obrigatório. Um campo não editável que mostra o caminho do esquema de onde o componente veio. |
+| [!UICONTROL Caminho do esquema] | Obrigatório. Um campo não editável que mostra o caminho do esquema de onde o componente veio. |
 | [!UICONTROL Ocultar componente nos relatórios] | Padrão = desativado. Permite coletar o componente da Visualização de dados quando usado em relatórios. Isso não afeta as permissões, apenas a coleta de componentes. Em outras palavras, você pode ocultar o componente de usuários não administradores nos relatórios. Os administradores ainda podem acessá-lo clicando em [!UICONTROL Mostrar todos os componentes] em um projeto do Analysis Workspace. |
 
 ### Definir configurações de formato
@@ -121,6 +121,7 @@ Por exemplo, você pode criar uma dimensão fora do campo pageTitle, mas chamá-
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
+| [!UICONTROL Contar valores] | Somente para métricas booleanas, essa configuração permite especificar se você deseja [!UICONTROL Contar Verdadeiro], [!UICONTROL Contar Falso] ou [!UICONTROL Contar Verdadeiro ou Falso] como o valor da métrica. O padrão é [!UICONTROL Count True]. |
 | [!UICONTROL Contar instâncias] | Permite especificar se um campo numérico ou de tipo de data usado como uma métrica deve contar os horários em que foi definido, em vez do valor propriamente dito.<br> Se desejar adicionar as instâncias de um campo numérico e quiser simplesmente adicionar o número de vezes que um campo foi *definido* como diferente do valor real nele contido.<br>Isso é útil para criar uma métrica [!UICONTROL Pedidos] de um campo [!UICONTROL Receita], por exemplo. Se a receita foi definida, devemos contar um pedido único em vez do valor numérico da receita. |
 
 ### Definir configurações [!UICONTROL Nenhuma opção de valor]
