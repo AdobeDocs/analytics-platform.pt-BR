@@ -2,10 +2,10 @@
 title: Casos de uso para visualizações de dados no Customer Journey Analytics
 description: Vários casos de uso que mostram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: 27e472f534590112194ce46b28a15b655c9caf2b
+source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 46%
+source-wordcount: '688'
+ht-degree: 47%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 46%
 
 Esses casos de uso mostram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics.
 
-## 1. Crie uma métrica de Pedidos a partir de um campo de esquema pageTitle (cadeia de caracteres)
+## 1. Criar uma métrica a partir de um campo de esquema de cadeia de caracteres
 
 Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica [!UICONTROL Pedidos] de um campo de esquema [!UICONTROL pageTitle] que seja uma sequência. Estas são as etapas:
 
@@ -27,6 +27,8 @@ Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica
    A frase &quot;confirmação&quot; indica que é um pedido. Depois de examinar todos os títulos de página em que esses critérios são atendidos, &quot;1&quot; será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores de inclusão/exclusão pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, filtros e em qualquer lugar que você puder usar as métricas padrão.
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
 Você também pode criar outra métrica [!UICONTROL Pedidos] do mesmo campo e especificar um modelo de atribuição diferente para ele, como [!UICONTROL Primeiro contato], e uma [!UICONTROL janela de pesquisa] diferente, como [!UICONTROL 30 dias].
+
+Outro exemplo seria usar a ID do visitante, uma dimensão, como uma métrica para determinar quantas IDs de visitantes sua empresa possui.
 
 ## 2. Usar números inteiros como dimensões
 
@@ -68,17 +70,9 @@ Essas novas configurações permitem que você visualize somente a receita de al
 
 Sua empresa pode ter passado tempo treinando seus usuários para esperar &quot;Não especificado&quot; nos relatórios. O padrão em Visualizações de dados é &quot;Sem valor&quot;. Agora é possível [renomear &quot;Sem valor&quot; para &quot;Não especificado&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) na interface do usuário de Exibições de dados.
 
-## 6. Use o recurso [!UICONTROL Duplicar]
+## 6. Crie várias métricas com diferentes configurações de [!UICONTROL Atribuição]
 
-Duplicar uma métrica e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões a partir de um único campo de esquema.
-
-Basta selecionar a configuração Duplicar abaixo do nome da métrica ou das dimensões na parte superior direita:
-
-![](assets/duplicate.png)
-
-## Criar várias métricas com diferentes configurações de Atribuição
-
-Usando o recurso [!UICONTROL Duplicar] mencionado acima, crie várias métricas de Receita com diferentes configurações de atribuição, como [!UICONTROL Primeiro contato], [!UICONTROL Último contato] e [!UICONTROL Algorítmico].
+Usando o recurso [!UICONTROL Duplicar] no canto superior direito, crie várias métricas de Receita com diferentes configurações de atribuição, como [!UICONTROL Primeiro contato], [!UICONTROL Último contato] e [!UICONTROL Algorítmico].
 
 Não se esqueça de renomear cada métrica para refletir as diferenças, como &quot;Receita algorítmica&quot;:
 
