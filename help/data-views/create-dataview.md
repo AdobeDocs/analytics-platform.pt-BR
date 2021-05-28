@@ -2,10 +2,10 @@
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 473b6679619c9e523997044eaa080025a762bb8d
+source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
 workflow-type: tm+mt
-source-wordcount: '2848'
-ht-degree: 98%
+source-wordcount: '2934'
+ht-degree: 95%
 
 ---
 
@@ -117,11 +117,13 @@ Por exemplo, você pode criar uma dimensão fora do campo pageTitle, mas chamá-
 
 ### Definir configurações de comportamento
 
+Permite especificar como uma métrica deve se comportar nos relatórios.
+
 ![](assets/behavior-settings.png)
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
-| [!UICONTROL Contar valores] | Somente para métricas booleanas, essa configuração permite especificar se você deseja [!UICONTROL Contar Verdadeiro], [!UICONTROL Contar Falso] ou [!UICONTROL Contar Verdadeiro ou Falso] como o valor da métrica. O padrão é [!UICONTROL Count True]. |
+| [!UICONTROL Contar valores] | Somente para métricas booleanas, essa configuração permite especificar se você deseja [!UICONTROL Contar Verdadeiro], [!UICONTROL Contar Falso] ou [!UICONTROL Contar Verdadeiro ou Falso] como o valor da métrica. O padrão é [!UICONTROL Count True]. Isso fornece o valor real de uma métrica, como &quot;50&quot;, se houver um valor de pedido de 50. |
 | [!UICONTROL Contar instâncias] | Permite especificar se um campo numérico ou de tipo de data usado como uma métrica deve contar os horários em que foi definido, em vez do valor propriamente dito.<br> Se desejar adicionar as instâncias de um campo numérico e quiser simplesmente adicionar o número de vezes que um campo foi *definido* como diferente do valor real nele contido.<br>Isso é útil para criar uma métrica [!UICONTROL Pedidos] de um campo [!UICONTROL Receita], por exemplo. Se a receita foi definida, devemos contar um pedido único em vez do valor numérico da receita. |
 
 ### Definir configurações [!UICONTROL Nenhuma opção de valor]
@@ -202,6 +204,12 @@ Os componentes padrão opcionais estão disponíveis na guia **[!UICONTROL Compo
 | [!UICONTROL ID em lote] | Dimensão | Representa o lote da Experience Platform do qual um [!UICONTROL Evento] fez parte. |
 | [!UICONTROL ID do conjunto de dados] | Dimensão | Representa o conjunto de dados Experience Platform do qual um [!UICONTROL Evento] fazia parte. |
 
+## Use o recurso [!UICONTROL Duplicar]
+
+Duplicar métricas ou dimensões e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões a partir de um único campo de esquema. Basta selecionar a configuração [!UICONTROL Duplicate] abaixo do nome da métrica ou das dimensões na parte superior direita. Em seguida, modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
+
+![](assets/duplicate.png)
+
 ### Filtrar campos de esquema e dimensões/métricas
 
 Você pode filtrar campos de esquema no painel esquerdo pelos seguintes tipos de dados:
@@ -212,8 +220,7 @@ Também é possível filtrar por conjuntos de dados e se um campo de esquema con
 
 ![](assets/filter-other.png)
 
-
-## 3. Adicionar um filtro global à visualização de dados
+## Adicionar um filtro global à visualização de dados
 
 É possível adicionar filtros que se aplicam a toda a visualização de dados. Esse filtro será aplicado a qualquer relatório executado no Workspace.
 
