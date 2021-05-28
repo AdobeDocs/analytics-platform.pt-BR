@@ -2,10 +2,10 @@
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: e40232916ee93136583d9ecf460367ecb7df5c8b
+source-git-commit: e62303250e1f6b8f3f666a04c2742126a4861893
 workflow-type: tm+mt
 source-wordcount: '2934'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -27,9 +27,9 @@ A criação de uma visualização de dados envolve a criação de métricas e di
 | [!UICONTROL Descrição] | Uma descrição detalhada não é obrigatória, mas é recomendada. |
 | [!UICONTROL Fuso horário] | Escolha em qual fuso horário você deseja que seus dados sejam apresentados. |
 | [!UICONTROL Tags] | As tags permitem organizar as visualizações de dados em categorias. |
-| [!UICONTROL Contêineres] | É possível renomear os containers aqui e é assim que eles serão exibidos em qualquer projeto do Workspace com base nessa visualização de dados. Os containers são usados em filtros e fallout/fluxo para definir a amplitude ou o estreitamento do escopo ou do contexto. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) |
-| [!UICONTROL O nome do container de pessoa é...] | [!UICONTROL Pessoa] (padrão). O container [!UICONTROL Pessoa] inclui cada visita e exibição de página de visitante em um intervalo de tempo especificado. Você pode renomear como &quot;Usuário&quot; ou qualquer outro termo que desejar. |
-| [!UICONTROL O nome do container da sessão é...] | [!UICONTROL Sessão] (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear como &quot;Visita&quot; ou qualquer outro termo que desejar. |
+| [!UICONTROL Contêineres] | Você pode renomear seus contêineres aqui para determinar como eles aparecem em qualquer projeto do Workspace baseado nessa visualização de dados. Os contêineres são usados em filtros e fallout/fluxo e assim por diante, para definir a amplitude ou o estreitamento do escopo ou do contexto. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) |
+| [!UICONTROL O nome do container de pessoa é...] | [!UICONTROL Pessoa] (padrão). O container [!UICONTROL Pessoa] inclui cada visita e exibição de página de visitante em um intervalo de tempo especificado. Você pode renomear esse contêiner como &quot;Usuário&quot; ou qualquer outro termo que desejar. |
+| [!UICONTROL O nome do container da sessão é...] | [!UICONTROL Sessão] (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear esse contêiner como &quot;Visita&quot; ou qualquer outro termo que desejar. |
 | [!UICONTROL O nome do container de evento é...] | [!UICONTROL Evento] (padrão). O container [!UICONTROL Evento] define quais eventos de página você deseja incluir ou excluir de um filtro. |
 
 Em seguida, você pode criar métricas e dimensões com base em elementos do esquema. Você também pode usar os componentes padrão.
@@ -43,7 +43,7 @@ Em seguida, você pode criar métricas e dimensões com base em elementos do esq
 Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo. Lembre-se:
 
 * Os componentes já incluídos são os componentes obrigatórios padrão (gerados pelo sistema).
-* Também aplicamos o filtro **[!UICONTROL Contém dados]** por padrão, para que sejam exibidos apenas campos de Esquema que contêm dados. Se estiver procurando um campo que não contém dados, bastará remover o filtro.
+* O Adobe aplica o filtro **[!UICONTROL Contém dados]** por padrão, para que sejam exibidos apenas os campos Esquema que contêm dados. Se estiver procurando um campo que não contenha dados, remova o filtro .
 
 1. Agora arraste um campo de esquema, como [!UICONTROL pageTitle], do painel esquerdo para a seção Métricas ou Dimensão.
 
