@@ -3,9 +3,9 @@ title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1071'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Media Analytics | Os dados de mídia estão disponíveis como parte do Conector de dados do Analytics. |
 | eVar de merchandising | O comportamento das eVars de merchandising pode ser obtido usando dimensões em uma matriz de objetos, pois uma eVar de merchandising não está configurada para usar persistência. Atualmente, a persistência para a dimensão de merchandising não está disponível. |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos, Analytics for Target (A4T) e Visualizadores simultâneos de mídia não são compatíveis. |
-| Regras de processamento | Para conjuntos de dados do Conector de dados do Analytics, as regras de processamento ainda se aplicam. [Os recursos de preparação de dados na Adobe Experience ](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=en) Platform também podem ser usados como substituição das regras de processamento para dados que vão diretamente para a Platform. |
+| Regras de processamento | Para conjuntos de dados do Conector de dados do Analytics, as regras de processamento ainda se aplicam. [Os recursos de preparação de dados na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR) também podem ser usados como substituição das regras de processamento para dados que vão diretamente para a Platform. |
 
 ## Sem suporte no momento, mas planejado
 
