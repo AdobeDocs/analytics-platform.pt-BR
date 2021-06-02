@@ -5,9 +5,9 @@ feature: Fundamentos do Workspace
 role: Business Practitioner, Administrator
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
 source-git-commit: 18b5a98cf5abb0d552cb7e87ee3098d314c5459a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ Há diferentes ações de salvamento que podem ser feitas no menu **[!UICONTROL 
 
 | Ação | Descrição |
 |---|---| 
-| **[!UICONTROL Salvar]** | Salve as alterações no seu projeto. Se o projeto for compartilhado, os recipients do projeto também verão as alterações. Ao salvar seu projeto pela primeira vez, você será solicitado a fornecer um nome, uma descrição (opcional) e adicionar tags (opcional) ao projeto. |
-| **[!UICONTROL Salvar com notas]** | Antes de salvar o projeto, adicione observações sobre o que foi alterado no projeto. As notas são armazenadas com a versão do projeto e estão disponíveis para todos os editores em [!UICONTROL Project] > [!UICONTROL Abrir versão anterior]. |
+| **[!UICONTROL Salvar]** | Salve as alterações no seu projeto. Se o projeto for compartilhado, os recipients do projeto também verão as alterações. Ao salvar seu projeto pela primeira vez, você deverá fornecer um nome, uma descrição (opcional) e adicionar tags (opcional). |
+| **[!UICONTROL Salvar com notas]** | Antes de salvar o projeto, adicione observações sobre o que foi alterado nele. As notas são armazenadas com a versão do projeto e estão disponíveis para todos os editores em [!UICONTROL Projeto] > [!UICONTROL Abrir versão anterior]. |
 | **[!UICONTROL Salvar como]** | Crie um duplicado do seu projeto. O projeto original não será afetado. |
 | **[!UICONTROL Salvar como modelo]** | Salve seu projeto como um [modelo personalizado](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) que fica disponível para sua organização em **[!UICONTROL Projeto > Novo]** |
 
@@ -48,7 +48,7 @@ O navegador avisa que as alterações não salvas serão perdidas. Você pode op
 
 ### Falha do navegador ou tempo limite da sessão
 
-Para projetos **existentes**, ao retornar ao Workspace, você verá um modal **Recuperação do projeto**. Selecionar &quot;Sim&quot; restaura o projeto da cópia local salva automaticamente. “Não” exclui a cópia local salva automaticamente e abre a última versão salva pelo usuário do projeto.
+Para projetos **existentes**, após voltar para o Workspace, você verá um modal **Recuperação de projeto**. Selecionar “Sim” restaurará o projeto por meio da cópia local salva automaticamente. “Não” exclui a cópia local salva automaticamente e abre a última versão salva pelo usuário do projeto.
 
 ![](assets/project-recovery.png)
 
@@ -67,6 +67,6 @@ Para abrir uma versão anterior de um projeto:
    ![](assets/previous-versions.png)
 
 1. Revise a lista de versões anteriores disponíveis.
-    Os carimbos de data e hora e   o editor são exibidos, além de   Notas, se foram adicionados quando o   Editor foi salvo. As versões sem notas são armazenadas por 90 dias; versões com notas são armazenadas por 1 ano.
+   [!UICONTROL Carimbos de data e hora] e [!UICONTROL Editor] são exibidos, além de [!UICONTROL Notas] se eles foram adicionados quando o [!UICONTROL Editor] foi salvo. As versões sem notas são armazenadas por 90 dias; versões com notas são armazenadas por 1 ano.
 1. Selecione uma versão anterior e clique em **[!UICONTROL Carregar]**.
 A versão anterior é carregada com uma notificação. A versão anterior não se torna a versão salva atual do projeto até que você clique em **[!UICONTROL Salvar]**. Ao sair da versão carregada, ao retornar, você verá a última versão salva do projeto.
