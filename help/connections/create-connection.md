@@ -2,11 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-translation-type: ht
-source-git-commit: 26176b446c5d825aa8893f0fe45190079d923251
-workflow-type: ht
-source-wordcount: '1974'
-ht-degree: 100%
+source-git-commit: 90470be09d666c0c3937670d5d5669ab668ed2c4
+workflow-type: tm+mt
+source-wordcount: '1973'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 100%
 
 Uma conexão permite integrar conjuntos de dados do [!DNL Adobe Experience Platform] ao [!UICONTROL Workspace]. Para criar relatórios sobre conjuntos de dados do [!DNL Experience Platform], primeiro é necessário estabelecer uma conexão entre os conjuntos de dados no [!DNL Experience Platform] e no [!UICONTROL Workspace].
 
-Clique [aqui](https://docs.adobe.com/content/help/pt-BR/platform-learn/tutorials/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.html) para obter uma visão geral do vídeo.
+Clique [aqui](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en) para obter uma visão geral do vídeo.
 
 Para criar uma conexão do CJA, você precisa das seguintes permissões:
 
@@ -137,7 +136,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 
 Esse cálculo deve ser concluído para cada conjunto de dados na conexão.
 
-1. Vá para os [Serviços de consulta da Adobe Experience Platform](https://docs.adobe.com/content/help/pt-BR/experience-platform/query/home.html) e crie uma nova consulta.
+1. Vá para os [Serviços de consulta da Adobe Experience Platform](https://docs.adobe.com/content/help/en/experience-platform/query/home.html) e crie uma nova consulta.
 
 1. A consulta seria semelhante a:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
