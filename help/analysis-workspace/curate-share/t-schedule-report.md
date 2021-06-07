@@ -3,11 +3,10 @@ description: Envie um projeto do Analysis Workspace por email ou agende o seu en
 keywords: Analysis Workspace
 title: Agendar projetos
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-translation-type: tm+mt
-source-git-commit: 5f9dc79e666303165f07fd203e29a3daf478e980
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 100%
+source-wordcount: '486'
+ht-degree: 98%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 No **menu Compartilhar**, do Workspace, você pode enviar projetos do Analysis Workspace por email para recipient selecionados. Os arquivos podem ser enviados no formato CSV ou PDF.
 
