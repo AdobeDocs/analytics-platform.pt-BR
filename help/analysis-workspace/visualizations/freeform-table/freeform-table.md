@@ -2,17 +2,16 @@
 title: Tabela de forma livre
 description: As tabelas de forma livre são a base para a análise de dados no Workspace
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
-translation-type: ht
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: ht
-source-wordcount: '531'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '517'
+ht-degree: 91%
 
 ---
 
 # Tabela de forma livre
 
-No Analysis Workspace, uma Tabela de forma livre é a base para a análise de dados interativa. Você pode arrastar e soltar uma combinação de [componentes](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html) em linhas e colunas para criar uma tabela personalizada para sua análise. À medida que cada componente é solto, a tabela é atualizada imediatamente para que você possa analisar e pesquisar com mais detalhes rapidamente.
+No Analysis Workspace, uma Tabela de forma livre é a base para a análise de dados interativa. Você pode arrastar e soltar uma combinação de [componentes](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=pt-BR) em linhas e colunas para criar uma tabela personalizada para sua análise. À medida que cada componente é solto, a tabela é atualizada imediatamente para que você possa analisar e pesquisar com mais detalhes rapidamente.
 
 ![](assets/opening-section.png)
 
@@ -33,15 +32,15 @@ Se preferir adicionar primeiro vários componentes à tabela e, em seguida, rend
 É possível personalizar e interagir com uma tabela de forma livre de várias maneiras:
 
 * **Linhas**
-   * Você pode ajustar mais linhas em uma única tela ajustando a [densidade de visualização](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html) do projeto.
+   * Você pode ajustar mais linhas em uma única tela ajustando a [densidade de visualização](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=pt-BR) do projeto.
    * Cada linha da dimensão pode exibir até 400 linhas antes que ocorra paginação. Clique no número ao lado de &quot;Linhas&quot; para mostrar mais linhas em uma página. Navegue até uma página diferente usando a seta de página no cabeçalho.
-   * As linhas podem ser detalhadas por componentes adicionais. Para detalhar várias linhas ao mesmo tempo, basta selecionar várias linhas e arrastar o próximo componente na parte superior das linhas selecionadas. Saiba mais sobre [detalhamentos](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.html).
-   * As linhas podem ser [filtradas](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) para mostrar um conjunto reduzido de itens. Configurações adicionais estão disponíveis em [Configurações de linha](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html).
+   * As linhas podem ser detalhadas por componentes adicionais. Para detalhar várias linhas ao mesmo tempo, basta selecionar várias linhas e arrastar o próximo componente na parte superior das linhas selecionadas. Saiba mais sobre [detalhamentos](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.html).
+   * As linhas podem ser [filtradas](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html) para mostrar um conjunto reduzido de itens. Configurações adicionais estão disponíveis em [Configurações de linha](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html).
 
 * **Colunas**
    * Os componentes podem ser empilhados dentro de colunas para criar métricas filtradas, análise entre guias e muito mais.
-   * A exibição de cada coluna pode ser ajustada nas [configurações de coluna](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.html).
-   * Várias ações estão disponíveis no [menu acionado via clique com o botão direito do mouse](https://docs.adobe.com/content/help/pt-BR/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html). O menu fornece ações diferentes a depender se você clicar no cabeçalho da tabela, nas linhas ou nas colunas.
+   * A exibição de cada coluna pode ser ajustada nas [configurações de coluna](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/column-row-settings/column-settings.html).
+   * Várias ações estão disponíveis no [menu acionado via clique com o botão direito do mouse](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/using-the-right-click-menu.html). O menu fornece ações diferentes a depender se você clicar no cabeçalho da tabela, nas linhas ou nas colunas.
 
 ## Exportar dados da tabela de forma livre
 
@@ -51,6 +50,6 @@ Saiba mais sobre todos os dados de [opções de exportação](https://experience
 * Clique com o botão direito do mouse em > **[!UICONTROL Baixar dados como CSV]** para baixar os dados da tabela exibidos como um CSV. Se uma seleção de tabela for feita, essa opção indicará **[!UICONTROL Baixar seleção como CSV]**.
 * Clique com o botão direito do mouse em > **[!UICONTROL Projeto > Baixar itens como CSV]** para exportar até 50.000 itens de dimensão para a dimensão selecionada.
 
-Saiba mais sobre todos os dados de [opções de exportação](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=pt-BR) do Analysis Workspace.
+Saiba mais sobre todos os dados de [opções de exportação](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) do Analysis Workspace.
 
 ![](assets/export-options.png)
