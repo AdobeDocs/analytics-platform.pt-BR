@@ -3,11 +3,10 @@ description: Representar visualmente seus dados no Analysis Workspace.
 keywords: Analysis Workspace
 title: Visão geral das visualizações
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 43%
+source-wordcount: '1058'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 43%
 
 O Workspace oferece várias visualizações que permitem gerar representações visuais de seus dados, como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão e outros. A maioria dos tipos de visualização será familiar se você usar o Adobe Analytics. Contudo, o Analysis Workspace fornece configurações de visualização e muitos tipos de visualizações exclusivos ou novos com recursos interativos.
 
-Você pode acessar visualizações no ícone superior esquerdo do Workspace, em um [painel em branco](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html?lang=pt-BR) ou pelo menu de contexto no fluxo de trabalho.
+Você pode acessar as visualizações no ícone superior esquerdo do Workspace, em um [painel em branco](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html?lang=pt-BR) ou pelo menu exibido ao clicar com o botão direito em seu fluxo de trabalho.
 
 ![](assets/viz-rail.png)
 
@@ -23,21 +22,21 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
 | Nome da visualização | Descrição |
 | --- | --- |
-| [Área](/help/analysis-workspace/visualizations/area.md) | Como um gráfico de linhas, mas com uma área colorida abaixo da linha. Use um gráfico de área quando você tiver diversas métricas e desejar visualizar a área expressa pela interseção de duas ou mais métricas. |
+| [Área](/help/analysis-workspace/visualizations/area.md) | Semelhante a um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Use um gráfico de área quando você tiver diversas métricas e desejar visualizar a área expressa pela interseção de duas ou mais métricas. |
 | [Barra](/help/analysis-workspace/visualizations/bar.md) | Mostra barras verticais que representam vários valores de uma ou mais métricas. |
 | [Gráfico em marcadores](/help/analysis-workspace/visualizations/bullet-graph.md) | Mostra a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas). |
 | [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | A *`cohort`* é um grupo de pessoas com características comuns em um período específico. A Análise de coorte é útil para análise de retenção, churn ou latência. |
 | [Rosca](/help/analysis-workspace/visualizations/donut.md) | Semelhante ao gráfico de pizza, essa visualização mostra os dados como partes ou filtros de um todo. |
 | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Os relatórios de fallout mostram onde os visitantes saíram e continuaram em uma sequência predefinida de páginas. Pode ser definido como sequências eventuais ou exatas |
-| [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) | Mostra os caminhos exatos do cliente pelos sites e aplicativos. |
+| [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) | Mostra os percursos exatos do cliente pelos sites e aplicativos. |
 | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Uma tabela de forma livre não é apenas uma tabela de dados, mas também uma visualização interativa. É a base para a análise de dados no Workspace. |
 | [Histograma](/help/analysis-workspace/visualizations/histogram.md) | Um histograma agrupa visitantes, visitas ou ocorrências em compartimentos com base em um volume de métrica. |
 | [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) | Mostra barras horizontais que representam vários valores de uma ou mais métricas. |
 | [Linha](/help/analysis-workspace/visualizations/line.md) | Representa as métricas que usam uma linha para mostrar como os valores são alterados durante um período. Um gráfico de linhas usa o tempo no eixo x. |
 | [Gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | Mostra a relação entre itens de dimensão e até três métricas. |
 | [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Mostra a célula selecionada como um número grande. |
-| [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Mostra a alteração entre as células selecionadas como 1 grande número/porcentagem. |
-| [Texto](/help/analysis-workspace/visualizations/text.md) | Permite adicionar texto definido pelo usuário à Workspace. Útil para adicionar contexto adicional à análise e aos insights, além de aproveitar as descrições do painel/da visualização |
+| [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Mostra a alteração entre as células selecionadas como um número grande/porcentagem. |
+| [Texto](/help/analysis-workspace/visualizations/text.md) | Permite adicionar texto definido pelo usuário à Workspace. Útil para adicionar contexto à análise e aos insights, além de aproveitar as descrições do painel/da visualização |
 | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md) | Exibe dados hierárquicos (estruturados em formato de árvore) como um conjunto de retângulos aninhados. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Usa círculos para descrever a sobreposição de métrica de até três filtros. |
 
@@ -50,10 +49,10 @@ Cada visualização tem suas próprias configurações que podem ser gerenciadas
 | Configuração | Descrição |
 | --- | --- |
 | Tipo de visualização | Altere o tipo de visual usado para descrever os dados. |
-| Granularidade | Para visualizações de tendências, você pode alterar a granularidade de tempo (dia, semana, mês, etc.) desta lista suspensa. Essa alteração também se aplica à tabela de fonte de dados. |
+| Granularidade | Para visualizações de tendências, você pode alterar a granularidade de tempo (dia, semana, mês etc.) nesta lista suspensa. Essa alteração também se aplica à tabela de fonte de dados. |
 | Porcentagens | Exibe os valores em porcentagens. |
-| 100% empilhada | Essa configuração nas visualizações empilhadas por área, empilhadas por barra ou empilhadas por barra horizontal transforma o gráfico em uma visualização 100% empilhada. Exemplo: ![100% empilhada](assets/stacked_100_percent.png) |
-| Legenda visível | Permite ocultar o texto detalhado da legenda para a visualização Número do resumo/Alteração do resumo. |
+| 100% empilhada | Essa configuração de visualizações de área empilhada, barra empilhada ou barra horizontal empilhada transforma o gráfico em uma visualização “100% empilhada”. Exemplo: ![100% empilhada](assets/stacked_100_percent.png) |
+| Legenda visível | Permite ocultar o texto detalhado da legenda para a visualização Número de resumo/Alteração de resumo. |
 | Limite máximo de itens | Permite limitar o número de itens exibidos em uma visualização. |
 | Ancorar eixo Y no zero | Se todos os valores exibidos no gráfico forem consideravelmente superiores a zero, o padrão do gráfico tornará a parte inferior do eixo y DIFERENTE DE ZERO. Se marcar esta caixa, o eixo y será forçado a zero (e o gráfico será redesenhado). |
 | Normalização | Força as métricas para proporções iguais. Isso é útil quando métricas projetadas têm magnitudes muito diferentes. |
@@ -62,9 +61,9 @@ Cada visualização tem suas próprias configurações que podem ser gerenciadas
 
 ## Legenda {#legend}
 
-Uma legenda de visualização ajuda a relacionar a data em uma tabela de origem com a série plotada na visualização. A legenda é interativa - você pode clicar em um item de legenda para mostrar/ocultar uma série na visualização. Isso é útil se você quiser simplificar os dados que estão sendo visualizados.
+Uma legenda de visualização ajuda a relacionar a data em uma tabela de origem com a série plotada na visualização. A legenda é interativa: você pode clicar em um item de legenda para mostrar/ocultar uma série na visualização. Isso é útil se você quer simplificar os dados que estão sendo visualizados.
 
-Além disso, é possível renomear rótulos de legenda para ajudá-lo a tornar as exibições mais atraentes. Observação: a edição de legenda **não** se aplica a: Treemap, Marcador, Alteração/Número do resumo, Texto, Forma livre, Histograma, Coorte ou visualizações de Fluxo.
+Além disso, é possível renomear rótulos de legenda para ajudá-lo a tornar as exibições mais atraentes. Observação: a edição de legendas **não** se aplica a: Treemap, Marcador, Alteração ou Número do resumo, Texto, Forma livre, Histograma, Coorte ou Visualizações de fluxo.
 
 Para editar um rótulo de legenda:
 
@@ -76,7 +75,7 @@ Para editar um rótulo de legenda:
 1. Digite o texto do novo rótulo.
 1. Pressione **[!UICONTROL Enter]** para salvar.
 
-Temos um [vídeo](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) sobre esse tópico.
+Temos um [vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) sobre esse tópico.
 
 ## Clique com o botão direito do mouse no menu {#right-click}
 
@@ -87,12 +86,12 @@ A funcionalidade adicional de uma visualização está disponível ao clicar com
 | Configuração | Descrição |
 | --- | --- |
 | Inserir visualização/painel copiado | Permite colar (“inserir”) um painel ou visualização copiada em outro lugar no projeto ou em outro projeto completamente diferente. |
-| Copiar visualização | Permite clicar com o botão direito do mouse e copiar uma visualização, de modo que você possa inseri-la em outro lugar no projeto ou em um projeto completamente diferente. |
+| Copiar visualização | Permite clicar com o botão direito do mouse e copiar uma visualização para que você possa inseri-la em outro lugar no projeto ou em um projeto completamente diferente. |
 | [Baixar itens como CSV](/help/analysis-workspace/curate-share/download-send.md) | Baixe até 50.000 itens de dimensão para a dimensão selecionada como um CSV. |
-| [Baixar dados como CSV](/help/analysis-workspace/curate-share/download-send.md) | Baixar fonte de dados de visualização como CSV. |
+| [Baixar dados como CSV](/help/analysis-workspace/curate-share/download-send.md) | Baixe a fonte de dados da visualização como CSV. |
 | Duplicar visualização | Faz uma réplica exata da visualização atual, que você pode modificar. |
 | Editar descrição | Adicione (ou edite) uma descrição de texto para a visualização. |
-| Obter link da visualização | Permite direcionar alguém para uma visualização específica em um projeto. Quando o link é clicado, o recipient deve fazer logon antes de ser direcionado para a visualização exata vinculada. |
+| Obter link da visualização | Permite direcionar alguém a uma visualização específica em um projeto. Quando o link for clicado, o recipient deverá fazer logon antes de ser direcionado para a visualização exata que está vinculada. |
 | Recomeçar | (Funciona para Fluxo, Venn, Histograma) Exclui a configuração da visualização atual para que você possa reconfigurá-la do zero. |
 
 ## Ícone “Criar visual” {#quick-viz}
