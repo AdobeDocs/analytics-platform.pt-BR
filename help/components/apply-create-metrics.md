@@ -2,14 +2,13 @@
 description: Há duas formas de utilizar as métricas no Analysis Workspace.
 title: Métricas
 uuid: 9927491a-ca0b-4e1a-9069-8736149d051b
-translation-type: tm+mt
-source-git-commit: 95b8022db4c173b27327469fe8c34afa1ea27796
+exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 85%
+source-wordcount: '250'
+ht-degree: 96%
 
 ---
-
 
 # Métricas
 
@@ -29,11 +28,11 @@ Para facilitar a criação rápida de métricas calculadas, a opção **[!UICONT
 
 ![](assets/calc_metrics.png)
 
-[Métricas calculadas: Métricas](https://docs.adobe.com/content/help/en/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html)  sem implementação (3:42)
+[Métricas calculadas: métricas sem implementação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
 
 ## Comparar métricas com diferentes modelos de atribuição
 
-Se você quiser comparar rápida e facilmente um modelo de atribuição a outro, clique com o botão direito do mouse em uma métrica e selecione **[!UICONTROL Comparar modelos de atribuição]**:
+Se você quiser comparar um modelo com outro de maneira fácil e rápida, clique com o botão direito em uma métrica e selecione **[!UICONTROL Comparar modelos de atribuição]**:
 
 ![Comparar atribuição](assets/compare-attribution.png)
 
