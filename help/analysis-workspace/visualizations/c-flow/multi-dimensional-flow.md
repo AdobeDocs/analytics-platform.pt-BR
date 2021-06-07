@@ -2,20 +2,19 @@
 description: Um fluxo interdimensional permite analisar os caminhos do usuário em várias dimensões.
 title: Fluxos interdimensionais
 uuid: 51d08531-1c56-46c7-b505-bd8d5e6aa6c1
-translation-type: tm+mt
-source-git-commit: 1fb46acc9c7c70e64058d2c6a8fdcde119910fec
+exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 100%
+source-wordcount: '338'
+ht-degree: 97%
 
 ---
-
 
 # Fluxos interdimensionais
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Um fluxo interdimensional permite analisar os caminhos do usuário em várias dimensões.
 
