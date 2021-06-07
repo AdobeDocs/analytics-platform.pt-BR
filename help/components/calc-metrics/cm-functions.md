@@ -1,20 +1,19 @@
 ---
 title: Referência - funções básicas
-description: 'O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas. '
-translation-type: tm+mt
-source-git-commit: fe5f2207be1042807048a77642fba70bc9a9933b
+description: O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas.
+exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 100%
+source-wordcount: '1077'
+ht-degree: 99%
 
 ---
-
 
 # Referência - funções básicas
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas.
 
