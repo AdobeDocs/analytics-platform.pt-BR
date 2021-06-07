@@ -2,11 +2,10 @@
 title: Modelos de atribuição e janelas de pesquisa
 description: Como diferentes tipos de atribuição dividem crédito entre itens de dimensão.
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-translation-type: tm+mt
-source-git-commit: 93f4f65a3b321d16a37ed21339ef811e1f55f9ca
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 98%
+source-wordcount: '1537'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O conceito de atribuição no Adobe Analytics requer dois componentes:
 
@@ -49,7 +48,7 @@ As janelas de retrospectiva representam quanto tempo uma conversão deve retroce
 
 >[!NOTE]
 >
->**[!UICONTROL As]** janelas de pesquisa personalizadas estão atualmente em testes limitados. Consulte [Versões de recursos do Adobe Analytics](https://docs.adobe.com/content/help/pt-BR/analytics/landing/an-releases.html) para obter mais informações.
+>**[!UICONTROL As]** janelas de pesquisa personalizadas estão atualmente em testes limitados. Consulte [Versões de recursos do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) para obter mais informações.
 
 ## Exemplo
 
