@@ -3,11 +3,10 @@ description: Você pode criar filtros de um ponto de contato, adicionar filtros 
 keywords: fallout e filtros, filtros na análise de fallout, comparar filtros no fallout
 title: Aplicar filtros na análise de fallout
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 15%
+source-wordcount: '438'
+ht-degree: 13%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Você pode criar filtros de um ponto de contato, adicionar filtros como ponto de contato e comparar fluxos de trabalho importantes em vários filtros no Analysis Workspace.
 
@@ -27,7 +26,7 @@ Você pode criar filtros de um ponto de contato, adicionar filtros como ponto de
 * Usar um filtro com base em visitantes como um ponto de contato dentro de uma visualização de Fallout de contexto de visitas
 * Usar um filtro baseado em visitas como um ponto de contato dentro de uma visualização de Fallout de contexto de visitas
 
-## Crie um filtro a partir de um ponto de contato {#section_915E8FBF35CD4F34828F860C1CCC2272}
+## Criar um filtro a partir de um ponto de contato {#section_915E8FBF35CD4F34828F860C1CCC2272}
 
 1. Crie um filtro a partir de um ponto de contato específico no qual esteja interessado e que possa ser útil para aplicar a outros relatórios. Para fazer isso, clique com o botão direito do mouse no ponto de contato e selecione **[!UICONTROL Create filter from touchpoint]**.
 
