@@ -2,23 +2,22 @@
 description: Saiba como especificar os pontos de contato para criar uma sequência de fallout multidimensional.
 title: Configurar uma visualização de fallout
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 85%
+source-wordcount: '688'
+ht-degree: 84%
 
 ---
 
 # Configurar uma visualização de fallout
 
-Você pode especificar os pontos de contato para criar uma sequência de fallout multidimensional. Geralmente, um ponto de contato é uma página no seu site. Contudo, pontos de contato não estão limitados a páginas. Por exemplo, você pode adicionar eventos, como unidades, bem como visitantes exclusivos e visitantes que retornam. Você também pode adicionar dimensões, como uma categoria, tipo de navegador ou termo de pesquisa interno.
+Você pode especificar os pontos de contato para criar uma sequência de fallout multidimensional. Geralmente, um ponto de contato é uma página no seu site. Contudo, pontos de contato não estão limitados a páginas. Por exemplo, você pode adicionar eventos, como unidades, bem como visitante únicos e visitantes que retornam. Você também pode adicionar dimensões, como uma categoria, tipo de navegador ou termo de pesquisa interno.
 
 Você pode até mesmo adicionar filtros em um ponto de contato. Por exemplo, talvez você queira comparar filtros, como usuários de iOS e Android. Arraste os filtros desejados até a parte superior do fallout e as informações sobre eles são adicionadas ao relatório de fallout. Se quiser mostrar apenas esses filtros, é possível remover a linha de base Todas as visitas .
 
 Não há limite de número de etapas que você pode adicionar ou do número de dimensões usadas.
 
-Você pode definir o caminho das eVars, incluindo eVars de comercialização e [listVars](https://docs.adobe.com/content/help/pt-BR/analytics/implementation/vars/page-vars/page-variables.html) (variáveis que podem ter vários valores por clique, como produtos, listVars, eVars de comercialização e apoios de listas). Por exemplo, suponha que alguém esteja pesquisando sapatos e camisetas em uma página e camisetas e meias em outra. O próximo relatório de fluxo do produto para sapatos será camisetas e meias, e NÃO camisetas.
+Você pode definir o caminho das eVars, incluindo eVars de comercialização e [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) (variáveis que podem ter vários valores por clique, como produtos, listVars, eVars de comercialização e apoios de listas). Por exemplo, suponha que alguém esteja pesquisando sapatos e camisetas em uma página e camisetas e meias em outra. O próximo relatório de fluxo do produto para sapatos será camisetas e meias, e NÃO camisetas.
 
 1. Arraste uma visualização de [!UICONTROL Fallout] do menu suspenso Visualizações em uma [!UICONTROL Tabela de forma livre].
 
