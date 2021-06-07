@@ -3,11 +3,10 @@ keywords: Analysis Workspace
 title: Visão geral do Analysis Workspace
 description: Visão geral dos recursos do Analysis Workspace
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-translation-type: ht
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
-workflow-type: ht
-source-wordcount: '470'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +36,7 @@ Depois de conectado, sua primeira parada deve ser o Tutorial de treinamento do A
 
 ## Criar um novo projeto {#new-project}
 
-Com o tutorial concluído, você está pronto para começar a criar o primeiro projeto. O **novo modal do projeto** fornece opções diferentes para iniciar a análise. Você pode iniciar com um projeto em branco ou com um [scorecard móvel em branco](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/mobapp/curator.html), dependendo se você planeja compartilhar a análise do navegador ou do aplicativo móvel dos painéis do Adobe Analytics.
+Com o tutorial concluído, você está pronto para começar a criar o primeiro projeto. O **novo modal do projeto** fornece opções diferentes para iniciar a análise. Você pode iniciar com um projeto em branco ou com um [scorecard móvel em branco](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html), dependendo se você planeja compartilhar a análise do navegador ou do aplicativo móvel dos painéis do Adobe Analytics.
 
 ![](assets/create-new-project.png)
 
@@ -65,4 +64,4 @@ No projeto do Workspace, **painéis, tabelas, visualizações e componentes** s�
 
 ## Recursos adicionais {#resources}
 
-* A Adobe oferece centenas de [Tutoriais de treinamento em vídeo do Analytics](https://docs.adobe.com/content/help/pt-BR/analytics-learn/tutorials/overview.html).
+* A Adobe oferece centenas de [tutoriais de treinamento em vídeo do Analytics](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.translate.html).
