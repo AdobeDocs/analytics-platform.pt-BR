@@ -1,14 +1,13 @@
 ---
 description: Instruções para usar os scorecards de painéis.
 title: Guia executivo de painéis do Analytics
-translation-type: ht
-source-git-commit: cfda4791c89a0fa1023bea6033b0244b29f45f12
-workflow-type: ht
-source-wordcount: '1288'
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '1286'
 ht-degree: 100%
 
 ---
-
 
 # Painéis do Analytics: guia de início rápido do usuário executivo
 
@@ -120,7 +119,7 @@ Para usar painéis:
 
    * Dependendo do intervalo em que você tocar (**Dia**, **Semana**, **Mês** ou **Ano**), você verá duas opções para os intervalos de datas - o período de tempo atual ou o imediatamente anterior. Toque em uma dessas duas opções para selecionar o primeiro intervalo. Na lista **[!UICONTROL COMPARAR COM]**, toque em uma das opções apresentadas para comparar os dados desse período com o primeiro intervalo de datas selecionado. Toque em **[!UICONTROL Concluído]** no canto superior direito da tela. O campo **[!UICONTROL Intervalos de datas]** e os blocos de Scorecard são atualizados com os novos dados de comparação dos novos intervalos selecionados.
 
-7. Para aplicar um filtro ao cartão de pontuação, toque na lista suspensa e selecione um filtro que foi configurado pelo curador. [Os Filtros](https://docs.adobe.com/content/help/pt-BR/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) no aplicativo funcionam da mesma forma que no Analytics Workspace.
+7. Para aplicar um filtro ao cartão de pontuação, toque na lista suspensa e selecione um filtro que foi configurado pelo curador. [Os Filtros](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) no aplicativo funcionam da mesma forma que no Analytics Workspace.
 
    ![Filtro](assets/segment_filter.png)
 
