@@ -2,14 +2,13 @@
 description: Crie intervalos de datas personalizados no Analysis Workspace e salve-os como Componentes de tempo.
 keywords: Analysis Workspace
 title: Criar intervalos de datas personalizados
-feature: Reports & Analytics Basics
+feature: Noções básicas do Reports & Analytics
 uuid: c8873d41-454d-4f22-ad1f-38cacec5a3bc
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 98%
+source-wordcount: '284'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +16,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Crie intervalos de datas personalizados no Analysis Workspace e salve-os como Componentes de tempo.
 
