@@ -2,11 +2,10 @@
 description: Um histograma é semelhante a um gráfico de barras, mas agrupa os números em intervalos (grupos).
 title: Histograma
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 87%
+source-wordcount: '421'
+ht-degree: 86%
 
 ---
 
@@ -14,7 +13,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Um histograma é semelhante a um gráfico de barras, mas agrupa os números em intervalos (grupos). O Analytics automatiza o agrupamento de números em intervalos, mas você pode alterar as configurações em [Configurações avançadas](#section_09D774C584864D4CA6B5672DC2927477).
 
@@ -32,7 +31,7 @@ Para criar um histograma:
 >
 >Os histogramas são compatíveis apenas com métricas padrão, não calculadas.
 
-Aqui, utilizamos a Métrica de exibições de página por visitantes exclusivos. O primeiro grupo (à esquerda) corresponde a uma exibição de página por visitante exclusivo, o segundo grupo, a duas exibições de página, etc.
+Aqui, utilizamos a Métrica de exibições de página por visitante únicos. O primeiro grupo (à esquerda) corresponde a uma exibição de página por visitante único, o segundo grupo, a duas exibições de página, etc.
 
 ![](assets/histogram2.png)
 
@@ -45,7 +44,7 @@ Para ajustar as configurações do histograma, clique no ícone de Configuraçõ
 | Grupo inicial | Determina o grupo inicial do histograma. O valor padrão é “1”. Você pode definir números iniciais de 0 a infinito (nenhum número negativo). |
 | Grupos de métricas | Permite aumentar/diminuir o número de intervalos de dados (grupos). O número máximo de grupos é 50. |
 | Tamanho do grupo de métricas | Permite definir o tamanho de cada grupo. Por exemplo, você pode alterar o tamanho do grupo de uma exibição de página para duas exibições de página. |
-| Método de contagem | Permite escolher entre [Visitante](https://docs.adobe.com/content/help/en/analytics/components/metrics/unique-visitors.html), [Visita](https://docs.adobe.com/content/help/en/analytics/components/metrics/visits.html) ou Tipo de ocorrência. Por exemplo, exibições de página por visita, por visitante ou por ocorrência. Para ocorrências, “Ocorrências” é usada como a métrica do eixo “y” na tabela de forma livre. |
+| Método de contagem | Permite escolher entre [Visitante](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html), [Visita](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html) ou Tipo de ocorrência. Por exemplo, exibições de página por visita, por visitante ou por ocorrência. Para ocorrências, “Ocorrências” é usada como a métrica do eixo “y” na tabela de forma livre. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -64,4 +63,4 @@ Os filtros pré-criados exibidos na tabela são filtros internos e não serão e
 
 ![](assets/prebuilt_segments.png)
 
-Para explorar mais formas de gerenciar tabelas de dados de forma livre e outras visualizações, como detalhamento de dados, clique [aqui](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html).
+Para explorar mais formas de gerenciar tabelas de dados de forma livre e outras visualizações, como detalhamento de dados, clique [aqui](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=pt-BR).
