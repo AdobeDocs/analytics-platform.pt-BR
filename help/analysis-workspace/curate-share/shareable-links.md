@@ -1,27 +1,26 @@
 ---
 description: Saiba como criar links compartilháveis para projetos ou visualizações
-keywords: Analysis Workspace sharing
+keywords: Compartilhamento no Analysis Workspace
 title: Criar links compartilháveis
-translation-type: ht
-source-git-commit: a991dce6abaf90cbca06de75606a2517cb5b6484
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 92%
 
 ---
-
 
 # Criar links compartilháveis
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O Analysis Workspace oferece várias maneiras de compartilhar um projeto com seus usuários, incluindo a capacidade de obter um link para um projeto ou uma parte específica de um projeto. Os usuários que recebem um link precisam fazer logon no Adobe Analytics antes de acessar o projeto.
 
 ## Obter link do projeto {#project-link}
 
-Para compartilhar um link para o projeto completo, acesse **[!UICONTROL Compartilhar > Obter link do projeto]**. Se o recipient do link não tiver uma [função de projeto](https://docs.adobe.com/content/help/pt-BR/analytics/analyze/analysis-workspace/curate-share/share-projects.html) atribuída, os administradores receberão a função **[!UICONTROL Pode editar]** e os não administradores receberão experiências **[!UICONTROL Pode duplicar]** experiências.
+Para compartilhar um link para o projeto completo, acesse **[!UICONTROL Compartilhar > Obter link do projeto]**. Se o recipient do link não tiver uma [função de projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=pt-BR) atribuída, os administradores receberão a função **[!UICONTROL Pode editar]** e os não administradores receberão experiências **[!UICONTROL Pode duplicar]** experiências.
 
 ![](assets/get-project-link.png)
 
@@ -32,7 +31,7 @@ Você também pode compartilhar um link para uma parte específica de um projeto
 * Em qualquer cabeçalho do painel, clique com o botão direito do mouse no link **[!UICONTROL Obter painel]**
 * Em qualquer tabela ou cabeçalho de visualização, clique com o botão direito do mouse em **[!UICONTROL Obter link de visualização]**
 
-[Assista ao vídeo](https://docs.adobe.com/content/help/pt-BR/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) sobre como criar links e usá-los para direcionar recipients para partes específicas do seu projeto.
+[Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) sobre como criar links e usá-los para direcionar recipients para partes específicas do seu projeto.
 
 ![](assets/get-viz-link.png)
 
@@ -40,6 +39,6 @@ Você também pode compartilhar um link para uma parte específica de um projeto
 
 Uma dica para aproveitar as várias opções de link é sempre incluir um índice na parte superior do projeto do Workspace. No índice, você pode vincular a outros projetos relevantes, painéis específicos e visualizações específicas. Dessa forma, o recipient do projeto consegue navegar com mais facilidade.
 
-[Assista ao vídeo](https://docs.adobe.com/content/help/pt-BR/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) sobre como construir um índice usando links e o editor de rich text do Workspace.
+[Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) sobre como construir um índice usando links e o editor de rich text do Workspace.
 
 ![](assets/toc.png)
