@@ -2,11 +2,10 @@
 title: (B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa
 description: Saiba como adicionar dados baseados em conta como um conjunto de dados de pesquisa ao CJA
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
-translation-type: ht
-source-git-commit: 2b6ef07963d648d757f9c1baef123bff416a871a
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+workflow-type: tm+mt
+source-wordcount: '926'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +29,7 @@ Primeiro, você cria um esquema de pesquisa na Adobe Experience Platform e depoi
 
 ## 1. Criar esquema de pesquisa (Experience Platform)
 
-Criar seu próprio esquema para a tabela de [pesquisa](/help/getting-started/cja-glossary.md) garante que o conjunto de dados usado estará disponível no CJA com a configuração correta (tipo de registro). Uma prática recomendada é [criar uma classe de esquema personalizada](https://docs.adobe.com/content/help/pt-BR/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) chamada &quot;Pesquisa&quot;, sem elementos, que pode ser reutilizada para todas as tabelas de pesquisa.
+Criar seu próprio esquema para a tabela de [pesquisa](/help/getting-started/cja-glossary.md) garante que o conjunto de dados usado estará disponível no CJA com a configuração correta (tipo de registro). Uma prática recomendada é [criar uma classe de esquema personalizada](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#create-new-class) chamada &quot;Pesquisa&quot;, sem elementos, que pode ser reutilizada para todas as tabelas de pesquisa.
 
 ![](assets/create-new-class.png)
 
@@ -54,9 +53,9 @@ Por exemplo, annualRevenue ou totalEmployees são definidos como um inteiro no e
 
 ## 3. Assimilar dados na Experience Platform
 
-As instruções sobre como [Mapear um arquivo CSV para um esquema XDM](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/tutorials/map-a-csv-file.html) devem ajudar se você estiver usando um arquivo CSV.
+As instruções sobre como [Mapear um arquivo CSV para um esquema XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html) devem ajudar se você estiver usando um arquivo CSV.
 
-[Outros métodos](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html) também estão disponíveis.
+[Outros métodos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) também estão disponíveis.
 
 A assimilação de dados e o estabelecimento da pesquisa levam de 2 a 4 horas, dependendo do tamanho da tabela de pesquisa.
 
