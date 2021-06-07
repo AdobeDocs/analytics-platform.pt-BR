@@ -2,14 +2,13 @@
 description: No calendário, você pode especificar datas e intervalos de datas ou selecionar uma predefinição.
 title: Visão geral do calendário e do intervalos de datas
 uuid: 3d7727ba-9070-4f7c-815f-c98baa4e3a2d
-translation-type: tm+mt
-source-git-commit: 7dc245671d98e63cc4f0d97c1b1fdb11509b7d45
+exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 100%
+source-wordcount: '373'
+ht-degree: 97%
 
 ---
-
 
 # Visão geral do calendário e do intervalos de datas
 
@@ -23,7 +22,7 @@ O primeiro clique em um calendário inicia uma seleção de intervalo de datas. 
 
 Você também pode arrastar datas (e dimensões de tempo) em um projeto do Workspace. É possível selecionar dias, semanas, meses e anos específicos ou uma data do acumulado.
 
-[Usando intervalos de data e calendário na Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html?lang=pt-BR) (4:07)
+[Usando intervalos de data e calendário na Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/calendar-and-date-ranges/using-dates-in-analysis-workspace.html) (4:07)
 
 | Configuração | Descrição |
 | --- | --- |
