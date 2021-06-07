@@ -2,11 +2,10 @@
 title: O que é a análise de coorte?
 description: Saiba mais sobre a análise de coorte no Analysis Workspace
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 84%
+source-wordcount: '466'
+ht-degree: 82%
 
 ---
 
@@ -26,7 +25,7 @@ Exemplos do que você pode fazer com a [!UICONTROL análise de coorte]:
 
 A [!UICONTROL Análise de coorte] está disponível a todos os clientes do Adobe Analytics com direitos de acesso ao [!UICONTROL Analysis Workspace].
 
-[Tutorial em vídeo da Análise de coorte](https://docs.adobe.com/content/help/pt-BR/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
+[Tutorial em vídeo da Análise de coorte](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
 
 >[!IMPORTANT]
 >
