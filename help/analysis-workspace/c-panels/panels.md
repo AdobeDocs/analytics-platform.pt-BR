@@ -2,11 +2,10 @@
 description: Um painel é uma coleção de tabelas e visualizações
 title: Visão geral dos painéis
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 63%
+source-wordcount: '800'
+ht-degree: 62%
 
 ---
 
@@ -69,7 +68,7 @@ Para criar filtros suspensos:
 
 ![](assets/create-dropdown.png)
 
-[Assista ao vídeo](https://docs.adobe.com/content/help/pt-BR/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) para saber mais sobre como adicionar filtros suspensos ao seu projeto.
+[Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html) para saber mais sobre como adicionar filtros suspensos ao seu projeto.
 
 ## Clique com o botão direito do mouse no menu {#right-click}
 
