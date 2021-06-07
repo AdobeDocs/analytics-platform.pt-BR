@@ -1,12 +1,11 @@
 ---
-source-git-commit: 5b484b851919607226c0deed6b5d62d1eafea50b
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '433'
 ht-degree: 98%
 
 ---
-# Documentação do Contribute para o Customer Journey Analytics
+# Contribuir para a documentação do Customer Journey Analytics
 
 Aceitamos contribuições de nossa comunidade e de funcionários da Adobe que estão fora das equipes de documentação.
 
@@ -16,13 +15,13 @@ Este projeto adotou o [Código de conduta de código aberto da Adobe](code-of-co
 
 ## Sobre suas contribuições para o conteúdo da Adobe
 
-Consulte o [Guia do colaborador dos documentos da Adobe](https://docs.adobe.com/content/help/pt-BR/contributor/contributor-guide/introduction.html).
+Consulte o [Guia do colaborador dos documentos da Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
 
 A maneira como você contribui depende de quem você é e do tipo de alterações com as quais deseja contribuir:
 
 ### Pequenas alterações
 
-Se você estiver contribuindo com pequenas atualizações de boa vontade, visite o artigo e clique no link **Editar** do artigo, que vai para a origem GitHub do artigo. Em seguida, use a interface do usuário do GitHub para fazer as atualizações. Consulte o [Guia geral de colaborador do Adobe Docs](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) para obter mais informações.
+Se você estiver contribuindo com pequenas atualizações de boa vontade, visite o artigo e clique no link **Editar** do artigo, que vai para a origem GitHub do artigo. Em seguida, use a interface do usuário do GitHub para fazer as atualizações. Consulte o [Guia geral de colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
 
 As pequenas correções ou esclarecimentos que você envia para a documentação e os exemplos de código deste repositório são abrangidos pelos termos de uso da Adobe.
 
@@ -42,7 +41,7 @@ Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe d
 
 Os colaboradores da comunidade podem usar a interface do GitHub para editar ou bifurcar o repositório e fazer grandes contribuições.
 
-Consulte o [Guia do colaborador dos documentos da Adobe](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) para obter mais detalhes.
+Consulte o [Guia do colaborador dos documentos da Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais detalhes.
 
 ## Como usar o Markdown para formatar seu tópico
 
