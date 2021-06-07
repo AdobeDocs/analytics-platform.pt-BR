@@ -1,14 +1,13 @@
 ---
 description: O recurso Fluxo mostra os caminhos do cliente pelos sites e aplicativos.
 title: Visão geral do Fluxo
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
+source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 86%
+source-wordcount: '185'
+ht-degree: 83%
 
 ---
-
 
 # Visão geral do fluxo
 
@@ -20,7 +19,7 @@ Ele permite:
 * Analisar para onde os clientes vão antes e depois de pontos de verificação específicos, como a entrada, uma dimensão específica ou a saída
 * Criar filtros designando um ponto específico em um caminho escolhido
 
-[Tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=pt-BR) em vídeo de Visualização de fluxo (4:56)
+[Tutorial em vídeo de Visualização de fluxo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html) (4:56)
 
 ## Fluxos interdimensionais {#section_7AA325E432C846B0AC51E70CCE79B4C0}
 
