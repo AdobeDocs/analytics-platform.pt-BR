@@ -2,10 +2,10 @@
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: e62303250e1f6b8f3f666a04c2742126a4861893
+source-git-commit: d343ad40be6ae210f17dd547062e91df0aaf7fce
 workflow-type: tm+mt
-source-wordcount: '2934'
-ht-degree: 91%
+source-wordcount: '2988'
+ht-degree: 88%
 
 ---
 
@@ -26,8 +26,8 @@ A criação de uma visualização de dados envolve a criação de métricas e di
 | [!UICONTROL Nome] | É obrigatório dar um nome à visualização de dados. |
 | [!UICONTROL Descrição] | Uma descrição detalhada não é obrigatória, mas é recomendada. |
 | [!UICONTROL Fuso horário] | Escolha em qual fuso horário você deseja que seus dados sejam apresentados. |
-| [!UICONTROL Tags] | As tags permitem organizar as visualizações de dados em categorias. |
-| [!UICONTROL Contêineres] | Você pode renomear seus contêineres aqui para determinar como eles aparecem em qualquer projeto do Workspace baseado nessa visualização de dados. Os contêineres são usados em filtros e fallout/fluxo e assim por diante, para definir a amplitude ou o estreitamento do escopo ou do contexto. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) |
+| [!UICONTROL Tags] | [!UICONTROL As tags permitem organizar as visualizações de dados em categorias.] |
+| [!UICONTROL Contêineres] | Você pode renomear seus contêineres aqui para determinar como eles aparecem em qualquer projeto do Workspace baseado nessa visualização de dados.  Os contêineres são usados em filtros e fallout/fluxo e assim por diante, para definir a amplitude ou o estreitamento do escopo ou do contexto. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) |
 | [!UICONTROL O nome do container de pessoa é...] | [!UICONTROL Pessoa] (padrão). O container [!UICONTROL Pessoa] inclui cada visita e exibição de página de visitante em um intervalo de tempo especificado. Você pode renomear esse contêiner como &quot;Usuário&quot; ou qualquer outro termo que desejar. |
 | [!UICONTROL O nome do container da sessão é...] | [!UICONTROL Sessão] (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear esse contêiner como &quot;Visita&quot; ou qualquer outro termo que desejar. |
 | [!UICONTROL O nome do container de evento é...] | [!UICONTROL Evento] (padrão). O container [!UICONTROL Evento] define quais eventos de página você deseja incluir ou excluir de um filtro. |
@@ -71,7 +71,7 @@ Por exemplo, no campo **[!UICONTROL pageTitle]**, é possível criar uma dimens�
 | [!UICONTROL Nome do campo] | O nome do campo de esquema. |
 | [!UICONTROL Tipo de conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de conjunto de dados (evento, pesquisa ou perfil) o componente veio. |
 | [!UICONTROL Conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de campo o componente veio (por exemplo, sequência, inteiro etc.). Este campo pode conter vários conjuntos de dados. |
-| [!UICONTROL Tipo de dados de esquema] | Indica se o componente é uma sequência, um inteiro etc. |
+| [!UICONTROL Tipo de dados de esquema] | Refere-se a se o componente é uma string, um inteiro e assim por diante.  Embora você possa usar qualquer tipo de campo de esquema compatível na Plataforma, nem todos os tipos de campos são compatíveis no CJA. Você pode adicionar conjuntos de dados ao CJA com tipos de campos de esquema diferentes de sequências ou números inteiros, mas o CJA não pode exibir esses dados. Além disso, no momento, somente as Cadeias de caracteres são permitidas em conjuntos de dados de Pesquisa. |
 | [!UICONTROL ID de componente] | Obrigatório. A [API CJA](https://adobe.io/cja-apis/docs) usa esse campo para fazer referência ao componente. Você pode clicar no ícone editar e modificar essa ID de componente. No entanto, alterar essa ID de componente interrompe todos os projetos existentes do Workspace que contêm esse componente.<br>Se você criar outra visualização de dados que use um campo diferente para uma dimensão pageTitle, será possível renomeá-la e tornar a visualização compatível com dados cruzados. |
 | [!UICONTROL Caminho do esquema] | Obrigatório. Um campo não editável que mostra o caminho do esquema de onde o componente veio. |
 | [!UICONTROL Ocultar componente nos relatórios] | Padrão = desativado. Permite coletar o componente da Visualização de dados quando usado em relatórios. Isso não afeta as permissões, apenas a coleta de componentes. Em outras palavras, você pode ocultar o componente de usuários não administradores nos relatórios. Os administradores ainda podem acessá-lo clicando em [!UICONTROL Mostrar todos os componentes] em um projeto do Analysis Workspace. |
@@ -95,9 +95,9 @@ As configurações de formato são somente para métricas.
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
-| [!UICONTROL Definir atribuição] | Permite especificar as configurações de atribuição que você deseja aplicar a essa métrica por padrão quando ela for usada. Esse padrão pode ser substituído em uma Tabela de forma livre ou em uma Métrica calculada. |
+| [!UICONTROL Definir atribuição] | Permite especificar as configurações de atribuição que você deseja aplicar a essa métrica por padrão quando ela for usada. Esse padrão pode ser substituído em uma [!UICONTROL Tabela de forma livre] ou em uma Métrica calculada. |
 | [!UICONTROL Modelo de atribuição] | Permite especificar um modelo de atribuição padrão, ativo somente ao acionar a configuração [!UICONTROL Usar modelo de atribuição não padrão]. O padrão é [!UICONTROL Último contato]. As opções são: Último contato, Primeiro contato, Linear, Participação, Mesmo contato, Forma de U, Curva de J, J inverso, Declínio de tempo, Personalizado, Algorítmico. Algumas dessas opções criam campos adicionais que precisam ser preenchidos - como Personalizado ou Declínio de tempo. É possível criar várias métricas usando o mesmo campo. Isso significa que você pode ter uma métrica de receita de [!UICONTROL Último contato] e uma métrica de receita de [!UICONTROL Primeiro contato], mas com base no mesmo campo de receita no esquema. |
-| [!UICONTROL Janela de lookback] | Permite especificar uma janela de lookback padrão para uma métrica, ativa somente ao acionar a configuração [!UICONTROL Usar modelo de atribuição não padrão]. As opções são: Pessoa (Janela de relatório), Sessão, Personalizado. Quando a opção Personalizado está selecionada, também oferecemos a opção de selecionar qualquer número de dias/semanas/meses/etc. (até 90 dias), exatamente como o Attribution IQ. Você pode ter várias métricas usando o mesmo campo de esquema, mas cada uma com uma janela de pesquisa separada. |
+| [!UICONTROL Janela de lookback] | Permite especificar uma janela de lookback padrão para uma métrica, ativa somente ao acionar a configuração [!UICONTROL Usar modelo de atribuição não padrão]. As opções são: [!UICONTROL Pessoa] (Janela de relatórios), [!UICONTROL Sessão], [!UICONTROL Personalizada]. Quando [!UICONTROL Personalizado] é selecionado, também oferecemos a opção de selecionar qualquer número de dias/semanas/meses/etc. (até 90 dias), exatamente como [!UICONTROL Attribution IQ]. Você pode ter várias métricas usando o mesmo campo de esquema, mas cada uma com uma janela de pesquisa separada. |
 
 ### Definir as configurações de valores de inclusão/exclusão
 
