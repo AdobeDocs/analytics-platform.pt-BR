@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
 workflow-type: tm+mt
-source-wordcount: '1968'
-ht-degree: 97%
+source-wordcount: '2084'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,9 @@ Uma conexão permite integrar conjuntos de dados do [!DNL Adobe Experience Platf
 
 Clique [aqui](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=en) para obter uma visão geral do vídeo.
 
-Para criar uma conexão CJA, você precisa das seguintes permissões em [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+## Permissões necessárias
+
+Para criar uma conexão Customer Journey Analytics (CJA), você precisa das seguintes permissões em [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Modelagem de dados: Exibir esquemas, Gerenciar esquemas
@@ -41,7 +43,7 @@ Customer Journey Analytics
 
 1. Escolha uma sandbox na Experience Platform que contenha os conjuntos de dados para os quais você deseja criar uma conexão.
 
-   A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Você pode considerar as sandboxes como “silos de dados” que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.  Depois de selecionar a sandbox, o painel esquerdo mostra todos os conjuntos de dados que você pode obter dela.
+   A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=pt-BR) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Você pode considerar as sandboxes como “silos de dados” que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.  Depois de selecionar a sandbox, o painel esquerdo mostra todos os conjuntos de dados que você pode obter dela.
 
    >[!IMPORTANT]
    >
@@ -50,6 +52,9 @@ Customer Journey Analytics
 1. Selecione um ou mais conjuntos de dados que você deseja transferir para o [!UICONTROL Customer Journey Analytics] e clique em **[!UICONTROL Adicionar]**.
 
    (Se tiver vários conjuntos de dados, você poderá pesquisar os corretos usando a barra de pesquisa **[!UICONTROL Pesquisar conjuntos de dados]** acima da lista de conjuntos de dados.)
+
+   O CJA é baseado em conjuntos de dados de Experience Platform. Embora você possa usar qualquer tipo de campo de esquema compatível na Plataforma, nem todos os tipos de campos são compatíveis no CJA. Você pode adicionar conjuntos de dados ao CJA com tipos de campos de esquema diferentes de sequências ou números, mas o CJA não pode exibir esses dados. Além disso, no momento, somente as Cadeias de caracteres são permitidas em conjuntos de dados de Pesquisa.
+Se você estiver procurando um campo para adicionar a uma visualização de dados depois de adicionar o conjunto de dados a uma conexão, a tag padrão [!UICONTROL Contém dados] estará disponível para todos os campos nos conjuntos de dados. Essa tag mantém as visualizações de dados mais gerenciáveis, pois inclui apenas campos de esquema com dados em seus conjuntos de dados.
 
 ## Configurar conjunto de dados
 
@@ -85,7 +90,7 @@ No lado direito, agora é possível configurar os conjuntos de dados adicionados
 
 O Customer Journey Analytics agora permite usar o Mapa de identidade para sua ID de pessoa. O Mapa de identidade é uma estrutura de dados de mapa que permite que alguém carregue pares de chaves -> valores. As chaves são namespaces de identidade e o valor é uma estrutura que contém o valor de identidade. O Mapa de identidade existe em cada linha/evento carregado e é preenchido de acordo com cada linha.
 
-O Mapa de identidade está disponível para qualquer conjunto de dados que use um esquema com base na classe [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html). Ao selecionar um conjunto de dados para ser incluído em uma conexão do CJA, você tem a opção de selecionar um campo como a ID primária ou o Mapa de identidade:
+O Mapa de identidade está disponível para qualquer conjunto de dados que use um esquema com base na classe [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR). Ao selecionar um conjunto de dados para ser incluído em uma conexão do CJA, você tem a opção de selecionar um campo como a ID primária ou o Mapa de identidade:
 
 ![](assets/idmap1.png)
 
@@ -118,7 +123,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
    | [!UICONTROL Conjuntos de dados] | Os conjuntos de dados incluídos nesta conexão. |
    | [!UICONTROL Importe automaticamente todos os novos conjuntos de dados nesta conexão, a partir de hoje.] | Selecione essa opção se quiser estabelecer uma conexão contínua, para que qualquer novo lote de dados adicionado aos conjuntos de dados nesta conexão continuem automaticamente fluindo para o [!UICONTROL Workspace]. |
    | [!UICONTROL Importar todos os dados existentes] | Ao selecionar essa opção e salvar a conexão, todos os dados existentes (históricos) do [!DNL Experience Platform] de todos os conjuntos de dados que estão nessa conexão serão importados ou terão preenchimento retroativo. No futuro, todos os dados históricos existentes para qualquer conjunto de dados novo adicionado a essa conexão salva também serão importados automaticamente. Consulte também [Dados históricos de preenchimento retroativo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) abaixo.<br>**Observe que, uma vez que essa conexão é salva, essa configuração não pode ser alterada.** |
-   | [!UICONTROL Número médio de eventos diários] | É necessário especificar o número médio de eventos diários que serão importados (novos dados **e** dados de preenchimento retroativo) para todos os conjuntos de dados na conexão. Selecione uma opção no menu suspenso para que a Adobe possa alocar espaço suficiente para esses dados.<br>Se você não souber o número médio de eventos diários que sua empresa vai importar, é possível realizar um query SQL simples em [Serviços de query da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) para descobrir.<br>Consulte &quot;Calcular o número médio de eventos diários&quot; abaixo. |
+   | [!UICONTROL Número médio de eventos diários] | É necessário especificar o número médio de eventos diários que serão importados (novos dados **e** dados de preenchimento retroativo) para todos os conjuntos de dados na conexão. Selecione uma opção no menu suspenso para que a Adobe possa alocar espaço suficiente para esses dados.<br>Se você não souber o número médio de eventos diários que sua empresa vai importar, é possível realizar um query SQL simples em [Serviços de query da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) para descobrir.<br>Consulte &quot;Calcular o número médio de eventos diários&quot; abaixo. |
 
 1. Clique em **[!UICONTROL Salvar e criar exibições de dados]**. Para obter a documentação, consulte [criar uma visualização de dados](/help/data-views/create-dataview.md).
 
