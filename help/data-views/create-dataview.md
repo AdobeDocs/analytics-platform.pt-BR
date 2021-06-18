@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78
 source-git-commit: 9507bdfa66775e75628426bbb6d177b9bb5a3c6a
 workflow-type: tm+mt
 source-wordcount: '2974'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -27,9 +27,9 @@ A criação de uma visualização de dados envolve a criação de métricas e di
 | [!UICONTROL Descrição] | Uma descrição detalhada não é obrigatória, mas é recomendada. |
 | [!UICONTROL Fuso horário] | Escolha em qual fuso horário você deseja que seus dados sejam apresentados. |
 | [!UICONTROL Tags] | [!UICONTROL As tags permitem organizar as visualizações de dados em categorias.] |
-| [!UICONTROL Contêineres] | Você pode renomear seus contêineres aqui para determinar como eles aparecem em qualquer projeto do Workspace baseado nessa visualização de dados.  Os contêineres são usados em filtros e fallout/fluxo e assim por diante, para definir a amplitude ou o estreitamento do escopo ou do contexto. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) |
-| [!UICONTROL O nome do container de pessoa é...] | [!UICONTROL Pessoa] (padrão). O container [!UICONTROL Pessoa] inclui cada visita e exibição de página de visitante em um intervalo de tempo especificado. Você pode renomear esse contêiner como &quot;Usuário&quot; ou qualquer outro termo que desejar. |
-| [!UICONTROL O nome do container da sessão é...] | [!UICONTROL Sessão] (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear esse contêiner como &quot;Visita&quot; ou qualquer outro termo que desejar. |
+| [!UICONTROL Contêineres] | É possível renomear os containers aqui para determinar como eles aparecem em qualquer projeto do Workspace baseado nesta visualização de dados. [!UICONTROL Os containers são usados em filtros e fallout/fluxo para definir a amplitude ou o estreitamento do escopo ou do contexto. ] [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) |
+| [!UICONTROL O nome do container de pessoa é...] | [!UICONTROL Pessoa] (padrão). O container [!UICONTROL Pessoa] inclui cada visita e exibição de página de visitante em um intervalo de tempo especificado. Você pode renomear o container como &quot;Usuário&quot; ou com qualquer outro termo que desejar. |
+| [!UICONTROL O nome do container da sessão é...] | [!UICONTROL Sessão] (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
 | [!UICONTROL O nome do container de evento é...] | [!UICONTROL Evento] (padrão). O container [!UICONTROL Evento] define quais eventos de página você deseja incluir ou excluir de um filtro. |
 
 Em seguida, você pode criar métricas e dimensões com base em elementos do esquema. Você também pode usar os componentes padrão.
@@ -43,7 +43,7 @@ Em seguida, você pode criar métricas e dimensões com base em elementos do esq
 Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo. Lembre-se:
 
 * Os componentes já incluídos são os componentes obrigatórios padrão (gerados pelo sistema).
-* O Adobe aplica o filtro **[!UICONTROL Contém dados]** por padrão, para que sejam exibidos apenas os campos Esquema que contêm dados. Se estiver procurando um campo que não contenha dados, remova o filtro .
+* A Adobe aplica o filtro **[!UICONTROL Contém dados]** por padrão para que apareçam apenas os campos de esquema que contêm dados. Se estiver procurando um campo que não contém dados, remova o filtro.
 
 1. Agora arraste um campo de esquema, como [!UICONTROL pageTitle], do painel esquerdo para a seção Métricas ou Dimensão.
 
@@ -73,7 +73,7 @@ Por exemplo, no campo **[!UICONTROL pageTitle]**, é possível criar uma dimens�
 | [!UICONTROL Conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de campo o componente veio (por exemplo, sequência, inteiro etc.). Este campo pode conter vários conjuntos de dados. |
 | [!UICONTROL Tipo de dados de esquema] | Refere-se a se o componente é uma string, um inteiro e assim por diante.  Embora você possa usar qualquer tipo de campo de esquema compatível na Plataforma, nem todos os tipos de campos são compatíveis no CJA. Os seguintes tipos de dados são suportados: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` e `Boolean`. Observe que somente as sequências de caracteres são permitidas em conjuntos de dados de Pesquisa no momento. |
 | [!UICONTROL ID de componente] | Obrigatório. A [API CJA](https://adobe.io/cja-apis/docs) usa esse campo para fazer referência ao componente. Você pode clicar no ícone editar e modificar essa ID de componente. No entanto, alterar essa ID de componente interrompe todos os projetos existentes do Workspace que contêm esse componente.<br>Se você criar outra visualização de dados que use um campo diferente para uma dimensão pageTitle, será possível renomeá-la e tornar a visualização compatível com dados cruzados. |
-| [!UICONTROL Caminho do esquema] | Obrigatório. Um campo não editável que mostra o caminho do esquema de onde o componente veio. |
+| [!UICONTROL  Caminho do esquema] | Obrigatório. Um campo não editável que mostra o caminho do esquema de onde o componente veio. |
 | [!UICONTROL Ocultar componente nos relatórios] | Padrão = desativado. Permite coletar o componente da Visualização de dados quando usado em relatórios. Isso não afeta as permissões, apenas a coleta de componentes. Em outras palavras, você pode ocultar o componente de usuários não administradores nos relatórios. Os administradores ainda podem acessá-lo clicando em [!UICONTROL Mostrar todos os componentes] em um projeto do Analysis Workspace. |
 
 ### Definir configurações de formato
@@ -123,7 +123,7 @@ Permite especificar como uma métrica deve se comportar nos relatórios.
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
-| [!UICONTROL Contar valores] | Somente para métricas booleanas, essa configuração permite especificar se você deseja [!UICONTROL Contar Verdadeiro], [!UICONTROL Contar Falso] ou [!UICONTROL Contar Verdadeiro ou Falso] como o valor da métrica. O padrão é [!UICONTROL Count True]. Isso fornece o valor real de uma métrica, como &quot;50&quot;, se houver um valor de pedido de 50. |
+| [!UICONTROL Contar valores] | Somente para métricas boolianas, essa configuração permite especificar se você deseja [!UICONTROL Contar verdadeiro], [!UICONTROL Contar falso] ou [!UICONTROL Contar verdadeiro ou falso] como o valor da métrica. O padrão é [!UICONTROL Contar verdadeiro]. Essa opção fornecerá o valor real de uma métrica, como &quot;50&quot;, se houver um valor de pedido de 50. |
 | [!UICONTROL Contar instâncias] | Permite especificar se um campo numérico ou de tipo de data usado como uma métrica deve contar os horários em que foi definido, em vez do valor propriamente dito.<br> Se desejar adicionar as instâncias de um campo numérico e quiser simplesmente adicionar o número de vezes que um campo foi *definido* como diferente do valor real nele contido.<br>Isso é útil para criar uma métrica [!UICONTROL Pedidos] de um campo [!UICONTROL Receita], por exemplo. Se a receita foi definida, devemos contar um pedido único em vez do valor numérico da receita. |
 
 ### Definir configurações [!UICONTROL Nenhuma opção de valor]
@@ -151,7 +151,7 @@ Para obter mais informações, consulte o tópico sobre [Persistência](/help/da
 | --- | --- |
 | [!UICONTROL Definir persistência] | Alternar tecla |
 | [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são: [!UICONTROL Mais recente], [!UICONTROL Original], [!UICONTROL Instância], [!UICONTROL Tudo]. Se você quiser que um valor persista (semelhante às eVars no Analytics tradicional), é aqui que ele deverá ser definido. A única diferença principal é que a persistência máxima que você pode definir é 90 dias. Além disso, [!UICONTROL Nunca expirar] não é uma opção. |
-| [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: [!UICONTROL Sessão] (padrão), [!UICONTROL Pessoa], [!UICONTROL Tempo], [!UICONTROL Métrica]. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). [!UICONTROL Métrica] permite especificar qualquer uma das métricas definidas como a expiração dessa dimensão (por exemplo, uma métrica de [!UICONTROL Compra]).<br>**Observação**: Não é possível definir uma expiração personalizada para uma dimensão ao selecionar uma alocação de  [!UICONTROL Todos]. |
+| [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: [!UICONTROL Sessão] (padrão), [!UICONTROL Pessoa], [!UICONTROL Tempo], [!UICONTROL Métrica]. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). [!UICONTROL Métrica] permite especificar qualquer uma das métricas definidas como a expiração dessa dimensão (por exemplo, uma métrica de [!UICONTROL Compra]).<br>**Observação**: não é possível definir uma expiração personalizada para uma dimensão ao selecionar uma alocação de [!UICONTROL Todos]. |
 
 ### Definir configurações de intervalo de valor
 
@@ -206,7 +206,7 @@ Os componentes padrão opcionais estão disponíveis na guia **[!UICONTROL Compo
 
 ## Use o recurso [!UICONTROL Duplicar]
 
-Duplicar métricas ou dimensões e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões a partir de um único campo de esquema. Basta selecionar a configuração [!UICONTROL Duplicate] abaixo do nome da métrica ou das dimensões na parte superior direita. Em seguida, modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
+Duplicar métricas ou dimensões e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões por meio de um único campo de esquema. Basta selecionar a configuração [!UICONTROL Duplicar] abaixo do nome da métrica ou das dimensões na parte superior direita. Em seguida, modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
 
 ![](assets/duplicate.png)
 
