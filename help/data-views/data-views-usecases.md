@@ -5,7 +5,7 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 source-git-commit: acf2728539562a2bb9be2adfbeb7ae6cc4f3dffd
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 42%
+ht-degree: 88%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 42%
 
 Esses casos de uso mostram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics.
 
-## 1. Criar uma métrica a partir de um campo de esquema de cadeia de caracteres
+## 1. Criar uma métrica com base em um campo de esquema de cadeia de caracteres
 
 Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica [!UICONTROL Pedidos] de um campo de esquema [!UICONTROL pageTitle] que seja uma sequência. Estas são as etapas:
 
@@ -28,7 +28,7 @@ Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
 Você também pode criar outra métrica [!UICONTROL Pedidos] do mesmo campo e especificar um modelo de atribuição diferente para ele, como [!UICONTROL Primeiro contato], e uma [!UICONTROL janela de pesquisa] diferente, como [!UICONTROL 30 dias].
 
-Outro exemplo seria usar a ID do visitante, uma dimensão, como uma métrica para determinar quantas IDs de visitantes sua empresa possui.
+Outro exemplo seria usar a ID de visitante, uma dimensão, como uma métrica para determinar quantas IDs de visitante sua empresa tem.
 
 ## 2. Usar números inteiros como dimensões
 
@@ -42,11 +42,11 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
    ![](assets/bucketing.png)
 
-## 3. Use dimensões numéricas como &quot;métricas&quot; em diagramas de fluxo
+## 3. Usar dimensões numéricas como &quot;métricas&quot; em diagramas de fluxo
 
-Você pode usar uma dimensão numérica para inserir &quot;métricas&quot; na visualização [!UICONTROL  Fluxo].
+Você pode usar uma dimensão numérica para inserir &quot;métricas&quot; na visualização [!UICONTROL Fluxo].
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings) , arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-component-settings), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Workspace, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
 
 ![](assets/flow.png)
@@ -55,26 +55,26 @@ Você pode usar uma dimensão numérica para inserir &quot;métricas&quot; na vi
 
 Esse recurso é especificamente aplicável a campos baseados em matriz. A funcionalidade de incluir/excluir permite que você filtre no nível do subevento, enquanto os filtros (segmentos) criados no construtor de filtros fornecem apenas a filtragem no nível do evento. Assim, você pode fazer a filtragem de subeventos usando incluir/excluir em Exibições de dados e, em seguida, fazer referência a essa nova métrica/dimensão em um filtro no nível do evento.
 
-Por exemplo, use a funcionalidade de inclusão/exclusão nas Exibições de dados para se concentrar apenas nos produtos que geraram vendas de mais de 50 dólares. Portanto, se você tiver um pedido que inclua uma compra de produto de 50 dólares e uma compra de produto de 25 dólares, removeremos apenas a compra de produto de 25 dólares, não o pedido inteiro.
+Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de dados para focalizar os produtos que geraram vendas de mais de 50 dólares. Portanto, se você tiver um pedido que inclua uma compra de produto de 50 dólares e uma compra de produto de 25 dólares, removeremos apenas a compra de produto de 25 dólares, não o pedido inteiro.
 
 1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings), arraste o campo de esquema [!UICONTROL Receita] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 1. Selecione a métrica e configure o seguinte no lado direito:
-a. Em [!UICONTROL Format], selecione [!UICONTROL Currency].
-b. Em [!UICONTROL Currency], selecione USD.
+a. Em [!UICONTROL Formato], selecione [!UICONTROL Moeda].
+b. Em [!UICONTROL Moeda], selecione USD.
 c. Em [!UICONTROL Incluir/Excluir valores], marque a caixa de seleção ao lado de [!UICONTROL Definir valores de inclusão/exclusão].
 d. Em [!UICONTROL Corresponder], selecione [!UICONTROL Se todos os critérios forem atendidos].
 e. Em [!UICONTROL Critérios], selecione [!UICONTROL é maior ou igual a].
-f. Especifique &quot;50&quot; como o valor.
+f. Especificar &quot;50&quot; como o valor.
 
 Essas novas configurações permitem que você visualize somente a receita de alto valor e filtre qualquer valor abaixo de US$ 50.
 
-## 5. Utilize a configuração [!UICONTROL Nenhuma opção de valor]
+## 5. Utilizar a configuração [!UICONTROL Nenhuma opção de valor]
 
-Sua empresa pode ter passado tempo treinando seus usuários para esperar &quot;Não especificado&quot; nos relatórios. O padrão em Visualizações de dados é &quot;Sem valor&quot;. Agora é possível [renomear &quot;Sem valor&quot; para &quot;Não especificado&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-no-value-options-settings) na interface do usuário de Exibições de dados.
+Sua empresa pode ter passado tempo treinando os usuários para esperar &quot;Não especificado&quot; nos relatórios. O padrão em Visualizações de dados é &quot;Sem valor&quot;. Agora é possível [renomear &quot;Sem valor&quot; como &quot;Não especificado&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-no-value-options-settings) na interface de Visualizações de dados.
 
 Outro exemplo seria uma dimensão para um registro de programa de associação. Nesse caso, você pode renomear &quot;Sem valor&quot; para &quot;Sem registro de programa de associação&quot;.
 
-## 6. Crie várias métricas com diferentes configurações de [!UICONTROL Atribuição]
+## 6. Criar várias métricas com diferentes configurações de [!UICONTROL Atribuição]
 
 Usando o recurso [!UICONTROL Duplicar] no canto superior direito, crie várias métricas de Receita com diferentes configurações de atribuição, como [!UICONTROL Primeiro contato], [!UICONTROL Último contato] e [!UICONTROL Algorítmico].
 
