@@ -3,9 +3,9 @@ description: Representar visualmente seus dados no Analysis Workspace.
 keywords: Analysis Workspace
 title: Visão geral das visualizações
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 4f12248e196759c4c4fc494770048495c703c954
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1051'
 ht-degree: 93%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 93%
 
 O Workspace oferece várias visualizações que permitem gerar representações visuais de seus dados, como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão e outros. A maioria dos tipos de visualização será familiar se você usar o Adobe Analytics. Contudo, o Analysis Workspace fornece configurações de visualização e muitos tipos de visualizações exclusivos ou novos com recursos interativos.
 
-Você pode acessar as visualizações no ícone superior esquerdo do Workspace, em um [painel em branco](https://experienceleague.adobe.com/docs/analytics/analysis-workspace/panels/blank-panel.html?lang=pt-BR) ou pelo menu exibido ao clicar com o botão direito em seu fluxo de trabalho.
+Você pode acessar as visualizações no ícone superior esquerdo do Workspace, em um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) ou pelo menu exibido ao clicar com o botão direito em seu fluxo de trabalho.
 
 ![](assets/viz-rail.png)
 
