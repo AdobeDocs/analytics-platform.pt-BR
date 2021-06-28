@@ -3,10 +3,10 @@ description: Requisitos de sistema para o Analysis Workspace.
 keywords: Analysis Workspace
 title: Requisitos de administração
 exl-id: ea2ea8d6-8327-4168-b81a-f4945b572cbb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 92%
+source-wordcount: '182'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ Requisitos de sistema para o Analysis Workspace.
 
 | Requisito | Descrição |
 |--- |--- |
-| SKU do produto | Você deve ter o Adobe Analytics Standard ou o Adobe Analytics Premium. Caso você tenha acesso ao Reports &amp; Analytics como produto independente, entre em contato com a sua equipe de conta para adquirir a solução Adobe Analytics. |
+| SKU do produto | Sua organização deve ter um contrato ativo com o Adobe Analytics for Select, Prime ou Ultimate com o complemento Customer Journey Analytics. Se você não tiver certeza de que tipo de contrato possui ou se não tiver certeza se tem o complemento CJA, entre em contato com o Gerente de conta da sua organização. Além disso, sua organização deve ser provisionada para a Adobe Experience Platform. |
 | Administradores | Ter acesso completo à Analysis Workspace. |
 | Usuários | Para habilitar o acesso à guia Espaço de trabalho no Analytics, os administradores devem criar um perfil de produto com a permissão Acesso ao Analysis Workspace e adicionar usuários a ele no [Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html). |
-| Navegador | <ul><li>Preferencial: versões mais recentes do Firefox, Chrome, Safari ou do Edge. Versão mais recente do Microsoft Internet Explorer 11. **Observação:** a Adobe encerrou o suporte ao Internet Explorer 11 no Adobe Analytics em 13 de novembro de 2018. Alterne para o Microsoft Edge ou um outro navegador compatível assim que possível.</li><li>É necessário habilitar os cookies e o JavaScript.</li><li>Resolução do monitor de 1024 x 768 com intensidade de cor de 16 bits (ou superior).</li></ul> |
+| Navegador | <ul><li>Preferencial: versões mais recentes do Firefox, Chrome, Safari ou do Edge.</li><li>É necessário habilitar os cookies e o JavaScript.</li><li>Resolução do monitor de 1024 x 768 com intensidade de cor de 16 bits (ou superior).</li></ul> |
