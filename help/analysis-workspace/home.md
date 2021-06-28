@@ -3,10 +3,10 @@ keywords: Analysis Workspace
 title: Visão geral do Analysis Workspace
 description: Visão geral dos recursos do Analysis Workspace
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 98%
+source-wordcount: '461'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,9 @@ Se você tiver apenas alguns minutos, assista a esta breve visão geral para ver
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
 
-## Faça logon no Adobe Analytics {#login}
+## Fazer logon no Customer Journey Analytics {#login}
 
-Para começar a usar o Analysis Workspace, faça logon no Adobe Analytics acessando [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Você será direcionado para a página inicial de lista de projetos do Workspace se um projeto específico não tiver sido selecionado anteriormente para você.
+Para começar a usar o Analysis Workspace, faça logon no Customer Journey Analytics acessando [experience.adobe.com/analytics](https://experience.adobe.com/analytics). Você será direcionado para a página inicial de lista de projetos do Workspace se um projeto específico não tiver sido selecionado anteriormente para você.
 
 ![](assets/login-analytics.png)
 
@@ -36,7 +36,7 @@ Depois de conectado, sua primeira parada deve ser o Tutorial de treinamento do A
 
 ## Criar um novo projeto {#new-project}
 
-Com o tutorial concluído, você está pronto para começar a criar o primeiro projeto. O **novo modal do projeto** fornece opções diferentes para iniciar a análise. Você pode iniciar com um projeto em branco ou com um [scorecard móvel em branco](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html), dependendo se você planeja compartilhar a análise do navegador ou do aplicativo móvel dos painéis do Adobe Analytics.
+Com o tutorial concluído, você está pronto para começar a criar o primeiro projeto. O **novo modal do projeto** fornece opções diferentes para iniciar a análise. Você pode optar por iniciar a partir de um projeto em branco ou [em branco do scorecard móvel](/help/mobile-app/curator.md), dependendo se você planeja compartilhar a análise do navegador ou do aplicativo móvel dos painéis do Customer Journey Analytics.
 
 ![](assets/create-new-project.png)
 
