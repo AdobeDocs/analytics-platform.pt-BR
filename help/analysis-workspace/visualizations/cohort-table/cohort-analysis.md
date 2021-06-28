@@ -2,10 +2,10 @@
 title: O que é a análise de coorte?
 description: Saiba mais sobre a análise de coorte no Analysis Workspace
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 82%
+source-wordcount: '468'
+ht-degree: 72%
 
 ---
 
@@ -23,7 +23,7 @@ Exemplos do que você pode fazer com a [!UICONTROL análise de coorte]:
 * Obter ideias para o teste A/B em áreas como o estabelecimento de preços, o caminho de atualização, etc.
 * Exibir um relatório de [!UICONTROL análise de coorte] em um relatório de análise orientada.
 
-A [!UICONTROL Análise de coorte] está disponível a todos os clientes do Adobe Analytics com direitos de acesso ao [!UICONTROL Analysis Workspace].
+[!UICONTROL A ] Análise de coorte está disponível a todos os clientes do Customer Journey Analytics com direitos de acesso ao  [!UICONTROL Analysis Workspace].
 
 [Tutorial em vídeo da Análise de coorte](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html) (4:36)
 
@@ -64,7 +64,7 @@ Mede o tempo decorrido antes e depois da ocorrência do evento de inclusão. Ess
 
 ### Coorte de [!UICONTROL dimensão personalizada]
 
-Crie coortes com base em uma dimensão selecionada, em vez de coortes com base em tempo, que são o padrão. Use dimensões como [!UICONTROL canal de marketing], [!UICONTROL campanha], [!UICONTROL produto], [!UICONTROL página], [!UICONTROL região] ou qualquer outra dimensão no Adobe Analytics para mostrar como a retenção é alterada com base nos diferentes valores dessas dimensões.
+Crie coortes com base em uma dimensão selecionada, em vez de coortes com base em tempo, que são o padrão. Use dimensões como [!UICONTROL canal de marketing], [!UICONTROL campanha], [!UICONTROL produto], [!UICONTROL página], [!UICONTROL região], ou qualquer outra dimensão no Customer Journey Analytics para mostrar como a retenção é alterada com base nos diferentes valores dessas dimensões.
 
 ![](assets/cohort-customizable-cohort-row.png)
 
