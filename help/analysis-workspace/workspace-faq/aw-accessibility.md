@@ -2,16 +2,16 @@
 description: Recursos de suporte para acessibilidade no Analysis Workspace
 title: Acessibilidade no Analysis Workspace
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 98%
+source-wordcount: '656'
+ht-degree: 96%
 
 ---
 
 # Acessibilidade no Analysis Workspace
 
-Saiba mais sobre o suporte de acessibilidade no [!UICONTROL Analysis Workspace], a principal ferramenta de análise do Adobe Analytics.
+Saiba mais sobre o suporte de acessibilidade no [!UICONTROL Analysis Workspace], a principal ferramenta de análise do Customer Journey Analytics.
 
 Acessibilidade refere-se à utilização de produtos para pessoas com deficiências visuais, auditivas, cognitivas, motoras e outras. Exemplos de recursos de acessibilidade para produtos de software incluem suporte a leitores de tela, equivalentes de texto para gráficos, atalhos de teclado, mudança de cores de exibição para alto contraste e assim por diante.
 
