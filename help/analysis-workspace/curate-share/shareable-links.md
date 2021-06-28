@@ -3,10 +3,10 @@ description: Saiba como criar links compartilháveis para projetos ou visualiza�
 keywords: Compartilhamento no Analysis Workspace
 title: Criar links compartilháveis
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 92%
+source-wordcount: '327'
+ht-degree: 86%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 >
 >Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
-O Analysis Workspace oferece várias maneiras de compartilhar um projeto com seus usuários, incluindo a capacidade de obter um link para um projeto ou uma parte específica de um projeto. Os usuários que recebem um link precisam fazer logon no Adobe Analytics antes de acessar o projeto.
+O Analysis Workspace oferece várias maneiras de compartilhar um projeto com seus usuários, incluindo a capacidade de obter um link para um projeto ou uma parte específica de um projeto. Os usuários que recebem um link precisam fazer logon no Customer Journey Analytics antes de acessar o projeto.
 
 ## Obter link do projeto {#project-link}
 
