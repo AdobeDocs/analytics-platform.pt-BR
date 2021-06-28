@@ -3,16 +3,16 @@ description: Representar visualmente seus dados no Analysis Workspace.
 keywords: Analysis Workspace
 title: Visão geral das visualizações
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 4f12248e196759c4c4fc494770048495c703c954
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 93%
+source-wordcount: '1052'
+ht-degree: 92%
 
 ---
 
 # Visão geral das visualizações
 
-O Workspace oferece várias visualizações que permitem gerar representações visuais de seus dados, como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão e outros. A maioria dos tipos de visualização será familiar se você usar o Adobe Analytics. Contudo, o Analysis Workspace fornece configurações de visualização e muitos tipos de visualizações exclusivos ou novos com recursos interativos.
+O Workspace oferece várias visualizações que permitem gerar representações visuais de seus dados, como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão e outros. A maioria dos tipos de visualização será familiar se você usar o Customer Journey Analytics. Contudo, o Analysis Workspace fornece configurações de visualização e muitos tipos de visualizações exclusivos ou novos com recursos interativos.
 
 Você pode acessar as visualizações no ícone superior esquerdo do Workspace, em um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) ou pelo menu exibido ao clicar com o botão direito em seu fluxo de trabalho.
 
@@ -94,7 +94,7 @@ A funcionalidade adicional de uma visualização está disponível ao clicar com
 | Obter link da visualização | Permite direcionar alguém a uma visualização específica em um projeto. Quando o link for clicado, o recipient deverá fazer logon antes de ser direcionado para a visualização exata que está vinculada. |
 | Recomeçar | (Funciona para Fluxo, Venn, Histograma) Exclui a configuração da visualização atual para que você possa reconfigurá-la do zero. |
 
-## Ícone “Criar visual” {#quick-viz}
+## Ícone “Criar visual”  {#quick-viz}
 
 Se não tiver certeza sobre qual visualização selecionar, clique no ícone **[!UICONTROL Criar visual]** em qualquer linha da tabela (disponível ao passar o mouse). Essa é a maneira mais rápida de adicionar uma visualização. Ao clicar no ícone, o Analysis Workspace é exibido e recomenda uma visualização que se adequaria ao seus dados. Por exemplo, se você tiver uma linha selecionada, ela criará um gráfico de linhas de tendência. Se você tiver três linhas de filtro selecionadas, ele criará um diagrama Venn.
 
