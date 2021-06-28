@@ -2,10 +2,10 @@
 title: Visão geral da atribuição
 description: O conceito de atribuição de crédito de um evento bem-sucedido a vários itens de dimensão.
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 91%
+source-wordcount: '421'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ A atribuição oferece aos analistas a capacidade de personalizar como os itens 
 1. Um visitante do site clica em um link de pesquisa pago para uma de suas páginas de produtos. O usuário adiciona o produto ao carrinho, mas não o compra.
 2. No dia seguinte, veja uma publicação de mídia social de um de seus amigos, clique no link e conclua a compra.
 
-Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquisa paga. Em outros relatórios, você pode desejar que a ordem seja atribuída ao Social. A atribuição permite controlar esse aspecto dos relatórios. Ele está disponível para todas as organizações no Adobe Analytics Ultimate, Prime, Select e Foundation. Se você não tiver certeza de qual tipo de contrato tem com a Adobe, entre em contato com o Gerente de conta da sua organização.
+Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquisa paga. Em outros relatórios, você pode desejar que a ordem seja atribuída ao Social. A atribuição permite controlar esse aspecto dos relatórios.
 
 ## Valor do Attribution IQ
 
@@ -28,7 +28,7 @@ A jornada do cliente não é linear e é muitas vezes imprevisível. Cada client
 
 ![Problema no Attribution IQ](assets/attribution_iq_problem.png)
 
-O Adobe Analytics aprimora a atribuição ao permitir:
+O Customer Journey Analytics aprimora a atribuição ao permitir:
 
 * Definir atribuição além de mídias com anúncios: qualquer dimensão, métrica, canal ou evento pode ser aplicado a modelos (ex: pesquisa interna), além de campanhas de marketing.
 * Utilizar comparação ilimitada de modelos de atribuição: compare dinamicamente quantos modelos desejar.
