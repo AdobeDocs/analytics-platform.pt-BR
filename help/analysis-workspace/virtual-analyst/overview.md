@@ -1,11 +1,11 @@
 ---
 title: Virtual Analyst
-description: Saiba quais recursos do Adobe Analytics contribuem para o Virtual Analyst.
+description: Saiba quais recursos do Customer Journey Analytics compõem o Virtual Analyst.
 exl-id: 5fb6ac39-d09d-49f0-ae1f-13f223e20800
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 64%
+ht-degree: 38%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 64%
 >
 >Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
 
-O Virtual Analyst é um conjunto de recursos que faz parte do Adobe Analytics e usa algoritmos preditivos e aprendizado de máquina para fornecer insights sobre as anomalias que afetam sua empresa. Ele permite automatizar os fluxos de trabalho mais comuns e caros da ciência de dados para identificar a causa de comportamentos incomuns em seus dados.
+O Virtual Analyst, um conjunto de recursos parte do Customer Journey Analytics, usa algoritmos preditivos e aprendizado de máquina para fornecer insights sobre as anomalias que afetam sua empresa. Ele permite automatizar os fluxos de trabalho mais comuns e caros da ciência de dados para identificar a causa de comportamentos incomuns em seus dados.
 
 ## Recursos {#features}
 
