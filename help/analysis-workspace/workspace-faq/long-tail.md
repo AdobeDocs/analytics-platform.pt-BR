@@ -2,10 +2,9 @@
 title: Item de dimensão de Cauda Longa
 description: Explica o item de dimensão "Cauda longa" e por que ele aparece no relatório.
 exl-id: 262a219a-315a-4c9b-a400-48cff119d45d
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -22,7 +21,7 @@ Se qualquer servidor individual que esteja processando um subconjunto de dados e
 
 ## Diferenças entre &quot;Longo caminho&quot; e &quot;Tráfego baixo&quot;
 
-Em versões anteriores do Adobe Analytics, uma arquitetura de processamento diferente era usada. Os dados eram processados no momento em que eram coletados. Os itens de Dimension foram colocados em &quot;Tráfego baixo&quot; após uma dimensão ter atingido 500 K de valores únicos e aplicado uma filtragem mais agressiva em valores exclusivos de 1M. A contagem de valor único foi redefinida no início de cada mês. Os dados processados eram permanentes; não havia como obter dados existentes do &quot;Tráfego baixo&quot;.
+Em versões anteriores do Analytics, uma arquitetura de processamento diferente era usada. Os dados eram processados no momento em que eram coletados. Os itens de Dimension foram colocados em &quot;Tráfego baixo&quot; após uma dimensão ter atingido 500 K de valores únicos e aplicado uma filtragem mais agressiva em valores exclusivos de 1M. A contagem de valor único foi redefinida no início de cada mês. Os dados processados eram permanentes; não havia como obter dados existentes do &quot;Tráfego baixo&quot;.
 
 No CJA, os itens de dimensão são colocados apenas em &quot;Cauda longa&quot; se um servidor de processamento individual contiver mais de 500 mil valores únicos. Os dados processados não são permanentes, o que significa que você pode reduzir o item de dimensão &quot;Cauda longa&quot; modificando seu relatório.
 
