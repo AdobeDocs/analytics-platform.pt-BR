@@ -2,9 +2,9 @@
 title: Realizar análise básica no Customer Journey Analytics
 description: Descreve como usar visualizações básicas para analisar dados no Customer Journey Analytics
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '172'
 ht-degree: 81%
 
 ---
@@ -23,7 +23,7 @@ Esta é uma amostra de visualizações básicas no Workspace. Por exemplo, você
 
 * Criar um relatório de tendências de receita online versus na loja que compare as duas fontes de dados ao longo do tempo.
 
-* Descreva o tamanho do público-alvo por fontes de dados, como dados de impressão de anúncios, dados do Adobe Analytics, dados de email, dados de PDV, dados da central de atendimento e dados de pesquisa.
+* Detalhe o tamanho do público-alvo por fontes de dados, como dados de impressão de anúncio, dados de Customer Journey Analytics, dados de email, dados de PDV, dados da central de atendimento e dados de pesquisa.
 
 ![](assets/cja-basic-analysis.png)
 
