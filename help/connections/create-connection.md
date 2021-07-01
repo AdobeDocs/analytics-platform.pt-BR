@@ -2,10 +2,10 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 16533219915421ed3ff642250bb707bf5ef13ed7
+source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 92%
+source-wordcount: '1980'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ Clique [aqui](https://experienceleague.adobe.com/docs/customer-journey-analytics
 
 ## Permissões necessárias
 
-Para criar uma conexão Customer Journey Analytics (CJA), você precisa das seguintes permissões em [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+Para criar uma conexão CJA, você precisa das seguintes permissões em [Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Modelagem de dados: Exibir esquemas, Gerenciar esquemas
@@ -33,7 +33,9 @@ Customer Journey Analytics
 
 ## Selecionar sandbox e conjuntos de dados
 
-1. Acesse [https://analytics.adobe.com](https://analytics.adobe.com).
+1. Vá para [https://analytics.adobe.com](https://analytics.adobe.com) e faça logon com sua Adobe ID.
+
+1. Clique no ícone [!DNL Customer Journey Analytics].
 
 1. Clique na guia **[!UICONTROL Conexões]**.
 
@@ -53,10 +55,7 @@ Customer Journey Analytics
 
    (Se tiver vários conjuntos de dados, você poderá pesquisar os corretos usando a barra de pesquisa **[!UICONTROL Pesquisar conjuntos de dados]** acima da lista de conjuntos de dados.)
 
-   O CJA é baseado em conjuntos de dados de Experience Platform. Embora você possa usar qualquer tipo de campo de esquema compatível na Plataforma, nem todos os tipos de campos são compatíveis no CJA. Você pode adicionar conjuntos de dados ao CJA com tipos de campos de esquema diferentes de sequências ou números, mas o CJA não pode exibir esses dados. Além disso, no momento, somente as Cadeias de caracteres são permitidas em conjuntos de dados de Pesquisa.
-Se você estiver procurando um campo para adicionar a uma visualização de dados depois de adicionar o conjunto de dados a uma conexão, a tag padrão [!UICONTROL Contém dados] estará disponível para todos os campos nos conjuntos de dados. Essa tag mantém as visualizações de dados mais gerenciáveis, pois inclui apenas campos de esquema com dados em seus conjuntos de dados.
-
-## Configurar conjunto de dados
+## 2. Configurar conjunto de dados
 
 No lado direito, agora é possível configurar os conjuntos de dados adicionados.
 
