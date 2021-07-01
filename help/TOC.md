@@ -10,11 +10,10 @@ user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-translation-type: ht
-source-git-commit: a4e95424ee304869e76a0532b7240290a3f13418
-workflow-type: ht
-source-wordcount: '447'
-ht-degree: 100%
+source-git-commit: 03be6a7a62d0ce43cd89657ecf828aa6e8fa03ee
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 99%
 
 ---
 
@@ -27,12 +26,13 @@ ht-degree: 100%
    + [Introdução](getting-started/cja-getting-started.md)
    + [Perguntas frequentes](getting-started/cja-faq.md)
    + [Suporte a recursos do Customer Journey Analytics](getting-started/cja-aa.md)
+   + [Implicações de exclusão](getting-started/cja-deletion.md)
    + [Glossário CJA](getting-started/cja-glossary.md)
 + Conexões {#cja-connections}
    + [Criar uma conexão](connections/create-connection.md)
-   + [Gerenciar conexões](connections/manage-connection.md)
+   + [Gerenciar conexões](connections/manage-connections.md)
    + [Estimar tamanho da conexão](connections/estimate-connection-size.md)
-   + [Conjuntos de dados de eventos combinados](connections/combined-dataset.md)
+   + [Conjuntos de dados de evento combinados](connections/combined-dataset.md)
    + Análise de vários canais {#cca}
       + [Visão geral da Análise de vários canais](connections/cca/overview.md)
       + [Como funcionam as repetições](connections/cca/replay.md)
@@ -64,7 +64,7 @@ ht-degree: 100%
          + [Paginação, filtragem e classificação de tabelas](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
          + [Totais do Workspace](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Tabela de coorte {#cohort-table}
-         + [O que é a Análise de coorte?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [O que é a análise de coorte?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Configurar um relatório de análise de coorte](analysis-workspace/visualizations/cohort-table/t-cohort.md)
          + [Casos de uso da análise de coorte](analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Fallout {#fallout}
@@ -73,20 +73,20 @@ ht-degree: 100%
          + [Fallout interdimensional](analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
          + [Aplicar filtros na análise de fallout](analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Fluxo {#flow}
-         + [Visão geral do fluxo](analysis-workspace/visualizations/c-flow/flow.md)
+         + [Visão geral do Fluxo](analysis-workspace/visualizations/c-flow/flow.md)
          + [Configurar uma visualização de fluxo](analysis-workspace/visualizations/c-flow/creating-flow-report.md)
          + [Configurações de fluxo](analysis-workspace/visualizations/c-flow/flow-settings.md)
          + [Fluxos interdimensionais](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + [Histograma](analysis-workspace/visualizations/histogram.md)
       + [Venn](analysis-workspace/visualizations/venn.md)
-      + [Área e Área empilhada](analysis-workspace/visualizations/area.md)
-      + [Barra e Barra empilhada](analysis-workspace/visualizations/bar.md)
-      + [Gráfico em marcadores](analysis-workspace/visualizations/bullet-graph.md)
+      + [Área e área empilhada](analysis-workspace/visualizations/area.md)
+      + [Barra e barra empilhada](analysis-workspace/visualizations/bar.md)
+      + [Gráfico de marcadores](analysis-workspace/visualizations/bullet-graph.md)
       + [Rosca](analysis-workspace/visualizations/donut.md)
       + [Barra horizontal e Barra horizontal empilhada](analysis-workspace/visualizations/horizontal-bar.md)
       + [Linha](analysis-workspace/visualizations/line.md)
       + [Gráfico de dispersão](analysis-workspace/visualizations/scatterplot.md)
-      + [Número do resumo e Alteração do resumo](analysis-workspace/visualizations/summary-number-change.md)
+      + [Número do resumo e alteração do resumo](analysis-workspace/visualizations/summary-number-change.md)
       + [Texto](analysis-workspace/visualizations/text.md)
       + [Mapa de árvore](analysis-workspace/visualizations/treemap.md)
    + Painéis {#panels}
@@ -97,14 +97,14 @@ ht-degree: 100%
       + [Painel do Quick Insights](analysis-workspace/c-panels/quickinsight.md)
    + Prepare ou compartilhe projetos {#curate-share}
       + [Menu Compartilhar](analysis-workspace/curate-share/send-schedule-files.md)
-      + [Preparar projetos do ](analysis-workspace/curate-share/curate.md)
+      + [Preparar projetos do](analysis-workspace/curate-share/curate.md)
       + [Compartilhar projetos](analysis-workspace/curate-share/share-projects.md)
       + [Criar links compartilháveis](analysis-workspace/curate-share/shareable-links.md)
       + [Projetos do somente para visualização](analysis-workspace/curate-share/view-only-projects.md)
       + [Baixar arquivos PDF ou CSV](analysis-workspace/curate-share/download-send.md)
       + [Agendar projetos](analysis-workspace/curate-share/t-schedule-report.md)
    + Attribution IQ {#attribution}
-      + [Visão geral da Atribuição](analysis-workspace/attribution/overview.md)
+      + [Visão geral da atribuição](analysis-workspace/attribution/overview.md)
       + [Modelos de atribuição e janelas de pesquisa](analysis-workspace/attribution/models.md)
       + [Atribuição algorítmica](analysis-workspace/attribution/algorithmic.md)
       + [Perguntas frequentes](analysis-workspace/attribution/faq.md)
@@ -112,7 +112,7 @@ ht-degree: 100%
       + [Visão geral do Analista virtual](analysis-workspace/virtual-analyst/overview.md)
       + Detecção de anomalias {#anomaly-detection}
          + [Visão geral da Detecção de anomalias](analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
-         + [Exibir anomalias na Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
+         + [Exibir anomalias no Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [Técnicas estatísticas usadas na Detecção de anomalias](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Preferências do usuário](analysis-workspace/user-preferences.md)
    + Perguntas frequentes sobre o Workspace {#workspace-faq}
@@ -129,10 +129,10 @@ ht-degree: 100%
       + [Visualizar dimensões](components/dimensions/view-dimensions.md)
       + [Analisar dimensões](components/dimensions/t-breakdown-fa.md)
       + [Dimensões de separação de tempo](components/dimensions/time-parting-dimensions.md)
-      + [Dimensões com uma cardinalidade muito alta](components/dimensions/high-cardinality.md)
+      + [Dimensões com cardinalidade muito alta](components/dimensions/high-cardinality.md)
    + [Métricas](components/apply-create-metrics.md)
    + Filtros {#cja-filters}
-      + [Visão geral dos Filtros](components/filters/filters-overview.md)
+      + [Visão geral dos filtros](components/filters/filters-overview.md)
       + [Criar um filtro](components/filters/create-filters.md)
       + [Gerenciar filtros](components/filters/manage-filters.md)
    + Métricas calculadas {#cja-calcmetrics}
@@ -152,7 +152,7 @@ ht-degree: 100%
    + [Casos de uso do Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Uso de arrays de objetos](use-cases/object-arrays.md)
    + [(B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa](use-cases/b2b.md)
-   + [Importação de dados da central de atendimento e da web](use-cases/call-center.md)
+   + [Importação de dados da central de atendimento e da Web](use-cases/call-center.md)
    + [Casos de uso da assimilação de dados](use-cases/data-ingestion.md)
    + [Usar dimensões do canal de marketing](use-cases/marketing-channels.md)
    + [Adicionar pesquisas globais aos seus conjuntos de dados](use-cases/global-lookups.md)
