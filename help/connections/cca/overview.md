@@ -3,9 +3,9 @@ title: Visão geral da Análise de vários canais
 description: Rechavear IDs de visitante de vários conjuntos de dados para compilar visitantes.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1124'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ A Análise de vários canais é um recurso inovador e robusto, mas tem limitaç�
 
 Depois que sua organização atender a todos os pré-requisitos e entender suas limitações, você poderá seguir essas etapas para começar a usá-los no CJA.
 
-1. Importe os dados desejados para a Adobe Experience Platform. Consulte [Criar um esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) e [Assimilar dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) na documentação da Adobe Experience Platform.
+1. Importe os dados desejados para a Adobe Experience Platform. Consulte [Criar um esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) e [Assimilar dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) na documentação da Adobe Experience Platform.
 1. Entre em contato com seu Gerente de contas da Adobe e inclua o seguinte:
    * Uma solicitação para habilitar a Análise de vários canais
    * A ID do conjunto de dados que você deseja rechavear
