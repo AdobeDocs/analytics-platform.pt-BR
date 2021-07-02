@@ -3,9 +3,9 @@ title: Importação de dados da central de atendimento e da Web
 description: Saiba como criar um conjunto de dados que vincula os dados da central de atendimento e do site.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar 
 
 ## Importação de dados da Web e da central de atendimento para a Plataforma
 
-Importe os dados para a Adobe Experience Platform. Consulte [Criar um esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) e [Assimilar dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) na documentação da Adobe Experience Platform.
+Importe os dados para a Adobe Experience Platform. Consulte [Criar um esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) e [Assimilar dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) na documentação da Adobe Experience Platform.
 
 Ao importar dados para a Plataforma, as seguintes dicas podem proporcionar mais insights nos relatórios resultantes:
 
