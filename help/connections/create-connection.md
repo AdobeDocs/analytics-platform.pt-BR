@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
 workflow-type: tm+mt
 source-wordcount: '1980'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Clique [aqui](https://experienceleague.adobe.com/docs/customer-journey-analytics
 
 ## Permissões necessárias
 
-Para criar uma conexão CJA, você precisa das seguintes permissões em [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+Para criar uma conexão com o CJA, você precisa das seguintes permissões no [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Modelagem de dados: Exibir esquemas, Gerenciar esquemas
@@ -33,9 +33,9 @@ Customer Journey Analytics
 
 ## Selecionar sandbox e conjuntos de dados
 
-1. Vá para [https://analytics.adobe.com](https://analytics.adobe.com) e faça logon com sua Adobe ID.
+1. Acesse [https://analytics.adobe.com](https://analytics.adobe.com) e faça logon com sua Adobe ID.
 
-1. Clique no ícone [!DNL Customer Journey Analytics].
+1. Clique no ícone do [!DNL Customer Journey Analytics].
 
 1. Clique na guia **[!UICONTROL Conexões]**.
 
