@@ -3,7 +3,7 @@ title: Assimilar dados do Google Analytics na Adobe Experience Platform
 description: 'Explica como usar o Customer Journey Analytics (CJA) para assimilar dados do Google Analytics na Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 source-git-commit: 316819116e9b47110763479af4e8504a2bffaff3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
 ht-degree: 100%
 
@@ -147,7 +147,7 @@ Para obter instruções, assista a este vídeo:
 
 ## Criar uma conexão no CJA com o conjunto de dados do Google Analytics
 
-Depois que a Adobe Experience Platform começar a receber os dados do Google Analytics em tempo real e você tiver preenchido os dados históricos do Google Analytics do BigQuery, você estará pronto para entrar no CJA e [criar sua primeira conexão](/help/connections/create-connection.md). Essa conexão unirá os dados do GA aos outros dados do cliente usando uma &quot;ID do cliente&quot; comum.
+Depois que a Adobe Experience Platform começar a receber os dados do Google Analytics em tempo real e você tiver feito o preenchimento retroativo dos dados históricos do Google Analytics do BigQuery, você estará pronto para entrar no CJA e [criar sua primeira conexão](/help/connections/create-connection.md). Essa conexão unirá os dados do GA aos outros dados do cliente usando uma &quot;ID do cliente&quot; comum.
 
 ## Próximas etapas
 
