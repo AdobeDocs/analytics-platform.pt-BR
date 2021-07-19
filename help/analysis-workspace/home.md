@@ -6,7 +6,7 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Depois de conectado, sua primeira parada deve ser o Tutorial de treinamento do A
 
 ## Criar um novo projeto {#new-project}
 
-Com o tutorial concluído, você está pronto para começar a criar o primeiro projeto. O **novo modal do projeto** fornece opções diferentes para iniciar a análise. Você pode optar por iniciar a partir de um projeto em branco ou [em branco do scorecard móvel](/help/mobile-app/curator.md), dependendo se você planeja compartilhar a análise do navegador ou do aplicativo móvel dos painéis do Customer Journey Analytics.
+Com o tutorial concluído, você está pronto para começar a criar o primeiro projeto. O **novo modal do projeto** fornece opções diferentes para iniciar a análise. Você pode iniciar com um projeto em branco ou com um [cartão de pontuação móvel em branco](/help/mobile-app/curator.md), dependendo do que planeja fazer: compartilhar a análise do navegador ou dos painéis do aplicativo móvel do Customer Journey Analytics.
 
 ![](assets/create-new-project.png)
 
@@ -64,4 +64,4 @@ No projeto do Workspace, **painéis, tabelas, visualizações e componentes** s�
 
 ## Recursos adicionais {#resources}
 
-* A Adobe oferece centenas de [tutoriais de treinamento em vídeo do Analytics](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.translate.html).
+* A Adobe oferece centenas de [tutoriais de treinamento em vídeo do Analytics](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.html).
