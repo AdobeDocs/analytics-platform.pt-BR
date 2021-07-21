@@ -5,7 +5,7 @@ mini-toc-levels: 3
 source-git-commit: 1daac64168e656ed1145dac4c34d3df52d155e35
 workflow-type: tm+mt
 source-wordcount: '1445'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Depois que usuários administradores [criam uma ou mais conexões](/help/connect
 * Ela permite **identificar quaisquer discrepâncias de dados** devido a uma configuração incorreta. Há alguma linha faltando? Em caso afirmativo, quais linhas estão faltando e por quê? Você configurou conexões incorretamente e causou a ausência de dados no CJA?
 
 >[!NOTE]
-> Essa funcionalidade estará disponível em geral em 10 de agosto de 2021.
+> Essa funcionalidade estará em disponibilidade geral em 10 de agosto de 2021.
 
 ## Gerenciador de conexões {#connections-manager}
 
@@ -113,7 +113,7 @@ Veja as explicações sobre widgets e configurações:
 | [!UICONTROL Importar novos dados] | Indica se novos lotes de dados devem ou não ser adicionados aos dados históricos (preenchimento retroativo). |
 | **Painel direito no nível do conjunto de dados** |  |
 | [!UICONTROL Descrição de conjunto de dados] | Descreve os parâmetros de cada conjunto de dados nesta conexão. |
-| [!UICONTROL Registros disponíveis] | Representa o número total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado no calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. (A exceção é que, quando você criar uma conexão totalmente nova, haverá [latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#3.-getting-data-into-customer-journey-analytics). |
+| [!UICONTROL Registros disponíveis] | Representa o número total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado no calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. (A exceção é que, quando você criar uma conexão totalmente nova, haverá [latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#3.-obtenção-de-dados-no-customer-journey-analytics). |
 | [!UICONTROL Registros adicionados] | Quantas linhas foram adicionadas no período selecionado. |
 | [!UICONTROL Registros ignorados] | Quantas linhas foram ignoradas durante a assimilação no período selecionado. |
 | [!UICONTROL Erros de registros ignorados] | O motivo pelo qual os registros foram ignorados é indicado aqui. Eles podem incluir: carimbos de data e hora ausentes, ID de pessoa ausente etc. |
