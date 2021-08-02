@@ -2,10 +2,10 @@
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: bc0e722ad33f818a6d580305301a869af2fff385
-workflow-type: ht
-source-wordcount: '1071'
-ht-degree: 100%
+source-git-commit: 58627fd11c4031449f156e70cbfa41dac143ac90
+workflow-type: tm+mt
+source-wordcount: '1086'
+ht-degree: 98%
 
 ---
 
@@ -38,6 +38,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Permissões do usuário/Controles de acesso de dados | O CJA faz a distinção entre administradores e usuários de produtos do Adobe Admin Console. Somente administradores de produtos podem 1) criar/atualizar/excluir conexões ou visualizações de dados, 2) atualizar/excluir projetos, filtros ou métricas de cálculo que foram criadas por outros usuários e 3) compartilhar um projeto do Workspace com todos os usuários. |
 | Conjuntos de relatórios virtuais | Agora chamado de [Visualizações de dados](/help/data-views/create-dataview.md). |
 | Curadoria do componente VRS | Agora parte das Visualizações de dados. |
+| A4T | O suporte é fornecido por meio de campos no [Analytics Data Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
 
 ## Compatível com limitações
 
@@ -85,7 +86,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 
 | Recurso | Notas |
 | --- | --- |
-| A4T | Suporte ainda não planejado. |
 | Activity Map | Suporte ainda não planejado. |
 | Advertising Cloud | Suporte ainda não planejado. |
 | Criador de regras de classificação | Suporte ainda não planejado. |
