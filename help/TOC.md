@@ -10,10 +10,10 @@ user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: a2e8f8a48078bfe247645b4ca57e10bf4f4e3fab
-workflow-type: ht
-source-wordcount: '448'
-ht-degree: 100%
+source-git-commit: f6ec268d3820a7bcbcc84521e486c26e8ea9329b
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 98%
 
 ---
 
@@ -95,7 +95,7 @@ ht-degree: 100%
       + [Painel em branco](analysis-workspace/c-panels/blank-panel.md)
       + [Painel de forma livre](analysis-workspace/c-panels/freeform-panel.md)
       + [Painel do Quick Insights](analysis-workspace/c-panels/quickinsight.md)
-   + Prepare ou compartilhe projetos {#curate-share}
+   + Preparar, compartilhar e agendar projetos {#curate-share}
       + [Menu Compartilhar](analysis-workspace/curate-share/send-schedule-files.md)
       + [Preparar projetos do](analysis-workspace/curate-share/curate.md)
       + [Compartilhar projetos](analysis-workspace/curate-share/share-projects.md)
