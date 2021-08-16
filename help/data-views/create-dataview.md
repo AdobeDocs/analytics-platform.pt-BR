@@ -2,10 +2,10 @@
 title: Como criar uma nova visualização de dados no Customer Journey Analytics.
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 9507bdfa66775e75628426bbb6d177b9bb5a3c6a
-workflow-type: ht
-source-wordcount: '2974'
-ht-degree: 100%
+source-git-commit: f2e13469faf540d997fcac4687aa51533b543c84
+workflow-type: tm+mt
+source-wordcount: '3024'
+ht-degree: 98%
 
 ---
 
@@ -125,6 +125,7 @@ Permite especificar como uma métrica deve se comportar nos relatórios.
 | --- | --- |
 | [!UICONTROL Contar valores] | Somente para métricas boolianas, essa configuração permite especificar se você deseja [!UICONTROL Contar verdadeiro], [!UICONTROL Contar falso] ou [!UICONTROL Contar verdadeiro ou falso] como o valor da métrica. O padrão é [!UICONTROL Contar verdadeiro]. Essa opção fornecerá o valor real de uma métrica, como &quot;50&quot;, se houver um valor de pedido de 50. |
 | [!UICONTROL Contar instâncias] | Permite especificar se um campo numérico ou de tipo de data usado como uma métrica deve contar os horários em que foi definido, em vez do valor propriamente dito.<br> Se desejar adicionar as instâncias de um campo numérico e quiser simplesmente adicionar o número de vezes que um campo foi *definido* como diferente do valor real nele contido.<br>Isso é útil para criar uma métrica [!UICONTROL Pedidos] de um campo [!UICONTROL Receita], por exemplo. Se a receita foi definida, devemos contar um pedido único em vez do valor numérico da receita. |
+| [!UICONTROL Minúsculas] | *Novo*  - Para dimensões do tipo &quot;string&quot;. Essa configuração permite controlar se o Customer Journey Analytics trata valores de dimensão como sensíveis a maiúsculas e minúsculas. Ela permite a desduplicação de linhas que têm o mesmo valor, mas um caso diferente. Esta captura de tela mostra um exemplo de uma dimensão que diferencia maiúsculas de minúsculas no Workspace:<br>![dimensão que diferencia maiúsculas de minúsculas](assets/case-sens-workspace.png) |
 
 ### Definir configurações [!UICONTROL Nenhuma opção de valor]
 
