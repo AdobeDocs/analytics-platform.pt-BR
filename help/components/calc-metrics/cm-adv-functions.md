@@ -2,9 +2,9 @@
 title: Referência - funções avançadas
 description: Para acessar essas funções, selecione Mostrar avançadas na lista suspensa Funções.
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: 15312a57f0f122d22d0575f2008d547bcb8ab2ed
 workflow-type: tm+mt
-source-wordcount: '2947'
+source-wordcount: '2944'
 ht-degree: 99%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Para acessar essas funções, selecione **[!UICONTROL Mostrar avançadas]** na lista suspensa **[!UICONTROL Funções]**.
 
@@ -72,7 +72,7 @@ A métrica “Número aproximado de clientes” deve ser usada em relatórios da
 
 ## Únicos excedidos
 
-Como Count() e RowCount(), Approximate Count Distinct() está sujeita a [limites “únicos excedidos”](https://marketing.adobe.com/resources/help/pt_BR/reference/metrics_uniques_high_numbers.html). Se o limite “únicos excedidos” for atingido dentro de um mês específico relativo a uma dimensão, o valor será contado como 1 item de dimensão.
+Como Count() e RowCount(), Approximate Count Distinct() está sujeita a [limites “únicos excedidos”](https://experienceleague.adobe.com/docs/analytics/technotes/low-traffic.html?lang=en). Se o limite “únicos excedidos” for atingido dentro de um mês específico relativo a uma dimensão, o valor será contado como 1 item de dimensão.
 
 ## Comparação de funções de contagem
 
