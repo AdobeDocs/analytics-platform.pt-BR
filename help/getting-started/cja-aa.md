@@ -5,7 +5,7 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 source-git-commit: c23b172fd4dc5d0303723c4e8ccfeaa251257bfd
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 72%
+ht-degree: 73%
 
 ---
 
@@ -42,7 +42,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 
 | Recurso | Notas |
 | --- | --- |
-| A4T | O suporte é fornecido por meio de campos no [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en). |
+| A4T | O suporte é fornecido por meio de campos no [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). |
 | Classificações | Agora chamadas de “Conjuntos de dados de pesquisa”. As classificações usadas no Analytics podem ser importadas para a Experience Platform e o CJA usando o Conector de dados de classificações do Analytics. O upload dos conjuntos de dados de pesquisa também pode ser feito diretamente no AEP e disponibilizado no CJA. |
 | Sessões personalizadas | Suporte para todos os recursos personalizados de sessão que não sejam ocorrências em segundo plano móveis. |
 | Atributos do cliente | Agora chamados de &quot;Conjuntos de dados de perfil&quot;, eles não são importados automaticamente do Experience Cloud, mas precisarão ser carregados para a AEP antes de estarem disponíveis no CJA. |
@@ -83,7 +83,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Segment IQ | Suporte planejado. |
 | Publicação de segmentos (envio de segmentos do Workspace para a Experience Cloud) | Suporte planejado. |
 
-## Suporte ainda não planejado.
+## Suporte ainda não planejado
 
 | Recurso | Notas |
 | --- | --- |
