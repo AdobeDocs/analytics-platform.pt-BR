@@ -2,9 +2,9 @@
 title: Atribuição algorítmica
 description: Detalhes sobre o modelo de atribuição algorítmica.
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
-source-git-commit: 34a1e7cea518e39ee665470dc3e1087d728b654d
+source-git-commit: 3f893e5430eb4591939226e694f70064a90c7adb
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '298'
 ht-degree: 84%
 
 ---
@@ -13,7 +13,11 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
+
+Esta é uma visão geral em vídeo da Atribuição algorítmica:
+
+>[!VIDEO](https://video.tv.adobe.com/v/36205/?quality=12)
 
 O [modelo de atribuição](models.md) algorítmica no Analysis Workspace difere de outros modelos na medida em que usa técnicas estatísticas para alocar crédito entre os itens de dimensão em seu relatório ou tabela de forma livre. Como todos os outros modelos de atribuição no Analysis Workspace, ele pode ser usado em qualquer dimensão ou métrica e oferece suporte a filtros e detalhamentos ilimitados e distribui 100% das conversões para a(s) dimensão(ões) na tabela (também conhecida como atribuição &quot;fracional&quot;).
 
@@ -24,6 +28,6 @@ Em um nível alto, o cálculo de atribuição do crédito de conversão para cad
 * Shapley, Lloyd S. (1953). Um valor para jogos em pessoa. *Contribuições para a Teoria dos Jogos, 2(28)*, 307-317.
 * Harsanyi, John C. (1963). Um modelo de negociação simplificado para o jogo cooperativo entre pessoas. *International Economic Review 4(2)*, 194-220.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >O resultado da atribuição algorítmica só difere de outros modelos quando existem vários pontos de contato dentro da janela de pesquisa. As conversões com um único ponto de contato recebem 100% de crédito independentemente do modelo de atribuição.
