@@ -3,9 +3,9 @@ title: Como criar uma nova visualização de dados no Customer Journey Analytics
 description: Descreve todas as configurações necessárias para criar novas visualizações de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 source-git-commit: 5d2750001cc9a5d12305741e99fccc3625432996
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3069'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Permite especificar como uma métrica deve se comportar nos relatórios.
 | --- | --- |
 | [!UICONTROL Contar valores] | Somente para métricas boolianas, essa configuração permite especificar se você deseja [!UICONTROL Contar verdadeiro], [!UICONTROL Contar falso] ou [!UICONTROL Contar verdadeiro ou falso] como o valor da métrica. O padrão é [!UICONTROL Contar verdadeiro]. Essa opção fornecerá o valor real de uma métrica, como &quot;50&quot;, se houver um valor de pedido de 50. |
 | [!UICONTROL Contar instâncias] | Permite especificar se um campo numérico ou de tipo de data usado como uma métrica deve contar os horários em que foi definido, em vez do valor propriamente dito.<br> Se desejar adicionar as instâncias de um campo numérico e quiser simplesmente adicionar o número de vezes que um campo foi *definido* como diferente do valor real nele contido.<br>Isso é útil para criar uma métrica [!UICONTROL Pedidos] de um campo [!UICONTROL Receita], por exemplo. Se a receita foi definida, devemos contar um pedido único em vez do valor numérico da receita. |
-| [!UICONTROL Minúsculas] | *Novo*  - Para dimensões do tipo &quot;string&quot;. Essa configuração permite controlar se o Customer Journey Analytics trata valores de dimensão como sensíveis a maiúsculas e minúsculas. Ela permite a desduplicação de linhas que têm o mesmo valor, mas um caso diferente. Se você marcar **[!UICONTROL Lower case]**, todas as instâncias de uma dimensão com o mesmo valor serão relatadas como minúsculas. Esta captura de tela mostra o que acontece se você marcar **not** [!UICONTROL Lower case] versus se **do** marcar a caixa. Na tabela à esquerda, observe como &quot;liverpool&quot;, &quot;Liverpool&quot; e &quot;LIVERPOOL&quot; resultam em três itens de linha separados no relatório. Na tabela direita, esses mesmos valores foram deduplicados e se enquadram em um item de linha:<br>![dimensão que diferencia maiúsculas de minúsculas](assets/case-sens-workspace.png) |
+| [!UICONTROL Minúsculas] | *Novo* — para dimensões do tipo &quot;string&quot;. Essa configuração permite controlar se o Customer Journey Analytics trata valores de dimensão como sensíveis a maiúsculas e minúsculas. Ela permite a desduplicação de linhas que têm o mesmo valor, mas que estão em maiúsculas ou minúsculas. Se você marcar **[!UICONTROL Minúsculas]**, todas as instâncias de uma dimensão com o mesmo valor serão relatadas como minúsculas. Esta captura de tela mostra o que acontecerá se você **não** marcar [!UICONTROL Minúsculas] e se você **marcar** a caixa de diálogo. Na tabela à esquerda, observe como &quot;liverpool&quot;, &quot;Liverpool&quot; e &quot;LIVERPOOL&quot; resultam em três itens de linha separados nos relatórios. Na tabela à direita, esses mesmos valores foram deduplicados e se enquadram em um item da linha:<br>![dimensão que diferencia maiúsculas de minúsculas](assets/case-sens-workspace.png) |
 
 ### Definir configurações [!UICONTROL Nenhuma opção de valor]
 
@@ -140,7 +140,7 @@ Observe também que qualquer item especificado neste campo pode ser usado para o
 | [!UICONTROL Se exibido, chame Nenhum valor...] | É aqui que você pode renomear **[!UICONTROL Nenhum valor]** para algo diferente. |
 | [!UICONTROL Não mostrar Nenhum valor por padrão] | Não mostra esse valor nos relatórios. |
 | [!UICONTROL Mostrar Nenhum valor por padrão] | Mostra esse valor nos relatórios. |
-| [!UICONTROL Tratar Nenhum valor como um valor] | Essa configuração substitui valores em branco nos dados pelo texto especificado em [!UICONTROL Se mostrado, chame No value ...]. Por exemplo, se você tiver tipos de dispositivo móvel como a dimensão, poderá renomear o item **[!UICONTROL Nenhum valor]** para &quot;Desktop&quot;. Observe que ao alterar esse campo para um valor personalizado, o valor personalizado é tratado como um valor de sequência de caracteres legítimo. Portanto, se você inserir o valor &quot;Vermelho&quot; nesse campo, qualquer instância da string &quot;Vermelho&quot; que aparece nos dados propriamente ditos será acumulada sob o mesmo item de linha especificado. |
+| [!UICONTROL Tratar Nenhum valor como um valor] | Essa configuração substituirá valores em branco nos dados pelo texto especificado em [!UICONTROL Se mostrado, chame No value...]. Por exemplo, se você tiver tipos de dispositivo móvel como a dimensão, poderá renomear o item **[!UICONTROL Nenhum valor]** para &quot;Desktop&quot;. Observe que, quando você alterar esse campo para um valor personalizado, ele será tratado como um valor de sequência de caracteres legítimo. Portanto, se você inserir o valor &quot;Vermelho&quot; nesse campo, qualquer instância da sequência &quot;Vermelho&quot; que for mostrada nos próprios dados também será inserida sob o mesmo item da linha especificado. |
 
 ### Definir configurações de persistência
 
@@ -151,7 +151,7 @@ Para obter mais informações, consulte o tópico sobre [Persistência](/help/da
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
 | [!UICONTROL Definir persistência] | Alternar tecla |
-| [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são: [!UICONTROL Mais recente], [!UICONTROL Original], [!UICONTROL Instância], [!UICONTROL Tudo]. Se quiser que um valor persista, é aqui que você o define. A persistência máxima que você pode definir é de 90 dias. Além disso, [!UICONTROL Nunca expirar] não é uma opção. |
+| [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são: [!UICONTROL Mais recente], [!UICONTROL Original], [!UICONTROL Instância], [!UICONTROL Tudo]. Se quiser que um valor seja mantido, defina-o aqui. A persistência máxima que você pode definir é de 90 dias. Além disso, [!UICONTROL Nunca expirar] não é uma opção. |
 | [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: [!UICONTROL Sessão] (padrão), [!UICONTROL Pessoa], [!UICONTROL Tempo], [!UICONTROL Métrica]. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). [!UICONTROL Métrica] permite especificar qualquer uma das métricas definidas como a expiração dessa dimensão (por exemplo, uma métrica de [!UICONTROL Compra]).<br>**Observação**: não é possível definir uma expiração personalizada para uma dimensão ao selecionar uma alocação de [!UICONTROL Todos]. |
 
 ### Definir configurações de intervalo de valor
