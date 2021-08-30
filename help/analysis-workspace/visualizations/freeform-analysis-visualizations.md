@@ -3,9 +3,9 @@ description: Representar visualmente seus dados no Analysis Workspace.
 keywords: Analysis Workspace
 title: Visão geral das visualizações
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: fa0033202650f17acd275f1050565285c1464f53
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1043'
 ht-degree: 92%
 
 ---
@@ -16,7 +16,7 @@ O Workspace oferece várias visualizações que permitem gerar representações 
 
 Você pode acessar as visualizações no ícone superior esquerdo do Workspace, em um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) ou pelo menu exibido ao clicar com o botão direito em seu fluxo de trabalho.
 
-![](assets/viz-rail.png)
+![Painel Visualização](assets/viz-rail.png)
 
 Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
@@ -44,7 +44,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
 Cada visualização tem suas próprias configurações que podem ser gerenciadas. Para acessar [!UICONTROL Configurações de visualização], clique no ícone de engrenagem [!UICONTROL Configurações de visualização].
 
-![](assets/settings.png)
+![Configurações](assets/settings.png)
 
 | Configuração | Descrição |
 | --- | --- |
@@ -70,18 +70,16 @@ Para editar um rótulo de legenda:
 1. Clique com o botão direito do mouse em uma das etiquetas de legenda.
 1. Clique em **[!UICONTROL Editar rótulo]**.
 
-   ![](assets/edit-label.png)
+   ![Editar etiqueta](assets/edit-label.png)
 
 1. Digite o texto do novo rótulo.
 1. Pressione **[!UICONTROL Enter]** para salvar.
-
-Temos um [vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/series-label-editing.html) sobre esse tópico.
 
 ## Clique com o botão direito do mouse no menu {#right-click}
 
 A funcionalidade adicional de uma visualização está disponível ao clicar com o botão direito do mouse no cabeçalho da visualização. As configurações variam de acordo com a visualização. Algumas das configurações disponíveis são:
 
-![](assets/right-click.png)
+![Clique com o botão direito](assets/right-click.png)
 
 | Configuração | Descrição |
 | --- | --- |
@@ -98,4 +96,4 @@ A funcionalidade adicional de uma visualização está disponível ao clicar com
 
 Se não tiver certeza sobre qual visualização selecionar, clique no ícone **[!UICONTROL Criar visual]** em qualquer linha da tabela (disponível ao passar o mouse). Essa é a maneira mais rápida de adicionar uma visualização. Ao clicar no ícone, o Analysis Workspace é exibido e recomenda uma visualização que se adequaria ao seus dados. Por exemplo, se você tiver uma linha selecionada, ela criará um gráfico de linhas de tendência. Se você tiver três linhas de filtro selecionadas, ele criará um diagrama Venn.
 
-![](assets/quick-viz.png)
+![Visualização rápida](assets/quick-viz.png)
