@@ -1,14 +1,13 @@
 ---
 title: Perguntas frequentes sobre a Análise de vários canais
 description: Perguntas frequentes sobre a Análise de vários canais
-translation-type: ht
-source-git-commit: dca995fc271b02a26568ed8d4a672b96f10b0a18
-workflow-type: ht
-source-wordcount: '460'
-ht-degree: 100%
+exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
+source-git-commit: 2be442915587780ce41f33b13e27b8cf44e239a6
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 46%
 
 ---
-
 
 # Perguntas frequentes
 
@@ -46,3 +45,21 @@ A compilação em tempo real está disponível aproximadamente uma semana depois
 ## Como a Análise de vários canaiss lida com solicitações do GDPR e CCPA?
 
 O Adobe lida com solicitações do GDPR e CCPA de acordo com as leis locais e internacionais. A Adobe oferece o [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e rechaveados.
+
+## O que acontece se o campo ID persistente em um ou mais eventos estiver em branco?
+
+Se o campo `Persistent ID` estiver em branco em um evento em um conjunto de dados que está sendo compilado com a compilação em campo, o CCA preencherá o `Stitched ID` desse evento de uma das duas formas a seguir:
+* Se o campo `Transient ID` não estiver em branco, o CCA usará o valor em `Transient ID` como `Stitched ID`.
+* Se o campo `Transient ID` estiver em branco, o CCA também deixará `Stitched ID` em branco. Nesse caso, `Persistent ID`, `Transient ID` e `Stitched ID` estarão em branco no evento. Eventos como esse são descartados do CJA em qualquer conexão do CJA usando o conjunto de dados que está sendo compilado, onde `Stitched ID` foi escolhido como o `Person ID`.
+
+## Como as métricas nos conjuntos de dados compilados do CJA se comparam com métricas semelhantes nos conjuntos de dados não compilados do CJA e com o Adobe Analytics tradicional?
+
+Certas métricas no CJA são semelhantes às métricas no Analytics tradicional, mas outras são bem diferentes, dependendo do que você está comparando. A tabela abaixo compara várias métricas comuns:
+
+| **Dados compilados do CJA** | **Dados não compilados do CJA** | **Adobe Analytics tradicional** | **Analytics Ultimate com CDA** |
+| ----- | ----- | ----- | ----- |
+| **People**  = Contagem de  `Person ID`valores distintos, onde  `Stitched ID` é escolhido como  `Person ID`. **** As pessoas podem ser maiores ou menores que os  **** Visitantes únicos no Adobe Analytics tradicional, dependendo do resultado do processo de compilação. | **People**  = Contagem de  `Person ID`s distintas com base na coluna selecionada como  `Person ID`. **** Os conjuntos de dados do ADC (Conector Adobe Analytics Pessoas) são semelhantes aos  **Visitantes** únicos no Adobe Analytics tradicional se  `endUserIDs. _experience. aaid.id` forem escolhidos como  `Person ID` no CJA. | **Visitantes únicos**  = Contagem de IDs de visitante distintas. Observe que **Visitantes únicos** podem não ser iguais à contagem de **ECID** s distintos. | Consulte [People](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=en). |
+| **Sessões**: É definido com base nas configurações de sessão especificadas na visualização de dados do CJA. O processo de compilação pode combinar sessões individuais de vários dispositivos em uma única sessão. | **Sessões**: É definido com base nas configurações de sessão especificadas na visualização de dados do CJA. | **Visitas**: Consulte  [Visitas](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=en). | **Visitas**: É definido com base nas configurações de sessão especificadas no conjunto de relatórios virtual do  [CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=en). |
+| **Eventos**  = contagem de linhas nos dados compilados no CJA. Geralmente, isso deve estar próximo a **Ocorrências** no Adobe Analytics tradicional. Observe, no entanto, as Perguntas frequentes acima relacionadas às linhas com um `Persistent ID` em branco. | **Eventos**  = contagem de linhas nos dados não corrigidos no CJA. Geralmente, isso deve estar próximo a **Ocorrências** no Adobe Analytics tradicional. Observe, no entanto, que se qualquer evento tiver um `Person ID` em branco nos dados não corrigidos no lago de dados da AEP, esses eventos serão descartados (não incluídos) no CJA. | **Ocorrências**: Consulte  [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en). | **Ocorrências**: Consulte  [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=en). |
+
+Outras métricas podem ser semelhantes no CJA e no Adobe Analytics tradicional. Por exemplo, a contagem total de eventos personalizados [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=en) (eventos 1-100) geralmente deve ser muito próxima no Adobe Analytics tradicional e no CJA (seja compilada ou não). Observe, no entanto, isso nem sempre pode ser verdadeiro devido a [diferenças nos recursos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=en), como a eliminação da duplicação de eventos entre o CJA e o Adobe Analytics tradicional.

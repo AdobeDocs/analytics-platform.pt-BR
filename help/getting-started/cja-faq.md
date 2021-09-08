@@ -2,10 +2,10 @@
 title: Perguntas frequentes sobre Customer Journey Analytics
 description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '1360'
-ht-degree: 100%
+source-git-commit: e605682ee4df06589ec343a27941f5d6a5928d7d
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 87%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 | Pergunta | Resposta |
 | --- | --- |
 | O [!UICONTROL Customer Journey Analytics] pode &quot;costurar&quot; todos os dispositivos ou conjuntos de dados? | Sim. [!UICONTROL O Customer Journey Analytics] tem uma solução de compilação chamada [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) (CCA). Ela permite alterar a chave da ID pessoal de um conjunto de dados, o que permite a combinação perfeita de vários conjuntos de dados. |
-| A costura de comportamento anônimo para comportamento autenticado é compatível? | Sim. [O Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. |
+| A costura de comportamento anônimo para comportamento autenticado é compatível? | Sim. [O Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. |
 | Como a &quot;repetição&quot; funciona no CCA? | O CCA “repete” dados com base em identificadores exclusivos que ele aprendeu. A repetição faz com que novos dispositivos da conexão sejam compilados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=pt-BR#etapa-1%3A-compila%C3%A7%C3%A3o-em-tempo-real) |
 | Como a compilação de dados históricos (preenchimento retroativo) funciona no CCA? | Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR#habilitar-a-an%C3%A1lise-de-v%C3%A1rios-canais) |
 
@@ -75,3 +75,16 @@ Quando se trata de exclusão, nos referimos a seis tipos de componentes: sandbox
 | Excluir um lote **enquanto ele estiver sendo assimilado** no [!UICONTROL Customer Journey Analytics] | Se houver apenas um lote no conjunto de dados, nenhum dado ou dado parcial desse lote será exibido no [!UICONTROL Customer Journey Analytics]. A assimilação será revertida. Por exemplo, se houver cinco lotes no conjunto de dados e três deles já tiverem sido assimilados quando o conjunto de dados tiver sido excluído, os dados desses três lotes aparecerão no [!UICONTROL Customer Journey Analytics]. |
 | Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Workspace que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul> |
 | Excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que todos os projetos do Workspace que dependem dessa visualização de dados excluída deixarão de funcionar. |
+
+## 6. Considerações ao mesclar conjuntos de relatórios no CJA
+
+Caso planeje assimilar dados do Adobe Analytics por meio do [Adobe Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR), considere essas ramificações ao mesclar 2 ou mais conjuntos de relatórios do Adobe Analytics.
+
+| Problema | Consideração |
+| --- | --- |
+| Variáveis | Variáveis como [!UICONTROL eVars] podem não se alinhar em conjuntos de relatórios. Por exemplo, o eVar 1 no conjunto de relatórios 1 pode apontar para **[!UICONTROL Página]**. No conjunto de relatórios 2, o eVar 1 pode apontar para **[!UICONTROL Campanha interna]**, levando a relatórios mistos e imprecisos. |
+|  Sessões e   contagens de pessoas | Elas têm a duplicação removida em conjuntos de relatórios. Como resultado, as contagens podem não corresponder. |
+| Desduplicação de métrica | Desduplica instâncias de uma métrica (por exemplo, [!UICONTROL Orders]) se várias linhas tiverem a mesma ID de transação (por exemplo, [!UICONTROL Purchase ID]). Isso evita a contagem excessiva de métricas principais. Como resultado, métricas como [!UICONTROL Orders] podem não ser adicionadas em conjuntos de relatórios. |
+| Moeda | A conversão de moeda ainda não é compatível com o CJA. Se os conjuntos de relatórios que você está tentando mesclar usarem moedas base diferentes, podem ocorrer problemas. |
+| [!UICONTROL Persistência] | [](/help/data-views/persistence.md) A persistência se estende pelos conjuntos de relatórios, o que afeta os  [!UICONTROL filtros], a  [!UICONTROL atribuição] e assim por diante. Os números podem não ser adicionados corretamente. |
+| [!UICONTROL Classificações] |  As classificações não são automaticamente desduplicadas ao mesclar conjuntos de relatórios. Ao combinar vários arquivos de classificações em um único conjunto de dados [!UICONTROL lookup], você pode encontrar problemas. |
