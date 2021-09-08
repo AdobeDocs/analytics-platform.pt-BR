@@ -2,7 +2,7 @@
 title: Perguntas frequentes sobre Customer Journey Analytics
 description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: e605682ee4df06589ec343a27941f5d6a5928d7d
+source-git-commit: af683f97284ed24c3285a5819217ad329d5a8067
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 87%
@@ -83,7 +83,7 @@ Caso planeje assimilar dados do Adobe Analytics por meio do [Adobe Analytics sou
 | Problema | Consideração |
 | --- | --- |
 | Variáveis | Variáveis como [!UICONTROL eVars] podem não se alinhar em conjuntos de relatórios. Por exemplo, o eVar 1 no conjunto de relatórios 1 pode apontar para **[!UICONTROL Página]**. No conjunto de relatórios 2, o eVar 1 pode apontar para **[!UICONTROL Campanha interna]**, levando a relatórios mistos e imprecisos. |
-|  Sessões e   contagens de pessoas | Elas têm a duplicação removida em conjuntos de relatórios. Como resultado, as contagens podem não corresponder. |
+|  Sessões e   contagens de pessoas | Eles são desduplicados em conjuntos de relatórios. Como resultado, as contagens podem não corresponder. |
 | Desduplicação de métrica | Desduplica instâncias de uma métrica (por exemplo, [!UICONTROL Orders]) se várias linhas tiverem a mesma ID de transação (por exemplo, [!UICONTROL Purchase ID]). Isso evita a contagem excessiva de métricas principais. Como resultado, métricas como [!UICONTROL Orders] podem não ser adicionadas em conjuntos de relatórios. |
 | Moeda | A conversão de moeda ainda não é compatível com o CJA. Se os conjuntos de relatórios que você está tentando mesclar usarem moedas base diferentes, podem ocorrer problemas. |
 | [!UICONTROL Persistência] | [](/help/data-views/persistence.md) A persistência se estende pelos conjuntos de relatórios, o que afeta os  [!UICONTROL filtros], a  [!UICONTROL atribuição] e assim por diante. Os números podem não ser adicionados corretamente. |
