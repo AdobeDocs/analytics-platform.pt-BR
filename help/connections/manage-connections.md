@@ -3,10 +3,10 @@ title: Gerenciar conexões
 description: Descreve como gerenciar conexões com conjuntos de dados da Experience Platform no Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: b0e07ca9533a2d53c916c6db31acaccbd78a41a3
+source-git-commit: d099c2559eea68aa1f44d345b103618f55fd0559
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 99%
+source-wordcount: '1587'
+ht-degree: 86%
 
 ---
 
@@ -80,6 +80,9 @@ Ele permite:
 * Identifique problemas de configuração que fazem com que registros sejam ignorados ou excluídos.
 * Veja quando os dados estão disponíveis para relatórios.
 
+>[!IMPORTANT]
+>Quaisquer dados assimilados antes de 13 de agosto de 2021 não serão refletidos nesta caixa de diálogo [!UICONTROL Connections].
+
 Veja as explicações sobre widgets e configurações:
 
 ![Exibir detalhes da conexão](assets/conn-details.png)
@@ -88,11 +91,11 @@ Veja as explicações sobre widgets e configurações:
 | --- | --- |
 | Seletor de conjunto de dados | Permite escolher um dos conjuntos de dados na conexão ou todos eles. Não é possível selecionar vários conjuntos de dados simultaneamente. O padrão é [!UICONTROL Todos os conjuntos de dados]. |
 | Calendário/Intervalos de datas | O intervalo de datas indica quando foram adicionados dados à conexão. Todas as predefinições de calendário padrão são incluídas. Você pode personalizar o intervalo de datas, mas intervalos de datas personalizados não serão exibidos na lista suspensa. |
-| Widget de [!UICONTROL Registros disponíveis] | Representa o número total de linhas disponíveis para relatórios **para toda a conexão**. Essa contagem independe de qualquer configuração de calendário. Ela será alterada se você selecionar um conjunto de dados por meio do seletor de conjunto de dados ou na tabela. (Observe que há uma latência de uma a duas horas para que os dados sejam mostrados no relatório, uma vez adicionados.) |
-| Widget de [!UICONTROL Métricas] | Resume os registros adicionados/ignorados/excluídos e o número de lotes adicionados **para o conjunto de dados e o intervalo de datas selecionados**. |
-| Widget de [!UICONTROL Registros adicionados] | Indica quantas linhas foram adicionadas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Atualizado a cada dez minutos. |
-| Widget de [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Os motivos para os registros serem ignorados são: carimbos de data e hora ausentes, ID de pessoa ausente etc. Atualizado a cada dez minutos. |
-| Widget de [!UICONTROL Registros excluídos] | Indica quantas linhas foram excluídas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Alguém pode ter excluído um conjunto de dados da Experience Platform, por exemplo. Atualizado a cada dez minutos. |
+| [!UICONTROL Registros de dados de evento ] disponíveis no widget | Representa o número total de linhas de conjunto de dados de evento disponíveis para relatório, **para toda a conexão**. Essa contagem independe de qualquer configuração de calendário. Ela será alterada se você selecionar um conjunto de dados por meio do seletor de conjunto de dados ou na tabela. (Observe que há uma latência de uma a duas horas para que os dados sejam mostrados no relatório, uma vez adicionados.) |
+| Widget de [!UICONTROL Métricas] | Resume os registros de eventos adicionados/ignorados/excluídos e o número de lotes adicionados, **para o conjunto de dados e o intervalo de datas selecionado**. |
+| Widget de [!UICONTROL Registros adicionados] | Indica quantas linhas foram adicionadas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Atualizado a cada dez minutos. **Observação**: Os dados para  **[!UICONTROL Registros]** adicionados incluem apenas dados do evento no momento, não dados de perfil ou pesquisa. |
+| Widget de [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Os motivos para os registros serem ignorados são: carimbos de data e hora ausentes, ID de pessoa ausente etc. Atualizado a cada dez minutos. **Observação**: Os dados para  **[!UICONTROL Registros]** ignorados incluem apenas dados do evento no momento, não dados de perfil ou pesquisa. |
+| Widget de [!UICONTROL Registros excluídos] | Indica quantas linhas foram excluídas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Alguém pode ter excluído um conjunto de dados da Experience Platform, por exemplo. Atualizado a cada dez minutos. **Observação**: Os dados para  **[!UICONTROL Registros]** excluídos incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | Caixa de pesquisa de conjunto de dados | Você pode pesquisar pelo ou pela [!UICONTROL ID do conjunto de dados]. |
 | [!UICONTROL Conjuntos de dados] | Exibe os conjuntos de dados que fazem parte da conexão. Você pode clicar no hiperlink para exibir todos os conjuntos de dados na conexão. |
 | [!UICONTROL ID do conjunto de dados] | Essa ID é gerada automaticamente pela Adobe Experience Platform. |
@@ -114,10 +117,11 @@ Veja as explicações sobre widgets e configurações:
 | [!UICONTROL Importar novos dados] | Indica se novos lotes de dados devem ou não ser adicionados aos dados históricos (preenchimento retroativo). |
 | **Painel direito no nível do conjunto de dados** |  |
 | [!UICONTROL Descrição de conjunto de dados] | Descreve os parâmetros de cada conjunto de dados nesta conexão. |
-| [!UICONTROL Registros disponíveis] | Representa o número total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado no calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. (A exceção é que, quando você criar uma conexão totalmente nova, haverá [latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#3.-obtenção-de-dados-no-customer-journey-analytics). |
-| [!UICONTROL Registros adicionados] | Quantas linhas foram adicionadas no período selecionado. |
-| [!UICONTROL Registros ignorados] | Quantas linhas foram ignoradas durante a assimilação no período selecionado. |
-| [!UICONTROL Erros de registros ignorados] | O motivo pelo qual os registros foram ignorados é indicado aqui. Eles podem incluir: carimbos de data e hora ausentes, ID de pessoa ausente etc. |
+| [!UICONTROL Registros disponíveis] | Representa o número total de linhas assimiladas para esse conjunto de dados, para o período de tempo específico selecionado no calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. (A exceção é que, quando você criar uma conexão totalmente nova, haverá [latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#3.-obtenção-de-dados-no-customer-journey-analytics). |
+| [!UICONTROL Registros adicionados] | Quantas linhas foram adicionadas no período selecionado. **Observação**: Os dados para  **[!UICONTROL Registros]** adicionados incluem apenas dados do evento no momento, não dados de perfil ou pesquisa. |
+| [!UICONTROL Registros ignorados] | Quantas linhas foram ignoradas durante a assimilação no período selecionado. **Observação**: Os dados para  **[!UICONTROL Registros]** ignorados incluem apenas dados do evento no momento, não dados de perfil ou pesquisa. |
+| [!UICONTROL Registros excluídos] | Quantos registros foram excluídos durante o período de tempo selecionado. **Observação**: Os dados para  **[!UICONTROL Registros]** excluídos incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
+| [!UICONTROL Erros de registros ignorados] | O motivo pelo qual os registros foram ignorados é indicado aqui. Os motivos podem incluir a falta de carimbos de data e hora, a ID de pessoa ausente, etc. |
 | [!UICONTROL Lotes assimilados] | Quantos lotes de dados foram adicionados a esse conjunto de dados. |
 | [!UICONTROL Última adição] | Quando o último lote foi adicionado. |
 | [!UICONTROL Tipo de conjunto de dados] | [!UICONTROL Evento], [!UICONTROL Consulta] ou [!UICONTROL Perfil]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
@@ -131,3 +135,5 @@ Permite que administradores editem a conexão. Selecione uma conexão e clique e
 
 * Iniciar e parar a importação de novos dados. Esse processo era conhecido anteriormente como “transmissão de dados”.
 * Renomeie uma conexão.
+* Atualize os conjuntos de dados.
+* Remova os conjuntos de dados das conexões.
