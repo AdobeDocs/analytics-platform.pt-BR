@@ -2,7 +2,7 @@
 title: Atualizações da documentação CJA
 description: Lista atualizações de conteúdo para o conjunto de documentação do Customer Journey Analytics desde dezembro de 2019.
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
-source-git-commit: 8f576a8321c0e50cc34c1c08c8f8f7c48b427233
+source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 20%
@@ -19,7 +19,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Agosto de 2021 | Nova seção sobre a experiência aprimorada [Conexões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR) no CJA. |
 | Agosto de 2021 | Nova seção sobre [distinção entre maiúsculas e minúsculas nas dimensões da Exibição de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-behavior-settings). |
 | Junho de 2021 | Nova documentação sobre [versões anteriores do projeto](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/build-workspace-project/save-projects.html?lang=en#previous-version) no Workspace. |
-| Abril de 2021 | Novo tópico em [persistência](/help/data-views/persistence.md). |
+| Abril de 2021 | Novo tópico em [persistência](data-views/component-settings/persistence.md). |
 | Abril de 2021 | Nova documentação sobre suporte a projetos agendados no Workspace. |
 | Abril de 2021 | Novos tópicos na [experiência aprimorada de Visualizações de dados](/help/data-views/data-views.md). |
 | Abril de 2021 | Novos tópicos em [assimilação de dados do Google Analytics](/help/use-cases/ga-to-cja.md) e [análise desses dados](/help/use-cases/ga-to-cja-reporting.md). |

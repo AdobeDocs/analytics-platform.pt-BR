@@ -1,17 +1,17 @@
 ---
-title: O que é uma visualização de dados no Customer Journey Analytics?
+title: Visão geral das visualizações de dados
 description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão do CJA, como métricas, dimensões, sessões etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
-source-git-commit: e6504d4b5c17f5b461de81a9df5d7d2ab2505ae9
-workflow-type: ht
-source-wordcount: '1070'
-ht-degree: 100%
+source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 94%
 
 ---
 
-# O que é uma visualização de dados?
+# Visão geral das visualizações de dados
 
-Uma visualização de dados fica sobre uma conexão do [Customer Journey Analytics (CJA)](/help/connections/create-connection.md). Uma conexão combina um ou mais conjuntos de dados da Adobe Experience Platform e os conecta ao CJA. A visualização de dados especifica como você deseja interpretar elementos dos dados na conexão, como métricas, dimensões, sessões etc. As visualizações de dados são definidas em preparação para relatórios sobre os dados no Workspace.
+Uma visualização de dados é um contêiner específico ao Customer Journey Analytics que permite determinar como interpretar dados de uma [conexão](/help/connections/create-connection.md). Especifica todas as dimensões e métricas disponíveis no Analysis Workspace e de quais colunas essas dimensões e métricas obtêm seus dados. As visualizações de dados são definidas em preparação para relatórios no Analysis Workspace.
 
 >[!NOTE]
 >
@@ -78,4 +78,3 @@ Se você excluir uma visualização de dados no [!UICONTROL Customer Journey Ana
 
 * [Criar visualizações de dados](/help/data-views/create-dataview.md)
 * [Casos de uso de visualizações de dados](/help/data-views/data-views-usecases.md)
-* Detalhes sobre como a [persistência](/help/data-views/persistence.md) funciona

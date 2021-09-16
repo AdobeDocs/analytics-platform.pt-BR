@@ -10,10 +10,10 @@ user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
 breadcrumb-url: /docs/analytics-platform/using/cja-landing.html
-source-git-commit: 3839639858edbd019ef467ca5fb1791f48864100
+source-git-commit: dd88dc79d523d6e5ef4fa868eef4bbb22df6b61b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '471'
+ht-degree: 98%
 
 ---
 
@@ -40,8 +40,18 @@ ht-degree: 100%
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das visualizações de dados](data-views/data-views.md)
    + [Criar uma exibição de dados](data-views/create-dataview.md)
+   + Configurações do componente {#component-settings}
+      + [Visão geral das configurações de componente](data-views/component-settings/overview.md)
+      + [Atribuição](data-views/component-settings/attribution.md)
+      + [Comportamento](data-views/component-settings/behavior.md)
+      + [Formato](data-views/component-settings/format.md)
+      + [Incluir/excluir valores](data-views/component-settings/include-exclude-values.md)
+      + [Desduplicação de métrica](data-views/component-settings/metric-deduplication.md)
+      + [Sem opções de valor](data-views/component-settings/no-value-options.md)
+      + [Persistência](data-views/component-settings/persistence.md)
+      + [Classificação de valor](data-views/component-settings/value-bucketing.md)
+   + [Referência de componente padrão](data-views/component-reference.md)
    + [Casos de uso de visualizações de dados](data-views/data-views-usecases.md)
-   + [Persistência](data-views/persistence.md)
 + Projetos do Workspace {#cja-workspace}
    + [Visão geral do Analysis Workspace](analysis-workspace/home.md)
    + [Realizar análise básica](analysis-workspace/perform-basic-analysis.md)
