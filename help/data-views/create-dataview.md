@@ -2,10 +2,10 @@
 title: Criar uma exibição de dados
 description: Todas as configurações que você pode ajustar para criar ou editar uma visualização de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
+source-git-commit: 49b4998194274eec2ab8eca231029ccb5ccf648d
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 81%
+source-wordcount: '805'
+ht-degree: 77%
 
 ---
 
@@ -56,7 +56,17 @@ Por exemplo, no campo **[!UICONTROL pageTitle]**, é possível criar uma dimens�
    >
    >Você pode arrastar todas as pastas de campo de esquema do painel esquerdo e elas são classificadas automaticamente em seções tradicionais. Os campos de string terminam na seção [!UICONTROL Dimension] e os números na seção [!UICONTROL Metrics]. Ou clique em **[!UICONTROL Add all]** e todos os campos de esquema são adicionados.
 
-1. Depois de selecionar o componente, você verá várias configurações à direita. Configure o componente usando as configurações descritas abaixo.
+1. Depois de selecionar o componente, você verá várias configurações à direita. Configure o componente usando as configurações descritas em
+
+* [ Visão geral das configurações de componentes](/help/data-views/component-settings/overview.md)
+* [ Configurações do componente Atribuição](/help/data-views/component-settings/attribution.md)
+* [ Configurações de componente de comportamento](/help/data-views/component-settings/behavior.md)
+* [ Formatar configurações do componente](/help/data-views/component-settings/format.md)
+* [[!UICONTROL Incluir|] excludecomponent settings](/help/data-views/component-settings/include-exclude-values.md)
+* [[!UICONTROL Configurações de componente de ] desduplicação de métrica](/help/data-views/component-settings/metric-deduplication.md)
+* [[!UICONTROL Nenhuma configuração ] de componente value](/help/data-views/component-settings/no-value-options.md)
+* [ Configurações de componente de persistência](/help/data-views/component-settings/persistence.md)
+   [[!UICONTROL Configurações ] do componente de classificação por valores](/help/data-views/component-settings/value-bucketing.md)
 
 ## Use o recurso [!UICONTROL Duplicar]
 

@@ -1,15 +1,15 @@
 ---
 title: Configurações de componente
 description: Exibir configurações principais de um componente.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
+source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
 
-# Configurações do componente
+# Configurações de componente
 
 Configurações principais que um componente usa.
 

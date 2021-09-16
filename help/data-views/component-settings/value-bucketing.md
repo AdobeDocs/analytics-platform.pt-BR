@@ -1,7 +1,7 @@
 ---
 title: Configurações do componente de divisão de valores
 description: Combine valores numéricos em uma dimensão.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
+source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 12%
@@ -9,7 +9,7 @@ ht-degree: 12%
 ---
 
 
-# Configurações do componente de Registro de Valor
+# [!UICONTROL Configurações do componente ] de Registro de Valor
 
 Ao criar ou editar uma visualização de dados, a divisão de valores permite combinar valores numéricos com base em um intervalo. Ela só está disponível para dimensões que usam os tipos de dados Integer ou Double schema .
 
