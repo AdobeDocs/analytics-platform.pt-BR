@@ -2,16 +2,16 @@
 title: Importação de dados da central de atendimento e da Web
 description: Saiba como criar um conjunto de dados que vincula os dados da central de atendimento e do site.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+source-git-commit: a6c6620a4f4118755509e534d7d6a12bf08b4b67
+workflow-type: tm+mt
+source-wordcount: '778'
+ht-degree: 86%
 
 ---
 
 # Importação de dados da central de atendimento e da Web
 
-O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar conjuntos de dados de diferentes fontes em um único projeto do Workspace. Use este guia para entender como sua organização pode combinar dados do site com dados da central de atendimento.
+O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar conjuntos de dados de diferentes fontes em um único projeto do Workspace. Use este guia para entender como sua organização pode combinar dados do site com dados da central de atendimento. Por exemplo, você pode entender quais ações um cliente toma, qual conteúdo ele visualiza e quais termos ele pesquisa antes de entrar em contato com o suporte ao cliente. Você pode então determinar o conteúdo e as ferramentas de autoatendimento para melhorar, para que os clientes possam resolver os problemas sozinhos sem precisar entrar em contato com o .
 
 ## Pré-requisitos
 
@@ -53,8 +53,10 @@ O CJA exige um identificador comum para gerar um [conjunto de dados combinado](.
 
 ## Criar uma exibição de dados
 
-Depois de criar uma conexão, você pode [Criar uma visualização de dados](/help/data-views/create-dataview.md) para uso no Analysis Workspace. <!-- page dimension last touch, session persistence -->
-<!-- create calls metric using call center reason (requires data views 2.0). any column that triggers once per call -->
+Depois de criar uma conexão, você pode [Criar uma visualização de dados](/help/data-views/create-dataview.md) para uso no Analysis Workspace. Os componentes úteis incluem:
+
+* Uma dimensão de página com persistência de último contato e sessão. Você pode conectar métricas da central de atendimento com a última página que um cliente visualizou antes de fazer uma chamada.
+* Uma métrica de chamadas que usa um campo de esquema &quot;Motivo da central de atendimento&quot; para aumentar as ocorrências. Use [Desduplicação de métrica](/help/data-views/component-settings/metric-deduplication.md) para que aumente somente uma vez por sessão.
 
 ## Criar visualizações
 
@@ -81,14 +83,13 @@ Essa tabela de forma livre permite que você veja as principais páginas que con
 1. Clique no ícone de engrenagem próximo ao cabeçalho da métrica. Clique em **[!UICONTROL Modelo de atribuição não padrão]**.
 1. Defina o [Modelo de atribuição](/help/data-views/create-dataview.md) desejado.
 
-O relatório resultante mostra a métrica superior dos dados da central de atendimento. <!-- Complement with donut visualization -->
+O relatório resultante mostra a métrica superior dos dados da central de atendimento.
 
 <!-- ### Flow between web data and call center
 
 call reason as an exit dimension, web page name for previous pages
 
 ### Histogram
-
 
 ### Fallout
 

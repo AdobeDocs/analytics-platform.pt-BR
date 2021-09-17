@@ -2,10 +2,10 @@
 title: Criar ou editar uma visualização de dados
 description: Todas as configurações que você pode ajustar para criar ou editar uma visualização de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
-source-git-commit: 384679788d140a01a12e1c830b47099398a920b1
+source-git-commit: 36b7cc72c34e27f90af29146f7a32c525b279b9b
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 18%
+ht-degree: 16%
 
 ---
 
@@ -60,12 +60,9 @@ Em seguida, você pode criar métricas e dimensões com base em elementos do esq
 1. Clique em **[!UICONTROL Adicionar]** para criar uma visualização de dados ou clique em uma visualização de dados existente para editá-la.
 1. Clique na guia **[!UICONTROL Componentes]**.
 
-![Guia Componentes](assets/components-tab.png)
+   ![Guia Componentes](assets/components-tab.png)
 
-Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo. Lembre-se:
-
-    * Os componentes já incluídos são os componentes obrigatórios padrão (gerados pelo sistema).
-    * O Adobe aplica o filtro **[!UICONTROL Contém dados]** por padrão, para que apenas os campos Esquema que contêm dados sejam exibidos. Se estiver procurando um campo que não contém dados, remova o filtro.
+   Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo. Observe que os componentes já incluídos são componentes obrigatórios padrão (gerados pelo sistema) para todas as visualizações de dados. O Adobe também aplica o filtro **[!UICONTROL Contém dados]** por padrão, para que sejam exibidos somente os campos Esquema que contêm dados. Se desejar um campo que não contenha dados, remova esse filtro.
 
 1. Arraste um campo de esquema, como `pageTitle`, do painel esquerdo para a seção Métricas ou Dimension.
 
