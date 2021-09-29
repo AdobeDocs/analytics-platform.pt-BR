@@ -3,7 +3,7 @@ title: Opções de assimilação de dados para o Customer Journey Analytics
 description: Entenda as diferentes maneiras de assimilar dados no Customer Journey Analytics
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 source-git-commit: fa0033202650f17acd275f1050565285c1464f53
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '779'
 ht-degree: 100%
 
@@ -28,8 +28,8 @@ Esse fluxo de trabalho utiliza o Adobe Analytics Data Connector e varia dependen
 
 [O Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) é uma biblioteca JavaScript no lado do cliente que permite aos clientes da Adobe Experience Cloud interagir com os vários serviços na Experience Cloud por meio da Adobe Experience Platform Edge Network.
 
-1. [Configure a extensão AEP Web SDK no Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=br) para enviar dados para a Adobe Experience Cloud a partir das propriedades da Web, por meio da Adobe Experience Platform Edge Network.
-1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) para criar uma ou mais conexões e visualizações de dados que informarão seu relatórios entre canais.
+1. [Configure a extensão AEP Web SDK no Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=pt-BR) para enviar dados para a Adobe Experience Cloud a partir das propriedades da Web, por meio da Adobe Experience Platform Edge Network.
+1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=pt-BR) para criar uma ou mais conexões e visualizações de dados que informarão seu relatórios entre canais.
 
 ## Assimilar dados com assimilação em lote e por streaming
 
@@ -38,12 +38,12 @@ A Adobe Experience Platform reúne dados de várias fontes para ajudar os profis
 ### Assimilação em lote
 
 1. Configure a [Assimilação em lote](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=pt-BR#batch) para assimilar dados na Adobe Experience Platform como arquivos em lote. Os dados assimilados podem ser os dados do perfil de um arquivo simples em um sistema CRM (como um arquivo parquet) ou dados que estejam em conformidade com um esquema conhecido no registro do Experience Data Model (XDM).
-1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) para criar uma ou mais conexões e visualizações de dados que informarão seu relatórios entre canais.
+1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=pt-BR) para criar uma ou mais conexões e visualizações de dados que informarão seu relatórios entre canais.
 
 ### Assimilação por streaming
 
 1. Configure a [Assimilação por streaming](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=pt-BR#streaming) para enviar dados de dispositivos no lado do cliente e do servidor para a Experience Platform em tempo real.
-1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) para criar uma ou mais conexões e visualizações de dados que informarão seu relatórios entre canais.
+1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=pt-BR) para criar uma ou mais conexões e visualizações de dados que informarão seu relatórios entre canais.
 
 ## Trazer dados do Google Analytics para analisar no Customer Journey Analytics
 
@@ -53,4 +53,4 @@ Consulte este tutorial sobre como [Analisar dados do Google Analytics usando o C
 
 1. [Use a API de inserção de dados em massa](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) para enviar dados de coleção no lado do servidor para o Adobe Analytics. Ela permite que você envie arquivos formatados em CSV que contêm dados de eventos.
 1. [Crie um conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) para trazer esses dados do consumidor para a Adobe Experience Platform.
-1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html) para criar uma ou mais conexões e visualizações de dados que informarão seu relatórios entre canais.
+1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=pt-BR) para criar uma ou mais conexões e visualizações de dados que informarão seu relatórios entre canais.
