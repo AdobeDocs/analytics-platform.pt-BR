@@ -2,9 +2,9 @@
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: ac86d4a191a7ed2f9fa7285e497be509f658f615
+source-git-commit: d833e12c67d74696438be9547db159438e671b2c
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1196'
 ht-degree: 99%
 
 ---
@@ -31,9 +31,11 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Variáveis de lista/Props de lista | Suporte completo; o CJA usa o XDM e oferece suporte a matrizes de sequência ilimitadas que podem ser usadas de forma semelhante a listVars. |
 | Métricas | Suporte completo; o CJA usa o Experience Data Model (XDM), oferece suporte a métricas ilimitadas e não está vinculado aos eventos bem-sucedidos personalizados do Analytics tradicional. Observe que algumas métricas padrão foram renomeadas do Analytics tradicional: Visitantes = Pessoas, Visitas = Sessões, Ocorrências = Eventos. |
 | Desduplicação de métrica | Suporte completo. |
+| Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. |
 | Exportação de PDF | Suporte completo. |
 | Curadoria do projeto | Suporte completo. |
 | Vinculação de projetos | Suporte completo. |
+| Report Builder (plug-in do Excel) | Suporte total (outubro de 2021) |
 | Processamento de tempo do relatório | Suporte completo; o CJA depende exclusivamente do Processamento de tempo do relatório. |
 | Acesso à API de relatórios | Suporte completo; disponível por meio da [API do CJA](https://www.adobe.io/cja-apis/docs/). |
 | Relatórios/projetos agendados | Suporte completo. |
@@ -80,7 +82,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
 | Persistência da variável de merchandising | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
-| Report Builder (plug-in do Excel) | Suporte planejado. |
 | Segment IQ | Suporte planejado. |
 | Publicação de segmentos (envio de segmentos do Workspace para a Experience Cloud) | Suporte planejado. |
 
