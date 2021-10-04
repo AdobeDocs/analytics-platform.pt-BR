@@ -2,10 +2,10 @@
 title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
-source-git-commit: c23b172fd4dc5d0303723c4e8ccfeaa251257bfd
-workflow-type: ht
-source-wordcount: '1188'
-ht-degree: 100%
+source-git-commit: ac86d4a191a7ed2f9fa7285e497be509f658f615
+workflow-type: tm+mt
+source-wordcount: '1183'
+ht-degree: 99%
 
 ---
 
@@ -21,12 +21,16 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Attribution IQ | Suporte completo. |
 | Métricas calculadas | Suporte de arquivo; observe que qualquer métrica de cálculo existente no Analysis Workspace tradicional não será transferida para o CJA. |
 | Compilação entre dispositivos/canais | Suporte completo; consulte [Cross-Channel Analytics](/help/connections/cca/overview.md). |
+| Calendários personalizados | Suporte completo. |
 | Comparações de datas | Suporte completo. |
+| Intervalos de datas | Toda funcionalidade de intervalo de datas é suportada. |
+| Horário de verão | Suporte completo. |
 | Dimensões | Suporte completo; O CJA usa o XDM e oferece suporte a dimensões ilimitadas. O CJA não está vinculado às eVars ou props personalizadas do Adobe Analytics tradicional. |
 | Dimensões do Analysis Workspace predefinidas (por exemplo, Tipo de navegador, Tipo de referenciador, Sistema operacional etc.) | O CJA fornece essas dimensões nativamente desde que os campos básicos do XDM (como agente do usuário ou ID do dispositivo) sejam preenchidos. Para clientes que usam o ADC (Conector de dados Analytics), algumas dessas dimensões estão disponíveis, mas não todas. Consulte nossa [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://docs.adobe.com/content/help/pt-BR/experience-platform/ingestion/home.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_mapping_fields.md). |
 | Exclusão do GDPR | Suporte completo; observe que o GDPR agora é tratado em coordenação com a [!UICONTROL Adobe Experience Platform]. O CJA herda qualquer alteração de dados que a [!UICONTROL Experience Platform] faz nos conjuntos de dados subjacentes. |
 | Variáveis de lista/Props de lista | Suporte completo; o CJA usa o XDM e oferece suporte a matrizes de sequência ilimitadas que podem ser usadas de forma semelhante a listVars. |
 | Métricas | Suporte completo; o CJA usa o Experience Data Model (XDM), oferece suporte a métricas ilimitadas e não está vinculado aos eventos bem-sucedidos personalizados do Analytics tradicional. Observe que algumas métricas padrão foram renomeadas do Analytics tradicional: Visitantes = Pessoas, Visitas = Sessões, Ocorrências = Eventos. |
+| Desduplicação de métrica | Suporte completo. |
 | Exportação de PDF | Suporte completo. |
 | Curadoria do projeto | Suporte completo. |
 | Vinculação de projetos | Suporte completo. |
@@ -46,7 +50,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Classificações | Agora chamadas de “Conjuntos de dados de pesquisa”. As classificações usadas no Analytics podem ser importadas para a Experience Platform e o CJA usando o Conector de dados de classificações do Analytics. O upload dos conjuntos de dados de pesquisa também pode ser feito diretamente no AEP e disponibilizado no CJA. |
 | Sessões personalizadas | Suporte para todos os recursos personalizados de sessão que não sejam ocorrências em segundo plano móveis. |
 | Atributos do cliente | Agora, chamados de &quot;Conjuntos de dados de perfil&quot;, eles não são importados automaticamente da Experience Cloud, mas precisarão ser carregados para a AEP para que estejam disponíveis no CJA. |
-| Intervalos de datas | Todas as funcionalidades de intervalo de datas são aceitas, exceto para suporte a calendário personalizado, que é planejado. |
 | Dimensões de Dispositivo, Navegador, Tecnologia | Essas dimensões são incluídas automaticamente quando um conjunto de dados do AEP inclui campos de esquema XDM específicos e está em conformidade com a classe de Evento de experiência XDM. |
 | Dimensões e métricas de Entradas, Saídas e Tempo gasto | Suportados (Entradas e Saídas agora são chamadas de Inícios de sessão e Términos de sessão) e são calculados de uma maneira ligeiramente diferente. |
 | Configurações de persistência de eVar | As eVars não fazem mais parte do CJA. No entanto, as configurações de persistência agora fazem parte das Visualizações de dados e estão disponíveis para todas as dimensões. Lembre-se de que a persistência se baseia no processamento de tempo do relatório, não no processamento da coleta de dados. Dimensões definidas nas Visualizações de dados são limitadas a uma persistência máxima de 90 dias e não são compatíveis com persistência ilimitada. |
@@ -73,10 +76,8 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Alertas | Suporte planejado. |
 | Análise de contribuição | Suporte planejado. |
 | Download do CSV | Suporte planejado. |
-| Calendários personalizados | Suporte planejado. |
 | Relatórios do Data Warehouse (exportação de 100% de linhas) | O suporte é planejado na interface do Analysis Workspace. [!UICONTROL O serviço de query da Experience Platform] também fornece uma interface para esses casos de uso no CJA. |
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
-| Desduplicação de métrica | Suporte planejado. |
 | Persistência da variável de merchandising | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
 | Report Builder (plug-in do Excel) | Suporte planejado. |
