@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 1ee998aa4c5c429ebb62be83f56431842dd75602
+source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 95%
+source-wordcount: '490'
+ht-degree: 93%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 95%
       + [Perguntas frequentes sobre a Análise de vários canais](connections/cca/faq.md)
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das visualizações de dados](data-views/data-views.md)
-   + [Criar ou editar uma visualização de dados](data-views/create-dataview.md)
-   + Configurações do componente {#component-settings}
+   + [Create or edit a data view](data-views/create-dataview.md)
+   + Component Settings {#component-settings}
       + [Visão geral das configurações de componente](data-views/component-settings/overview.md)
       + [Atribuição](data-views/component-settings/attribution.md)
       + [Comportamento](data-views/component-settings/behavior.md)
@@ -173,7 +173,9 @@ ht-degree: 95%
    + [Relatórios de dados do Google Analytics no CJA](use-cases/ga-to-cja-reporting.md)
 + Painéis do Analytics {#cja-dashboards}
    + [Painéis do Analytics - Visão geral](mobile-app/home.md)
-   + [Guia do curador](mobile-app/curator.md)
+   + [Tarefas do curador](mobile-app/curator.md)
+   + [Criar um scorecard](mobile-app/create-scorecard.md)
+   + [Configurar executivos para usar painéis](mobile-app/set-up-execs.md)
    + [Guia de início rápido do usuário executivo](mobile-app/executive.md)
 + Privacidade {#cja-privacy}
    + [Visão geral de privacidade](privacy/privacy-overview.md)
