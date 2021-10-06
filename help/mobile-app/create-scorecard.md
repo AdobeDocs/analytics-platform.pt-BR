@@ -4,10 +4,10 @@ title: Criar um scorecard
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
-source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
+source-git-commit: 9a7fa68bd7b4b9a7164a80691ddfb7aedaf8e3e4
 workflow-type: tm+mt
-source-wordcount: '1342'
-ht-degree: 54%
+source-wordcount: '1378'
+ht-degree: 53%
 
 ---
 
@@ -16,6 +16,9 @@ ht-degree: 54%
 As informações a seguir instruem os curadores de dados do Adobe Analytics sobre como configurar e apresentar painéis para usuários executivos. Para começar, você pode exibir o vídeo Construtor de scorecard dos painéis do Adobe Analytics :
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
+
+>[!NOTE]
+>As capturas de tela do Scorecard para esta página foram tiradas da interface do usuário do Adobe Analytics, não do CJA. As interfaces de usuário são quase idênticas.
 
 Um scorecard do Adobe Analytics exibe as principais visualizações de dados para usuários executivos em um layout lado a lado, como mostrado abaixo:
 
@@ -116,7 +119,7 @@ Ou clique no ícone [!UICONTROL Visualizações] no painel à esquerda e arraste
 
 Use a visualização Número do resumo para realçar um grande número que é importante em um projeto.
 
-![Número do resumo](assets/sparkline.png)
+![Número do resumo](assets/summary-number.png)
 
 ### [!UICONTROL Rosca]
 
@@ -155,9 +158,9 @@ Ao clicar em um bloco no Construtor de scorecards, o painel direito exibe as pro
 
 ## Exibir Drill-ins (detalhamentos)
 
-Quando você clica em blocos, um pop-up dinâmico exibe como a exibição Drill ins (Detalhamento) é exibida para o usuário executivo no aplicativo. Se nenhuma dimensão tiver sido aplicada ao bloco, a dimensão de detalhamento será a **hora** ou os **dias**, dependendo do intervalo de datas padrão.
+Quando você clica em blocos, um pop-up dinâmico exibe como a exibição Drill ins (Detalhamento) é exibida para o usuário executivo no aplicativo. É possível detalhar dimensões e itens de dimensão para detalhar seus dados de acordo com suas necessidades específicas. Se nenhuma dimensão tiver sido aplicada ao bloco, a dimensão de detalhamento será a **hora** ou os **dias**, dependendo do intervalo de datas padrão.
 
-Detalhamentos refinam sua análise ao detalhar literalmente métricas e dimensões por outras métricas e dimensões, como neste exemplo de varejo:
+Detalhamentos refinam sua análise ao detalhar literalmente as dimensões por outras métricas e dimensões, como neste exemplo de varejo:
 
 * Métrica de Visitantes únicos detalhada por Plataforma de anúncio (AMO ID)
 * Visitas detalhadas por Categoria do produto (varejo)
