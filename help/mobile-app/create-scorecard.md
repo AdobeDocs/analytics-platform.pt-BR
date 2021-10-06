@@ -1,12 +1,12 @@
 ---
 description: Como criar um scorecard dos painéis do Adobe Analytics
-title: Create a scorecard
+title: Criar um scorecard
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
+source-git-commit: ac2228a20591909f8c81bd79cf40d84ab0cf6272
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 56%
+source-wordcount: '1339'
+ht-degree: 54%
 
 ---
 
@@ -37,15 +37,15 @@ Você pode acessar o modelo [!UICONTROL Scorecard para dispositivos móveis em b
 ### Criar um novo projeto
 
 1. Abra o Adobe Analytics e clique na guia **[!UICONTROL Workspace]**.
-1. Click **[!UICONTROL Create project]** and select the **[!UICONTROL Blank mobile scorecard]** project template.
+1. Clique em **[!UICONTROL Criar projeto]** e selecione o modelo de projeto **[!UICONTROL Scorecard para dispositivos móveis em branco]**.
 1. Clique em **[!UICONTROL Criar]**.
 
 ![Modelo de Scorecard](assets/new_template.png)
 
-### Tools menu
+### Menu Ferramentas
 
-1. From the **[!UICONTROL Tools]** menu, select **[!UICONTROL Analytics dashboards (Mobile App)]**.
-1. On the subsequent screen, click **[!UICONTROL Create new scorecard]**.
+1. No menu **[!UICONTROL Ferramentas]**, selecione **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**.
+1. Na tela subsequente, clique em **[!UICONTROL Create new scorecard]**.
 
 ## Configure o scorecard com dados e salve
 
@@ -66,7 +66,7 @@ Para implementar o modelo de Scorecard:
 
 Para adicionar uma dimensão relacionada a uma métrica, arraste uma dimensão do painel esquerdo e solte-a em um bloco.
 
-For example, you can add appropriate dimensions (like **[!DNL Marketing Channel]**, in this example) to the **[!UICONTROL Unique Visitors]** metric by dragging and dropping it onto the tile. Os detalhamentos de Dimension são exibidos na seção [!UICONTROL Drill Ins] (detalhamento) do bloco específico **[!UICONTROL Properties]**. É possível adicionar várias dimensões a cada bloco.
+Por exemplo, é possível adicionar dimensões apropriadas (como **[!DNL Marketing Channel]**, neste exemplo) à métrica **[!UICONTROL Visitantes únicos]**, arrastando-as e soltando-as no bloco. Os detalhamentos de Dimension são exibidos na seção [!UICONTROL Drill Ins] (detalhamento) do bloco específico **[!UICONTROL Properties]**. É possível adicionar várias dimensões a cada bloco.
 
 ![Adicionar dimensões](assets/layer_dimensions.png)
 
@@ -102,9 +102,9 @@ Se o intervalo de datas desejado ainda não tiver sido criado, será possível c
 
 Você será direcionado ao construtor de intervalo de datas, em que é possível criar e salvar um novo componente de intervalo de datas.
 
-## Apply visualizations
+## Aplicar visualizações
 
-Analytics dashboards offer four visualizations that give you great insight into dimension items and metrics. Altere para uma visualização diferente alterando o [!UICONTROL tipo de gráfico] de [!UICONTROL Propriedades] de um bloco. Basta selecionar o bloco direito e alterar o tipo de gráfico.
+Os painéis do Analytics oferecem quatro visualizações que proporcionam um excelente insight sobre itens de dimensão e métricas. Altere para uma visualização diferente alterando o [!UICONTROL tipo de gráfico] de [!UICONTROL Propriedades] de um bloco. Basta selecionar o bloco direito e alterar o tipo de gráfico.
 
 ![Propriedades do mosaico](assets/properties.png)
 
@@ -120,22 +120,22 @@ Use a visualização Número do resumo para realçar um grande número que é im
 
 ** Rosvisualização**
 
-Semelhante ao gráfico de pizza, essa visualização mostra os dados como partes ou segmentos de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. For example, let&#39;s say you want to see which ad platform contributed to the total number of unique visitors:
+Semelhante ao gráfico de pizza, essa visualização mostra os dados como partes ou segmentos de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. Por exemplo, digamos que você queira ver qual plataforma de anúncio contribuiu para o número total de visitantes únicos:
 
 ![Visualização de rosca](assets/donut-viz.png)
 
 **Visualização de linha**
 
-A visualização de linha representa as métricas que usam uma linha para mostrar como os valores são alterados em um período. Um gráfico de linha pode ser usado apenas quando o horário é usado como uma dimensão.
+A visualização de linha representa as métricas que usam uma linha para mostrar como os valores são alterados em um período. Um gráfico de linha mostra dimensões ao longo do tempo, mas funciona com qualquer visualização. Você está visualizando a dimensão categoria do produto neste exemplo.
 
 ![Visualização de linha](assets/line.png)
 
 
-**[!UICONTROL Horizontal Bar] visualization**
+**[!UICONTROL Visualização ] de Barras Horizontais**
 
-Esta visualização mostra barras horizontais que representam vários valores de uma ou mais métricas. For example, to easily see what your top products are, use [!UICONTROL Horizontal Bar] for your preferred visualization.
+Esta visualização mostra barras horizontais que representam vários valores de uma ou mais métricas. Por exemplo, para ver facilmente os principais produtos, use a [!UICONTROL Barra horizontal] para visualizar de preferência.
 
-![horizontal bar](assets/horizontal.png)
+![barra horizontal](assets/horizontal.png)
 
 **Remover  [!UICONTROL Não Especificado]**
 
@@ -146,11 +146,11 @@ Se quiser remover [!UICONTROL Unspecified] itens de dimensão de seus dados, fa�
 
    ![não especificado](assets/unspecified.png)
 
-1. Click the icon next to **[!UICONTROL Unspecified]** to remove unspecified data from your reporting.
+1. Clique no ícone ao lado de **[!UICONTROL Unspecified]** para remover dados não especificados de seus relatórios. (Também é possível remover qualquer outro item de dimensão.)
 
 ## Exibir e configurar propriedades de blocos
 
-When you click a tile in the Scorecard Builder, the right-hand rail displays the properties and characteristics associated with that tile. Nesse painel, você pode fornecer um novo **[!UICONTROL Título]** para o bloco e, como alternativa, configurá-lo especificando os componentes, em vez de arrastá-los e soltá-los no painel esquerdo.
+Ao clicar em um bloco no Construtor de scorecards, o painel direito exibe as propriedades e características associadas a esse bloco. Nesse painel, você pode fornecer um novo **[!UICONTROL Título]** para o bloco e, como alternativa, configurá-lo especificando os componentes, em vez de arrastá-los e soltá-los no painel esquerdo.
 
 ![Bloco de propriedades](assets/properties_tile.png)
 
@@ -178,7 +178,7 @@ Para nomear o Scorecard, clique no namespace no canto superior esquerdo da tela 
 
 ![Nomeação_Scorecards](assets/new_name.png)
 
-## Share a scorecard
+## Compartilhar um scorecard
 
 Para compartilhar o Scorecard com um usuário executivo:
 
@@ -197,4 +197,4 @@ Para compartilhar o Scorecard com um usuário executivo:
 
 Depois de compartilhar um scorecard, os destinatários podem acessá-lo nos painéis do Analytics. Se você fizer alterações subsequentes no scorecard no Construtor de scorecards, elas serão atualizadas automaticamente no scorecard compartilhado. Os usuários executivos verão as alterações depois de atualizar o Scorecard no aplicativo.
 
-If you update the scorecard by adding new components, you may want to share the scorecard again (and check the **[!UICONTROL Share embedded components]** option) in order to make sure that your executive users have access to these changes.
+Se você atualizar o scorecard adicionando novos componentes, convém compartilhar o scorecard novamente (e marque a opção **[!UICONTROL Share embedded components]** ) para garantir que os usuários executivos tenham acesso a essas alterações.
