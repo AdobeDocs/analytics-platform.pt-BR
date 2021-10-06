@@ -3,13 +3,13 @@ description: Como criar um scorecard dos painéis do Adobe Analytics
 title: Criar um scorecard
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: ac2228a20591909f8c81bd79cf40d84ab0cf6272
+exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
+source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1342'
 ht-degree: 54%
 
 ---
-
 
 # Criar um scorecard
 
@@ -112,32 +112,31 @@ Ou clique no ícone [!UICONTROL Visualizações] no painel à esquerda e arraste
 
 ![Visualizações](assets/vizs.png)
 
-**[!UICONTROL Número do resumo]**
+### [!UICONTROL Número do resumo]
 
 Use a visualização Número do resumo para realçar um grande número que é importante em um projeto.
 
 ![Número do resumo](assets/sparkline.png)
 
-** Rosvisualização**
+### [!UICONTROL Rosca]
 
 Semelhante ao gráfico de pizza, essa visualização mostra os dados como partes ou segmentos de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. Por exemplo, digamos que você queira ver qual plataforma de anúncio contribuiu para o número total de visitantes únicos:
 
 ![Visualização de rosca](assets/donut-viz.png)
 
-**Visualização de linha**
+### [!UICONTROL Linha]
 
 A visualização de linha representa as métricas que usam uma linha para mostrar como os valores são alterados em um período. Um gráfico de linha mostra dimensões ao longo do tempo, mas funciona com qualquer visualização. Você está visualizando a dimensão categoria do produto neste exemplo.
 
 ![Visualização de linha](assets/line.png)
 
-
-**[!UICONTROL Visualização ] de Barras Horizontais**
+### [!UICONTROL Barra horizontal]
 
 Esta visualização mostra barras horizontais que representam vários valores de uma ou mais métricas. Por exemplo, para ver facilmente os principais produtos, use a [!UICONTROL Barra horizontal] para visualizar de preferência.
 
 ![barra horizontal](assets/horizontal.png)
 
-**Remover  [!UICONTROL Não Especificado]**
+### Remover item de dimensão [!UICONTROL Não especificado]
 
 Se quiser remover [!UICONTROL Unspecified] itens de dimensão de seus dados, faça o seguinte:
 
@@ -153,6 +152,8 @@ Se quiser remover [!UICONTROL Unspecified] itens de dimensão de seus dados, fa�
 Ao clicar em um bloco no Construtor de scorecards, o painel direito exibe as propriedades e características associadas a esse bloco. Nesse painel, você pode fornecer um novo **[!UICONTROL Título]** para o bloco e, como alternativa, configurá-lo especificando os componentes, em vez de arrastá-los e soltá-los no painel esquerdo.
 
 ![Bloco de propriedades](assets/properties_tile.png)
+
+## Exibir Drill-ins (detalhamentos)
 
 Quando você clica em blocos, um pop-up dinâmico exibe como a exibição Drill ins (Detalhamento) é exibida para o usuário executivo no aplicativo. Se nenhuma dimensão tiver sido aplicada ao bloco, a dimensão de detalhamento será a **hora** ou os **dias**, dependendo do intervalo de datas padrão.
 

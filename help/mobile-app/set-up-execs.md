@@ -3,13 +3,13 @@ description: Como configurar usuários para usar o aplicativo móvel do Analytic
 title: Configurar executivos para usar painéis
 feature: Analytics Dashboards
 role: User, Admin
-source-git-commit: 020d59268873776aeec8fc7a90be70c3b6c55b69
+exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
+source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 56%
 
 ---
-
 
 # Configurar usuários executivos para usar painéis
 
@@ -19,7 +19,7 @@ Em alguns casos, os usuários executivos podem precisar de assistência adiciona
 
 1. Configure novos usuários no [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=en).
 
-1. Para compartilhar scorecards, você deve conceder permissões aos usuários do aplicativo para acessar componentes do scorecard, como o Analysis Workspace, os conjuntos de relatórios nos quais os scorecards são baseados, bem como segmentos, métricas e dimensões.
+1. Para compartilhar scorecards, você deve conceder permissões aos usuários do aplicativo para acessar componentes do scorecard, como o Analysis Workspace, as visualizações de dados nas quais os scorecards são baseados, bem como filtros, métricas e dimensões.
 
 ## Pré-requisitos do sistema dos usuários do aplicativo
 
@@ -111,4 +111,3 @@ Se o usuário executivo fizer logon e vir uma mensagem dizendo que nada foi comp
 * O scorecard pode não ter sido compartilhado com o usuário executivo.
 
 Verifique se o usuário executivo pode fazer logon na instância correta do Adobe Analytics e se o scorecard foi compartilhado.
-
