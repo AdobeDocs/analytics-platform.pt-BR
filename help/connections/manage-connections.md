@@ -3,10 +3,10 @@ title: Gerenciar conexões
 description: Descreve como gerenciar conexões com conjuntos de dados da Experience Platform no Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: d099c2559eea68aa1f44d345b103618f55fd0559
+source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 86%
+source-wordcount: '1714'
+ht-degree: 80%
 
 ---
 
@@ -137,3 +137,10 @@ Permite que administradores editem a conexão. Selecione uma conexão e clique e
 * Renomeie uma conexão.
 * Atualize os conjuntos de dados.
 * Remova os conjuntos de dados das conexões.
+
+## Definir janela de rolagem para retenção de dados [!UICONTROL Connection]
+
+>[!IMPORTANT]
+>Entre em contato com o Atendimento ao cliente ou o gerente de conta do Adobe para implementar essa configuração. Ainda não está disponível por meio da interface do usuário do CJA.
+
+Essa configuração permite definir a retenção de dados CJA como uma janela rolante em meses (3 meses, 6 meses etc.), em um nível [!UICONTROL conexão] (não em um nível [!UICONTROL conjunto de dados]). A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Nenhuma configuração de retenção de dados existe para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis. O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Ajuda você a ficar abaixo dos limites do contrato e reduz o risco de sobrecarga.

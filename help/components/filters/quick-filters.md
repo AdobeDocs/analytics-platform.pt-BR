@@ -1,13 +1,13 @@
 ---
-description: Use filtros rápidos no Analysis Workspace.
+description: Usar filtros rápidos no Analysis Workspace for Customer Journey Analytics
 title: Filtros rápidos
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 300bc4069b77b62ae13fd5baf2eec5846676fc6e
+source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 3%
+source-wordcount: '958'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Você pode criar filtros rápidos em um projeto para ignorar a complexidade do [Construtor de filtros](/help/components/filters/create-filters.md) completo. Filtros rápidos
 
-* Aplique-se somente aos projetos em que foram criados (você pode alterar isso).
+* Aplique-se somente aos projetos em que foram criados (é possível alterar isso).
 * Permitir até 3 regras
 * Não acomode contêineres aninhados ou regras sequenciais.
 * Trabalhar em projetos com vários conjuntos de relatórios
@@ -27,7 +27,7 @@ Para uma comparação do que os filtros rápidos podem fazer com relação aos f
 
 ## Pré-requisitos
 
-Os usuários precisam da permissão [!UICONTROL Segment Creation] no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) para poderem criar filtros rápidos.
+Qualquer pessoa pode criar um segmento rápido. No entanto, é necessário ter a permissão Criação de segmentos no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=en#analytics-tools) para salvar segmentos rápidos ou abri-los no Construtor de segmentos.
 
 ## Criar filtros rápidos
 
@@ -40,15 +40,15 @@ Em uma tabela de Forma livre, clique no ícone filter+ no cabeçalho do painel:
 | Nome | O nome padrão de um filtro é uma combinação dos nomes das regras no filtro. É possível renomear o filtro para um nome mais amigável. |
 | Incluir/excluir | Você pode incluir ou excluir componentes na definição do filtro, mas não ambos. |
 | Contêiner de Ocorrência/Visita/Visitante | Os filtros rápidos incluem um [contêiner de filtro](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) somente que permite incluir uma dimensão/métrica/intervalo de datas no (ou excluí-lo do) filtro.  O Visitante contém dados abrangentes específicos para visitantes em visitas e visualizações de página. Um contêiner de [!UICONTROL Visita] permite definir regras para detalhar os dados do visitante com base em visitas e um contêiner de [!UICONTROL Ocorrência] permite detalhar as informações do visitante com base em visualizações de página individuais. O contêiner padrão é [!UICONTROL Hit]. |
-| Componentes (Dimension/métrica/intervalo de datas) | Defina até 3 regras adicionando dimensões e/ou métricas de componentes e/ou intervalos de datas e seus valores. Há 3 maneiras de encontrar o componente correto:<ul><li>Comece a digitar e o construtor [!UICONTROL Quick Filter] encontra automaticamente o componente apropriado.</li><li>Use a lista suspensa para localizar o componente.</li><li>Arraste e solte componentes do painel esquerdo.</li></ul> |
+| Componentes (Dimension/métrica/intervalo de datas) | Defina até 3 regras adicionando componentes (dimensões e/ou métricas e/ou intervalos de datas) e seus valores. Há 3 maneiras de encontrar o componente correto:<ul><li>Comece a digitar e o construtor [!UICONTROL Quick Filter] encontra automaticamente o componente apropriado.</li><li>Use a lista suspensa para localizar o componente.</li><li>Arraste e solte-os do painel esquerdo.</li></ul> |
 | Operador | Use o menu suspenso para encontrar operadores padrão e operadores [!UICONTROL Distinct Count]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/components/filteration/segment-reference/seg-operators.html?lang=en) |
 | Sinal de mais (+) | Adicionar outra regra |
 | Qualificadores E/OU | Você pode adicionar qualificadores &quot;AND&quot; ou &quot;OR&quot; às regras, mas não pode misturar &quot;AND&quot; e &quot;OR&quot; em uma única definição de filtro. |
 | Aplicar | Aplique esse filtro ao painel. Se o filtro não contiver dados, você será perguntado se deseja continuar. |
-| Abrir builder | Abre o Construtor de filtros. Depois de salvar o filtro no Construtor de filtros, ele não é mais considerado um &quot;Filtro rápido&quot;. Ele se torna parte da biblioteca de filtros da lista de componentes. |
+| Abrir builder | Abre o Construtor de filtros. Depois de salvar ou aplicar o filtro no Construtor de filtros, ele não é mais considerado um &quot;Filtro rápido&quot;. Ele se torna parte da biblioteca de filtros da lista de componentes. |
 | Cancelar | Cancele esse filtro rápido - não o aplique. |
 | Intervalo de datas | O validador usa o intervalo de datas do painel para sua pesquisa de dados. Mas qualquer intervalo de datas aplicado em um filtro rápido substitui o intervalo de datas do painel na parte superior do painel. |
-| Visualização (canto superior direito) | Permite ver se você tem um filtro válido e a amplitude deste. Representa o detalhamento do conjunto de dados que você pode esperar ver ao aplicar esse filtro. você pode receber um aviso que indica que esse filtro não tem dados. Você pode continuar ou alterar a definição do filtro. |
+| Visualização (canto superior direito) | Permite ver se você tem um filtro válido e a amplitude deste. Representa o detalhamento do conjunto de dados que você pode esperar ver ao aplicar esse filtro. Você pode receber um aviso que indica que esse filtro não tem dados. Nesse caso, você pode continuar ou alterar a definição do filtro. |
 
 Este é um exemplo de um filtro que combina dimensões e métricas:
 
@@ -77,7 +77,7 @@ Você pode optar por salvar filtros rápidos no [!UICONTROL Quick Filter Builder
 1. (Opcional) Renomeie o filtro.
 1. Clique em **[!UICONTROL Salvar]**.
 
-Observe como a barra lateral do filtro muda de azul listrado para azul. Agora ele aparece na lista de componentes no painel esquerdo.
+Observe como a barra lateral do filtro muda de azul listrado para azul mais claro. Agora ele aparece na lista de componentes no painel esquerdo.
 
 ### Salvar no Construtor de filtros
 
@@ -85,7 +85,7 @@ Observe como a barra lateral do filtro muda de azul listrado para azul. Agora el
 1. Selecione **[!UICONTROL Salvar filtro]**
 1. Deixe o nome como está ou renomeie o filtro.
 
-   Volte para o Workspace e observe como o filtro agora tem uma barra lateral azul. Isso indica que ele não pode mais ser editado/aberto no Construtor de filtro rápido. E ao salvá-lo, ele se torna parte da lista de componentes.
+   Volte para o Workspace e observe como o filtro agora tem uma barra lateral azul clara. Isso indica que ele não pode mais ser editado/aberto no Construtor de filtro rápido. E ao salvá-lo, ele se torna parte da lista de componentes.
 
    ![](assets/quick-seg4.png)
 
@@ -104,4 +104,6 @@ Depois de aplicar o filtro, você pode optar por adicioná-lo à lista de compon
 
 ## O que são filtros somente de projeto?
 
-Os filtros somente do projeto são filtros rápidos ou filtros de projeto ad-hoc do Workspace. Ao editá-los/abri-los no [!UICONTROL Construtor de filtros], a caixa somente do projeto será exibida. Se você APLICAR um filtro rápido no construtor, mas não marcar a caixa disponibilizar , ele ainda será um filtro somente do projeto, mas não poderá mais ser aberto no [!UICONTROL Quick Filter Builder]. Se marcar a caixa e clicar em **[!UICONTROL SAVE]**, agora é um filtro de lista de componentes.
+Os filtros somente do projeto são filtros rápidos ou filtros de projeto ad-hoc do Workspace. Ao editá-los/abri-los no [!UICONTROL Construtor de filtros], a caixa somente do projeto é exibida.
+
+Se você APLICAR um filtro rápido no construtor, mas não marcar a caixa &quot;disponibilizar&quot;, ele ainda será um filtro somente do projeto, mas não poderá mais ser aberto no [!UICONTROL Quick Filter Builder]. Se você marcar a caixa e clicar em **[!UICONTROL Salvar]**, agora é um filtro de lista de componentes.
