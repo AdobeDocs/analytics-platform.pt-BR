@@ -1,0 +1,81 @@
+---
+title: Como criar um bloco de dados usando o Report Builder no CJA
+description: Descreve como criar um bloco de dados.
+role: Data Engineer, Data Architect, Admin, User
+feature: Report Builder
+type: Documentation
+source-git-commit: d946e6dbda608499594cf48a9456131485e7349a
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 0%
+
+---
+
+
+# Criar um bloco de dados
+
+Um *bloco de dados* é a tabela de dados criada por uma única solicitação de dados. Uma pasta de trabalho Report Builder pode conter vários blocos de dados. Ao criar um bloco de dados, primeiro configure o bloco de dados e, em seguida, crie o bloco de dados.
+
+## Configurar o bloco de dados
+
+Configure os parâmetros do bloco de dados inicial para o Local do bloco de dados, Visualizações de dados e um Intervalo de datas.
+
+1. Clique em **Criar bloco de dados**.
+
+   ![](./assets/create_db.png)
+
+1. Defina o **Local do bloco de dados**.
+
+   A opção de localização do bloco de dados define o local da planilha no qual o Construtor de relatórios adiciona os dados à planilha.
+
+   Para especificar o local do bloco de dados, selecione uma única célula na planilha ou insira um endereço de célula como a3, \\$a3, a\\\$3 ou sheet1!a2. A célula especificada será o canto superior esquerdo do bloco de dados quando os dados forem recuperados.
+
+1. Escolha o **Data views**.
+
+   A opção Visualizações de dados permite escolher uma visualização de dados a partir de um menu suspenso ou para fazer referência a uma visualização de dados a partir de um local da célula.
+
+1. Defina o **Intervalo de datas**.
+
+   A opção Intervalo de datas permite escolher um intervalo de datas. Os intervalos de datas podem ser fixos ou acumulados. Para obter informações adicionais sobre opções de intervalo de dados, consulte &lt;&lt; link para seção de intervalo de datas >>.
+
+1. Clique em **Next**.
+
+   ![](./assets/choose_date_data_view3.png)
+
+   Após configurar o bloco de dados, você pode selecionar dimensões, métricas e filtros para criar seu bloco de dados. As guias Dimension, Métricas e Filtros são exibidas acima do painel do Criador de tabela.
+<!--
+    ![](./assets/image9.png)
+  -->
+
+
+## Criar o bloco de dados
+
+Para criar o bloco de dados, selecione componentes do relatório e personalize o layout.
+
+1. Adicionar Dimension, métricas e filtros.
+
+   Role as listas de componentes ou use o campo **search** para localizar os componentes. Arraste e solte componentes no painel Tabela ou clique duas vezes em um nome de componente na lista para adicionar automaticamente o componente ao painel Tabela.
+
+   Clique duas vezes em um componente para adicioná-lo a uma seção padrão da tabela.
+
+   - Os componentes Dimension são adicionados à seção Linha ou à seção Coluna se você já tiver uma dimensão nas colunas.
+   - Os componentes Data são adicionados à seção Coluna .
+   - Os componentes de filtro são adicionados à seção Filtros .
+
+1. Organize os itens no painel Tabela para personalizar o layout do bloco de dados.
+
+   Arraste e solte componentes no painel Tabela para reorganizar os componentes ou clique com o botão direito do mouse em um nome de componente e selecione no menu opções.
+
+   Quando você adiciona componentes à tabela, uma visualização do bloco de dados é exibida no local do bloco de dados na planilha. O layout da visualização do bloco de dados é atualizado automaticamente à medida que você adiciona, move ou remove itens na tabela.
+
+   ![](./assets/image10.png)
+
+1. Clique em **Concluir**.
+
+   Uma mensagem de processamento é exibida enquanto os dados de análise são recuperados.
+
+   ![](./assets/image11.png)
+
+   O Report Builder recupera os dados e exibe o bloco de dados concluído na planilha.
+
+   ![](./assets/image12.png)

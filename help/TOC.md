@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: c41eeda10083ef6cc3d46b044f1c0052d08a575b
+source-git-commit: 4b528ef401cbe63b6237c66c2e9f39ee831aa71e
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 93%
+source-wordcount: '518'
+ht-degree: 88%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 93%
       + [Perguntas frequentes sobre a Análise de vários canais](connections/cca/faq.md)
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das visualizações de dados](data-views/data-views.md)
-   + [Create or edit a data view](data-views/create-dataview.md)
-   + Component Settings {#component-settings}
+   + [Criar ou editar uma visualização de dados](data-views/create-dataview.md)
+   + Configurações do componente {#component-settings}
       + [Visão geral das configurações de componente](data-views/component-settings/overview.md)
       + [Atribuição](data-views/component-settings/attribution.md)
       + [Comportamento](data-views/component-settings/behavior.md)
@@ -133,6 +133,15 @@ ht-degree: 93%
       + [Requisitos de administração](analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Acessibilidade no Analysis Workspace](analysis-workspace/workspace-faq/aw-accessibility.md)
       + [Cauda longa Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
++ Report Builder {#cja-reportbuilder}
+   + [Visão geral do Report Builder](report-builder/report-buider-overview.md)
+   + [Configuração de Report Builder](report-builder/report-builder-setup.md)
+   + [Criar um bloco de dados](report-builder/create-a-data-block.md)
+   + [Hub Report Builder](report-builder/report-builder-hub.md)
+   + [Selecionar um intervalo de datas](report-builder/select-date-range.md)
+   + [Trabalhar com filtros](report-builder/work-with-filters.md)
+   + [Filtrar dimensões](report-builder/filter-dimensions.md)
+   + [Configurações do Report Builder](report-builder/report-builder-settings.md)
 + Componentes {#cja-components}
    + [Visão geral dos componentes](components/overview.md)
    + Dimensões {#dimensions}

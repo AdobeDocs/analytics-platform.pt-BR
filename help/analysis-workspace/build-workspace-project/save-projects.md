@@ -1,12 +1,12 @@
 ---
 description: Saiba mais sobre as diferentes opções de gravação, incluindo salvar automaticamente, salvar como, salvar como modelo e abrir versões anteriores.
 title: Salvar projetos
-feature: Fundamentos do Workspace
+feature: Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: 734f1fe702398034090e25c251b5ff193db8381e
-workflow-type: ht
-source-wordcount: '463'
+source-git-commit: 1c19c8cb9cad7b4b7938915d04396cc4646a1f32
+workflow-type: tm+mt
+source-wordcount: '461'
 ht-degree: 100%
 
 ---
@@ -20,7 +20,7 @@ Para salvar as alterações em um projeto, acesse o menu **[!UICONTROL Projeto]*
 Há diferentes ações de salvamento que podem ser feitas no menu **[!UICONTROL Projeto]**, dependendo de como você deseja acessar sua análise no futuro.
 
 | Ação | Descrição |
-|---|---| 
+|---|---|
 | **[!UICONTROL Salvar]** | Salve as alterações no seu projeto. Se o projeto for compartilhado, os recipients do projeto também verão as alterações. Ao salvar seu projeto pela primeira vez, você deverá fornecer um nome, uma descrição (opcional) e adicionar tags (opcional). |
 | **[!UICONTROL Salvar com notas]** | Antes de salvar o projeto, adicione observações sobre o que foi alterado no projeto. As notas são armazenadas com a versão do projeto e estão disponíveis a todos os editores em [!UICONTROL Projeto] > [!UICONTROL Abrir versão anterior]. |
 | **[!UICONTROL Salvar como]** | Crie um duplicado do seu projeto. O projeto original não será afetado. |
