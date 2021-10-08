@@ -4,13 +4,13 @@ description: Descreve como criar um bloco de dados.
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: d946e6dbda608499594cf48a9456131485e7349a
+exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
+source-git-commit: 188ed6c6c32db9f65f6f31cf26311ce545d9dfb7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
-
 
 # Criar um bloco de dados
 
@@ -36,7 +36,7 @@ Configure os parâmetros do bloco de dados inicial para o Local do bloco de dado
 
 1. Defina o **Intervalo de datas**.
 
-   A opção Intervalo de datas permite escolher um intervalo de datas. Os intervalos de datas podem ser fixos ou acumulados. Para obter informações adicionais sobre opções de intervalo de dados, consulte &lt;&lt; link para seção de intervalo de datas >>.
+   A opção Intervalo de datas permite escolher um intervalo de datas. Os intervalos de datas podem ser fixos ou acumulados. Para obter informações sobre as opções do intervalo de dados, consulte [Selecionar um intervalo de datas](select-date-range.md).
 
 1. Clique em **Next**.
 
