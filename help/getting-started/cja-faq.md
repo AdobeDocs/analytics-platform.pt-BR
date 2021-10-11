@@ -2,10 +2,10 @@
 title: Perguntas frequentes sobre Customer Journey Analytics
 description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
-source-git-commit: f9a7bfd8ac379f6f3b0d30f365f123301462368c
+source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 87%
+source-wordcount: '1611'
+ht-degree: 83%
 
 ---
 
@@ -39,7 +39,6 @@ ht-degree: 87%
 | Pergunta | Resposta |
 | --- | --- |
 | É possível combinar dados de diferentes sandboxes da [!UICONTROL Adobe Experience Platform] em uma conexão do [!UICONTROL Customer Journey Analytics]? | Não, não é possível acessar dados em sandboxes. É possível combinar somente conjuntos de dados localizados na mesma sandbox. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#select-sandbox-and-datasets) |
-| Qual é a latência esperada para o [!UICONTROL Customer Journey Analytics] na [!UICONTROL Adobe Experience Platform]? | <ul><li>Em carga normal: &lt; 60 minutos <br>**Observação:** no caso de um volume de dados excepcionalmente elevado por meio do pipeline, poderá demorar até 24 horas.</li><li>Dados de preenchimento retroativo (até 13 meses de dados, independentemente do tamanho): &lt; 4 semanas</li></ul> |
 | Como conectar os dados online aos dados offline no [!UICONTROL Customer Journey Analytics]? | Contanto que a ID de pessoa corresponda entre os conjuntos de dados, o [!UICONTROL Customer Journey Analytics] pode conectar filtros, atribuição, fluxo, fallout etc. em todos os conjuntos de dados. |
 | Como posso trazer meus dados offline para o [!UICONTROL Customer Journey Analytics]? | Seu direito ao Customer Journey Analytics permite assimilar dados na Experience Platform. Em seguida, você pode criar conexões com esses dados e visualizações de dados no [!UICONTROL Customer Journey Analytics] para criar relatórios no Analysis Workspace. A equipe de integração de dados da Experience Platform pode ajudar a fornecer recomendações ou consultoria a você, se necessário. |
 | Como posso obter dados do [!UICONTROL Adobe Analytics] no [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Os dados do Adobe Analytics] podem ser conectados à Experience Platform por meio do [Conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). A maioria dos campos do [!UICONTROL Adobe Analytics] está no formato XDM, mas outros campos ainda não estão disponíveis. |
@@ -48,7 +47,17 @@ ht-degree: 87%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4. Componentes tradicionais do [!UICONTROL Adobe Analytics]
+## 4. Latency considerations
+
+>[!NOTE]
+>Não há tamanho de dados fixo no CJA e, portanto, o Adobe não pode se comprometer com um tempo de ingestão padrão. Estamos trabalhando ativamente para reduzir essas latências por meio de novas atualizações e otimização de assimilação.
+
+| Pergunta | Resposta |
+| --- | --- |
+| Qual é a latência esperada para o [!UICONTROL Customer Journey Analytics] na [!UICONTROL Adobe Experience Platform]? | <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in AEP.</li><li>Batch size > 50 million rows: longer than 90 mins.</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 24 horas<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul> |
+
+
+## 5. Componentes tradicionais do [!UICONTROL Adobe Analytics]
 
 | Pergunta | Resposta |
 | --- | --- |
@@ -61,7 +70,7 @@ ht-degree: 87%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 5. Implicações da exclusão de componentes de dados
+## 6. Implicações da exclusão de componentes de dados
 
 Quando se trata de exclusão, nos referimos a seis tipos de componentes: sandbox, esquema, conjunto de dados, conexão, visualização de dados e projetos do Workspace. Veja alguns cenários possíveis para excluir qualquer um desses componentes:
 
@@ -76,15 +85,15 @@ Quando se trata de exclusão, nos referimos a seis tipos de componentes: sandbox
 | Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Workspace que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul> |
 | Excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que todos os projetos do Workspace que dependem dessa visualização de dados excluída deixarão de funcionar. |
 
-## 6. Considerações ao mesclar conjuntos de relatórios no CJA
+## 7. Considerations when merging report suites in CJA
 
 Caso planeje assimilar dados do Adobe Analytics por meio do [Adobe Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR), considere essas ramificações ao mesclar 2 ou mais conjuntos de relatórios do Adobe Analytics.
 
 | Problema | Consideração |
 | --- | --- |
-| Variáveis | Variáveis como [!UICONTROL eVars] podem não se alinhar em conjuntos de relatórios. Por exemplo, o eVar 1 no conjunto de relatórios 1 pode apontar para **[!UICONTROL Página]**. No conjunto de relatórios 2, o eVar 1 pode apontar para **[!UICONTROL Campanha interna]**, levando a relatórios mistos e imprecisos. |
-|  Sessões e   contagens de pessoas | Eles são desduplicados em conjuntos de relatórios. Como resultado, as contagens podem não corresponder. |
+| Variáveis | Variables such as [!UICONTROL eVars] may not line up across report suites. Por exemplo, o eVar 1 no conjunto de relatórios 1 pode apontar para **[!UICONTROL Página]**. No conjunto de relatórios 2, o eVar 1 pode apontar para **[!UICONTROL Campanha interna]**, levando a relatórios mistos e imprecisos. |
+|  Sessões e   contagens de pessoas | They get deduplicated across report suites. Como resultado, as contagens podem não corresponder. |
 | Desduplicação de métrica | Desduplica instâncias de uma métrica (por exemplo, [!UICONTROL Orders]) se várias linhas tiverem a mesma ID de transação (por exemplo, [!UICONTROL Purchase ID]). Isso evita a contagem excessiva de métricas principais. Como resultado, métricas como [!UICONTROL Orders] podem não ser adicionadas em conjuntos de relatórios. |
 | Moeda | A conversão de moeda ainda não é compatível com o CJA. Se os conjuntos de relatórios que você está tentando mesclar usarem moedas base diferentes, podem ocorrer problemas. |
-| [!UICONTROL Persistência] | [](../data-views/component-settings/persistence.md) A persistência se estende pelos conjuntos de relatórios, o que afeta os  [!UICONTROL filtros], a  [!UICONTROL atribuição] e assim por diante. Os números podem não ser adicionados corretamente. |
+| [!UICONTROL Persistência] | [Persistence](../data-views/component-settings/persistence.md) extends across report suites, which impacts [!UICONTROL filters], [!UICONTROL attribution], and so on. Os números podem não ser adicionados corretamente. |
 | [!UICONTROL Classificações] |  As classificações não são automaticamente desduplicadas ao mesclar conjuntos de relatórios. Ao combinar vários arquivos de classificações em um único conjunto de dados [!UICONTROL lookup], você pode encontrar problemas. |
