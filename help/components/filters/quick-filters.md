@@ -4,7 +4,7 @@ title: Filtros rápidos
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: ca1789242a4b9abe63affcc0769d669863722c88
+source-git-commit: 1334e1edb36583ba978936fecbff2657e63a94bf
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 5%
@@ -32,15 +32,15 @@ Qualquer pessoa pode criar um segmento rápido. No entanto, é necessário ter a
 
 Em uma tabela de Forma livre, clique no ícone filter+ no cabeçalho do painel:
 
-![](assets/quick-seg1.png)
+![Filtro de segmentos](assets/quick-seg1.png)
 
 | Configuração | Descrição |
 | --- | --- |
 | Nome | O nome padrão de um filtro é uma combinação dos nomes das regras no filtro. É possível renomear o filtro para um nome mais amigável. |
 | Incluir/excluir | Você pode incluir ou excluir componentes na definição do filtro, mas não ambos. |
 | Contêiner de Ocorrência/Visita/Visitante | Os filtros rápidos incluem um [contêiner de filtro](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) somente que permite incluir uma dimensão/métrica/intervalo de datas no (ou excluí-lo do) filtro.  O Visitante contém dados abrangentes específicos para visitantes em visitas e visualizações de página. Um contêiner de [!UICONTROL Visita] permite definir regras para detalhar os dados do visitante com base em visitas e um contêiner de [!UICONTROL Ocorrência] permite detalhar as informações do visitante com base em visualizações de página individuais. O contêiner padrão é [!UICONTROL Hit]. |
-| Componentes (Dimension/métrica/intervalo de datas) | Defina até 3 regras adicionando componentes (dimensões e/ou métricas e/ou intervalos de datas) e seus valores. Há 3 maneiras de encontrar o componente correto:<ul><li>Comece a digitar e o construtor [!UICONTROL Quick Filter] encontra automaticamente o componente apropriado.</li><li>Use a lista suspensa para localizar o componente.</li><li>Arraste e solte-os do painel esquerdo.</li></ul> |
-| Operador | Use o menu suspenso para encontrar operadores padrão e operadores [!UICONTROL Distinct Count]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/components/filteration/segment-reference/seg-operators.html?lang=en) |
+| Componentes (Dimension/métrica/intervalo de datas) | Defina até 3 regras adicionando componentes (dimensões, métricas, intervalos de datas ou valores de dimensão). Há 3 maneiras de encontrar o componente correto:<ul><li>Comece a digitar e o construtor [!UICONTROL Quick Filter] encontra automaticamente o componente apropriado.</li><li>Use a lista suspensa para localizar o componente.</li><li>Arraste e solte-os do painel esquerdo.</li></ul> |
+| Operador | Use o menu suspenso para encontrar operadores padrão e operadores [!UICONTROL Distinct Count]. Consulte [Filtrar operadores](operators.md). |
 | Sinal de mais (+) | Adicionar outra regra |
 | Qualificadores E/OU | Você pode adicionar qualificadores &quot;AND&quot; ou &quot;OR&quot; às regras, mas não pode misturar &quot;AND&quot; e &quot;OR&quot; em uma única definição de filtro. |
 | Aplicar | Aplique esse filtro ao painel. Se o filtro não contiver dados, você será perguntado se deseja continuar. |
@@ -51,11 +51,11 @@ Em uma tabela de Forma livre, clique no ícone filter+ no cabeçalho do painel:
 
 Este é um exemplo de um filtro que combina dimensões e métricas:
 
-![](assets/quick-seg2.png)
+![Exemplo de definição de filtro](assets/quick-seg2.png)
 
 O filtro é exibido na parte superior. Observe a barra lateral com listras azuis, em vez da barra lateral azul para filtros no nível do componente na biblioteca de filtros à esquerda.
 
-![](assets/quick-seg3.png)
+![Filtrar locais do componente](assets/quick-seg3.png)
 
 ## Editar filtros rápidos
 
@@ -86,7 +86,7 @@ Observe como a barra lateral do filtro muda de azul listrado para azul mais clar
 
    Volte para o Workspace e observe como o filtro agora tem uma barra lateral azul clara. Isso indica que ele não pode mais ser editado/aberto no Construtor de filtro rápido. E ao salvá-lo, ele se torna parte da lista de componentes.
 
-   ![](assets/quick-seg4.png)
+   ![Filtrar lista de componentes](assets/quick-seg4.png)
 
 Depois de aplicar o filtro, você pode optar por adicioná-lo à lista de componentes de filtro e disponibilizá-lo para todos os projetos.
 
@@ -94,7 +94,7 @@ Depois de aplicar o filtro, você pode optar por adicioná-lo à lista de compon
 
 1. Na parte superior do Construtor de filtros, observe esta caixa de diálogo:
 
-   ![](assets/project-only.png)
+   ![Caixa de diálogo Filtro](assets/project-only.png)
 
 1. Marque a caixa de seleção ao lado de **[!UICONTROL Disponibilizar para todos os projetos e adicionar à lista de componentes.]**
 1. Clique em **[!UICONTROL Salvar]**.
