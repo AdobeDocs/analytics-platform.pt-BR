@@ -1,13 +1,13 @@
 ---
 title: Configurações do componente de comportamento
 description: Especifique como uma dimensão ou métrica se comporta nos relatórios.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
-workflow-type: tm+mt
+exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
+source-git-commit: 181fc4fbf599c5ca34f4786439e83ac0e4a524dd
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
-
 
 # Configurações do componente de comportamento
 
@@ -15,24 +15,24 @@ As configurações de comportamento estão disponíveis em dimensões e métrica
 
 ![Configurações de comportamento](../assets/behavior-settings.png)
 
-## Configurações de comportamento de Dimension
+## Configurações de comportamento da dimensão
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL Minúsculas] | Elimina a duplicação de linhas que têm o mesmo valor, mas diferentes letras maiúsculas e minúsculas. Se ativada, todas as instâncias de uma dimensão com o mesmo valor são relatadas como minúsculas. Por exemplo, seus dados contêm os valores `"liverpool"`, `"Liverpool"` e `"LIVERPOOL"` em uma dimensão de string. Se [!UICONTROL Lower case] estiver ativado, todos os três valores são combinados em `"liverpool"`. Se estiver desativado, todos os três valores serão tratados como distintos. |
+| [!UICONTROL Minúsculas] | Elimina a duplicação de linhas que têm o mesmo valor, mas com maiúsculas e minúsculas diferentes. Se ativada, todas as instâncias de uma dimensão com o mesmo valor são relatadas como minúsculas. Por exemplo, os dados contêm os valores `"liverpool"`, `"Liverpool"` e `"LIVERPOOL"` em uma dimensão de sequência. Se [!UICONTROL Minúsculas] estiver ativado, todos os três valores são combinados em `"liverpool"`. Se desativado, todos os três valores são tratados como distintos. |
 
 ![Dimensão que diferencia maiúsculas de minúsculas](../assets/case-sens-workspace.png)
 
 >[!NOTE]
 >
->Se você ativar [!UICONTROL Lower case] em uma dimensão de conjunto de dados de pesquisa, vários valores de pesquisa poderão existir para o mesmo identificador. Se esse conflito ocorrer, o CJA usará o primeiro valor combinado ASCII (valores em maiúsculas precedem valores em minúsculas). O Adobe recomenda não usar conjuntos de dados de pesquisa que contenham o mesmo valor quando [!UICONTROL Lower case] estiver ativado.
+>Se você ativar [!UICONTROL Minúsculas] em uma dimensão de conjunto de dados de pesquisa, vários valores de pesquisa poderão existir para o mesmo identificador. Se esse conflito ocorrer, o CJA usará o primeiro valor ASCII ordenado (valores em maiúsculas precedem valores em minúsculas). A Adobe recomenda não usar conjuntos de dados de pesquisa que contenham o mesmo valor quando [!UICONTROL Minúsculas] estiverem ativadas.
 
 ## Configurações de comportamento da métrica
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
-| [!UICONTROL Contar valores] | Visível nos tipos de dados Integer e Double schema . Aumente a métrica pelo valor especificado. Por exemplo, aumenta uma métrica em 50 se o valor da coluna for `50`. |
-| [!UICONTROL Contar instâncias] | Visível nos tipos de dados Integer e Double schema . Aumente a métrica uma vez, independentemente do valor. A presença de qualquer valor aumenta a métrica. Por exemplo, aumenta uma métrica em 1 se o valor da coluna for `50`. |
-| [!UICONTROL Valores para contar] | Visível nos tipos de dados do schema booleano. Permite determinar se a métrica aumenta contando `true`, `false`, ou ambos. |
+| [!UICONTROL Contar valores] | Visível nos dados de esquema do tipo Integer e Double. Aumenta a métrica de acordo com o valor especificado. Por exemplo, aumenta uma métrica em 50, se o valor da coluna for `50`. |
+| [!UICONTROL Contar instâncias] | Visível nos dados de esquema do tipo Integer e Double. Aumenta a métrica em um ponto, independentemente do valor. A presença de qualquer valor aumenta a métrica. Por exemplo, aumenta uma métrica em 1 se o valor da coluna for `50`. |
+| [!UICONTROL Valores para contar] | Visível nos dados de esquema do tipo Booleano. Permite determinar se a métrica aumenta ao contar `true`, `false` ou ambos. |
 
-Você pode gerar uma métrica de &quot;Pedidos&quot; e &quot;Receita&quot; no Analysis Workspace usando a mesma coluna de conjunto de dados de evento com comportamentos diferentes. Arraste a coluna &quot;Receita&quot; do conjunto de dados para a exibição de dados duas vezes e defina uma como &quot;Valores de contagem&quot; e a outra como &quot;Instâncias de contagem&quot;. A métrica &quot;Pedidos&quot; conta instâncias, enquanto a métrica &quot;Receita&quot; conta valores.
+Você pode gerar métricas de “Pedidos” e “Receita” no Analysis Workspace usando a mesma coluna do conjunto de dados de evento, com comportamentos diferentes. Arraste a coluna do conjunto de dados “Receita” para a visualização de dados duas vezes, e configure uma para “Contar valores” e a outra para “Contar instâncias”. A métrica “Pedidos” conta instâncias, enquanto a métrica “Receita” conta valores.
