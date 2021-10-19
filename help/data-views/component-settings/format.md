@@ -1,24 +1,24 @@
 ---
-title: Formatar configurações do componente
+title: Configurações do componente de formato
 description: Configure como uma métrica é formatada.
-source-git-commit: af357167e65f4a577880832818221f6edbfc8b0a
-workflow-type: tm+mt
+exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
+source-git-commit: 181fc4fbf599c5ca34f4786439e83ac0e4a524dd
+workflow-type: ht
 source-wordcount: '133'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
+# Configurações do componente de formato
 
-# Formatar configurações do componente
-
-O formato permite determinar como uma determinada métrica é exibida.
+O Formato permite definir como uma determinada métrica é exibida.
 
 ![Configurações de formato](../assets/format-settings.png)
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL Formato] | Permite que você especifique a formatação de uma métrica como Decimal, Hora, Porcentagem ou Moeda. |
-| [!UICONTROL Casas decimais] | Não visível nos tipos de dados do esquema Inteiro. Permite que você especifique o número de casas decimais nas quais uma métrica é exibida. |
-| [!UICONTROL Moeda] | Se o formato for Moeda, o determinará em qual moeda deseja que a métrica seja exibida. Esta opção não aplica qualquer conversão de moeda; é apenas para a formatação da interface do usuário. |
-| [!UICONTROL Exibir tendência ascendente como] | Permite especificar se uma tendência acima nessa métrica é boa (verde) ou ruim (vermelho). |
-| [!UICONTROL Valor ] verdadeiro e valor  [!UICONTROL falso] | Visível somente em tipos de dados de esquema booleano. Permite personalizar o rótulo do item de dimensão para valores `true` e `false`. |
+| [!UICONTROL Formato] | Permite especificar a formatação de uma métrica como Decimal, Hora, Porcentagem ou Moeda. |
+| [!UICONTROL Casas decimais] | Isso não é visível nos dados de esquema do tipo Integer. Permite especificar o número de casas decimais que uma métrica deve exibir. |
+| [!UICONTROL Moeda] | Se o formato for Moeda, determina em qual moeda a métrica deve ser exibida. Esta opção não aplica qualquer conversão de moeda; ela serve apenas para a formatação da interface. |
+| [!UICONTROL Exibir tendência ascendente como] | Permite especificar se uma tendência de alta nessa métrica é boa (verde) ou ruim (vermelho). |
+| [!UICONTROL Valor verdadeiro] e [!UICONTROL Valor falso] | Visível somente em dados de esquema do tipo Booleano. Permite personalizar o rótulo do item de dimensão para valores `true` e `false`. |
