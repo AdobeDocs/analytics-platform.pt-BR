@@ -3,9 +3,9 @@ title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 source-git-commit: ff1f28015a2c52f79fae975c16bb7cb76f6179c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1099'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ A filtragem inclui o [Construtor de filtros](/help/components/filters/create-fil
 
 ## Tipos de filtro
 
-Você pode criar diferentes tipos de filtros no Workspace e no Construtor de filtros, dependendo da complexidade que eles precisam ser, se eles devem se aplicar somente a este projeto etc. Este é um resumo dos tipos de filtros:
+Diferentes tipos de filtros podem ser criados no Workspace e no Construtor de filtros, dependendo de quão complexo eles precisam ser, se devem se aplicar somente a este projeto, etc. Aqui está um resumo dos tipos de filtros:
 
-| Tipo de filtro | Criado onde? | Onde aplicável? | Quando usar |
+| Tipo de filtro | Onde ele é criado? | Onde ele é aplicável? | Quando usar |
 | --- | --- | --- | --- |
-| Filtro de lista de componentes | Clique em +, o que direciona você para o [Construtor de filtros](/help/components/filters/create-filters.md) | Todos os projetos do Workspace | Para filtros mais complexos, filtros sequenciais |
-| Filtro rápido | [Construtor de filtro rápido](/help/components/filters/quick-filters.md) | Somente projeto, mas pode salvar e adicionar à lista de segmentos. | Flexibilidade para adicionar/editar uma ou mais regras |
-| Filtro de projeto ad-hoc | [Arrastar e soltar na área de soltar de segmentos em um projeto](/help/components/filters/ad-hoc-filters.md) | Somente projeto, mas pode salvar e adicionar à lista de filtros. | Para filtros de regra única |
-| Filtros na análise de fallout | [Visualização ](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) de fallout no Analysis Workspace | Para visualizações de fallout individuais | Crie filtros de um ponto de contato, adicione filtros como ponto de contato e compare fluxos de trabalho importantes em vários filtros |
-| Filtro baseado em métricas calculadas | [Construtor de métrica calculada](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html) | Para métrica calculada individual | Aplicar filtros/s na definição da métrica |
+| Filtro de lista de componentes | Clique em +, que leva ao [Construtor de filtros](/help/components/filters/create-filters.md) | Todos os projetos do Workspace | Para filtros mais complexos, filtros sequenciais |
+| Filtro rápido | [Construtor de filtro rápido](/help/components/filters/quick-filters.md) | Exclusivo para projetos, mas é possível salvar e adicionar à lista de segmentos. | Flexibilidade para adicionar/editar uma ou mais regras |
+| Filtro de projeto ad hoc | [Arrastar e soltar para a área de destino de segmentos em um projeto](/help/components/filters/ad-hoc-filters.md) | Exclusivo para projetos, mas é possível salvar e adicionar à lista de filtros. | Para filtros de regra única |
+| Filtros em análise de fallout | [Visualização de fallout](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) no Analysis Workspace | Para visualizações individuais de fallout | Crie filtros a partir de um ponto de contato, adicione filtros como ponto de contato e compare fluxos de trabalho importantes entre vários filtros |
+| Filtro baseado em métricas calculadas | [Construtor de métrica calculada](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=pt-BR) | Para métricas calculadas individuais | Aplicar filtro(s) na definição da métrica |
 
 ## Filtros sequenciais
 
