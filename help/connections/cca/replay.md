@@ -3,9 +3,9 @@ title: Como funcionam as repetições
 description: Entenda o conceito de “repetição” na Análise de vários canais
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 source-git-commit: af14d9279f1dd5019e7e6db59a27765eede078bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Em intervalos regulares (uma vez por semana ou uma vez por dia, dependendo da ja
 
 >[!NOTE]
 >
->Os dados são repetidos somente para o conjunto de dados do site. O conjunto de dados da central de chamadas permanece inalterado, mas é compatível quando a ID de pessoa correta é usada.
+>Os dados são repetidos somente para o conjunto de dados do site. O conjunto de dados da central de atendimento permanece inalterado, mas é compatível quando a ID de pessoa correta é usada.
 
 ## Recapitulação
 
