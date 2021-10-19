@@ -3,15 +3,15 @@ title: Visão geral das visualizações de dados
 description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão do CJA, como métricas, dimensões, sessões etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Visão geral das visualizações de dados
 
-Uma visualização de dados é um contêiner específico ao Customer Journey Analytics que permite determinar como interpretar dados de uma [conexão](/help/connections/create-connection.md). Especifica todas as dimensões e métricas disponíveis no Analysis Workspace e de quais colunas essas dimensões e métricas obtêm seus dados. As visualizações de dados são definidas em preparação para relatórios no Analysis Workspace.
+Uma visualização de dados é um container específico do Customer Journey Analytics que permite determinar como interpretar dados de uma [conexão](/help/connections/create-connection.md). Ele especifica todas as dimensões e métricas disponíveis no Analysis Workspace e de quais colunas elas obtêm seus dados. As visualizações de dados são definidas na preparação de relatórios no Analysis Workspace.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ As visualizações de dados permitem que você altere espontaneamente as configu
 ## Pré-requisitos de visualizações de dados
 
 * Antes de criar visualizações de dados, é necessário [configurar uma ou mais conexões com os conjuntos de dados da Experience Platform](/help/connections/create-connection.md).
-* Para criar ou gerenciar uma visualização de dados, você precisa de um [conjunto de permissões no Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR#admin-access-permissions).
+* Para criar ou gerenciar uma visualização de dados, você precisa de um [conjunto de permissões no Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR).
 
 ## Configurações de visualização de dados que você pode substituir no Workspace
 
@@ -61,7 +61,7 @@ Algumas configurações de visualização de dados podem ser substituídas no An
 
 * [!UICONTROL Janela de lookback]
 * Atribuição de métrica
-* Se os usuários veem ou não o item da linha [!UICONTROL Nenhum valor] em um relatório.
+* Se os usuários veem ou não o item da linha [!UICONTROL Nenhum valor] em um relatório
 
 ## Configurações de visualização de dados que não podem ser substituídas no Workspace
 
