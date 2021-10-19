@@ -3,15 +3,15 @@ title: Importação de dados da central de atendimento e da Web
 description: Saiba como criar um conjunto de dados que vincula os dados da central de atendimento e do site.
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 source-git-commit: 269c6e50f26d424df58c0803a4e49eb2fc9d3968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1148'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
 # Importação de dados da central de atendimento e da Web
 
-O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar conjuntos de dados de diferentes fontes em um único projeto do Workspace. Use este guia para entender como sua organização pode combinar dados do site com dados da central de atendimento. Por exemplo, você pode entender quais ações um cliente toma, qual conteúdo ele visualiza e quais termos ele pesquisa antes de entrar em contato com o suporte ao cliente. Você pode então determinar o conteúdo e as ferramentas de autoatendimento para melhorar, para que os clientes possam resolver os problemas sozinhos sem precisar entrar em contato com o .
+O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar conjuntos de dados de diferentes fontes em um único projeto do Workspace. Use este guia para entender como sua organização pode combinar dados do site com dados da central de atendimento. Por exemplo, você pode entender quais ações um cliente toma, qual conteúdo ele visualiza e quais termos ele pesquisa antes de ele entrar em contato com o suporte ao cliente. Você pode então determinar o conteúdo e as ferramentas de autoatendimento para melhorar, a fim de que os clientes possam resolver os problemas sozinhos sem precisar entrar em contato.
 
 ## Pré-requisitos
 
@@ -56,7 +56,7 @@ O CJA exige um identificador comum para gerar um [conjunto de dados combinado](.
 Depois de criar uma conexão, você pode [Criar uma visualização de dados](/help/data-views/create-dataview.md) para uso no Analysis Workspace. Os componentes úteis incluem:
 
 * Uma dimensão de página com persistência de último contato e sessão. Você pode conectar métricas da central de atendimento com a última página que um cliente visualizou antes de fazer uma chamada.
-* Uma métrica de chamadas que usa um campo de esquema &quot;Motivo da central de atendimento&quot; para aumentar as ocorrências. Use [Desduplicação de métrica](/help/data-views/component-settings/metric-deduplication.md) para que aumente somente uma vez por sessão.
+* Uma métrica de chamadas que usa um campo de esquema “Motivo da chamada” para aumentar as ocorrências. Use a [Desduplicação de métrica](/help/data-views/component-settings/metric-deduplication.md) para que aumente somente uma vez por sessão.
 
 ## Criar visualizações
 
@@ -79,7 +79,7 @@ A visualização Venn resultante mostra o número de pessoas em seu conjunto de 
 Essa tabela de forma livre permite que você veja as principais páginas que contribuem para os eventos da central de atendimento. Primeiro, verifique se as dimensões e métricas desejadas têm o modelo de atribuição correto:
 
 1. Arraste a dimensão que retém os nomes da página da Web para uma visualização de Tabela de forma livre.
-1. Substitua a métrica pela métrica da central de atendimento desejada que você deseja medir.
+1. Substitua a métrica pela métrica da central de atendimento que você deseja medir.
 1. Clique no ícone de engrenagem próximo ao cabeçalho da métrica. Clique em **[!UICONTROL Modelo de atribuição não padrão]**.
 1. Defina o [Modelo de atribuição](/help/analysis-workspace/attribution/models.md) desejado. Por exemplo, um modelo de Declínio de tempo com meia-vida de 15 minutos e uma Janela de pesquisa de sessão. Esse modelo de atribuição dá crédito às páginas que antecedem a chamada para sua central de atendimento.
 
@@ -87,32 +87,32 @@ O relatório resultante mostra as principais páginas que direcionam chamadas pa
 
 <!-- Complement with donut visualization -->
 
-Você pode aumentar ainda mais o insight com esta tabela dividindo Chamadas por razão ou categoria.
+Você pode aumentar ainda mais o insight com esta tabela dividindo Chamadas por motivo ou categoria.
 
-1. Clique na divisa à direita na dimensão &quot;Motivo da chamada&quot; na lista de componentes. Essa ação revela valores de dimensão individuais.
-2. Arraste os valores de dimensão desejados abaixo da métrica &quot;Chamadas&quot;, que filtra essa métrica por cada motivo de chamada.
-3. Repita o procedimento para cada motivo de chamada que deseja detalhar. Use o filtro &quot;Todas as sessões&quot; para exibir o total agregado.
+1. Clique na divisa à direita na dimensão “Motivo da chamada”, na lista de componentes. Essa ação revela valores de dimensão individuais.
+2. Arraste os valores de dimensão desejados para a métrica “Chamadas”, que filtra essa métrica por cada motivo de chamada.
+3. Repita o procedimento para cada motivo de chamada que você deseja detalhar. Use o filtro “Todas as sessões” para exibir o total agregado.
 
 <!-- screenshot -->
 
 ### Visualização de fluxo
 
-Você pode obter informações sobre o que um cliente estava tentando fazer antes de usar o canal da central de atendimento. Essa visualização de fluxo ajuda você a entender as jornadas mais frequentes que um cliente faz para chegar à central de atendimento. Esse insight permite determinar as melhorias mais eficazes que você pode fazer no site para que os clientes tenham menos probabilidade de fazer chamadas.
+Você pode obter insights sobre o que um cliente estava tentando fazer antes de usar o canal da central de atendimento. Essa visualização de fluxo ajuda você a entender as jornadas mais frequentes que um cliente faz para chegar à central de atendimento. Esse insight permite determinar as melhorias mais eficazes que você pode fazer no site para que os clientes tenham menos probabilidade de fazer chamadas.
 
 1. Clique na guia **[!UICONTROL Visualizações]** à esquerda e arraste uma visualização de fluxo para a tela do espaço de trabalho.
-2. Clique na guia **[!UICONTROL Components]** à esquerda e localize a dimensão &quot;Motivo da chamada&quot;.
-3. Clique na divisa direita ao lado dessa dimensão. Essa ação revela valores de dimensão individuais.
+2. Clique na guia **[!UICONTROL Componentes]** à esquerda e localize a dimensão “Motivo da chamada”.
+3. Clique na divisa direita próxima à esta dimensão. Essa ação revela valores de dimensão individuais.
 4. Arraste o item de dimensão do motivo da chamada desejado para o local central da visualização de fluxo.
 5. A visualização de fluxo preenche automaticamente os motivos de chamada anteriores e seguintes. Substitua o motivo da chamada anterior pela dimensão da página do site.
-6. Clique no ícone de engrenagem no canto superior direito da visualização de fluxo e altere o contêiner de fluxo para **[!UICONTROL Session]**.
+6. Clique no ícone de engrenagem no canto superior direito da visualização de fluxo e altere o container de fluxo para **[!UICONTROL Sessão]**.
 
 ### Histograma
 
-Quantos clientes chamaram uma vez, duas vezes ou mais de 6 vezes? Algumas dessas pessoas nunca visitam o site. Use a visualização do histograma para determinar quantas pessoas se encaixam em cada grupo. Para pessoas que nunca visitam o site, veja como incentivá-las a se autoservir.
+Quantos clientes ligaram uma vez, duas vezes ou mais de 6 vezes? Algumas dessas pessoas nunca visitam o site. Use a visualização do histograma para determinar quantas pessoas se encaixam em cada grupo. Para pessoas que nunca visitam o site, veja como incentivá-las a usar o autoatendimento.
 
 1. Clique na guia **[!UICONTROL Visualizações]** à esquerda e arraste uma visualização de histograma para a tela do espaço de trabalho.
-2. Clique na guia **[!UICONTROL Components]** à esquerda e arraste a métrica de chamadas para a visualização do histograma.
-3. Clique em **[!UICONTROL Mostrar configurações avançadas]** no centro da visualização e personalize os buckets desejados.
+2. Clique na guia **[!UICONTROL Componentes]** à esquerda e arraste a métrica de chamadas para a visualização do histograma.
+3. Clique em **[!UICONTROL Mostrar configurações avançadas]** no centro da visualização e personalize os segmentos desejados.
 4. Clique em **[!UICONTROL Criar]**.
 
 <!--
