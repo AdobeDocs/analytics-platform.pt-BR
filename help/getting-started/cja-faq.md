@@ -4,8 +4,8 @@ description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 source-git-commit: 2412b2b3d6c0abf29c2d265ba60668c3e4a12936
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -47,14 +47,14 @@ ht-degree: 83%
 
 {style=&quot;table-layout:auto&quot;}
 
-## 4. Latency considerations
+## 4. Considerações de latência
 
 >[!NOTE]
 >Não há tamanho de dados fixo no CJA e, portanto, o Adobe não pode se comprometer com um tempo de ingestão padrão. Estamos trabalhando ativamente para reduzir essas latências por meio de novas atualizações e otimização de assimilação.
 
 | Pergunta | Resposta |
 | --- | --- |
-| Qual é a latência esperada para o [!UICONTROL Customer Journey Analytics] na [!UICONTROL Adobe Experience Platform]? | <ul><li>Live data or events: Processed and ingested within 90 minutes, once data is available in AEP.</li><li>Batch size > 50 million rows: longer than 90 mins.</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 24 horas<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul> |
+| Qual é a latência esperada para o [!UICONTROL Customer Journey Analytics] na [!UICONTROL Adobe Experience Platform]? | <ul><li>Dados ou eventos ao vivo: Processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no AEP.</li><li>Tamanho do lote > 50 milhões de linhas: superior a 90 minutos.</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 24 horas<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul> |
 
 
 ## 5. Componentes tradicionais do [!UICONTROL Adobe Analytics]
@@ -85,15 +85,15 @@ Quando se trata de exclusão, nos referimos a seis tipos de componentes: sandbox
 | Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Workspace que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul> |
 | Excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que todos os projetos do Workspace que dependem dessa visualização de dados excluída deixarão de funcionar. |
 
-## 7. Considerations when merging report suites in CJA
+## 7. Considerações ao mesclar conjuntos de relatórios no CJA
 
-Caso planeje assimilar dados do Adobe Analytics por meio do [Adobe Analytics source connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR), considere essas ramificações ao mesclar 2 ou mais conjuntos de relatórios do Adobe Analytics.
+Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR), considere essas ramificações ao mesclar dois ou mais conjuntos de relatórios do Adobe Analytics.
 
 | Problema | Consideração |
 | --- | --- |
-| Variáveis | Variables such as [!UICONTROL eVars] may not line up across report suites. Por exemplo, o eVar 1 no conjunto de relatórios 1 pode apontar para **[!UICONTROL Página]**. No conjunto de relatórios 2, o eVar 1 pode apontar para **[!UICONTROL Campanha interna]**, levando a relatórios mistos e imprecisos. |
-|  Sessões e   contagens de pessoas | They get deduplicated across report suites. Como resultado, as contagens podem não corresponder. |
-| Desduplicação de métrica | Desduplica instâncias de uma métrica (por exemplo, [!UICONTROL Orders]) se várias linhas tiverem a mesma ID de transação (por exemplo, [!UICONTROL Purchase ID]). Isso evita a contagem excessiva de métricas principais. Como resultado, métricas como [!UICONTROL Orders] podem não ser adicionadas em conjuntos de relatórios. |
+| Variáveis | Variáveis como [!UICONTROL eVars] podem não se alinhar em conjuntos de relatórios. Por exemplo, a eVar1 no conjunto de relatórios 1 pode apontar para **[!UICONTROL Página]**. No conjunto de relatórios 2, a eVar1 pode apontar para **[!UICONTROL Campanha interna]**, gerando relatórios mistos e imprecisos. |
+| Contagens de [!UICONTROL Sessões] e [!UICONTROL Pessoas] | Elas são desduplicadas em conjuntos de relatórios. Como resultado, as contagens podem não corresponder. |
+| Desduplicação de métrica | Desduplica instâncias de uma métrica (por exemplo, [!UICONTROL Pedidos]) se várias linhas tiverem a mesma ID de transação (por exemplo, [!UICONTROL ID de compra]). Isso evita a contagem excessiva de métricas principais. Como resultado, métricas como [!UICONTROL Pedidos] podem não se corresponder em conjuntos de relatórios. |
 | Moeda | A conversão de moeda ainda não é compatível com o CJA. Se os conjuntos de relatórios que você está tentando mesclar usarem moedas base diferentes, podem ocorrer problemas. |
-| [!UICONTROL Persistência] | [Persistence](../data-views/component-settings/persistence.md) extends across report suites, which impacts [!UICONTROL filters], [!UICONTROL attribution], and so on. Os números podem não ser adicionados corretamente. |
-| [!UICONTROL Classificações] |  As classificações não são automaticamente desduplicadas ao mesclar conjuntos de relatórios. Ao combinar vários arquivos de classificações em um único conjunto de dados [!UICONTROL lookup], você pode encontrar problemas. |
+| [!UICONTROL Persistência] | A [Persistência](../data-views/component-settings/persistence.md) se estende pelos conjuntos de relatórios, o que afeta os [!UICONTROL filtros], a [!UICONTROL atribuição] e assim por diante. Os números podem não ser correspondidos corretamente. |
+| [!UICONTROL Classificações] | As [!UICONTROL Classificações] não são automaticamente desduplicadas ao mesclar conjuntos de relatórios. Ao combinar vários arquivos de classificações em um único conjunto de dados de [!UICONTROL pesquisa], você pode encontrar problemas. |

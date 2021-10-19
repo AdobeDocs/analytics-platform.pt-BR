@@ -11,8 +11,8 @@ user-guide-description: Este guia fornece ajuda para o Customer Journey Analytic
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 89%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 89%
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das visualizações de dados](data-views/data-views.md)
    + [Criar ou editar uma visualização de dados](data-views/create-dataview.md)
-   + Configurações do componente {#component-settings}
+   + Configurações de componente {#component-settings}
       + [Visão geral das configurações de componente](data-views/component-settings/overview.md)
       + [Atribuição](data-views/component-settings/attribution.md)
       + [Comportamento](data-views/component-settings/behavior.md)
@@ -174,7 +174,7 @@ ht-degree: 89%
    + [Casos de uso do Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Uso de arrays de objetos](use-cases/object-arrays.md)
    + [(B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa](use-cases/b2b.md)
-   + [Analisar dados em canais](use-cases/cross-channel.md)
+   + [Analisar dados entre canais](use-cases/cross-channel.md)
    + [Importação de dados da central de atendimento e da Web](use-cases/call-center.md)
    + [Casos de uso da assimilação de dados](use-cases/data-ingestion.md)
    + [Usar dimensões do canal de marketing](use-cases/marketing-channels.md)
@@ -184,7 +184,7 @@ ht-degree: 89%
 + Painéis do Analytics {#cja-dashboards}
    + [Painéis do Analytics - Visão geral](mobile-app/home.md)
    + [Tarefas do curador](mobile-app/curator.md)
-   + [Criar um scorecard](mobile-app/create-scorecard.md)
+   + [Criar um cartão de pontuação](mobile-app/create-scorecard.md)
    + [Configurar executivos para usar painéis](mobile-app/set-up-execs.md)
    + [Guia de início rápido do usuário executivo](mobile-app/executive.md)
 + Privacidade {#cja-privacy}
