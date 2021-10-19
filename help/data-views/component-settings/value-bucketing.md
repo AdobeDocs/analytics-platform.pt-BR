@@ -1,28 +1,28 @@
 ---
-title: Configurações do componente de divisão de valores
-description: Combine valores numéricos em uma dimensão.
-source-git-commit: 0c27f75eed8f1f3dec3f287cfe35ab748bbfc1bb
-workflow-type: tm+mt
+title: Configurações do componente de segmentação de valores
+description: Combinar valores numéricos em uma dimensão.
+exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
+source-git-commit: 181fc4fbf599c5ca34f4786439e83ac0e4a524dd
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
+# Configurações do componente de [!UICONTROL Segmentação de valores]
 
-# [!UICONTROL Configurações do componente ] de Registro de Valor
+Ao criar ou editar uma visualização de dados, a segmentação de valores permite combinar valores numéricos com base em um intervalo. Essa função está disponível apenas para dimensões que utilizam dados de esquema do tipo Integer ou Double.
 
-Ao criar ou editar uma visualização de dados, a divisão de valores permite combinar valores numéricos com base em um intervalo. Ela só está disponível para dimensões que usam os tipos de dados Integer ou Double schema .
-
-A divisão de valores é importante quando você deseja agrupar intervalos em vez de tratar cada número exclusivo como um item de dimensão separado. Por exemplo, um bucket de &quot;Entre 5 e até 10&quot; aparece como um item de linha &quot;5 a 10&quot; no Analysis Workspace.
+A segmentação de valores é importante quando você deseja agrupar intervalos, em vez de tratar cada número único como um item de dimensão separado. Por exemplo, um segmento “Entre 5 e 10” será exibido como um item de linha “5 a 10” no Analysis Workspace.
 
 ![Classificação de valor](../assets/value-bucketing.png)
 
-Se você quiser a flexibilidade de relatórios em uma dimensão segmentada e não segmentada, arraste duas cópias do componente para a lista de dimensões disponíveis. Ative o particionamento em uma dimensão e desative-a na outra.
+Se você quiser a flexibilidade de criar relatórios tanto em dimensões segmentadas como não segmentadas, arraste duas cópias do componente para a lista de dimensões disponíveis. Ative a segmentação em uma dimensão e desative-a na outra.
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL Valor do bloco] | Uma caixa de seleção que permite habilitar o agrupamento. |
-| [!UICONTROL Menos que] | O limite superior do primeiro bucket de dimensão. |
-|  [!UICONTROL Inclusão e menor que] | Limites de compartimentos subsequentes. |
-| [!UICONTROL Maior que ou igual a] | O limite inferior do último bucket de dimensão. |
-| [!UICONTROL Adicionar bloco] | Permite adicionar outro intervalo à classificação de dimensão numérica. Você pode adicionar até 20 buckets em uma única dimensão. |
+| [!UICONTROL Valor do bloco] | Uma caixa de seleção que permite ativar a segmentação. |
+| [!UICONTROL Menos que] | O limite superior do segmento da primeira dimensão. |
+| [!UICONTROL Incluindo] [!UICONTROL e menor que] | Limites de segmentos subsequentes. |
+| [!UICONTROL Maior que ou igual a] | O limite inferior do segmento da última dimensão. |
+| [!UICONTROL Adicionar bloco] | Permite adicionar outro intervalo à classificação de dimensão numérica. Você pode adicionar até 20 segmentos em uma única dimensão. |
