@@ -1,9 +1,9 @@
 ---
 description: O Criador de métricas calculadas oferece uma tela para arrastar e soltar Dimension, Métricas, Filtros e Funções para criar métricas personalizadas com base em lógicas de hierarquia de contêiner, regras e operadores. Essa ferramenta de desenvolvimento integrado permite criar e salvar métricas calculadas simples ou métricas calculadas avançadas complexas.
 title: Criar métricas
-source-git-commit: 92d9c3bd7478af5fbd4aca20fd814e2c9f2d6ef4
+source-git-commit: a747a7e7def6f55fd350406125581e631af9e208
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '930'
 ht-degree: 73%
 
 ---
@@ -38,6 +38,7 @@ Há várias maneiras de acessar o Criador de métricas calculadas:
 | Definição | É aqui que você arrasta métricas/métricas calculadas, filtros e/ou funções para criar a métrica calculada. Se você arrastar uma métrica calculada, ela expandirá automaticamente sua definição de métrica. Você pode aninhar definições em contêineres. Contudo, diferentemente dos contêineres de segmentos, esses contêineres funcionam como uma expressão matemática e determinam a ordem das operações. |
 | Operador | [!UICONTROL Dividido por] é o operador padrão, além dos operadores +, - e x. |
 | Visualização | Fornece uma leitura rápida sobre possíveis erros. A visualização abrange os últimos 90 dias. Esta é uma maneira de medir, ao menos de maneira inicial, se você selecionou os componentes certos para a sua métrica. Um resultado inesperado significa que você precisa analisar a definição da métrica novamente. |
+| Compatibilidade do produto | A compatibilidade do produto mostra se a métrica é compatível com os Dados totalmente processados. |
 | Adicionar | Para todos os tipos de métricas calculadas, é possível adicionar contêineres e números estáticos à definição. Para métricas calculadas avançadas, também é possível adicionar filtros e funções.<ul><li>Os contêineres funcionam como uma expressão matemática e determinam a ordem das operações. Todo o conteúdo do contêiner será processado antes da próxima operação.</li><li>Arrastar um segmento para um contêiner segmenta todo o conteúdo do mesmo. (Somente métricas calculadas avançadas)</li><li>Você pode empilhar vários filtros em um contêiner.</li></ul> |
 | Ícone de engrenagem (Tipo de métrica,  Atribuição) | Selecionar o ícone de engrenagem ao lado de uma métrica permite especificar o tipo de métrica e os modelos de atribuição. |
 | + Novo | Permite criar um novo componente, como um novo filtro (que leva você ao Construtor de filtros .) |
