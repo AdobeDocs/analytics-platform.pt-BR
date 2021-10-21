@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 0fd60f5923a010754a4ccad343934acfa30f358a
+source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 93%
 
 ---
 
@@ -159,8 +159,21 @@ ht-degree: 0%
       + [Operadores](components/filters/operators.md)
    + Métricas calculadas {#cja-calcmetrics}
       + [Visão geral das métricas calculadas](components/calc-metrics/calc-metr-overview.md)
-      + [Criar uma métrica calculada](components/calc-metrics/create.md)
-      + [Gerenciar métricas calculadas](components/calc-metrics/manage.md)
+      + Fluxo de trabalho de Métricas calculadas {#cm-workflow}
+         + [Fluxo de trabalho das métricas calculadas](components/calc-metrics/cm-workflow/cm-workflow.md)
+         + [Localizar métricas](components/calc-metrics/cm-workflow/cm-finding.md)
+         + [Criar métricas](components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Atribuição e tipo de métrica](components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
+         + [Criar uma métrica simples de &quot;Exibições de página por visita&quot;](components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Métricas filtradas](components/calc-metrics/cm-workflow/metrics-with-segments.md)
+         + [Empilhar e substituir segmentos](components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [Métricas filtradas e ponderadas](components/calc-metrics/cm-workflow/cm-weighted-metric.md)
+         + [Usar funções](components/calc-metrics/cm-workflow/cm-using-functions.md)
+         + [Métrica de participação](components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Marcar métricas calculadas](components/calc-metrics/cm-workflow/cm-tagging.md)
+         + [Aprovar métricas calculadas](components/calc-metrics/cm-workflow/cm-approving.md)
+         + [Compartilhar métricas calculadas](components/calc-metrics/cm-workflow/cm-sharing.md)
+         + [Gerenciador de métricas calculadas](components/calc-metrics/cm-workflow/cm-manager.md)
       + [Funções básicas](components/calc-metrics/cm-functions.md)
       + [Funções avançadas](components/calc-metrics/cm-adv-functions.md)
    + Intervalos de data {#cja-date-ranges}
