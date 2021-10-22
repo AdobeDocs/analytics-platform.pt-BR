@@ -3,10 +3,10 @@ title: Gerenciar conexões
 description: Descreve como gerenciar conexões com conjuntos de dados da Experience Platform no Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: a8e1913fb22414610214f5c0a03f6ef7f3b4f8f0
+source-git-commit: fa87337c10a1621142137b427c1986fafc70d9f7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1689'
+ht-degree: 93%
 
 ---
 
@@ -109,25 +109,25 @@ Veja as explicações sobre widgets e configurações:
 | [!UICONTROL Criar visualização de dados] | Crie uma nova visualização de dados com base nesta conexão. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
 | [!UICONTROL Nome da conexão] | Exibe o nome amigável da conexão. |
 | [!UICONTROL Descrição da conexão] | Exibe uma descrição mais detalhada que descreve idealmente a finalidade dessa conexão. |
-| [!UICONTROL ID da pessoa] | Exibe uma identidade que foi definida no esquema do conjunto de dados na Experience Platform. Esta é a [!UICONTROL ID de pessoa] que você escolheu durante a criação da conexão. Se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, isso será refletido nos relatórios. Para unir de fato os conjuntos de dados, é necessário usar a mesma [!UICONTROL ID de pessoa]. |
 | [!UICONTROL Sandbox] | A [sandbox da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) da qual essa conexão obtém seus conjuntos de dados. Essa sandbox foi selecionada quando você criou a conexão pela primeira vez. Ela não pode ser alterada. |
 | [!UICONTROL ID da conexão] | Essa ID é gerada pelo sistema na Adobe Experience Platform. |
-| [!UICONTROL ID organizacional IMS] | A [ID de organização](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR) associada à empresa provisionada pela Experience Cloud. Anteriormente chamada de “empresa de logon”. |
 | [!UICONTROL Visualizações de dados usando conexão] | Lista todas as visualizações de dados que usam essa conexão. |
-| [!UICONTROL Importar novos dados] | Indica se novos lotes de dados devem ou não ser adicionados aos dados históricos (preenchimento retroativo). |
+| [!UICONTROL Importar novos dados] | (Ligado/desligado) Indica se novos lotes de dados devem ou não ser adicionados aos dados históricos (preenchimento retroativo). |
+| [!UICONTROL Dados de preenchimento retroativo] | Os dados de preenchimento retroativo (históricos) são rastreados em três estados: [!UICONTROL Na fila], [!UICONTROL Em andamento] (com porcentagem de progresso indicada) e [!UICONTROL Concluído]. |
+| [!UICONTROL Criado por] | Nome da pessoa que cria a conexão. |
+| [!UICONTROL Última modificação] | Data e hora da última alteração na conexão. |
+| [!UICONTROL Modificado pela última vez por] | Pessoa que modificou a conexão pela última vez. |
 | **Painel direito no nível do conjunto de dados** |  |
-| [!UICONTROL Descrição de conjunto de dados] | Descreve os parâmetros de cada conjunto de dados nesta conexão. |
+| [!UICONTROL ID da pessoa] | Exibe uma identidade que foi definida no esquema do conjunto de dados na Experience Platform. Esta é a ID de pessoa que você escolheu durante a criação da conexão. Se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, isso será refletido nos relatórios. Para realmente unir conjuntos de dados, você precisa usar a mesma ID de pessoa em todos os conjuntos de dados. |
 | [!UICONTROL Registros disponíveis] | Representa o número total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado no calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. (A exceção é que, quando você criar uma conexão totalmente nova, haverá [latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#3.-obtenção-de-dados-no-customer-journey-analytics). |
 | [!UICONTROL Registros adicionados] | Quantas linhas foram adicionadas no período selecionado. **Observação**: Os dados de **[!UICONTROL Registros adicionados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
-| [!UICONTROL Registros ignorados] | Quantas linhas foram ignoradas durante a assimilação no período selecionado. **Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | [!UICONTROL Registros excluídos] | Quantos registros foram excluídos durante o período de tempo selecionado. **Observação**: Os dados de **[!UICONTROL Registros excluídos]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
-| [!UICONTROL Erros de registros ignorados] | O motivo pelo qual os registros foram ignorados é indicado aqui. Os motivos podem incluir: carimbos de data e hora ausentes, ID de pessoa ausente, etc. |
-| [!UICONTROL Lotes assimilados] | Quantos lotes de dados foram adicionados a esse conjunto de dados. |
+| [!UICONTROL Lotes adicionados] | Quantos lotes de dados foram adicionados a esse conjunto de dados. |
+| [!UICONTROL Registros ignorados] | Quantas linhas foram ignoradas durante a assimilação no período selecionado. **Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | [!UICONTROL Última adição] | Quando o último lote foi adicionado. |
 | [!UICONTROL Tipo de conjunto de dados] | [!UICONTROL Evento], [!UICONTROL Consulta] ou [!UICONTROL Perfil]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
 | [!UICONTROL Esquema] | O esquema da Adobe Experience Platform no qual esse conjunto de dados se baseia. |
 | [!UICONTROL ID do conjunto de dados] | Essa ID é gerada pelo sistema na Adobe Experience Platform. |
-| [!UICONTROL Dados de preenchimento retroativo] | Os dados de preenchimento retroativo (históricos) são rastreados em três estados: [!UICONTROL Na fila], [!UICONTROL Em andamento] (com porcentagem de progresso indicada) e [!UICONTROL Concluído]. |
 
 ### Editar conexão
 
@@ -141,6 +141,6 @@ Permite que administradores editem a conexão. Selecione uma conexão e clique e
 ## Definir janela de rolagem para [!UICONTROL Conexão] retenção de dados
 
 >[!IMPORTANT]
->Entre em contato com o Atendimento ao cliente ou o gerente de conta do Adobe para implementar essa configuração. Ainda não está disponível por meio da interface do usuário do CJA.
+>Entre em contato com o Atendimento ao cliente ou o gerente de conta do Adobe para implementar essa configuração. Ainda não está disponível por meio da interface de usuário do CJA.
 
-Essa configuração permite definir a retenção de dados do CJA como uma janela rolante em meses (3 meses, 6 meses, etc.), em um [!UICONTROL conexão] nível (não em um [!UICONTROL conjunto de dados] nível). A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Nenhuma configuração de retenção de dados existe para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis. O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Ajuda você a ficar abaixo dos limites do contrato e reduz o risco de sobrecarga.
+Essa configuração permite definir a retenção de dados do CJA como uma janela rolante em meses (3 meses, 6 meses, etc.), em um [!UICONTROL conexão] nível (não em um [!UICONTROL conjunto de dados] nível). A retenção de dados é baseada nos carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Nenhuma configuração de retenção de dados existe para perfil ou conjuntos de dados de pesquisa pois não há carimbos de data e hora aplicáveis. O principal benefício é a possibilidade de armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Ajuda você a ficar abaixo dos limites do contrato e reduz o risco de custo excedente.
