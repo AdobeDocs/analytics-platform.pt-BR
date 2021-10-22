@@ -1,18 +1,21 @@
 ---
 description: As configurações de coluna permitem que você configure a formatação da coluna; alguns elementos podem ser condicionais.
 title: Configurações de coluna
-translation-type: ht
-source-git-commit: 8b814137a7c5e2ca96091addb5b4430e2da65329
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
+source-git-commit: 1250d9e39d055fbe9dee9a10d74dac3f3f7661bb
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 98%
 
 ---
-
 
 # [!UICONTROL Configurações de coluna]
 
 As [!UICONTROL Configurações de coluna] permitem que você configure a formatação da coluna; alguns elementos podem ser condicionais.
+
+Veja um vídeo sobre as configurações de linha e coluna aqui:
+
+>[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
 ## Editar [!UICONTROL Configurações de coluna] {#edit-column-settings}
 

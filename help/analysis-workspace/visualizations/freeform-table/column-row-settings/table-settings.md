@@ -3,10 +3,10 @@ description: As configurações de linha variam de acordo com qual componente fo
 title: Configurações de linha
 uuid: f30c31d5-1fd4-4b93-94c3-ca441099fe2e
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 7abd4d08f02597aed1af27970b8497898a553a10
+source-git-commit: 1250d9e39d055fbe9dee9a10d74dac3f3f7661bb
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 82%
+source-wordcount: '472'
+ht-degree: 81%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 82%
 >[!NOTE]
 >
 >Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
+
+Veja um vídeo sobre as configurações de linha e coluna aqui:
+
+>[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
 As configurações de linha variam de acordo com qual componente foi arrastado para a tabela. Para acessar as configurações da linha da tabela, clique no botão [!UICONTROL Configurações] ícone ao lado de uma dimensão, filtro, métrica, período de tempo ou um detalhamento em cada uma delas:
 
