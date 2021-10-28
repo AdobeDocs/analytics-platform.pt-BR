@@ -2,10 +2,10 @@
 title: Como definir as preferências do usuário no Analysis Workspace
 description: É possível definir preferências gerais e de projeto para usuários.
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-source-git-commit: 836a99c03671b4145890c8b37f5123a841a85543
-workflow-type: ht
-source-wordcount: '188'
-ht-degree: 100%
+source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 82%
 
 ---
 
@@ -38,3 +38,14 @@ As preferências de projeto se aplicam a novos projetos e novos painéis criados
 |  | [Tipo de painel](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/panels.html?lang=pt-BR) | <ul><li>Forma livre (padrão)</li><li>Em branco</li><li>Insights rápidos</li></ul> |
 |  | Formato de número | <ul><li>1.000,00 (padrão)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | Separador CSV | <ul><li>Vírgula (padrão)</li><li>Ponto e vírgula</li><li>Dois-pontos</li><li>Estágio</li><li>Ponto</li><li>Espaço</li><li>Tabulação</li></ul> |
+
+## [!UICONTROL Tema escuro]
+
+Se preferir ter um fundo escuro para a interface do usuário do Customer Journey Analytics, você pode alternar para [!UICONTROL Tema escuro].
+
+1. Clique no ícone Experience Cloud user na parte superior direita.
+
+   ![tema escuro](assets/dark-theme.png)
+
+1. Mova o **[!UICONTROL Tema escuro]** alterne para a direita.
+
