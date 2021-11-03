@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 source-git-commit: fa87337c10a1621142137b427c1986fafc70d9f7
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -58,7 +58,7 @@ Somente administradores têm permissão para excluir uma conexão. Essa ação n
 Quando você excluir uma conexão no [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que:
 
 * As exibições de dados criadas com base na conexão excluída deixarão de funcionar.
-* Da mesma forma, qualquer projeto do Workspace que dependa de visualizações de dados na conexão excluída deixará de funcionar.
+* Da mesma forma, qualquer projeto do Espaço de trabalho que dependa de visualizações de dados na conexão excluída deixará de funcionar.
 
 [Saiba mais](/help/getting-started/cja-deletion.md) sobre as implicações da exclusão.
 
@@ -138,9 +138,9 @@ Permite que administradores editem a conexão. Selecione uma conexão e clique e
 * Atualize o(s) conjunto(s) de dados.
 * Remova o(s) conjunto(s) de dados das conexões.
 
-## Definir janela de rolagem para [!UICONTROL Conexão] retenção de dados
+## Definir janela contínua para [!UICONTROL retenção de dados] de conexão
 
 >[!IMPORTANT]
->Entre em contato com o Atendimento ao cliente ou o gerente de conta do Adobe para implementar essa configuração. Ainda não está disponível por meio da interface de usuário do CJA.
+>Entre em contato com o Atendimento ao cliente ou com o gerente de conta da Adobe para implementar essa configuração. Ainda não está disponível por meio da interface do CJA.
 
-Essa configuração permite definir a retenção de dados do CJA como uma janela rolante em meses (3 meses, 6 meses, etc.), em um [!UICONTROL conexão] nível (não em um [!UICONTROL conjunto de dados] nível). A retenção de dados é baseada nos carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Nenhuma configuração de retenção de dados existe para perfil ou conjuntos de dados de pesquisa pois não há carimbos de data e hora aplicáveis. O principal benefício é a possibilidade de armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Ajuda você a ficar abaixo dos limites do contrato e reduz o risco de custo excedente.
+Essa configuração permite definir a retenção de dados do CJA como uma janela contínua em meses (3 meses, 6 meses etc.), em um [!UICONTROL nível] de conexão (não em um [!UICONTROL nível de] conjunto de dados). A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis. O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
