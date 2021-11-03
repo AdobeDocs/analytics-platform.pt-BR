@@ -5,7 +5,7 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
 source-git-commit: 1c19c8cb9cad7b4b7938915d04396cc4646a1f32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Salvar projetos
 
-Para salvar as alterações em um projeto, acesse o menu **[!UICONTROL Projeto]** do Workspace. O Workspace também salva projetos automaticamente em certos casos.
+Para salvar as alterações em um projeto, acesse o menu **[!UICONTROL Projeto]** do Espaço de trabalho. O Espaço de trabalho também salva projetos automaticamente em certos casos.
 
 ## Salvar opções do projeto {#Save}
 
@@ -34,7 +34,7 @@ Os projetos existentes, isto é, os que foram salvos pelo menos uma vez antes, s
 
 Há alguns cenários que podem levá-lo a não salvar as alterações em um projeto, resultando em diferentes ações disponíveis.
 
-### Abrir outro projeto do Workspace
+### Abrir outro projeto do Espaço de trabalho
 
 A Adobe fornece a opção de salvar antes de sair da página. Após sair de um projeto existente, a cópia local salva automaticamente é excluída.
 
@@ -48,7 +48,7 @@ O navegador avisa que as alterações não salvas serão perdidas. Você pode op
 
 ### Falha do navegador ou tempo limite da sessão
 
-Para projetos **existentes**, após retornar ao Workspace, você verá um modal **Recuperação de projeto**. Selecionar “Sim” restaurará o projeto da cópia local salva automaticamente. “Não” exclui a cópia local salva automaticamente e abre a última versão salva pelo usuário do projeto.
+Para projetos **existentes**, após retornar ao Espaço de trabalho, você verá um modal **Recuperação de projeto**. Selecionar “Sim” restaurará o projeto da cópia local salva automaticamente. “Não” exclui a cópia local salva automaticamente e abre a última versão salva pelo usuário do projeto.
 
 ![](assets/project-recovery.png)
 
