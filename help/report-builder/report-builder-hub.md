@@ -1,22 +1,22 @@
 ---
-title: O que é o Hub Report Builder no Customer Journey Analytics
-description: Descreve os componentes do Report Builder Hub
+title: O que é o Hub do Report Builder no Customer Journey Analytics
+description: Descreve os componentes do Hub do Report Builder
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
-source-git-commit: bb53440ac1019b639b5c4dd1e0ecd41fc1150ec3
-workflow-type: tm+mt
+exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
+source-git-commit: 4afd011561e6351e7d4da2dc6a2263ca835f0b08
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
+# O Hub do Report Builder
 
-# Hub Report Builder
+Use o hub do Report Builder para criar, atualizar ou excluir blocos de dados.
 
-Use o hub Report Builder para criar, atualizar ou excluir blocos de dados.
-
-O hub Report Builder contém os painéis COMANDOS e EDIT RÁPIDO.
+O hub do Report Builder contém os painéis COMANDOS e EDIÇÃO RÁPIDA.
 
 ![](./assets/image13.png)
 
@@ -31,11 +31,11 @@ Use o painel COMANDOS para acessar comandos compatíveis com as células selecio
 | Comandos exibidos | Disponível quando... | Propósito |
 |------|------------------|--------|
 | Criar bloco de dados | Uma ou mais células são selecionadas na pasta de trabalho. | Usado para criar um bloco de dados |
-| Editar bloco de dados | O intervalo de células ou células selecionado faz parte de apenas um bloco de dados. | Usado para editar um bloco de dados |
+| Editar bloco de dados | O intervalo de célula ou células selecionado faz parte de apenas um bloco de dados. | Usado para editar um bloco de dados |
 | Atualizar bloco de dados | A seleção contém pelo menos um bloco de dados. O comando atualizará somente os blocos de dados na seleção. | Usado para atualizar um ou mais blocos de dados |
 | Atualizar todos os blocos de dados | A pasta de trabalho contém um ou mais blocos de dados. | Usado para atualizar TODOS os blocos de dados na pasta de trabalho |
 | Copiar bloco de dados | A célula ou o intervalo de células selecionado faz parte de um ou mais blocos de dados. | Usado para copiar um bloco de dados |
-| Excluir bloco de dados | O intervalo de células ou células selecionado faz parte de apenas um bloco de dados. | Usado para excluir um bloco de dados |
+| Excluir bloco de dados | O intervalo de célula ou células selecionado faz parte de apenas um bloco de dados. | Usado para excluir um bloco de dados |
 
 ## Painel EDIÇÃO RÁPIDA
 
@@ -45,11 +45,11 @@ Ao selecionar um ou mais blocos de dados em uma planilha, o Report Builder exibe
 
 As alterações feitas usando as seções Edição rápida se aplicam a todos os blocos de dados selecionados.
 
-### Exibições de dados
+### Visualizações de dados
 
-Os blocos de dados extraem dados de uma visualização selecionada. Se vários blocos de dados forem selecionados em uma planilha e não extrair dados da mesma visualização de dados, o link **Data views** exibirá *Multiple*.
+Os blocos de dados extraem dados de uma visualização selecionada. Se vários blocos de dados forem selecionados em uma planilha, e caso eles não extraiam dados da mesma visualização, o link de **Visualizações de dados** exibe *Vários*.
 
-Quando você altera a visualização de dados, todos os blocos de dados na seleção adotam a nova visualização de dados. Os componentes no bloco de dados são correspondidos à nova visualização de dados com base na ID, por exemplo, correspondendo a ```evars```). Se um componente não for encontrado em um bloco de dados, uma mensagem de aviso será exibida e o componente será removido do bloco de dados.
+Quando você altera a visualização de dados, todos os blocos de dados na seleção adotam a nova visualização de dados. Os componentes no bloco de dados são correspondidos à nova visualização de dados com base na ID, por exemplo, correspondendo ```evars```). Se um componente não for encontrado em um bloco de dados, uma mensagem de aviso será exibida e o componente será removido do bloco de dados.
 
 Para alterar a visualização de dados, selecione uma nova visualização de dados no menu suspenso.
 
@@ -57,8 +57,8 @@ Para alterar a visualização de dados, selecione uma nova visualização de dad
 
 ### Intervalo de datas
 
-**Intervalos de datas** mostra o intervalo de datas dos blocos de dados selecionados. Se vários blocos de dados forem selecionados com vários intervalos de datas, o link **Data range** exibirá *Multiple*.
+**Intervalo de datas** mostra o intervalo de datas dos blocos de dados selecionados. Se vários blocos de dados forem selecionados com vários intervalos de datas, o link de **Intervalo de datas** exibe *Vários*.
 
 ### Filtros
 
-O link **Filters** exibe uma lista de resumo dos filtros usados pelos blocos de dados selecionados. Se vários blocos de dados forem selecionados com vários filtros aplicados, o link **Filters** exibirá *Multiple*.
+O link dos **Filtros** exibe uma lista de resumo dos filtros usados pelos blocos de dados selecionados. Se vários blocos de dados forem selecionados com vários filtros aplicados, o link de **Filtros** exibe *Vários*.
