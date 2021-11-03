@@ -1,36 +1,36 @@
 ---
-description: Como configurar usuários para usar o aplicativo móvel do Analytics
+description: Como configurar usuários para usar o aplicativo para dispositivos móveis do Analytics
 title: Configurar executivos para usar painéis
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 source-git-commit: a9e1242a5038c57d8fd687df1ceff84a365cf141
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
 # Configurar usuários executivos para usar painéis
 
-Em alguns casos, os usuários executivos podem precisar de assistência adicional para acessar e usar o aplicativo. Esta seção fornece informações para ajudar os curadores a fornecer essa assistência.
+Em alguns casos, os usuários executivos podem precisar de assistência adicional para acessar e usar o aplicativo. Esta seção fornece informações para ajudar curadores a prestarem essa assistência.
 
 ## Garantir que os usuários do aplicativo tenham acesso ao Adobe Analytics
 
-1. Configure novos usuários no [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=en).
+1. Configure novos usuários no [Admin Console da Experience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=pt-BR).
 
-1. Para compartilhar scorecards, você deve conceder permissões aos usuários do aplicativo para acessar componentes do scorecard, como o Analysis Workspace, as visualizações de dados nas quais os scorecards são baseados, bem como filtros, métricas e dimensões.
+1. Para compartilhar cartões de pontuação, você deve conceder permissões aos usuários do aplicativo para que acessem componentes do cartão de pontuação, como o Analysis Workspace, as visualizações de dados nas quais esses cartões são baseados, bem como filtros, métricas e dimensões.
 
 ## Pré-requisitos do sistema dos usuários do aplicativo
 
-Para garantir que os usuários executivos tenham acesso aos seus scorecards no aplicativo, verifique se:
+Para garantir que os usuários executivos tenham acesso aos seus cartões de pontuação no aplicativo, verifique se:
 
 * Os requisitos mínimos do sistema operacional móvel dos dispositivos são iOS versão 10 ou superior ou Android versão 4.4 (KitKat) ou superior
 * Eles possuem um logon válido no Adobe Analytics.
-* Você criou corretamente os scorecards para dispositivos móveis para eles e compartilhou esses scorecards com eles.
-* Eles têm acesso aos Componentes incluídos no scorecard. Observe que é possível selecionar uma opção ao compartilhar os scorecards para **[!UICONTROL Compartilhar componentes inseridos]**.
+* Você criou corretamente os cartões de pontuação para dispositivos móveis para eles e compartilhou esses cartões de pontuação com eles.
+* Eles têm acesso aos Componentes incluídos no cartão de pontuação. Observe que você pode selecionar uma opção ao compartilhar seus cartões de pontuação para **[!UICONTROL Compartilhar componentes integrados]**.
 
-## Aplicativos de download e instalação dos executivos de ajuda
+## Ajudar os executivos a baixar e instalar o aplicativo
 
 **Para usuários executivos no iOS:**
 
@@ -48,26 +48,26 @@ Após o download e a instalação, os usuários executivos podem fazer logon no 
 
 ![Tela de boas-vindas do aplicativo](assets/welcome.png)
 
-## Ajude os executivos a acessar seu scorecard
+## Ajudar os executivos a acessar seu cartão de pontuação
 
 1. Faça com que os usuários executivos façam logon no aplicativo.
 
    A tela **[!UICONTROL Escolher uma empresa]** é exibida. Essa tela lista as empresas de logon às quais o usuário executivo pertence.
 
-1. Faça com que toque no nome da empresa de logon ou da Experience Cloud Org que se aplica ao scorecard compartilhado.
+1. Faça com que eles toquem no nome da empresa de logon ou na Experience Cloud Org que se aplica ao cartão de pontuação que você compartilhou.
 
-   A lista Scorecard mostra todos os scorecards que foram compartilhados com o executivo na empresa de logon.
+   A lista do cartão de pontuação mostra todos os cartões de pontuação que foram compartilhados com o executivo na empresa de logon.
 
-1. Solicite que eles classifiquem essa lista por **[!UICONTROL Modificado mais recentemente]**, se aplicável.
+1. Faça com que eles classifiquem essa lista por **[!UICONTROL Modificado mais recentemente]**, se aplicável.
 
-1. Faça com que toque no nome do Scorecard para exibi-lo.
+1. Faça com que eles toquem no nome do cartão de pontuação para visualizá-lo.
 
    ![Escolha uma empresa](assets/accesscard.png)
 
 
-### Explicar a interface do usuário do scorecard
+### Explicar a interface do cartão de pontuação
 
-Explique ao usuário executivo como os blocos são exibidos nos scorecards que você compartilha.
+Explique ao usuário executivo como os blocos são exibidos nos cartões de pontuação que você compartilha.
 
 ![Explicar blocos](assets/newexplain.png)
 
@@ -107,7 +107,7 @@ Se o usuário executivo fizer logon e vir uma mensagem dizendo que nada foi comp
 
 ![Nada compartilhado](assets/nothing.png)
 
-* O usuário executivo pode ter selecionado a instância incorreta do Analytics, ou
-* O scorecard pode não ter sido compartilhado com o usuário executivo.
+* O usuário executivo pode ter selecionado a instância incorreta do Analytics ou
+* O cartão de pontuação pode não ter sido compartilhado com o usuário executivo.
 
-Verifique se o usuário executivo pode fazer logon na instância correta do Adobe Analytics e se o scorecard foi compartilhado.
+Verifique se o usuário executivo pode fazer logon na instância correta do Adobe Analytics e se o cartão de pontuação foi compartilhado.
