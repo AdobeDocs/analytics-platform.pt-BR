@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
 source-git-commit: 35b76b1c2642d5e8f15f71fed9c75ab37491a901
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1230'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 As informações a seguir fornecem aos usuários executivos informações sobre as práticas recomendadas para usar e exibir painéis do Adobe Analytics. Para ver um vídeo demonstrando essas informações, consulte [painéis do Adobe Analytics na experiência no aplicativo](https://youtu.be/QXqQ_PkArbA).
 
-Este guia tem como objetivo ajudar usuários executivos a ler e interpretar scorecards nos painéis do Analytics. O aplicativo permite que os usuários executivos visualizem uma ampla renderização de importantes dados resumidos de maneira rápida e fácil em seus próprios dispositivos móveis.
+Este manual tem como objetivo ajudar usuários executivos a ler e interpretar cartões de pontuação nos painéis do Analytics. O aplicativo permite que os usuários executivos visualizem uma ampla renderização de importantes dados resumidos de maneira rápida e fácil em seus próprios dispositivos móveis.
 
 ## Configure os painéis no seu dispositivo
 
@@ -56,7 +56,7 @@ Para usar painéis:
 
    ![Sequência de logon](assets/signseq.png)
 
-1. Escolha uma empresa. After you sign in to dashboards, the **[!UICONTROL Choose a company]** screen appears. Esta tela lista as empresas de logon às quais você pertence. Toque no nome da empresa associado ao Scorecard compartilhado com você.
+1. Escolha uma empresa. Efetuado o logon nos painéis, a tela **[!UICONTROL Escolha uma empresa]** é exibida. Esta tela lista as empresas de logon às quais você pertence. Toque no nome da empresa associado ao Scorecard compartilhado com você.
 
 1. A lista Scorecard mostra todos os Scorecards que foram compartilhados com você. Toque no Scorecard que deseja exibir.
 
