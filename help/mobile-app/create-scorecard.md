@@ -1,56 +1,56 @@
 ---
-description: Como criar um scorecard dos painéis do Adobe Analytics
-title: Criar um scorecard
+description: Como criar um cartão de pontuação dos painéis do Adobe Analytics
+title: Criar um cartão de pontuação
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 source-git-commit: 9a7fa68bd7b4b9a7164a80691ddfb7aedaf8e3e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1378'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
-# Criar um scorecard
+# Criar um cartão de pontuação
 
-As informações a seguir instruem os curadores de dados do Adobe Analytics sobre como configurar e apresentar painéis para usuários executivos. Para começar, você pode exibir o vídeo Construtor de scorecard dos painéis do Adobe Analytics :
+As informações a seguir instruem os curadores de dados do Adobe Analytics sobre como configurar e apresentar painéis para usuários executivos. Para começar, você pode exibir o vídeo Construtor de cartão de pontuação dos painéis do Adobe Analytics:
 
 >[!VIDEO](https://video.tv.adobe.com/v/34544)
 
 >[!NOTE]
->As capturas de tela do Scorecard para esta página foram tiradas da interface do usuário do Adobe Analytics, não do CJA. As interfaces de usuário são quase idênticas.
+>As capturas de tela dos cartões de pontuação para esta página foram tiradas da interface do Adobe Analytics, não do CJA. As interfaces são quase idênticas.
 
-Um scorecard do Adobe Analytics exibe as principais visualizações de dados para usuários executivos em um layout lado a lado, como mostrado abaixo:
+Um cartão de pontuação do Adobe Analytics exibe as principais visualizações de dados para usuários executivos em um layout lado a lado, como mostrado abaixo:
 
 ![Exemplo de scorecard](assets/intro_scorecard.png)
 
-Como curador desse scorecard, você pode usar o Construtor de scorecards para configurar quais blocos aparecem no scorecard para o consumidor executivo. Você também configura como as exibições detalhadas ou os detalhamentos podem ser ajustados quando os blocos forem tocados. A interface do Construtor de scorecards é mostrada abaixo:
+Como curador deste cartão de pontuação, você pode usar o Construtor de cartões de pontuação para configurar quais blocos são exibidos no cartão de pontuação para o consumidor executivo. Você também configura como as exibições detalhadas ou os detalhamentos podem ser ajustados quando os blocos forem tocados. A interface do Construtor de scorecards é mostrada abaixo:
 
 ![Construtor de scorecards](assets/scorecard_builder.png)
 
-Para criar o Scorecard, é necessário fazer o seguinte:
+Para criar o cartão de pontuação, é necessário fazer o seguinte:
 
 1. Acesse o modelo de [!UICONTROL Scorecard para dispositivos móveis em branco].
-2. Configure o scorecard com dados e salve.
+2. Configure o cartão de pontuação com os dados e salve-o.
 
 ## Acesse o modelo de [!UICONTROL Scorecard para dispositivos móveis em branco]
 
-Você pode acessar o modelo [!UICONTROL Scorecard para dispositivos móveis em branco] criando um novo projeto ou no menu Ferramentas .
+Você pode acessar o modelo [!UICONTROL Cartão de pontuação para dispositivos móveis em branco] criando um novo projeto ou no menu Ferramentas.
 
 ### Criar um novo projeto
 
-1. Abra o Adobe Analytics e clique na guia **[!UICONTROL Workspace]**.
-1. Clique em **[!UICONTROL Criar projeto]** e selecione o modelo de projeto **[!UICONTROL Scorecard para dispositivos móveis em branco]**.
+1. Abra o Adobe Analytics e clique na guia **[!UICONTROL Espaço de trabalho]**.
+1. Clique em **[!UICONTROL Criar projeto]** e selecione o modelo de projeto **[!UICONTROL Cartão de pontuação para dispositivos móveis em branco]**.
 1. Clique em **[!UICONTROL Criar]**.
 
 ![Modelo de Scorecard](assets/new_template.png)
 
 ### Menu Ferramentas
 
-1. No menu **[!UICONTROL Ferramentas]**, selecione **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**.
-1. Na tela subsequente, clique em **[!UICONTROL Create new scorecard]**.
+1. No menu **[!UICONTROL Ferramentas]**, selecione **[!UICONTROL Painéis do Analytics (Aplicativo para dispositivos móveis)]**.
+1. Na tela seguinte, clique em **[!UICONTROL Criar novo cartão de pontuação]**.
 
-## Configure o scorecard com dados e salve
+## Configure o cartão de pontuação com os dados e salve-o
 
 Para implementar o modelo de Scorecard:
 
@@ -69,7 +69,7 @@ Para implementar o modelo de Scorecard:
 
 Para adicionar uma dimensão relacionada a uma métrica, arraste uma dimensão do painel esquerdo e solte-a em um bloco.
 
-Por exemplo, é possível adicionar dimensões apropriadas (como **[!DNL Marketing Channel]**, neste exemplo) à métrica **[!UICONTROL Visitantes únicos]**, arrastando-as e soltando-as no bloco. Os detalhamentos de Dimension são exibidos na seção [!UICONTROL Drill Ins] (detalhamento) do bloco específico **[!UICONTROL Properties]**. É possível adicionar várias dimensões a cada bloco.
+Por exemplo, é possível adicionar dimensões apropriadas (como **[!DNL Marketing Channel]**, neste exemplo) à métrica **[!UICONTROL Visitantes únicos]**, arrastando-as e soltando-as no bloco. Os detalhamentos de dimensão são exibidos na seção [!UICONTROL Detalhes] (detalhamento) do bloco específico **[!UICONTROL Propriedades]**. É possível adicionar várias dimensões a cada bloco.
 
 ![Adicionar dimensões](assets/layer_dimensions.png)
 
@@ -107,11 +107,11 @@ Você será direcionado ao construtor de intervalo de datas, em que é possível
 
 ## Aplicar visualizações
 
-Os painéis do Analytics oferecem quatro visualizações que proporcionam um excelente insight sobre itens de dimensão e métricas. Altere para uma visualização diferente alterando o [!UICONTROL tipo de gráfico] de [!UICONTROL Propriedades] de um bloco. Basta selecionar o bloco direito e alterar o tipo de gráfico.
+Os painéis do Analytics oferecem quatro visualizações que proporcionam um excelente insight sobre itens de dimensão e métricas. Mude para um visualização diferente alterando o [!UICONTROL tipo de gráfico] das [!UICONTROL Propriedades] de um bloco. Basta selecionar o bloco correto e alterar o tipo de gráfico.
 
-![Propriedades do mosaico](assets/properties.png)
+![Propriedades do bloco](assets/properties.png)
 
-Ou clique no ícone [!UICONTROL Visualizações] no painel à esquerda e arraste e solte a visualização à direita no bloco :
+Ou clique no ícone [!UICONTROL Visualizações] no painel à esquerda e arraste e solte a visualização correta sobre o bloco:
 
 ![Visualizações](assets/vizs.png)
 
@@ -123,7 +123,7 @@ Use a visualização Número do resumo para realçar um grande número que é im
 
 ### [!UICONTROL Rosca]
 
-Semelhante ao gráfico de pizza, essa visualização mostra os dados como partes ou segmentos de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. Por exemplo, digamos que você queira ver qual plataforma de anúncio contribuiu para o número total de visitantes únicos:
+Semelhante ao gráfico de pizza, essa visualização mostra os dados como partes ou segmentos de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. Por exemplo, digamos que você queira ver qual plataforma de publicidade contribuiu para o número total de visitantes únicos:
 
 ![Visualização de rosca](assets/donut-viz.png)
 
@@ -135,36 +135,36 @@ A visualização de linha representa as métricas que usam uma linha para mostra
 
 ### [!UICONTROL Barra horizontal]
 
-Esta visualização mostra barras horizontais que representam vários valores de uma ou mais métricas. Por exemplo, para ver facilmente os principais produtos, use a [!UICONTROL Barra horizontal] para visualizar de preferência.
+Esta visualização mostra barras horizontais que representam vários valores de uma ou mais métricas. Por exemplo, para ver facilmente seus principais produtos, use a [!UICONTROL Barra horizontal] como sua visualização preferida.
 
 ![barra horizontal](assets/horizontal.png)
 
-### Remover item de dimensão [!UICONTROL Não especificado]
+### Remover item de dimensão [!UICONTROL Não especificado] 
 
-Se quiser remover [!UICONTROL Unspecified] itens de dimensão de seus dados, faça o seguinte:
+Caso queira remover itens de dimensões [!UICONTROL Não especificados] dos seus dados, faça o seguinte:
 
-1. Selecione o mosaico correto.
-1. No painel direito, em **[!UICONTROL Drill ins]**, selecione a seta para a direita ao lado do item de dimensão cujos itens **[!UICONTROL Não especificado]** você deseja remover.
+1. Selecione o bloco correto.
+1. No painel direito, em **[!UICONTROL Drill-ins]**, selecione a seta para a direita ao lado do item de dimensão do qual você deseja remover itens **[!UICONTROL Não especificados]**.
 
    ![não especificado](assets/unspecified.png)
 
-1. Clique no ícone ao lado de **[!UICONTROL Unspecified]** para remover dados não especificados de seus relatórios. (Também é possível remover qualquer outro item de dimensão.)
+1. Clique no ícone ao lado de **[!UICONTROL Não especificado]** para remover dados não especificados de seus relatórios. (Também é possível remover qualquer outro item de dimensão).
 
 ## Exibir e configurar propriedades de blocos
 
-Ao clicar em um bloco no Construtor de scorecards, o painel direito exibe as propriedades e características associadas a esse bloco. Nesse painel, você pode fornecer um novo **[!UICONTROL Título]** para o bloco e, como alternativa, configurá-lo especificando os componentes, em vez de arrastá-los e soltá-los no painel esquerdo.
+Ao clicar em um bloco no Construtor de cartões de pontuação, o painel direito exibe as propriedades e características associadas a esse bloco. Nesse painel, você pode fornecer um novo **[!UICONTROL Título]** para o bloco e, como alternativa, configurá-lo especificando os componentes, em vez de arrastá-los e soltá-los no painel esquerdo.
 
 ![Bloco de propriedades](assets/properties_tile.png)
 
 ## Exibir Drill-ins (detalhamentos)
 
-Quando você clica em blocos, um pop-up dinâmico exibe como a exibição Drill ins (Detalhamento) é exibida para o usuário executivo no aplicativo. É possível detalhar dimensões e itens de dimensão para detalhar seus dados de acordo com suas necessidades específicas. Se nenhuma dimensão tiver sido aplicada ao bloco, a dimensão de detalhamento será a **hora** ou os **dias**, dependendo do intervalo de datas padrão.
+Ao clicar nos blocos, um pop-up dinâmico mostrará como a exibição Detalhamento aparecerá para o usuário executivo no aplicativo. É possível detalhar dimensões e itens de dimensão para esmiuçar seus dados de acordo com suas necessidades específicas. Se nenhuma dimensão tiver sido aplicada ao bloco, a dimensão de detalhamento será a **hora** ou os **dias**, dependendo do intervalo de datas padrão.
 
-Detalhamentos refinam sua análise ao detalhar literalmente as dimensões por outras métricas e dimensões, como neste exemplo de varejo:
+Detalhamentos refinam sua análise ao, literalmente, detalhar dimensões através de outras métricas e dimensões, como neste exemplo de varejo:
 
-* Métrica de Visitantes únicos detalhada por Plataforma de anúncio (AMO ID)
-* Visitas detalhadas por Categoria do produto (varejo)
-* Receita total dividida por Nome do produto
+* Métrica de Visitantes únicos detalhada por Plataforma de publicidade (AMO ID)
+* Visitas detalhadas por Categoria de produto (Varejo)
+* Receita total detalhada por Nome do produto
 
 ![Detalhamento_exibição](assets/break_view.png)
 
@@ -176,13 +176,13 @@ Da mesma forma, para remover um componente aplicado a todo o cartão de pontuaç
 
 ![Remover_componentes](assets/new_remove.png)
 
-## Nomear um scorecard
+## Nomear um cartão de pontuação
 
 Para nomear o Scorecard, clique no namespace no canto superior esquerdo da tela e digite o novo nome.
 
 ![Nomeação_Scorecards](assets/new_name.png)
 
-## Compartilhar um scorecard
+## Compartilhar um cartão de pontuação
 
 Para compartilhar o Scorecard com um usuário executivo:
 
@@ -190,15 +190,15 @@ Para compartilhar o Scorecard com um usuário executivo:
 
 1. No formulário **[!UICONTROL Compartilhar scorecard para dispositivos móveis]**, preencha os campos da seguinte forma:
 
-   * Fornecimento do nome do scorecard
-   * Fornecer uma descrição do scorecard
+   * Fornecer o nome do cartão de pontuação
+   * Fornecer uma descrição do cartão de pontuação
    * Adicionar tags relevantes
-   * Especificação dos recipients para o scorecard
+   * Especificar os recipients do cartão de pontuação
 
 1. Clique em **[!UICONTROL Compartilhar]**.
 
 ![Compartilhar_Scorecards](assets/new_share.png)
 
-Depois de compartilhar um scorecard, os destinatários podem acessá-lo nos painéis do Analytics. Se você fizer alterações subsequentes no scorecard no Construtor de scorecards, elas serão atualizadas automaticamente no scorecard compartilhado. Os usuários executivos verão as alterações depois de atualizar o Scorecard no aplicativo.
+Depois de compartilhar um cartão de pontuação, os recipients podem acessá-lo nos painéis do Analytics. Se você fizer alterações subsequentes no cartão de pontuação usando o Construtor de cartões de pontuação, elas serão atualizadas automaticamente no cartão de pontuação compartilhado. Os usuários executivos verão as alterações depois de atualizar o Scorecard no aplicativo.
 
-Se você atualizar o scorecard adicionando novos componentes, convém compartilhar o scorecard novamente (e marque a opção **[!UICONTROL Share embedded components]** ) para garantir que os usuários executivos tenham acesso a essas alterações.
+Se você atualizar o cartão de pontuação adicionando novos componentes, será possível compartilhar o cartão de pontuação novamente (e marcar a opção **[!UICONTROL Compartilhar componentes integrados]**) para garantir que seus usuários executivos tenham acesso a essas mudanças.
