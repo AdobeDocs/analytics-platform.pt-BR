@@ -3,7 +3,7 @@ title: Gerenciar conexões
 description: Descreve como gerenciar conexões com conjuntos de dados da Experience Platform no Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 4ac2d58cd14df8a6aae5728b4fabd11ec47abbed
+source-git-commit: 61f11ed1d91d7a5da7aabbec1fe961b9b0842450
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 80%
@@ -141,7 +141,7 @@ Veja as explicações sobre widgets e configurações:
 | [!UICONTROL Esquema] | Mostra o esquema Adobe Experience Platform no qual esse conjunto de dados se baseia. |
 | [!UICONTROL ID do conjunto de dados] | Essa ID é gerada pelo sistema na Adobe Experience Platform. |
 
-### Editar conexão
+## Editar conexão
 
 Permite que administradores editem a conexão. Selecione uma conexão e clique em [!UICONTROL Editar conexão] para acessar essa caixa de diálogo. Aqui, você pode fazer o seguinte:
 
