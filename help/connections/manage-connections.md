@@ -3,10 +3,10 @@ title: Gerenciar conexões
 description: Descreve como gerenciar conexões com conjuntos de dados da Experience Platform no Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 6b9a725cf31385576f358c137a1e6ba71cd74f95
+source-git-commit: 236bba2e3ff851f6e7097c4c41a04f1b6221efa0
 workflow-type: tm+mt
-source-wordcount: '1701'
-ht-degree: 92%
+source-wordcount: '1787'
+ht-degree: 87%
 
 ---
 
@@ -94,7 +94,7 @@ Veja as explicações sobre widgets e configurações:
 | Widget de [!UICONTROL Registros de dados de eventos disponíveis] | Representa o número total de linhas de conjunto de dados de evento disponíveis para relatórios, **para toda a conexão**. Essa contagem independe de qualquer configuração de calendário. Ela será alterada se você selecionar um conjunto de dados por meio do seletor de conjunto de dados ou na tabela. (Observe que há uma latência de uma a duas horas para que os dados sejam mostrados no relatório, uma vez adicionados.) |
 | Widget de [!UICONTROL Métricas] | Resume os registros de eventos adicionados/ignorados/excluídos e o número de lotes adicionados, **para o conjunto de dados e o intervalo de datas selecionados**. |
 | Widget de [!UICONTROL Registros adicionados] | Indica quantas linhas foram adicionadas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Atualizado a cada dez minutos. **Observação**: Os dados de **[!UICONTROL Registros adicionados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
-| Widget de [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Os motivos para os registros serem ignorados são: carimbos de data e hora ausentes, ID de pessoa ausente etc. Atualizado a cada dez minutos. **Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
+| Widget de [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Os motivos para ignorar registros incluem: Carimbos de data e hora ausentes, ID de pessoa ausente ou inválido etc. Atualizado a cada dez minutos. **Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa.<p>As IDs de pessoa inválidas (indefinidas, todos os zeros) não podem ser atribuídas a nenhum usuário ou pessoa específica. Eles não podem ser assimilados no sistema e resultam em processos de assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa inválidas, você tem 3 opções:<ul><li>Use a compilação para preencher as IDs de usuário indefinidas ou zero com IDs de usuário válidas.</li> | <li>ID de usuário em branco, que também será ignorada durante a assimilação (preferível a IDs de usuário inválidas ou todas zero).</li><li>Corrija quaisquer IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul> |
 | Widget de [!UICONTROL Registros excluídos] | Indica quantas linhas foram excluídas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Alguém pode ter excluído um conjunto de dados da Experience Platform, por exemplo. Atualizado a cada dez minutos. **Observação**: Os dados de **[!UICONTROL Registros excluídos]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | Caixa de pesquisa de conjunto de dados | Você pode pesquisar pelo ou pela [!UICONTROL ID do conjunto de dados]. |
 | [!UICONTROL Conjuntos de dados] | Exibe os conjuntos de dados que fazem parte da conexão. Você pode clicar no hiperlink para exibir todos os conjuntos de dados na conexão. |
