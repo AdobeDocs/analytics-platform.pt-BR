@@ -2,10 +2,10 @@
 description: Um painel é uma coleção de tabelas e visualizações
 title: Visão geral dos painéis
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 94b086c9eb0b148ebb176a37205030b862ac2678
+source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 60%
+source-wordcount: '851'
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode
 
 ## Tipos de painel
 
-Os seguintes tipos de painel estão disponíveis no Analysis Workspace:
+Os seguintes tipos de painel estão disponíveis no Analysis Workspace para [!UICONTROL Customer Journey Analytics]:
 
 | Nome do painel | Descrição |
 | --- | --- |
@@ -38,7 +38,7 @@ Observação: se um componente de intervalo de datas (roxo) for usado em uma tab
 
 ![](assets/panel-calendar.png)
 
-Você pode aplicar um intervalo de datas de minuto sob as configurações avançadas do calendário do painel. Se você estiver relatando um intervalo de datas que abrange muitos dias, a hora de início se aplica ao primeiro dia e a hora de término se aplica ao último dia do intervalo.
+Você pode aplicar um intervalo de datas de minuto sob as configurações avançadas do calendário do painel. Se você estiver relatando um intervalo de datas que abrange muitos dias, a hora inicial se aplica ao primeiro dia e a hora final se aplica ao último dia do intervalo.
 
 ## Zona suspensa {#dropzone}
 

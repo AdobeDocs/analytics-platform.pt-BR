@@ -3,10 +3,10 @@ title: Gerenciar conexões
 description: Descreve como gerenciar conexões com conjuntos de dados da Experience Platform no Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: fa87337c10a1621142137b427c1986fafc70d9f7
+source-git-commit: 6b9a725cf31385576f358c137a1e6ba71cd74f95
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 96%
+source-wordcount: '1701'
+ht-degree: 92%
 
 ---
 
@@ -114,19 +114,19 @@ Veja as explicações sobre widgets e configurações:
 | [!UICONTROL Visualizações de dados usando conexão] | Lista todas as visualizações de dados que usam essa conexão. |
 | [!UICONTROL Importar novos dados] | (Ligado/desligado) Indica se novos lotes de dados devem ou não ser adicionados aos dados históricos (preenchimento retroativo). |
 | [!UICONTROL Dados de preenchimento retroativo] | Os dados de preenchimento retroativo (históricos) são rastreados em três estados: [!UICONTROL Na fila], [!UICONTROL Em andamento] (com porcentagem de progresso indicada) e [!UICONTROL Concluído]. |
-| [!UICONTROL Criado por] | Nome da pessoa que cria a conexão. |
-| [!UICONTROL Última modificação] | Data e hora da última alteração na conexão. |
-| [!UICONTROL Modificado pela última vez por] | Pessoa que modificou a conexão pela última vez. |
+| [!UICONTROL Criado por] | Mostra o nome da pessoa que cria a conexão. |
+| [!UICONTROL Última modificação] | Mostra a data e a hora da última alteração na conexão. |
+| [!UICONTROL Modificado pela última vez por] | Mostra a pessoa que modificou a conexão pela última vez. |
 | **Painel direito no nível do conjunto de dados** |  |
 | [!UICONTROL ID da pessoa] | Exibe uma identidade que foi definida no esquema do conjunto de dados na Experience Platform. Esta é a ID de pessoa que você escolheu durante a criação da conexão. Se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, isso será refletido nos relatórios. Para realmente unir conjuntos de dados, você precisa usar a mesma ID de pessoa em todos os conjuntos de dados. |
 | [!UICONTROL Registros disponíveis] | Representa o número total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado no calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. (A exceção é que, quando você criar uma conexão totalmente nova, haverá [latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#3.-obtenção-de-dados-no-customer-journey-analytics). |
-| [!UICONTROL Registros adicionados] | Quantas linhas foram adicionadas no período selecionado. **Observação**: Os dados de **[!UICONTROL Registros adicionados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
-| [!UICONTROL Registros excluídos] | Quantos registros foram excluídos durante o período de tempo selecionado. **Observação**: Os dados de **[!UICONTROL Registros excluídos]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
-| [!UICONTROL Lotes adicionados] | Quantos lotes de dados foram adicionados a esse conjunto de dados. |
-| [!UICONTROL Registros ignorados] | Quantas linhas foram ignoradas durante a assimilação no período selecionado. **Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
-| [!UICONTROL Última adição] | Quando o último lote foi adicionado. |
+| [!UICONTROL Registros adicionados] | Indica quantas linhas foram adicionadas no período selecionado. **Observação**: Os dados de **[!UICONTROL Registros adicionados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
+| [!UICONTROL Registros excluídos] | Indica quantos registros foram excluídos durante o período de tempo selecionado. **Observação**: Os dados de **[!UICONTROL Registros excluídos]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
+| [!UICONTROL Lotes adicionados] | Indica quantos lotes de dados foram adicionados a esse conjunto de dados. |
+| [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas durante a assimilação no período de tempo selecionado. **Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
+| [!UICONTROL Última adição] | Indica quando o último lote foi adicionado. |
 | [!UICONTROL Tipo de conjunto de dados] | [!UICONTROL Evento], [!UICONTROL Consulta] ou [!UICONTROL Perfil]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
-| [!UICONTROL Esquema] | O esquema da Adobe Experience Platform no qual esse conjunto de dados se baseia. |
+| [!UICONTROL Esquema] | Mostra o esquema Adobe Experience Platform no qual esse conjunto de dados se baseia. |
 | [!UICONTROL ID do conjunto de dados] | Essa ID é gerada pelo sistema na Adobe Experience Platform. |
 
 ### Editar conexão
