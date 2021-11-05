@@ -3,10 +3,10 @@ title: Gerenciar conexões
 description: Descreve como gerenciar conexões com conjuntos de dados da Experience Platform no Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 3103e02bb49b6e5913c8a71d7ecf436b5ee90d11
+source-git-commit: 4ac2d58cd14df8a6aae5728b4fabd11ec47abbed
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 83%
+source-wordcount: '1942'
+ht-degree: 80%
 
 ---
 
@@ -33,6 +33,8 @@ O Gerenciador de conexões permite:
 * Crie uma visualização de dados a partir de uma conexão.
 
 ![](assets/conn-manager.png)
+
+### Configurações do Gerenciador de Conexões
 
 | Configuração | Descrição |
 | --- | --- |
@@ -87,6 +89,8 @@ Veja as explicações sobre widgets e configurações:
 
 ![](assets/conn-details.png)
 
+### Configurações de detalhes da conexão
+
 | Widget/Configuração | Descrição |
 | --- | --- |
 | Seletor de conjunto de dados | Permite escolher um dos conjuntos de dados na conexão ou todos eles. Não é possível selecionar vários conjuntos de dados simultaneamente. O padrão é [!UICONTROL Todos os conjuntos de dados]. |
@@ -94,7 +98,7 @@ Veja as explicações sobre widgets e configurações:
 | Widget de [!UICONTROL Registros de dados de eventos disponíveis] | Representa o número total de linhas de conjunto de dados de evento disponíveis para relatórios, **para toda a conexão**. Essa contagem independe de qualquer configuração de calendário. Ela será alterada se você selecionar um conjunto de dados por meio do seletor de conjunto de dados ou na tabela. (Observe que há uma latência de uma a duas horas para que os dados sejam mostrados no relatório, uma vez adicionados.) |
 | Widget de [!UICONTROL Métricas] | Resume os registros de eventos adicionados/ignorados/excluídos e o número de lotes adicionados, **para o conjunto de dados e o intervalo de datas selecionados**. |
 | Widget de [!UICONTROL Registros adicionados] | Indica quantas linhas foram adicionadas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Atualizado a cada dez minutos. **Observação**: Os dados de **[!UICONTROL Registros adicionados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
-| Widget de [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Os motivos para ignorar registros incluem: Carimbos de data e hora ausentes, ID de pessoa ausente ou inválido etc. Atualizado a cada dez minutos.<p>As IDs de pessoa inválidas (indefinidas, todos os zeros) não podem ser atribuídas a nenhum usuário ou pessoa específica. Eles não podem ser assimilados no sistema e resultam em processos de assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa inválidas, você tem 3 opções:<ul><li>Use a compilação para preencher as IDs de usuário indefinidas ou zero com IDs de usuário válidas.</li><li>ID de usuário em branco, que também será ignorada durante a assimilação (preferível a IDs de usuário inválidas ou todas zero).</li><li>Corrija quaisquer IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul><p>**Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
+| Widget de [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Os motivos para ignorar registros incluem: Carimbos de data e hora ausentes, ID de pessoa ausente ou inválido etc. Atualizado a cada dez minutos.<p>IDs de pessoa inválidas (como &quot;indefinido&quot; ou &quot;0000000&quot;, ou qualquer combinação de números e letras em uma [!UICONTROL ID da pessoa] que aparece em um evento mais de 1 milhão de vezes em um determinado mês) não pode ser atribuído a nenhum usuário ou pessoa específica. Eles não podem ser assimilados no sistema e resultam em assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa inválidas, você tem 3 opções:<ul><li>Use [Análise entre canais](/help/connections/cca/overview.md) para preencher as IDs de usuário indefinidas ou zero com IDs de usuário válidas.</li><li>ID de usuário em branco, que também será ignorada durante a assimilação (preferível a IDs de usuário inválidas ou todas zero).</li><li>Corrija quaisquer IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul><p>**Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | Widget de [!UICONTROL Registros excluídos] | Indica quantas linhas foram excluídas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Alguém pode ter excluído um conjunto de dados da Experience Platform, por exemplo. Atualizado a cada dez minutos. **Observação**: Os dados de **[!UICONTROL Registros excluídos]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | Caixa de pesquisa de conjunto de dados | Você pode pesquisar pelo ou pela [!UICONTROL ID do conjunto de dados]. |
 | [!UICONTROL Conjuntos de dados] | Exibe os conjuntos de dados que fazem parte da conexão. Você pode clicar no hiperlink para exibir todos os conjuntos de dados na conexão. |
@@ -103,7 +107,11 @@ Veja as explicações sobre widgets e configurações:
 | [!UICONTROL Última adição] | Exibe o carimbo de data e hora do último lote adicionado a esse conjunto de dados. |
 | [!UICONTROL Tipo de conjunto de dados] | Esse conjunto de dados pode ser do tipo [!UICONTROL Evento], [!UICONTROL Consulta] ou [!UICONTROL Perfil]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#configure-dataset) |
 | Esquema | O esquema da Adobe Experience Platform no qual os conjuntos de dados nesta conexão se baseiam. |
-| **Painel direito no nível da conexão** |  |
+
+### Configurações do painel direito no nível da conexão
+
+| Configuração | Descrição |
+| --- | --- |
 | [!UICONTROL Atualizar] | Atualize a conexão para refletir registros adicionados recentemente. |
 | [!UICONTROL Excluir] | Exclua esta conexão. |
 | [!UICONTROL Criar visualização de dados] | Crie uma nova visualização de dados com base nesta conexão. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
@@ -117,13 +125,17 @@ Veja as explicações sobre widgets e configurações:
 | [!UICONTROL Criado por] | Mostra o nome da pessoa que cria a conexão. |
 | [!UICONTROL Última modificação] | Mostra a data e a hora da última alteração na conexão. |
 | [!UICONTROL Modificado pela última vez por] | Mostra a pessoa que modificou a conexão pela última vez. |
-| **Painel direito no nível do conjunto de dados** |  |
+
+### Configurações do painel direito no nível do conjunto de dados
+
+| Configuração | Descrição |
+| --- | --- |
 | [!UICONTROL ID da pessoa] | Exibe uma identidade que foi definida no esquema do conjunto de dados na Experience Platform. Esta é a ID de pessoa que você escolheu durante a criação da conexão. Se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, isso será refletido nos relatórios. Para realmente unir conjuntos de dados, você precisa usar a mesma ID de pessoa em todos os conjuntos de dados. |
 | [!UICONTROL Registros disponíveis] | Representa o número total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado no calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. (A exceção é que, quando você criar uma conexão totalmente nova, haverá [latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#3.-obtenção-de-dados-no-customer-journey-analytics). |
 | [!UICONTROL Registros adicionados] | Indica quantas linhas foram adicionadas no período selecionado. **Observação**: Os dados de **[!UICONTROL Registros adicionados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | [!UICONTROL Registros excluídos] | Indica quantos registros foram excluídos durante o período de tempo selecionado. **Observação**: Os dados de **[!UICONTROL Registros excluídos]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | [!UICONTROL Lotes adicionados] | Indica quantos lotes de dados foram adicionados a esse conjunto de dados. |
-| [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas durante a assimilação no período de tempo selecionado.<p>As IDs de pessoa inválidas (indefinidas, todos os zeros) não podem ser atribuídas a nenhum usuário ou pessoa específica. Eles não podem ser assimilados no sistema e resultam em processos de assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa inválidas, você tem 3 opções:<ul><li>Use a compilação para preencher as IDs de usuário indefinidas ou zero com IDs de usuário válidas.</li><li>ID de usuário em branco, que também será ignorada durante a assimilação (preferível a IDs de usuário inválidas ou todas zero).</li><li>Corrija quaisquer IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul><p>**Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
+| [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas durante a assimilação no período de tempo selecionado.<p>Os motivos para ignorar registros incluem: Carimbos de data e hora ausentes, ID de pessoa ausente ou inválido etc. Atualizado a cada dez minutos.<p>IDs de pessoa inválidas (como &quot;indefinido&quot; ou &quot;0000000&quot;, ou qualquer combinação de números e letras em uma [!UICONTROL ID da pessoa] que aparece em um evento mais de 1 milhão de vezes em um determinado mês) não pode ser atribuído a nenhum usuário ou pessoa específica. Eles não podem ser assimilados no sistema e resultam em assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa inválidas, você tem 3 opções:<ul><li>Use [Análise entre canais](/help/connections/cca/overview.md) para preencher as IDs de usuário indefinidas ou zero com IDs de usuário válidas.</li><li>ID de usuário em branco, que também será ignorada durante a assimilação (preferível a IDs de usuário inválidas ou todas zero).</li><li>Corrija quaisquer IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul><p>**Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | [!UICONTROL Última adição] | Indica quando o último lote foi adicionado. |
 | [!UICONTROL Tipo de conjunto de dados] | [!UICONTROL Evento], [!UICONTROL Consulta] ou [!UICONTROL Perfil]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
 | [!UICONTROL Esquema] | Mostra o esquema Adobe Experience Platform no qual esse conjunto de dados se baseia. |
