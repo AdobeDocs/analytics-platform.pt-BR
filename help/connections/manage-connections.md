@@ -3,9 +3,9 @@ title: Gerenciar conexões
 description: Descreve como gerenciar conexões com conjuntos de dados da Experience Platform no Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 6d1907d676ea01b3956d5ce2ce76d43d7a8f0f1d
+source-git-commit: 3103e02bb49b6e5913c8a71d7ecf436b5ee90d11
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1866'
 ht-degree: 83%
 
 ---
@@ -32,7 +32,7 @@ O Gerenciador de conexões permite:
 * Renomeie uma conexão.
 * Crie uma visualização de dados a partir de uma conexão.
 
-![Gerenciar conexões](assets/conn-manager.png)
+![](assets/conn-manager.png)
 
 | Configuração | Descrição |
 | --- | --- |
@@ -85,7 +85,7 @@ Ele permite:
 
 Veja as explicações sobre widgets e configurações:
 
-![Exibir detalhes da conexão](assets/conn-details.png)
+![](assets/conn-details.png)
 
 | Widget/Configuração | Descrição |
 | --- | --- |
