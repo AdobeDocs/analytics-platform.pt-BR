@@ -2,10 +2,10 @@
 title: Operadores de filtro
 description: Determinam como um componente interage com um valor em um filtro.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
-source-git-commit: 90b753724c639406d9da2868b12fc7ff017bce74
-workflow-type: ht
+source-git-commit: 87da431752c235c442d13fd185c7ab8f6cf20eba
+workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -16,19 +16,20 @@ O construtor de filtros permite que você compare e restrinja valores com os ope
 ## Operadores padrão
 
 | Operador | Descrição |
-| igual a | Retorna itens que possuem o mesmo valor numérico ou de sequência de caracteres. Se estiver usando caracteres curingas, use o operador &quot;corresponde&quot;. |
-| diferente de | Retorna todos os itens que não contêm a correspondência exata do valor inserido.  Se estiver usando caracteres curingas, use o operador &quot;não correspondente&quot;. |
+| --- | --- |
+| igual a | Retorna itens que possuem o mesmo valor numérico ou de sequência. Se estiver usando caracteres curingas, use o operador &quot;corresponde&quot;. |
+| não é igual | Retorna todos os itens que não contêm a correspondência exata do valor inserido.  Se estiver usando caracteres curingas, use o operador &quot;não correspondente&quot;. |
 | contém | Retorna itens que se comparam às subsequências de caracteres dos valores inseridos. Por exemplo, se a regra de uma dimensão de sequência de caracteres contiver `"Search"`, ela corresponderá a qualquer página que tenha a subsequência de caracteres `"Search"` nela, incluindo `"Search Results"`, `"Search"` e `"Searching"`. Esse operador diferencia maiúsculas e minúsculas. |
 | não contém | Todos os itens que correspondem ao valor inserido são excluídos dos resultados. Por exemplo, se a regra de uma dimensão de sequência de caracteres não contiver `"Search"`, então qualquer página que tenha a subsequência de caracteres `"Search"` nela é excluída, incluindo `"Search Results"`, `"Search"` e `"Searching"`. |
-| contém todos os | Retorna itens que incluem todas as subsequências de caracteres (separadas por um espaço) em qualquer ordem. Por exemplo, inserir `"Search Results"` com este operador corresponderia a `"Search Results"` e `"Results of Search"`, mas não a `"Search"` ou `"Results"` independentemente. Esse operador suporta até 100 palavras delimitadas por espaços. |
+| contém tudo | Retorna itens que incluem todas as subsequências (separadas por um espaço) em qualquer ordem. Por exemplo, inserir `"Search Results"` com este operador corresponderia a `"Search Results"` e `"Results of Search"`, mas não a `"Search"` ou `"Results"` independentemente. Esse operador suporta até 100 palavras delimitadas por espaços. |
 | não contém todos os | Todos os itens que correspondem a cada valor inserido são excluídos dos resultados. Por exemplo, inserir `"Search Results"` com este operador excluiria `"Search Results"` e `"Results of Search"`, mas não `"Search"` ou `"Results"`. Esse operador suporta até 100 palavras delimitadas por espaços. |
 | contém qualquer um dos | Retorna itens que contêm qualquer uma das subsequências de caracteres especificadas. Por exemplo, inserir `"Search Results"` com este operador corresponderia a `"Search Results"`, `"Results of Search"`, `"Search"` e `"Results"`. Esse operador suporta até 100 palavras delimitadas por espaços. |
 | não contém nenhum de | Todos os itens que correspondem a qualquer subsequência de caracteres são excluídos dos resultados. Por exemplo, inserir `"Search Results"` excluiria `"Search Results"`, `"Results of Search"`, `"Search"` e `"Results"`. Esse operador suporta até 100 palavras delimitadas por espaços. |
-| inicia com | Retorna itens que iniciam com o caractere ou sequência de caracteres do valor inserido. |
-| não inicia com | Retorna todos os itens que não iniciam com os caracteres ou com as sequências de caracteres dos valores inseridos. |
+| começa com | Retorna itens que iniciam com o caractere ou sequência de caracteres do valor inserido. |
+| não inicia com | Retorna todos os itens que não iniciam com os caracteres ou as sequências de caracteres dos valores inseridos. |
 | termina com | Retorna itens que terminam com o caractere ou as sequências de caracteres do valor inserido. |
-| não termina com | Retorna todos os itens que não terminam com os caracteres ou com a sequência de caracteres do valor inserido. |
-| corresponde | Retorna itens correspondentes com base no respectivo valor numérico ou de sequência de caracteres. Suporta curingas usando um asterisco (`*`). Este operador diferencia maiúsculas de minúsculas. Por exemplo:<ul><li>`a*e` corresponde `ae`, `abcde`, `adobe` e `a whole sentence`.</li><li>`adob*` corresponde `adobe`, `adobe analytics` e `adobo recipe`</li><li>`*dobe` corresponde `dobe`, `adobe` e `cute little dobe`.</li></ul>|
+| não termina com | Retorna todos os itens que não terminam com os caracteres ou a sequência de caracteres do valor inserido. |
+| corresponde | Retorna itens correspondentes com base no valor numérico ou de sequência. Suporta curingas usando um asterisco (`*`). Este operador diferencia maiúsculas de minúsculas. Por exemplo:<ul><li>`a*e` corresponde `ae`, `abcde`, `adobe` e `a whole sentence`.</li><li>`adob*` corresponde `adobe`, `adobe analytics` e `adobo recipe`</li><li>`*dobe` corresponde `dobe`, `adobe` e `cute little dobe`.</li></ul> |
 | não corresponde | Todos os itens que correspondem à sequência de caracteres são excluídos. Suporta curingas usando um asterisco (`*`). |
 | existe | Retorna itens se o valor não for nulo. |
 | não existe | Retorna itens se o valor for nulo. |
