@@ -3,9 +3,9 @@ title: Perguntas frequentes sobre Customer Journey Analytics
 description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 source-git-commit: 688c7ee9debd82bbeb1e95461e9d95a8d1bd220b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1649'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 | Pergunta | Resposta |
 | --- | --- |
 | O [!UICONTROL Customer Journey Analytics] pode &quot;costurar&quot; todos os dispositivos ou conjuntos de dados? | Sim. [!UICONTROL O Customer Journey Analytics] tem uma solução de compilação chamada [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) (CCA). Ela permite alterar a chave da ID pessoal de um conjunto de dados, o que permite a combinação perfeita de vários conjuntos de dados. |
-| A costura de comportamento anônimo para comportamento autenticado é compatível? | Sim. [O Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. |
+| A costura de comportamento anônimo para comportamento autenticado é compatível? | Sim. [O Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. |
 | Como a &quot;repetição&quot; funciona no CCA? | O CCA “repete” dados com base em identificadores exclusivos que ele aprendeu. A repetição faz com que novos dispositivos da conexão sejam compilados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=pt-BR#etapa-1%3A-compila%C3%A7%C3%A3o-em-tempo-real) |
 | Como a compilação de dados históricos (preenchimento retroativo) funciona no CCA? | Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR#enable-cross-channel-analytics) |
 
@@ -44,7 +44,7 @@ ht-degree: 99%
 | Como posso obter dados do [!UICONTROL Adobe Analytics] no [!UICONTROL Customer Journey Analytics]? | [!UICONTROL Os dados do Adobe Analytics] podem ser conectados à Experience Platform por meio do [Conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). A maioria dos campos do [!UICONTROL Adobe Analytics] está no formato XDM, mas outros campos ainda não estão disponíveis. |
 | Qual é o tempo de montagem dos elementos do conjunto de dados em uma exibição de dados? | Algumas horas para começar e alguns dias para preencher retroativamente os últimos 13 meses de dados. |
 | É necessário trazer os dados de PII para estabelecer as conexões entre os dados? | Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que não seja PII. |
-| Quais são os limites para assimilar datas/carimbos de data e hora passadas ou futuras em conjuntos de dados de eventos do CJA? | <ul><li>Em relação a datas/carimbos de data e hora anteriores: dados de evento com até 10 anos.</li><li>Em relação a datas/carimbos de data e hora futuros: dados de evento (preditivo) até 1 mês no futuro.</li></ul> |
+| Quais são os limites para assimilação de datas/carimbos de data e hora passados ou futuros em conjuntos de dados de eventos do CJA? | <ul><li>Em relação a datas/carimbos de data e hora anteriores: dados de evento com até 10 anos.</li><li>Em relação a datas/carimbos de data e hora futuros: dados de evento (preditivo) até 1 mês no futuro.</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 
