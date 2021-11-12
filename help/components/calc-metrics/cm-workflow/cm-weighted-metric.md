@@ -2,7 +2,7 @@
 description: Mostra exemplos de métricas filtradas e ponderadas.
 title: Métricas filtradas e ponderadas
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '143'
 ht-degree: 100%
 
