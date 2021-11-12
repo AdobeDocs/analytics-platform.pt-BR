@@ -2,7 +2,7 @@
 description: Com o Criador de métricas calculadas, qualquer um pode criar uma métrica de participação.
 title: Métrica de participação
 source-git-commit: 50c56d718ae7a7f6e3d788b9f755831a7522337c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '163'
 ht-degree: 100%
 
