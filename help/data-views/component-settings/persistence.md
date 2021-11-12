@@ -3,9 +3,9 @@ title: Configurações do componente de persistência
 description: Determine como ou se os valores de dimensão persistem de um evento para o próximo.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 source-git-commit: e8f372692e60158ce7f30837ee4da0f922e1d752
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '588'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ A [!UICONTROL Persistência] está disponível somente em dimensões e é retroa
 | Configuração | Descrição |
 | --- | --- |
 | [!UICONTROL Definir persistência] | Habilite a persistência para a dimensão. Se a persistência não estiver habilitada, a dimensão se relacionará somente às métricas que existem no mesmo evento. Essa configuração é desativada pelo padrão. |
-| [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são: [!UICONTROL Mais recente], [!UICONTROL Original], [!UICONTROL Instância], [!UICONTROL Tudo]. A partir de 28 de outubro de 2021, uma janela de lookback de até 90 dias será adicionada ao [!UICONTROL Alocação] configuração. |
+| [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são: [!UICONTROL Mais recente], [!UICONTROL Original], [!UICONTROL Instância], [!UICONTROL Tudo]. A partir de 28 de outubro de 2021, uma janela de lookback de até 90 dias será adicionada à configuração de [!UICONTROL Alocação]. |
 | [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: [!UICONTROL Sessão] (padrão), [!UICONTROL Pessoa], [!UICONTROL Tempo personalizado] e [!UICONTROL Métrica]. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). O tempo máximo de expiração que pode ser definido é de 90 dias. Se você selecionar uma alocação de [!UICONTROL Todos], somente a expiração de [!UICONTROL Sessão] ou [!UICONTROL Pessoa] estará disponível. |
 
 ## Configurações de [!UICONTROL Alocação]
