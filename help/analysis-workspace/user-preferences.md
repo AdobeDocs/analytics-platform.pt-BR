@@ -3,9 +3,9 @@ title: Como definir as preferências do usuário no Analysis Workspace
 description: É possível definir preferências gerais e de projeto para usuários.
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '230'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ As preferências gerais se aplicam à experiência do CJA no navegador.
 
 ## Preferências do projeto
 
-As preferências de projeto se aplicam a novos projetos e novos painéis criados no Analysis Workspace. As preferências também podem ser gerenciadas por projeto em Workspace > Projeto > Informações e configurações do projeto.
+As preferências de projeto se aplicam a novos projetos e novos painéis criados no Analysis Workspace. As preferências também podem ser gerenciadas por projeto em Espaço de trabalho > Projeto > Informações e configurações do projeto.
 
 | Seção | Preferência | Opções |
 | --- | --- | --- |
@@ -41,11 +41,11 @@ As preferências de projeto se aplicam a novos projetos e novos painéis criados
 
 ## [!UICONTROL Tema escuro]
 
-Se preferir ter um fundo escuro para a interface do usuário do Customer Journey Analytics, você pode alternar para [!UICONTROL Tema escuro].
+Se preferir ter um fundo escuro para a interface de usuário do Customer Journey Analytics, é possível alternar para [!UICONTROL Tema escuro].
 
-1. Clique no ícone Experience Cloud user na parte superior direita.
+1. Clique no ícone de usuário da Experience Cloud na parte superior direita.
 
    ![tema escuro](assets/dark-theme.png)
 
-1. Mova o **[!UICONTROL Tema escuro]** alterne para a direita.
+1. Mova o botão **[!UICONTROL Tema escuro]** para a direita.
 
