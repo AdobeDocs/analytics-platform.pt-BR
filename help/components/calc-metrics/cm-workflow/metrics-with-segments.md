@@ -4,36 +4,36 @@ title: Métricas segmentadas
 uuid: 88f9829b-76e4-4598-9494-084a91602bc1
 exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
 source-git-commit: 0865c318c1390f2ad6d9864915254a7b8f68030f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Métricas filtradas
 
-No Criador de métricas calculadas, você pode aplicar filtros dentro da definição de métricas. Isso é útil se você quer derivar novas métricas para usar em sua análise. Lembre-se, as definições de filtro podem ser atualizadas por meio do Construtor de filtros. Se forem feitas alterações, o filtro será atualizado automaticamente em qualquer lugar em que for aplicado, incluindo se fizer parte de uma definição de métrica calculada.
+No Criador de métrica calculada, é possível aplicar filtros em suas definições de métricas. Isso é útil se você quer derivar novas métricas para usar em sua análise. Lembre-se, as definições de filtros podem ser atualizadas por meio do Construtor de filtros. Se forem feitas alterações, o filtro será atualizado automaticamente em qualquer lugar em que for aplicado, inclusive se fizer parte de uma definição de métrica calculada.
 
 ![](assets/german-visitors.png)
 
 ## Criar uma métrica filtrada {#create}
 
-Considere que você deseja comparar diferentes aspectos de um filtro &quot;Visitantes alemães&quot; com os de um filtro &quot;Visitantes internacionais&quot;. É possível criar métricas para obter insights como:
+Suponhamos que você deseje comparar diferentes aspectos de um filtro “Visitantes alemães” com os de um filtro “Visitantes internacionais”. É possível criar métricas para obter insights como:
 
-* Qual é a diferença de comportamento de navegação no conteúdo entre os dois grupos? (Outro exemplo seria: Como a taxa de conversão se compara entre os dois filtros?)
+* Qual é a diferença de comportamento de navegação no conteúdo entre os dois grupos? (Outro exemplo seria: qual é a diferença da taxa de conversão entre os dois filtros?)
 * Como uma porcentagem do total de visitantes, quantos visitantes alemães navegam por determinadas páginas em comparação com os visitantes internacionais?
-* Onde estão as maiores diferenças em termos de qual conteúdo é acessado por esses diferentes filtros?
+* Quais são as maiores diferenças em termos de conteúdo acessado por esses diferentes filtros?
 
-1. Se você não tiver um filtro comparável, crie um segmento adhoc diretamente no Criador de métricas calculadas chamado &quot;Visitantes alemães&quot;, onde &quot;Países&quot; corresponda a &quot;Alemanha&quot;. Basta arrastar a dimensão Países para a tela Definição e selecionar Alemanha como o valor:
+1. Caso não tenha um filtro para comparação, crie um segmento adhoc no Criador de métrica calculada chamado “Visitantes alemães”, no qual “Países” corresponda a “Alemanha”. Basta arrastar a dimensão Países para a tela Definição e selecionar Alemanha como o valor:
 
    ![](assets/segment-from-dimension.png)
 
    >[!NOTE]
    >
-   >Você também pode fazer isso na [Construtor de filtros](/help/components/filters/create-filters.md), mas simplificamos o fluxo de trabalho, disponibilizando dimensões no Construtor de métricas calculadas. &quot;Adhoc&quot; significa que o segmento não está visível na variável **[!UICONTROL Filtros]** no painel esquerdo. Entretanto, é possível torná-lo público ao passar o mouse sobre o ícone &quot;i&quot; e clicar em **[!UICONTROL Tornar público]**.
+   >Também é possível fazer isso no [Construtor de filtros](/help/components/filters/create-filters.md), mas simplificamos o fluxo de trabalho disponibilizando dimensões no Criador de métricas calculadas. “Adhoc” significa que o segmento não será visível na lista de **[!UICONTROL Filtros]** à esquerda. Entretanto, é possível torná-lo público ao passar o mouse sobre o ícone &quot;i&quot; e clicar em **[!UICONTROL Tornar público]**.
 
-1. Se você não tiver um filtro comparável, crie um filtro chamado &quot;Visitantes internacionais&quot; em que &quot;Países&quot; não seja igual a &quot;Alemanha&quot;.
-1. Crie e salve uma métrica chamada &quot;Visitantes alemães&quot;. Para fazer isso, arraste o filtro Alemanha para a tela Definição e, em seguida, arraste a métrica Visitantes únicos dentro dele:
+1. Caso não tenha um filtro para comparação, crie um filtro chamado “Visitantes internacionais”, no qual “Países” não corresponda a “Alemanha”.
+1. Crie e salve uma métrica chamada “Visitantes alemães”. Para fazer isso, arraste o filtro Alemanha para a tela de Definição e, em seguida, arraste a métrica Visitantes únicos para dentro dele:
 
    ![](assets/german-visitors.png)
 
@@ -48,10 +48,10 @@ Esta é uma visão geral do vídeo:
 
 ## Porcentagem do total de métricas {#percent-total}
 
-Você pode levar o exemplo acima um passo além comparando seu filtro a uma população total. Para fazer isso, crie duas novas métricas, “% do total de visitantes alemães” e “% do total de visitantes internacionais”:
+É possível ir além do exemplo acima comparando seu filtro a uma população total. Para fazer isso, crie duas novas métricas, “% do total de visitantes alemães” e “% do total de visitantes internacionais”:
 
-1. Solte o filtro Visitantes alemães (ou internacionais) na tela.
-1. Solte outro filtro de Visitantes alemães (ou internacionais) abaixo. Mas, desta vez, clique no ícone de configurações (engrenagem) e selecione o Tipo de métrica &quot;Total&quot;. O Formato deve ser &quot;Porcentagem&quot;. O operador deve ser &quot;dividido por&quot;. No final, você terá a seguinte definição de métrica:
+1. Solte o filtro Visitantes alemães (ou internacionais) dentro da tela.
+1. Solte outro filtro Visitantes alemães (ou internacionais) abaixo. Mas, desta vez, clique no ícone de configurações (engrenagem) e selecione o Tipo de métrica &quot;Total&quot;. O Formato deve ser &quot;Porcentagem&quot;. O operador deve ser &quot;dividido por&quot;. No final, você terá a seguinte definição de métrica:
 
    ![](assets/cm_metric_total.png)
 
