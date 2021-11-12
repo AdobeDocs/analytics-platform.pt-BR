@@ -5,13 +5,13 @@ exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 62%
+ht-degree: 98%
 
 ---
 
 # Visão geral dos painéis
 
-Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode acessar os painéis por meio do ícone superior esquerdo no Workspace ou um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). Painéis são úteis quando você deseja organizar seus projetos de acordo com períodos de tempo, visualizações de dados ou caso de uso de análise.
+Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode acessar os painéis por meio do ícone superior esquerdo no Espaço de trabalho ou um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos, visualizações de dados ou casos de uso de análise.
 
 ## Tipos de painel
 
@@ -26,7 +26,7 @@ Os seguintes tipos de painel estão disponíveis no Analysis Workspace para [!UI
 
 ![](assets/panel-overview.png)
 
-[!UICONTROL Quick Insights], [!UICONTROL Em branco] e [!UICONTROL Forma livre] painéis são excelentes locais para iniciar a análise, enquanto [!UICONTROL Attribution IQ] se presta a análises mais avançadas. Um botão `"+"` está disponível nos projetos para que você possa adicionar painéis em branco a qualquer momento.
+Os painéis [!UICONTROL Quick Insights], [!UICONTROL Em branco] e [!UICONTROL Forma livre] são excelentes locais para iniciar a análise, enquanto que o [!UICONTROL Attribution IQ] é recomendado para análises mais avançadas. Um botão `"+"` está disponível nos projetos para que você possa adicionar painéis em branco a qualquer momento.
 
 O painel inicial padrão é o painel [!UICONTROL Forma livre], mas você também pode definir o [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) como padrão.
 
@@ -38,38 +38,38 @@ Observação: se um componente de intervalo de datas (roxo) for usado em uma tab
 
 ![](assets/panel-calendar.png)
 
-Você pode aplicar um intervalo de datas de minuto sob as configurações avançadas do calendário do painel. Se você estiver relatando um intervalo de datas que abrange muitos dias, a hora inicial se aplica ao primeiro dia e a hora final se aplica ao último dia do intervalo.
+Você pode aplicar um intervalo de datas com detalhamento de minutos nas configurações avançadas do calendário do painel. Se você estiver emitindo relatórios em um intervalo de datas que abrange muitos dias, a hora de início se aplica ao primeiro dia e a hora de término se aplica ao último dia do intervalo.
 
 ## Zona suspensa {#dropzone}
 
-A área de soltar do painel permite aplicar filtros e filtros suspensos a todas as tabelas e visualizações em um painel. Você pode aplicar um ou vários filtros a um painel. O título acima de cada filtro pode ser modificado clicando no lápis de edição ou você pode clicar com o botão direito do mouse para removê-lo completamente.
+A zona de destino do painel permite aplicar filtros simples e filtros suspensos em todas as tabelas e visualizações de um painel. Você pode aplicar um ou vários filtros a um painel. O título acima de cada filtro pode ser modificado clicando no lápis de edição ou você pode clicar com o botão direito do mouse para removê-lo completamente.
 
 ### Filtros
 
-Arraste e solte quaisquer Filtros do painel esquerdo na área de soltar do painel para começar a filtrar o painel.
+Arraste e solte quaisquer Filtros do painel esquerdo na área de lançamento do painel para começar a filtrá-lo.
 
 ![](assets/segment-filter.png)
 
 ### Filtros ad hoc
 
-Os componentes não filtros também podem ser arrastados diretamente para a área suspensa para criar filtros ad-hoc, economizando tempo e esforço de ir para o Construtor de filtros. Os filtros criados dessa forma são definidos automaticamente como filtros de nível de ocorrência. Essa definição pode ser modificada ao clicar no ícone de informações (i) ao lado do filtro, em seguida no ícone de edição em forma de lápis e editá-lo no Construtor de filtros.
+Os componentes que não são de filtros também podem ser arrastados diretamente para a zona de destino para criar filtros ad-hoc, poupando o tempo e esforço de ter que ir até o Construtor de filtros. Os filtros criados dessa maneira são definidos automaticamente como filtros de nível de ocorrência. Essa definição pode ser modificada clicando no ícone de informações (i) ao lado do filtro e, em seguida, no ícone de edição em forma de lápis e editando-a no Construtor de filtros.
 
-Filtros ad-hoc são locais para o projeto e não serão exibidos no painel esquerdo, a menos que você os torne públicos.
+Os filtros ad-hoc restringem-se ao local do projeto e não são exibidos no painel esquerdo, a menos que você os torne públicos.
 
 ![](assets/adhoc-segment-filter.png)
 
 ### Filtros suspensos {#dropdown-filter}
 
-Além dos filtros, os filtros suspensos permitem interagir com os dados de forma controlada. Por exemplo, você pode adicionar um filtro suspenso para Tipos de dispositivo móvel para filtrar o painel por Tablet, Telefone móvel ou Desktop.
+Além dos filtros de segmento, os filtros suspensos permitem que você interaja com os dados de forma controlada. Por exemplo, é possível adicionar um filtro suspenso de Tipos de dispositivo móvel para que você possa filtrar o painel por Tablet, Celular ou Desktop.
 
-Filtros suspensos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com filtros de País diferentes aplicados, é possível consolidar todas as versões em um único projeto e adicionar um filtro suspenso País .
+Filtros suspensos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes filtros de País aplicados, é possível consolidar todas as versões em um único projeto e adicionar um filtro suspenso de País.
 
 ![](assets/dropdown-filter-intro.png)
 
 Para criar filtros suspensos:
 
-1. Para criar um filtro suspenso usando [!UICONTROL itens de Dimension], como valores dentro da dimensão [!UICONTROL Canal de marketing], clique no ícone de seta para a direita ao lado da dimensão no painel esquerdo. Essa ação expõe todos os itens disponíveis. Selecione um ou vários itens do componente no painel esquerdo e solte-os na área suspensa do painel **enquanto mantém pressionada a tecla Shift**. Isso os transformará em um filtro suspenso, em vez de em um único filtro.
-1. Para criar um filtro suspenso usando outro componente, como métricas, filtros ou intervalos de datas, selecione de um tipo de componente no painel à esquerda e solte na área de soltar do painel **mantendo a tecla Shift pressionada**.
+1. Para criar um filtro suspenso usando [!UICONTROL itens de Dimension], como valores dentro da dimensão [!UICONTROL Canal de marketing], clique no ícone de seta para a direita ao lado da dimensão no painel esquerdo. Essa ação expõe todos os itens disponíveis. Selecione um ou vários itens do componente no painel esquerdo e solte-os na área suspensa do painel **enquanto mantém pressionada a tecla Shift**. Isso transformará os componentes em um filtro suspenso, em vez de em um filtro único.
+1. Para criar um filtro suspenso usando outro componente, como métricas, filtros ou intervalos de datas, selecione um tipo de componente no painel esquerdo e solte-o na zona de destino do painel **enquanto mantém pressionada a tecla Shift**.
 1. Selecione uma das opções na lista suspensa para alterar os dados no painel. Também é possível optar por não filtrar os dados do painel ao selecionar **[!UICONTROL Nenhum filtro]**.
 
 ![](assets/create-dropdown.png)

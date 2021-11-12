@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 source-git-commit: 61f11ed1d91d7a5da7aabbec1fe961b9b0842450
 workflow-type: tm+mt
 source-wordcount: '1942'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -120,7 +120,7 @@ Veja as explicações sobre widgets e configurações:
 | [!UICONTROL Sandbox] | A [sandbox da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) da qual essa conexão obtém seus conjuntos de dados. Essa sandbox foi selecionada quando você criou a conexão pela primeira vez. Ela não pode ser alterada. |
 | [!UICONTROL ID da conexão] | Essa ID é gerada pelo sistema na Adobe Experience Platform. |
 | [!UICONTROL Visualizações de dados usando conexão] | Lista todas as visualizações de dados que usam essa conexão. |
-| [!UICONTROL Importar novos dados] | (Ligado/desligado) Indica se novos lotes de dados devem ou não ser adicionados aos dados históricos (preenchimento retroativo). |
+| [!UICONTROL Importar novos dados] | (Ligado/Desligado) Indica se novos lotes de dados devem ou não ser adicionados aos dados históricos (preenchimento retroativo). |
 | [!UICONTROL Dados de preenchimento retroativo] | Os dados de preenchimento retroativo (históricos) são rastreados em três estados: [!UICONTROL Na fila], [!UICONTROL Em andamento] (com porcentagem de progresso indicada) e [!UICONTROL Concluído]. |
 | [!UICONTROL Criado por] | Mostra o nome da pessoa que cria a conexão. |
 | [!UICONTROL Última modificação] | Mostra a data e a hora da última alteração na conexão. |
@@ -130,7 +130,7 @@ Veja as explicações sobre widgets e configurações:
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL ID da pessoa] | Exibe uma identidade que foi definida no esquema do conjunto de dados na Experience Platform. Esta é a ID de pessoa que você escolheu durante a criação da conexão. Se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, isso será refletido nos relatórios. Para realmente unir conjuntos de dados, você precisa usar a mesma ID de pessoa em todos os conjuntos de dados. |
+| [!UICONTROL ID da pessoa] | Exibe uma identidade que foi definida no esquema do conjunto de dados na Experience Platform. Esta é a ID de pessoa que você escolheu durante a criação da conexão. Se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, isso será refletido nos relatórios. Para unir, de fato, conjuntos de dados, é necessário usar a mesma ID de pessoa nos conjuntos de dados. |
 | [!UICONTROL Registros disponíveis] | Representa o número total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado no calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. (A exceção é que, quando você criar uma conexão totalmente nova, haverá [latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#3.-obtenção-de-dados-no-customer-journey-analytics). |
 | [!UICONTROL Registros adicionados] | Indica quantas linhas foram adicionadas no período selecionado. **Observação**: Os dados de **[!UICONTROL Registros adicionados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | [!UICONTROL Registros excluídos] | Indica quantos registros foram excluídos durante o período de tempo selecionado. **Observação**: Os dados de **[!UICONTROL Registros excluídos]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
