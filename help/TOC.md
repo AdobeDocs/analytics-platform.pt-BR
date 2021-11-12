@@ -10,9 +10,9 @@ user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 93%
       + [Classificação de valor](data-views/component-settings/value-bucketing.md)
    + [Referência de componente padrão](data-views/component-reference.md)
    + [Casos de uso de visualizações de dados](data-views/data-views-usecases.md)
-+ Projetos do Workspace {#cja-workspace}
++ Projetos do Espaço de trabalho {#cja-workspace}
    + [Visão geral do Analysis Workspace](analysis-workspace/home.md)
    + [Realizar análise básica](analysis-workspace/perform-basic-analysis.md)
    + [Realizar análise avançada](analysis-workspace/perform-adv-analysis.md)
@@ -71,7 +71,7 @@ ht-degree: 93%
             + [Configurações de linha](analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Itens dinâmicos vs. estáticos](analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Paginação, filtragem e classificação de tabelas](analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.md)
-         + [Totais do Workspace](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Totais do Espaço de trabalho](analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Tabela de coorte {#cohort-table}
          + [O que é a análise de coorte?](analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Configurar um relatório de análise de coorte](analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -125,7 +125,7 @@ ht-degree: 93%
          + [Exibir anomalias no Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [Técnicas estatísticas usadas na Detecção de anomalias](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Preferências do usuário](analysis-workspace/user-preferences.md)
-   + Perguntas frequentes sobre o Workspace {#workspace-faq}
+   + Perguntas frequentes sobre o Espaço de trabalho {#workspace-faq}
       + [Perguntas frequentes](analysis-workspace/workspace-faq/faq.md)
       + [Otimizar o desempenho do Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Mensagens de erro](analysis-workspace/workspace-faq/error-messages.md)
@@ -135,9 +135,9 @@ ht-degree: 93%
       + [Cauda longa Analysis Workspace](analysis-workspace/workspace-faq/long-tail.md)
 + Report Builder {#cja-reportbuilder}
    + [Visão geral do Report Builder](report-builder/report-buider-overview.md)
-   + [Configuração de Report Builder](report-builder/report-builder-setup.md)
+   + [Configuração do Report Builder](report-builder/report-builder-setup.md)
    + [Criar um bloco de dados](report-builder/create-a-data-block.md)
-   + [Hub Report Builder](report-builder/report-builder-hub.md)
+   + [O Hub do Report Builder](report-builder/report-builder-hub.md)
    + [Selecionar um intervalo de datas](report-builder/select-date-range.md)
    + [Trabalhar com filtros](report-builder/work-with-filters.md)
    + [Filtrar dimensões](report-builder/filter-dimensions.md)
@@ -159,7 +159,7 @@ ht-degree: 93%
       + [Operadores](components/filters/operators.md)
    + Métricas calculadas {#cja-calcmetrics}
       + [Visão geral das métricas calculadas](components/calc-metrics/calc-metr-overview.md)
-      + Fluxo de trabalho de Métricas calculadas {#cm-workflow}
+      + Fluxo de trabalho das métricas calculadas {#cm-workflow}
          + [Fluxo de trabalho das métricas calculadas](components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Localizar métricas](components/calc-metrics/cm-workflow/cm-finding.md)
          + [Criar métricas](components/calc-metrics/cm-workflow/cm-build-metrics.md)
