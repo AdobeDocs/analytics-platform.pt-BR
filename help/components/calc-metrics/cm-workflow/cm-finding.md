@@ -2,9 +2,9 @@
 description: Descreve as duas principais maneiras de encontrar suas métricas por classificação e por filtragem.
 title: Localizar métricas
 source-git-commit: cefc5696efa8c1b68d6227d06a03014fbc5e3ff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Ao abrir um relatório, clique no ícone Métricas e em **[!UICONTROL Gerenciar]
 
 | Caso queira | Classifique por |
 | --- | --- |
-| Mostrar todas as métricas nesta vista de dados. | Outros filtros > Exibir todos |
+| Mostrar todas as métricas nesta visualização de dados. | Outros filtros > Exibir todos |
 | Mostrar somente as suas métricas | Outros filtros > Meus |
 | Mostrar métricas compartilhadas comigo por outra pessoa | Proprietários ou Outros filtros > Compartilhados comigo |
 | Mostrar somente métricas aprovadas pela empresa. | Aprovado |
