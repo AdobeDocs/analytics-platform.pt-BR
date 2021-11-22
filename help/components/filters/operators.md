@@ -3,9 +3,9 @@ title: Operadores de filtro
 description: Determinam como um componente interage com um valor em um filtro.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 source-git-commit: 87da431752c235c442d13fd185c7ab8f6cf20eba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ O construtor de filtros permite que você compare e restrinja valores com os ope
 | não é igual | Retorna todos os itens que não contêm a correspondência exata do valor inserido.  Se estiver usando caracteres curingas, use o operador &quot;não correspondente&quot;. |
 | contém | Retorna itens que se comparam às subsequências de caracteres dos valores inseridos. Por exemplo, se a regra de uma dimensão de sequência de caracteres contiver `"Search"`, ela corresponderá a qualquer página que tenha a subsequência de caracteres `"Search"` nela, incluindo `"Search Results"`, `"Search"` e `"Searching"`. Esse operador diferencia maiúsculas e minúsculas. |
 | não contém | Todos os itens que correspondem ao valor inserido são excluídos dos resultados. Por exemplo, se a regra de uma dimensão de sequência de caracteres não contiver `"Search"`, então qualquer página que tenha a subsequência de caracteres `"Search"` nela é excluída, incluindo `"Search Results"`, `"Search"` e `"Searching"`. |
-| contém tudo | Retorna itens que incluem todas as subsequências (separadas por um espaço) em qualquer ordem. Por exemplo, inserir `"Search Results"` com este operador corresponderia a `"Search Results"` e `"Results of Search"`, mas não a `"Search"` ou `"Results"` independentemente. Esse operador suporta até 100 palavras delimitadas por espaços. |
+| contém tudo | Retorna itens que incluem todas as subsequências de caracteres (separadas por um espaço) em qualquer ordem. Por exemplo, inserir `"Search Results"` com este operador corresponderia a `"Search Results"` e `"Results of Search"`, mas não a `"Search"` ou `"Results"` independentemente. Esse operador suporta até 100 palavras delimitadas por espaços. |
 | não contém todos os | Todos os itens que correspondem a cada valor inserido são excluídos dos resultados. Por exemplo, inserir `"Search Results"` com este operador excluiria `"Search Results"` e `"Results of Search"`, mas não `"Search"` ou `"Results"`. Esse operador suporta até 100 palavras delimitadas por espaços. |
 | contém qualquer um dos | Retorna itens que contêm qualquer uma das subsequências de caracteres especificadas. Por exemplo, inserir `"Search Results"` com este operador corresponderia a `"Search Results"`, `"Results of Search"`, `"Search"` e `"Results"`. Esse operador suporta até 100 palavras delimitadas por espaços. |
 | não contém nenhum de | Todos os itens que correspondem a qualquer subsequência de caracteres são excluídos dos resultados. Por exemplo, inserir `"Search Results"` excluiria `"Search Results"`, `"Results of Search"`, `"Search"` e `"Results"`. Esse operador suporta até 100 palavras delimitadas por espaços. |
