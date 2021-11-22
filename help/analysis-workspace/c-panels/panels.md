@@ -3,9 +3,9 @@ description: Um painel é uma coleção de tabelas e visualizações
 title: Visão geral dos painéis
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '851'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode
 
 ## Tipos de painel
 
-Os seguintes tipos de painel estão disponíveis no Analysis Workspace para [!UICONTROL Customer Journey Analytics]:
+Os seguintes tipos de painel estão disponíveis no Analysis Workspace para o [!UICONTROL Customer Journey Analytics]:
 
 | Nome do painel | Descrição |
 | --- | --- |
