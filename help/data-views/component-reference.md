@@ -2,8 +2,9 @@
 title: Referência de componente padrão
 description: Detalhes e informações sobre todos os componentes padrão que podem ser adicionados a qualquer visualização de dados.
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
-source-git-commit: 181fc4fbf599c5ca34f4786439e83ac0e4a524dd
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 100%
 

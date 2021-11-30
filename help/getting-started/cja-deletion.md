@@ -1,8 +1,10 @@
 ---
 title: Implicações de exclusão
 description: O que acontece quando você exclui conexões, conjuntos de dados ou lotes no Customer Journey Analytics ou na Adobe Experience Platform.
-source-git-commit: 3fa2c562abaf4aa1f18baa5de5ee66c7ad828f52
-workflow-type: ht
+exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 100%
 
@@ -14,7 +16,7 @@ Considere isso antes de excluir conexões, conjuntos de dados ou lotes no Custom
 
 | Quando você... | Isso acontece... |
 | --- | --- |
-| Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Workspace que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul> |
+| Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Espaço de trabalho que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul> |
 | Excluir um conjunto de dados na [!UICONTROL Adobe Experience Platform] (AEP) | A exclusão de um conjunto de dados na AEP parará o fluxo de dados dele para qualquer conexão que inclua esse conjunto de dados. Quaisquer dados desse conjunto de dados não são excluídos automaticamente das Conexões associadas do CJA. |
 | Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Atualmente, não é possível excluir um conjunto de dados em uma conexão que foi salva. Você teria que excluir toda a conexão e começar novamente. (No entanto, você pode excluir um conjunto de dados na [!UICONTROL Adobe Experience Platform].) |
 | Excluir um lote de um conjunto de dados (na [!UICONTROL Adobe Experience Platform]) | Se um lote for excluído de um conjunto de dados da [!UICONTROL Adobe Experience Platform], o mesmo lote será removido de qualquer conexão do [!UICONTROL Customer Journey Analytics] que contenha esse lote específico. [!UICONTROL O Customer Journey Analytics] é notificado de lotes que foram excluídos na [!UICONTROL Adobe Experience Platform]. |

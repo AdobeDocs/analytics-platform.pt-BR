@@ -2,8 +2,9 @@
 title: Como funcionam as repetições
 description: Entenda o conceito de “repetição” na Análise de vários canais
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
-source-git-commit: af14d9279f1dd5019e7e6db59a27765eede078bb
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 100%
 

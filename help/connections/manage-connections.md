@@ -1,12 +1,13 @@
 ---
-title: Gerenciar conexões
+title: Como gerenciar conexões no Customer Journey Analytics
 description: Descreve como gerenciar conexões com conjuntos de dados da Experience Platform no Customer Journey Analytics (CJA).
 mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
-source-git-commit: 61f11ed1d91d7a5da7aabbec1fe961b9b0842450
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
-source-wordcount: '1942'
-ht-degree: 100%
+source-wordcount: '1948'
+ht-degree: 99%
 
 ---
 

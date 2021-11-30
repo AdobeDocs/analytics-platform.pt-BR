@@ -2,8 +2,9 @@
 title: Casos de uso para visualizações de dados no Customer Journey Analytics
 description: Vários casos de uso que mostram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
-source-git-commit: acf2728539562a2bb9be2adfbeb7ae6cc4f3dffd
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 100%
 
@@ -57,7 +58,7 @@ Esse recurso é especificamente aplicável a campos com base em matriz. A funcio
 
 Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de dados para focalizar os produtos que geraram vendas de mais de 50 dólares. Portanto, se você tiver um pedido que inclua uma compra de produto de 50 dólares e uma compra de produto de 25 dólares, removeremos apenas a compra de produto de 25 dólares, não o pedido inteiro.
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-component-settings), arraste o campo de esquema [!UICONTROL Receita] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=en#configure-component-settings), arraste o campo de esquema [!UICONTROL Receita] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 1. Selecione a métrica e configure o seguinte no lado direito:
 a. Em [!UICONTROL Formato], selecione [!UICONTROL Moeda].
 b. Em [!UICONTROL Moeda], selecione USD.

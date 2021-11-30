@@ -2,8 +2,9 @@
 title: Como definir as preferências do usuário no Analysis Workspace
 description: É possível definir preferências gerais e de projeto para usuários.
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
-source-git-commit: 80a41d5678728eaab8a8a66455c8e1e8f1cdbb8e
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%
 

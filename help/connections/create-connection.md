@@ -2,7 +2,8 @@
 title: Criar uma conexão
 description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
-source-git-commit: 4933b0393ddb985ad0da7a572e67efb3e77381b8
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 100%

@@ -2,8 +2,9 @@
 title: Visão geral das visualizações de dados
 description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão do CJA, como métricas, dimensões, sessões etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
-source-git-commit: 86522f1ea5ae241351514d954672ec5fd7990944
-workflow-type: ht
+solution: Customer Journey Analytics
+source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
+workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 100%
 
