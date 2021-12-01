@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 20dd79161f813a372901dafa8ba44bb64d301974
-workflow-type: ht
-source-wordcount: '560'
-ht-degree: 100%
+source-git-commit: 6c5fb7b3964cbf2bb5158733a2ede9b54f9415a5
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 99%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 100%
    + [Gerenciar conexões](connections/manage-connections.md)
    + [Estimar tamanho da conexão](connections/estimate-connection-size.md)
    + [Conjuntos de dados de evento combinados](connections/combined-dataset.md)
+   + [Pesquisas padrão](connections/standard-lookups.md)
    + Análise de vários canais {#cca}
       + [Visão geral da Análise de vários canais](connections/cca/overview.md)
       + [Como funcionam as repetições](connections/cca/replay.md)
@@ -191,7 +192,6 @@ ht-degree: 100%
    + [Importação de dados da central de atendimento e da Web](use-cases/call-center.md)
    + [Casos de uso da assimilação de dados](use-cases/data-ingestion.md)
    + [Usar dimensões do canal de marketing](use-cases/marketing-channels.md)
-   + [Adicionar pesquisas globais aos seus conjuntos de dados](use-cases/global-lookups.md)
    + [Assimilar dados do Google Analytics na Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [Relatórios de dados do Google Analytics no CJA](use-cases/ga-to-cja-reporting.md)
 + Painéis do Analytics {#cja-dashboards}
