@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 source-git-commit: 69ded6c9d08981810f6d9edef273cad95cb2c367
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 O Customer Journey Analytics é um recurso do Analytics que permite usar o potencial do Analysis Workspace com dados da Adobe Experience Platform. Ele pode detalhar, filtrar, consultar e visualizar os dados de anos, e é combinado com a capacidade da Platform de armazenar todos os tipos de esquemas e tipos de dados. Com o **Experience Data Model (XDM)**, os dados podem ser representados e organizados uniformemente, prontos para combinação e exploração. O **Experience Query Services** permite usar ferramentas e estruturas compatíveis com SQL para query e manipulação de todos os seus dados.
 
-A arquitetura CJA de alto nível é mostrada aqui:
+A arquitetura de alto nível do CJA é mostrada aqui:
 
 ![arquitetura](assets/cja-architecture.png)
 
@@ -42,9 +42,9 @@ O Customer Journey Analytics permite:
 * **Consultar o cliente em um contexto de jornada**: você pode visualizar e analisar dados sequencialmente, abrangendo vários canais. Os dados do call center, dos sistemas de PDV e das propriedades online podem ser combinados em uma única visualização de relatórios.
 * **Disponibilizar insights para todos**: democratizar o acesso aos dados e permitir que mais pessoas tomem decisões de negócios com insights derivados de dados. Qualquer pessoa na organização responsável por qualquer aspecto da experiência do cliente pode tomar decisões reais mais rápido, com base em dados mais completos.
 * **Disponibilizar o potencial da ciência de dados para seus analistas**: o Customer Journey Analytics permite que os humanos usem a ciência de dados para explorar análises e insights profundos.
-* **Visualizar e interagir com seus conjuntos de dados usando um relatórios ad hoc**: o Workspace pode usar qualquer conjunto de dados da Adobe Experience Platform que esteja em conformidade com algumas regras básicas.
-* **Visualizar dados que não sejam da Web**: o Workspace não está mais limitado a uma definição rígida de “ocorrência” ou “evento”. Esquemas personalizados permitem controle total sobre dados e definições.
-* **Ter maior controle sobre a manipulação de dados**: alterar os dados carregados, criar novos conjuntos de dados e importá-los para o Workspace. A Adobe Experience Platform oferece ferramentas de consulta, extração, transformação e carregamento por meio do Serviço de query da Experience Cloud.
+* **Visualizar e interagir com seus conjuntos de dados usando um relatórios ad hoc**: o Espaço de trabalho pode usar qualquer conjunto de dados da Adobe Experience Platform que esteja em conformidade com algumas regras básicas.
+* **Visualizar dados que não sejam da Web**: o Espaço de trabalho não está mais limitado a uma definição rígida de “ocorrência” ou “evento”. Esquemas personalizados permitem controle total sobre dados e definições.
+* **Ter maior controle sobre a manipulação de dados**: alterar os dados carregados, criar novos conjuntos de dados e importá-los para o Espaço de trabalho. A Adobe Experience Platform oferece ferramentas de consulta, extração, transformação e carregamento por meio do Serviço de query da Experience Cloud.
 
 ## Pré-requisitos
 
@@ -60,7 +60,7 @@ Para criar conexões, adicionar conjuntos de dados, etc., você precisa das segu
 * Para acessar o Customer Journey Analytics ou fazer uma conexão, você precisará ser adicionado como administrador do **Produto Customer Journey Analytics** no [Admin Console](https://adminconsole.adobe.com/enterprise/). Os administradores de produtos recebem as seguintes permissões:
    * Criar/atualizar/excluir conexões ou Visualizações de dados
    * Atualizar/excluir projetos, filtros, métricas de cálculo ou filtros criados por outros usuários
-   * Compartilhar um projeto do Workspace para todos os usuários
+   * Compartilhar um projeto do Espaço de trabalho para todos os usuários
 * Tornar-se um administrador de produto no Customer Journey Analytics não é suficiente para criar, atualizar ou excluir uma conexão. Para criar uma conexão com um conjunto de dados da Experience Platform, você também precisa de permissões da Experience Platform. Especificamente, você deve fazer parte de um **Perfil de produto da Experience Platform** que oferece as seguintes permissões:
    * Visualizar esquemas
    * Gerenciar esquemas
