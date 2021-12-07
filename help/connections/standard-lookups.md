@@ -3,9 +3,9 @@ title: Adicionar pesquisas padrão aos seus conjuntos de dados
 description: Use pesquisas padrão para aumentar os relatórios com dimensões úteis no Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 067502a0d69bd0b085ecb5e6cbd3ae062f33daef
+source-git-commit: 4e31b02815e32695d97eab0f563c71725bc79c11
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '360'
 ht-degree: 28%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 28%
 # Adicionar pesquisas padrão aos seus conjuntos de dados
 
 >[!IMPORTANT]
->As Pesquisas padrão só estão disponíveis para fontes de dados do Conector de dados do Analytics no CJA. Você só pode usá-los se usar a variável [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) ou as APIs de coleta de dados do Experience Platform.
+>As Pesquisas padrão só estão disponíveis para fontes de dados do Conector de dados do Analytics no CJA. Você pode usá-los somente com implementações padrão da Adobe Analytics ou a variável [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)ou as APIs de coleta de dados do Experience Platform.
 
 As pesquisas padrão (também conhecidas como pesquisas fornecidas por Adobe) aprimoram a capacidade do Customer Journey Analytics de relatar em algumas dimensões/atributos que não são úteis por si só, mas são úteis quando unidas a outros dados. Exemplos incluem atributos de dispositivos móveis e atributos de dimensões de SO e navegador, como números de versão do navegador. Uma &quot;Pesquisa padrão&quot; é semelhante a um conjunto de dados de pesquisa. As pesquisas padrão são aplicáveis em organizações de Experience Cloud. Elas são automaticamente aplicadas a todos os conjuntos de dados de evento que contêm determinados campos de esquema XDM (veja abaixo os campos específicos). Existe um conjunto de dados de pesquisa padrão para cada localização de esquema que o Adobe está classificando.
 
