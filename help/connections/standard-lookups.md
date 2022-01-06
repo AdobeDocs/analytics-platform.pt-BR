@@ -3,25 +3,38 @@ title: Adicionar pesquisas padrão aos seus conjuntos de dados
 description: Use pesquisas padrão para aumentar os relatórios com dimensões úteis no Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
-source-git-commit: 4e31b02815e32695d97eab0f563c71725bc79c11
+source-git-commit: 0f2cbe4ff8bdc083fff363d9623afe68a5132d6f
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 28%
+source-wordcount: '359'
+ht-degree: 88%
 
 ---
 
 # Adicionar pesquisas padrão aos seus conjuntos de dados
 
 >[!IMPORTANT]
->As Pesquisas padrão só estão disponíveis para fontes de dados do Conector de dados do Analytics no CJA. Você pode usá-los somente com implementações padrão da Adobe Analytics ou a variável [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)ou as APIs de coleta de dados do Experience Platform.
+>As Pesquisas padrão só estão disponíveis para fontes de dados do Conector de dados do Analytics no CJA. Você pode usá-las com implementações padrão do Adobe Analytics ou a variável [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)ou as APIs de coleta de dados do Experience Platform.
 
-As pesquisas padrão (também conhecidas como pesquisas fornecidas por Adobe) aprimoram a capacidade do Customer Journey Analytics de relatar em algumas dimensões/atributos que não são úteis por si só, mas são úteis quando unidas a outros dados. Exemplos incluem atributos de dispositivos móveis e atributos de dimensões de SO e navegador, como números de versão do navegador. Uma &quot;Pesquisa padrão&quot; é semelhante a um conjunto de dados de pesquisa. As pesquisas padrão são aplicáveis em organizações de Experience Cloud. Elas são automaticamente aplicadas a todos os conjuntos de dados de evento que contêm determinados campos de esquema XDM (veja abaixo os campos específicos). Existe um conjunto de dados de pesquisa padrão para cada localização de esquema que o Adobe está classificando.
+Pesquisas padrão (também conhecidas por pesquisas fornecidas pela Adobe) aprimoram a capacidade do Customer Journey Analytics em relatar algumas dimensões/atributos que não são úteis por si mesmos, mas são úteis quando unidos a outros dados. Exemplos incluem atributos de dispositivos móveis e atributos de dimensões de SO e navegador, como números de versão do navegador. Uma &quot;Pesquisa padrão&quot; é semelhante a um conjunto de dados de pesquisa. As pesquisas padrão são aplicáveis em organizações da Experience Cloud. Elas são automaticamente aplicadas a todos os conjuntos de dados de evento que contêm determinados campos de esquema XDM (veja abaixo os campos específicos). Existe um conjunto de dados de pesquisa padrão para cada localização de esquema que a Adobe está classificando.
 
-No Adobe Analytics tradicional, essas dimensões são exibidas sozinhas, enquanto no CJA, é necessário incluir essas dimensões ativamente ao criar visualizações de dados. No workflow Conexões , você seleciona um conjunto de dados que é sinalizado como um com uma chave para pesquisa padrão. A interface do usuário de Exibições de dados sabe automaticamente incluir todas as dimensões de pesquisa padrão, conforme disponíveis para relatórios. Os arquivos de pesquisa são automaticamente mantidos atualizados e disponíveis em todas as regiões e para todas as contas. Eles são armazenados em organizações específicas da região associadas ao cliente.
+No Adobe Analytics tradicional estas dimensões são exibidas sozinhas, enquanto no CJA é necessário incluir estas dimensões ativamente ao criar visualizações de dados. No fluxo de trabalho Conexões, você seleciona um conjunto de dados que é sinalizado com uma chave para pesquisa padrão. A interface de exibições de dados de usuário inclui automaticamente todas as dimensões de pesquisa padrão disponíveis para relatórios. Os arquivos de pesquisa são automaticamente mantidos atualizados e disponíveis em todas as regiões e para todas as contas. Eles são armazenados em organizações específicas da região associadas ao cliente.
 
-## Usar pesquisas padrão com conjuntos de dados do Adobe Data Connector
+## Usar pesquisas padrão com conjuntos de dados do Conector de dados da Adobe
 
-Os conjuntos de dados de pesquisa padrão são aplicados automaticamente no momento do relatório. Se você usar o Conector de dados do Analytics e trazer uma dimensão para a qual o Adobe fornece uma pesquisa padrão, nós aplicamos automaticamente essa pesquisa padrão. Se um conjunto de dados de evento contiver campos XDM, poderemos aplicar pesquisas padrão a ele.
+Os conjuntos de dados de pesquisa padrão são aplicados automaticamente no momento do relatório. Se você estiver usando o Conector de dados do Analytics e trouxer uma dimensão para a qual a Adobe fornece uma pesquisa padrão, aplicaremos automaticamente essa pesquisa padrão. Se um conjunto de dados de evento contiver campos XDM, poderemos aplicar pesquisas padrão a ele.
+
+<!--
+### Specific IDs that need to be populated
+
+The following IDs need to be populated in the specific XDM mixins for this functionality to work:
+
+* Environment Details Mixin – device/typeID value populated - Must match Device Atlas IDs and will populate device data.
+* Adobe Analytics ExperienceEvent Template Mixin or Adobe Analytics ExperienceEvent Full Extension Mixin with analytics/environment/browserIDStr and analytics/environment/operatingSystemIDStr. Both must match the Adobe IDs and  populate browser and OS data, respectively.
+
+You need these mixins with the three IDs populated (device/typeID, environment/browserIDStr, and environment/operatingSystemIDStr). The lookup dimensions will then be pulled automatically by CJA and will be available in the Data View.
+
+The catch here is that they can only populate those IDs today if they have a direct relationship with Device Atlas. They are Device Atlas IDs, and they provide an API to allow a customer to look them up. This is a significant hurdle, and we may just want to take the reference to this capability out of the product documentation until we have a productized way to expose the Device Atlas ID lookup functionality.
+-->
 
 ### Campos de pesquisa padrão disponíveis
 
@@ -58,10 +71,10 @@ Os conjuntos de dados de pesquisa padrão são aplicados automaticamente no mome
 
 ## Relatório sobre dimensões de pesquisa padrão
 
-Para criar relatórios sobre as dimensões de pesquisa padrão, é necessário adicioná-las ao criar uma visualização de dados no Customer Journey Analytics:
+Para relatar as dimensões de pesquisa padrão é necessário adicioná-las ao criar uma visualização de dados no Customer Journey Analytics:
 
 ![](assets/global-lookup.png)
 
-Você poderá ver os dados de pesquisa no Workspace:
+Você poderá ver os dados de pesquisa no Espaço de trabalho:
 
 ![](assets/gl-reporting.png)
