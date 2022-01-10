@@ -7,7 +7,7 @@ type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
 ht-degree: 100%
 
@@ -68,7 +68,7 @@ A tabela abaixo lista exemplos de valores de página e linha e a saída resultan
 | Página | Linha | Saída |
 |------|--------|----------------------|
 | 1 | 10 | 10 itens principais |
-| 2 | 10º | Itens 11-20 |
+| 2 | 10 | Itens 11-20 |
 | 1 | 100 | 100 itens principais |
 | 2 | 100 | Itens 101-200 |
 | 2 | 50.000 | Itens 50.001-100.000 |
