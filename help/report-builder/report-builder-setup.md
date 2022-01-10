@@ -7,7 +7,7 @@ type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
 ht-degree: 100%
 
@@ -80,7 +80,7 @@ Depois de instalar o Suplemento Report Builder, o ícone de Report Builder é ex
 
 ## Fazer logon no Report Builder
 
-Depois de instalar o Suplemento Report Builder para Excel na sua plataforma operacional ou navegador, siga estas etapas para fazer logon no Report Builder.
+Depois de instalar o Suplemento Report Builder for Excel na sua plataforma operacional ou navegador, siga estas etapas para fazer logon no Report Builder.
 
 1. Abra uma pasta de trabalho do Excel.
 
