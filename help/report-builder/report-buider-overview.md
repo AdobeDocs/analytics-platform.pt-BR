@@ -7,7 +7,7 @@ type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ O Report Builder for Customer Journey Analytics está disponível para Excel nas
 
 >[!NOTE]
 >
->Esta documentação é para o Report Builder for Customer Journey Analytics. Para obter informações sobre o Report Builder para o Analytics no Windows, consulte [Report Builder para Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html?lang=br).
+>Esta documentação é para o Report Builder for Customer Journey Analytics. Para obter informações sobre o Report Builder para o Analytics no Windows, consulte [Report Builder para Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/report-builder/home.html?lang=pt-BR).
 
 É possível baixar o Report Builder para Customer Journey Analytics na
 [Microsoft Store](https://www.microsoft.com/pt-br/store/apps/windows).
