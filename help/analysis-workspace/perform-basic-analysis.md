@@ -4,9 +4,9 @@ description: Descreve como usar visualizações básicas para analisar dados no 
 exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 85%
 
 Depois de criar conexões e visualizações de dados, analise os dados que você trouxe usando o potencial e a flexibilidade do Analysis Workspace. Experimente e arraste dimensões e métricas, altere configurações de atribuição de dimensões e métricas, nomes amigáveis, fuso horário, configurações de sessão etc.
 
-Esta é uma amostra de visualizações básicas no Workspace. Por exemplo, você pode
+Esta é uma amostra de visualizações básicas no Espaço de trabalho. Por exemplo, você pode
 
 * Criar um relatório classificado de quais fontes de dados mostram mais eventos, sessões e pessoas.
 
 * Criar um relatório de tendências de receita online versus na loja que compare as duas fontes de dados ao longo do tempo.
 
-* Detalhe o tamanho do público-alvo por fontes de dados, como dados de impressão de anúncio, dados de Customer Journey Analytics, dados de email, dados de PDV, dados da central de atendimento e dados de pesquisa.
+* Detalhe o tamanho do público-alvo por fontes de dados, como dados de impressão de anúncio, dados do Customer Journey Analytics, dados de email, dados de PDV, dados da central de atendimento e dados de pesquisa.
 
 ![](assets/cja-basic-analysis.png)
 
