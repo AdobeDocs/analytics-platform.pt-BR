@@ -4,7 +4,7 @@ description: Saiba como criar um conjunto de dados que vincula os dados da centr
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1148'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Importação de dados da central de atendimento e da Web
 
-O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar conjuntos de dados de diferentes fontes em um único projeto do Workspace. Use este guia para entender como sua organização pode combinar dados do site com dados da central de atendimento. Por exemplo, você pode entender quais ações um cliente toma, qual conteúdo ele visualiza e quais termos ele pesquisa antes de ele entrar em contato com o suporte ao cliente. Você pode então determinar o conteúdo e as ferramentas de autoatendimento para melhorar, a fim de que os clientes possam resolver os problemas sozinhos sem precisar entrar em contato.
+O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar conjuntos de dados de diferentes fontes em um único projeto do Espaço de trabalho. Use este guia para entender como sua organização pode combinar dados do site com dados da central de atendimento. Por exemplo, você pode entender quais ações um cliente toma, qual conteúdo ele visualiza e quais termos ele pesquisa antes de ele entrar em contato com o suporte ao cliente. Você pode então determinar o conteúdo e as ferramentas de autoatendimento para melhorar, a fim de que os clientes possam resolver os problemas sozinhos sem precisar entrar em contato.
 
 ## Pré-requisitos
 
