@@ -4,7 +4,7 @@ description: 'Explica como usar o Customer Journey Analytics (CJA) para assimila
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
 ht-degree: 100%
 
@@ -96,7 +96,7 @@ Para obter instruções, assista a este vídeo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-Você pode mapear os dados do evento GA em um conjunto de dados existente criado anteriormente ou criar um novo usando o esquema XDM escolhido. Depois que você seleciona o esquema, a Experience Platform aplica o aprendizado de máquina para mapear automaticamente cada um dos campos nos dados do Google Analytics para o [esquema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR).
+Você pode mapear os dados do evento GA em um conjunto de dados existente criado anteriormente ou criar um novo usando o esquema XDM escolhido. Depois que você seleciona o esquema, a Experience Platform aplica o aprendizado de máquina para mapear automaticamente cada um dos campos nos dados do Google Analytics para o [esquema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR#ui).
 
 ![](assets/schema-map.png)
 
@@ -154,4 +154,4 @@ Depois que a Adobe Experience Platform começar a receber os dados do Google Ana
 
 * Crie uma [visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#cja-dataviews) com base na conexão que contém dados do Google Analytics.
 
-* Faça uma [análise surpreendente no Workspace](/help/use-cases/ga-to-cja-reporting.md).
+* Faça uma [análise surpreendente no Espaço de trabalho](/help/use-cases/ga-to-cja-reporting.md).
