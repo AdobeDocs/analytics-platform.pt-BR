@@ -4,7 +4,7 @@ description: Uma visualização de dados especifica como você deseja interpreta
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Uma visualização de dados é um container específico do Customer Journey Anal
 
 Você pode criar visualizações de dados diferentes para a mesma conexão, com conjuntos de componentes muito diferentes (dimensões/métricas). Ou criar visualizações de dados com configurações diferentes para o tempo limite da visita, atribuição etc. Por exemplo, você pode ter uma visualização de dados em que todas as dimensões estão definidas como [!UICONTROL Último contato], e, simultaneamente, outra visualização de dados (com base no mesmo conjunto de dados) com todas as dimensões definidas com [!UICONTROL Primeiro contato].
 
-Os projetos do Workspace no Customer Journey Analytics são baseados em visualizações de dados.
+Os projetos do Espaço de trabalho no Customer Journey Analytics são baseados em visualizações de dados.
 
 ## Recursos de visualizações de dados
 
@@ -33,13 +33,13 @@ As visualizações de dados permitem que você altere espontaneamente as configu
 
 * **É possível criar várias métricas com diferentes modelos de atribuição ou com janelas de pesquisa diferentes** do mesmo campo de esquema.
 
-* **Você pode editar a ID de um componente**; isso é usado para oferecer compatibilidade entre visualizações de dados. A ID do componente é o que a API de relatórios usa para identificar uma métrica ou dimensão específica. Como você pode criar arbitrariamente muitas métricas ou dimensões de um campo XDM, ofereceremos a opção de definir sua própria ID de componente. Como resultado, uma métrica usada em um projeto do Workspace pode ser compatível entre as visualizações de dados (e a API), mesmo que seja baseada em campos totalmente distintos de conexões ou visualizações de dados diferentes ou de um esquema distinto no XDM.
+* **Você pode editar a ID de um componente**; isso é usado para oferecer compatibilidade entre visualizações de dados. A ID do componente é o que a API de relatórios usa para identificar uma métrica ou dimensão específica. Como você pode criar arbitrariamente muitas métricas ou dimensões de um campo XDM, ofereceremos a opção de definir sua própria ID de componente. Como resultado, uma métrica usada em um projeto do Espaço de trabalho pode ser compatível entre as visualizações de dados (e a API), mesmo que seja baseada em campos totalmente distintos de conexões ou visualizações de dados diferentes ou de um esquema distinto no XDM.
 
 * **Você pode especificar o nome amigável do componente que aparecerá no Analysis Workspace**. Por padrão, esse nome é herdado do nome de exibição do esquema, mas agora você pode substituí-lo para essa visualização de dados específica.
 
 * **Você pode visualizar mais informações relacionadas ao esquema sobre componentes**, como: de que tipo de conjunto de dados (evento, perfil, pesquisa) ele veio; qual tipo de esquema (cadeia de caracteres, número inteiro etc.) De onde ele veio e seu caminho de esquema (o campo XDM no qual ele se baseia).
 
-* **Você pode marcar um componente** para facilitar a pesquisa no Workspace.
+* **Você pode marcar um componente** para facilitar a pesquisa no Espaço de trabalho.
 
 * **Você pode ocultar um componente nos relatórios**. Algumas configurações de métricas e dimensões exigem uma segunda métrica ou dimensão para configuração (como desduplicação de métrica ou desduplicação de compra, por exemplo). Isso permite definir uma métrica ou dimensão que pode ser usada nas configurações de outra métrica ou dimensão sem ser exposta diretamente nos relatórios (como ID de compra).
 
@@ -49,14 +49,14 @@ As visualizações de dados permitem que você altere espontaneamente as configu
 
 * Para dimensões, você pode **incluir ou excluir automaticamente apenas determinados valores em um campo específico**. Por exemplo, se um desenvolvedor enviar um valor incorreto de `dev mistake` em um campo, você poderá facilmente excluí-lo dos relatórios usando uma regra de exclusão e ele se comportará como se nunca tivesse existido nos dados.
 
-* Você pode **renomear seus containers** em uma visualização de dados e fazer com que esses containers renomeados apareçam em qualquer projeto do Workspace com base nessa visualização de dados.
+* Você pode **renomear seus containers** em uma visualização de dados e fazer com que esses containers renomeados apareçam em qualquer projeto do Espaço de trabalho com base nessa visualização de dados.
 
 ## Pré-requisitos de visualizações de dados
 
 * Antes de criar visualizações de dados, é necessário [configurar uma ou mais conexões com os conjuntos de dados da Experience Platform](/help/connections/create-connection.md).
-* Para criar ou gerenciar uma visualização de dados, você precisa de um [conjunto de permissões no Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR).
+* Para criar ou gerenciar uma visualização de dados, você precisa de um [conjunto de permissões no Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR#admin-access-permissions).
 
-## Configurações de visualização de dados que você pode substituir no Workspace
+## Configurações de visualização de dados que você pode substituir no Espaço de trabalho
 
 Algumas configurações de visualização de dados podem ser substituídas no Analysis Workspace no nível do projeto, outras não.
 
@@ -64,7 +64,7 @@ Algumas configurações de visualização de dados podem ser substituídas no An
 * Atribuição de métrica
 * Se os usuários veem ou não o item da linha [!UICONTROL Nenhum valor] em um relatório
 
-## Configurações de visualização de dados que não podem ser substituídas no Workspace
+## Configurações de visualização de dados que não podem ser substituídas no Espaço de trabalho
 
 * [!UICONTROL Tipo de componente]
 * Formatação de métrica
@@ -73,7 +73,7 @@ Algumas configurações de visualização de dados podem ser substituídas no An
 
 ## Excluir visualizações de dados
 
-Se você excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que qualquer projeto do [!UICONTROL Workspace] que depende dessa visualização de dados excluída deixará de funcionar.
+Se você excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que qualquer projeto do [!UICONTROL Espaço de trabalho] que depende dessa visualização de dados excluída deixará de funcionar.
 
 ## Próximas etapas
 
