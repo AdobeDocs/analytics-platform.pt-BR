@@ -4,7 +4,7 @@ description: Entenda como o CJA cria relatórios sobre hierarquias de dados.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Ao criar uma visualização de dados, as seguintes dimensões e métricas estão
 
 ### Exemplos de ocorrências idênticas (comportamento do relatório)
 
-Usando apenas a ocorrência acima, as tabelas a seguir mostram os relatórios do Workspace com algumas combinações de dimensão e métrica.
+Usando apenas a ocorrência acima, as tabelas a seguir mostram os relatórios do Espaço de trabalho com algumas combinações de dimensão e métrica.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
