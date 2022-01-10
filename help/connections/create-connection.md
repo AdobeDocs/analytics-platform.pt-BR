@@ -4,7 +4,7 @@ description: Descreve como criar uma conexão com um conjunto de dados da plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1980'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Criar uma conexão
 
-Uma conexão permite integrar conjuntos de dados do [!DNL Adobe Experience Platform] ao [!UICONTROL Workspace]. Para criar relatórios sobre conjuntos de dados do [!DNL Experience Platform], primeiro é necessário estabelecer uma conexão entre os conjuntos de dados no [!DNL Experience Platform] e no [!UICONTROL Workspace].
+Uma conexão permite integrar conjuntos de dados do [!DNL Adobe Experience Platform] ao [!UICONTROL Espaço de trabalho]. Para criar relatórios sobre conjuntos de dados do [!DNL Experience Platform], primeiro é necessário estabelecer uma conexão entre os conjuntos de dados no [!DNL Experience Platform] e no [!UICONTROL Espaço de trabalho].
 
 Clique [aqui](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=pt-BR) para obter uma visão geral do vídeo.
 
@@ -121,7 +121,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
    | [!UICONTROL Nomear a conexão] | Dê um nome descritivo à conexão. A conexão não pode ser salva sem um nome. |
    | [!UICONTROL Descrição] | Adicione mais detalhes para diferenciar essa conexão de outras pessoas. |
    | [!UICONTROL Conjuntos de dados] | Os conjuntos de dados incluídos nesta conexão. |
-   | [!UICONTROL Importe automaticamente todos os novos conjuntos de dados nesta conexão, a partir de hoje.] | Selecione essa opção se quiser estabelecer uma conexão contínua, para que qualquer novo lote de dados adicionado aos conjuntos de dados nesta conexão continuem automaticamente fluindo para o [!UICONTROL Workspace]. |
+   | [!UICONTROL Importe automaticamente todos os novos conjuntos de dados nesta conexão, a partir de hoje.] | Selecione essa opção se quiser estabelecer uma conexão contínua, para que qualquer novo lote de dados adicionado aos conjuntos de dados nesta conexão continuem automaticamente fluindo para o [!UICONTROL Espaço de trabalho]. |
    | [!UICONTROL Importar todos os dados existentes] | Ao selecionar essa opção e salvar a conexão, todos os dados existentes (históricos) do [!DNL Experience Platform] de todos os conjuntos de dados que estão nessa conexão serão importados ou terão preenchimento retroativo. No futuro, todos os dados históricos existentes para qualquer conjunto de dados novo adicionado a essa conexão salva também serão importados automaticamente. Consulte também [Dados históricos de preenchimento retroativo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#backfill-historical-data) abaixo.<br>**Observe que, uma vez que essa conexão é salva, essa configuração não pode ser alterada.** |
    | [!UICONTROL Número médio de eventos diários] | É necessário especificar o número médio de eventos diários que serão importados (novos dados **e** dados de preenchimento retroativo) para todos os conjuntos de dados na conexão. Selecione uma opção no menu suspenso para que a Adobe possa alocar espaço suficiente para esses dados.<br>Se você não souber o número médio de eventos diários que sua empresa vai importar, é possível realizar um query SQL simples em [Serviços de query da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) para descobrir.<br>Consulte &quot;Calcular o número médio de eventos diários&quot; abaixo. |
 
@@ -141,7 +141,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 
 Esse cálculo deve ser concluído para cada conjunto de dados na conexão.
 
-1. Vá para os [Serviços de consulta da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) e crie uma nova consulta.
+1. Vá para os [Serviços de consulta da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) e crie uma nova consulta.
 
 1. A consulta seria semelhante a:<br>`Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;`
 
