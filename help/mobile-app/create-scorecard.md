@@ -6,7 +6,7 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1378'
 ht-degree: 100%
 
@@ -140,7 +140,7 @@ Esta visualização mostra barras horizontais que representam vários valores de
 
 ![barra horizontal](assets/horizontal.png)
 
-### Remover item de dimensão [!UICONTROL Não especificado] 
+### Remover item de dimensão [!UICONTROL Não especificado]
 
 Caso queira remover itens de dimensões [!UICONTROL Não especificados] dos seus dados, faça o seguinte:
 
