@@ -4,9 +4,9 @@ description: Relatar o uso atual do Customer Journey Analytics
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ Talvez seja necessário saber quantas linhas de dados você tem atualmente no [!
 O número de eventos realmente assimilados no [!UICONTROL Customer Journey Analytics] depende das configurações da sua conexão. Além disso, se você tiver selecionado a ID de pessoa incorreta ou se essa ID não estiver disponível para algumas linhas nos conjuntos de dados, o [!UICONTROL Customer Journey Analytics] ignorará essas linhas. Para determinar as linhas reais de eventos assimilados, siga estas etapas:
 
 1. Depois de salvar a conexão, crie uma visualização de dados da mesma conexão sem filtros.
-1. Crie um projeto do Workspace e selecione a visualização de dados correta. Crie uma tabela de forma livre e arraste e solte a métrica **[!UICONTROL Eventos]** com uma dimensão **[!UICONTROL Ano]**. Escolha um intervalo de datas grande o suficiente do seu calendário de seleção de datas para encapsular todos os dados da conexão. Isso permite que você veja o número de eventos que estão sendo assimilados no [!UICONTROL Customer Journey Analytics].
+1. Crie um projeto do Espaço de trabalho e selecione a visualização de dados correta. Crie uma tabela de forma livre e arraste e solte a métrica **[!UICONTROL Eventos]** com uma dimensão **[!UICONTROL Ano]**. Escolha um intervalo de datas grande o suficiente do seu calendário de seleção de datas para encapsular todos os dados da conexão. Isso permite que você veja o número de eventos que estão sendo assimilados no [!UICONTROL Customer Journey Analytics].
 
-   ![Projeto do Workspace](assets/event-number.png)
+   ![Projeto do Espaço de trabalho](assets/event-number.png)
 
    >[!NOTE]
    >
