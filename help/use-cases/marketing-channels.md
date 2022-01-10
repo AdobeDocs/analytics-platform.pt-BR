@@ -4,7 +4,7 @@ description: Use o Conector de dados do Analytics para trazer regras de processa
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ Se sua organização usar o [Conector de dados do Analytics](https://experiencel
 
 ## Pré-requisitos
 
-* Os dados do conjunto de relatórios já devem ser importados para a Adobe Experience Platform usando o [Conector de dados do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Outras fontes de dados não são suportadas, pois os canais de marketing dependem das regras de processamento em um conjunto de relatórios do Analytics.
+* Os dados do conjunto de relatórios já devem ser importados para a Adobe Experience Platform usando o [Conector de dados do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). Outras fontes de dados não são suportadas, pois os canais de marketing dependem das regras de processamento em um conjunto de relatórios do Analytics.
 * As regras de processamento do canal de marketing já devem estar configuradas. Consulte [Regras de processamento para Canais de marketing](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-rules.html?lang=pt-BR) no guia tradicional Componentes do Analytics.
 
 ## Elementos do esquema do Canal de marketing
@@ -27,7 +27,7 @@ Depois que você estabelecer o Conector de dados do Analytics em um conjunto de 
 2. [Crie uma visualização de dados](/help/data-views/create-dataview.md) que inclua as seguintes dimensões:
    * **`channel.typeAtSource`**: Equivalente à dimensão [Canal de marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=pt-BR).
    * **`channel._id`**: Equivalente aos [detalhes do Canal de marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html?lang=pt-BR)
-3. Dê a cada dimensão o modelo de atribuição e a persistência desejados. Se desejar as dimensões de primeiro e último contato, arraste cada dimensão do canal de marketing para a área de componentes várias vezes. Dê a cada dimensão o modelo de atribuição e a persistência desejados. A Adobe também recomenda dar um nome de exibição a cada dimensão para facilitar o uso no Workspace.
+3. Dê a cada dimensão o modelo de atribuição e a persistência desejados. Se desejar as dimensões de primeiro e último contato, arraste cada dimensão do canal de marketing para a área de componentes várias vezes. Dê a cada dimensão o modelo de atribuição e a persistência desejados. A Adobe também recomenda dar um nome de exibição a cada dimensão para facilitar o uso no Espaço de trabalho.
 4. Crie a visualização de dados.
 
 Suas dimensões do canal de marketing agora estão disponíveis para uso no Analysis Workspace.
@@ -61,5 +61,5 @@ Como a arquitetura da Adobe Experience Platform é diferente de um conjunto de r
 * Verifique se as diferenças de arquitetura listadas acima não afetam sua comparação. Isso inclui a remoção de canais que não substituem o canal de último contato e a remoção de critérios de regras que são o primeiro hit de uma visita (sessão).
 * Verifique se sua conexão usa o mesmo conjunto de relatórios que o Analytics tradicional. Se sua conexão com o CJA contiver vários conjuntos de relatórios com suas próprias regras de processamento do Canal de marketing, não haverá uma maneira fácil de compará-los com o Analytics tradicional. Você gostaria de criar uma conexão separada para cada conjunto de relatórios para comparar os dados.
 * Compare os mesmos intervalos de datas e verifique se a configuração de fuso horário na visualização de dados é a mesma do fuso horário do conjunto de relatórios.
-* Use um modelo de atribuição personalizado ao exibir dados do conjunto de relatórios. Por exemplo, use a dimensão [Canal de marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) com métricas que usam um modelo de atribuição não padrão. A Adobe recomenda não comparar as dimensões padrão [Canal de primeiro contato](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=pt-BR) ou [Canal de último contato](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=pt-BR), pois dependem da atribuição coletada no conjunto de relatórios. O CJA não depende dos dados de atribuição de um conjunto de relatórios; em vez disso, eles são calculados quando um relatório do CJA é executado.
+* Use um modelo de atribuição personalizado ao exibir dados do conjunto de relatórios. Por exemplo, use a dimensão [Canal de marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=pt-BR) com métricas que usam um modelo de atribuição não padrão. A Adobe recomenda não comparar as dimensões padrão [Canal de primeiro contato](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=pt-BR) ou [Canal de último contato](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=pt-BR), pois dependem da atribuição coletada no conjunto de relatórios. O CJA não depende dos dados de atribuição de um conjunto de relatórios; em vez disso, eles são calculados quando um relatório do CJA é executado.
 * Algumas métricas não têm uma comparação razoável devido a diferenças arquitetônicas entre os dados do conjunto de relatórios e os dados da plataforma. Os exemplos incluem visitas/sessões, visitantes/pessoas e ocorrências/eventos.
