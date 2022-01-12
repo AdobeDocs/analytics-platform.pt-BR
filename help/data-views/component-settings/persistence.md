@@ -3,10 +3,10 @@ title: Configurações do componente de persistência
 description: Determine como ou se os valores de dimensão persistem de um evento para o próximo.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 25557196c9841489e2732dece2c3402ebaf6224e
+source-git-commit: 8c82aad72beca8d206d30f8f0e842445fd18758b
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 73%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,12 +55,12 @@ Detalhes sobre as configurações de alocação disponíveis.
 
 * **[!UICONTROL Primeiro conhecimento]** e **[!UICONTROL Último conhecimento]**: (19 de janeiro de 2022 ) Esses dois modelos de alocação atendem a casos de uso de dimensão &quot;entrada&quot; e &quot;saída&quot;. Eles pegam o primeiro ou o último valor observado de uma dimensão dentro de um escopo de persistência especificado (sessão, pessoa ou período de tempo personalizado com lookback) e o aplicam a todos os eventos dentro do escopo especificado. Exemplo:
 
-| Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
-| --- | --- | --- | --- | --- | --- |
-| Carimbo de data e hora (min) | 1 | 2 | 3 | 6 | 7 |
-| Valores originais |  | C | B |  | A |
-| Primeiro conhecido | C | C | C | C | C |
-| Último conhecimento | A | A | A | A | A |
+   | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
+   | --- | --- | --- | --- | --- | --- |
+   | Carimbo de data e hora (min) | 1 | 2 | 3 | 6 | 7 |
+   | Valores originais |  | C | B |  | A |
+   | Primeiro conhecido | C | C | C | C | C |
+   | Último conhecimento | A | A | A | A | A |
 
 ## Configurações de [!UICONTROL Expiração]
 
