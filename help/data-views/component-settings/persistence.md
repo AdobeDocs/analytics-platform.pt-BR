@@ -3,10 +3,10 @@ title: Configurações do componente de persistência
 description: Determine como ou se os valores de dimensão persistem de um evento para o próximo.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '588'
-ht-degree: 100%
+source-git-commit: 4d45314ae77ee1ca78bbd44b0aa08add0f7030cc
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 78%
 
 ---
 
@@ -61,3 +61,15 @@ Detalhes sobre as configurações de expiração disponíveis.
 * **Pessoa**: expira ao final da janela de relatório.
 * **Hora**: Você pode configurar o valor da dimensão para expirar após um período de tempo especificado (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente. Ao usar a expiração com base em tempo, os valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
 * **Métrica**: quando essa métrica é vista em uma ocorrência, expire imediatamente o valor persistente na dimensão. Você pode usar qualquer métrica como o fim da expiração dessa dimensão. Essa opção de expiração só está disponível para as configurações de alocação Original e Mais recente.
+
+## [!UICONTROL Dimensão de ligação]
+
+Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de dimensão em outra dimensão. As opções de lista suspensa válidas incluem outras dimensões incluídas na visualização de dados.
+
+Normalmente, essa configuração é usada em arrays de objetos e é mais usada para medir coisas como métodos de descoberta de produtos, resultados de pesquisa interna, impressões de promoções internas ou recomendações de conteúdo ou produto. Em versões anteriores do Adobe Analytics, esse conceito era conhecido como merchandising de sintaxe de conversão.
+
+## [!UICONTROL Métrica de ligação]
+
+Uma lista suspensa que permite escolher uma métrica que atue como um acionador de vínculo. As opções de lista suspensa válidas incluem métricas incluídas na visualização de dados.
+
+Essa configuração só aparece quando o Dimension de Vínculo é menor na matriz de objetos do que no componente. Quando a métrica de vínculo está presente em um evento, os valores de dimensão são copiados da dimensão em nível de evento para o nível de esquema inferior da dimensão de vínculo. Em versões anteriores do Adobe Analytics, um conceito semelhante, mas mais limitado, é conhecido como merchandising de sintaxe de produto.
