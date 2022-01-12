@@ -3,9 +3,9 @@ title: Configurações do componente de persistência
 description: Determine como ou se os valores de dimensão persistem de um evento para o próximo.
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
-source-git-commit: 4d45314ae77ee1ca78bbd44b0aa08add0f7030cc
+source-git-commit: 3b00b8fe5dd4687bb8022d8e6e5e98ad2d535866
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '753'
 ht-degree: 78%
 
 ---
@@ -66,7 +66,7 @@ Detalhes sobre as configurações de expiração disponíveis.
 
 Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de dimensão em outra dimensão. As opções de lista suspensa válidas incluem outras dimensões incluídas na visualização de dados.
 
-Normalmente, essa configuração é usada em arrays de objetos e é mais usada para medir coisas como métodos de descoberta de produtos, resultados de pesquisa interna, impressões de promoções internas ou recomendações de conteúdo ou produto. Em versões anteriores do Adobe Analytics, esse conceito era conhecido como merchandising de sintaxe de conversão.
+Normalmente, essa configuração é usada em arrays de objetos e é mais usada para medir coisas como métodos de descoberta de produtos, resultados de pesquisa interna, impressões de promoções internas ou recomendações de conteúdo ou produto. Em versões anteriores do Adobe Analytics, esse conceito era semelhante ao merchandising da sintaxe de conversão.
 
 ## [!UICONTROL Métrica de ligação]
 
