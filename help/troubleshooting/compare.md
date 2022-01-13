@@ -3,13 +3,13 @@ title: Comparar seus dados AA aos dados do CJA
 description: Saiba como comparar seus dados do Adobe Analytics com os dados do Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
-source-git-commit: b0d29964c67d8a6a847a05dbe113b8213b346f9b
+exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
+source-git-commit: 6f77dd9caef1ac8c838f825a48ace6cf533d28a9
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '699'
 ht-degree: 4%
 
 ---
-
 
 # Comparar os dados do Adobe Analytics aos dados do CJA
 
@@ -26,7 +26,6 @@ Estas são algumas etapas a seguir para comparar seus dados originais do Adobe A
 * Verifique se o conjunto de dados do Analytics na AEP contém dados para o intervalo de datas que você está investigando.
 
 * Verifique se o conjunto de relatórios selecionado no Analytics corresponde ao conjunto de relatórios que foi assimilado no Adobe Experience Platform.
-
 
 ## Etapa 1: Executar a métrica Ocorrências no Adobe Analytics
 
@@ -48,7 +47,7 @@ O total de registros por carimbos de data e hora deve corresponder a Ocorrência
 >
 >Isso funciona somente para conjuntos de dados de valores mid comuns, não para conjuntos de dados compilados (via [Análise entre canais](/help/connections/cca/overview.md)). Observe que a contabilização da ID de pessoa que está sendo usada no CJA é essencial para fazer a comparação funcionar. Isso nem sempre pode ser fácil de replicar no AA, especialmente se o Cross-Channel Analytics tiver sido ativado.
 
-1. No Adobe Experience Platform [Serviços de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), execute o seguinte query Total Records by timestamps :
+1. No Adobe Experience Platform [Serviços de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html), execute o seguinte [!UICONTROL Total de registros por carimbos de data e hora] query:
 
 ```
 SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \ 
@@ -62,7 +61,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. Em [Feeds de dados do Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR), identifique nos dados brutos se algumas linhas podem ser soltas pelo conector do Analytics Source.
+1. Em [Feeds de dados do Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR), identifique nos dados brutos se algumas linhas podem ter sido soltas pelo conector do Analytics Source.
 
    O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) pode soltar linhas durante a transformação para o esquema XDM. Pode haver vários motivos para que a linha inteira seja imprópria para transformação. Se qualquer um dos campos do Analytics a seguir tiver esses valores, a linha inteira será solta.
 
@@ -75,7 +74,7 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
    | Hit_source | 0,3,5,7,8,9,10 |
    | Page_event | 53 63 |
 
-1. Se o conector soltou linhas, subtraia essas linhas da métrica Ocorrências. O número resultante deve corresponder ao número de eventos nos conjuntos de dados da AEP.
+1. Se o conector soltar linhas, subtraia essas linhas do [!UICONTROL Ocorrências] métrica. O número resultante deve corresponder ao número de eventos nos conjuntos de dados do Adobe Experience Platform.
 
 ## Por que os registros podem ser descartados ou ignorados durante a assimilação do AEP
 
@@ -83,12 +82,8 @@ CJA [Conexões](/help/connections/create-connection.md) permite reunir vários c
 
 Estas são algumas das razões pelas quais registros podem ser ignorados ao assimilar dados do AEP.
 
-* **Carimbos de data e hora ausentes** - Se os carimbos de data e hora estiverem ausentes dos conjuntos de dados do evento, esses registros serão totalmente ignorados ou ignorados durante a assimilação. porque permitiam que o conjunto de dados fosse unido.
+* **Carimbos de data e hora ausentes** - Se os carimbos de data e hora estiverem ausentes dos conjuntos de dados do evento, esses registros serão totalmente ignorados ou ignorados durante a assimilação.
 
 * **IDs de pessoa ausentes** - IDs de pessoa ausentes (do conjunto de dados de eventos e/ou do conjunto de dados de perfil/pesquisa) fazem com que esses registros sejam ignorados ou ignorados. O motivo é que não há IDs comuns ou chaves correspondentes para unir os registros.
 
-* **IDs de pessoa inválidas** - Com IDs inválidas, o sistema não pode encontrar uma ID comum válida entre os conjuntos de dados para unir. Em alguns casos, a coluna ID de pessoa tem IDs de pessoa inválidas, como &quot;indefinidas&quot; ou &quot;00000000&quot;.
-
-* **ID de pessoa grande** - Uma ID de pessoa com qualquer combinação de números e letras que apareça em um evento mais de 1 milhão de vezes por mês não pode ser atribuída a um usuário ou pessoa específica. Ele será categorizado como inválido. Esses registros não podem ser assimilados no sistema e resultam em assimilação e relatórios propensos a erros.
-
-
+* **IDs de pessoa inválidas ou grandes** - Com IDs inválidas, o sistema não pode encontrar uma ID comum válida entre os conjuntos de dados para unir. Em alguns casos, a coluna ID de pessoa tem IDs de pessoa inválidas, como &quot;indefinidas&quot; ou &quot;00000000&quot;. Uma ID de pessoa (com qualquer combinação de números e letras) que aparece em um evento mais de 1 milhão de vezes por mês não pode ser atribuída a um usuário ou pessoa específica. Ele será categorizado como inválido. Esses registros não podem ser assimilados no sistema e resultam em assimilação e relatórios propensos a erros.
