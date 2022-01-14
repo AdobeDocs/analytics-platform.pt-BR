@@ -4,9 +4,9 @@ description: Página inicial do Customer Journey Analytics.
 exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 source-git-commit: 3389515bd18903eda14af1670ff7d1ab080c9db2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,8 +23,8 @@ Os clientes do Analytics Select, Prime e Ultimate podem adquirir esse produto co
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Itens novos ou especiais</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#connection-detail"> Como usar os recursos aprimorados de gerenciamento de conexão </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=pt-BR#cja-dataviews"> Como usar os recursos aprimorados de Visualizações de dados </a> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#connection-detail"> Como usar os recursos aprimorados do gerenciamento de conexão? </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=pt-BR#cja-dataviews"> Como usar os recursos aprimorados das visualizações de dados? </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja.html?lang=pt-BR#cja-usecases"> Documentação sobre assimilação de dados do Google Analytics na Adobe Experience Platform </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/ga-to-cja-reporting.html?lang=pt-BR#cja-usecases"> Documentação sobre análise de dados do Google Analytics no CJA </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR#cja-connections"> Análise entre canais (compilação de IDs no Customer Journey Analytics) </a> </li>
