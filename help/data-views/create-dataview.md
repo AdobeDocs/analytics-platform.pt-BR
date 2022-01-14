@@ -3,10 +3,10 @@ title: Criar ou editar uma visualização de dados
 description: Todas as configurações que podem ser ajustadas para criar ou editar uma visualização de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 99%
+source-wordcount: '1217'
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ A criação de uma visualização de dados envolve a criação de métricas e di
 
 ![Nova visualização de dados](assets/new-data-view.png)
 
-### Configurações
+### Configurações de exibição de dados
 
 Fornece configurações abrangentes para a visualização de dados.
 
@@ -29,7 +29,7 @@ Fornece configurações abrangentes para a visualização de dados.
 | --- | --- |
 | [!UICONTROL Conexão] | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém um ou mais conjuntos de dados da Adobe Experience Platform. |
 | [!UICONTROL Nome] | Obrigatório. O nome da visualização de dados. Esse valor aparece na lista suspensa no canto superior direito do Analysis Workspace. |
-| [!UICONTROL Descrição] | Opcional. A Adobe recomenda uma descrição detalhada para que os usuários entendam por que a visualização de dados existe e para quem ela foi projetada. |
+| [!UICONTROL Descrição] | Opcional. O Adobe recomenda uma descrição detalhada para que os usuários entendam por que a visualização de dados existe e para quem ela foi projetada. |
 
 ### Contêineres
 

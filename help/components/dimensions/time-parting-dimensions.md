@@ -2,15 +2,14 @@
 description: A separação de tempo coleta o carimbo de data e hora de ocorrências coletadas e o divide em dimensões mais significativas, como "Horas do dia" ou "Dias de semana".
 title: Dimensões de separação de tempo
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-translation-type: tm+mt
-source-git-commit: 2685d75dac9ad7e74f2010dda82cd1d4d65dbd7b
+source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 91%
+source-wordcount: '193'
+ht-degree: 93%
 
 ---
 
-# Dimensões de separação de tempo
+# Dimensões de separação de tempo no Analysis Workspace
 
 A separação de tempo coleta o carimbo de data e hora de ocorrências coletadas e o divide em dimensões mais significativas, como &quot;Horas do dia&quot; ou &quot;Dias de semana&quot;.
 
@@ -20,8 +19,6 @@ As dimensões de separação de tempo são baseadas no fuso horário da visualiz
 * Há dias da semana ou horas do dia nas quais a conversão é mais alta no meu site ou aplicativo?
 * Como minhas vendas de fim de semana se comparam com as da semana?
 * Determinada campanha de marketing gera conversões maiores pela manhã ou à tarde?
-
-## Dimensões de separação de tempo no Analysis Workspace
 
 | Dimensão | Valores de exemplo |
 |--- |--- |
