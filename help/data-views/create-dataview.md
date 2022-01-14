@@ -3,10 +3,10 @@ title: Criar ou editar uma visualização de dados
 description: Todas as configurações que podem ser ajustadas para criar ou editar uma visualização de dados.
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: 5a1a1842532001ca0d53d5d7562272fe1651b870
+workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,21 +84,23 @@ Em seguida, você pode criar métricas e dimensões com base em elementos do esq
    * [[!UICONTROL Persistência]](component-settings/persistence.md)
    * [[!UICONTROL Classificação de valor]](component-settings/value-bucketing.md)
 
-Se necessário, você pode usar os seguintes recursos:
+## Métricas ou dimensões duplicadas
 
-* **[!UICONTROL Duplicar]**: duplicar métricas ou dimensões e modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões a partir de um único campo de esquema. Selecione a configuração [!UICONTROL Duplicar] abaixo do nome da métrica ou das dimensões no canto superior direito. Modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
+Duplicar métricas ou dimensões e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões por meio de um único campo de esquema. Selecione a configuração [!UICONTROL Duplicar] abaixo do nome da métrica ou das dimensões no canto superior direito. Modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
 
-   ![Duplicar](assets/duplicate.png)
+![Duplicar](assets/duplicate.png)
 
-* **[!UICONTROL Filtro]**: você pode filtrar os campos do esquema no painel esquerdo pelos seguintes tipos de dados:
+## Filtrar campos ou conjuntos de dados do esquema
 
-   ![Filtrar campos](assets/filter-fields.png)
+Você pode filtrar campos de esquema no painel esquerdo pelos seguintes tipos de dados:
 
-   Também é possível filtrar por conjuntos de dados e se um campo de esquema contém dados ou se é uma identidade. Por padrão, a Adobe aplica inicialmente o filtro **[!UICONTROL Contém dados]** a todas as visualizações de dados.
+![Filtrar campos](assets/filter-fields.png)
 
-   ![Filtrar outros](assets/filter-other.png)
+Também é possível filtrar por conjuntos de dados e se um campo de esquema contém dados ou se é uma identidade. Por padrão, a Adobe aplica inicialmente o filtro **[!UICONTROL Contém dados]** a todas as visualizações de dados.
 
-## Configurações
+![Filtrar outros](assets/filter-other.png)
+
+## Configurações guia
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e acesse a guia **[!UICONTROL Visualizações de dados]**.
 1. Clique em **[!UICONTROL Adicionar]** para criar uma visualização de dados ou clique em uma visualização de dados existente para editá-la.
