@@ -10,9 +10,9 @@ user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 1f0851fa9543439467d6514e22cbe82eafad87c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '565'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,10 +33,10 @@ ht-degree: 98%
    + [Estimar tamanho da conexão](connections/estimate-connection-size.md)
    + [Conjuntos de dados de evento combinados](connections/combined-dataset.md)
    + [Pesquisas padrão](connections/standard-lookups.md)
-   + Análise de vários canais {#cca}
-      + [Visão geral da Análise de vários canais](connections/cca/overview.md)
+   + Análise entre canais {#cca}
+      + [Visão geral da Análise entre canais](connections/cca/overview.md)
       + [Como funcionam as repetições](connections/cca/replay.md)
-      + [Perguntas frequentes sobre a Análise de vários canais](connections/cca/faq.md)
+      + [Perguntas frequentes sobre a Análise entre canais](connections/cca/faq.md)
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das visualizações de dados](data-views/data-views.md)
    + [Criar ou editar uma visualização de dados](data-views/create-dataview.md)
@@ -201,7 +201,7 @@ ht-degree: 98%
    + [Configurar executivos para usar painéis](mobile-app/set-up-execs.md)
    + [Guia de início rápido do usuário executivo](mobile-app/executive.md)
 + Solução de problemas {#troubleshooting}
-   + [Comparar os dados do Adobe Analytics aos dados do CJA](troubleshooting/compare.md)
+   + [Comparar os dados do Adobe Analytics com os dados do CJA](troubleshooting/compare.md)
 + Privacidade {#cja-privacy}
    + [Visão geral de privacidade](privacy/privacy-overview.md)
 + [Atualizações da documentação CJA](doc-changes.md)
