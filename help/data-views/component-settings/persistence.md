@@ -4,9 +4,9 @@ description: Determine como ou se os valores de dimensão persistem de um evento
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 source-git-commit: 8c82aad72beca8d206d30f8f0e842445fd18758b
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '837'
+ht-degree: 100%
 
 ---
 
@@ -53,13 +53,13 @@ Detalhes sobre as configurações de alocação disponíveis.
    | Valores do conjunto de dados | A | B | C |  | A |
    | Toda alocação | A | A,B | A,B,C | A,B,C | A,B,C |
 
-* **[!UICONTROL Primeiro conhecimento]** e **[!UICONTROL Último conhecimento]**: (19 de janeiro de 2022 ) Esses dois modelos de alocação atendem a casos de uso de dimensão &quot;entrada&quot; e &quot;saída&quot;. Eles pegam o primeiro ou o último valor observado de uma dimensão dentro de um escopo de persistência especificado (sessão, pessoa ou período de tempo personalizado com lookback) e o aplicam a todos os eventos dentro do escopo especificado. Exemplo:
+* **[!UICONTROL Primeiro conhecimento]** e **[!UICONTROL Último conhecimento]**: (19 de janeiro de 2022 ) Esses dois modelos de alocação atendem a casos de uso de dimensão de “entrada” e “saída”. Eles selecionam o primeiro ou o último valor observado de uma dimensão dentro de um escopo de persistência especificado (sessão, pessoa ou período de tempo personalizado com retrospectiva) e o aplicam a todos os eventos dentro do escopo especificado. Exemplo:
 
    | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
    | --- | --- | --- | --- | --- | --- |
    | Carimbo de data e hora (min) | 1 | 2 | 3 | 6 | 7 |
    | Valores originais |  | C | B |  | A |
-   | Primeiro conhecido | C | C | C | C | C |
+   | Primeiro conhecimento | C | C | C | C | C |
    | Último conhecimento | A | A | A | A | A |
 
 ## Configurações de [!UICONTROL Expiração]
@@ -68,17 +68,17 @@ Detalhes sobre as configurações de expiração disponíveis.
 
 * **Sessão**: expira após uma determinada sessão. Janela de expiração padrão.
 * **Pessoa**: expira ao final da janela de relatório.
-* **Hora**: Você pode configurar o valor da dimensão para expirar após um período de tempo especificado (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente. Ao usar a expiração com base em tempo, os valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
+* **Hora**: você pode configurar o valor da dimensão para expirar após um período de tempo especificado (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente. Ao usar a expiração com base em tempo, os valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
 * **Métrica**: quando essa métrica é vista em uma ocorrência, expire imediatamente o valor persistente na dimensão. Você pode usar qualquer métrica como o fim da expiração dessa dimensão. Essa opção de expiração só está disponível para as configurações de alocação Original e Mais recente.
 
 ## [!UICONTROL Dimensão de ligação]
 
-Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de dimensão em outra dimensão. As opções de lista suspensa válidas incluem outras dimensões incluídas na visualização de dados.
+Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de outra dimensão. As opções de lista suspensa válidas incluem outras dimensões contidas na visualização de dados.
 
-Normalmente, essa configuração é usada em arrays de objetos e é mais usada para medir coisas como métodos de descoberta de produtos, resultados de pesquisa interna, impressões de promoções internas ou recomendações de conteúdo ou produto. Em versões anteriores do Adobe Analytics, esse conceito era semelhante ao merchandising da sintaxe de conversão.
+Normalmente, essa configuração é usada em arrays de objetos e é mais usada para medir coisas como métodos de busca de produtos, resultados de pesquisa interna, impressões de promoções internas ou recomendações de conteúdo e produto. Em versões anteriores do Adobe Analytics, esse conceito é semelhante ao merchandising da sintaxe de conversão.
 
 ## [!UICONTROL Métrica de ligação]
 
-Uma lista suspensa que permite escolher uma métrica que atue como um acionador de vínculo. As opções de lista suspensa válidas incluem métricas incluídas na visualização de dados.
+Uma lista suspensa que permite escolher uma métrica que atue como um acionador de ligação. As opções de lista suspensa válidas incluem métricas contidas na visualização de dados.
 
-Essa configuração só aparece quando o Dimension de Vínculo é menor na matriz de objetos do que no componente. Quando a métrica de vínculo está presente em um evento, os valores de dimensão são copiados da dimensão em nível de evento para o nível de esquema inferior da dimensão de vínculo. Em versões anteriores do Adobe Analytics, um conceito semelhante, mas mais limitado, é conhecido como merchandising de sintaxe de produto.
+Essa configuração só aparece quando a Dimensão de ligação está mais abaixo no array de objetos do que no componente. Quando a métrica de ligação está presente em um evento, os valores de dimensão são copiados da dimensão de nível de evento para o nível de esquema inferior da dimensão de ligação. Em versões anteriores do Adobe Analytics, um conceito semelhante, porém mais limitado, é conhecido como merchandising de sintaxe de produto.
