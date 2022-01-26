@@ -3,10 +3,10 @@ title: Assimilar dados do Google Analytics na Adobe Experience Platform
 description: 'Explica como usar o Customer Journey Analytics (CJA) para assimilar dados do Google Analytics na Adobe Experience Platform. '
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+source-git-commit: 445317efa636024dbaf0ac34b6a74b52b92b9000
+workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -124,7 +124,7 @@ Você também pode capturar eventos de transmissão ao vivo do Google Tag Manage
 
 ### 1. Adicionar variáveis personalizadas
 
-Depois de fazer logon na conta do Google Tag Manager, é necessário adicionar algumas Variáveis de constante personalizadas relacionadas à Adobe. Você provavelmente já tem variáveis no Google Tag Manager que estão sendo enviadas para o Google Analytics, como email do cliente, nome do cliente, idioma e status de logon do cliente. Você precisa definir cinco novas variáveis personalizadas:
+Depois de fazer logon na conta do Google Tag Manager, é necessário adicionar algumas Variáveis de constante personalizadas relacionadas à Adobe. Você provavelmente já tem variáveis no Gerenciador de tags da Google que estão sendo enviadas ao Google Analytics, como email do cliente, nome do cliente, idioma e status de logon do cliente. Você precisa definir cinco novas variáveis personalizadas:
 
 * ID da organização da Adobe Experience Cloud
 * Ponto de extremidade de transmissão DCS
