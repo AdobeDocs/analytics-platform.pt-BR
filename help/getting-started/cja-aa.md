@@ -3,9 +3,9 @@ title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: 279778d30241e338bff97bd2b0514f3a47614bb9
+source-git-commit: be823f0ce9ff65528b34cb8d5693b60e2ff0ee11
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1309'
 ht-degree: 94%
 
 ---
@@ -79,17 +79,17 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Recurso | Notas |
 | --- | --- |
 | Alertas | Suporte planejado. |
+| Criador de regras de classificação | Funcionará de forma um pouco diferente no CJA, usando manipulações de sequência de caracteres no momento do relatório em vez de conjuntos de dados de pesquisa. |
 | Análise de contribuição | Suporte planejado. |
 | Relatórios do Data Warehouse (exportação de 100% de linhas) | O suporte é planejado na interface do Analysis Workspace. O [[!UICONTROL Serviço de consulta]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) da Adobe Experience Platform também fornece uma interface para esses casos de uso no CJA. |
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
+| Relatórios de lift e confiança | Suporte planejado. |
+| Regras de processamento, Regras VISTA, Regras de processamento de canais de marketing | Suporte planejado, mas funcionará em tempo de consulta em vez de durante a coleta de dados para manipulações de dados mais flexíveis e retroativas e não destrutivas. |
+| Modelos de projeto | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
 | Segment IQ | Suporte planejado. |
 | Publicação de segmentos (envio de segmentos do Espaço de trabalho para a Experience Cloud) | Suporte planejado. Será chamado de &quot;Publicação de público-alvo&quot; no CJA. |
 | Relatório de sessão nova vs. repetição | O suporte é planejado com algumas limitações. |
-| Relatórios de lift e confiança | Suporte planejado. |
-| Criador de regras de classificação | Funcionará de forma um pouco diferente no CJA usando manipulações de sequência de caracteres em tempo real no relatório, em vez de conjuntos de dados de pesquisa. |
-| Regras de processamento, Regras VISTA, Regras de processamento de canais de marketing | Suporte planejado, mas funcionará em tempo de consulta em vez de durante a coleta de dados para manipulações de dados mais flexíveis e retroativas e não destrutivas. |
-| Modelos de projeto | Suporte planejado. |
 
 ## Suporte ainda não planejado
 
