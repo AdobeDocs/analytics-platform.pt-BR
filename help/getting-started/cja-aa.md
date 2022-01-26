@@ -3,10 +3,10 @@ title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: b72d84a0412ab774360bc2f9b4d9e656b54598f6
-workflow-type: ht
-source-wordcount: '1207'
-ht-degree: 100%
+source-git-commit: 279778d30241e338bff97bd2b0514f3a47614bb9
+workflow-type: tm+mt
+source-wordcount: '1310'
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Exclusão do GDPR | Suporte completo; observe que o GDPR agora é tratado em coordenação com a [!UICONTROL Adobe Experience Platform]. O CJA herda qualquer alteração de dados que a [!UICONTROL Experience Platform] faz nos conjuntos de dados subjacentes. |
 | Variáveis de lista/Props de lista | Suporte completo; o CJA usa o XDM e oferece suporte a matrizes de sequência ilimitadas que podem ser usadas de forma semelhante a listVars. |
 | Persistência da variável de merchandising | Suporte completo através de [dimensões de ligação e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#métrica-de-ligação) (Janeiro de 2022) |
-| eVars de merchandising | Suporte completo através de [dimensões de ligação e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#métrica-de-ligação) (Janeiro de 2022) |
+| eVars de merchandising | Suporte completo através de [dimensões de ligação e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=en#binding-dimension) (Janeiro de 2022) |
 | Métricas | Suporte completo; o CJA usa o Experience Data Model (XDM), oferece suporte a métricas ilimitadas e não está vinculado aos eventos bem-sucedidos personalizados do Analytics tradicional. Observe que algumas métricas padrão foram renomeadas do Analytics tradicional: Visitantes = Pessoas, Visitas = Sessões, Ocorrências = Eventos. |
 | Desduplicação de métrica | Suporte completo. |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. |
@@ -84,7 +84,12 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
 | Segment IQ | Suporte planejado. |
-| Publicação de segmentos (envio de segmentos do Espaço de trabalho para a Experience Cloud) | Suporte planejado. |
+| Publicação de segmentos (envio de segmentos do Espaço de trabalho para a Experience Cloud) | Suporte planejado. Será chamado de &quot;Publicação de público-alvo&quot; no CJA. |
+| Relatório de sessão nova vs. repetição | O suporte é planejado com algumas limitações. |
+| Relatórios de lift e confiança | Suporte planejado. |
+| Criador de regras de classificação | Funcionará de forma um pouco diferente no CJA usando manipulações de sequência de caracteres em tempo real no relatório, em vez de conjuntos de dados de pesquisa. |
+| Regras de processamento, Regras VISTA, Regras de processamento de canais de marketing | Suporte planejado, mas funcionará em tempo de consulta em vez de durante a coleta de dados para manipulações de dados mais flexíveis e retroativas e não destrutivas. |
+| Modelos de projeto | Suporte planejado. |
 
 ## Suporte ainda não planejado
 
@@ -95,6 +100,9 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Criador de regras de classificação | Suporte ainda não planejado. |
 | Feeds de dados | Suporte ainda não planejado. |
 | Fontes de dados de resumo | Suporte ainda não planejado. |
+| Fontes de dados de ID de transação | Suporte ainda não planejado. |
+| Conversão de moeda | Suporte ainda não planejado. |
+| Relatórios em tempo real | Suporte ainda não planejado. |
 
 ## Nunca terá suporte
 
