@@ -3,10 +3,10 @@ title: Suporte a recursos do Customer Journey Analytics
 description: Recursos do Customer Journey Analytics em comparação ao conjunto de recursos do Adobe Analytics.
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
-source-git-commit: be823f0ce9ff65528b34cb8d5693b60e2ff0ee11
+source-git-commit: 66545b4d1a3ab15480a202709e1d1e8b5cf1e31c
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 94%
+source-wordcount: '1313'
+ht-degree: 93%
 
 ---
 
@@ -79,6 +79,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Recurso | Notas |
 | --- | --- |
 | Alertas | Suporte planejado. |
+| Eventos de calendário | Será chamado de &quot;Anotações&quot; no Workspace. |
 | Criador de regras de classificação | Funcionará de forma um pouco diferente no CJA, usando manipulações de sequência de caracteres no momento do relatório em vez de conjuntos de dados de pesquisa. |
 | Análise de contribuição | Suporte planejado. |
 | Relatórios do Data Warehouse (exportação de 100% de linhas) | O suporte é planejado na interface do Analysis Workspace. O [[!UICONTROL Serviço de consulta]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) da Adobe Experience Platform também fornece uma interface para esses casos de uso no CJA. |
@@ -98,11 +99,11 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Activity Map | Suporte ainda não planejado. |
 | Advertising Cloud | Suporte ainda não planejado. |
 | Criador de regras de classificação | Suporte ainda não planejado. |
+| Conversão de moeda | Suporte ainda não planejado. |
 | Feeds de dados | Suporte ainda não planejado. |
+| Relatórios em tempo real | Suporte ainda não planejado. |
 | Fontes de dados de resumo | Suporte ainda não planejado. |
 | Fontes de dados de ID de transação | Suporte ainda não planejado. |
-| Conversão de moeda | Suporte ainda não planejado. |
-| Relatórios em tempo real | Suporte ainda não planejado. |
 
 ## Nunca terá suporte
 
@@ -110,5 +111,4 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 * Painéis do Reports &amp; Analytics
 * Marcadores do Reports &amp; Analytics
 * Públicos-alvos do Reports &amp; Analytics
-* Eventos de calendário do Reports &amp; Analytics
 * Mobile Services
