@@ -4,9 +4,9 @@ description: Rechavear IDs de visitante de vários conjuntos de dados para compi
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 source-git-commit: 0f348f1d2119c902716a5e096a859521a4b316b0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1154'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -62,14 +62,14 @@ A Análise de vários canais é um recurso inovador e robusto, mas tem limitaç�
 Depois que sua organização atender a todos os pré-requisitos e entender suas limitações, você poderá seguir essas etapas para começar a usá-los no CJA.
 
 1. Importe os dados desejados para a Adobe Experience Platform. Consulte [Criar um esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) e [Assimilar dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) na documentação da Adobe Experience Platform.
-1. Entre em contato com o Suporte ao Cliente Adobe com as seguintes informações:
+1. Entre em contato com o Suporte ao cliente da Adobe com as seguintes informações:
    * Uma solicitação para habilitar a Análise de vários canais
    * A ID do conjunto de dados que você deseja rechavear
    * O nome da coluna da ID persistente do conjunto de dados desejado (Identificador que aparece em cada linha)
    * O nome da coluna da ID transitória para o conjunto de dados desejado (o link do identificador de pessoa entre conjuntos de dados)
    * Sua preferência por frequência de [repetição](replay.md) e duração da retrospectiva. As opções incluem uma repetição uma vez por semana com uma janela de retrospectiva de sete dias ou uma repetição todos os dias com uma janela de retrospectiva de um dia
    * Nome da sandbox.
-1. O Suporte ao cliente do Adobe funcionará com a engenharia do Adobe para ativar o Cross-Channel Analytics após receber sua solicitação. Depois de habilitada, um novo conjunto de dados rechaveado que contém uma nova coluna de ID de pessoa é exibido na Adobe Experience Platform. O Suporte ao cliente do Adobe pode fornecer a nova ID do conjunto de dados e o nome da coluna da ID da pessoa.
+1. O Suporte ao cliente da Adobe trabalhará com a equipe de engenharia para habilitar a Análise entre canais ao receber sua solicitação. Depois de habilitada, um novo conjunto de dados rechaveado que contém uma nova coluna de ID de pessoa é exibido na Adobe Experience Platform. O Suporte ao cliente da Adobe pode fornecer a nova ID do conjunto de dados e o nome da coluna de ID de pessoa.
 1. Quando ativado pela primeira vez, a Adobe fornecerá um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento.
 1. [Crie uma conexão](../create-connection.md) no CJA usando o conjunto de dados recém-gerado e quaisquer outros conjuntos de dados que você deseja incluir. Escolha a ID de pessoa correta para cada conjunto de dados.
 1. [Crie uma visualização de dados](/help/data-views/create-dataview.md) com base na conexão.
