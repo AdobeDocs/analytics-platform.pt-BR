@@ -4,9 +4,9 @@ description: Detalhes e informações sobre todos os componentes padrão que pod
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 source-git-commit: 9d08d5c80c8d31ffeca4f829798d0fd1700b0cc8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '774'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -48,9 +48,9 @@ Os componentes padrão opcionais estão disponíveis em **[!UICONTROL Visualiza�
 | [!UICONTROL Dia da semana] | Dimensão de separação de tempo | Segunda, terça, quarta, quinta, sexta, sábado, domingo |
 | [!UICONTROL Dia do ano] | Dimensão de separação de tempo | 1-366 |
 | [!UICONTROL Hora do dia] | Dimensão de separação de tempo | 0-23 |
-| [!UICONTROL  Mês do ano] | Dimensão de separação de tempo | Janeiro - dezembro |
-| [!UICONTROL ID da pessoa] | Dimensão | Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas opções pode ser usada como a ID de pessoa. Os exemplos incluem ID de cookie, ID com título, ID de usuário, código de rastreamento etc. O [!UICONTROL ID da pessoa] é a base da combinação de conjuntos de dados e da identificação de visitantes únicos no CJA.<p>Os possíveis casos de uso incluem:<ul><li>Criar um filtro em um valor de ID de pessoa específico para filtrar tudo para o comportamento desse usuário.</li><li>Depuração: Certifique-se de que os dados de uma ID de cookie específica (ou uma ID de cliente específica) estejam lá.</li><li>Identificação dos usuários que chamaram uma central de atendimento.</li></ul> |
-| [!UICONTROL Namespace da ID de pessoa] | Dimensão | Qual tipo de ID a [!UICONTROL ID da pessoa] consiste em. Exemplos: `email address`, `cookie ID`, `Analytics ID`, etc. |
+| [!UICONTROL  Mês do ano] | Dimensão de separação de tempo | Janeiro - Dezembro |
+| [!UICONTROL ID de pessoa] | Dimensão | Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas opções pode ser usada como a ID de pessoa. Os exemplos incluem ID de cookie, ID com título, ID de usuário, código de rastreamento, etc. A dimensão de [!UICONTROL ID de pessoa] é a base da combinação de conjuntos de dados e da identificação de visitantes únicos no CJA.<p>Os possíveis casos de uso incluem:<ul><li>Criar um filtro em um valor de ID de pessoa específico para filtrar tudo de acordo com o comportamento desse usuário.</li><li>Depuração: certificar-se de que os dados de uma ID de cookie específica (ou uma ID de cliente específica) estejam lá.</li><li>Identificação dos usuários que entraram em contato com uma central de atendimento.</li></ul> |
+| [!UICONTROL Namespace da ID de pessoa] | Dimensão | O tipo de ID no qual a [!UICONTROL ID de pessoa] consiste. Exemplos: `email address`, `cookie ID`, `Analytics ID`, etc. |
 | [!UICONTROL Trimestre do ano] | Dimensão de separação de tempo | T1, T2, T3, T4 |
 | [!UICONTROL Sessão inicia] | Métrica | O número de eventos que foram o primeiro evento de uma sessão. Quando usado em uma definição de filtro (por exemplo, &quot;[!UICONTROL Inícios de sessão] existe&quot;), ela filtra somente para o primeiro evento de cada sessão. |
 | [!UICONTROL Sessão termina] | Métrica | O número de eventos que foram o último evento de uma sessão. Semelhante a [!UICONTROL Inícios de sessão], também pode ser usado em uma definição de filtro para filtrar os itens para o último evento de cada sessão. |
@@ -58,4 +58,4 @@ Os componentes padrão opcionais estão disponíveis em **[!UICONTROL Visualiza�
 | [!UICONTROL Tempo gasto por evento] | Dimensão | Segmenta a métrica [!UICONTROL Tempo gasto] em segmentos de [!UICONTROL Evento]. |
 | [!UICONTROL Tempo gasto por sessão] | Dimensão | Segmenta a métrica [!UICONTROL Tempo gasto] em segmentos de [!UICONTROL Sessão]. |
 | [!UICONTROL Tempo gasto por pessoa] | Dimensão | Segmenta a métrica [!UICONTROL Tempo gasto] em segmentos de [!UICONTROL Pessoa]. |
-| [!UICONTROL Fim de semana]/[!UICONTROL Dia da semana] | Dimensão de separação de tempo | Final de semana ou Dia da semana |
+| [!UICONTROL Final de semana]/[!UICONTROL Dia de semana] | Dimensão de separação de tempo | Final de semana ou Dia de semana |
