@@ -4,9 +4,9 @@ description: Todas as configurações que podem ser ajustadas para criar ou edit
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1217'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ A criação de uma visualização de dados envolve a criação de métricas e di
 
 ![Nova visualização de dados](assets/new-data-view.png)
 
-### Configurações de exibição de dados
+### Configurações de visualização de dados
 
 Fornece configurações abrangentes para a visualização de dados.
 
@@ -29,7 +29,7 @@ Fornece configurações abrangentes para a visualização de dados.
 | --- | --- |
 | [!UICONTROL Conexão] | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém um ou mais conjuntos de dados da Adobe Experience Platform. |
 | [!UICONTROL Nome] | Obrigatório. O nome da visualização de dados. Esse valor aparece na lista suspensa no canto superior direito do Analysis Workspace. |
-| [!UICONTROL Descrição] | Opcional. O Adobe recomenda uma descrição detalhada para que os usuários entendam por que a visualização de dados existe e para quem ela foi projetada. |
+| [!UICONTROL Descrição] | Opcional. A Adobe recomenda uma descrição detalhada para que os usuários entendam por que a visualização de dados existe e para quem ela foi projetada. |
 
 ### Contêineres
 
@@ -86,11 +86,11 @@ Em seguida, você pode criar métricas e dimensões com base em elementos do esq
 
 ## Métricas ou dimensões duplicadas
 
-Duplicar métricas ou dimensões e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões por meio de um único campo de esquema. Selecione a configuração [!UICONTROL Duplicar] abaixo do nome da métrica ou das dimensões no canto superior direito. Modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
+Duplicar métricas ou dimensões e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões a partir de um único campo de esquema. Selecione a configuração [!UICONTROL Duplicar] abaixo do nome da métrica ou das dimensões no canto superior direito. Modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
 
 ![Duplicar](assets/duplicate.png)
 
-## Filtrar campos ou conjuntos de dados do esquema
+## Filtrar campos ou conjuntos de dados de esquema
 
 Você pode filtrar campos de esquema no painel esquerdo pelos seguintes tipos de dados:
 
@@ -100,7 +100,7 @@ Também é possível filtrar por conjuntos de dados e se um campo de esquema con
 
 ![Filtrar outros](assets/filter-other.png)
 
-## Configurações guia
+## Configurações Guia
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e acesse a guia **[!UICONTROL Visualizações de dados]**.
 1. Clique em **[!UICONTROL Adicionar]** para criar uma visualização de dados ou clique em uma visualização de dados existente para editá-la.
