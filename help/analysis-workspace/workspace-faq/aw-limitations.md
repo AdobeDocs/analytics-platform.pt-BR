@@ -1,9 +1,9 @@
 ---
 description: Lista de limitações conhecidas do Adobe Analysis Workspace e dos componentes relacionados a ele
 title: Limitações conhecidas do Analysis Workspace
+feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 69%
@@ -24,14 +24,14 @@ Veja a seguir uma lista de limitações conhecidas do Analysis Workspace e seus 
 
 ## Visualizações
 
-* As visualizações que aproveitam filtros, como [!UICONTROL Fallout], [!UICONTROL Fluxo], [!UICONTROL Coorte] e [!UICONTROL Histograma], não podem aceitar métricas calculadas como entradas.
+* Visualizações que aproveitam filtros, como [!UICONTROL Fallout], [!UICONTROL Fluxo], [!UICONTROL Coorte]e [!UICONTROL Histograma], não pode aceitar métricas calculadas como entradas.
 * [!UICONTROL Fluxo]: as dimensões de entrada/saída, por exemplo, [!UICONTROL Página de entrada], não podem ser usadas em Fluxo.
 * [!UICONTROL Coorte]: não é possível usar números não inteiros como critérios de coorte.
 
 ## Componentes > Filtros
 
 * Determinadas métricas e dimensões não podem ser filtradas, como [!UICONTROL Ocorrências], [!UICONTROL Visitantes únicos], etc.
-* Os filtros ad-hoc criados no [painel suspenso](/help/analysis-workspace/c-panels/panels.md) não aparecerão no painel esquerdo do Workspace ou no gerenciador de componentes Filtro, a menos que sejam tornados públicos. Isso pode ser feito editando o filtro e selecionando **[!UICONTROL Tornar esse filtro público]**.
+* Filtros ad-hoc criados na [área de soltar do painel](/help/analysis-workspace/c-panels/panels.md) não aparecerão no painel esquerdo do Workspace ou no gerenciador de componentes do Filtro, a menos que sejam tornados públicos. Isso pode ser feito editando o filtro e selecionando **[!UICONTROL Tornar este filtro público]**.
 
 ## Componentes > Métricas calculadas
 

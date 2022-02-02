@@ -1,11 +1,12 @@
 ---
 description: Um histograma é semelhante a um gráfico de barras, mas agrupa os números em intervalos (grupos).
 title: Histograma
+feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Um histograma é semelhante a um gráfico de barras, mas agrupa os números em intervalos (grupos). O Analytics automatiza o agrupamento de números em intervalos, mas você pode alterar as configurações em [Configurações avançadas](#section_09D774C584864D4CA6B5672DC2927477).
 
@@ -44,7 +45,7 @@ Para ajustar as configurações do histograma, clique no ícone de Configuraçõ
 | Grupo inicial | Determina o grupo inicial do histograma. O valor padrão é “1”. Você pode definir números iniciais de 0 a infinito (nenhum número negativo). |
 | Grupos de métricas | Permite aumentar/diminuir o número de intervalos de dados (grupos). O número máximo de grupos é 50. |
 | Tamanho do grupo de métricas | Permite definir o tamanho de cada grupo. Por exemplo, você pode alterar o tamanho do grupo de uma exibição de página para duas exibições de página. |
-| Método de contagem | Permite escolher entre [Visitante](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html), [Visita](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html) ou Tipo de ocorrência. Por exemplo, exibições de página por visita, por visitante ou por ocorrência. Para ocorrências, “Ocorrências” é usada como a métrica do eixo “y” na tabela de forma livre. |
+| Método de contagem | Permite escolher entre [Visitante](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=pt-BR), [Visita](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=pt-BR) ou Tipo de ocorrência. Por exemplo, exibições de página por visita, por visitante ou por ocorrência. Para ocorrências, “Ocorrências” é usada como a métrica do eixo “y” na tabela de forma livre. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 
@@ -59,7 +60,7 @@ Para exibir ou alterar a fonte de dados do gráfico de histograma, clique no pon
 
 ![](assets/manage-data-source.png)
 
-Os filtros pré-criados exibidos na tabela são filtros internos e não serão exibidos no seletor de filtro. Clique no ícone &quot;i&quot; ao lado do nome do filtro e em **[!UICONTROL Tornar público]** para tornar o filtro público.
+Os filtros pré-criados exibidos na tabela são filtros internos e não serão exibidos no seletor de filtro. Clique no ícone &quot;i&quot; ao lado do nome do filtro e, em seguida, clique em **[!UICONTROL Tornar público]** para tornar o filtro público.
 
 ![](assets/prebuilt_segments.png)
 

@@ -1,11 +1,12 @@
 ---
 description: Perguntas frequentes sobre o Workspace e dicas de solução de problemas.
 title: Perguntas frequentes
+feature: FAQ
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 76%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 | Pergunta | Resposta |
 |--- |--- |
@@ -35,4 +36,4 @@ Se você criar um relatório de espaço de trabalho com êxito, mas não houver 
 
 * Se você aplicar um filtro no seu relatório, os critérios de filtro podem não corresponder a nenhum dado. Tente remover o filtro ou ajustar a definição do filtro.
 * Verifique o intervalo de datas no canto superior direito e verifique se ele está definido como um valor que você esperaria.
-* Acesse seu site e use o [Depurador](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.translate.html) para verificar se os dados estão sendo coletados.
+* Acesse seu site e use o [Depurador](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=pt-BR) para verificar se os dados estão sendo coletados.

@@ -1,12 +1,12 @@
 ---
 description: Como alterar a paleta de cores da visualização ou especificar sua própria paleta de cores personalizada.
 title: Paleta de cores de visualização
-uuid: 18252889-8dc0-48fa-820f-df534156c22f
+feature: CJA Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 88%
+source-wordcount: '244'
+ht-degree: 82%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
-É possível alterar a paleta de cores da visualização usada no Workspace ao selecionar outra paleta de cores ou ao especificar sua própria paleta que poderia corresponder às cores da marca da sua empresa. Esse recurso afeta a maioria das visualizações no Workspace, mas **não** afeta o Resumo de alterações, a formatação condicional nas tabelas de Forma livre, nem a visualização de Mapa.
+É possível alterar a paleta de cores da visualização usada no Espaço de trabalho ao selecionar outra paleta de cores ou ao especificar sua própria paleta que poderia corresponder às cores da marca da sua empresa. Esse recurso afeta a maioria das visualizações no Espaço de trabalho, mas **não** afeta o Resumo de alterações, a formatação condicional nas tabelas de Forma livre, nem a visualização de Mapa.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 88%
 
 Lembre-se:
 
-* Há cinco paletas de cores predefinidas para sua escolha. A paleta padrão e a paleta abaixo foram otimizadas para obter o melhor contraste e são mais acessíveis para daltônicos.
+* Há cinco paletas de cores predefinidas para sua escolha. A paleta padrão e a paleta abaixo foram otimizadas para contraste e são mais acessíveis para daltônicos.
 * A terceira, a quarta e a quinta das paletas de cores abaixo, contando a partir das duas primeiras, foram otimizadas em termos de harmonia de cores.
 
 ## Para alterar a paleta de cores:

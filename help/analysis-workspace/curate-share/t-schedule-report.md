@@ -2,11 +2,12 @@
 description: Envie um projeto do Analysis Workspace por email ou agende o seu envio.
 keywords: Analysis Workspace
 title: Agendar projetos
+feature: Curate and Share
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 No **menu Compartilhar**, do Workspace, você pode enviar projetos do Analysis Workspace por email para recipient selecionados. Os arquivos podem ser enviados no formato CSV ou PDF.
 
@@ -45,7 +46,7 @@ Para enviar um arquivo por email de acordo com uma programação recorrente a re
 
 ![](assets/send-file.JPG)
 
-## Gerenciador de agendamento de projetos
+## Gerenciador de projetos programados
 
 Os projetos programados do Analysis Workspace podem ser gerenciados em **Analytics > Componentes > Projetos programados**.
 

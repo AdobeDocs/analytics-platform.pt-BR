@@ -1,15 +1,15 @@
 ---
 description: A sincronização de visualizações permite que você controle qual tabela de dados ou fonte de dados corresponde a uma visualização.
-keywords: Analysis Workspace;Synchronize visualization with data source
+keywords: Analysis Workspace;Sincronizar visualização com a fonte de dados
 title: Gerenciar fontes de dados
-translation-type: tm+mt
-source-git-commit: 3dc9d0d0a1f65a4205120895c35aa508f080c25d
+feature: Visualizations
+exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '569'
 ht-degree: 100%
 
 ---
-
 
 # Gerenciar fontes de dados
 
@@ -33,7 +33,7 @@ O gerenciamento de uma fonte de dados permite exibir a fonte de dados ou bloquea
 | [!UICONTROL Exibir fonte de dados] | Permite exibir (ativando a caixa de seleção) ou ocultar (desativando) a tabela de dados que corresponde à visualização. |
 | [!UICONTROL Bloquear seleção] | Ative essa configuração para bloquear a visualização de dados selecionados no momento na tabela de dados correspondente. Uma vez ativada, escolhe entre:  <ul><li>**Posições selecionadas**: escolha essa opção se desejar que a visualização continue bloqueada nas posições selecionadas na tabela de dados correspondente. Essas posições continuarão a ser visualizadas, mesmo se os itens específicos nessas posições forem alterados. Por exemplo, escolha essa opção se desejar mostrar os cinco principais nomes de campanha nessa visualização o tempo todo, não importa quais nomes de campanha apareçam entre as cinco principais.</li> <li>**Itens selecionados**: escolha essa opção se desejar que a visualização continue bloqueada nos itens especificados atualmente selecionados na tabela de dados correspondente. Esses itens continuarão a ser visualizados, mesmo que as suas classificações sejam alteradas na tabela. Por exemplo, escolha essa opção se desejar mostrar os cinco mesmos nomes de campanha específicos nessa visualização o tempo todo, não importa a classificação desses nomes de campanha.</li></ul> |
 
-Essa arquitetura difere da anterior no sentido de que o Analysis Workspace já não cria uma tabela oculta duplicada que armazena a seleção bloqueada para você. Agora, a fonte de dados aponta para a tabela a partir da qual você criou a visualização.
+Essa arquitetura difere da anterior no sentido de que o Analysis Workspace já não cria uma tabela oculta duplicada que armazena a seleção bloqueada para você. Agora, a fonte de dados aponta para a tabela da qual você criou a visualização.
 
 **Exemplo de casos de uso:**
 

@@ -1,8 +1,10 @@
 ---
 description: O Criador de métricas calculadas oferece uma tela para arrastar e soltar dimensões, métricas, filtros e funções a fim de criar métricas personalizadas com base em lógicas de hierarquia de container, regras e operadores. Essa ferramenta de desenvolvimento integrado permite criar e salvar métricas calculadas simples ou métricas calculadas avançadas complexas.
 title: Criar métricas
-source-git-commit: a747a7e7def6f55fd350406125581e631af9e208
-workflow-type: ht
+feature: Calculated Metrics
+exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 100%
 
@@ -48,4 +50,3 @@ Há várias maneiras de acessar o Criador de métricas calculadas:
 | Lista de filtros | (Somente métricas calculadas avançadas) Como administrador, esta lista mostra todos os filtros criados na sua empresa de logon. Caso seja um usuário não administrador, esta lista mostra os filtros que possui e os que são compartilhados com você. |
 | Lista de funções | (Somente métricas calculadas avançadas) As funções estão divididas em duas listas: Básicas (usadas com mais frequência) e Avançadas. |
 | Seletor de visualizações de dados | Esse seletor (na parte superior direita) permite alternar para uma visualização de dados diferente. |
-

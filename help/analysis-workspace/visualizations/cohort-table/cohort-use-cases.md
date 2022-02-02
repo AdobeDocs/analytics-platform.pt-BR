@@ -2,12 +2,11 @@
 description: Exemplos de casos de uso da análise de coorte.
 keywords: Analysis Workspace
 title: Casos de uso da análise de coorte
-feature: Noções básicas do Reports & Analytics
-uuid: 5ec46f84-5702-4bc1-a796-874a3abe87c9
+feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '961'
 ht-degree: 81%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Exemplos de casos de uso da [!UICONTROL análise de coorte].
 
@@ -52,7 +51,7 @@ Verifique novamente o seu relatório de análise de coorte alguns meses depois. 
 
 ## Caso de uso de filtros de coorte complexos
 
-Uma grande cadeia de hotéis tem como alvo vários grupos de clientes para promoções e os monitora em relação ao desempenho. Para identificar os melhores grupos de coortes de usuário para fins de direcionamento, deve-se criar grupos de coorte muito específicos. Usando os critérios aumentados de [!UICONTROL Inclusão] e [!UICONTROL Retorno] nas tabelas de [!UICONTROL Coorte], é possível definir os agrupamentos de coorte ideais com várias métricas e filtros para identificar grupos de clientes com baixo desempenho, a fim de direcionar a tais grupos promoções e ofertas para aumentar as reservas.
+Uma grande cadeia de hotéis tem como alvo vários grupos de clientes para promoções e os monitora em relação ao desempenho. Para identificar os melhores grupos de coortes de usuário para fins de direcionamento, deve-se criar grupos de coorte muito específicos. Uso do [!UICONTROL Inclusão] e [!UICONTROL Retorno] Critérios no [!UICONTROL Coorte] Tabelas, elas são capazes de definir os agrupamentos de coorte certos com várias métricas e filtros para identificar grupos de clientes com baixo desempenho, a fim de direcionar a tais grupos promoções e ofertas para aumentar as reservas.
 
 ## Caso de uso de preferência de versão do aplicativo
 
@@ -64,8 +63,8 @@ Uma empresa de mídia multinacional usa campanhas direcionadas para direcionar u
 
 ## Caso de uso de lançamento de produto
 
-Um grande varejista de vestuário tem muitos filtros de cliente específicos que impulsionam grandes porções de receita para seus negócios. Cada filtro tem produtos específicos projetados e criados com o filtro em mente. A cada lançamento de produto, a empresa quer saber como o novo produto impulsionou as vendas para vários coortes ao longo do tempo. Usando a nova configuração [!UICONTROL Tabela de latência] em [!UICONTROL Análise de coorte], é possível analisar o comportamento e a receita de pré-lançamento e pós-lançamento de um determinado filtro de cliente. Usando essas informações, pode-se identificar quais produtos estão gerando novas receitas e quais não estão ganhando força com os clientes.
+Um grande varejista de vestuário tem muitos filtros de cliente específicos que impulsionam grandes porções de receita para seus negócios. Cada filtro tem produtos específicos projetados e criados com o filtro em mente. A cada lançamento de produto, a empresa quer saber como o novo produto impulsionou as vendas para vários coortes ao longo do tempo. Uso da nova [!UICONTROL Tabela de latência] definição em [!UICONTROL Análise de coorte], é possível analisar o comportamento e a receita de pré-lançamento e pós-lançamento de um determinado filtro de cliente. Usando essas informações, pode-se identificar quais produtos estão gerando novas receitas e quais não estão ganhando força com os clientes.
 
 ## Caso de uso de adesão individual: usuários mais fiéis
 
-Uma grande companhia aérea obtém a maior parte de seu sucesso e receita por meio de clientes repetidos e fiéis. Em muitos casos, seus viajantes fiéis compõem a maior parte de sua receita e manter esses clientes é fundamental para o sucesso a longo prazo. Identificar os clientes mais leais e consistentes pode ser difícil. No entanto, usando a nova configuração [!UICONTROL Cálculo contínuo] em [!UICONTROL Análise de coorte], foi possível analisar filtros de clientes fiéis e descobrir quais viajantes eram compradores repetidos mês a mês. Então, foi possível direcionar a esses viajantes recompensas e benefícios por sua fidelidade. Além disso, ao alternar o tipo de coorte de retenção para rotatividade, também foi possível identificar quais clientes não eram compradores repetidos mês a mês e direcionar esses filtros com promoções para reengajar-se com eles e garantir que permanecessem fiéis no futuro.
+Uma grande companhia aérea obtém a maior parte de seu sucesso e receita por meio de clientes repetidos e fiéis. Em muitos casos, seus viajantes fiéis compõem a maior parte de sua receita e manter esses clientes é fundamental para o sucesso a longo prazo. Identificar os clientes mais leais e consistentes pode ser difícil. No entanto, usando o novo [!UICONTROL Cálculo contínuo] definição em [!UICONTROL Análise de coorte], eles foram capazes de analisar filtros de clientes fiéis e descobrir quais viajantes eram compradores repetidos mês a mês. Então, foi possível direcionar a esses viajantes recompensas e benefícios por sua fidelidade. Além disso, ao alternar o tipo de coorte de retenção para rotatividade, também foi possível identificar quais clientes não eram compradores repetidos mês a mês e direcionar esses filtros com promoções para reengajar-se com eles e garantir que permanecessem fiéis no futuro.

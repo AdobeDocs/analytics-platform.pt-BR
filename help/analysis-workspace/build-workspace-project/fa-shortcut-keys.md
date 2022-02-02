@@ -1,10 +1,10 @@
 ---
 description: Interações de teclado, teclas de atalho e comportamentos para apontar e clicar disponíveis no Analysis Workspace.
 keywords: Analysis Workspace
+feature: CJA Workspace Basics
 title: Teclas de atalho (atalhos)
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
-translation-type: tm+mt
-source-git-commit: 76260b7362396c76942dadab599607cd038ed651
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
@@ -23,42 +23,42 @@ Observação: `CTRL` = Windows e `command` = Mac
 |---|---|
 | Criar novo projeto | ctrl (ou cmd) + shift + p |
 | Abrir projeto existente | ctrl (ou cmd) + o |
-| Ir para o painel Painéis | alt + shift + 1 |
-| Ir para o painel Visualizações | alt + shift + 2 |
-| Ir para o painel Componentes | alt + shift + 3 |
-| Recolher/expandir todos os painéis | alt + m |
-| Recolher/expandir painel ativo | alt + ctrl + m |
-| Mover para o próximo painel | alt + Seta direita |
-| Mover para o painel anterior | alt + Seta esquerda |
+| Ir para o painel Painéis | Alt+Shift+1 |
+| Ir para o painel Visualizações | Alt+Shift+2 |
+| Ir para o painel Componentes | Alt+Shift+3 |
+| Recolher/expandir todos os painéis | Alt+M |
+| Recolher/expandir painel ativo | Alt+Ctrl+M |
+| Mover para o próximo painel | Alt+Seta para a direita |
+| Mover para o painel anterior | Alt+Seta para a esquerda |
 
 ## Ações de análise
 
 | Ação | Atalho |
 |---|---|
-| Pesquisar painel esquerdo | ctrl + / |
+| Pesquisar painel esquerdo | Ctrl+/ |
 | Criar um alerta | ctrl (ou cmd) + shift + a |
 | Criar métrica calculada | ctrl (ou cmd) + shift + c |
 | Criar um intervalo de datas | ctrl (ou cmd) + shift + d |
 | Criar um filtro | ctrl (ou cmd) + shift + e |
-| Limpar tudo | alt + w |
+| Limpar tudo | Alt+W |
 | Copiar | ctrl (ou cmd) + c |
 | Refazer | ctrl (ou cmd) + shift + z |
 | Desfazer | ctrl (ou cmd) + z |
-| Atualizar componentes | alt + shift + r |
-| Atualizar projeto | alt + r |
+| Atualizar componentes | Alt+Shift+R |
+| Atualizar projeto | Alt+R |
 | Definir como página inicial | ctrl (ou cmd) + shift + l |
 
 ## Adicionar painéis e ações de visualização
 
 | Ação | Atalho |
 |---|---|
-| Novo painel de atribuição | alt + e |
-| Novo painel em branco | alt + b |
-| Novo painel de forma livre | alt + a |
-| Novo painel Quick Insights | alt + f |
-| Nova tabela de forma livre | alt + 1 |
-| Novo gráfico de linha | alt + 2 |
-| Novo gráfico de barras | alt + 3 |
+| Novo painel de atribuição | Alt+E |
+| Novo painel em branco | Alt+B |
+| Novo painel de forma livre | Alt+A |
+| Novo painel Quick Insights | Alt+F |
+| Nova tabela de forma livre | Alt+1 |
+| Novo gráfico de linha | Alt+2 |
+| Novo gráfico de barras | Alt+3 |
 
 ## Ações de democratização
 
@@ -66,11 +66,11 @@ Observação: `CTRL` = Windows e `command` = Mac
 |---|---|
 | Salvar projeto | ctrl (ou cmd) + s |
 | Salvar projeto como | ctrl (ou cmd) + shift + s |
-| Salvar como modelo | alt + t |
+| Salvar como modelo | Alt+T |
 | Baixar como CSV | ctrl (ou cmd) + shift + v |
 | Baixar como PDF | ctrl (ou cmd) + shift + b |
 | Preparar dados do projeto | ctrl (ou cmd) + shift + g |
 | Compartilhar projeto | ctrl (ou cmd) + g |
-| Obter link do projeto | alt + l |
-| Enviar arquivo agora | alt + s |
-| Enviar arquivo agendado | shift + alt + s |
+| Obter link do projeto | Alt+L |
+| Enviar arquivo agora | Alt+S |
+| Enviar arquivo agendado | Shift+Alt+S |

@@ -1,9 +1,10 @@
 ---
 description: Exibe os cinco principais valores para dimensões que não são de tempo (e 15 para dimensões de tempo).
 title: Como visualizar dimensões no CJA Workspace
+feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: af15a6cad05b274c7eeaeca8f32617bed07c9382
-workflow-type: ht
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 100%
 

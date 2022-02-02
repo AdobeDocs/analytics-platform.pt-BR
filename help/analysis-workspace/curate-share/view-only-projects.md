@@ -1,12 +1,13 @@
 ---
-description: Projetos somente visualização no Workspace
+description: Projetos somente visualização no Espaço de trabalho
 keywords: Projetos do somente para visualização
 title: Projetos do somente para visualização
+feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 81%
+ht-degree: 84%
 
 ---
 
@@ -14,9 +15,9 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
-Você pode compartilhar projetos &quot;somente para visualização&quot; com os recipients por meio do [Fluxo de trabalho de compartilhamento do projeto](/help/analysis-workspace/curate-share/share-projects.md). Os recipient colocados na função Pode visualizar terão uma experiência de projeto mais limitada. Isso pode ser desejado se você estiver compartilhando um projeto com usuários menos familiarizados com a estrutura de dados de sua organização, o Analysis Workspace ou o Customer Journey Analytics em geral, mas ainda assim quiser que eles consumam dados e insights em um ambiente seguro.
+Você pode compartilhar projetos &quot;somente para visualização&quot; com os recipients por meio do [Fluxo de trabalho de compartilhamento do projeto](/help/analysis-workspace/curate-share/share-projects.md). Os recipient colocados na função Pode visualizar terão uma experiência de projeto mais limitada. Isso pode ser desejado se você estiver compartilhando um projeto com usuários menos familiarizados com a estrutura de dados da sua organização, o Analysis Workspace ou o Customer Journey Analytics em geral, mas ainda assim quiser que eles consumam dados e insights em um ambiente seguro.
 
 ![](assets/view-only-project.png)
 
@@ -31,7 +32,7 @@ As interações desativadas em um projeto somente visualização incluem:
 * Configurações de linha, coluna ou visualização de forma livre
 * Filtros de painel
 * Menus Editar, Inserir e Componente
-* Dicas do Workspace
+* Dicas do Espaço de trabalho
 
 ## Interações ativadas
 

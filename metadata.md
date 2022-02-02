@@ -1,10 +1,9 @@
 ---
 cloud: Experience Cloud
-git-repo: https://git.corp.adobe.com/AdobeDocs/analytics-platform.pt-BR
+git-repo: https://github.com/AdobeDocs/analytics-platform.pt-BR
 description: Esse arquivo inclui metadados de nível de acordo de recompra que passam para arquivos TOC.md do guia do usuário no acordo de recompra.
-feature-set: Analytics
-translation-type: tm+mt
-source-git-commit: 3c10451d5a70e4f733634efb9648da843e4c0db1
+feature-set: Customer Journey Analytics
+source-git-commit: a31b6a6624087b2863b4643397c4a824662551b5
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 84%

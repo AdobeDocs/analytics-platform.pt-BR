@@ -1,11 +1,12 @@
 ---
 title: Gráfico de dispersão
 description: Uma visualização que mostra a relação entre até três métricas.
+feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +14,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 A visualização do gráfico de dispersão mostra a relação entre itens de dimensão e até três métricas. Ela requer três componentes e aceita a visualização de até quatro componentes.
 

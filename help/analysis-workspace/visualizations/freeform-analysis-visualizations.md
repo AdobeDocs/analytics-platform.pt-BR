@@ -2,8 +2,9 @@
 description: Representar visualmente seus dados no Analysis Workspace.
 keywords: Analysis Workspace
 title: Visão geral das visualizações
+feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: fa0033202650f17acd275f1050565285c1464f53
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 92%
@@ -75,7 +76,7 @@ Para editar um rótulo de legenda:
 1. Digite o texto do novo rótulo.
 1. Pressione **[!UICONTROL Enter]** para salvar.
 
-## Clique com o botão direito do mouse no menu {#right-click}
+## Clique com o botão direito do mouse no menu  {#right-click}
 
 A funcionalidade adicional de uma visualização está disponível ao clicar com o botão direito do mouse no cabeçalho da visualização. As configurações variam de acordo com a visualização. Algumas das configurações disponíveis são:
 

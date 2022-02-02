@@ -1,11 +1,12 @@
 ---
 description: O Quick Insights é uma ferramenta para novos usuários do Workspace que os orienta na criação de tabelas e visualizações de dados
 title: Painel do Quick Insights
+feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1098'
-ht-degree: 73%
+ht-degree: 74%
 
 ---
 
@@ -13,17 +14,17 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 >[!IMPORTANT]
 >
->**[!UICONTROL O painel Quick]** Insights está atualmente em testes limitados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=pt-BR)
+>**[!UICONTROL Quick Insights]** O painel está atualmente em testes limitados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=pt-BR)
 
 O painel do [!UICONTROL Quick Insights] fornece orientação para não analistas e novos usuários do [!UICONTROL Analysis Workspace] para saber como responder a perguntas comerciais de forma rápida e fácil. É também uma excelente ferramenta para usuários avançados que desejam responder rapidamente a uma pergunta simples sem precisar criar uma tabela.
 
-Ao começar a usar esse [!UICONTROL Analysis Workspace] pela primeira vez, você pode se perguntar quais visualizações seriam mais úteis, quais dimensões e métricas podem facilitar os insights, onde arrastar e soltar itens, onde criar um filtro etc.
+Ao começar a usar isso pela primeira vez [!UICONTROL Analysis Workspace], você pode se perguntar quais visualizações seriam mais úteis, quais dimensões e métricas podem facilitar os insights, onde arrastar e soltar itens, onde criar um filtro etc.
 
-Para ajudar nisso, e com base no uso de componentes de dados da sua própria empresa no [!UICONTROL Analysis Workspace], o [!UICONTROL Quick Insights] usa um algoritmo que apresentará as dimensões, métricas, filtros e intervalos de datas mais populares que sua empresa usa. Na verdade, você verá dimensões, métricas e filtros marcados como [!UICONTROL Popular] na lista suspensa, como mostrado aqui:
+Para ajudar nisso, e com base no uso de componentes de dados em sua própria empresa [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] O usa um algoritmo que apresentará as dimensões, métricas, filtros e intervalos de datas mais populares que sua empresa usa. Na verdade, você verá dimensões, métricas e filtros marcados como [!UICONTROL Popular] na lista suspensa, como mostrado aqui:
 
 ![](assets/popular-tag.png)
 
@@ -31,7 +32,7 @@ O [!UICONTROL Quick insights] ajuda a
 
 * Criar corretamente uma tabela de dados e uma visualização que a acompanha no [!UICONTROL Analysis Workspace].
 * Aprender a terminologia e o vocabulário de componentes básicos e pedaços do [!UICONTROL Analysis Workspace].
-* Faça detalhamentos simples de dimensões, adicione várias métricas ou compare filtros facilmente em uma [!UICONTROL Tabela de forma livre].
+* Fazer detalhamentos simples de dimensões, adicionar várias métricas ou comparar filtros facilmente em uma [!UICONTROL Tabela de forma livre].
 * Alterar ou experimentar vários tipos de visualização para encontrar a ferramenta para sua análise de forma rápida e intuitiva.
 
 ## Terminologia básica
@@ -45,7 +46,7 @@ A seguir, estão alguns dos termos básicos que você precisa conhecer. Cada tab
 | [!UICONTROL Métrica] | As métricas são informações quantitativas sobre a atividade do visitante, como exibições, click-throughs, recarregamentos, tempo médio gasto, unidades, ordens, receita, e assim por diante. |
 | [!UICONTROL Visualização] | O Workspace oferece [várias visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para criar representações visuais de seus dados, como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão e outros. |
 | [!UICONTROL Detalhamento de dimensão] | Um detalhamento de dimensão é uma forma de detalhar literalmente uma dimensão por outras dimensões. Em nosso exemplo, você pode dividir os Estados Unidos por dispositivos móveis para obter as visitas de dispositivos móveis por estado, ou pode dividir os dispositivos móveis por tipos de dispositivos móveis, por regiões, por campanhas internas, etc. |
-| [!UICONTROL filter] | os filtros permitem identificar subconjuntos de visitantes com base em características ou interações de site. Por exemplo, você pode criar filtros [!UICONTROL Visitante] com base em atributos: tipo de navegador, dispositivo, número de visitas, país, gênero ou com base em interações: campanhas, pesquisa por palavra-chave, mecanismo de pesquisa ou com base em saídas e entradas: visitantes do Facebook, uma página de aterrissagem definida, um domínio de referência ou com base em variáveis personalizadas: campo de formulário, categorias definidas, ID do cliente. |
+| [!UICONTROL filtro] | os filtros permitem identificar subconjuntos de visitantes com base em características ou interações de site. Por exemplo, você pode criar [!UICONTROL Visitante] filtros com base em atributos: tipo de navegador, dispositivo, número de visitas, país, gênero ou com base em interações: campanhas, pesquisa por palavra-chave, mecanismo de pesquisa ou com base em saídas e entradas: visitantes do Facebook, uma página de aterrissagem definida, um domínio de referência ou com base em variáveis personalizadas: campo de formulário, categorias definidas, ID do cliente. |
 
 ## Introdução ao Quick Insights
 

@@ -1,12 +1,12 @@
 ---
 description: Use o Número do resumo e as Visualizações de alteração para exibir pontos de dados importantes em um projeto.
 title: Número do resumo e alteração do resumo
-uuid: 177c1b89-6d98-473d-8447-6b4cdc479565
+feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Clique na engrenagem **Configurações de visualização** no canto superior dir
 
 ## Visualização da alteração do resumo {#summary-change}
 
-Use a visualização Alteração de resumo para mostrar o delta (mudança) entre dois números. A cor verde e vermelha da Alteração de resumo pode ser controlada por meio da [polaridade do evento personalizado](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) ou da opção [Mostrar tendência ascendente como](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) de uma métrica calculada.
+Use a visualização Alteração de resumo para mostrar o delta (mudança) entre dois números. A cor verde e vermelha da Alteração de resumo pode ser controlada por meio da [polaridade do evento personalizado](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html?lang=pt-BR) ou da opção [Mostrar tendência ascendente como](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=pt-BR) de uma métrica calculada.
 
 Essa visualização se comporta das seguintes maneiras:
 

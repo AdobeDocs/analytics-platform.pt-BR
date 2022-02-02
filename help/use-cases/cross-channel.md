@@ -3,8 +3,9 @@ title: Análise de jornada entre canais
 description: Analise e extraia insights das interações em toda a jornada do cliente.
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
+feature: Use Cases
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
 

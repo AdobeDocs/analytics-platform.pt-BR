@@ -1,14 +1,14 @@
 ---
-description: A visualização de Barra mostra barras verticais que representam vários valores em uma ou mais métricas.
+description: A visualização Barra mostra barras verticais que representam vários valores de uma ou mais métricas.
 title: Barra e barra empilhada
-translation-type: tm+mt
-source-git-commit: d14817f28e757e94435c3b1059765fabe7cec54b
+feature: Visualizations
+exl-id: a4458694-0c90-4e44-88d5-575737a61c36
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 85%
 
 ---
-
 
 # Barra e barra empilhada
 
@@ -29,4 +29,3 @@ Esta visualização se parece com um gráfico de barras, mas apresenta barras de
 Uma nova configuração de visualização nas visualizações empilhadas por barra transforma o gráfico em uma visualização 100% empilhada:
 
 ![](assets/stacked_100_percent.png)
-

@@ -1,8 +1,9 @@
 ---
 title: Modelos de atribuição e janelas de pesquisa
 description: Como diferentes tipos de atribuição dividem crédito entre itens de dimensão.
+Feature: Attribution
 exl-id: 2ab6add7-9dc8-419d-96f7-e0c12e6b4761
-source-git-commit: 8cee89a8ed656ad6376e64c8327aa7c94a937ce9
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1516'
 ht-degree: 98%
@@ -13,7 +14,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O conceito de atribuição no Customer Journey Analytics requer dois componentes:
 

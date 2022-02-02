@@ -2,11 +2,12 @@
 description: A preparação permite limitar os componentes antes de compartilhar um projeto.
 keywords: Preparação do Analysis Workspace
 title: Preparar projetos do
+feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 43%
+ht-degree: 45%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 43%
 A preparação permite limitar os componentes (dimensões, métricas, filtros, intervalos de datas) antes de compartilhar um projeto. Quando um recipient abrir o projeto, ele verá um conjunto limitado de componentes que você preparou para eles. A preparação é uma etapa opcional, mas recomendada, antes de compartilhar um projeto.
 
 >[!NOTE]
-> Os perfis de produto são o principal mecanismo que controla os componentes que um usuário pode ver. Eles são gerenciados por meio do [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). A Preparação é um filtro secundário.
+> Os perfis de produto são o principal mecanismo que controla os componentes que um usuário pode ver. Eles são gerenciados por meio do [Admin Console Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=pt-BR). A Preparação é um filtro secundário.
 
 ## Aplicar preparação de projeto
 
@@ -44,7 +45,7 @@ Para remover a preparação do projeto e restaurar o conjunto completo de compon
 
 ## Opções de curadoria de componentes
 
-Em um projeto preparado, o recipient terá a opção de **[!UICONTROL Mostrar todos]** componentes no painel esquerdo. [!UICONTROL Mostrar tudo] revela conjuntos diferentes de componentes, dependendo do/da:
+Em um projeto preparado, o recipient terá a opção de **[!UICONTROL Mostrar tudo]** componentes no painel esquerdo. [!UICONTROL Mostrar tudo] revela conjuntos diferentes de componentes, dependendo do/da:
 
 * Nível de permissão do usuário (admin ou non-admin)
 * Função do projeto (proprietário/editor ou não)

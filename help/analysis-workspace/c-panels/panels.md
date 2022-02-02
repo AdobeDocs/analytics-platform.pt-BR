@@ -1,9 +1,10 @@
 ---
 description: Um painel é uma coleção de tabelas e visualizações
 title: Visão geral dos painéis
+feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: f6e7c2f5d83a29b498a7c3dbed64f2d2ea5c0b27
-workflow-type: ht
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 100%
 
@@ -32,7 +33,7 @@ O painel inicial padrão é o painel [!UICONTROL Forma livre], mas você também
 
 ## Calendário {#calendar}
 
-O calendário do painel controla o intervalo de relatórios para tabelas e visualizações em um painel.
+O calendário do painel controla o intervalo de relatórios para tabelas e visualizações dentro de um painel.
 
 Observação: se um componente de intervalo de datas (roxo) for usado em uma tabela, uma visualização ou uma zona suspensa do painel, ele substituirá o calendário do painel.
 

@@ -1,12 +1,12 @@
 ---
 description: A detecção de anomalias no Analysis Workspace usa uma série de técnicas estatísticas avançadas para determinar se uma observação deve ser considerada anômala ou não.
 title: Técnicas estatísticas usadas na Detecção de anomalias
-uuid: b6ef6a2e-0836-4c9a-bf7e-01910199bb92
+feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
-source-git-commit: f74b5e79b6713050869301adb95e2a73705330da
+source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '827'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html). [Saiba mais...](/help/getting-started/cja-aa.md)
+>Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 A detecção de anomalias no Analysis Workspace usa uma série de técnicas estatísticas avançadas para determinar se uma observação deve ser considerada anômala ou não.
 
@@ -43,7 +43,7 @@ Após a seleção do modelo, o algoritmo ajusta os resultados com base em feriad
 * Cyber Monday (somente EUA)
 * 24-26 de dezembro
 * Janeiro de 1
-* 31 de dezembro
+* Dezembro de 31
 
 Esses feriados foram selecionados com base em análises estatísticas extensivas em vários pontos de dados do cliente para identificar os feriados mais significativos para o maior número de tendências dos clientes. Embora a lista não seja exaustiva para todos os clientes ou ciclos comerciais, descobrimos que aplicar esses feriados melhorou significativamente o desempenho geral do algoritmo para praticamente todos os conjuntos de dados dos clientes.
 
