@@ -3,10 +3,10 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c09c381a6a0c258275dcc90fff3e7133d5c42d5a
+source-git-commit: 04b9d5d1028cf0ec3ff169e7e63ac686792df241
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '41'
+ht-degree: 95%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Recursos principais
 
-| Recurso | Descrição | Data Alvo |
+| Recurso | Descrição | [Data Alvo](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | Nenhum recurso novo este mês | N/D | N/D |
 
