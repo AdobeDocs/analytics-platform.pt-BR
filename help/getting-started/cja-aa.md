@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1309'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Detecção de anomalias | Suporte completo. |
 | Attribution IQ | Suporte completo. |
 | Métricas calculadas | Suporte de arquivo; observe que qualquer métrica de cálculo existente no Analysis Workspace tradicional não será transferida para o CJA. |
-| Compilação entre dispositivos/canais | Suporte completo; consulte [Cross-Channel Analytics](/help/connections/cca/overview.md). |
+| Compilação entre dispositivos/canais | Suporte completo; consulte [Análise entre canais](/help/connections/cca/overview.md). |
 | Download do CSV | Suporte completo. |
 | Calendários personalizados | Suporte completo. |
 | Comparações de datas | Suporte completo. |
@@ -40,12 +40,12 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Exportação de PDF | Suporte completo. |
 | Curadoria do projeto | Suporte completo. |
 | Vinculação de projetos | Suporte completo. |
-| Report Builder (plug-in do Excel) | Suporte completo |
+| Report Builder (plug-in do Excel) | Suporte completo. |
 | Processamento de tempo do relatório | Suporte completo; o CJA depende exclusivamente do Processamento de tempo do relatório. |
 | Acesso à API de relatórios | Suporte completo; disponível por meio da [API do CJA](https://www.adobe.io/cja-apis/docs/). |
 | Relatórios/projetos agendados | Suporte completo. |
 | Segmentos | Suporte completo; Agora denominado &quot;Filtros&quot;: observe que qualquer segmento existente no Analysis Workspace tradicional não será transferido para o CJA. |
-| Permissões do usuário/Controles de acesso de dados | Suporte completo; o CJA faz a distinção entre administradores de produto e usuários do [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR). Somente administradores de produtos podem <ul><li>Criar/atualizar/excluir conexões ou Visualizações de dados</li><li>Atualizar/excluir projetos, filtros ou métricas de cálculo que foram criados por outros usuários e</li><li>Compartilhar um projeto do Espaço de trabalho para todos os usuários.</li></ul> |
+| Permissões do usuário/Controles de acesso de dados | Suporte completo; o CJA faz a distinção entre administradores de produto e usuários do [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR). Somente administradores de produtos podem <ul><li>Criar/atualizar/excluir conexões ou Visualizações de dados</li><li>Atualizar/excluir projetos, filtros ou métricas de cálculo que foram criados por outros usuários e</li><li>Compartilhar um projeto do Workspace para todos os usuários.</li></ul> |
 | Conjuntos de relatórios virtuais | Suporte completo; agora chamado de [Visualizações de dados](/help/data-views/create-dataview.md). |
 | Curadoria do componente VRS | Suporte completo; Agora parte das Visualizações de dados. |
 
@@ -70,7 +70,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 
 | Recurso | Notas |
 | --- | --- |
-| Filtragem de bot | Para [Conector de origem Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en)Com base em conjuntos de dados do , a filtragem de bot é aplicada. A lógica geral da filtragem de bot para outros conjuntos de dados não é executada pela [!UICONTROL Experience Platform] ou pelo CJA. |
+| Filtragem de bot | Para conjuntos de dados baseados no [Conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en), a filtragem de bot é aplicada. A lógica geral da filtragem de bot para outros conjuntos de dados não é executada pela [!UICONTROL Experience Platform] ou pelo CJA. |
 | Media Analytics | Os dados de mídia estão disponíveis como parte do Conector de origem do Analytics. |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos, Analytics for Target (A4T) e Visualizadores simultâneos de mídia não são compatíveis. |
 | Regras de processamento | Para conjuntos de dados do Conector de dados do Analytics, as regras de processamento ainda se aplicam. [Os recursos de preparação de dados na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR) também podem ser usados como substituição das regras de processamento para dados que vão diretamente para a Platform. |
@@ -80,18 +80,18 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Recurso | Notas |
 | --- | --- |
 | Alertas | Suporte planejado. |
-| Eventos de calendário | Será chamado de &quot;Anotações&quot; no Workspace. |
-| Criador de regras de classificação | Funcionará de forma um pouco diferente no CJA, usando manipulações de sequência de caracteres no momento do relatório em vez de conjuntos de dados de pesquisa. |
+| Eventos de calendário | Será chamado de “Anotações” no Workspace. |
+| Criador de regras de classificação | Funcionará de maneira um pouco diferente no CJA, usando manipulações de sequência de caracteres no momento do relatório em vez de conjuntos de dados de pesquisa. |
 | Análise de contribuição | Suporte planejado. |
 | Relatórios do Data Warehouse (exportação de 100% de linhas) | O suporte é planejado na interface do Analysis Workspace. O [[!UICONTROL Serviço de consulta]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) da Adobe Experience Platform também fornece uma interface para esses casos de uso no CJA. |
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
-| Relatórios de lift e confiança | Suporte planejado. |
-| Regras de processamento, Regras VISTA, Regras de processamento de canais de marketing | Suporte planejado, mas funcionará em tempo de consulta em vez de durante a coleta de dados para manipulações de dados mais flexíveis e retroativas e não destrutivas. |
+| Relatório de aumento e confiança | Suporte planejado. |
+| Regras de processamento, regras VISTA e regras de processamento de canais de marketing | Suporte planejado, mas funcionará no período de consulta em vez de durante a coleta de dados para manipulações de dados mais flexíveis, retroativas e não destrutivas. |
 | Modelos de projeto | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
 | Segment IQ | Suporte planejado. |
-| Publicação de segmentos (envio de segmentos do Espaço de trabalho para a Experience Cloud) | Suporte planejado. Será chamado de &quot;Publicação de público-alvo&quot; no CJA. |
-| Relatório de sessão nova vs. repetição | O suporte é planejado com algumas limitações. |
+| Publicação de segmentos (envio de segmentos do Espaço de trabalho para a Experience Cloud) | Suporte planejado. Será chamado de “Publicação de audiência” no CJA. |
+| Relatório de sessão novo vs. repetição | Suporte planejado com algumas limitações. |
 
 ## Suporte ainda não planejado
 

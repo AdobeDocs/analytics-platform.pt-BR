@@ -7,7 +7,7 @@ feature: Use Cases
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '1178'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -125,7 +125,7 @@ Você também pode capturar eventos de transmissão ao vivo do Google Tag Manage
 
 ### 1. Adicionar variáveis personalizadas
 
-Depois de fazer logon na conta do Google Tag Manager, é necessário adicionar algumas Variáveis de constante personalizadas relacionadas à Adobe. Você provavelmente já tem variáveis no Gerenciador de tags da Google que estão sendo enviadas ao Google Analytics, como email do cliente, nome do cliente, idioma e status de logon do cliente. Você precisa definir cinco novas variáveis personalizadas:
+Depois de fazer logon na conta do Google Tag Manager, é necessário adicionar algumas Variáveis de constante personalizadas relacionadas à Adobe. Você provavelmente já tem variáveis no Google Tag Manager que estão sendo enviadas para o Google Analytics, como email do cliente, nome do cliente, idioma e status de logon do cliente. Você precisa definir cinco novas variáveis personalizadas:
 
 * ID da organização da Adobe Experience Cloud
 * Ponto de extremidade de transmissão DCS

@@ -1,20 +1,20 @@
 ---
-title: Exibir as notas de versão atuais do Customer Journey Analytics
+title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Notas de versão do Customer Journey Analytics atual
+# Notas de versão atuais do Customer Journey Analytics
 
 ## Principais atualizações
 
-|[!UICONTROL Persistência] opções para vincular dimensões e métricas de vínculo| Ao criar ou editar uma visualização de dados, você pode vincular a persistência de uma dimensão a outra dimensão ou métrica. Esse conceito é conhecido como _merchandising_ em Reports &amp; Analytics, e agora é compatível com o CJA. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension)| 19 de janeiro de 2022 |
+|Opções de [!UICONTROL Persistência] para dimensões e métricas de ligação| Ao criar ou editar uma visualização de dados, é possível vincular a persistência de uma dimensão a outra dimensão ou métrica. Esse conceito é conhecido como _merchandising_ no Reports &amp; Analytics, e agora é compatível com o CJA. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension)| 19 de janeiro de 2022 |
 
 ## Outras atualizações
 
@@ -26,4 +26,4 @@ ht-degree: 73%
 {style=&quot;table-layout:auto&quot;}
 
 >[!MORELIKETHIS]
->[Atualizações na documentação do Customer Journey Analytics](/help/doc-changes.md)
+>[Atualizações de documentação do Customer Journey Analytics](/help/doc-changes.md)

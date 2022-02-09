@@ -1,20 +1,20 @@
 ---
-title: Uso de dimensões e métricas de vinculação no CJA
+title: Uso de dimensões e métricas de ligação no CJA
 description: Atribua dimensões a arrays de objetos para análise de persistência complexa.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 source-git-commit: 38c10e395b816d812d30f0698dc821ee0ea5c9b1
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 2%
+ht-degree: 76%
 
 ---
 
-# Uso de dimensões e métricas de vinculação no CJA
+# Uso de dimensões e métricas de ligação no CJA
 
-O Customer Journey Analytics oferece várias maneiras de persistir valores de dimensão além da ocorrência em que estão definidos. Um dos métodos de persistência que o Adobe oferece é conhecido como Vínculo. Em versões anteriores do Adobe Analytics, esse conceito era conhecido como merchandising.
+O Customer Journey Analytics oferece várias maneiras de persistir valores de dimensão além da ocorrência em que estão definidos. Um dos métodos de persistência que a Adobe oferece é conhecido como Ligação. Em versões anteriores do Adobe Analytics, esse conceito era conhecido como merchandising.
 
-Embora você possa usar dimensões de vínculo com dados de evento de nível superior, esse conceito é melhor usado ao trabalhar com [Matrizes de objetos](object-arrays.md). Você pode atribuir uma dimensão a uma parte de uma matriz de objetos sem aplicá-la a todos os atributos em um determinado evento. Por exemplo, você pode atribuir um termo de pesquisa a um produto na matriz de objetos do carrinho de compras sem vincular esse termo de pesquisa ao evento inteiro.
+Embora você possa usar dimensões de ligação com dados de evento de nível superior, esse conceito é melhor usado ao trabalhar com [Arrays de objetos](object-arrays.md). Você pode atribuir uma dimensão a uma parte de um array de objetos sem aplicá-la a todos os atributos em um determinado evento. Por exemplo, você pode atribuir um termo de pesquisa a um produto no array de objetos do carrinho de compras sem vincular esse termo de pesquisa ao evento inteiro.
 
 ## Exemplo 1: Usar dimensões de vínculo para atribuir atributos de produto adicionais a uma compra
 
@@ -75,7 +75,7 @@ Embora você possa usar dimensões de vínculo com dados de evento de nível sup
 
 Se você quiser observar a receita por cor sem uma dimensão de vínculo, a dimensão `product.color` persiste e atribui incorretamente o crédito à cor do secador:
 
-| product.color | Receita |
+| product.color | receita |
 | --- | --- |
 | neon - laranja | 2099 |
 
@@ -85,16 +85,16 @@ Você pode acessar o Gerenciador de visualização de dados e vincular a cor do 
 
 Ao definir esse modelo de persistência, o Adobe anota o nome do produto sempre que a cor do produto é definida. Quando ele reconhece o mesmo nome de produto em um evento subsequente para esse visitante, a cor de produto também é trazida. Os mesmos dados quando você vincula a cor do produto ao nome do produto são semelhantes ao seguinte:
 
-| product.color | Receita |
+| product.color | receita |
 | --- | --- |
 | branco | 1600 |
 | neon - laranja | 499 |
 
 ## Exemplo 2: Usar métricas vinculativas para vincular termo de pesquisa a uma compra de produto
 
-Um dos métodos de comercialização mais comuns no Adobe Analytics foi vincular um termo de pesquisa a um produto para que cada termo de pesquisa receba crédito pelo produto apropriado. Considere a seguinte jornada do cliente:
+Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vincular um termo de pesquisa a um produto para que cada termo de pesquisa receba crédito pelo seu produto apropriado. Considere a seguinte jornada do cliente:
 
-1. Um visitante chega ao seu site e procura por &quot;luvas de boxe&quot;.
+1. Um visitante chega ao seu site e procura por “luvas de boxe”.
 
    ```json
    {
@@ -122,7 +122,7 @@ Um dos métodos de comercialização mais comuns no Adobe Analytics foi vincular
    }
    ```
 
-1. Eles encontram um par de luvas de que gostam, e o adicionam ao carrinho.
+1. Ele encontra um par de luvas que gosta e o adiciona ao carrinho.
 
    ```json
    {
@@ -139,7 +139,7 @@ Um dos métodos de comercialização mais comuns no Adobe Analytics foi vincular
    }
    ```
 
-1. O visitante então procura por &quot;raquete de tênis&quot;.
+1. O visitante então procura por “raquete de tênis”.
 
    ```json
    {
@@ -164,7 +164,7 @@ Um dos métodos de comercialização mais comuns no Adobe Analytics foi vincular
    }
    ```
 
-1. Eles encontram uma raquete que gostam e a adicionam ao carrinho.
+1. Ele encontra uma raquete que gosta e a adiciona ao carrinho.
 
    ```json
    {
@@ -185,7 +185,7 @@ Um dos métodos de comercialização mais comuns no Adobe Analytics foi vincular
    }
    ```
 
-1. O visitante pesquisa por &quot;sapatos&quot; uma terceira vez.
+1. O visitante faz uma terceira pesquisa, por “sapatos”.
 
    ```json
    {
@@ -213,7 +213,7 @@ Um dos métodos de comercialização mais comuns no Adobe Analytics foi vincular
    }
    ```
 
-1. Eles encontram um par de sapatos de que gostam e o adicionam ao carrinho.
+1. Ele encontra um par de sapatos que gosta e o adiciona ao carrinho.
 
    ```json
    {
@@ -265,37 +265,37 @@ Um dos métodos de comercialização mais comuns no Adobe Analytics foi vincular
    }
    ```
 
-Se você usar um modelo de alocação tradicional com termo de pesquisa, os três produtos atribuirão receita a apenas um único termo de pesquisa. Por exemplo, se você usou a primeira alocação com a dimensão do termo de pesquisa:
+Se você usar um modelo de alocação tradicional com termo de pesquisa, os três produtos atribuirão a receita a um único termo de pesquisa. Por exemplo, se você usou a primeira alocação com a dimensão de termo de pesquisa:
 
-| search_term | Receita |
+| search_term | receita |
 | --- | --- |
 | luvas de boxe | US$ 204,97 |
 
-Se você tiver usado a última alocação com a dimensão do termo de pesquisa, os três produtos ainda atribuirão receita a um único termo de pesquisa:
+Se você usou a última alocação com a dimensão de termo de pesquisa, os três produtos ainda atribuirão a receita a um único termo de pesquisa:
 
-| search_term | Receita |
+| search_term | receita |
 | --- | --- |
 | sapatos | US$ 204,97 |
 
-Embora este exemplo inclua apenas um visitante, muitos visitantes que pesquisam por coisas diferentes podem atribuir termos de pesquisa a produtos diferentes, tornando difícil determinar quais são os melhores resultados de pesquisa.
+Embora este exemplo inclua apenas um visitante, muitos visitantes que pesquisam por coisas diferentes podem atribuir erroneamente termos de pesquisa a produtos diferentes, tornando difícil determinar quais são os melhores resultados de pesquisa.
 
-Com uma dimensão de vínculo, o Adobe anota o item de dimensão ao qual está vinculado. Quando o mesmo valor de vínculo é visto em um evento subsequente, ele traz o item de dimensão para que você possa atribuir a métrica desejada a ele. Neste exemplo, podemos definir a dimensão de vínculo para search_term como nome do produto. Quando definimos essa dimensão no Gerenciador de visualizações de dados, também precisamos definir uma métrica de vínculo, pois a dimensão de vínculo está em uma matriz de objetos. Uma métrica de vínculo atua como um acionador de uma dimensão de vínculo, de modo que se vincula apenas aos eventos em que a métrica de vínculo está presente. Neste exemplo de implementação, a página de resultados da pesquisa sempre inclui uma dimensão de termo de pesquisa e uma métrica de pesquisas. Podemos vincular termos de pesquisa ao nome do produto sempre que a métrica Pesquisas estiver presente.
+Com uma dimensão de ligação, a Adobe anota o item de dimensão ao qual está vinculado. Quando o mesmo valor de ligação é visto em um evento subsequente, ele traz o item de dimensão para que você possa atribuir a métrica desejada a ele. Neste exemplo, podemos definir a dimensão de ligação do search_term como nome do produto. Quando definimos essa dimensão no gerenciador de visualizações de dados, também precisamos definir uma métrica de ligação, pois a dimensão de ligação está em um array de objetos. Uma métrica de ligação atua como um acionador de uma dimensão de ligação, de modo que se vincula apenas aos eventos em que a métrica de ligação está presente. Neste exemplo de implementação, a página de resultados da pesquisa sempre inclui uma dimensão de termo de pesquisa e uma métrica de pesquisas. Podemos vincular termos de pesquisa ao nome do produto sempre que a métrica de Pesquisas estiver presente.
 
-![Métrica de vínculo](assets/binding-metric.png)
+![Métrica de ligação](assets/binding-metric.png)
 
 Definir a dimensão do termo de pesquisa para esse modelo de persistência executa a seguinte lógica:
 
-* Quando search_term estiver em um evento, verifique a presença do nome do produto.
-* Se o nome do produto não estiver lá, não faça nada.
-* Se o nome do produto estiver lá, verifique a presença da métrica Pesquisas.
-* Se a métrica Pesquisas não estiver lá, não faça nada.
-* Se a métrica Pesquisas estiver lá, vincule o termo de pesquisa a todos os nomes de produtos. Funciona como se estivesse no mesmo nível que o nome do produto para esse evento. Neste exemplo, ele é tratado como product.search_term.
-* Se o mesmo nome de produto for visualizado em um evento subsequente, o termo de pesquisa vinculado também existe lá.
+* Quando search_term estiver em um evento, será verificada a presença do nome do produto.
+* Se o nome do produto não estiver lá, nada será feito.
+* Se o nome do produto estiver lá, será verificada a presença da métrica de Pesquisas.
+* Se a métrica de Pesquisas não estiver lá, nada será feito.
+* Se a métrica de Pesquisas estiver lá, o termo de pesquisa será vinculado a todos os nomes de produtos. Funciona como se estivesse no mesmo nível do nome do produto para esse evento. Neste exemplo, ele é tratado como product.search_term.
+* Se o mesmo nome de produto for visto em um evento subsequente, o termo de pesquisa vinculado também existirá lá.
 
 No Analysis Workspace, o relatório resultante seria semelhante ao seguinte:
 
-| search_term | Receita |
+| search_term | receita |
 | --- | --- |
-| luvas de boxe | 89,99 $ |
+| luvas de boxe | US$ 89,99 |
 | raquete de tênis | US$ 34,99 |
-| sapatos | 79,99 $ |
+| sapatos | US$ 79,99 |
