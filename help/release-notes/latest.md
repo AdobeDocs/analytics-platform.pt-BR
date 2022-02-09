@@ -3,27 +3,25 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: c09c381a6a0c258275dcc90fff3e7133d5c42d5a
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Notas de versão atuais do Customer Journey Analytics
 
-## Principais atualizações
-
-|Opções de [!UICONTROL Persistência] para dimensões e métricas de ligação| Ao criar ou editar uma visualização de dados, é possível vincular a persistência de uma dimensão a outra dimensão ou métrica. Esse conceito é conhecido como _merchandising_ no Reports &amp; Analytics, e agora é compatível com o CJA. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension)| 19 de janeiro de 2022 |
-
-## Outras atualizações
+## Recursos principais
 
 | Recurso | Descrição | Data Alvo |
 | ----------- | ---------- | ----- |
-| [!UICONTROL Primeiros] e [!UICONTROL últimos] modelos de alocação conhecidos | Esses dois novos modelos de alocação usam o primeiro ou o último valor observado para uma dimensão dentro de um escopo de persistência especificado (sessão, pessoa ou período de tempo personalizado com retrospectiva). Em seguida, eles aplicam o modelo de alocação a todos os eventos dentro do escopo especificado. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#allocation-settings) | 19 de janeiro de 2022 |
-| [!UICONTROL PersonID] e [!UICONTROL namespace da PersonID] como dimensões | Expõe a variável `personID` (ou `customerID` ou qualquer ID que você esteja usando para mesclar conjuntos de dados em uma conexão) como uma dimensão em visualizações de dados. Esse aprimoramento facilita a inclusão da variável `personID` como uma dimensão na visualização de dados, puxando-a da conexão. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional-standard-components) | 19 de janeiro de 2022 |
+| Nenhum recurso novo este mês | N/D | N/D |
 
-{style=&quot;table-layout:auto&quot;}
+## Correções
+
+* Correção nº 1
+* Correção nº 2
 
 >[!MORELIKETHIS]
->[Atualizações de documentação do Customer Journey Analytics](/help/doc-changes.md)
+>[Atualizações de documentação do Customer Journey Analytics](/help/release-notes/doc-changes.md)
