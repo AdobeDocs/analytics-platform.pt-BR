@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: c09c381a6a0c258275dcc90fff3e7133d5c42d5a
+source-git-commit: cf51db711370e7dea5d934cb25d351271d3f20bd
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 99%
+source-wordcount: '589'
+ht-degree: 97%
 
 ---
 
@@ -20,10 +20,18 @@ ht-degree: 99%
 # Guia do Customer Journey Analytics {#using}
 
 + [Guia do Customer Journey Analytics](getting-started/cja-landing.md)
++ Notas de versão {#releases}
+   + [Versão mais recente](release-notes/latest.md)
+   + [Versões de 2022](release-notes/2022.md)
+   + [Versões de 2021](release-notes/2021.md)
+   + [Versões de 2020](release-notes/2020.md)
+   + [Versões CJA](release-notes/releases.md)
+   + [Atualizações da documentação CJA](release-notes/doc-changes.md)
 + Visão geral do Customer Journey Analytics {#cja-overview}
    + [Visão geral do Customer Journey Analytics](getting-started/cja-overview.md)
    + [Introdução](getting-started/cja-getting-started.md)
    + [Perguntas frequentes](getting-started/cja-faq.md)
+   + [Preparar-se para migrar do Adobe Analytics para o Customer Journey Analytics](getting-started/aa-to-cja.md)
    + [Suporte a recursos do Customer Journey Analytics](getting-started/cja-aa.md)
    + [Implicações de exclusão](getting-started/cja-deletion.md)
    + [Glossário CJA](getting-started/cja-glossary.md)
@@ -205,11 +213,5 @@ ht-degree: 99%
    + [Comparar os dados do Adobe Analytics com os dados do CJA](troubleshooting/compare.md)
 + Privacidade {#cja-privacy}
    + [Visão geral de privacidade](privacy/privacy-overview.md)
-+ Notas de versão {#releases}
-   + [Versão mais recente](release-notes/latest.md)
-   + [Versões de 2022](release-notes/2022.md)
-   + [Versões de 2021](release-notes/2021.md)
-   + [Versões de 2020](release-notes/2020.md)
-   + [Versões CJA](release-notes/releases.md)
-   + [Atualizações da documentação CJA](release-notes/doc-changes.md)
+
 
