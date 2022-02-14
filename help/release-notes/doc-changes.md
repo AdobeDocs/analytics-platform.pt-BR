@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9e5617d77503050e50bcd2b701b644058df74585
+source-git-commit: 23ab70319dcf77424757e65d969ba838c5ae04cd
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 96%
+source-wordcount: '710'
+ht-degree: 93%
 
 ---
 
@@ -17,6 +17,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 | Data | Atualizar descrição |
 | --- | --- |
+| Fevereiro de 2022 | [Preparar-se para migrar do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en) |
 | Janeiro de 2022 | Novo caso de uso para [Uso de dimensões e métricas de vinculação no CJA](/help/use-cases/binding-dimensions-metrics.md) |
 | Janeiro de 2022 | Foi adicionada uma nova documentação de recursos sobre [dimensões e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#métrica-de-ligação) e sobre as novas configurações de alocação de [[!UICONTROL Primeiro conhecimento] e [!UICONTROL Último conhecimento]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#configurações-de-alocação) |
 | Janeiro de 2022 | Novo artigo em [comparação dos dados do Adobe Analytics com os dados do Analytics no CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=pt-BR) |
@@ -53,9 +54,9 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Novembro de 2020 | Adição de conteúdo sobre [remoção de limitações de preenchimento retroativo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#backfill-historical-data) para conexões. |
 | 7 de outubro de 2020 | Adição de um tópico sobre [conjuntos de dados de evento combinados](/help/connections/combined-dataset.md). |
 | 15 de setembro de 2020 | Adição de um tópico sobre [assimilação de dados](/help/use-cases/data-ingestion.md). |
-| 2 de setembro de 2020 | Atualização da seção sobre [permissões do usuário](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR). |
+| 2 de setembro de 2020 | Atualização da seção sobre [permissões do usuário](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=en). |
 | 7 de agosto de 2020 | Adição de um novo tópico sobre [Caso de uso de B2B - conjunto de dados de pesquisa](/help/use-cases/b2b.md). |
-| Julho de 2020 | Adição de informações sobre a opção [Mapa de identidade para ID de pessoa](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR). |
+| Julho de 2020 | Adição de informações sobre a opção [Mapa de identidade para ID de pessoa](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en). |
 | Julho de 2020 | Adição de um novo tópico sobre [arrays de objetos](/help/use-cases/object-arrays.md) ou “hierarquias de dados”. |
 | 14 de abril de 2020 | Atualizações na interface de usuário mais recente no tópico [Criar conexões](/help/connections/create-connection.md). |
 | 27 de fevereiro de 2020 | Atualizações na página de [suporte de recursos do Customer Journey Analytics](/help/getting-started/cja-aa.md). |
