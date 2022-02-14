@@ -3,13 +3,13 @@ title: Migrar do Adobe Analytics para o Customer Journey Analytics
 description: Etapas para migrar do Adobe Analytics para o Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 868cd819148b29436fbd92cf220c8bc4cb9e0725
+exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
+source-git-commit: 2a330a430b48eb753d269e1165e95b61cb5fb483
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1060'
 ht-degree: 5%
 
 ---
-
 
 # Preparar-se para migrar do Adobe Analytics para o Customer Journey Analytics
 
@@ -24,10 +24,10 @@ A preparação dos dados do Adobe Analytics para uma mudança contínua para o C
 Talvez o componente mais importante para entender uma jornada do cliente seja saber quem é o cliente em cada etapa. Para o Customer Journey Analytics, ter um identificador que existe em todos os canais e os dados correspondentes permite compilar várias fontes no CJA.
 Exemplos de identidades podem ser uma ID do cliente, ID da conta ou ID de email. Qualquer que seja a identidade (e pode haver vários), considere o seguinte para cada ID:
 
-* Existe ou pode ser adicionado a em todas as fontes de dados que você deseja trazer para o CJA
-* É preenchida em cada linha de dados
-* Não contém PII. Aplique hash a qualquer item que possa ser sensível.
-* Usa o mesmo formato em todas as fontes (mesmo comprimento, mesmo método de hash etc.)
+* A ID existe ou pode ser adicionada a todas as fontes de dados que você deseja trazer para o CJA
+* A ID é preenchida em cada linha de dados
+* A ID não contém PII. Aplique hash a qualquer item que possa ser sensível.
+* A ID usa o mesmo formato em todas as fontes (mesmo comprimento, mesmo método de hash etc.)
 
 Em conjuntos de dados como o Adobe Analytics, uma identidade pode não existir em cada linha de dados, mas uma identidade secundária sim. Nesse caso, a Análise entre canais (anteriormente conhecida como &quot;Configuração em campo&quot;) pode ser usada para preencher a lacuna entre linhas, quando um cliente é identificado apenas pela ECID e quando uma identidade é coletada (por exemplo, quando um cliente é autenticado). [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR)
 
@@ -51,9 +51,9 @@ As configurações tradicionais do Canal de marketing do Adobe Analytics não t�
 
 Adobe publicou [práticas recomendadas atualizadas para a implementação do Marketing Channel](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=en). Essas recomendações atualizadas ajudam você a aproveitar ao máximo os recursos já existentes no Adobe Analytics com Attribution IQ. Eles também configurarão você para ser bem-sucedido na transição para o Customer Journey Analytics.
 
-### 4. Decida usar o Conector de dados do Analytics vs. SDKs do Experience Platform
+### 4. Decida usar o Conector de origem do Analytics vs. SDKs do Experience Platform
 
-As [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) A coleta de dados evolui; você provavelmente migrará para o SDK da Web da Adobe Experience Platform ou para o SDK do Adobe Experience Platform Mobile com a rede de borda da Adobe Experience Platform. Embora uma implementação típica dos SDKs envie dados para o Adobe Analytics, uma nova oportunidade se apresenta para enviar dados diretamente para o Adobe Experience Platform. Ela pode ser assimilada no Customer Journey Analytics, além de manter os dados enviados para o Adobe Analytics.
+As [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) a coleta de dados evolui; você provavelmente migrará para a variável [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=en) ou [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) com a rede de borda da Adobe Experience Platform. Embora uma implementação típica dos SDKs envie dados para o Adobe Analytics, uma nova oportunidade se apresenta para enviar dados diretamente para o Adobe Experience Platform. Ela pode ser assimilada no Customer Journey Analytics, além de manter os dados enviados para o Adobe Analytics.
 
 Esse método amplia bastante as possibilidades de coleta de dados: Não há mais uma limitação no número de campos ou a necessidade de mapear elementos de dados para props, eVars e eventos como no Analytics. Você pode usar elementos de esquema ilimitados de diferentes tipos e representá-los de várias maneiras usando o CJA [Visualizações de dados](/help/data-views/data-views.md). A velocidade da disponibilidade dos dados aumenta quando enviados diretamente para a Adobe Experience Platform, à medida que o tempo para processamento de dados por meio do Adobe Analytics é removido.
 
