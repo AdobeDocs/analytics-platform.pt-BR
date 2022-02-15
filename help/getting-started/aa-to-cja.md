@@ -4,10 +4,10 @@ description: Etapas para migrar do Adobe Analytics para o Customer Journey Analy
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 39814339963b2e836a05ddbe2062bea2527fea24
+source-git-commit: 2f38b38328816a523427d73f812041904e294bc7
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 6%
+source-wordcount: '1234'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ Em conjuntos de dados como o Adobe Analytics, uma identidade pode não existir e
 
 ### 2. Alinhe suas variáveis
 
-A migração mais simples de dados do Adobe Analytics para o Customer Journey Analytics é assimilar um conjunto de relatórios global no Experience Platform usando o [Conector de origem Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR). Esse conector mapeia suas variáveis do Adobe Analytics diretamente para um esquema XDM e conjunto de dados no AEP, que por sua vez podem ser facilmente conectados ao CJA.
+A migração mais simples de dados do Adobe Analytics para o Customer Journey Analytics é assimilar um [conjunto de relatórios global](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=en) no Experience Platform usando o [Conector de origem Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR). Esse conector mapeia suas variáveis do Adobe Analytics diretamente para um esquema XDM e conjunto de dados no AEP, que por sua vez podem ser facilmente conectados ao CJA.
 
 Um conjunto de relatórios global pode nem sempre ser viável para uma implementação. Se estiver planejando trazer vários conjuntos de relatórios para o Customer Journey Analytics, você deve planejar trazer as variáveis para o alinhamento nesses conjuntos de relatórios.
 
@@ -77,7 +77,7 @@ Os seguintes recursos ou componentes do Adobe Analytics não são compatíveis:
 
 ### Familiarize-se com o Processamento no tempo do relatório
 
-Os relatórios no Adobe Analytics dependem de uma quantidade significativa de dados pré-processados para gerar resultados como a persistência que você vê no [!UICONTROL eVars]. O Customer Journey Analytics executa esses cálculos em tempo de execução do relatório.
+Os relatórios no Adobe Analytics dependem de uma quantidade significativa de dados pré-processados para gerar resultados como a persistência que você vê no [!UICONTROL eVars]. Por outro lado, o Customer Journey Analytics executa esses cálculos no tempo de execução do relatório.
 
 [!UICONTROL Processamento de tempo do relatório] abre a capacidade de aplicar configurações retroativas e criar várias versões de persistência de variável sem precisar alterar a forma como os dados subjacentes são coletados.
 
@@ -100,6 +100,14 @@ Estes são alguns vídeos para orientá-lo:
 * [Mover segmentos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=en)
 
 * [Transferir suas métricas calculadas do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
+
+### Outras considerações
+
+* Usando o poder das visualizações de dados do CJA, você tem muito mais flexibilidade na definição de métricas e dimensões no Customer Journey Analytics. Por exemplo, você pode usar o valor de uma dimensão para se tornar a definição de uma métrica. [Saiba mais](/help/data-views/data-views-usecases.md)
+
+* Se tiver definido um calendário personalizado no Adobe Analytics, você terá recursos de calendário semelhantes no CJA. Você precisa garantir que seu calendário seja definido corretamente.
+
+* No Customer Journey Analytics, você pode definir um tempo limite de visita/sessão personalizado, bem como uma métrica que iniciará uma nova sessão. Você pode criar visualizações de dados com diferentes definições de sessão para obter insights acima e além do que foi possível no Adobe Analytics. Esse recurso pode ser particularmente benéfico para conjuntos de dados móveis.
 
 ## Próximas etapas
 
