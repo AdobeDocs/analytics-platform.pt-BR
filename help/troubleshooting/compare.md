@@ -4,10 +4,10 @@ description: Saiba como comparar dados do Adobe Analytics com os dados do Custom
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: d970539d19fad6f274245dcc7bac6b3f13e7b7a2
-workflow-type: ht
-source-wordcount: '777'
-ht-degree: 100%
+source-git-commit: bbeceb076e7f249f2c2b8f997bdf37f3dc839db8
+workflow-type: tm+mt
+source-wordcount: '788'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 À medida que a sua organização adota o CJA, você pode notar algumas diferenças nos dados do Adobe Analytics e do CJA. Isso é normal e pode ocorrer por vários motivos. O CJA foi projetado para permitir melhorias no que diz respeito a algumas limitações de dados do AA. No entanto, podem ocorrer discrepâncias inesperadas/não intencionais. Este artigo foi projetado para ajudar a diagnosticar e resolver essas diferenças, de maneira que você e sua equipe possam usar o CJA sem obstáculos devido a preocupações com a integridade dos dados.
 
-Suponhamos que você tenha assimilado dados do Adobe Analytics no AEP por meio do Conector de origem do Analytics e criado uma conexão do CJA usando esse conjunto de dados.
+Vamos supor que você tenha assimilado dados da Adobe Analytics no AEP por meio do [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR)e, em seguida, criou uma conexão CJA usando esse conjunto de dados.
 
 ![Fluxo de dados](assets/compare.png)
 
@@ -71,8 +71,8 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
    | --- | --- |
    | Opt_out | `y, Y` |
    | In_data_only | Not 0 |
-   | Exclude_hit | Not 0 |
-   | Bot_id | Not 0 |
+   | Exclude_hit | Não 0 |
+   | Bot_id | Não 0 |
    | Hit_source | 0,3,5,7,8,9,10 |
    | Page_event | 53,63 |
 
