@@ -4,10 +4,10 @@ description: Determine como ou se os valores de dimensão persistem de um evento
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
+source-git-commit: 419279f8e01bc81b17c372c6c53939b81ddbf4b7
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 100%
+source-wordcount: '831'
+ht-degree: 98%
 
 ---
 
@@ -69,7 +69,7 @@ Detalhes sobre as configurações de expiração disponíveis.
 
 * **Sessão**: expira após uma determinada sessão. Janela de expiração padrão.
 * **Pessoa**: expira ao final da janela de relatório.
-* **Hora**: você pode configurar o valor da dimensão para expirar após um período de tempo especificado (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente. Ao usar a expiração com base em tempo, os valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
+* **Hora personalizada**: Expira após um período especificado (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente. Ao usar a expiração com base em tempo, os valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
 * **Métrica**: quando essa métrica é vista em uma ocorrência, expire imediatamente o valor persistente na dimensão. Você pode usar qualquer métrica como o fim da expiração dessa dimensão. Essa opção de expiração só está disponível para as configurações de alocação Original e Mais recente.
 
 ## [!UICONTROL Dimensão de ligação]
