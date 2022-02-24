@@ -1,12 +1,12 @@
 ---
-description: As visualizações de Fallout mostram onde os visitantes saíram e continuaram em uma sequência predefinida de páginas.
+description: As Visualizações de fallout mostram onde os visitantes saíram e de onde continuaram em uma sequência predefinida de páginas.
 title: Visão geral de fallout
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
