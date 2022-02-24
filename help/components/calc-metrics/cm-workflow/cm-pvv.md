@@ -4,7 +4,7 @@ title: Criar uma métrica simples de "Exibições de página por visita"
 feature: Calculated Metrics
 exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
 ht-degree: 100%
 
