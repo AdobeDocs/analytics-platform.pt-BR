@@ -5,9 +5,9 @@ title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1128'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ O compartilhamento disponibiliza um projeto para outros usuários do Analysis Wo
 |---|---|
 | Pode editar | Os recipients podem **[!UICONTROL Salvar]** alterações em um projeto e trabalhar como coproprietários. Esta função é útil se você quiser cogerenciar um projeto com outros colegas; isso inclui edição, exclusão e modificação de listas de recipients para um projeto compartilhado. <br>Observação: no momento, o Analysis Workspace não oferece suporte à colaboração ao vivo, portanto, recomenda-se que somente um usuário edite um projeto em um determinado momento. Se os projetos forem salvos ao mesmo tempo, a última versão será mantida. |
 | Pode duplicar | Os recipients podem **[!UICONTROL Salvar como]** e ter acesso ao painel esquerdo. As interações entre projetos não são limitadas nesta função. Essa função é útil se você quiser compartilhar um projeto com usuários que entendem os dados de sua organização e como usar o Analysis Workspace, mas não deseja alterar seu projeto. |
-| Pode exibir | Os recipients não podem Salvar como e não têm acesso ao painel à esquerda. As interações são limitadas. As interações do projeto também são limitadas. Essa função é útil se você quiser compartilhar um projeto com usuários menos familiarizados com a estrutura de dados de sua organização, o Analysis Workspace ou o Customer Journey Analytics em geral. No entanto, você ainda deseja que eles consumam dados e insights em um ambiente seguro.<br>Saiba mais sobre a [experiência de projeto Pode visualizar](/help/analysis-workspace/curate-share/view-only-projects.md). |
+| Pode exibir | Os recipients não podem Salvar como e não têm acesso ao painel à esquerda. As interações são limitadas. As interações do projeto também são limitadas. Essa função é útil se você desejar compartilhar um projeto com usuários que estão menos familiarizados com a estrutura de dados de sua organização, o Analysis Workspace ou o Customer Journey Analytics em geral. No entanto, você ainda deseja que eles consumam dados e insights em um ambiente seguro.<br>Saiba mais sobre a [experiência de projeto Pode visualizar](/help/analysis-workspace/curate-share/view-only-projects.md). |
 
 >[!IMPORTANT]
 > Os recipients do projeto adicionados antes de 18 de junho de 2020 foram migrados para uma função do projeto. Usuários administradores migraram para a função **[!UICONTROL Pode editar]** e usuários não administradores migraram para a função **[!UICONTROL Pode duplicar]**. Essas funções fornecem a mesma experiência de projeto que tinham anteriormente. Além disso, todos os grupos (incluindo &quot;Todos&quot;) migraram para a função **[!UICONTROL Pode duplicar]**.
@@ -52,7 +52,7 @@ Para adicionar recipients ao seu projeto compartilhado:
 Se houver alterações não salvas, você deverá salvar o projeto primeiro.
 1. Adicione recipients ou grupos de recipients.
 Consulte o ícone de ajuda na parte superior para obter descrições de cada função.
-1. (Opcional) Compartilhe componentes de projeto incorporados (filtros, métricas calculadas e intervalos de datas) com todos os destinatários.
+1. (Opcional) Compartilhar componentes de projeto integrados (filtros, métricas calculadas e intervalos de datas) com todos os destinatários.
 Após compartilhados, esses componentes aparecem no menu suspenso de componentes do Espaço de trabalho do recipient. Observe que essa configuração não persiste: é uma ação única no momento do compartilhamento.
 1. (Opcional) Defina esta página como a página inicial para recipients.
 Essa configuração não persiste: é uma ação única no momento do compartilhamento.
@@ -63,14 +63,14 @@ Você também pode clicar em **[!UICONTROL Preparar e compartilhar]** para aplic
 
 ## Compartilhar em grupos de recipients {#Groups}
 
-Todos os usuários podem compartilhar projetos em grupos, que são uma coleção de recipients. No Customer Journey Analytics, os grupos são definidos por perfis de produto na variável [Admin Console do Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
+Todos os usuários podem compartilhar projetos com grupos, que são uma coleção de destinatários. No Customer Journey Analytics, os grupos são definidos por perfis de produto no [Admin Console da Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=pt-BR).
 
 * Os administradores podem compartilhar com qualquer grupo, incluindo &quot;Todos&quot;.
 * Os não administradores podem compartilhar com grupos dos quais são membros, com exceção de &quot;Todos&quot;.
 
 ## Compartilhar um link de projeto {#Links}
 
-Você pode obter um link para um projeto em **[!UICONTROL Compartilhar] > [!UICONTROL Obter link de projeto]**. Quando clicados, os recipients deverão fazer logon antes de acessar o projeto. Se o recipient não tiver sido colocado em uma função, ele receberá uma função padrão. Os administradores recebem a função **[!UICONTROL Pode editar]** e os não administradores recebem a função **[!UICONTROL Pode duplicar]**. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html) sobre como criar links compartilháveis para projetos do Espaço de trabalho.
+Você pode obter um link para um projeto em **[!UICONTROL Compartilhar] > [!UICONTROL Obter link de projeto]**. Quando clicados, os recipients deverão fazer logon antes de acessar o projeto. Se o recipient não tiver sido colocado em uma função, ele receberá uma função padrão. Os administradores recebem a função **[!UICONTROL Pode editar]** e os não administradores recebem a função **[!UICONTROL Pode duplicar]**. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=pt-BR) sobre como criar links compartilháveis para projetos do Espaço de trabalho.
 
 ## Compartilhar projetos no Gerenciador de projetos {#Manager}
 
