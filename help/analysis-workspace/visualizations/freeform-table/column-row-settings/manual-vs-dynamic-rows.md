@@ -4,7 +4,7 @@ description: Como interagir com itens de dimensão dinâmicos e estáticos em ta
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
 ht-degree: 100%
 
