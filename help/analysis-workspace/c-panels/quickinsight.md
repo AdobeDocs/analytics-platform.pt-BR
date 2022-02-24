@@ -4,9 +4,9 @@ title: Painel do Quick Insights
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1098'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 74%
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Quick Insights]** O painel está atualmente em testes limitados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=pt-BR)
+>O painel do **[!UICONTROL Quick Insights]** está atualmente em período de teste limitado. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=pt-BR)
 
 O painel do [!UICONTROL Quick Insights] fornece orientação para não analistas e novos usuários do [!UICONTROL Analysis Workspace] para saber como responder a perguntas comerciais de forma rápida e fácil. É também uma excelente ferramenta para usuários avançados que desejam responder rapidamente a uma pergunta simples sem precisar criar uma tabela.
 
-Ao começar a usar isso pela primeira vez [!UICONTROL Analysis Workspace], você pode se perguntar quais visualizações seriam mais úteis, quais dimensões e métricas podem facilitar os insights, onde arrastar e soltar itens, onde criar um filtro etc.
+Ao usar o [!UICONTROL Analysis Workspace] pela primeira vez, você pode se perguntar quais visualizações são mais úteis, quais dimensões e métricas podem promover insights, onde arrastar e soltar itens, onde criar um filtro, etc.
 
-Para ajudar nisso, e com base no uso de componentes de dados em sua própria empresa [!UICONTROL Analysis Workspace], [!UICONTROL Quick Insights] O usa um algoritmo que apresentará as dimensões, métricas, filtros e intervalos de datas mais populares que sua empresa usa. Na verdade, você verá dimensões, métricas e filtros marcados como [!UICONTROL Popular] na lista suspensa, como mostrado aqui:
+Para ajudar nisso, e com base no uso de componentes de dados da sua própria empresa no [!UICONTROL Analysis Workspace], o [!UICONTROL Quick Insights] utiliza um algoritmo que apresentará as dimensões, as métricas, os filtros e os intervalos de datas mais usados pela sua empresa. Na verdade, você verá dimensões, métricas e filtros marcados como [!UICONTROL Popular] na lista suspensa, como mostrado aqui:
 
 ![](assets/popular-tag.png)
 
@@ -32,7 +32,7 @@ O [!UICONTROL Quick insights] ajuda a
 
 * Criar corretamente uma tabela de dados e uma visualização que a acompanha no [!UICONTROL Analysis Workspace].
 * Aprender a terminologia e o vocabulário de componentes básicos e pedaços do [!UICONTROL Analysis Workspace].
-* Fazer detalhamentos simples de dimensões, adicionar várias métricas ou comparar filtros facilmente em uma [!UICONTROL Tabela de forma livre].
+* Faça detalhamentos simples de dimensões, adicione várias métricas ou compare filtros facilmente em uma [!UICONTROL tabela de forma livre].
 * Alterar ou experimentar vários tipos de visualização para encontrar a ferramenta para sua análise de forma rápida e intuitiva.
 
 ## Terminologia básica
@@ -46,7 +46,7 @@ A seguir, estão alguns dos termos básicos que você precisa conhecer. Cada tab
 | [!UICONTROL Métrica] | As métricas são informações quantitativas sobre a atividade do visitante, como exibições, click-throughs, recarregamentos, tempo médio gasto, unidades, ordens, receita, e assim por diante. |
 | [!UICONTROL Visualização] | O Workspace oferece [várias visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para criar representações visuais de seus dados, como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão e outros. |
 | [!UICONTROL Detalhamento de dimensão] | Um detalhamento de dimensão é uma forma de detalhar literalmente uma dimensão por outras dimensões. Em nosso exemplo, você pode dividir os Estados Unidos por dispositivos móveis para obter as visitas de dispositivos móveis por estado, ou pode dividir os dispositivos móveis por tipos de dispositivos móveis, por regiões, por campanhas internas, etc. |
-| [!UICONTROL filtro] | os filtros permitem identificar subconjuntos de visitantes com base em características ou interações de site. Por exemplo, você pode criar [!UICONTROL Visitante] filtros com base em atributos: tipo de navegador, dispositivo, número de visitas, país, gênero ou com base em interações: campanhas, pesquisa por palavra-chave, mecanismo de pesquisa ou com base em saídas e entradas: visitantes do Facebook, uma página de aterrissagem definida, um domínio de referência ou com base em variáveis personalizadas: campo de formulário, categorias definidas, ID do cliente. |
+| [!UICONTROL filtro] | Os filtros permitem identificar subconjuntos de visitantes com base em características ou interações de site. Por exemplo, você pode criar filtros de [!UICONTROL Visitantes] com base em atributos (tipo de navegador, dispositivo, número de visitas, país, gênero), com base em interações (campanhas, pesquisas por palavra-chave, mecanismo de pesquisa), com base em saídas e entradas (visitantes do Facebook, uma página de aterrisagem definida, um domínio de referência) ou com base em variáveis personalizadas (campo de formulário, categorias definidas, ID do cliente). |
 
 ## Introdução ao Quick Insights
 
@@ -58,7 +58,7 @@ A seguir, estão alguns dos termos básicos que você precisa conhecer. Cada tab
    ![](assets/qi-panel.png)
 
 1. Ao iniciar pela primeira vez, confira o breve tutorial que aborda as noções básicas do [!UICONTROL painel do Quick Insights]. Ou clique em **[!UICONTROL Ignorar tutorial]**.
-1. Selecione os blocos de construção (também conhecidos como componentes): dimensões (laranja), métricas (verde), filtros (azul) ou intervalos de datas (roxo) É necessário selecionar pelo menos uma dimensão e uma métrica para que uma tabela seja criada automaticamente.
+1. Selecione os elementos (também conhecidos como componentes): dimensões (laranja), métricas (verde), filtros (azul) ou intervalos de datas (roxo). É necessário selecionar pelo menos uma dimensão e uma métrica para que uma tabela seja criada automaticamente.
 
    ![](assets/qibuilder2.png)
 
@@ -98,7 +98,7 @@ Outras dicas úteis aparecerão no [!UICONTROL Quick Insights Builder], algumas 
 
    ![](assets/qibuilder6.png)
 
-* **Adicionar mais filtros**: Você pode adicionar até mais 2 filtros usando os operadores AND ou OR para adicioná-los à tabela. Observe o que acontece com a tabela quando você adiciona usuários móveis OR Visitantes leais. Eles ficam próximos um do outro, acima das métricas. Se você adicionasse Usuários móveis E Visitantes fidelizados, veria os resultados de ambos os filtros juntos e eles seriam empilhados um sobre o outro na tabela.
+* **Adicionar mais filtros**: é possível adicionar até 2 filtros extras usando os operadores AND ou OR para adicioná-los à tabela. Observe o que acontece com a tabela quando você adiciona usuários móveis OR Visitantes leais. Eles ficam próximos um do outro, acima das métricas. Se você adicionasse usuários móveis E visitantes fidelizados, veria os resultados de ambos os filtros juntos e eles seriam empilhados um sobre o outro na tabela.
 
    ![](assets/qibuilder7.png)
 
