@@ -4,9 +4,9 @@ title: Histograma
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '421'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -56,11 +56,11 @@ Para ajustar as configurações do histograma, clique no ícone de Configuraçõ
 
 ## Exibir e editar os dados do histograma {#section_B2CD7CDF0F6B432F928103AE7AAA3617}
 
-Para exibir ou alterar a fonte de dados do gráfico de histograma, clique no ponto ao lado do cabeçalho do Histograma para acessar **[!UICONTROL Configurações de fonte de dados]** > **[!UICONTROL Mostrar fonte de dados]**.
+Para exibir ou alterar a fonte de dados do gráfico de histograma, clique no ponto ao lado do cabeçalho do Histograma para acessar **[!UICONTROL Configurações da fonte de dados]** > **[!UICONTROL Mostrar fonte de dados]**.
 
 ![](assets/manage-data-source.png)
 
-Os filtros pré-criados exibidos na tabela são filtros internos e não serão exibidos no seletor de filtro. Clique no ícone &quot;i&quot; ao lado do nome do filtro e, em seguida, clique em **[!UICONTROL Tornar público]** para tornar o filtro público.
+Os filtros pré-construídos exibidos na tabela são filtros internos e não serão exibidos no seletor de filtros. Clique no ícone “i” ao lado do nome do filtro e em **[!UICONTROL Tornar público]** para tornar o filtro público.
 
 ![](assets/prebuilt_segments.png)
 
