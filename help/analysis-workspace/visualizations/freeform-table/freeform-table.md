@@ -4,7 +4,7 @@ description: As tabelas de forma livre são a base para a análise de dados no W
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '517'
 ht-degree: 100%
 
@@ -47,10 +47,10 @@ Se preferir adicionar primeiro vários componentes à tabela e, em seguida, rend
 
 Saiba mais sobre todos os dados de [opções de exportação](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=pt-BR) do Analysis Workspace.
 
-* Clique com o botão direito do mouse em > **[!UICONTROL Copiar dados para a área de transferência]** para exportar os dados da tabela exibidos. Se uma seleção de tabela for feita, essa opção indicará **[!UICONTROL Copiar seleção para a área de transferência]**. A tecla de atalho **Ctrl+C** também copia os dados selecionados.
+* Clique com o botão direito do mouse em > **[!UICONTROL Copiar dados para a área de transferência]** para exportar os dados da tabela exibidos. Se uma seleção de tabela for feita, essa opção indicará **[!UICONTROL Copiar seleção para a área de transferência]**. A tecla de atalho **Ctrl + C** também copia os dados selecionados.
 * Clique com o botão direito do mouse em > **[!UICONTROL Baixar dados como CSV]** para baixar os dados da tabela exibidos como um CSV. Se uma seleção de tabela for feita, essa opção indicará **[!UICONTROL Baixar seleção como CSV]**.
 * Clique com o botão direito do mouse em > **[!UICONTROL Projeto > Baixar itens como CSV]** para exportar até 50.000 itens de dimensão para a dimensão selecionada.
 
-Saiba mais sobre todos os dados de [opções de exportação](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html) do Analysis Workspace.
+Saiba mais sobre todos os dados de [opções de exportação](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=pt-BR) do Analysis Workspace.
 
 ![](assets/export-options.png)
