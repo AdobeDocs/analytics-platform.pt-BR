@@ -5,7 +5,7 @@ feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
 source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Em uma tabela de Forma livre, clique no ícone do filtro+ no cabeçalho do paine
 | Componentes (dimensão/métrica/intervalo de datas) | Defina até 3 regras adicionando componentes (dimensões, métricas, intervalos de datas ou valores de dimensão). Há três maneiras de encontrar o componente correto:<ul><li>Comece a digitar e o construtor de [!UICONTROL Filtros rápidos] encontrará automaticamente o componente apropriado.</li><li>Use a lista suspensa para localizar o componente.</li><li>Arraste os componentes do painel esquerdo e solte-os.</li></ul> |
 | Operador | Use o menu suspenso para encontrar operadores padrão e operadores de [!UICONTROL Contagem distinta]. Consulte [Operadores de filtro](operators.md). |
 | Sinal de mais (+) | Adicionar outra regra |
-| Qualificadores E/OU | É possível adicionar qualificadores “E” ou ”OU” às regras, mas não é possível misturar &quot;E&quot; e &quot;OU&quot; em uma única definição de filtro. |
+| Qualificadores AND/OR | É possível adicionar qualificadores “AND” ou ”OR” às regras, mas não é possível misturar &quot;AND&quot; e &quot;OR&quot; em uma única definição de filtro. |
 | Aplicar | Aplicar esse filtro ao painel. Se o filtro não contiver dados, você será questionado se deseja continuar. |
 | Abrir builder | Abre o Construtor de filtros. Depois de salvar ou aplicar o filtro no Construtor de filtros, ele não é mais considerado um “Filtro rápido”. Ele se torna parte da biblioteca de filtros da lista de componentes. |
 | Cancelar | Cancele esse filtro rápido - não o aplique. |
