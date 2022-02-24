@@ -5,7 +5,7 @@ exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
 ht-degree: 100%
 
@@ -67,19 +67,19 @@ Ao criar uma visualização de dados, as seguintes dimensões e métricas estão
 
 * **Dimensões:**
    * ID
-   * produto : SKU
-   * produto : nome
-   * produto : order_id
-   * produto : garantia : cobertura
-   * produto : garantia : comprimento
-   * produto : garantia : nome
-   * produto : garantia : tipo
+   * produto : SKU
+   * produto : nome
+   * produto : order_id
+   * produto : garantia : cobertura
+   * produto : garantia : comprimento
+   * produto : garantia : nome
+   * produto : garantia : tipo
 * **Métricas:**
-   * produto : ordens
-   * produto : unidades
-   * produto : receita
-   * produto : garantia
-   * produto : garantia : receita
+   * produto : ordens
+   * produto : unidades
+   * produto : receita
+   * produto : garantia
+   * produto : garantia : receita
 
 ### Exemplos de ocorrências idênticas (comportamento do relatório)
 
