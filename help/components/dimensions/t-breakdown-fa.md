@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 source-git-commit: 4bea8d7997d4084cfb87c1035689c0eea6b1f3b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Qualquer detalhamento em uma tabela também pode ter qualquer modelo de atribui�
 
 ![Configurações de detalhamento](assets/breakdown_settings.png)
 
-Esse é o comportamento esperado ao aplicar modelos de atribuição a detalhamentos ou ao editá-los:
+Este é o comportamento esperado ao aplicar modelos de atribuição a detalhamentos ou editá-los:
 
 * Se você aplicar uma atribuição quando nenhuma outra atribuição existir, ela será aplicada a toda a árvore de colunas.
 
