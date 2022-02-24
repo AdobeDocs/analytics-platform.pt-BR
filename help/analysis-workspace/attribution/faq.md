@@ -4,9 +4,9 @@ description: Obtenha respostas para perguntas frequentes sobre atribuição.
 feature: Attribution
 exl-id: 3153d8c9-4ca8-4189-8a2f-511a87e8ac17
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '306'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -51,6 +51,6 @@ O painel de atribuição é compatível com todas as dimensões. As métricas n�
 * Visitas em única página
 * Acesso único
 
-**Como a atribuição funciona com filtros?**
+**Como a atribuição funciona com os filtros?**
 
 A atribuição sempre é executada antes dos filtros e os filtros globais são executados antes de qualquer outro filtro de relatório ser aplicado.
