@@ -4,9 +4,9 @@ description: Saiba mais sobre a análise de coorte no Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 74%
 
 A *`cohort`* é um grupo de pessoas com características comuns em um período específico. A [!UICONTROL análise de coorte] é útil, por exemplo, quando você deseja saber como uma coorte interage com uma marca. Você pode detectar facilmente as mudanças nas tendências e atuar de acordo com elas. (Há explicações sobre a [!UICONTROL análise de coorte] disponíveis na Web, por exemplo, em [Análise de coorte 101](https://pt.wikipedia.org/wiki/Análise_de_coorte).)
 
-Depois de criar um relatório de coorte, você pode preparar seus componentes (dimensões, métricas e filtros específicos) e, em seguida, compartilhá-lo com qualquer pessoa. Consulte [Preparar e compartilhar](/help/analysis-workspace/curate-share/curate.md).
+Após criar um relatório de coorte, você pode preparar seus componentes (dimensões, métricas e filtros específicos) e, em seguida, compartilhá-lo com qualquer pessoa. Consulte [Preparar e compartilhar](/help/analysis-workspace/curate-share/curate.md).
 
 Exemplos do que você pode fazer com a [!UICONTROL análise de coorte]:
 
@@ -24,15 +24,15 @@ Exemplos do que você pode fazer com a [!UICONTROL análise de coorte]:
 * Obter ideias para o teste A/B em áreas como o estabelecimento de preços, o caminho de atualização, etc.
 * Exibir um relatório de [!UICONTROL análise de coorte] em um relatório de análise orientada.
 
-[!UICONTROL Análise de coorte] está disponível para todos os clientes do Customer Journey Analytics com direitos de acesso para [!UICONTROL Analysis Workspace].
+A [!UICONTROL Análise de coorte] está disponível a todos os clientes do Customer Journey Analytics com direitos de acesso ao [!UICONTROL Analysis Workspace].
 
 [Tutorial em vídeo da Análise de coorte](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/cohort-analysis/cohort-analysis-workspace.html?lang=pt-BR) (4:36)
 
 >[!IMPORTANT]
 >
->[!UICONTROL Análise de coorte]
+>A [!UICONTROL Análise de coorte]
 >
->não suporta métricas não filtráveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em filtros podem ser usadas em
+>não aceita métricas não filtráveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em filtros podem ser usadas na
 >[!UICONTROL Análise de coorte], que só pode ser aumentada em 1 de cada vez.
 
 ## Recursos da análise de coorte
@@ -41,13 +41,13 @@ Os seguintes recursos permitem o controle ajustado dos coortes que você está c
 
 ### Tabela de [!UICONTROL retenção]
 
-Um relatório de coorte de [!UICONTROL retenção] registram os visitantes: cada célula de dados mostra o número bruto e a porcentagem de visitantes da coorte que realizaram a ação durante esse período. É possível incluir até 3 métricas e até 10 filtros.
+Um relatório de coorte de [!UICONTROL retenção] registram os visitantes: cada célula de dados mostra o número bruto e a porcentagem de visitantes da coorte que realizaram a ação durante esse período. É possível incluir até 3 métricas e 10 filtros.
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL Tabela de abandono]
 
-A coorte de [!UICONTROL churn] é o inverso da tabela de retenção e mostra os visitantes que abandonaram ou que nunca atenderam aos critérios de retorno da sua coorte ao longo do tempo. É possível incluir até 3 métricas e até 10 filtros.
+A coorte de [!UICONTROL churn] é o inverso da tabela de retenção e mostra os visitantes que abandonaram ou que nunca atenderam aos critérios de retorno da sua coorte ao longo do tempo. É possível incluir até 3 métricas e 10 filtros.
 
 ![](assets/churn-report.png)
 
@@ -65,7 +65,7 @@ Mede o tempo decorrido antes e depois da ocorrência do evento de inclusão. Ess
 
 ### Coorte de [!UICONTROL dimensão personalizada]
 
-Crie coortes com base em uma dimensão selecionada, em vez de coortes com base em tempo, que são o padrão. Use dimensões como [!UICONTROL canal de marketing], [!UICONTROL campanha], [!UICONTROL produto], [!UICONTROL página], [!UICONTROL região]ou qualquer outra dimensão no Customer Journey Analytics para mostrar como a retenção é alterada com base nos diferentes valores dessas dimensões.
+Crie coortes com base em uma dimensão selecionada, em vez de coortes com base em tempo, que são o padrão. Use dimensões como [!UICONTROL canal de marketing], [!UICONTROL campanha], [!UICONTROL produto], [!UICONTROL página], [!UICONTROL região] ou qualquer outra dimensão no Customer Journey Analytics para mostrar como a retenção é alterada com base nos diferentes valores dessas dimensões.
 
 ![](assets/cohort-customizable-cohort-row.png)
 
