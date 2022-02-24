@@ -4,7 +4,7 @@ title: Dimensões de separação de tempo
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ As dimensões de separação de tempo são baseadas no fuso horário da visualiz
 |--- |--- |
 | Hora do dia | 0-23 |
 | AM/PM | AM, PM |
-| Dia da semana | Segunda, terça, quarta, quinta, sexta, sábado, domingo |
+| Dia da semana | Segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado, domingo |
 | Final de semana/Dia da semana | Final de semana, Dia da semana |
 | Dia do mês | 1-31 |
 | Mês do ano | Janeiro - Dezembro |
