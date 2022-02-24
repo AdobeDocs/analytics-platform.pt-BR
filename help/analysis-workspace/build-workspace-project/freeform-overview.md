@@ -1,13 +1,13 @@
 ---
-description: Visão geral dos projetos do Workspace com a barra de menus e as configurações
+description: Visão geral dos projetos do Workspace com a barra de menu e as configurações
 keywords: Analysis Workspace
 title: Visão geral dos Projetos
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Em um projeto, o menu fornece opções para gerenciar o projeto, adicionar compo
 
 | Item de menu | Descrição |
 |---|---|
-| Projeto | Inclui ações comuns para o gerenciamento de projetos, incluindo Novo, Abrir, Salvar, Salvar como e Salvar como modelo. Você também pode atualizar o projeto inteiro para recuperar os dados e as definições mais recentes clicando em Atualizar projeto. A opção [Download de CSV e PDF](/help/analysis-workspace/curate-share/download-send.md) permite exportar dados do Espaço de trabalho. **Informações e configurações do projeto** (veja abaixo) oferece muitas opções para gerenciar seu projeto. |
+| Projeto | Inclui ações comuns para o gerenciamento de projetos, incluindo Novo, Abrir, Salvar, Salvar como e Salvar como modelo. Você também pode atualizar o projeto inteiro para recuperar os dados e as definições mais recentes clicando em Atualizar projeto. A opção [Download de CSV e PDF](/help/analysis-workspace/curate-share/download-send.md) permite exportar dados do Espaço de trabalho. A seção **Informações e configurações do projeto** (veja abaixo) oferece muitas opções para gerenciar seu projeto. |
 | Editar | Desfazer ou refazer a última ação. Limpar tudo redefinirá seu projeto para um ponto de partida em branco. |
 | Inserir | Insira novos painéis ou visualizações nesse menu. Você também pode inserir novos painéis e visualizações no painel esquerdo. |
-| [Componentes](/help/components/overview.md) | Crie novos filtros, métricas calculadas, intervalo de datas ou componentes de alerta do seu projeto. Você também pode criar novos componentes no painel esquerdo. Se as definições de componente foram alteradas recentemente, Atualizar componentes recuperará as definições mais recentes. |
-| [Compartilhar](/help/analysis-workspace/curate-share/send-schedule-files.md) | Prepare, compartilhe e agende projetos do PDF/CSV para os recipients em sua organização. |
+| [Componentes](/help/components/overview.md) | Crie novos filtros, métricas calculadas, intervalos de datas ou componentes de alerta a partir do seu projeto. Você também pode criar novos componentes no painel esquerdo. Se as definições de componente foram alteradas recentemente, Atualizar componentes recuperará as definições mais recentes. |
+| [Compartilhar](/help/analysis-workspace/curate-share/send-schedule-files.md) | Prepare, compartilhe e agende projetos em PDF/CSV para recipients em sua organização. |
 | Ajuda | Acesse a documentação de ajuda, os vídeos e a comunidade da Experience League [do Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=pt). Gerencie a visibilidade das dicas do Espaço de trabalho, bem como do [depurador](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Encontre detalhes sobre o Espaço de trabalho e fatores que afetam o [desempenho](/help/analysis-workspace/workspace-faq/optimizing-performance.md) do projeto. |
 | Botão Compartilhar ou Proprietário | Se você estiver em um projeto Próprio ou Editar, o botão Compartilhar na parte superior direita oferecerá acesso com um clique para gerenciar os recipients do projeto. Se você estiver em uma função Duplicar ou Exibir do projeto, verá o nome do proprietário do projeto. |
 
@@ -79,7 +79,7 @@ Em um projeto, [painéis](/help/analysis-workspace/c-panels/panels.md), tabelas,
 
 Também é possível acessar visualizações e painéis no [Painel em branco](/help/analysis-workspace/c-panels/blank-panel.md).
 
-Os componentes (Dimension, Métricas, Filtros, Intervalos de datas) no painel à esquerda estão relacionados à visualização de dados do painel ativo. O painel ativo terá uma borda azul ao seu redor e a exibição de dados ativa será listada na parte superior do painel do componente.
+Os componentes (Dimensões, Métricas, Filtros, Intervalos de datas) no painel esquerdo estão relacionados à visualização de dados do painel principal. O painel principal terá uma borda azul ao redor dele e a visualização de dados principal será listada na parte superior do painel de componentes.
 
 ![](assets/left-rail.png)
 
