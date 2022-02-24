@@ -1,12 +1,12 @@
 ---
-description: A visualização de Fluxo permite rastrear um caminho pelas suas páginas ou dimensões.
+description: A visualização de fluxo permite rastrear um caminho pelas suas páginas ou dimensões.
 title: Configurar uma visualização de fluxo
 feature: Visualizations
 exl-id: b379f1f0-e51a-44ec-91e1-b6479901c945
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
