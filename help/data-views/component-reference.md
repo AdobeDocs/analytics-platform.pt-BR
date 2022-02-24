@@ -5,7 +5,7 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '774'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Os componentes padrão opcionais estão disponíveis em **[!UICONTROL Visualiza�
 | [!UICONTROL ID em lote] | Dimensão | Representa o lote da Experience Platform do qual um [!UICONTROL Evento] fez parte. |
 | [!UICONTROL ID do conjunto de dados] | Dimensão | Representa o conjunto de dados Experience Platform do qual um [!UICONTROL Evento] fazia parte. |
 | [!UICONTROL Dia do mês] | Dimensão de separação de tempo | 1-31 |
-| [!UICONTROL Dia da semana] | Dimensão de separação de tempo | Segunda, terça, quarta, quinta, sexta, sábado, domingo |
+| [!UICONTROL Dia da semana] | Dimensão de separação de tempo | Segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado, domingo |
 | [!UICONTROL Dia do ano] | Dimensão de separação de tempo | 1-366 |
 | [!UICONTROL Hora do dia] | Dimensão de separação de tempo | 0-23 |
 | [!UICONTROL  Mês do ano] | Dimensão de separação de tempo | Janeiro - Dezembro |
