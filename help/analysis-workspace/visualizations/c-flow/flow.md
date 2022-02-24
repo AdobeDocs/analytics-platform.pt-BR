@@ -1,12 +1,12 @@
 ---
-description: O recurso Fluxo mostra os caminhos do cliente pelos sites e aplicativos.
+description: O recurso Fluxo mostra os caminhos do cliente pelos seus sites e aplicativos.
 title: Visão geral do Fluxo
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Ele permite:
 
 * Visualizar a jornada do cliente pelo seu site ou aplicativo
 * Analisar para onde os clientes vão antes e depois de pontos de verificação específicos, como a entrada, uma dimensão específica ou a saída
-* Criar filtros designando um ponto específico em um caminho escolhido
+* Crie filtros ao designar um ponto específico em um determinado caminho
 
 [Tutorial em vídeo de Visualização de fluxo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=pt-BR) (4:56)
 
