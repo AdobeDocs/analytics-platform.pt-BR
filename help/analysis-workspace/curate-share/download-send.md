@@ -4,9 +4,9 @@ title: Baixar arquivos PDF ou CSV
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1016'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Para downloads de projetos, lembre-se:
 * Os downloads de PDF são renderizados como uma página única sem paginação aplicada.
 * Quando um projeto é renderizado para PDF, renderizamos o que está na página. Se um projeto tiver visualizações e painéis com tamanhos personalizados, é necessário alterá-los para terem tamanhos automáticos (botão no canto superior direito) para que não haja truncamento de conteúdo.
 
-## Copiar dados para a área de transferência (tecla de atalho: Ctrl+C) {#copy-data}
+## Copiar dados para a área de transferência (tecla de atalho: Ctrl + C) {#copy-data}
 
 A opção de clicar com o botão direito **[!UICONTROL Copiar para a área de transferência]** permite copiar dados rapidamente do Workspace e colá-los em outro lugar.
 
@@ -67,11 +67,11 @@ Se quiser analisar mais do que as 400 linhas de dados visíveis em uma tabela, c
 
 Os recursos da tabela serão aplicados ao arquivo baixado da seguinte maneira:
 
-* Todos os filtros de painel são aplicados como filtros.
+* Todos os filtros do painel são aplicados como filtros.
 * Os detalhamentos **acima** da dimensão selecionada na tabela são aplicados como filtros acima de cada coluna.
 * Detalhamentos **abaixo** da dimensão selecionada na tabela são removidos.
 
-No exemplo acima, os itens de Página são baixados com o filtro de painel (Clientes de novos visitantes) e os componentes acima (Canal de marketing = Email) aplicados como filtros, e os componentes abaixo (Tipo de dispositivo móvel) são removidos do CSV baixado.
+No exemplo acima, os itens de Página são baixados com o filtro do painel (Novos clientes visitantes), os componentes acima (Canal de marketing = Email) são aplicados como filtros e os componentes abaixo (Tipo de dispositivo móvel) são removidos do CSV baixado.
 
 ![](assets/downloaded-file.png)
 
