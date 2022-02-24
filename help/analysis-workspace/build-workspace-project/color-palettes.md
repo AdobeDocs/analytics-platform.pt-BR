@@ -1,12 +1,12 @@
 ---
-description: Como alterar a paleta de cores da visualização ou especificar sua própria paleta de cores personalizada.
+description: Como alterar a paleta de cores de visualização ou especificar sua própria paleta de cores personalizada.
 title: Paleta de cores de visualização
 feature: CJA Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 source-git-commit: cea2faeaf9c2779ab808506025780fd3659a94b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 82%
 
 Lembre-se:
 
-* Há cinco paletas de cores predefinidas para sua escolha. A paleta padrão e a paleta abaixo foram otimizadas para contraste e são mais acessíveis para daltônicos.
+* Há cinco paletas de cores predefinidas para sua escolha. A paleta padrão e a exibida abaixo foram otimizadas para obter o melhor contraste e são mais acessíveis para daltônicos.
 * A terceira, a quarta e a quinta das paletas de cores abaixo, contando a partir das duas primeiras, foram otimizadas em termos de harmonia de cores.
 
 ## Para alterar a paleta de cores:
