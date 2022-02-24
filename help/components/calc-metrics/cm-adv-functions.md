@@ -4,7 +4,7 @@ description: Para acessar essas funções, selecione Mostrar avançadas na lista
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2944'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Por exemplo, se você possuir uma métrica de Receita e adicionar a métrica de 
 
 Por outro lado, se você possuir duas métricas de interesse, pode não ser correto dizer que uma tem uma média ou valor mínimo maior que a outra por causa dos zeros de algumas linhas. Neste caso, é melhor não marcar o parâmetro Incluir zeros.
 
-## E
+## AND
 
 Retorna o valor do seu argumento. Use NOT para garantir que um valor não seja igual a um determinado valor.
 
@@ -45,7 +45,7 @@ AND(logical_test1,[logical_test2],...)
 | Argumento | Descrição |
 |---|---|
 | *logical_test1* | Obrigatório. Qualquer valor ou expressão que possa ser avaliado como TRUE ou FALSE. |
-| *logical_test2* | Opcional. Condições adicionais que você deseja avaliar como VERDADEIRO ou FALSO. |
+| *logical_test2* | Opcional. Condições adicionais que você deseja avaliar como TRUE ou FALSE. |
 
 ## Contagem distinta aproximada (dimensão)
 
@@ -103,7 +103,7 @@ ASIN(metric)
 
 | Argumento |  |
 |---|---|
-| *métrica* | O cosseno do ângulo que você deseja de -1 a 1. |
+| *metric* | O cosseno do ângulo que você deseja de -1 a 1. |
 
 ## Arco tangente (Linha)
 
@@ -115,7 +115,7 @@ ATAN(metric)
 
 | Argumento |  |
 |---|---|
-| *métrica* | O cosseno do ângulo que você deseja de -1 a 1. |
+| *metric* | O cosseno do ângulo que você deseja de -1 a 1. |
 
 ## Regressão exponencial: valor previsto de Y (Linha)
 
@@ -156,7 +156,7 @@ cdf_z( -3 ) ? 0.0013499
 
 ## Limite máximo (Linha)
 
-Retorna o menor número inteiro não inferior a um valor especificado. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula LIMITE MÁXIMO(*Receita*) para arredondar a receita para cima; neste caso, US$570.
+Retorna o menor número inteiro não inferior a um valor especificado. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula CEILING(*Revenue*) para arredondar a receita para cima; neste caso, US$570.
 
 ```
 CEILING(metric)
@@ -164,7 +164,7 @@ CEILING(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica que deseja arredondar. |
+| *metric* | A métrica que deseja arredondar. |
 
 ## Cosseno (Linha)
 
@@ -176,7 +176,7 @@ COS(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja obter o cosseno. |
+| *metric* | O ângulo, em radianos, para o qual você deseja obter o cosseno. |
 
 ## Raiz cúbica
 
@@ -188,7 +188,7 @@ CBRT(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica para a qual você deseja obter a raiz cúbica. |
+| *metric* | A métrica para a qual você deseja obter a raiz cúbica. |
 
 ## Cumulativo
 
@@ -263,7 +263,7 @@ SLOPE.EXP(metric_X, metric_Y)
 
 ## Limite mínimo (Linha)
 
-Retorna o maior número inteiro não superior a um valor especificado. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula LIMITE MÍNIMO(*Receita*) para arredondar a receita para baixo; neste caso, US$569.
+Retorna o maior número inteiro não superior a um valor especificado. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula FLOOR(*Revenue*) para arredondar a receita para baixo; neste caso, US$569.
 
 ```
 FLOOR(metric)
@@ -271,7 +271,7 @@ FLOOR(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica que deseja arredondar. |
+| *metric* | A métrica que deseja arredondar. |
 
 ## Maior que
 
@@ -291,7 +291,7 @@ COSH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir o cosseno hiperbólico. |
+| *metric* | O ângulo, em radianos, para o qual você deseja descobrir o cosseno hiperbólico. |
 
 ## Seno hiperbólico (Linha)
 
@@ -303,7 +303,7 @@ SINH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir o seno hiperbólico. |
+| *metric* | O ângulo, em radianos, para o qual você deseja descobrir o seno hiperbólico. |
 
 ## Tangente hiperbólica (Linha)
 
@@ -315,9 +315,9 @@ TANH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir a tangente hiperbólica. |
+| *metric* | O ângulo, em radianos, para o qual você deseja descobrir a tangente hiperbólica. |
 
-## Se (Linha)
+## IF (Linha)
 
 A função IF retorna um valor se uma condição especificada for considerada TRUE, e outro valor se a condição for considerada FALSE.
 
@@ -365,7 +365,7 @@ LOG10(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O número real positivo para o qual você deseja obter o logaritmo de base 10. |
+| *metric* | O número real positivo para o qual você deseja obter o logaritmo de base 10. |
 
 ## Regressão logarítmica: coeficiente de correlação (Tabela)
 
@@ -431,9 +431,9 @@ LN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O número real positivo para o qual você deseja obter o logaritmo natural. |
+| *metric* | O número real positivo para o qual você deseja obter o logaritmo natural. |
 
-## NÃO
+## NOT
 
 Retorna 1 se o número for 0, ou retorna 0 se for qualquer outro número.
 
@@ -466,7 +466,7 @@ OR(logical_test1,[logical_test2],...)
 | Argumento | Descrição |
 |---|---|
 | *logical_test1* | Obrigatório. Qualquer valor ou expressão que possa ser avaliado como TRUE ou FALSE. |
-| *logical_test2* | Opcional. Condições adicionais que você deseja avaliar como VERDADEIRO ou FALSO. |
+| *logical_test2* | Opcional. Condições adicionais que você deseja avaliar como TRUE ou FALSE. |
 
 ## Pi
 
@@ -644,7 +644,7 @@ SIN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja obter o seno. |
+| *metric* | O ângulo, em radianos, para o qual você deseja obter o seno. |
 
 ## Pontuação T
 
@@ -686,7 +686,7 @@ TAN (metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja obter a tangente. |
+| *metric* | O ângulo, em radianos, para o qual você deseja obter a tangente. |
 
 ## Pontuação Z (Linha)
 
@@ -713,7 +713,7 @@ Pontuação Z (métrica)
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <i>métrica</i> </td>
+   <td colname="col1"> <i>metric</i> </td>
    <td colname="col2"> <p> Retorna o valor do seu primeiro argumento diferente de zero. </p> </td>
   </tr>
  </tbody>
