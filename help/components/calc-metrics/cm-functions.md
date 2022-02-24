@@ -4,7 +4,7 @@ description: O Criador de métricas calculadas permite aplicar funções matemá
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ MAXV(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | Uma métrica que você gostaria de avaliar. |
+| *metric* | Uma métrica que você gostaria de avaliar. |
 
 ## Mínimo da coluna
 
@@ -62,7 +62,7 @@ MINV(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | Uma métrica que você gostaria de avaliar. |
+| *metric* | Uma métrica que você gostaria de avaliar. |
 
 ## Soma da coluna
 
@@ -74,7 +74,7 @@ SUM(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica para a qual você deseja obter o valor total ou soma. |
+| *metric* | A métrica para a qual você deseja obter o valor total ou soma. |
 
 ## Contagem (Tabela)
 
@@ -86,7 +86,7 @@ COUNT(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica que deseja contar. |
+| *metric* | A métrica que deseja contar. |
 
 ## Expoente (Linha)
 
@@ -98,14 +98,14 @@ EXP(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O exponente aplicado à base *e*. |
+| *metric* | O exponente aplicado à base *e*. |
 
 ## Exponenciação
 
 Operador de potência
 
 <pre>
-pow(x,y) = x <sup>y</sup> = x*x*x*... (y vezes)
+pow(x,y) = x<sup>y</sup> = x*x*x*... (y vezes)
 </pre>
 
 ## Média (Tabela)
@@ -118,7 +118,7 @@ MEAN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica para a qual você deseja obter a média. |
+| *metric* | A métrica para a qual você deseja obter a média. |
 
 ## Mediana (Tabela)
 
@@ -130,7 +130,7 @@ MEDIAN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica para a qual você deseja obter a mediana. |
+| *metric* | A métrica para a qual você deseja obter a mediana. |
 
 ## Módulo
 
@@ -173,12 +173,12 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>métrica</i> </td> 
+   <td colname="col1"> <i>metric</i> </td> 
    <td colname="col2"> A coluna de métrica que define a posição relativa. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>k </p> </td> 
-   <td colname="col2"> O valor do percentil no intervalo de 0 a 100, inclusive. </td> 
+   <td colname="col2"> O valor do percentil no intervalo de 0 a 100, incluso. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -200,11 +200,11 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>métrica</i> </td> 
+   <td colname="col1"> <i>metric</i> </td> 
    <td colname="col2"> A métrica para a qual você deseja obter o valor do quartil. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>quart </p> </td> 
+   <td colname="col1"> <p>quartil </p> </td> 
    <td colname="col2"> Indica o *valor a retornar. </td> 
   </tr> 
  </tbody> 
@@ -214,7 +214,7 @@ QUARTILE(metric,quart)
 
 ## Arredondar
 
-Retorna o número inteiro mais próximo para um determinado valor. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula Round(*Receita*) para arredondar a receita para o número inteiro mais próximo; neste caso, US$569. Um produto de US$569,51 será arredondado para o valor inteiro mais próximo, ou seja, US$570.
+Retorna o número inteiro mais próximo para um determinado valor. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula Round(*Revenue*) para arredondar a receita para o número inteiro mais próximo; neste caso, US$569. Um produto de US$569,51 será arredondado para o valor inteiro mais próximo, ou seja, US$570.
 
 ```
 ROUND(metric)
@@ -296,7 +296,7 @@ A equação de VARIANCE é:
 
 ![](assets/variance_eq.png)
 
-onde x é a média da amostra, MÉDIA(*métrica*), e *n* é o tamanho da amostra.
+onde x é a média da amostra, MEAN(*metric*), e *n* é o tamanho da amostra.
 
 ```
 VARIANCE(metric)
@@ -304,7 +304,7 @@ VARIANCE(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica para a qual você deseja obter a variação. |
+| *metric* | A métrica para a qual você deseja obter a variação. |
 
 Para calcular uma variação, considere uma coluna inteira de números. Nessa lista de números, calcule primeiro a média. Após obter a média, faça o seguinte em cada entrada:
 
