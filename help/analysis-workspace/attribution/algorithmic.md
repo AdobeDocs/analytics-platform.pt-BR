@@ -4,9 +4,9 @@ description: Detalhes sobre o modelo de atribuição algorítmica.
 feature: Attribution
 exl-id: ce174253-4864-4fb0-8a96-a134a9fc9fba
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 84%
 >
 >Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
-Esta é uma visão geral em vídeo da Atribuição algorítmica:
+Veja um vídeo de visão geral sobre a atribuição algorítmica:
 
 >[!VIDEO](https://video.tv.adobe.com/v/36205/?quality=12)
 
-O [modelo de atribuição](models.md) algorítmica no Analysis Workspace difere de outros modelos na medida em que usa técnicas estatísticas para alocar crédito entre os itens de dimensão em seu relatório ou tabela de forma livre. Como todos os outros modelos de atribuição no Analysis Workspace, ele pode ser usado em qualquer dimensão ou métrica e oferece suporte a filtros e detalhamentos ilimitados e distribui 100% das conversões para a(s) dimensão(ões) na tabela (também conhecida como atribuição &quot;fracional&quot;).
+O [modelo de atribuição](models.md) algorítmica, no Analysis Workspace, difere de outros modelos na medida em que usa técnicas estatísticas para alocar crédito entre os itens de dimensão em seu relatório ou tabela de forma livre. Como todos os outros modelos de atribuição no Analysis Workspace, ele pode ser usado em qualquer dimensão ou métrica, aceita um número ilimitado de filtros e detalhamentos, e distribui 100% das conversões para a(s) dimensão(ões) na tabela (também conhecida como atribuição “fracionária”).
 
 O algoritmo usado para atribuição é baseado no Harsanyi Dividend da teoria dos jogos cooperativos. O dividendo de Harsanyi é uma generalização da solução de valor de Shapley (batizada de Lloyd Shapley, economista vencedor do Nobel) para distribuir crédito entre os jogadores em um jogo com contribuições desiguais para o resultado.
 
