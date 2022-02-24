@@ -4,9 +4,9 @@ description: O conceito de atribuição de crédito de um evento bem-sucedido a 
 Feature: Attribution
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
 source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '421'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ O Customer Journey Analytics aprimora a atribuição ao permitir:
 * Utilizar comparação ilimitada de modelos de atribuição: compare dinamicamente quantos modelos desejar.
 * Evitar alterações de implementação: com processamento de tempo de relatório e sessões contextuais, o contexto da jornada do cliente pode ser incorporado e aplicado no tempo de execução.
 * Construir a sessão que melhor corresponde ao seu cenário de atribuição.
-* Analisar atribuição por filtros: Compare facilmente o desempenho de seus canais de marketing em qualquer filtro importante (por exemplo, clientes novos e repetidos, produto X vs. produto Y, nível de fidelidade ou CLV).
+* Detalhar atribuições por filtros: compare facilmente o desempenho de seus canais de marketing entre filtros importantes (ex: clientes novos vs. repetidos, produto X vs. produto Y, nível de fidelidade ou CLV).
 * Inspecionar canais cruzados e análises de multitoque: usando diagramas e histogramas de Venn e resultados de atribuição de tendência.
 * Analisar visualmente as principais sequências de marketing: explore visualmente caminhos que levaram à conversão usando as visualizações de fluxo de múltiplos nós e de fallout.
 * Criar métricas calculadas: use a quantidade de métodos de alocação de atribuição que desejar.
