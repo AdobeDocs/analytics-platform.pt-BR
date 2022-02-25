@@ -51,7 +51,7 @@ O Customer Journey Analytics permite:
 
 Antes de começar a usar o Customer Journey Analytics, os seguintes pré-requisitos devem ser atendidos:
 
-* Sua organização deve ter um contrato ativo com o Adobe Analytics for Select, Prime ou Ultimate com o complemento Customer Journey Analytics. Se você não tiver certeza de que tipo de contrato possui ou se não tiver certeza se tem o complemento CJA, entre em contato com o Gerente de conta da sua organização.
+* Sua organização deve ter um contrato ativo com o Adobe Analytics for Select, Prime ou Ultimate com o complemento Customer Journey Analytics. Se você não tiver certeza do tipo de contrato que possui ou se não tiver certeza se tem o complemento CJA, entre em contato com o Gerente de conta da sua empresa.
 * Sua organização foi provisionada para a Adobe Experience Platform.
 
 ## Permissões de acesso do administrador
@@ -61,7 +61,7 @@ Para criar conexões, adicionar conjuntos de dados, etc., você precisa das segu
 * Para acessar o Customer Journey Analytics ou fazer uma conexão, você precisará ser adicionado como administrador do **Produto Customer Journey Analytics** no [Admin Console](https://adminconsole.adobe.com/enterprise/). Os administradores de produtos recebem as seguintes permissões:
    * Criar/atualizar/excluir conexões ou Visualizações de dados
    * Atualizar/excluir projetos, filtros, métricas de cálculo ou filtros criados por outros usuários
-   * Compartilhar um projeto do Espaço de trabalho para todos os usuários
+   * Compartilhar um projeto do Espaço de trabalho com todos os usuários
 * Tornar-se um administrador de produto no Customer Journey Analytics não é suficiente para criar, atualizar ou excluir uma conexão. Para criar uma conexão com um conjunto de dados da Experience Platform, você também precisa de permissões da Experience Platform. Especificamente, você deve fazer parte de um **Perfil de produto da Experience Platform** que oferece as seguintes permissões:
    * Visualizar esquemas
    * Gerenciar esquemas

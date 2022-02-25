@@ -17,7 +17,7 @@ Métricas calculadas e calculadas avançadas (ou derivadas) são métricas perso
 É possível
 
 * Criar métricas filtradas derivadas do tempo de execução do relatório, sem precisar alterar a implementação. Essas métricas podem ser exibidas historicamente, pois se baseiam em filtros.
-* (Somente métricas calculadas avançadas) Filtrar as métricas. Por exemplo, é possível criar uma métrica para “Novos visitantes”, com uma contagem de pessoas para as quais esta é a primeira sessão.
+* (Somente métricas calculadas avançadas) Filtrar as métricas. Por exemplo, é possível criar uma métrica para “Novos visitantes” com uma contagem de pessoas para as quais esta é a primeira sessão.
 * (Somente métricas calculadas avançadas) Incorpore funções estatísticas para ajudar a descrever melhor seus dados. Por exemplo, é possível contar o número de itens em um relatório ou adicionar o número de desvios padrão para cada item.
 
 ## Métricas calculadas versus métricas calculadas avançadas
