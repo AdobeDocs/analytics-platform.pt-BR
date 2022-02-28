@@ -4,9 +4,9 @@ description: Descreve como criar uma conexão com um conjunto de dados da plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1980'
+source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+workflow-type: tm+mt
+source-wordcount: '1971'
 ht-degree: 100%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 100%
 
 Uma conexão permite integrar conjuntos de dados do [!DNL Adobe Experience Platform] ao [!UICONTROL Espaço de trabalho]. Para criar relatórios sobre conjuntos de dados do [!DNL Experience Platform], primeiro é necessário estabelecer uma conexão entre os conjuntos de dados no [!DNL Experience Platform] e no [!UICONTROL Espaço de trabalho].
 
-Clique [aqui](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=pt-BR) para obter uma visão geral do vídeo.
+Veja um vídeo com uma visão geral:
+
+>[!VIDEO](https://video.tv.adobe.com/v/32549/?quality=12)
 
 ## Permissões necessárias
 
@@ -142,7 +144,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 
 Esse cálculo deve ser concluído para cada conjunto de dados na conexão.
 
-1. Vá para os [Serviços de consulta da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) e crie uma nova consulta.
+1. Vá para os [Serviços de consulta da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) e crie uma nova consulta.
 
 1. A consulta seria semelhante a:
 
