@@ -4,9 +4,9 @@ description: Como criar anotações no Espaço de trabalho.
 role: User, Admin
 feature: Components
 exl-id: 3cf9a0fd-11c9-4375-8bbe-9551ba86f86d
-source-git-commit: b4e65903c720ecd9e684f8b7a764e2ba8f74baed
+source-git-commit: dfd38a9f668dcb0434b107e947aa74b4f9b826a3
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '608'
 ht-degree: 63%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 63%
 
 | Método de criação | Detalhes |
 | --- | --- |
-| **Vá até [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Anotação].** | A página Gerenciador de anotações é aberta. Clique em [!UICONTROL Criar nova anotação] e o Construtor de anotações é aberto. |
+| **Ir para [!UICONTROL Componentes] > [!UICONTROL Anotação].** | A página Gerenciador de anotações é aberta. Clique em [!UICONTROL Criar nova anotação] e o Construtor de anotações é aberto. |
 | **Clique com o botão direito do mouse em um ponto da tabela.** | [!UICONTROL O construtor de anotações é aberto. ] Observe que, por padrão, as anotações criadas dessa maneira são visíveis somente no projeto em que foram criadas. Mas você pode disponibilizá-las para todos os projetos. Observe também que as datas e qualquer métrica, etc., já foram preenchidas.<p>![](assets/annotate-table.png) |
 | **Clique com o botão direito do mouse em um ponto em uma [!UICONTROL Linha] gráfico.** | O [!UICONTROL Construtor de anotações] é aberto. Observe que, por padrão, as anotações criadas dessa maneira são visíveis somente no projeto em que foram criadas. Mas você pode disponibilizá-las para todos os projetos. Observe também que as datas e qualquer métrica, etc., já foram preenchidas.<p>![](assets/annotate-line.png) |
 | **No Espaço de trabalho, acesse [!UICONTROL Componentes] > [!UICONTROL Criar anotação].** | O [!UICONTROL Construtor de anotações] é aberto. |
