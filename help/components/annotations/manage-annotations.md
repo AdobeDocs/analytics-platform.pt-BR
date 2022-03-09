@@ -4,10 +4,10 @@ description: Como gerenciar anotações no Espaço de trabalho.
 role: User, Admin
 feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: b4e65903c720ecd9e684f8b7a764e2ba8f74baed
+source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 69%
 
 ---
 
@@ -47,6 +47,22 @@ Editar uma anotação significa que você pode ajustar intervalos de datas, core
 * No [!UICONTROL Gerenciador de anotações], clique no título da anotação.
 
 Ambas as opções o direcionam de volta ao Criador de anotações. Lá, é possível fazer os ajustes necessários e salvar a nova versão.
+
+## Compartilhar anotações
+
+Ao compartilhar anotações ou trabalhar com anotações compartilhadas com você, lembre-se:
+
+* Digamos que você crie um projeto com anotações somente de projeto e, em seguida, compartilhe o projeto com outro usuário. Essas anotações serão exibidas, mas não poderão ser editadas ou excluídas por ninguém com quem você compartilha o projeto.
+
+* Se você salvar uma anotação e compartilhá-la diretamente com um usuário, ele poderá editar/excluir a anotação somente se tiver direitos de administrador.
+
+* Para recapitular, se o projeto for compartilhado com você, ele será exibido somente nesse projeto. Se a anotação for compartilhada diretamente com você, ela será exibida em todos os projetos nos quais essa anotação pode ser exibida.
+
+## Anotações e fusos horários
+
+Todas as anotações são criadas com um carimbo de data e hora, mas nenhuma informação de &quot;hora&quot; ou &quot;fuso horário&quot;. No momento do relatório, o fuso horário da visualização de dados do painel é sempre aplicado. Assim, uma anotação criada para o dia de Natal acontece em 25 de dezembro - independentemente do fuso horário do conjunto de relatórios em que você estiver.
+
+Outro exemplo é o Dia de Ano Novo. A cada hora, um fuso horário diferente dispara fogos de artifício conforme o ano novo começa. Às 22h00, Hora das Montanhas dos EUA, a costa leste dos EUA está disparando o fogo porque já é 12h da Hora do Leste.
 
 ## Outras tarefas de anotações
 

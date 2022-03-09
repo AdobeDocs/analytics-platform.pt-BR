@@ -4,7 +4,7 @@ description: Descreve como criar uma conexão com um conjunto de dados da plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: da34e4c97720ec20f354a4bd67708b4d89c5bea4
+source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 100%
@@ -146,11 +146,12 @@ Esse cálculo deve ser concluído para cada conjunto de dados na conexão.
 
 1. Vá para os [Serviços de consulta da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) e crie uma nova consulta.
 
-1. A consulta seria semelhante a:
+   A consulta seria semelhante a:
 
    ```
    Select AVG(A.total_events) from (Select DISTINCT COUNT (*) as total_events, date(TIMESTAMP) from analytics_demo_data GROUP BY 2 Having total_events>0) A;
    ```
 
-* Neste exemplo, &quot;analytics_demo_data&quot; é o nome do conjunto de dados.
-* Execute a consulta `Show Tables` para mostrar todos os conjuntos de dados existentes na AEP.
+   Neste exemplo, &quot;analytics_demo_data&quot; é o nome do conjunto de dados.
+
+1. Execute a consulta `Show Tables` para mostrar todos os conjuntos de dados existentes na AEP.
