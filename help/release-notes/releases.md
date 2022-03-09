@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-#  Versões de recursos do Customer Journey Analytics
+# Versões de recursos do Customer Journey Analytics
 
 As versões do Customer Journey Analytics operam em um modelo de entrega contínua que permite uma abordagem escalável e em fases para a implantação de recursos.
 
