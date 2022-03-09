@@ -6,13 +6,13 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: 929656128214ed0dc2fe2195ea691122edb6566e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Criar um cartão de pontuação móvel
+# Criar um cartão de pontuação para dispositivos móveis
 
 As informações a seguir instruem os curadores de dados do Adobe Analytics sobre como configurar e apresentar painéis para usuários executivos. Para começar, você pode exibir o vídeo Construtor de cartão de pontuação dos painéis do Adobe Analytics:
 
@@ -177,25 +177,25 @@ Da mesma forma, para remover um componente aplicado a todo o cartão de pontuaç
 
 ![Remover_componentes](assets/new_remove.png)
 
-## Visualizar scorecard {#preview}
+## Visualizar cartão de pontuação {#preview}
 
-Você pode visualizar como o scorecard será exibido e funcionará assim que for publicado no aplicativo de painéis do Analytics.
+Você pode visualizar como o cartão de pontuação será exibido e funcionará assim que for publicado no aplicativo de painéis do Analytics.
 
 1. Clique em **[!UICONTROL Visualizar]** no canto superior direito da tela.
 
-   ![Pré-visualização_scorecards](assets/preview.png)
+   ![Preview_scorecards](assets/preview.png)
 
-1. Para exibir a aparência do scorecard em diferentes dispositivos, selecione um dispositivo no [!UICONTROL Visualização do dispositivo] menu suspenso.
+1. Para visualizar a aparência do cartão de pontuação em diferentes dispositivos, selecione um dispositivo no menu suspenso [!UICONTROL Visualização do dispositivo].
 
    ![Device_preview](assets/device-preview.png)
 
 1. Para interagir com a visualização, é possível:
 
-   * Clique com o botão esquerdo do mouse para simular o toque na tela do telefone.
+   * Clicar com o botão esquerdo do mouse para simular o toque na tela do telefone.
 
-   * Use a função de rolagem do computador para simular a rolagem da tela do telefone com o dedo.
+   * Usar a função de rolagem do computador para simular a rolagem da tela do telefone com o dedo.
 
-   * Clique e segure para simular pressionar e segurar o dedo na tela do telefone. Isso é útil para interagir com as visualizações na visualização detalhada.
+   * Clicar e segurar para simular pressionar e segurar o dedo na tela do telefone. Isso é útil para interagir com as visualizações na visualização detalhada.
 
 ## Nomear um cartão de pontuação {#name}
 
