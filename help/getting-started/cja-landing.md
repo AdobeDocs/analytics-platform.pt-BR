@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: 04ceeb9e9a048a224ea957ad42bc54cbd4b3f249
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 81%
+ht-degree: 98%
 
 ---
 
@@ -24,9 +24,9 @@ Os clientes do Analytics Select, Prime e Ultimate podem adquirir esse produto co
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Itens novos ou especiais</b> </p> <p> 
      <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=en"> Preparar-se para migrar do Adobe Analytics para o Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html?lang=en"> Uso de dimensões e métricas de ligação no CJA </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=en"> Usar dimensões do canal de marketing na Adobe Experience Platform
+     <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=pt-BR"> Preparar-se para migrar do Adobe Analytics para o Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/binding-dimensions-metrics.html?lang=pt-BR"> Uso de dimensões e métricas de ligação no CJA </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=pt-BR"> Usar dimensões do canal de marketing na Adobe Experience Platform
  </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#connection-detail"> Usar os recursos aprimorados de gerenciamento de conexão </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=pt-BR#cja-dataviews"> Usar os recursos aprimorados de Visualização de dados </a> </li>
@@ -37,7 +37,7 @@ Os clientes do Analytics Select, Prime e Ultimate podem adquirir esse produto co
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR"> Perguntas frequentes</a> </li> 
    <td colname="col2" valign="top"> <p class="head"><b>Notas de versão</b> </p> 
     <ul> 
-     <li>Veja o mais recente <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=en" format="https" scope="external"> Notas de Customer Journey Analytics</a> para novos recursos e correções. </li> 
+     <li>Consulte as <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=pt-BR" format="https" scope="external">notas do Customer Journey Analytics</a> mais recentes para ver os novos recursos e correções. </li> 
     </ul> <p class="head"> <b>Recursos da Adobe Experience Platform</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/br/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 

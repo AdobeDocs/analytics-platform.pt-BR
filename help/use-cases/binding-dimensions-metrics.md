@@ -6,7 +6,7 @@ feature: Use Cases
 source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
 workflow-type: tm+mt
 source-wordcount: '1330'
-ht-degree: 43%
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Se você desejar observar a receita por cor sem uma dimensão de ligação, a di
 
 ![Dimensão de ligação](assets/binding-dimension.png)
 
-Quando você define esse modelo de persistência, o CJA anota o nome do produto sempre que a cor do produto é definida. Quando o mesmo nome de produto é reconhecido em um evento subsequente para esse visitante, a cor do produto também é trazida. Ao vincular a cor do produto ao nome do produto, os mesmos dados seriam semelhantes ao seguinte:
+Ao definir esse modelo de persistência, o CJA anota o nome do produto sempre que a cor do produto é definida. Quando o mesmo nome de produto é reconhecido em um evento subsequente para esse visitante, a cor do produto também é trazida. Ao vincular a cor do produto ao nome do produto, os mesmos dados seriam semelhantes ao seguinte:
 
 | product.color | receita |
 | --- | --- |
@@ -93,7 +93,7 @@ Quando você define esse modelo de persistência, o CJA anota o nome do produto 
 
 Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vincular um termo de pesquisa a um produto para que cada termo de pesquisa receba crédito pelo seu produto apropriado. Considere a seguinte jornada do cliente:
 
-1. Um visitante chega ao seu site e procura por “luvas de boxe”. A métrica de pesquisas é incrementada em um e os três principais resultados de pesquisa são exibidos.
+1. Um visitante chega ao seu site e procura por “luvas de boxe”. A métrica de pesquisa é incrementada por um e os três principais resultados de pesquisa são exibidos.
 
    ```json
    {
@@ -115,7 +115,7 @@ Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vi
    }
    ```
 
-2. Ele encontra um par de luvas que gosta e o adiciona ao carrinho.
+2. Ele encontra um par de luvas de que gosta e o adiciona ao carrinho.
 
    ```json
    {
@@ -130,7 +130,7 @@ Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vi
    }
    ```
 
-3. O visitante então procura por “raquete de tênis”. A métrica de pesquisas é incrementada em um e os três principais resultados de pesquisa são exibidos.
+3. O visitante então procura por “raquete de tênis”. A métrica de pesquisa é incrementada por um e os três principais resultados de pesquisa são exibidos.
 
    ```json
    {
@@ -152,7 +152,7 @@ Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vi
    }
    ```
 
-4. Ele encontra uma raquete que gosta e a adiciona ao carrinho.
+4. Ele encontra uma raquete de que gosta e a adiciona ao carrinho.
 
    ```json
    {
@@ -170,7 +170,7 @@ Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vi
    }
    ```
 
-5. O visitante faz uma terceira pesquisa, por “sapatos”. A métrica de pesquisas é incrementada em um e os três principais resultados de pesquisa são exibidos.
+5. O visitante faz uma terceira pesquisa, por “sapatos”. A métrica de pesquisa é incrementada por um e os três principais resultados de pesquisa são exibidos.
 
    ```json
    {
@@ -237,13 +237,13 @@ Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vi
    }
    ```
 
-Se você usar um modelo de alocação que não inclua uma dimensão vinculativa com termo de pesquisa, todos os três produtos atribuirão receita a apenas um único termo de pesquisa. Por exemplo, se você usou a alocação Original com a dimensão do termo de pesquisa:
+Se você usar um modelo de alocação que não inclua uma dimensão de ligação com termo de pesquisa, todos os três produtos atribuirão receita a apenas um único termo de pesquisa. Por exemplo, se você usou a primeira alocação com a dimensão de termo de pesquisa:
 
 | search_term | receita |
 | --- | --- |
 | luvas de boxe | US$ 204,97 |
 
-Se você usou a alocação Mais recente com a dimensão de termo de pesquisa, todos os três produtos ainda atribuirão receita a um único termo de pesquisa:
+Se você usou a última alocação com a dimensão de termo de pesquisa, os três produtos ainda atribuirão a receita a um único termo de pesquisa:
 
 | search_term | receita |
 | --- | --- |
@@ -263,7 +263,7 @@ No Analysis Workspace, o relatório resultante seria semelhante ao seguinte:
 | raquete de tênis | US$ 34,99 |
 | sapatos | US$ 79,99 |
 
-O CJA detecta automaticamente a relação entre a dimensão selecionada e a dimensão de vínculo. Se a dimensão de vínculo estiver em uma matriz de objetos enquanto a dimensão selecionada estiver em um nível superior, será necessária uma métrica de vínculo. Uma métrica de ligação atua como um acionador de uma dimensão de ligação, de modo que se vincula apenas aos eventos em que a métrica de ligação está presente. No exemplo acima, a página de resultados da pesquisa sempre inclui uma dimensão de termo de pesquisa e uma métrica de pesquisas.
+O CJA detecta automaticamente a relação entre a dimensão selecionada e a dimensão de ligação. Se a dimensão de ligação estiver em uma matriz de objetos enquanto a dimensão selecionada estiver em um nível superior, será necessária uma métrica de ligação. Uma métrica de ligação atua como um acionador de uma dimensão de ligação, de modo que se vincula apenas aos eventos em que a métrica de ligação está presente. Neste exemplo de implementação acima, a página de resultados da pesquisa sempre inclui uma dimensão de termo de pesquisa e uma métrica de pesquisa.
 
 Definir a dimensão do termo de pesquisa para esse modelo de persistência executa a seguinte lógica:
 
@@ -271,14 +271,14 @@ Definir a dimensão do termo de pesquisa para esse modelo de persistência execu
 * Se o nome do produto não estiver lá, nada será feito.
 * Se o nome do produto estiver lá, será verificada a presença da métrica de Pesquisas.
 * Se a métrica de Pesquisas não estiver lá, nada será feito.
-* Se a métrica Pesquisas estiver lá, vincule o termo de pesquisa a todos os nomes de produtos nesse evento. Ele se copia para o mesmo nível que o nome do produto para esse evento. Neste exemplo, ele é tratado como product.search_term.
+* Se a métrica de pesquisa estiver lá, vincule o termo de pesquisa a todos os nomes de produtos nesse evento. Ele se copia para o mesmo nível que o nome do produto para esse evento. Neste exemplo, ele é tratado como product.search_term.
 * Se o mesmo nome de produto for visualizado em um evento subsequente, o termo de pesquisa vinculado também será transportado para esse evento.
 
-## Exemplo 3: Vincular termo de pesquisa de vídeo ao perfil do usuário
+## Exemplo 3: vincular o termo de pesquisa de vídeo ao perfil do usuário
 
-Você pode vincular um termo de pesquisa a um perfil de usuário, de modo que a persistência entre perfis permaneça completamente separada. Por exemplo, sua organização executa um serviço de transmissão em que uma conta abrangente pode ter vários perfis. O visitante tem um perfil filho e um perfil adulto.
+Você pode vincular um termo de pesquisa a um perfil de usuário, de modo que a persistência entre perfis permaneça completamente separada. Por exemplo, sua organização executa um serviço de transmissão em que uma conta abrangente pode ter vários perfis. O visitante tem um perfil infantil e um perfil adulto.
 
-1. A conta entra sob o perfil da criança e procura por um programa de TV. Observe que a variável `"ProfileID"` é `2` para representar o perfil filho.
+1. A conta entra com o perfil infantil e procura por um programa de TV para crianças. Observe que `"ProfileID"` é `2` para representar o perfil infantil.
 
    ```json
    {
@@ -289,7 +289,7 @@ Você pode vincular um termo de pesquisa a um perfil de usuário, de modo que a 
    }
    ```
 
-1. Eles encontram o programa &quot;Orangey&quot; e o tocam para que seus filhos possam vê-lo.
+1. Ele encontra o programa &quot;Orangey&quot; e reproduz para que seu filho possa assistir.
 
    ```json
    {
@@ -300,7 +300,7 @@ Você pode vincular um termo de pesquisa a um perfil de usuário, de modo que a 
    }
    ```
 
-1. Mais tarde naquela noite, o pai muda para seu perfil e procura por conteúdo adulto para assistir. Observe que a variável `"ProfileID"` é `1` para representar o perfil de adulto. Ambos os perfis pertencem à mesma conta, representados pela mesma `"PersonID"`.
+1. Mais tarde naquela noite, o pai muda para seu perfil adulto e procura por conteúdo adulto para assistir. Observe que `"ProfileID"` é `1` para representar o perfil adulto. Ambos os perfis pertencem à mesma conta, representados pela mesma `"PersonID"`.
 
    ```json
    {
@@ -311,7 +311,7 @@ Você pode vincular um termo de pesquisa a um perfil de usuário, de modo que a 
    }
    ```
 
-1. Encontre o programa &quot;Analytics After Hours&quot; e desfrute de assistir à noite.
+1. Ele encontra o programa &quot;Analytics After Hours&quot; e desfruta de uma noite agradável, assistindo ao programa.
 
    ```json
    {
@@ -322,7 +322,7 @@ Você pode vincular um termo de pesquisa a um perfil de usuário, de modo que a 
    }
    ```
 
-1. No dia seguinte, eles continuaram o programa &quot;Orangey&quot; para o filho. Eles não precisam pesquisar, pois já estão cientes do programa.
+1. No dia seguinte, o programa &quot;Orangey&quot; continua a ser exibido para o filho. Ele não precisa pesquisar, pois já está ciente do programa.
 
    ```json
    {
@@ -333,29 +333,29 @@ Você pode vincular um termo de pesquisa a um perfil de usuário, de modo que a 
    }
    ```
 
-Se você usar a alocação Mais recente com a expiração de Pessoa, a variável `"grownup movie"` o termo de pesquisa é atribuído à última exibição do programa do garoto.
+Se você usar a alocação mais recente com a expiração de pessoa, o termo de pesquisa `"grownup movie"` é atribuído à última exibição do programa para crianças.
 
-| Pesquisar termo | Início do vídeo |
+| Termo de pesquisa | Início do vídeo |
 | --- | --- |
 | filme adulto | 2 |
 | programa infantil | 1 |
 
-No entanto, se você vincular `search_term` para `ProfileID`, cada pesquisa de perfil seria isolada em seu próprio perfil, atribuída aos programas corretos que ela procura.
+No entanto, se você vincular o `search_term` ao `ProfileID`, cada pesquisa de perfil seria isolada em seu próprio perfil e atribuída aos programas corretos que ela procura.
 
 ![Vínculo do visitante](assets/binding-visitor.png)
 
-O Analysis Workspace atribuiria corretamente o segundo episódio de Orangey ao termo de pesquisa `"kids show"` sem levar em conta as pesquisas de outros perfis.
+O Analysis Workspace atribuiria corretamente o segundo episódio de Orangey ao termo de pesquisa `"kids show"`, sem levar em conta as pesquisas de outros perfis.
 
-| Pesquisar termo | Início do vídeo |
+| Termo de pesquisa | Início do vídeo |
 | --- | --- |
 | programa infantil | 2 |
 | filme adulto | 1 |
 
-## Exemplo 4: Avaliar o comportamento de navegação e pesquisa em uma configuração de varejo
+## Exemplo 4: avaliar o comportamento de navegação versus comportamento de pesquisa em uma configuração de varejo
 
-Você pode vincular valores a dimensões definidas em eventos anteriores. Quando você define uma variável com uma dimensão de vínculo, o CJA leva em consideração o valor persistente. Se esse comportamento for indesejado, você poderá ajustar as configurações de persistência da dimensão de vínculo. Considere o exemplo a seguir em que `product_finding_method` for definida em um evento e vinculada à métrica Adições ao carrinho no evento a seguir.
+É possível vincular valores a dimensões definidas em eventos anteriores. Quando uma variável com uma dimensão de vínculo é definida, o CJA leva em consideração o valor persistente. Se esse comportamento for indesejado, é possível ajustar as configurações de persistência da dimensão de vínculo. Considere o exemplo a seguir em que o `product_finding_method` é definido em um evento e vinculado à métrica Adições ao carrinho no evento a seguir.
 
-1. Um visitante faz uma pesquisa por `"camera"`. Observe que nenhum produto está definido nesta página.
+1. Um visitante pesquisa por `"camera"`. Observe que nenhum produto está definido nesta página.
 
    ```json
    {
@@ -364,7 +364,7 @@ Você pode vincular valores a dimensões definidas em eventos anteriores. Quando
    }
    ```
 
-1. Eles clicam em uma câmera que gostam e a adicionam ao carrinho.
+1. Ele encontra uma câmera que gosta e a adiciona ao carrinho.
 
    ```json
    {
@@ -386,7 +386,7 @@ Você pode vincular valores a dimensões definidas em eventos anteriores. Quando
    }
    ```
 
-1. Eles clicam em um cinto de que gostam e o adicionam ao carrinho.
+1. Ele encontra um cinto que gosta e o adiciona ao carrinho.
 
    ```json
    {
@@ -399,7 +399,7 @@ Você pode vincular valores a dimensões definidas em eventos anteriores. Quando
    }
    ```
 
-1. Eles passam pelo processo de finalização e compram esses dois itens.
+1. Ele passa pelo processo de finalização e compra esses dois itens.
 
    ```json
    {
@@ -417,21 +417,21 @@ Você pode vincular valores a dimensões definidas em eventos anteriores. Quando
    }
    ```
 
-Se a persistência for definida como alocação mais recente sem uma dimensão vinculativa, todos os $419,98 da receita serão atribuídos ao valor `browse` método de descoberta.
+Se a persistência for definida como alocação mais recente sem uma dimensão vinculativa, todos os U$ 419,98 da receita serão atribuídos ao método de descoberta `browse`.
 
-| Método de descoberta do produto | Receita |
+| Método de descoberta de produto | Receita |
 | --- | --- |
 | navegar | 419,98 |
 
-Se a persistência for definida usando a alocação original sem uma dimensão compulsória, todos os $419,98 da receita serão atribuídos ao `search` método de descoberta.
+Se a persistência for definida usando a alocação original sem uma dimensão de vinculação, todos os U$ 419,98 da receita serão atribuídos ao método de descoberta `search`.
 
-| Método de descoberta do produto | Receita |
+| Método de descoberta de produto | Receita |
 | --- | --- |
 | pesquisa | 419,98 |
 
-No entanto, se você vincular `product_finding_method` para a métrica Adições ao carrinho, o relatório resultante atribui cada produto ao método de descoberta correto.
+No entanto, se você vincular o `product_finding_method` à métrica Adições ao carrinho, o relatório resultante atribui cada produto ao método de descoberta correto.
 
-| Método de descoberta do produto | Receita |
+| Método de descoberta de produto | Receita |
 | --- | --- |
 | pesquisa | 399,99 |
 | navegar | 19,99 |

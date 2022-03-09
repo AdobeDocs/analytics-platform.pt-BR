@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 93%
    + [Versões de 2022](release-notes/2022.md)
    + [Versões de 2021](release-notes/2021.md)
    + [Versões de 2020](release-notes/2020.md)
-   + [Versões CJA](release-notes/releases.md)
-   + [Atualizações da documentação CJA](release-notes/doc-changes.md)
+   + [Versões do CJA](release-notes/releases.md)
+   + [Atualizações da documentação do CJA](release-notes/doc-changes.md)
 + Visão geral do Customer Journey Analytics {#cja-overview}
    + [Visão geral do Customer Journey Analytics](getting-started/cja-overview.md)
    + [Introdução](getting-started/cja-getting-started.md)
