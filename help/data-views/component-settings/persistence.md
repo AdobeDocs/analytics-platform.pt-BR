@@ -5,9 +5,9 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 459249c74bf4dadf84c2adf96498f2eea21be1ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '806'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -69,14 +69,14 @@ Detalhes sobre as configurações de expiração disponíveis.
 
 * **Sessão**: expira após uma determinada sessão. Janela de expiração padrão.
 * **Pessoa**: expira ao final da janela de relatório.
-* **Hora personalizada**: Expira após um período especificado (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente. Ao usar a expiração com base em tempo, os valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
+* **Hora personalizada**: expira após um período específico (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente. Ao usar a expiração com base em tempo, os valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
 * **Métrica**: quando essa métrica é vista em uma ocorrência, expire imediatamente o valor persistente na dimensão. Você pode usar qualquer métrica como o fim da expiração dessa dimensão. Essa opção de expiração só está disponível para as configurações de alocação Original e Mais recente.
 
 ## [!UICONTROL Dimensão de ligação]
 
 Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de outra dimensão. As opções de lista suspensa válidas incluem outras dimensões contidas na visualização de dados.
 
-Consulte [Uso de dimensões e métricas de vinculação no CJA](../../use-cases/binding-dimensions-metrics.md) para obter exemplos sobre como usar efetivamente dimensões de vínculo.
+Consulte [uso de dimensões e métricas de ligação no CJA](../../use-cases/binding-dimensions-metrics.md) para obter exemplos sobre como usar efetivamente dimensões de ligação.
 
 ## [!UICONTROL Métrica de ligação]
 
@@ -84,4 +84,4 @@ Uma lista suspensa que permite escolher uma métrica que atue como um acionador 
 
 Essa configuração só aparece quando a Dimensão de ligação está mais abaixo no array de objetos do que no componente. Quando a métrica de ligação está presente em um evento, os valores de dimensão são copiados da dimensão de nível de evento para o nível de esquema inferior da dimensão de ligação.
 
-Veja o segundo exemplo em [Uso de dimensões e métricas de vinculação no CJA](../../use-cases/binding-dimensions-metrics.md) para obter mais informações sobre como usar métricas de vinculação de maneira eficaz.
+Veja o segundo exemplo em [uso de dimensões e métricas de ligação no CJA](../../use-cases/binding-dimensions-metrics.md) para obter mais informações sobre como usar métricas de ligação de maneira eficaz.
