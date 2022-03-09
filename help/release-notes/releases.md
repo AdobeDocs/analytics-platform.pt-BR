@@ -1,22 +1,23 @@
 ---
-description: Explica a estratégia de lançamento de recursos contínuos do Customer Journey Analytics
-title: Versões de recursos do Customer Journey Analytics
-source-git-commit: b740d3a18d1090b04cc50869d38600f016cf30d5
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+description: Explica a estratégia de lançamento contínuo de recursos do Customer Journey Analytics
+title: ' Versões de recursos do Customer Journey Analytics'
+exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
+source-git-commit: f2c82f54ec534603539327597d5f4c4ec875d44c
+workflow-type: ht
+source-wordcount: '379'
+ht-degree: 100%
 
 ---
 
-# Versões de recursos do Customer Journey Analytics
+#  Versões de recursos do Customer Journey Analytics
 
-As versões de Customer Journey Analytics operam em um modelo de entrega contínua que permite uma abordagem escalável e em fases para a implantação de recursos.
+As versões do Customer Journey Analytics operam em um modelo de entrega contínua que permite uma abordagem escalável e em fases para a implantação de recursos.
 
 ## Estratégia de lançamento
 
 O [!UICONTROL Analysis Workspace] usa sinalizadores de recursos (também conhecidos como &quot;alternadores&quot;) para controlar a visibilidade de novos recursos, permitindo testes de escala controlados antes do lançamento completo. A estratégia de lançamento inclui as seguintes fases:
 
-* **Liberação para produção (RTP)**: o código é lançado para produção, com a visibilidade do recurso desativada no Analysis Workspace. O recurso às vezes está disponível na API do CJA.
+* **Liberação para produção (RTP)**: o código é lançado para produção, com a visibilidade do recurso desativada no Analysis Workspace. Às vezes, o recurso está disponível na API do CJA.
 
 * **Teste limitado**: uma versão em fases começa com testes feitos por usuários internos da Adobe. A versão é redimensionada de 0% a 100% de disponibilidade ao longo de dois meses. A implementação em fases acontece no nível da Organização da Experience Cloud, de modo que todos os usuários autorizados em uma organização recebem a mesma experiência.
 
@@ -38,5 +39,5 @@ As versões por fases permitem que a Adobe dimensione melhor o processo de impla
 
 | Pergunta | Resposta |
 | --- | --- |
-| Posso solicitar acesso antecipado a um recurso? | Não. O acesso antecipado não será concedido.<br>Se você quiser testar os conceitos iniciais do Analytics, recomendamos que você experimente o [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html) para fornecer feedback sobre as inovações líderes do setor. |
+| Posso solicitar acesso antecipado a um recurso? | Não. O acesso antecipado não será concedido.<br>Se você quiser testar os conceitos iniciais do Analytics, recomendamos que você experimente o [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html?lang=pt-BR) para fornecer feedback sobre as inovações líderes do setor. |
 | Essa estratégia de lançamento afeta meu acesso aos recursos? | Não. Depois que um recurso chegar à GA, você terá acesso ao recurso se ele fizer parte do seu pacote do Analytics. |
