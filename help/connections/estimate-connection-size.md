@@ -4,46 +4,43 @@ description: Relatar o uso atual do Customer Journey Analytics
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '615'
-ht-degree: 100%
+source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 51%
 
 ---
 
 # Estimar tamanho da conexão
 
-Talvez seja necessário saber quantas linhas de dados você tem atualmente no [!UICONTROL Customer Journey Analytics]. O objetivo deste tópico é mostrar como relatar o uso atual do [!UICONTROL Customer Journey Analytics].
+Talvez seja necessário saber quantas linhas de dados você tem atualmente no [!UICONTROL Customer Journey Analytics]. Para obter uma conta precisa do uso dos registros de dados de evento (linhas de dados) de sua organização, faça o seguinte **para cada uma das conexões criadas pela organização**.
 
 1. No [!UICONTROL Customer Journey Analytics], clique na guia **[!UICONTROL Conexões]**.
-1. Na tela [!UICONTROL Editar conexão], selecione uma conexão para a qual deseja determinar o tamanho de uso/conexão.
 
-   ![Editar conexão](assets/edit-connection.png)
+   Agora você pode ver uma lista de todas as suas conexões atuais.
 
-1. Selecione um conjunto de dados que faça parte da conexão no painel esquerdo. Nesse caso, é o conjunto de dados &quot;Impressão B2B&quot;.
+1. Clique em cada nome de conexão para acessar o Gerenciador de conexões.
 
-   ![conjunto de dados](assets/dataset.png)
+1. Adicione o **[!UICONTROL Registros dos dados do evento disponíveis]** para todas as conexões criadas. (Dependendo do tamanho da sua conexão, o número pode levar algum tempo para ser exibido.)
 
-1. Clique no ícone azul (i) (informações) ao lado do respectivo nome. Você observará que o conjunto de dados tem 3,8 mil linhas/eventos. Além disso, para saber o número exato de linhas, clique em **[!UICONTROL Editar na Experience Platform]** abaixo da tabela de pré-visualização. Isso redirecionará você para os conjuntos de dados na [!UICONTROL Adobe Experience Platform].
+   ![dados do evento](assets/event-data.png)
 
-   ![Informações do conjunto de dados da AEP](assets/data-size.png)
+1. Depois de ter uma soma de todas as linhas de dados do evento, procure o direito de &quot;Linhas de dados&quot; no contrato de Customer Journey Analytics que sua empresa assinou com o Adobe.
 
-1. Observe que o **[!UICONTROL Total de registros]** desse conjunto de dados é de 3,83 mil, com o tamanho dos dados de 388,59 KB.
+   Isso fornece o número máximo de linhas de dados autorizadas na Ordem de Venda. Se o número de linhas de dados resultante da Etapa 3 for maior que esse número, você está incorrendo em um excedente.
 
-1. Repita as etapas de 1 a 5 para outros conjuntos de dados em sua conexão e adicione o número de registros/linhas. O número agregado final será a métrica de uso da sua conexão. Este é o número de linhas dos conjuntos de dados da sua conexão que você vai assimilar da [!UICONTROL Adobe Experience Platform].
+1. Para corrigir essa situação, você tem várias opções:
 
-## Determinar o número de linhas assimiladas
+   * Altere seu [configurações de retenção de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#set-rolling-window-for-connection-data-retention).
+   * [Excluir todas as conexões não usadas](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
+   * [Excluir um conjunto de dados no AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components).
+   * Entre em contato com o Gerente de conta do Adobe para obter licença de capacidade adicional.
 
-O número de eventos realmente assimilados no [!UICONTROL Customer Journey Analytics] depende das configurações da sua conexão. Além disso, se você tiver selecionado a ID de pessoa incorreta ou se essa ID não estiver disponível para algumas linhas nos conjuntos de dados, o [!UICONTROL Customer Journey Analytics] ignorará essas linhas. Para determinar as linhas reais de eventos assimilados, siga estas etapas:
+## Em relação às sobreposições de uso
 
-1. Depois de salvar a conexão, crie uma visualização de dados da mesma conexão sem filtros.
-1. Crie um projeto do Espaço de trabalho e selecione a visualização de dados correta. Crie uma tabela de forma livre e arraste e solte a métrica **[!UICONTROL Eventos]** com uma dimensão **[!UICONTROL Ano]**. Escolha um intervalo de datas grande o suficiente do seu calendário de seleção de datas para encapsular todos os dados da conexão. Isso permite que você veja o número de eventos que estão sendo assimilados no [!UICONTROL Customer Journey Analytics].
+Os limites de uso são rigorosamente monitorados e aplicados pelo Adobe, diariamente. &quot;Linhas de dados&quot;, as linhas médias diárias de dados disponíveis para análise no Customer Journey Analytics.
 
-   ![Projeto do Espaço de trabalho](assets/event-number.png)
-
-   >[!NOTE]
-   >
-   >Isso permite que você veja o número de eventos que estão sendo assimilados do conjunto de dados de eventos. Isso não inclui conjuntos de dados de tipo de perfil e pesquisa. Siga as etapas de 1 a 3 em &quot;Estimar o tamanho da conexão&quot; para conjuntos de dados de perfil e pesquisa e adicione os números para obter o número total de linhas para essa conexão.
+Considere que o direito do contrato limita o número de linhas para 1 milhão. Suponha que no Dia 1 de uso do Customer Journey Analytics você carregue 2 milhões de linhas de dados. No Dia 2, você exclui 1 milhão de linhas e mantém seu uso no máximo comprometido. Você ainda incorreria em taxas de utilização excessiva para o Dia 1.
 
 ## Diagnosticar discrepâncias
 
@@ -53,6 +50,6 @@ Em alguns casos, você pode notar que o número total de eventos assimilados pel
 
    ![detalhamento](assets/data-size2.png)
 
-1. Além disso, se verificarmos a [!UICONTROL Adobe Experience Platform], não há conjunto de dados com a ID &quot;5f21c12b732044194bffc1d0&quot;, portanto, alguém excluiu esse conjunto de dados específico da [!UICONTROL Adobe Experience Platform] quando a conexão inicial estava sendo criada. Mais tarde, ele foi adicionado ao [!UICONTROL Customer Journey Analytics] novamente, mas uma [!UICONTROL ID do conjunto de dados da plataforma] diferente foi gerada pela [!UICONTROL Adobe Experience Platform].
+1. Além disso, se verificarmos a [!UICONTROL Adobe Experience Platform], não há conjunto de dados com a ID &quot;5f21c12b732044194bffc1d0&quot;, portanto, alguém excluiu esse conjunto de dados específico da [!UICONTROL Adobe Experience Platform] quando a conexão inicial estava sendo criada. Mais tarde, ele foi adicionado ao Customer Journey Analytics novamente, mas uma [!UICONTROL ID do conjunto de dados da plataforma] diferente foi gerada pela [!UICONTROL Adobe Experience Platform].
 
-Leia mais sobre as [implicações do conjunto de dados e a exclusão de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components) no [!UICONTROL Customer Journey Analytics] e na [!UICONTROL Adobe Experience Platform].
+Leia mais sobre as [implicações do conjunto de dados e a exclusão de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=en#implications-of-deleting-data-components) no [!UICONTROL Customer Journey Analytics] e na [!UICONTROL Adobe Experience Platform].

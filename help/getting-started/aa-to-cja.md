@@ -1,11 +1,11 @@
 ---
 title: Adobe Analytics para Customer Journey Analytics evolution
-description: Etapas para mover dados do Adobe Analytics para o Customer Journey Analytics
+description: Etapas para transformar dados do Adobe Analytics em dados do Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: a47343628ace3063d23c6ba023f73dcbdc24dbcc
+source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 88%

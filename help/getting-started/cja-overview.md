@@ -4,10 +4,10 @@ description: Saiba como o Customer Journey Analytics permite usar o Analysis Wor
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: e397ff4de0f65ebb0264eac3813046452c572256
+source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
 workflow-type: tm+mt
 source-wordcount: '1271'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
