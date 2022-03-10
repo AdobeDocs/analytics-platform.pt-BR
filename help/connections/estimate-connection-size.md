@@ -4,10 +4,10 @@ description: Relatar o uso atual do Customer Journey Analytics
 exl-id: 5599b34f-342d-4c68-b7c9-2ac3ea50d078
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: cd48a91ca3affc39cf71451bdd8a44ca7669523b
+source-git-commit: 74934c8684198104c808284310bcdfd633085574
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 51%
+source-wordcount: '535'
+ht-degree: 50%
 
 ---
 
@@ -40,7 +40,7 @@ Talvez seja necessário saber quantas linhas de dados você tem atualmente no [!
 
 Os limites de uso são rigorosamente monitorados e aplicados pelo Adobe, diariamente. &quot;Linhas de dados&quot;, as linhas médias diárias de dados disponíveis para análise no Customer Journey Analytics.
 
-Considere que o direito do contrato limita o número de linhas para 1 milhão. Suponha que no Dia 1 de uso do Customer Journey Analytics você carregue 2 milhões de linhas de dados. No Dia 2, você exclui 1 milhão de linhas e mantém seu uso no máximo comprometido. Você ainda incorreria em taxas de utilização excessiva para o Dia 1.
+Considere que o direito do contrato limita o número de linhas para 1 milhão. Suponha que no Dia 1 de uso do Customer Journey Analytics você carregue 2 milhões de linhas de dados. No Dia 2, você exclui 1 milhão de linhas e mantém seu uso no máximo autorizado para o restante do seu Termo de licença. Dependendo dos termos contratuais, você ainda pode incorrer em taxas de superutilização rateadas para o Dia 1.
 
 ## Diagnosticar discrepâncias
 
