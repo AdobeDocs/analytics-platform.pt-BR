@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Guia do Customer Journey Analytics
-user-guide-description: Este guia oferece suporte para a solução de próxima geração do Adobe para análise entre canais, com base na Adobe Experience Platform.
+user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: a818fe294fcb0b480e7235af041d3fb5d8e60773
+source-git-commit: 93fc401bee7f08cb287062f0f4f27de21050fcc7
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 94%
+source-wordcount: '591'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 94%
 + Conexões {#cja-connections}
    + [Criar uma conexão](connections/create-connection.md)
    + [Gerenciar conexões](connections/manage-connections.md)
-   + [Estimar tamanho da conexão](connections/estimate-connection-size.md)
    + [Conjuntos de dados de evento combinados](connections/combined-dataset.md)
    + [Pesquisas padrão](connections/standard-lookups.md)
    + Análise entre canais {#cca}
