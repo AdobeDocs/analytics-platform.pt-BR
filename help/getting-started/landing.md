@@ -3,10 +3,11 @@ description: Explica os recursos da nova landing page .
 title: Página inicial do Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
-source-git-commit: 2aafa1b1181377ff80b12dbaecd9634e53f1a08c
+exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
+source-git-commit: 998cc9e5f8d2ffd3964078dc389f55bb573063b9
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 59%
+source-wordcount: '1081'
+ht-degree: 58%
 
 ---
 
@@ -63,7 +64,7 @@ Depois de fazer logon no Adobe Experience Cloud e no Customer Journey Analytics,
 | [!UICONTROL Programado] | Defina como [!UICONTROL Ligado] quando um projeto estiver programado ou **[!UICONTROL Desligado]** quando não for. Clicar no **[!UICONTROL Ligado]** permite ver informações sobre o projeto agendado. Você também pode [editar o agendamento do projeto](/help/analysis-workspace/curate-share/t-schedule-report.md) se você for o proprietário do projeto. |
 | [!UICONTROL ID do projeto] | A ID do projeto pode ser usada para depurar projetos. |
 | [!UICONTROL Maior intervalo de datas] | Intervalos de datas mais longos aumentam a complexidade do projeto e podem aumentar os tempos de processamento e carregamento. |
-| [!UICONTROL Número de consultas] | Um número maior de consultas de projeto aumenta a complexidade do projeto e pode aumentar os tempos de processamento e carregamento. |
+| [!UICONTROL Número de consultas] | O número total de solicitações feitas no Analytics quando o projeto é carregado. Um número maior de consultas de projeto aumenta a complexidade do projeto e pode aumentar os tempos de processamento e carregamento. Esses dados só estão disponíveis depois que um projeto é carregado ou um projeto agendado é enviado. |
 | Ícone Personalizar tabela | (Parte superior direita) Se você deseja adicionar ou remover colunas da lista de projetos, é possível fazer isso selecionando-as ou desmarcando-as. |
 | &lt; (Botão voltar) | Esse botão em um projeto do Workspace retorna à configuração mais recente da landing page. Qualquer configuração de página que você tenha ao sair da página de aterrisagem persistirá ao retornar. |
 
