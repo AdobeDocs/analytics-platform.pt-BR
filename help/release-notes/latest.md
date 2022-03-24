@@ -3,18 +3,14 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4afb87d0160dff9cd3249889bab84dacfdc43e2a
+source-git-commit: 39869e6ab2da8b15cb5dde876fe5233fc7c35adf
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 24%
+source-wordcount: '191'
+ht-degree: 20%
 
 ---
 
 # Notas de versão atuais do Customer Journey Analytics (Março de 2022)
-
->[!IMPORTANT]
->
->Essas notas de versão contêm informações de pré-lançamento sujeitas a alterações.
 
 **Última atualização**: 23 de março de 2022
 
