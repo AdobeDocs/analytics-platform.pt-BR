@@ -4,16 +4,16 @@ title: Filtros de projeto ad hoc
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: 5743bece216431fecc073528ca2509cd2ed72f2b
+source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 54%
+source-wordcount: '295'
+ht-degree: 56%
 
 ---
 
 # Filtros de projeto ad hoc
 
-Os filtros de projeto ad-hoc permitem arrastar e soltar qualquer componente diretamente na área de soltar do painel para criar um filtro. O filtro se torna um [filtro de nível de projeto](https://experienceleague.adobe.com/docs/analytics-platform/analysis-workspace/components/filters/quick-filters.html?#what-are-project-only-segments) local para o projeto atual.
+Os filtros de projeto ad-hoc permitem arrastar e soltar qualquer componente diretamente na área de soltar do painel para criar um filtro. O filtro se torna um [filtro de nível de projeto](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=pt-BR) local para o projeto atual.
 
 Aqui está um vídeo sobre como criar filtros de projeto ad hoc:
 
