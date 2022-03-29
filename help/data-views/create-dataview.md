@@ -4,9 +4,9 @@ description: Todas as configurações que podem ser ajustadas para criar ou edit
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1217'
+source-git-commit: 59d9fa8d4e4fa4aa3d297e70a619a7456527c5cd
+workflow-type: tm+mt
+source-wordcount: '1224'
 ht-degree: 100%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 100%
 # Criar ou editar uma visualização de dados
 
 A criação de uma visualização de dados envolve a criação de métricas e dimensões com base em elementos de esquema ou a utilização de componentes padrão. A maioria dos elementos do esquema pode ser uma dimensão ou uma métrica, dependendo das necessidades da sua empresa. Depois de arrastar um elemento do esquema para uma visualização de dados, as opções são exibidas à direita, onde você pode ajustar como a dimensão ou métrica opera no CJA.
+
+Veja um vídeo sobre este tópico:
+
+>[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
 ## Configurar uma visualização de dados
 
