@@ -4,10 +4,10 @@ description: O que considerar da perspectiva de um usuário quando sua empresa m
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: d31f07d8b26ea4d60481c040a0ca1ba491d4ecf0
+source-git-commit: 755e554e3eb362d6e7149e5d3a4fbbcddebdd14d
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 25%
+source-wordcount: '656'
+ht-degree: 24%
 
 ---
 
@@ -22,9 +22,15 @@ Parabéns, sua empresa está começando a trabalhar com o Customer Journey Analy
 
 ## O que não mudou
 
-Muito do que você está familiarizado com o relatório não mudou. Você ainda pode usar o poder do Analysis Workspace para analisar seus dados. Você também tem a mesma versão dos painéis do Adobe Analytics à sua disposição. O Workspace e os painéis funcionam essencialmente da mesma forma que no Adobe Analytics tradicional. O Report Builder tem uma nova interface e agora é executado em PCs, computadores Mac e na versão da Web do Excel. Em termos de relatórios, o que é diferente é que você tem acesso a muito mais dados entre canais para analisar. Este é um exemplo de algumas visualizações de vários canais:
+Muito do que você está familiarizado com o relatório não mudou.
 
-![multicanal](assets/cross-channel.png)
+* Você ainda pode usar o poder da [Analysis Workspace](/help/analysis-workspace/home.md) para analisar seus dados.
+* Você também tem a mesma versão de [Painéis Adobe Analytics](/help/mobile-app/home.md) à sua disposição. O espaço de trabalho e os painéis funcionam da mesma forma que no Adobe Analytics tradicional.
+* [Report Builder](/help/report-builder/report-buider-overview.md) O tem uma nova interface e agora é executada em PCs, Macs e na versão da Web do Excel.
+
+Quando se trata de relatórios, o que é diferente é que você tem acesso a muito mais dados entre canais para analisar. Este é um exemplo de algumas visualizações de vários canais que incluem várias fontes de dados entre canais:
+
+![visualizações de vários canais](assets/cross-channel.png)
 
 ## Nova arquitetura
 
