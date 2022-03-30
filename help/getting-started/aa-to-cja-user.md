@@ -4,10 +4,10 @@ description: O que considerar da perspectiva de um usuário quando sua empresa m
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 957cb693a9fd814cbf571696964cd4f91d338307
+source-git-commit: be9622559696c65e76bf45d6675646fc64d58ace
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 19%
+source-wordcount: '994'
+ht-degree: 18%
 
 ---
 
@@ -24,8 +24,8 @@ Parabéns, sua empresa está começando a empregar o Customer Journey Analytics!
 
 Muito do que você está familiarizado com o relatório não mudou.
 
-* Você ainda pode usar o poder da [Analysis Workspace](/help/analysis-workspace/home.md) para analisar seus dados.
-* Você também tem a mesma versão de [Painéis Adobe Analytics](/help/mobile-app/home.md) à sua disposição. O espaço de trabalho e os painéis funcionam da mesma forma que no Adobe Analytics tradicional.
+* Você ainda pode usar o poder da [Analysis Workspace](/help/analysis-workspace/home.md) para analisar seus dados. O Workspace funciona da mesma forma que no Adobe Analytics tradicional.
+* Você também tem a mesma versão de [Painéis Adobe Analytics](/help/mobile-app/home.md) à sua disposição. Os painéis (também conhecido como Aplicativo Mobile) funcionam da mesma forma que no Adobe Analytics tradicional.
 * [Report Builder](/help/report-builder/report-buider-overview.md) O tem uma nova interface e agora é executada em PCs, Macs e na versão da Web do Excel.
 
 Quando se trata de relatórios, o que é diferente é que você tem acesso a muito mais dados entre canais para analisar. Este é um exemplo de algumas visualizações que incluem fontes de dados entre canais:
@@ -78,10 +78,11 @@ As visualizações de dados tomam o conceito de conjuntos de relatórios virtuai
 
 **O que você precisa fazer**:
 
-* Familiarize-se com os muitos casos de uso em visualizações de dados.
 * Observe que, no Workspace, o seletor de conjunto de relatórios usado agora permite escolher entre as visualizações de dados compartilhadas por seu administrador com você:
 
    ![data-view-seletor](assets/data-views.png)
+
+* Familiarize-se com muitos [casos de uso em visualizações de dados](/help/data-views/data-views-usecases.md).
 
 ### Dados entre conjuntos de relatórios
 
