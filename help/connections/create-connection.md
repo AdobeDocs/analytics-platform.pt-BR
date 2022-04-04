@@ -4,7 +4,7 @@ description: Descreve como criar uma conexão com um conjunto de dados da plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 59d9fa8d4e4fa4aa3d297e70a619a7456527c5cd
+source-git-commit: 386feb602a276672f79ee8a612b5d288ce6ad981
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 100%
@@ -59,7 +59,7 @@ Customer Journey Analytics
 
    (Se tiver vários conjuntos de dados, você poderá pesquisar os corretos usando a barra de pesquisa **[!UICONTROL Pesquisar conjuntos de dados]** acima da lista de conjuntos de dados.)
 
-## 2. Configurar conjunto de dados
+## Configurar conjunto de dados
 
 No lado direito, agora é possível configurar os conjuntos de dados adicionados.
 
