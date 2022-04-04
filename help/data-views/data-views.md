@@ -4,8 +4,8 @@ description: Uma visualização de dados especifica como você deseja interpreta
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Você pode criar visualizações de dados diferentes para a mesma conexão, com 
 
 Os projetos do Espaço de trabalho no Customer Journey Analytics são baseados em visualizações de dados.
 
-## Recursos de visualizações de dados
+## Recursos de visualizações de dados {#capabilities}
 
 As visualizações de dados permitem que você altere espontaneamente as configurações dos elementos do esquema, sem ter que alterar o esquema na Adobe Experience Platform ou reimplementar o ambiente do CJA.
 
@@ -52,12 +52,12 @@ As visualizações de dados permitem que você altere espontaneamente as configu
 
 * Você pode **renomear seus containers** em uma visualização de dados e fazer com que esses containers renomeados apareçam em qualquer projeto do Espaço de trabalho com base nessa visualização de dados.
 
-## Pré-requisitos de visualizações de dados
+## Pré-requisitos de visualizações de dados {#prerequisites}
 
 * Antes de criar visualizações de dados, é necessário [configurar uma ou mais conexões com os conjuntos de dados da Experience Platform](/help/connections/create-connection.md).
 * Para criar ou gerenciar uma visualização de dados, você precisa de um [conjunto de permissões no Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR#admin-access-permissions).
 
-## Configurações de visualização de dados que você pode substituir no Espaço de trabalho
+## Configurações de visualização de dados que você pode substituir no Espaço de trabalho {#settings-override}
 
 Algumas configurações de visualização de dados podem ser substituídas no Analysis Workspace no nível do projeto, outras não.
 
@@ -65,14 +65,14 @@ Algumas configurações de visualização de dados podem ser substituídas no An
 * Atribuição de métrica
 * Se os usuários veem ou não o item da linha [!UICONTROL Nenhum valor] em um relatório
 
-## Configurações de visualização de dados que não podem ser substituídas no Espaço de trabalho
+## Configurações de visualização de dados que não podem ser substituídas no Espaço de trabalho {#settings-no-override}
 
 * [!UICONTROL Tipo de componente]
 * Formatação de métrica
 * Nome da visualização de dados
 * Alocação de dimensão
 
-## Excluir visualizações de dados
+## Excluir visualizações de dados {#delete}
 
 Se você excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que qualquer projeto do [!UICONTROL Espaço de trabalho] que depende dessa visualização de dados excluída deixará de funcionar.
 
