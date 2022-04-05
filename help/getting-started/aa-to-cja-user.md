@@ -4,13 +4,13 @@ description: O que considerar da perspectiva de um usuário quando sua empresa m
 role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 13743c627ae0af608e63c39ca1f0b8c54f61bbe0
+exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
+source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1012'
 ht-degree: 18%
 
 ---
-
 
 # Guia do usuário do CJA para usuários do Adobe Analytics
 
@@ -18,7 +18,7 @@ ht-degree: 18%
 >
 >Esta página está em construção.
 
-Sua empresa está começando a empregar o Customer Journey Analytics. Como usuário familiarizado com o Adobe Analytics, você já tem um excelente começo de cabeça. Ao trabalhar com o Customer Journey Analytics, você notará algumas grandes diferenças e algumas semelhanças. Esta página tem como objetivo explicar coisas que não mudaram, assim como algumas das principais diferenças. Além disso, informaremos como você pode obter mais informações sobre novos conceitos e outras etapas para tornar sua jornada de clientes mais fácil e bem-sucedida.
+Sua empresa está começando a empregar o Customer Journey Analytics. Como usuário familiarizado com o Adobe Analytics, você já tem um ótimo começo. Ao trabalhar com o Customer Journey Analytics, você notará algumas grandes diferenças e algumas semelhanças. Esta página tem como objetivo explicar coisas que não mudaram, assim como algumas das principais diferenças. Além disso, informaremos como você pode obter mais informações sobre novos conceitos e outras etapas para tornar sua jornada de clientes mais fácil e bem-sucedida.
 
 ## O que não mudou
 
@@ -28,7 +28,7 @@ Muito do que você está familiarizado com o relatório não mudou.
 * Você também tem a mesma versão de [Painéis Adobe Analytics](/help/mobile-app/home.md) à sua disposição. Os painéis (também conhecido como Aplicativo Mobile) funcionam da mesma forma que no Adobe Analytics tradicional.
 * [Report Builder](/help/report-builder/report-buider-overview.md) O tem uma nova interface e agora é executada em PCs, Macs e na versão da Web do Excel.
 
-Quando se trata de relatórios, o que é diferente é que você tem acesso a muito mais dados entre canais para analisar. Este é um exemplo de algumas visualizações que incluem fontes de dados entre canais:
+Quando se trata de relatórios, **o que é diferente** O é que você tem acesso a muito mais dados entre canais para analisar. Este é um exemplo de algumas visualizações que incluem fontes de dados entre canais:
 
 ![visualizações de vários canais](assets/cross-channel.png)
 
