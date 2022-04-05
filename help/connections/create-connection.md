@@ -4,10 +4,10 @@ description: Descreve como criar uma conexão com um conjunto de dados da plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 386feb602a276672f79ee8a612b5d288ce6ad981
+source-git-commit: ff642069b058626fa049ef4dad7ee565e501b0c6
 workflow-type: tm+mt
-source-wordcount: '1971'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ Uma conexão permite integrar conjuntos de dados do [!DNL Adobe Experience Platf
 
 Veja um vídeo com uma visão geral:
 
->[!VIDEO](https://video.tv.adobe.com/v/331788/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/35111/?quality=12&learn=on)
 
 ## Permissões necessárias
 
