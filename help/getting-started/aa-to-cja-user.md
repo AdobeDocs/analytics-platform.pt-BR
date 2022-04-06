@@ -5,20 +5,18 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 0fe1d1ce880db04f52f9828f97f61925da7b4028
+source-git-commit: 171b174624dbb48873024368884992766dcd0922
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 18%
+source-wordcount: '1053'
+ht-degree: 17%
 
 ---
 
 # Guia do usuário do CJA para usuários do Adobe Analytics
 
->[!NOTE]
->
->Esta página está em construção.
+Sua empresa está começando a empregar o Customer Journey Analytics. Como usuário familiarizado com o Adobe Analytics, você já tem um ótimo começo. Ao trabalhar com o Customer Journey Analytics, você notará algumas semelhanças e algumas grandes diferenças. Esta página tem como objetivo explicar coisas que não mudaram, assim como algumas das principais diferenças. Além disso, informaremos como você pode obter mais informações sobre novos conceitos e outras etapas para tornar sua jornada de clientes mais fácil e bem-sucedida.
 
-Sua empresa está começando a empregar o Customer Journey Analytics. Como usuário familiarizado com o Adobe Analytics, você já tem um ótimo começo. Ao trabalhar com o Customer Journey Analytics, você notará algumas grandes diferenças e algumas semelhanças. Esta página tem como objetivo explicar coisas que não mudaram, assim como algumas das principais diferenças. Além disso, informaremos como você pode obter mais informações sobre novos conceitos e outras etapas para tornar sua jornada de clientes mais fácil e bem-sucedida.
+Vários recursos no CJA foram renomeados e rearquitetados, em comparação ao Adobe Analytics tradicional, para alinhar-se aos padrões do setor. Alguns termos atualizados incluem segmentos, conjuntos de relatórios virtuais, classificações, atributos do cliente e nomes de contêiner. Conceitos familiares como eVars e props não existem mais, juntamente com as limitações impostas.
 
 ## O que não mudou
 
@@ -40,9 +38,9 @@ Os dados do cliente na plataforma são armazenados como conjuntos de dados, que 
 
 Seu administrador do CJA estabeleceu [conexões](/help/connections/create-connection.md) para conjuntos de dados na Platform. Eles então construíram [visualizações de dados](/help/data-views/data-views.md) dentro dessas conexões. Pense nas visualizações de dados como semelhantes aos conjuntos de relatórios virtuais. As visualizações de dados são a base dos relatórios no Customer Journey Analytics. O conceito de um conjunto de relatórios não existe mais.
 
-## Novos conceitos e terminologia
+## Conjuntos de relatórios
 
-Vários recursos no CJA foram renomeados e rearquitetados, em comparação ao Adobe Analytics tradicional, para alinhar-se aos padrões do setor. Alguns termos atualizados incluem segmentos, conjuntos de relatórios virtuais, classificações, atributos do cliente e nomes de contêiner. Conceitos familiares como eVars e props não existem mais, juntamente com as limitações impostas.
+Os dados do seu conjunto de relatórios podem ser trazidos para o Experience Platform por meio do Adobe Analytics Source Connector ou do SDK da Web, especialmente se sua organização ainda estiver na plataforma Adobe Analytics e adicionar CJA/AEP. Normalmente, você gera conjuntos de dados que são específicos do conjunto de relatórios usando o esquema do Analytics.
 
 ## (Virtual) os conjuntos de relatórios agora são &quot;visualizações de dados&quot;
 
@@ -50,7 +48,7 @@ Vários recursos no CJA foram renomeados e rearquitetados, em comparação ao Ad
 
 **O que você precisa fazer**:
 
-* Observe que, no Workspace, o seletor de conjunto de relatórios usado agora permite escolher entre as visualizações de dados compartilhadas por seu administrador com você:
+* Observe que no Workspace, o seletor de conjunto de relatórios usado agora permite escolher entre as visualizações de dados compartilhadas por seu administrador com você:
 
    ![data-view-seletor](assets/data-views.png)
 
