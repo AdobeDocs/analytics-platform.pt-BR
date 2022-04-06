@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 171b174624dbb48873024368884992766dcd0922
+source-git-commit: 3af757fd311d7a92e56aa9ce5939dc3db8dcf6fa
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1051'
 ht-degree: 17%
 
 ---
@@ -30,7 +30,7 @@ Quando se trata de relatórios, **o que é diferente** O é que você tem acesso
 
 ![visualizações de vários canais](assets/cross-channel.png)
 
-## Nova arquitetura
+## Nova arquitetura {#architecture}
 
 O Customer Journey Analytics obtém seus dados do Adobe Experience Platform. O Experience Platform permite centralizar e padronizar dados e conteúdo de clientes de qualquer sistema ou canal, além de aplicar a ciência de dados e o aprendizado de máquina para melhorar o design e o delivery de experiências personalizadas.
 
@@ -38,11 +38,11 @@ Os dados do cliente na plataforma são armazenados como conjuntos de dados, que 
 
 Seu administrador do CJA estabeleceu [conexões](/help/connections/create-connection.md) para conjuntos de dados na Platform. Eles então construíram [visualizações de dados](/help/data-views/data-views.md) dentro dessas conexões. Pense nas visualizações de dados como semelhantes aos conjuntos de relatórios virtuais. As visualizações de dados são a base dos relatórios no Customer Journey Analytics. O conceito de um conjunto de relatórios não existe mais.
 
-## Conjuntos de relatórios
+## Conjuntos de relatórios {#report-suites}
 
 Os dados do seu conjunto de relatórios podem ser trazidos para o Experience Platform por meio do Adobe Analytics Source Connector ou do SDK da Web, especialmente se sua organização ainda estiver na plataforma Adobe Analytics e adicionar CJA/AEP. Normalmente, você gera conjuntos de dados que são específicos do conjunto de relatórios usando o esquema do Analytics.
 
-## (Virtual) os conjuntos de relatórios agora são &quot;visualizações de dados&quot;
+## (Virtual) os conjuntos de relatórios agora são &quot;visualizações de dados&quot; {#data-views}
 
 [!UICONTROL Visualizações de dados] pegue o conceito de conjuntos de relatórios virtuais como eles existem hoje e expanda-o para [ativar controlos adicionais dos dados](/help/data-views/create-dataview.md) disponibilizado por conexões. Isso torna o fuso horário e os intervalos de tempo limite da sessão configuráveis. Também é possível aplicar propriedades de atribuição e expiração para dimensões individuais dinamicamente. Observe que eles são aplicados retroativamente em todos os dados.
 
@@ -54,7 +54,7 @@ Os dados do seu conjunto de relatórios podem ser trazidos para o Experience Pla
 
 * Familiarize-se com muitos [casos de uso em visualizações de dados](/help/data-views/data-views-usecases.md).
 
-## Não há mais eVars e props
+## eVars e props
 
 [!UICONTROL eVars], [!UICONTROL props] e [!UICONTROL eventos] no sentido tradicional do Adobe Analytics não existem mais no [!UICONTROL Customer Journey Analytics]. Você tem elementos de esquema ilimitados (dimensões, métricas, campos de lista). Portanto, todas as configurações de atribuição que você costumava aplicar durante o processo de coleta de dados agora são aplicadas no momento da consulta. Seu administrador CJA criou visualizações de dados
 
