@@ -4,7 +4,7 @@ description: Entenda as diferentes maneiras de assimilar dados no Customer Journ
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 06ef2da0f66b1f8fa1597a618d64974cb6c320ce
+source-git-commit: 570fb36de0ed81f001ed6115e73d1d4347f368ec
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 89%
@@ -19,7 +19,7 @@ Você tem várias opções quando se trata de assimilar dados no Customer Journe
 
 Esse fluxo de trabalho utiliza o Adobe Analytics Data Connector e varia dependendo do uso do DTM ou do Launch como um Gerente de dados.
 
-### Por meio de tags no Adobe Experience Platform (anteriormente chamadas de Launch)
+### Por meio de tags no Adobe Experience Platform (anteriormente chamadas de [!UICONTROL Launch])
 
 1. [Criar uma camada de dados](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/data-layer.html?lang=pt-BR), se você ainda não tiver uma. Uma camada de dados é uma estrutura de objetos JavaScript no site que contém todos os valores de variável usados na implementação. Permite maior controle e manutenção simplificada na implementação.
 1. Use [Tags do Adobe Experience Platform](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=pt-BR) para implementar o código em seu site para a coleta de dados, caso ainda não tenha implementado. Essa solução de gerenciamento de tags permite implantar o código do Analytics junto com outros requisitos de marcação. As tags oferecem integrações com outras soluções e produtos e permitem implantar código personalizado. Todas essas tarefas podem ser realizadas sem depender de equipes de desenvolvimento na organização para atualizar o código no site..
