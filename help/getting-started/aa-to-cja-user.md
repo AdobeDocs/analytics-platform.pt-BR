@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 4f7f0b48a15065fb13e5de484946f90fd17e7332
+source-git-commit: 64ba233212fa6bfc1d63c122e1f8dcebe6735f39
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1398'
+ht-degree: 6%
 
 ---
 
@@ -60,6 +60,8 @@ Consulte [Casos de uso em visualizações de dados](/help/data-views/data-views-
 
 Os conceitos do [!UICONTROL eVars], [!UICONTROL props]e [!UICONTROL events] no Adobe Analytics tradicional, não existe mais em [!UICONTROL Customer Journey Analytics]. Elementos de esquema ilimitados estão disponíveis, incluindo dimensões, métricas e campos de lista. Eles são mapeados para elementos de esquema ilimitados, incluindo dimensões, métricas e campos de lista no Experience Platform. Todas as configurações de visita e atribuição aplicadas após as regras de processamento no Adobe Analytics agora se aplicam no momento da consulta no Customer Journey Analytics.
 
+Com essa flexibilidade, você pode encontrar situações em que um único campo de esquema pode ser usado como dimensões e uma métrica para suportar diferentes necessidades de rastreamento.
+
 ## Alterações no conceito de segmentos
 
 O Adobe renomeou o componente &quot;segmentos&quot; como &quot;filtros&quot; para alinhar-se melhor aos padrões do setor e fornecer uma melhor distinção com segmentos no Adobe Experience Platform.
@@ -100,10 +102,10 @@ Você também pode ter várias visualizações de dados com base na mesma conex�
 
 ## Alterações na forma como o Adobe identifica visitantes
 
-O CJA expande os conceitos de identidades além das ECIDs para incluir qualquer ID que você deseja usar, incluindo ID do cliente, ID de cookie, ID com título, ID de usuário, código de rastreamento e assim por diante. Usar uma ID de namespace comum em conjuntos de dados ou usando [Análise entre canais](/help/connections/cca/overview.md) O ajuda a vincular pessoas em diferentes conjuntos de dados. Qualquer usuário que configurar um projeto do Workspace no CJA deverá entender as IDs usadas nos conjuntos de dados. Assista ao vídeo a seguir que destaca o uso das identidades no Customer Journey Analytics:
+O CJA expande os conceitos de identidades além das ECIDs para incluir qualquer ID que você deseja usar, incluindo ID do cliente, ID de cookie, ID com título, ID de usuário, código de rastreamento e assim por diante. Usar uma ID de namespace comum em conjuntos de dados ou usando [Análise entre canais](/help/connections/cca/overview.md) O ajuda a vincular pessoas em diferentes conjuntos de dados. Qualquer usuário que configurar um projeto do Workspace no CJA deverá entender as IDs usadas nos conjuntos de dados. Assista ao vídeo a seguir que destaca o uso de identidades no CJA:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 
 ## Alterações no conceito de item de dimensão de tráfego baixo
 
-Na Adobe Analytics tradicional, uma variável que recebe muitos valores únicos inicia a definição de itens de dimensão em [!UICONTROL Tráfego baixo]. O CJA tem muitas limitações para campos de alta cardinalidade. As alterações na arquitetura de relatórios permitem que o Analysis Workspace relate muitos itens de dimensão exclusivos. Consulte [Cauda longa](../analysis-workspace/workspace-faq/long-tail.md) para obter mais informações sobre como o CJA otimiza os relatórios para dimensões com muitos valores únicos.
+Na Adobe Analytics tradicional, uma variável que recebe muitos valores únicos inicia a definição de itens de dimensão em [!UICONTROL Tráfego baixo]. O CJA tem menos limitações para campos de alta cardinalidade. As alterações na arquitetura de relatórios permitem que o Analysis Workspace relate muitos itens de dimensão exclusivos. Consulte [Cauda longa](../analysis-workspace/workspace-faq/long-tail.md) para obter mais informações sobre como o CJA otimiza os relatórios para dimensões com muitos valores únicos.
