@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 64ba233212fa6bfc1d63c122e1f8dcebe6735f39
+source-git-commit: 6981a7a68d8a517f6b842cb36382f543c80f4582
 workflow-type: tm+mt
-source-wordcount: '1398'
+source-wordcount: '1460'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ Você tem acesso a muito mais dados entre canais para analisar. Por exemplo, voc
 
 O CJA obtém seus dados do Adobe Experience Platform. O Experience Platform permite centralizar e padronizar dados e conteúdo de clientes de qualquer sistema ou canal, além de aplicar a ciência de dados e o aprendizado de máquina para melhorar o design e o delivery de experiências personalizadas.
 
-Os dados do cliente na Experience Platform são armazenados como conjuntos de dados, que consistem em um esquema e lotes de dados. Para obter mais detalhes sobre a plataforma, consulte a [Visão geral da arquitetura da Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
+Os dados do cliente no Experience Platform são armazenados como conjuntos de dados, que consistem em um [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=pt-BR) e lotes de dados. Para obter mais detalhes sobre a plataforma, consulte a [Visão geral da arquitetura da Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
 
 Seu administrador do CJA estabelece [conexões](/help/connections/create-connection.md) para conjuntos de dados no Experience Platform. Eles então criam [visualizações de dados](/help/data-views/data-views.md) usando essas conexões. As visualizações de dados são conceitualmente semelhantes aos conjuntos de relatórios virtuais e são a base dos relatórios no CJA. Como o Experience Platform gera todos os dados para relatórios, os conjuntos de relatórios não existem mais como um contêiner de dados.
 
@@ -58,7 +58,9 @@ Consulte [Casos de uso em visualizações de dados](/help/data-views/data-views-
 
 ## Alterações no conceito de eVars e props
 
-Os conceitos do [!UICONTROL eVars], [!UICONTROL props]e [!UICONTROL events] no Adobe Analytics tradicional, não existe mais em [!UICONTROL Customer Journey Analytics]. Elementos de esquema ilimitados estão disponíveis, incluindo dimensões, métricas e campos de lista. Eles são mapeados para elementos de esquema ilimitados, incluindo dimensões, métricas e campos de lista no Experience Platform. Todas as configurações de visita e atribuição aplicadas após as regras de processamento no Adobe Analytics agora se aplicam no momento da consulta no Customer Journey Analytics.
+Os conceitos do [!UICONTROL eVars], [!UICONTROL props]e [!UICONTROL events] no Adobe Analytics tradicional, não existe mais em [!UICONTROL Customer Journey Analytics]. No Adobe Analytics, as eVars e as props armazenam descrições de conteúdo, clientes, campanhas etc. e eventos contam itens como receita, assinaturas ou leads gerados. O Customer Journey Analytics preserva ambos os tipos de dados e você pode acessá-los da mesma maneira — no painel esquerdo do Analysis Workspace, em Dimension ou Métricas, respectivamente.
+
+No CJA, elementos de esquema ilimitados estão disponíveis, incluindo dimensões, métricas e campos de lista. Eles são mapeados para elementos de esquema ilimitados, incluindo dimensões, métricas e campos de lista no Experience Platform. Todas as configurações de visita e atribuição aplicadas após as regras de processamento no Adobe Analytics agora se aplicam no momento da consulta no Customer Journey Analytics.
 
 Com essa flexibilidade, você pode encontrar situações em que um único campo de esquema pode ser usado como dimensões e uma métrica para suportar diferentes necessidades de rastreamento.
 
