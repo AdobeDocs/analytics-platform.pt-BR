@@ -4,10 +4,10 @@ description: O que acontece quando você exclui conexões, conjuntos de dados ou
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '339'
-ht-degree: 100%
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 97%
 
 ---
 
@@ -22,4 +22,4 @@ Considere isso antes de excluir conexões, conjuntos de dados ou lotes no Custom
 | Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Atualmente, não é possível excluir um conjunto de dados em uma conexão que foi salva. Você teria que excluir toda a conexão e começar novamente. (No entanto, você pode excluir um conjunto de dados na [!UICONTROL Adobe Experience Platform].) |
 | Excluir um lote de um conjunto de dados (na [!UICONTROL Adobe Experience Platform]) | Se um lote for excluído de um conjunto de dados da [!UICONTROL Adobe Experience Platform], o mesmo lote será removido de qualquer conexão do [!UICONTROL Customer Journey Analytics] que contenha esse lote específico. [!UICONTROL O Customer Journey Analytics] é notificado de lotes que foram excluídos na [!UICONTROL Adobe Experience Platform]. |
 | Excluir um lote **enquanto ele estiver sendo assimilado** no [!UICONTROL Customer Journey Analytics] | Se houver apenas um lote no conjunto de dados, nenhum dado ou dado parcial desse lote será exibido no [!UICONTROL Customer Journey Analytics]. A assimilação será revertida. Por exemplo, se houver cinco lotes no conjunto de dados e três deles já tiverem sido assimilados quando o conjunto de dados tiver sido excluído, os dados desses três lotes aparecerão no [!UICONTROL Customer Journey Analytics]. |
-| Excluir conjuntos de dados de consulta na [!UICONTROL Adobe Experience Platform] | Embora a exclusão de conjuntos de dados seja possível para outros conectores de origem, no momento não há suporte para o [Conector de dados de classificações do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/classifications.html?lang=pt-BR). Se você excluir um conjunto de dados por engano, entre em contato com o Atendimento ao cliente da Adobe. |
+| Excluir conjuntos de dados de consulta na [!UICONTROL Adobe Experience Platform] | Embora a exclusão de conjuntos de dados seja possível para outros conectores de origem, no momento não há suporte para o [Conector de dados de classificações do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/classifications.html). Se você excluir um conjunto de dados por engano, entre em contato com o Atendimento ao cliente da Adobe. |

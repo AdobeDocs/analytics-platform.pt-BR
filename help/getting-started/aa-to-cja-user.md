@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 6981a7a68d8a517f6b842cb36382f543c80f4582
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1460'
-ht-degree: 6%
+source-wordcount: '1456'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ Você tem acesso a muito mais dados entre canais para analisar. Por exemplo, voc
 
 O CJA obtém seus dados do Adobe Experience Platform. O Experience Platform permite centralizar e padronizar dados e conteúdo de clientes de qualquer sistema ou canal, além de aplicar a ciência de dados e o aprendizado de máquina para melhorar o design e o delivery de experiências personalizadas.
 
-Os dados do cliente no Experience Platform são armazenados como conjuntos de dados, que consistem em um [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=pt-BR) e lotes de dados. Para obter mais detalhes sobre a plataforma, consulte a [Visão geral da arquitetura da Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=en).
+Os dados do cliente no Experience Platform são armazenados como conjuntos de dados, que consistem em um [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) e lotes de dados. Para obter mais detalhes sobre a plataforma, consulte a [Visão geral da arquitetura da Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
 
 Seu administrador do CJA estabelece [conexões](/help/connections/create-connection.md) para conjuntos de dados no Experience Platform. Eles então criam [visualizações de dados](/help/data-views/data-views.md) usando essas conexões. As visualizações de dados são conceitualmente semelhantes aos conjuntos de relatórios virtuais e são a base dos relatórios no CJA. Como o Experience Platform gera todos os dados para relatórios, os conjuntos de relatórios não existem mais como um contêiner de dados.
 

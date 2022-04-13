@@ -4,10 +4,10 @@ title: Filtros rápidos
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: a1bb56c5a7e6d3bb6b59e2cf3448409d85ec2efa
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 77%
+source-wordcount: '1047'
+ht-degree: 76%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 77%
 
 Você pode criar filtros rápidos dentro de um projeto para evitar a complexidade do [Construtor de filtros](/help/components/filters/create-filters.md) completo. Filtros rápidos
 
-* Aplicar como [filtros somente de projeto](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=en#project-only).
+* Aplicar como [filtros somente de projeto](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html#project-only).
 * Permitem até três regras
 * Não acomodam containers aninhados ou regras sequenciais.
 
@@ -27,7 +27,7 @@ Este é um vídeo sobre filtros rápidos (observe que ele usa o termo &quot;segm
 
 ## Pré-requisitos {#prereqs}
 
-Qualquer pessoa pode criar um filtro rápido. No entanto, você precisa da permissão Criação de filtro na variável [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=pt-BR#analytics-tools) para salvar um filtro rápido ou abri-lo no Construtor de filtros.
+Qualquer pessoa pode criar um filtro rápido. No entanto, você precisa da permissão Criação de filtro na variável [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html#analytics-tools) para salvar um filtro rápido ou abri-lo no Construtor de filtros.
 
 ## Criar filtros rápidos {#create}
 
@@ -39,7 +39,7 @@ Em uma tabela de Forma livre, clique no ícone do filtro+ no cabeçalho do paine
 | --- | --- |
 | [!UICONTROL Nome] | O nome padrão de um filtro é uma combinação dos nomes das regras no filtro. É possível renomear o filtro para um nome mais amigável. |
 | [!UICONTROL Incluir/excluir] | Você pode incluir ou excluir componentes na definição do filtro, mas não ambos. |
-| [!UICONTROL Container de ocorrência/visita/visitante] | Filtros rápidos incluem somente um [container de filtro](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=en#filter-containers) que permite incluir uma dimensão/métrica/intervalo de datas no (ou excluí-lo do) filtro. O [!UICONTROL Visitante] contém dados abrangentes específicos para o visitante entre visitas e visualizações de página. Um container de [!UICONTROL Visita] permite definir regras para detalhar os dados do visitante com base em visitas, e um container de [!UICONTROL Ocorrência] permite detalhar as informações do visitante com base em visualizações de página individuais. O container padrão é o de [!UICONTROL Ocorrência]. |
+| [!UICONTROL Container de ocorrência/visita/visitante] | Filtros rápidos incluem somente um [container de filtro](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html#filter-containers) que permite incluir uma dimensão/métrica/intervalo de datas no (ou excluí-lo do) filtro. O [!UICONTROL Visitante] contém dados abrangentes específicos para o visitante entre visitas e visualizações de página. Um container de [!UICONTROL Visita] permite definir regras para detalhar os dados do visitante com base em visitas, e um container de [!UICONTROL Ocorrência] permite detalhar as informações do visitante com base em visualizações de página individuais. O container padrão é o de [!UICONTROL Ocorrência]. |
 | [!UICONTROL Componentes] (Dimension/métrica/intervalo de datas) | Defina até 3 regras adicionando componentes (dimensões, métricas, intervalos de datas ou valores de dimensão). Há três maneiras de encontrar o componente correto:<ul><li>Comece a digitar e o construtor de [!UICONTROL Filtros rápidos] encontrará automaticamente o componente apropriado.</li><li>Use a lista suspensa para localizar o componente.</li><li>Arraste os componentes do painel esquerdo e solte-os.</li></ul> |
 | [!UICONTROL Operador] | Use o menu suspenso para encontrar operadores padrão e operadores de [!UICONTROL Contagem distinta]. Consulte [Operadores de filtro](operators.md). |
 | Sinal de mais (+) | Adicionar outra regra |

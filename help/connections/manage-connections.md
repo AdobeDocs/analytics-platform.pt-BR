@@ -5,10 +5,10 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 9f7b98084a7ec5d2abe89e00f0a6567cb271e80a
+source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 99%
+source-wordcount: '1808'
+ht-degree: 98%
 
 ---
 
@@ -108,7 +108,7 @@ Veja as explicações sobre widgets e configurações:
 | [!UICONTROL ID do conjunto de dados] | Essa ID é gerada automaticamente pela Adobe Experience Platform. |
 | [!UICONTROL Lotes] | Indica quantos lotes de dados foram adicionados a esse conjunto de dados. |
 | [!UICONTROL Última adição] | Exibe o carimbo de data e hora do último lote adicionado a esse conjunto de dados. |
-| [!UICONTROL Tipo de conjunto de dados] | Esse conjunto de dados pode ser do tipo [!UICONTROL Evento], [!UICONTROL Consulta] ou [!UICONTROL Perfil]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#configure-dataset) |
+| [!UICONTROL Tipo de conjunto de dados] | Esse conjunto de dados pode ser do tipo [!UICONTROL Evento], [!UICONTROL Consulta] ou [!UICONTROL Perfil]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset) |
 | Esquema | O esquema da Adobe Experience Platform no qual os conjuntos de dados nesta conexão se baseiam. |
 
 ### Configurações do painel direito no nível da conexão
@@ -117,10 +117,10 @@ Veja as explicações sobre widgets e configurações:
 | --- | --- |
 | [!UICONTROL Atualizar] | Atualize a conexão para refletir registros adicionados recentemente. |
 | [!UICONTROL Excluir] | Exclua esta conexão. |
-| [!UICONTROL Criar visualização de dados] | Crie uma nova visualização de dados com base nesta conexão. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=en) |
+| [!UICONTROL Criar visualização de dados] | Crie uma nova visualização de dados com base nesta conexão. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html) |
 | [!UICONTROL Nome da conexão] | Exibe o nome amigável da conexão. |
 | [!UICONTROL Descrição da conexão] | Exibe uma descrição mais detalhada que descreve idealmente a finalidade dessa conexão. |
-| [!UICONTROL Sandbox] | A [sandbox da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=en) da qual essa conexão obtém seus conjuntos de dados. Essa sandbox foi selecionada quando você criou a conexão pela primeira vez. Ela não pode ser alterada. |
+| [!UICONTROL Sandbox] | A [sandbox da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html) da qual essa conexão obtém seus conjuntos de dados. Essa sandbox foi selecionada quando você criou a conexão pela primeira vez. Ela não pode ser alterada. |
 | [!UICONTROL ID da conexão] | Essa ID é gerada pelo sistema na Adobe Experience Platform. |
 | [!UICONTROL Visualizações de dados usando conexão] | Lista todas as visualizações de dados que usam essa conexão. |
 | [!UICONTROL Importar novos dados] | (Ligado/Desligado) Indica se novos lotes de dados devem ou não ser adicionados aos dados históricos (preenchimento retroativo). |
@@ -134,13 +134,13 @@ Veja as explicações sobre widgets e configurações:
 | Configuração | Descrição |
 | --- | --- |
 | [!UICONTROL ID da pessoa] | Exibe uma identidade que foi definida no esquema do conjunto de dados na Experience Platform. Esta é a ID de pessoa que você escolheu durante a criação da conexão. Se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, isso será refletido nos relatórios. Para unir, de fato, conjuntos de dados, é necessário usar a mesma ID de pessoa nos conjuntos de dados. |
-| [!UICONTROL Registros disponíveis] | Representa o número total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado no calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. (A exceção é que, quando você criar uma conexão totalmente nova, haverá [latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#3.-obtenção-de-dados-no-customer-journey-analytics). |
+| [!UICONTROL Registros disponíveis] | Representa o número total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado no calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. (A exceção é que, quando você criar uma conexão totalmente nova, haverá [latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#3.-obtenção-de-dados-no-customer-journey-analytics). |
 | [!UICONTROL Registros adicionados] | Indica quantas linhas foram adicionadas no período selecionado. **Observação**: Os dados de **[!UICONTROL Registros adicionados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | [!UICONTROL Registros excluídos] | Indica quantos registros foram excluídos durante o período selecionado. **Observação**: Os dados de **[!UICONTROL Registros excluídos]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | [!UICONTROL Lotes adicionados] | Indica quantos lotes de dados foram adicionados a esse conjunto de dados. |
 | [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas durante a assimilação no período selecionado.<p>Os motivos para os registros serem ignorados são: carimbos de data e hora ausentes, ID de pessoa ausente ou inválida etc. Atualizado a cada dez minutos.<p>IDs de pessoa inválidas (como “não definida”, ou “00000000” ou qualquer combinação de números e letras em uma [!UICONTROL ID de pessoa] que aparece em um evento mais de 1 milhão de vezes em um determinado mês) não podem ser atribuídas a nenhum usuário ou pessoa específica. Elas não podem ser assimiladas no sistema e resultam em assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa inválidas, você tem 3 opções:<ul><li>Usar [Análise entre canais](/help/connections/cca/overview.md) para preencher as IDs de usuário indefinidas ou nulas com IDs de usuário válidas.</li><li>Apagar a ID de usuário, que também será ignorada durante a assimilação (preferível a IDs de usuário inválidas ou totalmente nulas).</li><li>Corrigir IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul><p>**Observação**: Os dados de **[!UICONTROL Registros ignorados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
 | [!UICONTROL Última adição] | Indica quando o último lote foi adicionado. |
-| [!UICONTROL Tipo de conjunto de dados] | [!UICONTROL Evento], [!UICONTROL Consulta] ou [!UICONTROL Perfil]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=en#configure-dataset) |
+| [!UICONTROL Tipo de conjunto de dados] | [!UICONTROL Evento], [!UICONTROL Consulta] ou [!UICONTROL Perfil]. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#configure-dataset) |
 | [!UICONTROL Esquema] | Mostra o esquema da Adobe Experience Platform no qual esse conjunto de dados se baseia. |
 | [!UICONTROL ID do conjunto de dados] | Essa ID é gerada pelo sistema na Adobe Experience Platform. |
 
