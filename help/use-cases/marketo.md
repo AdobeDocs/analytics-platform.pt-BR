@@ -1,27 +1,27 @@
 ---
-title: Assimilar dados B2B no AEP e relatório no CJA
-description: Saiba como trazer dados do Marketo para o CJA
+title: Assimilar dados do Marketo Engage no AEP e relatório no CJA
+description: Saiba como trazer dados do Marketo Engage para o CJA
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e18de2563427941f8c227881b46f73c490be218d
+exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
+source-git-commit: ad8e3c18dbb73a064662a4543cb0e553cd52cec3
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '387'
 ht-degree: 5%
 
 ---
 
+# Assimilar dados do Marketo Engage no AEP e relatório no CJA
 
-# Assimilar dados Marketo B2B no AEP e relatório no CJA
-
-Você pode aproveitar os conjuntos de dados Marketo B2B recém-disponíveis no Adobe Experience Platform (AEP) para fornecer análises e soluções de relatórios valiosas para profissionais de marketing B2B. Em seguida, relate esses conjuntos de dados no Customer Journey Analytics (CJA).
+Você pode aproveitar os conjuntos de dados do Marketo Engage recém-disponíveis no Adobe Experience Platform (AEP) para fornecer análises e soluções de relatórios valiosas para profissionais de marketing B2B. Em seguida, relate esses conjuntos de dados no Customer Journey Analytics (CJA).
 
 ## Etapa 1: Mapear campos de dados de origem do Marketo para seus destinos XDM
 
-Mapeie o [Pessoas](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#persons) e [Atividades](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#activities) aos respectivos campos de destino do esquema XDM.
+Mapeie o [Pessoas](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#persons) e [Atividades](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=en#activities) objetos aos respectivos campos de destino do esquema XDM.
 
 ## Etapa 2: Assimilar dados do Marketo no AEP
 
-Use o [conector Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en) para trazer os dados B2B do Marketo para o Experience Platform e manter esses dados atualizados usando aplicativos conectados à plataforma.
+Use o [conector Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=en) para trazer os dados do Marketo para o Experience Platform e manter esses dados atualizados usando aplicativos conectados à plataforma.
 
 ## Etapa 3: Configurar uma conexão com esse conjunto de dados no CJA
 
@@ -36,6 +36,7 @@ A [exibição de dados](/help/data-views/data-views.md) é um contêiner especí
 Um caso de uso que você pode explorar é: Quantas visitas de páginas da Web por clientes potenciais tivemos em abril-Junho de 2020?
 
 1. Abrir [Espaço de trabalho do Analytics](/help/analysis-workspace/home.md) e criar um novo projeto.
+Clientes com CDP B2B/B2P podem realizar análise no estilo B2C no CJA. Os objetos B2B ainda não estão disponíveis.
 
 1. Crie um [filter](/help/components/filters/create-filters.md) para exibições de página da Web da seguinte maneira - Tipo de evento = web.webpagedetails.pageViews :
 
