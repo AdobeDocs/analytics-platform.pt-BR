@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 02f64728cf9a55c3ecd1c003b0c71464ac0a534f
+source-git-commit: e89dca85a329e83df9dd6ec944c8b1081b4c87f1
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 96%
+source-wordcount: '618'
+ht-degree: 94%
 
 ---
 
@@ -204,6 +204,7 @@ ht-degree: 96%
    + [Uso de arrays de objetos](use-cases/object-arrays.md)
    + [Usar dimensões e métricas de vínculo](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa](use-cases/b2b.md)
+   + [(B2B) Assimilar dados Marketo B2B no AEP e relatório no CJA](use-cases/marketo.md)
    + [Analisar dados entre canais](use-cases/cross-channel.md)
    + [Importação de dados da central de atendimento e da Web](use-cases/call-center.md)
    + [Casos de uso da assimilação de dados](use-cases/data-ingestion.md)
