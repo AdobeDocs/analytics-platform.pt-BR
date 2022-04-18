@@ -4,10 +4,10 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 5799d8beec534bc6ec76b7fd01a7dd2524b28fef
 workflow-type: tm+mt
 source-wordcount: '1310'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -23,6 +23,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Attribution IQ | Suporte completo. |
 | Métricas calculadas | Suporte de arquivo; observe que qualquer métrica de cálculo existente no Analysis Workspace tradicional não será transferida para o CJA. |
 | Eventos de calendário | Suporte completo. Os eventos de calendário foram implementados como [Anotações](/help/components/annotations/overview.md) no Workspace. |
+| Criador de regras de classificação | Suporte total. Chamado [subsequências](/help/data-views/component-settings/substring.md) no CJA. Usa manipulações de sequência de caracteres no momento do relatório em vez de conjuntos de dados de pesquisa. |
 | Compilação entre dispositivos/canais | Suporte completo; consulte [Análise entre canais](/help/connections/cca/overview.md). |
 | Download do CSV | Suporte completo. |
 | Calendários personalizados | Suporte completo. |
@@ -80,7 +81,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Recurso | Notas |
 | --- | --- |
 | Alertas | Suporte planejado. |
-| Criador de regras de classificação | Funcionará de maneira um pouco diferente no CJA, usando manipulações de sequência de caracteres no momento do relatório em vez de conjuntos de dados de pesquisa. |
 | Análise de contribuição | Suporte planejado. |
 | Relatórios do Data Warehouse (exportação de 100% de linhas) | O suporte é planejado na interface do Analysis Workspace. O [[!UICONTROL Serviço de consulta]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) da Adobe Experience Platform também fornece uma interface para esses casos de uso no CJA. |
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
