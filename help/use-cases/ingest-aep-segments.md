@@ -3,15 +3,19 @@ title: Assimilar públicos da AEP no Customer Journey Analytics
 description: Explica como assimilar públicos-alvo do AEP no Customer Journey Analytics para análise adicional.
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: cd1d639ad698c188c506881b2b17103b0a3559f2
+source-git-commit: ed01fd0899cac21fff156e0c31dc2b52ff7c8cca
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '600'
 ht-degree: 2%
 
 ---
 
 
 # Assimilar públicos da AEP no Customer Journey Analytics (CJA)
+
+>[!NOTE]
+>
+>Este tópico está em construção.
 
 (Brandon, para sua informação, &quot;Perfil unificado&quot; é um termo obsoleto para &quot;Perfil do cliente em tempo real&quot; - de acordo com o gerente de documentação da AEP. Você não encontrará nenhum documento no UP no conjunto de documentos do AEP.)
 
@@ -61,7 +65,7 @@ Estes são os elementos de dados que precisam estar presentes:
 * `audienceMembershipIdList` campo de string: A ID de público-alvo
 * Adicione um nome amigável para o público-alvo (`audienceMembershipIdName`), como
 
-   ![Nome amigável do público](assets/audience-name)
+   ![Nome amigável do público](assets/audience-name.png)
 
 ## Etapa 5: Criar uma conexão no CJA com este conjunto de dados de perfil
 
