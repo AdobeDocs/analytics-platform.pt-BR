@@ -4,10 +4,10 @@ description: Explica como assimilar públicos-alvo do AEP no Customer Journey An
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: 490a754270922481ebd893514c530a0667d9d6e4
+source-git-commit: 9c4869bb632f3d69d8704009744246b975cb5c4a
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 1%
+source-wordcount: '1049'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,9 @@ Você pode criar um trabalho de exportação usando a ID de público-alvo de sua
 
 ## Etapa 4: Editar a saída de exportação
 
-Os resultados do trabalho de exportação precisam ser transformados em um conjunto de dados de Perfil separado para serem assimilados no CJA.  Essa transformação pode ser feita com o AEP Query Service ou outra ferramenta de transformação de sua escolha.  Somente precisamos da ID de perfil (que corresponderá à ID de pessoa no CJA) e uma ou mais IDs de público-alvo para fazer o relatório no CJA. No entanto, o trabalho de exportação padrão contém mais dados e, portanto, precisamos editar essa saída para remover dados irrelevantes, bem como mover algumas coisas.  Além disso, é necessário criar um esquema/conjunto de dados primeiro antes de adicionar os dados transformados a ele.
+Os resultados do trabalho de exportação precisam ser transformados em um conjunto de dados de Perfil separado para serem assimilados no CJA.  Essa transformação pode ser feita com [Serviço de query AEP](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR)ou outra ferramenta de transformação de sua escolha. Somente precisamos da ID de perfil (que corresponderá à ID de pessoa no CJA) e uma ou mais IDs de público-alvo para fazer o relatório no CJA.
+
+No entanto, o trabalho de exportação padrão contém mais dados e, portanto, precisamos editar essa saída para remover dados irrelevantes, bem como mover algumas coisas.  Além disso, é necessário criar um esquema/conjunto de dados primeiro antes de adicionar os dados transformados a ele.
 
 Este é um exemplo da saída de exportação no conjunto de dados da união de perfis, **before** qualquer edição:
 
@@ -71,9 +73,7 @@ Estes são os elementos de dados que precisam estar presentes:
 
 ## Etapa 5: Adicionar este conjunto de dados de perfil a uma conexão existente no CJA
 
-Você pode criar uma nova conexão, mas a maioria dos clientes deseja adicioná-la a uma conexão existente. As IDs de público-alvo &quot;enriquecem&quot; os dados existentes no CJA.
-
-[Criar uma conexão](/help/connections/create-connection.md)
+Você poderia [criar uma nova conexão](/help/connections/create-connection.md), mas a maioria dos clientes desejará adicionar o conjunto de dados do Perfil a uma conexão existente. As IDs de público-alvo &quot;enriquecem&quot; os dados existentes no CJA.
 
 ## Etapa 6: Modificar a visualização de dados CJA existente (ou criar nova)
 
