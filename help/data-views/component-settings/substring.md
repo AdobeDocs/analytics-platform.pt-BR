@@ -3,9 +3,10 @@ title: Configurações do componente de subsequência de caracteres
 description: Use um subconjunto de uma string como itens de dimensão.
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a8bdb5b0c00a9dbca2f466452a5d18045b2e9971
+exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
+source-git-commit: e1d8cffac907e1043d18b1939585108ce95a0fda
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '907'
 ht-degree: 7%
 
 ---
@@ -54,7 +55,7 @@ Para uso com campos que contêm URLs. Usando o URL de exemplo `https://example.c
 
 Se a entrada não for um URL válido ou se o componente de URL desejado não estiver presente, [Nenhuma opção de valor](no-value-options.md) aplicar.
 
-## Cortar
+## Aparar
 
 Cortar espaço em branco ou caracteres especiais da string.
 
@@ -112,3 +113,7 @@ Também há suporte para marcadores de posição de saída. É possível usar es
 | ``$` `` | Gera o texto entre o fim da última correspondência encontrada (ou o início do texto se nenhuma correspondência anterior foi encontrada) e o início da correspondência atual. |
 | `$+` | Gera o que correspondeu à última subexpressão marcada na expressão regular. |
 | `$$` | Gera o caractere de string `"$"`. |
+
+Este é um vídeo sobre Dimension de vinculação:
+
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
