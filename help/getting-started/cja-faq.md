@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2270'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 82%
 | --- | --- |
 | Preciso do [!UICONTROL Private Device Graph] ou do [!UICONTROL Device Coop] para o [!UICONTROL Customer Journey Analytics]? | Não, o [!UICONTROL Private Device Graph] ou o [!UICONTROL Device Coop] não são necessários para o [!UICONTROL Customer Journey Analytics]. Na verdade, eles ainda não são compatíveis. |
 | Preciso da [!UICONTROL Experience Cloud ID] (ECID) para o [!UICONTROL Customer Journey Analytics]? | Não, o [!UICONTROL Customer Journey Analytics] é compatível com qualquer ID em um conjunto de dados, seja [!UICONTROL ECID] ou outra ID escolhida. |
-| E se for necessário extrair, transformar, carregar (ETL) meus dados antes do [!UICONTROL Customer Journey Analytics]? | O Customer Journey Analytics inclui recursos de [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html?lang=pt-BR) para ajudar a transformar seus dados antes de colocá-los no data lake da Adobe Experience Platform. Se ETL for necessário depois que os dados já tiverem sido assimilados, o [Serviço de consulta da Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html#queries) fornecerá algumas opções limitadas, embora possa haver a cobrança de tarifas adicionais. |
+| E se for necessário extrair, transformar, carregar (ETL) meus dados antes do [!UICONTROL Customer Journey Analytics]? | O Customer Journey Analytics inclui recursos de [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html?lang=pt-BR) para ajudar a transformar seus dados antes de colocá-los no data lake da Adobe Experience Platform. Se ETL for necessário depois que os dados já tiverem sido assimilados, o [Serviço de consulta da Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=pt-BR#queries) fornecerá algumas opções limitadas, embora possa haver a cobrança de tarifas adicionais. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -30,9 +30,9 @@ ht-degree: 82%
 | Pergunta | Resposta |
 | --- | --- |
 | O [!UICONTROL Customer Journey Analytics] pode &quot;costurar&quot; todos os dispositivos ou conjuntos de dados? | Sim. [!UICONTROL O Customer Journey Analytics] tem uma solução de compilação chamada [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) (CCA). Ela permite alterar a chave da ID pessoal de um conjunto de dados, o que permite a combinação perfeita de vários conjuntos de dados. |
-| A costura de comportamento anônimo para comportamento autenticado é compatível? | Sim. [O Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. |
-| Como a &quot;repetição&quot; funciona no CCA? | O CCA “repete” dados com base em identificadores exclusivos que ele aprendeu. A repetição faz com que novos dispositivos da conexão sejam compilados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html#step-1%3A-live-stitching) |
-| Como a compilação de dados históricos (preenchimento retroativo) funciona no CCA? | Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html#enable-cross-channel-analytics) |
+| A costura de comportamento anônimo para comportamento autenticado é compatível? | Sim. [O Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. |
+| Como a &quot;repetição&quot; funciona no CCA? | O CCA “repete” dados com base em identificadores exclusivos que ele aprendeu. A repetição faz com que novos dispositivos da conexão sejam compilados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=pt-BR#step-1%3A-live-stitching) |
+| Como a compilação de dados históricos (preenchimento retroativo) funciona no CCA? | Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR#enable-cross-channel-analytics) |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -59,7 +59,7 @@ ht-degree: 82%
 | --- | --- |
 | Qual é a latência esperada para o [!UICONTROL Customer Journey Analytics] na [!UICONTROL Adobe Experience Platform]? | <ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no AEP. (Tamanho do lote > 50 milhões de linhas: superior a 90 minutos.)</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 7 dias<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul> |
 
-## 5. Definir janela de rolagem para [!UICONTROL Conexão] retenção de dados {#data-retention}
+## 5. Definir janela contínua para retenção de dados de [!UICONTROL Conexão] {#data-retention}
 
 >[!IMPORTANT]
 >Entre em contato com o Atendimento ao cliente ou com o gerente de conta da Adobe para implementar essa configuração. Ainda não está disponível por meio da interface do CJA.
@@ -76,8 +76,8 @@ Quando se trata de exclusão, nos referimos a seis tipos de componentes: sandbox
 | --- | --- |
 | Excluir uma sandbox na [!UICONTROL Adobe Experience Platform] | A exclusão de uma sandbox interromperá o fluxo de dados para qualquer conexão do [!UICONTROL Customer Journey Analytics] com conjuntos de dados nessa sandbox. Atualmente, as [!UICONTROL Conexões] no CJA vinculadas à sandbox excluída não serão automaticamente excluídas. |
 | Excluir um esquema na [!UICONTROL Adobe Experience Platform], mas não os conjuntos de dados associados a esse esquema | [!UICONTROL A Adobe Experience Platform] não permite a exclusão de [!UICONTROL esquemas] que tenham um ou mais [!UICONTROL conjuntos de dados] associados a eles. No entanto, um Administrador com o conjunto apropriado de direitos pode excluir os conjuntos de dados primeiro e, em seguida, excluir o esquema. |
-| Excluir um conjunto de dados no data lake da [!UICONTROL Adobe Experience Platform] | A exclusão de um conjunto de dados na AEP interromperá o fluxo de dados desse conjunto de dados para qualquer Conexão do CJA que inclua esse conjunto de dados. Todos os dados desse conjunto de dados são excluídos automaticamente das Conexões CJA associadas. |
-| Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Entre em contato com o Gerente de conta do Adobe para iniciar o processo de exclusão de um conjunto de dados em uma conexão que foi salva. |
+| Excluir um conjunto de dados no data lake da [!UICONTROL Adobe Experience Platform] | A exclusão de um conjunto de dados na AEP interromperá o fluxo de dados desse conjunto de dados para qualquer Conexão do CJA que inclua esse conjunto de dados. Quaisquer dados desse conjunto de dados são excluídos automaticamente das Conexões associadas do CJA. |
+| Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Entre em contato com o Gerente de conta da Adobe para iniciar o processo de exclusão de um conjunto de dados em uma conexão que foi salva. |
 | Excluir um lote de um conjunto de dados (na [!UICONTROL Adobe Experience Platform]) | Se um lote for excluído de um conjunto de dados da [!UICONTROL Adobe Experience Platform], o mesmo lote será removido de qualquer Conexão do CJA que contenha esse lote específico.  O CJA é notificado de exclusões em lote na [!UICONTROL Adobe Experience Platform]. |
 | Excluir um lote **enquanto ele estiver sendo assimilado** no [!UICONTROL Customer Journey Analytics] | Se houver apenas um lote no conjunto de dados, nenhum dado ou dado parcial desse lote será exibido no [!UICONTROL Customer Journey Analytics]. A assimilação será revertida. Por exemplo, se houver cinco lotes no conjunto de dados e três deles já tiverem sido assimilados quando o conjunto de dados tiver sido excluído, os dados desses três lotes aparecerão no [!UICONTROL Customer Journey Analytics]. |
 | Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Espaço de trabalho que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul> |
@@ -85,7 +85,7 @@ Quando se trata de exclusão, nos referimos a seis tipos de componentes: sandbox
 
 ## 7. Considerações ao mesclar conjuntos de relatórios no CJA {#merge-reportsuite}
 
-Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), considere essas ramificações ao mesclar dois ou mais conjuntos de relatórios do Adobe Analytics.
+Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR), considere essas ramificações ao mesclar dois ou mais conjuntos de relatórios do Adobe Analytics.
 
 | Problema | Consideração |
 | --- | --- |
@@ -110,36 +110,36 @@ Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem 
 
 {style=&quot;table-layout:auto&quot;}
 
-## 9. Estime o tamanho da conexão {#estimate-size}
+## 9. Estimar tamanho da conexão {#estimate-size}
 
 Talvez seja necessário saber quantas linhas de dados você tem atualmente no [!UICONTROL Customer Journey Analytics]. Para obter uma conta precisa do uso dos registros de dados de evento (linhas de dados) de sua organização, faça o seguinte **para cada uma das conexões criadas pela organização**.
 
 1. No [!UICONTROL Customer Journey Analytics], clique na guia **[!UICONTROL Conexões]**.
 
-   Agora você pode ver uma lista de todas as suas conexões atuais.
+   Agora você pode ver uma lista de todas as conexões atuais.
 
 1. Clique em cada nome de conexão para acessar o Gerenciador de conexões.
 
-1. Adicione o **[!UICONTROL Registros dos dados do evento disponíveis]** para todas as conexões criadas. (Dependendo do tamanho da sua conexão, o número pode levar algum tempo para ser exibido.)
+1. Adicione o **[!UICONTROL Registros dos dados do evento disponíveis]** para todas as conexões criadas. (Dependendo do tamanho da conexão, o número pode levar algum tempo para ser exibido.)
 
    ![dados do evento](assets/event-data.png)
 
-1. Depois de ter uma soma de todas as linhas de dados do evento, procure o direito de &quot;Linhas de dados&quot; no contrato de Customer Journey Analytics que sua empresa assinou com o Adobe.
+1. Depois de ter uma soma de todas as linhas de dados do evento, procure o direito de “Linhas de dados” no contrato do Customer Journey Analytics que sua empresa assinou com a Adobe.
 
-   Isso fornece o número máximo de linhas de dados autorizadas na Ordem de Venda. Se o número de linhas de dados resultante da Etapa 3 for maior que esse número, você está incorrendo em um excedente.
+   Isso fornece o número máximo de linhas de dados autorizadas na Ordem de venda. Se o número de linhas de dados resultante da Etapa 3 for maior que esse número, você está incorrendo em um excedente.
 
 1. Para corrigir essa situação, você tem várias opções:
 
-   * Altere seu [configurações de retenção de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html#set-rolling-window-for-connection-data-retention).
-   * [Excluir todas as conexões não usadas](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
-   * [Excluir um conjunto de dados no AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
-   * Entre em contato com o Gerente de conta do Adobe para obter licença de capacidade adicional.
+   * Alterar as [configurações de retenção de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#set-rolling-window-for-connection-data-retention).
+   * [Excluir todas as conexões não usadas](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
+   * [Excluir um conjunto de dados na AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
+   * Entre em contato com o Gerente de conta da Adobe para obter licença de capacidade adicional.
 
 ## 10. Em relação às sobreposições de uso {#overage}
 
-Os limites de uso são monitorados e aplicados regularmente pelo Adobe. &quot;Linhas de dados&quot;, as linhas médias diárias de dados disponíveis para análise no Customer Journey Analytics.
+Os limites de uso são monitorados e aplicados regularmente pela Adobe. “Linhas de dados” são as linhas médias diárias de dados disponíveis para análise no Customer Journey Analytics.
 
-Por exemplo, digamos que seu contrato o habilite a um milhão de linhas de dados. Suponha que, no primeiro dia de uso do Customer Journey Analytics, você carregue dois milhões de linhas de dados. No dia 2, você exclui 1 milhão de linhas e mantém seu uso no máximo comprometido (ou seja, um milhão de linhas de dados) para o restante do seu Termo de licença. Dependendo dos termos contratuais, você ainda pode incorrer em tarifas de utilização excessiva rateadas para o dia 1, já que você excedeu o direito de licença de &quot;linhas de dados&quot;.
+Por exemplo, digamos que seu contrato o habilite a um milhão de linhas de dados. Suponha que, no primeiro dia de uso do Customer Journey Analytics, você carregue dois milhões de linhas de dados. No dia 2, você exclui 1 milhão de linhas e mantém seu uso no máximo permitido (ou seja, um milhão de linhas de dados) para o restante do Prazo da licença. Dependendo dos termos contratuais, você ainda poderá incorrer em taxas de uso excessivo proporcionais em relação ao dia 1, já que você excedeu o direito de licença de “linhas de dados”.
 
 ## 11. Diagnosticar discrepâncias de dados {#discrepancies}
 
@@ -151,4 +151,4 @@ Em alguns casos, você pode notar que o número total de eventos assimilados pel
 
 1. Além disso, se verificarmos a [!UICONTROL Adobe Experience Platform], não há conjunto de dados com a ID &quot;5f21c12b732044194bffc1d0&quot;, portanto, alguém excluiu esse conjunto de dados específico da [!UICONTROL Adobe Experience Platform] quando a conexão inicial estava sendo criada. Mais tarde, ele foi adicionado ao Customer Journey Analytics novamente, mas uma [!UICONTROL ID do conjunto de dados da plataforma] diferente foi gerada pela [!UICONTROL Adobe Experience Platform].
 
-Leia mais sobre as [implicações do conjunto de dados e a exclusão de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) no [!UICONTROL Customer Journey Analytics] e na [!UICONTROL Adobe Experience Platform].
+Leia mais sobre as [implicações do conjunto de dados e a exclusão de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components) no [!UICONTROL Customer Journey Analytics] e na [!UICONTROL Adobe Experience Platform].
