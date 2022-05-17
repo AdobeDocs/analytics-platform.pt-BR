@@ -6,7 +6,7 @@ role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Em alguns casos, os usuários executivos podem precisar de assistência adiciona
 
 Para garantir que os usuários executivos tenham acesso aos seus cartões de pontuação no aplicativo, verifique se:
 
-* Os requisitos mínimos do sistema operacional móvel dos dispositivos são iOS versão 10 ou superior ou Android versão 4.4 (KitKat) ou superior
+* Os requisitos mínimos do sistema operacional móvel dos dispositivos são iOS versão 10 ou superior ou Android versão 4.4 (KitKat) ou superior.
 * Eles possuem um logon válido no Adobe Analytics.
 * Você criou corretamente os cartões de pontuação para dispositivos móveis para eles e compartilhou esses cartões de pontuação com eles.
 * Eles têm acesso aos Componentes incluídos no cartão de pontuação. Observe que você pode selecionar uma opção ao compartilhar seus cartões de pontuação para **[!UICONTROL Compartilhar componentes integrados]**.
@@ -78,8 +78,8 @@ Informações adicionais sobre blocos:
 
 * A granularidade dos minigráficos depende da duração do intervalo de datas:
 * Um dia mostra uma tendência horária
-   * Mais de um dia e menos de um ano mostra uma tendência diária
-   * Um ano ou mais mostra uma tendência semanal
+   * Mais de um dia e menos de um ano mostra uma tendência diária.
+   * Um ano ou mais mostra uma tendência semanal.
    * A fórmula de alteração do valor percentual é o total da métrica (intervalo de datas atual) - total da métrica (intervalo de datas de comparação) / total da métrica (intervalo de datas de comparação).
    * Você pode puxar a tela para baixo para atualizar o Scorecard.
 
