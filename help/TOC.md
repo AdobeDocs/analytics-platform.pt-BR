@@ -7,12 +7,12 @@ solution: Customer Journey Analytics
 type: Documentation
 index: true
 user-guide-title: Guia do Customer Journey Analytics
-user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para análise entre canais, com base na Adobe Experience Platform.
+user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para Cross-Channel Analytics, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: b164a78cd55a885c8dd724a448dcbe9ecdbcfff8
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 93%
+source-wordcount: '623'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 93%
    + [Introdução](getting-started/cja-getting-started.md)
    + [Página inicial do Customer Journey Analytics](getting-started/landing.md)
    + [Perguntas frequentes](getting-started/cja-faq.md)
-   + [Adobe Analytics para Customer Journey Analytics evolution](getting-started/aa-to-cja.md)
+   + [ Evolução do Adobe Analytics para o Customer Journey Analytics ](getting-started/aa-to-cja.md)
    + [Guia do usuário para novos usuários do Customer Journey Analytics](getting-started/aa-to-cja-user.md)
    + [Suporte a recursos do Customer Journey Analytics](getting-started/cja-aa.md)
    + [Implicações de exclusão](getting-started/cja-deletion.md)
@@ -43,10 +43,10 @@ ht-degree: 93%
    + [Gerenciar conexões](connections/manage-connections.md)
    + [Conjuntos de dados de evento combinados](connections/combined-dataset.md)
    + [Pesquisas padrão](connections/standard-lookups.md)
-   + Análise entre canais {#cca}
-      + [Visão geral da Análise entre canais](connections/cca/overview.md)
+   + Cross-Channel Analytics {#cca}
+      + [Visão geral da Cross-Channel Analytics](connections/cca/overview.md)
       + [Como funcionam as repetições](connections/cca/replay.md)
-      + [Perguntas frequentes sobre a Análise entre canais](connections/cca/faq.md)
+      + [Perguntas frequentes sobre a Cross-Channel Analytics](connections/cca/faq.md)
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das visualizações de dados](data-views/data-views.md)
    + [Criar ou editar uma visualização de dados](data-views/create-dataview.md)
@@ -203,9 +203,9 @@ ht-degree: 93%
 + Casos de uso {#cja-usecases}
    + [Casos de uso do Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Uso de arrays de objetos](use-cases/object-arrays.md)
-   + [Usar dimensões e métricas de vínculo](use-cases/binding-dimensions-metrics.md)
+   + [Uso de dimensões e métricas de ligação](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa](use-cases/b2b.md)
-   + [Assimilar dados do Marketo Engage no AEP e relatório no CJA](use-cases/marketo.md)
+   + [Assimilar dados do Marketo Engage na AEP e relatórios no CJA](use-cases/marketo.md)
    + [Assimilar públicos da AEP no CJA](use-cases/ingest-aep-segments.md)
    + [Analisar dados entre canais](use-cases/cross-channel.md)
    + [Importação de dados da central de atendimento e da Web](use-cases/call-center.md)
