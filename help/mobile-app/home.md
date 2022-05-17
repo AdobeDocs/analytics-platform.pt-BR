@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # [!UICONTROL Painéis] do Adobe Analytics - Visão geral
 
-Os **painéis do [!UICONTROL Adobe Analytics]** fornecem insights a qualquer hora e em qualquer lugar do Adobe Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. O aplicativo móvel é compatível com os sistemas operacionais iOS e Android.
+Os **[!UICONTROL painéis]** do Adobe Analytics fornecem insights a qualquer hora e em qualquer lugar do Adobe Analytics. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. O aplicativo móvel é compatível com os sistemas operacionais iOS e Android.
 
 Para saber mais sobre os [!UICONTROL painéis] do Adobe Analytics, consulte os seguintes recursos:
 
