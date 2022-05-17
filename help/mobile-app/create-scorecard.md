@@ -66,7 +66,7 @@ Para implementar o modelo de Scorecard:
 
 1. Em cada bloco, é possível acessar uma exibição detalhada que mostra informações adicionais sobre a métrica, como itens principais para uma lista de dimensões relacionadas.
 
-## Adicionar dimensões ou métricas (#dimsmetrics)
+## Adicionar dimensões ou métricas  (#dimsmetrics)
 
 Para adicionar uma dimensão relacionada a uma métrica, arraste uma dimensão do painel esquerdo e solte-a em um bloco.
 
