@@ -5,9 +5,9 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '782'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Estas são algumas etapas a seguir para comparar seus dados originais do Adobe A
 
 ## Etapa 1: Executar a métrica Ocorrências no Adobe Analytics
 
-A métrica [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html) exibe o número de ocorrências em que uma determinada dimensão foi definida ou mantida.
+A métrica [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=pt-BR) exibe o número de ocorrências em que uma determinada dimensão foi definida ou mantida.
 
 1. Em Analytics > [!UICONTROL Espaço de trabalho], arraste o intervalo de datas no qual deseja criar relatórios como uma dimensão para uma tabela de [!UICONTROL Forma livre].
 
@@ -47,7 +47,7 @@ O Total de registros por carimbos de data e hora deve corresponder à métrica d
 
 >[!NOTE]
 >
->Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através da [Análise entre canais](/help/connections/cca/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no CJA é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no AA, especialmente se a Análise entre canais tiver sido ativada.
+>Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através da [Cross-Channel Analytics](/help/connections/cca/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no CJA é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no AA, especialmente se a Cross-Channel Analytics tiver sido ativada.
 
 1. Nos [Serviços de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=pt-BR) da Adobe Experience Platform, execute a seguinte consulta de [!UICONTROL Total de registros por carimbos de data e hora]:
 
@@ -63,16 +63,16 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. Em [Feeds de dados do Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html), identifique nos dados brutos se algumas linhas foram descartadas pelo Conector de origem do Analytics.
+1. Em [Feeds de dados do Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR), identifique nos dados brutos se algumas linhas foram descartadas pelo Conector de origem do Analytics.
 
-   O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) pode descartar linhas durante a transformação para o esquema XDM. Pode haver vários motivos para que a linha inteira seja imprópria para transformação. Se qualquer um dos campos do Analytics a seguir tiver esses valores, a linha inteira será descartada.
+   O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) pode descartar linhas durante a transformação para o esquema XDM. Pode haver vários motivos para que a linha inteira seja imprópria para transformação. Se qualquer um dos campos do Analytics a seguir tiver esses valores, a linha inteira será descartada.
 
    | Campo do Analytics | Valores que fazem com que a linha seja descartada |
    | --- | --- |
    | Opt_out | `y, Y` |
    | In_data_only | Not 0 |
-   | Exclude_hit | Não 0 |
-   | Bot_id | Não 0 |
+   | Exclude_hit | Not 0 |
+   | Bot_id | Not 0 |
    | Hit_source | 0,3,5,7,8,9,10 |
    | Page_event | 53,63 |
 
