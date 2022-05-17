@@ -4,9 +4,9 @@ title: Filtros rápidos
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1048'
 ht-degree: 76%
 
 ---
@@ -105,7 +105,7 @@ Depois de aplicar o filtro, você pode optar por adicioná-lo à lista de compon
 
 ## O que são filtros exclusivos de projeto? {#project-only}
 
-Os filtros somente do projeto são filtros que se aplicam somente ao projeto atual em que foram criados. Eles não estão disponíveis em outros projetos e não podem ser compartilhados com outros usuários. Eles são destinados à exploração rápida de seus dados sem precisar criar e salvar um filtro no painel esquerdo. Filtros somente de projeto podem ser criados na área de soltar do painel com filtros rápidos ou [filtros ad-hoc](/help/components/filters/ad-hoc-filters.md).
+Os filtros somente do projeto são filtros que se aplicam somente ao projeto atual em que foram criados. Eles não estão disponíveis em outros projetos e não podem ser compartilhados com outros usuários. Eles são destinados à exploração rápida de seus dados sem precisar criar e salvar um filtro no painel esquerdo. Filtros somente de projeto podem ser criados na área de soltar do painel com filtros rápidos ou [filtros ad hoc](/help/components/filters/ad-hoc-filters.md).
 
 Se você abrir um filtro somente para projeto no [!UICONTROL Construtor de filtros], uma notificação somente de projeto é exibida. Se não marcar &quot;Disponibilizar este filtro..&quot; e clique em **[!UICONTROL APLICAR]**, o segmento permanece um filtro somente de projeto.
 

@@ -1,27 +1,27 @@
 ---
-description: Usar filtros ad hoc no Analysis Workspace.
+description: Use filtros ad hoc no Analysis Workspace.
 title: Filtros de projeto ad hoc
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: c053a1517030b68875fe7f4518dbbd473dbe1b47
+source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 56%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Filtros de projeto ad hoc
 
-Os filtros de projeto ad-hoc permitem arrastar e soltar qualquer componente diretamente na área de soltar do painel para criar um filtro. O filtro se torna um [filtro de nível de projeto](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=pt-BR) local para o projeto atual.
+Os filtros de projeto ad hoc permitem arrastar e soltar qualquer componente diretamente na área de soltar do painel para criar um filtro. O filtro se torna um [filtro de nível de projeto](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/quick-filters.html?lang=pt-BR) local para o projeto atual.
 
-Aqui está um vídeo sobre como criar filtros de projeto ad hoc:
+Este é um vídeo sobre como criar filtros de projeto ad hoc:
 
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
 1. 
-   1. Solte qualquer tipo de componente (dimensão, item de dimensão, evento, métrica, segmento, modelo de segmento, intervalo de datas) na zona de soltar de filtro na parte superior de um painel. Os tipos de componentes são convertidos automaticamente em filtros ad-hoc ou [Filtros rápidos](/help/components/filters/quick-filters.md) se compatível.
+   1. Solte qualquer tipo de componente (dimensão, item de dimensão, evento, métrica, segmento, modelo de segmento, intervalo de datas) na zona de soltar de filtro na parte superior de um painel. Os tipos de componentes são convertidos automaticamente em filtros ad hoc ou [Filtros rápidos](/help/components/filters/quick-filters.md) se compatível.
 
    Aqui está um exemplo de como criar um filtro para o domínio referenciador do Twitter:
 
