@@ -79,8 +79,8 @@ Para usar painéis:
    * A granularidade dos minigráficos depende da duração do intervalo de datas:
 
       * Um dia mostra uma tendência horária
-      * Mais de um dia e menos de um ano mostra uma tendência diária
-      * Um ano ou mais mostra uma tendência semanal
+      * Mais de um dia e menos de um ano mostra uma tendência diária.
+      * Um ano ou mais mostra uma tendência semanal.
    * A fórmula de alteração do valor percentual é o total da métrica (intervalo de datas atual) - total da métrica (intervalo de datas de comparação) / total da métrica (intervalo de datas de comparação).
 
    * Você pode puxar a tela para baixo para atualizar o Scorecard.
