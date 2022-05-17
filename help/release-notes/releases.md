@@ -1,6 +1,6 @@
 ---
 description: Explica a estratégia de lançamento contínuo de recursos do Customer Journey Analytics
-title: ' Versões de recursos do Customer Journey Analytics'
+title: Versões de recursos do Customer Journey Analytics
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 source-git-commit: f2c82f54ec534603539327597d5f4c4ec875d44c
 workflow-type: ht
@@ -29,7 +29,7 @@ Com cada versão de recurso, a linha do tempo de RTP para GA pode variar. O obje
 
 Sinalizadores de recursos são usados para controlar a visibilidade de novos recursos durante o lançamento. A Adobe recomenda adicionar `app.launchdarkly.com` à [lista de permissões](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=pt-BR) do seu firewall para ter uma experiência ideal durante o lançamento. Logo após a GA ser atingida, o sinalizador é removido.
 
-Você pode visualizar os sinalizadores de recursos ativos a qualquer momento em **Ajuda > Sobre o Workspace > Sinalizadores de recursos ativos**.
+Você pode visualizar os sinalizadores de recursos ativos a qualquer momento em **Ajuda > Sobre o Espaço de trabalho > Sinalizadores de recursos ativos**.
 
 ## Benefícios
 
