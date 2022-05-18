@@ -3,10 +3,10 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: d59128c34deb7d8fb65d0fad4e6029453c449ea4
+source-git-commit: 0b095edc3ad8f5121818feafa6edb3f826bee84c
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 28%
+source-wordcount: '159'
+ht-degree: 27%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 28%
 >
 >Esta página contém informações de pré-lançamento que estão sujeitas a alterações.
 
-**Última atualização**: 16 de maio de 2022
+**Última atualização**: 18 de maio de 2022
 
 ## Recursos principais
 
 | Recurso | Descrição | [Data Alvo](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | Nova interface de edição e criação de conexão | Essa experiência simplificada permite o preenchimento retroativo de dados no nível do conjunto de dados, ativar uma janela rolante de retenção de dados, adicionar e remover conjuntos de dados de uma conexão. [Saiba mais](/help/connections/create-connection.md) | 18 de maio de 2022 |
-| Report Builder para atualizações do CJA | Inclui recursos como agendamento e gerenciador de blocos de dados. [Saiba mais] | 18 de maio de 2022 |
+| Report Builder para atualizações do CJA | Inclui recursos como agendamento e gerenciador de blocos de dados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) | 18 de maio de 2022 |
 | Integração do Customer AI | Permite assimilar pontuações de modelos do Customer AI no CJA para análise adicional na área de trabalho da Análise do CJA. [Saiba mais - a ser seguido] | 25 de maio de 2022 |
 | Integração do Attribution AI | Permite assimilar as pontuações dos modelos de Attribution AI no CJA para análise adicional na área de trabalho da Análise do CJA. [Saiba mais - a ser seguido] | 25 de maio de 2022 |
 
