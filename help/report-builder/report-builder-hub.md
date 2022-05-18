@@ -6,20 +6,25 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 8544de42c643c729558f27a7d64b0e4a8af608d0
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 88%
 
 ---
 
 # O Hub do Report Builder
 
-Use o hub do Report Builder para criar, atualizar ou excluir blocos de dados.
+Use o hub Report Builder para criar, atualizar, excluir e gerenciar blocos de dados.
 
-O hub do Report Builder contém os painéis COMANDOS e EDIÇÃO RÁPIDA.
+O hub Report Builder contém os botões Criar e gerenciar , a lista COMANDOS e os painéis EDIT RÁPIDO.
 
-![](./assets/image13.png)
+<img src="./assets/hub51.png" width="50%"/>
+
+
+## Botões Criar e gerenciar
+
+Use os botões Criar ou Gerenciar para criar novos blocos de dados ou gerenciar blocos de dados existentes.
 
 ## Painel COMANDOS
 
