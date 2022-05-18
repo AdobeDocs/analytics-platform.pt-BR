@@ -4,18 +4,14 @@ description: Como gerenciar anotações no Espaço de trabalho.
 role: User, Admin
 feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: cec3d95d2877bad3a7fc4ac5e68691859262c2d4
+source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '677'
 ht-degree: 69%
 
 ---
 
 # Gerenciar anotações
-
->[!NOTE]
->
->No momento, esse recurso está em testes limitados.
 
 O gerenciador em [!UICONTROL Componentes] > [!UICONTROL Anotações] oferece várias formas de gerenciar anotações, como compartilhar, filtrar, marcar, aprovar, copiar, excluir e marcar como favoritos.
 
