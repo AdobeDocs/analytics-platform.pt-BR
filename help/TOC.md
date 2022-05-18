@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para Cross-Channel Analytics, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 565a247da0e66953d84b70dfb2fa50555e36b27d
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 98%
+source-wordcount: '634'
+ht-degree: 96%
 
 ---
 
@@ -200,6 +200,15 @@ ht-degree: 98%
       + [Visão geral do calendário](components/date-ranges/calendar.md)
       + [Criar intervalos de datas personalizados](components/date-ranges/custom-date-ranges.md)
       + [Comparação de datas](components/date-ranges/time-comparison.md)
++ Painéis do Analytics {#cja-dashboards}
+   + [Painéis do Analytics - Visão geral](mobile-app/home.md)
+   + [Tarefas do curador](mobile-app/curator.md)
+   + [Criar um cartão de pontuação](mobile-app/create-scorecard.md)
+   + [Configurar executivos para usar painéis](mobile-app/set-up-execs.md)
+   + [Guia de início rápido do usuário executivo](mobile-app/executive.md)
++ Integrações {#integrations}
+   + [Integrar o Attribution AI ao CJA](integrations/attribution-ai.md)
+   + [Integrar o Customer AI ao CJA](integrations/customer-ai.md)
 + Casos de uso {#cja-usecases}
    + [Casos de uso do Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Uso de arrays de objetos](use-cases/object-arrays.md)
@@ -213,12 +222,6 @@ ht-degree: 98%
    + [Usar dimensões do canal de marketing](use-cases/marketing-channels.md)
    + [Assimilar dados do Google Analytics na Adobe Experience Platform](use-cases/ga-to-cja.md)
    + [Relatórios de dados do Google Analytics no CJA](use-cases/ga-to-cja-reporting.md)
-+ Painéis do Analytics {#cja-dashboards}
-   + [Painéis do Analytics - Visão geral](mobile-app/home.md)
-   + [Tarefas do curador](mobile-app/curator.md)
-   + [Criar um cartão de pontuação](mobile-app/create-scorecard.md)
-   + [Configurar executivos para usar painéis](mobile-app/set-up-execs.md)
-   + [Guia de início rápido do usuário executivo](mobile-app/executive.md)
 + Solução de problemas {#troubleshooting}
    + [Comparar os dados do Adobe Analytics com os dados do CJA](troubleshooting/compare.md)
 + Privacidade {#cja-privacy}
