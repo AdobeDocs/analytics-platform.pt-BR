@@ -4,16 +4,16 @@ description: Descreve como criar uma conexão com um conjunto de dados da plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: beb9e94e0870f8957de59e643957f7422f902182
+source-git-commit: 36fc82cf2c075550ced98193fe50115af12974de
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2094'
 ht-degree: 69%
 
 ---
 
 # Criar uma conexão
 
-Um novo workflow Connections está sendo iniciado no Customer Journey Analytics (CJA) em maio de 2022. Esta é uma visão geral dos novos recursos:
+Um novo workflow de Conexões foi iniciado recentemente no Customer Journey Analytics (CJA). Esta é uma visão geral dos novos recursos:
 
 * Você pode ativar uma janela rolante de retenção de dados ao criar a conexão.
 * Você pode adicionar e remover conjuntos de dados de uma conexão. (A remoção de um conjunto de dados o remove da conexão e afeta qualquer visualização de dados associada e projetos subjacentes do Analysis Workspace.)
@@ -35,7 +35,7 @@ Um novo workflow Connections está sendo iniciado no Customer Journey Analytics 
    | **[!UICONTROL Nome da conexão]** | Digite um nome exclusivo para a conexão. |
    | **[!UICONTROL Descrição da conexão]** | Descreva a finalidade desta conexão. |
    | **[!UICONTROL Sandbox]** | Escolha uma sandbox na Experience Platform que contenha os conjuntos de dados para os quais você deseja criar uma conexão.<p>A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=pt-BR) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Pense em sandboxes como &quot;silos de dados&quot; que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.<p>Depois de selecionar a sandbox, o painel esquerdo mostra todos os conjuntos de dados que você pode obter dela. |
-   | **[!UICONTROL Ativar janela de dados de acumulado]** | Essa configuração permite definir a retenção de dados do CJA como uma janela rolante em meses (1 mês, 3 meses, 6 meses, etc.), no nível de conexão.<p>A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe nenhuma configuração da janela de dados do acumulado para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data e hora aplicáveis. No entanto, se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa (além de um ou mais conjuntos de dados de evento), esses dados serão retidos pelo mesmo período de tempo.<p> O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente. |
+   | **[!UICONTROL Ativar janela de dados contínuos]** | Essa configuração permite definir a retenção de dados do CJA como uma janela rolante em meses (1 mês, 3 meses, 6 meses, etc.), no nível de conexão.<p>A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe nenhuma configuração da janela de dados do acumulado para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data e hora aplicáveis. No entanto, se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa (além de um ou mais conjuntos de dados de evento), esses dados serão retidos pelo mesmo período de tempo.<p> O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente. |
    | **[!UICONTROL Adicionar conjuntos de dados]** (veja abaixo) | Adicione conjuntos de dados se nenhum conjunto de dados for exibido na lista do conjunto de dados. |
    | **[!UICONTROL Nome do conjunto de dados]** | Selecione um ou mais conjuntos de dados que você deseja transferir para o Customer Journey Analytics e clique em **[!UICONTROL Adicionar]**.<p>(Se tiver vários conjuntos de dados, você poderá pesquisar os corretos usando a barra de pesquisa Pesquisar conjuntos de dados acima da lista de conjuntos de dados.) |
    | **[!UICONTROL Última atualização]** | Somente para conjuntos de dados de eventos, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão a partir de esquemas baseados em eventos no Experience Platform. &quot;N/A&quot; significa que esse conjunto de dados não contém dados. |
