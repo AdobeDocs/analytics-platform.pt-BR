@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 01a9ff4e03e002da723c10500de6dec4444f951e
+exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
+source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 2%
+source-wordcount: '552'
+ht-degree: 1%
 
 ---
-
 
 # Gerenciar blocos de dados no Report Builder
 
@@ -50,19 +50,17 @@ Use o campo Procurar para localizar qualquer item na tabela de blocos de dados. 
 
 Por exemplo, você pode substituir um filtro existente por um novo filtro em um ou mais blocos de dados.
 
-1. Selecione os blocos de dados que deseja atualizar.
+1. Selecione os blocos de dados que deseja atualizar. Você pode marcar a caixa de seleção de nível superior para selecionar todos os blocos de dados ou selecionar blocos de dados individuais.
 
-Você pode marcar a caixa de seleção de nível superior para selecionar todos os blocos de dados ou selecionar blocos de dados individuais.
-
-![imagem](./assets/image56.png)
+   ![imagem](./assets/image56.png)
 
 1. Clique no ícone de edição para exibir a janela Edição rápida.
 
-![imagem](./assets/image58.png)
+   ![imagem](./assets/image58.png)
 
 1. Selecione um link de filtro para atualizar visualizações de dados, intervalos de datas ou filtros.
 
-![imagem](./assets/image59.png)
+   ![imagem](./assets/image59.png)
 
 ## Atualizar blocos de dados
 
@@ -81,9 +79,9 @@ Clique no ícone da lixeira para excluir um bloco de dados selecionado.
 
 ## Blocos de dados do grupo
 
-Clique nos títulos das colunas para agrupar blocos de dados ou selecione um nome de coluna na **Agrupar por** *Nome* lista.
+Você pode agrupar blocos de dados usando o **Agrupar por** ou você pode clicar em um título de coluna. Para classificar blocos de dados por coluna, clique no título da coluna. Para agrupar blocos de dados por grupos, selecione um nome de grupo no **Agrupar por** menu suspenso. Por exemplo, a captura de tela abaixo mostra blocos de dados agrupados por Folha. Ele mostra blocos de dados agrupados por Sheet1 e Sheet2.  Isso é útil, por exemplo, no caso de uso de substituição de filtro. Se você tiver vários filtros aplicados a cada bloco de dados, é útil criar um grupo contendo todos os blocos de dados que deseja substituir. Em seguida, é possível selecionar e editar facilmente todos ao mesmo tempo.
 
-![imagem](./assets/image514.png)
+![imagem](./assets/group-data-blocks.png)
 
 ## Modificar a exibição do Gerenciador de bloco de dados
 
