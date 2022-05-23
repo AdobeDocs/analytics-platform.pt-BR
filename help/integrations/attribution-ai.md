@@ -4,10 +4,10 @@ title: Integrar o Attribution AI ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: 1ace9fcb67ec6d1460b5209e2987219ecec52ee2
+source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 3%
+source-wordcount: '908'
+ht-degree: 10%
 
 ---
 
@@ -19,14 +19,28 @@ ht-degree: 3%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), como parte dos Serviços inteligentes da Adobe Experience Platform, é um serviço de atribuição de vários canais e algoritmos que calcula a influência e o impacto incremental das interações com o cliente em relação aos resultados especificados. Com o Attribution AI, os profissionais de marketing podem medir e otimizar os gastos com marketing e publicidade, entendendo o impacto de cada interação individual com o cliente em cada fase das jornadas do cliente.
 
-O Attribution AI suporta duas categorias de pontuações: algorítmico e baseado em regras. As pontuações algorítmicas incluem pontuações incrementais e influenciadas.
-
-* **Pontuações influenciadas** divida 100% do crédito de conversão entre canais de marketing.
-* **Pontuações incrementais** primeiro, considere uma linha de base de conversão que você teria alcançado mesmo sem marketing. Essa linha de base depende de observações de IA de padrões, sazonalidade e assim por diante, devido ao reconhecimento de marca, fidelidade e palavra de boca existentes. O crédito restante é dividido entre os canais de marketing.
-
-As pontuações baseadas em regras incluem [!UICONTROL Primeiro contato], [!UICONTROL Último contato], [!UICONTROL Linear], [!UICONTROL Forma de U]e [!UICONTROL Declínio de tempo]. O Attribution AI suporta 3 esquemas de Experience Platform: Evento de experiência, Adobe Analytics e Evento de experiência do consumidor.
-
 O Attribution AI integra-se ao Customer Journey Analytics (CJA) na medida em que o Attribution AI executa modelos em relação a dados e, em seguida, o CJA importa a saída desses modelos como um conjunto de dados, que pode ser integrado ao restante dos conjuntos de dados do CJA. Os conjuntos de dados habilitados para o Attribution AI podem ser aproveitados em exibições de dados e relatórios no CJA.
+
+O Attribution AI suporta 3 esquemas de Experience Platform: Evento de experiência, Adobe Analytics e Evento de experiência do consumidor.
+
+O Attribution AI suporta duas categorias de pontuações: algorítmico e baseado em regras.
+
+## Pontuações algorítmicas
+
+As pontuações algorítmicas incluem pontuações incrementais e influenciadas.
+
+* **[!UICONTROL Influenciado] pontuações** divida 100% do crédito de conversão entre canais de marketing.
+* **[!UICONTROL Incremental] pontuações** primeiro, considere uma linha de base de conversão que você teria alcançado mesmo sem marketing. Essa linha de base depende de observações de IA de padrões, sazonalidade e assim por diante, devido ao reconhecimento de marca, fidelidade e palavra de boca existentes. O crédito restante é dividido entre os canais de marketing.
+
+## Pontuações baseadas em regras
+
+As pontuações baseadas em regras incluem
+
+* **[!UICONTROL Primeiro contato]** dá 100% de crédito ao primeiro ponto de contato visto na janela de retrospectiva de atribuição.
+* **[!UICONTROL Último contato]** O atribui 100% do crédito ao ponto de contato que ocorreu mais recentemente antes da conversão.
+* **[!UICONTROL Linear]** dá crédito igual a todos os pontos de contato que resultem em uma conversão.
+* **[!UICONTROL Forma de U]** dá crédito de 40% à primeira interação, de 40% à última interação e divide os 20% restantes para os pontos de contato entre as duas. Para conversões com um só ponto de contato, o crédito é de 100%. Para conversões com dois pontos de contato, o crédito é de 50% para ambos.
+* **[!UICONTROL Declínio de tempo]** O segue um declínio exponencial com um parâmetro personalizado de meia-vida, onde o padrão é 7 dias. O peso de cada canal depende da quantidade de tempo decorrido entre a iniciação do ponto de contato e a conversão final. A fórmula usada para determinar o crédito é `2^(-t/halflife)`, em que `t` é o tempo entre um ponto de contato e uma conversão. Todos os pontos de contato são normalizados para 100%.
 
 ## Fluxo de trabalho
 
@@ -60,9 +74,15 @@ Aqui vemos um projeto do Workspace com dados do AAI que mostra pedidos com pontu
 
 ![Projeto AAI](assets/aai-project2.png)
 
+**Desempenho de marketing**
+
+Comparar e contrastar atribuição de ponto de contato entre diferentes modelos de atribuição:
+
+![Comparar](assets/compare.png)
+
 **Interação de canal**
 
-Entenda a interação do canal para ver qual canal pode ser usado com mais eficiência com outros canais:
+Entenda a interação do canal para ver qual canal pode ser usado com mais eficiência com outros canais, usando um diagrama Venn:
 
 ![Sobreposição de canal de marketing](assets/mc-overlap.png)
 
