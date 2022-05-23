@@ -4,10 +4,10 @@ title: Integrar o Attribution AI ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: b82bf04bb09a38f1cd475ecd2036acc240b7ef38
+source-git-commit: acfa4086c525ed78b52e430c110ec1daca9d20a5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '728'
+ht-degree: 2%
 
 ---
 
@@ -52,12 +52,34 @@ Em um projeto do CJA Workspace, você pode obter métricas como &quot;Pedidos de
 
 ![Dimensões de AAI](assets/aai-dims.png)
 
-Aqui vemos um projeto do Workspace com dados do AAI que mostra pedidos com pontuações influenciadas e incrementais.
+Aqui vemos um projeto do Workspace com dados do AAI que mostra pedidos com pontuações influenciadas e incrementais. Detalhe qualquer dimensão para entender a atribuição por: campanha, grupo de produtos, segmento de usuário, geografia e assim por diante.
 
 ![Projeto AAI](assets/aai-project.png)
 
 ![Projeto AAI](assets/aai-project2.png)
 
+Entenda a interação do canal para ver qual canal pode ser usado com mais eficiência com outros canais:
+
+![Sobreposição de canal de marketing](assets/mc-overlap.png)
+
+Esta tabela mostra os principais caminhos para a conversão (desduplicado) para ajudá-lo a criar e otimizar pontos de contato:
+
+![Principais canais](assets/top-channels.png)
+
+Aqui, vemos o lead time para a conversão quando um ponto de contato está na combinação. Ajuda na otimização do lead time:
+
+![Lead time](assets/lead-time.png)
+
+## Novas métricas do CJA
+
+| Métrica | Descrição |
+| --- | --- |
+| [!UICONTROL Taxa de aquisição] | Para cada canal, entre os caminhos de conversão que tocou, a porcentagem do canal é o Inicial. |
+| [!UICONTROL Taxa do player] | Para cada canal, entre os caminhos de conversão que tocou, a porcentagem do canal é um Player. |
+| [!UICONTROL Taxa mais próxima] | Para cada canal, entre os caminhos de conversão que ele tocou, a porcentagem do canal é o Fechador. |
+| [!UICONTROL AAI AVG Dias longe do pedido] | Para cada canal, o número médio de dias desde o pedido. |
+| [!UICONTROL Total de dias do AAI AVG em processo de vendas] | Para cada canal, o total médio de dias dos caminhos de conversão que ele tocou. |
+| [!UICONTROL AVG se afasta da ordem] | Para cada canal, a média se afasta da ordem. |
 
 ## Diferenças entre o Attribution AI e o Attribution IQ
 
