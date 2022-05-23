@@ -4,7 +4,7 @@ description: Descreve como criar uma conexão com um conjunto de dados da plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 36fc82cf2c075550ced98193fe50115af12974de
+source-git-commit: ffcffa3838419d49afda7598d81c672b36415260
 workflow-type: tm+mt
 source-wordcount: '2094'
 ht-degree: 69%
@@ -20,6 +20,8 @@ Um novo workflow de Conexões foi iniciado recentemente no Customer Journey Anal
 * Você pode ativar e solicitar dados de preenchimento retroativo por conjunto de dados.
 * É possível editar conjuntos de dados, por exemplo, para solicitar outro preenchimento retroativo.
 * É possível importar dados existentes por conjunto de dados.
+
+>[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
 ## Criar e configurar a conexão {#create-connection}
 
