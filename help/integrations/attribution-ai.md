@@ -4,9 +4,9 @@ title: Integrar o Attribution AI ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: d165b3aaca9f99bb23bcbfbcfbca9d2e96b3cfcb
+source-git-commit: c37aaa63677fbe2f7a10aaef5aad5b0ad0a607c4
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '875'
 ht-degree: 10%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 [Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=en), como parte dos Serviços inteligentes da Adobe Experience Platform, é um serviço de atribuição de vários canais e algoritmos que calcula a influência e o impacto incremental das interações com o cliente em relação aos resultados especificados. Com o Attribution AI, os profissionais de marketing podem medir e otimizar os gastos com marketing e publicidade, entendendo o impacto de cada interação individual com o cliente em cada fase das jornadas do cliente.
 
-O Attribution AI integra-se ao Customer Journey Analytics (CJA) na medida em que o Attribution AI executa modelos em relação a dados e, em seguida, o CJA importa a saída desses modelos como um conjunto de dados, que pode ser integrado ao restante dos conjuntos de dados do CJA. Os conjuntos de dados habilitados para o Attribution AI podem ser aproveitados em exibições de dados e relatórios no CJA.
+O Attribution AI integra-se ao Customer Journey Analytics (CJA) na medida em que o Attribution AI executa modelos em relação aos pontos de contato de marketing e às fontes de dados de conversão dos clientes. O CJA então importa a saída desses modelos como um conjunto de dados ou ele pode ser integrado ao restante dos conjuntos de dados do CJA. Os conjuntos de dados habilitados para o Attribution AI podem ser aproveitados em exibições de dados e relatórios no CJA.
 
 O Attribution AI suporta 3 esquemas de Experience Platform: Evento de experiência, Adobe Analytics e Evento de experiência do consumidor.
 
@@ -66,6 +66,11 @@ Em um projeto do CJA Workspace, você pode obter métricas como &quot;Pedidos de
 
 ![Dimensões de AAI](assets/aai-dims.png)
 
+>[!IMPORTANT]
+>
+>Essas dimensões e métricas não são nomeadas nativamente dessa maneira. Esses são &quot;nomes amigáveis&quot;. O [convenção de nomenclatura no Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) segue o caminho do esquema. Recomendamos renomear os nomes de caminho de esquema longos no AAI para nomes curtos e mais amigáveis (dimensões/métricas) no CJA. Você pode fazer isso em **[!UICONTROL Visualizações de dados]** > **[!UICONTROL Editar visualização de dados]** > **[!UICONTROL Componentes]** guia > **[!UICONTROL Campos de esquema]** -> Clique em um campo de esquema -> **[!UICONTROL Nome do componente]**.
+
+
 **Pedidos com pontuações influenciadas e incrementais**
 
 Aqui vemos um projeto do Workspace com dados do AAI que mostra pedidos com pontuações influenciadas e incrementais. Detalhe qualquer dimensão para entender a atribuição por: campanha, grupo de produtos, segmento de usuário, geografia e assim por diante.
@@ -98,30 +103,18 @@ Aqui, vemos o lead time para a conversão quando um ponto de contato está na co
 
 ![Lead time](assets/lead-time.png)
 
-## Novas métricas do CJA
-
-| Métrica | Descrição |
-| --- | --- |
-| [!UICONTROL Taxa de aquisição] | Para cada canal, entre os caminhos de conversão que tocou, a porcentagem do canal é o Inicial. |
-| [!UICONTROL Taxa do player] | Para cada canal, entre os caminhos de conversão que tocou, a porcentagem do canal é um Player. |
-| [!UICONTROL Taxa mais próxima] | Para cada canal, entre os caminhos de conversão que ele tocou, a porcentagem do canal é o Fechador. |
-| [!UICONTROL AAI AVG Dias longe do pedido] | Para cada canal, o número médio de dias desde o pedido. |
-| [!UICONTROL Total de dias do AAI AVG em processo de vendas] | Para cada canal, o total médio de dias dos caminhos de conversão que ele tocou. |
-| [!UICONTROL AVG se afasta da ordem] | Para cada canal, a média se afasta da ordem. |
-
-{style=&quot;table-layout:auto&quot;}
-
 ## Diferenças entre o Attribution AI e o Attribution IQ
 
 Portanto, quando você deve usar os dados do Attribution AI versus [Attribution IQ](/help/analysis-workspace/attribution/overview.md), um recurso CJA nativo? Esta tabela mostra algumas das diferenças na funcionalidade:
 
 | Funcionalidade | Attribution AI | Attribution IQ |
 | --- | --- | --- |
-| Atribuição fracionária | Sim | Não |
+| A atribuição incremental | Sim | Não |
 | Permite que os usuários ajustem o modelo | Sim | Sim |
 | A atribuição em canais (Observação: O AAI não usa os mesmos dados compilados que o CJA usa.) | Sim | Sim |
-| Inclui pontuações incrementais e influenciadas | Sim | Não |
+| Inclui pontuações influenciadas | Sim | Sim |
 | Modelagem do Does ML | Sim | Sim |
-| Modelagem do ML com previsões | Sim | Não |
+| Modelos de atribuição baseados em região | Sim | Sim |
+| Pode incluir pontos de contato de marketing no modelo | Sim | Não |
 
 {style=&quot;table-layout:auto&quot;}
