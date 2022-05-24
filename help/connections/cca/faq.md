@@ -4,9 +4,9 @@ description: Perguntas frequentes sobre a Análise de vários canais
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
+source-git-commit: de12bb7758904fb471a2da940d5281a5937f7d21
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '975'
 ht-degree: 96%
 
 ---
@@ -65,3 +65,7 @@ Certas métricas no CJA são semelhantes às métricas no Analytics tradicional,
 | **Eventos** = contagem de linhas nos dados compilados no CJA. Geralmente, isso deve estar próximo a **Ocorrências** no Adobe Analytics tradicional. No entanto, observe as Perguntas frequentes acima que estão relacionadas às linhas com um `Persistent ID` em branco. | **Eventos** = contagem de linhas nos dados não compilados no CJA. Geralmente, isso deve estar próximo a **Ocorrências** no Adobe Analytics tradicional. Observe, no entanto, que se qualquer evento tiver um `Person ID` em branco nos dados não compilados no lago de dados da AEP, esses eventos serão descartados (não incluídos) no CJA. | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html). |
 
 Outras métricas podem ser semelhantes no CJA e no Adobe Analytics tradicional. Por exemplo, a contagem total de eventos personalizados [para o Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html) (eventos 1-100) geralmente deve ser muito próxima no Adobe Analytics tradicional e no CJA (seja compilada ou não). No entanto, observe que isso nem sempre pode ser verdadeiro, devido a [diferenças nos recursos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-aa.html?lang=pt-BR), como a desduplicação de eventos entre o CJA e o Adobe Analytics tradicional.
+
+## O CCA pode usar campos do Mapa de identidade?
+
+Não, o CCA não pode usar campos do identityMap no momento.
