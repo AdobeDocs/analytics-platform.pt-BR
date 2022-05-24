@@ -4,10 +4,10 @@ description: Descreve como criar uma conexão com um conjunto de dados da plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: ffcffa3838419d49afda7598d81c672b36415260
+source-git-commit: 322961b416deb049010d9e4e3f2301300a116ee4
 workflow-type: tm+mt
-source-wordcount: '2094'
-ht-degree: 69%
+source-wordcount: '2148'
+ht-degree: 68%
 
 ---
 
@@ -37,7 +37,7 @@ Um novo workflow de Conexões foi iniciado recentemente no Customer Journey Anal
    | **[!UICONTROL Nome da conexão]** | Digite um nome exclusivo para a conexão. |
    | **[!UICONTROL Descrição da conexão]** | Descreva a finalidade desta conexão. |
    | **[!UICONTROL Sandbox]** | Escolha uma sandbox na Experience Platform que contenha os conjuntos de dados para os quais você deseja criar uma conexão.<p>A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=pt-BR) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Pense em sandboxes como &quot;silos de dados&quot; que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.<p>Depois de selecionar a sandbox, o painel esquerdo mostra todos os conjuntos de dados que você pode obter dela. |
-   | **[!UICONTROL Ativar janela de dados contínuos]** | Essa configuração permite definir a retenção de dados do CJA como uma janela rolante em meses (1 mês, 3 meses, 6 meses, etc.), no nível de conexão.<p>A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe nenhuma configuração da janela de dados do acumulado para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data e hora aplicáveis. No entanto, se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa (além de um ou mais conjuntos de dados de evento), esses dados serão retidos pelo mesmo período de tempo.<p> O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente. |
+   | **[!UICONTROL Ativar janela de dados contínuos]** | Essa caixa de seleção, se marcada, permite definir a retenção de dados CJA como uma janela rolante em meses (1 mês, 3 meses, 6 meses, etc.), no nível da conexão.<p>A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe nenhuma configuração da janela de dados do acumulado para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data e hora aplicáveis. No entanto, se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa (além de um ou mais conjuntos de dados de evento), esses dados serão retidos pelo mesmo período de tempo.<p> O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.<p>Se deixar o padrão (desmarcado), o período de retenção será substituído pela configuração de retenção de dados do Adobe Experience Platform . Se você tiver dados correspondentes a 25 meses no Experience Platform, o CJA obterá 25 meses de dados por meio do preenchimento retroativo. Se você excluísse 10 desses meses na Platform, o CJA manteria os 15 meses restantes. |
    | **[!UICONTROL Adicionar conjuntos de dados]** (veja abaixo) | Adicione conjuntos de dados se nenhum conjunto de dados for exibido na lista do conjunto de dados. |
    | **[!UICONTROL Nome do conjunto de dados]** | Selecione um ou mais conjuntos de dados que você deseja transferir para o Customer Journey Analytics e clique em **[!UICONTROL Adicionar]**.<p>(Se tiver vários conjuntos de dados, você poderá pesquisar os corretos usando a barra de pesquisa Pesquisar conjuntos de dados acima da lista de conjuntos de dados.) |
    | **[!UICONTROL Última atualização]** | Somente para conjuntos de dados de eventos, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão a partir de esquemas baseados em eventos no Experience Platform. &quot;N/A&quot; significa que esse conjunto de dados não contém dados. |
