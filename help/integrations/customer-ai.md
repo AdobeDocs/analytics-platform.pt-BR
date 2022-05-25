@@ -4,7 +4,7 @@ title: Integrar o Customer AI ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: b82bf04bb09a38f1cd475ecd2036acc240b7ef38
+source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -12,10 +12,6 @@ ht-degree: 0%
 ---
 
 # Integrar o Customer AI ao CJA
-
->[!NOTE]
->
->Essa funcionalidade será lançada em 25 de maio de 2022.
 
 [Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=en), como parte dos Serviços inteligentes da Adobe Experience Platform, fornece aos profissionais de marketing o poder de gerar previsões de clientes em nível individual.
 
@@ -41,7 +37,11 @@ Depois de preparar seus dados e ter todas as credenciais e esquemas em vigor, co
 
 ### Etapa 2: Configurar uma conexão CJA com conjuntos de dados do Customer AI
 
-No CJA, agora você pode [criar uma ou mais conexões](/help/connections/create-connection.md) para conjuntos de dados de Experience Platform que foram instrumentados para a API do cliente. Cada previsão, como &quot;Probabilidade de atualização da conta&quot;, equivale a um conjunto de dados. Esses conjuntos de dados aparecem com o prefixo &quot;Pontuações do Customer AI&quot;, como mostrado aqui:
+No CJA, agora você pode [criar uma ou mais conexões](/help/connections/create-connection.md) para conjuntos de dados de Experience Platform que foram instrumentados para a API do cliente. Cada previsão, como &quot;Probabilidade de atualização da conta&quot;, equivale a um conjunto de dados. Esses conjuntos de dados são exibidos com o prefixo &quot;Pontuações do Customer AI no formato EE - nome_do_aplicativo&quot;.
+
+>[!IMPORTANT]
+>
+>Cada instância do Customer AI tem dois conjuntos de dados de saída se o botão estiver ativado para ativar pontuações para CJA durante a configuração na Etapa 1. Um conjunto de dados de saída é exibido no formato XDM do perfil e um no formato XDM do evento da experiência.
 
 ![Pontuações de CAI](assets/cai-scores.png)
 
