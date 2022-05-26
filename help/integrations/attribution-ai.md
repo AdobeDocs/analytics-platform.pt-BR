@@ -4,10 +4,10 @@ title: Integrar o Attribution AI ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: c1e9fdb0e6d62da91b2b5c81eb21462890945b62
+source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '859'
+ht-degree: 10%
 
 ---
 
@@ -54,7 +54,7 @@ No CJA, agora você pode [criar uma ou mais conexões](/help/connections/create-
 
 ### Etapa 3: Criar visualizações de dados com base nessas conexões
 
-No CJA, [criar uma ou mais visualizações de dados](/help/data-views/create-dataview.md) que contêm os campos XDM do Attribution AI. (Seria ótimo ter uma captura de tela aqui.)
+No CJA, [criar uma ou mais visualizações de dados](/help/data-views/create-dataview.md) que contêm os campos XDM do Attribution AI.
 
 ### Etapa 4: Relatório de dados do AAI no CJA Workspace
 
@@ -64,7 +64,7 @@ Em um projeto do CJA Workspace, você pode obter métricas como &quot;Pedidos de
 
 >[!IMPORTANT]
 >
->Essas dimensões e métricas não são nomeadas nativamente dessa maneira. Esses são &quot;nomes amigáveis&quot;. O [convenção de nomenclatura no Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) segue o caminho do esquema. Recomendamos renomear os nomes de caminho de esquema longos no AAI para nomes curtos e mais amigáveis (dimensões/métricas) no CJA. Você pode fazer isso em **[!UICONTROL Visualizações de dados]** > **[!UICONTROL Editar visualização de dados]** > **[!UICONTROL Componentes]** guia > **[!UICONTROL Campos de esquema]** -> Clique em um campo de esquema -> **[!UICONTROL Nome do componente]**.
+>Essas dimensões e métricas não são nomeadas nativamente dessa maneira. Esses são &quot;nomes amigáveis&quot;. O [convenção de nomenclatura no Attribution AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/input-output.html?lang=en#attribution-ai-output-data) segue o caminho do esquema. Recomendamos renomear os nomes longos de caminho do esquema do AAI para nomes curtos e mais amigáveis (dimensões/métricas) no CJA. Você pode fazer isso em **[!UICONTROL Visualizações de dados]** > **[!UICONTROL Editar visualização de dados]** > **[!UICONTROL Componentes]** guia > **[!UICONTROL Campos de esquema]** -> Clique em um campo de esquema -> **[!UICONTROL Nome do componente]**.
 
 
 **Pedidos com pontuações influenciadas e incrementais**

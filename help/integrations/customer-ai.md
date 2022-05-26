@@ -4,9 +4,9 @@ title: Integrar o Customer AI ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 23c257c6b00b919b8e70b4cef58b5187227ec2a6
+source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -63,21 +63,31 @@ No CJA, agora você pode prosseguir para [criar visualizações de dados](/help/
 
 Na CJA Workspace, agora é possível criar um novo projeto e extrair visualizações.
 
+**Pontuações de propensão de tendência**
+
 Este é um exemplo de um projeto do Workspace com dados de CAI que realiza a tendência das pontuações de propensão para um segmento de usuários ao longo do tempo, em &#x200B; um gráfico de barras empilhadas:
 
 ![Classificações por pontuação](assets/workspace-scores.png)
+
+**Tabela com códigos de motivo**
 
 Esta é uma tabela que mostra códigos de motivo para o motivo pelo qual um segmento tem &#x200B; de alta ou baixa propensão:
 
 ![Códigos de motivo](assets/reason-codes.png)
 
+**Fluxo de entrada para propensão do cliente**
+
 Este diagrama de fluxo mostra o fluxo de entrada para a propensão do cliente em diferentes execuções de pontuação &#x200B;:
 
 ![Fluxo de entrada](assets/flow.png)
 
+**Distribuição das pontuações de propensão**
+
 Este gráfico de barras mostra a distribuição das pontuações de propensão &#x200B;:
 
 ![Distribuição](assets/distribution.png)
+
+**Sobreposições de propensão**
 
 Este diagrama Venn mostra as sobreposições de propensão em diferentes execuções de pontuação:
 
