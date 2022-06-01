@@ -4,10 +4,10 @@ title: Filtros de projeto ad hoc
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: 79513ad9-3c9d-441e-a5c5-c2b1e5cacc2e
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
+source-git-commit: 6627c8e8f6e88fd93ffaad12b38e5e1dbbc844a8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '302'
+ht-degree: 47%
 
 ---
 
@@ -20,8 +20,7 @@ Este é um vídeo sobre como criar filtros de projeto ad hoc:
 >[!VIDEO](https://video.tv.adobe.com/v/23978/?quality=12)
 
 
-1. 
-   1. Solte qualquer tipo de componente (dimensão, item de dimensão, evento, métrica, segmento, modelo de segmento, intervalo de datas) na zona de soltar de filtro na parte superior de um painel. Os tipos de componentes são convertidos automaticamente em filtros ad hoc ou [Filtros rápidos](/help/components/filters/quick-filters.md) se compatível.
+1. Solte qualquer tipo de componente (dimensão, item de dimensão, evento, métrica, segmento, modelo de segmento, intervalo de datas) na zona de soltar de filtro na parte superior de um painel. Os tipos de componentes são convertidos automaticamente em filtros ad hoc ou [Filtros rápidos](/help/components/filters/quick-filters.md) se compatível.
 
    Aqui está um exemplo de como criar um filtro para o domínio referenciador do Twitter:
 
