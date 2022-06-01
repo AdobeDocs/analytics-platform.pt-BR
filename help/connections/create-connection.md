@@ -4,16 +4,16 @@ description: Descreve como criar uma conexão com um conjunto de dados da plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 322961b416deb049010d9e4e3f2301300a116ee4
+source-git-commit: 90480aa725e75d8b8315c4cebcd9a2fd9cfe8823
 workflow-type: tm+mt
-source-wordcount: '2148'
-ht-degree: 68%
+source-wordcount: '2319'
+ht-degree: 63%
 
 ---
 
 # Criar uma conexão
 
-Um novo workflow de Conexões foi iniciado recentemente no Customer Journey Analytics (CJA). Esta é uma visão geral dos novos recursos:
+Um novo workflow de Conexões foi iniciado recentemente no Customer Journey Analytics (CJA). A nova experiência de criação e edição de conexão do fluxo de trabalho traz todas as configurações do conjunto de dados e da conexão para o centro da tela com o fluxo de trabalho de assistência.  Fornecemos seleção, configuração e experiência de revisão detalhadas do conjunto de dados com informações críticas como tipo de conjunto de dados, tamanho, esquema, ID do conjunto de dados, status do lote, status de preenchimento retroativo, IDs de pessoa e muito mais para reduzir o risco de configuração de conexão incorreta. Esta é uma visão geral dos novos recursos:
 
 * Você pode ativar uma janela rolante de retenção de dados ao criar a conexão.
 * Você pode adicionar e remover conjuntos de dados de uma conexão. (A remoção de um conjunto de dados o remove da conexão e afeta qualquer visualização de dados associada e projetos subjacentes do Analysis Workspace.)
@@ -47,7 +47,7 @@ Um novo workflow de Conexões foi iniciado recentemente no Customer Journey Anal
    | **[!UICONTROL Chave]** | Somente para conjuntos de dados de pesquisa (como _id). |
    | **[!UICONTROL Chave correspondente]** | Somente para conjuntos de dados de pesquisa (como _id). |
    | **[!UICONTROL Importar novos dados]** | Defina como Ligado ou Desligado. |
-   | **[!UICONTROL Dados de preenchimento retroativo]** |  |
+   | **[!UICONTROL Dados de preenchimento retroativo]** | Você pode solicitar o preenchimento retroativo de dados em um conjunto de dados com base nos carimbos de data e hora do evento. Por exemplo, você pode solicitar o preenchimento retroativo dos últimos 7 dias, configurar a ID de pessoa correta e testar sua conexão para obter a configuração correta. Se tudo parecer bom, você pode preencher os dados restantes com facilidade.<p>Além disso, é possível habilitar a importação de novos dados por conjunto de dados. Por exemplo, é possível habilitar a importação de novos dados somente para dados de pesquisa. |
    | **[!UICONTROL Status de preenchimento retroativo]** | Indica se os dados de preenchimento retroativo estão sendo processados. |
 
    {style=&quot;table-layout:auto&quot;}
@@ -77,7 +77,7 @@ O novo workflow permite adicionar um conjunto de dados Experience Platform ao cr
    | **[!UICONTROL Esquema]** | Este é o esquema com base no qual o conjunto de dados foi criado no Adobe Experience Platform. |
    | **[!UICONTROL Conjunto de dados]** | O nome do conjunto de dados. |
    | **[!UICONTROL Visualizar]**: `<dataset name>` | Pré-visualiza o conjunto de dados com colunas de data, ID e Identificador. |
-   | **[!UICONTROL Remover]** | Remova este conjunto de dados da conexão. |
+   | **[!UICONTROL Remover]** | Você pode excluir ou remover o conjunto de dados e alterar a ID de pessoa sem excluir toda a conexão. Isso reduz os custos envolvidos na assimilação de dados e o complicado processo de recriação de toda a conexão e visualizações de dados associadas. |
 
    {style=&quot;table-layout:auto&quot;}
 
