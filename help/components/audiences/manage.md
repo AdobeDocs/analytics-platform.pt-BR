@@ -1,9 +1,9 @@
 ---
 title: Gerenciar públicos-alvo criados no Customer Journey Analytics
 description: Saiba como gerenciar públicos no Customer Journey Analytics
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '253'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ O gerenciamento de públicos-alvo criados anteriormente permite
 
 * **Agendamento ou desprogramação** atualização/atualização automática de público-alvo. A expiração máxima na programação é de 1 ano.
 * **Renovar um agendamento de atualização de público-alvo** quando estiver prestes a expirar. Públicos que expiram são tratados de forma semelhante aos relatórios agendados que expiram - o administrador recebe um email por mês antes de o agendamento expirar.
-* **Exibir a última vez que um público-alvo foi atualizado**
+* Visualize o **última vez que um público-alvo foi atualizado**
 * Obter informações sobre o **tempo necessário para produzir um público-alvo** do Customer Journey Analytics (CJA) e o tempo necessário para que o público-alvo apareça no Perfil do cliente em tempo real para fins de ativação.
 * Veja se os públicos-alvo no CJA são **uso ativo pelo Perfil do cliente em tempo real** ou (idealmente) quaisquer aplicativos Experience Platform que consumam os públicos-alvo criados pelo CJA.
 
@@ -40,6 +40,8 @@ captura de tela
 ## Exibir e usar públicos-alvo do CJA no Experience Platform
 
 Você pode visualizar públicos-alvo do CJA na Platform acessando [!UICONTROL Segmentos] > [!UICONTROL Criar segmentos] > [!UICONTROL Públicos-alvo] guia > [!UICONTROL Públicos-alvo do CJA].
+
+Você pode arrastar os públicos-alvo do CJA para a definição de segmentos do AEP.
 
 ![](assets/audiences-aep.png)
 

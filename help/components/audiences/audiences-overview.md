@@ -1,9 +1,9 @@
 ---
 title: Visão geral de publicação de públicos-alvo do CJA
 description: Saiba mais sobre o conceito de publicação de público-alvo no Customer Journey Analytics
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ A publicação de públicos-alvo fornece uma maneira clara de tomar medidas em i
 * Envio de emails para esse público.
 * Envio de mensagens de push para esse público-alvo.
 * Uso do público-alvo para uma jornada no Adobe Journey Optimizer.
-* Exportação do público para um terceiro por meio de um destino AEP
+* Exportação do público para um terceiro por meio de um destino de Experience Platform.
 
 ## Terminologia principal
 
@@ -34,5 +34,7 @@ Os administradores recebem automaticamente a variável [!UICONTROL Publicação 
 
 ## Próximas etapas
 
+* [Criar e publicar públicos](/help/components/audiences/publish.md)
+* [Gerenciar públicos-alvo](/help/components/audiences/manage.md)
 
 
