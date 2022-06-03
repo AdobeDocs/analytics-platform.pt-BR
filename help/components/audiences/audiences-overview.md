@@ -1,9 +1,9 @@
 ---
 title: Visão geral de publicação de públicos-alvo do CJA
 description: Saiba mais sobre o conceito de publicação de público-alvo no Customer Journey Analytics
-source-git-commit: 9d19e1ea55a6c2de701d38cb417d6d39e753c640
+source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '376'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 >
 >Essa funcionalidade está atualmente em [teste limitado](/help/release-notes/releases.md).
 
-Agora você pode publicar públicos descobertos no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes. Com o Perfil do cliente em tempo real, você pode ver uma visualização holística de cada cliente individual ao combinar dados de vários canais, incluindo online, offline, CRM e de terceiros. O Perfil permite consolidar os dados do cliente em uma visualização unificada, oferecendo uma conta acionável com carimbo de data e hora de cada interação com o cliente.
+Agora você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes. Com o Perfil do cliente em tempo real, você pode ver uma visualização holística de cada cliente individual ao combinar dados de vários canais, incluindo online, offline, CRM e de terceiros. O Perfil permite consolidar os dados do cliente em uma visualização unificada, oferecendo uma conta acionável com carimbo de data e hora de cada interação com o cliente.
 
 A publicação de públicos-alvo fornece uma maneira clara de tomar medidas em insights encontrados no CJA. Essas ações podem incluir:
 

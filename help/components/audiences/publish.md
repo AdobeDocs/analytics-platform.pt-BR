@@ -1,9 +1,9 @@
 ---
 title: Criar e publicar públicos no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
-source-git-commit: fbe6f346d35d5f80fcbc9ed69b3ab4730c0715d6
+source-git-commit: 7e9c2f58101aa8ed215b20d584d85f14410064fa
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '827'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 >
 >Essa funcionalidade está atualmente em [teste limitado](/help/release-notes/releases.md).
 
-Este tópico discute como publicar públicos-alvo descobertos no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
+Este tópico discute como criar e publicar públicos-alvo descobertos no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
 Leia isto [visão geral](/help/components/audiences/audiences-overview.md) familiarizar-se com o conceito de públicos-alvo do CJA.
 
@@ -47,7 +47,7 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) famil
    | Atualizar janela de retrospectiva | Especifica até que ponto você deseja voltar na janela de dados ao criar esse público-alvo. O máximo. é de 90 dias. |
    | [!UICONTROL Intervalo de datas único] | Intervalo de datas quando você deseja que o público-alvo único seja publicado. |
    | [!UICONTROL Filtro] | Os filtros são a principal entrada para o público. Você pode adicionar até 20 filtros. Esses filtros podem ser unidos com `And` ou `Or` operadores. |
-   | [!UICONTROL Ver amostras de IDs] | Um exemplo de IDs neste público-alvo. Use a barra de pesquisa para procurar IDs de exemplo.<p>!![](assets/sample-ids.png) |
+   | [!UICONTROL Ver amostras de IDs] | Um exemplo de IDs neste público-alvo. Use a barra de pesquisa para procurar IDs de exemplo. |
 
    {style=&quot;table-layout:auto&quot;}
 
@@ -72,7 +72,23 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) famil
 
 1. Se tudo parecer bem, clique em **[!UICONTROL Publicar]**.
 
+   Se tudo correr bem, você receberá uma mensagem de confirmação de que o público-alvo foi publicado.
+
+1. Clique em **[!UICONTROL Exibir público-alvo no AEP]** na mesma mensagem, você será direcionado para a interface do usuário do segmento no Adobe Experience Platform. Veja mais informações abaixo.
+
+## Usar públicos-alvo do CJA no Experience Platform
+
+Você pode visualizar públicos-alvo do CJA na Platform acessando **[!UICONTROL Segmentos]** > **[!UICONTROL Criar segmentos]** > **[!UICONTROL Públicos-alvo]** guia > **[!UICONTROL Públicos-alvo do CJA]**.
+
+Você pode arrastar os públicos-alvo do CJA para a definição de segmentos do AEP.
+
+![](assets/audiences-aep.png)
+
+Se optar por exportar esse público para o lago de dados da AEP, ele aparecerá como um conjunto de dados em conformidade com a Classe de esquema de perfil individual do XDM:
+
+![](assets/aep-datalake.png)
+
+
 ## Próximas etapas
 
 * Para gerenciar esse público-alvo, acesse o [Interface do usuário de gerenciamento](/help/components/audiences/manage.md).
-* Para trabalhar com esse público no Adobe Experience Platform, acesse aqui.
