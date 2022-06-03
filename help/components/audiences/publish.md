@@ -1,17 +1,23 @@
 ---
 title: Criar e publicar públicos no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
-source-git-commit: 7895342fb33118f0bbe97ce4a7adc22664adf000
+source-git-commit: fbe6f346d35d5f80fcbc9ed69b3ab4730c0715d6
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 10%
+source-wordcount: '736'
+ht-degree: 7%
 
 ---
 
 
 # Criar e publicar públicos
 
+>[!NOTE]
+>
+>Essa funcionalidade está atualmente em [teste limitado](/help/release-notes/releases.md).
+
 Este tópico discute como publicar públicos-alvo descobertos no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
+
+Leia isto [visão geral](/help/components/audiences/audiences-overview.md) familiarizar-se com o conceito de públicos-alvo do CJA.
 
 ## Criar público-alvo
 
@@ -19,13 +25,17 @@ Este tópico discute como publicar públicos-alvo descobertos no Customer Journe
 
    | Método de criação | Detalhes |
    | --- | --- |
-   | De **[!UICONTROL Componentes] > [!UICONTROL Públicos-alvo]** | A página Audiences Manager é aberta. Clique em **[!UICONTROL Criar público-alvo]** e [!UICONTROL Construtor de público-alvo] é aberto. |
+   | Do principal **[!UICONTROL Componentes] > [!UICONTROL Públicos-alvo]** menu | A página Audiences Manager é aberta. Clique em **[!UICONTROL Criar público-alvo]** e [!UICONTROL Construtor de público-alvo] é aberto. |
    | A partir de uma tabela de forma livre | Clique com o botão direito do mouse em um item na tabela de Forma livre e selecione **[!UICONTROL Criar um público-alvo a partir da seleção]**. O uso desse método preenche o filtro previamente com a dimensão ou o item de dimensão selecionado na tabela. |
-   | Na interface do usuário de edição de filtro | Marque a caixa que diz **[!UICONTROL Criar um público-alvo com base neste filtro]**. O uso desse método preenche o filtro previamente. |
+   | Na interface de criação/edição do filtro | Marque a caixa que diz **[!UICONTROL Criar um público-alvo com base neste filtro]**. O uso desse método preenche o filtro previamente. |
 
    {style=&quot;table-layout:auto&quot;}
 
-1. Configure o público.
+1. Crie o público-alvo.
+
+   Configure essas configurações antes de publicar o público-alvo.
+
+   ![](assets/create-audience.png)
 
    | Configuração | Descrição |
    | --- | --- |
@@ -33,26 +43,36 @@ Este tópico discute como publicar públicos-alvo descobertos no Customer Journe
    | [!UICONTROL Tags] | Quaisquer tags que você deseja atribuir ao público-alvo para fins organizacionais. Você pode usar uma tag pré-existente ou inserir uma nova. |
    | [!UICONTROL Descrição] | Adicione uma boa descrição do público-alvo para diferenciá-lo dos outros. |
    | [!UICONTROL Frequência de atualização] | A frequência na qual você deseja atualizar o público-alvo.<ul><li>Você pode optar por criar um público-alvo único (padrão) que não precise de atualização, o que seria útil para campanhas únicas específicas, por exemplo.</li><li>Você pode selecionar outros intervalos de atualização. Para a frequência de 4 horas, há um limite de 150 públicos-alvo, pois essa taxa de atualização exige muito processamento. Para outros intervalos, não há número máximo de públicos-alvo.</li></ul> |
-   | Data de expiração | Quando o público-alvo parará de ser atualizado. O padrão é 1 ano a partir da data de criação. |
-   | Atualizar janela de retrospectiva | Especifica até que ponto você deseja voltar na janela de dados ao criar esse público-alvo. O máximo. é de 90 dias. Públicos que expiram são tratados de forma semelhante aos relatórios agendados que expiram - o administrador recebe um email por mês antes de o agendamento expirar. |
+   | Data de expiração | Quando o público-alvo parará de ser atualizado. O padrão é 1 ano a partir da data de criação. Públicos que expiram são tratados de forma semelhante aos relatórios agendados que expiram - o administrador recebe um email um mês antes de o público expirar. |
+   | Atualizar janela de retrospectiva | Especifica até que ponto você deseja voltar na janela de dados ao criar esse público-alvo. O máximo. é de 90 dias. |
    | [!UICONTROL Intervalo de datas único] | Intervalo de datas quando você deseja que o público-alvo único seja publicado. |
    | [!UICONTROL Filtro] | Os filtros são a principal entrada para o público. Você pode adicionar até 20 filtros. Esses filtros podem ser unidos com `And` ou `Or` operadores. |
+   | [!UICONTROL Ver amostras de IDs] | Um exemplo de IDs neste público-alvo. Use a barra de pesquisa para procurar IDs de exemplo.<p>!![](assets/sample-ids.png) |
 
    {style=&quot;table-layout:auto&quot;}
 
 1. Interpretar a visualização de dados.
 
-   A visualização do público-alvo é exibida no painel direito.
+   A visualização do público-alvo é exibida no painel direito. Ele permite a análise avançada do público-alvo criado.
+
+   ![](assets/data-preview.png)
 
    | Configuração de visualização | Descrição |
    | --- | --- |
-   | Janela de visualização de dados | O intervalo de datas do público-alvo. |
-   | Total de pessoas no público | Um número de resumo que pode chegar a 100 milhões. |
-   | Limite de tamanho do público | Mostra o quão longe está do limite de 100 milhões de pessoas. |
-   | Retorno estimado do público |  |
-   | Estimativa de retorno | Um número de resumo... |
-   | Visualizar métricas |  |
+   | [!UICONTROL Visualização de dados] janela | O intervalo de datas do público-alvo. |
+   | [!UICONTROL Total de pessoas] | Um número de resumo do número total de pessoas neste público-alvo. Pode chegar a 100 milhões de pessoas. Se seu público-alvo exceder 100 milhões de pessoas, você deverá reduzir o tamanho do público-alvo antes de publicá-lo. |
+   | [!UICONTROL Limite de tamanho do público] | Mostra o quão longe está do limite de 100 milhões de pessoas. |
+   | [!UICONTROL Retorno estimado do público] | Essa configuração é útil para redirecionar clientes nesse público-alvo que retornam ao site. (Em outras palavras, que são vistas neste conjunto de dados novamente.) <p>Aqui, você pode selecionar o período (próximos 7 dias, próximas 2 semanas, próximo mês) para o número estimado de clientes que podem retornar. |
+   | [!UICONTROL Estimativa de retorno] | Esse número oferece um número estimado de clientes recorrentes durante o período selecionado na lista suspensa. Observamos a taxa de churn histórica para esse público-alvo prever esse número. |
+   | [!UICONTROL Visualizar métricas] | Essa configuração permite que você veja métricas específicas para ver se esse público-alvo contribui com uma quantidade desproporcional para essa métrica, como &quot;[!UICONTROL Receita]&#39; ou &#39;[!UICONTROL Tempo médio no site]&quot;. Ele fornece a contagem agregada da métrica, bem como a porcentagem do total que ela representa. Você pode selecionar qualquer métrica disponível na visualização de dados. |
+   | Namespaces incluídos | Os namespaces específicos que estão associados às pessoas no seu público-alvo. Os exemplos incluem ECID, CRM ID, endereços de email, etc. |
+   | Sandbox | A sandbox de Experience Platform em que esse público reside. Ao publicar esse público-alvo na Platform, você só pode trabalhar com ele nos limites dessa sandbox. |
 
    {style=&quot;table-layout:auto&quot;}
 
+1. Se tudo parecer bem, clique em **[!UICONTROL Publicar]**.
 
+## Próximas etapas
+
+* Para gerenciar esse público-alvo, acesse o [Interface do usuário de gerenciamento](/help/components/audiences/manage.md).
+* Para trabalhar com esse público no Adobe Experience Platform, acesse aqui.
