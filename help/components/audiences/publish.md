@@ -2,10 +2,10 @@
 title: Criar e publicar públicos no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: b7f0173959445cda64de4307bea8ce22ba5048cd
+source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 7%
+source-wordcount: '971'
+ht-degree: 6%
 
 ---
 
@@ -72,13 +72,13 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) famil
 
 1. Verifique novamente a configuração do público-alvo e clique em **[!UICONTROL Publicar]**.
 
-   Se tudo correr bem, você receberá uma mensagem de confirmação de que o público-alvo foi publicado.
+   Se tudo correr bem, você receberá uma mensagem de confirmação de que o público-alvo foi publicado. Demora apenas um ou dois minutos para esse público aparecer no Experience Platform. (Mesmo para públicos-alvo com milhões de membros, deve levar menos de 5 minutos.)
 
 1. Clique em **[!UICONTROL Exibir público-alvo no AEP]** na mesma mensagem e você será direcionado para o [Interface do usuário do segmento](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en) no Adobe Experience Platform. Veja mais informações abaixo.
 
 ## Usar públicos-alvo do CJA no Experience Platform
 
-O CJA agora pega todas as combinações de namespace e ID do seu público-alvo publicado e as transforma em Perfil do cliente em tempo real. Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Se encontrar uma, ela adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, &quot;user@adobe.com&quot; pode ser direcionado para todos os dispositivos e canais. Se não for encontrado um perfil, um novo será criado.
+O CJA agora pega todas as combinações de namespace e ID do seu público-alvo publicado e as transforma em RTCP (Real-time Customer Profile, Perfil do cliente em tempo real). Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, &quot;user@adobe.com&quot; pode ser direcionado para todos os dispositivos e canais. Se não for encontrado um perfil, um novo será criado.
 
 Você pode visualizar públicos-alvo do CJA na Platform acessando **[!UICONTROL Segmentos]** > **[!UICONTROL Criar segmentos]** > **[!UICONTROL Públicos-alvo]** guia > **[!UICONTROL Públicos-alvo do CJA]**.
 
