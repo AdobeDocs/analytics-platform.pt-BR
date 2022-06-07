@@ -1,13 +1,13 @@
 ---
 title: Gerenciar públicos-alvo criados no Customer Journey Analytics
 description: Saiba como gerenciar públicos no Customer Journey Analytics
-source-git-commit: ba98ee1372c4ce396af3f41aeb98bc42ee6d02ce
+exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
+source-git-commit: 71f13c4f7d8ad5682ae0974bca9a0e8fc90acfe4
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '274'
 ht-degree: 7%
 
 ---
-
 
 # Gerenciar públicos-alvo criados no Customer Journey Analytics
 
@@ -25,8 +25,6 @@ O gerenciamento de públicos-alvo criados anteriormente permite
 
 ## Interface do usuário de gerenciamento
 
-captura de tela
-
 | Configuração da interface do usuário | Definição |
 | --- | --- |
 | Ocultar/Mostrar filtros | Permite mostrar ou ocultar os seguintes filtros no painel esquerdo: <ul><li>Exibição de dados</li><li>Proprietário</li><li>Frequência de atualização</li><li>Tags</li></ul> |
@@ -40,4 +38,3 @@ captura de tela
 | [!UICONTROL Última modificação] | Quando o público-alvo foi editado ou modificado pela última vez. |
 
 {style=&quot;table-layout:auto&quot;}
-
