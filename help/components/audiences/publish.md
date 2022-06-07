@@ -2,9 +2,9 @@
 title: Criar e publicar públicos no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: cfc4824c214ba8b60877bebe10a697f706f9c2fb
+source-git-commit: abeefebafb9ac246ab6a0c18b5554370a6776b38
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '973'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 >
 >Essa funcionalidade está atualmente em [teste limitado](/help/release-notes/releases.md).
 
-Este tópico discute como criar e publicar públicos-alvo descobertos no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
+Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
 Leia isto [visão geral](/help/components/audiences/audiences-overview.md) familiarizar-se com o conceito de públicos-alvo do CJA.
 
@@ -42,9 +42,9 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) famil
    | [!UICONTROL Nome] | O nome do público-alvo. |
    | [!UICONTROL Tags] | Quaisquer tags que você deseja atribuir ao público-alvo para fins organizacionais. Você pode usar uma tag pré-existente ou inserir uma nova. |
    | [!UICONTROL Descrição] | Adicione uma boa descrição do público-alvo para diferenciá-lo dos outros. |
-   | [!UICONTROL Frequência de atualização] | A frequência na qual você deseja atualizar o público-alvo.<ul><li>Você pode optar por criar um público-alvo único (padrão) que não precise de atualização, o que seria útil para campanhas únicas específicas, por exemplo.</li><li>Você pode selecionar outros intervalos de atualização. Para a frequência de 4 horas, há um limite de 150 públicos-alvo, pois essa taxa de atualização exige muito processamento. Para outros intervalos, não há número máximo de públicos-alvo.</li></ul> |
+   | [!UICONTROL Frequência de atualização] | A frequência na qual você deseja atualizar o público-alvo.<ul><li>Você pode optar por criar um público-alvo único (padrão) que não precise de atualização. Por exemplo, isso pode ser útil para campanhas específicas, únicas.</li><li>Você pode selecionar outros intervalos de atualização. Para a frequência de 4 horas, há um limite de 150 públicos-alvo, pois essa taxa de atualização exige muito processamento. Para outros intervalos, não há número máximo de públicos-alvo.</li></ul> |
    | Data de expiração | Quando o público-alvo parará de ser atualizado. O padrão é 1 ano a partir da data de criação. Públicos que expiram são tratados de forma semelhante aos relatórios agendados que expiram - o administrador recebe um email um mês antes de o público expirar. |
-   | Atualizar janela de retrospectiva | Especifica até que ponto você deseja voltar na janela de dados ao criar esse público-alvo. O máximo. é de 90 dias. |
+   | Atualizar janela de retrospectiva | Especifica até que ponto você deseja voltar na janela de dados ao criar esse público-alvo. O máximo é de 90 dias. |
    | [!UICONTROL Intervalo de datas único] | Intervalo de datas quando você deseja que o público-alvo único seja publicado. |
    | [!UICONTROL Filtro] | Os filtros são a principal entrada para o público. Você pode adicionar até 20 filtros. Esses filtros podem ser unidos com `And` ou `Or` operadores. |
    | [!UICONTROL Ver amostras de IDs] | Um exemplo de IDs neste público-alvo. Use a barra de pesquisa para procurar IDs de exemplo. |
@@ -53,7 +53,7 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) famil
 
 1. Interpretar a visualização de dados.
 
-   A visualização do público-alvo é exibida no painel direito. Ele permite a análise avançada do público-alvo criado.
+   A visualização do público-alvo é exibida no painel direito. Ele permite uma análise resumida do público-alvo criado.
 
    ![](assets/data-preview.png)
 
@@ -78,7 +78,8 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) famil
 
 ## Usar públicos-alvo do CJA no Experience Platform
 
-O CJA agora pega todas as combinações de namespace e ID do seu público-alvo publicado e as transforma em RTCP (Real-time Customer Profile, Perfil do cliente em tempo real). Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, &quot;user@adobe.com&quot; pode ser direcionado para todos os dispositivos e canais. Se não for encontrado um perfil, um novo será criado.
+
+O CJA agora pega todas as combinações de namespace e ID do seu público-alvo publicado e as transforma em RTCP (Real-time Customer Profile, Perfil do cliente em tempo real). Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, &quot;user@adobe.com&quot; pode ser direcionado para todos os dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
 Você pode visualizar públicos-alvo do CJA na Platform acessando **[!UICONTROL Segmentos]** > **[!UICONTROL Criar segmentos]** > **[!UICONTROL Públicos-alvo]** guia > **[!UICONTROL Públicos-alvo do CJA]**.
 
