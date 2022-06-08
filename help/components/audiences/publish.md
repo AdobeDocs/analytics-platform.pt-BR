@@ -2,9 +2,9 @@
 title: Criar e publicar públicos no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: abeefebafb9ac246ab6a0c18b5554370a6776b38
+source-git-commit: 0108b07fd4fac33d026b8832931ffa3018b298e0
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '946'
 ht-degree: 6%
 
 ---
@@ -42,7 +42,7 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) famil
    | [!UICONTROL Nome] | O nome do público-alvo. |
    | [!UICONTROL Tags] | Quaisquer tags que você deseja atribuir ao público-alvo para fins organizacionais. Você pode usar uma tag pré-existente ou inserir uma nova. |
    | [!UICONTROL Descrição] | Adicione uma boa descrição do público-alvo para diferenciá-lo dos outros. |
-   | [!UICONTROL Frequência de atualização] | A frequência na qual você deseja atualizar o público-alvo.<ul><li>Você pode optar por criar um público-alvo único (padrão) que não precise de atualização. Por exemplo, isso pode ser útil para campanhas específicas, únicas.</li><li>Você pode selecionar outros intervalos de atualização. Para a frequência de 4 horas, há um limite de 150 públicos-alvo, pois essa taxa de atualização exige muito processamento. Para outros intervalos, não há número máximo de públicos-alvo.</li></ul> |
+   | [!UICONTROL Frequência de atualização] | A frequência na qual você deseja atualizar o público-alvo.<ul><li>Você pode optar por criar um público-alvo único (padrão) que não precise de atualização. Por exemplo, isso pode ser útil para campanhas específicas, únicas.</li><li>Você pode selecionar outros intervalos de atualização. Para a frequência de 4 horas, há um limite de 75 ou 150 públicos-alvo, dependendo do seu direito CJA. Para outros intervalos, não há número máximo de públicos-alvo.</li></ul> |
    | Data de expiração | Quando o público-alvo parará de ser atualizado. O padrão é 1 ano a partir da data de criação. Públicos que expiram são tratados de forma semelhante aos relatórios agendados que expiram - o administrador recebe um email um mês antes de o público expirar. |
    | Atualizar janela de retrospectiva | Especifica até que ponto você deseja voltar na janela de dados ao criar esse público-alvo. O máximo é de 90 dias. |
    | [!UICONTROL Intervalo de datas único] | Intervalo de datas quando você deseja que o público-alvo único seja publicado. |
@@ -86,11 +86,6 @@ Você pode visualizar públicos-alvo do CJA na Platform acessando **[!UICONTROL 
 Você pode arrastar os públicos-alvo do CJA para a definição de segmentos do AEP.
 
 ![](assets/audiences-aep.png)
-
-Se optar por exportar esse público para o lago de dados da AEP, ele aparecerá como um conjunto de dados em conformidade com a Classe de esquema de perfil individual do XDM:
-
-![](assets/aep-datalake.png)
-
 
 ## Próximas etapas
 
