@@ -3,13 +3,13 @@ title: Visão geral das conexões CJA
 description: Saiba mais sobre conexões no Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: b164a78cd55a885c8dd724a448dcbe9ecdbcfff8
+exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
+source-git-commit: 82e4629583ef0aadeac098101d7429625470d8b8
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Visão geral das conexões
 
@@ -27,6 +27,7 @@ Adobe Experience Platform:
 * Modelagem de dados: Exibir esquemas, Gerenciar esquemas
 * Gerenciamento de dados: exibir conjuntos de dados, gerenciar conjuntos de dados
 * Assimilação de dados: Gerenciar fontes
+* Exibir namespaces de identidade
 
 Customer Journey Analytics
 * Acesso do administrador do produto
@@ -34,4 +35,3 @@ Customer Journey Analytics
 >[!IMPORTANT]
 >
 >É possível combinar vários conjuntos de dados do [!DNL Experience Platform] em uma única conexão.
-
