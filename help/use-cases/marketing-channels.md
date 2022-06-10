@@ -5,9 +5,9 @@ exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '955'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Se sua organização usar o [Conector de dados do Analytics](https://experiencel
 
 ## Pré-requisitos
 
-* Os dados do conjunto de relatórios já devem ser importados para a Adobe Experience Platform usando o [Conector de dados do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Outras fontes de dados não são suportadas, pois os canais de marketing dependem das regras de processamento em um conjunto de relatórios do Analytics.
+* Os dados do conjunto de relatórios já devem ser importados para a Adobe Experience Platform usando o [Conector de dados do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). Outras fontes de dados não são suportadas, pois os canais de marketing dependem das regras de processamento em um conjunto de relatórios do Analytics.
 * As regras de processamento do canal de marketing já devem estar configuradas. Consulte [Regras de processamento para Canais de marketing](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/c-rules.html?lang=pt-BR) no guia tradicional Componentes do Analytics.
 
 ## Elementos do esquema do Canal de marketing
@@ -45,7 +45,7 @@ Suas dimensões do canal de marketing agora estão disponíveis para uso no Anal
 
 As configurações do canal de marketing operam de forma diferente entre os dados da Plataforma e os dados do conjunto de relatórios. Considere as seguintes diferenças ao configurar canais de marketing para o CJA:
 
-* **É a primeira página da visita**: esses critérios de regra são comuns em várias definições de canal de marketing padrão. Qualquer regra de processamento que contenha esse critério é ignorada na Plataforma (outros critérios na mesma regra ainda se aplicam). As sessões são determinadas no momento da consulta de dados, em vez de no momento da coleção de dados, impedindo a Plataforma de usar esse critério de regra específico. O Adobe recomenda reavaliar qualquer regra de processamento de canal de marketing contendo o critério &quot;É a primeira página da visita&quot;, optando por abordagens alternativas que atinjam suas metas.
+* **É a primeira página da visita**: esses critérios de regra são comuns em várias definições de canal de marketing padrão. Qualquer regra de processamento que contenha esse critério é ignorada na Plataforma (outros critérios na mesma regra ainda se aplicam). As sessões são determinadas no momento da consulta de dados, em vez de no momento da coleção de dados, impedindo a Plataforma de usar esse critério de regra específico. A Adobe recomenda reavaliar quaisquer regras de processamento de canal de marketing que contenham os critérios “É a primeira página da visita”, optando por abordagens alternativas que atinjam seus objetivos.
 
    ![Primeira página da visita](assets/first-page-of-visit.png)
 
@@ -66,5 +66,5 @@ Como a arquitetura da Adobe Experience Platform é diferente de um conjunto de r
 * Verifique se as diferenças de arquitetura listadas acima não afetam sua comparação. Isso inclui a remoção de canais que não substituem o canal de último contato e a remoção de critérios de regras que são o primeiro hit de uma visita (sessão).
 * Verifique se sua conexão usa o mesmo conjunto de relatórios que o Analytics tradicional. Se sua conexão com o CJA contiver vários conjuntos de relatórios com suas próprias regras de processamento do Canal de marketing, não haverá uma maneira fácil de compará-los com o Analytics tradicional. Você gostaria de criar uma conexão separada para cada conjunto de relatórios para comparar os dados.
 * Compare os mesmos intervalos de datas e verifique se a configuração de fuso horário na visualização de dados é a mesma do fuso horário do conjunto de relatórios.
-* Use um modelo de atribuição personalizado ao exibir dados do conjunto de relatórios. Por exemplo, use a dimensão [Canal de marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) com métricas que usam um modelo de atribuição não padrão. A Adobe recomenda não comparar as dimensões padrão [Canal de primeiro contato](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=pt-BR) ou [Canal de último contato](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=pt-BR), pois dependem da atribuição coletada no conjunto de relatórios. O CJA não depende dos dados de atribuição de um conjunto de relatórios; em vez disso, eles são calculados quando um relatório do CJA é executado.
+* Use um modelo de atribuição personalizado ao exibir dados do conjunto de relatórios. Por exemplo, use a dimensão [Canal de marketing](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=pt-BR) com métricas que usam um modelo de atribuição não padrão. A Adobe recomenda não comparar as dimensões padrão [Canal de primeiro contato](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=pt-BR) ou [Canal de último contato](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=pt-BR), pois dependem da atribuição coletada no conjunto de relatórios. O CJA não depende dos dados de atribuição de um conjunto de relatórios; em vez disso, eles são calculados quando um relatório do CJA é executado.
 * Algumas métricas não têm uma comparação razoável devido a diferenças arquitetônicas entre os dados do conjunto de relatórios e os dados da plataforma. Os exemplos incluem visitas/sessões, visitantes/pessoas e ocorrências/eventos.
