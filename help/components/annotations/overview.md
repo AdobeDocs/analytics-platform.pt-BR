@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Components
 exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
 source-git-commit: 4940f26c6c3b0b1f8baf0d715f4190c7f0f40efa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Lembre-se:
 
 Por padrão, somente administradores podem criar anotações. Os usuários têm o direito de visualizar anotações da mesma forma que fazem com outros componentes do Analytics (como segmentos, métricas calculadas etc.).
 
-No entanto, os administradores podem fornecer a permissão [!UICONTROL Criação de anotações] (Ferramentas do Analytics) para usuários por meio do [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
+No entanto, os administradores podem fornecer a permissão [!UICONTROL Criação de anotações] (Ferramentas do Analytics) para usuários por meio do [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=pt-BR).
 
 ## Ativar ou desativar anotações
 
