@@ -1,15 +1,15 @@
 ---
-title: Filtrar Dimension no Customer Journey Analytics
-description: Descreve como usar dimensões de filtro no Report Builder para CJA
+title: Filtrar dimensões no Customer Journey Analytics
+description: Descreve como usar dimensões de filtros no Report Builder para o CJA
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
 source-git-commit: 39a399f5267b37548d4e757140268d6f104370b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '916'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ A tabela abaixo lista exemplos de valores de página e linha e a saída resultan
 | Página | Linha | Saída |
 |------|--------|----------------------|
 | 1 | 10 | 10 itens principais |
-| 2 | 10º | Itens 11-20 |
+| 2 | 10 | Itens 11-20 |
 | 1 | 100 | 100 itens principais |
 | 2 | 100 | Itens 101-200 |
 | 2 | 50.000 | Itens 50.001-100.000 |
@@ -159,7 +159,7 @@ A opção Específico permite criar uma lista fixa de itens de dimensão para ca
 
 ### A partir de intervalo de células
 
-Selecione a opção **A partir de intevalo de células** para escolher um intervalo de células que contenha a lista de itens de dimensões a serem correspondidos.
+Selecione a opção **A partir de intervalo de células** para escolher um intervalo de células que contenha a lista de itens de dimensões a serem correspondidos.
 
 ![](./assets/image37.png)
 
