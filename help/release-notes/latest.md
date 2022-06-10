@@ -3,31 +3,28 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 23258f85ae62375f498d7ac3a7ee24cc139a22a8
+source-git-commit: 74c93b9327b1c7081c461187d53b1b27a686cfdd
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 95%
+source-wordcount: '211'
+ht-degree: 16%
 
 ---
 
-# Notas de versão atuais do Customer Journey Analytics (CJA) (maio de 2022)
+# Notas de versão do Customer Journey Analytics atual (CJA) (junho de 2022)
 
-**Última atualização**: 19 de maio de 2022
+**Última atualização**: 10 de junho de 2022
 
 ## Recursos principais
 
 | Recurso | Descrição | [Data Alvo](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Nova interface de edição e criação de conexão | Essa experiência simplificada permite preencher dados no nível do conjunto de dados, habilitar uma janela de retenção de dados contínua, adicionar e remover conjuntos de dados de uma conexão. [Saiba mais](/help/connections/create-connection.md) | 18 de maio de 2022 |
-| Atualizações do Report Builder para o CJA | Inclui recursos como agendamento e gerenciador de blocos de dados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) | 18 de maio de 2022 |
-| Integração da IA do cliente | Permite assimilar pontuações de modelos de IA do cliente no CJA para análise adicional no CJA Analysis Workspace. Saiba mais - em breve | TBD |
-| Integração da IA de atribuição | Permite assimilar as pontuações dos modelos de IA de atribuição no CJA para análise adicional no CJA Analysis Workspace. Saiba mais - em breve | TBD |
+| Publicação de público-alvo no perfil do cliente em tempo real | Permite publicar públicos descobertos no CJA para AEP/RTCDP para direcionamento e personalização de clientes. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en) | 15 de junho de 2022 |
+| Nova interface do usuário de visualização de fluxo | Fornece funcionalidades adicionais para nossa visualização de Fluxo para torná-la mais poderosa e capaz. Saiba mais (a seguir) | 15 de junho de 2022 |
+| Suporte para campos numéricos como chaves de pesquisa e valores de pesquisa | Útil se você quiser classificar valores de string com um campo numérico, como COGS ou margem em um SKU de produto. Permitir métricas a partir de pesquisas ajuda a colocar esses pontos de dados em relatórios. Saiba mais (a seguir) | 15 de junho de 2022 |
+| Laboratórios do Analytics no CJA | Laboratórios de suporte no CJA, para que você possa explorar protótipos com dados entre canais. [Saiba mais](/help/labs/labs.md) | 15 de junho de 2022 |
+| Compartilhar anotações em scorecards para dispositivos móveis | Você pode exibir anotações criadas no Workspace - nos Scorecards para dispositivos móveis. Isso permite compartilhar nuances de dados contextuais e insights sobre sua organização e campanhas diretamente em projetos do Mobile Scorecard, visualizáveis no aplicativo móvel de painéis do Analytics. Saiba mais (a seguir) | 15 de junho de 2022 |
 
 {style=&quot;table-layout:auto&quot;}
-
-### Correções do CJA
-
-AN-279234; AN-284839; AN-285417
 
 >[!MORELIKETHIS]
 >[Atualizações de documentação do Customer Journey Analytics](/help/release-notes/doc-changes.md)
