@@ -4,9 +4,9 @@ title: Limitações conhecidas do Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +31,13 @@ Veja a seguir uma lista de limitações conhecidas do Analysis Workspace e seus 
 ## Componentes > Filtros
 
 * Algumas métricas e dimensões não são filtráveis, como [!UICONTROL Ocorrências], [!UICONTROL Visitantes únicos], etc.
-* Filtros ad hoc criados na [área de soltar do painel](/help/analysis-workspace/c-panels/panels.md) não aparecerão no painel esquerdo do Workspace ou no gerenciador de componentes do Filtro, a menos que sejam tornados públicos. Isso pode ser feito editando o filtro e selecionando **[!UICONTROL Tornar esse filtro público]**.
+* Filtros ad hoc criados na [zona de destino do painel](/help/analysis-workspace/c-panels/panels.md) não aparecerão no painel esquerdo do Espaço de trabalho ou no Gerenciador de componentes do filtro, a menos que sejam tornados públicos. Isso pode ser feito editando o filtro e selecionando **[!UICONTROL Tornar esse filtro público]**.
 
 ## Componentes > Métricas calculadas
 
 * As Métricas calculadas não podem ser usadas em determinadas visualizações. Consulte o tópico “Visualizações” acima.
 * Métricas calculadas não podem ser usadas no painel [!UICONTROL Atribuição], já que podem incluir modelos de atribuição separados.
-* Alguns componentes e operadores não estarão disponíveis se uma métrica calculada for criada no Workspace (em vez de ser criada a partir de [!UICONTROL Componentes > filtros]). Por exemplo, [!UICONTROL Endereço IP].
+* Alguns componentes e operadores não estarão disponíveis se uma métrica calculada for criada no Espaço de trabalho (em vez de ser criada a partir de [!UICONTROL Componentes > filtros]). Por exemplo, [!UICONTROL Endereço IP].
 
 ## Componentes > Intervalos de datas
 
