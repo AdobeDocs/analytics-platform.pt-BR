@@ -5,9 +5,9 @@ exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1170'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Para obter instruções, assista a este vídeo:
 
 >[!VIDEO](https://video.tv.adobe.com/v/332676)
 
-Você pode mapear os dados do evento GA em um conjunto de dados existente criado anteriormente ou criar um novo usando o esquema XDM escolhido. Depois que você seleciona o esquema, a Experience Platform aplica o aprendizado de máquina para mapear automaticamente cada um dos campos nos dados do Google Analytics para o [esquema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui).
+Você pode mapear os dados do evento GA em um conjunto de dados existente criado anteriormente ou criar um novo usando o esquema XDM escolhido. Depois que você seleciona o esquema, a Experience Platform aplica o aprendizado de máquina para mapear automaticamente cada um dos campos nos dados do Google Analytics para o [esquema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR#ui).
 
 ![](assets/schema-map.png)
 
@@ -141,7 +141,7 @@ Depois que você define essas variáveis personalizadas, podemos configurar um a
 
 Neste exemplo, o acionador &quot;Criação de conta&quot; foi definido, onde o `pageUrl equals account-creation`. Adicionando algumas informações a esse acionador, é possível garantir que, quando o usuário tiver êxito na autenticação e a página de criação de conta for carregada, os dados sejam enviados ao Google Analytics e à AEP.
 
-Também é possível consultar [Assimilação de dados e Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html#module9).
+Também é possível consultar [Assimilação de dados e Google Tag Manager](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module9/data-ingestion-using-google-tag-manager-and-google-analytics.html?lang=pt-BR#module9).
 
 Para obter instruções, assista a este vídeo:
 
@@ -153,6 +153,6 @@ Depois que a Adobe Experience Platform começar a receber os dados do Google Ana
 
 ## Próximas etapas
 
-* Crie uma [visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#cja-dataviews) com base na conexão que contém dados do Google Analytics.
+* Crie uma [visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#cja-dataviews) com base na conexão que contém dados do Google Analytics.
 
 * Faça uma [análise surpreendente no Espaço de trabalho](/help/use-cases/ga-to-cja-reporting.md).
