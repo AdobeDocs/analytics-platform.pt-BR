@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 48cc438032fb1df043b7caf085aadf3f2c2f1ecf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1224'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Fornece configurações abrangentes para a visualização de dados.
 
 ### Contêineres {#containers}
 
-Determina o nome dos containers para a visualização de dados. Os nomes dos contêineres são frequentemente usados em [filtros](/help/components/filters/filters-overview.md#Filter-containers).
+Determina o nome dos containers para a visualização de dados. Os nomes dos containers são usados com frequência em [filtros](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Configuração | Descrição |
 | --- | --- |
@@ -105,7 +105,7 @@ Também é possível filtrar por conjuntos de dados e se um campo de esquema con
 
 ![Filtrar outros](assets/filter-other.png)
 
-## Configurações Guia {#settings-tab}
+## Configurações  Guia {#settings-tab}
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e acesse a guia **[!UICONTROL Visualizações de dados]**.
 1. Clique em **[!UICONTROL Adicionar]** para criar uma visualização de dados ou clique em uma visualização de dados existente para editá-la.
