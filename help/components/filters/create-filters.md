@@ -5,7 +5,7 @@ exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
 source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Existem vários outros métodos para aplicar os filtros a um projeto:
 
 | Ação | Descrição |
 | --- | --- |
-| Criar filtro a partir da seleção | Criar um filtro em linha. Esse filtro se aplica somente ao projeto aberto e não é salvo como um filtro CJA.<p> 1. Selecione quais linhas da tabela você deseja fazer parte do filtro.  2. Clique com o botão direito na seleção.  3. Clique em *Criar filtro a partir da seleção*. |
+| Criar filtro a partir da seleção | Criar um filtro em linha. Este filtro se aplica somente ao projeto aberto e não é salvo como um filtro do CJA.<p> 1. Selecione quais linhas da tabela você deseja que faça parte do filtro.  2. Clique com o botão direito na seleção.  3. Clique em *Criar filtro a partir da seleção*. |
 | Workspace [!UICONTROL Componentes] > [!UICONTROL Novo filtro] | Exibe o Construtor de filtros. Consulte [Construtor de filtros](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=pt-BR) para obter mais informações sobre filtragem. |
 | Compartilhar > Compartilhar projeto ou compartilhar > Preparar dados do projeto | Em [Preparar e compartilhar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=pt-BR#concept_4A9726927E7C44AFA260E2BB2721AFC6) aprenda como os filtros que você aplica ao projeto estão disponíveis na análise compartilhada para o recipient. |
 | Usar filtros como dimensões | Veja o vídeo abaixo: Usar filtros como Dimension no Analysis Workspace |

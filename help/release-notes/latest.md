@@ -6,11 +6,11 @@ feature: Release Notes
 source-git-commit: 23258f85ae62375f498d7ac3a7ee24cc139a22a8
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 26%
+ht-degree: 95%
 
 ---
 
-# Notas de versão do Customer Journey Analytics atual (CJA) (maio de 2022)
+# Notas de versão atuais do Customer Journey Analytics (CJA) (maio de 2022)
 
 **Última atualização**: 19 de maio de 2022
 
@@ -18,10 +18,10 @@ ht-degree: 26%
 
 | Recurso | Descrição | [Data Alvo](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| Nova interface de edição e criação de conexão | Essa experiência simplificada permite o preenchimento retroativo de dados no nível do conjunto de dados, ativar uma janela rolante de retenção de dados, adicionar e remover conjuntos de dados de uma conexão. [Saiba mais](/help/connections/create-connection.md) | 18 de maio de 2022 |
-| Report Builder para atualizações do CJA | Inclui recursos como agendamento e gerenciador de blocos de dados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) | 18 de maio de 2022 |
-| Integração do Customer AI | Permite assimilar pontuações de modelos do Customer AI no CJA para análise adicional na área de trabalho da Análise do CJA. Saiba mais - em breve | TBD |
-| Integração do Attribution AI | Permite assimilar as pontuações dos modelos de Attribution AI no CJA para análise adicional na área de trabalho da Análise do CJA. Saiba mais - em breve | TBD |
+| Nova interface de edição e criação de conexão | Essa experiência simplificada permite preencher dados no nível do conjunto de dados, habilitar uma janela de retenção de dados contínua, adicionar e remover conjuntos de dados de uma conexão. [Saiba mais](/help/connections/create-connection.md) | 18 de maio de 2022 |
+| Atualizações do Report Builder para o CJA | Inclui recursos como agendamento e gerenciador de blocos de dados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) | 18 de maio de 2022 |
+| Integração da IA do cliente | Permite assimilar pontuações de modelos de IA do cliente no CJA para análise adicional no CJA Analysis Workspace. Saiba mais - em breve | TBD |
+| Integração da IA de atribuição | Permite assimilar as pontuações dos modelos de IA de atribuição no CJA para análise adicional no CJA Analysis Workspace. Saiba mais - em breve | TBD |
 
 {style=&quot;table-layout:auto&quot;}
 

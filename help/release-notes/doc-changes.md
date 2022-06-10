@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 17e89d7cfeddff831e34fc441ee17de8b1c3fe21
 workflow-type: tm+mt
 source-wordcount: '788'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -21,11 +21,11 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Maio de 2022 | Novo artigo sobre a integração do CJA com o Attribution AI (link a ser seguido) no Adobe Experience Platform. |
 | Maio de 2022 | Novo artigo sobre a integração do CJA com o Customer AI no Adobe Experience Platform (link a seguir). |
 | Maio de 2022 | Novo artigo sobre como [gerenciar blocos de dados no Report Builder CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html) |
-| Maio de 2022 | Novo artigo em [assimilação de públicos da Adobe Experience Platform no CJA](/help/use-cases/ingest-aep-segments.md) |
+| Maio de 2022 | Novo artigo sobre [Assimilação de públicos-alvo da Adobe Experience Platform no CJA](/help/use-cases/ingest-aep-segments.md) |
 | Abril de 2022 | Documentação sobre [substrings de dimensão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/substring.html?lang=pt-BR). |
 | Abril de 2022 | Novo [Guia do usuário do CJA para usuários do Adobe Analytics](/help/getting-started/aa-to-cja-user.md). |
 | Março de 2022 | Nova [Documentação da API de anotações do CJA](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/). |
-| Março de 2022 | Nova documentação sobre [Anoações no Espaço de trabalho](/help/components/annotations/overview.md). |
+| Março de 2022 | Nova documentação sobre [Anotações no Espaço de trabalho](/help/components/annotations/overview.md). |
 | Março de 2022 | Conteúdo com muitas atualizações sobre [estimativa do tamanho da conexão](/help/getting-started/cja-faq.md). |
 | Fevereiro de 2022 | [ Evolução do Adobe Analytics para o Customer Journey Analytics ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=pt-BR) |
 | Janeiro de 2022 | Novo caso de uso para o [Uso de dimensões e métricas de ligação no CJA](/help/use-cases/binding-dimensions-metrics.md) |

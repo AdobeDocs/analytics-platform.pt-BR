@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -44,9 +44,9 @@ ht-degree: 97%
    + [Conjuntos de dados de evento combinados](connections/combined-dataset.md)
    + [Pesquisas padrão](connections/standard-lookups.md)
    + Cross-Channel Analytics {#cca}
-      + [Visão geral da Cross-Channel Analytics](connections/cca/overview.md)
+      + [Visão geral do Cross-Channel Analytics](connections/cca/overview.md)
       + [Como funcionam as repetições](connections/cca/replay.md)
-      + [Perguntas frequentes sobre a Cross-Channel Analytics](connections/cca/faq.md)
+      + [Perguntas frequentes sobre o Cross-Channel Analytics](connections/cca/faq.md)
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das visualizações de dados](data-views/data-views.md)
    + [Criar ou editar uma visualização de dados](data-views/create-dataview.md)
@@ -63,7 +63,7 @@ ht-degree: 97%
       + [Classificação de valor](data-views/component-settings/value-bucketing.md)
    + [Referência de componente padrão](data-views/component-reference.md)
    + [Casos de uso de visualizações de dados](data-views/data-views-usecases.md)
-+ Projetos do Workspace {#cja-workspace}
++ Projetos do Espaço de trabalho {#cja-workspace}
    + [Visão geral do Analysis Workspace](analysis-workspace/home.md)
    + [Realizar análise básica](analysis-workspace/perform-basic-analysis.md)
    + [Realizar análise avançada](analysis-workspace/perform-adv-analysis.md)
@@ -217,7 +217,7 @@ ht-degree: 97%
    + [Uso de dimensões e métricas de ligação](use-cases/binding-dimensions-metrics.md)
    + [(B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa](use-cases/b2b.md)
    + [Assimilar dados do Marketo Engage na AEP e relatórios no CJA](use-cases/marketo.md)
-   + [Assimilar públicos da AEP no CJA](use-cases/ingest-aep-segments.md)
+   + [Assimilar públicos-alvo do AEP no CJA](use-cases/ingest-aep-segments.md)
    + [Analisar dados entre canais](use-cases/cross-channel.md)
    + [Importação de dados da central de atendimento e da Web](use-cases/call-center.md)
    + [Casos de uso da assimilação de dados](use-cases/data-ingestion.md)

@@ -7,7 +7,7 @@ feature: Connections
 source-git-commit: 90480aa725e75d8b8315c4cebcd9a2fd9cfe8823
 workflow-type: tm+mt
 source-wordcount: '2319'
-ht-degree: 63%
+ht-degree: 88%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 63%
 
 Um novo workflow de Conexões foi iniciado recentemente no Customer Journey Analytics (CJA). A nova experiência de criação e edição de conexão do fluxo de trabalho traz todas as configurações do conjunto de dados e da conexão para o centro da tela com o fluxo de trabalho de assistência.  Fornecemos seleção, configuração e experiência de revisão detalhadas do conjunto de dados com informações críticas como tipo de conjunto de dados, tamanho, esquema, ID do conjunto de dados, status do lote, status de preenchimento retroativo, IDs de pessoa e muito mais para reduzir o risco de configuração de conexão incorreta. Esta é uma visão geral dos novos recursos:
 
-* Você pode ativar uma janela rolante de retenção de dados ao criar a conexão.
+* Você pode habilitar uma janela de retenção de dados sem interrupção ao criar a conexão.
 * Você pode adicionar e remover conjuntos de dados de uma conexão. (A remoção de um conjunto de dados o remove da conexão e afeta qualquer visualização de dados associada e projetos subjacentes do Analysis Workspace.)
 * Você pode ativar e solicitar dados de preenchimento retroativo por conjunto de dados.
 * É possível editar conjuntos de dados, por exemplo, para solicitar outro preenchimento retroativo.
@@ -25,7 +25,7 @@ Um novo workflow de Conexões foi iniciado recentemente no Customer Journey Anal
 
 ## Criar e configurar a conexão {#create-connection}
 
-1. No CJA, clique no botão **[!UICONTROL Conexões]** guia .
+1. No CJA, clique na guia **[!UICONTROL Conexões]**.
 1. Clique em **[!UICONTROL Criar nova conexão]**.
 
    ![Configurações de conexão](assets/create-conn1.png)
@@ -36,14 +36,14 @@ Um novo workflow de Conexões foi iniciado recentemente no Customer Journey Anal
    | --- | --- |
    | **[!UICONTROL Nome da conexão]** | Digite um nome exclusivo para a conexão. |
    | **[!UICONTROL Descrição da conexão]** | Descreva a finalidade desta conexão. |
-   | **[!UICONTROL Sandbox]** | Escolha uma sandbox na Experience Platform que contenha os conjuntos de dados para os quais você deseja criar uma conexão.<p>A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=pt-BR) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Pense em sandboxes como &quot;silos de dados&quot; que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.<p>Depois de selecionar a sandbox, o painel esquerdo mostra todos os conjuntos de dados que você pode obter dela. |
-   | **[!UICONTROL Ativar janela de dados contínuos]** | Essa caixa de seleção, se marcada, permite definir a retenção de dados CJA como uma janela rolante em meses (1 mês, 3 meses, 6 meses, etc.), no nível da conexão.<p>A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe nenhuma configuração da janela de dados do acumulado para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data e hora aplicáveis. No entanto, se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa (além de um ou mais conjuntos de dados de evento), esses dados serão retidos pelo mesmo período de tempo.<p> O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.<p>Se deixar o padrão (desmarcado), o período de retenção será substituído pela configuração de retenção de dados do Adobe Experience Platform . Se você tiver dados correspondentes a 25 meses no Experience Platform, o CJA obterá 25 meses de dados por meio do preenchimento retroativo. Se você excluísse 10 desses meses na Platform, o CJA manteria os 15 meses restantes. |
+   | **[!UICONTROL Sandbox]** | Escolha uma sandbox na Experience Platform que contenha os conjuntos de dados para os quais você deseja criar uma conexão.<p>A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=pt-BR) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Você pode considerar as sandboxes como “silos de dados” que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.<p>Depois de selecionar a sandbox, o painel esquerdo mostra todos os conjuntos de dados que você pode obter dela. |
+   | **[!UICONTROL Ativar janela de dados contínuos]** | Essa caixa de seleção, se marcada, permite definir a retenção de dados CJA como uma janela rolante em meses (1 mês, 3 meses, 6 meses, etc.), no nível da conexão.<p>A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe configuração de janela de dados contínuos para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data/hora aplicáveis. No entanto, se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa (além de um ou mais conjuntos de dados de evento), esses dados serão retidos pelo mesmo período.<p> O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.<p>Se deixar o padrão (desmarcado), o período de retenção será substituído pela configuração de retenção de dados do Adobe Experience Platform . Se você tiver dados correspondentes a 25 meses no Experience Platform, o CJA obterá 25 meses de dados por meio do preenchimento retroativo. Se você excluísse 10 desses meses na Platform, o CJA manteria os 15 meses restantes. |
    | **[!UICONTROL Adicionar conjuntos de dados]** (veja abaixo) | Adicione conjuntos de dados se nenhum conjunto de dados for exibido na lista do conjunto de dados. |
    | **[!UICONTROL Nome do conjunto de dados]** | Selecione um ou mais conjuntos de dados que você deseja transferir para o Customer Journey Analytics e clique em **[!UICONTROL Adicionar]**.<p>(Se tiver vários conjuntos de dados, você poderá pesquisar os corretos usando a barra de pesquisa Pesquisar conjuntos de dados acima da lista de conjuntos de dados.) |
-   | **[!UICONTROL Última atualização]** | Somente para conjuntos de dados de eventos, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão a partir de esquemas baseados em eventos no Experience Platform. &quot;N/A&quot; significa que esse conjunto de dados não contém dados. |
-   | **[!UICONTROL Esquema]** | Este é o [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) com base no qual o conjunto de dados foi criado no Adobe Experience Platform. |
+   | **[!UICONTROL Última atualização]** | Somente para conjuntos de dados de eventos, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão em esquemas baseados em eventos na Experience Platform. “N/A” significa que esse conjunto de dados não contém dados. |
+   | **[!UICONTROL Esquema]** | É o [esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=pt-BR) que foi usado como base para criar o conjunto de dados na Adobe Experience Platform. |
    | **[!UICONTROL Tipo de conjunto de dados]** | Para cada conjunto de dados adicionado a essa conexão, o Customer Journey Analytics define automaticamente o tipo de conjunto de dados de acordo com os dados recebidos. Há 3 tipos diferentes de conjunto de dados: dados de Evento, dados de Perfil e dados de Pesquisa. Consulte a tabela abaixo para obter uma explicação dos tipos de conjunto de dados. |
-   | **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte abaixo para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>IMPORTANTE: Se não houver IDs de pessoa para escolher, significa que uma ou mais IDs de pessoa não foram definidas no esquema. Assista a [este vídeo](https://www.youtube.com/watch?v=G_ttmGl_LRU) sobre como definir uma identidade na Experience Platform. |
+   | **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte abaixo para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>IMPORTANTE: se não houver IDs de pessoa para escolher, significa que uma ou mais IDs de pessoa não foram definidas no esquema. Assista a [este vídeo](https://www.youtube.com/watch?v=G_ttmGl_LRU) sobre como definir uma identidade na Experience Platform. |
    | **[!UICONTROL Chave]** | Somente para conjuntos de dados de pesquisa (como _id). |
    | **[!UICONTROL Chave correspondente]** | Somente para conjuntos de dados de pesquisa (como _id). |
    | **[!UICONTROL Importar novos dados]** | Defina como Ligado ou Desligado. |
@@ -54,7 +54,7 @@ Um novo workflow de Conexões foi iniciado recentemente no Customer Journey Anal
 
 ## Adicionar e configurar conjuntos de dados {#add-dataset}
 
-O novo workflow permite adicionar um conjunto de dados Experience Platform ao criar uma conexão.
+O novo fluxo de trabalho permite adicionar um conjunto de dados da Experience Platform ao criar uma conexão.
 
 1. Na caixa de diálogo Configurações de conexão, clique em **[!UICONTROL Adicionar conjuntos de dados]**.
 1. Selecione um ou mais conjuntos de dados e clique em **[!UICONTROL Próximo]**.
@@ -67,14 +67,14 @@ O novo workflow permite adicionar um conjunto de dados Experience Platform ao cr
    | Configuração | Descrição |
    | --- | --- |
    | **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte abaixo para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>Se não houver IDs de pessoa para escolher, significa que uma ou mais IDs de pessoa não foram definidas no esquema. Assista a este vídeo sobre como definir uma identidade na Experience Platform. |
-   | **[!UICONTROL Carimbo de data e hora]** | Somente para conjuntos de dados de eventos, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão a partir de esquemas baseados em eventos no Experience Platform. |
+   | **[!UICONTROL Carimbo de data e hora]** | Somente para conjuntos de dados de eventos, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão em esquemas baseados em eventos na Experience Platform. |
    | **[!UICONTROL Importar novos dados]** | Selecione essa opção se quiser estabelecer uma conexão contínua, para que qualquer novo lote de dados adicionado aos conjuntos de dados nesta conexão continuem automaticamente fluindo para o Espaço de trabalho. Pode ser definido como Ligado ou Desligado. |
    | **[!UICONTROL Preenchimento retroativo do conjunto de dados]** | Clique em **[!UICONTROL Solicitar preenchimento retroativo]** para preencher dados históricos.<ul><li>Você pode preencher cada conjunto de dados individualmente.</li><li>Priorizamos novos dados adicionados a um conjunto de dados na conexão, de modo que esses dados tenham a latência mais baixa.</li><li>Qualquer dado de preenchimento retroativo (histórico) é importado em uma taxa mais lenta. A latência é influenciada pela quantidade de dados históricos que você tem.</li><li>O Conector de origem do Adobe Analytics importa até 13 meses de dados, independentemente do tamanho.</li></ul> |
-   | **[!UICONTROL Status de preenchimento retroativo]** | Os possíveis indicadores de status são:<ul><li>Sucesso</li><li>Processamento de X preenchimento retroativo</li><li>Desligado</li></ul> |
+   | **[!UICONTROL Status de preenchimento retroativo]** | Os possíveis indicadores de status são:<ul><li>Sucesso</li><li>Processamento de X preenchimentos retroativos</li><li>Desligado</li></ul> |
    | **[!UICONTROL ID do conjunto de dados]** | Essa ID é gerada automaticamente. |
    | **[!UICONTROL Descrição]** | A descrição fornecida para esse conjunto de dados quando ele foi criado. |
    | **[!UICONTROL Tamanho do conjunto de dados]** | O tamanho do conjunto de dados. |
-   | **[!UICONTROL Esquema]** | Este é o esquema com base no qual o conjunto de dados foi criado no Adobe Experience Platform. |
+   | **[!UICONTROL Esquema]** | É o esquema que foi usado como base para criar o conjunto de dados na Adobe Experience Platform. |
    | **[!UICONTROL Conjunto de dados]** | O nome do conjunto de dados. |
    | **[!UICONTROL Visualizar]**: `<dataset name>` | Pré-visualiza o conjunto de dados com colunas de data, ID e Identificador. |
    | **[!UICONTROL Remover]** | Você pode excluir ou remover o conjunto de dados e alterar a ID de pessoa sem excluir toda a conexão. Isso reduz os custos envolvidos na assimilação de dados e o complicado processo de recriação de toda a conexão e visualizações de dados associadas. |
@@ -83,15 +83,15 @@ O novo workflow permite adicionar um conjunto de dados Experience Platform ao cr
 
 ## Visualização da conexão {#preview}
 
-Para visualizar a conexão criada, clique em **[!UICONTROL Visualização da conexão]** na caixa de diálogo Connection settings .
+Para visualizar a conexão criada, clique em **[!UICONTROL Visualização da conexão]** na caixa de diálogo de configurações da conexão.
 
 ![Visualização da conexão](assets/create-conn4.png)
 
-Esta visualização contém várias colunas listando a configuração da conexão. Os tipos de colunas são mostrados dependem dos conjuntos de dados individuais.
+Esta visualização contém várias colunas listando a configuração da conexão. Os tipos de colunas mostrados dependem dos conjuntos de dados individuais.
 
 ## Tipos de conjunto de dados {#dataset-types}
 
-Para cada conjunto de dados adicionado a essa conexão, [!UICONTROL Customer Journey Analytics] define automaticamente o tipo de conjunto de dados com base nos dados recebidos.
+Para cada conjunto de dados adicionado a essa conexão, o [!UICONTROL Customer Journey Analytics] define automaticamente o tipo de conjunto de dados de acordo com os dados recebidos.
 
 >[!IMPORTANT]
 >
