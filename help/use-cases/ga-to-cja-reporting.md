@@ -5,9 +5,9 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '807'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Agora vamos ver quais páginas de site determinaram as chamadas recebidas na cen
 Fazemos isso ao
 
 * Usar uma métrica calculada para filtrar os dados somente para sessões que terminaram com uma chamada para a central de atendimento.
-* Uso do modelo de &quot;participação&quot; no [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html#cja-workspace) do CJA.
+* Uso do modelo de &quot;participação&quot; no [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=pt-BR#cja-workspace) do CJA.
 
 Você pode ver com facilidade quais páginas participam com mais frequência em uma sessão que termina em uma chamada. Você pode ver que as páginas &quot;Carrinho de compras&quot; e &quot;Informações de check-out&quot; determinaram a maioria das chamadas. Como também incluiu os dados do aplicativo móvel Firebase, você pode até ver erros de página e falhas do aplicativo que geram as chamadas. Esse é um ponto de dados muito importante se você quer oferecer excelentes experiências na web e no aplicativo móvel.
 
