@@ -30,7 +30,7 @@ Exemplos de identidades podem ser uma ID do cliente, ID da conta ou ID de email.
 * A ID não contém PII. Aplique hash a qualquer item que possa ser sensível.
 * A ID usa o mesmo formato em todas as fontes (mesmo comprimento, mesmo método de hash etc.)
 
-Em conjuntos de dados como o Adobe Analytics, uma identidade pode não existir em todas as linhas de dados, mas uma identidade secundária sim. Nesse caso, a Cross-Channel Analytics (anteriormente conhecida como &quot;Configuração em campo&quot;) pode ser usada para preencher a lacuna entre linhas, quando um cliente é identificado apenas pela ECID e quando uma identidade é coletada (por exemplo, quando um cliente é autenticado). [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR)
+Em conjuntos de dados como o Adobe Analytics, uma identidade pode não existir em todas as linhas de dados, mas uma identidade secundária sim. Nesse caso, o Cross-Channel Analytics (anteriormente conhecida como &quot;Configuração em campo&quot;) pode ser usada para preencher a lacuna entre linhas, quando um cliente é identificado apenas pela ECID e quando uma identidade é coletada (por exemplo, quando um cliente é autenticado). [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR)
 
 ### 2. Alinhar suas variáveis {#variables}
 
