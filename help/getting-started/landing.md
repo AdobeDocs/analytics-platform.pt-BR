@@ -31,7 +31,7 @@ Depois de fazer logon na Adobe Experience Cloud e no Customer Journey Analytics,
 
 ## Navegue até a guia [!UICONTROL Projetos] {#navigate-projects}
 
-[!UICONTROL Os projetos] servem como página inicial do [!UICONTROL Workspace]. Qualquer projeto do Workspace é exibido aqui, incluindo scorecards para dispositivos móveis. **[!UICONTROL Projetos]** são itens que você criou ou que outra pessoa criou e compartilhou com você. [!UICONTROL Projetos] também se refere a projetos em branco e scorecards para dispositivos móveis em branco.
+[!UICONTROL Os projetos] servem como página inicial do [!UICONTROL Espaço de trabalho]. Qualquer projeto do Espaço de trabalho é exibido aqui, incluindo scorecards para dispositivos móveis. **[!UICONTROL Projetos]** são itens que você criou ou que outra pessoa criou e compartilhou com você. [!UICONTROL Projetos] também se refere a projetos em branco e scorecards para dispositivos móveis em branco.
 
 >[!NOTE]
 >
@@ -42,9 +42,9 @@ Depois de fazer logon na Adobe Experience Cloud e no Customer Journey Analytics,
 | ... Mais | Permite [!UICONTROL Exibir Tutoriais] e [Editar preferências de usuário](/help/analysis-workspace/user-preferences.md). |
 | O modal **[!UICONTROL Criar novo]** está de volta | Ao clicar em **[!UICONTROL Criar novo]** no Espaço de trabalho, você novamente terá a escolha entre um [!UICONTROL Projeto em branco] e um [!UICONTROL Cartão de pontuação para dispositivos móveis em branco]. Você também pode escolher qualquer modelo criado por sua empresa. |
 | [!UICONTROL Mostrar menos/mais] | Alterna entre não mostrar e mostrar o banner: ![Banner principal](assets/top-banner.png) |
-| [!UICONTROL Projeto em branco] | Cria um [projeto do Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR) em branco para que você o preencha. |
+| [!UICONTROL Projeto em branco] | Cria um [projeto do Espaço de trabalho](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR) em branco para que você o preencha. |
 | [!UICONTROL Cartão de pontuação para dispositivos móveis em branco] | Cria um [cartão de pontuação móvel](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=pt-BR) em branco para que você o preencha. |
-| [!UICONTROL Abrir tutorial de treinamento] | Abre o tutorial de treinamento do Workspace que orienta novos usuários por meio da criação de um projeto passo a passo. |
+| [!UICONTROL Abrir tutorial de treinamento] | Abre o tutorial de treinamento do Espaço de trabalho que orienta novos usuários por meio da criação de um projeto passo a passo. |
 | [!UICONTROL Abrir notas de versão] | Abre as notas de versão mais recentes do Adobe Experience Cloud. |
 | Ícone Filtrar | Você pode filtrar por tags, conjuntos de relatórios, proprietários, tipos e outros filtros (Meus, Compartilhados comigo, Favoritos e Aprovados) |
 | Barra de pesquisa | A pesquisa agora inclui todas as colunas na tabela. |
@@ -53,7 +53,7 @@ Depois de fazer logon na Adobe Experience Cloud e no Customer Journey Analytics,
 | [!UICONTROL Nome] | O nome do projeto. |
 | Ícone Informações (i) | Clicar no ícone de informações mostra as seguintes informações sobre este projeto: Tipo, Função do projeto, Proprietário, Descrição e com quem ele é compartilhado. Também indica quem pode [editar ou duplicar](/help/analysis-workspace/curate-share/share-projects.md) o projeto. |
 | Reticências (...) | As reticências ao lado de um projeto exibem as ações de gerenciamento de projeto que você pode executar: Excluir, Marcar, Fixar, Aprovar, Compartilhar, Renomear, Copiar e Exportar para CSV. Observe que talvez você não tenha permissões para executar todas essas ações. |
-| [!UICONTROL Tipo] | Indica se é um projeto do Workspace ou um cartão de pontuação móvel. |
+| [!UICONTROL Tipo] | Indica se é um projeto do Espaço de trabalho ou um cartão de pontuação móvel. |
 | [!UICONTROL Tags] | Você pode adicionar tags aos relatórios para organizá-los em grupos. |
 | [!UICONTROL Função do projeto] | As funções de projeto se referem ao proprietário do projeto e se você tem permissões para Editar ou Duplicar o projeto. |
 | [!UICONTROL Visualização de dados] | Tabelas e visualizações em um painel derivam dados da visualizações de dados selecionada na parte superior direita do painel. A visualizações de dados também determina quais componentes estão disponíveis no painel esquerdo. Em um projeto, você pode usar uma ou várias visualizações de dados dependendo dos casos de uso da análise. A lista de visualizações de dados é classificada de acordo com a relevância. A Adobe define a relevância com base na recente e frequente utilização da visualizações de dados pelo usuário atual e na frequência com que a visualizações de dados é usada na organização. |
@@ -72,7 +72,7 @@ Depois de fazer logon na Adobe Experience Cloud e no Customer Journey Analytics,
 
 A página Aprendizado contém tutoriais e visitas de vídeo práticos, além de links para a documentação.
 
-* O Tour [!UICONTROL Fundamentos do Workspace] leva você diretamente para o Workspace, o orienta no layout do Workspace e indica onde encontrar/executar as ações mais comuns. Esse Tour também pode ser reiniciado a qualquer momento diretamente no Workspace por meio do pop-over da dica de ferramenta do cabeçalho do painel.
+* O Tour [!UICONTROL Fundamentos do Espaço de trabalho] leva você diretamente para o Espaço de trabalho, o orienta no layout do Espaço de trabalho e indica onde encontrar/executar as ações mais comuns. Esse Tour também pode ser reiniciado a qualquer momento diretamente no Espaço de trabalho por meio do pop-over da dica de ferramenta do cabeçalho do painel.
 * Clicar em um vídeo/tour adiciona uma tag **[!UICONTROL Visualizada]**. Essa tag ajuda a rastrear o progresso pelo conteúdo de aprendizagem. Caso ainda não tenha concluído o conteúdo, você poderá clicar na tag, e ela desaparecerá.
 * O botão **[!UICONTROL Saiba mais]** no modal de vídeo leva você a uma página de documentação do Adobe Experience League com mais conteúdo de ajuda relacionado ao vídeo que você acabou de assistir.  **[!UICONTROL Ver mais vídeos]** leva você à lista de reprodução completa do Analysis Workspace YouTube.
 
