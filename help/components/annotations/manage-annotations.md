@@ -5,9 +5,9 @@ role: User, Admin
 feature: Components
 exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
 source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '683'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,19 +48,19 @@ Ambas as opções o direcionam de volta ao Criador de anotações. Lá, é poss�
 
 ## Compartilhar anotações
 
-Ao compartilhar anotações ou trabalhar com anotações que foram compartilhadas com você, lembre-se:
+Ao compartilhar anotações ou trabalhar com anotações compartilhadas com você, lembre-se:
 
 * Digamos que você crie um projeto com anotações somente de projeto e, em seguida, compartilhe o projeto com outro usuário. Essas anotações serão exibidas, mas não poderão ser editadas ou excluídas por ninguém com quem você compartilha o projeto.
 
 * Se você salvar uma anotação e compartilhá-la diretamente com um usuário, ele poderá editar/excluir a anotação somente se tiver direitos de administrador.
 
-* Para recapitular: se o projeto for compartilhado com você, a anotação será exibida somente nesse projeto. Se a anotação for compartilhada diretamente com você, ela será exibida em todos os projetos nos quais pode ser exibida.
+* Para recapitular, se o projeto for compartilhado com você, ele será exibido somente nesse projeto. Se a anotação for compartilhada diretamente com você, ela será exibida em todos os projetos nos quais essa anotação pode ser exibida.
 
 ## Anotações e fusos horários
 
-Todas as anotações são criadas com um carimbo de data e hora, mas nenhuma informação de &quot;hora&quot; ou &quot;fuso horário&quot;. No momento do relatório, o fuso horário da visualização de dados do painel é sempre aplicado. Assim, uma anotação criada para o dia de Natal acontece em 25 de dezembro, independentemente do fuso horário do conjunto de relatórios em que você estiver.
+Todas as anotações são criadas com um carimbo de data e hora, mas nenhuma informação de “hora” ou “fuso horário”. No momento do relatório, o fuso horário da visualização de dados do painel é sempre aplicado. Assim, uma anotação criada para o dia de Natal acontece em 25 de dezembro - independentemente do fuso horário do conjunto de relatórios em que você estiver.
 
-Outro exemplo é o dia de Ano Novo. A cada hora, um fuso horário diferente dispara fogos de artifício conforme o ano novo começa. Às 22h00 no horário das montanhas dos EUA, fogos de artifício estão sendo disparados na costa leste dos EUA, visto que já são 24h00 no horário do leste dos EUA.
+Outro exemplo é o Dia de Ano Novo. A cada hora, um fuso horário diferente dispara fogos de artifício conforme o ano novo começa. Às 22h, Hora das Montanhas dos EUA, a costa leste dos EUA está soltando fogos porque já é meia-noite da Hora do Leste.
 
 ## Outras tarefas de anotações
 
