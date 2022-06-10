@@ -47,7 +47,7 @@ O Total de registros por carimbos de data e hora deve corresponder à métrica d
 
 >[!NOTE]
 >
->Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através da [Cross-Channel Analytics](/help/connections/cca/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no CJA é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no AA, especialmente se a Cross-Channel Analytics tiver sido ativada.
+>Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através do [Cross-Channel Analytics](/help/connections/cca/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no CJA é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no AA, especialmente se o Cross-Channel Analytics tiver sido ativada.
 
 1. Nos [Serviços de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=pt-BR) da Adobe Experience Platform, execute a seguinte consulta de [!UICONTROL Total de registros por carimbos de data e hora]:
 
