@@ -3,9 +3,9 @@ title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1100'
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ O Customer Journey Analytics permite criar, gerenciar, compartilhar e aplicar fi
 
 Os filtros podem ser baseados em atributos (tipo de navegador, dispositivo, número de visitas, país, gênero), interações (campanhas, pesquisa por palavra-chave, mecanismo de pesquisa), saídas e entradas (visitantes do Facebook, uma página de aterrissagem definida, domínio de referência), variáveis personalizadas (campo de formulário, categorias definidas, ID do cliente) e outros critérios.
 
-Você pode criar e salvar filtros no Construtor de filtros ou gerar filtros de uma visualização de Fallout (no Workspace). Além disso, filtros podem ser usados juntos como filtros empilhados.
+Você pode criar e salvar filtros no Construtor de filtros ou gerar filtros de uma visualização de Fallout (no Espaço de trabalho). Além disso, filtros podem ser usados juntos como filtros empilhados.
 
 A filtragem inclui o [Construtor de filtros](/help/components/filters/create-filters.md) para construir segmentos e executar um pré-teste, e o [Gerenciador de filtros](/help/components/filters/manage-filters.md) para coletar, marcar, aprovar, definir a segurança e compartilhar filtros na organização.
 
 ## Tipos de filtro {#types}
 
-Diferentes tipos de filtros podem ser criados no Workspace e no Construtor de filtros, dependendo de quão complexo eles precisam ser, se devem se aplicar somente a este projeto, etc. Aqui está um resumo dos tipos de filtros:
+Diferentes tipos de filtros podem ser criados no Espaço de trabalho e no Construtor de filtros, dependendo de quão complexo eles precisam ser, se devem se aplicar somente a este projeto, etc. Aqui está um resumo dos tipos de filtros:
 
 | Tipo de filtro | Onde ele é criado? | Onde ele é aplicável? | Quando usar |
 | --- | --- | --- | --- |
