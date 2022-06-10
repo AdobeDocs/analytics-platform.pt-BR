@@ -4,9 +4,9 @@ title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '854'
+ht-degree: 100%
 
 ---
 
@@ -53,9 +53,9 @@ Arraste e solte quaisquer Filtros do painel esquerdo na área de lançamento do 
 
 ### Filtros ad hoc
 
-Os componentes não filtros também podem ser arrastados diretamente para a área suspensa para criar filtros ad hoc, economizando tempo e esforço de ir para o Construtor de filtros. Os filtros criados dessa maneira são definidos automaticamente como filtros de nível de ocorrência. Essa definição pode ser modificada clicando no ícone de informações (i) ao lado do filtro e, em seguida, no ícone de edição em forma de lápis e editando-a no Construtor de filtros.
+Os componentes que não são de filtros também podem ser arrastados diretamente para a zona de destino para criar filtros ad hoc, poupando o tempo e esforço de ter que ir até o Construtor de filtros. Os filtros criados dessa maneira são definidos automaticamente como filtros de nível de ocorrência. Essa definição pode ser modificada clicando no ícone de informações (i) ao lado do filtro e, em seguida, no ícone de edição em forma de lápis e editando-a no Construtor de filtros.
 
-Filtros ad hoc são locais para o projeto e não serão exibidos no painel esquerdo, a menos que você os torne públicos.
+Os filtros ad hoc restringem-se ao local do projeto e não são exibidos no painel esquerdo, a menos que você os torne públicos.
 
 ![](assets/adhoc-segment-filter.png)
 
