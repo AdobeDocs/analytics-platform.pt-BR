@@ -1,17 +1,17 @@
 ---
-title: Usar dimensões e métricas de vinculação no CJA
+title: Uso de dimensões e métricas de ligação no CJA
 description: Atribua dimensões a arrays de objetos para análise de persistência complexa.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 source-git-commit: 28a6acd3f850e94a1f0d72477c22a5b30ab3fc2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1330'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Usar dimensões e métricas de vinculação no CJA
+# Uso de dimensões e métricas de ligação no CJA
 
 O Customer Journey Analytics oferece várias maneiras de persistir valores de dimensão além da ocorrência em que estão definidos. Um dos métodos de persistência que a Adobe oferece é conhecido como Ligação. Em versões anteriores do Adobe Analytics, esse conceito era conhecido como merchandising.
 
