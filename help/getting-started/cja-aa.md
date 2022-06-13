@@ -4,10 +4,10 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 401d22d7edbb751f1a377b2a8778d1c08ddea5c3
+source-git-commit: ab44c58a4089a5a48ad845579fb536f668d9f9f6
 workflow-type: tm+mt
-source-wordcount: '1432'
-ht-degree: 93%
+source-wordcount: '1440'
+ht-degree: 91%
 
 ---
 
@@ -21,6 +21,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | --- | --- |
 | Detecção de anomalias | Suporte completo. |
 | Attribution IQ | Suporte completo. |
+| Publicação de público-alvo | Suporte completo. Chamado de Publicação de segmento (envio de segmentos do Workspace para o Experience Cloud) no AA. [Publicação de público-alvo](/help/components/audiences/audiences-overview.md) envia públicos para o Perfil do cliente em tempo real na experience Platform. |
 | Métricas calculadas | Suporte de arquivo; observe que qualquer métrica de cálculo existente no Analysis Workspace tradicional não será transferida para o CJA. |
 | Eventos de calendário | Suporte completo. Os eventos de calendário foram implementados como [Anotações](/help/components/annotations/overview.md) no Espaço de trabalho. |
 | Criador de regras de classificação | Suporte completo. Chamado [substrings](/help/data-views/component-settings/substring.md) no CJA. Usa manipulações de string de caracteres no momento do relatório em vez de conjuntos de dados de pesquisa. |
@@ -97,7 +98,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Modelos de projeto | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
 | Segment IQ | Suporte planejado. |
-| Publicação de segmentos (envio de segmentos do Espaço de trabalho para a Experience Cloud) | Suporte planejado. Será chamado de “Publicação de audiência” no CJA. |
 | Relatório de sessão novo vs. repetição | Suporte planejado com algumas limitações. |
 
 {style=&quot;table-layout:auto&quot;}
