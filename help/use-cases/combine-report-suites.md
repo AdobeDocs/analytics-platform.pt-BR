@@ -1,9 +1,9 @@
 ---
 title: Combinar conjuntos de relatórios com esquemas diferentes
 description: Saiba como usar a Preparação de dados para combinar conjuntos de relatórios com esquemas diferentes
-source-git-commit: c602ee5567e7ba90d1d302f990cc1d8fc49e5adc
+source-git-commit: 02483345326180a72a71e3fc7c60ba64a5f8a9d6
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1308'
 ht-degree: 3%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 3%
 
 # Combinar conjuntos de relatórios com esquemas diferentes
 
-O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) O fornece um meio de trazer os dados do conjunto de relatórios do Adobe Analytics para o Adobe Experience Platform para uso por aplicativos AEP, como Real-time Customer Data Platform e Customer Journey Analytics (CJA). Cada conjunto de relatórios trazido para o AEP é configurado como um fluxo de dados de conexão de origem individual e cada fluxo de dados chega como um conjunto de dados no lago de dados da AEP. O Conector de origem do Analytics cria um conjunto de dados por conjunto de relatórios.
+O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) traz dados do conjunto de relatórios do Adobe Analytics para a Adobe Experience Platform (AEP) para uso por aplicativos AEP, como Real-time Customer Data Platform e Customer Journey Analytics (CJA). Cada conjunto de relatórios trazido para o AEP é configurado como um fluxo de dados de conexão de origem individual e cada fluxo de dados chega como um conjunto de dados no lago de dados da AEP. O Conector de origem do Analytics cria um conjunto de dados por conjunto de relatórios.
 
-Clientes CJA usam [conexões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR) para integrar conjuntos de dados do lago de dados da AEP ao Analysis Workspace do CJA. No entanto, ao combinar conjuntos de relatórios em uma conexão, as diferenças de esquema entre conjuntos de relatórios precisam ser resolvidas usando o [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR) para garantir que as variáveis do Adobe Analytics, como props e eVars, tenham um significado consistente no CJA.
+Clientes CJA usam [conexões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR) para integrar conjuntos de dados do lago de dados da AEP ao Analysis Workspace do CJA. No entanto, ao combinar conjuntos de relatórios em uma conexão, as diferenças de esquema entre conjuntos de relatórios precisam ser resolvidas usando o [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR) funcionalidade. O objetivo é garantir que variáveis do Adobe Analytics, como props e eVars, tenham um significado consistente no CJA.
 
 ## As diferenças de esquema entre conjuntos de relatórios são problemáticas
 
@@ -21,8 +21,8 @@ Suponha que sua empresa queira trazer dados de dois conjuntos de relatórios dif
 
 | Conjunto de relatórios A | Conjunto de relatórios B |
 | --- | --- |
-| eVar 1 => Pesquisar termo | eVar 1 => Unidade de negócios |
-| eVar 2 => Categoria do cliente | eVar2 => Pesquisar termo |
+| eVar 1 = Termo de pesquisa | eVar 1 = Unidade de negócios |
+| eVar 2 = Categoria do cliente | eVar 2 = termo de pesquisa |
 
 Por uma questão de simplicidade, considere que essas são as únicas eVars definidas para ambos os conjuntos de relatórios.
 
@@ -30,8 +30,8 @@ Além disso, suponha que você execute as seguintes ações:
 
 - Criar uma conexão de origem do Analytics (sem usar a preparação de dados) que assimila **Conjunto de relatórios A** no lago de dados AEP como **Conjunto De Dados A**.
 - Criar uma conexão de origem do Analytics (sem usar a preparação de dados) que assimila **Conjunto de relatórios B** no lago de dados AEP como **Conjunto de dados B**.
-- Criar uma conexão CJA chamada **Todos os Conjuntos de relatórios** que combina o conjunto de dados A e o conjunto de dados B.
-- Criar uma visualização de dados CJA chamada **Exibição global** que é baseado na conexão Todos os conjuntos de relatórios .
+- Crie um [Conexão CJA](/help/connections/create-connection.md) chamado **Todos os Conjuntos de relatórios** que combina o conjunto de dados A e o conjunto de dados B.
+- Crie um [Exibição de dados CJA](/help/data-views/create-dataview.md) chamado **Exibição global** que é baseado na conexão Todos os conjuntos de relatórios .
 
 Sem o uso da Preparação de dados para resolver as diferenças de esquema entre o Conjunto de dados A e o Conjunto de dados B, as eVars na exibição de dados da Exibição global conterão uma mistura de valores:
 
@@ -48,9 +48,9 @@ Essa situação resulta em relatórios sem sentido para o eVar1 e o eVar2:
 
 ## Usar a Preparação de dados do AEP para resolver diferenças de esquema entre conjuntos de relatórios
 
-A funcionalidade de Preparação de dados da AEP é integrada ao Conector de origem do Analytics e pode ser usada para resolver as diferenças de esquema descritas no cenário acima. Isso resulta em eVars com significados consistentes na visualização de dados do CJA. (As convenções de nomenclatura usadas abaixo podem ser personalizadas para atender às suas necessidades.)
+A funcionalidade Prep de dados do Experience Platform é integrada ao Conector de origem do Analytics e pode ser usada para resolver as diferenças de esquema descritas no cenário acima. Isso resulta em eVars com significados consistentes na visualização de dados do CJA. (As convenções de nomenclatura usadas abaixo podem ser personalizadas para atender às suas necessidades.)
 
-1. Antes de criar os fluxos de dados da conexão de origem para o Conjunto de relatórios A e o Conjunto de relatórios B, crie um grupo de campos personalizado no AEP (vamos chamá-lo **Campos unificados** no nosso exemplo) que contém os seguintes campos:
+1. Antes de criar os fluxos de dados da conexão de origem para o Conjunto de relatórios A e o Conjunto de relatórios B, [criar um grupo de campos personalizado](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) no AEP (vamos chamá-lo **Campos unificados** no nosso exemplo) que contém os seguintes campos:
 
    | Grupo de campos personalizado &quot;Campos unificados&quot;  |
    | --- |
@@ -58,7 +58,7 @@ A funcionalidade de Preparação de dados da AEP é integrada ao Conector de ori
    | Unidade de negócios |
    | Categoria do cliente |
 
-1. Crie um novo schema no AEP (vamos chamá-lo **Esquema unificado** no nosso exemplo.) Adicione os seguintes grupos de campos ao schema:
+1. [Criar um novo schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) no AEP (vamos chamá-lo **Esquema unificado** no nosso exemplo.) Adicione os seguintes grupos de campos ao schema:
 
    | Grupos de campos para &quot;Esquema unificado&quot; |
    | --- |
@@ -106,9 +106,9 @@ A funcionalidade de Preparação de dados da AEP é integrada ao Conector de ori
 
    Agora você mapeou o eVar1 e o eVar2 dos conjuntos de relatórios de origem para três novos campos. Observe que outra vantagem de usar os mapeamentos de Preparação de Dados é que os campos de destino agora são baseados em nomes semanticamente significativos (termo de pesquisa, unidade de negócios, categoria de cliente) em vez dos nomes de eVar menos significativos (eVar1, eVar2).
 
->[!NOTE]
->
->O grupo de campos personalizados Campos unificados e os mapeamentos de campo associados podem ser adicionados aos fluxos de dados e conjuntos de dados existentes do Conector de origem do Analytics a qualquer momento. No entanto, isso afeta apenas os dados futuros.
+   >[!NOTE]
+   >
+   >O grupo de campos personalizados Campos unificados e os mapeamentos de campo associados podem ser adicionados aos fluxos de dados e conjuntos de dados existentes do Conector de origem do Analytics a qualquer momento. No entanto, isso afeta apenas os dados futuros.
 
 ## Mais do que apenas conjuntos de relatórios
 
