@@ -1,59 +1,57 @@
 ---
 title: 'Anotações do Scorecard para dispositivos móveis    '
-description: Como usar anotações em Scorecards para dispositivos móveis.
+description: Saiba como destacar anotações nos Scorecards para dispositivos móveis.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 3387d72e68cccd4df54fbc4f29f03409db131206
+source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
 
+
 # Compartilhar anotações em Scorecards para dispositivos móveis
 
-Você pode exibir anotações criadas no Workspace - nos Scorecards para dispositivos móveis. Isso permite compartilhar nuances de dados contextuais e insights em sua organização e campanhas diretamente nos Scorecards.
+>[!NOTE]
+>
+>Este recurso está atualmente em [testes limitados](/help/release-notes/releases.md).
 
-As anotações nos Scorecards para dispositivos móveis funcionam de forma semelhante às anotações do Workspace com alguns recursos adicionais. No Workspace, por exemplo, você pode criar anotações em nível de tabela para um intervalo de datas. Nos Scorecards para dispositivos móveis, você visualiza anotações em nível de categoria. Isso fornece contexto adicional para usuários do Mobile Scorecard.
-__adicionar um exemplo - ou mais informações descrevendo a diferença
+Você pode exibir anotações criadas no Workspace - nos Scorecards para dispositivos móveis. Isso permite compartilhar nuances de dados contextuais e insights sobre sua organização e campanhas diretamente em projetos do Mobile Scorecard, visualizáveis no aplicativo móvel de painéis do Analytics.
 
-?? quais recursos adicionais o Mobile possui?
+## Anotações de superfície nos Scorecards para dispositivos móveis
 
+Para exibir anotações em scorecards para dispositivos móveis, crie a anotação primeiro em projetos do Workspace ou no menu Componentes.
 
-## Adicionar anotações aos Scorecards para dispositivos móveis
-
-As anotações exibidas nos Scorecards para dispositivos móveis são criadas no Workspace usando os métodos de criação de anotação do Workspace. Para obter informações sobre como criar anotações, consulte [Criar anotações](create-annotations.md).
-
+Para obter informações sobre como criar anotações, consulte [Criar anotações](create-annotations.md). As anotações são desativadas em scorecards para dispositivos móveis por padrão e devem ser ativadas para cada scorecard que você deseja exibir em scorecards para dispositivos móveis.
 
 1. Ativar anotações. Para ativar as anotações, consulte [Ativar ou desativar anotações](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
 
-1. Crie uma anotação e a atribua a projetos _globais. Para criar uma anotação no Workspace, consulte [Criar anotações](create-annotations.md).
+1. Crie uma anotação e verifique se ela está compartilhada com todos os projetos. Para criar uma anotação no Workspace, consulte [Criar anotações](create-annotations.md).
 
 1. Selecionar **Mostrar anotações** para exibir a anotação nos Scorecards para dispositivos móveis.
 
-Para confirmar que a opção show annotations está selecionada, acesse **Projeto** > **Informações e configurações do projeto**.
+![](assets/show-annotations.png)
+
+1. Confirme se a opção mostrar anotações está selecionada, vá para **Projeto** > **Informações e configurações do projeto**.
+
+![](assets/project-info-settings.png)
 
 ## Exibir anotações em Scorecards para dispositivos móveis
 
-No Workspace, você pode verificar as anotações no Construtor. Você também pode usar o modo Visualização para exibir o Scorecard para dispositivos móveis com anotações.
+Quando as anotações são ativadas, os ícones de anotação ficam visíveis no Construtor de scorecards. As anotações são exibidas somente em gráficos e tabelas na exibição detalhada. As anotações não são visíveis na exibição principal do bloco do scorecard.
 
-Para exibir anotações em um dispositivo móvel, nos Scorecards para dispositivos móveis, toque em um ícone de anotação. Passe o dedo para a esquerda ou para a direita para exibir anotações adicionais. Isso permite que você visualize rapidamente todas as anotações.
+![](assets/view-annotations.png)
 
-![](assets/mobile-annotations2.png)
+Quando os ícones de anotação estão visíveis, você não pode visualizar ou interagir totalmente com as anotações na tela do construtor. Use o modo de Visualização para exibir e interagir com anotações conforme elas aparecem no aplicativo. ![](assets/preview-icon.png)
 
-Ao visualizar um __donut, um resumo das anotações aplicadas a uma métrica está localizado no canto inferior direito.
+As cores da anotação são selecionadas quando a anotação é criada no espaço de trabalho. As anotações em cinza indicavam a presença de mais de uma anotação. ![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
 
-![](assets/ann-mobile-summary.png)
+## Exibir anotações do gráfico
 
-
-## Considerações de anotação do Scorecard para dispositivos móveis
-
-* Se uma anotação for aplicada a uma categoria e um usuário alternar dessa exibição de categoria, a anotação desaparecerá. As anotações são exibidas somente em uma categoria associada.
-
-* As anotações são desativadas por padrão.
-
-
-## Cores da anotação
-
-Ao criar uma anotação, você atribui uma cor específica à anotação exibida no Scorecard. As anotações que aparecem em cinza indicam que várias anotações são atribuídas à mesma categoria. Caso contrário, a anotação aparecerá na cor definida no Workspace.
+| Data | Aparência |
+| --- | --- |
+| **Dia único** | ![](assets/single-day-mobile-annotations.png)<br></br> |
+| **Intervalo de datas** | ![](assets/date-range.png) |
+| **Sobreposição de anotações** | ![](assets/overlapping-annotations.png)<br></br>Para exibir os detalhes da anotação no aplicativo de painéis do Analytics, toque em um ícone de anotação. <br></br>Ao visualizar uma anotação em um gráfico, é possível deslizar o dedo para a esquerda e para a direita para navegar por todas as anotações presentes no gráfico. Ao visualizar uma anotação na tabela, passe o dedo para a esquerda e para a direita para navegar em todas as anotações associadas a esse item de linha na tabela. <br></br>![](assets/swipe-multiple-annotations.png) <br></br>Em gráficos que não têm uma base de tempo *eixo x*, como os gráficos de rosca ou de barra horizontal, as anotações aplicáveis ao gráfico podem ser visualizadas ao tocar no ícone localizado no canto inferior direito.<br></br> ![](assets/charts-without-timebase.png) |
