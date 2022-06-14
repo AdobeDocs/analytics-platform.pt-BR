@@ -3,16 +3,16 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 72fa66bfaec3340347b7ba6b8052eef960e2d29a
+source-git-commit: 5e93d7ccb47b72181a036310f4562b34e93f3dab
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 17%
+source-wordcount: '213'
+ht-degree: 19%
 
 ---
 
 # Notas de versão do Customer Journey Analytics atual (CJA) (junho de 2022)
 
-**Última atualização**: 10 de junho de 2022
+**Última atualização**: 14 de junho de 2022
 
 ## Recursos principais
 
@@ -20,9 +20,9 @@ ht-degree: 17%
 | ----------- | ---------- | ----- |
 | Publicação de público-alvo no perfil do cliente em tempo real | Permite publicar públicos descobertos no CJA para AEP/RTCDP para direcionamento e personalização de clientes. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en) | 15 de junho de 2022 |
 | Nova interface do usuário de visualização de fluxo | Fornece funcionalidades adicionais para nossa visualização de Fluxo para torná-la mais poderosa e capaz. [Saiba mais](/help/analysis-workspace/visualizations/c-flow/create-flow.md) | 15 de junho de 2022 |
-| Suporte para campos numéricos como chaves de pesquisa e valores de pesquisa | Útil se você quiser classificar valores de string com um campo numérico, como COGS ou margem em um SKU de produto. Permitir métricas a partir de pesquisas ajuda a colocar esses pontos de dados em relatórios. Saiba mais (a seguir) | 15 de junho de 2022 |
+| Suporte para campos numéricos como chaves de pesquisa e valores de pesquisa | Útil se você quiser classificar valores de string com um campo numérico, como COGS ou margem em um SKU de produto. Permitir métricas a partir de pesquisas ajuda a colocar esses pontos de dados em relatórios. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 15 de junho de 2022 |
 | Laboratórios do Analytics no CJA | Laboratórios de suporte no CJA, para que você possa explorar protótipos com dados entre canais. [Saiba mais](/help/labs/labs.md) | 15 de junho de 2022 |
-| Compartilhar anotações em scorecards para dispositivos móveis | Você pode exibir anotações criadas no Workspace - nos Scorecards para dispositivos móveis. Isso permite compartilhar nuances de dados contextuais e insights sobre sua organização e campanhas diretamente em projetos do Mobile Scorecard, visualizáveis no aplicativo móvel de painéis do Analytics. Saiba mais (a seguir) | 15 de junho de 2022 |
+| Compartilhar anotações em scorecards para dispositivos móveis | Você pode exibir anotações criadas no Workspace - nos Scorecards para dispositivos móveis. Isso permite compartilhar nuances de dados contextuais e insights sobre sua organização e campanhas diretamente em projetos do Mobile Scorecard, visualizáveis no aplicativo móvel de painéis do Analytics. [Saiba mais](/help/components/annotations/mobile-annotations.md) | 15 de junho de 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
