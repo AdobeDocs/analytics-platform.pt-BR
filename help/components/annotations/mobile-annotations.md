@@ -1,22 +1,19 @@
 ---
-title: 'Anotações do Scorecard para dispositivos móveis    '
+title: Anotações do Scorecard para dispositivos móveis
 description: Saiba como destacar anotações nos Scorecards para dispositivos móveis.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 20e495040c213c5fff0450cddc1899ce340f785d
+exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
+source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 3%
+source-wordcount: '366'
+ht-degree: 2%
 
 ---
 
 
 # Compartilhar anotações em Scorecards para dispositivos móveis
-
->[!NOTE]
->
->Este recurso está atualmente em [testes limitados](/help/release-notes/releases.md).
 
 Você pode exibir anotações criadas no Workspace - nos Scorecards para dispositivos móveis. Isso permite compartilhar nuances de dados contextuais e insights sobre sua organização e campanhas diretamente em projetos do Mobile Scorecard, visualizáveis no aplicativo móvel de painéis do Analytics.
 
@@ -26,17 +23,17 @@ Para exibir anotações em scorecards para dispositivos móveis, crie a anotaç�
 
 Para obter informações sobre como criar anotações, consulte [Criar anotações](create-annotations.md). As anotações são desativadas em scorecards para dispositivos móveis por padrão e devem ser ativadas para cada scorecard que você deseja exibir em scorecards para dispositivos móveis.
 
-1. Ativar anotações. Para ativar as anotações, consulte [Ativar ou desativar anotações](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=en#turn-annotations-on-or-off).
+1. Ativar anotações. Para ativar as anotações, consulte [Ativar ou desativar anotações](overview.md#annotations-on-off).
 
 1. Crie uma anotação e verifique se ela está compartilhada com todos os projetos. Para criar uma anotação no Workspace, consulte [Criar anotações](create-annotations.md).
 
 1. Selecionar **Mostrar anotações** para exibir a anotação nos Scorecards para dispositivos móveis.
 
-![](assets/show-annotations.png)
+   ![](assets/show-annotations.png)
 
 1. Confirme se a opção mostrar anotações está selecionada, vá para **Projeto** > **Informações e configurações do projeto**.
 
-![](assets/project-info-settings.png)
+   ![](assets/project-info-settings.png)
 
 ## Exibir anotações em Scorecards para dispositivos móveis
 
