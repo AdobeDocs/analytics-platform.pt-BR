@@ -2,18 +2,14 @@
 title: Gerenciar públicos-alvo criados no Customer Journey Analytics
 description: Saiba como gerenciar públicos no Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
-source-git-commit: 71f13c4f7d8ad5682ae0974bca9a0e8fc90acfe4
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 7%
+source-wordcount: '276'
+ht-degree: 8%
 
 ---
 
 # Gerenciar públicos-alvo criados no Customer Journey Analytics
-
->[!NOTE]
->
->Essa funcionalidade está atualmente em [teste limitado](/help/release-notes/releases.md).
 
 O gerenciamento de públicos-alvo criados anteriormente permite
 
@@ -25,15 +21,18 @@ O gerenciamento de públicos-alvo criados anteriormente permite
 
 ## Interface do usuário de gerenciamento
 
+![](assets/manage.png)
+
 | Configuração da interface do usuário | Definição |
 | --- | --- |
-| Ocultar/Mostrar filtros | Permite mostrar ou ocultar os seguintes filtros no painel esquerdo: <ul><li>Exibição de dados</li><li>Proprietário</li><li>Frequência de atualização</li><li>Tags</li></ul> |
+| Ocultar/Mostrar filtros | Permite mostrar ou ocultar os seguintes filtros no painel esquerdo: <ul><li>[!UICONTROL Exibição de dados]</li><li>[!UICONTROL Proprietário]</li><li>[!UICONTROL Frequência de atualização]</li><li>[!UICONTROL Tags]</li></ul> |
 | [!UICONTROL Título e descrição] | O título e a descrição fornecidos ao público-alvo quando ele foi criado. |
-| [!UICONTROL Visualização de dados] | A visualização de dados na qual esse público-alvo foi criado. |
-| [!UICONTROL Tamanho do público] | O número total de pessoas neste público-alvo. |
+| [!UICONTROL Exibição de dados] | A visualização de dados na qual esse público-alvo foi criado. |
+| [!UICONTROL Tamanho do público-alvo] | O número total de pessoas neste público-alvo. |
 | [!UICONTROL Proprietário] | O proprietário do público-alvo - a pessoa que o criou. |
 | [!UICONTROL Frequência de atualização] | O intervalo de atualização configurado quando o público-alvo foi criado. |
 | [!UICONTROL Tags] | Quaisquer tags aplicadas a esse público-alvo. |
+| [!UICONTROL Status de publicação] | Pode mostrar [!UICONTROL Pronto], [!UICONTROL Em andamento]ou [!UICONTROL Erro]. |
 | [!UICONTROL  Última atualização] | Quando o público-alvo foi atualizado pela última vez. |
 | [!UICONTROL Última modificação] | Quando o público-alvo foi editado ou modificado pela última vez. |
 

@@ -2,18 +2,14 @@
 title: Criar e publicar públicos no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 0108b07fd4fac33d026b8832931ffa3018b298e0
+source-git-commit: 9ff64cb1b30fef5c475ecc6f7d19961144530095
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 6%
+source-wordcount: '939'
+ht-degree: 7%
 
 ---
 
 # Criar e publicar públicos
-
->[!NOTE]
->
->Essa funcionalidade está atualmente em [teste limitado](/help/release-notes/releases.md).
 
 Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
@@ -60,8 +56,8 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) famil
    | Configuração de visualização | Descrição |
    | --- | --- |
    | [!UICONTROL Visualização de dados] janela | O intervalo de datas do público-alvo. |
-   | [!UICONTROL Total de pessoas] | Um número de resumo do número total de pessoas neste público-alvo. Pode chegar a 100 milhões de pessoas. Se seu público-alvo exceder 100 milhões de pessoas, você deverá reduzir o tamanho do público-alvo antes de publicá-lo. |
-   | [!UICONTROL Limite de tamanho do público] | Mostra o quão longe está do limite de 100 milhões de pessoas. |
+   | [!UICONTROL Total de pessoas] | Um número de resumo do número total de pessoas neste público-alvo. Pode chegar a 200 milhões de pessoas. Se seu público-alvo exceder 200 milhões de pessoas, você deverá reduzir o tamanho do público-alvo antes de publicá-lo. |
+   | [!UICONTROL Limite de tamanho do público] | Mostra o quão longe do limite de 200 milhões deste público-alvo está. |
    | [!UICONTROL Retorno estimado do público] | Essa configuração é útil para redirecionar clientes nesse público-alvo que retornam ao site. (Em outras palavras, que são vistas neste conjunto de dados novamente.) <p>Aqui, você pode selecionar o período (próximos 7 dias, próximas 2 semanas, próximo mês) para o número estimado de clientes que podem retornar. |
    | [!UICONTROL Estimativa de retorno] | Esse número oferece um número estimado de clientes recorrentes durante o período selecionado na lista suspensa. Observamos a taxa de churn histórica para esse público-alvo prever esse número. |
    | [!UICONTROL Visualizar métricas] | Essa configuração permite que você veja métricas específicas para ver se esse público-alvo contribui com uma quantidade desproporcional para essa métrica, como &quot;[!UICONTROL Receita]&#39; ou &#39;[!UICONTROL Tempo médio no site]&quot;. Ele fornece a contagem agregada da métrica, bem como a porcentagem do total que ela representa. Você pode selecionar qualquer métrica disponível na visualização de dados. |

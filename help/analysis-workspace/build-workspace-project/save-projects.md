@@ -4,9 +4,9 @@ title: Salvar projetos
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: e8206956-6e24-4a3a-8c3f-8acf1fb9d800
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '461'
+source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
+workflow-type: tm+mt
+source-wordcount: '453'
 ht-degree: 100%
 
 ---
@@ -55,10 +55,6 @@ Para projetos **existentes**, após retornar ao Espaço de trabalho, você verá
 Para **novos** projetos que nunca foram salvos, as alterações não salvas não são recuperáveis.
 
 ## Abrir versão anterior {#previous-version}
-
->[!NOTE]
->
->As versões anteriores do projeto estão atualmente na versão limitada.
 
 Para abrir uma versão anterior de um projeto:
 
