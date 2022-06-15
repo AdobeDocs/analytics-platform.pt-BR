@@ -4,9 +4,9 @@ description: Descreve como criar uma conexão com um conjunto de dados da plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
+source-git-commit: 31d4faaf14adb7f11f975f77864074cd25a6e3bd
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2473'
 ht-degree: 81%
 
 ---
@@ -109,7 +109,7 @@ Há 3 tipos diferentes de conjunto de dados: dados de [!UICONTROL Evento], dados
 
 ## Usar campos numéricos como chaves de pesquisa e valores de pesquisa {#numeric}
 
-Essa funcionalidade é útil para classificar valores da sequência de caracteres com um campo numérico, como COGS ou margem, em um SKU de produto. Ela permite que valores numéricos façam parte de pesquisas, como chaves ou como valores. No esquema de pesquisa, você pode ter valores numéricos vinculados, por exemplo, aos nomes de produtos, COGS, custo de marketing da campanha ou margens. Este é um exemplo de esquema de pesquisa no Adobe Experience Platform:
+Essa funcionalidade é útil se você quiser adicionar um campo numérico, como um custo ou margem, a um campo de chave baseado em sequência. Ela permite que valores numéricos façam parte de pesquisas, como chaves ou como valores. No esquema de pesquisa, você pode ter valores numéricos vinculados, por exemplo, aos nomes de produtos, COGS, custo de marketing da campanha ou margens. Este é um exemplo de esquema de pesquisa no Adobe Experience Platform:
 
 ![Esquema de pesquisa](assets/schema.png)
 
