@@ -1,13 +1,13 @@
 ---
 title: Combinar conjuntos de relatórios com esquemas diferentes
 description: Saiba como usar a Preparação de dados para combinar conjuntos de relatórios com esquemas diferentes
-source-git-commit: 02483345326180a72a71e3fc7c60ba64a5f8a9d6
+exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
+source-git-commit: b7446d204eab2530d188600aed7e4cc0c603bf1d
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1336'
 ht-degree: 3%
 
 ---
-
 
 # Combinar conjuntos de relatórios com esquemas diferentes
 
@@ -50,7 +50,14 @@ Essa situação resulta em relatórios sem sentido para o eVar1 e o eVar2:
 
 A funcionalidade Prep de dados do Experience Platform é integrada ao Conector de origem do Analytics e pode ser usada para resolver as diferenças de esquema descritas no cenário acima. Isso resulta em eVars com significados consistentes na visualização de dados do CJA. (As convenções de nomenclatura usadas abaixo podem ser personalizadas para atender às suas necessidades.)
 
-1. Antes de criar os fluxos de dados da conexão de origem para o Conjunto de relatórios A e o Conjunto de relatórios B, [criar um grupo de campos personalizado](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail.) no AEP (vamos chamá-lo **Campos unificados** no nosso exemplo) que contém os seguintes campos:
+1. Antes de criar os fluxos de dados da conexão de origem para o Conjunto de relatórios A e o Conjunto de relatórios B, [Criar um novo schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) no AEP (vamos chamá-lo **Esquema unificado** no nosso exemplo.) Adicione o seguinte ao schema:
+
+   | &quot;Esquema unificado&quot; |
+   | --- |
+   | **ExperiênciaEvento XDM** classe |
+   | **Modelo Adobe Analytics ExperienceEvent** grupo de campos |
+
+1. Adicione outro grupo de campos ao schema ou [criar um grupo de campos personalizado](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) e adicione-o ao schema. Criaremos um novo grupo de campos e o chamaremos **Campos unificados**. Em seguida, adicionaremos os seguintes campos ao novo grupo de campos:
 
    | Grupo de campos personalizado &quot;Campos unificados&quot;  |
    | --- |
@@ -58,17 +65,7 @@ A funcionalidade Prep de dados do Experience Platform é integrada ao Conector d
    | Unidade de negócios |
    | Categoria do cliente |
 
-1. [Criar um novo schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html?lang=en) no AEP (vamos chamá-lo **Esquema unificado** no nosso exemplo.) Adicione os seguintes grupos de campos ao schema:
-
-   | Grupos de campos para &quot;Esquema unificado&quot; |
-   | --- |
-   | Evento de experiência XDM |
-   | Modelo de evento da experiência do Adobe Analytics |
-   | Campos unificados |
-
-   Ao criar o fluxo de dados da conexão de origem para **Conjunto de relatórios A**, selecione **Esquema unificado** para uso no fluxo de dados.
-
-1. Adicione mapeamentos personalizados da seguinte maneira:
+1. Crie o fluxo de dados da conexão de origem para **Conjunto de relatórios A**, seleção **Esquema unificado** para uso no fluxo de dados. Adicione mapeamentos personalizados ao fluxo de dados da seguinte maneira:
 
    | Conjunto de relatórios Um campo de origem | Campo de destino do grupo de campos Campos unificados |
    | --- | --- |
@@ -77,11 +74,9 @@ A funcionalidade Prep de dados do Experience Platform é integrada ao Conector d
 
    >[!NOTE]
    >
-   >O caminho XDM para os campos de destino dependerá de como você configurou o grupo de campos personalizado.
+   >O caminho XDM para seus campos de destino dependerá de como você estruturar seu grupo de campos personalizado.
 
-1. Ao criar o fluxo de dados da conexão de origem para **Conjunto de relatórios B**, selecione novamente **Esquema unificado** para uso no fluxo de dados.
-
-   O fluxo de trabalho mostra que dois campos têm um conflito de nome de descritor. Isso ocorre porque os descritores do eVar1 e do eVar2 são diferentes no Conjunto de relatórios B do que eram no Conjunto de relatórios A. Mas já sabemos disso, para que possamos ignorar com segurança o conflito e usar mapeamentos personalizados da seguinte maneira:
+1. Crie o fluxo de dados da conexão de origem para **Conjunto de relatórios B**, selecionar novamente **Esquema unificado** para uso no fluxo de dados. O fluxo de trabalho mostrará que dois campos têm um conflito de nome de descritor. Isso ocorre porque os descritores do eVar1 e do eVar2 são diferentes no Conjunto de relatórios B do que eram no Conjunto de relatórios A. Mas já sabemos disso, para que possamos ignorar com segurança o conflito e usar mapeamentos personalizados da seguinte maneira:
 
    | Campo de origem do Conjunto de relatórios B | Campo de destino do grupo de campos Campos unificados |
    |---|---|
@@ -90,11 +85,9 @@ A funcionalidade Prep de dados do Experience Platform é integrada ao Conector d
 
 1. Agora crie um **Todos os Conjuntos de relatórios** conexão para CJA, combinando o conjunto de dados A e o conjunto de dados B.
 
-1. Crie um **Exibição global** visualização de dados no CJA.
+1. Crie um **Exibição global** visualização de dados no CJA. Ignore os campos de eVar originais e inclua apenas os campos do grupo de campos Campos unificados.
 
-   Ignore os campos de eVar originais e inclua apenas os campos do grupo de campos Campos unificados.
-
-   Exibição de dados global no CJA:
+   **Exibição global** visualização de dados no CJA:
 
    | Campo de origem | Incluir na visualização de dados? |
    | --- | --- | 
@@ -104,11 +97,11 @@ A funcionalidade Prep de dados do Experience Platform é integrada ao Conector d
    | _\&lt;path>_.Customer_category  | Sim |
    | _\&lt;path>_.Business_unit | Sim |
 
-   Agora você mapeou o eVar1 e o eVar2 dos conjuntos de relatórios de origem para três novos campos. Observe que outra vantagem de usar os mapeamentos de Preparação de Dados é que os campos de destino agora são baseados em nomes semanticamente significativos (termo de pesquisa, unidade de negócios, categoria de cliente) em vez dos nomes de eVar menos significativos (eVar1, eVar2).
+Agora você mapeou o eVar1 e o eVar2 dos conjuntos de relatórios de origem para três novos campos. Observe que outra vantagem de usar os mapeamentos de Preparação de Dados é que os campos de destino agora são baseados em nomes semanticamente significativos (termo de pesquisa, unidade de negócios, categoria de cliente) em vez dos nomes de eVar menos significativos (eVar1, eVar2).
 
-   >[!NOTE]
-   >
-   >O grupo de campos personalizados Campos unificados e os mapeamentos de campo associados podem ser adicionados aos fluxos de dados e conjuntos de dados existentes do Conector de origem do Analytics a qualquer momento. No entanto, isso afeta apenas os dados futuros.
+>[!NOTE]
+>
+>O grupo de campos personalizados Campos unificados e os mapeamentos de campo associados podem ser adicionados aos fluxos de dados e conjuntos de dados existentes do Conector de origem do Analytics a qualquer momento. No entanto, isso afeta apenas os dados futuros.
 
 ## Mais do que apenas conjuntos de relatórios
 
@@ -124,37 +117,34 @@ Os recursos da Preparação de dados para combinar conjuntos de dados com esquem
 
 Usando a Preparação de dados, você pode combinar a Categoria do cliente no eVar 1 nos dados do Analytics com a Categoria do cliente no campo Alguns_nos dados da central de atendimento. Aqui está uma maneira de fazer isso. Novamente, a convenção de nomenclatura pode ser alterada para atender às suas necessidades.
 
-1. Criar um grupo de campos personalizado:
+1. Crie um schema no AEP. Adicione o seguinte ao schema:
+
+   | &quot;Esquema estendido&quot; |
+   | --- | 
+   | **Evento de experiência XDM** classe |
+   | **Modelo de evento da experiência do Adobe Analytics** grupo de campos |
+
+1. Crie um novo grupo de campos e adicione-o ao schema. Adicionar campos ao grupo de campos:
 
    | Grupo de campos personalizados &quot;Informações do cliente&quot;  |
    | --- |
    | Customer_category |
 
-1. Crie um schema no AEP. Adicione os seguintes grupos de campos ao schema:
-
-   | Grupos de campos para &quot;Esquema estendido&quot; |
-   | --- | 
-   | Evento de experiência XDM |
-   | Modelo de evento da experiência do Adobe Analytics |
-   | Informações do cliente |
-
-1. Ao criar o fluxo de dados para **Conjunto De Dados A**, selecione **Esquema estendido** como esquema.
-
-1. Adicione mapeamentos personalizados da seguinte maneira:
+1. Crie o fluxo de dados para **Conjunto De Dados A**, seleção **Esquema estendido** como esquema. Adicione mapeamentos personalizados ao fluxo de dados da seguinte maneira:
 
    | Conjunto de dados Um campo de origem | Campo Destino do grupo de campos Informações do cliente |
    | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar2 | _\&lt;path>_.Customer_category |
 
-1. Ao criar o fluxo de dados para **Conjunto de dados B**, selecione novamente **Esquema estendido** como esquema.
-
-1. Adicione mapeamentos personalizados da seguinte maneira:
+1. Crie o fluxo de dados para **Conjunto de dados B**, selecionar novamente **Esquema estendido** como esquema. Adicione mapeamentos personalizados ao fluxo de dados da seguinte maneira:
 
    | Campo de origem do conjunto de dados B | Campo Destino do grupo de campos Informações do cliente |
    | --- | --- |
    | _\&lt;path>_.Some_field | _\&lt;path>_.Customer_category |
 
-   Crie uma conexão CJA que combine o Conjunto de dados A e o Conjunto de dados B. Crie uma visualização de dados no CJA, usando a conexão CJA que você acabou de criar. Ignore os campos de eVar originais e inclua apenas os campos do grupo de campos Informações do cliente .
+1. Crie uma conexão do CJA que combine o Conjunto de dados A e o Conjunto de dados B.
+
+1. Crie uma visualização de dados no CJA, usando a conexão CJA recém-criada. Ignore os campos de eVar originais e inclua apenas os campos do grupo de campos Informações do cliente .
 
    Exibição de dados no CJA:
 
@@ -169,4 +159,3 @@ Usando a Preparação de dados, você pode combinar a Categoria do cliente no eV
 Conforme descrito acima, a Preparação de dados permite mapear campos diferentes em conjunto em vários conjuntos de relatórios do Adobe Analytics. Isso é útil no CJA quando você deseja combinar dados de vários conjuntos de dados em uma única conexão do CJA. No entanto, se você pretende manter os conjuntos de relatórios em conexões CJA separadas, mas deseja usar um conjunto de relatórios nessas conexões e visualizações de dados, alterar a ID do componente subjacente no CJA fornece uma maneira de tornar os relatórios compatíveis, mesmo que os esquemas sejam diferentes. Consulte [Configurações do componente](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=en) para obter mais informações.
 
 A alteração da ID do componente é uma função somente CJA e não afeta dados do Conector de origem do Analytics enviados para o Perfil do cliente em tempo real e a RTCDP.
-
