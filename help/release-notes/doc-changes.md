@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d6b557e90c6f05efed77a77cd5d189241473c7b5
+source-git-commit: cd6f78b2ce40a3368b1e643a60e9f3070dd80c55
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 86%
+source-wordcount: '819'
+ht-degree: 85%
 
 ---
 
@@ -17,6 +17,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 | Data | Atualizar descrição |
 | --- | --- |
+| Junho de 2022 | Novo artigo em [combinação de conjuntos de relatórios com esquemas diferentes](/help/use-cases/combine-report-suites.md) |
 | Junho de 2022 | Novo artigo em [compartilhamento de anotações em scorecards para dispositivos móveis](/help/components/annotations/mobile-annotations.md) |
 | Junho de 2022 | Novo artigo em [Laboratórios do Analytics no CJA](/help/labs/labs.md) |
 | Junho de 2022 | Nova seção sobre [suporte para campos numéricos como chaves de pesquisa e valores de pesquisa](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) |
