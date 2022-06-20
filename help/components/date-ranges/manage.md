@@ -3,18 +3,14 @@ title: Gerenciar intervalos de datas
 description: Compartilhar, renomear ou excluir intervalos de datas no Analysis Workspace.
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '416'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '383'
 ht-degree: 100%
 
 ---
 
 # Gerenciar intervalos de datas
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Use o gerenciador de intervalo de datas para compartilhar, renomear ou excluir intervalos de datas. Para acessar o gerenciador de datas:
 

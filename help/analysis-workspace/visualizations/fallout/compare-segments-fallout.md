@@ -4,18 +4,14 @@ keywords: fallout e filtros; filtros na análise de fallout; comparar filtros no
 title: Aplicar filtros na análise de fallout
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '438'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '405'
 ht-degree: 100%
 
 ---
 
 # Aplicar filtros na análise de fallout
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 É possível criar filtros desde de um ponto de contato, adicionar filtros como ponto de contato e comparar fluxos de trabalho principais em vários filtros no Analysis Workspace.
 

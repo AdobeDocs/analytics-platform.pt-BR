@@ -3,18 +3,14 @@ description: Exibe os cinco principais valores para dimensões que não são de 
 title: Como visualizar dimensões no CJA Workspace
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '231'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '198'
 ht-degree: 100%
 
 ---
 
 # Visualizar dimensões no Analysis Workspace
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Passe o mouse sobre o ícone de informações (i) localizado próximo a uma dimensão. Serão exibidos os 5 principais valores para dimensões que não são de tempo (e 15 para dimensões de tempo). Costumávamos mantes esses valores estáticos (ou seja, os 5 valores escolhidos nunca eram alterados).
 

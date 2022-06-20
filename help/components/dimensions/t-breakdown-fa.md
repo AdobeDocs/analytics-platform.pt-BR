@@ -5,18 +5,14 @@ title: Analisar dimensões
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
-source-git-commit: 4bea8d7997d4084cfb87c1035689c0eea6b1f3b1
-workflow-type: ht
-source-wordcount: '381'
-ht-degree: 100%
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 98%
 
 ---
 
 # Detalhamento de dimensões no Workspace
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Analise dimensões e itens de dimensão no Analysis Workspace.
 
@@ -31,7 +27,7 @@ Detalhe os seus dados de inúmeras maneiras e de acordo com as suas necessidades
 
    >[!NOTE]
    >
-   >O número de detalhamentos exibidos na tabela é limitado a 200. Esse limite vai aumentar para a exportação de detalhamentos.
+   >O número de detalhamentos exibidos na tabela é limitado a 200. Esse limite aumenta para exportar detalhamentos.
 
 **Vídeo: Dimensões no Analysis Workspace**
 

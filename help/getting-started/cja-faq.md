@@ -4,8 +4,8 @@ description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Perguntas frequentes
 
-[!UICONTROL O Customer Journey Analytics] (CJA) é nosso produto de análise de última geração. Veja a seguir respostas para perguntas frequentes sobre o CJA. Para obter mais informações, consulte [Suporte aos recursos do Customer Journey Analytics](/help/getting-started/cja-aa.md).
+[!UICONTROL O Customer Journey Analytics] (CJA) é nosso produto de análise de última geração. Veja a seguir respostas para perguntas frequentes sobre o CJA. Para obter mais informações, consulte [Suporte aos recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 ## 1. Pré-requisitos {#prerequisites}
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 | Pergunta | Resposta |
 | --- | --- |
 | O [!UICONTROL Customer Journey Analytics] pode &quot;costurar&quot; todos os dispositivos ou conjuntos de dados? | Sim. [!UICONTROL O Customer Journey Analytics] tem uma solução de compilação chamada [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) (CCA). Ela permite alterar a chave da ID pessoal de um conjunto de dados, o que permite a combinação perfeita de vários conjuntos de dados. |
-| A costura de comportamento anônimo para comportamento autenticado é compatível? | Sim. [O Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. |
+| A costura de comportamento anônimo para comportamento autenticado é compatível? | Sim. [O Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. |
 | Como a &quot;repetição&quot; funciona no CCA? | O CCA “repete” dados com base em identificadores exclusivos que ele aprendeu. A repetição faz com que novos dispositivos da conexão sejam compilados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=pt-BR#step-1%3A-live-stitching) |
 | Como a compilação de dados históricos (preenchimento retroativo) funciona no CCA? | Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR#enable-cross-channel-analytics) |
 
@@ -85,7 +85,7 @@ Quando se trata de exclusão, nos referimos a seis tipos de componentes: sandbox
 
 ## 7. Considerações ao mesclar conjuntos de relatórios no CJA {#merge-reportsuite}
 
-Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR), considere essas ramificações ao mesclar dois ou mais conjuntos de relatórios do Adobe Analytics.
+Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), considere essas ramificações ao mesclar dois ou mais conjuntos de relatórios do Adobe Analytics.
 
 | Problema | Consideração |
 | --- | --- |
@@ -132,7 +132,7 @@ Talvez seja necessário saber quantas linhas de dados você tem atualmente no [!
 
    * Alterar as [configurações de retenção de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#set-rolling-window-for-connection-data-retention).
    * [Excluir todas as conexões não usadas](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
-   * [Excluir um conjunto de dados na AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
+   * [Excluir um conjunto de dados na AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components).
    * Entre em contato com o Gerente de conta da Adobe para obter licença de capacidade adicional.
 
 ## 10. Em relação às sobreposições de uso {#overage}
@@ -151,4 +151,4 @@ Em alguns casos, você pode notar que o número total de eventos assimilados pel
 
 1. Além disso, se verificarmos a [!UICONTROL Adobe Experience Platform], não há conjunto de dados com a ID &quot;5f21c12b732044194bffc1d0&quot;, portanto, alguém excluiu esse conjunto de dados específico da [!UICONTROL Adobe Experience Platform] quando a conexão inicial estava sendo criada. Mais tarde, ele foi adicionado ao Customer Journey Analytics novamente, mas uma [!UICONTROL ID do conjunto de dados da plataforma] diferente foi gerada pela [!UICONTROL Adobe Experience Platform].
 
-Leia mais sobre as [implicações do conjunto de dados e a exclusão de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components) no [!UICONTROL Customer Journey Analytics] e na [!UICONTROL Adobe Experience Platform].
+Leia mais sobre as [implicações do conjunto de dados e a exclusão de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) no [!UICONTROL Customer Journey Analytics] e na [!UICONTROL Adobe Experience Platform].

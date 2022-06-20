@@ -3,18 +3,14 @@ title: Referência - funções básicas
 description: O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '1077'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '1044'
 ht-degree: 100%
 
 ---
 
 # Referência - funções básicas
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas.
 
@@ -50,7 +46,7 @@ MAXV(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | Uma métrica que você gostaria de avaliar. |
+| *métrica* | Uma métrica que você gostaria de avaliar. |
 
 ## Mínimo da coluna
 
@@ -62,7 +58,7 @@ MINV(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | Uma métrica que você gostaria de avaliar. |
+| *métrica* | Uma métrica que você gostaria de avaliar. |
 
 ## Soma da coluna
 
@@ -74,7 +70,7 @@ SUM(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter o valor total ou soma. |
+| *métrica* | A métrica para a qual você deseja obter o valor total ou soma. |
 
 ## Contagem (Tabela)
 
@@ -86,7 +82,7 @@ COUNT(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica que deseja contar. |
+| *métrica* | A métrica que deseja contar. |
 
 ## Expoente (Linha)
 
@@ -98,7 +94,7 @@ EXP(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O exponente aplicado à base *e*. |
+| *métrica* | O exponente aplicado à base *e*. |
 
 ## Exponenciação
 
@@ -118,7 +114,7 @@ MEAN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a média. |
+| *métrica* | A métrica para a qual você deseja obter a média. |
 
 ## Mediana (Tabela)
 
@@ -130,7 +126,7 @@ MEDIAN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a mediana. |
+| *métrica* | A métrica para a qual você deseja obter a mediana. |
 
 ## Módulo
 
@@ -173,7 +169,7 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>métrica</i> </td> 
    <td colname="col2"> A coluna de métrica que define a posição relativa. </td> 
   </tr> 
   <tr> 
@@ -200,7 +196,7 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>metric</i> </td> 
+   <td colname="col1"> <i>métrica</i> </td> 
    <td colname="col2"> A métrica para a qual você deseja obter o valor do quartil. </td> 
   </tr> 
   <tr> 
@@ -210,7 +206,7 @@ QUARTILE(metric,quart)
  </tbody> 
 </table>
 
-*Se *quart* = 0, QUARTILE retorna o valor mínimo. Se *quart* = 1, QUARTILE retorna o primeiro quartil (percentil 25). Se *quart* = 2, QUARTILE retorna o primeiro quartil (percentil 50). Se *quart* = 3, QUARTILE retorna o primeiro quartil (percentil 75). Se *quart* = 4, QUARTILE retorna o valor máximo.
+&#42;Se *quart* = 0, QUARTILE retorna o valor mínimo. Se *quart* = 1, QUARTILE retorna o primeiro quartil (percentil 25). Se *quart* = 2, QUARTILE retorna o primeiro quartil (percentil 50). Se *quart* = 3, QUARTILE retorna o primeiro quartil (percentil 75). Se *quart* = 4, QUARTILE retorna o valor máximo.
 
 ## Arredondar
 
@@ -304,7 +300,7 @@ VARIANCE(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a variação. |
+| *métrica* | A métrica para a qual você deseja obter a variação. |
 
 Para calcular uma variação, considere uma coluna inteira de números. Nessa lista de números, calcule primeiro a média. Após obter a média, faça o seguinte em cada entrada:
 

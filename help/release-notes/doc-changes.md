@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cd6f78b2ce40a3368b1e643a60e9f3070dd80c55
+source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 85%
+source-wordcount: '842'
+ht-degree: 82%
 
 ---
 
@@ -17,6 +17,8 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 | Data | Atualizar descrição |
 | --- | --- |
+| Junho de 2022 | Novo artigo em [ambientes de relatórios virtuais e ambientes sandbox](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md) |
+| Junho de 2022 | Novo artigo em [comparação do processamento de dados entre o Adobe Analytics e os recursos de relatórios do CJA](/help/getting-started/aa-vs-cja/data-processing-comparisons.md) |
 | Junho de 2022 | Novo artigo em [combinação de conjuntos de relatórios com esquemas diferentes](/help/use-cases/combine-report-suites.md) |
 | Junho de 2022 | Novo artigo em [compartilhamento de anotações em scorecards para dispositivos móveis](/help/components/annotations/mobile-annotations.md) |
 | Junho de 2022 | Novo artigo em [Laboratórios do Analytics no CJA](/help/labs/labs.md) |
@@ -63,7 +65,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | 13 de novembro de 2020 | Novos tópicos sobre [Cross-Channel Analytics](/help/connections/cca/overview.md), que permite o rechaveamento da ID de pessoa de um conjunto de dados e a combinação contínua de vários conjuntos de dados. |
 | 13 de novembro de 2020 | Um novo caso de uso sobre [Importação de dados da central de atendimento e da Web](/help/use-cases/call-center.md) foi adicionado. |
 | 10 de novembro de 2020 | Adição de uma seção sobre as implicações da exclusão de componentes de dados nas [Perguntas frequentes](/help/getting-started/cja-faq.md). |
-| 2 de novembro de 2020 | Atualizações na página de [suporte de recursos do Customer Journey Analytics](/help/getting-started/cja-aa.md). |
+| 2 de novembro de 2020 | Atualizações na página de [suporte de recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |
 | Novembro de 2020 | Adição de conteúdo sobre [remoção de limitações de preenchimento retroativo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#backfill-historical-data) para conexões. |
 | 7 de outubro de 2020 | Adição de um tópico sobre [conjuntos de dados de evento combinados](/help/connections/combined-dataset.md). |
 | 15 de setembro de 2020 | Adição de um tópico sobre [assimilação de dados](/help/use-cases/data-ingestion.md). |
@@ -72,7 +74,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Julho de 2020 | Adição de informações sobre a opção [Mapa de identidade para ID de pessoa](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html). |
 | Julho de 2020 | Adição de um novo tópico sobre [arrays de objetos](/help/use-cases/object-arrays.md) ou “hierarquias de dados”. |
 | 14 de abril de 2020 | Atualizações na interface de usuário mais recente no tópico [Criar conexões](/help/connections/create-connection.md). |
-| 27 de fevereiro de 2020 | Atualizações na página de [suporte de recursos do Customer Journey Analytics](/help/getting-started/cja-aa.md). |
+| 27 de fevereiro de 2020 | Atualizações para a [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) |
 | Dezembro de 2019 | Primeiro rascunho da documentação do CJA |
 
 {style=&quot;table-layout:auto&quot;}

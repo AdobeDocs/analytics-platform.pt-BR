@@ -4,18 +4,14 @@ keywords: Analysis Workspace
 title: Criar intervalos de datas personalizados
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '281'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '248'
 ht-degree: 100%
 
 ---
 
 # Criar intervalos de datas personalizados
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Crie intervalos de datas personalizados no Analysis Workspace e salve-os como Componentes de tempo.
 
@@ -23,7 +19,7 @@ Crie intervalos de datas personalizados no Analysis Workspace e salve-os como Co
 
 Os intervalos de datas são aplicados no nível do painel. Para adicionar um intervalo de datas ao seu projeto, clique em **Painéis** > *`<select panel>`* e especifique um novo intervalo de datas.
 
-## Intervalo de datas para “dois meses atrás” 
+## Intervalo de datas para “dois meses atrás”
 
 O intervalo de datas personalizado a seguir mostra um intervalo de datas para “dois meses atrás” com uma visualização de Alteração do resumo, que mostra a alteração direcional.
 

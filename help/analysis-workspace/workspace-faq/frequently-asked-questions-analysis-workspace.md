@@ -4,18 +4,14 @@ keywords: Analysis Workspace
 title: Requisitos de administração
 feature: FAQ
 exl-id: ea2ea8d6-8327-4168-b81a-f4945b572cbb
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '182'
+source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
+workflow-type: tm+mt
+source-wordcount: '149'
 ht-degree: 100%
 
 ---
 
 # Requisitos de administração
-
->[!NOTE]
->
->Você está visualizando a documentação do Analysis Workspace no Customer Journey Analytics. Seu conjunto de recursos é ligeiramente diferente do [Analysis Workspace no Adobe Analytics tradicional](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR). [Saiba mais...](/help/getting-started/cja-aa.md)
 
 Requisitos de sistema para o Analysis Workspace.
 
