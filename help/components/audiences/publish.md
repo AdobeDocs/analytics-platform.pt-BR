@@ -2,10 +2,10 @@
 title: Criar e publicar públicos no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 9ff64cb1b30fef5c475ecc6f7d19961144530095
+source-git-commit: 454d931b8c9f9e4e960a01401623bc9eda4e21d8
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 7%
+source-wordcount: '993'
+ht-degree: 6%
 
 ---
 
@@ -74,14 +74,19 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) famil
 
 ## Usar públicos-alvo do CJA no Experience Platform
 
+O CJA agora pega todas as combinações de namespace e ID do seu público-alvo publicado e as transforma em RTCP (Real-time Customer Profile, Perfil do cliente em tempo real). O CJA envia o público para o Experience Platform com a identidade primária definida como qualquer ID de pessoa selecionada quando a conexão foi configurada.
 
-O CJA agora pega todas as combinações de namespace e ID do seu público-alvo publicado e as transforma em RTCP (Real-time Customer Profile, Perfil do cliente em tempo real). Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, &quot;user@adobe.com&quot; pode ser direcionado para todos os dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
+Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, &quot;user@adobe.com&quot; pode ser direcionado para todos os dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
 Você pode visualizar públicos-alvo do CJA na Platform acessando **[!UICONTROL Segmentos]** > **[!UICONTROL Criar segmentos]** > **[!UICONTROL Públicos-alvo]** guia > **[!UICONTROL Públicos-alvo do CJA]**.
 
 Você pode arrastar os públicos-alvo do CJA para a definição de segmentos do AEP.
 
 ![](assets/audiences-aep.png)
+
+## O que acontece se um usuário não é mais membro de um público-alvo no CJA?
+
+Nesse caso, um evento exit é enviado ao Experience Platform do CJA.
 
 ## Próximas etapas
 
