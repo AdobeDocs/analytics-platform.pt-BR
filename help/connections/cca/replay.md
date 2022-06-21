@@ -4,10 +4,10 @@ description: Entenda o conceito de “repetição” na Análise de vários cana
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '548'
-ht-degree: 100%
+source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
+workflow-type: tm+mt
+source-wordcount: '590'
+ht-degree: 92%
 
 ---
 
@@ -19,6 +19,8 @@ A Análise de vários canais faz duas passagens de dados em uma determinada cone
 * **Repetição**: a AVC “repete” dados com base em identificadores exclusivos que ele aprendeu. É nesse estágio que os novos dispositivos da conexão são compilados. A Adobe oferece dois intervalos de repetição:
    * Diariamente: os dados são repetidos todos os dias com uma janela de retrospectiva de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os visitantes não autenticados devem se autenticar no mesmo dia em que visitam o site.
    * Semanalmente: os dados são repetidos uma vez por semana com uma janela de retrospectiva de sete dias. Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, dados com menos de uma semana não são compilados.
+
+Os dados além da janela de lookback não são repetidos. Um visitante deve se autenticar em uma determinada janela de lookback para que uma visita não autenticada e uma visita autenticada sejam identificadas juntas. Depois que um dispositivo é reconhecido, ele é compilado em tempo real a partir desse ponto.
 
 ## Etapa 1: compilação em tempo real
 
