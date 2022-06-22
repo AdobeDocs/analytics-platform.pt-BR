@@ -4,10 +4,10 @@ description: Entenda o conceito de “repetição” na Análise de vários cana
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: a67350c60593385daaeb01fb8afb9c57b423935a
+source-git-commit: 64cd3983f58f1f0de1d8639e5cb1e705dd72ef44
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 92%
+source-wordcount: '578'
+ht-degree: 89%
 
 ---
 
@@ -32,10 +32,10 @@ A AVC tenta compilar cada evento após a coleção em dispositivos e canais conh
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `246` | Bob visita seu site no desktop dele, não autenticado | `1` (246) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob faz logon no desktop | `2` (246 e Bob) |
-| `3` | - | - | `Bob` | `Bob` | Bob faz uma chamada ao atendimento ao cliente | `2` (246 e Bob) |
+| `3` | - | - | `Bob` | `Bob` | Bob chama o serviço do cliente | `2` (246 e Bob) |
 | `4` | `3579` | - | - | `3579` | Bob acessa seu site no dispositivo móvel dele, não autenticado | `3` (246, Bob e 3579) |
 | `5` | `3579` | `Bob` | - | `Bob` | Bob faz logon via celular | `3` (246, Bob e 3579) |
-| `6` | - | - | `Bob` | `Bob` | Bob faz outra chamada ao atendimento ao cliente | `3` (246, Bob e 3579) |
+| `6` | - | - | `Bob` | `Bob` | Bob chama o serviço do cliente novamente | `3` (246, Bob e 3579) |
 | `7` | `246` | - | - | `Bob` | Bob acessa seu site novamente no desktop dele, não autenticado | `3` (246, Bob e 3579) |
 
 Os eventos não autenticados e autenticados em novos dispositivos são contados como pessoas separadas (temporariamente). Eventos não autenticados em dispositivos reconhecidos são compilados em tempo real.
@@ -52,10 +52,10 @@ Em intervalos regulares (uma vez por semana ou uma vez por dia, dependendo da ja
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `Bob` | Bob visita seu site no desktop dele, não autenticado | `1` (Bob) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob faz logon no desktop | `1` (Bob) |
-| `3` | - | - | `Bob` | `Bob` | Bob faz uma chamada ao atendimento ao cliente | `1` (Bob) |
+| `3` | - | - | `Bob` | `Bob` | Bob chama o serviço do cliente | `1` (Bob) |
 | `4` | `3579` | - | - | `Bob` | Bob acessa seu site no dispositivo móvel dele, não autenticado | `1` (Bob) |
 | `5` | `3579` | `Bob` | - | `Bob` | Bob faz logon via celular | `1` (Bob) |
-| `6` | - | - | `Bob` | `Bob` | Bob faz outra chamada ao atendimento ao cliente | `1` (Bob) |
+| `6` | - | - | `Bob` | `Bob` | Bob chama o serviço do cliente novamente | `1` (Bob) |
 | `7` | `246` | - | - | `Bob` | Bob acessa seu site novamente no desktop dele, não autenticado | `1` (Bob) |
 
 >[!NOTE]
