@@ -4,16 +4,16 @@ description: Como usar e interpretar o painel Tempo gasto com a reprodução de 
 feature: Panels
 role: User, Admin
 exl-id: 9268baf7-b50b-4c09-a722-7bfcd4172f15
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: 5ae8bf2bfeb3496e4806629618cdc3ce8d3e9b71
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 100%
+source-wordcount: '246'
+ht-degree: 84%
 
 ---
 
 # Painel Tempo gasto com a reprodução da mídia
 
-Os clientes do Media Analytics podem analisar o tempo de reprodução gasto para entender onde ocorreu o pico de simultaneidade ou onde ocorreram quedas para fornecer insights valiosos sobre a qualidade do conteúdo e o engajamento do visualizador e para ajudar na solução de problemas ou no planejamento de volume ou escala.
+Você pode analisar o tempo de reprodução gasto para entender onde ocorreu o pico de simultaneidade ou onde ocorreram quedas, para fornecer informações valiosas sobre a qualidade do conteúdo e engajamento do visualizador e para ajudar na solução de problemas ou no planejamento de volume ou escala.
 
 No Analysis Workspace, o Tempo gasto com a reprodução é a quantidade de tempo gasto visualizando os fluxos de mídia em um momento específico e inclui os períodos de pausa, buffer e tempo para iniciar.
 
