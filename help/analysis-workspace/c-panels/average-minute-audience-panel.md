@@ -4,7 +4,7 @@ description: Como usar e interpretar o painel Público-alvo médio por minuto no
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: a9ba9def94a2f156f6d2d8e59c0155a492c3978c
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
 source-wordcount: '1313'
 ht-degree: 23%
@@ -13,6 +13,8 @@ ht-degree: 23%
 
 
 # Painel Audiência média por minuto de mídia
+
+<!-- THIS FEATURE IS SCHEDULED FOR 2023 -->
 
 Os clientes do Media Analytics podem usar o painel Audiência média por minuto para entender melhor o consumo médio de seu conteúdo. A Audiência média por minuto permite as comparações da programação de qualquer comprimento ou gênero. Além disso, os clientes podem comparar ou anexar essa Audiência média por minuto digital às métricas de minuto médio linear da TV. Esse painel oferece mais flexibilidade para medir a audiência média em períodos de tempo personalizados, bem como quando a classificação de duração for atualizada após o fato. A métrica de Audiência média por minuto atual só funciona se a duração estiver disponível no momento do processamento.
 

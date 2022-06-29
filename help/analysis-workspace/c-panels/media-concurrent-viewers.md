@@ -3,14 +3,20 @@ title: Painel de visualizadores simultâneos de mídia
 description: Como usar e interpretar o painel Visualizadores simultâneos de mídia no Analysis Workspace.
 feature: Panels
 role: User, Admin
-source-git-commit: 9ae083c0e143e25570cc62aa0e7720ce66590161
+exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
+source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1017'
 ht-degree: 96%
 
 ---
 
 # Painel Visualizadores simultâneos de mídia
+
+>[!NOTE]
+>
+>Este recurso está atualmente em [testes limitados](/help/release-notes/releases.md).
+
 
 Você pode analisar visualizadores simultâneos para entender onde ocorreu o pico de simultaneidade ou onde ocorreram quedas, para fornecer informações valiosas sobre a qualidade do conteúdo e engajamento do visualizador e para ajudar na solução de problemas ou no planejamento de volume ou escala.
 
