@@ -2,14 +2,18 @@
 title: Visão geral de publicação de públicos-alvo do CJA
 description: Saiba mais sobre o conceito de publicação de público-alvo no Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 1abc116892405772530e8c254299b40167613656
+source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 3%
+source-wordcount: '355'
+ht-degree: 5%
 
 ---
 
 # Visão geral da publicação de público-alvo do CJA
+
+>[!NOTE]
+>
+>Este recurso está atualmente em [testes limitados](/help/release-notes/releases.md).
 
 Agora você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCP) no Adobe Experience Platform para direcionamento e personalização de clientes.
 

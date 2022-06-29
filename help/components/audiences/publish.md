@@ -2,14 +2,18 @@
 title: Criar e publicar públicos no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 454d931b8c9f9e4e960a01401623bc9eda4e21d8
+source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 6%
+source-wordcount: '1000'
+ht-degree: 7%
 
 ---
 
 # Criar e publicar públicos
+
+>[!NOTE]
+>
+>Este recurso está atualmente em [testes limitados](/help/release-notes/releases.md).
 
 Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
