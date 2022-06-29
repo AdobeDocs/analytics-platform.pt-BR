@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 9afc0931622509769e53ff5df3ffaa2d99894488
+source-git-commit: 29d8f5e293ddee10578e953e2db224099f7b7033
 workflow-type: tm+mt
-source-wordcount: '2270'
-ht-degree: 100%
+source-wordcount: '2377'
+ht-degree: 95%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 100%
 | A costura de comportamento anônimo para comportamento autenticado é compatível? | Sim. [O Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. |
 | Como a &quot;repetição&quot; funciona no CCA? | O CCA “repete” dados com base em identificadores exclusivos que ele aprendeu. A repetição faz com que novos dispositivos da conexão sejam compilados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/replay.html?lang=pt-BR#step-1%3A-live-stitching) |
 | Como a compilação de dados históricos (preenchimento retroativo) funciona no CCA? | Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR#enable-cross-channel-analytics) |
+| Qual é o comportamento esperado para registros de conjunto de dados de perfil não compilados? | **Exemplo de cenário**: Você associa dois conjuntos de dados em uma conexão do CJA usando `CRMid` como a ID de pessoa. Um é um conjunto de dados de Evento da Web com `CRMid` em todos os registros. O outro conjunto de dados é um conjunto de dados de perfil do CRM. 40% do conjunto de dados do CRM tem `CRMid` presente no conjunto de dados do evento web. Os outros 60% não estão presentes no conjunto de dados de eventos da Web. Esses registros aparecem nos relatórios no Analysis Workspace?<p> **Resposta**: As linhas de perfil que não têm eventos vinculados a elas são armazenadas no CJA. No entanto, não é possível visualizá-los no Analysis Workspace até que um evento vinculado a essa ID seja exibido. |
 
 {style=&quot;table-layout:auto&quot;}
 
