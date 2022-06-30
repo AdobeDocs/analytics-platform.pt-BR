@@ -5,8 +5,8 @@ title: Casos de uso da análise de coorte
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
-source-wordcount: '928'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
