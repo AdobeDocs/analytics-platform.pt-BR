@@ -4,8 +4,8 @@ description: O conceito de atribuição de crédito de um evento bem-sucedido a 
 Feature: Attribution
 exl-id: 845b4310-e1b2-4690-b267-6f6d211845fb
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
-source-wordcount: '388'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
