@@ -4,8 +4,8 @@ description: Para acessar essas funções, selecione Mostrar avançadas na lista
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
-source-wordcount: '2909'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -99,7 +99,7 @@ ASIN(metric)
 
 | Argumento |  |
 |---|---|
-| *métrica* | O cosseno do ângulo que você deseja de -1 a 1. |
+| *metric* | O cosseno do ângulo que você deseja de -1 a 1. |
 
 ## Arco tangente (Linha)
 
@@ -111,7 +111,7 @@ ATAN(metric)
 
 | Argumento |  |
 |---|---|
-| *métrica* | O cosseno do ângulo que você deseja de -1 a 1. |
+| *metric* | O cosseno do ângulo que você deseja de -1 a 1. |
 
 ## Regressão exponencial: valor previsto de Y (Linha)
 
@@ -160,7 +160,7 @@ CEILING(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica que deseja arredondar. |
+| *metric* | A métrica que deseja arredondar. |
 
 ## Cosseno (Linha)
 
@@ -172,7 +172,7 @@ COS(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja obter o cosseno. |
+| *metric* | O ângulo, em radianos, para o qual você deseja obter o cosseno. |
 
 ## Raiz cúbica
 
@@ -184,7 +184,7 @@ CBRT(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica para a qual você deseja obter a raiz cúbica. |
+| *metric* | A métrica para a qual você deseja obter a raiz cúbica. |
 
 ## Cumulativo
 
@@ -267,7 +267,7 @@ FLOOR(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica que deseja arredondar. |
+| *metric* | A métrica que deseja arredondar. |
 
 ## Maior que
 
@@ -287,7 +287,7 @@ COSH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir o cosseno hiperbólico. |
+| *metric* | O ângulo, em radianos, para o qual você deseja descobrir o cosseno hiperbólico. |
 
 ## Seno hiperbólico (Linha)
 
@@ -299,7 +299,7 @@ SINH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir o seno hiperbólico. |
+| *metric* | O ângulo, em radianos, para o qual você deseja descobrir o seno hiperbólico. |
 
 ## Tangente hiperbólica (Linha)
 
@@ -311,7 +311,7 @@ TANH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir a tangente hiperbólica. |
+| *metric* | O ângulo, em radianos, para o qual você deseja descobrir a tangente hiperbólica. |
 
 ## IF (Linha)
 
@@ -361,7 +361,7 @@ LOG10(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O número real positivo para o qual você deseja obter o logaritmo de base 10. |
+| *metric* | O número real positivo para o qual você deseja obter o logaritmo de base 10. |
 
 ## Regressão logarítmica: coeficiente de correlação (Tabela)
 
@@ -427,7 +427,7 @@ LN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O número real positivo para o qual você deseja obter o logaritmo natural. |
+| *metric* | O número real positivo para o qual você deseja obter o logaritmo natural. |
 
 ## NOT
 
@@ -640,7 +640,7 @@ SIN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja obter o seno. |
+| *metric* | O ângulo, em radianos, para o qual você deseja obter o seno. |
 
 ## Pontuação T
 
@@ -682,7 +682,7 @@ TAN (metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O ângulo, em radianos, para o qual você deseja obter a tangente. |
+| *metric* | O ângulo, em radianos, para o qual você deseja obter a tangente. |
 
 ## Pontuação Z (Linha)
 
@@ -709,7 +709,7 @@ Pontuação Z (métrica)
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <i>métrica</i> </td>
+   <td colname="col1"> <i>metric</i> </td>
    <td colname="col2"> <p> Retorna o valor do seu primeiro argumento diferente de zero. </p> </td>
   </tr>
  </tbody>
