@@ -8,7 +8,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
 workflow-type: tm+mt
 source-wordcount: '1457'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -76,9 +76,9 @@ Embora ainda não seja possível compartilhar ou publicar [!UICONTROL filtros] (
 
 Além do conceito de alteração de segmentos, os containers de segmentos também são atualizados.
 
-* **Os contêineres de ocorrência agora são [!UICONTROL Evento] contêineres**. O [!UICONTROL Evento] permite detalhar as informações do visitante com base em visualizações/ocorrências de página individuais.
-* **Os contêineres de visita agora são [!UICONTROL Sessão] contêineres**. O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica.
-* **Os containers do visitante agora são containers [!UICONTROL Pessoa]**. O [!UICONTROL Pessoa] O contêiner inclui cada sessão e evento de um visitante dentro do período especificado.
+* **Os containers de ocorrência agora são containers [!UICONTROL Evento].** O container de [!UICONTROL Evento] permite detalhar as informações do visitante com base em visualizações/ocorrências de página individuais.
+* **Os containers de visita agora são containers de [!UICONTROL Sessão].** O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica.
+* **Os containers do visitante agora são containers [!UICONTROL Pessoa]**. O container de [!UICONTROL Pessoa] inclui todas as sessões e eventos para visitantes dentro do intervalo de tempo especificado.
 
 ## Alterações no conceito de métricas calculadas
 

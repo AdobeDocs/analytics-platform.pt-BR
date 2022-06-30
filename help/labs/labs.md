@@ -6,7 +6,7 @@ exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Para acessar o [!UICONTROL Labs]:
 
 1. Caso ainda não tenha acesso ao [!UICONTROL Workspace] e ao [!UICONTROL Labs], peça as credenciais ao seu administrador.
 
-1. No CJA, clique no botão **[!UICONTROL Labs]** guia .
+1. No CJA, clique na guia **[!UICONTROL Labs]**.
 
 ## Avaliar um protótipo
 
@@ -66,10 +66,10 @@ Para iniciar e avaliar um protótipo:
 
 ## Protótipos do CJA Labs
 
-* Gerador de insight em linguagem natural: Fornece um resumo em linguagem natural de quaisquer dados que você esteja analisando em uma tabela de forma livre.
-* Recomendação de visualização: Recomenda visualizações que se emparelhem bem com seus dados.
+* Gerador de insight em linguagem natural: fornece um resumo em linguagem natural de quaisquer dados que você esteja analisando em uma tabela de forma livre.
+* Recomendação de visualização: recomenda visualizações que se emparelhem bem com seus dados.
 
 ## Informações adicionais
 
-* Alguns protótipos no [!UICONTROL Labs] se tornem recursos do Customer Journey Analytics, outros não. Seus comentários guiam a decisão, portanto, reveja os protótipos e informe à Adobe o quanto você os acha valiosos.
+* Alguns protótipos no [!UICONTROL Labs] se tornam recursos do Customer Journey Analytics, outros não. Seus comentários guiam a decisão, portanto, reveja os protótipos e informe à Adobe o quanto você os acha valiosos.
 * O Labs está disponível para todos os direitos de SKU.

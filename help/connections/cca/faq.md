@@ -7,7 +7,7 @@ feature: Cross-Channel Analytics
 source-git-commit: 5eede8eeb5d7e8632dc0d7d580f01ccc7ac8106c
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 

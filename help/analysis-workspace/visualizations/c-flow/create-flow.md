@@ -7,27 +7,27 @@ exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
 source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
 workflow-type: tm+mt
 source-wordcount: '1378'
-ht-degree: 23%
+ht-degree: 56%
 
 ---
 
 # Configurar uma visualização de fluxo
 
-A visualização de Fluxo atualizada permite compreender a jornada que resulta de ou até um evento de conversão específico em seu site ou aplicativo. Ele rastreia um caminho pelas suas dimensões (e itens de dimensão) ou métricas. O fluxo permite configurar o início ou o fim do caminho em que você está interessado ou analisar todos esses caminhos que fluem por uma dimensão ou item de dimensão.
+A visualização de fluxo atualizada permite que você entenda a jornada decorrente ou que leva a um evento de conversão específico em seu site ou aplicativo. Ela rastreia um caminho pelas suas dimensões (e itens de dimensão) ou métricas. O fluxo permite configurar o início ou o fim do caminho em que você está interessado ou analisar todos esses caminhos que fluem por uma dimensão ou item de dimensão.
 
-O novo [!UICONTROL fluxo] A experiência aprimora o fluxo de trabalho de várias maneiras:
+A nova experiência de [!UICONTROL fluxo] aprimora o fluxo de trabalho de várias maneiras:
 
 * Agora é possível optar por iniciar ou terminar seu caminho com a combinação de uma métrica e uma dimensão de definição de caminho.
-* Ele contém [!UICONTROL Configurações avançadas] para permitir personalizar ainda mais a variável [!UICONTROL fluxo].
-* O novo botão &quot;Criar&quot; economiza tempo na análise, permitindo configurar a jornada de uma só vez, depois consultar e criar automaticamente várias colunas e nós de uma só vez &#x200B;.
+* Ele contém [!UICONTROL Configurações avançadas] para permitir personalizar ainda mais o [!UICONTROL fluxo].
+* O novo botão “Criar” economiza tempo na análise, permitindo configurar a jornada de uma só vez, depois consultar e criar automaticamente várias colunas e nós de uma só vez.
 
-![nova interface de usuário de fluxo](assets/new-flow.png)
+![Nova interface de usuário de fluxo](assets/new-flow.png)
 
 ## Etapas de configuração {#configure}
 
-1. Para começar a criar um diagrama de fluxo, adicione um painel em branco ao projeto e clique no ícone de visualizações no painel à esquerda. Em seguida, arraste a visualização de Fluxo para o painel. Ou arraste a [!UICONTROL Fluxo] visualização em um projeto existente.
+1. Para começar a criar um diagrama de fluxo, adicione um painel em branco ao projeto e clique no ícone de visualizações no painel à esquerda. Em seguida, arraste a visualização de Fluxo para o painel. Ou arraste a visualização de [!UICONTROL Fluxo] a um projeto existente.
 
-1. Âncora a visualização de Fluxo usando uma das três opções:
+1. Ancore a visualização de Fluxo usando uma das três opções:
 
    * [!UICONTROL Começa com] (métricas, dimensões ou itens) ou
    * [!UICONTROL Contém] (dimensões ou itens), ou
@@ -39,15 +39,15 @@ O novo [!UICONTROL fluxo] A experiência aprimora o fluxo de trabalho de várias
    * Arraste itens da lista de dimensões ou métricas.
    * Use a pesquisa para encontrar as métricas ou dimensões que você está procurando.
 
-   Por exemplo, vamos supor que você queira rastrear tudo o que leva a um evento de finalização. Você arrastaria uma dimensão ou métrica relacionada à finalização (como [!UICONTROL A ordem existe]) na **[!UICONTROL Termina com]** área de soltar.
+   Por exemplo, vamos supor que você queira rastrear tudo o que leva a um evento de check-out. Você arrastaria uma dimensão ou métrica relacionada ao check-out (como [!UICONTROL Pedido existente]) na área **[!UICONTROL Termina com]**.
 
-1. Se você escolher uma métrica, também precisará fornecer uma [!UICONTROL Dimension de definição de caminho], como mostrado aqui, que você usará para criar o caminho. O padrão é [!UICONTROL Página].
+1. Se você escolher uma métrica, também precisará fornecer uma [!UICONTROL Dimensão de definição de caminho], como mostrado aqui, que você usará para criar o caminho. O padrão é [!UICONTROL Página].
 
-   ![dimensão da definição de caminho](assets/pathing-dim.png)
+   ![Dimensão de definição de caminho](assets/pathing-dim.png)
 
    >[!IMPORTANT]
    >
-   >As métricas calculadas não podem ser soltas no  **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]** áreas para soltar.
+   >As métricas calculadas não podem ser soltas nas áreas **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]**.
 
 1. (Opcional) Clique em **[!UICONTROL Mostrar configurações avançadas]** para configurar as Configurações avançadas:
 
@@ -55,7 +55,7 @@ O novo [!UICONTROL fluxo] A experiência aprimora o fluxo de trabalho de várias
 
    | Configuração | Descrição |
    | --- | --- |
-   | **[!UICONTROL Quebrar rótulos]** | Normalmente, os rótulos nos Elementos de fluxo são truncados para não poluir visualmente a tela, mas é possível tornar todos os rótulos visíveis ao selecionar esta caixa.  Padrão = desmarcado. |
+   | **[!UICONTROL Rótulos de quebra de linha]** | Normalmente, os rótulos nos Elementos de fluxo são truncados para não poluir visualmente a tela, mas é possível tornar todos os rótulos visíveis ao selecionar esta caixa.  Padrão = desmarcado. |
    | **[!UICONTROL Incluir instâncias repetidas]** | As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas, por exemplo, recarregamentos de página. No entanto, as repetições não podem ser removidas das Visualizações de fluxo que incluem dimensões com vários valores, como listVars, listProps, s.product, eVars de merchandising etc. Padrão = desmarcado. |
    | **[!UICONTROL Limite para a primeira/última ocorrência]** | Limite os caminhos para aqueles que começam/terminam com a primeira/última ocorrência de uma dimensão/item/métrica. Consulte a seção abaixo intitulada &quot;Exemplo de cenário para &#39;limitar à primeira/última ocorrência&#39;&quot; para obter uma explicação mais detalhada. |
    | **[!UICONTROL Número de colunas]** | Determina quantas colunas você deseja incluir no diagrama de Fluxo. |
@@ -64,11 +64,11 @@ O novo [!UICONTROL fluxo] A experiência aprimora o fluxo de trabalho de várias
 
 1. Clique em **[!UICONTROL Criar]**.
 
-## Exibir e alterar a saída do Fluxo {#output}
+## Exibir e alterar a saída do fluxo {#output}
 
 ![saída do fluxo](assets/flow-output.png)
 
-Um resumo da configuração de Fluxo é exibido na parte superior do diagrama. Os caminhos no diagrama são proporcionais. Caminhos com maior atividade aparecem mais grossos.
+Um resumo da configuração de fluxo é exibido na parte superior do diagrama. Os caminhos no diagrama são proporcionais. Caminhos com maior atividade aparecem mais grossos.
 
 Para detalhar ainda mais os dados, você tem várias opções:
 

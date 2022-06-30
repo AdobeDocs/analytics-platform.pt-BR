@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: d4b1d5f784a98c5e14d653d03aec4b811a34462a
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -174,7 +174,7 @@ ht-degree: 92%
       + [Anotações móveis](components/annotations/mobile-annotations.md)
    + Públicos-alvo {#audiences}
       + [Visão geral de públicos-alvo](components/audiences/audiences-overview.md)
-      + [Criar e publicar públicos](components/audiences/publish.md)
+      + [Criar e publicar públicos-alvo](components/audiences/publish.md)
       + [Gerenciar públicos-alvo](components/audiences/manage.md)
    + Dimensões {#dimensions}
       + [Visualizar dimensões](components/dimensions/view-dimensions.md)
@@ -208,7 +208,7 @@ ht-degree: 92%
          + [Gerenciador de métricas calculadas](components/calc-metrics/cm-workflow/cm-manager.md)
       + [Funções básicas](components/calc-metrics/cm-functions.md)
       + [Funções avançadas](components/calc-metrics/cm-adv-functions.md)
-   + Intervalos de data {#cja-date-ranges}
+   + Intervalos de datas {#cja-date-ranges}
       + [Visão geral dos intervalos de data](components/date-ranges/overview.md)
       + [Criar um intervalo de datas](components/date-ranges/create.md)
       + [Gerenciar intervalos de datas](components/date-ranges/manage.md)
