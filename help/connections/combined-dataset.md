@@ -5,16 +5,16 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: 6b5f4659e9bae02e2665db3c0ee02d143dbc7ea0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Conjuntos de dados de evento combinados
 
-Ao criar uma conexão, o Customer Journey Analytics (CJA) combina todos os esquemas e conjuntos de dados em um único conjunto de dados. Esse &quot;conjunto de dados combinados&quot; é o que o CJA usa para os relatórios. Ao incluir vários esquemas ou conjuntos de dados em uma conexão:
+Ao criar uma conexão, o Customer Journey Analytics (CJA ) combina todos os esquemas e conjuntos de dados em um único conjunto de dados. Esse &quot;conjunto de dados combinados&quot; é o que o CJA usa para os relatórios. Ao incluir vários esquemas ou conjuntos de dados em uma conexão:
 
 * Os esquemas são combinados. Os campos de esquema duplicados são unidos.
 * A coluna &quot;ID de pessoa&quot; de cada conjunto de dados é unida em uma única coluna, independentemente do nome. Essa coluna é a base para identificar visitantes únicos no CJA.
