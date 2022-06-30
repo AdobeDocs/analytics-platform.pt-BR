@@ -4,13 +4,13 @@ description: Saiba quais recursos do Customer Journey Analytics compõem o Virtu
 feature: Anomaly Detection
 exl-id: 5fb6ac39-d09d-49f0-ae1f-13f223e20800
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
-source-wordcount: '102'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
 
-# Analista virtual
+# Virtual Analyst
 
 O Virtual Analyst, um conjunto de recursos que faz parte do Customer Journey Analytics, usa algoritmos preditivos e aprendizado de máquina para fornecer insights sobre as anomalias que afetam sua empresa. Ele permite automatizar os fluxos de trabalho mais comuns e caros da ciência de dados para identificar a causa de comportamentos incomuns em seus dados.
 
