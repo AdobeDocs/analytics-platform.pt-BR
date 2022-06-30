@@ -7,9 +7,9 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
 source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Você pode exibir e gerenciar todos os blocos de dados em uma pasta de trabalho usando o Gerenciador de blocos de dados. O Gerenciador de bloco de dados fornece recursos de pesquisa, filtro e classificação que permitem localizar rapidamente blocos de dados específicos. Após selecionar um ou mais blocos de dados, você pode editar, excluir ou atualizar os blocos de dados selecionados.
 
-![image](./assets/image52.png)
+![imagem](./assets/image52.png)
 
 ## Exibir blocos de dados
 
@@ -32,15 +32,15 @@ O Gerenciador de bloco de dados lista todos os blocos de dados presentes em uma 
 
 ## Classificar a lista de Blocos de dados
 
-Você pode classificar a lista de bloqueios de dados por uma coluna exibida. Por exemplo, é possível classificar a lista de bloqueios de dados por Conjuntos de relatórios, Filtros, Intervalo de datas e outras variáveis.
+Você pode classificar a lista de blocos de dados por uma coluna exibida. Por exemplo, é possível classificar a lista de blocos de dados por Conjuntos de relatórios, Filtros, Intervalo de datas e outras variáveis.
 
-Para classificar a lista de bloqueios de dados, clique em um cabeçalho de coluna.
+Para classificar a lista de blocos de dados, clique em um cabeçalho de coluna.
 
 ![imagem](./assets/image54.png)
 
-## Pesquisar a Lista de bloqueios de dados
+## Pesquisar a Lista de blocos de dados
 
-Use o campo Procurar para localizar qualquer item na tabela de blocos de dados. Por exemplo, você pode procurar métricas contidas nos blocos de dados ou no conjunto de relatórios. Também é possível pesquisar datas que estejam aparecendo nas colunas intervalo de datas, data modificada ou data da última execução.
+Use o campo Procurar para localizar qualquer item na tabela de blocos de dados. Por exemplo, você pode procurar métricas contidas nos blocos de dados ou no conjunto de relatórios. Também é possível pesquisar datas que estejam aparecendo nas colunas intervalo de datas, data de modificação ou data da última execução.
 
 ![imagem](./assets/image55.png)
 
@@ -75,11 +75,11 @@ Para verificar se um bloco de dados é atualizado, exiba o ícone de status de a
 
 ## Excluir um bloco de dados
 
-Clique no ícone da lixeira para excluir um bloco de dados selecionado.
+Clique no ícone de lixeira para excluir um bloco de dados selecionado.
 
 ## Blocos de dados do grupo
 
-Você pode agrupar blocos de dados usando o **Agrupar por** ou você pode clicar em um título de coluna. Para classificar blocos de dados por coluna, clique no título da coluna. Para agrupar blocos de dados por grupos, selecione um nome de grupo no **Agrupar por** menu suspenso. Por exemplo, a captura de tela abaixo mostra blocos de dados agrupados por Folha. Ele mostra blocos de dados agrupados por Sheet1 e Sheet2.  Isso é útil, por exemplo, no caso de uso de substituição de filtro. Se você tiver vários filtros aplicados a cada bloco de dados, é útil criar um grupo contendo todos os blocos de dados que deseja substituir. Em seguida, é possível selecionar e editar facilmente todos ao mesmo tempo.
+Você pode agrupar blocos de dados usando o menu suspenso **Agrupar por** ou você pode clicar em um título de coluna. Para classificar blocos de dados por coluna, clique no título da coluna. Para agrupar blocos de dados por grupos, selecione um nome de grupo no menu suspenso **Agrupar por**. Por exemplo, a captura de tela abaixo mostra blocos de dados agrupados por Folha. Ela mostra blocos de dados agrupados por Folha1 e Folha2.  Isso é útil, por exemplo, no caso de uso de substituição de filtro. Se tiver vários filtros aplicados a cada bloco de dados, é útil criar um grupo contendo todos os blocos de dados que você deseja substituir. Em seguida, é possível selecionar e editar facilmente todos ao mesmo tempo.
 
 ![imagem](./assets/group-data-blocks.png)
 
