@@ -2,9 +2,9 @@
 title: Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da AEP e o conector de origem do Analytics
 description: Saiba mais sobre ambientes de relatórios virtuais e sandbox.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
+source-git-commit: 6603aed778980c37d69843f11f3ee64e64cd13b5
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '720'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ O Adobe oferece uma variedade de meios para criar ambientes de relatórios virtu
 
 Para obter mais informações, consulte: [Visão geral dos conjuntos de relatórios virtuais](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=pt-BR).
 
-Um VRS:
+Um conjunto de relatórios virtual:
 
 * Pode ser baseado em segmentos do Adobe Analytics.
 * Pode ser aplicado tanto a dados históricos quanto a novos de maneira não destrutiva.
