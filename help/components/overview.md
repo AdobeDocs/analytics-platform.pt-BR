@@ -4,10 +4,10 @@ description: Saiba quais componentes o CJA oferece e como usá-los no relatório
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: d75f432d8933e9f6aa735ff9ca3bc12277ee0b0a
+source-git-commit: 434695e87a0b342da9c17c94b93e0253cf1e621e
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 93%
+source-wordcount: '376'
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,6 @@ Os componentes são recursos do Customer Journey Analytics que podem ser usados 
 Você pode gerenciar os seguintes componentes:
 
 * [**Anotações**](/help/components/annotations/overview.md): Comunique nuances e insights de dados contextuais à sua organização.
-* [**Públicos-alvo**](/help/components/audiences/audiences-overview.md): Criar e publicar públicos descobertos no Customer Journey Analytics (CJA) para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCP) no Adobe Experience Platform para direcionamento e personalização de clientes.
 * [**Filtros:**](filters/filters-overview.md) exclua partes dos dados para se concentrar em itens de dimensão comuns
 * [**Métricas calculadas:**](calc-metrics/calc-metr-overview.md) use métricas e fórmulas como novos componentes para usar nos relatórios
 * [**Intervalos de datas:**](date-ranges/overview.md) personalize e refine os intervalos de datas nas ofertas do Analysis Workspace

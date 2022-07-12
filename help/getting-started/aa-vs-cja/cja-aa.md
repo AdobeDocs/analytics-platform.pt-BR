@@ -4,10 +4,10 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: 434695e87a0b342da9c17c94b93e0253cf1e621e
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 85%
+source-wordcount: '1399'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | --- | --- |
 | Detecção de anomalias | Suporte completo. |
 | Attribution IQ | Suporte completo. |
-| Publicação de público-alvo | Suporte completo. Chamado de Publicação de segmento (envio de segmentos do Workspace para o Experience Cloud) no AA. [Publicação de público-alvo](/help/components/audiences/audiences-overview.md) envia públicos para o Perfil do cliente em tempo real na experience Platform. |
 | Métricas calculadas | Suporte de arquivo; observe que qualquer métrica de cálculo existente no Analysis Workspace tradicional não será transferida para o CJA. |
 | Eventos de calendário | Suporte completo. Os eventos de calendário foram implementados como [Anotações](/help/components/annotations/overview.md) no Espaço de trabalho. |
 | Criador de regras de classificação | Suporte completo. Chamado [substrings](/help/data-views/component-settings/substring.md) no CJA. Usa manipulações de string de caracteres no momento do relatório em vez de conjuntos de dados de pesquisa. |
@@ -31,15 +30,15 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Comparações de datas | Suporte completo. |
 | Intervalos de datas | Toda funcionalidade de intervalo de datas é suportada. |
 | Horário de verão | Suporte completo. |
-| Dimensões Dispositivo, Navegador, Referenciador, Tecnologia | Essas dimensões são incluídas automaticamente quando um conjunto de dados da AEP inclui campos de esquema XDM específicos e está em conformidade com a classe de Evento de experiência XDM. Consulte nossa [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR).<p>Se você não usar o Conector de fonte Adobe para preencher dados do Adobe Analytics para o CJA, mas usar a coleta de dados do SDK do Experience Platform Web, o Dispositivo e as dimensões baseadas na pesquisa do Dispositivo não serão suportados no momento. Eles serão apoiados em breve. |
+| Dimensões Dispositivo, Navegador, Referenciador e Tecnologia | Essas dimensões são incluídas automaticamente quando um conjunto de dados da AEP inclui campos de esquema XDM específicos e está em conformidade com a classe de Evento de experiência XDM. Consulte nossa [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR).<p>Se você não usar o Conector de origem da Adobe para preencher dados do Adobe Analytics no CJA, mas usar a coleção de dados do SDK da web da Experience Platform, o dispositivo e as dimensões com base na pesquisa de dispositivo não terão suporte no momento. Eles terão suporte em breve. |
 | Dimensões | Suporte completo; O CJA usa o XDM e oferece suporte a dimensões ilimitadas. O CJA não está vinculado às eVars ou props personalizadas do Adobe Analytics tradicional. |
 | Exclusão do GDPR | Suporte completo; observe que o GDPR agora é tratado em coordenação com a [!UICONTROL Adobe Experience Platform]. O CJA herda qualquer alteração de dados que a [!UICONTROL Experience Platform] faz nos conjuntos de dados subjacentes. |
 | Variáveis de lista/Props de lista | Suporte completo; o CJA usa o XDM e oferece suporte a matrizes de sequência ilimitadas que podem ser usadas de forma semelhante a listVars. |
-| Persistência da variável de merchandising | Suporte completo via [dimensões de vínculo e métricas de vínculo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension) |
-| eVars de merchandising | Suporte completo via [dimensões de vínculo e métricas de vínculo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
+| Persistência da variável de merchandising | Suporte completo através de [dimensões de ligação e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension) |
+| eVars de merchandising | Suporte completo através de [dimensões de ligação e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html#binding-dimension) |
 | Métricas | Suporte completo; o CJA usa o Experience Data Model (XDM), oferece suporte a métricas ilimitadas e não está vinculado aos eventos bem-sucedidos personalizados do Analytics tradicional. Observe que algumas métricas padrão foram renomeadas do Analytics tradicional: Visitantes = Pessoas, Visitas = Sessões, Ocorrências = Eventos. |
 | Desduplicação de métrica | Suporte completo. |
-| Scorecard/Painéis móveis | Suporte completo. |
+| Cartão de pontuação/painéis móveis | Suporte completo. |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. |
 | Exportação de PDF | Suporte completo. |
 | Curadoria do projeto | Suporte completo. |
@@ -61,7 +60,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | --- | --- |
 | A4T | O suporte é fornecido por meio de campos no [Adobe Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). |
 | Classificações | Agora chamadas de “Conjuntos de dados de pesquisa”. As classificações usadas no Analytics podem ser importadas para o Experience Platform e para o CJA usando o Conector de origem de classificações do Analytics. O upload dos conjuntos de dados de pesquisa também pode ser feito diretamente no AEP e disponibilizado no CJA. |
-| Sessões personalizadas | Suporte para todos os recursos personalizados de sessão, exceto ocorrências em segundo plano móveis. |
+| Sessões personalizadas | Suporte para todos os recursos de sessionalização personalizados, exceto ocorrências em segundo plano para dispositivos móveis. |
 | Atributos do cliente | Agora, chamados de &quot;Conjuntos de dados de perfil&quot;, eles não são importados automaticamente da Experience Cloud, mas precisarão ser carregados para a AEP para que estejam disponíveis no CJA. |
 | Dimensões [!UICONTROL Dispositivo], [!UICONTROL Navegador], [!UICONTROL Referenciador] e [!UICONTROL Tecnologia] | Essas dimensões são incluídas automaticamente quando um conjunto de dados da AEP inclui campos de esquema XDM específicos e está em conformidade com a classe de Evento de experiência XDM. Consulte nossa [documentação sobre quais variáveis do Analytics são compatíveis por meio do Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR). Para clientes CJA que não estão usando o Conector de origem para preencher dados do Adobe Analytics no CJA, mas usam a coleção de dados do SDK da Web da AEP, [!UICONTROL Dispositivo] e as dimensões baseadas na pesquisa Dispositivo, não são compatíveis no momento, mas serão em breve. |
 | Dimensões e métricas de Entradas, Saídas e Tempo gasto | Suportados (Entradas e Saídas agora são chamadas de Inícios de sessão e Términos de sessão) e são calculados de uma maneira ligeiramente diferente. |
@@ -81,7 +80,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Filtragem de bot | Para conjuntos de dados baseados no [Conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html), a filtragem de bot é aplicada. A lógica geral da filtragem de bot para outros conjuntos de dados não é executada pela [!UICONTROL Experience Platform] ou pelo CJA. |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos, Analytics for Target (A4T) e Visualizadores simultâneos de mídia não são compatíveis. |
 | Regras de processamento | Para conjuntos de dados baseados no Conector de origem do Analytics, as regras de processamento ainda são aplicadas. [Os recursos de preparação de dados na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR) também podem ser usados como substituição das regras de processamento para dados que vão diretamente para a Platform. |
-| Análise de mídia de transmissão | Os dados de mídia estão disponíveis como parte do [Conector de origem Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
+| Análise de mídia de transmissão | Os dados de mídia estão disponíveis como parte do [Conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). |
 
 {style=&quot;table-layout:auto&quot;}
 
