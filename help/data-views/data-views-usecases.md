@@ -4,10 +4,10 @@ description: Vários casos de uso que mostram a flexibilidade e o potencial das 
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: f698b236ec37439b1edf7c28497baa8330b05015
+source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 78%
+source-wordcount: '1085'
+ht-degree: 69%
 
 ---
 
@@ -87,7 +87,7 @@ Não se esqueça de renomear cada métrica para refletir as diferenças, como &q
 Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview.md).
 Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).
 
-## Relatório de sessão nova vs. repetição {#new-repeat}
+## 7. Relatórios de sessão novos vs. repetidos {#new-repeat}
 
 Você pode determinar se uma sessão é realmente a primeira sessão de todos os tempos para um usuário, com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
 
@@ -97,9 +97,9 @@ Você pode determinar se uma sessão é realmente a primeira sessão de todos os
 
 Três componentes facilitam esse relatório:
 
-* 1 dimensão: Sessões novas versus recorrentes
+* 1 dimensão: [Tipo de sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Essa dimensão tem dois valores: 1) [!UICONTROL Novo] e 2) [!UICONTROL Retorno]. O [!UICONTROL Novo] item de linha inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído na variável [!UICONTROL Retorno] item de linha (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no bucket &quot;Não aplicável&quot; dessa dimensão.
 
-* 2 métricas: Novas sessões, sessões de retorno
+* 2 métricas: [Novas sessões, sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Uma nova sessão é definida como a primeira sessão de uma pessoa definida na janela de relatórios. Sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.
 
 Para acessar esses componentes:
 
@@ -109,7 +109,7 @@ Para acessar esses componentes:
 
 95% a 99% do tempo, novas sessões serão relatadas com precisão. As únicas exceções são:
 
-* Quando uma sessão ocorreu antes da janela de lookback de 13 meses. Esta sessão será ignorada.
+* Quando uma primeira sessão ocorreu antes da janela de lookback de 13 meses. Esta sessão será ignorada.
 
 * Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. Digamos que você execute um relatório de 1 de junho a 15 de junho de 2022. A janela de lookback abrangeria 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1 de junho de 2022, pois a sessão está incluída na janela de lookback, todas as sessões na janela de relatório serão contadas como sessões recorrentes.
 
