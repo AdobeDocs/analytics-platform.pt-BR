@@ -4,9 +4,9 @@ description: Vários casos de uso que mostram a flexibilidade e o potencial das 
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
+source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1092'
 ht-degree: 69%
 
 ---
@@ -88,6 +88,10 @@ Para obter mais informações sobre outras configurações de visualizações de
 Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).
 
 ## 7. Relatórios de sessão novos vs. repetidos {#new-repeat}
+
+>[!NOTE]
+>
+>Esta funcionalidade está atualmente em testes limitados.
 
 Você pode determinar se uma sessão é realmente a primeira sessão de todos os tempos para um usuário, com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
 
