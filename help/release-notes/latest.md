@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 22%
+ht-degree: 46%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 22%
 | Recurso | Descrição | [Data Alvo](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | Relatório da primeira vez vs. repetição da sessão | Agora você pode descobrir se uma sessão específica foi a primeira sessão de um usuário. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) | 20 de julho de 2022 |
-| Suporte para campos numéricos como chaves de pesquisa e valores de pesquisa | Útil se você quiser classificar valores de string com um campo numérico, como COGS ou margem em um SKU de produto. Permitir métricas a partir de pesquisas ajuda a colocar esses pontos de dados em relatórios. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#numeric) | 20 de julho de 2022 |
+| Suporte para campos numéricos como chaves de pesquisa e valores de pesquisa | Útil se você quiser classificar valores de string com um campo numérico, como COGS ou margem em uma SKU de produto. Permitir métricas a partir de pesquisas ajuda a colocar esses pontos de dados em relatórios. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#numeric) | 20 de julho de 2022 |
 
 ## Correções
 
