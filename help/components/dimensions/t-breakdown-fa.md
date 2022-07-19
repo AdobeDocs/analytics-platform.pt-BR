@@ -6,13 +6,13 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '347'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Detalhamento de dimensões no Workspace
+# Detalhamento de dimensões no Espaço de trabalho
 
 Analise dimensões e itens de dimensão no Analysis Workspace.
 
