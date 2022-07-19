@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1457'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Muito do que você conhece no lado dos relatórios não mudou.
 
 * Você ainda pode usar o potencial do [Analysis Workspace](/help/analysis-workspace/home.md) para analisar seus dados. O Espaço de trabalho opera da mesma forma que no Adobe Analytics tradicional.
 * A mesma versão de [Painéis do Adobe Analytics](/help/mobile-app/home.md) está disponível e funciona de forma semelhante entre o CJA e o Analytics tradicional.
-* [Report Builder](/help/report-builder/report-buider-overview.md) O tem uma nova interface e é executada no MS Windows, no MacOS e na versão da Web do Excel. (Antes dessa versão do Report Builder, você não podia usá-lo no Mac a menos que o executasse no VMware.) Esta versão ainda não oferece suporte à solicitação de dados do AA tradicional.
+* O [Report Builder](/help/report-builder/report-buider-overview.md) tem uma nova interface e é executado no MS Windows, no MacOS e na versão da Web do Excel. (Antes dessa versão do Report Builder, você não podia usá-lo no Mac a menos que o executasse no VMware.) Esta versão ainda não oferece suporte à solicitação de dados do AA tradicional.
 
 ## Alterações nos relatórios
 
