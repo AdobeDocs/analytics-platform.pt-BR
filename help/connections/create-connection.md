@@ -1,13 +1,13 @@
 ---
 title: Criar uma conexão
-description: Descreve como criar uma conexão com um conjunto de dados da plataforma no Customer Journey Analytics.
+description: Descreve como criar uma conexão com um conjunto de dados da Plataform no Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: 31d4faaf14adb7f11f975f77864074cd25a6e3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2473'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Para cada conjunto de dados adicionado a essa conexão, o [!UICONTROL Customer J
 
 Há 3 tipos diferentes de conjunto de dados: dados de [!UICONTROL Evento], dados de [!UICONTROL Perfil] e dados de [!UICONTROL Pesquisa].
 
-| Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID da pessoa |
+| Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID de pessoa |
 |---|---|---|---|---|
 | **[!UICONTROL Evento]** | Dados que representam eventos no tempo (por exemplo, visitas da Web, interações, transações, dados de POS, dados de pesquisa, dados de impressão de anúncio etc.). Por exemplo, eles podem ser dados de sequência de cliques típicos, com uma ID do cliente ou uma ID do cookie e um carimbo de data e hora. Com os dados do Evento, você tem flexibilidade para saber qual ID é usada como a ID da pessoa. | É automaticamente definido para o campo de carimbo de data e hora padrão a partir de esquemas baseados em eventos no [!UICONTROL Experience Platform]. | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Série de tempo”. Exemplos incluem “Evento de experiência XDM” ou “Evento de decisão XDM”. | Você pode escolher a ID de pessoa que deseja incluir. Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas opções pode ser usada como a ID de pessoa. Os exemplos incluem ID de cookie, ID com título, ID de usuário, código de rastreamento, etc. |
 | **[!UICONTROL Pesquisa]** | Esses dados são usados para procurar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode fazer o upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte este [caso de uso](/help/use-cases/b2b.md) para ver um exemplo. | N/D | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Gravar”, exceto a classe “Perfil individual XDM”. | N/D |
@@ -109,7 +109,7 @@ Há 3 tipos diferentes de conjunto de dados: dados de [!UICONTROL Evento], dados
 
 ## Usar campos numéricos como chaves de pesquisa e valores de pesquisa {#numeric}
 
-Essa funcionalidade é útil se você quiser adicionar um campo numérico, como um custo ou margem, a um campo de chave baseado em sequência. Ela permite que valores numéricos façam parte de pesquisas, como chaves ou como valores. No esquema de pesquisa, você pode ter valores numéricos vinculados, por exemplo, aos nomes de produtos, COGS, custo de marketing da campanha ou margens. Este é um exemplo de esquema de pesquisa no Adobe Experience Platform:
+Essa funcionalidade é útil se você quiser adicionar um campo numérico, como um custo ou margem, a um campo de chave baseado em sequência. Ela permite que valores numéricos façam parte de pesquisas, como chaves ou como valores. No esquema de pesquisa, você pode ter valores numéricos vinculados, por exemplo, aos nomes de produtos, COGS, custo de marketing da campanha ou margens. Este é um exemplo de esquema de pesquisa na Adobe Experience Platform:
 
 ![Esquema de pesquisa](assets/schema.png)
 
@@ -121,7 +121,7 @@ Ao configurar uma visualização de dados com base nessa conexão, você adicion
 
 ## Usar o Mapa de identidade como uma ID de pessoa {#id-map}
 
-O Customer Journey Analytics suporta a capacidade de usar o Mapa de identidade para sua ID de pessoa. O Mapa de identidade é uma estrutura de dados de mapa que permite carregar pares de chaves -> valores. As chaves são namespaces de identidade e o valor é uma estrutura que contém o valor de identidade. O Mapa de identidade existe em cada linha/evento carregado e é preenchido de acordo com cada linha.
+O Customer Journey Analytics permite usar o Mapa de identidade para sua ID de pessoa. O Mapa de identidade é uma estrutura de dados de mapa que permite que alguém carregue a chave -> pares de chaves. As chaves são namespaces de identidade e o valor é uma estrutura que contém o valor de identidade. O Mapa de identidade existe em cada linha/evento carregado e é preenchido de acordo com cada linha.
 
 O Mapa de identidade está disponível para qualquer conjunto de dados que use um esquema com base na classe [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR). Ao selecionar um conjunto de dados para ser incluído em uma conexão do CJA, você tem a opção de selecionar um campo como a ID primária ou o Mapa de identidade:
 
