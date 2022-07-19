@@ -5,9 +5,9 @@ exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: CJA Basics
 source-git-commit: 464961194405341b0bb8240a9e327d668d4cde64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '404'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -24,12 +24,12 @@ Os clientes do Analytics Select, Prime e Ultimate podem adquirir esse produto co
   <tr> 
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Itens novos ou especiais</b> </p> <p> 
      <ul>
-       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=en"> Combinar conjuntos de relatórios com esquemas diferentes </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=en"> Publicação de público-alvo do CJA </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=en"> Regras de processamento, VISTA e classificações versus Preparação de dados </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=en"> Comparar o processamento de dados entre os recursos de relatório do Adobe Analytics e do CJA </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/vrs-dataview-sandbox-adc.html?lang=en"> Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da AEP e o Conector de origem do Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=pt-BR"> Evolução do Adobe Analytics para Customer Journey Analytics </a> </li>
+       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=pt-BR"> Combinar conjuntos de relatórios com esquemas diferentes </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=pt-BR"> Publicação de público-alvo do CJA </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/pr-vista-dataprep.html?lang=pt-BR"> Regras de processamento, VISTA e classificações em relação ao Preparo de dados </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/data-processing-comparisons.html?lang=pt-BR"> Comparar o processamento de dados entre os recursos de relatório do Adobe Analytics e do CJA </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/vrs-dataview-sandbox-adc.html?lang=pt-BR"> Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da AEP e o Conector de origem do Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja.html?lang=pt-BR"> Evolução do Adobe Analytics para o Customer Journey Analytics </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/aa-to-cja-user.html?lang=pt-BR"> Guia do usuário do CJA para usuários do Adobe Analytics </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#connection-detail"> Usar os recursos aprimorados de gerenciamento de conexão </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=pt-BR#cja-dataviews"> Usar os recursos aprimorados de Visualização de dados </a> </li>
@@ -39,11 +39,11 @@ Os clientes do Analytics Select, Prime e Ultimate podem adquirir esse produto co
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=pt-BR"> Introdução ao Customer Journey Analytics </a> </li> 
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR"> Perguntas frequentes</a> </li> 
    </ul> <p class="head"><b>Notas de versão</b> </p> 
-     <li>Veja o mais recente <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=pt-BR" format="https" scope="external"> Notas de versão do Customer Journey Analytics</a> para novos recursos e correções. </li>
+     <li>Consulte as <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=pt-BR" format="https" scope="external">notas de versão do Customer Journey Analytics</a> mais recentes para ver os novos recursos e correções. </li>
     <td colname="col3" valign="top"> <p class="head"><b>API do CJA</b> </p> 
     <ul> 
-     <li>Ver tudo <a href="https://developer.adobe.com/cja-apis/docs/" format="https" scope="external"> APIs do Customer Journey Analytics</a>. </li>
-      <li>Veja o mais recente <a href="https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API" format="https" scope="external"> API de relatórios do Customer Journey Analytics</a>. </li>
+     <li>Ver todas as <a href="https://developer.adobe.com/cja-apis/docs/" format="https" scope="external"> APIs do Customer Journey Analytics</a>. </li>
+      <li>Veja a mais recente <a href="https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API" format="https" scope="external"> API de relatórios do Customer Journey Analytics</a>. </li>
     </ul> <p class="head"> <b>Recursos da Adobe Experience Platform</b> </p> 
     <ul> 
      <li><a href="https://www.adobe.com/br/experience-platform.html" format="http" scope="external"> Adobe Experience Platform</a> </li> 
