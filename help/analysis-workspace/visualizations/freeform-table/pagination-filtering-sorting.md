@@ -1,10 +1,10 @@
 ---
-description: Paginação, filtragem e classificação de tabelas no Workspace
+description: Paginação, filtragem e classificação de tabelas no Espaço de trabalho
 title: Paginação, filtragem e classificação de tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
