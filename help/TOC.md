@@ -10,9 +10,9 @@ user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para Cross-Channel Analytics, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: f6ad28f8ed766bd25986da48bfd7bd7e86df0861
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '693'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 93%
    + [Perguntas frequentes](getting-started/cja-faq.md)
    + [ Evolução do Adobe Analytics para o Customer Journey Analytics ](getting-started/aa-to-cja.md)
    + [Guia do usuário para novos usuários do Customer Journey Analytics](getting-started/aa-to-cja-user.md)
-   + Comparar Adobe Analytics e Customer Journey Analytics {#compare-aa-cja}
+   + Comparar o Adobe Analytics e o Customer Journey Analytics {#compare-aa-cja}
       + [Suporte a recursos do Customer Journey Analytics](getting-started/aa-vs-cja/cja-aa.md)
       + [Comparar o processamento de dados no Adobe Analytics e no CJA](getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Ambientes de relatórios virtuais e sandbox](getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-      + [Regras de processamento, VISTA e classificações versus Preparação de dados](getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [Regras de processamento, VISTA e classificações em relação ao Preparo de dados](getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID, ECID, AACUSTOMID e o conector de origem do Analytics](getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Implicações de exclusão](getting-started/cja-deletion.md)
    + [Glossário CJA](getting-started/cja-glossary.md)
@@ -106,7 +106,7 @@ ht-degree: 93%
       + [Venn](analysis-workspace/visualizations/venn.md)
       + [Área e área empilhada](analysis-workspace/visualizations/area.md)
       + [Barra e barra empilhada](analysis-workspace/visualizations/bar.md)
-      + [Gráfico de marcadores](analysis-workspace/visualizations/bullet-graph.md)
+      + [Gráfico em marcadores](analysis-workspace/visualizations/bullet-graph.md)
       + [Rosca](analysis-workspace/visualizations/donut.md)
       + [Barra horizontal e Barra horizontal empilhada](analysis-workspace/visualizations/horizontal-bar.md)
       + [Linha](analysis-workspace/visualizations/line.md)
@@ -120,7 +120,7 @@ ht-degree: 93%
       + [Painel em branco](analysis-workspace/c-panels/blank-panel.md)
       + [Painel de forma livre](analysis-workspace/c-panels/freeform-panel.md)
       + [Painel do Quick Insights](analysis-workspace/c-panels/quickinsight.md)
-      + [Painel Visualizadores simultâneos de mídia](analysis-workspace/c-panels/media-concurrent-viewers.md)
+      + [Painel de visualizadores simultâneos de mídia](analysis-workspace/c-panels/media-concurrent-viewers.md)
       + Tempo gasto com reprodução de mídia {#media-playback-timespent}
          + [Visão geral](analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md)
          + [Configurações de entrada e saída](analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md)
