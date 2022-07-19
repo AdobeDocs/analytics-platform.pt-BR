@@ -4,10 +4,10 @@ description: Saiba como o Customer Journey Analytics permite usar o Analysis Wor
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f2a10a34618d625157445bbb496cf3fc93d280af
+source-git-commit: f7b4dcb893586e71302cc6a20ebe931743ea8924
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 100%
+source-wordcount: '925'
+ht-degree: 99%
 
 ---
 
@@ -51,6 +51,10 @@ Antes de começar a usar o Customer Journey Analytics, os seguintes pré-requisi
 
 * Sua organização deve ter um contrato ativo com o Adobe Analytics for Select, Prime ou Ultimate com o complemento Customer Journey Analytics. Se você não tiver certeza do tipo de contrato que possui ou se não tiver certeza se tem o complemento CJA, entre em contato com o Gerente de conta da sua empresa.
 * Sua organização foi provisionada para a Adobe Experience Platform.
+
+## Controle de acesso
+
+Consulte a [Controle de acesso](/help/getting-started/cja-access-control.md) tópico.
 
 ## Atualizações de terminologia
 
