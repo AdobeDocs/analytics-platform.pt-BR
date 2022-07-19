@@ -4,7 +4,7 @@ description: O Criador de métricas calculadas permite aplicar funções matemá
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1044'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ MAXV(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | Uma métrica que você gostaria de avaliar. |
+| *metric* | Uma métrica que você gostaria de avaliar. |
 
 ## Mínimo da coluna
 
@@ -58,7 +58,7 @@ MINV(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | Uma métrica que você gostaria de avaliar. |
+| *metric* | Uma métrica que você gostaria de avaliar. |
 
 ## Soma da coluna
 
@@ -70,7 +70,7 @@ SUM(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica para a qual você deseja obter o valor total ou soma. |
+| *metric* | A métrica para a qual você deseja obter o valor total ou soma. |
 
 ## Contagem (Tabela)
 
@@ -82,7 +82,7 @@ COUNT(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica que deseja contar. |
+| *metric* | A métrica que deseja contar. |
 
 ## Expoente (Linha)
 
@@ -94,7 +94,7 @@ EXP(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | O exponente aplicado à base *e*. |
+| *metric* | O exponente aplicado à base *e*. |
 
 ## Exponenciação
 
@@ -114,7 +114,7 @@ MEAN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica para a qual você deseja obter a média. |
+| *metric* | A métrica para a qual você deseja obter a média. |
 
 ## Mediana (Tabela)
 
@@ -126,7 +126,7 @@ MEDIAN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica para a qual você deseja obter a mediana. |
+| *metric* | A métrica para a qual você deseja obter a mediana. |
 
 ## Módulo
 
@@ -169,7 +169,7 @@ PERCENTILE(metric,k)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>métrica</i> </td> 
+   <td colname="col1"> <i>metric</i> </td> 
    <td colname="col2"> A coluna de métrica que define a posição relativa. </td> 
   </tr> 
   <tr> 
@@ -196,7 +196,7 @@ QUARTILE(metric,quart)
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <i>métrica</i> </td> 
+   <td colname="col1"> <i>metric</i> </td> 
    <td colname="col2"> A métrica para a qual você deseja obter o valor do quartil. </td> 
   </tr> 
   <tr> 
@@ -300,7 +300,7 @@ VARIANCE(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *métrica* | A métrica para a qual você deseja obter a variação. |
+| *metric* | A métrica para a qual você deseja obter a variação. |
 
 Para calcular uma variação, considere uma coluna inteira de números. Nessa lista de números, calcule primeiro a média. Após obter a média, faça o seguinte em cada entrada:
 
