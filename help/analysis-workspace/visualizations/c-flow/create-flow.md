@@ -1,13 +1,13 @@
 ---
-description: Use a visualização de fluxo em um projeto do Workspace.
+description: Use a visualização de fluxo em um projeto do Espaço de trabalho.
 title: Configurar uma visualização de fluxo
 feature: Visualizations
 role: User, Admin
 exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
 source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1378'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ A nova experiência de [!UICONTROL fluxo] aprimora o fluxo de trabalho de vária
    * [!UICONTROL Contém] (dimensões ou itens), ou
    * [!UICONTROL Termina com] (métricas, dimensões ou itens)
 
-   Cada uma dessas categorias é mostrada na tela como uma “área”. É possível preencher a área de soltar de 3 maneiras:
+   Cada uma dessas categorias é mostrada na tela como uma “área”. É possível preencher a área de lançamento de 3 maneiras:
 
    * Use o menu suspenso para selecionar métricas ou dimensões.
    * Arraste itens da lista de dimensões ou métricas.
@@ -57,7 +57,7 @@ A nova experiência de [!UICONTROL fluxo] aprimora o fluxo de trabalho de vária
    | --- | --- |
    | **[!UICONTROL Rótulos de quebra de linha]** | Normalmente, os rótulos nos Elementos de fluxo são truncados para não poluir visualmente a tela, mas é possível tornar todos os rótulos visíveis ao selecionar esta caixa.  Padrão = desmarcado. |
    | **[!UICONTROL Incluir instâncias repetidas]** | As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas, por exemplo, recarregamentos de página. No entanto, as repetições não podem ser removidas das Visualizações de fluxo que incluem dimensões com vários valores, como listVars, listProps, s.product, eVars de merchandising etc. Padrão = desmarcado. |
-   | **[!UICONTROL Limite para a primeira/última ocorrência]** | Limite os caminhos para aqueles que começam/terminam com a primeira/última ocorrência de uma dimensão/item/métrica. Consulte a seção abaixo intitulada &quot;Exemplo de cenário para &#39;limitar à primeira/última ocorrência&#39;&quot; para obter uma explicação mais detalhada. |
+   | **[!UICONTROL Limite para a primeira/última ocorrência]** | Limite os caminhos para aqueles que começam/terminam com a primeira/última ocorrência de uma dimensão/item/métrica. Consulte a seção abaixo intitulada “Exemplo de cenário para &#39;limitar à primeira/última ocorrência” para obter uma explicação mais detalhada. |
    | **[!UICONTROL Número de colunas]** | Determina quantas colunas você deseja incluir no diagrama de Fluxo. |
    | **[!UICONTROL Itens expandidos por coluna]** | Quantos itens você deseja em cada coluna. |
    | **[!UICONTROL Contêiner de fluxo]** | <ul><li>Visita</li><li>Visitante</li></ul> Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. Essas configurações ajudam você a entender o envolvimento no nível dos visitantes (ao longo das visitas) ou restringir a análise a uma só visita. |
@@ -93,7 +93,7 @@ Para detalhar ainda mais os dados, você tem várias opções:
 Acima de cada coluna, um filtro é exibido quando você passa o mouse sobre ele. Ao clicar no filtro, você obtém a mesma caixa de diálogo de filtro que existe na tabela de Forma livre hoje. Esse filtro funciona da mesma forma que na tabela de Forma livre.
 
 * Use as configurações avançadas para incluir ou excluir determinados critérios com nossa lista de operadores.
-* Depois de filtrar um item da lista, essa coluna específica refletirá a filtragem. (O filtro o reduz para mostrar apenas o item permitido no filtro, ou remove todos os itens, exceto o item que você deseja no filtro.
+* Depois de filtrar um item da lista, essa coluna específica refletirá a filtragem. O filtro o reduz para mostrar apenas o item permitido no filtro, ou remove todos os itens, exceto o item que você deseja no filtro.
 * Todas as colunas downstream e upstream devem persistir, desde que haja dados fluindo para os nós restantes.
 * Depois de aplicado, o ícone de filtro aparece em azul acima da coluna em que está filtrando.
 * Para remover um filtro, clique no ícone de filtro para abrir o menu de filtro. Remova os filtros aplicados e clique em **[!UICONTROL Salvar]**. O fluxo deve retornar ao estado anterior e não filtrado.
@@ -109,17 +109,17 @@ Acima de cada coluna, um filtro é exibido quando você passa o mouse sobre ele.
 | [!UICONTROL Tendência] | Crie um diagrama de tendências para o nó. |
 | [!UICONTROL Expandir toda a coluna] | Expanda uma coluna para exibir todos os nós. Por padrão, somente os cinco principais nós são exibidos. |
 | [!UICONTROL Recolher toda a coluna] | Ocultar todos os nós em uma coluna. |
-| [!UICONTROL Excluir item]/[!UICONTROL Restaurar itens excluídos] | Remove um nó específico da coluna e o cria automaticamente como filtro na parte superior da coluna. Para restaurar o item excluído, clique com o botão direito do mouse novamente e selecione **[!UICONTROL Restaurar item excluído]**. você também pode abrir o filtro na parte superior da coluna e remover a caixa de seleção com o item que acabou de excluir. |
+| [!UICONTROL Excluir item]/[!UICONTROL Restaurar itens excluídos] | Remove um nó específico da coluna e o cria automaticamente como filtro na parte superior da coluna. Para restaurar o item excluído, clique com o botão direito do mouse novamente e selecione **[!UICONTROL Restaurar item excluído]**. Você também pode abrir o filtro na parte superior da coluna e remover a caixa de seleção com o item que acabou de excluir. |
 
-## Exemplo de cenário para &#39;limitar à primeira/última ocorrência&#39;
+## Exemplo de cenário para “limitar à primeira/última ocorrência”
 
 Ao usar essa opção, lembre-se de que:
 
-* **[!UICONTROL Limitar à primeira/última ocorrência]** O conta somente a primeira/última ocorrência na série. Todas as outras ocorrências da variável **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]** os critérios são descartados.
-* Se usada com um **[!UICONTROL Começa com]** , somente a primeira ocorrência que corresponde aos critérios de início é incluída.
-* Se usada com um **[!UICONTROL Termina com]** , somente a última ocorrência que corresponde aos critérios finais será incluída.
-* As séries utilizadas diferem de acordo com o contentor. Se estiver usando a variável **[!UICONTROL Visita]** , a série de ocorrências será a sessão. Se estiver usando a variável **[!UICONTROL Visitante]** , a série de ocorrências será todas as ocorrências de um determinado usuário no intervalo de datas fornecido.
-* O **[!UICONTROL Limitar à primeira/última ocorrência]** pode ser configurada nas configurações avançadas ao usar uma Métrica ou Dimension Item nos campos &quot;Inicia com&quot; ou &quot;Termina com&quot;.
+* **[!UICONTROL Limitar à primeira/última ocorrência]** conta somente a primeira/última ocorrências na série. Todas as outras ocorrências dos critérios **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]** são descartados.
+* Se usada com um fluxo **[!UICONTROL Começa com]**, somente a primeira ocorrência que corresponde aos critérios de início é incluída.
+* Se usada com um fluxo **[!UICONTROL Termina com]**, somente a última ocorrência que corresponde aos critérios finais será incluída.
+* As séries utilizadas diferem de acordo com o container. Se estiver usando o container **[!UICONTROL Visita]**, a série de ocorrências será a sessão. Se estiver usando o container **[!UICONTROL Visitante]**, a série de ocorrências será todas as ocorrências de um determinado usuário no intervalo de datas fornecido.
+* A opção **[!UICONTROL Limitar à primeira/última ocorrência]** pode ser definida nas configurações avançadas ao usar uma Métrica ou Item de dimensão nos campos “Inicia com” ou “Termina com”.
 
 Exemplo de série de ocorrências:
 
@@ -127,24 +127,29 @@ Início > Produtos > Adicionar ao carrinho > Produtos > Adicionar ao carrinho > 
 
 ### Considere uma análise de fluxo usando as seguintes configurações:
 
-* Comece com[!UICONTROL  Adicionar ao carrinho] (Dimension Item)
-* [!UICONTROL Página] dimensão da definição de caminho
-* [!UICONTROL Visita] container
+* Comece com[!UICONTROL  Adicionar ao carrinho] (Item de dimensão)
+* Dimensão da definição de caminho de [!UICONTROL Página] 
+* Container de [!UICONTROL Visita]
 
-Se &quot;Limitar à primeira/última ocorrência&quot; estiver desativado, essa única série de ocorrências contaria 2 ocorrências de &quot;Adicionar ao carrinho&quot;.
-Saída de fluxo esperada: &quot;Adicionar ao carrinho&quot; (2) —> &quot;Produtos&quot; (1) -> &quot;Faturamento&quot; (1)
+Se “Limitar à primeira/última ocorrência” estiver desativado, essa única série de ocorrências contaria 2 ocorrências de “Adicionar ao carrinho”.
+Saída de fluxo esperada:
+“Adicionar ao carrinho” (2) —> “Produtos” (1)
+-> “Faturamento” (1)
 
-No entanto, se &quot;Limitar à primeira/última ocorrência&quot; estiver ativado, somente a primeira ocorrência de &quot;Adicionar ao carrinho&quot; será incluída na análise.
-Saída de fluxo esperada: &quot;Adicionar ao carrinho&quot; (1) —> &quot;Produtos&quot; (1)
+No entanto, se a opção “Limitar à primeira/última ocorrência” estiver ativada, somente a primeira ocorrência de “Adicionar ao carrinho” será incluída na análise.
+Saída de fluxo esperada:
+“Adicionar ao carrinho” (1) —> “Produtos” (1)
 
 ### Considere a mesma série de ocorrências, mas use as seguintes configurações:
 
-* Termina com [!UICONTROL Adicionar ao carrinho] (Dimension Item)
-* [!UICONTROL Página] dimensão da definição de caminho
-* [!UICONTROL Visita] container
+* Termina com [!UICONTROL Adicionar ao carrinho] (Item de dimensão)
+* Dimensão da definição de caminho de [!UICONTROL Página]
+* Container de [!UICONTROL Visita]
 
-If **[!UICONTROL Limitar à primeira/última ocorrência]** é *desativado*, essa única série de ocorrências contaria 2 ocorrências de &quot;Adicionar ao carrinho&quot;.
-Saída de fluxo esperada: &quot;Produtos&quot; (2) &lt;— &quot;Adicionar ao carrinho&quot; (2)
+Se a opção **[!UICONTROL Limitar à primeira/última ocorrência]** está *desativada*, essa única série de ocorrências contaria 2 ocorrências de “Adicionar ao carrinho”.
+Saída de fluxo esperada:
+“Produtos” (2) &lt;— “Adicionar ao carrinho” (2)
 
-No entanto, se **[!UICONTROL Limitar à primeira/última ocorrência]** é *ativado*, somente a última ocorrência de [!UICONTROL Adicionar ao carrinho] serão incluídas na análise.
-Saída de fluxo esperada: &quot;Produtos&quot; (1) &lt;— &quot;Adicionar ao carrinho&quot; (1)
+No entanto, se a opção **[!UICONTROL Limitar à primeira/última ocorrência]** está *ativada*, somente a última ocorrência de [!UICONTROL Adicionar ao carrinho] seria incluída na análise.
+Saída de fluxo esperada:
+“Produtos” (1) &lt;— “Adicionar ao carrinho” (1)
