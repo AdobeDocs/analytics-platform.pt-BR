@@ -4,19 +4,14 @@ description: Como usar e interpretar o painel Tempo gasto com a reprodução de 
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: db48638cc1e22ca4e555a8981e0f5175d52970f2
+source-git-commit: 9f1394df9b57707d57c701e997df8f4cd70c7baa
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '246'
 ht-degree: 84%
 
 ---
 
 # Painel Tempo gasto com a reprodução da mídia
-
->[!NOTE]
->
->Este recurso está atualmente em [testes limitados](/help/release-notes/releases.md).
-
 
 Você pode analisar o tempo de reprodução gasto para entender onde ocorreu o pico de simultaneidade ou onde ocorreram quedas, para fornecer informações valiosas sobre a qualidade do conteúdo e engajamento do visualizador e para ajudar na solução de problemas ou no planejamento de volume ou escala.
 
