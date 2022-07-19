@@ -3,9 +3,9 @@ title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
 
 ## Usar públicos-alvo do CJA na Experience Platform
 
-O CJA agora pega todas as combinações de namespace e ID de seu público publicado e as transmite para o Perfil do cliente em tempo real (RTCP). O CJA envia o público para o Experience Platform com a identidade primária definida como qualquer ID de pessoa selecionada quando a conexão foi configurada.
+O CJA agora pega todas as combinações de namespace e ID de seu público publicado e as transmite para o Perfil do cliente em tempo real (RTCP). O CJA envia o público-alvo para a Experience Platform com a identidade primária definida como qualquer ID de pessoa selecionada quando a conexão foi configurada.
 
 Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, “user@adobe.com” pode ser direcionado para todos os dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
@@ -90,7 +90,7 @@ Você pode arrastar os públicos-alvo do CJA para a definição de segmentos da 
 
 ## O que acontece se um usuário não é mais membro de um público-alvo no CJA?
 
-Nesse caso, um evento exit é enviado ao Experience Platform do CJA.
+Nesse caso, um evento de saída é enviado à Experience Platform do CJA.
 
 ## Próximas etapas
 
