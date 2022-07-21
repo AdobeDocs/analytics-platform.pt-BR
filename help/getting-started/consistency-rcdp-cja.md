@@ -1,19 +1,20 @@
 ---
-description: Explica quais fatores influenciam a consistência das métricas entre o Real-time Customer Data Platform (CDP em tempo real) e o CJA.
-title: Consistência de métricas entre a CDP em tempo real e a CJA
+description: Explica quais fatores influenciam a consistência das métricas e as contagens de associação de público-alvo entre o Real-time Customer Data Platform (CDP em tempo real) e o CJA.
+title: Consistência de métricas e contagens de associação de público-alvo entre a CDP em tempo real e a CJA
 role: Admin
 feature: CJA Basics
-source-git-commit: 2318b303c981ad556dc61a3419af4cce9fbbf92b
+exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
+source-git-commit: 21d51ababeda7fe188fbd42b57ef3baf76d21774
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '781'
 ht-degree: 2%
 
 ---
 
 
-# Consistência de métricas entre a CDP em tempo real e a CJA
+# Consistência de métricas e contagens de associação de público-alvo entre a CDP em tempo real e a CJA
 
-Em cenários do mundo real, a consistência das métricas no Real-time Customer Data Platform (CDP em tempo real) e no Customer Journey Analytics (CJA) não pode ser garantida. Este documento explica o porquê.
+Em cenários do mundo real, a consistência de métricas e contagens de associação de público-alvo no Real-time Customer Data Platform (CDP em tempo real) e no Customer Journey Analytics (CJA) não pode ser garantida. Este documento explica o porquê.
 
 ## O CJA ainda não usa o Gráfico de identidade
 
