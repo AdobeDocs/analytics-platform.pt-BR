@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: d642b17baa93c3b3533a7e1b4fb966cb66f22173
+source-git-commit: bd246314734e8bcebc351d42ebe28ad4912f7ba6
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 98%
+source-wordcount: '910'
+ht-degree: 95%
 
 ---
 
@@ -17,6 +17,8 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 | Data | Atualizar descrição |
 | --- | --- |
+| Julho de 2022 | [Painel Tempo gasto com a reprodução da mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) documentação. |
+| Julho de 2022 | [Painel Visualizador simultâneo de mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html) documentação. |
 | Julho de 2022 | [Sessão nova vs. repetição](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat) documentação de relatórios. |
 | Junho de 2022 | Novo artigo sobre [AAID, ECID, AACUSTOMID e o Conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html?lang=pt-BR) |
 | Junho de 2022 | Novo artigo sobre [Regras de processamento do Adobe Analytics, VISTA e classificações em relação ao Preparo de dados para o Conector de origem do Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md) |
