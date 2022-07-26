@@ -4,9 +4,9 @@ title: Consistência de métricas e contagens de associação de público-alvo e
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: cf4e2136f5ab4e0ed702820e52e9a62ea8251860
+source-git-commit: 769eef205df32865874753859ce79e573db40641
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,14 @@ ht-degree: 0%
 
 Em cenários do mundo real, a consistência de métricas e contagens de associação de público-alvo no Real-time Customer Data Platform (CDP em tempo real) e no Customer Journey Analytics (CJA) não pode ser garantida. Este documento explica o porquê.
 
+Ao comparar as contagens de associação de público-alvo entre a CDP em tempo real e o CJA, é importante ter em mente os diferentes propósitos dessas duas ferramentas. A CDP em tempo real usa dados de perfil do cliente para direcionar experiências digitais a consumidores individuais, enquanto a CJA é projetada para ajudar os usuários a entender padrões em métricas e segmentos-chave de negócios. Embora a publicação de público-alvo do CJA para a CDP em tempo real permita que um usuário dessas ferramentas &quot;ative&quot; um insight de maneira fácil e nativa, aproveitando os aprendizados obtidos no CJA, essas ferramentas, no entanto, servem objetivos fundamentalmente diferentes.
+
 ## Diferenças nas configurações de identidade
 
 A CDP e o CJA em tempo real não compartilham a mesma definição de pessoa hoje. A CDP em tempo real depende totalmente das informações na [Gráfico de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) para criar um perfil mesclado.
 
 O CJA pode ser configurado para usar [Análise entre canais](/help/connections/cca/overview.md) que extrai identificadores de conjuntos de dados no lago de dados e aplica a lógica personalizada para vinculá-los.
+
 No futuro, o CJA poderá usar o Gráfico de identidade.
 
 ## Diferenças na configuração do conjunto de dados
