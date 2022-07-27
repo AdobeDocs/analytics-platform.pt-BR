@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -87,33 +87,33 @@ Não se esqueça de renomear cada métrica para refletir as diferenças, como &q
 Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview.md).
 Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).
 
-## 7. Relatórios de sessão novos vs. repetidos {#new-repeat}
+## 7. Relatório de sessão Nova vs. Repetida {#new-repeat}
 
 >[!NOTE]
 >
 >Esta funcionalidade está atualmente em testes limitados.
 
-Você pode determinar se uma sessão é realmente a primeira sessão de todos os tempos para um usuário, com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
+Você pode determinar se uma sessão é realmente a primeira sessão de um usuário, com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
 
-* Qual a porcentagem de seus pedidos vem de sessões novas e repetidas?
+* Que porcentagem de seus pedidos vem de sessões novas e repetidas?
 
 * Para um determinado canal de marketing ou uma campanha específica, você está direcionando usuários pela primeira vez ou usuários de retorno? Como essas escolhas influenciaram as taxas de conversão?
 
 Três componentes facilitam esse relatório:
 
-* 1 dimensão: [Tipo de sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - Essa dimensão tem dois valores: 1) [!UICONTROL Novo] e 2) [!UICONTROL Retorno]. O [!UICONTROL Novo] item de linha inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído na variável [!UICONTROL Retorno] item de linha (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no bucket &quot;Não aplicável&quot; dessa dimensão.
+* 1 dimensão: [Tipo de sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=br#optional) - Essa dimensão tem dois valores: 1) [!UICONTROL Novo] e 2) [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item de linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo &quot;Não aplicável&quot; dessa dimensão.
 
-* 2 métricas: [Novas sessões, sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Uma nova sessão é definida como a primeira sessão de uma pessoa definida na janela de relatórios. Sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.
+* 2 métricas: [Novas sessões, sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Uma nova sessão é definida como a primeira sessão definida de uma pessoa na janela de relatórios. Sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.
 
 Para acessar esses componentes:
 
 1. Acesse o editor de visualização de dados.
-1. Clique no botão **[!UICONTROL Componentes]** > **[!UICONTROL Componentes padrão opcionais]** no painel esquerdo.
+1. Clique na guia **[!UICONTROL Componentes]** > **[!UICONTROL Componentes padrão opcionais]** no painel esquerdo.
 1. Arraste-os para a visualização de dados.
 
 95% a 99% do tempo, novas sessões serão relatadas com precisão. As únicas exceções são:
 
-* Quando uma primeira sessão ocorreu antes da janela de lookback de 13 meses. Esta sessão será ignorada.
+* Quando uma primeira sessão ocorreu antes da janela de retrospectiva de 13 meses. Esta sessão será ignorada.
 
-* Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. Digamos que você execute um relatório de 1 de junho a 15 de junho de 2022. A janela de lookback abrangeria 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1 de junho de 2022, pois a sessão está incluída na janela de lookback, todas as sessões na janela de relatório serão contadas como sessões recorrentes.
+* Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. Digamos que você execute um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva englobaria de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1º de junho de 2022, uma vez que a sessão está incluída na janela de retrospectiva, todas as sessões na janela de relatório serão contadas como sessões de retorno.
 
