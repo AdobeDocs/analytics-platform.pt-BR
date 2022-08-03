@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para Cross-Channel Analytics, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 8a23ed7ad39497ed3c9d86fac6cf5b38856b2088
+source-git-commit: 141a41cfff54bf0ec3db031d567fa68d092fd7ee
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '711'
 ht-degree: 97%
 
 ---
@@ -104,18 +104,19 @@ ht-degree: 97%
          + [Visão geral do Fluxo](analysis-workspace/visualizations/c-flow/flow.md)
          + [Configurar uma visualização de fluxo](analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Fluxos interdimensionais](analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + [Histograma](analysis-workspace/visualizations/histogram.md)
-      + [Venn](analysis-workspace/visualizations/venn.md)
       + [Área e área empilhada](analysis-workspace/visualizations/area.md)
       + [Barra e barra empilhada](analysis-workspace/visualizations/bar.md)
       + [Gráfico em marcadores](analysis-workspace/visualizations/bullet-graph.md)
       + [Rosca](analysis-workspace/visualizations/donut.md)
+      + [Histograma](analysis-workspace/visualizations/histogram.md)
       + [Barra horizontal e Barra horizontal empilhada](analysis-workspace/visualizations/horizontal-bar.md)
+      + [Resumo da métrica principal](analysis-workspace/visualizations/key-metric.md)
       + [Linha](analysis-workspace/visualizations/line.md)
       + [Gráfico de dispersão](analysis-workspace/visualizations/scatterplot.md)
       + [Número do resumo e alteração do resumo](analysis-workspace/visualizations/summary-number-change.md)
       + [Texto](analysis-workspace/visualizations/text.md)
       + [Mapa de árvore](analysis-workspace/visualizations/treemap.md)
+      + [Venn](analysis-workspace/visualizations/venn.md)
    + Painéis {#panels}
       + [Visão geral dos painéis](analysis-workspace/c-panels/panels.md)
       + [Painel de atribuição](analysis-workspace/c-panels/attribution.md)
