@@ -4,9 +4,9 @@ description: Detalhes e informações sobre todos os componentes padrão que pod
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8e43c65c372f57dc54d01114b9c06a59d5c0efe4
+source-git-commit: c5a42392df82af4f0f8dcd718e3ce962ad654191
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '915'
 ht-degree: 100%
 
 ---
@@ -36,6 +36,8 @@ Esses componentes padrão obrigatórios são adicionados a cada visualização d
 | [!UICONTROL Trimestre] | Dimensão | O trimestre em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro trimestre no intervalo de datas, e o último item de dimensão é o último trimestre no intervalo de datas. |
 | [!UICONTROL Ano] | Dimensão | O ano em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro ano no intervalo de datas, e o último item de dimensão é o ano mais recente no intervalo de datas. |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Componentes padrão opcionais {#optional}
 
 Os componentes padrão opcionais estão disponíveis em **[!UICONTROL Visualizações de dados]** > **[!UICONTROL Editar visualização de dados]** > **[!UICONTROL Componentes]** > **[!UICONTROL Componentes padrão]**.
@@ -64,3 +66,4 @@ Os componentes padrão opcionais estão disponíveis em **[!UICONTROL Visualiza�
 | [!UICONTROL Tempo gasto por pessoa] | Dimensão | Segmenta a métrica [!UICONTROL Tempo gasto] em segmentos de [!UICONTROL Pessoa]. |
 | [!UICONTROL Final de semana]/[!UICONTROL Dia de semana] | Dimensão de separação de tempo | Final de semana ou Dia de semana |
 
+{style=&quot;table-layout:auto&quot;}
