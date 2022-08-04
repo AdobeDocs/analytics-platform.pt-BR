@@ -7,7 +7,7 @@ feature: CJA Basics
 source-git-commit: f7b4dcb893586e71302cc6a20ebe931743ea8924
 workflow-type: tm+mt
 source-wordcount: '925'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Antes de começar a usar o Customer Journey Analytics, os seguintes pré-requisi
 
 ## Controle de acesso
 
-Consulte a [Controle de acesso](/help/getting-started/cja-access-control.md) tópico.
+Consulte o tópico sobre [Controle de acesso](/help/getting-started/cja-access-control.md).
 
 ## Atualizações de terminologia
 

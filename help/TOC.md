@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 141a41cfff54bf0ec3db031d567fa68d092fd7ee
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 97%
 + Visão geral do Customer Journey Analytics {#cja-overview}
    + [Visão geral do Customer Journey Analytics](getting-started/cja-overview.md)
    + [Introdução](getting-started/cja-getting-started.md)
-   + [Consistência de métricas e contagens de associação de público-alvo entre a CDP em tempo real e a CJA](getting-started/consistency-rcdp-cja.md)
-   + [Controle de acesso CJA](getting-started/cja-access-control.md)
+   + [Consistência de métricas e contagens de associação de público na Real-time CDP e no CJA](getting-started/consistency-rcdp-cja.md)
+   + [Controle de acesso do CJA](getting-started/cja-access-control.md)
    + [Página inicial do Customer Journey Analytics](getting-started/landing.md)
    + [Perguntas frequentes](getting-started/cja-faq.md)
    + [ Evolução do Adobe Analytics para o Customer Journey Analytics ](getting-started/aa-to-cja.md)
