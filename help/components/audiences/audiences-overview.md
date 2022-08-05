@@ -2,10 +2,10 @@
 title: Visão geral de publicação de públicos-alvo do CJA
 description: Saiba mais sobre o conceito de publicação de público-alvo no Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 86998458bd79f1fc17c17e58932b2b8434abf041
-workflow-type: ht
-source-wordcount: '355'
-ht-degree: 100%
+source-git-commit: 94b3e7417b82e9ae3ad080884d4c184bee412c2c
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,11 @@ A publicação de públicos-alvo fornece uma maneira clara de ativar e executar 
 
 ## Permissões
 
-Os administradores recebem automaticamente a permissão [!UICONTROL Publicação de público-alvo] no Adobe Admin Console. Eles podem conceder essa permissão a usuários individuais.
+* Os administradores recebem automaticamente a permissão **[!UICONTROL Publicação de público-alvo]** no Adobe Admin Console.
+
+* Os administradores podem conceder essa permissão a usuários individuais.
+
+* Os administradores também precisam da variável **[!UICONTROL Gerenciar perfis]** no Adobe Experience Platform.
 
 ## Próximas etapas
 
