@@ -4,7 +4,7 @@ description: Todas as configurações que podem ser ajustadas para criar ou edit
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 100%
@@ -126,3 +126,4 @@ Também é possível filtrar por conjuntos de dados e se um campo de esquema con
 Determine o período de inatividade entre eventos antes de uma sessão expirar e um novo ser iniciado. É necessário um período de tempo. Ou também é possível forçar o início de uma nova sessão quando um evento contém uma determinada métrica.
 
 Depois que todas as configurações desejadas forem especificadas, clique em **[!UICONTROL Salvar e concluir]**.
+

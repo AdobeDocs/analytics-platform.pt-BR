@@ -4,10 +4,10 @@ description: Vários casos de uso que mostram a flexibilidade e o potencial das 
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 11171eb6e079adbf41e0abc798a54a5749492eac
+source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -109,11 +109,10 @@ Para acessar esses componentes:
 
 1. Acesse o editor de visualização de dados.
 1. Clique na guia **[!UICONTROL Componentes]** > **[!UICONTROL Componentes padrão opcionais]** no painel esquerdo.
-1. Arraste-os para a visualização de dados.
+1. Arraste esses componentes para a visualização de dados.
 
-95% a 99% do tempo, novas sessões serão relatadas com precisão. As únicas exceções são:
+95% a 99% das vezes, novas sessões são relatadas com precisão. As únicas exceções são:
 
 * Quando uma primeira sessão ocorreu antes da janela de retrospectiva de 13 meses. Esta sessão será ignorada.
 
-* Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. Digamos que você execute um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva englobaria de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1º de junho de 2022, uma vez que a sessão está incluída na janela de retrospectiva, todas as sessões na janela de relatório serão contadas como sessões de retorno.
-
+* Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. Digamos que você execute um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva englobaria de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1 de junho de 2022, pois a sessão está incluída na janela de lookback, todas as sessões na janela de relatório serão contadas como sessões de retorno.
