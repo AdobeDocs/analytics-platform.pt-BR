@@ -4,9 +4,9 @@ description: Combinar valores numéricos em uma dimensão.
 exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '188'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '191'
 ht-degree: 100%
 
 ---
@@ -28,3 +28,5 @@ Se você quiser a flexibilidade de criar relatórios tanto em dimensões segment
 | [!UICONTROL Incluindo] [!UICONTROL e menor que] | Limites de segmentos subsequentes. |
 | [!UICONTROL Maior que ou igual a] | O limite inferior do segmento da última dimensão. |
 | [!UICONTROL Adicionar bloco] | Permite adicionar outro intervalo à classificação de dimensão numérica. Você pode adicionar até 20 segmentos em uma única dimensão. |
+
+{style=&quot;table-layout:auto&quot;}

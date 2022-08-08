@@ -4,9 +4,9 @@ description: Configure como uma métrica é formatada.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '133'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '136'
 ht-degree: 100%
 
 ---
@@ -24,3 +24,5 @@ O Formato permite definir como uma determinada métrica é exibida.
 | [!UICONTROL Moeda] | Se o formato for Moeda, determina em qual moeda a métrica deve ser exibida. Esta opção não aplica qualquer conversão de moeda; ela serve apenas para a formatação da interface. |
 | [!UICONTROL Exibir tendência ascendente como] | Permite especificar se uma tendência de alta nessa métrica é boa (verde) ou ruim (vermelho). |
 | [!UICONTROL Valor verdadeiro] e [!UICONTROL Valor falso] | Visível somente em dados de esquema do tipo Booleano. Permite personalizar o rótulo do item de dimensão para valores `true` e `false`. |
+
+{style=&quot;table-layout:auto&quot;}

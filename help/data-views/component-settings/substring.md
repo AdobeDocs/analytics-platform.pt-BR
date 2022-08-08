@@ -4,9 +4,9 @@ description: Use um subconjunto de uma string como itens de dimensão.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 0178babcd5ae87b491e849c7517eb5792fb14af1
-workflow-type: ht
-source-wordcount: '911'
+source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+workflow-type: tm+mt
+source-wordcount: '914'
 ht-degree: 100%
 
 ---
@@ -113,6 +113,8 @@ Espaços reservados de saída também são permitidos. É possível usar essas s
 | ``$` `` | Gera o texto entre o fim da última correspondência encontrada (ou o início do texto se nenhuma correspondência anterior foi encontrada) e o início da correspondência atual. |
 | `$+` | Gera o que correspondeu à última subexpressão marcada na expressão regular. |
 | `$$` | Gera o caractere de string `"$"`. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Vídeo sobre dimensões de ligação
 
