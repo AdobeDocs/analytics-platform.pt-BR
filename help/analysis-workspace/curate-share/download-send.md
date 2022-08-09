@@ -3,10 +3,10 @@ description: É possível baixar dados do Analysis Workspace copiando-os ou em f
 title: Baixar arquivos PDF ou CSV
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 3f0051868ef559d331fa9e5c4648f9bab7fc8d34
+workflow-type: tm+mt
+source-wordcount: '1048'
+ht-degree: 93%
 
 ---
 
@@ -59,7 +59,7 @@ Se quiser analisar mais do que as 400 linhas de dados visíveis em uma tabela, c
 
 ![](assets/download-items.png)
 
-### Arquivo de itens baixados
+### Arquivo de itens baixados {#items-file}
 
 Os recursos da tabela serão aplicados ao arquivo baixado da seguinte maneira:
 
@@ -71,7 +71,7 @@ No exemplo acima, os itens de Página são baixados com o filtro do painel (Novo
 
 ![](assets/downloaded-file.png)
 
-### Baixar notificações
+### Baixar notificações {#notifications}
 
 À medida que o arquivo for baixado, você verá uma notificação informativa com o progresso. A qualquer momento, você pode cancelar o download clicando em **[!UICONTROL Cancelar download]**. Fechar a janela **não** cancela o download.
 
@@ -80,6 +80,10 @@ Quando o arquivo for concluído, você verá uma notificação de conclusão e o
 Se solicitar mais de um download por vez, você receberá uma notificação de que cada download adicional será enfileirado até que o download anterior seja concluído.
 
 ![](assets/toast.png)
+
+## Baixar dados confidenciais {#sensitive}
+
+Se a política de governança Impor download de dados estiver ativada, qualquer download (como enviar emails ou compartilhar pdfs) de projetos do Workspace fará hash nos campos de dados rotulados como confidenciais. Ainda é possível fazer a análise nesses campos no Workspace, mas se você tentar enviar um email ou compartilhar um projeto de outra forma, os campos bloqueados serão exibidos como itens com hash no arquivo .pdf .
 
 ## Perguntas frequentes {#faq}
 
