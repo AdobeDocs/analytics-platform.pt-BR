@@ -2,7 +2,7 @@
 title: Customer Journey Analytics e Governança de dados
 description: Descreve como o controle de dados funciona no Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 61850e8a1da80a115bf850c64358a512770f852e
+source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 75%
@@ -15,7 +15,7 @@ De modo geral, todas as configurações relacionadas ao controle de dados no Cus
 
 ## Governança de dados
 
-O CJA é compatível com rótulos e políticas de Governança de dados configuradas no Adobe Experience Platform. Para obter mais informações, consulte Suporte CJA para governança de dados do Adobe Experience Platform.
+O CJA é compatível com rótulos e políticas de Governança de dados configuradas no Adobe Experience Platform. Para obter mais informações, consulte [Suporte CJA para Governança de dados do Adobe Experience Platform](/help/data-views/data-governance.md).
 
 ## GDPR
 

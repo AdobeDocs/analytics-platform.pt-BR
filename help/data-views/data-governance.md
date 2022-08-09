@@ -2,9 +2,9 @@
 title: Suporte CJA para Governança de dados do Adobe Experience Platform
 description: Saiba como os rótulos de dados e as políticas definidas na AEP afetam os relatórios no CJA.
 mini-toc-levels: 3
-source-git-commit: 82060862c64aae10ea6dd375a8cd65d67ee21704
+source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
@@ -38,13 +38,12 @@ As políticas têm dois componentes: o rótulo de dados e uma ação de marketin
 
 * Analytics - uso de dados para fins de análise, como medição, análise e relatórios sobre o uso pelo consumidor dos sites ou aplicativos de sua organização.
 
-* Exportar dados para terceiros - ou seja, fora do ambiente Adobe.
+* Exportar dados - ou seja, do ambiente Adobe.
 
 Você vincula rótulos e ações de marketing a uma política e depois ativa a política. A política pega o rótulo e a ação de marketing e diz: aplique essa restrição. Duas políticas definidas pelo Adobe são exibidas no CJA e afetam os relatórios e o download/compartilhamento:
 
-* Impor a política do Analytics
-* Impor política de download
-
+* [!UICONTROL Impor o Analytics] política
+* [!UICONTROL Impor download] política
 
 ### Exibir rótulos de dados em visualizações de dados do CJA
 
@@ -93,7 +92,7 @@ Em componentes individuais, a mensagem seria semelhante a esta:
 
 ### Como a função [!UICONTROL Impor download] afeta projetos do Workspace
 
-Se essa política estiver ativada, qualquer download (como enviar por email ou compartilhar pdfs) de projetos do Workspace fará hash nos campos confidenciais. Ainda é possível fazer a análise nesses campos no Workspace, mas se você tentar enviar um email ou compartilhar um projeto de outra forma, os campos bloqueados serão exibidos como itens com hash no arquivo .pdf .
+Se essa política estiver ativada, qualquer exportação ou download (como enviar por email ou compartilhar pdfs) de projetos do Workspace fará hash nos campos confidenciais. Ainda é possível fazer a análise nesses campos no Workspace, mas se você tentar enviar um email ou compartilhar um projeto de outra forma, os campos bloqueados serão exibidos como itens com hash no arquivo .pdf .
 
 Adicione uma captura de tela aqui.
 
