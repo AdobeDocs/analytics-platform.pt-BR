@@ -1,12 +1,11 @@
 ---
-title: Suporte CJA para Governança de dados do Adobe Experience Platform
-description: Saiba como os rótulos de dados e as políticas definidas na AEP afetam os relatórios no CJA.
-mini-toc-levels: 3
+title: Rótulos e políticas
+description: Saiba como os rótulos de dados e as políticas definidas na AEP afetam as visualizações de dados e os relatórios no CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
+source-git-commit: a28247e861e2f8853a6e2d2b81e7f6ed221caec0
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +25,8 @@ Rotular em si não significa que esses rótulos de uso de dados sejam aplicados.
 
 Duas políticas definidas pelo Adobe são exibidas no CJA e afetam os relatórios e o download/compartilhamento:
 
-* [!UICONTROL Impor o Analytics] política
-* [!UICONTROL Impor download] política
+* **[!UICONTROL Impor o Analytics]** política
+* **[!UICONTROL Impor download]** política
 
 ## Exibir rótulos de dados em visualizações de dados do CJA
 
@@ -35,9 +34,11 @@ Os rótulos de dados criados no Experience Platform são mostrados em três loca
 
 | Localização | Descrição |
 | --- | --- |
-| Botão Info em um campo de schema | Clicar nesse botão indica quais rótulos de uso de dados se aplicam atualmente a um campo:<p>![](assets/data-label-left.png) |
-| Painel direito em [Configurações do componente](/help/data-views/component-settings/overview.md) | Todos os rótulos de uso de dados estão listados aqui:<p>![](assets/data-label-right.png) |
-| Adicionar rótulos de dados como uma coluna | É possível adicionar Rótulos de dados como uma coluna às colunas Componentes incluídos nas visualizações de dados. Basta clicar no ícone do seletor de colunas e selecionar Rótulos de uso de dados:<p>![](assets/data-label-column.png) |
+| Botão Info em um campo de schema | Clicar nesse botão indica o que [!UICONTROL Rótulos de uso de dados] aplica-se atualmente a um campo:<p>![](assets/data-label-left.png) |
+| Painel direito em [Configurações do componente](/help/data-views/component-settings/overview.md) | Qualquer [!UICONTROL Rótulos de uso de dados] estão listados aqui:<p>![](assets/data-label-right.png) |
+| Adicionar rótulos de dados como uma coluna | Você pode adicionar [!UICONTROL Rótulos de dados] como uma coluna para a [!UICONTROL Componentes incluídos] nas visualizações de dados. Basta clicar no ícone do seletor de colunas e selecionar **[!UICONTROL Rótulos de uso de dados]**:<p>![](assets/data-label-column.png) |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Filtrar em rótulos de Governança de dados em visualizações de dados
 
@@ -55,7 +56,7 @@ Novamente, clique no ícone Filtro no painel à esquerda e, em Governança de da
 
 ![](assets/filter-policies.png)
 
-Clique em **[!UICONTROL Aplicar]** para ver quais políticas estão ativadas _para esta visualização de dados?_
+Clique em **[!UICONTROL Aplicar]** para ver quais políticas estão habilitadas.
 
 ## Como a função [!UICONTROL Impor o Analytics] afeta projetos do Workspace
 
