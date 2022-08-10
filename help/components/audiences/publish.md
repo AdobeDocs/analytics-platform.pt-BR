@@ -2,10 +2,10 @@
 title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
+source-git-commit: 235f08b275fd2f5706024823005e732b61af1c07
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ Este tópico discute como criar e publicar públicos-alvo identificados no Custo
 
 Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para familiarizar-se com o conceito de públicos-alvo do CJA.
 
-## Criar público-alvo
+## Criar público-alvo {#create}
 
 1. Há várias maneiras de começar a criar públicos-alvo:
 
@@ -56,8 +56,8 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    | Configuração de visualização | Descrição |
    | --- | --- |
    | Janela [!UICONTROL Visualização de dados] | O intervalo de datas do público-alvo. |
-   | [!UICONTROL Total de pessoas] | Um número resumido do número total de pessoas neste público-alvo. Pode chegar a 200 milhões de pessoas. Se o público-alvo exceder 200 milhões de pessoas, você deverá reduzir o tamanho do público-alvo antes de publicá-lo. |
-   | [!UICONTROL Limite de tamanho do público] | Mostra a distância que está do limite de 200 milhões de pessoas. |
+   | [!UICONTROL Total de pessoas] | Um número resumido do número total de pessoas neste público-alvo. Pode chegar a 20 milhões de pessoas. Se o público-alvo exceder 20 milhões de pessoas, você deverá reduzir o tamanho do público-alvo antes de publicá-lo. |
+   | [!UICONTROL Limite de tamanho do público] | Mostra a distância que está do limite de 20 milhões de pessoas. |
    | [!UICONTROL Retorno estimado do público] | Essa configuração é útil para redirecionar clientes nesse público-alvo que retornam ao site. (Em outras palavras, que são vistas neste conjunto de dados novamente.) <p>Aqui, você pode selecionar o período (próximos 7 dias, próximas 2 semanas, próximo mês) para o número estimado de clientes que podem retornar. |
    | [!UICONTROL Estimativa de retorno] | Esse número oferece um número estimado de clientes recorrentes durante o período selecionado na lista suspensa. Observamos a taxa de churn histórica para esse público-alvo prever esse número. |
    | [!UICONTROL Visualizar métricas] | Essa configuração permite que você observe métricas específicas para ver se esse público-alvo contribui com uma quantidade desproporcional para essa métrica, como “[!UICONTROL Receita]” ou “[!UICONTROL Tempo médio no site]”. Ela fornece a contagem agregada da métrica, bem como a porcentagem do total que ela representa. Você pode selecionar qualquer métrica disponível na visualização de dados. |
@@ -72,7 +72,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
 
 1. Clique em **[!UICONTROL Exibir público-alvo na AEP]** na mesma mensagem e você será direcionado para a [Interface do usuário do segmento](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=pt-BR) na Adobe Experience Platform. Veja mais informações abaixo.
 
-## Usar públicos-alvo do CJA na Experience Platform
+## Usar públicos-alvo do CJA na Experience Platform {#audiences-aep}
 
 O CJA agora pega todas as combinações de namespace e ID de seu público publicado e as transmite para o Perfil do cliente em tempo real (RTCP). O CJA envia o público-alvo para a Experience Platform com a identidade primária definida como qualquer ID de pessoa selecionada quando a conexão foi configurada.
 
@@ -84,9 +84,13 @@ Você pode arrastar os públicos-alvo do CJA para a definição de segmentos da 
 
 ![](assets/audiences-aep.png)
 
-## O que acontece se um usuário não é mais membro de um público-alvo no CJA?
+## O que acontece se um usuário não é mais membro de um público-alvo no CJA? {#no-member}
 
 Nesse caso, um evento de saída é enviado à Experience Platform do CJA.
+
+## O que acontece se você excluir um público-alvo no CJA? {#delete}
+
+Quando um público-alvo do CJA é excluído, esse público-alvo não será mais exibido na interface do usuário do Experience Platform. No entanto, nenhum perfil associado a esse público-alvo é realmente excluído na Platform.
 
 ## Próximas etapas
 

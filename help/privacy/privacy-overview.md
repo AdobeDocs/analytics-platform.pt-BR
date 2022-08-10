@@ -2,10 +2,10 @@
 title: Customer Journey Analytics e Governança de dados
 description: Descreve como o controle de dados funciona no Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
-source-git-commit: 2f74c10f821aed421e31ee8e14b854f2a73c11f1
+source-git-commit: 2dde88ea6c3bb806b66cd4bc8fb8b10bd28084d0
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 75%
+source-wordcount: '373'
+ht-degree: 51%
 
 ---
 
@@ -15,7 +15,13 @@ De modo geral, todas as configurações relacionadas ao controle de dados no Cus
 
 ## Governança de dados
 
-O CJA é compatível com rótulos e políticas de Governança de dados configuradas no Adobe Experience Platform. Para obter mais informações, consulte [Suporte CJA para Governança de dados do Adobe Experience Platform](/help/data-views/data-governance.md).
+A integração entre o CJA e o [Governança de dados do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) permite a rotulagem de dados sensíveis do CJA e a aplicação de políticas de privacidade.
+
+Os rótulos e as políticas de privacidade que foram criados em conjuntos de dados consumidos pelo Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do CJA. Esses rótulos param ou avisam os usuários que criam métricas e/ou dimensões a partir de campos confidenciais.
+
+Além disso, quando os dados são exportados do CJA (por meio de relatórios, exportação, API etc.), avisos ou rótulos são adicionados para notificar os usuários que um relatório contém informações confidenciais que precisam ser tratadas de uma maneira específica.
+
+Essa integração permite gerenciar a conformidade com mais facilidade. Os Data Stewards na organização podem definir políticas para restringir o uso. Como resultado, os usuários do CJA podem usar os dados com mais confiança, sabendo que estão em conformidade com as políticas definidas pelos Data Stewards.
 
 ## GDPR
 
