@@ -4,10 +4,10 @@ description: Vários casos de uso que mostram a flexibilidade e o potencial das 
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
+source-git-commit: 684918af270a77355b7cefab4ae2e32720a71cae
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 95%
+source-wordcount: '1194'
+ht-degree: 87%
 
 ---
 
@@ -89,10 +89,6 @@ Para obter uma visão geral conceitual das visualizações de dados, consulte [V
 
 ## 7. Relatório de sessão Nova vs. Repetida {#new-repeat}
 
->[!NOTE]
->
->Esta funcionalidade está atualmente em testes limitados.
-
 Você pode determinar se uma sessão é realmente a primeira sessão de um usuário, com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
 
 * Que porcentagem de seus pedidos vem de sessões novas e repetidas?
@@ -116,3 +112,19 @@ Para acessar esses componentes:
 * Quando uma primeira sessão ocorreu antes da janela de retrospectiva de 13 meses. Esta sessão será ignorada.
 
 * Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. Digamos que você execute um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva englobaria de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1 de junho de 2022, pois a sessão está incluída na janela de lookback, todas as sessões na janela de relatório serão contadas como sessões de retorno.
+
+## Usar a funcionalidade Data e hora {#date}
+
+>[!NOTE]
+>
+>Esta funcionalidade está atualmente em [testes limitados](/help/release-notes/releases.md).
+
+Exemplo de casos de uso:
+
+* Data: Uma empresa de viagens está coletando a data de partida para viagens como campo em seus dados. Eles gostariam de ter um relatório que compara a variável [!UICONTROL Dia da semana] para todas as datas de partida coletadas para entender qual é mais popular. Eles gostariam de fazer o mesmo por [!UICONTROL Mês do ano].
+
+* Data e hora: Uma empresa de varejo está coletando o tempo de cada compra de ponto de venda (POS) na loja. Em um determinado mês, eles gostariam de entender os períodos de compras mais movimentados por [!UICONTROL Hora do dia].
+
+>[!MORELIKETHIS]
+>[Data e hora na configuração do componente Formato](/help/data-views/component-settings/format.md)
+
