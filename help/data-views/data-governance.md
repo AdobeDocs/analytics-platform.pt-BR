@@ -2,10 +2,10 @@
 title: Rótulos e políticas
 description: Saiba como os rótulos de dados e as políticas definidas na AEP afetam as visualizações de dados e os relatórios no CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: a28247e861e2f8853a6e2d2b81e7f6ed221caec0
+source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '459'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,9 @@ ht-degree: 0%
 >
 >Esta funcionalidade está atualmente em [testes limitados](/help/release-notes/releases.md).
 
-Ao criar um conjunto de dados no Experience Platform, você pode criar [rótulos de uso de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) para alguns ou todos os elementos no conjunto de dados. Até agora, esses rótulos não eram expostos no CJA. Com esta versão, você pode exibir esses rótulos no CJA. De especial interesse para o CJA são esses rótulos:
+Ao criar um conjunto de dados no Experience Platform, você pode criar [rótulos de uso de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) para alguns ou todos os elementos no conjunto de dados. Até agora, esses rótulos não eram expostos no CJA. Com esta versão, você pode visualizar esses rótulos e políticas no CJA.
+
+De especial interesse para o CJA são esses rótulos:
 
 * O `C8` rótulo - **[!UICONTROL Sem medição]**. Esse rótulo significa que os dados não podem ser usados para análises nos sites ou aplicativos de sua organização.
 
@@ -36,13 +38,13 @@ Os rótulos de dados criados no Experience Platform são mostrados em três loca
 | --- | --- |
 | Botão Info em um campo de schema | Clicar nesse botão indica o que [!UICONTROL Rótulos de uso de dados] aplica-se atualmente a um campo:<p>![](assets/data-label-left.png) |
 | Painel direito em [Configurações do componente](/help/data-views/component-settings/overview.md) | Qualquer [!UICONTROL Rótulos de uso de dados] estão listados aqui:<p>![](assets/data-label-right.png) |
-| Adicionar rótulos de dados como uma coluna | Você pode adicionar [!UICONTROL Rótulos de dados] como uma coluna para a [!UICONTROL Componentes incluídos] nas visualizações de dados. Basta clicar no ícone do seletor de colunas e selecionar **[!UICONTROL Rótulos de uso de dados]**:<p>![](assets/data-label-column.png) |
+| Adicionar rótulos de dados como uma coluna | Você pode adicionar [!UICONTROL Rótulos de uso de dados] como uma coluna para a [!UICONTROL Componentes incluídos] nas visualizações de dados. Basta clicar no ícone do seletor de colunas e selecionar **[!UICONTROL Rótulos de uso de dados]**:<p>![](assets/data-label-column.png) |
 
 {style=&quot;table-layout:auto&quot;}
 
 ## Filtrar em rótulos de Governança de dados em visualizações de dados
 
-No editor de visualizações de dados, clique no ícone Filtro na trilha esquerda e filtre os componentes das visualizações de dados por rótulos de governança de dados:
+No editor de visualizações de dados, clique no ícone Filtro na trilha esquerda e filtre os componentes de visualizações de dados por **[!UICONTROL Governança de dados]** e tipo de **[!UICONTROL Rótulo]**:
 
 ![](assets/filter-labels.png)
 
@@ -52,35 +54,21 @@ Clique em **[!UICONTROL Aplicar]** para ver quais componentes têm rótulos anex
 
 É possível verificar se uma política está ativada e bloqueia o uso de determinados elementos de visualização de dados do CJA para fins de análise ou exportação.
 
-Novamente, clique no ícone Filtro no painel à esquerda e, em Governança de dados, clique em Políticas:
+Novamente, clique no ícone Filtro no painel à esquerda e em **[!UICONTROL Governança de dados]**, clique em **[!UICONTROL Políticas]**:
 
 ![](assets/filter-policies.png)
 
 Clique em **[!UICONTROL Aplicar]** para ver quais políticas estão habilitadas.
 
-## Como a função [!UICONTROL Impor o Analytics] afeta projetos do Workspace
+## Como as políticas ativadas afetam as visualizações de dados
 
-Se essa política estiver ativada, os campos do esquema que têm determinados rótulos de dados (como C8) associados a eles não poderão ser usados para fins de análise no CJA Workspace.
+Se a variável **[!UICONTROL Impor o Analytics]** ou **[!UICONTROL Impor download]** políticas estiverem ativadas, os componentes do esquema que têm determinados rótulos de dados (como C8 ou C12) associados a eles não poderão ser adicionados às visualizações de dados.
 
-Para relatórios, isso significa que
+Esses componentes estão esmaecidos no painel esquerdo [!UICONTROL Campos de esquema] lista:
 
-* Não é possível adicionar esses campos às visualizações de dados, e eles ficam esmaecidos no painel esquerdo [!UICONTROL Campos de esquema] lista.
-* Não é possível salvar uma visualização de dados que tenha bloqueado campos nela.
+![](assets/component-greyed.png)
 
-Se você tentar executar a análise do Workspace em visualizações de dados que contêm itens proibidos para o Analytics, você receberá um aviso semelhante a este:
+Também não é possível salvar uma visualização de dados que tenha bloqueado campos nela.
 
-![](assets/policy-enforce.png)
-
-Em componentes individuais, a mensagem seria semelhante a esta:
-
-![](assets/policy-enforce2.png)
-
-## Como a função [!UICONTROL Impor download] afeta projetos do Workspace
-
-Se essa política estiver ativada, qualquer exportação ou download (como enviar por email ou compartilhar pdfs) de projetos do Workspace fará hash nos campos confidenciais. Ainda é possível fazer a análise nesses campos no Workspace, mas se você tentar enviar um email ou compartilhar um projeto de outra forma, os campos bloqueados serão exibidos como itens com hash no arquivo .pdf .
-
-Adicione uma captura de tela aqui.
-
-## Exibir rótulos no Report Builder
-
-Consulte _esta seção_ para obter mais informações. (link para o médico de Christine)
+>[!MORELIKETHIS]
+>[Baixar dados confidenciais](/help/analysis-workspace/curate-share/download-send.md)
