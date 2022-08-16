@@ -4,10 +4,10 @@ description: Use o Conector de origem do Analytics para trazer as regras de proc
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: 8d333627d3fe4f4dd68ec0f9316838c88678bc0f
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 90%
+source-wordcount: '1019'
+ht-degree: 84%
 
 ---
 
@@ -32,6 +32,10 @@ Depois de estabelecer o Conector de origem do Analytics em um conjunto de relat�
 4. Crie a visualização de dados.
 
 Suas dimensões do canal de marketing agora estão disponíveis para uso no Analysis Workspace.
+
+>[!NOTE]
+>
+> O Conector de origem do Analytics requer que ambos `channel.typeAtSource` (Canal de marketing) e `channel._id` (Detalhes do canal de marketing) seja preenchido, caso contrário, nenhum é transportado para o ExperienceEvent XDM. Se o Detalhe do Canal de marketing estiver em branco no conjunto de relatórios de origem, isso resultará em um `channel._id` e o Conector de origem do Analytics ficará em branco `channel.typeAtSource` também. Isso pode resultar em diferenças de relatório entre o Adobe Analytics e o Customer Journey Analytics.
 
 ## Diferenças de processamento e arquitetura
 
