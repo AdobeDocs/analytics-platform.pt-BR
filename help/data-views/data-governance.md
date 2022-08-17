@@ -2,18 +2,14 @@
 title: Rótulos e políticas
 description: Saiba como os rótulos de dados e as políticas definidas na AEP afetam as visualizações de dados e os relatórios no CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: b135175e0276ab26514d1c785793feb817c09898
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 2%
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
 # Rótulos e políticas
-
->[!NOTE]
->
->Esta funcionalidade está atualmente em [testes limitados](/help/release-notes/releases.md).
 
 Ao criar um conjunto de dados no Experience Platform, você pode criar [rótulos de uso de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=en) para alguns ou todos os elementos no conjunto de dados. Até agora, esses rótulos não eram expostos no CJA. Com esta versão, você pode visualizar esses rótulos e políticas no CJA.
 

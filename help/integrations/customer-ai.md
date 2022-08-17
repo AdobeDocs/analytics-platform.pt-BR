@@ -4,10 +4,10 @@ title: Integrar a IA do cliente ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: 320b34ca171bb835aa3b4a9a981cc19b14060ad9
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: 75e72f94b90ad67a3f8e9506abb09b96a59383d8
+workflow-type: tm+mt
+source-wordcount: '888'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ No CJA, agora você pode prosseguir para [criar visualizações de dados](/help/
 
 ### Etapa 4: Relatório das pontuações de CAI no Espaço de trabalho
 
-No Espaço de trabalho do CJA, agora é possível criar um novo projeto e extrair visualizações.
+No CJA Workspace, crie um novo projeto e visualizações de extração.
 
 **Pontuações de propensão de tendência**
 

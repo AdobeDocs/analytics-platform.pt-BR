@@ -4,9 +4,9 @@ description: Vários casos de uso que mostram a flexibilidade e o potencial das 
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 9321831a23c1329000fd1e960c28e41d4ba18714
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1277'
 ht-degree: 81%
 
 ---
@@ -114,10 +114,6 @@ Para acessar esses componentes:
 * Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. Digamos que você execute um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva englobaria de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1 de junho de 2022, pois a sessão está incluída na janela de lookback, todas as sessões na janela de relatório serão contadas como sessões de retorno.
 
 ## Usar a funcionalidade Data e hora {#date}
-
->[!NOTE]
->
->Esta funcionalidade está atualmente em [testes limitados](/help/release-notes/releases.md).
 
 Os esquemas no Adobe Experience Platform contêm [!UICONTROL Data] e [!UICONTROL Data e hora] campos. As exibições de dados CJA agora são compatíveis com esses campos. Ao arrastar esses campos para uma visualização de dados como uma dimensão, você pode especificar seus [format](/help/data-views/component-settings/format.md). Essa configuração de formato determina como os campos são exibidos no relatório. Por exemplo:
 

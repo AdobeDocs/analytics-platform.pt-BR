@@ -5,13 +5,13 @@ role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 0e626b4072c68a69ae94dbfdfb53169aa34ca8ac
+exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
+source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 2%
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
-
 
 # Etiquetas restritas no Report Builder
 
@@ -25,11 +25,7 @@ Essa integração permite gerenciar a conformidade com mais facilidade. Os Data 
 
 Para obter mais informações, consulte [Customer Journey Analytics e Governança de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-privacy/privacy-overview.html)
 
-## Exibição de dados restritos no Report Builder
-
->[!NOTE]
->
->Esta funcionalidade está atualmente em [testes limitados](/help/release-notes/releases.md).
+## Exibir dados restritos no Report Builder
 
 Duas políticas definidas pelo Adobe são exibidas no CJA que afetam os relatórios, o download e o compartilhamento:
 
@@ -40,7 +36,7 @@ Os componentes afetados por essas políticas ficam esmaecidos. Quando você pass
 
 ![](assets/rb-restricted-label.png)
 
-## Atualização de relatórios contendo dados restritos
+## Atualizar relatórios com dados restritos
 
 Nos casos em que um usuário criou um relatório Report Builder com elementos de dados restritos posteriormente, quando o relatório é atualizado, uma mensagem de erro é exibida.
 
