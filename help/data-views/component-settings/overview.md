@@ -4,10 +4,10 @@ description: Exibir as configurações principais de um componente de visualiza�
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
+source-git-commit: 338cb8a4409c9b03461763d97ced6b8a10de2b7b
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 95%
+source-wordcount: '422'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,8 @@ Configurações principais que um componente de visualização de dados usa.
 | [!UICONTROL Nome do componente] | Obrigatório. Permite especificar o nome amigável que aparecerá no Analysis Workspace. É possível renomear um componente, dando a ele um nome específico para a visualização de dados. |
 | [!UICONTROL Descrição] | Opcional, mas recomendado. Fornece informações sobre o componente para outros usuários. |
 | [!UICONTROL Tags] | Opcional. Permite marcar o componente com tags personalizadas ou prontas para uso para facilitar a pesquisa/filtragem na interface do Analysis Workspace. |
-| [!UICONTROL Nome do campo] | O nome do campo de esquema. |
+| [!UICONTROL Rótulos de contexto] | É possível rotular dimensões e/ou métricas específicas para casos de uso específicos nos relatórios. Os exemplos incluem painéis de mídia para o CJA, o novo Painel de experiências e modelos de relatórios. |
+| [!UICONTROL Nome do campo Esquema] | O nome do campo de esquema. |
 | [!UICONTROL Tipo de conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de conjunto de dados (evento, pesquisa ou perfil) o componente veio. |
 | [!UICONTROL Conjunto de dados] | Um campo não editável que mostra de qual conjunto de dados o componente se originou. Este campo pode conter vários conjuntos de dados. |
 | [!UICONTROL Tipo de esquema] | Um campo não editável que mostra o tipo de dados do componente.  Embora você possa usar qualquer tipo de campo de esquema compatível na plataforma, nem todos os tipos de campos são compatíveis no CJA. Os seguintes tipos de dados são compatíveis: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` e `Boolean`. No momento, somente o tipo de dados `String` do esquema é permitido nos conjuntos de dados de Pesquisa. |
