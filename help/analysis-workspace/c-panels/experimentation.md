@@ -3,10 +3,10 @@ description: Saiba mais sobre como analisar os resultados de testes A/B no paine
 title: Painel de experiência
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 76ebaf5ae5bd6027f83945d5750ddc13533a7b47
+source-git-commit: 57a52c21b1850574e5d85ab560fb5399f9b37631
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 9%
+source-wordcount: '745'
+ht-degree: 8%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 9%
 >
 >Esta funcionalidade está atualmente em [testes limitados](/help/release-notes/releases.md).
 
-O **[!UICONTROL Experimentação]** O painel permite que você compare diferentes variações de experiência do usuário, marketing ou mensagens para determinar qual é a melhor maneira de conduzir um resultado específico. Você pode avaliar o aumento e a confiança de qualquer experimento A/B de qualquer plataforma de experimentação - online, offline, de soluções de Adobe, Adobe Journey Optimizer e até mesmo dados BYO (traga seus próprios).
+O **[!UICONTROL Experimentação]** O painel permite que os analistas comparem diferentes variações de experiência do usuário, marketing ou mensagens para determinar qual é o melhor para impulsionar um resultado específico. Você pode avaliar o aumento e a confiança de qualquer experimento A/B de qualquer plataforma de experimentação - online, offline, de soluções de Adobe, Adobe Journey Optimizer e até mesmo dados BYO (traga seus próprios).
 
 >[!IMPORTANT]
 >
->Neste ponto, [Adobe Analytics para Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=pt-BR) Os dados do (A4T) não podem ser avaliados na variável [!UICONTROL Experimentação] painel.
+>Neste ponto, [Adobe Analytics para Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=pt-BR) (A4T) dados trazidos para o Adobe Experience Platform por meio do Conector de origem do Analytics **cannot** ser analisadas no [!UICONTROL Experimentação] painel. Esperamos uma resolução para esta questão em 2023.
 
 ## Controle de acesso
 
@@ -58,14 +58,20 @@ Sem esses rótulos presentes, o painel Experimento não funciona, pois não have
    | --- | --- |
    | **[!UICONTROL Experimento]** | Um conjunto de variações em uma experiência que foi exposta a usuários finais para determinar qual é melhor manter a perpetuidade. Um experimento é composto por duas ou mais variantes, uma delas considerada variante de controle. Essa configuração é pré-preenchida com as dimensões que foram rotuladas com a variável  **[!UICONTROL Experimento]** nas visualizações de dados e nos últimos 3 meses de dados experimentais. |
    | **[!UICONTROL Variante de controle]** | Uma de duas ou mais alterações na experiência de um usuário final que estão sendo comparadas com o objetivo de identificar a melhor alternativa. Uma variante deve ser selecionada como controle e somente uma variante pode ser considerada como a variante de controle. Essa configuração é pré-preenchida com as dimensões que foram rotuladas com a variável  **[!UICONTROL Variante]** em visualizações de dados. Essa configuração extrai os dados de variante associados a esse experimento. |
-   | **[!UICONTROL Métricas de sucesso]** | A métrica ou métricas com as quais um usuário está comparando variantes. A variante com o resultado mais desejável para a métrica de conversão (mais alta ou mais baixa) é declarada como a &quot;métrica primária&quot; de um experimento. Você pode adicionar até 5 métricas. |
+   | **[!UICONTROL Métricas de sucesso]** | A métrica ou métricas com as quais um usuário está comparando variantes. A variante com o resultado mais desejável para a métrica de conversão (mais alta ou mais baixa) é declarada como a &quot;variante com melhor desempenho&quot; de um experimento. Você pode adicionar até 5 métricas. |
    | **[!UICONTROL Métrica de normalização]** | A base ([!UICONTROL Pessoas], [!UICONTROL Sessões]ou [!UICONTROL Eventos]) em que um teste será executado. Por exemplo, um teste pode comparar as taxas de conversão de várias variações, onde **[!UICONTROL Índice de conversão]** é calculada como **[!UICONTROL Conversões por sessão]** ou **[!UICONTROL Conversões por pessoa]**. |
 
 1. Clique em **[!UICONTROL Criar]**.
 
 ## Etapa 4: Interpretar a saída do painel
 
-O painel Experimentação retorna um conjunto avançado de dados e visualizações para ajudá-lo a entender melhor o desempenho de seus experimentos. Na parte superior do painel, uma linha de resumo é fornecida para lembrar das configurações do painel que você selecionou. A qualquer momento, você pode editar o painel clicando no lápis de edição na parte superior direita. Você também recebe um resumo de texto que indica se o experimento é conclusivo ou não, e resume o resultado. Você também pode ver números de resumo para a variante com o maior incentivo e confiança.
+O painel Experimentação retorna um conjunto avançado de dados e visualizações para ajudá-lo a entender melhor o desempenho de seus experimentos. Na parte superior do painel, uma linha de resumo é fornecida para lembrar das configurações do painel que você selecionou. A qualquer momento, você pode editar o painel clicando no lápis de edição na parte superior direita.
+
+Você também recebe um resumo de texto que indica se o experimento é conclusivo ou não, e resume o resultado. A conclusão baseia-se na significância estatística. (Ver &quot;Metodologia estatística&quot; abaixo.) Você pode ver números de resumo para a variante com melhor desempenho com o maior incentivo e confiança.
+
+>[!NOTE]
+>
+>O incentivo e a confiança também são funções de métrica calculadas avançadas no CJA, para que você possa criar suas próprias métricas de incentivo e confiança.
 
 ![resultado experimental](assets/exp-output1.png)
 
@@ -73,10 +79,12 @@ Para cada métrica de sucesso selecionada, uma tabela de forma livre e uma tend�
 
 ![resultado experimental](assets/exp-output2.png)
 
+O [!UICONTROL Linha] o gráfico fornece [!UICONTROL Controle] versus [!UICONTROL Variante de controle] desempenho:
+
 ![resultado experimental](assets/exp-output3.png)
 
 
-## Metodologia estatística por trás do painel Experiência
+## Metodologia estatística
 
 Seguir.
 
