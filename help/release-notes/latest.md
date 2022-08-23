@@ -3,16 +3,16 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a34ca124bac34912323e1a6c4d0b42f4b8cf2e86
+source-git-commit: e7ff0bfae0f7d041a8131cecbf362cf71aca9740
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 56%
+source-wordcount: '495'
+ht-degree: 61%
 
 ---
 
 # Notas de versão do Customer Journey Analytics atual (CJA) (agosto de 2022)
 
-**Última atualização**: 12 de agosto de 2022
+**Última atualização**: 23 de agosto de 2022
 
 ## Recursos principais
 
@@ -23,7 +23,6 @@ ht-degree: 56%
 | **Publicação de público-alvo no perfil do cliente em tempo real** | Permite publicar públicos descobertos no CJA no Adobe Experience Platform/Perfil do cliente em tempo real para direcionamento e personalização de clientes. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=pt-BR) | 17 de agosto de 2022 |
 | **Suporte CJA para rótulos e políticas de Governança de dados** | Automatiza a integração entre o CJA e as políticas e rótulos de privacidade da Adobe Experience Platform. Os rótulos de dados criados em conjuntos de dados consumidos pela Plataforma são exibidos nas exibições de dados do CJA para interromper ou avisar os usuários que criam métricas e/ou dimensões a partir de campos confidenciais. Além disso, quando os dados são exportados do CJA (por meio de relatórios do Workspace ou Report Builder, exportação, API etc.) avisos ou rótulos adicionais serão adicionados para notificar os usuários que um relatório contém informações confidenciais que precisam ser tratadas de uma maneira específica. [Saiba mais](/help/data-views/data-governance.md) | 17 de agosto de 2022 |
 | **Suporte a campo de data no CJA** | Permite que o CJA relate os campos de data e hora. [Saiba mais](/help/data-views/data-views-usecases.md#date) | 17 de agosto de 2022 |
-| **Painel de experiências para CJA (aumento genérico e confiança)** | Esse novo painel do Workspace permite que os usuários do CJA avaliem o incentivo e a confiança de qualquer experimento A/B de qualquer fonte - online, offline, de soluções Adobe, Adobe Journey Optimizer e até mesmo dados BYO. Mais informações a serem seguidas. | 24 de agosto de 2022 |
 | **Suporte entre regiões para o Analytics Source Connector** | Agora é possível assimilar conjuntos de relatórios de qualquer região (Estados Unidos, Reino Unido ou Cingapura). No entanto, esses conjuntos de relatórios devem ser mapeados para a mesma organização da instância de sandbox do Experience Platform em que a conexão de origem está sendo criada. [Saiba mais](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) | 24 de agosto de 2022 |
 | **Relatório da primeira sessão vs. repetição** | Agora você pode descobrir se uma sessão específica foi a primeira sessão de um usuário. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=br#new-repeat) | 24 de agosto de 2022 |
 
