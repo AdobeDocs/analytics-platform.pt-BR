@@ -4,10 +4,10 @@ description: Saiba mais sobre os requisitos de controle de acesso para criar con
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
-source-git-commit: c80c10e1e4887bfe7fdc3b59d0dfe415b1b0d5eb
-workflow-type: ht
-source-wordcount: '241'
-ht-degree: 100%
+source-git-commit: e5ae592c6765638e26ee5252f458e82af9d24e44
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 91%
 
 ---
 
@@ -37,4 +37,10 @@ Você não pode conceder ou negar permissões em métricas ou dimensões individ
 ## Acesso do usuário
 
 Os (usuários) não administradores de produto no Customer Journey Analytics não podem ver visualizações de dados ou conexões, mas podem criar filtros, projetos e métricas de cálculo.
+
+## Preparação de projeto do Workspace
+
+Para obter mais informações sobre como limitar componentes (dimensões, métricas, segmentos, intervalos de datas) no nível do projeto, consulte [Preparar projetos](/help/analysis-workspace/curate-share/curate.md).
+
+
 
