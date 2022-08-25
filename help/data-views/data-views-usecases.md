@@ -5,8 +5,8 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '1277'
 ht-degree: 100%
 
 ---
@@ -59,7 +59,7 @@ Esse recurso é especificamente aplicável a campos com base em matriz. A funcio
 
 Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de dados para focalizar os produtos que geraram vendas de mais de 50 dólares. Portanto, se você tiver um pedido que inclua uma compra de produto de 50 dólares e uma compra de produto de 25 dólares, removeremos apenas a compra de produto de 25 dólares, não o pedido inteiro.
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-component-settings), arraste o campo de esquema [!UICONTROL Receita] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html#configure-component-settings), arraste o campo de esquema [!UICONTROL Receita] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 1. Selecione a métrica e configure o seguinte no lado direito:
 a. Em [!UICONTROL Formato], selecione [!UICONTROL Moeda].
 b. Em [!UICONTROL Moeda], selecione USD.
@@ -99,7 +99,7 @@ Três componentes facilitam esse relatório:
 
 * 1 dimensão: [Tipo de sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional) - Essa dimensão tem dois valores: 1) [!UICONTROL Novo] e 2) [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item de linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo &quot;Não aplicável&quot; dessa dimensão.
 
-* 2 métricas: [Novas sessões, sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional). Uma nova sessão é definida como a primeira sessão definida de uma pessoa na janela de relatórios. Sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.
+* 2 métricas: [Novas sessões, sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Uma nova sessão é definida como a primeira sessão definida de uma pessoa na janela de relatórios. Sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.
 
 Para acessar esses componentes:
 
