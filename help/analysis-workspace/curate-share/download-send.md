@@ -4,9 +4,9 @@ title: Baixar arquivos PDF ou CSV
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1057'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -81,9 +81,9 @@ Se solicitar mais de um download por vez, você receberá uma notificação de q
 
 ![](assets/toast.png)
 
-## Baixar dados confidenciais {#sensitive}
+## Baixar dados sigilosos {#sensitive}
 
-Se a variável **[!UICONTROL Impor download]** [política de gestão de dados](/help/data-views/data-governance.md) estiver ativada na visualização de dados para a qual você está relatando, qualquer download (como enviar por email ou compartilhar pdfs) de projetos do Workspace fará hash nos campos de dados rotulados como confidenciais. Ainda é possível fazer a análise nesses campos no Workspace, mas se você tentar enviar um email ou compartilhar um projeto de outra forma, os campos bloqueados aparecerão vazios no arquivo .pdf ou .csv.
+Se a [política de governança de dados](/help/data-views/data-governance.md) **[!UICONTROL Forçar download]** estiver ativada na visualização de dados para a qual você está relatando, qualquer download (como envios por email ou compartilhamento de PDFs) de projetos do espaço de trabalho aplicará uma função de hash nos campos de dados rotulados como sigilosos. Ainda é possível fazer a análise desses campos no espaço de trabalho, mas se você tentar enviar um email ou compartilhar um projeto de outra forma, os campos bloqueados aparecerão vazios no arquivo PDF ou CSV.
 
 ## Perguntas frequentes {#faq}
 
