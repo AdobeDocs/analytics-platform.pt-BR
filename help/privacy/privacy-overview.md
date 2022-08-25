@@ -1,27 +1,27 @@
 ---
 title: Customer Journey Analytics e Governança de dados
-description: Descreve como o controle de dados funciona no Customer Journey Analytics.
+description: Descreve como a governança de dados funciona no Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # Customer Journey Analytics e Governança de dados
 
-De modo geral, todas as configurações relacionadas ao controle de dados no Customer Journey Analytics são herdadas do Adobe Experience Platform.
+De modo geral, todas as configurações relacionadas à governança de dados no Customer Journey Analytics são herdadas da Adobe Experience Platform.
 
 ## Governança de dados
 
-A integração entre o CJA e o [Governança de dados do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=en) permite a rotulagem de dados sensíveis do CJA e a aplicação de políticas de privacidade.
+A integração do CJA com a [Governança de dados da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=pt-BR) permite rotular dados sigilosos do CJA e aplicar políticas de privacidade.
 
-Os rótulos e as políticas de privacidade que foram criados em conjuntos de dados consumidos pelo Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do CJA. Esses rótulos param ou avisam os usuários que criam métricas e/ou dimensões a partir de campos confidenciais.
+Os rótulos e políticas de privacidade que foram criados em conjuntos de dados consumidos pela Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do CJA. Esses rótulos interrompem ou avisam os usuários que criam métricas e/ou dimensões a partir de campos sigilosos.
 
-Além disso, quando os dados são exportados do CJA (por meio de relatórios, exportação, API etc.), avisos ou rótulos são adicionados para notificar os usuários que um relatório contém informações confidenciais que precisam ser tratadas de uma maneira específica.
+Além disso, quando os dados são exportados do CJA (por meio de relatórios, exportação, API etc.), avisos ou rótulos são adicionados para notificar os usuários que um relatório contém informações sigilosas que precisam ser tratadas de uma maneira específica.
 
-Essa integração permite gerenciar a conformidade com mais facilidade. Os Data Stewards na organização podem definir políticas para restringir o uso. Como resultado, os usuários do CJA podem usar os dados com mais confiança, sabendo que estão em conformidade com as políticas definidas pelos Data Stewards.
+Essa integração permite gerenciar a conformidade com mais facilidade. Os administradores de dados da sua organização podem definir políticas de restrição de uso. Como resultado, os usuários do CJA podem usar os dados com mais confiança, sabendo que estão em conformidade com as políticas definidas pelos administradores de dados.
 
 [Saiba mais](/help/data-views/data-governance.md)
 
