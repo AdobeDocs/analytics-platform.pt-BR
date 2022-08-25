@@ -3,9 +3,9 @@ title: Rótulos e políticas
 description: Saiba como os rótulos e políticas de dados definidos na AEP afetam as visualizações de dados e os relatórios no CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 source-git-commit: 7962114aaab42a283f1cb35a312b0a707038c31a
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
