@@ -4,10 +4,10 @@ description: Vários casos de uso que mostram a flexibilidade e o potencial das 
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 72e6c568ccad4c5f74612a1f19758a7b41746836
+source-git-commit: 6e22766b1730a34fc6219f66174e2dbd575cfa14
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 100%
+source-wordcount: '1254'
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
 ## 3. Usar dimensões numéricas como &quot;métricas&quot; em diagramas de fluxo {#numeric}
 
-Você pode usar uma dimensão numérica para inserir &quot;métricas&quot; na visualização [!UICONTROL Fluxo].
+É possível usar uma dimensão numérica para inserir &quot;métricas&quot; em [!UICONTROL  Fluxo] visualização.
 
 1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-component-settings), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Espaço de trabalho, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
@@ -87,19 +87,19 @@ Não se esqueça de renomear cada métrica para refletir as diferenças, como &q
 Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview.md).
 Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).
 
-## 7. Relatório de sessão Nova vs. Repetida {#new-repeat}
+## 7. Relatórios de nova sessão {#new-repeat}
 
 Você pode determinar se uma sessão é realmente a primeira sessão de um usuário, com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
 
-* Que porcentagem de seus pedidos vem de sessões novas e repetidas?
+* Qual porcentagem de seus pedidos está vindo de novas sessões?
 
-* Para um determinado canal de marketing ou uma campanha específica, você está direcionando usuários pela primeira vez ou usuários de retorno? Como essas escolhas influenciaram as taxas de conversão?
+* Para um determinado canal de marketing ou uma campanha específica, você está direcionando usuários pela primeira vez? Como essa escolha influencia as taxas de conversão?
 
-Três componentes facilitam esse relatório:
+Dois componentes facilitam esse relatório:
 
-* 1 dimensão: [Tipo de sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional) - Essa dimensão tem dois valores: 1) [!UICONTROL Novo] e 2) [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item de linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo &quot;Não aplicável&quot; dessa dimensão.
+* 1 dimensão: [Tipo de sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional) - Essa dimensão tem dois valores: 1) [!UICONTROL Novo] e 2) [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item de linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no bucket &quot;Não aplicável&quot; dessa dimensão.
 
-* 2 métricas: [Novas sessões, sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Uma nova sessão é definida como a primeira sessão definida de uma pessoa na janela de relatórios. Sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.
+* 1 métrica: [Novas sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). Uma nova sessão é definida como a primeira sessão de uma pessoa definida na janela de relatórios.
 
 Para acessar esses componentes:
 
