@@ -1,13 +1,13 @@
 ---
-description: Descubra como a IA do cliente da AEP se integra ao Espaço de trabalho no CJA.
+description: Descubra como a IA do cliente da AEP se integra ao Workspace no CJA.
 title: Integrar a IA do cliente ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 source-git-commit: 75e72f94b90ad67a3f8e9506abb09b96a59383d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '888'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,13 +59,13 @@ No CJA, agora você pode prosseguir para [criar visualizações de dados](/help/
 
 ![Criar visualização de dados](assets/create-dataview.png)
 
-### Etapa 4: Relatório das pontuações de CAI no Espaço de trabalho
+### Etapa 4: Relatório das pontuações de CAI no Workspace
 
-No CJA Workspace, crie um novo projeto e visualizações de extração.
+No Workspace do CJA, crie um novo projeto e extraia visualizações.
 
 **Pontuações de propensão de tendência**
 
-Este é um exemplo de um projeto do Espaço de trabalho com dados de CAI que realiza a tendência das pontuações de propensão para um segmento de usuários ao longo do tempo, em &#x200B;um gráfico de barras empilhadas:
+Este é um exemplo de um projeto do Workspace com dados de CAI que realiza a tendência das pontuações de propensão para um segmento de usuários ao longo do tempo, em &#x200B;um gráfico de barras empilhadas:
 
 ![Intervalos de pontuação](assets/workspace-scores.png)
 
