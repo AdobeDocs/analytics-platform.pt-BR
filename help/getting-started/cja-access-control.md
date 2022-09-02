@@ -8,13 +8,13 @@ mini-toc-levels: 3
 source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
 workflow-type: tm+mt
 source-wordcount: '945'
-ht-degree: 17%
+ht-degree: 29%
 
 ---
 
 # Controle de acesso do CJA
 
-O Customer Journey Analytics (CJA) é regido por três níveis de acesso ou três funções: Função de administrador do produto, função de administrador do perfil de produto e acesso de nível de usuário. Este tópico explica essas funções com mais detalhes.
+O Customer Journey Analytics (CJA) é regido por três níveis de acesso, ou três funções: função de administrador do produto, função de administrador do perfil de produto e acesso de nível de usuário. Este tópico explica essas funções com mais detalhes.
 
 Além disso, discutimos maneiras mais granulares de limitar o acesso, como curadoria do Workspace e nível de linha, bem como controle de acesso de nível de valor.
 
@@ -24,7 +24,7 @@ Os administradores de produto têm permissões para concluir qualquer tarefa nec
 
 * Criar/atualizar/excluir conexões ou visualizações de dados
 * Atualizar/excluir projetos, filtros, métricas calculadas, públicos-alvo, anotações ou filtros criados por outros usuários
-* Compartilhar projetos do espaço de trabalho com todos os usuários
+* Compartilhar projetos do Workspace com todos os usuários
 
 Tornar-se um administrador de produto no Customer Journey Analytics não é suficiente para criar, atualizar ou excluir um [conexão](/help/connections/overview.md). Para criar uma conexão com um conjunto de dados da Experience Platform, você também precisa de permissões da Experience Platform. Especificamente, você deve fazer parte de um **Perfil de produto da Experience Platform** que oferece as seguintes permissões:
 
@@ -45,7 +45,7 @@ Um perfil de produto é um conjunto de permissões. Os administradores de perfil
 
 ## Acesso no nível do usuário
 
-Os usuários no Customer Journey Analytics não podem criar, editar ou exibir visualizações de dados ou conexões. Os usuários podem criar filtros, projetos, públicos-alvo e métricas calculadas com permissões especiais no Admin Console.
+Os usuários no Customer Journey Analytics não podem criar, editar ou exibir visualizações de dados ou conexões. Os usuários podem criar filtros, projetos, públicos e métricas calculadas com permissões especiais no Admin Console.
 
 ## Preparação de projeto do Workspace
 
@@ -82,7 +82,7 @@ Este é um exemplo relacionado ao sistema de saúde: Digamos que você crie uma 
 
 O **[!UICONTROL Permissões]** faz parte de cada perfil de produto em [Admin Console](https://adminconsole.adobe.com/enterprise/). Você pode adicionar usuários a perfis de produtos específicos. Em seguida, você atribui direitos a visualizações de dados específicas e especifica quais permissões os usuários em um perfil de produto têm. Estas são as permissões específicas do CJA:
 
-![permissões do admin console](assets/permissions.png)
+![permissões do Admin Console](assets/permissions.png)
 
 | Permissão | Definição |
 | --- | --- |
