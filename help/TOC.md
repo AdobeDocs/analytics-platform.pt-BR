@@ -10,9 +10,9 @@ user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para Cross-Channel Analytics, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '738'
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 0%
    + [Referência de componente padrão](data-views/component-reference.md)
    + [Casos de uso de visualizações de dados](data-views/data-views-usecases.md)
    + [Rótulos e políticas](data-views/data-governance.md)
-+ Projetos do Espaço de trabalho {#cja-workspace}
++ Projetos do Workspace {#cja-workspace}
    + [Visão geral do Analysis Workspace](analysis-workspace/home.md)
    + [Realizar análise básica](analysis-workspace/perform-basic-analysis.md)
    + [Realizar análise avançada](analysis-workspace/perform-adv-analysis.md)
@@ -123,7 +123,7 @@ ht-degree: 0%
       + [Visão geral dos painéis](analysis-workspace/c-panels/panels.md)
       + [Painel de atribuição](analysis-workspace/c-panels/attribution.md)
       + [Painel em branco](analysis-workspace/c-panels/blank-panel.md)
-      + [Painel de experiência](analysis-workspace/c-panels/experimentation.md)
+      + [Painel de experimentação](analysis-workspace/c-panels/experimentation.md)
       + [Painel de forma livre](analysis-workspace/c-panels/freeform-panel.md)
       + [Painel do Quick Insights](analysis-workspace/c-panels/quickinsight.md)
       + [Painel de visualizadores simultâneos de mídia](analysis-workspace/c-panels/media-concurrent-viewers.md)
@@ -152,7 +152,7 @@ ht-degree: 0%
          + [Exibir anomalias no Analysis Workspace](analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
          + [Técnicas estatísticas usadas na Detecção de anomalias](analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Preferências do usuário](analysis-workspace/user-preferences.md)
-   + Perguntas frequentes sobre o Espaço de trabalho {#workspace-faq}
+   + Perguntas frequentes sobre o Workspace {#workspace-faq}
       + [Perguntas frequentes](analysis-workspace/workspace-faq/faq.md)
       + [Otimizar o desempenho do Analysis Workspace](analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Mensagens de erro](analysis-workspace/workspace-faq/error-messages.md)
