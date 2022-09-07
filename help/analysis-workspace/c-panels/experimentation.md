@@ -3,9 +3,9 @@ description: Saiba mais sobre como analisar os resultados de testes A/B no paine
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 15ef6bfc1d6600b3795310c208ad46c6f6b52254
-workflow-type: ht
-source-wordcount: '1322'
+source-git-commit: 3c4e2ccd9a3a1d8daf4ace79103b35aead79e432
+workflow-type: tm+mt
+source-wordcount: '1324'
 ht-degree: 100%
 
 ---
@@ -34,8 +34,8 @@ Depois que seus dados de experimento tiverem sido [ingeridos](https://experience
 
 Nas configurações de visualizações de dados do CJA, os administradores podem adicionar [rótulos de contexto](/help/data-views/component-settings/overview.md) a uma dimensão ou métrica, e serviços do CJA, como o painel [!UICONTROL Experimentação], podem usar esses rótulos para suas finalidades. Dois rótulos predefinidos são usados para o painel Experimentação:
 
-* [!UICONTROL Experimento]
-* [!UICONTROL Variante]
+* [!UICONTROL Experimento de experimentação]
+* [!UICONTROL Variante de experimentação]
 
 Na visualização de dados que contém dados de experimentação, escolha duas dimensões: uma com os dados de experimentação e outra com os dados da variante. Em seguida, rotule essas dimensões com os rótulos **[!UICONTROL Experimento]** e **[!UICONTROL Variante]**.
 
