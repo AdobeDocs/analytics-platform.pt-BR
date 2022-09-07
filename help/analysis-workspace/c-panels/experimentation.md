@@ -3,10 +3,10 @@ description: Saiba mais sobre como analisar os resultados de testes A/B no paine
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3c4e2ccd9a3a1d8daf4ace79103b35aead79e432
+source-git-commit: 870fe0f441ad95e5faec569f05fe4d67954b18a5
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 100%
+source-wordcount: '1327'
+ht-degree: 87%
 
 ---
 
@@ -50,7 +50,7 @@ Sem a presença desses rótulos, o painel Experimento não funciona, pois não h
 ![painel de experimento](assets/experiment.png)
 
 >[!IMPORTANT]
->Se a configuração necessária nas visualizações de dados do CJA não tiver sido concluída, você receberá uma mensagem informando isso antes de poder continuar.
+>Se a configuração necessária nas exibições de dados do CJA não tiver sido concluída, você receberá essa mensagem antes de continuar: &quot;[!UICONTROL Configure as dimensões da experiência e da variante nas Visualizações de dados]&quot;.
 
 1. Defina as configurações de entrada do painel.
 
@@ -64,7 +64,7 @@ Sem a presença desses rótulos, o painel Experimento não funciona, pois não h
 
 1. Clique em **[!UICONTROL Criar]**.
 
-## Etapa 4: interpretar a saída do painel
+## Etapa 4: Visualizar a saída do painel
 
 O painel Experimentação retorna um conjunto avançado de dados e visualizações para ajudá-lo a entender melhor o desempenho de seus experimentos. Na parte superior do painel, uma linha de resumo é fornecida para lembrar das configurações do painel que você selecionou. A qualquer momento, você pode editar o painel clicando no lápis de edição na parte superior direita.
 
@@ -76,27 +76,19 @@ Você também recebe um resumo de texto que indica se o experimento é conclusiv
 
 ![saída do experimento](assets/exp-output1.png)
 
-Para cada métrica de sucesso selecionada, uma tabela de forma livre e uma tendência de taxa de conversão serão mostradas:
-
-![saída do experimento](assets/exp-output2.png)
+Para cada métrica de sucesso selecionada, uma tabela de forma livre e uma tendência de taxa de conversão serão mostradas.
 
 O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] em comparação com a [!UICONTROL Variante de controle]:
 
-![saída do experimento](assets/exp-output3.png)
+![saída do experimento](assets/exp-output2.png)
 
 >[!NOTE]
 >
 >No momento, esse painel não é compatível com a análise de testes A/A.
 
-## Metodologia estatística da Adobe
+## Etapa 5: Interpretar os resultados
 
-Para proporcionar uma inferência estatística fácil de interpretar e segura, a Adobe adotou uma metodologia estatística baseada em [Sequências de confiança válidas a qualquer momento](https://doi.org/10.48550/arXiv.2103.06476).
-
-Uma sequência de confiança é um análogo “sequencial” de um intervalo de confiança. Para entender o que é uma sequência de confiança, imagine repetir seus experimentos cem vezes e calcular uma estimativa da métrica média de negócios (por exemplo, a taxa de abertura de um email) e sua sequência associada de 95% de confiança para *cada novo usuário* que entra no experimento. Uma sequência de confiança de 95% incluirá o valor “true” da métrica de negócios em 95 dos 100 experimentos executados. (Um intervalo de confiança de 95% só pode ser calculado uma vez por experimento a fim de dar a mesma garantia de cobertura de 95%; não com cada novo usuário). As Sequências de confiança permitem, portanto, monitorar continuamente os experimentos sem aumentar as índice de erro falso positivo. Ou seja, elas permitem “espiar” os resultados.
-
-### Interpretação dos resultados
-
-1. **O experimento é conclusivo**: cada vez que você visualiza o relatório de experimentação, a Adobe analisa os dados acumulados no experimento até o momento e declara um experimento como “Conclusivo” quando a confiança válida a qualquer momento ultrapassa um limite de 95% para *pelo menos uma* das variantes (com uma correção de Bonferonni aplicada quando há mais de dois braços, para corrigir para testes de hipótese múltipla).
+1. **O experimento é conclusivo**: Cada vez que você visualiza o relatório de experimentação, o Adobe analisa os dados acumulados no experimento até este ponto e declara um experimento como &quot;Conclusivo&quot; quando a confiança válida a qualquer momento ultrapassa um limite de 95% para *pelo menos um* das variantes (com uma correção de Bonferonina aplicada quando há mais de dois braços, para corrigir para testes de hipótese múltipla).
 
 2. **Variante com melhor desempenho**: quando um experimento é declarado conclusivo, a variante com a maior taxa de conversão é rotulada como a “variante com melhor desempenho”. Observe que essa variante deve ser a variante de controle ou de linha de base, ou uma das variantes que cruzam o limite de confiança válido a qualquer momento de 95% (com as correções de Bonferonni aplicadas).
 
@@ -106,4 +98,12 @@ Uma sequência de confiança é um análogo “sequencial” de um intervalo de 
 
 5. **Confiança**: a confiança válida a qualquer momento que é mostrada é uma medida probabilística de quanta evidência existe de que uma determinada variante é a mesma que a variante de controle. Uma confiança maior indica menos evidência para o pressuposto de que as variantes de controle e de não controle têm desempenho igual. Mais precisamente, a confiança exibida é uma probabilidade (expressa como uma porcentagem) que teríamos observado uma diferença menor nos índices de conversão entre uma determinada variante e o controle, se na realidade não houver diferença nos verdadeiros índices de conversão subjacentes. Em termos de valores-*p*, a confiança exibida é de 1 - valor-*p*.
 
-No entanto, observe que uma descrição completa dos resultados deve considerar todas as evidências disponíveis (ou seja, design do experimento, tamanhos das amostras, índices de conversão, confiança etc.) e não apenas a declaração de conclusivo ou não. Mesmo quando um resultado ainda não for “conclusivo”, ainda poderão haver evidências convincentes de que uma variante seja diferente de outra (por exemplo, intervalos de confiança que quase não se sobrepõem). Idealmente, a tomada de decisões deve ser informada por todas as evidências estatísticas, interpretadas em um espectro contínuo.
+>[!NOTE]
+>
+>Uma descrição completa dos resultados deve ter em conta todas as provas disponíveis (por exemplo, concepção experimental, dimensões das amostras, taxas de conversão, confiança, etc.), e não apenas a declaração de conclusão ou não. Mesmo quando um resultado ainda não é &quot;conclusivo&quot;, ainda pode haver provas convincentes de que uma variante seja diferente de outra (por exemplo, intervalos de confiança são quase não sobrepostos). Idealmente, a tomada de decisões deve ser informada por todas as evidências estatísticas, interpretadas em um espectro contínuo.
+
+## Metodologia estatística da Adobe
+
+Para proporcionar uma inferência estatística fácil de interpretar e segura, a Adobe adotou uma metodologia estatística baseada em [Sequências de confiança válidas a qualquer momento](https://doi.org/10.48550/arXiv.2103.06476).
+
+Uma sequência de confiança é um análogo “sequencial” de um intervalo de confiança. Para entender o que é uma sequência de confiança, imagine repetir seus experimentos cem vezes e calcular uma estimativa da métrica média de negócios (por exemplo, a taxa de abertura de um email) e sua sequência associada de 95% de confiança para *cada novo usuário* que entra no experimento. Uma sequência de confiança de 95% incluirá o valor “true” da métrica de negócios em 95 dos 100 experimentos executados. (Um intervalo de confiança de 95% só pode ser calculado uma vez por experimento a fim de dar a mesma garantia de cobertura de 95%; não com cada novo usuário). As Sequências de confiança permitem, portanto, monitorar continuamente os experimentos sem aumentar as índice de erro falso positivo. Ou seja, elas permitem “espiar” os resultados.
