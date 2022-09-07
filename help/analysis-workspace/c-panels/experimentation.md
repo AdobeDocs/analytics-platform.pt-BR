@@ -3,10 +3,10 @@ description: Saiba mais sobre como analisar os resultados de testes A/B no paine
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 870fe0f441ad95e5faec569f05fe4d67954b18a5
+source-git-commit: 7246c019b01a4d9478309bc09bec757561f602d0
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 87%
+source-wordcount: '1326'
+ht-degree: 86%
 
 ---
 
@@ -41,7 +41,7 @@ Na visualização de dados que contém dados de experimentação, escolha duas d
 
 ![rótulo do contexto](assets/context-label.png)
 
-Sem a presença desses rótulos, o painel Experimento não funciona, pois não haverá experimentos com os quais trabalhar.
+Sem esses rótulos presentes, o painel Experimento não funciona, pois não há experimentos para trabalhar.
 
 ## Etapa 3: configurar o painel Experimento
 
@@ -70,13 +70,9 @@ O painel Experimentação retorna um conjunto avançado de dados e visualizaçõ
 
 Você também recebe um resumo de texto que indica se o experimento é conclusivo ou não e resume o resultado. A conclusão baseia-se na significância estatística. (Consulte “Metodologia estatística” abaixo.) Você pode ver números de resumo para a variante de melhor desempenho, com o maior aumento e confiança.
 
->[!NOTE]
->
->O aumento e a confiança também são [funções de métrica calculada avançadas](/help/components/calc-metrics/cm-adv-functions.md) no CJA, então você pode criar suas próprias métricas de aumento e confiança.
+Para cada métrica de sucesso selecionada, uma tabela de forma livre e uma tendência de taxa de conversão serão mostradas.
 
 ![saída do experimento](assets/exp-output1.png)
-
-Para cada métrica de sucesso selecionada, uma tabela de forma livre e uma tendência de taxa de conversão serão mostradas.
 
 O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] em comparação com a [!UICONTROL Variante de controle]:
 
@@ -85,6 +81,10 @@ O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] e
 >[!NOTE]
 >
 >No momento, esse painel não é compatível com a análise de testes A/A.
+
+>[!NOTE]
+>
+>O aumento e a confiança também são [funções de métrica calculada avançadas](/help/components/calc-metrics/cm-adv-functions.md) no CJA, então você pode criar suas próprias métricas de aumento e confiança.
 
 ## Etapa 5: Interpretar os resultados
 
