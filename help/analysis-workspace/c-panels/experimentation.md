@@ -3,10 +3,10 @@ description: Saiba mais sobre como analisar os resultados de testes A/B no paine
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 7246c019b01a4d9478309bc09bec757561f602d0
+source-git-commit: 31f29e9453d252f119a4fa7c26f96e9f01ed2abf
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 86%
+source-wordcount: '1401'
+ht-degree: 81%
 
 ---
 
@@ -27,6 +27,8 @@ O painel **[!UICONTROL Experimentação]** permite que os analistas comparem dif
 O painel Experimentação está disponível para uso por todos os usuários do Customer Journey Analytics (CJA). Não são necessários direitos de administrador ou outras permissões. No entanto, a configuração (etapas 1 e 2 abaixo) requer ações que somente administradores podem executar.
 
 ## Etapa 1: criar conexão com conjuntos de dados de experimento
+
+O esquema de dados recomendado é para que os dados experimentais estejam em um [Matriz de objetos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) que contém os dados de experiência e variante em duas dimensões separadas. Se você tiver seus dados de experimento em uma única dimensão com dados de experimento e variante em uma string delimitada, poderá usar a variável [substring](/help/data-views/component-settings/substring.md) configuração em visualizações de dados para dividi-las em duas para uso no painel.
 
 Depois que seus dados de experimento tiverem sido [ingeridos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) pela Adobe Experience Platform, [crie uma conexão no CJA](/help/connections/create-connection.md) para um ou mais conjuntos de dados de experimento.
 
@@ -76,7 +78,7 @@ Para cada métrica de sucesso selecionada, uma tabela de forma livre e uma tend�
 
 O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] em comparação com a [!UICONTROL Variante de controle]:
 
-![saída do experimento](assets/exp-output2.png)
+![saída do gráfico de linhas](assets/exp-output2.png)
 
 >[!NOTE]
 >
