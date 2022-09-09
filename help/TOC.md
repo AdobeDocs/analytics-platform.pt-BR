@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para Cross-Channel Analytics, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 5eebcccc45b9760ecc18ec94ca526f2082d089bc
+source-git-commit: 17b586ec3a1579db5dd7f1982d844e8327301289
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 100%
+source-wordcount: '757'
+ht-degree: 96%
 
 ---
 
@@ -230,6 +230,11 @@ ht-degree: 100%
    + [Configurar executivos para usar painéis](mobile-app/set-up-execs.md)
    + [Guia de início rápido do usuário executivo](mobile-app/executive.md)
 + Casos de uso {#cja-usecases}
+   + Dados do Google Analytics {#ga}
+      + [Migrar dados do Google Analytics para a visão geral do CJA](use-cases/ga/overview.md)
+      + [Assimilar dados históricos do Google Analytics na plataforma](use-cases/ga/backfill.md)
+      + [Configurar dados de Google Analytics de transmissão na plataforma](use-cases/ga/streaming.md)
+      + [Relatórios de dados do Google Analytics no CJA](use-cases/ga/report.md)
    + [Casos de uso do Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Combinar conjuntos de relatórios com esquemas diferentes](use-cases/combine-report-suites.md)
    + [Uso de arrays de objetos](use-cases/object-arrays.md)
@@ -241,8 +246,6 @@ ht-degree: 100%
    + [Importação de dados da central de atendimento e da Web](use-cases/call-center.md)
    + [Casos de uso da assimilação de dados](use-cases/data-ingestion.md)
    + [Usar dimensões do canal de marketing](use-cases/marketing-channels.md)
-   + [Assimilar dados do Google Analytics na Adobe Experience Platform](use-cases/ga-to-cja.md)
-   + [Relatórios de dados do Google Analytics no CJA](use-cases/ga-to-cja-reporting.md)
 + Labs {#labs}
    + [Guia do usuário do Labs](labs/labs.md)
 + Solução de problemas {#troubleshooting}

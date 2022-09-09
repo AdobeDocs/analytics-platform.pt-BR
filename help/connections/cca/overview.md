@@ -4,10 +4,10 @@ description: Rechavear IDs de visitante de vários conjuntos de dados para compi
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 96%
+source-wordcount: '1189'
+ht-degree: 93%
 
 ---
 
@@ -42,7 +42,7 @@ Antes de usar o Cross-Channel Analytics, verifique se sua organização está pr
 
 >[!IMPORTANT]
 >
->Esteja ciente de que qualquer alteração no esquema do conjunto de dados do evento global deve ser aplicada também no novo esquema do conjunto de dados compilado, caso contrário, ela quebrará o conjunto de dados compilado.
+>Qualquer alteração no esquema do conjunto de dados do evento global deve ser aplicada também no novo esquema do conjunto de dados compilado, caso contrário, ela quebrará o conjunto de dados compilado.
 >
 >Além disso, se você remover o conjunto de dados de origem, o conjunto de dados compilado parará de ser processado e será removido pelo sistema.
 
@@ -51,7 +51,7 @@ O Cross-Channel Analytics é um recurso inovador e robusto, mas tem limitações
 * Os recursos atuais de rechaveamento são limitados a uma etapa (ID persistente para ID transitória). O rechaveamento de várias etapas (por exemplo, ID persistente para uma ID transitória e, em seguida, para outra ID transitória) não é suportado.
 * Somente conjuntos de dados de evento são suportados. Outros conjuntos de dados, como conjuntos de dados de pesquisa, não são suportados.
 * Não há suporte para mapas de ID personalizados usados em sua organização.
-* O gráfico Cooperativo e o gráfico Privado da Adobe não são suportados.
+* Não há suporte para o gráfico Privado entre dispositivos.
 * O Cross-Channel Analytics não transforma de maneira alguma o campo usado para compilação. A compilação em campo usa o valor no campo especificado, como ele existe no conjunto de dados não compilado no data lake. O processo de compilação diferencia maiúsculas de minúsculas. Por exemplo, se às vezes aparecer no campo a palavra &quot;Bob&quot; e, às vezes, a palavra &quot;BOB&quot;, elas serão tratadas como duas pessoas separadas.
 * Considerando que a compilação em campo diferencia maiúsculas de minúsculas, para conjuntos de dados do Analytics gerados pelo Conector de origem do Analytics, o Adobe recomenda a revisão de quaisquer regras VISTA ou regras de processamento que se aplicam ao campo de ID transitório para garantir que nenhuma dessas regras esteja introduzindo novos formulários da mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID transitória em apenas uma parte dos eventos.
 * A compilação em campo não combina nem concatena campos.
