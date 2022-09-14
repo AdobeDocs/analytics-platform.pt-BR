@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 5526e903da45fa2206d6d6fd70ea71d8452687e4
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -22,8 +22,8 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Setembro de 2022 | Novo caso de uso em [Migração de dados do Google Analytics para o CJA](/help/use-cases/ga/overview.md). |
 | Setembro de 2022 | Novo tópico sobre [Gráficos de combinação](/help/analysis-workspace/visualizations/combo-charts.md) no Workspace. |
 | Setembro de 2022 | Novo tópico sobre [Painel de experiência](/help/analysis-workspace/c-panels/experimentation.md) no Workspace. |
-| Agosto de 2022 | Artigo do Adobe Experience Platform sobre [Suporte entre regiões para o Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR). |
-| Agosto de 2022 | Artigo atualizado significativamente em [Controle de acesso CJA](/help/getting-started/cja-access-control.md). |
+| Agosto de 2022 | Artigo da Adobe Experience Platform sobre [Suporte entre regiões para o Analytics Source Connector](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR). |
+| Agosto de 2022 | Artigo atualizado significativamente sobre [Controle de acesso do CJA](/help/getting-started/cja-access-control.md). |
 | Agosto de 2022 | Novo artigo sobre [Compatibilidade do CJA para rótulos e políticas de Governança de dados](/help/data-views/data-governance.md). |
 | Agosto de 2022 | Novo artigo sobre [Comparação de terminologia de dados do Analytics transmitidos pelo Conector de origem do Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
 | Agosto de 2022 | Nova documentação sobre [Publicação de público-alvo no perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=pt-BR). |
@@ -36,7 +36,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Junho de 2022 | Novo artigo sobre [comparação do processamento de dados entre o Adobe Analytics e os recursos de relatórios do CJA](/help/getting-started/aa-vs-cja/data-processing-comparisons.md). |
 | Junho de 2022 | Novo artigo sobre [combinação de conjuntos de relatórios com esquemas diferentes](/help/use-cases/combine-report-suites.md). |
 | Junho de 2022 | Novo artigo sobre [compartilhamento de anotações em cartões de pontuação para dispositivos móveis](/help/components/annotations/mobile-annotations.md). |
-| Junho de 2022 | Novo artigo sobre [Laboratórios do Analytics no CJA](/help/labs/labs.md). |
+| Junho de 2022 | Novo artigo sobre [Labs do Analytics no CJA](/help/labs/labs.md). |
 | Junho de 2022 | Nova seção sobre [suporte para campos numéricos como chaves de pesquisa e valores de pesquisa](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#numeric). |
 | Junho de 2022 | Atualizações para o [Fluxo de trabalho de visualização](/help/analysis-workspace/visualizations/c-flow/create-flow.md). |
 | Maio de 2022 | Artigo atualizado significativamente sobre a [criação de conexões](/help/connections/create-connection.md) no CJA. |

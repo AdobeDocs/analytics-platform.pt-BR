@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 80f31a77df68dca91c1f9f5a0d521b0ea7d450ce
 workflow-type: tm+mt
 source-wordcount: '979'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
 ## 3. Usar dimensões numéricas como &quot;métricas&quot; em diagramas de fluxo {#numeric}
 
-É possível usar uma dimensão numérica para inserir &quot;métricas&quot; em [!UICONTROL  Fluxo] visualização.
+Você pode usar uma dimensão numérica para inserir “métricas” na visualização de [!UICONTROL Fluxo].
 
 1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-component-settings), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Espaço de trabalho, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
@@ -91,7 +91,7 @@ Para obter uma visão geral conceitual das visualizações de dados, consulte [V
 
 Você pode determinar se uma sessão é realmente a primeira sessão de um usuário, com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
 
-* Qual porcentagem de seus pedidos está vindo de novas sessões?
+* Qual porcentagem de seus pedidos vem de sessões novas?
 
 * Para um determinado canal de marketing ou uma campanha específica, você está direcionando usuários pela primeira vez? Como essa escolha influencia as taxas de conversão?
 
@@ -99,7 +99,7 @@ Uma métrica facilita esse relatório:
 
 <!--* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.-->
 
-* [Novas sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional). Uma nova sessão é definida como a primeira sessão de uma pessoa definida na janela de relatórios.
+* [Novas sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional). Uma nova sessão é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
 
    <!--* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.-->
 
