@@ -5,49 +5,49 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 source-git-commit: 17b9e14e58f5bd2f4ec995de54989b00c26076f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '694'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
 # Relatório de dados do Google Analytics no Customer Journey Analytics
 
-Após ter os dados disponíveis no Customer Journey Analytics, os exemplos a seguir fornecem cenários úteis para a criação de relatórios sobre esses dados.
+Assim que os dados forem disponibilizados no Customer Journey Analytics, veja os exemplos a seguir que fornecem cenários úteis para a criação de relatórios sobre esses dados.
 
 ## Visualizar dados da Web e dados do aplicativo como conjuntos de dados combinados
 
-Este diagrama de Venn mostra a sobreposição de usuários em seu site (dos dados do Google Analytics) e em seu aplicativo móvel (dos dados do Firebase) e na central de atendimento. Você também pode ver os produtos com melhor desempenho, não apenas na Web, mas também no aplicativo móvel. Você pode até mesmo obter a receita total de ambos usando uma métrica calculada. Observe como os principais produtos contam uma história diferente quando você examina a receita combinada. Sem os conjuntos de dados combinados, você nunca saberia que &quot;Gorro de sarja&quot; tinha um desempenho tão bom.
+Este diagrama de Venn mostra a sobreposição de usuários em seu site (dos dados do Google Analytics) e em seu aplicativo móvel (dos dados do Firebase) e na central de atendimento. Você também pode ver os produtos com melhor desempenho, não apenas na Web, mas também no aplicativo móvel. Você ainda pode obter o total da receita de ambos usando uma métrica calculada. Observe como os principais produtos contam uma história diferente quando você examina a receita combinada. Sem os conjuntos de dados combinados, você nunca saberia que &quot;Gorro de sarja&quot; tinha um desempenho tão bom.
 
 ![Conjuntos de dados combinados](../assets/combined-datasets.png)
 
 ## Identificar os motivos da chamada e reduzir o volume de chamadas
 
-Você pode analisar a tendência do tempo gasto na central de chamadas nos últimos dois meses para determinar o volume de chamadas. O exemplo a seguir mostra a tendência desses dados nos últimos dois meses. O exemplo a seguir mostra uma tendência crescente, que pode afetar os custos organizacionais.
+Você pode analisar a tendência do tempo gasto na central de atendimento dos últimos dois meses para determinar o volume de chamadas. O exemplo a seguir mostra a tendência desses dados nos últimos dois meses. O exemplo a seguir mostra uma tendência crescente, que pode afetar os custos organizacionais.
 
 ![Volume de chamadas](../assets/call-volume.png)
 
-O uso da dimensão &quot;Motivo da chamada&quot; pode indicar maneiras de melhorar a experiência da Web, impedindo que os visitantes façam chamadas. O exemplo acima mostra que o &quot;produto de danos&quot; tem um tempo médio de chamada de quase 3 minutos por chamada, proporcionando à sua organização uma maneira precisa de melhorar a experiência do cliente e reduzir os custos da central de atendimento.
+O uso da dimensão “Motivo da chamada” pode indicar maneiras de melhorar a experiência online, impedindo que os visitantes façam chamadas. O exemplo acima mostra que o motivo “Produto danificado” tem um tempo médio de chamada de quase 3 minutos, proporcionando à sua organização uma maneira precisa de melhorar a experiência do cliente e reduzir os custos da central de atendimento.
 
-Você pode ver quais produtos causam a maioria das chamadas para sua central de atendimento e quantos clientes fizeram essas chamadas. O gráfico de bolhas mostra que 20.000 pessoas ligaram, gastaram mais de 4 horas 30 minutos e retornaram 33 unidades do produto &quot;Capa de Folha Curta de Masculino&quot;.
+Você pode ver quais produtos causam a maioria das chamadas para sua central de atendimento e quantos clientes fizeram essas chamadas. O gráfico de bolhas indica que 20.000 pessoas telefonaram, gastaram mais de 4 horas e 30 minutos e devolveram 33 unidades do produto “Camiseta masculina de manga curta”.
 
 ![Motivo da chamada](../assets/call-reason.png)
 
-Aplicando um detalhamento de dimensão de &quot;Motivo da chamada&quot;, o exemplo mostra um item de dimensão &quot;Produto danificado&quot;. O próximo passo seria entrar em contato com o departamento de controle de qualidade e ver por que os clientes têm recebido camisetas com defeito.
+Aplicando um detalhamento de dimensão ao “Motivo da chamada”, o exemplo mostra um item de dimensão “Produto danificado”. O próximo passo seria entrar em contato com o departamento de controle de qualidade e ver por que os clientes têm recebido camisetas com defeito.
 
-Você pode ver quais páginas do site levaram chamadas para a central de atendimento. Este relatório permite saber onde as experiências menos ideais estão no site e ajudar seus Gerentes de produto a resolver esses desafios. O exemplo a seguir usa uma métrica calculada para filtrar os dados somente para sessões que terminaram com uma chamada da central de atendimento. Também usa o modelo de &quot;participação&quot; no CJA [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=pt-BR#cja-workspace).
+Você pode ver quais páginas do site geraram chamadas para a central de atendimento. Esse relatório permite saber onde estão as experiências com baixo desempenho no site e ajuda os seus gerentes de produto a resolver esses desafios. O exemplo a seguir usa uma métrica calculada para filtrar apenas os dados de sessões que terminaram com uma chamada para a central de atendimento. Também usa o modelo de “participação” no [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=pt-BR#cja-workspace) do CJA.
 
-O exemplo a seguir mostra que as páginas &quot;Carrinho de compras&quot; e &quot;Informações de check-out&quot; direcionam a maioria das chamadas.
+O exemplo a seguir mostra que as páginas “Carrinho de compras” e “Informações de check-out” geram a maioria das chamadas.
 
 ![Páginas de contribuição](../assets/contributing-pages.png)
 
-A tabela de coorte permite ver quanto tempo os usuários normalmente levam para chamar a central de atendimento depois de visitarem o site. O exemplo a seguir indica que o tempo médio para esse conjunto de dados de exemplo está entre três e quatro semanas.
+A tabela de coorte permite ver quanto tempo os usuários normalmente levam para ligar para a central de atendimento depois de visitarem o site. O exemplo a seguir indica que o tempo médio para esse conjunto de dados de exemplo é de três a quatro semanas.
 
 ![Coorte](../assets/cohort.png)
 
 ## Usar atribuição de marketing avançada
 
-O CJA permite usar modelos de atribuição sofisticados em dados entre canais. No exemplo a seguir, é possível ver uma comparação da aplicação de Último contato, primeiro contato, forma de u e atribuição algorítmica de receita à dimensão Agrupamento de canal do Google Analytics.
+O CJA permite usar modelos de atribuição sofisticados em seus dados de canais. No exemplo a seguir, é possível ver uma comparação da aplicação de Último contato, primeiro contato, forma de u e atribuição algorítmica de receita à dimensão Agrupamento de canal do Google Analytics.
 
 ![Atribuição de marketing](../assets/mktg-attribution.png)
 
@@ -59,10 +59,10 @@ O Attribution IQ também permite filtrar os dados. Você pode ver a atribuição
 
 ![Filtro](../assets/filter.png)
 
-Você também pode atribuir sua receita da Web e do aplicativo ao seu conteúdo de anúncio do Google. O exemplo desse conjunto de dados obteve mais receita com o aplicativo móvel que está sendo orientado por anúncios online da Google do que pela Web. Ao classificar anúncios por receita da Web e do aplicativo, você obtém uma imagem diferente do que eram seus anúncios Google de melhor desempenho.
+Você também pode atribuir sua receita da Web e do aplicativo ao seu conteúdo de anúncio do Google. O exemplo desse conjunto de dados obteve mais receita pelo aplicativo móvel orientado por anúncios do Google Ads do que pela Web. Classificando os anúncios por receita da Web e do aplicativo, você obtém uma imagem diferente sobre quais eram seus anúncios do Google Ads com melhor desempenho.
 
-![anúncio do Google](../assets/google-ad.png)
+![Anúncio do Google](../assets/google-ad.png)
 
-Combinar conjuntos de dados no CJA permite ver neste exemplo que anúncios online estavam afetando produtos comprados em seu aplicativo móvel. A visualização a seguir mostra que a receita do aplicativo móvel do Google Ads representa um valor extra de US$ 14 mil a US$ 15 mil, em comparação somente com a Web.
+Neste exemplo, a combinação de conjuntos de dados no CJA permite observar que anúncios online estavam tendo certo impacto nas compras de produtos pelo aplicativo móvel. A visualização a seguir mostra que a receita do aplicativo móvel proveniente do Google Ads representa US$ 14 mil a US$ 15 mil adicionais em comparação à receita da Web isoladamente.
 
 ![Google ad 2](../assets/google-ad2.png)
