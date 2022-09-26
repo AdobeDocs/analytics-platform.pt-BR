@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 80f31a77df68dca91c1f9f5a0d521b0ea7d450ce
 workflow-type: tm+mt
 source-wordcount: '979'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,11 +95,11 @@ Você pode determinar se uma sessão é realmente a primeira sessão de um usuá
 
 * Para um determinado canal de marketing ou uma campanha específica, você está direcionando usuários pela primeira vez? Como essa escolha influencia as taxas de conversão?
 
-Uma métrica facilita esse relatório:
+Há uma métrica que facilita esse relatório:
 
 <!--* 1 dimension: [Session type](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) - This dimension has two values: 1) [!UICONTROL New] and 2) [!UICONTROL Returning]. The [!UICONTROL New] line item includes all of the behavior (i.e. metrics against this dimension) from a session that has been determined to be a person's defined first session. Everything else is included in the [!UICONTROL Returning] line item (assuming everything belongs to a session). Where metrics are not part of any session, they fall into the 'Not applicable' bucket for this dimension.-->
 
-* [Novas sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional). Uma nova sessão é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
+* [Novas sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional). Uma nova sessão se trata da primeira sessão definida de uma pessoa na janela de relatórios.
 
    <!--* [Return sessions](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) Return sessions is the number of sessions that were not a person's first-ever session.-->
 

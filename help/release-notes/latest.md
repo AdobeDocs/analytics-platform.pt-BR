@@ -6,11 +6,11 @@ feature: Release Notes
 source-git-commit: d2aec8976d7d81c28a6b9b76c58fec0fc2c3b360
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 76%
+ht-degree: 91%
 
 ---
 
-# Notas de versão do Customer Journey Analytics atual (CJA) (setembro de 2022)
+# Notas de versão atuais do Customer Journey Analytics (CJA) (setembro de 2022)
 
 **Última atualização**: 14 de setembro de 2022
 
@@ -20,7 +20,7 @@ As versões de Customer Journey Analytics operam em um [modelo de delivery cont�
 
 * [Notas de versão anteriores do CJA para 2022](/help/release-notes/2022.md)
 
-* [Notas de versão de do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=pt-BR)
+* [Notas de versão do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=pt-BR)
 
 * [Notas de versão do Media Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=pt-BR)
 
@@ -31,9 +31,9 @@ As versões de Customer Journey Analytics operam em um [modelo de delivery cont�
 | Recurso | Descrição | [Data Alvo](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
 | **Suporte entre regiões para o Conector de origem do Analytics** | Agora é possível assimilar conjuntos de relatórios de qualquer região (Estados Unidos, Reino Unido ou Cingapura). No entanto, esses conjuntos de relatórios devem ser mapeados para a mesma organização da instância de sandbox da Experience Platform em que a conexão de origem está sendo criada. [Saiba mais](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) | 24 de agosto de 2022 |
-| **Relatório da primeira sessão** | Descubra se uma sessão em particular foi a primeira sessão de um usuário. [Saiba mais](/help/data-views/data-views-usecases.md) | 24 de agosto de 2022 |
-| **Painel de experiência para CJA** | Esse novo painel do Workspace permite que os usuários do CJA avaliem o incentivo e a confiança de qualquer experimento A/B de qualquer fonte - online, offline, de soluções Adobe, Adobe Journey Optimizer e até mesmo dados BYO (traga seus próprios). [Saiba mais](/help/analysis-workspace/c-panels/experimentation.md) | [Versão limitada](/help/release-notes/releases.md) a partir de 14 de setembro de 2022 |
-| **Visualização de gráficos de combinação no espaço de trabalho** | Os gráficos de combinação permitem comparar métricas de forma mais fácil e intuitiva no espaço de trabalho. [Saiba mais](/help/analysis-workspace/visualizations/combo-charts.md) | 14 de setembro de 2022 |
+| **Relatório da primeira sessão** | Descubra se uma sessão específica foi a primeira sessão de um usuário. [Saiba mais](/help/data-views/data-views-usecases.md) | 24 de agosto de 2022 |
+| **Painel de experimentação para o CJA** | Esse novo painel do espaço de trabalho permite que os usuários do CJA avaliem o aumento e a confiança de um experimento A/B de qualquer fonte, seja online, offline, de soluções da Adobe, do Adobe Journey Optimizer e até mesmo de dados BYO (traga os seus próprios). [Saiba mais](/help/analysis-workspace/c-panels/experimentation.md) | [Lançamento limitado](/help/release-notes/releases.md) a partir de 14 de setembro de 2022 |
+| **Visualização de gráficos de combinação no espaço de trabalho** | Os gráficos de combinação permitem que você compare métricas de maneira fácil e intuitiva no espaço de trabalho. [Saiba mais](/help/analysis-workspace/visualizations/combo-charts.md) | 14 de setembro de 2022 |
 | **Compatibilidade do CJA para rótulos e políticas de Governança de dados** | Automatiza a integração do CJA com os rótulos e políticas de privacidade da Adobe Experience Platform. Os rótulos de dados criados em conjuntos de dados consumidos pela Platform são exibidos nas visualizações de dados do CJA para interromper ou avisar os usuários que criam métricas e/ou dimensões a partir de campos sigilosos. Além disso, quando os dados forem exportados do CJA (por meio de relatórios do Workspace ou Report Builder, exportação, API etc.), avisos ou rótulos adicionais serão adicionados para notificar os usuários que um relatório contém informações sigilosas que precisam ser tratadas de uma maneira específica. [Saiba mais](/help/data-views/data-governance.md) | 14 de setembro de 2022 |
 
 {style=&quot;table-layout:auto&quot;}
