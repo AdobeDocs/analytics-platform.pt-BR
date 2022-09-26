@@ -1,12 +1,12 @@
 ---
-description: Saiba como analisar os resultados de testes A/B no painel Experimentação do CJA.
+description: Saiba como analisar os resultados de testes A/B no painel de experimentação do CJA.
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1379'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ O painel Experimentação está disponível para uso por todos os usuários do C
 
 ## Etapa 1: criar conexão com conjuntos de dados de experimento
 
-O esquema de dados recomendado é para que os dados experimentais estejam em um [Matriz de objetos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=en) que contém os dados de experiência e variante em duas dimensões separadas. Se você tiver seus dados de experimento em uma única dimensão com dados de experimento e variante em uma string delimitada, poderá usar a variável [substring](/help/data-views/component-settings/substring.md) configuração em visualizações de dados para dividi-las em duas para uso no painel.
+O esquema de dados recomendado é um no qual os dados experimentais estejam em uma [Matriz de objetos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=pt-BR) que contém os dados de experimento e variante em duas dimensões separadas. Se você tiver seus dados de experimento em uma única dimensão com os dados de experimento e variante em uma string delimitada, poderá usar a configuração [substring](/help/data-views/component-settings/substring.md) das visualizações de dados para dividi-los em duas partes para uso no painel.
 
 Depois que seus dados de experimento tiverem sido [ingeridos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) pela Adobe Experience Platform, [crie uma conexão no CJA](/help/connections/create-connection.md) para um ou mais conjuntos de dados de experimento.
 
@@ -43,7 +43,7 @@ Na visualização de dados que contém dados de experimentação, escolha duas d
 
 ![rótulo do contexto](assets/context-label.png)
 
-Sem esses rótulos presentes, o painel Experimento não funciona, pois não há experimentos para trabalhar.
+Sem a presença desses rótulos, o painel Experimento não funciona, pois não haverá experimentos com os quais trabalhar.
 
 ## Etapa 3: configurar o painel Experimento
 
@@ -52,7 +52,7 @@ Sem esses rótulos presentes, o painel Experimento não funciona, pois não há 
 ![painel de experimento](assets/experiment.png)
 
 >[!IMPORTANT]
->Se a configuração necessária nas exibições de dados do CJA não tiver sido concluída, você receberá essa mensagem antes de continuar: &quot;[!UICONTROL Configure as dimensões da experiência e da variante nas Visualizações de dados]&quot;.
+>Se a configuração necessária nas visualizações de dados do CJA não tiver sido concluída, essa mensagem será exibida antes que você possa continuar: “[!UICONTROL Configure as dimensões de experimento e variante nas visualizações de dados]”.
 
 1. Defina as configurações de entrada do painel.
 
@@ -66,7 +66,7 @@ Sem esses rótulos presentes, o painel Experimento não funciona, pois não há 
 
 1. Clique em **[!UICONTROL Criar]**.
 
-## Etapa 4: Visualizar a saída do painel
+## Etapa 4: visualizar a saída do painel
 
 O painel Experimentação retorna um conjunto avançado de dados e visualizações para ajudá-lo a entender melhor o desempenho de seus experimentos. Na parte superior do painel, uma linha de resumo é fornecida para lembrar das configurações do painel que você selecionou. A qualquer momento, você pode editar o painel clicando no lápis de edição na parte superior direita.
 
@@ -84,9 +84,9 @@ O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] e
 >
 >No momento, esse painel não é compatível com a análise de testes A/A.
 
-## Etapa 5: Interpretar os resultados
+## Etapa 5: interpretar os resultados
 
-1. **O experimento é conclusivo**: Cada vez que você visualiza o relatório de experimentação, o Adobe analisa os dados acumulados no experimento até este ponto e declara um experimento como &quot;Conclusivo&quot; quando a confiança válida a qualquer momento ultrapassa um limite de 95% para *pelo menos um* das variantes (com uma correção de Bonferonina aplicada quando há mais de dois braços, para corrigir para testes de hipótese múltipla).
+1. **O experimento é conclusivo**: cada vez que você visualiza o relatório de experimentação, a Adobe analisa os dados acumulados no experimento até o momento e declara um experimento como “Conclusivo” quando a confiança válida a qualquer momento ultrapassa um limite de 95% em *pelo menos uma* das variantes (com uma correção de Bonferonni aplicada quando há mais de dois braços a serem corrigidos para testes de hipótese múltipla).
 
 2. **Variante com melhor desempenho**: quando um experimento é declarado conclusivo, a variante com a maior taxa de conversão é rotulada como a “variante com melhor desempenho”. Observe que essa variante deve ser a variante de controle ou de linha de base, ou uma das variantes que cruzam o limite de confiança válido a qualquer momento de 95% (com as correções de Bonferonni aplicadas).
 
@@ -98,7 +98,7 @@ O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] e
 
 >[!NOTE]
 >
->Uma descrição completa dos resultados deve ter em conta todas as provas disponíveis (por exemplo, concepção experimental, dimensões das amostras, taxas de conversão, confiança, etc.), e não apenas a declaração de conclusão ou não. Mesmo quando um resultado ainda não é &quot;conclusivo&quot;, ainda pode haver provas convincentes de que uma variante seja diferente de outra (por exemplo, intervalos de confiança são quase não sobrepostos). Idealmente, a tomada de decisões deve ser informada por todas as evidências estatísticas, interpretadas em um espectro contínuo.
+>Uma descrição completa dos resultados deve considerar todas as evidências disponíveis (ou seja, o design do experimento, tamanhos das amostras, taxas de conversão, confiança etc.) e não apenas se é conclusivo ou não. Mesmo que um resultado ainda não seja “conclusivo”, é possível que haja evidências convincentes de que uma variante seja diferente de outra (por exemplo, intervalos de confiança que quase não se sobrepõem). Idealmente, a tomada de decisões deve ser informada por todas as evidências estatísticas, interpretadas em um espectro contínuo.
 
 ## Metodologia estatística da Adobe
 
