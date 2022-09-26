@@ -5,9 +5,9 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
 source-git-commit: fff0ffb3a513c3fc514d6769f8c3bc70fa75459e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1189'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -51,9 +51,9 @@ O Cross-Channel Analytics é um recurso inovador e robusto, mas tem limitações
 * Os recursos atuais de rechaveamento são limitados a uma etapa (ID persistente para ID transitória). O rechaveamento de várias etapas (por exemplo, ID persistente para uma ID transitória e, em seguida, para outra ID transitória) não é suportado.
 * Somente conjuntos de dados de evento são suportados. Outros conjuntos de dados, como conjuntos de dados de pesquisa, não são suportados.
 * Não há suporte para mapas de ID personalizados usados em sua organização.
-* Não há suporte para o gráfico Privado entre dispositivos.
-* O Cross-Channel Analytics não transforma de maneira alguma o campo usado para compilação. A compilação em campo usa o valor no campo especificado, como ele existe no conjunto de dados não compilado no data lake. O processo de compilação diferencia maiúsculas de minúsculas. Por exemplo, se às vezes aparecer no campo a palavra &quot;Bob&quot; e, às vezes, a palavra &quot;BOB&quot;, elas serão tratadas como duas pessoas separadas.
-* Considerando que a compilação em campo diferencia maiúsculas de minúsculas, para conjuntos de dados do Analytics gerados pelo Conector de origem do Analytics, o Adobe recomenda a revisão de quaisquer regras VISTA ou regras de processamento que se aplicam ao campo de ID transitório para garantir que nenhuma dessas regras esteja introduzindo novos formulários da mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID transitória em apenas uma parte dos eventos.
+* O gráfico privado entre dispositivos não é compatível.
+* O Cross-Channel Analytics não transforma de maneira alguma o campo usado para compilação. A compilação em campo usa o valor no campo especificado, como ele existe no conjunto de dados não compilado no data lake. O processo de compilação diferencia maiúsculas de minúsculas. Por exemplo, se às vezes aparecer no campo a palavra “Bob” e, às vezes, a palavra “BOB”, elas serão tratadas como duas pessoas separadas.
+* Considerando que a compilação baseada em campos diferencia maiúsculas de minúsculas, no caso de conjuntos de dados do Analytics gerados pelo conector de origem do Analytics, a Adobe recomenda analisar todas as regras VISTA ou regras de processamento que se aplicam ao campo de ID transitória para garantir que nenhuma dessas regras esteja introduzindo novos formulários com a mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID transitória em apenas uma parte dos eventos.
 * A compilação em campo não combina nem concatena campos.
 * O campo de ID transitória deve conter um único tipo de ID (ou seja, IDs de um único namespace). Por exemplo, o campo ID transitória não deve conter uma combinação de IDs de logon e IDs de email.
 * Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID transitória, a compilação em campo será escolhida por ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação baseada em campo escolherá Ann.
