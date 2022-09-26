@@ -3,9 +3,9 @@ title: Operadores de filtro
 description: Determinam como um componente interage com um valor em um filtro.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
 source-git-commit: a8b884148a197b081e321582f70a9188a1bdc51e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '594'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ O construtor de filtros permite que você compare e restrinja valores com os ope
 | --- | --- |
 | igual a | Retorna itens que possuem o mesmo valor numérico ou de sequência. Se estiver usando caracteres curingas, use o operador &quot;corresponde&quot;. |
 | não é igual | Retorna todos os itens que não contêm a correspondência exata do valor inserido.  Se estiver usando caracteres curingas, use o operador &quot;não correspondente&quot;. |
-| equivale a qualquer | Retorna quaisquer itens que contenham a correspondência dos valores de subsequência de caracteres inseridos, delimitados por vírgula. |
+| equivale a qualquer | Retorna quaisquer itens que contenham a correspondência dos valores de substring inseridos, delimitados por vírgula. |
 | contém | Retorna itens que se comparam às subsequências de caracteres dos valores inseridos. Por exemplo, se a regra de uma dimensão de sequência de caracteres contiver `"Search"`, ela corresponderá a qualquer página que tenha a subsequência de caracteres `"Search"` nela, incluindo `"Search Results"`, `"Search"` e `"Searching"`. Esse operador diferencia maiúsculas e minúsculas. |
 | não contém | Todos os itens que correspondem ao valor inserido são excluídos dos resultados. Por exemplo, se a regra de uma dimensão de sequência de caracteres não contiver `"Search"`, então qualquer página que tenha a subsequência de caracteres `"Search"` nela é excluída, incluindo `"Search Results"`, `"Search"` e `"Searching"`. |
 | contém tudo | Retorna itens que incluem todas as subsequências de caracteres (separadas por um espaço) em qualquer ordem. Por exemplo, inserir `"Search Results"` com este operador corresponderia a `"Search Results"` e `"Results of Search"`, mas não a `"Search"` ou `"Results"` independentemente. Esse operador suporta até 100 palavras delimitadas por espaços. |
