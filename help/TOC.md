@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Este guia fornece ajuda para o Customer Journey Analytics, a solução de última geração da Adobe para Cross-Channel Analytics, com base na Adobe Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 17b586ec3a1579db5dd7f1982d844e8327301289
-workflow-type: ht
-source-wordcount: '757'
-ht-degree: 100%
+source-git-commit: 19551e8c8f3b114b1851ed80c2b13ae29696f79d
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 98%
 
 ---
 
@@ -229,13 +229,16 @@ ht-degree: 100%
    + [Criar um cartão de pontuação](mobile-app/create-scorecard.md)
    + [Configurar executivos para usar painéis](mobile-app/set-up-execs.md)
    + [Guia de início rápido do usuário executivo](mobile-app/executive.md)
++ Integrações do Adobe {#integrations}
+   + [Integrar soluções do Adobe com a visão geral do CJA](/help/integrations/overview.md)
+   + [Integrar dados do Journey Optimizer com o CJA](/help/integrations/ajo.md)
 + Casos de uso {#cja-usecases}
+   + [Casos de uso do Customer Journey Analytics](use-cases/cja-usecases.md)
    + Dados do Google Analytics {#ga}
       + [Visão geral sobre a migração de dados do Google Analytics para o CJA](use-cases/ga/overview.md)
       + [Ingestão de dados históricos do Google Analytics na Platform](use-cases/ga/backfill.md)
       + [Configurar dados de transmissão do Google Analytics na Platform](use-cases/ga/streaming.md)
       + [Relatórios de dados do Google Analytics no CJA](use-cases/ga/report.md)
-   + [Casos de uso do Customer Journey Analytics](use-cases/cja-usecases.md)
    + [Combinar conjuntos de relatórios com esquemas diferentes](use-cases/combine-report-suites.md)
    + [Uso de arrays de objetos](use-cases/object-arrays.md)
    + [Uso de dimensões e métricas de ligação](use-cases/binding-dimensions-metrics.md)
