@@ -4,10 +4,10 @@ title: Visualização de gráficos de combinação
 feature: Visualizations
 role: User, Admin
 exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 5aee0fcc0ec241d946da4ce97dc01eb6274648aa
+source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 99%
+source-wordcount: '776'
+ht-degree: 96%
 
 ---
 
@@ -21,12 +21,13 @@ Use um [!UICONTROL Gráfico de combinação] para:
 * Analisar e comparar várias métricas rapidamente (como [!UICONTROL Visitantes únicos] e [!UICONTROL Receita]) no mesmo gráfico.
 * Analisar uma métrica em relação a uma função (como [!UICONTROL Média acumulada]) ao longo de um horizonte de tempo.
 
-Lembre-se de que você pode:
+Lembre-se:
 
-* Adicionar várias comparações em um único [!UICONTROL Gráfico de combinação].
+* Você pode adicionar várias comparações em uma única [!UICONTROL Gráfico de combinação].
 * Se você adicionar uma ou mais comparações, elas devem ser do mesmo tipo, como [!UICONTROL Comparação de tempo].
 * Você pode adicionar até 5 comparações.
 * É possível aplicar até 3 filtros (segmentos) a uma métrica.
+* Métricas calculadas não são compatíveis com gráficos de combinação.
 
 ## Criar um gráfico de combinação
 
