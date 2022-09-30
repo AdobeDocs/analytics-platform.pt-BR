@@ -1,10 +1,10 @@
 ---
 title: Integrar o Adobe Journey Optimizer ao Customer Journey Analytics
 description: Traga dados gerados pela AJO e analise-os usando o Analysis Workspace no CJA.
-source-git-commit: 28bc99a7f5ec7b280fd26a7a45dc076e67f652dc
+source-git-commit: b24ad572ca36bbafffcd242fe257a2113977392d
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 2%
+source-wordcount: '664'
+ht-degree: 3%
 
 ---
 
@@ -41,6 +41,8 @@ Você pode criar as seguintes métricas em uma visualização de dados para obte
 | Mensagens enviadas com êxito | O número de mensagens enviadas com êxito | Usar o elemento da cadeia de caracteres de esquema `_experience.customerJourneyManagement.messageDeliveryfeedback.feedbackStatus` com as seguintes configurações:<br>Tipo de componente: Métrica<br>Incluir valores de exclusão: Igual `sent` |
 | Falhas de sincronização | O número total de mensagens que falharam na sincronização | Usar o elemento da cadeia de caracteres de esquema `_experience.customerJourneyManagement.messageDeliveryfeedback.messageFailure.category` com as seguintes configurações:<br>Tipo de componente: Métrica<br>Incluir valores de exclusão: Igual `sync` |
 
+{style=&quot;table-layout:auto&quot;}
+
 ## Configurar métricas calculadas usando métricas do Journey Optimizer
 
 Depois de configurar as dimensões e métricas desejadas para o conjunto de dados do Journey Optimizer, você também pode configurar [Métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md) para obter insights adicionais sobre esses dados. Essas métricas calculadas são baseadas nas métricas acima criadas no Gerenciador de visualização de dados.
@@ -48,6 +50,8 @@ Depois de configurar as dimensões e métricas desejadas para o conjunto de dado
 | Métrica calculada | Descrição | Fórmula |
 | --- | --- | --- |
 | Total de mensagens enviadas | O número total de mensagens enviadas, bem-sucedidas ou com falha | `[Messages successfully sent]` + `[Bounces]` + `[Sync failures]` |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Diferenças nos relatórios entre o Journey Optimizer e o Customer Journey Analytics
 
