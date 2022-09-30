@@ -2,12 +2,13 @@
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 17030d5ac3b488a6c628e6de7aab8b710e5c175a
-workflow-type: ht
-source-wordcount: '1100'
-ht-degree: 100%
+source-git-commit: 67489fc6e9c0733589bccdd136837db8caca14a2
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 98%
 
 ---
+
 
 # Visão geral dos filtros {#overview}
 
@@ -18,6 +19,8 @@ Os filtros podem ser baseados em atributos (tipo de navegador, dispositivo, núm
 Você pode criar e salvar filtros no Construtor de filtros ou gerar filtros de uma visualização de Fallout (no Espaço de trabalho). Além disso, filtros podem ser usados juntos como filtros empilhados.
 
 A filtragem inclui o [Construtor de filtros](/help/components/filters/create-filters.md) para construir segmentos e executar um pré-teste, e o [Gerenciador de filtros](/help/components/filters/manage-filters.md) para coletar, marcar, aprovar, definir a segurança e compartilhar filtros na organização.
+
+O número máximo de filtros que podem ser criados por organização de IMS é de 50.000.
 
 ## Tipos de filtro {#types}
 
