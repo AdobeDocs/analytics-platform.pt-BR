@@ -3,10 +3,10 @@ title: Referência - funções avançadas
 description: Para acessar essas funções, selecione Mostrar avançadas na lista suspensa Funções.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+workflow-type: tm+mt
+source-wordcount: '3111'
+ht-degree: 96%
 
 ---
 
@@ -99,7 +99,7 @@ ASIN(metric)
 
 | Argumento |  |
 |---|---|
-| *metric* | O cosseno do ângulo que você deseja de -1 a 1. |
+| *métrica* | O cosseno do ângulo que você deseja de -1 a 1. |
 
 ## Arco tangente (Linha)
 
@@ -111,7 +111,7 @@ ATAN(metric)
 
 | Argumento |  |
 |---|---|
-| *metric* | O cosseno do ângulo que você deseja de -1 a 1. |
+| *métrica* | O cosseno do ângulo que você deseja de -1 a 1. |
 
 ## Regressão exponencial: valor previsto de Y (Linha)
 
@@ -160,7 +160,24 @@ CEILING(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica que deseja arredondar. |
+| *métrica* | A métrica que deseja arredondar. |
+
+## Confiança
+
+[!UICONTROL Confiança] é uma medida probabilística de quanta evidência há de que uma determinada variante é a mesma que a variante de controle. Uma confiança maior indica menos evidência para o pressuposto de que as variantes de controle e de não controle têm desempenho igual.
+
+```
+fx Confidence (normalizing-container, success-metric, control, significance-threshold)
+```
+
+| Argumento | Descrição |
+| --- | --- |
+| Normalização do contêiner | A base (Pessoas, Sessões ou Eventos) em que um teste será executado. |
+| Métrica de Sucesso | A métrica, ou as métricas, com as quais um usuário está comparando variantes. |
+| Controle | A variante com a qual todas as outras variantes do experimento estão sendo comparadas. Insira o nome do item de dimensão da variante de controle. |
+| Limiar de significância | O limite nesta função é definido como um padrão de 95%. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Cosseno (Linha)
 
@@ -172,7 +189,7 @@ COS(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja obter o cosseno. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja obter o cosseno. |
 
 ## Raiz cúbica
 
@@ -184,7 +201,7 @@ CBRT(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a raiz cúbica. |
+| *métrica* | A métrica para a qual você deseja obter a raiz cúbica. |
 
 ## Cumulativo
 
@@ -267,7 +284,7 @@ FLOOR(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | A métrica que deseja arredondar. |
+| *métrica* | A métrica que deseja arredondar. |
 
 ## Maior que
 
@@ -287,7 +304,7 @@ COSH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja descobrir o cosseno hiperbólico. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir o cosseno hiperbólico. |
 
 ## Seno hiperbólico (Linha)
 
@@ -299,7 +316,7 @@ SINH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja descobrir o seno hiperbólico. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir o seno hiperbólico. |
 
 ## Tangente hiperbólica (Linha)
 
@@ -311,7 +328,7 @@ TANH(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja descobrir a tangente hiperbólica. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja descobrir a tangente hiperbólica. |
 
 ## IF (Linha)
 
@@ -334,6 +351,22 @@ Retorna itens cuja contagem numérica é inferior ao valor inserido.
 ## Menor que ou igual
 
 Retorna itens cuja contagem numérica é inferior ou igual ao valor inserido.
+
+## Aumento
+
+Retorna o incentivo que uma variante específica tinha em conversões sobre uma variante de controle. É a diferença de desempenho entre uma determinada variante e a linha de base, dividida pelo desempenho da linha de base, expressa em percentagem.
+
+```
+fx Lift (normalizing-container, success-metric, control)
+```
+
+| Argumento | Descrição |
+| --- | --- |
+| Normalização do contêiner | A base (Pessoas, Sessões ou Eventos) em que um teste será executado. |
+| Métrica de Sucesso | A métrica, ou as métricas, com as quais um usuário está comparando variantes. |
+| Controle | A variante com a qual todas as outras variantes do experimento estão sendo comparadas. Insira o nome do item de dimensão da variante de controle. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Regressão linear: Coeficiente de correlação
 
@@ -361,7 +394,7 @@ LOG10(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O número real positivo para o qual você deseja obter o logaritmo de base 10. |
+| *métrica* | O número real positivo para o qual você deseja obter o logaritmo de base 10. |
 
 ## Regressão logarítmica: coeficiente de correlação (Tabela)
 
@@ -427,7 +460,7 @@ LN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O número real positivo para o qual você deseja obter o logaritmo natural. |
+| *métrica* | O número real positivo para o qual você deseja obter o logaritmo natural. |
 
 ## NOT
 
@@ -640,7 +673,7 @@ SIN(metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja obter o seno. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja obter o seno. |
 
 ## Pontuação T
 
@@ -682,7 +715,7 @@ TAN (metric)
 
 | Argumento | Descrição |
 |---|---|
-| *metric* | O ângulo, em radianos, para o qual você deseja obter a tangente. |
+| *métrica* | O ângulo, em radianos, para o qual você deseja obter a tangente. |
 
 ## Pontuação Z (Linha)
 
@@ -709,7 +742,7 @@ Pontuação Z (métrica)
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> <i>metric</i> </td>
+   <td colname="col1"> <i>métrica</i> </td>
    <td colname="col2"> <p> Retorna o valor do seu primeiro argumento diferente de zero. </p> </td>
   </tr>
  </tbody>

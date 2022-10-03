@@ -3,10 +3,10 @@ description: Saiba como analisar os resultados de testes A/B no painel de experi
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 23ea60d785bbee62aab66c0e74be70b34e5d5642
-workflow-type: ht
-source-wordcount: '1379'
-ht-degree: 100%
+source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+workflow-type: tm+mt
+source-wordcount: '1400'
+ht-degree: 98%
 
 ---
 
@@ -104,4 +104,10 @@ O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] e
 
 Para proporcionar uma inferência estatística fácil de interpretar e segura, a Adobe adotou uma metodologia estatística baseada em [Sequências de confiança válidas a qualquer momento](https://doi.org/10.48550/arXiv.2103.06476).
 
-Uma sequência de confiança é um análogo “sequencial” de um intervalo de confiança. Para entender o que é uma sequência de confiança, imagine repetir seus experimentos cem vezes e calcular uma estimativa da métrica média de negócios (por exemplo, a taxa de abertura de um email) e sua sequência associada de 95% de confiança para *cada novo usuário* que entra no experimento. Uma sequência de confiança de 95% incluirá o valor “true” da métrica de negócios em 95 dos 100 experimentos executados. (Um intervalo de confiança de 95% só pode ser calculado uma vez por experimento a fim de dar a mesma garantia de cobertura de 95%; não com cada novo usuário). As Sequências de confiança permitem, portanto, monitorar continuamente os experimentos sem aumentar as índice de erro falso positivo. Ou seja, elas permitem “espiar” os resultados.
+Uma sequência de confiança é um análogo “sequencial” de um intervalo de confiança. Para entender o que é uma sequência de confiança, imagine repetir seus experimentos cem vezes e calcular uma estimativa da métrica média de negócios (por exemplo, a taxa de abertura de um email) e sua sequência associada de 95% de confiança para *cada novo usuário* que entra no experimento.
+
+Uma sequência de confiança de 95% incluirá o valor “true” da métrica de negócios em 95 dos 100 experimentos executados. (Um intervalo de confiança de 95% só pode ser calculado uma vez por experimento a fim de dar a mesma garantia de cobertura de 95%; não com cada novo usuário). As Sequências de confiança permitem, portanto, monitorar continuamente os experimentos sem aumentar as índice de erro falso positivo. Ou seja, elas permitem “espiar” os resultados.
+
+## Novas funções em Métricas calculadas
+
+Foram adicionadas duas novas funções avançadas: [!UICONTROL Lift] e [!UICONTROL Confiança]. Para obter mais informações, consulte [Referência - funções avançadas](/help/components/calc-metrics/cm-adv-functions.md).
