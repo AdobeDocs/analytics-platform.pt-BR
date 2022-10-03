@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: d2aec8976d7d81c28a6b9b76c58fec0fc2c3b360
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 **Última atualização**: 14 de setembro de 2022
 
-As versões de Customer Journey Analytics operam em um [modelo de delivery contínuo](releases.md) O que permite uma abordagem mais escalável e em fases para a implantação de recursos. Dessa forma, essas notas de versão são atualizadas várias vezes por mês. Verifique-os regularmente.
+As versões do Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Devido a isso, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
 ## Recursos relacionados
 

@@ -7,7 +7,7 @@ exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
 source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Lembre-se:
 
 1. Na lista suspensa Visualizações, no painel à esquerda, arraste a visualização do [!UICONTROL Gráfico de combinação] para um painel em branco.
 
-   ![Criar](assets/combo-chart-build.png)
+   ![Build](assets/combo-chart-build.png)
 
 1. Nas listas suspensas, selecione uma dimensão para o eixo X e uma métrica para o eixo Y.
 
@@ -73,7 +73,7 @@ Se você escolher **[!UICONTROL Função]** como o [!UICONTROL Tipo de comparaç
 
 Este é um exemplo da média cumulativa da métrica Receita:
 
-![Média acumulada](assets/combo-cumul-avg.png)
+![Média cumulativa](assets/combo-cumul-avg.png)
 
 Este é um exemplo de um gráfico de combinação com as funções Média cumulativa e Média:
 
