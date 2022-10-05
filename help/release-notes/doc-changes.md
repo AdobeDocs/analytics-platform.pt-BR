@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5526e903da45fa2206d6d6fd70ea71d8452687e4
+source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 100%
+source-wordcount: '1082'
+ht-degree: 94%
 
 ---
 
@@ -19,6 +19,9 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 | Data | Atualizar descrição |
 | --- | --- |
+| Outubro de 2022 | Novo tópico sobre [Resumo da métrica principal](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=en) visualização. |
+| Outubro de 2022 | Nova seção sobre [funcionalidade data e hora em visualizações de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#date) |
+| Outubro de 2022 | Aplicativo móvel: Novo tópico sobre [exibições de detalhes personalizados](https://experienceleague.corp.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=en#view-detail-slides). |
 | Setembro de 2022 | Novo caso de uso sobre [Migração de dados do Google Analytics para o CJA](/help/use-cases/ga/overview.md). |
 | Setembro de 2022 | Novo tópico sobre [Gráficos de combinação](/help/analysis-workspace/visualizations/combo-charts.md) no espaço de trabalho. |
 | Setembro de 2022 | Novo tópico sobre o [Painel de experimentação](/help/analysis-workspace/c-panels/experimentation.md) no espaço de trabalho. |
@@ -29,7 +32,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Agosto de 2022 | Nova documentação sobre [Publicação de público-alvo no perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=pt-BR). |
 | Julho de 2022 | Documentação do [painel Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=pt-BR). |
 | Julho de 2022 | Documentação do [painel Visualizador simultâneo de mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=pt-BR). |
-| Julho de 2022 | Documentação de relatórios de [primeira sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat). |
+| Julho de 2022 | Documentação de relatórios de [primeira sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=en#new-repeat). |
 | Junho de 2022 | Novo artigo sobre [AAID, ECID, AACUSTOMID e o Conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/compare-aa-cja/aaid-ecid-adc.html?lang=pt-BR) |
 | Junho de 2022 | Novo artigo sobre [Regras de processamento do Adobe Analytics, VISTA e classificações em relação ao Preparo de dados para o Conector de origem do Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | Junho de 2022 | Novo artigo sobre [ambientes de relatórios virtuais e ambientes de sandbox](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |

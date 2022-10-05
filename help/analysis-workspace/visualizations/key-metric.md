@@ -4,18 +4,14 @@ title: Resumo da métrica principal
 feature: Visualizations
 role: User, Admin
 exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: 6238a3b2239a20aaedbec5e5603d0c72bb4ae463
-workflow-type: ht
-source-wordcount: '605'
+source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
+workflow-type: tm+mt
+source-wordcount: '598'
 ht-degree: 100%
 
 ---
 
 # Resumo da métrica principal
-
->[!NOTE]
->
->Esta funcionalidade está atualmente em [testes limitados](/help/release-notes/releases.md).
 
 A visualização do [!UICONTROL Resumo da métrica principal] permite ver a tendência de uma métrica importante em um único período. Ela também permite comparar o desempenho da métrica em dois intervalos de tempo. Ela oferece os benefícios de várias visualizações combinadas em uma única visualização:
 
