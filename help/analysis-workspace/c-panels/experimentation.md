@@ -5,8 +5,8 @@ feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
