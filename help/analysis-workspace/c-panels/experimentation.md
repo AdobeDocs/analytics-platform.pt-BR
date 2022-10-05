@@ -3,18 +3,14 @@ description: Saiba como analisar os resultados de testes A/B no painel de experi
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
+source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1393'
 ht-degree: 98%
 
 ---
 
 # Painel de experimentação
-
->[!NOTE]
->
->Esta funcionalidade está atualmente em [testes limitados](/help/release-notes/releases.md).
 
 O painel **[!UICONTROL Experimentação]** permite que os analistas comparem diferentes variações de experiência do usuário, marketing ou mensagens para determinar qual é a melhor para gerar um resultado específico. Você pode avaliar o aumento e a confiança de qualquer experimento A/B de qualquer plataforma de experimentação — online, offline, de soluções da Adobe, do Adobe Journey Optimizer e até mesmo dados BYO (traga os seus próprios).
 
