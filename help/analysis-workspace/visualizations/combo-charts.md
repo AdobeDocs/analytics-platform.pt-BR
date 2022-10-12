@@ -7,7 +7,7 @@ exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
 source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Use um [!UICONTROL Gráfico de combinação] para:
 
 Lembre-se:
 
-* Você pode adicionar várias comparações em uma única [!UICONTROL Gráfico de combinação].
+* É possível adicionar várias comparações em um único [!UICONTROL gráfico de combinação].
 * Se você adicionar uma ou mais comparações, elas devem ser do mesmo tipo, como [!UICONTROL Comparação de tempo].
 * Você pode adicionar até 5 comparações.
 * É possível aplicar até 3 filtros (segmentos) a uma métrica.
