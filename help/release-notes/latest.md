@@ -3,16 +3,16 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: fc1a5b1b0f01ace6207820e2421d1770f68c3583
+source-git-commit: 45e4a60b6bbf38e33f307dbbbf68ab3124dd6a33
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 50%
+source-wordcount: '519'
+ht-degree: 45%
 
 ---
 
 # Notas de versão do Customer Journey Analytics (CJA) (outubro de 2022)
 
-**Última atualização**: 5 de outubro de 2022
+**Última atualização**: 13 de outubro de 2022
 
 As versões do Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Devido a isso, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -26,7 +26,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 
 * [Notas de versão da Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR)
 
-## Recursos principais
+## Principais recursos e atualizações
 
 | Recurso | Descrição | [Data Alvo](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
@@ -34,6 +34,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 | **[!UICONTROL Resumo da métrica principal] visualização** | O [!UICONTROL Resumo da métrica principal] A visualização permite ver a tendência de uma métrica importante em um único período. Ela também permite comparar o desempenho da métrica em dois intervalos de tempo. Saiba mais | Lançamento em fases a partir de 5 de outubro de 2022 |
 | **Compatibilidade com campo de data no CJA** | Permite que o CJA relate os campos de data e data e hora. [Saiba mais](/help/data-views/data-views-usecases.md#date) | 5 de outubro de 2022 |
 | **Aplicativo móvel: Exibições de detalhes personalizadas** | As exibições de detalhes personalizadas permitem que você tenha ainda mais direcionamento sobre quais informações você compartilha com seu público-alvo, ao permitir que ele se concentre no que é mais importante. Você pode alterar o layout da visualização de detalhes associada a cada bloco de scorecard e adicionar texto para explicar melhor o que o usuário final pode ver nos dados. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=pt-BR) | 5 de outubro de 2022 |
+| **Variáveis de vários valores que não diferenciam maiúsculas de minúsculas** | Para variáveis de vários valores que não diferenciam maiúsculas de minúsculas, os valores armazenados em mvvar1 - mvvar3 não serão mais convertidos automaticamente em minúsculas. Em vez disso, os dados passados pelo Conector de origem do Analytics para o Adobe Experience Platform e o CJA refletirão o caso original passado da página. | 24 de outubro de 2022 |
 
 {style=&quot;table-layout:auto&quot;}
 
