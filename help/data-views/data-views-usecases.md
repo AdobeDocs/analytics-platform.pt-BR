@@ -4,10 +4,10 @@ description: Vários casos de uso que mostram a flexibilidade e o potencial das 
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0113bd3157c147a3d39aead3fc686d114925f476
+source-git-commit: 1ce51f7eb5a40584fec781727e82b448cd23cc7a
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 91%
+source-wordcount: '1296'
+ht-degree: 90%
 
 ---
 
@@ -123,7 +123,7 @@ Os esquemas na Adobe Experience Platform contêm campos de [!UICONTROL Data] e [
 
 * Para o formato Data e hora, se você selecionar **[!UICONTROL Minuto do dia]** com o formato **[!UICONTROL Hora:Minuto]**, sua saída pode se parecer com: 20:20.
 
-### Exemplo de casos de uso:
+### Casos de uso de data e hora
 
 * Data: uma empresa de viagens está coletando a data de partida para viagens como um campo em seus dados. Eles gostariam de ter um relatório que compara a variável [!UICONTROL Dia da semana] de todas as datas de partida coletadas para saber qual é a mais popular. Eles gostariam de fazer o mesmo para o [!UICONTROL Mês do ano].
 
