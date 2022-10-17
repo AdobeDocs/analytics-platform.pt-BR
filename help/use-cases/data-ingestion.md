@@ -4,10 +4,10 @@ description: Entenda as diferentes maneiras de assimilar dados no Customer Journ
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: 5a6d2b14ba7ed1221921cfb253026850fc7b6d73
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 97%
+source-wordcount: '772'
+ht-degree: 95%
 
 ---
 
@@ -49,7 +49,7 @@ A Adobe Experience Platform reúne dados de várias fontes para ajudar os profis
 
 ## Trazer dados do Google Analytics para analisar no Customer Journey Analytics
 
-Consulte este tutorial sobre como [Analisar dados do Google Analytics usando o Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module16/ex5.html?lang=pt-BR#objectives) para ver as etapas em detalhes.
+Consulte este tutorial sobre como [Analisar dados do Google Analytics usando o Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=en) para ver as etapas em detalhes.
 
 ## Usar a API de inserção de dados em massa para obter dados no Analytics e, em seguida, assimilar por meio do Conector de origem da Adobe na Experience Platform
 
