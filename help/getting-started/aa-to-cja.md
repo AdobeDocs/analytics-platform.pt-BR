@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 93690a3351f2dca0b3a68e7eea7fb64c581d2d53
-workflow-type: ht
-source-wordcount: '1333'
-ht-degree: 100%
+source-git-commit: 87d0dd37c9fc9e32e46b7c6a104301f23a2ff652
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Um conjunto de relatórios global completo pode nem sempre ser viável para uma 
 
 * Planeje com antecedência para alinhar as variáveis nesses conjuntos de relatórios. Por exemplo, a eVar1 no conjunto de relatórios 1 pode apontar para [!UICONTROL Página]. No conjunto de relatórios 2, o eVar1 pode apontar para [!UICONTROL Campanha interna]. Quando trazidas para o CJA, essas variáveis serão combinadas em uma única dimensão do eVar1, resultando em relatórios potencialmente confusos e imprecisos.
 
-* Use o recurso [Preparo de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR) para mapear variáveis. Embora seja mais fácil se todos os conjuntos de relatórios usarem o mesmo design de variável comum, não será necessário se você usar o novo recurso [Preparo de dados](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR#mapping) da Experience Platform. Ele permite fazer referência a uma variável pelo seu valor mapeado, que está no nível de armazenamento de dados (ou propriedade).
+* Use o recurso [Preparo de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR) para mapear variáveis. Embora seja mais fácil se todos os conjuntos de relatórios usarem o mesmo design de variável comum, não é necessário usar o novo Experience Platform [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR#mapping) recurso. Ele permite fazer referência a uma variável pelo seu valor mapeado, que está no nível de armazenamento de dados (ou propriedade).
 
 Caso tenha evitado mudar para um conjunto de relatórios global devido a problemas com [!UICONTROL Únicos excedidos] ou [!UICONTROL Tráfego baixo], saiba que o CJA não tem [limites de cardinalidade em uma dimensão](/help/components/dimensions/high-cardinality.md). Ele permite que qualquer valor único seja exibido e contado.
 
@@ -104,7 +104,7 @@ Estes são alguns vídeos para orientá-lo:
 
 * [Transferir segmentos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=pt-BR)
 
-* [Transferir suas métricas calculadas do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=pt-BR)
+* [Transferir suas métricas calculadas do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=en)
 
 ### Outras considerações
 
