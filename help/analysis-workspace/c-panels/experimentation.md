@@ -4,9 +4,9 @@ title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1393'
+ht-degree: 100%
 
 ---
 
@@ -104,6 +104,6 @@ Uma sequência de confiança é um análogo “sequencial” de um intervalo de 
 
 Uma sequência de confiança de 95% incluirá o valor “true” da métrica de negócios em 95 dos 100 experimentos executados. (Um intervalo de confiança de 95% só pode ser calculado uma vez por experimento a fim de dar a mesma garantia de cobertura de 95%; não com cada novo usuário). As Sequências de confiança permitem, portanto, monitorar continuamente os experimentos sem aumentar as índice de erro falso positivo. Ou seja, elas permitem “espiar” os resultados.
 
-## Novas funções em Métricas calculadas
+## Novas funções de métricas calculadas
 
-Foram adicionadas duas novas funções avançadas: [!UICONTROL Lift] e [!UICONTROL Confiança]. Para obter mais informações, consulte [Referência - funções avançadas](/help/components/calc-metrics/cm-adv-functions.md).
+Foram adicionadas duas novas funções avançadas: [!UICONTROL Aumento] e [!UICONTROL Confiança]. Para obter mais informações, consulte [Referência - funções avançadas](/help/components/calc-metrics/cm-adv-functions.md).
