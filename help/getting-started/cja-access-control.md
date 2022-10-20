@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 04957adebd848739b8b3609eb35366d8296ee752
-workflow-type: ht
-source-wordcount: '945'
-ht-degree: 100%
+source-git-commit: 8262d7f0ec56a792bfcd8fe94b7f7685ee5b5438
+workflow-type: tm+mt
+source-wordcount: '935'
+ht-degree: 98%
 
 ---
 
@@ -88,7 +88,7 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto em [Admi
 | --- | --- |
 | **[!UICONTROL Visualizações de dados]** | Se você alternar a configuração **[!UICONTROL Incluir automaticamente]** para **[!UICONTROL Ativado]**, os usuários que fazem parte desse perfil de produto poderão visualizar todas as visualizações de dados existentes e recém-criadas. Se esta configuração estiver definida como **[!UICONTROL Desativado]**, será possível selecionar visualizações de dados específicas às quais os usuários têm acesso. |
 | **[!UICONTROL Ferramentas de relatório]**: |  |
-| **[!UICONTROL Acesso aos logs de auditoria]** | Atualmente, os [logs de auditoria](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) estão disponíveis somente por meio da API. Essa permissão impõe a verificação de permissão na API e uma interface de logs de auditoria futura. |
+| **[!UICONTROL Acesso aos logs de auditoria]** | Essa permissão impõe a verificação de permissão no [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) e [interface do usuário de logs de auditoria](/help/privacy/audit-log.md). |
 | **[!UICONTROL Administrador de uso de relatórios]** | Permite que os usuários visualizem e excluam qualquer relatório em execução em sua empresa. (A funcionalidade de uso de relatórios ainda não foi lançada.) |
 | **[!UICONTROL Exibição do uso de relatórios]** | Permite que os usuários vejam todas as solicitações de relatórios simultâneas. (A funcionalidade de uso de relatórios ainda não foi lançada.) |
 | **[!UICONTROL Criação de métricas calculadas]** | Permite que os usuários criem [métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md). |
