@@ -3,10 +3,10 @@ description: Saiba mais sobre Pastas no Workspace
 keywords: Analysis Workspace
 title: Visão geral das pastas
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 2%
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ Pastas em Projetos do Workspace é um sistema de gerenciamento de pastas localiz
 
 >[!NOTE]
 >
->No momento, este recurso está em período de teste limitado. Algumas telas podem mudar.
+>Esse recurso está atualmente na versão beta. Algumas telas podem mudar.
 
 Pastas em Projetos do Workspace ajudam os usuários a organizar e categorizar seus projetos para obter uma melhor recuperação e acesso. Além disso, uma Pasta de empresa compartilhada permite que Administradores criem e compartilhem conteúdo com todos os usuários do Workspace. 
 

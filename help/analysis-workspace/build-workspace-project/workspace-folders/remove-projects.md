@@ -3,10 +3,10 @@ description: Saiba como remover projetos de pastas
 keywords: Analysis Workspace
 title: Remover projetos das pastas
 feature: CJA Workspace Basics
-source-git-commit: af3580a1925dd5cb504b192f9b125234443e53cf
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 5%
+source-wordcount: '174'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ Para remover um projeto de uma pasta, você pode mover o projeto para outro loca
 
 >[!NOTE]
 >
->No momento, este recurso está em período de teste limitado. Algumas telas podem mudar.
+>Esse recurso está atualmente na versão beta. Algumas telas podem mudar.
 
 >[!NOTE]
 >

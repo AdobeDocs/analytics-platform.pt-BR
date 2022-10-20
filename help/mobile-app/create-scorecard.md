@@ -5,8 +5,8 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e2a79bc9d39d1c7758c1ff61c5de5af31c92d34c
-workflow-type: ht
+source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
+workflow-type: tm+mt
 source-wordcount: '1769'
 ht-degree: 100%
 
@@ -173,7 +173,11 @@ Cada dimensão adicionada ao bloco será mostrada em uma lista suspensa na exibi
 
 ## Personalizar slides de detalhes {#customize-detail-slide}
 
-Os slides de detalhes personalizados permitem ter ainda mais controle sobre quais informações você compartilha com seu público-alvo. Você pode modificar o layout de cada slide de detalhes e adicionar texto para explicar melhor o que o usuário final pode ver nos dados. Também é possível alterar o tipo de gráfico usando o menu suspenso.
+Os slides de detalhes personalizados permitem ter ainda mais controle sobre quais informações você compartilha com seu público-alvo.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410002)
+
+Você pode modificar o layout de cada slide de detalhes e adicionar texto para explicar melhor o que o usuário final pode ver nos dados. Também é possível alterar o tipo de gráfico usando o menu suspenso.
 
 ![Slide de detalhes personalizado](assets/custom-detail-slide.png)
 
