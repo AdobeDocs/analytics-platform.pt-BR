@@ -4,7 +4,7 @@ description: Saiba como integrar dados de outras soluções e serviços da Adobe
 source-git-commit: aae080253a25cb9a3853ee795fbceedd286e1498
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 

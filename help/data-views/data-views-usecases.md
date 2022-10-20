@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 1ce51f7eb5a40584fec781727e82b448cd23cc7a
 workflow-type: tm+mt
 source-wordcount: '1296'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -87,11 +87,11 @@ Não se esqueça de renomear cada métrica para refletir as diferenças, como &q
 Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview.md).
 Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).
 
-## 7. Relatório de nova sessão e de retorno {#new-repeat}
+## 7. Relatórios de novas sessões e sessões de retorno {#new-repeat}
 
-Você pode determinar se uma sessão é de fato a primeira sessão de um usuário ou uma sessão de retorno, com base na janela de relatório que você definiu para essa visualização de dados e em uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
+Você pode determinar se uma sessão é realmente a primeira sessão de um usuário ou uma sessão de retorno com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
 
-* Qual porcentagem de seus pedidos está vindo de sessões novas ou de retorno?
+* Que porcentagem de seus pedidos vem de sessões novas ou de retorno?
 
 * Para um determinado canal de marketing ou uma campanha específica, você está direcionando usuários pela primeira vez ou usuários de retorno? Como essa escolha influencia as taxas de conversão?
 
@@ -99,11 +99,11 @@ Uma dimensão e duas métricas facilitam esse relatório:
 
 * [Tipo de sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional) - Essa dimensão tem dois valores: 1) [!UICONTROL Novo] e 2) [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item de linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão.
 
-* [Novas sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). A métrica Novas sessões é definida como a primeira sessão de uma pessoa definida na janela de relatórios.
+* [Novas sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional). A métrica de novas sessões é definida como a primeira sessão de uma pessoa na janela de relatórios.
 
-* [Sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) A métrica de sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
+* [Sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=en#optional) A métrica de sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.-->
 
-Para acessar este componente:
+Para acessar esses componentes:
 
 1. Acesse o editor de visualização de dados.
 1. Clique na guia **[!UICONTROL Componentes]** > **[!UICONTROL Componentes padrão opcionais]** no painel esquerdo.
@@ -115,7 +115,7 @@ Durante 95% a 99% do tempo, as novas sessões são relatadas com precisão. As �
 
 * Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. Digamos que você execute um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva englobaria de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1º de junho de 2022, como a sessão está incluída na janela de retrospectiva, todas as sessões na janela de relatório serão contadas como sessões de retorno.
 
-## 8. Use a funcionalidade Data e hora {#date}
+## 8. Use a funcionalidade de Data e Data e hora {#date}
 
 Os esquemas na Adobe Experience Platform contêm campos de [!UICONTROL Data] e [!UICONTROL Data e hora]. As visualizações de dados do CJA agora são compatíveis com esses campos. Ao arrastar esses campos para uma visualização de dados como uma dimensão, você pode especificar seus [formatos](/help/data-views/component-settings/format.md). Essa configuração de formato determina como os campos são exibidos em relatórios. Por exemplo:
 
