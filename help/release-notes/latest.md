@@ -3,10 +3,10 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 785ea95049135adef888c20a6d9fef9f31439a7d
+source-git-commit: a3d47318d74df161cf9054b849c9eb8ef09e60c4
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 71%
+source-wordcount: '517'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,6 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 
 | Recurso | Descrição | [Data Alvo](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- |
-| **Pastas em projetos do Workspace** | Pastas em Projetos do Workspace ajudam os usuários a organizar e categorizar seus projetos usando pastas para obter uma melhor recuperação e acesso. Uma pasta de empresa compartilhada permite que os administradores criem e compartilhem conteúdo com todos os usuários do Workspace [Saiba mais](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md) | 19 de outubro de 2022 |
 | **Painel de experiência** | Esse novo painel do espaço de trabalho permite que os usuários do CJA avaliem o aumento e a confiança de um experimento A/B de qualquer fonte, seja online, offline, de soluções da Adobe, do Adobe Journey Optimizer e até mesmo de dados BYO. [Saiba mais](/help/analysis-workspace/c-panels/experimentation.md) | 5 de outubro de 2022 |
 | Visualização do **[!UICONTROL Resumo da métrica principal]** | A visualização do [!UICONTROL Resumo da métrica principal] permite ver a tendência de uma métrica importante em um único período. Ela também permite comparar o desempenho da métrica em dois intervalos de tempo. Saiba mais | Implantação em fases a partir de 5 de outubro de 2022 |
 | **Compatibilidade com campo de data no CJA** | Permite que o CJA relate os campos de data e data e hora. [Saiba mais](/help/data-views/data-views-usecases.md#date) | 5 de outubro de 2022 |
