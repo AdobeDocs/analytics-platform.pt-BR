@@ -6,9 +6,9 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: e2a79bc9d39d1c7758c1ff61c5de5af31c92d34c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1769'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Por exemplo, é possível adicionar dimensões apropriadas (como **[!DNL Marketi
 
 ## Aplicar filtros {#filters}
 
-Para aplicar filtros a blocos individuais, arraste um filtro (segmentos são filtros no CJA) do painel esquerdo e solte-o diretamente na parte superior do bloco.
+Para aplicar filtros a blocos individuais, arraste um filtro (segmentos são filtros no CJA) do painel esquerdo e solte-o diretamente em cima do bloco.
 
 Se você quiser aplicar o filtro a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão de pontuação. Ou você também pode aplicar filtros selecionando filtros no menu de filtro abaixo dos intervalos de datas. Você [configura e aplica filtros para seus Scorecards](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que faria no Adobe Analytics Workspace.
 
@@ -124,7 +124,7 @@ Use a visualização Número do resumo para realçar um grande número que é im
 
 ### [!UICONTROL Rosca]
 
-Semelhante ao gráfico de pizza, essa visualização mostra os dados como partes de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. Por exemplo, digamos que você queira ver qual plataforma de publicidade contribuiu para o número total de visitantes únicos:
+Semelhante ao gráfico de pizza, essa visualização mostra dados como partes de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. Por exemplo, digamos que você queira ver qual plataforma de publicidade contribuiu para o número total de visitantes únicos:
 
 ![Visualização de rosca](assets/donut-viz.png)
 
@@ -153,15 +153,15 @@ Caso queira remover itens de dimensões [!UICONTROL Não especificados] dos seus
 
 ## Exibir e configurar propriedades de blocos {#tiles}
 
-Ao clicar em um bloco no Construtor de scorecards, o painel direito exibe as propriedades e características associadas a esse bloco e seu slide de detalhes. Nesse painel, você pode fornecer um novo **Título** para o bloco e, como alternativa, configure o bloco aplicando filtros. Segmentos são filtros no CJA.
+Ao clicar em um bloco no Criador de cartões de pontuação, o painel direito exibe as propriedades e características associadas a esse bloco e seu respectivo slide de detalhes. Nesse painel, você pode fornecer um novo **Título** para o bloco e, como alternativa, configurar o bloco aplicando filtros. Segmentos são filtros no CJA.
 
 ![Bloco de propriedades](assets/properties-tile-new.png)
 
 ## Exibir slides de detalhes {#view-detail-slides}
 
-Quando você clica em blocos, uma janela pop-up dinâmica exibe como o slide detalhado é exibido para o usuário executivo no aplicativo. Você pode adicionar dimensões para analisar seus dados de acordo com suas necessidades específicas. Se uma dimensão não tiver sido aplicada, a dimensão de detalhamento será **hour** ou **dias**, dependendo do intervalo de datas padrão.
+Ao clicar nos blocos, uma janela pop-up dinâmica mostrará como o slide de detalhes aparecerá para o usuário executivo no aplicativo. Você pode adicionar dimensões para detalhar seus dados de acordo com suas necessidades específicas. Se nenhuma dimensão tiver sido aplicada, a dimensão de detalhamento será a **hora** ou os **dias**, dependendo do intervalo de datas padrão.
 
-Detalhamentos refinam sua análise detalhando métricas por itens de dimensão, como o seguinte:
+Os detalhamentos refinam sua análise ao detalhar métricas por itens de dimensão, como o seguinte:
 
 * Métrica de Visitantes únicos detalhada por Plataforma de publicidade (AMO ID)
 * Visitas detalhadas por Categoria de produto (Varejo)
@@ -173,9 +173,9 @@ Cada dimensão adicionada ao bloco será mostrada em uma lista suspensa na exibi
 
 ## Personalizar slides de detalhes {#customize-detail-slide}
 
-Os slides de detalhes personalizados permitem ter ainda mais direcionamento sobre quais informações você compartilha com seu público-alvo. Você pode modificar o layout de cada slide de detalhes e adicionar texto para explicar melhor o que o usuário final pode ver nos dados. Também é possível alterar o tipo de gráfico usando o menu suspenso.
+Os slides de detalhes personalizados permitem ter ainda mais controle sobre quais informações você compartilha com seu público-alvo. Você pode modificar o layout de cada slide de detalhes e adicionar texto para explicar melhor o que o usuário final pode ver nos dados. Também é possível alterar o tipo de gráfico usando o menu suspenso.
 
-![slide de detalhes personalizado](assets/custom-detail-slide.png)
+![Slide de detalhes personalizado](assets/custom-detail-slide.png)
 
 ### Alterar o layout do slide
 
@@ -183,7 +183,7 @@ Altere o layout do slide para se concentrar nas informações mais importantes. 
 
 ![Layout do slide](assets/layout.png)
 
-Você também pode alterar o layout do slide arrastando e soltando componentes de visualização do painel esquerdo na tela. Cada slide detalhado pode acomodar apenas duas visualizações por vez.
+Você também pode alterar o layout do slide arrastando e soltando componentes de visualização do painel esquerdo na tela. Cada slide de detalhe pode acomodar apenas duas visualizações por vez.
 
 ![Alteração do layout do slide](assets/slide-layout-change.png)
 
@@ -191,13 +191,13 @@ Você também pode alterar o layout do slide arrastando e soltando componentes d
 
 É possível adicionar texto para fornecer informações significativas sobre o que está contido nos gráficos ou nuances dos dados.
 
-Para adicionar texto a um slide de detalhes, selecione um layout que mostre a `T` ou arraste e solte o componente de visualização de Texto do painel esquerdo. O editor de texto será aberto automaticamente ao adicionar uma nova visualização de texto ou escolher um layout de slide com texto. O Editor de texto fornece todas as opções padrão para a formatação do texto. É possível aplicar estilos de texto como parágrafo, cabeçalho e subtítulo, além de aplicar negrito e itálico à fonte. Você pode justificar o texto, adicionar listas com marcadores e numeradas e adicionar links. Quando terminar a edição, selecione o botão Minimizar no canto superior direito do editor de texto para fechá-lo. Para editar o texto já adicionado, selecione o ícone de lápis para abrir o editor de texto novamente.
+Para adicionar texto a um slide de detalhes, selecione um layout que apresente o símbolo `T` ou arraste e solte o componente de visualização de texto do painel esquerdo. O editor de texto será aberto automaticamente ao adicionar uma nova visualização de texto ou escolher um layout de slide com texto. O editor de texto fornece todas as opções padrão para a formatação do texto. É possível aplicar estilos de texto como parágrafo, cabeçalho e subtítulo, além de aplicar negrito e itálico à fonte. Você pode justificar o texto, adicionar listas com marcadores, números e adicionar links. Quando terminar a edição, selecione o botão Minimizar no canto superior direito do editor de texto para fechá-lo. Para editar um texto já adicionado, selecione o ícone de lápis para abrir o editor de texto novamente.
 
 ![Alteração do layout do slide](assets/add-descriptive-text.png)
 
 ## Remover componentes {#remove}
 
-Da mesma forma, para remover um componente aplicado a todo o Scorecard, clique em qualquer lugar do Scorecard fora dos blocos e remova-o clicando no **x** que é exibido quando você passa o mouse sobre o componente, como mostrado abaixo para a **Novas visitas**:
+Da mesma forma, para remover um componente aplicado a todo o cartão de pontuação, clique em qualquer lugar no cartão de pontuação do lado de fora dos blocos e remova-o clicando no **x** que aparece ao passar o mouse sobre o componente, como mostrado abaixo para **Primeiras visitas**:
 
 ![Remover_componentes](assets/new_remove.png)
 
