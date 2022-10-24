@@ -2,10 +2,10 @@
 title: Visão geral de publicação de públicos-alvo do CJA
 description: Saiba mais sobre o conceito de publicação de público-alvo no Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 18306a5a2fc8873850eb62b7407acb55db4007ea
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 83%
 
 ---
 
@@ -36,6 +36,10 @@ A publicação de públicos-alvo fornece uma maneira clara de ativar e executar 
 * Administradores podem conceder essa permissão a usuários individuais.
 
 * Os administradores também precisam da permissão **[!UICONTROL Gerenciar perfis]** na Adobe Experience Platform.
+
+## Governança e consentimento de dados
+
+Ao publicar um público-alvo no CJA, os rótulos e as políticas da Governança de dados anexadas aos campos usados no público-alvo são registrados.  Quando o público-alvo é ativado em qualquer aplicativo da Adobe Experience, todos os rótulos e políticas de Governança de dados associados estão disponíveis para esse público-alvo e a imposição apropriada pode ser aplicada.  [Saiba mais sobre consentimento](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en#consent-policy)
 
 ## Próximas etapas
 
