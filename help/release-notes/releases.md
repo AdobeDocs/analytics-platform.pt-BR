@@ -2,10 +2,10 @@
 description: Explica a estratégia de lançamento contínuo de recursos do Customer Journey Analytics
 title: Versões de recursos do Customer Journey Analytics
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
-source-git-commit: f2c82f54ec534603539327597d5f4c4ec875d44c
-workflow-type: ht
-source-wordcount: '379'
-ht-degree: 100%
+source-git-commit: 44a140fdd5069cbe806f694377802215bcf50b31
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 90%
 
 ---
 
@@ -17,9 +17,7 @@ As versões do Customer Journey Analytics operam em um modelo de entrega contín
 
 O [!UICONTROL Analysis Workspace] usa sinalizadores de recursos (também conhecidos como &quot;alternadores&quot;) para controlar a visibilidade de novos recursos, permitindo testes de escala controlados antes do lançamento completo. A estratégia de lançamento inclui as seguintes fases:
 
-* **Liberação para produção (RTP)**: o código é lançado para produção, com a visibilidade do recurso desativada no Analysis Workspace. Às vezes, o recurso está disponível na API do CJA.
-
-* **Teste limitado**: uma versão em fases começa com testes feitos por usuários internos da Adobe. A versão é redimensionada de 0% a 100% de disponibilidade ao longo de dois meses. A implementação em fases acontece no nível da Organização da Experience Cloud, de modo que todos os usuários autorizados em uma organização recebem a mesma experiência.
+* **Início da implantação**: A implantação de uma versão em fases começa com testes limitados por usuários internos do Adobe. A versão é redimensionada de 0% a 100% de disponibilidade para clientes ao longo de dois meses. A implementação em fases acontece no nível da Organização da Experience Cloud, de modo que todos os usuários autorizados em uma organização recebem a mesma experiência.
 
 * **Disponibilidade Geral (GA)**: o recurso está disponível para 100% das organizações da Experience Cloud autorizadas e a versão do recurso está concluída.
 
