@@ -5,10 +5,10 @@ title: Agendar projetos
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
+source-git-commit: 6267b7ea3e0a72c86f3ab042c537ddca6f99539f
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 62%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -86,8 +86,8 @@ Os requisitos de senha estão em conformidade com o padrão Adobe, exigindo no m
 
 ### Novo projeto agendado
 
-1. Depois de salvar o projeto, acesse Compartilhar > Enviar arquivo agora ou Compartilhar > Enviar arquivo programado.
-1. Siga as instruções acima, em Compartilhar arquivo agora ou Compartilhar arquivo programado.
+1. Depois de salvar o projeto, acesse **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo agora]** ou [!UICONTROL Compartilhar] > **[!UICONTROL Enviar arquivo agendado]**.
+1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
 ### Projeto agendado existente
 
