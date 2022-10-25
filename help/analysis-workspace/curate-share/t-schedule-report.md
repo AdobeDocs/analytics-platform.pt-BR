@@ -5,10 +5,10 @@ title: Agendar projetos
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+source-git-commit: ca8323591ce3e9eabbad66a290cd28153f5a7327
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 63%
+source-wordcount: '723'
+ht-degree: 62%
 
 ---
 
@@ -95,6 +95,7 @@ Antes do horário agendado para um projeto, o proprietário do projeto receberá
 
 ![email](assets/email-password.png)
 
+1. Efetue login no Customer Journey Analytics.
 1. Clique em **[!UICONTROL Exibir projeto agendado]**.
 1. No **[!UICONTROL Editar projeto agendado]** digite e digite novamente uma senha.
 1. Informe (somente) os recipients do projeto agendado sobre essa senha.
