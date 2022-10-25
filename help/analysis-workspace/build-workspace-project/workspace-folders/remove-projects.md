@@ -3,7 +3,9 @@ description: Saiba como remover projetos de pastas
 keywords: Analysis Workspace
 title: Remover projetos das pastas
 feature: CJA Workspace Basics
-source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
+hide: true
+hidefromtoc: true
+source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 1%
