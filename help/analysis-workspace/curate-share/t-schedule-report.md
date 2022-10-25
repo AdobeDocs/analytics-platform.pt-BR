@@ -3,11 +3,12 @@ description: Envie um projeto do Analysis Workspace por email ou agende o seu en
 keywords: Analysis Workspace
 title: Agendar projetos
 feature: Curate and Share
+mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 63%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 100%
 
 No **menu Compartilhar**, do Workspace, você pode enviar projetos do Analysis Workspace por email para recipient selecionados. Os arquivos podem ser enviados no formato CSV ou PDF.
 
-## Enviar arquivo agora
+## Enviar arquivo agora {#now}
 
 Para enviar um arquivo imediatamente aos recipients por email:
 
@@ -23,12 +24,13 @@ Para enviar um arquivo imediatamente aos recipients por email:
 1. Especifique o tipo de arquivo (CSV ou PDF).
 1. (Opcional) Adicione uma descrição que será incluída no email para o arquivo que está sendo recebido.
 1. Adicione recipients ou grupos. Endereços de email também podem ser inseridos.
+1. (Somente para clientes do Healthcare Shield) Forneça uma senha. Consulte a seção Proteger por senha de um relatório agendado.
 1. Clique em **Enviar agora**.
 1. (Opcional) Clique em **Mostrar opções de agendamento** para especificar um agendamento de delivery.
 
 ![Enviar arquivo agora](assets/send-file-no-scheduling-options.JPG)
 
-## Enviar arquivo agendado
+## Enviar arquivo agendado {#schedule}
 
 Para enviar um arquivo por email de acordo com uma programação recorrente a recipients:
 
@@ -36,13 +38,14 @@ Para enviar um arquivo por email de acordo com uma programação recorrente a re
 1. Especifique o tipo de arquivo (CSV ou PDF).
 1. (Opcional) Adicione uma descrição que será incluída no email para o arquivo que está sendo recebido.
 1. Adicione recipients ou grupos. Endereços de email também podem ser inseridos.
+1. (Somente para clientes do Healthcare Shield) Forneça uma senha. Consulte a seção Proteger por senha de um relatório agendado.
 1. Especifique o intervalo ao longo do qual a programação deve ser entregue, modificando as entradas Início e Término. A data de término deve estar no prazo de um ano a partir do dia em que a programação foi criada ou modificada.
 1. Especifique a frequência do delivery. Cada frequência permite personalizações diferentes.
 1. Clique em **Enviar de acordo com a programação**.
 
 ![](assets/send-file.JPG)
 
-## Gerenciador de projetos programados
+## Gerenciador de projetos programados {#manager}
 
 Os projetos programados do Analysis Workspace podem ser gerenciados em **Analytics > Componentes > Projetos programados**.
 
@@ -60,3 +63,40 @@ As ações a seguir são comuns no Gerenciador de projetos programados:
 | **Exibir ID de programação** | Acesse as opções de coluna na parte superior direita e adicione a coluna ID de programação à tabela. A ID programada geralmente é útil para depuração. |
 
 O Gerenciador de agendamento de projetos mostra os itens criados por um usuário específico. Se a conta de usuário estiver desabilitada no aplicativo, todas as entregas programadas são interrompidas.
+
+## Proteger por senha um projeto agendado {#password}
+
+>[!NOTE]
+>
+>A opção de proteger por senha um projeto agendado aparece somente para clientes do CJA que compraram o [Escudo da Saúde](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den) produto complementar.
+
+O Adobe usa a senha para criptografar projetos agendados, sejam eles enviados nos formatos .pdf ou .csv .
+
+Depois que sua empresa tiver comprado o SKU do Healthcare Shield e ele tiver sido ativado, o prompt para criar uma senha para um projeto agendado será exibido sob duas circunstâncias:
+
+* Quando alguém cria um novo projeto agendado.
+
+* Quando um projeto agendado existente estiver prestes a ser enviado. O projeto agendado atualmente será desativado até que a proteção por senha esteja em vigor. O proprietário do projeto agendado receberá um email para esse efeito.
+
+![proteção por senha](assets/password.png)
+
+### Requisitos de senha
+
+Os requisitos de senha estão em conformidade com o padrão Adobe, exigindo no mínimo 8 caracteres com pelo menos um número e um caractere especial.
+
+### Novo projeto agendado
+
+1. Depois de salvar o projeto, acesse Compartilhar > Enviar arquivo agora ou Compartilhar > Enviar arquivo programado.
+1. Siga as instruções acima, em Compartilhar arquivo agora ou Compartilhar arquivo programado.
+
+### Projeto agendado existente
+
+Antes do horário agendado para um projeto, o proprietário do projeto receberá um email semelhante a este:
+
+![email](assets/email-password.png)
+
+1. Clique em **[!UICONTROL Exibir projeto agendado]**.
+1. No **[!UICONTROL Editar projeto agendado]** digite e digite novamente uma senha.
+1. Informe (somente) os recipients do projeto agendado sobre essa senha.
+
+

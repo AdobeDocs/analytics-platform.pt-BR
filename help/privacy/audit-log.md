@@ -1,19 +1,17 @@
 ---
 title: Logs de auditoria
 description: Saiba como visualizar e gerenciar logs de auditoria do CJA.
-source-git-commit: a866dec61df93bf730529a2d7513b4d76bab6694
+hide: true
+hidefromtoc: true
+source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 17%
+source-wordcount: '848'
+ht-degree: 16%
 
 ---
 
 
 # Logs de auditoria
-
->[!NOTE]
->
->Esta funcionalidade está atualmente em [testes limitados](/help/release-notes/releases.md).
 
 Para aumentar a transparência e a visibilidade das atividades realizadas no sistema, o Customer Journey Analytics (CJA) permite auditar a atividade do usuário para vários serviços e recursos na forma de &quot;logs de auditoria&quot;. Esses registros formam uma trilha de auditoria que pode ajudar na solução de problemas e ajudar sua empresa a cumprir com as políticas corporativas de gerenciamento de dados e os requisitos normativos, como a HIPAA (Health Insurance Portability and Accountability Act, Lei de Portabilidade e Responsabilidade do Seguro de Saúde).
 
