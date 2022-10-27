@@ -3,9 +3,9 @@ title: Customer Journey Analytics e Governança de dados
 description: Descreve como a governança de dados funciona no Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 source-git-commit: 5f69840fa19fbf7ba6ecac1cd198cfa4a7dd905d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '371'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -33,4 +33,4 @@ O Customer Journey Analytics não assinará diretamente o Serviço central do Re
 
 A Lei de Privacidade do Consumidor da Califórnia (California Consumer Privacy Act, ou CCPA) aprimora os direitos de privacidade e a proteção do consumidor para os moradores da Califórnia, nos Estados Unidos. Esta Lei entrou em vigor em 1 de janeiro de 2020.
 A CCPA oferece novos direitos de privacidade de dados aos moradores da Califórnia, como o direito de acessar e excluir seus dados pessoais, de saber se seus dados pessoais são vendidos ou divulgados (e para quem) e de recusar a venda de seus dados pessoais.
-De acordo com a CCPA, o Privacy Service suporta solicitações de recusa da venda de dados pessoais.
+De acordo com a CCPA, o Privacy Service dará suporte a solicitações de recusa de permissão da venda de dados pessoais.
