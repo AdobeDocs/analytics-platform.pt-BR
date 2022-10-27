@@ -1,14 +1,14 @@
 ---
-description: Saiba mais sobre Pastas no Workspace
+description: Saiba mais sobre pastas no Workspace
 keywords: Analysis Workspace
-title: Visão geral das pastas
+title: Visão geral de pastas
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 0%
+ht-degree: 98%
 
 ---
 
@@ -23,15 +23,15 @@ Pastas em Projetos do Workspace é um sistema de gerenciamento de pastas localiz
 
 Pastas em Projetos do Workspace ajudam os usuários a organizar e categorizar seus projetos para obter uma melhor recuperação e acesso. Além disso, uma Pasta de empresa compartilhada permite que Administradores criem e compartilhem conteúdo com todos os usuários do Workspace. 
 
-Quando você tem uma longa lista de projetos, navegar até um projeto específico tem seus desafios. Com o recurso pastas , é possível criar pastas e subpastas para gerenciar os projetos, facilitando a localização dos projetos quando eles são necessários. 
+Quando você tem uma longa lista de projetos, navegar até um projeto específico tem seus desafios. Com o recurso de pastas, é possível criar pastas e subpastas para gerenciar os projetos, facilitando a localização dos projetos quando eles são necessários. 
 
 Há dois tipos de pastas no Workspace: a Pasta da empresa e as pastas pessoais.
 
-Ao fazer logon no Workspace, a página de aterrissagem exibe os projetos que você possui ou os projetos que foram compartilhados com você. Você também verá a Pasta da empresa e qualquer pasta pessoal que você criou.
+Ao fazer logon no Workspace, a landing page exibe seus projetos ou os projetos que foram compartilhados com você. Você também verá a Pasta da empresa e qualquer pasta pessoal que você criou.
 
 ![](/help/analysis-workspace/build-workspace-project/assets/landing-page.png)
 
-## Sobre a pasta Empresa
+## Sobre a Pasta da empresa
 
 Como administrador, você pode compartilhar projetos rapidamente com todos os usuários e agrupar projetos em subpastas para um grupo de usuários. Por exemplo, se você tiver um conjunto de projetos que deseja que seus profissionais de marketing usem para iniciar sua pesquisa, é possível criar uma pasta de Marketing na Pasta da empresa e, em seguida, colocar esses projetos na pasta de marketing. Isso fornece acesso direto a projetos compartilhados rapidamente e facilita para a equipe de marketing saber onde começar.
 

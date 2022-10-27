@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 36667163792454a1793e48bc0c810615b51c1b7e
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 97%
       + Pastas no Workspace {#workspace-folders}
          + [Sobre pastas no Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Criar pastas e subpastas](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [Adicionar Projetos](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [Adicionar projetos](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [Remover um projeto](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [Salvar um novo projeto](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [Teclas de atalho (atalhos)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)

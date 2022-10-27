@@ -8,7 +8,7 @@ hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 6%
+ht-degree: 96%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 6%
 
 Para criar uma nova pasta,
 
-1. Clique em **Criar novo**.
+1. Clique em **Criar nova**.
 
-1. Insira um Nome para a nova pasta.
+1. Insira um nome para a nova pasta.
 
 1. Selecione tags no menu suspenso.
 

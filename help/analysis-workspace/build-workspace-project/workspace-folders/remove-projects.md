@@ -1,14 +1,14 @@
 ---
 description: Saiba como remover projetos de pastas
 keywords: Analysis Workspace
-title: Remover projetos das pastas
+title: Remover projetos de pastas
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 1%
+ht-degree: 96%
 
 ---
 
@@ -27,11 +27,11 @@ Para remover um projeto de uma pasta, você pode mover o projeto para outro loca
 
 ## Mover um projeto
 
-1. Em uma pasta de projeto, selecione o **...** reticências ao lado do nome do projeto.
+1. Em uma pasta de projeto, selecione as reticências **...** ao lado do nome do projeto.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1. Selecionar **Mover para** e selecione uma pasta para onde mover o projeto.
+1. Selecione **Mover para** e selecione uma pasta para onde mover o projeto.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
@@ -39,7 +39,7 @@ Para remover um projeto de uma pasta, você pode mover o projeto para outro loca
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
-   Um brinde confirma que o projeto foi movido.
+   Uma notificação confirma que o projeto foi movido.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
@@ -47,10 +47,10 @@ Para remover um projeto de uma pasta, você pode mover o projeto para outro loca
 
 Ao excluir um projeto de uma pasta, o projeto é totalmente excluído.
 
-1. Em uma pasta de projeto, selecione o **...** reticências ao lado do nome do projeto.
+1. Em uma pasta de projeto, selecione as reticências **...** ao lado do nome do projeto.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1. Selecionar **Excluir**.
+1. Selecione **Excluir**.
 
 1. Uma janela de confirmação solicita que você confirme a exclusão.
