@@ -3,9 +3,9 @@ title: Chaves gerenciadas pelo cliente
 description: Saiba como configurar chaves gerenciadas pelo cliente para CJA.
 hide: true
 hidefromtoc: true
-source-git-commit: 90521aa7326486b9016321d35191a73ef891a0bc
+source-git-commit: 08a322e159725c565dafdc5ef28758cc97fb9ae4
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -30,5 +30,10 @@ Siga estas etapas para configurar o CMK para CJA:
 1. Certifique-se de que, no Azure, você seja um administrador com uma função privilegiada, como Administrador de aplicativos, Administrador de aplicativos na nuvem ou Administrador global. [Saiba mais pela Microsoft](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
 1. Crie um novo Cofre de Chaves do Azure para ser usado somente com o CJA. [Saiba mais pela Microsoft](https://learn.microsoft.com/en-us/azure/key-vault/general/)
 1. Conceda acesso ao aplicativo do Adobe Azure para sua chave no cofre de chaves. Esta é a ID do aplicativo Adobe: 251e3919-1940-4296-bb8b-6b9a5e8a4805. [Saiba mais pela Microsoft](https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
-1. Crie um tíquete de Atendimento ao cliente do Adobe solicitando a configuração do CMK. Inclua o URI do Azure no seu tíquete. O URI pode ser encontrado no campo Identificador de Chave da Chave do Azure.
+1. Crie um tíquete de Atendimento ao cliente do Adobe solicitando a configuração do CMK. Inclua o URI do Azure no seu tíquete. O URI pode ser encontrado no **Identificador de Chave** campo da sua Chave do Azure.
+
+   ![](assets/key-identifier.png)
+
 1. O Atendimento ao cliente do Adobe confirmará a conclusão do aplicativo CMK em seus dados CJA.
+
+Todos os dados utilizados pela Platform são criptografados em trânsito e em repouso para manter seus dados protegidos, com ou sem CMK. Para obter informações sobre criptografia do Adobe Experience Platform, [saiba mais](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/encryption.html?lang=en).
