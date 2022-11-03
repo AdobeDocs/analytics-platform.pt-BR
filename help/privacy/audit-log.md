@@ -2,7 +2,7 @@
 title: Logs de auditoria
 description: Saiba como visualizar e gerenciar logs de auditoria do CJA.
 source-git-commit: 37a23a4669c08c8f7d9c6595286998ebd7e60ac4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 100%
 
@@ -66,11 +66,11 @@ Os seguintes filtros estão disponíveis para eventos de auditoria na interface 
 | Filtro | Descrição |
 | --- | --- |
 | [!UICONTROL Intervalo de datas] | Filtre um intervalo de datas diferente selecionando uma data diferente ou um intervalo de datas, arrastando o cursor em várias datas. Por padrão, a data de hoje e de ontem são selecionadas. |
-| [!UICONTROL Ação] | Filtre uma ou mais das seguintes ações: <ul><li>API_Request</li><li>Aprovar</li><li>Criar</li><li>Editar</li><li>Exportar</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Atualizar</li><li>Compartilhar</li><li>Transferir</li><li>Cancelar aprovação</li><li>Não Compartilhar</li></ul> |
+| [!UICONTROL Ação] | Filtre uma ou mais das seguintes ações: <ul><li>API_Request</li><li>Aprovar</li><li>Criar</li><li>Editar</li><li>Exportar</li><li>Login_failed</li><li>Login_success</li><li>Logout</li><li>Org_change</li><li>Atualizar</li><li>Compartilhar</li><li>Transferir</li><li>Cancelar aprovação</li><li>Não Compartilhar</li></ul> |
 | [!UICONTROL ID de usuário] | Filtrar em um usuário específico pela ID do usuário. A ID de usuário pode ser encontrada clicando no botão info (i) ao lado de um nome de usuário. |
 | [!UICONTROL Email] | Filtre o endereço de email de um usuário específico. O email pode ser encontrado clicando o botão info (i) ao lado de um nome de usuário. |
 | [!UICONTROL ID de componente] | Filtrar em uma ID de componente específica. A ID de componente pode ser encontrada selecionando o botão de informações (i) de um componente desejado. |
-| [!UICONTROL Tipo de componente] | Filtrar em um ou mais tipos de componentes: <ul><li>Anotação</li><li>Público-alvo</li><li>Métrica calculada</li><li>Conexão</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filtro</li><li>IMS_Org</li><li>Dispositivo móvel</li><li>Projeto</li><li>Relatório</li><li>Scheduled_Project</li><li>Usuário</li><li>User_Group</li></ul> |
+| [!UICONTROL Tipo de componente] | Filtrar em um ou mais tipos de componentes: <ul><li>Anotação</li><li>Público-alvo</li><li>Métrica calculada</li><li>Conexão</li><li>Grupo_de_dados</li><li>Exibição_de_dados</li><li>Acesso_Recurso</li><li>Filtro</li><li>IMS_Org</li><li>Dispositivo móvel</li><li>Projeto</li><li>Relatório</li><li>Scheduled_Project</li><li>Usuário</li><li>User_Group</li></ul> |
 
 {style=&quot;table-layout:auto&quot;}
 

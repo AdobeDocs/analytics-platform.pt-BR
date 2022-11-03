@@ -1,5 +1,5 @@
 ---
-description: Saiba como criar pastas e subpastas no Workspace
+description: Saiba como criar pastas e subpastas no Espaço de trabalho
 keywords: Analysis Workspace
 title: Criar pastas
 feature: CJA Workspace Basics
@@ -8,26 +8,26 @@ hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Criar pastas
 
-É possível adicionar uma nova pasta ou subpasta à lista de projetos e pastas na página inicial do Workspace.
+É possível adicionar uma nova pasta ou subpasta à lista de projetos e pastas na página de destino do Espaço de trabalho.
 
 >[!NOTE]
 >
->Esse recurso está atualmente na versão beta. Algumas telas podem mudar.
+>Essa funcionalidade está atualmente na versão beta. Algumas telas podem mudar.
 
 ## Criar uma nova pasta
 
 Para criar uma nova pasta,
 
-1. Clique em **Criar nova**.
+1. clique em **Criar novo**.
 
-1. Insira um nome para a nova pasta.
+1. Insira um Nome para a nova pasta.
 
 1. Selecione tags no menu suspenso.
 
@@ -37,7 +37,7 @@ Para criar uma nova pasta,
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create.png)
 
-   A nova pasta é adicionada na lista principal de projetos e pastas.
+   A nova pasta é adicionada à lista principal de projetos e pastas.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
@@ -47,7 +47,7 @@ As subpastas permitem que você forneça níveis adicionais de gerenciamento e o
 
 Para criar uma subpasta quando tiver uma pasta existente aberta,
 
-1. Clique em **Criar uma nova pasta**.
+1. clique em **Criar uma nova pasta**.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 

@@ -11,8 +11,8 @@ user-guide-description: Saiba mais sobre o Customer Journey Analytics (CJA) e co
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 6fee3b9e91aff8c49176d86ac99fd78a6d852c4c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '802'
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 0%
    + [Controle de acesso do CJA](../getting-started/cja-access-control.md)
    + [Página inicial do Customer Journey Analytics](../getting-started/landing.md)
    + [Perguntas frequentes](../getting-started/cja-faq.md)
-   + [ Evolução do Adobe Analytics para o Customer Journey Analytics](../getting-started/aa-to-cja.md)
+   + [Evolução do Adobe Analytics para o Customer Journey Analytics](../getting-started/aa-to-cja.md)
    + [Guia do usuário para novos usuários do Customer Journey Analytics](../getting-started/aa-to-cja-user.md)
    + Comparar o Adobe Analytics e o Customer Journey Analytics {#compare-aa-cja}
       + [Suporte a recursos do Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
@@ -79,10 +79,10 @@ ht-degree: 0%
    + Projetos {#build-workspace-project}
       + [Visão geral dos Projetos](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Salvar projetos](../analysis-workspace/build-workspace-project/save-projects.md)
-      + Pastas no Workspace {#workspace-folders}
-         + [Sobre pastas no Workspace](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+      + Pastas no Espaço de trabalho {#workspace-folders}
+         + [Sobre pastas no Espaço de trabalho](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Criar pastas e subpastas](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
-         + [Adicionar projetos](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+         + [Adicionar Projetos](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [Remover um projeto](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [Salvar um novo projeto](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
       + [Teclas de atalho (atalhos)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)

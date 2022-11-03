@@ -1,25 +1,25 @@
 ---
-description: Saiba como adicionar pastas no Workspace
+description: Saiba como adicionar pastas ao Espaço de trabalho
 keywords: Analysis Workspace
-title: Adicionar pastas no Workspace
+title: Adicionar pastas ao Espaço de trabalho
 feature: CJA Workspace Basics
 hide: true
 hidefromtoc: true
 source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Adicionar projetos às pastas
+# Adicionar projetos a pastas
 
 Você pode adicionar projetos a uma pasta na exibição de tabela ou de uma pasta.
 
 >[!NOTE]
 >
->Esse recurso está atualmente na versão beta. Algumas telas podem mudar.
+>Essa funcionalidade está atualmente na versão beta. Algumas telas podem mudar.
 
 ## Na exibição de tabela
 
@@ -43,7 +43,7 @@ Adicione projetos a uma pasta na exibição de tabela na página inicial.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-projects-added.png)
 
-   A landing page do Workspace agora mostra a pasta que contém (3) projetos.
+   A página de destino do Espaço de trabalho agora mostra a pasta que contém (3) projetos.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
@@ -55,11 +55,11 @@ Você também pode adicionar projetos de dentro de uma pasta usando o link de re
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
-1. Clique no botão de reticências **...** no canto superior direito.
+1. Clique no ícone de reticências **...** no canto superior direito.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/add-projects-elipsis.png)
 
-   Um menu suspenso exibe a opção para adicionar projetos à pasta. Outras opções permitem renomear, mover ou excluir a pasta e gerenciar permissões da pasta.
+   Um menu suspenso exibe a opção para adicionar projetos à pasta. Opções adicionais permitem renomear, mover ou excluir a pasta e gerenciar permissões da pasta.
 
 1. Clique em **Adicionar projetos** e selecione o projeto que deseja adicionar na lista suspensa.
 
