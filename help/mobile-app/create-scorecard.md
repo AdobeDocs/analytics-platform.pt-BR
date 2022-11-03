@@ -6,7 +6,7 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1769'
 ht-degree: 100%
 
@@ -159,7 +159,7 @@ Ao clicar em um bloco no Criador de cartões de pontuação, o painel direito ex
 
 ## Exibir slides de detalhes {#view-detail-slides}
 
-Ao clicar nos blocos, uma janela pop-up dinâmica mostrará como o slide de detalhes aparecerá para o usuário executivo no aplicativo. Você pode adicionar dimensões para detalhar seus dados de acordo com suas necessidades específicas. Se nenhuma dimensão tiver sido aplicada, a dimensão de detalhamento será a **hora** ou os **dias**, dependendo do intervalo de datas padrão.
+Ao clicar nos blocos, uma janela pop-up dinâmica mostrará como o slide de detalhes aparecerá para o usuário executivo no aplicativo. Você pode adicionar dimensões para detalhar seus dados de acordo com suas necessidades específicas. Se nenhuma dimensão for aplicada, a dimensão de detalhamento será definida como **hora** ou **dias**, dependendo do intervalo de datas padrão.
 
 Os detalhamentos refinam sua análise ao detalhar métricas por itens de dimensão, como o seguinte:
 
@@ -173,7 +173,7 @@ Cada dimensão adicionada ao bloco será mostrada em uma lista suspensa na exibi
 
 ## Personalizar slides de detalhes {#customize-detail-slide}
 
-Os slides de detalhes personalizados permitem ter ainda mais controle sobre quais informações você compartilha com seu público-alvo.
+Os slides de detalhes personalizados permitem ter ainda mais controle sobre quais informações você compartilha com seu público.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410002)
 
