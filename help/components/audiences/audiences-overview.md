@@ -3,9 +3,9 @@ title: Visão geral de publicação de públicos-alvo do CJA
 description: Saiba mais sobre o conceito de publicação de público-alvo no Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 source-git-commit: eba2eb71ca434e0306c018b80209caf52266ee15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '428'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -18,8 +18,8 @@ A publicação de públicos-alvo fornece uma maneira clara de ativar e executar 
 * Uso do público-alvo para uma jornada no Adobe Journey Optimizer.
 * Exportação do público-alvo para um terceiro por meio de um destino da Experience Platform.
 * Enriquecimento do perfil do cliente em tempo real com atributos úteis derivados de dados baseados em eventos no CJA.
-* Faça tudo isso com latência mínima após a publicação do público-alvo (alguns minutos)
-* Publicação de públicos-alvo únicos ou públicos-alvo recorrentes
+* Faça tudo isso com latência mínima após a publicação do público-alvo (alguns minutos).
+* Publicação de públicos-alvo únicos ou públicos-alvo recorrentes.
 
 ## Terminologia principal
 
@@ -37,9 +37,9 @@ A publicação de públicos-alvo fornece uma maneira clara de ativar e executar 
 
 * Os administradores também precisam da permissão **[!UICONTROL Gerenciar perfis]** na Adobe Experience Platform.
 
-## Governança e consentimento de dados
+## Governança de dados e consentimento
 
-Ao publicar um público-alvo no CJA, os rótulos e as políticas da Governança de dados anexadas aos campos usados no público-alvo são registrados.  Quando o público-alvo é ativado em qualquer aplicativo da Adobe Experience, todos os rótulos e políticas de Governança de dados associados estão disponíveis para esse público-alvo e a imposição apropriada pode ser aplicada. [Saiba mais sobre consentimento](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=en#consent-policy).
+Ao publicar um público no CJA, os rótulos e as políticas da Governança de dados anexadas aos campos usados no público são registrados.  Quando o público é ativado em qualquer aplicativo da Adobe Experience, todos os rótulos e políticas de Governança de dados associados estão disponíveis para esse público e a imposição apropriada pode ser aplicada. [Saiba mais sobre consentimento](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=pt-BR#consent-policy).
 
 ## Próximas etapas
 
