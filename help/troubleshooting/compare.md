@@ -4,10 +4,10 @@ description: Saiba como comparar dados do Adobe Analytics com os dados do Custom
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 718dc00b13ec0a79e122b4a2ca48f4de7643bacb
-workflow-type: ht
-source-wordcount: '825'
-ht-degree: 100%
+source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
+workflow-type: tm+mt
+source-wordcount: '828'
+ht-degree: 90%
 
 ---
 
@@ -63,24 +63,24 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
         ORDER BY Day; 
 ```
 
-1. Em [Feeds de dados do Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR), identifique nos dados brutos se algumas linhas foram descartadas pelo Conector de origem do Analytics.
+1. Em [Feeds de dados do Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR), identifique nos dados brutos se algumas linhas podem ter sido filtradas pelo conector do Analytics Source.
 
-   O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) pode descartar linhas durante a transformação para o esquema XDM. Pode haver vários motivos para que a linha inteira seja imprópria para transformação. Se qualquer um dos campos do Analytics a seguir tiver esses valores, a linha inteira será descartada.
+   O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) O pode filtrar determinadas linhas durante a transformação para o esquema XDM. Pode haver vários motivos para que a linha inteira seja imprópria para transformação. Se qualquer um dos campos do Analytics a seguir tiver esses valores, a linha inteira será filtrada.
 
    | Campo do Analytics | Valores que fazem com que uma linha seja descartada |
    | --- | --- |
    | Opt_out | y, Y |
    | In_data_only | Not 0 |
-   | Exclude_hit | Not 0 |
-   | Bot_id | Not 0 |
+   | Exclude_hit | Não 0 |
+   | Bot_id | Não 0 |
    | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53, 63 |
 
    Para obter mais informações sobre hit\_source, consulte: [Referência da coluna de dados](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR). Para obter mais informações sobre page\_event, consulte: [Pesquisa de evento da página](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=pt-BR).
 
-1. Se o conector descartar linhas, retire essas linhas da métrica de [!UICONTROL Ocorrências]. O número resultante deve corresponder ao número de eventos nos conjuntos de dados da Adobe Experience Platform.
+1. Se o conector tiver linhas filtradas, subtraia essas linhas do [!UICONTROL Ocorrências] métrica. O número resultante deve corresponder ao número de eventos nos conjuntos de dados da Adobe Experience Platform.
 
-## Por que os registros podem ser descartados ou ignorados durante a assimilação do AEP?
+## Por que os registros podem ser filtrados ou ignorados durante a assimilação do AEP
 
 As [Conexões](/help/connections/create-connection.md) do CJA permitem reunir e associar vários conjuntos de dados com base em uma ID de pessoa comum nos conjuntos de dados. No back-end, aplicamos a desduplicação: a associação externa completa ou união de conjuntos de dados de evento com base em carimbos de data e hora e, em seguida, a associação interna em conjunto de dados de perfil e pesquisa, com base na ID de pessoa.
 
