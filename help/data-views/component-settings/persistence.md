@@ -4,9 +4,9 @@ description: Determine como ou se os valores de dimensão persistem de um evento
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+workflow-type: tm+mt
+source-wordcount: '809'
 ht-degree: 100%
 
 ---
@@ -78,7 +78,7 @@ Detalhes sobre as configurações de expiração disponíveis.
 
 Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de outra dimensão. As opções de lista suspensa válidas incluem outras dimensões contidas na visualização de dados.
 
-Consulte [uso de dimensões e métricas de ligação no CJA](../../use-cases/binding-dimensions-metrics.md) para obter exemplos sobre como usar efetivamente dimensões de ligação.
+Consulte [uso de dimensões e métricas de ligação no CJA](../../use-cases/data-views/binding-dimensions-metrics.md) para obter exemplos sobre como usar efetivamente dimensões de ligação.
 
 ## [!UICONTROL Métrica de ligação]
 
@@ -86,4 +86,4 @@ Uma lista suspensa que permite escolher uma métrica que atue como um acionador 
 
 Essa configuração só aparece quando a Dimensão de ligação está mais abaixo no array de objetos do que no componente. Quando a métrica de ligação está presente em um evento, os valores de dimensão são copiados da dimensão de nível de evento para o nível de esquema inferior da dimensão de ligação.
 
-Veja o segundo exemplo em [uso de dimensões e métricas de ligação no CJA](../../use-cases/binding-dimensions-metrics.md) para obter mais informações sobre como usar métricas de ligação de maneira eficaz.
+Veja o segundo exemplo em [uso de dimensões e métricas de ligação no CJA](../../use-cases/data-views/binding-dimensions-metrics.md) para obter mais informações sobre como usar métricas de ligação de maneira eficaz.

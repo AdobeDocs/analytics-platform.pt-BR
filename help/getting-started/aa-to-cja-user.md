@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 3d8394fa3d4fba036658161ca6120078902aad9a
-workflow-type: ht
+source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
+workflow-type: tm+mt
 source-wordcount: '1457'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Muito do que você conhece no lado dos relatórios não mudou.
 
 * Você ainda pode usar o potencial do [Analysis Workspace](/help/analysis-workspace/home.md) para analisar seus dados. O Espaço de trabalho opera da mesma forma que no Adobe Analytics tradicional.
 * A mesma versão de [Painéis do Adobe Analytics](/help/mobile-app/home.md) está disponível e funciona de forma semelhante entre o CJA e o Analytics tradicional.
-* O [Report Builder](/help/report-builder/report-buider-overview.md) tem uma nova interface e é executado no MS Windows, no MacOS e na versão da Web do Excel. (Antes dessa versão do Report Builder, você não podia usá-lo no Mac a menos que o executasse no VMware.) Esta versão ainda não oferece suporte à solicitação de dados do AA tradicional.
+* O [Report Builder](/help/report-builder/report-buider-overview.md) tem uma nova interface e é executado no MS Windows, no MacOS e na versão da Web do Excel. (Antes desta versão do Report Builder, você não podia usar o no Mac a menos que o executasse no VMware.) Esta versão ainda não oferece suporte à solicitação de dados AA tradicional.
 
 ## Alterações nos relatórios
 
@@ -54,7 +54,7 @@ Observe que o seletor de conjunto de relatórios no canto superior direito agora
 
 ![data-view-selector](assets/data-views.png)
 
-Consulte [Casos de uso de visualizações de dados](/help/data-views/data-views-usecases.md) para obter mais informações sobre esse conceito.
+Consulte [Casos de uso de visualizações de dados](/help/use-cases/data-views/data-views-usecases.md) para obter mais informações sobre esse conceito.
 
 ## Alterações no conceito de eVars e props
 
@@ -68,7 +68,7 @@ Com essa flexibilidade, você pode encontrar situações em que um único campo 
 
 A Adobe renomeou o componente “segmentos” como “filtros” para alinhar-se melhor aos padrões do setor e fornecer uma melhor distinção com segmentos na Adobe Experience Platform.
 
-O [!UICONTROL Customer Journey Analytics] não usa mais eVars, props ou eventos e, agora, usa o nome do campo do esquema da Experience Platform para o qual foram mapeados. Com essa alteração, nenhum dos segmentos existentes no Adobe Analytics é compatível com o [!UICONTROL Customer Journey Analytics]. Se você quiser mover segmentos existentes do Adobe Analytics para o Customer Journey Analytics, assista ao vídeo a seguir:
+[!UICONTROL Customer Journey Analytics] O não usa mais eVars, props ou eventos e, em vez disso, usa o nome do campo Experience Platform schema para o qual foram mapeados. Com essa alteração, nenhum dos segmentos existentes no Adobe Analytics é compatível com o [!UICONTROL Customer Journey Analytics]. Se você quiser mover segmentos existentes do Adobe Analytics para o Customer Journey Analytics, assista ao vídeo a seguir:
 
 >[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
@@ -96,7 +96,7 @@ Você também pode ter várias visualizações de dados com base na mesma conex�
 
 ## Alterações ao conceito de classificações
 
-“Classificações” agora são conhecidas como “Conjuntos de dados de pesquisa”. Os conjuntos de dados de pesquisa são usados para procurar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode fazer o upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte [Adicionar dados a conta como um conjunto de dados de pesquisa](/help/use-cases/b2b.md) para obter um exemplo de caso de uso.
+“Classificações” agora são conhecidas como “Conjuntos de dados de pesquisa”. Os conjuntos de dados de pesquisa são usados para procurar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode fazer o upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte [Adicionar dados a conta como um conjunto de dados de pesquisa](/help/use-cases/b2b/b2b.md) para obter um exemplo de caso de uso.
 
 ## Alterações no conceito de atributos do cliente
 

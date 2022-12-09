@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 7820f462617d21c9e3b23de26c9e9022d74bec0e
+source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 94%
@@ -44,7 +44,7 @@ Um conjunto de relatórios global completo pode nem sempre ser viável para uma 
 
 Caso tenha evitado mudar para um conjunto de relatórios global devido a problemas com [!UICONTROL Únicos excedidos] ou [!UICONTROL Tráfego baixo], saiba que o CJA não tem [limites de cardinalidade em uma dimensão](/help/components/dimensions/high-cardinality.md). Ele permite que qualquer valor único seja exibido e contado.
 
-Veja um caso de uso sobre [combinação de conjuntos de relatórios com esquemas diferentes](/help/use-cases/combine-report-suites.md).
+Veja um caso de uso sobre [combinação de conjuntos de relatórios com esquemas diferentes](/help/use-cases/aa-data/combine-report-suites.md).
 
 ### 3. (Re)Configurar seus Canais de marketing {#marketing-channels}
 
@@ -111,7 +111,7 @@ Estes são alguns vídeos para orientá-lo:
 
 ### Outras considerações
 
-* Ao usar o poder das visualizações de dados do CJA, você tem muito mais flexibilidade na definição de métricas e dimensões no Customer Journey Analytics. Por exemplo, você pode usar o valor de uma dimensão para se tornar a definição de uma métrica. [Saiba mais](/help/data-views/data-views-usecases.md)
+* Ao usar o poder das visualizações de dados do CJA, você tem muito mais flexibilidade na definição de métricas e dimensões no Customer Journey Analytics. Por exemplo, você pode usar o valor de uma dimensão para se tornar a definição de uma métrica. [Saiba mais](/help/use-cases/data-views/data-views-usecases.md)
 
 * Se tiver definido um calendário personalizado no Adobe Analytics, você terá [recursos de calendário semelhantes](/help/components/date-ranges/custom-date-ranges.md) no CJA. É preciso garantir que o seu calendário esteja definido corretamente.
 

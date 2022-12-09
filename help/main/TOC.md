@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Customer Journey Analytics (CJA) e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 52593d05b10c872322236fb82c4ce5346ddcc9ac
+source-git-commit: 879350c645cf4c6e12361184dddfb065224d758c
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 98%
+source-wordcount: '826'
+ht-degree: 97%
 
 ---
 
@@ -71,7 +71,6 @@ ht-degree: 98%
       + [Substring](../data-views/component-settings/substring.md)
       + [Classificação de valor](../data-views/component-settings/value-bucketing.md)
    + [Referência de componente padrão](../data-views/component-reference.md)
-   + [Casos de uso de visualizações de dados](../data-views/data-views-usecases.md)
    + [Rótulos e políticas](../data-views/data-governance.md)
 + Projetos do Workspace {#cja-workspace}
    + [Visão geral do Analysis Workspace](../analysis-workspace/home.md)
@@ -248,16 +247,22 @@ ht-degree: 98%
       + [Ingestão de dados históricos do Google Analytics na Platform](../use-cases/ga/backfill.md)
       + [Configurar dados de transmissão do Google Analytics na Platform](../use-cases/ga/streaming.md)
       + [Relatórios de dados do Google Analytics no CJA](../use-cases/ga/report.md)
-   + [Combinar conjuntos de relatórios com esquemas diferentes](../use-cases/combine-report-suites.md)
+   + Assimilação de dados {#data-ingestion}
+      + [Casos de uso da assimilação de dados](../use-cases/data-ingestion/data-ingestion.md)
+      + [Assimilar dados do Marketo Engage na AEP e relatórios no CJA](../use-cases/data-ingestion/marketo.md)
+      + [Assimilar públicos-alvo do AEP no CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
+   + Visualizações de dados {#data-views}
+      + [Casos de uso de visualizações de dados](../use-cases/data-views/data-views-usecases.md)
+      + [Uso de dimensões e métricas de ligação](../use-cases/data-views/binding-dimensions-metrics.md)
+   + B2B {#b2b}
+   + [Adicionar dados a nível de conta como um conjunto de dados de pesquisa](../use-cases/b2b/b2b.md)
+   + Dados entre canais {#cross-channel}
+      + [Analisar dados entre canais](../use-cases/cross-channel/cross-channel.md)
+      + [Importação de dados da central de atendimento e da Web](../use-cases/cross-channel/call-center.md)
+   + Dados do Adobe Analytics {#aa-data}
+      + [Usar dimensões do canal de marketing](../use-cases/aa-data/marketing-channels.md)
+      + [Combinar conjuntos de relatórios com esquemas diferentes](../use-cases/aa-data/combine-report-suites.md)
    + [Uso de arrays de objetos](../use-cases/object-arrays.md)
-   + [Uso de dimensões e métricas de ligação](../use-cases/binding-dimensions-metrics.md)
-   + [(B2B) Adicionar dados a nível de conta como um conjunto de dados de pesquisa](../use-cases/b2b.md)
-   + [Assimilar dados do Marketo Engage na AEP e relatórios no CJA](../use-cases/marketo.md)
-   + [Assimilar públicos-alvo do AEP no CJA](../use-cases/ingest-aep-segments.md)
-   + [Analisar dados entre canais](../use-cases/cross-channel.md)
-   + [Importação de dados da central de atendimento e da Web](../use-cases/call-center.md)
-   + [Casos de uso da assimilação de dados](../use-cases/data-ingestion.md)
-   + [Usar dimensões do canal de marketing](../use-cases/marketing-channels.md)
 + Labs {#labs}
    + [Guia do usuário do Labs](../labs/labs.md)
 + Solução de problemas {#troubleshooting}
