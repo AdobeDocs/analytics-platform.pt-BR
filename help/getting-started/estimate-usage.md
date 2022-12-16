@@ -4,9 +4,9 @@ description: Mostra dois métodos de estimativa de uso e um método de gerenciam
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: e8f5982ae073d4e3dca85b3054fd325cc40ff40a
+source-git-commit: 9ee3bbfe77d6134bee85d4f1844e40894e16a5c7
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '804'
 ht-degree: 43%
 
 ---
@@ -21,7 +21,7 @@ Para entender o uso do CJA, você pode usar 3 métodos:
 
 Para gerenciar o uso do CJA:
 
-* Defina uma janela de dados do acumulado. (Consulte abaixo.)
+* Defina uma janela de dados do acumulado. (Consulte **Definir uma janela de dados do acumulado** abaixo.)
 
 ## Estimar tamanho da conexão {#estimate-size}
 
@@ -58,7 +58,7 @@ Talvez seja necessário saber quantas linhas de dados de evento você tem atualm
 
 ## Criar um projeto do Workspace usando todos os dados do evento {#workspace-event-data}
 
-1. Antes de criar o projeto no Workspace, [criar uma visualização de dados](/help/data-views/create-dataview.md) que extrai dados de TODAS as suas conexões e não tem filtros aplicados. Em outras palavras, inclui todos os seus dados.
+1. Antes de criar o projeto no Workspace, [criar uma visualização de dados](/help/data-views/create-dataview.md) para cada uma das conexões e não tem filtros aplicados.
 
 1. No Workspace, crie um novo projeto e extraia todos os eventos (da variável **[!UICONTROL Métricas]** lista suspensa) até a primeira sexta-feira do mês, começando pelo primeiro dia do seu contrato CJA atual.
 
