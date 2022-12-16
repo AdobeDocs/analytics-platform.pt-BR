@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 91d9e473d38e12a7ba9cafea92c864641cebd206
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+workflow-type: tm+mt
+source-wordcount: '2157'
+ht-degree: 99%
 
 ---
 
@@ -110,28 +110,7 @@ Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem 
 
 ## 9. Estimar tamanho da conexão {#estimate-size}
 
-Talvez seja necessário saber quantas linhas de dados você tem atualmente no [!UICONTROL Customer Journey Analytics]. Para obter uma conta precisa do uso dos registros de dados de evento (linhas de dados) de sua organização, faça o seguinte **para cada uma das conexões criadas pela organização**.
-
-1. No [!UICONTROL Customer Journey Analytics], clique na guia **[!UICONTROL Conexões]**.
-
-   Agora você pode ver uma lista de todas as conexões atuais.
-
-1. Clique em cada nome de conexão para acessar o Gerenciador de conexões.
-
-1. Adicione o **[!UICONTROL Registros dos dados do evento disponíveis]** para todas as conexões criadas. (Dependendo do tamanho da conexão, o número pode levar algum tempo para ser exibido.)
-
-   ![dados do evento](assets/event-data.png)
-
-1. Depois de ter uma soma de todas as linhas de dados do evento, procure o direito de “Linhas de dados” no contrato do Customer Journey Analytics que sua empresa assinou com a Adobe.
-
-   Isso fornece o número máximo de linhas de dados autorizadas na Ordem de venda. Se o número de linhas de dados resultante da Etapa 3 for maior que esse número, você está incorrendo em um excedente.
-
-1. Para corrigir essa situação, você tem várias opções:
-
-   * Alterar as [configurações de retenção de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#set-rolling-window-for-connection-data-retention).
-   * [Excluir todas as conexões não usadas](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
-   * [Excluir um conjunto de dados na AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
-   * Entre em contato com o Gerente de conta da Adobe para obter licença de capacidade adicional.
+Consulte [Estimar e gerenciar o uso](/help/getting-started/estimate-usage.md).
 
 ## 10. Em relação às sobreposições de uso {#overage}
 
