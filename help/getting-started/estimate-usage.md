@@ -4,24 +4,26 @@ description: Mostra dois métodos de estimativa de uso e um método de gerenciam
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: d80a4c277fa1ebd2a354aa454d1356a8561bb517
+source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 43%
+source-wordcount: '835'
+ht-degree: 42%
 
 ---
 
-# Estimar e gerenciar o uso do CJA
+# Visualizar e gerenciar o uso do CJA
 
-Para entender o uso do CJA, você pode usar 3 métodos:
+Para visualizar o uso do CJA, você pode usar vários métodos:
 
-* Adicione as linhas de dados do evento para cada conexão. (Consulte **Estime o tamanho da conexão** abaixo) Essa é uma maneira fácil de ver os dados da linha do evento, por conexão, para um carimbo de data e hora específico.
-* Use o Analysis Workspace para relatar os eventos do mês passado. (Consulte **Criar um projeto do Workspace usando todos os dados do evento** abaixo.) Isso permite fazer uma análise mais profunda dos dados de uso, bem como do histórico de uso.
-* Use a API do CJA para criar um relatório automatizado. (Consulte **Criar um relatório na API do CJA** abaixo.)
+* Adicione as linhas de dados do evento para cada conexão. Consulte [Estime o tamanho da conexão](#tamanho da estimativa) abaixo. Essa é uma maneira fácil de ver os dados da linha do evento, por conexão, para um carimbo de data e hora específico.
+* Visualize seu uso de três maneiras, cada uma das quais é descrita com mais detalhes abaixo:
+   * Use o Analysis Workspace para relatar os eventos do mês passado.
+   * Use o Report Builder para relatar os eventos do mês passado.
+   * Use a API do CJA para criar um relatório automatizado.
 
 Para gerenciar o uso do CJA:
 
-* Defina uma janela de dados do acumulado. (Consulte **Definir uma janela de dados do acumulado** abaixo.)
+* Defina uma janela de dados do acumulado.
 
 ## Estimar tamanho da conexão {#estimate-size}
 
@@ -58,6 +60,8 @@ Talvez seja necessário saber quantas linhas de dados de evento você tem atualm
 
 ## Criar um projeto do Workspace usando todos os dados do evento {#workspace-event-data}
 
+Esse método permite fazer uma análise mais profunda dos dados de uso, bem como do histórico de uso.
+
 1. Antes de criar o projeto no Workspace, [criar uma visualização de dados](/help/data-views/create-dataview.md) para cada conexão, sem filtros aplicados.
 
 1. No Workspace, crie novos projetos com base em cada visualização de dados e extraia todos os eventos (da variável **[!UICONTROL Métricas]** lista suspensa) até a primeira sexta-feira do mês, começando pelo primeiro dia do seu contrato CJA atual.
@@ -68,19 +72,22 @@ Talvez seja necessário saber quantas linhas de dados de evento você tem atualm
 
 1. Dependendo das suas necessidades, você pode detalhar por conjunto de dados, etc.
 
+## Criar um bloco de dados no Report Builder {#arb}
+
+Em Report Builder, [criar um bloco de dados](/help/report-builder/create-a-data-block.md) para cada visualização de dados, some-os.
 
 ## Criar um relatório automatizado na API do CJA {#api-report}
 
 1. Use o [API de relatórios CJA](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) para executar um relatório em todos os dados do evento, **para cada conexão**. Configure isso para que o relatório seja executado
 
-   * a cada três sextas-feiras de cada mês.
+   * em todas as primeiras sextas-feiras de cada mês.
    * voltar ao primeiro dia do seu contrato CJA atual.
 
    Isso lhe dará uma boa ideia de como sua utilização está apresentando tendências mês a mês. Ele fornecerá o número total de linhas em todas as suas conexões do CJA.
 
 1. Use o Excel para personalizar ainda mais este relatório.
 
-## Definir uma janela de dados do acumulado {#rolling}
+## Gerencie seu uso definindo uma janela de dados do acumulado {#rolling}
 
 Para gerenciar seu uso, a variável [interface de usuário de conexões](/help/connections/create-connection.md) permite definir a retenção de dados do CJA como uma janela contínua em meses (1 mês, 3 meses, 6 meses, etc.), no nível da conexão.
 
