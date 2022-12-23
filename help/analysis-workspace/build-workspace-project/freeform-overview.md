@@ -106,7 +106,7 @@ As ações a seguir são comuns no Gerenciador de projetos e podem ser executada
 | Ação | Descrição |
 |---|---|
 | Adicionar | Crie um novo projeto do zero. |
-| Marcar ou aprovar | Escolha &quot;Marcar&quot; ou &quot;Aprovar&quot; para organizar os projetos e facilitar a pesquisa. |
+| Marcar ou aprovar | Escolha “Marcar“ ou “Aprovar“ para organizar os projetos e facilitar a pesquisa. |
 | [Compartilhar](/help/analysis-workspace/curate-share/share-projects.md) | Disponibilize um projeto para outros usuários do Analysis Workspace em sua organização. |
 | Excluir | Exclua o projeto. |
 | Renomear | Edite o nome do projeto. |
