@@ -3,7 +3,7 @@ title: Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da
 description: Saiba mais sobre ambientes de relatórios virtuais e sandbox.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 source-git-commit: 6603aed778980c37d69843f11f3ee64e64cd13b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '720'
 ht-degree: 100%
 
@@ -79,4 +79,4 @@ Uma sandbox da AEP não:
 Observe que:
 
 * Os dados de diferentes sandboxes não podem ser combinados no CJA.
-* O conector de origem do Analytics envia dados do conjunto de relatórios _em_ uma sandbox específica. Cada conjunto de relatórios pode ser configurado como uma fonte para uma única sandbox. Consulte a [Documentação do Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=en) para obter mais detalhes.
+* O conector de origem do Analytics envia dados do conjunto de relatórios _em_ uma sandbox específica. Cada conjunto de relatórios pode ser configurado como uma fonte para uma única sandbox. Consulte a [Documentação do Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) para obter mais detalhes.
