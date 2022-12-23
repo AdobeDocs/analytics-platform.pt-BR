@@ -40,10 +40,10 @@ Depois de fazer logon na Adobe Experience Cloud e no Customer Journey Analytics,
 | Elemento da interface | Definição |
 | --- | --- |
 | ... Mais | Permite [!UICONTROL Exibir Tutoriais] e [Editar preferências de usuário](/help/analysis-workspace/user-preferences.md). |
-| O modal **[!UICONTROL Criar novo]** está de volta | Ao clicar em **[!UICONTROL Criar novo]** no Espaço de trabalho, você novamente terá a escolha entre um [!UICONTROL Projeto em branco] e um [!UICONTROL Cartão de pontuação para dispositivos móveis em branco]. Você também pode escolher qualquer modelo criado por sua empresa. |
-| [!UICONTROL Mostrar menos/mais] | Alterna entre não mostrar e mostrar o banner: ![Banner principal](assets/top-banner.png) |
+| O modal **[!UICONTROL Criar novo]** está de volta | Ao clicar em **[!UICONTROL Criar novo]** no Espaço de trabalho, você novamente terá a escolha entre um [!UICONTROL Projeto em branco] e um [!UICONTROL Cartão de pontuação móvel em branco]. Você também pode escolher qualquer modelo criado por sua empresa. |
+| [!UICONTROL Mostrar menos/mais] | Alterna entre não mostrar e mostrar o banner: ![Banner superior](assets/top-banner.png) |
 | [!UICONTROL Projeto em branco] | Cria um [projeto do Espaço de trabalho](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR) em branco para que você o preencha. |
-| [!UICONTROL Cartão de pontuação para dispositivos móveis em branco] | Cria um [cartão de pontuação móvel](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=pt-BR) em branco para que você o preencha. |
+| [!UICONTROL Cartão de pontuação móvel em branco] | Cria um [cartão de pontuação móvel](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=pt-BR) em branco para que você o preencha. |
 | [!UICONTROL Abrir tutorial de treinamento] | Abre o tutorial de treinamento do Espaço de trabalho que orienta novos usuários por meio da criação de um projeto passo a passo. |
 | [!UICONTROL Abrir notas de versão] | Abre as notas de versão mais recentes do Adobe Experience Cloud. |
 | Ícone Filtrar | Você pode filtrar por tags, conjuntos de relatórios, proprietários, tipos e outros filtros (Meus, Compartilhados comigo, Favoritos e Aprovados) |
@@ -65,7 +65,7 @@ Depois de fazer logon na Adobe Experience Cloud e no Customer Journey Analytics,
 | [!UICONTROL ID do projeto] | A ID do projeto pode ser usada para depurar projetos. |
 | [!UICONTROL Intervalo de datas mais longo] | Intervalos de datas mais longos aumentam a complexidade do projeto e podem aumentar os tempos de processamento e carregamento. |
 | [!UICONTROL Número de consultas] | O número total de solicitações feitas no Analytics quando o projeto é carregado. Um número maior de consultas de projeto aumenta a complexidade do projeto e pode aumentar os tempos de processamento e carregamento. Esses dados só estão disponíveis depois que um projeto é carregado ou um projeto agendado é enviado. |
-| Ícone Personalizar tabela | (Canto superior direito) Se quiser adicionar ou remover colunas da lista de projetos, você selecioná-las ou desmarcá-las. |
+| Ícone Personalizar tabela | (Parte superior direita) Se quiser adicionar ou remover colunas da lista de projetos, selecione-as ou desmarque-as. |
 | &lt; (Botão voltar) | Esse botão em um projeto do Espaço de trabalho direciona você à configuração mais recente da landing page. Qualquer configuração de página que você tenha ao sair da página de aterrisagem persistirá ao retornar. |
 
 ## Navegue pela guia Aprendizagem {#navigate-learning}
@@ -81,4 +81,4 @@ A página Aprendizado contém tutoriais e visitas de vídeo práticos, além de 
 | Pergunta | Resposta |
 | --- | --- |
 | Há um número máximo de projetos que eu posso fixar? | Não, não há limite para o número de projetos que você pode fixar. |
-| Os administradores podem designar essa landing page para seus usuários? | Não, os administradores não podem designar a landing page em nome de seus usuários. Os usuários individuais devem ativar a alternância. |
+| Os administradores podem designar essa página de aterrissagem para seus usuários? | Não, os administradores não podem designar a página de aterrissagem em nome de seus usuários. Os usuários individuais devem ativar a alternância. |
