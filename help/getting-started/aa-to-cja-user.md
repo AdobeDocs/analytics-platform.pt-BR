@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 95b422ac44e2a25dfaa2198098185fe71c1fb204
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1457'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Muito do que você conhece no lado dos relatórios não mudou.
 
 * Você ainda pode usar o potencial do [Analysis Workspace](/help/analysis-workspace/home.md) para analisar seus dados. O Espaço de trabalho opera da mesma forma que no Adobe Analytics tradicional.
 * A mesma versão de [Painéis do Adobe Analytics](/help/mobile-app/home.md) está disponível e funciona de forma semelhante entre o CJA e o Analytics tradicional.
-* O [Report Builder](/help/report-builder/report-buider-overview.md) tem uma nova interface e é executado no MS Windows, no MacOS e na versão da Web do Excel. (Antes desta versão do Report Builder, você não podia usar o no Mac a menos que o executasse no VMware.) Esta versão ainda não oferece suporte à solicitação de dados AA tradicional.
+* O [Report Builder](/help/report-builder/report-buider-overview.md) tem uma nova interface e é executado no MS Windows, no MacOS e na versão da Web do Excel. (Antes dessa versão do Report Builder, você não podia usá-lo no Mac a menos que o executasse no VMware.) Essa versão ainda não oferece suporte à solicitação tradicional de dados do AA.
 
 ## Alterações nos relatórios
 
@@ -68,7 +68,7 @@ Com essa flexibilidade, você pode encontrar situações em que um único campo 
 
 A Adobe renomeou o componente “segmentos” como “filtros” para alinhar-se melhor aos padrões do setor e fornecer uma melhor distinção com segmentos na Adobe Experience Platform.
 
-[!UICONTROL Customer Journey Analytics] O não usa mais eVars, props ou eventos e, em vez disso, usa o nome do campo Experience Platform schema para o qual foram mapeados. Com essa alteração, nenhum dos segmentos existentes no Adobe Analytics é compatível com o [!UICONTROL Customer Journey Analytics]. Se você quiser mover segmentos existentes do Adobe Analytics para o Customer Journey Analytics, assista ao vídeo a seguir:
+O [!UICONTROL Customer Journey Analytics] não usa mais eVars, propriedades ou eventos; em vez disso, ele usa o nome do campo do esquema da Experience Platform para o qual foram mapeados. Com essa alteração, nenhum dos segmentos existentes no Adobe Analytics é compatível com o [!UICONTROL Customer Journey Analytics]. Se você quiser mover segmentos existentes do Adobe Analytics para o Customer Journey Analytics, assista ao vídeo a seguir:
 
 >[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 
