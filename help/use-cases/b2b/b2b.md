@@ -4,9 +4,9 @@ description: Saiba como adicionar dados baseados em conta como um conjunto de da
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2b21d6e4e092c33947220b2d22a8a757407fabb
+source-git-commit: f7d50753f4c6d64492682d7c1269a4d45aea8a31
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '853'
 ht-degree: 93%
 
 ---
@@ -38,12 +38,6 @@ Criar seu próprio esquema para a tabela de [pesquisa](/help/getting-started/cja
 ## 2. Criar conjunto de dados de pesquisa (Experience Platform)
 
 Depois de criar o esquema, é necessário criar um conjunto de dados de pesquisa a partir dele, na Experience Platform. Esse conjunto de dados de pesquisa contém informações de marketing a nível de conta, como: nome da empresa, número total de funcionários, nome do domínio, a que setor pertencem, receita anual, se são clientes atuais da Experience Platform ou não, em que estágio de vendas estão, qual equipe dentro da conta está usando o CJA etc.
-
->[!IMPORTANT]
->
->O CJA não aceita números inteiros em conjuntos de dados de pesquisa. Se você adicionar os campos inteiros no esquema XDM para o conjunto de dados de pesquisa, não será possível usar esses números inteiros como métricas ou métricas calculadas. Por exemplo, se annualRevenue ou totalEmployees forem definidos como inteiros, eles serão exibidos como &quot;0&quot; nos relatórios no CJA. No entanto, se você atribuí-los como strings, poderá usá-los como informações de pesquisa.
-
-Por exemplo, annualRevenue ou totalEmployees são definidos como um inteiro no exemplo a seguir - é por isso que estão mostrando &quot;0&quot; no CJA.
 
 1. Na Adobe Experience Platform, acesse **[!UICONTROL Gerenciamento de dados > Conjuntos de dados]**.
 1. Clique em **[!UICONTROL + Criar conjunto de dados]**.
@@ -96,4 +90,4 @@ Por exemplo, encontre respostas para as perguntas apresentadas na introdução:
 * Quantos funcionários estão mapeados para uma ID de conta específica?
 * A que setor uma ID de conta pertence?
 
-![](../assets/project-lookup.png)
+![project-lookup2](https://git.corp.adobe.com/storage/user/5902/files/348183a8-343c-497e-b270-4fc02b32cb9e)
