@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
+workflow-type: tm+mt
+source-wordcount: '1136'
+ht-degree: 91%
 
 ---
 
@@ -40,6 +40,24 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 | [Texto](/help/analysis-workspace/visualizations/text.md) | Permite adicionar texto definido pelo usuário ao Espaço de trabalho Útil para adicionar contexto à análise e aos insights, além de aproveitar as descrições do painel/da visualização |
 | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md) | Exibe dados hierárquicos (estruturados em formato de árvore) como um conjunto de retângulos aninhados. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md) | Usa círculos para descrever a sobreposição de métrica de até três filtros. |
+
+## Personalizar configurações de visualização
+
+Você pode personalizar as configurações de visualização para uma visualização individual, ou para todas as visualizações que criar.
+
+### Personalizar configurações de visualização para uma única visualização
+
+Para acessar [!UICONTROL Configurações de visualização] para uma visualização individual:
+
+1. No Analysis Workspace, passe o mouse sobre a visualização cujas configurações você deseja personalizar.
+
+1. Clique no ícone de engrenagem.
+
+   Cada tipo de visualização tem configurações exclusivas que podem ser personalizadas. Para obter informações sobre as configurações disponíveis, consulte [Configurações](#settings).
+
+### Personalizar configurações de visualização para todas as visualizações que você criar
+
+Você pode personalizar as configurações de todas as visualizações criadas. Para obter mais informações, consulte [Preferências do usuário](/help/analysis-workspace/user-preferences.md).
 
 ## Configurações {#settings}
 
