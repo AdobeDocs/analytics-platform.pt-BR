@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Customer Journey Analytics (CJA) e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: f3f24c0a426d22184d2e7c18886d201c290ad18e
+source-git-commit: aff7b978382446e705d6507dbaa07790bd1dd2ae
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 99%
+source-wordcount: '835'
+ht-degree: 98%
 
 ---
 
@@ -83,6 +83,7 @@ ht-degree: 99%
       + Pastas no Espaço de trabalho {#workspace-folders}
          + [Sobre pastas no Espaço de trabalho](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Criar pastas e subpastas](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Excluir pastas](../analysis-workspace/build-workspace-project/workspace-folders/delete-folders.md)
          + [Adicionar Projetos](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
          + [Remover um projeto](../analysis-workspace/build-workspace-project/workspace-folders/remove-projects.md)
          + [Salvar um novo projeto](../analysis-workspace/build-workspace-project/workspace-folders/save-new-project-folder.md)
@@ -177,6 +178,7 @@ ht-degree: 99%
    + [Trabalhar com filtros](../report-builder/work-with-filters.md)
    + [Filtrar dimensões](../report-builder/filter-dimensions.md)
    + [Gerenciar blocos de dados](../report-builder/manage-reportbuilder.md)
+   + [Agendar pastas de trabalho](../report-builder/schedule-reportbuilder.md)
    + [Rótulos restritos](../report-builder/restricted-labels.md)
    + [Configurações do Report Builder](../report-builder/report-builder-settings.md)
 + Componentes {#cja-components}

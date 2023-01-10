@@ -3,25 +3,19 @@ description: Saiba como adicionar pastas ao Espaço de trabalho
 keywords: Analysis Workspace
 title: Adicionar pastas ao Espaço de trabalho
 feature: CJA Workspace Basics
-hide: true
-hidefromtoc: true
-source-git-commit: 62ee23c6a80cb5a3e055bbf1d198ab05adc44b7c
+exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
+source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '214'
 ht-degree: 100%
 
 ---
-
 
 # Adicionar projetos a pastas
 
 Você pode adicionar projetos a uma pasta na exibição de tabela ou de uma pasta.
 
->[!NOTE]
->
->Essa funcionalidade está atualmente na versão beta. Algumas telas podem mudar.
-
-## Na exibição de tabela
+## Na exibição de tabela {#table-view}
 
 Adicione projetos a uma pasta na exibição de tabela na página inicial.
 
@@ -47,7 +41,7 @@ Adicione projetos a uma pasta na exibição de tabela na página inicial.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-folders-updated.png)
 
-## De dentro de uma pasta
+## De dentro de uma pasta {#inside-folder}
 
 Você também pode adicionar projetos de dentro de uma pasta usando o link de reticências.
 
@@ -72,4 +66,8 @@ Você também pode adicionar projetos de dentro de uma pasta usando o link de re
 1. Clique em **Adicionar** para adicionar os projetos à pasta.
 
    ![](/help/analysis-workspace/build-workspace-project/assets/move-added-items.png)
-Somente administradores podem adicionar projetos à Pasta da empresa ou criar um novo projeto e salvá-lo na Pasta da empresa
+
+
+>[!NOTE]
+>
+>Somente administradores podem adicionar projetos à Pasta da empresa ou criar um novo projeto e salvá-lo na Pasta da empresa
