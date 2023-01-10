@@ -4,9 +4,9 @@ description: É possível definir preferências gerais e de projeto para usuári
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 652ae043f504ff71e8ed469a33f2ef4ebf1c7d04
+source-git-commit: 0031f27412e7997f8c9b9d2d11c7ecbcbe63de03
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2439'
 ht-degree: 50%
 
 ---
@@ -155,11 +155,6 @@ Clique nos títulos da seção vinculada para obter mais informações e context
 | **[Histograma](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | Número de buckets | Escolha o número de intervalos de dados (grupos) na visualização. O número máximo de grupos é 50. <p>Para obter mais informações, consulte [Histograma](/help/analysis-workspace/visualizations/histogram.md).</p> |
 |  | Método de contagem | Escolha entre as seguintes opções: <ul><li>Ocorrência</li><li>Visita</li><li>Visitante</li></ul> <p>Por exemplo, quando usado em conjunto com exibições de página, você pode escolher exibições de página por visitante, exibições de página por visita ou exibições de página por ocorrência. Para ocorrências, “Ocorrências” é usada como a métrica do eixo “y” na tabela de forma livre.</p> |
-| **Mapa** |  |  |
-|  | Dimensão da plotagem | <ul><li>Latitude/longitude móvel</li><li>Dimensão geográfica</li></ul> |
-|  | Tipo de mapa | <ul><li>Propagações</li><li>Mapa de calor</li></ul> |
-|  | Tema de cor | Escolha Coral, Vermelho, Verde, Azul, Mapa de calor e Positivo/Negativo. |
-|  | Estilo do mapa | Escolha Básico, Ruas, Brilho, Claro, Escuro e Satélite. |
 | **[Mudança de resumo](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | Valor | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Alteração na porcentagem</li><li>Diferença bruta</li></ul> |
 |  | Porcentagens | Exibe valores em porcentagens para as visualizações do Resumo de alterações. |
