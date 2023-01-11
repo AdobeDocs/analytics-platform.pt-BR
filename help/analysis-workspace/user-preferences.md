@@ -4,7 +4,7 @@ description: É possível definir preferências gerais e de projeto para usuári
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 0031f27412e7997f8c9b9d2d11c7ecbcbe63de03
+source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
 workflow-type: tm+mt
 source-wordcount: '2439'
 ht-degree: 50%
@@ -39,7 +39,7 @@ As preferências gerais se aplicam à experiência do CJA no navegador.
 | --- | --- |
 | Landing page | Escolha que página é exibida como a página padrão ao acessar o Adobe Analytics: <ul><li>Lista de projetos (padrão)</li><li>Projeto em branco</li><li>Projeto específico selecionado em uma lista</li></ul> |
 | Mostrar dicas | Exibe dicas em uma caixa azul na área inferior direita do Analysis Workspace. <p>Essa opção é ativada por padrão.</p> |
-| <span class="preview">Componentes exibidos em grupos do painel esquerdo</span> | Escolha quantos de cada componente serão exibidos no menu Componentes no painel à esquerda. <p>Se você escolher 0, o componente não estará mais acessível no painel esquerdo dos espaços de trabalho.</p><p>Por padrão, 5 componentes são exibidos para cada um dos seguintes:</p> <ul><li>Dimensões</li><li>Métricas</li><li>Filtros</li><li>Intervalos de data</li></ul> <p>Para obter mais informações sobre Componentes no Analysis Workspace, consulte [Visão geral dos componentes](/help/components/overview.md).</p> |
+| Componentes exibidos em grupos do painel esquerdo | Escolha quantos de cada componente serão exibidos no menu Componentes no painel à esquerda. <p>Se você escolher 0, o componente não estará mais acessível no painel esquerdo dos espaços de trabalho.</p><p>Por padrão, 5 componentes são exibidos para cada um dos seguintes:</p> <ul><li>Dimensões</li><li>Métricas</li><li>Filtros</li><li>Intervalos de data</li></ul> <p>Para obter mais informações sobre Componentes no Analysis Workspace, consulte [Visão geral dos componentes](/help/components/overview.md).</p> |
 
 ## Preferências do projeto
 
@@ -53,7 +53,7 @@ Clique nos títulos de preferência vinculados para obter mais informações e c
 | --- | --- | --- |
 | **Exibir** |  |  |
 |  | [Densidade da exibição](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=pt-BR) | Escolha quanto conteúdo será exibido na tela, reduzindo o preenchimento vertical do painel à esquerda, em tabelas de forma livre e de coorte. <ul><li>Compacto</li><li>Confortável</li><li>Expandido (padrão)</li></ul> |
-|  | [Paleta de cores](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=pt-BR) | Escolha a paleta de cores da visualização usada no Analysis Workspace. <ul><li>Paletas fornecidas pela Adobe (padrão)</li><li><span class="preview">Paleta de formatação condicional </span></li><li><span class="preview">Paleta para cima/para baixo (divergente)</span><li>Paletas definidas pelo cliente</li></ul> |
+|  | [Paleta de cores](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=pt-BR) | Escolha a paleta de cores da visualização usada no Analysis Workspace. <ul><li>Paletas fornecidas pela Adobe (padrão)</li><li>Paleta de formatação condicional </li><li>Paleta para cima/para baixo (divergente)<li>Paletas definidas pelo cliente</li></ul> |
 | **Dados** |  |  |
 |  | [Conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=pt-BR#report-suite) | Escolha de onde as tabelas e as visualizações derivam seus dados. <ul><li>Mais recente (padrão)</li><li>Conjunto de relatórios específico selecionado em uma lista</li></ul> |
 |  | [Calendário](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=pt-BR#calendar) | Selecione de uma lista de: <ul><li>Intervalos fornecidos pela Adobe (o padrão é Este mês)</li><li>Intervalos definidos pelo cliente</li></ul> |

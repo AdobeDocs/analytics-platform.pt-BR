@@ -4,10 +4,10 @@ title: Salvar projetos
 feature: CJA Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: b35520d22fdd6ee39972e3500b3d6968c2dfeadd
+source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 42%
+source-wordcount: '726'
+ht-degree: 39%
 
 ---
 
@@ -32,17 +32,22 @@ Para salvar manualmente um projeto:
    | **[!UICONTROL Salvar como]** | Crie um duplicado do seu projeto. O projeto original não será afetado. |
    | **[!UICONTROL Salvar como modelo]** | Salve seu projeto como um [modelo personalizado](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=pt-BR) que fica disponível para sua organização em **[!UICONTROL Projeto > Novo]** |
 
-   ![](assets/save-project.png)
-
 ## Salvar automaticamente {#Autosave}
 
 Todos os projetos no Analysis Workspace são salvos automaticamente a cada 2 minutos no computador local. Isso inclui projetos recém-criados que ainda não foram salvos manualmente.
 
 * **Novos projetos:** Mesmo que os novos projetos sejam salvos automaticamente, você deve salvar cada novo projeto manualmente na primeira vez. A Analysis Workspace solicita que você salve novos projetos manualmente ao alternar para outro projeto, fechar a guia do navegador e assim por diante.
 
-   Se, por qualquer motivo, você perder inesperadamente o acesso a um projeto recém-criado antes de salvá-lo manualmente, uma versão de recuperação do seu projeto será salva na página inicial da Analysis Workspace em uma pasta chamada `Recovered Projects (Last 7 Days)`.
+   Se, por qualquer motivo, você perder inesperadamente o acesso a um projeto recém-criado antes de salvá-lo manualmente, uma versão de recuperação do seu projeto será salva na página inicial da Analysis Workspace em uma pasta chamada `Recovered Projects (Last 7 Days)`. Você deve restaurar o projeto recuperado e salvá-lo manualmente em um local desejado.
 
-   ![](assets/recovered-folder.png)
+   Para restaurar um projeto recuperado:
+
+   1. Vá para o [!UICONTROL **Projetos recuperados**] na página de aterrissagem do Analysis Workspace.
+
+      ![](assets/recovered-folder.png)
+
+   1. Abra o projeto e salve-o no local desejado.
+
 
 * **Projetos existentes:** Se, por qualquer motivo, você deixar um projeto com alterações que ainda não foram salvas automaticamente, a Analysis Workspace solicitará que você salve as alterações ou fornecerá uma mensagem de aviso.
 
