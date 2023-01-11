@@ -2,10 +2,10 @@
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 67489fc6e9c0733589bccdd136837db8caca14a2
-workflow-type: ht
-source-wordcount: '1112'
-ht-degree: 100%
+source-git-commit: 3c2361069e2a4934c7f6d616f8223bbba1b410ac
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 98%
 
 ---
 
@@ -69,12 +69,12 @@ O contêiner Pessoa inclui cada visita e visualização de página de visitante 
 
 O contêiner Sessão permite identificar as interações de página, campanhas ou conversões de uma sessão da específica. O contêiner Sessão é o mais usado porque capta comportamentos para a sessão de visita inteira depois que a regra é atendida e permite definir quais sessões você deseja incluir ou excluir na criação e aplicação de um filtro. Ele pode ajudá-lo a responder a estas perguntas:
 
-* Quantos visitantes visualizaram a seção Notícias e Esportes na mesma sessão?
+* Quantas sessões se envolveram com fontes de dados da Web e do Call Center?
 * Quais páginas contribuíram para uma conversão bem-sucedida em uma venda?
 
 Os contêineres Sessão incluem valores de acordo com a ocorrência por visita:
 
-* Número da sessão
+* Tipo de sessão
 * Página de entrada
 * Frequência de Retorno
 * Métricas de participação
