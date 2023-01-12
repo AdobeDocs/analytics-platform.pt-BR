@@ -3,10 +3,10 @@ description: É possível exibir anomalias em uma tabela ou em um gráfico de li
 title: Exibir anomalias no Analysis Workspace
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e62261d1d440c0a85e4cab95611c6e6272de6724
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 14%
 
 ---
 
@@ -16,30 +16,53 @@ ht-degree: 100%
 
 ## Exibir anomalias em uma tabela {#section_869A87B92B574A38B017A980ED8A29C5}
 
-Em uma Tabela de forma livre da série de tempo, cada linha agora é sinalizada automaticamente com uma interrogação cinza-escuro se uma anomalia de dados foi detectada.
+É possível exibir anomalias em uma Tabela de forma livre da série de tempo.
 
-![](assets/anomaly_detected.png)
+1. Selecione o ícone de configurações de coluna no cabeçalho da coluna e verifique se a variável [!UICONTROL **Anomalias**] é selecionada na lista de opções. Para obter mais informações, consulte [Configurações de coluna](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
 
-A linha cinza vertical em cada linha indica o valor esperado. Ao passar o mouse sobre a interrogação, é indicado como a anomalia difere do valor esperado (em + ou - %).
+1. Clique fora do menu de configurações para exibir a tabela atualizada.
+
+   ![](assets/anomaly_detected.png)
+
+1. As anomalias são mostradas na tabela como a seguir:
+
+   A **triângulo cinza escuro** é exibido no canto superior direito de cada linha, onde uma anomalia de dados é detectada.
+
+   O colorido **linha vertical** em cada linha indica o valor esperado. O colorido **área sombreada** em cada linha indica o valor real. A forma como a linha (valor esperado) se compara com a área sombreada (valor real) determina se há uma anomalia. (Uma observação é considerada anômala com base nas técnicas estatísticas avançadas descritas em [Técnicas estatísticas usadas na detecção de anomalias](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md).)
+
+1. Selecione o triângulo cinza no canto superior direito de uma linha para exibir detalhes sobre a anomalia. Mostra a extensão (em percentagem) em que o valor real diverge acima ou abaixo do valor esperado.
 
 ## Exibir anomalias em um gráfico de linhas {#section_7C1192AFDB4345A8A2CCFB3AE0C47D82}
 
-O gráfico de linhas mostra a faixa de confiança verde-claro com os valores anômalos (pontos brancos).
+Os gráficos de linha são a única visualização que permite visualizar anomalias.
 
-Ao clicar em um ponto branco, ele ficará verde e exibirá:
+Para exibir anomalias em um gráfico de linhas:
 
-* A data de ocorrência da anomalia
-* O valor bruto da anomalia
-* O valor percentual superior ou inferior ao valor esperado, que é representado pela linha sólida verde.
+1. Selecione o ícone de configurações no cabeçalho da visualização e verifique se a variável [!UICONTROL **Mostrar anomalias**] é selecionada na lista de opções. Para obter mais informações, consulte [Linha](/help/analysis-workspace/visualizations/line.md).
 
-<!--* The Analyze link to start [Contribution Analysis](/help/analysis-workspace/virtual-analyst/contribution-analysis/ca-tokens.md).-->
+1. (Opcional) Para permitir que o intervalo de confiança dimensione o gráfico, selecione o ícone de configurações no cabeçalho da visualização e selecione a opção , **[!UICONTROL Permitir que as anomalias dimensionem o eixo Y]**.
 
-![](assets/anomaly_linechart.png)
+   Essa opção não é selecionada por padrão porque, às vezes, pode tornar o gráfico menos legível.
 
-Se você tiver várias métricas no gráfico de linha, podemos mostrar somente as anomalias e você precisa passar o mouse sobre cada uma delas para ver a faixa de confiança para a métrica.
+1. Clique fora do menu de configurações para exibir o gráfico de linhas atualizado.
 
-O intervalo de confiança da Detecção de anomalias não dimensiona automaticamente o eixo Y de uma visualização para tornar potencialmente o gráfico mais legível.
+   ![](assets/anomaly_linechart.png)
 
-Você tem a opção de permitir o dimensionamento do intervalo de confiança no gráfico. Clique no ícone Configurações (engrenagem) e marque **[!UICONTROL Permitir que a detecção de anomalias dimensione o eixo Y]**.
+   As anomalias são mostradas no gráfico de linhas da seguinte maneira:
 
-![](assets/scale-y-axis.png)
+   A **ponto branco** aparece na linha sempre que uma anomalia de dados é detectada. (Uma observação é considerada anômala com base nas técnicas estatísticas avançadas descritas em [Técnicas estatísticas usadas na detecção de anomalias](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md).)
+
+   O **área sombreada clara** é a faixa de confiança, ou o intervalo esperado, em que os valores devem ocorrer. Qualquer valor que não esteja nesse intervalo esperado é uma anomalia.
+
+   Se você tiver várias métricas no gráfico de linhas, somente as anomalias serão mostradas e será necessário passar o mouse sobre cada anomalia para ver a faixa de confiança para essa métrica.
+
+   O **linha pontilhada** é o valor esperado exato.
+
+1. Clique em uma anomalia (ponto branco) para exibir as seguintes informações:
+
+   * A data em que a anomalia ocorreu
+
+   * O valor bruto da anomalia
+
+   * O valor percentual superior ou inferior ao valor esperado, que é representado pela linha sólida verde.
+
