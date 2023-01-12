@@ -4,16 +4,16 @@ description: Entenda como o CJA cria relatórios sobre hierarquias de dados.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '418'
-ht-degree: 100%
+source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 96%
 
 ---
 
 # Uso de arrays de objetos
 
-Alguns esquemas da plataforma podem ter arrays de objetos. Um dos exemplos mais comuns seria um carrinho de compras, que contém vários produtos. Cada produto tem um nome, SKU, categoria, preço, quantidade e qualquer outra dimensão que você quiser rastrear. Todas essas facetas têm requisitos separados, mas todos devem se encaixar na mesma ocorrência.
+Alguns esquemas da plataforma podem ter arrays de objetos. O CJA oferece suporte à assimilação e ao relatório de arrays de objetos nos dados de evento, pesquisa e perfil. Um dos exemplos mais comuns seria um carrinho de compras, que contém vários produtos. Cada produto tem um nome, SKU, categoria, preço, quantidade e qualquer outra dimensão que você quiser rastrear. Todas essas facetas têm requisitos separados, mas todos devem se encaixar na mesma ocorrência.
 
 Em versões anteriores do Adobe Analytics, esse recurso era realizado usando a variável `products`. Era uma string concatenada separada por ponto-e-vírgula (`;`) para separar facetas de um produto, enquanto vírgulas (`,`) delineavam produtos. Era a única variável com suporte limitado a &quot;arrays de objetos&quot;. Variáveis multivalor, como variáveis de listas, podem oferecer suporte ao equivalente a arrays, mas não a &quot;arrays de objetos&quot;. O CJA amplia esse conceito ao oferecer suporte arbitrariamente a hierarquias profundas em uma única linha de dados, um recurso indisponível em qualquer versão anterior do Adobe Analytics.
 

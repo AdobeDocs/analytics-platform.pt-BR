@@ -4,10 +4,10 @@ description: Explica como assimilar públicos-alvo da AEP no Customer Journey An
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 100%
+source-wordcount: '937'
+ht-degree: 96%
 
 ---
 
@@ -88,6 +88,6 @@ Agora você pode criar relatórios sobre `audienceMembershipId`, `audienceMember
 * Você deve executar esse processo regularmente para que os dados do público-alvo sejam atualizados constantemente no CJA.
 * Você pode importar vários públicos-alvo em uma única conexão do CJA. Isso adiciona mais complexidade ao processo, mas é possível. Para que isso funcione, é necessário fazer algumas modificações no processo acima:
    1. Execute esse processo para cada público-alvo desejado em sua coleção de públicos-alvo no RTCP.
-   1. Ao executar as transformações da saída do trabalho de exportação, será necessário criar uma lista de `audienceMembershipId(s)`, pois uma única ID de pessoa do CJA pode pertencer a vários públicos-alvo. Em algum ponto no futuro, o CJA oferecerá suporte a matrizes/matrizes de objetos em conjuntos de dados de perfil. Quando esses objetos forem aceitos, usar uma matriz de objetos para a variável `audienceMembershipId` ou `audienceMembershipIdName` será a melhor opção. Entretanto, extraia todas as IDs de público-alvo atuais para cada ID de perfil na saída do trabalho de exportação (com o status “realizado” ou “inserido”) e as coloca em uma string de valores separados por vírgula (ou seja, `<id1>,<id2>,...`).  Se houver uma ID de público-alvo com o status de “encerrado”, verifique se ela NÃO está na lista.  Se quiser manter a associação do nome intuitivo com a ID, é possível anexá-la ao final de cada ID na lista (juntamente com quaisquer outros metadados).
+   1. O CJA é compatível com arrays/arrays de objetos em conjuntos de dados de perfil. Uso de um [matriz de objetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en) para audienceMembershipId ou audienceMembershipIdName é a melhor opção.
    1. Na visualização de dados, crie uma nova dimensão usando a transformação de Substring no campo `audienceMembershipId` para converter a string de valores separados por vírgula em uma matriz. OBSERVAÇÃO: atualmente, há um limite de 10 valores na matriz.
    1. Agora você pode relatar sobre essa nova dimensão `audienceMembershipIds` no Espaço de trabalho do CJA.
