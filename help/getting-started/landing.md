@@ -4,10 +4,10 @@ title: Página inicial do Customer Journey Analytics
 role: User, Admin
 feature: CJA Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 617be3cad41fd4a4fe9d26fc5253e7af801c7bd4
+source-git-commit: 88f38de837a23f9b0833c5c6b534b3ed567207a6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 55%
+source-wordcount: '1424'
+ht-degree: 49%
 
 ---
 
@@ -67,6 +67,18 @@ A página de aterrissagem para destaques do Customer Journey Analytics [!DNL Ana
 | Ícone Personalizar tabela | Seleciona quais colunas exibir na tabela. Para adicionar ou remover colunas da lista de projetos, clique no ícone de coluna (![Aterrissando tudo](assets/select-column.png) ) no canto superior direito, em seguida, selecione ou desmarque os títulos das colunas. |
 | MOSTRAR: Pastas e projetos ou todos os projetos | Altera a configuração de exibição na tabela para mostrar pastas e projetos de acordo com a organização da pasta **ou** mostrar todos os seus projetos em uma lista não organizada. |
 | &lt; (Botão voltar) | Retorna à configuração de página inicial mais recente em um projeto do Workspace. A configuração de página que você tinha ao sair da landing page persistirá ao retornar. |
+
+### Descontinuação da página do Gerenciador de projetos {#deprecate-pm-page}
+
+Com o lançamento da nova landing page, descontinuamos o Gerenciador de projetos, conforme listado no Gerenciador de componentes. A nova landing page lida com toda a funcionalidade da antiga página do Gerenciador de projetos e muito mais.
+
+Um caso de uso comum para a página Gerenciador de projetos era exibir todos os seus projetos. Para exibir todos os projetos na nova página de aterrissagem usando o painel de filtros, selecione **OUTROS FILTROS** e depois selecione **Mostrar tudo**.
+
+![Outros filtros](assets/other-filters.png)
+
+Se você estiver na visualização &quot;Pastas e projetos&quot;, aparecerá uma modal perguntando se deseja alternar para a visualização &quot;Todos os projetos&quot;, o que facilita a visualização de todos os projetos fora de qualquer pasta em que eles possam estar organizados.   Selecionar **Alternar para a exibição &quot;Todos os projetos&quot;** para visualizar melhor todos os projetos aos quais você tem acesso.
+
+![Alternar para Todos os projetos](assets/switch-all-projects-view.png)
 
 ## Navegue pela guia Aprendizagem {#navigate-learning}
 
