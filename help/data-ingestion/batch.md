@@ -3,13 +3,13 @@ title: Assimilar e usar dados em lote
 description: Explica como assimilar e usar dados em lote no Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 6%
+source-wordcount: '1954'
+ht-degree: 5%
 
 ---
-
 
 # Assimilar e usar dados em lote
 
@@ -29,19 +29,19 @@ Para isso, é necessário:
 
 >[!NOTE]
 >
->Este é um guia simplificado sobre como assimilar dados em lote no Adobe Experience Platform e usar no Customer Journey Analytics.  É altamente recomendável estudar as informações adicionais quando referidas.
+>Este é um guia simplificado sobre como assimilar dados em lote no Adobe Experience Platform e usar no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
 
 ## Configurar um esquema e um conjunto de dados
 
 Para assimilar dados no Adobe Experience Platform, primeiro defina quais dados deseja coletar. Todos os dados assimilados no Adobe Experience Platform devem estar em conformidade com uma estrutura padrão e desnormalizada para que sejam reconhecidos e utilizados pelos recursos e capacidades downstream. O Experience Data Model (XDM) é a estrutura padrão que fornece essa estrutura no formato de schemas.
 
-Após definir um esquema, você usará um ou mais conjuntos de dados para armazenar e gerenciar a coleta de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas).
+Após definir um esquema, use um ou mais conjuntos de dados para armazenar e gerenciar a coleta de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas).
 
 Todos os dados assimilados no Adobe Experience Platform devem estar em conformidade com um esquema predefinido antes que possam ser mantidos como um conjunto de dados.
 
 ### Configurar um esquema
 
-Para esse início rápido, supomos que você queira coletar alguns dados de fidelidade, por exemplo, ID de fidelidade, pontos de fidelidade e status de fidelidade.
+Para esse início rápido, você deseja coletar alguns dados de fidelidade, por exemplo, id de fidelidade, pontos de fidelidade e status de fidelidade.
 Para isso, primeiro defina um schema que modele esses dados.
 
 Para configurar seu esquema:
@@ -89,7 +89,7 @@ Para configurar seu esquema:
 
    ![Objeto de identificação](./assets/identifcation-loyalty-field.png)
 
-   Isso adicionará recursos de identificação ao esquema. No seu caso, você deseja identificar as informações de fidelidade usando o endereço de email dos dados em lote.
+   Isso adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar as informações de fidelidade usando o endereço de email dos dados em lote.
 
    Selecionar **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -99,13 +99,13 @@ Para configurar seu esquema:
 
    Você está especificando o endereço de email como a identidade que o serviço Adobe Experience Platform Identity pode usar para combinar (compilar) perfis.
 
-   Selecionar **[!UICONTROL Aplicar]**. Você verá um ícone de impressão digital no atributo de email.
+   Selecionar **[!UICONTROL Aplicar]**. Você vê que um ícone de impressão digital aparece no atributo de email.
 
    Selecione **[!UICONTROL Salvar]**.
 
 7. Selecione o nível raiz do esquema (com o nome do esquema) e selecione a variável **[!UICONTROL Perfil]** switch.
 
-   Você será solicitado a habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados serão mesclados ao Perfil do cliente em tempo real.
+   Você é solicitado a habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
    Consulte [Ative o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) para obter mais informações.
 
@@ -147,7 +147,7 @@ Para configurar seu conjunto de dados:
 
 7. Selecione o **[!UICONTROL Perfil]** switch.
 
-   Você será solicitado a habilitar o conjunto de dados para o perfil. Depois de habilitado, o conjunto de dados enriquecerá os perfis do cliente em tempo real com seus dados assimilados.
+   Você é solicitado a habilitar o conjunto de dados para perfil. Depois de habilitado, o conjunto de dados enriquece os perfis do cliente em tempo real com seus dados assimilados.
 
    >[!IMPORTANT]
    >
@@ -160,7 +160,7 @@ Consulte [Guia da interface do usuário de conjuntos de dados](https://experienc
 
 ## Usar fluxos de trabalho
 
-Você usa a funcionalidade de workflow para fazer upload de seus dados em lote no Adobe Experience Platform. O exemplo de arquivo em lote que estamos usando é um arquivo CSV com o seguinte conteúdo:
+Você usa a funcionalidade de workflow para fazer upload de seus dados em lote no Adobe Experience Platform. O exemplo de arquivo em lote que você está usando é um arquivo CSV com o seguinte conteúdo:
 
 ```
 email,loyaltyID,points,status
@@ -182,7 +182,7 @@ Para usar workflows:
 
 3. No [!UICONTROL Mapear CSV para esquema XDM] na tela [!UICONTROL Detalhes do fluxo de dados] etapa:
 
-   Selecionar **[!UICONTROL Conjunto de dados existente]**, selecione o na lista de conjuntos de dados e nomeie o [!UICONTROL Nome do fluxo de dados].
+   Selecionar **[!UICONTROL Conjunto de dados existente]**, selecione seu conjunto de dados na lista do conjunto de dados e nomeie [!UICONTROL Nome do fluxo de dados].
 
    ![Fluxo de dados](./assets/workflow-dataflowdetail.png)
 
@@ -190,7 +190,7 @@ Para usar workflows:
 
 4. No [!UICONTROL Selecionar dados] etapa:
 
-   Arraste e solte ou selecione **[!UICONTROL Escolher arquivos]** para selecionar seu arquivo CSV com dados de fidelidade. Você verá uma pré-visualização dos dados de fidelidade.
+   Arraste e solte ou selecione **[!UICONTROL Escolher arquivos]** para selecionar seu arquivo CSV com dados de fidelidade. Você vê uma pré-visualização dos dados de fidelidade.
 
    ![Selecionar dados](./assets/workflow-selectdata.png)
 
@@ -198,7 +198,7 @@ Para usar workflows:
 
 5. No [!UICONTROL Mapeamento] etapa:
 
-   Mapeie seus dados do arquivo CSV para os dados no esquema. Com o AI, a funcionalidade do workflow tentará mapear automaticamente os campos de dados em lote para os campos do schema.
+   Mapeie seus dados do arquivo CSV para os dados no esquema. Usando o AI, a funcionalidade do workflow tenta mapear automaticamente os campos de dados em lote para os campos do schema.
 
    ![Mapear os dados](./assets/workflow-dataflow-mapping.png)
 
@@ -206,9 +206,9 @@ Para usar workflows:
 
    ![Visualizar mapeamento](./assets/workflow-dataflow-mapping-preview.png)
 
-6. Selecionar **[!UICONTROL Concluir]** para começar a assimilar seus dados em lote na Adobe Experience Platform.
+6. Selecionar **[!UICONTROL Concluir]** para começar a assimilar os dados em lote no Adobe Experience Platform.
 
-Consulte [Mapear um arquivo CSV para cima de um esquema XDM existente](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html) para obter mais informações sobre como mapear dados quando os dados recebidos não são compatíveis com o esquema XDM, use modelos de mapeamento, use o campo calculado para garantir que os dados em lote estão em conformidade com o que o esquema espera, etc.
+Consulte [Mapear um arquivo CSV para cima de um esquema XDM existente](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html) para obter mais informações sobre como mapear dados quando os dados recebidos não forem compatíveis com o esquema XDM, use modelos de mapeamento, use campo calculado para garantir que os dados em lote estão em conformidade com o esquema e muito mais.
 
 
 ## Configurar uma conexão
@@ -246,7 +246,7 @@ Para criar sua conexão:
 
       - Selecione um [!UICONTROL ID da pessoa] nas identidades disponíveis definidas nos esquemas do conjunto de dados no Adobe Experience Platform.
 
-      - Selecione a fonte de dados correta no [!UICONTROL Tipo de fonte de dados] lista. Se você especificar **[!UICONTROL Outras]** em seguida, adicione uma descrição para a fonte de dados.
+      - Selecione a fonte de dados correta no [!UICONTROL Tipo de fonte de dados] lista. Se você especificar **[!UICONTROL Outras]**, em seguida, adicione uma descrição para a fonte de dados.
 
       - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
@@ -316,11 +316,11 @@ Para criar o projeto:
 
    ![Área de trabalho Selecionar visualização de dados](./assets/cja-projects-3.png).
 
-5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e também fazem parte do programa de fidelidade que coleta pontos de fidelidade.
+5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos de fidelidade.
 
    ![Workspace - Primeiro relatório](./assets/cja-projects-5.png)
 
-Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) para obter mais informações sobre como criar projetos e criar a análise usando componentes, visualização e painéis.
+Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) para obter mais informações sobre como criar projetos e sua análise usando componentes, visualizações e painéis.
 
 >[!SUCCESS]
 >

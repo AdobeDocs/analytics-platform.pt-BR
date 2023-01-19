@@ -3,13 +3,13 @@ title: Assimilar e usar dados da Adobe Analytics tradicional
 description: Explique como assimilar dados do Adobe Analytics tradicional
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1146'
 ht-degree: 10%
 
 ---
-
 
 # Assimilar e usar dados da Adobe Analytics tradicional
 
@@ -23,12 +23,12 @@ Este guia de início rápido explica como você pode usar os dados coletados pel
 >
 >- [Implementar o Analytics usando a extensão Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=pt-BR)
 >
->- [Implementar o Analytics usando Javascript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
+>- [Implementar o Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=en)
 
 
 Para isso, é necessário:
 
-- **Configurar um conector de origem do Adobe Analytics** no Adobe Experience Platform. Isso cuidará de assimilar seus dados atuais do Adobe Analytics em um conjunto de dados no Adobe Experience Platform.
+- **Configurar um conector de origem do Adobe Analytics** no Adobe Experience Platform. Isso cuida da assimilação dos dados atuais do Adobe Analytics em um conjunto de dados no Adobe Experience Platform.
 
 - **Configurar uma conexão** em Customer Journey Analytics. Essa conexão deve (pelo menos) incluir o conjunto de dados do Adobe Experience Platform.
 
@@ -39,7 +39,7 @@ Para isso, é necessário:
 
 >[!NOTE]
 >
->Este é um guia simplificado sobre como assimilar dados, usando o conector de origem do Adobe Analytics, e usar esses dados no Customer Journey Analytics.  É altamente recomendável estudar as informações adicionais quando referidas.
+>Este é um guia simplificado sobre como assimilar dados, usando o conector de origem do Adobe Analytics, e usar esses dados no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
 
 
 ## Configurar um conector de origem do Adobe Analytics
@@ -48,7 +48,7 @@ O conector de origem do Adobe Analytics permite trazer os dados do conjunto de r
 
 Para criar um conector de origem do Adobe Analytics:
 
-1. Na interface do usuário da plataforma, selecione **[!UICONTROL Fontes]** no painel esquerdo.
+1. Na interface do usuário da plataforma, selecione **[!UICONTROL Fontes]**, no painel esquerdo.
 
 2. Selecionar **[!UICONTROL Aplicativos Adobe]** na lista de [!UICONTROL CATEGORIAS].
 
@@ -62,7 +62,7 @@ Para criar um conector de origem do Adobe Analytics:
 
    Selecione **[!UICONTROL Próximo]**.
 
-5. Selecionar **[!UICONTROL Esquema padrão]** como [!UICONTROL Esquema de destino]. O Adobe Experience Platform criará automaticamente o esquema e o conjunto de dados correspondente para mapear todos os campos padrão do conjunto de relatórios do Adobe Analytics selecionado.
+5. Selecionar **[!UICONTROL Esquema padrão]** como [!UICONTROL Esquema de destino]. O Adobe Experience Platform cria automaticamente o esquema e o conjunto de dados correspondente para mapear todos os campos padrão do conjunto de relatórios do Adobe Analytics selecionado.
 
    ![Esquema padrão](./assets/default-schema.png)
 
@@ -121,7 +121,7 @@ Para criar sua conexão:
 
       - Selecione um [!UICONTROL ID da pessoa] nas identidades disponíveis definidas nos esquemas do conjunto de dados no Adobe Experience Platform.
 
-      - Selecione a fonte de dados correta no [!UICONTROL Tipo de fonte de dados] lista. Se você especificar **[!UICONTROL Outras]** em seguida, adicione uma descrição para a fonte de dados.
+      - Selecione a fonte de dados correta no [!UICONTROL Tipo de fonte de dados] lista. Se você especificar **[!UICONTROL Outras]**, em seguida, adicione uma descrição para a fonte de dados.
 
       - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
@@ -191,20 +191,14 @@ Para criar o projeto:
 
    ![Área de trabalho Selecionar visualização de dados](./assets/cja-projects-3.png).
 
-5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e também fazem parte do programa de fidelidade que coleta pontos de fidelidade.
+5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos de fidelidade.
 
    ![Workspace - Primeiro relatório](./assets/cja-projects-5.png)
 
-Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) para obter mais informações sobre como criar projetos e criar a análise usando componentes, visualização e painéis.
+Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) para obter mais informações sobre como criar projetos e sua análise usando componentes, visualizações e painéis.
 
 
 >[!SUCCESS]
 >
 >Você concluiu todas as etapas. A partir da configuração do conector da fonte de dados do Adobe Analytics e da configuração desse conector para o conjunto de relatórios, os dados do Adobe Analytics são automaticamente carregados no Adobe Experience Platform. Você definiu uma conexão no Customer Journey Analytics para usar os dados do Adobe Analytics assimilados e outros dados. A definição da visualização de dados permite especificar qual dimensão e métricas usar e, por fim, criar seu primeiro projeto visualizando e analisando seus dados.
-
-
-
-
-
-
 

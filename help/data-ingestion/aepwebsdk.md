@@ -1,15 +1,15 @@
 ---
 title: Assimilar dados via Adobe Experience Platform Web SDK e Edge Network
-description: Explique como assimilar dados no Customer Jornada Analytics por meio do SDK da Web da Adobe Experience Platform e da Edge Network
+description: Explique como assimilar dados no Customer Journey Analytics por meio do SDK da Web da Adobe Experience Platform e da Edge Network
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '3591'
+source-wordcount: '3587'
 ht-degree: 8%
 
 ---
-
 
 # Assimilar dados via Adobe Experience Platform Web SDK e Edge Network
 
@@ -19,9 +19,9 @@ Para isso, é necessário:
 
 - **Configurar um esquema e um conjunto de dados** no Adobe Experience Platform para definir o modelo (esquema) dos dados que você deseja coletar e onde realmente coletar os dados (conjunto de dados).
 
-- **Configurar um conjunto de dados** para configurar a Rede de borda da Adobe Experience Platform para direcionar seus dados coletados para o conjunto de dados configurado no Adobe Experience Platform.
+- **Configurar um armazenamento de dados** para configurar a Rede de borda da Adobe Experience Platform para direcionar seus dados coletados para o conjunto de dados configurado no Adobe Experience Platform.
 
-- **Usar tags** para configurar regras e elementos de dados facilmente em relação aos dados na camada de dados do seu site e garantir que os dados sejam enviados para o conjunto de dados configurado na rede de borda do Adobe Experience Platform.
+- **Usar tags** para configurar regras e elementos de dados facilmente em relação aos dados na camada de dados do seu site. Em seguida, verifique se os dados são enviados para o armazenamento de dados configurado na Adobe Experience Platform Edge Network.
 
 - **Implantar e validar**. Tenha um ambiente em que possa interagir com o desenvolvimento de tags e, uma vez que tudo esteja validado, publique-o ao vivo no ambiente de produção.
 
@@ -33,20 +33,20 @@ Para isso, é necessário:
 
 >[!NOTE]
 >
->Este é um guia simplificado sobre como assimilar dados coletados de seu site no Adobe Experience Platform e usar no Customer Journey Analytics.  É altamente recomendável estudar as informações adicionais quando referidas.
+>Este é um guia simplificado sobre como assimilar dados coletados de seu site no Adobe Experience Platform e usar no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
 
 
 ## Configurar um esquema e um conjunto de dados
 
 Para assimilar dados no Adobe Experience Platform, primeiro defina quais dados deseja coletar. Todos os dados assimilados no Adobe Experience Platform devem estar em conformidade com uma estrutura padrão e desnormalizada para que sejam reconhecidos e utilizados pelos recursos e capacidades downstream. O Experience Data Model (XDM) é a estrutura padrão que fornece essa estrutura no formato de schemas.
 
-Após definir um esquema, você usará um ou mais conjuntos de dados para armazenar e gerenciar a coleta de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas).
+Após definir um esquema, use um ou mais conjuntos de dados para armazenar e gerenciar a coleta de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas).
 
 Todos os dados assimilados no Adobe Experience Platform devem estar em conformidade com um esquema predefinido antes que possam ser mantidos como um conjunto de dados.
 
 ### Configurar um esquema
 
-Você deseja rastrear o mínimo de dados de perfis que visitam seu site, por exemplo, nome de página, identificação etc.
+Você deseja rastrear o mínimo de dados de perfis que visitam seu site, por exemplo, nome de página e identificação.
 Para isso, primeiro defina um schema que modele esses dados.
 
 Para configurar seu esquema:
@@ -94,7 +94,7 @@ Para configurar seu esquema:
 
    ![Objeto de identificação](./assets/identification-field.png)
 
-   Isso adicionará recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a ID do Experience Cloud e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação do visitante (por exemplo, ID do cliente, ID de fidelidade etc.).
+   Isso adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a ID do Experience Cloud e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação do visitante (por exemplo, ID do cliente, ID de fidelidade).
 
    Selecionar **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -104,7 +104,7 @@ Para configurar seu esquema:
 
    Você está especificando a Experience Cloud Identity como a identidade primária que o serviço Adobe Experience Platform Identity pode usar para combinar (compilar) o comportamento dos perfis com a mesma ECID.
 
-   Selecionar **[!UICONTROL Aplicar]**. Você verá um ícone de impressão digital no atributo ecid.
+   Selecionar **[!UICONTROL Aplicar]**. Você vê que um ícone de impressão digital aparece no atributo ecid.
 
 7. Selecione o **[!UICONTROL email]** no objeto de identificação que você acabou de adicionar e selecione **[!UICONTROL Identidade]** e **[!UICONTROL Email]** do [!UICONTROL Namespace de identidade] na lista de [!UICONTROL Propriedades do campo] painel.
 
@@ -112,13 +112,13 @@ Para configurar seu esquema:
 
    Você está especificando o endereço de email como outra identidade que o serviço Adobe Experience Platform Identity pode usar para combinar (compilar) o comportamento dos perfis.
 
-   Selecionar **[!UICONTROL Aplicar]**. Você verá um ícone de impressão digital no atributo de email.
+   Selecionar **[!UICONTROL Aplicar]**. Você vê que um ícone de impressão digital aparece no atributo de email.
 
    Selecione **[!UICONTROL Salvar]**.
 
 8. Selecione o elemento raiz do esquema que exibe o nome dele e selecione o **[!UICONTROL Perfil]** switch.
 
-   Você será solicitado a habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados serão mesclados ao Perfil do cliente em tempo real.
+   Você é solicitado a habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
    Consulte [Ative o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) para obter mais informações.
 
@@ -132,7 +132,7 @@ Para configurar seu esquema:
 
 Você criou um schema mínimo que modela os dados que pode capturar de seu site. O schema permite que os perfis sejam identificados usando a Experience Cloud Identity e o endereço de email. Ao ativar o esquema para o perfil, você garante que os dados capturados de seu site sejam adicionados ao Perfil do cliente em tempo real.
 
-Ao lado dos dados de comportamento, você também pode capturar os dados do atributo de perfil do site (por exemplo, detalhes dos perfis que assinam um boletim informativo).
+Ao lado dos dados de comportamento, você também pode capturar os dados do atributo de perfil do site (por exemplo, detalhes de perfis que assinam um boletim informativo).
 
 Para capturar esses dados de perfil, você deve:
 
@@ -174,7 +174,7 @@ Para configurar seu conjunto de dados:
 
 7. Selecione o **[!UICONTROL Perfil]** switch.
 
-   Você será solicitado a habilitar o conjunto de dados para o perfil. Depois de habilitado, o conjunto de dados enriquecerá os perfis do cliente em tempo real com seus dados assimilados.
+   Você é solicitado a habilitar o conjunto de dados para perfil. Depois de habilitado, o conjunto de dados enriquece os perfis do cliente em tempo real com seus dados assimilados.
 
    >[!IMPORTANT]
    >
@@ -184,7 +184,7 @@ Para configurar seu conjunto de dados:
 
 Consulte [Guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR) para obter muito mais informações sobre como visualizar, visualizar, criar, excluir um conjunto de dados. E como ativar um conjunto de dados para o Perfil do cliente em tempo real.
 
-## Configurar um conjunto de dados
+## Configurar um armazenamento de dados
 
 Um armazenamento de dados representa a configuração do lado do servidor ao implementar os SDKs móveis e da Web do Adobe Experience Platform. Ao coletar dados com os SDKs da Adobe Experience Platform, os dados são enviados para a Rede de borda da Adobe Experience Platform. É o armazenamento de dados que determina para quais serviços os dados são encaminhados.
 
@@ -245,7 +245,7 @@ Selecione a tag criada recentemente na lista de [!UICONTROL Propriedades da tag]
 
 #### **Extensões**
 
-É necessário adicionar a extensão Adobe Platform Web SDK à tag para garantir que você possa enviar dados para o Adobe Experience Platform (por meio do armazenamento de dados).
+Adicione a extensão Adobe Platform Web SDK à tag para garantir que você possa enviar dados para o Adobe Experience Platform (por meio do armazenamento de dados).
 
 Para criar e configurar a extensão Adobe Experience Platform Web SDK:
 
@@ -265,7 +265,7 @@ Para criar e configurar a extensão Adobe Experience Platform Web SDK:
 
 Consulte [Configurar a extensão Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html) para obter mais informações.
 
-Você também deseja configurar a extensão do Serviço de ID do Experience Cloud para poder usar facilmente o Serviço de ID do Experience Cloud. O serviço de Experience Cloud ID identifica visitantes em todas as soluções da Adobe Experience Cloud.
+Você também deseja configurar a extensão do Serviço de ID do Experience Cloud para usar facilmente a ID do Experience Cloud. O serviço de Experience Cloud ID identifica visitantes em todas as soluções da Adobe Experience Cloud.
 
 Para criar e configurar a extensão do Serviço de ID do Experience Cloud:
 
@@ -283,9 +283,9 @@ Para criar e configurar a extensão do Serviço de ID do Experience Cloud:
 
 #### **Elementos de dados**
 
-Os elementos de dados são os blocos fundamentais do seu dicionário de dados (ou mapa de dados). Use elementos de dados para coletar, organizar e entregar dados em toda a tecnologia de marketing e anúncios. Você configurará elementos de dados na tag que são lidos a partir da camada de dados e podem ser usados para fornecer dados ao Adobe Experience Platform.
+Os elementos de dados são os blocos fundamentais do seu dicionário de dados (ou mapa de dados). Use elementos de dados para coletar, organizar e entregar dados em toda a tecnologia de marketing e anúncios. Você configura elementos de dados na tag que são lidos a partir da camada de dados e podem ser usados para fornecer dados ao Adobe Experience Platform.
 
-Há diferentes tipos de elementos de dados. Primeiro, você configurará um elemento de dados para capturar o nome da página que os visitantes estão visualizando em seu site.
+Há diferentes tipos de elementos de dados. Primeiro, você configura um elemento de dados para capturar o nome da página que os visitantes estão visualizando em seu site.
 
 Para definir um elemento de dados de nome de página:
 
@@ -331,7 +331,7 @@ Para definir um elemento de dados ECID:
 
    - Selecione **[!UICONTROL Salvar]**.
 
-Por fim, agora é possível mapear qualquer um dos elementos de dados específicos para o schema definido anteriormente. Você precisa definir outro elemento de dados que forneça uma representação do esquema XDM.
+Por fim, agora é possível mapear qualquer um dos elementos de dados específicos para o schema definido anteriormente. Você define outro elemento de dados que fornece uma representação do esquema XDM.
 
 Para definir um elemento de dados de objeto XDM:
 
@@ -351,7 +351,7 @@ Para definir um elemento de dados de objeto XDM:
 
    - Selecione o esquema da [!UICONTROL Esquema] lista.
 
-   - Mapeie o `identification > core > ecid` , definido em seu schema, no elemento de dados ECID. Selecione o ícone de aplicação para escolher facilmente o elemento de dados ECID na lista de elementos de dados.
+   - Mapeie o `identification > core > ecid` , definido em seu schema, no elemento de dados ECID. Selecione o ícone de cilindro para escolher facilmente o elemento de dados ECID na lista de elementos de dados.
 
       ![Selecionar elemento de dados ECID](./assets/pick-ecid-dataelement.png)
 
@@ -400,7 +400,7 @@ Para definir uma regra:
 
       - Selecionar **[!UICONTROL web.webpagedetails.pageViews]** do [!UICONTROL Tipo] lista.
 
-      - Selecione o ícone do dispositivo ao lado de  [!UICONTROL Dados XDM] e Selecione **[!UICONTROL XDM - Exibição de página]** na lista de elementos de dados.
+      - Selecione o ícone do cilindro ao lado de  [!UICONTROL Dados XDM] e Selecione **[!UICONTROL XDM - Exibição de página]** na lista de elementos de dados.
 
          ![Regra - Configuração de ação](./assets/action-pageview-xdm.png)
 
@@ -417,7 +417,7 @@ Para definir uma regra:
 
 Este é apenas um exemplo de definição de uma regra que envia dados XDM, contendo valores de outros elementos de dados, para o Adobe Experience Platform.
 
-Você pode usar as regras de várias maneiras em sua tag para manipular variáveis (utilizando os elementos de dados).
+Você pode usar as regras de várias maneiras na tag para manipular variáveis (usando os elementos de dados).
 
 Consulte [Regras de ](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=pt-BR) para obter mais informações.
 
@@ -443,13 +443,13 @@ Para criar e publicar sua tag:
 
    - Selecionar **[!UICONTROL Salvar e criar no desenvolvimento]**.
 
-   Isso salvará e criará a tag para o seu ambiente de desenvolvimento. Um ponto verde indica uma criação bem-sucedida da tag no ambiente de desenvolvimento.
+   Isso salva e cria a tag para o seu ambiente de desenvolvimento. Um ponto verde indica uma criação bem-sucedida da tag no ambiente de desenvolvimento.
 
 4. Você pode selecionar **[!UICONTROL ...]** para recriar a biblioteca ou mover a biblioteca para um ambiente de preparo ou produção.
 
    ![Publicar - Criar biblioteca](./assets/build-library.png)
 
-As Tags do Adobe Experience Platform suportam fluxos de trabalho de publicação simples a complexos que devem acomodar sua implantação do SDK da Web da Adobe Experience Platform.
+As Tags do Adobe Experience Platform são compatíveis com fluxos de trabalho de publicação simples e complexos, que devem acomodar a implantação do SDK da Web da Adobe Experience Platform.
 
 Consulte [Visão geral da publicação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) para obter mais informações.
 
@@ -480,7 +480,7 @@ Consulte [Ambientes](https://experienceleague.adobe.com/docs/experience-platform
 
 ## Implantar e validar
 
-Agora você pode implantar o código na versão de desenvolvimento do seu site dentro do `<head>` . Quando implantado, seu site começará a coletar dados no Adobe Experience Platform.
+Agora você pode implantar o código na versão de desenvolvimento do seu site dentro do `<head>` . Quando implantado, seu site começa a coletar dados no Adobe Experience Platform.
 
 Valide a implementação, corrija-a sempre que necessário e, uma vez correto, implante-a no ambiente de preparo e produção usando o recurso de fluxo de trabalho de publicação Tags.
 
@@ -519,7 +519,7 @@ Para criar sua conexão:
 
       - Selecione um [!UICONTROL ID da pessoa] nas identidades disponíveis definidas nos esquemas do conjunto de dados no Adobe Experience Platform.
 
-      - Selecione a fonte de dados correta no [!UICONTROL Tipo de fonte de dados] lista. Se você especificar **[!UICONTROL Outras]** em seguida, adicione uma descrição para a fonte de dados.
+      - Selecione a fonte de dados correta no [!UICONTROL Tipo de fonte de dados] lista. Se você especificar **[!UICONTROL Outras]**, em seguida, adicione uma descrição para a fonte de dados.
 
       - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
@@ -589,11 +589,11 @@ Para criar o projeto:
 
    ![Área de trabalho Selecionar visualização de dados](./assets/cja-projects-3.png).
 
-5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e também fazem parte do programa de fidelidade que coleta pontos de fidelidade.
+5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos de fidelidade.
 
    ![Workspace - Primeiro relatório](./assets/cja-projects-5.png)
 
-Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) para obter mais informações sobre como criar projetos e criar a análise usando componentes, visualização e painéis.
+Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) para obter mais informações sobre como criar projetos e sua análise usando componentes, visualizações e painéis.
 
 >[!SUCCESS]
 >

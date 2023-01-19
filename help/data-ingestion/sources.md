@@ -3,13 +3,13 @@ title: Assimilar e usar dados usando conectores de origem
 description: Explica como assimilar e usar dados usando conectores de origem no Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
+exl-id: 813d3213-86b3-431a-821c-174e5e36d032
+source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1955'
 ht-degree: 5%
 
 ---
-
 
 # Assimilar e usar dados usando conectores de origem.
 
@@ -31,20 +31,20 @@ Para isso, é necessário:
 
 >[!NOTE]
 >
->Este é um guia simplificado sobre como assimilar dados usando um conector de origem no Adobe Experience Platform e usá-los no Customer Journey Analytics.  É altamente recomendável estudar as informações adicionais quando referidas.
+>Este é um guia simplificado sobre como assimilar dados usando um conector de origem no Adobe Experience Platform e usá-los no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
 
 
 ## Configurar um esquema e um conjunto de dados
 
 Para assimilar dados no Adobe Experience Platform, primeiro defina quais dados deseja coletar. Todos os dados assimilados no Adobe Experience Platform devem estar em conformidade com uma estrutura padrão e desnormalizada para que sejam reconhecidos e utilizados pelos recursos e capacidades downstream. O Experience Data Model (XDM) é a estrutura padrão que fornece essa estrutura no formato de schemas.
 
-Após definir um esquema, você usará um ou mais conjuntos de dados para armazenar e gerenciar a coleta de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas).
+Após definir um esquema, use um ou mais conjuntos de dados para armazenar e gerenciar a coleta de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas).
 
 Todos os dados assimilados no Adobe Experience Platform devem estar em conformidade com um esquema predefinido antes que possam ser mantidos como um conjunto de dados.
 
 ### Configurar um esquema
 
-Para esse início rápido, supomos que você queira coletar alguns dados de fidelidade, por exemplo, ID de fidelidade, pontos de fidelidade e status de fidelidade.
+Para esse início rápido, você deseja coletar alguns dados de fidelidade, por exemplo, id de fidelidade, pontos de fidelidade e status de fidelidade.
 Para isso, primeiro defina um schema que modele esses dados.
 
 Para configurar seu esquema:
@@ -92,7 +92,7 @@ Para configurar seu esquema:
 
    ![Objeto de identificação](./assets/identifcation-loyalty-field.png)
 
-   Isso adicionará recursos de identificação ao esquema. No seu caso, você deseja identificar as informações de fidelidade usando o endereço de email nos dados de lote.
+   Isso adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar as informações de fidelidade usando o endereço de email nos dados de lote.
 
    Selecionar **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -102,11 +102,11 @@ Para configurar seu esquema:
 
    Você está especificando o endereço de email como a identidade que o serviço Adobe Experience Platform Identity pode usar para combinar (compilar) o comportamento dos perfis.
 
-   Selecionar **[!UICONTROL Aplicar]**. Você verá um ícone de impressão digital no atributo de email.
+   Selecionar **[!UICONTROL Aplicar]**. Você vê que um ícone de impressão digital aparece no atributo de email.
 
 7. Selecione o nível raiz do esquema (com o nome do esquema) e selecione a variável **[!UICONTROL Perfil]** switch.
 
-   Você será solicitado a habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados serão mesclados ao Perfil do cliente em tempo real.
+   Você é solicitado a habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
    Consulte [Ative o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#profile) para obter mais informações.
 
@@ -118,7 +118,7 @@ Para configurar seu esquema:
 
 8. Selecionar **[!UICONTROL Salvar]** para salvar o esquema.
 
-Você criou um schema mínimo que modela os dados de fidelidade que podem ser assimilados no Adobe Experience Platform. O schema permite que os perfis sejam identificados usando o endereço de email. Ao ativar o esquema para perfil, você garante que os dados da sua fonte de transmissão sejam adicionados ao Perfil do cliente em tempo real.
+Você criou um schema mínimo que modela os dados de fidelidade que podem ser assimilados no Adobe Experience Platform. O schema permite que os perfis sejam identificados usando o endereço de email. Ao ativar o esquema para perfil, você garante que os dados da fonte de transmissão sejam adicionados ao Perfil do cliente em tempo real.
 
 Consulte [Criar e editar esquemas na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html) para obter mais informações sobre a adição e remoção de grupos de campos e campos individuais a um schema.
 
@@ -148,7 +148,7 @@ Para configurar seu conjunto de dados:
 
 7. Selecione o **[!UICONTROL Perfil]** switch.
 
-   Você será solicitado a habilitar o conjunto de dados para o perfil. Depois de habilitado, o conjunto de dados enriquecerá os perfis do cliente em tempo real com seus dados assimilados.
+   Você é solicitado a habilitar o conjunto de dados para perfil. Depois de habilitado, o conjunto de dados enriquece os perfis do cliente em tempo real com seus dados assimilados.
 
    >[!IMPORTANT]
    >
@@ -179,7 +179,7 @@ Para configurar um conector de origem:
 
    - **[!UICONTROL Agendamento]**: Se disponível, é possível agendar a assimilação de dados.
 
-   - **[!UICONTROL Revisão]**: Antes de concluir a configuração, você verificará a definição do conector de origem.
+   - **[!UICONTROL Revisão]**: Você verá uma análise da definição do conector de origem.
 
    Cada conector fornece documentação detalhada.
 
@@ -234,7 +234,7 @@ Para criar sua conexão:
 
       - Selecione um [!UICONTROL ID da pessoa] nas identidades disponíveis definidas nos esquemas do conjunto de dados no Adobe Experience Platform.
 
-      - Selecione a fonte de dados correta no [!UICONTROL Tipo de fonte de dados] lista. Se você especificar **[!UICONTROL Outras]** em seguida, adicione uma descrição para a fonte de dados.
+      - Selecione a fonte de dados correta no [!UICONTROL Tipo de fonte de dados] lista. Se você especificar **[!UICONTROL Outras]**, em seguida, adicione uma descrição para a fonte de dados.
 
       - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
@@ -304,11 +304,11 @@ Para criar o projeto:
 
    ![Área de trabalho Selecionar visualização de dados](./assets/cja-projects-3.png).
 
-5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e também fazem parte do programa de fidelidade que coleta pontos de fidelidade.
+5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos de fidelidade.
 
    ![Workspace - Primeiro relatório](./assets/cja-projects-5.png)
 
-Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) para obter mais informações sobre como criar projetos e criar a análise usando componentes, visualização e painéis.
+Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) para obter mais informações sobre como criar projetos e sua análise usando componentes, visualizações e painéis.
 
 >[!SUCCESS]
 >
