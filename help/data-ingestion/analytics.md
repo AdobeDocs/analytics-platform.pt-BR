@@ -4,7 +4,7 @@ description: Explique como assimilar dados do Adobe Analytics tradicional
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
+source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 10%
@@ -125,7 +125,7 @@ Para criar sua conexão:
 
       - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
-      ![Configurar conjuntos de dados](./assets/cja-connections-3.png)
+      ![Configurar conjuntos de dados](./assets/cja-connections-3a.png)
 
    - Selecionar **[!UICONTROL Adicionar conjuntos de dados]**.
    Selecione **[!UICONTROL Salvar]**.
