@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4488c87604db363ca4ddb0954216b195990c8bb1
+source-git-commit: 7055ef91d853da02b4510ec2b9e4543f70b0bec0
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 96%
+source-wordcount: '1235'
+ht-degree: 95%
 
 ---
 
@@ -23,6 +23,8 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Pastas | Páginas dedicadas para [Gerenciamento de pastas](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Preferências do usuário | Várias preferências adicionais de usuário estão disponíveis no [Preferências](/help/analysis-workspace/user-preferences.md). |
 | Salvar automaticamente em projetos | Conteúdo atualizado para incluir a funcionalidade de salvamento automático em [Salvar projetos](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| Landing page | Novas atualizações de landing page [página de aterrissagem](/help/getting-started/landing.md). |
+| Agendar pastas de trabalho | Página dedicada para descrever como [Agendar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) em Report Builder. |
 
 ## 2022
 
