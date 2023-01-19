@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6eba4eb9f9ba879d9cb17e88b9e61e2f2b297f33
+source-git-commit: f910f8e810c5c5d6f4d43aff2b609d8bf6c131ca
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -22,13 +22,13 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | **Dezembro de 2022** |  |
 | 16 de dezembro de 2022 | Novo tópico sobre [medir e gerenciar o uso de dados do CJA](/help/getting-started/estimate-usage.md). |
 | **Outubro de 2022** |  |
-| Outubro de 2022 | Novo tópico sobre [proteção por senha de projetos agendados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=pt-BR#password). Este recurso é compatível com [Preparação para HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
-| Outubro de 2022 | Novo tópico sobre [Chaves gerenciadas pelo cliente](/help/privacy/cmk.md). Este recurso é compatível com [Preparação para HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
-| Outubro de 2022 | Novo tópico sobre [Log de auditoria CJA](/help/privacy/audit-log.md). |
+| Outubro de 2022 | Novo tópico sobre [proteção por senha de projetos agendados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=pt-BR#password). Este recurso é compatível com a [preparação para a HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
+| Outubro de 2022 | Novo tópico sobre [Chaves gerenciadas pelo cliente](/help/privacy/cmk.md). Este recurso é compatível com a [preparação para a HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
+| Outubro de 2022 | Novo tópico sobre [Log de auditoria do CJA](/help/privacy/audit-log.md). |
 | Outubro de 2022 | Novo tópico sobre visualização do [Resumo da métrica principal](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=pt-BR). |
 | Outubro de 2022 | Nova seção sobre [funcionalidades data e data-hora em visualizações de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#date) |
 | Outubro de 2022 | Aplicativo móvel: Novo tópico sobre [exibições de detalhes personalizados](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/create-scorecard.html?lang=pt-BR#view-detail-slides). |
-| Outubro de 2022 | Atualizações para a [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) tópico. |
+| Outubro de 2022 | Atualizações do tópico [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |
 | **Setembro de 2022** |  |
 | Setembro de 2022 | Novo caso de uso sobre [Migração de dados do Google Analytics para o CJA](/help/use-cases/ga/overview.md). |
 | Setembro de 2022 | Novo tópico sobre [Gráficos de combinação](/help/analysis-workspace/visualizations/combo-charts.md) no espaço de trabalho. |
@@ -124,7 +124,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | 2 de novembro de 2020 | Atualizações na página de [suporte de recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |
 | Novembro de 2020 | Adição de conteúdo sobre [remoção de limitações de preenchimento retroativo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#backfill-historical-data) para conexões. |
 | 7 de outubro de 2020 | Adição de um tópico sobre [conjuntos de dados de evento combinados](/help/connections/combined-dataset.md). |
-| 15 de setembro de 2020 | Adição de um tópico sobre [assimilação de dados](/help/use-cases/data-ingestion/data-ingestion.md). |
+| 15 de setembro de 2020 | Adição de um tópico sobre [assimilação de dados](/help/data-ingestion/data-ingestion.md). |
 | 2 de setembro de 2020 | Atualização da seção sobre [permissões do usuário](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR). |
 | 7 de agosto de 2020 | Adição de um novo tópico sobre [Caso de uso de B2B - conjunto de dados de pesquisa](/help/use-cases/b2b/b2b.md). |
 | Julho de 2020 | Adição de informações sobre a opção [Mapa de identidade para ID de pessoa](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR). |

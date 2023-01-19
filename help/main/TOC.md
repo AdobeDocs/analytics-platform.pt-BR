@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Customer Journey Analytics (CJA) e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: aff7b978382446e705d6507dbaa07790bd1dd2ae
+source-git-commit: eb7b53816fcc325f6a72ae145c8cf8a633375578
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 98%
+source-wordcount: '858'
+ht-degree: 96%
 
 ---
 
@@ -47,6 +47,14 @@ ht-degree: 98%
       + [AAID, ECID, AACUSTOMID e o conector de origem do Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Implicações de exclusão](../getting-started/cja-deletion.md)
    + [Glossário CJA](../getting-started/cja-glossary.md)
++ Assimilação de dados {#cja-data-ingestion}
+   + [Visão geral da assimilação de dados](../data-ingestion/data-ingestion.md)
+   + Assimilar e usar guias de início rápido{#ingest-use-guides}
+      + [Adobe Analytics](../data-ingestion/analytics.md)
+      + [Adobe Experience Platform Web SDK e rede de borda](../data-ingestion/aepwebsdk.md)
+      + [Dados em lote](../data-ingestion/batch.md)
+      + [Transmissão de dados](../data-ingestion/streaming.md)
+      + [Conectores de origem](../data-ingestion/sources.md)
 + Conexões {#cja-connections}
    + [Visão geral das conexões](../connections/overview.md)
    + [Criar uma conexão](../connections/create-connection.md)
@@ -251,7 +259,6 @@ ht-degree: 98%
       + [Configurar dados de transmissão do Google Analytics na Platform](../use-cases/ga/streaming.md)
       + [Relatórios de dados do Google Analytics no CJA](../use-cases/ga/report.md)
    + Assimilação de dados {#data-ingestion}
-      + [Casos de uso da assimilação de dados](../use-cases/data-ingestion/data-ingestion.md)
       + [Assimilar dados do Marketo Engage na AEP e relatórios no CJA](../use-cases/data-ingestion/marketo.md)
       + [Assimilar públicos-alvo do AEP no CJA](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Visualizações de dados {#data-views}
