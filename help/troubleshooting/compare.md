@@ -4,10 +4,10 @@ description: Saiba como comparar dados do Adobe Analytics com os dados do Custom
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: 2088fd98510887e86cffb6bd957d32a35fcfc467
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '828'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -47,7 +47,7 @@ O Total de registros por carimbos de data e hora deve corresponder à métrica d
 
 >[!NOTE]
 >
->Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através do [Cross-Channel Analytics](/help/connections/cca/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no CJA é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no AA, especialmente se o Cross-Channel Analytics tiver sido ativada.
+>Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através do [Cross-Channel Analytics](/help/cca/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no CJA é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no AA, especialmente se o Cross-Channel Analytics tiver sido ativada.
 
 1. Nos [Serviços de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=pt-BR) da Adobe Experience Platform, execute a seguinte consulta de [!UICONTROL Total de registros por carimbos de data e hora]:
 
@@ -65,14 +65,14 @@ SELECT Substring(from_utc_timestamp(timestamp,'{timeZone}'), 1, 10) as Day, \
 
 1. Em [Feeds de dados do Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR), identifique nos dados brutos se algumas linhas podem ter sido filtradas pelo conector do Analytics Source.
 
-   O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) O pode filtrar determinadas linhas durante a transformação para o esquema XDM. Pode haver vários motivos para que a linha inteira seja imprópria para transformação. Se qualquer um dos campos do Analytics a seguir tiver esses valores, a linha inteira será filtrada.
+   O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) O pode filtrar determinadas linhas durante a transformação para o esquema XDM. Pode haver vários motivos para que a linha inteira seja imprópria para transformação. Se qualquer um dos campos do Analytics a seguir tiver esses valores, a linha inteira será filtrada.
 
    | Campo do Analytics | Valores que fazem com que uma linha seja descartada |
    | --- | --- |
    | Opt_out | y, Y |
    | In_data_only | Not 0 |
-   | Exclude_hit | Não 0 |
-   | Bot_id | Não 0 |
+   | Exclude_hit | Not 0 |
+   | Bot_id | Not 0 |
    | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53, 63 |
 
@@ -90,4 +90,4 @@ Estas são algumas das razões pelas quais os registros podem ser ignorados ao a
 
 * **IDs de pessoa ausentes** - IDs de pessoa ausentes (do conjunto de dados de eventos e/ou do conjunto de dados de perfil/pesquisa) fazem com que esses registros sejam ignorados ou desconsiderados. O motivo é que não há IDs comuns ou chaves correspondentes para unir os registros.
 
-* **IDs de pessoa inválidas ou grandes** - No caso de IDs inválidas, o sistema não consegue encontrar uma ID comum válida entre os conjuntos de dados a serem associados. Em alguns casos, a coluna ID de pessoa tem IDs de pessoa inválidas, como “indefinida” ou “00000000”. Uma ID de pessoa (com qualquer combinação de números e letras) que aparece em um evento mais de um milhão de vezes por mês não pode ser atribuída a um usuário ou pessoa específica. Ela será categorizada como inválida. Esses registros não podem ser assimilados no sistema e resultam em assimilações e relatórios propensos a erros.
+* **IDs de pessoa inválidas ou grandes** - No caso de IDs inválidas, o sistema não consegue encontrar uma ID comum válida entre os conjuntos de dados a serem associados. Em alguns casos, a coluna ID de pessoa tem IDs de pessoa inválidas, como &quot;indefinidas&quot; ou &quot;00000000&quot;. Uma ID de pessoa (com qualquer combinação de números e letras) que aparece em um evento mais de um milhão de vezes por mês não pode ser atribuída a um usuário ou pessoa específica. Ela será categorizada como inválida. Esses registros não podem ser assimilados no sistema e resultam em assimilações e relatórios propensos a erros.

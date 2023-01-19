@@ -4,7 +4,7 @@ description: Saiba como criar um conjunto de dados que vincula os dados da centr
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
@@ -44,7 +44,7 @@ Ao importar dados para a Plataforma, as seguintes dicas podem proporcionar mais 
 O CJA exige um identificador comum para gerar um [conjunto de dados combinado](/help/connections/combined-dataset.md).
 
 * Se seus conjuntos de dados já tiverem um identificador comum em cada evento em ambos os conjuntos de dados, você poderá ignorar essa etapa e continuar criando uma conexão.
-* Se um de seus conjuntos de dados tiver um identificador comum em apenas alguns eventos, você poderá compilar os dados usando o Cross-Channel Analytics. Consulte a [visão geral da Análise de vários canais](/help/connections/cca/overview.md) para ver as etapas para habilitar a AVC para esses dois conjuntos de dados.
+* Se um de seus conjuntos de dados tiver um identificador comum em apenas alguns eventos, você poderá compilar os dados usando o Cross-Channel Analytics. Consulte a [visão geral da Análise de vários canais](/help/cca/overview.md) para ver as etapas para habilitar a AVC para esses dois conjuntos de dados.
 
 ## Criar uma conexão no CJA
 

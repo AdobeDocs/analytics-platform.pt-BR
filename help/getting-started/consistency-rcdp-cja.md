@@ -4,8 +4,8 @@ title: Consistência de métricas e contagens de associação de público na Rea
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 769eef205df32865874753859ce79e573db40641
-workflow-type: ht
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Ao comparar as contagens de associação de público entre a Real-time CDP e o C
 
 Atualmente, a Real-time CDP e o CJA não compartilham a mesma definição de pessoa. A Real-time CDP depende totalmente das informações contidas no [Gráfico de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=pt-BR) para criar um perfil mesclado.
 
-O CJA pode ser configurado para usar a [Cross-Channel Analytics](/help/connections/cca/overview.md), que extrai identificadores de conjuntos de dados no data lake e aplica uma lógica personalizada para vinculá-los.
+O CJA pode ser configurado para usar a [Cross-Channel Analytics](/help/cca/overview.md), que extrai identificadores de conjuntos de dados no data lake e aplica uma lógica personalizada para vinculá-los.
 
 No futuro, o CJA poderá usar o Gráfico de identidade.
 

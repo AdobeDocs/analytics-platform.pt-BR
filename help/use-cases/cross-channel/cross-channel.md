@@ -4,7 +4,7 @@ description: Analise e extraia insights das interações em toda a jornada do cl
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
+source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Tenha uma visão única e consolidada do comportamento do cliente através de v�
 1. [Crie esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) para os dados que serão assimilados.
 1. [Crie conjuntos de dados](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=pt-BR) para os dados que serão assimilados.
 1. [Assimilar dados na Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=pt-BR).
-1. Use uma ID de namespace comum entre os conjuntos de dados, ou use a [Análise entre canais](/help/connections/cca/overview.md) para vincular pessoas. Observe que o Customer Journey Analytics não usa atualmente os serviços de Perfil ou de Identidade da Experience Platform para compilações.
+1. Use uma ID de namespace comum entre os conjuntos de dados, ou use a [Análise entre canais](/help/cca/overview.md) para vincular pessoas. Observe que o Customer Journey Analytics não usa atualmente os serviços de Perfil ou de Identidade da Experience Platform para compilações.
 1. Execute qualquer preparação de dados personalizada para garantir uma chave comum entre os conjuntos de dados de série de tempo que serão assimilados no Customer Journey Analytics.
 1. Forneça aos dados de pesquisa uma ID primária que possa se associar a um campo nos dados do evento. Conta como linhas no licenciamento.
 1. Configure a mesma ID primária para os dados do perfil que foi configurada para os dados do evento.
