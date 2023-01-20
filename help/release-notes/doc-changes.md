@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7055ef91d853da02b4510ec2b9e4543f70b0bec0
+source-git-commit: 6c1abdcb4543124c1585d4461b32adb55c558032
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 95%
+source-wordcount: '1250'
+ht-degree: 94%
 
 ---
 
@@ -20,6 +20,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Recurso | Descrição |
 | --- | --- |
 | **Janeiro de 2023** |  |
+| Guias de início rápido | Nova seção de documentação sobre como [assimilar e usar dados](/help/data-ingestion/data-ingestion.md) no CJA. |
 | Pastas | Páginas dedicadas para [Gerenciamento de pastas](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Preferências do usuário | Várias preferências adicionais de usuário estão disponíveis no [Preferências](/help/analysis-workspace/user-preferences.md). |
 | Salvar automaticamente em projetos | Conteúdo atualizado para incluir a funcionalidade de salvamento automático em [Salvar projetos](/help/analysis-workspace/build-workspace-project/save-projects.md). |
