@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6c1abdcb4543124c1585d4461b32adb55c558032
+source-git-commit: 1a0689694304056ba582265aee7997a3e0406434
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 94%
+source-wordcount: '1255'
+ht-degree: 93%
 
 ---
 
@@ -20,14 +20,14 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Recurso | Descrição |
 | --- | --- |
 | **Janeiro de 2023** |  |
-| Guias de início rápido | Nova seção de documentação sobre como [assimilar e usar dados](/help/data-ingestion/data-ingestion.md) no CJA. |
-| Pastas | Páginas dedicadas para [Gerenciamento de pastas](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
-| Preferências do usuário | Várias preferências adicionais de usuário estão disponíveis no [Preferências](/help/analysis-workspace/user-preferences.md). |
-| Salvar automaticamente em projetos | Conteúdo atualizado para incluir a funcionalidade de salvamento automático em [Salvar projetos](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| Guias de início rápido da assimilação de dados | Nova seção de documentação sobre como [assimilar e usar dados](/help/data-ingestion/data-ingestion.md) no CJA. |
+| Pastas do Workspace | Páginas dedicadas para [Gerenciamento de pastas](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Preferências do usuário do Workspace | Várias preferências adicionais de usuário estão disponíveis no [Preferências](/help/analysis-workspace/user-preferences.md). |
+| Salvar automaticamente em projetos do Workspace | Conteúdo atualizado para incluir a funcionalidade de salvamento automático em [Salvar projetos](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | Landing page | Novas atualizações de landing page [página de aterrissagem](/help/getting-started/landing.md). |
 | Agendar pastas de trabalho | Página dedicada para descrever como [Agendar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) em Report Builder. |
 
-## 2022
+## 2022 {#22}
 
 | Data | Atualizar descrição |
 | --- | --- |
@@ -85,7 +85,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 {style=&quot;table-layout:auto&quot;}
 
-## 2021
+## 2021 {#21}
 
 | Data | Atualizar descrição |
 | --- | --- |
@@ -126,7 +126,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 {style=&quot;table-layout:auto&quot;}
 
-## 2020
+## 2020 {#20}
 
 | Data | Atualizar descrição |
 | --- | --- |

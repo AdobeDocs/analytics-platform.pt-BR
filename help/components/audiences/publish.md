@@ -2,10 +2,10 @@
 title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 06e27fc2ecc2b54e30616bc69b44550af20af76f
+source-git-commit: 1a0689694304056ba582265aee7997a3e0406434
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 85%
+source-wordcount: '1277'
+ht-degree: 79%
 
 ---
 
@@ -71,6 +71,16 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    Se tudo correr bem, você receberá uma mensagem de confirmação de que o público-alvo foi publicado. Demora apenas um ou dois minutos para esse público aparecer na Experience Platform. (Mesmo para públicos-alvo com milhões de membros, deve levar menos de 5 minutos.)
 
 1. Clique em **[!UICONTROL Exibir público-alvo na AEP]** na mesma mensagem e você será direcionado para a [Interface do usuário do segmento](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=pt-BR) na Adobe Experience Platform. Veja mais informações abaixo.
+
+## O que acontece depois que um público-alvo é criado {#after-audience-created}
+
+Depois de criar um público-alvo, o Adobe cria um segmento de transmissão de Experience Platform para cada novo público-alvo do CJA criado.
+
+* O segmento da AEP compartilha o mesmo nome/descrição do público-alvo do CJA, mas o nome será anexado à ID de público-alvo do CJA para garantir que seja exclusivo.
+
+* Se o nome/a descrição do público-alvo do CJA forem alterados, o nome/a descrição do segmento do AEP também refletirá essa alteração.
+
+* Se um público-alvo do CJA for excluído por um usuário, o segmento do AEP NÃO será excluído, caso o público-alvo do CJA seja removido posteriormente.
 
 ## Usar públicos-alvo do CJA na Experience Platform {#audiences-aep}
 
