@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1a0689694304056ba582265aee7997a3e0406434
+source-git-commit: a6ce6409eb7a4d853d5390cd62f4a9506ee6282a
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 93%
+source-wordcount: '1280'
+ht-degree: 91%
 
 ---
 
@@ -20,6 +20,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Recurso | Descrição |
 | --- | --- |
 | **Janeiro de 2023** |  |
+| Atualização do documento Públicos-alvo do CJA | Nova documentação em [o que acontece depois que um novo público-alvo é criado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Guias de início rápido da assimilação de dados | Nova seção de documentação sobre como [assimilar e usar dados](/help/data-ingestion/data-ingestion.md) no CJA. |
 | Pastas do Workspace | Páginas dedicadas para [Gerenciamento de pastas](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Preferências do usuário do Workspace | Várias preferências adicionais de usuário estão disponíveis no [Preferências](/help/analysis-workspace/user-preferences.md). |
