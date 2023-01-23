@@ -2,10 +2,10 @@
 title: Logs de auditoria
 description: Saiba como visualizar e gerenciar logs de auditoria do CJA.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
-source-wordcount: '849'
-ht-degree: 100%
+source-git-commit: 53d019f99cbf06ee97243121fbf46f6d3ee9f0a7
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,7 @@ Os seguintes itens são mostrados:
 | Nome da ação | Esta é a lista de ações possíveis: <ul><li>API_Request</li><li>Aprovar</li><li>Criar</li><li>Editar</li><li>Exportar</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Atualizar</li><li>Compartilhar</li><li>Transferir</li><li>Cancelar aprovação</li><li>Não compartilhar</li></ul> |
 | Descrição | Um resumo da ação, do tipo de componente (com ID) e de outros valores. |
 | Nome do usuário | O usuário que está executando a ação. |
-| Tipo de componente | Os possíveis tipos de componentes incluem: <ul><li>Anotação</li><li>Público-alvo</li><li>Métrica calculada</li><li>Conexão</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filtro</li><li>IMS_Org</li><li>Dispositivo móvel</li><li>Projeto</li><li>Relatório</li><li>Scheduled_Project</li><li>Usuário</li><li>User_Group</li></ul> |
+| Tipo de componente | Os possíveis tipos de componentes incluem: <ul><li>Anotação</li><li>Público-alvo</li><li>Métrica calculada</li><li>Conexão</li><li>Data_Group</li><li>Data_View (esse tipo de componente inclui dimensões e métricas)</li><li>Feature_Access</li><li>Filtro</li><li>IMS_Org</li><li>Dispositivo móvel</li><li>Projeto</li><li>Relatório</li><li>Scheduled_Project</li><li>Usuário</li><li>User_Group</li></ul> |
 | ID organizacional IMS | Uma ID exclusiva fornecida para sua instância quando você faz logon pela primeira vez na Adobe Experience Cloud. Ela deve estar no formato: xxx@AdobeOrg. |
 | ID de usuário | Uma ID exclusiva que identifica o usuário que executou esta ação. |
 | Data da criação | Quando esta ação foi executada. |
