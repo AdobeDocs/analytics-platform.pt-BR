@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 2579a6bbf17836fdab519b01e09f253bfb3a7aeb
+source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 93%
+source-wordcount: '1282'
+ht-degree: 91%
 
 ---
 
@@ -26,6 +26,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Salvar automaticamente em projetos do Workspace | Conteúdo atualizado para incluir a funcionalidade de salvamento automático em [Salvar projetos](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | Landing page | Novas atualizações de landing page [página de aterrissagem](/help/getting-started/landing.md). |
 | Agendar pastas de trabalho | Página dedicada para descrever como [Agendar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) em Report Builder. |
+| Suporte à matriz de objetos para conjuntos de dados de perfil e pesquisa | Atualizado [Uso de arrays de objetos](/help/use-cases/object-arrays.md) e [Assimilar públicos da AEP](/help/use-cases/data-ingestion/ingest-aep-segments.md) para refletir o suporte da matriz de objetos para conjuntos de dados de perfil e pesquisa. |
 
 ## 2022 {#22}
 
