@@ -3,16 +3,16 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 673aed4daf7029ddec032055789f94125395e7f9
+source-git-commit: ddba0cdee1956048ba1875b49e8f2b77085c46da
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '560'
 ht-degree: 40%
 
 ---
 
 # Notas de versão do Customer Journey Analytics atual (CJA) (janeiro de 2023)
 
-**Última atualização**: 13 de janeiro de 2023
+**Última atualização**: 24 de janeiro de 2023
 
 As versões do Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Devido a isso, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -20,13 +20,13 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 
 | Recurso | Descrição | [Início da implantação](/help/release-notes/releases.md) | [Disponibilidade geral](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
+| **Suporte à matriz de objetos para conjuntos de dados de perfil e pesquisa** | Os conjuntos de dados e conjuntos de dados de pesquisa de perfil agora são compatíveis com arrays de objetos para uso no CJA. | 11 de janeiro de 2023 | 19 de janeiro de 2023 |
 | **Pastas no Espaço de trabalho** | As pastas ajudam a organizar e categorizar seus projetos para obter uma melhor recuperação e acesso. Além disso, um **[!UICONTROL Empresa]** permite que os administradores criem e compartilhem conteúdo com todos os usuários do Workspace. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html?lang=pt-BR) | N/D | 11 de janeiro de 2023 |
 | **Página de destino padrão** | O [nova landing page](/help/getting-started/landing.md) que foi introduzido anteriormente em 2022 se tornará a experiência padrão para todos os usuários no **11 de janeiro de 2023**. A landing page herdada será substituída e todos terão de usar a nova experiência. | N/D | 11 de janeiro de 2023 |
 | **Página do Gerenciador de projetos obsoleta** | Com o lançamento da nova landing page, descontinuamos o **[!UICONTROL Gerenciador de projetos]** conforme listado em **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Componentes]**. A nova landing page tem todas as funcionalidades da antiga página do Gerenciador de projetos e muito mais. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#deprecate-pm-page) | N/D | 11 de janeiro de 2023 |
 | **Agendar pastas de trabalho no Report Builder** | No Customer Journey Analytics, você pode criar agendamentos para enviar pastas de trabalho em intervalos regulares. Agora os recipients podem receber as atualizações mais recentes de suas pastas de trabalho regularmente. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/schedule-reportbuilder.html) | N/D | 11 de janeiro de 2023 |
 | **Salvar novos projetos automaticamente** | O Analysis Workspace agora salva automaticamente os projetos recém-criados. Se, por qualquer motivo, você perder inesperadamente o acesso a um projeto recém-criado antes de salvá-lo manualmente, uma versão de recuperação do projeto agora estará disponível. Anteriormente, os projetos eram salvos automaticamente somente depois de terem sido salvos manualmente inicialmente. [Saiba mais](/help/analysis-workspace/build-workspace-project/save-projects.md) | N/D | 11 de janeiro de 2023 |
 | **Preferências do usuário aprimoradas** | Agora você pode configurar preferências adicionais no nível do usuário (em [!UICONTROL Componentes] > [!UICONTROL Preferências]). Ao definir a preferência do usuário, suas seleções se estendem por projetos, tabelas e visualizações. A página Preferências agora contém as novas guias a seguir, cada uma contendo muitas novas opções de configuração:<ul><li>Tabela de forma livre</li><li>Visualizações>/li></ul>. Além disso, agora há mais preferências disponíveis na variável **[!UICONTROL Geral]** e **[!UICONTROL Projeto]** guias.<p>Anteriormente, muitas dessas preferências eram configuráveis somente para projetos, tabelas e visualizações individuais. [Saiba mais](/help/analysis-workspace/user-preferences.md) | N/D | 11 de janeiro de 2023 |
-| **Suporte à matriz de objetos para conjuntos de dados de perfil e pesquisa** | Os conjuntos de dados e conjuntos de dados de pesquisa de perfil agora são compatíveis com arrays de objetos para uso no CJA. | N/D | 11 de janeiro de 2023 |
 
 {style=&quot;table-layout:auto&quot;}
 
