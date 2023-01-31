@@ -3,10 +3,10 @@ title: Tabela de forma livre
 description: As tabelas de forma livre são a base para a análise de dados no Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 43c8af6f9010354258a702fb702a330873d9cb8e
+workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -36,7 +36,7 @@ Se preferir adicionar primeiro vários componentes à tabela e, em seguida, rend
    * Você pode ajustar mais linhas em uma única tela ajustando a [densidade de visualização](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=pt-BR) do projeto.
    * Cada linha da dimensão pode exibir até 400 linhas antes que ocorra paginação. Clique no número ao lado de &quot;Linhas&quot; para mostrar mais linhas em uma página. Navegue até uma página diferente usando a seta de página no cabeçalho.
    * As linhas podem ser detalhadas por componentes adicionais. Para detalhar várias linhas ao mesmo tempo, basta selecionar várias linhas e arrastar o próximo componente na parte superior das linhas selecionadas. Saiba mais sobre [detalhamentos](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa.html?lang=pt-BR).
-   * As linhas podem ser [filtradas](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/pagination-filtering-sorting.html?lang=pt-BR) para mostrar um conjunto reduzido de itens. Configurações adicionais estão disponíveis em [Configurações de linha](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html?lang=pt-BR).
+   * As linhas podem ser [filtradas](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort.html) para mostrar um conjunto reduzido de itens. Configurações adicionais estão disponíveis em [Configurações de linha](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.html?lang=pt-BR).
 
 * **Colunas**
    * Os componentes podem ser empilhados dentro de colunas para criar métricas filtradas, análise entre guias e muito mais.
