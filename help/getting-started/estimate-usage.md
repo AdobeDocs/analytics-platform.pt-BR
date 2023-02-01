@@ -4,10 +4,10 @@ description: Mostra dois métodos de estimativa de uso e um método de gerenciam
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: a69cb8a419d95e0cab666fceea9cb7ebf6daef73
+source-git-commit: d38e4c4cd589e6708b0a6b5856da341344f6440e
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 41%
+source-wordcount: '864'
+ht-degree: 37%
 
 ---
 
@@ -99,5 +99,5 @@ O principal benefício é armazenar ou relatar apenas dados que sejam aplicávei
 
 Se deixar o padrão (desmarcado), o período de retenção será substituído pela configuração de retenção de dados da Adobe Experience Platform. Se você tiver dados correspondentes a 25 meses na Experience Platform, o CJA obterá 25 meses de dados por meio do preenchimento retroativo. Se você excluísse 10 desses meses na Platform, o CJA manteria os 15 meses restantes.
 
-A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe configuração de janela de dados contínuos para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data/hora aplicáveis. No entanto, se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa (além de um ou mais conjuntos de dados de evento), esses dados serão retidos pelo mesmo período.
+A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe configuração de janela de dados contínuos para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data/hora aplicáveis. Se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa, já que eles são unidos a conjuntos de dados de eventos, os dados serão retidos no CJA com base nas configurações de retenção de dados nos carimbos de data e hora do conjunto de dados de eventos.
 
