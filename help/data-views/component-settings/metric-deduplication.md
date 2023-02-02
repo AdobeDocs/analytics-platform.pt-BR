@@ -4,10 +4,10 @@ description: Conte somente a primeira ocorrência de uma métrica nos relatório
 exl-id: ced0c637-5cbe-47a4-897a-eb79961986a3
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e2ebda486eae7740351370f48bdf104c90494ae3
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 75%
 
 ---
 
@@ -22,3 +22,7 @@ A desduplicação de métrica permite configurar uma métrica para contar apenas
 | [!UICONTROL ID de desduplicação] | Em vez de aplicar a desduplicação na própria métrica, é possível aplicá-la com base em uma dimensão. Importante para que dimensões como a ID de compra possam aplicar a desduplicação. |
 
 {style=&quot;table-layout:auto&quot;}
+
+>[!CAUTION]
+>
+>   Desduplicação em uma _pessoa_ o escopo é avaliado por meses completos no horário UTC. Uma janela de relatório parcial de mês pode não exibir todas as primeiras ou últimas instâncias, se algumas ocorreram dentro do mês completo, mas fora das datas de relatório.
