@@ -3,16 +3,16 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: ddba0cdee1956048ba1875b49e8f2b77085c46da
+source-git-commit: b633e3e70c24d9b00b1ab2f80954ad698b12ce29
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 40%
+source-wordcount: '611'
+ht-degree: 37%
 
 ---
 
 # Notas de versão do Customer Journey Analytics atual (CJA) (janeiro de 2023)
 
-**Última atualização**: 24 de janeiro de 2023
+**Última atualização**: 6 de fevereiro de 2023
 
 As versões do Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Devido a isso, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -20,6 +20,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 
 | Recurso | Descrição | [Início da implantação](/help/release-notes/releases.md) | [Disponibilidade geral](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
+| **Atualização para públicos-alvo do CJA** | Depois de criar um público-alvo, [O Adobe cria um segmento de Experience Platform streaming para cada novo público-alvo do CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). Um segmento de transmissão AEP só será criado se a organização estiver configurada para a segmentação de transmissão. | N/D | 3 de fevereiro de 2023 |
 | **Suporte à matriz de objetos para conjuntos de dados de perfil e pesquisa** | Os conjuntos de dados e conjuntos de dados de pesquisa de perfil agora são compatíveis com arrays de objetos para uso no CJA. | 11 de janeiro de 2023 | 19 de janeiro de 2023 |
 | **Pastas no Espaço de trabalho** | As pastas ajudam a organizar e categorizar seus projetos para obter uma melhor recuperação e acesso. Além disso, um **[!UICONTROL Empresa]** permite que os administradores criem e compartilhem conteúdo com todos os usuários do Workspace. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/workspace-folders/about-folders.html?lang=pt-BR) | N/D | 11 de janeiro de 2023 |
 | **Página de destino padrão** | O [nova landing page](/help/getting-started/landing.md) que foi introduzido anteriormente em 2022 se tornará a experiência padrão para todos os usuários no **11 de janeiro de 2023**. A landing page herdada será substituída e todos terão de usar a nova experiência. | N/D | 11 de janeiro de 2023 |
