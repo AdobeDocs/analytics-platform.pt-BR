@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: fe8a2ee1af1f022f56116ea64460e4ad1b572b8e
+source-git-commit: 7f137f545ca2da64f4019818e0b00ab8d96e312f
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 89%
+source-wordcount: '1343'
+ht-degree: 87%
 
 ---
 
@@ -19,6 +19,8 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 | Recurso | Descrição |
 | --- | --- |
+| **Fevereiro de 2023** |  |
+| Atualização da documentação de Públicos-alvo | Depois de criar um público-alvo, o Adobe cria um Experience Platform [segmento de fluxo para cada novo público-alvo do CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | **Janeiro de 2023** |  |
 | Filtrar e classificar tabelas | Conteúdo atualizado (incluindo a adição de procedimentos e a explicação das opções disponíveis) na [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) artigo 10. o Este artigo foi renomeado de &quot;Paginação, filtragem e classificação de tabelas&quot;. |
 | Guias de início rápido da assimilação de dados | Nova seção de documentação sobre como [assimilar e usar dados](/help/data-ingestion/data-ingestion.md) no CJA. |

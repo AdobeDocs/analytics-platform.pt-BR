@@ -2,10 +2,10 @@
 title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 218618fb6f5ad97da82ebb40e78f9a04f7d28343
+source-git-commit: e117775aa949b3d471e708ca5559474af76d28bc
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 74%
+source-wordcount: '1389'
+ht-degree: 70%
 
 ---
 
@@ -79,6 +79,19 @@ Depois de criar um público-alvo, o Adobe cria um segmento de transmissão de Ex
 * O segmento da AEP compartilha o mesmo nome/descrição do público-alvo do CJA, mas o nome será anexado à ID de público-alvo do CJA para garantir que seja exclusivo.
 * Se o nome/descrição do público-alvo do CJA mudar, o nome/descrição do segmento do AEP também refletirá essa alteração.
 * Se um público-alvo do CJA for excluído por um usuário, o segmento do AEP NÃO será excluído. O motivo é que o público-alvo do CJA pode, posteriormente, ser removido.
+
+## Considerações sobre latência {#latency}
+
+Em vários pontos antes, durante e após a publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
+
+![](assets/latency-diagram.png)
+
+| Ponto de latência | Duração da latência |
+| --- | --- |
+| Ingestão de dados no Data Lake | Até 30 minutos |
+| Assimilação de dados do Experience Platform para o CJA | Até 60 minutos |
+| Publicação de público-alvo no perfil do cliente em tempo real | Menos de 5 minutos (dependendo do tamanho do público) |
+| Atualizar frequência para públicos-alvo | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
 
 ## Usar públicos-alvo do CJA na Experience Platform {#audiences-aep}
 
