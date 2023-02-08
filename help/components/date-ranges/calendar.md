@@ -4,10 +4,10 @@ title: Visão geral do calendário e do intervalos de datas
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: b776478fa4fa77841c5cf0b2d082ff60055bf587
-workflow-type: ht
-source-wordcount: '373'
-ht-degree: 100%
+source-git-commit: 969040538e12ef3c3d15881ae225af02bef1cba4
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 51%
 
 ---
 
@@ -17,7 +17,7 @@ No calendário, você pode especificar datas e intervalos de datas ou selecionar
 
 As seleções do calendário se aplicam a nível de painel, mas existe a opção de aplicá-las a todos os painéis. Ao clicar em um intervalo de datas no Espaço de trabalho, a interface exibe o mês atual do calendário e o mês anterior. Você pode ajustar esses dois calendários clicando nas setas para a direita e para a esquerda em cada canto superior respectivo.
 
-![Calendário](assets/aw_calendar.png)
+![Calendário](assets/aw_calendar2.png){width="60%"}
 
 O primeiro clique em um calendário inicia uma seleção de intervalo de datas. O segundo clique conclui uma seleção de intervalo de datas, que é realçada. Se a tecla `Shift` for pressionada (ou se o clique com o botão direito do mouse for usado), ela será anexada ao intervalo selecionado no momento.
 
@@ -32,3 +32,41 @@ Você também pode arrastar datas (e dimensões de tempo) em um projeto do Espa�
 | Intervalo de datas | Permite selecionar um intervalo de datas predefinido. Últimos 30 dias é padrão. **[!UICONTROL Essa semana/mês/trimestre/ano (exceto hoje)]** permite escolher entre intervalos de datas que não incluem dados parciais do dia de hoje. |
 | Aplicar a todos os painéis | Permite alterar o intervalo de datas selecionado para o painel atual e também para todos os outros painéis do projeto. |
 | Aplicar | Aplica o intervalo de datas somente a este painel. |
+
+## Sobre intervalos de datas relativos do painel {#relative-panel-dates}
+
+Se estiver trabalhando no Workspace, é possível fazer os componentes do intervalo de datas relativos ao calendário do painel. Três casos de uso comuns em que você verá datas relativas do painel entrarem em vigor são gráficos de Combinação, resumo de métricas principais e intervalos de datas da tabela de Forma livre.
+
+Para usar intervalos de datas do painel relativo
+
+1. Selecione o **Workspace** guia .
+1. Selecionar **Projeto em branco**.
+1. Adicione dimensões, métricas e segmentos no painel esquerdo.
+1. Clique no campo de intervalo de datas do painel para alternar a configuração de intervalo de datas do painel relativo.
+1. Selecionar **Fazer componentes do intervalo de datas em relação ao calendário do painel**.
+   * Selecione a opção para tornar os componentes do intervalo de datas relativos ao calendário do painel.
+Se as datas relativas forem selecionadas, as datas do acumulado serão baseadas na data de início do calendário do painel e não na data de hoje.
+   * Se essa opção não estiver selecionada, as datas do acumulado serão baseadas na data de hoje.
+
+   ![datas relativas ao painel](assets/relative-date-selected.png){width="60%"}
+
+1. Clique em **Aplicar**.
+As datas relativas são mostradas no canto superior direito.
+
+   ![datas relativas em forma livre ](assets/relative-date-range1.png)
+
+## Diretrizes para os intervalos de datas relativos do painel {#guidelines}
+
+Lembre-se das diretrizes a seguir ao usar intervalos de datas relativos do painel.
+
+### Fórmulas e intervalos de datas relativos {#formula-relative-dates}
+
+Se você tiver datas relativas selecionadas, todas as fórmulas de datas usarão a data de início do painel como ponto de partida.
+
+### Calendários personalizados e intervalos de datas relativos {#custom-calendar-formulas}
+
+Ao usar um calendário personalizado com base na semana e adicionar meses ou anos, a fórmula calcula o deslocamento do dia no período especificado. A data real pode ser diferente devido ao deslocamento. A fórmula escolhe o dia de aterrissagem no mesmo local do calendário personalizado. Por exemplo, a terceira sexta-feira da terceira semana em um calendário personalizado.
+
+### Sobre segmentos que usam datas do acumulado e intervalos de datas relativos do painel {#segments-relative-dates}
+
+Se você criar um segmento ou usar um segmento com uma data do acumulado, por exemplo, os Últimos 7 dias ou as Últimas 2 semanas, e clicar na visualização do segmento, a data do acumulado será iniciada a partir de *Hoje* em vez da data de início do painel. Como resultado, a visualização do segmento não corresponderá quando você realmente usar o segmento na tabela. A visualização é afetada, não o segmento propriamente dito.
