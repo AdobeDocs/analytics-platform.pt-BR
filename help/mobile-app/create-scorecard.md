@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 0922faf4476e52e05a8b7b0c4eb00aa38fbbf057
-workflow-type: ht
-source-wordcount: '1769'
-ht-degree: 100%
+source-git-commit: bacf1568b0d39d20f948c087d616881b66d96ca2
+workflow-type: tm+mt
+source-wordcount: '1808'
+ht-degree: 98%
 
 ---
 
@@ -105,6 +105,16 @@ Se o intervalo de datas desejado ainda não tiver sido criado, será possível c
 ![Novo cartão de pontuação5](assets/new_score_card5.png)
 
 Você será direcionado ao construtor de intervalo de datas, em que é possível criar e salvar um novo componente de intervalo de datas.
+
+### Mostrar intervalos de datas de comparação {#show-comparison-dates}
+
+Para incluir intervalos de datas de comparação, alterne a variável **Incluir datas de comparação** configuração.
+
+![Incluir datas de comparação](assets/include-comparison-dates.png)
+
+A configuração é *on* por padrão. Desmarque a opção se não quiser exibir datas de comparação.
+
+![Configuração de data de comparação desmarcada](assets/no-comparison-dates.png)
 
 ## Aplicar visualizações {#viz}
 
