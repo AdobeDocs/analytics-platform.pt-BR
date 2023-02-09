@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7f137f545ca2da64f4019818e0b00ab8d96e312f
+source-git-commit: 362954f126956ed0c77ad8c79aa634f8d6a36569
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 87%
+source-wordcount: '1390'
+ht-degree: 84%
 
 ---
 
@@ -21,6 +21,8 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | --- | --- |
 | **Fevereiro de 2023** |  |
 | Atualização da documentação de Públicos-alvo | Depois de criar um público-alvo, o Adobe cria um Experience Platform [segmento de fluxo para cada novo público-alvo do CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
+| Calendários e intervalos de datas do Workspace | Conteúdo atualizado para descrever intervalos de datas relativos, atualizações de cálculo de fórmulas e alterações na interface do usuário do calendário. Consulte [Sobre intervalos de datas relativos do painel](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Scorecards para dispositivos móveis | Nova seção de documentação para descrever como mostrar e ocultar intervalos de datas de comparação. Consulte [Mostrar intervalos de datas de comparação](/help/mobile-app/create-scorecard.md#show-comparison-dates) no CJA. |
 | **Janeiro de 2023** |  |
 | Filtrar e classificar tabelas | Conteúdo atualizado (incluindo a adição de procedimentos e a explicação das opções disponíveis) na [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) artigo 10. o Este artigo foi renomeado de &quot;Paginação, filtragem e classificação de tabelas&quot;. |
 | Guias de início rápido da assimilação de dados | Nova seção de documentação sobre como [assimilar e usar dados](/help/data-ingestion/data-ingestion.md) no CJA. |
