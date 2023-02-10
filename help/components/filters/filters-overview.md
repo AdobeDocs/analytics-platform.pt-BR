@@ -3,9 +3,9 @@ title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 source-git-commit: 3c2361069e2a4934c7f6d616f8223bbba1b410ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1111'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
