@@ -6,9 +6,9 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 source-git-commit: b0a1fdcfb2d200d40c308c557c2ddff172c1e18f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '745'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ O Gerenciador de agendamento de projetos mostra os itens criados por um usuário
 
 >[!NOTE]
 >
->A opção de proteger com senha um projeto agendado aparece somente para clientes do CJA que compraram o produto complementar [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den).
+>A opção de proteger com senha um projeto agendado aparece somente para clientes do CJA que compraram o produto complementar [Healthcare Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html?lang=pt-BR).
 
 A Adobe usa a senha para criptografar projetos agendados, sejam eles enviados nos formatos .pdf ou .csv.
 
@@ -84,7 +84,7 @@ Depois que sua empresa comprou o SKU do Healthcare Shield e foi habilitada para 
 
 Os requisitos de senha estão em conformidade com o padrão da Adobe, exigindo no mínimo 8 caracteres com pelo menos um número e um caractere especial.
 
-### Proteger por senha um novo projeto agendado
+### Proteger com senha um novo projeto agendado
 
 1. Depois de salvar o projeto, acesse **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo agora]** ou [!UICONTROL Compartilhar] > **[!UICONTROL Enviar arquivo agendado]**.
 1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=pt-BR#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=pt-BR#schedule).
