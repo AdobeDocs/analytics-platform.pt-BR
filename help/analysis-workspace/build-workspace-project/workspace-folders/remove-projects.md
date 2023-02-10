@@ -5,9 +5,9 @@ title: Remover projetos de pastas
 feature: CJA Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 source-git-commit: b251cc2f918b54e52ad70def28187473255efbfa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Para remover um projeto de uma pasta, você pode mover o projeto para outro loca
 
 ## Mover um projeto {#move-project-in-folder}
 
-Você pode mover projetos de uma pasta para outra pasta criada.
+Você pode mover projetos de uma pasta para outra pasta que você criou.
 
 1. Em uma pasta de projeto, selecione o ícone de reticências **...** ao lado do nome do projeto.
 
