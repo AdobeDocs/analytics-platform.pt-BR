@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 source-git-commit: 04aaf9ae9f720255c97c9dc148953b5b9d6967ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '937'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -88,6 +88,6 @@ Agora você pode criar relatórios sobre `audienceMembershipId`, `audienceMember
 * Você deve executar esse processo regularmente para que os dados do público-alvo sejam atualizados constantemente no CJA.
 * Você pode importar vários públicos-alvo em uma única conexão do CJA. Isso adiciona mais complexidade ao processo, mas é possível. Para que isso funcione, é necessário fazer algumas modificações no processo acima:
    1. Execute esse processo para cada público-alvo desejado em sua coleção de públicos-alvo no RTCP.
-   1. O CJA é compatível com arrays/arrays de objetos em conjuntos de dados de perfil. Uso de um [matriz de objetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=en) para audienceMembershipId ou audienceMembershipIdName é a melhor opção.
+   1. O CJA é compatível com arrays/arrays de objetos em conjuntos de dados de perfil. Uso de uma [array de objetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/object-arrays.html?lang=pt-BR) para audienceMembershipId ou audienceMembershipIdName é a melhor opção.
    1. Na visualização de dados, crie uma nova dimensão usando a transformação de Substring no campo `audienceMembershipId` para converter a string de valores separados por vírgula em uma matriz. OBSERVAÇÃO: atualmente, há um limite de 10 valores na matriz.
    1. Agora você pode relatar sobre essa nova dimensão `audienceMembershipIds` no Espaço de trabalho do CJA.
