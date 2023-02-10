@@ -5,17 +5,17 @@ feature: CJA Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
 source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '726'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
 # Salvar projetos
 
-Os projetos na Analysis Workspace são salvos automaticamente a cada 2 minutos.
+Os projetos no Analysis Workspace são salvos automaticamente a cada 2 minutos.
 
-Também é possível salvar projetos manualmente. Opções adicionais como adicionar tags ou notas estão disponíveis quando você salva manualmente um projeto.
+Também é possível salvar projetos manualmente. Opções adicionais como adicionar tags ou notas estão disponíveis ao salvar manualmente um projeto.
 
 ## Salvar opções do projeto {#Save}
 
@@ -34,34 +34,34 @@ Para salvar manualmente um projeto:
 
 ## Salvar automaticamente {#Autosave}
 
-Todos os projetos no Analysis Workspace são salvos automaticamente a cada 2 minutos no computador local. Isso inclui projetos recém-criados que ainda não foram salvos manualmente.
+Todos os projetos no Analysis Workspace são salvos automaticamente a cada 2 minutos no computador local. Inclui projetos recém-criados que ainda não foram salvos manualmente.
 
-* **Novos projetos:** Mesmo que os novos projetos sejam salvos automaticamente, você deve salvar cada novo projeto manualmente na primeira vez. A Analysis Workspace solicita que você salve novos projetos manualmente ao alternar para outro projeto, fechar a guia do navegador e assim por diante.
+* **Novos projetos:** mesmo que os novos projetos sejam salvos automaticamente, você deve salvar cada novo projeto manualmente na primeira vez. O Analysis Workspace solicita que você salve novos projetos manualmente ao alternar para outro projeto, fechar a guia do navegador e assim por diante.
 
-   Se, por qualquer motivo, você perder inesperadamente o acesso a um projeto recém-criado antes de salvá-lo manualmente, uma versão de recuperação do seu projeto será salva na página inicial da Analysis Workspace em uma pasta chamada `Recovered Projects (Last 7 Days)`. Você deve restaurar o projeto recuperado e salvá-lo manualmente em um local desejado.
+   Se, por qualquer motivo, você perder inesperadamente o acesso a um projeto recém-criado antes de salvá-lo manualmente, uma versão de recuperação do seu projeto será salva na página inicial do Analysis Workspace em uma pasta chamada `Recovered Projects (Last 7 Days)`. Você deve restaurar o projeto recuperado e salvá-lo manualmente em um local desejado.
 
    Para restaurar um projeto recuperado:
 
-   1. Vá para o [!UICONTROL **Projetos recuperados**] na página de aterrissagem do Analysis Workspace.
+   1. Acesse a pastas [!UICONTROL **Projetos recuperados**] na página de destino do Analysis Workspace.
 
       ![](assets/recovered-folder.png)
 
    1. Abra o projeto e salve-o no local desejado.
 
 
-* **Projetos existentes:** Se, por qualquer motivo, você deixar um projeto com alterações que ainda não foram salvas automaticamente, a Analysis Workspace solicitará que você salve as alterações ou fornecerá uma mensagem de aviso.
+* **Projetos existentes:** se, por qualquer motivo, você sair de um projeto com alterações que ainda não foram salvas automaticamente, o Analysis Workspace solicitará que você salve as alterações ou exibirá uma mensagem de aviso.
 
    Veja a seguir alguns cenários comuns:
 
 ### Abrir outro projeto
 
-Se você abrir um projeto adicional enquanto estiver trabalhando em um projeto que contém alterações que ainda não foram salvas automaticamente, a Analysis Workspace solicitará que você salve o projeto atual antes de sair.
+Se você abrir um projeto adicional enquanto estiver trabalhando em um projeto que contém alterações que ainda não foram salvas automaticamente, o Analysis Workspace solicitará que você salve o projeto atual antes de sair.
 
 As opções disponíveis são as seguintes:
 
-* **Salvar:** Substitui a cópia local salva automaticamente mais recente do seu projeto pelas alterações mais recentes.
-* **Salvar como:** Salva as alterações mais recentes como um novo projeto. O projeto original é salvo somente com as alterações salvas automaticamente mais recentes.
-* **Descartar alterações:** Descarta suas alterações mais recentes. O projeto retém as alterações salvas automaticamente mais recentes.
+* **Salvar:** substitui a cópia local salva automaticamente mais recente do seu projeto pelas alterações mais recentes.
+* **Salvar como:** salva as alterações mais recentes como um novo projeto. O projeto original é salvo somente com as alterações salvas automaticamente mais recentes.
+* **Descartar alterações:** descarta as alterações mais recentes. O projeto retém as alterações salvas automaticamente mais recentes.
 
 ![](assets/existing-save.png)
 
@@ -73,13 +73,13 @@ Se você sair da página ou fechar a guia do navegador ao visualizar um projeto 
 
 ### Falha do navegador ou tempo limite da sessão
 
-Se o navegador travar ou se a sessão expirar, na próxima vez que você acessar o Analysis Workspace, será solicitado a recuperar as alterações no projeto que ainda não foram salvas automaticamente.
+Se o navegador travar ou se a sessão expirar, na próxima vez que você acessar o Analysis Workspace, será necessário recuperar as alterações no projeto que ainda não foram salvas automaticamente.
 
-A seguir, a caixa de diálogo Recuperação de projeto que exibe a primeira vez que você acessa o Analysis Workspace após uma falha ou um tempo limite.
+A seguir mostramos a caixa de diálogo Recuperação de projeto, que é exibida a primeira vez que você acessa o Analysis Workspace após uma falha ou um tempo limite.
 
-Selecionar **Sim** para restaurar o projeto a partir da cópia salva automaticamente mais recente.
+Selecione **Sim** para restaurar o projeto a partir da cópia salva automaticamente mais recente.
 
-Selecionar **Não** para excluir a cópia salva automaticamente e abrir a última versão salva pelo usuário do projeto.
+Selecione **Não** para excluir a cópia salva automaticamente e abrir a última versão salva pelo usuário do projeto.
 
 ![](assets/project-recovery.png)
 
