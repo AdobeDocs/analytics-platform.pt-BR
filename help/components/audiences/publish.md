@@ -2,10 +2,10 @@
 title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: e117775aa949b3d471e708ca5559474af76d28bc
+source-git-commit: d343436f5b72e30b420088f9e9a3a8fb9b97becb
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 70%
+source-wordcount: '1430'
+ht-degree: 68%
 
 ---
 
@@ -84,14 +84,13 @@ Depois de criar um público-alvo, o Adobe cria um segmento de transmissão de Ex
 
 Em vários pontos antes, durante e após a publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
-![](assets/latency-diagram.png)
-
 | Ponto de latência | Duração da latência |
 | --- | --- |
 | Ingestão de dados no Data Lake | Até 30 minutos |
 | Assimilação de dados do Experience Platform para o CJA | Até 60 minutos |
-| Publicação de público-alvo no perfil do cliente em tempo real | Menos de 5 minutos (dependendo do tamanho do público) |
+| Publicação de público-alvo no Perfil do cliente em tempo real, incluindo a criação automática do segmento de transmissão, e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
 | Atualizar frequência para públicos-alvo | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
+| Criação de destino no AEP: Ativar o novo segmento no Adobe Target | Atualmente, isso pode levar até 24 horas, dependendo do intervalo de atualização do público-alvo e do tipo de avaliação de segmento |
 
 ## Usar públicos-alvo do CJA na Experience Platform {#audiences-aep}
 
