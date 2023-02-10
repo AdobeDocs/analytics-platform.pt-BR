@@ -2,10 +2,10 @@
 title: Logs de auditoria
 description: Saiba como visualizar e gerenciar logs de auditoria do CJA.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: 53d019f99cbf06ee97243121fbf46f6d3ee9f0a7
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '856'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Este tópico aborda logs de auditoria no CJA, incluindo como visualizá-los e ge
 
 Quando o recurso é ativado para sua organização, os logs de auditoria são coletados automaticamente conforme a atividade ocorre. Não é necessário ativar manualmente a coleção de log.
 
-Para visualizar e exportar logs de auditoria, você deve ter recebido a permissão de controle **[!UICONTROL Acesso aos logs de auditoria]** no console da Adobe. Para saber como gerenciar permissões individuais para recursos do CJA, consulte a [documentação de controle de acesso](/help/getting-started/cja-access-control.md).
+Para visualizar e exportar logs de auditoria, você deve ter recebido a permissão de controle **[!UICONTROL Acesso aos logs de auditoria]** no console da Adobe. Para saber como gerenciar permissões individuais para recursos do CJA, consulte a [documentação de controle de acesso](../admin/cja-access-control.md).
 
 ## Exibir o log de auditoria na interface
 

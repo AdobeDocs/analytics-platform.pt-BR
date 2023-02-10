@@ -5,8 +5,8 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
+source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
+workflow-type: tm+mt
 source-wordcount: '1808'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Quando você excluir uma conexão no [!UICONTROL Customer Journey Analytics], um
 * As exibições de dados criadas com base na conexão excluída deixarão de funcionar.
 * Da mesma forma, qualquer projeto do Espaço de trabalho que dependa de visualizações de dados na conexão excluída deixará de funcionar.
 
-[Saiba mais](/help/getting-started/cja-deletion.md) sobre as implicações da exclusão.
+[Saiba mais](/help/admin/cja-deletion.md) sobre as implicações da exclusão.
 
 ### Pesquisar uma conexão ou um conjunto de dados
 
