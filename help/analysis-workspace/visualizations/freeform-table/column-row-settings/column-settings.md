@@ -4,9 +4,9 @@ title: Configurações de coluna
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 source-git-commit: 46873cc66461c40d7f44c8aac91ddc3ccf15ee21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '666'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
