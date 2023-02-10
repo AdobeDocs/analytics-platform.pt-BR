@@ -2,10 +2,10 @@
 title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: d343436f5b72e30b420088f9e9a3a8fb9b97becb
+source-git-commit: 04dd36d9157da852aea7d488cbcc2617162d9324
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 68%
+source-wordcount: '1411'
+ht-degree: 77%
 
 ---
 
@@ -38,7 +38,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    | [!UICONTROL Nome] | O nome do público-alvo. |
    | [!UICONTROL Tags] | Todas as tags que você deseja atribuir ao público-alvo para fins organizacionais. Você pode usar uma tag pré-existente ou inserir uma nova. |
    | [!UICONTROL Descrição] | Adicione uma boa descrição do público-alvo para diferenciá-lo dos outros. |
-   | [!UICONTROL Frequência de atualização] | A frequência na qual você deseja atualizar o público-alvo.<ul><li>Você pode optar por criar um público-alvo único (padrão) que não precise de atualização. Por exemplo, isso pode ser útil para campanhas específicas, únicas.</li><li>Você pode selecionar outros intervalos de atualização. Para a frequência de atualização de 4 horas, há um limite de 75 a 150 atualizações de público-alvo, dependendo de seu direito CJA.</li></ul> |
+   | [!UICONTROL Frequência de atualização] | A frequência na qual você deseja atualizar o público-alvo.<ul><li>Você pode optar por criar um público-alvo único (padrão) que não precise de atualização. Por exemplo, isso pode ser útil para campanhas específicas, únicas.</li><li>Você pode selecionar outros intervalos de atualização. Para a frequência de atualização de 4 horas, há um limite de 75 a 150 atualizações de público, dependendo do seu direito do CJA.</li></ul> |
    | Data de validade | Quando o público-alvo parará de ser atualizado. O padrão é 1 ano a partir da data de criação. Públicos-alvo que expiram são tratados de forma semelhante aos relatórios agendados que expiram: o administrador recebe um email um mês antes de o público-alvo expirar. |
    | Atualizar janela de retrospectiva | Especifica até que ponto você deseja voltar na janela de dados ao criar esse público-alvo. O máximo é de 90 dias. |
    | [!UICONTROL Intervalo de datas único] | Intervalo de datas quando você deseja que o público-alvo único seja publicado. |
@@ -90,7 +90,7 @@ Em vários pontos antes, durante e após a publicação do público-alvo, podem 
 | Assimilação de dados do Experience Platform para o CJA | Até 60 minutos |
 | Publicação de público-alvo no Perfil do cliente em tempo real, incluindo a criação automática do segmento de transmissão, e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
 | Atualizar frequência para públicos-alvo | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
-| Criação de destino no AEP: Ativar o novo segmento no Adobe Target | Atualmente, isso pode levar até 24 horas, dependendo do intervalo de atualização do público-alvo e do tipo de avaliação de segmento |
+| Criação de destino no AEP: Ativar o novo segmento | 1 a 2 horas |
 
 ## Usar públicos-alvo do CJA na Experience Platform {#audiences-aep}
 
@@ -120,9 +120,9 @@ Quando um público-alvo do CJA é excluído, ele não será mais exibido na inte
 
 +++
 
-+++**Se um perfil correspondente não existir no RTCDP, um novo perfil será criado?**
++++**Se um perfil correspondente não existir na RTCDP, um novo perfil será criado?**
 
-Sim, vai.
+Sim, será.
 
 +++
 
@@ -140,13 +140,13 @@ Qualquer par de identidade/namespace usado no [Configuração de conexão](https
 
 +++**Qual ID é escolhida como a identidade primária?**
 
-Veja acima. Enviamos apenas uma identidade por &quot;pessoa&quot; do CJA.
+Veja acima. Enviamos apenas uma identidade por “pessoa” do CJA.
 
 +++
 
-+++**O RTCP também processa as mensagens do CJA? O CJA pode adicionar identidades a um gráfico de identidade de perfil por meio do compartilhamento de público-alvo?**
++++**A RTCP também processa as mensagens do CJA? O CJA pode adicionar identidades a um gráfico de identidade de perfil por meio do compartilhamento de público-alvo?**
 
-Não. Enviamos apenas uma identidade por &quot;pessoa&quot;, de modo que não haveria bordas de gráfico para o RTCP consumir.
+Não. Enviamos apenas uma identidade por “pessoa”, de modo que não haveria bordas de gráfico para a RTCP consumir.
 
 +++
 
