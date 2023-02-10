@@ -8,7 +8,7 @@ exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 34ee7954329d7dc8520031a977bb83d6e1bf3d3d
 workflow-type: tm+mt
 source-wordcount: '1454'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ Você também pode ter várias visualizações de dados com base na mesma conex�
 
 ## Alterações na forma como o Adobe identifica visitantes
 
-O CJA expande os conceitos de identidades além das ECIDs para incluir qualquer ID que você deseja usar, incluindo ID do cliente, ID de cookie, ID compilada, ID de usuário, Código de rastreamento e assim por diante. Usar uma ID de namespace comum em conjuntos de dados ou usando o [Cross-Channel Analytics](/help/cca/overview.md) ajuda a vincular pessoas em diferentes conjuntos de dados. Qualquer usuário que configurar um projeto do Espaço de trabalho no CJA deverá entender as IDs usadas nos conjuntos de dados. Assista ao vídeo a seguir que destaca o uso de identidades no CJA:
+O CJA expande os conceitos de identidades além das ECIDs para incluir qualquer ID que você deseja usar, incluindo ID do cliente, ID de cookie, ID compilada, ID de usuário, Código de rastreamento e assim por diante. Usar uma ID de namespace comum em conjuntos de dados ou usando a [Análise de vários canais](/help/cca/overview.md) ajuda a vincular pessoas em diferentes conjuntos de dados. Qualquer usuário que configurar um projeto do Espaço de trabalho no CJA deverá entender as IDs usadas nos conjuntos de dados. Assista ao vídeo a seguir que destaca o uso de identidades no CJA:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30750/?quality=12)
 

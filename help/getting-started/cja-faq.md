@@ -7,7 +7,7 @@ feature: FAQ
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,18 +38,18 @@ O Customer Journey Analytics inclui recursos de [Preparação de dados](https://
 +++
 
 
-## 2. Compilação de dados (Cross-Channel Analytics) {#stitching}
+## 2. Compilação de dados (Análise de vários canais) {#stitching}
 
 +++**O [!UICONTROL Customer Journey Analytics] pode &quot;costurar&quot; todos os dispositivos ou conjuntos de dados?**
 
-Sim. [!UICONTROL O Customer Journey Analytics] tem uma solução de compilação chamada [Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) (CCA). Ele permite alterar a chave da ID de pessoa de um conjunto de dados, o que possibilita realizar uma combinação perfeita de vários conjuntos de dados.
+Sim. [!UICONTROL O Customer Journey Analytics] tem uma solução de compilação chamada [Análise de vários canais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) (CCA). Ele permite alterar a chave da ID de pessoa de um conjunto de dados, o que possibilita realizar uma combinação perfeita de vários conjuntos de dados.
 
 +++
 
 
 +++**A costura de comportamento anônimo para comportamento autenticado é compatível?**
 
-Sim. [O Cross-Channel Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada.
+Sim. [A Análise de vários canais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada.
 
 +++
 

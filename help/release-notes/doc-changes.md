@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
 workflow-type: tm+mt
 source-wordcount: '1390'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Preferências do usuário do Workspace | Várias preferências adicionais de usuário estão disponíveis no [Preferências](/help/analysis-workspace/user-preferences.md). |
 | Salvar automaticamente em projetos do Workspace | Conteúdo atualizado para incluir a funcionalidade de salvamento automático em [Salvar projetos](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | Landing page | Novas atualizações de landing page [página de aterrissagem](/help/getting-started/landing.md). |
-| Agendar pastas de trabalho | Página dedicada para descrever como [Agendar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) em Report Builder. |
+| Programar pastas de trabalho | Página dedicada para descrever como [Agendar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) em Report Builder. |
 | Suporte à matriz de objetos para conjuntos de dados de perfil e pesquisa | Atualizado [Uso de arrays de objetos](/help/use-cases/object-arrays.md) e [Assimilar públicos da AEP](/help/use-cases/data-ingestion/ingest-aep-segments.md) para refletir o suporte da matriz de objetos para conjuntos de dados de perfil e pesquisa. |
 
 ## 2022 {#22}
@@ -136,7 +136,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 | Data | Atualizar descrição |
 | --- | --- |
-| 13 de novembro de 2020 | Novos tópicos sobre [Cross-Channel Analytics](/help/cca/overview.md), que permite o rechaveamento da ID de pessoa de um conjunto de dados e a combinação contínua de vários conjuntos de dados. |
+| 13 de novembro de 2020 | Novos tópicos sobre [Análise de vários canais](/help/cca/overview.md), que permite o rechaveamento da ID de pessoa de um conjunto de dados e a combinação contínua de vários conjuntos de dados. |
 | 13 de novembro de 2020 | Um novo caso de uso sobre [Importação de dados da central de atendimento e da Web](/help/use-cases/cross-channel/call-center.md) foi adicionado. |
 | 10 de novembro de 2020 | Adição de uma seção sobre as implicações da exclusão de componentes de dados nas [Perguntas frequentes](/help/getting-started/cja-faq.md). |
 | 2 de novembro de 2020 | Atualizações na página de [suporte de recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |

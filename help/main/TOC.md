@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 45c6e6db751f5a73bb9d44d3a6641c7369d6252f
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 94%
    + [Visão geral da assimilação de dados](../data-ingestion/data-ingestion.md)
    + Assimilar e usar guias de início rápido{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + [Adobe Experience Platform Web SDK e rede de borda](../data-ingestion/aepwebsdk.md)
+      + [SDK da Web da Adobe Experience Platform Rede de borda](../data-ingestion/aepwebsdk.md)
       + [Dados em lote](../data-ingestion/batch.md)
       + [Transmissão de dados](../data-ingestion/streaming.md)
       + [Conectores de origem](../data-ingestion/sources.md)
@@ -63,7 +63,7 @@ ht-degree: 94%
    + [Gerenciar conexões](../connections/manage-connections.md)
    + [Conjuntos de dados de evento combinados](../connections/combined-dataset.md)
    + [Pesquisas padrão](../connections/standard-lookups.md)
-   + [Cross-Channel Analytics](../connections/cca.md)
+   + [Análise de vários canais](../connections/cca.md)
 
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das visualizações de dados](../data-views/data-views.md)
@@ -264,14 +264,14 @@ ht-degree: 94%
    + [Trabalhar com filtros](../report-builder/work-with-filters.md)
    + [Filtrar dimensões](../report-builder/filter-dimensions.md)
    + [Gerenciar blocos de dados](../report-builder/manage-reportbuilder.md)
-   + [Agendar pastas de trabalho](../report-builder/schedule-reportbuilder.md)
+   + [Programar pastas de trabalho](../report-builder/schedule-reportbuilder.md)
    + [Rótulos restritos](../report-builder/restricted-labels.md)
    + [Configurações do Report Builder](../report-builder/report-builder-settings.md)
 
-+ Cross-Channel Analytics {#cca}
-   + [Visão geral do Cross-Channel Analytics](../cca/overview.md)
++ Análise de vários canais {#cca}
+   + [Visão geral da Análise de vários canais](../cca/overview.md)
    + [Como funcionam as repetições](../cca/replay.md)
-   + [Perguntas frequentes sobre o Cross-Channel Analytics](../cca/faq.md)
+   + [Perguntas frequentes sobre a Análise de vários canais](../cca/faq.md)
 
 + Integrações da Adobe {#integrations}
    + [Visão geral da integração de soluções da Adobe com o CJA](/help/integrations/overview.md)
@@ -310,7 +310,7 @@ ht-degree: 94%
 
 + Administração {#cja-admin}
    + [Controle de acesso](../admin/cja-access-control.md)
-   + [Visualizar e gerenciar uso](../admin/estimate-usage.md)
+   + [Visualizar e gerenciar o uso do ](../admin/estimate-usage.md)
    + [Implicações de exclusão](../admin/cja-deletion.md)
 
 + Labs {#labs}
