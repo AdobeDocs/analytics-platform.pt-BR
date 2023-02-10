@@ -5,9 +5,9 @@ title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 source-git-commit: 5107c1ed145579c7da27ce50c13543196fcf6fe3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
 ## Personalizar configurações de visualização
 
-Você pode personalizar as configurações de visualização para uma visualização individual, ou para todas as visualizações que criar.
+Você pode personalizar as configurações de visualização para uma visualização individual ou para todas as visualizações que criar.
 
 ### Personalizar configurações de visualização para uma única visualização
 
