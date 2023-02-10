@@ -1,19 +1,19 @@
 ---
-title: Cross-Channel Analytics
-description: Saiba como as IDs de visitante redirecionadas de vários conjuntos de dados para unir visitantes.
+title: Análise de vários canais
+description: Saiba como redigitar IDs de visitante de vários conjuntos de dados para compilar visitantes.
 solution: Customer Journey Analytics
 feature: Connections
 source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
-# Cross-Channel Analytics
+# Análise de vários canais
 
-O Cross-Channel Analytics (CCA) permite rechavear a ID de pessoa de um conjunto de dados, o que permite uma combinação perfeita de vários conjuntos de dados. O AVC analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. Com o Cross-Channel Analytics, você pode responder a perguntas como:
+A Análise de vários canais (CCA) permite redigitar a ID de pessoa de um conjunto de dados, o que permite uma combinação perfeita de vários conjuntos de dados. O CCA analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. Com a Análise de vários canais, você pode responder a perguntas como:
 
 * Quantas pessoas começam sua experiência em um canal e depois terminam em outro?
 * Quantas pessoas interagem com a minha marca? Quantos e quais tipos de dispositivos eles usam? Como eles se sobrepõem?
@@ -22,8 +22,8 @@ O Cross-Channel Analytics (CCA) permite rechavear a ID de pessoa de um conjunto 
 * Quais são os caminhos mais comuns que os usuários fazem de um dispositivo para outro? Onde eles desistem? Onde eles têm sucesso?
 * Como o comportamento de usuários com vários dispositivos difere dos usuários com um único dispositivo?
 
-Para obter uma discussão mais detalhada do Cross-Channel Analytics, acesse:
+Para obter uma discussão mais detalhada da Análise de vários canais, acesse:
 
-* [Visão geral do Cross-Channel Analytics](/help/cca/overview.md)
+* [Visão geral da Análise de vários canais](/help/cca/overview.md)
 * [Como a repetição funciona](/help/cca/replay.md)
 * [Perguntas frequentes](/help/cca/faq.md)
