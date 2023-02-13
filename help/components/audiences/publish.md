@@ -2,9 +2,9 @@
 title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 04dd36d9157da852aea7d488cbcc2617162d9324
+source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: '1419'
 ht-degree: 77%
 
 ---
@@ -84,13 +84,17 @@ Depois de criar um público-alvo, o Adobe cria um segmento de transmissão de Ex
 
 Em vários pontos antes, durante e após a publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
-| Ponto de latência | Duração da latência |
-| --- | --- |
-| Ingestão de dados no Data Lake | Até 30 minutos |
-| Assimilação de dados do Experience Platform para o CJA | Até 60 minutos |
-| Publicação de público-alvo no Perfil do cliente em tempo real, incluindo a criação automática do segmento de transmissão, e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
-| Atualizar frequência para públicos-alvo | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
-| Criação de destino no AEP: Ativar o novo segmento | 1 a 2 horas |
+![](assets/latency-diagram.png)
+
+| # | Ponto de latência | Duração da latência |
+| --- | --- | --- |
+| 1 | Ingestão de dados no Data Lake | Até 30 minutos |
+| 2 | Assimilação de dados do Experience Platform para o CJA | Até 60 minutos |
+| 3 | Publicação de público-alvo no Perfil do cliente em tempo real, incluindo a criação automática do segmento de transmissão, e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
+| 4 | Atualizar frequência para públicos-alvo | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
+| 5 | Criação de destino no AEP: Ativar o novo segmento | 1 a 2 horas |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Usar públicos-alvo do CJA na Experience Platform {#audiences-aep}
 
