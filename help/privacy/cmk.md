@@ -2,10 +2,10 @@
 title: Chaves gerenciadas pelo cliente
 description: Saiba como configurar chaves gerenciadas pelo cliente no CJA.
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
-source-git-commit: bb6e4dcc1c917fcfb565430232e3c5562f63fd1a
-workflow-type: ht
+source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ O Customer Journey Analytics (CJA) fornece a opção para [Healthcare Shield](ht
 
 >[!NOTE]
 >
->As Chaves gerenciadas pelo cliente estão disponíveis no momento apenas para organizações que compraram a oferta complementar [Healthcare Shield ou Privacy &amp; Security Shield](https://experienceleague.adobe.com/docs/blueprints-learn/architecture/vertical-blueprints/healthcare-vertical.html%3Flang%3Den).
+>As Chaves gerenciadas pelo cliente estão disponíveis no momento apenas para organizações que compraram a oferta complementar [Healthcare Shield ou Privacy &amp; Security Shield](https://experienceleague.adobe.com/docs/customer-data-management-voices-events/events/governance/healthcare-shield.html?lang=en).
 
 ## Configurar CMK para o CJA
 
