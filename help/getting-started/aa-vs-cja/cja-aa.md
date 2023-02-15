@@ -4,10 +4,10 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
-source-wordcount: '1537'
-ht-degree: 100%
+source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
+workflow-type: tm+mt
+source-wordcount: '1527'
+ht-degree: 99%
 
 ---
 
@@ -83,7 +83,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Dimensões de segmentação geográfica | Toda segmentação geográfica coletada no Adobe Analytics flui para o CJA por meio do [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). As implementações que não usam o Conector de origem do Analytics, como aquelas que dependem do SDK da Web da AEP para coleção de dados digitais, não terão a tabulação completa de pesquisas geográficas executadas automaticamente: país e estado são compatíveis, cidade e CEP não são. |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos e Analytics for Target (A4T) não são compatíveis. |
 | Regras de processamento | Para conjuntos de dados do Conector de origem do Analytics, as regras de processamento ainda se aplicam. [Os recursos de preparação de dados na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR) também podem ser usados como substituição das regras de processamento para dados que vão diretamente para a Platform. |
-| A4T | O suporte parcial é fornecido por meio de campos no [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). Há planejamento de suporte para nomes amigáveis do A4T em atividades de direcionamento e experiência. |
+| A4T | O suporte parcial é fornecido por meio de campos no [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). Há suporte para nomes amigáveis do A4T em atividades e experiências do Target. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -112,7 +112,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | --- | --- |
 | Activity Map | Suporte ainda não planejado. |
 | Advertising Cloud | Suporte ainda não planejado. |
-| Fontes de dados de resumo | Suporte ainda não planejado. |
 
 {style=&quot;table-layout:auto&quot;}
 
