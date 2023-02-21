@@ -2,10 +2,10 @@
 title: Gerenciar públicos-alvo criados no Customer Journey Analytics
 description: Saiba como gerenciar públicos-alvo no Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
-source-git-commit: c851a07a456fa033b37e45a3d182a8fc80988b82
-workflow-type: ht
+source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
+workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 100%
 O gerenciamento de públicos-alvo criados anteriormente permite
 
 * **Agendar ou cancelar o agendamento** de atualização automática de público-alvo. A expiração máxima na programação é de 1 ano.
-* **Renovar um cronograma de atualização de público-alvo** quando estiver prestes a expirar. Públicos-alvo que expiram são tratados de forma semelhante aos relatórios agendados que expiram: o administrador recebe um email um mês antes de o cronograma expirar.
-* Visualize o **intervalo de atualização** e a **última vez que um público-alvo foi atualizado**
+* **Renovar um agendamento de atualização de público** quando estiver prestes a expirar. Públicos-alvo que expiram são tratados de forma semelhante aos relatórios agendados que expiram: o administrador recebe um email um mês antes de o cronograma expirar.
+* Visualize o **intervalo de atualização** e **última vez que um público-alvo foi atualizado**
 * Obter informações sobre o **tempo necessário para produzir um público-alvo** do Customer Journey Analytics (CJA) e o tempo necessário para que o público-alvo apareça no Perfil do cliente em tempo real para fins de ativação.
 * Veja se os públicos-alvo no CJA são **usados ativamente pelo Perfil do cliente em tempo real** ou (idealmente) por aplicativos da Experience Platform que consomem os públicos-alvo criados pelo CJA.
 
