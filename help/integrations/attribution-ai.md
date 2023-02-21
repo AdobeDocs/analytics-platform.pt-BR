@@ -4,10 +4,10 @@ title: Integrar IA de atribuição ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
-source-git-commit: ab3b9bdccbd92873a6fe11a1c7605692d2a0da8b
+source-git-commit: 52f9cc80f9e0608f8d3ad522da488bfceb8d0dc0
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 100%
+source-wordcount: '930'
+ht-degree: 87%
 
 ---
 
@@ -74,7 +74,15 @@ Em um projeto do Espaço de trabalho do CJA, você pode obter métricas como “
 
 ![Dimensões da AAI](assets/aai-dims.png)
 
+A saída da pontuação bruta no AAI tem um esquema aninhado, onde o caminho para os campos pode ser longo o suficiente para ocupar a maioria dos espaços nas tabelas ou visualizações. Para fins de concisão, [!UICONTROL Nome de exibição] é gerado e aproveitado automaticamente no CJA seguindo as regras abaixo:
 
+* Todos os campos têm um prefixo &quot;AAI&quot;
+* Para campos de ponto de contato:
+   * Para campos que fazem parte da pontuação XDM, eles aparecem no CJA como `AAI T {field name}`
+   * Para campos incluídos como coluna passThrough, eles serão exibidos no CJA como `AAI T PT {field name}`
+* Para campos de conversão:
+   * Para campos que fazem parte da pontuação XDM, eles serão exibidos no CJA como `AAI C {field name}`
+   * Para campos incluídos como coluna passThrough, eles serão exibidos no CJA como `AAI C PT {field name}`
 
 **Pedidos com pontuações influenciadas e incrementais**
 
