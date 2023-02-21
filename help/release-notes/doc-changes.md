@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: af9113f3afced902b385747bceaa9e51b72d83e6
+source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 84%
+source-wordcount: '1430'
+ht-degree: 83%
 
 ---
 
@@ -20,6 +20,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Recurso | Descrição |
 | --- | --- |
 | **Fevereiro de 2023** |  |
+| Comparar o CJA às soluções de BI | Novo documento em um [comparação](../getting-started/cja-vs-bi.md) de Customer Journey Analytics para soluções típicas de BI. |
 | Atualização da documentação de Públicos-alvo | Nova seção sobre [considerações sobre latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
 | Atualização da documentação de Públicos-alvo | Depois de criar um público-alvo, o Adobe cria um Experience Platform [segmento de fluxo para cada novo público-alvo do CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
 | Calendários e intervalos de datas do Workspace | Conteúdo atualizado para descrever intervalos de datas relativos, atualizações de cálculo de fórmulas e alterações na interface do usuário do calendário. Consulte [Sobre intervalos de datas relativos do painel](/help/components/date-ranges/calendar.md#relative-panel-dates). |
