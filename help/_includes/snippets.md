@@ -1,20 +1,20 @@
 ---
 source-git-commit: 5303fa540fbde7716326f525158197f354771666
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '104'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 # Trechos
 
-## Teste limitado da fase de lançamento {#release-limited-testing}
+## Fase de teste limitado da versão {#release-limited-testing}
 
 >[!AVAILABILITY]
 >
->A funcionalidade descrita neste artigo está na fase Teste limitado da versão e pode não estar disponível ainda em seu ambiente. Essa nota será removida quando a funcionalidade estiver geralmente disponível. Para obter informações sobre o processo de lançamento do Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
+>A funcionalidade descrita neste artigo está na fase de teste limitado da versão e pode não estar disponível ainda em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
 
-## Seção Teste limitado da fase de lançamento {#release-limited-testing-section}
+## Seção Fase de teste limitado da versão {#release-limited-testing-section}
 
 >[!AVAILABILITY]
 >
->A funcionalidade descrita nesta seção está na fase Teste limitado da versão e pode não estar disponível ainda em seu ambiente. Essa nota será removida quando a funcionalidade estiver geralmente disponível. Para obter informações sobre o processo de lançamento do Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
+>A funcionalidade descrita nesta seção está na fase de teste limitado da versão e pode não estar disponível ainda em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
