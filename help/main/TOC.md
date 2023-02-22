@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 97%
 + Introdução {#cja-overview}
    + [Visão geral do Customer Journey Analytics](../getting-started/cja-overview.md)
    + [Guia de início rápido](../getting-started/cja-getting-started.md)
-   + [Página de aterrissagem](../getting-started/landing.md)
+   + [Página de destino](../getting-started/landing.md)
    + [Perguntas frequentes](../getting-started/cja-faq.md)
    + [Comparar o CJA às soluções de BI](../getting-started/cja-vs-bi.md)
 
 + Customer Journey Analytics e Adobe Analytics {#compare-aa-cja}
    + [Evolução a partir do Adobe Analytics ](../getting-started/aa-to-cja.md)
-   + [Guia do usuário do para usuários do Adobe Analytics](../getting-started/aa-to-cja-user.md)
+   + [Guia do usuário para usuários do Adobe Analytics](../getting-started/aa-to-cja-user.md)
    + Comparação com o Adobe Analytics {#cja-aa-comparison}
       + [Utilizar os dados do Adobe Analytics no Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Suporte a recursos do Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
@@ -51,7 +51,7 @@ ht-degree: 97%
 
 + Assimilação de dados {#cja-data-ingestion}
    + [Visão geral da assimilação de dados](../data-ingestion/data-ingestion.md)
-   + Assimilar e usar guias de início rápido{#ingest-use-guides}
+   + Assimilar e usar guias de início rápido {#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + [SDK da Web da Adobe Experience Platform Rede de borda](../data-ingestion/aepwebsdk.md)
       + [Dados em lote](../data-ingestion/batch.md)
@@ -311,7 +311,7 @@ ht-degree: 97%
 
 + Administração {#cja-admin}
    + [Controle de acesso](../admin/cja-access-control.md)
-   + [Visualizar e gerenciar o uso do ](../admin/estimate-usage.md)
+   + [Visualizar e gerenciar o uso do](../admin/estimate-usage.md)
    + [Implicações de exclusão](../admin/cja-deletion.md)
 
 + Labs {#labs}
@@ -321,6 +321,6 @@ ht-degree: 97%
    + [Comparar os dados do Adobe Analytics com os dados do CJA](../troubleshooting/compare.md)
    + [Consistência de métricas e contagens de associação de público na Real-time CDP e no CJA](../troubleshooting/consistency-rcdp-cja.md)
 
-+ [Glossário CJA](../getting-started/cja-glossary.md)
++ [Glossário do CJA](../getting-started/cja-glossary.md)
 
 + [API do CJA](https://developer.adobe.com/cja-apis/docs/)

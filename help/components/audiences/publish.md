@@ -5,7 +5,7 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
 workflow-type: tm+mt
 source-wordcount: '1419'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -72,33 +72,33 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
 
 1. Clique em **[!UICONTROL Exibir público-alvo na AEP]** na mesma mensagem e você será direcionado para a [Interface do usuário do segmento](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=pt-BR) na Adobe Experience Platform. Veja mais informações abaixo.
 
-## O que acontece depois que um público-alvo é criado? {#after-audience-created}
+## O que acontece depois que um público é criado? {#after-audience-created}
 
-Depois de criar um público-alvo, o Adobe cria um segmento de transmissão de Experience Platform para cada novo público-alvo do CJA. Um segmento de transmissão AEP só será criado se sua organização estiver configurada para a segmentação de transmissão.
+Depois de criar um público, a Adobe cria um segmento de streaming da Experience Platform para cada novo público do CJA. Um segmento de streaming da AEP só será criado se sua organização estiver configurada para a segmentação de streaming.
 
-* O segmento da AEP compartilha o mesmo nome/descrição do público-alvo do CJA, mas o nome será anexado à ID de público-alvo do CJA para garantir que seja exclusivo.
-* Se o nome/descrição do público-alvo do CJA mudar, o nome/descrição do segmento do AEP também refletirá essa alteração.
-* Se um público-alvo do CJA for excluído por um usuário, o segmento do AEP NÃO será excluído. O motivo é que o público-alvo do CJA pode, posteriormente, ser removido.
+* O segmento da AEP compartilha o mesmo nome/descrição do público do CJA, mas o nome será anexado à ID de público do CJA para garantir que seja exclusivo.
+* Se o nome/descrição do público do CJA mudar, o nome/descrição do segmento da AEP também refletirá essa alteração.
+* Se um público do CJA for excluído por um usuário, o segmento da AEP NÃO será excluído. O motivo é que o público do CJA pode ser recuperado posteriormente.
 
 ## Considerações sobre latência {#latency}
 
-Em vários pontos antes, durante e após a publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
+Em vários pontos antes, durante e após a publicação do público, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
 ![](assets/latency-diagram.png)
 
 | # | Ponto de latência | Duração da latência |
 | --- | --- | --- |
-| 1 | Ingestão de dados no Data Lake | Até 30 minutos |
-| 2 | Assimilação de dados do Experience Platform para o CJA | Até 60 minutos |
-| 3 | Publicação de público-alvo no Perfil do cliente em tempo real, incluindo a criação automática do segmento de transmissão, e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
-| 4 | Atualizar frequência para públicos-alvo | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
-| 5 | Criação de destino no AEP: Ativar o novo segmento | 1 a 2 horas |
+| 1 | Assimilação de dados no Data Lake | Até 30 minutos |
+| 2 | Assimilação de dados da Experience Platform no CJA | Até 60 minutos |
+| 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
+| 4 | Atualizar frequência dos públicos | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
+| 5 | Criação de destino na AEP: ativar o novo segmento | 1 a 2 horas |
 
 {style=&quot;table-layout:auto&quot;}
 
-## Usar públicos-alvo do CJA na Experience Platform {#audiences-aep}
+## Usar públicos do CJA na Experience Platform {#audiences-aep}
 
-O CJA pega todas as combinações de namespace e ID do seu público-alvo publicado e as transforma em RTCP (Real-time Customer Profile, Perfil do cliente em tempo real). O CJA envia o público para o Experience Platform com o conjunto de identidade principal, de acordo com o que foi selecionado como o [!UICONTROL ID da pessoa] quando a conexão foi configurada.
+O CJA coleta todas as combinações de namespace e ID do público que foi publicado e as transmite para o Perfil do cliente em tempo real (RTCP). O CJA envia o público para a Experience Platform com a identidade principal definida, de acordo com o que foi selecionado como [!UICONTROL ID de pessoa] quando a conexão foi configurada.
 
 Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, “user@adobe.com” pode ser direcionado para todos os dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
@@ -112,13 +112,13 @@ Você pode arrastar os públicos-alvo do CJA para a definição de segmentos da 
 
 Perguntas frequentes sobre a publicação de público-alvo.
 
-+++**O que acontece se um usuário não é mais membro de um público-alvo no CJA?**
++++**O que acontece se um usuário não é mais membro de um público no CJA?**
 
 Nesse caso, um evento de saída é enviado à Experience Platform do CJA.
 
 +++
 
-+++**O que acontece se você excluir um público-alvo no CJA?**
++++**O que acontece se você excluir um público no CJA?**
 
 Quando um público-alvo do CJA é excluído, ele não será mais exibido na interface da Experience Platform. No entanto, nenhum perfil associado a esse público-alvo é realmente excluído na Platform.
 
@@ -130,25 +130,25 @@ Sim, será.
 
 +++
 
-+++**O CJA envia os dados do público-alvo como eventos de pipeline ou um arquivo simples que também vai para o data lake?**
++++**O CJA envia os dados do público como eventos de pipeline ou um arquivo simples que também vai para o data lake?**
 
-O CJA envia os dados para o RTCP por pipeline e esses dados também são coletados em um conjunto de dados do sistema no lago de dados.
+O CJA envia os dados para o RTCP por meio do pipeline e esses dados também são coletados em um conjunto de dados do sistema no data lake.
 
 +++
 
 +++**Quais identidades o CJA envia?**
 
-Qualquer par de identidade/namespace usado no [Configuração de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa quando um usuário seleciona o campo que deseja usar como &quot;ID de pessoa&quot;.
+Qualquer par de identidade/namespace usado na [Configuração da conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
 
 +++
 
-+++**Qual ID é escolhida como a identidade primária?**
++++**Qual ID é escolhida como a identidade principal?**
 
 Veja acima. Enviamos apenas uma identidade por “pessoa” do CJA.
 
 +++
 
-+++**A RTCP também processa as mensagens do CJA? O CJA pode adicionar identidades a um gráfico de identidade de perfil por meio do compartilhamento de público-alvo?**
++++**O RTCP também processa as mensagens do CJA? O CJA pode adicionar identidades a um gráfico de identidade de perfil por meio do compartilhamento de público?**
 
 Não. Enviamos apenas uma identidade por “pessoa”, de modo que não haveria bordas de gráfico para a RTCP consumir.
 

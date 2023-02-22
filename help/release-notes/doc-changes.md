@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 83%
+ht-degree: 96%
 
 ---
 
@@ -21,19 +21,19 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | --- | --- |
 | **Fevereiro de 2023** |  |
 | Comparar o CJA às soluções de BI | Novo documento em um [comparação](../getting-started/cja-vs-bi.md) de Customer Journey Analytics para soluções típicas de BI. |
-| Atualização da documentação de Públicos-alvo | Nova seção sobre [considerações sobre latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
-| Atualização da documentação de Públicos-alvo | Depois de criar um público-alvo, o Adobe cria um Experience Platform [segmento de fluxo para cada novo público-alvo do CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#after-audience-created). |
-| Calendários e intervalos de datas do Workspace | Conteúdo atualizado para descrever intervalos de datas relativos, atualizações de cálculo de fórmulas e alterações na interface do usuário do calendário. Consulte [Sobre intervalos de datas relativos do painel](/help/components/date-ranges/calendar.md#relative-panel-dates). |
-| Scorecards para dispositivos móveis | Nova seção de documentação para descrever como mostrar e ocultar intervalos de datas de comparação. Consulte [Mostrar intervalos de datas de comparação](/help/mobile-app/create-scorecard.md#show-comparison-dates) no CJA. |
+| Atualização da documentação do Audiences | Nova seção sobre [considerações sobre latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
+| Atualização da documentação do Audiences | Depois de criar um público, a Adobe cria um [segmento de streaming da Experience Platform para cada novo público do CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=pt-BR#after-audience-created). |
+| Calendários e intervalos de datas do espaço de trabalho | Conteúdo atualizado para descrever intervalos de datas relativos, atualizações de cálculo de fórmulas e alterações na interface do calendário. Consulte [Sobre intervalos de datas relativos do painel](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Cartões de pontuação para dispositivos móveis | Nova seção de documentação para descrever como mostrar e ocultar intervalos de datas de comparação. Consulte [Mostrar intervalos de datas de comparação](/help/mobile-app/create-scorecard.md#show-comparison-dates) no CJA. |
 | **Janeiro de 2023** |  |
-| Filtrar e classificar tabelas | Conteúdo atualizado (incluindo a adição de procedimentos e a explicação das opções disponíveis) na [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md) artigo 10. o Este artigo foi renomeado de &quot;Paginação, filtragem e classificação de tabelas&quot;. |
-| Guias de início rápido da assimilação de dados | Nova seção de documentação sobre como [assimilar e usar dados](/help/data-ingestion/data-ingestion.md) no CJA. |
-| Pastas do Workspace | Páginas dedicadas para [Gerenciamento de pastas](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
-| Preferências do usuário do Workspace | Várias preferências adicionais de usuário estão disponíveis em [Preferências](/help/analysis-workspace/user-preferences.md). |
-| Salvar automaticamente em projetos do Workspace | Conteúdo atualizado para incluir a funcionalidade de salvamento automático em [Salvar projetos](/help/analysis-workspace/build-workspace-project/save-projects.md). |
-| Página de aterrissagem | Novas atualizações de landing page [página de aterrissagem](/help/getting-started/landing.md). |
-| Programar pastas de trabalho | Página dedicada para descrever como [Agendar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) em Report Builder. |
-| Suporte à matriz de objetos para conjuntos de dados de perfil e pesquisa | Atualizado [Uso de arrays de objetos](/help/use-cases/object-arrays.md) e [Assimilar públicos da AEP](/help/use-cases/data-ingestion/ingest-aep-segments.md) para refletir o suporte da matriz de objetos para conjuntos de dados de perfil e pesquisa. |
+| Filtrar e classificar tabelas | Conteúdo atualizado (incluindo a adição de procedimentos e a explicação das opções disponíveis) no artigo [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). Anteriormente, o nome desse artigo era “Paginação, filtragem e classificação de tabelas”. |
+| Guias de início rápido de assimilação de dados | Nova seção de documentação sobre como [assimilar e usar dados](/help/data-ingestion/data-ingestion.md) no CJA. |
+| Pastas do espaço de trabalho | Páginas dedicadas para [Gerenciamento de pastas](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
+| Preferências do usuário do espaço de trabalho | Várias preferências adicionais de usuário estão disponíveis em [Preferências](/help/analysis-workspace/user-preferences.md). |
+| Salvar automaticamente projetos do espaço de trabalho | Conteúdo atualizado para incluir a funcionalidade de salvamento automático em [Salvar projetos](/help/analysis-workspace/build-workspace-project/save-projects.md). |
+| Página de destino | Novas atualizações da [página de destino](/help/getting-started/landing.md). |
+| Programar pastas de trabalho | Página dedicada para descrever como [Programar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) no Report Builder. |
+| Compatibilidade da array de objetos com conjuntos de dados de perfil e pesquisa | Atualização do [Uso de arrays de objetos](/help/use-cases/object-arrays.md) e da [Assimilação de públicos da AEP](/help/use-cases/data-ingestion/ingest-aep-segments.md) para refletir a compatibilidade de arrays de objetos com conjuntos de dados de perfil e pesquisa. |
 
 ## 2022 {#22}
 
