@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2135'
 ht-degree: 100%
 
@@ -40,14 +40,14 @@ O Customer Journey Analytics inclui recursos de [Preparação de dados](https://
 
 ## 2. Compilação de dados (Análise de vários canais) {#stitching}
 
-+++**O [!UICONTROL Customer Journey Analytics] pode &quot;costurar&quot; todos os dispositivos ou conjuntos de dados?**
++++**O [!UICONTROL Customer Journey Analytics] pode compilar todos os dispositivos ou conjuntos de dados?**
 
 Sim. [!UICONTROL O Customer Journey Analytics] tem uma solução de compilação chamada [Análise de vários canais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) (CCA). Ele permite alterar a chave da ID de pessoa de um conjunto de dados, o que possibilita realizar uma combinação perfeita de vários conjuntos de dados.
 
 +++
 
 
-+++**A costura de comportamento anônimo para comportamento autenticado é compatível?**
++++**É possível transformar um comportamento anônimo em um comportamento autenticado?**
 
 Sim. [A Análise de vários canais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR) analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada.
 
@@ -74,7 +74,7 @@ Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de
 
 +++
 
-## 3. Obtenção de dados no [!UICONTROL Customer Journey Analytics] {#ingest}
+## 3. Enviar dados para o [!UICONTROL Customer Journey Analytics] {#ingest}
 
 +++**É possível combinar dados de diferentes sandboxes da [!UICONTROL Adobe Experience Platform] em uma conexão do [!UICONTROL Customer Journey Analytics]?**
 
@@ -92,19 +92,19 @@ Contanto que a ID de pessoa corresponda entre os conjuntos de dados, o [!UICONTR
 
 +++**Como posso trazer meus dados offline para o [!UICONTROL Customer Journey Analytics]?**
 
-Seu direito ao Customer Journey Analytics permite assimilar dados na Experience Platform. Em seguida, você pode criar conexões com esses dados e visualizações de dados no [!UICONTROL Customer Journey Analytics] para criar relatórios no Analysis Workspace. A equipe de integração de dados da Experience Platform pode ajudar a fornecer recomendações ou consultoria a você, se necessário.
+Seu direito ao Customer Journey Analytics permite assimilar dados na Experience Platform. Em seguida, você pode criar conexões com esses dados e visualizações de dados no [!UICONTROL Customer Journey Analytics] para criar relatórios no Analysis Workspace. A equipe de integração de dados da Experience Platform pode ajudar a fornecer recomendações ou consultoria, se necessário.
 
 +++
 
 
-+++**Como posso obter dados do [!UICONTROL Adobe Analytics] no [!UICONTROL Customer Journey Analytics]?**
++++**Como posso enviar dados do [!UICONTROL Adobe Analytics] para o [!UICONTROL Customer Journey Analytics]?**
 
 [!UICONTROL Os dados do Adobe Analytics] podem ser conectados à Experience Platform por meio do [Conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). A maioria dos campos do [!UICONTROL Adobe Analytics] está no formato XDM, mas outros campos ainda não estão disponíveis.
 
 +++
 
 
-+++**Qual é o tempo de montagem dos elementos do conjunto de dados em uma exibição de dados?**
++++**Qual é o tempo de montagem dos elementos do conjunto de dados em uma visualização de dados?**
 
 Algumas horas para começar e alguns dias para preencher retroativamente os últimos 13 meses de dados.
 
@@ -190,7 +190,7 @@ Ainda não, mas estamos trabalhando ativamente para fornecer esse recurso.
 
 +++**Onde estão todas as minhas configurações de sessão e persistência de variável agora?**
 
-[!UICONTROL O Customer Journey Analytics] aplica todas essas configurações no momento do relatório e essas configurações agora residem na Exibição de dados. As alterações nessas configurações agora são retroativas e você pode ter várias versões usando várias Exibições de dados!
+[!UICONTROL O Customer Journey Analytics] aplica todas essas configurações no momento do relatório e essas configurações agora residem na Exibição de dados. As alterações nessas configurações agora são retroativas e você pode ter várias versões usando várias visualizações de dados.
 
 +++
 
@@ -202,14 +202,14 @@ Ainda não, mas estamos trabalhando ativamente para fornecer esse recurso.
 +++
 
 
-+++**Como o [!UICONTROL Customer Journey Analytics] lida com `Uniques Exceeded` limitações?**
++++**Como o [!UICONTROL Customer Journey Analytics] lida com limitações `Uniques Exceeded`?**
 
-[!UICONTROL O Customer Journey Analytics] não tem limitações de valor exclusivas, portanto, não é necessário se preocupar com elas!
+[!UICONTROL O Customer Journey Analytics] não tem limitações de valor exclusivo, portanto, não é necessário se preocupar com elas.
 
 +++
 
 
-+++**Se eu for um [!DNL Data Workbench] cliente atual, posso migrar para o [!UICONTROL Customer Journey Analytics] agora?**
++++**Se eu for um cliente atual do [!DNL Data Workbench], posso migrar para o [!UICONTROL Customer Journey Analytics] agora?**
 
 Depende do seu caso de uso. Entre em contato com a equipe de conta da Adobe. Seus casos de uso atuais já podem ser adequados para o Customer Journey Analytics.
 
