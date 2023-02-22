@@ -3,9 +3,9 @@ description: Explica a estratégia de lançamento contínuo de recursos do Custo
 title: Versões de recursos do Customer Journey Analytics
 exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 source-git-commit: 40f145d20125c41f3399ab0690a673f01c1817e3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '391'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ As versões do Customer Journey Analytics operam em um modelo de entrega contín
 
 O [!UICONTROL Analysis Workspace] usa sinalizadores de recursos (também conhecidos como “alternadores”) para controlar a visibilidade de novos recursos, permitindo testes de escala controlados antes do lançamento completo. A estratégia de lançamento inclui as seguintes fases:
 
-* **Teste limitado**: uma versão em fases começa com testes feitos por usuários internos da Adobe. Ele é então disponibilizado para um pequeno grupo de contas de clientes para garantir que o recurso atenda às necessidades e expectativas do cliente.
+* **Teste limitado**: uma versão em fases começa com testes feitos por usuários internos da Adobe. Ela é então disponibilizada a um pequeno grupo de contas de clientes para garantir que o recurso atenda às necessidades e expectativas do cliente.
 
-* **Início da implantação**: A implantação de uma versão em fases começa com a fase de Teste limitado. A versão é redimensionada de 0% a 100% de disponibilidade aos clientes ao longo de alguns meses. A implementação em fases acontece no nível da Organização da Experience Cloud, de modo que todos os usuários autorizados em uma organização recebem a mesma experiência.
+* **Início da implantação**: a implantação de uma versão em fases começa com a fase de Teste limitado. A versão é redimensionada de 0% a 100% de disponibilidade aos clientes ao longo de alguns meses. A implementação em fases acontece no nível da Organização da Experience Cloud, de modo que todos os usuários autorizados em uma organização recebem a mesma experiência.
 
 * **Disponibilidade Geral (GA)**: o recurso está disponível para 100% das organizações da Experience Cloud autorizadas e a versão do recurso está concluída.
 
