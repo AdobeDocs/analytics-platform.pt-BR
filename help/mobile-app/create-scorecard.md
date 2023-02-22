@@ -6,9 +6,9 @@ role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
 source-git-commit: 14bcb1364e59ee02073829050daa068c6203a93c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1811'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -108,11 +108,11 @@ Você será direcionado ao construtor de intervalo de datas, em que é possível
 
 ### Mostrar ou ocultar intervalos de datas de comparação {#show-comparison-dates}
 
-Para incluir intervalos de datas de comparação, alterne a variável **Incluir datas de comparação** configuração.
+Para incluir intervalos de datas de comparação, ative a configuração **Incluir datas de comparação**.
 
 ![Incluir datas de comparação](assets/include-comparison-dates.png)
 
-A configuração é *on* por padrão. Alternar para *off* se não quiser exibir datas de comparação.
+A configuração está *ativada* por padrão. Deixe-a *desativada* se não quiser exibir datas de comparação.
 
 ![Configuração de data de comparação desmarcada](assets/no-comparison-dates.png)
 
