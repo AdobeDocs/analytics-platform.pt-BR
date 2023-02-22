@@ -5,9 +5,9 @@ role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
 source-git-commit: 9f2d0d00872ad18c73bf67184e44f687a0b156a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
@@ -15,23 +15,23 @@ ht-degree: 37%
 
 Para visualizar o uso do CJA, você pode usar vários métodos:
 
-* Adicione as linhas de dados do evento para cada conexão. Consulte [Estime o tamanho da conexão](#tamanho da estimativa) abaixo. Essa é uma maneira fácil de ver os dados da linha do evento, por conexão, para um carimbo de data e hora específico.
-* Visualize seu uso de três maneiras, cada uma das quais é descrita com mais detalhes abaixo:
+* Adicione as linhas de dados do evento para cada conexão. Consulte [Estimar o tamanho da conexão](#tamanho da estimativa) abaixo. É uma maneira fácil de ver os dados da linha do evento, por conexão, para um carimbo de data e hora específico.
+* Visualize o uso de três maneiras, cada uma das quais é descrita com mais detalhes abaixo:
    * Use o Analysis Workspace para relatar os eventos do mês passado.
    * Use o Report Builder para relatar os eventos do mês passado.
    * Use a API do CJA para criar um relatório automatizado.
 
 Para gerenciar o uso do CJA:
 
-* Defina uma janela de dados do acumulado.
+* Defina uma janela de dados acumulados.
 
 ## Estimar tamanho da conexão {#estimate-size}
 
-Talvez seja necessário saber quantas linhas de dados de evento você tem atualmente em [!UICONTROL Customer Journey Analytics]. Para obter uma conta precisa do uso dos registros de dados de evento (linhas de dados) de sua organização, faça o seguinte **para cada uma das conexões criadas pela organização**.
+Talvez seja necessário saber quantas linhas de dados do evento você tem atualmente no [!UICONTROL Customer Journey Analytics]. Para obter uma conta precisa do uso dos registros de dados de evento (linhas de dados) de sua organização, faça o seguinte **para cada uma das conexões criadas pela organização**.
 
 >[!NOTE]
 >
->Faça isso na primeira sexta-feira de cada mês, já que o Adobe executa seu relatório de uso mais recente naquele dia.
+>Faça isso na primeira sexta-feira de cada mês, já que a Adobe executa seu relatório de uso mais recente naquele dia.
 
 1. No [!UICONTROL Customer Journey Analytics], clique na guia **[!UICONTROL Conexões]**.
 
@@ -39,7 +39,7 @@ Talvez seja necessário saber quantas linhas de dados de evento você tem atualm
 
 1. Clique em cada nome de conexão para acessar o Gerenciador de conexões.
 
-1. Adicione o **[!UICONTROL Registros dos dados do evento disponíveis]** para cada conexão criada pela organização. (Dependendo do tamanho da conexão, o número pode levar algum tempo para ser exibido.)
+1. Adicione os **[!UICONTROL Registros de dados do evento disponíveis]** para cada conexão criada pela organização. (Dependendo do tamanho da conexão, o número pode levar algum tempo para ser exibido.)
 
    ![dados do evento](./assets/event-data.png)
 
@@ -58,46 +58,46 @@ Talvez seja necessário saber quantas linhas de dados de evento você tem atualm
    * [Excluir um conjunto de dados na AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
    * Entre em contato com o Gerente de conta da Adobe para obter licença de capacidade adicional.
 
-## Criar um projeto do Workspace usando todos os dados do evento {#workspace-event-data}
+## Criar um projeto do Espaço de trabalho usando todos os dados do evento {#workspace-event-data}
 
 Esse método permite fazer uma análise mais profunda dos dados de uso, bem como do histórico de uso.
 
-1. Antes de criar o projeto no Workspace, [criar uma visualização de dados](/help/data-views/create-dataview.md) para cada conexão, sem filtros aplicados.
+1. Antes de criar o projeto no Espaço de trabalho, [crie uma visualização de dados](/help/data-views/create-dataview.md) para cada conexão, sem filtros aplicados.
 
 >[!WARNING]
 >
->    Não crie uma nova conexão que englobe todos os seus dados apenas para medir o uso, pois isso duplicaria efetivamente seu uso.
+>    Não crie uma nova conexão que englobe todos os seus dados apenas para medir o uso, pois isso duplicaria efetivamente o uso.
 
-1. No Workspace, crie novos projetos com base em cada visualização de dados e extraia todos os eventos (da variável **[!UICONTROL Métricas]** lista suspensa) até a primeira sexta-feira do mês, começando pelo primeiro dia do seu contrato CJA atual.
+1. No Espaço de trabalho, crie novos projetos com base em cada visualização de dados e extraia todos os eventos (da lista suspensa **[!UICONTROL Métricas]**) até a primeira sexta-feira do mês, começando pelo primeiro dia do seu contrato atual do CJA.
 
    ![Eventos](./assets/events-usage.png)
 
-   Isso lhe dará uma boa ideia de como sua utilização está apresentando tendências mês a mês.
+   Você terá uma boa ideia da tendência de utilização mês a mês.
 
 1. Dependendo das suas necessidades, você pode detalhar por conjunto de dados, etc.
 
 ## Criar um bloco de dados no Report Builder {#arb}
 
-Em Report Builder, [criar um bloco de dados](/help/report-builder/create-a-data-block.md) para cada visualização de dados, some-os.
+No Report Builder, [crie um bloco de dados](/help/report-builder/create-a-data-block.md) para cada visualização de dados e some-os.
 
 ## Criar um relatório automatizado na API do CJA {#api-report}
 
-1. Use o [API de relatórios CJA](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) para executar um relatório em todos os dados do evento, **para cada conexão**. Configure isso para que o relatório seja executado
+1. Use a [API de relatórios CJA](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) para executar um relatório em todos os dados do evento, **para cada conexão**. Configure isso para que o relatório seja executado
 
    * em todas as primeiras sextas-feiras de cada mês.
-   * voltar ao primeiro dia do seu contrato CJA atual.
+   * voltar ao primeiro dia do seu contrato atual do CJA.
 
-   Isso lhe dará uma boa ideia de como sua utilização está apresentando tendências mês a mês. Ele fornecerá o número total de linhas em todas as suas conexões do CJA.
+   Você terá uma boa ideia da tendência de utilização mês a mês. Ele fornecerá o número total de linhas em todas as suas conexões do CJA.
 
 1. Use o Excel para personalizar ainda mais este relatório.
 
-## Gerencie seu uso definindo uma janela de dados do acumulado {#rolling}
+## Gerencie o uso definindo uma janela de dados contínua {#rolling}
 
-Para gerenciar seu uso, a variável [interface de usuário de conexões](/help/connections/create-connection.md) permite definir a retenção de dados do CJA como uma janela contínua em meses (1 mês, 3 meses, 6 meses, etc.), no nível da conexão.
+Para gerenciar o uso, a [interface de usuário de conexões](/help/connections/create-connection.md) permite definir a retenção de dados do CJA como uma janela contínua em meses (1 mês, 3 meses, 6 meses, etc.), no nível da conexão.
 
 O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
 
 Se deixar o padrão (desmarcado), o período de retenção será substituído pela configuração de retenção de dados da Adobe Experience Platform. Se você tiver dados correspondentes a 25 meses na Experience Platform, o CJA obterá 25 meses de dados por meio do preenchimento retroativo. Se você excluísse 10 desses meses na Platform, o CJA manteria os 15 meses restantes.
 
-A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe configuração de janela de dados contínuos para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data/hora aplicáveis. Se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa, já que eles são unidos a conjuntos de dados de eventos, os dados serão retidos no CJA com base nas configurações de retenção de dados nos carimbos de data e hora do conjunto de dados de eventos.
+A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe configuração de janela de dados contínuos para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data/hora aplicáveis. Se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa, e já que eles são unidos a conjuntos de dados de eventos, os dados serão retidos no CJA com base nas configurações de retenção de dados nos carimbos de data e hora do conjunto de dados de eventos.
 
