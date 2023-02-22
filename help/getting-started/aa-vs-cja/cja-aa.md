@@ -4,10 +4,10 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 95c1f15cf5a3e807c101d356c5452f37ea2a78e9
+source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 99%
+source-wordcount: '1525'
+ht-degree: 98%
 
 ---
 
@@ -93,7 +93,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | --- | --- |
 | Alertas | Suporte planejado. |
 | Análise de contribuição | Suporte planejado. |
-| Relatórios do Data Warehouse (exportação de 100% de linhas) | O suporte é planejado na interface do Analysis Workspace. O [[!UICONTROL Serviço de consulta]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) da Adobe Experience Platform também fornece uma interface para esses casos de uso no CJA. |
+| Relatório de Data Warehouse | O suporte é planejado na interface do Analysis Workspace. O [[!UICONTROL Serviço de consulta]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) da Adobe Experience Platform também fornece uma interface para esses casos de uso no CJA. |
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
 | Modelos de projeto | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
