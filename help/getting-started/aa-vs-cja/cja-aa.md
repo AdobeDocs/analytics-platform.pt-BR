@@ -4,10 +4,10 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 98%
+source-wordcount: '1595'
+ht-degree: 94%
 
 ---
 
@@ -58,6 +58,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Sessões personalizadas | Suporte para todos os recursos de sessionalização personalizados, exceto ocorrências em segundo plano para dispositivos móveis. |
 | Persistência da variável de merchandising | Suporte completo através de [dimensões de ligação e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension) |
 | Atributos do cliente | Agora, chamados de &quot;Conjuntos de dados de perfil&quot;, eles não são importados automaticamente da Experience Cloud, mas precisarão ser carregados para a AEP para que estejam disponíveis no CJA. |
+| Feeds de dados | A exportação de dados de primeira geração de conjuntos de dados está disponível por meio do [API de acesso a dados da AEP](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) e [Destinos da AEP](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). Essas opções fornecem exportação no nível da ocorrência/linha de todos os dados coletados ou assimilados no AEP Data Lake. As colunas de dados do pós-processo não estão disponíveis porque as colunas de publicação são calculadas no momento da consulta. A exportação de colunas de publicação está disponível por meio de relatórios. |
 | Desduplicação de métrica | Agora configurado em métricas das Visualizações de dados. A desduplicação de métricas ocorre no nível da pessoa ou da sessão, em vez de no nível do conjunto de dados, da visualização de dados ou da conexão. |
 | Dimensões e métricas de Entradas, Saídas e Tempo gasto | Suportados (Entradas e Saídas agora são chamadas de Inícios de sessão e Términos de sessão) e são calculados de uma maneira ligeiramente diferente. |
 | Configurações de persistência de eVar | As eVars não fazem mais parte do CJA. No entanto, as configurações de persistência agora fazem parte das Visualizações de dados e estão disponíveis para todas as dimensões. Lembre-se de que a persistência se baseia no processamento de tempo do relatório, não no processamento da coleta de dados. Dimensões definidas nas Visualizações de dados são limitadas a uma persistência máxima de 90 dias e não são compatíveis com persistência ilimitada. |
@@ -99,7 +100,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Relatório em tempo real | Suporte planejado. |
 | Segment IQ | Suporte planejado. |
 | Conversão de moeda | Suporte planejado. |
-| Feeds de dados | O suporte é planejado por meio de destinos da AEP. |
 | Fontes de dados de ID de transação | Suporte planejado. |
 | Migração de projetos/filtros/métricas calculadas do AA para o CJA | Suporte planejado. |
 | Fontes de dados de nível de resumo | Suporte planejado. |
