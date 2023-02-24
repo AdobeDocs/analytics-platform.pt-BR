@@ -3,16 +3,16 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
+source-git-commit: 4e41bda273f0f7e93941bb00b55bffc6b357ac1f
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 80%
+source-wordcount: '524'
+ht-degree: 79%
 
 ---
 
 # Notas de versão atuais do Customer Journey Analytics (CJA) (fevereiro de 2023)
 
-**Última atualização**: 6 de fevereiro de 2023
+**Última atualização**: 23 de fevereiro de 2023
 
 As versões do Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Devido a isso, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -24,7 +24,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 | **Ocultar intervalos de datas de comparação em cartões de pontuação para dispositivos móveis** | Com os cartões de pontuação para dispositivos móveis, agora é possível ocultar intervalos de datas de comparação. | N/D | 8 de fevereiro de 2023 |
 | **Atualizações do calendário no espaço de trabalho** | <ul><li>Datas do painel de âncora: você pode tornar os componentes do intervalo de datas relativos ao calendário do painel. [Saiba mais](/help/components/date-ranges/calendar.md)</li><li>Atualizações do estilo do calendário: os estilos de calendário na interface foram atualizados para apresentar um fluxo de trabalho mais consistente e fácil de usar.</li><li>Atualizações da fórmula do calendário: se você usar datas relativas, todas as fórmulas do calendário refletirão o início do intervalo de datas do painel. [Saiba mais](/help/components/date-ranges/calendar.md)</li></ul> | N/D | 8 de fevereiro de 2023 |
 | **Atualizações do intervalo de datas do painel** | No Workspace, adicionamos as seguintes melhorias:<ul><li>A partir da versão de fevereiro, as visualizações de componentes e dados serão baseadas no intervalo de datas do painel e não nos últimos 90 dias. </li><li>Todos os componentes listados no painel esquerdo estarão disponíveis com base no intervalo de datas do painel.</li><li>Todas as visualizações de data no segmento e construtores de métrica calculada serão baseadas no intervalo de datas do painel (a menos que sejam acessadas pelos gerentes de componente, que não têm um painel associado, elas ainda serão baseadas nos últimos 90 dias).</li><li>Quaisquer visualizações de dados exibirão dados ou componentes com base no intervalo de datas do painel.</li></ul> | N/D | 8 de fevereiro de 2023 |
-| **Filtragem de linha/coluna para streaming do conector de origem do Adobe Analytics** | O conector de origem do Analytics na Adobe Experience Platform agora permite filtrar os dados do Analytics, que são usados para preencher perfis no [perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR).<p>A filtragem de nível de linha ajuda a reduzir o número de eventos associados a perfis. A filtragem em nível de coluna ajuda a reduzir a riqueza dos eventos, permitindo otimizar o uso dos direitos do perfil. Essa filtragem se aplica somente aos dados enviados para o perfil do cliente em tempo real e o [Serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR).<p>**A filtragem não afeta os dados enviados para o Data Lake para uso em aplicativos como o Customer Journey Analytics**. [Saiba mais](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR#filtering-for-profile) | N/D | 22 de fevereiro de 2023 |
+| **Filtragem de linha/coluna para streaming do conector de origem do Adobe Analytics** | O conector de origem do Analytics na Adobe Experience Platform agora permite filtrar os dados do Analytics, que são usados para preencher perfis no [perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR).<p>A filtragem de nível de linha ajuda a reduzir o número de eventos associados a perfis. A filtragem em nível de coluna ajuda a reduzir a riqueza dos eventos, permitindo otimizar o uso dos direitos do perfil. Essa filtragem se aplica somente aos dados enviados para o perfil do cliente em tempo real e o [Serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR).<p>**A filtragem não afeta os dados enviados para o Data Lake para uso em aplicativos como o Customer Journey Analytics**. [Saiba mais](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR#filtering-for-profile) | N/D | Reagendado para 29 de março de 2023 |
 
 {style=&quot;table-layout:auto&quot;}
 
