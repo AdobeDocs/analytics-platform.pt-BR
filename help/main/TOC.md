@@ -11,8 +11,8 @@ user-guide-description: Saiba mais sobre o Customer Journey Analytics (CJA) e co
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
