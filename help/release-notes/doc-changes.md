@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
+source-git-commit: 04b5e4df5ad07e701e3fb812df841b457e7b9c6f
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 96%
+source-wordcount: '1454'
+ht-degree: 94%
 
 ---
 
@@ -19,9 +19,11 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 | Recurso | Descrição |
 | --- | --- |
+| **Março de 2023** |  |
+| Suporte a recursos | Atualizado [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) com uma tabela de recursos disponíveis no CJA, mas não disponíveis ou compatíveis no AA. |
 | **Fevereiro de 2023** |  |
-| Comparar o CJA às soluções de BI | Novo documento em um [comparação](../getting-started/cja-vs-bi.md) de Customer Journey Analytics para soluções típicas de BI. |
-| Atualização da documentação do Audiences | Nova seção sobre [considerações sobre latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
+| Comparar o CJA com as soluções de BI | Novo documento em um [comparação](../getting-started/cja-vs-bi.md) de Customer Journey Analytics para soluções típicas de BI. |
+| Atualização da documentação do Audiences | Nova seção sobre [considerações de latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
 | Atualização da documentação do Audiences | Depois de criar um público, a Adobe cria um [segmento de streaming da Experience Platform para cada novo público do CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=pt-BR#after-audience-created). |
 | Calendários e intervalos de datas do espaço de trabalho | Conteúdo atualizado para descrever intervalos de datas relativos, atualizações de cálculo de fórmulas e alterações na interface do calendário. Consulte [Sobre intervalos de datas relativos do painel](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | Cartões de pontuação para dispositivos móveis | Nova seção de documentação para descrever como mostrar e ocultar intervalos de datas de comparação. Consulte [Mostrar intervalos de datas de comparação](/help/mobile-app/create-scorecard.md#show-comparison-dates) no CJA. |
