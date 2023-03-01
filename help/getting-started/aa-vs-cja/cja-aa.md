@@ -4,16 +4,16 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: ca161bd86b4f926991c1adec2ccf3918f2bc4347
+source-git-commit: 538c0d2858983fb508393c92686f3e7cc52578fa
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 94%
+source-wordcount: '2024'
+ht-degree: 74%
 
 ---
 
 # Suporte a recursos do Customer Journey Analytics
 
-As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, parcialmente compatíveis ou não com o CJA (Customer Journey Analytics). Essas listas serão alteradas com o tempo, à medida que recursos forem adicionados ao CJA.
+As tabelas a seguir listam quais recursos do Adobe Analytics (AA) são compatíveis, parcialmente compatíveis ou não com o Customer Journey Analytics (CJA) e quais recursos do CJA não são compatíveis ou estão disponíveis no AA. Essas listas serão alteradas com o tempo, à medida que recursos forem adicionados ao CJA.
 
 ## Recursos/componentes totalmente compatíveis
 
@@ -58,7 +58,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Sessões personalizadas | Suporte para todos os recursos de sessionalização personalizados, exceto ocorrências em segundo plano para dispositivos móveis. |
 | Persistência da variável de merchandising | Suporte completo através de [dimensões de ligação e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension) |
 | Atributos do cliente | Agora, chamados de &quot;Conjuntos de dados de perfil&quot;, eles não são importados automaticamente da Experience Cloud, mas precisarão ser carregados para a AEP para que estejam disponíveis no CJA. |
-| Feeds de dados | A exportação de dados de primeira geração de conjuntos de dados está disponível por meio do [API de acesso a dados da AEP](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) e [Destinos da AEP](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). Essas opções fornecem exportação no nível da ocorrência/linha de todos os dados coletados ou assimilados no AEP Data Lake. As colunas de dados do pós-processo não estão disponíveis porque as colunas de publicação são calculadas no momento da consulta. A exportação de colunas de publicação está disponível por meio de relatórios. |
+| Feeds de dados | A exportação de dados da primeira geração de conjuntos de dados está disponível por meio da [API de acesso a dados da AEP](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=en) e até [Destinos da AEP](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=en). Essas opções fornecem exportação em nível de ocorrência/linha de todos os dados coletados ou assimilados no Data Lake da AEP. Colunas de dados pós-processamento não estão disponíveis porque as colunas pós-processamento são computadas no momento da consulta. A exportação de colunas de publicação está disponível por meio de relatórios. |
 | Desduplicação de métrica | Agora configurado em métricas das Visualizações de dados. A desduplicação de métricas ocorre no nível da pessoa ou da sessão, em vez de no nível do conjunto de dados, da visualização de dados ou da conexão. |
 | Dimensões e métricas de Entradas, Saídas e Tempo gasto | Suportados (Entradas e Saídas agora são chamadas de Inícios de sessão e Términos de sessão) e são calculados de uma maneira ligeiramente diferente. |
 | Configurações de persistência de eVar | As eVars não fazem mais parte do CJA. No entanto, as configurações de persistência agora fazem parte das Visualizações de dados e estão disponíveis para todas as dimensões. Lembre-se de que a persistência se baseia no processamento de tempo do relatório, não no processamento da coleta de dados. Dimensões definidas nas Visualizações de dados são limitadas a uma persistência máxima de 90 dias e não são compatíveis com persistência ilimitada. |
@@ -84,7 +84,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Dimensões de segmentação geográfica | Toda segmentação geográfica coletada no Adobe Analytics flui para o CJA por meio do [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). As implementações que não usam o Conector de origem do Analytics, como aquelas que dependem do SDK da Web da AEP para coleção de dados digitais, não terão a tabulação completa de pesquisas geográficas executadas automaticamente: país e estado são compatíveis, cidade e CEP não são. |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos e Analytics for Target (A4T) não são compatíveis. |
 | Regras de processamento | Para conjuntos de dados do Conector de origem do Analytics, as regras de processamento ainda se aplicam. [Os recursos de preparação de dados na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR) também podem ser usados como substituição das regras de processamento para dados que vão diretamente para a Platform. |
-| A4T | O suporte parcial é fornecido por meio de campos no [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). Há suporte para nomes amigáveis do A4T em atividades e experiências do Target. |
+| A4T | O suporte parcial é fornecido por meio de campos no [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). Há planejamento de suporte para nomes amigáveis ao A4T em Atividades e Experiências do Target. |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -94,7 +94,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | --- | --- |
 | Alertas | Suporte planejado. |
 | Análise de contribuição | Suporte planejado. |
-| Relatório de Data Warehouse | O suporte é planejado na interface do Analysis Workspace. O [[!UICONTROL Serviço de consulta]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) da Adobe Experience Platform também fornece uma interface para esses casos de uso no CJA. |
+| Data Warehouse relatório | O suporte é planejado na interface do Analysis Workspace. O [[!UICONTROL Serviço de consulta]](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) da Adobe Experience Platform também fornece uma interface para esses casos de uso no CJA. |
 | Configuração de ID por Gráfico de dispositivos | Suporte planejado. |
 | Modelos de projeto | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
@@ -122,3 +122,20 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 * Marcadores do Reports &amp; Analytics
 * Públicos-alvos do Reports &amp; Analytics
 * Mobile Services
+
+## Recursos do CJA não disponíveis no Adobe Analytics
+
+A tabela a seguir lista os recursos que estão disponíveis no Customer Journey Analytics (CJA), mas não são compatíveis com o Adobe Analytics (AA).
+
+| Recurso | Mais detalhes |
+| --- | --- |
+| Acomodação para qualquer tipo de dados | O CJA é combinado com a Experience Platform para armazenar todos os tipos de esquemas e tipos de dados. Usar [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR), os dados podem ser representados e organizados uniformemente, prontos para combinação e exploração. O Adobe Analytics foca predominantemente em dados de análise da Web e móveis com alguns recursos para [importar dados](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=pt-BR). |
+| Dimension e métricas ilimitadas do cliente | As dimensões do CJA são ilimitadas; os valores podem ser numéricos, texto, objetos, listas ou misturas de todos. Dimension pode ser aninhado ou hierárquico. O Analytics suporta até 75 props e 250 eVars. Isso remove as limitações de medição atuais usando dimensões e eventos. |
+| Cardinalidade ilimitada / valores únicos | O CJA suporta valores únicos ilimitados ou itens de dimensão que podem ser relatados em uma única dimensão. AA está limitado a 500.000 valores únicos. Isso remove as limitações de relatórios e análises existentes na implementação em larga escala do Analytics. |
+| Transformações de tempo do relatório | As Transformações de tempo de relatório (mais conhecidas como Visualizações de dados) no CJA permitem interpretar ainda mais os dados de uma conexão. É possível alterar ou remover dados sem reimplementação; usar substrings para manipular dimensões; criar métricas de qualquer valor; filtrar subeventos. E tudo isso pode ser feito de forma não destrutiva. O Adobe Analytics fornece recursos limitados por meio de conjuntos de relatórios virtuais e sessões. |
+| Análise de experimentação | O CJA pode avaliar o aumento e a confiança de qualquer experimento de qualquer fonte de dados definida como parte de uma conexão. Isso permite compreender as relações de causa e efeito entre as interações do cliente em qualquer canal. O Analytics está limitado à análise de experimentação por meio da integração do Analytics for Target (A4T). |
+| Análise entre dispositivos | O CJA oferece suporte à combinação contínua de conjuntos de dados específicos de dispositivos de sessões não autenticadas e autenticadas. Também é possível preencher retroativamente dados históricos para dispositivos conhecidos. No Analytics, esse recurso é limitado a um único conjunto de relatórios e ao uso de um gráfico de dispositivos. |
+| Acesso SQL | Usando a Distiller de dados, o CJA pode remover as limitações dos dados coletados no processamento de back-end de Adobe. Você pode modificar seus dados com o SQL, criar novos valores e conjuntos de dados exclusivos para sua empresa e continuar a explorar. O Analytics não suporta nenhum tipo de acesso SQL a seus dados. |
+| Opções aprimoradas de segurança e privacidade - preparação para HIPAA | O CJA está pronto para a HIPAA e oferece opções adicionais de segurança para conformidade com as regulamentações. O Adobe Analytics não está preparado para a HIPAA. |
+
+{style=&quot;table-layout:auto&quot;}
