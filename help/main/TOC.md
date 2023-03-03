@@ -11,8 +11,8 @@ user-guide-description: Saiba mais sobre o Customer Journey Analytics (CJA) e co
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 9ea7184ecc13b310072e6f2f6d0ed5bf29abaa81
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '861'
+ht-degree: 100%
 
 ---
 
@@ -229,7 +229,7 @@ ht-degree: 0%
          + [Localizar métricas](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Criar métricas](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Atribuição e tipo de métrica](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Criar uma métrica simples de &quot;Exibições de página por visita&quot;](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Criar uma métrica simples de “Exibições de página por visita”](../components/calc-metrics/cm-workflow/cm-pvv.md)
          + [Métricas filtradas](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Empilhar e substituir segmentos](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Métricas filtradas e ponderadas](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)

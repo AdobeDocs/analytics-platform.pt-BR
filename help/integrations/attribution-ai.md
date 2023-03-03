@@ -8,7 +8,7 @@ mini-toc-levels: 3
 source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
 workflow-type: tm+mt
 source-wordcount: '929'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 85%
 
 A [IA de atribuição](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=pt-BR), como parte dos Serviços inteligentes da Adobe Experience Platform, é um serviço de atribuição de vários canais e algoritmos que calcula a influência e o impacto incremental das interações com o cliente em relação aos resultados especificados. Com a IA de atribuição, os profissionais de marketing podem medir e otimizar os gastos com marketing e publicidade, entendendo o impacto de cada interação individual com o cliente em cada fase das jornadas do cliente.
 
-A IA de atribuição integra-se ao Customer Journey Analytics (CJA) na medida em que a IA de atribuição executa modelos em relação aos pontos de contato de marketing e às fontes de dados de conversão dos clientes. O CJA importa a saída desses modelos como um conjunto de dados ou ele pode ser integrado ao restante dos conjuntos de dados do CJA. Os conjuntos de dados habilitados para o Attribution AI podem ser aproveitados em exibições de dados e relatórios no CJA.
+A IA de atribuição integra-se ao Customer Journey Analytics (CJA) na medida em que a IA de atribuição executa modelos em relação aos pontos de contato de marketing e às fontes de dados de conversão dos clientes. O CJA importa a saída desses modelos como um conjunto de dados ou ele pode ser integrado ao restante dos conjuntos de dados do CJA. Os conjuntos de dados habilitados para Attribution AI podem ser usados em visualizações de dados e relatórios no CJA.
 
 A IA de atribuição aceita 3 esquemas da Experience Platform: Evento de experiência, Adobe Analytics e Evento de experiência do consumidor.
 
@@ -75,15 +75,15 @@ Em um projeto do Espaço de trabalho do CJA, você pode obter métricas como “
 
 ![Dimensões da AAI](assets/aai-dims.png)
 
-A saída da pontuação bruta no AAI tem um esquema aninhado, onde o caminho para os campos pode ser longo o suficiente para ocupar a maioria dos espaços nas tabelas ou visualizações. Para fins de concisão, [!UICONTROL Nome de exibição] é gerado e aproveitado automaticamente no CJA seguindo as regras abaixo:
+A saída da pontuação bruta no AAI tem um esquema aninhado, onde o caminho para os campos pode ser longo o suficiente para ocupar a maioria dos espaços nas tabelas ou visualizações. Para fins de concisão, o [!UICONTROL Nome de exibição] é gerado e utilizado automaticamente no CJA seguindo as regras abaixo:
 
-* Todos os campos têm um prefixo &quot;AAI&quot;
+* Todos os campos são prefixados por “AAI”
 * Para campos de ponto de contato:
-   * Para campos que fazem parte da pontuação XDM, eles aparecem no CJA como `AAI T {field name}`
-   * Para campos incluídos como coluna passThrough, eles serão exibidos no CJA como `AAI T PT {field name}`
+   * Os campos que fazem parte da pontuação XDM aparecem no CJA como `AAI T {field name}`
+   * Os campos incluídos como uma coluna passThrough são exibidos no CJA como `AAI T PT {field name}`
 * Para campos de conversão:
-   * Para campos que fazem parte da pontuação XDM, eles serão exibidos no CJA como `AAI C {field name}`
-   * Para campos incluídos como coluna passThrough, eles serão exibidos no CJA como `AAI C PT {field name}`
+   * Os campos que fazem parte da pontuação XDM são exibidos no CJA como `AAI C {field name}`
+   * Os campos incluídos como uma coluna passThrough são exibidos no CJA como `AAI C PT {field name}`
 
 **Pedidos com pontuações influenciadas e incrementais**
 

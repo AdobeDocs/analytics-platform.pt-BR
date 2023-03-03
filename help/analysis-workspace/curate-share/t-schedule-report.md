@@ -14,7 +14,7 @@ ht-degree: 89%
 
 # Agendar projetos
 
-No Workspace **[!UICONTROL Compartilhar]** é possível enviar projetos do Analysis Workspace por email para recipients selecionados. Os arquivos podem ser enviados no formato CSV ou PDF.
+No Espaço de trabalho **[!UICONTROL Compartilhar]** , você pode enviar projetos Analysis Workspace por email para recipients selecionados. Os arquivos podem ser enviados no formato CSV ou PDF.
 
 ## Enviar arquivo agora {#now}
 
@@ -47,19 +47,19 @@ Para enviar um arquivo por email de acordo com uma programação recorrente a re
 
 ## Gerenciador de projetos programados {#manager}
 
-Os projetos programados do Analysis Workspace podem ser gerenciados em **[!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos agendados]**.
+Os projetos agendados do Analysis Workspace podem ser gerenciados em **[!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos Agendados]**.
 
 No Gerenciador de agendamento de projetos, é possível editar e excluir agendamentos de projetos recorrentes. Procure um agendamento na barra de pesquisa ou usando as opções de filtro no painel esquerdo. Você pode filtrar por tag, programação aprovada, proprietários e muito mais.
 
 | Campo | Descrição |
 | --- | --- |
 | [!UICONTROL Favoritos] | Selecionar o ícone de estrela torna esta programação uma favorita. |
-| [!UICONTROL ID de programação] | Essa ID é usada principalmente para fins de depuração. |
+| [!UICONTROL ID de agendamento] | Essa ID é usada principalmente para fins de depuração. |
 | [!UICONTROL Título e descrição] | Título e descrição deste projeto. |
 | [!UICONTROL Proprietário] | A pessoa que criou e é proprietária do projeto. |
 | [!UICONTROL Tags] | (opcional) Adicionar tags é uma boa maneira de organizar projetos. Todos os usuários podem criar tags e aplicar uma ou mais tags a um projeto. No entanto, é possível visualizar tags somente para os projetos que você possui ou que foram compartilhados com você. |
 | [!UICONTROL Entregue para] | O(s) recipient(s) deste projeto programado. |
-| [!UICONTROL Data de validade] | A data de expiração padrão depende da frequência da programação. Consulte &quot;Datas agendadas de expiração do projeto&quot; abaixo. |
+| [!UICONTROL Data de validade] | A data de expiração padrão depende da frequência do agendamento. Consulte &quot;Datas de expiração programadas do projeto&quot; abaixo. |
 | [!UICONTROL Frequência] | Com que frequência deseja que esse projeto programado seja enviado ao(s) recipient(s). |
 | [!UICONTROL Tempo de execução] | Em que hora do dia esse projeto programado é enviado. |
 | [!UICONTROL Número de consultas] | O número de consultas relativas a este projeto. |
@@ -77,20 +77,20 @@ As ações a seguir são comuns no Gerenciador de projetos programados:
 
 O Gerenciador de agendamento de projetos mostra os itens criados por um usuário específico. Se a conta de usuário estiver desabilitada no aplicativo, todas as entregas programadas são interrompidas.
 
-## Datas de expiração de projetos agendados {#expiration}
+## Datas de expiração para projetos agendados {#expiration}
 
 As datas de expiração dos projetos agendados dependem da frequência de entrega agendada:
 
 * Os deliveries por hora expiram em uma semana.
 * Os deliveries diários expiram em um mês.
 * Os deliveries semanais expiram em 6 meses.
-* As entregas mensais/anuais expiram em um ano.
+* Entregas mensais/anuais expiram em um ano.
 
 ## Proteger com senha um projeto agendado {#password}
 
 >[!NOTE]
 >
->A opção de proteger com senha um projeto agendado aparece somente para clientes do CJA que compraram o produto complementar [Healthcare Shield](https://business.adobe.com/solutions/experience-cloud-for-healthcare.html).
+>A opção de proteger com senha um projeto agendado aparece somente para clientes do CJA que compraram o produto complementar [Healthcare Shield](https://business.adobe.com/br/solutions/experience-cloud-for-healthcare.html).
 
 A Adobe usa a senha para criptografar projetos agendados, sejam eles enviados nos formatos .pdf ou .csv.
 

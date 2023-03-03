@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 04b5e4df5ad07e701e3fb812df841b457e7b9c6f
 workflow-type: tm+mt
 source-wordcount: '1454'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -22,10 +22,10 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | **Março de 2023** |  |
 | Suporte a recursos | Atualizado [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) com uma tabela de recursos disponíveis no CJA, mas não disponíveis ou compatíveis no AA. |
 | **Fevereiro de 2023** |  |
-| Comparar o CJA com as soluções de BI | Novo documento em um [comparação](../getting-started/cja-vs-bi.md) de Customer Journey Analytics para soluções típicas de BI. |
-| Atualização da documentação do Audiences | Nova seção sobre [considerações de latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#latency). |
+| Comparar o CJA às soluções de BI | Novo documento que apresenta uma [comparação](../getting-started/cja-vs-bi.md) do Customer Journey Analytics com soluções típicas de BI. |
+| Atualização da documentação do Audiences | Nova seção sobre [considerações de latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=pt-BR#latency). |
 | Atualização da documentação do Audiences | Depois de criar um público, a Adobe cria um [segmento de streaming da Experience Platform para cada novo público do CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=pt-BR#after-audience-created). |
-| Calendários e intervalos de datas do espaço de trabalho | Conteúdo atualizado para descrever intervalos de datas relativos, atualizações de cálculo de fórmulas e alterações na interface do calendário. Consulte [Sobre intervalos de datas relativos do painel](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Calendários e intervalos de datas do espaço de trabalho | Conteúdo atualizado para descrever intervalos de datas relativas, atualizações de cálculo de fórmulas e alterações na interface do calendário. Consulte [Sobre intervalos de datas relativas do painel](/help/components/date-ranges/calendar.md#relative-panel-dates). |
 | Cartões de pontuação para dispositivos móveis | Nova seção de documentação para descrever como mostrar e ocultar intervalos de datas de comparação. Consulte [Mostrar intervalos de datas de comparação](/help/mobile-app/create-scorecard.md#show-comparison-dates) no CJA. |
 | **Janeiro de 2023** |  |
 | Filtrar e classificar tabelas | Conteúdo atualizado (incluindo a adição de procedimentos e a explicação das opções disponíveis) no artigo [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). Anteriormente, o nome desse artigo era “Paginação, filtragem e classificação de tabelas”. |
@@ -66,7 +66,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Julho de 2022 | Documentação do [painel Visualizador simultâneo de mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=pt-BR). |
 | Julho de 2022 | Documentação de relatórios de [primeira sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat). |
 | **Junho de 2022** |  |
-| Junho de 2022 | Novo artigo sobre [AAID, ECID, AACUSTOMID e o Conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html) |
+| Junho de 2022 | Novo artigo sobre [AAID, ECID, AACUSTOMID e o Conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=pt-BR) |
 | Junho de 2022 | Novo artigo sobre [Regras de processamento do Adobe Analytics, VISTA e classificações em relação ao Preparo de dados para o Conector de origem do Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
 | Junho de 2022 | Novo artigo sobre [ambientes de relatórios virtuais e ambientes de sandbox](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md). |
 | Junho de 2022 | Novo artigo sobre [comparação do processamento de dados entre o Adobe Analytics e os recursos de relatórios do CJA](/help/getting-started/aa-vs-cja/data-processing-comparisons.md). |
@@ -87,7 +87,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Março de 2022 | Nova documentação sobre [Anotações no Espaço de trabalho](/help/components/annotations/overview.md). |
 | Março de 2022 | Conteúdo com muitas atualizações sobre [estimativa do tamanho da conexão](/help/getting-started/cja-faq.md). |
 | **Fevereiro de 2022** |  |
-| Fevereiro de 2022 | Um novo guia destinado aos administradores que estão migrando do Adobe Analytics para o CJA: [Evolução do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=en) |
+| Fevereiro de 2022 | Um novo guia destinado aos administradores que estão migrando do Adobe Analytics para o CJA: [Evolução do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=pt-BR) |
 | **Janeiro de 2022** |  |
 | Janeiro de 2022 | Novo caso de uso para o [Uso de dimensões e métricas de ligação no CJA](/help/use-cases/data-views/binding-dimensions-metrics.md) |
 | Janeiro de 2022 | Foi adicionada uma nova documentação de recursos sobre [dimensões e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension) e sobre as novas configurações de alocação de [[!UICONTROL Primeiro conhecimento] e [!UICONTROL Último conhecimento]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#allocation-settings) |
