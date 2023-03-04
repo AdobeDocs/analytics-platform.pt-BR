@@ -2,10 +2,10 @@
 title: Integrar o Adobe Journey Optimizer (AJO) ao Customer Journey Analytics (CJA)
 description: Traga dados gerados pelo AJO e analise-os usando o Analysis Workspace no CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 9aed4e724c564272071b96c037f4eb0e82572e6f
+source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 100%
+source-wordcount: '744'
+ht-degree: 89%
 
 ---
 
@@ -22,6 +22,14 @@ A Adobe Experience Platform serve como a fonte de dados central e o vínculo ent
 ## Criar uma conexão no Customer Journey Analytics
 
 Depois que os dados do Journey Optimizer estiverem na Adobe Experience Platform, você poderá [criar uma conexão](/help/connections/create-connection.md) com base no seu conjunto de dados do Journey Optimizer. Selecione o conjunto de dados enviado para a Platform.
+
+| Conjunto de dados | Tipo de conjunto de dados | Configurações de conexão | Descrição |
+| --- | --- | --- | --- |
+| Conjunto de dados do evento de feedback de mensagem do AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de entrega de mensagem, como &#39;[!UICONTROL Envios]&#39; e &#39;[!UICONTROL Rejeições]&#39;. |
+| Conjunto de dados do evento de experiência de rastreamento de email do AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de email, como &#39;[!UICONTROL Aberturas]&#39;, &#39;[!UICONTROL Cliques]&#39; e &#39;[!UICONTROL Cancelamentos de assinatura]&#39;. |
+| Conjunto de dados do evento de experiência de rastreamento de push do AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de push, como &#39;[!UICONTROL Inicializações do aplicativo]&#39;. |
+| Jornada eventos de etapa | Evento  | ID de pessoa: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contém eventos que mostram quais perfis participaram de cada nó da jornada. |
+| Conjunto de dados da entidade AJO | Gravar | Chave: `_id`<br>Chave correspondente: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contém classificações que associam metadados de Jornada e Campanha a todos os dados de evento do AJO. |
 
 ## Configure a visualização de dados para acomodar as dimensões e métricas do Journey Optimizer
 
