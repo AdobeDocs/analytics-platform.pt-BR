@@ -4,10 +4,10 @@ description: É possível definir preferências gerais e de projeto para usuári
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 8845d3e7142c5eb0f9007d7f9b5cd9e52017f31e
-workflow-type: ht
-source-wordcount: '2439'
-ht-degree: 100%
+source-git-commit: 0c41c5a4c79105520f6f98e9e9ea60f19befd608
+workflow-type: tm+mt
+source-wordcount: '2928'
+ht-degree: 84%
 
 ---
 
@@ -175,13 +175,29 @@ Clique nos títulos da seção vinculada para obter mais informações e context
 |  | Limite máximo de itens | Reduz o número de itens no eixo X na visualização de dispersão. Isso pode ser útil se você tiver um conjunto de dados grande. |
 |  | Ancorar o eixo Y em zero | Se todos os valores exibidos no gráfico forem consideravelmente superiores a zero, o padrão do gráfico tornará a parte inferior do eixo y DIFERENTE DE ZERO. Se marcar esta caixa, o eixo y será forçado a zero (e o gráfico será redesenhado). |
 
+## Preferências da empresa
+
+>[!AVAILABILITY]
+>
+>A funcionalidade Links de acesso público descrita nesta seção está na fase de Teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
+
+Você pode atualizar as preferências da empresa que se aplicam a todos os usuários e projetos em sua organização. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
+
+| Seção | Preferência | Opções |
+| --- | --- | --- |
+| **Links de acesso público** <!-- Double check the names of all these settings for what they are actually called --> |  |  |
+|  | Desativar todos os links de acesso público | <p>Desabilita todos os links de acesso público existentes e impede que os usuários em sua organização criem novos links. Isso significa que os usuários não podem compartilhar projetos do Analysis Workspace com pessoas que não têm uma conta do Adobe Customer Journey Analytics. Os usuários podem compartilhar projetos somente com outros usuários do Customer Journey Analytics em sua organização.</p> <p>Quando os links públicos estiverem desabilitados:</p> <ul><li><p>Os usuários não conseguem criar links de acesso público</p><p>A opção &quot;Compartilhar link público&quot; é removida do menu Compartilhar. Isso significa que os usuários não podem mais compartilhar projetos com pessoas que não têm uma conta da Analysis Workspace em sua organização, conforme descrito em [Compartilhar um link público com qualquer pessoa (sem logon necessário)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).</p></li> <li><p>Todos os links públicos existentes estão desativados</p></li><p>Se os links públicos estiverem desativados e depois reativados, nenhum dos links desativados anteriormente será reativado automaticamente. Nesse caso, os usuários devem reativá-los manualmente para cada projeto na caixa de diálogo Compartilhar projeto.</p> |
+|  | Exigir autenticação de Experience Cloud | <p>Quando essa opção está habilitada, somente os recipients que têm uma ID federada e podem fazer logon no Adobe Experience Cloud podem acessar links públicos compartilhados.</p> <p>Depois que essa opção é ativada, sempre que um usuário cria um link para um projeto do Analysis Workspace, a opção &quot;Exigir autenticação de Experience Cloud&quot; é ativada na caixa de diálogo de compartilhamento e não pode ser desativada pelo usuário que está compartilhando o link. (Para obter informações sobre como os usuários podem compartilhar projetos com usuários fora da organização, consulte [Compartilhar um link público com qualquer pessoa (sem logon necessário)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).)</p> <p>Considere o seguinte ao ativar essa opção:</p><ul><li><p>Quando você habilita essa opção, todos os links públicos atualmente ativos que não têm o Experience Cloud habilitado são desativados.</p></li> <li><p>Se essa opção estiver ativada e depois desativada, todos os links desativados anteriormente não serão reativados automaticamente. Nesse caso, os usuários devem reativá-los manualmente na caixa de diálogo Compartilhar projeto.</p></li> <li><p>Essa opção só estará disponível se o SSO estiver implementado em sua organização. Para obter informações sobre como os administradores do sistema podem habilitar o SSO para sua organização, consulte [Configurar identidade e logon único](https://helpx.adobe.com/br/enterprise/using/set-up-identity.html){target=_blank}.</p><p>Se o SSO estiver configurado para sua organização, verifique se algum tipo de criação automática de conta está implementado no console. Normalmente, um administrador do sistema configuraria isso, conforme descrito em [Habilitar criação automática de conta](https://helpx.adobe.com/enterprise/using/automatic-account-creation.html){target=_blank}.</p></li><li><p>Se sua organização estiver em um setor que exige conformidade com a HIPAA, essa opção será ativada automaticamente e não poderá ser desativada.</p></li></ul> |
+
+{style="table-layout:auto"}
+
 ## Restaurar preferências padrão
 
 Você pode restaurar todas as preferências do usuário para os padrões do sistema. Isso não afeta as preferências do administrador na guia Empresa.
 
 Esta ação não pode ser desfeita.
 
-1. No Adobe Analytics, selecione [!UICONTROL **Componentes**] **>** [!UICONTROL **Preferências**].
+1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] **>** [!UICONTROL **Preferências**].
 
    ![Preferências do usuário](assets/user-preferences.png)
 
