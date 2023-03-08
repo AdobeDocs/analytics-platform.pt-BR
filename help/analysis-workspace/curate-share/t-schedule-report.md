@@ -5,10 +5,10 @@ title: Agendar projetos
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 5adf47139a3a083f90007dfab3bc63fd187ddcff
+source-git-commit: 06ec1145e25275dab0b1bf2388caae9eb8e6bcfe
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 89%
+source-wordcount: '886'
+ht-degree: 93%
 
 ---
 
@@ -59,7 +59,7 @@ No Gerenciador de agendamento de projetos, é possível editar e excluir agendam
 | [!UICONTROL Proprietário] | A pessoa que criou e é proprietária do projeto. |
 | [!UICONTROL Tags] | (opcional) Adicionar tags é uma boa maneira de organizar projetos. Todos os usuários podem criar tags e aplicar uma ou mais tags a um projeto. No entanto, é possível visualizar tags somente para os projetos que você possui ou que foram compartilhados com você. |
 | [!UICONTROL Entregue para] | O(s) recipient(s) deste projeto programado. |
-| [!UICONTROL Data de validade] | A data de expiração padrão depende da frequência do agendamento. Consulte &quot;Datas de expiração programadas do projeto&quot; abaixo. |
+| [!UICONTROL Data de validade] | Você pode definir a data de expiração como até um ano, independentemente da frequência do agendamento. |
 | [!UICONTROL Frequência] | Com que frequência deseja que esse projeto programado seja enviado ao(s) recipient(s). |
 | [!UICONTROL Tempo de execução] | Em que hora do dia esse projeto programado é enviado. |
 | [!UICONTROL Número de consultas] | O número de consultas relativas a este projeto. |
@@ -76,15 +76,6 @@ As ações a seguir são comuns no Gerenciador de projetos programados:
 | **[!UICONTROL Exibir ID de programação]** | Acesse as opções de coluna na parte superior direita e adicione a coluna ID de programação à tabela. A ID programada geralmente é útil para depuração. |
 
 O Gerenciador de agendamento de projetos mostra os itens criados por um usuário específico. Se a conta de usuário estiver desabilitada no aplicativo, todas as entregas programadas são interrompidas.
-
-## Datas de expiração para projetos agendados {#expiration}
-
-As datas de expiração dos projetos agendados dependem da frequência de entrega agendada:
-
-* Os deliveries por hora expiram em uma semana.
-* Os deliveries diários expiram em um mês.
-* Os deliveries semanais expiram em 6 meses.
-* Entregas mensais/anuais expiram em um ano.
 
 ## Proteger com senha um projeto agendado {#password}
 
