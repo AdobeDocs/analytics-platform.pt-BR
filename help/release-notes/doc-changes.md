@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 04b5e4df5ad07e701e3fb812df841b457e7b9c6f
+source-git-commit: 9e87d7b834873d33474d9f48f34ee41d10271419
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 98%
+source-wordcount: '1538'
+ht-degree: 92%
 
 ---
 
@@ -21,6 +21,9 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | --- | --- |
 | **Março de 2023** |  |
 | Suporte a recursos | Atualizado [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) com uma tabela de recursos disponíveis no CJA, mas não disponíveis ou compatíveis no AA. |
+| Métricas calculadas padrão | Adição de conteúdo explicando a [métricas calculadas padrão fornecidas pelo Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
+| Dicionário de dados | <p>Adição de nova documentação para o Dicionário de dados, incluindo uma [Visão geral](/help/components/data-dictionary/data-dictionary-overview.md), [Exibição](/help/components/data-dictionary/view-data-dictionary.md), [Edição](/help/components/data-dictionary/edit-entries-data-dictionary.md), e [Monitoramento](/help/components/data-dictionary/monitor-data-dictionary-health.md) o Dicionário de dados.</p><p>Informações em [Adição de descrições de componentes](/help/components/add-component-descriptions.md) foi atualizado para considerar a funcionalidade do Dicionário de dados.</p> |
+| Compartilhamento de link para projetos (sem logon necessário) | <p>Atualização da documentação existente para explicar como compartilhar um link somente leitura de um projeto com pessoas que não têm acesso ao Analysis Workspace.</p> <p>A documentação atualizada do usuário inclui [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md) e [Criar links compartilháveis](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>As opções para administradores foram adicionadas a [Preferências](/help/analysis-workspace/user-preferences.md).</p> |
 | **Fevereiro de 2023** |  |
 | Comparar o CJA às soluções de BI | Novo documento que apresenta uma [comparação](../getting-started/cja-vs-bi.md) do Customer Journey Analytics com soluções típicas de BI. |
 | Atualização da documentação do Audiences | Nova seção sobre [considerações de latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=pt-BR#latency). |
@@ -93,7 +96,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Janeiro de 2022 | Foi adicionada uma nova documentação de recursos sobre [dimensões e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension) e sobre as novas configurações de alocação de [[!UICONTROL Primeiro conhecimento] e [!UICONTROL Último conhecimento]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#allocation-settings) |
 | Janeiro de 2022 | Novo artigo sobre [comparação dos dados do Adobe Analytics com os dados de análise no CJA](https://experienceleague.adobe.com/docs/analytics-platform/using/troubleshooting/compare.html?lang=pt-BR) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 2021 {#21}
 
@@ -134,7 +137,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | **Janeiro de 2021** |  |
 | Janeiro de 2021 | Novo tópico sobre a [adição de pesquisas globais ao conjunto de dados](/help/connections/standard-lookups.md). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## 2020 {#20}
 
@@ -155,4 +158,4 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | 27 de fevereiro de 2020 | Atualizações no [suporte de recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) |
 | Dezembro de 2019 | Primeiro rascunho da documentação do CJA |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
