@@ -4,10 +4,10 @@ description: Descreve como criar uma conexão com um conjunto de dados da Plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '2471'
-ht-degree: 100%
+source-git-commit: 5db5747637c014da00744802e81f8706c3901b5b
+workflow-type: tm+mt
+source-wordcount: '2472'
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ Um novo fluxo de trabalho de Conexões foi iniciado recentemente no Customer Jou
    | **[!UICONTROL Dados de preenchimento retroativo]** | Você pode solicitar o preenchimento retroativo de dados em um conjunto de dados com base nos carimbos de data e hora do evento. Por exemplo, você pode solicitar o preenchimento retroativo dos últimos 7 dias, configurar a ID de pessoa correta e testar a conexão para obter a configuração correta. Se tudo estiver bem, você pode preencher os dados restantes com facilidade.<p>Além disso, é possível habilitar a importação de novos dados por conjunto de dados. Por exemplo, é possível habilitar a importação de novos dados somente para dados de pesquisa. |
    | **[!UICONTROL Status de preenchimento retroativo]** | Indica se os dados de preenchimento retroativo estão sendo processados. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 ## Adicionar e configurar conjuntos de dados {#add-dataset}
 
@@ -68,6 +68,7 @@ O novo fluxo de trabalho permite adicionar um conjunto de dados da Experience Pl
    | --- | --- |
    | **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte abaixo para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>Se não houver IDs de pessoa para escolher, significa que uma ou mais IDs de pessoa não foram definidas no esquema. Assista a este vídeo sobre como definir uma identidade na Experience Platform. |
    | **[!UICONTROL Carimbo de data e hora]** | Somente para conjuntos de dados de eventos, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão em esquemas baseados em eventos na Experience Platform. |
+   | **[!UICONTROL Tipo de fonte de dados]** | Os tipos de fontes de dados incluem dados de CRM, dados da central de atendimento, dados de email etc. |
    | **[!UICONTROL Importar novos dados]** | Selecione essa opção se quiser estabelecer uma conexão contínua, para que qualquer novo lote de dados adicionado aos conjuntos de dados nesta conexão continuem automaticamente fluindo para o Espaço de trabalho. Pode ser definido como Ligado ou Desligado. |
    | **[!UICONTROL Preenchimento retroativo do conjunto de dados]** | Clique em **[!UICONTROL Solicitar preenchimento retroativo]** para preencher dados históricos.<ul><li>Você pode preencher cada conjunto de dados individualmente.</li><li>Priorizamos novos dados adicionados a um conjunto de dados na conexão, de modo que esses dados tenham a latência mais baixa.</li><li>Qualquer dado de preenchimento retroativo (histórico) é importado em uma taxa mais lenta. A latência é influenciada pela quantidade de dados históricos que você tem.</li><li>O Conector de origem do Adobe Analytics importa até 13 meses de dados, independentemente do tamanho.</li></ul> |
    | **[!UICONTROL Status de preenchimento retroativo]** | Os possíveis indicadores de status são:<ul><li>Sucesso</li><li>Processamento de X preenchimentos retroativos</li><li>Desligado</li></ul> |
@@ -79,7 +80,7 @@ O novo fluxo de trabalho permite adicionar um conjunto de dados da Experience Pl
    | **[!UICONTROL Visualizar]**: `<dataset name>` | Pré-visualiza o conjunto de dados com colunas de data, ID e Identificador. |
    | **[!UICONTROL Remover]** | Você pode excluir ou remover o conjunto de dados e alterar a ID de pessoa sem excluir toda a conexão. Isso reduz os custos envolvidos na assimilação de dados e o complicado processo de recriação de toda a conexão e visualizações de dados associados. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 ## Visualização da conexão {#preview}
 
@@ -105,7 +106,7 @@ Há 3 tipos diferentes de conjunto de dados: dados de [!UICONTROL Evento], dados
 | **[!UICONTROL Pesquisa]** | Esses dados são usados para procurar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode fazer o upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte este [caso de uso](/help/use-cases/b2b/b2b.md) para ver um exemplo. | N/D | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Gravar”, exceto a classe “Perfil individual XDM”. | N/D |
 | **[!UICONTROL Perfil]** | Dados que são aplicados aos visitantes, usuários ou clientes nos dados de [!UICONTROL Evento]. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe “Perfil individual XDM”. | Você pode escolher a ID de pessoa que deseja incluir. Cada conjunto de dados definido no [!DNL Experience Platform] tem seu próprio conjunto de uma ou mais IDs de pessoa definidas, como ID de cookie, ID com título, ID de usuário, código de rastreamento etc.<br>![ID de pessoa ](assets/person-id.png)**Observação**: se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatórios refletirá isso. Para realmente unir conjuntos de dados, é necessário usar a mesma ID de pessoa. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Usar campos numéricos como chaves de pesquisa e valores de pesquisa {#numeric}
 
@@ -134,7 +135,7 @@ Ao selecionar o Mapa de identidade, você terá duas opções adicionais de conf
 | **[!UICONTROL Usar namespace da ID primária]** | Essa opção instrui o CJA, por linha, a localizar a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e a usar como a ID de pessoa para essa linha. Significa que essa é a chave primária que será usada na Experience Platform para particionamento. Também é a principal candidata para usar como a ID de visitante do CJA (dependendo de como o conjunto de dados está configurado em uma conexão do CJA). |
 | **[!UICONTROL Namespace]** | (Essa opção só estará disponível se você não usar a Namespace de ID primária.) Os namespaces de identidade são um componente do [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=pt-BR) que serve como indicadores do contexto ao qual uma identidade está relacionada. Se você especificar um namespace, o CJA pesquisará no Mapa de identidade de cada linha por essa chave de namespace e usará a identidade sob essa namespace como a ID de pessoa para essa linha. Como o CJA não pode fazer uma verificação completa do conjunto de dados de todas as linhas para determinar quais namespaces estão realmente presentes, todos as namespaces possíveis são relacionados na lista suspensa. Você precisa saber quais namespaces são especificados nos dados; isso não pode ser detectado automaticamente. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Casos de borda do Mapa de identidade {#id-map-edge}
 
@@ -145,7 +146,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 | Opção **[!UICONTROL Usar namespace de ID primária] marcada** | A linha é solta pelo CJA. | A linha é solta pelo CJA, pois nenhuma ID primária é especificada. | Todas as IDs marcadas como primárias, em todos os namespaces, são extraídas em uma lista. Elas são classificadas alfabeticamente; com essa nova classificação, o primeiro namespace com sua primeira ID é usado como a ID de pessoa. | A ID única é usada como a ID de pessoa. | Embora o namespace possa ser inválido (não presente no AEP), o CJA usará a ID primária sob esse namespace como a ID de pessoa. |
 | **[!UICONTROL Namespace do Mapa de identidade específico] selecionado** | A linha é solta pelo CJA. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. (Somente um namespace válido pode ser selecionado no momento da criação da conexão, portanto, não é possível que um namespace/ID inválido seja usada como ID de pessoa). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Calcular o número médio de eventos diários
 
