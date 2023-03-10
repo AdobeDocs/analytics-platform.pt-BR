@@ -4,9 +4,9 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 538c0d2858983fb508393c92686f3e7cc52578fa
+source-git-commit: 116000f3dd0212896ca96d7e45e4d4cfc5cdd357
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2004'
 ht-degree: 74%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 74%
 
 As tabelas a seguir listam quais recursos do Adobe Analytics (AA) são compatíveis, parcialmente compatíveis ou não com o Customer Journey Analytics (CJA) e quais recursos do CJA não são compatíveis ou estão disponíveis no AA. Essas listas serão alteradas com o tempo, à medida que recursos forem adicionados ao CJA.
 
-## Recursos/componentes totalmente compatíveis
+## Recursos/componentes totalmente compatíveis {#full-support}
 
 | Recurso do Adobe Analytics | Observações sobre suporte |
 | --- | --- |
@@ -46,9 +46,9 @@ As tabelas a seguir listam quais recursos do Adobe Analytics (AA) são compatív
 | Curadoria do componente VRS | Suporte completo; Agora parte das Visualizações de dados. |
 | Análise de mídia de transmissão | Os dados de mídia estão disponíveis usando o Conector de dados do Analytics como parte do painel Visualizadores simultâneos de mídia e do painel Tempo gasto com a reprodução da mídia no espaço de trabalho. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Compatível de uma nova maneira
+## Compatível de uma nova maneira {#new-support}
 
 | Recurso | Notas |
 | --- | --- |
@@ -71,9 +71,9 @@ As tabelas a seguir listam quais recursos do Adobe Analytics (AA) são compatív
 | Permissões do usuário/Controles de acesso de dados | O CJA distingue entre administradores de produto do [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR), administradores de perfil de produto e usuários. Somente administradores de produtos podem criar/atualizar/excluir conexões, projetos, filtros ou métricas calculadas que foram criadas por outros usuários, enquanto administradores de produtos e administradores de perfis de produtos podem editar visualizações de dados. Permissões de usuário adicionais estão disponíveis para tarefas como a criação de métricas calculadas, filtros ou anotações. |
 | Regras de processamento, regras VISTA e regras de processamento de canais de marketing | Compatível com a funcionalidade de preparação de dados da Adobe Experience Platform para conjuntos de dados baseados em SDK da Web, bem como dados do Conector de dados do Analytics. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Suporte parcial
+## Suporte parcial {#partial}
 
 | Recurso | Notas |
 | --- | --- |
@@ -86,9 +86,9 @@ As tabelas a seguir listam quais recursos do Adobe Analytics (AA) são compatív
 | Regras de processamento | Para conjuntos de dados do Conector de origem do Analytics, as regras de processamento ainda se aplicam. [Os recursos de preparação de dados na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR) também podem ser usados como substituição das regras de processamento para dados que vão diretamente para a Platform. |
 | A4T | O suporte parcial é fornecido por meio de campos no [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). Há um suporte planejado para nomes amigáveis do A4T em atividades de direcionamento e experiência. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Sem suporte no momento, mas planejado
+## Sem suporte no momento, mas planejado {#planned}
 
 | Recurso | Notas |
 | --- | --- |
@@ -104,26 +104,25 @@ As tabelas a seguir listam quais recursos do Adobe Analytics (AA) são compatív
 | Migração de projetos/filtros/métricas calculadas do AA para o CJA | Suporte planejado. |
 | Fontes de dados a nível de resumo | Suporte planejado. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Suporte ainda não planejado
+## Suporte ainda não planejado {#not-planned}
 
 | Recurso | Notas |
 | --- | --- |
 | Activity Map | Suporte ainda não planejado. |
 | Advertising Cloud | Suporte ainda não planejado. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Nunca terá suporte
+## Nunca terá suporte {#never}
 
 * Métrica de pessoas usando Coop entre dispositivos
 * Painéis do Reports &amp; Analytics
 * Marcadores do Reports &amp; Analytics
 * Públicos-alvos do Reports &amp; Analytics
-* Mobile Services
 
-## Recursos do CJA não disponíveis no Adobe Analytics
+## Recursos do CJA não disponíveis no Adobe Analytics {#cja-not-aa}
 
 A tabela a seguir lista os recursos que estão disponíveis no Customer Journey Analytics (CJA), mas não são compatíveis com o Adobe Analytics (AA).
 
@@ -138,4 +137,4 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | Acesso SQL | Usando a Distiller de dados, o CJA pode remover as limitações dos dados coletados no processamento de back-end de Adobe. Você pode modificar seus dados com o SQL, criar novos valores e conjuntos de dados exclusivos para sua empresa e continuar a explorar. O Analytics não suporta nenhum tipo de acesso SQL a seus dados. |
 | Opções aprimoradas de segurança e privacidade - preparação para HIPAA | O CJA está pronto para a HIPAA e oferece opções adicionais de segurança para conformidade com as regulamentações. O Adobe Analytics não está preparado para a HIPAA. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
