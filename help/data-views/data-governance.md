@@ -2,7 +2,7 @@
 title: Rótulos e políticas
 description: Saiba como os rótulos e políticas de dados definidos na AEP afetam as visualizações de dados e os relatórios no CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 7962114aaab42a283f1cb35a312b0a707038c31a
+source-git-commit: 50cc73f8935bf9a692f52b7bee500da63b31cffe
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -18,6 +18,10 @@ Esses rótulos são de especial interesse para o CJA:
 * O rótulo `C8` - **[!UICONTROL Sem medição]**. Esse rótulo significa que os dados não podem ser usados para análises nos sites ou aplicativos de sua organização.
 
 * O rótulo `C12` - **[!UICONTROL Nenhuma exportação de dados gerais]**. Campos de esquema rotulados dessa maneira não podem ser exportados ou baixados do CJA (por meio de relatórios, exportação, API etc.)
+
+>[!NOTE]
+>
+>Os rótulos de uso de dados não são propagados automaticamente para conjuntos de dados compilados. No entanto, elas podem ser adicionadas manualmente.
 
 A rotulação por si só não significa que esses rótulos de uso de dados serão aplicados. É para isso que as políticas são usadas. Você cria suas políticas por meio da [API de serviço de política](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=pt-BR) na Experience Platform.
 
@@ -36,7 +40,7 @@ Os rótulos de dados criados na Experience Platform são exibidos em três locai
 | Painel direito em [Configurações do componente](/help/data-views/component-settings/overview.md) | Todos os [!UICONTROL rótulos de uso de dados] estão listados aqui:<p>![](assets/data-label-right.png) |
 | Adicionar rótulos de dados como uma coluna | Você pode adicionar [!UICONTROL rótulos de uso de dados] como uma coluna nas colunas [!UICONTROL Componentes incluídos] nas visualizações de dados. Basta clicar no ícone do seletor de colunas e selecionar **[!UICONTROL Rótulos de uso de dados]**:<p>![](assets/data-label-column.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Filtrar rótulos de governança de dados em visualizações de dados
 
