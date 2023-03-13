@@ -2,9 +2,9 @@
 title: Integrar o Adobe Journey Optimizer (AJO) ao Customer Journey Analytics (CJA)
 description: Traga dados gerados pelo AJO e analise-os usando o Analysis Workspace no CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: adf5671f80b122b7bcc77dea9c3e57d133961266
+source-git-commit: 750e96bdf6f020e0f5c0fbaf95cdd10c42b95e55
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '735'
 ht-degree: 89%
 
 ---
@@ -35,8 +35,10 @@ Depois que os dados do Journey Optimizer estiverem na Adobe Experience Platform,
 
 Após criar uma conexão, é possível criar uma ou mais [visualizações de dados](/help/data-views/create-dataview.md) para configurar as dimensões e métricas desejadas disponíveis no Customer Journey Analytics.
 
->!![NOTE]
-As discrepâncias de dados entre o AJO e o CJA normalmente são menores do que 1-2%. Discrepâncias maiores são possíveis para dados coletados nas últimas duas horas. Use intervalos de datas, excluindo a data de hoje, para atenuar discrepâncias envolvendo o tempo de processamento.
+>[!NOTE]
+>
+>As discrepâncias de dados entre o AJO e o CJA normalmente são menores do que 1-2%. Discrepâncias maiores são possíveis para dados coletados nas últimas duas horas. Use intervalos de datas, excluindo a data de hoje, para atenuar discrepâncias envolvendo o tempo de processamento.
+
 
 ### Configurar dimensões na visualização de dados
 
@@ -58,7 +60,7 @@ Você pode criar as seguintes dimensões em uma visualização de dados para obt
 | Motivo da falha de entrega de email | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Tipo de componente: dimensão |
 | Motivo de exclusão da entrega de email | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Tipo de componente: dimensão |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Configurar métricas na visualização de dados
 
@@ -76,7 +78,7 @@ Você pode criar as seguintes métricas em uma visualização de dados para obte
 | Reclamações de spam | A contagem de reclamações de spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `spam_complaint` |
 | Cancelamentos de inscrição | A contagem de cancelamentos de inscrição. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `unsubscribe` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Configurar métricas calculadas no Analysis Workspace
 
@@ -87,4 +89,4 @@ Depois de configurar as dimensões e métricas desejadas para o conjunto de dado
 | Mensagens enviadas | O número total de mensagens enviadas. Inclui mensagens bem-sucedidas ou com falha. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
 | Mensagens entregues | O número de emails entregues aos clientes. | `[Sends] - [Bounces After Delivery]` |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
