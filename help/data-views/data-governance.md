@@ -2,18 +2,18 @@
 title: Rótulos e políticas
 description: Saiba como os rótulos e políticas de dados definidos na AEP afetam as visualizações de dados e os relatórios no CJA.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: 50cc73f8935bf9a692f52b7bee500da63b31cffe
+source-git-commit: ba4b1e61891c21610e3bd84a41581b1f6cea6234
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '470'
+ht-degree: 79%
 
 ---
 
 # Rótulos e políticas
 
-Ao criar um conjunto de dados na Experience Platform, você pode criar [rótulos de uso de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=pt-BR) para alguns ou todos os elementos no conjunto de dados. Até agora, esses rótulos não eram expostos no CJA. Com esta versão, você pode visualizar esses rótulos e políticas no CJA.
+Ao criar um conjunto de dados na Experience Platform, você pode criar [rótulos de uso de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=pt-BR) para alguns ou todos os elementos no conjunto de dados. Você pode visualizar esses rótulos e políticas no CJA.
 
-Esses rótulos são de especial interesse para o CJA:
+Os seguintes rótulos são de especial interesse para o CJA:
 
 * O rótulo `C8` - **[!UICONTROL Sem medição]**. Esse rótulo significa que os dados não podem ser usados para análises nos sites ou aplicativos de sua organização.
 
@@ -44,7 +44,7 @@ Os rótulos de dados criados na Experience Platform são exibidos em três locai
 
 ## Filtrar rótulos de governança de dados em visualizações de dados
 
-No editor de visualizações de dados, clique no ícone Filtro no painel esquerdo e filtre os componentes de visualizações de dados por **[!UICONTROL Governança de dados]** e tipo de **[!UICONTROL Rótulo]**:
+No editor de visualizações de dados, clique no ícone [!UICONTROL filtro] ícone no painel esquerdo e filtrar os componentes de visualizações de dados por **[!UICONTROL Governança de dados]** e tipo de **[!UICONTROL Rótulo]**:
 
 ![](assets/filter-labels.png)
 
@@ -54,7 +54,7 @@ Clique em **[!UICONTROL Aplicar]** para ver quais componentes têm rótulos anex
 
 É possível verificar se está ativada uma política que bloqueia o uso de determinados elementos de visualização de dados do CJA para fins de análise ou exportação.
 
-Novamente, clique no ícone Filtro no painel à esquerda e, em **[!UICONTROL Governança de dados]**, clique em **[!UICONTROL Políticas]**:
+Novamente, clique no link [!UICONTROL filtro] no painel à esquerda e em **[!UICONTROL Governança de dados]**, clique em **[!UICONTROL Políticas]**:
 
 ![](assets/filter-policies.png)
 
