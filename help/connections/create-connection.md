@@ -4,10 +4,10 @@ description: Descreve como criar uma conexão com um conjunto de dados da Plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 5db5747637c014da00744802e81f8706c3901b5b
+source-git-commit: 1490efac916594b7d7eb146f1cfa6a1835878199
 workflow-type: tm+mt
-source-wordcount: '2472'
-ht-degree: 99%
+source-wordcount: '2489'
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ O novo fluxo de trabalho permite adicionar um conjunto de dados da Experience Pl
    | --- | --- |
    | **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte abaixo para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>Se não houver IDs de pessoa para escolher, significa que uma ou mais IDs de pessoa não foram definidas no esquema. Assista a este vídeo sobre como definir uma identidade na Experience Platform. |
    | **[!UICONTROL Carimbo de data e hora]** | Somente para conjuntos de dados de eventos, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão em esquemas baseados em eventos na Experience Platform. |
-   | **[!UICONTROL Tipo de fonte de dados]** | Os tipos de fontes de dados incluem dados de CRM, dados da central de atendimento, dados de email etc. |
+   | **[!UICONTROL Tipo de fonte de dados]** | Os tipos de fontes de dados incluem: dados da Web, dados de aplicativos móveis, dados de PDV, dados de CRM, dados de pesquisas, dados da central de atendimento, dados de produtos, dados de contas, dados de transações, dados de feedback de clientes e outros. |
    | **[!UICONTROL Importar novos dados]** | Selecione essa opção se quiser estabelecer uma conexão contínua, para que qualquer novo lote de dados adicionado aos conjuntos de dados nesta conexão continuem automaticamente fluindo para o Espaço de trabalho. Pode ser definido como Ligado ou Desligado. |
    | **[!UICONTROL Preenchimento retroativo do conjunto de dados]** | Clique em **[!UICONTROL Solicitar preenchimento retroativo]** para preencher dados históricos.<ul><li>Você pode preencher cada conjunto de dados individualmente.</li><li>Priorizamos novos dados adicionados a um conjunto de dados na conexão, de modo que esses dados tenham a latência mais baixa.</li><li>Qualquer dado de preenchimento retroativo (histórico) é importado em uma taxa mais lenta. A latência é influenciada pela quantidade de dados históricos que você tem.</li><li>O Conector de origem do Adobe Analytics importa até 13 meses de dados, independentemente do tamanho.</li></ul> |
    | **[!UICONTROL Status de preenchimento retroativo]** | Os possíveis indicadores de status são:<ul><li>Sucesso</li><li>Processamento de X preenchimentos retroativos</li><li>Desligado</li></ul> |
