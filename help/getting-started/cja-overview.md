@@ -54,7 +54,7 @@ O Customer Journey Analytics permite:
 
 Antes de começar a usar o Customer Journey Analytics, os seguintes pré-requisitos devem ser atendidos:
 
-* Sua organização deve ter um contrato ativo com o Adobe Analytics for Select, Prime ou Ultimate com o complemento Customer Journey Analytics. Se você não tiver certeza do tipo de contrato que possui ou se não tiver certeza se tem o complemento CJA, entre em contato com a equipe de conta do Adobe.
+* Sua organização deve ter um contrato ativo com o Adobe Analytics for Select, Prime ou Ultimate com o complemento Customer Journey Analytics. Se você não tiver certeza de que tipo de contrato possui ou não tem certeza se tem o complemento CJA, entre em contato com a Equipe da conta do Adobe.
 * Sua organização foi provisionada para a Adobe Experience Platform.
 * Também é possível comprar o Customer Journey Analytics como um produto independente, sem precisar do Adobe Analytics.
 
