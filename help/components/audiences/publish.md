@@ -2,10 +2,10 @@
 title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 1bd07390b1e01c64f192994a6d9d41e7c9a88440
+source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 100%
+source-wordcount: '1435'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    | A partir de uma tabela de forma livre | Clique com o botão direito do mouse em um item na tabela de Forma livre e selecione **[!UICONTROL Criar um público-alvo a partir da seleção]**. O uso desse método preenche o filtro previamente com a dimensão ou o item de dimensão selecionado na tabela. |
    | Na interface de criação/edição do filtro | Marque a caixa que diz **[!UICONTROL Criar um público-alvo com base neste filtro]**. O uso desse método preenche o filtro previamente. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Crie o público-alvo.
 
@@ -45,7 +45,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    | [!UICONTROL Filtro] | Os filtros são a principal entrada para o público. Você pode adicionar até 20 filtros. Esses filtros podem ser unidos com operadores `And` ou `Or`. |
    | [!UICONTROL Ver amostras de IDs] | Um exemplo de IDs neste público-alvo. Use a barra de pesquisa para procurar IDs de exemplo. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Interpretar a visualização de dados.
 
@@ -64,7 +64,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    | [!UICONTROL Namespaces incluídos] | Os namespaces específicos que estão associados às pessoas no seu público-alvo. Os exemplos incluem ECID, CRM ID, endereços de email, etc. |
    | [!UICONTROL Sandbox] | A [sandbox da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=pt-BR) em que esse público-alvo está. Ao publicar esse público-alvo na Platform, você só pode trabalhar com ele nos limites dessa sandbox. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Verifique novamente a configuração do público-alvo e clique em **[!UICONTROL Publicar]**.
 
@@ -82,19 +82,20 @@ Depois de criar um público, a Adobe cria um segmento de streaming da Experience
 
 ## Considerações sobre latência {#latency}
 
-Em vários pontos antes, durante e após a publicação do público, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
+Em vários pontos antes, durante e após a publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
-![](assets/latency-diagram.png)
+![latência de AEP para CJA](assets/latency-diagram.png)
 
 | # | Ponto de latência | Duração da latência |
 | --- | --- | --- |
-| 1 | Assimilação de dados no Data Lake | Até 30 minutos |
-| 2 | Assimilação de dados da Experience Platform no CJA | Até 60 minutos |
+| Não exibido | Conector de origem Adobe Analytics para Analytics (A4T) | Até 30 minutos |
+| 1 | Assimilação de dados no Data Lake (do Conector de origem do Analytics ou outras fontes) | Até 90 minutos |
+| 2 | Assimilação de dados do Experience Platform Data Lake para CJA | Até 90 minutos |
 | 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
 | 4 | Atualizar frequência dos públicos | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
 | 5 | Criação de destino na AEP: ativar o novo segmento | 1 a 2 horas |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Usar públicos do CJA na Experience Platform {#audiences-aep}
 
@@ -130,7 +131,7 @@ Sim, será.
 
 +++
 
-+++**O CJA envia os dados do público como eventos de pipeline ou um arquivo simples que também vai para o data lake?**
++++**O CJA envia os dados do público-alvo como eventos de pipeline ou como um arquivo simples que também vai para o lago de dados?**
 
 O CJA envia os dados para o RTCP por meio do pipeline e esses dados também são coletados em um conjunto de dados do sistema no data lake.
 
@@ -138,7 +139,7 @@ O CJA envia os dados para o RTCP por meio do pipeline e esses dados também são
 
 +++**Quais identidades o CJA envia?**
 
-Qualquer par de identidade/namespace usado na [Configuração da conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
+Qualquer par de identidade/namespace especificado no [Configuração de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
 
 +++
 
