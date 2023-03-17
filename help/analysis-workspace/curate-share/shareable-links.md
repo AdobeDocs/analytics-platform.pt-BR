@@ -3,10 +3,10 @@ description: Saiba como criar links compartilháveis para projetos ou visualiza�
 keywords: Compartilhamento no Analysis Workspace
 title: Criar links compartilháveis
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: c419d304e6af77fb61b756aa59faeae88a7c29d5
+source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 81%
+source-wordcount: '338'
+ht-degree: 80%
 
 ---
 
@@ -20,13 +20,13 @@ Para compartilhar um link para o projeto completo, acesse **[!UICONTROL Comparti
 
 ![](assets/get-project-link.png)
 
-## Obter link público
+## Obter um link somente leitura para compartilhar com qualquer pessoa
 
 {{release-limited-testing-section}}
 
-Você pode compartilhar um link somente para visualização com projetos da Analysis Workspace com pessoas que não têm acesso ao Adobe Analytics.
+Você pode compartilhar um link somente leitura para projetos do Analysis Workspace com pessoas que não têm acesso ao Customer Journey Analytics.
 
-Para obter mais informações, consulte &quot;Compartilhar um link público com qualquer pessoa (sem logon necessário)&quot; no artigo [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).
+Para obter mais informações, consulte &quot;Compartilhar um projeto com qualquer pessoa (sem logon necessário)&quot; no artigo [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## Obter o painel ou link de visualização {#panel-link}
 
