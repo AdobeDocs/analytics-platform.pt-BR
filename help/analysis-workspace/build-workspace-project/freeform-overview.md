@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visão geral dos Projetos
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+source-git-commit: c378a7d39c3d2ae388bc3cf2fa1bbc693b0bccb3
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 81%
+source-wordcount: '1333'
+ht-degree: 80%
 
 ---
 
@@ -33,8 +33,6 @@ A página Projetos contém as seguintes informações:
 | [Editar preferências](/help/analysis-workspace/user-preferences.md) | Gerencie as configurações do Analysis Workspace e seus componentes relacionados a todos os novos projetos ou painéis criados por você. |
 | [Criar pasta](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Adicione uma nova pasta ou subpasta à lista de projetos e pastas. |
 | [Criar projeto](/help/analysis-workspace/home.md) | Inicie um novo projeto do zero ou de um [modelo](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=pt-BR#analysis-workspace). |
-| Gerenciar projetos <!--I don't see this option--> | Clicar nesse link o direciona para o Gerenciador de componentes de projetos (**[!UICONTROL Analytics]** > **[!UICONTROL Componentes]** > **[!UICONTROL Projetos]**), que lista todos os projetos e permite marcar, compartilhar, excluir, renomear, aprovar e exportar projetos para CSV. |
-| Definir como página inicial <!--I don't see this option--> | Transforma esta página em sua página inicial do Espaço de trabalho. |
 | Mostrar mais | Revela opções para criar um projeto em branco ou um scorecard móvel, [visualizar tutoriais de treinamento](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=pt-BR)ou [exibição das notas de versão](/help/release-notes/latest.md). |
 | Mostrar pastas e projetos | Escolha se deseja mostrar a estrutura de pastas de projetos. Para obter mais informações, consulte [Sobre pastas no Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Personalizar tabela (ícone) | Permite personalizar as informações exibidas para cada projeto na página Projetos . |
@@ -53,8 +51,6 @@ A página Projetos contém as seguintes informações:
 | Intervalo de datas mais longo | O intervalo de datas mais longo do projeto. |
 | Número de consultas | O número total de consultas contidas no projeto. |
 | Localização | A pasta onde o projeto reside. |
-| Meus projetos favoritos <!--I don't see this option--> | Para marcar um projeto como favorito, abra-o e clique na estrela ao lado do seu nome. Ele será exibido nessa lista na próxima vez que você abrir o Espaço de trabalho. |
-| Projetos visualizados com frequência <!--I don't see this option--> | Lista todos os projetos que você abre com frequência para facilitar o acesso. |
 
 ## Barra de menus {#menu-bar}
 
