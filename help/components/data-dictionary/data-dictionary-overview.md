@@ -3,7 +3,7 @@ description: O dicionário de dados do Analysis Workspace permite que os usuári
 title: Visão geral do dicionário de dados
 feature: Components
 role: User, Admin
-source-git-commit: 5d6942af4ac3f999c5e7fd7d6ba74a5fe7a26a9d
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 77%
@@ -12,11 +12,9 @@ ht-degree: 77%
 
 # Visão geral do dicionário de dados
 
-{{release-limited-testing}}
-
 O dicionário de dados do Analysis Workspace ajuda os usuários e administradores a acompanhar e compreender melhor os componentes em seu ambiente do Analytics.
 
-Os administradores do Analytics são responsáveis por preparar informações sobre cada componente no dicionário de dados para disponibilizá-lo aos usuários.
+Os administradores do Analytics são responsáveis por preparar informações sobre cada componente no Dicionário de dados para torná-lo disponível aos usuários.
 
 ## Benefícios para os usuários
 
@@ -32,7 +30,7 @@ As informações disponíveis no dicionário de dados incluem:
 
 * Se um componente é aprovado pelo administrador do sistema
 
-Para obter informações sobre como acessar o dicionário de dados e obter detalhes sobre as informações que ele contém, consulte [Exibir informações do componente no Dicionário de dados](/help/components/data-dictionary/view-data-dictionary.md).
+Para obter informações sobre como acessar o Dicionário de dados e para obter detalhes sobre as informações que ele contém, consulte [Exibir informações do componente no Dicionário de dados](/help/components/data-dictionary/view-data-dictionary.md).
 
 ## Benefícios para administradores
 
@@ -71,9 +69,9 @@ Para obter informações detalhadas sobre as várias opções disponíveis no Di
 
 ## Atualizar e preparar o dicionário de dados
 
-Os administradores do Customer Journey Analytics são responsáveis por manter um Dicionário de dados íntegro para sua organização, conforme descrito em [Monitorar Integridade do Dicionário de Dados](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Os administradores do Customer Journey Analytics são responsáveis por manter um Dicionário de dados saudável para sua organização, conforme descrito em [Monitorar integridade do dicionário de dados](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-Como parte desse processo, os administradores do CJA podem editar informações sobre cada componente no dicionário de dados, conforme descrito em [Editar entradas de componentes no Dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+Como parte desse processo, os administradores do CJA podem editar informações sobre cada componente no dicionário de dados, conforme descrito em [Editar entradas de componente no Dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## Mover, minimizar ou fechar o dicionário de dados
 

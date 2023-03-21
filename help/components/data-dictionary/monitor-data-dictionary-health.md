@@ -3,7 +3,7 @@ description: Os administradores são responsáveis por monitorar a integridade d
 title: Monitorar a integridade do dicionário de dados
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 94%
@@ -12,9 +12,7 @@ ht-degree: 94%
 
 # Monitorar a integridade do dicionário de dados
 
-{{release-limited-testing}}
-
-Os administradores do Customer Journey Analytics são responsáveis pela manutenção de um dicionário de dados íntegro.
+Os administradores do Customer Journey Analytics são responsáveis pela manutenção de um Dicionário de dados saudável.
 
 ## Características de um dicionário de dados íntegro
 

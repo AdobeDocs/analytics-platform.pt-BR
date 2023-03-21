@@ -3,18 +3,16 @@ description: O dicionário de dados do Analysis Workspace permite que os usuári
 title: Editar entradas no Dicionário de dados
 feature: Components
 role: Admin
-source-git-commit: 5929d56bef8f756967926482f80014db0d43d3e3
+source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 92%
+source-wordcount: '293'
+ht-degree: 70%
 
 ---
 
 # Editar entradas de componente no dicionário de dados
 
-{{release-limited-testing}}
-
-Os administradores de Customer Journey Analytics podem editar entradas de componentes no Dicionário de dados para um determinado conjunto de relatórios. Todas as alterações feitas ficam visíveis para todos os usuários do Conjunto de relatórios.
+Os administradores do Customer Journey Analytics podem editar entradas de componentes no Dicionário de dados de um determinado Conjunto de relatórios. Todas as alterações feitas ficam visíveis para todos os usuários do Conjunto de relatórios.
 
 Para editar um componente no Dicionário de dados:
 
@@ -29,6 +27,8 @@ Para editar um componente no Dicionário de dados:
 1. Verifique se o conjunto de relatórios correto está selecionado no menu suspenso. Por padrão, o conjunto de relatórios em que você já está é exibido.
 
 1. (Opcional) No campo de pesquisa, comece a digitar o nome do componente que deseja editar.
+
+   O tipo de componente pode ser identificado por cor e ícone. **Dimension** ![Ícone Dimension](assets/dimension-icon.png) são laranja, **Segmentos** ![Ícone Segmento](assets/segment-icon.png) são azuis, **Intervalos de datas** ![Ícone de intervalo de datas](assets/date-range-icon.png) são roxas e **Métricas** ![Ícone Métrica](assets/default-metric-icon.png) são verdes. O ícone Adobe ![Ícone Adobe](assets/default-calc-metric-icon.png) indica um modelo de métrica calculada ou um modelo de segmento, e o ícone da calculadora ![Ícone Calculadora](assets/calculated-metric-icon-created.png) indica uma métrica calculada criada por um administrador do Analytics em sua organização.
 
 {{dd-filter-criteria}}
 
