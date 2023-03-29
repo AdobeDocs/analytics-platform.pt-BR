@@ -2,10 +2,10 @@
 title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 60f9c81699f9a8e1657da4bd806d04f9f8adaa99
+source-git-commit: 28c56e7f33960c75ab6ca87fcbc0d1fb61d2f107
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 94%
+source-wordcount: '1502'
+ht-degree: 90%
 
 ---
 
@@ -154,6 +154,19 @@ Veja acima. Enviamos apenas uma identidade por “pessoa” do CJA.
 Não. Enviamos apenas uma identidade por “pessoa”, de modo que não haveria bordas de gráfico para a RTCP consumir.
 
 +++
+
++++**A que horas do dia ocorrem as atualizações diárias, semanais e mensais? Que dia da semana ocorrem as atualizações semanais?**
+
+O tempo da atualização é baseado em quando o público-alvo original foi publicado e âncora para a hora do dia (e dia da semana ou mês).
+
++++
+
++++**O horário diário, semanal e mensal da atualização pode ser configurado pelos usuários?**
+
+Não, eles não podem ser configurados pelos usuários.
+
++++
+
 
 ## Próximas etapas
 
