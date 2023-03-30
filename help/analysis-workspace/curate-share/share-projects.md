@@ -4,10 +4,10 @@ keywords: Compartilhamento no Analysis Workspace
 title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+source-git-commit: bf067ca57564bad72640c6bb5eb1c376ad818d3e
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 63%
+source-wordcount: '1655'
+ht-degree: 60%
 
 ---
 
@@ -121,6 +121,10 @@ Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-sha
 >* A capacidade de compartilhar um projeto dessa maneira pode ser desativada pelo administrador do CJA, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md). Se você não puder compartilhar um projeto conforme descrito nesta seção, o administrador do CJA desabilitou essa capacidade.
 >
 >* Projetos com mais de 14 visualizações expandidas não podem ser compartilhados com pessoas que não têm acesso ao CJA.
+>
+>* Os usuários com os quais você compartilha podem visualizar qualquer filtro que tenha sido aplicado ao projeto durante [preparação](curate.md).
+> 
+>* Os usuários com os quais você compartilha podem alterar o intervalo de datas do projeto. O intervalo de datas definido para o projeto é exibido por padrão.
 
 
 Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
@@ -152,6 +156,8 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 1. Compartilhe o link com as pessoas que deseja que tenham acesso ao projeto. Por exemplo, você pode colar o link em um email.
 
    Qualquer pessoa com a qual você compartilha o link pode exibir o projeto do Analysis Workspace.
+
+1. (Opcional) Você pode clicar no botão **Gerar novo link** ícone ![Ícone Gerar link](assets/regenerate-link.png) para remover o acesso de usuários que receberam anteriormente um link para o projeto. Um novo link é gerado e pode ser compartilhado com usuários que você deseja acessar o projeto.
 
 1. Selecionar **[!UICONTROL Fechar]** para fechar a caixa de diálogo compartilhar. Suas alterações são salvas automaticamente.
 
