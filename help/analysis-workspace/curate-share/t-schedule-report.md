@@ -5,22 +5,22 @@ title: Agendar projetos
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 06ec1145e25275dab0b1bf2388caae9eb8e6bcfe
+source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 93%
+source-wordcount: '884'
+ht-degree: 94%
 
 ---
 
 # Agendar projetos
 
-No Espaço de trabalho **[!UICONTROL Compartilhar]** , você pode enviar projetos Analysis Workspace por email para recipients selecionados. Os arquivos podem ser enviados no formato CSV ou PDF.
+No Workspace **[!UICONTROL Compartilhar]** é possível enviar projetos do Analysis Workspace por email para recipients selecionados. Os arquivos podem ser enviados no formato CSV ou PDF.
 
 ## Enviar arquivo agora {#now}
 
 Para enviar um arquivo imediatamente aos recipients por email:
 
-1. Clique em **[!UICONTROL Compartilhar] > [!UICONTROL Enviar arquivo agora]**.
+1. Clique em **[!UICONTROL Compartilhar] > [!UICONTROL Exportar arquivo]**.
 1. Especifique o tipo de arquivo (CSV ou PDF).
 1. (Opcional) Adicione uma descrição que será incluída no email para o arquivo que está sendo recebido.
 1. Adicione recipients ou grupos. Endereços de email também podem ser inseridos.
@@ -34,7 +34,7 @@ Para enviar um arquivo imediatamente aos recipients por email:
 
 Para enviar um arquivo por email de acordo com uma programação recorrente a recipients:
 
-1. Clique em **[!UICONTROL Compartilhar] > [!UICONTROL Enviar arquivo agendado]**.
+1. Clique em **[!UICONTROL Compartilhar] > [!UICONTROL Agendar exportação de arquivo]**.
 1. Especifique o tipo de arquivo (CSV ou PDF).
 1. (Opcional) Adicione uma descrição que será incluída no email para o arquivo que está sendo recebido.
 1. Adicione recipients ou grupos. Endereços de email também podem ser inseridos.
@@ -47,7 +47,7 @@ Para enviar um arquivo por email de acordo com uma programação recorrente a re
 
 ## Gerenciador de projetos programados {#manager}
 
-Os projetos agendados do Analysis Workspace podem ser gerenciados em **[!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos Agendados]**.
+Os projetos programados do Analysis Workspace podem ser gerenciados em **[!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos agendados]**.
 
 No Gerenciador de agendamento de projetos, é possível editar e excluir agendamentos de projetos recorrentes. Procure um agendamento na barra de pesquisa ou usando as opções de filtro no painel esquerdo. Você pode filtrar por tag, programação aprovada, proprietários e muito mais.
 
@@ -59,7 +59,7 @@ No Gerenciador de agendamento de projetos, é possível editar e excluir agendam
 | [!UICONTROL Proprietário] | A pessoa que criou e é proprietária do projeto. |
 | [!UICONTROL Tags] | (opcional) Adicionar tags é uma boa maneira de organizar projetos. Todos os usuários podem criar tags e aplicar uma ou mais tags a um projeto. No entanto, é possível visualizar tags somente para os projetos que você possui ou que foram compartilhados com você. |
 | [!UICONTROL Entregue para] | O(s) recipient(s) deste projeto programado. |
-| [!UICONTROL Data de validade] | Você pode definir a data de expiração como até um ano, independentemente da frequência do agendamento. |
+| [!UICONTROL Data de validade] | Você pode definir a data de expiração como até um ano, independentemente da frequência da programação. |
 | [!UICONTROL Frequência] | Com que frequência deseja que esse projeto programado seja enviado ao(s) recipient(s). |
 | [!UICONTROL Tempo de execução] | Em que hora do dia esse projeto programado é enviado. |
 | [!UICONTROL Número de consultas] | O número de consultas relativas a este projeto. |

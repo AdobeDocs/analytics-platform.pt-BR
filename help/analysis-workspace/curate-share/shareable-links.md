@@ -3,10 +3,10 @@ description: Saiba como criar links compartilháveis para projetos ou visualiza�
 keywords: Compartilhamento no Analysis Workspace
 title: Criar links compartilháveis
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
-source-git-commit: 29f65709a3cca89e3fbabe978e65e25e0c546c10
+source-git-commit: 19ed9553a147c87e20ecfcf536d03b7c6b2e9b91
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 80%
+source-wordcount: '375'
+ht-degree: 62%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 80%
 
 O Analysis Workspace oferece várias maneiras de compartilhar um projeto com seus usuários, incluindo a capacidade de obter um link para um projeto ou uma parte específica de um projeto. Alguns tipos de link exigem que o recipient faça logon no Adobe Analytics antes de acessar o projeto, enquanto outros não.
 
-## Obter link do projeto {#project-link}
+## Obter um link de projeto para compartilhar com outros usuários do Workspace {#project-link}
 
-Para compartilhar um link para o projeto completo, acesse **[!UICONTROL Compartilhar > Obter link do projeto]**. Se o recipient do link não tiver uma [função de projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=pt-BR) atribuída, os administradores receberão a função **[!UICONTROL Pode editar]** e os não administradores receberão experiências **[!UICONTROL Pode duplicar]** experiências.
+Para compartilhar um link para um projeto, vá para o projeto que deseja compartilhar e selecione ir para [!UICONTROL **Compartilhar**] > [!UICONTROL **Obter link do projeto**] ou **Compartilhar**] > [!UICONTROL **Compartilhar com usuários do Workspace**] > [!UICONTROL **Compartilhar por link**). Os usuários com os quais você compartilha o link precisam fazer logon.
 
-![](assets/get-project-link.png)
+Se o recipient do link não tiver recebido uma [função do projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=pt-BR), administradores recebem **[!UICONTROL Pode editar]** e não administradores recebem **[!UICONTROL Pode duplicar]** experiências.
 
 ## Obter um link somente leitura para compartilhar com qualquer pessoa
 
