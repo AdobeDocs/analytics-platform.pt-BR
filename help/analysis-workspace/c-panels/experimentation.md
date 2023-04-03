@@ -3,10 +3,10 @@ description: Saiba como analisar os resultados de testes A/B no painel de experi
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 967348b321525c50b292339de875fd4976d8b10a
-workflow-type: ht
-source-wordcount: '1393'
-ht-degree: 100%
+source-git-commit: 54d8cf211a5a4bc3ffde5e24c29089125fc35362
+workflow-type: tm+mt
+source-wordcount: '1833'
+ht-degree: 75%
 
 ---
 
@@ -18,17 +18,21 @@ O painel **[!UICONTROL Experimentação]** permite que os analistas comparem dif
 >
 >No momento, os dados do [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=pt-BR) (A4T) trazidos para a Adobe Experience Platform por meio do Conector de origem do Analytics **não podem** ser analisados no painel [!UICONTROL Experimentação]. Esperamos uma solução para esta questão em 2023.
 
-## Controle de acesso
+## Controle de acesso {#access}
 
 O painel Experimentação está disponível para uso por todos os usuários do Customer Journey Analytics (CJA). Não são necessários direitos de administrador ou outras permissões. No entanto, a configuração (etapas 1 e 2 abaixo) requer ações que somente administradores podem executar.
 
-## Etapa 1: criar conexão com conjuntos de dados de experimento
+## Novas funções de métricas calculadas {#functions}
+
+Foram adicionadas duas novas funções avançadas: [!UICONTROL Aumento] e [!UICONTROL Confiança]. Para obter mais informações, consulte [Referência - funções avançadas](/help/components/calc-metrics/cm-adv-functions.md).
+
+## Etapa 1: criar conexão com conjuntos de dados de experimento {#connection}
 
 O esquema de dados recomendado é um no qual os dados experimentais estejam em uma [Matriz de objetos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=pt-BR) que contém os dados de experimento e variante em duas dimensões separadas. Se você tiver seus dados de experimento em uma única dimensão com os dados de experimento e variante em uma string delimitada, poderá usar a configuração [substring](/help/data-views/component-settings/substring.md) das visualizações de dados para dividi-los em duas partes para uso no painel.
 
 Depois que seus dados de experimento tiverem sido [ingeridos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) pela Adobe Experience Platform, [crie uma conexão no CJA](/help/connections/create-connection.md) para um ou mais conjuntos de dados de experimento.
 
-## Etapa 2: adicionar rótulos de contexto em visualizações de dados
+## Etapa 2: adicionar rótulos de contexto em visualizações de dados {#contect-labels}
 
 Nas configurações de visualizações de dados do CJA, os administradores podem adicionar [rótulos de contexto](/help/data-views/component-settings/overview.md) a uma dimensão ou métrica, e serviços do CJA, como o painel [!UICONTROL Experimentação], podem usar esses rótulos para suas finalidades. Dois rótulos predefinidos são usados para o painel Experimentação:
 
@@ -41,7 +45,7 @@ Na visualização de dados que contém dados de experimentação, escolha duas d
 
 Sem a presença desses rótulos, o painel Experimento não funciona, pois não haverá experimentos com os quais trabalhar.
 
-## Etapa 3: configurar o painel Experimento
+## Etapa 3: configurar o painel Experimento {#configure}
 
 1. No Workspace do CJA, arraste o painel Experimentação para um projeto.
 
@@ -62,7 +66,7 @@ Sem a presença desses rótulos, o painel Experimento não funciona, pois não h
 
 1. Clique em **[!UICONTROL Criar]**.
 
-## Etapa 4: visualizar a saída do painel
+## Etapa 4: visualizar a saída do painel {#view}
 
 O painel Experimentação retorna um conjunto avançado de dados e visualizações para ajudá-lo a entender melhor o desempenho de seus experimentos. Na parte superior do painel, uma linha de resumo é fornecida para lembrar das configurações do painel que você selecionou. A qualquer momento, você pode editar o painel clicando no lápis de edição na parte superior direita.
 
@@ -80,7 +84,7 @@ O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] e
 >
 >No momento, esse painel não é compatível com a análise de testes A/A.
 
-## Etapa 5: interpretar os resultados
+## Etapa 5: interpretar os resultados {#interpret}
 
 1. **O experimento é conclusivo**: cada vez que você visualiza o relatório de experimentação, a Adobe analisa os dados acumulados no experimento até o momento e declara um experimento como “Conclusivo” quando a confiança válida a qualquer momento ultrapassa um limite de 95% em *pelo menos uma* das variantes (com uma correção de Bonferonni aplicada quando há mais de dois braços a serem corrigidos para testes de hipótese múltipla).
 
@@ -96,7 +100,7 @@ O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] e
 >
 >Uma descrição completa dos resultados deve considerar todas as evidências disponíveis (ou seja, o design do experimento, tamanhos das amostras, taxas de conversão, confiança etc.) e não apenas se é conclusivo ou não. Mesmo que um resultado ainda não seja “conclusivo”, é possível que haja evidências convincentes de que uma variante seja diferente de outra (por exemplo, intervalos de confiança que quase não se sobrepõem). Idealmente, a tomada de decisões deve ser informada por todas as evidências estatísticas, interpretadas em um espectro contínuo.
 
-## Metodologia estatística da Adobe
+## Metodologia estatística da Adobe {#statistics}
 
 Para proporcionar uma inferência estatística fácil de interpretar e segura, a Adobe adotou uma metodologia estatística baseada em [Sequências de confiança válidas a qualquer momento](https://doi.org/10.48550/arXiv.2103.06476).
 
@@ -104,6 +108,20 @@ Uma sequência de confiança é um análogo “sequencial” de um intervalo de 
 
 Uma sequência de confiança de 95% incluirá o valor “true” da métrica de negócios em 95 dos 100 experimentos executados. (Um intervalo de confiança de 95% só pode ser calculado uma vez por experimento a fim de dar a mesma garantia de cobertura de 95%; não com cada novo usuário). As Sequências de confiança permitem, portanto, monitorar continuamente os experimentos sem aumentar as índice de erro falso positivo. Ou seja, elas permitem “espiar” os resultados.
 
-## Novas funções de métricas calculadas
+## Interpretar dimensões não aleatórias {#non-randomized}
 
-Foram adicionadas duas novas funções avançadas: [!UICONTROL Aumento] e [!UICONTROL Confiança]. Para obter mais informações, consulte [Referência - funções avançadas](/help/components/calc-metrics/cm-adv-functions.md).
+O CJA permite que os analistas selecionem qualquer dimensão como o &quot;experimento&quot;. Mas como você interpreta uma análise onde a dimensão escolhida como experimento não é aquela para a qual os visitantes são aleatorizados?
+
+Por exemplo, considere um anúncio visualizado por um visitante. Você pode estar interessado em medir a alteração em alguma métrica (por exemplo, receita média) se decidir mostrar aos visitantes &quot;anúncio B&quot; em vez de &quot;anúncio A&quot;. O efeito causal da apresentação da publicidade B no lugar da publicidade A é de importância central para a tomada de decisão de comercialização. Este efeito causal pode ser medido como a receita média sobre toda a população, se substituirmos o status quo de mostrar a publicidade A pela estratégia alternativa de mostrar a publicidade B.
+
+O teste A/B é o padrão-ouro do setor para medir objetivamente os efeitos de tais intervenções. A razão crítica pela qual um teste A/B dá origem a uma estimativa causal é porque os visitantes foram aleatorizados para receber uma das variantes possíveis.
+
+Agora considere uma dimensão que não é alcançada pela aleatoriedade, por exemplo, o estado dos EUA do visitante. Digamos que nossos visitantes vêm principalmente de dois estados, Nova York e Califórnia. A receita média das vendas de uma marca de vestuário de inverno pode ser diferente nos dois estados devido às diferenças climáticas regionais. Nessa situação, o clima pode ser o verdadeiro fator causador das vendas de vestuário no inverno e não o fato de os estados geográficos dos visitantes serem diferentes.
+
+O painel de experimentação no Customer Journey Analytics permite analisar dados como diferença média de receita por estados dos visitantes. Nestas circunstâncias, a produção não tem uma interpretação causal. No entanto, essa análise pode ainda ser de interesse. Ele fornece uma estimativa (juntamente com medidas de incerteza) da diferença na receita média dos estados dos visitantes. Também é referido como &quot;Teste de Hipótese Estatística&quot;. A saída dessa análise pode ser interessante, mas não necessariamente acionável, pois não temos nem às vezes não podemos aleatoriamente redimensionar visitantes para um dos valores possíveis da dimensão.
+
+A ilustração a seguir contrasta essas situações:
+
+![experimento aleatório](assets/randomize.png)
+
+Quando você deseja medir o impacto da intervenção X no resultado Y, é possível que a causa real de ambos seja o fator de confusão C. Se os dados não forem alcançados por visitantes aleatórios em X, o impacto é mais difícil de medir, e a análise terá conta explicitamente para C. A aleatoriedade interrompe a dependência de X em C, permitindo medir o efeito de X em Y sem ter que se preocupar com outras variáveis.
