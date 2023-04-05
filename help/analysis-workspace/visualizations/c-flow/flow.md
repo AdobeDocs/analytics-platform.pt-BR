@@ -3,10 +3,10 @@ description: O recurso Fluxo mostra os caminhos do cliente pelos seus sites e ap
 title: Visão geral do Fluxo
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '185'
-ht-degree: 100%
+source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,6 +27,10 @@ Ele permite:
 É possível mostrar o [fluxo entre dimensões](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Por exemplo, você pode combinar páginas e departamentos em um diagrama. Neste caso, seu fluxo pode ir da página inicial à página Masculino e, então, para o departamento de Sapatos.
 
 Cada coluna pode exibir uma dimensão diferente. Arraste uma dimensão e solte em uma área para adicioná-la ao diagrama.
+
+## Configurar uma visualização de fluxo
+
+Para obter informações sobre como configurar uma visualização de fluxo, consulte [Configurar uma visualização de fluxo](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 
 ## Exportar diagramas de fluxo como parte dos arquivos .CSV do projeto {#section_BACD2639A0FC4C49A75398F7D0363D9D}
 

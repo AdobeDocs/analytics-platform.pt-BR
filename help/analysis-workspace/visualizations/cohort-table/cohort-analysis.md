@@ -3,10 +3,10 @@ title: O que é a análise de coorte?
 description: Saiba mais sobre a análise de coorte no Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 91%
 
 ---
 
@@ -30,10 +30,7 @@ A [!UICONTROL Análise de coorte] está disponível a todos os clientes do Custo
 
 >[!IMPORTANT]
 >
->A [!UICONTROL Análise de coorte]
->
->não aceita métricas não filtráveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em filtros podem ser usadas na
->[!UICONTROL Análise de coorte], que só pode ser aumentada em 1 de cada vez.
+>[!UICONTROL Análise de coorte] não suporta métricas não filtráveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em filtros podem ser usadas em [!UICONTROL Análise de coorte]e só podem ser aumentadas 1 de cada vez.
 
 ## Recursos da análise de coorte
 

@@ -3,23 +3,17 @@ description: Use a visualização de fluxo em um projeto do Espaço de trabalho.
 title: Configurar uma visualização de fluxo
 feature: Visualizations
 role: User, Admin
-exl-id: c2fdcc96-81ac-4d3b-b255-ff805b6ff0ea
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: ht
-source-wordcount: '1378'
-ht-degree: 100%
+exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
+source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Configurar uma visualização de fluxo
 
-A visualização de fluxo atualizada permite que você entenda a jornada decorrente ou que leva a um evento de conversão específico em seu site ou aplicativo. Ela rastreia um caminho pelas suas dimensões (e itens de dimensão) ou métricas. O fluxo permite configurar o início ou o fim do caminho em que você está interessado ou analisar todos esses caminhos que fluem por uma dimensão ou item de dimensão.
-
-A nova experiência de [!UICONTROL fluxo] aprimora o fluxo de trabalho de várias maneiras:
-
-* Agora é possível optar por iniciar ou terminar seu caminho com a combinação de uma métrica e uma dimensão de definição de caminho.
-* Ele contém [!UICONTROL Configurações avançadas] para permitir personalizar ainda mais o [!UICONTROL fluxo].
-* O novo botão “Criar” economiza tempo na análise, permitindo configurar a jornada de uma só vez, depois consultar e criar automaticamente várias colunas e nós de uma só vez.
+As visualizações de Fluxo permitem entender a jornada que resulta de ou que resulta em um evento de conversão específico no seu site ou aplicativo. Ela rastreia um caminho pelas suas dimensões (e itens de dimensão) ou métricas. O fluxo permite configurar o início ou o fim do caminho em que você está interessado ou analisar todos esses caminhos que fluem por uma dimensão ou item de dimensão.
 
 ![Nova interface de usuário de fluxo](assets/new-flow.png)
 
@@ -131,12 +125,12 @@ Início > Produtos > Adicionar ao carrinho > Produtos > Adicionar ao carrinho > 
 * Dimensão da definição de caminho de [!UICONTROL Página] 
 * Container de [!UICONTROL Visita]
 
-Se “Limitar à primeira/última ocorrência” estiver desativado, essa única série de ocorrências contaria 2 ocorrências de “Adicionar ao carrinho”.
+Se &quot;Limitar à primeira/última ocorrência&quot; estiver desativado, essa única série de ocorrências contaria 2 ocorrências de &quot;Adicionar ao carrinho&quot;.
 Saída de fluxo esperada:
 “Adicionar ao carrinho” (2) —> “Produtos” (1)
 -> “Faturamento” (1)
 
-No entanto, se a opção “Limitar à primeira/última ocorrência” estiver ativada, somente a primeira ocorrência de “Adicionar ao carrinho” será incluída na análise.
+No entanto, se &quot;Limitar à primeira/última ocorrência&quot; estiver ativado, somente a primeira ocorrência de &quot;Adicionar ao carrinho&quot; será incluída na análise.
 Saída de fluxo esperada:
 “Adicionar ao carrinho” (1) —> “Produtos” (1)
 
@@ -146,7 +140,7 @@ Saída de fluxo esperada:
 * Dimensão da definição de caminho de [!UICONTROL Página]
 * Container de [!UICONTROL Visita]
 
-Se a opção **[!UICONTROL Limitar à primeira/última ocorrência]** está *desativada*, essa única série de ocorrências contaria 2 ocorrências de “Adicionar ao carrinho”.
+Se a opção **[!UICONTROL Limitar à primeira/última ocorrência]** estiver *desativada*, essa única série de ocorrências contará duas ocorrências de “Adicionar ao carrinho”.
 Saída de fluxo esperada:
 “Produtos” (2) &lt;— “Adicionar ao carrinho” (2)
 
