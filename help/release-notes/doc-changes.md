@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e4b84436315d4eb87e39085f4838b51797a1f9b7
+source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 93%
+source-wordcount: '1584'
+ht-degree: 92%
 
 ---
 
@@ -20,6 +20,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Recurso | Descrição |
 | --- | --- |
 | **Março de 2023** |  |
+| Integrar dados do Gerenciamento de decisões | Conteúdo adicionado explicando como [integrar os dados do Gerenciamento de decisões da Adobe Journey Optimizer no CJA](/help/integrations/ajo-od.md). |
 | Criar histórias de dados em scorecards móveis | A [história de dados](/help/mobile-app/create-scorecard.md#create-data-stories) é uma coleção de pontos de dados de suporte, contexto comercial e métricas relacionadas com base em um tema ou métrica central. |
 | Suporte a recursos | [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) atualizado com uma tabela de recursos disponíveis no CJA, mas não disponíveis ou compatíveis com o AA. |
 | Métricas calculadas padrão | Adição de conteúdo explicando as [métricas calculadas padrão fornecidas pela Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
