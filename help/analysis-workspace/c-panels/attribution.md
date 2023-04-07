@@ -3,16 +3,27 @@ title: Painel de atribuição
 description: Como usar e interpretar o painel de atribuição no Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '369'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '516'
+ht-degree: 94%
 
 ---
 
 # Painel de atribuição
 
-O painel [!UICONTROL Atribuição] é uma maneira fácil de criar uma análise comparando vários modelos de atribuição. É um recurso no [Attribution IQ](../attribution/overview.md) que oferece um espaço de trabalho dedicado para usar e comparar modelos de atribuição.
+O painel [!UICONTROL Atribuição] é uma maneira fácil de criar uma análise comparando vários modelos de atribuição. É um recurso que oferece um espaço de trabalho dedicado para usar e comparar modelos de atribuição.
+
+O Customer Journey Analytics aprimora a atribuição ao permitir:
+
+* Definir atribuição além de mídias com anúncios: qualquer dimensão, métrica, canal ou evento pode ser aplicado a modelos (ex: pesquisa interna), além de campanhas de marketing.
+* Utilizar comparação ilimitada de modelos de atribuição: compare dinamicamente quantos modelos desejar.
+* Evitar alterações de implementação: com processamento de tempo de relatório e sessões contextuais, o contexto da jornada do cliente pode ser incorporado e aplicado no tempo de execução.
+* Construir a sessão que melhor corresponde ao seu cenário de atribuição.
+* Detalhar atribuições por filtros: compare facilmente o desempenho de seus canais de marketing entre filtros importantes (ex: clientes novos vs. repetidos, produto X vs. produto Y, nível de fidelidade ou CLV).
+* Inspecionar canais cruzados e análises de multitoque: usando diagramas e histogramas de Venn e resultados de atribuição de tendência.
+* Analisar visualmente as principais sequências de marketing: explore visualmente caminhos que levaram à conversão usando as visualizações de fluxo de múltiplos nós e de fallout.
+* Criar métricas calculadas: use a quantidade de métodos de alocação de atribuição que desejar.
 
 ## Criar um painel de atribuição
 
@@ -25,7 +36,7 @@ O painel [!UICONTROL Atribuição] é uma maneira fácil de criar uma análise c
 
    ![Selecionar dimensão e métrica](assets/attribution_panel2.png)
 
-1. Selecione os [modelos de atribuição e a janela de pesquisa](../attribution/models.md) que você deseja comparar.
+1. Selecione os modelos de atribuição e a janela de pesquisa que deseja comparar.
 
 1. O painel Atribuição retorna um conjunto avançado de dados e visualizações que comparam a atribuição da dimensão e da métrica selecionadas.
 

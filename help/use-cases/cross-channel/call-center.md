@@ -4,8 +4,8 @@ description: Saiba como criar um conjunto de dados que vincula os dados da centr
 exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a9009c44a8e739add7fbcb9f9c31676d38af0094
-workflow-type: ht
+source-git-commit: fd5d7ae51b51e6f608428a032319a4d7d1f45a97
+workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Essa tabela de forma livre permite que você veja as principais páginas que con
 1. Arraste a dimensão que retém os nomes da página da Web para uma visualização de Tabela de forma livre.
 1. Substitua a métrica pela métrica da central de atendimento que você deseja medir.
 1. Clique no ícone de engrenagem próximo ao cabeçalho da métrica. Clique em **[!UICONTROL Modelo de atribuição não padrão]**.
-1. Defina o [Modelo de atribuição](/help/analysis-workspace/attribution/models.md) desejado. Por exemplo, um modelo de Declínio de tempo com meia-vida de 15 minutos e uma Janela de pesquisa de sessão. Esse modelo de atribuição dá crédito às páginas que antecedem a chamada para sua central de atendimento.
+1. Defina o [Modelo de atribuição](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) desejado. Por exemplo, um modelo de Declínio de tempo com meia-vida de 15 minutos e uma Janela de pesquisa de sessão. Esse modelo de atribuição dá crédito às páginas que antecedem a chamada para sua central de atendimento.
 
 O relatório resultante mostra as principais páginas que direcionam chamadas para a central de atendimento. <!-- use case behind what we use these pages for -->
 

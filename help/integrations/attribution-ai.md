@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5ab563b9-d4f6-4210-8789-e16e5c93d968
 mini-toc-levels: 3
-source-git-commit: c87d7428a2ddca35297225314e97171fe8b129fb
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 98%
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 A [IA de atribuição](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=pt-BR), como parte dos Serviços inteligentes da Adobe Experience Platform, é um serviço de atribuição de vários canais e algoritmos que calcula a influência e o impacto incremental das interações com o cliente em relação aos resultados especificados. Com a IA de atribuição, os profissionais de marketing podem medir e otimizar os gastos com marketing e publicidade, entendendo o impacto de cada interação individual com o cliente em cada fase das jornadas do cliente.
 
-A IA de atribuição integra-se ao Customer Journey Analytics (CJA) na medida em que a IA de atribuição executa modelos em relação aos pontos de contato de marketing e às fontes de dados de conversão dos clientes. O CJA importa a saída desses modelos como um conjunto de dados ou ele pode ser integrado ao restante dos conjuntos de dados do CJA. Os conjuntos de dados habilitados para Attribution AI podem ser usados em visualizações de dados e relatórios no CJA.
+A IA de atribuição integra-se ao Customer Journey Analytics (CJA) na medida em que a IA de atribuição executa modelos em relação aos pontos de contato de marketing e às fontes de dados de conversão dos clientes. O CJA importa a saída desses modelos como um conjunto de dados ou ele pode ser integrado ao restante dos conjuntos de dados do CJA. Os conjuntos de dados habilitados para o Attribution AI podem ser aproveitados em exibições de dados e relatórios no CJA.
 
 A IA de atribuição aceita 3 esquemas da Experience Platform: Evento de experiência, Adobe Analytics e Evento de experiência do consumidor.
 
@@ -117,11 +117,11 @@ Aqui, vemos o lead time para a conversão quando um ponto de contato está na co
 
 ![Lead time](assets/lead-time.png)
 
-## Diferenças entre a IA de atribuição e o Attribution IQ
+## Diferenças entre o Attribution AI e os recursos de atribuição do CJA
 
-Quando você deve usar os dados da IA de atribuição e não o [Attribution IQ](/help/analysis-workspace/attribution/overview.md), um recurso nativo do CJA? Esta tabela mostra algumas das diferenças na funcionalidade:
+A tabela a seguir mostra algumas das diferenças na funcionalidade:
 
-| Funcionalidade | IA de atribuição | Attribution IQ |
+| Funcionalidade | IA de atribuição | Atribuição CJA |
 | --- | --- | --- |
 | Faz atribuição incremental | Sim | Não |
 | Permite que os usuários ajustem o modelo | Sim | Sim |
@@ -131,4 +131,4 @@ Quando você deve usar os dados da IA de atribuição e não o [Attribution IQ](
 | Modelos de atribuição baseados em região | Sim | Sim |
 | Pode configurar pontos de contato de marketing no modelo | Sim | Não |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

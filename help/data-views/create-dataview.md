@@ -1,12 +1,12 @@
 ---
 title: Criar ou editar uma visualização de dados
 description: Todas as configurações que podem ser ajustadas para criar ou editar uma visualização de dados.
-exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78,35cbf69c-e1e5-4cf0-9bb4-6105d3e4c78e
+exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 2fa00c88cebde78a0a56d06aea3d4b6b268a0767
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '1224'
 ht-degree: 100%
 
 ---
@@ -19,14 +19,14 @@ Veja um vídeo sobre este tópico:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
-## Configurar uma visualização de dados {#configure}
+## Configurar uma visualização de dados
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e acesse a guia **[!UICONTROL Visualizações de dados]**.
 2. Clique em **[!UICONTROL Adicionar]** para criar uma visualização de dados ou clique em uma visualização de dados existente para editá-la.
 
 ![Nova visualização de dados](assets/new-data-view.png)
 
-### Configurações de visualização de dados {#settings}
+### Configurações de visualização de dados
 
 Fornece configurações abrangentes para a visualização de dados.
 
@@ -36,9 +36,9 @@ Fornece configurações abrangentes para a visualização de dados.
 | [!UICONTROL Nome] | Obrigatório. O nome da visualização de dados. Esse valor aparece na lista suspensa no canto superior direito do Analysis Workspace. |
 | [!UICONTROL Descrição] | Opcional. A Adobe recomenda uma descrição detalhada para que os usuários entendam por que a visualização de dados existe e para quem ela foi projetada. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### Contêineres {#containers}
+### Contêineres
 
 Determina o nome dos containers para a visualização de dados. Os nomes dos containers são usados com frequência em [filtros](/help/components/filters/filters-overview.md#Filter-containers).
 
@@ -48,9 +48,9 @@ Determina o nome dos containers para a visualização de dados. Os nomes dos con
 | [!UICONTROL Nome do container da sessão] | [!UICONTROL Sessão] (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
 | [!UICONTROL Nome do container do evento] | [!UICONTROL Evento] (padrão). O container [!UICONTROL Evento] define eventos individuais em um conjunto de dados. Se sua organização usar um termo diferente (por exemplo, &quot;Ocorrências&quot; ou &quot;Exibições de página&quot;), você poderá renomear o container aqui. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### Calendário {#calendar}
+### Calendário
 
 Indica o formato de calendário que a visualização de dados deve seguir. Você pode ter várias visualizações de dados com base na mesma [Conexão](/help/connections/create-connection.md) e fornecer tipos de calendário ou fusos horários diferentes. Essas visualizações de dados podem permitir que equipes que usam diferentes tipos de calendário acomodem suas respectivas necessidades com os mesmos dados subjacentes.
 
@@ -62,9 +62,9 @@ Indica o formato de calendário que a visualização de dados deve seguir. Você
 | [!UICONTROL Primeiro dia do ano atual] | Visível para tipos de calendário personalizado. Especifique o dia do ano em que deseja que o ano atual comece. O calendário formata automaticamente o primeiro dia de cada semana com base nesse valor. |
 | [!UICONTROL Ano em que a semana “extra” ocorre] | Com a maioria dos calendários de 364 dias (52 semanas de 7 dias cada), cada ano acumula dias restantes até formar uma semana extra. Essa semana extra é então adicionada ao último mês desse ano. Especifique em qual ano você deseja adicionar a semana extra. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Definir os componentes de uma visualização de dados {#set-components}
+## Definir os componentes de uma visualização de dados
 
 Em seguida, você pode criar métricas e dimensões com base em elementos do esquema. Você também pode usar os componentes padrão.
 
@@ -95,13 +95,13 @@ Em seguida, você pode criar métricas e dimensões com base em elementos do esq
    * [[!UICONTROL Persistência]](component-settings/persistence.md)
    * [[!UICONTROL Classificação de valor]](component-settings/value-bucketing.md)
 
-## Métricas ou dimensões duplicadas {#duplicate}
+## Métricas ou dimensões duplicadas
 
 Duplicar métricas ou dimensões e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões a partir de um único campo de esquema. Selecione a configuração [!UICONTROL Duplicar] abaixo do nome da métrica ou das dimensões no canto superior direito. Modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
 
 ![Duplicar](assets/duplicate.png)
 
-## Filtrar campos ou conjuntos de dados de esquema {#filter}
+## Filtrar campos ou conjuntos de dados de esquema
 
 Você pode filtrar campos de esquema no painel esquerdo pelos seguintes tipos de dados:
 
@@ -111,19 +111,18 @@ Também é possível filtrar por conjuntos de dados e se um campo de esquema con
 
 ![Filtrar outros](assets/filter-other.png)
 
-## Configurações  Guia {#settings-tab}
+## Configurações  Guia
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e acesse a guia **[!UICONTROL Visualizações de dados]**.
 1. Clique em **[!UICONTROL Adicionar]** para criar uma visualização de dados ou clique em uma visualização de dados existente para editá-la.
 1. Clique na guia **[!UICONTROL Configurações]**.
 
-### Filtro global {#global-filter}
+### Filtro global
 
 É possível adicionar filtros que se aplicam a toda a visualização de dados. Esse filtro é aplicado a qualquer relatório executado no Espaço de trabalho. Arraste um filtro da lista no painel à esquerda para o campo [!UICONTROL Adicionar filtros].
 
-### Configurações da sessão {#sessions}
+### Configurações da sessão
 
 Determine o período de inatividade entre eventos antes de uma sessão expirar e um novo ser iniciado. É necessário um período de tempo. Ou também é possível forçar o início de uma nova sessão quando um evento contém uma determinada métrica.
 
 Depois que todas as configurações desejadas forem especificadas, clique em **[!UICONTROL Salvar e concluir]**.
-

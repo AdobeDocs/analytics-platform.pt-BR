@@ -4,10 +4,10 @@ description: Mostra relatórios úteis sobre dados do Google Analytics no Custom
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 17b9e14e58f5bd2f4ec995de54989b00c26076f2
-workflow-type: ht
-source-wordcount: '694'
-ht-degree: 100%
+source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+workflow-type: tm+mt
+source-wordcount: '680'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Você pode ver quais produtos causam a maioria das chamadas para sua central de 
 
 Aplicando um detalhamento de dimensão ao “Motivo da chamada”, o exemplo mostra um item de dimensão “Produto danificado”. O próximo passo seria entrar em contato com o departamento de controle de qualidade e ver por que os clientes têm recebido camisetas com defeito.
 
-Você pode ver quais páginas do site geraram chamadas para a central de atendimento. Esse relatório permite saber onde estão as experiências com baixo desempenho no site e ajuda os seus gerentes de produto a resolver esses desafios. O exemplo a seguir usa uma métrica calculada para filtrar apenas os dados de sessões que terminaram com uma chamada para a central de atendimento. Também usa o modelo de “participação” no [Attribution IQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/attribution/models.html?lang=pt-BR#cja-workspace) do CJA.
+Você pode ver quais páginas do site geraram chamadas para a central de atendimento. Esse relatório permite saber onde estão as experiências com baixo desempenho no site e ajuda os seus gerentes de produto a resolver esses desafios. O exemplo a seguir usa uma métrica calculada com um modelo de atribuição de participação para filtrar os dados somente para sessões que terminaram com uma chamada de central de atendimento.
 
 O exemplo a seguir mostra que as páginas “Carrinho de compras” e “Informações de check-out” geram a maioria das chamadas.
 
