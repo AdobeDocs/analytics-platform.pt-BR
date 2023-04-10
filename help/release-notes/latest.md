@@ -3,10 +3,10 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: ffb98086d38c2e1d880f0b3c584fdbb33d75966e
+source-git-commit: 46a0d5128dfb1023a1cb1c0627c48192d18c3a66
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 71%
+source-wordcount: '493'
+ht-degree: 72%
 
 ---
 
@@ -20,7 +20,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 
 | Recurso | Descrição | [Início da implantação](/help/release-notes/releases.md) | [Disponibilidade geral](/help/release-notes/releases.md) |
 | ----------- | ---------- | ----- | --- |
-| **Dicionário de dados no Analysis Workspace** | O dicionário de dados ajuda tanto os usuários quanto os administradores a acompanhar e compreender melhor os componentes (dimensões e métricas) em seu ambiente do CJA. [Saiba mais](/help/components/data-dictionary/data-dictionary-overview.md) | 8 de março de 2023 | **Temporariamente indisponível** |
+| **Dicionário de dados no Analysis Workspace** | O dicionário de dados ajuda tanto os usuários quanto os administradores a acompanhar e compreender melhor os componentes (dimensões e métricas) em seu ambiente do CJA. [Saiba mais](/help/components/data-dictionary/data-dictionary-overview.md) | 8 de março de 2023 | 29 de março de 2023 |
 | **Histórias de dados em painéis móveis** | As Histórias de dados permitem adicionar várias visualizações detalhadas personalizáveis aos blocos nos projetos de cartões de pontuação móveis. Use as histórias de dados para se aprofundar nos principais impulsionadores, métricas relacionadas e diferentes etapas ao longo da jornada do cliente. Você pode passar facilmente por essas visualizações para entender toda a história por trás de suas métricas principais. [Saiba mais](/help/mobile-app/create-scorecard.md#create-data-story) | N/D | 8 de março de 2023 |
 | **Datas de expiração para projetos agendados** | Você pode definir datas de expiração máximas para projetos agendados para até um ano, independentemente da frequência de agendamento. [Saiba mais](/help/analysis-workspace/curate-share/t-schedule-report.md) | N/D | 8 de março de 2023 |
 | **Compartilhamento de links para projetos (sem logon necessário) - Somente para o acesso Private Beta** | Agora você pode compartilhar links de somente leitura para projetos do Analysis Workspace com pessoas que não têm acesso ao CJA. Você pode compartilhar links de projeto com pessoas de fora da organização ou aquelas de dentro da organização que não estão provisionadas para o CJA. [Saiba mais](/help/analysis-workspace/curate-share/share-projects.md)<p>Para participar do Private Beta, entre em contato com a equipe de contas da Adobe. | 26 de abril de 2023 | Junho de 2023 |
