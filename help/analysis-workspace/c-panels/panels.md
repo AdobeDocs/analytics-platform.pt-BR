@@ -3,10 +3,10 @@ description: Um painel é uma coleção de tabelas e visualizações
 title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 7883726d8055fd5ea161fb4991a17ad579012f28
-workflow-type: ht
-source-wordcount: '894'
-ht-degree: 100%
+source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 96%
 
 ---
 
@@ -57,7 +57,9 @@ Arraste e solte quaisquer Filtros do painel esquerdo na área de lançamento do 
 
 Os componentes que não são de filtros também podem ser arrastados diretamente para a zona de destino para criar filtros ad hoc, poupando o tempo e esforço de ter que ir até o Construtor de filtros. Os filtros criados dessa maneira são definidos automaticamente como filtros de nível de ocorrência. Essa definição pode ser modificada clicando no ícone de informações (i) ao lado do filtro e, em seguida, no ícone de edição em forma de lápis e editando-a no Construtor de filtros.
 
-Os filtros ad hoc restringem-se ao local do projeto e não são exibidos no painel esquerdo, a menos que você os torne públicos.
+Filtros ad hoc são um tipo de filtro rápido, e são locais para o projeto. Elas não aparecem no painel esquerdo, a menos que você as torne públicas.
+
+Para obter mais informações, consulte [Filtros rápidos](/help/components/filters/quick-filters.md).
 
 ![](assets/adhoc-segment-filter.png)
 

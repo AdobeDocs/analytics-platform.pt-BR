@@ -2,10 +2,10 @@
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 3c2361069e2a4934c7f6d616f8223bbba1b410ac
-workflow-type: ht
-source-wordcount: '1111'
-ht-degree: 100%
+source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+workflow-type: tm+mt
+source-wordcount: '1096'
+ht-degree: 98%
 
 ---
 
@@ -29,8 +29,7 @@ Diferentes tipos de filtros podem ser criados no Espaço de trabalho e no Constr
 | Tipo de filtro | Onde ele é criado? | Onde ele é aplicável? | Quando usar |
 | --- | --- | --- | --- |
 | Filtro de lista de componentes | Clique em +, que leva ao [Construtor de filtros](/help/components/filters/create-filters.md) | Todos os projetos do Workspace | Para filtros mais complexos, filtros sequenciais |
-| Filtro rápido | [Construtor de filtro rápido](/help/components/filters/quick-filters.md) | Exclusivo para projetos, mas é possível salvar e adicionar à lista de segmentos. | Flexibilidade para adicionar/editar uma ou mais regras |
-| Filtro de projeto ad hoc | [Arrastar e soltar para a área de destino de segmentos em um projeto](/help/components/filters/ad-hoc-filters.md) | Exclusivo para projetos, mas é possível salvar e adicionar à lista de filtros. | Para filtros de regra única |
+| Filtro rápido | [Construtor de filtro rápido](/help/components/filters/quick-filters.md) | Exclusivo para projetos, mas é possível salvar e adicionar à lista de segmentos. | Pode ser usado para filtros ad hoc de regra única (com arrastar e soltar) ou para adicionar/editar várias regras (clicando no ícone Filtro ) |
 | Filtros em análise de fallout | [Visualização de fallout](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) no Analysis Workspace | Para visualizações individuais de fallout | Crie filtros a partir de um ponto de contato, adicione filtros como ponto de contato e compare fluxos de trabalho importantes entre vários filtros |
 | Filtro baseado em métricas calculadas | [Construtor de métrica calculada](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/metrics-with-segments.html?lang=pt-BR) | Para métricas calculadas individuais | Aplicar filtro(s) na definição da métrica |
 
