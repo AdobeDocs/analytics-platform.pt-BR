@@ -3,9 +3,9 @@ title: O que é a análise de coorte?
 description: Saiba mais sobre a análise de coorte no Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 5dd25745f3ae872a70f60c53a1340ba59552665d
+source-git-commit: 76840d025d1ace28abce5557d66d104795818167
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '457'
 ht-degree: 91%
 
 ---
@@ -22,7 +22,6 @@ Exemplos do que você pode fazer com a [!UICONTROL análise de coorte]:
 * Deslocar o orçamento de marketing no momento certo do ciclo de vida do cliente.
 * Reconhecer quando finalizar uma avaliação ou uma oferta para maximizar o valor.
 * Obter ideias para o teste A/B em áreas como o estabelecimento de preços, o caminho de atualização, etc.
-* Exibir um relatório de [!UICONTROL análise de coorte] em um relatório de análise orientada.
 
 A [!UICONTROL Análise de coorte] está disponível a todos os clientes do Customer Journey Analytics com direitos de acesso ao [!UICONTROL Analysis Workspace].
 
