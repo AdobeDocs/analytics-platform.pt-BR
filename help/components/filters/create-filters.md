@@ -2,49 +2,31 @@
 title: Criar filtros
 description: Entenda a interface do usuário de criação de filtro.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: 7013237e11cb173d54dcbe236967b49d89810975
-workflow-type: ht
-source-wordcount: '371'
-ht-degree: 100%
+source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 60%
 
 ---
 
 # Criar filtros
 
-O Construtor de filtros fornece uma tela para arrastar e soltar métricas, dimensões, filtros e eventos para filtrar visitantes com base na lógica, nas regras e nos operadores da hierarquia do contêiner. Essa ferramenta de desenvolvimento integrada permite construir e salvar filtros simples ou complexos que identificam os atributos e as ações do visitante nas visitas e ocorrências da página.
+Você pode criar diferentes tipos de filtros no Workspace, dependendo da complexidade que eles precisam ser, se eles devem se aplicar ao projeto atual somente ou a todos os projetos e assim por diante.
 
-Você pode criar filtros instantâneos soltando qualquer tipo de componente (dimensão, item de dimensão, evento, métrica, filtro, modelo de filtro, intervalo de datas) na zona designada do filtro na parte superior de um painel.
+A seguir, um resumo dos tipos de filtros disponíveis, com links para informações sobre como criá-los:
 
-Os tipos de componentes são convertidos automaticamente em filtros. Como alternativa, você pode clicar no sinal “+” na caixa de depósito **[!UICONTROL Adicionar filtro]**.
+| Tipo de filtro | Onde ele é criado? | Onde ele é aplicável? | Quando usar |
+| --- | --- | --- | --- |
+| Filtro de lista de componentes | Clique em +, que leva ao [Construtor de filtros](/help/components/filters/filter-builder.md) | Todos os projetos do Workspace | Para filtros mais complexos, filtros sequenciais |
+| Filtro rápido | [Construtor de filtro rápido](/help/components/filters/quick-filters.md) | Exclusivo para projetos, mas é possível salvar e adicionar à lista de segmentos. | Pode ser usado para filtros ad hoc de regra única (com arrastar e soltar) ou para adicionar/editar várias regras (clicando no ícone Filtro ) |
+| Filtros em análise de fallout | [Visualização de fallout](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md) no Analysis Workspace | Para visualizações individuais de fallout | Crie filtros a partir de um ponto de contato, adicione filtros como ponto de contato e compare fluxos de trabalho importantes entre vários filtros |
+| Filtro baseado em métricas calculadas | [Construtor de métrica calculada](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md) | Para métricas calculadas individuais | Aplicar filtro(s) na definição da métrica |
 
-Lembre-se:
-
-* **Não** é possível soltar os seguintes tipos de componentes na zona de filtros: métricas calculadas e dimensões/métricas a partir das quais você não pode criar filtros.
-* Para dimensões e eventos completos, o Analysis Workspace cria filtros de ocorrência “existe”. Exemplos: “Ocorrência em que eVar1 existe” ou “Ocorrência em que event1 existe”.
-* Se as opções “não especificado” ou “nenhum” forem soltas na zona de soltar dos filtros, serão automaticamente convertidas em um filtro “não existe” para que sejam tratadas corretamente.
-
-![](assets/segment-dropzone.png)
-
->[!NOTE]
->
->Filtros criados desse modo são internos no projeto.
-
-Você pode escolher se deseja tornar os filtros públicos (globais) seguindo estas etapas:
-
-1. Passe o mouse sobre o filtro no local onde os segmentos são colocados e clique no ícone “i”.
-1. No painel de informações que é exibido, clique em **[!UICONTROL Tornar público]**.
-
-   ![](assets/segment-info.png)
-
-## Outros métodos para aplicar filtros
-
-Existem vários outros métodos para aplicar os filtros a um projeto:
+Ao aplicar filtros em um projeto de forma livre, vários outros métodos também estão disponíveis:
 
 | Ação | Descrição |
 | --- | --- |
 | Criar filtro a partir da seleção | Criar um filtro em linha. Este filtro se aplica somente ao projeto aberto e não é salvo como um filtro do CJA.<p> 1. Selecione quais linhas da tabela você deseja que faça parte do filtro.  2. Clique com o botão direito na seleção.  3. Clique em *Criar filtro a partir da seleção*. |
-| Espaço de trabalho [!UICONTROL Componentes] > [!UICONTROL Novo filtro] | Exibe o Construtor de filtros. Consulte [Construtor de filtros](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-build.html?lang=pt-BR) para obter mais informações sobre filtragem. |
-| Compartilhar > Compartilhar projeto ou compartilhar > Preparar dados do projeto | Em [Preparar e compartilhar](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/curate.html?lang=pt-BR#concept_4A9726927E7C44AFA260E2BB2721AFC6) aprenda como os filtros que você aplica ao projeto estão disponíveis na análise compartilhada para o recipient. |
-| Usar filtros como dimensões | Assista a este vídeo: Utilização de filtros como dimensões no Analysis Workspace. |
-
->[!VIDEO](https://video.tv.adobe.com/v/23974)
+| Espaço de trabalho [!UICONTROL Componentes] > [!UICONTROL Novo filtro] | Exibe o Construtor de filtros. Consulte [Construtor de filtros](/help/components/filters/filter-builder.md) para obter mais informações sobre filtragem. |
+| Compartilhar > Compartilhar projeto ou compartilhar > Preparar dados do projeto | Em [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md) ou [Preparar projetos](/help/analysis-workspace/curate-share/curate.md), saiba como os filtros que você aplica ao projeto estão disponíveis na análise compartilhada para o recipient. |
+| Usar filtros como dimensões | O vídeo a seguir demonstra como usar filtros como dimensões: (**Observação:** este vídeo usa o termo &quot;segmentos&quot; em vez de &quot;filtros&quot;. No entanto, a funcionalidade é a mesma.) <p>[Utilização de segmentos como dimensões no Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html?lang=pt-BR)</p> |
