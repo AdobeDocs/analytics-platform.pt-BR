@@ -4,10 +4,10 @@ description: Explique como assimilar dados do Adobe Analytics tradicional
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 325dcd0862b8ac06b3b26c3ae349a8fce757cb6c
-workflow-type: ht
-source-wordcount: '1146'
-ht-degree: 100%
+source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
+workflow-type: tm+mt
+source-wordcount: '1162'
+ht-degree: 95%
 
 ---
 
@@ -79,7 +79,7 @@ Para criar um conector de origem do Adobe Analytics:
    ![Consulte a seção](./assets/review.png)
 
 
-Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics do conjunto de relatórios, incluindo a assimilação de até 13 meses de dados históricos.
+Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics do conjunto de relatórios, incluindo a assimilação de até 13 meses de dados históricos para sandboxes de produção. (Observe que, a partir de 26 de abril de 2023, o preenchimento retroativo em sandboxes de não produção será limitado a 3 meses.)
 
 Quando a assimilação inicial for concluída, os dados do conjunto de relatórios do Adobe Analytics estarão prontos para serem usados pelo Customer Journey Analytics.
 
