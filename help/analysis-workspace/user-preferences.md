@@ -4,10 +4,10 @@ description: É possível definir preferências gerais e de projeto para usuári
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 64a774d9151c40ea9eadb1fb80c07db168ac8667
+source-git-commit: 7f657820e01696aa5d9b466ea2eaa6bc417ee6cf
 workflow-type: tm+mt
-source-wordcount: '3150'
-ht-degree: 79%
+source-wordcount: '3146'
+ht-degree: 77%
 
 ---
 

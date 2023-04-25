@@ -4,10 +4,10 @@ description: Use um subconjunto de uma string como itens de dimensão.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ As configurações do componente [!UICONTROL Substring] permitem executar métod
 
 ## Da esquerda/direita
 
-Pegue uma parte de uma string com base em sua posição no início ou no fim de uma string. Os métodos **[!UICONTROL Da esquerda]** e **[!UICONTROL Da direita]** fornecem dois detalhamentos: **[!UICONTROL De]** (em que a saída começa) e **[!UICONTROL Para]** (onde a saída termina).
+Pegue uma parte de uma string com base em sua posição no início ou no fim de uma string. **[!UICONTROL Da Esquerda]** e **[!UICONTROL Da direita]** Os métodos fornecem duas listas suspensas: **[!UICONTROL De]** (em que a saída começa) e **[!UICONTROL Para]** (onde a saída termina).
 
 * **[!UICONTROL Início da string]**: o início da string.
 * **[!UICONTROL Fim da string]**: o fim da string.
@@ -30,7 +30,7 @@ Pegue uma parte de uma string com base em sua posição no início ou no fim de 
    * **[!UICONTROL Corresponder]**: a string que será correspondida. Se a entrada não tiver correspondência com esse campo, [Nenhuma opção de valor](no-value-options.md) será aplicada.
    * **[!UICONTROL Índice]**: o critério **[!UICONTROL Corresponder]** pode ser apresentado várias vezes em uma string. Esse número inteiro determina qual correspondência deve iniciar ou finalizar a saída, dependendo do método. Por exemplo, um índice de `1` representa a primeira correspondência. Se o índice for superior ao número de correspondências disponíveis, [Nenhuma opção de valor](no-value-options.md) será aplicada.
    * **[!UICONTROL Incluir string]**: uma caixa de seleção que inclui a string **[!UICONTROL Corresponder]** na saída, se ativada.
-* **[!UICONTROL Comprimento]**: um número inteiro que especifica a contagem de caracteres a ser incluída após a posição inicial da saída. Disponível somente o menu suspenso **[!UICONTROL Para]**.
+* **[!UICONTROL Comprimento]**: um número inteiro que especifica a contagem de caracteres a ser incluída após a posição inicial da saída. Disponível somente sob o **[!UICONTROL Para]** lista suspensa.
 
 ## Delimitador
 
@@ -114,7 +114,7 @@ Espaços reservados de saída também são permitidos. É possível usar essas s
 | `$+` | Gera o que correspondeu à última subexpressão marcada na expressão regular. |
 | `$$` | Gera o caractere de string `"$"`. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Vídeo sobre dimensões de ligação
 

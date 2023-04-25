@@ -3,11 +3,11 @@ description: Permite visualizar facilmente os dados de comparação no Analysis 
 title: Visualização de gráficos de combinação
 feature: Visualizations
 role: User, Admin
-exl-id: 08e49857-aa58-4527-bdfd-b1663a75a02b
-source-git-commit: 8cc4fc0cd2a6c5b6b895e56bbb7922caba56d9ae
+exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 100%
+source-wordcount: '767'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Lembre-se:
    | **[!UICONTROL Função]** | Você pode incluir uma função, como [!UICONTROL Média], na comparação. Consulte uma lista de funções compatíveis abaixo.<p>![Funções](assets/combo-functions.png) |
    | **[!UICONTROL Métrica secundária]** | Você pode, por exemplo, comparar a [!UICONTROL Receita] com outra métrica.<p>![Duas métricas](assets/combo-2metrics.png) |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Clique em **[!UICONTROL Criar]**.
 
@@ -69,7 +69,7 @@ Se você escolher **[!UICONTROL Função]** como o [!UICONTROL Tipo de comparaç
 | **[!UICONTROL Média]** | Retorna a média aritmética de uma métrica. |
 | **[!UICONTROL Mínimo da coluna]** | Retorna o menor valor em um conjunto de elementos de dimensão para uma coluna de métrica. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 Este é um exemplo da média cumulativa da métrica Receita:
 
@@ -88,11 +88,11 @@ Clique no ícone de engrenagem na parte superior direita de um gráfico de combi
 | Configuração | Definição |
 | --- | --- |
 | **[!UICONTROL Tipo de visualização]** | Permite alternar para outro tipo de visualização. |
-| **[!UICONTROL Granularidade]** | Para visualizações de tendências, você pode alterar a granularidade de tempo (dia, semana, mês etc.) nesta lista suspensa. |
+| **[!UICONTROL Granularidade]** | Para visualizações de tendências, você pode alterar a granularidade de tempo (dia, semana, mês etc.) nessa lista suspensa. |
 | **[!UICONTROL Geral]** |  |
 | **[!UICONTROL Porcentagens]** | Exibe os valores em porcentagens. |
 | **[!UICONTROL Legenda visível]** | Permite ocultar o texto detalhado da legenda para a visualização dos gráficos de combinação. |
-| **[!UICONTROL Limite máximo de itens]** | Reduz o número de itens no eixo X. Se você tiver um conjunto de dados grande, será possível exibir apenas os primeiros 10 itens (ou qualquer valor que escolher). |
+| **[!UICONTROL Limite máximo de itens]** | Reduz o número de itens no eixo X. Se você tiver um conjunto de dados grande, poderá exibir apenas os primeiros 10 itens (ou qualquer valor que você escolher). |
 | **[!UICONTROL Sobreposições]** | Mostrar ou ocultar barras nas linhas. |
 | **[!UICONTROL Eixo]** |  |
 | **[!UICONTROL Exibir eixo duplo]** | Somente se aplica se você tiver duas métricas. Você pode ter um eixo Y à esquerda (para uma métrica) e outro à direta (para a outra métrica). Isso é útil quando métricas projetadas têm magnitudes muito diferentes. A cor do eixo duplo corresponde à cor da tabela, a menos que haja várias comparações. Nesse caso, a cor de todas as comparações é cinza. |
@@ -101,4 +101,4 @@ Clique no ícone de engrenagem na parte superior direita de um gráfico de combi
 | **[!UICONTROL Mostrar eixo Y]** | Exibe ou oculta o eixo Y. |
 | **[!UICONTROL Ancorar o eixo Y em zero]** | Se todos os valores exibidos no gráfico forem consideravelmente superiores a zero, o padrão do gráfico tornará a parte inferior do eixo y DIFERENTE DE ZERO. Se marcar esta caixa, o eixo y será forçado a zero (e o gráfico será redesenhado). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

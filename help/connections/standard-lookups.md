@@ -4,10 +4,10 @@ description: Use pesquisas padrão para aumentar os relatórios com dimensões �
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 3f20520a2021d9b6066b0492ed11a1a4619ab1d4
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 86%
+source-wordcount: '358'
+ht-degree: 84%
 
 ---
 

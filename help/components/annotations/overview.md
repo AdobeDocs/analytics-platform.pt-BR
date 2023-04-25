@@ -4,11 +4,11 @@ description: Como usar anotações no Espaço de trabalho.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
-exl-id: 722d7636-f619-479a-97f1-3da23e8f7f83
-source-git-commit: e39f34486e54da188145092921a4ca3aa5f936fb
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 88%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 As anotações permitem comunicar com eficácia nuances de dados contextuais e insights à sua organização. Elas permitem vincular eventos de calendário a dimensões/métricas específicas. Você pode anotar uma data ou um intervalo de datas com problemas de dados conhecidos, feriados, lançamentos de campanhas etc. É possível exibir graficamente os eventos e verificar se as campanhas ou outros eventos têm afetado seu tráfego local, a receita ou qualquer outra métrica.
 
-Por exemplo, digamos que você esteja compartilhando projetos com sua organização. Se você tiver um grande pico no tráfego devido a uma campanha de marketing, poderá criar uma anotação de “Data de lançamento da campanha” e colocá-la no escopo de todo o conjunto de relatórios. Quando os usuários visualizam qualquer conjunto de dados que inclui essa data, eles visualizam a anotação dentro dos projetos, junto com os dados deles.
+Por exemplo, digamos que você esteja compartilhando projetos com sua organização. Se você tiver um grande pico no tráfego devido a uma campanha de marketing, poderá criar uma anotação de “Data de lançamento da campanha” e colocá-la no escopo de todo o conjunto de relatórios. Quando os usuários visualizam qualquer conjunto de dados que inclui essa data, eles veem a anotação em seus projetos, junto com seus dados.
 
 ![](assets/multi-day.png)
 
@@ -24,7 +24,7 @@ Lembre-se:
 
 * As anotações podem ser vinculadas a uma única data ou a um intervalo de datas.
 
-* Elas podem se aplicar a todo o seu conjunto de dados ou a métricas, dimensões ou segmentos especificados.
+* Eles podem se aplicar a todo o conjunto de dados ou a métricas, dimensões ou segmentos especificados.
 
 * Podem aplicar-se ao projeto em que foram criadas (padrão) ou a todos os projetos.
 

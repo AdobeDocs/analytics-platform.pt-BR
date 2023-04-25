@@ -4,10 +4,10 @@ description: Mostra dois métodos de estimativa de uso e um método de gerenciam
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 98%
+source-wordcount: '869'
+ht-degree: 94%
 
 ---
 
@@ -68,7 +68,7 @@ Esse método permite fazer uma análise mais profunda dos dados de uso, bem como
 >
 >    Não crie uma nova conexão que englobe todos os seus dados apenas para medir o uso, pois isso duplicaria efetivamente o uso.
 
-1. No Espaço de trabalho, crie novos projetos com base em cada visualização de dados e extraia todos os eventos (da lista suspensa **[!UICONTROL Métricas]**) até a primeira sexta-feira do mês, começando pelo primeiro dia do seu contrato atual do CJA.
+1. No Workspace, crie novos projetos com base em cada visualização de dados e extraia todos os eventos (da variável **[!UICONTROL Métricas]** lista suspensa) até a primeira sexta-feira do mês, começando pelo primeiro dia do contrato CJA atual.
 
    ![Eventos](./assets/events-usage.png)
 

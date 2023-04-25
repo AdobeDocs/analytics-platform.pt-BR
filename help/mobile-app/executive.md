@@ -3,12 +3,12 @@ description: Instruções para usar os scorecards de painéis.
 title: Guia executivo de painéis do Adobe Analytics
 feature: Analytics Dashboards
 role: User, Admin
-exl-id: a72df772-edd0-45d7-bb64-80fbdaa12f6b
+exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 76477d23a9ab6bd38118bae9f1af4dc506922fa7
-workflow-type: ht
-source-wordcount: '1220'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '1221'
+ht-degree: 98%
 
 ---
 
@@ -149,4 +149,3 @@ Toque na opção e informe o endereço de email no campo superior e a pergunta n
 | Detalhamento | Uma exibição secundária acessível ao tocar em um bloco no Scorecard. Essa exibição é expandida na métrica mostrada no bloco e, opcionalmente, relata as dimensões adicionais de detalhamento |
 | Intervalo de datas | O intervalo de datas principal dos relatórios de painéis |
 | Intervalo de datas de comparação | O Intervalo de datas comparado ao intervalo de datas principal |
-

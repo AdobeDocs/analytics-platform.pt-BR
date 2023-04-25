@@ -4,10 +4,10 @@ description: Perguntas frequentes sobre o Cross-Channel Analytics
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: dac10a1e4848514661bf06fe71d233da6f9aa878
+source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 97%
+source-wordcount: '1067'
+ht-degree: 95%
 
 ---
 
@@ -40,9 +40,9 @@ Em algumas situações, um usuário individual pode ser associado a muitas IDs p
 
 O número de IDs persistentes é irrelevante em favor da ID transitória. Um único usuário pode pertencer a qualquer número de dispositivos sem afetar a capacidade da CCA de compilar entre dispositivos.
 
-## Quando eu entrar em contato com minha equipe de conta do Adobe com as informações desejadas, quanto tempo levará para o conjunto de dados rechaveado ficar disponível?
+## Depois que eu entrar em contato com a equipe de conta do Adobe com as informações desejadas, quanto tempo leva para o conjunto de dados rechaveado ficar disponível?
 
-A compilação em tempo real está disponível aproximadamente uma semana depois de a Adobe ativar o Cross-Channel Analytics. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de um milhão de eventos por dia) normalmente levam alguns dias, enquanto grandes conjuntos de dados (um bilhão de eventos por dia) podem levar uma semana ou mais.
+A compilação em tempo real está disponível aproximadamente uma semana depois de a Adobe ativar o Cross-Channel Analytics. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de 1 milhão de eventos por dia) normalmente levam alguns dias, enquanto os grandes conjuntos de dados (1 bilhão de eventos por dia) podem levar uma semana ou mais.
 
 ## Qual é a diferença entre o Cross-Device Analytics (um recurso no Analytics tradicional) e o Cross-Channel Analytics?
 

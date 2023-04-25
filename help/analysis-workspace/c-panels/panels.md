@@ -3,16 +3,16 @@ description: Um painel é uma coleção de tabelas e visualizações
 title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: a69f9eef39c0eceee1964a3b8741b7538b218ece
+source-git-commit: 15e83ab3c828b6fd91a3f729001ec4f22f24f9ec
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 96%
+source-wordcount: '1232'
+ht-degree: 52%
 
 ---
 
 # Visão geral dos painéis
 
-Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode acessar os painéis por meio do ícone superior esquerdo no Espaço de trabalho ou um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos, visualizações de dados ou casos de uso de análise.
+Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode acessar painéis usando o ícone superior esquerdo no Workspace ou um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos, visualizações de dados ou casos de uso de análise.
 
 ## Tipos de painel
 
@@ -63,23 +63,47 @@ Para obter mais informações, consulte [Filtros rápidos](/help/components/filt
 
 ![](assets/adhoc-segment-filter.png)
 
-### Filtros suspensos {#dropdown-filter}
+### Filtros suspensos estáticos
 
-Além dos filtros de segmento, os filtros suspensos permitem que você interaja com os dados de forma controlada. Por exemplo, é possível adicionar um filtro suspenso de Tipos de dispositivo móvel para que você possa filtrar o painel por Tablet, Celular ou Desktop.
+Filtros suspensos permitem interagir com os dados de forma controlada. Por exemplo, é possível adicionar um filtro suspenso de Tipos de dispositivo móvel para que você possa filtrar o painel por Tablet, Celular ou Desktop.
 
 Filtros suspensos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes filtros de País aplicados, é possível consolidar todas as versões em um único projeto e adicionar um filtro suspenso de País.
 
 ![](assets/dropdown-filter-intro.png)
 
-Para criar filtros suspensos:
+Para criar um filtro suspenso estático:
 
-1. Para criar um filtro suspenso usando [!UICONTROL itens de Dimension], como valores dentro da dimensão [!UICONTROL Canal de marketing], clique no ícone de seta para a direita ao lado da dimensão no painel esquerdo. Essa ação expõe todos os itens disponíveis. Selecione um ou vários itens do componente no painel esquerdo e solte-os na área suspensa do painel **enquanto mantém pressionada a tecla Shift**. Isso transformará os componentes em um filtro suspenso, em vez de em um filtro único.
-1. Para criar um filtro suspenso usando outro componente, como métricas, filtros ou intervalos de datas, selecione um tipo de componente no painel esquerdo e solte-o na zona de destino do painel **enquanto mantém pressionada a tecla Shift**.
-1. Selecione uma das opções na lista suspensa para alterar os dados no painel. Também é possível optar por não filtrar os dados do painel ao selecionar **[!UICONTROL Nenhum filtro]**.
+* Para filtros suspensos usando itens de dimensão, clique no ícone de seta para a direita ao lado da dimensão desejada no painel à esquerda. Essa ação expõe todos os itens de dimensão disponíveis. Selecionar vários itens de dimensão nesta lista usando `[Shift + Click]` ou `[Ctrl + Click]`, em seguida, solte-os na área de soltar do painel **exploração`[Shift]`**.
+* Para filtros suspensos que usam outros componentes, como métricas, filtros ou intervalos de datas, selecione vários componentes usando `[Shift + Click]` ou `[Ctrl + Click]`. Solte a seleção na área de soltar do painel **exploração`[Shift]`**. Todos os tipos de componentes são tratados como filtros neste contexto.
+* Um único filtro suspenso só pode conter um único tipo de componente. Se você incluir vários tipos de componentes na seleção, um filtro suspenso separado será criado por tipo de componente. Por exemplo, se você incluir métricas e itens de dimensão em sua seleção, dois filtros suspensos separados serão criados. Um filtro suspenso inclui itens de dimensão e o outro inclui métricas.
+
+Selecione uma das opções na lista suspensa para alterar os dados no painel. Você também pode optar por não filtrar os dados do painel ao selecionar **[!UICONTROL Sem filtro]**.
 
 ![](assets/create-dropdown.png)
 
+Clicar com o botão direito do mouse em um filtro suspenso fornece as seguintes opções:
+
+* **[!UICONTROL Adicionar rótulo]**: Quando você adiciona um filtro suspenso a um projeto, um rótulo é automaticamente definido para o nome do componente. Se você excluir o rótulo, é possível adicioná-lo novamente com essa opção.
+* **[!UICONTROL Excluir rótulo]**: Remova o texto acima de um filtro suspenso.
+* **[!UICONTROL Excluir filtro suspenso]**: Remove o filtro suspenso do painel.
+
 [Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=pt-BR) para saber mais sobre como adicionar filtros suspensos ao seu projeto.
+
+### Filtros suspensos dinâmicos
+
+Os filtros suspensos dinâmicos permitem determinar os valores disponíveis com base nos dados do intervalo de relatórios e nos valores do painel em outros filtros suspensos. Por exemplo, você pode criar dois menus suspensos dinâmicos usando uma dimensão Países e uma dimensão Cidades . Quando você seleciona um país na lista suspensa UICONTROL Países , a lista suspensa Cidades se ajusta dinamicamente para mostrar apenas cidades dentro desse país.
+
+Este mesmo conceito aplica-se a todas as dimensões; somente os itens de dimensão que aparecem no intervalo de datas do painel e os filtros selecionados ficam visíveis. Os itens de Dimension selecionados em filtros suspensos estáticos afetam os valores disponíveis em filtros suspensos dinâmicos. No entanto, o inverso não é verdadeiro; Os itens de Dimension selecionados em filtros suspensos dinâmicos não afetam os valores disponíveis em filtros suspensos estáticos.
+
+A seleção manual de itens de dimensão está disponível se você previr que um determinado item de dimensão seja coletado no futuro. Também é possível limpar um filtro suspenso dinâmico para que ele não contenha um valor, permitindo que outros filtros suspensos dinâmicos contenham mais valores. Selecionar **[!UICONTROL Limpar tudo]** para limpar a seleção de todos os filtros suspensos desse painel.
+
+Para criar um filtro suspenso dinâmico:
+
+* Arraste e solte uma única dimensão na área de soltar do painel **exploração`[Shift]`**.
+* Filtros suspensos dinâmicos não estão disponíveis para métricas, filtros ou intervalos de datas.
+* Clique com o botão direito do mouse em um filtro suspenso e selecione **[!UICONTROL Excluir filtro]** para excluí-lo.
+
+Clicar com o botão direito do mouse em um filtro suspenso dinâmico fornece as mesmas opções dos filtros suspensos estáticos.
 
 ## Clique com o botão direito do mouse no menu {#right-click}
 
@@ -91,8 +115,8 @@ As seguintes configurações estão disponíveis:
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL Inserir visualização/painel copiado] | Permite colar (“inserir”) um painel ou visualização copiada em outro lugar no projeto ou em outro projeto completamente diferente. |
-| [!UICONTROL Copiar painel] | Permite clicar com o botão direito do mouse e copiar um painel, para que você possa inseri-lo em outro lugar no projeto ou em um projeto completamente diferente. |
+| [!UICONTROL Inserir visualização/painel copiado] | Permite colar (&quot;inserir&quot;) um painel copiado ou uma visualização em outro local do projeto ou em um projeto diferente. |
+| [!UICONTROL Copiar painel] | Permite clicar com o botão direito do mouse e copiar um painel, de modo que você possa inseri-lo em outro lugar dentro do projeto ou em um projeto diferente. |
 | [!UICONTROL Duplicar o painel] | Cria uma duplicata exata do painel atual, que você pode modificar. |
 | [!UICONTROL Recolher/expandir todos os painéis] | Recolhe e expande todos os painéis do projeto. |
 | [!UICONTROL Recolher/Expandir todas as visualizações no painel] | Recolhe e expande todas as visualizações no painel atual. |

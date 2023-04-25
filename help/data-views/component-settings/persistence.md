@@ -4,10 +4,10 @@ description: Determine como ou se os valores de dimensão persistem de um evento
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '809'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ A [!UICONTROL Persistência] está disponível somente em dimensões e é retroa
 | [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são: [!UICONTROL Mais recente], [!UICONTROL Original], [!UICONTROL Instância], [!UICONTROL Tudo]. A partir de 28 de outubro de 2021, uma janela de lookback de até 90 dias será adicionada à configuração de [!UICONTROL Alocação]. |
 | [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: [!UICONTROL Sessão] (padrão), [!UICONTROL Pessoa], [!UICONTROL Tempo personalizado] e [!UICONTROL Métrica]. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). O tempo máximo de expiração que pode ser definido é de 90 dias. Se você selecionar uma alocação de [!UICONTROL Todos], somente a expiração de [!UICONTROL Sessão] ou [!UICONTROL Pessoa] estará disponível. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Configurações de [!UICONTROL Alocação]
 
@@ -76,13 +76,13 @@ Detalhes sobre as configurações de expiração disponíveis.
 
 ## [!UICONTROL Dimensão de ligação]
 
-Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de outra dimensão. As opções de lista suspensa válidas incluem outras dimensões contidas na visualização de dados.
+Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de dimensão em outra dimensão. As opções válidas incluem outras dimensões incluídas na visualização de dados.
 
 Consulte [uso de dimensões e métricas de ligação no CJA](../../use-cases/data-views/binding-dimensions-metrics.md) para obter exemplos sobre como usar efetivamente dimensões de ligação.
 
 ## [!UICONTROL Métrica de ligação]
 
-Uma lista suspensa que permite escolher uma métrica que atue como um acionador de ligação. As opções de lista suspensa válidas incluem métricas contidas na visualização de dados.
+Uma lista suspensa que permite escolher uma métrica que atue como um acionador de vínculo. As opções válidas incluem métricas incluídas na visualização de dados.
 
 Essa configuração só aparece quando a Dimensão de ligação está mais abaixo no array de objetos do que no componente. Quando a métrica de ligação está presente em um evento, os valores de dimensão são copiados da dimensão de nível de evento para o nível de esquema inferior da dimensão de ligação.
 

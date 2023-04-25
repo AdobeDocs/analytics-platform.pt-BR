@@ -3,10 +3,10 @@ description: Recursos de suporte para acessibilidade no Analysis Workspace
 title: Acessibilidade no Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '656'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 99%
 
 ---
 
@@ -53,34 +53,34 @@ O [!UICONTROL Analysis Workspace] oferece um conjunto avançado de [atalhos de t
 #### Navegação
 
 | Atalho | Ação |
-|---|---|
-| Alt + Shift + 1 / 2 / 3 | Ir para diferentes painéis: [!UICONTROL Painéis], [!UICONTROL Visualizações] ou [!UICONTROL Componentes] |
-| Alt + seta para a esquerda/direita | Navegar entre painéis |
-| Alt + M | Recolher/expandir todos os painéis |
-| Alt+  Ctrl + M | Recolher/expandir painel ativo |
-| Ctrl + / | Pesquisar painel esquerdo |
+| --- | --- |
+| `[Alt + Shift + 1 / 2 / 3]` | Ir para diferentes painéis: [!UICONTROL Painéis], [!UICONTROL Visualizações] ou [!UICONTROL Componentes] |
+| `[Alt + Left / Right]` | Navegar entre painéis |
+| `[Alt + M]` | Recolher/expandir todos os painéis |
+| `[Alt + Ctrl + M]` | Recolher/expandir painel ativo |
+| `[Ctrl + /]` | Pesquisar painel esquerdo |
 
 #### Criação de análise
 
 | Atalho | Ação |
-|---|---|
-| Alt + 1 | Nova tabela de forma livre |
-| Ctrl + Shift + C | Nova métrica calculada |
-| Ctrl + Shift + D | Novo intervalo de datas |
-| Ctrl + Shift + E | Novo filtro |
-| Ctrl + Z | Desfazer |
-| Manter a tecla shift pressionada (na zona de destino do filtro do painel) | Criar um [filtro suspenso](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) |
+| --- | --- |
+| `[Alt + 1]` | Nova tabela de forma livre |
+| `[Ctrl + Shift + C]` | Nova métrica calculada |
+| `[Ctrl + Shift + D]` | Novo intervalo de datas |
+| `[Ctrl + Shift + E]` | Novo segmento |
+| `[Ctrl + Z]` | Desfazer |
+| `[Component drag + Shift]` | Criar um filtro suspenso |
 
 #### Democratização
 
 | Atalho | Ação |
-|---|---|
-| Ctrl + S | Salvar |
-| Ctrl + Shift + G | Preparar |
-| Ctrl + G | Compartilhar |
-| Alt + Shift + S | Agendar |
-| Alt + L | Obter link para o projeto |
-| Ctrl + Shift + B | Baixar o PDF |
+| --- | --- |
+| `[Ctrl + S]` | Salvar |
+| `[Ctrl + Shift + G]` | Preparar |
+| `[Ctrl + G]` | Compartilhar |
+| `[Alt + Shift + S]` | Agendar |
+| `[Alt + L]` | Obter link para o projeto |
+| `[Ctrl + Shift + B]` | Baixar o PDF |
 
 ## Suporte para leitores de tela e ampliadores de tela
 

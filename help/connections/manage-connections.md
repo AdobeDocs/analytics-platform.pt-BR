@@ -5,10 +5,10 @@ mini-toc-levels: 3
 exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: ht
-source-wordcount: '1808'
-ht-degree: 100%
+source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+workflow-type: tm+mt
+source-wordcount: '1809'
+ht-degree: 99%
 
 ---
 
@@ -97,7 +97,7 @@ Veja as explicações sobre widgets e configurações:
 | Widget/Configuração | Descrição |
 | --- | --- |
 | Seletor de conjunto de dados | Permite escolher um dos conjuntos de dados na conexão ou todos eles. Não é possível selecionar vários conjuntos de dados simultaneamente. O padrão é [!UICONTROL Todos os conjuntos de dados]. |
-| Calendário/Intervalos de datas | O intervalo de datas indica quando foram adicionados dados à conexão. Todas as predefinições de calendário padrão são incluídas. Você pode personalizar o intervalo de datas, mas intervalos de datas personalizados não serão exibidos na lista suspensa. |
+| Calendário/Intervalos de datas | O intervalo de datas indica quando foram adicionados dados à conexão. Todas as predefinições de calendário padrão são incluídas. Você pode personalizar o intervalo de datas, mas nenhum intervalo de datas personalizado é exibido na lista suspensa. |
 | Widget de [!UICONTROL Registros de dados de eventos disponíveis] | Representa o número total de linhas de conjunto de dados de evento disponíveis para relatórios, **para toda a conexão**. Essa contagem independe de qualquer configuração de calendário. Ela será alterada se você selecionar um conjunto de dados por meio do seletor de conjunto de dados ou na tabela. (Observe que há uma latência de uma a duas horas para que os dados sejam mostrados no relatório, uma vez adicionados.) |
 | Widget de [!UICONTROL Métricas] | Resume os registros de eventos adicionados/ignorados/excluídos e o número de lotes adicionados, **para o conjunto de dados e o intervalo de datas selecionados**. |
 | Widget de [!UICONTROL Registros adicionados] | Indica quantas linhas foram adicionadas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Atualizado a cada dez minutos. **Observação**: Os dados de **[!UICONTROL Registros adicionados]** incluem apenas dados do evento no momento, não dados de perfil ou de pesquisa. |
