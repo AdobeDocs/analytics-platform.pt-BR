@@ -4,7 +4,7 @@ keywords: Compartilhamento no Analysis Workspace
 title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: df939712d3ee8d029dd42a9a769c022a4d0dbdf1
+source-git-commit: 749088c6e6c100797bd9a2dd1de64d18d45108e5
 workflow-type: tm+mt
 source-wordcount: '1753'
 ht-degree: 53%
@@ -119,7 +119,7 @@ Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-sha
 >
 >* A capacidade de compartilhar um projeto dessa maneira pode ser desativada pelo administrador do CJA, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md). Se você não puder compartilhar um projeto conforme descrito nesta seção, o administrador do CJA desabilitou essa capacidade.
 >
->* Projetos com mais de 14 visualizações expandidas não podem ser compartilhados com pessoas que não têm acesso ao CJA.
+>* Projetos com mais de 50 visualizações expandidas não podem ser compartilhados com pessoas que não têm acesso ao CJA.
 >
 >* Os usuários com os quais você compartilha podem visualizar qualquer filtro que tenha sido aplicado ao projeto durante [preparação](curate.md).
 > 
