@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: cf36e6c662835b10c60f400c95e341865a9e56b1
+source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
 workflow-type: tm+mt
-source-wordcount: '3057'
+source-wordcount: '3062'
 ht-degree: 9%
 
 ---
@@ -15,18 +15,19 @@ ht-degree: 9%
 
 # Campos derivados
 
+{{release-limited-testing}}
+
 Os campos derivados são um aspecto importante da funcionalidade de relatório em tempo real no Customer Journey Analytics (CJA). Um campo derivado (personalizado) permite definir (geralmente complexo) manipulações de dados dinamicamente, por meio de um construtor de regras personalizável. Em seguida, você pode usar esse campo derivado como um componente (métrica ou dimensão) no [Workspace](../../analysis-workspace/home.md) ou ainda defina mais como um componente em [Exibição de dados](../data-views.md).
 
 Campos derivados podem economizar uma quantidade significativa de tempo e esforço, em comparação com a transformação ou manipulação de seus dados em outros locais fora do CJA. Tal como [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR), [Distiller de dados](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)ou em seus próprios processos de Extrair carga de transformação (ETL)/Extrair transformação de carga (ELT).
 
-Os campos derivados são definidos como campos personalizados dentro de [Visualizações de dados](../data-views.md), são baseadas em um conjunto de funções e aplicadas a campos padrão e/ou de esquema disponíveis.
+Os campos derivados são definidos como campos personalizados dentro de [Visualizações de dados](../data-views.md), são baseadas em um conjunto de funções definidas como regras e aplicadas aos campos padrão e/ou de esquema disponíveis.
 
 Os casos de uso de exemplo são:
 
 - Defina um campo de Nome de página personalizado que corrija valores de nome de página coletados inadequados para corrigir valores de nome de página.
 
 - Defina um campo de Canal de marketing personalizado que determine o canal de marketing apropriado com base em uma ou mais condições (por exemplo, parâmetro de URL, URL da página, nome da página).
-
 
 ## Interface de campo personalizada
 
@@ -37,7 +38,7 @@ Ao criar ou editar um campo personalizado, use a interface de campo personalizad
 
 |  | Nome | Descrição |
 |---------|----------|--------|
-| 1 | **Seletor** | Use a área do seletor para selecionar, arrastar e soltar ![Função](assets/Smock_Function_18_N.svg) ,![Ícone do modelo de função](assets/Smock_FileTemplate_18_N.svg) template de função,![Ícone do campo Esquema](assets/Smock_Folder_18_N.svg) campo de esquema ou![Ícone de campo padrão](assets/Smock_DragHandle_18_N.svg)campo padrão no construtor de regras. <br/>Use o menu suspenso para selecionar entre [!UICONTROL Funções], [!UICONTROL Modelos de funções], [!UICONTROL Campos de esquema]e [!UICONTROL Campos padrão].<br/>Você pode pesquisar por função, modelos de função, esquema e campos padrão usando a caixa Pesquisar . <br/>Você pode filtrar a lista de objetos selecionados ao selecionar ![Ícone Filtro](assets/Smock_Filter_18_N.svg) Filtre e especifique filtros na [!UICONTROL Filtrar campos por] caixa de diálogo. Você pode remover filtros facilmente usando ![Ícone Fechar](assets/CrossSize75.svg) para cada filtro. |
+| 1 | **Seletor** | Use a área do seletor para selecionar, arrastar e soltar ![Função](assets/Smock_Function_18_N.svg) ,![Ícone do modelo de função](assets/Smock_FileTemplate_18_N.svg) template de função,![Ícone do campo Esquema](assets/Smock_Folder_18_N.svg) campo de esquema ou![Ícone de campo padrão](assets/Smock_DragHandle_18_N.svg)campo padrão no construtor de regras. <br/>Use o menu suspenso para selecionar entre [!UICONTROL Funções], [!UICONTROL Modelos de funções], [!UICONTROL Campos de esquema]e [!UICONTROL Campos padrão].<br/>Você pode pesquisar por função, templates de função, schema e campos padrão usando a variável ![Ícone de Pesquisa](assets/Smock_Search_18_N.svg) Caixa de pesquisa. <br/>Você pode filtrar a lista de objetos selecionados ao selecionar ![Ícone Filtro](assets/Smock_Filter_18_N.svg) Filtre e especifique filtros na [!UICONTROL Filtrar campos por] caixa de diálogo. Você pode remover filtros facilmente usando ![Ícone Fechar](assets/CrossSize75.svg) para cada filtro. |
 | 2 | **Construtor de regras** | Você cria seu campo personalizado sequencialmente usando uma ou mais regras. Uma regra é uma implementação específica de uma função e, portanto, sempre está associada a apenas uma função. Você cria uma regra arrastando e soltando uma função no Construtor de regras. O tipo de função determina a interface da regra.<br/>Consulte a [Interface de regras](#rule-interface) para obter mais informações. <br/>É possível inserir uma função no início, no fim ou entre as regras já disponíveis no Construtor de regras. A última regra no Construtor de regras determina a saída final do campo personalizado. |
 | 3 | **[!UICONTROL ** Configurações de campo **]** | É possível nomear e descrever o campo personalizado e inspecionar o tipo de campo. |
 | 4 | **[!UICONTROL ** Saída final **]** | Essa área mostra uma pré-visualização atualizada dos valores de saída, com base nos dados dos últimos 30 dias e nas alterações feitas no campo personalizado no construtor de regras. |
