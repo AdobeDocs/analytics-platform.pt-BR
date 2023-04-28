@@ -2,10 +2,10 @@
 title: Criar filtros
 description: Entenda a interface do usuário de criação de filtro.
 exl-id: b6a921d5-7dd3-4230-88b8-5f1cd313b791
-source-git-commit: d09cff0db8b02af1f0495faceb9ee1fc5fa0a41d
+source-git-commit: a4ff2b48a85730f6ded56f207b5cc1ece6a3d3ab
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 60%
+source-wordcount: '309'
+ht-degree: 56%
 
 ---
 
@@ -29,4 +29,4 @@ Ao aplicar filtros em um projeto de forma livre, vários outros métodos também
 | Criar filtro a partir da seleção | Criar um filtro em linha. Este filtro se aplica somente ao projeto aberto e não é salvo como um filtro do CJA.<p> 1. Selecione quais linhas da tabela você deseja que faça parte do filtro.  2. Clique com o botão direito na seleção.  3. Clique em *Criar filtro a partir da seleção*. |
 | Espaço de trabalho [!UICONTROL Componentes] > [!UICONTROL Novo filtro] | Exibe o Construtor de filtros. Consulte [Construtor de filtros](/help/components/filters/filter-builder.md) para obter mais informações sobre filtragem. |
 | Compartilhar > Compartilhar projeto ou compartilhar > Preparar dados do projeto | Em [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md) ou [Preparar projetos](/help/analysis-workspace/curate-share/curate.md), saiba como os filtros que você aplica ao projeto estão disponíveis na análise compartilhada para o recipient. |
-| Usar filtros como dimensões | O vídeo a seguir demonstra como usar filtros como dimensões: (**Observação:** este vídeo usa o termo &quot;segmentos&quot; em vez de &quot;filtros&quot;. No entanto, a funcionalidade é a mesma.) <p>[Utilização de segmentos como dimensões no Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/applying-segments/using-segments-as-dimensions-in-analysis-workspace.html?lang=pt-BR)</p> |
+| Usar filtros como dimensões | O vídeo a seguir demonstra como usar filtros como dimensões:  <p>[Usar filtros como dimensões no Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html)</p> |
