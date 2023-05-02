@@ -5,13 +5,13 @@ solution: Customer Journey Analytics
 feature: Data Views
 hide: true
 hidefromtoc: true
-source-git-commit: 35a1a93a43869abab6e53ffb1d02edb5fad9a0c1
+exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
+source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3225'
 ht-degree: 9%
 
 ---
-
 
 # Campos derivados
 
@@ -153,14 +153,21 @@ Para usar o modelo, é necessário especificar os parâmetros corretos para cada
 
 ## Referência de função
 
-Para cada função suportada, localize os detalhes abaixo:
+Para cada função suportada, localize os detalhes abaixo em:
 
-- entradas, operadores e saídas
+- especificações:
+   - tipo de dados de entrada: tipo de dados suportados,
+   - entrada: valores possíveis para entrada,
+   - operadores incluídos: operadores compatíveis com esta função (se houver),
+   - limite: número máximo de regras com essa função que você pode usar em um campo derivado,
+   - saída.
 
 - casos de utilização, incluindo:
    - dados antes de definir o campo personalizado
    - como definir o campo personalizado
    - dados após definir o campo personalizado
+
+- dependências (opcional)
 
 
 <!-- Concatenate -->
@@ -171,11 +178,11 @@ Combina dois ou mais campos, campos personalizados ou valores inseridos pelo usu
 
 +++ Detalhes
 
-## Entradas/operadores/saídas {#concatenate-io}
+## Especificações {#concatenate-io}
 
-| Tipo de dados de entrada | Entrada | Operadores incluídos | Saída |
-|---|---|---|---|
-| <p>Sequência de caracteres</p> | <ul><li>Dois ou mais valores para combinar<ul><li>Campos</li><li>Valor derivado de uma regra anterior</li><li>Valor inserido pelo usuário</li></ul></li><li>Delimitadores<ul><li>Entrada ou seleção de um delimitador para cada valor</li></ul></li> </ul> | <p>N/D</p> | <p>Novo campo personalizado</p> |
+| Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
+|---|---|---|:--:|---|
+| <p>Sequência de caracteres</p> | <ul><li>Dois ou mais valores para combinar<ul><li>Campos</li><li>Valor derivado de uma regra anterior</li><li>Valor inserido pelo usuário</li></ul></li><li>Delimitadores<ul><li>Entrada ou seleção de um delimitador para cada valor</li></ul></li> </ul> | <p>N/D</p> | <p>2</p> | <p>Novo campo personalizado</p> |
 
 {style="table-layout:auto"}
 
@@ -200,7 +207,7 @@ Imagine que as seguintes reservas ocorram:
 O relatório desejado deve ter a seguinte aparência:
 
 | Origem/Destino | Reservas |
-|---|---|
+|----|---:|
 | SLC-MCO | 2 |
 | SLC-LAX | 1 |
 | SLC-SEA | 1 |
@@ -212,7 +219,7 @@ O relatório desejado deve ter a seguinte aparência:
 ### Dados anteriores {#concatenate-uc-databefore}
 
 | Origem | Destino |
-|----|----|
+|----|---:|
 | SLC | MCO |
 | SLC | LAX |
 | SLC | SEA |
@@ -249,11 +256,11 @@ Aplica condições, com base em critérios definidos de um ou mais campos. Esses
 
 +++ Detalhes
 
-## Entradas/operadores/saídas {#casewhen-io}
+## Especificações {#casewhen-io}
 
-| Tipo de dados de entrada | Entrada | Operadores incluídos | Saída |
-|---|---|---|---|
-| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data/Hora</li></ul> | <ul><li>Campos de entrada</li><li>Critérios</li></ul> | <p><u>Strings</u></p><ul><li>Igual a</li><li>Igual a qualquer termo</li><li>Contém a frase</li><li>Contém qualquer termo</li><li>Contém todos os termos</li><li>Começa com</li><li>Começa com qualquer termo</li><li>Termina com</li><li>Termina com qualquer termo</li><li>Não é igual</li><li>Não é igual a nenhum termo</li><li>Não contém a frase</li><li>Não contém nenhum termo</li><li>Não contém todos os termos</li><li>Não começa com</li><li>Não inicia com nenhum termo</li><li>Não termina com</li><li>Não termina com nenhum termo</li><li>Está definido</li><li>Não está definido</li></ul><p><u>Numérico</u></p><ul><li>Igual a</li><li>Não é igual</li><li>É maior que</li><li>É maior que ou igual a</li><li>É menor que</li><li>É menor que ou igual a</li><li>Está definido</li><li>Não está definido</li></ul><p><u>Datas</u></p><ul><li>Igual a</li><li>Não é igual</li><li>É posterior a</li><li>É posterior ou igual a</li><li>É antes</li><li>É anterior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul> | <p>Novo campo personalizado</p> |
+| Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
+|---|---|---|:---:|---|
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data/Hora</li></ul> | <ul><li>Campos de entrada</li><li>Critérios</li></ul> | <p><u>Strings</u></p><ul><li>Igual a</li><li>Igual a qualquer termo</li><li>Contém a frase</li><li>Contém qualquer termo</li><li>Contém todos os termos</li><li>Começa com</li><li>Começa com qualquer termo</li><li>Termina com</li><li>Termina com qualquer termo</li><li>Não é igual</li><li>Não é igual a nenhum termo</li><li>Não contém a frase</li><li>Não contém nenhum termo</li><li>Não contém todos os termos</li><li>Não começa com</li><li>Não inicia com nenhum termo</li><li>Não termina com</li><li>Não termina com nenhum termo</li><li>Está definido</li><li>Não está definido</li></ul><p><u>Numérico</u></p><ul><li>Igual a</li><li>Não é igual</li><li>É maior que</li><li>É maior que ou igual a</li><li>É menor que</li><li>É menor que ou igual a</li><li>Está definido</li><li>Não está definido</li></ul><p><u>Datas</u></p><ul><li>Igual a</li><li>Não é igual</li><li>É posterior a</li><li>É posterior ou igual a</li><li>É antes</li><li>É anterior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul> | <p>5</p> | <p>Novo campo personalizado</p> |
 
 {style="table-layout:auto"}
 
@@ -273,7 +280,7 @@ Você deseja definir regras para identificar vários canais de marketing, aplica
 Caso seu site receba os seguintes eventos de exemplo, contendo Referenciador e URL da página, esses eventos devem ser identificados da seguinte maneira:
 
 | Evento  | Referenciador | URL da página | Canal de marketing |
-|:----:|----|----|----|
+|:--:|----|----|----|
 | 1 | `https://facebook.com` | `https://site.com/home` | Social natural |
 | 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | Exibir |
 | 3 |  | `https://site.com/?cid=em_12345678` | Email |
@@ -425,8 +432,6 @@ Seu relatório desejado deve ser semelhante a:
 | 21 |
 | 8 |
 
-{style="table-layout:auto"}
-
 ### Campo personalizado {#casewhen-uc3-customfield}
 
 Você define uma `Trip Duration (bucketed)` campo personalizado. Você cria o seguinte **[!UICONTROL ** CASO QUANDO **]** no Construtor de regras. Essa regra aplica a lógica para agrupar o antigo **[!UICONTROL ** Duração do Percurso **]** valores de campo em três valores: `short trip`, `medium  trip`e `long trip`.
@@ -451,6 +456,32 @@ Você define uma `Trip Duration (bucketed)` campo personalizado. Você cria o se
 | longa viagem |
 | longa viagem |
 
+
+## Dependências
+
+As seguintes dependências se aplicam ao selecionar e definir valores.
+
+
+|  | Dependências do conjunto de dados |
+|:---:|----|
+| <span style='color: red'>A</span> | Valores _select_ no mesmo [!UICONTROL If], [!UICONTROL Senão Se] construir (usando [!UICONTROL E] ou [!UICONTROL Ou]) em uma regra deve se originar do mesmo conjunto de dados. |
+| <span style='color: red'>B</span> | Todos os valores _set_ em construções e na regra devem se originar do mesmo conjunto de dados. |
+| <span style='color: blue'>C</span> | Os valores que você _select_ across [!UICONTROL If], [!UICONTROL Senão Se] construções na regra do _not_ precisam ser originários do mesmo conjunto de dados. |
+
+{style="table-layout:auto"}
+
+![Ocorrência quando o conjunto de dados depende](assets/case-when-datasets.png)
+
+
+|  | Dependências de tipo |
+|:---:|----|
+| <span style='color: red'>D</span> | Os tipos de valor que você _set_ em toda a regra precisam ser iguais. |
+| <span style='color: blue'>E</span> | Os tipos de valor que você _select_ dentro de uma construção ou entre construções em uma regra pode ser de qualquer tipo (string, numérico, datas). |
+
+{style="table-layout:auto"}
+
+![Dependências de Tipo de Caso Quando](assets/case-when-types.png)
+
 +++
 
 
@@ -462,11 +493,11 @@ Encontra todos os valores em um campo selecionado e substitui esses valores por 
 
 +++ Detalhes
 
-## Entradas/operadores/saídas {#findreplace-io}
+## Especificações {#findreplace-io}
 
-| Tipo de dados de entrada | Entrada | Operadores incluídos | Saída |
-|---|---|---|---|
-| <p>Sequência de caracteres</p> | <ul><li><span>Critérios do campo &quot;Quando substituir&quot;</span></li><li><span>Valor do campo &quot;Substituir por&quot;</span><ul><li><span>Digitado pelo usuário</span></li><li><span>Campo separado</span></li></ul></li></ul> | <p><u>Strings</u></p><ul><li>Localizar tudo e substituir tudo</li></ul> | <p>Novo campo personalizado</p> |
+| Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
+|---|---|---|:---:|---|
+| <p>Sequência de caracteres</p> | <ul><li><span>Critérios do campo &quot;Quando substituir&quot;</span></li><li><span>Valor do campo &quot;Substituir por&quot;</span><ul><li><span>Digitado pelo usuário</span></li><li><span>Campo separado</span></li></ul></li></ul> | <p><u>Strings</u></p><ul><li>Localizar tudo e substituir tudo</li></ul> | <p>1</p> | <p>Novo campo personalizado</p> |
 
 {style="table-layout:auto"}
 
@@ -478,16 +509,16 @@ Você recebeu alguns valores malformados para seu relatório de canais de market
 **Relatório original**
 
 | Canais de marketing externos | Sessões |
-|---|---|
+|---|--:|
 | marketing por email | 500 |
-| email%20marketing | 24 |
+| email %20marketing | 24 |
 
 {style="table-layout:auto"}
 
 **Relatório preferencial**
 
 | Canais de marketing externos | Sessões |
-|---|---|
+|---|--:|
 | marketing por email | 524 |
 
 
@@ -533,11 +564,11 @@ Define um conjunto de valores de pesquisa que são substituídos pelos valores c
 +++ Detalhes
 
 
-## Entradas/operadores/saídas {#lookup-io}
+## Especificações {#lookup-io}
 
-| Tipo de dados de entrada | Entrada | Operadores incluídos | Saída |
-|---|---|---|---|
-| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Campo de sing</li><li>Arquivo de pesquisa<ul><li>Coluna-chave</li><li>Nova Coluna de Campo</li></ul></li></ul> | <p>N/D</p> | <p>Novo campo personalizado</p> |
+| Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
+|---|---|---|:---:|---|
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Campo de sing</li><li>Arquivo de pesquisa<ul><li>Coluna-chave</li><li>Nova Coluna de Campo</li></ul></li></ul> | <p>N/D</p> | <p>5</p> | <p>Novo campo personalizado</p> |
 
 {style="table-layout:auto"}
 
@@ -652,11 +683,11 @@ Analisa diferentes partes de um URL, incluindo protocolo, host, caminho ou parâ
 
 +++ Detalhes
 
-## Entradas/operadores/saídas {#urlparse-io}
+## Especificações {#urlparse-io}
 
-| Tipo de dados de entrada | Entrada | Operadores incluídos | Saída |
-|---|---|---|---|
-| <ul><li>Sequência de caracteres</li></ul> | <ul><li>Campo de sing</li><li>Opção de análise<ul><li>Obter protocolo</li><li>Obter host</li><li>Obter caminho</li><li>Obter valor de consulta<ul><li>Parâmetro de consulta</li></ul></li><li>Obter valor de hash</li></ul></li></ul></li></ul> | <p>N/D</p> | <p>Novo campo personalizado</p> |
+| Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
+|---|---|---|:---:|---|
+| <ul><li>Sequência de caracteres</li></ul> | <ul><li>Campo de sing</li><li>Opção de análise<ul><li>Obter protocolo</li><li>Obter host</li><li>Obter caminho</li><li>Obter valor de consulta<ul><li>Parâmetro de consulta</li></ul></li><li>Obter valor de hash</li></ul></li></ul></li></ul> | <p>N/D</p> | <p>5</p> | <p>Novo campo personalizado</p> |
 
 {style="table-layout:auto"}
 
