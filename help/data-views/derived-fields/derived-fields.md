@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 3aa2f57e7cd11b013369ad80d0181bccb48eebe1
+source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
 workflow-type: tm+mt
-source-wordcount: '3225'
+source-wordcount: '3221'
 ht-degree: 9%
 
 ---
@@ -461,11 +461,10 @@ Você define uma `Trip Duration (bucketed)` campo personalizado. Você cria o se
 
 As seguintes dependências se aplicam ao selecionar e definir valores.
 
-
 |  | Dependências do conjunto de dados |
 |:---:|----|
 | <span style='color: red'>A</span> | Valores _select_ no mesmo [!UICONTROL If], [!UICONTROL Senão Se] construir (usando [!UICONTROL E] ou [!UICONTROL Ou]) em uma regra deve se originar do mesmo conjunto de dados. |
-| <span style='color: red'>B</span> | Todos os valores _set_ em construções e na regra devem se originar do mesmo conjunto de dados. |
+| <span style='color: red'>B</span> | Todos os valores _set_ em uma regra, deve se originar do mesmo conjunto de dados. |
 | <span style='color: blue'>C</span> | Os valores que você _select_ across [!UICONTROL If], [!UICONTROL Senão Se] construções na regra do _not_ precisam ser originários do mesmo conjunto de dados. |
 
 {style="table-layout:auto"}
@@ -475,8 +474,8 @@ As seguintes dependências se aplicam ao selecionar e definir valores.
 
 |  | Dependências de tipo |
 |:---:|----|
-| <span style='color: red'>D</span> | Os tipos de valor que você _set_ em toda a regra precisam ser iguais. |
-| <span style='color: blue'>E</span> | Os tipos de valor que você _select_ dentro de uma construção ou entre construções em uma regra pode ser de qualquer tipo (string, numérico, datas). |
+| <span style='color: red'>D</span> | Os tipos de valores que você _set_ em uma regra deve ser a mesma. |
+| <span style='color: blue'>E</span> | Os tipos de valores que você _select_ dentro de uma construção ou entre construções em uma regra pode ser de qualquer tipo (string, numérico, datas). |
 
 {style="table-layout:auto"}
 
