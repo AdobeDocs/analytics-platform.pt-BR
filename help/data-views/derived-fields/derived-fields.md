@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
+source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
 workflow-type: tm+mt
-source-wordcount: '3260'
+source-wordcount: '3281'
 ht-degree: 9%
 
 ---
@@ -459,7 +459,7 @@ Você define uma `Trip Duration (bucketed)` campo personalizado. Você cria o se
 
 ## Limitações
 
-O CJA usa um modelo de contêiner aninhado para sua funcionalidade. Esse modelo de contêiner aninhado determina as restrições ao usar o construtor de regras. O modelo de contêiner aninhado padrão usado pelo CJA é estruturado como ilustrado abaixo:
+O CJA usa uma estrutura de contêiner aninhado flexível modelada após a Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR) (Experience Data Model) para sua funcionalidade. Esse modelo de contêiner, embora flexível por natureza, impõe algumas restrições ao usar o construtor de regras. O modelo de contêiner aninhado padrão usado pelo CJA é estruturado como ilustrado abaixo:
 
 <p align="center">
 <img src="./assets/containers.png" width="70%" valign="middle">
