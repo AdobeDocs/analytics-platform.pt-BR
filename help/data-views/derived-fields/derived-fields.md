@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 5df8086fd91bd10fa976468a936723e4c3ebbb85
+source-git-commit: cd1228c18a665d3411039e9ca04a30d2ac7d9cb2
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3260'
 ht-degree: 9%
 
 ---
@@ -39,7 +39,7 @@ Ao criar ou editar um campo personalizado, use a interface de campo personalizad
 |  | Nome | Descrição |
 |---------|----------|--------|
 | 1 | **Seletor** | Use a área do seletor para selecionar, arrastar e soltar ![Função](assets/Smock_Function_18_N.svg) ,![Ícone do modelo de função](assets/Smock_FileTemplate_18_N.svg) template de função,![Ícone do campo Esquema](assets/Smock_Folder_18_N.svg) campo de esquema ou![Ícone de campo padrão](assets/Smock_DragHandle_18_N.svg)campo padrão no construtor de regras. <br/>Use o menu suspenso para selecionar entre [!UICONTROL Funções], [!UICONTROL Modelos de funções], [!UICONTROL Campos de esquema]e [!UICONTROL Campos padrão].<br/>Você pode pesquisar por função, templates de função, schema e campos padrão usando a variável ![Ícone de Pesquisa](assets/Smock_Search_18_N.svg) Caixa de pesquisa. <br/>Você pode filtrar a lista de objetos selecionados ao selecionar ![Ícone Filtro](assets/Smock_Filter_18_N.svg) Filtre e especifique filtros na [!UICONTROL Filtrar campos por] caixa de diálogo. Você pode remover filtros facilmente usando ![Ícone Fechar](assets/CrossSize75.svg) para cada filtro. |
-| 2 | **Construtor de regras** | Você cria seu campo personalizado sequencialmente usando uma ou mais regras. Uma regra é uma implementação específica de uma função e, portanto, sempre está associada a apenas uma função. Você cria uma regra arrastando e soltando uma função no Construtor de regras. O tipo de função determina a interface da regra.<br/>Consulte a [Interface de regras](#rule-interface) para obter mais informações. <br/>É possível inserir uma função no início, no fim ou entre as regras já disponíveis no Construtor de regras. A última regra no Construtor de regras determina a saída final do campo personalizado. |
+| 2 | **Construtor de regras** | Você cria seu campo personalizado sequencialmente usando uma ou mais regras. Uma regra é uma implementação específica de uma função e, portanto, sempre está associada a apenas uma função. Você cria uma regra arrastando e soltando uma função no construtor de regras. O tipo de função determina a interface da regra.<br/>Consulte a [Interface de regras](#rule-interface) para obter mais informações. <br/>Você pode inserir uma função no início, no fim ou entre as regras já disponíveis no Construtor de regras. A última regra no construtor de regras determina a saída final do campo personalizado. |
 | 3 | **[!UICONTROL ** Configurações de campo **]** | É possível nomear e descrever o campo personalizado e inspecionar o tipo de campo. |
 | 4 | **[!UICONTROL ** Saída final **]** | Essa área mostra uma pré-visualização atualizada dos valores de saída, com base nos dados dos últimos 30 dias e nas alterações feitas no campo personalizado no construtor de regras. |
 
@@ -167,7 +167,7 @@ Para cada função suportada, localize os detalhes abaixo em:
    - como definir o campo personalizado
    - dados após definir o campo personalizado
 
-- dependências (opcional)
+- restrições (opcional)
 
 
 <!-- Concatenate -->
@@ -361,7 +361,7 @@ Seu site coleta os seguintes valores para sua dimensão Métodos de descoberta d
 
 ### Campo personalizado {#casewhen-uc2-customfield}
 
-Você define uma `Product Finding Methods (new)` campo personalizado. Você cria o seguinte **[!UICONTROL ** CASO QUANDO **]** no Construtor de regras. Essas regras aplicam a lógica a todas as possíveis variações do antigo **[!UICONTROL ** Métodos para encontrar produtos **]** valores de campo para `search` e `browse` usando o **[!UICONTROL Contém a frase]** critério.
+Você define uma `Product Finding Methods (new)` campo personalizado. Você cria o seguinte **[!UICONTROL ** CASO QUANDO **]** regras no construtor de regras. Essas regras aplicam a lógica a todas as possíveis variações do antigo **[!UICONTROL ** Métodos para encontrar produtos **]** valores de campo para `search` e `browse` usando o **[!UICONTROL Contém a frase]** critério.
 
 ![[!DNL Case When] regra 2](assets/case-when-2.png)
 
@@ -457,29 +457,25 @@ Você define uma `Trip Duration (bucketed)` campo personalizado. Você cria o se
 | longa viagem |
 
 
-## Dependências
+## Limitações
 
-As seguintes dependências se aplicam ao selecionar e definir valores.
+O CJA usa um modelo de contêiner aninhado para sua funcionalidade. Esse modelo de contêiner aninhado determina as restrições ao usar o construtor de regras. O modelo de contêiner aninhado padrão usado pelo CJA é estruturado como ilustrado abaixo:
 
-|  | Dependências do conjunto de dados |
+<p align="center">
+<img src="./assets/containers.png" width="70%" valign="middle">
+</p>
+
+Consulte [Contêineres](../create-dataview.md#containers) e [Filtrar contêineres](../../components/filters/filters-overview.md#filter-containers) para obter mais informações de fundo.
+
+As restrições de contêiner a seguir se aplicam e são aplicadas quando _seleção_ e _definição_ valores.
+
+|  | Limitações |
 |:---:|----|
-| <span style='color: red'>A</span> | Valores _select_ no mesmo [!UICONTROL If], [!UICONTROL Senão Se] construir (usando [!UICONTROL E] ou [!UICONTROL Ou]) em uma regra deve se originar do mesmo conjunto de dados. |
-| <span style='color: red'>B</span> | Todos os valores _set_ em uma regra, deve se originar do mesmo conjunto de dados. |
-| <span style='color: blue'>C</span> | Os valores que você _select_ across [!UICONTROL If], [!UICONTROL Senão Se] construções na regra do _not_ precisam ser originários do mesmo conjunto de dados. |
+| **<span style='color: red'>A</span>** | Valores _select_ no mesmo [!UICONTROL If], [!UICONTROL Senão Se] construir (usando [!UICONTROL E] ou [!UICONTROL Ou]) em uma regra deve se originar do mesmo contêiner e pode ser de qualquer tipo (string ![String](assets/Smock_ABC_18_N.svg), numérico ![Numérico](assets/Smock_123_18_N.svg)e assim por diante). <br/>![Dependência A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | Todos os valores _set_ em uma regra, deve ser do mesmo contêiner e ter o mesmo tipo ou um valor personalizado do mesmo tipo. <br/> ![Dependência B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | Os valores que você _select_ across [!UICONTROL If], [!UICONTROL Senão Se] construções na regra do _not_ têm de ser originários do mesmo contentor e têm _not_ têm de ser do mesmo tipo. <br/> ![Dependência C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
-
-![Ocorrência quando o conjunto de dados depende](assets/case-when-datasets.png)
-
-
-|  | Dependências de tipo |
-|:---:|----|
-| <span style='color: red'>D</span> | Os tipos de valores que você _set_ em uma regra deve ser a mesma. |
-| <span style='color: blue'>E</span> | Os tipos de valores que você _select_ dentro de uma construção ou entre construções em uma regra pode ser de qualquer tipo (string, numérico, datas). |
-
-{style="table-layout:auto"}
-
-![Dependências de Tipo de Caso Quando](assets/case-when-types.png)
 
 +++
 
@@ -567,7 +563,7 @@ Define um conjunto de valores de pesquisa que são substituídos pelos valores c
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
 |---|---|---|:---:|---|
-| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Campo de sing</li><li>Arquivo de pesquisa<ul><li>Coluna-chave</li><li>Nova Coluna de Campo</li></ul></li></ul> | <p>N/D</p> | <p>5</p> | <p>Novo campo personalizado</p> |
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Campo único</li><li>Arquivo de pesquisa<ul><li>Coluna-chave</li><li>Nova Coluna de Campo</li></ul></li></ul> | <p>N/D</p> | <p>5</p> | <p>Novo campo personalizado</p> |
 
 {style="table-layout:auto"}
 
@@ -686,7 +682,7 @@ Analisa diferentes partes de um URL, incluindo protocolo, host, caminho ou parâ
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
 |---|---|---|:---:|---|
-| <ul><li>Sequência de caracteres</li></ul> | <ul><li>Campo de sing</li><li>Opção de análise<ul><li>Obter protocolo</li><li>Obter host</li><li>Obter caminho</li><li>Obter valor de consulta<ul><li>Parâmetro de consulta</li></ul></li><li>Obter valor de hash</li></ul></li></ul></li></ul> | <p>N/D</p> | <p>5</p> | <p>Novo campo personalizado</p> |
+| <ul><li>Sequência de caracteres</li></ul> | <ul><li>Campo único</li><li>Opção de análise<ul><li>Obter protocolo</li><li>Obter host</li><li>Obter caminho</li><li>Obter valor de consulta<ul><li>Parâmetro de consulta</li></ul></li><li>Obter valor de hash</li></ul></li></ul></li></ul> | <p>N/D</p> | <p>5</p> | <p>Novo campo personalizado</p> |
 
 {style="table-layout:auto"}
 

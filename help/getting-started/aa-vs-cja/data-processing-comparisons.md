@@ -2,32 +2,27 @@
 title: Comparar o processamento de dados entre os recursos de relatório do Adobe Analytics e do CJA
 description: Entender as diferenças no processamento de dados para os vários recursos de relatório
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 80d0b95f3bc3d785d9ca7e4b50aa1bd8440373c2
+source-git-commit: d075f3d2b4436c668010e09c6d1ac3191edac241
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 91%
+source-wordcount: '1202'
+ht-degree: 75%
 
 ---
 
 # Compare o processamento de dados no Adobe Analytics e no Customer Journey Analytics.
 
-<!--
+Geralmente, é necessário poder processar dados antes que sejam úteis para relatórios. Você pode processar esses dados em várias etapas da jornada, desde a coleta de dados até a geração do relatório ou da visualização.
 
-You often need the ability to process data before it is useful for reporting. You can process that data at several stages in the journey that spans from collecting data to generating your report or visualization.
+No Adobe Analytics, a maior parte desse processamento de dados ocorre imediatamente após a coleta dos dados. Funções como Regras VISTA, Regras de processamento, Regras de processamento de canais de marketing estão disponíveis para oferecer suporte a isso **processamento de tempo de coleta**.
+Os dados são armazenados e, no momento do relatório, é possível aplicar processamento adicional. Por exemplo, detalhe dimensões, aplique a segmentação ou selecione um modelo de atribuição diferente. Essa **processamento de tempo do relatório** acontece em tempo real.
 
-In Adobe Analytics most of that processing of data occurs immediately after collecting the data. Functionalties like VISTA Rules, Processing Rules, Marketing Channels Processing Rules are available to support this **collection-time processing**. 
-The data is then stored and at report time you can apply additional processing. For example, break down dimensions, apply segmentation, or  select a different attribution model. This **report-time processing** happens on the fly. 
+No Adobe Analytics, o processamento no tempo do relatório geralmente representa uma quantidade menor de processamento do que o que acontece no momento da coleta.
 
-In Adobe Analytics, report-time processing commonly represents a smaller amount of processing  than what happens at collection-time.
+![Processamento de tempo de coleta do Adobe Analytics](../assets/aa-processing.png)
 
-![Adobe Analytics collection-time processing](../assets/aa-processing.png)
+Por outro lado, o Customer Journey Analytics (CJA) é projetado para exigir processamento de tempo de coleta inicial mínimo antes que os dados sejam organizados e armazenados. A arquitetura subjacente do CJA é mais projetada para funcionar com os dados armazenados no momento do relatório e oferece sua poderosa funcionalidade de processamento de tempo de relatório não apenas no Workspace, mas também, mais importante ainda, por meio da definição de [componentes](/help/data-views/component-settings/overview.md) e [campos derivados](/help/data-views/derived-fields/derived-fields.md) em suas Visualizações de dados.
 
-In contrast, Customer Journey Analytics (CJA) is designed to require minimal upfront collection-time processing before data being is organized and stored. The underlying architecture of CJA is more designed to work with the stored data at report-time and offers its powerful report-time processing functionality not only in  Workspace but also, even more importantly, through the definition of components in your Data Views. 
-
-![CJA report-time processing](../assets/cja-processing.png)
-
--->
-
+![Processamento no tempo do relatório CJA](../assets/cja-processing.png)
 
 Entender as diferenças no processamento de dados para os vários recursos de relatório pode ser útil para compreender quais métricas estão disponíveis, onde e por que elas podem ser diferentes.
 
@@ -69,6 +64,6 @@ As etapas de processamento de dados executadas para o Adobe e o CJA e o tempo de
 | [Attribution IQ](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=pt-BR) do Core AA | <ul><li>Regras de processamento</li><li>Regras VISTA</li><li>Definição de visita (consulte a observação)</li><li>Análise entre dispositivos (consulte a observação)</li></ul> | <ul><li>Regras de canal de marketing no nível de ocorrência (consulte a observação)</li><li>Regras de canal de marketing no nível da visita (consulte a observação) Lógica de atribuição</li><li>Lógica de segmento</li><li>Métricas calculadas</li></ul> |  | <ul><li>O CDA exige o uso de conjuntos de relatórios virtuais com processamento de tempo de relatório.</li><li>O Attribution IQ no Core Analytics usa canais de marketing que são totalmente derivados no momento do relatório (ou seja, valores médios derivados).</li><li>O Attribution IQ usa uma definição de visita de tempo de processamento, exceto quando usada em um VRS de processamento de tempo de relatório.</li></ul> |
 | Conjuntos de relatórios virtuais do Core AA com [processamento de tempo do relatório](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=pt-BR) (VRS RTP) | <ul><li>Regras de processamento</li><li>Regras VISTA</li><li>[Análise entre dispositivos](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=pt-BR)</li></ul> | <ul><li>Definição de visita</li><li>Lógica de atribuição</li><li>Lógica de segmento</li><li>Métricas calculadas</li><li>Outras configurações de VRS RTP</li></ul> | <ul><li>Regras de canal de marketing no nível da ocorrência</li><li>Regras de canal de marketing no nível da visita</li></ul> | <ul><li>Consulte a [documentação](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=pt-BR) do VRS RTP.</li></ul> |
 | Conjunto de dados com base no [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR) no data lake da AEP | <ul><li>Regras de processamento</li><li>Regras VISTA</li><li>Regras de canal de marketing no nível da ocorrência</li><li>Compilação em campo (consulte a observação)</li></ul> |  | <ul><li>[Regras de canal de marketing no nível da visita](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/marketing-channels.html?lang=pt-BR)</li><li>Lógica da visita</li><li>Lógica de atribuição</li><li>Lógica de filtro</li></ul> | <ul><li>Deve aplicar sua própria lógica de filtro e métricas calculadas</li><li>A compilação em campo cria um conjunto de dados compilado separado, além do conjunto criado pelo Conector de origem do Analytics.</li></ul> |
-| Relatórios do [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=pt-BR) | <ul><li>Implementado como parte da coleta de dados do Adobe Experience Platform</li></ul> | <ul><li>Definição de sessão</li><li>Configurações de [visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=pt-BR)<li>Lógica de atribuição</li><li>Métricas calculadas</li><li>Lógica de filtro</li></ul> | <ul><li>Regras de canal de marketing no nível da visita</li></ul> | <ul><li>Deve usar um conjunto de dados compilado para aproveitar a compilação em campo.</li></ul> |
+| Relatórios do [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=pt-BR) | <ul><li>Implementado como parte da coleta de dados do Adobe Experience Platform</li></ul> | <ul><li>Definição de sessão</li><li>Configurações de [visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=pt-BR)<li>Lógica de atribuição</li><li>Métricas calculadas</li><li>Lógica de filtro</li></ul> | <ul><li>Regras de canal de marketing no nível da visita</li></ul> | <ul><li>É necessário usar conjuntos de dados compilados para aproveitar as análises entre canais.</li></ul> |
 
 {style="table-layout:auto"}
