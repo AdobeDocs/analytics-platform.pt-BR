@@ -6,9 +6,9 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 38f1e711ef0033e6e8492af992477f679de818a9
+source-git-commit: b7338c66ba3f78bd082e6d8da43b91b5517f48ac
 workflow-type: tm+mt
-source-wordcount: '3281'
+source-wordcount: '3265'
 ht-degree: 9%
 
 ---
@@ -17,42 +17,42 @@ ht-degree: 9%
 
 {{release-limited-testing}}
 
-Os campos derivados são um aspecto importante da funcionalidade de relatório em tempo real no Customer Journey Analytics (CJA). Um campo derivado (personalizado) permite definir (geralmente complexo) manipulações de dados dinamicamente, por meio de um construtor de regras personalizável. Em seguida, você pode usar esse campo derivado como um componente (métrica ou dimensão) no [Workspace](../../analysis-workspace/home.md) ou ainda defina mais como um componente em [Exibição de dados](../data-views.md).
+Os campos derivados são um aspecto importante da funcionalidade de relatório em tempo real no Customer Journey Analytics (CJA). Um campo derivado permite definir (muitas vezes complexas) manipulações de dados dinamicamente, por meio de um construtor de regras personalizável. Em seguida, você pode usar esse campo derivado como um componente (métrica ou dimensão) no [Workspace](../../analysis-workspace/home.md) ou ainda defina mais como um componente em [Exibição de dados](../data-views.md).
 
 Campos derivados podem economizar uma quantidade significativa de tempo e esforço, em comparação com a transformação ou manipulação de seus dados em outros locais fora do CJA. Tal como [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR), [Distiller de dados](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)ou em seus próprios processos de Extrair carga de transformação (ETL)/Extrair transformação de carga (ELT).
 
-Os campos derivados são definidos como campos personalizados dentro de [Visualizações de dados](../data-views.md), são baseadas em um conjunto de funções definidas como regras e aplicadas aos campos padrão e/ou de esquema disponíveis.
+Os campos derivados são definidos em [Visualizações de dados](../data-views.md), são baseadas em um conjunto de funções definidas como regras e aplicadas aos campos padrão e/ou de esquema disponíveis.
 
 Os casos de uso de exemplo são:
 
-- Defina um campo de Nome de página personalizado que corrija valores de nome de página coletados inadequados para corrigir valores de nome de página.
+- Defina um campo de Nome de página derivado que corrija valores de nome de página coletados inadequados para corrigir valores de nome de página.
 
-- Defina um campo de Canal de marketing personalizado que determine o canal de marketing apropriado com base em uma ou mais condições (por exemplo, parâmetro de URL, URL da página, nome da página).
+- Defina um campo derivado de Canal de marketing que determine o canal de marketing apropriado com base em uma ou mais condições (por exemplo, parâmetro de URL, URL da página, nome da página).
 
-## Interface de campo personalizada
+## Interface de campo derivado
 
-Ao criar ou editar um campo personalizado, use a interface de campo personalizado.
+Ao criar ou editar um campo derivado, use a interface de campo derivada.
 
-![Caixa de diálogo Campo personalizado](assets/custom-field-dialog.png)
+![Caixa de diálogo Campo derivado](assets/derived-field-dialog.png)
 
 
 |  | Nome | Descrição |
 |---------|----------|--------|
 | 1 | **Seletor** | Use a área do seletor para selecionar, arrastar e soltar ![Função](assets/Smock_Function_18_N.svg) ,![Ícone do modelo de função](assets/Smock_FileTemplate_18_N.svg) template de função,![Ícone do campo Esquema](assets/Smock_Folder_18_N.svg) campo de esquema ou![Ícone de campo padrão](assets/Smock_DragHandle_18_N.svg)campo padrão no construtor de regras. <br/>Use o menu suspenso para selecionar entre [!UICONTROL Funções], [!UICONTROL Modelos de funções], [!UICONTROL Campos de esquema]e [!UICONTROL Campos padrão].<br/>Você pode pesquisar por função, templates de função, schema e campos padrão usando a variável ![Ícone de Pesquisa](assets/Smock_Search_18_N.svg) Caixa de pesquisa. <br/>Você pode filtrar a lista de objetos selecionados ao selecionar ![Ícone Filtro](assets/Smock_Filter_18_N.svg) Filtre e especifique filtros na [!UICONTROL Filtrar campos por] caixa de diálogo. Você pode remover filtros facilmente usando ![Ícone Fechar](assets/CrossSize75.svg) para cada filtro. |
-| 2 | **Construtor de regras** | Você cria seu campo personalizado sequencialmente usando uma ou mais regras. Uma regra é uma implementação específica de uma função e, portanto, sempre está associada a apenas uma função. Você cria uma regra arrastando e soltando uma função no construtor de regras. O tipo de função determina a interface da regra.<br/>Consulte a [Interface de regras](#rule-interface) para obter mais informações. <br/>Você pode inserir uma função no início, no fim ou entre as regras já disponíveis no Construtor de regras. A última regra no construtor de regras determina a saída final do campo personalizado. |
-| 3 | **[!UICONTROL ** Configurações de campo **]** | É possível nomear e descrever o campo personalizado e inspecionar o tipo de campo. |
-| 4 | **[!UICONTROL ** Saída final **]** | Essa área mostra uma pré-visualização atualizada dos valores de saída, com base nos dados dos últimos 30 dias e nas alterações feitas no campo personalizado no construtor de regras. |
+| 2 | **Construtor de regras** | Você cria seu campo derivado sequencialmente usando uma ou mais regras. Uma regra é uma implementação específica de uma função e, portanto, sempre está associada a apenas uma função. Você cria uma regra arrastando e soltando uma função no construtor de regras. O tipo de função determina a interface da regra.<br/>Consulte a [Interface de regras](#rule-interface) para obter mais informações. <br/>Você pode inserir uma função no início, no fim ou entre as regras já disponíveis no construtor de regras. A última regra no construtor de regras determina a saída final do campo derivado. |
+| 3 | **[!UICONTROL ** Configurações de campo **]** | É possível nomear e descrever o campo derivado e inspecionar o tipo de campo. |
+| 4 | **[!UICONTROL ** Saída final **]** | Essa área mostra uma pré-visualização atualizada dos valores de saída, com base nos dados dos últimos 30 dias e nas alterações feitas no campo derivado no construtor de regras. |
 
 {style="table-layout:auto"}
 
-Ao acessar a interface do campo Personalizado pela primeira vez, a variável [!UICONTROL Começar com um modelo de campo] assistente é exibido.
+## Assistente de modelo de campo
 
-![Caixa de diálogo do assistente do modelo de campo personalizado](assets/field-template-dialog.png)
+Ao acessar a interface do campo Derivado pela primeira vez, a variável [!UICONTROL Começar com um modelo de campo] assistente é exibido.
 
 1. Selecione o template que melhor descreve o tipo de campo que você está tentando criar.
 2. Selecione o **[!UICONTROL ** Selecionar **]** para continuar.
 
-A caixa de diálogo Campo personalizado é preenchida com regras (e funções) necessárias ou úteis para o tipo de campo selecionado. Consulte [Modelos de funções](#function-templates) para obter mais informações sobre os modelos disponíveis.
+A caixa de diálogo Campo derivado é preenchida com regras (e funções) necessárias ou úteis para o tipo de campo selecionado. Consulte [Modelos de funções](#function-templates) para obter mais informações sobre os modelos disponíveis.
 
 ## Interface de regras
 
@@ -69,22 +69,22 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 
 {style="table-layout:auto"}
 
-## Criar um campo personalizado
+## Criar um campo derivado
 
 1. Selecione uma Exibição de dados existente ou crie uma Exibição de dados. Consulte [Visualizações de dados](../data-views.md) para obter mais informações.
 
 2. Selecione o **[!UICONTROL ** Componentes **]** da exibição de Dados.
 
-3. Selecionar **[!UICONTROL ** Criar campo personalizado **]** no painel esquerdo.
+3. Selecionar **[!UICONTROL ** Criar campo derivado **]** no painel esquerdo.
 
-4. Para definir seu campo personalizado, use a variável [!UICONTROL Criar campo personalizado] interface. Consulte [Interface de campo personalizada](#custom-field-interface).
+4. Para definir o campo derivado, use a variável [!UICONTROL Criar campo derivado] interface. Consulte [Interface de campo derivado](#derived-field-interface).
 
-   Para salvar o novo campo personalizado, selecione **[!UICONTROL ** Salvar **]**.
+   Para salvar o novo campo derivado, selecione **[!UICONTROL ** Salvar **]**.
 
-5. O novo campo personalizado é adicionado ao **[!UICONTROL ** Campos personalizados >**]** contêiner, como parte de **[!UICONTROL ** Campos de esquema **]** no painel à esquerda da visualização de dados.
+5. O novo campo derivado é adicionado ao **[!UICONTROL ** Campos derivados >**]** contêiner, como parte de **[!UICONTROL ** Campos de esquema **]** no painel à esquerda da visualização de dados.
 
 
-## Editar um campo personalizado
+## Editar um campo derivado
 
 1. Selecione uma visualização de Dados existente. Consulte [Visualizações de dados](../data-views.md) para obter mais informações.
 
@@ -92,19 +92,19 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 
 3. Selecionar **[!UICONTROL ** Campos de esquema **]** na guia no [!UICONTROL Conexão] painel à esquerda.
 
-4. Selecionar **[!UICONTROL ** Campos personalizados >**]** contêiner.
+4. Selecionar **[!UICONTROL ** Campos derivados >**]** contêiner.
 
-5. Passe o mouse sobre o campo personalizado que deseja editar e selecione ![Ícone Editar](assets/Smock_Edit_18_N.svg).
+5. Passe o mouse sobre o campo derivado que deseja editar e selecione ![Ícone Editar](assets/Smock_Edit_18_N.svg).
 
-6. Para editar seu campo personalizado, use o [!UICONTROL Editar campo personalizado] interface. Consulte [Interface de campo personalizada](#custom-field-interface).
+6. Para editar seu campo derivado, use a variável [!UICONTROL Editar campo derivado] interface. Consulte [Interface de campo derivado](#derived-field-interface).
 
-   - Selecionar **[!UICONTROL ** Salvar **]** para salvar o campo personalizado atualizado.
+   - Selecionar **[!UICONTROL ** Salvar **]** para salvar o campo derivado atualizado.
 
-   - Selecionar **[!UICONTROL ** Cancelar **]** para cancelar qualquer alteração feita no campo personalizado.
+   - Selecionar **[!UICONTROL ** Cancelar **]** para cancelar as alterações feitas no campo derivado.
 
-   - Selecionar **[!UICONTROL ** Salvar como **]** para salvar o campo personalizado como um novo campo personalizado. O novo campo personalizado tem o mesmo nome do campo personalizado editado original com `(copy)` adicionado a ele.
+   - Selecionar **[!UICONTROL ** Salvar como **]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome do campo derivado editado original com `(copy)` adicionado a ele.
 
-## Excluir um campo personalizado
+## Excluir um campo derivado
 
 1. Selecione uma visualização de Dados existente. Consulte [Visualizações de dados](../data-views.md) para obter mais informações.
 
@@ -112,20 +112,20 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 
 3. Selecionar **[!UICONTROL ** Campos de esquema **]** em [!UICONTROL Conexão] painel.
 
-4. Selecionar **[!UICONTROL ** Campos personalizados >**]** contêiner.
+4. Selecionar **[!UICONTROL ** Campos derivados >**]** contêiner.
 
-5. Passe o mouse sobre o campo personalizado que deseja excluir e selecione ![Ícone Editar](assets/Smock_Edit_18_N.svg).
+5. Passe o mouse sobre o campo derivado que deseja excluir e selecione ![Ícone Editar](assets/Smock_Edit_18_N.svg).
 
-6. Em Uso **[!UICONTROL ** Editar campo personalizado **]** selecione Excluir.
+6. Em Uso **[!UICONTROL ** Editar campo derivado **]** selecione Excluir.
 
-   A [!UICONTROL Excluir componente] solicita que você confirme a exclusão. Considere qualquer referência externa que possa existir ao campo personalizado fora da exibição Dados.
+   A [!UICONTROL Excluir componente] solicita que você confirme a exclusão. Considere qualquer referência externa que possa existir no campo derivado fora da exibição Dados.
 
-   - Selecionar **[!UICONTROL ** Continuar **]** para excluir o campo personalizado.
+   - Selecionar **[!UICONTROL ** Continuar **]** para excluir o campo derivado.
 
 
 ## Modelos de função
 
-Para criar rapidamente um campo personalizado para casos de uso específicos, os modelos de função estão disponíveis. Esses templates de função podem ser acessados na área Seletor na interface do campo Personalizado ou são apresentados após o primeiro uso na [!UICONTROL Começar com um modelo de campo] assistente.
+Para criar rapidamente um campo derivado para casos de uso específicos, os templates de função estão disponíveis. Esses templates de função podem ser acessados na área Seletor na interface de campo Derivado ou são apresentados após o primeiro uso no [!UICONTROL Começar com um modelo de campo] assistente.
 
 
 ### Canais de marketing
@@ -163,9 +163,9 @@ Para cada função suportada, localize os detalhes abaixo em:
    - saída.
 
 - casos de utilização, incluindo:
-   - dados antes de definir o campo personalizado
-   - como definir o campo personalizado
-   - dados após definir o campo personalizado
+   - dados antes de definir o campo derivado
+   - como definir o campo derivado
+   - dados após definir o campo derivado
 
 - restrições (opcional)
 
@@ -174,7 +174,7 @@ Para cada função suportada, localize os detalhes abaixo em:
 
 ### [!DNL Concatenate]
 
-Combina dois ou mais campos, campos personalizados ou valores inseridos pelo usuário em um único campo com delimitadores definidos.
+Combina dois ou mais campos, campos derivados ou valores inseridos pelo usuário em um único campo com delimitadores definidos.
 
 +++ Detalhes
 
@@ -182,7 +182,7 @@ Combina dois ou mais campos, campos personalizados ou valores inseridos pelo usu
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
 |---|---|---|:--:|---|
-| <p>Sequência de caracteres</p> | <ul><li>Dois ou mais valores para combinar<ul><li>Campos</li><li>Valor derivado de uma regra anterior</li><li>Valor inserido pelo usuário</li></ul></li><li>Delimitadores<ul><li>Entrada ou seleção de um delimitador para cada valor</li></ul></li> </ul> | <p>N/D</p> | <p>2</p> | <p>Novo campo personalizado</p> |
+| <p>Sequência de caracteres</p> | <ul><li>Dois ou mais valores para combinar<ul><li>Campos</li><li>Valor derivado de uma regra anterior</li><li>Valor inserido pelo usuário</li></ul></li><li>Delimitadores<ul><li>Entrada ou seleção de um delimitador para cada valor</li></ul></li> </ul> | <p>N/D</p> | <p>2</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -228,15 +228,15 @@ O relatório desejado deve ter a seguinte aparência:
 
 {style="table-layout:auto"}
 
-### Campo personalizado {#concatenate-customfield}
+### Campo derivado {#concatenate-derivedfield}
 
-Você define um novo **[!UICONTROL ** Origem - Destino **]** campo personalizado. Você usa a variável **[!UICONTROL CONCATENADO]** para definir uma regra para concatenar a variável [!UICONTROL Original] e [!UICONTROL Destino] campos que usam `-` [!UICONTROL Delimitador].
+Você define um novo **[!UICONTROL ** Origem - Destino **]** campo derivado. Você usa a variável **[!UICONTROL CONCATENADO]** para definir uma regra para concatenar a variável [!UICONTROL Original] e [!UICONTROL Destino] campos que usam `-` [!UICONTROL Delimitador].
 
 ![[!DNL Concatenate] regra](assets/concatenate.png)
 
 ### Dados após {#concatenate-dataafter}
 
-| Origem - Destino<br/>(campo personalizado) |
+| Origem - Destino<br/>(campo derivado) |
 |---|
 | SLC-MCO |
 | SLC-LAX |
@@ -252,7 +252,7 @@ Você define um novo **[!UICONTROL ** Origem - Destino **]** campo personalizado
 
 ### [!DNL Case When]
 
-Aplica condições, com base em critérios definidos de um ou mais campos. Esses critérios são usados para definir os valores em um novo campo personalizado, com base na sequência das condições.
+Aplica condições, com base em critérios definidos de um ou mais campos. Esses critérios são usados para definir os valores em um novo campo derivado, com base na sequência das condições.
 
 +++ Detalhes
 
@@ -260,7 +260,7 @@ Aplica condições, com base em critérios definidos de um ou mais campos. Esses
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
 |---|---|---|:---:|---|
-| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data/Hora</li></ul> | <ul><li>Campos de entrada</li><li>Critérios</li></ul> | <p><u>Strings</u></p><ul><li>Igual a</li><li>Igual a qualquer termo</li><li>Contém a frase</li><li>Contém qualquer termo</li><li>Contém todos os termos</li><li>Começa com</li><li>Começa com qualquer termo</li><li>Termina com</li><li>Termina com qualquer termo</li><li>Não é igual</li><li>Não é igual a nenhum termo</li><li>Não contém a frase</li><li>Não contém nenhum termo</li><li>Não contém todos os termos</li><li>Não começa com</li><li>Não inicia com nenhum termo</li><li>Não termina com</li><li>Não termina com nenhum termo</li><li>Está definido</li><li>Não está definido</li></ul><p><u>Numérico</u></p><ul><li>Igual a</li><li>Não é igual</li><li>É maior que</li><li>É maior que ou igual a</li><li>É menor que</li><li>É menor que ou igual a</li><li>Está definido</li><li>Não está definido</li></ul><p><u>Datas</u></p><ul><li>Igual a</li><li>Não é igual</li><li>É posterior a</li><li>É posterior ou igual a</li><li>É antes</li><li>É anterior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul> | <p>5</p> | <p>Novo campo personalizado</p> |
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data/Hora</li></ul> | <ul><li>Campos de entrada</li><li>Critérios</li></ul> | <p><u>Strings</u></p><ul><li>Igual a</li><li>Igual a qualquer termo</li><li>Contém a frase</li><li>Contém qualquer termo</li><li>Contém todos os termos</li><li>Começa com</li><li>Começa com qualquer termo</li><li>Termina com</li><li>Termina com qualquer termo</li><li>Não é igual</li><li>Não é igual a nenhum termo</li><li>Não contém a frase</li><li>Não contém nenhum termo</li><li>Não contém todos os termos</li><li>Não começa com</li><li>Não inicia com nenhum termo</li><li>Não termina com</li><li>Não termina com nenhum termo</li><li>Está definido</li><li>Não está definido</li></ul><p><u>Numérico</u></p><ul><li>Igual a</li><li>Não é igual</li><li>É maior que</li><li>É maior que ou igual a</li><li>É menor que</li><li>É menor que ou igual a</li><li>Está definido</li><li>Não está definido</li></ul><p><u>Datas</u></p><ul><li>Igual a</li><li>Não é igual</li><li>É posterior a</li><li>É posterior ou igual a</li><li>É antes</li><li>É anterior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul> | <p>5</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -303,9 +303,9 @@ Caso seu site receba os seguintes eventos de exemplo, contendo Referenciador e U
 
 {style="table-layout:auto"}
 
-### Campo personalizado {#casewhen-uc1-customfield}
+### Campo derivado {#casewhen-uc1-derivedfield}
 
-Você define um novo `Marketing Channel` campo personalizado. Você usa a variável **[!UICONTROL CASO QUANDO]** para definir regras que criem valores para a com base em valores existentes para a variável `Page URL` e `Referring URL` campo.
+Você define um novo `Marketing Channel` campo derivado. Você usa a variável **[!UICONTROL CASO QUANDO]** para definir regras que criem valores para a com base em valores existentes para a variável `Page URL` e `Referring URL` campo.
 
 Observe o uso da função **[!UICONTROL ** ANÁLISE DE URL **]** para definir regras para buscar os valores de `Page Url` e `Referring Url` antes da **[!UICONTROL ** CASO QUANDO **]** são aplicadas.
 
@@ -359,9 +359,9 @@ Seu site coleta os seguintes valores para sua dimensão Métodos de descoberta d
 
 {style="table-layout:auto"}
 
-### Campo personalizado {#casewhen-uc2-customfield}
+### Campo derivado {#casewhen-uc2-derivedfield}
 
-Você define uma `Product Finding Methods (new)` campo personalizado. Você cria o seguinte **[!UICONTROL ** CASO QUANDO **]** regras no construtor de regras. Essas regras aplicam a lógica a todas as possíveis variações do antigo **[!UICONTROL ** Métodos para encontrar produtos **]** valores de campo para `search` e `browse` usando o **[!UICONTROL Contém a frase]** critério.
+Você define uma `Product Finding Methods (new)` campo derivado. Você cria o seguinte **[!UICONTROL ** CASO QUANDO **]** regras no construtor de regras. Essas regras aplicam a lógica a todas as possíveis variações do antigo **[!UICONTROL ** Métodos para encontrar produtos **]** valores de campo para `search` e `browse` usando o **[!UICONTROL Contém a frase]** critério.
 
 ![[!DNL Case When] regra 2](assets/case-when-2.png)
 
@@ -432,9 +432,9 @@ Seu relatório desejado deve ser semelhante a:
 | 21 |
 | 8 |
 
-### Campo personalizado {#casewhen-uc3-customfield}
+### Campo derivado {#casewhen-uc3-derivedfield}
 
-Você define uma `Trip Duration (bucketed)` campo personalizado. Você cria o seguinte **[!UICONTROL ** CASO QUANDO **]** no Construtor de regras. Essa regra aplica a lógica para agrupar o antigo **[!UICONTROL ** Duração do Percurso **]** valores de campo em três valores: `short trip`, `medium  trip`e `long trip`.
+Você define uma `Trip Duration (bucketed)` campo derivado. Você cria o seguinte **[!UICONTROL ** CASO QUANDO **]** no construtor de regras. Essa regra aplica a lógica para agrupar o antigo **[!UICONTROL ** Duração do Percurso **]** valores de campo em três valores: `short trip`, `medium  trip`e `long trip`.
 
 ![[!DNL Case When] artigo 3º](assets/case-when-3.png)
 
@@ -459,20 +459,22 @@ Você define uma `Trip Duration (bucketed)` campo personalizado. Você cria o se
 
 ## Limitações
 
-O CJA usa uma estrutura de contêiner aninhado flexível modelada após a Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR) (Experience Data Model) para sua funcionalidade. Esse modelo de contêiner, embora flexível por natureza, impõe algumas restrições ao usar o construtor de regras. O modelo de contêiner aninhado padrão usado pelo CJA é estruturado como ilustrado abaixo:
+O CJA usa uma estrutura de contêiner aninhada, modelada após a Adobe Experience Platform [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR) (Experience Data Model). Consulte [Contêineres](../create-dataview.md#containers) e [Filtrar contêineres](../../components/filters/filters-overview.md#filter-containers) para obter mais informações de fundo. Esse modelo de contêiner, embora flexível por natureza, impõe algumas restrições ao usar o construtor de regras.
+
+O CJA usa o seguinte modelo de contêiner padrão:
 
 <p align="center">
-<img src="./assets/containers.png" width="70%" valign="middle">
+<img src="./assets/containers.png" width="50%" valign="middle">
 </p>
 
-Consulte [Contêineres](../create-dataview.md#containers) e [Filtrar contêineres](../../components/filters/filters-overview.md#filter-containers) para obter mais informações de fundo.
 
-As restrições de contêiner a seguir se aplicam e são aplicadas quando _seleção_ e _definição_ valores.
+
+As restrições a seguir se aplicam e são aplicadas quando _seleção_ e _definição_ valores.
 
 |  | Limitações |
 |:---:|----|
 | **<span style='color: red'>A</span>** | Valores _select_ no mesmo [!UICONTROL If], [!UICONTROL Senão Se] construir (usando [!UICONTROL E] ou [!UICONTROL Ou]) em uma regra deve se originar do mesmo contêiner e pode ser de qualquer tipo (string ![String](assets/Smock_ABC_18_N.svg), numérico ![Numérico](assets/Smock_123_18_N.svg)e assim por diante). <br/>![Dependência A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Todos os valores _set_ em uma regra, deve ser do mesmo contêiner e ter o mesmo tipo ou um valor personalizado do mesmo tipo. <br/> ![Dependência B](assets/dependency-b.png) |
+| **<span style='color: red'>B</span>** | Todos os valores _set_ em uma regra deve ser do mesmo contêiner e ter o mesmo tipo ou um valor derivado do mesmo tipo. <br/> ![Dependência B](assets/dependency-b.png) |
 | **<span style='color: blue'>C</span>** | Os valores que você _select_ across [!UICONTROL If], [!UICONTROL Senão Se] construções na regra do _not_ têm de ser originários do mesmo contentor e têm _not_ têm de ser do mesmo tipo. <br/> ![Dependência C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
@@ -484,7 +486,7 @@ As restrições de contêiner a seguir se aplicam e são aplicadas quando _sele�
 
 ### [!DNL Find and Replace]
 
-Encontra todos os valores em um campo selecionado e substitui esses valores por um valor diferente em um novo campo personalizado.
+Encontra todos os valores em um campo selecionado e substitui esses valores por um valor diferente em um novo campo derivado.
 
 +++ Detalhes
 
@@ -492,7 +494,7 @@ Encontra todos os valores em um campo selecionado e substitui esses valores por 
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
 |---|---|---|:---:|---|
-| <p>Sequência de caracteres</p> | <ul><li><span>Critérios do campo &quot;Quando substituir&quot;</span></li><li><span>Valor do campo &quot;Substituir por&quot;</span><ul><li><span>Digitado pelo usuário</span></li><li><span>Campo separado</span></li></ul></li></ul> | <p><u>Strings</u></p><ul><li>Localizar tudo e substituir tudo</li></ul> | <p>1</p> | <p>Novo campo personalizado</p> |
+| <p>Sequência de caracteres</p> | <ul><li><span>Critérios do campo &quot;Quando substituir&quot;</span></li><li><span>Valor do campo &quot;Substituir por&quot;</span><ul><li><span>Digitado pelo usuário</span></li><li><span>Campo separado</span></li></ul></li></ul> | <p><u>Strings</u></p><ul><li>Localizar tudo e substituir tudo</li></ul> | <p>1</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -529,15 +531,15 @@ Você recebeu alguns valores malformados para seu relatório de canais de market
 
 {style="table-layout:auto"}
 
-### Campo personalizado {#findreplace-uc-customfield}
+### Campo derivado {#findreplace-uc-derivedfield}
 
-Você define uma `Email Marketing (updated)` campo personalizado. Você usa a variável **[!UICONTROL LOCALIZAR E SUBSTITUIR]** para definir uma regra para localizar e substituir todas as ocorrências de `email%20marketing` com `email marketing`.
+Você define uma `Email Marketing (updated)` campo derivado. Você usa a variável **[!UICONTROL LOCALIZAR E SUBSTITUIR]** para definir uma regra para localizar e substituir todas as ocorrências de `email%20marketing` com `email marketing`.
 
 ![[!DNL Find and Replace] regra](assets/find-and-replace.png)
 
 ### Dados após {#findreplace-uc-dataafter}
 
-| Marketing externo<br/>(campo personalizado) |
+| Marketing externo<br/>(campo derivado) |
 |----|
 | marketing por email |
 | marketing por email |
@@ -563,7 +565,7 @@ Define um conjunto de valores de pesquisa que são substituídos pelos valores c
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
 |---|---|---|:---:|---|
-| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Campo único</li><li>Arquivo de pesquisa<ul><li>Coluna-chave</li><li>Nova Coluna de Campo</li></ul></li></ul> | <p>N/D</p> | <p>5</p> | <p>Novo campo personalizado</p> |
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Campo único</li><li>Arquivo de pesquisa<ul><li>Coluna-chave</li><li>Nova Coluna de Campo</li></ul></li></ul> | <p>N/D</p> | <p>5</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -615,9 +617,9 @@ Você está coletando ID de hotel em uma dimensão, mas gostaria de criar uma di
 {style="table-layout:auto"}
 
 
-### Campo personalizado {#lookup-uc1-customfield}
+### Campo derivado {#lookup-uc1-derivedfield}
 
-Você define uma `Hotel Name` campo personalizado. Você usa a variável **[!UICONTROL ** PESQUISA **]** para definir uma regra na qual você possa pesquisar valores da variável **[!UICONTROL ** ID do hotel **]** e substitua por novos valores.
+Você define uma `Hotel Name` campo derivado. Você usa a variável **[!UICONTROL ** PESQUISA **]** para definir uma regra na qual você possa pesquisar valores da variável **[!UICONTROL ** ID do hotel **]** e substitua por novos valores.
 
 ![[!DNL Lookup] regra 1](assets/lookup-1.png)
 
@@ -650,9 +652,9 @@ Você coletou URLs em vez do nome amigável da página para várias páginas. Es
 
 {style="table-layout:auto"}
 
-### Campo personalizado {#lookup-uc2-customfield}
+### Campo derivado {#lookup-uc2-derivedfield}
 
-Você define uma `Page Name (updated)` campo personalizado. Você usa a variável **[!UICONTROL ** PESQUISA **]** para definir uma regra na qual você possa pesquisar valores de seus **[!UICONTROL ** Nome da página **]** e substitua por valores corretos atualizados.
+Você define uma `Page Name (updated)` campo derivado. Você usa a variável **[!UICONTROL ** PESQUISA **]** para definir uma regra na qual você possa pesquisar valores de seus **[!UICONTROL ** Nome da página **]** e substitua por valores corretos atualizados.
 
 ![[!DNL Lookup] regra 2](assets/lookup-2.png)
 
@@ -682,7 +684,7 @@ Analisa diferentes partes de um URL, incluindo protocolo, host, caminho ou parâ
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
 |---|---|---|:---:|---|
-| <ul><li>Sequência de caracteres</li></ul> | <ul><li>Campo único</li><li>Opção de análise<ul><li>Obter protocolo</li><li>Obter host</li><li>Obter caminho</li><li>Obter valor de consulta<ul><li>Parâmetro de consulta</li></ul></li><li>Obter valor de hash</li></ul></li></ul></li></ul> | <p>N/D</p> | <p>5</p> | <p>Novo campo personalizado</p> |
+| <ul><li>Sequência de caracteres</li></ul> | <ul><li>Campo único</li><li>Opção de análise<ul><li>Obter protocolo</li><li>Obter host</li><li>Obter caminho</li><li>Obter valor de consulta<ul><li>Parâmetro de consulta</li></ul></li><li>Obter valor de hash</li></ul></li></ul></li></ul> | <p>N/D</p> | <p>5</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -702,9 +704,9 @@ Você deseja usar somente o domínio de referência do URL de referência como p
 
 {style="table-layout:auto"}
 
-### Campo personalizado {#urlparse-uc1-customfield}
+### Campo derivado {#urlparse-uc1-derivedfield}
 
-Você define uma  `Referring Domain` campo personalizado. Você usa a variável **[!UICONTROL ** ANÁLISE DE URL **]** para definir uma regra para buscar o host do **URL de referência** e armazene no novo campo personalizado.
+Você define uma  `Referring Domain` campo derivado. Você usa a variável **[!UICONTROL ** ANÁLISE DE URL **]** para definir uma regra para buscar o host do **URL de referência** e armazene no novo campo derivado.
 
 ![[!DNL Url Parse] regra 1](assets/url-parse-1.png)
 
@@ -734,9 +736,9 @@ Você deseja usar o valor da variável `cid` de uma string de consulta em um URL
 
 {style="table-layout:auto"}
 
-### Campo personalizado {#urlparse-uc2-customfield}
+### Campo derivado {#urlparse-uc2-derivedfield}
 
-Você define uma `Query String CID` campo personalizado. Você usa a variável **[!UICONTROL ** ANÁLISE DE URL **]** para definir uma regra para buscar o valor do parâmetro da string de consulta no URL da página, especificando `cid` como parâmetro de consulta. O valor de saída é armazenado no novo campo personalizado.
+Você define uma `Query String CID` campo derivado. Você usa a variável **[!UICONTROL ** ANÁLISE DE URL **]** para definir uma regra para buscar o valor do parâmetro da string de consulta no URL da página, especificando `cid` como parâmetro de consulta. O valor de saída é armazenado no novo campo derivado.
 
 ![[!DNL Url Parse] regra 2](assets/url-parse-2.png)
 
