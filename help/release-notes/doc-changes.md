@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a4ff2b48a85730f6ded56f207b5cc1ece6a3d3ab
+source-git-commit: e0417d94c0d371aca3d10af7a25b0e346f8b2a8e
 workflow-type: tm+mt
-source-wordcount: '1705'
-ht-degree: 91%
+source-wordcount: '1741'
+ht-degree: 90%
 
 ---
 
@@ -19,6 +19,9 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 
 | Recurso | Descrição |
 | --- | --- |
+| **Maio de 2023** |  |
+| Visão geral do Analysis Workspace | Atualizado [Visão geral do Analysis Workspace](/help/analysis-workspace/home.md) para incluir informações de visão geral e links para o conteúdo relevante. |
+| Criar projetos | Criou um novo artigo que explica detalhadamente como [Criar projetos](/help/analysis-workspace/build-workspace-project/create-projects.md) no Analysis Workspace. |
 | **Abril de 2023** |  |
 | Vídeo sobre como usar filtros como dimensões | <p>Atualização do vídeo sobre o uso de filtros como dimensão. Este vídeo é vinculado pelo [Criar filtros](/help/components/filters/create-filters.md) página.</p> <p>Veja a seguir um link direto para o vídeo: [Usar filtros como dimensões no Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | Filtrar documentação | Adição de um artigo sobre o uso do [Construtor de filtros](/help/components/filters/filter-builder.md). <p>Documentação simplificada em [Criar filtros](/help/components/filters/create-filters.md) e [Visão geral dos Filtros](/help/components/filters/filters-overview.md).</p> |
