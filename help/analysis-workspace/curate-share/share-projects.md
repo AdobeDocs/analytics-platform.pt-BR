@@ -4,10 +4,10 @@ keywords: Compartilhamento no Analysis Workspace
 title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: cc475afebba5bd1cfcaf3b1471ce6d1316126a9d
+source-git-commit: dab154ce10b0b4f7fb2873d92a1ce9ceb7478b26
 workflow-type: tm+mt
-source-wordcount: '1770'
-ht-degree: 53%
+source-wordcount: '1798'
+ht-degree: 52%
 
 ---
 
@@ -125,7 +125,7 @@ Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-sha
 > 
 >* Os usuários com os quais você compartilha podem alterar o intervalo de datas do projeto. O intervalo de datas definido para o projeto é exibido por padrão.
 >
->* Um projeto pode se tornar inacessível se muitos usuários tentarem acessá-lo ao mesmo tempo.
+>* Um projeto pode se tornar inacessível se muitos usuários tentarem acessar um determinado link ao mesmo tempo. Por padrão, mais de 190 pessoas podem acessar um único link a cada 5 minutos. Se sua organização atingir esse limite, espere 5 minutos e tente acessar o link novamente.
 
 
 Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
