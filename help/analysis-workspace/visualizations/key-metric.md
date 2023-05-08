@@ -3,11 +3,11 @@ description: Use a visualização do resumo da métrica principal para comparar 
 title: Resumo da métrica principal
 feature: Visualizations
 role: User, Admin
-exl-id: c74e77ff-15d6-48f1-a845-85bdf3444c3a
-source-git-commit: fa86c113de8cf533e7b68df1aad7ac02aa60f7e8
-workflow-type: ht
-source-wordcount: '598'
-ht-degree: 100%
+exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
+source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+workflow-type: tm+mt
+source-wordcount: '600'
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ Essa visualização aborda uma variedade de casos de uso comuns, incluindo:
 
 1. Configure a visualização selecionando uma métrica, um intervalo de datas principal, um intervalo de datas de comparação e um segmento (se desejar):
 
-   ![](assets/key-metric-config.png)
+   ![configuração da métrica principal](assets/key-metric-config.png)
 
    | Configuração | Definição |
    | --- | --- |
@@ -46,7 +46,7 @@ Essa visualização aborda uma variedade de casos de uso comuns, incluindo:
    | **[!UICONTROL Intervalo de datas de comparação]** | O intervalo de datas no qual você deseja comparar o intervalo de datas principal. |
    | **[!UICONTROL Segmento (opcional)]** | Qualquer segmento em que você esteja interessado especificamente neste resumo. |
 
-   {style=&quot;table-layout:auto&quot;}
+   {style="table-layout:auto"}
 
 1. Clique em **[!UICONTROL Criar]**.
 
@@ -62,7 +62,7 @@ Observe que:
 
 * A partir daqui, você pode passar o mouse sobre os gráficos de linha para ver as estatísticas de dias individuais:
 
-![](assets/key-metric-output2.png)
+![estatísticas](assets/key-metric-output2.png)
 
 ## Configurações de visualização
 
@@ -89,7 +89,7 @@ Após criar a visualização, ainda é possível editar a configuração origina
 
 1. Clique no ícone de lápis no canto superior direito da visualização (ao lado do ícone de engrenagem de configurações).
 
-   ![](assets/edit-icon.png)
+   ![editar](assets/edit-icon.png)
 
    Você será levado de volta à visualização da configuração original.
 

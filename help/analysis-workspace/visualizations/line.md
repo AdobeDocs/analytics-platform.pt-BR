@@ -3,14 +3,18 @@ description: Use a visualização de linha para descrever conjuntos de dados com
 title: Linha
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 228578ceae27bb83645001fb959a614283dcca33
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 87%
+source-wordcount: '515'
+ht-degree: 86%
 
 ---
 
 # Linha
+
+>[!NOTE]
+>
+>A visualização de linha será exibida em breve [legendas inteligentes](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
 A visualização de linha representa as métricas que usam uma linha para mostrar como os valores são alterados em um período. Um gráfico de linha pode ser usado apenas quando o horário for usado como uma dimensão.
 
