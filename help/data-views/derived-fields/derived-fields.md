@@ -6,18 +6,25 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: b7338c66ba3f78bd082e6d8da43b91b5517f48ac
+badgeDerivedFields: label="New Feature" type="Positive"
+source-git-commit: 1aece0ac0873e2cf68bfe8b24725072ddf18ad30
 workflow-type: tm+mt
-source-wordcount: '3265'
-ht-degree: 9%
+source-wordcount: '3003'
+ht-degree: 8%
 
 ---
+
 
 # Campos derivados
 
 {{release-limited-testing}}
 
-Os campos derivados são um aspecto importante da funcionalidade de relatório em tempo real no Customer Journey Analytics (CJA). Um campo derivado permite definir (muitas vezes complexas) manipulações de dados dinamicamente, por meio de um construtor de regras personalizável. Em seguida, você pode usar esse campo derivado como um componente (métrica ou dimensão) no [Workspace](../../analysis-workspace/home.md) ou ainda defina mais como um componente em [Exibição de dados](../data-views.md).
+>[!WARNING]
+>
+>Atualizações finais pendentes podem ser exibidas [!UICONTROL Campo personalizado] em vez de [!UICONTROL Campo derivado] na interface do usuário.
+
+
+Os campos derivados são um aspecto importante da funcionalidade de relatório em tempo real no Customer Journey Analytics (CJA). Um campo derivado permite definir (muitas vezes complexas) manipulações de dados dinamicamente, por meio de um construtor de regras personalizável. Em seguida, você pode usar esse campo derivado como um componente (métrica ou dimensão) no [Workspace](../../analysis-workspace/home.md) ou defina ainda mais o campo derivado como um componente em [Exibição de dados](../data-views.md).
 
 Campos derivados podem economizar uma quantidade significativa de tempo e esforço, em comparação com a transformação ou manipulação de seus dados em outros locais fora do CJA. Tal como [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR), [Distiller de dados](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en)ou em seus próprios processos de Extrair carga de transformação (ETL)/Extrair transformação de carga (ELT).
 
@@ -47,12 +54,12 @@ Ao criar ou editar um campo derivado, use a interface de campo derivada.
 
 ## Assistente de modelo de campo
 
-Ao acessar a interface do campo Derivado pela primeira vez, a variável [!UICONTROL Começar com um modelo de campo] assistente é exibido.
+Ao acessar a interface do campo derivado pela primeira vez, a variável [!UICONTROL Começar com um modelo de campo] assistente é exibido.
 
 1. Selecione o template que melhor descreve o tipo de campo que você está tentando criar.
 2. Selecione o **[!UICONTROL ** Selecionar **]** para continuar.
 
-A caixa de diálogo Campo derivado é preenchida com regras (e funções) necessárias ou úteis para o tipo de campo selecionado. Consulte [Modelos de funções](#function-templates) para obter mais informações sobre os modelos disponíveis.
+A caixa de diálogo do campo derivado é preenchida com regras (e funções) necessárias ou úteis para o tipo de campo selecionado. Consulte [Modelos de funções](#function-templates) para obter mais informações sobre os modelos disponíveis.
 
 ## Interface de regras
 
@@ -63,7 +70,7 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 |  | Nome | Descrição |
 |---------|----------|--------|
 | A | **Nome da regra** | Por padrão, o nome da regra é **Regra X** (X referindo-se a um número de sequência). Para editar o nome de uma regra, selecione seu nome e digite o novo nome, por exemplo `Query Parameter`. |
-| B | **Nome da função** | O nome da função selecionada para a regra, por exemplo [!DNL URL PARSE]. Quando a função é a última na sequência de funções e determina os valores finais de saída, o nome da função é seguido por [!DNL FINAL OUTPUT], por exemplo [!DNL URL PARSE - FINAL OUTPUT]. <br/>Para mostrar um pop-up com mais informações sobre a função , selecione ![Ícone da Ajuda](assets/Smock_HelpOutline_18_N.svg). |
+| B | **Nome da função** | O nome da função selecionada para a regra, por exemplo [!DNL URL PARSE]. Quando a função é a última na sequência de funções e determina os valores finais de saída, o nome da função é seguido por [!DNL - FINAL OUTPUT], por exemplo [!DNL URL PARSE - FINAL OUTPUT]. <br/>Para mostrar um pop-up com mais informações sobre a função , selecione ![Ícone da Ajuda](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Descrição da regra** | Opcionalmente, é possível adicionar uma descrição a uma regra.<br/>Selecionar ![Ícone Mais](assets/More.svg), em seguida selecione **[!UICONTROL ** Adicionar descrição **]** para adicionar uma descrição ou **[!UICONTROL ** Editar descrição **]** para editar uma descrição existente.<br/>Use o editor para inserir uma descrição. Use a barra de ferramentas para formatar o texto (usando o seletor de estilos, negrito, itálico, sublinhado, direita, esquerda, centralizado, cor, lista de números, lista de marcadores) e adicionar links às informações externas. <br/>Para concluir a edição da descrição, clique fora do editor. |
 | D | **Área de função** | Define a lógica da função. A interface depende do tipo de função. Consulte [Referência de função](#function-reference) em informações detalhadas para cada uma das funções suportadas. |
 
@@ -81,7 +88,7 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 
    Para salvar o novo campo derivado, selecione **[!UICONTROL ** Salvar **]**.
 
-5. O novo campo derivado é adicionado ao **[!UICONTROL ** Campos derivados >**]** contêiner, como parte de **[!UICONTROL ** Campos de esquema **]** no painel à esquerda da visualização de dados.
+5. O novo campo derivado é adicionado ao [!UICONTROL Campos derivados >] contêiner, como parte de **[!UICONTROL ** Campos de esquema **]** no painel à esquerda da visualização de dados.
 
 
 ## Editar um campo derivado
@@ -125,7 +132,7 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 
 ## Modelos de função
 
-Para criar rapidamente um campo derivado para casos de uso específicos, os templates de função estão disponíveis. Esses templates de função podem ser acessados na área Seletor na interface de campo Derivado ou são apresentados após o primeiro uso no [!UICONTROL Começar com um modelo de campo] assistente.
+Para criar rapidamente um campo derivado para casos de uso específicos, os templates de função estão disponíveis. Esses templates de função podem ser acessados a partir da área do seletor na interface de campo derivada ou são apresentados após o primeiro uso no [!UICONTROL Começar com um modelo de campo] assistente.
 
 
 ### Canais de marketing
@@ -159,15 +166,15 @@ Para cada função suportada, localize os detalhes abaixo em:
    - tipo de dados de entrada: tipo de dados suportados,
    - entrada: valores possíveis para entrada,
    - operadores incluídos: operadores compatíveis com esta função (se houver),
-   - limite: número máximo de regras com essa função que você pode usar em um campo derivado,
+   - limite: número máximo de regras (com essa função) que você pode usar em um campo derivado,
    - saída.
 
 - casos de utilização, incluindo:
-   - dados antes de definir o campo derivado
-   - como definir o campo derivado
-   - dados após definir o campo derivado
+   - dados antes de definir o campo derivado,
+   - como definir o campo derivado,
+   - após definir o campo derivado.
 
-- restrições (opcional)
+- restrições (se aplicável).
 
 
 <!-- Concatenate -->
@@ -230,7 +237,7 @@ O relatório desejado deve ter a seguinte aparência:
 
 ### Campo derivado {#concatenate-derivedfield}
 
-Você define um novo **[!UICONTROL ** Origem - Destino **]** campo derivado. Você usa a variável **[!UICONTROL CONCATENADO]** para definir uma regra para concatenar a variável [!UICONTROL Original] e [!UICONTROL Destino] campos que usam `-` [!UICONTROL Delimitador].
+Você define um novo [!UICONTROL Origem - Destino] campo derivado. Você usa a variável [!UICONTROL CONCATENADO] para definir uma regra para concatenar a variável [!UICONTROL Original] e [!UICONTROL Destino] campos que usam `-` [!UICONTROL Delimitador].
 
 ![[!DNL Concatenate] regra](assets/concatenate.png)
 
@@ -269,30 +276,30 @@ Aplica condições, com base em critérios definidos de um ou mais campos. Esses
 
 Você deseja definir regras para identificar vários canais de marketing, aplicando lógica em cascata para definir um campo de canal de marketing para o valor correto:
 
-- Se o referenciador for de um mecanismo de pesquisa e a página tiver um valor de string de consulta, onde `cid` contém `ps_`, o canal de marketing deve ser identificado como um **Pesquisa paga**.
-- Se o referenciador for de um mecanismo de pesquisa e a página não tiver a string de consulta `cid`, o canal de marketing deve ser identificado como um **Pesquisa natural**.
-- Se uma página tiver um valor de sequência de consulta em que `cid` contém `em_`, o canal de marketing deve ser identificado como um **Email**.
-- Se uma página tiver um valor de sequência de consulta em que `cid` contém `ds_`, o canal de marketing deve ser identificado como um **Exibir anúncio**.
-- Se uma página tiver um valor de sequência de consulta em que `cid` contém `so_`, o canal de marketing deve ser identificado como um **Social pago**.
-- Se o referenciador for de um domínio de referência de twitter.com, facebook.com, linkedin.com ou tiktok.com, o canal de marketing deve ser identificado como um **Social natural**.
-- Se nenhuma das regras acima for correspondida, o canal de marketing deverá ser identificado como **Outro referenciador**.
+- Se o referenciador for de um mecanismo de pesquisa e a página tiver um valor de string de consulta, onde `cid` contém `ps_`, o canal de marketing deve ser identificado como um [!DNL *Pesquisa paga*].
+- Se o referenciador for de um mecanismo de pesquisa e a página não tiver a string de consulta `cid`, o canal de marketing deve ser identificado como um [!DNL *Pesquisa natural*].
+- Se uma página tiver um valor de sequência de consulta em que `cid` contém `em_`, o canal de marketing deve ser identificado como um [!DNL *Email*].
+- Se uma página tiver um valor de sequência de consulta em que `cid` contém `ds_`, o canal de marketing deve ser identificado como um [!DNL *Exibir anúncio*].
+- Se uma página tiver um valor de sequência de consulta em que `cid` contém `so_`, o canal de marketing deve ser identificado como um [!DNL *Social pago*].
+- Se o referenciador for de um domínio de referência de [!DNL twitter.com], [!DNL facebook.com], [!DNL linkedin.com]ou [!DNL tiktok.com], o canal de marketing deve ser identificado como um [!DNL *Social natural*].
+- Se nenhuma das regras acima for correspondida, o canal de marketing deverá ser identificado como [!DNL *Outro referenciador*].
 
-Caso seu site receba os seguintes eventos de exemplo, contendo Referenciador e URL da página, esses eventos devem ser identificados da seguinte maneira:
+Caso seu site receba os seguintes eventos de exemplo, contendo [!UICONTROL Referenciador] e [!UICONTROL URL da página], estes acontecimentos devem ser identificados do seguinte modo:
 
-| Evento  | Referenciador | URL da página | Canal de marketing |
+| [!DNL Event] | [!DNL Referrer] | [!DNL Page URL] | [!DNL Marketing Channel] |
 |:--:|----|----|----|
-| 1 | `https://facebook.com` | `https://site.com/home` | Social natural |
-| 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | Exibir |
-| 3 |  | `https://site.com/?cid=em_12345678` | Email |
-| 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | Pesquisa paga |
-| 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | Email |
-| 6 | `https://google.com` |  | Pesquisa natural |
+| 1 | `https://facebook.com` | `https://site.com/home` | [!DNL Natural Social] |
+| 2 | `https://abc.com` | `https://site.com/?cid=ds_12345678` | [!DNL Display] |
+| 3 |  | `https://site.com/?cid=em_12345678` | [!DNL Email] |
+| 4 | `https://google.com` | `https://site.com/?cid=ps_abc098765` | [!DNL Paid Search] |
+| 5 | `https://google.com` | `https://site.com/?cid=em_765544332` | [!DNL Email] |
+| 6 | `https://google.com` |  | [!DNL Natural Search] |
 
 {style="table-layout:auto"}
 
 ### Dados anteriores {#casewhen-uc1-databefore}
 
-| Referenciador | URL da página |
+| [!UICONTROL Referenciador] | [!DNL Page URL] |
 |----|----|
 | `https://facebook.com` | `https://site.com/home` |
 | `https://abc.com` | `https://site.com/?cid=ds_12345678` |
@@ -305,79 +312,79 @@ Caso seu site receba os seguintes eventos de exemplo, contendo Referenciador e U
 
 ### Campo derivado {#casewhen-uc1-derivedfield}
 
-Você define um novo `Marketing Channel` campo derivado. Você usa a variável **[!UICONTROL CASO QUANDO]** para definir regras que criem valores para a com base em valores existentes para a variável `Page URL` e `Referring URL` campo.
+Você define um novo `Marketing Channel` campo derivado. Você usa a variável [!UICONTROL CASO QUANDO] para definir regras que criem valores para a com base em valores existentes para a variável `Page URL` e `Referring URL` campo.
 
-Observe o uso da função **[!UICONTROL ** ANÁLISE DE URL **]** para definir regras para buscar os valores de `Page Url` e `Referring Url` antes da **[!UICONTROL ** CASO QUANDO **]** são aplicadas.
+Observe o uso da função [!UICONTROL ANÁLISE DE URL] para definir regras para buscar os valores de `Page Url` e `Referring Url` antes da [!UICONTROL CASO QUANDO] são aplicadas.
 
 ![[!DNL Case when] regra 1](assets/case-when-1.png)
 
 ### Dados após {#casewhen-uc1-dataafter}
 
-| Canal de marketing |
+| [!DNL Marketing Channel] |
 |----|
-| Social natural |
-| Exibir |
-| Email |
-| Pesquisa paga |
-| Email |
-| Pesquisa natural |
+| [!DNL Natural Social] |
+| [!DNL Display] |
+| [!DNL Email] |
+| [!DNL Paid Search] |
+| [!DNL Email] |
+| [!DNL Natural Search] |
 
 {style="table-layout:auto"}
 
 
 ## Caso de uso 2 {#casewhen-uc2}
 
-Você coletou várias variações diferentes da pesquisa na dimensão Métodos de descoberta de produto . Para entender o desempenho geral da pesquisa e navegação, você deve passar muito tempo combinando os resultados manualmente.
+Você coletou várias variações diferentes na pesquisa em seu [!DNL Product Finding Methods] dimensão. Para entender o desempenho geral da pesquisa e navegação, você deve passar muito tempo combinando os resultados manualmente.
 
-Seu site coleta os seguintes valores para sua dimensão Métodos de descoberta de produto . No final, todos esses valores indicam uma pesquisa.
+Seu site coleta os seguintes valores para seu [!DNL Product Finding Methods] dimensão. No final, todos esses valores indicam uma pesquisa.
 
 | Valor coletado | Valor real |
 |---|---|
-| pesquisar p13n_no | pesquisa |
-| search p13n_yes | pesquisa |
-| search refine p13n_no | pesquisa |
-| search refine p13n_yes | pesquisa |
-| search redirect p13n_yes | pesquisa |
-| redirecionamento de pesquisa | pesquisa |
+| [!DNL search p13n_no] | [!DNL search] |
+| [!DNL search p13n_yes] | [!DNL search] |
+| [!DNL search refine p13n_no] | [!DNL search] |
+| [!DNL search refine p13n_yes ] | [!DNL search] |
+| [!DNL search redirect p13n_yes] | [!DNL search] |
+| [!DNL search-redirect] | [!DNL search] |
 
 {style="table-layout:auto"}
 
 
 ### Dados anteriores {#casewhen-uc2-databefore}
 
-| Métodos para encontrar produtos |
+| [!DNL Product Finding Methods] |
 |----|
-| search p13_no |
-| search p13_yes |
-| navegar |
-| search refine p13_no |
-| search refine p13_yes |
-| navegar |
-| search redirect p13_yes |
-| redirecionamento de pesquisa |
-| navegar |
+| [!DNL search p13_no] |
+| [!DNL search p13_yes] |
+| [!DNL browse] |
+| [!DNL search refine p13_no] |
+| [!DNL search refine p13_yes] |
+| [!DNL browse] |
+| [!DNL search redirect p13_yes] |
+| [!DNL search-redirect] |
+| [!DNL browse] |
 
 {style="table-layout:auto"}
 
 ### Campo derivado {#casewhen-uc2-derivedfield}
 
-Você define uma `Product Finding Methods (new)` campo derivado. Você cria o seguinte **[!UICONTROL ** CASO QUANDO **]** regras no construtor de regras. Essas regras aplicam a lógica a todas as possíveis variações do antigo **[!UICONTROL ** Métodos para encontrar produtos **]** valores de campo para `search` e `browse` usando o **[!UICONTROL Contém a frase]** critério.
+Você define uma `Product Finding Methods (new)` campo derivado. Você cria o seguinte [!UICONTROL CASO QUANDO] regras no construtor de regras. Essas regras aplicam a lógica a todas as possíveis variações do antigo [!UICONTROL Métodos para encontrar produtos] valores de campo para `search` e `browse` usando o [!UICONTROL Contém a frase] critério.
 
 ![[!DNL Case When] regra 2](assets/case-when-2.png)
 
 ### Dados após {#casewhen-uc2-dataafter}
 
-| Métodos para encontrar produtos (novo) |
+| [!DNL Product Finding Methods (new)] |
 |----|
-| pesquisa |
-| pesquisa |
-| navegar |
-| pesquisa |
-| pesquisa |
-| navegar |
-| pesquisa |
-| pesquisa |
-| navegar |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
+| [!DNL search] |
+| [!DNL search] |
+| [!DNL browse] |
 
 {style="table-layout:auto"}
 
@@ -389,9 +396,9 @@ Como companhia de viagens, você gostaria de agrupar a duração da viagem para 
 Pressupostos:
 
 - A organização está coletando a duração do percurso em um campo numérico.
-- Eles gostariam de agrupar durações de 1 a 3 dias em um balde chamado &quot;curta viagem&quot;
-- Eles gostariam de agrupar durações de 4 a 7 dias em um balde chamado &quot;percurso médio&quot;
-- Eles gostariam de agrupar durações de mais de 8 dias em um balde chamado &quot;longa viagem&quot;
+- Eles gostariam de agrupar durações de 1 a 3 dias em um bucket chamado de[!DNL short trip]&#39;
+- Eles gostariam de agrupar durações de 4 a 7 dias em um bucket chamado de[!DNL medium trip]&#39;
+- Eles gostariam de agrupar durações de mais de 8 dias em um bucket chamado de[!DNL long trip]&#39;
 - 132 viagens foram reservadas por um período de 1 dia
 - 110 viagens foram reservadas por um período de 2 dias
 - 105 viagens foram reservadas por um período de três dias
@@ -407,17 +414,17 @@ Pressupostos:
 
 Seu relatório desejado deve ser semelhante a:
 
-| Tipo de duração da viagem | Reservas |
+| [!DNL Trip Duration Type] | [!DNL Bookings] |
 |----|---:|
-| trajeto médio | 358 |
-| curta viagem | 347 |
-| longa viagem | 241 |
+| [!DNL medium trip] | 358 |
+| [!DNL short trip] | 347 |
+| [!DNL long trip] | 241 |
 
 {style="table-layout:auto"}
 
 ### Dados anteriores {#casewhen-uc3-databefore}
 
-| Duração do Percurso |
+| [!DNL Trip Duration] |
 |---:|
 | 1 |
 | 12 |
@@ -434,27 +441,27 @@ Seu relatório desejado deve ser semelhante a:
 
 ### Campo derivado {#casewhen-uc3-derivedfield}
 
-Você define uma `Trip Duration (bucketed)` campo derivado. Você cria o seguinte **[!UICONTROL ** CASO QUANDO **]** no construtor de regras. Essa regra aplica a lógica para agrupar o antigo **[!UICONTROL ** Duração do Percurso **]** valores de campo em três valores: `short trip`, `medium  trip`e `long trip`.
+Você define uma `Trip Duration (bucketed)` campo derivado. Você cria o seguinte [!UICONTROL CASO QUANDO] no construtor de regras. Essa regra aplica a lógica para agrupar o antigo [!UICONTROL Duração do Percurso] valores de campo em três valores: `short trip`, `medium  trip`e `long trip`.
 
 ![[!DNL Case When] artigo 3º](assets/case-when-3.png)
 
 
 ### Dados após {#casewhen-uc3-dataafter}
 
-| Duração do Percurso (Classificada) |
+| [!DNL Trip Duration (bucketed)] |
 |---|
-| curta viagem |
-| longa viagem |
-| curta viagem |
-| trajeto médio |
-| trajeto médio |
-| longa viagem |
-| trajeto médio |
-| curta viagem |
-| curta viagem |
-| curta viagem |
-| longa viagem |
-| longa viagem |
+| [!DNL short trip] |
+| [!DNL long trip] |
+| [!DNL short trip] |
+| [!DNL medium trip] |
+| [!DNL medium trip] |
+| [!DNL long trip] |
+| [!DNL medium trip] |
+| [!DNL short trip] |
+| [!DNL short trip] |
+| [!DNL short trip] |
+| [!DNL long trip] |
+| [!DNL long trip] |
 
 
 ## Limitações
@@ -469,13 +476,13 @@ O CJA usa o seguinte modelo de contêiner padrão:
 
 
 
-As restrições a seguir se aplicam e são aplicadas quando _seleção_ e _definição_ valores.
+As restrições a seguir se aplicam e são aplicadas quando *seleção* e *definição* valores.
 
 |  | Limitações |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Valores _select_ no mesmo [!UICONTROL If], [!UICONTROL Senão Se] construir (usando [!UICONTROL E] ou [!UICONTROL Ou]) em uma regra deve se originar do mesmo contêiner e pode ser de qualquer tipo (string ![String](assets/Smock_ABC_18_N.svg), numérico ![Numérico](assets/Smock_123_18_N.svg)e assim por diante). <br/>![Dependência A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Todos os valores _set_ em uma regra deve ser do mesmo contêiner e ter o mesmo tipo ou um valor derivado do mesmo tipo. <br/> ![Dependência B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Os valores que você _select_ across [!UICONTROL If], [!UICONTROL Senão Se] construções na regra do _not_ têm de ser originários do mesmo contentor e têm _not_ têm de ser do mesmo tipo. <br/> ![Dependência C](assets/dependency-c.png) |
+| **<span style='color: red'>A</span>** | Valores *select* no mesmo [!UICONTROL If], [!UICONTROL Senão Se] construir (usando [!UICONTROL E] ou [!UICONTROL Ou]) em uma regra deve se originar do mesmo contêiner e pode ser de qualquer tipo (string ![String](assets/Smock_ABC_18_N.svg), numérico ![Numérico](assets/Smock_123_18_N.svg)e assim por diante). <br/>![Dependência A](assets/dependency-a.png) |
+| **<span style='color: red'>B</span>** | Todos os valores *set* em uma regra deve ser do mesmo contêiner e ter o mesmo tipo ou um valor derivado do mesmo tipo. <br/> ![Dependência B](assets/dependency-b.png) |
+| **<span style='color: blue'>C</span>** | Os valores que você *select* across [!UICONTROL If], [!UICONTROL Senão Se] construções na regra do *not* têm de ser originários do mesmo contentor e têm *not* têm de ser do mesmo tipo. <br/> ![Dependência C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -505,47 +512,47 @@ Você recebeu alguns valores malformados para seu relatório de canais de market
 
 **Relatório original**
 
-| Canais de marketing externos | Sessões |
+| [!DNL External Marketing Channels] | [!DNL Sessions] |
 |---|--:|
-| marketing por email | 500 |
-| email %20marketing | 24 |
+| [!DNL email marketing] | 500 |
+| [!DNL email %20marketing] | 24 |
 
 {style="table-layout:auto"}
 
 **Relatório preferencial**
 
-| Canais de marketing externos | Sessões |
+| [!DNL External Marketing Channels] | [!DNL Sessions] |
 |---|--:|
-| marketing por email | 524 |
+| [!DNL email marketing] | 524 |
 
 
 ### Dados anteriores {#findreplace-uc-databefore}
 
-| Marketing externo |
+| [!DNL External Marketing] |
 |----|
-| marketing por email |
-| email%20marketing |
-| marketing por email |
-| marketing por email |
-| email%20marketing |
+| [!DNL email marketing] |
+| [!DNL email%20marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email%20marketing] |
 
 {style="table-layout:auto"}
 
 ### Campo derivado {#findreplace-uc-derivedfield}
 
-Você define uma `Email Marketing (updated)` campo derivado. Você usa a variável **[!UICONTROL LOCALIZAR E SUBSTITUIR]** para definir uma regra para localizar e substituir todas as ocorrências de `email%20marketing` com `email marketing`.
+Você define um `Email Marketing (updated)` campo derivado. Você usa a variável [!UICONTROL LOCALIZAR E SUBSTITUIR] para definir uma regra para localizar e substituir todas as ocorrências de `email%20marketing` com `email marketing`.
 
 ![[!DNL Find and Replace] regra](assets/find-and-replace.png)
 
 ### Dados após {#findreplace-uc-dataafter}
 
-| Marketing externo<br/>(campo derivado) |
+| [!DNL External Marketing (updated)] |
 |----|
-| marketing por email |
-| marketing por email |
-| marketing por email |
-| marketing por email |
-| marketing por email |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
+| [!DNL email marketing] |
 
 {style="table-layout:auto"}
 
@@ -573,63 +580,63 @@ Define um conjunto de valores de pesquisa que são substituídos pelos valores c
 ## Caso de uso 1 {#lookup-uc1}
 
 Você tem um arquivo CSV que inclui uma coluna-chave para `hotelID` e uma ou mais colunas adicionais associadas à função `hotelID`: `city`, `rooms`, `hotel name`.
-Você está coletando ID de hotel em uma dimensão, mas gostaria de criar uma dimensão de Nome de hotel derivada do `hotelID` no arquivo CSV.
+Você está coletando [!DNL Hotel ID] em uma dimensão, mas deseja criar um [!DNL Hotel Name] derivada da `hotelID` no arquivo CSV.
 
 **Estrutura e conteúdo do arquivo CSV**
 
-| hotelID | city | salas | nome do hotel |
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
 |---|---|---:|---|
-| SLC123 | Salt Lake City | 40 | Centro SLC |
-| LAX342 | Los Angels | 60 | Aeroporto de LA |
-| SFO456 | São Francisco | 75 | Rua do mercado |
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
 
 {style="table-layout:auto"}
 
 **Relatório atual**
 
-| ID do hotel | Visualizações de produto |
+| [!DNL Hotel ID] | Visualizações de produto |
 |---|---:|
-| SLC123 | 200 |
-| LX342 | 198 |
-| SFO456 | 190 |
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
 
 {style="table-layout:auto"}
 
 
 **Relatório desejado**
 
-| Nome do hotel | Visualizações de produto |
+| [!DNL Hotel Name] | Visualizações de produto |
 |----|----:|
-| Centro SLC | 200 |
-| Aeroporto de LA | 198 |
-| Rua do mercado | 190 |
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
 
 {style="table-layout:auto"}
 
 ### Dados anteriores {#lookup-uc1-databefore}
 
-| ID do hotel |
+| [!DNL Hotel ID] |
 |----|
-| SLC123 |
-| LAX342 |
-| SFO456 |
+| [!DNL SLC123] |
+| [!DNL LAX342] |
+| [!DNL SFO456] |
 
 {style="table-layout:auto"}
 
 
 ### Campo derivado {#lookup-uc1-derivedfield}
 
-Você define uma `Hotel Name` campo derivado. Você usa a variável **[!UICONTROL ** PESQUISA **]** para definir uma regra na qual você possa pesquisar valores da variável **[!UICONTROL ** ID do hotel **]** e substitua por novos valores.
+Você define uma `Hotel Name` campo derivado. Você usa a variável [!UICONTROL PESQUISA] para definir uma regra na qual você possa pesquisar valores da variável [!UICONTROL ID do hotel] e substitua por novos valores.
 
 ![[!DNL Lookup] regra 1](assets/lookup-1.png)
 
 ### Dados após {#lookup-uc1-dataafter}
 
-| Nome do hotel |
+| [!DNL Hotel Name] |
 |----|
-| Centro SLC |
-| Aeroporto de LA |
-| Rua do mercado |
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
 
 {style="table-layout:auto"}
 
@@ -640,13 +647,13 @@ Você coletou URLs em vez do nome amigável da página para várias páginas. Es
 
 ### Dados anteriores {#lookup-uc2-databefore}
 
-| Nome da página |
+| [!DNL Page Name] |
 |---|
-| Página inicial |
-| Pesquisa de voo |
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
 | `http://www.adobetravel.ca/Hotel-Search` |
 | `https://www.adobetravel.com/Package-Search` |
-| Ofertas e contratos |
+| [!DNL Deals & Offers] |
 | `http://www.adobetravel.ca/user/reviews` |
 | `https://www.adobetravel.com.br/Generate-Quote/preview` |
 
@@ -654,21 +661,21 @@ Você coletou URLs em vez do nome amigável da página para várias páginas. Es
 
 ### Campo derivado {#lookup-uc2-derivedfield}
 
-Você define uma `Page Name (updated)` campo derivado. Você usa a variável **[!UICONTROL ** PESQUISA **]** para definir uma regra na qual você possa pesquisar valores de seus **[!UICONTROL ** Nome da página **]** e substitua por valores corretos atualizados.
+Você define uma `Page Name (updated)` campo derivado. Você usa a variável [!UICONTROL PESQUISA] para definir uma regra na qual você possa pesquisar valores de seus [!UICONTROL Nome da página] e substitua por valores corretos atualizados.
 
 ![[!DNL Lookup] regra 2](assets/lookup-2.png)
 
 ### Dados após {#lookup-uc2-dataafter}
 
-| Nome da página (atualizado) |
+| [!DNL Page Name (updated)] |
 |---|
-| Página inicial |
-| Pesquisa de voo |
-| Pesquisa de hotel |
-| Pesquisa de pacotes |
-| Ofertas e contratos |
-| Resenhas |
-| Gerar Cotação |
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
 
 +++
 
@@ -695,7 +702,7 @@ Você deseja usar somente o domínio de referência do URL de referência como p
 
 ### Dados anteriores {#urlparse-uc1-databefore}
 
-| URL de referência |
+| [!DNL Referring URL] |
 |----|
 | `https://www.google.com/` |
 | `https://duckduckgo.com/` |
@@ -706,29 +713,29 @@ Você deseja usar somente o domínio de referência do URL de referência como p
 
 ### Campo derivado {#urlparse-uc1-derivedfield}
 
-Você define uma  `Referring Domain` campo derivado. Você usa a variável **[!UICONTROL ** ANÁLISE DE URL **]** para definir uma regra para buscar o host do **URL de referência** e armazene no novo campo derivado.
+Você define uma  `Referring Domain` campo derivado. Você usa a variável [!UICONTROL ANÁLISE DE URL] para definir uma regra para buscar o host do [!UICONTROL URL de referência] e armazene no novo campo derivado.
 
 ![[!DNL Url Parse] regra 1](assets/url-parse-1.png)
 
 ### Dados após {#urlparse-uc1-dataafter}
 
-| Domínio de referência |
+| [!DNL Referrer Domain] |
 |----|
-| www.google.com |
-| duckduckgo.com |
-| t.co |
-| l.facebook.com |
+| [!DNL www.google.com] |
+| [!DNL duckduckgo.com] |
+| [!DNL t.co] |
+| [!DNL l.facebook.com] |
 
 {style="table-layout:auto"}
 
 
 ## Caso de uso 2 {#urlparse-uc2}
 
-Você deseja usar o valor da variável `cid` de uma string de consulta em um URL de página como parte da saída de um relatório de código de rastreamento derivado.
+Você deseja usar o valor da variável `cid` de uma sequência de consulta em um [!DNL Page URL] como parte da saída de um relatório de código de rastreamento derivado.
 
 ### Dados anteriores {#urlparse-uc2-databefore}
 
-| URL da página |
+| [!DNL Page URL] |
 |----|
 | `https://www.adobe.com/?cid=abc123` |
 | `https://www.adobe.com/?em=email1234&cid=def123` |
@@ -738,17 +745,17 @@ Você deseja usar o valor da variável `cid` de uma string de consulta em um URL
 
 ### Campo derivado {#urlparse-uc2-derivedfield}
 
-Você define uma `Query String CID` campo derivado. Você usa a variável **[!UICONTROL ** ANÁLISE DE URL **]** para definir uma regra para buscar o valor do parâmetro da string de consulta no URL da página, especificando `cid` como parâmetro de consulta. O valor de saída é armazenado no novo campo derivado.
+Você define uma `Query String CID` campo derivado. Você usa a variável [!UICONTROL ANÁLISE DE URL] para definir uma regra para buscar o valor do parâmetro da string de consulta na função [!UICONTROL URL da página] campo, especificação `cid` como parâmetro de consulta. O valor de saída é armazenado no novo campo derivado.
 
 ![[!DNL Url Parse] regra 2](assets/url-parse-2.png)
 
 ### Dados após {#urlparse-uc2-dataafter}
 
-| CID da string de consulta |
+| [!DNL Query String CID] |
 |----|
-| abc123 |
-| def123 |
-| xyz123 |
+| [!DNL abc123] |
+| [!DNL def123] |
+| [!DNL xyz123] |
 
 {style="table-layout:auto"}
 

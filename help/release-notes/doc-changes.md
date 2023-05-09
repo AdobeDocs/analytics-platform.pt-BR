@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e0417d94c0d371aca3d10af7a25b0e346f8b2a8e
+source-git-commit: d738b63b9d5fdc6ed01d6c9711953ea3af76f7cc
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 90%
+source-wordcount: '1748'
+ht-degree: 89%
 
 ---
 
@@ -22,8 +22,9 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | **Maio de 2023** |  |
 | Visão geral do Analysis Workspace | Atualizado [Visão geral do Analysis Workspace](/help/analysis-workspace/home.md) para incluir informações de visão geral e links para o conteúdo relevante. |
 | Criar projetos | Criou um novo artigo que explica detalhadamente como [Criar projetos](/help/analysis-workspace/build-workspace-project/create-projects.md) no Analysis Workspace. |
+| Campos derivados | Documentação sobre [campos derivados](../data-views/derived-fields/derived-fields.md) funcionalidade. |
 | **Abril de 2023** |  |
-| Vídeo sobre como usar filtros como dimensões | <p>Atualização do vídeo sobre o uso de filtros como dimensão. Este vídeo é vinculado pelo [Criar filtros](/help/components/filters/create-filters.md) página.</p> <p>Veja a seguir um link direto para o vídeo: [Usar filtros como dimensões no Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
+| Vídeo sobre como usar filtros como dimensões | Atualização do vídeo sobre o uso de filtros como dimensão. <p>Este vídeo é vinculado pelo [Criar filtros](/help/components/filters/create-filters.md) página.</p> <p>Veja a seguir um link direto para o vídeo: [Usar filtros como dimensões no Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | Filtrar documentação | Adição de um artigo sobre o uso do [Construtor de filtros](/help/components/filters/filter-builder.md). <p>Documentação simplificada em [Criar filtros](/help/components/filters/create-filters.md) e [Visão geral dos Filtros](/help/components/filters/filters-overview.md).</p> |
 | Atualização da documentação do painel Experimentação | Adição de uma seção em [interpretação de dimensões não aleatórias](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=en#non-randomized). |
 | Filtros do projeto (filtros ad hoc e rápidos) | Documentação simplificada sobre filtros de projeto e informações duplicadas removidas. As etapas para criar filtros ad hoc agora são combinadas com as etapas para [criação de filtros rápidos](/help/components/filters/quick-filters.md). |
