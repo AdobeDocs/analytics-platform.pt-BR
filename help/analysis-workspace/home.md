@@ -5,7 +5,7 @@ description: Visão geral dos recursos do Analysis Workspace
 feature: CJA Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
-source-git-commit: d2828173e802baf5dc598cef0383075e1203442a
+source-git-commit: e3c9db595b26b96c2079a770ede1bdd609f6de14
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 26%
@@ -31,7 +31,7 @@ A imagem a seguir e a tabela que a acompanha explicam algumas das principais ár
 | A | **Trilho à esquerda:** Contém guias para adicionar painéis, visualizações e componentes ao Analysis Workspace. Também contém o ícone do Dicionário de dados usado para abrir o Dicionário de dados. |
 | B | **Painel esquerdo:** Dependendo da guia que está selecionada no painel à esquerda, essa área contém painéis, visualizações ou componentes individuais. |
 | C | **Tela:** Essa é a área principal na qual você arrasta o conteúdo dos trilhos à esquerda para criar seu projeto. O projeto é atualizado dinamicamente à medida que você adiciona painéis, visualizações e componentes à tela. |
-| D | **Menu suspenso do Conjunto de relatórios:** Para cada painel no Analysis Workspace, o menu suspenso do conjunto de relatórios permite escolher o conjunto de relatórios que você deseja usar como fonte de dados. |
+| D | **Menu suspenso Exibição de dados:** Para cada painel no Analysis Workspace, o menu suspenso Exibição de dados permite escolher a exibição de dados que deseja usar como fonte de dados. |
 
 ## Recursos no Analysis Workspace {#analysis}
 
