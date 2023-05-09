@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: e9856269ee07b7119f75b98489b47e1f35f7cf5f
-workflow-type: ht
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -32,7 +32,7 @@ O Gerenciador de bloco de dados lista todos os blocos de dados presentes em uma 
 
 ## Classificar a lista de Blocos de dados
 
-Você pode classificar a lista de blocos de dados por uma coluna exibida. Por exemplo, é possível classificar a lista de blocos de dados por Conjuntos de relatórios, Filtros, Intervalo de datas e outras variáveis.
+Você pode classificar a lista de blocos de dados por uma coluna exibida. Por exemplo, você pode classificar a lista de bloqueios de dados por exibições de dados, Filtros, Intervalo de datas e outras variáveis.
 
 Para classificar a lista de blocos de dados, clique em um cabeçalho de coluna.
 
@@ -40,7 +40,7 @@ Para classificar a lista de blocos de dados, clique em um cabeçalho de coluna.
 
 ## Pesquisar a Lista de blocos de dados
 
-Use o campo Procurar para localizar qualquer item na tabela de blocos de dados. Por exemplo, você pode procurar métricas contidas nos blocos de dados ou no conjunto de relatórios. Também é possível pesquisar datas que estejam aparecendo nas colunas intervalo de datas, data de modificação ou data da última execução.
+Use o campo Procurar para localizar qualquer item na tabela de blocos de dados. Por exemplo, você pode procurar métricas contidas nos blocos de dados ou na visualização de dados. Também é possível pesquisar datas que estejam aparecendo nas colunas intervalo de datas, data de modificação ou data da última execução.
 
 ![imagem](./assets/image55.png)
 

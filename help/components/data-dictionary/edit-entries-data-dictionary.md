@@ -3,16 +3,17 @@ description: O dicionário de dados do Analysis Workspace permite que os usuári
 title: Editar entradas no Dicionário de dados
 feature: Components
 role: Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 70%
+ht-degree: 58%
 
 ---
 
 # Editar entradas de componente no dicionário de dados
 
-Os administradores do Customer Journey Analytics podem editar entradas de componentes no Dicionário de dados de um determinado Conjunto de relatórios. Todas as alterações feitas ficam visíveis para todos os usuários do Conjunto de relatórios.
+Os administradores do Customer Journey Analytics podem editar entradas de componentes no Dicionário de dados para uma determinada visualização de dados. Todas as alterações feitas ficam visíveis para todos os usuários da visualização de dados.
 
 Para editar um componente no Dicionário de dados:
 
@@ -24,7 +25,7 @@ Para editar um componente no Dicionário de dados:
 
    ![Visualização do administrador do Dicionário de dados](assets/data-dictionary-admin.png)
 
-1. Verifique se o conjunto de relatórios correto está selecionado no menu suspenso. Por padrão, o conjunto de relatórios em que você já está é exibido.
+1. Verifique se a exibição de dados correta está selecionada no menu suspenso. Por padrão, a visualização de dados em que você já está é exibida.
 
 1. (Opcional) No campo de pesquisa, comece a digitar o nome do componente que deseja editar.
 

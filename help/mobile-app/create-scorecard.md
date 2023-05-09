@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 7065215f89f964e7504f3e95996b352410b89779
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
-source-wordcount: '2370'
-ht-degree: 76%
+source-wordcount: '2363'
+ht-degree: 98%
 
 ---
 
@@ -55,9 +55,9 @@ Você pode acessar o modelo [!UICONTROL Cartão de pontuação para dispositivos
 
 Para implementar o modelo de Scorecard:
 
-1. Em **[!UICONTROL Propriedades]** (no painel direito), especifique um **[!UICONTROL Conjunto de relatórios do projeto]** cujos dados você deseja usar. Os conjuntos de relatórios são visualizações de dados no CJA.
+1. Em **[!UICONTROL Propriedades]** (no painel direito), especifique uma **[!UICONTROL Visualização de dados do projeto]** da qual você quer usar dados.
 
-   ![Seleção de conjunto de relatórios](assets/properties_save.png)
+   ![seleção da exibição de dados](assets/properties_save.png)
 
 1. Para adicionar um novo bloco ao Scorecard, arraste uma métrica do painel esquerdo e solte-a na zona **[!UICONTROL Arrastar e soltar métricas aqui]**. Também é possível inserir uma métrica entre dois blocos usando um fluxo de trabalho semelhante.
 
@@ -100,7 +100,7 @@ Para criar uma data de comparação, você pode selecionar entre predefinições
 
 ![Novo cartão de pontuação4](assets/new_score_card4.png)
 
-Se o intervalo de datas desejado ainda não tiver sido criado, será possível criar um novo clicando no ícone do calendário.
+Se o intervalo de datas desejado ainda não tiver sido criado, é possível criar um novo clicando no ícone do calendário.
 
 ![Novo cartão de pontuação5](assets/new_score_card5.png)
 
@@ -217,9 +217,9 @@ Da mesma forma, para remover um componente aplicado a todo o cartão de pontuaç
 
 ## Criar histórias de dados {#create-data-story}
 
-Uma história de dados é uma coleção de pontos de dados de suporte, contexto de negócios e métricas relacionadas criadas em torno de um tema ou métrica central.
+Uma história de dados é uma coleção de pontos de dados de suporte, contexto comercial e métricas relacionadas com base em um tema ou métrica central.
 
-Por exemplo, se você se concentrar no tráfego da Web, sua métrica mais importante pode ser visitas, mas você também pode estar interessado em novos visitantes, visitantes únicos e pode querer ver os dados detalhados por página da Web ou por que tipo de dispositivo o tráfego está vindo. As histórias de dados em projetos de cartões de pontuação móveis permitem que você coloque suas métricas mais importantes na frente e no centro, ao mesmo tempo em que conta toda a história por trás das métricas com vários slides de detalhes.
+Por exemplo, se focar no tráfego na Web, sua métrica mais importante pode ser visitas, mas você também pode se interessar em novos visitantes ou visitantes únicos, e querer ver os dados detalhados por página da Web ou de que tipo de dispositivo o tráfego vem. As histórias de dados em projetos de cartões de pontuação móveis permitem colocar suas métricas mais importantes em primeiro plano ao mesmo tempo em que conta toda a história por trás das métricas com vários slides de detalhes.
 
 Assista ao vídeo para saber mais sobre como criar histórias de dados em projetos de cartões de pontuação móveis no Analysis Workspace.
 
@@ -230,53 +230,53 @@ Assista ao vídeo para saber mais sobre como criar histórias de dados em projet
 Crie sua história de dados adicionando vários slides de detalhes a um bloco.
 
 1. Comece com um projeto de cartão de pontuação móvel.
-1. Selecione um bloco a partir do qual deseja criar uma história.
+1. Selecione um bloco do qual deseja criar uma história.
    ![Criar uma história de dados](assets/data-story1.png)
    ![Criar ícones de história de dados](assets/create-data-story.png){width=".50%"}
 1. Adicione slides para criar sua história de dados. Seu primeiro slide é gerado por padrão.
-Para adicionar novos slides, passe o mouse sobre ele ou clique em um slide, em seguida, selecione uma das opções disponíveis:
-   * Toque no sinal + para criar um novo slide.
-   * Toque no ícone de duplicação para duplicar o slide existente.
-1. Se você criar um slide em branco, arraste e solte os componentes do painel esquerdo ou escolha um layout para preencher automaticamente o slide com os dados do bloco.
+Para adicionar novos slides, passe o mouse sobre ou clique em um slide e selecione uma das opções disponíveis:
+   * Toque no sinal de + para criar um novo slide.
+   * Toque no ícone de duplicação para duplicar o slide já existente.
+1. Se você criar um slide em branco, arraste e solte componentes do painel esquerdo ou escolha um layout para preencher automaticamente o slide com os dados do bloco.
    ![Criar uma história de dados](assets/data-story2.png)
 Para excluir um slide, toque no ícone de lixeira.
 
 ### Personalizar uma história de dados {#customize-data-story}
 
-As histórias de dados permitem que você personalize tudo para compartilhar informações que deseja compartilhar e excluir tudo o que não é necessário. É possível personalizar blocos e slides individuais para adicionar filtros, mostrar detalhamentos, alterar o layout e alterar as visualizações.
+As histórias de dados permitem personalizar tudo. Assim você pode compartilhar as informações que deseja e excluir tudo que não precisa. Você pode personalizar blocos e slides individuais para adicionar filtros, mostrar detalhamentos, alterar o layout e as visualizações.
 
 **Para personalizar blocos**
 
-1. Toque em um bloco. O bloco selecionado é contornado em azul, e o painel direito mostra as propriedades do Bloco.
-1. Alterar o título, o tipo de gráfico e outras opções de bloco.
-1. Arraste um componente até o bloco.
+1. Toque em um bloco. O bloco selecionado será contornado em azul e o painel direito mostrará as propriedades do bloco.
+1. Altere o título, o tipo de gráfico e outras opções do bloco.
+1. Arraste um componente para o bloco.
    ![Criar uma história de dados](assets/data-story3.png)
-Quando você arrasta e solta um componente, como uma visualização, em um bloco, o componente é aplicado a todos os slides da matéria de dados.
+Ao arrastar e soltar um componente, como uma visualização em um bloco, o componente é aplicado a todos os slides da história de dados.
 1. Para aplicar uma alteração somente ao título, mantenha pressionada a tecla Shift para aplicar a alteração.
    ![Criar uma história de dados](assets/data-story4.png)
 
 >[!NOTE]
 >Os slides herdam componentes do bloco, mas os blocos não herdam componentes dos slides.
 
-**Para personalizar slides individuais**
+**Como personalizar slides individuais**
 
-É possível alterar a visualização de slides individuais em uma história de dados. Por exemplo, é possível alterar uma barra horizontal para um gráfico de rosca de um slide específico. Também é possível alterar o layout. Consulte [Personalizar slides de detalhes](#customize-detail-slide).
+Você pode alterar a visualização de slides individuais em uma história de dados. Por exemplo, é possível alterar um gráfico de barras horizontais para um gráfico de rosquinha em um slide específico. Também é possível alterar o layout. Consulte [Personalizar slides de detalhes](#customize-detail-slide).
 
 ### Visualizar uma história de dados {#preview-data-story}
 
-Depois de criar uma história de dados, use o **Visualizar** botão para exibir e interagir com uma história de dados como se você fosse um usuário do aplicativo. Para obter informações sobre como visualizar a história dos dados, consulte [Visualizar um cartão de pontuação](#preview)
+Depois de criar uma história de dados, use o botão **Visualizar** para visualizar e interagir com uma história de dados como se você fosse um usuário do aplicativo. Para obter informações sobre como visualizar sua história de dados, consulte [Visualizar um cartão de pontuação](#preview)
 
 ### Navegar entre blocos e slides {#navigate-tiles-slides}
 
-A barra de navegação exibe ícones que representam o que há em cada slide. A barra de navegação facilita a navegação para um slide específico se você tiver muitos slides.
+A barra de navegação exibe ícones que representam o que está em cada slide. A barra de navegação facilita a navegação para um slide específico se você tiver vários.
 
-Para mover entre o bloco e os slides, toque na barra de navegação.
+Para se mover entre o bloco e os slides, toque na barra de navegação.
 ![Criar uma história de dados](assets/data-story5.png)
 ![Criar uma história de dados](assets/data-story-nav.png){width="45%"}
 
-Você também pode navegar para frente e para trás usando as setas do teclado ou selecionando um componente e mantendo-o à esquerda ou à direita da tela para rolar.
+Você também pode navegar para frente e para trás usando as setas no teclado ou selecionando um componente e mantendo-o à esquerda ou direita da tela para rolar.
 
-## Visualizar cartões de pontuação {#preview}
+## Visualizar scorecards {#preview}
 
 Você pode visualizar como o cartão de pontuação será exibido e funcionará assim que for publicado no aplicativo de painéis do Analytics.
 
@@ -296,13 +296,13 @@ Você pode visualizar como o cartão de pontuação será exibido e funcionará 
 
    * Clicar e segurar para simular pressionar e segurar o dedo na tela do telefone. Isso é útil para interagir com as visualizações na visualização detalhada.
 
-## Nomear cartões de pontuação {#name}
+## Nomear scorecards {#name}
 
 Para nomear o Scorecard, clique no namespace no canto superior esquerdo da tela e digite o novo nome.
 
 ![Nomeação_Scorecards](assets/new_name.png)
 
-## Compartilhar cartões de pontuação {#share}
+## Compartilhar scorecards {#share}
 
 Para compartilhar o Scorecard com um usuário executivo:
 

@@ -3,10 +3,11 @@ description: Os administradores são responsáveis por monitorar a integridade d
 title: Monitorar a integridade do dicionário de dados
 feature: Components
 role: Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 94%
+ht-degree: 89%
 
 ---
 
@@ -36,9 +37,9 @@ Para identificar problemas de integridade no dicionário de dados:
 
    A janela do dicionário de dados é exibida.
 
-   ![Visualização de administrador do dicionário de dados](assets/data-dictionary-admin.png)
+   ![Visualização do administrador do Dicionário de dados](assets/data-dictionary-admin.png)
 
-1. Verifique se o conjunto de relatórios correto está selecionado no menu suspenso.
+1. Verifique se a exibição de dados correta está selecionada no menu suspenso.
 
 1. Na guia [!UICONTROL **Integridade do dicionário**], selecione [!UICONTROL **Exibir**] ao lado de qualquer uma das seguintes opções:
 

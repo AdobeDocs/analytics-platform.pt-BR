@@ -3,10 +3,11 @@ description: O dicionário de dados do Analysis Workspace permite que os usuári
 title: Visão geral do dicionário de dados
 feature: Components
 role: User, Admin
-source-git-commit: 733e0e358aa34ce126687f01ffb6d89f9b0c4210
+exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 77%
+ht-degree: 67%
 
 ---
 
@@ -44,11 +45,11 @@ Veja a seguir algumas das maneiras como os administradores do Analytics podem us
 
 * Identificar componentes que ainda não foram aprovados.
 
-* Atualizar as descrições dos componentes diretamente no Analysis Workspace. Todas as atualizações feitas nas descrições de componentes no dicionário de dados são refletidas no conjunto de relatórios.
+* Atualizar as descrições dos componentes diretamente no Analysis Workspace. Todas as atualizações feitas nas descrições de componentes no Dicionário de dados são refletidas na visualização de dados.
 
-   Da mesma forma, todas as atualizações feitas nas descrições de componentes no conjunto de relatórios são refletidas no Analysis Workspace.
+   Da mesma forma, todas as atualizações feitas nas descrições de componentes na visualização de dados são refletidas no Analysis Workspace.
 
-   Para obter mais informações sobre como adicionar descrições de componentes no Analysis Workspace ou em um conjunto de relatórios, consulte [Adicionar descrições de componentes](/help/components/add-component-descriptions.md).
+   Para obter mais informações sobre como adicionar descrições de componentes no Analysis Workspace ou em uma visualização de dados, consulte [Adicionar descrições de componentes](/help/components/add-component-descriptions.md).
 
 ## Acessar o dicionário de dados
 

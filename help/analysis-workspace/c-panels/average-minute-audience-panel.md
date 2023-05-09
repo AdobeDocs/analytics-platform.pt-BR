@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel Público-alvo médio por minuto de
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Os clientes do Media Analytics podem usar o painel Audiência média por minuto 
 No Analysis Workspace, a Audiência média por minuto é o tempo gasto visualizando seu fluxo de mídia dividido pela duração do conteúdo ou pela seleção total do período e granularidade selecionada.
 
 O painel Audiência média por minuto da mídia fornece análises de público-alvo médio por minuto, pelo conteúdo específico selecionado se a duração for disponibilizada por meio das classificações.
-O painel Audiência média por minuto da mídia também fornece análises durante um período de tempo selecionado, que pode ser filtrado por conteúdo específico, independentemente da duração estar ou não disponível usando as classificações. Para acessar o painel Audiência média por minuto da mídia, navegue até um conjunto de relatórios com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace.
+O painel Audiência média por minuto da mídia também fornece análises durante um período de tempo selecionado, que pode ser filtrado por conteúdo específico, independentemente da duração estar ou não disponível usando as classificações. Para acessar o Painel de público-alvo médio por minuto, navegue até uma visualização de dados com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace.
 
 <!-- For more information, see the Media Average Minute Audience introduction video:
 << replace with AMA video when available >> -->

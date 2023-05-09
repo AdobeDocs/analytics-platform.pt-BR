@@ -3,11 +3,11 @@ title: Gerenciar anotações
 description: Como gerenciar anotações no Espaço de trabalho.
 role: User, Admin
 feature: Components
-exl-id: 37a538cc-9ea7-4cb1-8ee8-e8e474ad5b08
-source-git-commit: 7164c90fe50434a07db8154de173c3c7d8e5cb14
+exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 100%
+source-wordcount: '677'
+ht-degree: 87%
 
 ---
 
@@ -28,17 +28,17 @@ O gerenciador [!UICONTROL Anotações] mostra todas as anotações que você pos
 | Elemento da interface | Descrição |
 | --- | --- | 
 | [!UICONTROL Título e descrição] | Fornecidos no Construtor de anotações. Para editar o título e a descrição, clique no link de título. Isso leva você até o Construtor de anotações. |
-| [!UICONTROL Conjunto de relatórios] | O(s) conjunto(s) de relatórios aos quais essa anotação se aplica. |
+| [!UICONTROL Visualização de dados] | As visualizações de dados às quais essa anotação se aplica. |
 | [!UICONTROL Proprietário] | Indica quem é o proprietário da anotação. Como um usuário não administrador, você pode ver somente as suas anotações ou as que foram compartilhadas com você. |
 | [!UICONTROL Intervalo de datas aplicado] | A data ou o intervalo de datas ao qual essa anotação se aplica. |
 | [!UICONTROL Compartilhado com] | Lista com quantos indivíduos ou grupos a anotação foi compartilhada. Clique para obter mais detalhes. |
 | [!UICONTROL Data de modificação] | Mostra a data e a hora em que a anotação foi modificada pela última vez. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Editar anotações
 
-Editar uma anotação significa que você pode ajustar intervalos de datas, cores, escopo ou se ela se aplica ou não a todos os conjuntos de relatórios ou projetos. É possível editar anotações de duas formas:
+Editar uma anotação significa que você pode ajustar intervalos de datas, cores, escopo ou se ela se aplica ou não a todas as visualizações de dados ou projetos. É possível editar anotações de duas formas:
 
 * Em um gráfico de linhas, passe o mouse sobre a anotação e clique no ícone de lápis dentro do popover.
 
@@ -58,7 +58,7 @@ Ao compartilhar anotações ou trabalhar com anotações compartilhadas com voc�
 
 ## Anotações e fusos horários
 
-Todas as anotações são criadas com um carimbo de data e hora, mas nenhuma informação de “hora” ou “fuso horário”. No momento do relatório, o fuso horário da visualização de dados do painel é sempre aplicado. Assim, uma anotação criada para o dia de Natal acontece em 25 de dezembro - independentemente do fuso horário do conjunto de relatórios em que você estiver.
+Todas as anotações são criadas com um carimbo de data e hora, mas nenhuma informação de “hora” ou “fuso horário”. No momento do relatório, o fuso horário da visualização de dados do painel é sempre aplicado. Assim, uma anotação criada para o dia de Natal acontece em 25 de dezembro - independentemente do fuso horário da visualização de dados em que você estiver.
 
 Outro exemplo é o Dia de Ano Novo. A cada hora, um fuso horário diferente dispara fogos de artifício conforme o ano novo começa. Às 22h, Hora das Montanhas dos EUA, a costa leste dos EUA está soltando fogos porque já é meia-noite da Hora do Leste.
 
@@ -76,6 +76,6 @@ Basta selecionar uma ou mais anotações e a barra de tarefas é exibida.
 | Renomear | Renomear uma anotação a renomeia em todos os projetos aos quais foi aplicada. |
 | Copiar | Cria uma cópia distinta com sua própria ID de anotação, mas com o mesmo nome e definição. |
 | Exportar para CSV | Exporte a definição da anotação para um arquivo CSV. |
-| Filtro (painel esquerdo) | Filtre por tags, conjunto de relatórios, proprietários e outros filtros (Meus, Aprovados, Favoritos, Compartilhados comigo e Mostrar todos). |
+| Filtro (painel esquerdo) | Filtre por tags, visualizações de dados, proprietários e outros filtros (Meus, Aprovados, Favoritos, Compartilhados comigo e Mostrar tudo). |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Visão geral dos Projetos
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: c378a7d39c3d2ae388bc3cf2fa1bbc693b0bccb3
+source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 80%
@@ -41,7 +41,7 @@ A página Projetos contém as seguintes informações:
 | Tags | Tags aplicadas ao projeto. |
 | Programado | Indica se os projetos estão programados para serem enviados por email aos recipients de acordo com uma programação. Consulte [Agendar projetos](/help/analysis-workspace/curate-share/t-schedule-report.md). |
 | Link compartilhado (qualquer pessoa) | Os projetos podem ser compartilhados com qualquer pessoa, mesmo com pessoas que não têm acesso ao Analysis Workspace. Esta coluna mostra se os projetos foram compartilhados dessa maneira. Consulte [Compartilhar um projeto com qualquer pessoa (sem logon necessário)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) em [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md) para obter mais informações. |
-| Conjunto de relatórios | O conjunto de relatórios ao qual o projeto está associado. |
+| Visualização de dados | A visualização de dados à qual o projeto está associado. |
 | [Função do projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=pt-BR) | Indica a função do projeto - proprietários, editar, duplicar, exibir. |
 | Proprietário | A pessoa que criou o projeto (você ou alguém que compartilhou o projeto com você.) |
 | Compartilhado com | Usuários com os quais o projeto foi compartilhado. |

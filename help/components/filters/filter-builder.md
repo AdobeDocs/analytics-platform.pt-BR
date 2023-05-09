@@ -3,7 +3,7 @@ description: O Construtor de filtros fornece uma tela para arrastar e soltar Dim
 title: Criar filtros
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
 workflow-type: tm+mt
 source-wordcount: '2054'
 ht-degree: 37%
@@ -70,7 +70,7 @@ Você pode adicionar definições de regra e contêineres para definir seus filt
 1. **[!UICONTROL Dimensões]**: (Lista) clique no cabeçalho para expandir.
 1. **[!UICONTROL Métrica]**: clique no cabeçalho para expandir.
 1. **[!UICONTROL Filtros]**: Clique no cabeçalho para expandir.
-1. **[!UICONTROL Seletor de conjunto de relatórios]**: Permite selecionar o conjunto de relatórios em que esse filtro será salvo. Você ainda pode utilizar o filtro em todos os conjuntos de relatórios.
+1. **[!UICONTROL Seletor de Exibição de dados]**: Permite selecionar o conjunto de relatórios em que esse filtro será salvo. Você ainda pode utilizar o filtro em todas as visualizações de dados.
 1. **[!UICONTROL Visualização do filtro]**: Permite que você visualize as métricas principais para conferir se você tem um filtro válido e a amplitude deste. Representa o detalhamento do conjunto de dados que você pode esperar ao aplicar esse filtro. Mostra 3 círculos concêntricos e uma lista para mostrar o número e a porcentagem de correspondências para [!UICONTROL Evento], [!UICONTROL Pessoa]e [!UICONTROL Sessão] para executar um filtro em relação a um conjunto de dados. Esse gráfico é atualizado imediatamente após criar ou fazer alterações na definição do filtro.
 1. **[!UICONTROL Compatibilidade do produto]**: Fornece uma lista de quais produtos Adobe Analytics (Analysis Workspace, [!UICONTROL Reports &amp; Analytics], Data Warehouse) com o qual o filtro criado é compatível. A maioria dos filtros é compatível com todos os produtos. Contudo, nem todos os operadores e dimensões são compatíveis com todos os produtos Analytics, especialmente o [Data Warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). Esse gráfico é atualizado imediatamente após fazer alterações na definição do filtro.
 1. **[!UICONTROL Salvar]** ou **[!UICONTROL Cancelar]**: Salva ou cancela o filtro. Depois de clicar **[!UICONTROL Salvar]**, você é levado para o Gerenciador de filtros, onde pode gerenciar o filtro.
