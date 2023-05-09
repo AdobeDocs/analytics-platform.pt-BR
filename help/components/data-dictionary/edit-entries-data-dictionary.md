@@ -4,10 +4,10 @@ title: Editar entradas no Dicionário de dados
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: 74ec307b878b77a40ef1f5dbf54f2b59d88b41fe
+source-git-commit: d431e781eb18eb3f4904094972c218a9e80980d9
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 58%
+source-wordcount: '315'
+ht-degree: 53%
 
 ---
 
@@ -32,6 +32,10 @@ Para editar um componente no Dicionário de dados:
    O tipo de componente pode ser identificado por cor e ícone. **Dimension** ![Ícone Dimension](assets/dimension-icon.png) são laranja, **Segmentos** ![Ícone Segmento](assets/segment-icon.png) são azuis, **Intervalos de datas** ![Ícone de intervalo de datas](assets/date-range-icon.png) são roxas e **Métricas** ![Ícone Métrica](assets/default-metric-icon.png) são verdes. O ícone Adobe ![Ícone Adobe](assets/default-calc-metric-icon.png) indica um modelo de métrica calculada ou um modelo de segmento, e o ícone da calculadora ![Ícone Calculadora](assets/calculated-metric-icon-created.png) indica uma métrica calculada criada por um administrador do Analytics em sua organização.
 
 {{dd-filter-criteria}}
+
+1. (Opcional) Selecione o **Classificar** ícone ![Ícone Classificar componentes](assets/component-sort-icon.png)e selecione qualquer uma das seguintes opções de filtro para classificar a lista de componentes:
+
+   {{components-sort-options}}
 
 1. Na lista de componentes, selecione o componente que deseja editar.
 

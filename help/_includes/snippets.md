@@ -1,8 +1,8 @@
 ---
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 4662b941b90b2304402f6e2097f59ef669da7ada
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 72%
+source-wordcount: '950'
+ht-degree: 68%
 
 ---
 # Trechos
@@ -56,3 +56,14 @@ ht-degree: 72%
 | [!UICONTROL **Data da última modificação**] | Exibe o dia em que o componente foi modificado pela última vez. Esta seção é exibida durante a visualização de Filtros, Métricas, Métricas calculadas e Intervalos de datas. |
 
 {style="table-layout:auto"}
+
+## Opções de classificação de componentes {#components-sort-options}
+
+| Opção | Função |
+|---------|----------|
+| [!UICONTROL **Recomendado**] | Classifica componentes com aqueles recomendados na parte superior da lista. Os componentes usados com mais frequência e mais recentemente por você ou por outras pessoas em sua organização são mostrados na lista mais alta. |
+| [!UICONTROL **Ordem alfabética**] | Classifica componentes alfabeticamente. |
+| [!UICONTROL **Categórico**] | Classifica componentes de acordo com o tipo de componente (dimensão, métrica, segmento, intervalo de datas). |
+
+{style="table-layout:auto"}
+
