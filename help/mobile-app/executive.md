@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 26012a5b7332adf2b80edd8fb9f9327788443dfc
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 98%
+source-wordcount: '1267'
+ht-degree: 92%
 
 ---
 
@@ -59,11 +59,17 @@ Para usar painéis:
 
    ![Sequência de logon](assets/signseq.png)
 
-1. Escolha uma empresa. Efetuado o logon nos painéis, a tela **[!UICONTROL Escolha uma empresa]** é exibida. Esta tela lista as empresas de logon às quais você pertence. Toque no nome da empresa associado ao Scorecard compartilhado com você.
+1. Escolha uma empresa. Efetuado o logon nos painéis, a tela **[!UICONTROL Escolha uma empresa]** é exibida. Esta tela lista as empresas de logon às quais você pertence. Toque no nome da empresa associado ao scorecard compartilhado com você.
 
-1. A lista Scorecard mostra todos os Scorecards que foram compartilhados com você. Toque no Scorecard que deseja exibir.
+   A lista de scorecards mostra todos os scorecards compartilhados com você.
 
-   ![Escolha uma empresa](assets/nextseq.png)
+1. Toque no scorecard que deseja visualizar.
+
+   Se você tiver acesso a mais de uma organização em um logon, todos os scorecards das organizações estarão disponíveis na lista de scorecards.
+
+   Você pode classificar a lista de scorecards de acordo com o título do scorecard, o nome da organização ou a visualização mais recente. Você pode até pesquisar por um scorecard específico.
+
+   ![Escolha uma empresa](assets/mobile-home-screen.png)
 
    Se você fizer logon e vir uma mensagem informando que nada foi compartilhado, verifique o seguinte com o curador:
 
