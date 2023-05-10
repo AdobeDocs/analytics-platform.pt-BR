@@ -3,10 +3,10 @@ description: Documentação que descreve como filtrar e classificar tabelas no A
 title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 4dd5e5248026c39489f3ac4598ea91ff15d95aa4
+source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 95%
+source-wordcount: '848'
+ht-degree: 79%
 
 ---
 
@@ -26,17 +26,38 @@ Os filtros do Analysis Workspace ajudam você a encontrar as informações mais 
 >
 > Somente itens de dimensão dinâmicos podem ser filtrados conforme descrito nesta seção. Os itens de dimensão estáticos não podem ser filtrados. Para obter mais informações, consulte [Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
+### Excluir rapidamente linhas específicas de uma tabela
+
+Você pode excluir linhas específicas rapidamente da tabela sem precisar abrir a caixa de diálogo Filtro .
+
+>[!NOTE]
+>
+>Ao excluir linhas conforme descrito nesta seção, uma [!UICONTROL **Não é igual**] é aplicada automaticamente na variável [**[!UICONTROL Filtragem avançada]**](#apply-a-simple-or-advanced-filter) caixa de diálogo.
+
+Para excluir rapidamente linhas específicas de uma tabela de forma livre:
+
+1. Passe o mouse sobre a linha que deseja excluir, em seguida, selecione o ícone x.
+
+   Mantenha pressionada a tecla Shift para selecionar uma linha de intervalo ou mantenha pressionada a tecla Command (no Mac) ou a tecla Ctrl (no Windows) para selecionar várias linhas.
+
+### Aplicar um filtro simples ou avançado a uma tabela
+
 Para filtrar dados em tabelas de forma livre:
 
-1. Em uma tabela de forma livre, passe o mouse sobre a coluna que contém os dados que deseja filtrar. <!--only some types of columns show the filter... Which? Just Dimensions?-->
+1. Passe o mouse sobre a coluna que contém os dados que deseja filtrar. <!--only some types of columns show the filter... Which? Just Dimensions?-->
 
 1. Selecione o ícone **Filtro** quando for exibido.
 
    ![Ícone de Filtro em uma tabela](assets/table-filter-icon.png)
 
-1. No campo [!UICONTROL **Pesquisar palavra ou frase**], especifique uma palavra ou frase que deseja filtrar. Somente as linhas que contêm a palavra ou a frase exata especificada são mostradas.
+   As opções disponíveis são as seguintes:
 
-1. (Opcional) Para filtrar por critérios diferentes ou por vários critérios, selecione [!UICONTROL **Mostrar avançado**].
+   | Opção | Função |
+   |---------|----------|
+   | [!UICONTROL **Pesquisar palavra ou frase**] | Especifique uma palavra ou frase para a qual deseja filtrar. Somente as linhas que contêm a palavra ou a frase exata especificada são mostradas. |
+   | [!UICONTROL **Incluir não especificado (nenhum)**] | Selecione essa opção para mostrar dados na tabela que não se enquadram em nenhuma das dimensões da tabela. <!--what is this?--> |
+
+1. (Opcional) Para filtrar por critérios diferentes ou por vários critérios, selecione [!UICONTROL **Filtragem avançada**].
 
    As opções disponíveis são as seguintes
 
