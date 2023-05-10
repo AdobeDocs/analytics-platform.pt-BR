@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5e3c85daebd996eced70ff0aaba7f381783b7fe2
+source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 90%
+source-wordcount: '1854'
+ht-degree: 84%
 
 ---
 
@@ -22,6 +22,9 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | **Maio de 2023** |  |
 | Visão geral do Analysis Workspace | Atualizado [Visão geral do Analysis Workspace](/help/analysis-workspace/home.md) para incluir informações de visão geral e links para o conteúdo relevante. |
 | Criar projetos | Criou um novo artigo que explica detalhadamente como [Criar projetos](/help/analysis-workspace/build-workspace-project/create-projects.md) no Analysis Workspace. |
+| Classificar componentes no painel esquerdo | Foram adicionadas informações sobre a classificação da lista de componentes no painel à esquerda.Consulte a seção &quot;Pesquisar, filtrar e classificar a lista de componentes&quot; em [Visão geral dos componentes](/help/components/overview.md). |
+| Excluir linhas que contenham dimensões dinâmicas de uma tabela de forma livre | Foram adicionadas informações sobre como excluir rapidamente linhas específicas que contêm dimensões dinâmicas usando o ícone x. Consulte a seção &quot;Excluir rapidamente linhas específicas de uma tabela&quot; em [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
+| Botão para adicionar uma visualização em um painel | Foram adicionadas informações sobre um novo botão na parte inferior de cada painel no Analysis Workspace, que permite adicionar rapidamente uma visualização. Consulte a seção &quot;Adicionar visualizações a um painel&quot; em [Visão geral das visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
 | **Abril de 2023** |  |
 | Vídeo sobre como usar filtros como dimensões | Atualização do vídeo sobre o uso de filtros como dimensão. <p>Este vídeo é vinculado pelo [Criar filtros](/help/components/filters/create-filters.md) página.</p> <p>Veja a seguir um link direto para o vídeo: [Usar filtros como dimensões no Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | Filtrar documentação | Adição de um artigo sobre o uso do [Construtor de filtros](/help/components/filters/filter-builder.md). <p>Documentação simplificada em [Criar filtros](/help/components/filters/create-filters.md) e [Visão geral dos Filtros](/help/components/filters/filters-overview.md).</p> |
