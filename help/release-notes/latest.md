@@ -3,10 +3,10 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
+source-git-commit: 76130aeaee4447a83c2f8feea95371dc2e38bd67
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 29%
+source-wordcount: '850'
+ht-degree: 26%
 
 ---
 
@@ -29,7 +29,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 | **Excluir linhas que contenham dimensões dinâmicas de uma tabela de forma livre** | Em uma tabela de forma livre no Analysis Workspace, agora é possível excluir rapidamente linhas específicas que contêm dimensões dinâmicas usando o ícone x. Ao fazer isso, uma regra de filtro &quot;Não é igual&quot; é aplicada automaticamente.<p>Anteriormente, a única maneira de excluir linhas que continham dimensões dinâmicas era criar manualmente uma regra na caixa de diálogo Filtro . [Saiba mais](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | N/D | 10 de maio de 2023 |
 | **Novo botão para adicionar uma visualização em um painel** | Um novo botão agora está disponível na parte inferior de cada painel no Analysis Workspace, permitindo que você adicione uma visualização rapidamente. <p>Anteriormente, os únicos métodos para adicionar uma visualização a um painel eram arrastar uma visualização do painel esquerdo, duplicar ou copiar uma visualização existente ou criar um painel em branco. [Saiba mais](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | N/D | 17 de maio de 2023 |
 | **Deep Linking (Aplicativo Móvel)** | Permite que usuários enviem links para scorecards que os levarão diretamente ao projeto scorecard no aplicativo. Isso facilita ainda mais o compartilhamento de projetos e aumenta o engajamento de um público-alvo menos técnico. | N/D | 17 de maio de 2023 |
-| **Legendas inteligentes** | Enriqueça a narrativa de usuários com resumos em linguagem natural de uma visualização em Linha. | 17 de maio de 2023 | 1 de junho de 2023 |
+| **Legendas inteligentes** | Enriqueça a narrativa de usuários com resumos de linguagem natural de um [!UICONTROL Linha] visualização. | 17 de maio de 2023 | 1 de junho de 2023 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,12 @@ AN-316412; AN-317105; AN-318122; AN-317353
 | Aviso | Aviso adicionado ou atualizado | Descrição |
 | --- | --- | --- |
 | N/D | N/D | N/D |
+
+## Avisos de fim da vida útil (EOL) {#eol}
+
+| Fim da vida útil do produto ou recurso | Data de adição ou atualização | Descrição |
+| --- | --- | --- |
+| **Migração para credenciais de servidor para servidor do AdobeIO OAuth** | 11 de maio de 2023 | Os clientes da API do Adobe Analytics, da API do CJA e do Livestream que usam as credenciais do AdobeIO JWT devem migrar para as credenciais do AdobeIO OAuth Server para servidor ao **1° de janeiro de 2025**. O AdobeIO não permitirá que novas credenciais do JWT sejam criadas a partir de 1º de maio de 2024. Os clientes que usam JWT devem criar uma nova credencial OAuth Servidor para Servidor ou migrar sua credencial JWT existente para uma credencial OAuth Servidor para Servidor. Os clientes também devem atualizar seus aplicativos clientes para usar as novas credenciais de servidor para servidor do OAuth. <ul><li>[Migrando de credenciais da conta de serviço (JWT)](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)</li><li>[Usar as novas credenciais de servidor para servidor do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)</li><li>[Perguntas frequentes](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)</li></ul>![](assets/jwt.png) |
 
 {style="table-layout:auto"}
 
