@@ -3,9 +3,9 @@ description: Use legendas inteligentes para gerar insights de linguagem natural 
 title: Legendas inteligentes
 feature: Visualizations
 role: User, Admin
-source-git-commit: 1474d438e9deafc9d303bff3560ef3ff3aff0ec0
+source-git-commit: c613c313ae2c9c6786370c46fa0a86134014e754
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,10 @@ ht-degree: 0%
 
 As legendas inteligentes usam a ciência de dados para fornecer informações valiosas da linguagem natural para as visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para o [Linha](line.md) visualização. (Outras visualizações serão exibidas.)
 
-Os analistas precisam desses insights para fornecer contexto aos usuários com os quais possam estar compartilhando seus projetos.
-
 As legendas inteligentes são direcionadas para:
 
+* Analistas que precisam de narrativas para compartilhar com outros usuários. Os analistas precisam desses insights para fornecer contexto aos usuários.
 * Usuários de negócios que desejam descobrir rapidamente as vantagens de alto nível.
-* Analistas que precisam de narrativas para compartilhar com outros usuários.
 
 As legendas estão disponíveis para todos os usuários do CJA e não exigem permissões especiais.
 
@@ -34,12 +32,13 @@ Para iniciar as legendas geradas automaticamente para uma visualização de linh
 
 Agora, insights de linguagem natural são gerados.
 
+Se você salvar o projeto nesse ponto e recarregá-lo posteriormente, as legendas serão atualizadas automaticamente com novos dados. O mesmo se aplica a projetos agendados e arquivos PDF exportados deste projeto.
+
 ## Exibir e interpretar legendas {#view}
 
 Esta é uma amostra de como as legendas podem se parecer:
 
 ![Legendas](assets/captions.png)
-
 
 ## Copiar para a área de transferência {#copy}
 
@@ -55,7 +54,18 @@ Você pode copiar as legendas em uma área de transferência e colá-las em um P
 
 1. Clique em **[!UICONTROL Aplicar]**.
 
+Use o mesmo processo para mostrar legendas.
+
 ## Exportar legendas {#export}
 
 Você pode **exportar legendas via PDF**, desde que o projeto seja salvo com as legendas geradas.
 
+## Ativar/desativar legendas {#toggle}
+
+Se preferir que as legendas inteligentes sejam geradas, você pode desativar o recurso acessando as preferências de Visualização e desmarcando **[!UICONTROL Mostrar legendas inteligentes]**.
+
+![configurações de legenda](assets/toggle-captions.png)
+
+## Reordenar legendas {#reorder}
+
+É possível reordenar a exibição das legendas arrastando uma legenda para uma nova posição.
