@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visão geral dos Projetos
 feature: CJA Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 21c52833a84f352610bacce58f5748d12792b20b
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 80%
+source-wordcount: '1317'
+ht-degree: 79%
 
 ---
 
@@ -27,12 +27,11 @@ A página Projetos contém as seguintes informações:
 >
 >Algumas colunas não são exibidas por padrão. Para personalizar as colunas exibidas, clique no botão **Personalizar tabela** ícone ![Personalizar tabela](assets/projects-page-customize-columns-icon.png).
 
-
 | Elemento | Descrição |
 |---|---|
 | [Editar preferências](/help/analysis-workspace/user-preferences.md) | Gerencie as configurações do Analysis Workspace e seus componentes relacionados a todos os novos projetos ou painéis criados por você. |
 | [Criar pasta](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Adicione uma nova pasta ou subpasta à lista de projetos e pastas. |
-| [Criar projeto](/help/analysis-workspace/home.md) | Inicie um novo projeto do zero ou de um [modelo](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=pt-BR#analysis-workspace). |
+| [Criar projeto](/help/analysis-workspace/build-workspace-project/create-projects.md) | Inicie um novo projeto do zero. |
 | Mostrar mais | Revela opções para criar um projeto em branco ou um scorecard móvel, [visualizar tutoriais de treinamento](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=pt-BR)ou [exibição das notas de versão](/help/release-notes/latest.md). |
 | Mostrar pastas e projetos | Escolha se deseja mostrar a estrutura de pastas de projetos. Para obter mais informações, consulte [Sobre pastas no Analytics](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Personalizar tabela (ícone) | Permite personalizar as informações exibidas para cada projeto na página Projetos . |
@@ -60,7 +59,7 @@ Em um projeto, o menu fornece opções para gerenciar o projeto, adicionar compo
 
 | Item de menu | Descrição |
 |---|---|
-| Projeto  | Inclui ações comuns para o gerenciamento de projetos, incluindo Novo, Abrir, Salvar, Salvar como e Salvar como modelo. Você também pode atualizar o projeto inteiro para recuperar os dados e as definições mais recentes clicando em Atualizar projeto. A opção [Download de CSV e PDF](/help/analysis-workspace/curate-share/download-send.md) permite exportar dados do Espaço de trabalho. A seção **Informações e configurações do projeto** (veja abaixo) oferece muitas opções para gerenciar seu projeto. |
+| Projeto  | Inclui ações comuns para o gerenciamento de projetos, incluindo Novo, Abrir, Salvar e Salvar como. Você também pode atualizar o projeto inteiro para recuperar os dados e as definições mais recentes clicando em Atualizar projeto. A opção [Download de CSV e PDF](/help/analysis-workspace/curate-share/download-send.md) permite exportar dados do Espaço de trabalho. A seção **Informações e configurações do projeto** (veja abaixo) oferece muitas opções para gerenciar seu projeto. |
 | Editar | Desfazer ou refazer a última ação. Limpar tudo redefinirá seu projeto para um ponto de partida em branco. |
 | Inserir | Insira novos painéis ou visualizações nesse menu. Você também pode inserir novos painéis e visualizações no painel esquerdo. |
 | [Componentes](/help/components/overview.md) | Crie novos filtros, métricas calculadas, intervalos de datas ou componentes de alerta a partir do seu projeto. Você também pode criar novos componentes no painel esquerdo. Se as definições de componente foram alteradas recentemente, Atualizar componentes recuperará as definições mais recentes. |
