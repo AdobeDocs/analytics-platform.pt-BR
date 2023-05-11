@@ -4,18 +4,18 @@ title: Integrar os dados de IA do cliente ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: fdd8d96eeca90ac13c035ace4a010c016681bac7
+hide: true
+hide-from-toc: true
+source-git-commit: adfc2500cfc3811e7ef2798c3a0ee3e9b3425208
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 73%
+source-wordcount: '954'
+ht-degree: 72%
 
 ---
 
 # Integrar os dados de IA do cliente ao CJA
 
->[!NOTE]
->
->Essa funcionalidade está atualmente em [teste limitado](/help/release-notes/releases.md) e não está totalmente disponível.
+{{release-limited-testing}}
 
 A [IA do cliente](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=pt-BR), como parte dos Serviços inteligentes da Adobe Experience Platform, fornece aos profissionais de marketing o poder de gerar previsões de clientes individualmente.
 
