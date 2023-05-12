@@ -4,10 +4,10 @@ title: Integrar os dados de IA do cliente ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-source-git-commit: b56dd36d85cd34179166ad9a6bc45f3f641e9697
+source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 72%
+source-wordcount: '951'
+ht-degree: 73%
 
 ---
 
@@ -25,7 +25,7 @@ O Customer AI pode se integrar com o Customer Journey Analytics (CJA) na medida 
 
 * **Rastrear as pontuações de propensão para um segmento de usuários ao longo do tempo**.
    * Caso de uso: Entenda a probabilidade de conversão de clientes em um segmento específico.
-   * Exemplo: Um comerciante em uma cadeia de hotéis quer entender qual é a probabilidade de um cliente de hotel comprar um ingresso no local do concerto do hotel.
+   * Exemplo: Um comerciante em uma cadeia de hotéis quer entender a probabilidade de um cliente de hotel comprar um ingresso no local do concerto do hotel.
 * **Analisar quais eventos ou atributos de sucesso estão associados às pontuações de propensão**.
    * Caso de uso: Entenda os atributos ou eventos de sucesso associados às pontuações de propensão.
    * Exemplo: Um profissional de marketing em uma cadeia de hotéis quer entender como as compras de ingressos de shows no local de concertos de um hotel estão associadas a pontuações de propensão.
@@ -37,7 +37,7 @@ O Customer AI pode se integrar com o Customer Journey Analytics (CJA) na medida 
    * Exemplo: Um varejista deseja executar uma promoção específica de US$ 50 de um produto. Eles podem querer executar apenas uma promoção muito limitada devido ao orçamento, etc. Eles analisam os dados e decidem direcionar somente os mais de 80% de seus clientes.
 * **Examine a propensão para realizar uma ação para um coorte específico ao longo do tempo**.
    * Caso de uso: Rastreie uma coorte específica ao longo do tempo.
-   * Exemplo: Um comerciante em uma cadeia de hotéis quer rastrear a camada de bronze em relação à camada de prata, ou camada de prata em relação à camada de ouro, ao longo do tempo. Então eles podem ver a propensão de cada coorte para reservar o hotel ao longo do tempo.
+   * Exemplo: Um comerciante em uma cadeia de hotéis quer rastrear a camada de bronze em relação à camada de prata, ou camada de prata em relação à camada de ouro, ao longo do tempo. Eles podem ver a propensão de cada coorte para reservar o hotel ao longo do tempo.
 
 Para integrar efetivamente os dados do Customer AI ao CJA, siga estas etapas:
 

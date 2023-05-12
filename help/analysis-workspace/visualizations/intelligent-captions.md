@@ -3,9 +3,9 @@ description: Use legendas inteligentes para gerar insights de linguagem natural 
 title: Legendas inteligentes
 feature: Visualizations
 role: User, Admin
-source-git-commit: c613c313ae2c9c6786370c46fa0a86134014e754
+source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-As legendas inteligentes usam a ciência de dados para fornecer informações valiosas da linguagem natural para as visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para o [Linha](line.md) visualização. (Outras visualizações serão exibidas.)
+As legendas inteligentes usam o Aprendizagem de Máquina avançada e a IA Gerativa para fornecer valiosas insights de linguagem natural para as visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para o [Linha](line.md) visualização. (Outras visualizações serão exibidas.)
 
 As legendas inteligentes são direcionadas para:
 
@@ -30,7 +30,7 @@ Para iniciar as legendas geradas automaticamente para uma visualização de linh
 
 ![iniciar legendas inteligentes](assets/intell-caps-1.png)
 
-Agora, insights de linguagem natural são gerados.
+Agora, insights de linguagem natural são gerados. As legendas serão geradas sempre que os dados subjacentes selecionados forem alterados na tabela que alimenta a visualização. Além disso, se houver várias métricas na tabela, as legendas serão geradas apenas para a primeira métrica ou para a métrica atualmente selecionada pelo usuário.
 
 Se você salvar o projeto nesse ponto e recarregá-lo posteriormente, as legendas serão atualizadas automaticamente com novos dados. O mesmo se aplica a projetos agendados e arquivos PDF exportados deste projeto.
 
@@ -65,7 +65,3 @@ Você pode **exportar legendas via PDF**, desde que o projeto seja salvo com as 
 Se preferir que as legendas inteligentes sejam geradas, você pode desativar o recurso acessando as preferências de Visualização e desmarcando **[!UICONTROL Mostrar legendas inteligentes]**.
 
 ![configurações de legenda](assets/toggle-captions.png)
-
-## Reordenar legendas {#reorder}
-
-É possível reordenar a exibição das legendas arrastando uma legenda para uma nova posição.
