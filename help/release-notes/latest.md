@@ -3,9 +3,9 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 306c1432163841034c8e7a34f8e112a5cc734da4
+source-git-commit: 7e6383bf94e10f6ab6f9db990f4ef3df0fb826d3
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '852'
 ht-degree: 26%
 
 ---
@@ -29,7 +29,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 | **Excluir linhas que contenham dimensões dinâmicas de uma tabela de forma livre** | Em uma tabela de forma livre no Analysis Workspace, agora é possível excluir rapidamente linhas específicas que contêm dimensões dinâmicas usando o ícone x. Ao fazer isso, uma regra de filtro &quot;Não é igual&quot; é aplicada automaticamente.<p>Anteriormente, a única maneira de excluir linhas que continham dimensões dinâmicas era criar manualmente uma regra na caixa de diálogo Filtro . [Saiba mais](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | N/D | 17 de maio de 2023 |
 | **Novo botão para adicionar uma visualização em um painel** | Um novo botão agora está disponível na parte inferior de cada painel no Analysis Workspace, permitindo que você adicione uma visualização rapidamente. <p>Anteriormente, os únicos métodos para adicionar uma visualização a um painel eram arrastar uma visualização do painel esquerdo, duplicar ou copiar uma visualização existente ou criar um painel em branco. [Saiba mais](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | N/D | 17 de maio de 2023 |
 | **Deep Linking (Aplicativo Móvel)** | Permite que usuários enviem links para scorecards que os levarão diretamente ao projeto scorecard no aplicativo. Isso facilita ainda mais o compartilhamento de projetos e aumenta o engajamento de um público-alvo menos técnico. | N/D | 17 de maio de 2023 |
-| **Legendas inteligentes** | Enriqueça a narrativa de usuários com resumos de linguagem natural de um [!UICONTROL Linha] visualização. | 17 de maio de 2023 | 1 de junho de 2023 |
+| **Legendas inteligentes** | Enriqueça a narrativa de usuários com resumos de linguagem natural de um [!UICONTROL Linha] visualização. [Saiba mais](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17 de maio de 2023 | 1 de junho de 2023 |
 
 {style="table-layout:auto"}
 

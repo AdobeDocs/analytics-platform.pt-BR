@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c262b7d4ad69821880b2822b891ea081cf06b66b
+source-git-commit: a546c52d2a686c38f7a9a23e0c541568c2918495
 workflow-type: tm+mt
-source-wordcount: '1854'
-ht-degree: 84%
+source-wordcount: '1868'
+ht-degree: 83%
 
 ---
 
@@ -25,6 +25,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Classificar componentes no painel esquerdo | Foram adicionadas informações sobre a classificação da lista de componentes no painel à esquerda.Consulte a seção &quot;Pesquisar, filtrar e classificar a lista de componentes&quot; em [Visão geral dos componentes](/help/components/overview.md). |
 | Excluir linhas que contenham dimensões dinâmicas de uma tabela de forma livre | Foram adicionadas informações sobre como excluir rapidamente linhas específicas que contêm dimensões dinâmicas usando o ícone x. Consulte a seção &quot;Excluir rapidamente linhas específicas de uma tabela&quot; em [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | Botão para adicionar uma visualização em um painel | Foram adicionadas informações sobre um novo botão na parte inferior de cada painel no Analysis Workspace, que permite adicionar rapidamente uma visualização. Consulte a seção &quot;Adicionar visualizações a um painel&quot; em [Visão geral das visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
+| Documentação de legendas inteligentes | Enriqueça a narrativa de usuários com [resumos em linguagem natural](/help/analysis-workspace/visualizations/intelligent-captions.md) de uma visualização de Linha . |
 | **Abril de 2023** |  |
 | Vídeo sobre como usar filtros como dimensões | Atualização do vídeo sobre o uso de filtros como dimensão. <p>Este vídeo é vinculado pelo [Criar filtros](/help/components/filters/create-filters.md) página.</p> <p>Veja a seguir um link direto para o vídeo: [Usar filtros como dimensões no Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html).</p> |
 | Filtrar documentação | Adição de um artigo sobre o uso do [Construtor de filtros](/help/components/filters/filter-builder.md). <p>Documentação simplificada em [Criar filtros](/help/components/filters/create-filters.md) e [Visão geral dos Filtros](/help/components/filters/filters-overview.md).</p> |
