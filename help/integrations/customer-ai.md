@@ -4,11 +4,9 @@ title: Integrar os dados de IA do cliente ao CJA
 role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
-hide: true
-hide-from-toc: true
-source-git-commit: adfc2500cfc3811e7ef2798c3a0ee3e9b3425208
+source-git-commit: b56dd36d85cd34179166ad9a6bc45f3f641e9697
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '955'
 ht-degree: 72%
 
 ---
@@ -26,19 +24,19 @@ A IA do cliente depende de dados comportamentais individuais e de dados de perfi
 O Customer AI pode se integrar com o Customer Journey Analytics (CJA) na medida em que os conjuntos de dados habilitados para o Customer AI possam ser aproveitados nas exibições de dados e nos relatórios no CJA. É possível:
 
 * **Rastrear as pontuações de propensão para um segmento de usuários ao longo do tempo**.
-   * Caso de uso: compreender a probabilidade de conversão de clientes em um segmento específico.
+   * Caso de uso: Entenda a probabilidade de conversão de clientes em um segmento específico.
    * Exemplo: Um comerciante em uma cadeia de hotéis quer entender qual é a probabilidade de um cliente de hotel comprar um ingresso no local do concerto do hotel.
 * **Analisar quais eventos ou atributos de sucesso estão associados às pontuações de propensão**.
-   * Caso de uso: entenda os atributos ou eventos bem-sucedidos associados às pontuações de propensão.
+   * Caso de uso: Entenda os atributos ou eventos de sucesso associados às pontuações de propensão.
    * Exemplo: Um profissional de marketing em uma cadeia de hotéis quer entender como as compras de ingressos de shows no local de concertos de um hotel estão associadas a pontuações de propensão.
 * **Siga o fluxo de entrada para a propensão do cliente em diferentes execuções de pontuação**.
-   * Caso de uso: entenda as pessoas que inicialmente eram usuários de baixa propensão e, com o tempo, se tornaram usuários de alta propensão.
+   * Caso de uso: Entender as pessoas que inicialmente eram usuários de baixa propensão e, com o tempo, se tornaram usuários de alta propensão.
    * Exemplo: Um comerciante em uma cadeia de hotéis deseja entender quais clientes de hotéis inicialmente foram identificados como clientes com baixa propensão a comprar um tíquete de exibição, mas com o tempo tornou-se cliente com alta propensão a comprar um tíquete de exibição.
 * **Veja a distribuição da propensão**.
-   * Caso de uso: entenda a distribuição das pontuações de propensão para ser mais precisa na definição de segmentos.
+   * Caso de uso: Entenda a distribuição de pontuações de propensão para ser mais precisa na definição de segmentos.
    * Exemplo: Um varejista deseja executar uma promoção específica de US$ 50 de um produto. Eles podem querer executar apenas uma promoção muito limitada devido ao orçamento, etc. Eles analisam os dados e decidem direcionar somente os mais de 80% de seus clientes.
 * **Examine a propensão para realizar uma ação para um coorte específico ao longo do tempo**.
-   * Caso de uso: rastrear uma coorte específica ao longo do tempo.
+   * Caso de uso: Rastreie uma coorte específica ao longo do tempo.
    * Exemplo: Um comerciante em uma cadeia de hotéis quer rastrear a camada de bronze em relação à camada de prata, ou camada de prata em relação à camada de ouro, ao longo do tempo. Então eles podem ver a propensão de cada coorte para reservar o hotel ao longo do tempo.
 
 Para integrar efetivamente os dados do Customer AI ao CJA, siga estas etapas:
