@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: cb63cd52a1618f2e1048f2779c4e6c0317e94f64
+source-git-commit: daa2c69a61e80fb0e38f06ecca248658595b2c3a
 workflow-type: tm+mt
-source-wordcount: '3003'
+source-wordcount: '2987'
 ht-degree: 8%
 
 ---
@@ -18,11 +18,6 @@ ht-degree: 8%
 # Campos derivados
 
 {{release-limited-testing}}
-
->[!NOTE]
->
->Atualizações finais pendentes podem ser exibidas [!UICONTROL Campo personalizado] em vez de [!UICONTROL Campo derivado] na interface do usuário.
-
 
 Os campos derivados são um aspecto importante da funcionalidade de relatório em tempo real no Customer Journey Analytics (CJA). Um campo derivado permite definir (muitas vezes complexas) manipulações de dados dinamicamente, por meio de um construtor de regras personalizável. Em seguida, você pode usar esse campo derivado como um componente (métrica ou dimensão) no [Workspace](../../analysis-workspace/home.md) ou defina ainda mais o campo derivado como um componente em [Exibição de dados](../data-views.md).
 
