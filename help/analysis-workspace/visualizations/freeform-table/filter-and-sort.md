@@ -3,9 +3,9 @@ description: Documentação que descreve como filtrar e classificar tabelas no A
 title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
+source-git-commit: 1c11eb1b89eccf33fd66a0914b4beb1ab5dd6ff2
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '862'
 ht-degree: 79%
 
 ---
@@ -32,7 +32,7 @@ Você pode excluir linhas específicas rapidamente da tabela sem precisar abrir 
 
 >[!NOTE]
 >
->Ao excluir linhas conforme descrito nesta seção, uma [!UICONTROL **Não é igual**] é aplicada automaticamente na variável [**[!UICONTROL Filtragem avançada]**](#apply-a-simple-or-advanced-filter) caixa de diálogo.
+>Ao excluir linhas conforme descrito nesta seção, uma [!UICONTROL **Sempre excluir itens**] é aplicada automaticamente na caixa de diálogo de filtro avançado. (Você pode visualizar a regra aplicada selecionando o ícone Filtro e [**[!UICONTROL Mostrar avançado]**](#apply-a-simple-or-advanced-filter-to-a-table).)
 
 Para excluir rapidamente linhas específicas de uma tabela de forma livre:
 
@@ -57,7 +57,7 @@ Para filtrar dados em tabelas de forma livre:
    | [!UICONTROL **Pesquisar palavra ou frase**] | Especifique uma palavra ou frase para a qual deseja filtrar. Somente as linhas que contêm a palavra ou a frase exata especificada são mostradas. |
    | [!UICONTROL **Incluir não especificado (nenhum)**] | Selecione essa opção para mostrar dados na tabela que não se enquadram em nenhuma das dimensões da tabela. <!--what is this?--> |
 
-1. (Opcional) Para filtrar por critérios diferentes ou por vários critérios, selecione [!UICONTROL **Filtragem avançada**].
+1. (Opcional) Para filtrar por critérios diferentes ou por vários critérios, selecione [!UICONTROL **Mostrar avançado**].
 
    As opções disponíveis são as seguintes
 
