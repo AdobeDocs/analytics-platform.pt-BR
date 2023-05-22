@@ -3,7 +3,7 @@ description: Saiba como analisar os resultados de testes A/B no painel de experi
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 54d8cf211a5a4bc3ffde5e24c29089125fc35362
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 75%
@@ -62,7 +62,7 @@ Sem a presença desses rótulos, o painel Experimento não funciona, pois não h
    | **[!UICONTROL Variante de controle]** | Uma de duas ou mais alterações na experiência de um usuário final que estão sendo comparadas com o objetivo de identificar a melhor alternativa. Uma variante deve ser selecionada como controle, e somente uma variante pode ser considerada como a variante de controle. Essa configuração é pré-preenchida com as dimensões que foram rotuladas com o rótulo **[!UICONTROL Variante]** nas visualizações de dados. Essa configuração extrai os dados de variantes associados a esse experimento. |
    | **[!UICONTROL Métricas de sucesso]** | A métrica, ou as métricas, com as quais um usuário está comparando variantes. A variante com o resultado mais desejável para a métrica de conversão (seja mais alta ou mais baixa) é declarada a “variante com melhor desempenho” de um experimento. Você pode adicionar até 5 métricas. |
    | **[!UICONTROL Métrica de normalização]** | A base ([!UICONTROL Pessoas], [!UICONTROL Sessões] ou [!UICONTROL Eventos]) em que um teste será executado. Por exemplo, um teste pode comparar as taxas de conversão de diversas variações, onde o **[!UICONTROL Índice de conversão]** é calculado como **[!UICONTROL Conversões por sessão]** ou **[!UICONTROL Conversões por pessoa]**. |
-   | **[!UICONTROL Intervalo de datas]** | O intervalo de datas é automaticamente definido com base na primeira ocorrência recebida no CJA para o experimento selecionado. Você pode restringir ou expandir o intervalo de datas para um período mais específico, se necessário. |
+   | **[!UICONTROL Intervalo de datas]** | O intervalo de datas é definido automaticamente com base no primeiro evento recebido no CJA para o experimento selecionado. Você pode restringir ou expandir o intervalo de datas para um período mais específico, se necessário. |
 
 1. Clique em **[!UICONTROL Criar]**.
 
@@ -110,18 +110,18 @@ Uma sequência de confiança de 95% incluirá o valor “true” da métrica de 
 
 ## Interpretar dimensões não aleatórias {#non-randomized}
 
-O CJA permite que os analistas selecionem qualquer dimensão como o &quot;experimento&quot;. Mas como você interpreta uma análise onde a dimensão escolhida como experimento não é aquela para a qual os visitantes são aleatorizados?
+O CJA permite que os analistas selecionem qualquer dimensão como o &quot;experimento&quot;. Mas como você interpreta uma análise em que a dimensão escolhida como experimento não é aquela para a qual os visitantes são aleatórios?
 
-Por exemplo, considere um anúncio visualizado por um visitante. Você pode estar interessado em medir a alteração em alguma métrica (por exemplo, receita média) se decidir mostrar aos visitantes &quot;anúncio B&quot; em vez de &quot;anúncio A&quot;. O efeito causal da apresentação da publicidade B no lugar da publicidade A é de importância central para a tomada de decisão de comercialização. Este efeito causal pode ser medido como a receita média sobre toda a população, se substituirmos o status quo de mostrar a publicidade A pela estratégia alternativa de mostrar a publicidade B.
+Por exemplo, considere um anúncio que um visitante vê. Você pode estar interessado em medir a alteração em alguma métrica (por exemplo, receita média) se decidir mostrar aos visitantes &quot;anúncio B&quot; em vez de &quot;anúncio A&quot;. O efeito causal de apresentar o anúncio B em vez do anúncio A é de importância fundamental para chegar à decisão de comercialização. Esse efeito causal pode ser medido como a receita média sobre toda a população, se substituirmos o status quo de exibição do anúncio A pela estratégia alternativa de exibição do anúncio B.
 
-O teste A/B é o padrão-ouro do setor para medir objetivamente os efeitos de tais intervenções. A razão crítica pela qual um teste A/B dá origem a uma estimativa causal é porque os visitantes foram aleatorizados para receber uma das variantes possíveis.
+O teste A/B é o padrão ouro no setor para medir objetivamente os efeitos de tais intervenções. A razão crítica pela qual um teste A/B dá origem a uma estimativa causal é devido à aleatoriedade dos visitantes para receber uma das variantes possíveis.
 
-Agora considere uma dimensão que não é alcançada pela aleatoriedade, por exemplo, o estado dos EUA do visitante. Digamos que nossos visitantes vêm principalmente de dois estados, Nova York e Califórnia. A receita média das vendas de uma marca de vestuário de inverno pode ser diferente nos dois estados devido às diferenças climáticas regionais. Nessa situação, o clima pode ser o verdadeiro fator causador das vendas de vestuário no inverno e não o fato de os estados geográficos dos visitantes serem diferentes.
+Agora, considere uma dimensão que não é alcançada por aleatoriedade, por exemplo, o estado do visitante nos EUA. Digamos que nossos visitantes vêm principalmente de dois estados, Nova York e Califórnia. A receita média das vendas de uma marca de roupas de inverno pode ser diferente nos dois estados devido às diferenças no clima regional. Em tal situação, o clima pode ser o verdadeiro fator causal por trás das vendas de roupas de inverno, e não o fato de os estados geográficos dos visitantes serem diferentes.
 
-O painel de experimentação no Customer Journey Analytics permite analisar dados como diferença média de receita por estados dos visitantes. Nestas circunstâncias, a produção não tem uma interpretação causal. No entanto, essa análise pode ainda ser de interesse. Ele fornece uma estimativa (juntamente com medidas de incerteza) da diferença na receita média dos estados dos visitantes. Também é referido como &quot;Teste de Hipótese Estatística&quot;. A saída dessa análise pode ser interessante, mas não necessariamente acionável, pois não temos nem às vezes não podemos aleatoriamente redimensionar visitantes para um dos valores possíveis da dimensão.
+O painel de experimentação no Customer Journey Analytics permite analisar dados como a diferença média de receita por estados dos visitantes. Em tal situação, o resultado não tem uma interpretação causal. No entanto, essa análise pode ainda ser de interesse. Ele fornece uma estimativa (juntamente com medidas de incerteza) da diferença na receita média por estados dos visitantes. Isso também é conhecido como &quot;Teste de Hipótese Estatística&quot;. O resultado dessa análise pode ser interessante, mas não necessariamente acionável, já que não e, às vezes, não podemos aleatoriamente dimensionar visitantes para um dos valores possíveis da dimensão.
 
 A ilustração a seguir contrasta essas situações:
 
 ![experimento aleatório](assets/randomize.png)
 
-Quando você deseja medir o impacto da intervenção X no resultado Y, é possível que a causa real de ambos seja o fator de confusão C. Se os dados não forem alcançados por visitantes aleatórios em X, o impacto é mais difícil de medir, e a análise terá conta explicitamente para C. A aleatoriedade interrompe a dependência de X em C, permitindo medir o efeito de X em Y sem ter que se preocupar com outras variáveis.
+Quando você quiser medir o impacto da intervenção X no resultado Y, é possível que a causa real de ambos seja o fator de confusão C. Se os dados não são alcançados ao randomizar visitantes em X, o impacto é mais difícil de medir, e a análise irá explicar explicitamente C. A randomização quebra a dependência de X em C, permitindo-nos medir o efeito de X em Y sem ter que se preocupar com outras variáveis.

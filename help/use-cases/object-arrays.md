@@ -4,10 +4,10 @@ description: Entenda como o CJA cria relatórios sobre hierarquias de dados.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: afc4dfd808b12be869edbd5e93a4069b93488739
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,9 +17,9 @@ Alguns esquemas da plataforma podem ter arrays de objetos. O CJA oferece suporte
 
 Em versões anteriores do Adobe Analytics, esse recurso era realizado usando a variável `products`. Era uma string concatenada separada por ponto-e-vírgula (`;`) para separar facetas de um produto, enquanto vírgulas (`,`) delineavam produtos. Era a única variável com suporte limitado a &quot;arrays de objetos&quot;. Variáveis multivalor, como variáveis de listas, podem oferecer suporte ao equivalente a arrays, mas não a &quot;arrays de objetos&quot;. O CJA amplia esse conceito ao oferecer suporte arbitrariamente a hierarquias profundas em uma única linha de dados, um recurso indisponível em qualquer versão anterior do Adobe Analytics.
 
-## Mesmo exemplo de ocorrência
+## Mesmo exemplo de evento
 
-A seguinte ocorrência é um objeto JSON que representa uma compra feita por um cliente de uma máquina de lavar e secar.
+O evento a seguir é um objeto JSON que representa uma compra feita por um cliente de uma máquina de lavar e secar.
 
 ```json
 {
@@ -81,9 +81,9 @@ Ao criar uma visualização de dados, as seguintes dimensões e métricas estão
    * produto : garantia
    * produto : garantia : receita
 
-### Exemplos de ocorrências idênticas (comportamento do relatório)
+### Exemplos de mesmos eventos (comportamento do relatório)
 
-Usando apenas a ocorrência acima, as tabelas a seguir mostram os relatórios do Espaço de trabalho com algumas combinações de dimensão e métrica.
+Usando apenas o evento acima, as tabelas a seguir mostram os relatórios do Workspace com algumas combinações de dimensão e métrica.
 
 | `product : name` | `product : orders` | `product : revenue` |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ Se você quiser relatar apenas a receita da garantia, o projeto terá a seguinte
 | `extended` | `50` |
 | `Total` | `250` |
 
-O CJA observa essas partes da ocorrência para gerar o relatório:
+O CJA observa essas partes do evento para gerar o relatório:
 
 ```diff
 {

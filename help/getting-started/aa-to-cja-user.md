@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 97%
+source-wordcount: '1450'
+ht-degree: 96%
 
 ---
 
@@ -76,7 +76,7 @@ Embora ainda não seja possível compartilhar ou publicar [!UICONTROL filtros] (
 
 Além do conceito de alteração de segmentos, os containers de segmentos também são atualizados.
 
-* **Os containers de ocorrência agora são containers [!UICONTROL Evento].** O container de [!UICONTROL Evento] permite detalhar as informações do visitante com base em visualizações/ocorrências de página individuais.
+* **Os containers de ocorrência agora são containers [!UICONTROL Evento].** A variável [!UICONTROL Evento] container permite detalhar as informações do visitante com base em eventos individuais.
 * **Os containers de visita agora são containers de [!UICONTROL Sessão].** O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica.
 * **Os containers do visitante agora são containers [!UICONTROL Pessoa]**. O container de [!UICONTROL Pessoa] inclui todas as sessões e eventos para visitantes dentro do intervalo de tempo especificado.
 

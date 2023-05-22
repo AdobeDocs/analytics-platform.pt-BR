@@ -3,10 +3,10 @@ description: Como os totais do Workspace são calculados.
 title: Totais do Workspace
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 91%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Nas Tabelas de forma livre, aparece uma linha total em cada nível de detalhamento, que pode mostrar dois totais:
 
-* **[!UICONTROL Total geral]** (número cinza abaixo do resultado): esse total representa todas as ocorrências coletadas. Quando um filtro é aplicado no nível do painel ou na tabela de forma livre, esse total é ajustado para refletir todas as ocorrências que correspondem aos critérios do filtro.
+* **[!UICONTROL Total geral]** (número cinza abaixo do resultado): esse total representa todos os eventos coletados. Quando um filtro é aplicado no nível do painel ou na tabela de forma livre, esse total é ajustado para refletir todos os eventos que correspondem aos critérios do filtro.
 * **[!UICONTROL Total da tabela]** (número preto): normalmente esse total é uma parte do [!UICONTROL Total geral] ou igual a ele. Ele reflete todos os filtros de tabela aplicados na tabela de forma livre, incluindo a opção [!UICONTROL Não incluir].
 
 ![](assets/total-row.png)

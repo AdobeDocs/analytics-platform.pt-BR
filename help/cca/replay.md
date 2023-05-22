@@ -4,10 +4,10 @@ description: Entenda o conceito de “repetição” na Cross-Channel Analytics
 exl-id: 1100043a-4e4f-4dbc-9cfc-9dcba5db5f67
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 A Cross-Channel Analytics faz duas passagens de dados em uma determinada conexão:
 
-* **Compilação em tempo real**: a CCA tenta compilar cada hit à medida que ele chega. Os novos dispositivos de rede para o conjunto de dados que nunca se conectaram normalmente não são compilados neste nível. Os dispositivos já reconhecidos são imediatamente compilados.
+* **compilação em tempo real**: a AVC tenta compilar cada evento à medida que ele chega. Os novos dispositivos de rede para o conjunto de dados que nunca se conectaram normalmente não são compilados neste nível. Os dispositivos já reconhecidos são imediatamente compilados.
 * **Repetição**: a CCA “repete” dados com base em identificadores exclusivos que ele aprendeu. É nesse estágio que os novos dispositivos da conexão são compilados. A Adobe oferece dois intervalos de repetição:
    * Diariamente: os dados são repetidos todos os dias com uma janela de retrospectiva de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os visitantes não autenticados devem se autenticar no mesmo dia em que visitam o site.
    * Semanalmente: os dados são repetidos uma vez por semana com uma janela de retrospectiva de sete dias. Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, dados com menos de uma semana não são compilados.
@@ -28,7 +28,7 @@ A CCA tenta compilar cada evento após a coleção em dispositivos e canais conh
 
 *Dados como aparecem no dia em que são coletados:*
 
-| Carimbo de data e hora | ID persistente do conjunto de dados da Web | ID transitória do conjunto de dados da Web | ID da pessoa da central de atendimento | ID de pessoa usada | Explicação da ocorrência | Métrica de pessoas (cumulativa) |
+| Carimbo de data e hora | ID persistente do conjunto de dados da Web | ID transitória do conjunto de dados da Web | ID da pessoa da central de atendimento | ID de pessoa usada | Explicação do evento | Métrica de pessoas (cumulativa) |
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `246` | Bob visita seu site no desktop dele, não autenticado | `1` (246) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob faz logon no desktop | `2` (246 e Bob) |
@@ -48,7 +48,7 @@ Em intervalos regulares (uma vez por semana ou uma vez por dia, dependendo da ja
 
 *Os mesmos dados após a repetição:*
 
-| Carimbo de data e hora | ID persistente do conjunto de dados da Web | ID transitória do conjunto de dados da Web | ID da pessoa da central de atendimento | ID de pessoa usada | Explicação da ocorrência | Métrica de pessoas (cumulativa) |
+| Carimbo de data e hora | ID persistente do conjunto de dados da Web | ID transitória do conjunto de dados da Web | ID da pessoa da central de atendimento | ID de pessoa usada | Explicação do evento | Métrica de pessoas (cumulativa) |
 | --- | --- | --- | --- | --- | --- | --- |
 | `1` | `246` | - | - | `Bob` | Bob visita seu site no desktop dele, não autenticado | `1` (Bob) |
 | `2` | `246` | `Bob` | - | `Bob` | Bob faz logon no desktop | `1` (Bob) |

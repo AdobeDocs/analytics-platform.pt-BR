@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 19d18d497857442c141fda49cdcf1fbe71e9c07f
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
 workflow-type: tm+mt
 source-wordcount: '1245'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Os relatórios de fallout mostram onde os visitantes saíram e continuaram em uma sequência predefinida de páginas. Pode ser definido como sequências eventuais ou exatas |
 | [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) | Mostra os percursos exatos do cliente pelos sites e aplicativos. |
 | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Uma tabela de forma livre não é apenas uma tabela de dados, mas também uma visualização interativa. É a base para a análise de dados no Espaço de trabalho. |
-| [Histograma](/help/analysis-workspace/visualizations/histogram.md) | Um histograma agrupa visitantes, visitas ou ocorrências em compartimentos com base em um volume de métrica. |
+| [Histograma](/help/analysis-workspace/visualizations/histogram.md) | Um histograma agrupa visitantes, visitas ou eventos em compartimentos com base em um volume de métrica. |
 | [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) | Mostra barras horizontais que representam vários valores de uma ou mais métricas. |
 | [Linha](/help/analysis-workspace/visualizations/line.md) | Representa as métricas que usam uma linha para mostrar como os valores são alterados durante um período. Um gráfico de linhas usa o tempo no eixo x. |
 | [Gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | Mostra a relação entre itens de dimensão e até três métricas. |
@@ -53,11 +53,11 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
       ![Botão para adicionar uma visualização](assets/visualization-add-to-panel.png)
 
-   * Adicione um [painel em branco](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=pt-BR)e escolha a visualização que deseja adicionar.
+   * Adicionar um [painel em branco](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=pt-BR), em seguida, escolha a visualização que deseja adicionar.
 
       ![Painel em branco](assets/blank_panel.png)
 
-   * Clique com o botão direito do mouse em um painel existente no projeto do Analysis Workspace e selecione [!UICONTROL **Visualização duplicada**] ou [!UICONTROL **Copiar visualização**].
+   * Clique com o botão direito do mouse em um painel existente no projeto do Analysis Workspace e selecione [!UICONTROL **Duplicar visualização**] ou [!UICONTROL **Copiar visualização**].
 
 ## Personalizar configurações de visualização
 
@@ -86,7 +86,7 @@ Cada visualização tem suas próprias configurações que podem ser gerenciadas
 | Configuração | Descrição |
 | --- | --- |
 | Tipo de visualização | Altere o tipo de visual usado para descrever os dados. |
-| Granularidade | Para visualizações de tendências, você pode alterar a granularidade de tempo (dia, semana, mês etc.) nessa lista suspensa. Essa alteração também se aplica à tabela de fonte de dados. |
+| Granularidade | Para visualizações de tendências, você pode alterar a granularidade de tempo (dia, semana, mês etc.) nesta lista suspensa. Essa alteração também se aplica à tabela de fonte de dados. |
 | Porcentagens | Exibe os valores em porcentagens. |
 | 100% empilhada | Essa configuração de visualizações de área empilhada, barra empilhada ou barra horizontal empilhada transforma o gráfico em uma visualização “100% empilhada”. Exemplo: ![100% empilhada](assets/stacked_100_percent.png) |
 | Legenda visível | Permite ocultar o texto detalhado da legenda para a visualização Número de resumo/Alteração de resumo. |

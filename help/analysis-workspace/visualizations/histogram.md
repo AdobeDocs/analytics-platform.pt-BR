@@ -3,10 +3,10 @@ description: Um histograma é semelhante a um gráfico de barras, mas agrupa os 
 title: Histograma
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Para ajustar as configurações do histograma, clique no ícone de Configuraçõ
 | Grupo inicial | Determina o grupo inicial do histograma. O valor padrão é “1”. Você pode definir números iniciais de 0 a infinito (nenhum número negativo). |
 | Grupos de métricas | Permite aumentar/diminuir o número de intervalos de dados (grupos). O número máximo de grupos é 50. |
 | Tamanho do grupo de métricas | Permite definir o tamanho de cada grupo. Por exemplo, você pode alterar o tamanho do grupo de uma exibição de página para duas exibições de página. |
-| Método de contagem | Permite escolher entre [Visitante](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=pt-BR), [Visita](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=pt-BR) ou Tipo de ocorrência. Por exemplo, exibições de página por visita, por visitante ou por ocorrência. Para ocorrências, “Ocorrências” é usada como a métrica do eixo “y” na tabela de forma livre. |
+| Método de contagem | Permite escolher entre [Visitante](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=pt-BR), [Visita](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=pt-BR) ou Tipo de ocorrência. Por exemplo, exibições de página por visita, por visitante ou por evento. Para ocorrências, “Ocorrências” é usada como a métrica do eixo “y” na tabela de forma livre. |
 
 <!--Russ or Meike - Check Hit Type link above. -->
 

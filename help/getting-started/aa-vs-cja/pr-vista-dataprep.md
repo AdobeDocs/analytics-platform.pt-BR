@@ -2,10 +2,10 @@
 title: Regras de processamento, VISTA e classificações em relação ao Preparo de dados do Conector de origem do Analytics
 description: Saiba mais sobre a transformação de dados usando regras de processamento e VISTA em relação ao uso do Preparo de dados
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
-source-git-commit: 6b7b8e8f1c1e88644961dd5e1b3d2ff7ec07951e
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '611'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -27,6 +27,6 @@ Os dados coletados e armazenados no Adobe Analytics podem ser transformados por 
 
 O Preparo de dados se cruzou com [classificações](https://experienceleague.adobe.com/docs/analytics/components/classifications/c-classifications.html?lang=pt-BR) em algumas situações.
 
-Por exemplo, em um campo delimitado, é possível usar o Preparo de dados para dividir esse campo em vários campos individuais sem o uso de classificações. Geralmente, as classificações são uma maneira de adicionar metadados a um campo, carregando um arquivo de pesquisa que é fornecido fora do fluxo de ocorrências recebidas do Analytics.
+Por exemplo, em um campo delimitado, é possível usar o Preparo de dados para dividir esse campo em vários campos individuais sem o uso de classificações. Geralmente, as classificações são uma maneira de adicionar metadados a um campo, carregando um arquivo de pesquisa fornecido fora do fluxo de eventos de entrada do Analytics.
 
 Por exemplo, você pode fazer upload de um arquivo de classificação que agrupa SKUs em “tamanho”, “marca”, “cor” etc. Outra diferença entre classificações e Preparo de dados é que as classificações se aplicam aos dados _tanto históricos quanto futuros_. Por outro lado, os mapeamentos de Preparo de dados são aplicados _antecipadamente_ para dados a partir do momento em que o mapeamento é criado.

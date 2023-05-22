@@ -3,10 +3,10 @@ description: Saiba como especificar os pontos de contato para criar uma sequênc
 title: Configurar uma visualização de fallout
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ Você também pode adicionar filtros em um ponto de contato. Por exemplo, você 
 
 Não há limite de número de etapas que você pode adicionar ou do número de dimensões usadas.
 
-Você pode definir o caminho das eVars, incluindo eVars de comercialização e [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=pt-BR) (variáveis que podem ter vários valores por clique, como produtos, listVars, eVars de comercialização e apoios de listas). Por exemplo, suponha que alguém esteja pesquisando sapatos e camisetas em uma página e camisetas e meias em outra. O próximo relatório de fluxo do produto para sapatos será camisetas e meias, e NÃO camisetas.
+É possível definir o caminho das eVars, incluindo eVars de merchandising e [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=pt-BR) (variáveis que podem ter vários valores por evento, como produtos, listVars, eVars de merchandising e propriedades de lista). Por exemplo, suponha que alguém esteja pesquisando sapatos e camisetas em uma página e camisetas e meias em outra. O próximo relatório de fluxo do produto para sapatos será camisetas e meias, e NÃO camisetas.
 
 1. Arraste uma visualização de [!UICONTROL Fallout] do menu suspenso Visualizações em uma [!UICONTROL Tabela de forma livre].
 
@@ -42,7 +42,7 @@ Você pode definir o caminho das eVars, incluindo eVars de comercialização e [
 
    ![](assets/multiple_obj_touchpoint.png)
 
-1. Também é possível **restringir pontos de contato individuais à próxima ocorrência** (em vez de eventualmente) dentro do caminho. Embaixo de cada ponto de contato, há um seletor com as opções “Caminho eventual” e “Próxima ocorrência”, da seguinte forma:
+1. Também é possível **restringir pontos de contato individuais ao próximo evento** (em vez de &quot;eventualmente&quot;) dentro do caminho. Embaixo de cada ponto de contato, há um seletor com as opções “Caminho eventual” e “Próxima ocorrência”, da seguinte forma:
 
    ![](assets/next-hit-eventually.png)
 
@@ -50,11 +50,11 @@ Você pode definir o caminho das eVars, incluindo eVars de comercialização e [
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Caminho eventual </p> <p>(Padrão) </p> </td> 
-   <td colname="col2"> <p>Visitantes contados que “eventualmente” serão direcionados para a próxima página no caminho, mas não necessariamente na próxima ocorrência. </p> </td> 
+   <td colname="col2"> <p>São contados os visitantes que serão "eventualmente" direcionados à próxima página do caminho, mas não necessariamente ao próximo evento. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Próxima ocorrência </p> </td> 
-   <td colname="col2"> <p>Visitantes contados que serão direcionados para a próxima página no caminho na próxima ocorrência. </p> </td> 
+   <td colname="col2"> <p>São contados os visitantes que chegarão à próxima página do caminho no próximo evento. </p> </td> 
   </tr> 
  </tbody> 
 </table>
