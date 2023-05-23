@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Customer Journey Analytics (CJA) e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 970f93737f35a84c0e28061d2c6a8215c8b070ec
+source-git-commit: e7a27030459f0755ef445fffd4c86f79d4333d72
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 98%
+source-wordcount: '899'
+ht-degree: 97%
 
 ---
 
@@ -192,6 +192,21 @@ ht-degree: 98%
 
 
 
++ Painéis do Analytics {#cja-dashboards}
+   + [Painéis do Analytics - Visão geral](../mobile-app/home.md)
+   + [Tarefas do curador](../mobile-app/curator.md)
+   + [Criar um cartão de pontuação móvel](../mobile-app/create-scorecard.md)
+   + [Configurar executivos para usar painéis](../mobile-app/set-up-execs.md)
+   + [Guia de início rápido do usuário executivo](../mobile-app/executive.md)
+
++ Análise guiada {#guided-analysis}
+   + [Visão geral](../guided-analysis/overview.md)
+   + [Interface](../guided-analysis/interface.md)
+   + Tipos de análise {#analysis-types}
+      + [Visão geral](../guided-analysis/analysis-types/overview.md)
+      + [Funil](../guided-analysis/analysis-types/funnel.md)
+      + [Tendências](../guided-analysis/analysis-types/trends.md)
+      + [Crescimento de usuários](../guided-analysis/analysis-types/user-growth.md)
 
 + Componentes {#cja-components}
    + [Visão geral dos componentes](../components/overview.md)
@@ -259,13 +274,6 @@ ht-degree: 98%
 
 
 
-
-+ Painéis do Analytics {#cja-dashboards}
-   + [Painéis do Analytics - Visão geral](../mobile-app/home.md)
-   + [Tarefas do curador](../mobile-app/curator.md)
-   + [Criar um cartão de pontuação móvel](../mobile-app/create-scorecard.md)
-   + [Configurar executivos para usar painéis](../mobile-app/set-up-execs.md)
-   + [Guia de início rápido do usuário executivo](../mobile-app/executive.md)
 
 + Report Builder {#cja-reportbuilder}
    + [Visão geral do Report Builder](../report-builder/report-buider-overview.md)
