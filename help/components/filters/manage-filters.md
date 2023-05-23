@@ -2,10 +2,10 @@
 title: Gerenciar filtros
 description: saiba como gerenciar filtros no Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
-source-git-commit: bd7a6d8ea46b27c465fcc8db4b9a317e517939a6
-workflow-type: ht
-source-wordcount: '1094'
-ht-degree: 100%
+source-git-commit: ec8760cf9984d4e962992f613c4a58a52fa29d47
+workflow-type: tm+mt
+source-wordcount: '1102'
+ht-degree: 99%
 
 ---
 
@@ -125,7 +125,7 @@ Para compartilhar um filtro:
 
 1. Na barra de ferramentas do gerenciamento de filtros, clique em **[!UICONTROL Compartilhar]**.
 
-1. Se você for um Administrador, é possível selecionar Tudo ou escolher a partir de Grupos e Usuários na organização. Como um não Administrador, você pode usar somente os usuários individuais. Use o campo Pesquisa para pesquisar por grupos ou usuários. Clique em **[!UICONTROL Compartilhar]**. O ícone Compartilhado aparece ao lado do filtro: ![](assets/share_icon.png)
+1. Se você for um Administrador, é possível selecionar Tudo ou escolher a partir de Grupos e Usuários na organização. Como um não Administrador, você pode usar somente os usuários individuais. Use o campo Pesquisa para pesquisar por grupos ou usuários. Clique em **[!UICONTROL Compartilhar]**. O ícone Compartilhado aparece ao lado do filtro: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
 1. É possível filtrar por filtros compartilhados com você em Filtros > Outros filtros > Compartilhados comigo.
 

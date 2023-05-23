@@ -3,10 +3,10 @@ description: O Criador de métricas calculadas oferece uma tela para arrastar e 
 title: Criar métricas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '930'
-ht-degree: 100%
+source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
+workflow-type: tm+mt
+source-wordcount: '938'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Há várias maneiras de acessar o Criador de métricas calculadas:
 
 * Clique em **[!UICONTROL + Adicionar]** na parte superior do [Gerenciador de métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md) ou
 
-* Vá para **[!UICONTROL Analytics]** > **[!UICONTROL Relatórios]**, abra um relatório e clique no ícone Métricas ![](assets/metrics_icon.png) para mostrar o painel Métricas e clique em **[!UICONTROL Adicionar]**.
+* Vá para **[!UICONTROL Analytics]** > **[!UICONTROL Relatórios]**, abra um relatório e clique no ícone Métricas ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) para mostrar o painel Métricas e clique em **[!UICONTROL Adicionar]**.
 
 ![](assets/cm_builder_ui.png)
 

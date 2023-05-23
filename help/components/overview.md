@@ -4,10 +4,10 @@ description: Saiba quais componentes o CJA oferece e como usá-los no relatório
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
+source-git-commit: 3b98047d7ac04b370dc9c03300f75b7313e79e5a
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 62%
+source-wordcount: '1035'
+ht-degree: 57%
 
 ---
 
@@ -89,25 +89,25 @@ Pesquise, filtre e classifique a lista de componentes no painel esquerdo do Anal
 
 ### Pesquisar a lista de componentes
 
-1. Selecione o **Componentes** ícone ![Ícone Componentes](assets/components-icon.png) no painel esquerdo.
+1. Selecione o **Componentes** ícone ![Ícone Componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) no painel esquerdo.
 
-1. No campo de pesquisa, comece digitando o nome do componente que deseja usar em seu projeto.
+2. No campo de pesquisa, comece digitando o nome do componente que deseja usar em seu projeto.
 
-   O tipo de componente pode ser identificado por cor e ícone. **Dimension** ![Ícone do Dimension](assets/dimension-icon.png) são laranja, **Filtros** ![Ícone Filtrar](assets/segment-icon.png) são azuis, **Intervalos de datas** ![Ícone de intervalo de datas](assets/date-range-icon.png) são roxas, e **Métricas** ![Ícone de Métrica](assets/default-metric-icon.png) são verdes. O ícone Adobe ![Ícone do Adobe](assets/default-calc-metric-icon.png) indica um modelo de métrica calculada ou um modelo de filtro, e o ícone calculadora ![Ícone da Calculadora](assets/calculated-metric-icon-created.png) indicou uma métrica calculada que foi criada por um administrador do Analytics em sua organização.
+   O tipo de componente pode ser identificado por cor e ícone. **Dimension** ![Ícone do Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) são laranja, **Filtros** ![Ícone Filtrar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis, **Intervalos de datas** ![Ícone de intervalo de datas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxas, e **Métricas** ![Ícone de Métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) são verdes. O ícone Adobe ![Ícone do Adobe](assets/default-calc-metric-icon.png) indica um modelo de métrica calculada ou um modelo de filtro, e o ícone calculadora ![Ícone da Calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indicou uma métrica calculada que foi criada por um administrador do Analytics em sua organização.
 
-1. Selecione o componente quando ele aparecer na lista suspensa.
+3. Selecione o componente quando ele aparecer na lista suspensa.
 
 ### Filtrar a lista de componentes
 
-1. Selecione o **Componentes** ícone ![Ícone Componentes](assets/components-icon.png) no painel esquerdo.
+1. Selecione o **Componentes** ícone ![Ícone Componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) no painel esquerdo.
 
-1. Selecione o **Filtro** ícone ![Ícone Filtro do dicionário de dados](assets/components-filter-icon.png).
+2. Selecione o **Filtro** ícone ![Ícone Filtro do dicionário de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
 
    Ou
 
    Digite o sinal de libra (#) no campo de pesquisa.
 
-1. Selecione qualquer uma das seguintes opções de filtro para filtrar a lista de componentes:
+3. Selecione qualquer uma das seguintes opções de filtro para filtrar a lista de componentes:
 
    | Opção | Função |
    |---------|----------|
@@ -120,7 +120,7 @@ Pesquise, filtre e classifique a lista de componentes no painel esquerdo do Anal
    | [!UICONTROL **Exibir tudo**] | Mostrar todos os componentes. Essa opção está disponível somente para administradores. |
    | [!UICONTROL **Não aprovado**] | Mostrar somente componentes que ainda não foram marcados como Aprovado por um administrador. Como administrador, isso é útil ao identificar componentes que exigem sua análise e aprovação. Essa opção está disponível somente para administradores. |
 
-1. (Opcional) Para aprimorar ainda mais a lista, você pode classificar a lista de componentes, conforme descrito em [Classificar a lista de componentes](#sort-the-component-list).
+4. (Opcional) Para aprimorar ainda mais a lista, você pode classificar a lista de componentes, conforme descrito em [Classificar a lista de componentes](#sort-the-component-list).
 
 ### Classificar a lista de componentes
 
@@ -128,9 +128,9 @@ Pesquise, filtre e classifique a lista de componentes no painel esquerdo do Anal
 
 1. (Opcional) Aplique filtros à lista de componentes, conforme descrito em [Filtrar a lista de componentes](#filter-the-component-list).
 
-1. Selecione o **Componentes** ícone ![Ícone Componentes](assets/components-icon.png) no painel esquerdo.
+2. Selecione o **Componentes** ícone ![Ícone Componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg) no painel esquerdo.
 
-1. Selecione o **Ordenar** ícone ![Ícone Classificar componentes](assets/component-sort-icon.png), em seguida, selecione qualquer uma das seguintes opções de filtro para classificar a lista de componentes:
+3. Selecione o **Ordenar** ícone ![Ícone Classificar componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), em seguida, selecione qualquer uma das seguintes opções de filtro para classificar a lista de componentes:
 
    {{components-sort-options}}
 
