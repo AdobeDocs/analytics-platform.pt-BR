@@ -1,12 +1,12 @@
 ---
-description: 'Segmentar métricas individuais permite comparar métricas em um mesmo relatório. '
+description: Segmentar métricas individuais permite comparar métricas em um mesmo relatório.
 title: Métricas segmentadas
 feature: Calculated Metrics
-exl-id: 1e7e048b-9d90-49aa-adcc-15876c864e04
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ No Criador de métrica calculada, é possível aplicar filtros em suas definiç�
 Suponhamos que você deseje comparar diferentes aspectos de um filtro “Visitantes alemães” com os de um filtro “Visitantes internacionais”. É possível criar métricas para obter insights como:
 
 * Qual é a diferença de comportamento de navegação no conteúdo entre os dois grupos? (Outro exemplo seria: qual é a diferença da taxa de conversão entre os dois filtros?)
-* Como uma porcentagem do total de visitantes, quantos visitantes alemães navegam por determinadas páginas em comparação com os visitantes internacionais?
+* Em porcentagem do total de pessoas, quantas pessoas alemãs navegam por determinadas páginas, em comparação com pessoas internacionais?
 * Quais são as maiores diferenças em termos de conteúdo acessado por esses diferentes filtros?
 
 1. Caso não tenha um filtro para comparação, crie um segmento adhoc no Criador de métrica calculada chamado “Visitantes alemães”, no qual “Países” corresponda a “Alemanha”. Basta arrastar a dimensão Países para a tela Definição e selecionar Alemanha como o valor:

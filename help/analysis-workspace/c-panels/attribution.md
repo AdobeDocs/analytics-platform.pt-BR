@@ -3,10 +3,10 @@ title: Painel de atribuição
 description: Como usar e interpretar o painel de atribuição no Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 94%
+ht-degree: 86%
 
 ---
 
@@ -36,7 +36,7 @@ O Customer Journey Analytics aprimora a atribuição ao permitir:
 
    ![Selecionar dimensão e métrica](assets/attribution_panel2.png)
 
-1. Selecione os modelos de atribuição e a janela de pesquisa que deseja comparar.
+1. Selecione os modelos de atribuição e a janela de retrospectiva que você deseja comparar.
 
 1. O painel Atribuição retorna um conjunto avançado de dados e visualizações que comparam a atribuição da dimensão e da métrica selecionadas.
 
@@ -47,7 +47,7 @@ O Customer Journey Analytics aprimora a atribuição ao permitir:
 * **Métrica total**: o número total de conversões que ocorreram ao longo da janela de tempo do relatório. Essas são as conversões atribuídas pela dimensão selecionada.
 * **Barra de comparação de atribuição**: compara visualmente as conversões atribuídas em cada um dos itens da dimensão selecionada. Cada cor da barra representa um modelo de atribuição distinto.
 * **Tabela de comparação de atribuição**: mostra os mesmos dados que o gráfico de barras, mas representados como uma tabela. Selecionar diferentes colunas ou linhas nesta tabela filtra o gráfico de barras, bem como várias outras visualizações no painel. Esta tabela atua de maneira semelhante a qualquer outra Tabela de forma livre no Workspace, permitindo adicionar componentes como métricas, filtros ou detalhamentos.
-* **Diagrama de sobreposição**: um diagrama Venn mostrando os três principais itens de dimensão e a frequência com que eles participam em conjunto em uma conversão. Por exemplo, o tamanho da sobreposição entre as bolhas indica com que frequência as conversões ocorreram quando um visitante foi exposto a ambos os itens de dimensão. Selecionar outras linhas na tabela de Forma livre adjacente atualizará a visualização para refletir a seleção.
+* **Diagrama de sobreposição**: um diagrama Venn mostrando os três principais itens de dimensão e a frequência com que eles participam em conjunto em uma conversão. Por exemplo, o tamanho da sobreposição entre as bolhas indica com que frequência as conversões ocorreram quando uma pessoa foi exposta a ambos os itens de dimensão. Selecionar outras linhas na tabela de Forma livre adjacente atualizará a visualização para refletir a seleção.
 * **Detalhe de desempenho**: permite comparar até três modelos de atribuição visualmente usando um gráfico de dispersão.
 * **Desempenho com tendência**: mostra a tendência das conversões atribuídas para o item de dimensão principal. Selecionar outras linhas na tabela de Forma livre adjacente atualizará a visualização para refletir a seleção.
-* **Fluxo**: permite ver com quais canais a interação é mais comum e em que ordem isso acontece na jornada do visitante.
+* **Fluxo**: permite ver em quais canais a interação é mais comum e em que ordem isso acontece na jornada de uma pessoa.

@@ -4,10 +4,10 @@ description: É possível definir preferências gerais e de projeto para usuári
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 440a23258b0a4bd024894168e3201ee0c2d5c756
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '3150'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -160,7 +160,7 @@ Clique nos títulos da seção vinculada para obter mais informações e context
 |  | Mostrar comparação | Mostrar dados de comparação. Quando ocultos, o gráfico de linha de comparação e os objetos de alteração de resumo não serão exibidos. |
 |  | Opções de valor numérico | Na seção [!UICONTROL **Resumo das métricas principais**] <ul><li>Mostrar variação percentual</li><li>Mostrar diferença bruta</li>Diferença bruta entre o valor total da métrica no intervalo de datas principal e o intervalo de datas secundário</ul> |
 | **[Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)** |  |  |
-|  | Contêiner | Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. O padrão é Visitante. Essas configurações ajudam você a entender o envolvimento no nível dos visitantes (ao longo das visitas) ou restringir a análise a uma só visita. <p>As opções disponíveis são as seguintes:</p> <ul><li>Visita</li><li>Visitante</li></ul> |
+|  | Contêiner | Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. O padrão é Visitante. Essas configurações ajudam você a entender o engajamento da pessoa no nível da pessoa (em várias sessões) ou restringir a análise a uma única sessão. <p>As opções disponíveis são as seguintes:</p> <ul><li>Visita</li><li>Visitante</li></ul> |
 | **[Fluxo](/help/analysis-workspace/visualizations/c-flow/create-flow.md)** |  |  |
 |  | Contêiner | Na seção [!UICONTROL **Fluxo**] <ul><li>Visita</li><li>Visitante</li></ul> |
 |  | Rótulos de quebra de linha | Normalmente, os rótulos nos Elementos de fluxo são truncados para não poluir visualmente a tela, mas é possível tornar todos os rótulos visíveis ao selecionar esta caixa. Padrão = desmarcado. |
@@ -172,7 +172,7 @@ Clique nos títulos da seção vinculada para obter mais informações e context
 |  | 100% empilhada | Essa configuração de visualizações de área empilhada, barra empilhada ou barra horizontal empilhada transforma o gráfico em uma visualização “100% empilhada”.  <p>Para obter mais informações, consulte [Barra e Barra empilhada](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histograma](/help/analysis-workspace/visualizations/histogram.md)** |  |  |
 |  | Número de grupos | Escolha o número de intervalos de dados (grupos) na visualização. O número máximo de grupos é 50. <p>Para obter mais informações, consulte [Histograma](/help/analysis-workspace/visualizations/histogram.md).</p> |
-|  | Método de contagem | Escolha entre as seguintes opções: <ul><li>Ocorrência</li><li>Visita</li><li>Visitante</li></ul> <p>Por exemplo, quando usado em conjunto com exibições de página, você pode escolher exibições de página por visitante, exibições de página para visita ou exibições de página por evento. Para ocorrências, “Ocorrências” é usada como a métrica do eixo “y” na tabela de forma livre.</p> |
+|  | Método de contagem | Escolha entre as seguintes opções: <ul><li>Ocorrência</li><li>Visita</li><li>Visitante</li></ul> <p>Por exemplo, quando usado em conjunto com exibições de página, você pode escolher exibições de página por pessoa, exibições de página para visita ou exibições de página por evento. Para ocorrências, “Ocorrências” é usada como a métrica do eixo “y” na tabela de forma livre.</p> |
 | **[Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md)** |  |  |
 |  | Valor | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Mudança percentual</li><li>Diferença bruta</li></ul> |
 |  | Porcentagens | Exibe valores em porcentagens para as visualizações do Resumo de alterações. |

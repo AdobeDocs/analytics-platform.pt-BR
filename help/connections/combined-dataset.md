@@ -4,10 +4,10 @@ description: Saiba como o CJA cria uma conexão combinando conjuntos de dados.
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 6b5f4659e9bae02e2665db3c0ee02d143dbc7ea0
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 Ao criar uma conexão, o Customer Journey Analytics (CJA ) combina todos os esquemas e conjuntos de dados em um único conjunto de dados. Esse &quot;conjunto de dados combinados&quot; é o que o CJA usa para os relatórios. Ao incluir vários esquemas ou conjuntos de dados em uma conexão:
 
 * Os esquemas são combinados. Os campos de esquema duplicados são unidos.
-* A coluna &quot;ID de pessoa&quot; de cada conjunto de dados é unida em uma única coluna, independentemente do nome. Essa coluna é a base para identificar visitantes únicos no CJA.
+* A coluna &quot;ID de pessoa&quot; de cada conjunto de dados é unida em uma única coluna, independentemente do nome. Essa coluna é a base para identificar pessoas únicas no CJA.
 * As linhas são processadas com base no carimbo de data e hora.
 * Os eventos são resolvidos até o nível de milissegundo.
 
@@ -58,7 +58,7 @@ Ao criar uma conexão usando esses dois conjuntos de dados de eventos, a tabela 
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` |  | `Square` |  | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` |  |  | `Triangle` |  | `3.1` |
 
-Esse conjunto de dados combinados de eventos é o que é usado nos relatórios. Não importa de que conjunto de dados uma linha é derivada; o CJA trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados o mesmo visitante único. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão.
+Esse conjunto de dados combinados de eventos é o que é usado nos relatórios. Não importa de que conjunto de dados uma linha é derivada; o CJA trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados a mesma pessoa única. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão.
 
 Este conceito também se aplica à atribuição. Não importa de que conjunto de dados uma linha é derivada; a atribuição funciona exatamente como se todos os eventos viessem de um único conjunto de dados. Usando as tabelas acima como exemplo:
 

@@ -2,10 +2,10 @@
 title: Operadores de filtro
 description: Determinam como um componente interage com um valor em um filtro.
 exl-id: 744c7450-d6e9-4f78-a306-fe725ea0fa18
-source-git-commit: a8b884148a197b081e321582f70a9188a1bdc51e
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ O construtor de filtros permite que você compare e restrinja valores com os ope
 
 ## Operadores de contagem distinta
 
-É possível segmentar em uma contagem distinta de itens em uma dimensão. Por exemplo, você pode criar filtros para visitantes que visualizaram mais de 5 produtos distintos ou visitas nas quais mais de 5 páginas distintas foram visualizadas.
+É possível segmentar em uma contagem distinta de itens em uma dimensão. Por exemplo, você pode criar filtros para pessoas que visualizaram mais de 5 produtos distintos ou visitas nas quais mais de 5 páginas distintas foram visualizadas.
 
 | Operador | Descrição |
 | --- | --- |

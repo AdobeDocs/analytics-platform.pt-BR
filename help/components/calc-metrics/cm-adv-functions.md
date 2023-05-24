@@ -3,10 +3,10 @@ title: Referência - funções avançadas
 description: Para acessar essas funções, selecione Mostrar avançadas na lista suspensa Funções.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3c108836e72cb85e0f9c379d7c945f867fb09699
-workflow-type: ht
-source-wordcount: '3111'
-ht-degree: 100%
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
+source-wordcount: '3105'
+ht-degree: 98%
 
 ---
 
@@ -177,7 +177,7 @@ fx Confidence (normalizing-container, success-metric, control, significance-thre
 | Controle | A variante com a qual todas as outras variantes do experimento estão sendo comparadas. Insira o nome do item de dimensão da variante de controle. |
 | Limite de significância | O limite nesta função é definido como um padrão de 95%. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Cosseno (Linha)
 
@@ -225,10 +225,10 @@ Se N &lt;= 0, usa todas as linhas anteriores. Já que é ordenado pela dimensão
 
 >[!NOTE]
 >
->Isso não funciona conforme o esperado com métricas de taxa como receita/visitante: calcula a média das taxas em vez de dividir a soma da receita dos últimos N e a soma dos visitantes dos últimos N. Em vez disso, use
+>Isso não funciona conforme o esperado com métricas de taxa como receita/pessoa: calcula a média das taxas em vez de dividir a soma da receita dos últimos N e a soma das pessoas dos últimos N. Em vez disso, use
 
 ```
-cumul(revenue)/cumul(visitor)
+cumul(revenue)/cumul(person)
 ```
 
 ## Igual
@@ -366,7 +366,7 @@ fx Lift (normalizing-container, success-metric, control)
 | Métrica de Sucesso | A métrica, ou as métricas, com as quais um usuário está comparando variantes. |
 | Controle | A variante com a qual todas as outras variantes do experimento estão sendo comparadas. Insira o nome do item de dimensão da variante de controle. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Regressão linear: Coeficiente de correlação
 

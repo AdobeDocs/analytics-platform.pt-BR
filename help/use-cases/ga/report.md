@@ -4,10 +4,10 @@ description: Mostra relatórios úteis sobre dados do Google Analytics no Custom
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ Você pode analisar a tendência do tempo gasto na central de atendimento dos ú
 
 ![Volume de chamadas](../assets/call-volume.png)
 
-O uso da dimensão “Motivo da chamada” pode indicar maneiras de melhorar a experiência online, impedindo que os visitantes façam chamadas. O exemplo acima mostra que o motivo “Produto danificado” tem um tempo médio de chamada de quase 3 minutos, proporcionando à sua organização uma maneira precisa de melhorar a experiência do cliente e reduzir os custos da central de atendimento.
+O uso da dimensão &quot;Motivo da chamada&quot; pode indicar maneiras de melhorar a experiência online, impedindo que pessoas façam chamadas. O exemplo acima mostra que o motivo “Produto danificado” tem um tempo médio de chamada de quase 3 minutos, proporcionando à sua organização uma maneira precisa de melhorar a experiência do cliente e reduzir os custos da central de atendimento.
 
 Você pode ver quais produtos causam a maioria das chamadas para sua central de atendimento e quantos clientes fizeram essas chamadas. O gráfico de bolhas indica que 20.000 pessoas telefonaram, gastaram mais de 4 horas e 30 minutos e devolveram 33 unidades do produto “Camiseta masculina de manga curta”.
 
@@ -35,7 +35,7 @@ Você pode ver quais produtos causam a maioria das chamadas para sua central de 
 
 Aplicando um detalhamento de dimensão ao “Motivo da chamada”, o exemplo mostra um item de dimensão “Produto danificado”. O próximo passo seria entrar em contato com o departamento de controle de qualidade e ver por que os clientes têm recebido camisetas com defeito.
 
-Você pode ver quais páginas do site geraram chamadas para a central de atendimento. Esse relatório permite saber onde estão as experiências com baixo desempenho no site e ajuda os seus gerentes de produto a resolver esses desafios. O exemplo a seguir usa uma métrica calculada com um modelo de atribuição de participação para filtrar os dados somente para sessões que terminaram com uma chamada de central de atendimento.
+Você pode ver quais páginas do site geraram chamadas para a central de atendimento. Esse relatório permite saber onde estão as experiências com baixo desempenho no site e ajuda os seus gerentes de produto a resolver esses desafios. O exemplo a seguir usa uma métrica calculada com um modelo de atribuição de participação para filtrar os dados somente para sessões que terminaram com uma chamada para a central de atendimento.
 
 O exemplo a seguir mostra que as páginas “Carrinho de compras” e “Informações de check-out” geram a maioria das chamadas.
 

@@ -3,7 +3,7 @@ description: Saiba como analisar os resultados de testes A/B no painel de experi
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 75%
@@ -110,18 +110,18 @@ Uma sequência de confiança de 95% incluirá o valor “true” da métrica de 
 
 ## Interpretar dimensões não aleatórias {#non-randomized}
 
-O CJA permite que os analistas selecionem qualquer dimensão como o &quot;experimento&quot;. Mas como você interpreta uma análise em que a dimensão escolhida como experimento não é aquela para a qual os visitantes são aleatórios?
+O CJA permite que os analistas selecionem qualquer dimensão como o &quot;experimento&quot;. Mas como você interpreta uma análise em que a dimensão escolhida como experimento não é aquela para a qual as pessoas são aleatórias?
 
-Por exemplo, considere um anúncio que um visitante vê. Você pode estar interessado em medir a alteração em alguma métrica (por exemplo, receita média) se decidir mostrar aos visitantes &quot;anúncio B&quot; em vez de &quot;anúncio A&quot;. O efeito causal de apresentar o anúncio B em vez do anúncio A é de importância fundamental para chegar à decisão de comercialização. Esse efeito causal pode ser medido como a receita média sobre toda a população, se substituirmos o status quo de exibição do anúncio A pela estratégia alternativa de exibição do anúncio B.
+Por exemplo, considere um anúncio que uma pessoa vê. Você pode estar interessado em medir a alteração em alguma métrica (por exemplo, receita média) se decidir mostrar às pessoas &quot;anúncio B&quot; em vez de &quot;anúncio A&quot;. O efeito causal de apresentar o anúncio B em vez do anúncio A é de importância fundamental para chegar à decisão de comercialização. Esse efeito causal pode ser medido como a receita média sobre toda a população, se substituirmos o status quo de exibição do anúncio A pela estratégia alternativa de exibição do anúncio B.
 
-O teste A/B é o padrão ouro no setor para medir objetivamente os efeitos de tais intervenções. A razão crítica pela qual um teste A/B dá origem a uma estimativa causal é devido à aleatoriedade dos visitantes para receber uma das variantes possíveis.
+O teste A/B é o padrão ouro no setor para medir objetivamente os efeitos de tais intervenções. A razão crítica pela qual um teste A/B dá origem a uma estimativa causal é devido à aleatoriedade das pessoas para receberem uma das variantes possíveis.
 
-Agora, considere uma dimensão que não é alcançada por aleatoriedade, por exemplo, o estado do visitante nos EUA. Digamos que nossos visitantes vêm principalmente de dois estados, Nova York e Califórnia. A receita média das vendas de uma marca de roupas de inverno pode ser diferente nos dois estados devido às diferenças no clima regional. Em tal situação, o clima pode ser o verdadeiro fator causal por trás das vendas de roupas de inverno, e não o fato de os estados geográficos dos visitantes serem diferentes.
+Agora, considere uma dimensão que não é alcançada por aleatoriedade, por exemplo, o estado da pessoa nos EUA. Digamos que nossas pessoas vêm principalmente de dois estados, Nova York e Califórnia. A receita média das vendas de uma marca de roupas de inverno pode ser diferente nos dois estados devido às diferenças no clima regional. Em tal situação, o clima pode ser o verdadeiro fator causal por trás das vendas de roupas de inverno, e não o fato de os estados geográficos das pessoas serem diferentes.
 
-O painel de experimentação no Customer Journey Analytics permite analisar dados como a diferença média de receita por estados dos visitantes. Em tal situação, o resultado não tem uma interpretação causal. No entanto, essa análise pode ainda ser de interesse. Ele fornece uma estimativa (juntamente com medidas de incerteza) da diferença na receita média por estados dos visitantes. Isso também é conhecido como &quot;Teste de Hipótese Estatística&quot;. O resultado dessa análise pode ser interessante, mas não necessariamente acionável, já que não e, às vezes, não podemos aleatoriamente dimensionar visitantes para um dos valores possíveis da dimensão.
+O painel de experimentação em Customer Journey Analytics permite analisar dados como a diferença média de receita por estados das pessoas. Em tal situação, o resultado não tem uma interpretação causal. No entanto, essa análise pode ainda ser de interesse. Fornece uma estimativa (juntamente com medidas de incerteza) da diferença na receita média por estados das pessoas. Isso também é conhecido como &quot;Teste de Hipótese Estatística&quot;. O resultado dessa análise pode ser interessante, mas não necessariamente acionável, já que não e, às vezes, não podemos aleatoriamente tornar as pessoas em um dos valores possíveis da dimensão.
 
 A ilustração a seguir contrasta essas situações:
 
 ![experimento aleatório](assets/randomize.png)
 
-Quando você quiser medir o impacto da intervenção X no resultado Y, é possível que a causa real de ambos seja o fator de confusão C. Se os dados não são alcançados ao randomizar visitantes em X, o impacto é mais difícil de medir, e a análise irá explicar explicitamente C. A randomização quebra a dependência de X em C, permitindo-nos medir o efeito de X em Y sem ter que se preocupar com outras variáveis.
+Quando você quiser medir o impacto da intervenção X no resultado Y, é possível que a causa real de ambos seja o fator de confusão C. Se os dados não são obtidos por pessoas randomizadas em X, o impacto é mais difícil de medir, e a análise irá explicar explicitamente C. A randomização quebra a dependência de X em C, permitindo-nos medir o efeito de X em Y sem ter que se preocupar com outras variáveis.

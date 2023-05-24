@@ -3,10 +3,10 @@ description: Como os totais do Workspace são calculados.
 title: Totais do Workspace
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 91%
+ht-degree: 81%
 
 ---
 
@@ -29,8 +29,8 @@ Em **[!UICONTROL Configurações da coluna]**, há opções para **[!UICONTROL M
 
 Os totais de [linhas estáticas](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) se comportam de maneira diferente e são controlados em **[!UICONTROL Configurações da linha]**.
 
-* **[!UICONTROL Mostrar a soma das linhas atuais como total]**: mostra uma soma das linhas da tabela do lado do cliente, o que significa que o total **não** removerá a duplicação de métricas como visitas ou visitantes.
-* **[!UICONTROL Mostrar total geral]**: mostra uma soma do lado do servidor, o que significa que o total removerá a duplicação de métricas como visitas ou visitantes.
+* **[!UICONTROL Mostrar a soma das linhas atuais como total]** - mostra uma soma das linhas do lado do cliente na tabela, o que significa que o total **não** remove a duplicação de métricas como visitas ou pessoas.
+* **[!UICONTROL Mostrar Total Geral]** - mostra uma soma do lado do servidor, o que significa que o total removerá a duplicação de métricas como visitas ou pessoas.
 
 ![](assets/static-rows.png)
 

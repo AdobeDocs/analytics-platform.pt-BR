@@ -3,16 +3,16 @@ description: Saiba como especificar os pontos de contato para criar uma sequênc
 title: Configurar uma visualização de fallout
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 87%
+ht-degree: 71%
 
 ---
 
 # Configurar uma visualização de fallout
 
-Você pode especificar os pontos de contato para criar uma sequência de fallout multidimensional. Geralmente, um ponto de contato é uma página no seu site. Contudo, pontos de contato não estão limitados a páginas. Por exemplo, você pode adicionar eventos, como unidades, bem como visitante únicos e visitantes que retornam. Você também pode adicionar dimensões, como uma categoria, tipo de navegador ou termo de pesquisa interno.
+Você pode especificar os pontos de contato para criar uma sequência de fallout multidimensional. Geralmente, um ponto de contato é uma página no seu site. Contudo, pontos de contato não estão limitados a páginas. Por exemplo, você pode adicionar eventos, como unidades, pessoas únicas e visitas de retorno. Você também pode adicionar dimensões, como uma categoria, tipo de navegador ou termo de pesquisa interno.
 
 Você também pode adicionar filtros em um ponto de contato. Por exemplo, você pode querer comparar filtros, como usuários de iOS e Android. Arraste os filtros desejados para o topo do fallout e as informações sobre os filtros são adicionadas ao relatório de fallout. Se quiser exibir somente esses filtros, é possível remover a linha de base Todas as visitas.
 
@@ -26,7 +26,7 @@ Não há limite de número de etapas que você pode adicionar ou do número de d
 
    ![](assets/fallout1.png)
 
-   Passe o mouse sobre um ponto de contato para ver o fallout e outras informações sobre o nível, como o nome do ponto de contato e o número de visitantes no ponto, e ver a taxa de sucesso do ponto de contato (bem como para comparar a taxa de sucesso com outros pontos de contato).
+   Passe o mouse sobre um ponto de contato para ver o fallout e outras informações sobre o nível, como o nome do ponto de contato e a contagem de pessoas no ponto, e ver a taxa de sucesso do ponto de contato (bem como comparar a taxa de sucesso com outros pontos de contato).
 
    Os números circulados, na área em cinza da barra, apresentam o fallout entre os pontos de contato (e não o fallout geral daquele ponto). A % de pontos de contato apresenta o fallthrough bem-sucedido da etapa anterior na etapa atual do relatório de fallout.
 
@@ -63,7 +63,7 @@ Não há limite de número de etapas que você pode adicionar ou do número de d
 
 | Configuração | Descrição |
 |--- |--- |
-| Contêiner de fallout <ul><li>Visita</li><li>Visitante</li></ul> | Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. O padrão é Visitante.  Essas configurações ajudam você a entender o envolvimento no nível dos visitantes (ao longo das visitas) ou restringir a análise a uma só visita. |
+| Contêiner de fallout <ul><li>Visita</li><li>Visitante</li></ul> | Permite alternar entre Visita e Visitante para analisar a definição do caminho da pessoa. O padrão é Visitante.  Essas configurações ajudam você a entender o envolvimento da pessoa no nível da pessoa (em várias visitas) ou restringir a análise a uma única visita. |
 
 Quando você **clicar com o botão direito em um ponto de contato**, as seguintes opções são exibidas:
 
@@ -72,6 +72,6 @@ Quando você **clicar com o botão direito em um ponto de contato**, as seguinte
 | Executar tendência do ponto de contato | Veja os dados de tendência para um ponto de contato em um gráfico de linha, com alguns dados de detecção de anomalias pré-construídos. |
 | Executar tendência do ponto de contato (%) | Executa a tendência da porcentagem total de fallout. |
 | Executar tendência de todos os pontos de contato (%) | Executa a tendência de todas as porcentagens de pontos de contato no fallout (exceto “Todas as visitas”, se incluso), no mesmo gráfico. |
-| Analisar fallthrough neste ponto de contato | Visualize o que os visitantes fizeram entre dois pontos de contato (este ponto de contato e o próximo ponto de contato), se continuaram até o próximo ponto de contato. Isso cria uma tabela de forma livre, mostrando suas dimensões. Você pode substituir dimensões e outros elementos da tabela. |
+| Analisar fallthrough neste ponto de contato | Visualize o que as pessoas fizeram entre dois pontos de contato (este ponto de contato e o próximo ponto de contato), se continuaram até o próximo ponto de contato. Isso cria uma tabela de forma livre, mostrando suas dimensões. Você pode substituir dimensões e outros elementos da tabela. |
 | Analisar o fallout neste ponto de contato | Veja o que as pessoas que não entraram no funil fizeram imediatamente depois da etapa selecionada. |
 | Criar filtro desde o ponto de contato | Criar um novo filtro a partir do ponto de contato selecionado. |

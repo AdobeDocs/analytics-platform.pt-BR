@@ -4,10 +4,10 @@ description: Permite definir a atribuição padrão de uma métrica.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1782'
-ht-degree: 41%
+ht-degree: 38%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 41%
 
 A atribuição oferece a capacidade de personalizar como os itens de dimensão recebem crédito por eventos bem-sucedidos. Por exemplo:
 
-1. Um visitante do site clica em um link de pesquisa pago para uma de suas páginas de produtos. Eles adicionam o produto ao carrinho, mas não o compram.
+1. Uma pessoa do site clica em um link de pesquisa pago para uma de suas páginas de produtos. Eles adicionam o produto ao carrinho, mas não o compram.
 2. No dia seguinte, veja uma publicação de mídia social de um de seus amigos. Eles clicam no link e concluem a compra.
 
 Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquisa paga. Em outros relatórios, você pode desejar que a ordem seja atribuída ao Social. A atribuição permite controlar esse aspecto dos relatórios.
@@ -58,15 +58,15 @@ As janelas de retrospectiva representam quanto tempo uma conversão deve retroce
 * **60 dias**: retroage até 60 dias a partir do momento em que a conversão ocorreu.
 * **90 dias**: retroage até 90 dias a partir do momento em que a conversão ocorreu.
 * **Session**: retroage até o início da sessão em que ocorreu uma conversão. As janelas de retrospectiva de sessão respeitam as [Tempo limite da sessão](../create-dataview.md#session-settings).
-* **Pessoa (Janela Relatórios)**: verifica todas as visitas até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva do visitante será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
+* **Pessoa (Janela Relatórios)**: verifica todas as visitas até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da pessoa será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
 * **Tempo personalizado:** Permite definir uma janela de retrospectiva personalizada a partir de quando ocorreu uma conversão. Você pode especificar o número de minutos, horas, dias, semanas, meses ou trimestres. Por exemplo, se uma conversão ocorresse em 20 de fevereiro, uma janela de pesquisa de cinco dias avaliaria todos os pontos de contato de dimensão de 15 a 20 de fevereiro no modelo de atribuição.
 
 ## Exemplo
 
 Considere o exemplo a seguir:
 
-1. Em 15 de setembro, um visitante chega ao seu site através de um anúncio de pesquisa pago e depois sai.
-2. Em 18 de setembro, o visitante chega ao seu site novamente através de um link de mídia social que recebeu de um amigo. Eles adicionam vários itens ao carrinho, mas não compram nada.
+1. Em 15 de setembro, uma pessoa chega ao seu site através de um anúncio de pesquisa pago e depois sai.
+2. Em 18 de setembro, a pessoa chega ao seu site novamente através de um link de mídia social que recebeu de um amigo. Eles adicionam vários itens ao carrinho, mas não compram nada.
 3. Em 24 de setembro, sua equipe de marketing envia um email com um cupom para alguns dos itens em seu carrinho. Eles aplicam o cupom, mas visitam vários outros sites para ver se existem outros cupons disponíveis. Eles encontram outro cupom por meio de um anúncio de exibição e, em seguida, fazem uma compra de US$ 50.
 
 Dependendo da janela de retrospectiva e do modelo de atribuição, os canais recebem crédito diferente. Veja a seguir alguns exemplos:

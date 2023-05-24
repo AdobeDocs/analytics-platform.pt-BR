@@ -2,10 +2,10 @@
 title: Comparar o processamento de dados entre os recursos de relatório do Adobe Analytics e do CJA
 description: Entender as diferenças no processamento de dados para os vários recursos de relatório
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1202'
-ht-degree: 74%
+ht-degree: 71%
 
 ---
 
@@ -40,8 +40,8 @@ A tabela abaixo define a terminologia dos diferentes tipos de lógica de process
 | Processamento de tempo do relatório | Lógica que é executada no momento em que um relatório é executado. | Essa lógica pode ser aplicada aos dados futuros e históricos no tempo de execução do relatório de maneira não destrutiva. |
 | Lógica de nível de ocorrência | Lógica aplicada em nível de linha por linha. | Exemplos: Regras de processamento, VISTA, determinadas regras de canal de marketing. |
 | Lógica de nível de visita | Lógica aplicada no nível da visita. | Exemplos: definição de visita e sessão. |
-| Lógica em nível de visitante | Lógica aplicada no nível do visitante. | Exemplo: compilação de visitantes entre dispositivos/canais. |
-| Lógica do segmento (filtro) | Avaliação de regras de segmento de evento/visita/visitante (evento/sessão/pessoa) (filtro). | Exemplo: pessoas que compraram sapatos vermelhos. |
+| Lógica em nível de visitante | Lógica aplicada no nível da pessoa. | Exemplo: compilação de pessoa entre dispositivos/canais. |
+| Lógica do segmento (filtro) | Avaliação de regras de segmento de evento/visita/pessoa (evento/sessão/pessoa) (filtro). | Exemplo: pessoas que compraram sapatos vermelhos. |
 | Métricas calculadas | Avaliação de métricas personalizadas criadas pelo cliente que podem ser baseadas em fórmulas complexas, incluindo segmentos e filtros. | Exemplo: número de pessoas que compraram sapatos vermelhos. |
 | Lógica de atribuição | Lógica para calcular atribuição. | Exemplo: persistência do eVar. |
 | Configurações de componente | Aplicação de personalizações a métricas ou dimensões, como atribuição, comportamento, formato e outros | Exemplo: segmentação de valores para combinar valores numéricos com base em um intervalo |
@@ -49,7 +49,7 @@ A tabela abaixo define a terminologia dos diferentes tipos de lógica de process
 
 {style="table-layout:auto"}
 
-Com o tempo, a Adobe Analytics e agora o Customer Journey Analytics melhoraram a flexibilidade ao permitir que a lógica de dados em nível de visita e de visitante seja executada no tempo de execução do relatório.
+Com o tempo, a Adobe Analytics e a Customer Journey Analytics melhoraram a flexibilidade ao permitir que a lógica de dados no nível de visita e de pessoa seja executada no tempo de execução do relatório.
 
 ## Tipos de processamento de dados {#types}
 

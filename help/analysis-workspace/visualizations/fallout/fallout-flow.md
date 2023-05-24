@@ -1,18 +1,18 @@
 ---
-description: As Visualizações de fallout mostram onde os visitantes saíram e de onde continuaram em uma sequência predefinida de páginas.
+description: As visualizações de fallout mostram onde as pessoas saíram e continuaram em uma sequência predefinida de páginas.
 title: Visão geral de fallout
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
 # Visão geral de fallout
 
-As visualizações de Fallout oferecem mais opções para criar relatórios de fallout. Os relatórios de fallout mostram onde os visitantes saíram e continuaram em uma sequência predefinida de páginas.
+As visualizações de Fallout oferecem mais opções para criar relatórios de fallout. Os relatórios de fallout mostram onde as pessoas saíram e continuaram em uma sequência predefinida de páginas.
 
 As visualizações de fallout permitem
 
@@ -24,7 +24,7 @@ As visualizações de fallout permitem
 
 O Fallout exibe as taxas de conversão e de fallout entre cada etapa ou ponto de contato em uma sequência.
 
-Por exemplo, você pode acompanhar os pontos de saída de um visitante durante um processo de compra. Selecione um ponto de contato inicial e um ponto de contato final e adicione pontos de contato intermediários para criar um caminho de navegação no site. Mas você também pode executar fallouts multidimensionais.
+Por exemplo, você pode rastrear os pontos de fallout de uma pessoa durante um processo de compra. Selecione um ponto de contato inicial e um ponto de contato final e adicione pontos de contato intermediários para criar um caminho de navegação no site. Mas você também pode executar fallouts multidimensionais.
 
 Uma visualização de fallout é útil para analisar:
 

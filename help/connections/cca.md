@@ -1,15 +1,15 @@
 ---
 title: Análise de vários canais
-description: Saiba como redigitar IDs de visitante de vários conjuntos de dados para compilar visitantes.
+description: Saiba como rechavear IDs de pessoa de vários conjuntos de dados para compilar pessoas.
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 11ad1c91d07e8d4d6dd0186de68b1cc1d715ffe1
-workflow-type: ht
+exl-id: 5fb30b64-d305-4de4-ab84-66195ceb8386
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '210'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
-
 
 # Análise de vários canais
 

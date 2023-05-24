@@ -4,10 +4,10 @@ description: Todas as configurações que podem ser ajustadas para criar ou edit
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ Determina o nome dos containers para a visualização de dados. Os nomes dos con
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL Nome do container de pessoas] | [!UICONTROL Pessoa] (padrão). O container [!UICONTROL Pessoa] inclui todas as sessões e eventos para visitantes dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente (por exemplo, &quot;Visitante&quot; ou &quot;Usuário&quot;), você poderá renomear o container aqui. |
+| [!UICONTROL Nome do container de pessoas] | [!UICONTROL Pessoa] (padrão). A variável [!UICONTROL Person] container inclui todas as sessões e eventos para pessoas dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente (por exemplo, &quot;Visitante&quot; ou &quot;Usuário&quot;), você poderá renomear o container aqui. |
 | [!UICONTROL Nome do container da sessão] | [!UICONTROL Sessão] (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
 | [!UICONTROL Nome do container do evento] | [!UICONTROL Evento] (padrão). O container [!UICONTROL Evento] define eventos individuais em um conjunto de dados. Se sua organização usar um termo diferente (por exemplo, &quot;Ocorrências&quot; ou &quot;Exibições de página&quot;), você poderá renomear o container aqui. |
 

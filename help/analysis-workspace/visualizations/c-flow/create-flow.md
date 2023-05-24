@@ -4,10 +4,10 @@ title: Configurar uma visualização de fluxo
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 89%
+ht-degree: 86%
 
 ---
 
@@ -54,7 +54,7 @@ As visualizações de fluxo permitem que você entenda a jornada decorrente ou q
    | **[!UICONTROL Limite para a primeira/última ocorrência]** | Limite os caminhos para aqueles que começam/terminam com a primeira/última ocorrência de uma dimensão/item/métrica. Consulte a seção abaixo intitulada “Exemplo de cenário para &#39;limitar à primeira/última ocorrência” para obter uma explicação mais detalhada. |
    | **[!UICONTROL Número de colunas]** | Determina quantas colunas você deseja incluir no diagrama de Fluxo. |
    | **[!UICONTROL Itens expandidos por coluna]** | Quantos itens você deseja em cada coluna. |
-   | **[!UICONTROL Contêiner de fluxo]** | <ul><li>Visita</li><li>Visitante</li></ul> Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. Essas configurações ajudam você a entender o envolvimento no nível dos visitantes (ao longo das visitas) ou restringir a análise a uma só visita. |
+   | **[!UICONTROL Contêiner de fluxo]** | <ul><li>Visita</li><li>Visitante</li></ul> Permite alternar entre Visita e Visitante para analisar a definição do caminho da pessoa. Essas configurações ajudam você a entender o envolvimento da pessoa no nível da pessoa (em várias visitas) ou restringir a análise a uma única visita. |
 
 1. Clique em **[!UICONTROL Criar]**.
 

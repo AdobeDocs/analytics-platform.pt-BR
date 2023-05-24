@@ -3,10 +3,10 @@ title: Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre
 description: Como interagir com itens de dimensão dinâmicos e estáticos em tabelas
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
-source-git-commit: 54032271e8f12673cc6d4f2b209b4fa89f5c4406
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ Ao soltar uma dimensão em uma tabela de forma livre, linhas dinâmicas são ret
 
 Por exemplo, ao arrastar a dimensão Tipo de navegador para a tabela, os principais itens de dimensão Tipo de navegador (por exemplo, Microsoft, Apple, Google etc.) retornam dinamicamente às linhas da tabela. Se forem soltos em uma coluna, os 5 principais itens de dimensão Tipo de navegador retornarão dinamicamente.
 
-Os itens de dimensão dinâmicos têm a opção de filtro de linha e os ícones X, e têm **not** têm o ícone de cadeado presente. <!--do they have the lock icon? --> Ao clicar no x ao lado de um item de dimensão dinâmico, um filtro é aplicado automaticamente. Para obter mais informações sobre como aplicar filtros a tabelas, consulte [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Os itens de dimensão dinâmicos têm a opção de filtro de linha e os ícones X, e **não** tem um ícone de cadeado presente. <!--do they have the lock icon? --> Ao clicar no x ao lado de um item de dimensão dinâmico, um filtro é aplicado automaticamente. Para obter mais informações sobre como aplicar filtros a tabelas, consulte [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 
 ![](assets/dynamic-items.png)
@@ -52,5 +52,5 @@ Itens de dimensão de diferentes dimensões podem ser adicionados à mesma tabel
 
 As linhas dinâmicas e estáticas se comportam de maneira diferente na linha total de forma livre. Por padrão:
 
-* As linhas dinâmicas são somadas no lado do servidor e deduplicam métricas como visitas ou visitantes
+* As linhas dinâmicas são somadas no lado do servidor e deduplicam métricas como visitas ou pessoas
 * As linhas estáticas são somadas no lado do cliente e **não** deduplicam as métricas. Para calcular o total de linhas do lado do servidor, altere a configuração de linha para **Mostrar total geral**. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=pt-BR)

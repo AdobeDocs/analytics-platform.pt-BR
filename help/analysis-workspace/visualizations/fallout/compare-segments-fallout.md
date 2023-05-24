@@ -4,10 +4,10 @@ keywords: fallout e filtros; filtros na análise de fallout; comparar filtros no
 title: Aplicar filtros na análise de fallout
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '405'
-ht-degree: 93%
+ht-degree: 87%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 93%
 
 >[!IMPORTANT]
 >
->Os filtros usados como pontos de verificação no Fallout devem usar um contêiner que esteja em um nível inferior ao contexto geral da visualização do Fallout. Com um Fallout de contexto de visitante, os filtros usados como pontos de verificação devem ser filtros baseados em visitas ou eventos. Com um Fallout de contexto de visita, os filtros usados como ponto de verificação devem ser filtros baseados em eventos. Se você usar uma combinação inválida, o fallout será de 100%. Adicionamos um aviso à visualização de Fallout que será exibida quando você adicionar um filtro incompatível como ponto de contato. Determinadas combinações inválidas de contêineres de filtro resultarão em diagramas de Fallout inválidos, por exemplo:
+>Os filtros usados como pontos de verificação no Fallout devem usar um contêiner que esteja em um nível inferior ao contexto geral da visualização do Fallout. Com um Fallout de contexto de pessoa, os filtros usados como pontos de verificação devem ser filtros baseados em visitas ou eventos. Com um Fallout de contexto de visita, os filtros usados como ponto de verificação devem ser filtros baseados em eventos. Se você usar uma combinação inválida, o fallout será de 100%. Adicionamos um aviso à visualização de Fallout que será exibida quando você adicionar um filtro incompatível como ponto de contato. Determinadas combinações inválidas de contêineres de filtro resultarão em diagramas de Fallout inválidos, por exemplo:
 
-* Usar um filtro com base em visitantes como um ponto de contato dentro de uma visualização de Fallout de contexto do visitante
-* Usar um filtro com base em visitantes como um ponto de contato dentro de uma visualização de Fallout de contexto de visitas
+* Usar um filtro com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de pessoas
+* Usar um filtro com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de visitas
 * Usar um filtro com base em visitas como um ponto de contato dentro de uma visualização de Fallout de contexto de visitas
 
 ## Criar um filtro a partir de um ponto de contato {#section_915E8FBF35CD4F34828F860C1CCC2272}

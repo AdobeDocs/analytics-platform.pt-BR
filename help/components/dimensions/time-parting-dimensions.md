@@ -3,10 +3,10 @@ description: A separação de tempo coleta o carimbo de data e hora de eventos c
 title: Dimensões de separação de tempo
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 72%
+ht-degree: 61%
 
 ---
 
@@ -16,7 +16,7 @@ A separação de tempo coleta o carimbo de data e hora de eventos coletados e o 
 
 As dimensões de separação de tempo são baseadas no fuso horário da visualização de dados. Essas dimensões estão disponíveis no Analysis Workspace e podem ajudar nas seguintes questões:
 
-* Em um intervalo de dados grande, qual é o horário de mais acessos de visitantes ao meu site ou aplicativo?
+* Em um intervalo de datas grande, qual é a hora do dia mais popular para as pessoas acessarem meu site ou aplicativo?
 * Há dias da semana ou horas do dia nas quais a conversão é mais alta no meu site ou aplicativo?
 * Como minhas vendas de fim de semana se comparam com as da semana?
 * Determinada campanha de marketing gera conversões maiores pela manhã ou à tarde?

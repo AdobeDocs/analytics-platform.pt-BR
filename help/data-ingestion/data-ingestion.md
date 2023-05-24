@@ -4,10 +4,10 @@ description: Entenda as diferentes maneiras de assimilar dados no Customer Journ
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: ht
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -48,7 +48,7 @@ Consulte [Assimilar e usar dados do Adobe Analytics tradicional](./analytics.md)
 
 ## Assimilar e usar dados via SDK da web da Adobe Experience Platform e Rede de borda
 
-Você deseja analisar seu site com a tecnologia da Adobe, migrando potencialmente de outra solução ou começar a rastrear o comportamento do visitante. Você deseja seguir as práticas recomendadas da Adobe para implementação, que usam os SDKs da Adobe Experience Platform e a Rede de borda, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
+Você deseja analisar seu site com a tecnologia Adobe, migrando potencialmente de outra solução ou começar a rastrear o comportamento de sua pessoa. Você deseja seguir as práticas recomendadas da Adobe para implementação, que usam os SDKs da Adobe Experience Platform e a Rede de borda, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
 
 Consulte [Assimilar e usar dados por meio do SDK da Web da Adobe Experience Platform e da Rede de borda](./aepwebsdk.md) para obter mais informações.
 

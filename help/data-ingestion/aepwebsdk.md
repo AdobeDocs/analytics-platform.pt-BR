@@ -4,10 +4,10 @@ description: Explique como assimilar dados no Customer Journey Analytics por mei
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 43f77ffb3538e96798e68b35ec4541ba650c2090
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '3587'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Para configurar o esquema:
 
    ![Objeto de identificação](./assets/identification-field.png)
 
-   Esse objeto adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a Experience Cloud ID e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação do visitante (por exemplo, ID do cliente, ID de fidelidade).
+   Esse objeto adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a Experience Cloud ID e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
 
    Selecione **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -265,7 +265,7 @@ Para criar e configurar a extensão do SDK da Web da Adobe Experience Platform:
 
 Consulte [Configurar a extensão do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=pt-BR) para obter mais informações.
 
-Você também pode configurar a extensão do Serviço da Experience Cloud ID para usar facilmente a Experience Cloud ID. O Serviço da Experience Cloud ID identifica visitantes em todas as soluções da Adobe Experience Cloud.
+Você também pode configurar a extensão do Serviço da Experience Cloud ID para usar facilmente a Experience Cloud ID. O serviço de ID de Experience Cloud identifica pessoas em todas as soluções da Adobe Experience Cloud.
 
 Para criar e configurar a extensão do Serviço da Experience Cloud ID:
 
@@ -285,7 +285,7 @@ Para criar e configurar a extensão do Serviço da Experience Cloud ID:
 
 Os elementos de dados são os blocos fundamentais do seu dicionário de dados (ou mapa de dados). Use elementos de dados para coletar, organizar e entregar dados em toda a tecnologia de marketing e anúncios. Você configura elementos de dados na tag que são lidos a partir da camada de dados e podem ser usados para fornecer dados à Adobe Experience Platform.
 
-Há diferentes tipos de elementos de dados. Primeiro, você configura um elemento de dados para capturar o nome da página que os visitantes estão visualizando em seu site.
+Há diferentes tipos de elementos de dados. Primeiro, configure um elemento de dados para capturar o nome da página que as pessoas estão visualizando no site.
 
 Para definir um elemento de dados de nome de página:
 

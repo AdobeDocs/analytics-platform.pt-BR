@@ -4,10 +4,10 @@ description: Perguntas frequentes sobre o Cross-Channel Analytics
 exl-id: 2ad78c19-4b13-495b-a0aa-44e0a3c95b5e
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ Você pode usar uma visualização de Fluxo com a dimensão ID de conjunto de da
 
 Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá usar um conjunto de dados de pesquisa.
 
-## Até que ponto a CCA faz o rechaveamento de visitantes?
+## Até que ponto a AVC faz o rechaveamento de pessoas?
 
 A janela de pesquisa para rechaveamento depende da frequência desejada de [repetição](replay.md) de dados. Por exemplo, se você configurar o CCA para repetir os dados uma vez por semana, a janela de pesquisa para rechaveamento será de sete dias. Se você configurar o CCA para repetir dados todos os dias, a janela de pesquisa para rechaveamento será de um dia.
 
@@ -40,9 +40,9 @@ Em algumas situações, um usuário individual pode ser associado a muitas IDs p
 
 O número de IDs persistentes é irrelevante em favor da ID transitória. Um único usuário pode pertencer a qualquer número de dispositivos sem afetar a capacidade da CCA de compilar entre dispositivos.
 
-## Depois que eu entrar em contato com a equipe de conta do Adobe com as informações desejadas, quanto tempo leva para o conjunto de dados rechaveado ficar disponível?
+## Quando eu entrar em contato com minha equipe de conta do Adobe com as informações desejadas, quanto tempo levará para o conjunto de dados rechaveado ficar disponível?
 
-A compilação em tempo real está disponível aproximadamente uma semana depois de a Adobe ativar o Cross-Channel Analytics. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de 1 milhão de eventos por dia) normalmente levam alguns dias, enquanto os grandes conjuntos de dados (1 bilhão de eventos por dia) podem levar uma semana ou mais.
+A compilação em tempo real está disponível aproximadamente uma semana depois de a Adobe ativar o Cross-Channel Analytics. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de um milhão de eventos por dia) normalmente levam alguns dias, enquanto grandes conjuntos de dados (um bilhão de eventos por dia) podem levar uma semana ou mais.
 
 ## Qual é a diferença entre o Cross-Device Analytics (um recurso no Analytics tradicional) e o Cross-Channel Analytics?
 
@@ -67,7 +67,7 @@ Certas métricas no CJA são semelhantes às métricas no Analytics tradicional,
 
 | **Dados compilados do CJA** | **Dados não compilados do CJA** | **Adobe Analytics tradicional** | **Analytics Ultimate com CDA** |
 | ----- | ----- | ----- | ----- |
-| **Pessoas** = Contagem de `Person ID` distintos, em que `Stitched ID` é escolhido como `Person ID`. **Pessoas** pode ser superior ou inferior a **Visitantes únicos** no Adobe Analytics tradicional, dependendo da saída do processo de compilação.  | **Pessoas** = Contagem de `Person ID` distintos com base na coluna selecionada como `Person ID`. **Pessoas** nos conjuntos de dados do Conector de origem da Adobe é semelhante a **Visitantes únicos** no Adobe Analytics tradicional se `endUserIDs._experience.aaid.id` for escolhido como `Person ID` no CJA. | **Visitantes únicos** = Contagem de IDs de visitante distintas. **Visitantes únicos** pode não ser o mesmo que a contagem de **ECID** s. | Consulte [de pessoas](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=pt-BR). |
+| **Pessoas** = Contagem de `Person ID` distintos, em que `Stitched ID` é escolhido como `Person ID`. **Pessoas** pode ser superior ou inferior a **Visitantes únicos** no Adobe Analytics tradicional, dependendo da saída do processo de compilação.  | **Pessoas** = Contagem de `Person ID` distintos com base na coluna selecionada como `Person ID`. **Pessoas** nos conjuntos de dados do Conector de origem da Adobe é semelhante a **Visitantes únicos** no Adobe Analytics tradicional se `endUserIDs._experience.aaid.id` for escolhido como `Person ID` no CJA. | **Visitantes únicos** = Contagem de IDs de pessoa distintas. **Visitantes únicos** pode não ser o mesmo que a contagem de **ECID** s. | Consulte [de pessoas](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=pt-BR). |
 | **Sessões**: definido com base nas configurações de sessão na visualização de dados do CJA. O processo de compilação pode combinar sessões individuais de vários dispositivos em uma única sessão. | **Sessões**: definido com base nas configurações de sessão especificadas na visualização de dados do CJA. | **Visitas**: consulte [Visitas](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=pt-BR). | **Visitas**: definido com base nas configurações de sessão especificadas no [conjunto de relatórios virtuais do CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=pt-BR). |
 | **Eventos** = contagem de linhas nos dados compilados no CJA. Normalmente, essa métrica está próxima de **Ocorrências** na Adobe Analytics tradicional. No entanto, observe as Perguntas frequentes acima que estão relacionadas às linhas com um `Persistent ID` em branco. | **Eventos** = contagem de linhas nos dados não compilados no CJA. Normalmente, essa métrica está próxima de **Ocorrências** na Adobe Analytics tradicional. Observe, no entanto, que se algum evento tiver um `Person ID` em branco nos dados não agrupados no data lake da Experience Platform, esses eventos não são incluídos no CJA. | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=pt-BR). | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=pt-BR). |
 

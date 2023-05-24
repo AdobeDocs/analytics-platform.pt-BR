@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel Visualizadores simultâneos de mí
 feature: Panels
 role: User, Admin
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 96%
+ht-degree: 83%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 Você pode analisar visualizadores simultâneos para entender onde ocorreu o pico de simultaneidade ou onde ocorreram quedas para fornecer insights valiosos sobre a qualidade do conteúdo e o envolvimento do visualizador e para ajudar na solução de problemas ou no planejamento de volume ou escala.
 
-No Analysis Workspace, Visualizadores simultâneos é o número de visitantes únicos que visualizam seus fluxos de mídia em um ponto específico do tempo, independentemente do número de sessões.
+No Analysis Workspace, Visualizadores simultâneos é o número de pessoas únicas que visualizam seus fluxos de mídia em um ponto específico do tempo, independentemente do número de sessões.
 
 O painel Visualizadores simultâneos de mídia permite a análise de visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar.  Para acessar o painel Visualizadores simultâneos de mídia, navegue até uma visualização de dados com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace.
 
@@ -59,7 +59,7 @@ A única métrica que pode ser usada nesse painel é a de Visualizadores simult�
 
 | Métrica | Descrição |
 |---|---|
-| Visualizadores simultâneos | Número de visitantes únicos que visualizam seus fluxos de mídia em um ponto específico do tempo, independentemente do número de sessões.<br><br>Isso é diferente dos relatórios do Visualizador simultâneo na seção Relatórios, que usa Sessões ativas simultâneas.  Usar contas de visitantes únicos para remover &quot;picos&quot; indesejados nos limites do programa (onde as sessões estão terminando e iniciando ao mesmo tempo). |
+| Visualizadores simultâneos | Número de pessoas únicas que visualizam seus fluxos de mídia em um ponto específico do tempo, independentemente do número de sessões.<br><br>Isso é diferente dos relatórios do Visualizador simultâneo na seção Relatórios, que usa Sessões ativas simultâneas.  Usar contas de pessoas únicas para remover &#39;picos&#39; indesejados nos limites de exibição (em que as sessões estão terminando e começando ao mesmo tempo). |
 
 Uma tabela de forma livre não está disponível nessa visualização.  Para visualizar a fonte de dados, clique com o botão direito do mouse no gráfico de linha e baixe como um arquivo .csv.  Os detalhamentos por séries serão incluídos.
 
@@ -76,8 +76,8 @@ Uma tabela de forma livre não está disponível nessa visualização.  Para vis
 | Como comparar intervalos de datas? | Para comparar intervalos de data em uma única visualização, use os detalhamentos por séries arrastando dois ou mais intervalos de datas.  Esses intervalos de datas substituirão o intervalo de datas do painel. |
 | Como alterar o tipo de visualização? | Esse painel permite somente a visualização de linha para a série de tempo. |
 | Posso executar a detecção de anomalias? | Não.  A detecção de anomalias não está disponível para esse painel. |
-| Por que usar visitantes únicos em vez de sessões ativas? | A utilização de visitantes únicos permite a remoção de picos indesejados nos limites da exibição (em que as sessões estão terminando e começando ao mesmo tempo). |
+| Por que usar pessoas únicas em vez de sessões ativas? | Usar pessoas únicas permite a remoção de picos indesejados nos limites de exibição (em que as sessões estão terminando e começando ao mesmo tempo). |
 | O que significa ter visualizadores simultâneos com maior granularidade do que um minuto? | Com uma granularidade maior que um minuto, visualizadores simultâneos é a soma de visualizadores simultâneos exclusivos para todos os minutos desse intervalo de tempo.  Por exemplo, visualizadores simultâneos de granularidade em nível de hora é a soma de visualizadores simultâneos exclusivos para todos os minutos da hora. |
-| O painel Espaço de trabalho mostra as mesmas informações que o Relatório de visualizadores simultâneos? | Não.  No Analysis Workspace, Visualizadores simultâneos é o número de visitantes únicos que visualizam seus fluxos de mídia em um ponto específico do tempo, independentemente do número de sessões.<br><br>Isso é diferente dos relatórios do Visualizador simultâneo na seção Relatórios, que usa Sessões ativas simultâneas.  Usar contas de visitantes únicos para remover picos indesejados nos limites de exibição, em que as sessões estão terminando e iniciando ao mesmo tempo. |
+| O painel Espaço de trabalho mostra as mesmas informações que o Relatório de visualizadores simultâneos? | Não.  No Analysis Workspace, Visualizadores simultâneos é o número de pessoas únicas que visualizam seus fluxos de mídia em um ponto específico do tempo, independentemente do número de sessões.<br><br>Isso é diferente dos relatórios do Visualizador simultâneo na seção Relatórios, que usa Sessões ativas simultâneas.  Usar contas de pessoas únicas para remover picos indesejados nos limites de exibição, em que as sessões estão terminando e iniciando ao mesmo tempo. |
 
 <!-- For more information about Media Concurrent Viewers, visit [MA doc page]( https://url). -->

@@ -3,10 +3,10 @@ description: O Quick Insights é uma ferramenta para novos usuários do Workspac
 title: Painel do Quick Insights
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+workflow-type: tm+mt
+source-wordcount: '1049'
+ht-degree: 91%
 
 ---
 
@@ -35,10 +35,10 @@ A seguir, estão alguns dos termos básicos que você precisa conhecer. Cada tab
 |---|---|
 | [!UICONTROL Dimensão] | Dimensões são descrições ou características de dados de métricas que podem ser visualizadas, analisadas e comparadas em um projeto. São valores não numéricos e datas que se dividem em itens de dimensão. Por exemplo, &quot;navegador&quot; ou &quot;página&quot; são dimensões. |
 | [!UICONTROL Item de dimensão] | Os itens de dimensão são valores individuais para uma dimensão. Por exemplo, os itens de dimensão para a dimensão do navegador seriam &quot;Chrome&quot;, &quot;Firefox&quot;, &quot;Edge&quot; etc. |
-| [!UICONTROL Métrica] | As métricas são informações quantitativas sobre a atividade do visitante, como exibições, click-throughs, recarregamentos, tempo médio gasto, unidades, ordens, receita, e assim por diante. |
+| [!UICONTROL Métrica] | As métricas são informações quantitativas sobre a atividade da pessoa, como exibições, click-throughs, recarregamentos, tempo médio gasto, unidades, pedidos, receita, e assim por diante. |
 | [!UICONTROL Visualização] | O Workspace oferece [várias visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para criar representações visuais de seus dados, como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão e outros. |
 | [!UICONTROL Detalhamento de dimensão] | Um detalhamento de dimensão é uma forma de detalhar literalmente uma dimensão por outras dimensões. Em nosso exemplo, você pode dividir os Estados Unidos por dispositivos móveis para obter as visitas de dispositivos móveis por estado, ou pode dividir os dispositivos móveis por tipos de dispositivos móveis, por regiões, por campanhas internas, etc. |
-| [!UICONTROL filtro] | Os filtros permitem identificar subconjuntos de visitantes com base em características ou interações de site. Por exemplo, você pode criar filtros de [!UICONTROL Visitantes] com base em atributos (tipo de navegador, dispositivo, número de visitas, país, gênero), com base em interações (campanhas, pesquisas por palavra-chave, mecanismo de pesquisa), com base em saídas e entradas (visitantes do Facebook, uma página de aterrisagem definida, um domínio de referência) ou com base em variáveis personalizadas (campo de formulário, categorias definidas, ID do cliente). |
+| [!UICONTROL filtro] | Os filtros permitem identificar subconjuntos de pessoas com base em características ou interações de site. Por exemplo, é possível criar [!UICONTROL Visitante] filtros com base em atributos: tipo de navegador, dispositivo, número de visitas, país, gênero ou com base em interações: campanhas, pesquisa por palavra-chave, mecanismo de pesquisa ou com base em saídas e entradas: pessoas do Facebook, uma página inicial definida, um domínio de referência ou com base em variáveis personalizadas: campo de formulário, categorias definidas, ID do cliente. |
 
 ## Introdução ao Quick Insights
 

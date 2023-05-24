@@ -3,10 +3,10 @@ title: O que é a análise de coorte?
 description: Saiba mais sobre a análise de coorte no Analysis Workspace
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
-source-git-commit: 76840d025d1ace28abce5557d66d104795818167
+source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 91%
+ht-degree: 78%
 
 ---
 
@@ -29,7 +29,7 @@ A [!UICONTROL Análise de coorte] está disponível a todos os clientes do Custo
 
 >[!IMPORTANT]
 >
->[!UICONTROL Análise de coorte] não suporta métricas não filtráveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em filtros podem ser usadas em [!UICONTROL Análise de coorte]e só podem ser aumentadas 1 de cada vez.
+>[!UICONTROL Análise de coorte] não aceita métricas não filtráveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em filtros podem ser usadas na [!UICONTROL Análise de coorte], e só podem ser aumentados 1 de cada vez.
 
 ## Recursos da análise de coorte
 
@@ -37,13 +37,13 @@ Os seguintes recursos permitem o controle ajustado dos coortes que você está c
 
 ### Tabela de [!UICONTROL retenção]
 
-Um relatório de coorte de [!UICONTROL retenção] registram os visitantes: cada célula de dados mostra o número bruto e a porcentagem de visitantes da coorte que realizaram a ação durante esse período. É possível incluir até 3 métricas e 10 filtros.
+A [!UICONTROL Retenção] o relatório de coorte retorna pessoas: cada célula de dados mostra o número bruto e a porcentagem de pessoas na coorte que realizaram a ação durante esse período. É possível incluir até 3 métricas e 10 filtros.
 
 ![](assets/retention-report.png)
 
 ### [!UICONTROL Tabela de abandono]
 
-A coorte de [!UICONTROL churn] é o inverso da tabela de retenção e mostra os visitantes que abandonaram ou que nunca atenderam aos critérios de retorno da sua coorte ao longo do tempo. É possível incluir até 3 métricas e 10 filtros.
+A [!UICONTROL Churn] a coorte é o inverso da tabela de retenção e mostra as pessoas que abandonaram ou que nunca atenderam aos critérios de retorno da sua coorte ao longo do tempo. É possível incluir até 3 métricas e 10 filtros.
 
 ![](assets/churn-report.png)
 
