@@ -3,10 +3,10 @@ title: Uso de dimensões e métricas de ligação no CJA
 description: Atribua dimensões a arrays de objetos para análise de persistência complexa.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: dbb7edae43fdc970cacf5863ecd13df75deaefad
-workflow-type: ht
-source-wordcount: '1330'
-ht-degree: 100%
+source-git-commit: 71c633f259b25f30d474ab19f714935b074dfc0c
+workflow-type: tm+mt
+source-wordcount: '1331'
+ht-degree: 91%
 
 ---
 
@@ -78,11 +78,11 @@ Se você desejar observar a receita por cor sem uma dimensão de ligação, a di
 | --- | --- |
 | laranja neon | 2099 |
 
-É possível acessar o Gerenciador de visualização de dados e vincular a cor do produto ao nome do produto:
+Você pode acessar o gerenciador de visualização de dados e vincular a cor do produto ao nome do produto:
 
 ![Dimensão de ligação](../assets/binding-dimension.png)
 
-Ao definir esse modelo de persistência, o CJA anota o nome do produto sempre que a cor do produto é definida. Quando o mesmo nome de produto é reconhecido em um evento subsequente para esse visitante, a cor do produto também é trazida. Ao vincular a cor do produto ao nome do produto, os mesmos dados seriam semelhantes ao seguinte:
+Ao definir esse modelo de persistência, o CJA anota o nome do produto sempre que a cor do produto é definida. Quando o mesmo nome de produto é reconhecido em um evento subsequente para essa pessoa, a cor do produto também é trazida. Ao vincular a cor do produto ao nome do produto, os mesmos dados seriam semelhantes ao seguinte:
 
 | product.color | receita |
 | --- | --- |
@@ -237,19 +237,19 @@ Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vi
    }
    ```
 
-Se você usar um modelo de alocação que não inclua uma dimensão de ligação com termo de pesquisa, todos os três produtos atribuirão receita a apenas um único termo de pesquisa. Por exemplo, se você usou a primeira alocação com a dimensão de termo de pesquisa:
+Se você usar um modelo de alocação que não inclua uma dimensão de ligação com termo de pesquisa, todos os três produtos atribuirão receita a apenas um único termo de pesquisa. Por exemplo, se você usou [!UICONTROL Original] alocação com a dimensão de termo de pesquisa:
 
 | search_term | receita |
 | --- | --- |
 | luvas de boxe | US$ 204,97 |
 
-Se você usou a última alocação com a dimensão de termo de pesquisa, os três produtos ainda atribuirão a receita a um único termo de pesquisa:
+Se você usou [!UICONTROL Mais recente] alocação com a dimensão termo de pesquisa, os três produtos ainda atribuem receita a um único termo de pesquisa:
 
 | search_term | receita |
 | --- | --- |
 | sapatos | US$ 204,97 |
 
-Embora este exemplo inclua apenas um visitante, muitos visitantes que pesquisam por coisas diferentes podem atribuir erroneamente termos de pesquisa a produtos diferentes, tornando difícil determinar quais são os melhores resultados de pesquisa.
+Embora este exemplo inclua apenas uma pessoa, muitas pessoas que pesquisam por coisas diferentes podem atribuir erroneamente termos de pesquisa a produtos diferentes, tornando difícil determinar quais são os melhores resultados de pesquisa.
 
 Você pode vincular termos de pesquisa ao nome do produto sempre que a métrica Pesquisas estiver presente para atribuir corretamente o termo de pesquisa à receita.
 
