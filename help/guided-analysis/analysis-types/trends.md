@@ -1,9 +1,9 @@
 ---
 title: Tendências
 description: Encontre padrões e mudanças no engajamento do usuário ao longo do tempo.
-source-git-commit: c47c4364cbf027c24a355bb306ee786c3e2446a9
+source-git-commit: 37699a674a190aa2f28125d5b39bb3c27ac88551
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '642'
 ht-degree: 2%
 
 ---
@@ -25,8 +25,8 @@ A variável **Tendências** [Tipo de análise](overview.md) O fornece informaç�
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **Eventos**: define os eventos que você deseja medir no relatório. Cada evento selecionado aqui é representado como uma linha colorida ou um conjunto de barras, dependendo do tipo de gráfico. Uma linha que representa o evento de tendência é adicionada à tabela. Até cinco eventos são compatíveis.
-* **Pessoas**: define os segmentos que você deseja medir no relatório. Cada segmento selecionado aqui dobra o número de linhas no gráfico e nas linhas na tabela. Cada conjunto de eventos é representado para cada segmento. Até cinco segmentos são compatíveis.
+* **Eventos**: os eventos que você deseja medir no relatório. Cada evento selecionado aqui é representado como uma linha colorida ou um conjunto de barras, dependendo do tipo de gráfico. Uma linha que representa o evento de tendência é adicionada à tabela. Você pode incluir até cinco eventos.
+* **Pessoas**: os segmentos que você deseja medir no relatório. Cada segmento selecionado aqui dobra o número de linhas no gráfico e nas linhas na tabela. Cada conjunto de eventos é representado para cada segmento. É possível incluir até cinco segmentos.
 
 ## Exibir tipos
 
@@ -38,8 +38,8 @@ As tendências oferecem os seguintes tipos de exibição. Você pode alterar o t
 
 As tendências oferecem as seguintes configurações de gráfico. Você pode ajustar as configurações do gráfico usando o menu entre o tipo de exibição e o seletor de calendário.
 
-* **Métrica**: define a métrica que você deseja medir. As opções incluem Eventos, Sessões, Usuários, Eventos por sessão e Eventos por usuário.
-* **Tipo de gráfico**: define o tipo de visualização que você deseja usar. As opções incluem Linha, Barra, Barra empilhada e Área empilhada.
+* **Métrica**: A métrica que você deseja medir. As opções incluem Eventos, Sessões, Usuários, Eventos por sessão e Eventos por usuário.
+* **Tipo de gráfico**: o tipo de visualização que você deseja usar. As opções incluem Linha, Barra, Barra empilhada e Área empilhada.
 
 ## Aplicar comparação de tempo
 
@@ -51,5 +51,5 @@ As opções de comparação de tempo disponíveis incluem o período anterior, 1
 
 Define o intervalo de datas desejado. Há dois componentes importantes nessa configuração:
 
-* **Interval**: a granularidade de data em que você deseja exibir os dados. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, visualizar um relatório que abrange três dias com granularidade diária mostraria apenas três pontos de dados, enquanto um relatório que abrange três dias com granularidade horária mostraria 72 pontos de dados.
-* **Data**: a data inicial e final do projeto. As predefinições de intervalo de datas estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para definir a data exata desejada.
+* **Interval**: a granularidade de data em que você deseja exibir os dados. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a visualização de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
+* **Data**: a data inicial e final. As predefinições de intervalo de datas estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para definir a data exata desejada.
