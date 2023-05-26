@@ -3,30 +3,31 @@ description: Com o Criador de métricas calculadas, qualquer um pode criar uma m
 title: Métrica de participação
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '163'
-ht-degree: 100%
+source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+workflow-type: tm+mt
+source-wordcount: '142'
+ht-degree: 42%
 
 ---
 
-# Métrica de participação
+# Criar uma métrica de &quot;Participação&quot;
 
-Veja um caso de uso simples: um proprietário de conteúdo deseja saber quais páginas contribuíram para (participaram de) visitas com um pedido. Veja como:
+As informações a seguir explicam como criar uma métrica que mostra quais páginas contribuíram para (ou participaram de) visitas que continham um pedido.
+
+Esse tipo de informação pode ser útil para qualquer proprietário de conteúdo.
 
 >[!NOTE]
 >
->Antes, era necessário fazer isso por meio das ferramentas de Admin. Ainda é possível habilitar as métricas de participação nas ferramentas de Admin, mas apanas para eventos personalizados 1 - 100.
+>Você pode ativar as métricas de participação nas Ferramentas administrativas, mas somente para eventos personalizados 1 - 100.
 
-Veja um caso de uso simples: um proprietário de conteúdo deseja saber quais páginas contribuíram para (participaram de) visitas com cadastro via email. Veja como:
-
-1. Crie uma nova métrica no Criador de métricas calculadas.
+1. Comece a criar uma métrica, conforme descrito em [Criar métricas](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+1. No Criador de métricas calculadas, nomeie a métrica como &quot;Participação&quot; ou algo semelhante
 1. Arraste o evento bem sucedido &quot;Pedido&quot; para a tela Definição.
 1. Altere o [modelo de atribuição](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) desse evento para **[!UICONTROL Participação]** na engrenagem **[!UICONTROL Configurações]**. Selecione o lookback **[!UICONTROL Visita]**. A definição deve ficar parecida com isto:
 
    ![](assets/participation.png)
 
-1. Salve a métrica.
+1. Selecionar [!UICONTROL **Salvar**] para salvar a métrica.
 1. Use a métrica calculada em um relatório de **[!UICONTROL Páginas]**.
 
    ![](assets/participation-pages.png)
