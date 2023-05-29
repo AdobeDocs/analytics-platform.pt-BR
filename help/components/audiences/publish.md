@@ -2,7 +2,7 @@
 title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: 28c56e7f33960c75ab6ca87fcbc0d1fb61d2f107
+source-git-commit: a56cc7a0299aad98ff8af5e0d59df4679e0d2d25
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 90%
@@ -82,15 +82,15 @@ Depois de criar um público, a Adobe cria um segmento de streaming da Experience
 
 ## Considerações sobre latência {#latency}
 
-Em vários pontos antes, durante e após a publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
+Em vários pontos antes, durante e depois da publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
-![latência de AEP para CJA](assets/latency-diagram.png)
+![Latência do AEP para o CJA](assets/latency-diagram.png)
 
 | # | Ponto de latência | Duração da latência |
 | --- | --- | --- |
-| Não exibido | Conector de origem Adobe Analytics para Analytics (A4T) | Até 30 minutos |
-| 1 | Assimilação de dados no Data Lake (do Conector de origem do Analytics ou outras fontes) | Até 90 minutos |
-| 2 | Assimilação de dados do Experience Platform Data Lake para CJA | Até 90 minutos |
+| Não exibido | Conector de origem do Adobe Analytics para Analytics (A4T) | Até 30 minutos |
+| 1 | Assimilação de dados no Data Lake (do Conector de origem do Analytics ou de outras fontes) | Até 90 minutos |
+| 2 | Assimilação de dados do Data Lake do Experience Platform no CJA | Até 90 minutos |
 | 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
 | 4 | Atualizar frequência dos públicos | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
 | 5 | Criação de destino na AEP: ativar o novo segmento | 1 a 2 horas |
@@ -131,7 +131,7 @@ Sim, será.
 
 +++
 
-+++**O CJA envia os dados do público-alvo como eventos de pipeline ou como um arquivo simples que também vai para o lago de dados?**
++++**O CJA envia os dados do público-alvo como eventos de pipeline ou como um arquivo simples que também vai para o data lake?**
 
 O CJA envia os dados para o RTCP por meio do pipeline e esses dados também são coletados em um conjunto de dados do sistema no data lake.
 
@@ -139,7 +139,7 @@ O CJA envia os dados para o RTCP por meio do pipeline e esses dados também são
 
 +++**Quais identidades o CJA envia?**
 
-Qualquer par de identidade/namespace especificado no [Configuração de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
+Qualquer par de identidade/namespace que tenha sido especificado na variável [Configuração da conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
 
 +++
 
@@ -155,15 +155,15 @@ Não. Enviamos apenas uma identidade por “pessoa”, de modo que não haveria 
 
 +++
 
-+++**A que horas do dia ocorrem as atualizações diárias, semanais e mensais? Que dia da semana ocorrem as atualizações semanais?**
++++**A que horas do dia ocorrem as atualizações diárias, semanais e mensais? Em que dia da semana ocorrem as atualizações semanais?**
 
-O tempo da atualização é baseado em quando o público-alvo original foi publicado e âncora para a hora do dia (e dia da semana ou mês).
+O momento da atualização se baseia no momento em que o público original foi publicado e se ancora a esse horário do dia (e dia da semana ou mês).
 
 +++
 
-+++**O horário diário, semanal e mensal da atualização pode ser configurado pelos usuários?**
++++**O horário de atualização diário, semanal e mensal pode ser configurado pelos usuários?**
 
-Não, eles não podem ser configurados pelos usuários.
+Não, eles não podem ser configurados por usuários.
 
 +++
 
