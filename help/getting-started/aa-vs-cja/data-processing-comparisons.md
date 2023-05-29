@@ -2,7 +2,7 @@
 title: Comparar o processamento de dados entre os recursos de relatório do Adobe Analytics e do CJA
 description: Entender as diferenças no processamento de dados para os vários recursos de relatório
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a38e2afac7645e9249e42e0b4830f5249a69b522
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 71%
@@ -45,7 +45,7 @@ A tabela abaixo define a terminologia dos diferentes tipos de lógica de process
 | Métricas calculadas | Avaliação de métricas personalizadas criadas pelo cliente que podem ser baseadas em fórmulas complexas, incluindo segmentos e filtros. | Exemplo: número de pessoas que compraram sapatos vermelhos. |
 | Lógica de atribuição | Lógica para calcular atribuição. | Exemplo: persistência do eVar. |
 | Configurações de componente | Aplicação de personalizações a métricas ou dimensões, como atribuição, comportamento, formato e outros | Exemplo: segmentação de valores para combinar valores numéricos com base em um intervalo |
-| Campos personalizados | A lógica se aplica aos campos de esquema ou padrão como parte da definição de componentes em uma visualização de dados. | Exemplo: criação de uma nova dimensão de canal de marketing |
+| Campos derivados | A lógica se aplica aos campos de esquema ou padrão como parte da definição de componentes em uma visualização de dados. | Exemplo: criação de uma nova dimensão de canal de marketing |
 
 {style="table-layout:auto"}
 
