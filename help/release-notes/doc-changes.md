@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a546c52d2a686c38f7a9a23e0c541568c2918495
+source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
 workflow-type: tm+mt
-source-wordcount: '1868'
-ht-degree: 93%
+source-wordcount: '2060'
+ht-degree: 91%
 
 ---
 
@@ -20,12 +20,16 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Recurso | Descrição |
 | --- | --- |
 | **Maio de 2023** |  |
+| Documentação de Deep Linking (Aplicativo móvel) | Permite que usuários enviem links para cartões de pontuação que os levarão diretamente ao projeto do cartão de pontuação no aplicativo. Isso facilita ainda mais o compartilhamento de projetos e aumenta o engajamento de um público menos técnico. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
+| Documento sobre &quot;Selecionar visualização de dados da célula&quot; no Report Builder | Esse recurso permite que os usuários selecionem a visualização de dados para um bloco de dados de uma célula. Isso é útil se você criar uma pasta de trabalho e tiver várias visualizações de dados com uma construção de dados semelhante e quiser reutilizar essa pasta de trabalho várias vezes, com visualizações de dados diferentes. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=pt-BR) |
+| Documentação da tela inicial atualizada do aplicativo de painéis do Analytics (aplicativo móvel) | A nova tela inicial atualizada permite visualizar todos os cartões de pontuação em uma lista consolidada.  Se um único logon tiver acesso a mais de uma organização, todos os cartões de pontuação das organizações estarão disponíveis em uma única lista. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) |
+| Atualização de otimização | Artigo atualizado sobre [Otimização do desempenho do CJA](/help/admin/optimizing-performance.md) |
 | Visão geral do Analysis Workspace | [Visão geral do Analysis Workspace](/help/analysis-workspace/home.md) atualizado para incluir informações gerais e links para o conteúdo relevante. |
 | Criar projetos | Criou um novo artigo que explica detalhadamente como [Criar projetos](/help/analysis-workspace/build-workspace-project/create-projects.md) no Analysis Workspace. |
-| Classificar componentes no painel esquerdo | Foram adicionadas informações sobre a classificação da lista de componentes no painel à esquerda.Consulte a seção &quot;Pesquisar, filtrar e classificar a lista de componentes&quot; em [Visão geral dos componentes](/help/components/overview.md). |
+| Classificar componentes no painel esquerdo | Foram adicionadas informações sobre como classificar a lista de componentes no painel esquerdo. Consulte a seção &quot;Pesquisar, filtrar e classificar a lista de componentes&quot; em [Visão geral dos componentes](/help/components/overview.md). |
 | Excluir linhas que contenham dimensões dinâmicas de uma Tabela de forma livre | Foram adicionadas informações sobre como excluir rapidamente linhas específicas que contêm dimensões dinâmicas usando o ícone x. Consulte a seção &quot;Excluir rapidamente linhas específicas de uma tabela&quot; em [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
-| Botão para adicionar uma visualização em um painel | Foram adicionadas informações sobre um novo botão na parte inferior de cada painel no Analysis Workspace, que permite adicionar rapidamente uma visualização. Consulte a seção &quot;Adicionar visualizações a um painel&quot; em [Visão geral das visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
-| Documentação de legendas inteligentes | Enriqueça a narrativa de usuários com [resumos em linguagem natural](/help/analysis-workspace/visualizations/intelligent-captions.md) de uma visualização de Linha . |
+| Botão para adicionar uma visualização em um painel | Adição de informações sobre um novo botão na parte inferior de cada painel no Analysis Workspace que permite adicionar uma visualização rapidamente. Consulte a seção &quot;Adicionar visualizações a um painel&quot; em [Visão geral das visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). |
+| Documentação de legendas inteligentes | Enriqueça a narrativa de usuários com [resumos em linguagem natural](/help/analysis-workspace/visualizations/intelligent-captions.md) de uma visualização de Linha. |
 | **Abril de 2023** |  |
 | Vídeo sobre como usar filtros como dimensões | Atualização do vídeo sobre o uso de filtros como dimensão. <p>Este vídeo é vinculado da página [Criar filtros](/help/components/filters/create-filters.md).</p> <p>Veja a seguir há um link direto para o vídeo: [Usar filtros como dimensões no Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=pt-BR).</p> |
 | Filtrar documentação | Adição de um artigo sobre o uso do [Construtor de filtros](/help/components/filters/filter-builder.md). <p>Documentação simplificada em [Criar filtros](/help/components/filters/create-filters.md) e [Visão geral dos filtros](/help/components/filters/filters-overview.md).</p> |
