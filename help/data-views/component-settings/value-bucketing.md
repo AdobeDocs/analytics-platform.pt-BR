@@ -4,9 +4,9 @@ description: Combinar valores numéricos em uma dimensão.
 exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+workflow-type: tm+mt
+source-wordcount: '188'
 ht-degree: 100%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 Ao criar ou editar uma visualização de dados, a segmentação de valores permite combinar valores numéricos com base em um intervalo. Essa função está disponível apenas para dimensões que utilizam dados de esquema do tipo Integer ou Double.
 
-A segmentação de valores é importante quando você deseja agrupar intervalos, em vez de tratar cada número único como um item de dimensão separado. Por exemplo, um segmento “Entre 5 e 10” será exibido como um item de linha “5 a 10” no Analysis Workspace.
-
 ![Classificação de valor](../assets/value-bucketing.png)
+
+A segmentação de valores é importante quando você deseja agrupar intervalos, em vez de tratar cada número único como um item de dimensão separado. Por exemplo, um segmento “Entre 5 e 10” será exibido como um item de linha “5 a 10” no Analysis Workspace.
 
 Se você quiser a flexibilidade de criar relatórios tanto em dimensões segmentadas como não segmentadas, arraste duas cópias do componente para a lista de dimensões disponíveis. Ative a segmentação em uma dimensão e desative-a na outra.
 
@@ -29,4 +29,4 @@ Se você quiser a flexibilidade de criar relatórios tanto em dimensões segment
 | [!UICONTROL Maior que ou igual a] | O limite inferior do segmento da última dimensão. |
 | [!UICONTROL Adicionar bloco] | Permite adicionar outro intervalo à classificação de dimensão numérica. Você pode adicionar até 20 segmentos em uma única dimensão. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

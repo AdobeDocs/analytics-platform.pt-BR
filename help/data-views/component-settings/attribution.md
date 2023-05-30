@@ -4,16 +4,20 @@ description: Permite definir a atribuição padrão de uma métrica.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1781'
 ht-degree: 38%
 
 ---
 
 # Configurações de componente de atribuição
 
-A atribuição oferece a capacidade de personalizar como os itens de dimensão recebem crédito por eventos bem-sucedidos. Por exemplo:
+A atribuição oferece a capacidade de personalizar como os itens de dimensão recebem crédito por eventos bem-sucedidos.
+
+![](../assets/attribution-settings.png)
+
+Por exemplo:
 
 1. Uma pessoa do site clica em um link de pesquisa pago para uma de suas páginas de produtos. Eles adicionam o produto ao carrinho, mas não o compram.
 2. No dia seguinte, veja uma publicação de mídia social de um de seus amigos. Eles clicam no link e concluem a compra.
@@ -22,7 +26,7 @@ Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquis
 
 Essa configuração de componente de visualização de dados permite definir um modelo de atribuição padrão para uma métrica. É possível substituir um determinado modelo de atribuição de métrica ao trabalhar no Analysis Workspace.
 
-![Atribuição](../assets/attribution-settings.png)
+
 
 Se sua organização exigir que uma métrica tenha várias configurações de atribuição, você poderá executar um dos seguintes procedimentos:
 

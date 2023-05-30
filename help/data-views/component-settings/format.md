@@ -4,9 +4,9 @@ description: Configure como uma métrica é formatada.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6bd8937768c97e3043b49e6963ce0fc7bce0e4ba
-workflow-type: ht
-source-wordcount: '193'
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+workflow-type: tm+mt
+source-wordcount: '170'
 ht-degree: 100%
 
 ---
@@ -21,10 +21,10 @@ O Formato permite definir como uma determinada métrica é exibida.
 | --- | --- |
 | **[!UICONTROL Formato]** | Permite especificar a formatação de uma métrica como Decimal, Hora, Porcentagem ou Moeda. |
 | **[!UICONTROL Casas decimais]** | Isso não é visível nos dados de esquema do tipo Integer. Permite especificar o número de casas decimais que uma métrica deve exibir. |
-| **[!UICONTROL Data]** | Permite determinar como você deseja que o campo de data e hora seja exibido quando usado como uma dimensão no relatório. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#date) |
-| **[!UICONTROL Data e hora]** | Permite determinar como você deseja que o campo de data e hora seja exibido quando usado como uma dimensão no relatório. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#date) |
+| **[!UICONTROL Data]** | Permite determinar como você deseja que o campo de data e hora seja exibido quando usado como uma dimensão no relatório. [Saiba mais](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
+| **[!UICONTROL Data e hora]** | Permite determinar como você deseja que o campo de data e hora seja exibido quando usado como uma dimensão no relatório. [Saiba mais](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
 | **[!UICONTROL Moeda]** | Permite determinar em qual moeda a métrica será exibida. Esta opção não aplica qualquer conversão de moeda; ela serve apenas para a formatação da interface. |
 | **[!UICONTROL Exibir tendência ascendente como]** | Permite especificar se uma tendência de alta nessa métrica é boa (verde) ou ruim (vermelho). |
 | **[!UICONTROL Valor verdadeiro]** e **[!UICONTROL Valor falso]** | Visível somente em dados de esquema do tipo Booleano. Permite personalizar o rótulo do item de dimensão para valores `true` e `false`. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

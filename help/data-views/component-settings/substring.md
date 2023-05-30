@@ -4,7 +4,7 @@ description: Use um subconjunto de uma string como itens de dimensão.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 95%
@@ -15,13 +15,13 @@ ht-degree: 95%
 
 As configurações do componente [!UICONTROL Substring] permitem executar métodos de manipulação de sequência de caracteres para obter os itens de dimensão desejados nos relatórios.
 
-[!UICONTROL Substring] está disponível somente em dimensões e é retroativa aos dados aos quais é aplicada. É uma transformação imediata de dados que ocorre antes da aplicação da filtragem ou de outras operações de análise.
-
 ![Configurações de substrings](../assets/substring-settings.png)
+
+[!UICONTROL Substring] está disponível somente em dimensões e é retroativa aos dados aos quais é aplicada. É uma transformação imediata de dados que ocorre antes da aplicação da filtragem ou de outras operações de análise.
 
 ## Da esquerda/direita
 
-Pegue uma parte de uma string com base em sua posição no início ou no fim de uma string. **[!UICONTROL Da Esquerda]** e **[!UICONTROL Da direita]** Os métodos fornecem duas listas suspensas: **[!UICONTROL De]** (em que a saída começa) e **[!UICONTROL Para]** (onde a saída termina).
+Pegue uma parte de uma string com base em sua posição no início ou no fim de uma string. **[!UICONTROL Da esquerda]** e **[!UICONTROL Da direita]** Os métodos do fornecem duas listas suspensas: **[!UICONTROL De]** (onde a saída começa) e **[!UICONTROL Para]** (onde a saída termina).
 
 * **[!UICONTROL Início da string]**: o início da string.
 * **[!UICONTROL Fim da string]**: o fim da string.
