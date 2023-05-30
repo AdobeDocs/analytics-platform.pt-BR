@@ -1,9 +1,10 @@
 ---
 title: Crescimento de usuários
 description: Acompanhe o crescimento da base de usuários do seu produto.
-source-git-commit: 37699a674a190aa2f28125d5b39bb3c27ac88551
+exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
+source-git-commit: c18ed01f899b7a521c67ed6a0008210099b858bf
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
@@ -25,7 +26,7 @@ Os casos de uso para esse tipo de análise incluem:
 
 * **Avaliação de desempenho**: o crescimento do usuário permite avaliar o desempenho geral do produto em termos de aquisição de novos usuários. Ao rastrear as tendências de crescimento, é possível entender melhor se o seu produto está atraindo e retendo usuários no ritmo desejado.
 * **Retenção e churn de usuário:** O crescimento do usuário fornece uma visualização clara em torno de períodos de alta ou baixa retenção do usuário. Reconhecer esses períodos de alta ou baixa retenção pode ajudar você a tomar decisões sobre o produto para incentivar alta retenção ou ajudar a minimizar o abandono.
-* **Avaliação de campanha**: visualizar o crescimento do usuário específico para uma campanha específica pode ajudar você a entender não apenas o tráfego gerado, mas também o quão bem a campanha ajudou os usuários a permanecerem envolvidos.
+* **Avaliação de campanha**: visualizar o crescimento dos usuários em torno de uma campanha específica pode ajudar você a entender não apenas o tráfego gerado, mas também o quão bem a campanha ajudou os usuários a permanecerem envolvidos.
 
 [Captura de tela do crescimento de usuários]
 
@@ -33,8 +34,8 @@ Os casos de uso para esse tipo de análise incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **Eventos**: o evento que você deseja medir. Como esse tipo de análise se baseia no usuário, ele pode tocar no evento uma vez dentro da granularidade de data definida para ser contado como um usuário ativo. Você pode incluir apenas um evento.
-* **Pessoas**: o segmento que você deseja medir. Você pode incluir apenas um segmento.
+* **Eventos**: o evento que você deseja medir. Como esse tipo de análise se baseia no usuário, ele pode tocar no evento uma vez dentro da granularidade de data definida para ser contado como um usuário ativo. Você pode incluir apenas um evento em uma query.
+* **Pessoas**: o segmento que você deseja medir. Você pode incluir apenas um segmento em uma consulta.
 
 ## Exibir tipos
 
