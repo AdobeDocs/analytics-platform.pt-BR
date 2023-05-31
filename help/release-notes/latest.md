@@ -3,16 +3,16 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 960021f2374b38b96fc1ec18200f1790194bfbb8
+source-git-commit: 2ff3fae7e285998d787a259d9d18c6d5e7fa961e
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 82%
+source-wordcount: '932'
+ht-degree: 77%
 
 ---
 
 # Notas de versão atuais do Customer Journey Analytics (CJA) (maio de 2023)
 
-**Última atualização**: 30 de maio de 2023
+**Última atualização**: 31 de maio de 2023
 
 As versões do Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Devido a isso, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -20,6 +20,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Visualizações de dados do Adobe Journey Optimizer** | Os administradores do CJA têm acesso a algumas visualizações de dados adicionais no CJA, chamadas &quot;Visualização de dados do AJO (nome da sandbox)&quot;. Essas visualizações de dados são usadas para potencializar os relatórios no Adobe Journey Optimizer (AJO). Eles também podem ser usados para executar uma análise mais profunda das atividades do AJO no CJA. [Saiba mais](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html). |  | 25 de maio de 2023 |
 | **Preenchimento retroativo para sandboxes que não são de produção** | Ao criar um fluxo de dados do Conector de origem do Analytics em uma sandbox que não seja de produção, o preenchimento retroativo em sandboxes que não são de produção será limitado a 3 meses. Para as sandboxes de produção ele permanecerá em 13 meses. | N/D | 26 de abril de 2023 |
 | **Compartilhamento de links para projetos (sem necessidade de logon)** | Agora você pode compartilhar links de somente leitura para projetos do Analysis Workspace com pessoas que não têm acesso ao Adobe Analytics. Isso inclui o compartilhamento com pessoas de fora da organização, ou com aquelas de dentro da organização que não estejam provisionadas para o Adobe Analytics. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=pt-BR#share-public-link) <p>Essa funcionalidade está habilitada por padrão e pode ser desativada pelo administrador do sistema. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=pt-BR#company-preferences)</p> | 3 de maio de 2023 | 5 de junho de 2023 |
 | **Tela inicial atualizada para o aplicativo de painéis do Analytics (aplicativo para dispositivos móveis)** | A nova tela inicial atualizada permite visualizar todos os cartões de pontuação em uma lista consolidada.  Se um único logon tiver acesso a mais de uma organização, todos os cartões de pontuação das organizações estarão disponíveis em uma única lista. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/executive.html#use-dashboards) | N/D | 10 de maio de 2023 |
