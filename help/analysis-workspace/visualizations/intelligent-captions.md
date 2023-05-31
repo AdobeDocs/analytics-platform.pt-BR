@@ -1,60 +1,62 @@
 ---
-description: Use legendas inteligentes para gerar insights de linguagem natural para exibir rapidamente as tendências nas visualizações.
+description: Use legendas inteligentes para gerar insights em linguagem natural e exibir tendências rapidamente nas visualizações.
 title: Legendas inteligentes
 feature: Visualizations
 role: User, Admin
-source-git-commit: 9ce948e4a8dd7fdf844016ad197d9d125eb6ef6a
+exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
+source-git-commit: 48648a29b92ff81b98a7efa8f6f1cb3f49d4bf81
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 0%
+source-wordcount: '382'
+ht-degree: 1%
 
 ---
 
-
 # Legendas inteligentes
 
-{{release-limited-testing}}
+As legendas inteligentes usam aprendizagem de máquina avançada e IA gerativa para fornecer insights valiosos de linguagem natural para visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para o [Linha](line.md) visualização. (Outras visualizações se seguirão.)
 
-As legendas inteligentes usam o Aprendizagem de Máquina avançada e a IA Gerativa para fornecer valiosas insights de linguagem natural para as visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para o [Linha](line.md) visualização. (Outras visualizações serão exibidas.)
-
-As legendas inteligentes são direcionadas para:
+As legendas inteligentes são voltadas para:
 
 * Analistas que precisam de narrativas para compartilhar com outros usuários. Os analistas precisam desses insights para fornecer contexto aos usuários.
-* Usuários de negócios que desejam descobrir rapidamente as vantagens de alto nível.
+* Usuários empresariais que desejam descobrir rapidamente as principais vantagens.
 
 As legendas estão disponíveis para todos os usuários do CJA e não exigem permissões especiais.
 
-## Abrir legendas inteligentes {#launch}
+## Iniciar legendas inteligentes {#launch}
 
-Para iniciar as legendas geradas automaticamente para uma visualização de linha, clique no botão **[!UICONTROL Legendas inteligentes]** ícone na parte superior direita da visualização.
+Para iniciar legendas geradas automaticamente para uma visualização de linha, clique no **[!UICONTROL Legendas inteligentes]** ícone na parte superior direita da visualização.
 
 ![iniciar legendas inteligentes](assets/intell-caps-1.png)
 
-Agora, insights de linguagem natural são gerados. As legendas serão geradas sempre que os dados subjacentes selecionados forem alterados na tabela que alimenta a visualização. Além disso, se houver várias métricas na tabela, as legendas serão geradas apenas para a primeira métrica ou para a métrica atualmente selecionada pelo usuário.
+Os insights de linguagem natural estão sendo gerados agora.
 
-Se você salvar o projeto nesse ponto e recarregá-lo posteriormente, as legendas serão atualizadas automaticamente com novos dados. O mesmo se aplica a projetos agendados e arquivos PDF exportados deste projeto.
+* As legendas são geradas sempre que os dados subjacentes selecionados mudam na tabela que possibilita a visualização.
+
+* Se houver várias métricas na tabela, as legendas serão geradas apenas para a primeira métrica ou para a métrica selecionada no momento pelo usuário.
+
+* Se você salvar o projeto neste ponto e recarregá-lo posteriormente, as legendas serão atualizadas automaticamente com novos dados. O mesmo se aplica a projetos agendados e arquivos PDF exportados deste projeto.
 
 ## Exibir e interpretar legendas {#view}
 
-Esta é uma amostra de como as legendas podem se parecer:
+Esta é uma amostra de como as legendas podem ser:
 
 ![Legendas](assets/captions.png)
 
 ## Copiar para a área de transferência {#copy}
 
-Você pode copiar as legendas em uma área de transferência e colá-las em um PowerPoint ou outra ferramenta. Encontre a **[!UICONTROL Copiar legendas para a área de transferência]** ícone na parte superior direita da caixa de diálogo de legendas.
+Você pode copiar as legendas para uma área de transferência e colá-las em um PowerPoint ou outra ferramenta. Localize o **[!UICONTROL Copiar legendas para a área de transferência]** ícone na parte superior direita da caixa de diálogo de legendas.
 
 ## Editar legendas {#edit}
 
-É possível editar as legendas, como ocultar ou ocultar uma categoria específica de insights. Por exemplo, se você não quiser o insight sobre a ordem mínima, poderá ocultá-la e clicar em Aplicar, e ela não será exibida novamente.
+É possível editar as legendas, como ocultar ou reexibir uma categoria específica de insights. Por exemplo, se você não quiser obter informações sobre a ordem mínima, oculte-a e clique em Aplicar para que ela não seja exibida novamente.
 
-1. Clique em **[!UICONTROL Editar exibição de legendas inteligentes]** ícone ao lado do ícone da área de transferência.
+1. Clique em **[!UICONTROL Editar exibição inteligente de legendas]** ícone ao lado do ícone da área de transferência.
 
-1. Na caixa de diálogo de edição, clique no ícone de olho ao lado do insight que deseja ocultar.
+1. Na caixa de diálogo de edição, clique no ícone de olho ao lado do insight que você deseja ocultar.
 
 1. Clique em **[!UICONTROL Aplicar]**.
 
-Use o mesmo processo para mostrar legendas.
+Use o mesmo processo para exibir legendas.
 
 ## Exportar legendas {#export}
 
@@ -62,6 +64,6 @@ Você pode **exportar legendas via PDF**, desde que o projeto seja salvo com as 
 
 ## Ativar/desativar legendas {#toggle}
 
-Se preferir que as legendas inteligentes sejam geradas, você pode desativar o recurso acessando as preferências de Visualização e desmarcando **[!UICONTROL Mostrar legendas inteligentes]**.
+Se você preferir não gerar legendas inteligentes, é possível desativar esse recurso acessando as Preferências de visualização e desmarcando **[!UICONTROL Mostrar legendas inteligentes]**.
 
 ![configurações de legenda](assets/toggle-captions.png)
