@@ -3,7 +3,7 @@ description: Recursos de suporte para acessibilidade no Analysis Workspace
 title: Acessibilidade no Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 99%
@@ -67,7 +67,7 @@ O [!UICONTROL Analysis Workspace] oferece um conjunto avançado de [atalhos de t
 | `[Alt + 1]` | Nova tabela de forma livre |
 | `[Ctrl + Shift + C]` | Nova métrica calculada |
 | `[Ctrl + Shift + D]` | Novo intervalo de datas |
-| `[Ctrl + Shift + E]` | Novo segmento |
+| `[Ctrl + Shift + E]` | Novo filtro |
 | `[Ctrl + Z]` | Desfazer |
 | `[Component drag + Shift]` | Criar um filtro suspenso |
 

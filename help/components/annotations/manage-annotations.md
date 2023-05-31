@@ -4,10 +4,10 @@ description: Como gerenciar anotações no Espaço de trabalho.
 role: User, Admin
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -58,7 +58,7 @@ Ao compartilhar anotações ou trabalhar com anotações compartilhadas com voc�
 
 ## Anotações e fusos horários
 
-Todas as anotações são criadas com um carimbo de data e hora, mas nenhuma informação de “hora” ou “fuso horário”. No momento do relatório, o fuso horário da visualização de dados do painel é sempre aplicado. Assim, uma anotação criada para o dia de Natal acontece em 25 de dezembro - independentemente do fuso horário da visualização de dados em que você estiver.
+Todas as anotações são criadas com um carimbo de data e hora, mas nenhuma informação de “hora” ou “fuso horário”. No momento do relatório, o fuso horário da visualização de dados do painel é sempre aplicado. Assim, uma anotação criada para o dia de Natal acontece em 25 de dezembro, independentemente do fuso horário da visualização de dados em que você estiver.
 
 Outro exemplo é o Dia de Ano Novo. A cada hora, um fuso horário diferente dispara fogos de artifício conforme o ano novo começa. Às 22h, Hora das Montanhas dos EUA, a costa leste dos EUA está soltando fogos porque já é meia-noite da Hora do Leste.
 
@@ -71,11 +71,11 @@ Basta selecionar uma ou mais anotações e a barra de tarefas é exibida.
 | Tarefa | Descrição |
 | --- | --- |
 | Adicionar | Direciona para o construtor de anotações, onde é possível criar novas anotações. |
-| Tag | Todos os usuários podem criar tags para anotações e aplicar uma ou mais tags a uma anotação. Entretanto, você pode exibir tags somente dos segmentos proprietários. Que tipos de tags você deve criar? Estas são algumas sugestões para tags úteis:<ul><li>Tags com base em nomes de equipe, como Marketing social, Marketing móvel</li><li>Tags de projeto (tags de análise), como análises de página de entrada</li><li>Tags de categoria: masculino; geografia</li><li>Tags de fluxo de trabalho: organizado para (uma unidade de negócio específica); Aprovado</li></ul> |
+| Tag | Todos os usuários podem criar tags para anotações e aplicar uma ou mais tags a uma anotação. No entanto, só é possível visualizar as tags dos filtros que você possui. Que tipos de tags você deve criar? Estas são algumas sugestões para tags úteis:<ul><li>Tags com base em nomes de equipe, como Marketing social, Marketing móvel</li><li>Tags de projeto (tags de análise), como análises de página de entrada</li><li>Tags de categoria: masculino; geografia</li><li>Tags de fluxo de trabalho: organizado para (uma unidade de negócio específica); Aprovado</li></ul> |
 | Excluir | Excluir uma anotação a remove de qualquer projeto em sua organização. |
 | Renomear | Renomear uma anotação a renomeia em todos os projetos aos quais foi aplicada. |
 | Copiar | Cria uma cópia distinta com sua própria ID de anotação, mas com o mesmo nome e definição. |
 | Exportar para CSV | Exporte a definição da anotação para um arquivo CSV. |
-| Filtro (painel esquerdo) | Filtre por tags, visualizações de dados, proprietários e outros filtros (Meus, Aprovados, Favoritos, Compartilhados comigo e Mostrar tudo). |
+| Filtro (painel esquerdo) | Filtre por tags, visualização de dados, proprietários e outros filtros (Meus, Aprovados, Favoritos, Compartilhados comigo e Mostrar tudo). |
 
 {style="table-layout:auto"}

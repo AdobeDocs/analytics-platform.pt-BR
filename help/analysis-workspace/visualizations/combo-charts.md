@@ -4,10 +4,10 @@ title: Visualização de gráficos de combinação
 feature: Visualizations
 role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 97%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -26,7 +26,7 @@ Lembre-se:
 * É possível adicionar várias comparações em um único [!UICONTROL gráfico de combinação].
 * Se você adicionar uma ou mais comparações, elas devem ser do mesmo tipo, como [!UICONTROL Comparação de tempo].
 * Você pode adicionar até 5 comparações.
-* É possível aplicar até 3 filtros (segmentos) a uma métrica.
+* É possível aplicar até 3 filtros a uma métrica.
 * Métricas calculadas não são compatíveis com gráficos de combinação.
 
 ## Criar um gráfico de combinação
@@ -88,11 +88,11 @@ Clique no ícone de engrenagem na parte superior direita de um gráfico de combi
 | Configuração | Definição |
 | --- | --- |
 | **[!UICONTROL Tipo de visualização]** | Permite alternar para outro tipo de visualização. |
-| **[!UICONTROL Granularidade]** | Para visualizações de tendências, você pode alterar a granularidade de tempo (dia, semana, mês etc.) nessa lista suspensa. |
+| **[!UICONTROL Granularidade]** | Para visualizações de tendências, você pode alterar a granularidade de tempo (dia, semana, mês etc.) nesta lista suspensa. |
 | **[!UICONTROL Geral]** |  |
 | **[!UICONTROL Porcentagens]** | Exibe os valores em porcentagens. |
 | **[!UICONTROL Legenda visível]** | Permite ocultar o texto detalhado da legenda para a visualização dos gráficos de combinação. |
-| **[!UICONTROL Limite máximo de itens]** | Reduz o número de itens no eixo X. Se você tiver um conjunto de dados grande, poderá exibir apenas os primeiros 10 itens (ou qualquer valor que você escolher). |
+| **[!UICONTROL Limite máximo de itens]** | Reduz o número de itens no eixo X. Se você tiver um conjunto de dados grande, poderá mostrar apenas os primeiros 10 itens (ou qualquer valor que escolher). |
 | **[!UICONTROL Sobreposições]** | Mostrar ou ocultar barras nas linhas. |
 | **[!UICONTROL Eixo]** |  |
 | **[!UICONTROL Exibir eixo duplo]** | Somente se aplica se você tiver duas métricas. Você pode ter um eixo Y à esquerda (para uma métrica) e outro à direta (para a outra métrica). Isso é útil quando métricas projetadas têm magnitudes muito diferentes. A cor do eixo duplo corresponde à cor da tabela, a menos que haja várias comparações. Nesse caso, a cor de todas as comparações é cinza. |

@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel Público-alvo médio por minuto de
 feature: Panels
 role: User, Admin
 exl-id: be8371ee-8bc6-4a99-8527-dd94eab8a7f9
-source-git-commit: f74dd6fa47c12c4616e8c5e50d4b351fb498252b
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -21,7 +21,7 @@ Os clientes do Media Analytics podem usar o painel Audiência média por minuto 
 No Analysis Workspace, a Audiência média por minuto é o tempo gasto visualizando seu fluxo de mídia dividido pela duração do conteúdo ou pela seleção total do período e granularidade selecionada.
 
 O painel Audiência média por minuto da mídia fornece análises de público-alvo médio por minuto, pelo conteúdo específico selecionado se a duração for disponibilizada por meio das classificações.
-O painel Audiência média por minuto da mídia também fornece análises durante um período de tempo selecionado, que pode ser filtrado por conteúdo específico, independentemente da duração estar ou não disponível usando as classificações. Para acessar o Painel de público-alvo médio por minuto, navegue até uma visualização de dados com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace.
+O painel Audiência média por minuto da mídia também fornece análises durante um período de tempo selecionado, que pode ser filtrado por conteúdo específico, independentemente da duração estar ou não disponível usando as classificações. Para acessar o Painel Audiência média por minuto da mídia, navegue até uma visualização de dados com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace.
 
 <!-- For more information, see the Media Average Minute Audience introduction video:
 << replace with AMA video when available >> -->
@@ -35,7 +35,7 @@ Você pode configurar o painel Público-alvo médio por minuto de mídia usando 
 | Configuração | Descrição |
 |---------|------------|
 | Intervalo de datas do painel | O padrão do intervalo de datas do painel é Hoje. Você pode editá-lo para exibir um único dia ou muitos meses de cada vez. <br></br> Essa visualização é limitada a 1440 linhas de dados (por exemplo, 24 horas na granularidade no nível de minuto). Se uma combinação de intervalo de datas e granularidade resultar em mais de 1440 linhas, a granularidade será atualizada automaticamente para ajustar o intervalo de datas completo. |
-| Arraste um segmento aqui (ou qualquer outro componente) | Como outros painéis, essa configuração filtra suas seleções com base nos segmentos criados. Essa é uma ótima maneira de observar plataformas específicas, fluxos ao vivo ou outros segmentos de mídia comuns. |
+| Arraste um filtro aqui (ou qualquer outro componente) | Como outros painéis, essa configuração filtra as seleções com base nos filtros criados. Essa é uma ótima maneira de observar plataformas específicas, fluxos ao vivo ou outros segmentos de mídia comuns. |
 | Calcular métrica para | Esta configuração permite escolher se você deseja ver o público-alvo médio por minuto para um conteúdo específico, selecionando *conteúdo específico* ou se você deseja ver o público-alvo médio por minuto de um período específico, selecionando *período personalizado*. <br></br>O conteúdo específico funciona somente se a duração tiver sido atualizada usando Classificações. Se a duração estiver indisponível, ou se você quiser visualizar o público-alvo médio por minuto de uma série de tempo com vários conteúdos ou conteúdos sem uma duração específica atribuída (como durante um fluxo ao vivo ou evento), deverá selecionar um período personalizado. Essa configuração altera o fluxo de trabalho e a saída do relatório. |
 
 ### Conteúdo específico
@@ -44,9 +44,9 @@ Você pode configurar o painel Público-alvo médio por minuto de mídia usando 
 |---------|------------|
 | Dimensões de relatório | Ao escolher um conteúdo específico, é possível selecionar a saída do relatório para usar os campos nome do vídeo ou ID do conteúdo para mostrar o conteúdo e o público-alvo médio por minuto associado para o período selecionado. |
 | Filtrar conteúdo por (opcional) | Você pode filtrar o conteúdo específico dependendo da exibição desejada ou da maneira como seus dados são estruturados. |
-| Programa, temporada, episódio | Selecionar &quot;Mostrar, temporada, episódio&quot; exibe seus programas disponíveis na lista suspensa, que podem ser filtrados por meio de uma pesquisa (ou arrastando e soltando o nome do programa na coluna esquerda). Você pode terminar a seleção ali para ver todas as estações do programa, ou você pode filtrar por estações individuais e por episódios individuais. Esta configuração mostra os dados para esses programas, temporadas ou episódios do período selecionado. |
+| Programa, temporada, episódio | Selecionar &quot;Programa, temporada, episódio&quot; exibe seus programas disponíveis na lista suspensa, que podem ser filtrados por meio de uma pesquisa (ou arrastando e soltando o nome do programa na coluna esquerda). Você pode terminar a seleção ali para ver todas as estações do programa, ou você pode filtrar por estações individuais e por episódios individuais. Esta configuração mostra os dados para esses programas, temporadas ou episódios do período selecionado. |
 | Dimensão personalizada | Se o seu nome de exibição estiver em uma dimensão personalizada, você poderá encontrá-lo pesquisando na lista suspensa da dimensão (opcional) ou usando a pesquisa de coluna à esquerda. O item de dimensão é preenchido automaticamente com base nessa seleção e é tratado como um episódio. |
-| Nenhum | Você pode escolher *Nenhum* para mostrar todos os nomes de vídeo que têm dados de público-alvo de minuto médio para a seleção que você escolheu. |
+| Nenhum | Você pode escolher *Nenhum* para mostrar todos os nomes de vídeo que têm dados de público-alvo médio por minuto para a seleção que você escolheu. |
 
 ### Configurações avançadas de conteúdo específico
 
@@ -61,7 +61,7 @@ Você pode configurar o painel Público-alvo médio por minuto de mídia usando 
 |---------|------------|
 | Granularidade | A granularidade padrão é de 5 minutos, mas você pode escolher qualquer uma das granularidades usadas como denominador para a série de tempo na seleção de período geral feita na seleção do calendário. Por exemplo, selecionar 12h às 12h30 com granularidade de 5 minutos retornará o público-alvo médio por minuto durante a meia hora completa, bem como seis linhas com o público-alvo médio por minuto para cada período de 5 minutos. Essas linhas são usadas como pontos de dados para o gráfico de série de tempo. |
 | Filtrar conteúdo por (opcional) | Você pode filtrar o conteúdo específico dependendo da exibição desejada ou da maneira como seus dados são estruturados. |
-| Programa, temporada, episódio | Selecionar *Programa, temporada, episódio* exibe seus programas disponíveis na lista suspensa, que podem ser filtrados por meio de pesquisa (ou arrastando e soltando o nome do programa na coluna esquerda). Você pode terminar a seleção ali para ver todas as estações do programa, ou você pode filtrar por estações individuais e por episódios individuais. Esta configuração mostra os dados para esses programas, temporadas ou episódios do período selecionado. |
+| Programa, temporada, episódio | Selecionar *Programa, temporada, episódio* O exibe seus programas disponíveis na lista suspensa, que podem ser filtrados por meio de pesquisa (ou arrastando e soltando o nome do programa na coluna esquerda). Você pode terminar a seleção ali para ver todas as estações do programa, ou você pode filtrar por estações individuais e por episódios individuais. Esta configuração mostra os dados para esses programas, temporadas ou episódios do período selecionado. |
 | Dimensão personalizada | Se o seu nome de exibição estiver em uma dimensão personalizada, você poderá encontrá-lo pesquisando na lista suspensa da dimensão (opcional) ou usando a pesquisa de coluna à esquerda. O item de dimensão é preenchido automaticamente com base nessa seleção e é tratado como um episódio. |
 | Nenhum | Você pode escolher *Nenhum* para mostrar todos os nomes de vídeo durante o período escolhido. |
 

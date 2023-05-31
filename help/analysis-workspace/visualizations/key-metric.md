@@ -4,10 +4,10 @@ title: Resumo da métrica principal
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: f2e152345d7a395c684a964e72b1bcdaa5d817b0
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 99%
+ht-degree: 91%
 
 ---
 
@@ -35,7 +35,7 @@ Essa visualização aborda uma variedade de casos de uso comuns, incluindo:
 
 1. Arraste a visualização do **[!UICONTROL Resumo da métrica principal]** do menu **[!UICONTROL Visualizações]** no painel à esquerda para um painel.
 
-1. Configure a visualização selecionando uma métrica, um intervalo de datas principal, um intervalo de datas de comparação e um segmento (se desejar):
+1. Configure a visualização selecionando uma métrica, um intervalo de datas principal, um intervalo de datas de comparação e um filtro (se desejar):
 
    ![configuração da métrica principal](assets/key-metric-config.png)
 
@@ -44,7 +44,7 @@ Essa visualização aborda uma variedade de casos de uso comuns, incluindo:
    | **[!UICONTROL Métrica]** | Selecione a métrica que deseja examinar. Todas as métricas são compatíveis. |
    | **[!UICONTROL Intervalo de datas principal]** | O intervalo de datas atual da tabela de forma livre. |
    | **[!UICONTROL Intervalo de datas de comparação]** | O intervalo de datas no qual você deseja comparar o intervalo de datas principal. |
-   | **[!UICONTROL Segmento (opcional)]** | Qualquer segmento em que você esteja interessado especificamente neste resumo. |
+   | **[!UICONTROL Filtro (opcional)]** | Qualquer filtro em que você esteja interessado especificamente neste resumo. |
 
    {style="table-layout:auto"}
 
@@ -62,7 +62,7 @@ Observe que:
 
 * A partir daqui, você pode passar o mouse sobre os gráficos de linha para ver as estatísticas de dias individuais:
 
-![estatísticas](assets/key-metric-output2.png)
+![statistics](assets/key-metric-output2.png)
 
 ## Configurações de visualização
 
@@ -93,4 +93,4 @@ Após criar a visualização, ainda é possível editar a configuração origina
 
    Você será levado de volta à visualização da configuração original.
 
-1. Altere a métrica, o intervalo de datas principal, o intervalo de datas de comparação ou o segmento, como preferir.
+1. Altere a métrica, o intervalo de datas principal, o intervalo de datas de comparação ou o filtro, como preferir.

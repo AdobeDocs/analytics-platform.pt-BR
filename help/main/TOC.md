@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Customer Journey Analytics (CJA) e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -246,13 +246,13 @@ ht-degree: 96%
          + [Criar uma métrica &quot;Exibições de página por visita&quot;](../components/calc-metrics/cm-workflow/cm-pvv.md)
          + [Criar uma métrica de &quot;Participação&quot;](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Métricas filtradas](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
-         + [Empilhar e substituir segmentos](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
+         + [Empilhar e substituir filtros](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Métricas filtradas e ponderadas](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [Usar funções](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [Marcar métricas calculadas](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Aprovar métricas calculadas](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Compartilhar métricas calculadas](../components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [Gerenciador de métricas calculadas](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [Gerenciador de métrica calculada](../components/calc-metrics/cm-workflow/cm-manager.md)
       + [Métricas calculadas padrão](../components/calc-metrics/default-calcmetrics.md)
       + [Funções básicas](../components/calc-metrics/cm-functions.md)
       + [Funções avançadas](../components/calc-metrics/cm-adv-functions.md)

@@ -3,10 +3,10 @@ description: Mostra como criar uma métrica simples de "Exibições de página p
 title: Criar uma métrica simples de "Exibições de página por visita"
 feature: Calculated Metrics
 exl-id: 46c83a1f-cb2d-4d5d-af4f-e1d2e4566743
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 83%
+source-wordcount: '214'
+ht-degree: 85%
 
 ---
 
@@ -32,4 +32,4 @@ Veja como criar uma métrica simples de &quot;Exibições de página por visita&
 
    Observe que a fórmula **[!UICONTROL Resumo]** é atualizada sempre que você faz uma alteração na definição da métrica.
 
-1. (Opcional) Para compartilhar, aprovar, adicionar ou remover tags, renomear ou excluir uma métrica, você pode ir para a [Página Métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+1. (Opcional) Compartilhe a métrica com outros usuários em sua organização, conforme descrito em [Compartilhar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

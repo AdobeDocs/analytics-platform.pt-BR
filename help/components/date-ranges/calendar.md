@@ -4,10 +4,10 @@ title: Visão geral do calendário e do intervalos de datas
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: 524aed20a62b8d8648230be81c63f9c58c84ae87
+source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -41,7 +41,7 @@ Para usar intervalos de datas relativos ao painel
 
 1. Clique na guia **Espaço de trabalho**.
 1. Selecione **Projeto em branco**.
-1. Adicione dimensões, métricas e segmentos do painel esquerdo.
+1. Adicione dimensões, métricas e filtros no painel esquerdo.
 1. Clique no campo de intervalo de datas do painel para alternar a configuração de intervalos de datas relativos ao painel.
 1. Selecione **Tornar os componentes do intervalo de datas relativos ao calendário do painel**.
    * Selecione a opção para tornar os componentes do intervalo de datas relativos ao calendário do painel.
@@ -61,19 +61,19 @@ Lembre-se das seguintes diretrizes ao usar intervalos de datas relativos ao pain
 
 ### Fórmulas e intervalos de datas relativos {#formula-relative-dates}
 
-Se você tiver selecionado datas relativas, todas as fórmulas de datas usarão a data inicial do painel como ponto de partida.
+Se você tiver datas relativas selecionadas, todas as fórmulas de data usarão a data de início do painel como ponto de partida.
 
 ### Calendários personalizados e intervalos de datas relativos {#custom-calendar-formulas}
 
 Ao usar um calendário personalizado com base em semanas e adicionar meses ou anos, a fórmula calcula a diferença de dias no período especificado. A data real pode ser diferente devido a essa diferença. A fórmula escolhe o dia baseado no mesmo local do calendário personalizado. Por exemplo, a terceira sexta-feira da terceira semana em um calendário personalizado.
 
-### Sobre segmentos que usam datas contínuas e intervalos de datas relativos ao painel {#segments-relative-dates}
+### Sobre filtros que usam datas do acumulado e intervalos de datas relativos do painel {#segments-relative-dates}
 
-Se você criar um segmento ou usar um segmento com uma data contínua, por exemplo, os últimos 7 dias ou as últimas 2 semanas, e clicar na pré-visualização do segmento, a data contínua será iniciada a partir de *Hoje* em vez da data inicial do painel. Como resultado, as informações da pré-visualização do segmento não corresponderão às que você verá ao usar o segmento na tabela. A pré-visualização é afetada, não o segmento propriamente dito.
+Se você criar um filtro ou usar um filtro com uma data do acumulado, por exemplo, os Últimos 7 dias ou as Últimas 2 semanas, e clicar na pré-visualização do filtro, ela iniciará a data do acumulado em *Hoje* em vez da data de início do painel. Como resultado, a visualização do filtro não corresponderá quando você realmente usar o filtro na tabela. A visualização foi afetada, não o filtro em si.
 
 ## Diretrizes para intervalos de datas e visualizações do painel {#guidelines-panel-dates}
 
 * A partir da versão de fevereiro, as visualizações de componentes e dados serão baseadas no intervalo de datas do painel e não nos últimos 90 dias.
 * Todos os componentes listados no painel esquerdo estarão disponíveis com base no intervalo de datas do painel.
-* Todas as visualizações de data nos construtores de métrica calculada e de segmento serão baseadas no intervalo de datas do painel, a menos que sejam acessadas pelos gerentes de componente, que não têm um painel associado; neste caso, elas ainda serão baseadas nos últimos 90 dias.
+* Todas as visualizações de data no filtro e nos construtores de métricas calculadas se basearão no intervalo de datas do painel (a menos que sejam acessadas pelos gerenciadores de componentes, que não têm um painel associado, elas ainda se basearão nos últimos 90 dias).
 * Quaisquer visualizações de dados exibirão dados ou componentes com base no intervalo de datas do painel.
