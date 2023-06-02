@@ -3,16 +3,16 @@ title: Criar um intervalo de datas
 description: Criar um intervalo de datas para uso em relatórios.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 94%
+source-wordcount: '403'
+ht-degree: 91%
 
 ---
 
 # Criar um intervalo de datas
 
-Você pode criar um intervalo de datas personalizado usando um dos dois seguintes métodos:
+Você pode criar um intervalo de datas usando um dos dois métodos a seguir:
 
 * Diretamente em um projeto do espaço de trabalho clicando no botão &#39;`+`&#39; ao lado da lista de componentes do intervalo de datas à esquerda
 * No gerenciador de intervalo de datas
@@ -38,7 +38,7 @@ Ao clicar no intervalo de datas na janela modal, você tem várias opções:
 
 * **Calendário**: selecione as datas inicial e final.
 * **Usar datas do acumulado**: marque essa caixa se desejar que o intervalo de datas mude com o passar do tempo. Não marque essa caixa se desejar que o intervalo de datas permaneça estático.
-* **Selecionar predefinição**: Use essa seleção suspensa se desejar um intervalo de datas personalizado com base em um intervalo que o Adobe oferece por padrão. Ao selecionar uma predefinição, você pode personalizar ainda mais o intervalo de datas para atender às suas necessidades. Isso não afeta a predefinição que a Adobe oferece.
+* **Selecionar predefinição**: use essa seleção suspensa se desejar um intervalo de datas personalizado com base em um intervalo que o Adobe oferece por padrão. Ao selecionar uma predefinição, você pode personalizar ainda mais o intervalo de datas para atender às suas necessidades. Isso não afeta a predefinição que a Adobe oferece.
 
 ## Intervalos de datas acumulados
 

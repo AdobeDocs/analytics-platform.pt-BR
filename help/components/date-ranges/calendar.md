@@ -1,19 +1,19 @@
 ---
-description: No calendário, você pode especificar datas e intervalos de datas ou selecionar uma predefinição.
+description: Como especificar datas e intervalos de datas ou selecionar uma predefinição.
 title: Visão geral do calendário e do intervalos de datas
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 81%
+source-wordcount: '869'
+ht-degree: 79%
 
 ---
 
 # Visão geral do calendário e do intervalos de datas
 
-No calendário, você pode especificar datas e intervalos de datas ou selecionar uma predefinição.
+Usando o calendário, você pode especificar datas e intervalos de datas ou selecionar uma predefinição. Intervalos de datas são um tipo de componente que pode ser usado em projetos do Espaço de trabalho. Eles permitem que você veja a tendência dos dados ao longo do tempo ou veja quando os eventos mais acontecem. Intervalos de datas estão codificados na cor roxa. Intervalos de datas personalizados permitem personalizar as datas que você vê nos projetos do Espaço de trabalho.
 
 As seleções do calendário se aplicam a nível de painel, mas existe a opção de aplicá-las a todos os painéis. Ao clicar em um intervalo de datas no Espaço de trabalho, a interface exibe o mês atual do calendário e o mês anterior. Você pode ajustar esses dois calendários clicando nas setas para a direita e para a esquerda em cada canto superior respectivo.
 
