@@ -4,10 +4,10 @@ description: Vários casos de uso que mostram a flexibilidade e o potencial das 
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b2dc937159fc631755c1c5486149a94f7cd33f89
-workflow-type: ht
+source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
+workflow-type: tm+mt
 source-wordcount: '1313'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -99,9 +99,9 @@ Uma dimensão e duas métricas facilitam esse relatório:
 
 * [Tipo de sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional) - Essa dimensão tem dois valores: 1) [!UICONTROL Novo] e 2) [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item de linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão.
 
-* [Novas sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional). A métrica de novas sessões é definida como a primeira sessão de uma pessoa na janela de relatórios.
+* [Primeiras sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional). A métrica Primeiras sessões é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
 
-* [Sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional) A métrica de sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.-->
+* [Sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html?lang=pt-BR#optional) A métrica Sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
 
 Para acessar esses componentes:
 

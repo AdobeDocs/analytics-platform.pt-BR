@@ -4,10 +4,10 @@ description: Detalhes e informações sobre todos os componentes padrão que pod
 exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 98%
+source-wordcount: '1012'
+ht-degree: 88%
 
 ---
 
@@ -52,15 +52,16 @@ Os componentes padrão opcionais estão disponíveis em **[!UICONTROL Visualiza�
 | [!UICONTROL Dia do ano] | Dimensão de separação de tempo | 1-366 |
 | [!UICONTROL Hora do dia] | Dimensão de separação de tempo | 0-23 |
 | [!UICONTROL  Mês do ano] | Dimensão de separação de tempo | Janeiro - Dezembro |
-| [!UICONTROL Nova sessão] | Métrica | A primeira sessão definida por uma pessoa na janela de relatórios. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat) |
+| [!UICONTROL Primeiras sessões] | Métrica | A primeira sessão definida por uma pessoa na janela de relatórios. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat) |
+| [!UICONTROL Sessões de retorno] | Métrica | O número de sessões que não foram a primeira sessão de uma pessoa. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat) |
 | [!UICONTROL ID de pessoa] | Dimensão | Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas opções pode ser usada como a ID de pessoa. Os exemplos incluem ID de cookie, ID com título, ID de usuário, código de rastreamento, etc. A variável [!UICONTROL ID de pessoa] dimensão é a base da combinação de conjuntos de dados e da identificação de pessoas únicas no CJA.<p>Os possíveis casos de uso incluem:<ul><li>Criar um filtro em um valor de ID de pessoa específico para filtrar tudo de acordo com o comportamento desse usuário.</li><li>Depuração: certificar-se de que os dados de uma ID de cookie específica (ou uma ID de cliente específica) estejam lá.</li><li>Identificação dos usuários que entraram em contato com uma central de atendimento.</li></ul> |
 | [!UICONTROL Namespace da ID de pessoa] | Dimensão | O tipo de ID no qual a [!UICONTROL ID de pessoa] consiste. Exemplos: `email address`, `cookie ID`, `Analytics ID`, etc. |
 | [!UICONTROL Trimestre do ano] | Dimensão de separação de tempo | T1, T2, T3, T4 |
 | [!UICONTROL Repetição de sessão] | Métrica | O número de sessões que não foram a primeira sessão de uma pessoa. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat) |
-| [!UICONTROL Sessão inicia] | Métrica | O número de eventos que foram o primeiro evento de uma sessão. Quando usado em uma definição de filtro (por exemplo, &quot;[!UICONTROL Inícios de sessão] existe&quot;), ela filtra somente para o primeiro evento de cada sessão. |
-| [!UICONTROL Sessão termina] | Métrica | O número de eventos que foram o último evento de uma sessão. Semelhante a [!UICONTROL Inícios de sessão], também pode ser usado em uma definição de filtro para filtrar os itens para o último evento de cada sessão. |
-| [!UICONTROL Tipo de sessão] | Dimensão | Essa dimensão tem dois valores: 1) [!UICONTROL Primeira vez] e 2) Retorno. O item de linha [!UICONTROL Primeira vez] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida de uma pessoa. Todo o restante está incluído no item de linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat) |
-| [!UICONTROL Tempo gasto (segundos)] | Métrica | Soma o tempo entre dois valores diferentes para uma dimensão. |
+| [!UICONTROL Sessão inicia] | Métrica | O número de eventos que foram o primeiro evento de uma sessão. Quando usado em uma definição de filtro (por exemplo, &quot;[!UICONTROL Inícios de sessão] existe&quot;), ela filtra somente para o primeiro evento de cada sessão.<p>Esse componente deve ser incluído na visualização de dados para que o seguinte [métrica calculada](/help/components/calc-metrics/default-calcmetrics.md) para estar disponível no Espaço de trabalho: <ul><li>Taxa de início da sessão</li></p> |
+| [!UICONTROL Sessão termina] | Métrica | O número de eventos que foram o último evento de uma sessão. Semelhante a [!UICONTROL Inícios de sessão], também pode ser usado em uma definição de filtro para filtrar os itens para o último evento de cada sessão.<p>Esse componente deve ser incluído na visualização de dados para que o seguinte [métrica calculada](/help/components/calc-metrics/default-calcmetrics.md) para estar disponível no Espaço de trabalho: <ul><li>Taxa de término da sessão</li></p> |
+| [!UICONTROL Tipo de sessão] | Dimensão | Essa dimensão tem dois valores: 1) [!UICONTROL Primeira vez] e 2) Retorno. O item de linha [!UICONTROL Primeira vez] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida de uma pessoa. Todo o restante está incluído no item de linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo &quot;Não aplicável&quot; dessa dimensão. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat) |
+| [!UICONTROL Tempo gasto (segundos)] | Métrica | Soma o tempo entre dois valores diferentes para uma dimensão.<p>Esse componente deve ser incluído na visualização de dados para que o seguinte [métricas calculada](/help/components/calc-metrics/default-calcmetrics.md) para estar disponível no Espaço de trabalho: <ul><li>Tempo gasto por pessoa</li><li>Tempo gasto por sessão</li></p> |
 | [!UICONTROL Tempo gasto por evento] | Dimensão | Segmenta a métrica [!UICONTROL Tempo gasto] em segmentos de [!UICONTROL Evento]. |
 | [!UICONTROL Tempo gasto por sessão] | Dimensão | Segmenta a métrica [!UICONTROL Tempo gasto] em segmentos de [!UICONTROL Sessão]. |
 | [!UICONTROL Tempo gasto por pessoa] | Dimensão | Segmenta a métrica [!UICONTROL Tempo gasto] em segmentos de [!UICONTROL Pessoa]. |

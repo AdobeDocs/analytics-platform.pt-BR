@@ -4,9 +4,9 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a7a03fa6e0f71d473b4713bd9817e1b97dab383e
+source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2102'
 ht-degree: 90%
 
 ---
@@ -20,7 +20,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Recurso | Descrição |
 | --- | --- |
 | **Junho de 2023** |  |
-| Atualizações de métricas calculada | Foram feitas atualizações em vários artigos relacionados às métricas calculadas, incluindo atualização de capturas de tela e etapas nos procedimentos. Essas alterações foram feitas para adaptar a documentação à funcionalidade atual do CJA. |
+| Atualizações de métricas calculada | As seguintes atualizações foram feitas na documentação das métricas calculadas para alinhá-la à funcionalidade atual do CJA: <ul><li>Atualização da lista de [métricas calculadas padrão](/help/components/calc-metrics/default-calcmetrics.md) disponível no CJA</li><li>Procedimentos e capturas de tela atualizados em vários artigos de métricas calculadas </li></ul> |
 | **Maio de 2023** |  |
 | Documentação de Deep Linking (Aplicativo móvel) | Permite que usuários enviem links para cartões de pontuação que os levarão diretamente ao projeto do cartão de pontuação no aplicativo. Isso facilita ainda mais o compartilhamento de projetos e aumenta o engajamento de um público menos técnico. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) |
 | Documento sobre &quot;Selecionar visualização de dados da célula&quot; no Report Builder | Esse recurso permite que os usuários selecionem a visualização de dados para um bloco de dados de uma célula. Isso é útil se você criar uma pasta de trabalho e tiver várias visualizações de dados com uma construção de dados semelhante e quiser reutilizar essa pasta de trabalho várias vezes, com visualizações de dados diferentes. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=pt-BR) |
