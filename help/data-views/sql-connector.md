@@ -6,9 +6,10 @@ feature: Data Views
 hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
+source-git-commit: f3dba7bac92cbda3285fe53a8961065e9bbbf972
 workflow-type: tm+mt
-source-wordcount: '2890'
+source-wordcount: '2900'
 ht-degree: 2%
 
 ---
@@ -33,7 +34,7 @@ Os principais benefícios são:
 
 Para usar essa funcionalidade, é necessário
 
-- Ativar o [!UICONTROL Conector SQL do CJA] na sua organização Experience Platform.
+<!---   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. -->
 
 - Configure a funcionalidade dos perfis de produto, grupos de usuários e/ou usuários individuais relevantes.<br/>
 Os usuários devem ter acesso a:
@@ -88,7 +89,7 @@ Consulte [Guia da interface do Editor de consultas](https://experienceleague.ado
 
 ### Ferramentas de BI
 
-Atualmente, o Conector SQL do CJA é compatível com o Power BI e o Tableau.
+Atualmente, o Conector SQL do CJA é compatível e testado somente para Power BI e Tableau. Outras ferramentas de BI que usam a interface PSQL também podem funcionar, mas ainda não são oficialmente compatíveis.
 
 +++ Power BI
 
@@ -219,23 +220,23 @@ Por padrão, o esquema das visualizações de dados usa estruturas aninhadas, da
 
 Consulte [Referência SQL do serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=en) para obter uma referência completa sobre o tipo de SQL compatível.
 
-Consulte Tabela de padrões abaixo para obter uma visão geral dos padrões e exemplos.
+Consulte a tabela abaixo para obter exemplos do SQL que você pode usar.
 
-+++Padrões
++++ Exemplos
 
 | Padrão | Exemplo |
 |---|---|
 | Descoberta de esquema | <pre>SELECIONE * DE dv1 ONDE 1=0</pre> |
-| Classificado/Analisado | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  AND (dim2 = &#39;A&#39; OU dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
-| Cláusula HAVING | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>COM m1 > 100</pre> |
-| Distinto, início <br/>valores de dimensão | <pre>SELECIONAR dim1 DISTINTA DE dv1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\` >= &#39;01-01-2022&#39; E \`timestamp\` &lt; &#39;02-01-2022&#39;<br/>GROUP BY dim1<br/>ORDENAR POR SOMA(metric1)<br/>LIMITE 15</pre> |
-| Totais de métricas | <pre>SELECT SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</pre> |
-| Multidimensão<br/>detalhamentos<br/>e top-distints | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 1, 2<br/>FAÇA SEU PEDIDO POR 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>DE dv1</pre> |
-| Subselecionar:<br/>Resultado adicional<br/>filtragem | <pre>SELECT dim1, m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>ONDE dim1 em (&#39;A&#39;, &#39;B&#39;)</pre> |
-| Subselecionar:<br/>Associando-se a<br/>conjunto de dados não está em<br/>CJA | <pre>SELECIONE b.key, a.dim1, a.m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/>a)<br/>Pesquisas de JUNÇÃO À ESQUERDA b EM a.dim1 = b.key</pre> |
-| Subselecionar:<br/>Consulta cruzada<br/>visualizações de dados | <pre>Chave SELECT, SOMA(m1) AS total<br/>DE (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNIÃO<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  DE dv2<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>Chave GROUP BY<br/>TOTAL DE ORDER BY</pre> |
-| Subselecionar: <br/>Origem em camadas, <br/>filtragem, <br/>e agregação | Em camadas usando subseleções:<br><pre>SELECIONAR linhas.dim1, SUM(linhas.m1) AS total<br/>DE (<br/>  SELECT \_.dim1,\_.m1<br/>  DE (<br/>    SELECIONAR \* DE dv1<br/>    ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  ) \_<br/>  ONDE \_.dim1 em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) linhas<br/>AGRUPAR POR 1<br/>TOTAL DE ORDER BY</pre><br/>Camadas que usam CTE COM:<br/><pre>COM linhas AS (<br/>  COM \_ COMO (<br/>    SELECT * FROM data_ares<br/>    ONDE \`timestamp\` ENTRE &#39;2021-01-01&#39; E &#39;2021-02-01&#39;<br/>  )<br/>  SELECT _.item, _.unidades FROM _<br/>  ONDE _.item NÃO É NULO<br/>)<br/>SELECIONAR linhas.item, SUM(linhas.unidades) AS unidades<br/>LINHAS DE ONDE rows.item em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
-| Seleciona onde as<br/>as métricas vêm antes<br/> ou misturados com<br/>as dimensões | <pre>SELECT SUM(metric1) AS m1, dim1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 2</pre> |
+| Classificado/Analisado | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  AND (dim2 = &#39;A&#39; OU dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
+| Cláusula HAVING | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>COM m1 > 100</pre> |
+| Distinto, início <br/>valores de dimensão | <pre>SELECIONAR dim1 DISTINTA DE dv1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\` >= &#39;01-01-2022&#39; E \`timestamp\` &lt; &#39;02-01-2022&#39;<br/>GROUP BY dim1<br/>ORDENAR POR SOMA(metric1)<br/>LIMITE 15</pre> |
+| Totais de métricas | <pre>SELECT SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</pre> |
+| Multidimensão<br/>detalhamentos<br/>e top-distints | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 1, 2<br/>FAÇA SEU PEDIDO POR 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>DE dv1</pre> |
+| Subselecionar:<br/>Resultado adicional<br/>filtragem | <pre>SELECT dim1, m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>ONDE dim1 em (&#39;A&#39;, &#39;B&#39;)</pre> |
+| Subselecionar:<br/>Associando-se a<br/>conjunto de dados não está em<br/>CJA | <pre>SELECIONE b.key, a.dim1, a.m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/>a)<br/>Pesquisas de JUNÇÃO À ESQUERDA b EM a.dim1 = b.key</pre> |
+| Subselecionar:<br/>Consulta cruzada<br/>visualizações de dados | <pre>Chave SELECT, SOMA(m1) AS total<br/>DE (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNIÃO<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  DE dv2<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>Chave GROUP BY<br/>TOTAL DE ORDER BY</pre> |
+| Subselecionar: <br/>Origem em camadas, <br/>filtragem, <br/>e agregação | Em camadas usando subseleções:<br><pre>SELECIONAR linhas.dim1, SUM(linhas.m1) AS total<br/>DE (<br/>  SELECT \_.dim1,\_.m1<br/>  DE (<br/>    SELECIONAR \* DE dv1<br/>    ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  ) \_<br/>  ONDE \_.dim1 em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) linhas<br/>AGRUPAR POR 1<br/>TOTAL DE ORDER BY</pre><br/>Camadas que usam CTE COM:<br/><pre>COM linhas AS (<br/>  COM \_ COMO (<br/>    SELECT * FROM data_ares<br/>    ONDE \`timestamp\&#39; ENTRE &#39;2021-01-01&#39; E &#39;2021-02-01&#39;<br/>  )<br/>  SELECT _.item, _.unidades FROM _<br/>  ONDE _.item NÃO É NULO<br/>)<br/>SELECIONAR linhas.item, SUM(linhas.unidades) AS unidades<br/>LINHAS DE ONDE rows.item em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
+| Seleciona onde as<br/>as métricas vêm antes<br/> ou misturados com<br/>as dimensões | <pre>SELECT SUM(metric1) AS m1, dim1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 2</pre> |
 
 {style="table-layout:auto"}
 
@@ -390,4 +391,3 @@ Essas funções podem ser usadas em dimensões no `SELECT`, `WHERE` ou em métri
 | [DATE_TRUNC(granularidade, data ou data-hora)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Gere uma identidade de dimensão dinâmica no campo transmitido.<br/>As granularidades de sequência de caracteres compatíveis são: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'`ou `'MINUTE'`. |
 
 {style="table-layout:auto"}
-
