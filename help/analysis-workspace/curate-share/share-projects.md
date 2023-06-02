@@ -4,10 +4,10 @@ keywords: Compartilhamento no Analysis Workspace
 title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: a64b380c337f2f359b4cffd23265a8fca8251957
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 49%
+source-wordcount: '1934'
+ht-degree: 48%
 
 ---
 
@@ -130,6 +130,10 @@ Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-sha
 >* Se sua organização licencia o Healthcare Shield, você pode compartilhar projetos somente com usuários autenticados por Logon único (SSO) ou pela Adobe ID; não é possível compartilhar projetos com usuários não autenticados. É sua responsabilidade usar este recurso de acordo com as políticas internas de governança de dados de sua empresa e compartilhar somente os links do projeto que contêm Informações de saúde pessoais (PHI) com usuários que têm as permissões apropriadas.
 
 
+A demonstração em vídeo a seguir e a documentação que a acompanha descrevem as opções associadas ao compartilhamento de um link com qualquer pessoa:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+
 Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
 1. Abra o projeto do Analysis Workspace que deseja compartilhar.
@@ -150,7 +154,7 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
    * **[!UICONTROL Exigir autenticação da Experience Cloud]:**
 
-      Quando essa opção está habilitada, somente os usuários que podem fazer logon na organização da Adobe Experience Cloud em que o projeto que você está compartilhando foi criado podem acessá-lo.
+      Quando essa opção está habilitada, os únicos usuários que podem acessar o projeto são aqueles que podem fazer logon na organização da Adobe Experience Cloud onde o projeto que você está compartilhando foi criado. No entanto, os usuários com os quais você compartilha não precisam ter acesso ao Adobe Analytics.
 
       Os administradores do CJA podem configurar essa preferência para a empresa, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md). Você pode encontrar os seguintes cenários, dependendo de como o administrador configurou essa opção:
 
