@@ -3,22 +3,34 @@ description: É possível baixar dados do Analysis Workspace copiando-os ou em f
 title: Baixar arquivos PDF ou CSV
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 1e2c5d79059a4804416288188ea4740dd94ca33d
-workflow-type: ht
-source-wordcount: '1057'
-ht-degree: 100%
+source-git-commit: ebdbfcb4a512c8810364693fc3c2504f958bc986
+workflow-type: tm+mt
+source-wordcount: '1082'
+ht-degree: 68%
 
 ---
 
 # Baixar arquivos PDF ou CSV
 
-Há várias maneiras diferentes de exportar dados do Analysis Workspace, dependendo do conjunto de dados que você deseja analisar fora da ferramenta e de quem precisa receber as informações. Os dados exportados podem estar no formato de dados copiados, arquivos CSV ou PDF. Um PDF geralmente é melhor se você quer que visualizações sejam incluídas no arquivo, enquanto um CSV (ou dados copiados) é melhor se você simplesmente quer dados de texto simples.
+Há várias maneiras de exportar dados do Analysis Workspace. O método escolhido depende do conjunto de dados que você deseja analisar e de quem precisa acessá-lo.
 
-## Baixar projeto como CSV ou PDF {#download-project}
+Os dados exportados podem estar no formato de dados copiados, CSV ou PDF. Um PDF geralmente é melhor se você quiser que visualizações sejam incluídas no arquivo. CSV e dados copiados são preferidos se você simplesmente quiser dados de texto simples.
 
-Você pode baixar um projeto completo indo até **[!UICONTROL Projeto > Baixar como PDF (ou como CSV)]**. O arquivo baixado contém todas as tabelas e visualizações exibidas (visíveis) no projeto. Um PDF geralmente é melhor se você quer que visualizações sejam incluídas no arquivo, enquanto um CSV é melhor se você simplesmente quer dados de texto simples.
+## Baixar um projeto como CSV ou PDF {#download-project}
 
-![](assets/download-project.png)
+
+1. Siga um destes procedimentos, dependendo do formato em que você deseja baixar o projeto:
+
+   * **PDF:** Selecionar **[!UICONTROL Projeto]** > **[!UICONTROL Baixar PDF]**.
+
+      Escolha essa opção se desejar que o arquivo baixado contenha todas as tabelas e visualizações exibidas (visíveis) no projeto.
+
+   * **CSV:** Selecionar **[!UICONTROL Projeto]** > **[!UICONTROL Baixar CSV]**.
+
+      Escolha essa opção se desejar dados de texto simples.
+   ![](assets/download-project.png)
+
+1. (Condicional) Se você optar por baixar um PDF, uma mensagem será exibida depois que o projeto estiver pronto para ser baixado. Clique em [!UICONTROL **Baixar**].
 
 Para downloads de projetos, lembre-se:
 
@@ -29,12 +41,15 @@ Para downloads de projetos, lembre-se:
 
 ## Copiar dados para a área de transferência (tecla de atalho: Ctrl + C) {#copy-data}
 
-A opção de clicar com o botão direito **[!UICONTROL Copiar para a área de transferência]** permite copiar dados rapidamente do Workspace e colá-los em outro lugar.
+A opção de clique com o botão direito **[!UICONTROL Copiar para a área de transferência]** O permite copiar dados do Workspace rapidamente e colá-los em uma ferramenta de terceiros.
 
 * Se desejar que a tabela exibida seja copiada, clique com o botão direito do mouse no cabeçalho da tabela e escolha **Copiar dados para a área de transferência**.
 * Se quiser que um subconjunto de dados seja copiado, faça uma seleção na tabela e clique com o botão direito do mouse em > **Copiar seleção para a área de transferência**.
 
-Além disso, a tecla de atalho `Ctrl+C` copia a seleção para a área de transferência. Depois de copiada, você pode entrar em outra ferramenta e colar as informações (ou pressionar `Ctrl+V`).
+>[!TIP]
+>
+>Você pode usar a tecla de atalho `Ctrl+C` para copiar sua seleção para a área de transferência, use `Ctrl+V` para colá-lo em uma ferramenta de terceiros.
+
 
 ![](assets/copy-selection.png)
 
@@ -42,20 +57,26 @@ Além disso, a tecla de atalho `Ctrl+C` copia a seleção para a área de transf
 
 A opção de clique com o botão direito **[!UICONTROL Baixar dados como CSV]** permite baixar uma tabela de dados ou a fonte de dados de qualquer visualização como CSV.
 
-* No cabeçalho de qualquer tabela ou visualização, clique com o botão direito do mouse em **[!UICONTROL Baixar dados como CSV]**. Isso baixa os dados exibidos na tabela ou na fonte de dados subjacente de uma visualização como CSV. Observação: a visualização de mapa não é compatível com essa opção.
-* Se uma seleção for feita na tabela, a opção dirá **[!UICONTROL Baixar seleção como CSV]**. Somente a seleção é baixada com essa opção, em vez da tabela totalmente exibida.
+* No cabeçalho de qualquer tabela ou visualização, clique com o botão direito do mouse e escolha **[!UICONTROL Baixar dados como CSV]**. Isso baixa os dados exibidos na tabela ou na fonte de dados subjacente de uma visualização como CSV.
+
+   >[!NOTE]
+   >
+   >  Observação: a visualização de mapa não é compatível com essa opção.
+
+
+* Em uma tabela, clique com o botão direito do mouse e escolha **[!UICONTROL Baixar seleção como CSV]**. Somente a seleção é baixada com essa opção, em vez da tabela totalmente exibida.
 
 ![](assets/download-data-viz.png)
 
 ## Baixar itens como CSV {#download-items}
 
-Se quiser analisar mais do que as 400 linhas de dados visíveis em uma tabela, clique com o botão direito do mouse no cabeçalho da tabela ou em qualquer linha e selecione **Baixar itens como CSV (Nome da dimensão)**. Essa opção exportará até 50.000 itens de dimensão (com base na classificação da tabela) para a dimensão selecionada, com filtros e filtros aplicados. Se você escolher essa opção na parte superior da tabela, a primeira dimensão na tabela será exportada. Embora nenhum limite seja empregado na tabela de forma livre, é recomendável que a opção Baixar itens seja usada em tabelas com menos de 20 colunas para garantir o desempenho ideal.
+Se quiser analisar mais do que as 400 linhas de dados visíveis em uma tabela, clique com o botão direito do mouse no cabeçalho da tabela ou em qualquer linha e selecione **Baixar itens como CSV (_nome do Dimension_)**. Essa opção exporta até 50.000 itens de dimensão (com base na classificação da tabela) para a dimensão selecionada, com opções e filtros de classificação aplicados. Se você escolher essa opção na parte superior da tabela, a primeira dimensão na tabela será exportada. Embora nenhum limite seja empregado na tabela de forma livre, é recomendável que a opção Baixar itens seja usada em tabelas com menos de 20 colunas para garantir o desempenho ideal.
 
 >[!TIP]
 >
 > Se sua dimensão exceder 50.000 itens, baixe o arquivo com métricas de classificação diferentes aplicadas ou use um filtro. Por exemplo, classifique em ordem decrescente por Visitas em um download e em ordem crescente por Visitas em um segundo download. Esta dica pode ajudar você a recuperar itens mais longos.
 
-É possível executar várias tarefas no projeto e até mesmo navegar para um novo projeto do Workspace na mesma guia enquanto o download está em andamento. O download será pausado se você abrir uma nova guia do navegador. O download será cancelado se você sair do Workspace completamente ou fechar a guia do navegador.
+É possível executar várias tarefas no projeto e até mesmo navegar para um novo projeto do Workspace na mesma guia enquanto o download está em andamento. O download é pausado se você abrir uma nova guia do navegador. O download será cancelado se você sair do Workspace completamente ou fechar a guia do navegador.
 
 ![](assets/download-items.png)
 
@@ -91,4 +112,4 @@ Se a [política de governança de dados](/help/data-views/data-governance.md) **
 | --- | --- |
 | Por que meu PDF baixado tem apenas uma página? | O Workspace não faz a paginação de PDFs baixados no momento. |
 | Posso exportar mais de 50.000 itens com a opção &quot;Baixar itens como CSV&quot;? | Embora cada download possa conter até 50.000 itens de dimensão, você pode alterar a classificação da tabela para recuperar itens mais longos ou aplicar um filtro para baixar itens mais específicos. |
-| O que a opção **[!UICONTROL Copiar visualização]** faz? | **[!UICONTROL Copiar visualização]** não é uma opção de exportação. Ela permite copiar uma visualização ou painel de um local no Workspace para outro. Por exemplo, de um painel para outro no mesmo projeto ou de um projeto para outro. [Vídeo intravinculante](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=pt-BR) |
+| O que a opção **[!UICONTROL Copiar visualização]** faz? | Ao contrário [!UICONTROL **Copiar dados para a área de transferência**] ou [!UICONTROL **Copiar seleção para a área de transferência**], o **[!UICONTROL Copiar visualização]** clicar com o botão direito do mouse não é uma opção de exportação. Ela permite copiar uma visualização ou painel de um local no Workspace para outro. Por exemplo, de um painel para outro no mesmo projeto ou de um projeto para outro. [Vídeo intravinculante](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=pt-BR) |
