@@ -4,10 +4,10 @@ description: Determine como tratar uma dimensão se ela estiver vazia.
 exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '227'
-ht-degree: 100%
+source-git-commit: 0bd632d9e748b567c7b946f4c7d1437f0a776ca2
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 91%
 
 ---
 
@@ -17,6 +17,8 @@ As Opções de valor nulo permitem determinar como o Analysis Workspace trata si
 
 ![Sem opções de valor](../assets/no-value-options.png)
 
+## Configurações  {#settings}
+
 | Configuração | Descrição |
 | --- | --- |
 | [!UICONTROL Se exibido, chamar de “Valor nulo”] | Um campo de texto que permite dar um outro nome para o item de dimensão **[!UICONTROL Valor nulo]**. |
@@ -24,4 +26,8 @@ As Opções de valor nulo permitem determinar como o Analysis Workspace trata si
 | [!UICONTROL Mostrar Nenhum valor por padrão] | Mostra esse valor nos relatórios. |
 | [!UICONTROL Tratar Nenhum valor como um valor] | Substitui valores em branco nos dados pelo texto especificado em [!UICONTROL Se exibido, chamar de “Nenhum valor”]. Por exemplo, se você tiver tipos de dispositivo móvel como a dimensão, poderá renomear o item **[!UICONTROL Nenhum valor]** para &quot;Desktop&quot;. Ao alterar este campo para um valor personalizado, ele será tratado como um valor legítimo de sequência de caracteres. Portanto, se você inserir o valor &quot;Vermelho&quot; nesse campo, qualquer instância da sequência &quot;Vermelho&quot; que for mostrada nos próprios dados também será inserida sob o mesmo item da linha especificado. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
+
+## Publicação do blog
+
+Aqui está uma publicação relacionada sobre [manipulação de &quot;nenhum valor&quot; no CJA](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
