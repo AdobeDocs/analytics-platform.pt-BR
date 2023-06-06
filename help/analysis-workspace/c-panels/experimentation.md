@@ -3,10 +3,10 @@ description: Saiba como analisar os resultados de testes A/B no painel de experi
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 75%
+source-wordcount: '1861'
+ht-degree: 73%
 
 ---
 
@@ -125,3 +125,7 @@ A ilustração a seguir contrasta essas situações:
 ![experimento aleatório](assets/randomize.png)
 
 Quando você quiser medir o impacto da intervenção X no resultado Y, é possível que a causa real de ambos seja o fator de confusão C. Se os dados não são obtidos por pessoas randomizadas em X, o impacto é mais difícil de medir, e a análise irá explicar explicitamente C. A randomização quebra a dependência de X em C, permitindo-nos medir o efeito de X em Y sem ter que se preocupar com outras variáveis.
+
+## Usar métricas calculadas no painel Experimentação
+
+Consulte esta publicação do blog para obter mais informações sobre [uso de métricas derivadas no painel Experimentação](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
