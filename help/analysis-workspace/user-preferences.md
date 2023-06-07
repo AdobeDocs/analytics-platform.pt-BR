@@ -4,10 +4,10 @@ description: É possível definir preferências gerais e de projeto para usuári
 feature: CJA Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 29ceba37422ab2cb432bbe000dee6379a63d5a8f
+source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
 workflow-type: tm+mt
-source-wordcount: '3149'
-ht-degree: 74%
+source-wordcount: '3099'
+ht-degree: 75%
 
 ---
 
@@ -44,10 +44,6 @@ As preferências gerais se aplicam à experiência do CJA no navegador.
 | Componentes exibidos em grupos do painel esquerdo | Escolha quantos de cada componente serão exibidos no menu Componentes no painel à esquerda. <p>Se você escolher 0, o componente não estará mais acessível no painel esquerdo dos espaços de trabalho.</p><p>Por padrão, 5 componentes são exibidos para cada um dos seguintes itens:</p> <ul><li>Dimensões</li><li>Métricas</li><li>Filtros</li><li>Intervalos de datas</li></ul> <p>Para obter mais informações sobre Componentes no Analysis Workspace, consulte [Visão geral dos componentes](/help/components/overview.md).</p> |
 
 ## Preferências da organização IMS
-
->[!AVAILABILITY]
->
->A funcionalidade Links de acesso público descrita nesta seção está na fase de Teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
 
 Você pode atualizar as preferências da empresa que se aplicam a todos os usuários e projetos em sua organização. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
 
