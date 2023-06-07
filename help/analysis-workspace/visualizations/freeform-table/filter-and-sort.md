@@ -3,10 +3,10 @@ description: Documentação que descreve como filtrar e classificar tabelas no A
 title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 901ddcd814c71504ff056d91fd25445d94a6f56e
+source-git-commit: 5469585897e483d721326fd6859ad74087407825
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 78%
+ht-degree: 73%
 
 ---
 
@@ -78,7 +78,7 @@ Você pode classificar os dados de uma tabela de forma livre por qualquer coluna
 
 Um ícone de seta para baixo ![Ícone de seta para baixo na tabela classificada por coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) é visível no cabeçalho da coluna pela qual os dados estão sendo classificados no momento.
 
-1. Em qualquer tabela de forma livre no Analysis Workspace, clique na seta ao lado do nome da dimensão ou métrica.
+1. Em qualquer tabela de Forma livre no Analysis Workspace, clique na seta ao lado do nome da dimensão ou métrica.
 
    Considere o seguinte ao classificar:
 
