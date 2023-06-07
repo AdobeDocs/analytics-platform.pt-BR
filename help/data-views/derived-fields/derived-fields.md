@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: f9aafab436fa1f26be9ed2e433ded046bbb1135a
+source-git-commit: b780a6cb4e0f922ff68d62b742ff58034db672b7
 workflow-type: tm+mt
-source-wordcount: '3218'
-ht-degree: 9%
+source-wordcount: '3252'
+ht-degree: 8%
 
 ---
 
@@ -123,6 +123,11 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
    A [!UICONTROL Excluir componente] solicitará que você confirme a exclusão. Considere todas as referências externas que possam existir ao campo derivado fora da visualização de dados.
 
    - Selecionar **[!UICONTROL ** Continuar **]** para excluir o campo derivado.
+
+>[!NOTE]
+>
+>Os campos derivados são gerenciados em um nível de Conexão no CJA. Qualquer alteração feita em um campo derivado em qualquer uma das visualizações de dados associadas a essa conexão se aplica a todas essas visualizações de dados associadas.
+
 
 
 ## Modelos de função
