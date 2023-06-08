@@ -4,10 +4,10 @@ keywords: Compartilhamento no Analysis Workspace
 title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 433bbb7526618f2b924ebd06768ebb3074efab57
+source-git-commit: cbd2d9b7143bb1cc3246330f656b911d7e362fe3
 workflow-type: tm+mt
-source-wordcount: '1934'
-ht-degree: 48%
+source-wordcount: '1944'
+ht-degree: 47%
 
 ---
 
@@ -17,15 +17,15 @@ Você pode compartilhar um projeto do Analysis Workspace com os seguintes tipos 
 
 * Usuários e grupos em sua organização que têm acesso ao Adobe Customer Journey Analytics
 
-   Você pode compartilhar o acesso Editar, Duplicar ou Visualizar
+  Você pode compartilhar o acesso Editar, Duplicar ou Visualizar
 
 * Usuários e grupos em sua organização que não têm acesso ao Customer Journey Analytics
 
-   Destinatários com acesso somente leitura
+  Destinatários com acesso somente leitura
 
 * Pessoas de fora da organização
 
-   Destinatários com acesso somente leitura
+  Destinatários com acesso somente leitura
 
 Qualquer [curadoria](curate.md) a aplicação antes do compartilhamento é refletida quando os recipients abrem o projeto.
 
@@ -54,7 +54,7 @@ Ao compartilhar uma função de projeto específica com usuários e grupos em su
 
 * Um usuário que é colocado em várias funções sempre obtém a melhor experiência. Isso pode ocorrer se um usuário for adicionado como um indivíduo e como parte de um grupo. Por exemplo, se um usuário receber a função **[!UICONTROL Pode editar]** como um indivíduo e a função **[!UICONTROL Pode visualizar]** como membro de um grupo, ele receberá uma experiência de projeto **[!UICONTROL Pode editar]**.
 
-* Os administradores colocados em uma função **[!UICONTROL Pode duplicar]** ou **[!UICONTROL Pode visualizar]** receberão essas experiências limitadas quando abrirem um projeto. Se desejar, um administrador pode aumentar sua função para **[!UICONTROL Pode editar]** a qualquer momento em **[!UICONTROL Componentes] > [!UICONTROL Projetos]**.
+* Os administradores colocados em uma função **[!UICONTROL Pode duplicar]** ou **[!UICONTROL Pode visualizar]** receberão essas experiências limitadas quando abrirem um projeto. Um administrador pode alterar sua função para **[!UICONTROL Pode editar]** compartilhando o projeto com eles mesmos e concedendo a função Editar, conforme descrito no procedimento a seguir.
 
 Para compartilhar uma função de projeto específica com usuários ou grupos na organização:
 
@@ -127,7 +127,6 @@ Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-sha
 >
 >* Se sua organização licencia o Healthcare Shield, você pode compartilhar projetos somente com usuários autenticados por Logon único (SSO) ou pela Adobe ID; não é possível compartilhar projetos com usuários não autenticados. É sua responsabilidade usar este recurso de acordo com as políticas internas de governança de dados de sua empresa e compartilhar somente os links do projeto que contêm Informações de saúde pessoais (PHI) com usuários que têm as permissões apropriadas.
 
-
 A demonstração em vídeo a seguir e a documentação que a acompanha descrevem as opções associadas ao compartilhamento de um link com qualquer pessoa:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
@@ -152,9 +151,9 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
    * **[!UICONTROL Exigir autenticação da Experience Cloud]:**
 
-      Quando essa opção está habilitada, os únicos usuários que podem acessar o projeto são aqueles que podem fazer logon na organização da Adobe Experience Cloud onde o projeto que você está compartilhando foi criado. No entanto, os usuários com os quais você compartilha não precisam ter acesso ao Adobe Analytics.
+     Quando essa opção está habilitada, os únicos usuários que podem acessar o projeto são aqueles que podem fazer logon na organização da Adobe Experience Cloud onde o projeto que você está compartilhando foi criado. No entanto, os usuários com os quais você compartilha não precisam ter acesso ao Adobe Analytics.
 
-      Os administradores do CJA podem configurar essa preferência para a empresa, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md). Você pode encontrar os seguintes cenários, dependendo de como o administrador configurou essa opção:
+     Os administradores do CJA podem configurar essa preferência para a empresa, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md). Você pode encontrar os seguintes cenários, dependendo de como o administrador configurou essa opção:
 
       * Se essa opção não estiver visível, o administrador do CJA não ativou esse recurso.
 
