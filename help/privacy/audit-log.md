@@ -2,10 +2,10 @@
 title: Logs de auditoria
 description: Saiba como visualizar e gerenciar logs de auditoria do CJA.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: eceea9ef96701f66cceed5bcb50f92588df6e507
-workflow-type: ht
-source-wordcount: '856'
-ht-degree: 100%
+source-git-commit: 7fcbac6adb6946efd5c54b9f8edb4587dc34d445
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 79%
 
 ---
 
@@ -41,19 +41,49 @@ Clique duas vezes no botão info (i) ao lado de uma descrição.
 
 Os seguintes itens são mostrados:
 
-| Item | Descrição |
-| --- | --- |
-| Nome da ação | Esta é a lista de ações possíveis: <ul><li>API_Request</li><li>Aprovar</li><li>Criar</li><li>Editar</li><li>Exportar</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Atualizar</li><li>Compartilhar</li><li>Transferir</li><li>Cancelar aprovação</li><li>Não compartilhar</li></ul> |
-| Descrição | Um resumo da ação, do tipo de componente (com ID) e de outros valores. |
-| Nome do usuário | O usuário que está executando a ação. |
-| Tipo de componente | Os possíveis tipos de componentes incluem: <ul><li>Anotação</li><li>Público-alvo</li><li>Métrica calculada</li><li>Conexão</li><li>Data_Group</li><li>Data_View (esse tipo de componente inclui dimensões e métricas)</li><li>Feature_Access</li><li>Filtro</li><li>IMS_Org</li><li>Dispositivo móvel</li><li>Projeto</li><li>Relatório</li><li>Scheduled_Project</li><li>Usuário</li><li>User_Group</li></ul> |
-| ID organizacional IMS | Uma ID exclusiva fornecida para sua instância quando você faz logon pela primeira vez na Adobe Experience Cloud. Ela deve estar no formato: xxx@AdobeOrg. |
-| ID de usuário | Uma ID exclusiva que identifica o usuário que executou esta ação. |
-| Data da criação | Quando esta ação foi executada. |
-| Email | O email do usuário que está executando a ação. |
-| ID de componente | Uma ID exclusiva que identifica o componente que está sendo acionado. |
-| ID do log | Uma ID exclusiva que identifica esta entrada de log. |
-| Tipo de usuário | Os possíveis tipos incluem: IMS, OKTA |
+* **[!UICONTROL Nome da ação]**: A ação executada. Os valores possíveis incluem:
+   * API_REQUEST
+   * APROVAR
+   * CRIAR
+   * DELETE
+   * EDITAR
+   * EXPORTAR
+   * ORG_CHANGE
+   * ATUALIZAR
+   * SHARE
+   * TRANSFERIR
+   * CANCELAR APROVAÇÃO
+   * CANCELAR COMPARTILHAMENTO
+* **[!UICONTROL Data de criação]**: A data e a hora em que a ação foi executada.
+* **[!UICONTROL Descrição]**: um resumo da ação.
+* **[!UICONTROL Nome do usuário]**: o usuário que executou a ação.
+* **[!UICONTROL E-mail]**: o endereço de email do usuário que executou a ação.
+* **[!UICONTROL Nome do componente]**: o componente no qual o usuário executou a ação.
+* **[!UICONTROL Tipo de componente]**: o tipo de componente. Os valores possíveis incluem:
+   * ANOTAÇÃO
+   * PÚBLICO
+   * CALCULATED_METRIC
+   * CONEXÃO
+   * DATA_GROUP
+   * DATA_VIEW
+   * CONJUNTO_DE_DADOS
+   * DATE_RANGE
+   * FEATURE_ACCESS
+   * FILTRO
+   * IMS_ORG
+   * DISPOSITIVO MÓVEL
+   * PROJETO
+   * RELATÓRIO
+   * SCHEDULED_PROJECT
+   * USUÁRIO
+   * USER_GROUP
+* **[!UICONTROL ID do componente]**: a ID do componente no qual o usuário executou a ação.
+* **[!UICONTROL ID organizacional IMS]**: a ID IMS da organização, no formato de `ABC123@AdobeOrg`.
+* **[!UICONTROL ID do log]**: uma ID exclusiva que identifica essa entrada de log.
+* **[!UICONTROL ID de usuário]**: a ID exclusiva que identifica o usuário que executou a ação.
+* **[!UICONTROL Tipo de usuário]**: o tipo de autenticação usado. Os valores válidos incluem:
+   * IMS
+   * OKTA
 
 ### Filtrar logs de auditoria
 
@@ -66,13 +96,13 @@ Os seguintes filtros estão disponíveis para eventos de auditoria na interface 
 | Filtro | Descrição |
 | --- | --- |
 | [!UICONTROL Intervalo de datas] | Filtre um intervalo de datas diferente selecionando uma data diferente ou um intervalo de datas, arrastando o cursor em várias datas. Por padrão, a data de hoje e de ontem são selecionadas. |
-| [!UICONTROL Ação] | Filtre uma ou mais das seguintes ações: <ul><li>API_Request</li><li>Aprovar</li><li>Criar</li><li>Editar</li><li>Exportar</li><li>Login_failed</li><li>Login_successful</li><li>Logout</li><li>Org_change</li><li>Atualizar</li><li>Compartilhar</li><li>Transferir</li><li>Cancelar aprovação</li><li>Não Compartilhar</li></ul> |
+| [!UICONTROL Ação] | Filtre qualquer nome de ação listado acima. |
 | [!UICONTROL ID de usuário] | Filtrar em um usuário específico pela ID do usuário. A ID de usuário pode ser encontrada clicando no botão info (i) ao lado de um nome de usuário. |
 | [!UICONTROL Email] | Filtre o endereço de email de um usuário específico. O email pode ser encontrado clicando o botão info (i) ao lado de um nome de usuário. |
 | [!UICONTROL ID de componente] | Filtrar em uma ID de componente específica. A ID de componente pode ser encontrada selecionando o botão de informações (i) de um componente desejado. |
-| [!UICONTROL Tipo de componente] | Filtrar em um ou mais tipos de componentes: <ul><li>Anotação</li><li>Público-alvo</li><li>Métrica calculada</li><li>Conexão</li><li>Data_Group</li><li>Data_View</li><li>Feature_Access</li><li>Filtro</li><li>IMS_Org</li><li>Dispositivo móvel</li><li>Projeto</li><li>Relatório</li><li>Scheduled_Project</li><li>Usuário</li><li>User_Group</li></ul> |
+| [!UICONTROL Tipo de componente] | Filtre em qualquer tipo de componente listado acima. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Tipos de evento capturados por logs de auditoria
 
@@ -94,7 +124,7 @@ A tabela a seguir descreve quais ações em quais tipos de componentes são regi
 | [!UICONTROL Usuário] | <ul><li>API_Request</li><li>Criar</li><li>Excluir</li><li>Editar</li></ul> |
 | [!UICONTROL Grupo de usuários] | <ul><li>API_Request</li><li>Criar</li><li>Excluir</li><li>Editar</li></ul> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Baixar logs de auditoria
 
