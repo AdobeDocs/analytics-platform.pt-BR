@@ -3,7 +3,7 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f02cda499b2050cd238ca2352237ae2cc9a502d6
+source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 62%
@@ -12,7 +12,7 @@ ht-degree: 62%
 
 # Notas de versão atuais do Customer Journey Analytics (CJA) (junho de 2023)
 
-**Última atualização**: 6 de junho de 2023
+**Última atualização**: 9 de junho de 2023
 
 As versões do Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Devido a isso, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -26,7 +26,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 | **Acesso do Power BI e do Tableau às visualizações de dados do CJA** | O Conector SQL do Customer Journey Analytics (CJA) permite acesso SQL a visualizações de dados definidas no CJA. Engenheiros e analistas de dados mais familiarizados com o Power BI, Tableau ou outras ferramentas de business intelligence e visualização agora podem criar relatórios e painéis com base nas mesmas visualizações de dados que os usuários do CJA estão usando para seus projetos do Analysis Workspace. [Saiba mais](/help/data-views/sql-connector.md) |  | 30 de junho de 2023 |
 | **Pesquisas geográficas da Experience Edge** | Você poderá criar relatórios usando dados de geolocalização no CJA assim que as Pesquisas geográficas de borda da experiência estiverem ativadas para a sua sequência de dados. |  | 30 de junho de 2023 |
 | **Suporte expandido de pesquisa para perfil e dados de pesquisa** | Você poderá adicionar conjuntos de dados de pesquisa não apenas a conjuntos de dados de evento, mas também a conjuntos de dados de perfil e pesquisa. | 21 de junho de 2023 | 12 de julho de 2023 |
-| **Suporte para conversão de moeda** | O CJA oferecerá suporte à conversão de moeda como parte da formatação de um componente de métrica em uma visualização de dados. | 21 de junho de 2023 | 19 de julho de 2023 |
+| **Suporte para conversão de moeda** | O CJA oferecerá suporte à conversão de moeda como parte da formatação de um componente de métrica em uma visualização de dados. | 7 de junho de 2023 | 21 de junho de 2023 |
 
 {style="table-layout:auto"}
 
