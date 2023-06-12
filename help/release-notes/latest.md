@@ -3,10 +3,10 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do CJA
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a676c5c71e13524ef56143fe0f5d4cf98c64c2f2
+source-git-commit: c3bea466c4960893ebe746046250608bacc9e340
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 62%
+source-wordcount: '1369'
+ht-degree: 66%
 
 ---
 
@@ -26,7 +26,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 | **Acesso do Power BI e do Tableau às visualizações de dados do CJA** | O Conector SQL do Customer Journey Analytics (CJA) permite acesso SQL a visualizações de dados definidas no CJA. Engenheiros e analistas de dados mais familiarizados com o Power BI, Tableau ou outras ferramentas de business intelligence e visualização agora podem criar relatórios e painéis com base nas mesmas visualizações de dados que os usuários do CJA estão usando para seus projetos do Analysis Workspace. [Saiba mais](/help/data-views/sql-connector.md) |  | 30 de junho de 2023 |
 | **Pesquisas geográficas da Experience Edge** | Você poderá criar relatórios usando dados de geolocalização no CJA assim que as Pesquisas geográficas de borda da experiência estiverem ativadas para a sua sequência de dados. |  | 30 de junho de 2023 |
 | **Suporte expandido de pesquisa para perfil e dados de pesquisa** | Você poderá adicionar conjuntos de dados de pesquisa não apenas a conjuntos de dados de evento, mas também a conjuntos de dados de perfil e pesquisa. | 21 de junho de 2023 | 12 de julho de 2023 |
-| **Suporte para conversão de moeda** | O CJA oferecerá suporte à conversão de moeda como parte da formatação de um componente de métrica em uma visualização de dados. | 7 de junho de 2023 | 21 de junho de 2023 |
+| **Suporte à conversão de moeda** | A conversão de moeda é compatível como parte da formatação de um componente de métrica em uma Visualização de dados. [Saiba mais](../data-views/component-settings/format.md#currency) | 7 de junho de 2023 | 21 de junho de 2023 |
 
 {style="table-layout:auto"}
 
@@ -42,6 +42,10 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 | **Report Builder para CJA - Selecionar visualização de dados da célula** | Esse recurso permite que os usuários selecionem a visualização de dados para um bloco de dados de uma célula. Isso é útil se você criar uma pasta de trabalho e tiver várias visualizações de dados com uma construção de dados semelhante e quiser reutilizar essa pasta de trabalho várias vezes, com visualizações de dados diferentes. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=pt-BR) | N/D | 24 de maio de 2023 |
 | **Página de aprendizado atualizada para o CJA** | A guia Aprendizado na página de aterrissagem do Customer Journey Analytics agora tem conteúdo específico do CJA, incluindo conteúdo focado na transição do Adobe Analytics para o CJA.<p>Os seguintes aprimoramentos adicionais também estão disponíveis na guia Aprendizado:</p><ul><li>Design aprimorado que mostra mais conteúdo de aprendizagem em uma única página com navegação aprimorada</li><li>Capacidade de personalizar o conteúdo de aprendizado por nível de experiência (iniciante, intermediário e avançado)</li></ul><p>Anteriormente, a guia Aprendizado no CJA continha informações idênticas à guia Aprendizado no Adobe Analytics.</p> [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=en#navigate-learning) | N/D | 30 de junho de 2023 |
 | **Classificar componentes no Analysis Workspace** | <p>Uma nova opção Classificar está disponível ao visualizar componentes no painel esquerdo ou no Dicionário de dados no Analysis Workspace. É possível classificar componentes por Recomendado (os mais usados), Alfabético ou Categórico (tipo).</p><p>Anteriormente, só era possível pesquisar ou filtrar componentes. [Saiba mais](/help/components/overview.md)</p> | N/D | TBD |
+| **Excluir linhas que contenham dimensões dinâmicas de uma Tabela de forma livre** | Em uma Tabela de forma livre no Analysis Workspace, agora é possível excluir rapidamente linhas específicas que contenham dimensões dinâmicas usando o ícone x. Ao fazer isso, uma regra de filtro &quot;Sempre excluir itens&quot; é aplicada automaticamente.<p>Anteriormente, a única maneira de excluir linhas que continham dimensões dinâmicas era criar manualmente uma regra na caixa de diálogo Filtro. [Saiba mais](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md)</p> | N/D | 17 de maio de 2023 |
+| **Novo botão para adicionar uma visualização dentro de um painel** | Um novo botão agora está disponível na parte inferior de cada painel no Analysis Workspace, permitindo que você adicione uma visualização rapidamente. <p>Anteriormente, os únicos métodos para adicionar uma visualização a um painel eram arrastar uma visualização do painel esquerdo, duplicar ou copiar uma visualização já existente ou criar um painel em branco. [Saiba mais](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</p> | N/D | 17 de maio de 2023 |
+| **Deep Linking (aplicativo para dispositivos móveis)** | Permite que usuários enviem links para cartões de pontuação que os levarão diretamente ao projeto do cartão de pontuação no aplicativo. Isso facilita ainda mais o compartilhamento de projetos e aumenta o engajamento de um público menos técnico. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#share-scorecards-using-a-shareable-link) | N/D | 17 de maio de 2023 |
+| **Legendas inteligentes** | Enriqueça a narrativa para usuários com resumos em linguagem natural de um [!UICONTROL Linha] visualização. [Saiba mais](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17 de maio de 2023 | 1 de junho de 2023 |
 
 {style="table-layout:auto"}
 
