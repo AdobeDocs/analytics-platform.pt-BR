@@ -2,16 +2,16 @@
 title: Visão geral de publicação de públicos-alvo do CJA
 description: Saiba mais sobre o conceito de publicação de público-alvo no Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 955f4543a132126deee52b7dfe3398b742022069
-workflow-type: ht
-source-wordcount: '437'
-ht-degree: 100%
+source-git-commit: 7b86650cd3475a203d597baeec2ec2152e082b10
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 83%
 
 ---
 
 # Visão geral da publicação de público-alvo do CJA
 
-Agora você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics (CJA) no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCP) na Adobe Experience Platform para direcionamento e personalização de clientes.
+Agora você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics (CJA) no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCDP) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
 A publicação de públicos-alvo fornece uma maneira clara de ativar e executar ações em insights encontrados no CJA. Essas ações podem incluir:
 
@@ -20,6 +20,8 @@ A publicação de públicos-alvo fornece uma maneira clara de ativar e executar 
 * Enriquecimento do perfil do cliente em tempo real com atributos úteis derivados de dados baseados em eventos no CJA.
 * Tudo isso é feito com latência mínima após publicar o público. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=pt-BR#latency)
 * Publicação de públicos-alvo únicos ou públicos-alvo recorrentes.
+
+Os públicos-alvo criados no CJA não precisam se basear em conjuntos de dados habilitados para o perfil. Você pode assimilar dados históricos no Experience Platform sem ativar conjuntos de dados e esquemas associados para o perfil. Em seguida, use esses conjuntos de dados para descobrir públicos relevantes no CJA e publicá-los no RTCDP no Experience Platform para fins de ativação.
 
 ## Terminologia principal
 
