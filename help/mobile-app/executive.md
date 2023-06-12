@@ -5,7 +5,7 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 26012a5b7332adf2b80edd8fb9f9327788443dfc
+source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 92%
@@ -51,7 +51,7 @@ Depois de baixados e instalados, os usuários executivos podem fazer logon no ap
 
 ![Tela de boas-vindas do aplicativo](assets/welcome.png)
 
-## Usar painéis
+## Usar painéis {#use-dashboards}
 
 Para usar painéis:
 
@@ -59,15 +59,15 @@ Para usar painéis:
 
    ![Sequência de logon](assets/signseq.png)
 
-1. Escolha uma empresa. Efetuado o logon nos painéis, a tela **[!UICONTROL Escolha uma empresa]** é exibida. Esta tela lista as empresas de logon às quais você pertence. Toque no nome da empresa associado ao scorecard compartilhado com você.
+1. Escolha uma empresa. Efetuado o logon nos painéis, a tela **[!UICONTROL Escolha uma empresa]** é exibida. Esta tela lista as empresas de logon às quais você pertence. Toque no nome da empresa associado ao cartão de pontuação compartilhado com você.
 
    A lista de scorecards mostra todos os scorecards compartilhados com você.
 
-1. Toque no scorecard que deseja visualizar.
+1. Toque no cartão de pontuação que deseja exibir.
 
-   Se você tiver acesso a mais de uma organização em um logon, todos os scorecards das organizações estarão disponíveis na lista de scorecards.
+   Se você tiver acesso a mais de uma organização em um logon, todos os scorecards de suas organizações estarão disponíveis na lista de scorecards.
 
-   Você pode classificar a lista de scorecards de acordo com o título do scorecard, o nome da organização ou a visualização mais recente. Você pode até pesquisar por um scorecard específico.
+   Você pode classificar a lista de cartões de pontuação de acordo com o título do cartão de pontuação, o nome da organização ou a visualização mais recente. Você pode até mesmo pesquisar por um scorecard específico.
 
    ![Escolha uma empresa](assets/mobile-home-screen.png)
 
@@ -89,6 +89,7 @@ Para usar painéis:
       * Um dia mostra uma tendência horária
       * Mais de um dia e menos de um ano mostra uma tendência diária.
       * Um ano ou mais mostra uma tendência semanal.
+
    * A fórmula de alteração do valor percentual é o total da métrica (intervalo de datas atual) - total da métrica (intervalo de datas de comparação) / total da métrica (intervalo de datas de comparação).
 
    * Você pode puxar a tela para baixo para atualizar o Scorecard.

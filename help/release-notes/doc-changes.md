@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 62c2c74d1a5d0f92cbe8a641f392ccaba3b105ff
+source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2086'
+ht-degree: 86%
 
 ---
 
@@ -40,7 +40,7 @@ As atualizações a seguir foram feitas na documentação do CJA desde o início
 | Vídeo sobre como usar filtros como dimensões | Atualização do vídeo sobre o uso de filtros como dimensão. <p>Este vídeo é vinculado da página [Criar filtros](/help/components/filters/create-filters.md).</p> <p>Veja a seguir há um link direto para o vídeo: [Usar filtros como dimensões no Analysis Workspace](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/filters/use-filters-as-dimensions.html?lang=pt-BR).</p> |
 | Filtrar documentação | Adição de um artigo sobre o uso do [Construtor de filtros](/help/components/filters/filter-builder.md). <p>Documentação simplificada em [Criar filtros](/help/components/filters/create-filters.md) e [Visão geral dos filtros](/help/components/filters/filters-overview.md).</p> |
 | Atualização da documentação do painel Experimentação | Adição de uma seção sobre [interpretação de dimensões não aleatórias](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/experimentation.html?lang=pt-BR#non-randomized). |
-| Filtros do projeto (filtros ad hoc e rápidos) | A documentação sobre filtros de projeto foi simplificada e as informações duplicadas foram removidas. As etapas para criar filtros ad hoc agora estão combinadas com as etapas para [criar filtros rápidos](/help/components/filters/quick-filters.md). |
+| Filtros do projeto (filtros ad hoc e rápidos) | Documentação simplificada sobre filtros de projeto e informações duplicadas removidas. As etapas para criar filtros ad hoc agora estão combinadas com as etapas para [criar filtros rápidos](/help/components/filters/quick-filters.md). |
 | **Março de 2023** | |
 | Integrar dados da Gestão de decisões | Adição de conteúdo explicando como [integrar os dados da Gestão de decisões do Adobe Journey Optimizer no CJA](/help/integrations/ajo-od.md). |
 | Criar histórias de dados em cartões de pontuação móveis | Uma [história de dados](/help/mobile-app/create-scorecard.md#create-data-stories) é uma coleção de pontos de dados de suporte, contexto comercial e métricas relacionadas com base em um tema ou métrica central. |
