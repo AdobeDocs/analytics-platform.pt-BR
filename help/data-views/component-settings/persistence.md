@@ -4,7 +4,7 @@ description: Determine como ou se os valores de dimensão persistem de um evento
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+source-git-commit: 20135c39341eebbf680783ad0e71bf6c62e5377b
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 91%
@@ -37,33 +37,33 @@ Detalhes sobre as configurações de alocação disponíveis.
 
 * **[!UICONTROL Mais recente]**: persiste o valor mais recente (por carimbo de data e hora) presente na dimensão. Qualquer valor subsequente que ocorrer dentro do período de expiração da dimensão substitui o valor persistente anterior. Se “Tratar &#39;Valor nulo&#39; como um valor” estiver ativado nas [Opções de valor nulo](no-value-options.md) desta dimensão, os valores vazios substituirão os valores persistentes anteriores. Por exemplo, considere a seguinte tabela com a alocação [!UICONTROL Mais recente] e a expiração de [!UICONTROL Sessão]:
 
-   | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Valores do conjunto de dados |  | C | B |  | A |
-   | Alocação mais recente |  | C | B | B | A |
+  | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Valores do conjunto de dados |  | C | B |  | A |
+  | Alocação mais recente |  | C | B | B | A |
 
 * **[!UICONTROL Original]**: persiste o valor original por carimbo de data e hora presente na dimensão durante o período de expiração. Se essa dimensão tiver um valor, ele não será substituído quando um valor diferente for visualizado em um evento subsequente. Por exemplo, considere a seguinte tabela com a alocação [!UICONTROL Original] e expiração de [!UICONTROL Sessão]:
 
-   | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Valores do conjunto de dados |  | C | B |  | A |
-   | Alocação original |  | C | C | C | C |
+  | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Valores do conjunto de dados |  | C | B |  | A |
+  | Alocação original |  | C | C | C | C |
 
 * **[!UICONTROL Todos]**: age de forma semelhante ao modelo de atribuição de [!UICONTROL Participação] para métricas. Persiste todos os valores igualmente para que cada um obtenha crédito total pela métrica no relatório. Por exemplo, considere a seguinte tabela com a alocação [!UICONTROL Todos] e a expiração de [!UICONTROL Sessão]:
 
-   | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Valores do conjunto de dados | A | B | C |  | A |
-   | Toda alocação | A | A,B | A,B,C | A,B,C | A,B,C |
+  | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Valores do conjunto de dados | A | B | C |  | A |
+  | Toda alocação | A | A,B | A,B,C | A,B,C | A,B,C |
 
 * **[!UICONTROL Primeiro conhecimento]** e **[!UICONTROL Último conhecimento]**: (19 de janeiro de 2022 ) Esses dois modelos de alocação atendem a casos de uso de dimensão de “entrada” e “saída”. Eles selecionam o primeiro ou o último valor observado de uma dimensão dentro de um escopo de persistência especificado (sessão, pessoa ou período de tempo personalizado com retrospectiva) e o aplicam a todos os eventos dentro do escopo especificado. Exemplo:
 
-   | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
-   | --- | --- | --- | --- | --- | --- |
-   | Carimbo de data e hora (min) | 1 | 2 | 3 | 6 | 7 |
-   | Valores originais |  | C | B |  | A |
-   | Primeiro conhecimento | C | C | C | C | C |
-   | Último conhecimento | A | A | A | A | A |
+  | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
+  | --- | --- | --- | --- | --- | --- |
+  | Carimbo de data e hora (min) | 1 | 2 | 3 | 6 | 7 |
+  | Valores originais |  | C | B |  | A |
+  | Primeiro conhecimento | C | C | C | C | C |
+  | Último conhecimento | A | A | A | A | A |
 
 ## Configurações de [!UICONTROL Expiração]
 
@@ -79,6 +79,8 @@ Detalhes sobre as configurações de expiração disponíveis.
 Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de outra dimensão. As opções válidas incluem outras dimensões incluídas na visualização de dados.
 
 Consulte [uso de dimensões e métricas de ligação no CJA](../../use-cases/data-views/binding-dimensions-metrics.md) para obter exemplos sobre como usar efetivamente dimensões de ligação.
+
+>[!VIDEO](https://video.tv.adobe.com/v/342694/?quality=12)
 
 ## [!UICONTROL Métrica de ligação]
 
