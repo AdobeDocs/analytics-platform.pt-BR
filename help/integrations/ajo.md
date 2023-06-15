@@ -2,10 +2,10 @@
 title: Integrar o Adobe Journey Optimizer (AJO) ao Customer Journey Analytics (CJA)
 description: Traga dados gerados pelo AJO e analise-os usando o Analysis Workspace no CJA.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
-source-git-commit: 933f3f0336c325bf0973a0379532b3e19f1c6d68
+source-git-commit: 76f13b6c3b05d4a3fa4169ab0b4a1e9573efb9e0
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 84%
+source-wordcount: '864'
+ht-degree: 73%
 
 ---
 
@@ -21,17 +21,17 @@ A Adobe Experience Platform serve como a fonte de dados central e o vínculo ent
 
 ## Criar uma conexão no Customer Journey Analytics
 
-Depois que os dados do Journey Optimizer estiverem no Adobe Experience Platform, você poderá [Criar uma conexão](/help/connections/create-connection.md) com base em seus conjuntos de dados do Journey Optimizer. Ou você pode adicionar conjuntos de dados do Journey Optimizer a uma conexão existente.
+Depois que os dados do Journey Optimizer estiverem no Adobe Experience Platform, você poderá [Criar uma conexão](/help/connections/create-connection.md) com base nos conjuntos de dados do Journey Optimizer. Ou você pode adicionar conjuntos de dados do Journey Optimizer a uma conexão existente.
 
 Selecione e configure os seguintes conjuntos de dados:
 
 | Conjunto de dados | Tipo de conjunto de dados | Configurações de conexão | Descrição |
 | --- | --- | --- | --- |
-| Conjunto de dados do evento de feedback de mensagens AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de delivery de mensagem, como &#39;[!UICONTROL Envia]&#39; e &#39;[!UICONTROL Rejeições]&quot;. |
-| Conjunto de dados do evento de experiência de rastreamento de email AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de email como &#39;[!UICONTROL Abre]&#39;, &#39;[!UICONTROL Cliques]&#39;, e &#39;[!UICONTROL Cancelamentos de assinatura]&quot;. |
-| Conjunto de dados do evento de experiência de rastreamento de push do AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de push como &#39;[!UICONTROL Inicializações do aplicativo]&quot;. |
-| Jornada de eventos em etapas | Evento  | ID de pessoa: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contém eventos que mostram quais perfis participaram de cada nó da jornada. |
-| Conjunto de dados da entidade AJO | Pesquisa | Chave: `_id`<br>Chave de correspondência: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contém classificações que associam metadados de Jornada e campanha a todos os dados de evento do AJO. |
+| Conjunto de dados do evento de feedback de mensagem do AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de entrega de mensagem, como &#39;[!UICONTROL Envios]&#39; e &#39;[!UICONTROL Rejeições]&#39;. |
+| Conjunto de dados do evento de experiência de rastreamento de email do AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de email, como &#39;[!UICONTROL Aberturas]&#39;, &#39;[!UICONTROL Cliques]&#39; e &#39;[!UICONTROL Cancelamentos de assinatura]&#39;. |
+| Conjunto de dados do evento de experiência de rastreamento de push do AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de push, como &#39;[!UICONTROL Inicializações do aplicativo]&#39;. |
+| Jornada eventos de etapa | Evento  | ID de pessoa: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contém eventos que mostram quais perfis participaram de cada nó da jornada. |
+| Conjunto de dados da entidade AJO | Pesquisa | Chave: `_id`<br>Chave correspondente: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contém classificações que associam metadados de Jornada e Campanha a todos os dados de evento do AJO. |
 
 {style="table-layout:auto"}
 
@@ -64,6 +64,7 @@ Você pode criar as seguintes dimensões em uma visualização de dados para obt
 | Nome do tratamento | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Tipo de componente: dimensão<br>Rótulos de contexto: variante de experimentação |
 | Motivo da falha de entrega de email | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Tipo de componente: dimensão |
 | Motivo de exclusão da entrega de email | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Tipo de componente: dimensão |
+| Rótulo do elemento | `_experience.decisioning.propositionAction.label` | Tipo de componente: dimensão |
 
 {style="table-layout:auto"}
 
@@ -82,6 +83,11 @@ Você pode criar as seguintes métricas em uma visualização de dados para obte
 | Envios | O número de mensagens aceitas por provedores de email. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `sent` |
 | Reclamações de spam | A contagem de reclamações de spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `spam_complaint` |
 | Cancelamentos de inscrição | A contagem de cancelamentos de inscrição. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `unsubscribe` |
+| Envios de borda | O número de vezes que a rede de borda envia uma mensagem para o SDK da Web ou móvel | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.send` |
+| Exibições de entrada | O número de vezes que uma mensagem na Web ou no aplicativo é mostrada ao usuário | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.display` |
+| Cliques de entrada | A contagem de cliques em mensagens na Web ou no aplicativo | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.interact` |
+| Acionadores do InApp | O número de vezes que o mecanismo de decisão sugeriu que a mensagem deve ser exibida. O SDK móvel pode substituir a decisão de reduzir o número de exibições reais. | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.trigger` |
+| Descartes no aplicativo | O número de vezes que uma mensagem no aplicativo é removida da interface do usuário pelo SDK | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.dismiss` |
 
 {style="table-layout:auto"}
 
