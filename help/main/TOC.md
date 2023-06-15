@@ -10,9 +10,9 @@ user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Customer Journey Analytics (CJA) e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
 + Assimilação de dados {#cja-data-ingestion}
    + [Visão geral da assimilação de dados](../data-ingestion/data-ingestion.md)
-   + Assimilar e usar guias de início rápido {#ingest-use-guides}
+   + Assimilar e usar guias de início rápido{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + [SDK da Web da Adobe Experience Platform Rede de borda](../data-ingestion/aepwebsdk.md)
       + [Dados em lote](../data-ingestion/batch.md)
@@ -243,8 +243,8 @@ ht-degree: 95%
          + [Localizar métricas](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Criar métricas](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Atribuição e tipo de métrica](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Criar uma métrica &quot;Exibições de página por visita&quot;](../components/calc-metrics/cm-workflow/cm-pvv.md)
-         + [Criar uma métrica de &quot;Participação&quot;](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Criar uma métrica “Exibições de página por visita”](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Criar uma métrica “Participação”](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Métricas filtradas](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Empilhar e substituir filtros](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Métricas filtradas e ponderadas](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
@@ -252,7 +252,7 @@ ht-degree: 95%
          + [Marcar métricas calculadas](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Aprovar métricas calculadas](../components/calc-metrics/cm-workflow/cm-approving.md)
          + [Compartilhar métricas calculadas](../components/calc-metrics/cm-workflow/cm-sharing.md)
-         + [Gerenciador de métrica calculada](../components/calc-metrics/cm-workflow/cm-manager.md)
+         + [Gerenciador de métricas calculadas](../components/calc-metrics/cm-workflow/cm-manager.md)
       + [Métricas calculadas padrão](../components/calc-metrics/default-calcmetrics.md)
       + [Funções básicas](../components/calc-metrics/cm-functions.md)
       + [Funções avançadas](../components/calc-metrics/cm-adv-functions.md)
