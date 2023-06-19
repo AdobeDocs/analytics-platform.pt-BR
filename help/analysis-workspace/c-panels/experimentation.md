@@ -3,10 +3,10 @@ description: Saiba como analisar os resultados de testes A/B no painel de experi
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
+source-git-commit: f95693c35f5baa569bde79150c24ef752824b592
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 73%
+source-wordcount: '1855'
+ht-degree: 66%
 
 ---
 
@@ -16,7 +16,7 @@ O painel **[!UICONTROL Experimentação]** permite que os analistas comparem dif
 
 >[!IMPORTANT]
 >
->No momento, os dados do [Adobe Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=pt-BR) (A4T) trazidos para a Adobe Experience Platform por meio do Conector de origem do Analytics **não podem** ser analisados no painel [!UICONTROL Experimentação]. Esperamos uma solução para esta questão em 2023.
+>Neste ponto, [Adobe Analytics para Target|https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en] Dados do (A4T) *não é possível* ser analisadas no painel Experimentação.
 
 ## Controle de acesso {#access}
 
@@ -28,7 +28,7 @@ Foram adicionadas duas novas funções avançadas: [!UICONTROL Aumento] e [!UICO
 
 ## Etapa 1: criar conexão com conjuntos de dados de experimento {#connection}
 
-O esquema de dados recomendado é um no qual os dados experimentais estejam em uma [Matriz de objetos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=pt-BR) que contém os dados de experimento e variante em duas dimensões separadas. Se você tiver seus dados de experimento em uma única dimensão com os dados de experimento e variante em uma string delimitada, poderá usar a configuração [substring](/help/data-views/component-settings/substring.md) das visualizações de dados para dividi-los em duas partes para uso no painel.
+O esquema de dados recomendado é um no qual os dados experimentais estejam em uma [Matriz de objetos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=pt-BR) que contém os dados de experimento e variante em duas dimensões separadas. Ambas as dimensões precisam estar em uma **solteiro** matriz de objetos. Se você tiver seus dados de experimento em uma única dimensão com os dados de experimento e variante em uma string delimitada, poderá usar a configuração [substring](/help/data-views/component-settings/substring.md) das visualizações de dados para dividi-los em duas partes para uso no painel.
 
 Depois que seus dados de experimento tiverem sido [ingeridos](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) pela Adobe Experience Platform, [crie uma conexão no CJA](/help/connections/create-connection.md) para um ou mais conjuntos de dados de experimento.
 
@@ -86,9 +86,9 @@ O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] e
 
 ## Etapa 5: interpretar os resultados {#interpret}
 
-1. **O experimento é conclusivo**: cada vez que você visualiza o relatório de experimentação, a Adobe analisa os dados acumulados no experimento até o momento e declara um experimento como “Conclusivo” quando a confiança válida a qualquer momento ultrapassa um limite de 95% em *pelo menos uma* das variantes (com uma correção de Bonferonni aplicada quando há mais de dois braços a serem corrigidos para testes de hipótese múltipla).
+1. **O experimento é conclusivo**: Toda vez que você visualiza o relatório de experimentação, o Adobe analisa os dados acumulados no experimento até o momento e declara um experimento como &quot;Conclusivo&quot; quando a confiança válida a qualquer momento ultrapassa um limite de 95% para *pelo menos um* das variantes (com uma correção de Benjamini-Hochberg aplicada quando há mais de dois braços, para corrigir para testes de hipótese múltipla).
 
-2. **Variante com melhor desempenho**: quando um experimento é declarado conclusivo, a variante com a maior taxa de conversão é rotulada como a “variante com melhor desempenho”. Observe que essa variante deve ser a variante de controle ou de linha de base, ou uma das variantes que cruzam o limite de confiança válido a qualquer momento de 95% (com as correções de Bonferonni aplicadas).
+2. **Variante com melhor desempenho**: quando um experimento é declarado conclusivo, a variante com a maior taxa de conversão é rotulada como a “variante com melhor desempenho”. Observe que essa variante deve ser a variante de controle ou de linha de base, ou uma das variantes que cruzam o limite de confiança válido a qualquer momento de 95% (com as correções de Benjamini-Hochberg aplicadas).
 
 3. **Índice de conversão**: o índice de conversão mostrado é uma relação do valor da métrica de sucesso com o valor da métrica de normalização. Observe que, às vezes, isso pode ser maior que 1 se a métrica não for binária (1 ou 0 para cada unidade no experimento)
 
