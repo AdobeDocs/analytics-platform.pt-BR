@@ -3,9 +3,9 @@ description: Saiba mais sobre
 title: Atribuição e tipo de métrica
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '216'
 ht-degree: 60%
 
 ---
@@ -31,4 +31,4 @@ Para especificar o tipo de métrica ao criar uma métrica calculada:
 
 ## Atribuição
 
-Para obter informações sobre atribuição no CJA, consulte [Configurações do componente de Atribuição](/help/data-views/component-settings/attribution.md).
+Para obter informações sobre atribuição no Customer Journey Analytics, consulte [Configurações do componente de Atribuição](/help/data-views/component-settings/attribution.md).

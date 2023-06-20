@@ -2,9 +2,9 @@
 title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
-source-git-commit: 4e2d4d8c4f8145ae691114d57d663af96240b5f5
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '967'
 ht-degree: 34%
 
 ---
@@ -112,7 +112,7 @@ Os contêineres de evento contam com detalhamentos de página única com base em
 
 ## Modelo de filtro pronto para uso {#template}
 
-O Analytics tradicional vem com vários modelos de filtros (filtros) e métricas calculadas prontos para uso. Muitos deles não se aplicam ao CJA ou precisam ser renomeados ou recriados. Outros dependem de uma solução para variáveis com reconhecimento de contexto no CJA.
+O Analytics tradicional vem com vários modelos de filtros (filtros) e métricas calculadas prontos para uso. Muitos deles não se aplicam ao Customer Journey Analytics ou precisam ser renomeados ou recriados. Outros dependem de uma solução para variáveis com reconhecimento de contexto no Customer Journey Analytics.
 
 | Nome do filtro | Descrição |
 | --- | --- |

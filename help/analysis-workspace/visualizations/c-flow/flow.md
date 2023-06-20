@@ -3,10 +3,10 @@ description: O recurso Fluxo mostra os caminhos do cliente pelos seus sites e ap
 title: Visão geral do Fluxo
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
-source-git-commit: 8a971c6b7e04f40a57d379f246c38815852ee0c2
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '203'
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ Ele permite:
 
 [Tutorial em vídeo de Visualização de fluxo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=pt-BR) (4:56)
 
-## Fluxos interdimensionais {#section_7AA325E432C846B0AC51E70CCE79B4C0}
+## Fluxos interdimensionais {#in}
 
 É possível mostrar o [fluxo entre dimensões](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Por exemplo, você pode combinar páginas e departamentos em um diagrama. Neste caso, seu fluxo pode ir da página inicial à página Masculino e, então, para o departamento de Sapatos.
 

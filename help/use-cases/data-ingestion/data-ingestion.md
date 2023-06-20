@@ -4,10 +4,10 @@ description: Entenda as diferentes maneiras de assimilar dados no Customer Journ
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 69356510596d047d80af63338fccca71e8af53cd
-workflow-type: ht
-source-wordcount: '784'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Esse fluxo de trabalho utiliza o Conector de origem do Adobe Analytics e varia d
 
 [O Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) é uma biblioteca JavaScript no lado do cliente que permite aos clientes da Adobe Experience Cloud interagir com os vários serviços na Experience Cloud por meio da Adobe Experience Platform Edge Network.
 
-1. [Configure a extensão de SDK da Web da AEP nas tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=pt-BR) para enviar dados para a Adobe Experience Cloud pelas propriedades da Web, por meio da Rede de borda da Adobe Experience Platform.
+1. [Configurar a extensão SDK da Web da Adobe Experience Platform nas tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=pt-BR) para enviar dados para a Adobe Experience Cloud pelas propriedades da Web, por meio da Adobe Experience Platform Edge Network.
 1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=pt-BR) para criar uma ou mais [conexões](/help/connections/create-connection.md) e [visualizações de dados](/help/data-views/data-views.md) que informarão seu relatórios entre canais.
 
 ## Assimilar dados com assimilação em lote e por streaming

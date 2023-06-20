@@ -1,26 +1,26 @@
 ---
 title: Controle de acesso ao Customer Journey Analytics
-description: Saiba mais sobre como implementar o controle de acesso no CJA.
+description: Saiba mais sobre como implementar o controle de acesso no Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: CJA Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 96%
+source-wordcount: '937'
+ht-degree: 83%
 
 ---
 
 # Controle de acesso ao Customer Journey Analytics
 
-O Customer Journey Analytics (CJA) é regido por três níveis de acesso, ou três funções: função de administrador do produto, função de administrador do perfil de produto e acesso de nível de usuário. Este tópico explica essas funções com mais detalhes.
+O Customer Journey Analytics é regido por três níveis de acesso, ou três funções: função de administrador de produto, função de administrador de perfil de produto e acesso de nível de usuário. Este tópico explica essas funções com mais detalhes.
 
 Além disso, discutimos maneiras mais granulares de limitar o acesso, como curadoria e nível de linha do Workspace, bem como controle de acesso de nível de valor.
 
 ## Função de administrador do produto
 
-Os administradores de produto têm permissões para concluir qualquer tarefa necessária no CJA. Você deve ser adicionado como administrador de produto no **Perfil de produto do Customer Journey Analytics** no [Admin Console](https://adminconsole.adobe.com/enterprise/), em [!UICONTROL Customer Journey Analytics] > guia [!UICONTROL Administradores] > [!UICONTROL Adicionar administrador]. Os administradores de produtos recebem as seguintes permissões:
+Os administradores de produto têm permissões para concluir qualquer tarefa necessária no Customer Journey Analytics. Você deve ser adicionado como administrador de produto no **Perfil de produto do Customer Journey Analytics** no [Admin Console](https://adminconsole.adobe.com/enterprise/), em [!UICONTROL Customer Journey Analytics] > guia [!UICONTROL Administradores] > [!UICONTROL Adicionar administrador]. Os administradores de produtos recebem as seguintes permissões:
 
 * Criar/atualizar/excluir conexões ou visualizações de dados
 * Atualizar/excluir projetos, filtros, métricas calculadas, públicos alvos, anotações ou filtros criados por outros usuários
@@ -41,7 +41,7 @@ Um perfil de produto é um conjunto de permissões. Os administradores de perfil
 
 * Criar e gerenciar perfis de produtos individuais, como adicionar novos usuários ou gerenciar grupos de usuários e seus perfis de produtos associados.
 
-* No CJA, editar as visualizações de dados que fazem parte de um perfil de produto que eles gerenciam. Eles não podem criar novas visualizações de dados.
+* No Customer Journey Analytics, edite as visualizações de dados que fazem parte de um perfil de produto gerenciado por eles. Eles não podem criar novas visualizações de dados.
 
 ## Acesso no nível do usuário
 
@@ -53,7 +53,7 @@ Outro nível de controle de acesso pode ser usado no nível de relatório do Wor
 
 ## Conceder acesso a métricas ou dimensões individuais
 
-Você não pode conceder ou negar permissões em métricas ou dimensões individuais no Customer Journey Analytics, como no Adobe Analytics tradicional. Métricas e dimensões podem ser modificadas nas [visualizações de dados](/help/data-views/data-views.md) e, portanto, estão sujeitas a alterações no CJA. Alterá-las também altera retroativamente o relatório.
+Você não pode conceder ou negar permissões em métricas ou dimensões individuais no Customer Journey Analytics, como no Adobe Analytics tradicional. Métricas e dimensões podem ser modificadas no [visualizações de dados](/help/data-views/data-views.md) e estão, portanto, sujeitas a alterações no Customer Journey Analytics. Alterá-las também altera retroativamente o relatório.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ Um terceiro com o qual sua empresa trabalha tem um gerente de equipe que pode se
 
 Considere que você deseje conceder aos usuários acesso aos dados somente de um dia. Esta é a forma como você limitaria o acesso a essas linhas específicas:
 
-1. Crie um filtro no CJA, em que **[!UICONTROL Dia]** seja igual à data que você deseja que eles tenham acesso aos dados.
+1. Criar um filtro no Customer Journey Analytics onde **[!UICONTROL Dia]** é igual à data que você deseja que eles tenham acesso aos dados.
 1. Em [!UICONTROL Visualizações de dados] > [!UICONTROL Configurações], adicione esse filtro à visualização de dados.
 1. Salve a visualização de dados e ela aplicará automaticamente o filtro ao conjunto de dados. Qualquer linha que não se ajuste à definição de filtro agora é excluída automaticamente da visualização de dados editada.
 1. Crie um novo perfil de produto no Admin Console, adicione usuários a ele e limite o acesso a essa visualização de dados.
@@ -78,22 +78,22 @@ Os usuários que têm acesso a uma visualização de dados só podem trabalhar c
 
 Este é um exemplo relacionado ao sistema de saúde: digamos que você crie uma métrica chamada “Hipertensão” em uma visualização de dados, a partir de um conjunto de dados que inclua esses dados. O fato de ser uma métrica permitiria ver o valor agregado desta métrica, mas não os pacientes individuais que se enquadram nela.
 
-## Permissões do CJA no Admin Console
+## permissões de Customer Journey Analytics no Admin Console
 
-A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto em [Admin Console](https://adminconsole.adobe.com/enterprise/). Você pode adicionar usuários a perfis de produtos específicos. Em seguida, você atribui direitos a visualizações de dados específicas e determina as permissões dos usuários em um perfil de produto. Estas são as permissões específicas do CJA:
+A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto em [Admin Console](https://adminconsole.adobe.com/enterprise/). Você pode adicionar usuários a perfis de produtos específicos. Em seguida, você atribui direitos a visualizações de dados específicas e determina as permissões dos usuários em um perfil de produto. Estas são as permissões específicas do Customer Journey Analytics:
 
 ![permissões do Admin Console](assets/permissions.png)
 
 | Permissão | Definição |
 | --- | --- |
 | **[!UICONTROL Visualizações de dados]** | Se você alternar a configuração **[!UICONTROL Incluir automaticamente]** para **[!UICONTROL Ativado]**, os usuários que fazem parte desse perfil de produto poderão visualizar todas as visualizações de dados existentes e recém-criadas. Se esta configuração estiver definida como **[!UICONTROL Desativado]**, será possível selecionar visualizações de dados específicas às quais os usuários têm acesso. |
-| **[!UICONTROL Ferramentas de relatório]**: |  |
+| **[!UICONTROL Ferramentas de relatório]**: |   |
 | **[!UICONTROL Acesso aos logs de auditoria]** | Essa permissão impõe a verificação de permissão na [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) e na interface dos logs de auditoria. |
 | **[!UICONTROL Administrador de uso de relatórios]** | Permite que os usuários visualizem e excluam qualquer relatório em execução em sua empresa. |
 | **[!UICONTROL Exibição do uso de relatórios]** | Permite que os usuários vejam todas as solicitações de relatórios simultâneas. |
 | **[!UICONTROL Criação de métricas calculadas]** | Permite que os usuários criem [métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Criação de filtros]** | Permite que os usuários criem [filtros](/help/components/filters/filters-overview.md). |
-| **[!UICONTROL Acesso ao Labs]** | Permite que os usuários acessem a guia [Labs](/help/labs/labs.md) no CJA. |
+| **[!UICONTROL Acesso ao Labs]** | Permite que os usuários acessem o [Labs](/help/labs/labs.md) no Customer Journey Analytics. |
 | **[!UICONTROL Criação de anotação]** | Permite que os usuários criem [anotações](/help/components/annotations/overview.md). |
 | **[!UICONTROL Criação de público]** | Permite que os usuários criem [públicos](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Visualização de público]** | Permite que os usuários visualizem [públicos](/help/components/audiences/audiences-overview.md). |

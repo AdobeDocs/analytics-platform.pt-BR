@@ -4,16 +4,16 @@ description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 8e902022c07376fb3c13cad5fd5b1efa655c9424
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 96%
+source-wordcount: '2162'
+ht-degree: 84%
 
 ---
 
 # Perguntas frequentes
 
-[!UICONTROL O Customer Journey Analytics] (CJA) é nosso produto de análise de última geração. Veja a seguir respostas para perguntas frequentes sobre o CJA. Para obter mais informações, consulte [Suporte aos recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
+O Adobe Customer Journey Analytics é nosso produto de análise da próxima geração. Veja a seguir respostas para perguntas frequentes sobre o Customer Journey Analytics. Para obter mais informações, consulte [Suporte aos recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 ## 1. Pré-requisitos {#prerequisites}
 
@@ -70,7 +70,7 @@ Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de
 
 +++**Qual é o comportamento esperado para registros de conjunto de dados de perfil não compilados?**
 
-**Exemplo de cenário**: você associa dois conjuntos de dados em uma conexão do CJA usando `CRMid` como a ID de pessoa. Um é um conjunto de dados de Evento da Web com `CRMid` em todos os registros. O outro conjunto de dados é um conjunto de dados de perfil do CRM. 40% do conjunto de dados do CRM tem `CRMid` presente no conjunto de dados de eventos da Web. Os outros 60% não estão presentes no conjunto de dados de eventos da Web. Esses registros aparecem nos relatórios no Analysis Workspace?<p> **Resposta**: as linhas de perfil que não têm eventos vinculados a elas são armazenadas no CJA. No entanto, não é possível visualizá-las no Analysis Workspace até que um evento vinculado a essa ID seja exibido.
+**Exemplo de cenário**: você associa dois conjuntos de dados em uma conexão Customer Journey Analytics usando `CRMid` como a ID de pessoa. Um é um conjunto de dados de Evento da Web com `CRMid` em todos os registros. O outro conjunto de dados é um conjunto de dados de perfil do CRM. 40% do conjunto de dados do CRM `CRMid` presente no conjunto de dados do evento web. Os outros 60% não estão presentes no conjunto de dados de eventos da Web. Esses registros aparecem nos relatórios no Analysis Workspace?<p> **Resposta**: as linhas de perfil que não têm eventos vinculados a elas são armazenadas no Customer Journey Analytics. No entanto, não é possível visualizá-las no Analysis Workspace até que um evento vinculado a essa ID seja exibido.
 
 +++
 
@@ -118,7 +118,7 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 +++
 
 
-+++**Quais são os limites para assimilação de datas/carimbos de data e hora passados ou futuros em conjuntos de dados de eventos do CJA?**
++++**Quais são os limites para assimilar datas/carimbos de data e hora passadas ou futuras em conjuntos de dados de eventos Customer Journey Analytics?**
 
 <ul><li>Em relação a datas/carimbos de data e hora anteriores: dados de evento com até 10 anos.</li><li>Em relação a datas/carimbos de data e hora futuros: dados de evento (preditivo) até 1 mês no futuro.</li></ul>
 
@@ -128,17 +128,17 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 ## 4. Considerações sobre latência {#latency}
 
 >[!NOTE]
->Não há tamanho de dados fixo no CJA e, portanto, a Adobe não pode se comprometer com um tempo de ingestão padrão. Estamos trabalhando ativamente para reduzir essas latências por meio de novas atualizações e otimização de assimilação.
+>Não há tamanho de dados fixo no Customer Journey Analytics e, portanto, o Adobe não pode se comprometer com um tempo de assimilação padrão. Estamos trabalhando ativamente para reduzir essas latências por meio de novas atualizações e otimização de assimilação.
 
 +++**Qual é a latência esperada para o [!UICONTROL Customer Journey Analytics] na [!UICONTROL Adobe Experience Platform]?**
 
-<ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no AEP. (Tamanho do lote &gt; 50 milhões de linhas: superior a 90 minutos.)</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 7 dias<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul>
+<ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no Adobe Experience Platform. (Tamanho do lote &gt; 50 milhões de linhas: superior a 90 minutos.)</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 7 dias<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul>
 
 +++
 
 ## 5. Definir janela contínua para retenção de dados de [!UICONTROL Conexão] {#data-retention}
 
-A configuração [**[!UICONTROL Ativar janela de dados contínuos ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do CJA como uma janela contínua em meses (3 meses, 6 meses etc.). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
+A variável [**[!UICONTROL Ativar janela de dados contínuos ]**configuração](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) O permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (3 meses, 6 meses etc.). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
 
 O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
 
@@ -148,16 +148,16 @@ Quando se trata de exclusão, nos referimos a seis tipos de componentes: sandbox
 
 | Se você... | Isso acontece... |
 | --- | --- |
-| Excluir uma sandbox na [!UICONTROL Adobe Experience Platform] | A exclusão de uma sandbox interromperá o fluxo de dados para qualquer conexão do [!UICONTROL Customer Journey Analytics] com conjuntos de dados nessa sandbox. Atualmente, as [!UICONTROL Conexões] no CJA vinculadas à sandbox excluída não serão automaticamente excluídas. |
+| Excluir uma sandbox na [!UICONTROL Adobe Experience Platform] | A exclusão de uma sandbox interromperá o fluxo de dados para qualquer conexão do [!UICONTROL Customer Journey Analytics] com conjuntos de dados nessa sandbox. Atualmente, [!UICONTROL Conexões] no Customer Journey Analytics vinculado à sandbox excluída não será automaticamente excluído. |
 | Excluir um esquema na [!UICONTROL Adobe Experience Platform], mas não os conjuntos de dados associados a esse esquema | [!UICONTROL A Adobe Experience Platform] não permite a exclusão de [!UICONTROL esquemas] que tenham um ou mais [!UICONTROL conjuntos de dados] associados a eles. No entanto, um Administrador com o conjunto apropriado de direitos pode excluir os conjuntos de dados primeiro e, em seguida, excluir o esquema. |
-| Excluir um conjunto de dados no data lake da [!UICONTROL Adobe Experience Platform] | A exclusão de um conjunto de dados na AEP interromperá o fluxo de dados desse conjunto de dados para qualquer Conexão do CJA que inclua esse conjunto de dados. Quaisquer dados desse conjunto de dados são excluídos automaticamente das Conexões associadas do CJA. |
-| Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Entre em contato com a equipe de conta do Adobe para iniciar o processo de exclusão de um conjunto de dados em uma conexão que foi salva. |
-| Excluir um lote de um conjunto de dados (na [!UICONTROL Adobe Experience Platform]) | Se um lote for excluído de um conjunto de dados da [!UICONTROL Adobe Experience Platform], o mesmo lote será removido de qualquer Conexão do CJA que contenha esse lote específico.  O CJA é notificado de exclusões em lote na [!UICONTROL Adobe Experience Platform]. |
+| Excluir um conjunto de dados no data lake da [!UICONTROL Adobe Experience Platform] | A exclusão de um conjunto de dados na Adobe Experience Platform interromperá o fluxo de dados desse conjunto de dados para qualquer Conexão Customer Journey Analytics que inclua esse conjunto de dados. Quaisquer dados desse conjunto de dados são excluídos automaticamente das Conexões Customer Journey Analytics associadas. |
+| Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Entre em contato com a Equipe de conta do Adobe para iniciar o processo de exclusão de um conjunto de dados em uma conexão que foi salva. |
+| Excluir um lote de um conjunto de dados (na [!UICONTROL Adobe Experience Platform]) | Se um lote for excluído de uma [!UICONTROL Adobe Experience Platform] , o mesmo lote será removido de qualquer Conexão Customer Journey Analytics que contenha esse lote específico.  O Customer Journey Analytics é notificado de exclusões em lote no [!UICONTROL Adobe Experience Platform]. |
 | Excluir um lote **enquanto ele estiver sendo assimilado** no [!UICONTROL Customer Journey Analytics] | Se houver apenas um lote no conjunto de dados, nenhum dado ou dado parcial desse lote será exibido no [!UICONTROL Customer Journey Analytics]. A assimilação será revertida. Por exemplo, se houver cinco lotes no conjunto de dados e três deles já tiverem sido assimilados quando o conjunto de dados tiver sido excluído, os dados desses três lotes aparecerão no [!UICONTROL Customer Journey Analytics]. |
 | Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Espaço de trabalho que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul> |
 | Excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que todos os projetos do Espaço de trabalho que dependem dessa visualização de dados excluída deixarão de funcionar. |
 
-## 7. Considerações ao mesclar conjuntos de relatórios no CJA {#merge-reportsuite}
+## 7. Considerações ao mesclar conjuntos de relatórios no Customer Journey Analytics {#merge-reportsuite}
 
 Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR), considere essas ramificações ao mesclar dois ou mais conjuntos de relatórios do Adobe Analytics.
 
@@ -166,9 +166,9 @@ Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem 
 | Variáveis | Variáveis como [!UICONTROL eVars] podem não se alinhar em conjuntos de relatórios. Por exemplo, a eVar1 no conjunto de relatórios 1 pode apontar para **[!UICONTROL Página]**. No conjunto de relatórios 2, a eVar1 pode apontar para **[!UICONTROL Campanha interna]**, gerando relatórios mistos e imprecisos. |
 | Contagens de [!UICONTROL Sessões] e [!UICONTROL Pessoas] | Elas são desduplicadas em conjuntos de relatórios. Como resultado, as contagens podem não corresponder. |
 | Desduplicação de métrica | Desduplica instâncias de uma métrica (por exemplo, [!UICONTROL Pedidos]) se várias linhas tiverem a mesma ID de transação (por exemplo, [!UICONTROL ID de compra]). Isso evita a contagem excessiva de métricas principais. Como resultado, métricas como [!UICONTROL Pedidos] podem não se corresponder em conjuntos de relatórios. |
-| Moeda | A conversão de moeda ainda não é compatível com o CJA. Se os conjuntos de relatórios que você está tentando mesclar usarem moedas base diferentes, podem ocorrer problemas. |
+| Moeda | A conversão de moeda ainda não é suportada no Customer Journey Analytics. Se os conjuntos de relatórios que você está tentando mesclar usarem moedas base diferentes, podem ocorrer problemas. |
 | [!UICONTROL Persistência] | A [Persistência](../data-views/component-settings/persistence.md) se estende pelos conjuntos de relatórios, o que afeta os [!UICONTROL filtros], a [!UICONTROL atribuição] e assim por diante. Os números podem não ser correspondidos corretamente. |
-| [!UICONTROL Classificações] | As [!UICONTROL Classificações] não são automaticamente desduplicadas ao mesclar conjuntos de relatórios. Ao combinar vários arquivos de classificações em um único [!UICONTROL pesquisa] no conjunto de dados, você pode encontrar problemas. |
+| [!UICONTROL Classificações] | As [!UICONTROL Classificações] não são automaticamente desduplicadas ao mesclar conjuntos de relatórios. Ao combinar vários arquivos de classificações em um único [!UICONTROL pesquisa] conjunto de dados, você pode encontrar problemas. |
 
 
 ## 8. Componentes tradicionais do [!UICONTROL Adobe Analytics]
@@ -197,7 +197,7 @@ Ainda não, mas estamos trabalhando ativamente para fornecer esse recurso.
 
 +++**O que acontece com nossos segmentos/métricas calculadas atuais?**
 
-[!UICONTROL O Customer Journey Analytics] não usa mais eVars, props ou eventos e, em vez disso, usa qualquer esquema da AEP. Isso significa que nenhum dos segmentos ou métricas calculadas existentes é compatível com o [!UICONTROL Customer Journey Analytics].
+[!UICONTROL Customer Journey Analytics] O não usa mais eVars, props ou eventos e, agora, usa qualquer esquema do Adobe Experience Platform. Isso significa que nenhum dos segmentos ou métricas calculadas existentes é compatível com o [!UICONTROL Customer Journey Analytics].
 
 +++
 

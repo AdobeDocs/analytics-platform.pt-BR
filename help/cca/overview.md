@@ -4,10 +4,10 @@ description: Rechavear IDs de pessoa de vários conjuntos de dados para compilar
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 95%
+source-wordcount: '1166'
+ht-degree: 89%
 
 ---
 
@@ -33,7 +33,7 @@ Quando você combina conjuntos de dados com IDs de pessoa semelhantes, a atribui
 Antes de usar a Análise de vários canais, verifique se sua organização está preparada com o seguinte:
 
 * Um conjunto de dados na Adobe Experience Platform deve ter duas colunas que ajudem a identificar pessoas:
-   * Uma **ID persistente**, um identificador presente em cada linha. Por exemplo, uma ID de pessoa gerada por uma biblioteca do AppMeasurement do Adobe Analytics.
+   * Uma **ID persistente**, um identificador presente em cada linha. Por exemplo, uma ID de pessoa gerada por uma biblioteca de AppMeasurements do Adobe Analytics.
    * Uma **ID transitória**, um identificador presente em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash depois que uma pessoa é autenticada. Você pode usar praticamente qualquer identificador que desejar, desde que ele esteja presente pelo menos uma vez no mesmo evento que determinada ID persistente.
 * Outro conjunto de dados, como dados da central de atendimento, que contém uma ID transitória em cada linha. Essa ID de pessoa deve ser formatada de forma semelhante à ID transitória no outro conjunto de dados.
 * Esse recurso permite compilar conjuntos de dados que podem incluir a mesclagem de dados autenticados e não autenticados do usuário. Cumpra as leis e regulamentos aplicáveis e obtenha as permissões necessárias do usuário final antes de mesclar conjuntos de dados.
@@ -62,7 +62,7 @@ A Análise de vários canais  é um recurso inovador e robusto, mas tem limitaç
 
 ## Habilitar a Análise de vários canais
 
-Depois que sua organização atender a todos os pré-requisitos e entender suas limitações, você poderá seguir essas etapas para começar a usá-los no CJA.
+Assim que sua organização atender a todos os pré-requisitos e entender suas limitações, você poderá seguir essas etapas para começar a usá-los no Customer Journey Analytics.
 
 1. Importe os dados desejados para a Adobe Experience Platform. Para obter os dados do Adobe Analytics, consulte [Utilização dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md). Para outros tipos de dados, consulte [Criar um esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) e [Assimilar dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) na documentação da Adobe Experience Platform.
 1. Entre em contato com o Suporte ao cliente da Adobe com as seguintes informações:
@@ -74,9 +74,9 @@ Depois que sua organização atender a todos os pré-requisitos e entender suas 
    * Nome da sandbox.
 1. O Suporte ao cliente da Adobe trabalhará com a equipe de engenharia para habilitar a Análise de vários canais ao receber sua solicitação. Depois de habilitada, um novo conjunto de dados rechaveado que contém uma nova coluna de ID de pessoa é exibido na Adobe Experience Platform. O Suporte ao cliente da Adobe pode fornecer a nova ID do conjunto de dados e o nome da coluna de ID de pessoa.
 1. Quando ativado pela primeira vez, a Adobe fornecerá um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento.
-1. [Crie uma conexão](/help/connections/create-connection.md) no CJA usando o conjunto de dados recém-gerado e quaisquer outros conjuntos de dados que você deseja incluir. Escolha a ID de pessoa correta para cada conjunto de dados.
+1. [Criar uma conexão](/help/connections/create-connection.md) no Customer Journey Analytics usando o conjunto de dados recém-gerado e quaisquer outros conjuntos de dados que você deseja incluir. Escolha a ID de pessoa correta para cada conjunto de dados.
 1. [Crie uma visualização de dados](/help/data-views/create-dataview.md) com base na conexão.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-Depois que a visualização de dados é configurada, a Análise no CJA é como qualquer outra análise no CJA, exceto que agora os dados operam entre canais e dispositivos.
+Depois que a visualização de dados é configurada, a análise no Customer Journey Analytics é como qualquer outra análise no Customer Journey Analytics, exceto que agora os dados operam entre canais e dispositivos.

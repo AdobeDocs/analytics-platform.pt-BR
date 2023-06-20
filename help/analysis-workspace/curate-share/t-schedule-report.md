@@ -5,10 +5,10 @@ title: Agendar projetos
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: ebdbfcb4a512c8810364693fc3c2504f958bc986
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 88%
+source-wordcount: '912'
+ht-degree: 86%
 
 ---
 
@@ -83,7 +83,7 @@ O Gerenciador de agendamento de projetos mostra os itens criados por um usuário
 
 >[!NOTE]
 >
->A opção de proteger com senha um projeto agendado aparece somente para clientes do CJA que compraram o produto complementar [Healthcare Shield](https://business.adobe.com/br/solutions/experience-cloud-for-healthcare.html).
+>A opção de proteger com senha um projeto agendado aparece somente para clientes do Customer Journey Analytics que compraram o [Healthcare Shield](https://business.adobe.com/br/solutions/experience-cloud-for-healthcare.html) produto complementar.
 
 A Adobe usa a senha para criptografar projetos agendados, sejam eles enviados nos formatos .pdf ou .csv.
 

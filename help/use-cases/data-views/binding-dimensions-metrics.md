@@ -1,17 +1,17 @@
 ---
-title: Uso de dimensões e métricas de ligação no CJA
+title: Uso de dimensões e métricas de ligação no Customer Journey Analytics
 description: Atribua dimensões a arrays de objetos para análise de persistência complexa.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: 71c633f259b25f30d474ab19f714935b074dfc0c
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 91%
+source-wordcount: '1343'
+ht-degree: 84%
 
 ---
 
 
-# Uso de dimensões e métricas de ligação no CJA
+# Uso de dimensões e métricas de ligação no Customer Journey Analytics
 
 O Customer Journey Analytics oferece várias maneiras de persistir valores de dimensão além da ocorrência em que estão definidos. Um dos métodos de persistência que a Adobe oferece é conhecido como Ligação. Em versões anteriores do Adobe Analytics, esse conceito era conhecido como merchandising.
 
@@ -19,7 +19,7 @@ Embora você possa usar dimensões de ligação com dados de evento de nível su
 
 ## Exemplo 1: uso de dimensões de ligação para conceder atributos de produto adicionais a uma compra
 
-É possível vincular itens de dimensão em uma matriz de objetos a outra dimensão. Quando o item de dimensão vinculado é exibido, o CJA recupera a dimensão vinculada e a inclui no evento para você. Considere a seguinte jornada do cliente:
+É possível vincular itens de dimensão em uma matriz de objetos a outra dimensão. Quando o item de dimensão vinculado é exibido, o Customer Journey Analytics recupera a dimensão vinculada e a inclui no evento para você. Considere a seguinte jornada do cliente:
 
 1. Um visitante visualiza a página de produto de uma máquina de lavar.
 
@@ -82,7 +82,7 @@ Você pode acessar o gerenciador de visualização de dados e vincular a cor do 
 
 ![Dimensão de ligação](../assets/binding-dimension.png)
 
-Ao definir esse modelo de persistência, o CJA anota o nome do produto sempre que a cor do produto é definida. Quando o mesmo nome de produto é reconhecido em um evento subsequente para essa pessoa, a cor do produto também é trazida. Ao vincular a cor do produto ao nome do produto, os mesmos dados seriam semelhantes ao seguinte:
+Ao definir esse modelo de persistência, o Customer Journey Analytics anota o nome do produto sempre que a cor do produto é definida. Quando o mesmo nome de produto é reconhecido em um evento subsequente para essa pessoa, a cor do produto também é trazida. Ao vincular a cor do produto ao nome do produto, os mesmos dados seriam semelhantes ao seguinte:
 
 | product.color | receita |
 | --- | --- |
@@ -263,7 +263,7 @@ No Analysis Workspace, o relatório resultante seria semelhante ao seguinte:
 | raquete de tênis | US$ 34,99 |
 | sapatos | US$ 79,99 |
 
-O CJA detecta automaticamente a relação entre a dimensão selecionada e a dimensão de ligação. Se a dimensão de ligação estiver em uma matriz de objetos enquanto a dimensão selecionada estiver em um nível superior, será necessária uma métrica de ligação. Uma métrica de ligação atua como um acionador de uma dimensão de ligação, de modo que se vincula apenas aos eventos em que a métrica de ligação está presente. Neste exemplo de implementação acima, a página de resultados da pesquisa sempre inclui uma dimensão de termo de pesquisa e uma métrica de pesquisa.
+O Customer Journey Analytics detecta automaticamente a relação entre a dimensão selecionada e a dimensão de ligação. Se a dimensão de ligação estiver em uma matriz de objetos enquanto a dimensão selecionada estiver em um nível superior, será necessária uma métrica de ligação. Uma métrica de ligação atua como um acionador de uma dimensão de ligação, de modo que se vincula apenas aos eventos em que a métrica de ligação está presente. Neste exemplo de implementação acima, a página de resultados da pesquisa sempre inclui uma dimensão de termo de pesquisa e uma métrica de pesquisa.
 
 Definir a dimensão do termo de pesquisa para esse modelo de persistência executa a seguinte lógica:
 
@@ -353,7 +353,7 @@ O Analysis Workspace atribuiria corretamente o segundo episódio de Orangey ao t
 
 ## Exemplo 4: avaliar o comportamento de navegação versus comportamento de pesquisa em uma configuração de varejo
 
-É possível vincular valores a dimensões definidas em eventos anteriores. Quando uma variável com uma dimensão de vínculo é definida, o CJA leva em consideração o valor persistente. Se esse comportamento for indesejado, é possível ajustar as configurações de persistência da dimensão de vínculo. Considere o exemplo a seguir em que o `product_finding_method` é definido em um evento e vinculado à métrica Adições ao carrinho no evento a seguir.
+É possível vincular valores a dimensões definidas em eventos anteriores. Ao definir uma variável com uma dimensão de vínculo, o Customer Journey Analytics leva em consideração o valor persistente. Se esse comportamento for indesejado, é possível ajustar as configurações de persistência da dimensão de vínculo. Considere o exemplo a seguir em que o `product_finding_method` é definido em um evento e vinculado à métrica Adições ao carrinho no evento a seguir.
 
 1. Um visitante pesquisa por `"camera"`. Observe que nenhum produto está definido nesta página.
 

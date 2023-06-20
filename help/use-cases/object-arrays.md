@@ -1,21 +1,21 @@
 ---
 title: Uso de arrays de objetos
-description: Entenda como o CJA cria relatórios sobre hierarquias de dados.
+description: Entenda como o Customer Journey Analytics cria relatórios sobre hierarquias de dados.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 86%
+source-wordcount: '445'
+ht-degree: 66%
 
 ---
 
 # Uso de arrays de objetos
 
-Alguns esquemas da plataforma podem ter arrays de objetos. O CJA oferece suporte à assimilação e ao relatório de arrays de objetos nos dados de evento, pesquisa e perfil. Um dos exemplos mais comuns seria um carrinho de compras, que contém vários produtos. Cada produto tem um nome, SKU, categoria, preço, quantidade e qualquer outra dimensão que você quiser rastrear. Todas essas facetas têm requisitos separados, mas todos devem se encaixar na mesma ocorrência.
+Alguns esquemas da plataforma podem ter arrays de objetos. A Adobe Customer Journey Analytics oferece suporte à assimilação e aos relatórios de arrays de objetos em dados de evento, pesquisa e perfil. Um dos exemplos mais comuns seria um carrinho de compras, que contém vários produtos. Cada produto tem um nome, SKU, categoria, preço, quantidade e qualquer outra dimensão que você quiser rastrear. Todas essas facetas têm requisitos separados, mas todos devem se encaixar na mesma ocorrência.
 
-Em versões anteriores do Adobe Analytics, esse recurso era realizado usando a variável `products`. Era uma string concatenada separada por ponto-e-vírgula (`;`) para separar facetas de um produto, enquanto vírgulas (`,`) delineavam produtos. Era a única variável com suporte limitado a &quot;arrays de objetos&quot;. Variáveis multivalor, como variáveis de listas, podem oferecer suporte ao equivalente a arrays, mas não a &quot;arrays de objetos&quot;. O CJA amplia esse conceito ao oferecer suporte arbitrariamente a hierarquias profundas em uma única linha de dados, um recurso indisponível em qualquer versão anterior do Adobe Analytics.
+Em versões anteriores do Adobe Analytics, esse recurso era realizado usando a variável `products`. Era uma string concatenada separada por ponto-e-vírgula (`;`) para separar facetas de um produto, enquanto vírgulas (`,`) delineavam produtos. Era a única variável com suporte limitado a &quot;arrays de objetos&quot;. Variáveis multivalor, como variáveis de listas, podem oferecer suporte ao equivalente a arrays, mas não a &quot;arrays de objetos&quot;. O Customer Journey Analytics expande esse conceito ao oferecer suporte arbitrariamente a hierarquias profundas em uma única linha de dados, um recurso indisponível em qualquer versão anterior do Adobe Analytics.
 
 ## Mesmo exemplo de evento
 
@@ -91,7 +91,7 @@ Usando apenas o evento acima, as tabelas a seguir mostram os relatórios do Work
 | `LG Dryer 2000` | `1` | `500` |
 | `Total` | `1` | `2100` |
 
-O CJA observa seletivamente a dimensão e as métricas do objeto com base na tabela.
+O Customer Journey Analytics observa seletivamente a dimensão e as métricas do objeto com base na tabela.
 
 ```diff
 {
@@ -143,7 +143,7 @@ Se você quiser relatar apenas a receita da garantia, o projeto terá a seguinte
 | `extended` | `50` |
 | `Total` | `250` |
 
-O CJA observa essas partes do evento para gerar o relatório:
+O Customer Journey Analytics verifica essas partes do evento para gerar o relatório:
 
 ```diff
 {
@@ -245,7 +245,7 @@ Observe as ordens que não têm um nome vinculado a elas. Esses são os pedidos 
 
 ### Combinar métricas
 
-O CJA não combina nativamente métricas com nomes semelhantes se estiverem em níveis de objeto diferentes.
+O Customer Journey Analytics não combina nativamente métricas com nomes semelhantes se estiverem em níveis de objeto diferentes.
 
 | `product : category` | `product : revenue` | `product : warranty : revenue` |
 | --- | --- | --- |

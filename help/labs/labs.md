@@ -3,16 +3,16 @@ title: Guia do usuário do Labs
 description: Visualizar projetos de protótipo do Customer Journey Analytics
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 90%
 
 ---
 
 # Guia do usuário do [!UICONTROL Labs]
 
-O [!UICONTROL Labs] permite a prototipagem mais rápida de ideias em fase inicial. É uma combinação de ferramentas e processos que acelera o desenvolvimento de forma transparente, com foco no cliente. Isso permite que os usuários se envolvam com tecnologias emergentes, descubram informações valiosas e influenciem o desenvolvimento e as prioridades de recursos futuros. Você pode usar o Labs para obter acesso antecipado às inovações do Customer Journey Analytics (CJA) e avaliar os recursos futuros no contexto de casos de uso e dados de sua empresa.
+O [!UICONTROL Labs] permite a prototipagem mais rápida de ideias em fase inicial. É uma combinação de ferramentas e processos que acelera o desenvolvimento de forma transparente, com foco no cliente. Isso permite que os usuários se envolvam com tecnologias emergentes, descubram informações valiosas e influenciem o desenvolvimento e as prioridades de recursos futuros. Você pode usar o Labs para obter acesso antecipado às inovações da Adobe Customer Journey Analytics e avaliar os recursos futuros no contexto de casos de uso e dados de sua empresa.
 
 ## Requisitos
 
@@ -26,7 +26,7 @@ Para acessar o [!UICONTROL Labs]:
 
 1. Caso ainda não tenha acesso ao [!UICONTROL Workspace] e ao [!UICONTROL Labs], peça as credenciais ao seu administrador.
 
-1. No CJA, clique na guia **[!UICONTROL Labs]**.
+1. No Customer Journey Analytics, clique no botão **[!UICONTROL Labs]** guia.
 
 ## Avaliar um protótipo
 
@@ -64,7 +64,7 @@ Para iniciar e avaliar um protótipo:
 
 1. Clique em **[!UICONTROL Enviar]** para retornar ao portal Visualizações principal.
 
-## Protótipos do CJA Labs
+## Protótipos do Customer Journey Analytics Labs
 
 * Gerador de insight em linguagem natural: fornece um resumo em linguagem natural de quaisquer dados que você esteja analisando em uma tabela de forma livre.
 * Recomendação de visualização: recomenda visualizações que se emparelhem bem com seus dados.

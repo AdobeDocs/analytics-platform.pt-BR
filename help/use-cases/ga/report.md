@@ -4,10 +4,10 @@ description: Mostra relatórios úteis sobre dados do Google Analytics no Custom
 exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 92%
+source-wordcount: '684'
+ht-degree: 86%
 
 ---
 
@@ -47,7 +47,7 @@ A tabela de coorte permite ver quanto tempo os usuários normalmente levam para 
 
 ## Usar atribuição de marketing avançada
 
-O CJA permite usar modelos de atribuição sofisticados em seus dados de canais. No exemplo a seguir, é possível ver uma comparação da aplicação de Último contato, primeiro contato, forma de u e atribuição algorítmica de receita à dimensão Agrupamento de canal do Google Analytics.
+O Customer Journey Analytics permite usar modelos de atribuição sofisticados em dados entre canais. No exemplo a seguir, é possível ver uma comparação da aplicação de Último contato, primeiro contato, forma de u e atribuição algorítmica de receita à dimensão Agrupamento de canal do Google Analytics.
 
 ![Atribuição de marketing](../assets/mktg-attribution.png)
 
@@ -63,6 +63,6 @@ Você também pode atribuir sua receita da Web e do aplicativo ao seu conteúdo 
 
 ![Anúncio do Google](../assets/google-ad.png)
 
-Neste exemplo, a combinação de conjuntos de dados no CJA permite observar que anúncios online estavam tendo certo impacto nas compras de produtos pelo aplicativo móvel. A visualização a seguir mostra que a receita do aplicativo móvel proveniente do Google Ads representa US$ 14 mil a US$ 15 mil adicionais em comparação à receita da Web isoladamente.
+Neste exemplo, a combinação de conjuntos de dados no Customer Journey Analytics permite observar que anúncios online estavam tendo qualquer impacto nos produtos comprados no aplicativo móvel. A visualização a seguir mostra que a receita do aplicativo móvel proveniente do Google Ads representa US$ 14 mil a US$ 15 mil adicionais em comparação à receita da Web isoladamente.
 
 ![Google ad 2](../assets/google-ad2.png)

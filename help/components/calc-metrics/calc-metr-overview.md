@@ -3,10 +3,10 @@ title: Visão geral das métricas calculadas
 description: Saiba mais sobre métricas filtradas derivadas do tempo de execução do relatório.
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 92%
+source-wordcount: '461'
+ht-degree: 90%
 
 ---
 
@@ -39,10 +39,10 @@ Veja uma comparação entre os recursos de Métricas calculadas e Métricas calc
 | Ferramenta | Capacidades |
 |--- |--- |
 | Construtor de métrica calculada | <ul><li>Crie métricas calculadas e calculadas avançadas usando modelos de alocação avançados.</li><li>Adicionar filtros em linha às fórmulas de métricas.</li><li>Comparar filtros em um mesmo relatório. Por exemplo, compare pessoas locais com pessoas internacionais.</li><li>Usar funções estatísticas.</li><li> Fornecer descrições de métricas detalhadas (mostrar o que ela faz, quando usá-la, quando NÃO usá-la).</li><li>Copiar definições em novas métricas.</li><li>Fornecer uma visualização da métrica em linha.</li><li>Definir a polaridade da métrica, que indica se ela é boa ou ruim caso um determinado evento personalizado (métrica) apresente uma tendência para cima.</li><li>Adicionar tags às métricas.</li></ul> |
-| Gerenciador de métrica calculada | <ul><li>Compartilhar métricas com outras pessoas.</li><li>Aprovar e controlar métricas.</li><li>Organizar (marcar com tags) suas métricas de forma que as pessoas possam encontrá-las.</li><li>Excluir métricas.</li><li>Renomear as métricas.</li></ul> |
-| API para métricas calculadas | Parte do conjunto de API do CJA. |
+| Gerenciador de métricas calculadas | <ul><li>Compartilhar métricas com outras pessoas.</li><li>Aprovar e controlar métricas.</li><li>Organizar (marcar com tags) suas métricas de forma que as pessoas possam encontrá-las.</li><li>Excluir métricas.</li><li>Renomear as métricas.</li></ul> |
+| API para métricas calculadas | Parte do conjunto de APIs do Customer Journey Analytics. |
 
-## Modelos de métricas calculadas no CJA
+## Modelos de métricas calculadas no Customer Journey Analytics
 
 | Nome da métrica calculada | Descrição da métrica calculada |
 | --- | --- |

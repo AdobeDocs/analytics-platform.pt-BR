@@ -4,9 +4,9 @@ description: Configure como uma métrica é formatada.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: a3fea05ac95407c7f3bee723a267ae0bc03d334a
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '493'
 ht-degree: 32%
 
 ---
@@ -51,7 +51,7 @@ Para exibir uma moeda para uma métrica:
 
 Para ativar a conversão de uma moeda para uma métrica:
 
-- Configure sua conexão do CJA para conter pelo menos um conjunto de dados de evento que contenha uma dimensão de código de moeda para cada evento que contenha uma métrica de moeda. Essa dimensão de código monetário usa um código monetário alfabético em conformidade com a [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) padrão para representação de moedas. Por exemplo, USD por $, EUR por €, GBP por £.
+- Configure sua conexão Customer Journey Analytics para conter pelo menos um conjunto de dados de evento que contenha uma dimensão de código de moeda para cada evento que contenha uma métrica de moeda. Essa dimensão de código monetário usa um código monetário alfabético em conformidade com a [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) padrão para representação de moedas. Por exemplo, USD por $, EUR por €, GBP por £.
 
 - Você aplicou (opcionalmente) a variável [!UICONTROL Código de moeda] rótulo de contexto para uma ou mais dimensões que definem códigos monetários disponíveis em seu conjunto de dados.
 

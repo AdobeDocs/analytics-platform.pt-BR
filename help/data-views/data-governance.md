@@ -1,23 +1,23 @@
 ---
 title: Rótulos e políticas
-description: Saiba como os rótulos e políticas de dados definidos na AEP afetam as visualizações de dados e os relatórios no CJA.
+description: Saiba como os rótulos e políticas de dados definidos no Adobe Experience Platform afetam as visualizações de dados e os relatórios no Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
-source-git-commit: ba4b1e61891c21610e3bd84a41581b1f6cea6234
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 79%
+source-wordcount: '486'
+ht-degree: 60%
 
 ---
 
 # Rótulos e políticas
 
-Ao criar um conjunto de dados na Experience Platform, você pode criar [rótulos de uso de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=pt-BR) para alguns ou todos os elementos no conjunto de dados. Você pode visualizar esses rótulos e políticas no CJA.
+Ao criar um conjunto de dados na Experience Platform, você pode criar [rótulos de uso de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/reference.html?lang=pt-BR) para alguns ou todos os elementos no conjunto de dados. Você pode visualizar esses rótulos e políticas no Customer Journey Analytics.
 
-Os seguintes rótulos são de especial interesse para o CJA:
+Os seguintes rótulos são de especial interesse para o Customer Journey Analytics:
 
 * O rótulo `C8` - **[!UICONTROL Sem medição]**. Esse rótulo significa que os dados não podem ser usados para análises nos sites ou aplicativos de sua organização.
 
-* O rótulo `C12` - **[!UICONTROL Nenhuma exportação de dados gerais]**. Campos de esquema rotulados dessa maneira não podem ser exportados ou baixados do CJA (por meio de relatórios, exportação, API etc.)
+* O rótulo `C12` - **[!UICONTROL Nenhuma exportação de dados gerais]**. Campos de esquema rotulados dessa maneira não podem ser exportados ou baixados do Customer Journey Analytics (por meio de relatórios, exportação, API etc.)
 
 >[!NOTE]
 >
@@ -25,12 +25,12 @@ Os seguintes rótulos são de especial interesse para o CJA:
 
 A rotulação por si só não significa que esses rótulos de uso de dados serão aplicados. É para isso que as políticas são usadas. Você cria suas políticas por meio da [API de serviço de política](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=pt-BR) na Experience Platform.
 
-Duas políticas definidas pela Adobe são exibidas no CJA e afetam os relatórios e o download/compartilhamento:
+Duas políticas definidas por Adobe são exibidas no Customer Journey Analytics e afetam os relatórios e o download/compartilhamento:
 
 * Política **[!UICONTROL Forçar análise]**
 * Política **[!UICONTROL Forçar download]**
 
-## Exibir rótulos de dados em visualizações de dados do CJA
+## Exibir rótulos de dados em visualizações de dados do Customer Journey Analytics
 
 Os rótulos de dados criados na Experience Platform são exibidos em três locais na interface das visualizações de dados:
 
@@ -52,7 +52,7 @@ Clique em **[!UICONTROL Aplicar]** para ver quais componentes têm rótulos anex
 
 ## Filtrar as políticas de governança de dados nas visualizações de dados
 
-É possível verificar se está ativada uma política que bloqueia o uso de determinados elementos de visualização de dados do CJA para fins de análise ou exportação.
+É possível verificar se está ativada uma política que bloqueia o uso de determinados elementos de visualização de dados Customer Journey Analytics para fins de análise ou exportação.
 
 Novamente, clique no link [!UICONTROL filtro] no painel à esquerda e em **[!UICONTROL Governança de dados]**, clique em **[!UICONTROL Políticas]**:
 

@@ -4,9 +4,9 @@ title: Legendas inteligentes
 feature: Visualizations
 role: User, Admin
 exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
-source-git-commit: 48648a29b92ff81b98a7efa8f6f1cb3f49d4bf81
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ As legendas inteligentes são voltadas para:
 * Analistas que precisam de narrativas para compartilhar com outros usuários. Os analistas precisam desses insights para fornecer contexto aos usuários.
 * Usuários empresariais que desejam descobrir rapidamente as principais vantagens.
 
-As legendas estão disponíveis para todos os usuários do CJA e não exigem permissões especiais.
+As legendas estão disponíveis para todos os usuários de Customer Journey Analytics e não exigem permissões especiais.
 
 ## Iniciar legendas inteligentes {#launch}
 

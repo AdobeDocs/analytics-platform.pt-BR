@@ -4,9 +4,9 @@ title: Visão geral do dicionário de dados
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 9f1a96308fce7fb827cba43833df96098f05ef93
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '536'
 ht-degree: 67%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 O dicionário de dados do Analysis Workspace ajuda os usuários e administradores a acompanhar e compreender melhor os componentes em seu ambiente do Analytics.
 
-Os administradores do Analytics são responsáveis por preparar informações sobre cada componente no Dicionário de dados para torná-lo disponível aos usuários.
+Os administradores do Analytics são responsáveis por preparar informações sobre cada componente no dicionário de dados para disponibilizá-lo aos usuários.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on)
 
@@ -33,7 +33,7 @@ As informações disponíveis no dicionário de dados incluem:
 
 * Se um componente é aprovado pelo administrador do sistema
 
-Para obter informações sobre como acessar o Dicionário de dados e para obter detalhes sobre as informações que ele contém, consulte [Exibir informações do componente no Dicionário de dados](/help/components/data-dictionary/view-data-dictionary.md).
+Para obter informações sobre como acessar o dicionário de dados e obter detalhes sobre as informações que ele contém, consulte [Exibir informações do componente no Dicionário de dados](/help/components/data-dictionary/view-data-dictionary.md).
 
 ## Benefícios para administradores
 
@@ -47,11 +47,11 @@ Veja a seguir algumas das maneiras como os administradores do Analytics podem us
 
 * Identificar componentes que ainda não foram aprovados.
 
-* Atualizar as descrições dos componentes diretamente no Analysis Workspace. Todas as atualizações feitas nas descrições de componentes no Dicionário de dados são refletidas na visualização de dados.
+* Atualizar as descrições dos componentes diretamente no Analysis Workspace. Quaisquer atualizações feitas nas descrições do componente no Dicionário de dados são refletidas na visualização de dados.
 
-   Da mesma forma, todas as atualizações feitas nas descrições de componentes na visualização de dados são refletidas no Analysis Workspace.
+  Da mesma forma, todas as atualizações feitas nas descrições do componente na visualização de dados são refletidas no Analysis Workspace.
 
-   Para obter mais informações sobre como adicionar descrições de componentes no Analysis Workspace ou em uma visualização de dados, consulte [Adicionar descrições de componentes](/help/components/add-component-descriptions.md).
+  Para obter mais informações sobre como adicionar descrições de componentes no Analysis Workspace ou em uma visualização de dados, consulte [Adicionar descrições de componentes](/help/components/add-component-descriptions.md).
 
 ## Acessar o dicionário de dados
 
@@ -59,12 +59,12 @@ Você pode acessar o dicionário de dados de qualquer uma das seguintes maneiras
 
 * No ícone **Dicionário de dados** no painel esquerdo.
 
-   ![Ícone do dicionário de dados no painel esquerdo](assets/data-dictionary-access-icon.png)
+  ![Ícone do dicionário de dados no painel esquerdo](assets/data-dictionary-access-icon.png)
 
 * No ícone **Dicionário de dados** no popover de informações de um componente.
 
-   ![Ícone do dicionário de dados no popover de informações](assets/data-dictionary-access-infopopover.png)
-   <!--update screenshot; this was taken from a mock-->
+  ![Ícone do dicionário de dados no popover de informações](assets/data-dictionary-access-infopopover.png)
+  <!--update screenshot; this was taken from a mock-->
 
 * No menu: [!UICONTROL **Ajuda**] > [!UICONTROL **Dicionário de dados**].
 
@@ -72,9 +72,9 @@ Para obter informações detalhadas sobre as várias opções disponíveis no Di
 
 ## Atualizar e preparar o dicionário de dados
 
-Os administradores do Customer Journey Analytics são responsáveis por manter um Dicionário de dados saudável para sua organização, conforme descrito em [Monitorar integridade do dicionário de dados](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Os administradores do Customer Journey Analytics são responsáveis por manter um Dicionário de dados íntegro para sua organização, conforme descrito em [Monitorar Integridade do Dicionário de Dados](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-Como parte desse processo, os administradores do CJA podem editar informações sobre cada componente no dicionário de dados, conforme descrito em [Editar entradas de componente no Dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+Como parte desse processo, os administradores de Customer Journey Analytics podem editar informações sobre cada componente no dicionário de dados, conforme descrito em [Editar entradas de componentes no Dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## Mover, minimizar ou fechar o dicionário de dados
 
@@ -84,12 +84,12 @@ Você pode manipular a janela do dicionário de dados de qualquer uma das seguin
 
 * Arraste-a para qualquer área no Analysis Workspace
 
-   Se você fechar e reabrir o Analysis Workspace, a janela do dicionário de dados permanecerá no local para onde você a moveu pela última vez. <!--True?-->
+  Se você fechar e reabrir o Analysis Workspace, a janela do dicionário de dados permanecerá no local para onde você a moveu pela última vez. <!--True?-->
 
 * Minimize-o
 
-   Quando minimizado, o dicionário de dados aparece como uma guia azul no canto inferior direito do Analysis Workspace.
+  Quando minimizado, o dicionário de dados aparece como uma guia azul no canto inferior direito do Analysis Workspace.
 
-   Ao selecionar a guia azul, o dicionário de dados é aberto no componente que você estava visualizando recentemente.
+  Ao selecionar a guia azul, o dicionário de dados é aberto no componente que você estava visualizando recentemente.
 
 * Feche-o

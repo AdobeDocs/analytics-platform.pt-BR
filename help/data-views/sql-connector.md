@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 badgeCJASQLConnector: label="New Feature" type="Positive"
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: f3dba7bac92cbda3285fe53a8961065e9bbbf972
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2900'
-ht-degree: 2%
+source-wordcount: '2938'
+ht-degree: 1%
 
 ---
 
@@ -18,38 +18,38 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-A variável [!DNL Customer Journey Analytics (CJA) SQL Connector] habilita o acesso SQL ao [visualizações de dados](./data-views.md) definido no CJA. Seus engenheiros de dados e analistas podem estar mais familiarizados com o Power BI, o Tableau ou outras ferramentas de business intelligence e visualização (mais conhecidas como ferramentas de BI). Agora é possível criar relatórios e painéis com base nas mesmas visualizações de dados que os usuários do CJA estão usando ao criar seus projetos do Analysis Workspace.
+A variável [!DNL Customer Journey Analytics SQL Connector] habilita o acesso SQL ao [visualizações de dados](./data-views.md) que você definiu no Customer Journey Analytics. Seus engenheiros de dados e analistas podem estar mais familiarizados com o Power BI, o Tableau ou outras ferramentas de business intelligence e visualização (mais conhecidas como ferramentas de BI). Agora é possível criar relatórios e painéis com base nas mesmas visualizações de dados que os usuários do Customer Journey Analytics estão usando ao criar seus projetos do Analysis Workspace.
 
-Adobe Experience Platform [Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) é a interface SQL para dados disponíveis no data lake do Experience Platform. Com o [!DNL CJA SQL Connector] ativada, a funcionalidade de [!DNL Query Service] é estendido para ver suas visualizações de dados do CJA como tabelas ou visualizações em uma [!DNL Query Service] sessão. Como resultado, as ferramentas de business intelligence que usam [!DNL Query Service] como sua interface PostgresSQL se beneficiam perfeitamente dessa funcionalidade estendida.
+Adobe Experience Platform [Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) é a interface SQL para dados disponíveis no data lake do Experience Platform. Com o [!DNL Customer Journey Analytics SQL Connector] ativada, a funcionalidade de [!DNL Query Service] é estendido para ver suas visualizações de dados de Customer Journey Analytics como tabelas ou visualizações em um [!DNL Query Service] sessão. Como resultado, as ferramentas de business intelligence que usam [!DNL Query Service] como sua interface PostgresSQL se beneficiam perfeitamente dessa funcionalidade estendida.
 
 Os principais benefícios são:
 
-- Não é necessário recriar uma representação equivalente das visualizações de dados do CJA na própria ferramenta de BI. <br/>Consulte [Visualização de dados](data-views.md) para obter mais informações sobre a funcionalidade das Visualizações de dados para entender o que deve ser recriado.<br/>
+- Não é necessário recriar uma representação equivalente de visualizações de dados do Customer Journey Analytics na própria ferramenta de BI. <br/>Consulte [Visualização de dados](data-views.md) para obter mais informações sobre a funcionalidade das Visualizações de dados para entender o que deve ser recriado.<br/>
 
-- Maior consistência em relatórios e análises entre as ferramentas de BI e o CJA.
+- Maior consistência na emissão de relatórios e análise entre as ferramentas de BI e o Customer Journey Analytics.
 
-- Combine dados do CJA com outras fontes de dados já disponíveis nas ferramentas de BI.
+- Combine dados de Customer Journey Analytics com outras fontes de dados já disponíveis nas ferramentas de BI.
 
 ## Pré-requisitos 
 
 Para usar essa funcionalidade, é necessário
 
-<!---   Enable the [!UICONTROL CJA SQL Connector] in your Experience Platform organization. -->
+<!---   Enable the [!UICONTROL Customer Journey Analytics SQL Connector] in your Experience Platform organization. -->
 
 - Configure a funcionalidade dos perfis de produto, grupos de usuários e/ou usuários individuais relevantes.<br/>
 Os usuários devem ter acesso a:
    - Serviço de consulta Experience Platform,
-   - Projetos do CJA Workspace e
-   - Visualizações de dados do CJA que eles desejam usar.
+   - projetos do Customer Journey Analytics Workspace e
+   - Visualizações de dados do Customer Journey Analytics que eles desejam usar.
 
-- Use a expiração em credenciais sem expiração para conectar as ferramentas de BI ao Conector SQL do CJA. Terceiro [Guia de credenciais](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) O fornece mais informações sobre como definir credenciais que estão ou não expirando.
+- Use a expiração em credenciais sem expiração para conectar as ferramentas de BI ao Customer Journey Analytics SQL Connector. Terceiro [Guia de credenciais](https://experienceleague.adobe.com/docs/experience-platform/query/ui/credentials.html?lang=en) O fornece mais informações sobre como definir credenciais que estão ou não expirando.
 
-Consulte [Controle de acesso](../admin/cja-access-control.md) na seção Administração do CJA para obter mais informações.
+Consulte [Controle de acesso](../admin/cja-access-control.md) na seção Administração do Customer Journey Analytics para obter mais informações.
 
 
 ## Uso
 
-Para usar o [!DNL CJA SQL Connector] você pode usar o SQL diretamente ou usar a experiência de arrastar e soltar disponível na ferramenta de BI específica.
+Para usar o [!DNL Customer Journey Analytics SQL Connector] você pode usar o SQL diretamente ou usar a experiência de arrastar e soltar disponível na ferramenta de BI específica.
 
 ### SQL
 
@@ -89,7 +89,7 @@ Consulte [Guia da interface do Editor de consultas](https://experienceleague.ado
 
 ### Ferramentas de BI
 
-Atualmente, o Conector SQL do CJA é compatível e testado somente para Power BI e Tableau. Outras ferramentas de BI que usam a interface PSQL também podem funcionar, mas ainda não são oficialmente compatíveis.
+Atualmente, o Customer Journey Analytics SQL Connector é compatível e testado somente para Power BI e Tableau. Outras ferramentas de BI que usam a interface PSQL também podem funcionar, mas ainda não são oficialmente compatíveis.
 
 +++ Power BI
 
@@ -120,7 +120,9 @@ Atualmente, o Conector SQL do CJA é compatível e testado somente para Power BI
       3. Quando solicitado **[!UICONTROL ** Conectividade de dados **]** selecione **[!UICONTROL ** DirectQuery **]** para garantir que as estruturas de dados sejam niveladas corretamente.
 
       4. Você será solicitado a fazer **[!UICONTROL ** Nome de usuário **]** e **[!UICONTROL ** Senha **]**. Usar os parâmetros equivalentes de consultas Experience Platform [!UICONTROL Credenciais].
-   5. Power BI Após o logon bem-sucedido, as tabelas de Visualização de dados do CJA aparecem no **[!UICONTROL ** Navegador **]**. As tabelas de Visualizações de dados são identificadas usando `dv_` em seu nome.
+
+
+   5. Após o login bem-sucedido, as tabelas de Visualização de dados do Customer Journey Analytics Power BI aparecem no **[!UICONTROL ** Navegador **]**. As tabelas de Visualizações de dados são identificadas usando `dv_` em seu nome.
 
 
    6. Selecione as tabelas de visualização de dados que deseja usar e selecione **[!UICONTROL ** Carregar **]**.
@@ -164,7 +166,8 @@ Atualmente, o Conector SQL do CJA é compatível e testado somente para Power BI
       6. Colar **[!UICONTROL ** Senha **]** parâmetro de consultas Experience Platform [!UICONTROL Credenciais] em **[!UICONTROL ** Senha **]** campo de texto.
 
       7. Selecionar **[!UICONTROL ** Conectar **]**.
-   4. As visualizações de dados do CJA são exibidas como tabelas na **[!UICONTROL ** Tabela **]** lista. As tabelas de visualização de dados recebem o prefixo `dv_`.
+
+   4. As visualizações de dados do Customer Journey Analytics são exibidas como tabelas no **[!UICONTROL ** Tabela **]** lista. As tabelas de visualização de dados recebem o prefixo `dv_`.
 
    5. Arraste as tabelas que deseja usar na tela de desenho.
 
@@ -184,9 +187,9 @@ Se quiser usar as IDs de visualização de dados como nomes de tabela, você pod
 
 ### Governança de dados
 
-As configurações relacionadas à governança de dados no Customer Journey Analytics são herdadas do Adobe Experience Platform. A integração do CJA com a Governança de dados da Adobe Experience Platform permite rotular dados sigilosos do CJA e aplicar políticas de privacidade.
+As configurações relacionadas à governança de dados no Customer Journey Analytics são herdadas do Adobe Experience Platform. A integração entre o Customer Journey Analytics e o Adobe Experience Platform Data Governance permite rotular dados de Customer Journey Analytics confidenciais e aplicar políticas de privacidade.
 
-Os rótulos e políticas de privacidade que foram criados em conjuntos de dados consumidos pela Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do CJA. Portanto, os dados consultados usando o Conector SQL do CJA mostram avisos ou erros apropriados quando não estão em conformidade com os rótulos e políticas de privacidade definidos.
+Os rótulos e políticas de privacidade que foram criados em conjuntos de dados consumidos pelo Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do Customer Journey Analytics. Portanto, os dados consultados usando o Customer Journey Analytics SQL Connector mostram avisos ou erros apropriados quando não estão em conformidade com os rótulos e políticas de privacidade definidos.
 
 ### Listar visualizações de dados
 
@@ -227,16 +230,16 @@ Consulte a tabela abaixo para obter exemplos do SQL que você pode usar.
 | Padrão | Exemplo |
 |---|---|
 | Descoberta de esquema | <pre>SELECIONE * DE dv1 ONDE 1=0</pre> |
-| Classificado/Analisado | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  AND (dim2 = &#39;A&#39; OU dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
-| Cláusula HAVING | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>COM m1 > 100</pre> |
-| Distinto, início <br/>valores de dimensão | <pre>SELECIONAR dim1 DISTINTA DE dv1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\` >= &#39;01-01-2022&#39; E \`timestamp\` &lt; &#39;02-01-2022&#39;<br/>GROUP BY dim1<br/>ORDENAR POR SOMA(metric1)<br/>LIMITE 15</pre> |
-| Totais de métricas | <pre>SELECT SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</pre> |
-| Multidimensão<br/>detalhamentos<br/>e top-distints | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 1, 2<br/>FAÇA SEU PEDIDO POR 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>DE dv1</pre> |
-| Subselecionar:<br/>Resultado adicional<br/>filtragem | <pre>SELECT dim1, m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>ONDE dim1 em (&#39;A&#39;, &#39;B&#39;)</pre> |
-| Subselecionar:<br/>Associando-se a<br/>conjunto de dados não está em<br/>CJA | <pre>SELECIONE b.key, a.dim1, a.m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/>a)<br/>Pesquisas de JUNÇÃO À ESQUERDA b EM a.dim1 = b.key</pre> |
-| Subselecionar:<br/>Consulta cruzada<br/>visualizações de dados | <pre>Chave SELECT, SOMA(m1) AS total<br/>DE (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNIÃO<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  DE dv2<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>Chave GROUP BY<br/>TOTAL DE ORDER BY</pre> |
-| Subselecionar: <br/>Origem em camadas, <br/>filtragem, <br/>e agregação | Em camadas usando subseleções:<br><pre>SELECIONAR linhas.dim1, SUM(linhas.m1) AS total<br/>DE (<br/>  SELECT \_.dim1,\_.m1<br/>  DE (<br/>    SELECIONAR \* DE dv1<br/>    ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  ) \_<br/>  ONDE \_.dim1 em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) linhas<br/>AGRUPAR POR 1<br/>TOTAL DE ORDER BY</pre><br/>Camadas que usam CTE COM:<br/><pre>COM linhas AS (<br/>  COM \_ COMO (<br/>    SELECT * FROM data_ares<br/>    ONDE \`timestamp\` ENTRE &#39;2021-01-01&#39; E &#39;2021-02-01&#39;<br/>  )<br/>  SELECT _.item, _.unidades FROM _<br/>  ONDE _.item NÃO É NULO<br/>)<br/>SELECIONAR linhas.item, SUM(linhas.unidades) AS unidades<br/>LINHAS DE ONDE rows.item em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
-| Seleciona onde as<br/>as métricas vêm antes<br/> ou misturados com<br/>as dimensões | <pre>SELECT SUM(metric1) AS m1, dim1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 2</pre> |
+| Classificado/Analisado | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  AND (dim2 = &#39;A&#39; OU dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
+| Cláusula HAVING | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>COM m1 > 100</pre> |
+| Distinto, início <br/>valores de dimensão | <pre>SELECIONAR dim1 DISTINTA DE dv1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\` >= &#39;01-01-2022&#39; E \`timestamp\` &lt; &#39;02-01-2022&#39;<br/>GROUP BY dim1<br/>ORDENAR POR SOMA(metric1)<br/>LIMITE 15</pre> |
+| Totais de métricas | <pre>SELECT SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</pre> |
+| Multidimensão<br/>detalhamentos<br/>e top-distints | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 1, 2<br/>FAÇA SEU PEDIDO POR 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>DE dv1</pre> |
+| Subselecionar:<br/>Resultado adicional<br/>filtragem | <pre>SELECT dim1, m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>ONDE dim1 em (&#39;A&#39;, &#39;B&#39;)</pre> |
+| Subselecionar:<br/>Associando-se a<br/>conjunto de dados não está em<br/>Customer Journey Analytics | <pre>SELECIONE b.key, a.dim1, a.m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/>a)<br/>Pesquisas de JUNÇÃO À ESQUERDA b EM a.dim1 = b.key</pre> |
+| Subselecionar:<br/>Consulta cruzada<br/>visualizações de dados | <pre>Chave SELECT, SOMA(m1) AS total<br/>DE (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNIÃO<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  DE dv2<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>Chave GROUP BY<br/>TOTAL DE ORDER BY</pre> |
+| Subselecionar: <br/>Origem em camadas, <br/>filtragem, <br/>e agregação | Em camadas usando subseleções:<br><pre>SELECIONAR linhas.dim1, SUM(linhas.m1) AS total<br/>DE (<br/>  SELECT \_.dim1,\_.m1<br/>  DE (<br/>    SELECIONAR \* DE dv1<br/>    ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  ) \_<br/>  ONDE \_.dim1 em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) linhas<br/>AGRUPAR POR 1<br/>TOTAL DE ORDER BY</pre><br/>Camadas que usam CTE COM:<br/><pre>COM linhas AS (<br/>  COM \_ COMO (<br/>    SELECT * FROM data_ares<br/>    ONDE \`timestamp\&#39; ENTRE &#39;2021-01-01&#39; E &#39;2021-02-01&#39;<br/>  )<br/>  SELECT _.item, _.unidades FROM _<br/>  ONDE _.item NÃO É NULO<br/>)<br/>SELECIONAR linhas.item, SUM(linhas.unidades) AS unidades<br/>LINHAS DE ONDE rows.item em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
+| Seleciona onde as<br/>as métricas vêm antes<br/> ou misturados com<br/>as dimensões | <pre>SELECT SUM(metric1) AS m1, dim1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 2</pre> |
 
 {style="table-layout:auto"}
 
@@ -268,7 +271,7 @@ Você pode utilizar:
 
 #### Contagem distinta
 
-Devido à natureza subjacente de como o CJA funciona, a única dimensão para a qual você pode obter uma contagem distinta exata é a `adobe_personid` dimensão. As seguintes instruções SQL `SELECT COUNT(DISTINCT adobe_personid)` ou `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` retorna o valor da métrica de pessoas padrão, que é a contagem de pessoas distintas. Para outras dimensões, uma contagem distinta aproximada é retornada.
+Devido à natureza subjacente de como o Customer Journey Analytics funciona, a única dimensão para a qual você pode obter uma contagem distinta exata é a `adobe_personid` dimensão. As seguintes instruções SQL `SELECT COUNT(DISTINCT adobe_personid)` ou `SELECT APPROX_COUNT_DISTINCT(adobe_personid)` retorna o valor da métrica de pessoas padrão, que é a contagem de pessoas distintas. Para outras dimensões, uma contagem distinta aproximada é retornada.
 
 #### Métricas condicionais
 

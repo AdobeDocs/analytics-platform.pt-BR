@@ -1,17 +1,17 @@
 ---
-source-git-commit: 7c3bbe2829c83406b2e6824e509c34459ae00f94
-workflow-type: ht
-source-wordcount: '698'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '744'
+ht-degree: 63%
 
 ---
-# Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da AEP e o conector de origem do Analytics
+# Conjuntos de relatórios virtuais, visualizações de dados, sandboxes do Adobe Experience Platform e o conector de origem do Analytics
 
 A Adobe oferece uma variedade de meios para criar ambientes de relatórios virtuais e sandbox. É útil compreender as semelhanças e diferenças entre os seguintes recursos e como eles se relacionam com o [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR):
 
 * Conjuntos de relatórios virtuais do Adobe Analytics
-* Visualizações de dados do CJA
-* Sandboxes da AEP
+* Visualizações de dados do Customer Journey Analytics
+* sandboxes da Adobe Experience Platform
 
 ## Conjuntos de relatórios virtuais (VRS) do Adobe Analytics
 
@@ -33,46 +33,46 @@ Um conjunto de relatórios virtual não:
 
 * Fornece uma maneira de combinar conjuntos de relatórios.
 * Está disponível no Adobe Analytics Data Warehouse.
-* É disponibilizado como uma fonte para fluxos de dados na AEP por meio do Conector de origem do Analytics. Somente conjuntos de relatórios completos (não virtuais) estão disponíveis para uso com o Conector de origem do Analytics.
+* Disponível como origem de fluxos de dados na Adobe Experience Platform por meio do Conector de origem do Analytics. Somente conjuntos de relatórios completos (não virtuais) estão disponíveis para uso com o Conector de origem do Analytics.
 
 
-## Visualizações de dados do CJA
+## Visualizações de dados do Customer Journey Analytics
 
 Para obter mais informações, consulte: [Visão geral das visualizações de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=pt-BR).
 
 Uma visualização de dados:
 
-* Pode ser baseada em filtros do CJA.
+* Pode ser baseado em filtros de Customer Journey Analytics.
 * Pode ser aplicada a dados históricos e novos de maneira não destrutiva.
-* Permite criar uma ou várias visualizações virtuais sobre uma conexão do CJA para uso por diferentes equipes de negócios.
-* Pode ser usada para controlar o acesso e preparar diferentes tipos de dados para diferentes usuários no CJA.
-* Fornece eficientes opções não destrutivas para transformar e aprimorar dados que entram no CJA por meio de uma conexão do CJA.
-* É baseada nos recursos de processamento em tempo de relatório do CJA.
+* Permite criar uma ou várias visualizações virtuais sobre uma conexão Customer Journey Analytics para uso por diferentes equipes de negócios.
+* Pode ser usado para controlar o acesso e preparar diferentes tipos de dados para diferentes usuários no Customer Journey Analytics.
+* Fornece poderosas opções não destrutivas para transformar e aprimorar dados que entram no Customer Journey Analytics por meio de uma conexão Customer Journey Analytics.
+* É baseado nos recursos de processamento em tempo de relatório do Customer Journey Analytics.
 * Permite que os usuários criem uma definição personalizada para “sessão”.
-* É aplicada no tempo de execução do relatório, de modo semelhante à avaliação do filtro. Isso ocorre _após_ o Conector de origem (Adobe Analytics ou outro) gravar dados em um conjunto de dados no data lake da AEP e _após_ os dados serem assimilados no CJA por meio de uma conexão do CJA.
+* É aplicada no tempo de execução do relatório, de modo semelhante à avaliação do filtro. Isso é _após_ o Conector de origem (Adobe Analytics ou outro) gravou dados em um conjunto de dados no data lake da Adobe Experience Platform e _após_ os dados foram assimilados no Customer Journey Analytics por meio de uma conexão Customer Journey Analytics.
 * Permite um número ilimitado de variáveis, embora a curadoria possa limitar quais variáveis são expostas aos usuários
 * Permite nomear containers de Evento, Sessão e Pessoa personalizados.
 * Permite opções de calendário personalizadas.
 
 Uma visualização de dados não:
 
-* Fornece diretamente um meio de combinar conjuntos de relatórios ou outros conjuntos de dados. Em vez disso, os conjuntos de dados são combinados em uma conexão do CJA. Os dados combinados da conexão do CJA estão disponíveis para uso em todas as visualizações de dados com base nessa conexão.
+* Fornece diretamente um meio de combinar conjuntos de relatórios ou outros conjuntos de dados. Em vez disso, os conjuntos de dados são combinados em uma conexão Customer Journey Analytics. Os dados combinados da conexão Customer Journey Analytics estão disponíveis para uso em todas as visualizações de dados com base nessa conexão.
 
-## Sandboxes da AEP
+## sandboxes da Adobe Experience Platform
 
 Para obter mais informações, consulte: [Visão geral de sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=pt-BR).
 
-Uma sandbox da AEP:
+Uma sandbox da Adobe Experience Platform:
 
-* Fornece um meio de particionar uma única instância da AEP em ambientes virtuais separados (desenvolvimento, teste, estágio, produção etc.) para ajudar a desenvolver aplicativos de experiência digital.
+* Fornece um meio de particionar uma única instância do Adobe Experience Platform em ambientes virtuais separados (desenvolvimento, teste, preparo, produção etc.) para ajudar a desenvolver aplicativos de experiência digital.
 * Pode ser considerada um container que armazena todos os dados e aplicativos de um determinado ambiente.
 
-Uma sandbox da AEP não:
+Uma sandbox da Adobe Experience Platform não:
 
-* Fornece funções semelhantes aos conjuntos de relatórios virtuais, conexões do CJA ou visualizações de dados.
-* Por si só, combina conjuntos de relatórios com ou sem outros conjuntos de dados. No entanto, os conjuntos de dados em uma sandbox podem ser combinados em uma conexão do CJA.
+* Forneça funções semelhantes aos conjuntos de relatórios virtuais, conexões Customer Journey Analytics ou visualizações de dados.
+* Por si só, combina conjuntos de relatórios com ou sem outros conjuntos de dados. No entanto, os conjuntos de dados em uma sandbox podem ser combinados em uma conexão Customer Journey Analytics.
 
 Além disso:
 
-* Os dados de diferentes sandboxes não podem ser combinados no CJA.
+* Os dados de diferentes sandboxes não podem ser combinados no Customer Journey Analytics.
 * O conector de origem do Analytics envia dados do conjunto de relatórios _em_ uma sandbox específica. Cada conjunto de relatórios pode ser configurado como uma fonte para uma única sandbox. Consulte a [Documentação do Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) para obter mais detalhes.

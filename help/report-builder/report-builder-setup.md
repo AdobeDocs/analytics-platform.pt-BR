@@ -1,15 +1,15 @@
 ---
 title: Como configurar o Report Builder no Customer Journey Analytics
-description: Descreve como configurar o Report Builder no CJA
+description: Descreve como configurar o Report Builder no Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: faaf3d19ed37019ba284b41420628750cdb413b8
-workflow-type: ht
-source-wordcount: '447'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ O Report Builder para o Customer Journey Analytics é compatível com os seguint
 - Windows 10, versão 1904 ou posterior
 - Versão do Excel 2106 ou posterior
 
-   Todos os usuários do Excel para desktop do Windows devem instalar o Microsoft Edge Webview2 para usar o suplemento. Para instalar o controlador:
+  Todos os usuários do Excel para desktop do Windows devem instalar o Microsoft Edge Webview2 para usar o suplemento. Para instalar o controlador:
 
    1. Vá para <https://aka.ms/webview2installer>.
    1. Selecione e baixe o instalador autônomo Evergreen.

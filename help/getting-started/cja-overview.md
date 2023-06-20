@@ -4,10 +4,10 @@ description: Saiba como o Customer Journey Analytics permite usar o Analysis Wor
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: CJA Basics
-source-git-commit: 20ea211fff816b8b5e99d3d6ef3cb4ba4d0fd6a9
+source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 93%
+source-wordcount: '986'
+ht-degree: 89%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 O Customer Journey Analytics é um recurso do Analytics que permite usar o potencial do Analysis Workspace com dados da Adobe Experience Platform. Ele pode detalhar, filtrar, consultar e visualizar os dados de anos, e é combinado com a capacidade da Platform de armazenar todos os tipos de esquemas e tipos de dados. Com o **Experience Data Model (XDM)**, os dados podem ser representados e organizados uniformemente, prontos para combinação e exploração. O **Experience Query Services** permite usar ferramentas e estruturas compatíveis com SQL para query e manipulação de todos os seus dados.
 
-A arquitetura de alto nível do CJA é mostrada aqui:
+A arquitetura de Customer Journey Analytics de alto nível é mostrada aqui:
 
 ![arquitetura](assets/cja-architecture.png)
 
@@ -23,14 +23,14 @@ Assista a um vídeo com uma visão geral do Customer Journey Analytics:
 
 >[!VIDEO](https://video.tv.adobe.com/v/30090/?quality=12)
 
-## Comparação do CJA com o Adobe Analytics tradicional
+## Comparação do Customer Journey Analytics com o Adobe Analytics tradicional
 
 O Customer Journey Analytics expande o escopo do Adobe Analytics oferecendo recursos fáceis de usar entre canais e removendo limitações em versões anteriores do Adobe Analytics. Estas são algumas melhorias notáveis:
 
 * **Variáveis e eventos ilimitados**: os conceitos de eVars, props e eventos não existem mais. Os dados se concentram principalmente em dimensões e métricas. Os conjuntos de dados podem ter um número ilimitado de dimensões e métricas exclusivas.
 * **Valores exclusivos limitados**: a Adobe Experience Platform não está restrita a qualquer limitação exclusiva.
 * **Alterar dados históricos**: com a Adobe Experience Platform, os dados podem ser removidos ou corrigidos.
-* **Dados entre conjuntos de relatórios**: As implementações existentes de vários conjuntos de dados podem ser combinadas na Platform.
+* **Dados entre conjuntos de relatórios**: as implementações existentes de vários conjuntos de dados podem ser combinadas na Platform.
 
 >[!TIP]
 >
@@ -53,7 +53,7 @@ O Customer Journey Analytics permite:
 
 Antes de começar a usar o Customer Journey Analytics, os seguintes pré-requisitos devem ser atendidos:
 
-* Sua organização deve ter um contrato ativo com o Adobe Analytics for Select, Prime ou Ultimate com o complemento Customer Journey Analytics. Se você não tiver certeza de que tipo de contrato possui ou não tem certeza se tem o complemento CJA, entre em contato com a Equipe da conta do Adobe.
+* Sua organização deve ter um contrato ativo com o Adobe Analytics for Select, Prime ou Ultimate com o complemento Customer Journey Analytics. Se você não tiver certeza do tipo de contrato que possui ou se não tiver certeza se tem o complemento Customer Journey Analytics, entre em contato com a equipe de conta do Adobe.
 * Sua organização foi provisionada para a Adobe Experience Platform.
 * Também é possível comprar o Customer Journey Analytics como um produto independente, sem precisar do Adobe Analytics.
 
@@ -63,7 +63,7 @@ Consulte o tópico sobre [Controle de acesso](/help/admin/cja-access-control.md)
 
 ## Atualizações de terminologia
 
-Vários recursos no CJA foram renomeados, em comparação ao Adobe Analytics tradicional, para alinhar-se aos padrões do setor. Alguns termos atualizados incluem:
+Vários recursos no Customer Journey Analytics foram renomeados, em comparação ao Adobe Analytics tradicional, para alinhar-se aos padrões do setor. Alguns termos atualizados incluem:
 
 * Os segmentos agora são conhecidos como “Filtros”.
 * Os Conjuntos de relatórios virtuais agora são conhecidos como “Visualizações de dados”.
@@ -90,9 +90,9 @@ Desde a assimilação de dados até o acesso direto ao SQL, vários componentes 
 
 * Trabalhar com dados no Customer Journey Analytics:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
+  >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
 
 * Arquitetura e integrações do Customer Journey Analytics:
 
-   >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
+  >[!VIDEO](https://video.tv.adobe.com/v/32483/?quality=12)
 

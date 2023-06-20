@@ -4,16 +4,16 @@ description: Descreve como criar uma conexão com um conjunto de dados da Plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 90ce711ddfdff9e3441e40aa968e62e34da6a122
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2510'
-ht-degree: 66%
+source-wordcount: '2543'
+ht-degree: 62%
 
 ---
 
 # Criar uma conexão
 
-Um novo fluxo de trabalho de Conexões foi iniciado recentemente no Customer Journey Analytics (CJA). A nova experiência de fluxo de trabalho de criação e edição de conexão traz todas as definições de configuração de conexão e conjunto de dados para o centro da tela com fluxo de trabalho de assistência. Você forneceu seleção, configuração e experiência de revisão detalhadas do conjunto de dados com informações críticas como tipo de conjunto de dados, tamanho, esquema, ID do conjunto de dados, status do lote, status de preenchimento retroativo, IDs de pessoa e muito mais para reduzir o risco de configuração de conexão incorreta. Esta é uma visão geral dos novos recursos:
+Um novo fluxo de trabalho de Conexões foi iniciado recentemente no Customer Journey Analytics. A nova experiência de fluxo de trabalho de criação e edição de conexão traz todas as definições de configuração de conexão e conjunto de dados para o centro da tela com fluxo de trabalho de assistência. Você forneceu seleção, configuração e experiência de revisão detalhadas do conjunto de dados com informações críticas como tipo de conjunto de dados, tamanho, esquema, ID do conjunto de dados, status do lote, status de preenchimento retroativo, IDs de pessoa e muito mais para reduzir o risco de configuração de conexão incorreta. Esta é uma visão geral dos novos recursos:
 
 * Você pode habilitar uma janela de retenção de dados sem interrupção ao criar a conexão.
 * Você pode adicionar e remover conjuntos de dados de uma conexão. (A remoção de um conjunto de dados o remove da conexão e afeta qualquer visualização de dados associada e projetos subjacentes do Analysis Workspace.)
@@ -25,7 +25,7 @@ Um novo fluxo de trabalho de Conexões foi iniciado recentemente no Customer Jou
 
 ## Criar e configurar a conexão {#create-connection}
 
-1. No CJA, clique na guia **[!UICONTROL Conexões]**.
+1. No Customer Journey Analytics, clique na guia **[!UICONTROL Conexões]**.
 1. Clique em **[!UICONTROL Criar nova conexão]**.
 
    ![Configurações de conexão](assets/create-conn1.png)
@@ -37,7 +37,7 @@ Um novo fluxo de trabalho de Conexões foi iniciado recentemente no Customer Jou
    | **[!UICONTROL Nome da conexão]** | Digite um nome exclusivo para a conexão. |
    | **[!UICONTROL Descrição da conexão]** | Descreva a finalidade desta conexão. |
    | **[!UICONTROL Sandbox]** | Escolha uma sandbox na Experience Platform que contenha os conjuntos de dados para os quais você deseja criar uma conexão.<p>A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=pt-BR) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Você pode considerar as sandboxes como &quot;silos de dados&quot; que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.<p>Depois de selecionar a sandbox, o painel esquerdo mostra todos os conjuntos de dados que você pode obter dela. |
-   | **[!UICONTROL Ativar janela de dados contínuos]** | Essa caixa de seleção, se marcada, permite definir a retenção de dados do CJA como uma janela contínua em meses (1 mês, 3 meses, 6 meses e assim por diante), no nível da conexão.<p>A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe configuração de janela de dados contínuos para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data/hora aplicáveis. No entanto, se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa (além de um ou mais conjuntos de dados de evento), esses dados serão retidos pelo mesmo período.<p> O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.<p>Se deixar o padrão (desmarcado), o período de retenção será substituído pela configuração de retenção de dados do Adobe Experience Platform. Se você tiver dados correspondentes a 25 meses no Experience Platform, o CJA obterá 25 meses de dados por meio do preenchimento retroativo. Se você excluísse 10 desses meses na Platform, o CJA manteria os 15 meses restantes. |
+   | **[!UICONTROL Ativar janela de dados contínuos]** | Essa caixa de seleção, se marcada, permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (1 mês, 3 meses, 6 meses e assim por diante), no nível da conexão.<p>A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe configuração de janela de dados contínuos para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data/hora aplicáveis. No entanto, se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa (além de um ou mais conjuntos de dados de evento), esses dados serão retidos pelo mesmo período.<p> O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.<p>Se deixar o padrão (desmarcado), o período de retenção será substituído pela configuração de retenção de dados do Adobe Experience Platform. Se você tiver dados correspondentes a 25 meses no Experience Platform, o Customer Journey Analytics obterá 25 meses de dados por meio do preenchimento retroativo. Se você excluísse 10 desses meses na Platform, o Customer Journey Analytics manteria os 15 meses restantes. |
    | **[!UICONTROL Adicionar conjuntos de dados]** (veja abaixo) | Adicione conjuntos de dados se nenhum conjunto de dados for exibido na lista do conjunto de dados. |
    | **[!UICONTROL Nome do conjunto de dados]** | Selecione um ou mais conjuntos de dados que você deseja transferir para o Customer Journey Analytics e clique em **[!UICONTROL Adicionar]**.<p>(Se tiver vários conjuntos de dados, você poderá pesquisar os corretos usando a barra de pesquisa Pesquisar conjuntos de dados acima da lista de conjuntos de dados.) |
    | **[!UICONTROL Última atualização]** | Somente para conjuntos de dados de eventos, essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão em esquemas baseados em eventos na Experience Platform. “N/A” significa que esse conjunto de dados não contém dados. |
@@ -114,7 +114,7 @@ Essa funcionalidade de pesquisa é útil se você quiser adicionar um campo num�
 
 ![Esquema de pesquisa](assets/schema.png)
 
-Agora, você pode trazer esses valores como métricas ou dimensões para os relatórios do CJA. Ao configurar sua conexão e extrair conjuntos de dados de pesquisa, você pode editar os conjuntos de dados para selecionar a variável [!UICONTROL Chave] e [!UICONTROL Chave de correspondência]:
+Agora, é possível trazer esses valores como métricas ou dimensões para os relatórios de Customer Journey Analytics. Ao configurar sua conexão e extrair conjuntos de dados de pesquisa, você pode editar os conjuntos de dados para selecionar a variável [!UICONTROL Chave] e [!UICONTROL Chave de correspondência]:
 
 ![Conjunto de dados de edição](assets/lookup-dataset.png)
 
@@ -124,7 +124,7 @@ Ao configurar uma visualização de dados com base nessa conexão, você adicion
 
 O Customer Journey Analytics permite usar o Mapa de identidade para sua ID de pessoa. O Mapa de identidade é uma estrutura de dados de mapa que permite que alguém carregue a chave -> pares de chaves. As chaves são namespaces de identidade e o valor é uma estrutura que contém o valor de identidade. O Mapa de identidade existe em cada linha/evento carregado e é preenchido de acordo com cada linha.
 
-O Mapa de identidade está disponível para qualquer conjunto de dados que use um esquema com base na classe [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR). Ao selecionar um conjunto de dados para ser incluído em uma conexão do CJA, você tem a opção de selecionar um campo como a ID primária ou o Mapa de identidade:
+O Mapa de identidade está disponível para qualquer conjunto de dados que use um esquema com base na classe [ExperienceEvent XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR). Ao selecionar um conjunto de dados para ser incluído em uma conexão Customer Journey Analytics, você tem a opção de selecionar um campo como a ID primária ou o Mapa de identidade:
 
 ![](assets/idmap1.png)
 
@@ -132,8 +132,8 @@ Ao selecionar o Mapa de identidade, você terá duas opções adicionais de conf
 
 | Opção | Descrição |
 |---|---|
-| **[!UICONTROL Usar namespace da ID primária]** | Essa opção instrui o CJA, por linha, a localizar a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e a usar como a ID de pessoa para essa linha. Essa identidade é a chave primária usada no Experience Platform para particionamento. E essa identidade também é a principal candidata para usar como a ID de pessoa do CJA (dependendo de como o conjunto de dados está configurado em uma conexão do CJA). |
-| **[!UICONTROL Namespace]** | (Essa opção só estará disponível se você não usar a Namespace de ID primária.) Os namespaces de identidade são um componente do [ Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=pt-BR) que serve como indicadores do contexto ao qual uma identidade está relacionada. Se você especificar um namespace, o CJA pesquisará no Mapa de identidade de cada linha por essa chave de namespace e usará a identidade sob essa namespace como a ID de pessoa para essa linha. Como o CJA não pode fazer uma verificação completa do conjunto de dados de todas as linhas para determinar quais namespaces estão presentes, todos os namespaces possíveis são exibidos na lista suspensa. Você deve saber quais namespaces são especificados nos dados; esses namespaces não são detectados automaticamente. |
+| **[!UICONTROL Usar namespace da ID primária]** | Essa opção instrui o Customer Journey Analytics, por linha, a localizar a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e a usar como a ID de pessoa para essa linha. Essa identidade é a chave primária usada no Experience Platform para particionamento. E essa identidade também é a principal candidata para usar como ID de pessoa de Customer Journey Analytics (dependendo de como o conjunto de dados está configurado em uma Conexão de Customer Journey Analytics). |
+| **[!UICONTROL Namespace]** | (Essa opção só estará disponível se você não usar a Namespace de ID primária.) Os namespaces de identidade são um componente do [ Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=pt-BR) que serve como indicadores do contexto ao qual uma identidade está relacionada. Se você especificar um namespace, o Customer Journey Analytics pesquisará no Mapa de identidade de cada linha por essa chave de namespace e usará a identidade sob essa namespace como a ID de pessoa para essa linha. Como o Customer Journey Analytics não pode fazer uma verificação completa do conjunto de dados de todas as linhas para determinar quais namespaces estão presentes, todos os namespaces possíveis são exibidos na lista suspensa. Você deve saber quais namespaces são especificados nos dados; esses namespaces não são detectados automaticamente. |
 
 {style="table-layout:auto"}
 
@@ -143,8 +143,8 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 
 | Opção | Nenhuma ID está presente no Mapa de identidade | Várias IDs, nenhuma marcada como primária | Várias IDs são marcadas como primárias | ID única, marcada como primária ou não | Namespace inválido com uma ID marcada como primária |
 |---|---|---|---|---|---|
-| Opção **[!UICONTROL Usar namespace de ID primária] marcada** | A linha é solta pelo CJA. | A linha é solta pelo CJA, pois nenhuma ID primária é especificada. | Todas as IDs marcadas como primárias, em todos os namespaces, são extraídas em uma lista. Eles são classificados alfabeticamente; com a nova classificação, o primeiro namespace com sua primeira ID é usado como a ID de pessoa. | A ID única é usada como a ID de pessoa. | Embora o namespace possa ser inválido (não presente no AEP), o CJA usa a ID primária sob esse namespace como a ID de pessoa. |
-| **[!UICONTROL Namespace do Mapa de identidade específico] selecionado** | A linha é solta pelo CJA. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. (Somente um namespace válido pode ser selecionado no momento da criação da conexão, portanto, não é possível que um namespace/ID inválido seja usada como ID de pessoa). |
+| Opção **[!UICONTROL Usar namespace de ID primária] marcada** | A linha é solta por Customer Journey Analytics. | A linha é solta por Customer Journey Analytics, pois nenhuma ID primária é especificada. | Todas as IDs marcadas como primárias, em todos os namespaces, são extraídas em uma lista. Eles são classificados alfabeticamente; com a nova classificação, o primeiro namespace com sua primeira ID é usado como a ID de pessoa. | A ID única é usada como a ID de pessoa. | Embora o namespace possa ser inválido (não presente no Adobe Experience Platform), o Customer Journey Analytics usa a ID primária sob esse namespace como a ID de pessoa. |
+| **[!UICONTROL Namespace do Mapa de identidade específico] selecionado** | A linha é solta por Customer Journey Analytics. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. (Somente um namespace válido pode ser selecionado no momento da criação da conexão, portanto, não é possível que um namespace/ID inválido seja usada como ID de pessoa). |
 
 {style="table-layout:auto"}
 
@@ -162,4 +162,4 @@ Esse cálculo é feito para cada conjunto de dados na conexão.
 
    Neste exemplo, &quot;analytics_demo_data&quot; é o nome do conjunto de dados.
 
-2. Para mostrar todos os conjuntos de dados existentes na AEP, execute o `Show Tables` consulta .
+2. Para mostrar todos os conjuntos de dados existentes no Adobe Experience Platform, execute o `Show Tables` consulta .

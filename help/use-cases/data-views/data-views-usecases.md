@@ -4,10 +4,10 @@ description: Vários casos de uso que mostram a flexibilidade e o potencial das 
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 0fdf95906e17b9e90fa6ba652aa8e53f695279a4
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 97%
+source-wordcount: '1317'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Outro exemplo seria usar a ID de visitante, uma dimensão, como uma métrica par
 
 ## 2. Usar números inteiros como dimensões {#integers}
 
-Anteriormente, os números inteiros eram automaticamente tratados como métricas no CJA. Agora, os números (incluindo eventos personalizados do Adobe Analytics) podem ser tratados como dimensões. Exemplo:
+Anteriormente, os números inteiros eram automaticamente tratados como métricas no Customer Journey Analytics. Agora, os números (incluindo eventos personalizados do Adobe Analytics) podem ser tratados como dimensões. Exemplo:
 
 1. Arraste o inteiro [!UICONTROL call_length_min] até a seção [!UICONTROL Dimensões] em [!UICONTROL Componentes incluídos]:
 
@@ -117,7 +117,7 @@ Durante 95% a 99% do tempo, as novas sessões são relatadas com precisão. As �
 
 ## 8. Use a funcionalidade de Data e Data e hora {#date}
 
-Os esquemas na Adobe Experience Platform contêm campos de [!UICONTROL Data] e [!UICONTROL Data e hora]. As visualizações de dados do CJA agora são compatíveis com esses campos. Ao arrastar esses campos para uma visualização de dados como uma dimensão, você pode especificar seus [formatos](/help/data-views/component-settings/format.md). Essa configuração de formato determina como os campos são exibidos em relatórios. Por exemplo:
+Os esquemas na Adobe Experience Platform contêm campos de [!UICONTROL Data] e [!UICONTROL Data e hora]. As visualizações de dados do Customer Journey Analytics agora são compatíveis com esses campos. Ao arrastar esses campos para uma visualização de dados como uma dimensão, você pode especificar seus [formatos](/help/data-views/component-settings/format.md). Essa configuração de formato determina como os campos são exibidos em relatórios. Por exemplo:
 
 * Para o formato Data, se você selecionar **[!UICONTROL Dia]** com o formato **[!UICONTROL Dia, Mês, Ano]**, um exemplo de saída no relatório pode ser semelhante a: 23 de agosto de 2022.
 

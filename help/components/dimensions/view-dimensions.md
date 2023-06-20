@@ -1,12 +1,12 @@
 ---
 description: Exibe os cinco principais valores para dimensões que não são de tempo (e 15 para dimensões de tempo).
-title: Como visualizar dimensões no CJA Workspace
+title: Como visualizar dimensões no Customer Journey Analytics Workspace
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 95%
 
 ---
 

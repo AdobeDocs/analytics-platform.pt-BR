@@ -2,10 +2,10 @@
 title: AAID, ECID, AACUSTOMID e o conector de origem do Analytics
 description: Saiba como o Conector de origem do Analytics lida com campos de identidade do Adobe Analytics.
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
-source-git-commit: 8c8e2db9b42deee081ce3b74481d0ad82c76818f
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 97%
+source-wordcount: '571'
+ht-degree: 91%
 
 ---
 
@@ -51,6 +51,6 @@ No identityMap:
 Caso contrário, a AAID é marcada como a identidade principal do evento.
 * AACUSTOMID nunca é marcada como a ID principal do evento. No entanto, se AACUSTOMID estiver presente, a AAID é baseado na AACUSTOMID de acordo com a discussão acima.
 
-## CJA e ID principal
+## Customer Journey Analytics e ID primária
 
-No que diz respeito ao CJA, a definição de ID principal só é importante se você decidir usar a ID principal como a ID de pessoa. Mas não é obrigatório fazer isso. Você pode escolher alguma outra coluna de identidade como a ID de pessoa.
+No que diz respeito ao Customer Journey Analytics, a definição de ID principal só é importante se você decidir usar a ID principal como a ID de pessoa. Mas não é obrigatório fazer isso. Você pode escolher alguma outra coluna de identidade como a ID de pessoa.

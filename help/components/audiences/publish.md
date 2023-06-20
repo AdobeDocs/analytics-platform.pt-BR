@@ -2,18 +2,18 @@
 title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
-source-git-commit: a56cc7a0299aad98ff8af5e0d59df4679e0d2d25
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 90%
+source-wordcount: '1565'
+ht-degree: 63%
 
 ---
 
 # Criar e publicar públicos-alvo
 
-Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics (CJA) no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) na Adobe Experience Platform para direcionamento e personalização de clientes.
+Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics para o [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
-Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para familiarizar-se com o conceito de públicos-alvo do CJA.
+Leia isto [visão geral](/help/components/audiences/audiences-overview.md) para familiarizar-se com o conceito de públicos-alvo Customer Journey Analytics.
 
 ## Criar público-alvo {#create}
 
@@ -38,7 +38,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    | [!UICONTROL Nome] | O nome do público-alvo. |
    | [!UICONTROL Tags] | Todas as tags que você deseja atribuir ao público-alvo para fins organizacionais. Você pode usar uma tag pré-existente ou inserir uma nova. |
    | [!UICONTROL Descrição] | Adicione uma boa descrição do público-alvo para diferenciá-lo dos outros. |
-   | [!UICONTROL Frequência de atualização] | A frequência na qual você deseja atualizar o público-alvo.<ul><li>Você pode optar por criar um público-alvo único (padrão) que não precise de atualização. Por exemplo, isso pode ser útil para campanhas específicas, únicas.</li><li>Você pode selecionar outros intervalos de atualização. Para a frequência de atualização de 4 horas, há um limite de 75 a 150 atualizações de público, dependendo do seu direito do CJA.</li></ul> |
+   | [!UICONTROL Frequência de atualização] | A frequência na qual você deseja atualizar o público-alvo.<ul><li>Você pode optar por criar um público-alvo único (padrão) que não precise de atualização. Por exemplo, isso pode ser útil para campanhas específicas, únicas.</li><li>Você pode selecionar outros intervalos de atualização. Para a frequência de atualização de 4 horas, há um limite de 75 a 150 atualizações de público, dependendo do seu direito ao Customer Journey Analytics.</li></ul> |
    | Data de validade | Quando o público-alvo parará de ser atualizado. O padrão é 1 ano a partir da data de criação. Públicos-alvo que expiram são tratados de forma semelhante aos relatórios agendados que expiram: o administrador recebe um email um mês antes de o público-alvo expirar. |
    | Atualizar janela de retrospectiva | Especifica até que ponto você deseja voltar na janela de dados ao criar esse público-alvo. O máximo é de 90 dias. |
    | [!UICONTROL Intervalo de datas único] | Intervalo de datas quando você deseja que o público-alvo único seja publicado. |
@@ -74,38 +74,38 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
 
 ## O que acontece depois que um público é criado? {#after-audience-created}
 
-Depois de criar um público, a Adobe cria um segmento de streaming da Experience Platform para cada novo público do CJA. Um segmento de streaming da AEP só será criado se sua organização estiver configurada para a segmentação de streaming.
+Depois de criar um público-alvo, o Adobe cria um segmento de transmissão Experience Platform para cada novo público-alvo do Customer Journey Analytics. Um segmento de transmissão do Adobe Experience Platform só será criado se sua organização estiver configurada para segmentação de transmissão.
 
-* O segmento da AEP compartilha o mesmo nome/descrição do público do CJA, mas o nome será anexado à ID de público do CJA para garantir que seja exclusivo.
-* Se o nome/descrição do público do CJA mudar, o nome/descrição do segmento da AEP também refletirá essa alteração.
-* Se um público do CJA for excluído por um usuário, o segmento da AEP NÃO será excluído. O motivo é que o público do CJA pode ser recuperado posteriormente.
+* O segmento do Adobe Experience Platform compartilha o mesmo nome/descrição do público-alvo Customer Journey Analytics, mas o nome será anexado com a ID de público-alvo Customer Journey Analytics para garantir que seja exclusivo.
+* Se o nome/descrição do público-alvo do Customer Journey Analytics for alterado, o nome/descrição do segmento do Adobe Experience Platform também refletirá essa alteração.
+* Se um público-alvo do Customer Journey Analytics for excluído por um usuário, o segmento do Adobe Experience Platform NÃO será excluído. O motivo é que o público-alvo do Customer Journey Analytics pode ser excluído posteriormente.
 
 ## Considerações sobre latência {#latency}
 
 Em vários pontos antes, durante e depois da publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
-![Latência do AEP para o CJA](assets/latency-diagram.png)
+![Latência do Adobe Experience Platform para o Customer Journey Analytics](assets/latency-diagram.png)
 
 | # | Ponto de latência | Duração da latência |
 | --- | --- | --- |
 | Não exibido | Conector de origem do Adobe Analytics para Analytics (A4T) | Até 30 minutos |
 | 1 | Assimilação de dados no Data Lake (do Conector de origem do Analytics ou de outras fontes) | Até 90 minutos |
-| 2 | Assimilação de dados do Data Lake do Experience Platform no CJA | Até 90 minutos |
+| 2 | Assimilação de dados do Experience Platform Data Lake no Customer Journey Analytics | Até 90 minutos |
 | 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
 | 4 | Atualizar frequência dos públicos | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
-| 5 | Criação de destino na AEP: ativar o novo segmento | 1 a 2 horas |
+| 5 | Criação de destino no Adobe Experience Platform: ativação do novo segmento | 1 a 2 horas |
 
 {style="table-layout:auto"}
 
-## Usar públicos do CJA na Experience Platform {#audiences-aep}
+## Usar públicos-alvo do Customer Journey Analytics no Experience Platform {#audiences-aep}
 
-O CJA coleta todas as combinações de namespace e ID do público que foi publicado e as transmite para o Perfil do cliente em tempo real (RTCP). O CJA envia o público para a Experience Platform com a identidade principal definida, de acordo com o que foi selecionado como [!UICONTROL ID de pessoa] quando a conexão foi configurada.
+O Customer Journey Analytics pega todas as combinações de namespace e ID de seu público publicado e as transmite para o Perfil do cliente em tempo real (RTCP). Customer Journey Analytics envia o público-alvo para o Experience Platform com a identidade principal definida, de acordo com o que foi selecionado como a [!UICONTROL ID de pessoa] quando a conexão foi configurada.
 
 Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, “user@adobe.com” pode ser direcionado para todos os dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
-Você pode visualizar públicos-alvo do CJA na Platform acessando a guia **[!UICONTROL Segmentos]** > **[!UICONTROL Criar segmentos]** > **[!UICONTROL Públicos-alvo]** > **[!UICONTROL Públicos-alvo do CJA]**.
+Você pode visualizar públicos-alvo do Customer Journey Analytics na Platform acessando **[!UICONTROL Segmentos]** > **[!UICONTROL Criar segmentos]** > **[!UICONTROL Públicos-alvo]** guia > **[!UICONTROL Públicos-alvo do CJA]**.
 
-Você pode arrastar os públicos-alvo do CJA para a definição de segmentos da AEP.
+Você pode arrastar os públicos-alvo do Customer Journey Analytics para a definição de segmentos do Adobe Experience Platform.
 
 ![](assets/audiences-aep.png)
 
@@ -113,15 +113,15 @@ Você pode arrastar os públicos-alvo do CJA para a definição de segmentos da 
 
 Perguntas frequentes sobre a publicação de público-alvo.
 
-+++**O que acontece se um usuário não é mais membro de um público no CJA?**
++++**O que acontece se um usuário não é mais membro de um público-alvo no Customer Journey Analytics?**
 
-Nesse caso, um evento de saída é enviado à Experience Platform do CJA.
+Nesse caso, um evento de saída é enviado para o Experience Platform do Customer Journey Analytics.
 
 +++
 
-+++**O que acontece se você excluir um público no CJA?**
++++**O que acontece se você excluir um público-alvo no Customer Journey Analytics?**
 
-Quando um público-alvo do CJA é excluído, ele não será mais exibido na interface da Experience Platform. No entanto, nenhum perfil associado a esse público-alvo é realmente excluído na Platform.
+Quando um público-alvo do Customer Journey Analytics é excluído, ele não será mais exibido na interface do Experience Platform. No entanto, nenhum perfil associado a esse público-alvo é realmente excluído na Platform.
 
 +++
 
@@ -131,13 +131,13 @@ Sim, será.
 
 +++
 
-+++**O CJA envia os dados do público-alvo como eventos de pipeline ou como um arquivo simples que também vai para o data lake?**
++++**O Customer Journey Analytics envia os dados do público-alvo como eventos de pipeline ou como um arquivo simples que também vai para o data lake?**
 
-O CJA envia os dados para o RTCP por meio do pipeline e esses dados também são coletados em um conjunto de dados do sistema no data lake.
+O Customer Journey Analytics transmite os dados para o RTCP por meio do pipeline e esses dados também são coletados em um conjunto de dados do sistema no data lake.
 
 +++
 
-+++**Quais identidades o CJA envia?**
++++**Que identidades o Customer Journey Analytics envia?**
 
 Qualquer par de identidade/namespace que tenha sido especificado na variável [Configuração da conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
 
@@ -145,11 +145,11 @@ Qualquer par de identidade/namespace que tenha sido especificado na variável [C
 
 +++**Qual ID é escolhida como a identidade principal?**
 
-Veja acima. Enviamos apenas uma identidade por “pessoa” do CJA.
+Veja acima. Só enviamos uma identidade por Customer Journey Analytics &quot;pessoa&quot;.
 
 +++
 
-+++**O RTCP também processa as mensagens do CJA? O CJA pode adicionar identidades a um gráfico de identidade de perfil por meio do compartilhamento de público?**
++++**O RTCP processa as mensagens Customer Journey Analytics também? O Customer Journey Analytics pode adicionar identidades a um gráfico de identidade de perfil por meio do compartilhamento de público-alvo?**
 
 Não. Enviamos apenas uma identidade por “pessoa”, de modo que não haveria bordas de gráfico para a RTCP consumir.
 

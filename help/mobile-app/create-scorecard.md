@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '2523'
-ht-degree: 78%
+source-wordcount: '2529'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ As informações a seguir instruem os curadores de dados do Adobe Analytics sobr
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->As capturas de tela dos cartões de pontuação para esta página foram tiradas da interface do Adobe Analytics, não do CJA. As interfaces são quase idênticas.
+>As capturas de tela dos cartões de pontuação para esta página foram tiradas da interface do usuário do Adobe Analytics, não do Customer Journey Analytics. As interfaces são quase idênticas.
 
 Um cartão de pontuação do Adobe Analytics exibe as principais visualizações de dados para usuários executivos em um layout lado a lado, como mostrado abaixo:
 
@@ -76,7 +76,7 @@ Por exemplo, é possível adicionar dimensões apropriadas (como **[!DNL Marketi
 
 ## Aplicar filtros {#filters}
 
-Para aplicar filtros a blocos individuais, arraste um filtro (segmentos são filtros no CJA) do painel esquerdo e solte-o diretamente em cima do bloco.
+Para aplicar filtros a blocos individuais, arraste um filtro (segmentos são filtros em Customer Journey Analytics) do painel esquerdo e solte-o diretamente em cima do bloco.
 
 Se quiser aplicar o filtro a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão de pontuação. Ou você também pode aplicar filtros selecionando filtros no menu de filtro abaixo dos intervalos de datas. Você [configurar e aplicar filtros para seus cartões de pontuação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que no Adobe Analytics Workspace.
 
@@ -163,7 +163,7 @@ Caso queira remover itens de dimensões [!UICONTROL Não especificados] dos seus
 
 ## Exibir e configurar propriedades de blocos {#tiles}
 
-Ao clicar em um bloco no construtor de cartões de pontuação, o painel direito exibe as propriedades e características associadas a esse bloco e seu slide de detalhes. Nesse painel, você pode fornecer um novo **Título** para o bloco e, como alternativa, configurar o bloco aplicando filtros. Segmentos são filtros no CJA.
+Ao clicar em um bloco no construtor de cartões de pontuação, o painel direito exibe as propriedades e características associadas a esse bloco e seu slide de detalhes. Nesse painel, você pode fornecer um novo **Título** para o bloco e, como alternativa, configurar o bloco aplicando filtros. Segmentos são filtros em Customer Journey Analytics.
 
 ![Bloco de propriedades](assets/properties-tile-new.png)
 

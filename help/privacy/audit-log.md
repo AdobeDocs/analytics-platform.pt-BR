@@ -1,31 +1,31 @@
 ---
 title: Logs de auditoria
-description: Saiba como visualizar e gerenciar logs de auditoria do CJA.
+description: Saiba como visualizar e gerenciar logs de auditoria de Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
-source-git-commit: 7fcbac6adb6946efd5c54b9f8edb4587dc34d445
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 79%
+source-wordcount: '806'
+ht-degree: 67%
 
 ---
 
 # Logs de auditoria
 
-Para aumentar a transparência e a visibilidade das atividades realizadas no sistema, o Customer Journey Analytics (CJA) permite fazer uma auditoria das atividade do usuário para vários serviços e recursos na forma de “logs de auditoria”. Esses registros formam uma trilha de auditoria que pode ajudar na solução de problemas e ajudar sua empresa a cumprir com as políticas corporativas de gerenciamento de dados e os requisitos normativos, como a HIPAA (Health Insurance Portability and Accountability Act, Lei de Portabilidade e Responsabilidade do Seguro de Saúde).
+Para aumentar a transparência e a visibilidade das atividades realizadas no sistema, o Adobe Customer Journey Analytics permite auditar a atividade do usuário em vários serviços e recursos na forma de &quot;logs de auditoria&quot;. Esses registros formam uma trilha de auditoria que pode ajudar na solução de problemas e ajudar sua empresa a cumprir com as políticas corporativas de gerenciamento de dados e os requisitos normativos, como a HIPAA (Health Insurance Portability and Accountability Act, Lei de Portabilidade e Responsabilidade do Seguro de Saúde).
 
 Basicamente, um log de auditoria informa **quem** executou **qual** ação e **quando**. Cada ação registrada em um log contém metadados que indicam o tipo de ação, a data e a hora, a ID do email do usuário que executou a ação e atributos adicionais relevantes ao tipo de ação.
 
-Este tópico aborda logs de auditoria no CJA, incluindo como visualizá-los e gerenciá-los na interface do usuário.
+Este tópico aborda logs de auditoria no Customer Journey Analytics, incluindo como visualizá-los e gerenciá-los na interface do usuário.
 
 ## Acesso a logs de auditoria
 
 Quando o recurso é ativado para sua organização, os logs de auditoria são coletados automaticamente conforme a atividade ocorre. Não é necessário ativar manualmente a coleção de log.
 
-Para visualizar e exportar logs de auditoria, você deve ter recebido a permissão de controle **[!UICONTROL Acesso aos logs de auditoria]** no console da Adobe. Para saber como gerenciar permissões individuais para recursos do CJA, consulte a [documentação de controle de acesso](../admin/cja-access-control.md).
+Para visualizar e exportar logs de auditoria, você deve ter recebido a permissão de controle **[!UICONTROL Acesso aos logs de auditoria]** no console da Adobe. Para saber como gerenciar permissões individuais para recursos do Customer Journey Analytics, consulte a [documentação de controle de acesso](../admin/cja-access-control.md).
 
 ## Exibir o log de auditoria na interface
 
-No CJA, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Logs de auditoria]**.
+No Customer Journey Analytics, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Logs de auditoria]**.
 
 O log de auditoria de hoje e ontem é mostrado por padrão.
 
@@ -136,4 +136,4 @@ Você pode baixar logs de auditoria em formatos CSV ou JSON. Todos os filtros ap
 
 ## Gerenciar logs de auditoria na API
 
-Todas as ações que você pode executar na interface do usuário também podem ser realizadas usando chamadas de API. Consulte a [documentação de referência da API do CJA](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) para obter mais informações.
+Todas as ações que você pode executar na interface do usuário também podem ser realizadas usando chamadas de API. Consulte a [Documento de referência da API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) para obter mais informações.

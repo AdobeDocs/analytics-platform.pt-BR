@@ -4,20 +4,20 @@ description: Descreve as práticas recomendadas para lidar com dimensões de alt
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: 0e9d612e1c0f6d64cd6f1e045c1049a1f8202b72
-workflow-type: ht
-source-wordcount: '455'
-ht-degree: 100%
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 88%
 
 ---
 
 # Dimensões com cardinalidade muito alta
 
-O Customer Journey Analytics (CJA) não impõe limites ao número de valores únicos ou itens de dimensão que podem ser relatados em uma única dimensão. No entanto, em algumas circunstâncias, dimensões com um número extremamente grande de itens únicos, também conhecidas como dimensões de alta cardinalidade, podem afetar o que pode ser relatado.
+O Customer Journey Analytics (Customer Journey Analytics) não impõe limites ao número de valores únicos ou itens de dimensão que podem ser relatados em uma única dimensão. No entanto, em algumas circunstâncias, dimensões com um número extremamente grande de itens únicos, também conhecidas como dimensões de alta cardinalidade, podem afetar o que pode ser relatado.
 
 ## Limitações
 
-Dependendo do número de eventos em uma conexão CJA específica, as duas seguintes limitações podem ocorrer juntamente com dimensões de alta cardinalidade:
+Dependendo do número de eventos em uma conexão Customer Journey Analytics específica, as duas seguintes limitações podem ocorrer juntamente com dimensões de alta cardinalidade:
 
 ### 1. As contagens de linhas podem não ser relatáveis com precisão
 

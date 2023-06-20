@@ -3,9 +3,9 @@ description: O Criador de métricas calculadas oferece uma tela para arrastar e 
 title: Criar métricas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 5fbffb01c08b5f8069b2670742f7ae3836ad8357
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '973'
 ht-degree: 66%
 
 ---
@@ -41,7 +41,7 @@ A imagem a seguir e a tabela que a acompanha explicam algumas das principais ár
 | Definição | Aqui você pode arrastar métricas/métricas calculadas, filtros e/ou funções para criar a métrica calculada. <ul><li>Se você arrastar uma métrica calculada, ela expandirá automaticamente sua definição de métrica. </li> <li>Você pode aninhar definições em contêineres. No entanto, diferentemente dos contêineres de filtro, esses contêineres funcionam como uma expressão matemática e determinam a ordem das operações. </li> </ul> |
 | Operador | Dividido por ( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) é o operador padrão, além dos operadores +, - e x. |
 | Visualização | Fornece uma leitura rápida sobre possíveis erros. A visualização abrange os últimos 90 dias. Esta é uma maneira de medir, ao menos de maneira inicial, se você selecionou os componentes certos para a sua métrica. Um resultado inesperado significa que você precisa analisar a definição da métrica novamente. |
-| Compatibilidade do produto | Para qualquer métrica calculada criada no CJA, esse valor é sempre listado como [!UICONTROL **Dados totalmente processados**]. As métricas calculadas só podem incluir dados de conjuntos de dados de eventos. |
+| Compatibilidade do produto | Para qualquer métrica calculada criada no Customer Journey Analytics, esse valor é sempre listado como [!UICONTROL **Dados totalmente processados**]. As métricas calculadas só podem incluir dados de conjuntos de dados de eventos. |
 | Adicionar | Para todos os tipos de métricas calculadas, é possível adicionar contêineres e números estáticos à definição. Para métricas calculadas avançadas, também é possível adicionar filtros e funções.<ul><li>Os contêineres funcionam como uma expressão matemática e determinam a ordem das operações. Todo o conteúdo do contêiner será processado antes da próxima operação.</li><li>Arrastar um filtro para um container filtra tudo nesse container. (Somente métricas calculadas avançadas)</li><li>É possível empilhar vários filtros em um container.</li></ul> |
 | Ícone de engrenagem (Tipo de métrica, Atribuição) | Selecionar o ícone de engrenagem ao lado de uma métrica permite especificar o tipo de métrica e os modelos de atribuição. |
 | Ícone de adição (+) | Permite criar um novo componente, como um novo filtro (que leva você ao Construtor de filtros). |

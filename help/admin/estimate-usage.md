@@ -4,24 +4,24 @@ description: Mostra dois métodos de estimativa de uso e um método de gerenciam
 role: Admin
 feature: CJA Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 94%
+source-wordcount: '895'
+ht-degree: 73%
 
 ---
 
 # Visualizar e gerenciar o uso do Customer Journey Analytics
 
-Para visualizar o uso do CJA, você pode usar vários métodos:
+Para visualizar o uso do Customer Journey Analytics, é possível usar vários métodos:
 
 * Adicione as linhas de dados do evento para cada conexão. Consulte [Estimar o tamanho da conexão](#tamanho da estimativa) abaixo. É uma maneira fácil de ver os dados da linha do evento, por conexão, para um carimbo de data e hora específico.
 * Visualize o uso de três maneiras, cada uma das quais é descrita com mais detalhes abaixo:
    * Use o Analysis Workspace para relatar os eventos do mês passado.
    * Use o Report Builder para relatar os eventos do mês passado.
-   * Use a API do CJA para criar um relatório automatizado.
+   * Use a API de Customer Journey Analytics para criar um relatório automatizado.
 
-Para gerenciar o uso do CJA:
+Para gerenciar o uso do Customer Journey Analytics:
 
 * Defina uma janela de dados acumulados.
 
@@ -55,7 +55,7 @@ Talvez seja necessário saber quantas linhas de dados do evento você tem atualm
 
    * Alterar as [configurações de retenção de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#set-rolling-window-for-connection-data-retention).
    * [Excluir todas as conexões não usadas](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
-   * [Excluir um conjunto de dados na AEP](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
+   * [Excluir um conjunto de dados na Adobe Experience Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components).
    * Entre em contato com a equipe de conta do Adobe para obter licença de capacidade adicional.
 
 ## Criar um projeto do Espaço de trabalho usando todos os dados do evento {#workspace-event-data}
@@ -68,7 +68,7 @@ Esse método permite fazer uma análise mais profunda dos dados de uso, bem como
 >
 >    Não crie uma nova conexão que englobe todos os seus dados apenas para medir o uso, pois isso duplicaria efetivamente o uso.
 
-1. No Workspace, crie novos projetos com base em cada visualização de dados e extraia todos os eventos (da variável **[!UICONTROL Métricas]** lista suspensa) até a primeira sexta-feira do mês, começando pelo primeiro dia do contrato CJA atual.
+1. No Espaço de trabalho, crie novos projetos com base em cada visualização de dados e obtenha todos os eventos (da **[!UICONTROL Métricas]** lista suspensa) até a primeira sexta-feira do mês, começando com o primeiro dia do contrato Customer Journey Analytics atual.
 
    ![Eventos](./assets/events-usage.png)
 
@@ -80,24 +80,24 @@ Esse método permite fazer uma análise mais profunda dos dados de uso, bem como
 
 No Report Builder, [crie um bloco de dados](/help/report-builder/create-a-data-block.md) para cada visualização de dados e some-os.
 
-## Criar um relatório automatizado na API do CJA {#api-report}
+## Criar um relatório automatizado na API Customer Journey Analytics {#api-report}
 
-1. Use a [API de relatórios CJA](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) para executar um relatório em todos os dados do evento, **para cada conexão**. Configure isso para que o relatório seja executado
+1. Use o [API de relatórios do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) para executar um relatório sobre todos os dados do evento, **para cada conexão**. Configure isso para que o relatório seja executado
 
    * em todas as primeiras sextas-feiras de cada mês.
-   * voltar ao primeiro dia do seu contrato atual do CJA.
+   * retornando ao primeiro dia do contrato Customer Journey Analytics atual.
 
-   Você terá uma boa ideia da tendência de utilização mês a mês. Ele fornecerá o número total de linhas em todas as suas conexões do CJA.
+   Você terá uma boa ideia da tendência de utilização mês a mês. Ele fornecerá o número total de linhas em todas as conexões Customer Journey Analytics.
 
 1. Use o Excel para personalizar ainda mais este relatório.
 
 ## Gerencie o uso definindo uma janela de dados contínua {#rolling}
 
-Para gerenciar o uso, a [interface de usuário de conexões](/help/connections/create-connection.md) permite definir a retenção de dados do CJA como uma janela contínua em meses (1 mês, 3 meses, 6 meses, etc.), no nível da conexão.
+Para gerenciar o uso, a variável [interface de conexões](/help/connections/create-connection.md) O permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (1 mês, 3 meses, 6 meses etc.), no nível da conexão.
 
 O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
 
-Se deixar o padrão (desmarcado), o período de retenção será substituído pela configuração de retenção de dados da Adobe Experience Platform. Se você tiver dados correspondentes a 25 meses na Experience Platform, o CJA obterá 25 meses de dados por meio do preenchimento retroativo. Se você excluísse 10 desses meses na Platform, o CJA manteria os 15 meses restantes.
+Se deixar o padrão (desmarcado), o período de retenção será substituído pela configuração de retenção de dados da Adobe Experience Platform. Se você tiver dados correspondentes a 25 meses no Experience Platform, o Customer Journey Analytics obterá 25 meses de dados por meio do preenchimento retroativo. Se você excluísse 10 desses meses na Platform, o Customer Journey Analytics manteria os 15 meses restantes.
 
-A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe configuração de janela de dados contínuos para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data/hora aplicáveis. Se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa, e já que eles são unidos a conjuntos de dados de eventos, os dados serão retidos no CJA com base nas configurações de retenção de dados nos carimbos de data e hora do conjunto de dados de eventos.
+A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe configuração de janela de dados contínuos para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data/hora aplicáveis. Se sua conexão incluir qualquer perfil ou conjunto de dados de pesquisa, desde que estejam unidos a conjuntos de dados do evento, os dados serão retidos no Customer Journey Analytics com base nas configurações de retenção de dados nos carimbos de data e hora do conjunto de dados do evento.
 

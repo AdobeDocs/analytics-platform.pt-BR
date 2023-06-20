@@ -1,35 +1,35 @@
 ---
-title: Visão geral de publicação de públicos-alvo do CJA
+title: Visão geral de publicação do Customer Journey Analytics Audiences
 description: Saiba mais sobre o conceito de publicação de público-alvo no Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
-source-git-commit: 7b86650cd3475a203d597baeec2ec2152e082b10
+source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 83%
+source-wordcount: '515'
+ht-degree: 54%
 
 ---
 
-# Visão geral da publicação de público-alvo do CJA
+# Visão geral de publicação do Customer Journey Analytics Audience
 
-Agora você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics (CJA) no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCDP) no Adobe Experience Platform para direcionamento e personalização de clientes.
+Agora você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCDP) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
-A publicação de públicos-alvo fornece uma maneira clara de ativar e executar ações em insights encontrados no CJA. Essas ações podem incluir:
+A publicação de públicos-alvo fornece uma maneira clara de ativar e executar ações em insights encontrados no Customer Journey Analytics. Essas ações podem incluir:
 
 * Uso do público-alvo para uma jornada no Adobe Journey Optimizer.
 * Exportação do público-alvo para um terceiro por meio de um destino da Experience Platform.
-* Enriquecimento do perfil do cliente em tempo real com atributos úteis derivados de dados baseados em eventos no CJA.
+* Enriquecimento do perfil do cliente em tempo real com atributos úteis derivados de dados baseados em eventos no Customer Journey Analytics.
 * Tudo isso é feito com latência mínima após publicar o público. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=pt-BR#latency)
 * Publicação de públicos-alvo únicos ou públicos-alvo recorrentes.
 
-Os públicos-alvo criados no CJA não precisam se basear em conjuntos de dados habilitados para o perfil. Você pode assimilar dados históricos no Experience Platform sem ativar conjuntos de dados e esquemas associados para o perfil. Em seguida, use esses conjuntos de dados para descobrir públicos relevantes no CJA e publicá-los no RTCDP no Experience Platform para fins de ativação.
+Os públicos-alvo criados no Customer Journey Analytics não precisam se basear em conjuntos de dados habilitados para o perfil. Você pode assimilar dados históricos no Experience Platform sem ativar conjuntos de dados e esquemas associados para o perfil. Em seguida, use esses conjuntos de dados para descobrir públicos relevantes no Customer Journey Analytics e publicá-los no RTCDP no Experience Platform para fins de ativação.
 
 ## Terminologia principal
 
-**Público-alvo**: um conjunto ou lista de identidades que têm um namespace e uma ID específica relacionada a esse namespace. Os públicos-alvo são transportáveis da Adobe Experience Platform e dos aplicativos que estão nela (como o CJA). Os públicos-alvo podem conter namespaces mistos.
+**Público-alvo**: um conjunto ou lista de identidades que têm um namespace e uma ID específica relacionada a esse namespace. Os públicos-alvo são transportáveis da Adobe Experience Platform e dos aplicativos que estão nela (como o Customer Journey Analytics). Os públicos-alvo podem conter namespaces mistos.
 
-**Filtro**: um conjunto de regras que, quando avaliado ao longo de um conjunto de dados por um período, produz um subconjunto de dados. Um filtro pode ser usado no processo de criação de um público-alvo quando combinado a outros serviços de suporte. Os filtros são definidos e mantidos no CJA.
+**Filtro**: um conjunto de regras que, quando avaliado ao longo de um conjunto de dados por um período, produz um subconjunto de dados. Um filtro pode ser usado no processo de criação de um público-alvo quando combinado a outros serviços de suporte. Os filtros são definidos e mantidos no Customer Journey Analytics.
 
-**Filtros** versus **Segmentos**: o CJA não usa o conceito de “segmentos”, em vez disso, usa “filtros”. Embora ambos sejam um conjunto de regras que podem conter lógica semelhante, eles produzem saídas diferentes. Um filtro é usado para restringir um conjunto de dados para fins de análise. Um segmento é usado para produzir uma lista de identidades que podem ser usadas para ativação. Os segmentos produzem públicos-alvo no Perfil do cliente em tempo real, enquanto os filtros (sozinhos) não. A Publicação de público-alvo do CJA é o processo pelo qual usamos um filtro do CJA para criar um público-alvo que pode ser consumido pelo Perfil do cliente em tempo real.
+**Filtros** versus **Segmentos**: o Customer Journey Analytics não usa o conceito de &quot;segmentos&quot;, em vez disso, usa &quot;filtros&quot;. Embora ambos sejam um conjunto de regras que podem conter lógica semelhante, eles produzem saídas diferentes. Um filtro é usado para restringir um conjunto de dados para fins de análise. Um segmento é usado para produzir uma lista de identidades que podem ser usadas para ativação. Os segmentos produzem públicos-alvo no Perfil do cliente em tempo real, enquanto os filtros (sozinhos) não. Publicação de público-alvo do Customer Journey Analytics é o processo pelo qual usamos um filtro Customer Journey Analytics para criar um público-alvo que pode ser consumido pelo Perfil do cliente em tempo real.
 
 ## Permissões
 
@@ -41,7 +41,7 @@ Os públicos-alvo criados no CJA não precisam se basear em conjuntos de dados h
 
 ## Governança de dados e consentimento
 
-Ao publicar um público no CJA, os rótulos e as políticas da Governança de dados anexadas aos campos usados no público são registrados.  Quando o público é ativado em qualquer aplicativo da Adobe Experience, todos os rótulos e políticas de Governança de dados associados estão disponíveis para esse público e a imposição apropriada pode ser aplicada. [Saiba mais sobre consentimento](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=pt-BR#consent-policy).
+Ao publicar um público-alvo no Customer Journey Analytics, os rótulos e as políticas da Governança de dados anexadas aos campos usados no público-alvo são registrados.  Quando o público é ativado em qualquer aplicativo da Adobe Experience, todos os rótulos e políticas de Governança de dados associados estão disponíveis para esse público e a imposição apropriada pode ser aplicada. [Saiba mais sobre consentimento](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=pt-BR#consent-policy).
 
 ## Próximas etapas
 
