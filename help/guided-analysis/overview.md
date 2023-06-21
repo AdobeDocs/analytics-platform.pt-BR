@@ -1,9 +1,10 @@
 ---
 title: Visão geral da análise guiada
 description: Um método de análise de dados no Customer Journey Analytics que permite que as equipes de produtos gerem relatórios e insights facilmente.
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
+source-git-commit: e2020d9194f7885f80671214829f06245bbab328
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '731'
 ht-degree: 1%
 
 ---
@@ -17,10 +18,6 @@ A análise guiada é um formato de relatório que permite que as equipes de prod
 Semelhante aos cartões de pontuação do Analysis Workspace e Mobile, um relatório de análise guiada usa dados de um [Visualização de dados](../data-views/data-views.md), que faz referência aos dados no Adobe Experience Platform por meio de uma [Conexão](../connections/overview.md). Todos os relatórios criados na análise guiada podem ser transferidos facilmente para a Analysis Workspace para pesquisa adicional.
 
 Os relatórios de análise guiada apresentam atualmente três tipos de análise: [Funil](analysis-types/funnel.md), [Tendências](analysis-types/trends.md), e [Crescimento do usuário](analysis-types/user-growth.md). Cada um desses tipos de análise tem vários tipos de visualização, que fornecem insights adicionais para cada um desses relatórios.
-
-## Provisionamento
-
-A análise guiada é um complemento pago do Customer Journey Analytics. Se sua organização quiser começar a usar esse recurso, entre em contato com a equipe de conta do Adobe.
 
 ## Interface
 
@@ -45,7 +42,9 @@ A análise guiada contém as seguintes partes da interface:
 
 {style="table-layout:auto"}
 
-## Permissões
+## Provisionamento
+
+A análise guiada faz parte do Adobe Product Analytics, que é um complemento pago do Customer Journey Analytics. Se sua organização quiser começar a usar esse recurso, entre em contato com a equipe de conta do Adobe.
 
 O Adobe planeja fornecer permissões específicas para a Análise guiada no futuro.
 
