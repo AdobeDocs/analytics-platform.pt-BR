@@ -3,16 +3,16 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
+source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 74%
+source-wordcount: '1426'
+ht-degree: 70%
 
 ---
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (junho de 2023)
 
-**Última atualização**: 21 de junho de 2023
+**Última atualização**: 22 de junho de 2023
 
 As versões do Adobe Customer Journey Analytics operam em uma [modelo de entrega contínua](releases.md) que permite uma abordagem mais escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -56,7 +56,7 @@ AN-318343; AN-319453
 
 | Aviso | Aviso adicionado ou atualizado | Descrição |
 | --- | --- | --- |
-| N/D | N/D | N/D |
+| Alterações na forma como o Customer Journey Analytics processa dados | 22 de junho de 2023 | Recentemente, alteramos a forma como processamos dados no Customer Journey Analytics.<p>**Modo antigo:**<ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no Adobe Experience Platform. (Tamanho do lote > 50 milhões de linhas: superior a 90 minutos.)</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 7 dias<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul>**Nova forma (a partir de junho de 2023)**<ul><li>Todos os dados de evento com um carimbo de data e hora menor que 24 horas são transmitidos no.</li><li>Quaisquer dados de evento com um carimbo de data e hora de mais de 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados preenchimento retroativo e serão assimilados em uma prioridade mais baixa.</li></ul> |
 
 ## Avisos de fim da vida útil (EOL) {#eol}
 

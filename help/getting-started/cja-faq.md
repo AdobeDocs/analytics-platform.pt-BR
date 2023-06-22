@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
+source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
 workflow-type: tm+mt
-source-wordcount: '2161'
-ht-degree: 83%
+source-wordcount: '2217'
+ht-degree: 72%
 
 ---
 
@@ -132,7 +132,13 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 
 +++**Qual é a latência esperada do [!UICONTROL Customer Journey Analytics] dados sobre [!UICONTROL Adobe Experience Platform]?**
 
+Recentemente, alteramos a forma como processamos dados no Customer Journey Analytics.
+
+**Modo antigo:**
 <ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no Adobe Experience Platform. (Tamanho do lote &gt; 50 milhões de linhas: superior a 90 minutos.)</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 7 dias<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul>
+
+**Nova forma (a partir de junho de 2023)**
+<ul><li>Todos os dados de evento com um carimbo de data e hora menor que 24 horas são transmitidos no.</li><li>Quaisquer dados de evento com um carimbo de data e hora de mais de 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados preenchimento retroativo e serão assimilados em uma prioridade mais baixa.</li></ul>
 
 +++
 
@@ -148,14 +154,14 @@ Quando se trata de exclusão, nos referimos a seis tipos de componentes: sandbox
 
 | Se você... | Isso acontece... |
 | --- | --- |
-| Excluir uma sandbox na [!UICONTROL Adobe Experience Platform] | A exclusão de uma sandbox interromperá o fluxo de dados para qualquer conexão do [!UICONTROL Customer Journey Analytics] com conjuntos de dados nessa sandbox. Atualmente, [!UICONTROL Conexões] no Customer Journey Analytics vinculado à sandbox excluída não será automaticamente excluído. |
+| Excluir uma sandbox na [!UICONTROL Adobe Experience Platform] | A exclusão de uma sandbox interromperá o fluxo de dados para qualquer conexão do [!UICONTROL Customer Journey Analytics] com conjuntos de dados nessa sandbox. Atualmente, [!UICONTROL Conexões] em Customer Journey Analytics vinculados à sandbox excluída não são excluídos automaticamente. |
 | Excluir um esquema na [!UICONTROL Adobe Experience Platform], mas não os conjuntos de dados associados a esse esquema | [!UICONTROL A Adobe Experience Platform] não permite a exclusão de [!UICONTROL esquemas] que tenham um ou mais [!UICONTROL conjuntos de dados] associados a eles. No entanto, um Administrador com o conjunto apropriado de direitos pode excluir os conjuntos de dados primeiro e, em seguida, excluir o esquema. |
-| Excluir um conjunto de dados no data lake da [!UICONTROL Adobe Experience Platform] | A exclusão de um conjunto de dados na Adobe Experience Platform interromperá o fluxo de dados desse conjunto de dados para qualquer Conexão Customer Journey Analytics que inclua esse conjunto de dados. Quaisquer dados desse conjunto de dados são excluídos automaticamente das Conexões Customer Journey Analytics associadas. |
+| Excluir um conjunto de dados no data lake da [!UICONTROL Adobe Experience Platform] | A exclusão de um conjunto de dados na Adobe Experience Platform interrompe o fluxo de dados desse conjunto de dados para qualquer Conexão Customer Journey Analytics que inclua esse conjunto de dados. Quaisquer dados desse conjunto de dados são excluídos automaticamente das Conexões Customer Journey Analytics associadas. |
 | Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Entre em contato com a Equipe de conta do Adobe para iniciar o processo de exclusão de um conjunto de dados em uma conexão que foi salva. |
 | Excluir um lote de um conjunto de dados (na [!UICONTROL Adobe Experience Platform]) | Se um lote for excluído de uma [!UICONTROL Adobe Experience Platform] , o mesmo lote será removido de qualquer Conexão Customer Journey Analytics que contenha esse lote específico.  O Customer Journey Analytics é notificado de exclusões em lote no [!UICONTROL Adobe Experience Platform]. |
 | Excluir um lote **enquanto ele estiver sendo assimilado** no [!UICONTROL Customer Journey Analytics] | Se houver apenas um lote no conjunto de dados, nenhum dado ou dado parcial desse lote será exibido no [!UICONTROL Customer Journey Analytics]. A assimilação será revertida. Por exemplo, se houver cinco lotes no conjunto de dados e três deles já tiverem sido assimilados quando o conjunto de dados tiver sido excluído, os dados desses três lotes aparecerão no [!UICONTROL Customer Journey Analytics]. |
-| Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Espaço de trabalho que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul> |
-| Excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que todos os projetos do Espaço de trabalho que dependem dessa visualização de dados excluída deixarão de funcionar. |
+| Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indica que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Espaço de trabalho que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul> |
+| Excluir uma visualização de dados no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indica que qualquer projeto do Workspace que depende dessa visualização de dados excluída deixará de funcionar. |
 
 ## 7. Considerações ao mesclar conjuntos de relatórios no Customer Journey Analytics {#merge-reportsuite}
 
@@ -170,16 +176,13 @@ Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem 
 | [!UICONTROL Persistência] | A [Persistência](../data-views/component-settings/persistence.md) se estende pelos conjuntos de relatórios, o que afeta os [!UICONTROL filtros], a [!UICONTROL atribuição] e assim por diante. Os números podem não ser correspondidos corretamente. |
 | [!UICONTROL Classificações] | As [!UICONTROL Classificações] não são automaticamente desduplicadas ao mesclar conjuntos de relatórios. Ao combinar vários arquivos de classificações em um único [!UICONTROL pesquisa] conjunto de dados, você pode encontrar problemas. |
 
-
 ## 8. [!UICONTROL Adobe Analytics] componentes
 
-
-+++**É possível compartilhar/publicar [!UICONTROL filtros] ([!UICONTROL segmentos]) do [!DNL Customer Journey Analytics] no Perfil unificado da Experience Platform ou em outros aplicativos da Experience Cloud?**
++++**Posso compartilhar/publicar [!UICONTROL filtros] de [!DNL Customer Journey Analytics] para o Experience Platform Real-Time CDP ou outros aplicativos Experience Cloud?**
 
 Ainda não, mas estamos trabalhando ativamente para fornecer esse recurso.
 
 +++
-
 
 +++**O que aconteceu com minha antiga configuração de [!UICONTROL eVar]?**
 
@@ -187,13 +190,11 @@ Ainda não, mas estamos trabalhando ativamente para fornecer esse recurso.
 
 +++
 
-
 +++**Onde estão todas as minhas configurações de sessão e persistência de variável agora?**
 
-[!UICONTROL O Customer Journey Analytics] aplica todas essas configurações no momento do relatório e essas configurações agora residem na Exibição de dados. As alterações nessas configurações agora são retroativas e você pode ter várias versões usando várias visualizações de dados.
+[!UICONTROL Customer Journey Analytics] O aplica todas essas configurações no momento do relatório e essas configurações agora residem nas visualizações de dados. As alterações nessas configurações agora são retroativas e você pode ter várias versões usando várias visualizações de dados!
 
 +++
-
 
 +++**O que acontece com nossos segmentos/métricas calculadas atuais?**
 
@@ -201,13 +202,11 @@ Ainda não, mas estamos trabalhando ativamente para fornecer esse recurso.
 
 +++
 
-
 +++**Como o [!UICONTROL Customer Journey Analytics] lida com limitações `Uniques Exceeded`?**
 
 [!UICONTROL O Customer Journey Analytics] não tem limitações de valor exclusivo, portanto, não é necessário se preocupar com elas.
 
 +++
-
 
 +++**Se eu for um cliente atual do [!DNL Data Workbench], posso migrar para o [!UICONTROL Customer Journey Analytics] agora?**
 
@@ -229,10 +228,10 @@ Por exemplo, digamos que o seu contrato dê direito a um milhão de linhas de da
 
 Em alguns casos, você pode notar que o número total de eventos assimilados pela sua conexão é diferente do número de linhas no conjunto de dados na [!UICONTROL Adobe Experience Platform]. Neste exemplo, o conjunto de dados &quot;Impressão B2B&quot; tem 7650 linhas, mas o conjunto de dados contém 3830 linhas na [!UICONTROL Adobe Experience Platform]. Há várias razões pelas quais podem ocorrer discrepâncias, e as seguintes etapas podem ser executadas para diagnosticar:
 
-1. Detalhe essa dimensão por **[!UICONTROL ID do conjunto de dados da Plataform]** e você observará dois conjuntos de dados com o mesmo tamanho, mas diferentes **[!UICONTROL IDs do conjunto de dados do Platform]**. Cada conjunto de dados tem 3825 registros. Isso significa que o [!UICONTROL Customer Journey Analytics] ignorou cinco registros devido a IDs de pessoa ausentes ou a carimbos de data e hora ausentes:
+1. Detalhar esta dimensão por **[!UICONTROL ID do conjunto de dados da plataforma]** e você observará dois conjuntos de dados com o mesmo tamanho, mas diferentes **[!UICONTROL IDs do conjunto de dados da plataforma]**. Cada conjunto de dados tem 3825 registros. Isso significa que o [!UICONTROL Customer Journey Analytics] ignorou cinco registros devido a IDs de pessoa ausentes ou a carimbos de data e hora ausentes:
 
    ![detalhamento](assets/data-size2.png)
 
-2. Além disso, se verificarmos a [!UICONTROL Adobe Experience Platform], não há conjunto de dados com a ID &quot;5f21c12b732044194bffc1d0&quot;, portanto, alguém excluiu esse conjunto de dados específico da [!UICONTROL Adobe Experience Platform] quando a conexão inicial estava sendo criada. Mais tarde, ele foi adicionado ao Customer Journey Analytics novamente, mas uma [!UICONTROL ID do conjunto de dados da plataforma] diferente foi gerada pela [!UICONTROL Adobe Experience Platform].
+2. Além disso, se fizermos check-in [!UICONTROL Adobe Experience Platform], não há conjunto de dados com a ID &quot;5f21c12b732044194bffc1d0&quot;, portanto, alguém excluiu esse conjunto de dados específico de [!UICONTROL Adobe Experience Platform] quando a conexão inicial foi criada. Mais tarde, ele foi adicionado ao Customer Journey Analytics novamente, mas um diferente [!UICONTROL ID do conjunto de dados da plataforma] foi gerado por [!UICONTROL Adobe Experience Platform].
 
 Leia mais sobre as [implicações do conjunto de dados e a exclusão de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#implications-of-deleting-data-components) no [!UICONTROL Customer Journey Analytics] e na [!UICONTROL Adobe Experience Platform].
