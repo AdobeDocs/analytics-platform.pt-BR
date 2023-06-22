@@ -3,10 +3,10 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: f224a37190d60e7f055fdeb39c42dd77d8764259
+source-git-commit: 3c6d1cd351df9a8db8e2fcfe66ecf713ae680c16
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 75%
+source-wordcount: '1318'
+ht-degree: 74%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 75%
 
 **Última atualização**: 21 de junho de 2023
 
-As versões do Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Devido a isso, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
+As versões do Adobe Customer Journey Analytics operam em uma [modelo de entrega contínua](releases.md) que permite uma abordagem mais escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
 ## Destaques da versão {#highlights}
 
@@ -26,7 +26,7 @@ As versões do Customer Journey Analytics operam em um [modelo de entrega contí
 | **Suporte à conversão de moeda** | A conversão de moeda é compatível como parte da formatação de um componente de métrica em uma Visualização de dados. [Saiba mais](../data-views/component-settings/format.md#currency) | 7 de junho de 2023 | 21 de junho de 2023 |
 | **Acesso do Power BI e do Tableau às visualizações de dados do Customer Journey Analytics** | O Adobe Customer Journey Analytics SQL Connector permite o acesso SQL a visualizações de dados definidas no Customer Journey Analytics. Engenheiros e analistas de dados mais familiarizados com o Power BI, Tableau ou outras ferramentas de business intelligence e visualização agora podem criar relatórios e painéis com base nas mesmas visualizações de dados que os usuários do Customer Journey Analytics estão usando para seus projetos Analysis Workspace. [Saiba mais](/help/data-views/sql-connector.md) |  | 30 de junho de 2023 |
 | **Suporte de pesquisa expandido para perfil e dados de pesquisa** | Você poderá adicionar conjuntos de dados de pesquisa, não apenas a conjuntos de dados de evento, mas também a conjuntos de dados de perfil e pesquisa. | 28 de junho de 2023 | 12 de julho de 2023 |
-| **Pesquisas geográficas do Experience Edge** | Você poderá criar relatórios usando dados de geolocalização no Customer Journey Analytics assim que as Pesquisas geográficas de borda da experiência estiverem ativadas para a sua sequência de dados. |  | 26 de julho de 2023 |
+| **Pesquisas geográficas do Experience Edge** | Você poderá criar relatórios usando dados de geolocalização no Customer Journey Analytics assim que as pesquisas geográficas do Adobe Experience Edge estiverem habilitadas para a sua sequência de dados. |  | 26 de julho de 2023 |
 
 {style="table-layout:auto"}
 
