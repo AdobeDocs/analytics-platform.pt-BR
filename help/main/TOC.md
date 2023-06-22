@@ -11,8 +11,8 @@ user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e co
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 85%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
