@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: cf11fa76503e700c07de7872b5f6c8a73b1d94d1
+source-git-commit: eb05f22fdef55147da3bb84ba038f52ee7769167
 workflow-type: tm+mt
 source-wordcount: '2210'
 ht-degree: 72%
@@ -132,12 +132,11 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 
 +++**Qual é a latência esperada do [!UICONTROL Customer Journey Analytics] dados sobre [!UICONTROL Adobe Experience Platform]?**
 
+<ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no Adobe Experience Platform. (Tamanho do lote &gt; 50 milhões de linhas: superior a 90 minutos.)</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 7 dias<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul>
+
 Recentemente, alteramos a forma como processamos dados no Customer Journey Analytics:
 
 <ul><li>Todos os dados de evento com um carimbo de data e hora menor que 24 horas são transmitidos no.</li><li>Quaisquer dados de evento com um carimbo de data e hora de mais de 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados preenchimento retroativo e serão assimilados em uma prioridade mais baixa.</li></ul>
-
-<ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no Adobe Experience Platform. (Tamanho do lote &gt; 50 milhões de linhas: superior a 90 minutos.)</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 7 dias<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul>
-
 
 +++
 
