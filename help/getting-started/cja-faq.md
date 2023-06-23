@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: eb05f22fdef55147da3bb84ba038f52ee7769167
+source-git-commit: b66aed675153af3a2a0fbb77569d5c4c90d48022
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2199'
 ht-degree: 72%
 
 ---
@@ -132,7 +132,7 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 
 +++**Qual é a latência esperada do [!UICONTROL Customer Journey Analytics] dados sobre [!UICONTROL Adobe Experience Platform]?**
 
-<ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no Adobe Experience Platform. (Tamanho do lote &gt; 50 milhões de linhas: superior a 90 minutos.)</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 7 dias<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul>
+<ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no Adobe Experience Platform. (Tamanho do lote &gt; 50 milhões de linhas: superior a 90 minutos.)</li><li>Preenchimentos retroativos pequenos: no prazo de 7 dias<li>Preenchimentos retroativos grandes: em 30 dias</li></ul>
 
 Recentemente, alteramos a forma como processamos dados no Customer Journey Analytics:
 
