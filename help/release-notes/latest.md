@@ -3,9 +3,9 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 68041d22c55d46d740307f2ad2b0cefa249a7e96
+source-git-commit: cf11fa76503e700c07de7872b5f6c8a73b1d94d1
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1376'
 ht-degree: 70%
 
 ---
@@ -56,7 +56,7 @@ AN-318343; AN-319453
 
 | Aviso | Aviso adicionado ou atualizado | Descrição |
 | --- | --- | --- |
-| Alterações na forma como o Customer Journey Analytics processa dados | 22 de junho de 2023 | Recentemente, alteramos a forma como processamos dados no Customer Journey Analytics.<p>**Modo antigo:**<ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no Adobe Experience Platform. (Tamanho do lote > 50 milhões de linhas: superior a 90 minutos.)</li><li>Pequenos preenchimentos retroativos - Por exemplo, um conjunto de dados de pesquisa de 10 milhões de linhas: no prazo de 7 dias<li>Preenchimentos retroativos grandes - Por exemplo, 500 bilhões de linhas: 30 dias</li></ul>**Nova forma (a partir de junho de 2023)**<ul><li>Todos os dados de evento com um carimbo de data e hora menor que 24 horas são transmitidos no.</li><li>Quaisquer dados de evento com um carimbo de data e hora de mais de 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados preenchimento retroativo e serão assimilados em uma prioridade mais baixa.</li></ul> |
+| Alterações na forma como o Customer Journey Analytics processa dados | 22 de junho de 2023 | Recentemente, alteramos a forma como processamos dados no Customer Journey Analytics.<ul><li>Todos os dados de evento com um carimbo de data e hora menor que 24 horas são transmitidos no.</li><li>Quaisquer dados de evento com um carimbo de data e hora de mais de 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados preenchimento retroativo e serão assimilados em uma prioridade mais baixa.</li></ul> |
 
 ## Avisos de fim da vida útil (EOL) {#eol}
 
