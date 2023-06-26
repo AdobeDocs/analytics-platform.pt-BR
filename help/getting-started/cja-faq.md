@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Perguntas frequentes.
 exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
-source-git-commit: b66aed675153af3a2a0fbb77569d5c4c90d48022
+source-git-commit: 7a2abd797b89de094cf00ec1d75984e47452da40
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2185'
 ht-degree: 72%
 
 ---
@@ -130,15 +130,11 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 >[!NOTE]
 >Não há tamanho de dados fixo no Customer Journey Analytics e, portanto, o Adobe não pode se comprometer com um tempo de assimilação padrão. Estamos trabalhando ativamente para reduzir essas latências por meio de novas atualizações e otimização de assimilação.
 
-+++**Qual é a latência esperada do [!UICONTROL Customer Journey Analytics] dados sobre [!UICONTROL Adobe Experience Platform]?**
-
 <ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estiverem disponíveis no Adobe Experience Platform. (Tamanho do lote &gt; 50 milhões de linhas: superior a 90 minutos.)</li><li>Preenchimentos retroativos pequenos: no prazo de 7 dias<li>Preenchimentos retroativos grandes: em 30 dias</li></ul>
 
 Recentemente, alteramos a forma como processamos dados no Customer Journey Analytics:
 
 <ul><li>Todos os dados de evento com um carimbo de data e hora menor que 24 horas são transmitidos no.</li><li>Quaisquer dados de evento com um carimbo de data e hora de mais de 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados preenchimento retroativo e serão assimilados em uma prioridade mais baixa.</li></ul>
-
-+++
 
 ## 5. Definir janela contínua para retenção de dados de [!UICONTROL Conexão] {#data-retention}
 
