@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
 badgeDerivedFields: label="New Feature" type="Positive"
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cc33257a04214ba786d7e5510a1b6bc618a84883
 workflow-type: tm+mt
-source-wordcount: '3262'
+source-wordcount: '3281'
 ht-degree: 8%
 
 ---
@@ -761,4 +761,5 @@ Você define um `Query String CID` campo derivado. Você usa o [!UICONTROL ANÁL
 As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 
 - Você pode usar no máximo 10 campos de esquema diferentes (sem incluir campos padrão) ao definir regras para um campo derivado.
+   - A partir desse máximo de 10 campos de esquema diferentes, somente um máximo de 3 campos de esquema de pesquisa ou esquema de perfil são permitidos.
 - Você pode ter no máximo 100 campos derivados por conexão Customer Journey Analytics.
