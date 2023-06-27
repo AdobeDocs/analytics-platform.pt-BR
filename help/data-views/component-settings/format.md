@@ -4,10 +4,10 @@ description: Configure como uma métrica é formatada.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 5c6e7c51369b451ac0efdcead86f71e38bd3a853
+source-git-commit: 585242be7ffff5b089d8452d34f7ee012a7d01f5
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 32%
+source-wordcount: '532'
+ht-degree: 30%
 
 ---
 
@@ -40,26 +40,20 @@ Para exibir uma moeda para uma métrica:
 
 1. Insira o número de **[!UICONTROL Casas decimais]**.
 
-2. Selecione uma moeda na caixa **[!UICONTROL Exibir moeda em]** lista.
+1. Selecione uma moeda na caixa **[!UICONTROL Exibir moeda em]** lista.
 
 
 ### Converter e exibir moeda
 
-Para ativar a conversão de uma moeda para uma métrica:
+Para ativar a conversão de uma moeda para uma ou mais métricas:
 
-- Configure sua conexão Customer Journey Analytics para conter pelo menos um conjunto de dados de evento que contenha uma dimensão de código de moeda para cada evento que contenha uma métrica de moeda. Essa dimensão de código monetário usa um código monetário alfabético em conformidade com a [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) padrão para representação de moedas. Por exemplo, USD por $, EUR por €, GBP por £.
-
-- Você aplicou (opcionalmente) a variável [!UICONTROL Código de moeda] rótulo de contexto para uma ou mais dimensões que definem códigos monetários disponíveis em seu conjunto de dados.
-
-  Para aplicar o [!UICONTROL Código de moeda] rótulo de contexto, no campo [!UICONTROL Componentes] da sua Visualização de dados:
-
-  <!--![Currency Context Label](../assets/currency-context-label.png)-->
+- Configure sua conexão Customer Journey Analytics para conter pelo menos um conjunto de dados de evento que contenha uma dimensão de código de moeda para cada evento que contenha uma métrica de moeda. Essa dimensão de código monetário usa um código monetário alfabético em conformidade com a [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) padrão para representação de moedas. Esses valores devem estar no formato de letras maiúsculas, como USD por $, EUR por €, GBP por £.
 
    1. Selecione a dimensão de um de seus conjuntos de dados que contém os códigos monetários. Por exemplo, [!UICONTROL Código de moeda].
 
-   2. Selecionar **[!UICONTROL Código de moeda]** do [!UICONTROL Rótulos de contexto] lista.
+   1. Selecionar **[!UICONTROL Código de moeda]** da lista de dimensões.
 
-  Repita essas etapas caso tenha mais dimensões com códigos de moeda que deseja usar para a conversão de moeda.
+- Repita essas etapas caso tenha mais dimensões com códigos de moeda que deseja usar para a conversão de moeda.
 
 >[!NOTE]
 >
@@ -70,17 +64,31 @@ Para definir como converter e exibir uma moeda para uma métrica:
 
 1. Insira o número de **[!UICONTROL Casas decimais]**.
 
-2. Selecionar **[!UICONTROL Converter Simultaneidade]**.
+1. Selecionar **[!UICONTROL Converter Simultaneidade]**.
 
-3. Com base no rótulo de contexto aplicado, a dimensão apropriada do **[!UICONTROL Dimensão do código de moeda]** é selecionada automaticamente. É possível selecionar qualquer outra dimensão, incluindo dimensões às quais você aplicou adicionalmente o rótulo de contexto Código monetário.
+1. Selecione a dimensão apropriada na lista de dimensões que contém o campo de código de moeda.
 
-4. Selecione uma moeda na caixa **[!UICONTROL Converter e exibir moeda em]** lista.
+1. Selecione uma moeda na caixa **[!UICONTROL Converter e exibir moeda em]** lista.
 
 ### Perguntas frequentes
 
 +++ Como a conversão de moeda é executada?
 
 Após o tempo do relatório, o valor da métrica e o código de moeda original são convertidos em USD e, em seguida, convertidos na moeda configurada para exibição. Para essa conversão, são usadas as taxas de câmbio diárias da moeda, aplicáveis no momento do evento.
+
++++
+
+
++++ Até que ponto as taxas de conversão diárias são mantidas?
+
+As taxas de conversão diárias são mantidas nos últimos quatro anos?
+
++++
+
+
++++ E se eu não tiver um campo de código monetário como parte do meu esquema de dados atual?
+
+Existem várias opções para criar um novo campo de código monetário, incluindo Preparo de dados, Distiller de dados e Campos derivados. O Preparo de dados seria ideal para novas implementações, pois seria apenas progressivo. Dependendo da configuração de uma organização, o Data Distiller e os Campos derivados podem ser usados para acessar os valores do código monetário historicamente.
 
 +++
 
