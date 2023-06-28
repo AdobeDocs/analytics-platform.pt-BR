@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: ffa57379c868322290fbe23ba43659620c01f068
 workflow-type: tm+mt
-source-wordcount: '2159'
-ht-degree: 78%
+source-wordcount: '2213'
+ht-degree: 76%
 
 ---
 
@@ -20,6 +20,7 @@ As atualizações a seguir foram feitas na documentação do Customer Journey An
 | Recurso | Descrição |
 | --- | --- |
 | **Junho de 2023** | |
+| Análise e compilação entre canais | Em antecipação às próximas alterações para permitir a compilação e esclarecer ainda mais como a análise entre canais pode ser elevada usando a compilação, todo o conteúdo relacionado à funcionalidade do Cross-Channel Analytics é editado para referir-se à análise entre canais como o recurso de Customer Journey Analytics e à Compilação como uma funcionalidade importante para fazer isso. |
 | Acesso do Power BI e do Tableau às visualizações de dados do Customer Journey Analytics | O Customer Journey Analytics SQL Connector permite o acesso SQL a visualizações de dados definidas no Customer Journey Analytics. [Saiba mais](/help/data-views/sql-connector.md) |
 | Visualizações de dados do Adobe Journey Optimizer | Os administradores do Customer Journey Analytics têm acesso a algumas visualizações de dados adicionais no Customer Journey Analytics, chamadas de &quot;Visualização de dados do AJO (nome da sandbox)&quot;. [Saiba mais](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=pt-BR). |
 | Conversão de moeda | Atualização da documentação do [conversão de moeda](../data-views/component-settings/format.md#currency) suporte. |
