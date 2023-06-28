@@ -4,36 +4,46 @@ description: Todas as configurações que podem ser ajustadas para criar ou edit
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 77647ddbd2deee402629104312db1620de4449e9
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 95%
+source-wordcount: '1385'
+ht-degree: 57%
 
 ---
 
 # Criar ou editar uma visualização de dados
 
-A criação de uma visualização de dados envolve a criação de métricas e dimensões com base em elementos de esquema ou a utilização de componentes padrão. A maioria dos elementos do esquema pode ser uma dimensão ou uma métrica, dependendo das necessidades da sua empresa. Depois de arrastar um elemento do esquema para uma visualização de dados, as opções são exibidas à direita, onde você pode ajustar como a dimensão ou métrica opera no Customer Journey Analytics.
+A criação de uma visualização de dados envolve a criação de métricas e dimensões com base em elementos de esquema ou o uso de componentes padrão. A maioria dos elementos do esquema pode ser uma dimensão ou uma métrica, dependendo das necessidades da sua empresa. Depois de arrastar um elemento do esquema para uma visualização de dados, as opções são exibidas à direita, onde você pode ajustar como a dimensão ou métrica opera no Customer Journey Analytics.
 
 Veja um vídeo sobre este tópico:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
-## Configurar uma visualização de dados
+Para criar ou editar uma visualização de dados:
 
-1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e acesse a guia **[!UICONTROL Visualizações de dados]**.
-2. Clique em **[!UICONTROL Adicionar]** para criar uma visualização de dados ou clique em uma visualização de dados existente para editá-la.
+1. Efetue logon no [Customer Journey Analytics](https://analytics.adobe.com) e vá para a página **[!UICONTROL Visualizações de dados]** guia.
+1. Para criar uma visualização de dados, selecione **[!UICONTROL Criar nova visualização de dados]**. Como alternativa, selecione uma visualização de dados existente na lista de visualizações de dados para editá-la.
 
-![Nova visualização de dados](assets/new-data-view.png)
 
-### Configurações de visualização de dados
+## Configurar
+
+Para configurar uma visualização de dados nova ou existente:
+
+1. Selecione o **[!UICONTROL Configurar]** (se ainda não estiver ativo).
+
+   ![Configurar visualização de dados](assets/dataview-configure.png)
+1. Especificar [!UICONTROL Configurações], [!UICONTROL Container], e [!UICONTROL Calendário] detalhes (veja abaixo).
+1. Selecionar **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecionar **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
+
+
+### Configurações
 
 Fornece configurações abrangentes para a visualização de dados.
 
 | Configuração | Descrição |
 | --- | --- |
 | [!UICONTROL Conexão] | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém um ou mais conjuntos de dados da Adobe Experience Platform. |
-| [!UICONTROL Nome] | Obrigatório. O nome da visualização de dados. Esse valor aparece na lista suspensa superior direita no Analysis Workspace. |
+| [!UICONTROL Nome] | Obrigatório. O nome da visualização de dados. Esse valor aparece na lista suspensa no canto superior direito do Analysis Workspace. |
 | [!UICONTROL Descrição] | Opcional. A Adobe recomenda uma descrição detalhada para que os usuários entendam por que a visualização de dados existe e para quem ela foi projetada. |
 
 {style="table-layout:auto"}
@@ -57,34 +67,34 @@ Indica o formato de calendário que a visualização de dados deve seguir. Você
 | Configuração | Descrição |
 | --- | --- |
 | [!UICONTROL Fuso horário] | Escolha em qual fuso horário você deseja que seus dados sejam apresentados. Se você escolher um fuso horário que funcione no Horário de verão, os dados serão automaticamente ajustados para refletir isso. Na primavera, quando os relógios se ajustam uma hora à frente, há um intervalo de uma hora. No outono, quando os relógios são atrasados em uma hora, uma hora é repetida durante o horário de verão. |
-| [!UICONTROL Tipo de calendário] | Determine como as semanas do mês são agrupadas.<br>**Gregoriano:** formato de calendário padrão. Os trimestres são agrupados por mês.<br>**4-5-4 Varejo:** um calendário de varejo padronizado em 4-5-4. O primeiro e o último meses do trimestre contêm 4 semanas, enquanto o segundo mês do trimestre é constituído por 5 semanas.<br>**Personalizado (4-5-4):** Semelhante ao calendário 4-5-4, exceto que é possível escolher o primeiro dia do ano e o ano em que a semana &quot;extra&quot; ocorre.<br>**Personalizado (4-4-5):** o primeiro e o segundo meses de cada trimestre contêm 4 semanas, enquanto a última semana de cada trimestre consiste em 5 semanas.<br>**Personalizado (5-4-4):** O primeiro mês de cada trimestre consiste em 5 semanas, enquanto o segundo e o terceiro meses de cada trimestre consistem em 4 semanas. |
+| [!UICONTROL Tipo de calendário] | Determine como as semanas do mês são agrupadas.<br>**Gregoriano:** formato de calendário padrão. Os trimestres são agrupados por mês.<br>**4-5-4 Varejo:** um calendário de varejo padronizado em 4-5-4. O primeiro e o último meses do trimestre contêm 4 semanas, enquanto o segundo mês do trimestre consiste em 5 semanas.<br>**Personalizado (4-5-4):** Semelhante ao calendário 4-5-4, exceto que é possível escolher o primeiro dia do ano e o ano em que a semana &quot;extra&quot; ocorre.<br>**Personalizado (4-4-5):** O primeiro e o segundo meses de cada trimestre contêm 4 semanas, enquanto a última semana de cada trimestre consiste em 5 semanas.<br>**Personalizado (5-4-4):** O primeiro mês de cada trimestre consiste em 5 semanas, enquanto o segundo e o terceiro meses de cada trimestre consistem em 4 semanas. |
 | [!UICONTROL Primeiro mês do ano] e [!UICONTROL Primeiro dia da semana] | Visível para o tipo de calendário gregoriano. Especifique em qual mês você deseja que o ano do calendário comece e em que dia você deseja que cada semana comece. |
 | [!UICONTROL Primeiro dia do ano atual] | Visível para tipos de calendário personalizado. Especifique o dia do ano em que deseja que o ano atual comece. O calendário formata automaticamente o primeiro dia de cada semana com base nesse valor. |
-| [!UICONTROL Ano em que a semana “extra” ocorre] | Com a maioria dos calendários de 364 dias (52 semanas de 7 dias cada), cada ano acumula dias restantes até formar uma semana extra. Essa semana extra é então adicionada ao último mês desse ano. Especifique em qual ano você deseja adicionar a semana extra. |
+| [!UICONTROL Ano em que a semana “extra” ocorre] | Com a maioria dos calendários de 364 dias (52 semanas de 7 dias cada), cada ano acumula dias restantes até somar uma semana extra. Essa semana extra é então adicionada ao último mês desse ano. Especifique em qual ano você deseja adicionar a semana extra. |
 
 {style="table-layout:auto"}
 
-## Definir os componentes de uma visualização de dados
+## Componentes
 
-Em seguida, você pode criar métricas e dimensões com base em elementos do esquema. Você também pode usar os componentes padrão.
+Em seguida, você pode definir os componentes de uma visualização de dados, o que significa que é possível criar métricas e dimensões com base em elementos do esquema. Você também pode usar componentes padrão.
 
-1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e acesse a guia **[!UICONTROL Visualizações de dados]**.
-1. Clique em **[!UICONTROL Adicionar]** para criar uma visualização de dados ou clique em uma visualização de dados existente para editá-la.
-1. Clique na guia **[!UICONTROL Componentes]**.
+1. Selecione o **[!UICONTROL Componentes]** guia.
 
-   ![Guia Componentes](assets/components-tab.png)
+   ![Guia Componentes](assets/dataview-components.png)
 
-   Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo. Observe que os componentes já incluídos são componentes obrigatórios padrão (gerados pelo sistema) para todas as visualizações de dados. A Adobe aplica o filtro **[!UICONTROL Contém dados]** por padrão, de modo que apenas os campos do esquema que contêm dados apareçam. Se desejar um campo que não contenha dados, remova esse filtro.
+   Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo.  Os componentes já incluídos são componentes padrão (gerados pelo sistema) necessários para todas as visualizações de dados (como eventos, pessoas, métricas de sessões e dimensões de minuto, trimestre e semana). Adobe também aplica o filtro **[!UICONTROL Contém dados]** e **[!UICONTROL não está obsoleto]** por padrão, para que sejam exibidos apenas campos de Esquema que contêm dados e não foram descontinuados.
 
-1. Arraste um campo de esquema, como `pageTitle`, do painel esquerdo para a seção Métricas ou Dimensões.
+1. Procure um campo de esquema usando ![Ícone de pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Pesquisar campos de esquema]** ou localize um campo acessando qualquer uma das coleções do conjunto de dados, como ![Ícone de pasta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Conjuntos de dados de evento]**.<br/>Como alternativa, é possível criar um campo derivado usando ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Criar campo derivado** . Consulte [Campos derivados](./derived-fields/derived-fields.md) para obter mais informações.
 
-   Você pode arrastar o mesmo campo de esquema nas seções de dimensões ou métricas várias vezes e configurar a mesma dimensão ou métrica de maneiras diferentes. Por exemplo, no campo `pageTitle`, é possível criar uma dimensão chamada “Páginas de produto” e outra chamada “Páginas de erro”, usando diferentes [configurações de componente](component-settings/overview.md) à direita.
+1. Quando você encontrar o campo de esquema específico ou definir o campo derivado, arraste esse campo, como ![Ícone de Identificador](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nome da página]**, do painel esquerdo para a seção Métricas ou Dimension.
+Você pode arrastar o mesmo campo de esquema nas seções de dimensões ou métricas várias vezes e configurar a mesma dimensão ou métrica de maneiras diferentes. Por exemplo, no campo pageName, é possível criar uma dimensão chamada &quot;Páginas de produto&quot; e outra chamada &quot;Páginas de erro&quot;, usando diferentes [Configurações do componente](component-settings/overview.md) à direita.
+Se você arrastar uma pasta de campo de esquema do painel esquerdo, elas serão classificadas automaticamente em seções típicas. Os campos de sequência de caracteres terminam na seção [!UICONTROL Dimensão] e os esquemas do tipo numérico terminam na seção [!UICONTROL Métricas]. Você também pode clicar em **[!UICONTROL Adicionar tudo]** e todos os campos de esquema serão adicionados aos seus respectivos locais.
 
-   ![Guia 3](assets/components-tab-3.png)
+1. Depois de selecionar um componente, as configurações são exibidas à direita.
 
-   Se você arrastar uma pasta de campo de esquema do painel esquerdo, elas serão classificadas automaticamente em seções típicas. Os campos de sequência de caracteres terminam na seção [!UICONTROL Dimensão] e os esquemas do tipo numérico terminam na seção [!UICONTROL Métricas]. Você também pode clicar em **[!UICONTROL Adicionar tudo]** e todos os campos de esquema serão adicionados aos seus respectivos locais.
+   ![Componente de Visualização de dados selecionado](assets/dataview-component-pagename.png)
 
-1. Depois de selecionar o componente, você verá várias configurações à direita. Configure o componente usando [Configurações de componente](component-settings/overview.md). As configurações de componente disponíveis variam, dependendo se o componente é uma dimensão/métrica e do tipo de dados do esquema. As configurações incluem:
+   Configure o componente usando [Configurações de componente](component-settings/overview.md). As configurações de componente disponíveis variam, dependendo se o componente é uma dimensão/métrica e do tipo de dados do esquema. As configurações incluem:
 
    * [[!UICONTROL Atribuição]](component-settings/attribution.md)
    * [[!UICONTROL Comportamento]](component-settings/behavior.md)
@@ -95,29 +105,27 @@ Em seguida, você pode criar métricas e dimensões com base em elementos do esq
    * [[!UICONTROL Persistência]](component-settings/persistence.md)
    * [[!UICONTROL Classificação de valor]](component-settings/value-bucketing.md)
 
-## Métricas ou dimensões duplicadas
+1. Selecionar **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecionar **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
+
+**Métricas ou dimensões duplicadas**
 
 Duplicar métricas ou dimensões e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões a partir de um único campo de esquema. Selecione a configuração [!UICONTROL Duplicar] abaixo do nome da métrica ou das dimensões no canto superior direito. Modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
 
-![Duplicar](assets/duplicate.png)
+**Filtrar campos ou conjuntos de dados de esquema**
 
-## Filtrar campos ou conjuntos de dados de esquema
+Você pode filtrar ![Ícone Filtrar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) campos de esquema no painel esquerdo por [!UICONTROL tipo de dados], [!UICONTROL conjuntos de dados], [!UICONTROL governança de dados], e [!UICONTROL outro] critérios ([!UICONTROL contém dados], [!UICONTROL é identidade], e [!UICONTROL não está obsoleto]):
 
-Você pode filtrar campos de esquema no painel esquerdo pelos seguintes tipos de dados:
+![Filtrar campos](assets/dataview-components-filter.png)
 
-![Filtrar campos](assets/filter-fields.png)
 
-Também é possível filtrar por conjuntos de dados e se um campo de esquema contém dados ou se é uma identidade. Por padrão, a Adobe aplica inicialmente o filtro **[!UICONTROL Contém dados]** a todas as visualizações de dados.
+## Configurações 
 
-![Filtrar outros](assets/filter-other.png)
+1. Selecione o **[!UICONTROL Configurações]** guia.
+1. Configure filtros para aplicar a toda a visualização de dados. Consulte [Configurações (filtros)](#settings-filters) abaixo.
+1. Configurar o tempo limite e as métricas da sessão. Consulte [Configurações da sessão](#session-settings) abaixo.
+1. Selecionar **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecionar **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
-## Configurações  Guia
-
-1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e acesse a guia **[!UICONTROL Visualizações de dados]**.
-1. Clique em **[!UICONTROL Adicionar]** para criar uma visualização de dados ou clique em uma visualização de dados existente para editá-la.
-1. Clique na guia **[!UICONTROL Configurações]**.
-
-### Filtro global
+### Configurações (filtros)
 
 É possível adicionar filtros que se aplicam a toda a visualização de dados. Esse filtro é aplicado a qualquer relatório executado no Espaço de trabalho. Arraste um filtro da lista no painel à esquerda para o campo [!UICONTROL Adicionar filtros].
 
