@@ -3,10 +3,10 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: d48ff9810ac7f2c194e959ab5deb492238362650
+source-git-commit: 2a1f97a9a454c11e0c006579e8f550bda55d47db
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 70%
+source-wordcount: '1435'
+ht-degree: 67%
 
 ---
 
@@ -20,6 +20,7 @@ As versões do Adobe Customer Journey Analytics operam em uma [modelo de entrega
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Análise entre canais e atualizações de documentação de compilação** | Em antecipação às próximas alterações para permitir a compilação e esclarecer ainda mais como a análise entre canais pode ser elevada usando a compilação, a documentação relacionada à funcionalidade do Cross-Channel Analytics é editada para consultar [análise entre canais](../use-cases/cross-channel/cross-channel.md) como o recurso de Customer Journey Analytics e caso de uso, e [Costura](../stitching/overview.md) como uma funcionalidade importante para alcançar esse objetivo. | 28 de junho de 2023 | 28 de junho de 2023 |
 | **Legendas inteligentes** | Enriqueça a narrativa para usuários com resumos em linguagem natural de uma visualização em [!UICONTROL linha]. [Saiba mais](/help/analysis-workspace/visualizations/intelligent-captions.md) | 17 de maio de 2023 | 1 de junho de 2023 |
 | **Compartilhamento de links para projetos (sem necessidade de logon)** | Agora você pode compartilhar links de somente leitura para projetos do Analysis Workspace com pessoas que não têm acesso ao Adobe Analytics. Isso inclui o compartilhamento com pessoas de fora da organização, ou com aquelas de dentro da organização que não estejam provisionadas para o Adobe Analytics. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=pt-BR#share-public-link) <p>Essa funcionalidade está habilitada por padrão e pode ser desativada pelo administrador do sistema. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/user-preferences.html?lang=pt-BR#company-preferences)</p> | 3 de maio de 2023 | 6 de junho de 2023 |
 | **Campos derivados** | Isto representa a versão inicial dos Campos derivados. Um campo derivado permite definir manipulações de dados (muitas vezes complexas) a qualquer momento, por meio de um criador de regras personalizável. Você pode definir ainda mais o campo derivado como um componente (métrica ou dimensão) nas visualizações de dados e, em seguida, usar o campo derivado como um componente no Workspace.<p>Essa versão é compatível com um modelo de canais de marketing e as seguintes funções:</p><ul><li>Concatenar</li><li>Caso Quando</li><li>Localizar e Substituir</li><li>Pesquisa</li><li>Análise de URL</li></ul> <p>[Saiba mais](/help/data-views/derived-fields/derived-fields.md)</p> | 10 de maio de 2023 | 14 de junho de 2023 |
