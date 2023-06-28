@@ -4,9 +4,9 @@ description: Saiba como comparar dados do Adobe Analytics com os dados do Custom
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '905'
 ht-degree: 65%
 
 ---
@@ -47,7 +47,7 @@ O Total de registros por carimbos de data e hora deve corresponder à métrica d
 
 >[!NOTE]
 >
->Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através da [Análise de vários canais](/help/cca/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no Customer Journey Analytics é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no Adobe Analytics, especialmente se a Análise entre canais tiver sido ativada.
+>Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através da [Análise de vários canais](/help/cca/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no Customer Journey Analytics é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no Adobe Analytics, especialmente se a Costura tiver sido ativada.
 
 1. Nos [Serviços de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=pt-BR) da Adobe Experience Platform, execute a seguinte consulta de [!UICONTROL Total de registros por carimbos de data e hora]:
 

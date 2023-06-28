@@ -4,10 +4,10 @@ description: Saiba como o Customer Journey Analytics cria uma conexão combinand
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 72%
+source-wordcount: '584'
+ht-degree: 61%
 
 ---
 
@@ -77,3 +77,28 @@ No entanto, se você incluiu ambas as tabelas em sua conexão, a atribuição se
 | Amarelo | 6 |
 | Azul | 3 |
 | Vermelho | 2 |
+
+## Análise entre canais
+
+O próximo nível de combinação de conjuntos de dados é a análise entre canais, em que os conjuntos de dados de diferentes canais são combinados, com base em um identificador comum (ID de pessoa). A análise entre canais pode se beneficiar da funcionalidade de compilação, permitindo rechavear a ID de pessoa de um conjunto de dados para que o conjunto de dados seja atualizado corretamente e possibilite uma combinação perfeita de vários conjuntos de dados. A compilação analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada.
+
+A análise entre canais permite responder perguntas como:
+
+* Quantas pessoas começam sua experiência em um canal e depois terminam em outro?
+* Quantas pessoas interagem com a minha marca? Quantos e quais tipos de dispositivos eles usam? Como eles se sobrepõem?
+* Com que frequência as pessoas iniciam uma tarefa em um dispositivo móvel e depois movem para um PC de desktop para concluí-la? Os click-throughs da campanha direcionados a um dispositivo levam para a conversão em outro lugar?
+* O quanto muda minha compreensão da eficácia da campanha se eu considerar jornadas entre dispositivos? Como a minha análise de funil muda?
+* Quais são os caminhos mais comuns que os usuários fazem de um dispositivo para outro? Onde eles desistem? Onde eles têm sucesso?
+* Como o comportamento de usuários com vários dispositivos difere dos usuários com um único dispositivo?
+
+
+Para obter mais informações sobre a análise entre canais, consulte o caso de uso específico:
+
+* [Análise entre canais](../use-cases/cross-channel/cross-channel.md)
+
+Para obter uma funcionalidade de compilação de discussão mais detalhada, acesse:
+
+* [Visão geral da compilação](/help/stitching/overview.md)
+* [Como funciona a compilação](../stitching/explained.md)
+* [Perguntas frequentes](/help/stitching/faq.md)
+

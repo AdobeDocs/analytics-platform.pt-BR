@@ -4,9 +4,9 @@ title: Consistência de métricas e contagens de associação de público na Rea
 role: Admin
 feature: CJA Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 25%
 
 ---
@@ -22,7 +22,7 @@ Ao comparar as contagens de associação de público entre a Real-time CDP e o C
 
 Atualmente, a Real-time CDP e o Customer Journey Analytics não compartilham a mesma definição de pessoa. A Real-time CDP depende totalmente das informações contidas no [Gráfico de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=pt-BR) para criar um perfil mesclado.
 
-o Customer Journey Analytics pode ser configurado para usar [Cross-Channel Analytics](/help/cca/overview.md) que extrai identificadores de conjuntos de dados no data lake e aplica uma lógica personalizada para vinculá-los.
+o Customer Journey Analytics pode ser configurado para usar [Costura](../stitching/overview.md) que extrai identificadores de conjuntos de dados no data lake e aplica uma lógica personalizada para vinculá-los.
 
 No futuro, o Customer Journey Analytics poderá usar o Gráfico de identidade.
 
