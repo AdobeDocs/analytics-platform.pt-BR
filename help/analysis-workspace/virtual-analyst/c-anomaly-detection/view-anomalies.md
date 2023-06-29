@@ -3,10 +3,10 @@ description: É possível exibir anomalias em uma tabela ou em um gráfico de li
 title: Exibir anomalias no Analysis Workspace
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: e62261d1d440c0a85e4cab95611c6e6272de6724
-workflow-type: ht
-source-wordcount: '460'
-ht-degree: 100%
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 97%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 100%
 
 É possível exibir anomalias em uma tabela ou em um gráfico de linhas.
 
-## Exibir anomalias em uma tabela {#section_869A87B92B574A38B017A980ED8A29C5}
+## Exibir anomalias em uma tabela {#table}
 
 É possível exibir anomalias em uma Tabela de forma livre da série de tempo.
 
-1. Selecione o ícone de configurações de coluna no cabeçalho da coluna e verifique se a opção [!UICONTROL **Anomalias**] é selecionada na lista de opções. Para obter mais informações, consulte [Configurações de coluna](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
+1. Selecione o ícone de configurações de coluna no cabeçalho da coluna e verifique se a opção [!UICONTROL **Anomalias**] está selecionada na lista de opções. Para obter mais informações, consulte [Configurações de coluna](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
 
 1. Clique fora do menu de configurações para exibir a tabela atualizada.
 
@@ -32,9 +32,9 @@ ht-degree: 100%
 
 1. Selecione o triângulo cinza no canto superior direito de uma linha para exibir detalhes sobre a anomalia. Mostra a extensão (em percentagem) em que o valor real diverge acima ou abaixo do valor esperado.
 
-## Exibir anomalias em um gráfico de linhas {#section_7C1192AFDB4345A8A2CCFB3AE0C47D82}
+## Exibir anomalias em um gráfico de linhas {#line-chart}
 
-Os gráficos de linha são a única visualização que permite visualizar anomalias.
+Um gráfico de linha é a única visualização que permite exibir anomalias.
 
 Para exibir anomalias em um gráfico de linhas:
 
@@ -54,7 +54,7 @@ Para exibir anomalias em um gráfico de linhas:
 
    A **área sombreada clara** é a faixa de confiança, ou o intervalo esperado, em que os valores devem ocorrer. Qualquer valor que não esteja nesse intervalo esperado é uma anomalia.
 
-   Se você tiver várias métricas no gráfico de linha, somente as anomalias são mostradas e você precisa passar o mouse sobre cada uma delas para ver a faixa de confiança da métrica.
+   Se você tiver várias métricas no gráfico de linhas, apenas as anomalias serão exibidas e você deverá passar o mouse sobre cada anomalia para ver a faixa de confiança dessa métrica.
 
    A **linha pontilhada** é o valor esperado exato.
 

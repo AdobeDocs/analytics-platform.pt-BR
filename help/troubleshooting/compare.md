@@ -4,16 +4,16 @@ description: Saiba como comparar dados do Adobe Analytics com os dados do Custom
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 65%
+source-wordcount: '906'
+ht-degree: 64%
 
 ---
 
 # Comparar os dados do Adobe Analytics com os dados de Customer Journey Analytics
 
-À medida que sua organização adota o Customer Journey Analytics, você pode notar algumas diferenças nos dados entre o Adobe Analytics e o Customer Journey Analytics. Isso é normal e pode ocorrer por vários motivos. O Customer Journey Analytics foi projetado para permitir melhorias no que diz respeito a algumas limitações de dados do AA. No entanto, podem ocorrer discrepâncias inesperadas/não intencionais. Este artigo foi projetado para ajudar a diagnosticar e resolver essas diferenças, de modo que você e sua equipe possam usar o Customer Journey Analytics sem obstáculos devido a preocupações com a integridade dos dados.
+À medida que sua organização adota o Customer Journey Analytics, você pode notar algumas diferenças nos dados entre o Adobe Analytics e o Customer Journey Analytics. Isso é normal e pode ocorrer por vários motivos. O Customer Journey Analytics foi projetado para permitir melhorias no que diz respeito a algumas limitações de dados do AA. No entanto, podem ocorrer discrepâncias inesperadas e não intencionais. Este artigo foi projetado para ajudar a diagnosticar e resolver essas diferenças, de modo que você e sua equipe possam usar o Customer Journey Analytics sem obstáculos devido a preocupações com a integridade dos dados.
 
 Suponhamos que você tenha assimilado dados do Adobe Analytics na Adobe Experience Platform por meio de [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR)e criou uma conexão Customer Journey Analytics usando esse conjunto de dados.
 

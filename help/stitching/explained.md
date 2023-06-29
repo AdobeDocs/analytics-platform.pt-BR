@@ -3,7 +3,7 @@ title: Como funciona a compilação
 description: Entenda o conceito de compilação
 solution: Customer Journey Analytics
 feature: Stitching
-source-git-commit: cfe369ca1d0b18e32f1d88b543e549d01ddc0d64
+source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 28%
@@ -129,5 +129,5 @@ Ao receber uma solicitação de privacidade, a linha que contém as informaçõe
 
 * A compilação imediata compila os dispositivos conhecidos, mas não compila imediatamente dispositivos novos ou não reconhecidos.
 * Os dados são repetidos em intervalos regulares e alteram os dados históricos na conexão com base nos dispositivos que eles aprenderam a identificar.
-* A compilação em tempo real e a repetição da compilação são executadas em um conjunto de dados. O resultado é um novo conjunto de dados elevado que é mais adequado para ser usado ao combinar com outros conjuntos de dados (por exemplo, dados da central de atendimento) para executar análise entre canais.
+* A compilação em tempo real e a repetição da compilação são executadas em um conjunto de dados. O resultado é um novo conjunto de dados elevado que é mais adequado para ser usado quando combinado com outros conjuntos de dados (por exemplo, dados da central de atendimento) para executar análise entre canais.
 * As solicitações de privacidade removem identidades que foram propagadas para linhas não autenticadas.
