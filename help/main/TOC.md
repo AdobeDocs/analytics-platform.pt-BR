@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados do Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: 51bc0de7186b87fad4011c2ec77cfe841186a58e
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '948'
 ht-degree: 84%
 
 ---
@@ -247,7 +247,6 @@ ht-degree: 84%
          + [Localizar métricas](../components/calc-metrics/cm-workflow/cm-finding.md)
          + [Criar métricas](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Atribuição e tipo de métrica](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Criar uma métrica “Exibições de página por visita”](../components/calc-metrics/cm-workflow/cm-pvv.md)
          + [Criar uma métrica “Participação”](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Métricas filtradas](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Empilhar e substituir filtros](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
