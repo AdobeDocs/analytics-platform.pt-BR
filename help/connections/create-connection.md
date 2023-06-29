@@ -4,10 +4,10 @@ description: Descreve como criar uma conexão com um conjunto de dados da Plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9721d9899735f2a009d4cea92b52df513eae97a3
 workflow-type: tm+mt
-source-wordcount: '2543'
-ht-degree: 62%
+source-wordcount: '2608'
+ht-degree: 60%
 
 ---
 
@@ -98,12 +98,14 @@ Para cada conjunto de dados adicionado a essa conexão, [!UICONTROL Customer Jou
 >
 >Você deve adicionar pelo menos um conjunto de dados de evento como parte de uma conexão.
 
+![Caixa de diálogo Adicionar conjunto de dados](assets/add-dataset.png)
+
 Há três tipos diferentes de conjunto de dados: [!UICONTROL Evento] dados, [!UICONTROL Perfil] dados e [!UICONTROL Pesquisa] dados.
 
 | Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID de pessoa |
 |---|---|---|---|---|
 | **[!UICONTROL Evento]** | Dados que representam eventos no tempo (por exemplo, visitas da Web, interações, transações, dados de PDV, dados de pesquisa, dados de impressão de anúncio etc.). Por exemplo, esses dados podem ser dados de sequência de cliques típicos, com uma ID do cliente ou uma ID de cookie e um carimbo de data e hora. Com os dados do Evento, você tem flexibilidade para saber qual ID é usada como a ID da pessoa. | É automaticamente definido para o campo de carimbo de data e hora padrão a partir de esquemas baseados em eventos no [!UICONTROL Experience Platform]. | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Série de tempo”. Exemplos incluem “Evento de experiência XDM” ou “Evento de decisão XDM”. | Você pode escolher a ID de pessoa que deseja incluir. Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas identidades pode ser usada como a ID de pessoa. Os exemplos incluem ID de cookie, ID com título, ID de usuário, código de rastreamento e assim por diante. |
-| **[!UICONTROL Pesquisa]** | Esses dados são usados para procurar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode fazer o upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte [Caso de uso B2B](/help/use-cases/b2b/b2b.md) por exemplo. | N/D | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Gravar”, exceto a classe “Perfil individual XDM”. | N/D |
+| **[!UICONTROL Pesquisa]** | Agora é possível adicionar conjuntos de dados como pesquisas de campos em todos os tipos de conjunto de dados: Perfil, Pesquisa e Conjuntos de dados de Evento (o último sempre foi compatível). Esse recurso adicional expande a capacidade do CJA de oferecer suporte a modelos de dados complexos, incluindo a CDP B2B. Esses dados são usados para procurar valores ou chaves encontrados nos dados de Evento, Perfil ou Pesquisa. Você pode adicionar até dois níveis de pesquisas. (Observe que [Campos derivados](/help/data-views/derived-fields/derived-fields.md) não pode ser usado como chaves correspondentes para pesquisas dentro de Conexões.) Por exemplo, você pode fazer o upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte [Caso de uso B2B](/help/use-cases/b2b/b2b.md) por exemplo. | N/D | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Gravar”, exceto a classe “Perfil individual XDM”. | N/D |
 | **[!UICONTROL Perfil]** | Dados que são aplicados a suas pessoas, usuários ou clientes no [!UICONTROL Evento] dados. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe “Perfil individual XDM”. | Você pode escolher a ID de pessoa que deseja incluir. Cada conjunto de dados definido na variável [!DNL Experience Platform] O tem seu próprio conjunto de uma ou mais IDs de pessoa definidas, por exemplo, ID de cookie, ID com título, ID de usuário, código de rastreamento e assim por diante.<br>![ID de pessoa ](assets/person-id.png)**Nota**: se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatórios refletirá isso. Para realmente unir conjuntos de dados, é necessário usar a mesma ID de pessoa. |
 
 {style="table-layout:auto"}
