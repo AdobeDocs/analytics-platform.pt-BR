@@ -4,9 +4,9 @@ description: Descreve como criar uma conexão com um conjunto de dados da Plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 9721d9899735f2a009d4cea92b52df513eae97a3
+source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
 workflow-type: tm+mt
-source-wordcount: '2608'
+source-wordcount: '2605'
 ht-degree: 60%
 
 ---
@@ -98,8 +98,6 @@ Para cada conjunto de dados adicionado a essa conexão, [!UICONTROL Customer Jou
 >
 >Você deve adicionar pelo menos um conjunto de dados de evento como parte de uma conexão.
 
-![Caixa de diálogo Adicionar conjunto de dados](assets/add-dataset.png)
-
 Há três tipos diferentes de conjunto de dados: [!UICONTROL Evento] dados, [!UICONTROL Perfil] dados e [!UICONTROL Pesquisa] dados.
 
 | Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID de pessoa |
@@ -150,7 +148,7 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 
 {style="table-layout:auto"}
 
-## Calcular o número médio de eventos diários
+## Calcular o número médio de eventos diários {#average-number}
 
 Esse cálculo é feito para cada conjunto de dados na conexão.
 
