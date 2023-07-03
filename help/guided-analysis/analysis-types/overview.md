@@ -1,7 +1,9 @@
 ---
 title: Visão geral dos tipos de análise
 description: Consulte as diferentes maneiras pelas quais a análise guiada mostra dados.
-source-git-commit: 03f6b0cef6fa4259041a82173acda852d91e06b5
+exl-id: 567f8ee2-5da8-429f-80d1-93d3a0cf6151
+feature: Guided Analysis
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%

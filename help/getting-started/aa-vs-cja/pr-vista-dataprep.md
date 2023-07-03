@@ -2,10 +2,11 @@
 title: Regras de processamento, VISTA e classificações em relação ao Preparo de dados do Conector de origem do Analytics
 description: Saiba mais sobre a transformação de dados usando regras de processamento e VISTA em relação ao uso do Preparo de dados
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+feature: CJA Basics
+source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 83%
+ht-degree: 80%
 
 ---
 
@@ -29,4 +30,4 @@ O Preparo de dados se cruzou com [classificações](https://experienceleague.ado
 
 Por exemplo, em um campo delimitado, é possível usar o Preparo de dados para dividir esse campo em vários campos individuais sem o uso de classificações. Geralmente, as classificações são uma maneira de adicionar metadados a um campo, carregando um arquivo de pesquisa fornecido fora do fluxo de eventos de entrada do Analytics.
 
-Por exemplo, você pode fazer upload de um arquivo de classificação que agrupa SKUs em “tamanho”, “marca”, “cor” etc. Outra diferença entre classificações e Preparo de dados é que as classificações se aplicam aos dados _tanto históricos quanto futuros_. Por outro lado, os mapeamentos de Preparo de dados são aplicados _antecipadamente_ para dados a partir do momento em que o mapeamento é criado.
+Por exemplo, você pode fazer upload de um arquivo de classificação que agrupa SKUs em &quot;tamanho&quot;, &quot;marca&quot;, &quot;cor&quot; etc. Outra diferença entre classificações e Preparo de dados é que as classificações se aplicam aos dados _tanto históricos quanto futuros_. Por outro lado, os mapeamentos de Preparo de dados são aplicados _antecipadamente_ para dados a partir do momento em que o mapeamento é criado.
