@@ -3,10 +3,10 @@ title: Como funciona a compilação
 description: Entenda o conceito de compilação
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 28%
+source-wordcount: '1246'
+ht-degree: 24%
 
 ---
 
@@ -14,15 +14,15 @@ ht-degree: 28%
 
 A compilação faz um mínimo de duas passagens de dados em um determinado conjunto de dados:
 
-* **Compilação em tempo real**: tenta compilar cada hit à medida que ele chega. Os novos dispositivos de rede para o conjunto de dados que nunca se conectaram normalmente não são compilados neste nível. Os dispositivos já reconhecidos são imediatamente compilados.
+* **Compilação em tempo real**: tenta compilar cada ocorrência (evento) à medida que ela chega. As ocorrências de dispositivos que são &quot;novas&quot; para o conjunto de dados (nunca foram autenticadas) normalmente não são compiladas neste nível. As ocorrências de dispositivos já reconhecidos são compiladas imediatamente.
 
-* **Reproduzir compilação novamente**: &quot;repete&quot; dados com base em identificadores exclusivos que ele aprendeu. É nesse estágio que os novos dispositivos da conexão são compilados. A Adobe oferece dois intervalos de repetição:
+* **Reproduzir compilação novamente**: &quot;repete&quot; dados com base em identificadores exclusivos (IDs transitórias) que ele aprendeu. É nesse estágio que as ocorrências de dispositivos desconhecidos anteriormente (IDs persistentes) são compiladas (em IDs transitórias). A Adobe oferece dois intervalos de repetição:
    * **Diariamente**: os dados são repetidos todos os dias com uma janela de retrospectiva de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os visitantes não autenticados devem se autenticar no mesmo dia em que visitam o site.
-   * **Semanalmente**: os dados são repetidos uma vez por semana com uma janela de retrospectiva de sete dias. Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, dados com menos de uma semana não são compilados.
+   * **Semanalmente**: os dados são repetidos uma vez por semana com uma janela de retrospectiva de sete dias. Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
 
 * **Privacidade (opcional)**: quando solicitações relacionadas à privacidade são recebidas, além de remover a identidade solicitada, qualquer compilação dessa identidade em eventos não autenticados deve ser desfeita.
 
-Os dados além da janela de pesquisa não são repetidos. Um visitante deve se autenticar em uma determinada janela de pesquisa para que uma visita não autenticada e uma visita autenticada sejam identificadas juntas. Depois que um dispositivo é reconhecido, ele é compilado em tempo real a partir desse ponto. As solicitações de privacidade são processadas em dados compilados independentemente do tempo.
+Os dados além da janela de pesquisa não são repetidos. Um visitante deve se autenticar em uma determinada janela de pesquisa para que uma visita não autenticada e uma visita autenticada sejam identificadas juntas. Depois que um dispositivo é reconhecido, ele é compilado em tempo real a partir desse ponto.
 
 ## Etapa 1: compilação em tempo real
 
@@ -127,7 +127,7 @@ Ao receber uma solicitação de privacidade, a linha que contém as informaçõe
 
 ## Resumo
 
-* A compilação imediata compila os dispositivos conhecidos, mas não compila imediatamente dispositivos novos ou não reconhecidos.
+* A compilação imediata compila os eventos de dispositivos conhecidos, mas não compila imediatamente os eventos de dispositivos novos ou não reconhecidos.
 * Os dados são repetidos em intervalos regulares e alteram os dados históricos na conexão com base nos dispositivos que eles aprenderam a identificar.
 * A compilação em tempo real e a repetição da compilação são executadas em um conjunto de dados. O resultado é um novo conjunto de dados elevado que é mais adequado para ser usado quando combinado com outros conjuntos de dados (por exemplo, dados da central de atendimento) para executar análise entre canais.
 * As solicitações de privacidade removem identidades que foram propagadas para linhas não autenticadas.

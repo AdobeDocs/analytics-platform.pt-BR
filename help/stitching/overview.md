@@ -3,10 +3,10 @@ title: Visão geral da compilação
 description: Visão geral da compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 32%
+source-wordcount: '1273'
+ht-degree: 31%
 
 ---
 
@@ -18,7 +18,7 @@ Quando você combina conjuntos de dados com IDs de pessoa semelhantes, a atribui
 
 Infelizmente, nem todos os conjuntos de dados baseados em eventos que fazem parte da sua conexão no Customer Journey Analytics estão preenchidos com dados suficientes para dar suporte a essa atribuição pronta para uso. Especialmente, os conjuntos de dados de experiência baseados na Web ou em dispositivos móveis geralmente não têm informações reais de ID de pessoa disponíveis em todos os eventos.
 
-A compilação permite rechavear identidades nas linhas de um conjunto de dados, para garantir que a ID de pessoa desejada (ID compilada) esteja disponível em cada evento. A compilação analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada. A compilação permite consolidar registros diferentes em uma única ID compilada para análise no nível da pessoa, em vez de no nível do dispositivo ou do cookie.
+A compilação permite rechavear identidades em linhas de um conjunto de dados, garantindo que a ID de pessoa (ID compilada) esteja disponível em cada evento. A compilação analisa os dados do usuário de sessões autenticadas e não autenticadas para determinar o valor de ID transitória comum que pode ser usado como ID compilada. Isso permite consolidar registros desiguais em uma única ID compilada para análise no nível da pessoa, em vez de no nível do dispositivo ou do cookie.
 
 Você se beneficia da análise entre canais se combinar um ou mais conjuntos de dados compilados com outros conjuntos de dados, como dados da central de atendimento, como parte da definição da conexão Customer Journey Analytics. Isso pressupõe que esses outros conjuntos de dados já contenham uma ID de pessoa em cada linha, semelhante à ID compilada.
 
@@ -36,12 +36,13 @@ Antes de usar a compilação, verifique se sua organização está preparada com
    * Para obter dados do Adobe Analytics, consulte [Utilização dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
    * Para outros tipos de dados, consulte [Criar um esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) e [Assimilar dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) na documentação da Adobe Experience Platform.
 
-* O conjunto de dados na Adobe Experience Platform ao qual você deseja aplicar a compilação deve ter duas colunas que ajudem a identificar visitantes:
+* O conjunto de dados do evento no Adobe Experience Platform ao qual você deseja aplicar a compilação deve ter duas colunas que ajudem a identificar visitantes:
 
    * Uma **ID persistente**, um identificador presente em cada linha. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurements do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Adobe Experience Cloud.
-   * Uma **ID transitória**, um identificador presente em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash quando um visitante é autenticado. Você pode usar praticamente qualquer identificador que desejar, desde que ele esteja presente pelo menos uma vez no mesmo evento que determinada ID persistente.
+   * Uma **ID transitória**, um identificador presente em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash quando um visitante é autenticado. Você pode usar praticamente qualquer identificador que desejar. A compilação considerará esse campo como mantendo as informações reais da ID de pessoa. Para obter melhores resultados de compilação, uma ID transitória deve ser enviada nos eventos do conjunto de dados pelo menos uma vez para cada ID persistente.
+Se você planeja incluir esse conjunto de dados em uma conexão Customer Journey Analytics, é preferível que os outros conjuntos de dados também tenham um identificador comum semelhante.
 
-* A compilação inclui a mesclagem de dados de usuário autenticados e não autenticados. Cumpra as leis e regulamentos aplicáveis e obtenha as permissões necessárias do usuário final antes de mesclar conjuntos de dados.
+* A compilação inclui a mesclagem de dados de usuário autenticados e não autenticados. Cumpra as leis e regulamentos aplicáveis e obtenha as permissões necessárias do usuário final antes de ativar a compilação em um conjunto de dados de evento.
 
 
 ## Usar compilação

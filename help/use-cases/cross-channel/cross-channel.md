@@ -4,10 +4,10 @@ description: Analise e extraia insights das interações em toda a jornada do cl
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 68%
+source-wordcount: '523'
+ht-degree: 63%
 
 ---
 
@@ -43,6 +43,6 @@ Ao estabelecer esse fluxo de trabalho, não se esqueça de considerar os seguint
 * A análise de dados entre canais requer o mesmo namespace de ID em todos os registros.
 * O processo de união de conjuntos de dados desiguais requer uma chave primária comum de pessoa/entidade, entre todos os conjuntos de dados.
 * Atualmente, não há suporte para uniões com base em chave secundária.
-* O processo de compilação permite rechavear identidades em linhas, com base em registros de ID transitórios subsequentes, como uma ID de autenticação. Isso permite consolidar registros desiguais em uma única ID para análise no nível da pessoa, em vez do dispositivo ou do cookie.
+* O processo de compilação permite rechavear identidades em linhas, com base nas informações de ID transitória (como uma ID de autenticação) de registros que compartilham a mesma ID persistente. Isso permite resolver registros diferentes em uma única ID compilada para análise no nível da pessoa, em vez de no nível do dispositivo ou do cookie.
 * Objetos e atributos do mesmo campo XDM são mesclados em uma dimensão no Customer Journey Analytics. Para mesclar vários atributos de vários conjuntos de dados na mesma dimensão do Customer Journey Analytics, os conjuntos de dados devem fazer referência ao mesmo campo ou esquema XDM.
 
