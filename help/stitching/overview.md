@@ -3,10 +3,10 @@ title: Visão geral da compilação
 description: Visão geral da compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 73496ea3c8341d9db7e879a4f5ae4f35893c605d
+source-git-commit: 3fd4038c44b50490618f838d281684742920d152
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 31%
+source-wordcount: '1246'
+ht-degree: 26%
 
 ---
 
@@ -56,22 +56,22 @@ Assim que a sua organização atender a todos os pré-requisitos e entender a [l
    * Uma solicitação para ativar a compilação.
    * A ID do conjunto de dados que você deseja rechavear.
    * O nome da coluna da ID persistente do conjunto de dados desejado (Identificador que aparece em cada linha).
-   * O nome da coluna da ID transitória para o conjunto de dados desejado (o link do identificador de pessoa entre conjuntos de dados).
+   * O nome da coluna da ID transitória para o conjunto de dados desejado (o identificador de pessoa, que também atua como link entre conjuntos de dados no contexto de uma conexão).
    * Sua preferência por frequência de [repetição](explained.md) e duração da retrospectiva. As opções incluem uma repetição uma vez por semana com uma janela de retrospectiva de sete dias ou uma repetição todos os dias com uma janela de retrospectiva de um dia.
    * Nome da sandbox.
 
 
-2. O Suporte ao cliente do Adobe trabalha com a engenharia de Adobe para permitir a compilação ao receber sua solicitação. Depois de habilitada, um novo conjunto de dados rechaveado que contém uma nova coluna de ID de pessoa é exibido na Adobe Experience Platform. O Suporte ao cliente da Adobe pode fornecer a nova ID do conjunto de dados e o nome da coluna de ID de pessoa.
+2. O Suporte ao cliente do Adobe trabalha com a engenharia de Adobe para permitir a compilação ao receber sua solicitação. Depois de habilitada, um novo conjunto de dados rechaveado que contém uma nova coluna de ID compilada é exibido no Adobe Experience Platform. O Suporte ao cliente do Adobe pode fornecer a ID do novo conjunto de dados.
 
-3. Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento.
+3. Quando ativado pela primeira vez, o Adobe fornece um preenchimento retroativo de dados compilados que remonta a 30 dias.
 
-4. [Criar uma conexão](/help/connections/create-connection.md) no Customer Journey Analytics usando o conjunto de dados recém-gerado e quaisquer outros conjuntos de dados que você deseja incluir. Escolha a ID de pessoa correta para cada conjunto de dados.
+4. Se quiser usar o novo conjunto de dados compilado em uma análise entre canais, é necessário adicioná-lo a um [conexão](../connections/overview.md) no Customer Journey Analytics juntamente com quaisquer outros conjuntos de dados necessários. Escolha a ID de pessoa correta para cada conjunto de dados.
 
 5. [Crie uma visualização de dados](/help/data-views/create-dataview.md) com base na conexão.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
-Depois que a visualização de dados é configurada, a análise entre canais no Customer Journey Analytics é como qualquer outra análise no Customer Journey Analytics, exceto que agora os dados operam entre canais e dispositivos.
+Depois que a visualização de dados estiver configurada, você poderá executar sua análise de relatório de Customer Journey Analytics em canais e dispositivos.
 
 <!-- Uncomment once stitching UI is available (for limited testing)..
 
