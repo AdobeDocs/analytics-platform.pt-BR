@@ -1,10 +1,10 @@
 ---
 description: Usar filtros rápidos no Analysis Workspace para o Customer Journey Analytics
 title: Filtros rápidos
-feature: CJA Workspace Basics
+feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 38%
@@ -35,20 +35,19 @@ Para criar um filtro rápido:
 
    * **Ad hoc (arrastar e soltar):** No painel à esquerda, arraste um componente para a área designada próxima à **Filtro** no cabeçalho do painel, selecione o **Editar** ícone para ajustar o filtro.
 
-      ![Editar filtro ad hoc](assets/filter-adhoc-edit.png)
+     ![Editar filtro ad hoc](assets/filter-adhoc-edit.png)
 
-      >[!NOTE]
-      >
-      > Considere o seguinte ao criar um filtro rápido ad hoc (arrastar e soltar):
-      > * Os seguintes tipos de componentes não são compatíveis: métricas calculadas e dimensões, bem como métricas a partir das quais você não pode criar filtros.
-      > * Para dimensões e eventos completos, o Analysis Workspace cria filtros de evento &quot;existe&quot;. Exemplos: `Hit where eVar1 exists` ou `Hit where event1 exists`.
-      > * Se “não especificado” ou “nenhum” forem soltos na área de destino do filtro, eles serão automaticamente convertidos em um filtro “não existe” para que sejam tratados corretamente durante a filtragem.
-
+     >[!NOTE]
+     >
+     > Considere o seguinte ao criar um filtro rápido ad hoc (arrastar e soltar):
+     > * Os seguintes tipos de componentes não são compatíveis: métricas calculadas e dimensões, bem como métricas a partir das quais você não pode criar filtros.
+     > * Para dimensões e eventos completos, o Analysis Workspace cria filtros de evento &quot;existe&quot;. Exemplos: `Hit where eVar1 exists` ou `Hit where event1 exists`.
+     > * Se “não especificado” ou “nenhum” forem soltos na área de destino do filtro, eles serão automaticamente convertidos em um filtro “não existe” para que sejam tratados corretamente durante a filtragem.
 
 
    * **Usando o ícone de filtro:** Em uma tabela de Forma livre, selecione o **Filtro** no cabeçalho do painel.
 
-      ![Filtro de segmentos](assets/quick-seg1.png)
+     ![Filtro de segmentos](assets/quick-seg1.png)
 
 1. Ajuste qualquer uma das seguintes configurações:
 
@@ -87,7 +86,6 @@ Para criar um filtro rápido:
 > * Para salvar um filtro rápido, é necessário ter a permissão Criação de filtro no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=pt-BR#analytics-tools).
 > 
 > * Depois de salvar ou aplicar o filtro, ele não poderá mais ser editado no construtor de filtros rápidos. Em vez disso, você deve usar o Construtor de filtros comum.
-
 
 Você pode optar por salvar filtros rápidos como filtros da lista de componentes. As vantagens dos filtros da lista de componentes incluem:
 

@@ -2,10 +2,10 @@
 title: Assimilar e usar dados usando conectores de origem
 description: Explica como assimilar e usar dados usando conectores de origem no Customer Journey Analytics
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: 3331f41590509ef38cb67802335414ca3de5ff94
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '1955'
 ht-degree: 100%
 
@@ -187,10 +187,9 @@ Para configurar um conector de origem:
 
    - No bloco do conector, selecione **[!UICONTROL ...]** ao lado de [!UICONTROL Configurar] ou [!UICONTROL Adicionar dados].
 
-      ![Exibir documentação](./assets/sourceconnector-documentation.png)
+     ![Exibir documentação](./assets/sourceconnector-documentation.png)
 
    - Selecione **[!UICONTROL Exibir documentação]**.
-
 
 Consulte [Assimilar e usar dados do Adobe Analytics tradicional](./analytics.md) e como usar o conector de origem do Adobe Analytics.
 
@@ -225,9 +224,10 @@ Para criar sua conexão:
 
    - Selecione o conjunto de dados criado anteriormente (`Example Loyalty Dataset`) e qualquer outro conjunto de dados que você deseja incluir em sua conexão.
 
-      ![Adicionar conjuntos de dados](./assets/cja-connections-2.png)
+     ![Adicionar conjuntos de dados](./assets/cja-connections-2.png)
 
    - Selecione **[!UICONTROL Próximo]**.
+
    Na etapa [!UICONTROL Configurações de conjuntos de dados] em [!UICONTROL Adicionar conjuntos de dados]:
 
    - Para cada conjunto de dados:
@@ -238,9 +238,10 @@ Para criar sua conexão:
 
       - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
-      ![Configurar conjuntos de dados](./assets/cja-connections-3.png)
+     ![Configurar conjuntos de dados](./assets/cja-connections-3.png)
 
    - Selecione **[!UICONTROL Adicionar conjuntos de dados]**.
+
    Selecione **[!UICONTROL Salvar]**.
 
 Consulte [Visão geral das conexões](../connections/overview.md) para obter mais informações sobre como criar e gerenciar uma conexão e como selecionar e combinar conjuntos de dados.

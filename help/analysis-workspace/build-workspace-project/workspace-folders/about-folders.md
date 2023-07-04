@@ -2,10 +2,10 @@
 description: Saiba mais sobre Pastas no Espaço de trabalho
 keywords: Analysis Workspace
 title: Visão geral das pastas
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
-source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 100%
 
@@ -13,23 +13,23 @@ ht-degree: 100%
 
 # Sobre pastas no Analytics
 
-As pastas no Analytics são um sistema de gerenciamento de pastas exibido na página inicial do Adobe Analytics e quando **Espaço de trabalho** > **Projetos** está selecionado.
+As pastas no Analytics são um sistema de gerenciamento de pastas exibido na página de destino do Adobe Analytics e quando **Espaço de trabalho** > **Projetos** está selecionado.
 
-As pastas no Espaço de trabalho ajudam você a organizar e categorizar seus projetos para obter melhor recuperação e acesso. Além disso, uma Pasta de empresa compartilhada permite que Administradores criem e compartilhem conteúdo com todos os usuários do Espaço de trabalho.
+Pastas no Espaço de trabalho ajudam você a organizar e categorizar seus projetos para obter uma melhor recuperação e acesso. Além disso, uma Pasta de empresa compartilhada permite que Administradores criem e compartilhem conteúdo com todos os usuários do Espaço de trabalho.
 
 Quando você tem uma longa lista de projetos, navegar até um projeto específico tem seus desafios. Com o recurso de pastas, é possível criar pastas e subpastas para gerenciar os projetos, facilitando a localização dos projetos quando eles são necessários.
 
-Há dois tipos de pastas no Espaço de trabalho: pasta da empresa e pastas pessoais.
+Há dois tipos de pastas no Espaço de trabalho: a Pasta da empresa e as pastas pessoais.
 
-Ao fazer logon no Espaço de trabalho, a página inicial Projetos exibe uma lista de projetos junto com a pasta da empresa e qualquer pasta pessoal que você criou.
+Ao fazer logon no Espaço de trabalho, a página inicial de Projetos exibe uma lista de seus projetos junto com a Pasta da empresa e qualquer pasta pessoal que você criou.
 
 ![](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
 ## Sobre a Pasta da empresa {#company-folder}
 
-A pasta da empresa é uma pasta de acesso compartilhado para projetos que os Administradores podem compartilhar com todos os usuários.
+A Pasta da empresa é uma pasta de acesso compartilhado para projetos que os Administradores podem compartilhar com todos os usuários.
 
-Como administrador, você pode compartilhar projetos rapidamente com todos os usuários e agrupar projetos em subpastas para um grupo de usuários. Por exemplo, se você tiver um conjunto de projetos que deseja que seus profissionais de marketing usem para iniciar a pesquisa, é possível criar uma pasta de Marketing na Pasta da empresa e, em seguida, colocar esses projetos na pasta de marketing. Isso fornece rapidamente acesso direto a projetos compartilhados e torna mais fácil para a equipe de marketing saber onde procurar arquivos comuns.
+Como administrador, você pode compartilhar projetos rapidamente com todos os usuários e agrupar projetos em subpastas para um grupo de usuários. Por exemplo, se você tiver um conjunto de projetos que deseja que seus profissionais de marketing usem para iniciar a pesquisa, é possível criar uma pasta de Marketing na Pasta da empresa e, em seguida, colocar projetos selecionados na pasta de Marketing. Isso fornece acesso direto a projetos compartilhados rapidamente e facilita para a equipe de marketing saber onde procurar arquivos comuns.
 
 Quando um usuário faz logon no Espaço de trabalho, a Pasta da empresa é adicionada automaticamente à lista de projetos e pastas. Não há permissões específicas para projetos contidos na Pasta da empresa.
 
@@ -46,7 +46,7 @@ Os não administradores têm opções limitadas.
 
 ### Diretrizes da Pasta da empresa {#company-folder-guidelines}
 
-- Os administradores podem adicionar projetos à Pasta da empresa ou criar um novo projeto e salvá-lo na Pasta da empresa. Os usuários não administradores podem visualizar o conteúdo da Pasta da empresa.
+- Os administradores podem adicionar projetos à Pasta da empresa ou criar um novo projeto e salvá-lo na Pasta da empresa. Os não administradores podem visualizar o conteúdo da Pasta da empresa.
 
 - Administradores podem criar subpastas dentro da Pasta da empresa.
 

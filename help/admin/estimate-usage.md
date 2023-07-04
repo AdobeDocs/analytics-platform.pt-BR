@@ -2,9 +2,9 @@
 title: Visualizar e gerenciar o uso do Customer Journey Analytics
 description: Mostra dois métodos de estimativa de uso e um método de gerenciamento.
 role: Admin
-feature: CJA Basics
+feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: ca329bd551990c1fefeda2fe272ed17551cfaac8
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 73%

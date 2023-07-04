@@ -2,10 +2,10 @@
 description: Saiba como adicionar pastas ao Espaço de trabalho
 keywords: Analysis Workspace
 title: Adicionar pastas ao Espaço de trabalho
-feature: CJA Workspace Basics
+feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
-source-git-commit: a8b874bfbe9d3586140f93c1dcef2403ca5707cc
-workflow-type: ht
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 100%
 

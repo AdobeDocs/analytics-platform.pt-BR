@@ -2,9 +2,9 @@
 title: Assimilar dados via Adobe Experience Platform Web SDK e Edge Network
 description: Explique como assimilar dados no Customer Journey Analytics por meio do SDK da Web da Adobe Experience Platform e da Rede de borda
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '3587'
 ht-degree: 98%
@@ -303,11 +303,11 @@ Para definir um elemento de dados de nome de página:
 
    - Selecione **[!UICONTROL Título]** na lista [!UICONTROL Atributo].
 
-      ![Criar elemento de data usando informações da página](./assets/create-dataelement-1.png)
+     ![Criar elemento de data usando informações da página](./assets/create-dataelement-1.png)
 
-      Como alternativa, você pode usar o valor de uma variável da camada de dados, por exemplo `pageName` e o tipo de elemento de dados da [!UICONTROL Variável JavaScript] para definir o elemento de dados.
+     Como alternativa, você pode usar o valor de uma variável da camada de dados, por exemplo `pageName` e o tipo de elemento de dados da [!UICONTROL Variável JavaScript] para definir o elemento de dados.
 
-      ![Criar elemento de dados usando a variável Javascript](./assets/create-dataelement-2.png)
+     ![Criar elemento de dados usando a variável Javascript](./assets/create-dataelement-2.png)
 
    - Selecione **[!UICONTROL Salvar]**.
 
@@ -327,7 +327,7 @@ Para definir um elemento de dados da ECID:
 
    - Selecione **[!UICONTROL ECID]** na lista [!UICONTROL Tipo de elemento de dados].
 
-      ![Elemento de dados da ECID](./assets/ecid-dataelement.png)
+     ![Elemento de dados da ECID](./assets/ecid-dataelement.png)
 
    - Selecione **[!UICONTROL Salvar]**.
 
@@ -353,14 +353,14 @@ Para definir um elemento de dados de objeto XDM:
 
    - Mapeie o atributo `identification > core > ecid`, definido no esquema, no elemento de dados da ECID. Selecione o ícone de cilindro para escolher facilmente o elemento de dados da ECID na lista de elementos de dados.
 
-      ![Selecionar elemento de dados da ECID](./assets/pick-ecid-dataelement.png)
+     ![Selecionar elemento de dados da ECID](./assets/pick-ecid-dataelement.png)
 
-      ![Mapear elemento de dados da ECID](./assets/map-ecid.png)
+     ![Mapear elemento de dados da ECID](./assets/map-ecid.png)
 
 
    - Mapeie o atributo `web > webPageDetails > name`, definido no esquema, para o elemento de dados Nome da página.
 
-      ![Mapear elemento de dados do nome da página](./assets/map-pagename.png)
+     ![Mapear elemento de dados do nome da página](./assets/map-pagename.png)
 
    - Selecione **[!UICONTROL Salvar]**.
 
@@ -387,9 +387,12 @@ Para definir uma regra:
 
       - Selecione **[!UICONTROL Janela carregada]** na lista [!UICONTROL Tipo de evento].
 
-         ![Regra - Configuração de evento](./assets/event-windowloaded-pageview.png)
+        ![Regra - Configuração de evento](./assets/event-windowloaded-pageview.png)
 
       - Selecione **[!UICONTROL Manter alterações]**.
+
+
+
    - Selecione **[!UICONTROL + Adicionar]** abaixo de [!UICONTROL Ações].
 
    - Na caixa de diálogo [!UICONTROL Configuração de ação]:
@@ -402,18 +405,15 @@ Para definir uma regra:
 
       - Selecione o ícone do cilindro ao lado de [!UICONTROL Dados XDM] e Selecione **[!UICONTROL XDM - Exibição de página]** na lista de elementos de dados.
 
-         ![Regra - Configuração de ação](./assets/action-pageview-xdm.png)
+        ![Regra - Configuração de ação](./assets/action-pageview-xdm.png)
 
       - Selecione **[!UICONTROL Manter alterações]**.
+
    - Sua regra deve ter a seguinte aparência:
 
-      ![Criar regra](assets/rule-pageview.png)
+     ![Criar regra](assets/rule-pageview.png)
 
    - Selecione **[!UICONTROL Salvar]**.
-
-
-
-
 
 Este é apenas um exemplo de definição de uma regra que envia dados XDM, contendo valores de outros elementos de dados, para a Adobe Experience Platform.
 
@@ -439,7 +439,7 @@ Para criar e publicar a tag:
 
    - Clique em **[!UICONTROL + Adicionar todos os recursos alterados]**.
 
-      ![Publicar - Criar biblioteca](./assets/create-library-aep.png)
+     ![Publicar - Criar biblioteca](./assets/create-library-aep.png)
 
    - Selecione **[!UICONTROL Salvar e criar no desenvolvimento]**.
 
@@ -510,9 +510,10 @@ Para criar sua conexão:
 
    - Selecione o conjunto de dados criado anteriormente (`Example dataset`) e qualquer outro conjunto de dados que você deseja incluir em sua conexão.
 
-      ![Adicionar conjuntos de dados](./assets/cja-connections-2b.png)
+     ![Adicionar conjuntos de dados](./assets/cja-connections-2b.png)
 
    - Selecione **[!UICONTROL Próximo]**.
+
    Na etapa [!UICONTROL Configurações de conjuntos de dados] em [!UICONTROL Adicionar conjuntos de dados]:
 
    - Para cada conjunto de dados:
@@ -523,9 +524,10 @@ Para criar sua conexão:
 
       - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
-      ![Configurar conjuntos de dados](./assets/cja-connections-3b.png)
+     ![Configurar conjuntos de dados](./assets/cja-connections-3b.png)
 
    - Selecione **[!UICONTROL Adicionar conjuntos de dados]**.
+
    Selecione **[!UICONTROL Salvar]**.
 
 Consulte [Visão geral das conexões](../connections/overview.md) para obter mais informações sobre como criar e gerenciar uma conexão e como selecionar e combinar conjuntos de dados.

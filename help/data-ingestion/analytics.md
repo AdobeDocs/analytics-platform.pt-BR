@@ -2,9 +2,9 @@
 title: Assimilar e usar dados do Adobe Analytics tradicional
 description: Explique como assimilar dados do Adobe Analytics tradicional
 solution: Customer Journey Analytics
-feature: CJA Basics
+feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: 41847015d581f2ee18bcaa9605bd567d5feb78d8
+source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 95%
@@ -24,7 +24,6 @@ Este guia de início rápido explica como você pode usar os dados coletados pel
 >- [Implementar o Analytics usando a extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=pt-BR)
 >
 >- [Implementar o Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR)
-
 
 Para isso, é necessário:
 
@@ -79,7 +78,7 @@ Para criar um conector de origem do Adobe Analytics:
    ![Consulte a seção](./assets/review.png)
 
 
-Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics do conjunto de relatórios, incluindo a assimilação de até 13 meses de dados históricos para sandboxes de produção. (Observe que, a partir de 26 de abril de 2023, o preenchimento retroativo em sandboxes de não produção será limitado a 3 meses.)
+Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics de seu conjunto de relatórios, incluindo a assimilação de até 13 meses de dados históricos para sandboxes de produção. (Observe que a partir de 26 de abril de 2023, o preenchimento retroativo em sandboxes de não produção será limitado a 3 meses.)
 
 Quando a assimilação inicial for concluída, os dados do conjunto de relatórios do Adobe Analytics estarão prontos para serem usados pelo Customer Journey Analytics.
 
@@ -112,9 +111,10 @@ Para criar sua conexão:
 
    - Selecione o conjunto de dados criado automaticamente pelo conector de origem do Adobe Analytics e qualquer outro conjunto de dados que você deseja incluir na conexão.
 
-      ![Adicionar conjuntos de dados](./assets/cja-connections-2a.png)
+     ![Adicionar conjuntos de dados](./assets/cja-connections-2a.png)
 
    - Selecione **[!UICONTROL Próximo]**.
+
    Na etapa [!UICONTROL Configurações de conjuntos de dados] em [!UICONTROL Adicionar conjuntos de dados]:
 
    - Para cada conjunto de dados:
@@ -125,9 +125,10 @@ Para criar sua conexão:
 
       - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
-      ![Configurar conjuntos de dados](./assets/cja-connections-3a.png)
+     ![Configurar conjuntos de dados](./assets/cja-connections-3a.png)
 
    - Selecione **[!UICONTROL Adicionar conjuntos de dados]**.
+
    Selecione **[!UICONTROL Salvar]**.
 
 Consulte [Visão geral das conexões](../connections/overview.md) para obter mais informações sobre como criar e gerenciar uma conexão e como selecionar e combinar conjuntos de dados.
