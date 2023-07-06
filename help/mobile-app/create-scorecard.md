@@ -1,27 +1,28 @@
 ---
-description: Como criar e compartilhar cartões de pontuação de painéis do Adobe Analytics
+description: Como criar e compartilhar cartões de pontuação de painéis do Analytics
 title: Criar e compartilhar cartões de pontuação
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '2529'
-ht-degree: 76%
+source-wordcount: '2532'
+ht-degree: 74%
 
 ---
 
 # Criar um cartão de pontuação para dispositivos móveis
 
-As informações a seguir instruem os curadores de dados do Adobe Analytics sobre como configurar e apresentar painéis para usuários executivos. Para começar, você pode exibir o vídeo do construtor de cartão de pontuação dos painéis do Adobe Analytics:
+As informações a seguir instruem os curadores de dados do Customer Journey Analytics sobre como configurar e apresentar painéis para usuários executivos. Para começar, você pode exibir o vídeo do construtor de cartão de pontuação dos painéis do Analytics:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343458)
 
 >[!NOTE]
->As capturas de tela dos cartões de pontuação para esta página foram tiradas da interface do usuário do Adobe Analytics, não do Customer Journey Analytics. As interfaces são quase idênticas.
+>
+>As capturas de tela do cartão de pontuação do Analytics para esta página foram tiradas da interface do usuário do Adobe Analytics, não do Customer Journey Analytics. As interfaces são quase idênticas.
 
-Um cartão de pontuação do Adobe Analytics exibe as principais visualizações de dados para usuários executivos em um layout lado a lado, como mostrado abaixo:
+Um cartão de pontuação do Analytics exibe as principais visualizações de dados para usuários executivos em um layout lado a lado, como mostrado abaixo:
 
 ![Exemplo de scorecard](assets/intro_scorecard.png)
 
@@ -40,7 +41,7 @@ Você pode acessar o modelo [!UICONTROL Cartão de pontuação para dispositivos
 
 ### Criar um novo projeto {#create}
 
-1. Abra o Adobe Analytics e clique na guia **[!UICONTROL Espaço de trabalho]**.
+1. Abra o Customer Journey Analytics e clique no link **[!UICONTROL Workspace]** guia.
 1. Clique em **[!UICONTROL Criar projeto]** e selecione o modelo de projeto **[!UICONTROL Cartão de pontuação para dispositivos móveis em branco]**.
 1. Clique em **[!UICONTROL Criar]**.
 
@@ -78,7 +79,7 @@ Por exemplo, é possível adicionar dimensões apropriadas (como **[!DNL Marketi
 
 Para aplicar filtros a blocos individuais, arraste um filtro (segmentos são filtros em Customer Journey Analytics) do painel esquerdo e solte-o diretamente em cima do bloco.
 
-Se quiser aplicar o filtro a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão de pontuação. Ou você também pode aplicar filtros selecionando filtros no menu de filtro abaixo dos intervalos de datas. Você [configurar e aplicar filtros para seus cartões de pontuação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que no Adobe Analytics Workspace.
+Se quiser aplicar o filtro a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão de pontuação. Ou você também pode aplicar filtros selecionando filtros no menu de filtro abaixo dos intervalos de datas. Você [configurar e aplicar filtros para seus cartões de pontuação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que no Customer Journey Analytics Workspace.
 
 ![Criar filtros](assets/segment_ui.png)
 
@@ -278,7 +279,7 @@ Você também pode navegar para frente e para trás usando as setas no teclado o
 
 ## Visualizar cartões de pontuação {#preview}
 
-Você pode visualizar como o cartão de pontuação será exibido e funcionará assim que for publicado no aplicativo de painéis do Analytics.
+Você pode visualizar como o cartão de pontuação será exibido e funcionará assim que for publicado no aplicativo de painéis do Adobe Analytics.
 
 1. Clique em **[!UICONTROL Visualizar]** no canto superior direito da tela.
 
@@ -337,7 +338,7 @@ Para compartilhar um cartão de pontuação usando um link compartilhável
 
    Quando um recipient usa um aplicativo de desktop ou navegador para abrir o link, o projeto de cartão de pontuação para dispositivos móveis é aberto no Espaço de trabalho.
 
-   Quando um recipient abre o link em um dispositivo móvel, o cartão de pontuação é aberto diretamente no aplicativo de painéis do Analytics.
+   Quando um recipient abre o link em um dispositivo móvel, o cartão de pontuação é aberto diretamente no aplicativo de painéis do Adobe Analytics.
 
    Se um recipient não tiver baixado o aplicativo móvel, ele será direcionado para a lista de aplicativos na App Store ou na Google Play Store, onde poderá baixá-lo.
 

@@ -1,14 +1,14 @@
 ---
-description: Como configurar usuários para usar o aplicativo para dispositivos móveis do Analytics
+description: Como configurar usuários para usar o aplicativo móvel do painel do Adobe Analytics
 title: Configurar executivos para usar painéis
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: 39e7ae1f77e00dfe58c7f9e9711d18a1cd4fc0ac
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 76%
 
 ---
 
@@ -27,25 +27,29 @@ Em alguns casos, os usuários executivos podem precisar de assistência adiciona
 Para garantir que os usuários executivos tenham acesso aos seus cartões de pontuação no aplicativo, verifique se:
 
 * Os requisitos mínimos do sistema operacional móvel dos dispositivos são iOS versão 10 ou superior ou Android versão 4.4 (KitKat) ou superior.
-* Eles possuem um logon válido no Adobe Analytics.
+* Eles possuem um logon válido no Customer Journey Analytics.
 * Você criou corretamente os cartões de pontuação para dispositivos móveis para eles e compartilhou esses cartões de pontuação com eles.
 * Eles têm acesso aos Componentes incluídos no cartão de pontuação. Observe que você pode selecionar uma opção ao compartilhar seus cartões de pontuação para **[!UICONTROL Compartilhar componentes integrados]**.
 
 ## Ajudar os executivos a baixar e instalar o aplicativo
 
+>[!NOTE]
+>
+>Embora o aplicativo móvel seja chamado de painel do Adobe Analytics na loja de aplicativos, ele pode ser usado igualmente com cartões de pontuação móveis Customer Journey Analytics.
+
 **Para usuários executivos no iOS:**
 
-Clique no link a seguir (ele também está disponível no Analytics em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
+Clique no link a seguir (ele também está disponível no Customer Journey Analytics em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (opp móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
 
 `[iOS link](https://apple.co/2zXq0aN)`
 
 **Para usuários executivos no Android:**
 
-Clique no link a seguir (ele também está disponível no Analytics em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
+Clique no link a seguir (ele também está disponível no Customer Journey Analytics em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-Após o download e a instalação, os usuários executivos podem fazer logon no aplicativo usando suas credenciais atuais do Adobe Analytics. Oferecemos suporte para Adobe ID e Enterprise/Federated ID.
+Após o download e a instalação, os usuários executivos podem fazer logon no aplicativo usando suas credenciais de Customer Journey Analytics existentes. Oferecemos suporte para Adobe e Enterprise/Federated ID.
 
 ![Tela de boas-vindas do aplicativo](assets/welcome.png)
 
@@ -108,7 +112,7 @@ Se o usuário executivo fizer logon e vir uma mensagem dizendo que nada foi comp
 
 ![Nada compartilhado](assets/nothing.png)
 
-* O usuário executivo pode ter selecionado a instância incorreta do Analytics ou
+* O usuário executivo pode ter selecionado a sandbox de Customer Journey Analytics incorreta ou
 * O cartão de pontuação pode não ter sido compartilhado com o usuário executivo.
 
-Verifique se o usuário executivo pode fazer logon na instância correta do Adobe Analytics e se o cartão de pontuação foi compartilhado.
+Verifique se o usuário executivo pode fazer logon na sandbox de Customer Journey Analytics direita e se o cartão de pontuação foi compartilhado.

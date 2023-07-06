@@ -1,20 +1,20 @@
 ---
 description: Instruções para usar os scorecards de painéis.
-title: Guia executivo de painéis do Adobe Analytics
+title: Guia executivo de painéis do Analytics
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 25293f3ef40f0c19ec6a963d337ab91b8054aa58
+source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 92%
+source-wordcount: '1304'
+ht-degree: 77%
 
 ---
 
 # Guia de início rápido do usuário executivo
 
-As informações a seguir fornecem aos usuários executivos informações sobre as práticas recomendadas para usar e exibir painéis do Adobe Analytics. Assista a um vídeo demonstrando essas informações:
+As informações a seguir fornecem aos usuários executivos informações sobre as práticas recomendadas para usar e exibir painéis do Analytics. Assista a um vídeo demonstrando essas informações:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343460/)
 
@@ -28,26 +28,30 @@ Para usar os painéis de maneira eficaz, você precisará do curador do Scorecar
 
 Para acessar os Scorecards nos painéis, verifique se:
 
-* Você possui um logon válido no Adobe Analytics
+* Você tem um logon válido no Customer Journey Analytics
 * O curador criou corretamente os Scorecards para dispositivos móveis e os compartilhou com você
 
 ### Painéis de download e instalação
 
 Para baixar e instalar o aplicativo, siga as etapas de acordo com o sistema operacional do dispositivo.
 
+>[!NOTE]
+>
+>Embora o aplicativo móvel seja chamado de painel do Adobe Analytics na loja de aplicativos, ele pode ser usado igualmente com cartões de pontuação móveis Customer Journey Analytics.
+
 **Para usuários executivos no iOS:**
 
-Clique no link a seguir (ele também está disponível no Analytics em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
+Clique no link a seguir (ele também está disponível no Customer Journey Analytics em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
 
 [Link para iOS](https://apple.co/2zXq0aN)
 
 **Para usuários executivos no Android:**
 
-Clique no link a seguir (ele também está disponível no Analytics em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (Aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
+Clique no link a seguir (ele também está disponível no Customer Journey Analytics em **[!UICONTROL Ferramentas]** > **[!UICONTROL Painéis do Analytics (aplicativo móvel)]**) e siga as instruções para baixar, instalar e abrir o aplicativo:
 
 [Link do Android](https://bit.ly/2LM38Oo)
 
-Depois de baixados e instalados, os usuários executivos podem fazer logon no aplicativo usando suas credenciais do Adobe Analytics.
+Após o download e a instalação, os usuários executivos podem fazer logon no aplicativo usando suas credenciais de Customer Journey Analytics existentes.
 
 ![Tela de boas-vindas do aplicativo](assets/welcome.png)
 
@@ -55,7 +59,7 @@ Depois de baixados e instalados, os usuários executivos podem fazer logon no ap
 
 Para usar painéis:
 
-1. Faça logon no aplicativo. A tela de logon será exibida ao iniciar os painéis. Siga as instruções usando suas credenciais atuais do Adobe Analytics. Oferecemos suporte para Adobe ID e Enterprise/Federated ID.
+1. Faça logon no aplicativo. A tela de logon será exibida ao iniciar os painéis. Siga as instruções usando suas credenciais de Customer Journey Analytics existentes. Oferecemos suporte para Adobe ID e Enterprise/Federated ID.
 
    ![Sequência de logon](assets/signseq.png)
 
@@ -73,8 +77,8 @@ Para usar painéis:
 
    Se você fizer logon e vir uma mensagem informando que nada foi compartilhado, verifique o seguinte com o curador:
 
-   * Você pode fazer logon na instância correta do Analytics
-   * O Scorecard foi compartilhado com você
+   * Você pode fazer logon na sandbox Customer Journey Analytics correta.
+   * O Scorecard foi compartilhado com você.
 
    ![Nada compartilhado](assets/nothing.png)
 
@@ -111,11 +115,11 @@ Para usar painéis:
 
    * Dependendo do intervalo em que você tocar (**Dia**, **Semana**, **Mês** ou **Ano**), você verá duas opções para os intervalos de datas - o período de tempo atual ou o imediatamente anterior. Toque em uma dessas duas opções para selecionar o primeiro intervalo. Na lista **[!UICONTROL COMPARAR COM]**, toque em uma das opções apresentadas para comparar os dados desse período com o primeiro intervalo de datas selecionado. Toque em **[!UICONTROL Concluído]** no canto superior direito da tela. O campo **[!UICONTROL Intervalos de datas]** e os blocos de Scorecard são atualizados com os novos dados de comparação dos novos intervalos selecionados.
 
-1. Para aplicar um filtro de segmento ao Scorecard, toque na lista suspensa de filtros e selecione um segmento que foi configurado pelo curador. [Os Filtros](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) no aplicativo funcionam da mesma forma que no Analytics Workspace.
+1. Para aplicar um filtro de segmento ao Scorecard, toque na lista suspensa de filtros e selecione um segmento que foi configurado pelo curador. [Os Filtros](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) no aplicativo funcionam da mesma forma que no Workspace.
 
    ![Filtro de segmentos](assets/segment_filter.png)
 
-1. Obter atualizações do Scorecard. Se um Scorecard não incluir todas as métricas ou detalhamentos em que você possa estar interessado, entre em contato com a equipe do Analytics para atualizar o Scorecard. Depois da atualização, puxe o cartão para baixo na tela para atualizá-lo e carregar os dados adicionados recentemente.
+1. Obter atualizações do Scorecard. Se um Scorecard não incluir todas as métricas ou detalhamentos em que você possa estar interessado, entre em contato com a equipe de Customer Journey Analytics para atualizar o Scorecard. Depois da atualização, puxe o cartão para baixo na tela para atualizá-lo e carregar os dados adicionados recentemente.
 
 1. Para deixar comentários sobre este aplicativo:
 
@@ -148,8 +152,8 @@ Toque na opção e informe o endereço de email no campo superior e a pergunta n
 
 | Termo | Definição |
 |--- |--- |
-| Consumidor | Usuário executivo que visualiza as métricas principais e informações do Analytics em um dispositivo móvel |
-| Curador | Usuário com conhecimento de dados que encontra e distribui informações do Analytics e configura os Scorecards para serem visualizados pelo consumidor |
+| Consumidor | Usuário executivo que visualiza os insights e as métricas principais do Customer Journey Analytics em um dispositivo móvel |
+| Curador | Usuário com conhecimento de dados que encontra e distribui insights do Customer Journey Analytics e configura os Scorecards para serem visualizados pelo consumidor |
 | Preparação | O ato de criar ou editar um scorecard para dispositivos móveis com métricas, dimensões e outros componentes relevantes para o consumidor |
 | Scorecard | Uma exibição de painéis que contém um ou mais blocos |
 | Bloco | Uma renderização para uma métrica em uma Exibição de scorecard |
