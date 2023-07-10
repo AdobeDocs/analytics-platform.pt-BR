@@ -3,7 +3,7 @@ title: Visão geral da compilação
 description: Visão geral da compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 3fd4038c44b50490618f838d281684742920d152
+source-git-commit: 41dc46ed5e30d08708ebb97fa29312aafd99ff9d
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 26%
@@ -63,7 +63,7 @@ Assim que a sua organização atender a todos os pré-requisitos e entender a [l
 
 2. O Suporte ao cliente do Adobe trabalha com a engenharia de Adobe para permitir a compilação ao receber sua solicitação. Depois de habilitada, um novo conjunto de dados rechaveado que contém uma nova coluna de ID compilada é exibido no Adobe Experience Platform. O Suporte ao cliente do Adobe pode fornecer a ID do novo conjunto de dados.
 
-3. Quando ativado pela primeira vez, o Adobe fornece um preenchimento retroativo de dados compilados que remonta a 30 dias.
+3. Quando ativado pela primeira vez, o Adobe fornece um preenchimento retroativo de dados compilados que remonta a 60 dias.
 
 4. Se quiser usar o novo conjunto de dados compilado em uma análise entre canais, é necessário adicioná-lo a um [conexão](../connections/overview.md) no Customer Journey Analytics juntamente com quaisquer outros conjuntos de dados necessários. Escolha a ID de pessoa correta para cada conjunto de dados.
 
