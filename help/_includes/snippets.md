@@ -1,8 +1,8 @@
 ---
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 89665490fb3b03a9d9578d22e0e9ed62415c66be
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 68%
+source-wordcount: '1061'
+ht-degree: 66%
 
 ---
 # Trechos
@@ -67,3 +67,8 @@ ht-degree: 68%
 
 {style="table-layout:auto"}
 
+## Aplicar comparação de tempo {#apply-time-comparison}
+
+Você pode comparar o período atual com um período anterior. Se você selecionar uma opção nesse menu, cada ponto de dados receberá um equivalente colorido com linhas pontilhadas. Essa contraparte representa a mesma métrica no intervalo de datas anterior selecionado. Definir essa opção dobra o número de itens no gráfico e nas linhas na tabela.
+
+As opções de comparação de tempo disponíveis incluem o período anterior, 13 semanas antes, 52 semanas antes e um intervalo de datas personalizado. Se você selecionar Intervalo de datas personalizado, opções adicionais serão exibidas para permitir a seleção do número e da granularidade. Se você selecionar Nenhum, a comparação de datas será removida.

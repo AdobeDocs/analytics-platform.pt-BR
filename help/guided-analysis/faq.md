@@ -3,10 +3,10 @@ title: Perguntas frequentes sobre análise guiada
 description: Perguntas frequentes sobre análise guiada.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: d5208a28c9efd6c31ecbfc6ff6b4e44a52f396e8
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 2%
 
 ---
 
@@ -40,5 +40,31 @@ A análise guiada usa termos mais usados no setor de análise de produtos. Você
 | Segmento | Filtro |
 
 {style="table-layout:auto"}
+
++++
+
++++**Quais são algumas diferenças em relação à forma como o Analysis Workspace e a análise guiada abordam os relatórios?**
+
+Embora o Analysis Workspace e a Análise guiada usem os mesmos dados subjacentes, a maneira como cada ferramenta consulta esses dados é diferente.
+
+**O Analysis Workspace é uma experiência centralizada em dimensões.** As tabelas geralmente consistem em linhas de item de dimensão, enquanto as colunas normalmente são métricas. Aplique filtros a qualquer um deles para obter os dados desejados.
+
+![Estrutura do Workspace](assets/workspace-structure.png)
+
+**A análise guiada é uma experiência centrada em eventos.** As visualizações se concentram em eventos, usando dimensões e filtros para complementar esses dados.
+
+![Estrutura de análise guiada](assets/guided-analysis-structure.png)
+
+Considere o exemplo a seguir em que você se concentra nos dados na página inicial do site. As equipes fazem perguntas semelhantes, mas a abordagem de análise pode ser diferente.
+
+* Uma abordagem típica do Analysis Workspace centralizada em dimensão seria &quot;Quantas visualizações de página a página inicial recebeu?&quot;
+
+  ![Dimension centralizado](assets/dimension-centered.png)
+
+* Uma abordagem típica de análise guiada centrada em eventos seria &quot;Quantos usuários visualizaram a página inicial?&quot;
+
+  ![Evento centralizado](assets/event-centered.png)
+
+Essas declarações ilustram dois métodos diferentes para obter o mesmo relatório, dependendo da estratégia de gerenciamento de eventos.
 
 +++

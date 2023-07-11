@@ -3,10 +3,10 @@ title: Visão geral da análise guiada
 description: Um método de análise de dados no Customer Journey Analytics que permite que as equipes de produtos gerem relatórios e insights facilmente.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: f48d17cf975ce7d069ac90f9685b96669a29eaff
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 1%
+source-wordcount: '912'
+ht-degree: 9%
 
 ---
 
@@ -18,7 +18,21 @@ A análise guiada é um formato de relatório que permite que as equipes de prod
 
 Semelhante aos cartões de pontuação do Analysis Workspace e Mobile, um relatório de análise guiada usa dados de um [Visualização de dados](../data-views/data-views.md), que faz referência aos dados no Adobe Experience Platform por meio de uma [Conexão](../connections/overview.md). Todos os relatórios criados na análise guiada podem ser transferidos facilmente para a Analysis Workspace para pesquisa adicional.
 
-Os relatórios de análise guiada apresentam atualmente três tipos de análise: [Funil](analysis-types/funnel.md), [Tendências](analysis-types/trends.md), e [Crescimento do usuário](analysis-types/user-growth.md). Cada um desses tipos de análise tem vários tipos de visualização, que fornecem insights adicionais para cada um desses relatórios.
+A análise guiada fornece várias maneiras de analisar dados. Esses tipos de visualização podem mostrar os mesmos dados de maneiras diferentes, resultando em insights diferentes usando os mesmos eventos e segmentos. Você obtém diferentes painéis de consulta e opções de visualização dependendo do tipo de visualização escolhido. Você pode alternar livremente entre tipos de visualização e qualquer componente do painel de consulta aplicável é transportado se o tipo de visualização for compatível com eles.
+
+A análise guiada categoriza os tipos de visualização em **Tipos de análise**. Os seguintes tipos de análise e visualização estão disponíveis:
+
+| Tipo de análise | Tipo de visualização | Descrição |
+| --- | --- | --- |
+| Impacto | [Versão](types/release.md) | Compare o desempenho em períodos iguais antes e depois do lançamento. |
+| Impacto | [Primeiro uso](types/first-use.md) | Medir o impacto do uso de recursos pela primeira vez em indicadores-chave. |
+| Funil | [Atrito](types/friction.md) | Comparar taxas de conversão entre etapas. |
+| Funil | [Tendências de conversão](types/conversion-trends.md) | Acompanhe as alterações nas taxas de conversão ao longo do tempo. |
+| Crescimento de usuários | [Ativo](types/active.md) | Meça o crescimento da sua base de usuários. |
+| Crescimento de usuários | [Crescimento líquido](types/net-growth.md) | Equilibrar ganhos e perdas do usuário. |
+| Tendências | [Uso](types/usage.md) | Medir o engajamento do usuário ao longo do tempo. |
+
+{style="table-layout:auto"}
 
 ## Interface
 
@@ -35,11 +49,11 @@ A análise guiada contém as seguintes partes da interface:
 
 | Visualização da interface | Elemento da interface | Descrição |
 | --- | --- | --- |
-| [Captura de tela do painel de consulta] | Painel de consulta | Configure os componentes desejados que compõem um relatório. Tipos de análise diferentes compartilham várias opções de consulta; se dois tipos de análise compartilham opções de consulta, elas são transferidas ao alternar tipos de análise. Consulte [Tipos de análise](analysis-types/overview.md) para obter mais informações sobre as opções de consulta para cada tipo de análise respectivo. |
-| [Captura de tela do gráfico] | Gráfico | Uma visualização dos dados retornados com base na entrada do painel de consulta e nas configurações. A visualização exibida depende do tipo de exibição acima do gráfico. Os tipos de visualização disponíveis dependem do [Tipo de análise](analysis-types/overview.md) acima do painel de consulta. |
-| [Captura de tela da tabela] | Tabela | Uma representação em tabela dos dados retornados com base na entrada do painel de consulta e nas configurações. As colunas na tabela dependem do tipo de exibição acima do gráfico. Os tipos de visualização disponíveis dependem do [Tipo de análise](analysis-types/overview.md) acima do painel de consulta. |
-| [Captura de tela das configurações] | Configurações  | Várias opções acima do gráfico que permitem personalizar como o gráfico e a tabela retornam dados.<ul><li>**Tipo de visualização**: um seletor suspenso que permite apresentar dados para um determinado [Tipo de análise](analysis-types/overview.md) de forma diferente. Cada tipo de análise tem pelo menos dois tipos de visualização.</li><li>**Configurações do gráfico**: ajuste a aparência do gráfico e os eventos que deseja usá-lo. As opções disponíveis dependem do tipo de visualização selecionado.</li><li>**Intervalo de datas**: um seletor de calendário que permite determinar o intervalo de datas do relatório. Alguns tipos de análise também permitem intervalos, como diário, semanal ou mensal.</li><li>**Insights**: fornece insights contextuais dependendo do relatório que você visualiza. Você pode mostrar ou ocultar esses insights usando o ícone de lâmpada na parte superior direita.</li></ul> |
-| [Captura de tela do menu de análise] | Menu Análise | Comandos no canto superior direito da Análise guiada que fornecem ações abrangentes.<ul><li>**Seletor de visualização de dados**: altere a visualização de dados que essa análise usa. Ao alterar a visualização de dados, os componentes disponíveis no painel de consulta também são alterados.</li><li>**Salvar**: salva a análise. Se você estiver salvando uma nova análise, uma janela modal será exibida solicitando um nome e uma descrição.</li><li>**Salvar como**: salva a análise separadamente da análise atual, criando uma cópia. Uma janela modal é exibida solicitando um novo nome e descrição.</li><li>**Abrir no Espaço de trabalho**: recria a análise guiada atual no Analysis Workspace. O projeto do Espaço de trabalho é criado em uma nova guia, evitando interrupções enquanto se trabalha na análise guiada. Use este comando quando a Análise guiada não oferecer a flexibilidade ou o insight específico que você está procurando. Por exemplo, você deseja uma [Tendências](analysis-types/trends.md) relatório que usa Sessões para um segmento e Pessoas para outro segmento.</li><li>**Baixar PNG**: baixa o gráfico como um `.png`. O painel de consulta e a tabela não estão incluídos no gráfico.</li><li>**Baixar SVG**: baixa o gráfico como um `.svg`. O painel de consulta e a tabela não estão incluídos no gráfico.</li></ul> |
+| [Captura de tela do painel de consulta] | Painel de consulta | Configure os componentes desejados que compõem um relatório. Tipos de análise diferentes compartilham várias opções de consulta; se dois tipos de análise compartilham opções de consulta, elas são transferidas ao alternar tipos de análise. |
+| [Captura de tela do gráfico] | Gráfico | Uma visualização dos dados retornados com base na entrada do painel de consulta e nas configurações. A visualização exibida depende do tipo de exibição acima do gráfico. Os tipos de visualização disponíveis dependem do tipo de Análise acima do painel de consulta. |
+| [Captura de tela da tabela] | Tabela | Uma representação em tabela dos dados retornados com base na entrada do painel de consulta e nas configurações. As colunas na tabela dependem do tipo de exibição acima do gráfico. Os tipos de visualização disponíveis dependem do tipo de Análise acima do painel de consulta. |
+| [Captura de tela das configurações] | Configurações  | Várias opções acima do gráfico que permitem personalizar como o gráfico e a tabela retornam dados.<ul><li>**Tipo de visualização**: um seletor suspenso que permite apresentar dados de um determinado tipo de análise de uma maneira diferente. Cada tipo de análise tem pelo menos dois tipos de visualização.</li><li>**Configurações do gráfico**: ajuste a aparência do gráfico e os eventos que deseja usá-lo. As opções disponíveis dependem do tipo de visualização selecionado.</li><li>**Intervalo de datas**: um seletor de calendário que permite determinar o intervalo de datas do relatório. Alguns tipos de análise também permitem intervalos, como diário, semanal ou mensal.</li><li>**Insights**: fornece insights contextuais dependendo do relatório que você visualiza. Você pode mostrar ou ocultar esses insights usando o ícone de lâmpada na parte superior direita.</li></ul> |
+| [Captura de tela do menu de análise] | Menu Análise | Comandos no canto superior direito da Análise guiada que fornecem ações abrangentes.<ul><li>**Seletor de visualização de dados**: altere a visualização de dados que essa análise usa. Ao alterar a visualização de dados, os componentes disponíveis no painel de consulta também são alterados.</li><li>**Salvar**: salva a análise. Se você estiver salvando uma nova análise, uma janela modal será exibida solicitando um nome e uma descrição.</li><li>**Salvar como**: salva a análise separadamente da análise atual, criando uma cópia. Uma janela modal é exibida solicitando um novo nome e descrição.</li><li>**Abrir no Espaço de trabalho**: recria a análise guiada atual no Analysis Workspace. O projeto do Espaço de trabalho é criado em uma nova guia, evitando interrupções enquanto se trabalha na análise guiada. Use este comando quando a Análise guiada não oferecer a flexibilidade ou o insight específico que você está procurando. Por exemplo, você deseja uma [Uso](types/usage.md) relatório que usa Sessões para um segmento e Pessoas para outro segmento.</li><li>**Baixar PNG**: baixa o gráfico como um `.png`. O painel de consulta e a tabela não estão incluídos no gráfico.</li><li>**Baixar SVG**: baixa o gráfico como um `.svg`. O painel de consulta e a tabela não estão incluídos no gráfico.</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -47,13 +61,11 @@ A análise guiada contém as seguintes partes da interface:
 
 A análise guiada faz parte do Adobe Product Analytics, que é um complemento pago do Customer Journey Analytics. Se sua organização quiser começar a usar esse recurso, entre em contato com a equipe de conta do Adobe.
 
-O Adobe planeja fornecer permissões específicas para a Análise guiada no futuro.
+Depois que sua organização for provisionada para usar a Análise guiada, os administradores do perfil de produto poderão conceder acesso a ela na Adobe Admin Console.
 
-<!-- Once your organization is provisioned to use Guided analysis, product profile administrators can grant access to it in the Adobe Admin Console.
-
-1. Log in to the [Adobe admin console](https://adminconsole.adobe.com).
-1. Select **[!UICONTROL Customer Journey Analytics]** in the list of products.
-1. Select the desired product profile to edit permissions.
-1. Click the **[!UICONTROL Permissions]** tab, then click **[!UICONTROL Edit]** under [!UICONTROL Reporting Tools].
-1. Drag **[!UICONTROL Guided analysis]** from the list of [!UICONTROL Available Permission Items] to the list of [!UICONTROL Included Permission Items].
-1. Click **[!UICONTROL Save]**. -->
+1. Faça logon no [Adobe admin console](https://adminconsole.adobe.com).
+1. Selecionar **[!UICONTROL Customer Journey Analytics]** na lista de produtos.
+1. Selecione o perfil de produto desejado para editar permissões.
+1. Clique em **[!UICONTROL Permissões]** e clique em **[!UICONTROL Editar]** em [!UICONTROL Ferramentas de relatório].
+1. Clique no ícone de adição ao lado de **[!UICONTROL Acesso guiado à análise]** na lista de [!UICONTROL Itens de permissão disponíveis] para adicioná-lo à lista de [!UICONTROL Itens de permissão incluídos].
+1. Clique em **[!UICONTROL Salvar]**.
