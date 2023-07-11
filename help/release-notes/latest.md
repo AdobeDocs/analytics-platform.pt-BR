@@ -3,10 +3,10 @@ title: Visualizar as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e9d2bfb4f4c4aa3ac96d0300e537376a1ef7821a
+source-git-commit: daf41a2aefeebe6339b4f86cc04c071b57887ce3
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 39%
+source-wordcount: '723'
+ht-degree: 40%
 
 ---
 
@@ -20,7 +20,7 @@ As versões do Adobe Customer Journey Analytics operam em uma [modelo de entrega
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics** | Um novo tipo de projeto que permite que as equipes de produtos atendam rapidamente às suas necessidades de dados para que possam tomar mais decisões de produto orientadas por dados. Ele é construído sobre a conexão existente e workflows de visualização de dados no Customer Journey Analytics. Nenhuma alteração na implementação ou configuração é necessária. [Saiba mais](/help/guided-analysis/overview.md)<p>O Product Analytics é um complemento pago do Customer Journey Analytics. Se sua organização quiser que a use esse recurso, entre em contato com a equipe de conta do Adobe. | N/D | 17 de julho de 2023 |
+| **Adobe Product Analytics** | Adobe Product Analytics é uma nova maneira de interagir com dados e insights entre canais no Customer Journey Analytics. Esses novos recursos permitem que as equipes de produtos utilizem o autoatendimento de dados e insights sobre a experiência do produto por meio de fluxos de trabalho de análise guiados. As equipes podem:<ul><li>Entender padrões no engajamento dos usuários ao longo do tempo</li><li>Controle o crescimento e a retenção da base de usuários do produto&#x200B;</li><li>Identificação de áreas de atrito no produto</li><li>Meça o impacto das versões de recursos&#x200B; e o primeiro uso</li><li>Descubra segmentos significativos de usuários para se envolver e promover durante toda a jornada ao longo da vida com o produto&#x200B;</li><li>Conecte-se à Analysis Workspace para análise e colaboração mais profundas com analistas</li></ul>O Adobe Product Analytics é um complemento pago do Customer Journey Analytics. Se sua organização quiser que a use esse recurso, entre em contato com a equipe de conta do Adobe. [Saiba mais](/help/guided-analysis/overview.md) | N/D | 17 de julho de 2023 |
 | **Campos derivados** | Isto representa a versão inicial dos Campos derivados. Um campo derivado permite definir manipulações de dados (muitas vezes complexas) a qualquer momento, por meio de um criador de regras personalizável. Você pode definir ainda mais o campo derivado como um componente (métrica ou dimensão) nas visualizações de dados e, em seguida, usar o campo derivado como um componente no Workspace.<p>Essa versão é compatível com um modelo de canais de marketing e as seguintes funções:</p><ul><li>Concatenar</li><li>Caso Quando</li><li>Localizar e Substituir</li><li>Pesquisa</li><li>Análise de URL</li></ul> <p>[Saiba mais](/help/data-views/derived-fields/derived-fields.md)</p> | 10 de maio de 2023 | 2 de agosto de 2023 |
 | **Suporte expandido de pesquisa para dados de Perfil e Pesquisa** | Fornece a capacidade de adicionar conjuntos de dados como pesquisas de campos no Perfil ou Conjuntos de dados de pesquisa. Anteriormente, somente os conjuntos de dados de eventos eram compatíveis. [Saiba mais] | 21 de junho de 2023 | 12 de julho de 2023 |
 | **Aprimoramentos de Report Builder** | <ul><li>Filtrar da célula para vários blocos de dados. É possível alterar os filtros em vários blocos de dados de uma célula. Use uma célula predefinida, atribua-a a vários blocos de dados e atualize os dados com base nos filtros definidos na célula. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=en)</li><li>Mostrar e ocultar cabeçalhos de linha e coluna. Você pode mostrar ou ocultar cabeçalhos de tabelas de blocos de dados ou cabeçalhos de linhas e colunas para reformatar a tabela e alinhar blocos de dados em um relatório. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=en#build-the-data-block)</li></ul> | N/D | 19 de julho de 2023 |
