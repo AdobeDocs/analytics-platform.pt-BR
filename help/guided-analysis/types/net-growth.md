@@ -1,15 +1,15 @@
 ---
-title: Crescimento líquido
+title: Visão de crescimento líquido
 description: Você está ganhando ou perdendo usuários?
 feature: Guided Analysis
-source-git-commit: ab734506a023eacdeeb7c26f31a4361a6b804795
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 2%
+source-wordcount: '619'
+ht-degree: 1%
 
 ---
 
-# Crescimento líquido
+# Visão de crescimento líquido
 
 {{release-limited-testing}}
 
@@ -28,13 +28,15 @@ Semelhante ao [Ativo](active.md) tipo de exibição, os usuários são definidos
 * **Inativo**: o usuário estava ativo no período imediatamente anterior, mas não está ativo no período atual. Os usuários inativos não contam para o número total de usuários ativos.
 * Nota: Os usuários repetidos não são fatorados nesse cálculo, pois não representam nenhum ganho ou perda de usuários.
 
+![Crescimento líquido](../assets/net-growth.png)
+
+## Casos de uso
+
 Os casos de uso para esse tipo de exibição incluem:
 
 * **Avaliação de desempenho**: permite avaliar o desempenho geral do produto em termos de aquisição de novos usuários. Ao rastrear as tendências de crescimento, é possível entender melhor se o seu produto está atraindo e retendo usuários no ritmo desejado.
 * **Análise de aquisição de usuário**: permite avaliar a eficácia das estratégias de aquisição de usuários. A análise das fontes de crescimento do usuário, como mecanismos de pesquisa, campanhas ou outros canais de marketing, permite identificar as fontes mais significativas de crescimento, para que você possa alocar recursos adequadamente.
 * **Análise de churn**: O crescimento líquido inclui o atrito em sua fórmula (usuários dormentes). Você pode avaliar a integridade geral de sua base de usuários ao longo do tempo. Se o crescimento líquido for consistentemente inferior a `1`Além disso, indica uma grande quantidade de atrito que pode levar à implementação de estratégias de retenção.
-
-![Crescimento líquido](../assets/net-growth.png)
 
 ## Painel de consulta
 

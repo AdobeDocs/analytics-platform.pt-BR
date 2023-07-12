@@ -1,25 +1,29 @@
 ---
-title: Tendências de conversão
+title: Exibição de tendências de conversão
 description: Rastreie as alterações na taxa de conversão ao longo do tempo.
 feature: Guided Analysis
-source-git-commit: 84ac8008e4c90250e9f626b8c4d72f20297c14ad
+source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '447'
 ht-degree: 2%
 
 ---
 
-# Tendências de conversão
+# Exibição de tendências de conversão
 
 {{release-limited-testing}}
 
-A variável **Tendências de conversão** A exibição fornece uma visualização de tendências em torno das taxas de conversão ao longo do tempo. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical representa a taxa de conversão. Os casos de uso para esse tipo de exibição incluem:
+A variável **Tendências de conversão** A exibição fornece uma visualização de tendências em torno das taxas de conversão ao longo do tempo. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical representa a taxa de conversão.
+
+![Tendências de conversão](../assets/conversion-trends.png)
+
+## Casos de uso
+
+Os casos de uso para esse tipo de exibição incluem:
 
 * **Rastrear esforços de otimização**: Após identificar os principais gargalos que você deseja melhorar usando o [Fricção](friction.md), você pode usar essa visualização para rastrear como essas otimizações afetam a taxa de conversão ao longo do tempo.
 * **Avaliação do teste A/B**: avalie a eficácia de testes A/B ou experimentos realizados no contexto de um funil. Ao comparar taxas de conversão entre diferentes variações, é possível determinar facilmente quais testes fornecem taxas de conversão mais altas, resultando em decisões orientadas por dados em torno de quais variações devem ser implementadas permanentemente.
 * **Avaliação da campanha ao longo do tempo**: meça a eficácia das campanhas de marketing ao longo do tempo. Você pode criar um segmento que se concentre em usuários que tocaram em uma determinada campanha e comparar suas taxas de conversão com outras campanhas. Você também pode comparar as taxas de conversão atuais com campanhas semelhantes que foram executadas no passado.
-
-![Tendências de conversão](../assets/conversion-trends.png)
 
 ## Painel de consulta
 
