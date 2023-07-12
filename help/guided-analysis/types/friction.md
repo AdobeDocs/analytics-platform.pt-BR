@@ -3,9 +3,9 @@ title: Atrito
 description: Comparar taxas de conversão entre etapas.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
+source-git-commit: 164785f52990c43691c8e13c8fa80e3c201995f7
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '486'
 ht-degree: 3%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 3%
 
 {{release-limited-testing}}
 
-A variável **Fricção** O tipo de visualização fornece uma representação visual de uma jornada de usuário crítica em seu produto. O eixo horizontal representa cada evento que um usuário deve tocar em ordem. O eixo vertical representa o percentual de usuários ou sessões que tocaram em cada evento. Todos os pontos de contato devem ser feitos em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios. Os casos de uso para esse tipo de exibição incluem:
+A variável **Fricção** A visualização fornece uma representação visual de uma jornada de usuário crítica em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa o percentual de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios. Os casos de uso para esse tipo de exibição incluem:
 
 * **Análise de conversão**: é possível analisar conversões em cada estágio do funil. Ao rastrear o número de usuários que avançam de uma etapa para a próxima, é possível identificar gargalos que têm taxas de conversão incomuns ou indesejadas. Essas informações são importantes para entender onde você pode melhorar seu produto para obter resultados imediatos.
 * **Otimização da integração**: otimize o processo de integração do seu produto examinando o comportamento do usuário em torno de eventos importantes. Você pode identificar as etapas com as quais os usuários lutam ou não concluem.
-* **Adoção e engajamento de recursos**: entenda como os usuários interagem com recursos específicos no seu produto. Ao analisar a progressão dos usuários por meio de etapas relacionadas a recursos, é possível avaliar as taxas de adoção de recursos e identificar áreas em que os usuários podem abandonar ou subutilizar determinados recursos. Em seguida, você pode usar essas informações para se concentrar em melhorias de recursos ou da interface do usuário para aumentar as taxas de adoção.
+* **Adoção e engajamento de recursos**: entenda como os usuários interagem com recursos específicos no seu produto. Ao analisar a progressão dos usuários por meio de etapas relacionadas a recursos, é possível avaliar as taxas de adoção de recursos e identificar áreas em que os usuários podem abandonar ou subutilizar determinados recursos. Você pode usar essas informações para se concentrar em melhorias de recursos para aumentar as taxas de adoção.
 * **Avaliação da campanha**: meça a eficácia das campanhas de marketing. Você pode criar um segmento que se concentre em usuários que tocaram em uma determinada campanha e comparar seu processo de conversão com outras campanhas ou no produto em geral.
 
 ![Atrito](../assets/friction.png)
@@ -32,11 +32,11 @@ O painel de consulta permite configurar os seguintes componentes:
 
 ## Configurações de gráficos
 
-O funil oferece as seguintes configurações de gráfico. Você pode ajustar as configurações do gráfico usando o menu entre o tipo de exibição e o seletor de calendário.
+A exibição de atrito oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **Métrica**: A métrica que você deseja medir. As opções incluem Sessões e Usuários.
-* **Tipo de gráfico**: o tipo de visualização que você deseja usar. A única opção é Etapas.
-* **Conversão de**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão da Primeira etapa ou da Etapa anterior.
+* **Métrica**: o escopo que você deseja aplicar ao funil. As opções incluem Sessões e Usuários. Ao selecionar sessões, todas as etapas devem acontecer na mesma sessão para serem contadas. Ao selecionar usuários, todas as etapas devem ocorrer na janela de relatórios selecionada para serem contadas.
+* **Tipo de gráfico**: o tipo de visualização que você deseja usar. As opções incluem Etapas.
+* **Conversão de**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir da Primeira etapa ou da Etapa anterior.
 
 ## Aplicar comparação de tempo
 
@@ -46,4 +46,7 @@ O funil oferece as seguintes configurações de gráfico. Você pode ajustar as 
 
 ## Intervalo de datas
 
-A data inicial e final. As predefinições de intervalo de datas estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para definir a data exata desejada.
+O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
+
+* **Interval**: a granularidade de data pela qual você deseja exibir dados de tendências. Essa configuração não afeta exibições sem tendências, como a de Fricção.
+* **Data**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
