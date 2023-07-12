@@ -3,7 +3,7 @@ title: Ativo
 description: Meça o crescimento da sua base de usuários.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 2%
@@ -29,7 +29,7 @@ Os casos de uso para esse tipo de exibição incluem:
 * **Avaliação de campanha**: visualizar uma campanha específica pode ajudar você a entender não apenas o tráfego gerado, mas também o quão bem a campanha ajudou os usuários a permanecerem envolvidos.
 * **Análise do ciclo de vida do usuário**: analisar o crescimento ativo do usuário em todo o ciclo de vida do usuário pode ajudar a identificar estágios específicos em que o engajamento do usuário diminui. Por exemplo, se houver uma alta proporção de usuários inativos para aqueles que estão em um estágio de integração, isso pode indicar problemas de usabilidade ou uma necessidade de melhor orientação no produto.
 
-[Captura de tela do crescimento de usuários]
+![Ativo](../assets/active.png)
 
 ## Painel de consulta
 
@@ -48,6 +48,8 @@ Esse tipo de visualização oferece as seguintes configurações de gráfico. Vo
 ## Aplicar comparação de tempo
 
 {{apply-time-comparison}}
+
+![Comparação de tempo ativo](../assets/active-compare.png)
 
 ## Intervalo de datas
 

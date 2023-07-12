@@ -2,9 +2,9 @@
 title: Tendências de conversão
 description: Rastreie as alterações na taxa de conversão ao longo do tempo.
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '475'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ A variável **Tendências de conversão** O tipo de visualização fornece uma v
 * **Avaliação do teste A/B**: avalie a eficácia de testes A/B ou experimentos realizados no contexto de um funil. Ao comparar taxas de conversão entre diferentes variações, é possível determinar facilmente quais testes fornecem taxas de conversão mais altas, resultando em decisões orientadas por dados em torno de quais variações devem ser implementadas permanentemente.
 * **Avaliação da campanha ao longo do tempo**: meça a eficácia das campanhas de marketing ao longo do tempo. Você pode criar um segmento que se concentre em usuários que tocaram em uma determinada campanha e comparar suas taxas de conversão com outras campanhas. Você também pode comparar as taxas de conversão atuais com campanhas semelhantes que foram executadas no passado.
 
-[Captura de tela do funil]
+![Tendências de conversão](../assets/conversion-trends.png)
 
 ## Painel de consulta
 
@@ -39,6 +39,8 @@ O funil oferece as seguintes configurações de gráfico. Você pode ajustar as 
 ## Aplicar comparação de tempo
 
 {{apply-time-comparison}}
+
+![Comparação de tempo de tendências de conversão](../assets/conversion-trends-compare.png)
 
 ## Intervalo de datas
 

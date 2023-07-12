@@ -3,9 +3,9 @@ title: Uso
 description: Medir o engajamento do usuário ao longo do tempo.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '505'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ A variável **Uso** O tipo de visualização fornece informações valiosas sobr
 * **Comportamento do usuário**: as tendências podem fornecer informações sobre o comportamento do usuário ao longo do tempo. Ao examinar ações específicas que os usuários tomam, é possível identificar padrões em que os usuários podem cair. É possível combinar insights desse tipo de visualização com [Fricção](friction.md) para obter ainda mais informações sobre comportamento.
 * **Teste A/B e experimentação**: se você executar testes A/B no produto, poderá usar Tendências para medir quais testes são mais bem-sucedidos ao longo do tempo.
 
-[Captura de tela das tendências]
+![Uso](../assets/usage.png)
 
 ## Painel de consulta
 
@@ -40,6 +40,8 @@ As tendências oferecem as seguintes configurações de gráfico. Você pode aju
 ## Aplicar comparação de tempo
 
 {{apply-time-comparison}}
+
+![Comparação de tempo de uso](../assets/usage-compare.png)
 
 ## Intervalo de datas
 

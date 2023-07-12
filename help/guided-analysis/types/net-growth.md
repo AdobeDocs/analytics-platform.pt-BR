@@ -2,10 +2,10 @@
 title: Crescimento líquido
 description: Equilibrar ganhos e perdas do usuário.
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 1%
+source-wordcount: '563'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ Os casos de uso para esse tipo de exibição incluem:
 * **Avaliação de desempenho**: permite avaliar o desempenho geral do produto em termos de aquisição de novos usuários. Ao rastrear as tendências de crescimento, é possível entender melhor se o seu produto está atraindo e retendo usuários no ritmo desejado.
 * **Análise de churn**: O crescimento líquido leva inclui o atrito em sua fórmula (usuários dormentes). Você pode avaliar a integridade geral de sua base de usuários ao longo do tempo. Se o crescimento líquido for consistentemente inferior a `1`Além disso, indica um alto desgaste, o que leva você a investigar os motivos por trás disso e implementar estratégias de retenção.
 
-[Captura de tela do crescimento de usuários]
+![Crescimento líquido](../assets/net-growth.png)
 
 ## Painel de consulta
 

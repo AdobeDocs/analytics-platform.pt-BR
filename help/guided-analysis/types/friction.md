@@ -3,9 +3,9 @@ title: Atrito
 description: Comparar taxas de conversão entre etapas.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 14c7aa342649afbe9923b0086947e5a0adeefff2
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '423'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ A variável **Fricção** O tipo de visualização fornece uma representação v
 * **Adoção e engajamento de recursos**: entenda como os usuários interagem com recursos específicos no seu produto. Ao analisar a progressão dos usuários por meio de etapas relacionadas a recursos, é possível avaliar as taxas de adoção de recursos e identificar áreas em que os usuários podem abandonar ou subutilizar determinados recursos. Em seguida, você pode usar essas informações para se concentrar em melhorias de recursos ou da interface do usuário para aumentar as taxas de adoção.
 * **Avaliação da campanha**: meça a eficácia das campanhas de marketing. Você pode criar um segmento que se concentre em usuários que tocaram em uma determinada campanha e comparar seu processo de conversão com outras campanhas ou no produto em geral.
 
-[Captura de tela do funil]
+![Atrito](../assets/friction.png)
 
 ## Painel de consulta
 
@@ -41,6 +41,8 @@ O funil oferece as seguintes configurações de gráfico. Você pode ajustar as 
 ## Aplicar comparação de tempo
 
 {{apply-time-comparison}}
+
+![Comparação de tempo de atrito](../assets/friction-compare.png)
 
 ## Intervalo de datas
 

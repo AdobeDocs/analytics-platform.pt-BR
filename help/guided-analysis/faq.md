@@ -3,10 +3,10 @@ title: Perguntas frequentes sobre análise guiada
 description: Perguntas frequentes sobre análise guiada.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: d5208a28c9efd6c31ecbfc6ff6b4e44a52f396e8
+source-git-commit: 84cafd2756a09537c93524ff728ea78b7cbf5c8e
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 2%
+source-wordcount: '323'
+ht-degree: 3%
 
 ---
 
@@ -47,13 +47,11 @@ A análise guiada usa termos mais usados no setor de análise de produtos. Você
 
 Embora o Analysis Workspace e a Análise guiada usem os mesmos dados subjacentes, a maneira como cada ferramenta consulta esses dados é diferente.
 
-**O Analysis Workspace é uma experiência centralizada em dimensões.** As tabelas geralmente consistem em linhas de item de dimensão, enquanto as colunas normalmente são métricas. Aplique filtros a qualquer um deles para obter os dados desejados.
+* **O Analysis Workspace é uma experiência centralizada em dimensões.** As tabelas geralmente consistem em linhas de item de dimensão, enquanto as colunas normalmente são métricas. Aplique filtros a qualquer um deles para obter os dados desejados.
 
-![Estrutura do Workspace](assets/workspace-structure.png)
+* **A análise guiada é uma experiência centrada em eventos.** As visualizações se concentram em eventos, usando dimensões e filtros para complementar esses dados.
 
-**A análise guiada é uma experiência centrada em eventos.** As visualizações se concentram em eventos, usando dimensões e filtros para complementar esses dados.
-
-![Estrutura de análise guiada](assets/guided-analysis-structure.png)
+![Estrutura](assets/structure.png)
 
 Considere o exemplo a seguir em que você se concentra nos dados na página inicial do site. As equipes fazem perguntas semelhantes, mas a abordagem de análise pode ser diferente.
 
