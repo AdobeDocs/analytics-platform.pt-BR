@@ -1,9 +1,9 @@
 ---
 title: Casos de uso do setor
 description: Casos de uso do setor para análise guiada
-source-git-commit: 9311157c8aa8bab8627e3fdf3e989a0302d29f32
+source-git-commit: 704018bd9d0dae97e0f9c40c36d0618e9f15de76
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1442'
 ht-degree: 2%
 
 ---
@@ -16,12 +16,16 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 
 | Caso de uso | Exemplo | Impacto | Análise |
 | --- | --- | --- | --- |
-| **Otimizar o aplicativo de compras móvel** | Muitos clientes baixaram nosso aplicativo móvel, mas nunca voltaram. Descobrimos que eles o estavam usando apenas para a oferta inicial e engajaram novamente esses clientes inativos. | **Aumente o LTV de usuários móveis.** Meça e aumente o uso do aplicativo para desenvolver uma experiência do usuário de &quot;caminho feliz&quot;. | [Exibição de crescimento de usuário ativo](types/active.md) <p/><p/> [Visão de crescimento líquido](types/net-growth.md) |
+| **Otimizar o aplicativo de compras móvel** | Muitos clientes baixaram nosso aplicativo móvel, mas nunca voltaram. Descobrimos que eles o estavam usando apenas para a oferta inicial e engajaram novamente esses clientes inativos. | **Aumente o LTV de usuários móveis.** Meça e aumente o uso do aplicativo para desenvolver uma experiência do usuário mais &quot;happy path&quot;. | [Exibição de crescimento de usuário ativo](types/active.md) <p/><p/> [Visão de crescimento líquido](types/net-growth.md) |
 | **Quantificar o impacto de novos recursos de check-out** | Como uma mercearia testando nosso caminho para compras on-line, podemos medir rapidamente o impacto de novos recursos de check-out, como &quot;Você esqueceu a manteiga?&quot; recomendações de produto ou novos métodos de check-out, como o Curbside Pickup. | **Aumente as taxas de conversão.** Meça o impacto nos negócios em vez de apenas usar os recursos. | [Visualização do impacto da versão](types/release.md) <p/><p/> [Visualização de primeiro uso](types/first-use.md) |
 | **Reduzir churn de associação** | Descobrimos pontos de atrito nas jornadas do cliente que fazem com que os clientes abandonem a bateria. Isso nos deu a oportunidade de revisar programas de associação e analisar comportamentos e sinais de membros em risco. | **Reduza o abandono.** Identificar maneiras de promover e nutrir os relacionamentos com os clientes para evitar o atrito e reduzir a rotatividade. | [Exibição de crescimento de usuário ativo](types/active.md) <p/><p/> [Visualização de atrito](types/friction.md) |
 | **Encontrar jornadas de vendas ineficientes** | Descobrimos ineficiências na jornada de nossos associados de vendas na loja, onde eles eram retirados dos clientes. Ajustamos o processo, que proporcionou aos clientes uma experiência de compra mais agradável na loja. | **Melhorar a resposta das vendas.** Melhore as jornadas internas para reduzir processos ineficientes, resultando em experiências positivas do cliente. | [Visualização de atrito](types/friction.md) |
 
 {style="table-layout:auto"}
+
+![Exibição de atrito para varejo](assets/retail-funnel-friction.png)
+
+![Modo de exibição de uso para varejo](assets/retail-trends-usage.png)
 
 +++
 
@@ -32,9 +36,17 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 | **Quantificar o impacto de novos recursos** | Recentemente lançamos transferências bancárias com o Zelle, e precisávamos entender o impacto do novo recurso nas transferências finais. Agora que podemos ver como os clientes estão reagindo, a equipe de marketing pode implantá-lo. | **Aumente as taxas de conversão.** Meça o impacto de novos recursos nas conversões de transferência. | [Visualização do impacto da versão](types/release.md) <p/><p/> [Visualização de primeiro uso](types/first-use.md) |
 | **Desviar chamadas da central de atendimento** | Nosso processo de solicitação móvel em 5 etapas estava direcionando chamadas para a central de atendimento. Analisamos isso rapidamente, criamos um público-alvo e enviamos um email para esses clientes para entender sua experiência.&quot; | **Isole o atrito na experiência.** Melhore as jornadas de &quot;caminho feliz&quot; e reduza as chamadas. | [Visualização de atrito](types/friction.md) <p/><p/> [Exibição de tendências de conversão](types/conversion-trends.md) |
 | **Reduzir o churn do cliente** | Sabemos que os clientes que fazem logon no aplicativo móvel bancário com frequência mensal permanecem como clientes por mais tempo. Quando observamos o crescimento de usuários do aplicativo, podemos identificar quem está em risco de churn e criar uma estratégia de retorno. | **Reduza o abandono.** Mantenha o nível de clientes enquanto gasta para adquirir novos clientes reais. | [Exibição de crescimento de usuário ativo](types/active.md) <p/><p/> [Visão de crescimento líquido](types/net-growth.md) |
-| **Recomende novos recursos** | As retiradas digitais diminuíram ao longo do tempo em vez de chamar um consultor financeiro. Gostaríamos de otimizar o processo digital, e as tendências de dados nos ajudam a priorizar as otimizações com um comitê diretor. | **Crie um roteiro orientado por dados.** Aproveite os dados para planejar e implementar otimizações. | [Exibição de tendências de uso](types/usage.md) |
+| **Recomende novos recursos** | As retiradas digitais diminuíram ao longo do tempo em vez de chamar um consultor financeiro. Gostaríamos de otimizar o processo digital, e as tendências de dados nos ajudam a priorizar as otimizações com um comitê de direção. | **Crie um roteiro orientado por dados.** Aproveite os dados para planejar e implementar otimizações. | [Exibição de tendências de uso](types/usage.md) |
 
 {style="table-layout:auto"}
+
+![Visualização de atrito para serviços financeiros](assets/fsi-funnel-friction.png)
+
+![Modo de exibição de uso para serviços financeiros](assets/fsi-trends-usage.png)
+
+![Exibição ativa para serviços financeiros](assets/fsi-user-growth-active.png)
+
+![Modo de exibição Ativo Alternativo para serviços financeiros](assets/fsi-user-growth-active-2.png)
 
 +++
 
@@ -45,9 +57,13 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 | **Quantificar o impacto de novos recursos de fluxo de reserva** | Analisamos rapidamente o impacto de um novo recurso de etapa de reserva nas taxas de conversão e identificamos a parte da experiência com os maiores ganhos. | **Aumente as taxas de reserva.** Meça o impacto nos negócios em vez de apenas usar os recursos. | [Visualização do impacto da versão](types/release.md) <p/><p/> [Visualização de atrito](types/friction.md) |
 | **Otimizar a experiência do aplicativo móvel** | Conseguimos entender de maneira rápida e fácil nossos MAUs (usuários de aplicativo ativos) mensais ao longo do tempo e identificar o impacto positivo por versão. | **Aumentar MAUs.** Meça e aumente o uso do aplicativo, que está correlacionado à felicidade do cliente. | [Exibição de crescimento de usuário ativo](types/active.md) <p/><p/> [Visão de crescimento líquido](types/net-growth.md) |
 | **Encontre atrito no fluxo de check-in móvel** | Ver onde as pessoas são bem-sucedidas ou abandonam o processo de check-in móvel esperado permite identificar facilmente áreas para otimização de experiência. | **Aumente o CSAT e reduza os IROPs.** A remoção do atrito leva a uma experiência de &quot;dia de viagem&quot; mais contínua. | [Visualização de atrito](types/friction.md) <p/><p/> [Exibição de tendências de conversão](types/conversion-trends.md) |
-| **Desviar chamadas da central de atendimento** | Ver minha experiência de usuário em uma visualização de funil me mostrou onde nossos usuários estavam enfrentando atrito, o que gerava um volume dispendioso da central de atendimento. Sabíamos onde deveríamos nos concentrar em seguida. | **Reduza o uso da central de atendimento.** Obtenha mais experiências de usuário de ‘caminho feliz’ e reduza chamadas dispendiosas. | [Visualização de atrito](types/friction.md) <p/><p/> [Exibição de tendências de conversão](types/conversion-trends.md) |
+| **Desviar chamadas da central de atendimento** | Ver minha experiência de usuário em uma visualização de funil me mostrou onde nossos usuários estavam enfrentando atrito, o que gerava um volume dispendioso da central de atendimento. Sabíamos onde deveríamos nos concentrar em seguida. | **Reduza o uso da central de atendimento.** Obtenha mais experiências de usuário de &quot;caminho feliz&quot; e reduza chamadas dispendiosas. | [Visualização de atrito](types/friction.md) <p/><p/> [Exibição de tendências de conversão](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
+
+![Vista de atrito para viagem e hospitalidade](assets/th-funnel-friction.png)
+
+![Visualização de uso para viagem e hospitalidade](assets/th-trends-usage.png)
 
 +++
 
@@ -62,6 +78,10 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 
 {style="table-layout:auto"}
 
+![Vista de atrito para mídia e entretenimento](assets/me-funnel-friction.png)
+
+![Exibição ativa de mídia e entretenimento](assets/me-user-growth-active.png)
+
 +++
 
 +++**Assistência médica**
@@ -69,11 +89,13 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 | Caso de uso | Exemplo | Impacto | Análise |
 | --- | --- | --- | --- |
 | **Melhorar os resultados de saúde dos pacientes** | Eu não tinha uma compreensão clara de quantos membros do plano de bem-estar por semana simplesmente pararam de usá-lo completamente. Agora temos dados para focar nossos esforços no crescimento. | **Reduza as consultas médicas.** Usuários inativos rapidamente identificados para reengajamento. | [Exibições ativas de crescimento do usuário](types/active.md) |
-| **Melhorar a experiência do paciente** | Ter visibilidade direta de quantos pacientes ligavam para nossas centrais de atendimento para senhas simples redefine minha paixão por ser focada na redução do custo geral de atendimento da empresa e no fortalecimento da experiência do paciente. | **Reduzir o custo geral de atendimento.** Crie uma melhor experiência para o paciente e diminua as chamadas para os serviços de pacientes. | [Exibição de tendências de uso](types/usage.md) <p/><p/> [Visualização de atrito](types/friction.md) |
+| **Melhorar a experiência do paciente** | Ter visibilidade direta de quantos pacientes estavam ligando para nossas centrais de atendimento para redefinições de senha simples renovou minha paixão por ser focada na redução do custo geral de atendimento da empresa e no fortalecimento da experiência do paciente. | **Reduzir o custo geral de atendimento.** Crie uma melhor experiência para o paciente e diminua as chamadas para os serviços de pacientes. | [Exibição de tendências de uso](types/usage.md) <p/><p/> [Visualização de atrito](types/friction.md) |
 | **Identificar ações repetidas entre canais por segmento** | Preciso entender como os membros qualificados do Medicare estão ativos com o uso do plano para fornecer mensagens específicas a eles em nossos produtos digitais. Os sinais de produtos ajudam a tornar nosso marketing mais eficiente. | **Personalize as opções de inscrição do Medicare.** Comparar ações sequenciais comuns pelos membros mais ativos do plano. | [Visualização de atrito](types/friction.md) <p/><p/> [Exibição de crescimento de usuário ativo](types/active.md) |
 | **Manter os melhores talentos do setor** | Nossos recursos de análise são tão limitados no tempo. Preciso obter rapidamente os dados de uso do produto necessários para minhas chamadas de atualização de liderança. | **Reduza a carga de trabalho do analista.** Obtenha respostas mais rapidamente. Relatórios acessíveis para quando mais preciso. | [Análise guiada](overview.md) |
 
 {style="table-layout:auto"}
+
+![Vista de atrito para cuidados de saúde](assets/healthcare-funnel-friction.png)
 
 +++
 
@@ -87,5 +109,7 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 | **Desbloquear análise de autoatendimento** | Tentar obter acesso a insights é desafiador e nossos usuários não são treinados para análise. Eles precisam ser capazes de obter respostas e aproveitar os mesmos dados que toda a organização está usando, resultando em parcerias mais fortes e permitindo decisões verdadeiramente orientadas por dados. | **Parcerias mais próximas em toda a organização.** Conceda aos gerentes de produtos acesso aos dados colocados em silos anteriormente. | [Análise guiada](overview.md) |
 
 {style="table-layout:auto"}
+
+![Visualização de uso para B2B](assets/b2b-trends-usage.png)
 
 +++
