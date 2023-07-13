@@ -2,9 +2,9 @@
 title: Visualização da versão
 description: Compare o desempenho em períodos iguais antes e depois do lançamento.
 feature: Guided Analysis
-source-git-commit: aca4a5091c65d7243f79551be7cee615ba98bb26
+source-git-commit: a635c43c129ea45b270e304f4310b95124709b2a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '475'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,8 @@ A variável **Versão** A exibição mostra uma comparação de como os indicado
 
 Os casos de uso para esse tipo de exibição incluem:
 
-* **Avaliação geral do desempenho:** A comparação de indicadores principais gerais, como receita, pode ajudar você a determinar se uma determinada versão foi bem-sucedida em geral.
+* **Avaliação geral do desempenho:** A comparação de indicadores principais gerais, como medidas de engajamento, pode ajudar você a determinar se uma determinada versão foi bem-sucedida em geral.
+* **Monitoramento**: Se houver determinadas medidas que você espera que permaneçam uniformes quando as alterações forem feitas, como sinais vitais da Web, como tempo de carregamento ou logons, compare-as antes e depois para garantir que a liberação não tenha nenhuma consequência não intencional.
 * **Adoção de recursos**: se uma atualização de produto estiver focada na melhoria de um determinado recurso, você poderá usar essa exibição para comparar diretamente o uso desse recurso antes e depois da atualização do produto.
 * **Detecção de erros**: rastrear o número de erros antes e depois de um lançamento pode fornecer um indicador antecipado dos problemas do cliente. Se você notar um aumento de erros imediatamente após um lançamento, poderá trabalhar com as equipes de engenharia ou desenvolvimento para identificar e corrigir o problema, evitando maior impacto para os clientes.
 
@@ -42,7 +43,7 @@ A visualização Release oferece as seguintes configurações de gráfico, que p
 
 ## Intervalo de datas
 
-A seleção de datas nos relatórios de impacto opera de forma diferente dos outros tipos de análise, já que o relatório gira em torno da data especificada no painel de consulta. As opções disponíveis são as seguintes:
+A seleção de datas na Análise de impacto opera de forma diferente dos outros tipos de análise, já que o relatório gira em torno da data especificada no painel de consulta. As opções disponíveis são as seguintes:
 
 * **Interval**: a granularidade de data pela qual você deseja exibir dados de tendências. As opções válidas incluem [!UICONTROL Diariamente], [!UICONTROL Semanalmente], [!UICONTROL Mensal], e [!UICONTROL Trimestral]. A alteração do intervalo afeta as opções disponíveis para o Período anterior e posterior.
 * **Antes e depois do período**: O tempo que deve ser analisado antes e depois da data especificada no painel de consulta. As opções disponíveis dependem do [!UICONTROL Interval] seleção.
