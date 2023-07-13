@@ -3,10 +3,10 @@ title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
 workflow-type: tm+mt
-source-wordcount: '1565'
-ht-degree: 63%
+source-wordcount: '1576'
+ht-degree: 61%
 
 ---
 
@@ -32,7 +32,7 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) para 
 
    Defina essas configurações antes de publicar o público-alvo.
 
-   ![](assets/create-audience.png)
+   ![Imagem de como criar um público-alvo do](assets/create-audience.png)
 
    | Configuração | Descrição |
    | --- | --- |
@@ -52,7 +52,7 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) para 
 
    A visualização do público-alvo é exibida no painel direito. Ela permite uma análise resumida do público-alvo criado.
 
-   ![](assets/data-preview.png)
+   ![Captura de tela da pré-visualização de dados](assets/data-preview.png)
 
    | Configuração de visualização | Descrição |
    | --- | --- |
@@ -85,7 +85,7 @@ Depois de criar um público-alvo, o Adobe cria um segmento de transmissão Exper
 
 Em vários pontos antes, durante e depois da publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
-![Latência do Adobe Experience Platform para o Customer Journey Analytics](assets/latency-diagram.png)
+![Latências na publicação de público, conforme descrito em [Considerações de latência](#latency-considerations)](assets/latency-diagram.png)
 
 | # | Ponto de latência | Duração da latência |
 | --- | --- | --- |
@@ -102,7 +102,7 @@ Em vários pontos antes, durante e depois da publicação do público-alvo, pode
 
 O Customer Journey Analytics pega todas as combinações de namespace e ID de seu público publicado e as transmite para o Perfil do cliente em tempo real (RTCP). Customer Journey Analytics envia o público-alvo para o Experience Platform com a identidade principal definida, de acordo com o que foi selecionado como a [!UICONTROL ID de pessoa] quando a conexão foi configurada.
 
-Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, “user@adobe.com” pode ser direcionado para todos os dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
+Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, <user@adobe.com> podem ser direcionados para todos os dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
 Você pode visualizar públicos-alvo do Customer Journey Analytics na Platform acessando **[!UICONTROL Segmentos]** > **[!UICONTROL Criar segmentos]** > **[!UICONTROL Públicos-alvo]** guia > **[!UICONTROL Públicos-alvo do CJA]**.
 
