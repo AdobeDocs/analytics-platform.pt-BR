@@ -1,9 +1,9 @@
 ---
 title: Casos de uso do setor
 description: Casos de uso do setor para análise guiada
-source-git-commit: 704018bd9d0dae97e0f9c40c36d0618e9f15de76
+source-git-commit: 4a82681f0523e0a9cba23da98f42f9dd6210b414
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1448'
 ht-degree: 2%
 
 ---
@@ -65,6 +65,8 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 
 ![Visualização de uso para viagem e hospitalidade](assets/th-trends-usage.png)
 
+![Tendências de conversão para viagem e hospitalidade](assets/th-funnel-conversio-trends.png)
+
 +++
 
 +++**Mídia e entretenimento**
@@ -81,6 +83,8 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 ![Vista de atrito para mídia e entretenimento](assets/me-funnel-friction.png)
 
 ![Exibição ativa de mídia e entretenimento](assets/me-user-growth-active.png)
+
+![](assets/me-trends-usage.png)
 
 +++
 
