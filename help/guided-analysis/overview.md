@@ -3,9 +3,9 @@ title: Visão geral da análise guiada
 description: Um método de análise de dados em Customer Journey Analytics que permite que as equipes de produtos obtenham insights de alta qualidade rapidamente.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 41fbbf588c74d653b48f5b0c58ea99f1e8a7e6a9
+source-git-commit: cc76b4c3b03647f6e90f0b57f4d8c819caa8823f
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '1041'
 ht-degree: 9%
 
 ---
@@ -33,6 +33,14 @@ A análise guiada categoriza os tipos de visualização em **Tipos de análise**
 | Tendências | [Uso](types/usage.md) | Medir o engajamento do usuário ao longo do tempo. |
 
 {style="table-layout:auto"}
+
+## Access
+
+Se sua organização for provisionada para análise guiada, ela poderá ser acessada na página inicial do Customer Journey Analytics.
+
+Clique em **Análise guiada** da página inicial para ir diretamente para a página [Exibição de tendências de uso](types/usage.md).
+
+Clique em **Criar novo** para ver as diferentes opções de exibição e escolher um ponto de partida diferente para a análise.
 
 ## Interface
 
