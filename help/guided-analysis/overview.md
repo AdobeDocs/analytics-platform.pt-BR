@@ -3,10 +3,10 @@ title: Visão geral da análise guiada
 description: Um método de análise de dados em Customer Journey Analytics que permite que as equipes de produtos obtenham insights de alta qualidade rapidamente.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: cc76b4c3b03647f6e90f0b57f4d8c819caa8823f
+source-git-commit: bdde5e7798ee3c960006d47dc31947d2e1a74a5f
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 9%
+source-wordcount: '1048'
+ht-degree: 8%
 
 ---
 
@@ -24,23 +24,27 @@ A análise guiada categoriza os tipos de visualização em **Tipos de análise**
 
 | Tipo de análise | Tipo de visualização | Descrição |
 | --- | --- | --- |
-| Impacto | [Versão](types/release.md) | Compare o desempenho em períodos iguais antes e depois do lançamento. |
-| Impacto | [Primeiro uso](types/first-use.md) | Medir o impacto do uso de recursos pela primeira vez em indicadores-chave. |
-| Funil | [Atrito](types/friction.md) | Comparar taxas de conversão entre etapas. |
-| Funil | [Tendências de conversão](types/conversion-trends.md) | Acompanhe as alterações nas taxas de conversão ao longo do tempo. |
-| Crescimento de usuários | [Ativo](types/active.md) | Identifique quem é novo, retido, recorrente ou inativo. |
-| Crescimento de usuários | [Crescimento líquido](types/net-growth.md) | Você está ganhando ou perdendo usuários? |
-| Tendências | [Uso](types/usage.md) | Medir o engajamento do usuário ao longo do tempo. |
+| [!UICONTROL Impacto] | [Versão](types/release.md) | Compare o desempenho em períodos iguais antes e depois do lançamento. |
+| [!UICONTROL Impacto] | [Primeiro uso](types/first-use.md) | Medir o impacto do uso de recursos pela primeira vez em indicadores-chave. |
+| [!UICONTROL Funil] | [Atrito](types/friction.md) | Comparar taxas de conversão entre etapas. |
+| [!UICONTROL Funil] | [Tendências de conversão](types/conversion-trends.md) | Acompanhe as alterações nas taxas de conversão ao longo do tempo. |
+| [!UICONTROL Crescimento de usuários] | [Ativo](types/active.md) | Identifique quem é novo, retido, recorrente ou inativo. |
+| [!UICONTROL Crescimento líquido] | [Crescimento líquido](types/net-growth.md) | Você está ganhando ou perdendo usuários? |
+| [!UICONTROL Tendências] | [Uso](types/usage.md) | Medir o engajamento do usuário ao longo do tempo. |
 
 {style="table-layout:auto"}
 
 ## Access
 
-Se sua organização for provisionada para análise guiada, ela poderá ser acessada na página inicial do Customer Journey Analytics.
+Se sua organização for provisionada para análise guiada, você poderá acessá-la na página inicial do Customer Journey Analytics.
 
-Clique em **Análise guiada** da página inicial para ir diretamente para a página [Exibição de tendências de uso](types/usage.md).
+1. Clique em **[!UICONTROL Análise guiada]** da página inicial para ir diretamente para a página [Exibição de tendências de uso](types/usage.md).
 
-Clique em **Criar novo** para ver as diferentes opções de exibição e escolher um ponto de partida diferente para a análise.
+   ![Criar um novo modal](assets/create-new-modal.png)
+
+1. Clique em **[!UICONTROL Criar novo]** para ver as diferentes opções de exibição e escolher um ponto de partida diferente para a análise.
+
+   ![Mosaico da página de destino](assets/landing-page-tile.png)
 
 ## Interface
 
