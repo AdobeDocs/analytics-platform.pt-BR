@@ -3,10 +3,10 @@ title: Perguntas frequentes sobre análise guiada
 description: Perguntas frequentes sobre análise guiada.
 exl-id: 32bfce23-a59c-45cb-b1cd-82f048fb13d2
 feature: Guided Analysis
-source-git-commit: 23d3e6a9662cda932a376c09849ab078d22830dc
+source-git-commit: d15ada7c5b46c55f56e3fd3ba2b749f0495a0c10
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 3%
+source-wordcount: '418'
+ht-degree: 2%
 
 ---
 
@@ -16,21 +16,31 @@ ht-degree: 3%
 
 Perguntas frequentes sobre análise guiada.
 
-+++**A análise guiada está disponível para todos?**
++++**Como minha organização pode ser provisionada para análise guiada?**
 
-Não; a análise guiada é um complemento pago do Customer Journey Analytics. Se quiser começar a usar este complemento, entre em contato com a equipe de conta do Adobe.
+A análise guiada é um complemento pago do Customer Journey Analytics. Se quiser começar a usar este complemento, entre em contato com a equipe de conta do Adobe.
 
 +++
 
 +++**Quais alterações de implementação são necessárias para usar a análise guiada?**
 
-Se você já estiver usando o Analysis Workspace no Customer Journey Analytics, nenhuma alteração de implementação adicional será necessária. A análise guiada usa as mesmas visualizações de dados e conexões que o Analysis Workspace. O processo para integrar e usar qualquer tipo de projeto é idêntico para todo o Customer Journey Analytics, incluindo análise guiada.
+Se você já estiver usando o Customer Journey Analytics hoje, nenhuma alteração de implementação adicional será necessária. A análise guiada usa o mesmo [Visualizações de dados](../data-views/data-views.md) e [Conexões](../connections/overview.md) como outras interfaces do CJA, como [Analysis Workspace](../analysis-workspace/home.md).
+
+Para que os usuários finais tenham mais sucesso com a análise guiada, é recomendável ter um esquema de evento e uma estratégia de gerenciamento sólidos em vigor no Adobe Experience Platform e [Visualizações de dados](../data-views/data-views.md).
 
 +++
 
-+++**Como os termos se relacionam entre si dentro e fora da Análise guiada?**
++++**Quando você deve usar a Análise guiada ou o Analysis Workspace?**
 
-A análise guiada usa termos mais usados no setor de análise de produtos. Você pode fazer referência a essa tabela ao alternar entre a Análise guiada e a Analysis Workspace.
+**Análise guiada** O pode ajudar os usuários a obter insights de alta qualidade rapidamente. É útil para equipes de produtos, usuários que procuram trabalhar com mais confiança com dados e até mesmo analistas como uma vantagem inicial para uma análise mais profunda.
+
+**[Analysis Workspace](../analysis-workspace/home.md)** é um espaço de forma mais livre que permite mergulhar mais fundo nos dados para descobrir mais insights. É útil para analistas e usuários avançados que entendem bem os dados e desejam analisá-los detalhadamente.
+
++++
+
++++**Como a terminologia se compara entre a Análise guiada e a Analysis Workspace?**
+
+A análise guiada usa termos mais usados entre as equipes de produtos. Você pode fazer referência a esta tabela ao alternar entre a Análise guiada e [Analysis Workspace](../analysis-workspace/home.md).
 
 | Termo de análise guiada | Termo do Analysis Workspace |
 | --- | --- |
@@ -44,26 +54,24 @@ A análise guiada usa termos mais usados no setor de análise de produtos. Você
 
 +++
 
-+++**Quais são algumas diferenças em relação à forma como o Analysis Workspace e a análise guiada abordam a análise?**
++++**Quais são algumas diferenças em relação à maneira como a Análise guiada e o Analysis Workspace abordam os relatórios?**
 
-Embora o Analysis Workspace e a Análise guiada usem os mesmos dados subjacentes, a maneira como cada ferramenta permite que você forme consultas desses dados é diferente.
+Enquanto [Analysis Workspace](../analysis-workspace/home.md) A e a Análise guiada usam os mesmos dados subjacentes, a maneira como cada ferramenta permite que você forme consultas desses dados é diferente.
 
-* **O Analysis Workspace é uma experiência centralizada em dimensões.** As tabelas geralmente consistem em linhas de item de dimensão, enquanto as colunas normalmente são métricas. Aplique filtros a linhas e colunas para obter os dados desejados.
+* **O Analysis Workspace é uma experiência centralizada em dimensões.** As tabelas geralmente consistem em linhas dimensionais, enquanto as colunas normalmente são métricas. Os filtros podem ser aplicados em linhas e colunas para obter os dados desejados.
 
-* **A análise guiada é uma experiência centrada em eventos.** As visualizações se concentram em eventos, usando dimensões e filtros para complementar esses dados.
+* **A análise guiada é uma experiência centrada em eventos.** Cada análise é iniciada selecionando eventos, em seguida, dimensões e filtros podem ser adicionados para refinar esses dados do evento.
 
 ![Estrutura](assets/structure.png)
 
 Considere o exemplo a seguir em que você se concentra nos dados na página inicial do site. As equipes fazem perguntas semelhantes, mas a abordagem de análise pode ser diferente.
 
-* Uma abordagem típica do Analysis Workspace centralizada em dimensão seria &quot;Quantas visualizações de página a página inicial recebeu?&quot;
+* Uma abordagem típica do Analysis Workspace centrada em dimensões seria &quot;Vamos examinar a página inicial e ver quantas visualizações de página ela recebeu&quot;.
 
   ![Dimension centralizado](assets/dimension-centered.png)
 
 * Uma abordagem típica de análise guiada centrada em eventos seria &quot;Quantos usuários visualizaram a página inicial?&quot;
 
   ![Evento centralizado](assets/event-centered.png)
-
-Essas declarações ilustram dois métodos diferentes para obter o mesmo relatório, dependendo da estratégia de gerenciamento de eventos.
 
 +++
