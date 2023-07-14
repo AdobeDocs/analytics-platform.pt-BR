@@ -2,10 +2,10 @@
 title: Visualização de primeiro uso
 description: Medir o impacto do uso de recursos pela primeira vez em indicadores-chave.
 feature: Guided Analysis
-source-git-commit: 9fa4b894e69a25b26632a93f00a655eec8e8aa86
+source-git-commit: 4d642c150f04ed4780820036cfd53fc343fc94c8
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 5%
+source-wordcount: '614'
+ht-degree: 3%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 {{release-limited-testing}}
 
-A variável **Primeira utilização** A visualização mostra uma comparação do desempenho dos indicadores principais antes e depois que um usuário toca em um determinado evento pela primeira vez. O eixo horizontal desse relatório é um intervalo de tempo relativo antes e depois do evento, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa quando o evento aconteceu para determinado usuário.
+A variável **Primeira utilização** A exibição do mostra uma comparação do desempenho dos indicadores principais antes e depois que um usuário usa um recurso do produto pela primeira vez. O eixo horizontal desse relatório é um intervalo de tempo relativo antes e depois do evento, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa o dia 0 para quando um recurso é usado pela primeira vez por um determinado usuário. Como os usuários nem sempre adotam recursos no mesmo dia e as implantações podem ocorrer ao longo de vários dias, o dia 0 significa algo diferente para cada usuário individual.
 
 ![Versão](../assets/first-use.png)
 
@@ -22,7 +22,10 @@ A variável **Primeira utilização** A visualização mostra uma comparação d
 Os casos de uso para esse tipo de exibição incluem:
 
 * **Nova análise de recursos**: se estiver lançando um novo recurso no seu produto, você pode comparar o desempenho dos indicadores-chave antes e depois que os usuários foram expostos a esse novo recurso pela primeira vez.
-* **Eficácia da campanha**: quando um usuário visualiza uma determinada campanha, é possível comparar o desempenho dos indicadores-chave antes e depois que o usuário viu ou interagiu com essa campanha.
+* **Implantações em fases**: como a análise busca o primeiro uso do recurso em vez de uma data fixa, essa visualização será particularmente útil se você implantar seus recursos gradualmente durante um período.
+* **Nova análise de versão de produto**: se estiver lançando uma nova versão do seu produto, você pode comparar o desempenho dos indicadores-chave antes e depois que os usuários foram expostos a essa nova versão pela primeira vez. Selecione &quot;qualquer evento&quot; como o primeiro evento de uso e filtre-o para a propriedade Número de versão.
+* **Melhorias de recursos existentes**: se estiver melhorando um recurso existente no seu produto, você pode comparar o desempenho dos indicadores principais antes e depois que os usuários foram expostos a essas novas melhorias pela primeira vez. É possível realizar essa análise de algumas maneiras, dependendo da instrumentação do recurso. 1) Selecione um evento que represente a melhoria como o evento de primeira utilização e/ou 2) Selecione a data em que as alterações começaram a ser implantadas e/ou 3) Segmente a análise para o grupo de pessoas expostas às melhorias.
+* **Eficácia da campanha**: quando um usuário clica em uma determinada campanha, é possível comparar o desempenho dos indicadores-chave antes e depois da interação do usuário com essa campanha.
 
 ## Painel de consulta
 
@@ -30,8 +33,8 @@ O painel de consulta permite configurar os seguintes componentes:
 
 * **Indicadores-chave**: os eventos que você deseja medir por usuário. Cada indicador principal selecionado é representado como uma linha colorida. Uma linha que representa o evento é adicionada à tabela. É possível incluir até três eventos.
 * **Fatores**: há dois fatores para essa exibição:
-   * **Data**: Até que ponto você deseja procurar a primeira vez que um evento foi tocado.
-   * **Evento**: o evento que você deseja comparar antes e depois de ter sido tocado.
+   * **Data**: Até que ponto você deseja começar a procurar o primeiro evento de uso que ocorreu.
+   * **Evento**: o evento que você deseja procurar primeiro uso de, para centralizar a análise.
 * **Pessoas**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nos indivíduos que correspondem aos critérios do segmento.
 
 ## Configurações de gráficos
@@ -43,7 +46,7 @@ A visualização First use oferece as seguintes configurações de gráfico, que
 
 ## Intervalo de datas
 
-As seleções de data nos relatórios de impacto operam de forma diferente dos outros tipos de análise, já que o relatório gira em torno de um determinado evento que está sendo tocado pela primeira vez (especificado no painel de consulta). As opções disponíveis são as seguintes:
+As seleções de data na análise de impacto operam de forma diferente dos outros tipos de análise, pois a análise gira em torno da data especificada no painel de consulta. As opções disponíveis são as seguintes:
 
 * **Interval**: a granularidade de data pela qual você deseja exibir dados de tendências. As opções válidas incluem [!UICONTROL Diariamente], [!UICONTROL Semanalmente], [!UICONTROL Mensal], e [!UICONTROL Trimestral]. A alteração do intervalo afeta as opções disponíveis para o Período anterior e posterior.
-* **Antes e depois do período**: o tempo que deve ser analisado antes e depois do evento de toque especificado no painel de consulta. As opções disponíveis dependem do [!UICONTROL Interval] seleção.
+* **Antes e depois do período**: o tempo que deve ser analisado antes e depois do primeiro evento de uso especificado no painel de consulta. As opções disponíveis dependem do [!UICONTROL Interval] seleção.
