@@ -2,7 +2,7 @@
 title: Visualização de primeiro uso
 description: Medir o impacto do uso de recursos pela primeira vez em indicadores-chave.
 feature: Guided Analysis
-source-git-commit: 4d642c150f04ed4780820036cfd53fc343fc94c8
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 3%
@@ -10,8 +10,6 @@ ht-degree: 3%
 ---
 
 # Visualização de primeiro uso
-
-{{release-limited-testing}}
 
 A variável **Primeira utilização** A exibição do mostra uma comparação do desempenho dos indicadores principais antes e depois que um usuário usa um recurso do produto pela primeira vez. O eixo horizontal desse relatório é um intervalo de tempo relativo antes e depois do evento, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa o dia 0 para quando um recurso é usado pela primeira vez por um determinado usuário. Como os usuários nem sempre adotam recursos no mesmo dia e as implantações podem ocorrer ao longo de vários dias, o dia 0 significa algo diferente para cada usuário individual.
 

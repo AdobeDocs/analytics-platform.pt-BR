@@ -2,7 +2,7 @@
 title: Visão de crescimento líquido
 description: Você está ganhando ou perdendo usuários?
 feature: Guided Analysis
-source-git-commit: 7fd1a37a2e1942b27e43f5cdaa4a46ae652fd4aa
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 1%
@@ -10,8 +10,6 @@ ht-degree: 1%
 ---
 
 # Visão de crescimento líquido
-
-{{release-limited-testing}}
 
 A variável **Crescimento líquido** o tipo de visualização fornece insights sobre a taxa em que você ganha ou perde usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é a medida do crescimento.
 

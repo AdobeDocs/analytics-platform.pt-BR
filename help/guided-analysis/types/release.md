@@ -2,7 +2,7 @@
 title: Visualização da versão
 description: Compare o desempenho em períodos iguais antes e depois do lançamento.
 feature: Guided Analysis
-source-git-commit: a635c43c129ea45b270e304f4310b95124709b2a
+source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 4%
@@ -10,8 +10,6 @@ ht-degree: 4%
 ---
 
 # Visualização da versão
-
-{{release-limited-testing}}
 
 A variável **Versão** A exibição mostra uma comparação de como os indicadores-chave foram executados antes e depois de uma determinada data. O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa a data que você deseja comparar antes e depois. Normalmente, essa data representa uma alteração notável no produto em relação ao qual você deseja avaliar, como uma atualização do produto ou um lançamento de campanha.
 
