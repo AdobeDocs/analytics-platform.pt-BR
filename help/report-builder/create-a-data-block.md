@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 97%
+source-wordcount: '552'
+ht-degree: 82%
 
 ---
 
@@ -70,6 +70,24 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
    Quando você adiciona componentes à tabela, uma pré-visualização do bloco de dados é exibida no local do bloco de dados na planilha. O layout da pré-visualização do bloco de dados é atualizado automaticamente à medida que você adiciona, move ou remove itens na tabela.
 
    ![](./assets/image10.png)
+
+   **Exibir ou ocultar cabeçalhos de linha e coluna**
+
+1. Clique no comando Edit data block no hub Report Builder.
+
+1. Clique em **Tabela** ícone de configurações.
+
+   ![imagem de espaço reservado](./assets/table-settings.png){width="35%"}
+
+1. Marque ou desmarque a opção Display row and column headers. Os cabeçalhos são exibidos por padrão.
+
+   **Ocultar ou mostrar rótulos de dimensão e cabeçalhos de métrica**
+
+1. Clique no ícone de reticências nas dimensões ou nos cabeçalhos da coluna para exibir as configurações.
+
+   ![imagem de espaço reservado](./assets/row-heading.png){width="35%"}
+
+1. Clique em Ocultar ou Mostrar para alternar os rótulos de dimensão ou cabeçalhos da coluna. Todos os rótulos são exibidos por padrão.
 
 1. Clique em **Concluir**.
 

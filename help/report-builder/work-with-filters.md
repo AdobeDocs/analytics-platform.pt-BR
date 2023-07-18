@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 8b0a4b06a2ebed196bab37e9befb61e0bf0f8902
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 97%
+source-wordcount: '750'
+ht-degree: 68%
 
 ---
 
@@ -90,3 +90,47 @@ Para editar filtros usando o painel Edição rápida
 1. Clique em **Aplicar**.
 
    O Report Builder atualiza a lista de filtros para refletir a substituição.
+
+### Definir filtros de bloco de dados a partir da célula
+
+Os blocos de dados podem fazer referência a filtros de uma célula. Vários blocos de dados podem fazer referência à mesma célula para filtros, permitindo que você alterne facilmente os filtros para vários blocos de dados de uma vez.
+
+Para aplicar filtros de uma célula
+
+1. Navegue até a Etapa 2 no processo de criação ou edição do bloco de dados. Consulte [Criar um bloco de dados](./create-a-data-block.md).
+1. Clique em **Filtros** para definir filtros.
+1. Clique em **Criar filtro a partir da célula**.
+
+   ![](./assets/create-filter-from-cell.png)
+
+1. Selecione a célula da qual deseja que os blocos de dados façam referência a um filtro.
+
+1. Adicione a escolha dos filtros que deseja adicionar à célula clicando duas vezes no filtro ou arrastando e soltando na seção Filtros incluídos.
+
+   Observação: apenas uma opção pode ser selecionada para a célula em questão de cada vez.
+
+   ![](./assets/select-filters.png)
+
+1. Clique em **Aplicar** para criar a célula de referência.
+
+1. No **Filtros** adicione o filtro de célula de referência recém-criado ao bloco de dados.
+
+   ![](./assets/reference-cell-filter.png)
+
+1. Clique em **Concluir**.
+
+   Agora, essa célula pode ser referenciada por outros blocos de dados em seus filtros. Para aplicar a célula de referência como um filtro a outros blocos de dados, basta adicionar a referência da célula a seus filtros na guia filtros.
+
+#### Usar a célula de referência para alterar filtros de blocos de dados
+
+1. Selecione a célula de referência na planilha.
+
+1. Clique no link em **Filtros da Célula** no menu Edição rápida.
+
+   ![](./assets/filters-from-cell-link.png)
+
+1. Selecione o filtro no menu suspenso.
+
+   ![](./assets/filter-drop-down.png)
+
+1. Clique em **Aplicar**.
