@@ -2,18 +2,16 @@
 title: Visualização da versão
 description: Compare o desempenho em períodos iguais antes e depois do lançamento.
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 3%
+source-wordcount: '474'
+ht-degree: 4%
 
 ---
 
 # [!UICONTROL Versão] exibir
 
 A variável **[!UICONTROL Versão]** A exibição mostra uma comparação de como os indicadores-chave foram executados antes e depois de uma determinada data. O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa a data que você deseja comparar antes e depois. Normalmente, essa data representa uma alteração notável no produto em relação ao qual você deseja avaliar, como uma atualização do produto ou um lançamento de campanha.
-
-Consulte a [!UICONTROL Versão] exibir em ação:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
 

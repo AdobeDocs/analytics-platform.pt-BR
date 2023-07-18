@@ -2,9 +2,9 @@
 title: Visão de crescimento líquido
 description: Você está ganhando ou perdendo usuários?
 feature: Guided Analysis
-source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
+source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '616'
 ht-degree: 1%
 
 ---
@@ -28,8 +28,6 @@ Semelhante ao [Ativo](active.md) tipo de exibição, os usuários são definidos
 >[!NOTE]
 >
 >Usuários repetidos não são considerados nesse cálculo, pois não representam nenhum ganho ou perda de usuários.
-
-Consulte a [!UICONTROL Crescimento líquido] exibir em ação:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
