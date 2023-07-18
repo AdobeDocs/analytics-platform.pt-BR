@@ -2,10 +2,10 @@
 title: Exibição de tendências de conversão
 description: Rastreie as alterações na taxa de conversão ao longo do tempo.
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 2%
+source-wordcount: '453'
+ht-degree: 1%
 
 ---
 
@@ -13,9 +13,7 @@ ht-degree: 2%
 
 A variável **Tendências de conversão** A exibição fornece uma visualização de tendências em torno das taxas de conversão ao longo do tempo. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical representa a taxa de conversão.
 
-![Tendências de conversão](../assets/conversion-trends.png)
-
-## Consulte Exibição de tendências de conversão em ação
+Consulte a [!UICONTROL Tendências de conversão] exibir em ação
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 

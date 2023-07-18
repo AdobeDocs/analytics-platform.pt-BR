@@ -2,16 +2,16 @@
 title: Visão de crescimento líquido
 description: Você está ganhando ou perdendo usuários?
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 1%
 
 ---
 
-# Visão de crescimento líquido
+# [!UICONTROL Crescimento líquido] exibir
 
-A variável **Crescimento líquido** o tipo de visualização fornece insights sobre a taxa em que você ganha ou perde usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é a medida do crescimento.
+A variável **[!UICONTROL Crescimento líquido]** o tipo de visualização fornece insights sobre a taxa em que você ganha ou perde usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é a medida do crescimento.
 
 Cada ponto de dados representa o crescimento líquido, que é calculado usando a seguinte fórmula:
 
@@ -29,9 +29,7 @@ Semelhante ao [Ativo](active.md) tipo de exibição, os usuários são definidos
 >
 >Usuários repetidos não são considerados nesse cálculo, pois não representam nenhum ganho ou perda de usuários.
 
-![Crescimento líquido](../assets/net-growth.png)
-
-## Ver a visualização Crescimento líquido em ação
+Consulte a [!UICONTROL Crescimento líquido] exibir em ação:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 

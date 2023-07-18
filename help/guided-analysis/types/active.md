@@ -3,7 +3,7 @@ title: Exibição ativa
 description: Identifique quem é novo, retido, recorrente ou inativo.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 2%
@@ -21,9 +21,7 @@ A variável **Ativo** A visualização fornece insights sobre o crescimento e a 
 
 Todos os usuários ativos (novo + repetição + retorno) aparecem como uma sombra de azul-petróleo acima do eixo horizontal, enquanto todos os usuários inativos aparecem em laranja abaixo do eixo horizontal.
 
-![Ativo](../assets/active.png)
-
-## Ver exibição ativa em ação
+Consulte a [!UICONTROL Ativo] exibir em ação:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
 

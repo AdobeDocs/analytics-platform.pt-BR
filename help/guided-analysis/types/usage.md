@@ -3,10 +3,10 @@ title: Visualização de uso
 description: Medir o engajamento do usuário ao longo do tempo.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -14,9 +14,7 @@ ht-degree: 3%
 
 A variável **[!UICONTROL Uso]** A visualização fornece informações valiosas sobre o desempenho do produto ou o comportamento dos usuários ao longo do tempo. O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os eventos desejados.
 
-![Uso](../assets/usage.png)
-
-## Consulte [!UICONTROL Uso] exibir em ação
+Consulte a [!UICONTROL Uso] exibir em ação:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 

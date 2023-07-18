@@ -3,20 +3,18 @@ title: Visualização de atrito
 description: Comparar taxas de conversão entre etapas.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
+source-git-commit: 4121c199e4a5050d84f57c69d7fb1d7b05007fcd
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
-# Visualização de atrito
+# [!UICONTROL Fricção] exibir
 
-A variável **Fricção** A visualização fornece uma representação visual de uma jornada de usuário crítica em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa o percentual de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
+A variável **[!UICONTROL Fricção]** A visualização fornece uma representação visual de uma jornada de usuário crítica em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa o percentual de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
 
-![Atrito](../assets/friction.png)
-
-## Veja a Vista de atrito em ação
+Consulte a [!UICONTROL Fricção] exibir em ação:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 
