@@ -2,9 +2,9 @@
 title: Exibição de tendências de conversão
 description: Rastreie as alterações na taxa de conversão ao longo do tempo.
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '454'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 2%
 A variável **Tendências de conversão** A exibição fornece uma visualização de tendências em torno das taxas de conversão ao longo do tempo. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical representa a taxa de conversão.
 
 ![Tendências de conversão](../assets/conversion-trends.png)
+
+## Consulte Exibição de tendências de conversão em ação
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421662/?learn=on)
 
 ## Casos de uso
 
@@ -27,16 +31,16 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **Etapas**: os pontos de contato do evento que você deseja rastrear. Cada barra no gráfico representa uma etapa. É possível incluir até dez etapas.
-* **Pessoas**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
+* **[!UICONTROL Etapas]**: os pontos de contato do evento que você deseja rastrear. Cada barra no gráfico representa uma etapa. É possível incluir até dez etapas.
+* **People**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
 
 ## Configurações de gráficos
 
 A exibição Tendências de conversão oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **Métrica**: A métrica que você deseja medir. As opções incluem Sessões e Usuários.
-* **Tipo de gráfico**: o tipo de visualização que você deseja usar. As opções incluem Linha.
-* **Conversão de**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir da Primeira etapa ou da Etapa anterior.
+* **[!UICONTROL Métrica]**: A métrica que você deseja medir. As opções incluem Sessões e Usuários.
+* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Linha.
+* **[!UICONTROL Conversão de]**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir da Primeira etapa ou da Etapa anterior.
 
 ## Aplicar comparação de tempo
 
@@ -48,5 +52,5 @@ A exibição Tendências de conversão oferece as seguintes configurações de g
 
 O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
 
-* **Interval**: a granularidade de data pela qual você deseja exibir dados de tendências. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a visualização de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
-* **Data**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir dados de tendências. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a visualização de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
+* **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.

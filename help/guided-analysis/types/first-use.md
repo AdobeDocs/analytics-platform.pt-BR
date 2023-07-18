@@ -2,18 +2,22 @@
 title: Visualização de primeiro uso
 description: Medir o impacto do uso de recursos pela primeira vez em indicadores-chave.
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '618'
 ht-degree: 3%
 
 ---
 
-# Visualização de primeiro uso
+# [!UICONTROL Primeira utilização] exibir
 
-A variável **Primeira utilização** A exibição do mostra uma comparação do desempenho dos indicadores principais antes e depois que um usuário usa um recurso do produto pela primeira vez. O eixo horizontal desse relatório é um intervalo de tempo relativo antes e depois do evento, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa o dia 0 para quando um recurso é usado pela primeira vez por um determinado usuário. Como os usuários nem sempre adotam recursos no mesmo dia e as implantações podem ocorrer ao longo de vários dias, o dia 0 significa algo diferente para cada usuário individual.
+A variável **[!UICONTROL Primeira utilização]** A exibição do mostra uma comparação do desempenho dos indicadores principais antes e depois que um usuário usa um recurso do produto pela primeira vez. O eixo horizontal desse relatório é um intervalo de tempo relativo antes e depois do evento, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa o dia 0 para quando um recurso é usado pela primeira vez por um determinado usuário. Como os usuários nem sempre adotam recursos no mesmo dia e as implantações podem ocorrer ao longo de vários dias, o dia 0 significa algo diferente para cada usuário individual.
 
 ![Versão](../assets/first-use.png)
+
+## Veja-o em ação
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
 
 ## Casos de uso
 
@@ -29,22 +33,22 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **Indicadores-chave**: os eventos que você deseja medir por usuário. Cada indicador principal selecionado é representado como uma linha colorida. Uma linha que representa o evento é adicionada à tabela. É possível incluir até três eventos.
-* **Fatores**: há dois fatores para essa exibição:
-   * **Data**: Até que ponto você deseja começar a procurar o primeiro evento de uso que ocorreu.
-   * **Evento**: o evento que você deseja procurar primeiro uso de, para centralizar a análise.
-* **Pessoas**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nos indivíduos que correspondem aos critérios do segmento.
+* **[!UICONTROL Indicadores-chave]**: os eventos que você deseja medir por usuário. Cada indicador principal selecionado é representado como uma linha colorida. Uma linha que representa o evento é adicionada à tabela. É possível incluir até três eventos.
+* **[!UICONTROL Fatores]**: há dois fatores para essa exibição:
+   * **[!UICONTROL Data]**: Até que ponto você deseja começar a procurar o primeiro evento de uso que ocorreu.
+   * **[!UICONTROL Evento]**: o evento que você deseja procurar primeiro uso de, para centralizar a análise.
+* **[!UICONTROL Pessoas]**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nos indivíduos que correspondem aos critérios do segmento.
 
 ## Configurações de gráficos
 
 A visualização First use oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **Métrica**: A métrica que você deseja medir. As opções incluem [!UICONTROL Eventos por usuário], [!UICONTROL Eventos], [!UICONTROL Sessões], e [!UICONTROL Usuários].
-* **Tipo de gráfico**: o tipo de visualização que você deseja usar. As opções incluem Linha.
+* **[!UICONTROL Métrica]**: A métrica que você deseja medir. As opções incluem [!UICONTROL Eventos por usuário], [!UICONTROL Eventos], [!UICONTROL Sessões], e [!UICONTROL Usuários].
+* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Linha.
 
 ## Intervalo de datas
 
 As seleções de data na análise de impacto operam de forma diferente dos outros tipos de análise, pois a análise gira em torno da data especificada no painel de consulta. As opções disponíveis são as seguintes:
 
-* **Interval**: a granularidade de data pela qual você deseja exibir dados de tendências. As opções válidas incluem [!UICONTROL Diariamente], [!UICONTROL Semanalmente], [!UICONTROL Mensal], e [!UICONTROL Trimestral]. A alteração do intervalo afeta as opções disponíveis para o Período anterior e posterior.
-* **Antes e depois do período**: o tempo que deve ser analisado antes e depois do primeiro evento de uso especificado no painel de consulta. As opções disponíveis dependem do [!UICONTROL Interval] seleção.
+* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir dados de tendências. As opções válidas incluem [!UICONTROL Diariamente], [!UICONTROL Semanalmente], [!UICONTROL Mensal], e [!UICONTROL Trimestral]. A alteração do intervalo afeta as opções disponíveis para o Período anterior e posterior.
+* **[!UICONTROL Antes e depois do período]**: o tempo que deve ser analisado antes e depois do primeiro evento de uso especificado no painel de consulta. As opções disponíveis dependem do [!UICONTROL Interval] seleção.

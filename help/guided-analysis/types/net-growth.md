@@ -2,9 +2,9 @@
 title: Visão de crescimento líquido
 description: Você está ganhando ou perdendo usuários?
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '624'
 ht-degree: 1%
 
 ---
@@ -21,12 +21,19 @@ O resultado desta fórmula é uma proporção. Um crescimento líquido de `1` re
 
 Semelhante ao [Ativo](active.md) tipo de exibição, os usuários são definidos como o seguinte:
 
-* **Novo**: o usuário estava ativo durante o período atual, mas não anteriormente. Veja até que ponto a análise retroage para determinar um novo usuário passando o cursor do mouse sobre &#39;[!UICONTROL Novos usuários]&#39; na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
-* **Retornar**: o usuário estava ativo no período atual e não estava ativo no período imediatamente anterior, mas estava ativo anteriormente em algum ponto. Veja até que ponto a análise retroage para determinar um usuário de retorno passando o cursor do mouse sobre &#39;[!UICONTROL Retornar usuários]&#39; na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
-* **Inativo**: o usuário estava ativo no período imediatamente anterior, mas não está ativo no período atual. Os usuários inativos não contam para o número total de usuários ativos.
-* Nota: Os usuários repetidos não são fatorados nesse cálculo, pois não representam nenhum ganho ou perda de usuários.
+* **[!UICONTROL Novo]**: o usuário estava ativo durante o período atual, mas não anteriormente. Veja até que ponto a análise retroage para determinar um novo usuário passando o cursor do mouse sobre &#39;[!UICONTROL Novos usuários]&#39; na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
+* **[!UICONTROL Retornar]**: o usuário estava ativo no período atual e não estava ativo no período imediatamente anterior, mas estava ativo anteriormente em algum ponto. Veja até que ponto a análise retroage para determinar um usuário de retorno passando o cursor do mouse sobre &#39;[!UICONTROL Retornar usuários]&#39; na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
+* **[!UICONTROL Inativo]**: o usuário estava ativo no período imediatamente anterior, mas não está ativo no período atual. Os usuários inativos não contam para o número total de usuários ativos.
+
+>[!NOTE]
+>
+>Usuários repetidos não são considerados nesse cálculo, pois não representam nenhum ganho ou perda de usuários.
 
 ![Crescimento líquido](../assets/net-growth.png)
+
+## Ver a visualização Crescimento líquido em ação
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
 ## Casos de uso
 
@@ -40,12 +47,12 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **Eventos**: o evento que você deseja medir. Como esse tipo de exibição é baseado no usuário, um usuário que interage com o evento uma vez dentro do período é contado como um usuário ativo. Você pode incluir um evento em uma query.
-* **Pessoas**: o segmento que você deseja medir. É possível incluir um segmento em uma consulta.
+* **[!UICONTROL Eventos]**: o evento que você deseja medir. Como esse tipo de exibição é baseado no usuário, um usuário que interage com o evento uma vez dentro do período é contado como um usuário ativo. Você pode incluir um evento em uma query.
+* **[!UICONTROL Pessoas]**: o segmento que você deseja medir. É possível incluir um segmento em uma consulta.
 
 ## Intervalo de datas
 
 O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
 
-* **Interval**: a granularidade de data pela qual você deseja exibir dados de tendências. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a visualização de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
-* **Data**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir dados de tendências. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a visualização de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
+* **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.

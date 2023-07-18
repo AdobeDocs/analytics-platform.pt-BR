@@ -3,18 +3,22 @@ title: Visualização de uso
 description: Medir o engajamento do usuário ao longo do tempo.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '498'
 ht-degree: 3%
 
 ---
 
-# Visualização de uso
+# [!UICONTROL Uso] exibir
 
-A variável **Uso** A visualização fornece informações valiosas sobre o desempenho do produto ou o comportamento dos usuários ao longo do tempo. O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os eventos desejados.
+A variável **[!UICONTROL Uso]** A visualização fornece informações valiosas sobre o desempenho do produto ou o comportamento dos usuários ao longo do tempo. O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os eventos desejados.
 
 ![Uso](../assets/usage.png)
+
+## Consulte [!UICONTROL Uso] exibir em ação
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 
 ## Casos de uso
 
@@ -29,15 +33,15 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **Eventos**: os eventos que você deseja medir. Cada evento selecionado é representado como uma linha colorida ou um conjunto de barras, dependendo do tipo de gráfico. Uma linha que representa o evento de tendência é adicionada à tabela. É possível incluir até cinco eventos.
-* **Pessoas**: os segmentos que você deseja medir. Cada segmento selecionado dobra o número de linhas no gráfico e nas linhas na tabela. É possível incluir até cinco segmentos.
+* **[!UICONTROL Eventos]**: os eventos que você deseja medir. Cada evento selecionado é representado como uma linha colorida ou um conjunto de barras, dependendo do tipo de gráfico. Uma linha que representa o evento de tendência é adicionada à tabela. É possível incluir até cinco eventos.
+* **[!UICONTROL Pessoas]**: os segmentos que você deseja medir. Cada segmento selecionado dobra o número de linhas no gráfico e nas linhas na tabela. É possível incluir até cinco segmentos.
 
 ## Configurações de gráficos
 
-A visualização Uso oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
+A variável [!UICONTROL Uso] view oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **Métrica**: A métrica que você deseja medir. As opções incluem Eventos, Sessões, Usuários, Eventos por sessão e Eventos por usuário.
-* **Tipo de gráfico**: o tipo de visualização que você deseja usar. As opções incluem Linha, Barra, Barra empilhada e Área empilhada.
+* **[!UICONTROL Métrica]**: A métrica que você deseja medir. As opções incluem Eventos, Sessões, Usuários, Eventos por sessão e Eventos por usuário.
+* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Linha, Barra, Barra empilhada e Área empilhada.
 
 ## Aplicar comparação de tempo
 
@@ -49,5 +53,5 @@ A visualização Uso oferece as seguintes configurações de gráfico, que podem
 
 O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
 
-* **Interval**: a granularidade de data pela qual você deseja exibir dados de tendências. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a visualização de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
-* **Data**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir dados de tendências. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a visualização de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
+* **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.

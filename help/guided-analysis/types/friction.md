@@ -3,9 +3,9 @@ title: Visualização de atrito
 description: Comparar taxas de conversão entre etapas.
 exl-id: f0ba3f00-bf1f-48db-8b6e-137460abf4f8
 feature: Guided Analysis
-source-git-commit: 2b1e0ce53016634e0cb32f9256fa48e02f2a5323
+source-git-commit: 9f176bc6bc12291dcdab80af50c32df7d8edf220
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 3%
 A variável **Fricção** A visualização fornece uma representação visual de uma jornada de usuário crítica em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa o percentual de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
 
 ![Atrito](../assets/friction.png)
+
+## Veja a Vista de atrito em ação
+
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on)
 
 ## Casos de uso
 
@@ -29,16 +33,16 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **Etapas**: os pontos de contato do evento que você deseja rastrear. Cada barra no gráfico representa uma etapa. É possível incluir até dez etapas.
-* **Pessoas**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
+* **[!UICONTROL Etapas]**: os pontos de contato do evento que você deseja rastrear. Cada barra no gráfico representa uma etapa. É possível incluir até dez etapas.
+* **[!UICONTROL Pessoas]**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
 
 ## Configurações de gráficos
 
 A exibição de atrito oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **Métrica**: o escopo que você deseja aplicar ao funil. As opções incluem Sessões e Usuários. Ao selecionar sessões, todas as etapas devem acontecer na mesma sessão para serem contadas. Ao selecionar usuários, todas as etapas devem ocorrer na janela de relatórios selecionada para serem contadas.
-* **Tipo de gráfico**: o tipo de visualização que você deseja usar. As opções incluem Etapas.
-* **Conversão de**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir da Primeira etapa ou da Etapa anterior.
+* **[!UICONTROL Métrica]**: o escopo que você deseja aplicar ao funil. As opções incluem Sessões e Usuários. Ao selecionar sessões, todas as etapas devem acontecer na mesma sessão para serem contadas. Ao selecionar usuários, todas as etapas devem ocorrer na janela de relatórios selecionada para serem contadas.
+* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Etapas.
+* **[!UICONTROL Conversão de]**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir da Primeira etapa ou da Etapa anterior.
 
 ## Aplicar comparação de tempo
 
@@ -50,5 +54,5 @@ A exibição de atrito oferece as seguintes configurações de gráfico, que pod
 
 O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
 
-* **Interval**: a granularidade de data pela qual você deseja exibir dados de tendências. Essa configuração não afeta exibições sem tendências, como a de Fricção.
-* **Data**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir dados de tendências. Essa configuração não afeta exibições sem tendências, como a de Fricção.
+* **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
