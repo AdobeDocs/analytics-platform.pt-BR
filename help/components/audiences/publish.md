@@ -3,7 +3,7 @@ title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 7991f2be316349fcfaa85c2338e16c41d5b130b1
+source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 61%
@@ -85,7 +85,7 @@ Depois de criar um público-alvo, o Adobe cria um segmento de transmissão Exper
 
 Em vários pontos antes, durante e depois da publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
-![Latências na publicação de público, conforme descrito em [Considerações de latência](#latency-considerations)](assets/latency-diagram.png)
+![Latências na publicação de público-alvo, conforme descrito nesta seção.](assets/latency-diagram.png)
 
 | # | Ponto de latência | Duração da latência |
 | --- | --- | --- |

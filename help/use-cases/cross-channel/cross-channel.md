@@ -4,10 +4,10 @@ description: Analise e extraia insights das interações em toda a jornada do cl
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: 75f27ef2f5fcd0d2a2038dbe7bcf812e865a14fc
+source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 61%
+source-wordcount: '528'
+ht-degree: 62%
 
 ---
 
@@ -17,7 +17,7 @@ A análise entre canais possibilita uma única visualização consolidada do com
 
 ## Etapas da implementação
 
-![Ilustração do fluxo de etapas de implementação, conforme descrito em [Etapas da implementação](#implementation-steps)](../assets/cca-architecture.png)
+![Fluxo das etapas de implementação conforme descrito nesta seção.](../assets/cca-architecture.png)
 
 1. [Crie esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) para os dados que serão assimilados.
 1. [Crie conjuntos de dados](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=pt-BR) para os dados que serão assimilados.
