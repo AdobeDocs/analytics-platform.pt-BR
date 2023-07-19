@@ -4,16 +4,16 @@ description: Descreve como criar uma conexão com um conjunto de dados da Plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: 7bcfedb472c26605e53805a09ef827fd20a1f986
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '2605'
-ht-degree: 60%
+source-wordcount: '2630'
+ht-degree: 58%
 
 ---
 
 # Criar uma conexão
 
-Um novo fluxo de trabalho de Conexões foi iniciado recentemente no Customer Journey Analytics. A nova experiência de fluxo de trabalho de criação e edição de conexão traz todas as definições de configuração de conexão e conjunto de dados para o centro da tela com fluxo de trabalho de assistência. Você forneceu seleção, configuração e experiência de revisão detalhadas do conjunto de dados com informações críticas como tipo de conjunto de dados, tamanho, esquema, ID do conjunto de dados, status do lote, status de preenchimento retroativo, IDs de pessoa e muito mais para reduzir o risco de configuração de conexão incorreta. Esta é uma visão geral dos novos recursos:
+A experiência de fluxo de trabalho de criação e edição de conexão traz todas as definições de configuração de conexão e conjunto de dados para o centro da tela com fluxo de trabalho de assistência. Ele fornece seleção, configuração e experiência de revisão detalhadas do conjunto de dados com informações críticas como tipo de conjunto de dados, tamanho, esquema, ID do conjunto de dados, status do lote, status de preenchimento retroativo, IDs de pessoa e muito mais para reduzir o risco de configuração de conexão incorreta. Esta é uma visão geral dos recursos:
 
 * Você pode habilitar uma janela de retenção de dados sem interrupção ao criar a conexão.
 * Você pode adicionar e remover conjuntos de dados de uma conexão. (A remoção de um conjunto de dados o remove da conexão e afeta qualquer visualização de dados associada e projetos subjacentes do Analysis Workspace.)
@@ -22,6 +22,10 @@ Um novo fluxo de trabalho de Conexões foi iniciado recentemente no Customer Jou
 * É possível importar dados existentes por conjunto de dados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
+
+>[!IMPORTANT]
+>
+>Você deve ter o **Selecionar** para adicionar um número ilimitado de conjuntos de dados a uma conexão. A variável **Foundation** o pacote é limitado a um conjunto de dados. Entre em contato com o administrador se não tiver certeza do pacote de Customer Journey Analytics que possui.&#x200B;
 
 ## Criar e configurar a conexão {#create-connection}
 

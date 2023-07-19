@@ -3,17 +3,17 @@ title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 34%
+source-wordcount: '992'
+ht-degree: 33%
 
 ---
 
 
 # Visão geral dos filtros {#overview}
 
-O Customer Journey Analytics permite criar, gerenciar, compartilhar e aplicar filtros de público-alvo avançados e concentrados nos seus relatórios. Os filtros permitem identificar subconjuntos de pessoas com base em características ou interações de site. Os filtros são projetados como insights codificados de público-alvo que você pode criar de acordo com suas necessidades específicas e, em seguida, verificar, editar e compartilhar com outros membros da equipe.
+O Customer Journey Analytics permite criar, gerenciar, compartilhar e aplicar filtros de público-alvo avançados e concentrados nos seus relatórios. Os filtros permitem identificar subconjuntos de pessoas com base em características ou interações. Os filtros são projetados como insights codificados de público-alvo que você pode criar de acordo com suas necessidades específicas e, em seguida, verificar, editar e compartilhar com outros membros da equipe.
 
 Os filtros podem ser baseados em
 
@@ -37,6 +37,10 @@ Para obter informações sobre os tipos de filtros disponíveis e como criá-los
 ## Filtros sequenciais {#sequential}
 
 Os filtros sequenciais permitem identificar pessoas com base na navegação e na exibição de página no site, fornecendo um filtro de ações e interações definidas. Os filtros sequenciais ajudam você a identificar do que uma pessoa gosta e o que ela evita. Ao construir filtros sequenciais, o operador THEN é usado para definir e organizar a navegação da pessoa.
+
+>[!IMPORTANT]
+>
+>Você deve ter o **Selecionar** para criar filtros sequenciais entre canais. Entre em contato com o administrador se não tiver certeza do pacote de Customer Journey Analytics que possui.&#x200B;
 
 Veja um exemplo:
 

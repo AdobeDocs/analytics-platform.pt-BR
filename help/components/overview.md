@@ -4,10 +4,10 @@ description: Saiba quais componentes o Customer Journey Analytics oferece e como
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 87%
+source-wordcount: '1127'
+ht-degree: 80%
 
 ---
 
@@ -21,10 +21,14 @@ Os componentes são recursos do Customer Journey Analytics que podem ser usados 
 Você pode gerenciar os seguintes componentes:
 
 * [**Anotações**](/help/components/annotations/overview.md): Comunique nuances e insights de dados contextuais à sua organização.
-* [**Filtros:**](filters/filters-overview.md) exclua partes dos dados para se concentrar em itens de dimensão comuns
+* [**Públicos-alvo**](/help/components/audiences/audiences-overview.md): crie e publique públicos-alvo descobertos no Customer Journey Analytics to [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCDP) no Adobe Experience Platform para direcionamento e personalização de clientes.
+* [**Filtros**](filters/filters-overview.md): crie, gerencie, compartilhe e aplique filtros de público-alvo focados e avançados aos seus relatórios. Os filtros permitem identificar subconjuntos de pessoas com base em características ou interações.
 * [**Métricas calculadas:**](calc-metrics/calc-metr-overview.md) use métricas e fórmulas como novos componentes para usar nos relatórios
-* [**Intervalos de datas:**](date-ranges/create.md) personalize e refine os intervalos de datas nas ofertas do Analysis Workspace
-* [**Projetos:**](/help/analysis-workspace/home.md) organize e mantenha seus projetos no Analysis Workspace
+* [**Dicionário de dados**](/help/components/data-dictionary/data-dictionary-overview.md): ajuda os usuários e os administradores a rastrear e entender melhor os componentes em seu ambiente do Analytics.
+* [**Intervalos de datas:**](date-ranges/create.md) personalize e refine os intervalos de datas nas ofertas do Analysis Workspace.
+* [**Dimension**](/help/components/dimensions/view-dimensions.md): Dimension são variáveis que normalmente contêm valores de cadeias de caracteres. As dimensões comuns incluem Página e Domínio referenciador.
+* [**Métricas**](/help/components/apply-create-metrics.md): permite quantificar os pontos de dados no Analysis Workspace.
+* [**Projetos:**](/help/analysis-workspace/home.md) organize e mantenha seus projetos no Analysis Workspace.
 
 ## Componentes do Analysis Workspace
 

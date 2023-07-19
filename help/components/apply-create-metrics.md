@@ -3,27 +3,26 @@ description: Há duas formas de utilizar as métricas no Analysis Workspace.
 title: Métricas
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: a9751cad1ba49fe3e8c2c484e34d1725e063c2d4
+source-git-commit: 202a726dc68853f55a24e566c656c92785e3b3f0
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 23%
+ht-degree: 51%
 
 ---
 
 # Métricas
 
-As métricas permitem quantificar os pontos de dados no Analysis Workspace. Elas são usadas com mais frequência como colunas em uma visualização e vinculadas a dimensões.
-
+As métricas permitem quantificar os pontos de dados no Analysis Workspace. Elas são usadas com mais frequência como colunas em uma visualização e são vinculadas a dimensões.
 
 ## Tipos de métricas
 
-O Adobe oferece vários tipos de métricas para uso no Analysis Workspace:
+A Adobe oferece vários tipos de métricas para uso no Analysis Workspace:
 
 * **Métricas padrão**: Exemplo de métricas padrão são Pessoas, Sessões, Eventos.
 
 * **Métricas calculadas** ![Ícone de métrica calculada](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg): métricas definidas pelo usuário baseadas em métricas padrão, números estáticos ou funções algorítmicas.
 
-* **Modelos de métrica calculada**  <img src="./assets/adobe-logo.svg" width="18"> : métricas definidas por Adobe que se comportam de forma semelhante às métricas calculadas. Você pode usá-los como estão nos projetos do Workspace ou salvar uma cópia para personalizar a lógica.
+* **Modelos de métrica calculada**  <img src="./assets/adobe-logo.svg" width="18"> : métricas definidas por Adobe que se comportam de forma semelhante às métricas calculadas. É possível usá-los como estão nos projetos do Workspace ou salvar uma cópia para personalizar sua lógica.
 
 
 ![Métricas na interface do](assets/cja-metrics.png)
@@ -31,7 +30,7 @@ O Adobe oferece vários tipos de métricas para uso no Analysis Workspace:
 É possível ver se uma métrica foi aprovada ![Ícone Aprovado](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  ou não. Se quiser obter mais detalhes sobre uma métrica, passe o mouse sobre a métrica e selecione ![Ícone de informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg).
 
 
-As métricas são flexíveis em seu uso no Analysis Workspace. Arraste uma métrica para uma Tabela de forma livre vazia para ver a tendência da métrica no período do projeto. Você também pode arrastar uma métrica quando uma dimensão estiver presente para ver essa métrica em comparação com cada item de dimensão. Arrastar uma métrica para cima de um cabeçalho de métrica existente a substitui e arrastar uma métrica ao lado de um cabeçalho permite ver ambas as métricas lado a lado.
+As métricas são flexíveis em seu uso no Analysis Workspace. Arrastar uma métrica para uma Tabela de forma livre vazia para ver como essa métrica se comportou ao longo do período do projeto. Você também pode arrastar uma métrica quando uma dimensão estiver presente para ver essa métrica em comparação com cada item de dimensão. Arrastar uma métrica para cima de um cabeçalho de métrica existente a substitui e arrastar uma métrica ao lado de um cabeçalho permite ver ambas as métricas lado a lado.
 
 ## Métricas calculadas 
 
