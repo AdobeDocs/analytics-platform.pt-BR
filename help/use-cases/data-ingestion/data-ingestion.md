@@ -4,10 +4,10 @@ description: Entenda as diferentes maneiras de assimilar dados no Customer Journ
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 96%
+source-wordcount: '785'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Você tem várias opções quando se trata de assimilar dados no Customer Journe
 
 ## Assimilar dados do Adobe Analytics tradicional
 
-Esse fluxo de trabalho utiliza o Conector de origem do Adobe Analytics e varia dependendo do uso do DTM ou do Launch como um Gerente de tags.
+Esse fluxo de trabalho utiliza o conector de origem do Analytics e varia dependendo do uso do DTM ou do Launch como um Gerenciador de tags.
 
 ### Por meio de tags na Adobe Experience Platform (antes chamada de [!UICONTROL Launch])
 

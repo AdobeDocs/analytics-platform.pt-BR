@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: a25129c0a319b13f5167c8cde9535dbb4b3ca65a
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 75%
+source-wordcount: '1480'
+ht-degree: 73%
 
 ---
 
@@ -44,7 +44,7 @@ Uma conexão permite que o administrador do Analytics integre conjuntos de dados
 
 >[!VIDEO](https://video.tv.adobe.com/v/35111/?quality=12)
 
-A Adobe oferece várias maneiras de trazer dados para a Adobe Experience Platform, incluindo dados do conjunto de relatórios por meio do Conector de origem do Adobe Analytics ou do SDK da Web. As implementações existentes de vários conjuntos de relatórios podem ser combinadas na Experience Platform. As conexões e visualizações de dados baseadas nesses conjuntos de dados podem combinar dados que existiam anteriormente em conjuntos de relatórios separados.
+O Adobe oferece várias maneiras de trazer dados para o Adobe Experience Platform, incluindo dados do conjunto de relatórios por meio do conector de origem do Analytics ou do SDK da Web. As implementações existentes de vários conjuntos de relatórios podem ser combinadas na Experience Platform. As conexões e visualizações de dados baseadas nesses conjuntos de dados podem combinar dados que existiam anteriormente em conjuntos de relatórios separados.
 
 ## Alterações no conceito de conjuntos de relatórios virtuais {#data-views}
 

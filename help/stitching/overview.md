@@ -3,7 +3,7 @@ title: Visão geral da compilação
 description: Visão geral da compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 41dc46ed5e30d08708ebb97fa29312aafd99ff9d
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 26%
@@ -110,7 +110,7 @@ A costura é um recurso inovador e robusto, mas tem limitações na forma de uso
 * Somente conjuntos de dados de evento são suportados. Outros conjuntos de dados, como conjuntos de dados de pesquisa, não são suportados.
 * Não há suporte para mapas de ID personalizados usados em sua organização.
 * A compilação não transforma de maneira alguma o campo usado para compilação. A compilação usa o valor no campo especificado, como ele existe no conjunto de dados não compilado no data lake. O processo de compilação diferencia maiúsculas de minúsculas. Por exemplo, se às vezes aparecer no campo a palavra &quot;Bob&quot; e, às vezes, a palavra &quot;BOB&quot;, essas IDs serão tratadas como duas pessoas separadas.
-* A compilação diferencia maiúsculas e minúsculas. Para conjuntos de dados gerados pelo Conector de origem do Analytics, o Adobe recomenda revisar todas as regras VISTA ou regras de processamento que se aplicam ao campo de ID transitória. Essa revisão garante que nenhuma dessas regras introduza novos formulários da mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID transitória em apenas uma parte dos eventos.
+* A compilação diferencia maiúsculas e minúsculas. Para conjuntos de dados gerados pelo conector de origem do Analytics, o Adobe recomenda revisar todas as regras VISTA ou regras de processamento que se aplicam ao campo de ID transitória. Essa revisão garante que nenhuma dessas regras introduza novos formulários da mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID transitória em apenas uma parte dos eventos.
 * A compilação não combina nem concatena campos.
 * O campo de ID transitória deve conter um único tipo de ID (IDs de um único namespace). Por exemplo, o campo ID transitória não deve conter uma combinação de IDs de logon e IDs de email.
 * Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID transitória, a compilação selecionará a ID com base na ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação selecionará Ann.

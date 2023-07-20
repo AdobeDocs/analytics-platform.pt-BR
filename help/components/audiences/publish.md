@@ -3,7 +3,7 @@ title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 0b68281df23ef4d2e6c1f7dacf9f58c40604e7ca
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 61%
@@ -89,8 +89,8 @@ Em vários pontos antes, durante e depois da publicação do público-alvo, pode
 
 | # | Ponto de latência | Duração da latência |
 | --- | --- | --- |
-| Não exibido | Conector de origem do Adobe Analytics para Analytics (A4T) | Até 30 minutos |
-| 1 | Assimilação de dados no Data Lake (do Conector de origem do Analytics ou de outras fontes) | Até 90 minutos |
+| Não exibido | Conector de origem do Adobe Analytics para o Analytics (A4T) | Até 30 minutos |
+| 1 | Assimilação de dados no Data Lake (do conector de origem do Analytics ou de outras fontes) | Até 90 minutos |
 | 2 | Assimilação de dados do Experience Platform Data Lake no Customer Journey Analytics | Até 90 minutos |
 | 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
 | 4 | Atualizar frequência dos públicos | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |

@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Cross-Channel Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
+source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 89%
+ht-degree: 85%
 
 ---
 
@@ -55,7 +55,7 @@ A Análise de vários canais  é um recurso inovador e robusto, mas tem limitaç
 * Não há suporte para mapas de ID personalizados usados em sua organização.
 * O gráfico privado entre dispositivos não é compatível.
 * A Análise de vários canais não transforma de maneira alguma o campo usado para compilação. A compilação em campo usa o valor no campo especificado, como ele existe no conjunto de dados não compilado no data lake. O processo de compilação diferencia maiúsculas de minúsculas. Por exemplo, se às vezes aparecer no campo a palavra “Bob” e, às vezes, a palavra “BOB”, elas serão tratadas como duas pessoas separadas.
-* Considerando que a compilação baseada em campos diferencia maiúsculas de minúsculas, no caso de conjuntos de dados do Analytics gerados pelo conector de origem do Analytics, a Adobe recomenda analisar todas as regras VISTA ou regras de processamento que se aplicam ao campo de ID transitória para garantir que nenhuma dessas regras esteja introduzindo novos formulários com a mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID transitória em apenas uma parte dos eventos.
+* Considerando que a compilação em campo diferencia maiúsculas de minúsculas, para conjuntos de dados do Analytics gerados pelo conector de origem do Analytics, o Adobe recomenda analisar todas as regras VISTA ou regras de processamento que se aplicam ao campo de ID transitória para garantir que nenhuma dessas regras esteja introduzindo novos formulários com a mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID transitória em apenas uma parte dos eventos.
 * A compilação em campo não combina nem concatena campos.
 * O campo de ID transitória deve conter um único tipo de ID (ou seja, IDs de um único namespace). Por exemplo, o campo ID transitória não deve conter uma combinação de IDs de logon e IDs de email.
 * Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID transitória, a compilação em campo será escolhida por ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação baseada em campo escolherá Ann.
