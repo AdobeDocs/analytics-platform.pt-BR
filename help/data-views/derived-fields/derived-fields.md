@@ -4,7 +4,7 @@ description: Um campo derivado especifica a manipulação de tempo do relatório
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: b8d6b8b0f2740e118bd744bcb7b7ee46aefc75ed
+source-git-commit: bd017810cb0f7813bdada5e3e951b0f6d5b768e4
 workflow-type: tm+mt
 source-wordcount: '4348'
 ht-degree: 15%
@@ -749,7 +749,7 @@ Substitui um valor de um campo usando uma expressão regular em um novo campo de
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>Sequência de caracteres</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Sequência de caracteres</li></ul></li><li>[!UICONTROL Formato de saída]:<ul><li>Sequência de caracteres</li></ul></ul><ul><li>Diferencia maiúsculas de minúsculas</li><ul><li>Booleano</li></ul></li></ul></li> | <p>N/D</p> | <p>5 funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>Sequência de caracteres</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>Sequência de caracteres</li></ul></li><li>[!UICONTROL Formato de saída]:<ul><li>Sequência de caracteres</li></ul></ul><ul><li>Diferencia maiúsculas de minúsculas</li><ul><li>Booleano</li></ul></li></ul></li> | <p>N/D</p> | <p>1 função por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
