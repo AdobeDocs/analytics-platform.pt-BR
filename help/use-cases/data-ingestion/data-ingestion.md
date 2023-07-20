@@ -4,10 +4,10 @@ description: Entenda as diferentes maneiras de assimilar dados no Customer Journ
 exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ A Adobe Experience Platform reúne dados de várias fontes para ajudar os profis
 
 Consulte este tutorial sobre como [Analisar dados do Google Analytics usando o Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=pt-BR) para ver as etapas em detalhes.
 
-## Usar a API de inserção de dados em massa para obter dados no Analytics e, em seguida, assimilar por meio do Conector de origem da Adobe na Experience Platform
+## Use a API de inserção de dados em massa para obter dados no Analytics e, em seguida, assimilar por meio do conector de origem do Analytics no Experience Platform
 
 1. [Use a API de inserção de dados em massa](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/bdia.md) para enviar dados de coleção no lado do servidor para o Adobe Analytics. Ela permite que você envie arquivos formatados em CSV que contêm dados de eventos.
 1. [Crie um conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) para trazer esses dados do consumidor para a Adobe Experience Platform.

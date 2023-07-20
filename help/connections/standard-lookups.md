@@ -4,7 +4,7 @@ description: Use pesquisas padrão para aumentar os relatórios com dimensões �
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 675b3c24de2fdb47c8072d15fba168cc72feefbe
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 76%
@@ -20,7 +20,7 @@ Pesquisas padrão (também conhecidas por pesquisas fornecidas pela Adobe) aprim
 
 No Adobe Analytics tradicional, essas dimensões são exibidas sozinhas, enquanto no Customer Journey Analytics, é necessário incluir essas dimensões ativamente ao criar visualizações de dados. No fluxo de trabalho Conexões, você seleciona um conjunto de dados que é sinalizado com uma chave para pesquisa padrão. A interface de exibições de dados de usuário inclui automaticamente todas as dimensões de pesquisa padrão disponíveis para relatórios. Os arquivos de pesquisa são automaticamente mantidos atualizados e disponíveis em todas as regiões e para todas as contas. Eles são armazenados em organizações específicas da região associadas ao cliente.
 
-## Usar pesquisas padrão com conjuntos de dados do Conector de origem do Adobe
+## Usar pesquisas padrão com conjuntos de dados do conector de origem do Analytics
 
 Os conjuntos de dados de pesquisa padrão são aplicados automaticamente no momento do relatório. Se você usar o conector de origem do Analytics e trouxer uma dimensão para a qual o Adobe fornece uma pesquisa padrão, aplicaremos automaticamente essa pesquisa padrão. Se um conjunto de dados de evento contiver campos XDM, poderemos aplicar pesquisas padrão a ele.
 
