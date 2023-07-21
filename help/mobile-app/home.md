@@ -1,25 +1,24 @@
 ---
 title: Painéis do Customer Journey Analytics - Visão geral
-description: Documentação do produto e autoajuda dos painéis do Analytics
+description: Documentação do produto e autoajuda dos painéis do Analytics ou cartões de pontuação móveis.
 feature: Analytics Dashboards
 role: User, Admin
 exl-id: 40e52441-e772-41a3-b2e3-51a3d00580d0
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 63%
+source-wordcount: '285'
+ht-degree: 50%
 
 ---
 
 # [!UICONTROL Painéis] do Analytics - Visão geral
 
-**Os painéis do [!UICONTROL Analytics]** fornecem insights do Customer Journey Analytics a qualquer hora e em qualquer lugar. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os scorecards são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais minuciosos e relatórios de tendências. O aplicativo móvel é compatível com os sistemas operacionais iOS e Android.
+**Os painéis do [!UICONTROL Analytics]** fornecem insights do Customer Journey Analytics a qualquer hora e em qualquer lugar. O aplicativo permite aos usuários acesso móvel a scorecards intuitivos. Os cartões de pontuação móveis são uma coleção das métricas principais e de outros componentes apresentados em um layout lado a lado, que você pode usar para obter detalhamentos mais profundos e relatórios de tendências. O aplicativo móvel é compatível com os sistemas operacionais iOS e Android.
 
 >[!NOTE]
 >
->A funcionalidade do cartão de pontuação móvel oferecida no Customer Journey Analytics é quase idêntica à funcionalidade oferecida no Adobe Analytics. Por esse motivo, os vídeos de scorecard mencionados nesta página estão mostrando a interface do usuário do Adobe Analytics, não o Customer Journey Analytics. <br/><br/>Além disso, embora o aplicativo móvel seja denominado Adobe Analytics na loja de aplicativos, ele pode ser usado da mesma forma com cartões de pontuação móveis Customer Journey Analytics.
-
+>A funcionalidade do cartão de pontuação móvel oferecida no Customer Journey Analytics é quase idêntica à funcionalidade oferecida no Adobe Analytics. Por esse motivo, os vídeos de cartão de pontuação referidos nesta página estão mostrando a interface do usuário do Adobe Analytics, não a interface do Customer Journey Analytics. <br/><br/>Além disso, embora o aplicativo móvel seja denominado Adobe Analytics na loja de aplicativos, ele pode ser usado da mesma forma com cartões de pontuação móveis Customer Journey Analytics.
 
 Para saber mais sobre o Customer Journey Analytics [!UICONTROL painéis], consulte os seguintes recursos:
 

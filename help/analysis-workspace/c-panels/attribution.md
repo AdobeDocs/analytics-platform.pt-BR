@@ -3,10 +3,10 @@ title: Painel de atribuição
 description: Como usar e interpretar o painel de atribuição no Analysis Workspace.
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 86%
+source-wordcount: '515'
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ O Customer Journey Analytics aprimora a atribuição ao permitir:
 
 * Definir atribuição além de mídias com anúncios: qualquer dimensão, métrica, canal ou evento pode ser aplicado a modelos (ex: pesquisa interna), além de campanhas de marketing.
 * Utilizar comparação ilimitada de modelos de atribuição: compare dinamicamente quantos modelos desejar.
-* Evitar alterações de implementação: com processamento de tempo de relatório e sessões contextuais, o contexto da jornada do cliente pode ser incorporado e aplicado no tempo de execução.
+* Evite alterações na implementação: com o processamento em tempo de relatório e sessões sensíveis ao contexto, o contexto de jornada do cliente pode ser incorporado e aplicado no tempo de execução.
 * Construir a sessão que melhor corresponde ao seu cenário de atribuição.
 * Detalhar atribuições por filtros: compare facilmente o desempenho de seus canais de marketing entre filtros importantes (ex: clientes novos vs. repetidos, produto X vs. produto Y, nível de fidelidade ou CLV).
 * Inspecionar canais cruzados e análises de multitoque: usando diagramas e histogramas de Venn e resultados de atribuição de tendência.
