@@ -3,10 +3,10 @@ title: Rótulos e políticas
 description: Saiba como os rótulos e políticas de dados definidos no Adobe Experience Platform afetam as visualizações de dados e os relatórios no Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: d14db99f6cf597c4b62cdb148853b0f11503eaa1
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 60%
+source-wordcount: '501'
+ht-degree: 58%
 
 ---
 
@@ -24,7 +24,7 @@ Os seguintes rótulos são de especial interesse para o Customer Journey Analyti
 >
 >Os rótulos de uso de dados não são propagados automaticamente para conjuntos de dados compilados. No entanto, elas podem ser adicionadas manualmente.
 
-A rotulação por si só não significa que esses rótulos de uso de dados serão aplicados. É para isso que as políticas são usadas. Você cria suas políticas por meio da [API de serviço de política](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=pt-BR) na Experience Platform.
+A rotulação por si só não significa que esses rótulos de uso de dados serão aplicados. É para isso que as políticas são usadas. Você cria suas políticas usando o [IU DO EXPERIENCE PLATFORM](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=pt-BR) ou por meio da [API de serviço de política](https://experienceleague.adobe.com/docs/experience-platform/data-governance/api/overview.html?lang=pt-BR) em Experience Platform.
 
 Duas políticas definidas por Adobe são exibidas no Customer Journey Analytics e afetam os relatórios e o download/compartilhamento:
 

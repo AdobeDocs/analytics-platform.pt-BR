@@ -3,10 +3,10 @@ title: Visão geral da Análise de vários canais
 description: Rechavear IDs de pessoa de vários conjuntos de dados para compilar pessoas.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-feature: Cross-Channel Analytics
+feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 85%
@@ -35,7 +35,7 @@ Quando você combina conjuntos de dados com IDs de pessoa semelhantes, a atribui
 Antes de usar a Análise de vários canais, verifique se sua organização está preparada com o seguinte:
 
 * Um conjunto de dados na Adobe Experience Platform deve ter duas colunas que ajudem a identificar pessoas:
-   * Uma **ID persistente**, um identificador presente em cada linha. Por exemplo, uma ID de pessoa gerada por uma biblioteca de AppMeasurements do Adobe Analytics.
+   * Uma **ID persistente**, um identificador presente em cada linha. Por exemplo, uma ID de pessoa gerada por uma biblioteca do AppMeasurement do Adobe Analytics.
    * Uma **ID transitória**, um identificador presente em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash depois que uma pessoa é autenticada. Você pode usar praticamente qualquer identificador que desejar, desde que ele esteja presente pelo menos uma vez no mesmo evento que determinada ID persistente.
 * Outro conjunto de dados, como dados da central de atendimento, que contém uma ID transitória em cada linha. Essa ID de pessoa deve ser formatada de forma semelhante à ID transitória no outro conjunto de dados.
 * Esse recurso permite compilar conjuntos de dados que podem incluir a mesclagem de dados autenticados e não autenticados do usuário. Cumpra as leis e regulamentos aplicáveis e obtenha as permissões necessárias do usuário final antes de mesclar conjuntos de dados.
