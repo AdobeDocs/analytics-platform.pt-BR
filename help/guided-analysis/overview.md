@@ -3,7 +3,7 @@ title: Visão geral da análise guiada
 description: Um método de análise de dados em Customer Journey Analytics que permite que as equipes de produtos obtenham insights de alta qualidade rapidamente. Também conhecido como Product Analytics.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: bf2688220a0e5b0ff3267a8f1af135e63b4066c5
+source-git-commit: 4ed5acc2c9bb1a530d16d9c3ce8f5e9243bfa1f2
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 8%
@@ -13,8 +13,6 @@ ht-degree: 8%
 # Visão geral da análise guiada
 
 A análise guiada é um formato de relatório que permite que as equipes de produtos atendam rapidamente às suas necessidades de dados, para que possam obter insights de alta qualidade rapidamente e tomar mais decisões de produto orientadas por dados. Equipes multifuncionais podem se conectar em tempo real para usar e entender esses relatórios.
-
->[!VIDEO](https://video.tv.adobe.com/v/3421621/)
 
 Semelhante aos cartões de pontuação do Analysis Workspace e Mobile, um relatório de análise guiada usa dados de um [Visualização de dados](../data-views/data-views.md), que faz referência aos dados no Adobe Experience Platform por meio de uma [Conexão](../connections/overview.md). Todos os relatórios criados na análise guiada podem ser transferidos facilmente para a Analysis Workspace para pesquisa adicional.
 
