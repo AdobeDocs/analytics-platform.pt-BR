@@ -3,16 +3,16 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e55cd5d9da816b9413dba7542acb385f12709642
+source-git-commit: e6b2df9ae90ef5663206e768b985749de38e263c
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '691'
 ht-degree: 100%
 
 ---
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (julho de 2023)
 
-**Última atualização**: 13 de julho de 2023
+**Última atualização**: 25 de julho de 2023
 
 As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -24,7 +24,6 @@ As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega 
 | **Campos derivados** | Isto representa a versão inicial dos Campos derivados. Um campo derivado permite definir manipulações de dados (muitas vezes complexas) a qualquer momento, por meio de um criador de regras personalizável. É possível definir ainda mais o campo derivado como um componente (métrica ou dimensão) nas visualizações de dados e então usá-lo como um componente no espaço de trabalho.<p>Essa versão é compatível com um modelo de canais de marketing e as seguintes funções:</p><ul><li>Concatenar</li><li>Caso Quando</li><li>Localizar e Substituir</li><li>Pesquisa</li><li>Análise de URL</li></ul> <p>[Saiba mais](/help/data-views/derived-fields/derived-fields.md)</p> | 10 de maio de 2023 | 2 de agosto de 2023 |
 | **Compatibilidade de pesquisa expandida para dados de perfil e pesquisa** | Fornece a capacidade de adicionar conjuntos de dados como pesquisas de campos nos conjuntos de dados de perfil ou pesquisa. Anteriormente, somente os conjuntos de dados de eventos eram compatíveis. [Saiba mais](/help/connections/create-connection.md) | 21 de junho de 2023 | 12 de julho de 2023 |
 | **Aprimoramentos do Report Builder** | <ul><li>Opção de filtrar da célula para vários blocos de dados. É possível alterar os filtros em vários blocos de dados de uma célula. Use uma célula predefinida, atribua-a a vários blocos de dados e atualize os dados com base nos filtros definidos na célula. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/select-data-view.html?lang=pt-BR)</li><li>Mostrar e ocultar cabeçalhos de linha e coluna. Você pode mostrar ou ocultar cabeçalhos de tabelas de blocos de dados ou cabeçalhos de linhas e colunas para reformatar a tabela e alinhar blocos de dados em um relatório. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=pt-BR#criar-o-bloco-de-dados)</li></ul> | N/D | 19 de julho de 2023 |
-| **Pesquisas geográficas do Experience Edge** | [O Adobe Experience Edge está adicionando um serviço de pesquisa geográfica que fornece dados geográficos unificados para todos os usuários do Experience Edge (Adobe Analytics, Customer Journey Analytics, Adobe Target, Adobe Media Analytics, Adobe Experience Platform etc.).](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=pt-BR) | N/D | 26 de julho de 2023 |
 
 {style="table-layout:auto"}
 
