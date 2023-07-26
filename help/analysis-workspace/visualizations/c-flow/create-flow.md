@@ -4,10 +4,10 @@ title: Configurar uma visualização de fluxo
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: f97572025d07d56d1fd699074228abe5d2a7b8a1
+source-git-commit: 558825dc4768372f232ddfb614442443c89e9a65
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 62%
+source-wordcount: '1539'
+ht-degree: 60%
 
 ---
 
@@ -56,9 +56,14 @@ As visualizações de fluxo permitem configurar o início ou o fim do caminho em
    | **[!UICONTROL Rótulos de quebra de linha]** | Normalmente, os rótulos nos Elementos de fluxo são truncados para não poluir visualmente a tela, mas é possível tornar todos os rótulos visíveis ao selecionar esta caixa.  Padrão = desmarcado. |
    | **[!UICONTROL Incluir instâncias repetidas]** | As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas, por exemplo, recarregamentos de página. No entanto, as repetições não podem ser removidas das Visualizações de fluxo que incluem dimensões com vários valores, como listVars, listProps, s.product, eVars de merchandising etc. <p>Essa opção está desativada por padrão.</p> |
    | **[!UICONTROL Limite para a primeira/última ocorrência]** | Limite os caminhos para aqueles que começam/terminam com a primeira/última ocorrência de uma dimensão/item/métrica. Consulte a seção abaixo, [Exemplo de cenário para &quot;limitar à primeira/última ocorrência&quot;](#example-scenario-for-limit-to-firstlast-occurrence), para obter uma explicação mais detalhada. |
-   | **[!UICONTROL Número de colunas]** | O número de colunas desejado no diagrama de Fluxo. |
-   | **[!UICONTROL Itens expandidos por coluna]** | O número de itens desejado em cada coluna. |
+   | **[!UICONTROL Número de colunas]** | O número de colunas desejado no diagrama de Fluxo. Você pode especificar no máximo 5 colunas. |
+   | **[!UICONTROL Itens expandidos por coluna]** | O número de itens desejado em cada coluna. É possível especificar no máximo 10 itens expandidos por coluna. |
    | **[!UICONTROL Container de fluxo]** | <ul><li>Visita</li><li>Visitante</li></ul> Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. Essas configurações ajudam você a entender o envolvimento no nível dos visitantes (ao longo das visitas) ou restringir a análise a uma só visita. |
+
+   >[!IMPORTANT]
+   >
+   >A combinação de **[!UICONTROL Número de colunas]** e **[!UICONTROL Itens expandidos por coluna]** determine o número de solicitações subjacentes necessárias para criar a visualização de fluxo. Quanto mais altos esses números, mais tempo leva para renderizar uma visualização.
+
 
 1. Selecionar **[!UICONTROL Build]**.
 
@@ -67,6 +72,7 @@ As visualizações de fluxo permitem configurar o início ou o fim do caminho em
 >**Exemplo:** Suponha que você queira rastrear o caminho que os usuários tomaram para e das páginas mais populares do site.
 >
 >Para fazer isso, você
+>
 >1. Comece a criar uma visualização de fluxo conforme descrito acima.
 >1. Arraste o [!UICONTROL **Página**] dimensão na **[!UICONTROL Contém]** e selecione [!UICONTROL **Build**].
 >1. A visualização de Fluxo é criada com a página mais visualizada visível no nó de foco no centro da visualização. Você também pode ver as principais páginas que entram nessa página (à esquerda do nó de foco), bem como as principais páginas que saem dessa página de foco (à direita do nó de foco).
