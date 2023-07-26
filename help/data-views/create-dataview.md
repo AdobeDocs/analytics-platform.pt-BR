@@ -4,10 +4,10 @@ description: Todas as configurações que podem ser ajustadas para criar ou edit
 exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 77647ddbd2deee402629104312db1620de4449e9
+source-git-commit: 92511d2bedf322097b4d70ccede5ac6e0df7b0c6
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 57%
+source-wordcount: '1391'
+ht-degree: 56%
 
 ---
 
@@ -131,6 +131,6 @@ Você pode filtrar ![Ícone Filtrar](https://spectrum.adobe.com/static/icons/wor
 
 ### Configurações da sessão
 
-Determine o período de inatividade entre eventos antes de uma sessão expirar e um novo ser iniciado. É necessário um período de tempo. Ou também é possível forçar o início de uma nova sessão quando um evento contém uma determinada métrica.
+Determine o período de inatividade entre eventos antes de uma sessão expirar e um novo ser iniciado. É necessário um período de tempo. Ou também é possível forçar o início de uma nova sessão quando um evento contém uma determinada métrica. Consulte [Sessões sensíveis ao contexto](context-aware-sessions.md) para obter mais detalhes.
 
 Depois que todas as configurações desejadas forem especificadas, clique em **[!UICONTROL Salvar e concluir]**.
