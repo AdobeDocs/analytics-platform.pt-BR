@@ -3,7 +3,7 @@ title: Sessões sensíveis ao contexto
 description: Configurações em uma Visualização de dados que podem ser usadas para definir sessões sensíveis ao contexto.
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6235fbb128098e2a624d5fd4fd72c2c583cfd277
+source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 As sessões sensíveis ao contexto em Visualizações de dados mudam a forma como o Customer Journey Analytics calcula sessões com base nos dados em sua conexão.
 
-No prazo de [!UICONTROL Configurações] das Visualizações de dados, você pode definir uma sessão de qualquer maneira para corresponder a como as pessoas interagem com suas experiências digitais. As definições de sessão sensíveis ao contexto não são destrutivas e não alteram os dados subjacentes. É possível configurar várias visualizações de dados, cada uma com sua definição de sessão com reconhecimento de contexto específico como base para os projetos do Espaço de trabalho.
+No prazo de [!UICONTROL Configurações] das Visualizações de dados, você pode definir uma sessão de qualquer maneira para corresponder a como as pessoas interagem com suas experiências digitais. As definições de sessão sensíveis ao contexto não são destrutivas e não alteram os dados subjacentes. É possível configurar várias visualizações de dados, cada uma com sua definição de sessão com reconhecimento de contexto específica, como base para os projetos do Espaço de trabalho.
 
 Para definir o contexto de uma sessão para uma visualização de dados:
 
