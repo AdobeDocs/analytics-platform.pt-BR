@@ -3,16 +3,16 @@ title: Visão geral da análise guiada
 description: Um método de análise de dados em Customer Journey Analytics que permite que as equipes de produtos obtenham insights de alta qualidade rapidamente. Também conhecido como Product Analytics.
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 4ed5acc2c9bb1a530d16d9c3ce8f5e9243bfa1f2
+source-git-commit: bbf69470727dae531065972511bcc29eb3f47679
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1082'
 ht-degree: 8%
 
 ---
 
 # Visão geral da análise guiada
 
-A análise guiada é um formato de relatório que permite que as equipes de produtos atendam rapidamente às suas necessidades de dados, para que possam obter insights de alta qualidade rapidamente e tomar mais decisões de produto orientadas por dados. Equipes multifuncionais podem se conectar em tempo real para usar e entender esses relatórios.
+o Adobe Product Analytics permite que as equipes de produtos realizem o autoatendimento de dados e insights sobre sua experiência com produtos por meio de fluxos de trabalho de análise guiados, baseados nos dados entre canais do Customer Journey Analytics. A análise guiada é um formato de relatório que permite que as equipes de produtos atendam rapidamente às suas necessidades de dados, para que possam obter insights de alta qualidade rapidamente e tomar mais decisões de produto orientadas por dados. Equipes multifuncionais podem se conectar em tempo real para usar e entender esses relatórios.
 
 Semelhante aos cartões de pontuação do Analysis Workspace e Mobile, um relatório de análise guiada usa dados de um [Visualização de dados](../data-views/data-views.md), que faz referência aos dados no Adobe Experience Platform por meio de uma [Conexão](../connections/overview.md). Todos os relatórios criados na análise guiada podem ser transferidos facilmente para a Analysis Workspace para pesquisa adicional.
 
@@ -38,7 +38,7 @@ Se sua organização for provisionada para análise guiada, você poderá acess�
 
 1. Clique em **[!UICONTROL Análise guiada]** da página inicial para ir diretamente para a página [Exibição de tendências de uso](types/usage.md).
 
-   ![Mosaico da página de destino](assets/landing-page-tile.png)
+   ![Mosaico da página de aterrissagem](assets/landing-page-tile.png)
 
 1. Clique em **[!UICONTROL Criar novo]** para ver as diferentes opções de exibição e escolher um ponto de partida diferente para a análise.
 
