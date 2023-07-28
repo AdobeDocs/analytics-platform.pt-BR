@@ -2,10 +2,10 @@
 title: Exibição de tendências de conversão
 description: Rastreie as alterações na taxa de conversão ao longo do tempo.
 feature: Guided Analysis
-source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
+source-git-commit: 9c46c945bf98cff807773e1f1f795e30a28f203b
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 2%
+source-wordcount: '492'
+ht-degree: 1%
 
 ---
 
@@ -37,6 +37,10 @@ A exibição Tendências de conversão oferece as seguintes configurações de g
 * **[!UICONTROL Métrica]**: A métrica que você deseja medir. As opções incluem Sessões e Usuários.
 * **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Linha.
 * **[!UICONTROL Conversão de]**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir da Primeira etapa ou da Etapa anterior.
+
+>[!NOTE]
+>
+>A variável **Média** na tabela de exibição Tendências de conversão é diferente da variável **Total** na [Visualização de atrito](friction.md) tabela. A primeira é uma média das colunas de intervalo (por exemplo, média das taxas de conversão diárias), enquanto a última é um cálculo agregado no intervalo de datas completo.
 
 ## Aplicar comparação de tempo
 
