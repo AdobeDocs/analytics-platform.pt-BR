@@ -2,9 +2,9 @@
 title: Casos de uso do setor
 description: Casos de uso do setor para análise guiada
 feature: Guided Analysis
-source-git-commit: 99cd8847ec7e35e71e17ae9f69605bfcb00f2882
+source-git-commit: 81ac3476be983ac5d2c7b19abeb618266f3148da
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1485'
 ht-degree: 2%
 
 ---
@@ -72,6 +72,7 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 
 | Caso de uso | Exemplo | Impacto | Análise |
 | --- | --- | --- | --- |
+| **Quantificar o impacto de novos programas ou séries** | Poderíamos analisar o efeito sobre a audiência depois que os usuários assistem a um novo programa ou série e entender melhor qual conteúdo está repercutindo. | **Aumente a visibilidade.** Encontre conteúdo que tenha o maior impacto na audiência. | [Visualização de primeiro uso](types/first-use.md) |
 | **Identificar risco de churn** | Vimos uma alta taxa de rotatividade de clientes que se inscreveram em nossa plataforma para assistir a um evento sazonal e, em seguida, cancelado assim que o evento terminou. A identificação rápida desses usuários permite mostrar recomendações que os incentivam a permanecer envolvidos com a plataforma. | **Manter assinantes felizes.** Encontre conteúdo que envolva um segmento de crescimento para intervir com recomendações. | [Exibição de crescimento de usuário ativo](types/active.md) <p/><p/> [Visão de crescimento líquido](types/net-growth.md) |
 | **Encontrar oportunidades para venda adicional** | A alegria do nosso crescimento de receita é poder entender quais ofertas no aplicativo são mais atraentes para os nossos fãs enquanto eles estão no estádio. | **Aumente a receita auxiliar.** Entenda o impacto das ofertas no aplicativo na promoção dos comportamentos de compra. | [Visualização de primeiro uso](types/first-use.md) <p/><p/> [Visualização de atrito](types/friction.md) |
 | **Otimizar a experiência entre dispositivos** | Quero ser capaz de analisar como meus assinantes estão interagindo com vários dispositivos/aplicativos para que eu possa entender os padrões de consumo de conteúdo e determinar onde seria melhor redirecionar para eles. | **Personalize a experiência.** Entenda qual conteúdo corresponde melhor aos assinantes em cada dispositivo. | [Exibição de tendências de uso](types/usage.md) |
