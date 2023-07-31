@@ -4,10 +4,10 @@ description: Saiba como adicionar dados baseados em conta como um conjunto de da
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 647257322dc4b7e64e0e17fbfde27f626b1012a1
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 73%
+source-wordcount: '821'
+ht-degree: 74%
 
 ---
 
@@ -62,7 +62,7 @@ Neste exemplo, estamos combinando 3 conjuntos de dados em uma conexão Customer 
 | Nome do conjunto de dados | Descrição | Classe de esquema do Adobe Experience Platform | Detalhes do conjunto de dados |
 | --- | --- | --- | --- |
 | Impressão B2B | Contém dados de sequência de cliques e nível de evento no nível de conta. Por exemplo, contém a ID de email e a ID de conta correspondente, além do nome de marketing, para a execução de anúncios de marketing. Também inclui as impressões desses anúncios, por usuário. | Com base na classe de esquema XDM ExperienceEvent | O `emailID` é usado como a identidade primária e recebe um namespace `Customer ID`. Como resultado, será exibido como a **[!UICONTROL ID de pessoa]** padrão no Customer Journey Analytics. ![Impressões](../assets/impressions-mixins.png) |
-| Perfil B2B | Este conjunto de dados de perfil informa mais sobre os usuários em uma conta, como o cargo, a qual conta eles pertencem, o perfil do LinkedIn etc. | Com base na classe de esquema Perfil individual XDM | Não é necessário selecionar `emailID` como a ID primária neste esquema. Certifique-se de ativar **[!UICONTROL Perfil]**; se você não fizer isso, o Customer Journey Analytics não poderá conectar o `emailID` no Perfil B2B com o `emailID` em dados de impressão B2B. ![Perfil](../assets/profile-mixins.png) |
+| Perfil B2B | Este conjunto de dados de perfil informa mais sobre os usuários em uma conta, como o cargo, a qual conta eles pertencem, o perfil do LinkedIn etc. | Com base na classe de esquema Perfil individual XDM | Selecionar `emailID` como a ID primária neste esquema. |
 | Informações B2B | Consulte &quot;Criar conjunto de dados de pesquisa&quot; acima. | B2BAccount (classe de esquema de pesquisa personalizada) | A relação entre `accountID` e o conjunto de dados Impressões B2B foi criado automaticamente ao conectar o conjunto de dados Informações B2B ao conjunto de dados Impressões B2B no Customer Journey Analytics, conforme descrito nas etapas abaixo. ![Pesquisa](../assets/lookup-mixins.png) |
 
 Veja como combinar conjuntos de dados:
