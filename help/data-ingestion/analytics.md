@@ -4,10 +4,10 @@ description: Explique como assimilar dados do Adobe Analytics tradicional
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 95%
+source-wordcount: '1159'
+ht-degree: 86%
 
 ---
 
@@ -27,9 +27,9 @@ Este guia de início rápido explica como você pode usar os dados coletados pel
 
 Para isso, é necessário:
 
-- **Configure um Conector de origem do Adobe Analytics** na Adobe Experience Platform. Isso cuida da assimilação dos dados atuais do Adobe Analytics em um conjunto de dados na Adobe Experience Platform.
+- **Configure um Conector de origem do Adobe Analytics** na Adobe Experience Platform. O conector de origem cuida da assimilação dos dados atuais do Adobe Analytics em um conjunto de dados na Adobe Experience Platform.
 
-- **Configurar uma conexão** no Customer Journey Analytics. Essa conexão deve (pelo menos) incluir o conjunto de dados da Adobe Experience Platform.
+- **Configurar uma conexão** no Customer Journey Analytics. A conexão deve (pelo menos) incluir seu conjunto de dados do Adobe Experience Platform.
 
 - **Configurar uma visualização de dados** no Customer Journey Analytics para definir métricas e dimensões que você deseja usar no Analysis Workspace.
 
@@ -38,7 +38,7 @@ Para isso, é necessário:
 
 >[!NOTE]
 >
->Este é um guia simplificado sobre como assimilar dados, usando o conector de origem do Adobe Analytics, e usar esses dados no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
+>Este guia de início rápido é um guia simplificado sobre como assimilar dados usando o conector de origem do Adobe Analytics e usar esses dados no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
 
 
 ## Configurar um conector de origem do Adobe Analytics
@@ -78,7 +78,7 @@ Para criar um conector de origem do Adobe Analytics:
    ![Consulte a seção](./assets/review.png)
 
 
-Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics de seu conjunto de relatórios, incluindo a assimilação de até 13 meses de dados históricos para sandboxes de produção. (Observe que a partir de 26 de abril de 2023, o preenchimento retroativo em sandboxes de não produção será limitado a 3 meses.)
+Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics no conjunto de relatórios. O fluxo de dados assimila até 13 meses de dados históricos para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é limitado a três meses.
 
 Quando a assimilação inicial for concluída, os dados do conjunto de relatórios do Adobe Analytics estarão prontos para serem usados pelo Customer Journey Analytics.
 
@@ -89,7 +89,7 @@ Consulte [Criar uma conexão de origem do Adobe Analytics na interface do usuár
 
 Para usar os dados da Adobe Experience Platform no Customer Journey Analytics, crie uma conexão que inclua os dados resultantes da configuração do esquema, do conjunto de dados e do fluxo de trabalho.
 
-Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao Espaço de trabalho. Para criar relatórios sobre esses conjuntos de dados, primeiro é necessário estabelecer uma conexão entre os conjuntos de dados na Adobe Experience Platform e no Espaço de trabalho.
+Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao Espaço de trabalho. Para criar relatórios sobre esses conjuntos de dados, primeiro é necessário estabelecer uma conexão entre os conjuntos de dados na Adobe Experience Platform e no Workspace.
 
 Para criar sua conexão:
 
@@ -192,7 +192,7 @@ Para criar o projeto:
 
    ![Visualização de dados de seleção do Espaço de trabalho](./assets/cja-projects-3.png).
 
-5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
+5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas no [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] . Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
 
    ![Espaço de trabalho - Primeiro relatório](./assets/cja-projects-5.png)
 
@@ -201,5 +201,5 @@ Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) par
 
 >[!SUCCESS]
 >
->Você concluiu todas as etapas. A partir da configuração do conector da fonte de dados do Adobe Analytics e da configuração desse conector para o conjunto de relatórios, os dados do Adobe Analytics são automaticamente carregados na Adobe Experience Platform. Você definiu uma conexão no Customer Journey Analytics para usar os dados do Adobe Analytics assimilados e outros dados. A definição da visualização de dados permite especificar qual dimensão e métricas usar e, por fim, criar seu primeiro projeto visualizando e analisando seus dados.
+>Você concluiu todas as etapas. A partir da configuração do conector da fonte de dados do Adobe Analytics e da configuração desse conector para o conjunto de relatórios, os dados do Adobe Analytics são automaticamente carregados na Adobe Experience Platform. Você definiu uma conexão no Customer Journey Analytics para usar os dados Adobe Analytics assimilados e outros dados. A definição da visualização de dados permite especificar qual dimensão e métricas usar e, por fim, criar seu primeiro projeto visualizando e analisando seus dados.
 

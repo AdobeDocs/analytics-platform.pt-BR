@@ -4,16 +4,16 @@ description: Entenda as diferentes maneiras de assimilar dados no Customer Journ
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 92%
+source-wordcount: '624'
+ht-degree: 90%
 
 ---
 
 # Visão geral da assimilação de dados
 
-Você tem várias opções para assimilar dados no Customer Journey Analytics. Algumas delas presumem que você deseja mover os dados tradicionais do Adobe Analytics, outras presumem que você usa dados assimilados no Adobe Experience Platform.
+Você tem várias opções ao assimilar dados no Customer Journey Analytics. Algumas delas presumem que você deseja mover os dados tradicionais do Adobe Analytics, outras presumem que você usa dados assimilados no Adobe Experience Platform.
 
 >[!IMPORTANT]
 >

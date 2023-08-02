@@ -1,17 +1,17 @@
 ---
-title: Assimilar dados via Adobe Experience Platform Web SDK e Edge Network
+title: Assimilar dados por meio do SDK da Web da Adobe Experience Platform
 description: Explique como assimilar dados no Customer Journey Analytics por meio do SDK da Web da Adobe Experience Platform e da Rede de borda
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 662e9645cdb4b67f364525167e5191a52c474864
 workflow-type: tm+mt
-source-wordcount: '3587'
-ht-degree: 98%
+source-wordcount: '3580'
+ht-degree: 87%
 
 ---
 
-# Assimilar dados via Adobe Experience Platform Web SDK e Edge Network
+# Assimilar dados por meio do SDK da Web da Adobe Experience Platform
 
 Este guia de início rápido explica como você pode assimilar dados de rastreamento de site diretamente na Adobe Experience Platform usando o SDK da Web da Adobe Experience Platform e a Rede de borda e, em seguida, usar esses dados no Customer Journey Analytics.
 
@@ -33,21 +33,21 @@ Para isso, é necessário:
 
 >[!NOTE]
 >
->Este é um guia simplificado sobre como assimilar dados coletados de seu site na Adobe Experience Platform e usar no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
+> Este guia de início rápido é um guia simplificado sobre como assimilar dados coletados de seu site na Adobe Experience Platform e usar no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
 
 
 ## Configurar um esquema e um conjunto de dados
 
-Para assimilar dados na Adobe Experience Platform, primeiro defina quais dados deseja coletar. Todos os dados assimilados na Adobe Experience Platform devem estar em conformidade com uma estrutura padrão e desnormalizada para que sejam reconhecidos e utilizados pelos recursos e capacidades downstream. O Experience Data Model (XDM) é a estrutura padrão que fornece essa estrutura no formato de esquemas.
+Para assimilar dados na Adobe Experience Platform, primeiro é necessário definir quais dados você deseja coletar. Todos os dados assimilados na Adobe Experience Platform devem estar em conformidade com uma estrutura padrão e desnormalizada para que sejam reconhecidos e utilizados pelos recursos e capacidades downstream. O Experience Data Model (XDM) é a estrutura padrão que fornece essa estrutura no formato de esquemas.
 
-Após definir um esquema, use um ou mais conjuntos de dados para armazenar e gerenciar a coleta de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas).
+Após definir um esquema, use um ou mais conjuntos de dados para armazenar e gerenciar a coleta de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados (normalmente uma tabela) que contém um esquema (colunas) e campos (linhas).
 
 Todos os dados assimilados na Adobe Experience Platform devem estar em conformidade com um esquema predefinido antes que possam ser mantidos como um conjunto de dados.
 
 ### Configurar um esquema
 
 Você deseja rastrear o mínimo de dados de perfis que visitam seu site, por exemplo, nome de página e identificação.
-Para isso, primeiro defina um esquema que modele esses dados.
+Primeiro, você deve definir um esquema que modele esses dados.
 
 Para configurar o esquema:
 
@@ -94,7 +94,7 @@ Para configurar o esquema:
 
    ![Objeto de identificação](./assets/identification-field.png)
 
-   Esse objeto adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a Experience Cloud ID e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
+   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a Experience Cloud ID e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
 
    Selecione **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -142,7 +142,7 @@ Para capturar esses dados de perfil, você deve:
 
 - Adicionar um objeto de identificação com base no grupo de campos Profile Core v2.
 
-- Definir a ecid como identificador principal e email como identificador.
+- Defina a ID do Experience Cloud como identificador principal e o email como identificador.
 
 - Ativar o esquema do perfil
 
@@ -150,7 +150,7 @@ Consulte [Criar e editar esquemas na interface do usuário](https://experiencele
 
 ### Configurar um conjunto de dados
 
-Com seu esquema, você definiu seu modelo de dados. Agora é necessário definir a construção para armazenar e gerenciar esses dados. Isso é feito por meio de conjuntos de dados.
+Com seu esquema, você definiu seu modelo de dados. Agora é necessário definir a construção para armazenar e gerenciar esses dados, o que é feito por meio de conjuntos de dados.
 
 Para configurar seu conjunto de dados:
 
@@ -186,7 +186,7 @@ Consulte [Guia da interface do usuário de conjuntos de dados](https://experienc
 
 ## Configurar um fluxo de dados
 
-Uma sequência de dados representa a configuração do lado do servidor ao implementar os SDKs móveis e da Web da Adobe Experience Platform. Ao coletar dados com os SDKs da Adobe Experience Platform, os dados são enviados para a Rede de borda da Adobe Experience Platform. É a sequência de dados que determina para quais serviços os dados são encaminhados.
+Uma sequência de dados representa a configuração do lado do servidor ao implementar os SDKs móveis e da Web da Adobe Experience Platform. Ao coletar dados com os SDKs da Adobe Experience Platform, os dados são enviados para a Rede de borda da Adobe Experience Platform. É o fluxo de dados que determina para quais serviços esses dados são encaminhados.
 
 Em sua configuração, você deseja que os dados coletados do site sejam enviados para seu conjunto de dados na Adobe Experience Platform.
 
@@ -218,13 +218,13 @@ Para configurar seu armazenamento de dados:
 
 O conjunto de dados agora está configurado para encaminhar os dados coletados de seu site para seu conjunto de dados na Adobe Experience Platform.
 
-Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=pt-BR) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
+Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
 
 
 
 ## Usar tags
 
-Use o recurso Tags na Adobe Experience Platform para implementar o código em seu site para realmente coletar dados. Esta solução de gerenciamento de tags permite implantar o código do junto com outros requisitos de marcação. As tags oferecem integração perfeita com a Adobe Experience Platform usando a extensão do SDK da Web da Adobe Experience Platform.
+Para implementar o código em seu site para realmente coletar dados, use o recurso de Tags no Adobe Experience Platform. Esta solução de gerenciamento de tags permite implantar o código do junto com outros requisitos de marcação. As tags oferecem integração perfeita com a Adobe Experience Platform usando a extensão do SDK da Web da Adobe Experience Platform.
 
 ### Criar sua tag
 
@@ -238,14 +238,14 @@ Use o recurso Tags na Adobe Experience Platform para implementar o código em se
 
 ### Configurar sua tag
 
-Depois de criar a tag, você precisa configurá-la com as extensões corretas e configurar os elementos de dados e as regras de acordo com a maneira como deseja rastrear seu site e enviar dados para a Adobe Experience Platform.
+Depois de criar a tag, você deve configurá-la com as extensões corretas e configurar os elementos de dados e as regras de acordo com como deseja rastrear seu site e enviar dados para a Adobe Experience Platform.
 
 Selecione a tag criada recentemente na lista de [!UICONTROL Propriedades da tag] para abri-la.
 
 
 #### **Extensões**
 
-Adicione a extensão do SDK da Web da Adobe Platform à tag para garantir que você possa enviar dados para a Adobe Experience Platform (por meio do armazenamento de dados).
+Para garantir que você possa enviar dados para a Adobe Experience Platform (por meio de sua sequência de dados), adicione a extensão SDK da Web da Plataforma Adobe à sua tag.
 
 Para criar e configurar a extensão do SDK da Web da Adobe Experience Platform:
 
@@ -263,7 +263,7 @@ Para criar e configurar a extensão do SDK da Web da Adobe Experience Platform:
 
    Selecione **[!UICONTROL Salvar]**.
 
-Consulte [Configurar a extensão do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=pt-BR) para obter mais informações.
+Consulte [Configurar a extensão do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) para obter mais informações.
 
 Você também pode configurar a extensão do Serviço da Experience Cloud ID para usar facilmente a Experience Cloud ID. O serviço de ID de Experience Cloud identifica pessoas em todas as soluções da Adobe Experience Cloud.
 
@@ -405,7 +405,7 @@ Para definir uma regra:
 
       - Selecione o ícone do cilindro ao lado de [!UICONTROL Dados XDM] e Selecione **[!UICONTROL XDM - Exibição de página]** na lista de elementos de dados.
 
-        ![Regra - Configuração de ação](./assets/action-pageview-xdm.png)
+     ![Regra - Configuração de ação](./assets/action-pageview-xdm.png)
 
       - Selecione **[!UICONTROL Manter alterações]**.
 
@@ -415,7 +415,7 @@ Para definir uma regra:
 
    - Selecione **[!UICONTROL Salvar]**.
 
-Este é apenas um exemplo de definição de uma regra que envia dados XDM, contendo valores de outros elementos de dados, para a Adobe Experience Platform.
+O exposto acima é apenas um exemplo de definição de uma regra que envia dados XDM, contendo valores de outros elementos de dados, para o Adobe Experience Platform.
 
 Você pode usar as regras de várias maneiras na tag para manipular variáveis (usando os elementos de dados).
 
@@ -423,7 +423,7 @@ Consulte [Regras de](https://experienceleague.adobe.com/docs/experience-platform
 
 ### Criar e publicar a tag
 
-Após definir elementos de dados e regras, é necessário criar e publicar sua tag. Ao criar um build de biblioteca, você deve atribuí-lo a um ambiente. As extensões, regras e elementos de dados da build são compilados e colocados no ambiente atribuído. Cada ambiente fornece um código integrado exclusivo que permite integrar a build atribuída ao site.
+Depois de definir elementos de dados e regras, você deve criar e publicar sua tag. Ao criar um build de biblioteca, você deve atribuí-lo a um ambiente. As extensões, regras e elementos de dados da build são compilados e colocados no ambiente atribuído. Cada ambiente fornece um código integrado exclusivo que permite integrar a build atribuída ao site.
 
 Para criar e publicar a tag:
 
@@ -443,7 +443,7 @@ Para criar e publicar a tag:
 
    - Selecione **[!UICONTROL Salvar e criar no desenvolvimento]**.
 
-   Essa ação salva e cria a tag para o seu ambiente de desenvolvimento. Um ponto verde indica uma criação bem-sucedida da tag no ambiente de desenvolvimento.
+   A tag é salva e é criada para o ambiente de desenvolvimento. Um ponto verde indica uma criação bem-sucedida da tag no ambiente de desenvolvimento.
 
 4. Você pode selecionar **[!UICONTROL ...]** para recriar a biblioteca ou mover a biblioteca para um ambiente de preparo ou produção.
 
@@ -456,7 +456,7 @@ Consulte [Visão geral de publicação](https://experienceleague.adobe.com/docs/
 
 ### Recuperar o código da tag
 
-Por fim, é necessário instalar sua tag no site que você deseja rastrear. Isso implica colocar o código na tag de cabeçalho do modelo do site.
+Por fim, você deve instalar sua tag no site que deseja rastrear, o que implica colocar o código na tag de cabeçalho do modelo do site.
 
 Para obter o código que faz referência à sua tag:
 
@@ -466,8 +466,8 @@ Para obter o código que faz referência à sua tag:
 
    Na caixa de diálogo [!UICONTROL Instruções de instalação da Web] clique no botão copiar ao lado do código de script que deve ser lido como:
 
-   ```javascript
-   <script src="https://assets.adobedtm.com/2a518741ab24/.../launch-...-development.min.js" async></script>
+   ```
+   <script src="https://assets.adobedtm.com/2a518741ab24/.../launch-...-development.min.js" async></script>>
    ```
 
    ![Ambiente](./assets/environment.png)
@@ -488,7 +488,7 @@ Valide a implementação, corrija-a sempre que necessário e, uma vez correto, i
 
 Para usar os dados da Adobe Experience Platform no Customer Journey Analytics, crie uma conexão que inclua os dados resultantes da configuração do esquema, do conjunto de dados e do fluxo de trabalho.
 
-Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao Espaço de trabalho. Para criar relatórios sobre esses conjuntos de dados, primeiro é necessário estabelecer uma conexão entre os conjuntos de dados na Adobe Experience Platform e no Espaço de trabalho.
+Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao Espaço de trabalho. Para criar relatórios sobre esses conjuntos de dados, primeiro é necessário estabelecer uma conexão entre os conjuntos de dados na Adobe Experience Platform e no Workspace.
 
 Para criar sua conexão:
 
@@ -591,7 +591,7 @@ Para criar o projeto:
 
    ![Visualização de dados de seleção do Espaço de trabalho](./assets/cja-projects-3.png).
 
-5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
+5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas no [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel]. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
 
    ![Espaço de trabalho - Primeiro relatório](./assets/cja-projects-5.png)
 
@@ -599,4 +599,4 @@ Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) par
 
 >[!SUCCESS]
 >
->Você concluiu todas as etapas. A partir da definição de quais dados você deseja coletar (esquema) e onde armazená-los (conjunto de dados) na Adobe Experience Platform, você configurou um armazenamento de dados na Rede de borda para garantir que os dados possam ser encaminhados para esse conjunto de dados. Em seguida, você definiu e implantou a tag contendo as extensões (SDK da Web da Adobe Experience Platform, Serviço da Experience Cloud ID), os elementos de dados e as regras para capturar dados do seu site e enviar esses dados para o armazenamento de dados. Você definiu uma conexão no Customer Journey Analytics para usar os dados de rastreamento do site e outros dados. A definição da visualização de dados permite especificar qual dimensão e métricas usar e, por fim, criar seu primeiro projeto visualizando e analisando seus dados.
+>Você concluiu todas as etapas. Começando por definir quais dados você deseja coletar (esquema) e onde armazená-los (conjunto de dados) no Adobe Experience Platform. Em seguida, você configurou um fluxo de dados na Rede de borda para garantir que os dados possam ser encaminhados para esse conjunto de dados. Em seguida, você definiu e implantou a tag contendo as extensões (SDK da Web da Adobe Experience Platform, Serviço da Experience Cloud ID), os elementos de dados e as regras para capturar dados do seu site e enviar esses dados para o armazenamento de dados. Você definiu uma conexão no Customer Journey Analytics para usar os dados de rastreamento do site e outros dados. A definição da visualização de dados permite especificar qual dimensão e métricas usar e, por fim, criar seu primeiro projeto visualizando e analisando seus dados.

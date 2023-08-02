@@ -4,10 +4,10 @@ description: Explica como assimilar e usar dados em lote no Customer Journey Ana
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 100%
+source-wordcount: '1953'
+ht-degree: 91%
 
 ---
 
@@ -29,20 +29,20 @@ Para isso, é necessário:
 
 >[!NOTE]
 >
->Este é um guia simplificado sobre como assimilar dados em lote na Adobe Experience Platform e usar no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
+>Este guia de início rápido é um guia simplificado sobre como assimilar dados em lote no Adobe Experience Platform e usar no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
 
 ## Configurar um esquema e um conjunto de dados
 
 Para assimilar dados na Adobe Experience Platform, primeiro defina quais dados deseja coletar. Todos os dados assimilados na Adobe Experience Platform devem estar em conformidade com uma estrutura padrão e desnormalizada para que sejam reconhecidos e utilizados pelos recursos e capacidades downstream. O Experience Data Model (XDM) é a estrutura padrão que fornece essa estrutura no formato de esquemas.
 
-Após definir um esquema, use um ou mais conjuntos de dados para armazenar e gerenciar a coleta de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas).
+Após definir um esquema, use um ou mais conjuntos de dados para armazenar e gerenciar a coleta de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados (normalmente uma tabela) que contém um esquema (colunas) e campos (linhas).
 
 Todos os dados assimilados na Adobe Experience Platform devem estar em conformidade com um esquema predefinido antes que possam ser mantidos como um conjunto de dados.
 
 ### Configurar um esquema
 
 Para esse início rápido, você deseja coletar alguns dados de fidelidade, por exemplo, id de fidelidade, pontos de fidelidade e status de fidelidade.
-Para isso, primeiro defina um esquema que modele esses dados.
+Primeiro, você deve definir um esquema que modele esses dados.
 
 Para configurar o esquema:
 
@@ -89,7 +89,7 @@ Para configurar o esquema:
 
    ![Objeto de identificação](./assets/identifcation-loyalty-field.png)
 
-   Esse objeto adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar as informações de fidelidade usando o endereço de email dos dados em lote.
+   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar as informações de fidelidade usando o endereço de email dos dados em lote.
 
    Selecione **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -123,7 +123,7 @@ Consulte [Criar e editar esquemas na interface do usuário](https://experiencele
 
 ### Configurar um conjunto de dados
 
-Com seu esquema, você definiu seu modelo de dados. Agora é necessário definir a construção para armazenar e gerenciar esses dados. Isso é feito por meio de conjuntos de dados.
+Com seu esquema, você definiu seu modelo de dados. Agora é necessário definir a construção para armazenar e gerenciar esses dados, o que é feito por meio de conjuntos de dados.
 
 Para configurar seu conjunto de dados:
 
@@ -151,7 +151,7 @@ Para configurar seu conjunto de dados:
 
    >[!IMPORTANT]
    >
-   >    Você só pode habilitar um conjunto de dados para perfil quando o esquema, ao qual o conjunto de dados corresponde, também estiver habilitado para perfil.
+   >Você só pode habilitar um conjunto de dados para perfil quando o esquema, ao qual o conjunto de dados corresponde, também estiver habilitado para perfil.
 
    ![Habilitar esquema para perfil](./assets/loyalty-dataset-profile.png)
 
@@ -208,14 +208,19 @@ Para usar workflows:
 
 6. Selecione **[!UICONTROL Concluir]** para começar a assimilar os dados em lote na Adobe Experience Platform.
 
-Consulte [Mapear um arquivo CSV sobre um esquema XDM existente](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=pt-BR) para obter mais informações sobre como mapear dados quando os dados recebidos não forem compatíveis com o esquema XDM. Use modelos de mapeamento e campos calculados para garantir que os dados em lote estão em conformidade com o esquema e muito mais.
+Consulte [Mapear um arquivo CSV em um esquema XDM existente](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=pt-BR) para obter mais informações sobre:
+
+- como mapear dados quando os dados recebidos não são compatíveis com o esquema XDM.
+- usar modelos de mapeamento,
+- usar campos calculados para garantir que seus dados em lote estejam em conformidade com o que o esquema espera,
+- e mais.
 
 
 ## Configurar uma conexão
 
 Para usar os dados da Adobe Experience Platform no Customer Journey Analytics, crie uma conexão que inclua os dados resultantes da configuração do esquema, do conjunto de dados e do fluxo de trabalho.
 
-Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao Espaço de trabalho. Para criar relatórios sobre esses conjuntos de dados, primeiro é necessário estabelecer uma conexão entre os conjuntos de dados na Adobe Experience Platform e no Espaço de trabalho.
+Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao Espaço de trabalho. Para criar relatórios sobre esses conjuntos de dados, primeiro é necessário estabelecer uma conexão entre os conjuntos de dados na Adobe Experience Platform e no Workspace.
 
 Para criar sua conexão:
 
@@ -318,7 +323,7 @@ Para criar o projeto:
 
    ![Visualização de dados de seleção do Espaço de trabalho](./assets/cja-projects-3.png).
 
-5. Comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] para criar seu primeiro relatório. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
+5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas no [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel]. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
 
    ![Espaço de trabalho - Primeiro relatório](./assets/cja-projects-5.png)
 
