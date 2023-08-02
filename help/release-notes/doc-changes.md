@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5e4bf2985a0ec75cc0120e2a9549d720077cd5cc
+source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
 workflow-type: tm+mt
-source-wordcount: '2379'
-ht-degree: 94%
+source-wordcount: '2430'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,9 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 | --- | --- |
-| **Julho de 2023** |
+| **Agosto de 2023** | |
+| Guias de início rápido de assimilação de dados para aplicativos móveis e outras plataformas | Adição de guias de início rápido para assimilação de dados, que descrevem como assimilar e usar dados de aplicativos móveis ou outras plataformas (como aplicativos de desktop, jogos em consoles, aplicativos em decodificadores de sinais e dispositivos de IoT) no Customer Journey Analytics. [Saiba mais](../data-ingestion/data-ingestion.md) |
+| **Julho de 2023** | |
 | Sessões sensíveis ao contexto | Adição de um tópico para esta configuração de visualização de dados. [Saiba mais](/help/data-views/context-aware-sessions.md) |
 | Adobe Product Analytics | O Adobe Product Analytics fornece uma nova maneira de interagir com dados e insights de vários canais no Customer Journey Analytics. Esses novos recursos permitem que as equipes de produtos realizem o autoatendimento de dados e insights sobre sua experiência com produtos por meio do [análise guiada](/help/guided-analysis/overview.md) fluxos de trabalho&#x200B;. |
 | Campos derivados | A [campo derivado](/help/data-views/derived-fields/derived-fields.md) O permite definir manipulações de dados (geralmente complexas) dinamicamente, por meio de um construtor de regras personalizável. |

@@ -4,10 +4,10 @@ description: Entenda as diferentes maneiras de assimilar dados no Customer Journ
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 90%
+source-wordcount: '866'
+ht-degree: 71%
 
 ---
 
@@ -32,7 +32,9 @@ O conjunto de dados na arquitetura acima pode se originar de várias fontes:
 
 - dados de uma implantação atual do Adobe Analytics,
 
-- dados do rastreamento do site/aplicativo móvel usando o SDK da Web/móvel da Adobe Experience Platform ou
+- dados do rastreamento do seu site/aplicativo móvel usando o SDK da Web/móvel da Adobe Experience Platform,
+
+- dados do rastreamento de um aplicativo de desktop, jogo de console, decodificador de sinais ou dispositivo IoT usando a API do servidor de rede de borda da Adobe Experience Platform, ou
 
 - dados provenientes de um provedor de dados de terceiros para o qual a Adobe fornece um conector de origem.
 
@@ -46,11 +48,26 @@ O Adobe Analytics já implantou e deseja assimilar esses dados na Adobe Experien
 
 Consulte [Assimilar e usar dados do Adobe Analytics tradicional](./analytics.md) para obter mais informações.
 
-## Assimilar e usar dados por meio do SDK da Web da Adobe Experience Platform
+
+## Assimilar e use dados pela rede de borda
+
+### Uso do SDK da Web da Adobe Experience Platform
 
 Você deseja analisar seu site com a tecnologia Adobe, migrando potencialmente de outra solução ou começar a rastrear o comportamento de sua pessoa. Você deseja seguir as práticas recomendadas da Adobe para implementação, que usam os SDKs da Adobe Experience Platform e a Rede de borda, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
 
 Consulte [Assimilar e usar dados por meio do SDK da Web da Adobe Experience Platform](./aepwebsdk.md) para obter mais informações.
+
+### Uso do SDK do Adobe Experience Platform Mobile
+
+Você deseja analisar seu aplicativo móvel com a tecnologia Adobe, migrando potencialmente de outra solução ou começando a rastrear o comportamento de uma pessoa no aplicativo do zero. Você deseja seguir as práticas recomendadas da Adobe para implementação, que usam os SDKs da Adobe Experience Platform e a Rede de borda, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
+
+Consulte [Assimilar e usar dados por meio do Adobe Experience Platform Mobile SDK](./aepmobilesdk.md) para obter mais informações.
+
+### Uso da API do servidor de rede de borda da Adobe Experience Platform
+
+Você deseja analisar seu aplicativo de desktop, o jogo conforme é reproduzido em um console de jogos, o uso de um aplicativo de streaming de vídeo em um decodificador de sinais ou seu dispositivo IoT com tecnologia Adobe. Migração potencial de outra solução ou início do rastreamento do comportamento de uma pessoa nesses dispositivos do zero. Você deseja seguir as práticas recomendadas de implementação do Adobe, que é usar as APIs do servidor da rede de borda da Adobe Experience Platform e a rede de borda, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
+
+Consulte [Assimilar e use dados por meio da API do servidor de rede de borda da Adobe Experience Platform](./serverapi.md) para obter mais informações.
 
 ## Assimilar e usar dados em lote
 
