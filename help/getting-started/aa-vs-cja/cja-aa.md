@@ -4,9 +4,9 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 264b5a3d3793ab6531f570d83cbd4fd96bfbd67a
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2089'
 ht-degree: 37%
 
 ---
@@ -55,7 +55,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são suportados, pa
 | Publicação de público-alvo (Publicação de segmento) | Compatível se licenciado com produtos do Customer Data Platform ou Journey Optimizer da Adobe. A [Publicação de público-alvo](/help/components/audiences/audiences-overview.md) envia públicos-alvo para o Perfil do cliente em tempo real na Experience Platform. |
 | Classificações | Agora chamadas de “Conjuntos de dados de pesquisa”. As classificações usadas no Analytics podem ser importadas para o Experience Platform e Customer Journey Analytics usando o Conector de origem de classificações do Analytics. O upload dos conjuntos de dados de pesquisa também pode ser feito diretamente no Experience Platform e disponibilizado no Customer Journey Analytics. |
 | Criador de regras de classificação | Compatível ao usar [substrings](/help/data-views/component-settings/substring.md) em Customer Journey Analytics. Usa manipulações de string de caracteres no momento do relatório em vez de conjuntos de dados de pesquisa. |
-| Sessões personalizadas | Suporte para todos os recursos personalizados de sessão, exceto eventos móveis em segundo plano. |
+| Sessões personalizadas | A sessão personalizada pode ser configurada por meio do [Configurações da sessão](../../data-views/create-dataview.md#session-settings) em uma Visualização de dados. Consulte  [Sessões sensíveis ao contexto](../../data-views/context-aware-sessions.md) para obter mais informações. <br/>A manipulação de eventos móveis em segundo plano é permitida por meio do SDK móvel da Adobe Experience Platform. Consulte [Ciclo de vida da rede de borda](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) para obter mais informações. |
 | Conversão de moeda | Compatível como parte de [formatação de um componente de métrica](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/format.html?lang=en#currency) em uma visualização de dados. |
 | Persistência da variável de merchandising | Suporte completo através de [dimensões de ligação e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension) |
 | Atributos do cliente | Agora chamados de &quot;Conjuntos de dados de perfil&quot;, eles não são importados automaticamente do Experience Cloud, mas devem ser carregados no Experience Platform antes de estarem disponíveis no Customer Journey Analytics. |
