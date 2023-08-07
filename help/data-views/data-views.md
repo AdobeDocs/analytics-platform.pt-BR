@@ -1,13 +1,13 @@
 ---
 title: Visão geral das visualizações de dados
-description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão Customer Journey Analytics, como métricas, dimensões, sessões etc.
+description: Uma visualização de dados especifica como você deseja interpretar elementos dos dados na conexão do Customer Journey Analytics, como métricas, dimensões, sessões etc.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Os projetos do Espaço de trabalho no Customer Journey Analytics são baseados e
 
 ## Recursos de visualizações de dados {#capabilities}
 
-As visualizações de dados permitem que você altere espontaneamente as configurações do elemento de esquema, sem precisar alterar o esquema no Adobe Experience Platform ou reimplementar o ambiente Customer Journey Analytics.
+As visualizações de dados permitem que você altere espontaneamente as configurações dos elementos do esquema, sem ter que alterar o esquema na Adobe Experience Platform ou reimplementar o ambiente do Customer Journey Analytics.
 
 * **Você pode alterar um componente de uma métrica para uma dimensão e vice-versa**. Você pode criar métricas de campos de sequência ou criar dimensões de campos numéricos. Isso facilita a sua vida, pois não é necessário criar um campo numérico no esquema XDM para cada métrica desejada. Em vez disso, você pode criá-lo espontaneamente na caixa de diálogo Visualizações de dados. Veja alguns exemplos:
    * **Crie uma ou mais dimensões de um único campo de esquema**. É uma relação um para muitos. Por exemplo, é possível criar uma ou mais métricas de receita e/ou uma ou mais dimensões de receita de um único campo de esquema.
