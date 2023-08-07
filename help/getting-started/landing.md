@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1514'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ A página de destino do Customer Journey Analytics destaca o [!DNL Analysis Work
 | [!UICONTROL Cartão de pontuação para dispositivos móveis] | Cria um [cartão de pontuação para dispositivos móveis](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=pt-BR) para que você desenvolva e crie. |
 | [!UICONTROL Abrir tutorial de treinamento] | Abre o tutorial de treinamento do Espaço de trabalho que o orienta pelo processo de criação de um novo projeto inicial em um tutorial passo a passo. |
 | [!UICONTROL Abrir notas de versão] | Abre a seção Adobe Analytics das notas de versão mais recentes do Adobe Experience Cloud. |
-| Ícone Filtrar | Filtros por tags, visualizações de dados, proprietários, tipos e outros filtros (Meus, Compartilhados comigo, Favoritos e Aprovados) |
+| Ícone Filtrar | Filtros de tags, visualizações de dados, proprietários, tipos, entre outros (Meus, Compartilhados comigo, Favoritos e Aprovados) |
 | Barra de pesquisa | Pesquisa todas as colunas na tabela. |
 | Caixa de seleção | Seleciona um ou mais projetos para exibir as ações de gerenciamento de projetos que você pode executar: **Excluir**, **Compartilhar**, **Renomear**, **Copiar**, **Remover**, **Mover para cima**, **Mover para baixo**, **Tag**, **Aprovar**, **Exportar CSV** e **Mover para**. Talvez você não tenha permissões para executar todas as ações listadas. |
 | [!UICONTROL Favoritos] | Adiciona uma estrela ao lado de um projeto ou pasta favorita que pode ser usada como filtro. |
@@ -61,7 +61,7 @@ A página de destino do Customer Journey Analytics destaca o [!DNL Analysis Work
 | [!UICONTROL Tipo] | Indica se é um projeto do Espaço de trabalho, um cartão de pontuação para dispositivos móveis ou uma pasta. |
 | [!UICONTROL Tags] | Marque projetos para organizá-los em grupos. |
 | [!UICONTROL Função do projeto] | Identifica as funções do projeto: se você é o proprietário do projeto e se tem permissões para editar ou duplicar o projeto. |
-| [!UICONTROL Visualização de dados] | Identifica as visualizações de dados associadas ao projeto.<br>Tabelas e visualizações em um painel derivam dados da visualizações de dados selecionada na parte superior direita do painel. A visualizações de dados também determina quais componentes estão disponíveis no painel esquerdo. Em um projeto, você pode usar uma ou várias visualizações de dados dependendo dos casos de uso da análise. A lista de visualizações de dados é classificada de acordo com a relevância. O Adobe define a relevância com base na recente e frequente utilização do conjunto pelo usuário atual e na frequência com que o conjunto é usado na organização. |
+| [!UICONTROL Visualização de dados] | Identifica as visualizações de dados associadas ao projeto.<br>Tabelas e visualizações em um painel derivam dados da visualizações de dados selecionada na parte superior direita do painel. A visualização de dados também determina quais componentes estão disponíveis no painel esquerdo. Em um projeto, você pode usar uma ou várias visualizações de dados dependendo dos casos de uso da análise. A lista de visualizações de dados é classificada de acordo com a relevância. A Adobe define a relevância com base no quão recente e frequente é a utilização do conjunto pelo usuário atual e na frequência com que o conjunto é usado na organização. |
 | [!UICONTROL Proprietário] | Identifica a pessoa que criou o projeto. |
 | [!UICONTROL Aberto pela última vez] | Identifica a data em que o projeto foi aberto pela última vez. |
 | Ícone Personalizar tabela | Seleciona quais colunas exibir na tabela. Para adicionar ou remover colunas da lista de projetos, clique no ícone de coluna (![Aterrissando tudo](assets/select-column.png)) no canto superior direito, em seguida, selecione ou desmarque os títulos das colunas. |
@@ -80,27 +80,27 @@ Se você estiver na visualização “Pastas e projetos”, aparecerá uma modal
 
 ![Mudar para a visualização Todos os projetos](assets/switch-all-projects-view.png)
 
-## Use a guia Aprendizado {#navigate-learning}
+## Usar a guia Aprendizagem {#navigate-learning}
 
-A página Aprendizado contém tutoriais em vídeo, tutoriais e links para a documentação.
+A página Aprendizagem contém tours práticos em vídeo, tutoriais e links para a documentação.
 
-Use a página Aprendizado no Customer Journey Analytics para saber:
+Use a página Aprendizagem do Customer Journey Analytics para aprender sobre:
 
 * Recursos e casos de uso iniciantes, intermediários ou avançados no CJA
-* Como fazer a transição mais simples do Adobe Analytics para o CJA
+* Como migrar mais facilmente do Adobe Analytics para o CJA
 
-### Acessar a página Aprendizado
+### Acessar a página Aprendizagem
 
-1. No Customer Journey Analytics, selecione [!UICONTROL **Workspace**] > [!UICONTROL **Aprendizado**].
+1. No Customer Journey Analytics, selecione [!UICONTROL **Espaço de trabalho**] > [!UICONTROL **Aprendizagem**].
 
-### Recursos da página de aprendizado
+### Recursos da página Aprendizagem
 
-* **Filtrar conteúdo:** O ícone Filtrar no painel à esquerda permite filtrar o conteúdo de aprendizagem por nível de experiência (Iniciante, Intermediário ou Avançado) e por tipo de conteúdo (Documento, Vídeo ou Tours e tutoriais).
-* **Rastrear progresso:** Depois de selecionar um conteúdo, uma **[!UICONTROL Exibido]** é exibida. Essa tag ajuda a rastrear o progresso pelo conteúdo de aprendizagem. É possível selecionar a variável **[!UICONTROL Exibido]** para removê-lo de um conteúdo.
-* **Exibir conteúdo adicional:** Ao visualizar qualquer vídeo, selecione a opção **[!UICONTROL Saiba mais]** botão para ver o conteúdo relacionado à documentação no Experience League. Ou, na página Aprendizado, selecione uma das seguintes opções para exibir conteúdo adicional:
-   * **[!UICONTROL Visitar o YouTube]:** Veja a lista de reprodução completa do Analysis Workspace YouTube.
-   * [!UICONTROL **Visitar Experience League**]: visualize o conjunto completo de documentação do CJA no Experience League.
-* **Princípios básicos para novos usuários:** A variável [!UICONTROL Fundamentos do Workspace] é recomendado para novos usuários. Este tour leva você diretamente para o Espaço de trabalho e o orienta pelas ações mais comuns. Esse tour também pode ser reiniciado a qualquer momento no Workspace por meio do pop-over da dica de ferramenta do cabeçalho do painel.
+* **Filtrar conteúdo:** o ícone Filtrar no painel à esquerda permite filtrar o conteúdo de aprendizagem por nível de experiência (iniciante, intermediário ou avançado) e por tipo de conteúdo (documento, vídeo ou tours e tutoriais).
+* **Rastrear progresso:** após selecionar um conteúdo, uma tag **[!UICONTROL Visualizado]** é exibida. Essa tag ajuda a rastrear o progresso pelo conteúdo de aprendizagem. É possível selecionar a tag **[!UICONTROL Visualizado]** e removê-la de um conteúdo.
+* **Exibir conteúdo adicional:** ao visualizar qualquer vídeo, selecione **[!UICONTROL Saiba mais]** para ver a documentação relacionada na Experience League. Ou, na página Aprendizagem, selecione uma das seguintes opções para exibir o conteúdo adicional:
+   * **[!UICONTROL Visitar o YouTube]:** veja a lista de reprodução completa do Analysis Workspace no YouTube.
+   * [!UICONTROL **Visitar a Experience League**]: veja o conjunto completo de documentações do CJA na Experience League.
+* **Conceitos básicos para novos usuários:** o tour [!UICONTROL Conceitos básicos do espaço de trabalho] é recomendado para novos usuários. Esse tour leva você diretamente ao espaço de trabalho e explica sobre as ações mais comuns. Esse tour também pode ser reiniciado a qualquer momento diretamente do espaço de trabalho por meio da dica de ferramenta do cabeçalho do painel.
 
 ## Definir sua página de destino {#set-landing}
 
