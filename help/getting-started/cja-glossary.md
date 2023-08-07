@@ -5,9 +5,9 @@ exl-id: 7f8aac93-0103-4ead-b25b-3d9994a271af
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Alguns termos do Customer Journey Analytics diferem de como eles têm sido usado
 | Organização da Experience Cloud | Empresa de logon | Consulte [Organizações e vinculação de contas](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=pt-BR#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | N/D | Conjunto de relatórios | Os conjuntos de relatórios no sentido tradicional do Adobe Analytics não existem mais. Em vez disso, você cria [visualizações de dados](/help/data-views/create-dataview.md) (virtuais) a partir dos conjuntos de dados da Plataform aos quais você estabeleceu conexões. |
 | Filtro | Segmento | Segmentos agora são filtros. Os filtros no Customer Journey Analytics se comportam da mesma forma que os segmentos. Somente a terminologia mudou. |
-| Visualização de dados | Conjunto de relatórios virtual | No Adobe Analytics, um conjunto de relatórios virtual é uma exibição filtrada de um conjunto de relatórios principal. A principal diferença entre um conjunto de relatórios virtual e uma visualização de dados no Customer Journey Analytics é que o conjunto de relatórios virtual é um subconjunto de um conjunto de relatórios &quot;base&quot; ou &quot;principal&quot; e, como tal, herda algumas de suas configurações. Como os conjuntos de relatórios principal/base não existem mais, você define visualizações de dados com suas próprias configurações. |
+| Visualização de dados | Conjunto de relatórios virtual | No Adobe Analytics, um conjunto de relatórios virtual é uma exibição filtrada de um conjunto de relatórios principal. A principal diferença entre um conjunto de relatórios virtual e uma visualização de dados no Customer Journey Analytics é que o conjunto de relatórios virtual é um subconjunto de um conjunto de relatórios “base” ou “principal” e, como tal, herda algumas de suas configurações. Como os conjuntos de relatórios principal/base não existem mais, você define visualizações de dados com suas próprias configurações. |
 
 ## Glossário da Adobe Experience Platform
 
