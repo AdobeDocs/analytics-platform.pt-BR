@@ -7,9 +7,9 @@ feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 89%
 
 A Cross-Channel Analytics faz duas passagens de dados em uma determinada conexão:
 
-* **compilação em tempo real**: a AVC tenta compilar cada evento à medida que ele chega. Os novos dispositivos de rede para o conjunto de dados que nunca se conectaram normalmente não são compilados neste nível. Os dispositivos já reconhecidos são imediatamente compilados.
+* **Compilação em tempo real**: o CCA tenta compilar cada evento assim que eles chegam. Os novos dispositivos de rede para o conjunto de dados que nunca se conectaram normalmente não são compilados neste nível. Os dispositivos já reconhecidos são imediatamente compilados.
 * **Repetição**: a CCA “repete” dados com base em identificadores exclusivos que ele aprendeu. É nesse estágio que os novos dispositivos da conexão são compilados. A Adobe oferece dois intervalos de repetição:
-   * Diariamente: os dados são repetidos todos os dias com uma janela de retrospectiva de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas as pessoas não autenticadas devem se autenticar no mesmo dia em que visitam o site.
+   * Diariamente: os dados são repetidos todos os dias com uma janela de retrospectiva de 24 horas. Essa opção tem a vantagem das repetições serem muito mais frequentes, mas as pessoas não autenticadas devem se autenticar no mesmo dia em que visitam o site.
    * Semanalmente: os dados são repetidos uma vez por semana com uma janela de retrospectiva de sete dias. Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, dados com menos de uma semana não são compilados.
 
-Os dados além da janela de pesquisa não são repetidos. Uma pessoa deve se autenticar em uma determinada janela de pesquisa para que uma visita não autenticada e uma visita autenticada sejam identificadas juntas. Depois que um dispositivo é reconhecido, ele é compilado em tempo real a partir desse ponto.
+Os dados além da janela de pesquisa não são repetidos. Uma pessoa deve se autenticar em uma determinada janela de retrospectiva para que uma visita não autenticada e uma visita autenticada sejam identificadas em conjunto. Depois que um dispositivo é reconhecido, ele é compilado em tempo real a partir desse ponto.
 
 ## Etapa 1: compilação em tempo real
 
