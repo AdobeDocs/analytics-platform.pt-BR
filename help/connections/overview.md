@@ -1,13 +1,13 @@
 ---
-title: Visão geral de Conexões Customer Journey Analytics
+title: Visão geral das conexões do Customer Journey Analytics
 description: Saiba mais sobre conexões no Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '108'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Veja um vídeo com uma visão geral:
 
 ## Permissões necessárias
 
-Para criar uma conexão Customer Journey Analytics, você precisa das seguintes permissões no [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+Para criar uma conexão do Customer Journey Analytics, você precisa das seguintes permissões no [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
 
 Adobe Experience Platform:
 * Modelagem de dados: Exibir esquemas, Gerenciar esquemas
