@@ -4,21 +4,21 @@ description: Saiba como o conector de origem do Analytics lida com campos de ide
 exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
 source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # AAID, ECID, AACUSTOMID e o conector de origem do Analytics
 
-Os dados do Adobe Analytics contêm vários campos de identidade. Três importantes campos de identidade recebem tratamento especial pela [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR): AAID, ECID, AACUSTOMID.
+Os dados do Adobe Analytics contêm vários campos de identidade. Três importantes campos de identidade recebem um tratamento especial do [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR): AAID, ECID e AACUSTOMID.
 
 ## AAID
 
-A Adobe Analytics ID (AAID) é o principal identificador de dispositivo no Adobe Analytics e sua presença está garantida em cada evento transmitido pelo conector de origem do Analytics. Às vezes, a AAID é chamada de “ID do Analytics legada” ou id do cookie `s_vi`. No entanto, uma AAID é criada mesmo se o cookie `s_vi` não está presente. A AAID é representada pelas colunas `post_visid_high/post_visid_low` em [Feeds de dados do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR#columns%2C-descriptions%2C-and-data-types).
+A ID do Adobe Analytics (AAID) é o principal identificador de dispositivo no Adobe Analytics e sua presença está garantida em cada evento transmitido pelo conector de origem do Analytics. Às vezes, a AAID é chamada de “ID do Analytics legada” ou id do cookie `s_vi`. No entanto, uma AAID é criada mesmo se o cookie `s_vi` não está presente. A AAID é representada pelas colunas `post_visid_high/post_visid_low` em [Feeds de dados do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR#columns%2C-descriptions%2C-and-data-types).
 
-No conector de origem do Analytics, a AAID é transformada em `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. O campo AAID em um determinado evento contém uma única identidade que pode ser um dos vários tipos diferentes, conforme descrito em [Ordem de operação das IDs do Analytics](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=pt-BR%5B%5D). (Em um conjunto de relatórios inteiro, a AAID pode conter uma combinação de tipos entre eventos. O tipo para cada evento é indicado na variável `post_visid_type` nos feeds de dados do Analytics.) Consulte também: [Referência da coluna de dados](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR).
+No conector de origem do Analytics, a AAID é transformada em `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. O campo AAID em um determinado evento contém uma única identidade que pode ser um dos vários tipos diferentes, conforme descrito em [Ordem de operação das IDs do Analytics](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=pt-BR%5B%5D). (Em um conjunto de relatórios inteiro, a AAID pode conter uma combinação de tipos entre eventos. O tipo de cada evento é indicado na coluna `post_visid_type` dos feeds de dados do Analytics.) Consulte também: [Referência da coluna de dados](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR).
 
 ## ECID
 
@@ -32,7 +32,7 @@ AACUSTOMID é um campo de identificador separado, preenchido no Adobe Analytics 
 
 ## Como o conector de origem do Analytics trata essas identidades
 
-O conector de origem do Analytics transmite essas identidades para o Adobe Experience Platform no formato XDM como:
+O conector de origem do Analytics transmite essas identidades para a Adobe Experience Platform no formato XDM, visto que:
 
 * `endUserIDs._experience.aaid.id`
 * `endUserIDs._experience.mcid.id`
@@ -54,4 +54,4 @@ Caso contrário, a AAID é marcada como a identidade principal do evento.
 
 ## Customer Journey Analytics e ID primária
 
-No que diz respeito ao Customer Journey Analytics, a definição de ID principal só é importante se você decidir usar a ID principal como a ID de pessoa. Mas não é obrigatório fazer isso. Você pode escolher alguma outra coluna de identidade como a ID de pessoa.
+No que diz respeito ao Customer Journey Analytics, a definição da ID primária só é importante se você decidir usá-la como a ID de pessoa. Mas não é obrigatório fazer isso. Você pode escolher alguma outra coluna de identidade como a ID de pessoa.
