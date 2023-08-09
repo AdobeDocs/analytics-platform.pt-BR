@@ -1,56 +1,40 @@
 ---
-title: Dimensões com cardinalidade muito alta no Customer Journey Analytics
-description: Descreve as práticas recomendadas para lidar com dimensões de alta cardinalidade no Customer Journey Analytics
+title: Dimensões de alta cardinalidade
+description: Explica como o Customer Journey Analytics lida com dimensões com muitos valores únicos
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 88%
+source-wordcount: '514'
+ht-degree: 7%
 
 ---
 
-# Dimensões com cardinalidade muito alta
+# Dimensões de alta cardinalidade
 
-O Customer Journey Analytics (Customer Journey Analytics) não impõe limites ao número de valores únicos ou itens de dimensão que podem ser relatados em uma única dimensão. No entanto, em algumas circunstâncias, dimensões com um número extremamente grande de itens únicos, também conhecidas como dimensões de alta cardinalidade, podem afetar o que pode ser relatado.
+Ao usar uma dimensão que contém muitos valores únicos, o relatório resultante pode conter muitos itens de dimensão únicos para exibir ou calcular. Os resultados são truncados com a remoção dos itens de dimensão considerados menos importantes. Essas otimizações são feitas para manter o desempenho do projeto e do produto.
 
-## Limitações
+Quando você solicita um relatório com muitos valores únicos, o Analysis Workspace mostra um indicador no cabeçalho da dimensão informando que nem todos os itens de dimensão estão incluídos. Por exemplo, &quot;Linhas: 1-50 de mais de 22.343.156&quot;. A palavra-chave &quot;mais de&quot; indica que alguma otimização foi aplicada ao relatório para retornar os itens de dimensão mais importantes.
 
-Dependendo do número de eventos em uma conexão Customer Journey Analytics específica, as duas seguintes limitações podem ocorrer juntamente com dimensões de alta cardinalidade:
+![Visualização do Workspace](assets/high-cardinality.png)
 
-### 1. As contagens de linhas podem não ser relatáveis com precisão
+## Determinar quais itens de dimensão exibir
 
-As contagens de linhas em dimensões de alta cardinalidade podem não ser relatáveis com precisão. Quando isso acontecer, as tabelas de forma livre fornecerão uma indicação, conforme mostrado abaixo:
+O Customer Journey Analytics processa relatórios no momento em que são executados, distribuindo o conjunto de dados combinado a vários servidores. Os dados por servidor de processamento são agrupados pela ID de pessoa, o que significa que um único servidor de processamento contém todos os dados de uma determinada pessoa. Depois que um servidor termina o processamento, ele entrega seu subconjunto de dados processados a um servidor agregador. Todos os subconjuntos de dados processados são combinados e retornados no formato de um relatório do Workspace.
 
-![](assets/high-cardinality.png)
+Se qualquer servidor individual processar dados que excedam um limite exclusivo, ele truncará os resultados antes de retornar o subconjunto de dados processado. Os itens de dimensão truncados são determinados com base na métrica usada para classificação.
 
-### 2. As Métricas calculadas podem usar estimativas para algumas funções e para a ordem de classificação
+Se a métrica de classificação for uma métrica calculada, o servidor utilizará as métricas contidas na métrica calculada para determinar quais itens de dimensão serão truncados. Como as métricas calculadas podem conter várias métricas de importância variável, os resultados podem ser menos precisos. Por exemplo, ao calcular &quot;Receita por pessoa&quot;, o valor total da receita e o número total de pessoas são retornados e agregados antes de fazer a divisão. Como resultado, cada servidor de processamento individual escolhe quais itens serão removidos sem saber como seus resultados afetam a classificação geral.
 
-Quando usadas com dimensões de alta cardinalidade, algumas funções de Métrica calculada podem retornar estimativas, incluindo: Máximo da coluna, Mínimo da coluna, Contagem de linhas, Média, Mediana, Percentual, Quartil, Desvio padrão, Variação, Funções de regressão e Funções T e Z.
+Embora alguns itens de dimensão individuais possam estar ausentes nos relatórios de alta cardinalidade, os totais da coluna são precisos e não se baseiam em dados truncados. A função &quot;Contagem distinta&quot; nas métricas calculadas também não é afetada por itens de dimensão truncados.
 
-Além disso, a classificação de uma coluna de tabela usando uma métrica calculada pode ser baseada em uma estimativa e nem sempre refletir a ordem de classificação exata. Uma mensagem de aviso será exibida para avisá-lo de que estimativas podem ter sido usadas.
+## Práticas recomendadas para dimensões de alta cardinalidade
 
-Esteja ciente de que, embora as métricas calculadas possam, às vezes, retornar estimativas, os totais da coluna são sempre precisos e nunca se baseiam em estimativas. Da mesma forma, ao usar métricas padrão, estimativas nunca são usadas e sempre são refletidas ordens de classificação exatas.
+A melhor maneira de acomodar dimensões de alta cardinalidade é limitar o número de itens de dimensão que um relatório processa. Como todos os relatórios são processados no momento em que são solicitados, você pode ajustar os parâmetros do relatório para resultados imediatos. A Adobe recomenda qualquer uma das seguintes otimizações para dimensões de alta cardinalidade:
 
-### Onde todos os valores de dimensão são considerados
-
-Embora haja limitações para algumas métricas calculadas e contagens de linhas de dimensão, esteja ciente de que os recursos a seguir sempre consideram todos os valores únicos em qualquer dimensão, independentemente de uma dimensão ter alta cardinalidade ou não:
-
-* Atribuição de métrica e alocação de dimensão
-* Pesquisas de item de linha aplicadas a uma tabela de forma livre
-* Filtros que usam dimensões ou itens de dimensão
-* A função distinta da contagem aproximada nas Métricas calculadas
-* Incluir/excluir lógica aplicada a qualquer métrica ou dimensão em uma Visualização de dados
-* Conjuntos de dados de pesquisa adicionados a uma Conexão
-
-## Práticas recomendadas para trabalhar com dimensões de alta cardinalidade
-
-Para eliminar os avisos ou estimativas que podem ocorrer ao usar dimensões de alta cardinalidade, recomendamos que você reduza o número de linhas consideradas no seu relatório usando um dos seguintes métodos:
-
-* Adicione um filtro à coluna ou ao painel afetado.
-* Aplique uma pesquisa à tabela de forma livre.
-* Aplique um detalhamento às linhas de interesse ou use a dimensão de alta cardinalidade como uma dimensão de detalhamento.
-* Adicione critérios de inclusão/exclusão à configuração da Visualização de dados da dimensão para restringir o número de valores únicos presentes na dimensão.
-
-O uso dessas técnicas geralmente pode eliminar quaisquer estimativas ou avisos indesejáveis ao usar dimensões de alta cardinalidade.
+* Use um [Filtro](/help/components/filters/create-filters.md). Os filtros são aplicados no momento em que cada servidor processa um subconjunto de dados.
+* Use uma pesquisa. Os itens de Dimension excluídos do termo de pesquisa são removidos dos resultados do relatório, tornando mais provável que você veja os itens de dimensão desejados.
+* Use uma dimensão de conjunto de dados de pesquisa. As dimensões do conjunto de dados de pesquisa combinam itens de dimensão do conjunto de dados do evento, que limitam o número de valores únicos retornados.
+* Use o [Incluir/excluir](/help/data-views/component-settings/include-exclude-values.md) configuração de componente no gerenciador de visualizações de dados.
+* Diminua o intervalo de datas da solicitação. Se muitos valores únicos se acumularem ao longo do tempo, a redução do intervalo de datas do relatório do Workspace pode limitar o número de valores únicos a serem processados pelos servidores.
