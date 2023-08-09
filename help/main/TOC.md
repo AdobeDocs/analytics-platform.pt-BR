@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 82%
+source-wordcount: '974'
+ht-degree: 86%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 82%
       + [Utilizar os dados do Adobe Analytics no Customer Journey Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
       + [Suporte a recursos do Customer Journey Analytics](../getting-started/aa-vs-cja/cja-aa.md)
       + [Comparar terminologia de dados do Analytics transmitidos pelo conector de origem do Analytics](../getting-started/aa-vs-cja/terminology.md)
-      + [Comparar o processamento de dados entre o Adobe Analytics e o Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
+      + [Compare o processamento de dados do Adobe Analytics e do Customer Journey Analytics](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Ambientes de relatórios virtuais e sandbox](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
       + [Regras de processamento, VISTA e classificações em relação ao Preparo de dados](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [AAID, ECID, AACUSTOMID e o conector de origem do Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
@@ -332,9 +332,10 @@ ht-degree: 82%
    + [Guia do usuário do Labs](../labs/labs.md)
 
 + Solução de problemas {#troubleshooting}
-   + [Comparar os dados do Adobe Analytics com os dados de Customer Journey Analytics](../troubleshooting/compare.md)
+   + [Comparar os dados do Adobe Analytics com os dados do Customer Journey Analytics](../troubleshooting/compare.md)
    + [Consistência de métricas e contagens de associação de público na Real-time CDP e no Customer Journey Analytics](../troubleshooting/consistency-rcdp-cja.md)
+   + [Falta de permissões](../troubleshooting/lack-of-permissions.md)
 
 + [Glossário do Customer Journey Analytics](../getting-started/cja-glossary.md)
 
-+ [API CUSTOMER JOURNEY ANALYTICS](https://developer.adobe.com/cja-apis/docs/)
++ [API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/)
