@@ -3,15 +3,15 @@ title: Visão geral da Análise de vários canais
 description: Rechavear a ID de pessoa de vários conjuntos de dados para compilar um conjunto de pessoas.
 exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
-feature: Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: ca037fa439a6a94ca071c610089a3ad931cc921d
+source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 100%
 
 ---
+
 
 # Visão geral da Análise de vários canais
 
