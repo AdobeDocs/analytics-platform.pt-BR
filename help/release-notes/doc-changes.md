@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: a08a237eadc3408e170d4a8b5a3e6d451c15efee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2485'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,16 +20,16 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Agosto de 2023** | |
-| Suporte a recursos do Adobe Customer Journey Analytics | Foram adicionadas mais informações no *Compatível de uma nova maneira* tabela sobre os recursos de sessão no Customer Journey Analytics em comparação ao Adobe Analytics. [Saiba mais](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
-| Evolução a partir do Adobe Analytics | Atualização do *(Re)Configurar Canais De Marketing* com uma referência ao template de função Derived fields Marketing channels. [Saiba mais](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
+| Compatibilidade com recursos do Adobe Customer Journey Analytics | Foram adicionadas mais informações na tabela *Compatível de uma nova maneira* sobre os recursos de sessão no Customer Journey Analytics em comparação ao Adobe Analytics. [Saiba mais](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
+| Evolução a partir do Adobe Analytics | Atualização da seção *(Re)configurar canais de marketing* com uma referência ao modelo de função Canais de marketing de campos derivados. [Saiba mais](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Guias de início rápido de assimilação de dados para aplicativos móveis e outras plataformas | Adição de guias de início rápido para assimilação de dados, que descrevem como assimilar e usar dados de aplicativos móveis ou outras plataformas (como aplicativos de desktop, jogos em consoles, aplicativos em decodificadores de sinais e dispositivos de IoT) no Customer Journey Analytics. [Saiba mais](../data-ingestion/data-ingestion.md) |
 | **Julho de 2023** | |
-| Sessões sensíveis ao contexto | Adição de um tópico para esta configuração de visualização de dados. [Saiba mais](/help/data-views/context-aware-sessions.md) |
-| Adobe Product Analytics | O Adobe Product Analytics fornece uma nova maneira de interagir com dados e insights de vários canais no Customer Journey Analytics. Esses novos recursos permitem que as equipes de produtos realizem o autoatendimento de dados e insights sobre sua experiência com produtos por meio do [análise guiada](/help/guided-analysis/overview.md) fluxos de trabalho&#x200B;. |
-| Campos derivados | A [campo derivado](/help/data-views/derived-fields/derived-fields.md) O permite definir manipulações de dados (geralmente complexas) dinamicamente, por meio de um construtor de regras personalizável. |
-| Compatibilidade de pesquisa expandida para dados de perfil e pesquisa | Fornece a capacidade de adicionar conjuntos de dados como pesquisas de campos nos conjuntos de dados de perfil ou pesquisa. Anteriormente, somente os conjuntos de dados de eventos eram compatíveis. [Saiba mais](/help/connections/create-connection.md) |
-| Aprimoramentos do Report Builder | <ul><li>[Opção de filtrar da célula para vários blocos de dados](/help/report-builder/select-data-view.md)</li><li>[Mostrar e ocultar cabeçalhos de linha e coluna](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=pt-BR#criar-o-bloco-de-dados)</li></ul> |
-| Pesquisas geográficas do Experience Edge | [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=pt-BR) O está adicionando um serviço de pesquisa geográfica que fornece dados geográficos unificados para todos os usuários do Experience Edge. |
+| Sessões com reconhecimento de contexto | Adição de um tópico para esta configuração de visualização de dados. [Saiba mais](/help/data-views/context-aware-sessions.md) |
+| Adobe Product Analytics | O Adobe Product Analytics fornece uma nova maneira de interagir com dados e insights de vários canais no Customer Journey Analytics. Esses novos recursos permitem que as equipes de produtos utilizem o autoatendimento de dados e insights sobre a experiência do produto por meio de fluxos de trabalho de [análise guiada](/help/guided-analysis/overview.md). |
+| Campos derivados | Um [campo derivado](/help/data-views/derived-fields/derived-fields.md) permite definir manipulações de dados (muitas vezes complexas) a qualquer momento, por meio de um construtor de regras personalizável. |
+| A compatibilidade de pesquisa foi expandida para dados de perfil e pesquisa | Fornece a capacidade de adicionar conjuntos de dados como pesquisas de campos nos conjuntos de dados de perfil ou pesquisa. Anteriormente, somente os conjuntos de dados de eventos eram compatíveis. [Saiba mais](/help/connections/create-connection.md) |
+| Aprimoramentos do Report Builder | <ul><li>[Filtrar a partir da célula para vários blocos de dados](/help/report-builder/select-data-view.md)</li><li>[Mostrar e ocultar cabeçalhos de linha e de coluna](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=pt-BR#criar-o-bloco-de-dados)</li></ul> |
+| Pesquisas geográficas do Experience Edge | O [Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=pt-BR) está adicionando um serviço de pesquisa geográfica que fornece dados geográficos unificados para todos os usuários do Experience Edge. |
 | **Junho de 2023** | |
 | Análise de vários canais e compilação | Em antecipação às próximas alterações que habilitarão a compilação e para esclarecer ainda mais como a análise de vários canais pode ser elevada usando a compilação, a documentação relacionada a esta funcionalidade foi editada para se referir à [análise de vários canais](../use-cases/cross-channel/cross-channel.md) como um recurso e caso de uso do Customer Journey Analytics e à [compilação](../stitching/overview.md) como uma funcionalidade importante para alcançar esse objetivo. |
 | Acesso do Power BI e do Tableau às visualizações de dados do Customer Journey Analytics | O conector SQL do Customer Journey Analytics habilita o acesso SQL a visualizações de dados definidas no Customer Journey Analytics. [Saiba mais](/help/data-views/sql-connector.md) |
