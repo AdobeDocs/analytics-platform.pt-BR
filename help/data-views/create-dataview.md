@@ -7,7 +7,7 @@ feature: Data Views
 source-git-commit: 543ca5bf2513e09f9875a7a0826ad770e26d2cca
 workflow-type: tm+mt
 source-wordcount: '1418'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -136,6 +136,6 @@ Você pode filtrar ![Ícone de filtro](https://spectrum.adobe.com/static/icons/w
 
 ### Configurações da sessão
 
-Determine o período de inatividade entre eventos antes de uma sessão expirar e um novo ser iniciado. É necessário um período de tempo. Ou também é possível forçar o início de uma nova sessão quando um evento contém uma determinada métrica. Consulte [Sessões sensíveis ao contexto](context-aware-sessions.md) para obter mais detalhes.
+Determine o período de inatividade entre eventos antes de uma sessão expirar e um novo ser iniciado. É necessário um período. Ou também é possível forçar o início de uma nova sessão quando um evento contém uma determinada métrica. Consulte [Sessões com reconhecimento de contexto](context-aware-sessions.md) para obter mais detalhes.
 
 Depois que todas as configurações desejadas forem especificadas, clique em **[!UICONTROL Salvar e concluir]**.
