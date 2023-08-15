@@ -1,5 +1,5 @@
 ---
-source-git-commit: 497334bdd0324e5b3955be79029079af88ca56e2
+source-git-commit: fb624689c91bfa25f9676a5823b800d918e24e18
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 64%
@@ -23,7 +23,7 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->Você deve ter o **Selecionar** para usar a funcionalidade descrita neste artigo. Entre em contato com o administrador se não tiver certeza do pacote de Customer Journey Analytics que possui.
+>Você deve ter o **Selecionar** para usar a funcionalidade descrita nesta seção. Entre em contato com o administrador se não tiver certeza do pacote de Customer Journey Analytics que possui.
 
 
 ## Critérios de filtro do dicionário de dados {#dd-filter-criteria}
