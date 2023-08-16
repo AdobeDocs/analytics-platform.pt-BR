@@ -4,9 +4,9 @@ description: Descreve como criar uma conexão com um conjunto de dados da Plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
-workflow-type: ht
-source-wordcount: '2629'
+source-git-commit: cc12f77d3a0cb9b27a5d0c6a92c35faf2b6e6e35
+workflow-type: tm+mt
+source-wordcount: '2630'
 ht-degree: 100%
 
 ---
@@ -23,9 +23,9 @@ A experiência de criação de conexão e edição de fluxo de trabalho traz tod
 
 >[!VIDEO](https://video.tv.adobe.com/v/343044/?quality=12&learn=on)
 
->[!IMPORTANT]
->
->Você deve ter o pacote **Select** para adicionar um número ilimitado de conjuntos de dados a uma conexão. O pacote **Foundation** é limitado a um conjunto de dados. Entre em contato com a equipe de administração se não tiver certeza do pacote do Customer Journey Analytics que possui.
+## Pré-requisitos 
+
+Você deve ter o pacote **Select** para adicionar um número ilimitado de conjuntos de dados a uma conexão. O pacote **Foundation** é limitado a um conjunto de dados. Entre em contato com a equipe de administração se não tiver certeza do pacote do Customer Journey Analytics que possui.
 
 ## Criar e configurar a conexão {#create-connection}
 
