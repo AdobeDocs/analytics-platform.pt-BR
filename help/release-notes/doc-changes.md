@@ -4,8 +4,8 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a08a237eadc3408e170d4a8b5a3e6d451c15efee
-workflow-type: ht
+source-git-commit: 27214e6fc896243c0d29632cb0242b0d2e4f4653
+workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Evolução a partir do Adobe Analytics | Atualização da seção *(Re)configurar canais de marketing* com uma referência ao modelo de função Canais de marketing de campos derivados. [Saiba mais](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Guias de início rápido de assimilação de dados para aplicativos móveis e outras plataformas | Adição de guias de início rápido para assimilação de dados, que descrevem como assimilar e usar dados de aplicativos móveis ou outras plataformas (como aplicativos de desktop, jogos em consoles, aplicativos em decodificadores de sinais e dispositivos de IoT) no Customer Journey Analytics. [Saiba mais](../data-ingestion/data-ingestion.md) |
 | **Julho de 2023** | |
-| Sessões com reconhecimento de contexto | Adição de um tópico para esta configuração de visualização de dados. [Saiba mais](/help/data-views/context-aware-sessions.md) |
+| Configurações da sessão | Adição de um tópico para esta configuração de visualização de dados. [Saiba mais](/help/data-views/session-settings.md) |
 | Adobe Product Analytics | O Adobe Product Analytics fornece uma nova maneira de interagir com dados e insights de vários canais no Customer Journey Analytics. Esses novos recursos permitem que as equipes de produtos utilizem o autoatendimento de dados e insights sobre a experiência do produto por meio de fluxos de trabalho de [análise guiada](/help/guided-analysis/overview.md). |
 | Campos derivados | Um [campo derivado](/help/data-views/derived-fields/derived-fields.md) permite definir manipulações de dados (muitas vezes complexas) a qualquer momento, por meio de um construtor de regras personalizável. |
 | A compatibilidade de pesquisa foi expandida para dados de perfil e pesquisa | Fornece a capacidade de adicionar conjuntos de dados como pesquisas de campos nos conjuntos de dados de perfil ou pesquisa. Anteriormente, somente os conjuntos de dados de eventos eram compatíveis. [Saiba mais](/help/connections/create-connection.md) |
@@ -58,7 +58,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Criar histórias de dados em cartões de pontuação móveis | Uma [história de dados](/help/mobile-app/create-scorecard.md#create-data-stories) é uma coleção de pontos de dados de suporte, contexto comercial e métricas relacionadas com base em um tema ou métrica central. |
 | Compatibilidade de recursos atualizada | Atualização do [suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) com uma tabela de recursos disponíveis no Customer Journey Analytics, mas não disponíveis ou compatíveis com o AA. |
 | Métricas calculadas padrão | Adição de conteúdo explicando as [métricas calculadas padrão fornecidas pela Adobe](/help/components/calc-metrics/default-calcmetrics.md). |
-| Dicionário de dados | <p>Adição de uma nova documentação para o Dicionário de dados, incluindo uma [Visão geral](/help/components/data-dictionary/data-dictionary-overview.md), [Exibição](/help/components/data-dictionary/view-data-dictionary.md), [Edição](/help/components/data-dictionary/edit-entries-data-dictionary.md)e [Monitoramento](/help/components/data-dictionary/monitor-data-dictionary-health.md) do Dicionário de dados.</p><p>As informações sobre [Adição de descrições de componentes](/help/components/add-component-descriptions.md) foram atualizadas para considerar a funcionalidade do Dicionário de dados.</p> |
+| Dicionário de dados | <p>Adição de uma nova documentação para o Dicionário de dados, incluindo uma [Visão geral](/help/components/data-dictionary/data-dictionary-overview.md), [Exibição](/help/components/data-dictionary/view-data-dictionary.md), [Edição](/help/components/data-dictionary/edit-entries-data-dictionary.md) e [Monitoramento](/help/components/data-dictionary/monitor-data-dictionary-health.md) do Dicionário de dados.</p><p>As informações sobre [Adição de descrições de componentes](/help/components/add-component-descriptions.md) foram atualizadas para considerar a funcionalidade do Dicionário de dados.</p> |
 | Compartilhamento de links para projetos (sem necessidade de logon) | <p>Atualização da documentação existente para explicar como compartilhar um link de somente leitura de um projeto com pessoas que não têm acesso ao Analysis Workspace.</p> <p>A documentação do usuário atualizada inclui [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md) e [Criar links compartilháveis](/help/analysis-workspace/curate-share/shareable-links.md).</p> <p>As opções para administradores foram adicionadas a [Preferências](/help/analysis-workspace/user-preferences.md).</p> |
 | **Fevereiro de 2023** | |
 | Comparar soluções do Customer Journey Analytics às soluções de BI | Novo documento que apresenta uma [comparação](../getting-started/cja-vs-bi.md) do Customer Journey Analytics com soluções típicas de BI. |
