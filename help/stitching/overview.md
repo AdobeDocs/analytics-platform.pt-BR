@@ -3,7 +3,7 @@ title: Visão geral da compilação
 description: Visão geral da compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 26%
@@ -24,6 +24,8 @@ Você se beneficia da análise entre canais se combinar um ou mais conjuntos de 
 
 
 ## Pré-requisitos 
+
+{{select-package}}
 
 >[!IMPORTANT]
 >

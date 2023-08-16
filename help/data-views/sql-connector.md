@@ -5,9 +5,8 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 hide: true
 hidefromtoc: true
-badgeCJASQLConnector: label="New Feature" type="Positive"
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '2938'
 ht-degree: 1%
@@ -17,6 +16,8 @@ ht-degree: 1%
 # Conector SQL
 
 {{release-limited-testing}}
+
+{{select-package}}
 
 A variável [!DNL Customer Journey Analytics SQL Connector] habilita o acesso SQL ao [visualizações de dados](./data-views.md) que você definiu no Customer Journey Analytics. Seus engenheiros de dados e analistas podem estar mais familiarizados com o Power BI, o Tableau ou outras ferramentas de business intelligence e visualização (mais conhecidas como ferramentas de BI). Agora é possível criar relatórios e painéis com base nas mesmas visualizações de dados que os usuários do Customer Journey Analytics estão usando ao criar seus projetos do Analysis Workspace.
 
@@ -99,13 +100,13 @@ Atualmente, o Customer Journey Analytics SQL Connector é compatível e testado 
 
    2. Selecionar **[!UICONTROL ** Credenciais **]** na barra superior.
 
-   3. Uso ![Copiar](assets/Smock_Copy_18_N.svg) para copiar cada um dos parâmetros de credenciais do Postgres ([!UICONTROL Host], [!UICONTROL Porta], [!UICONTROL Banco de dados], [!UICONTROL Nome de usuário]e outros) quando necessário no Power BI.
+   3. Use ![ Copy ](assets/Smock_Copy_18_N.svg) para copiar cada um dos parâmetros de credenciais do postgres ( [!UICONTROL  host ] , [!UICONTROL  porta ] , [!UICONTROL  banco de dados ] , [!UICONTROL  nome de usuário ] e outros) quando necessário no Power bi.
 
 2. No Power BI:
 
-   1. Na janela principal, selecione **[!UICONTROL ** Obter dados **]** na barra de ferramentas superior.
+   1. Na janela principal, selecione **[!UICONTROL ** obter dados **]** da barra de ferramentas superior.
 
-   2. Selecionar **[!UICONTROL ** Mais...**]** no painel esquerdo.
+   2. Selecione **[!UICONTROL ** mais... **]** à esquerda painel.
 
    3. No **Obter dados** tela, pesquisar `PostgresSQL` e selecione o **[!UICONTROL ** Banco de dados PostgresSQL **]** da lista.
 
@@ -163,15 +164,15 @@ Atualmente, o Customer Journey Analytics SQL Connector é compatível e testado 
 
       5. Colar **[!UICONTROL ** Nome de usuário **]** parâmetro de consultas Experience Platform [!UICONTROL Credenciais] em **[!UICONTROL ** Nome de usuário **]** campo de texto.
 
-      6. Colar **[!UICONTROL ** Senha **]** parâmetro de consultas Experience Platform [!UICONTROL Credenciais] em **[!UICONTROL ** Senha **]** campo de texto.
+      6. Colar **[!UICONTROL ** parâmetro senha **]** a partir de Experience Platform consulta [!UICONTROL  as credenciais ] no **[!UICONTROL ** campo de texto senha **]** .
 
-      7. Selecionar **[!UICONTROL ** Conectar **]**.
+      7. Selecione **[!UICONTROL ** fazer logon **]** .
 
-   4. As visualizações de dados do Customer Journey Analytics são exibidas como tabelas no **[!UICONTROL ** Tabela **]** lista. As tabelas de visualização de dados recebem o prefixo `dv_`.
+   4. Customer Journey Analytics visualizações de dados são exibidas como tabelas na **[!UICONTROL ** tabela **]** lista. As tabelas de visualização de `dv_` dados têm o prefixo.
 
-   5. Arraste as tabelas que deseja usar na tela de desenho.
+   5. Arraste as tabelas que deseja usar na tela.
 
-   Agora é possível trabalhar com os dados das tabelas de visualização de dados para criar relatórios e visualizações.
+   Agora você pode trabalhar com os dados das tabelas de visualização de dados para build seus relatórios e visualizações.
 
    Consulte [Conectar o Tableau ao Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) para obter mais informações.
 
@@ -229,17 +230,17 @@ Consulte a tabela abaixo para obter exemplos do SQL que você pode usar.
 
 | Padrão | Exemplo |
 |---|---|
-| Descoberta de esquema | <pre>SELECIONE * DE dv1 ONDE 1=0</pre> |
-| Classificado/Analisado | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  filterId = &#39;12345&#39;<br/>GROUP BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  AND (dim2 = &#39;A&#39; OU dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
-| Cláusula HAVING | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>COM m1 > 100</pre> |
-| Distinto, início <br/>valores de dimensão | <pre>SELECIONAR dim1 DISTINTA DE dv1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\` >= &#39;01-01-2022&#39; E \`timestamp\` &lt; &#39;02-01-2022&#39;<br/>GROUP BY dim1<br/>ORDENAR POR SOMA(metric1)<br/>LIMITE 15</pre> |
-| Totais de métricas | <pre>SELECT SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</pre> |
-| Multidimensão<br/>detalhamentos<br/>e top-distints | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 1, 2<br/>FAÇA SEU PEDIDO POR 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>DE dv1</pre> |
-| Subselecionar:<br/>Resultado adicional<br/>filtragem | <pre>SELECT dim1, m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>ONDE dim1 em (&#39;A&#39;, &#39;B&#39;)</pre> |
-| Subselecionar:<br/>Associando-se a<br/>conjunto de dados não está em<br/>Customer Journey Analytics | <pre>SELECIONE b.key, a.dim1, a.m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/>a)<br/>Pesquisas de JUNÇÃO À ESQUERDA b EM a.dim1 = b.key</pre> |
-| Subselecionar:<br/>Consulta cruzada<br/>visualizações de dados | <pre>Chave SELECT, SOMA(m1) AS total<br/>DE (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNIÃO<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  DE dv2<br/>  ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>Chave GROUP BY<br/>TOTAL DE ORDER BY</pre> |
-| Subselecionar: <br/>Origem em camadas, <br/>filtragem, <br/>e agregação | Em camadas usando subseleções:<br><pre>SELECIONAR linhas.dim1, SUM(linhas.m1) AS total<br/>DE (<br/>  SELECT \_.dim1,\_.m1<br/>  DE (<br/>    SELECIONAR \* DE dv1<br/>    ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  ) \_<br/>  ONDE \_.dim1 em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) linhas<br/>AGRUPAR POR 1<br/>TOTAL DE ORDER BY</pre><br/>Camadas que usam CTE COM:<br/><pre>COM linhas AS (<br/>  COM \_ COMO (<br/>    SELECT * FROM data_ares<br/>    ONDE \`timestamp\` ENTRE &#39;2021-01-01&#39; E &#39;2021-02-01&#39;<br/>  )<br/>  SELECT _.item, _.unidades FROM _<br/>  ONDE _.item NÃO É NULO<br/>)<br/>SELECIONAR linhas.item, SUM(linhas.unidades) AS unidades<br/>LINHAS DE ONDE rows.item em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
-| Seleciona onde as<br/>as métricas vêm antes<br/> ou misturados com<br/>as dimensões | <pre>SELECT SUM(metric1) AS m1, dim1<br/>DE dv1<br/>ONDE \`timestamp\` ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 2</pre> |
+| Descoberta de esquema | <pre>SELECT * FROM DV1 em que 1 = 0</pre> |
+| Classificado/detalhamento | <pre>Selecione dim1, SUM (metric1) como M1 <br/> de DV1 <br/> em que \ &#39; timestamp \ &#39; entre &#39; 2022-01-01 &#39; e &#39; 2022-01-02 &#39; <br/> Agrupar por dim1</pre><pre>Selecione dim1, SUM (metric1) como M1 <br/> de DV1 <br/> em que \ &#39; timestamp \ &#39; entre &#39; 2022-01-01 &#39; e &#39; 2022-01-02 &#39; e <br/>  filterid = &#39; 12345 &#39; <br/> Agrupar por dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  AND (dim2 = &#39;A&#39; OU dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
+| Cláusula HAVING | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>COM m1 > 100</pre> |
+| Distinto, início <br/>valores de dimensão | <pre>SELECIONAR dim1 DISTINTA DE dv1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\` >= &#39;01-01-2022&#39; E \`timestamp\` &lt; &#39;02-01-2022&#39;<br/>GROUP BY dim1<br/>ORDENAR POR SOMA(metric1)<br/>LIMITE 15</pre> |
+| Totais de métricas | <pre>SELECT SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</pre> |
+| Multidimensão<br/>detalhamentos<br/>e top-distints | <pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1, dim2</pre><pre>SELECT dim1, dim2, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 1, 2<br/>FAÇA SEU PEDIDO POR 1, 2</pre><pre>SELECT DISTINCT dim1, dim2<br/>DE dv1</pre> |
+| Subselecionar:<br/>Resultado adicional<br/>filtragem | <pre>SELECT dim1, m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</br>  GROUP BY dim1<br/>)<br/>ONDE dim1 em (&#39;A&#39;, &#39;B&#39;)</pre> |
+| Subselecionar:<br/>Associando-se a<br/>conjunto de dados não está em<br/>Customer Journey Analytics | <pre>SELECIONE b.key, a.dim1, a.m1<br/>DE (<br/>  SELECT dim1, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/>a)<br/>Pesquisas de JUNÇÃO À ESQUERDA b EM a.dim1 = b.key</pre> |
+| Subselecionar:<br/>Consulta cruzada<br/>visualizações de dados | <pre>Chave SELECT, SOMA(m1) AS total<br/>DE (<br/>  SELECT dim1 AS key, SUM(metric1) AS m1<br/>  DE dv1<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim1<br/><br/>  UNIÃO<br/><br/>  SELECT dim2 AS key, SUM(m1) AS m1<br/>  DE dv2<br/>  ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  GROUP BY dim2<br/>Chave GROUP BY<br/>TOTAL DE ORDER BY</pre> |
+| Subselecionar: <br/>Origem em camadas, <br/>filtragem, <br/>e agregação | Em camadas usando subseleções:<br><pre>SELECIONAR linhas.dim1, SUM(linhas.m1) AS total<br/>DE (<br/>  SELECT \_.dim1,\_.m1<br/>  DE (<br/>    SELECIONAR \* DE dv1<br/>    ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>  ) \_<br/>  ONDE \_.dim1 em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>) linhas<br/>AGRUPAR POR 1<br/>TOTAL DE ORDER BY</pre><br/>Camadas que usam CTE COM:<br/><pre>COM linhas AS (<br/>  COM \_ COMO (<br/>    SELECT * FROM data_ares<br/>    ONDE \`timestamp\&#39; ENTRE &#39;2021-01-01&#39; E &#39;2021-02-01&#39;<br/>  )<br/>  SELECT _.item, _.unidades FROM _<br/>  ONDE _.item NÃO É NULO<br/>)<br/>SELECIONAR linhas.item, SUM(linhas.unidades) AS unidades<br/>LINHAS DE ONDE rows.item em (&#39;A&#39;, &#39;B&#39;, &#39;C&#39;)<br/>GROUP BY rows.item</pre> |
+| Seleciona onde as<br/>as métricas vêm antes<br/> ou misturados com<br/>as dimensões | <pre>SELECT SUM(metric1) AS m1, dim1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>AGRUPAR POR 2</pre> |
 
 {style="table-layout:auto"}
 
@@ -296,8 +297,8 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN METRIC1 END) AS m1
 | `+`, `-`, `*`, `/`, e `%` | Adicionar, subtrair, multiplicar, dividir e modular/restante |
 | `-X` ou `+X` | Alteração do sinal ou de uma métrica em que X é a expressão da métrica |
 | `PI()` | constante π |
-| `POSITIVE`, `NEGATIVE`, `ABS`, `FLOOR`, `CEIL`, `CEILING`, `EXP`, `LN`, `LOG10`, `LOG1P`, `SQRT`, `CBRT`, `DEGREES`, `RADIANS`, `SIN`, `COS`, `TAN`, `ACOS`, `ASIN`, `ATAN`, `COSH`, `SINH`, e `TANH` | Funções matemáticas unárias |
-| `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | Funções matemáticas binárias |
+| `POSITIVE`, `NEGATIVE` ,, `FLOOR` `CEIL` ,, `CEILING` , `EXP` `LN` ,, `LOG10` `LOG1P` `SQRT` `CBRT` ,,, `ACOS` `TAN` `ASIN` `COS` `SINH` `DEGREES` `COSH` `RADIANS` `ATAN` `SIN` ,,,,,,,,,, e `ABS``TANH` | Funções matemáticas unários |
+| `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | Binário funções matemáticas |
 
 {style="table-layout:auto"}
 
@@ -356,7 +357,7 @@ ORDER BY -metric1 DESC
 
 | Função | Exemplo | Detalhes |
 |---|---|---|
-| [CAST(coluna tipo AS)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` ou <br/> `` `timestamp`::string `` | A conversão de tipo não é suportada no momento, mas nenhum erro é lançado. A variável `CAST` é ignorada. |
+| [CAST (Column AS Type)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` ou <br/> `` `timestamp`::string `` | Atualmente, a conversão de tipo não é suportada, mas nenhum erro é lançado. A `CAST` função é ignorada. |
 | [TIMESTAMP(timeString)](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | Analisar uma string de tempo como um carimbo de data e hora para uso em um `WHERE` Cláusula. |
 | [TO_TIMESTAMP(timeString, formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | Analisar uma string de tempo como um carimbo de data e hora para uso em um `WHERE` opcionalmente, fornecendo um formato para essa string de tempo. |
 | [DATE(dateString)](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | Analisar uma cadeia de caracteres de data como um carimbo de data e hora para usar em um `WHERE` Cláusula. |

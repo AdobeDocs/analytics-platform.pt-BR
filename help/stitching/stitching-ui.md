@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 2%
@@ -13,6 +13,8 @@ ht-degree: 2%
 ---
 
 # Criar e gerenciar conjuntos de dados compilados
+
+{{select-package}}
 
 A configuração permite que os administradores compilem identidades em conjuntos de dados disponíveis no Customer Journey Analytics. A compilação de conjuntos de dados aumenta a precisão da representação de um perfil, resultando em uma melhor análise e relatórios.
 
