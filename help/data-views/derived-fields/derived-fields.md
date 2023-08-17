@@ -4,9 +4,9 @@ description: Um campo derivado especifica a manipulação de tempo do relatório
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 29b7034dccb93ab78f340e142c3c26b1e86b6644
 workflow-type: tm+mt
-source-wordcount: '4348'
+source-wordcount: '4378'
 ht-degree: 15%
 
 ---
@@ -173,84 +173,9 @@ Para cada função compatível, encontre os detalhes abaixo sobre:
 
 - restrições (se aplicável).
 
-
-<!-- Concatenate -->
-
-### Concatenar
-
-Combina valores de campo em um único campo derivado novo com delimitadores definidos.
-
-+++ Detalhes
-
-## Especificações {#concatenate-io}
-
-| Tipo de dados de entrada | Entrada | Operadores incluídos | Limitações | Saída |
-|---|---|---|---|---|
-| <ul><li>Sequência de caracteres</li></ul> | <ul><li>[!UICONTROL Valor]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li><li>Sequência de caracteres</li></ul></li><li>[!UICONTROL Delimitador]:<ul><li>Sequência de caracteres</li></ul></li> </ul> | <p>N/D</p> | <p>2 funções por campo derivado</p> | <p>Novo campo derivado</p> |
-
-{style="table-layout:auto"}
-
-
-## Caso de uso {#concatenate-uc}
-
-Atualmente, você coleta códigos de aeroporto de origem e destino como campos separados. Você gostaria de pegar os dois campos e combiná-los em uma única dimensão separada por um hífen (-). Assim, você pode analisar a combinação de origem e destino para identificar as principais rotas reservadas.
-
-Suposições:
-
-- Os valores de origem e destino são coletados em campos separados na mesma tabela.
-- O usuário determina o uso do delimitador &#39;-&#39; entre os valores.
-
-Imagine que as seguintes reservas ocorram:
-
-- Cliente ABC123 reserva um voo entre Salt Lake City (SLC) e Orlando (MCO)
-- Cliente ABC456 reserva um voo entre Salt Lake City (SLC) e Los Angeles (LAX)
-- Cliente ABC789 reserva um voo entre Salt Lake City (SLC) e Seattle (SEA)
-- Cliente ABC987 reserva um voo entre Salt Lake City (SLC) e San Jose (SJO)
-- Cliente ABC654 reserva um voo entre Salt Lake City (SLC) e Orlando (MCO)
-
-O relatório desejado deve ser semelhante a:
-
-| Origem / Destino | Reservas |
-|----|---:|
-| SLC-MCO | 2 |
-| SLC-LAX | 1 |
-| SLC-SEA | 1 |
-| SLC-SJO | 1 |
-
-{style="table-layout:auto"}
-
-
-### Dados anteriores a {#concatenate-uc-databefore}
-
-| Origem | Destino |
-|----|---:|
-| SLC | MCO |
-| SLC | LAX |
-| SLC | SEA |
-| SLC | SJO |
-| SLC | MCO |
-
-{style="table-layout:auto"}
-
-### Campo derivado {#concatenate-derivedfield}
-
-Você define um novo [!UICONTROL Origem - Destino] campo derivado. Você usa o [!UICONTROL CONCATENAR] para definir uma regra para concatenar a variável [!UICONTROL Original] e [!UICONTROL Destino] campos usando o `-` [!UICONTROL Delimitador].
-
-![Captura de tela da regra Concatenar](assets/concatenate.png)
-
-### Dados após {#concatenate-dataafter}
-
-| Origem - Destino<br/>(campo derivado) |
-|---|
-| SLC-MCO |
-| SLC-LAX |
-| SLC-SEA |
-| SLC-SJO |
-| SLC-MCO |
-
-{style="table-layout:auto"}
-
-+++
+>[!NOTE]
+>
+>A função Lookup foi renomeada para [Classificar](#classify). Consulte a [Classificar](#classify) para obter mais informações.
 
 <!-- CASE WHEN -->
 
@@ -482,6 +407,209 @@ As restrições a seguir se aplicam e são aplicadas quando *seleção* e *confi
 
 +++
 
+<!-- CLASSIFY -->
+
+### Classificar
+
+Define um conjunto de valores que são substituídos por valores correspondentes em um novo campo derivado.
+
+
+
+
++++ Detalhes
+
+>[!NOTE]
+>
+>Esta função foi originalmente chamada de Pesquisa, mas foi renomeada para Classificar para acomodar uma função de Pesquisa futura com funcionalidade diferente.
+
+## Especificações {#classify-io}
+
+| Tipo de dados de entrada | Entrada | Operadores incluídos | Limitações | Saída |
+|---|---|---|---|---|
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo a ser classificado]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></li><li>[!UICONTROL Quando o valor é igual a] e [!UICONTROL Substituir valores por]:</p><ul><li>Sequência de caracteres</li></ul></li></ul> | <p>N/D</p> | <p>5 funções por campo derivado</p> | <p>Novo campo derivado</p> |
+
+{style="table-layout:auto"}
+
+
+## Caso de uso 1 {#classify-uc1}
+
+Você tem um arquivo CSV que inclui uma coluna de chave para `hotelID` e uma ou mais colunas adicionais associadas à variável `hotelID`: `city`, `rooms`, `hotel name`.
+Você está coletando [!DNL Hotel ID] em uma dimensão, mas gostaria de criar uma [!DNL Hotel Name] dimensão derivada do `hotelID` no arquivo CSV.
+
+**Estrutura e conteúdo do arquivo CSV**
+
+| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
+|---|---|---:|---|
+| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
+| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
+| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+**Relatório atual**
+
+| [!DNL Hotel ID] | Visualizações de produto |
+|---|---:|
+| [!DNL SLC123] | 200 |
+| [!DNL LX342] | 198 |
+| [!DNL SFO456] | 190 |
+
+{style="table-layout:auto"}
+
+
+**Relatório desejado**
+
+| [!DNL Hotel Name] | Visualizações de produto |
+|----|----:|
+| [!DNL SLC Downtown] | 200 |
+| [!DNL LA Airport] | 198 |
+| [!DNL Market Street] | 190 |
+
+{style="table-layout:auto"}
+
+### Dados anteriores a {#classify-uc1-databefore}
+
+| [!DNL Hotel ID] |
+|----|
+| [!DNL SLC123] |
+| [!DNL LAX342] |
+| [!DNL SFO456] |
+
+{style="table-layout:auto"}
+
+
+### Campo derivado {#classify-uc1-derivedfield}
+
+Você define um `Hotel Name` campo derivado. Você usa o [!UICONTROL CLASSIFICAR] para definir uma regra em que você possa classificar valores de [!UICONTROL ID do Hotel] e substitua por novos valores.
+
+![Captura de tela da regra de classificação 1](assets/lookup-1.png)
+
+### Dados após {#classify-uc1-dataafter}
+
+| [!DNL Hotel Name] |
+|----|
+| [!DNL SLC Downtown] |
+| [!DNL LA Airport] |
+| [!DNL Market Street] |
+
+{style="table-layout:auto"}
+
+
+## Caso de uso 2 {#classify-uc2}
+
+Você coletou URLs em vez do nome de página amigável para várias páginas. Essa coleção mista de valores interrompe o relatório.
+
+### Dados anteriores a {#classify-uc2-databefore}
+
+| [!DNL Page Name] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| `http://www.adobetravel.ca/Hotel-Search` |
+| `https://www.adobetravel.com/Package-Search` |
+| [!DNL Deals & Offers] |
+| `http://www.adobetravel.ca/user/reviews` |
+| `https://www.adobetravel.com.br/Generate-Quote/preview` |
+
+{style="table-layout:auto"}
+
+### Campo derivado {#classify-uc2-derivedfield}
+
+Você define um `Page Name (updated)` campo derivado. Você usa o [!UICONTROL CLASSIFICAR] para definir uma regra em que você possa classificar os valores dos seus [!UICONTROL Nome da página] e substitua por valores corretos atualizados.
+
+![Captura de tela da regra Classificar 2](assets/lookup-2.png)
+
+### Dados após {#classify-uc2-dataafter}
+
+| [!DNL Page Name (updated)] |
+|---|
+| [!DNL Home Page] |
+| [!DNL Flight Search] |
+| [!DNL Hotel Search] |
+| [!DNL Package Search] |
+| [!DNL Deals & Offers] |
+| [!DNL Reviews] |
+| [!DNL Generate Quote] |
+
++++
+
+<!-- CONCATENATE -->
+
+### Concatenar
+
+Combina valores de campo em um único campo derivado novo com delimitadores definidos.
+
++++ Detalhes
+
+## Especificações {#concatenate-io}
+
+| Tipo de dados de entrada | Entrada | Operadores incluídos | Limitações | Saída |
+|---|---|---|---|---|
+| <ul><li>Sequência de caracteres</li></ul> | <ul><li>[!UICONTROL Valor]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li><li>Sequência de caracteres</li></ul></li><li>[!UICONTROL Delimitador]:<ul><li>Sequência de caracteres</li></ul></li> </ul> | <p>N/D</p> | <p>2 funções por campo derivado</p> | <p>Novo campo derivado</p> |
+
+{style="table-layout:auto"}
+
+
+## Caso de uso {#concatenate-uc}
+
+Atualmente, você coleta códigos de aeroporto de origem e destino como campos separados. Você gostaria de pegar os dois campos e combiná-los em uma única dimensão separada por um hífen (-). Assim, você pode analisar a combinação de origem e destino para identificar as principais rotas reservadas.
+
+Suposições:
+
+- Os valores de origem e destino são coletados em campos separados na mesma tabela.
+- O usuário determina o uso do delimitador &#39;-&#39; entre os valores.
+
+Imagine que as seguintes reservas ocorram:
+
+- Cliente ABC123 reserva um voo entre Salt Lake City (SLC) e Orlando (MCO)
+- Cliente ABC456 reserva um voo entre Salt Lake City (SLC) e Los Angeles (LAX)
+- Cliente ABC789 reserva um voo entre Salt Lake City (SLC) e Seattle (SEA)
+- Cliente ABC987 reserva um voo entre Salt Lake City (SLC) e San Jose (SJO)
+- Cliente ABC654 reserva um voo entre Salt Lake City (SLC) e Orlando (MCO)
+
+O relatório desejado deve ser semelhante a:
+
+| Origem / Destino | Reservas |
+|----|---:|
+| SLC-MCO | 2 |
+| SLC-LAX | 1 |
+| SLC-SEA | 1 |
+| SLC-SJO | 1 |
+
+{style="table-layout:auto"}
+
+
+### Dados anteriores a {#concatenate-uc-databefore}
+
+| Origem | Destino |
+|----|---:|
+| SLC | MCO |
+| SLC | LAX |
+| SLC | SEA |
+| SLC | SJO |
+| SLC | MCO |
+
+{style="table-layout:auto"}
+
+### Campo derivado {#concatenate-derivedfield}
+
+Você define um novo [!UICONTROL Origem - Destino] campo derivado. Você usa o [!UICONTROL CONCATENAR] para definir uma regra para concatenar a variável [!UICONTROL Original] e [!UICONTROL Destino] campos usando o `-` [!UICONTROL Delimitador].
+
+![Captura de tela da regra Concatenar](assets/concatenate.png)
+
+### Dados após {#concatenate-dataafter}
+
+| Origem - Destino<br/>(campo derivado) |
+|---|
+| SLC-MCO |
+| SLC-LAX |
+| SLC-SEA |
+| SLC-SJO |
+| SLC-MCO |
+
+{style="table-layout:auto"}
+
++++
 
 <!-- FIND AND REPLACE -->
 
@@ -552,127 +680,6 @@ Você define um `Email Marketing (updated)` campo derivado. Você usa o [!UICONT
 
 +++
 
-
-<!-- LOOKUP -->
-
-### Pesquisa
-
-Define um conjunto de valores de pesquisa que são substituídos por valores correspondentes em um novo campo derivado.
-
-+++ Detalhes
-
-
-## Especificações {#lookup-io}
-
-| Tipo de dados de entrada | Entrada | Operadores incluídos | Limitações | Saída |
-|---|---|---|---|---|
-| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo para aplicar a pesquisa]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></li><li>[!UICONTROL Quando o valor é igual a] e [!UICONTROL Substituir valores por]:</p><ul><li>Sequência de caracteres</li></ul></li></ul> | <p>N/D</p> | <p>5 funções por campo derivado</p> | <p>Novo campo derivado</p> |
-
-{style="table-layout:auto"}
-
-
-## Caso de uso 1 {#lookup-uc1}
-
-Você tem um arquivo CSV que inclui uma coluna de chave para `hotelID` e uma ou mais colunas adicionais associadas à variável `hotelID`: `city`, `rooms`, `hotel name`.
-Você está coletando [!DNL Hotel ID] em uma dimensão, mas gostaria de criar uma [!DNL Hotel Name] dimensão derivada do `hotelID` no arquivo CSV.
-
-**Estrutura e conteúdo do arquivo CSV**
-
-| [!DNL hotelID] | [!DNL city] | [!DNL rooms] | [!DNL hotel name] |
-|---|---|---:|---|
-| [!DNL SLC123] | [!DNL Salt Lake City] | 40 | [!DNL SLC Downtown] |
-| [!DNL LAX342] | [!DNL Los Angeles] | 60 | [!DNL LA Airport] |
-| [!DNL SFO456] | [!DNL San Francisco] | 75 | [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-**Relatório atual**
-
-| [!DNL Hotel ID] | Visualizações de produto |
-|---|---:|
-| [!DNL SLC123] | 200 |
-| [!DNL LX342] | 198 |
-| [!DNL SFO456] | 190 |
-
-{style="table-layout:auto"}
-
-
-**Relatório desejado**
-
-| [!DNL Hotel Name] | Visualizações de produto |
-|----|----:|
-| [!DNL SLC Downtown] | 200 |
-| [!DNL LA Airport] | 198 |
-| [!DNL Market Street] | 190 |
-
-{style="table-layout:auto"}
-
-### Dados anteriores a {#lookup-uc1-databefore}
-
-| [!DNL Hotel ID] |
-|----|
-| [!DNL SLC123] |
-| [!DNL LAX342] |
-| [!DNL SFO456] |
-
-{style="table-layout:auto"}
-
-
-### Campo derivado {#lookup-uc1-derivedfield}
-
-Você define um `Hotel Name` campo derivado. Você usa o [!UICONTROL PESQUISA] para definir uma regra em que você pode pesquisar valores de [!UICONTROL ID do Hotel] e substitua por novos valores.
-
-![Captura de tela da regra de pesquisa 1](assets/lookup-1.png)
-
-### Dados após {#lookup-uc1-dataafter}
-
-| [!DNL Hotel Name] |
-|----|
-| [!DNL SLC Downtown] |
-| [!DNL LA Airport] |
-| [!DNL Market Street] |
-
-{style="table-layout:auto"}
-
-
-## Caso de uso 2 {#lookup-uc2}
-
-Você coletou URLs em vez do nome de página amigável para várias páginas. Essa coleção mista de valores interrompe o relatório.
-
-### Dados anteriores a {#lookup-uc2-databefore}
-
-| [!DNL Page Name] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| `http://www.adobetravel.ca/Hotel-Search` |
-| `https://www.adobetravel.com/Package-Search` |
-| [!DNL Deals & Offers] |
-| `http://www.adobetravel.ca/user/reviews` |
-| `https://www.adobetravel.com.br/Generate-Quote/preview` |
-
-{style="table-layout:auto"}
-
-### Campo derivado {#lookup-uc2-derivedfield}
-
-Você define um `Page Name (updated)` campo derivado. Você usa o [!UICONTROL PESQUISA] função para definir uma regra em que você pode pesquisar valores de seus [!UICONTROL Nome da página] e substitua por valores corretos atualizados.
-
-![Captura de tela da regra de pesquisa 2](assets/lookup-2.png)
-
-### Dados após {#lookup-uc2-dataafter}
-
-| [!DNL Page Name (updated)] |
-|---|
-| [!DNL Home Page] |
-| [!DNL Flight Search] |
-| [!DNL Hotel Search] |
-| [!DNL Package Search] |
-| [!DNL Deals & Offers] |
-| [!DNL Reviews] |
-| [!DNL Generate Quote] |
-
-+++
-
 <!-- MERGE FIELDS -->
 
 ### Mesclar campos
@@ -691,7 +698,7 @@ Mescla valores de dois campos diferentes em um novo campo derivado.
 
 ## Caso de uso {#merge-fields-uc}
 
-Você gostaria de criar uma nova dimensão composta pelo campo de nome da página e pelo campo de motivo da chamada com a intenção de analisar a jornada entre canais.
+Você gostaria de criar uma dimensão composta pelo campo de nome da página e pelo campo de motivo da chamada com a intenção de analisar a jornada entre canais.
 
 ### Dados anteriores a {#merge-fields-uc-databefore}
 
@@ -757,7 +764,7 @@ Substitui um valor de um campo usando uma expressão regular em um novo campo de
 
 ## Caso de uso {#regex-replace-uc}
 
-Você gostaria de coletar uma parte de um URL e usá-lo como um identificador de página exclusivo para analisar o tráfego. Você usará `[^/]+(?=/$|$)` para que a expressão regular capture o final do URL e `$1` como o padrão de saída.
+Você gostaria de coletar uma parte de um URL e usá-lo como um identificador de página exclusivo para analisar o tráfego. Você usa `[^/]+(?=/$|$)` para que a expressão regular capture o final do URL e `$1` como o padrão de saída.
 
 ### Dados anteriores a {#regex-replace-uc-databefore}
 
