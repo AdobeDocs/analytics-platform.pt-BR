@@ -3,10 +3,10 @@ title: Perguntas frequentes sobre compilação
 description: Perguntas frequentes sobre costura
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 94df90b64a25bfbeb5ed5e270925b1ef1ed89b8a
+source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 35%
+source-wordcount: '1299'
+ht-degree: 42%
 
 ---
 
@@ -49,7 +49,7 @@ O número de IDs persistentes é irrelevante em favor da ID transitória. Um ún
 
 +++
 
-+++**Quando eu entrar em contato com minha equipe de conta do Adobe com as informações desejadas, quanto tempo levará para o conjunto de dados rechaveado ficar disponível?**
++++**Após entrar em contato com minha equipe de contas da Adobe e fornecer as informações desejadas, quanto tempo levará para o conjunto de dados rechaveado ser disponibilizado?**
 
 A compilação em tempo real está disponível aproximadamente uma semana depois de o Adobe ativar a compilação. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de um milhão de eventos por dia) normalmente levam alguns dias, enquanto grandes conjuntos de dados (um bilhão de eventos por dia) podem levar uma semana ou mais.
 
@@ -74,7 +74,28 @@ O Adobe lida com solicitações do GDPR e CCPA de acordo com as leis locais e in
 Se o campo ID persistente estiver em branco em um evento em um conjunto de dados que está sendo compilado, a ID compilada para esse evento será determinada de uma das duas formas a seguir:
 
 * Se o campo ID transitória não estiver em branco, o Customer Journey Analytics usará o valor em ID transitória como a ID compilada.
-* Se o campo ID transitória estiver em branco, o Customer Journey Analytics também deixará a ID compilada em branco. Nesse caso, a ID persistente, a ID transitória e a ID compilada estão em branco no evento. Esses tipos de eventos são descartados de qualquer conexão Customer Journey Analytics usando o conjunto de dados que está sendo compilado em que a ID compilada foi escolhida como a ID de pessoa.
+* Se o campo ID transitória estiver em branco, o Customer Journey Analytics também deixará a ID compilada em branco. Nesse caso, a ID persistente, a ID transitória e a ID com título estão em branco no evento. Esses tipos de eventos são descartados de qualquer conexão Customer Journey Analytics usando o conjunto de dados que está sendo compilado em que a ID compilada foi escolhida como a ID de pessoa.
+
++++
+
+
++++**O que acontece se o campo ID transitória em um ou mais eventos tiver valores de espaço reservado, como &quot;Indefinido&quot;?**
+
+Tenha cuidado com o &quot;recolhimento de pessoas&quot;, que ocorre quando a compilação é aplicada a dados que usam valores de espaço reservado para IDs transitórias. Na tabela de exemplo abaixo, IDs de pessoa indefinidas originárias de um conjunto de dados proveniente de um sistema CRM são preenchidas com o valor &quot;Indefinido&quot;, resultando na representação incorreta de pessoas.
+
+| Evento  | Carimbo de data e hora | ID persistente (ID do cookie) | ID transitória (ID de logon) | ID compilada (após repetição) |
+|---|---|---|---|---|
+| 1 | 2023-05-12 12:01 | 123 | - | **Cory** |
+| 2 | 2023-05-12 12:02 | 123 | Cory | **Cory** |
+| 3 | 2023-05-12 12:03 | 456 | Indefinido | **Indefinido** |
+| 4 | 2023-05-12 12:04 | 456 | - | **Indefinido** |
+| 5 | 2023-05-12 12:05 | 789 | Indefinido | **Indefinido** |
+| 6 | 2023-05-12 12:06 | 012 | Indefinido | **Indefinido** |
+| 7 | 2023-05-12 12:07 | 012 | - | **Indefinido** |
+| 8 | 2023-05-12 12:03 | 789 | Indefinido | **Indefinido** |
+| 9 | 2023-05-12 12:09 | 456 | - | **Indefinido** |
+| 10 | 2023-05-12 12:02 | 123 | - | **Cory** |
+| | | **4 dispositivos** | **2 pessoas**:<br/>Eventos 1, 4, 7, 9, 10 descartados | **2 pessoas**:<br/>Cory, Não autenticado (recolhido para uma pessoa) |
 
 +++
 
@@ -82,11 +103,11 @@ Se o campo ID persistente estiver em branco em um evento em um conjunto de dados
 
 Determinadas métricas no Customer Journey Analytics são semelhantes às métricas no Analytics tradicional, mas outras são diferentes, dependendo do que você está comparando. A tabela abaixo compara várias métricas comuns:
 
-| **dados compilados do Customer Journey Analytics** | **dados não compilados do Customer Journey Analytics** | **Adobe Analytics** | **Analytics Ultimate com CDA** |
+| **Dados compilados do Customer Journey Analytics** | **Dados não compilados do Customer Journey Analytics** | **Adobe Analytics** | **Analytics Ultimate com CDA** |
 | ----- | ----- | ----- | ----- |
 | **Pessoas** = Contagem de IDs de pessoa distintas, em que a ID com título é escolhida como ID de pessoa. **Pessoas** pode ser superior ou inferior a **Visitantes únicos** no Adobe Analytics tradicional, dependendo da saída do processo de compilação.  | **Pessoas** = Contagem de IDs de pessoa distintas com base na coluna selecionada como ID de pessoa. **Pessoas** nos conjuntos de dados do conector de origem do Analytics é semelhante a **Visitantes únicos** no Adobe Analytics tradicional se `endUserIDs._experience.aaid.id` é usada como ID de pessoa no Customer Journey Analytics. | **Visitantes únicos** = Contagem de IDs de visitante distintas. **Visitantes únicos** pode não ser o mesmo que a contagem de **ECID** s. | Consulte [de pessoas](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=pt-BR). |
-| **Sessões**: Definido com base nas configurações de sessão na visualização de dados Customer Journey Analytics. O processo de compilação pode combinar sessões individuais de vários dispositivos em uma única sessão. | **Sessões**: Definido com base nas configurações de sessão especificadas na visualização de dados do Customer Journey Analytics. | **Visitas**: consulte [Visitas](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=pt-BR). | **Visitas**: definido com base nas configurações de sessão especificadas no [conjunto de relatórios virtuais do CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=pt-BR). |
-| **Eventos** = contagem de linhas nos dados compilados no Customer Journey Analytics. Normalmente, essa métrica está próxima de **Ocorrências** na Adobe Analytics tradicional. No entanto, observe as Perguntas frequentes acima que estão relacionadas às linhas com uma ID persistente em branco. | **Eventos** = contagem de linhas nos dados não compilados no Customer Journey Analytics. Normalmente, essa métrica está próxima de **Ocorrências** na Adobe Analytics tradicional. Observe, no entanto, que se qualquer evento tiver uma ID de pessoa em branco nos dados não compilados no data lake do Experience Platform, esses eventos não são incluídos no Customer Journey Analytics. | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=pt-BR). | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=pt-BR). |
+| **Sessões**: definidas com base nas configurações de sessão na visualização de dados do Customer Journey Analytics. O processo de compilação pode combinar sessões individuais de vários dispositivos em uma única sessão. | **Sessões**: definidas com base nas configurações de sessão especificadas na visualização de dados do Customer Journey Analytics. | **Visitas**: consulte [Visitas](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=pt-BR). | **Visitas**: definido com base nas configurações de sessão especificadas no [conjunto de relatórios virtuais do CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=pt-BR). |
+| **Eventos** = contagem de linhas nos dados compilados no Customer Journey Analytics. Essa métrica é bem semelhante às **Ocorrências** do Adobe Analytics tradicional. No entanto, observe as Perguntas frequentes acima que estão relacionadas às linhas com uma ID persistente em branco. | **Eventos** = contagem de linhas nos dados não compilados no Customer Journey Analytics. Essa métrica é bem semelhante às **Ocorrências** do Adobe Analytics tradicional. Observe, no entanto, que se qualquer evento tiver uma ID de pessoa em branco nos dados não compilados no data lake do Experience Platform, esses eventos não são incluídos no Customer Journey Analytics. | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=pt-BR). | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=pt-BR). |
 
 Outras métricas podem ser semelhantes no Customer Journey Analytics e no Adobe Analytics. Por exemplo, a contagem total de Adobe Analytics [eventos personalizados](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=pt-BR) 1-100 é comparável entre o Adobe Analytics tradicional e o Customer Journey Analytics (seja compilado ou não). [Diferenças nos recursos](/help/getting-started/aa-vs-cja/cja-aa.md)), como a desduplicação de eventos entre o Customer Journey Analytics e o Adobe Analytics, pode causar discrepância entre os dois produtos.
 

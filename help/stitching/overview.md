@@ -3,10 +3,10 @@ title: Visão geral da compilação
 description: Visão geral da compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 26%
+source-wordcount: '1265'
+ht-degree: 25%
 
 ---
 
@@ -117,10 +117,14 @@ A costura é um recurso inovador e robusto, mas tem limitações na forma de uso
 * O campo de ID transitória deve conter um único tipo de ID (IDs de um único namespace). Por exemplo, o campo ID transitória não deve conter uma combinação de IDs de logon e IDs de email.
 * Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID transitória, a compilação selecionará a ID com base na ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação selecionará Ann.
 * Se um dispositivo for compartilhado por várias pessoas e o número total de transições entre usuários exceder 50.000, o Customer Journey Analytics interromperá a compilação de dados para esse dispositivo.
+* Tenha cuidado com cenários em que as IDs transitórias contenham valores de espaço reservado, por exemplo, &quot;Indefinido&quot;. Consulte [Perguntas frequentes](faq.md) para obter mais informações.
 
 Não confunda a compilação com:
 
 * A mesclagem de dois ou mais conjuntos de dados. A compilação se aplica a apenas um conjunto de dados. A mesclagem de conjuntos de dados ocorre como resultado da configuração de uma conexão Customer Journey Analytics e da seleção da mesma ID de pessoa nos conjuntos de dados selecionados na conexão.
 
 * A associação de dois conjuntos de dados. No Customer Journey Analytics, uma junção é frequentemente usada para pesquisas ou classificações no Analysis Workspace. Embora a compilação use a funcionalidade de associação, o próprio processo envolve muito mais do que associações.
+
+
+
 
