@@ -6,7 +6,7 @@ feature: Release Notes
 source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '571'
-ht-degree: 76%
+ht-degree: 92%
 
 ---
 
@@ -21,9 +21,9 @@ Essas notas de versão abrangem o período de lançamento de 9 de agosto a 13 de
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Aprimoramentos do Report Builder** | <ul><li>É possível baixar uma tarefa agendada na guia Pastas de trabalho, nomeá-la, salvá-la e compartilhá-la. [Saiba mais](/help/report-builder/schedule-reportbuilder.md)</li><li>Data inicial como dimensão permite exibir a data inicial do bloco de dados como uma dimensão na saída do bloco de dados. [Saiba mais](/help/report-builder/create-a-data-block.md) </li></ul> | N/D | 17 de agosto de 2023 |
-| **Conversão de moeda** | A Jornada do cliente está adicionando a capacidade de oferecer suporte a várias moedas. É possível converter uma moeda em outra moeda nas configurações de visualizações de dados. [Saiba mais](/help/data-views/component-settings/format.md) | N/D | 31 de agosto de 2023 |
-| **Suporte para classificações A4T no Conector de origem do Analytics** | Estamos adicionando uma ID de correlação para facilitar o ingresso de dados de classificação em atividades do Adobe Target e eventos de experiência. | N/D | 31 de agosto de 2023 |
-| **Gerenciador de atividades de relatórios** | Fornece aos administradores visibilidade detalhada sobre o consumo de relatórios para cada conexão, permitindo que os administradores diagnostiquem e corrijam problemas de capacidade facilmente durante os horários de pico de relatórios. | N/D | 6 de setembro de 2023 |
+| **Conversão de moeda** | A jornada do cliente está recebendo compatibilidade com várias moedas. É possível converter moedas nas configurações das visualizações de dados. [Saiba mais](/help/data-views/component-settings/format.md) | N/D | 31 de agosto de 2023 |
+| **Suporte para classificações do A4T no conector de origem do Analytics** | Estamos adicionando uma ID de correlação para facilitar a junção de dados de classificação em atividades do Adobe Target e eventos de experiência. | N/D | 31 de agosto de 2023 |
+| **Gerenciador de atividades de relatórios** | Fornece uma visão detalhada aos administradores sobre o consumo de relatórios em cada conexão, permitindo diagnosticar e corrigir problemas de capacidade facilmente durante os momentos de pico de relatórios. | N/D | 6 de setembro de 2023 |
 | **Acesso do Power BI e do Tableau às visualizações de dados do Customer Journey Analytics** | O conector SQL do Adobe Customer Journey Analytics permite acesso SQL a visualizações de dados definidas no Customer Journey Analytics. Analistas e engenheiros de dados mais familiarizados com o Power BI, Tableau ou outras ferramentas de business intelligence e visualização agora podem criar relatórios e painéis com base nas mesmas visualizações de dados que os usuários do Customer Journey Analytics estão usando nos seus projetos do Analysis Workspace. [Saiba mais](/help/data-views/sql-connector.md) | N/D | 13 de setembro de 2023 |
 
 {style="table-layout:auto"}
