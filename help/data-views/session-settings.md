@@ -3,7 +3,7 @@ title: Configurações da sessão
 description: Configurações em uma visualização de dados que você pode usar para definir a duração de uma sessão e o acionador para iniciar uma nova sessão
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 25ff6feda28f0447927a52f44aed800cdd89e0cb
+source-git-commit: bb2061f9119b8391bf3cedce4029685537d1e239
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 38%
