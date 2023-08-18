@@ -1,15 +1,15 @@
 ---
 title: Como programar pastas de trabalho usando o Report Builder no Customer Journey Analytics
-description: Descreve como usar o recurso de programação no Report Builder
+description: Saiba como usar o recurso de agendamento no Report Builder
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: cd3ed8873619c7fb5281d42b1f74c32b245400d0
-workflow-type: ht
-source-wordcount: '1078'
-ht-degree: 100%
+source-git-commit: d40638272263a389421adfe224649e2b905c652b
+workflow-type: tm+mt
+source-wordcount: '1114'
+ht-degree: 90%
 
 ---
 
@@ -91,17 +91,21 @@ Você pode exibir e gerenciar todas as pastas de trabalho programadas em um loca
 
 1. Na seção Programação do hub do Report Builder, clique na guia Pastas de trabalho. Use essa exibição para ver uma lista de todas as pastas de trabalho programadas.
 
-1. Selecione uma pasta de trabalho. Várias ferramentas são exibidas e permitem editar, alterar, pausar e reiniciar a programação ou excluir a programação.
+1. Selecione uma pasta de trabalho. São exibidas várias ferramentas que permitem editar a pasta de trabalho, editar a tarefa de agendamento, pausar e reiniciar a tarefa de agendamento, baixar um relatório de tarefa agendada ou excluir a tarefa de agendamento.
 
-   ![Descrição alt](./assets/edit-icons.png){width="55%"}
+   ![Captura de tela mostrando os ícones de programação da pasta de trabalho.](./assets/schedule-icons.png){width="15%"}
 
-* (Opcional) Clique no ícone de lápis para editar a programação da pasta de trabalho.
+* (Opcional) Clique no ícone de lápis para editar a tarefa de programação da pasta de trabalho.
 
 * (Opcional) Clique no ícone de relógio para exibir um histórico de cada tarefa agendada.
 
-* (Opcional) Clique no ícone de pausa para pausar e reiniciar a programação de distribuição. Isso é útil se você precisar modificar a pasta de trabalho antes que ela seja enviada. Clique no ícone de pausa novamente quando quiser reiniciar a distribuição.
+* (Opcional) Clique no ícone de pausa para pausar e reiniciar a tarefa de programação de distribuição. Isso é útil se você precisar modificar a pasta de trabalho antes que ela seja enviada. Clique no ícone de pausa novamente quando quiser reiniciar a distribuição.
 
-* (Opcional) Clique na lixeira para excluir a programação.
+* (Opcional) Clique no ícone de download para baixar uma cópia da tarefa de agendamento da pasta de trabalho.
+
+* (Opcional) Clique na lixeira para excluir a tarefa programada.
+
+  ![Captura de tela mostrando a lista de tarefas agendadas.](./assets/selected-workbook.png){width="20%"}
 
 ## Revisar o status das tarefas programadas
 
