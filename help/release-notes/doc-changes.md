@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6f3ae14e4d34de17ed64ae30cee4611e4d6f3226
+source-git-commit: 0160aee587c1f88e4889f26757b1962c3d59b9fa
 workflow-type: tm+mt
-source-wordcount: '2518'
-ht-degree: 98%
+source-wordcount: '2550'
+ht-degree: 97%
 
 ---
 
@@ -20,6 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Agosto de 2023** | |
+| Aprimoramentos do Report Builder | Conteúdo atualizado para [Agendar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) para fornecer informações para baixar tarefas agendadas. Conteúdo atualizado para  [Criar um bloco de dados](/help/report-builder/create-a-data-block.md) para fornecer informações sobre como usar a Data inicial como uma dimensão. |
 | Conteúdo movido sobre o gerenciamento de projetos agendados | Criado um novo artigo no Guia de componentes do Analytics chamado [Projetos agendados](/help/components/scheduled-projects-manager.md). Este conteúdo estava anteriormente localizado no [Agendar projetos](/help/analysis-workspace/curate-share/t-schedule-report.md) no Guia de ferramentas do Analytics. |
 | Compatibilidade com recursos do Adobe Customer Journey Analytics | Foram adicionadas mais informações na tabela *Compatível de uma nova maneira* sobre os recursos de sessão no Customer Journey Analytics em comparação ao Adobe Analytics. [Saiba mais](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Evolução a partir do Adobe Analytics | Atualização da seção *(Re)configurar canais de marketing* com uma referência ao modelo de função Canais de marketing de campos derivados. [Saiba mais](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
