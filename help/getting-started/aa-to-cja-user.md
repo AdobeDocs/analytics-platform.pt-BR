@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
 source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1479'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -110,4 +110,4 @@ O Customer Journey Analytics expande os conceitos de identidades além das ECIDs
 
 ## Alterações no conceito de item de dimensão de tráfego baixo
 
-No Adobe Analytics tradicional, uma variável que recebe muitos valores únicos inicia a definição de itens de dimensão em [!UICONTROL Tráfego baixo]. O Customer Journey Analytics tem menos limitações para campos de alta cardinalidade. As alterações na arquitetura de relatórios permitem que o Analysis Workspace relate muitos itens de dimensão exclusivos. Consulte [Dimensões de alta cardinalidade](../components/dimensions/high-cardinality.md) para obter mais informações sobre como o Customer Journey Analytics otimiza os relatórios para dimensões com muitos valores únicos.
+No Adobe Analytics tradicional, uma variável que recebe muitos valores únicos inicia a definição de itens de dimensão em [!UICONTROL Tráfego baixo]. O Customer Journey Analytics tem menos limitações para campos de alta cardinalidade. As alterações na arquitetura de relatórios permitem que o Analysis Workspace relate muitos itens de dimensão exclusivos. Consulte [Dimensões de alta cardinalidade](../components/dimensions/high-cardinality.md) para obter mais informações sobre como o Customer Journey Analytics otimiza os relatórios para dimensões com vários valores únicos.
