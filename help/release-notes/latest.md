@@ -3,10 +3,10 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 2dab438b956513eaff3f05d2ff8de2fff43d9977
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '571'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -20,7 +20,7 @@ Essas notas de versão abrangem o período de lançamento de 9 de agosto a 13 de
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Aprimoramentos do Report Builder** | <ul><li>Baixe as tarefas agendadas na guia Histórico, onde é possível visualizar o histórico de tarefas agendadas. Baixe a pasta de trabalho dessa tarefa. </li><li>Data inicial como dimensão: permite que os usuários apresentem a data inicial do bloco de dados como uma dimensão na saída do bloco de dados. </li></ul> | N/D | 17 de agosto de 2023 |
+| **Aprimoramentos do Report Builder** | <ul><li>É possível baixar uma tarefa agendada na guia Pastas de trabalho, nomeá-la, salvá-la e compartilhá-la. [Saiba mais](/help/report-builder/schedule-reportbuilder.md)</li><li>Data inicial como dimensão permite exibir a data inicial do bloco de dados como uma dimensão na saída do bloco de dados. [Saiba mais](/help/report-builder/create-a-data-block.md) </li></ul> | N/D | 17 de agosto de 2023 |
 | **Conversão de moeda** | A Jornada do cliente está adicionando a capacidade de oferecer suporte a várias moedas. É possível converter uma moeda em outra moeda nas configurações de visualizações de dados. [Saiba mais](/help/data-views/component-settings/format.md) | N/D | 31 de agosto de 2023 |
 | **Suporte para classificações A4T no Conector de origem do Analytics** | Estamos adicionando uma ID de correlação para facilitar o ingresso de dados de classificação em atividades do Adobe Target e eventos de experiência. | N/D | 31 de agosto de 2023 |
 | **Gerenciador de atividades de relatórios** | Fornece aos administradores visibilidade detalhada sobre o consumo de relatórios para cada conexão, permitindo que os administradores diagnostiquem e corrijam problemas de capacidade facilmente durante os horários de pico de relatórios. | N/D | 6 de setembro de 2023 |

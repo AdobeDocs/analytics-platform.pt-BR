@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: bc82cd376a082b55f915c1e27f6fcec861989b00
+source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 74%
@@ -67,7 +67,7 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
 
    Defina a Data de início como uma dimensão para identificar claramente a data de início do bloco de dados. Isso é útil se você tiver um relatório agendado regularmente com um intervalo de datas em andamento ou se tiver um intervalo de datas não convencional e precisar estar livre da data de início.
 
-   ![Captura de tela mostrando a data de início na lista de dimensões.](./assets/start-date-dimension.png){width="15%"}
+   ![Captura de tela mostrando a data de início na lista de dimensões.](./assets/start-date-dimension.png){width="30%"}
 
 1. Organize os itens no painel Tabela para personalizar o layout do bloco de dados.
 
