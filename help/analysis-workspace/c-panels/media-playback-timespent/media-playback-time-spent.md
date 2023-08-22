@@ -4,21 +4,37 @@ description: Como usar e interpretar o painel Tempo gasto com a reprodução de 
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 63%
+source-wordcount: '181'
+ht-degree: 28%
 
 ---
 
 # Painel Tempo gasto com a reprodução da mídia
 
-Você pode analisar o tempo de reprodução gasto para entender onde ocorreu o pico de simultaneidade ou onde ocorreram quedas para fornecer insights valiosos sobre a qualidade do conteúdo e o engajamento do visualizador e para ajudar na solução de problemas ou no planejamento de volume ou escala.
+No Analysis Workspace, o Tempo gasto com a reprodução é a quantidade de tempo gasto visualizando seus fluxos de mídia em um momento específico. Inclui pausa, buffer e hora de início.
 
-No Analysis Workspace, o Tempo gasto com a reprodução é a quantidade de tempo gasto visualizando os fluxos de mídia em um momento específico e inclui os períodos de pausa, buffer e tempo para iniciar.
+O Tempo gasto com a reprodução da mídia ajuda na análise da reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar.
 
-O Tempo gasto com a reprodução da mídia ajuda na análise da reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar. Para acessar o painel Tempo gasto com a reprodução da mídia, navegue até uma visualização de dados com os componentes do Media Analytics ativados. Em seguida, clique no ícone do painel na extremidade esquerda e arraste o painel para o Projeto do Analysis Workspace.
+Os clientes do Media Analytics podem analisar o tempo de reprodução gasto para obter informações valiosas sobre a qualidade do conteúdo e o envolvimento do visualizador e para ajudar na solução de problemas ou no planejamento de volume ou escala.
 
-Esse painel também inclui uma nova funcionalidade no calendário, que permite selecionar e exibir menos de 24 horas. Você pode fazer isso para todo o painel ou pode criar filtros usando períodos consecutivos para rastrear a entrada/saída de visualizações em programas ou seções de programas. Depois de colocar pelo menos dois desses filtros de data, você verá um botão de opção para Exibição de sequência de data, que sobreporá as linhas com um início comum do eixo x ou exibirá em sequência com seu início específico do eixo x.
+O Tempo gasto com a reprodução pode ajudá-lo a entender:
+
+* Em que ocorreu o pico de simultaneidade
+
+* Onde as quedas ocorreram
+
+## Usar o painel Tempo gasto com a reprodução de mídia
+
+1. Acesse um conjunto de relatórios com os componentes do Media Analytics ativados.
+
+1. Selecione o ícone do painel na extremidade esquerda e arraste o painel para o projeto do Analysis Workspace.
+
+1. Personalize o painel Tempo gasto com a reprodução da mídia.
+
+   Para obter informações sobre opções de configuração específicas, consulte [Entradas e saídas do painel Tempo gasto com reprodução de mídia](/help/analysis-workspace/c-panels/media-playback-timespent/panel-inputs-outputs.md).
+
+## Vídeo de visão geral
 
 >[!VIDEO](https://video.tv.adobe.com/v/338699)

@@ -4,9 +4,9 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 0160aee587c1f88e4889f26757b1962c3d59b9fa
+source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
 workflow-type: tm+mt
-source-wordcount: '2550'
+source-wordcount: '2566'
 ht-degree: 97%
 
 ---
@@ -20,6 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Agosto de 2023** | |
+| Painel Tempo gasto com a reprodução da mídia | Conteúdo atualizado para  [Painel Tempo gasto com a reprodução da mídia](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) para melhorar a legibilidade. |
 | Aprimoramentos do Report Builder | Conteúdo atualizado para [Agendar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) para fornecer informações para baixar tarefas agendadas. Conteúdo atualizado para  [Criar um bloco de dados](/help/report-builder/create-a-data-block.md) para fornecer informações sobre como usar a Data inicial como uma dimensão. |
 | Conteúdo movido sobre o gerenciamento de projetos agendados | Criado um novo artigo no Guia de componentes do Analytics chamado [Projetos agendados](/help/components/scheduled-projects-manager.md). Este conteúdo estava anteriormente localizado no [Agendar projetos](/help/analysis-workspace/curate-share/t-schedule-report.md) no Guia de ferramentas do Analytics. |
 | Compatibilidade com recursos do Adobe Customer Journey Analytics | Foram adicionadas mais informações na tabela *Compatível de uma nova maneira* sobre os recursos de sessão no Customer Journey Analytics em comparação ao Adobe Analytics. [Saiba mais](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
