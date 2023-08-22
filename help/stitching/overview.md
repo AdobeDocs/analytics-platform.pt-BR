@@ -3,10 +3,10 @@ title: Visão geral da compilação
 description: Visão geral da compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-source-git-commit: d7dd5f4f0ef53e61755cf02c49c2f7f081ff4b39
+source-git-commit: 52d47e777e8c9f7e1e73f4131f19d7df280cb2a3
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 25%
+source-wordcount: '1322'
+ht-degree: 24%
 
 ---
 
@@ -18,7 +18,7 @@ Quando você combina conjuntos de dados com IDs de pessoa semelhantes, a atribui
 
 Infelizmente, nem todos os conjuntos de dados baseados em eventos que fazem parte da sua conexão no Customer Journey Analytics estão preenchidos com dados suficientes para dar suporte a essa atribuição pronta para uso. Especialmente, os conjuntos de dados de experiência baseados na Web ou em dispositivos móveis geralmente não têm informações reais de ID de pessoa disponíveis em todos os eventos.
 
-A compilação permite rechavear identidades em linhas de um conjunto de dados, garantindo que a ID de pessoa (ID compilada) esteja disponível em cada evento. A compilação analisa os dados do usuário de sessões autenticadas e não autenticadas para determinar o valor de ID transitória comum que pode ser usado como ID compilada. Isso permite consolidar registros desiguais em uma única ID compilada para análise no nível da pessoa, em vez de no nível do dispositivo ou do cookie.
+A compilação permite rechavear identidades em linhas de um conjunto de dados, garantindo que a ID de pessoa (ID compilada) esteja disponível em cada evento. A compilação analisa os dados do usuário de sessões autenticadas e não autenticadas para determinar o valor de ID transitória comum que pode ser usado como ID compilada. Esse rechaveamento permite resolver registros desiguais em uma única ID compilada para análise no nível da pessoa, em vez de no nível do dispositivo ou do cookie.
 
 Você se beneficia da análise entre canais se combinar um ou mais conjuntos de dados compilados com outros conjuntos de dados, como dados da central de atendimento, como parte da definição da conexão Customer Journey Analytics. Isso pressupõe que esses outros conjuntos de dados já contenham uma ID de pessoa em cada linha, semelhante à ID compilada.
 
@@ -102,9 +102,11 @@ Once the data view is set up, the cross-channel analysis in Customer Journey Ana
 
 >[!IMPORTANT]
 >
->Aplique qualquer alteração feita ao esquema do conjunto de dados do evento global também ao novo esquema do conjunto de dados compilado, caso contrário, ela quebrará o conjunto de dados compilado.
+>* Aplique qualquer alteração feita ao esquema do conjunto de dados do evento global também ao novo esquema do conjunto de dados compilado, caso contrário, ela quebrará o conjunto de dados compilado.
 >
->Além disso, se você remover o conjunto de dados de origem, o conjunto de dados compilado parará de ser processado e será removido pelo sistema.
+>* Se você remover o conjunto de dados de origem, o conjunto de dados compilado parará de ser processado e será removido pelo sistema.
+>
+>* Os rótulos de uso de dados não são propagados automaticamente para o esquema do conjunto de dados compilado. Se você tiver rótulos de uso de dados aplicados ao esquema do conjunto de dados de origem, será necessário aplicar manualmente esses rótulos de uso de dados ao esquema do conjunto de dados compilado. Consulte [Gerenciamento de rótulos de uso de dados no Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html?lang=pt-BR) para obter mais informações.
 
 A costura é um recurso inovador e robusto, mas tem limitações na forma de uso.
 
@@ -123,7 +125,7 @@ Não confunda a compilação com:
 
 * A mesclagem de dois ou mais conjuntos de dados. A compilação se aplica a apenas um conjunto de dados. A mesclagem de conjuntos de dados ocorre como resultado da configuração de uma conexão Customer Journey Analytics e da seleção da mesma ID de pessoa nos conjuntos de dados selecionados na conexão.
 
-* A associação de dois conjuntos de dados. No Customer Journey Analytics, uma junção é frequentemente usada para pesquisas ou classificações no Analysis Workspace. Embora a compilação use a funcionalidade de associação, o próprio processo envolve muito mais do que associações.
+* A associação de dois conjuntos de dados. No Customer Journey Analytics, uma junção é frequentemente usada para pesquisas ou classificações no Analysis Workspace. Embora a compilação use a funcionalidade de associação, o próprio processo envolve mais do que associações.
 
 
 
