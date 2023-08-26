@@ -3,16 +3,16 @@ title: Visão geral de publicação do Customer Journey Analytics Audiences
 description: Saiba mais sobre o conceito de publicação de público-alvo no Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 3a3122934e0fb3d89ac94cc8be8799d43dd1c987
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '516'
 ht-degree: 54%
 
 ---
 
 # Visão geral de publicação do Customer Journey Analytics Audience
 
-Agora você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCDP) no Adobe Experience Platform para direcionamento e personalização de clientes.
+Agora você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics para [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
 A publicação de públicos-alvo fornece uma maneira clara de ativar e executar ações em insights encontrados no Customer Journey Analytics. Essas ações podem incluir:
 
@@ -22,7 +22,7 @@ A publicação de públicos-alvo fornece uma maneira clara de ativar e executar 
 * Tudo isso é feito com latência mínima após publicar o público. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=pt-BR#latency)
 * Publicação de públicos-alvo únicos ou públicos-alvo recorrentes.
 
-Os públicos-alvo criados no Customer Journey Analytics não precisam se basear em conjuntos de dados habilitados para o perfil. Você pode assimilar dados históricos no Experience Platform sem ativar conjuntos de dados e esquemas associados para o perfil. Em seguida, use esses conjuntos de dados para descobrir públicos relevantes no Customer Journey Analytics e publicá-los no RTCDP no Experience Platform para fins de ativação.
+Os públicos-alvo criados no Customer Journey Analytics não precisam se basear em conjuntos de dados habilitados para o perfil. Você pode assimilar dados históricos no Experience Platform sem ativar conjuntos de dados e esquemas associados para o perfil. Em seguida, use esses conjuntos de dados para descobrir públicos relevantes no Customer Journey Analytics e publicá-los no Perfil do cliente em tempo real no Experience Platform para fins de ativação.
 
 ## Terminologia principal
 
