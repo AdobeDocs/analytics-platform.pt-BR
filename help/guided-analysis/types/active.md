@@ -3,9 +3,10 @@ title: Exibição ativa
 description: Identifique quem é novo, retido, recorrente ou inativo.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
-source-git-commit: 4cae5968e2ae1b6048522b9eb065d4b6e2272938
+keywords: análise do produto
+source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '597'
 ht-degree: 2%
 
 ---
