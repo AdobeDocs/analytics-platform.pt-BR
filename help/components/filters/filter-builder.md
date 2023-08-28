@@ -3,9 +3,9 @@ description: O Construtor de filtros fornece uma tela para arrastar e soltar Dim
 title: Criar filtros
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 35c57e883794c74553ab14d6e99e55824d41d4be
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1252'
 ht-degree: 23%
 
 ---
@@ -30,51 +30,29 @@ Você pode acessar o Construtor de filtros de qualquer uma das seguintes maneira
 
 ![](assets/segment_builder_ui_2.png)
 
-1. **[!UICONTROL Título]**: Nomeie o filtro.
-1. **[!UICONTROL Descrição]**: forneça uma descrição para o filtro.
-1. **[!UICONTROL Tags]**: [Marcar o filtro](/help/components/filters/manage-filters.md) você está criando ao selecionar de uma lista de tags existentes ou criar uma nova tag.
-1. **[!UICONTROL Definições]**: É aqui que você [criar e configurar filtros](/help/components/filters/filters-overview.md), adicione regras, aninhe e sequencie contêineres.
-1. **[!UICONTROL Mostrar]**: (seletor de contêiner superior.) Permite selecionar o nível superior [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Evento]). O container de nível superior padrão é o container Evento.
-1. Ícone **[!UICONTROL Opções]**: (engrenagem)
-
-   * **[!UICONTROL + Adicionar contêiner]**: permite adicionar um novo contêiner (abaixo do contêiner de nível superior) à definição do filtro.
-   * **[!UICONTROL Excluir]**: permite definir o filtro excluindo uma ou mais dimensões, filtros ou métricas.
-
-1. **[!UICONTROL Dimensões]**: os componentes são arrastados e soltos na lista Dimensões (barra lateral laranja).
-1. **[!UICONTROL Operador]**: é possível comparar e restringir valores utilizando operadores selecionados.
-1. **[!UICONTROL Valor]**: o valor inserido ou selecionado para a dimensão, filtro ou métrica.
-1. **[!UICONTROL Modelos de atribuição]**: disponível somente para dimensões, esses modelos determinam quais valores filtrar em uma dimensão. Os modelos de Dimension são particularmente úteis em filtros sequenciais.
-
-   * **[!UICONTROL Repetição]** (padrão): inclui instâncias e valores persistentes da dimensão.
-   * **[!UICONTROL Instância]**: inclui instâncias da dimensão.
-   * **[!UICONTROL Instância de não repetição]**: inclui instâncias exclusivas (não repetitivas) da dimensão. Esse é o modelo aplicado no Fluxo quando instâncias repetidas são excluídas.
-
-   ![](assets/attribution-models.jpg)
-
-   **Exemplo: Filtro de evento onde eVar 1 = A**
-
-   | Exemplo | A | A | A (persistente) | B | A | C |
-   |---|---|---|---|---|---|---|
-   | Repetição | X | X | X | - | X | - |
-   | Instância | X | X | - | - | X | - |
-   | Instância de não repetição | X | - | - | - | X | - |
-1. **[!UICONTROL And/Or/Then]**: atribui os operadores [!UICONTROL AND/OR/THEN] entre contêineres ou regras. O operador THEN permite [definir filtros sequenciais](/help/components/filters/filters-overview.md).
-1. **[!UICONTROL Métrica]**: (barra lateral verde) métrica que foi arrastada e solta na lista de Métricas.
-1. Operador **[!UICONTROL Comparação]**: é possível comparar e restringir valores com operadores selecionados.
-1. **[!UICONTROL Valor]**: o valor inserido ou selecionado para a dimensão, filtro ou métrica.
-1. **[!UICONTROL X]**: (excluir) permite excluir essa parte da definição de filtro.
-1. **[!UICONTROL publicação de Experience Cloud]**: a publicação de um filtro do Adobe Analytics no Experience Cloud permite usar o filtro para atividade de marketing no [!DNL Audience Manager] e em outros canais de ativação. [Saiba mais...](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=pt-BR)
-1. **[!UICONTROL Biblioteca de público-alvo]**: os serviços de público-alvo do Adobe gerenciam a conversão dos dados da pessoa em filtros de público-alvo. Assim, criar e gerenciar públicos é como criar e usar filtros, com a capacidade adicional de compartilhar o filtro de público com o Experience Cloud. [Saiba mais...](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=pt-BR)
-1. **[!UICONTROL Pesquisar]**: pesquisa a lista de dimensões, filtros ou métricas.
-1. **[!UICONTROL Dimensões]**: (Lista) clique no cabeçalho para expandir.
-1. **[!UICONTROL Métrica]**: clique no cabeçalho para expandir.
-1. **[!UICONTROL Filtros]**: clique no cabeçalho para expandir.
-1. **[!UICONTROL Seletor de visualização de dados]**: permite selecionar o conjunto de relatórios em que esse filtro será salvo. Você ainda pode utilizar o filtro em todas as visualizações de dados.
-1. **[!UICONTROL Visualização do filtro]**: permite que você visualize as métricas principais para ver se você tem um filtro válido e a amplitude deste. Representa o detalhamento do conjunto de dados que se pode esperar ao aplicar esse filtro. Mostra 3 círculos concêntricos e uma lista para mostrar o número e a porcentagem de correspondências para [!UICONTROL Evento], [!UICONTROL Person], e [!UICONTROL Session] para um filtro executado em um conjunto de dados. Esse gráfico é atualizado imediatamente após a criação ou alteração da definição do filtro.
-1. **[!UICONTROL Compatibilidade do produto]**: fornece uma lista de quais produtos da Adobe Analytics (Analysis Workspace, [!UICONTROL Reports &amp; Analytics], Data Warehouse) com o qual o filtro criado é compatível. A maioria dos filtros é compatível com todos os produtos. Contudo, nem todos os operadores e dimensões são compatíveis com todos os produtos Analytics, especialmente o [Data Warehouse](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-compatibility.html). Esse gráfico é atualizado imediatamente após você fazer alterações na definição do filtro.
-1. **[!UICONTROL Salvar]** ou **[!UICONTROL Cancelar]**: salva ou cancela o filtro. Depois de clicar em **[!UICONTROL Salvar]**, você é levado para o Gerenciador de filtros, onde é possível gerenciar o filtro.
-
-Filtros com intervalos de datas incorporados continuam a operar de forma diferente no Analysis Workspace em comparação [!UICONTROL Reports &amp; Analytics]: no Workspace, um filtro com um intervalo de datas inserido substitui o intervalo de datas do painel. Em contrapartida, [!UICONTROL Reports &amp; Analytics] gera a interseção entre o intervalo de datas do relatório e o intervalo de datas inserido do filtro.
+| Elemento da interface | Descrição |
+| --- | --- |
+| **[!UICONTROL Título]** | Nomear o filtro |
+| **[!UICONTROL Descrição]** | Forneça uma descrição detalhada para o filtro. |
+| **[!UICONTROL Tags]** | [Marcar o filtro](/help/components/filters/manage-filters.md) você está criando ao selecionar de uma lista de tags existentes ou criar uma nova tag. |
+| **[!UICONTROL Definições]** | É aqui que você [criar e configurar filtros](/help/components/filters/filters-overview.md), adicione regras, aninhe e sequencie contêineres. |
+| **[!UICONTROL Incluir]** | (Seletor Contêiner superior.) Permite selecionar o nível superior [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Evento]). O container de nível superior padrão é o container Evento. |
+| **[!UICONTROL Opções]** | Ícone (engrenagem) | <ul><li>**[!UICONTROL + Adicionar contêiner]**: permite adicionar um novo contêiner (abaixo do contêiner de nível superior) à definição do filtro.</li><li>**[!UICONTROL Excluir]**: permite definir o filtro excluindo uma ou mais dimensões, filtros ou métricas.</li></ul> |
+| **[!UICONTROL Dimensões]** | Os componentes são arrastados e soltos na lista Dimension (barra lateral laranja). |
+| **[!UICONTROL Operador]** | É possível comparar e restringir valores com operadores selecionados. (é igual a, não é igual, contém, contém todos os, etc.) |
+| **[!UICONTROL Valor]** | O valor inserido ou selecionado para a dimensão, filtro ou métrica. |
+| **[!UICONTROL Modelos de atribuição]** | Disponível somente para dimensões, esses modelos determinam quais valores filtrar em uma dimensão. Os modelos de Dimension são particularmente úteis em filtros sequenciais.<ul><li>**[!UICONTROL Repetição]** (padrão): inclui instâncias e valores persistentes da dimensão.</li><li>**[!UICONTROL Instância]**: inclui instâncias da dimensão.</li><li>**[!UICONTROL Instância de não repetição]**: inclui instâncias exclusivas (não repetitivas) da dimensão. Esse é o modelo aplicado no Fluxo quando instâncias repetidas são excluídas.</li></ul>Para obter um exemplo, consulte a seção &quot;Modelos de atribuição&quot; abaixo. |
+| **[!UICONTROL And/Or/Then]** | Atribui os operadores [!UICONTROL E/OU/ENTÃO] entre contêineres ou regras. O operador THEN permite [definir filtros sequenciais](/help/components/filters/filters-overview.md). |
+| **[!UICONTROL Métrica]** | (Barra lateral verde) Métrica que foi arrastada e solta na lista de Métricas. |
+| **[!UICONTROL X]** | (Excluir) Permite excluir essa parte da definição de filtro. |
+| **[!UICONTROL Criar público a partir do filtro]** | A criação de um público-alvo a partir de um filtro permite que você compartilhe o filtro com o Adobe Experience Platform para ativação. [Saiba mais...](/help/components/audiences/audiences-overview.md) |
+| **[!UICONTROL Componente de pesquisa]** | Pesquisa a lista de dimensões, filtros ou métricas. |
+| **[!UICONTROL Dimensões]** | (Lista) A lista de dimensões que você pode incluir no filtro. Clique no cabeçalho para expandir. |
+| **[!UICONTROL Métricas]** | A lista de métricas que você pode incluir no filtro. Clique no cabeçalho para expandir. |
+| **[!UICONTROL Filtros]** | A lista de filtros existentes que podem ser incluídos no filtro. Clique no cabeçalho para expandir. |
+| **[!UICONTROL Seletor de visualização de dados]** | Permite selecionar o conjunto de relatórios em que esse filtro será salvo. Você ainda pode utilizar o filtro em todas as visualizações de dados. |
+| **[!UICONTROL Visualização do filtro]** | Permite que você visualize as métricas principais para conferir se você tem um filtro válido e a amplitude deste. Representa o detalhamento do conjunto de dados que se pode esperar ao aplicar esse filtro. Mostra 3 círculos concêntricos e uma lista para mostrar o número e a porcentagem de correspondências para [!UICONTROL Pessoas], [!UICONTROL Sessões], e [!UICONTROL Execução de relatórios] para um filtro executado em um conjunto de dados.<p>Esse gráfico é atualizado imediatamente após a criação ou alteração da definição do filtro. |
+| **[!UICONTROL Salvar]** ou **[!UICONTROL Cancelar]** | Salva ou cancela o filtro. Depois de clicar em **[!UICONTROL Salvar]**, você é levado para o Gerenciador de filtros, onde é possível gerenciar o filtro. |
 
 ## Criar um filtro {#build-filters}
 
@@ -91,7 +69,7 @@ Filtros com intervalos de datas incorporados continuam a operar de forma diferen
 
    Você é levado para o [Gerenciador de filtros](/help/components/filters/manage-filters.md), onde é possível marcar, compartilhar e gerenciar o filtro de várias maneiras.
 
-## Adicionar contêiners {#section_1C38F15703B44474B0718CEF06639EFD}
+## Adicionar contêiners {#containers}
 
 É possível [construir uma estrutura de contêineres](/help/components/filters/filters-overview.md) e, em seguida, colocar regras de lógica e operadores entre eles.
 
@@ -109,7 +87,7 @@ Filtros com intervalos de datas incorporados continuam a operar de forma diferen
 
    Selecione uma ou mais regras, em seguida, clique em **[!UICONTROL Opções]** > **[!UICONTROL Adicionar contêiner da seleção]**. Isso transforma sua seleção em um contêiner separado.
 
-## Utilize intervalos de datas {#concept_252A83D43B6F4A4EBAB55F08AB2A1ACE}
+## Utilize intervalos de datas {#date-ranges}
 
 Você pode criar filtros que contêm intervalos de datas flexíveis para responder questões sobre campanhas ou eventos em andamento.
 
@@ -121,7 +99,7 @@ Veja um vídeo sobre o uso de intervalos de datas contínuas em filtros:
 
 >[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
 
-## Empilhar filtros {#task_58140F17FFD64FF1BC30DC7B0A1B0E6D}
+## Empilhar filtros {#stack}
 
 O empilhamento de filtros funciona ao combinar os critérios em cada filtro com um operador &quot;and&quot;, em seguida, ao aplicar os critérios combinados. Isso pode ser feito diretamente em um projeto do Espaço de trabalho ou no Construtor de filtros.
 
@@ -152,3 +130,14 @@ Usando o empilhamento de filtros, você pode reduzir a contagem de filtros para 
 
 1. Selecione [!UICONTROL **Salvar**].
 
+## Modelos de atribuição {#attribution}
+
+![](assets/attribution-models.jpg)
+
+**Exemplo: Filtro de evento onde eVar 1 = A**
+
+| Exemplo | A | A | A (persistente) | B | A | C |
+|---|---|---|---|---|---|---|
+| Repetição | X | X | X | - | X | - |
+| Instância | X | X | - | - | X | - |
+| Instância de não repetição | X | - | - | - | X | - |
