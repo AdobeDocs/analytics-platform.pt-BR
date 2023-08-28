@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: e9c6aba709d0e75a42a16b455612e0cad1428779
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Agosto de 2023** | |
-| Painel Tempo gasto com a reprodução da mídia | Conteúdo atualizado para  [Painel Tempo gasto com a reprodução da mídia](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) para melhorar a legibilidade. |
-| Aprimoramentos do Report Builder | Conteúdo atualizado para [Agendar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) para fornecer informações para baixar tarefas agendadas. Conteúdo atualizado para  [Criar um bloco de dados](/help/report-builder/create-a-data-block.md) para fornecer informações sobre como usar a Data inicial como uma dimensão. |
-| Conteúdo movido sobre o gerenciamento de projetos agendados | Criado um novo artigo no Guia de componentes do Analytics chamado [Projetos agendados](/help/components/scheduled-projects-manager.md). Este conteúdo estava anteriormente localizado no [Agendar projetos](/help/analysis-workspace/curate-share/t-schedule-report.md) no Guia de ferramentas do Analytics. |
+| Painel Tempo gasto com a reprodução da mídia | O conteúdo do [Painel Tempo gasto com reprodução de mídia](/help/analysis-workspace/c-panels/media-playback-timespent/media-playback-time-spent.md) foi atualizado para melhorar a legibilidade. |
+| Aprimoramentos do Report Builder | O conteúdo de [Agendar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) foi atualizado para fornecer informações sobre como baixar tarefas agendadas. O conteúdo de [Criar um bloco de dados](/help/report-builder/create-a-data-block.md) foi atualizado para fornecer informações sobre como usar a data inicial como uma dimensão. |
+| Conteúdo sobre gerenciamento de projetos programados foi movido | Criado um novo artigo no Guia de componentes do Analytics chamado [Projetos programados](/help/components/scheduled-projects-manager.md). Este conteúdo estava anteriormente localizado no artigo [Agendar projetos](/help/analysis-workspace/curate-share/t-schedule-report.md) do Guia de ferramentas do Analytics. |
 | Compatibilidade com recursos do Adobe Customer Journey Analytics | Foram adicionadas mais informações na tabela *Compatível de uma nova maneira* sobre os recursos de sessão no Customer Journey Analytics em comparação ao Adobe Analytics. [Saiba mais](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Evolução a partir do Adobe Analytics | Atualização da seção *(Re)configurar canais de marketing* com uma referência ao modelo de função Canais de marketing de campos derivados. [Saiba mais](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
 | Guias de início rápido de assimilação de dados para aplicativos móveis e outras plataformas | Adição de guias de início rápido para assimilação de dados, que descrevem como assimilar e usar dados de aplicativos móveis ou outras plataformas (como aplicativos de desktop, jogos em consoles, aplicativos em decodificadores de sinais e dispositivos de IoT) no Customer Journey Analytics. [Saiba mais](../data-ingestion/data-ingestion.md) |
