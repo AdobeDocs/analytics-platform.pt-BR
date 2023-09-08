@@ -3,10 +3,10 @@ title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+source-git-commit: 15853fe7f37b1f0a3088f8dc108d7c65f1ef470a
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 61%
+source-wordcount: '1608'
+ht-degree: 60%
 
 ---
 
@@ -92,7 +92,7 @@ Em vários pontos antes, durante e depois da publicação do público-alvo, pode
 | Não exibido | Conector de origem do Adobe Analytics para o Analytics (A4T) | Até 30 minutos |
 | 1 | Assimilação de dados no Data Lake (do conector de origem do Analytics ou de outras fontes) | Até 90 minutos |
 | 2 | Assimilação de dados do Experience Platform Data Lake no Customer Journey Analytics | Até 90 minutos |
-| 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados. | Cerca de 60 minutos |
+| 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados.<p>**Nota**: o público-alvo é criado/definido no Experience Platform em 1-2 minutos. No entanto, leva cerca de 60 minutos para que o público-alvo comece a receber as IDs com base em critérios correspondentes e esteja pronto para ativação. | Cerca de 60 minutos |
 | 4 | Atualizar frequência dos públicos | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
 | 5 | Criação de destino no Adobe Experience Platform: ativação do novo segmento | 1 a 2 horas |
 
@@ -158,7 +158,7 @@ Não. Enviamos apenas uma identidade por “pessoa”, de modo que não haveria 
 
 +++**A que horas do dia ocorrem as atualizações diárias, semanais e mensais? Em que dia da semana ocorrem as atualizações semanais?**
 
-O momento da atualização se baseia no momento em que o público original foi publicado e se ancora a esse horário do dia (e dia da semana ou mês).
+O momento da atualização é baseado em quando o público original foi publicado e ancora esse horário do dia (e dia da semana ou mês).
 
 +++
 
