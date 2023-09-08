@@ -4,9 +4,9 @@ description: Identifique quem é novo, retido, recorrente ou inativo.
 exl-id: 0a300bb2-7620-4e29-a6b5-542476893009
 feature: Guided Analysis
 keywords: análise do produto
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: 35e009ca6c21754fe7127fe63eea41f8ed00943d
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '596'
 ht-degree: 2%
 
 ---
@@ -28,9 +28,9 @@ Todos os usuários ativos (novo + repetição + retorno) aparecem como uma sombr
 
 Os casos de uso para esse tipo de exibição incluem:
 
-* **[!UICONTROL Retenção e coro do usuário]n:** Fornece uma visualização clara em torno de períodos de alta ou baixa retenção de usuários. Reconhecer esses períodos de alta ou baixa retenção pode ajudar você a tomar decisões sobre o produto para incentivar alta retenção ou ajudar a minimizar o abandono.
-* **[!UICONTROL Avaliação de campanha]**: visualizar uma campanha específica pode ajudar você a entender não apenas o tráfego gerado, mas também o quão bem a campanha ajudou os usuários a permanecerem envolvidos.
-* **[!UICONTROL Análise do ciclo de vida do usuário]**: analisar o crescimento ativo do usuário em todo o ciclo de vida do usuário pode ajudar a identificar estágios específicos em que o engajamento do usuário diminui. Por exemplo, se houver uma alta proporção de usuários inativos para indivíduos em um estágio de integração, isso pode indicar problemas de usabilidade ou a necessidade de melhor orientação no produto.
+* **Retenção e churn de usuário:** Fornece uma visualização clara em torno de períodos de alta ou baixa retenção de usuários. Reconhecer esses períodos de alta ou baixa retenção pode ajudar você a tomar decisões sobre o produto para incentivar alta retenção ou ajudar a minimizar o abandono.
+* **Avaliação de campanha**: visualizar uma campanha específica pode ajudar você a entender não apenas o tráfego gerado, mas também o quão bem a campanha ajudou os usuários a permanecerem envolvidos.
+* **Análise do ciclo de vida do usuário**: analisar o crescimento ativo do usuário em todo o ciclo de vida do usuário pode ajudar a identificar estágios específicos em que o engajamento do usuário diminui. Por exemplo, se houver uma alta proporção de usuários inativos para indivíduos em um estágio de integração, isso pode indicar problemas de usabilidade ou a necessidade de melhor orientação no produto.
 
 ## Painel de consulta
 

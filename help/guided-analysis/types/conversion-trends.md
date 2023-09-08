@@ -3,9 +3,9 @@ title: Exibição de tendências de conversão
 description: Rastreie as alterações na taxa de conversão ao longo do tempo.
 feature: Guided Analysis
 keywords: análise do produto
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: a40cfa2498bed03c169eed10cea091574bf90730
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Os casos de uso para esse tipo de exibição incluem:
 O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Etapas]**: os pontos de contato do evento que você deseja rastrear. Cada barra no gráfico representa uma etapa. É possível incluir até dez etapas.
-* **People**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
+* **[!UICONTROL Pessoas]**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
 
 ## Configurações de gráficos
 
