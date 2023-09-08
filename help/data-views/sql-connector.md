@@ -6,7 +6,7 @@ feature: SQL Connector
 hide: true
 hidefromtoc: true
 exl-id: 80feadef-3e2d-4901-8c82-25c56d296e9f
-source-git-commit: 7ae94bb46d542181c6438e87f204bd49c2128c8c
+source-git-commit: 1b03689820c91a823cd7cf8ff42e3f5ee46083e5
 workflow-type: tm+mt
 source-wordcount: '2938'
 ht-degree: 1%
@@ -100,13 +100,13 @@ Atualmente, o Customer Journey Analytics SQL Connector é compatível e testado 
 
    2. Selecionar **[!UICONTROL ** Credenciais **]** na barra superior.
 
-   3. Use ![ Copy ](assets/Smock_Copy_18_N.svg) para copiar cada um dos parâmetros de credenciais do postgres ( [!UICONTROL  host ] , [!UICONTROL  porta ] , [!UICONTROL  banco de dados ] , [!UICONTROL  nome de usuário ] e outros) quando necessário no Power bi.
+   3. Use ![o Copy](assets/Smock_Copy_18_N.svg) para copiar cada um dos parâmetros de credenciais do Postgres ([!UICONTROL Host], [!UICONTROL Porta], [!UICONTROL Banco de dados], [!UICONTROL Nome de usuário] e outros) quando necessário no Power BI.
 
 2. No Power BI:
 
-   1. Na janela principal, selecione **[!UICONTROL ** obter dados **]** da barra de ferramentas superior.
+   1. Na janela principal, selecione **[!UICONTROL ** Obter dados **]** na barra de ferramentas superior.
 
-   2. Selecione **[!UICONTROL ** mais... **]** à esquerda painel.
+   2. Selecione **[!UICONTROL ** Mais...**]** na painel esquerda.
 
    3. No **Obter dados** tela, pesquisar `PostgresSQL` e selecione o **[!UICONTROL ** Banco de dados PostgresSQL **]** da lista.
 
@@ -116,7 +116,7 @@ Atualmente, o Customer Journey Analytics SQL Connector é compatível e testado 
 
       2. Colar **[!UICONTROL ** Banco de dados **]** parâmetro de consultas Experience Platform [!UICONTROL Credenciais] in **[!UICONTROL ** Banco de dados **]** campo de texto.
 
-         Adicionar `?FLATTEN` para o **[!UICONTROL ** Banco de dados **]** parâmetro, é exibido como `prod:all?FLATTEN` por exemplo. Consulte [Nivelar estruturas de dados aninhadas para uso com ferramentas de BI de terceiros](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) para obter mais informações.
+         Adicionar `?FLATTEN` para o **[!UICONTROL ** Banco de dados **]** parâmetro, é exibido como `prod:cja?FLATTEN` por exemplo. Consulte [Nivelar estruturas de dados aninhadas para uso com ferramentas de BI de terceiros](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) para obter mais informações.
 
       3. Quando solicitado **[!UICONTROL ** Conectividade de dados **]** selecione **[!UICONTROL ** DirectQuery **]** para garantir que as estruturas de dados sejam niveladas corretamente.
 
@@ -158,21 +158,21 @@ Atualmente, o Customer Journey Analytics SQL Connector é compatível e testado 
 
       3. Colar **[!UICONTROL ** Banco de dados **]** parâmetro de consultas Experience Platform [!UICONTROL Credenciais] em **[!UICONTROL ** Banco de dados **]** campo de texto.
 
-         Adicionar `%3FFLATTEN` para o **[!UICONTROL ** Banco de dados **]** parâmetro, é exibido como `prod:all%3FFLATTEN` por exemplo. Consulte [Nivelar estruturas de dados aninhadas para uso com ferramentas de BI de terceiros](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) para obter mais informações.
+         Adicionar `%3FFLATTEN` para o **[!UICONTROL ** Banco de dados **]** parâmetro, é exibido como `prod:cja%3FFLATTEN` por exemplo. Consulte [Nivelar estruturas de dados aninhadas para uso com ferramentas de BI de terceiros](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=en) para obter mais informações.
 
       4. Selecionar **[!UICONTROL ** Nome de usuário e senha **]** de **[!UICONTROL ** Autenticação **]** lista.
 
       5. Colar **[!UICONTROL ** Nome de usuário **]** parâmetro de consultas Experience Platform [!UICONTROL Credenciais] em **[!UICONTROL ** Nome de usuário **]** campo de texto.
 
-      6. Colar **[!UICONTROL ** parâmetro senha **]** a partir de Experience Platform consulta [!UICONTROL  as credenciais ] no **[!UICONTROL ** campo de texto senha **]** .
+      6. **[!UICONTROL ** Colar Senha **]** parâmetro das Credenciais] Experience Platform de Consultas [!UICONTROL para **[!UICONTROL ** Senha **]** campo de texto.
 
-      7. Selecione **[!UICONTROL ** fazer logon **]** .
+      7. Selecione **[!UICONTROL ** Fazer logon **]**.
 
-   4. Customer Journey Analytics visualizações de dados são exibidas como tabelas na **[!UICONTROL ** tabela **]** lista. As tabelas de visualização de `dv_` dados têm o prefixo.
+   4. Customer Journey Analytics as visualizações de dados aparecem como tabelas na lista da **[!UICONTROL ** Tabela **]** . Tabelas de visualização de dados recebem o prefixo `dv_`.
 
    5. Arraste as tabelas que deseja usar na tela.
 
-   Agora você pode trabalhar com os dados das tabelas de visualização de dados para build seus relatórios e visualizações.
+   Agora é possível trabalhar com os dados das tabelas de visualização de dados para build seus relatórios e visualizações.
 
    Consulte [Conectar o Tableau ao Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=en) para obter mais informações.
 
@@ -230,8 +230,8 @@ Consulte a tabela abaixo para obter exemplos do SQL que você pode usar.
 
 | Padrão | Exemplo |
 |---|---|
-| Descoberta de esquema | <pre>SELECT * FROM DV1 em que 1 = 0</pre> |
-| Classificado/detalhamento | <pre>Selecione dim1, SUM (metric1) como M1 <br/> de DV1 <br/> em que \ &#39; timestamp \ &#39; entre &#39; 2022-01-01 &#39; e &#39; 2022-01-02 &#39; <br/> Agrupar por dim1</pre><pre>Selecione dim1, SUM (metric1) como M1 <br/> de DV1 <br/> em que \ &#39; timestamp \ &#39; entre &#39; 2022-01-01 &#39; e &#39; 2022-01-02 &#39; e <br/>  filterid = &#39; 12345 &#39; <br/> Agrupar por dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  AND (dim2 = &#39;A&#39; OU dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
+| Descoberta de esquema | <pre>SELECT * FROM dv1 WHERE 1=0</pre> |
+| Classificado /Detalhamento | <pre>SELECIONE dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \&#39;timestamp\&#39; BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39;GROUP<br/> BY dim1</pre><pre>SELECIONE dim1, SUM(metric1) AS m1<br/>FROM dv1<br/>WHERE \&#39;timestamp\&#39; BETWEEN &#39;2022-01-01&#39; AND &#39;2022-01-02&#39; AND<br/>  filterId = &#39;12345&#39;GROUP<br/> BY dim1</pre><pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39; E<br/>  AND (dim2 = &#39;A&#39; OU dim3 IN (&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;))<br/>GROUP BY dim1</pre> |
 | Cláusula HAVING | <pre>SELECT dim1, SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1<br/>COM m1 > 100</pre> |
 | Distinto, início <br/>valores de dimensão | <pre>SELECIONAR dim1 DISTINTA DE dv1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;<br/>GROUP BY dim1</pre><pre>SELECIONAR dim1 AS dv1<br/>DE dv1<br/>ONDE \`timestamp\` >= &#39;01-01-2022&#39; E \`timestamp\` &lt; &#39;02-01-2022&#39;<br/>GROUP BY dim1<br/>ORDENAR POR SOMA(metric1)<br/>LIMITE 15</pre> |
 | Totais de métricas | <pre>SELECT SUM(metric1) AS m1<br/>DE dv1<br/>ONDE \`timestamp\&#39; ENTRE &#39;2022-01-01&#39; E &#39;2022-01-02&#39;</pre> |
@@ -248,7 +248,7 @@ Consulte a tabela abaixo para obter exemplos do SQL que você pode usar.
 
 ### Dimensões
 
-É possível selecionar qualquer uma das dimensões disponíveis por padrão ou definidas na visualização de dados. Você seleciona uma dimensão por sua ID.
+É possível selecionar qualquer uma das dimensões disponíveis por padrão ou definidas na visualização de dados. Selecione um dimensão pela ID.
 
 ### Métricas
 
@@ -256,7 +256,7 @@ As métricas disponíveis para seleção são:
 
 - qualquer uma das métricas disponíveis por padrão,
 
-- definido na visualização de dados,
+- definido no visualização de dados,
 
 - métricas calculadas compatíveis com a Visualização de dados à qual o usuário tem acesso.
 
@@ -297,8 +297,8 @@ SUM(CASE WHEN dim1 = 'X' AND dim2 = 'A' THEN METRIC1 END) AS m1
 | `+`, `-`, `*`, `/`, e `%` | Adicionar, subtrair, multiplicar, dividir e modular/restante |
 | `-X` ou `+X` | Alteração do sinal ou de uma métrica em que X é a expressão da métrica |
 | `PI()` | constante π |
-| `POSITIVE`, `NEGATIVE` ,, `FLOOR` `CEIL` ,, `CEILING` , `EXP` `LN` ,, `LOG10` `LOG1P` `SQRT` `CBRT` ,,, `ACOS` `TAN` `ASIN` `COS` `SINH` `DEGREES` `COSH` `RADIANS` `ATAN` `SIN` ,,,,,,,,,, e `ABS``TANH` | Funções matemáticas unários |
-| `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | Binário funções matemáticas |
+| `POSITIVE`, `NEGATIVE`, `ABS`, `FLOOR`, `CEIL`, `CEILING`, `EXP``LN`, , `LOG10`, `LOG1P`, `SQRT`, `CBRT`, `DEGREES``RADIANS`, , `SIN`, `COS`, `TAN`, , `ACOS`, `ASIN`, `ATAN`, , `COSH`, `SINH`e`TANH` | Funções matemáticas unárias |
+| `MOD`, `POW`, `POWER`, `ROUND`, `LOG` | Funções matemáticas Binário |
 
 {style="table-layout:auto"}
 
@@ -357,7 +357,7 @@ ORDER BY -metric1 DESC
 
 | Função | Exemplo | Detalhes |
 |---|---|---|
-| [CAST (Column AS Type)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` ou <br/> `` `timestamp`::string `` | Atualmente, a conversão de tipo não é suportada, mas nenhum erro é lançado. A `CAST` função é ignorada. |
+| [CAST(column AS type)](https://spark.apache.org/docs/latest/api/sql/index.html#cast) | ``CAST(`timestamp` AS STRING)`` ou <br/> `` `timestamp`::string `` | O tipo de elenco não é suportado no momento, mas nenhum erro é lançado. A `CAST` função é ignorada. |
 | [TIMESTAMP(timeString)](https://spark.apache.org/docs/latest/api/sql/index.html#timestamp) | `` WHERE `timestamp` >= TIMESTAMP('2022-01-01 00:00:00') AND   `timestamp` < TIMESTAMP('2022-01-02 00:00:00') `` | Analisar uma string de tempo como um carimbo de data e hora para uso em um `WHERE` Cláusula. |
 | [TO_TIMESTAMP(timeString, formatString)](https://spark.apache.org/docs/latest/api/sql/index.html#to_timestamp) | `` WHERE `timestamp` >= TO_TIMESTAMP('01/01/2022', 'MM/dd/yyyy') AND `timestamp` < TO_TIMESTAMP('01/02/2022', 'MM/dd/yyyy') `` | Analisar uma string de tempo como um carimbo de data e hora para uso em um `WHERE` opcionalmente, fornecendo um formato para essa string de tempo. |
 | [DATE(dateString)](https://spark.apache.org/docs/latest/api/sql/index.html#date) | `` WHERE `timestamp` >= DATE('2022-01-01') AND `timestamp` < DATE('2022-01-02') `` | Analisar uma cadeia de caracteres de data como um carimbo de data e hora para usar em um `WHERE` Cláusula. |
