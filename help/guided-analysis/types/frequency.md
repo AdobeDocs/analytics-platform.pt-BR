@@ -3,9 +3,9 @@ title: Visualização de frequência
 description: Meça o engajamento pela frequência de uso.
 feature: Guided Analysis
 keywords: análise do produto
-source-git-commit: 1e095720301f3e59e88674d086f5e0de9df88872
+source-git-commit: 77192426a58e1560abe91b904452b9cd46c862e9
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 3%
 
 ---
@@ -13,6 +13,8 @@ ht-degree: 3%
 # [!UICONTROL Frequência] exibir
 
 A variável **[!UICONTROL Frequência]** visualize os dados do evento de grupos de acordo com a frequência com que um evento é visto. O eixo vertical deste relatório contém intervalos que representam a frequência do evento ou eventos exibidos. O eixo horizontal mede o número de usuários ou sessões para cada bucket.
+
+![Captura de tela de frequência](../assets/frequency-stacked.png)
 
 ## Casos de uso
 
