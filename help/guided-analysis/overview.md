@@ -4,10 +4,10 @@ description: Um método de análise de dados em Customer Journey Analytics que p
 keywords: análise do produto
 exl-id: 6a8a92db-f030-424e-af9b-f8f6502084f6
 feature: Guided Analysis
-source-git-commit: 341ad5105be009bd6dd450f255a195961e5652a8
+source-git-commit: 55310a844f5928f0e97e7ea7f44ae146e103dafa
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 9%
+source-wordcount: '1188'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ Independentemente do tipo de análise, a análise guiada é composta pelos segui
 
 | Visualização da interface | Elemento da interface | Descrição |
 | --- | --- | --- |
-| ![Painel de consulta](assets/query-rail.png) | Painel de consulta | Configure os componentes desejados (eventos, propriedades e segmentos) que compõem uma análise. Cada tipo de análise impõe limites diferentes ao número de eventos e segmentos que podem ser configurados. Se você alternar para um novo tipo de análise, suas seleções de consulta serão mantidas dentro dos limites permitidos para esse tipo de análise. |
+| ![Painel de consulta](assets/query-rail.png) | Painel de consulta | Configure os componentes desejados (eventos, propriedades e segmentos) que compõem uma análise. Cada tipo de análise impõe limites diferentes ao número de eventos e segmentos que podem ser configurados.<p>Use o ícone de filtro para restringir por propriedades de evento específicas ou criar novos segmentos dinamicamente. Depois que uma propriedade é selecionada, além dos critérios de filtro padrão, como equals, contains e ends with, uma lista dos 1000 principais valores de propriedade será disponibilizada para filtragem rapidamente.<p>Se você alternar para um novo tipo de análise, suas seleções de consulta serão mantidas dentro dos limites permitidos para esse tipo de análise. |
 | ![Gráfico](assets/chart.png) | Gráfico | Uma visualização dos dados retornados com base na entrada do painel de consulta e nas configurações. A visualização exibida depende da exibição e das configurações acima do gráfico. As exibições disponíveis dependem do tipo de análise acima do painel de consulta. O gráfico também inclui: <ul><li>**Dicas de ferramenta**: passe o mouse sobre qualquer ponto de dados do gráfico para expor uma dica de ferramenta com mais informações.</li><li>**Legenda**: passe o mouse sobre a legenda do gráfico para expor as definições de série, quando disponíveis.</li><li>**Ações de clique**: exponha as próximas ações disponíveis clicando com o botão esquerdo do mouse em qualquer ponto de dados. As opções incluem **Salvar segmento**.</li></ul> |
 | ![Tabela](assets/table.png) | Tabela | Uma representação em tabela dos dados retornados com base na entrada do painel de consulta e nas configurações. As colunas na tabela dependem do tipo de exibição acima do gráfico. As exibições disponíveis dependem do tipo de análise acima do painel de consulta. A tabela também inclui: <ul><li>**Ações de clique**: Exponha as próximas ações disponíveis clicando no ícone **[!UICONTROL Mais]** menu. As opções incluem **Salvar segmento**.</li></ul> |
 | ![Configurações de visualização](assets/visualization-settings.png) | Configurações de visualização | Várias opções acima do gráfico que permitem personalizar como o gráfico e a tabela retornam dados.<ul><li>**Tipo de visualização**: um seletor suspenso que permite apresentar dados de um determinado tipo de análise de uma maneira diferente.</li><li>**Configurações do gráfico**: Ajuste o que seu gráfico e sua tabela exibem. As opções disponíveis dependem da visualização selecionada.</li><li>**Intervalo de datas**: um seletor de calendário que permite determinar o intervalo de datas da análise. Você também pode selecionar um intervalo para exibições de tendências, como diariamente, semanalmente ou mensalmente.</li><li>**Insights**: insights contextuais dependendo da análise que você visualiza. Você pode ir para insights adicionais usando as setas ou mostrar ou ocultar esses insights usando o ícone de lâmpada na parte superior direita.</li></ul> |
