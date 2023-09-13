@@ -4,16 +4,16 @@ description: Medir o engajamento do usuário ao longo do tempo.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: análise do produto
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+source-git-commit: f41d4a6c8d181ed05fdb34657d4c7677d50ade5a
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '522'
 ht-degree: 2%
 
 ---
 
 # [!UICONTROL Uso] exibir
 
-A variável **[!UICONTROL Uso]** A visualização fornece informações valiosas sobre o desempenho do produto ou o comportamento dos usuários ao longo do tempo. O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os eventos desejados.
+A variável **[!UICONTROL Uso]** A visualização fornece informações valiosas sobre o desempenho do seu produto ou o comportamento dos usuários ao longo do tempo. O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os eventos desejados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421666/?learn=on)
 
@@ -39,6 +39,12 @@ A variável [!UICONTROL Uso] view oferece as seguintes configurações de gráfi
 
 * **[!UICONTROL Métrica]**: A métrica que você deseja medir. As opções incluem Eventos, Sessões, Usuários, Eventos por sessão e Eventos por usuário.
 * **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Linha, Barra, Barra empilhada e Área empilhada.
+
+## Sobreposições
+
+Adicionar dados adicionais ao gráfico.
+
+* **[!UICONTROL Mostrar anomalias]**: executa a detecção de anomalias na análise. Outliers são exibidos como pontos nos quais você pode passar o mouse para obter mais informações.
 
 ## Aplicar comparação de tempo
 
