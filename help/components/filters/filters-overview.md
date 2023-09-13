@@ -3,10 +3,10 @@ title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 53a1a6995caad960d8daba4e0d1f4394aa184206
+source-git-commit: 8d681a956cc826642e8fc22081acd2c579543b2e
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 27%
+source-wordcount: '1171'
+ht-degree: 26%
 
 ---
 
@@ -73,13 +73,13 @@ Os filtros são baseados em uma hierarquia de nível de Pessoa, Sessão e Evento
 >[!NOTE]
 >O contêiner Pessoa era anteriormente conhecido como o contêiner Visitante. O contêiner Sessão era chamado de contêiner Visita, e o contêiner Evento costumava ser o contêiner Ocorrência.
 
-Um filtro define as condições para filtrar uma pessoa com base nos atributos ou interações dela com seu site, aplicativo móvel ou outro tipo de dispositivo do qual você coletou dados. Para definir condições em um filtro, você define regras para filtrar pessoas com base nas características de pessoa e/ou nas características de navegação. Para detalhar ainda mais os dados da pessoa, você pode filtrar com base em visitas específicas e/ou ocorrências de exibição de página, toques de tela, opções de menu para cada pessoa. O Construtor de filtros fornece uma arquitetura simples para construir esses subconjuntos e aplicar regras como contêineres Pessoa, Sessão ou Evento aninhados e hierárquicos.
+Um filtro define as condições para filtrar uma pessoa com base nos atributos ou interações dela com seu site, aplicativo móvel ou outro tipo de dispositivo do qual você coletou dados. Para definir condições em um filtro, você define regras para filtrar pessoas com base nas características de pessoa e/ou nas características de navegação. Para detalhar ainda mais os dados da pessoa, você pode filtrar com base em visitas específicas e/ou ocorrências de exibição de página, toques na tela, opções de menu em um decodificador de sinais para cada pessoa. Mas também filtre os atributos que você assimilou de um CRM ou sistema de fidelidade. O Construtor de filtros fornece uma arquitetura simples para construir esses subconjuntos e aplicar regras como contêineres Pessoa, Sessão ou Evento aninhados e hierárquicos.
 
-A arquitetura de contêiner empregada no Construtor de filtros define Pessoa como o contêiner mais externo. O container contém dados abrangentes específicos para a pessoa em visitas e visualizações de página, telas de aplicativos móveis ou telas de menu em um decodificador de sinais. Um contêiner Sessão aninhado permite definir regras para detalhar os dados da pessoa com base em sessões, e um contêiner Evento aninhado permite detalhar as informações da pessoa com base em visualizações de página individuais. Cada contêiner permite que você informe o histórico de uma pessoa, as interações detalhadas por sessões ou detalhar por eventos individuais.
+A arquitetura de contêiner empregada no Construtor de filtros define Pessoa como o contêiner mais externo. O container contém dados abrangentes específicos para a pessoa em visitas e visualizações de página, telas de aplicativos móveis ou telas de menu em um decodificador de sinais. Um contêiner Sessão aninhado permite definir regras para detalhar os dados da pessoa com base em sessões, e um contêiner Evento aninhado permite detalhar as informações da pessoa com base em interações individuais. Cada contêiner permite informar o histórico de uma pessoa, as interações detalhadas por sessões ou detalhar por eventos de experiência individuais.
 
 ### Contêiner pessoa {#person}
 
-O contêiner Pessoa inclui cada visita e visualização de página, tela de aplicativo móvel, decodificador de sinais ou interação entre jogos de console para pessoas em um intervalo de tempo especificado. Um filtro no nível de Pessoa retorna as exibições de página, o aplicativo móvel ou as telas do decodificador de sinais que atendem à condição. Além de todas as outras páginas e telas visualizadas pela mesma pessoa nos canais (e somente restritas por intervalos de datas definidos). Como o contêiner mais amplamente definido, os relatórios gerados no nível do contêiner Pessoa retornam exibições de página, telas de aplicativos móveis e muito mais em todas as visitas, e permite gerar uma análise entre canais de várias visitas. Portanto, o contêiner Pessoa é o mais susceptível às alterações com base em intervalos de datas definidos.
+O contêiner Pessoa inclui cada visita e visualização de página, tela de aplicativo móvel, decodificador de sinais ou interação entre jogos de console para pessoas em um intervalo de tempo especificado. Basicamente, todos os eventos de experiência que fazem parte dos conjuntos de dados definidos na conexão Customer Journey Analytics. Um filtro no nível de Pessoa retorna as exibições de página, o aplicativo móvel ou as telas do decodificador de sinais que atendem à condição. Além de todas as outras interações da mesma pessoa entre canais online e offline (e somente restritas por intervalos de datas definidos). Como o contêiner mais amplamente definido, os relatórios gerados no nível do contêiner Pessoa retornam exibições de página, telas de aplicativos móveis e muito mais, em todas as visitas, e permite gerar uma análise entre canais de várias visitas. Portanto, o contêiner Pessoa é o mais susceptível às alterações com base em intervalos de datas definidos.
 Os contêineres Pessoa podem incluir valores com base no histórico geral de uma pessoa:
 
 - Dias antes da primeira compra
@@ -101,7 +101,7 @@ Os contêineres Sessão incluem valores de acordo com a ocorrência por visita:
 - Métricas de participação
 - Métricas alocadas linearmente
 
-As visualizações de dados no Customer Journey Analytics permitem determinar a duração de uma sessão, mas também quando uma nova sessão deve ser criada. Por exemplo, você pode definir uma nova sessão de aplicativo móvel com base em quando um usuário inicia seu novo aplicativo. Consulte [Configurações de sessão](/help/data-views/session-settings.md) para obter mais informações.
+As visualizações de dados no Customer Journey Analytics permitem determinar a duração de uma sessão, mas também quando uma nova sessão deve ser criada. Por exemplo, você pode definir uma nova sessão de aplicativo móvel com base em toda vez que um usuário iniciar seu aplicativo móvel. Consulte [Configurações de sessão](/help/data-views/session-settings.md) para obter mais informações.
 
 ### Contêiner evento {#event}
 
