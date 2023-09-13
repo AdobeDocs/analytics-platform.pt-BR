@@ -3,10 +3,10 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 4de95c6c869e25a0301990669b7c8409ab025350
+source-git-commit: 795a30719c29e6352133987d5d0aaefcf9184a52
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 58%
+source-wordcount: '515'
+ht-degree: 59%
 
 ---
 
@@ -20,7 +20,7 @@ Essas notas de versão abrangem o período de lançamento de 13 de setembro de 2
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Suporte para classificações do A4T no conector de origem do Analytics** | Suporte para novos `correlationID` campo para o Adobe Analytics | A variável `_experience.decisioning.propositions.scopeDetails.correlationID` agora está disponível no esquema do conector de origem do Adobe Analytics. Esse campo é usado em suporte às classificações do A4T e será preenchido a partir de setembro de 2023. | | N/D | 12 de setembro de 2023 |
+| **Suporte para classificações do A4T no conector de origem do Analytics** | A variável `_experience.decisioning.propositions.scopeDetails.correlationID` agora está disponível no esquema do conector de origem do Adobe Analytics. Esse campo é usado em suporte às classificações do A4T e será preenchido a partir de setembro de 2023. | | N/D | 12 de setembro de 2023 |
 | **Atualizações a campos derivados** | As seguintes atualizações foram feitas à funcionalidade de campos derivados:<ul><li>A variável [!UICONTROL Pesquisa] A função foi renomeada para [!UICONTROL Classificar], com opções adicionais para carregar dados CSV. **(Versões de 27 de setembro de 2023)**</li><li>Funções adicionais estão disponíveis para uso ao definir um campo derivado: [!UICONTROL Cortar], [!UICONTROL Minúsculas] e [!UICONTROL Pesquisa].</li><li>As definições de campo derivado agora também aceitam campos de [!UICONTROL Pesquisa] e [!UICONTROL Perfil] conjuntos de dados.</li></ul>[Saiba mais](/help/data-views/derived-fields/derived-fields.md) | N/D | 13 de setembro de 2023 |
 | **Novos recursos no Adobe Product Analytics** | <ul><li>**Detecção de anomalias**: compare os eventos com os valores esperados com base em tendências históricas. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/usage.html)</li><li>**Visualização da frequência de uso das tendências**: meça a adoção de seus recursos por frequência de uso. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**Preferências do usuário**: configure várias preferências de usuário, como paletas de cores e formato de número. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/user-preferences.html?lang=pt-BR)</li></ul> | N/D | 18 de setembro de 2023 |
 | **Pesquisas de dispositivo da Experience Edge** | Habilite a coleta automática de dados do tipo de dispositivo por meio da rede de borda do Experience Platform. Esse serviço Experience Edge beneficia o Customer Journey Analytics juntamente com outros aplicativos Experience Platform. (Link de documentação a seguir) | N/D | 27 de setembro de 2023 |
