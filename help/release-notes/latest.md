@@ -3,40 +3,40 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 8f299dad39678047d362291cfe8a2a3c116071dd
+source-git-commit: 98bba7c7bc56cfc2a2436f13d833dbf6504d7d6e
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 100%
+source-wordcount: '528'
+ht-degree: 59%
 
 ---
 
-# Notas de versão atuais do Adobe Customer Journey Analytics (agosto de 2023)
+# Notas de versão atuais do Adobe Customer Journey Analytics (setembro de 2023)
 
-**Última atualização**: 24 de agosto de 2023
+**Última atualização**: 7 de setembro de 2023
 
-Essas notas de versão abrangem o período de lançamento de 9 de agosto a 13 de setembro de 2023. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
+Essas notas de versão abrangem o período de lançamento de 13 de setembro de 2023 a 3 de outubro de 2023. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
 ## Recursos novos ou atualizados
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Aprimoramentos do Report Builder** | <ul><li>É possível baixar uma tarefa agendada na guia Pastas de trabalho e, em seguida, nomeá-la, salvá-la e compartilhá-la. [Saiba mais](/help/report-builder/schedule-reportbuilder.md)</li><li>A data inicial como dimensão permite apresentar a data inicial do bloco de dados como uma dimensão na saída do bloco de dados. [Saiba mais](/help/report-builder/create-a-data-block.md) </li></ul> | N/D | 17 de agosto de 2023 |
-| **Conversão de moeda** | A jornada do cliente está recebendo compatibilidade com várias moedas. É possível converter moedas nas configurações das visualizações de dados. [Saiba mais](/help/data-views/component-settings/format.md) | N/D | 30 de agosto de 2023 |
-| **Suporte para classificações do A4T no conector de origem do Analytics** | Estamos adicionando uma ID de correlação para facilitar a junção de dados de classificação em atividades do Adobe Target e eventos de experiência. | N/D | 11 de setembro de 2023 |
-| **Gerenciador de atividades de relatórios** | Fornece uma visão detalhada aos administradores sobre o consumo de relatórios em cada conexão, permitindo diagnosticar e corrigir problemas de capacidade facilmente durante os momentos de pico de relatórios. | N/D | 12 de setembro de 2023 |
-| **Acesso do Power BI e do Tableau às visualizações de dados do Customer Journey Analytics** | O conector SQL do Adobe Customer Journey Analytics permite acesso SQL a visualizações de dados definidas no Customer Journey Analytics. Analistas e engenheiros de dados mais familiarizados com o Power BI, Tableau ou outras ferramentas de business intelligence e visualização agora podem criar relatórios e painéis com base nas mesmas visualizações de dados que os usuários do Customer Journey Analytics estão usando nos seus projetos do Analysis Workspace. [Saiba mais](/help/data-views/sql-connector.md) | N/D | 12 de setembro de 2023 |
+| **Suporte para classificações do A4T no conector de origem do Analytics** | Suporte para novos `correlationID` campo para o Adobe Analytics | A variável `_experience.decisioning.propositions.scopeDetails.correlationID` agora está disponível no esquema do conector de origem do Adobe Analytics. Esse campo é usado em suporte às classificações do A4T e será preenchido a partir de setembro de 2023. | | N/D | 12 de setembro de 2023 |
+| **Atualizações a campos derivados** | As seguintes atualizações foram feitas à funcionalidade de campos derivados:<ul><li>A variável [!UICONTROL Pesquisa] A função foi renomeada para [!UICONTROL Classificar], com opções adicionais para carregar dados CSV. **(Versões de 27 de setembro de 2023)**</li><li>Funções adicionais estão disponíveis para uso ao definir um campo derivado: [!UICONTROL Cortar], [!UICONTROL Minúsculas] e [!UICONTROL Pesquisa].</li><li>As definições de campo derivado agora também aceitam campos de [!UICONTROL Pesquisa] e [!UICONTROL Perfil] conjuntos de dados.</li></ul>[Saiba mais](/help/data-views/derived-fields/derived-fields.md) | N/D | 13 de setembro de 2023 |
+| **Novos recursos no Adobe Product Analytics** | <ul><li>**Detecção de anomalias**: compare os eventos com os valores esperados com base em tendências históricas. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=pt-BR)</li><li>**Visualização da frequência de uso das tendências**: meça a adoção de seus recursos por frequência de uso. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/trends/frequency.html)</li><li>**Preferências do usuário**: configure várias preferências de usuário, como paletas de cores, visualizações de dados, calendários, contagem de instâncias, formato de número e delimitador de vírgulas. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=pt-BR)</li></ul> | N/D | 18 de setembro de 2023 |
+| **Pesquisas de dispositivo da Experience Edge** | Habilite a coleta automática de dados do tipo de dispositivo por meio da rede de borda do Experience Platform. Esse serviço Experience Edge beneficia o Customer Journey Analytics juntamente com outros aplicativos Experience Platform. (Link de documentação a seguir) | N/D | 27 de setembro de 2023 |
 
 {style="table-layout:auto"}
 
 ## Correções no Customer Journey Analytics
 
-AN-309141; AN-319198; AN-324576; AN-324939; AN-325138; AN-325554
+AN-310972; AN-319509; AN-322245; AN-323411; AN-323719; AN-326101; AN-326125; AN-326888
+
 
 ## Avisos importantes para admins do Customer Journey Analytics
 
 | Aviso | Aviso adicionado ou atualizado | Descrição |
 | --- | --- | --- |
-| **Alterações na forma como o Customer Journey Analytics processa dados** | 22 de junho de 2023 | Recentemente, alteramos a forma como processamos dados no Customer Journey Analytics.<ul><li>Todos os dados de evento com um carimbo de data e hora inferior a 24 horas são transmitidos.</li><li>Quaisquer dados de evento com um carimbo de data e hora superior a 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados de preenchimento retroativo e serão assimilados com uma prioridade mais baixa.</li></ul> |
+| N/D | N/D | N/D |
 
 {style="table-layout:auto"}
 
