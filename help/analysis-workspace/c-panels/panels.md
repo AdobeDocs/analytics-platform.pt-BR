@@ -3,7 +3,7 @@ description: Um painel é uma coleção de tabelas e visualizações
 title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: c18ed01f899b7a521c67ed6a0008210099b858bf
+source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
 workflow-type: tm+mt
 source-wordcount: '1232'
 ht-degree: 51%
@@ -25,7 +25,7 @@ Os seguintes tipos de painel estão disponíveis no Analysis Workspace para o [!
 | [Painel de atribuição](attribution.md) | Compare e visualize modelos de atribuição rapidamente usando qualquer dimensão e métrica de conversão. |
 | [Painel de forma livre](freeform-panel.md) | Realize comparações e detalhamentos ilimitados e, em seguida, adicione visualizações para obter uma visão ampla dos dados. |
 | [Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de analisar e comparar. |
-| [Painel Tempo gasto com a reprodução de mídia](media-playback-timespent/media-playback-time-spent.md) | Analise o tempo de reprodução gasto para entender onde ocorreu o pico de simultaneidade ou onde ocorreram desistências. |
+| [Painel Tempo gasto com a reprodução de mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analise o tempo de reprodução gasto para entender onde ocorreu o pico de simultaneidade ou onde ocorreram desistências. |
 
 ![](assets/panel-overview.png)
 
