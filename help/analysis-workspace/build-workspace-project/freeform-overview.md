@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visão geral dos Projetos
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 79%
+source-wordcount: '1319'
+ht-degree: 80%
 
 ---
 
@@ -29,7 +29,7 @@ A página Projetos contém as seguintes informações:
 
 | Elemento | Descrição |
 |---|---|
-| [Editar preferências](/help/analysis-workspace/user-preferences.md) | Gerencie configurações para o Analysis Workspace e seus componentes relacionados para todos os novos projetos ou painéis que você criar. |
+| [Editar preferências](/help/analysis-workspace/user-preferences.md) | Gerencie as configurações do Analysis Workspace e seus componentes relacionados para todos os novos projetos ou painéis criados por você. |
 | [Criar pasta](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Adicione uma nova pasta ou subpasta à lista de projetos e pastas. |
 | [Criar projeto](/help/analysis-workspace/build-workspace-project/create-projects.md) | Inicie um novo projeto do zero. |
 | Mostrar mais | Revela opções para criar um projeto em branco ou cartão de pontuação móvel, [exibição de tutoriais de treinamento](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=pt-BR)ou [exibição das notas de versão](/help/release-notes/latest.md). |
@@ -38,7 +38,7 @@ A página Projetos contém as seguintes informações:
 | Nome | Nome do projeto do Espaço de trabalho. |
 | Tipo | Indica se é um projeto do Workspace, uma pasta ou um [Scorecard para dispositivos móveis](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/home.html?lang=pt-BR). |
 | Tags | Tags aplicadas ao projeto. |
-| Programado | Indica se os projetos estão programados para serem enviados por email a recipients em uma programação. Consulte [Agendar projetos](/help/analysis-workspace/curate-share/t-schedule-report.md). |
+| Programado | Indica se os projetos estão programados para serem enviados por email a recipients em uma programação. Consulte [Enviar dados do projeto para outras pessoas](/help/analysis-workspace/export/t-schedule-report.md). |
 | Link compartilhado (qualquer pessoa) | Os projetos podem ser compartilhados com qualquer pessoa, mesmo com pessoas que não têm acesso ao Analysis Workspace. Esta coluna mostra se os projetos foram compartilhados dessa maneira. Consulte [Compartilhar um projeto com qualquer pessoa (logon não necessário)](/help/analysis-workspace/curate-share/share-projects.md#share-public-link) in [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md) para obter mais informações. |
 | Visualização de dados | A visualização de dados à qual o projeto está associado. |
 | [Função do projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=pt-BR) | Indica a função do projeto - proprietários, editar, duplicar, exibir. |
@@ -59,7 +59,7 @@ Em um projeto, o menu fornece opções para gerenciar o projeto, adicionar compo
 
 | Item de menu | Descrição |
 |---|---|
-| Projeto  | Inclui ações comuns para o gerenciamento de projetos, incluindo Novo, Abrir, Salvar e Salvar como. Você também pode atualizar o projeto inteiro para recuperar os dados e as definições mais recentes clicando em Atualizar projeto. A opção [Download de CSV e PDF](/help/analysis-workspace/curate-share/download-send.md) permite exportar dados do Espaço de trabalho. A seção **Informações e configurações do projeto** (veja abaixo) oferece muitas opções para gerenciar seu projeto. |
+| Projeto  | Inclui ações comuns para o gerenciamento de projetos, incluindo Novo, Abrir, Salvar e Salvar como. Você também pode atualizar o projeto inteiro para recuperar os dados e as definições mais recentes clicando em Atualizar projeto. [Baixar dados do projeto](/help/analysis-workspace/export/download-send.md) permitem exportar dados do Espaço de trabalho. A seção **Informações e configurações do projeto** (veja abaixo) oferece muitas opções para gerenciar seu projeto. |
 | Editar | Desfazer ou refazer a última ação. Limpar tudo redefinirá seu projeto para um ponto de partida em branco. |
 | Inserir | Insira novos painéis ou visualizações nesse menu. Você também pode inserir novos painéis e visualizações no painel esquerdo. |
 | [Componentes](/help/components/overview.md) | Crie novos filtros, métricas calculadas, intervalos de datas ou componentes de alerta a partir do seu projeto. Você também pode criar novos componentes no painel esquerdo. Se as definições de componente foram alteradas recentemente, Atualizar componentes recuperará as definições mais recentes. |
@@ -78,7 +78,7 @@ As configurações incluem:
 | Configuração | Descrição |
 |---|---|
 | Projeto  Nome | O nome fornecido ao projeto. Você pode clicar duas vezes no nome para editá-lo. |
-| Criado por | Nome do proprietário do projeto. |
+| Criada por | Nome do proprietário do projeto. |
 | Última modificação | Data da última modificação do projeto. |
 | Tags | Lista qualquer tag aplicada a um projeto para classificar com mais facilidade. |
 | Descrição | Uma descrição é útil para esclarecer a finalidade de um projeto. Você pode clicar duas vezes na descrição para editá-la. |

@@ -3,10 +3,10 @@ description: As configurações de coluna permitem que você configure a formata
 title: Configurações de coluna
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: c21eb39e0af36ad54fd675c147e2f50b6b00711a
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 98%
+source-wordcount: '686'
+ht-degree: 94%
 
 ---
 
@@ -54,9 +54,27 @@ A formatação condicional aplica formatação a limites superiores, intermediá
 
 ## Usar modelo de atribuição não-padrão {#attribution}
 
-Permite que você substitua o modelo de atribuição padrão definido em [Visualizações de dados](/help/data-views/component-settings/attribution.md).
+Permite substituir o modelo de atribuição padrão definido em [Visualizações de dados](/help/data-views/component-settings/attribution.md).
 
-1. Clique no ícone de Configurações (engrenagem) em uma coluna de Tabela de forma livre.
+<!--
+
+>[!NOTE]
+>
+>Consider the following when updating a component's attribution to a non-default attribution model:
+>
+>* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>
+>* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>
+>   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>
+> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
+
+-->
+
+Para usar um modelo de atribuição não padrão para uma métrica em uma Analysis Workspace:
+
+1. Clique no ícone de Configurações (engrenagem) em uma métrica em uma coluna de Tabela de forma livre.
 
    ![Caixa de seleção Atribuição](assets/attribution-checkbox.png)
 
@@ -67,4 +85,3 @@ Permite que você substitua o modelo de atribuição padrão definido em [Visual
 >[!MORELIKETHIS]
 >
 >* [Gerenciar fontes de dados](/help/analysis-workspace/visualizations/t-sync-visualization.md)
-

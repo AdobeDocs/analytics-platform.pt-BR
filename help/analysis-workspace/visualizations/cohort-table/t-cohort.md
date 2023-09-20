@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configurar um relatório de análise de coorte
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '982'
 ht-degree: 91%
 
 ---
@@ -56,4 +56,4 @@ Crie uma coorte e execute um relatório de [!UICONTROL Análise de coorte] no An
 
 ## Baixar uma visualização de coorte
 
-Como outras visualizações no Analysis Workspace, você pode baixar uma visualização de coorte como um arquivo CSV ou PDF. Para obter mais informações, consulte [Baixar arquivos PDF ou CSV](/help/analysis-workspace/curate-share/download-send.md).
+Como outras visualizações no Analysis Workspace, você pode baixar uma visualização de coorte como um arquivo CSV ou PDF. Para obter mais informações, consulte [Baixar dados do projeto](/help/analysis-workspace/export/download-send.md).

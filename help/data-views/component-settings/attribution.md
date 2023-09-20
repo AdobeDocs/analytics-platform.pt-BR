@@ -4,34 +4,67 @@ description: Permite definir a atribuição padrão de uma métrica.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 81e04d177596430b6e9d971cb1b157b461524314
+source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 38%
+source-wordcount: '1859'
+ht-degree: 37%
 
 ---
 
 # Configurações de componente de atribuição
 
-A atribuição oferece a capacidade de personalizar como os itens de dimensão recebem crédito por eventos bem-sucedidos.
+A atribuição dá a capacidade de personalizar como os itens de dimensão obtêm crédito por eventos bem-sucedidos.
 
 ![](../assets/attribution-settings.png)
 
 Por exemplo:
 
-1. Uma pessoa do site clica em um link de pesquisa pago para uma de suas páginas de produtos. Eles adicionam o produto ao carrinho, mas não o compram.
-2. No dia seguinte, veja uma publicação de mídia social de um de seus amigos. Eles clicam no link e concluem a compra.
+1. Uma pessoa no seu site clica em um link de pesquisa paga para uma de suas páginas de produtos. Eles adicionam o produto ao carrinho, mas não o compram.
+2. No dia seguinte, eles veem uma publicação de mídia social de um de seus amigos. Eles clicam no link e concluem a compra.
 
 Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquisa paga. Em outros relatórios, você pode desejar que a ordem seja atribuída ao Social. A atribuição permite controlar esse aspecto dos relatórios.
 
-Essa configuração de componente de visualização de dados permite definir um modelo de atribuição padrão para uma métrica. É possível substituir um determinado modelo de atribuição de métrica ao trabalhar no Analysis Workspace.
+## Definir um modelo de atribuição padrão do componente
 
+É possível definir um modelo de atribuição padrão para uma determinada métrica atualizando a configuração da métrica na visualização de dados. Isso substitui o modelo de atribuição da métrica sempre que é usada no Analysis Workspace.
 
+<!-- 
 
-Se sua organização exigir que uma métrica tenha várias configurações de atribuição, você poderá executar um dos seguintes procedimentos:
+>[!NOTE]
+>
+>Consider the following when enabling attribution on a metric:
+>
+>* **When using the component in a report with *a single dimension*:** The component's attribution ignores the allocation model when a non-default attribution model is used.
+>
+>* **When using the component in a report with *multiple dimensions*:** The component's attribution retains the allocation model when a non-default attribution model is used.
+>
+>   Multiple dimensions are available only when [exporting data to the cloud](/help/analysis-workspace/export/export-cloud.md).
+>
+> For more information about allocation, see [Persistence component settings](/help/data-views/component-settings/persistence.md).
 
-* Copie a métrica na visualização de dados com cada configuração de atribuição desejada. É possível incluir a mesma métrica várias vezes em uma visualização de dados, dando a cada métrica uma configuração diferente. Certifique-se de rotular cada métrica apropriadamente para que os analistas entendam a diferença entre essas métricas ao gerar relatórios.
-* Substitua a métrica no Analysis Workspace. Em métricas de [Configurações de coluna](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md), selecione **[!UICONTROL Usar modelo de atribuição não-padrão]** para alterar o modelo de atribuição da métrica e a janela de retrospectiva desse relatório específico.
+-->
+
+Para atualizar o modelo de atribuição padrão de um componente:
+
+1. Vá para a visualização de dados que contém o componente cujo modelo de atribuição padrão você deseja atualizar.
+
+1. Selecione o componente e expanda a seção Atribuição no lado direito da tela.
+
+   ![](../assets/attribution-settings.png)
+
+1. Selecionar [!UICONTROL **Definir atribuição**] e selecione o modelo de atribuição na [!UICONTROL **Modelo de atribuição**] menu suspenso.
+
+   Consulte [Modelos de atribuição](#attribution-models) para saber mais sobre cada modelo de atribuição.
+
+1. Selecione [!UICONTROL **Salvar e continuar**].
+
+>[!TIP]
+>
+>Se sua organização exigir que uma métrica tenha várias configurações de atribuição, você poderá executar um dos seguintes procedimentos:
+>
+> * Copie a métrica na visualização de dados com cada configuração de atribuição desejada. É possível incluir a mesma métrica várias vezes em uma visualização de dados, dando a cada métrica uma configuração diferente. Certifique-se de rotular cada métrica apropriadamente para que os analistas entendam a diferença entre essas métricas ao gerar relatórios.
+>
+> * Substitua a métrica no Analysis Workspace. Em métricas de [Configurações de coluna](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md), selecione **[!UICONTROL Usar modelo de atribuição não-padrão]** para alterar o modelo de atribuição da métrica e a janela de retrospectiva desse relatório específico.
 
 ## Modelos de atribuição
 

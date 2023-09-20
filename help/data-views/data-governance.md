@@ -3,7 +3,7 @@ title: Rótulos e políticas
 description: Saiba como os rótulos e políticas de dados definidos no Adobe Experience Platform afetam as visualizações de dados e os relatórios no Customer Journey Analytics.
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
-source-git-commit: d14db99f6cf597c4b62cdb148853b0f11503eaa1
+source-git-commit: 72f4305558d1dfa7a7142ee7b6ff65972564b6bf
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 58%
@@ -72,7 +72,7 @@ Esses componentes estão esmaecidos na lista [!UICONTROL Campos de esquema] no p
 Também não é possível salvar uma visualização de dados que tenha campos bloqueados.
 
 >[!MORELIKETHIS]
->[Baixar dados sigilosos](/help/analysis-workspace/curate-share/download-send.md)
+>[Baixar dados sigilosos](/help/analysis-workspace/export/download-send.md)
 
 >[!MORELIKETHIS]
 >[O que são os rótulos restritos no Report Builder?](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/restricted-labels.html?lang=pt-BR)
