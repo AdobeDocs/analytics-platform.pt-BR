@@ -1,139 +1,69 @@
 ---
-title: Gerenciar filtros
+title: Gerenciador de filtros
 description: saiba como gerenciar filtros no Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: 8d6dc1d220fc3719b13842e812aaf6ddc55ae47c
 workflow-type: tm+mt
-source-wordcount: '1102'
-ht-degree: 99%
+source-wordcount: '644'
+ht-degree: 24%
 
 ---
 
-# Gerenciar filtros
+# Gerenciador de filtros
 
-O Gerenciador de filtros oferece várias maneiras de tratar segmentos, como compartilhar, marcar, aprovar, copiar, excluir e marcar como favoritos.
+O gerenciador de Filtros oferece várias formas de cuidar de filtros, como compartilhar, marcar, aprovar, copiar, excluir e marcar como favoritos.
 
-O Gerenciador de filtros mostra todos os seus filtros e os compartilhados com você. Os usuários de nível administrativo podem visualizar todos os filtros na organização. Essa visão geral apresenta a interface do usuário e os recursos do Gerenciador de filtros.
-
-Acesse o Gerenciador de filtros indo até **[!UICONTROL Análise de Jornada do cliente]** > **[!UICONTROL Componentes]** > **[!UICONTROL Filtros]** na navegação superior.
-
-## IU do Gerenciador de filtros {#ui}
+O gerenciador Filtros mostra todos os seus filtros e os compartilhados com você. Os usuários de nível administrativo podem visualizar todos os filtros na organização. Esta visão geral apresenta a interface do usuário e os recursos do gerenciador de Filtros.
 
 ![](assets/filter-manager-ui.png)
 
-| # | Recurso da interface do usuário | Descrição |
-|---|---|---|
-| 1 | Barra de ferramentas do gerenciamento de filtros | Depois de marcar um filtro, essa barra de ferramentas aparece. A maioria das tarefas de gerenciamento podem ser concluídas a partir dessa barra de ferramentas. |
-| 2 | Caixas de seleção | Marque um filtro para gerenciá-lo. |
-| 4 | Favoritos | Ao clicar na estrela ao lado de um filtro, ela fica amarela e marca o filtro como favorito. |
-| 5 | Título e descrição | Fornecidos no Construtor de filtros. Para editar o título e a descrição, clique no link de título; isso leva você até o Construtor de filtros. |
-| 7 | Proprietário | Indica quem é o proprietário do filtro. Como um usuário não administrativo, você pode ver somente os filtros que possui ou que foram compartilhados com você. |
-| 8 | Tags (não marcadas no seletor de colunas, portanto, a coluna não aparece) | Tags aplicadas ao filtro, por você ou outras pessoas que compartilharam o filtro com você. |
-| 9 | Compartilhado com | Lista indivíduos ou grupos (somente Administrador) ou Todos (somente Administrador) com os quais você compartilhou o filtro. |
-| 10 | Data de modificação | Mostra a data em que o filtro foi modificado pela última vez. |
-| 11 | Seletor de coluna | (Parte superior direita) Permite selecionar quais colunas serão exibidas no Gerenciador de filtros. |
-| 12 | Ícone Compartilhado | Indica que este filtro foi compartilhado por você ou com você. |
-| 13 | Ícone Aprovado | Indica que o filtro foi aprovado pelo Administrador. |
-| 14 | Outros filtros | Permite que você veja os filtros por Tags, Visualizações de dados, Proprietários e Outros (Exibir tudo, Meus, Compartilhados comigo, Aprovados, Favoritos). |
+## Acessar o gerenciador de Filtros
 
-## Planejar filtros {#plan}
+1. No Customer Journey Analytics, selecione a variável **[!UICONTROL Componentes]** e selecione **[!UICONTROL Filtros]**.
 
-Reservar algum tempo para planejar filtros aumenta a probabilidade de que eles sejam úteis para a organização e seus números sejam mantidos sob controle.
+## Ações disponíveis no gerenciador de filtros
 
-* Considere o público-alvo: quem consumirá? Com quem você compartilhará? Quais grupos de pessoas usarão esse filtro e como devo marcá-lo apropriadamente? Isso também significa fornecer uma boa descrição do filtro. No mínimo, a descrição deve responder a estas perguntas:
+No gerenciador de Filtros, é possível:
 
-   * Para que este filtro serve?
+* [Filtrar a lista de filtros](/help/components/filters/filters-filter.md)
 
-   * Quando devo usar este filtro?
+* [Marcar filtros como favoritos](/help/components/filters/filters-favorite.md)
 
-* Determine o escopo do filtro. Qual [contêiner de filtro](/help/components/filters/filters-overview.md) melhor representa o escopo? Use o menor contêiner possível.
+* [Aprovar filtros](/help/components/filters/filters-approve.md)
 
-* Decida quais elementos devem ser incluídos na definição do filtro e quais destes valores.
+* [Marcar filtros](/help/components/filters/filters-tag.md)
 
-* Considera como você deseja que o processo de aprovação se desenvolva. Uma única pessoa analisará e aprovará os filtros ou será uma decisão de comitê?
+* [Compartilhar filtros](/help/components/filters/filters-share.md)
 
-* Defina seus filtros com uma visualização para uma biblioteca de filtros que confere aos usuários de negócios a capacidade de empilhar e reutilizar partes de filtros ou componentes de forma modular. Quais &quot;módulos&quot; você precisa definir para transformar essa biblioteca em uma realidade?
+* Exporte um filtro para um arquivo CSV.
 
-### Marcar filtros {#tag}
+* [Copiar filtros](/help/components/filters/filters-copy.md)
 
-No Gerenciador de filtros, a marcação de filtros permite que você os organize. Todos os usuários podem criar tags para filtros e aplicar uma ou mais tags a um filtro. No entanto, você pode visualizar tags somente para seus filtros ou os compartilhados com você.
+* Excluir filtros
 
-Que tipos de tags você deve criar? Estas são algumas sugestões para tags úteis:
+## Configurar colunas
 
-* Tags com base em nomes de equipe, como Marketing social, Marketing móvel.
+Você pode configurar as informações exibidas para cada filtro no gerenciador de Filtros configurando as colunas exibidas.
 
-* Tags de projeto (tags de análise), como análises de página de entrada.
+Para configurar as colunas visíveis no gerenciador de Filtros:
 
-* Tags de categoria: masculino; geografia.
+1. No Customer Journey Analytics, selecione a variável **[!UICONTROL Componentes]** e selecione **[!UICONTROL Filtros]**.
 
-* Tags de fluxo de trabalho: para ser aprovado; auxiliar para (uma unidade de negócios específica).
+1. No gerenciador Filtros, selecione a variável **Personalizar colunas** ícone ![Ícone Personalizar colunas](assets/customize-columns-icon.png), em seguida, selecione as colunas que deseja exibir no gerenciador de Filtros.
 
-Para marcar um filtro:
+   As seguintes colunas estão disponíveis:
 
-1. No Gerenciador de filtros, marque a caixa de seleção ao lado do filtro que você deseja marcar. A barra de ferramentas de gerenciamento de filtros aparece.
+   | Título da coluna | Descrição |
+   |---|---|
+   | Título e descrição | Esses valores são fornecidos no Construtor de filtros. Para editar o título e a descrição, selecione o link de título para abrir o Construtor de filtros. |
+   | Favoritos | Exibe ícones de estrela ao lado de cada filtro, permitindo marcar filtros como favoritos. Para obter mais informações, consulte [Marcar filtros como favoritos](/help/components/filters/filters-favorite.md). |
+   | Visualização de dados | Essa coluna indica em qual visualização de dados o filtro foi salvo pela última vez. |
+   | Proprietário | Indica quem é o proprietário do filtro. Como um usuário não administrativo, você pode ver somente os filtros que possui ou que foram compartilhados com você. |
+   | Tags (não marcadas no seletor de colunas, portanto, a coluna não aparece) | Tags aplicadas ao filtro, por você ou outras pessoas que compartilharam o filtro com você. |
+   | Compartilhado com | Lista indivíduos ou grupos (somente Administrador) ou Todos (somente Administrador) com os quais você compartilhou o filtro. <p>Quando um filtro está sendo compartilhado por você ou com você, um ícone de compartilhamento é exibido ao lado do nome do filtro.</p> |
+   | Data de modificação | Mostra a data em que o filtro foi modificado pela última vez. |
+   | Usado em | **Nota:** Essa funcionalidade está na fase de Teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).<p>Mostra em qual dos seguintes tipos de componentes o filtro está sendo usado no momento:</p> <ul><li>Métricas calculadas </li><li>Projetos</li><li>Projetos programados</li><li>Filtros</li></ul> Por exemplo, se o filtro estiver sendo usado em 40 projetos e 2 métricas calculadas, esta coluna mostrará [!UICONTROL **Métricas calculadas (2), Projetos (40)**]. <p>Essas informações podem ajudar a determinar se um filtro é valioso para os usuários em sua organização ou se deve ser excluído.</p><p>Essas informações não incluem o uso da API ou do Report Builder.</p><p>Você pode usar o [Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md) junto com essas informações para ajudá-lo a acompanhar e entender melhor como os componentes estão sendo usados em sua organização. |
+   | Última utilização | **Nota:** Essa funcionalidade está na fase de Teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).<p>Mostra a data em que o filtro foi usado pela última vez em qualquer um dos seguintes tipos de componentes:</p> <ul><li>Métricas calculadas </li><li>Projetos</li><li>Projetos programados</li><li>Filtros</li></ul> <p>Essas informações podem ajudar você a determinar se um componente é valioso para os usuários em sua organização ou se deve ser excluído.</p><p>Essas informações não incluem o uso da API ou do Report Builder.</p><p>Você pode usar o [Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md) junto com essas informações para ajudá-lo a acompanhar e entender melhor como os componentes estão sendo usados em sua organização. |
 
-1. Clique em **[!UICONTROL Tag]** e
-
-   * selecione a partir das tags existentes, ou
-
-   * digite um novo nome de tag e pressione **[!UICONTROL Enter]**.
-
-1. Clique em **[!UICONTROL Tag]** novamente para adicionar uma tag ao filtro.
-
-A tag agora deve aparecer na coluna Tags. (Clique no ícone de engrenagem na parte superior direita para gerenciar suas colunas).
-Também é possível filtrar tags em **[!UICONTROL Filtros > Tags]**.
-
-### Aprovar filtros {#approve}
-
-No Gerenciador de filtros você pode configurar um fluxo de trabalho que inclui a aprovação de filtros para vários níveis do aplicativo, para departamentos ou grupos específicos, e que seja consistente com políticas de relatórios.
-
-Esta é a forma de marcar um filtro como aprovado:
-
-1. No Gerenciador de filtros, marque a caixa de seleção à esquerda do título do Filtro.
-
-1. Clique em **[!UICONTROL Aprovar]** na barra de tarefas do gerenciador de filtros.
-
-1. Considere compartilhar os filtros aprovados com a sua organização.
-
-1. Clique em **[!UICONTROL OK]**.
-
-   Observe o ícone de aprovação ao lado do filtro na lista:
-
-   ![](assets/seg_approved.png)
-
-1. Também é possível cancelar a aprovação de um filtro aprovado clicando em **[!UICONTROL Cancelar aprovação]**.
-
-### Compartilhar filtros {#share}
-
-Dependendo das permissões, você pode compartilhar filtros com organizações, grupos ou usuários individuais.
-
-| Administrador | Não administrador |
-|---|---|
-| Pode compartilhar filtros com Todos, Grupos e Usuários. Consulte a [documentação do Admin Console](https://helpx.adobe.com/br/enterprise/using/manage-products-and-profiles.html) para obter mais informações. | Pode compartilhar filtros somente com usuários individuais. |
-
-Quando você deve compartilhar filtros com a empresa inteira em comparação a apenas um grupo de usuário ou indivíduos? Estas são algumas das práticas recomendadas que você pode seguir:
-
-* Como administrador, compartilhe um filtro com Todos se ele for usado por toda a empresa e se todos souberem como utilizá-lo. Nesse caso, você também deve considerar torná-lo um filtro aprovado.
-
-* Como administrador, compartilhe um filtro com um Perfil de produto específico se o filtro oferecer bom valor de negócios para a equipe. Não aprove oficialmente esse tipo de filtro.
-
-* Como administrador ou usuário individual, compartilhe um filtro com outros indivíduos para vetar e validar um filtro. Se não for útil, é possível descartá-la. Não aprove oficialmente esse tipo de filtro.
-
-Para compartilhar um filtro:
-
-1. No Gerenciador de filtros, marque a caixa de seleção ao lado do filtro que você deseja compartilhar.
-
-1. Na barra de ferramentas do gerenciamento de filtros, clique em **[!UICONTROL Compartilhar]**.
-
-1. Se você for um Administrador, é possível selecionar Tudo ou escolher a partir de Grupos e Usuários na organização. Como um não Administrador, você pode usar somente os usuários individuais. Use o campo Pesquisa para pesquisar por grupos ou usuários. Clique em **[!UICONTROL Compartilhar]**. O ícone Compartilhado aparece ao lado do filtro: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
-
-1. É possível filtrar por filtros compartilhados com você em Filtros > Outros filtros > Compartilhados comigo.
-
-### Marcar filtros como favoritos {#favorites}
-
-Outra maneira de organizá-los para facilitar o uso é marcar os filtros como favoritos.
-
-1. No Gerenciador de filtros, marque a estrala ao lado de qualquer filtro que você deseja marcar como favorito. A estrela fica amarela ao selecioná-la.
-
-1. Você também pode filtrar por favoritos em Filtros > Outros filtros > Favoritos.
+   {style="table-layout:auto"}

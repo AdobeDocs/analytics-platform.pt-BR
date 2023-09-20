@@ -3,10 +3,10 @@ description: No Gerenciador de métricas calculadas, a marcação de segmentos p
 title: Marcar métricas calculadas
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 21%
+source-wordcount: '277'
+ht-degree: 22%
 
 ---
 
@@ -25,10 +25,9 @@ Os usuários podem criar tags para métricas calculadas e aplicar uma ou mais ta
 >* **Categorias**, como Mulheres ou Geografia.
 >* **Fluxos de trabalho**, como Para ser aprovado ou preparado para (uma unidade de negócios específica).
 
-
 ## Aplicar tags a uma métrica calculada
 
-1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Métricas calculadas**] para acessar o Gerenciador de métrica calculada.
+1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Métricas calculadas**].
 
 1. No Gerenciador de métricas calculadas, marque a caixa de seleção ao lado de qualquer métrica que deseja marcar.
 

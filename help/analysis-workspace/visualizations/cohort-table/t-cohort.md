@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Configurar um relatório de análise de coorte
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: f6273b96d3851e02ea013a6496965567a4389a72
+source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 91%
@@ -44,7 +44,7 @@ Crie uma coorte e execute um relatório de [!UICONTROL Análise de coorte] no An
 
    Selecione as células (adjacentes ou não adjacentes) e clique com o botão direito do mouse em > **[!UICONTROL Criar filtro a partir da seleção]**.
 
-1. No [Construtor de filtros](/help/components/filters/manage-filters.md), faça mais edições no filtro, depois clique em **[!UICONTROL Salvar]**.
+1. No [Construtor de filtros](/help/components/filters/filter-builder.md), faça mais edições no filtro, depois clique em **[!UICONTROL Salvar]**.
 
    O filtro salvo está disponível para uso no painel [!UICONTROL Filtro] do [!UICONTROL Analysis Workspace].
 1. Nomeie e salve seu projeto de coorte.

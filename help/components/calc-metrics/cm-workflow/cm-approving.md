@@ -3,10 +3,10 @@ description: No Gerenciador de métricas calculadas, é possível definir um flu
 title: Aprovar métricas calculadas
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 18%
+source-wordcount: '238'
+ht-degree: 19%
 
 ---
 
@@ -22,7 +22,7 @@ No Gerenciador de métrica calculada, os administradores podem configurar um flu
 
 Para marcar métricas calculadas como aprovadas:
 
-1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Métricas calculadas**] para acessar o Gerenciador de métricas calculadas.
+1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Métricas calculadas**].
 
 1. No Gerenciador de métricas calculadas, marque a caixa de seleção à esquerda de qualquer métrica que você deseja marcar como aprovada.
 

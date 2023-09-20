@@ -4,7 +4,7 @@ title: Filtros rápidos
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 38%
@@ -128,7 +128,7 @@ Depois de aplicar o filtro, você pode optar por adicioná-lo à lista de compon
 1. Selecione **[!UICONTROL Salvar]**.
 
    O filtro agora aparece na lista de componentes de filtro para todos os seus projetos.
-Você também pode [compartilhar o filtro](/help/components/filters/manage-filters.md) com outras pessoas em sua empresa.
+Você também pode [compartilhar o filtro](/help/components/filters/filters-share.md) com outras pessoas em sua empresa.
 
 ## Exemplo de filtro rápido
 

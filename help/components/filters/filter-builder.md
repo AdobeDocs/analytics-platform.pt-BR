@@ -3,7 +3,7 @@ description: O Construtor de filtros fornece uma tela para arrastar e soltar Dim
 title: Criar filtros
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: e97f206e2c2f00d32e7e06d56fcc84819fe329c6
+source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 23%
@@ -64,7 +64,7 @@ Você pode acessar o Construtor de filtros de qualquer uma das seguintes maneira
 1. Digite ou selecione um valor para o item selecionado.
 1. Adicione contêineres adicionar se necessário, com as regras **[!UICONTROL AND]**, **[!UICONTROL OR]**, ou **[!UICONTROL THEN]**.
 1. Depois de colocar os contêineres e definir as regras, consulte os resultados do filtro no gráfico de validação na parte superior direita. O validador indica a porcentagem e o número absoluto de exibições de página, visitas e pessoas únicas que correspondem ao filtro criado.
-1. Em **[!UICONTROL Tags]**, [tag](/help/components/filters/manage-filters.md) o contêiner ao selecionar uma tag existente ou cria uma nova.
+1. Em **[!UICONTROL Tags]**, [tag](/help/components/filters/filters-tag.md) o contêiner ao selecionar uma tag existente ou cria uma nova.
 1. Clique em **[!UICONTROL Salvar]** para salvar o filtro.
 
    Você é levado para o [Gerenciador de filtros](/help/components/filters/manage-filters.md), onde é possível marcar, compartilhar e gerenciar o filtro de várias maneiras.
