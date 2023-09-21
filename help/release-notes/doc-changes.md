@@ -7,7 +7,7 @@ feature: Release Notes
 source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
 workflow-type: tm+mt
 source-wordcount: '2651'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | --- | --- |
 | **Setembro de 2023** | |
 | Estrutura de artigos atualizada para o painel Tempo gasto com reprodução de mídia | A pasta chamada Tempo gasto com a reprodução da mídia foi removida e o conteúdo da pasta foi combinado em um único artigo: [Painel Tempo gasto com a reprodução da mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Essa alteração está mais de acordo com a documentação de outros painéis.</p> |
-| Funcionalidade adicional de campos derivados | Atualização da documentação do novo [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) e [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim) funções e para os recursos CSV adicionais acrescentados ao [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify) função. |
+| Funcionalidade adicional de campos derivados | Atualização da documentação das novas funções de [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) e [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim), e dos recursos de CSV adicionados à função de [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify). |
 | Coleta de dados regionais | [Perguntas frequentes](../getting-started/cja-faq.md#12-regional-data-collection) atualizadas com informações sobre a coleta de dados regionais ao usar o Customer Journey Analytics. |
 | **Agosto de 2023** | |
 | Painel Tempo gasto com a reprodução da mídia | O conteúdo do [Painel Tempo gasto com reprodução de mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md) foi atualizado para melhorar a legibilidade. |
