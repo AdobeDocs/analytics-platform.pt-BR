@@ -5,7 +5,7 @@ exl-id: c2d9b758-42a4-4b58-9bab-095518efb86d
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: 4754be1df196836bd44feb963c22749a3124c377
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ O Customer Journey Analytics permite controlar como você conecta os dados onlin
 <table frame="none"> 
  <tbody> 
   <tr> 
-   <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Itens novos ou especiais</b> </p> <p> 
+   <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Itens novos ou em destaque</b> </p> <p> 
      <ul>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/stitching/overview.html?lang=pt-BR"> Análise entre canais (compilação de IDs no Customer Journey Analytics) </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=pt-BR">Utilização dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics </a> </li>
