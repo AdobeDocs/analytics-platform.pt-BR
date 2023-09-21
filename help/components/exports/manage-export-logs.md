@@ -5,18 +5,16 @@ title: Gerenciar logs de exportação
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: f070f998758cead3709f6c48412b22b29de00164
+source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '681'
 ht-degree: 7%
 
 ---
 
 # Gerenciar logs de exportação
 
-{{select-package}}
-
-Os logs de exportação fornecem detalhes sobre cada exportação e são gerados sempre que os dados do Analysis Workspace são exportados para a nuvem. (Para obter informações sobre como os dados podem ser exportados para a nuvem, consulte [Exportar dados do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).)
+Os logs de exportação fornecem detalhes sobre cada exportação e são gerados sempre que os dados do Analysis Workspace são exportados para a nuvem. (Para obter informações sobre como os dados podem ser exportados para a nuvem, consulte [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).)
 
 Para exportações programadas, os logs refletem as configurações de exportação como estavam quando o log foi enviado. Os logs não podem ser excluídos.
 
@@ -38,7 +36,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de logs
 
    | Filtro | Descrição |
    |---------|----------|
-   | [!UICONTROL **Tipo de conta**] | O tipo de conta à qual o log está associado. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li><li>[!UICONTROL **Adobe Experience Manager**]</li></ul>. |
+   | [!UICONTROL **Tipo de conta**] | O tipo de conta à qual o log está associado. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de aterrissagem de dados Adobe Experience Platform**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Pending**]: uma instância específica de uma exportação foi iniciada, mas ainda não está concluída.<p>Executar novamente uma exportação com status Pendente atrasará o processo de exportação.</p></li><li>[!UICONTROL **Concluído**]: uma instância específica de uma exportação terminou de ser processada e está disponível na conta de exportação.</li><li>[!UICONTROL **Falha**]<p>As situações a seguir podem resultar em falha na exportação. Passe o mouse sobre o status Falha para ver detalhes sobre a falha. <ul><li>Expiração de exportação agendada</li><li>Limite de linhas atingido para exportação agendada </li></ul> </p></li></ul> |
 
    {style="table-layout:auto"}
@@ -95,10 +93,10 @@ Para configurar colunas na variável [!UICONTROL Log] guia:
 
    | Coluna disponível | Descrição |
    |---------|----------|
-   | Nome da exportação | O nome da exportação. Os usuários dão um nome às exportações ao criá-las, conforme descrito em [Exportar dados do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
+   | Nome da exportação | O nome da exportação. Os usuários dão um nome às exportações ao criá-las, conforme descrito em [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
    | ID de exportação | A ID atribuída automaticamente à exportação quando ela é criada. <!-- True? --> |
    | ID da instância | A ID da instância do Customer Journey Analytics. <!-- True? --> |
-   | Nome da visualização de dados | O nome da visualização de dados associada à exportação. Os usuários podem selecionar a visualização de dados ao criar a exportação, conforme descrito em [Exportar dados do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
+   | Nome da visualização de dados | O nome da visualização de dados associada à exportação. Os usuários podem selecionar a visualização de dados ao criar a exportação, conforme descrito em [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
    | Número de arquivos | O número de arquivos incluídos na exportação. |
    | Tamanho | O tamanho da exportação.<p>O tamanho do arquivo é calculado com uma base de 1024, que às vezes é representada como KIB e MIB. Se o seu provedor de nuvem calcula o tamanho com uma base de 1000, isso pode resultar no tamanho exibido no provedor de nuvem ligeiramente diferente do tamanho exibido aqui.</p> |
    | Localização | A localização na conta para a qual os dados foram exportados. |
