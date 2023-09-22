@@ -5,9 +5,9 @@ title: Configurar locais de exportação da nuvem
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: c8f855ad5b586ed9ac3cde6889b6e73ecb216efa
+source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '1023'
 ht-degree: 5%
 
 ---
@@ -118,9 +118,9 @@ Para configurar um local de exportação na nuvem:
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **DB**] | O banco de dados padrão a ser usado depois de conectado ou especifica uma cadeia de caracteres vazia. O banco de dados especificado deve ser um banco de dados existente para o qual a atribuição padrão especificada tenha privilégios. <p>Para obter mais informações, consulte [Página Referência de parâmetro de conexão do driver JDBC na documentação do Snowflake](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **Esquema**] | O esquema padrão a ser usado para o banco de dados especificado depois de conectado, ou especifica uma cadeia de caracteres vazia. O esquema especificado deve ser um esquema existente para o qual a função padrão especificada tenha privilégios. <p>Para obter mais informações, consulte [Página Referência de parâmetro de conexão do driver JDBC na documentação do Snowflake](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **Nome do estágio**] | O nome do local onde os arquivos de dados são armazenados no Snowflake. <p>Para obter mais informações, consulte [Página Escolhendo um estágio interno para arquivos locais na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **DB**] | O banco de dados especificado deve ser um banco de dados existente para o qual a atribuição padrão especificada tenha privilégios.<p>Este é o banco de dados associado ao nome do estágio.</p> <p>Para obter mais informações, consulte [Página Comandos de Banco de Dados, Esquema e Compartilhamento na documentação do Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Esquema**] | O esquema especificado deve ser um esquema existente para o qual a função padrão especificada tenha privilégios.<p>É o schema associado ao nome do estágio.</p><p>Para obter mais informações, consulte [Página Comandos de Banco de Dados, Esquema e Compartilhamento na documentação do Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Nome do estágio**] | O nome do estágio em que os arquivos de dados são armazenados no Snowflake. <p>Verifique se a função especificada na conta tem acesso de Leitura e Gravação a esse nome de estágio. (Como você está concedendo acesso de Leitura e Gravação, recomendamos usar um estágio usado somente pelo Adobe.) <p>Para obter informações sobre a concessão de privilégios a uma atribuição, consulte [Conceder privilégios na documentação do Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Para obter mais informações sobre o nome do estágio, consulte [Página Escolhendo um estágio interno para arquivos locais na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **Caminho do estágio**] | O caminho para o local onde os arquivos de dados são armazenados no Snowflake. <p>Para obter mais informações, consulte [Página Escolhendo um estágio interno para arquivos locais na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}

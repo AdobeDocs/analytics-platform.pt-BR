@@ -5,9 +5,9 @@ title: Configurar contas de exportação da nuvem
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1551'
 ht-degree: 6%
 
 ---
@@ -189,8 +189,8 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
    | Campo | Função |
    |---------|----------|
    | [!UICONTROL **Identificador de conta**] | Identifica exclusivamente uma conta Snowflake em sua organização, bem como em toda a rede global de plataformas de nuvem e regiões de nuvem compatíveis com Snowflake. <p>É necessário obter o identificador da conta da sua conta Snowflake e, em seguida, colar as informações aqui.</p><p>Para saber onde obter essas informações, consulte a [Página Identificadores de conta na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **Usuário**] | O nome de logon do usuário que será usado para a conexão. Este é um usuário que será usado especificamente para o Adobe. Especifique o nome aqui e crie um usuário no Snowflake com o mesmo nome. <p>Para obter mais informações, consulte [Página Referência de parâmetro de conexão do driver JDBC na documentação do Snowflake](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
-   | [!UICONTROL **Função**] | A função de controle de acesso padrão a ser usada na sessão de Snowflake iniciada pelo driver. Essa é uma função que será usada especificamente para o Adobe. Especifique a atribuição aqui e, em seguida, crie uma atribuição no Snowflake com o mesmo nome e conceda a ela acesso de Leitura e Gravação.<p>Para obter mais informações, consulte [Página Referência de parâmetro de conexão do driver JDBC na documentação do Snowflake](https://docs.snowflake.com/en/developer-guide/jdbc/jdbc-parameters).</p> |
+   | [!UICONTROL **Usuário**] | O nome de logon do usuário que será usado para a conexão. Este é um usuário que será usado especificamente para o Adobe. Especifique o nome aqui e crie um usuário no Snowflake com o mesmo nome. <p>Para obter mais informações, consulte [Comandos de usuário, função e privilégio](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **Função**] | Essa é uma função que será usada especificamente para o Adobe. Especifique a atribuição aqui e, em seguida, crie uma atribuição no Snowflake com o mesmo nome e conceda a atribuição ao usuário. <p>Para obter mais informações, consulte [Comandos de usuário, função e privilégio](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
    {style="table-layout:auto"}
 
