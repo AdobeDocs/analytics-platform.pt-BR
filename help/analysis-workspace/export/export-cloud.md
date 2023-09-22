@@ -5,9 +5,9 @@ title: Exportar relatórios de Customer Journey Analytics para a nuvem
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1612'
 ht-degree: 4%
 
 ---
@@ -63,7 +63,7 @@ Para exportar tabelas completas do Analysis Workspace:
 
 A exportação de dados do Customer Journey Analytics para a nuvem permite:
 
-* Exporte para um local compartilhado, como Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake ou Adobe Experience Platform.
+* Exporte para um local compartilhado, como Zona de aterrissagem de dados da Adobe Experience Platform, Plataforma da Google Cloud, Microsoft Azure, Amazon S3 ou Snowflake.
 
 * Armazene grandes quantidades de dados históricos.
 

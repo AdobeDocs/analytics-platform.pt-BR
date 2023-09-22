@@ -5,10 +5,10 @@ title: Solução de problemas de exportações com falha
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 9%
+source-wordcount: '271'
+ht-degree: 8%
 
 ---
 
@@ -42,8 +42,6 @@ Se o problema persistir, entre em contato com o Atendimento ao cliente da Adobe.
 
 * Conta
 
-* Nome da empresa
-
 * Conexão
 
-* Visualização de dados
+* Nome da empresa

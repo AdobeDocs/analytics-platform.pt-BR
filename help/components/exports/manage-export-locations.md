@@ -1,14 +1,14 @@
 ---
 description: Gerenciar o local de exportação da nuvem para onde os dados do Customer Journey Analytics podem ser enviados
 keywords: Analysis Workspace
-title: Configurar locais de exportação da nuvem
+title: Gerenciar locais e contas de exportação da nuvem
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 6%
+source-wordcount: '385'
+ht-degree: 5%
 
 ---
 

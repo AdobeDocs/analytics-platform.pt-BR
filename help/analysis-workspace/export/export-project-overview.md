@@ -5,7 +5,7 @@ title: Exportar visão geral dos dados do projeto
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Há vários métodos disponíveis ao exportar do Analysis Workspace. Ao escolher
 |---------|----------|
 | [Baixar para sua estação de trabalho](/help/analysis-workspace/export/download-send.md) | Use este método se desejar: <ul><li>Baixe projetos na sua estação de trabalho pessoal.</li><li>Os downloads são somente ad hoc (não pode ser programado).</li> <li>Baixe um total de 50.000 linhas.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
 | [Enviar para outros usuários](/help/analysis-workspace/export/t-schedule-report.md) | Use este método se desejar: <ul><li>Enviar dados de Customer Journey Analytics exportados por email para outros usuários em sua organização.</li><li>Pode ser ad hoc ou em um cronograma.</li> <li>Inclua um total de 50.000 linhas.</li> <!--true?--> |
-| [Enviar para um aplicativo na nuvem](/help/analysis-workspace/export/export-cloud.md) | Use este método se desejar: <ul><li>Exporte para um local compartilhado, como Google Cloud Platform, Microsoft Azure, Amazon S3, Snowflake ou Zona de aterrissagem de dados da Adobe Experience Platform.</li><li>Pode ser ad hoc ou em um cronograma.</li><li>Armazene quantidades maiores de dados de Customer Journey Analytics.</li><li>Exportar tabelas completas que contenham milhares ou milhões de linhas.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [Enviar para um aplicativo na nuvem](/help/analysis-workspace/export/export-cloud.md) | Use este método se desejar: <ul><li>Exporte para um local compartilhado, como Zona de aterrissagem de dados da Adobe Experience Platform, Plataforma da Google Cloud, Microsoft Azure, Amazon S3 ou Snowflake.</li><li>Pode ser ad hoc ou em um cronograma.</li><li>Armazene quantidades maiores de dados de Customer Journey Analytics.</li><li>Exportar tabelas completas que contenham milhares ou milhões de linhas.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
 
