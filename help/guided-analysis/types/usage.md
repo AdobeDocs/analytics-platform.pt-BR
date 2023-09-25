@@ -4,9 +4,9 @@ description: Medir o engajamento do usuário ao longo do tempo.
 exl-id: 1d103bd3-3e72-4c82-a534-c896f8433029
 feature: Guided Analysis
 keywords: análise do produto
-source-git-commit: f41d4a6c8d181ed05fdb34657d4c7677d50ade5a
+source-git-commit: c7a370b4c83ceddcb3ec9542714f768d5562f297
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
@@ -44,7 +44,7 @@ A variável [!UICONTROL Uso] view oferece as seguintes configurações de gráfi
 
 Adicionar dados adicionais ao gráfico.
 
-* **[!UICONTROL Mostrar anomalias]**: executa a detecção de anomalias na análise. Outliers são exibidos como pontos nos quais você pode passar o mouse para obter mais informações.
+* **[!UICONTROL Mostrar anomalias]**: Execuções [detecção de anomalias](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) análise de tendências. Outliers são exibidos como pontos nos quais você pode passar o mouse para obter mais informações.
 
 ## Aplicar comparação de tempo
 
