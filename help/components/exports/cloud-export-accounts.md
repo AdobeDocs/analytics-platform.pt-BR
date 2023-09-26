@@ -5,10 +5,10 @@ title: Configurar contas de exportação da nuvem
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 92b59f0e1f2668e5c2b2d1a73aee5ef6fbc7c420
+source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
 workflow-type: tm+mt
 source-wordcount: '1551'
-ht-degree: 6%
+ht-degree: 5%
 
 ---
 
@@ -74,7 +74,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 1. Copie o conteúdo de [!UICONTROL **SAS**] para a área de transferência. Use esse token SAS para acessar os dados exportados do Analysis Workspace da Landing Zone da AEP. Saiba mais sobre como acessar seus dados&quot; |
 
-1. Selecione [!UICONTROL **Fechar**].
+1. Selecionar [!UICONTROL **OK**].
 
 1. Continuar com [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
 
@@ -98,7 +98,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 1. Copie o conteúdo de [!UICONTROL **Usuário ARN**] para a área de transferência. O usuário ARN (Amazon Resource Name) é fornecido pelo Adobe. Você deve anexar esse usuário à política criada no ARN de função do Amazon S3.
 
-1. Selecione [!UICONTROL **Fechar**].
+1. Selecionar [!UICONTROL **OK**].
 
 1. Continuar com [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
 
@@ -122,7 +122,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 1. Copie o conteúdo de [!UICONTROL **Principal**] para a área de transferência e, em seguida, conceda permissão ao Principal para fazer upload de arquivos para esse bucket na Google Cloud Platform. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Selecione [!UICONTROL **Fechar**].
+1. Selecionar [!UICONTROL **OK**].
 
 1. Continuar com [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
 
@@ -150,7 +150,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 1. Caso ainda não o tenha feito, certifique-se de conceder permissões para o bucket no Azure SAS. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Selecione [!UICONTROL **Fechar**].
+1. Selecionar [!UICONTROL **OK**].
 
 1. Continuar com [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
 
@@ -176,7 +176,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 1. Caso ainda não o tenha feito, certifique-se de conceder permissões para o compartimento no RBAC do Azure. <!-- add link to Google Cloud docs on how to do this -->
 
-1. Selecione [!UICONTROL **Fechar**].
+1. Selecionar [!UICONTROL **OK**].
 
 1. Continuar com [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
 
@@ -202,7 +202,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 1. Copie o conteúdo de [!UICONTROL **Chave pública**] para a área de transferência. A chave pública é fornecida pelo Adobe. Use a chave pública no Snowflake para se conectar à sua conta Snowflake. Para obter mais informações, consulte [Página Autenticação de par de chaves e Rotação de par de chaves na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
 
-1. Selecione [!UICONTROL **Fechar**].
+1. Selecionar [!UICONTROL **OK**].
 
 1. Continuar com [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
 

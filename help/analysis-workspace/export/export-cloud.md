@@ -5,9 +5,9 @@ title: Exportar relatórios de Customer Journey Analytics para a nuvem
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1626'
 ht-degree: 4%
 
 ---
@@ -69,7 +69,7 @@ A exportação de dados do Customer Journey Analytics para a nuvem permite:
 
   Esse tipo de dado pode ser usado para detectar tendências de longo prazo para obter inteligência comercial e, em última análise, levar a uma melhor tomada de decisões de negócios.
 
-* Exportar tabelas completas que contenham milhares ou milhões de linhas. Outros métodos de exportação permitem no máximo 50.000 linhas.
+* Exporte tabelas completas que contenham milhares ou milhões de linhas (3 milhões, 30 milhões ou 150 milhões de linhas, dependendo do tipo de licença). Outros métodos de exportação permitem no máximo 50.000 linhas.
 
 * Incluir métricas calculadas nos dados de Customer Journey Analytics exportados.
 
@@ -108,7 +108,7 @@ Os seguintes recursos não são compatíveis e são removidos automaticamente da
 
 Os seguintes componentes não são suportados, e o Analysis Workspace solicita que você os remova da tabela ao executar uma exportação de tabela completa:
 
-* Métricas calculadas que usam funções avançadas na definição da métrica (consulte [Funções avançadas](/help/components/calc-metrics/cm-adv-functions.md) para obter mais informações)
+* Métricas calculadas que usam funções básicas ou avançadas na definição da métrica (consulte [Funções básicas](/help/components/calc-metrics/cm-functions.md) e [Funções avançadas](/help/components/calc-metrics/cm-adv-functions.md) para obter mais informações)
 * Componentes que foram impedidos por um administrador de serem exportados (consulte a *Filtrar as políticas de governança de dados nas visualizações de dados* seção em [Rótulos e políticas](/help/data-views/data-governance.md) para obter mais informações)
 * Mais de 5 dimensões e 5 métricas por relatório (até 5 dimensões e 5 métricas são compatíveis)
 * Nas colunas da tabela:
