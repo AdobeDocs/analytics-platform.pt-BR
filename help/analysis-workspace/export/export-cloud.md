@@ -5,9 +5,9 @@ title: Exportar relatórios de Customer Journey Analytics para a nuvem
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: 5ab26cec464051ace651d3ac9c2942f671b0df92
+source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1716'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ Outros métodos de exportação de relatórios de Customer Journey Analytics tam
 
 >[!NOTE]
 >
->Antes de exportar os dados conforme descrito nesta seção, verifique se a tabela atende aos [Requisitos de exportação](#export-requirements).
+>Antes de exportar os dados conforme descrito nesta seção, verifique se [Requisitos de exportação](#export-requirements) são cumpridos.
 
 Para exportar tabelas completas do Analysis Workspace:
 
@@ -85,9 +85,13 @@ A exportação de dados do Customer Journey Analytics para a nuvem permite:
 
 ### Requisitos mínimos
 
-As tabelas devem incluir pelo menos uma dimensão na linha e uma métrica em cada coluna para serem compatíveis com uma exportação de tabela completa.
+Verifique se as tabelas, o ambiente e as permissões atendem aos seguintes requisitos:
 
-Os administradores devem garantir que os endereços IP listados no [Endereços IP usados pelo Customer Journey Analytics](/help/admin/ip-addresses.md) estão incluídos na inclui na lista de permissões de firewall.
+* **Tabelas:** Todas as tabelas devem incluir pelo menos uma dimensão na linha e uma métrica em cada coluna para serem compatíveis com uma exportação de tabela completa.
+
+* **Ambiente:** Os administradores devem garantir que os endereços IP listados no [Endereços IP usados pelo Customer Journey Analytics](/help/admin/ip-addresses.md) estão incluídos na inclui na lista de permissões de firewall.
+
+* **Permissões:** No Adobe Admin Console, os usuários devem receber um perfil de produto que tenha a [!UICONTROL **Exportação de tabela completa**] permissão atribuída a ele para exportar tabelas completas. Para obter informações sobre como atribuir uma permissão a um perfil de produto no Admin Console, consulte [Permissão de Customer Journey Analytics no Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Controle de acesso Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
 ### Recursos incompatíveis
 

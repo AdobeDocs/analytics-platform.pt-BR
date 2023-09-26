@@ -5,9 +5,9 @@ title: Configurar contas de exportação da nuvem
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b773af6878f16266cbc8a502ec2e66d1380e8210
+source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1604'
 ht-degree: 5%
 
 ---
@@ -189,8 +189,8 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
    | Campo | Função |
    |---------|----------|
    | [!UICONTROL **Identificador de conta**] | Identifica exclusivamente uma conta Snowflake em sua organização, bem como em toda a rede global de plataformas de nuvem e regiões de nuvem compatíveis com Snowflake. <p>É necessário obter o identificador da conta da sua conta Snowflake e, em seguida, colar as informações aqui.</p><p>Para saber onde obter essas informações, consulte a [Página Identificadores de conta na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/admin-account-identifier).</p> |
-   | [!UICONTROL **Usuário**] | O nome de logon do usuário que será usado para a conexão. Este é um usuário que será usado especificamente para o Adobe. Especifique o nome aqui e crie um usuário no Snowflake com o mesmo nome. <p>Para obter mais informações, consulte [Comandos de usuário, função e privilégio](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
-   | [!UICONTROL **Função**] | Essa é uma função que será usada especificamente para o Adobe. Especifique a atribuição aqui e, em seguida, crie uma atribuição no Snowflake com o mesmo nome e conceda a atribuição ao usuário. <p>Para obter mais informações, consulte [Comandos de usuário, função e privilégio](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **Usuário**] | O nome de logon do usuário que será usado para a conexão. Recomendamos criar um novo usuário que será usado especificamente para o Adobe. Especifique o nome aqui e crie um usuário no Snowflake com o mesmo nome. Você pode criar um usuário no Snowflake usando o `CREATE USER` comando.  <p>Para obter mais informações, consulte [Comandos de usuário, função e privilégio](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
+   | [!UICONTROL **Função**] | A função que será atribuída ao usuário. Recomendamos a criação de uma nova função que será usada especificamente para o Adobe. Especifique a atribuição aqui e, em seguida, crie uma atribuição no Snowflake com o mesmo nome e conceda a atribuição ao usuário. Você pode criar uma função no Snowflake usando o `CREATE ROLE` comando. <p>Para obter mais informações, consulte [Comandos de usuário, função e privilégio](https://docs.snowflake.com/en/sql-reference/commands-user-role).</p> |
 
    {style="table-layout:auto"}
 
@@ -200,7 +200,17 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
    <!-- add screen shot -->
 
-1. Copie o conteúdo de [!UICONTROL **Chave pública**] para a área de transferência. A chave pública é fornecida pelo Adobe. Use a chave pública no Snowflake para se conectar à sua conta Snowflake. Para obter mais informações, consulte [Página Autenticação de par de chaves e Rotação de par de chaves na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/key-pair-auth). |
+1. Copie o conteúdo de [!UICONTROL **Chave pública**] para a área de transferência. A chave pública é fornecida pelo Adobe.
+
+   Use a chave pública no Snowflake para se conectar à sua conta Snowflake. Você deve associar o usuário criado a esta chave pública.
+
+   Por exemplo, em Snowflake, especifique o seguinte comando:
+
+   ```
+   CREATE USER <your_adobe_user> RSA_PUBLIC_KEY = '<your_public_key>';
+   ```
+
+   Para obter mais informações, consulte [Página Autenticação de par de chaves e Rotação de par de chaves na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/key-pair-auth).
 
 1. Selecionar [!UICONTROL **OK**].
 
