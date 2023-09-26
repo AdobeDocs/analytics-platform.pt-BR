@@ -1,15 +1,15 @@
 ---
-title: Filtrar Dimension no Report Builder
+title: Como filtrar dimensões no Report Builder
 description: Descreve como usar dimensões de filtro em Report Builder para Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin, User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: d045ecf73f7e15940510b764814fb853222e88cc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 98%
+source-wordcount: '988'
+ht-degree: 88%
 
 ---
 
@@ -25,13 +25,13 @@ Para alterar os itens de dimensão retornados para cada dimensão
 
 1. Clique no ícone **...** ao lado do nome de um componente na tabela.
 
-   ![](./assets/image27.png)
+   ![As opções do ícone de reticências.](./assets/image27.png)
 
 1. Selecionar **Filtrar dimensão** no menu pop-up para exibir o painel **Filtrar dimensão**.
 
 1. Selecionar **Mais popular** ou **Específico**.
 
-   ![](./assets/image28.png)
+   ![A opção específica selecionada no painel Filtrar dimensão.](./assets/image28.png)
 
 1. Selecione as opções apropriadas com base no tipo de filtro escolhido.
 
@@ -49,7 +49,7 @@ Há duas maneiras de filtrar itens de dimensão: Mais popular e Específica.
 
 A opção Mais popular permite filtrar dinamicamente itens de dimensão com base em valores de métrica. A filtragem Mais popular retorna os itens de dimensão com classificação mais alta com base nos valores de métrica. Por padrão, os primeiros 10 itens de dimensão são listados, classificados pela primeira métrica adicionada ao bloco de dados.
 
-![arquivos de imagem](./assets/image29.png)
+![A opção mais popular.](./assets/image29.png)
 
 
 ### Opções de Página e Linhas
@@ -92,7 +92,7 @@ Definição dos critérios de filtragem
 
 1. Selecione um operador na lista suspensa.
 
-   ![](./assets/image31.png)
+   ![A lista de operadores.](./assets/image31.png)
 
 1. Insira um valor no campo de pesquisa.
 
@@ -114,14 +114,14 @@ Para alterar a métrica usada para filtrar e classificar o bloco de dados,
 
 2. Clique na seta da métrica preferida. 
 
-   ![](./assets/image30.png)
+   ![O Criador de tabela e as métricas.](./assets/image30.png)
 
 
 ## Filtragem específica
 
 A opção Específico permite criar uma lista fixa de itens de dimensão para cada dimensão. Use o tipo de filtro **Específico** para especificar os itens de dimensão exatos a serem incluídos no filtro. É possível selecionar itens de uma lista ou de um intervalo de células.
 
-![](./assets/image32.png)
+![As opções Específicas e os itens selecionados.](./assets/image32.png)
 
 ### A partir da lista
 
@@ -129,7 +129,7 @@ A opção Específico permite criar uma lista fixa de itens de dimensão para ca
 
    Ao selecionar a opção **Da lista**, a lista é preenchida com itens de dimensão com mais eventos primeiro.
 
-   ![](./assets/image33.png)
+   ![A opção Da lista e os itens disponíveis.](./assets/image33.png)
 
    A lista de **Itens disponíveis** é ordenada a começar pelos itens de dimensão com mais eventos para aqueles com menos eventos.
 
@@ -137,9 +137,9 @@ A opção Específico permite criar uma lista fixa de itens de dimensão para ca
 
 1. Para pesquisar um item não incluído nos últimos 90 dias de dados, clique em **Mostrar itens para os últimos 6 meses** para estender a pesquisa.
 
-   ![](./assets/image34.png)
+   ![A lista Mostrar itens dos últimos 6 meses.](./assets/image34.png)
 
-   Após carregar os dados dos últimos seis meses, o Report Builder atualiza o link para **Mostrar itens para os últimos 18 meses**.
+   Após carregar os dados dos últimos 6 meses, o Report Builder atualiza o link para **Mostrar itens dos últimos 18 meses**.
 
 1. Selecionar um item de dimensão.
 
@@ -151,7 +151,7 @@ A opção Específico permite criar uma lista fixa de itens de dimensão para ca
 
    Para mover um item na lista, arraste e solte o item ou clique em ... para exibir o menu de movimentação.
 
-   ![](./assets/image36.png)
+   ![A lista de itens de dimensão.](./assets/image36.png)
 
 1. Clique em **Aplicar**
 
@@ -161,7 +161,7 @@ A opção Específico permite criar uma lista fixa de itens de dimensão para ca
 
 Selecione a opção **A partir de intervalo de células** para escolher um intervalo de células que contenha a lista de itens de dimensões a serem correspondidos.
 
-![](./assets/image37.png)
+![A opção From range of cells e o campo para selecionar um intervalo de células.](./assets/image37.png)
 
 Ao selecionar um intervalo de células, considere as seguintes restrições:
 
@@ -175,6 +175,6 @@ Sua seleção pode conter células vazias ou células com valores que não corre
 
 Na guia **Dimensões**, clique no ícone de divisa ao lado do nome de uma dimensão para exibir a lista de itens de dimensão.
 
-![](./assets/dimensions_chevron.png)
+![A guia Dimension e a lista de dimensões.](./assets/dimensions_chevron.png)
 
 Você pode arrastar e soltar itens na **Tabela** ou clicar duas vezes em um nome de item para adicioná-lo ao construtor de **Tabelas**.

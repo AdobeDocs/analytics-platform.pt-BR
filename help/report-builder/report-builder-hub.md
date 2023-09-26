@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: abdf9dc510ebf929be2ca6be02ea60a83785a6f7
-workflow-type: ht
-source-wordcount: '464'
-ht-degree: 100%
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ Use o hub do Report Builder para criar, atualizar, excluir e gerenciar blocos de
 
 O hub do Report Builder contém os botões Criar e Gerenciar, a lista COMANDOS e o painel EDIÇÃO RÁPIDA.
 
-<img src="./assets/hub51.png" width="50%"/>
+<img src="./assets/hub51.png" width="50%" alt="O Hub do Report Builder"/>
 
 
 ## Botões Criar e Gerenciar
@@ -30,7 +30,7 @@ Use os botões Criar ou Gerenciar para criar novos blocos de dados ou gerenciar 
 
 Use o painel COMANDOS para acessar comandos compatíveis com as células selecionadas ou uma ação anterior.
 
-![](./assets/hub1.png)
+![O painel Comandos no Hub do Report Builder](./assets/hub1.png)
 
 ### Comandos
 
@@ -47,7 +47,7 @@ Use o painel COMANDOS para acessar comandos compatíveis com as células selecio
 
 Ao selecionar um ou mais blocos de dados em uma planilha, o Report Builder exibe o painel EDIÇÃO RÁPIDA. Você pode usar o painel EDIÇÃO RÁPIDA para alterar parâmetros em um único bloco de dados ou alterar parâmetros em vários blocos de dados ao mesmo tempo.
 
-![](./assets/hub2.png)
+![O painel Edição rápida no Report Builder](./assets/hub2.png)
 
 As alterações feitas usando as seções Edição rápida se aplicam a todos os blocos de dados selecionados.
 
@@ -59,7 +59,7 @@ Quando você altera a visualização de dados, todos os blocos de dados na sele�
 
 Para alterar a visualização de dados, selecione uma nova visualização de dados no menu suspenso.
 
-![](./assets/image16.png)
+![O Hub de Report Builder mostrando o menu suspenso de visualização de dados.](./assets/image16.png)
 
 ### Intervalo de datas
 

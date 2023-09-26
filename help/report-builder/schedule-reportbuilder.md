@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
+source-git-commit: 063fc71a9c0bbcadb1348aa4c41c64bed08a51f6
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 90%
+source-wordcount: '1166'
+ht-degree: 85%
 
 ---
 
@@ -29,15 +29,15 @@ Use o botão Programar tarefa no hub do Report Builder para criar com rapidez um
 
 1. Clique no botão Programação no hub do Report Builder.
 
-   ![](./assets/schedule-button.png){width="55%"}
+   ![Clique no botão Schedule para criar um agendamento.](./assets/schedule-button.png){width="55%"}
 
 1. Clique em Programar pasta de trabalho ou no botão de mais no canto superior esquerdo para criar uma nova pasta de trabalho programada.
 
-   ![Descrição alt](./assets/schedule-workbook.png){width="55%"}
+   ![A janela Programar pastas de trabalho.](./assets/schedule-workbook.png){width="55%"}
 
    O painel de programação exibe algumas informações predefinidas sobre a pasta de trabalho, como o nome da pasta de trabalho e a última data em que a pasta de trabalho foi modificada.
 
-   ![Descrição alt](./assets/schedule-pane.png){width="55%"}
+   ![O painel de agendamento.](./assets/schedule-pane.png){width="55%"}
 
 1. (Opcional) Insira um nome de arquivo.
 
@@ -51,13 +51,13 @@ Use o botão Programar tarefa no hub do Report Builder para criar com rapidez um
 
    Ao fazer essa seleção, você deverá digitar uma senha para abrir o arquivo. Isso é útil se você tiver dúvidas sobre a segurança de dados e quiser proteger a pasta de trabalho por senha. A proteção do arquivo com uma senha exige que você selecione **Compactação .zip**. A senha deve ter pelo menos 8 caracteres e conter um número e um caractere especial.
 
-   ![Descrição alt](./assets/zip-compression.png){width="55%"}
+   ![Insira uma senha no campo Proteger a pasta de trabalho com senha.](./assets/zip-compression.png){width="55%"}
 
 1. Insira os **Recipients**. Você pode inserir o nome de uma pessoa reconhecida em sua organização ou pode inserir um endereço de email de uma pessoa dentro ou fora da organização.
 
 1. Insira o **Assunto** do email e uma descrição para seus recipients. O assunto assume o padrão do nome do arquivo da pasta de trabalho, mas você pode modificar o assunto, se necessário. Você pode adicionar detalhes na seção de descrição.
 
-   ![Descrição alt](./assets/recipients-subject.png){width="55%"}
+   ![Informe um assunto no campo Assunto.](./assets/recipients-subject.png){width="55%"}
 
 1. Configure as opções de programação para definir a data e a hora em que deseja que a pasta de trabalho seja enviada por email para os recipients.
 
@@ -65,15 +65,15 @@ Use o botão Programar tarefa no hub do Report Builder para criar com rapidez um
 
    Escolha a **Frequência** no menu suspenso. Você pode definir a frequência por hora, dia, semana, mês ou ano em um dia específico. Por exemplo, você pode configurar uma programação para enviar a pasta de trabalho na primeira noite de domingo do mês, para que os recipients tenham o email na caixa de entrada logo na segunda-feira de manhã.
 
-   ![Descrição alt](./assets/frequency.png){width="55%"}
+   ![Selecione a frequência para agendar seu relatório.](./assets/frequency.png){width="55%"}
 
 1. Após definir a programação, clique em **Enviar de acordo com a programação**.
 
-   ![Descrição alt](./assets/send-on-schedule.png){width="55%"}
+   ![Clique em Enviar de acordo com a programação.](./assets/send-on-schedule.png){width="55%"}
 
    Você verá uma confirmação na parte inferior do hub do Report Builder e a pasta de trabalho programada será listada na guia Pastas de trabalho.
 
-   ![Descrição alt](./assets/confirmation-toast.png){width="55%"}
+   ![Notificação do sistema de confirmação](./assets/confirmation-toast.png){width="55%"}
 
 ## Enviar a pasta de trabalho apenas uma vez
 
@@ -81,7 +81,7 @@ Você também pode enviar a pasta de trabalho apenas uma vez.
 
 1. Desmarcar **Mostrar opções de programação**
 
-   ![Descrição alt](./assets/send-now.png){width="40%"}
+   ![Clique em Desmarcar Mostrar opções de agendamento para enviar uma pasta de trabalho uma vez.](./assets/send-now.png){width="40%"}
 
 1. Clique em **Enviar agora**.
 
@@ -115,14 +115,14 @@ Uma marca de seleção verde indica que a pasta de trabalho foi enviada com êxi
 
 Você pode escolher quais colunas exibir na guia de histórico clicando no ícone de configuração de colunas à direita da barra de pesquisa.
 
-![Descrição alt](./assets/history.png){width="55%"}
+![Clique no ícone de coluna para exibir ou ocultar colunas específicas.](./assets/history.png){width="55%"}
 
 Você pode filtrar o histórico para ver apenas o de uma única pasta de trabalho programada, acessando a guia Pastas de trabalho, selecionando a pasta de trabalho e clicando no ícone do histórico.
 
 Também é possível exibir o histórico de uma pasta de trabalho específica na guia Pastas de trabalho. Na guia Pastas de trabalho, selecione a pasta de trabalho e clique no ícone Histórico.
 
-![Descrição alt](./assets/history2.png){width="55%"}
+![O ícone do histórico de pastas de trabalho](./assets/history2.png){width="55%"}
 
 O filtro da pasta de trabalho será exibido na parte superior do histórico. Para visualizar o histórico de todas as tarefas programadas novamente, clique no x ao lado do filtro.
 
-![Descrição alt](./assets/history3.png){width="55%"}
+![O filtro da pasta de trabalho.](./assets/history3.png){width="55%"}

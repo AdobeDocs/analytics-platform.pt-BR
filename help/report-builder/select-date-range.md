@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 96%
+source-wordcount: '1051'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ A opção A partir da célula permite fazer referência às datas inseridas em c
 
 Você tem a opção de excluir o hoje em qualquer intervalo de datas selecionado.
 
-![](./assets/image17.png)
+![Selecione Excluir hoje.](./assets/image17.png)
 
 ## Usar o calendário
 
@@ -62,7 +62,7 @@ Para selecionar datas usando o calendário
 
 Para definir um intervalo de datas invertido, clique primeiro na data final e, em seguida, clique na data inicial.
 
-![](./assets/image18.png)
+![Clique na data final e, em seguida, na data inicial.](./assets/image18.png)
 
 ### Menu suspenso Predefinição
 
@@ -76,7 +76,7 @@ A opção Datas em andamento permite selecionar um intervalo de datas usando dat
 
 1. Selecione uma expressão em andamento para a data de início e/ou de término.
 
-   ![](./assets/image19.png)
+   ![Selecione Usar datas do acumulado e a expressão do acumulado.](./assets/image19.png)
 
    **Início do** — Permite selecionar o início de um dia, semana, mês, trimestre ou ano.
 
@@ -86,11 +86,11 @@ A opção Datas em andamento permite selecionar um intervalo de datas usando dat
 
 1. Escolha dia, semana, mês, trimestre ou ano como o período do acumulado.
 
-   ![](./assets/image20.png)
+   ![Escolha o dia atual.](./assets/image20.png)
 
 1. Adicione ou subtraia dias, semanas, meses, trimestres ou anos a partir da data em andamento.
 
-   ![](./assets/image21.png)
+   ![Selecione o dia atual mais 14 dias.](./assets/image21.png)
 
 1. Clique em Próximo para definir o intervalo de dados.
 
@@ -106,7 +106,7 @@ A opção de expressão personalizada permite alterar o intervalo de datas, cria
 
    Ao selecionar a opção **Usar expressão personalizada**, os controles padrão de intervalo de datas do acumulado são desativados.
 
-   ![](./assets/custom_expression.png)
+   ![Selecione Usar expressão personalizada mostrando tm-1m a td-1d.](./assets/custom_expression.png)
 
 1. Insira uma expressão personalizada.
 
@@ -163,7 +163,7 @@ A tabela a seguir lista exemplos de expressão de data.
 
 O intervalo de datas pode ser especificado em células da planilha. Use a opção de **Intervalo de datas da célula** para escolher a data inicial e final do bloco de dados a partir das células selecionadas. Ao selecionar a opção **A partir da célula**, o painel é exibido **A partir de** e **Para** campos onde você pode inserir um local de célula.
 
-![](./assets/image23.png)
+![Selecionar da célula Folha1!H4 para Folha1!I4](./assets/image23.png)
 
 ## Excluir hoje
 

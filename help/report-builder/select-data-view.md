@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 802a8f0b-10c2-4adc-a4ec-25f3d28f3002
-source-git-commit: f09dffe3d134c423b69f6ca75337f3aca3f51410
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 3%
+source-wordcount: '342'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ Para obter informações sobre como criar um bloco de dados, consulte [Criar um 
 
 1. Clique em *ícone de célula* no *Visualizações de dados* seção.
 
-   ![Ícone de célula](/help/report-builder/assets/cell-icon.png)
+   ![Clique no ícone da célula.](/help/report-builder/assets/cell-icon.png)
 
 1. Selecione um local de célula para adicionar as visualizações de dados à célula selecionada.
 
@@ -38,7 +38,7 @@ Para obter informações sobre como criar um bloco de dados, consulte [Criar um 
 
 1. Selecione as visualizações de dados que deseja atribuir à célula.
 
-   ![Ícone de célula](/help/report-builder/assets/select-data-view.png)
+   ![Selecionar visualizações de dados.](/help/report-builder/assets/select-data-view.png)
 
 1. Clique em **Aplicar**.
 

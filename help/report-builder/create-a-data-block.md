@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 21bcc23b37372fc96347228b8b40fa970bb09bb5
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 74%
+source-wordcount: '649'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ Configure os parâmetros do bloco de dados inicial para o Local do bloco de dado
 
 1. Clique em **Criar bloco de dados**.
 
-   ![](./assets/create_db.png)
+   ![Captura de tela mostrando a opção Criar bloco de dados.](./assets/create_db.png)
 
 1. Defina a **localização do bloco de dados**.
 
@@ -41,13 +41,9 @@ Configure os parâmetros do bloco de dados inicial para o Local do bloco de dado
 
 1. Clique **Próximo**.
 
-   ![](./assets/choose_date_data_view3.png)
+   ![Captura de tela mostrando a opção de intervalo de datas e o botão Próximo ativo.](./assets/choose_date_data_view3.png)
 
    Após configurar o bloco de dados, é possível selecionar dimensões, métricas e filtros para criar seu bloco de dados. As guias Dimensões, Métricas e Filtros são exibidas acima do painel do Criador de tabela.
-<!--
-    ![](./assets/image9.png)
-  -->
-
 
 ## Criar o bloco de dados
 
@@ -75,13 +71,13 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
 
    Quando você adiciona componentes à tabela, uma pré-visualização do bloco de dados é exibida no local do bloco de dados na planilha. O layout da pré-visualização do bloco de dados é atualizado automaticamente à medida que você adiciona, move ou remove itens na tabela.
 
-   ![](./assets/image10.png)
+   ![Captura de tela mostrando os componentes adicionados e a planilha atualizada.](./assets/image10.png)
 
    **Exibir ou ocultar cabeçalhos de linha e coluna**
 
 1. Clique em **Tabela** ícone de configurações.
 
-   ![imagem de espaço reservado](./assets/table-settings.png){width="35%"}
+   ![Captura de tela mostrando a opção Configurações da tabela.](./assets/table-settings.png){width="35%"}
 
 1. Marque ou desmarque a opção Display row and column headers. Os cabeçalhos são exibidos por padrão.
 
@@ -89,7 +85,7 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
 
 1. Clique no ícone de reticências nas dimensões ou nos cabeçalhos da coluna para exibir as configurações.
 
-   ![imagem de espaço reservado](./assets/row-heading.png){width="35%"}
+   ![O ícone de reticências na seção Linha.](./assets/row-heading.png){width="35%"}
 
 1. Clique em Ocultar ou Mostrar para alternar os rótulos de dimensão ou cabeçalhos da coluna. Todos os rótulos são exibidos por padrão.
 
@@ -97,8 +93,8 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
 
    Uma mensagem de processamento é exibida enquanto os dados de análise são recuperados.
 
-   ![](./assets/image11.png)
+   ![A mensagem de processamento.](./assets/image11.png)
 
    O Report Builder recupera os dados e exibe o bloco de dados concluído na planilha.
 
-   ![](./assets/image12.png)
+   ![O bloco de dados concluído.](./assets/image12.png)

@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: 8b0a4b06a2ebed196bab37e9befb61e0bf0f8902
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '750'
-ht-degree: 68%
+source-wordcount: '850'
+ht-degree: 60%
 
 ---
 
@@ -25,9 +25,7 @@ Para aplicar um filtro a todo o bloco de dados, clique duas vezes em um filtro o
 
 Para aplicar filtros a métricas individuais, arraste e solte um filtro em uma métrica na tabela. Você também pode clicar no **...** ícone à direita de uma métrica no painel Tabela e selecionar **Filtrar métrica**. Para exibir os filtros aplicados, selecione uma métrica no painel Tabela ou passe o mouse sobre ela. As métricas com filtros aplicados exibem um ícone de filtro.
 
-<!-- ![](./assets/image24.png) -->
-
-![](./assets/filter_by.png)
+![Guia Filtros exibindo métricas.](./assets/filter_by.png)
 
 ## Filtros de edição rápida
 
@@ -39,11 +37,11 @@ Para editar filtros usando o painel Edição rápida
 
 1. Selecione um intervalo de células de um ou vários blocos de dados.
 
-   ![](./assets/select_multiple_dbs.png)
+   ![Painel de filtro Edição rápida mostrando opções de filtro para visualizações de dados, intervalo de datas e filtros.](./assets/select_multiple_dbs.png)
 
 1. Clique no link Filtros para iniciar o painel de Edição rápida - Filtros.
 
-   ![](./assets/quick_edit_filters.png)
+   ![Painel Filtros mostrando o campo Adicionar filtro e as listas Filtros aplicados.](./assets/quick_edit_filters.png)
 
 ### Adicionar ou remover um filtro
 
@@ -55,7 +53,7 @@ Para editar filtros usando o painel Edição rápida
 
    Quando vários filtros estiverem presentes nos blocos de dados selecionados, você poderá pesquisar por filtros específicos usando o campo de pesquisa **Adicionar filtro**.
 
-   ![](./assets/add_filter.png)
+   ![O campo Adicionar filtro.](./assets/add_filter.png)
 
 1. Adicionar filtros selecionando filtros do menu suspenso **Adicionar filtro**.
 
@@ -75,7 +73,7 @@ Para editar filtros usando o painel Edição rápida
 
 1. Selecione a guia **Substituir** no painel Edição rápida-filtros.
 
-   ![](./assets/replace_filter.png)
+   ![Selecione a guia Substituir.](./assets/replace_filter.png)
 
 1. Use o campo de pesquisa da **Lista de pesquisa** para localizar filtros específicos.
 
@@ -85,7 +83,7 @@ Para editar filtros usando o painel Edição rápida
 
    Selecionar um filtro o adiciona à lista **Substituir por**...
 
-   ![](./assets/replace_screen_new.png)
+   ![A guia Substituir com o bloco de dados Pessoas no aplicativo selecionado e a lista Substituir por atualizada mostrando Pessoas no aplicativo revisadas.](./assets/replace_screen_new.png)
 
 1. Clique em **Aplicar**.
 
@@ -101,7 +99,7 @@ Para aplicar filtros de uma célula
 1. Clique em **Filtros** para definir filtros.
 1. Clique em **Criar filtro a partir da célula**.
 
-   ![](./assets/create-filter-from-cell.png)
+   ![Ícone Criar filtro a partir da célula](./assets/create-filter-from-cell.png)
 
 1. Selecione a célula da qual deseja que os blocos de dados façam referência a um filtro.
 
@@ -109,13 +107,13 @@ Para aplicar filtros de uma célula
 
    Observação: apenas uma opção pode ser selecionada para a célula em questão de cada vez.
 
-   ![](./assets/select-filters.png)
+   ![A janela Add filter from cell mostra os Filtros incluídos.](./assets/select-filters.png)
 
 1. Clique em **Aplicar** para criar a célula de referência.
 
 1. No **Filtros** adicione o filtro de célula de referência recém-criado ao bloco de dados.
 
-   ![](./assets/reference-cell-filter.png)
+   ![Guia Filtros mostrando o filtro Sheet1!J1(All Data) adicionado à tabela.](./assets/reference-cell-filter.png)
 
 1. Clique em **Concluir**.
 
@@ -127,10 +125,10 @@ Para aplicar filtros de uma célula
 
 1. Clique no link em **Filtros da Célula** no menu Edição rápida.
 
-   ![](./assets/filters-from-cell-link.png)
+   ![Filtros de link de célula mostrando Sheet1!J1 (Todos os Dados)](./assets/filters-from-cell-link.png)
 
 1. Selecione o filtro no menu suspenso.
 
-   ![](./assets/filter-drop-down.png)
+   ![Menu suspenso Filtro](./assets/filter-drop-down.png)
 
 1. Clique em **Aplicar**.

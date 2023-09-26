@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 97%
+source-wordcount: '491'
+ht-degree: 89%
 
 ---
 
@@ -72,11 +72,11 @@ Para baixar e instalar o Suplemento Report Builder
 
 Entre em contato com a equipe de TI ou de segurança para solicitar aprovação para o Suplemento Report Builder. Após a concessão da aprovação, na caixa de diálogo Suplementos do Office, selecione a guia Administrador Gerenciado.
 
-![](./assets/image1.png)
+![A guia Administrador Gerenciado na caixa de diálogo Suplementos do Office.](./assets/image1.png)
 
 Depois de instalar o Suplemento Report Builder, o ícone de Report Builder é exibido na faixa de opções da guia Página inicial, do Excel.
 
-![](./assets/rb_app_icon.png)
+![O ícone Report Builder no Excel](./assets/rb_app_icon.png)
 
 ## Fazer logon no Report Builder
 
@@ -88,11 +88,11 @@ Depois de instalar o Suplemento Report Builder for Excel na sua plataforma opera
 
 1. Na barra de ferramentas do Adobe Report Builder, clique em **Logon**.
 
-   ![](./assets/rb_login.png)
+   ![Clique no botão Report Builder login.](./assets/rb_login.png)
 
 1. Insira as informações da conta de ID da Adobe Experience. As informações da sua conta devem corresponder às suas credenciais do Customer Journey Analytics.
 
-   ![](./assets/image4.png)
+   ![Seu ícone de logon e a organização.](./assets/image4.png)
 
 Depois de fazer logon, o ícone de logon e a organização aparecerão na parte superior do painel
 
@@ -104,7 +104,7 @@ Ao fazer logon pela primeira vez, você faz logon na organização padrão atrib
 
 1. Selecione uma organização na lista de organizações disponíveis. Somente as organizações às quais você tem acesso são listadas.
 
-   ![](./assets/image5.png)
+   ![A lista de organizações que você pode acessar.](./assets/image5.png)
 
 ## Fazer logoff
 
@@ -114,6 +114,6 @@ Você pode fazer logoff do Report Builder a partir do perfil do usuário.
 
 1. Clique no ícone de avatar para exibir seu perfil de usuário.
 
-   ![](./assets/image6.png)
+   ![O avatar do seu perfil de usuário e o botão Sair.](./assets/image6.png)
 
 1. Clique em **Fazer logoff**.

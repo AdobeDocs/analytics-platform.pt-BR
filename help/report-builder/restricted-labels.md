@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 60%
+source-wordcount: '341'
+ht-degree: 57%
 
 ---
 
@@ -34,10 +34,10 @@ Duas políticas definidas por Adobe são exibidas no Customer Journey Analytics 
 
 Os componentes afetados por essas políticas ficam esmaecidos. Quando você passa o mouse sobre um componente que tem uma política aplicada, uma nota é exibida para indicar o seguinte: **Foram aplicadas políticas a este campo que proíbem o uso desses dados.** Para obter mais informações, consulte [Rótulos e políticas](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-governance.html?lang=pt-BR).
 
-![](assets/rb-restricted-label.png)
+![A nota de política indicando uso proibido de dados.](assets/rb-restricted-label.png)
 
 ## Atualizar relatórios com dados restritos
 
 Nos casos em que um usuário criou um relatório do Report Builder com elementos de dados restritos posteriormente, quando o relatório for atualizado uma mensagem de erro será exibida.
 
-![](assets/error-restricted-data.png)
+![A mensagem de erro exibida depois que os elementos de dados são restritos.](assets/error-restricted-data.png)
