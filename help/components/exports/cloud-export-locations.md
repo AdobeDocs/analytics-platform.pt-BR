@@ -5,10 +5,10 @@ title: Configurar locais de exportação da nuvem
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
+source-git-commit: 2da2b4b2931f28dc373a2c634c38e9dfcbdd2788
 workflow-type: tm+mt
-source-wordcount: '1082'
-ht-degree: 5%
+source-wordcount: '1417'
+ht-degree: 4%
 
 ---
 
@@ -20,10 +20,12 @@ Esse processo consiste em adicionar e configurar a conta (como Amazon S3, Google
 
 Para obter informações sobre como gerenciar locais existentes, incluindo exibição, edição e exclusão de locais, consulte [Gerenciar locais e contas de exportação da nuvem](/help/components/exports/manage-export-locations.md).
 
-Para configurar um local de exportação na nuvem:
+## Começar a criar um local de exportação de nuvem
 
 1. É necessário adicionar uma conta antes de adicionar um local. Caso ainda não o tenha feito, adicione uma conta conforme descrito em [Configurar contas de exportação da nuvem](/help/components/exports/cloud-export-accounts.md).
+
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
+
 1. Selecione o [!UICONTROL **Localizações**] e selecione [!UICONTROL **Adicionar localização**].
 
    ![botão adicionar localização](assets/location-add.png)
@@ -40,11 +42,17 @@ Para configurar um local de exportação na nuvem:
 
 1. No [!UICONTROL **Propriedades do local**] especifique as informações específicas ao tipo de conta da sua conta de localização.
 
-   Para obter instruções de configuração, expanda a seção abaixo que corresponde ao tipo de conta selecionado em [!UICONTROL **Contas de localização**] campo.
+   Continue com a seção abaixo que corresponde ao tipo de conta selecionado na [!UICONTROL **Conta de localização**] campo.
 
-   +++Zona de aterrissagem de dados do Adobe Experience Platform
+### Zona de aterrissagem de dados Adobe Experience Platform
 
-   Especifique as seguintes informações para configurar um local da Zona de aterrissagem de dados da Adobe Experience Platform:
+>[!IMPORTANT]
+>
+>Ao exportar relatórios de Customer Journey Analytics para a Data Landing Zone da Adobe Experience Platform, baixe os dados em 7 dias e exclua-os da Data Landing Zone da AEP. Após 7 dias, os dados são excluídos automaticamente da Zona de aterrissagem de dados da AEP.
+
+1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+
+1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] , especifique as seguintes informações para configurar um local da Zona de aterrissagem de dados da Adobe Experience Platform:
 
    <!-- still need to update; can't create AEP account -->
 
@@ -53,11 +61,17 @@ Para configurar um local de exportação na nuvem:
    | [!UICONTROL **ID organizacional IMS**] | A ID da organização IMS é fornecida pelo Adobe. Clique no ícone Copiar ao lado da guia [!UICONTROL **ID organizacional IMS**] para copiar o conteúdo do campo, use a ID na conta da Adobe Experience Platform. |
    | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja colocar os dados. Especifique um nome de pasta e adicione uma barra invertida depois do nome para criar a pasta. Por exemplo, `folder_name/` |
 
-+++
+   {style="table-layout:auto"}
 
-   +++Amazon S3 Role ARN
+1. Selecione [!UICONTROL **Salvar**].
 
-   Especifique as seguintes informações para configurar um local ARN de Função do Amazon S3:
+1. Agora é possível exportar dados do Analysis Workspace para a conta e o local configurados. Para obter informações sobre como exportar dados para a nuvem, consulte [Exportar dados do projeto para a nuvem](/help/analysis-workspace/export/export-cloud.md).
+
+### Amazon S3 Role ARN
+
+1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+
+1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] especifique as seguintes informações para configurar um local ARN para a função Amazon S3:
 
    <!-- still need to update; can't create S3 role ARN account -->
 
@@ -68,11 +82,15 @@ Para configurar um local de exportação na nuvem:
 
    {style="table-layout:auto"}
 
-+++
+1. Selecione [!UICONTROL **Salvar**].
 
-   +++Google Cloud Platform
+1. Agora é possível exportar dados do Analysis Workspace para a conta e o local configurados. Para obter informações sobre como exportar dados para a nuvem, consulte [Exportar dados do projeto para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 
-   Especifique as seguintes informações para configurar um local da Google Cloud Platform:
+### Google Cloud Platform
+
+1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+
+1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] especifique as seguintes informações para configurar um local da Google Cloud Platform:
 
    <!-- still need to update; can't create GCP account -->
 
@@ -83,11 +101,15 @@ Para configurar um local de exportação na nuvem:
 
    {style="table-layout:auto"}
 
-+++
+1. Selecione [!UICONTROL **Salvar**].
 
-   +++Azure SAS
+1. Agora é possível exportar dados do Analysis Workspace para a conta e o local configurados. Para obter informações sobre como exportar dados para a nuvem, consulte [Exportar dados do projeto para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 
-   Especifique as seguintes informações para configurar um local SAS do Azure:
+### Azure SAS
+
+1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+
+1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] especifique as seguintes informações para configurar um local SAS do Azure:
 
    | Campo | Função |
    |---------|----------|
@@ -96,11 +118,15 @@ Para configurar um local de exportação na nuvem:
 
    {style="table-layout:auto"}
 
-+++
+1. Selecione [!UICONTROL **Salvar**].
 
-   +++Azure RBAC
+1. Agora é possível exportar dados do Analysis Workspace para a conta e o local configurados. Para obter informações sobre como exportar dados para a nuvem, consulte [Exportar dados do projeto para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 
-   Especifique as seguintes informações para configurar um local do Azure RBAC:
+### Azure RBAC
+
+1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+
+1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] especifique as seguintes informações para configurar um local do RBAC do Azure:
 
    | Campo | Função |
    |---------|----------|
@@ -110,11 +136,15 @@ Para configurar um local de exportação na nuvem:
 
    {style="table-layout:auto"}
 
-+++
+1. Selecione [!UICONTROL **Salvar**].
 
-   +++Snowflake
+1. Agora é possível exportar dados do Analysis Workspace para a conta e o local configurados. Para obter informações sobre como exportar dados para a nuvem, consulte [Exportar dados do projeto para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 
-   Especifique as seguintes informações para configurar uma localização de Snowflake:
+### Snowflake
+
+1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+
+1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] especifique as seguintes informações para configurar a localização de um Snowflake:
 
    | Campo | Função |
    |---------|----------|
@@ -124,8 +154,6 @@ Para configurar um local de exportação na nuvem:
    | [!UICONTROL **Caminho do estágio**] | O caminho para o local onde os arquivos de dados são armazenados no Snowflake. <p>Para obter mais informações, consulte [Página Escolhendo um estágio interno para arquivos locais na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}
-
-+++
 
 1. Selecione [!UICONTROL **Salvar**].
 
