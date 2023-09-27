@@ -5,9 +5,9 @@ title: Exportar relatórios de Customer Journey Analytics para a nuvem
 feature: Curate and Share
 hide: true
 hidefromtoc: true
-source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
+source-git-commit: b984241de42b2db2992e18c17cd60ca14cc725c7
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1853'
 ht-degree: 4%
 
 ---
@@ -18,11 +18,35 @@ Você pode exportar tabelas completas do Espaço de trabalho do Customer Journey
 
 Outros métodos de exportação de relatórios de Customer Journey Analytics também estão disponíveis, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
 
+## Entender a exportação de tabela completa
+
+Você pode exportar tabelas completas do Analysis Workspace para provedores de nuvem, como Google, Azure, Amazon e Adobe.
+
+[Vantagens de exportar tabelas completas para a nuvem](#advantages-of-exporting-to-the-cloud) inclua a capacidade de exportar milhões de linhas, inclua métricas calculadas, estrutura de saída de dados em valores concatenados e muito mais.
+
+Ao exportar tabelas completas, considere o seguinte:
+
+* Antes de exportar para a nuvem, verifique se as tabelas, o ambiente e as permissões atendem aos [requisitos de exportação](#export-requirements).
+
+* Alguns [recursos](#unsupported-features) e [componentes](#unsupported-components) não são compatíveis ao exportar tabelas completas para a nuvem.
+
+Use o processo a seguir ao exportar tabelas completas para a nuvem:
+
+1. [Configurar uma conta na nuvem](/help/components/exports/cloud-export-accounts.md)
+
+1. [Configurar um local na conta](/help/components/exports/cloud-export-locations.md)
+
+1. [Exportar uma tabela completa do Workspace](#export-full-tables-from-analysis-workspace)
+
+1. [Acessar dados na nuvem](#view-exported-data-and-manifest-file) e [Gerenciar exportações no Adobe](/help/components/exports/manage-exports.md)
+
+![Processo completo de exportação de tabela](assets/export-full-table-process.png)
+
 ## Exportar tabelas completas do Analysis Workspace
 
 >[!NOTE]
 >
->Antes de exportar os dados conforme descrito nesta seção, verifique se [Requisitos de exportação](#export-requirements) são cumpridos.
+>Antes de exportar os dados conforme descrito nesta seção, saiba mais sobre a exportação de tabela completa na [Entender a exportação de tabela completa](#understand-full-table-export) acima.
 
 Para exportar tabelas completas do Analysis Workspace:
 
@@ -58,6 +82,38 @@ Para exportar tabelas completas do Analysis Workspace:
    Os dados são enviados para a conta de nuvem especificada com a frequência especificada.
 
 1. (Opcional) Após criar a exportação, independentemente de você optar por enviá-la agora ou em um agendamento definido, é possível visualizá-la e gerenciá-la no [Página Exportações](/help/components/exports/manage-exports.md) e visualize-o no [Exportar logs](/help/components/exports/manage-export-logs.md).</p>
+
+## Gerenciar exportações
+
+Depois que os dados forem exportados do Analysis Workspace, você poderá editar, reexportar, duplicar, marcar ou excluir exportações existentes, conforme descrito em [Gerenciar exportações](/help/components/exports/manage-exports.md).
+
+## Exibir dados exportados e arquivo de manifesto
+
+### Dados exportados
+
+Os dados exportados estão disponíveis como um arquivo compactado no destino de nuvem que você configurou, conforme descrito em [Configurar contas de exportação da nuvem](/help/components/exports/cloud-export-accounts.md) e [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
+
+O nome do arquivo compactado é o seguinte, dependendo se você escolheu CSV ou JSON como o formato de arquivo:
+
+* `cja-export-{reportInstanceId}-{idx}.csv.gz`
+
+* `cja-export-{reportInstanceId}-{idx}.json.gz`
+
+>[!NOTE]
+>
+>Você escolhe o formato de arquivo nas [!UICONTROL **Formato de arquivo**] ao exportar a tabela, conforme descrito em [Exportar tabelas completas do Analysis Workspace](#export-full-tables-from-analysis-workspace).
+
+### Arquivo manifest
+
+Um arquivo de manifesto com o nome de `cja-export-{reportInstanceId}-{idx}.json.gz` está incluído em qualquer delivery de exportação bem-sucedida que contenha pelo menos um arquivo. O arquivo de manifesto permite confirmar se todos os arquivos foram entregues com êxito. Ele inclui as seguintes informações:
+
+* Uma lista de todos os arquivos que foram entregues
+
+* O tamanho de cada arquivo
+
+* O carimbo de data e hora de cada arquivo
+
+<!-- add in  what the file name, structure, and file format will be -->
 
 ## Vantagens de exportar para a nuvem
 
@@ -141,38 +197,6 @@ Se um modelo de atribuição não padrão estiver sendo usado em um relatório, 
   >[!NOTE]
   >
   >Relatórios multidimensionais são suportados somente ao exportar dados para a nuvem, conforme descrito neste artigo.
-
-## Gerenciar exportações
-
-Depois que os dados forem exportados do Analysis Workspace, você poderá editar, reexportar, duplicar, marcar ou excluir exportações existentes, conforme descrito em [Gerenciar exportações](/help/components/exports/manage-exports.md).
-
-## Exibir dados exportados e arquivo de manifesto
-
-### Dados exportados
-
-Os dados exportados estão disponíveis como um arquivo compactado no destino de nuvem que você configurou, conforme descrito em [Configurar contas de exportação da nuvem](/help/components/exports/cloud-export-accounts.md) e [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
-
-O nome do arquivo compactado é o seguinte, dependendo se você escolheu CSV ou JSON como o formato de arquivo:
-
-* `cja-export-{reportInstanceId}-{idx}.csv.gz`
-
-* `cja-export-{reportInstanceId}-{idx}.json.gz`
-
->[!NOTE]
->
->Você escolhe o formato de arquivo nas [!UICONTROL **Formato de arquivo**] ao exportar a tabela, conforme descrito em [Exportar tabelas completas do Analysis Workspace](#export-full-tables-from-analysis-workspace).
-
-### Arquivo manifest
-
-Um arquivo de manifesto com o nome de `cja-export-{reportInstanceId}-{idx}.json.gz` está incluído em qualquer delivery de exportação bem-sucedida que contenha pelo menos um arquivo. O arquivo de manifesto permite confirmar se todos os arquivos foram entregues com êxito. Ele inclui as seguintes informações:
-
-* Uma lista de todos os arquivos que foram entregues
-
-* O tamanho de cada arquivo
-
-* O carimbo de data e hora de cada arquivo
-
-<!-- add in  what the file name, structure, and file format will be -->
 
 ## Comparação da exportação completa da tabela (em Customer Journey Analytics) para o Data Warehouse (no Adobe Analytics)
 
