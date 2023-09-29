@@ -4,9 +4,9 @@ title: Filtros rápidos
 feature: Workspace Basics
 role: User, Admin
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+source-git-commit: 3d55105a7d4f4687ed0fc6d857c906eec707f6a6
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1168'
 ht-degree: 38%
 
 ---
@@ -61,7 +61,7 @@ Para criar um filtro rápido:
    | Sinal de mais (+) | Adicionar outra regra |
    | Qualificadores AND/OR | É possível adicionar qualificadores “AND” ou ”OR” às regras, mas não é possível misturar &quot;AND&quot; e &quot;OR&quot; em uma única definição de filtro. |
    | [!UICONTROL Aplicar] | Aplicar esse filtro ao painel. Se o filtro não contiver dados, você será perguntado se deseja continuar. |
-   | [!UICONTROL Abrir builder] | Abre o Construtor de filtros. Depois de salvar ou aplicar o filtro no Construtor de filtros, ele não é mais considerado um &quot;Filtro rápido&quot;. Ele se torna parte da biblioteca de filtros da lista de componentes. <p>Para disponibilizar o componente em todos os projetos e no painel esquerdo, selecione a opção [!UICONTROL **Disponibilize este filtro para todos os projetos e adicione-o à lista de componentes**].</p><p>Para obter mais informações, consulte a seção [Salvar um filtro rápido como um filtro da lista de componentes](#save-a-quick-filter-as-a-component-list-filter) neste artigo.</p><p>**Nota:** Somente usuários com a permissão Criação de filtro no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=pt-BR#analytics-tools) O pode abrir o Construtor de filtros.</p> |
+   | [!UICONTROL Abrir builder] | Abre o Construtor de filtros. Depois de salvar ou aplicar o filtro no Construtor de filtros, ele não é mais considerado um &quot;Filtro rápido&quot;. Ele se torna parte da biblioteca de filtros da lista de componentes. <p>Para disponibilizar o componente em todos os projetos e no painel esquerdo, selecione a opção [!UICONTROL **Disponibilize este filtro para todos os projetos e adicione-o à lista de componentes**].</p><p>Para obter mais informações, consulte a seção [Salvar um filtro rápido como um filtro da lista de componentes](#save-a-quick-filter-as-a-component-list-filter) neste artigo.</p><p>**Nota:** Somente usuários com a permissão Criação de segmento no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=pt-BR) O pode abrir o Construtor de filtros.</p> |
    | [!UICONTROL Cancelar] | Cancelar este filtro rápido (não o aplicar). |
    | [!UICONTROL Intervalo de datas] | O validador usa o intervalo de datas do painel para a pesquisa de dados. Mas qualquer intervalo de datas aplicado em um filtro rápido substitui o intervalo de datas na parte superior do painel. |
    | Pré-visualizar (canto superior direito) | Permite ver se você tem um filtro válido e a amplitude deste. Representa o detalhamento do conjunto de dados que você pode esperar ao aplicar esse filtro. Você pode receber um aviso indicando que esse filtro não tem dados. Nesse caso, você pode continuar ou alterar a definição do filtro. |
@@ -83,7 +83,7 @@ Para criar um filtro rápido:
 >
 > Considere o seguinte ao salvar um filtro rápido:
 > 
-> * Para salvar um filtro rápido, é necessário ter a permissão Criação de filtro no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/summary-tables.html?lang=pt-BR#analytics-tools).
+> * Para salvar um filtro rápido, é necessário ter a permissão Criação de segmentos no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=pt-BR).
 > 
 > * Depois de salvar ou aplicar o filtro, ele não poderá mais ser editado no construtor de filtros rápidos. Em vez disso, você deve usar o Construtor de filtros comum.
 
