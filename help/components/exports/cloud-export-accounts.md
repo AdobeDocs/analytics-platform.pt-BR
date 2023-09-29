@@ -5,9 +5,9 @@ title: Configurar contas de exportação da nuvem
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: faae0b53b3df04794d1c57ffc20f46c1e442c2ba
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1600'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 1. No [!UICONTROL **Descrição da conta de localização**] , forneça uma breve descrição da conta para ajudá-lo a diferenciá-la de outras contas do mesmo tipo.
 
-1. No [!UICONTROL **Tipo de conta**] selecione o tipo de conta na nuvem para a qual você está exportando. Os tipos de conta disponíveis são Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake e Adobe Experience Platform Data Landing Zone.
+1. No [!UICONTROL **Tipo de conta**] selecione o tipo de conta na nuvem para a qual você está exportando. Os tipos de conta disponíveis são Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake e AEP Data Landing Zone.
 
 1. Prossiga com a seção abaixo que corresponde ao [!UICONTROL **Tipo de conta**] selecionado.
 
@@ -50,7 +50,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
    * [Snowflake](#snowflake)
 
-### Zona de aterrissagem de dados Adobe Experience Platform
+### Zona de destino de dados da AEP
 
 >[!IMPORTANT]
 >
@@ -72,7 +72,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
    <!-- add screen shot -->
 
-1. Copie o conteúdo de [!UICONTROL **SAS**] para a área de transferência. Use esse token SAS para acessar os dados exportados do Analysis Workspace da Landing Zone da AEP. Saiba mais sobre como acessar seus dados&quot; |
+1. Copie o conteúdo de [!UICONTROL **SAS**] para a área de transferência. Use esse token SAS para acessar os dados exportados do Analysis Workspace da Landing Zone da AEP. Saiba mais sobre como acessar os seus dados&quot; |
 
 1. Selecionar [!UICONTROL **OK**].
 

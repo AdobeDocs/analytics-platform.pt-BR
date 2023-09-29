@@ -5,10 +5,10 @@ title: Gerenciar locais e contas de exportação da nuvem
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: eb7ba8dd7809164bdcddb0d484754376d5b7ca9e
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 5%
+source-wordcount: '383'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de loca
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. Selecione o [!UICONTROL **Localização**] guia.
+1. Selecione o [!UICONTROL **Localizações**] guia.
 
 1. Selecione o **Filtro** ícone.
 
@@ -36,7 +36,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de loca
 
    | Filtro | Descrição |
    |---------|----------|
-   | [!UICONTROL **Tipo de local**]<!--should this be changed to Account type?--> | O tipo de conta ao qual a localização está associada. Os seguintes tipos de conta podem estar disponíveis: <ul><li>[!UICONTROL **Zona de aterrissagem de dados Adobe Experience Platform**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Tipo de local**]<!--should this be changed to Account type?--> | O tipo de conta ao qual a localização está associada. Os seguintes tipos de conta podem estar disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Conta**] | O nome da conta à qual a localização está associada. |
    | [!UICONTROL **Criado por**] | O endereço de email do usuário que criou a localização. |
 
@@ -46,7 +46,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de loca
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. Selecione o [!UICONTROL **Localização**] guia.
+1. Selecione o [!UICONTROL **Localizações**] guia.
 
 1. Na guia Pesquisar, comece digitando qualquer informação associada ao local em que você está pesquisando. Você pode pesquisar dados de qualquer coluna disponível na tabela.
 
@@ -54,7 +54,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de loca
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. Selecione o [!UICONTROL **Localização**] e selecione o local que deseja editar.
+1. Selecione o [!UICONTROL **Localizações**] e selecione o local que deseja editar.
 
    <!-- add screenshot? -->
 
@@ -74,7 +74,7 @@ Para excluir um local:
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. Selecione o [!UICONTROL **Localização**] e, em seguida, selecione um ou mais locais que deseja excluir.
+1. Selecione o [!UICONTROL **Localizações**] e, em seguida, selecione um ou mais locais que deseja excluir.
 
    <!-- add screenshot? -->
 

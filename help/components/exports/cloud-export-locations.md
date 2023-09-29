@@ -5,9 +5,9 @@ title: Configurar locais de exportação da nuvem
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 2da2b4b2931f28dc373a2c634c38e9dfcbdd2788
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1415'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    Continue com a seção abaixo que corresponde ao tipo de conta selecionado na [!UICONTROL **Conta de localização**] campo.
 
-### Zona de aterrissagem de dados Adobe Experience Platform
+### Zona de destino de dados da AEP
 
 >[!IMPORTANT]
 >

@@ -5,9 +5,9 @@ title: Gerenciar exportações
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a95be4cf8e11b7b62f6777abe8884779cfebf482
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '968'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de expo
 
    | Filtro | Descrição |
    |---------|----------|
-   | [!UICONTROL **Tipo de conta**] | O tipo de conta ao qual a exportação está associada. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de aterrissagem de dados Adobe Experience Platform**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Tipo de conta**] | O tipo de conta ao qual a exportação está associada. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Ativo**]: indica que uma exportação agendada ainda não expirou. </li><li>[!UICONTROL **Concluído**]: indica que uma exportação foi bem-sucedida. Para exportações programadas, isso indica que a programação expirou.</li><li>[!UICONTROL **Falha**]<p>As situações a seguir podem resultar em falha na exportação. Passe o mouse sobre o status Falha para ver detalhes sobre a falha. <ul><li>Expiração de exportação agendada</li><li>Limite de linhas atingido para exportação agendada </li></ul> </p></li></ul> |
    | [!UICONTROL **Frequência**] | Com que frequência a exportação ocorre. As seguintes frequências estão disponíveis: <ul><li>[!UICONTROL **Uma vez**]</li><li>[!UICONTROL **Diariamente**]</li><li>[!UICONTROL **Semanalmente**]</li><li>[!UICONTROL **Mensalmente**]</li><li>[!UICONTROL **Anualmente**]</li></ul> |
 
@@ -120,6 +120,8 @@ Ao aplicar tags a uma exportação, é possível visualizá-las na variável [!U
 
 Você pode adicionar ou remover colunas na [!UICONTROL Exportações] para configurar quais informações serão exibidas.
 
+Selecione um cabeçalho de coluna para classificar as exportações por essa coluna. Por padrão, as exportações são classificadas pela data e hora da última modificação da exportação.
+
 1. Selecione o **Personalizar tabela** ícone ![personalizar tabela](assets/customize-table-icon.png) no canto superior direito da [!UICONTROL Exportações] página.
 
    As seguintes colunas estão disponíveis:
@@ -139,7 +141,7 @@ Você pode adicionar ou remover colunas na [!UICONTROL Exportações] para confi
    | Frequência | A frequência com que a exportação é enviada. As opções disponíveis são [!UICONTROL Uma vez], [!UICONTROL Diariamente], [!UICONTROL Semanalmente], [!UICONTROL Mensalmente por dia da semana], [!UICONTROL Mensalmente por dia do mês], [!UICONTROL Anualmente, por dia do mês], e [!UICONTROL Anualmente por data específica]. |
    | Hora do envio | A hora em que a exportação foi enviada. |
    | Último envio | A última vez que a exportação foi enviada. |
-   | Última modificação | A última vez que a exportação foi modificada. |
+   | Última modificação | A última vez que a exportação foi modificada. Por padrão, os itens na página Exportações são classificados por essa coluna. |
    | Tipo de conta | O tipo de conta de nuvem para a qual os dados foram exportados. Os tipos de conta disponíveis são [!UICONTROL ARN de função do Amazon S3], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL RBAC do Azure], [!UICONTROL Snowflake], e [!UICONTROL Adobe Experience Platform]. |
    | Tags | Exibe todas as tags aplicadas à exportação. Para obter informações sobre como aplicar tags a uma exportação, consulte [Marcar uma exportação](#tag-an-export). |
 

@@ -5,10 +5,10 @@ title: Gerenciar logs de exportação
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 7%
+source-wordcount: '708'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de logs
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. Selecione o [!UICONTROL **Log**] guia.
+1. Selecione o [!UICONTROL **Logs**] guia.
 
 1. Selecione o **Filtro** ícone.
 
@@ -45,7 +45,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de logs
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. Selecione o [!UICONTROL **Log**] guia.
+1. Selecione o [!UICONTROL **Logs**] guia.
 
 1. Na guia Pesquisar, comece digitando qualquer informação associada ao log que você está procurando. Você pode pesquisar dados de qualquer coluna disponível na tabela.
 
@@ -69,25 +69,29 @@ Essa opção não está disponível ao selecionar vários logs.
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. Selecione o [!UICONTROL **Logs**] e selecione um log.
+1. Selecione o [!UICONTROL **Logs**] guia.
 
-   <!-- add screenshot? -->
+1. Localize o log associado à exportação que você deseja editar.
 
-1. Selecione [!UICONTROL **Editar**].
+1. Selecione o **Editar exportação** ícone ![ícone exportar log](assets/export-icon.png) ao lado do log.
+
+   Ou
+
+   Selecione o log e, em seguida, [!UICONTROL **Editar exportação**].
 
 ## Configurar colunas
 
-Você pode adicionar ou remover colunas na [!UICONTROL Log] para configurar quais informações serão exibidas.
+Você pode adicionar ou remover colunas na [!UICONTROL Logs] para configurar quais informações serão exibidas.
 
 Selecione um cabeçalho de coluna para classificar os logs por essa coluna. Por padrão, os logs são classificados por data e hora de início da exportação.
 
-Para configurar colunas na variável [!UICONTROL Log] guia:
+Para configurar colunas na variável [!UICONTROL Logs] guia:
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. Selecione o [!UICONTROL **Log**] guia.
+1. Selecione o [!UICONTROL **Logs**] guia.
 
-1. Selecione o **Personalizar tabela** ícone ![personalizar tabela](assets/customize-table-icon.png) no canto superior direito da [!UICONTROL Log] página.
+1. Selecione o **Personalizar tabela** ícone ![personalizar tabela](assets/customize-table-icon.png) no canto superior direito da [!UICONTROL Logs] página.
 
    As seguintes colunas estão disponíveis:
 
@@ -108,7 +112,7 @@ Para configurar colunas na variável [!UICONTROL Log] guia:
 
    {style="table-layout:auto"}
 
-1. Certifique-se de que todas as colunas que deseja exibir estejam selecionadas. As colunas selecionadas são exibidas na [!UICONTROL Log] e exibir as informações relevantes.
+1. Certifique-se de que todas as colunas que deseja exibir estejam selecionadas. As colunas selecionadas são exibidas na [!UICONTROL Logs] e exibir as informações relevantes.
 
 ## Exibir logs de auditoria
 
