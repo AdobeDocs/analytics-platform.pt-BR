@@ -5,9 +5,10 @@ title: Configurar contas de exportação da nuvem
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
+source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1543'
 ht-degree: 5%
 
 ---
@@ -58,21 +59,13 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 1. [Começar a criar uma conta de exportação em nuvem](#begin-creating-a-cloud-export-account), conforme descrito acima.
 
-1. No [!UICONTROL **Propriedades da conta**] seção do [!UICONTROL **Adicionar conta**] caixa de diálogo, as seguintes informações serão exibidas:
-
-   | Campo | Função |
-   |---------|----------|
-   | [!UICONTROL **ID organizacional IMS**] | A ID da organização IMS é fornecida pelo Adobe. Essas informações geralmente não são necessárias. Pode ser útil se tiver problemas com sua conta e precisar entrar em contato com o Atendimento ao cliente. |
-
-   {style="table-layout:auto"}
-
 1. Selecione [!UICONTROL **Salvar**].
 
    A variável [!UICONTROL **Exportar conta criada**] é exibida.
 
    <!-- add screen shot -->
 
-1. Copie o conteúdo de [!UICONTROL **SAS**] para a área de transferência. Use esse token SAS para acessar os dados exportados do Analysis Workspace da Landing Zone da AEP. Saiba mais sobre como acessar os seus dados&quot; |
+1. Copie o conteúdo de [!UICONTROL **SAS**] para a área de transferência. Use esse token SAS para acessar os dados exportados do Analysis Workspace da Landing Zone da AEP.
 
 1. Selecionar [!UICONTROL **OK**].
 
@@ -215,6 +208,3 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 1. Selecionar [!UICONTROL **OK**].
 
 1. Continuar com [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
-
-
-
