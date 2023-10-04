@@ -4,10 +4,10 @@ description: É possível definir preferências gerais e de projeto para usuári
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 322f5a10b928a9bf679954aa1fe6415340ec675b
+source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
 workflow-type: tm+mt
-source-wordcount: '3192'
-ht-degree: 85%
+source-wordcount: '3218'
+ht-degree: 84%
 
 ---
 
@@ -111,6 +111,7 @@ Clique nos títulos da seção vinculada para obter mais informações e context
 | **[Linha](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | Detalhamento por posição | Selecione essa opção se desejar que o detalhamento permaneça com a posição do item em vez do próprio item. Para obter mais informações sobre detalhamentos, consulte [Analisar dimensões](/help/components/dimensions/t-breakdown-fa.md). |
 | | Cálculo percentual | <ul><li>Coluna</li><li>Linha</li></ul> |
+| | Totais da coluna (somente linhas estáticas) | <ul><li>Exibir soma das linhas: mostra a soma dos itens de linha individuais </li><li>Exibir total geral: mostra a soma de linhas desduplicadas.</li></ul> |
 
 ## Preferências de visualizações
 
