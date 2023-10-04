@@ -1,15 +1,15 @@
 ---
 title: Análise de vários canais
-description: Saiba como rechavear IDs de pessoa de vários conjuntos de dados para compilar pessoas.
+description: Saiba como rechavear a ID de pessoa de vários conjuntos de dados para compilar um conjunto de pessoas.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 5fb30b64-d305-4de4-ab84-66195ceb8386
 hide: true
 hidefromtoc: true
 source-git-commit: cf6da1f126933f17e05fb458f52dff93c1601891
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
