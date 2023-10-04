@@ -3,10 +3,8 @@ description: Exportar um projeto do Analysis Workspace para um local na nuvem.
 keywords: Analysis Workspace
 title: Exportar relatórios de Customer Journey Analytics para a nuvem
 feature: Curate and Share
-hide: true
-hidefromtoc: true
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: b0ddfbb4d018e6d563bef639a31f31e09700fbc2
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '1924'
 ht-degree: 4%
@@ -14,6 +12,8 @@ ht-degree: 4%
 ---
 
 # Exportar relatórios de Customer Journey Analytics para a nuvem
+
+{{release-limited-testing}}
 
 Você pode exportar tabelas completas do Espaço de trabalho do Customer Journey Analytics e enviar exportações para destinos de nuvem designados.
 

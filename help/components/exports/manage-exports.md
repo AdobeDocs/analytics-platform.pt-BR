@@ -3,9 +3,8 @@ description: Gerenciar exportações existentes
 keywords: Analysis Workspace
 title: Gerenciar exportações
 feature: Components
-hide: true
-hidefromtoc: true
-source-git-commit: 3d4017ba36ac4b0c9ccb10a3e3127c6ea386fb1e
+exl-id: 0c21802a-c46f-41be-9356-d836c038b174
+source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 6%
@@ -13,6 +12,8 @@ ht-degree: 6%
 ---
 
 # Gerenciar exportações
+
+{{release-limited-testing}}
 
 Após exportar uma tabela completa conforme descrito em [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md), as exportações estarão disponíveis no [!UICONTROL Exportações] na guia [!UICONTROL Exportações] página.
 
