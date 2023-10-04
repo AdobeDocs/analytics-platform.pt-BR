@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
-source-git-commit: ba59267dc39f1e564e555e0d5183613f9171403f
+source-git-commit: d5a46c4ffbacb0e05a637ee9e19875572a2aebf4
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 83%
+source-wordcount: '948'
+ht-degree: 82%
 
 ---
 
@@ -91,6 +91,7 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto em [Admi
 | **[!UICONTROL Acesso aos logs de auditoria]** | Essa permissão impõe a verificação de permissão na [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) e na interface dos logs de auditoria. |
 | **[!UICONTROL Administrador de uso de relatórios]** | Permite que os usuários visualizem e excluam qualquer relatório em execução em sua empresa. |
 | **[!UICONTROL Exibição do uso de relatórios]** | Permite que os usuários vejam todas as solicitações de relatórios simultâneas. |
+| [!UICONTROL **Exportação de tabela completa**] | Permite que os usuários [exportar tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
 | **[!UICONTROL Criação de métricas calculadas]** | Permite que os usuários criem [métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Criação de filtros]** | Permite que os usuários criem [filtros](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Acesso ao Labs]** | Permite que os usuários acessem o [Labs](/help/labs/labs.md) no Customer Journey Analytics. |
@@ -99,5 +100,3 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto em [Admi
 | **[!UICONTROL Visualização de público]** | Permite que os usuários visualizem [públicos](/help/components/audiences/audiences-overview.md). |
 
 {style="table-layout:auto"}
-
-<!-- Add this to the table above when FTE goes to Beta: | [!UICONTROL **Full Table Export**] | Lets users [export full tables to the cloud](/help/analysis-workspace/export/export-cloud.md). | -->
