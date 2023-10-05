@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gerenciar logs de exportação
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 708367159d00935bb77043e551dc915f79dd2584
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '728'
 ht-degree: 6%
 
 ---
@@ -39,7 +39,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de logs
    |---------|----------|
    | [!UICONTROL **ID de exportação**] | Especifique a ID de exportação do log de exportação que deseja exibir. |
    | [!UICONTROL **Tipo de conta**] | O tipo de conta à qual o log está associado. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Pending**]: uma instância específica de uma exportação foi iniciada, mas ainda não está concluída.<p>Executar novamente uma exportação com status Pendente atrasará o processo de exportação.</p></li><li>[!UICONTROL **Concluído**]: uma instância específica de uma exportação terminou de ser processada e está disponível na conta de exportação.</li><li>[!UICONTROL **Falha**]<p>As situações a seguir podem resultar em falha na exportação. Passe o mouse sobre o status Falha para ver detalhes sobre a falha. <ul><li>Expiração de exportação agendada</li><li>Limite de linhas atingido para exportação agendada </li></ul> </p></li></ul> |
+   | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Pending**]: uma instância específica de uma exportação foi iniciada, mas ainda não está concluída.<p>Executar novamente uma exportação com status Pendente atrasará o processo de exportação.</p></li><li>[!UICONTROL **Concluído**]: uma instância específica de uma exportação terminou de ser processada e está disponível na conta de exportação.</li><li>[!UICONTROL **Falha**]<p>Várias situações podem resultar em falha na exportação. Passe o mouse sobre o status Falha para ver detalhes sobre a falha.<p>Para obter mais informações sobre os possíveis motivos para uma falha, consulte [Solução de problemas de exportações com falha](/help/components/exports/troubleshoot-exports.md).</p> |
 
    {style="table-layout:auto"}
 
