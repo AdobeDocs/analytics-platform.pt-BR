@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configurar contas de exportação da nuvem
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1573'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 1. Prossiga com a seção abaixo que corresponde ao [!UICONTROL **Tipo de conta**] selecionado.
 
-   * [Zona de aterrissagem de dados Adobe Experience Platform](#adobe-experience-platform)
+   * [Zona de destino de dados da AEP](#adobe-experience-platform)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 
@@ -63,9 +63,9 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
    A variável [!UICONTROL **Exportar conta criada**] é exibida.
 
-   <!-- add screen shot -->
+   ![Zona de aterrissagem de dados da AEP da caixa de diálogo Exportar conta](assets/export-account-aep.png)
 
-1. Copie o conteúdo de [!UICONTROL **SAS**] para a área de transferência. Use esse URI SAS para acessar os dados exportados do Analysis Workspace da Zona de aterrissagem da AEP.
+1. Copie o conteúdo de [!UICONTROL **URI SAS**] para a área de transferência. Use esse URI SAS para acessar os dados exportados do Analysis Workspace da Zona de aterrissagem da AEP.
 
 1. Selecionar [!UICONTROL **OK**].
 
@@ -87,7 +87,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
    A variável [!UICONTROL **Exportar conta criada**] é exibida.
 
-   <!-- add screen shot -->
+   ![Caixa de diálogo da conta de exportação criada Amazon S3 Role ARN](assets/export-account-amazons3.png)
 
 1. Copie o conteúdo de [!UICONTROL **Usuário ARN**] para a área de transferência. O usuário ARN (Amazon Resource Name) é fornecido pelo Adobe. Você deve anexar esse usuário à política criada no ARN de função do Amazon S3.
 
@@ -111,7 +111,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
    A variável [!UICONTROL **Exportar conta criada**] é exibida.
 
-   <!-- add screen shot -->
+   ![Caixa de diálogo Exportar conta criada](assets/export-account-gcp.png)
 
 1. Copie o conteúdo de [!UICONTROL **Principal**] para a área de transferência e, em seguida, conceda permissão ao Principal para fazer upload de arquivos para esse bucket na Google Cloud Platform. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -139,7 +139,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
    A variável [!UICONTROL **Exportar conta criada**] é exibida.
 
-   <!-- add screen shot -->
+   ![Caixa de diálogo Exportar conta criada](assets/export-account-azure.png)
 
 1. Caso ainda não o tenha feito, certifique-se de conceder permissões para o bucket no Azure SAS. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -165,7 +165,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
    A variável [!UICONTROL **Exportar conta criada**] é exibida.
 
-   <!-- add screen shot -->
+   ![Caixa de diálogo Exportar conta criada](assets/export-account-azure.png)
 
 1. Caso ainda não o tenha feito, certifique-se de conceder permissões para o compartimento no RBAC do Azure. <!-- add link to Google Cloud docs on how to do this -->
 
@@ -191,7 +191,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
    A variável [!UICONTROL **Exportar conta criada**] é exibida.
 
-   <!-- add screen shot -->
+   ![Caixa de diálogo Exportar conta criada](assets/export-account-snowflake.png)
 
 1. Copie o conteúdo de [!UICONTROL **Chave pública**] para a área de transferência. A chave pública é fornecida pelo Adobe.
 

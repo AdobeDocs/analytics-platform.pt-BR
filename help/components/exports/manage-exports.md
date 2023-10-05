@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gerenciar exportações
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '996'
 ht-degree: 6%
 
 ---
@@ -37,8 +37,8 @@ Para encontrar as informações necessárias, você pode filtrar a lista de expo
 
    | Filtro | Descrição |
    |---------|----------|
-   | [!UICONTROL **Tipo de conta**] | O tipo de conta ao qual a exportação está associada. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Ativo**]: indica que uma exportação agendada ainda não expirou. </li><li>[!UICONTROL **Concluído**]: indica que uma exportação foi bem-sucedida. Para exportações programadas, isso indica que a programação expirou.</li><li>[!UICONTROL **Falha**]<p>As situações a seguir podem resultar em falha na exportação. Passe o mouse sobre o status Falha para ver detalhes sobre a falha. <ul><li>Expiração de exportação agendada</li><li>Limite de linhas atingido para exportação agendada </li></ul> </p></li></ul> |
+   | [!UICONTROL **Tipo de conta**] | O tipo de conta ao qual a exportação está associada. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Ativo**]: indica que uma exportação agendada ainda não expirou ou que uma exportação única ainda não foi concluída. </li><li>[!UICONTROL **Concluído**]: indica que uma exportação foi bem-sucedida. Para exportações programadas, isso indica que a programação expirou.</li><li>[!UICONTROL **Falha**]<p>As situações a seguir podem resultar em falha na exportação. Passe o mouse sobre [!UICONTROL **Failed**] status para ver detalhes sobre a falha. <ul><li>Expiração de exportação agendada</li><li>Limite de linhas atingido para exportação agendada </li></ul> </p></li></ul> |
    | [!UICONTROL **Frequência**] | Com que frequência a exportação ocorre. As seguintes frequências estão disponíveis: <ul><li>[!UICONTROL **Uma vez**]</li><li>[!UICONTROL **Diariamente**]</li><li>[!UICONTROL **Semanalmente**]</li><li>[!UICONTROL **Mensalmente**]</li><li>[!UICONTROL **Anualmente**]</li></ul> |
 
    {style="table-layout:auto"}
@@ -57,7 +57,7 @@ Você pode editar as propriedades, o formato, o agendamento e as informações d
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. No [!UICONTROL **Exportações**] selecione a exportação que deseja editar.
+1. No [!UICONTROL **Exportações**] marque a caixa de seleção ao lado da exportação que deseja editar.
 
    Essa opção não está disponível ao selecionar várias exportações.
 
@@ -69,7 +69,7 @@ Você pode duplicar uma exportação existente.
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. No [!UICONTROL **Exportações**] selecione a exportação que deseja duplicar.
+1. No [!UICONTROL **Exportações**] marque a caixa de seleção ao lado da exportação que deseja duplicar.
 
    Essa opção não está disponível ao selecionar várias exportações.
 
@@ -85,7 +85,7 @@ Você pode duplicar uma exportação existente.
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. No [!UICONTROL **Exportações**] selecione a exportação que deseja executar.
+1. No [!UICONTROL **Exportações**] selecione a caixa de seleção ao lado da exportação que deseja executar.
 
    Essa opção não está disponível ao selecionar várias exportações.
 
@@ -97,11 +97,11 @@ Ao aplicar tags a uma exportação, é possível visualizá-las na variável [!U
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. No [!UICONTROL **Exportações**] selecione uma ou mais exportações que deseja marcar.
+1. No [!UICONTROL **Exportações**] marque a caixa de seleção ao lado de uma ou mais exportações que deseja marcar.
 
-1. Selecionar [!UICONTROL **Tag**].
+1. Selecionar [!UICONTROL **Editar tags**].
 
-1. Na caixa de diálogo Exportação de tags, digite o nome de uma tag para criar uma nova tag ou escolha uma tag existente no menu suspenso.
+1. No [!UICONTROL **Exportação de tag**] digite o nome de uma tag para criar uma nova tag ou escolha uma tag existente no menu suspenso.
 
    Todas as tags comuns entre as exportações selecionadas são mostradas na caixa de diálogo de tag. <!-- what happens if one export has a tag and another doesn't? Is the tag removed if you don't select it? I'm guessing not, but maybe check -->
 
@@ -113,7 +113,7 @@ Ao aplicar tags a uma exportação, é possível visualizá-las na variável [!U
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. No [!UICONTROL **Exportações**] selecione uma ou mais exportações que deseja excluir.
+1. No [!UICONTROL **Exportações**] marque a caixa de seleção ao lado de uma ou mais exportações que deseja excluir.
 
 1. Selecionar [!UICONTROL **Excluir**] e selecione [!UICONTROL **Excluir**] quando você vir a mensagem de confirmação.
 
@@ -123,7 +123,9 @@ Você pode adicionar ou remover colunas na [!UICONTROL Exportações] para confi
 
 Selecione um cabeçalho de coluna para classificar as exportações por essa coluna. Por padrão, as exportações são classificadas pela data e hora da última modificação da exportação.
 
-1. Selecione o **Personalizar tabela** ícone ![personalizar tabela](assets/customize-table-icon.png) no canto superior direito da [!UICONTROL Exportações] página.
+1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
+
+1. No [!UICONTROL **Exportações**] , selecione a **Personalizar tabela** ícone ![personalizar tabela](assets/customize-table-icon.png) no canto superior direito da [!UICONTROL Exportações] página.
 
    As seguintes colunas estão disponíveis:
 
@@ -131,9 +133,9 @@ Selecione um cabeçalho de coluna para classificar as exportações por essa col
    |---------|----------|
    | Nome | O nome da exportação. Os usuários dão um nome às exportações ao criá-las, conforme descrito em [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
    | ID | A ID atribuída automaticamente à exportação quando ela é criada. <!-- True? --> |
-   | Status | O status da exportação. Os status disponíveis são [!UICONTROL Ativo], [!UICONTROL Pausado], [!UICONTROL Concluído], e [!UICONTROL Failed].<p> **Nota:** Para obter informações sobre como solucionar problemas de exportações com falha, consulte [Solução de problemas de exportações com falha](/help/components/exports/troubleshoot-exports.md).</p> |
    | Nome da visualização de dados | O nome da visualização de dados associada à exportação. Os usuários podem selecionar a visualização de dados ao criar a exportação, conforme descrito em [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
-   | Status | O status da exportação. Os status disponíveis são [!UICONTROL Pending], [!UICONTROL Entregue], e [!UICONTROL Failed]. |
+   | Status | O status da exportação. Os status disponíveis são [!UICONTROL Ativo], [!UICONTROL Concluído], e [!UICONTROL Failed].<p> **Nota:** Para obter informações sobre como solucionar problemas de exportações com falha, consulte [Solução de problemas de exportações com falha](/help/components/exports/troubleshoot-exports.md).</p> |
+   | Tags | Exibe todas as tags aplicadas à exportação. Para obter informações sobre como aplicar tags a uma exportação, consulte [Marcar uma exportação](#tag-an-export). |
    | Tamanho da tabela (último envio) | O tamanho da exportação na última vez em que foi enviada. |
    | Criado por | O usuário que criou a exportação. |
    | Criado | A data e a hora em que a exportação foi criada. <!-- true? --> |
@@ -144,7 +146,6 @@ Selecione um cabeçalho de coluna para classificar as exportações por essa col
    | Último envio | A última vez que a exportação foi enviada. |
    | Última modificação | A última vez que a exportação foi modificada. Por padrão, os itens na página Exportações são classificados por essa coluna. |
    | Tipo de conta | O tipo de conta de nuvem para a qual os dados foram exportados. Os tipos de conta disponíveis são [!UICONTROL ARN de função do Amazon S3], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL RBAC do Azure], [!UICONTROL Snowflake], e [!UICONTROL Adobe Experience Platform]. |
-   | Tags | Exibe todas as tags aplicadas à exportação. Para obter informações sobre como aplicar tags a uma exportação, consulte [Marcar uma exportação](#tag-an-export). |
 
    {style="table-layout:auto"}
 

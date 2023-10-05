@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gerenciar logs de exportação
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '725'
 ht-degree: 6%
 
 ---
@@ -37,7 +37,8 @@ Para encontrar as informações necessárias, você pode filtrar a lista de logs
 
    | Filtro | Descrição |
    |---------|----------|
-   | [!UICONTROL **Tipo de conta**] | O tipo de conta à qual o log está associado. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de aterrissagem de dados Adobe Experience Platform**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **ID de exportação**] | Especifique a ID de exportação do log de exportação que deseja exibir. |
+   | [!UICONTROL **Tipo de conta**] | O tipo de conta à qual o log está associado. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Pending**]: uma instância específica de uma exportação foi iniciada, mas ainda não está concluída.<p>Executar novamente uma exportação com status Pendente atrasará o processo de exportação.</p></li><li>[!UICONTROL **Concluído**]: uma instância específica de uma exportação terminou de ser processada e está disponível na conta de exportação.</li><li>[!UICONTROL **Falha**]<p>As situações a seguir podem resultar em falha na exportação. Passe o mouse sobre o status Falha para ver detalhes sobre a falha. <ul><li>Expiração de exportação agendada</li><li>Limite de linhas atingido para exportação agendada </li></ul> </p></li></ul> |
 
    {style="table-layout:auto"}
@@ -48,7 +49,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de logs
 
 1. Selecione o [!UICONTROL **Logs**] guia.
 
-1. Na guia Pesquisar, comece digitando qualquer informação associada ao log que você está procurando. Você pode pesquisar dados de qualquer coluna disponível na tabela.
+1. No campo de pesquisa, comece digitando qualquer informação associada ao log que você está procurando. Você pode pesquisar dados de qualquer coluna disponível na tabela.
 
 <!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
@@ -74,11 +75,11 @@ Essa opção não está disponível ao selecionar vários logs.
 
 1. Localize o log associado à exportação que você deseja editar.
 
-1. Selecione o **Editar exportação** ícone ![ícone exportar log](assets/export-icon.png) ao lado do log.
+1. Selecione o **Editar exportação** ícone ![ícone exportar log](assets/export-icon.png) ao lado do nome do log.
 
    Ou
 
-   Selecione o log e, em seguida, [!UICONTROL **Editar exportação**].
+   Marque a caixa de seleção ao lado do log e selecione [!UICONTROL **Editar exportação**].
 
 ## Configurar colunas
 
