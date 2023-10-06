@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Solução de problemas de exportações com falha
 feature: Components
 exl-id: fbc25150-4390-40a2-9f17-aadf254258ad
-source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
+source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 8%
+source-wordcount: '386'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ As exportações podem falhar por vários motivos. A tabela a seguir descreve al
 | Uma dimensão ou métrica no relatório foi removida da visualização de dados | Entre em contato com o administrador do sistema para ver quais componentes foram removidos da visualização de dados. Talvez seja necessário usar uma visualização de dados diferente na exportação ou remover componentes da tabela que não estão mais disponíveis. | [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md) |
 | Limite de linha excedido | Dependendo do tipo de licença, você pode exportar no máximo 3 milhões, 30 milhões, 150 milhões ou 300 milhões de linhas. Atualize a tabela que você está exportando para reduzir o número total de linhas. | [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md) |
 | Expiração de exportação agendada | A exportação agendada que você configurou expirou. Atualize a expiração da exportação. | [Gerenciar exportações](/help/components/exports/manage-exports.md) |
-| Dimension não suportado | <p>Nenhuma dimensão que atenda aos seguintes critérios é suportada na Exportação de tabela completa:</p> <ul><li>Usa uma matriz de objetos</li><li>Tem persistência ativada<li>Não está usando uma dimensão de ligação</li> | <ul><li>[Uso de arrays de objetos](/help/use-cases/object-arrays.md)</li><li>Configurações de componente de [Persistência](/help/data-views/component-settings/persistence.md)<li>[Uso de dimensões e métricas de ligação no Customer Journey Analytics](/help/use-cases/data-views/binding-dimensions-metrics.md)</li> |
+| Dimension não suportado | <p>Qualquer dimensão que atenda a todos os critérios a seguir não é suportada na Exportação de tabela completa:</p> <ul><li>Foi criado a partir de um campo que faz parte de uma matriz de objetos</li><li>Tem persistência ativada<li>Não está usando uma dimensão de ligação</li> | <ul><li>[Uso de arrays de objetos](/help/use-cases/object-arrays.md)</li><li>Configurações de componente de [Persistência](/help/data-views/component-settings/persistence.md)<li>[Uso de dimensões e métricas de ligação no Customer Journey Analytics](/help/use-cases/data-views/binding-dimensions-metrics.md)</li> |
 | Uma política de governança de dados imposta por sua organização impede que os componentes da tabela sejam exportados | Entre em contato com o administrador do sistema para ver quais componentes estão impedidos de serem exportados. Remova os componentes restritos antes da exportação. | *Filtrar as políticas de governança de dados nas visualizações de dados* seção em [Rótulos e políticas](/help/data-views/data-governance.md) |
 
 ## Entre em contato com o Atendimento ao cliente da Adobe

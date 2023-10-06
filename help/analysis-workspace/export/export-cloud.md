@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Exportar relatórios de Customer Journey Analytics para a nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
 workflow-type: tm+mt
-source-wordcount: '1924'
-ht-degree: 4%
+source-wordcount: '1955'
+ht-degree: 3%
 
 ---
 
@@ -170,6 +170,10 @@ Os seguintes componentes não são suportados, e o Analysis Workspace solicita q
 
 * Métricas calculadas que usam funções básicas ou avançadas na definição da métrica (consulte [Funções básicas](/help/components/calc-metrics/cm-functions.md) e [Funções avançadas](/help/components/calc-metrics/cm-adv-functions.md) para obter mais informações)
 * Componentes que foram impedidos por um administrador de serem exportados (consulte a *Filtrar as políticas de governança de dados nas visualizações de dados* seção em [Rótulos e políticas](/help/data-views/data-governance.md) para obter mais informações)
+* Qualquer dimensão que atenda a todos os seguintes critérios:
+   * Foi criado a partir de um campo que faz parte de um [matriz de objetos](/help/use-cases/object-arrays.md)
+   * Têm [persistência ativada](/help/data-views/component-settings/persistence.md)
+   * Não está usando um [dimensão de ligação](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * Mais de 5 dimensões e 5 métricas por relatório (até 5 dimensões e 5 métricas são compatíveis)
 * Nas colunas da tabela:
    * Intervalos de datas
