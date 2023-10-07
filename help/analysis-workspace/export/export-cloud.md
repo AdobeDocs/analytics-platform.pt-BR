@@ -1,12 +1,12 @@
 ---
-description: Exportar um projeto do Analysis Workspace para um local na nuvem.
+description: Saiba como exportar um projeto do Analysis Workspace para um local na nuvem.
 keywords: Analysis Workspace
 title: Exportar relatórios de Customer Journey Analytics para a nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
-source-git-commit: 3252a41f5ee1f439a3f233b06a8be1fdf6150234
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1970'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ Use o processo a seguir ao exportar tabelas completas para a nuvem:
 
 1. [Acessar dados na nuvem](#view-exported-data-and-manifest-file) e [Gerenciar exportações no Adobe](/help/components/exports/manage-exports.md)
 
-![Processo completo de exportação de tabela](assets/export-full-table-process.png)
+![O processo completo de exportação da tabela descrito nas etapas 1 a 4.](assets/export-full-table-process.png)
 
 ## Exportar tabelas completas do Analysis Workspace
 
@@ -57,7 +57,7 @@ Para exportar tabelas completas do Analysis Workspace:
 
 1. Selecionar [!UICONTROL **Exportar tabela inteira**].
 
-   ![exportar tabela completa](assets/export-full-table.png)
+   ![O menu suspenso Exportar tabela de forma livre com a tabela completa realçada.](assets/export-full-table.png)
 
 1. No [!UICONTROL **Nova exportação de tabela completa**] especifique as seguintes informações:
 

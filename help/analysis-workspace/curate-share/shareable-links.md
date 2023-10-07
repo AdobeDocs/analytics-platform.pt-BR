@@ -4,10 +4,10 @@ keywords: Compartilhamento no Analysis Workspace
 title: Criar links compartilháveis
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
-source-git-commit: 7889c9e7c55dadfe0966f03365eabc4929a32d7a
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 62%
+source-wordcount: '395'
+ht-degree: 57%
 
 ---
 
@@ -27,7 +27,7 @@ Você pode compartilhar um link somente leitura para projetos Analysis Workspace
 
 Para obter mais informações, consulte &quot;Compartilhar um projeto com qualquer pessoa (não é necessário fazer logon)&quot; no artigo [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).
 
-## Obter o painel ou link de visualização {#panel-link}
+## Obter um painel ou link de visualização {#panel-link}
 
 Você também pode compartilhar um link para uma parte específica de um projeto, como um painel ou uma visualização individual. Às vezes, esse compartilhamento é chamado de intravinculação. Ele pode ser útil para chamar a atenção dos usuários para os principais insights do projeto.
 
@@ -36,7 +36,7 @@ Você também pode compartilhar um link para uma parte específica de um projeto
 
 [Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=pt-BR) sobre como criar links e usá-los para direcionar recipients para partes específicas do seu projeto.
 
-![](assets/get-viz-link.png)
+![O menu suspenso depois de clicar com o botão direito do mouse no cabeçalho com o link Obter visualização realçado.](assets/get-viz-link.png)
 
 ## Usar links em um índice {#TOC}
 
@@ -44,4 +44,4 @@ Uma dica para aproveitar as várias opções de link é sempre incluir um índic
 
 [Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=pt-BR) sobre como construir um índice usando links e o editor de rich text do Espaço de trabalho.
 
-![](assets/toc.png)
+![Um índice do projeto.](assets/toc.png)

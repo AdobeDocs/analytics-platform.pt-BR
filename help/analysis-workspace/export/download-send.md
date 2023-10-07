@@ -3,10 +3,10 @@ description: É possível baixar dados do Analysis Workspace copiando-os ou em f
 title: Baixar dados de Customer Journey Analytics
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 58%
+source-wordcount: '1133'
+ht-degree: 55%
 
 ---
 
@@ -28,7 +28,7 @@ Estão também disponíveis outros métodos de exportação de dados de Customer
 
      Escolha essa opção se desejar que o arquivo baixado seja de texto sem formatação.
 
-   ![](assets/download-project.png)
+   ![O menu suspenso Projeto com as opções Baixar CSV e Baixar PDF realçadas.](assets/download-project.png)
 
 1. (Condicional) Se você optar por baixar um PDF, uma mensagem será exibida depois que o projeto estiver pronto para ser baixado. Selecione [!UICONTROL **Download**].
 
@@ -51,7 +51,7 @@ A opção de clique com o botão direito **[!UICONTROL Copiar para a área de tr
 >Você pode usar a tecla de atalho `Ctrl+C` para copiar sua seleção para a área de transferência, use `Ctrl+V` para colá-lo em uma ferramenta de terceiros.
 
 
-![](assets/copy-selection.png)
+![A opção Copiar seleção para a área de transferência. ](assets/copy-selection.png)
 
 ## Baixar como CSV {#download-data}
 
@@ -66,7 +66,7 @@ A opção de clique com o botão direito **[!UICONTROL Baixar dados como CSV]** 
 
 * Em uma tabela, clique com o botão direito do mouse e escolha **[!UICONTROL Baixar seleção como CSV]**. Somente a seleção é baixada com essa opção, em vez da tabela totalmente exibida.
 
-![](assets/download-data-viz.png)
+![A opção Baixar dados como CSV.](assets/download-data-viz.png)
 
 ## Baixar itens como CSV {#download-items}
 
@@ -78,7 +78,7 @@ Se quiser analisar mais do que as 400 linhas de dados visíveis em uma tabela, c
 
 É possível executar várias tarefas no projeto e até mesmo navegar para um novo projeto do Workspace na mesma guia enquanto o download está em andamento. O download é pausado se você abrir uma nova guia do navegador. O download será cancelado se você sair do Workspace completamente ou fechar a guia do navegador.
 
-![](assets/download-items.png)
+![A opção Baixar itens como CSV (Página).](assets/download-items.png)
 
 ### Arquivo de itens baixados {#items-file}
 
@@ -90,7 +90,7 @@ Os recursos da tabela serão aplicados ao arquivo baixado da seguinte maneira:
 
 No exemplo acima, os itens de Página são baixados com o filtro do painel (Novos clientes visitantes), os componentes acima (Canal de marketing = Email) são aplicados como filtros e os componentes abaixo (Tipo de dispositivo móvel) são removidos do CSV baixado.
 
-![](assets/downloaded-file.png)
+![O arquivo .csv baixado foi aberto no Excel.](assets/downloaded-file.png)
 
 ### Baixar notificações {#notifications}
 
@@ -100,7 +100,7 @@ Quando o arquivo for concluído, você verá uma notificação de conclusão e o
 
 Se solicitar mais de um download por vez, você receberá uma notificação de que cada download adicional será enfileirado até que o download anterior seja concluído.
 
-![](assets/toast.png)
+![A notificação de status do download mostrando a porcentagem concluída e um link Cancelar download.](assets/toast.png)
 
 ## Baixar dados sigilosos {#sensitive}
 

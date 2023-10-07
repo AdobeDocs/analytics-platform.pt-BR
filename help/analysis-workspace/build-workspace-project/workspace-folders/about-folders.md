@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visão geral das pastas
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '461'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Há dois tipos de pastas no Espaço de trabalho: a Pasta da empresa e as pastas 
 
 Ao fazer logon no Espaço de trabalho, a página inicial de Projetos exibe uma lista de seus projetos junto com a Pasta da empresa e qualquer pasta pessoal que você criou.
 
-![](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![Home page do projeto listando seus projetos e a Pasta da empresa.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
 ## Sobre a Pasta da empresa {#company-folder}
 
@@ -38,11 +38,11 @@ Quando um usuário faz logon no Espaço de trabalho, a Pasta da empresa é adici
 
 Os administradores têm privilégios especiais atribuídos à Pasta da empresa. Por exemplo, somente Administradores podem adicionar ou remover pastas ou projetos na Pasta da empresa. Os usuários sem acesso de Administrador podem visualizar o conteúdo da Pasta da empresa.
 
-![](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+![A página Projetos mostrando as opções de administração.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
 Os não administradores têm opções limitadas.
 
-![](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![A página Projetos mostrando as opções não administrativas para pastas.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
 
 ### Diretrizes da Pasta da empresa {#company-folder-guidelines}
 

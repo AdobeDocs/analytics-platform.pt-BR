@@ -4,18 +4,18 @@ keywords: Projetos do somente para visualização
 title: Projetos do somente para visualização
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
-source-git-commit: 32c507cb9de4fcd146de0e9c828c54c5f4f1a062
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 81%
+source-wordcount: '249'
+ht-degree: 80%
 
 ---
 
 # Projetos do somente para visualização
 
-Você pode compartilhar projetos &quot;somente para visualização&quot; com os recipients por meio do [Fluxo de trabalho de compartilhamento do projeto](/help/analysis-workspace/curate-share/share-projects.md). Os recipient colocados na função Pode visualizar terão uma experiência de projeto mais limitada. Isso pode ser desejado se você estiver compartilhando um projeto com usuários menos familiarizados com a estrutura de dados de sua organização, o Analysis Workspace ou o Customer Journey Analytics em geral, mas ainda quiser que eles consumam dados e insights em um ambiente seguro.
+Você pode compartilhar projetos &quot;somente para visualização&quot; com os recipients por meio do [Fluxo de trabalho de compartilhamento do projeto](/help/analysis-workspace/curate-share/share-projects.md). Os recipient colocados na função Pode visualizar terão uma experiência de projeto mais limitada. Essa opção pode ser útil se você estiver compartilhando um projeto com usuários menos familiarizados com a estrutura de dados da sua organização, o Analysis Workspace ou o Customer Journey Analytics em geral, mas ainda assim quiser que eles consumam dados e insights em um ambiente seguro.
 
-![](assets/view-only-project.png)
+![Um projeto compartilhado somente para visualização.](assets/view-only-project.png)
 
 ## Interações desativadas
 

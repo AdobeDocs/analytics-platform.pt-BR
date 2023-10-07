@@ -3,10 +3,10 @@ description: Um painel é uma coleção de tabelas e visualizações
 title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
-source-git-commit: 473d0851e537decc8a26f653e81b161c7b7dc551
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 51%
+source-wordcount: '1313'
+ht-degree: 48%
 
 ---
 
@@ -27,7 +27,7 @@ Os seguintes tipos de painel estão disponíveis no Analysis Workspace para o [!
 | [Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de analisar e comparar. |
 | [Painel Tempo gasto com a reprodução de mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analise o tempo de reprodução gasto para entender onde ocorreu o pico de simultaneidade ou onde ocorreram desistências. |
 
-![](assets/panel-overview.png)
+![O painel Customer Journey Analytics listando os tipos de painel disponíveis.](assets/panel-overview.png)
 
 Os painéis [!UICONTROL Quick Insights], [!UICONTROL Em branco] e [!UICONTROL Forma livre] são excelentes locais para iniciar a análise, enquanto que o [!UICONTROL Attribution IQ] é recomendado para análises mais avançadas. Um botão `"+"` está disponível nos projetos para que você possa adicionar painéis em branco a qualquer momento.
 
@@ -39,7 +39,7 @@ O calendário do painel controla o intervalo de relatórios para tabelas e visua
 
 Observação: se um componente de intervalo de datas (roxo) for usado em uma tabela, uma visualização ou uma zona suspensa do painel, ele substituirá o calendário do painel.
 
-![](assets/panel-calendar.png)
+![A janela do calendário que mostra o intervalo de datas selecionado.](assets/panel-calendar.png)
 
 Você pode aplicar um intervalo de datas com detalhamento de minutos nas configurações avançadas do calendário do painel. Se você estiver emitindo relatórios em um intervalo de datas que abrange muitos dias, a hora de início se aplica ao primeiro dia e a hora de término se aplica ao último dia do intervalo.
 
@@ -51,7 +51,7 @@ A zona de destino do painel permite aplicar filtros simples e filtros suspensos 
 
 Arraste e solte quaisquer Filtros do painel esquerdo na área de lançamento do painel para começar a filtrá-lo.
 
-![](assets/segment-filter.png)
+![O painel esquerdo mostra as Métricas disponíveis e a métrica Cliente móvel arrastada para a área de soltar do painel.](assets/segment-filter.png)
 
 ### Filtros ad hoc
 
@@ -61,7 +61,7 @@ Os filtros ad hoc são um tipo de filtro rápido e são locais ao projeto. Elas 
 
 Para obter mais informações, consulte [Filtros rápidos](/help/components/filters/quick-filters.md).
 
-![](assets/adhoc-segment-filter.png)
+![Filtros ad hoc que são tornados públicos e soltos na zona de soltar.](assets/adhoc-segment-filter.png)
 
 ### Filtros suspensos estáticos
 
@@ -69,7 +69,7 @@ Os filtros suspensos permitem que você interaja com os dados de forma controlad
 
 Filtros suspensos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes filtros de País aplicados, é possível consolidar todas as versões em um único projeto e adicionar um filtro suspenso de País.
 
-![](assets/dropdown-filter-intro.png)
+![Filtros suspensos estáticos mostrando o filtro &quot;Direto&quot; do Canal de mercado destacado. ](assets/dropdown-filter-intro.png)
 
 Para criar um filtro suspenso estático:
 
@@ -79,7 +79,7 @@ Para criar um filtro suspenso estático:
 
 Selecione uma das opções na lista suspensa para alterar os dados no painel. Também é possível optar por não filtrar os dados do painel ao selecionar **[!UICONTROL Sem filtro]**.
 
-![](assets/create-dropdown.png)
+![A janela Painel com o campo Segmento de cliente móvel disponível para soltar um filtro suspenso estático. ](assets/create-dropdown.png)
 
 Clicar com o botão direito em um filtro suspenso fornece as seguintes opções:
 
@@ -109,7 +109,7 @@ Clicar com o botão direito em um filtro suspenso dinâmico fornece as mesmas op
 
 A funcionalidade adicional para um painel está disponível clicando com o botão direito do mouse no cabeçalho do painel.
 
-![](assets/right-click-menu.png)
+![As opções de clique com o botão direito para um cabeçalho do painel.](assets/right-click-menu.png)
 
 As seguintes configurações estão disponíveis:
 

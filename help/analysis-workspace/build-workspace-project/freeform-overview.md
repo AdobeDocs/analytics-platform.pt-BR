@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visão geral dos Projetos
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 9a45b3a6f1c1b4da91fa6c79ad0e265cdd89e020
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 80%
+source-wordcount: '1371'
+ht-degree: 72%
 
 ---
 
@@ -17,9 +17,9 @@ Os projetos do Workspace permitem combinar componentes de dados, tabelas e visua
 
 ## Lista de projetos {#project-list}
 
-Ao acessar pela primeira vez o **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, a página listará todos os projetos que você possui ou que foram compartilhados com você. Essa também é a página de aterrissagem do Adobe Analytics, a menos que você tenha definido uma página de aterrissagem personalizada anteriormente.
+Quando você acessa o pela primeira vez **[!UICONTROL Analytics]** > **[!UICONTROL Workspace]**, a página listará todos os seus projetos ou os projetos compartilhados com você. Essa também é a página de aterrissagem do Adobe Analytics, a menos que você tenha definido uma página de aterrissagem personalizada anteriormente.
 
-![](assets/sample-project.png)
+![Página de aterrissagem do projeto mostrando a lista de projetos.](assets/sample-project.png)
 
 A página Projetos contém as seguintes informações:
 
@@ -55,7 +55,7 @@ A página Projetos contém as seguintes informações:
 
 Em um projeto, o menu fornece opções para gerenciar o projeto, adicionar componentes, encontrar ajuda e muito mais. Cada opção de menu também pode ser acessada por atalhos do [teclado](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
-![](assets/menu.png)
+![Novas opções de projeto, incluindo as opções Projeto, Editar, Inserir, Componentes, Compartilhar e Ajuda.](assets/menu.png)
 
 | Item de menu | Descrição |
 |---|---|
@@ -71,7 +71,7 @@ Em um projeto, o menu fornece opções para gerenciar o projeto, adicionar compo
 
 **[!UICONTROL Espaço de trabalho]** > **[!UICONTROL Projeto]** > **[!UICONTROL Configurações &amp; informações do projeto]** fornecem informações sobre o projeto ativo no momento.
 
-![](assets/projectinfo.png)
+![A janela Informações e configurações do projeto.](assets/projectinfo.png)
 
 As configurações incluem:
 
@@ -94,7 +94,7 @@ Também é possível acessar visualizações e painéis no [Painel em branco](/h
 
 Os componentes (Dimensões, Métricas, Filtros, Intervalos de datas) no painel esquerdo estão relacionados à visualização de dados do painel principal. O painel principal terá uma borda azul ao redor dele e a visualização de dados principal será listada na parte superior do painel de componentes.
 
-![](assets/left-rail.png)
+![Os componentes relacionados à visualização de dados do painel ativo para visualização de dados de demonstração intersetorial.](assets/left-rail.png)
 
 ## Tela do projeto {#canvas}
 
@@ -104,15 +104,15 @@ Os painéis são úteis quando você deseja organizar seus projetos de acordo co
 
 Dependendo do ponto de partida escolhido para seus projetos, você terá uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) na tela para começar. A maneira mais rápida de começar a analisar é selecionar um ou vários componentes e simplesmente arrastá-los e soltá-los na tela do projeto. Uma tabela de dados será renderizada automaticamente para você. [Saiba mais](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) sobre as diferentes opções para criar uma tabela ou utilize nosso [tutorial de treinamento](/help/analysis-workspace/home.md) para obter mais orientações sobre como criar seu primeiro projeto.
 
-![](assets/canvas.png)
+![Uma Tabela de forma livre para o projeto.](assets/canvas.png)
 
 ## Gerente de projetos {#manager}
 
-Os projetos do Analysis Workspace podem ser gerenciados em **Analytics > Componentes >  Projetos**. O Gerenciador de projetos mostra os itens criados por um usuário específico. A propriedade do projeto pode ser transferida para um novo usuário em Admin > Usuários e ativos do Analytics > Transferir ativos.
+Os projetos do Analysis Workspace podem ser gerenciados em **Analytics > Componentes >  Projetos**. O Gerenciador de projetos mostra os itens que um usuário específico criou. É possível transferir a propriedade do projeto para um novo usuário em Administração > Usuários e ativos do Analytics > Transferir ativos.
 
 No Gerenciador de projetos, você pode adicionar, marcar, compartilhar, duplicar/copiar e muito mais. Procure um projeto na barra de pesquisa ou usando as opções de filtro no painel esquerdo. Você pode filtrar por tag, proprietários, tipo de projeto e muito mais.
 
-![](assets/project-manager.png)
+![Campo de pesquisa Tags do gerente de projetos e campo de pesquisa de título.](assets/project-manager.png)
 
 As ações a seguir são comuns no Gerenciador de projetos e podem ser executadas em um ou vários projetos ao mesmo tempo:
 

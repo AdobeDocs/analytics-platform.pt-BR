@@ -3,9 +3,9 @@ description: Fatores que afetam o desempenho e as otimizações do Customer Jour
 title: Otimizar o desempenho do Customer Journey Analytics e do Analysis Workspace
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1975'
 ht-degree: 75%
 
 ---
@@ -50,7 +50,7 @@ Além disso, você pode **Baixar como CSV** o conteúdo de desempenho para compa
 >
 >As informações na página Desempenho variam cada vez que o modal é aberto, já que os fatores estão sujeitos a alterações. Além disso, a Adobe continuará refinando as diretrizes fornecidas à medida que mais dados estiverem disponíveis.
 
-![](assets/performance-modal.png)
+![Desempenho do Analysis Workspace mostrando o Fator de Rede, Projeto Atual e Diretriz.](assets/performance-modal.png)
 
 ### Fatores de rede
 

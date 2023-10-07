@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Remover projetos de pastas
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 92%
 
 ---
 
@@ -25,19 +25,19 @@ Você pode mover projetos de uma pasta para outra pasta que você criou.
 
 1. Em uma pasta de projeto, selecione o ícone de reticências **...** ao lado do nome do projeto.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![As opções de reticências.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. Selecionar **Mover para** e selecione uma pasta para onde mover o projeto.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+   ![A janela Selecionar Local.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
 1. Clique em **Mover**.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+   ![Clique em Mover.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
    Uma notificação confirma que o projeto foi movido.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+   ![A janela de confirmação de movimentação. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
 ## Excluir um projeto de uma pasta de projeto {#delete-project-in-folder}
 
@@ -45,7 +45,7 @@ Ao excluir um projeto de uma pasta, o projeto é totalmente excluído.
 
 1. Em uma pasta de projeto, clique no ícone de reticências **...** ao lado do nome do projeto.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+   ![As opções de reticências.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
 1. Clique em **Excluir**.
 

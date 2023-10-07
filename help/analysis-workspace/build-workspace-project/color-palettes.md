@@ -3,10 +3,10 @@ description: Como alterar a paleta de cores de visualização ou especificar sua
 title: Paleta de cores de visualização
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 92%
+source-wordcount: '222'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 92%
 >
 >O suporte para a paleta de cores não está habilitado para o Internet Explorer 11.
 
-![](assets/color_palettes.png)
+![A janela Informações e configurações do projeto.](assets/color_palettes.png)
 
 Lembre-se:
 
@@ -30,7 +30,7 @@ Lembre-se:
 1. Navegue até **[!UICONTROL Workspace]** > **[!UICONTROL Projeto]** > **[!UICONTROL Informações e configurações do projeto]**.
 1. No **[!UICONTROL Paleta de cores do projeto]** escolha um dos cinco esquemas de cores predefinidos.
 
-   ![](assets/custom_palette.png)
+   ![Os cinco esquemas de cores predefinidos.](assets/custom_palette.png)
 
 1. Para especificar sua própria paleta, selecione **[!UICONTROL Paleta personalizada]** abaixo das opções predefinidas.
 1. Especifique até 16 valores hexadecimais separados por vírgula (por exemplo, #00a4e4) para as cores que pretende usar. Caso deseje usar somente quatro valores, por exemplo, essas cores serão repetidas automaticamente nas visualizações que apresentarem mais cores.

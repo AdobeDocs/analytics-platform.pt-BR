@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Criar pastas
 feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 100%
+source-wordcount: '203'
+ht-degree: 76%
 
 ---
 
@@ -25,15 +25,15 @@ Para criar uma nova pasta,
 
 1. Selecione tags no menu suspenso ou adicione tags novas.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
+   ![Janela Criar nova pasta mostrando o nome da nova pasta e a lista de tags disponíveis.](/help/analysis-workspace/build-workspace-project/assets/select-tags.png)
 
 1. Clique em **Criar**.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create.png)
+   ![Clique em Criar.](/help/analysis-workspace/build-workspace-project/assets/create.png)
 
    A nova pasta é adicionada à lista principal de projetos e pastas.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
+   ![A página inicial de Projetos mostrando a lista atualizada de projetos e pastas.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
 ## Criar uma subpasta {#create-subfolder}
 
@@ -43,20 +43,20 @@ Para criar uma subpasta quando tiver uma pasta existente aberta,
 
 1. clique em **Criar uma nova pasta**.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
+   ![clique em Criar uma nova pasta.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder2.png)
 
 1. Insira um nome de subpasta e adicione as tags necessárias.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
+   ![A janela Criar nova pasta com o novo nome e o campo Tags.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-name.png)
 
 1. Clique em **Criar**.
 
    A nova subpasta é adicionada à lista de projetos e subpastas.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
+   ![Clique em Criar.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-added.png)
 
    >[!NOTE]
    >
    >É possível criar até 10 níveis de subpastas em uma única pasta.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)
+   ![A lista suspensa pasta mostra todas as subpastas dentro da pasta.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)

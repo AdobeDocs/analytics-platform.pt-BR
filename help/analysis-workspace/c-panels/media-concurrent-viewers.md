@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel Visualizadores simultâneos de mí
 feature: Panels
 role: User, Admin
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 79%
+source-wordcount: '1035'
+ht-degree: 76%
 
 ---
 
@@ -36,12 +36,12 @@ Você pode configurar o painel Visualizadores simultâneos de mídia usando esta
 
 ### Visualização padrão
 
-![Visualização padrão](assets/concurrent-viewers-default.png)
+![A visualização padrão dos Visualizadores simultâneos de mídia.](assets/concurrent-viewers-default.png)
 
 
 ### Visualização de detalhamento por séries
 
-![visualização de detalhamento por séries](assets/concurrent-viewers-series-breakdown.png)
+![A visualização de detalhamento da Série Visualizadores simultâneos de mídia que mostra 7 de 10 dimensões, segmentos ou intervalos de datas.](assets/concurrent-viewers-series-breakdown.png)
 
 ## Saída do painel {#Output}
 
@@ -51,7 +51,7 @@ A qualquer momento, você pode editar e reconstruir o painel clicando no lápis 
 
 Se você selecionou o detalhamento por séries, uma linha no gráfico de linha e um número de resumo é exibida para cada:
 
-![saída de visualizadores simultâneos](assets/concurrent-viewers-output.png)
+![A saída dos Visualizadores simultâneos de mídia.](assets/concurrent-viewers-output.png)
 
 ### Fonte de dados
 
@@ -64,7 +64,7 @@ A única métrica que pode ser usada nesse painel é a de Visualizadores simult�
 Uma tabela de forma livre não está disponível nessa visualização.  Para visualizar a fonte de dados, clique com o botão direito do mouse no gráfico de linha e baixe como um arquivo .csv.  Os detalhamentos por séries serão incluídos.
 
 
-![saída de visualizadores simultâneos](assets/concurrent-viewers-download-csv.png)
+![As opções de saída do Visualizador simultâneo com &quot;Baixar dados como CSV&quot; realçadas.](assets/concurrent-viewers-download-csv.png)
 
 ## Perguntas frequentes {#FAQ}
 

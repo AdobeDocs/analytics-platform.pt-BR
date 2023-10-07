@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel Tempo gasto com a reprodução de 
 feature: Panels
 role: User, Admin
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
-source-git-commit: cfce67c9cbda272158288c04d5ecdbceee99beb7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 75%
+source-wordcount: '924'
+ht-degree: 74%
 
 ---
 
@@ -55,7 +55,7 @@ Você pode configurar o painel Tempo gasto com a reprodução de mídia usando e
 
 ## Visualização padrão
 
-![Visualização padrão](assets/mpts_default_view.png)
+![A exibição padrão Tempo gasto com a reprodução do manual de mídia.](assets/mpts_default_view.png)
 
 ## Saída do painel {#Output}
 
@@ -65,7 +65,7 @@ A qualquer momento, você pode editar e reconstruir o painel clicando no lápis 
 
 Se você selecionou o detalhamento por séries, uma linha no gráfico de linha e um número de resumo é exibida para cada:
 
-![saída do tempo gasto com a reprodução de mídia](assets/mpts_outputs1.png)
+![A saída Tempo gasto com a reprodução da mídia mostrando um gráfico de linhas e um resumo.](assets/mpts_outputs1.png)
 
 ### Fonte de dados
 

@@ -1,18 +1,18 @@
 ---
-description: Você pode preparar, compartilhar e agendar projetos em PDF/CSV para recipients em sua organização.
+description: Saiba mais sobre as opções de menu Compartilhar do Workspace.
 title: Menu Compartilhar
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
-source-git-commit: b36ba438a14f9fd257f2b6a38be7eb39baaa7d92
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 75%
+source-wordcount: '146'
+ht-degree: 56%
 
 ---
 
 # Menu Compartilhar
 
-É possível preparar, compartilhar e programar projetos em PDF/CSV para recipients em sua organização no **menu Compartilhar** do Espaço de trabalho.
+Você pode preparar, compartilhar e agendar projetos em PDF e CSV para recipients em sua organização no Workspace **Menu Compartilhar**.
 
 | Opção de menu | Descrição |
 |---|---|

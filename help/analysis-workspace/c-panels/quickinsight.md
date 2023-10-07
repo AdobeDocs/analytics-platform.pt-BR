@@ -3,10 +3,10 @@ description: Insights rápidos é uma ferramenta para novos usuários do Workspa
 title: Painel do Insights rápidos
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
-workflow-type: ht
-source-wordcount: '1049'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '1135'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ Ao usar o [!UICONTROL Analysis Workspace] pela primeira vez, você pode se pergu
 
 Para ajudar nisso, e com base no uso de componentes de dados da sua própria empresa no [!UICONTROL Analysis Workspace], o [!UICONTROL Insights rápidos] utiliza um algoritmo que apresentará as dimensões, as métricas, os filtros e os intervalos de datas mais usados pela sua empresa. Na verdade, você verá dimensões, métricas e filtros marcados como [!UICONTROL Popular] na lista suspensa, como mostrado aqui:
 
-![](assets/popular-tag.png)
+![O painel Quick Insights.](assets/popular-tag.png)
 
 O [!UICONTROL Insights rápidos] ajuda a
 
@@ -45,14 +45,14 @@ A seguir, estão alguns dos termos básicos que você precisa conhecer. Cada tab
 1. Faça logon no Customer Journey Analytics usando as credenciais fornecidas.
 1. Vá para o [!UICONTROL Workspace], clique em **[!UICONTROL Criar novo projeto]** e depois em **[!UICONTROL Insights rápidos]**. (Você também pode acessar esse painel no menu **[!UICONTROL Painel]** no painel esquerdo.)
 
-   ![](assets/qibuilder.png)
+   ![A exibição Todos os modelos destaca a opção Quick Insights.](assets/qibuilder.png)
 
-   ![](assets/qi-panel.png)
+   ![A lista Painéis destacando a opção Quick Insights.](assets/qi-panel.png)
 
 1. Ao iniciar pela primeira vez, confira o breve tutorial que aborda as noções básicas do [!UICONTROL painel do Insights rápidos]. Ou clique em **[!UICONTROL Ignorar tutorial]**.
 1. Selecione os elementos (também conhecidos como componentes): dimensões (laranja), métricas (verde), filtros (azul) ou intervalos de datas (roxo). É necessário selecionar pelo menos uma dimensão e uma métrica para que uma tabela seja criada automaticamente.
 
-   ![](assets/qibuilder2.png)
+   ![Os componentes incluindo Dimensões, Métricas, Filtros, Segmentos e Intervalos de datas.](assets/qibuilder2.png)
 
    Há três maneiras de selecionar os elementos:
    * Arraste e solte-os do painel esquerdo.
@@ -63,7 +63,7 @@ A seguir, estão alguns dos termos básicos que você precisa conhecer. Cada tab
 
    * Uma tabela de forma livre com a dimensão (aqui, Estados dos EUA) verticalmente e a métrica (aqui, Visitas) horizontalmente na parte superior. Confira esta tabela:
 
-   ![](assets/qibuilder3.png)
+   ![A tabela de forma livre que mostra a dimensão verticalmente e a métrica horizontalmente.](assets/qibuilder3.png)
 
    * Uma visualização complementar, neste caso um [gráfico de barras](/help/analysis-workspace/visualizations/bar.md). A visualização gerada tem como base o tipo de dados que você adicionou à tabela. Todos os dados com base no tempo (como [!UICONTROL Visitas] por dia/mês) assumem o padrão de um gráfico de [!UICONTROL Linha]. Todos os dados não baseados em tempo (como [!UICONTROL Visitas] por [!UICONTROL dispositivo]) assumem o padrão de um gráfico de [!UICONTROL Barra]. Você pode alterar o tipo de visualização clicando na seta suspensa ao lado do tipo de visualização.
 
@@ -79,28 +79,28 @@ Outras dicas úteis aparecerão no [!UICONTROL Construtor do Insights rápidos],
 
 * Primeiro, siga o tutorial **[!UICONTROL Mais dicas]**: acesse-o por meio da Ajuda (?) ícone ao lado do título [!UICONTROL Insights rápidos]. Esse tutorial é exibido 24 horas após você ter criado um projeto com pelo menos uma dimensão e uma métrica.
 
-  ![](assets/qibuilder4.png)
+  ![A notificação do Painel do Quick Insights é exibida depois de clicar no ícone de Ajuda.](assets/qibuilder4.png)
 
 * **Detalhamento por**: você pode usar até três níveis de detalhamento em dimensões para detalhar os dados que realmente precisa.
 
-  ![](assets/qibuilder5.png)
+  ![Subníveis de detalhamentos.](assets/qibuilder5.png)
 
 * **Adicionar mais métricas**: você pode adicionar até mais duas métricas usando o operador AND para adicioná-las à tabela.
 
-  ![](assets/qibuilder6.png)
+  ![Várias métricas, incluindo Visitas e Dispositivos.](assets/qibuilder6.png)
 
 * **Adicionar mais filtros**: é possível adicionar até 2 filtros extras usando os operadores AND ou OR para adicioná-los à tabela. Observe o que acontece com a tabela quando você adiciona usuários móveis OR Visitantes leais. Eles ficam próximos um do outro, acima das métricas. Se você adicionasse usuários móveis E visitantes fidelizados, veria os resultados de ambos os filtros juntos e eles seriam empilhados um sobre o outro na tabela.
 
-  ![](assets/qibuilder7.png)
+  ![Diagrama que mostra os Usuários móveis e Visitantes fidelizados adicionados.](assets/qibuilder7.png)
 
 ## Limitações conhecidas
 
 Se você tentar editar diretamente na tabela, o painel do [!UICONTROL Insights rápidos] ficará fora de sincronia. Você pode restaurá-lo para as configurações anteriores do [!UICONTROL Insights rápidos] clicando em **[!UICONTROL Ressincronizar o construtor]** na parte superior direita do painel.
 
-![](assets/qibuilder9.png)
+![O painel Quick Insights com a opção Ressincronizar construtor.](assets/qibuilder9.png)
 
 Você receberá um aviso antes de adicionar algo diretamente à tabela:
 
-![](assets/qibuilder8.png)
+![O aviso de opção Resync Builder.](assets/qibuilder8.png)
 
 Caso contrário, criar diretamente fará com que a tabela se comporte como uma tabela de forma livre tradicional, sem os recursos úteis para novos usuários.

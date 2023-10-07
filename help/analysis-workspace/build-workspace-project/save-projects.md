@@ -4,10 +4,10 @@ title: Salvar projetos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '778'
+ht-degree: 93%
 
 ---
 
@@ -44,7 +44,7 @@ Todos os projetos no Analysis Workspace são salvos automaticamente a cada 2 min
 
    1. Acesse a pastas [!UICONTROL **Projetos recuperados**] na página de destino do Analysis Workspace.
 
-      ![](assets/recovered-folder.png)
+      ![A lista de pastas que destaca a pasta Projeto recuperado.](assets/recovered-folder.png)
 
    1. Abra o projeto e salve-o no local desejado.
 
@@ -63,13 +63,13 @@ As opções disponíveis são as seguintes:
 * **Salvar como:** salva as alterações mais recentes como um novo projeto. O projeto original é salvo somente com as alterações salvas automaticamente mais recentes.
 * **Descartar alterações:** descarta as alterações mais recentes. O projeto retém as alterações salvas automaticamente mais recentes.
 
-![](assets/existing-save.png)
+![Clique em Salvar para salvar as alterações em um projeto.](assets/existing-save.png)
 
 ### Sair ou fechar uma guia
 
 Se você sair da página ou fechar a guia do navegador ao visualizar um projeto com alterações que ainda não foram salvas automaticamente, o navegador avisará que as alterações não salvas serão perdidas. Você pode optar por sair ou cancelar.
 
-![](assets/browser-image.png)
+![Clique em Sair para sair do site ou em Cancelar para navegar sem salvar as alterações. ](assets/browser-image.png)
 
 ### Falha do navegador ou tempo limite da sessão
 
@@ -81,7 +81,7 @@ Selecione **Sim** para restaurar o projeto a partir da cópia salva automaticame
 
 Selecione **Não** para excluir a cópia salva automaticamente e abrir a última versão salva pelo usuário do projeto.
 
-![](assets/project-recovery.png)
+![A caixa de diálogo Recuperação do Projeto.](assets/project-recovery.png)
 
 Para **novos** projetos que nunca foram salvos, as alterações não salvas não são recuperáveis.
 
@@ -91,7 +91,7 @@ Para abrir uma versão anterior de um projeto:
 
 1. Vá para **[!UICONTROL Projeto]** > **[!UICONTROL Abrir versão anterior]**
 
-   ![](assets/previous-versions.png)
+   ![A lista de versões de projeto salvas anteriormente e as opções para mostrar Todas as versões ou Somente versões com notas.](assets/previous-versions.png)
 
 1. Revise a lista de versões anteriores disponíveis.
    [!UICONTROL O carimbo de data e hora] e o [!UICONTROL Editor] serão exibidos juntamente com as [!UICONTROL Notas] se forem adicionadas quando o [!UICONTROL Editor] realizar o salvamento. As versões sem notas são armazenadas por 90 dias; versões com notas são armazenadas por 1 ano.

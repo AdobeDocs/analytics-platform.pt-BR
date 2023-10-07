@@ -4,10 +4,10 @@ keywords: Preparação do Analysis Workspace
 title: Preparar projetos do
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '493'
-ht-degree: 100%
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 96%
 
 ---
 
@@ -27,13 +27,13 @@ Os componentes usados no projeto serão adicionados automaticamente.
 
 A preparação também pode ser aplicada no menu [!UICONTROL Compartilhar] clicando em **[!UICONTROL Preparar e Compartilhar]**. Essa opção organiza automaticamente o projeto para os componentes em uso no projeto. Você pode adicionar outros componentes seguindo as etapas acima.
 
-![](assets/curation-field.png)
+![A janela Preparar componentes mostrando os componentes em uso no projeto.](assets/curation-field.png)
 
 ## Visualização de projeto preparado
 
 Quando um recipient abrir um projeto preparado, ele verá apenas o conjunto preparado de componentes que você definiu:
 
-![](assets/curate-project.png)
+![Um projeto com curadoria compartilhada mostrando os componentes definidos.](assets/curate-project.png)
 
 ## Remover preparação do projeto
 

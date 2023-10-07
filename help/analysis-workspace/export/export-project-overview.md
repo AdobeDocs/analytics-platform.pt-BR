@@ -1,10 +1,10 @@
 ---
-description: Entenda os vários métodos disponíveis para exportar do Analysis Workspace.
+description: Entenda os métodos disponíveis para exportar do Analysis Workspace.
 keywords: Analysis Workspace
-title: Exportar visão geral dos dados do projeto
+title: Como exportar dados do projeto
 feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%

@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Excluir pastas no Espaço de trabalho
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
-source-git-commit: 981dd31ef669251fd00b834afeafb5e396aa32da
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 90%
+source-wordcount: '122'
+ht-degree: 82%
 
 ---
 
@@ -25,11 +25,11 @@ Para excluir pastas no Espaço de trabalho
 
 1. Clique no ícone de reticências **…** no canto superior direito.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
+   ![O ícone de reticências exibe opções.](/help/analysis-workspace/build-workspace-project/assets/select-delete-folder.png)
 
 2. Selecione **Excluir pasta**.
 
    Uma notificação de confirmação indica que a pasta foi excluída.
 
-   ![](/help/analysis-workspace/build-workspace-project/assets/deleted-folder.png)
+   ![A janela de confirmação Excluir pasta.](/help/analysis-workspace/build-workspace-project/assets/deleted-folder.png)
 

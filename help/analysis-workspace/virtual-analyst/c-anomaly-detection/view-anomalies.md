@@ -1,12 +1,12 @@
 ---
-description: É possível exibir anomalias em uma tabela ou em um gráfico de linhas.
-title: Exibir anomalias no Analysis Workspace
+description: Saiba como visualizar anomalias em uma tabela ou em um gráfico de linhas.
+title: Como visualizar anomalias no Analysis Workspace
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
-source-git-commit: 34566535589c84c96a8d7a47988cd155b743674e
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 97%
+source-wordcount: '482'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 
 1. Clique fora do menu de configurações para exibir a tabela atualizada.
 
-   ![](assets/anomaly_detected.png)
+   ![Uma notificação de detecção de anomalias, indicando 15% abaixo do esperado.](assets/anomaly_detected.png)
 
 1. As anomalias são mostradas na tabela como a seguir:
 
@@ -46,7 +46,7 @@ Para exibir anomalias em um gráfico de linhas:
 
 1. Clique fora do menu de configurações para exibir o gráfico de linhas atualizado.
 
-   ![](assets/anomaly_linechart.png)
+   ![Um gráfico de linha com uma mensagem detectada de anomalia indicando 15% acima do esperado.](assets/anomaly_linechart.png)
 
    As anomalias são mostradas no gráfico de linhas da seguinte maneira:
 

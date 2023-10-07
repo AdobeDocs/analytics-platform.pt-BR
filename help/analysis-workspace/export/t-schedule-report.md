@@ -5,10 +5,10 @@ title: Enviar dados de Customer Journey Analytics para outras pessoas por e-mail
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: a2b2c6bca0557521ac7b6bcf635f467ca41731b7
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 62%
+source-wordcount: '1036'
+ht-degree: 58%
 
 ---
 
@@ -31,10 +31,10 @@ Para enviar um arquivo imediatamente aos recipients por email:
 1. (Opcional) Adicione uma descrição a ser incluída no email para explicar o arquivo que está sendo recebido.
 1. Adicione recipients ou grupos. Endereços de email também podem ser inseridos.
 1. (Somente para clientes do Healthcare Shield) Forneça uma senha. Consulte a seção Proteger com senha um relatório agendado.
-1. Clique em **[!UICONTROL Enviar agora]**.
 1. (Opcional) Clique em **[!UICONTROL Mostrar opções de agendamento]** para especificar um agendamento de delivery.
+1. Clique em **[!UICONTROL Enviar agora]**.
 
-![Enviar arquivo agora](assets/send-file-no-scheduling-options.JPG)
+![A janela Enviar arquivo e o botão Enviar agora.](assets/send-file-no-scheduling-options.JPG)
 
 ## Enviar arquivo agendado {#schedule}
 
@@ -49,7 +49,7 @@ Para enviar um arquivo por email de acordo com uma programação recorrente a re
 1. Especifique a frequência do delivery. Cada frequência permite personalizações diferentes.
 1. Clique em **[!UICONTROL Enviar de acordo com a programação]**.
 
-![](assets/send-file.JPG)
+![A janela Enviar arquivo e as opções de agendamento exibidas para mostrar as configurações de início, término nas datas e frequência diária.](assets/send-file.JPG)
 
 ## Gerenciador de projetos programados {#manager}
 
@@ -98,7 +98,7 @@ Depois que sua empresa comprou o SKU do Healthcare Shield e foi habilitada para 
 
 * Quando um projeto agendado existente estiver prestes a ser enviado. O projeto agendado no momento está desativado até que a proteção por senha esteja em vigor. O proprietário do projeto agendado recebe um email informando sobre esse requisito.
 
-![proteção com senha](assets/password.png)
+![A janela Editar projeto agendado e a notificação de criptografia de senha indicando que sua organização requer criptografia de senha.](assets/password.png)
 
 ### Requisitos de senha
 
@@ -113,7 +113,7 @@ Os requisitos de senha estão em conformidade com os padrões de Adobe, exigindo
 
 Antes de um projeto ser agendado, o proprietário do projeto recebe um email semelhante a este:
 
-![email](assets/email-password.png)
+![A notificação por email Customer Journey Analytics indicando que a criptografia de senha é necessária para sua organização.](assets/email-password.png)
 
 1. Efetue logon no Customer Journey Analytics.
 1. Selecionar **[!UICONTROL Visualizar Projeto Agendado]**.

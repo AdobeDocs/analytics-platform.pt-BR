@@ -4,9 +4,9 @@ keywords: Compartilhamento no Analysis Workspace
 title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: bf700355597760b36441864de36f460b5996a1fe
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1960'
+source-wordcount: '1980'
 ht-degree: 36%
 
 ---
@@ -61,7 +61,7 @@ Para compartilhar uma função de projeto específica com usuários ou grupos na
 1. Vá para o projeto que deseja compartilhar e clique em **[!UICONTROL Compartilhar]** > **[!UICONTROL Compartilhar com usuários do Workspace]**.
 Se houver alterações não salvas, você deverá salvar o projeto primeiro.
 
-   ![](assets/share-proj-modal.png)
+   ![A janela Compartilhar projeto.](assets/share-proj-modal.png)
 
    Para obter informações sobre como compartilhar vários projetos simultaneamente, consulte [Compartilhar projetos no Gerenciador de projetos](#share-projects-in-the-project-manager).
 
@@ -99,7 +99,7 @@ Para compartilhar o link do projeto com os usuários em sua organização:
 
 1. Selecionar **[!UICONTROL Compartilhar]** > **[!UICONTROL Compartilhar com usuários do Workspace]** e selecione **[!UICONTROL Copiar]** ao lado da **[!UICONTROL Compartilhar por link]** campo.
 
-   ![](assets/share-proj-modal.png)
+   ![O projeto Compartilhar destacando o campo Compartilhar por link.](assets/share-proj-modal.png)
 
 1. Compartilhe o link com usuários em sua organização. Por exemplo, você pode colá-lo em um email, em um site interno e assim por diante.
 
@@ -125,7 +125,7 @@ Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-sha
 >
 >* Um projeto pode se tornar inacessível se muitos usuários tentarem acessar um determinado link ao mesmo tempo. Por padrão, mais de 190 pessoas podem acessar um único link a cada 5 minutos. Se sua organização atingir esse limite, aguarde 5 minutos e tente acessar o link novamente.
 >
->* Se sua organização licencia o Healthcare Shield, você pode compartilhar projetos somente com usuários autenticados por Logon único (SSO) ou pela Adobe ID; não é possível compartilhar projetos com usuários não autenticados. É sua responsabilidade usar esse recurso de acordo com as políticas internas de governança de dados de sua empresa e compartilhar somente links de projetos que contenham Informações de saúde pessoais (PHI) com usuários que tenham as permissões apropriadas.
+>* Se sua organização licencia o Healthcare Shield, você pode compartilhar projetos somente com usuários autenticados por Logon único (SSO) ou pela Adobe ID; não é possível compartilhar projetos com usuários não autenticados. É sua responsabilidade usar este recurso de acordo com as políticas internas de governança de dados de sua empresa e compartilhar somente os links do projeto que contêm Informações de saúde pessoais (PHI) com usuários que têm as permissões apropriadas.
 
 A demonstração em vídeo a seguir e a documentação que a acompanha descrevem as opções associadas ao compartilhamento de um link com qualquer pessoa:
 
@@ -145,7 +145,7 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
    Selecionar essa opção cria um link para o projeto que pode ser compartilhado com qualquer pessoa. Você pode desativar o acesso ao projeto a qualquer momento desativando essa opção.
 
-   O proprietário do projeto também é o proprietário deste link. A propriedade do link pode ser transferida para outro usuário somente quando a propriedade do projeto é transferida, conforme descrito em [Transferir ativos do usuário ou definir expirações da conta](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=en) no Guia de administração do Analytics.
+   O proprietário do projeto também é o proprietário deste link. A propriedade do link pode ser transferida para outro usuário somente quando a propriedade do projeto é transferida, conforme descrito em [Transferir ativos do usuário ou definir expirações da conta](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=pt-BR) no Guia de administração do Analytics.
 
 1. Escolha se deseja habilitar a seguinte opção de segurança (esta opção pode ser controlada pelo administrador de Customer Journey Analytics):
 
@@ -183,7 +183,7 @@ Com os projetos A e B selecionados, os recipients 4 e 7 são adicionados às lis
 * Projeto A: 1, 2, 3, 4, 7
 * Projeto B: 4, 5, 6, 7
 
-![](assets/mult-proj-sharing.png)
+![A janela Adicionar recipients a vários projetos.](assets/mult-proj-sharing.png)
 
 ## Compartilhar componentes integrados
 

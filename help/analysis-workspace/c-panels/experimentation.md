@@ -3,10 +3,10 @@ description: Saiba como analisar os resultados de testes A/B no painel Experimen
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 60%
+source-wordcount: '1905'
+ht-degree: 58%
 
 ---
 
@@ -41,7 +41,7 @@ Nas configurações de visualizações de dados do Customer Journey Analytics, o
 
 Na visualização de dados que contém dados de experimentação, escolha duas dimensões: uma com os dados de experimentação e outra com os dados da variante. Em seguida, rotule essas dimensões com os rótulos **[!UICONTROL Experimento]** e **[!UICONTROL Variante]**.
 
-![rótulo do contexto](assets/context-label.png)
+![Opções de rótulo de contexto para Variante de experimentação e experimentação.](assets/context-label.png)
 
 Sem a presença desses rótulos, o painel Experimento não funciona, pois não haverá experimentos com os quais trabalhar.
 
@@ -49,7 +49,7 @@ Sem a presença desses rótulos, o painel Experimento não funciona, pois não h
 
 1. No Espaço de trabalho do Customer Journey Analytics, arraste o painel Experimentação para um projeto.
 
-![painel de experimento](assets/experiment.png)
+![O painel Experimento foi arrastado para um projeto.](assets/experiment.png)
 
 >[!IMPORTANT]
 >Se a configuração necessária nas visualizações de dados do Customer Journey Analytics não tiver sido concluída, essa mensagem será exibida antes que você possa continuar: &quot;[!UICONTROL Configure as dimensões do experimento e da variante em Visualizações de dados]&quot;.
@@ -74,11 +74,11 @@ Você também recebe um resumo de texto que indica se o experimento é conclusiv
 
 Para cada métrica de sucesso selecionada, uma tabela de forma livre e uma tendência de taxa de conversão serão mostradas.
 
-![saída do experimento](assets/exp-output1.png)
+![A saída da experimentação que mostra uma tabela de forma livre e uma tendência de taxa de conversão.](assets/exp-output1.png)
 
 O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] em comparação com a [!UICONTROL Variante de controle]:
 
-![saída do gráfico de linhas](assets/exp-output2.png)
+![A saída do gráfico de linhas que mostra o desempenho do Controle em comparação com a Variante de controle.](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ O painel de experimentação em Customer Journey Analytics permite analisar dado
 
 A ilustração a seguir contrasta essas situações:
 
-![experimento aleatório](assets/randomize.png)
+![Um diagrama mostrando os dados observacionais e o experimento aleatório.](assets/randomize.png)
 
 Quando você quiser medir o impacto da intervenção X no resultado Y, é possível que a causa real de ambos seja o fator de confusão C. Se os dados não são obtidos por pessoas randomizadas em X, o impacto é mais difícil de medir, e a análise irá explicar explicitamente C. A randomização quebra a dependência de X em C, permitindo-nos medir o efeito de X em Y sem ter que se preocupar com outras variáveis.
 

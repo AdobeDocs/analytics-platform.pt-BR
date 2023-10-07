@@ -3,10 +3,10 @@ description: Saiba como ajustar a densidade da exibição no Analysis Workspace.
 title: Exibir densidade
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
-source-git-commit: ff71d21235bd37da73c0b6c628c395da6cda7659
+source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: '114'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Há três opções para alternar a densidade da exibição com os botões de op�
 - **[!UICONTROL Confortável]**: é um pouco mais ampla do que a versão Compacta.
 - **[!UICONTROL Estendida]** (padrão): é a exibição com a qual você está familiarizado no Espaço de trabalho.
 
-![](assets/view-density.png)
+![As densidades das visualizações Compacta, Confortável e Expandida.](assets/view-density.png)
 
 Para definir a densidade da exibição:
 
