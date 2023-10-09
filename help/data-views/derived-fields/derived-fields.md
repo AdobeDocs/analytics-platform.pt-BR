@@ -3,14 +3,13 @@ title: Campos derivados
 description: Um campo derivado especifica a manipulação de tempo do relatório de campos de esquema e/ou componentes padrão por meio de um conjunto de funções e modelos de função disponíveis.
 solution: Customer Journey Analytics
 feature: Derived Fields
-exl-id: 1ba38aa6-7db4-47f8-ad3b-c5678e5a5974
-source-git-commit: f1935947fe0273e5cdd5752ab7a9c871b02c990d
+exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
 workflow-type: tm+mt
-source-wordcount: '5056'
-ht-degree: 16%
+source-wordcount: '5431'
+ht-degree: 15%
 
 ---
-
 
 # Campos derivados
 
@@ -62,7 +61,7 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 | A | **Nome da regra** | Por padrão, o nome da regra é **Regra X** (X se refere a um número de sequência). Para editar o nome de uma regra, selecione seu nome e digite o novo nome, por exemplo `Query Parameter`. |
 | B | **Nome da função** | O nome da função selecionada para a regra, por exemplo [!UICONTROL ANÁLISE DE URL]. Quando a função é a última na sequência de funções e determina os valores de saída finais, o nome da função é seguido por [!UICONTROL - REALIZAÇÃO FINAL], por exemplo [!UICONTROL ANÁLISE DE URL - SAÍDA FINAL]. <br/>Para mostrar um pop-up com mais informações sobre a função, selecione ![Ícone da ajuda](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Descrição da regra** | Opcionalmente, é possível adicionar uma descrição a uma regra.<br/>Selecionar ![Ícone Mais](assets/More.svg)e selecione **[!UICONTROL ** Adicionar descrição **]** para adicionar uma descrição ou **[!UICONTROL ** Editar descrição **]** para editar uma descrição existente.<br/>Use o editor para inserir uma descrição. Você pode usar a barra de ferramentas para formatar o texto (usando o seletor de estilo, negrito, itálico, sublinhado, direita, esquerda, centralizado, cor, lista de números, lista de marcadores) e adicionar links a informações externas. <br/>Para concluir a edição da descrição, clique fora do editor. |
-| D | **Área de função** | Define a lógica da função. A interface depende do tipo de função. A lista suspensa de [!UICONTROL Campo] ou [!UICONTROL Valor] mostra todas as categorias de campos (regras, campos padrão, campos) disponíveis, com base no tipo de entrada que a função espera. <!-- Alternatively, you can drag and drop a field from the Schema and Standard fields selector on to a Field or Value. When that dragged field is originating from a Lookup dataset, a Lookup function is automatically inserted before the function you define.  See [Function reference](#function-reference) on detailed information for each of the functions supported. --> |
+| D | **Área de função** | Define a lógica da função. A interface depende do tipo de função. A lista suspensa de [!UICONTROL Campo] ou [!UICONTROL Valor] mostra todas as categorias de campos (regras, campos padrão, campos) disponíveis, com base no tipo de entrada que a função espera. Como alternativa, você pode arrastar e soltar um campo do seletor de campos Esquema e Padrão em para um Campo ou Valor. Quando esse campo arrastado se origina de um conjunto de dados de Pesquisa, uma função de Pesquisa é inserida automaticamente antes da função definida. <br/>Consulte [Referência de função](#function-reference) informações detalhadas sobre cada uma das funções suportadas. |
 
 {style="table-layout:auto"}
 
@@ -189,7 +188,7 @@ Aplica condicionais, com base em critérios definidos de um ou mais campos. Esse
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limitações | Saída |
 |---|---|---|---|---|
-| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Se], [!UICONTROL Else If] contêiner:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Critério] (consulte operadores incluídos, com base no tipo de valor selecionado)</li></ul></li><li>[!UICONTROL Em seguida, defina o valor como], [!UICONTROL Caso contrário, defina o valor como]:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Igual a</li><li>Igual a qualquer termo</li><li>Contém a frase</li><li>Contém qualquer termo</li><li>Contém todos os termos</li><li>Começa com</li><li>Começa com qualquer termo</li><li>Termina com</li><li>Termina com qualquer termo</li><li>Não é igual</li><li>Não é igual a nenhum termo</li><li>Não contém a frase</li><li>Não contém nenhum termo</li><li>Não contém todos os termos</li><li>Não começa com</li><li>Não começa com nenhum termo</li><li>Não termina com</li><li>Não termina com nenhum termo</li><li>Está definido</li><li>Não está definido</li></ul><p>Numérico</p><ul><li>Igual a</li><li>Não é igual</li><li>É maior que</li><li>É maior que ou igual a</li><li>É menor que</li><li>É menor que ou igual a</li><li>Está definido</li><li>Não está definido</li></ul><p>Datas</p><ul><li>Igual a</li><li>Não é igual</li><li>É posterior a</li><li>É posterior ou igual a</li><li>É antes</li><li>É anterior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul> | <ul><li>5 funções por campo derivado</li><li>200 operadores por campo derivado. Um exemplo de um único operador é &#39;Domínio de referência contém google&#39;. </li></ul> | <p>Novo campo derivado</p> |
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Se], [!UICONTROL Else If] contêiner:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Critério] (consulte operadores incluídos, com base no tipo de valor selecionado)</li></ul></li><li>[!UICONTROL Em seguida, defina o valor como], [!UICONTROL Caso contrário, defina o valor como]:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Igual a</li><li>Igual a qualquer termo</li><li>Contém a frase</li><li>Contém qualquer termo</li><li>Contém todos os termos</li><li>Começa com</li><li>Começa com qualquer termo</li><li>Termina com</li><li>Termina com qualquer termo</li><li>Não é igual</li><li>Não é igual a nenhum termo</li><li>Não contém a frase</li><li>Não contém nenhum termo</li><li>Não contém todos os termos</li><li>Não começa com</li><li>Não começa com nenhum termo</li><li>Não termina com</li><li>Não termina com nenhum termo</li><li>Está definido</li><li>Não está definido</li></ul><p>Numérico</p><ul><li>Igual a</li><li>Não é igual</li><li>É maior que</li><li>É maior que ou igual a</li><li>É menor que</li><li>É menor que ou igual a</li><li>Está definido</li><li>Não está definido</li></ul><p>Datas</p><ul><li>Igual a</li><li>Não é igual</li><li>É posterior a</li><li>É posterior ou igual a</li><li>É anterior a</li><li>É anterior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul> | <ul><li>5 funções por campo derivado</li><li>200 operadores por campo derivado. Um exemplo de um único operador é &#39;Domínio de referência contém google&#39;. </li></ul> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -482,7 +481,7 @@ Você está coletando [!DNL Hotel ID] em uma dimensão, mas gostaria de criar um
 
 Você define um `Hotel Name` campo derivado. Você usa o [!UICONTROL CLASSIFICAR] para definir uma regra em que você possa classificar valores de [!UICONTROL ID do Hotel] e substitua por novos valores.
 
-Se desejar incluir valores originais que não foram definidos como parte dos valores a serem classificados (por exemplo, ID do Hotel AMS789), selecione **[!UICONTROL Mostrar valores originais]**. Isso garante que o AMS789 fará parte da saída do campo derivado, apesar de esse valor não ser classificado.
+Se desejar incluir valores originais que não foram definidos como parte dos valores a serem classificados (por exemplo, ID do Hotel AMS789), selecione **[!UICONTROL Mostrar valores originais]**. Isso garante que o AMS789 faça parte da saída do campo derivado, apesar de esse valor não ser classificado.
 
 ![Captura de tela da regra de classificação 1](assets/classify-1.png)
 
@@ -694,55 +693,54 @@ Você define um `Email Marketing (updated)` campo derivado. Você usa o [!UICONT
 +++
 
 
-<!-- LOOKUP
+<!-- LOOKUP -->
 
-### Lookup
+### Pesquisa
 
-Lookup values using a field from a lookup dataset and returns value in a new derived field or for further rule processing.
+Valores de pesquisa usando um campo de um conjunto de dados de pesquisa e retorna um valor em um novo campo derivado ou para processamento de regras adicional.
 
-+++ Details
++++ Detalhes
 
-## Specification {#lookup-io}
+## Especificação {#lookup-io}
 
-| Input Data Type | Input | Included Operators | Limit | Output |
+| Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numeric</li><li>Date</li></ul> | <ul><li>[!UICONTROL Field to apply lookup]:</li><ul><li>Rules</li><li>Standard fields</li><li>Fields</li></ul><li>[!UICONTROL Lookup dataset]</li><ul><li>Dataset</li></ul><li>[!UICONTROL Matching key]<ul><li>Rules</li><li>Fields</li></ul></li><li>Values to return<ul><li>Rules</li><li>Fields</li></ul></li></ul> | <p>N/A</p> | <p>3 functions per derived field</p> | <p>New derived field or value for further processing in next rule</p> |
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo para aplicar a pesquisa]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Conjunto de dados de pesquisa]</li><ul><li>Conjunto de dados</li></ul><li>[!UICONTROL Chave correspondente]<ul><li>Regras</li><li>Campos</li></ul></li><li>Valores a serem retornados<ul><li>Regras</li><li>Campos</li></ul></li></ul> | <p>N/D</p> | <p>3 funções por campo derivado</p> | <p>Novo campo ou valor derivado para processamento adicional na próxima regra</p> |
 
 {style="table-layout:auto"}
 
-## Use case {#lookup-uc}
+## Caso de uso {#lookup-uc}
 
-You would like to lookup the activity name using the activity id collected when your customers clicked on a personalized banner shown through Adobe Target. You want to use a lookup dataset with Analytics for Target (A4T) activities containing activity ids and activity names.
+Você gostaria de pesquisar o nome da atividade usando a ID da atividade coletada quando seus clientes clicaram em um banner personalizado exibido por meio do Adobe Target. Você deseja usar um conjunto de dados de pesquisa com atividades do Analytics for Target (A4T) contendo IDs de atividade e nomes de atividade.
 
-### A4T lookup dataset {#lookup-uc-lookup}
+### Conjunto de dados de pesquisa A4T {#lookup-uc-lookup}
 
-| Activity Id | Activity Name |
+| ID da atividade | Nome da atividade |
 |---|---|
-| 415851 | MVT Test Category Pages |
-| 415852 | Luma - Campaign Max 2022 |
-| 402922 | Home Page Banners |
+| 415851 | Páginas de categoria de teste MVT |
+| 415852 | Luma - Campanha Max 2022 |
+| 402922 | Banners da página inicial |
 
 {style="table-layout:auto"}
 
-### Derived field {#lookup-uc-derivedfield}
+### Campo derivado {#lookup-uc-derivedfield}
 
-You define an `Activity Name` derived field. You use the [!UICONTROL LOOKUP] function to define a rule to lookup the value from your collected data, specified in the [!UICONTROL Field to apply lookup] field. You select the lookup dataset from the [!UICONTROL Lookup dataset] list, selecting the identifier field from the [!UICONTROL Matching key list] and the field to return from the [!UICONTROL Values to return] list.
+Você define um `Activity Name` campo derivado. Você usa o [!UICONTROL PESQUISA] para definir uma regra para pesquisar o valor a partir dos dados coletados, especificado no campo [!UICONTROL Campo para aplicar a pesquisa] campo (por exemplo **[!DNL ActivityIdentifier]**). Você seleciona o conjunto de dados de pesquisa na [!UICONTROL Conjunto de dados de pesquisa] lista (por exemplo, **[!DNL New CJA4T Activities]**). Em seguida, você seleciona o campo de identificador (por exemplo, **[!DNL ActivityIdentifier]**) do [!UICONTROL Chave correspondente] e o campo a ser retornado da [!UICONTROL Valores a serem retornados] lista (por exemplo, **[!DNL ActivityName]**).
 
-![Screenshot of the Lowercase rule](assets/lookup.png)
+![Captura de tela da regra Minúsculas](assets/lookup.png)
 
-## More info
+## Mais informações
 
-You can quickly insert a [!UICONTROL Lookup] function in the rule builder, already containing one or more other functions.
+Você pode inserir rapidamente um [!UICONTROL Pesquisa] no construtor de regras, que já contém uma ou mais funções.
 
-  1. Select **[!UICONTROL Schema fields]** from selector.
-  1. Select ![Schema field icon](assets/Smock_Folder_18_N.svg) **[!UICONTROL Lookup datasets]**.
-  1. Select your lookup dataset and find the field you want to use for lookup.
-  1. Drag the lookup field and drop the field on any of the available input fields for a function (for example Case When). When valid, a blue **[!UICONTROL + Add box]** will allow you to drop the field and automatically insert a Lookup function before the function you dropped the lookup field on, and populate the Lookup function with relevant values for all fields.
-     ![Lookup drag](assets/lookup-drag.png) 
+1. Selecionar **[!UICONTROL Campos de esquema]** do seletor.
+1. Selecionar ![Ícone de campo de esquema](assets/Smock_Folder_18_N.svg) **[!UICONTROL Pesquisar conjuntos de dados]**.
+1. Selecione seu conjunto de dados de pesquisa e localize o campo que deseja usar para pesquisa.
+1. Arraste e solte o campo de pesquisa em qualquer um dos campos de entrada disponíveis para uma função (por exemplo, Caso Quando). Quando válida, uma caixa azul, rotulada **[!UICONTROL + Adicionar]**, permite soltar o campo e inserir automaticamente uma função Pesquisa antes da função em que você soltou o campo de pesquisa. A função Lookup inserida é preenchida automaticamente com valores relevantes para todos os campos.
+   ![Arrastar pesquisa](assets/lookup-drag.png)
 
 +++
 
--->
 
 <!-- LOWERCASE -->
 
@@ -854,7 +852,7 @@ Você define um `Cross Channel Interactions` campo derivado. Você usa o [!UICON
 
 ## Mais informações {#merge-fields-moreinfo}
 
-É necessário selecionar o mesmo tipo de campos em uma regra Mesclar campos. Por exemplo, se você selecionar um campo Data, todos os outros campos que deseja mesclar devem ser campos Data.
+Você deve selecionar o mesmo tipo de campos em uma regra Mesclar campos. Por exemplo, se você selecionar um campo Data, todos os outros campos que deseja mesclar devem ser campos Data.
 
 ![Captura de tela da restrição em campos de mesclagem](assets/merge-fields-constraint.png)
 
@@ -949,7 +947,7 @@ O Customer Journey Analytics usa um subconjunto da sintaxe de regex Perl. As seg
 | Sequência de espaço reservado de saída | Descrição |
 | --- | --- |
 | `$&` | Gera o que correspondeu à expressão inteira. |
-| `$n` | Gera o que correspondeu à subexpressão nth. Por exemplo, o `$1` gera a primeira subexpressão. |
+| `$n` | Gera o que correspondeu à subexpressão nth. Por exemplo, `$1` gera a primeira subexpressão. |
 | ``$` `` | Gera o texto entre o fim da última correspondência encontrada (ou o início do texto se nenhuma correspondência anterior foi encontrada) e o início da correspondência atual. |
 | `$+` | Gera o que correspondeu à última subexpressão marcada na expressão regular. |
 | `$$` | Gera o caractere de string `"$"`. |
@@ -1097,7 +1095,7 @@ Você cria um `Product Identifier` campo derivado. Você usa o [!UICONTROL CORTA
 
 ## Caso de uso 2 {#trim-uc2}
 
-Os dados nos nomes de página coletados incluem alguns caracteres especiais incorretos no final do nome da página que precisam ser removidos.
+Os dados nos nomes de página coletados incluem alguns caracteres especiais incorretos no final do nome da página que devem ser removidos.
 
 ### Dados anteriores a {#trim-uc2-databefore}
 
@@ -1259,4 +1257,3 @@ As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 - [Aproveitando ao máximo seus dados: uma estrutura para usar campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
 
 - [Casos de uso de campos derivados do Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
-

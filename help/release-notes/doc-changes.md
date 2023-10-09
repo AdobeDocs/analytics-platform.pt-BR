@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 24e9e4151360597b099a7985a4566b3ca7bfff00
-workflow-type: ht
-source-wordcount: '2651'
-ht-degree: 100%
+source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+workflow-type: tm+mt
+source-wordcount: '2662'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 | --- | --- |
+| **Outubro de 2023** | |
+| Funcionalidade adicional de campos derivados | Atualização da documentação do novo [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) função. |
 | **Setembro de 2023** | |
 | Estrutura de artigos atualizada para o painel Tempo gasto com reprodução de mídia | A pasta chamada Tempo gasto com reprodução de mídia foi removida e seu conteúdo foi combinado em um único artigo: [Painel Tempo gasto com reprodução de mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Essa alteração está mais de acordo com a documentação de outros painéis.</p> |
 | Funcionalidade adicional de campos derivados | Atualização da documentação das novas funções de [`Lowercase`](/help/data-views/derived-fields/derived-fields.md#lowercase) e [`Trim`](/help/data-views/derived-fields/derived-fields.md#trim), e dos recursos de CSV adicionados à função de [`Classify`](/help/data-views/derived-fields/derived-fields.md#classify). |

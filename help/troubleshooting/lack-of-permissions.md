@@ -4,13 +4,13 @@ description: Saiba como solucionar problemas resultantes da falta de permissões
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 feature: Troubleshooting
-source-git-commit: 1905e37b76843a7622af4e874a2d74aceff55384
+exl-id: 341123b9-f4d6-4ef7-96f1-789850261b96
+source-git-commit: 72d42123a3c9463514ada584530ad959e99d5c94
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '166'
 ht-degree: 4%
 
 ---
-
 
 # Falta de permissões
 
@@ -21,7 +21,7 @@ Como exemplo, depois de criar um [Conexão](../connections/overview.md) e [Visua
 
 >[!BEGINSHADEBOX]
 
-*[!UICONTROL Algo deu errado e não foi possível carregar campos de esquema. Tente novamente.]*
+*[!UICONTROL Algo deu errado ao recuperar políticas DULE. Verifique as permissões, políticas ou rótulos da conta. Mensagem: Proibido.]*
 
 >[!ENDSHADEBOX]
 
@@ -41,5 +41,3 @@ Para corrigir esse erro, você deve ter privilégios de administrador de sistema
 1. Assegurar **[!UICONTROL Gerenciar políticas de uso de dados]** e **[!UICONTROL Exibir políticas de uso de dados]** são adicionados à **[!UICONTROL Governança de dados]** recipiente.
 
 1. Selecionar **[!UICONTROL Salvar]** para salvar as alterações.
-
-
