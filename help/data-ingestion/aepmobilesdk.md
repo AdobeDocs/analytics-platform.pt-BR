@@ -4,7 +4,7 @@ description: Explicar como assimilar dados no Customer Journey Analytics por mei
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
-source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
+source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
 workflow-type: tm+mt
 source-wordcount: '3435'
 ht-degree: 61%
@@ -55,15 +55,17 @@ Para configurar o esquema:
 
 1. Selecione **[!UICONTROL Criar esquema]**.
 .
-1. Na etapa Selecionar uma classe do assistente Criar esquema, selecione **[!UICONTROL Evento de experiência]**.
+1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
-   ![Criar um esquema](./assets/create-ee-schema-wizard-step-1.png)
+   1. Selecionar **[!UICONTROL Evento de experiência]**.
 
-   >[!INFO]
-   >
-   >    Um esquema de Evento de experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+      ![Criar um esquema](./assets/create-ee-schema-wizard-step-1.png)
 
-   Selecione **[!UICONTROL Próximo]**.
+      >[!INFO]
+      >
+      >    Um esquema de Evento de experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+
+   1. Selecione **[!UICONTROL Próximo]**.
 
 
 1. No [!UICONTROL Nomear e revisar a etapa] do [!UICONTROL Criar esquema] assistente:

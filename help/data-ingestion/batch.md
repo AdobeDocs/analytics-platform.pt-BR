@@ -4,7 +4,7 @@ description: Explica como assimilar e usar dados em lote no Customer Journey Ana
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
+source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
 workflow-type: tm+mt
 source-wordcount: '1977'
 ht-degree: 87%
@@ -50,15 +50,17 @@ Para configurar o esquema:
 
 1. Selecione **[!UICONTROL Criar esquema]**.
 .
-1. Na etapa Selecionar uma classe do assistente Criar esquema, selecione **[!UICONTROL Perfil individual]**.
+1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
-   ![Criar um esquema](./assets/create-pr-schema-wizard-step-1.png)
+   1. Selecionar **[!UICONTROL Perfil individual]**.
 
-   >[!INFO]
-   >
-   >    Um esquema de Evento de experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+      ![Criar um esquema](./assets/create-pr-schema-wizard-step-1.png)
 
-   Selecione **[!UICONTROL Próximo]**.
+      >[!INFO]
+      >
+      >    Um esquema de Evento de experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+
+   1. Selecione **[!UICONTROL Próximo]**.
 
 
 1. No [!UICONTROL Nomear e revisar a etapa] do [!UICONTROL Criar esquema] assistente:
