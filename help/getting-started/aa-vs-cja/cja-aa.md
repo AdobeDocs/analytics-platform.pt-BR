@@ -4,14 +4,14 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: e77dbb491178ffbe26fcec21d8b456cc3befbd1d
-workflow-type: ht
-source-wordcount: '2140'
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+workflow-type: tm+mt
+source-wordcount: '2139'
 ht-degree: 100%
 
 ---
 
-# Suporte a recursos do Adobe Customer Journey Analytics
+# Suporte a recursos do Customer Journey Analytics
 
 As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, parcialmente compatíveis ou não compatíveis no Customer Journey Analytics e quais recursos do Customer Journey Analytics não são compatíveis nem estão disponíveis no Adobe Analytics. Essas listas serão alteradas com o tempo, à medida que recursos forem adicionados ao Customer Journey Analytics.
 

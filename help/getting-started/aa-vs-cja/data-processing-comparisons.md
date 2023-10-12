@@ -3,14 +3,14 @@ title: Comparar o processamento de dados entre os recursos de relatório do Adob
 description: Entender as diferenças no processamento de dados dos vários recursos de relatório
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
-workflow-type: ht
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%
 
 ---
 
-# Compare o processamento de dados do Adobe Analytics e do Customer Journey Analytics.
+# Compare o processamento de dados do Adobe Analytics e do Customer Journey Analytics
 
 Geralmente, é necessário ter a capacidade de processar dados antes que sejam úteis para os relatórios. Você pode processar esses dados em vários estágios na jornada, desde a coleta de dados até a geração do relatório ou da visualização.
 

@@ -3,9 +3,9 @@ description: Saiba mais sobre
 title: Atribuição e tipo de métrica
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 7f3412dc852ccae1ad5e122c200da5567ba89e87
+source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '215'
 ht-degree: 37%
 
 ---
@@ -27,7 +27,7 @@ Para especificar o tipo de métrica ao criar uma métrica calculada:
    | Tipo de métrica | Definição |
    |---|---|
    | Padrão | Essas métricas são as mesmas métricas usadas nos relatórios padrão do [!DNL Analytics]. Se uma fórmula consistir de uma única métrica padrão, ela exibirá dados idênticos à sua métrica não calculada equivalente. Métricas padrão são úteis ao criar métricas calculadas específicas para cada item de linha. Por exemplo, [Pedidos] / [Sessões] pega os pedidos de um item de linha específico e divide pelo número de sessões desse item de linha específico. |
-   | Total geral | Use o total geral para o período do relatório em cada item de linha. Se uma fórmula consistir em uma única métrica de total geral, ela exibirá o mesmo número total geral em cada item da linha. As métricas de total geral são úteis para criar métricas calculadas que se comparam aos dados totais do site. Por exemplo, [Pedidos] / [Total de sessões] mostra a proporção de pedidos em relação a TODAS as sessões no site, não apenas as sessões para o item de linha específico. |
+   | Total geral | Use o total geral para o período do relatório em cada item de linha. Se uma fórmula consistir em uma única métrica de total geral, ela exibirá o mesmo número total geral em cada item da linha. As métricas totais gerais são úteis para criar métricas calculadas que se comparam com os dados totais. Por exemplo, [Pedidos] / [Total de sessões] mostra a proporção de pedidos em relação a TODAS as sessões em um canal, não apenas as sessões para o item de linha específico. |
 
 ## Atribuição
 

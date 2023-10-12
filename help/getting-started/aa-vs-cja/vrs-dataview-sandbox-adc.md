@@ -1,16 +1,16 @@
 ---
-title: Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da Adobe Experience Platform e o conector de origem do Analytics
+title: Conjuntos de relatórios virtuais, visualizações de dados, sandboxes do Adobe Experience Platform e o conector de origem do Analytics
 description: Saiba mais sobre ambientes de relatórios virtuais e sandbox.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
-workflow-type: ht
-source-wordcount: '768'
-ht-degree: 100%
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 90%
 
 ---
 
-# Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da Adobe Experience Platform e o conector de origem do Analytics
+# Conjuntos de relatórios virtuais, visualizações de dados, sandboxes do Adobe Experience Platform e o conector de origem do Analytics
 
 A Adobe oferece uma variedade de meios para criar ambientes de relatórios virtuais e sandbox. É útil compreender as semelhanças e diferenças entre os seguintes recursos e como se relacionam com o [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR):
 
@@ -18,7 +18,7 @@ A Adobe oferece uma variedade de meios para criar ambientes de relatórios virtu
 * Visualizações de dados do Customer Journey Analytics
 * Sandboxes da Adobe Experience Platform
 
-## Conjuntos de relatórios virtuais (VRS) do Adobe Analytics
+## Conjuntos de relatórios virtuais do Adobe Analytics
 
 Para obter mais informações, consulte: [Visão geral dos conjuntos de relatórios virtuais](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=pt-BR).
 
@@ -28,10 +28,10 @@ Um conjunto de relatórios virtual:
 * Pode ser aplicado tanto a dados históricos quanto a novos de maneira não destrutiva.
 * Permite criar uma ou várias exibições virtuais sobre um conjunto de relatórios do Adobe Analytics para uso por diferentes equipes comerciais.
 * Pode ser usado para controlar o acesso e preparar diferentes tipos de dados para diferentes usuários no Adobe Analytics.
-* Fornece recursos de [processamento de tempo do relatório](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=pt-BR) opcionais para o Adobe Analytics. Nesse caso, um VRS pode ser usado para criar uma definição personalizada para “visita”.
+* Fornece recursos de [processamento de tempo do relatório](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=pt-BR) opcionais para o Adobe Analytics. Nesse caso, um conjunto de relatórios virtual pode ser usado para criar uma definição personalizada para &quot;visita&quot;.
 * É aplicado no tempo de execução do relatório, de modo semelhante à avaliação do segmento. Isso ocorre _após_ os dados serem coletados e armazenados no Adobe Analytics.
 * É obrigatório para a [Análise entre dispositivos](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=pt-BR) no Adobe Analytics.
-* Tem disponível o mesmo número de variáveis para uso como um Conjunto de relatórios padrão do Analytics (250 eVars, 250 props, 1000 eventos), embora a curadoria de VRS possa limitar quais variáveis são expostas aos usuários.
+* Tem disponível o mesmo número de variáveis para uso como um Conjunto de relatórios padrão do Analytics (250 eVars, 250 props, 1000 eventos), embora a curadoria do conjunto de relatórios virtual possa limitar quais variáveis são expostas aos usuários.
 * Permite opções de calendário personalizadas.
 
 Um conjunto de relatórios virtual não:

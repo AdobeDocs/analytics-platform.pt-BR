@@ -1,12 +1,12 @@
 ---
-title: Regras de processamento, VISTA e classificações em relação ao preparo de dados do conector de origem do Analytics
+title: Regras de processamento, VISTA e classificações em relação ao Preparo de dados para o conector de origem do Analytics
 description: Saiba mais sobre a transformação de dados usando regras de processamento e VISTA em relação ao uso do Preparo de dados
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
-workflow-type: ht
+source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
