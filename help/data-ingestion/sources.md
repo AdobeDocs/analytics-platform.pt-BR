@@ -4,10 +4,10 @@ description: Explica como assimilar e usar dados usando conectores de origem no 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 90%
+source-wordcount: '1980'
+ht-degree: 87%
 
 ---
 
@@ -51,28 +51,36 @@ Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
-2. Selecione **[!UICONTROL Criar esquema]**. Selecione **[!UICONTROL Perfil individual XDM]** na lista de opções.
+1. Selecione **[!UICONTROL Criar esquema]**.
+.
+1. Na etapa Selecionar uma classe do assistente Criar esquema, selecione **[!UICONTROL Perfil individual]**.
 
-   ![Criar um esquema](./assets/create-schema.png)
+   ![Criar um esquema](./assets/create-pr-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero). Um esquema de evento de experiência é usado para modelar a variável _comportamento_ de um perfil (como exibição de página, adicionar ao carrinho).
+   >    Um esquema de Evento de experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+
+   Selecione **[!UICONTROL Próximo]**.
 
 
-3. Na tela [!UICONTROL Esquema sem título]:
+1. No [!UICONTROL Nomear e revisar a etapa] do [!UICONTROL Criar esquema] assistente:
 
-   1. Insira um nome de exibição para o esquema e uma descrição (opcional).
+   1. Insira um **[!UICONTROL Nome de exibição do esquema]** para o esquema e (opcional) uma **[!UICONTROL Descrição]**.
 
-      ![Dê um nome ao esquema](./assets/name-loyalty-schema.png)
+      ![Dê um nome ao esquema](./assets/create-pr-schema-wizard-step-2.png)
 
-   2. Selecione **[!UICONTROL + Adicionar]** em [!UICONTROL Grupos de campos].
+   1. Selecione **[!UICONTROL Concluir]**.
+
+1. Na guia Estrutura de Esquema de Exemplo:
+
+   1. Selecione **[!UICONTROL + Adicionar]** em [!UICONTROL Grupos de campos].
 
       ![Adicione um grupo de campos](./assets/add-field-group-button.png)
 
       Grupos de campos são coleções reutilizáveis de objetos e atributos que permitem estender seus esquemas facilmente.
 
-   3. Na caixa de diálogo [!UICONTROL Adicionar grupos de campos], selecione o grupo de campos **[!UICONTROL Detalhes de fidelidade]** na lista.
+   1. Na caixa de diálogo [!UICONTROL Adicionar grupos de campos], selecione o grupo de campos **[!UICONTROL Detalhes de fidelidade]** na lista.
 
       ![Grupo de campos ExperienceEvent do SDK da Web da AEP](./assets/loyalty-fieldgroup.png)
 
@@ -82,13 +90,13 @@ Para configurar o esquema:
 
       Selecione **[!UICONTROL Voltar]** para fechar a visualização.
 
-   4. Selecione **[!UICONTROL Adicionar grupos de campos]**.
+   1. Selecione **[!UICONTROL Adicionar grupos de campos]**.
 
-4. Selecione **[!UICONTROL +]** ao lado do nome do esquema no painel [!UICONTROL Estrutura].
+1. Selecione **[!UICONTROL +]** ao lado do nome do esquema no painel [!UICONTROL Estrutura].
 
    ![Botão Adicionar campo de esquema de exemplo](./assets/example-loalty-schema-plus.png)
 
-5. No painel [!UICONTROL Propriedades do campo], digite `Identification` como nome, **[!UICONTROL Identificação]** como [!UICONTROL Nome de exibição], selecione **[!UICONTROL Objeto]** como [!UICONTROL Tipo] e selecione **[!UICONTROL Perfil Core v2]** como [!UICONTROL Grupo de campos].
+1. No painel [!UICONTROL Propriedades do campo], digite `Identification` como nome, **[!UICONTROL Identificação]** como [!UICONTROL Nome de exibição], selecione **[!UICONTROL Objeto]** como [!UICONTROL Tipo] e selecione **[!UICONTROL Perfil Core v2]** como [!UICONTROL Grupo de campos].
 
    ![Objeto de identificação](./assets/identifcation-loyalty-field.png)
 
@@ -96,7 +104,7 @@ Para configurar o esquema:
 
    Selecione **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
-6. Selecione o campo **[!UICONTROL email]** no objeto de identificação que você acabou de adicionar e selecione **[!UICONTROL Identidade]** e **[!UICONTROL Email]** do [!UICONTROL Namespace de identidade] no painel [!UICONTROL Propriedades do campo].
+1. Selecione o campo **[!UICONTROL email]** no objeto de identificação que você acabou de adicionar e selecione **[!UICONTROL Identidade]** e **[!UICONTROL Email]** do [!UICONTROL Namespace de identidade] no painel [!UICONTROL Propriedades do campo].
 
    ![Especificar email como identidade](./assets/specify-email-loyalty-id.png)
 
@@ -104,7 +112,7 @@ Para configurar o esquema:
 
    Selecione **[!UICONTROL Aplicar]**. Você vê que um ícone de impressão digital aparece no atributo de email.
 
-7. Selecione o nível raiz do esquema (com o nome do esquema) e selecione a opção **[!UICONTROL Perfil]**.
+1. Selecione o nível raiz do esquema (com o nome do esquema) e selecione a opção **[!UICONTROL Perfil]**.
 
    Você deve habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
@@ -116,7 +124,7 @@ Para configurar o esquema:
 
    ![Habilitar esquema para perfil](./assets/enable-for-profile.png)
 
-8. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
+1. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
 
 Você criou um esquema mínimo que modela os dados de fidelidade que podem ser assimilados na Adobe Experience Platform. O esquema permite que os perfis sejam identificados usando o endereço de email. Ao ativar o esquema para perfil, você garante que os dados da fonte de transmissão sejam adicionados ao Perfil do cliente em tempo real.
 

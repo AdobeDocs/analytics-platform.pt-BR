@@ -3,10 +3,11 @@ title: Assimilar dados por meio da API do servidor de rede de borda da Adobe Exp
 description: Explicar como assimilar dados no Customer Journey Analytics por meio da API do servidor da rede de borda da Adobe Experience Platform e da rede de borda
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
+source-git-commit: 7ed28afa9d98a581e2d648dcfb438f960900f602
 workflow-type: tm+mt
-source-wordcount: '2329'
-ht-degree: 62%
+source-wordcount: '2353'
+ht-degree: 60%
 
 ---
 
@@ -52,28 +53,36 @@ Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
-2. Selecione **[!UICONTROL Criar esquema]**. Selecione **[!UICONTROL XDM ExperienceEvent]** na lista de opções.
+1. Selecione **[!UICONTROL Criar esquema]**.
+.
+1. Na etapa Selecionar uma classe do assistente Criar esquema, selecione **[!UICONTROL Evento de experiência]**.
 
-   ![Criar um esquema](./assets/create-ee-schema.png)
+   ![Criar um esquema](./assets/create-ee-schema-wizard-step-1.png)
 
    >[!INFO]
    >
-   >    Um esquema de Evento de experiência é usado para modelar o _comportamento_ de um perfil (como alcançar um nível no jogo, por exemplo). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+   >    Um esquema de Evento de experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+
+   Selecione **[!UICONTROL Próximo]**.
 
 
-3. Na tela [!UICONTROL Esquema sem título]:
+1. No [!UICONTROL Nomear e revisar a etapa] do [!UICONTROL Criar esquema] assistente:
 
-   1. Insira um nome de exibição para o esquema e uma descrição (opcional).
+   1. Insira um **[!UICONTROL Nome de exibição do esquema]** para o esquema e (opcional) uma **[!UICONTROL Descrição]**.
 
-      ![Dê um nome ao esquema](./assets/name-schema.png)
+      ![Dê um nome ao esquema](./assets/create-ee-schema-wizard-step-2.png)
 
-   2. Selecione **[!UICONTROL + Adicionar]** em [!UICONTROL Grupos de campos].
+   1. Selecione **[!UICONTROL Concluir]**.
+
+1. Na guia Estrutura de Esquema de Exemplo:
+
+   1. Selecione **[!UICONTROL + Adicionar]** em [!UICONTROL Grupos de campos].
 
       ![Adicione um grupo de campos](./assets/add-field-group-button.png)
 
       Grupos de campos são coleções reutilizáveis de objetos e atributos que permitem estender facilmente o esquema.
 
-   3. No [!UICONTROL Adicionar grupos de campos] , selecione a **[!UICONTROL Luz oculta]** grupo de campos na lista. Este grupo de campo é criado para rastrear o progresso do usuário jogando um jogo fictício intitulado Blinding Light em um console.
+   1. No [!UICONTROL Adicionar grupos de campos] , selecione a **[!UICONTROL Luz oculta]** grupo de campos na lista. Este grupo de campo é criado para rastrear o progresso do usuário jogando um jogo fictício intitulado Blinding Light em um console.
 
       ![Grupo de campos Luz Ocultadora](assets/schema-fieldgroup-blindinglight.png)
 
@@ -83,13 +92,13 @@ Para configurar o esquema:
 
       Selecione **[!UICONTROL Voltar]** para fechar a visualização.
 
-   4. Selecione **[!UICONTROL Adicionar grupos de campos]**.
+   1. Selecione **[!UICONTROL Adicionar grupos de campos]**.
 
-4. Selecionar **[!UICONTROL +]** ao lado do nome do esquema.
+1. Selecionar **[!UICONTROL +]** ao lado do nome do esquema.
 
    ![Botão Adicionar campo de esquema de exemplo](./assets/example-gamingschema-plus.png)
 
-5. No [!UICONTROL Propriedades do campo] , insira `identification` como o [!UICONTROL Nome do campo], **[!UICONTROL Identificação]** como o [!UICONTROL Nome de exibição], selecione **[!UICONTROL Objeto]** como o [!UICONTROL Tipo] e selecione **[!UICONTROL ExperienceEvent Core v2.1]** como o [!UICONTROL Grupo de campos].
+1. No [!UICONTROL Propriedades do campo] , insira `identification` como o [!UICONTROL Nome do campo], **[!UICONTROL Identificação]** como o [!UICONTROL Nome de exibição], selecione **[!UICONTROL Objeto]** como o [!UICONTROL Tipo] e selecione **[!UICONTROL ExperienceEvent Core v2.1]** como o [!UICONTROL Grupo de campos].
 
    ![Objeto de identificação](./assets/identification-field-gaming.png)
 
@@ -97,7 +106,7 @@ Para configurar o esquema:
 
    Selecione **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
-6. Selecione o campo **[!UICONTROL ecid]** no objeto de identificação que você acabou de adicionar e selecione **[!UICONTROL Identidade]** e **[!UICONTROL Identidade principal]** e **[!UICONTROL ECID]** do [!UICONTROL Namespace de identidade] no painel direito.
+1. Selecione o campo **[!UICONTROL ecid]** no objeto de identificação que você acabou de adicionar e selecione **[!UICONTROL Identidade]** e **[!UICONTROL Identidade principal]** e **[!UICONTROL ECID]** do [!UICONTROL Namespace de identidade] no painel direito.
 
    ![Especificar ECID como identidade](./assets/specify-identity-gaming.png)
 
@@ -105,7 +114,7 @@ Para configurar o esquema:
 
    Selecione **[!UICONTROL Aplicar]**. Você verá um ícone de impressão digital no atributo ecid.
 
-7. Selecione o **[!UICONTROL email]** no objeto de identificação que você acabou de adicionar e selecione **[!UICONTROL Identidade]** e **[!UICONTROL Email]** na lista [!UICONTROL Namespace de identidade] no painel [!UICONTROL Propriedades do campo].
+1. Selecione o **[!UICONTROL email]** no objeto de identificação que você acabou de adicionar e selecione **[!UICONTROL Identidade]** e **[!UICONTROL Email]** na lista [!UICONTROL Namespace de identidade] no painel [!UICONTROL Propriedades do campo].
 
    ![Especificar email como identidade](./assets/specify-email-identity-gaming.png)
 
@@ -115,7 +124,7 @@ Para configurar o esquema:
 
    Selecione **[!UICONTROL Salvar]**.
 
-8. Selecione o elemento raiz do esquema que exibe o nome dele e selecione a opção **[!UICONTROL Perfil]**.
+1. Selecione o elemento raiz do esquema que exibe o nome dele e selecione a opção **[!UICONTROL Perfil]**.
 
    Você deve habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
@@ -127,7 +136,7 @@ Para configurar o esquema:
 
    ![Habilitar esquema para perfil](./assets/enable-for-profile.png)
 
-9. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
+1. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
 
 Você criou um esquema mínimo que modela os dados que você pode capturar do seu jogo. O esquema permite que os perfis sejam identificados usando a Experience Cloud Identity e o endereço de email. Ao ativar o esquema para perfil, você garante que os dados capturados do seu jogo de console sejam adicionados ao Perfil do cliente em tempo real.
 
