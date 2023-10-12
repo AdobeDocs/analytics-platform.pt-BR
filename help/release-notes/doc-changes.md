@@ -4,7 +4,7 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: bf1e14fc0ecfdab3ff7032133d05ab0f40f123d6
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 99%
@@ -20,7 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Outubro de 2023** | |
-| Comparação com o Adobe Analytics | Uma página de visão geral foi adicionada como introdução para comparar e entender as diferenças entre o Customer Journey Analytics e o Adobe Analytics. |
+| Comparação com o Adobe Analytics | Adição de um [página de visão geral](../getting-started/aa-vs-cja/overview.md) como uma introdução sobre como comparar e entender as diferenças entre o Customer Journey Analytics e o Adobe Analytics. |
 | Funcionalidade adicional de campos derivados | Atualização da documentação do novo [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) função. |
 | **Setembro de 2023** | |
 | Estrutura de artigos atualizada para o painel Tempo gasto com reprodução de mídia | A pasta chamada Tempo gasto com reprodução de mídia foi removida e seu conteúdo foi combinado em um único artigo: [Painel Tempo gasto com reprodução de mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md). <p>Essa alteração está mais de acordo com a documentação de outros painéis.</p> |

@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
+source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -44,6 +44,6 @@ O Customer Journey Analytics e Adobe Analytics têm diversas semelhanças. Por e
 * [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md)
 * [Comparar terminologia de dados do Analytics transmitidos pelo conector de origem do Analytics](/help/getting-started/aa-vs-cja/terminology.md)
 * [Comparar o processamento de dados entre os recursos de relatório do Adobe Analytics e do Customer Journey Analytics](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)
-* [Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da Adobe Experience Platform e o conector de origem do Analytics](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+* [Conjuntos de relatórios virtuais, visualizações de dados, sandboxes do Adobe Experience Platform e o conector de origem do Analytics](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 * [Regras de processamento, VISTA e classificações em relação ao preparo de dados](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)
 * [AAID, ECID, AACUSTOMID e o conector de origem do Analytics](/help/getting-started/aa-vs-cja/aaid-ecid-adc.md)
