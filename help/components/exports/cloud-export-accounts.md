@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Configurar contas de exportação da nuvem
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 9662123d641999b1a38a9f0c0a6437c3f271c60b
+source-git-commit: 02174836d246e6e7c4bf2056a69b8cfeb35ed981
 workflow-type: tm+mt
-source-wordcount: '1573'
-ht-degree: 5%
+source-wordcount: '1783'
+ht-degree: 4%
 
 ---
 
@@ -65,9 +65,31 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
    ![Zona de aterrissagem de dados da AEP da caixa de diálogo Exportar conta](assets/export-account-aep.png)
 
-1. Copie o conteúdo de [!UICONTROL **URI SAS**] para a área de transferência. Use esse URI SAS para acessar os dados exportados do Analysis Workspace da Zona de aterrissagem da AEP.
+1. Copie o conteúdo de [!UICONTROL **URI SAS**] para a área de transferência.
 
-1. Selecionar [!UICONTROL **OK**].
+   Você usará esse URI SAS para acessar os dados exportados do Analysis Workspace da Zona de aterrissagem de dados da AEP.
+
+1. No Adobe Experience Platform, configure o contêiner da Data Landing Zone para usar o URI SAS copiado.
+
+   >[!NOTE]
+   >
+   >Como a conta da Zona de aterrissagem de dados da AEP é baseada no Azure, a maneira mais fácil de acessar os relatórios exportados para a Zona de aterrissagem de dados da AEP é usando o Azure Storage Explorer. As etapas a seguir usam esse método.
+
+   1. Caso ainda não o tenha feito, faça download da [Gerenciador de Armazenamento do Microsoft Azure](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. Na documentação do Adobe Experience Platform, siga as etapas descritas em [Conecte seu contêiner de Zona de aterrissagem de dados ao Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#connect-your-data-landing-zone-container-to-azure-storage-explorer).
+
+      Você pode ignorar as tarefas descritas nas seções [Recupere as credenciais da Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#retrieve-dlz-credentials) e [Atualizar credenciais da Zona de aterrissagem de dados](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=en#update-dlz-credentials), pois o URI que você copiou contém essas credenciais.
+
+   1. Ao seguir a documentação do Adobe Experience Platform e chegar à página [!UICONTROL **URL SAS do contêiner de blob**] cole o URI SAS que você copiou na Etapa 3.
+
+      ![Campo de URL SAS](assets/blob-container-sas-uri.png)
+
+   1. Selecionar [!UICONTROL **Próxima**] > [!UICONTROL **Conectar**].
+
+1. No Customer Journey Analytics, no [!UICONTROL **Exportar conta criada**] , selecione [!UICONTROL **OK**].
+
+   ![Zona de aterrissagem de dados da AEP da caixa de diálogo Exportar conta](assets/export-account-aep.png)
 
 1. Continuar com [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
 

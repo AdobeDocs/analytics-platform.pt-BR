@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configurar locais de exportação da nuvem
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 34588ccd39d7464387197a0b4bfd6a9e416bd9c0
+source-git-commit: 3c1e256bb2197ed844d699e4a28076b014566b99
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1497'
 ht-degree: 4%
 
 ---
@@ -66,6 +66,21 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 1. Selecione [!UICONTROL **Salvar**].
 
 1. Agora é possível exportar dados do Analysis Workspace para a conta e o local configurados. Para obter informações sobre como exportar dados para a nuvem, consulte [Exportar dados do projeto para a nuvem](/help/analysis-workspace/export/export-cloud.md).
+
+1. A maneira mais fácil de acessar seus dados na Zona de aterrissagem de dados da AEP é usar o Microsoft Azure Storage Explorer. Essa é a mesma ferramenta usada nas instruções para configurar o [Conta da Zona de aterrissagem de dados da AEP](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+
+   1. Abra o [Gerenciador de Armazenamento do Microsoft Azure](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
+
+   1. Ir para [!UICONTROL **Contas de Armazenamento**] > [!UICONTROL **(Contêineres Anexados)**] > [!UICONTROL **Contêineres de blob**] > **[!UICONTROL cjaexport-_número_]**>*** your_container_name ***.
+
+      >[!NOTE]
+      >
+      >O nome da pasta **[!UICONTROL cjaexport-_número_]**é o nome padrão fornecido pelo Azure Storage Explorer. Se você tiver apenas uma única conexão associada ao URI do SAS (o que é normal), o nome dessa pasta será&#x200B;**[!UICONTROL cjaexport-1]**.
+
+
+      ![Acessar arquivos no Azure Storage Explorer](assets/azure-storage-explorer-access.png)
+
+   1. Selecione a exportação que deseja baixar e selecione [!UICONTROL **Baixar**] para baixar.
 
 ### Amazon S3 Role ARN
 
