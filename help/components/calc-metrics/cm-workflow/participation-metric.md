@@ -3,9 +3,9 @@ description: Com o Criador de métricas calculadas, qualquer um pode criar uma m
 title: Métrica de participação
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: 6a9cae93011447fff0f74ca4ae15178e0a1f36aa
+source-git-commit: e7019722871dfac60408748aa183ca6d76f4993a
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '274'
 ht-degree: 6%
 
 ---
@@ -18,12 +18,12 @@ Esse tipo de informação pode ser útil para qualquer proprietário de conteúd
 
 >[!NOTE]
 >
->Métricas com outros modelos de atribuição, como Participação, também podem ser criadas por administradores como parte de um [visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=pt-BR). O exemplo abaixo mostra como eles podem ser criados por qualquer usuário com acesso ao construtor de métricas calculadas no Workspace.
+>Métricas com outros modelos de atribuição, como Participação, também podem ser criadas por administradores como parte de um [visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=pt-BR). Consulte [Configurações do componente de Atribuição](../../../data-views/component-settings/attribution.md) para obter mais detalhes.<br/>O exemplo abaixo mostra como uma métrica de participação pode ser criada por qualquer usuário com acesso ao construtor de métricas calculadas no Workspace.
 
 
 1. Comece a criar uma métrica, conforme descrito em [Criar métricas](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
-1. No Criador de métricas calculadas, nomeie a métrica como &quot;Participação&quot; ou algo semelhante.
-1. Arraste uma métrica contendo um evento bem-sucedido, por exemplo, &quot;Pedidos&quot;, para a tela Definição.
+1. No Criador de métricas calculadas, nomeie a métrica `Participation` ou algo parecido.
+1. Arraste uma métrica contendo um evento bem-sucedido, por exemplo [!DNL Orders], no [!UICONTROL Definição] tela.
 1. Selecionar ![Engrenagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) para a métrica.
 1. Na janela pop-up exibida, selecione **[!UICONTROL Usar um modelo de atribuição não padrão]** para definir o [modelo de atribuição](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) desse evento para **[!UICONTROL Participação]** e selecione **[!UICONTROL Session]** para o [!UICONTROL Janela de pesquisa]. Selecionar **[!UICONTROL Aplicar]** para confirmar.
 
