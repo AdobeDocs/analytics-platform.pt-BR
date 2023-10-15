@@ -3,10 +3,10 @@ title: Exibir atividade de relatórios no Gerenciador de atividades de relatóri
 description: Saiba mais sobre como usar o Gerente de atividade de relatórios para diagnosticar e corrigir problemas de capacidade durante o pico dos relatórios.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: dba42bedd14c4c6d958feab9a1ebdc137d489f32
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 17%
+source-wordcount: '1731'
+ht-degree: 16%
 
 ---
 
@@ -42,26 +42,26 @@ Para obter mais informações sobre o Gerente de atividades de relatórios, incl
 
    | Elemento da interface | Descrição |
    | --- | --- |
-   | Conexão do **** | A conexão cuja atividade de relatório você está monitorando. |
-   | **[!UICONTROL Conjuntos de relatórios virtuais]** | Mostra todos os conjuntos de relatórios virtuais que são alimentados para esse conjunto de relatórios base. Os conjuntos de relatórios virtuais adicionam complexidade às solicitações de relatórios devido a níveis adicionais de filtragem e segmentação aplicadas. Todas as solicitações provenientes dos conjuntos de relatórios virtuais são combinadas no conjunto de relatório base.<p>Por exemplo, se você tiver 10 solicitações provenientes de 5 conjuntos de relatórios virtuais, são 50 solicitações no conjunto de relatórios base. Dessa forma, você pode atingir rapidamente a capacidade. |
-   | **[!UICONTROL Utilização da capacidade]** | A porcentagem da capacidade de relatório do conjunto de relatórios que está sendo usada, em tempo real. <p>**Nota** Uma capacidade de uso de 100% não necessariamente sugere que você deve começar a cancelar imediatamente as solicitações de relatórios. A capacidade de uso de 100% pode estar íntegra se o tempo médio de espera for razoável. Por outro lado, a capacidade de uso de 100% pode sugerir um problema se o número de solicitações em fila também estiver crescendo.</p> |
+   | **[!UICONTROL Conexão]** | A conexão cuja atividade de relatório você está monitorando. |
+   | **[!UICONTROL Visualizações de dados]** | Mostra todas as visualizações de dados que são alimentadas na conexão. As visualizações de dados adicionam complexidade às solicitações de relatórios devido a níveis adicionais de filtragem e segmentação aplicadas. Todas as solicitações provenientes da visualização de dados são combinadas na conexão.<p>Por exemplo, se você tiver 10 solicitações provenientes de 5 visualizações de dados, são 50 solicitações na conexão. Dessa forma, você pode atingir rapidamente a capacidade. |
+   | **[!UICONTROL Utilização da capacidade]** | A porcentagem da capacidade de relatório da conexão que está sendo usada, em tempo real. <p>**Nota** Uma capacidade de uso de 100% não necessariamente sugere que você deve começar a cancelar imediatamente as solicitações de relatórios. A capacidade de uso de 100% pode estar íntegra se o tempo médio de espera for razoável. Por outro lado, a capacidade de uso de 100% pode sugerir um problema se o número de solicitações em fila também estiver crescendo.</p> |
    | **[!UICONTROL Solicitações na fila]** | O número de solicitações aguardando para serem processadas. <!-- ??? --> |
    | **[!UICONTROL Tempo de espera na fila]** | O tempo médio de espera antes do início do processamento das solicitações. <!-- ???? --> |
-   | **[!UICONTROL Status]** | Os status possíveis são: <ul><li>[!UICONTROL **Ativo**] (azul): os relatórios foram executados no conjunto de relatórios e a atividade dele está sendo monitorada.</li><li>[!UICONTROL **Inativo**] (cinza): nenhum relatório foi executado no conjunto de relatórios. Esse status é exibido somente quando os conjuntos de relatórios são criados pela primeira vez.</li></ul> |
+   | **[!UICONTROL Status]** | Os status possíveis são: <ul><li>[!UICONTROL **Ativo**] (azul): os relatórios foram executados na conexão e a atividade dele está sendo monitorada.</li><li>[!UICONTROL **Inativo**] (cinza): nenhum relatório foi executado na conexão. Esse status é exibido somente quando as conexões são criadas pela primeira vez.</li></ul> |
 
    {style="table-layout:auto"}
 
-## Exibir atividade de relatórios para um único conjunto de relatórios
+## Exibir atividade de relatórios para uma única conexão
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Ferramentas**] > [!UICONTROL **Gerenciador de atividades de relatórios**].
 
-1. Selecione o título vinculado do conjunto de relatórios para o qual deseja exibir detalhes.
+1. Selecione o título vinculado da conexão para a qual deseja exibir detalhes.
 
-   Os dados da atividade de relatórios são exibidos para o conjunto de relatórios selecionado.
+   Os dados de atividade de relatórios são exibidos para a conexão selecionada.
 
-   <!-- Need to update this screenshot: ![report suite](assets/indiv-report-ste.png) -->
+   <!-- Need to update this screenshot: ![connection](assets/indiv-report-ste.png) -->
 
-1. Use os gráficos e tabelas disponíveis para entender a atividade de relatórios no conjunto de relatórios.
+1. Use os gráficos e tabelas disponíveis para entender a atividade de relatórios na conexão.
 
    * [Visualizar gráficos](#view-graphs)
 
@@ -69,13 +69,13 @@ Para obter mais informações sobre o Gerente de atividades de relatórios, incl
 
 ### Visualizar gráficos
 
-Os gráficos a seguir estão disponíveis para ajudá-lo a entender melhor a atividade que está acontecendo no conjunto de relatórios.
+Os gráficos a seguir estão disponíveis para ajudá-lo a entender melhor a atividade que ocorre na conexão.
 
 Se os gráficos não estiverem visíveis, selecione a variável [!UICONTROL **Mostrar gráficos**] botão.
 
 #### Gráfico de utilização {#utilization}
 
-O gráfico Utilização mostra a utilização de relatórios do conjunto de relatórios selecionado nas últimas 2 horas.
+O gráfico Utilização mostra a utilização de relatórios da conexão selecionada nas últimas 2 horas.
 
 Passe o mouse sobre o gráfico para ver os pontos no tempo em que a porcentagem de capacidade de uso foi mais alta naquele minuto.
 
@@ -86,7 +86,7 @@ Passe o mouse sobre o gráfico para ver os pontos no tempo em que a porcentagem 
 
 #### Gráfico de usuários distintos
 
-O gráfico Usuários distintos mostra a atividade de relatórios do conjunto de relatórios selecionado nas últimas 2 horas.
+O gráfico Usuários distintos mostra a atividade de relatórios da conexão selecionada nas últimas 2 horas.
 
 Passe o mouse sobre o gráfico para visualizar os pontos no tempo em que o número máximo de usuários foi mais alto naquele minuto.
 
@@ -97,7 +97,7 @@ Passe o mouse sobre o gráfico para visualizar os pontos no tempo em que o núme
 
 #### Gráfico de solicitações
 
-O gráfico Solicitações mostra o número de solicitações processadas e concluídas do conjunto de relatórios selecionado nas últimas 2 horas.
+O gráfico Solicitações mostra o número de solicitações processadas e concluídas para a conexão selecionada nas últimas 2 horas.
 
 Passe o mouse sobre o gráfico para visualizar os pontos no tempo em que o número máximo de solicitações foi mais alto naquele minuto.
 
@@ -108,7 +108,7 @@ Passe o mouse sobre o gráfico para visualizar os pontos no tempo em que o núme
 
 #### Gráfico de enfileiramento
 
-O gráfico Enfileiramento mostra o tempo médio de espera na fila (em segundos) para as solicitações de relatório do conjunto de relatórios selecionado nas últimas 2 horas.
+O gráfico Enfileiramento mostra o tempo médio de espera da fila (em segundos) para as solicitações de relatório da conexão selecionada nas últimas 2 horas.
 
 Passe o mouse sobre o gráfico para exibir os pontos no tempo em que o tempo médio máximo de espera foi mais alto para esse minuto.
 
@@ -215,11 +215,11 @@ The Summary Numbers show the following information:
 
 | Summary Number | Description |
 | --- | --- |
-| [!UICONTROL **Users**] | The number of users that are currently sending reporting requests to this report suite. |
+| [!UICONTROL **Users**] | The number of users that are currently sending reporting requests to this connection. |
 | [!UICONTROL **Projects**] | Workspace projects, Report Builder workbooks, etc.  | 
 | [!UICONTROL **Queries**] | The number of queries currently running. |
 | [!UICONTROL **Average Wait Time**] | The average wait time for all running queries.  |
-| [!UICONTROL **Usage Capacity**] | The current usage capacity for this report suite. |
+| [!UICONTROL **Usage Capacity**] | The current usage capacity for this connection. |
 
 {style="table-layout:auto"}
 

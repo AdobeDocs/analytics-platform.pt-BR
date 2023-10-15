@@ -3,7 +3,7 @@ title: Cancelar solicitações de relatórios no Gerenciador de atividades de re
 description: Saiba mais sobre como usar o Gerente de atividade de relatórios para diagnosticar e corrigir problemas de capacidade durante o pico dos relatórios.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 23509d26e08b50a6b7a133fdc9a3e2d2d3e8fe43
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 7%
@@ -132,6 +132,8 @@ Você pode cancelar todas as solicitações associadas a um ou mais projetos.
    Uma notificação é exibida no Analysis Workspace, informando aos usuários que a solicitação foi cancelada. Para obter mais informações sobre como isso é exibido no Analysis Workspace, consulte [Experiência quando usuários acessam um relatório cancelado](#experience-when-users-access-a-cancelled-report).
 
 ## Experiência quando usuários acessam um relatório cancelado
+
+<!-- Update for CJA and AA -->
 
 No Analysis Workspace, os usuários veem a seguinte mensagem ao tentar acessar um relatório que foi cancelado por um administrador:
 

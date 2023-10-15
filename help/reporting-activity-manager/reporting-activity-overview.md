@@ -3,7 +3,7 @@ title: Visão geral do Gerenciador de atividades de relatórios
 description: Saiba mais sobre como usar o Gerente de atividade de relatórios para diagnosticar e corrigir problemas de capacidade durante o pico dos relatórios.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 23509d26e08b50a6b7a133fdc9a3e2d2d3e8fe43
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 34%
@@ -29,6 +29,8 @@ O Gerente de atividades de relatórios oferece os seguintes benefícios:
 * Permite restringir solicitações futuras por um período especificado. Você pode restringir solicitações específicas ou restringir todas as solicitações de um usuário específico ou solicitações associadas a um projeto específico.
 
 ## Permissões
+
+<!-- update for CJA -->
 
 Para gerenciar a atividade de relatórios, você deve ter a permissão de Administrador de produto do Analytics no Adobe Admin Console.
 

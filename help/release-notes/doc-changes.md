@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
+source-git-commit: 57124124254f5ca9eb2a9f63a7478cd288c19b0e
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 99%
+source-wordcount: '2894'
+ht-degree: 96%
 
 ---
 
@@ -20,6 +20,9 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Outubro de 2023** | |
+| Exportação de tabelas completas para a nuvem | Adição de documentação sobre a exportação de tabelas completas com milhões de linhas do Workspace para destinos em nuvem. <p>A exportação de tabelas completas oferece uma entrega única ou agendada de tabelas de dados criadas no Workspace com suporte para até cinco detalhamentos, cinco métricas, filtros e métricas calculadas, tudo em uma tabela concatenada. É a evolução dos relatórios do Data Warehouse no Adobe Analytics, com muitos recursos novos e frequentemente solicitados que não estão disponíveis no Data Warehouse atualmente.</p><p>Para obter mais informações, consulte [Exportação de relatórios do Customer Journey Analytics para a nuvem](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/export-cloud.html?lang=pt-BR). | 4 de outubro de 2023 |
+| Gerenciador de atividades de relatórios | Adição de documentação para o Gerente de atividades de relatórios. <p>O Gerenciador de atividades de relatórios permite ver a capacidade de relatórios para cada conexão na organização. Ele oferece visibilidade detalhada do consumo de relatórios à administração para maior facilidade no diagnóstico e na correção de problemas de capacidade durante os horários de pico de relatórios.</p> <p>Os seguintes novos artigos foram adicionados:<ul><li>[Visão geral do Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity-overview.md)</li><li>[Exibir atividade de relatórios no Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md)</li><li>[Cancelar solicitações no Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity-cancel-requests.md)</ul> |
+| Novas colunas em páginas de gerenciamento | Novas colunas documentadas que agora estão disponíveis no [Gerenciador de métricas calculadas](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager.html?lang=pt-BR) e a variável [Gerenciador de filtros](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/manage-filters.html?lang=pt-BR). |
 | Comparação com o Adobe Analytics | Adição de um [página de visão geral](../getting-started/aa-vs-cja/overview.md) como uma introdução sobre como comparar e entender as diferenças entre o Customer Journey Analytics e o Adobe Analytics. |
 | Funcionalidade adicional de campos derivados | Atualização da documentação do novo [`Lookup`](/help/data-views/derived-fields/derived-fields.md#lookup) função. |
 | **Setembro de 2023** | |
