@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: 980afb6d8344c04b431c596d39a8f0003b7201ba
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1822'
 ht-degree: 15%
 
 ---
@@ -68,7 +68,7 @@ Consulte [Adicionar e configurar conjuntos de dados](../../connections/create-co
 
 Para ter acesso a dimensões e métricas B2B relevantes ao criar o projeto do Workspace, você deve definir sua visualização de dados de acordo.
 
-Esta seção fornece recomendações e sugestões sobre quais dimensões e métricas incluir ao definir a variável [componentes](../../data-views/create-dataview.md#components) da sua visualização de dados.
+Esta seção fornece recomendações e sugestões sobre quais dimensões e métricas incluir ao definir a variável [componentes](../../data-views/create-dataview.md#components) para conjuntos de dados B2B na visualização de dados.
 
 Para cada componente, são fornecidos o nome, o tipo de esquema, o caminho do esquema e (quando aplicável) detalhes sobre a configuração.
 
