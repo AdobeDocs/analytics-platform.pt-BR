@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
+source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1818'
 ht-degree: 15%
 
 ---
@@ -70,16 +70,11 @@ Para ter acesso a dimensões e métricas B2B relevantes ao criar o projeto do Wo
 
 Esta seção fornece recomendações e sugestões sobre quais dimensões e métricas incluir ao definir a variável [componentes](../../data-views/create-dataview.md#components) da sua visualização de dados.
 
-Para cada componente, são fornecidos o nome, o caminho do esquema e (quando aplicável) detalhes sobre a configuração.
+Para cada componente, são fornecidos o nome, o tipo de esquema, o caminho do esquema e (quando aplicável) detalhes sobre a configuração.
 
++++ Conjunto de dados da atividade B2B
 
-### Conjunto de dados da atividade B2B
-
-O conjunto de dados de Atividade B2B contém os eventos de experiência relevantes e é necessário como parte de uma conexão.
-
-+++ Detalhes
-
-#### Métricas
+### Métricas
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
@@ -111,7 +106,7 @@ O conjunto de dados de Atividade B2B contém os eventos de experiência relevant
 {style="table-layout:auto"}
 
 
-#### Dimensões
+### Dimensões
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
@@ -139,19 +134,15 @@ O conjunto de dados de Atividade B2B contém os eventos de experiência relevant
 +++
 
 
-### Conjunto de dados Pessoa B2B
-
-O conjunto de dados Pessoa B2B contém os perfis relevantes.
-
-+++ Detalhes
++++ Conjunto de dados Pessoa B2B
 
 
-#### Métricas
+### Métricas
 
 Nenhum componente de métrica é definido como parte desse conjunto de dados.
 
 
-#### Dimensões
+### Dimensões
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
@@ -160,15 +151,12 @@ Nenhum componente de métrica é definido como parte desse conjunto de dados.
 
 {style="table-layout:auto"}
 
-+++ Detalhes
++++
 
-### Conjunto de dados de oportunidade B2B
 
-O conjunto de dados Oportunidade B2B contém as oportunidades relevantes.
++++  Conjunto de dados de oportunidade B2B
 
-+++ Detalhes
-
-#### Métricas
+### Métricas
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
@@ -182,7 +170,7 @@ O conjunto de dados Oportunidade B2B contém as oportunidades relevantes.
 {style="table-layout:auto"}
 
 
-#### Dimensões
+### Dimensões
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
@@ -199,13 +187,10 @@ O conjunto de dados Oportunidade B2B contém as oportunidades relevantes.
 
 +++
 
-### Conjunto de dados da campanha B2B
 
-O conjunto de dados da Campanha B2B contém dados da campanha.
++++ Conjunto de dados da campanha B2B
 
-+++ Detalhes
-
-#### Métricas
+### Métricas
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
@@ -214,7 +199,7 @@ O conjunto de dados da Campanha B2B contém dados da campanha.
 {style="table-layout:auto"}
 
 
-#### Dimensões
+### Dimensões
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
@@ -229,13 +214,10 @@ O conjunto de dados da Campanha B2B contém dados da campanha.
 +++
 
 
-### Conjunto de dados da conta B2B
 
-O conjunto de dados da conta B2B contém os dados da conta.
++++ Conjunto de dados da conta B2B
 
-+++ Detalhes
-
-#### Métricas
+### Métricas
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
@@ -245,7 +227,7 @@ O conjunto de dados da conta B2B contém os dados da conta.
 {style="table-layout:auto"}
 
 
-#### Dimensões
+### Dimensões
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
@@ -265,13 +247,9 @@ O conjunto de dados da conta B2B contém os dados da conta.
 +++
 
 
-### Conjunto de dados de membro da campanha B2B
++++ Conjunto de dados de membro da campanha B2B
 
-O conjunto de dados Membro da campanha B2B contém as interações dos membros das campanhas.
-
-+++ Detalhes
-
-#### Métricas
+### Métricas
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
@@ -284,7 +262,7 @@ O conjunto de dados Membro da campanha B2B contém as interações dos membros d
 
 {style="table-layout:auto"}
 
-#### Dimensões
+### Dimensões
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
