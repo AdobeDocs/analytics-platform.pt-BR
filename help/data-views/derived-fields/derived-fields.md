@@ -4,10 +4,10 @@ description: Um campo derivado especifica a manipulação de tempo do relatório
 solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
-source-git-commit: 4ec48fcdd62781720f7d648a0ec2169d2af03d23
+source-git-commit: 7a96c6b1f093a534e473de3bde8dc3044564c450
 workflow-type: tm+mt
-source-wordcount: '5431'
-ht-degree: 15%
+source-wordcount: '5641'
+ht-degree: 14%
 
 ---
 
@@ -100,6 +100,22 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 
    - Selecionar **[!UICONTROL ** Salvar como **]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome que o campo derivado editado original com `(copy)` adicionado a ele.
 
+Como alternativa, se você tiver usado um campo derivado como um componente para dimensões ou métricas na visualização de dados:
+
+1. Selecione o componente. Observe que o componente pode ter um nome diferente do seu campo derivado.
+
+1. No painel Componente, selecione a ![Ícone Editar](assets/Smock_Edit_18_N.svg) ao lado do campo derivado, abaixo do nome do campo Esquema.
+
+1. Para editar o campo derivado, use o [!UICONTROL Editar campo derivado] interface. Consulte [Interface de campo derivada](#derived-field-interface).
+
+   - Selecionar **[!UICONTROL ** Salvar **]** para salvar o campo derivado atualizado.
+
+   - Selecionar **[!UICONTROL ** Cancelar **]** para cancelar quaisquer alterações feitas no campo derivado.
+
+   - Selecionar **[!UICONTROL ** Salvar como **]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome que o campo derivado editado original com `(copy)` adicionado a ele.
+
+
+
 ## Excluir um campo derivado
 
 1. Selecione uma visualização de dados existente. Consulte [Visualizações de dados](../data-views.md) para obter mais informações.
@@ -112,7 +128,19 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 
 5. Passe o mouse sobre o campo derivado que deseja excluir e selecione ![Ícone Editar](assets/Smock_Edit_18_N.svg).
 
-6. No uso de **[!UICONTROL ** Editar campo derivado **]** selecione Excluir.
+6. No [!UICONTROL Editar campo derivado] , selecione **[!UICONTROL Excluir]**.
+
+   A [!UICONTROL Excluir componente] solicitará que você confirme a exclusão. Considere todas as referências externas que possam existir ao campo derivado fora da visualização de dados.
+
+   - Selecionar **[!UICONTROL ** Continuar **]** para excluir o campo derivado.
+
+Como alternativa, se você tiver usado um campo derivado como um componente para dimensões ou métricas na visualização de dados:
+
+1. Selecione o componente. Observe que o componente pode ter um nome diferente do seu campo derivado.
+
+1. No painel Componente, selecione a ![Ícone Editar](assets/Smock_Edit_18_N.svg) ao lado do campo derivado, abaixo do nome do campo Esquema.
+
+1. No [!UICONTROL Editar campo derivado] , selecione **[!UICONTROL Excluir]**.
 
    A [!UICONTROL Excluir componente] solicitará que você confirme a exclusão. Considere todas as referências externas que possam existir ao campo derivado fora da visualização de dados.
 
