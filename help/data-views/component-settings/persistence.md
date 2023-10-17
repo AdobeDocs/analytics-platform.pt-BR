@@ -4,10 +4,10 @@ description: Determine como ou se os valores de dimensão persistem de um evento
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 1c5ea3f49d47ffd833404260e6c21bd1e64a2734
+source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 86%
+source-wordcount: '859'
+ht-degree: 81%
 
 ---
 
@@ -20,15 +20,11 @@ ht-degree: 86%
 
 * A **Alocação** permite determinar qual valor é mantido quando mais de um item de dimensão pode persistir de cada vez em uma única coluna.
 
-<!--
-
   >[!NOTE]
   >
-  >If you have a [non-default attribution model](/help/data-views/component-settings/attribution.md) set on a metric in a report, the attribution model ignores the allocation you set on the dimension for the same report.
+  >Se você tiver uma [modelo de atribuição não-padrão](/help/data-views/component-settings/attribution.md) definido em uma métrica em um relatório, o modelo de atribuição ignora a alocação definida na dimensão para o mesmo relatório.
   >
-  >However, when doing a [full table export](/help/analysis-workspace/export/export-cloud.md) that includes multiple dimensions, attribution retains the allocation models applied to each dimension.
-
--->
+  >No entanto, ao fazer uma [exportação de tabela completa](/help/analysis-workspace/export/export-cloud.md) que inclui várias dimensões, a atribuição retém os modelos de alocação aplicados a cada dimensão.
 
 * A **Expiração** permite determinar por quanto tempo um item de dimensão persiste além do evento em que está definido.
 
