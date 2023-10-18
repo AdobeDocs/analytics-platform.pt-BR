@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: 53cf026531ac5690a3e5a31acaa5654a52747b69
+source-git-commit: 69317871bae9ad2a0fecad6b1df1cc357094b05c
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Você deseja definir uma meta de receita mensal para cada canal de marketing. Pa
 
 ## Usar metas
 
-Para usar metas no projeto do Workspace, use a funcionalidade de métrica calculada para &quot;normalizar&quot; o campo derivado de volta ao valor estático original.
+Para usar metas no projeto do Workspace, use a funcionalidade de métrica calculada para &quot;normalizar&quot; o campo derivado de volta ao valor estático original. Essa normalização é necessária, pois os valores estáticos definidos para os campos derivados que definem metas são incrementados com cada evento.
 
 ### Metas de pedidos mensais de vale-presente
 
