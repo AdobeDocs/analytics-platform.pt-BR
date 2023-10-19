@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Gerenciar locais e contas de exportação da nuvem
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 5%
+source-wordcount: '482'
+ht-degree: 6%
 
 ---
 
@@ -63,11 +63,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de loca
 
 ## Excluir locais
 
-Se você excluir um local, todas as exportações que usam esse local também serão excluídas.
-
-Antes de excluir um local, verifique primeiro se ele está sendo usado por alguma exportação selecionando o ícone de informações ao lado do nome do local.
-
-![exportações conectadas](assets/location-connected-exports.png)
+Se você excluir um local, todas as exportações que usam esse local também serão excluídas. Verifique a caixa de diálogo de confirmação ao excluir para garantir que nenhuma exportação esteja associada ao local.
 
 Para excluir um local:
 
@@ -77,7 +73,15 @@ Para excluir um local:
 
    ![Editar locais](assets/locations-edit.png)
 
-1. Selecionar [!UICONTROL **Excluir**] e selecione [!UICONTROL **Excluir**] novamente no diálogo de confirmação.
+1. Clique em [!UICONTROL **Excluir**].
+
+   A caixa de diálogo Excluir local é exibida.
+
+1. Na caixa de diálogo Excluir local, verifique se o local não está associado a nenhuma exportação antes de confirmar a exclusão.
+
+   ![Caixa de diálogo de confirmação Excluir local](assets/delete-location-confirmation-dialog.png)
+
+1. Selecionar [!UICONTROL **Excluir**] novamente para confirmar.
 
 ## Editar contas
 
@@ -85,7 +89,7 @@ Para excluir um local:
 
 1. Selecione o [!UICONTROL **Contas de localização**] guia.
 
-   ![Página Contas](assets/account-page.png)
+   ![Página Contas](assets/account-add.png)
 
 1. Selecionar [!UICONTROL **Exibir detalhes**] na conta que deseja editar.
 
@@ -101,7 +105,7 @@ Para exibir chaves associadas a uma conta de exportação:
 
 1. Selecione o [!UICONTROL **Contas de localização**] guia.
 
-   ![Página Contas](assets/account-page.png)
+   ![Página Contas](assets/account-add.png)
 
 1. Selecione o ícone de 3 pontos na conta que deseja editar e selecione [!UICONTROL **Chaves da conta**].
 
@@ -111,7 +115,7 @@ Para exibir chaves associadas a uma conta de exportação:
 
 1. Selecione o [!UICONTROL **Contas de localização**] guia.
 
-   ![Página Contas](assets/account-page.png)
+   ![Página Contas](assets/account-add.png)
 
 1. Selecione o ícone de 3 pontos na conta que deseja editar e selecione [!UICONTROL **Excluir conta**].
 

@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Configurar contas de exportação da nuvem
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: bbd916db1be05c5e52396ae0a6fa5cbaa368da38
 workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 1. Prossiga com a seção abaixo que corresponde ao [!UICONTROL **Tipo de conta**] selecionado.
 
-   * [Zona de destino de dados da AEP](#adobe-experience-platform)
+   * [Zona de destino de dados da AEP](#aep-data-landing-zone)
 
    * [Amazon S3 Role ARN](#amazon-s3-role-arn)
 

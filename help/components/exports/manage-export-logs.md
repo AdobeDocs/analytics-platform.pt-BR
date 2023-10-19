@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gerenciar logs de exportação
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '825'
 ht-degree: 7%
 
 ---
@@ -16,6 +16,26 @@ ht-degree: 7%
 Os logs de exportação fornecem detalhes sobre cada exportação e são gerados sempre que os dados do Analysis Workspace são exportados para a nuvem. (Para obter informações sobre como os dados podem ser exportados para a nuvem, consulte [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).)
 
 Para exportações programadas, os logs refletem as configurações de exportação como estavam quando o log foi enviado. Os logs não podem ser excluídos.
+
+## Exibir registros de exportação
+
+1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
+
+1. Selecione o [!UICONTROL **Logs**] guia.
+
+   ![Guia Exportar logs](assets/export-logs-tab.png)
+
+   Os detalhes de cada log são exibidos nas colunas disponíveis.
+
+1. Siga um destes procedimentos:
+
+   * [Personalizar as colunas](#configure-columns) que são exibidos.
+
+   * Selecione o **Ícone de informações** ![Ícone de informações](assets/information-icon.png) ao lado do nome do log para exibir a exportação associada ao log.
+
+   * Selecione o **Ícone Editar exportação** ![Ícone de informações](assets/edit-export-icon.png) ao lado do nome do log para editar a exportação associada ao log.
+
+     Para obter mais informações sobre como editar uma exportação, consulte [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 
 ## Filtrar e pesquisar logs
 
