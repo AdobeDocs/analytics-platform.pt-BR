@@ -3,7 +3,7 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1482cc7b9da01b60e15d2e48b1156b603e20c6e3
+source-git-commit: 328b95efb7ed9ff597b95979ecdeceaa8db92bb4
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 97%
@@ -12,7 +12,7 @@ ht-degree: 97%
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (outubro de 2023)
 
-**Última atualização**: 17 de outubro de 2023
+**Última atualização**: 19 de outubro de 2023
 
 Essas notas de versão abrangem o período de lançamento de 4 de outubro de 2023 a 24 de outubro de 2023. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -26,7 +26,7 @@ Essas notas de versão abrangem o período de lançamento de 4 de outubro de 202
 | **Migração de projetos do Adobe Analytics e quaisquer componentes incluídos para o Customer Journey Analytics** | Agora é possível migrar seus projetos do Adobe Analytics para o Customer Journey Analytics. Esse processo simplifica a transição do Adobe Analytics para o Customer Journey Analytics. <p>Ao migrar projetos para o Customer Journey Analytics, os ativos são mapeados de um conjunto de relatórios do Adobe Analytics para uma visualização de dados do Customer Journey Analytics.</p> <p>É possível migrar projetos para o Customer Journey Analytics a partir da interface do Adobe Analytics. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=pt-BR)</p> | N/D | 9 de outubro de 2023 |
 | **Adobe Product Analytics: Mostrar/Ocultar série** | Clique na legenda do gráfico ou nas linhas da tabela para controlar a visibilidade da série nas visualizações.  [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/guided-analysis/overview.html?lang=pt-BR) | N/D | 4 de outubro de 2023 |
 | **Anotações no Adobe Product Analytics** | A análise guiada agora permite visualizar anotações criadas no Customer Journey Analytics. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/overview.html?lang=pt-BR) | N/D | 4 de outubro de 2023 |
-| **Gerenciador de atividades de relatórios** | O Gerenciador de atividades de relatórios permite ver a capacidade de relatórios para cada conexão na organização. Ele oferece visibilidade detalhada do consumo de relatórios à administração para maior facilidade no diagnóstico e na correção de problemas de capacidade durante os horários de pico de relatórios. Os recursos principais do Gerenciador de atividades de relatórios incluem:<ul><li>O cancelamento de solicitações de relatórios atuais (incluindo solicitações de análises guiadas e exportações de tabela completa)</li><li>A restrição de solicitações subsequentes por um período definido</li></ul>Além de cancelar solicitações atuais, a administração agora pode restringir solicitações por um período definido. É possível restringir solicitações por solicitação, projeto ou usuário(a). [Saiba mais](/help/reporting-activity-manager/reporting-activity-overview.md) | 17 de outubro de 2023 | 23 de outubro de 2023 |
+| **Gerenciador de atividades de relatórios** | O Gerenciador de atividades de relatórios permite ver a capacidade de relatórios para cada conexão na organização. Ele oferece visibilidade detalhada do consumo de relatórios à administração para maior facilidade no diagnóstico e na correção de problemas de capacidade durante os horários de pico de relatórios. Os recursos principais do Gerenciador de atividades de relatórios incluem:<ul><li>O cancelamento de solicitações de relatórios atuais (incluindo solicitações de análises guiadas e exportações de tabela completa)</li><li>A restrição de solicitações subsequentes por um período definido</li></ul>Além de cancelar solicitações atuais, a administração agora pode restringir solicitações por um período definido. É possível restringir solicitações por solicitação, projeto ou usuário(a). [Saiba mais](/help/reporting-activity-manager/reporting-activity-overview.md) | 17 de outubro de 2023 | 24 de outubro de 2023 |
 
 {style="table-layout:auto"}
 
