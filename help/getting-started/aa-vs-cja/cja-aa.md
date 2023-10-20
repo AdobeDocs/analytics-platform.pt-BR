@@ -7,7 +7,7 @@ feature: Basics
 source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
 workflow-type: tm+mt
 source-wordcount: '2137'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Acesso à API de relatórios | Suporte completo: disponível por meio da [API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | Relatórios/projetos agendados | Suporte completo. |
 | Segmentos | Suporte completo. Chamados agora de “Filtros”: observe que nenhum segmento existente no Analysis Workspace tradicional será transferido para o Customer Journey Analytics. |
-| Conjuntos de relatórios virtuais | Suporte completo. Agora chamado [Visualizações de dados](/help/data-views/create-dataview.md). |
+| Conjuntos de relatórios virtuais | Suporte completo. Agora chamados de [Visualizações de dados](/help/data-views/create-dataview.md). |
 | Curadoria de componentes do conjunto de relatórios virtual | Suporte completo. Agora parte das Visualizações de dados. |
 | Análise de mídia de transmissão | Os dados de mídia estão disponíveis usando o conector de origem do Analytics como parte do painel Visualizadores simultâneos de mídia e do painel Tempo gasto com a reprodução da mídia no espaço de trabalho. |
 
@@ -66,13 +66,13 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Dimensões de segmentação geográfica | Toda segmentação geográfica coletada no Adobe Analytics flui para o Customer Journey Analytics por meio do [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). As implementações que não usam o conector de origem do Analytics, mas dependem do SDK da Web da Experience Platform para coleta de dados digitais, podem usar o [serviço de pesquisa geográfica do Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=pt-BR). |
 | Ofuscação de IP | Para clientes do Customer Journey Analytics que usam o conector de origem do Analytics para preencher dados do Adobe Analytics no Customer Journey Analytics: as configurações de ofuscação de IP aplicadas no Adobe Analytics são transmitidas para os dados do Customer Journey Analytics. Você pode controlar essas configurações no Adobe Analytics, conforme necessário.<p>Para clientes do Customer Journey Analytics que usam o SDK da Web da Experience Platform para preencher dados na Platform e no Customer Journey Analytics diretamente. Você pode usar o preparo de dados para coletar dados na Platform e configurar regras que ofuscam o endereço IP com base nos requisitos da sua empresa. |
 | Canais de marketing | Ao usar o conector de origem do Analytics, os dados de canais de marketing são transmitidos para o Customer Journey Analytics por meio desse conector. As regras do canal de marketing são configuradas no Adobe Analytics tradicional e algumas regras não são compatíveis. Consulte [Canais de marketing do Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/aa-data/marketing-channels.html?lang=pt-BR) para obter mais informações. <br/>Para implementações do SDK da Web, as regras de processamento do canal de marketing em tempo de relatório são compatíveis por meio de [campos derivados](../../data-views/derived-fields/derived-fields.md). |
-| Desduplicação de métrica | Agora configurado em métricas das Visualizações de dados. A desduplicação de métricas ocorre no nível da pessoa ou da sessão, em vez de no nível do conjunto de dados, da visualização de dados ou da conexão. |
+| Desduplicação de métrica | Agora configurado em métricas das Visualizações de dados. A desduplicação de métricas ocorre no nível da pessoa ou da sessão e não no nível do conjunto de dados, da visualização de dados ou da conexão. |
 | Relatório de sessão nova vs. repetida | Realizado anteriormente usando a dimensão Número de visitas. Sessões novas vs. repetidas são compatíveis [com uma janela de retrospectiva de 13 meses](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/data-views/data-views-usecases.html?lang=pt-BR). |
 | Regras de processamento, regras VISTA e regras de processamento de canal de marketing | Compatível com a funcionalidade de preparo de dados da Adobe Experience Platform para conjuntos de dados baseados no SDK da Web, bem como dados do conector de origem do Analytics. |
 | Variável de produtos | Na Experience Platform, é possível usar uma matriz de objetos dentro de um esquema do conjunto de dados para atender a esse caso de uso. No Customer Journey Analytics, clientes podem usar qualquer número de variáveis de produto e não estão restritos a uma única variável, como no Adobe Analytics. |
 | Compartilhamento de projetos | O compartilhamento de projetos só é permitido entre usuários(as) do Customer Journey Analytics. Não é possível compartilhar projetos entre o Customer Journey Analytics e o Analysis Workspace tradicional. |
 | Report Builder | Compatível com um novo plug-in do Office 365 para Excel. |
-| Permissões do usuário/Controles de acesso de dados | O Customer Journey Analytics distingue entre admins de produto do [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR), admins de perfil de produto e usuários. Somente administradores de produtos podem criar/atualizar/excluir conexões, projetos, filtros ou métricas calculadas que foram criadas por outros usuários, enquanto administradores de produtos e administradores de perfis de produtos podem editar visualizações de dados. Permissões de usuário adicionais estão disponíveis para como criação de métricas calculadas, filtros e anotações. |
+| Permissões do usuário/Controles de acesso de dados | O Customer Journey Analytics distingue entre admins de produto do [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR), admins de perfil de produto e usuários. Somente admins de produtos podem criar, atualizar e excluir conexões, projetos, filtros ou métricas calculadas que foram criadas por outros usuários, enquanto admins de produto e admins de perfil de produto podem editar visualizações de dados. Permissões de usuário adicionais estão disponíveis para como criação de métricas calculadas, filtros e anotações. |
 | Visualizações | Todas as visualizações são compatíveis, exceto a visualização do Mapa. |
 
 {style="table-layout:auto"}
