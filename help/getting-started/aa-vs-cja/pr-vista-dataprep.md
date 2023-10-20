@@ -1,16 +1,16 @@
 ---
-title: Regras de processamento, VISTA e classificações em relação ao Preparo de dados para o conector de origem do Analytics
-description: Saiba mais sobre a transformação de dados usando regras de processamento e VISTA em relação ao uso do Preparo de dados
+title: Regras de processamento, VISTA e classificações em comparação ao preparo de dados do conector de origem do Analytics
+description: Saiba mais sobre a transformação de dados usando regras de processamento e VISTA em comparação ao uso do Preparo de dados
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '619'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Regras de processamento, VISTA e classificações em relação ao Preparo de dados
+# Regras de processamento, VISTA e classificações em comparação ao Preparo de dados
 
 As regras de processamento do Adobe Analytics [e as regras VISTA](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/processing-rule-order.html?lang=pt-BR) fornecem um meio de transformar e manipular dados transmitidos pela [coleção de dados](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=pt-BR) do Adobe Analytics. Essas transformações ocorrem como parte do processamento de dados armazenados no Adobe antes que os dados sejam gerados para fins de relatório e análise do Adobe Analytics.
 

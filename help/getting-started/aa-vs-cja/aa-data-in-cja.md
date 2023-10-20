@@ -1,18 +1,18 @@
 ---
-title: Utilização dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics
+title: Uso dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics
 description: Como configurar conjuntos de relatórios do Adobe Analytics para assimilação na Adobe Experience Platform e no Customer Journey Analytics
 role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
 source-git-commit: cb81422ed08420fe9a16c32ddd748c9569197b17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '878'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Utilização dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics
+# Uso dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics
 
 Clientes do Adobe Analytics podem utilizar facilmente seus conjuntos de relatórios na Adobe Experience Platform e no Customer Journey Analytics usando o [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). A discussão a seguir explica como fazê-lo.
 
@@ -44,6 +44,6 @@ O Customer Journey Analytics e Adobe Analytics têm diversas semelhanças. Por e
 * [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md)
 * [Comparar terminologia de dados do Analytics transmitidos pelo conector de origem do Analytics](/help/getting-started/aa-vs-cja/terminology.md)
 * [Comparar o processamento de dados entre os recursos de relatório do Adobe Analytics e do Customer Journey Analytics](/help/getting-started/aa-vs-cja/data-processing-comparisons.md)
-* [Conjuntos de relatórios virtuais, visualizações de dados, sandboxes do Adobe Experience Platform e o conector de origem do Analytics](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
+* [Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da Adobe Experience Platform e o conector de origem do Analytics](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 * [Regras de processamento, VISTA e classificações em relação ao preparo de dados](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md)
 * [AAID, ECID, AACUSTOMID e o conector de origem do Analytics](/help/getting-started/aa-vs-cja/aaid-ecid-adc.md)
