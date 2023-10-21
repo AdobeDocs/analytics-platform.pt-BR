@@ -1,13 +1,13 @@
 ---
-description: Exemplos de casos de uso da análise de coorte.
+description: Saiba mais sobre exemplos de casos de uso para análise de coorte.
 keywords: Analysis Workspace
 title: Casos de uso da análise de coorte
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+workflow-type: tm+mt
+source-wordcount: '930'
+ht-degree: 99%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-description: Use a visualização de fluxo em um projeto do Espaço de trabalho.
-title: Configurar uma visualização de fluxo
+description: Saiba como usar a visualização de fluxo em um projeto do Workspace.
+title: Como configurar uma visualização de fluxo
 feature: Visualizations
 role: User, Admin
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
-source-git-commit: 558825dc4768372f232ddfb614442443c89e9a65
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '1539'
-ht-degree: 60%
+source-wordcount: '1581'
+ht-degree: 57%
 
 ---
 
@@ -17,7 +17,7 @@ As Visualizações de fluxo ajudam você a entender a jornada decorrente ou que 
 
 As visualizações de fluxo permitem configurar o início ou o fim do caminho em que você está interessado ou analisar todos os caminhos que fluem por uma dimensão ou item de dimensão.
 
-![Nova interface de usuário de fluxo](assets/new-flow.png)
+![A tela Configuração de fluxo mostrando os campos Começa com, Contém e Termina com.](assets/new-flow.png)
 
 ## Criar uma visualização de fluxo {#configure}
 
@@ -45,16 +45,16 @@ As visualizações de fluxo permitem configurar o início ou o fim do caminho em
 
 1. Se você escolher uma métrica, também precisará fornecer uma [!UICONTROL **Definição de caminho do Dimension**] para usar como o caminho conduzindo ou saindo do componente selecionado, como mostrado aqui. O padrão é [!UICONTROL **Página**].
 
-   ![Dimensão de definição de caminho](assets/pathing-dim.png)
+   ![A dimensão Definição de caminho.](assets/pathing-dim.png)
 
 1. (Opcional) Selecione **[!UICONTROL Mostrar configurações avançadas]** para configurar qualquer uma das seguintes opções:
 
-   ![configurações avançadas](assets/adv-settings.png)
+   ![Configurações avançadas com opções de Exibição, Número de colunas e Contêiner de fluxo.](assets/adv-settings.png)
 
    | Configuração | Descrição |
    | --- | --- |
    | **[!UICONTROL Rótulos de quebra de linha]** | Normalmente, os rótulos nos Elementos de fluxo são truncados para não poluir visualmente a tela, mas é possível tornar todos os rótulos visíveis ao selecionar esta caixa.  Padrão = desmarcado. |
-   | **[!UICONTROL Incluir instâncias repetidas]** | As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas, por exemplo, recarregamentos de página. No entanto, as repetições não podem ser removidas das Visualizações de fluxo que incluem dimensões com vários valores, como listVars, listProps, s.product, eVars de merchandising etc. <p>Essa opção está desativada por padrão.</p> |
+   | **[!UICONTROL Incluir instâncias repetidas]** | As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas, por exemplo, recarregamentos de página. No entanto, as repetições não podem ser removidas das Visualizações de fluxo que incluem dimensões com vários valores, como listVars, listProps, s.product, eVars de merchandising etc. <p>Essa opção está desabilitada por padrão.</p> |
    | **[!UICONTROL Limite para a primeira/última ocorrência]** | Limite os caminhos para aqueles que começam/terminam com a primeira/última ocorrência de uma dimensão/item/métrica. Consulte a seção abaixo, [Exemplo de cenário para &quot;limitar à primeira/última ocorrência&quot;](#example-scenario-for-limit-to-firstlast-occurrence), para obter uma explicação mais detalhada. |
    | **[!UICONTROL Número de colunas]** | O número de colunas desejado no diagrama de Fluxo. Você pode especificar no máximo 5 colunas. |
    | **[!UICONTROL Itens expandidos por coluna]** | O número de itens desejado em cada coluna. É possível especificar no máximo 10 itens expandidos por coluna. |
@@ -80,7 +80,7 @@ As visualizações de fluxo permitem configurar o início ou o fim do caminho em
 
 ## Exibir e alterar a saída do fluxo {#output}
 
-![saída do fluxo](assets/flow-output.png)
+![Exemplo de saída de fluxo mostrando Termina com visitas, Dimensão de definição de caminho: Página e Contêiner de fluxo: Visitantes.](assets/flow-output.png)
 
 Um resumo da configuração de fluxo é exibido na parte superior do diagrama. Os caminhos no diagrama são proporcionais. Caminhos com maior atividade aparecem mais grossos.
 
@@ -90,7 +90,7 @@ Para detalhar ainda mais os dados, você tem várias opções:
 
 * Ao clicar em um nó no diagrama, os detalhes dele são exibidos. Clique no nó novamente para recolhê-lo.
 
-  ![node-details](assets/node-details.png)
+  ![Exemplo de diagrama de fluxo interativo mostrando detalhes do nó.](assets/node-details.png)
 
 * É possível filtrar uma coluna para exibir apenas determinados resultados, como incluir e excluir, especificar critérios etc.
 

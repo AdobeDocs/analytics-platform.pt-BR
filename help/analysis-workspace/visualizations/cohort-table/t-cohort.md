@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Configurar um relatório de análise de coorte
 feature: Visualizations
 exl-id: c3fd9fbf-b2c8-4703-92de-e6fdc141ebc6
-source-git-commit: 3bbc34d4b003fab7dc935c8d3bb3afa4dfc3f675
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 91%
+source-wordcount: '1003'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Crie uma coorte e execute um relatório de [!UICONTROL Análise de coorte] no An
 
 1. No Analysis Workspace, clique no ícone **[!UICONTROL Visualizações]** no painel à esquerda e arraste uma **[!UICONTROL Tabela de coorte]** para a tela.
 
-   ![](assets/cohort-table.png)
+   ![Um exemplo de tabela de coorte mostrando os critérios de inclusão e de retorno.](assets/cohort-table.png)
 
 1. Defina o **[!UICONTROL Critério de inclusão]**, os **[!UICONTROL Critérios de retorno]**, o **[!UICONTROL Tipo de coorte]** e as **[!UICONTROL Configurações]** de acordo com a tabela abaixo.
 
@@ -37,7 +37,7 @@ Crie uma coorte e execute um relatório de [!UICONTROL Análise de coorte] no An
 
 1. Clique em **[!UICONTROL Criar]**.
 
-   ![Resultado da etapa](assets/cohort-report.png)
+   ![A exibição de Tabela de coorte que mostra os Critérios de inclusão e de retorno selecionados. Clique em Criar.](assets/cohort-report.png)
 
    O relatório mostra as pessoas que fizeram um pedido ( *`Included`* e que retornaram ao site em visitas subsequentes. A redução nas visitas ao longo do tempo permite que você detecte os problemas e aja conforme o necessário.
 1. (Opcional) Crie um filtro a partir de uma seleção.

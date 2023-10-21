@@ -3,10 +3,10 @@ description: Um fluxo interdimensional permite analisar os caminhos do usuário 
 title: Fluxos interdimensionais
 feature: Visualizations
 exl-id: 459166b1-a522-45b6-9d2c-69e3409e442e
-source-git-commit: a8b59feccfb5bf1656dc3716fa3d022f8f74ee5a
-workflow-type: ht
-source-wordcount: '305'
-ht-degree: 100%
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 73%
 
 ---
 
@@ -16,7 +16,7 @@ Um fluxo interdimensional permite analisar os caminhos do usuário em várias di
 
 Um rótulo de dimensão na parte superior de cada coluna de Fluxo torna mais intuitivo o uso de várias dimensões em uma visualização de fluxo:
 
-![](assets/flow.png)
+![Um fluxo interdimensional que destaca várias dimensões, incluindo Produto, Página, Versão do SO e Tempo gasto.](assets/flow.png)
 
 Vamos analisar dois casos de uso: um de aplicativo e um da web.
 
@@ -24,29 +24,29 @@ Vamos analisar dois casos de uso: um de aplicativo e um da web.
 
 A dimensão de [!UICONTROL Nome da ação] foi adicionada ao fluxo, com os principais itens retornados sendo [!UICONTROL ItemAdded]:
 
-![](assets/multi-dimensional-flow.png)
+![Um fluxo mostrando o Item adicionado.](assets/multi-dimensional-flow.png)
 
 Para explorar a interação entre telas/páginas e ações neste aplicativo, você pode arrastar a dimensão de página a diferentes locais, dependendo do que você deseja explorar:
 
 * Arraste-o para uma área (dentro do retângulo com margens pretas exibido) para **substituir** os resultados principais nos finais:
 
-   ![](assets/multi-dimensional-flow2.png) ![](assets/multi-dimensional-flow3.png)
+  ![Um fluxo que mostra a dimensão Página arrastada para as várias áreas.](assets/multi-dimensional-flow2.png) ![Diagrama de fluxo mostrando os itens arrastados.](assets/multi-dimensional-flow3.png)
 
 * Arraste para o espaço branco no final (observe o colchete preto) para **adicionar à** visualização:
 
-   ![](assets/multi-dimensional-flow4.png)
+  ![Um fluxo que mostra a dimensão Página arrastada para o espaço em branco no final.](assets/multi-dimensional-flow4.png)
 
 Aqui está o resultado se você decidir substituir o item ItemScaled na coluna da direita com a dimensão de Página. Os principais resultados são substituídos para os principais resultados para a dimensão de Página:
 
-![](assets/multi-dimensional-flow5.png)
+![Um fBaixo mostrando os resultados da dimensão Página na parte superior da lista.](assets/multi-dimensional-flow5.png)
 
 Agora você pode ver como os clientes se movem pelas ações e páginas. Você pode explorar o fluxo, clicando em diferentes nós:
 
-![](assets/multi-dimensional-flow6.png)
+![Um fluxo que mostra Itens adicionados, Itens arrastados e Exibição principal.](assets/multi-dimensional-flow6.png)
 
 É isso que acontece ao adicionar outra dimensão de Nome de ação no final da visualização:
 
-![](assets/multi-dimensional-flow7.png)
+![Um fluxo mostrando o Nome da ação adicionado.](assets/multi-dimensional-flow7.png)
 
 Isso permitirá insights aprofundados e possíveis alterações ao aplicativo que você está analisando.
 
@@ -56,8 +56,8 @@ Este caso de uso mostra como você pode analisar quais campanhas impulsionam a m
 
 Arraste a dimensão de Nome da campanha para um novo fluxo:
 
-![](assets/multi-dimensional-flow8.png)
+![Um fluxo que mostra a dimensão Nome da campanha arrastado para um novo fluxo.](assets/multi-dimensional-flow8.png)
 
 Agora, quero saber para quais páginas essas campanhas estão impulsionando tráfego, então, arrasto a dimensão de Página à direita dos resultados de fluxo para adicionar à visualização:
 
-![](assets/multi-dimensional-flow9.png)
+![Um fluxo que mostra a dimensão Página arrastada à direita dos resultados do fluxo.](assets/multi-dimensional-flow9.png)

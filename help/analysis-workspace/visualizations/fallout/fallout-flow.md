@@ -1,20 +1,20 @@
 ---
-description: As visualizações de fallout mostram onde as pessoas saíram e continuaram em uma sequência predefinida de páginas.
-title: Visão geral de fallout
+description: Saiba mais sobre relatórios e visualizações de fallout.
+title: Sobre relatórios e visualizações de fallout
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 79%
+source-wordcount: '234'
+ht-degree: 82%
 
 ---
 
 # Visão geral de fallout
 
-As visualizações de Fallout oferecem mais opções para criar relatórios de fallout. Os relatórios de fallout mostram onde as pessoas saíram e continuaram em uma sequência predefinida de páginas.
+Os relatórios de fallout mostram onde as pessoas saíram e continuaram em uma sequência predefinida de páginas.
 
-As visualizações de fallout permitem
+As visualizações de Fallout oferecem mais opções para criar relatórios de fallout. As visualizações de fallout permitem:
 
 * Fazer comparações lado a lado de dois filtros diferentes no mesmo relatório.
 * Arrastar, soltar e reorganizar as etapas do funil (pontos de contato).

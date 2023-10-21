@@ -1,12 +1,12 @@
 ---
-description: As configurações de coluna permitem que você configure a formatação da coluna; alguns elementos podem ser condicionais.
+description: Saiba como editar configurações de coluna para configurar a formatação de coluna; alguns elementos podem ser condicionais.
 title: Configurações de coluna
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 84%
+source-wordcount: '806'
+ht-degree: 78%
 
 ---
 
@@ -22,7 +22,7 @@ Assista a um vídeo sobre as configurações de linha e coluna aqui:
 
 Para acessar [!UICONTROL Configurações de coluna], arraste uma Tabela de forma livre para o projeto e clique no ícone de engrenagem no cabeçalho da coluna.
 
-![](assets/column_settings.png)
+![As configurações de Coluna que mostram Total de células, Células da tabela e Visualização da célula da tabela.](assets/column_settings.png)
 
 É possível editar as configurações de **diversas colunas de uma só vez**. Basta selecionar várias colunas e clicar no ícone de configurações de qualquer uma dessas colunas. Todas as alterações feitas serão aplicadas a todas as colunas com as células selecionadas.
 
@@ -42,7 +42,7 @@ Para acessar [!UICONTROL Configurações de coluna], arraste uma Tabela de forma
 
 A formatação condicional aplica formatação a limites superiores, intermediários e inferiores que você pode definir. A aplicação de formatação condicional (cores, etc.) nas tabelas de forma livre também é ativada automaticamente nos detalhamentos, a menos que sejam selecionados limites “Personalizados”.
 
-![](assets/conditional-formatting.png)
+![As opções de formatação condicional com Personalizado selecionado.](assets/conditional-formatting.png)
 
 | Elemento | Descrição |
 | --- | --- |
@@ -72,11 +72,11 @@ Para usar um modelo de atribuição não padrão para uma métrica em uma Analys
 
 1. Clique no ícone de Configurações (engrenagem) em uma métrica em uma coluna de Tabela de forma livre.
 
-   ![Caixa de seleção Atribuição](assets/attribution-checkbox.png)
+   ![As opções de Configuração de coluna destacando a opção Configurações de dados: Use o modo de atribuição não padrão.](assets/attribution-checkbox.png)
 
 2. Em **[!UICONTROL Configurações de dados]**, marque a opção **[!UICONTROL Usar modelo de atribuição não padrão]**. Para obter mais informações sobre os diferentes modelos de atribuição, consulte [Modelos de atribuição](/help/data-views/component-settings/attribution.md).
 
-   ![Selecionar modelo de atribuição](assets/attribution-select.png)
+   ![As opções de Modelo de atribuição de coluna que mostram Linear selecionado.](assets/attribution-select.png)
 
 >[!MORELIKETHIS]
 >

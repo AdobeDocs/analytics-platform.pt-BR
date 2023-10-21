@@ -3,10 +3,10 @@ description: As configurações de linha variam de acordo com qual componente fo
 title: Configurações de linha
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: ab30cd4e884dbf92d4148e8f81a638a8ea0b63f3
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 93%
+source-wordcount: '463'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ Assista a um vídeo sobre as configurações de linha e coluna aqui:
 
 As configurações de linha variam de acordo com qual componente foi arrastado para a tabela. Para acessar as configurações de linha da tabela, clique no ícone de [!UICONTROL Configurações] próximo a uma dimensão, um filtro, uma métrica, um período ou um detalhamento em cada um destes itens:
 
-![](assets/row-settings.png)
+![Tabela de forma livre que destaca o ícone de Configurações para Métricas](assets/row-settings.png)
 
 | Configuração | Descrição |
 | --- | --- |
@@ -33,6 +33,6 @@ Para alterar o número de linhas exibidas:
 
 1. Clique no número ao lado das [!UICONTROL Linhas] na parte superior da tabela.
 
-   ![](assets/row-number.png)
+   ![Tabela de forma livre que mostra a lista suspensa de para o número de linhas exibidas. 400 linhas está selecionado.](assets/row-number.png)
 
 1. Na lista suspensa, selecione o número de linhas que deseja que a tabela exiba.
