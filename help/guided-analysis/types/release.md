@@ -3,9 +3,10 @@ title: Visualização da versão
 description: Compare o desempenho em períodos iguais antes e depois do lançamento.
 feature: Guided Analysis
 keywords: análise do produto
-source-git-commit: 4aed07568d345770183d18041a762adc441e6bc3
+exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
+source-git-commit: 02044961612a3d0f4f40bdc71c3f00585d702c92
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '484'
 ht-degree: 3%
 
 ---
@@ -21,7 +22,7 @@ A variável **[!UICONTROL Versão]** A exibição mostra uma comparação de com
 Os casos de uso para esse tipo de exibição incluem:
 
 * **Avaliação geral do desempenho:** A comparação de indicadores principais gerais, como medidas de engajamento, pode ajudar você a determinar se uma determinada versão foi bem-sucedida em geral.
-* **Monitoramento**: Se houver determinadas medidas que você espera que permaneçam uniformes quando as alterações forem feitas, como sinais vitais da Web, como tempo de carregamento ou logons, compare-as antes e depois para garantir que a liberação não tenha nenhuma consequência não intencional.
+* **Monitoramento**: Rastreie métricas vitais que você esperaria que permanecessem estáticas quando alterações fossem feitas, como tempo de carregamento ou número de logins. Use esse tipo de análise para compará-los antes e depois de um lançamento para garantir que ele não tenha consequências não intencionais.
 * **Adoção de recursos**: se uma atualização de produto estiver focada na melhoria de um determinado recurso, você poderá usar essa exibição para comparar diretamente o uso desse recurso antes e depois da atualização do produto.
 * **Detecção de erros**: rastrear o número de erros antes e depois de um lançamento pode fornecer um indicador antecipado dos problemas do cliente. Se você notar um aumento de erros imediatamente após um lançamento, poderá trabalhar com as equipes de engenharia ou desenvolvimento para identificar e corrigir o problema, evitando maior impacto para os clientes.
 
@@ -38,7 +39,7 @@ O painel de consulta permite configurar os seguintes componentes:
 A visualização Release oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
 * **[!UICONTROL Métrica]**: A métrica que você deseja medir. As opções incluem [!UICONTROL Eventos por usuário], [!UICONTROL Porcentagem de usuários], [!UICONTROL Eventos], [!UICONTROL Sessões], e [!UICONTROL Usuários].
-* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Linha.
+* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Linha] e [!UICONTROL Barra].
 
 ## Intervalo de datas
 
