@@ -3,16 +3,14 @@ title: Cancelar solicitações de relatórios no Gerenciador de atividades de re
 description: Saiba mais sobre como usar o Gerente de atividade de relatórios para diagnosticar e corrigir problemas de capacidade durante o pico dos relatórios.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 1680e6115a75a0dd78f07aa0bb409b19b3585a78
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '1451'
-ht-degree: 8%
+ht-degree: 14%
 
 ---
 
 # Cancelar solicitações de relatórios no Gerenciador de atividades de relatórios
-
-{{release-limited-testing}}
 
 A variável [!UICONTROL Gerenciador de atividades de relatórios] O permite que os administradores diagnostiquem e cancelem rapidamente as solicitações de relatórios para corrigir problemas de capacidade durante o pico dos relatórios.
 
@@ -58,7 +56,7 @@ Você pode cancelar solicitações individuais que estão consumindo uma grande 
 
       | Opção | Função |
       |---------|----------|
-      | [!UICONTROL **Usuário e projeto**] | Os usuários associados às solicitações selecionadas estarão temporariamente impedidos de executar solicitações de relatórios para os projetos associados. |
+      | [!UICONTROL **Usuário e projeto**] | Usuários(as) associados(as) às solicitações selecionadas serão temporariamente restringidos de executar solicitações de relatórios para os projetos associados. |
       | [!UICONTROL **Usuário**] | Usuários(as) associados(as) às solicitações selecionadas serão temporariamente restringidos(as) de fazer solicitações de relatórios. |
       | [!UICONTROL **Projeto**] | Os projetos associados às solicitações selecionadas ficarão temporariamente fechados a todas as solicitações de relatórios. |
       | [!UICONTROL **Restrito para**] | Escolha por quanto tempo as solicitações serão restritas. Você pode escolher 1 minuto (padrão), 5 minutos, 10 minutos, 15 minutos ou 30 minutos. <!-- double-check this --><p>Não é possível remover uma restrição antecipadamente depois que ela é definida.</p> |
@@ -99,9 +97,9 @@ Você pode cancelar todas as solicitações associadas a um ou mais usuários. A
 
       | Opção | Função |
       |---------|----------|
-      | [!UICONTROL **Usuário e projeto**] | Os usuários selecionados serão temporariamente impedidos de fazer qualquer solicitação de relatório para os projetos associados. <p>Essa é a opção menos restritiva.</p> |
-      | [!UICONTROL **Usuário**] | Os usuários selecionados serão temporariamente impedidos de fazer qualquer solicitação de relatório. |
-      | [!UICONTROL **Projeto**] | Os projetos associados aos usuários selecionados serão impedidos de qualquer solicitação de relatório feita por qualquer usuário. |
+      | [!UICONTROL **Usuário e projeto**] | Usuários(as) selecionados(as) serão temporariamente restringidos(as) de fazer solicitações de relatórios para os projetos associados. <p>Essa é a opção menos restritiva.</p> |
+      | [!UICONTROL **Usuário**] | Usuários(as) selecionados(as) serão temporariamente restringidos(as) de fazer solicitações de relatórios. |
+      | [!UICONTROL **Projeto**] | Os projetos associados a usuários(as) selecionados(as) ficarão fechados a quaisquer solicitações de relatórios feitas por um(a) usuário(a). |
       | [!UICONTROL **Restrito para**] | Escolha por quanto tempo as solicitações serão restritas. Você pode escolher 1 minuto (padrão), 5 minutos, 10 minutos, 15 minutos ou 30 minutos. <!--double-check this--> <p>Não é possível remover uma restrição antecipadamente depois que ela é definida.</p> |
 
       {style="table-layout:auto"}
@@ -140,8 +138,8 @@ Você pode cancelar todas as solicitações associadas a um ou mais projetos. Ao
 
       | Opção | Função |
       |---------|----------|
-      | [!UICONTROL **Usuário e projeto**] | Os projetos selecionados estarão temporariamente restritos a quaisquer solicitações de relatórios feitas pelos usuários associados.<p>Essa é a opção menos restritiva.</p> |
-      | [!UICONTROL **Usuário**] | Os usuários associados aos projetos selecionados não poderão fazer solicitações de relatórios. |
+      | [!UICONTROL **Usuário e projeto**] | Os projetos selecionados ficarão temporariamente fechados a solicitações de relatórios feitas por usuários(as) associados(as).<p>Essa é a opção menos restritiva.</p> |
+      | [!UICONTROL **Usuário**] | Usuários(as) associados(as) aos projetos selecionados serão restringidos(as) de fazer solicitações de relatórios. |
       | [!UICONTROL **Projeto**] | Os projetos selecionados estarão temporariamente restritos a quaisquer solicitações de relatórios feitas por qualquer usuário do. |
       | [!UICONTROL **Restrito para**] | Escolha por quanto tempo as solicitações serão restritas. Você pode escolher 1 minuto (padrão), 5 minutos, 10 minutos, 15 minutos ou 30 minutos. <!--double-check this--> <p>Não é possível remover uma restrição antecipadamente depois que ela é definida.</p> |
 

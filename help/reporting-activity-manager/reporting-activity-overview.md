@@ -3,7 +3,7 @@ title: Visão geral do Gerenciador de atividades de relatórios
 description: Saiba mais sobre como usar o Gerente de atividade de relatórios para diagnosticar e corrigir problemas de capacidade durante o pico dos relatórios.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: cdbe7953fca701d1791c74ec7fb7f6ff9fa40801
+source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 23%
@@ -11,8 +11,6 @@ ht-degree: 23%
 ---
 
 # Gerenciador de Atividades de relatórios visão geral
-
-{{release-limited-testing}}
 
 A variável [!UICONTROL Gerenciador de atividades de relatórios] O está disponível para administradores do.
 
