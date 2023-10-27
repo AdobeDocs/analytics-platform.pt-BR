@@ -5,9 +5,9 @@ title: Enviar dados de Customer Journey Analytics para outras pessoas por e-mail
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 88cbea4ebebe68314a5de471bdf13a4d7760db0e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 58%
 
 ---
@@ -88,7 +88,7 @@ Para obter mais informações, consulte [Projetos agendados](/help/components/sc
 
 >[!NOTE]
 >
->A opção de proteger com senha um projeto agendado aparece somente para clientes do Customer Journey Analytics que compraram o [Healthcare Shield](https://business.adobe.com/br/solutions/experience-cloud-for-healthcare.html) produto complementar.
+>A opção de proteger com senha um projeto agendado aparece somente para clientes do Customer Journey Analytics que compraram o [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html) produto complementar.
 
 A Adobe usa a senha para criptografar projetos agendados, sejam eles enviados nos formatos .pdf ou .csv.
 
