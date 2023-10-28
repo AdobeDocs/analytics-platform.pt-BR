@@ -4,9 +4,9 @@ description: Medir o engajamento do usuário ao longo do tempo.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: análise do produto
-source-git-commit: 96b50b205fe3b972da9660002f40b6fe2b80cf02
+source-git-commit: 713d70a444b3dba81a94d4f472b3ca7e0b39d742
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '621'
 ht-degree: 2%
 
 ---
@@ -46,6 +46,10 @@ A variável [!UICONTROL Uso] view oferece as seguintes configurações de gráfi
 Adicionar dados adicionais ao gráfico.
 
 * **[!UICONTROL Mostrar anomalias]**: Execuções [detecção de anomalias](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) análise de tendências. Outliers são exibidos como pontos nos quais você pode passar o mouse para obter mais informações.
+* **[!UICONTROL Sobreposição de linha de tendência]**: adiciona uma linha de tendência ao gráfico, permitindo que você veja a direção geral que seus dados tomam dentro do período especificado.
+   * [!UICONTROL Linear]: um modelo de regressão linear. Recomendado para dados que aumentam ou diminuem a uma taxa estável.
+   * [!UICONTROL Logarítmico]: um modelo de regressão de linha curva. Recomendado para dados com nivelamento ao longo do tempo.
+   * [!UICONTROL Média móvel]: uma linha suavizada que calcula a média do período anterior de cada ponto. Recomendado para dados que possuem ciclos regulares. Os períodos de média móvel disponíveis dependem do intervalo de datas selecionado.
 
 ## Aplicar comparação de tempo
 
