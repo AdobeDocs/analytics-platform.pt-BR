@@ -83,7 +83,7 @@ Desde a assimilação de dados até o acesso direto ao SQL, vários componentes 
 
 * [Query Service da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR): use o SQL padrão para recuperar dados da Adobe Experience Platform, como dados de solução da Adobe, dados próprios do cliente ou quaisquer outros dados da Platform. É uma ferramenta sem servidor que permite que você participe de qualquer conjunto de dados e capture os resultados da consulta como um novo conjunto de dados para usar em relatórios ou para assimilação no Serviço de perfil. Você pode usar o Query Service da Experience Platform para criar ecossistemas de análise de dados, criando uma imagem dos consumidores em seus vários canais de interação. Esses canais podem incluir sistemas de ponto de venda, Web, móvel, CRM e assim por diante.
 * [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR):
-* [Serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR)
+* [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR)
 
 ## Vídeos
 
