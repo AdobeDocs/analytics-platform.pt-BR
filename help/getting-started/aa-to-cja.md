@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: a67c12a7b5244b7802eba2cbcbfdb320802d088b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1488'
 ht-degree: 100%
 
@@ -78,7 +78,7 @@ Esse método amplia muito as possibilidades de coleta de dados: não há mais um
 
 Os seguintes recursos ou componentes do Adobe Analytics não são compatíveis:
 
-* Filtragem de bot
+* Filtragem de bots
 * Medição de mídia de streaming
 * Transmissão ao vivo ou acionadores de transmissão ao vivo
 
