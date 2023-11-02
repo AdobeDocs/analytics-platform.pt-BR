@@ -4,7 +4,7 @@ description: Configure como uma métrica é formatada.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 6945026bd452e1dabe90812f8d056f19aac71490
+source-git-commit: 387c787dba4caa9db82d46071e23a2131043c8c6
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 30%
@@ -80,7 +80,7 @@ Após o tempo do relatório, o valor da métrica e o código de moeda original s
 
 +++ Até que ponto as taxas de conversão diárias são mantidas?
 
-As taxas de conversão diárias são mantidas nos últimos quatro anos?
+As taxas de conversão diárias são mantidas nos últimos quatro anos.
 
 +++
 
