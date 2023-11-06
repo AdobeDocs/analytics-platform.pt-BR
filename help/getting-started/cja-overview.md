@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 source-git-commit: 9aa40a708adecdce76b623aa1d5647bd60286ef8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '934'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ A Adobe Experience Platform permite centralizar e padronizar dados e conteúdo d
 
 Desde a assimilação de dados até o acesso direto ao SQL, vários componentes da Experience Platform são fundamentais para o Customer Journey Analytics e a complementam:
 
-* [Query Service da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR): use o SQL padrão para recuperar dados da Adobe Experience Platform, como dados de solução da Adobe, dados próprios do cliente ou quaisquer outros dados da Platform. É uma ferramenta sem servidor que permite que você participe de qualquer conjunto de dados e capture os resultados da consulta como um novo conjunto de dados para usar em relatórios ou para assimilação no Serviço de perfil. Você pode usar o Query Service da Experience Platform para criar ecossistemas de análise de dados, criando uma imagem dos consumidores em seus vários canais de interação. Esses canais podem incluir sistemas de ponto de venda, Web, móvel, CRM e assim por diante.
+* [Query Service da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR): use o SQL padrão para recuperar dados da Adobe Experience Platform, como dados de solução da Adobe, dados próprios do cliente ou quaisquer outros dados da Platform. É uma ferramenta sem servidor que permite juntar qualquer conjunto de dados e capturar os resultados da consulta como um novo conjunto de dados para usar em relatórios ou para assimilação no Profile Service. Você pode usar o Query Service da Experience Platform para criar ecossistemas de análise de dados, criando uma imagem dos consumidores em seus vários canais de interação. Esses canais podem incluir sistemas de ponto de venda, Web, móvel, CRM e assim por diante.
 * [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR):
 * [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR)
 
