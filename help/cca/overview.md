@@ -5,8 +5,8 @@ exl-id: 69763313-de27-4487-8e32-8277f1f693d8
 solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 4c6e968272b554188243b772bd159fe8174b3c3b
-workflow-type: ht
+source-git-commit: 98c0f2887789310dc387f1bf7ce5298722a0797e
+workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 100%
 
@@ -60,7 +60,6 @@ A Análise de vários canais  é um recurso inovador e robusto, mas tem limitaç
 * O campo de ID transitória deve conter um único tipo de ID (ou seja, IDs de um único namespace). Por exemplo, o campo ID transitória não deve conter uma combinação de IDs de logon e IDs de email.
 * Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID transitória, a compilação em campo será escolhida por ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação baseada em campo escolherá Ann.
 * Se um dispositivo for compartilhado por várias pessoas e o número total de transições entre usuários exceder 50.000, o CCA interrompe a compilação de dados para esse dispositivo.
-
 
 ## Habilitar a Análise de vários canais
 
