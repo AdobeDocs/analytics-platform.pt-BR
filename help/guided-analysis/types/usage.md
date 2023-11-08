@@ -4,9 +4,9 @@ description: Medir o engajamento do usuário ao longo do tempo.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: análise do produto
-source-git-commit: 713d70a444b3dba81a94d4f472b3ca7e0b39d742
+source-git-commit: e39ab8af98e2bf2a4e63ef49e0ebce472cc1f45f
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '700'
 ht-degree: 2%
 
 ---
@@ -30,9 +30,9 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **[!UICONTROL Eventos]**: os eventos que você deseja medir. Cada evento selecionado é representado como uma linha colorida ou um conjunto de barras, dependendo do tipo de gráfico. Uma linha que representa o evento de tendência é adicionada à tabela. É possível incluir até cinco eventos.
-* **[!UICONTROL Pessoas]**: os segmentos que você deseja medir. Cada segmento selecionado dobra o número de linhas no gráfico e nas linhas na tabela. É possível incluir até cinco segmentos.
-* **[!UICONTROL Detalhamento]**: criar uma linha de tendência separada por item de dimensão. Uma única dimensão de detalhamento é compatível.
+* **[!UICONTROL Eventos]**: os eventos que você deseja medir. Cada evento selecionado é representado como uma série de gráficos e uma linha de tabela. É possível incluir até cinco eventos.
+* **[!UICONTROL Pessoas]**: os segmentos que você deseja medir. Cada segmento selecionado dobra o número de séries de gráficos e linhas de tabela. É possível incluir até cinco segmentos.
+* **[!UICONTROL Detalhamento da propriedade]**: divide a série de gráficos e as linhas de tabela pelos valores da propriedade selecionada. Há suporte para uma única propriedade de detalhamento. Os 20 valores principais são exibidos na tabela e até dez valores podem ser exibidos no gráfico. Você pode ocultar ou expor uma linha no gráfico alternando a variável ![Mostrar ícone ocultar](../assets/hide-in-chart.png) ícone.
 
 ## Configurações de gráficos
 
@@ -43,13 +43,13 @@ A variável [!UICONTROL Uso] view oferece as seguintes configurações de gráfi
 
 ## Sobreposições
 
-Adicionar dados adicionais ao gráfico.
+Adicionar dados adicionais ao gráfico. Quando mais de uma série estiver visível no gráfico, as sobreposições serão exibidas somente ao passar o mouse.
 
-* **[!UICONTROL Mostrar anomalias]**: Execuções [detecção de anomalias](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) análise de tendências. Outliers são exibidos como pontos nos quais você pode passar o mouse para obter mais informações.
-* **[!UICONTROL Sobreposição de linha de tendência]**: adiciona uma linha de tendência ao gráfico, permitindo que você veja a direção geral que seus dados tomam dentro do período especificado.
-   * [!UICONTROL Linear]: um modelo de regressão linear. Recomendado para dados que aumentam ou diminuem a uma taxa estável.
-   * [!UICONTROL Logarítmico]: um modelo de regressão de linha curva. Recomendado para dados com nivelamento ao longo do tempo.
-   * [!UICONTROL Média móvel]: uma linha suavizada que calcula a média do período anterior de cada ponto. Recomendado para dados que possuem ciclos regulares. Os períodos de média móvel disponíveis dependem do intervalo de datas selecionado.
+* **[!UICONTROL Detecção de anomalias]**: Execuções [detecção de anomalias](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) análise de tendências. Outliers são exibidos como pontos nos quais você pode passar o mouse para obter mais informações.
+* **[!UICONTROL Sobreposição de linha de tendência]**: adiciona uma linha de tendência ao gráfico, o que ajuda a distinguir um padrão mais claro nos dados.
+   * [!UICONTROL Linear]: cria uma linha de regressão reta. Melhor para dados lineares simples que aumentam ou diminuem a uma taxa estável. Equação: `y = a + b * x`
+   * [!UICONTROL Logarítmico]: cria uma linha de regressão curva. Melhor para dados que aumentam ou diminuem rapidamente, depois se tornam mais nivelados. Equação: `y = a + b * log(x)`
+   * [!UICONTROL Média móvel]: cria uma linha de tendência suave com base em um conjunto de médias. Também conhecida como média variável, uma média móvel usa um número específico de pontos de dados anteriores (determinado por sua seleção), faz a média deles e usa a média como o ponto na linha. Os exemplos incluem média móvel de sete dias ou média móvel de quatro semanas. As opções de média móvel disponíveis dependem do intervalo e do intervalo de datas selecionados.
 
 ## Aplicar comparação de tempo
 
