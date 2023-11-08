@@ -4,7 +4,7 @@ description: Como criar anotações no Espaço de trabalho.
 role: User, Admin
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 76%
@@ -27,6 +27,8 @@ No entanto, os administradores podem fornecer a permissão [!UICONTROL Criação
 | **No Espaço de trabalho, acesse [!UICONTROL Componentes] > [!UICONTROL Criar anotação].** | O [!UICONTROL Construtor de anotações] se abre. |
 | **Usar esta tecla de atalho** para abrir o Construtor de anotações: (PC) `ctrl` `shift` + o, (Mac) `shift` + `command` + o | Observe que ao usar a tecla de atalho para criar uma anotação, você cria uma anotação de um dia para a data atual, sem nenhum escopo pré-selecionado (métricas ou dimensões). |
 | **Use o [API de anotações Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | As APIs de anotações Customer Journey Analytics permitem criar, atualizar ou recuperar anotações de forma programática por meio do Adobe Developer. Essas APIs usam os mesmos dados e métodos que a Adobe usa na interface do usuário do produto. |
+
+{style="table-layout:auto"}
 
 1. Preencha os elementos do [!UICONTROL Construtor de anotações].
 

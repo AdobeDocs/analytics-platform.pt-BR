@@ -3,9 +3,9 @@ description: Use o Número do resumo e as Visualizações de alteração para ex
 title: Número do resumo e alteração do resumo
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '458'
+source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+workflow-type: tm+mt
+source-wordcount: '395'
 ht-degree: 100%
 
 ---
@@ -30,16 +30,7 @@ Clique na engrenagem **Configurações de visualização** no canto superior dir
 | Abreviar valor | Escolha abreviar valores e mostrar até 3 casas decimais. |
 | Resumir valor por | Opte por exibir o máximo, mínimo, médio, mediano ou soma para uma seleção de dados. |
 
-
-Clique na engrenagem **Configurações de visualização** no canto superior direito para definir as configurações de Número do resumo:
-
-| Configuração | Definição |
-|--- |--- |
-| Porcentagens | Exiba porcentagens em vez de números brutos. |
-| Legenda visível | Exiba informações sobre a métrica mostrada. |
-| Abreviar valor | Escolha abreviar valores e mostrar até 3 casas decimais. |
-| Resumir valor por | Opte por exibir o máximo, mínimo, médio, mediano ou soma para uma seleção de dados. |
-
+{style="table-layout:auto"}
 
 ## Visualização da alteração do resumo {#summary-change}
 
