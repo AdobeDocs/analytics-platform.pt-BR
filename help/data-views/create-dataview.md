@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 source-git-commit: c106e178c5aecdaf061001247a1ee6ef183d043e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1431'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Em seguida, você pode definir os componentes de uma visualização de dados, o 
 
 >[!IMPORTANT]
 >
->Até 5.000 métricas e 5.000 dimensões podem ser adicionadas a uma única visualização de dados.
+>Até 5 mil métricas e 5 mil dimensões podem ser adicionadas a uma mesma visualização de dados.
 
 1. Selecione a guia **[!UICONTROL Componentes]**.
 
