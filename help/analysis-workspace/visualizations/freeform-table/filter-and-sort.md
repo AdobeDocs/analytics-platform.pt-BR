@@ -3,14 +3,15 @@ description: Documentação que descreve como filtrar e classificar tabelas no A
 title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 5469585897e483d721326fd6859ad74087407825
+source-git-commit: 2a60ed6dddf70b58c7c6e742eb01b9468cc2dd83
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 73%
+source-wordcount: '958'
+ht-degree: 67%
 
 ---
 
-# Filtrar e classificar tabelas
+
+# Filtrar e classificar tabelas de forma livre
 
 As tabelas de forma livre do Analysis Workspace são a base para a análise interativa de dados. Sendo assim, elas podem conter milhares de linhas de informação. Filtrar e classificar os dados pode ser essencial para encontrar as informações mais importantes de maneira eficiente.
 
@@ -18,13 +19,24 @@ As tabelas de forma livre do Analysis Workspace são a base para a análise inte
 
 >[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
-## Filtrar tabelas {#section_36E92E31442B4EBCB052073590C1F025}
+## Filtrar tabelas
 
 Os filtros do Analysis Workspace ajudam você a encontrar as informações mais importantes.
 
 >[!NOTE]
 >
 > Somente itens de dimensão dinâmicos podem ser filtrados conforme descrito nesta seção. Itens de dimensão estáticos não podem ser filtrados. Para obter mais informações, consulte [Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+
+## Filtrar linhas da tabela de forma livre
+
+Você pode usar vários métodos para filtrar linhas de uma tabela de forma livre. 
+
+- Clique no X na linha
+- Clique com o botão direito do mouse em > Linhas selecionadas excluídas
+- Filtros de tabela
+- Segmentação
+
+Certifique-se de ler como cada método afeta [Totais de tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### Excluir rapidamente linhas específicas de uma tabela
 
@@ -39,6 +51,13 @@ Para excluir rapidamente linhas específicas de uma tabela de forma livre:
 1. Passe o mouse sobre a linha que deseja excluir e selecione o ícone x.
 
    Mantenha pressionada a tecla Shift para selecionar um intervalo de linhas, ou mantenha pressionada a tecla Command (no Mac) ou a tecla Ctrl (no Windows) para selecionar várias linhas.
+
+### Clique com o botão direito do mouse em > Excluir linhas selecionadas
+
+1. Selecione uma ou mais linhas.
+1. Clique com o botão direito e selecione **[!UICONTROL Excluir Linhas Selecionadas]**.
+
+   Essa ação removerá as linhas da tabela e aplicará um filtro de tabela.
 
 ### Aplicar um filtro simples ou avançado a uma tabela
 
@@ -59,7 +78,7 @@ Para filtrar dados em tabelas de forma livre:
 
 1. (Opcional) Para filtrar por critérios diferentes ou por vários critérios, selecione [!UICONTROL **Mostrar avançado**].
 
-   As opções disponíveis são as seguintes
+   As seguintes opções de filtro avançado estão disponíveis:
 
    | Opção | Função |
    |---------|----------|
@@ -72,6 +91,10 @@ Para filtrar dados em tabelas de forma livre:
 
    O ícone de **Filtro** ![Ícone de filtro azul da tabela filtrada](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) fica azul quando um filtro é aplicado à tabela.
 
+### Filtros
+
+Consulte nossa [Filtrar documentação](/help/components/filters/filters-overview.md) para obter mais detalhes.
+
 ## Classificar tabelas
 
 Você pode classificar os dados de uma tabela de forma livre por qualquer coluna no Analysis Workspace que seja uma dimensão ou uma métrica.
@@ -82,8 +105,8 @@ Um ícone de seta para baixo ![Ícone de seta para baixo na tabela classificada 
 
    Considere o seguinte ao classificar:
 
-   * A seta para baixo classifica em ordem decrescente e a seta para cima (padrão), em ordem crescente.
-   * É possível classificar dimensões em ordem alfabética ou numérica. Por exemplo, pode ser que você tenha etapas numeradas em um fluxo de trabalho e deseje classificar pelo número da etapa. É possível classificar uma dimensão por data. Ou você pode classificar as fontes de dados em ordem alfabética, como na imagem a seguir.
+   - A seta para baixo classifica em ordem decrescente e a seta para cima (padrão), em ordem crescente.
+   - É possível classificar dimensões em ordem alfabética ou numérica. Por exemplo, pode ser que você tenha etapas numeradas em um fluxo de trabalho e deseje classificar pelo número da etapa. É possível classificar uma dimensão por data. Ou você pode classificar as fontes de dados em ordem alfabética, como na imagem a seguir.
 
    ![](assets/sort-dimensions.png)
 
