@@ -4,10 +4,10 @@ description: Explique como assimilar dados no Customer Journey Analytics por mei
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3607'
-ht-degree: 86%
+source-wordcount: '3616'
+ht-degree: 85%
 
 ---
 
@@ -59,7 +59,7 @@ Para configurar o esquema:
 
    1. Selecionar **[!UICONTROL Evento de experiência]**.
 
-      ![Criar um esquema](./assets/create-ee-schema-wizard-step-1.png)
+      ![Criar um esquema destacando o Evento de experiência](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -72,7 +72,7 @@ Para configurar o esquema:
 
    1. Insira um **[!UICONTROL Nome de exibição do esquema]** para o esquema e (opcional) uma **[!UICONTROL Descrição]**.
 
-      ![Dê um nome ao esquema](./assets/create-ee-schema-wizard-step-2.png)
+      ![Janela Criar esquema mostrando o Nome dos campos de esquema](./assets/create-ee-schema-wizard-step-2.png)
 
    1. Selecione **[!UICONTROL Concluir]**.
 

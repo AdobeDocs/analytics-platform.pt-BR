@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configurar locais de exportação da nuvem
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1502'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    Selecione o [!UICONTROL **Contas de localização**] , selecione o ícone de 3 pontos em uma conta existente à qual deseja adicionar um local e selecione [!UICONTROL **Adicionar localização**].
 
-   ![Adicionar localização à conta existente](assets/add-location-existing-account.png)
+   ![Conta GCP e menu suspenso de reticências mostrando Adicionar localização selecionada](assets/add-location-existing-account.png)
 
    A caixa de diálogo Local é exibida.
 

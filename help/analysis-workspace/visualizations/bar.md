@@ -3,10 +3,10 @@ description: A visualização de Barras mostra barras verticais que representam 
 title: Barra e barra empilhada
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '94'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Esta visualização mostra barras verticais que representam vários valores de uma ou mais métricas.
 
-![](assets/bar.png)
+![Visualização de barra virtual mostrando várias métricas, incluindo Exibições de página, Visitas, Entradas e Saídas.](assets/bar.png)
 
 Uma opção suspensa de granularidade nas configurações de visualização permite alterar uma visualização com tendência (por exemplo, linha, barra) de diária para semanal, mensal etc.
 
@@ -24,8 +24,8 @@ Uma opção suspensa de granularidade nas configurações de visualização perm
 
 Esta visualização se parece com um gráfico de barras, mas apresenta barras de série empilhadas.
 
-![](assets/bar-stacked.png)
+![Cartão de barras empilhadas mostrando várias métricas.](assets/bar-stacked.png)
 
 Uma nova configuração de visualização nas visualizações empilhadas por barra transforma o gráfico em uma visualização 100% empilhada:
 
-![](assets/stacked_100_percent.png)
+![Um gráfico de barras 100% empilhadas.](assets/stacked_100_percent.png)

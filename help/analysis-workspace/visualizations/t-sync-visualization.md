@@ -4,10 +4,10 @@ keywords: Analysis Workspace;Sincronizar visualização com a fonte de dados
 title: Gerenciar fontes de dados
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
-source-git-commit: c36dddb31261a3a5e37be9c4566f5e7ec212f53c
-workflow-type: ht
-source-wordcount: '569'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ O gerenciamento de uma fonte de dados permite exibir a fonte de dados ou bloquea
 1. Na tabela de dados, selecione as células (fonte de dados) que você deseja associar à visualização.
 1. Na visualização, clique no ponto ao lado do título para abrir a caixa de diálogo **[!UICONTROL Fonte de dados]**. Selecione **[!UICONTROL Exibir fonte de dados]** ou **[!UICONTROL Bloquear seleção]**.
 
-   ![](assets/manage-data-source.png)
+   ![A caixa de diálogo da opção Fonte de dados mostrando as opções descritas na próxima seção.](assets/manage-data-source.png)
 
    A sincronização de uma visualização a uma célula da tabela cria uma nova tabela (oculta) e coloca códigos de cor na visualização sincronizada à tabela.
 
@@ -39,10 +39,10 @@ Essa arquitetura difere da anterior no sentido de que o Analysis Workspace já n
 
 * É possível criar uma visualização de resumo e bloqueá-la a uma célula na tabela a partir da qual você a criou. Ao ativar a opção “Exibir fonte de dados”, ela mostra exatamente de onde vem a informação na tabela. Os dados de origem aparecerão em cinza:
 
-   ![](assets/data-source2.png)>
+  ![Local da fonte de dados em uma planilha.](assets/data-source2.png)>
 * É possível adicionar várias visualizações e extraí-las de diferentes células na mesma tabela, como mostrado abaixo. A tabela é igual à mostrada no exemplo acima, mas a célula extraída e a métrica são diferentes:
 
-   ![](assets/data-source3.png)>
+  ![Local da fonte de dados com visualizações adicionadas provenientes de várias células](assets/data-source3.png)>
 * Você pode ver se há visualizações conectadas a uma tabela de forma livre ou tabela coorte ao clicar no ponto esquerdo superior (Configurações da fonte de dados). Passar o mouse destacará a visualização vinculada e clicar nela levará você para o link especificado.
 
-   ![](assets/linked-visualizations.png)>
+  ![Configurações da fonte de dados que destacam uma visualização vinculada para as Principais exibições da página.](assets/linked-visualizations.png)>

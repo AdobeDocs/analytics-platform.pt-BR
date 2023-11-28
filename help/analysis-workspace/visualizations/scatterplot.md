@@ -3,10 +3,10 @@ title: Gráfico de dispersão
 description: Uma visualização que mostra a relação entre até três métricas.
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 94%
 
 ---
 
@@ -20,4 +20,4 @@ A visualização do gráfico de dispersão mostra a relação entre itens de dim
 * A terceira coluna determina o raio do ponto.
 * Todas as colunas subsequentes em uma tabela de forma livre são ignoradas pela visualização do gráfico de dispersão.
 
-![Gráfico de dispersão](assets/scatter.png)
+![Exemplo de gráfico de dispersão mostrando vários itens de dimensão ](assets/scatter.png)

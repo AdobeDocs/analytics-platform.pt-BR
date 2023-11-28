@@ -4,10 +4,10 @@ description: Saiba como o Customer Journey Analytics permite usar o Analysis Wor
 exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 9aa40a708adecdce76b623aa1d5647bd60286ef8
-workflow-type: ht
-source-wordcount: '934'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ O Customer Journey Analytics é a solução analítica de próxima geração da 
 
 A arquitetura de alto nível do Customer Journey Analytics pode ser vista aqui:
 
-![arquitetura](assets/cja-architecture.png)
+![Arquitetura de Customer Journey Analytics explicada nesta seção](assets/cja-architecture.png)
 
 Assista a um vídeo com uma visão geral do Customer Journey Analytics:
 

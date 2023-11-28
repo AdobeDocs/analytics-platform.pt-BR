@@ -3,9 +3,9 @@ description: Documentação que descreve como filtrar e classificar tabelas no A
 title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
-source-git-commit: 2a60ed6dddf70b58c7c6e742eb01b9468cc2dd83
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '966'
 ht-degree: 67%
 
 ---
@@ -67,7 +67,7 @@ Para filtrar dados em tabelas de forma livre:
 
 1. Selecione o ícone **Filtro** quando for exibido.
 
-   ![Ícone de Filtro em uma tabela](assets/table-filter-icon.png)
+   ![Tabela de forma livre destacando o ícone Filtro.](assets/table-filter-icon.png)
 
    As opções disponíveis são as seguintes:
 
@@ -108,6 +108,6 @@ Um ícone de seta para baixo ![Ícone de seta para baixo na tabela classificada 
    - A seta para baixo classifica em ordem decrescente e a seta para cima (padrão), em ordem crescente.
    - É possível classificar dimensões em ordem alfabética ou numérica. Por exemplo, pode ser que você tenha etapas numeradas em um fluxo de trabalho e deseje classificar pelo número da etapa. É possível classificar uma dimensão por data. Ou você pode classificar as fontes de dados em ordem alfabética, como na imagem a seguir.
 
-   ![](assets/sort-dimensions.png)
+   ![A visualização das Fontes de dados destaca o ícone de classificação.](assets/sort-dimensions.png)
 
 

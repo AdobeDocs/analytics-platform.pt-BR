@@ -3,10 +3,10 @@ description: 'A comparação de datas no Analysis Workspace permite usar qualque
 title: Comparação de datas
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '729'
+ht-degree: 87%
 
 ---
 
@@ -21,7 +21,7 @@ A análise demanda contexto, e esse contexto é normalmente fornecido por um per
 1. Crie uma tabela de forma livre, com qualquer dimensão e métrica que desejar comparar em um período.
 1. Clique com o botão direito na linha da tabela e selecione **[!UICONTROL Comparar períodos]**.
 
-   ![](assets/compare-time.png)
+   ![Linha de tabela com Comparar Períodos de Tempo selecionada](assets/compare-time.png)
 
    >[!IMPORTANT]
    >
@@ -41,13 +41,13 @@ A análise demanda contexto, e esse contexto é normalmente fornecido por um per
 
 1. O resultado da comparação aparece assim:
 
-   ![](assets/compare-time-result.png)
+   ![Tabela de forma livre que mostra uma comparação de intervalos de datas e alteração de porcentagem.](assets/compare-time-result.png)
 
    As linhas na coluna de Alteração na porcentagem aparecem em vermelho para valores negativos e em verde para positivos.
 
 1. (Opcional) Como em qualquer projeto do Espaço de trabalho, é possível criar visualizações baseadas nestas comparações de tempo. Por exemplo, aqui está um gráfico de barras:
 
-   ![](assets/compare-time-barchart.png)
+   ![Gráfico de barras de projeto do Workspace.](assets/compare-time-barchart.png)
 
    Observe que para mostrar a mudança de porcentagem no gráfico de barras, você deve ter a configuração [!UICONTROL Porcentagens] selecionada nas [!UICONTROL Configurações de visualização].
 
@@ -55,7 +55,7 @@ A análise demanda contexto, e esse contexto é normalmente fornecido por um per
 
 A partir de agora, é possível adicionar um período de tempo a cada coluna de uma tabela, permitindo que você adicione períodos diferentes daqueles definidos no seu calendário. Essa é mais uma forma de comparar datas.
 
-1. Clique com o botão direito na tabela e selecione **[!UICONTROL Adicionar coluna de período]** ![](assets/add-time-period-column.png)
+1. Clique com o botão direito na tabela e selecione **[!UICONTROL Adicionar coluna de período]** ![Lista de colunas da tabela com Adicionar coluna de período realçada ](assets/add-time-period-column.png)
 
 1. Dependendo de como configurou o intervalo de data da tabela, você tem as opções a seguir para comparação:
 
@@ -71,11 +71,11 @@ A partir de agora, é possível adicionar um período de tempo a cada coluna de 
 
 1. O período de tempo será inserido no topo da coluna selecionada:
 
-   ![](assets/add-time-period-column2.png)
+   ![Tabela de forma livre que mostra Ocorrências para o período atual do calendário e o mês anterior.](assets/add-time-period-column2.png)
 
 1. É possível adicionar quantas colunas desejar, assim como misturar e correlacionar diferentes intervalos de data:
 
-   ![](assets/add-time-period-column4.png)
+   ![Tabela de forma livre que mostra as ocorrências deste mês, do mês anterior, do mês anterior um ano atrás e uma semana do mês anterior um ano atrás.](assets/add-time-period-column4.png)
 
 1. Além disso, é possível classificar em cada coluna, o que alterará a ordem de dias dependendo da coluna que for classificada.
 
@@ -83,7 +83,7 @@ A partir de agora, é possível adicionar um período de tempo a cada coluna de 
 
 Uma nova configuração das tabelas permite **[!UICONTROL Alinhar datas de cada coluna para iniciarem na mesma linha (aplica-se a toda a tabela)]**. “Aplica-se a toda a tabela” significa que se você fizer, por exemplo, um detalhamento na tabela, e alterar essa configuração para o detalhamento, modificará a configuração de toda a tabela.
 
-![](assets/date-comparison-setting.png)
+![Pop-up Tabela de forma livre com Configurações de tabela mostrando o alinhamento de datas de cada coluna para iniciarem na mesma linha selecionada.](assets/date-comparison-setting.png)
 
 >[!IMPORTANT]
 >
@@ -91,7 +91,7 @@ Uma nova configuração das tabelas permite **[!UICONTROL Alinhar datas de cada 
 
 Exemplo: ao escolher alinhar as datas em uma comparação de mês a mês de outubro a setembro de 2016, a coluna da esquerda iniciará em 1° de outubro e a coluna da direita em 1° de setembro:
 
-![](assets/add-time-period-column3.png)
+![Comparação mostrando porcentagens mês a mês.](assets/add-time-period-column3.png)
 
 <!-- 
 

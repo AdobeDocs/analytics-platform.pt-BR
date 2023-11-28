@@ -3,10 +3,10 @@ title: Tabela de forma livre
 description: As tabelas de forma livre são a base para a análise de dados no Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
-source-git-commit: 43c8af6f9010354258a702fb702a330873d9cb8e
-workflow-type: ht
-source-wordcount: '517'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 91%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 100%
 
 No Analysis Workspace, uma Tabela de forma livre é a base para a análise de dados interativa. Você pode arrastar e soltar uma combinação de [componentes](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=pt-BR) em linhas e colunas para criar uma tabela personalizada para sua análise. À medida que cada componente é solto, a tabela é atualizada imediatamente para que você possa analisar e pesquisar com mais detalhes rapidamente.
 
-![](assets/opening-section.png)
+![Tabela de forma livre que mostra componentes em linhas e colunas, incluindo visitas e pedidos online para várias páginas da Web.](assets/opening-section.png)
 
 ## Tabelas automatizadas
 
 A maneira mais rápida de criar uma tabela é soltar os componentes diretamente em um projeto, painel ou tabela de forma livre em branco. Uma tabela de forma livre será criada automaticamente para você em um formato recomendado. [Assista ao tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html?lang=pt-BR).
 
-![](assets/automated-table.png)
+![Um novo Painel com o componente de visitas colocado no espaço de trabalho.](assets/automated-table.png)
 
 ## Construtor de tabelas de forma livre
 
 Se preferir adicionar primeiro vários componentes à tabela e, em seguida, renderizar os dados, ative o Construtor de tabelas de forma livre. Com o construtor ativado, você pode arrastar e soltar em muitas dimensões, detalhamentos, métricas e filtros para criar tabelas que respondam a perguntas mais complexas. Os dados não serão atualizados dinamicamente, serão atualizados assim que você clicar em **[!UICONTROL Criar]**.
 
-![](assets/table-builder.png)
+![Um Construtor de tabela de forma livre mostrando ](assets/table-builder.png)
 
 ## Interações de tabela
 
@@ -53,4 +53,4 @@ Saiba mais sobre todos os dados de [opções de exportação](https://experience
 
 Saiba mais sobre todos os dados de [opções de exportação](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/download-send.html?lang=pt-BR) do Analysis Workspace.
 
-![](assets/export-options.png)
+![Tabela de forma livre mostrando as opções de exportação e Copiar dados para a área de transferência selecionada.](assets/export-options.png)

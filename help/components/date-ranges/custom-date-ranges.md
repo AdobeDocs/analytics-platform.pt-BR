@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Criar intervalos de datas personalizados
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '248'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 85%
 
 ---
 
@@ -23,15 +23,15 @@ Os intervalos de datas são aplicados no nível do painel. Para adicionar um int
 
 O intervalo de datas personalizado a seguir mostra um intervalo de datas para “dois meses atrás” com uma visualização de Alteração do resumo, que mostra a alteração direcional.
 
-![](assets/date-range-two-months-ago.png)
+![Construtor de intervalo de datas mostrando Usar datas do acumulado para dois meses atrás](assets/date-range-two-months-ago.png)
 
 O intervalo de datas personalizado é exibido na parte superior do painel do componente [!UICONTROL Intervalo de datas] no seu projeto:
 
-![](assets/date-range-panel-two-months-ago.png)
+![Painel do componente Intervalo de datas com seta apontando para Dois meses atrás.](assets/date-range-panel-two-months-ago.png)
 
 Você pode arrastar esse intervalo de datas personalizado para uma coluna ao lado do intervalo de datas personalizado, acumulado mensalmente, usando o Último mês predefinido para uma comparação. Adicione uma visualização de Resumo de alterações e selecione os totais de cada coluna para mostrar a alteração direcional:
 
-![](assets/date-range-two-months-table.png)
+![Alteração de resumo mostrando e aumento de 14,45%.](assets/date-range-two-months-table.png)
 
 ## Usar um intervalo de datas do acumulado de 7 dias
 
@@ -41,7 +41,7 @@ No Construtor de intervalo de datas, você pode criar um intervalo de datas pers
 
 Por exemplo, você pode criar um intervalo de datas que especifica uma janela de acumulado de 7 dias, que terminou há uma semana:
 
-![](assets/create_date_range.png)
+![Construtor de intervalo de datas mostrando um intervalo de datas que especifica uma janela de rolagem de 7 dias.](assets/create_date_range.png)
 
 Use *`rolling daily`*.
 

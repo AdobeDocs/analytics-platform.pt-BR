@@ -4,10 +4,10 @@ description: Descreve como criar uma conexão com um conjunto de dados da Plataf
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
-source-git-commit: c4a4dcd0e4c0d7473570c2db3aa3d99e34c2a1cf
-workflow-type: ht
-source-wordcount: '2797'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '2798'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Você deve ter o pacote **Select** para adicionar um número ilimitado de conjun
 1. No Customer Journey Analytics, clique na guia **[!UICONTROL Conexões]**.
 1. Clique em **[!UICONTROL Criar nova conexão]**.
 
-   ![Configurações de conexão](assets/create-conn1.png)
+   ![Configurações de conexão sem título](assets/create-conn1.png)
 
 1. Defina as configurações de conexão.
 

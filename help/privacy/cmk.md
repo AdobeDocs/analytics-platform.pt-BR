@@ -3,10 +3,10 @@ title: Chaves gerenciadas pelo cliente
 description: Saiba como configurar chaves gerenciadas pelo cliente para o Customer Journey Analytics.
 exl-id: 08ece1cb-22b7-4b8d-be76-5414a810feb6
 feature: Privacy
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 66%
+source-wordcount: '338'
+ht-degree: 64%
 
 ---
 
@@ -28,7 +28,7 @@ Siga estas etapas para configurar o CMK para o Customer Journey Analytics:
 1. Conceda acesso ao aplicativo Adobe Azure para sua chave no cofre de chaves. Esta é a ID da aplicação da Adobe: 251e3919-1940-4296-bb8b-6b9a5e8a4805. [Saiba mais pela Microsoft](https://learn.microsoft.com/pt-br/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&amp;tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault)
 1. Crie um tíquete de Atendimento ao cliente da Adobe solicitando a configuração do CMK. Inclua o URI do Azure no seu tíquete. O URI pode ser encontrado no campo **Identificador de Chave** da sua Chave do Azure.
 
-   ![](assets/key-identifier.png)
+   ![Campos de identificador de chave que mostram o URI para https://cmkoberontest.vault.azure.net](assets/key-identifier.png)
 
 1. O Atendimento ao cliente do Adobe confirmará a conclusão do aplicativo CMK nos dados do Customer Journey Analytics.
 

@@ -4,10 +4,10 @@ title: Editar entradas no Dicionário de dados
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 45%
+source-wordcount: '380'
+ht-degree: 69%
 
 ---
 
@@ -23,7 +23,7 @@ Para editar um componente no Dicionário de dados:
 
 A janela do dicionário de dados é exibida.
 
-![Visualização do administrador do Dicionário de dados](assets/data-dictionary-admin.png)
+![View do administrador do Dicionário de Dados mostrando a Integridade do Dicionário](assets/data-dictionary-admin.png)
 
 1. Verifique se a visualização de dados correta está selecionada no menu suspenso. Por padrão, a visualização de dados em que você já está é exibida.
 
@@ -33,7 +33,7 @@ O tipo de componente pode ser identificado por cor e ícone. **Dimension** ![Íc
 
 {{dd-filter-criteria}}
 
-1. (Opcional) Selecione a **Ordenar** ícone ![Ícone Classificar componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), em seguida, selecione qualquer uma das seguintes opções de filtro para classificar a lista de componentes:
+1. (Opcional) Selecione o ícone de **Classificar**, ![Ícone de classificar componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), e selecione qualquer uma das seguintes opções de filtro para classificar a lista de componentes:
 
 {{components-sort-options}}
 

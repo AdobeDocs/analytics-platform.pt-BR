@@ -3,9 +3,10 @@ title: Cancelar solicitações de relatórios no Gerenciador de atividades de re
 description: Saiba mais sobre como usar o Gerente de atividade de relatórios para diagnosticar e corrigir problemas de capacidade durante o pico dos relatórios.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1473'
 ht-degree: 14%
 
 ---
@@ -50,7 +51,7 @@ Você pode cancelar solicitações individuais que estão consumindo uma grande 
 
    1. Ative a opção para [!UICONTROL **Restringir solicitações subsequentes**].
 
-      ![Restringir solicitações subsequentes](assets/restrict-subsequent-requests.png)
+      ![Cancelar 1 solicitação mostrando Restringir solicitações subsequentes selecionadas e a mensagem de Cancelamento.](assets/restrict-subsequent-requests.png)
 
    1. Escolha entre as seguintes opções:
 
@@ -91,7 +92,7 @@ Você pode cancelar todas as solicitações associadas a um ou mais usuários. A
 
    1. Ative a opção para [!UICONTROL **Restringir solicitações subsequentes**]
 
-      ![Restringir solicitações subsequentes por usuário](assets/restrict-subsequent-requests-user.png)
+      ![Cancele 1 solicitação mostrando a opção Restringir solicitações subsequentes por usuário selecionada.](assets/restrict-subsequent-requests-user.png)
 
    1. Escolha entre as seguintes opções:
 
@@ -132,7 +133,7 @@ Você pode cancelar todas as solicitações associadas a um ou mais projetos. Ao
 
    1. Ative a opção para [!UICONTROL **Restringir solicitações subsequentes**].
 
-      ![Restringir solicitações subsequentes por projeto](assets/restrict-subsequent-requests-project.png)
+      ![Cancelar 1 solicitação mostrando a opção Restringir solicitações subsequentes por projeto](assets/restrict-subsequent-requests-project.png)
 
    1. Escolha entre as seguintes opções:
 
@@ -188,7 +189,7 @@ Para cancelar solicitações por aplicativo:
 
    1. Ative a opção para [!UICONTROL **Restringir solicitações subsequentes**]
 
-      ![Restringir solicitações subsequentes por aplicativo](assets/restrict-subsequent-requests-application.png)
+      ![Cancele 1 solicitação mostrando a opção Restringir solicitações subsequentes por aplicativo selecionada.](assets/restrict-subsequent-requests-application.png)
 
    1. Escolha entre as seguintes opções:
 

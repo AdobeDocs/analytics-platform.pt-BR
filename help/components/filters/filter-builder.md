@@ -3,10 +3,10 @@ description: O Construtor de filtros fornece uma tela para arrastar e soltar Dim
 title: Criar filtros
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 23%
+source-wordcount: '1261'
+ht-degree: 22%
 
 ---
 
@@ -28,7 +28,7 @@ Você pode acessar o Construtor de filtros de qualquer uma das seguintes maneira
 
 É possível adicionar definições de regra e contêineres para definir seus filtros. (Para obter informações sobre como acessar o Construtor de filtros, consulte [Acessar o construtor de filtros](#access-the-filter-builder).)
 
-![](assets/segment_builder_ui_2.png)
+![Construtor de filtros mostrando as Novas opções de filtro descritas nesta seção.](assets/segment_builder_ui_2.png)
 
 | Elemento da interface | Descrição |
 | --- | --- |

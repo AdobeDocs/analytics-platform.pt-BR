@@ -3,10 +3,10 @@ description: Use a visualização de linha para descrever conjuntos de dados com
 title: Linha
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
-source-git-commit: 228578ceae27bb83645001fb959a614283dcca33
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 86%
+source-wordcount: '521'
+ht-degree: 84%
 
 ---
 
@@ -36,7 +36,7 @@ Uma opção suspensa de granularidade nas [configurações de visualização](fr
 
 Em **[!UICONTROL Configurações de visualização]** > **[!UICONTROL Sobreposições]** > **[!UICONTROL Mostrar mín/máx]**, você pode sobrepor um rótulo de valor mínimo e máximo para realçar rapidamente os picos e vales em uma métrica. Observação: os valores mín./máx. são derivados dos pontos de dados visíveis na visualização, não do conjunto completo de valores em uma dimensão.
 
-![Mostrar mín/máx](assets/min-max-labels.png)
+![Uma sobreposição com o rótulo de valor mínimo e máximo.](assets/min-max-labels.png)
 
 ## Mostrar sobreposição de linha de tendência
 

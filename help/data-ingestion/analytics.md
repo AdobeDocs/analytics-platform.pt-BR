@@ -4,10 +4,10 @@ description: Explique como assimilar dados do Adobe Analytics tradicional
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
-source-git-commit: fe3417836bc8efb81139304d9c1885691ba716be
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 86%
+source-wordcount: '1207'
+ht-degree: 82%
 
 ---
 
@@ -53,29 +53,29 @@ Para criar um conector de origem do Adobe Analytics:
 
 3. Selecione **[!UICONTROL Configurar]** ou **[!UICONTROL Adicionar dados]** no bloco Adobe Analytics.
 
-   ![Fontes](./assets/sources-overview.png)
+   ![A janela Adobe Experience Platform com Fontes selecionadas junto com os aplicativos Adobe e Adicionar dados está realçada.](./assets/sources-overview.png)
 
 4. Selecione **[!UICONTROL Conjunto de relatórios]**. Na lista de conjuntos de relatórios, selecione aquele que deseja usar.
 
-   ![Conjuntos de relatórios](./assets/report-suites.png)
+   ![Janela do Adobe Experience Platform mostrando a lista de conjuntos de relatórios](./assets/report-suites.png)
 
    Selecione **[!UICONTROL Próximo]**.
 
 5. Selecione **[!UICONTROL Esquema padrão]** como [!UICONTROL Esquema de destino]. A Adobe Experience Platform cria automaticamente o esquema e o conjunto de dados correspondente para mapear todos os campos padrão do conjunto de relatórios do Adobe Analytics selecionado.
 
-   ![Esquema padrão](./assets/default-schema.png)
+   ![Janela do Adobe Experience Platform com o esquema padrão selecionado](./assets/default-schema.png)
 
    Selecione **[!UICONTROL Próximo]**.
 
 6. Nomeie o fluxo de dados e (opcionalmente) forneça uma descrição.
 
-   ![Detalhes do fluxo de dados](./assets/dataflow-detail.png)
+   ![Janela Adobe Experience Platform destacando a seção de detalhes do fluxo de dados](./assets/dataflow-detail.png)
 
    Selecione **[!UICONTROL Próximo]**.
 
 7. Revise a conexão e selecione **[!UICONTROL Concluir]**.
 
-   ![Consulte a seção](./assets/review.png)
+   ![Janela do Adobe Experience Platform destacando as seções do tipo Conectar e Dados para revisão](./assets/review.png)
 
 
 Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics no conjunto de relatórios. O fluxo de dados assimila até 13 meses de dados históricos para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é limitado a três meses.
@@ -111,7 +111,7 @@ Para criar sua conexão:
 
    - Selecione o conjunto de dados criado automaticamente pelo conector de origem do Adobe Analytics e qualquer outro conjunto de dados que você deseja incluir na conexão.
 
-     ![Adicionar conjuntos de dados](./assets/cja-connections-2a.png)
+     ![Janela Adicionar conjuntos de dados](./assets/cja-connections-2a.png)
 
    - Selecione **[!UICONTROL Próximo]**.
 

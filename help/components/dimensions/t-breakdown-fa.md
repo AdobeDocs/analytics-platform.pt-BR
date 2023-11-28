@@ -5,10 +5,10 @@ title: Analisar dimensões
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
-source-git-commit: 3348117a5a6007017735a95aec26e6a8c88ad248
-workflow-type: ht
-source-wordcount: '347'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Detalhe os seus dados de inúmeras maneiras e de acordo com as suas necessidades
 1. [Crie um projeto](/help/analysis-workspace/home.md) com uma tabela de dados.
 1. Na tabela de dados, clique com o botão direito em um item da linha e selecione **[!UICONTROL Detalhamento]** > *`<item>`*.
 
-   ![Resultado da etapa](assets/fa_data_table_actions.png)
+   ![Resultado da Etapa mostrando Criar alerta a partir da seleção selecionada.](assets/fa_data_table_actions.png)
 
    Você pode detalhar as métricas por itens de dimensão ou filtros de público-alvo em todos os períodos selecionados. É possível especificar ainda mais para um nível mais granular.
 
@@ -41,7 +41,7 @@ Detalhe os seus dados de inúmeras maneiras e de acordo com as suas necessidades
 
 Qualquer detalhamento em uma tabela também pode ter qualquer modelo de atribuição aplicado a ela. Esse modelo de atribuição pode ser o mesmo ou diferente da coluna pai. Por exemplo, você pode analisar Pedidos lineares em sua dimensão de Canais de marketing mas deseja aplicar Pedidos de forma de U aos códigos de rastreamento específicos em um Canal. Para editar o modelo de atribuição aplicado a um detalhamento, passe o mouse sobre o modelo de detalhamento e clique em **[!UICONTROL Editar]**:
 
-![Configurações de detalhamento](assets/breakdown_settings.png)
+![Comparação de atribuição de pedido mostrando as configurações de Detalhamento](assets/breakdown_settings.png)
 
 Este é o comportamento esperado ao aplicar modelos de atribuição a detalhamentos ou editá-los:
 

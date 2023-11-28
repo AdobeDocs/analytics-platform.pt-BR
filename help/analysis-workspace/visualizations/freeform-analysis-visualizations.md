@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
-source-git-commit: 0022df4fa6022d5b045e47b606f4a6d1687f7244
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 84%
+source-wordcount: '1323'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
    * No painel à esquerda, selecione o **Visualizações** ícone <!-- add icon -->, em seguida, arraste uma visualização para o painel onde deseja adicioná-la.
 
-     ![](assets/viz-rail.png)
+     ![Painel Visualizações](assets/viz-rail.png)
 
    * No painel onde deseja adicionar a visualização, selecione a **Plus** e escolha o ícone que representa a visualização que deseja adicionar. Passe o mouse sobre o ícone de cada visualização para ver seu nome.
 
@@ -81,14 +81,14 @@ Você pode personalizar as configurações de todas as visualizações criadas. 
 
 Cada visualização tem suas próprias configurações que podem ser gerenciadas. Para acessar [!UICONTROL Configurações de visualização], clique no ícone de engrenagem [!UICONTROL Configurações de visualização].
 
-![Configurações](assets/settings.png)
+![Configurações de visualização mostrando as opções de configuração descritas na próxima seção.](assets/settings.png)
 
 | Configuração | Descrição |
 | --- | --- |
 | Tipo de visualização | Altere o tipo de visual usado para descrever os dados. |
 | Granularidade | Para visualizações de tendências, você pode alterar a granularidade de tempo (dia, semana, mês etc.) nesta lista suspensa. Essa alteração também se aplica à tabela de fonte de dados. |
 | Porcentagens | Exibe os valores em porcentagens. |
-| 100% empilhada | Essa configuração de visualizações de área empilhada, barra empilhada ou barra horizontal empilhada transforma o gráfico em uma visualização “100% empilhada”. Exemplo: ![100% empilhada](assets/stacked_100_percent.png) |
+| 100% empilhada | Essa configuração de visualizações de área empilhada, barra empilhada ou barra horizontal empilhada transforma o gráfico em uma visualização “100% empilhada”. Exemplo: ![Um gráfico de barras que mostra a exibição de opção 100% Empilhada.](assets/stacked_100_percent.png) |
 | Legenda visível | Permite ocultar o texto detalhado da legenda para a visualização Número de resumo/Alteração de resumo. |
 | Limite máximo de itens | Permite limitar o número de itens exibidos em uma visualização. |
 | Ancorar eixo Y no zero | Se todos os valores exibidos no gráfico forem consideravelmente superiores a zero, o padrão do gráfico tornará a parte inferior do eixo y DIFERENTE DE ZERO. Se marcar esta caixa, o eixo y será forçado a zero (e o gráfico será redesenhado). |
@@ -107,7 +107,7 @@ Para editar um rótulo de legenda:
 1. Clique com o botão direito do mouse em uma das etiquetas de legenda.
 1. Clique em **[!UICONTROL Editar rótulo]**.
 
-   ![Editar etiqueta](assets/edit-label.png)
+   ![Um rótulo de legenda e a opção Edit label.](assets/edit-label.png)
 
 1. Digite o texto do novo rótulo.
 1. Pressione **[!UICONTROL Enter]** para salvar.
@@ -116,7 +116,7 @@ Para editar um rótulo de legenda:
 
 Uma funcionalidade adicional para uma visualização fica disponível ao clicar com o botão direito do mouse no cabeçalho da visualização. As configurações variam de acordo com a visualização. Algumas das configurações disponíveis são:
 
-![Clique com o botão direito](assets/right-click.png)
+![Configurações de visualização adicionais com as opções do botão direito do mouse exibidas. As opções estão descritas na próxima seção.](assets/right-click.png)
 
 | Configuração | Descrição |
 | --- | --- |

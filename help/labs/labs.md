@@ -4,10 +4,10 @@ description: Visualizar projetos de protótipo do Customer Journey Analytics
 role: Admin
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
-source-git-commit: 9a4ae8ae8c545589de0556059520b31364de367c
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 91%
+source-wordcount: '425'
+ht-degree: 89%
 
 ---
 
@@ -55,13 +55,13 @@ Para iniciar e avaliar um protótipo:
 
 1. Clique em **[!UICONTROL Fornecer feedback]** para fornecer feedback na caixa de mensagem a qualquer momento ao trabalhar com o protótipo.
 
-   ![feedback_box](assets/give_feedback.png)
+   ![Janela de comentários](assets/give_feedback.png)
 
 1. Clique em **[!UICONTROL Enviar]** para enviar seu feedback.
 
 1. Para experimentar um protótipo diferente ou sair do ambiente do protótipo, clique em **[!UICONTROL Sair do protótipo]**, no canto superior direito da tela, e conclua a breve pesquisa do protótipo. As mudanças feitas em um projeto de protótipo são perdidas ao sair do ambiente do protótipo.
 
-   ![nova caixa de comentários](assets/short-survey.png)
+   ![Janela Comentários sobre definição de caminho inteligente](assets/short-survey.png)
 
 1. Clique em **[!UICONTROL Enviar]** para retornar ao portal Visualizações principal.
 

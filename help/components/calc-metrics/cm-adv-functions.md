@@ -3,9 +3,9 @@ title: Referência - funções avançadas
 description: Para acessar essas funções, selecione Mostrar avançadas na lista suspensa Funções.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3105'
+source-wordcount: '3123'
 ht-degree: 98%
 
 ---
@@ -61,11 +61,11 @@ A Contagem distinta aproximada (eVar de ID de cliente) é um caso de uso comum p
 
 Definição de uma nova métrica calculada &quot;Número aproximado de clientes&quot;:
 
-![](assets/approx-count-distinct.png)
+![Nova definição de dimensão distinta de município aproximada mostrando a ID do cliente (eVar 1)](assets/approx-count-distinct.png)
 
 A métrica “Número aproximado de clientes” deve ser usada em relatórios da seguinte maneira:
 
-![](assets/approx-customers.png)
+![Tabela de forma livre que mostra visitantes únicos e clientes aproximados ](assets/approx-customers.png)
 
 ## Únicos excedidos
 

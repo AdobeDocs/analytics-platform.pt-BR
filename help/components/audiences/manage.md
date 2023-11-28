@@ -1,18 +1,18 @@
 ---
-title: Gerenciar públicos-alvo criados no Customer Journey Analytics
+title: Saiba como gerenciar públicos-alvo criados no Customer Journey Analytics
 description: Saiba como gerenciar públicos-alvo no Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 75%
+source-wordcount: '284'
+ht-degree: 70%
 
 ---
 
 # Gerenciar públicos-alvo criados no Customer Journey Analytics
 
-O gerenciamento de públicos-alvo criados anteriormente permite
+O gerenciamento de públicos-alvo criados anteriormente permite:
 
 * **Agendar ou cancelar o agendamento** de atualização automática de público-alvo. A expiração máxima na programação é de 1 ano.
 * **Renovar um cronograma de atualização de público** quando estiver prestes a expirar. Públicos que estão prestes a expirar são tratados de forma semelhante aos relatórios agendados que se encontram na mesma situação: o administrador recebe um email um mês antes da expiração programada.
@@ -22,7 +22,7 @@ O gerenciamento de públicos-alvo criados anteriormente permite
 
 ## Interface do usuário de gerenciamento
 
-![](assets/manage.png)
+![Painel da janela Públicos mostrando vários filtros.](assets/manage.png)
 
 | Configuração da interface do usuário | Definição |
 | --- | --- |

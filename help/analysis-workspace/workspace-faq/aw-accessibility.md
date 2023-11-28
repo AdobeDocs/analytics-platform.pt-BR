@@ -3,10 +3,10 @@ description: Recursos de suporte para acessibilidade no Analysis Workspace
 title: Acessibilidade no Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 99%
+source-wordcount: '618'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ A navegação no [!UICONTROL Analysis Workspace] funciona de cima > para baixo e
 * O `F6` navega até o primeiro painel no projeto e se move entre as visualizações nesse painel. Em seguida, ele é movido para o próximo painel no projeto e é repetido.
 * Nós aplicamos indicadores de foco para que os usuários de teclado com visão tenham uma indicação clara de qual elemento de interface do usuário tem foco no momento. O indicador é uma borda azul em torno do elemento selecionado.
 
-   ![Indicador de foco](assets/focus-indicator.png)
+  ![Tabela de forma livre que mostra um indicador de foco de uma borda azul ao redor da tabela de forma livre.](assets/focus-indicator.png)
 
 ### Navegação do teclado para a barra de menu
 
@@ -98,7 +98,7 @@ Ao criar um componente, os campos obrigatórios são validados ao salvar. Se um 
 
 Depois que um componente é totalmente validado, pressionar `Save` fecha o construtor.
 
-![Validação de erro](assets/error-validation.png)
+![Construtor de segmentos e indicador de validação de erros.](assets/error-validation.png)
 
 ## Suporte para recursos de acessibilidade do sistema operacional
 

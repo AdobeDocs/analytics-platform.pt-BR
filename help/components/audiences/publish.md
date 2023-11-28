@@ -3,10 +3,10 @@ title: Criar e publicar públicos-alvo no Perfil do cliente em tempo real
 description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 58%
+source-wordcount: '1641'
+ht-degree: 57%
 
 ---
 
@@ -32,7 +32,7 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) para 
 
    Defina essas configurações antes de publicar o público-alvo.
 
-   ![Imagem de como criar um público-alvo do](assets/create-audience.png)
+   ![Captura de tela das configurações de criação de um público-alvo subindo descritas na próxima seção.](assets/create-audience.png)
 
    | Configuração | Descrição |
    | --- | --- |
@@ -52,7 +52,7 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) para 
 
    A visualização do público-alvo é exibida no painel direito. Ela permite uma análise resumida do público-alvo criado.
 
-   ![Captura de tela da pré-visualização de dados](assets/data-preview.png)
+   ![Captura de tela da pré-visualização de dados mostrando uma análise resumida do público-alvo.](assets/data-preview.png)
 
    | Configuração de visualização | Descrição |
    | --- | --- |
@@ -108,7 +108,7 @@ Você pode visualizar públicos-alvo do Customer Journey Analytics na Platform a
 
 Você pode arrastar os públicos-alvo do Customer Journey Analytics para a definição de segmentos do Adobe Experience Platform.
 
-![](assets/audiences-aep.png)
+![Interface da Experience Platform do Adobe destacando Segmentos no painel esquerdo e Públicos do CJA no painel principal.](assets/audiences-aep.png)
 
 ## Perguntas frequentes {#faq}
 

@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 8f64e0a31ed3bca7185674490fc36b78598f5b1c
-workflow-type: ht
-source-wordcount: '1479'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '1483'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Muito do que você conhece no lado dos relatórios não mudou.
 
 Você tem acesso a muito mais dados entre canais para analisar. Por exemplo, você pode criar um projeto de espaço de trabalho que analise o desempenho de vários canais, desde que esses conjuntos de dados sejam assimilados por sua organização e incluídos em visualizações de dados usadas pelo Customer Journey Analytics (consulte “Alterações na arquitetura de dados” abaixo).
 
-![Visualizações de vários canais](assets/cross-channel.png)
+![Visualização das Fontes de dados mostrando visualizações de vários canais](assets/cross-channel.png)
 
 ## Alterações na arquitetura de dados {#architecture}
 

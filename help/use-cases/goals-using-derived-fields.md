@@ -4,9 +4,9 @@ description: Entenda como você pode usar Campos derivados para criar relatório
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
-source-git-commit: 150a46e59d7f76d90906c85332a94cd5974008c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '435'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ Você deseja definir metas explicitamente para seus pedidos de cartão-presente 
 
 1. Defina valores estáticos, usando uma REGRA CASE WHEN para cada mês, definindo um **[!UICONTROL Valor numérico personalizado]**. Consulte a regra de Metas mensais do produto abaixo.
 
-   ![Metas do produto](assets/goals-derived-field-product-goals-1.png)
+   ![Metas mensais do produto](assets/goals-derived-field-product-goals-1.png)
 
 
 ### Metas de receita do canal de marketing

@@ -4,10 +4,10 @@ description: Entenda as diferentes maneiras de assimilar dados no Customer Journ
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
-source-git-commit: 89841edb40f8ac89a3142588fede383b87d246f9
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 71%
+source-wordcount: '871'
+ht-degree: 70%
 
 ---
 
@@ -22,7 +22,7 @@ Você tem várias opções ao assimilar dados no Customer Journey Analytics. Alg
 
 Consulte a arquitetura de alto nível do Customer Journey Analytics mostrada anteriormente na [Visão geral](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR):
 
-![Customer Journey Analytics](./assets/cja-architecture.png)
+![Arquitetura de Customer Journey Analytics descrita nesta seção](./assets/cja-architecture.png)
 
 O conjunto de dados na arquitetura acima pode se originar de várias fontes:
 

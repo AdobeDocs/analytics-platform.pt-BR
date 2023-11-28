@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configurar contas de exportação da nuvem
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
-source-git-commit: bbd916db1be05c5e52396ae0a6fa5cbaa368da38
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1836'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 1. No [!UICONTROL Exportações] selecione a [!UICONTROL **Contas de localização**] guia.
 1. Selecionar [!UICONTROL **Adicionar conta**].
 
-   ![Adicionar conta](assets/account-add.png)
+   ![Exporta opções da página mostrando Adicionar outra conta](assets/account-add.png)
 
    A caixa de diálogo Add account (Adicionar conta) é exibida.
 
@@ -86,7 +86,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
       >Você precisa executar essa ação a cada 7 dias, pois o URI SAS expira 7 dias após sua criação. Você pode criar um script para automatizar esse processo.
 
 
-      ![Campo de URL SAS](assets/blob-container-sas-uri.png)
+      ![Janela Inserir informações de conexão mostrando o campo URL SAS](assets/blob-container-sas-uri.png)
 
    1. Selecionar [!UICONTROL **Próxima**] > [!UICONTROL **Conectar**].
 

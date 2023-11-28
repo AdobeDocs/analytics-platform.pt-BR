@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gerenciar logs de exportação
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: b0eff3702ce92bab8a3d75bc07e1b33c168805c2
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '835'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ Para exportações programadas, os logs refletem as configurações de exportaç
 
 1. Selecione o [!UICONTROL **Logs**] guia.
 
-   ![Guia Exportar logs](assets/export-logs-tab.png)
+   ![Janela Exportar mostrando a guia Logs](assets/export-logs-tab.png)
 
    Os detalhes de cada log são exibidos nas colunas disponíveis.
 
@@ -49,7 +49,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de logs
 
 1. Selecione o **Filtro** ícone.
 
-   ![Filtrar informações](assets/export-log-filters.png)
+   ![Janela Exportações mostrando a lista de filtros por tipo de conta](assets/export-log-filters.png)
 
    Você pode filtrar pelos seguintes critérios:
 

@@ -3,10 +3,10 @@ description: O Gerenciador de métricas calculadas permite cuidar de suas métri
 title: Gerenciador de métricas calculadas
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 2c9dfdf36e47b9467077310a31dc2c6258137d35
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 16%
+source-wordcount: '705'
+ht-degree: 17%
 
 ---
 
@@ -16,7 +16,7 @@ A página Métrica calculada oferece várias formas de cuidar de métricas, como
 
 O Gerenciador de métricas calculadas mostra todos os seus filtros e os compartilhados com você. Usuários de nível administrativo podem ver todas as métricas personalizadas da organização. Essa visão geral apresenta a interface do usuário e os recursos do Gerenciador de métricas calculadas.
 
-![](assets/calc-metric-manager.png)
+![Janela Métricas calculadas mostrando os filtros disponíveis.](assets/calc-metric-manager.png)
 
 ## Acessar o gerenciador de métricas calculadas
 
@@ -28,7 +28,7 @@ No Gerenciador de métricas calculadas, é possível:
 
 * [Filtrar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-filter.md)
 
-* [Marcar métricas calculadas como favoritos](/help/components/calc-metrics/cm-workflow/cm-favorite.md)
+* [Marcar métricas calculadas como favoritas](/help/components/calc-metrics/cm-workflow/cm-favorite.md)
 
 * [Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
 
@@ -38,7 +38,7 @@ No Gerenciador de métricas calculadas, é possível:
 
 * Exportar uma métrica calculada para um arquivo CSV.
 
-* [Copiar métricas calculada](/help/components/calc-metrics/cm-workflow/cm-copy.md)
+* [Copiar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-copy.md)
 
 * Excluir métricas calculadas
 

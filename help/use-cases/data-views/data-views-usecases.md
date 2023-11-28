@@ -4,10 +4,10 @@ description: Vários casos de uso que mostram a flexibilidade e o potencial das 
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 95%
+source-wordcount: '1382'
+ht-degree: 91%
 
 ---
 
@@ -20,11 +20,11 @@ Esses casos de uso mostram a flexibilidade e o potencial das visualizações de 
 Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica [!UICONTROL Pedidos] de um campo de esquema [!UICONTROL pageTitle] que seja uma sequência. Estas são as etapas:
 
 1. Na guia Componentes, arraste [!UICONTROL pageTitle] até a seção [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
-   ![](../assets/use-case1a.png)
+   ![Campos de esquema com seta apontando para pageTitle na lista Nome do componente.](../assets/use-case1a.png)
 1. Agora, destaque a métrica que você acabou de arrastar e renomeie-a em [!UICONTROL Configurações do componente] à direita:
-   ![](../assets/orders.png)
+   ![Campos de esquema que destacam Pedidos nas Configurações de componente.](../assets/orders.png)
 1. Abra a caixa de diálogo [!UICONTROL Incluir/Excluir valores] à direita e especifique o seguinte:
-   ![](../assets/orders2.png)
+   ![Incluir/Excluir valores com Definir valores de inclusão/exclusão e Diferenciação de maiúsculas e minúsculas selecionado.](../assets/orders2.png)
 
    A frase &quot;confirmação&quot; indica que é um pedido. Depois de examinar todos os títulos de página em que esses critérios são atendidos, &quot;1&quot; será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores de inclusão/exclusão pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, filtros e em qualquer lugar que você puder usar as métricas padrão.
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
@@ -38,11 +38,11 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
 1. Arraste o inteiro [!UICONTROL call_length_min] até a seção [!UICONTROL Dimensões] em [!UICONTROL Componentes incluídos]:
 
-   ![](../assets/integers.png)
+   ![Seta apontando para call_length_mins na lista de Dimension.](../assets/integers.png)
 
 1. Agora você pode adicionar [!UICONTROL Classificação de valores] para apresentar essa dimensão de forma segmentada nos relatórios. (Sem a classificação, cada instância dessa dimensão seria exibida como um item da linha nos relatórios do Espaço de trabalho.)
 
-   ![](../assets/bucketing.png)
+   ![Classificação de valores com o valor de Classificação selecionado.](../assets/bucketing.png)
 
 ## 3. Usar dimensões numéricas como &quot;métricas&quot; em diagramas de fluxo {#numeric}
 
@@ -51,7 +51,7 @@ Você pode usar uma dimensão numérica para inserir “métricas” na visualiz
 1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-component-settings), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Espaço de trabalho, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
 
-![](../assets/flow.png)
+![Fluxo do canal de marketing de emails para pedidos/Saída.](../assets/flow.png)
 
 ## 4. Fazer filtragem de subeventos {#sub-event}
 
@@ -82,7 +82,7 @@ Usando o recurso [!UICONTROL Duplicar] no canto superior direito, crie várias m
 
 Não se esqueça de renomear cada métrica para refletir as diferenças, como &quot;Receita algorítmica&quot;:
 
-![](../assets/algo-revenue.png)
+![Receita algorítmica com valores de Contagem selecionados na lista Comportamento.](../assets/algo-revenue.png)
 
 Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview.md).
 Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).

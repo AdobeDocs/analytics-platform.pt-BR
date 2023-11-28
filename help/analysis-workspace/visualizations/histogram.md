@@ -3,10 +3,10 @@ description: Um histograma é semelhante a um gráfico de barras, mas agrupa os 
 title: Histograma
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
-source-git-commit: a18233ecaa14931af0d97b041cfe5dd20b3f653d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 85%
+source-wordcount: '443'
+ht-degree: 79%
 
 ---
 
@@ -22,7 +22,7 @@ Para criar um histograma:
 1. Arraste **[!UICONTROL Histograma]** ao painel.
 1. Escolha uma Métrica para arrastar à visualização do Histograma e clique em **[!UICONTROL Criar]**.
 
-![](assets/histogram.png)
+![Painel de histograma em branco mostrando o campo Soltar uma métrica abaixo.](assets/histogram.png)
 
 >[!NOTE]
 >
@@ -54,11 +54,11 @@ Para ajustar as configurações do histograma, clique no ícone de Configuraçõ
 
 Para exibir ou alterar a fonte de dados do gráfico de histograma, clique no ponto ao lado do cabeçalho do Histograma para acessar **[!UICONTROL Configurações da fonte de dados]** > **[!UICONTROL Mostrar fonte de dados]**.
 
-![](assets/manage-data-source.png)
+![Opções de Configurações da fonte de dados com Mostrar fonte de dados e Bloquear seleção selecionadas.](assets/manage-data-source.png)
 
 Os filtros pré-construídos exibidos na tabela são filtros internos e não serão exibidos no seletor de filtros. Clique no ícone “i” ao lado do nome do filtro e em **[!UICONTROL Tornar público]** para tornar o filtro público.
 
-![](assets/prebuilt_segments.png)
+![Segmentos que mostram a janela de edição e o link Tornar público.](assets/prebuilt_segments.png)
 
 Para explorar mais formas de gerenciar tabelas de dados de forma livre e outras visualizações, como detalhamento de dados, clique [aqui](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=pt-BR).
 

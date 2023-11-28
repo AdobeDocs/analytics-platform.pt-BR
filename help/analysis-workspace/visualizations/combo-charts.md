@@ -4,10 +4,10 @@ title: Visualização de gráficos de combinação
 feature: Visualizations
 role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 95%
+source-wordcount: '843'
+ht-degree: 85%
 
 ---
 
@@ -33,7 +33,7 @@ Lembre-se:
 
 1. Na lista suspensa Visualizações, no painel à esquerda, arraste a visualização do [!UICONTROL Gráfico de combinação] para um painel em branco.
 
-   ![Build](assets/combo-chart-build.png)
+   ![Gráfico de combinação mostrando os eixos X e Y e o campo de opções](assets/combo-chart-build.png)
 
 1. Nas listas suspensas, selecione uma dimensão para o eixo X e uma métrica para o eixo Y.
 
@@ -41,9 +41,9 @@ Lembre-se:
 
    | Tipo de comparação de linha | Definição |
    | --- | --- |
-   | **[!UICONTROL Comparação de tempo]** | O tipo de comparação mais comum: comparar esse período com 4 semanas atrás, por exemplo. Se você selecionou [!UICONTROL Comparação de tempo], selecione uma segunda opção para definir com qual período deseja comparar.<p>![Período](assets/combo-time-period.png) |
-   | **[!UICONTROL Função]** | Você pode incluir uma função, como [!UICONTROL Média], na comparação. Consulte uma lista de funções compatíveis abaixo.<p>![Funções](assets/combo-functions.png) |
-   | **[!UICONTROL Métrica secundária]** | Você pode, por exemplo, comparar a [!UICONTROL Receita] com outra métrica.<p>![Duas métricas](assets/combo-2metrics.png) |
+   | **[!UICONTROL Comparação de tempo]** | O tipo de comparação mais comum: comparar esse período com 4 semanas atrás, por exemplo. Se você selecionou [!UICONTROL Comparação de tempo], selecione uma segunda opção para definir com qual período deseja comparar.<p>![Uma comparação com Período selecionado e o campo de seleção secundário para Período.](assets/combo-time-period.png) |
+   | **[!UICONTROL Função]** | Você pode incluir uma função, como [!UICONTROL Média], na comparação. Consulte uma lista de funções compatíveis abaixo.<p>![Menu suspenso de comparação de linhas mostrando as Funções selecionadas e uma lista de funções compatíveis disponíveis.](assets/combo-functions.png) |
+   | **[!UICONTROL Métrica secundária]** | Você pode, por exemplo, comparar a [!UICONTROL Receita] com outra métrica.<p>![Um gráfico de combinação comparando duas métricas.](assets/combo-2metrics.png) |
 
    {style="table-layout:auto"}
 
@@ -51,7 +51,7 @@ Lembre-se:
 
    O resultado será semelhante a este:
 
-   ![Saída](assets/combo-output.png)
+   ![Um gráfico de combinação mostrando o período atual em um gráfico de barras e o período de comparação no gráfico de linhas ](assets/combo-output.png)
 
    O período atual é mostrado no gráfico de barras e o período de comparação é representado pelo gráfico de linhas. Os pontos no gráfico de linha são conhecidos como “barras”.
 
@@ -73,17 +73,17 @@ Se você escolher **[!UICONTROL Função]** como o [!UICONTROL Tipo de comparaç
 
 Este é um exemplo da média cumulativa da métrica Receita:
 
-![Média cumulativa](assets/combo-cumul-avg.png)
+![Um gráfico de combinação mostrando a média cumulativa](assets/combo-cumul-avg.png)
 
 Este é um exemplo de um gráfico de combinação com as funções Média cumulativa e Média:
 
-![Duas funções](assets/combo-two-functions.png)
+![Um gráfico de combinação mostrando as funções média cumulativa e média.](assets/combo-two-functions.png)
 
 ## Configurações do gráfico de combinação
 
 Clique no ícone de engrenagem na parte superior direita de um gráfico de combinação para alterar suas configurações.
 
-![Configurações](assets/combo-settings.png)
+![Visualização das configurações do gráfico de combinação mostrando as opções descritas abaixo.](assets/combo-settings.png)
 
 | Configuração | Definição |
 | --- | --- |
@@ -94,7 +94,7 @@ Clique no ícone de engrenagem na parte superior direita de um gráfico de combi
 | **[!UICONTROL Legenda visível]** | Permite ocultar o texto detalhado da legenda para a visualização dos gráficos de combinação. |
 | **[!UICONTROL Limite máximo de itens]** | Reduz o número de itens no eixo X. Se você tiver um conjunto de dados grande, poderá mostrar apenas os primeiros 10 itens (ou qualquer valor que escolher). |
 | **[!UICONTROL Sobreposições]** | Mostrar ou ocultar barras nas linhas. |
-| **[!UICONTROL Eixo]** |  |
+| **[!UICONTROL Eixo]** | |
 | **[!UICONTROL Exibir eixo duplo]** | Somente se aplica se você tiver duas métricas. Você pode ter um eixo Y à esquerda (para uma métrica) e outro à direta (para a outra métrica). Isso é útil quando métricas projetadas têm magnitudes muito diferentes. A cor do eixo duplo corresponde à cor da tabela, a menos que haja várias comparações. Nesse caso, a cor de todas as comparações é cinza. |
 | **[!UICONTROL Normalização]** | Força as métricas para proporções iguais. Isso é útil quando métricas projetadas têm magnitudes muito diferentes. |
 | **[!UICONTROL Mostrar eixo X]** | Exibe ou oculta o eixo X. |

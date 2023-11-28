@@ -4,10 +4,10 @@ description: É possível definir preferências gerais e de projeto para usuári
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: ed2de7ead2724a870fcd6ce1d32eb9b05e5f0576
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '3218'
-ht-degree: 84%
+source-wordcount: '3228'
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ Você pode gerenciar as configurações do Analysis Workspace e seus componentes
 
 1. No Customer Journey Analytics, acesse o [!UICONTROL **Projetos**] página de aterrissagem e selecione [!UICONTROL **Editar preferências**].
 
-   ![Preferências do usuário](assets/user-preferences.png)
+   ![Visualização Projetos do Workspace destacando as opções Editar preferências descritas nesta página.](assets/user-preferences.png)
 
    Ou
 
@@ -31,7 +31,7 @@ Você pode gerenciar as configurações do Analysis Workspace e seus componentes
 
    * [Preferências da organização IMS](#ims-organization-preferences)
 
-   * [Preferências de Projetos e análises](#project-preferences)
+   * [Preferências de projetos e análises](#project-preferences)
 
    * [Preferências da tabela de forma livre](#freeform-table-preferences)
 
@@ -59,7 +59,7 @@ Você pode atualizar as preferências da empresa que se aplicam a todos os usuá
 
 {style="table-layout:auto"}
 
-## Preferências de Projetos e análises
+## Preferências de projetos e análises
 
 É possível personalizar essas preferências para todos os novos projetos do Analysis Workspace, novos painéis do Analysis Workspace e novas análises guiadas. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
 
@@ -71,7 +71,7 @@ Clique nos títulos de preferência vinculados para obter mais informações e c
 | --- | --- | --- |
 | **Exibir** | | |
 |  | [Densidade da exibição](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density.html?lang=pt-BR) | Escolha quanto conteúdo será exibido na tela, reduzindo o preenchimento vertical do painel à esquerda, em tabelas de forma livre e de coorte. <ul><li>Compacto</li><li>Confortável</li><li>Expandido (padrão)</li></ul> |
-| | [Paleta de cores](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=pt-BR) | Escolha as paletas de cores de visualização usadas no Analysis Workspace e na Análise guiada. <ul><li> Paleta categórica: aplicada a muitas visualizações no Analysis Workspace e análise guiada. Cada cor representa um valor categórico distinto. Escolha entre as opções fornecidas por Adobe ou insira uma paleta personalizada definida por valores hexadecimais delimitados por vírgulas.</li><li> Paleta divergente: aplicada à tabela de Coorte no Analysis Workspace e na análise orientada pelo crescimento do usuário. Esta paleta contém um significado numérico com dois extremos e uma linha de base no meio.<li> Paleta sequencial: aplicada à análise guiada de Tendências de frequência (barra empilhada). Esta paleta contém um significado numérico do claro para o escuro.</li></ul> |
+| | [Paleta de cores](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/color-palettes.html?lang=pt-BR) | Escolha as paletas de cores de visualização usadas no Analysis Workspace e na Análise guiada. <ul><li> Paleta categórica: aplicada a muitas visualizações no Analysis Workspace e análise guiada. Cada cor representa um valor categórico distinto. Escolha entre as opções fornecidas pela Adobe ou insira uma paleta personalizada definida por valores hexadecimais delimitados por vírgulas.</li><li> Paleta divergente: aplicada à tabela de Coorte no Analysis Workspace e na análise orientada pelo crescimento do usuário. Esta paleta contém um significado numérico com dois extremos e uma linha de base no meio.<li> Paleta sequencial: aplicada à análise guiada de Tendências de frequência (barra empilhada). Esta paleta contém um significado numérico do claro para o escuro.</li></ul> |
 | **Dados** | | |
 |  | [Visualização de dados](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=pt-BR#report-suite) | Escolha de onde as tabelas e as visualizações derivam seus dados. <ul><li>Mais recente (padrão)</li><li>Visualização de dados específica selecionada em uma lista</li></ul> |
 |  | [Calendário](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=pt-BR#calendar) | Selecione de uma lista de: <ul><li>Intervalos fornecidos pela Adobe (o padrão é Este mês)</li><li>Intervalos definidos pelo cliente</li></ul> |
@@ -111,7 +111,7 @@ Clique nos títulos da seção vinculada para obter mais informações e context
 | **[Linha](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)** | | |
 | | Detalhamento por posição | Selecione essa opção se desejar que o detalhamento permaneça com a posição do item em vez do próprio item. Para obter mais informações sobre detalhamentos, consulte [Analisar dimensões](/help/components/dimensions/t-breakdown-fa.md). |
 | | Cálculo percentual | <ul><li>Coluna</li><li>Linha</li></ul> |
-| | Totais da coluna (somente linhas estáticas) | <ul><li>Exibir soma das linhas: mostra a soma dos itens de linha individuais </li><li>Exibir total geral: mostra a soma de linhas desduplicadas.</li></ul> |
+| | Totais de coluna (somente linhas estáticas) | <ul><li>Exibir soma das linhas: mostra a soma dos itens de linha individuais </li><li>Exibir total geral: mostra a soma de linhas desduplicadas.</li></ul> |
 
 ## Preferências de visualizações
 

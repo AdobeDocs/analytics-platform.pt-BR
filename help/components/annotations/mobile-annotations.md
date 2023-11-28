@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
-source-git-commit: 702d03b95b6689e1441fbdd8b2ef3a5a3fcfbad0
-workflow-type: ht
-source-wordcount: '367'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 91%
 
 ---
 
@@ -29,21 +29,21 @@ Para obter informações sobre como criar anotações, consulte [Criar anotaçõ
 
 1. Selecione **[!UICONTROL Mostrar anotações]** para exibir a anotação nos Cartões de pontuação para dispositivos móveis.
 
-   ![](assets/show-annotations.png)
+   ![Opções de anotações para dispositivos móveis para cartões de pontuação.](assets/show-annotations.png)
 
 1. Confirme se a opção mostrar anotações está selecionada, vá para **[!UICONTROL Projeto]** > **[!UICONTROL Informações e configurações do projeto]**.
 
-   ![](assets/project-info-settings.png)
+   ![Opções de anotações móveis para informações do projeto e configurações, destacando a opção Mostrar anotações.](assets/project-info-settings.png)
 
 ## Exibir anotações em Cartões de pontuação para dispositivos móveis
 
 Quando as anotações são ativadas, os ícones de anotação ficam visíveis no Construtor de cartões de pontuação. As anotações são exibidas somente em gráficos e tabelas na exibição detalhada. As anotações não são visíveis na exibição principal do bloco do cartão de pontuação.
 
-![](assets/view-annotations.png)
+![Construtor de cartões de pontuação destacando os ícones de anotação.](assets/view-annotations.png)
 
-Quando os ícones de anotação estão visíveis, você não pode visualizar ou interagir totalmente com as anotações na tela do construtor. Use o modo de Visualização para exibir e interagir com anotações conforme elas aparecem no aplicativo. ![](assets/preview-icon.png)
+Quando os ícones de anotação estão visíveis, você não pode visualizar ou interagir totalmente com as anotações na tela do construtor. Use o modo de Visualização para exibir e interagir com anotações conforme elas aparecem no aplicativo. ![Ícone Visualizar](assets/preview-icon.png)
 
-As cores da anotação são selecionadas quando a anotação é criada no espaço de trabalho. As anotações em cinza indicavam a presença de mais de uma anotação. ![](assets/gray-annotations1.png) ![](assets/gray-annotations2.png)
+As cores da anotação são selecionadas quando a anotação é criada no espaço de trabalho. As anotações em cinza indicavam a presença de mais de uma anotação. ![Ícones de anotação](assets/gray-annotations1.png) ![Cartão de pontuação para dispositivos móveis com o ícone de anotação realçado.](assets/gray-annotations2.png)
 
 ## Exibir anotações do gráfico
 

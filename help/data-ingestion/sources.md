@@ -4,10 +4,10 @@ description: Explica como assimilar e usar dados usando conectores de origem no 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 87%
+source-wordcount: '1997'
+ht-degree: 86%
 
 ---
 
@@ -57,7 +57,7 @@ Para configurar o esquema:
 
    1. Selecionar **[!UICONTROL Perfil individual]**.
 
-      ![Criar um esquema](./assets/create-pr-schema-wizard-step-1.png)
+      ![Criar uma janela de esquema com Perfil individual selecionado](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
@@ -70,7 +70,7 @@ Para configurar o esquema:
 
    1. Insira um **[!UICONTROL Nome de exibição do esquema]** para o esquema e (opcional) uma **[!UICONTROL Descrição]**.
 
-      ![Dê um nome ao esquema](./assets/create-pr-schema-wizard-step-2.png)
+      ![Janela Criar esquema mostrando os campos para nomear seu esquema ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Selecione **[!UICONTROL Concluir]**.
 
@@ -78,7 +78,7 @@ Para configurar o esquema:
 
    1. Selecione **[!UICONTROL + Adicionar]** em [!UICONTROL Grupos de campos].
 
-      ![Adicione um grupo de campos](./assets/add-field-group-button.png)
+      ![Janela Criar esquema mostrando o grupo Adicionar campo](./assets/add-field-group-button.png)
 
       Grupos de campos são coleções reutilizáveis de objetos e atributos que permitem estender seus esquemas facilmente.
 

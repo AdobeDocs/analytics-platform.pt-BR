@@ -4,9 +4,9 @@ description: Permite definir a atribuição padrão de uma métrica.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1953'
 ht-degree: 35%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 35%
 
 A atribuição dá a capacidade de personalizar como os itens de dimensão obtêm crédito por eventos bem-sucedidos.
 
-![](../assets/attribution-settings.png)
+![Janela Visualizações de dados destacando a opção Definir atribuição](../assets/attribution-settings.png)
 
 Por exemplo:
 
@@ -46,7 +46,7 @@ Para atualizar o modelo de atribuição padrão de um componente:
 
 1. Selecione o componente e expanda a seção Atribuição no lado direito da tela.
 
-   ![](../assets/attribution-settings.png)
+   ![Janela Visualizações de dados destacando a opção Definir atribuição](../assets/attribution-settings.png)
 
 1. Selecionar [!UICONTROL **Definir atribuição**] e selecione o modelo de atribuição na [!UICONTROL **Modelo de atribuição**] menu suspenso.
 

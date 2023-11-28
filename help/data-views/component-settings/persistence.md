@@ -4,10 +4,10 @@ description: Determine como ou se os valores de dimensão persistem de um evento
 exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 81%
+source-wordcount: '865'
+ht-degree: 80%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 81%
 
 [!UICONTROL Persistência] é a capacidade de um determinado valor de dimensão se relacionar a uma métrica além do evento em que está definido. Ela usa uma combinação de alocação e expiração.
 
-![Persistência](../assets/persistence.png)
+![Janela Visualizações de dados destacando as opções de Persistência](../assets/persistence.png)
 
 * A **Alocação** permite determinar qual valor é mantido quando mais de um item de dimensão pode persistir de cada vez em uma única coluna.
 

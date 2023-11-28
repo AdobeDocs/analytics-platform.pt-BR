@@ -3,10 +3,10 @@ description: Use o Número do resumo e as Visualizações de alteração para ex
 title: Número do resumo e alteração do resumo
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
-source-git-commit: 2f5d1c6c90df8ccd9e792a870891a817e7c2a93d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 100%
+source-wordcount: '404'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ Essa visualização se comporta das seguintes maneiras:
 * Se a coluna estiver selecionada, compara o primeiro valor a si mesmo, mostrando uma alteração de 0.
 
 
-![](assets/summary-change.png)
+![Visualização de alteração de resumo mostrando o delta entre dois números.](assets/summary-change.png)
 
 
 Clique na engrenagem **Configurações de visualização** no canto superior direito para definir as configurações de Alteração de resumo:

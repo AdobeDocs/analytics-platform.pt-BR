@@ -4,10 +4,10 @@ title: Visão geral do calendário e do intervalos de datas
 feature: Calendar
 solution: Customer Journey Analytics
 exl-id: 4afdc68b-97f8-4d8a-9d13-e2f3986873f1
-source-git-commit: be49bcbbc9d1b7d3989e15a30114da8cbc5e4851
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 79%
+source-wordcount: '892'
+ht-degree: 76%
 
 ---
 
@@ -17,7 +17,7 @@ Usando o calendário, você pode especificar datas e intervalos de datas ou sele
 
 As seleções do calendário se aplicam a nível de painel, mas existe a opção de aplicá-las a todos os painéis. Ao clicar em um intervalo de datas no Espaço de trabalho, a interface exibe o mês atual do calendário e o mês anterior. Você pode ajustar esses dois calendários clicando nas setas para a direita e para a esquerda em cada canto superior respectivo.
 
-![Calendário](assets/aw_calendar2.png){width="60%"}
+![Calendário exibido em outubro de 2022 e novembro de 2022, com de 1 a 30 de novembro selecionados.](assets/aw_calendar2.png){width="60%"}
 
 O primeiro clique em um calendário inicia uma seleção de intervalo de datas. O segundo clique conclui uma seleção de intervalo de datas, que é realçada. Se a tecla `Shift` for pressionada (ou se o clique com o botão direito do mouse for usado), ela será anexada ao intervalo selecionado no momento.
 
@@ -48,12 +48,12 @@ Para usar intervalos de datas relativos ao painel
 Se datas relativas forem selecionadas, as datas contínuas serão baseadas na data inicial do calendário do painel, e não na data de hoje.
    * Se essa opção não estiver selecionada, as datas contínuas serão baseadas na data de hoje.
 
-   ![datas relativas do painel](assets/relative-date-selected.png){width="60%"}
+   ![Calendário com a opção Tornar componentes de intervalo de datas relativos ao calendário do painel selecionada](assets/relative-date-selected.png){width="60%"}
 
 1. Clique em **Aplicar**.
 As datas relativas são mostradas no canto superior direito.
 
-   ![datas relativas em forma livre ](assets/relative-date-range1.png)
+   ![Tabela de forma livre com datas relativas destacadas e mostrando Mês passado destacado. ](assets/relative-date-range1.png)
 
 ## Diretrizes para intervalos de datas relativas do painel {#guidelines}
 

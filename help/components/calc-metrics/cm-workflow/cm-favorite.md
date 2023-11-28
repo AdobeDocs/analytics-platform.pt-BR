@@ -1,15 +1,16 @@
 ---
 description: Outra maneira de organizá-los para facilitar o uso é marcar as métricas calculadas como favoritos.
-title: Marcar métricas calculadas como favoritos
+title: Marcar métricas calculadas como favoritas
 feature: Calculated Metrics
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 20%
+source-wordcount: '98'
+ht-degree: 29%
 
 ---
 
-# Marcar métricas calculadas como favoritos
+# Marcar métricas calculadas como favoritas
 
 Outra maneira de organizá-los para facilitar o uso é marcar as métricas calculadas como favoritos.
 
@@ -17,6 +18,6 @@ Outra maneira de organizá-los para facilitar o uso é marcar as métricas calcu
 
 1. No Gerenciador de métricas calculadas, marque a estrala ao lado de qualquer métrica calculada que você deseja marcar como favorita. Agora deve aparecer como uma estrela amarela:
 
-   ![](assets/favorites.png)
+   ![Estrela amarela mostrando os visitantes do Bing.](assets/favorites.png)
 
 1. Você também pode filtrar por favoritos em **[!UICONTROL Filtros]** > **[!UICONTROL Outros filtros]** > **[!UICONTROL Favoritos]**.

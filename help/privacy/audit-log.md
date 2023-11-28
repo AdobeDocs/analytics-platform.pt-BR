@@ -3,10 +3,10 @@ title: Logs de auditoria
 description: Saiba como visualizar e gerenciar logs de auditoria de Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: dcfc960019b1dbd1b0306f4a0f07d113ae3f1312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 67%
+source-wordcount: '825'
+ht-degree: 64%
 
 ---
 
@@ -30,7 +30,7 @@ No Customer Journey Analytics, navegue até **[!UICONTROL Ferramentas]** > **[!U
 
 O log de auditoria de hoje e ontem é mostrado por padrão.
 
-![log de auditoria](assets/audit_ui.png)
+![Destaque do log de auditoria hoje (14 de outubro de 2022) e ontem (13 de outubro de 2022). ](assets/audit_ui.png)
 
 Você pode selecionar quais colunas ficam visíveis ao acessar o seletor de colunas na parte superior direita.
 
@@ -38,7 +38,7 @@ Você pode selecionar quais colunas ficam visíveis ao acessar o seletor de colu
 
 Clique duas vezes no botão info (i) ao lado de uma descrição.
 
-![log de auditoria](assets/info-button-audit.png)
+![Log de auditoria destacando o botão de informações. ](assets/info-button-audit.png)
 
 Os seguintes itens são mostrados:
 
@@ -91,7 +91,7 @@ Os seguintes itens são mostrados:
 
 Selecione o ícone de funil (![filtro](assets/filter-icon.png)) para exibir uma lista de controles de filtro para ajudar a limitar os resultados. Somente os últimos 1.000 registros são exibidos, independentemente dos vários filtros selecionados.
 
-![filtros](assets/filters.png)
+![Log de auditoria mostrando os filtros exibidos para o Intervalo de dados.](assets/filters.png)
 
 Os seguintes filtros estão disponíveis para eventos de auditoria na interface do usuário:
 

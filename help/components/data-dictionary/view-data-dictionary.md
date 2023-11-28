@@ -4,10 +4,10 @@ title: Exibir o dicionário de dados
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: 82ba31eec1455bf3d0c746cf5eebc81ce6162a00
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 48%
+source-wordcount: '362'
+ht-degree: 71%
 
 ---
 
@@ -23,7 +23,7 @@ Para exibir informações sobre um componente no Dicionário de dados:
 
    A janela do dicionário de dados é exibida.
 
-   ![data-dictionary.png](assets/data-dictionary.png)
+   ![Janela Dicionário de dados mostrando filtros rápidos para Dimension, Métricas, Segmentos e Intervalos de datas](assets/data-dictionary.png)
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
@@ -35,7 +35,7 @@ Para exibir informações sobre um componente no Dicionário de dados:
 
 {{dd-filter-criteria}}
 
-1. (Opcional) Selecione a **Ordenar** ícone ![Ícone Classificar componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), em seguida, selecione qualquer uma das seguintes opções de filtro para classificar a lista de componentes:
+1. (Opcional) Selecione o ícone de **Classificar**, ![Ícone de classificar componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg), e selecione qualquer uma das seguintes opções de filtro para classificar a lista de componentes:
 
    {{components-sort-options}}
 

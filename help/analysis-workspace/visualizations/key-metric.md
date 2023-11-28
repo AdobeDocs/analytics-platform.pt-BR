@@ -4,10 +4,10 @@ title: Resumo da métrica principal
 feature: Visualizations
 role: User, Admin
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
-source-git-commit: 22cb88aa98576b70b8b089eda4a46f1e8963767a
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 91%
+source-wordcount: '641'
+ht-degree: 85%
 
 ---
 
@@ -37,7 +37,7 @@ Essa visualização aborda uma variedade de casos de uso comuns, incluindo:
 
 1. Configure a visualização selecionando uma métrica, um intervalo de datas principal, um intervalo de datas de comparação e um filtro (se desejar):
 
-   ![configuração da métrica principal](assets/key-metric-config.png)
+   ![Configuração da métrica principal mostrando as opções de métrica, intervalo de datas principal, intervalo de datas de comparação e segmento.](assets/key-metric-config.png)
 
    | Configuração | Definição |
    | --- | --- |
@@ -79,7 +79,7 @@ When you change the panel's date range to '4 days ago', the comparison date rang
 
 ## Visualizar a saída
 
-![](assets/key-metric-output.png)
+![Saída de métrica principal mostrando a métrica, a alteração de resumo, o número de resumo e os gráficos de linha.](assets/key-metric-output.png)
 
 Observe que:
 
@@ -89,13 +89,13 @@ Observe que:
 
 * A partir daqui, você pode passar o mouse sobre os gráficos de linha para ver as estatísticas de dias individuais:
 
-![statistics](assets/key-metric-output2.png)
+![Estatísticas de visitas](assets/key-metric-output2.png)
 
 ## Configurações de visualização
 
 O resumo da métrica principal oferece várias configurações flexíveis para permitir gerar melhores relatórios e comunicações sobre métricas importantes. As configurações podem ser acessadas por meio do ícone de engrenagem no canto superior direito da visualização.
 
-![](assets/key-metric-settings.png)
+![Configurações do resumo da métrica principal mostrando o tipo de exibição Resumo, opções gerais e de exibição.](assets/key-metric-settings.png)
 
 | Configuração | Descrição |
 | --- | --- |
@@ -116,7 +116,7 @@ Após criar a visualização, ainda é possível editar a configuração origina
 
 1. Clique no ícone de lápis no canto superior direito da visualização (ao lado do ícone de engrenagem de configurações).
 
-   ![editar](assets/edit-icon.png)
+   ![Ícones de edição de visualização](assets/edit-icon.png)
 
    Você será levado de volta à visualização da configuração original.
 

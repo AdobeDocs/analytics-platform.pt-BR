@@ -4,9 +4,9 @@ description: Saiba como adicionar dados baseados em conta como um conjunto de da
 exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: d2bb21939f861d83b6c306ac548e4fb35cbd19a4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '821'
 ht-degree: 74%
 
 ---
@@ -33,7 +33,7 @@ Primeiro, você cria um esquema de pesquisa no Adobe Experience Platform e, em s
 
 Criar seu próprio esquema para o [pesquisa](/help/getting-started/cja-glossary.md) A tabela garante que o conjunto de dados usado estará disponível no Customer Journey Analytics com a configuração correta (tipo de registro). Uma prática recomendada é [criar uma classe de esquema personalizada](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#create-new-class) chamada “Pesquisa”, sem elementos, que pode ser reutilizada para todas as tabelas de pesquisa.
 
-![](../assets/create-new-class.png)
+![Caixa de diálogo Criar nova classe.](../assets/create-new-class.png)
 
 ## 2. Criar conjunto de dados de pesquisa (Experience Platform)
 

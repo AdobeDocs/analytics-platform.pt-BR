@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
-source-git-commit: 5bb7e04deb52e4805e7151afce0bad476df7f13d
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 57%
+source-wordcount: '314'
+ht-degree: 54%
 
 ---
 
@@ -18,7 +18,7 @@ As anotações permitem comunicar com eficácia nuances de dados contextuais e i
 
 Por exemplo, digamos que você esteja compartilhando projetos com sua organização. Se você tiver um grande pico no tráfego devido a uma campanha de marketing, poderá criar uma anotação de &quot;Data de lançamento da campanha&quot; e colocá-la no escopo de toda a visualização de dados. Quando os usuários visualizam qualquer conjunto de dados que inclui essa data, eles veem a anotação dentro dos projetos, junto com os dados deles.
 
-![](assets/multi-day.png)
+![Gráfico de linhas com anotação realçada.](assets/multi-day.png)
 
 Lembre-se:
 
@@ -46,6 +46,6 @@ As anotações podem ser ativadas ou desativadas em vários níveis:
 
 * No nível do usuário: [!UICONTROL Componentes] > [!UICONTROL Preferências do usuário] > [!UICONTROL Dados] > [!UICONTROL Mostrar anotações]
 
-![](assets/show-ann.png)
+![Caixa de diálogo Configurações de visualização com Mostrar anotações realçadas](assets/show-ann.png)
 
-![](assets/show-ann2.png)
+![Preferências do usuário destacando Mostrar anotações.](assets/show-ann2.png)

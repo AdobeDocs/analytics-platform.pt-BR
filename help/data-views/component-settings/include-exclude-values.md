@@ -4,10 +4,10 @@ description: Inclua ou exclua condicionalmente um item de dimensão dependendo d
 exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: b353983b13cbbfb4c846e75aecc1b78da26ddeb2
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 97%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Valores de inclusão e exclusão permitem criar regras que dependem do valor de um item de dimensão. Valores que não atendem aos critérios definidos são tratados no Analysis Workspace como se nunca houvessem existido, embora os dados ainda existam no conjunto de dados subjacente.
 
-![Inclusão e exclusão](../assets/include-exclude.png)
+![Janela Visualizações de dados destacando os valores de exclusão de Inclusão](../assets/include-exclude.png)
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
@@ -26,4 +26,4 @@ Valores de inclusão e exclusão permitem criar regras que dependem do valor de 
 | [!UICONTROL Corresponder operando] | Permite especificar o operando correspondente ao qual o operador deve ser aplicado.<ul><li>**Sequência**: Campo de texto</li><li>**Duplo/Número inteiro**: Campo de texto com setas para cima/para baixo para valores numéricos</li><li>**Data**: Seletor de granularidade do dia (calendário)</li><li>**Data Hora**: Seletor de granularidade de data e hora</li></ul> |
 | [!UICONTROL Adicionar regra] | Permite especificar um operador e um operando de correspondência adicional. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

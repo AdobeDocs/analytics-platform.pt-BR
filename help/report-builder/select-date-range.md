@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 92%
+source-wordcount: '1087'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +36,7 @@ A opção A partir da célula permite fazer referência às datas inseridas em c
 
 Você tem a opção de excluir o hoje em qualquer intervalo de datas selecionado.
 
-![Selecione Excluir hoje.](./assets/image17.png)
+![Painel de edição rápida do Report Builder com o calendário selecionado e Excluir hoje selecionado.](./assets/image17.png)
 
 ## Usar o calendário
 
@@ -62,7 +62,7 @@ Para selecionar datas usando o calendário
 
 Para definir um intervalo de datas invertido, clique primeiro na data final e, em seguida, clique na data inicial.
 
-![Clique na data final e, em seguida, na data inicial.](./assets/image18.png)
+![painel Intervalo de datas do Report Builder mostrando o calendário, a data final e a data inicial selecionada.](./assets/image18.png)
 
 ### Menu suspenso Predefinição
 
@@ -76,7 +76,7 @@ A opção Datas em andamento permite selecionar um intervalo de datas usando dat
 
 1. Selecione uma expressão em andamento para a data de início e/ou de término.
 
-   ![Selecione Usar datas do acumulado e a expressão do acumulado.](./assets/image19.png)
+   ![painel Intervalo de datas do Report Builder mostrando Usar datas do acumulado selecionadas e a expressão do acumulado.](./assets/image19.png)
 
    **Início do** — Permite selecionar o início de um dia, semana, mês, trimestre ou ano.
 
@@ -86,11 +86,11 @@ A opção Datas em andamento permite selecionar um intervalo de datas usando dat
 
 1. Escolha dia, semana, mês, trimestre ou ano como o período do acumulado.
 
-   ![Escolha o dia atual.](./assets/image20.png)
+   ![Painel de intervalo de datas do Report Builder que mostra o dia atual selecionado.](./assets/image20.png)
 
 1. Adicione ou subtraia dias, semanas, meses, trimestres ou anos a partir da data em andamento.
 
-   ![Selecione o dia atual mais 14 dias.](./assets/image21.png)
+   ![painel Intervalo de datas do Report Builder mostrando o dia atual mais 14 dias selecionados.](./assets/image21.png)
 
 1. Clique em Próximo para definir o intervalo de dados.
 

@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 9cffb57cc4a525c78ec171034adff0e02b936cbf
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 74%
+source-wordcount: '2672'
+ht-degree: 69%
 
 ---
 
@@ -24,11 +24,11 @@ As informações a seguir instruem os curadores de dados do Customer Journey Ana
 
 Um cartão de pontuação do Analytics exibe as principais visualizações de dados para usuários executivos em um layout lado a lado, como mostrado abaixo:
 
-![Exemplo de scorecard](assets/intro_scorecard.png)
+![Exemplo de cartão de pontuação do Analytics mostrando a demonstração do cartão de pontuação para dispositivos móveis](assets/intro_scorecard.png)
 
 Como curador deste cartão de pontuação, você pode usar o construtor de cartões de pontuação para configurar quais blocos são exibidos no cartão de pontuação para o consumidor executivo. Você também configura como as exibições detalhadas ou os detalhamentos podem ser ajustados quando os blocos forem tocados. A interface do construtor de cartões de pontuação é mostrada abaixo:
 
-![Construtor de scorecards](assets/scorecard_builder.png)
+![Construtor de cartão de pontuação mostrando a nova janela de cartão de pontuação móvel. ](assets/scorecard_builder.png)
 
 Para criar o cartão de pontuação, é necessário fazer o seguinte:
 
@@ -45,7 +45,7 @@ Você pode acessar o modelo [!UICONTROL Cartão de pontuação para dispositivos
 1. Clique em **[!UICONTROL Criar projeto]** e selecione o modelo de projeto **[!UICONTROL Cartão de pontuação para dispositivos móveis em branco]**.
 1. Clique em **[!UICONTROL Criar]**.
 
-![Modelo de Scorecard](assets/new_template.png)
+![Janela Todos os modelos com o Scorecard para dispositivos móveis em branco selecionado.](assets/new_template.png)
 
 ### Menu Ferramentas
 
@@ -58,11 +58,11 @@ Para implementar o modelo de scorecard:
 
 1. Em **[!UICONTROL Propriedades]** (no painel direito), especifique uma **[!UICONTROL Visualização de dados do projeto]** da qual você quer usar dados.
 
-   ![seleção da visualização de dados](assets/properties_save.png)
+   ![Nova janela de cartão de pontuação para dispositivos móveis que destaca a seleção da visualização de dados](assets/properties_save.png)
 
 1. Para adicionar um novo bloco ao cartão de pontuação, arraste uma métrica do painel esquerdo e solte-a na **[!UICONTROL Arrastar e soltar métricas aqui]** zona. Também é possível inserir uma métrica entre dois blocos usando um fluxo de trabalho semelhante.
 
-   ![Adicionar blocos](assets/build_list.png)
+   ![Nova janela de cartão de pontuação móvel com uma seta apontando para uma métrica (Novo KPI) colocada no cartão de pontuação. ](assets/build_list.png)
 
 
 1. Em cada bloco, é possível acessar uma exibição detalhada que mostra informações adicionais sobre a métrica, como itens principais para uma lista de dimensões relacionadas.
@@ -73,7 +73,7 @@ Para adicionar uma dimensão relacionada a uma métrica, arraste uma dimensão d
 
 Por exemplo, é possível adicionar dimensões apropriadas (como **[!DNL Marketing Channel]**, neste exemplo) à métrica **[!UICONTROL Visitantes únicos]**, arrastando-as e soltando-as no bloco. Os detalhamentos de dimensão são exibidos na seção [!UICONTROL Detalhes] (detalhamento) do bloco específico **[!UICONTROL Propriedades]**. É possível adicionar várias dimensões a cada bloco.
 
-![Adicionar dimensões](assets/layer_dimensions.png)
+![Nova janela de cartão de pontuação móvel com uma seta apontando da lista de dimensões para o painel de cartão de pontuação.](assets/layer_dimensions.png)
 
 ## Aplicar filtros {#filters}
 
@@ -81,29 +81,29 @@ Para aplicar filtros a blocos individuais, arraste um filtro (segmentos são fil
 
 Se quiser aplicar o filtro a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão de pontuação. Ou você também pode aplicar filtros selecionando filtros no menu de filtro abaixo dos intervalos de datas. Você [configurar e aplicar filtros para seus cartões de pontuação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que no Customer Journey Analytics Workspace.
 
-![Criar filtros](assets/segment_ui.png)
+![Seletor suspenso de filtros que destaca os filtros de build](assets/segment_ui.png)
 
 ## Adicionar intervalos de datas {#dates}
 
 Adicione e remova combinações de intervalo de datas que podem ser selecionadas no cartão de pontuação selecionando o menu suspenso Intervalo de datas.
 
-![Novo cartão de pontuação](assets/new_score_card.png)
+![Novo scorecard para dispositivos móveis destacado Ontem vs. Mesmo dia da semana passada](assets/new_score_card.png)
 
 Cada novo cartão de pontuação começa com seis combinações de intervalo de datas, com foco nos dados de hoje e ontem. Você pode remover intervalos de datas desnecessários clicando no x ou editar cada combinação de intervalo de datas clicando no lápis.
 
-![Novo cartão de pontuação2](assets/new_score_card2.png)
+![Novo cartão de pontuação para dispositivos móveis destacando o ícone de lápis](assets/new_score_card2.png)
 
 Para criar ou alterar uma data principal, use o menu suspenso para selecionar intervalos de datas disponíveis ou arraste e solte um componente de data do painel direito na área designada.
 
-![Novo cartão de pontuação3](assets/new_score_card3.png)
+![Novo cartão de pontuação para dispositivos móveis destacando os Intervalos de datas com a data principal/Ontem selecionada](assets/new_score_card3.png)
 
 Para criar uma data de comparação, você pode selecionar entre predefinições convenientes para comparações de tempo comuns no menu suspenso. Você também pode arrastar e soltar um componente de data no painel direito.
 
-![Novo cartão de pontuação4](assets/new_score_card4.png)
+![Novo cartão de pontuação para dispositivos móveis destacando os Intervalos de datas com a Data de comparação definida como Mesmo dia da semana passada selecionada](assets/new_score_card4.png)
 
 Se o intervalo de datas desejado ainda não tiver sido criado, será possível criar um novo clicando no ícone de calendário.
 
-![Novo cartão de pontuação5](assets/new_score_card5.png)
+![Ícone de calendário](assets/new_score_card5.png)
 
 Você será direcionado ao construtor de intervalo de datas, em que é possível criar e salvar um novo componente de intervalo de datas.
 
@@ -111,11 +111,11 @@ Você será direcionado ao construtor de intervalo de datas, em que é possível
 
 Para incluir intervalos de datas de comparação, ative a configuração **Incluir datas de comparação**.
 
-![Incluir datas de comparação](assets/include-comparison-dates.png)
+![Novo scorecard para dispositivos móveis destacado como Ontem vs. Dia anterior e Incluir datas de comparação](assets/include-comparison-dates.png)
 
 A configuração está *ativada* por padrão. Deixe-a *desativada* se não quiser exibir datas de comparação.
 
-![Configuração de data de comparação desmarcada](assets/no-comparison-dates.png)
+![Novo scorecard para dispositivos móveis destacado Ontem e Incluir datas de comparação](assets/no-comparison-dates.png)
 
 ## Aplicar visualizações {#viz}
 
@@ -131,25 +131,25 @@ Ou clique no ícone [!UICONTROL Visualizações] no painel à esquerda e arraste
 
 Use a visualização Número do resumo para realçar um grande número que é importante em um projeto.
 
-![Número do resumo](assets/summary-number.png)
+![Novo cartão de pontuação para dispositivos móveis com visualização do número de resumo destacando 13,3 mil visitas](assets/summary-number.png)
 
 ### [!UICONTROL Rosca]
 
 Semelhante ao gráfico de pizza, essa visualização mostra dados como partes de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. Por exemplo, digamos que você queira ver qual plataforma de publicidade contribuiu para o número total de pessoas únicas:
 
-![Visualização de rosca](assets/donut-viz.png)
+![Novo cartão de pontuação para dispositivos móveis mostrando uma visualização em Rosca](assets/donut-viz.png)
 
 ### [!UICONTROL Linha]
 
 A visualização de linha representa as métricas que usam uma linha para mostrar como os valores são alterados em um período. Um gráfico de linha mostra dimensões ao longo do tempo, mas funciona com qualquer visualização. Você está visualizando a dimensão categoria do produto neste exemplo.
 
-![Visualização de linha](assets/line.png)
+![Novo cartão de pontuação para dispositivos móveis mostrando uma visualização de Linha](assets/line.png)
 
 ### [!UICONTROL Barra horizontal]
 
 Esta visualização mostra barras horizontais que representam vários valores de uma ou mais métricas. Por exemplo, para ver facilmente seus principais produtos, use a [!UICONTROL Barra horizontal] como sua visualização preferida.
 
-![barra horizontal](assets/horizontal.png)
+![Novo cartão de pontuação móvel mostrando uma barra horizontal](assets/horizontal.png)
 
 ### Remover item de dimensão [!UICONTROL Não especificado]
 
@@ -158,7 +158,7 @@ Caso queira remover itens de dimensões [!UICONTROL Não especificados] dos seus
 1. Selecione o bloco correto.
 1. No painel direito, em **[!UICONTROL Drill-ins]**, selecione a seta para a direita ao lado do item de dimensão do qual você deseja remover itens **[!UICONTROL Não especificados]**.
 
-   ![não especificado](assets/unspecified.png)
+   ![Propriedades com seta apontando para a seta para a direita ao lado do nome da dimensão.](assets/unspecified.png)
 
 1. Clique no ícone ao lado de **[!UICONTROL Não especificado]** para remover dados não especificados de seus relatórios. (Também é possível remover qualquer outro item de dimensão).
 

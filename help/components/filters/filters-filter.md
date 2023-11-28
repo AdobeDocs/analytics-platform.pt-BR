@@ -2,10 +2,11 @@
 description: Filtrar por tags, proprietários e outros filtros (Mostrar tudo, Meus, Compartilhados comigo, Favoritos e Aprovados).
 title: Filtrar a lista de filtros
 feature: Filters
-source-git-commit: 620f190e8b8a6947af019ee1e39c7db8614a5502
+exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 31%
+source-wordcount: '194'
+ht-degree: 30%
 
 ---
 
@@ -17,7 +18,7 @@ A filtragem facilita a pesquisa de filtros.
 
 1. No Gerenciador de filtros, clique na guia **[!UICONTROL Filtros]** ícone:  ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)
 
-   ![](assets/filtering.png)
+   ![Gerenciador de filtros mostrando o ícone Filtros e os filtros disponíveis.](assets/filtering.png)
 
 2. Os seguintes filtros estão disponíveis:
 

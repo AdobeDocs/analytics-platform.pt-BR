@@ -3,10 +3,10 @@ description: No Gerenciador de métricas calculadas, a marcação de segmentos p
 title: Marcar métricas calculadas
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
-source-git-commit: 124834d0ad1c53fd5930b07a9aa0893a15a49875
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 22%
+source-wordcount: '285'
+ht-degree: 21%
 
 ---
 
@@ -31,7 +31,7 @@ Os usuários podem criar tags para métricas calculadas e aplicar uma ou mais ta
 
 1. No Gerenciador de métricas calculadas, marque a caixa de seleção ao lado de qualquer métrica que deseja marcar.
 
-   ![](assets/cm_add_tags.png)
+   ![Marcar lista de métricas calculadas com Marketing móvel selecionado.](assets/cm_add_tags.png)
 
 1. No [!UICONTROL **Marcar métrica calculada**] caixa de diálogo:
 

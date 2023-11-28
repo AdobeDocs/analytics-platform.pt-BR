@@ -4,9 +4,9 @@ description: Saiba mais sobre como usar o Gerente de atividade de relatórios pa
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
-source-git-commit: 8e2605a18d7c8201122603c9f8ee381a2e97fb9f
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1944'
 ht-degree: 11%
 
 ---
@@ -23,7 +23,7 @@ Para obter mais informações sobre o Gerente de atividades de relatórios, incl
 
    Uma lista de suas conexões base ativadas é exibida.
 
-   ![fila de relatórios](assets/reporting-activity1.png)
+   ![Atividade de relatórios mostrando a fila de relatórios](assets/reporting-activity1.png)
 
 1. (Opcional) É possível pesquisar ou filtrar a lista de conexões:
 

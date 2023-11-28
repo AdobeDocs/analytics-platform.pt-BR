@@ -3,10 +3,10 @@ description: Use legendas inteligentes para gerar insights em linguagem natural 
 title: Legendas inteligentes
 feature: Visualizations
 role: User, Admin
-exl-id: 7e61ac12-a68e-4639-b021-f04762af4709
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '412'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ As legendas estão disponíveis para todos os usuários de Customer Journey Anal
 
 Para iniciar legendas geradas automaticamente para uma visualização de linha, clique no **[!UICONTROL Legendas inteligentes]** ícone na parte superior direita da visualização.
 
-![iniciar legendas inteligentes](assets/intell-caps-1.png)
+![Janela Análise do Launch mostrando as legendas inteligentes para a tendência de Exibições de produto. ](assets/intell-caps-1.png)
 
 Os insights de linguagem natural estão sendo gerados agora.
 
@@ -40,7 +40,7 @@ Os insights de linguagem natural estão sendo gerados agora.
 
 Esta é uma amostra de como as legendas podem ser:
 
-![Legendas](assets/captions.png)
+![Legendas inteligentes para visualização de Linha, incluindo Sazonalidade, Mín, Máx, Pico e Declínio.](assets/captions.png)
 
 ## Copiar para a área de transferência {#copy}
 
@@ -66,4 +66,4 @@ Você pode **exportar legendas via PDF**, desde que o projeto seja salvo com as 
 
 Se você preferir não gerar legendas inteligentes, é possível desativar esse recurso acessando as Preferências de visualização e desmarcando **[!UICONTROL Mostrar legendas inteligentes]**.
 
-![configurações de legenda](assets/toggle-captions.png)
+![Opções de visualização de linha que mostram a opção de desmarcar Mostrar legendas inteligentes.](assets/toggle-captions.png)

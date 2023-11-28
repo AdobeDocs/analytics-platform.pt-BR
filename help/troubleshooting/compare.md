@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: serviço de consulta;serviço de consulta;sintaxe sql
-source-git-commit: 5caae6c8dd38eb5c6ef9cf02cdff965add75b312
+source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 69%
+source-wordcount: '886'
+ht-degree: 68%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 69%
 
 Suponhamos que você tenha assimilado dados do Adobe Analytics na Adobe Experience Platform por meio de [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR)e criou uma conexão Customer Journey Analytics usando esse conjunto de dados.
 
-![Fluxo de dados](assets/compare.png)
+![O fluxo de dados do Adobe Analytics através do conector de dados para o Adobe Experience Platform e para o Customer Jornada Analytics usando conexões do CJA.](assets/compare.png)
 
 Em seguida, você criou uma visualização de dados e ao mesmo tempo em que relatava esses dados no Customer Journey Analytics, notou discrepâncias com os resultados do relatório no Adobe Analytics.
 
