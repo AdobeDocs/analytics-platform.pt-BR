@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 648acd49d6cc38531f50df0a7d78ec6dce533d01
+source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
 workflow-type: tm+mt
-source-wordcount: '1051'
-ht-degree: 81%
+source-wordcount: '1046'
+ht-degree: 82%
 
 ---
 
@@ -167,12 +167,10 @@ ht-degree: 81%
       + [Baixar](../analysis-workspace/export/download-send.md)
       + [Enviar para outras pessoas](../analysis-workspace/export/t-schedule-report.md)
       + [Exportar para a nuvem](../analysis-workspace/export/export-cloud.md)
-   + Analista virtual {#virtual-analyst}
-      + [Visão geral do Analista virtual](../analysis-workspace/virtual-analyst/overview.md)
-      + Detecção de anomalias {#anomaly-detection}
-         + [Visão geral da Detecção de anomalias](../analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md)
-         + [Exibir anomalias no Analysis Workspace](../analysis-workspace/virtual-analyst/c-anomaly-detection/view-anomalies.md)
-         + [Técnicas estatísticas usadas na Detecção de anomalias](../analysis-workspace/virtual-analyst/c-anomaly-detection/statistics-anomaly-detection.md)
+   + Detecção de anomalias {#anomaly-detection}
+      + [Visão geral da Detecção de anomalias](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [Exibir anomalias no Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
+      + [Técnicas estatísticas usadas na Detecção de anomalias](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + [Preferências do usuário](../analysis-workspace/user-preferences.md)
    + Perguntas frequentes sobre o Workspace {#workspace-faq}
       + [Perguntas frequentes](../analysis-workspace/workspace-faq/faq.md)
@@ -252,8 +250,8 @@ ht-degree: 81%
          + [Empilhar e substituir filtros](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Métricas filtradas e ponderadas](../components/calc-metrics/cm-workflow/cm-weighted-metric.md)
          + [Filtrar métricas calculadas](../components/calc-metrics/cm-workflow/cm-filter.md)
-         + [Marcar métricas calculadas como favoritos](../components/calc-metrics/cm-workflow/cm-favorite.md)
-         + [Copiar métricas calculada](../components/calc-metrics/cm-workflow/cm-copy.md)
+         + [Marcar métricas calculadas como favoritas](../components/calc-metrics/cm-workflow/cm-favorite.md)
+         + [Copiar métricas calculadas](../components/calc-metrics/cm-workflow/cm-copy.md)
          + [Usar funções](../components/calc-metrics/cm-workflow/cm-using-functions.md)
          + [Marcar métricas calculadas](../components/calc-metrics/cm-workflow/cm-tagging.md)
          + [Aprovar métricas calculadas](../components/calc-metrics/cm-workflow/cm-approving.md)

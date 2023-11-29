@@ -5,8 +5,8 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: dd83785ea67a48e2051c60568e6fe5b436edf4db
-workflow-type: ht
+source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
+workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ A “progressividade” é um conceito-chave aqui. Ao contrário da maioria das 
 
 Integrados a esses componentes de visualização, estão recursos inteligentes como:
 
-* **Recursos de análise virtual**, como a [Detecção de anomalias](/help/analysis-workspace/virtual-analyst/c-anomaly-detection/anomaly-detection.md) que usa algoritmos preditivos e aprendizado de máquina para fornecer insights sobre o que estaria gerando comportamentos incomuns em seus dados.
+* **Recursos de análise virtual**, como a [Detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) que usa algoritmos preditivos e aprendizado de máquina para fornecer insights sobre o que estaria gerando comportamentos incomuns em seus dados.
 
 * **Recursos de análise avançada** que se concentram especificamente em insights de jornada de cliente, como [diagramas de fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md), [painel de atribuição](/help/analysis-workspace/c-panels/attribution.md), [diagramas de fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) e [detalhamentos de dimensão](/help/components/dimensions/t-breakdown-fa.md). Exemplos de visualizações prontas para uso são:
 
