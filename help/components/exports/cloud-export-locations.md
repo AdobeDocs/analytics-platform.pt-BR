@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Configurar locais de exportação da nuvem
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1510'
 ht-degree: 4%
 
 ---
@@ -27,7 +27,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
 1. Selecione o [!UICONTROL **Localizações**] e selecione [!UICONTROL **Adicionar localização**].
 
-   ![botão adicionar localização](assets/location-add.png)
+   ![Exporta a janela com a guia Localização selecionada, destacando o botão Adicionar localização](assets/location-add.png)
 
    Ou
 

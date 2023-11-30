@@ -3,7 +3,7 @@ title: Tabela de forma livre
 description: As tabelas de forma livre são a base para a análise de dados no Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 91%
@@ -20,7 +20,7 @@ No Analysis Workspace, uma Tabela de forma livre é a base para a análise de da
 
 A maneira mais rápida de criar uma tabela é soltar os componentes diretamente em um projeto, painel ou tabela de forma livre em branco. Uma tabela de forma livre será criada automaticamente para você em um formato recomendado. [Assista ao tutorial](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace.html?lang=pt-BR).
 
-![Um novo Painel com o componente de visitas colocado no espaço de trabalho.](assets/automated-table.png)
+![Um novo Painel com o componente de visitas solto no espaço de trabalho.](assets/automated-table.png)
 
 ## Construtor de tabelas de forma livre
 
