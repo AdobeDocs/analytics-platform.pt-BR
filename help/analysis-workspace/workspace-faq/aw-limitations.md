@@ -3,10 +3,10 @@ description: Saiba mais sobre as limitações conhecidas do Adobe Analysis Works
 title: Limitações conhecidas do Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 412cb540af4fd7500821f42d9d89e146644997db
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 84%
+source-wordcount: '320'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +20,6 @@ Veja a seguir uma lista de limitações conhecidas do Analysis Workspace e seus 
 * A opção Criar métrica a partir da seleção é desativada quando os filtros são usados como linhas de uma tabela. Além disso, a opção Criar métrica a partir da seleção não deve ser aplicada a colunas alinhadas por data.
 * A formatação condicional para linhas de detalhamento não pode usar intervalos personalizados.
 * O total de linhas da tabela não pode incluir a tendência quando a configuração Calcular totais somando os valores das linhas (normalmente usada com itens de linhas estáticas) tiver sido usada.
-* [!UICONTROL A Análise de contribuição] pode ser executada _somente_ na granularidade [!UICONTROL diária]. Ela não pode ser executada em relação aos dados por [!UICONTROL hora], [!UICONTROL semana] etc.
 
 ## Visualizações
 
