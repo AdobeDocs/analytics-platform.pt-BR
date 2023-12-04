@@ -4,9 +4,9 @@ description: Saiba como as políticas e os rótulos de dados definidos na Adobe 
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Clique em **[!UICONTROL Aplicar]** para ver quais componentes têm rótulos anex
 
 Novamente, clique no ícone de [!UICONTROL filtro] no painel à esquerda em **[!UICONTROL Governança de dados]** e clique em **[!UICONTROL Políticas]**:
 
-![Filtrar componentes incluídos por lista mostrando a opção Impor análise selecionada](assets/filter-policies.png)
+![Filtrar componentes incluídos por lista mostrando a opção Forçar análise selecionada](assets/filter-policies.png)
 
 Clique em **[!UICONTROL Aplicar]** para ver quais políticas estão ativadas.
 
@@ -67,7 +67,7 @@ Se as políticas **[!UICONTROL Forçar análise]** ou **[!UICONTROL Forçar down
 
 Esses componentes estão esmaecidos na lista [!UICONTROL Campos de esquema] no painel à esquerda:
 
-![Componentes esmaecidos e a mensagem Políticas indicando que as políticas foram aplicadas a este campo restringindo o uso dos dados](assets/component-greyed.png)
+![Componentes esmaecidos e a mensagem de Políticas indicando que políticas foram aplicadas a este campo restringindo o uso dos dados](assets/component-greyed.png)
 
 Também não é possível salvar uma visualização de dados que tenha campos bloqueados.
 
