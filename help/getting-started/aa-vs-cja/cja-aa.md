@@ -4,10 +4,10 @@ description: Recursos do Customer Journey Analytics em comparação ao conjunto 
 exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 15fbbf26b58b474f65e6585ac72bdf247fb1678d
-workflow-type: ht
-source-wordcount: '2135'
-ht-degree: 100%
+source-git-commit: 3482083fd5f99f133db79f682d3231cc75c969ff
+workflow-type: tm+mt
+source-wordcount: '2044'
+ht-degree: 96%
 
 ---
 
@@ -42,9 +42,9 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Acesso à API de relatórios | Suporte completo: disponível por meio da [API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | Relatórios/projetos agendados | Suporte completo. |
 | Segmentos | Suporte completo. Chamados agora de “Filtros”: observe que nenhum segmento existente no Analysis Workspace tradicional será transferido para o Customer Journey Analytics. |
-| Conjuntos de relatórios virtuais | Suporte completo. Agora chamados de [Visualizações de dados](/help/data-views/create-dataview.md). |
+| Conjuntos de relatórios virtuais | Suporte completo. Agora chamado [Visualizações de dados](/help/data-views/create-dataview.md). |
 | Curadoria de componentes do conjunto de relatórios virtual | Suporte completo. Agora parte das Visualizações de dados. |
-| Dimensões Dispositivo, Navegador, Referenciador e Tecnologia | Compatível com conjuntos de dados baseados no [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR) e com conjuntos de dados gerados pelo WebSDK. Consulte a [documentação sobre quais variáveis do Analytics são compatíveis por meio do conector de dados do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR).No momento, se você utilizar a coleta de dados do SDK da Web da Experience Platform, o dispositivo e as dimensões baseadas na pesquisa do dispositivo não serão compatíveis. Uma futura compatibilidade está planejada. Para adicionar pesquisas de dispositivos e navegadores ao seu fluxo de dados do SDK da Web, consulte [esta documentação](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=pt-BR) |
+| Dimensões Dispositivo, Navegador, Referenciador e Tecnologia | Compatível com conjuntos de dados baseados no [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR) e com conjuntos de dados gerados pelo WebSDK. Consulte [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR)Se você usa a coleção de dados do SDK da Web do Experience Platform, Dispositivo e as dimensões baseadas na pesquisa Dispositivo não são compatíveis no momento. Uma futura compatibilidade está planejada. Para adicionar pesquisas de dispositivos e navegadores ao seu fluxo de dados do SDK da Web, consulte [esta documentação](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=pt-BR) |
 | Análise de mídia de transmissão | Os dados de mídia estão disponíveis usando o conector de origem do Analytics como parte do painel Visualizadores simultâneos de mídia e do painel Tempo gasto com a reprodução da mídia no espaço de trabalho. |
 
 {style="table-layout:auto"}
@@ -137,5 +137,6 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | Opções de privacidade e segurança aprimorada - Preparação para HIPAA | O Customer Journey Analytics está em conformidade com a HIPAA e oferece opções adicionais de segurança para cumprir com as regulamentações. O Adobe Analytics não está em conformidade com a HIPAA. |
 | Capacidade de combinar conjuntos de dados (como conjuntos de relatórios do Adobe Analytics) | O Customer Journey Analytics permite combinar dados de vários conjuntos de relatórios como se fossem um único conjunto de relatórios no Adobe Analytics. |
 | Campos derivados | Os campos derivados permitem transformações no tempo do relatório para seus dados. Os dados podem ser combinados, corrigidos ou criados rapidamente, aplicando-se retroativamente a todos os relatórios. |
+| Análise guiada | A análise guiada é um formato de relatório que permite que os usuários atendam rapidamente às suas necessidades de dados para que possam obter insights de alta qualidade rapidamente e tomar mais decisões orientadas por dados. A análise guiada faz parte do Adobe Product Analytics, um complemento do Customer Journey Analytics. |
 
 {style="table-layout:auto"}
