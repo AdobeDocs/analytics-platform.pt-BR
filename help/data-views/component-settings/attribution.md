@@ -4,16 +4,16 @@ description: Permite definir a atribuição padrão de uma métrica.
 exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 35%
+source-wordcount: '2030'
+ht-degree: 28%
 
 ---
 
 # Configurações de componente de atribuição
 
-A atribuição dá a capacidade de personalizar como os itens de dimensão obtêm crédito por eventos bem-sucedidos.
+A atribuição permite personalizar como os itens de dimensão recebem crédito por eventos bem-sucedidos.
 
 ![Janela Visualizações de dados destacando a opção Definir atribuição](../assets/attribution-settings.png)
 
@@ -73,7 +73,7 @@ Um modelo de atribuição determina quais itens de dimensão recebem crédito po
 | ![Linear](../assets/attribution-models/linear.png) | Linear | Dá crédito igual a todos os pontos de contato que resultem em uma conversão. É útil quando os ciclos de conversão são mais longos ou exigem um engajamento do cliente mais frequente. As organizações normalmente usam esse modelo de atribuição que mede a eficácia da notificação de aplicativos móveis ou com produtos baseados em assinatura. |
 | ![Participação](../assets/attribution-models/participation.png) | Participação | Dá 100% de crédito a todos os pontos de contato exclusivos. Como cada ponto de contato recebe 100% de crédito, os dados de métrica normalmente somam mais de 100%. Se um item de dimensão for exibido várias vezes separadas até uma conversão, os valores serão desduplicados em 100%. Esse modelo de atribuição é ideal em situações em que você deseja entender a quais pontos de contato os clientes estão mais expostos. As organizações de mídia normalmente usam esse modelo para calcular a velocidade do conteúdo. As varejistas geralmente usam esse modelo para entender quais partes do site são essenciais para a conversão. |
 | ![Mesmo contato](../assets/attribution-models/same_touch.png) | Mesmo contato | Dá 100% de crédito ao mesmo evento em que ocorreu a conversão. Se um ponto de contato não ocorrer no mesmo evento que uma conversão, ele será agrupado em &quot;Nenhum&quot;. Às vezes, esse modelo de atribuição é equiparado a não ter nenhum modelo de atribuição. Ela é importante em cenários nos quais você não deseja valores de outros eventos que afetam como uma métrica dá crédito a itens de dimensão. Equipes de produto ou de design podem usar esse modelo para avaliar a eficácia de uma página na qual ocorre a conversão. |
-| ![Em forma de U](../assets/attribution-models/u_shaped.png) | Em forma de U | Dá crédito de 40% à primeira interação, de 40% à última interação, e divide os 20% restantes para os pontos de contato entre as duas. Para conversões com um só ponto de contato, o crédito é de 100%. Para conversões com dois pontos de contato, o crédito é de 50% para ambos. Esse modelo de atribuição é melhor usado em cenários em que você valoriza mais a primeira e a última interações, mas não deseja descartar totalmente as interações adicionais entre elas. |
+| ![Forma de U](../assets/attribution-models/u_shaped.png) | Em forma de U | Dá crédito de 40% à primeira interação, de 40% à última interação, e divide os 20% restantes para os pontos de contato entre as duas. Para conversões com um só ponto de contato, o crédito é de 100%. Para conversões com dois pontos de contato, o crédito é de 50% para ambos. Esse modelo de atribuição é melhor usado em cenários em que você valoriza mais a primeira e a última interações, mas não deseja descartar totalmente as interações adicionais entre elas. |
 | ![Curva J](../assets/attribution-models/j_shaped.png) | Curva J | Dá crédito de 60% à última interação, de 20% à primeira interação, e divide os 20% restantes para os pontos de contato entre as duas. Para conversões com um só ponto de contato, o crédito é de 100%. Para conversões com dois pontos de contato, o crédito é de 75% para a última interação e de 25% para a primeira. Semelhante à forma de U, esse modelo de atribuição favorece a primeira e a última interações, mas favorece mais a última interação. |
 | ![J invertido](../assets/attribution-models/inverse_j.png) | J invertido | Dá 60% de crédito ao primeiro ponto de contato, 20% de crédito ao último ponto de contato e divide os 20% restantes para os pontos de contato entre os dois. Para conversões com um só ponto de contato, o crédito é de 100%. Para conversões com dois pontos de contato, o crédito é de 75% para a primeira interação e de 25% para a última. Semelhante ao Forma de J, esse modelo de atribuição favorece a primeira e a última interações, mas favorece mais a primeira interação. |
 | ![Declínio de tempo](../assets/attribution-models/time_decay.png) | Declínio de tempo | Segue um declínio exponencial com um parâmetro personalizado de meia-vida e padrão de 7 dias. O peso de cada canal depende da quantidade de tempo decorrido entre a iniciação do ponto de contato e a conversão final. A fórmula usada para determinar o crédito é `2^(-t/halflife)`, em que `t` é o tempo entre um ponto de contato e uma conversão. Todos os pontos de contato são normalizados para 100%. Ideal para cenários em que você deseja medir a atribuição em relação a um evento específico e significativo. Quanto mais tarde ocorrer uma conversão após esse evento, menos crédito será dado. |

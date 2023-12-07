@@ -4,16 +4,16 @@ description: Exibir as configurações principais de um componente de visualiza�
 exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 69%
+source-wordcount: '491'
+ht-degree: 61%
 
 ---
 
 # Configurações de componente
 
-Configurações principais que um componente de visualização de dados usa.
+As informações a seguir descrevem as configurações c que um componente de visualização de dados usa.
 
 ![Configurações de componente descritas nesta seção](../assets/component-settings.png)
 

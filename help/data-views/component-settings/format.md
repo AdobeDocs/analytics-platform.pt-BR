@@ -4,90 +4,89 @@ description: Configure como uma métrica é formatada.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 387c787dba4caa9db82d46071e23a2131043c8c6
+source-git-commit: 045037867063f6bb5a6be60132f8d7b1bb54917e
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 30%
+source-wordcount: '711'
+ht-degree: 20%
 
 ---
 
 # Configurações do componente de formato
 
-O Formato permite definir como uma determinada métrica é exibida.
+O Formato permite determinar como uma determinada métrica é exibida quando usada em relatórios.
 
-![Configurações de formato](../assets/format-settings.png)
+## Definir configurações de formato para uma métrica
 
-| Configuração | Descrição |
-| --- | --- |
-| **[!UICONTROL Formato]** | Permite especificar a formatação de uma métrica como Decimal, Hora, Porcentagem ou Moeda. |
-| **[!UICONTROL Casas decimais]** | Isso não é visível nos dados de esquema do tipo Integer. Permite especificar o número de casas decimais que uma métrica deve exibir. |
-| **[!UICONTROL Data]** | Permite determinar como você deseja que o campo de data e hora seja exibido quando usado como uma dimensão no relatório. [Saiba mais](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-| **[!UICONTROL Data e hora]** | Permite determinar como você deseja que o campo de data e hora seja exibido quando usado como uma dimensão no relatório. [Saiba mais](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-| **[!UICONTROL Moeda]** | Permite determinar em qual moeda a métrica será exibida. Consulte [Moeda](#currency) para obter mais detalhes. |
-| **[!UICONTROL Exibir tendência ascendente como]** | Permite especificar se uma tendência de alta nessa métrica é boa (verde) ou ruim (vermelho). |
-| **[!UICONTROL Valor verdadeiro]** e **[!UICONTROL Valor falso]** | Visível somente em dados de esquema do tipo Booleano. Permite personalizar o rótulo do item de dimensão para valores `true` e `false`. |
+Você pode determinar como uma determinada métrica é exibida ajustando suas configurações de formato.
 
-{style="table-layout:auto"}
+1. No Customer Journey Analytics, selecione a variável [!UICONTROL **Visualizações de dados**] guia.
 
-## Moeda
+1. Selecione a visualização de dados que contém o componente cuja configuração de formato você deseja configurar.
 
-Ao selecionar **[!UICONTROL Moeda]** como o [!UICONTROL Formato] para uma métrica, você pode determinar como exibir e converter moedas.
+1. Selecione a guia [!UICONTROL **Componentes**].
 
-### Exibir moeda
+   ![Guia Componentes](../assets/format-settings-component-tab.png)
 
-Para exibir uma moeda para uma métrica:
+1. Selecione o componente que você deseja configurar e expanda a variável [!UICONTROL **Formato**] no lado direito da página.
 
-1. Insira o número de **[!UICONTROL Casas decimais]**.
+   ![Configurações de formato](../assets/format-settings.png)
 
-1. Selecione uma moeda na caixa **[!UICONTROL Exibir moeda em]** lista.
+1. Especifique as seguintes informações:
 
+   | Configuração | Descrição |
+   | --- | --- |
+   | **[!UICONTROL Formato]** | Permite especificar a formatação de uma métrica como Decimal, Hora, Porcentagem ou Moeda. |
+   | **[!UICONTROL Decimal]** | Isso não é visível nos dados de esquema do tipo Integer. Permite especificar o número de casas decimais que uma métrica deve exibir. |
+   | **[!UICONTROL Data]** | Permite determinar como você deseja que o campo de data e hora seja exibido quando usado como uma dimensão no relatório. [Saiba mais](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
+   | **[!UICONTROL Data e hora]** | Permite determinar como você deseja que o campo de data e hora seja exibido quando usado como uma dimensão no relatório. [Saiba mais](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
+   | **[!UICONTROL Moeda]** | Permite determinar em qual moeda a métrica será exibida. <p>Se você analisar dados globais em que as transações ocorrem em moedas diferentes, consulte  [Usar conversão de moeda](#use-currency-conversion).</p> |
+   | **[!UICONTROL Exibir tendência ascendente como]** | Permite especificar se uma tendência de alta nessa métrica é boa (verde) ou ruim (vermelho). |
+   | **[!UICONTROL Valor verdadeiro]** e **[!UICONTROL Valor falso]** | Visível somente em dados de esquema do tipo Booleano. Permite personalizar o rótulo do item de dimensão para valores `true` e `false`. |
 
-### Converter e exibir moeda
+   {style="table-layout:auto"}
 
-Para ativar a conversão de uma moeda para uma ou mais métricas:
+## Usar conversão de moeda
 
-- Configure sua conexão Customer Journey Analytics para conter pelo menos um conjunto de dados de evento que contenha uma dimensão de código de moeda para cada evento que contenha uma métrica de moeda. Essa dimensão de código monetário usa um código monetário alfabético em conformidade com a [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) padrão para representação de moedas. Esses valores devem estar no formato de letras maiúsculas, como USD por $, EUR por €, GBP por £.
+A conversão de moeda em Customer Journey Analytics pode ser extremamente valiosa para empresas que operam internacionalmente. Ao eliminar as complexidades da conversão manual de moeda, a conversão de moeda no Customer Journey Analytics traz uniformidade e clareza aos dados financeiros. A conversão de moeda acompanha as taxas de câmbio históricas diárias e mantém essas taxas diárias por um período de 4 anos.
 
-   1. Selecione a dimensão de um de seus conjuntos de dados que contém os códigos monetários. Por exemplo, [!UICONTROL Código de moeda].
-
-   1. Selecionar **[!UICONTROL Código de moeda]** da lista de dimensões.
-
-- Repita essas etapas caso tenha mais dimensões com códigos de moeda que deseja usar para a conversão de moeda.
+Por exemplo, se uma empresa de comércio eletrônico operar nos EUA, Reino Unido e UE, os dados de vendas podem ser convertidos automaticamente para USD, garantindo uma fácil comparação e compreensão holística do desempenho.
 
 >[!NOTE]
 >
->A métrica selecionada para conversão de moeda deve ter um tipo numérico (Duplo, Longo, Inteiro, Curto, Byte).
+>Antes de começar a configurar uma métrica para conversão de moeda, considere o seguinte:
+>
+>* A métrica selecionada para conversão de moeda deve ter um tipo numérico (Duplo, Longo, Inteiro, Curto, Byte).
+>* Configure sua conexão Customer Journey Analytics para conter pelo menos um conjunto de dados de evento que contenha uma dimensão de código de moeda para cada evento que contenha uma métrica de moeda. Essa dimensão de código monetário usa um código monetário alfabético em conformidade com a [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html) padrão para representação de moedas. Esses valores devem estar no formato totalmente em maiúsculas, como USD por $, EUR por €, GBP por £.
+
+Para determinar como as moedas são exibidas e convertidas para uma determinada métrica:
+
+1. Comece a configurar a métrica para a qual deseja usar moeda como o formato, conforme descrito acima, em [Definir configurações de formato para uma métrica](#configure-format-settings-for-a-metric).
+
+1. Com a métrica selecionada, faça as seguintes seleções no [!UICONTROL **Formato**] no lado direito da página:
+
+   * No [!UICONTROL **Formato**] selecione [!UICONTROL **Moeda**].
+
+   * No [!UICONTROL **Casas decimais**] escolha o número de casas decimais que a métrica exibirá.
+
+     Essa opção só estará disponível se a métrica tiver um tipo numérico de &quot;Duplo&quot;.
+
+   * Selecione o [!UICONTROL **Converter Moeda**] opção.
+
+   * No [!UICONTROL **Selecionar dimensão do código de moeda**] , selecione a dimensão que representa a moeda da qual você está convertendo (a moeda em que seus dados se baseiam). Por exemplo, selecione uma dimensão chamada [!UICONTROL **Código de moeda**].
+
+     Se você não tiver uma dimensão no esquema de dados atual que contenha um campo de código monetário, poderá criar um novo campo de código monetário usando [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR), [Distiller de dados](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html)ou [Campos derivados](/help/data-views/derived-fields/derived-fields.md). O Preparo de dados é adequado somente para novas implementações, pois é apenas progressivo. Dependendo da configuração de uma organização, o Data Distiller e os Campos derivados podem ser usados para acessar os valores do código monetário historicamente.
+
+   * No [!UICONTROL **Converter e exibir moeda em**] escolha a moeda na qual deseja converter os dados.
+
+1. Repita essas etapas se desejar aplicar a conversão de moeda a métricas adicionais.
 
 
-Para definir como converter e exibir uma moeda para uma métrica:
-
-1. Insira o número de **[!UICONTROL Casas decimais]**.
-
-1. Selecionar **[!UICONTROL Converter Simultaneidade]**.
-
-1. Selecione a dimensão apropriada na lista de dimensões que contém o campo de código de moeda.
-
-1. Selecione uma moeda na caixa **[!UICONTROL Converter e exibir moeda em]** lista.
 
 ### Perguntas frequentes
 
 +++ Como a conversão de moeda é executada?
 
 Após o tempo do relatório, o valor da métrica e o código de moeda original são convertidos em USD e, em seguida, convertidos na moeda configurada para exibição. Para essa conversão, são usadas as taxas de câmbio diárias da moeda, aplicáveis no momento do evento.
-
-+++
-
-
-+++ Até que ponto as taxas de conversão diárias são mantidas?
-
-As taxas de conversão diárias são mantidas nos últimos quatro anos.
-
-+++
-
-
-+++ E se eu não tiver um campo de código monetário como parte do meu esquema de dados atual?
-
-Existem várias opções para criar um novo campo de código monetário, incluindo Preparo de dados, Distiller de dados e Campos derivados. O Preparo de dados seria ideal para novas implementações, pois seria apenas progressivo. Dependendo da configuração de uma organização, o Data Distiller e os Campos derivados podem ser usados para acessar os valores do código monetário historicamente.
 
 +++
 

@@ -4,16 +4,16 @@ description: Especifique como uma dimensão ou métrica se comporta nos relatór
 exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 485160fe362330bafbc07f958c4ada51d4d30089
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 94%
+source-wordcount: '312'
+ht-degree: 90%
 
 ---
 
 # Configurações do componente de comportamento
 
-As configurações de comportamento estão disponíveis em dimensões e métricas. As configurações disponíveis dependem do tipo de componente e do tipo de dados do esquema.
+As configurações de comportamento estão disponíveis em dimensões e métricas. A disponibilidade das configurações depende do tipo de componente e do tipo de dados do esquema.
 
 ![Configurações de comportamento](../assets/behavior-settings.png)
 
@@ -25,11 +25,11 @@ As configurações de comportamento estão disponíveis em dimensões e métrica
 
 {style="table-layout:auto"}
 
-![Dimensão que diferencia maiúsculas de minúsculas](../assets/case-sens-workspace.png)
-
 >[!NOTE]
 >
 >Se você ativar [!UICONTROL Minúsculas] em uma dimensão de conjunto de dados de pesquisa, vários valores de pesquisa poderão existir para o mesmo identificador. Se esse conflito ocorrer, o Customer Journey Analytics usará o primeiro valor ASCII agrupado (valores em maiúsculas precedem valores em minúsculas). A Adobe recomenda não usar conjuntos de dados de pesquisa que contenham o mesmo valor quando [!UICONTROL Minúsculas] estiverem ativadas.
+
+![Dimensão que diferencia maiúsculas de minúsculas](../assets/case-sens-workspace.png)
 
 ## Configurações de comportamento da métrica
 
