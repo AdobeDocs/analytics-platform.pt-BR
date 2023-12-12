@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: a4d9272b1e813a34f11e4b42c3369129b57c6ef0
+source-git-commit: d5719dddfb4cefda761370951973d55b3904032f
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -20,7 +20,7 @@ Os feeds de dados do Adobe Analytics são uma maneira avançada de obter dados b
 
 Certifique-se de atender a todos os requisitos a seguir antes de usar a funcionalidade descrita neste caso de uso:
 
-* Uma implementação em funcionamento que envia dados online e offline para o data lake do Experience Platform.
+* Uma implementação em funcionamento que envia dados online e offline para o Experience Platform Data Lake.
 * Acesso ao Serviço de query, que é empacotado como parte dos aplicativos baseados em plataforma ou do complemento Data Distiller. Consulte [Empacotamento do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) para obter mais informações.
 * Acesso à funcionalidade Exportar conjuntos de dados, disponível para clientes que compraram o pacote do Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Consulte [Exportar conjuntos de dados para destinos de armazenamento na nuvem](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=pt-BR) para obter mais informações.
 * Um ou mais destinos (por exemplo: Amazon S3, Google Cloud Storage) configurados para onde você pode exportar os dados brutos do feed de dados.
@@ -46,7 +46,7 @@ Usar o Serviço de consulta [interface do usuário](https://experienceleague.ado
 
 Você pode usar toda a funcionalidade do SQL ANSI padrão para instruções SELECT e outros comandos limitados para criar e executar as consultas que geram os dados do feed de dados. Consulte [Sintaxe SQL](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) para obter mais informações. Além dessa sintaxe SQL, o Adobe suporta:
 
-* pré-criado [Funções definidas por Adobe (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) que ajudam a executar tarefas comerciais comuns em dados de eventos armazenados no data lake do Experience Platform, incluindo funções para [Sessões](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=pt-BR) e [Atribuição](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=pt-BR),
+* pré-criado [Funções definidas por Adobe (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) que ajudam a executar tarefas comerciais comuns em dados de eventos armazenados no Experience Platform Data Lake, incluindo funções para [Sessões](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=pt-BR) e [Atribuição](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=pt-BR),
 * vários integrados [Funções do Spark SQL](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en),
 * [comandos PostgreSQL de metadados](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en),
 * [instruções preparadas](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
@@ -292,7 +292,7 @@ select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 Como alternativa, você pode consultar elementos individuais usando a notação de pontos. Por exemplo:
 
 ```sql
-select identityMap,ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
+select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 ```
 
 Consulte [Trabalho com estruturas de dados aninhadas no Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/nested-data-structures.html?lang=en) para obter mais informações.
