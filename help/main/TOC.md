@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 689235eb0b982f4e572282f1c73e4606f9d82b12
+source-git-commit: 3d53fbcfea341f0cf9c1cf7da5296565eafff0f9
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 82%
+source-wordcount: '1045'
+ht-degree: 80%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 82%
    + [Visão geral da assimilação de dados](../data-ingestion/data-ingestion.md)
    + Assimilar e usar guias de início rápido{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Rede de borda da Adobe Experience Platform {#edge-network}
+      + Rede de borda Adobe Experience Platform {#edge-network}
          + [SDK da Web](../data-ingestion/aepwebsdk.md)
          + [SDK móvel](../data-ingestion/aepmobilesdk.md)
          + [API do servidor](../data-ingestion/serverapi.md)
@@ -343,6 +343,7 @@ ht-degree: 82%
    + Dados do Adobe Analytics {#aa-data}
       + [Usar dimensões do canal de marketing](../use-cases/aa-data/marketing-channels.md)
       + [Combinar conjuntos de relatórios com esquemas diferentes](../use-cases/aa-data/combine-report-suites.md)
+      + [Emulação de feeds de dados](../use-cases/emulating-data-feeds.md)
    + Dados complexos {#complex-data}
       + [Uso de arrays de objetos](../use-cases/object-arrays.md)
    + Campos derivados {#derived-fields}

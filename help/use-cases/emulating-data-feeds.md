@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d6e10a00bf9afb2788f99800e09a7e80fd31e489
+source-git-commit: a4d9272b1e813a34f11e4b42c3369129b57c6ef0
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -396,9 +396,4 @@ Resumindo, emular a funcionalidade do Feed de dados do Adobe Analytics implica c
 >[!IMPORTANT]
 >
 >Dois schedulers estão envolvidos neste caso de uso. Para garantir o funcionamento adequado da funcionalidade do feed de dados emulado, verifique se os agendamentos configurados no Serviço de consulta e nas exportações de dados não interferem.
-
-
-
-
-
 
