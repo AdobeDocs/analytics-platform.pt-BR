@@ -5,258 +5,127 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: d5719dddfb4cefda761370951973d55b3904032f
+source-git-commit: e49ea37f36d105e428bc6d04a6ed42a47e2d75fc
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 1%
+source-wordcount: '2555'
+ht-degree: 4%
 
 ---
 
 # Emular a funcionalidade do feed de dados
 
-Os feeds de dados do Adobe Analytics são uma maneira avançada de obter dados brutos do Adobe Analytics. Este caso de uso descreve como obter tipo semelhante de dados brutos do Experience Platform, para usar em outras plataformas fora do Adobe e a critério da sua organização.
-
-## Pré-requisitos 
-
-Certifique-se de atender a todos os requisitos a seguir antes de usar a funcionalidade descrita neste caso de uso:
-
-* Uma implementação em funcionamento que envia dados online e offline para o Experience Platform Data Lake.
-* Acesso ao Serviço de query, que é empacotado como parte dos aplicativos baseados em plataforma ou do complemento Data Distiller. Consulte [Empacotamento do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) para obter mais informações.
-* Acesso à funcionalidade Exportar conjuntos de dados, disponível para clientes que compraram o pacote do Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Consulte [Exportar conjuntos de dados para destinos de armazenamento na nuvem](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=pt-BR) para obter mais informações.
-* Um ou mais destinos (por exemplo: Amazon S3, Google Cloud Storage) configurados para onde você pode exportar os dados brutos do feed de dados.
+Os feeds de dados do Adobe Analytics são uma maneira avançada de obter dados brutos do Adobe Analytics. Esse caso de uso descreve como obter dados brutos semelhantes do Experience Platform para que você possa usar os dados em outras plataformas, ferramentas fora do Adobe e a critério da sua organização.
 
 ## Introdução
 
 A emulação de um feed de dados do Adobe Analytics envolve:
 
-* definição de um **consulta programada** que gera os dados para o feed de dados como um conjunto de dados de saída, usando **Serviço de consulta**.
+* definição de um **consulta programada** que gera os dados do feed de dados como um conjunto de dados de saída ![conjunto de dados de saída](assets/output-dataset.svg), utilizando **Serviço de consulta**.
 * definição de um **exportação do conjunto de dados agendada** que exporta o conjunto de dados de saída para um destino de armazenamento na nuvem, usando **Exportação do conjunto de dados**.
-
 
 ![Feed de dados](assets/data-feed.svg)
 
 
+## Pré-requisitos 
+
+Certifique-se de atender a todos os requisitos a seguir antes de usar a funcionalidade descrita neste caso de uso:
+
+* Uma implementação em funcionamento que coleta dados no data lake do Experience Platform.
+* Acesse o complemento Data Distiller para garantir que você esteja autorizado a executar consultas em lote. Consulte [Empacotamento do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/packaging.html?lang=en) para obter mais informações.
+* Acesso à funcionalidade Exportar conjuntos de dados, disponível após a compra do pacote do Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Consulte [Exportar conjuntos de dados para destinos de armazenamento na nuvem](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=pt-BR) para obter mais informações.
+* Um ou mais destinos (por exemplo: Amazon S3, Google Cloud Storage) configurados para onde você pode exportar os dados brutos do feed de dados.
+
+
 ## Serviço de consulta
 
-O Serviço de consulta do Experience Platform permite consultar e associar qualquer conjunto de dados no Experience Platform Data Lake como se fosse uma tabela de banco de dados. Você pode capturar os resultados como um novo conjunto de dados para uso em relatórios ou para exportação.
+O Serviço de consulta de Experience Platform permite consultar e associar qualquer conjunto de dados no data lake de Experience Platform como se fosse uma tabela de banco de dados. Você pode capturar os resultados como um novo conjunto de dados para uso em relatórios ou para exportação.
 
-Usar o Serviço de consulta [interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html?lang=en), um [cliente conectado por meio do protocolo PostgresSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=pt-BR)ou [APIs RESTful](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) para criar e agendar consultas que coletam os dados do feed de dados.
+Usar o Serviço de consulta [interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/query/ui/overview.html?lang=en), um [cliente conectado por meio do protocolo PostgresQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=pt-BR)ou [APIs RESTful](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) para criar e agendar consultas que coletam os dados do feed de dados.
 
 ### Criar consulta
 
-Você pode usar toda a funcionalidade do SQL ANSI padrão para instruções SELECT e outros comandos limitados para criar e executar as consultas que geram os dados do feed de dados. Consulte [Sintaxe SQL](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) para obter mais informações. Além dessa sintaxe SQL, o Adobe suporta:
+Você pode usar toda a funcionalidade do SQL ANSI padrão para instruções SELECT e outros comandos limitados para criar e executar queries que geram os dados para seu feed de dados. Consulte [Sintaxe SQL](https://experienceleague.adobe.com/docs/experience-platform/query/sql/syntax.html?lang=en) para obter mais informações. Além dessa sintaxe SQL, o Adobe suporta:
 
-* pré-criado [Funções definidas por Adobe (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) que ajudam a executar tarefas comerciais comuns em dados de eventos armazenados no Experience Platform Data Lake, incluindo funções para [Sessões](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=pt-BR) e [Atribuição](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=pt-BR),
+* pré-criado [Funções definidas por Adobe (ADF)](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) que ajudam a executar tarefas comerciais comuns em dados de eventos armazenados no data lake do Experience Platform, incluindo funções para [Sessões](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-mobile-visit-processing.html?lang=pt-BR) e [Atribuição](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/attribution/overview.html?lang=pt-BR),
 * vários integrados [Funções do Spark SQL](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en),
 * [comandos PostgreSQL de metadados](https://experienceleague.adobe.com/docs/experience-platform/query/sql/metadata.html?lang=en),
 * [instruções preparadas](https://experienceleague.adobe.com/docs/experience-platform/query/sql/prepared-statements.html?lang=en).
 
 
-#### Exemplos
-
-Alguns exemplos de consultas que coletam dados para seus feeds de dados estão listados abaixo. Esses exemplos usam `demo_system_event_dataset_for_website_global_v1_1` como o conjunto de dados de evento de experiência de amostra que contém dados coletados dos clientes que interagem com o site.
-
-+++Cinco principais produtos
-
-*Quais são os cinco principais produtos visualizados no site?*
-
-```sql
-select productListItems.name, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-group  by productListItems.name
-order  by 2 desc
-limit 5;
-```
-
-+++
-
-+++Funil de interação do produto
-
-*Quais são as várias interações de produto no site?*
-
-```sql
-select eventType, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType is not null
-and    eventType <> ''
-group  by eventType;
-```
-
-+++
-
-+++O que as pessoas fazem
-
-*O que as pessoas fazem no site antes de chegar à página &quot;Cancelar serviço&quot; como a terceira página em uma sessão?*
-
-Esta query usa as Funções definidas pelo Adobe `SESS_TIMEOUT` e `NEXT`.
-
-* A variável `SESS_TIMEOUT()` reproduz os agrupamentos de visitas encontrados com o Adobe Analytics. Ele executa um agrupamento semelhante com base no tempo, mas com parâmetros personalizáveis.
-* `NEXT()` e `PREVIOUS()` ajudá-lo a entender como os clientes navegam pelo seu site.
-
-```sql
-SELECT
-  webPage,
-  webPage_2,
-  webPage_3,
-  webPage_4,
-  count(*) journeys
-FROM
-  (
-      SELECT
-        webPage,
-        NEXT(webPage, 1, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_2,
-        NEXT(webPage, 2, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_3,
-        NEXT(webPage, 3, true)
-           OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_4,
-        session.depth AS SessionPageDepth
-      FROM (
-            select a._sampleorg.identification.core.ecid as ecid,
-                   a.timestamp,
-                   web.webPageDetails.name as webPage,
-                    SESS_TIMEOUT(timestamp, 60 * 30)
-                       OVER (PARTITION BY a._sampleorg.identification.core.ecid
-                             ORDER BY timestamp
-                             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
-                  AS session
-            from   demo_system_event_dataset_for_website_global_v1_1 a
-            where  a._sampleorg.identification.core.ecid in (
-                select b._sampleorg.identification.core.ecid
-                from   demo_system_event_dataset_for_website_global_v1_1 b
-                where  b.web.webPageDetails.name = 'Cancel Service'
-            )
-        )
-)
-WHERE SessionPageDepth=1
-and   webpage_3 = 'Cancel Service'
-GROUP BY webPage, webPage_2, webPage_3, webPage_4
-ORDER BY journeys DESC
-LIMIT 10;
-```
-
-+++
-
-+++Quanto tempo
-
-*Quanto tempo você tem antes que um visitante chame a central de atendimento depois de visitar a página &quot;Cancelar serviço&quot;?*
-
-Para responder a esse tipo de query, use o `TIME_BETWEEN_NEXT_MATCH()` Função Definida Por Adobe. O tempo entre as funções de correspondência anterior e seguinte fornece uma nova dimensão, que mede o tempo decorrido desde um incidente específico.
-
-```sql
-select * from (
-       select _sampleorg.identification.core.ecid as ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY _sampleorg.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-where r.webPage = 'Cancel Service'
-limit 15;
-```
-
-+++
-
-+++Qual é o resultado
-
-*Qual é o resultado de os clientes ligarem para a central de atendimento?*
-
-Para esta consulta, a variável `demo_system_event_dataset_for_website_global_v1_1` o conjunto de dados é unido com um exemplo `demo_system_event_dataset_for_call_center_global_v1_1` conjunto de dados contendo interações da central de atendimento.
-
-```sql
-select distinct r.*,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callFeeling,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callTopic,
-       c._sampleorg.interactionDetails.core.callCenterAgent.callContractCancelled
-from (
-       select _sampleorg.identification.core.ecid ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY _sampleorg.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-, demo_system_event_dataset_for_call_center_global_v1_1 c
-where r.ecid = c._sampleorg.identification.core.ecid
-and r.webPage = 'Cancel Service'
-and c._sampleorg.interactionDetails.core.callCenterAgent.callContractCancelled IN (true,false)
-and c._sampleorg.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi')
-limit 15;
-```
-
-+++
-
-+++Engajamento no canal de marketing (dados do Adobe Analytics)
-
-*Qual é o engajamento em canais de marketing para o tráfego na Web focado na Itália?*
-
-Este exemplo usa o conjunto de dados criado automaticamente pelo conector de origem do Adobe Analytics, por exemplo `demo_data_sample_org_midvalues`.
-
-```sql
-select 
-    channel.typeAtSource, count(*) 
-from 
-    demo_data_sample_org_midvalues 
-where 
-    (channel.typeAtSource IS NOT NULL
-and
-    web.webPageDetails.URL LIKE '%/it/it/%')
-group by 
-    channel.typeAtSource
-order by 2 desc;
-```
-
-+++
-
-Para obter exemplos de consultas ainda mais (avançadas), consulte [navegação abandonada](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en), [análise de atribuição](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en), [filtragem de bot](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en)e outros exemplos no Guia do Serviço de consulta.
-
-
 #### Identidades
 
-No Experience Platform, várias identidades estão disponíveis. Verifique se você está consultando identidades corretamente. Nos exemplos acima, a ECID é definida como parte de um objeto principal, que por sua vez faz parte de um objeto de identificação, ambos adicionados ao esquema usando um grupo de campos Principal de evento de experiência (por exemplo: `_sampleorg.identification.core.ecid`). As ECIDs podem ser organizadas de forma diferente em seus esquemas.
+No Experience Platform, várias identidades estão disponíveis. Ao criar suas consultas, verifique se você está consultando identidades corretamente.
+
+Geralmente você encontra identidades em um grupo de campos separado. Em uma implementação da ECID (`ecid`) pode ser definido como parte de um grupo de campos com um `core` que faz parte de um `identification` objeto. (por exemplo: `_sampleorg.identification.core.ecid`). As ECIDs podem ser organizadas de forma diferente em seus esquemas.
 
 Como alternativa, você pode usar `identityMap` para consultar identidades. Este objeto é do tipo `Map` e usa um [estrutura de dados aninhada](#nested-data-structure).
 
-Para dados assimilados usando o conector de origem do Adobe Analytics, várias identidades podem estar disponíveis. O identificador principal depende da existência de uma ECID ou AAID. Consulte [Identificadores primários em dados do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=en#how-the-analytics-source-treats-identities) e [AAID, ECID, AACUSTOMID e o conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=pt-BR) para obter mais informações
 
 #### Colunas de feed de dados
 
-Os campos (colunas) que podem ser usados no query dependem da definição de esquema em que seus conjuntos de dados se baseiam. Entenda o esquema subjacente ao conjunto de dados.
+Os campos XDM que você pode usar no query dependem da definição de esquema em que seus conjuntos de dados se baseiam. Entenda o esquema subjacente ao conjunto de dados.
 
-Por exemplo, em algumas [exemplo de consultas](#examples) você consultou por *nome da página*.
+Para facilitar o mapeamento entre as colunas do Feed de dados e os campos XDM, considere incluir o [Modelo de evento de experiência do Adobe Analytics](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) grupo de campos no esquema de evento de experiência. Consulte [Práticas recomendadas para modelagem de dados](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) e mais especificamente [Grupos de campos de esquema do aplicativo Adobe](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+
+Por exemplo, caso deseje usar *nome da página* como parte do feed de dados:
 
 * Na interface do Feed de dados do Adobe Analytics, você selecionaria **[!UICONTROL pagename]** como a coluna a ser adicionada à definição do feed de dados.
-* No Serviço de consulta, você inclui `web.webPageDetails.name` do `demo_system_event_dataset_for_website_global_v1_1` (com base no **Sistema de demonstração - Esquema de evento para site (Global v1.1)** (esquema de evento de experiência) na sua query. Consulte a [Grupo de campos de esquema Detalhes da Web](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) para obter mais informações.
+* No Serviço de consulta, você inclui `web.webPageDetails.name` do `sample_event_dataset_for_website_global_v1_1` (com base no **Exemplo de esquema de evento para site (Global v1.1)** (esquema de evento de experiência) na sua query. Consulte a [Grupo de campos de esquema Detalhes da Web](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/web-details.html?lang=en) para obter mais informações.
 
-Para entender o mapeamento entre antigas colunas de dados do Adobe Analytics e campos XDM no conjunto de dados do evento de experiência e no esquema subjacente, consulte [Mapeamento de campos do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR) e a variável [Grupo de campos de esquema de Extensão completa do Adobe Analytics ExperienceEvent](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) para obter mais informações.
+Para entender o mapeamento entre antigas colunas do feed de dados do Adobe Analytics e campos XDM no conjunto de dados do evento de experiência e esquema subjacente, consulte [Mapeamento de campos do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR) e a variável [Grupo de campos de esquema de Extensão completa do Adobe Analytics ExperienceEvent](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/event/analytics-full-extension.html?lang=en) para obter mais informações.
 
-Além disso, as informações coletadas automaticamente pelo SDK da Web do Experience Platform (prontas para uso) também podem ser relevantes para identificar colunas para seu query. Consulte [Informações coletadas automaticamente](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) para obter mais informações.
+Além disso, a [informações coletadas automaticamente pelo SDK da Web do Experience Platform (pronto para uso)](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=en) pode ser relevante para identificar colunas para sua consulta.
 
+#### Dados e identificação do nível de ocorrência
+
+Com base na implementação, os dados de nível de ocorrência tradicionalmente coletados no Adobe Analytics agora são armazenados como dados de evento com carimbo de data e hora no Experience Platform. A tabela a seguir é extraída de [Mapeamento de campo do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=en#generated-mapping-fields) O e o mostram exemplos de como mapear colunas do Feed de dados da Adobe Analytics específicas do nível de ocorrência com campos XDM correspondentes em suas consultas. A tabela também mostra exemplos de como as ocorrências, visitas e visitantes são identificados usando campos XDM.
+
+| Coluna de feed de dados | Campo XDM | Tipo | Descrição |
+|---|---|---|---|
+| hitid_high + hitid_low | _id | string | Um identificador exclusivo para identificar uma ocorrência. |
+| hitid_low | _id | string | Usado em conjunto com hitid_high para identificar uma ocorrência de maneira exclusiva. |
+| hitid_high | _id | string | Usado em conjunto com hitid_high para identificar uma ocorrência de maneira exclusiva. |
+| hit_time_gmt | receivedTimestamp | string | O carimbo de data e hora da ocorrência, com base no horário Unix. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | string | Carimbo de data e hora, em horário Unix, da primeira ocorrência de um visitante. |
+| cust_hit_time_gmt | carimbo de data e hora | string | Isso só é usado em conjuntos de dados habilitados para carimbo de data e hora. Esse é o carimbo de data e hora enviado com o it, com base no horário Unix. |
+| visid_high + visid_low | identityMap | objeto | Um identificador exclusivo para uma visita. |
+| visid_high + visid_low | endUserIDs._experience.aaid.id | string | Um identificador exclusivo para uma visita. |
+| visid_high | endUserIDs._experience.aaid.primary | booleano | Usado em conjunto com visid_low para identificar uma visita de maneira exclusiva. |
+| visid_high | endUserIDs._experience.aaid.namespace.code | string | Usado em conjunto com visid_low para identificar uma visita de maneira exclusiva. |
+| visid_low | identityMap | objeto | Usado em conjunto com visid_high para identificar uma visita de maneira exclusiva. |
+| cust_visid | identityMap | objeto | A ID do visitante do cliente |
+| cust_visid | endUserIDs._experience.aacustomid.id | objeto | A ID de visitante do cliente. |
+| cust_visid | endUserIDs._experience.aacustomid.primary | booleano | O código de namespace da ID de visitante do cliente. |
+| cust_visid | endUserIDs._experience.aacustomid.namespace.code | Usado em conjunto com visid_low para identificar exclusivamente a ID de visitante do cliente. |
+| geo\_* | placeContext.geo.* | sequência, número | Dados de geolocalização, como país, região, cidade e outros |
+| visit_page_num | _experience.analytics.session.depth | number | Uma variável usada na dimensão Profundidade da ocorrência. Esse valor aumenta em uma unidade para cada ocorrência gerada pelo usuário e é redefinido após cada visita. |
+| event_list | commerce.purchases, commerce.productViews, commerce.productListOpens, commerce.checkouts, commerce.productListAdds, commerce.productListRemovals, commerce.productListViews, \_experience.analytics.event101to200.*, ..., \_experience.analytics.event901_1000.\* | string | Eventos de comércio padrão e personalizados acionados na ocorrência. |
+| page_event | web.webInteraction.type | string | O tipo de ocorrência enviado na solicitação da imagem (ocorrência padrão, link de download, link de saída ou link personalizado clicado). |
+| page_event | web.webInteraction.linkClicks.value | number | O tipo de ocorrência enviado na solicitação da imagem (ocorrência padrão, link de download, link de saída ou link personalizado clicado). |
+| page_event_var_1 | web.webInteraction.URL | string | Uma variável usada somente em solicitações de imagem de rastreamento de link. Essa variável contém o URL do link de download, link de saída, ou link personalizado clicado. |
+| page_event_var_2 | web.webInteraction.name | string | Uma variável usada somente em solicitações de imagem de rastreamento de link. Isso lista o nome personalizado do link, se for especificado. |
+| first_hit_ref_type | _experience.analytics.endUser.firstWeb.webReferrer.type | string | A ID numérica, que representa o tipo do primeiro referenciador do visitante. |
+| first_hit_time_gmt | _experience.analytics.endUser.firstTimestamp | inteiro | Carimbo de data e hora, em horário Unix, da primeira ocorrência de um visitante. |
+| paid_search | search.isPaid | booleano | Um sinalizador que é definido se a ocorrência corresponder à detecção de pesquisa paga. |
+| ref_type | web.webReferrertype | string | Uma ID numérica que representa o tipo de referência para a ocorrência. |
+
+#### Publicar colunas
+
+Os feeds de dados do Adobe Analytics usam o conceito de colunas com uma `post_` prefixo, que são colunas que contêm dados após o processamento. Consulte [Perguntas frequentes sobre feeds de dados](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/df-faq.html?lang=en#post) para obter mais informações.
+
+Os dados coletados em conjuntos de dados por meio da Rede de borda do Experience Platform (SDK da Web, SDK móvel, API do servidor) não têm conceito de `post_` campos, o que explica o porquê `post_` com prefixo e *não* `post_` colunas de feed de dados com prefixo no mapeamento de campos do Analytics são mapeadas para os mesmos campos XDM. Por exemplo, ambos `page_url` e `post_page_url` as colunas do feed de dados são mapeadas para a mesma `web.webPageDetails.URL` Campo XDM.
+
+Consulte [Comparar o processamento de dados entre o Adobe Analytics e o Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=pt-BR) para obter uma visão geral da diferença no processamento de dados.
+
+A variável `post_` o tipo de dados da coluna de prefixo, quando coletado no data lake do Experience Platform, requer, no entanto, transformações avançadas antes que possa ser usado com êxito em um caso de uso do feed de dados. A execução dessas transformações avançadas em seus queries envolve o uso de [Funções definidas pelo Adobe](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en) para sessão, atribuição e desduplicação. Consulte [Exemplos](#examples) sobre como usar essas funções.
 
 #### Pesquisas
 
-Para pesquisar dados de outros conjuntos de dados, use a funcionalidade SQL padrão (cláusula WHERE, INNER JOIN, OUTER JOIN e outras). Consulte a [Qual é o resultado](#examples) nos exemplos.
+Para pesquisar dados de outros conjuntos de dados, use a funcionalidade SQL padrão (`WHERE` cláusula, `INNER JOIN`, `OUTER JOIN`e outros).
 
 #### Cálculos
 
-Para realizar cálculos em campos (colunas), use as funções SQL padrão (por exemplo `COUNT(*)` no [Funil de interação do produto](#examples) consulta nos exemplos) ou a variável [funções e operadores matemáticos e estatísticos](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) parte do Spark SQL.
+Para realizar cálculos em campos (colunas), use as funções SQL padrão (por exemplo `COUNT(*)` ou o [funções e operadores matemáticos e estatísticos](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#math) parte do Spark SQL. Além disso, [funções de janela](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=en#window-functions) fornecer suporte para atualizar agregações e retornar itens únicos para cada linha em um subconjunto ordenado. Consulte [Exemplos](#examples) sobre como usar essas funções.
 
 #### Estrutura de dados aninhada
 
@@ -281,9 +150,7 @@ Os esquemas nos quais os conjuntos de dados são baseados geralmente contêm tip
 }
 ```
 
-Você pode usar o [`explode()` ou outras funções de Arrays](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) do Spark SQL para obter os dados dentro de uma estrutura de dados aninhada.
-
-Por exemplo:
+Você pode usar o [`explode()` ou outras funções de Arrays](https://experienceleague.adobe.com/docs/experience-platform/query/sql/spark-sql-functions.html?lang=en#arrays) do Spark SQL para obter os dados dentro de uma estrutura de dados aninhada, por exemplo:
 
 ```sql
 select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
@@ -297,18 +164,29 @@ select identityMap.ecid from demosys_cja_ee_v1_website_global_v1_1 limit 15;
 
 Consulte [Trabalho com estruturas de dados aninhadas no Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/key-concepts/nested-data-structures.html?lang=en) para obter mais informações.
 
+
+#### Exemplos
+
+Por exemplo, consultas que usam dados de conjuntos de dados no data lake do Experience Platform, estão aproveitando os recursos adicionais de Funções definidas pelo Adobe e/ou Spark SQL, e que forneceriam resultados semelhantes a um feed de dados equivalente do Adobe Analytics, consulte
+
+* [navegação abandonada](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/abandoned-browse.html?lang=en),
+* [análise de atribuição](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/attribution-analysis.html?lang=en),
+* [filtragem de bot](https://experienceleague.adobe.com/docs/experience-platform/query/use-cases/bot-filtering.html?lang=en),
+* e outros casos de uso de exemplo no guia Serviço de consulta.
+
+
 ### Agendar consulta
 
-Você programa a consulta para garantir que ela seja executada e que os resultados sejam gerados no intervalo de sua preferência. Ao agendar a query, você define um conjunto de dados de saída.
+Você programa a consulta para garantir que ela seja executada e que os resultados sejam gerados no intervalo de sua preferência.
 
 #### Uso do Editor de consultas
 
-Você pode agendar uma consulta usando o Editor de consultas. Ao definir um agendamento para um query, você pode definir o conjunto de dados de saída. Consulte [Agendamentos de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) para obter mais informações.
+Você pode agendar uma consulta usando o Editor de consultas. Ao agendar a query, você define um conjunto de dados de saída. Consulte [Agendamentos de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/ui/query-schedules.html?lang=en) para obter mais informações.
 
 
 #### Uso da API do Serviço de consulta
 
-Como alternativa, você pode usar as APIs RESTful para definir uma consulta e um agendamento para a consulta. Consulte [Guia da API do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en_) para obter mais informações.
+Como alternativa, você pode usar as APIs RESTful para definir uma consulta e um agendamento para a consulta. Consulte [Guia da API do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=en) para obter mais informações.
 Certifique-se de definir o conjunto de dados de saída como parte da variável `ctasParameters` propriedade ao criar a consulta ([Criar uma consulta](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)) ou ao criar o agendamento para um query ([Criar uma consulta agendada](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)).
 
 
