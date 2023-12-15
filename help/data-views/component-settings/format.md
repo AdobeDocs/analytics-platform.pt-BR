@@ -4,10 +4,10 @@ description: Configure como uma métrica é formatada.
 exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: 045037867063f6bb5a6be60132f8d7b1bb54917e
+source-git-commit: cf9e8c90eec78658e470d3a7a56cb2e3414591d4
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 20%
+source-wordcount: '709'
+ht-degree: 19%
 
 ---
 
@@ -24,8 +24,6 @@ Você pode determinar como uma determinada métrica é exibida ajustando suas co
 1. Selecione a visualização de dados que contém o componente cuja configuração de formato você deseja configurar.
 
 1. Selecione a guia [!UICONTROL **Componentes**].
-
-   ![Guia Componentes](../assets/format-settings-component-tab.png)
 
 1. Selecione o componente que você deseja configurar e expanda a variável [!UICONTROL **Formato**] no lado direito da página.
 

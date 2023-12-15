@@ -6,9 +6,9 @@ feature: Administration
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 60c3b05778c8bb097dba691bb591ab50121da6bb
+source-git-commit: c669f5a74d4ddc6ab72bcee68f37d6821fe39308
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1476'
 ht-degree: 10%
 
 ---
@@ -20,12 +20,12 @@ Este documento fornece limites para vários componentes do Customer Journey Anal
 
 ## Tipos de limite
 
-Há dois tipos de limites padrão neste documento:.
+Há dois tipos de limites padrão neste documento:
 
 | Tipo de grade de proteção | Descrição |
 |----------|---------|
 | **Proteções de desempenho (limite flexível)** | As medidas de proteção de desempenho são limites de uso relacionados ao escopo dos seus casos de uso. Ao exceder as medidas de proteção de desempenho, você pode enfrentar degradação e latência do desempenho. O Adobe não é responsável por essa degradação de desempenho. Os clientes que excederem consistentemente uma garantia de desempenho podem optar por licenciar capacidade adicional para evitar a degradação do desempenho. |
-| **Medidas de proteção aplicadas pelo sistema (limite rígido)** | As medidas de proteção aplicadas pelo sistema são aplicadas pela interface do usuário ou API do Customer Journey Analytics. Esses são limites que você não pode exceder, pois a interface do usuário e a API o bloquearão de fazer isso ou retornarão um erro. |
+| **Medidas de proteção aplicadas pelo sistema (limite rígido)** | As medidas de proteção aplicadas pelo sistema são aplicadas pela interface do usuário ou API do Customer Journey Analytics. Esses são limites que você não pode exceder, pois a interface do usuário e a API o impedem de fazer isso ou retornam um erro. |
 
 {style="table-layout:auto"}
 
@@ -35,12 +35,12 @@ Alguns dos recursos e seu valor associado para o limite dependem do pacote de Cu
 >
 >Os valores descritos neste documento estão sujeitos a alterações com base em melhorias contínuas no produto. Verifique regularmente se há atualizações. Se você estiver interessado em saber mais sobre limites personalizados, entre em contato com o representante do Atendimento ao cliente.
 
-## Consultas SQL Ad Hoc
+## Consultas SQL Ad-Hoc
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
 | Tempo limite de tentar novamente | 90 | Proteção imposta pelo sistema | Número máximo de segundos antes de o mecanismo de relatórios responder que a solicitação demora muito para retornar resultados (possivelmente devido a outras solicitações simultâneas); é possível solicitar novamente. | |
-| Não tentar novamente | 600 | Proteção imposta pelo sistema | Número máximo de segundos antes do tempo limite de consultas Ad Hoc SQL. Caso contrário, o número máximo de segundos antes que os mecanismos de relatório relatem que a solicitação demorou muito para retornar resultados e não deve ser repetida, pois a solicitação nunca retornará resultados devido a problemas no processo em segundo plano. |
+| Não tentar novamente | 600 | Proteção imposta pelo sistema | Número máximo de segundos antes do tempo limite de consultas Ad Hoc SQL. Caso contrário, o número máximo de segundos antes que os mecanismos de relatório relatem que a solicitação demorou muito para retornar resultados e não deve ser repetida. A solicitação provavelmente nunca retorna resultados devido a problemas no processo em segundo plano. |
 | Métricas | 150 | Proteção imposta pelo sistema | Número máximo de métricas em uma solicitação. | | |
 | Linhas de Saída de Consulta Interativa | 50.000 | Proteção imposta pelo sistema | Número padrão de linhas retornadas, a menos que especificado de outra forma. | |
 
@@ -77,7 +77,7 @@ Alguns dos recursos e seu valor associado para o limite dependem do pacote de Cu
 | Número de identidades de público | 20 milhões | Proteção imposta pelo sistema | Número máximo de identidades por público-alvo. |
 | Frequência de atualização de público | 4 | Proteção imposta pelo sistema | Frequência máxima em horas e [público](../components/audiences/audiences-overview.md) pode ser atualizado. | |
 | Janela de retrospectiva de atualização de público | 90 | Proteção imposta pelo sistema | Número máximo de dias para a janela de retrospectiva de atualização. |
-| Atualização da data de expiração do público-alvo | 13 | Proteção imposta pelo sistema | O número máximo de meses que o público-alvo deixará de ser atualizado a partir da data de criação. Os clientes podem estender isso por mais 13 meses. |
+| Atualização da data de expiração do público-alvo | 13 | Proteção imposta pelo sistema | Número máximo de meses em que o público-alvo deixa de ser atualizado a partir da data de criação. Os clientes podem estender isso por mais 13 meses. |
 | Número de públicos-alvo de atualização | 75, 100, 150 | Proteção imposta pelo sistema | Número máximo de públicos-alvo de atualização. O valor varia de acordo com o pacote. |
 
 {style="table-layout:auto"}
@@ -104,9 +104,9 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 | Visualizações de dados | 50 | Proteção imposta pelo sistema | Número máximo de visualizações de dados para uma conexão |
 | Conjuntos de dados | 100 | Proteção imposta pelo sistema | Número máximo de [conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) por conexão. |
 | Conexões | 1000 | Proteção imposta pelo sistema | Número máximo de [conexões](../connections/overview.md) para uma organização. |
-| Título da conexão | 500 | Número máximo de caracteres para um título de conexão. |
-| Métricas | 5.000 | Proteção imposta pelo sistema | Número máximo de métricas em uma visualização de dados |
-| Dimensões | 5.000 | Proteção imposta pelo sistema | Número máximo de dimensões em uma visualização de dados | |
+| Título da conexão | 500 | Proteção imposta pelo sistema | Número máximo de caracteres para um título de conexão. |
+| Métricas | 5.000 | Proteção imposta pelo sistema | Número máximo de métricas em uma visualização de dados. |
+| Dimensões | 5.000 | Proteção imposta pelo sistema | Número máximo de dimensões em uma visualização de dados. | |
 | Título da anotação | 100 | Proteção imposta pelo sistema | Número máximo de caracteres para um título de anotação. |
 | Descrição da anotação | 250 | Proteção imposta pelo sistema | Número máximo de caracteres para uma descrição de anotação. | |
 | Campos de esquema | 10 | Proteção imposta pelo sistema | Número máximo de campos de esquema (sem incluir campos padrão) ao definir regras para um [campo derivado](../data-views/derived-fields/derived-fields.md). |
@@ -135,7 +135,7 @@ Consulte também Experience Platform [Medidas de proteção para a assimilação
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
 | Zona de aterrissagem de dados por sandbox | 1 | Proteção imposta pelo sistema | Número máximo de zonas de aterrissagem de dados por sandbox. |
-| Armazenamento de dados | 7 | Proteção imposta pelo sistema | Número máximo de dias em que os dados serão armazenados na zona de aterrissagem de dados antes de serem excluídos. |
+| Armazenamento de dados | 7 | Proteção imposta pelo sistema | Número máximo de dias em que os dados são armazenados na zona de aterrissagem de dados antes de serem excluídos. |
 
 {style="table-layout:auto"}
 
@@ -204,7 +204,7 @@ Consulte também Experience Platform [Medidas de proteção para a assimilação
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são medidas de proteção, não contratos de nível de serviço (SLAs).  A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Muitas vezes, os tempos de processamento real serão mais rápidos. Consulte seu contrato de Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte Experience Platform [Medidas de proteção para a assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en) para obter mais informações.
+>Os tempos de processamento abaixo são medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato de Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte Experience Platform [Medidas de proteção para a assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en) para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|
@@ -214,9 +214,9 @@ Consulte também Experience Platform [Medidas de proteção para a assimilação
 | Assimilação de dados no Data Lake pela Rede de borda ou assimilação por transmissão | &lt; 60 minutos |
 | Assimilação de dados no Data Lake pelo conector de origem do Adobe Analytics | &lt; 90 minutos |
 | Assimilação de dados no Customer Journey Analytics a partir do Data Lake | &lt; 90 minutos |
-| Preenchimento retroativo do conector de origem do Adobe Analytics de evento de menos de 10 bilhões (máximo de 13 meses de dados históricos) | &lt; 4 semanas |
+| Preenchimento retroativo do conector de origem do Adobe Analytics de menos de 10 bilhões de eventos (máximo de 13 meses de dados históricos) | &lt; 4 semanas |
 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados. | aprox. 60 minutos |
-| Atualizar frequência dos públicos | Atualização única: latência inferior a 5 minutos.<br/>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
+| Atualizar frequência dos públicos | Atualização única: latência inferior a 5 minutos.<br/>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização). |
 
 {style="table-layout:auto"}
 

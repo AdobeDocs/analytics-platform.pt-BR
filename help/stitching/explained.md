@@ -4,10 +4,10 @@ description: Entenda o conceito de compilação
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 506838a0-0fe3-4b5b-bb9e-2ff20feea8bc
-source-git-commit: 8ca11b37ebda952d95ae38473a9c0d62be007e79
+source-git-commit: 2c650cf688112be1e6bf16c0863e743d61f9c35c
 workflow-type: tm+mt
-source-wordcount: '1081'
-ht-degree: 21%
+source-wordcount: '1109'
+ht-degree: 20%
 
 ---
 
@@ -51,29 +51,7 @@ Os eventos não autenticados e autenticados em novos dispositivos são contados 
 
 A atribuição funciona quando a variável personalizada de identificação se vincula a um dispositivo. No exemplo acima, todos os eventos, exceto o 1, 8, 9 e 10, são compilados em tempo real (todos eles usam o `Bob` identificador). A compilação em tempo real &quot;resolve&quot; a ID compilada para o evento 4, 6 e 12.
 
-
-<!--
-
-### Delayed data
-
-When incoming data for 'Live' stitching is delayed and over 24 hours old, and when no identities in that delayed data can be matched against identities already considered for 'Live' stitching, that delayed data is not added to the data considered for 'Live' stitching.
-
-In the example below, the data in event 2 is delayed but will be part of 'Live' stitching.
-
-| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | 
-|---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 246 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **246** |
-| 2 | 2023-05-14 12:02 | 246 | Bob ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg) | Bob |
-
-In the example below, the data in event 2 is delayed and will NOT become part of 'Live' stitching.
-
-| Event | Timestamp | Persistent ID (Cookie ID) | Transient ID (Login ID) | Stitched ID (after live stitch) | 
-|---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | 246 ![Arrow Right](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowRight_18_N.svg)| - | **246** |
-| ~~2~~ | ~~2023-05-14 12:02~~ | ~~891~~ |  | (not considered for 'Live' stitching) |
-
--->
-
+Os dados atrasados (dados com um carimbo de data e hora superior a 24 horas) são tratados com base no &quot;melhor esforço&quot;, priorizando a compilação de dados atuais para obter a mais alta qualidade.
 
 ## Etapa 2: Repetir a compilação
 
