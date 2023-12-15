@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cf9e8c90eec78658e470d3a7a56cb2e3414591d4
+source-git-commit: 9f48c2870cff0aac392de9b50c6acea9763553d7
 workflow-type: tm+mt
-source-wordcount: '2745'
-ht-degree: 92%
+source-wordcount: '2756'
+ht-degree: 91%
 
 ---
 
@@ -20,6 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Dezembro de 2023** | |
+| Centros de dados | Adição de um artigo sobre o Customer Journey Analytics [locais de hospedagem](../technotes/cja-datacenters.md). |
 | Medidas de proteção | Adição do Customer Journey Analytics de listagem de artigo [grades de proteção](../admin/guardrails.md). |
 | Atualizações de conversão de moeda | Esclarecimento de documentação sobre como [configurar conversão de moeda](/help/data-views/component-settings/format.md). |
 | Atualizações na documentação da Detecção de anomalias | A documentação da Detecção de anomalias estava localizada anteriormente em uma seção sobre o Virtual Analyst. As seguintes alterações foram feitas: <ul><li>O termo Analista virtual foi removido da documentação.</li><li>A seção sobre [Detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) foi movido diretamente abaixo da seção Analysis Workspace.</li></ul> |

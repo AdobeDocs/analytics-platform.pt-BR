@@ -3,10 +3,10 @@ title: Logs de auditoria
 description: Saiba como visualizar e gerenciar logs de auditoria de Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 275d575d41a259bddb152074a55fedcdd6f9ecea
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 64%
+source-wordcount: '795'
+ht-degree: 65%
 
 ---
 
@@ -30,7 +30,7 @@ No Customer Journey Analytics, navegue até **[!UICONTROL Ferramentas]** > **[!U
 
 O log de auditoria de hoje e ontem é mostrado por padrão.
 
-![Destaque do log de auditoria hoje (14 de outubro de 2022) e ontem (13 de outubro de 2022). ](assets/audit_ui.png)
+![Log de auditoria destacando hoje e ontem. ](assets/audit_ui.png)
 
 Você pode selecionar quais colunas ficam visíveis ao acessar o seletor de colunas na parte superior direita.
 
