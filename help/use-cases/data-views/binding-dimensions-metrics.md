@@ -3,10 +3,10 @@ title: Uso de dimensões e métricas de ligação no Customer Journey Analytics
 description: Atribua dimensões a arrays de objetos para análise de persistência complexa.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
-source-git-commit: e7e3affbc710ec4fc8d6b1d14d17feb8c556befc
+source-git-commit: 15660e1560ef8b1be510c0103e0f4818f1019c3e
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 84%
+source-wordcount: '1342'
+ht-degree: 83%
 
 ---
 
@@ -78,7 +78,7 @@ Se você desejar observar a receita por cor sem uma dimensão de ligação, a di
 | --- | --- |
 | laranja neon | 2099 |
 
-Você pode acessar o gerenciador de visualização de dados e vincular a cor do produto ao nome do produto:
+Acesse **[!UICONTROL Visualizações de dados]** e vincular o [!DNL Product Color] dimensão para [!DNL Product Name]:
 
 ![Dimensão de ligação](../assets/binding-dimension.png)
 
@@ -251,7 +251,7 @@ Se você usou [!UICONTROL Mais recente] alocação com a dimensão termo de pesq
 
 Embora este exemplo inclua apenas uma pessoa, muitas pessoas que pesquisam por coisas diferentes podem atribuir erroneamente termos de pesquisa a produtos diferentes, tornando difícil determinar quais são os melhores resultados de pesquisa.
 
-Você pode vincular termos de pesquisa ao nome do produto sempre que a métrica Pesquisas estiver presente para atribuir corretamente o termo de pesquisa à receita.
+Agora você pode vincular [!DNL Search Term] para [!DNL Product Name] sempre que o [!DNL Searches] está presente para atribuir corretamente o termo de pesquisa à receita.
 
 ![Métrica de ligação](../assets/binding-metric.png)
 
@@ -342,7 +342,7 @@ Se você usar a alocação mais recente com a expiração de pessoa, o termo de 
 
 No entanto, se você vincular o `search_term` ao `ProfileID`, cada pesquisa de perfil seria isolada em seu próprio perfil e atribuída aos programas corretos que ela procura.
 
-![Vínculo do visitante](../assets/binding-visitor.png)
+![Vínculo do visitante](../assets/binding-profileid.png)
 
 O Analysis Workspace atribuiria corretamente o segundo episódio de Orangey ao termo de pesquisa `"kids show"`, sem levar em conta as pesquisas de outros perfis.
 
@@ -435,3 +435,8 @@ No entanto, se você vincular o `product_finding_method` à métrica Adições a
 | --- | --- |
 | pesquisa | 399,99 |
 | navegar | 19,99 |
+
+
+>[!MORELIKETHIS]
+>
+>[Vinculação de Dimension em visualizações de dados](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=pt-BR) tutorial.
