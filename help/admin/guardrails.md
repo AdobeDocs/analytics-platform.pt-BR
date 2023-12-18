@@ -4,7 +4,7 @@ description: Saiba mais sobre as medidas de proteção para o Customer Journey A
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: 37cb4cc9ecb58f31fdcd53deaadbd124bf6e894c
+source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 10%
@@ -191,7 +191,7 @@ Consulte também Experience Platform [Medidas de proteção para a assimilação
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Linhas por relatório | 3 milhões - 150 milhões | Proteção imposta pelo sistema | Número máximo de linhas de relatório por relatório; valor baseado no pacote licenciado. |
+| Linhas por relatório | 3 milhões - 300 milhões | Proteção imposta pelo sistema | Número máximo de linhas de relatório por relatório; valor baseado no pacote licenciado. |
 | Detalhamentos por tabela | 5 | Proteção imposta pelo sistema | Número máximo de detalhamentos por tabela. |
 | Métricas por tabela | 5 | Proteção imposta pelo sistema | Número máximo de métricas por tabela. |
 | Frequência de agendamento | 1 | Proteção imposta pelo sistema | As exportações podem ser agendadas uma vez (1) por dia ou em um agendamento mais longo (por exemplo: uma vez a cada 2 dias ou semanalmente). |
