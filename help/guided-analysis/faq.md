@@ -4,9 +4,9 @@ description: Perguntas frequentes sobre análise guiada.
 exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: análise do produto
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 2fe26bb906600a1987d9f4a07c5863030d52173a
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '434'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ Perguntas frequentes sobre análise guiada.
 
 +++**Como minha organização pode ser provisionada para análise guiada?**
 
-A análise guiada é um complemento pago do Customer Journey Analytics. Se quiser começar a usar este complemento, entre em contato com a equipe de conta do Adobe.
+A análise guiada faz parte do Adobe Product Analytics, um complemento pago do Customer Journey Analytics. Se quiser começar a usar este complemento, entre em contato com a equipe de conta do Adobe.
 
 +++
 
@@ -46,7 +46,7 @@ A análise guiada usa termos mais usados entre as equipes de produtos. Você pod
 | Evento  | Métrica |
 | Usuários | Pessoas |
 | Propriedade | Dimensão |
-| Valor | Item de dimensão |
+| Valor | item Dimension |
 | Segmento | Filtro |
 
 {style="table-layout:auto"}
@@ -59,7 +59,7 @@ Enquanto [Analysis Workspace](../analysis-workspace/home.md) A e a Análise guia
 
 * **O Analysis Workspace é uma experiência centralizada em dimensões.** As tabelas geralmente consistem em linhas dimensionais, enquanto as colunas normalmente são métricas. Os filtros podem ser aplicados em linhas e colunas para obter os dados desejados.
 
-* **A análise guiada é uma experiência centrada em eventos.** Cada análise é iniciada selecionando eventos, em seguida, dimensões e filtros podem ser adicionados para refinar esses dados do evento.
+* **A análise guiada é um evento e uma experiência centrada no usuário.** Cada análise é iniciada selecionando eventos, em seguida, dimensões e filtros podem ser adicionados para refinar esses dados do evento.
 
 ![Analysis Workspace e exibições de análise guiada](assets/structure.png)
 
@@ -69,7 +69,7 @@ Considere o exemplo a seguir em que você se concentra nos dados na página inic
 
   ![Dimension centralizado](assets/dimension-centered.png)
 
-* Uma abordagem típica de análise guiada centrada em eventos seria &quot;Quantos usuários visualizaram a página inicial?&quot;
+* Um evento típico e uma abordagem de análise guiada centrada no usuário seria &quot;Quantos usuários visitaram nossa página inicial?&quot;
 
   ![Evento centralizado](assets/event-centered.png)
 
