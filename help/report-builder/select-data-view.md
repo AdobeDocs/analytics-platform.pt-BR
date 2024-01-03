@@ -1,15 +1,15 @@
 ---
 title: Como selecionar uma visualização de dados no Report Builder
 description: Descreve como selecionar visualizações de dados no Adobe Report Builder
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 3%
+source-wordcount: '357'
+ht-degree: 2%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 Você pode selecionar uma visualização de dados na lista suspensa ou selecionar uma visualização de dados de uma célula e atualizar automaticamente seu bloco de dados com uma nova visualização de dados.
 
-**Selecionar visualização de dados na célula**
+**Selecionar visualização de dados da célula**
 
 Selecionar uma visualização de dados de uma célula facilita a atualização de blocos de dados usando visualizações de dados diferentes. Se sua organização tiver várias visualizações de dados semelhantes ou idênticas entre si em termos de estrutura, em vez de criar relatórios totalmente novos com blocos de dados separados, você poderá atualizar blocos de dados com uma visualização de dados selecionada de uma célula. Isso também é útil se você tiver formatos de blocos de dados complicados que incluem componentes e layouts personalizados.
 

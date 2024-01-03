@@ -1,14 +1,14 @@
 ---
 title: Como selecionar um intervalo de dados em Report Builder no Customer Journey Analytics
 description: Descreve como usar o calendário, as datas do acumulado e as expressões personalizadas no Report Builder para Customer Journey Analytics
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1091'
 ht-degree: 89%
 
 ---
@@ -157,7 +157,7 @@ A tabela a seguir lista exemplos de expressão de data.
 | tm-1d | Último dia do mês anterior |
 | td-52w | Mesmo dia 52 semanas atrás |
 | tm-11m-1d | Último dia do mesmo mês do ano passado |
-| „2020-09-06“ | 9 de setembro de 2020 |
+| &quot;09-2020&quot; | 9 de setembro de 2020 |
 
 ## Intervalo de datas da célula
 

@@ -1,15 +1,15 @@
 ---
 title: Como gerenciar blocos de dados usando o Report Builder no Customer Journey Analytics
 description: Descreve como usar o recurso de gerenciamento no Report Builder
-role: Data Engineer, Data Architect, Admin, User
+role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 49a35a256758b259dfb2133658bae617315774e4
+source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 75%
+ht-degree: 71%
 
 ---
 
@@ -72,7 +72,7 @@ Para verificar se um bloco de dados é atualizado, exiba o ícone de status de a
 
 Um bloco de dados atualizado com êxito exibe uma marca de seleção em um círculo verde: <img src="./assets/refresh-success.png" width="5%" alt="Círculo verde com ícone de marca de seleção"/>.
 
-Um bloco de dados que não foi atualizado exibe um ícone de aviso: <img src="./assets/refresh-failure.png" width="5%" alt="Ícone de triângulo vermelho com ponto de exclamação"/>.Isso facilita a identificação de erros em blocos de dados.
+Um bloco de dados que não foi atualizado exibe um ícone de aviso: <img src="./assets/refresh-failure.png" width="5%" alt="Ícone de triângulo vermelho com ponto de exclamação"/>. Isso facilita a identificação de erros em blocos de dados.
 
 
 ![O gerenciador de bloco de dados que mostra o status de atualização para cada bloco de dados listado.](./assets/image512.png)
