@@ -3,9 +3,10 @@ title: Configurar transmissão de dados do Google Analytics para a Adobe Experie
 description: Saiba como configurar sua implementação para enviar uma camada de dados do Google para a Adobe Experience Platform
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
-source-git-commit: edbad9c9d3dc0b48db5334828a18ef652d4a38aa
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '234'
 ht-degree: 100%
 
 ---

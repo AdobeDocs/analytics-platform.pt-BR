@@ -3,9 +3,11 @@ title: Comparação com o Adobe Analytics
 description: Visão geral da comparação do Customer Journey Analytics com o Adobe Analytics.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 4cbf01d397e7f89e67ae20702790129478d45cce
-workflow-type: ht
-source-wordcount: '863'
+exl-id: bde36283-86af-4b1a-9cbe-e251676b2951
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '777'
 ht-degree: 100%
 
 ---
@@ -66,8 +68,3 @@ O Adobe Analytics usa um conjunto mais definitivo de campos de identidade, como 
 ## Recursos compatíveis
 
 Uma visão geral dos recursos do Adobe Analytics e sua compatibilidade com o Customer Journey Analytics pode ser encontrada em [Suporte a recursos do Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/cja-aa.html?lang=pt-BR).
-
-
-
-
-

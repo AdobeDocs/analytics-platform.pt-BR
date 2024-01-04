@@ -4,10 +4,11 @@ description: É possível definir preferências gerais e de projeto para usuári
 feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
-source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '3228'
-ht-degree: 87%
+source-wordcount: '3191'
+ht-degree: 86%
 
 ---
 
@@ -43,7 +44,7 @@ As preferências gerais se aplicam à experiência com o Customer Journey Analyt
 
 | Preferência | Opções |
 | --- | --- |
-| Landing page | Escolha qual página é exibida como a página padrão ao acessar o Adobe Analytics: <ul><li>Lista de projetos (padrão)</li><li>Projeto em branco</li><li>Projeto específico  selecionado em uma lista</li></ul> |
+| Landing page | Escolha qual página é exibida como a página padrão ao acessar o Adobe Analytics: <ul><li>Lista de projetos (padrão)</li><li>Projeto em branco</li><li>Projeto específico selecionado em uma lista</li></ul> |
 | Mostrar dicas | Exibe dicas em uma caixa azul na área inferior direita do Analysis Workspace. <p>Essa opção está ativada por padrão.</p> |
 | Componentes exibidos em grupos do painel esquerdo | Escolha quantos de cada componente serão exibidos no menu Componentes no painel à esquerda. <p>Se você escolher 0, o componente não estará mais acessível no painel esquerdo dos espaços de trabalho.</p><p>Por padrão, 5 componentes são exibidos para cada um dos seguintes itens:</p> <ul><li>Dimensões</li><li>Métricas</li><li>Filtros</li><li>Intervalos de datas</li></ul> <p>Para obter mais informações sobre Componentes no Analysis Workspace, consulte [Visão geral dos componentes](/help/components/overview.md).</p> |
 
@@ -78,7 +79,7 @@ Clique nos títulos de preferência vinculados para obter mais informações e c
 |  | [Tipo de painel](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/panels.html?lang=pt-BR) | <ul><li>Forma livre (padrão)</li><li>Em branco</li><li>Insights rápidos</li></ul> |
 |  | Contar instâncias repetidas | Especifica se as instâncias repetidas devem ser contadas nos relatórios. Por exemplo, essa configuração (quando ativada) trata várias exibições de página consecutivas para a mesma página como várias exibições de página. Com essa opção desativada, eles contam como uma única visualização de página. <p>**Observação:** essa configuração afeta apenas determinadas métricas (como Visitas de página única) e não se aplica a visualizações de Fluxo ou Fallout.</p> |
 |  | Formato de número | <ul><li>1.000,00 (padrão)</li><li>1.000,00</li><li>1 000,00</li></ul> |
-|  | Separador CSV  caractere | <ul><li>Vírgula (padrão)</li><li>Ponto e vírgula</li><li>Dois-pontos</li><li>Estágio</li><li>Ponto</li><li>Espaço</li><li>Tabulação</li></ul> |
+|  | Caractere separador CSV | <ul><li>Vírgula (padrão)</li><li>Ponto e vírgula</li><li>Dois-pontos</li><li>Estágio</li><li>Ponto</li><li>Espaço</li><li>Tabulação</li></ul> |
 |  | Mostrar anotações | Escolha se as anotações estão visíveis em seus projetos. Para obter mais informações sobre anotações, consulte [Visão geral de anotações](/help/components/annotations/overview.md). |
 
 

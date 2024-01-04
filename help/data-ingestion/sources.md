@@ -4,9 +4,10 @@ description: Explica como assimilar e usar dados usando conectores de origem no 
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1997'
+source-wordcount: '1967'
 ht-degree: 86%
 
 ---
@@ -51,8 +52,7 @@ Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
-1. Selecione **[!UICONTROL Criar esquema]**.
-.
+1. Selecionar **[!UICONTROL Criar esquema]**. .
 1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
    1. Selecionar **[!UICONTROL Perfil individual]**.

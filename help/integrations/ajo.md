@@ -3,10 +3,11 @@ title: Integrar o Adobe Journey Optimizer ao Customer Journey Analytics
 description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usando o Analysis Workspace dentro do Customer Journey Analytics.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
-source-git-commit: 2429c60cab701017702e3312770232aa329e303c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 68%
+source-wordcount: '862'
+ht-degree: 64%
 
 ---
 

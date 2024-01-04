@@ -1,14 +1,16 @@
 ---
 title: Taxas de retenção
-description: Meça quantas pessoas continuam usando o seu produto.
+description: Meça quantos usuários continuam a usar seu produto.
 feature: Guided Analysis
 keywords: análise do produto
 hide: true
 hidefromtoc: true
-source-git-commit: 1cadf9d863c18f590a99e22d7b0e79b1074bf29f
+exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 2%
+source-wordcount: '889'
+ht-degree: 1%
 
 ---
 

@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: serviço de consulta;serviço de consulta;sintaxe sql
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 68%
+source-wordcount: '839'
+ht-degree: 64%
 
 ---
 
@@ -49,7 +49,7 @@ O Total de registros por carimbos de data e hora deve corresponder à métrica d
 
 >[!NOTE]
 >
->Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através da [Análise de vários canais](/help/cca/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no Customer Journey Analytics é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no Adobe Analytics, especialmente se a Costura tiver sido ativada.
+>Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através do [Costura](/help/stitching/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no Customer Journey Analytics é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no Adobe Analytics, especialmente se a Costura tiver sido ativada.
 
 1. Nos [Serviços de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=pt-BR) da Adobe Experience Platform, execute a seguinte consulta de [!UICONTROL Total de registros por carimbos de data e hora]:
 

@@ -3,9 +3,10 @@ title: Visão geral dos filtros
 description: Entenda para que os filtros são usados e como criar um filtro simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
-source-git-commit: 6b79243a2f12936208f6f04c249a81315ba8901b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1172'
 ht-degree: 23%
 
 ---
@@ -101,7 +102,7 @@ Os contêineres Sessão incluem valores de acordo com a ocorrência por visita:
 - Métricas de participação
 - Métricas alocadas linearmente
 
-As visualizações de dados no Customer Journey Analytics permitem determinar a duração de uma sessão, mas também quando uma nova sessão deve ser criada. Por exemplo, você pode definir uma nova sessão de aplicativo móvel com base em toda vez que um usuário iniciar seu aplicativo móvel. Consulte [Configurações de sessão](/help/data-views/session-settings.md) para obter mais informações.
+As visualizações de dados no Customer Journey Analytics permitem determinar a duração de uma sessão, mas também quando uma nova sessão deve ser criada. Por exemplo, você pode definir uma nova sessão de aplicativo móvel com base em toda vez que um usuário iniciar seu aplicativo móvel. Consulte [Configurações da sessão](/help/data-views/session-settings.md) para obter mais informações.
 
 ### Contêiner evento {#event}
 

@@ -4,10 +4,11 @@ keywords: Compartilhamento no Analysis Workspace
 title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 36%
+source-wordcount: '1966'
+ht-degree: 34%
 
 ---
 
@@ -50,7 +51,7 @@ Ao compartilhar uma função de projeto específica com usuários e grupos em su
 
 * Funções do projeto (**[!UICONTROL Editar original]**, **[!UICONTROL Editar cópia]**, e **[!UICONTROL Somente leitura]**) estão vinculados ao usuário e à ID do projeto específica. As funções do projeto são independentes das permissões de usuário gerenciadas no [Admin Console da Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=pt-BR).
 
-* No Customer Journey Analytics, os grupos são definidos por perfis de produto no [Admin Console da Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=pt-BR). Os administradores podem compartilhar com qualquer grupo, incluindo “Todos”. Os não administradores podem compartilhar com grupos dos quais são membros, mas não com “Todos”.
+* No Customer Journey Analytics, os grupos são definidos por perfis de produtos no [Admin Console do Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=pt-BR). Os administradores podem compartilhar com qualquer grupo, incluindo “Todos”. Os não administradores podem compartilhar com grupos dos quais são membros, mas não com “Todos”.
 
 * Um usuário que é colocado em várias funções sempre obtém a melhor experiência. Isso pode ocorrer se um usuário for adicionado como um indivíduo e como parte de um grupo. Por exemplo, se um usuário receber o **[!UICONTROL Editar original]** como indivíduo e a **[!UICONTROL Somente leitura]** como membro de um grupo, eles receberão uma **[!UICONTROL Editar original]** experiência em projetos.
 
@@ -59,7 +60,7 @@ Ao compartilhar uma função de projeto específica com usuários e grupos em su
 Para compartilhar uma função de projeto específica com usuários ou grupos na organização:
 
 1. Vá para o projeto que deseja compartilhar e clique em **[!UICONTROL Compartilhar]** > **[!UICONTROL Compartilhar com usuários do Workspace]**.
-Se houver alterações não salvas, você deverá salvar o projeto primeiro.
+Se houver alterações não salvas, você será solicitado a salvar seu projeto primeiro.
 
    ![A janela Compartilhar projeto.](assets/share-proj-modal.png)
 
@@ -95,7 +96,7 @@ Ao compartilhar um link conforme descrito nesta seção, considere o seguinte:
 
 Para compartilhar o link do projeto com os usuários em sua organização:
 
-1. Salvar o projeto. Se houver alterações não salvas, você será solicitado a salvar seu projeto antes de compartilhar um link.
+1. Salve o projeto. Se houver alterações não salvas, você será solicitado a salvar seu projeto antes de compartilhar um link.
 
 1. Selecionar **[!UICONTROL Compartilhar]** > **[!UICONTROL Compartilhar com usuários do Workspace]** e selecione **[!UICONTROL Copiar]** ao lado da **[!UICONTROL Compartilhar por link]** campo.
 
@@ -149,7 +150,7 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
 1. Escolha se deseja habilitar a seguinte opção de segurança (esta opção pode ser controlada pelo administrador de Customer Journey Analytics):
 
-   * **[!UICONTROL Exigir autenticação da Experience Cloud]:**
+   * **[!UICONTROL Exigir autenticação de Experience Cloud]:**
 
      Quando essa opção está habilitada, os únicos usuários que podem acessar o projeto são aqueles que podem fazer logon na organização da Adobe Experience Cloud onde o projeto que você está compartilhando foi criado. No entanto, os usuários com os quais você compartilha não precisam ter acesso ao Adobe Analytics.
 

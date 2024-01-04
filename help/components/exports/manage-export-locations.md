@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Gerenciar locais e contas de exportação da nuvem
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User, Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 5%
+ht-degree: 2%
 
 ---
 
@@ -35,7 +36,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de loca
 
    | Filtro | Descrição |
    |---------|----------|
-   | [!UICONTROL **Tipo de local**]<!--should this be changed to Account type?--> | O tipo de conta ao qual a localização está associada. Os seguintes tipos de conta podem estar disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Tipo de localização**]<!--should this be changed to Account type?--> | O tipo de conta ao qual a localização está associada. Os seguintes tipos de conta podem estar disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **ARN de função do Amazon S3**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **RBAC do Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Conta**] | O nome da conta à qual a localização está associada. |
    | [!UICONTROL **Criado por**] | O endereço de email do usuário que criou a localização. |
 

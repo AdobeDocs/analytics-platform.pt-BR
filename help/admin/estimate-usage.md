@@ -4,10 +4,10 @@ description: Mostra dois métodos de estimativa de uso e um método de gerenciam
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 74%
+source-wordcount: '881'
+ht-degree: 71%
 
 ---
 
@@ -15,7 +15,8 @@ ht-degree: 74%
 
 Para visualizar o uso do Customer Journey Analytics, é possível usar vários métodos:
 
-* Adicione as linhas de dados do evento para cada conexão. Consulte [Estimar o tamanho da conexão](#tamanho da estimativa) abaixo. É uma maneira fácil de ver os dados da linha do evento, por conexão, para um carimbo de data e hora específico.
+* Adicione as linhas de dados do evento para cada conexão. Consulte [Estimar tamanho da conexão](#estimate-connection-size) abaixo. É uma maneira fácil de ver os dados da linha do evento, por conexão, para um carimbo de data e hora específico.
+
 * Visualize o uso de três maneiras, cada uma das quais é descrita com mais detalhes abaixo:
    * Use o Analysis Workspace para relatar os eventos do mês passado.
    * Use o Report Builder para relatar os eventos do mês passado.
@@ -41,7 +42,7 @@ Talvez seja necessário saber quantas linhas de dados do evento você tem atualm
 
 1. Adicione os **[!UICONTROL Registros de dados do evento disponíveis]** para cada conexão criada pela organização. (Dependendo do tamanho da conexão, o número pode levar algum tempo para ser exibido.)
 
-   ![Registros de dados de eventos disponíveis.](./assets/event-data.png)
+   ![Registros dos dados do evento disponíveis.](./assets/event-data.png)
 
    >[!CAUTION]
    >

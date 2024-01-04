@@ -6,10 +6,11 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 exl-id: 8820a093-e573-45f9-bcd2-0933e21c231b
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 2%
+source-wordcount: '726'
+ht-degree: 0%
 
 ---
 
@@ -109,8 +110,8 @@ Para iniciar a compilação, crie um ou mais conjuntos de dados compilados. Para
   | Valor | Explicação |
   |-----|-----|
   | **[!UICONTROL ** Em fila **]** | A solicitação é recebida e processada em breve. |
-  | **[!UICONTROL ** Criação em andamento **]** | Os recursos e o conjunto de dados recém-compilado estão sendo criados. |
-  | **[!UICONTROL ** Compilação em andamento **]** | Há recursos e conjunto de dados compilado e a compilação está em andamento |
+  | **[!UICONTROL ** Criação **]** em andamento | Os recursos e o conjunto de dados recém-compilado estão sendo criados. |
+  | **[!UICONTROL ** Configuração em andamento **]** | Há recursos e conjunto de dados compilado e a compilação está em andamento |
   | **[!UICONTROL ** Erro **]** | Há um problema com a compilação. Talvez um esquema tenha sido alterado entre o conjunto de dados de origem e o conjunto de dados compilado, o volume diário seja muito grande ou... (_**são necessárias mais informações aqui...**_) |
 
   >[!INFO]

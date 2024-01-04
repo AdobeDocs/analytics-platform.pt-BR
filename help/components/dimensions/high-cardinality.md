@@ -4,10 +4,11 @@ description: Explica como o Customer Journey Analytics lida com dimensões com m
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 7%
+source-wordcount: '532'
+ht-degree: 6%
 
 ---
 

@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 275d575d41a259bddb152074a55fedcdd6f9ecea
+source-git-commit: fbd801dbbdd8240eef4c60d0877bbb01f06dd768
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1040'
 ht-degree: 79%
 
 ---
@@ -68,7 +68,6 @@ ht-degree: 79%
    + [Gerenciar conexões](../connections/manage-connections.md)
    + [Conjuntos de dados de evento combinados](../connections/combined-dataset.md)
    + [Pesquisas padrão](../connections/standard-lookups.md)
-   + [Análise de vários canais](../connections/cca.md)
 
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das visualizações de dados](../data-views/data-views.md)
@@ -303,11 +302,6 @@ ht-degree: 79%
    + [Como funciona a compilação](../stitching/explained.md)
    + [Criar e gerenciar conjuntos de dados compilados](../stitching/stitching-ui.md)
    + [Perguntas frequentes](../stitching/faq.md)
-
-+ Análise de vários canais {#cca}
-   + [Visão geral da Análise de vários canais](../cca/overview.md)
-   + [Como funcionam as repetições](../cca/replay.md)
-   + [Perguntas frequentes sobre a Análise de vários canais](../cca/faq.md)
 
 + Integrações da Adobe {#integrations}
    + [Visão geral sobre a integração de soluções de Adobe com o Customer Journey Analytics](/help/integrations/overview.md)

@@ -4,10 +4,11 @@ description: Visão geral da compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
-source-git-commit: d0f7d5f2fe3cce869d413ca014d086e1a64665be
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 21%
+source-wordcount: '1428'
+ht-degree: 18%
 
 ---
 
@@ -34,7 +35,7 @@ Você se beneficia da análise entre canais se combinar um ou mais conjuntos de 
 
 Antes de usar a compilação, verifique se sua organização está preparada com o seguinte:
 
-* Importe os dados desejados para a Adobe Experience Platform:
+* Importe os dados desejados para o Adobe Experience Platform:
 
    * Para obter dados do Adobe Analytics, consulte [Utilização dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
    * Para outros tipos de dados, consulte [Criar um esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) e [Assimilar dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) na documentação da Adobe Experience Platform.

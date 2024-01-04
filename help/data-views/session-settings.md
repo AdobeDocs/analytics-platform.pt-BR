@@ -3,13 +3,14 @@ title: Configurações da sessão
 description: Configurações em uma visualização de dados que você pode usar para definir a duração de uma sessão e o acionador para iniciar uma nova sessão
 solution: Customer Journey Analytics
 feature: Data Views
-source-git-commit: bb2061f9119b8391bf3cedce4029685537d1e239
+exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '424'
 ht-degree: 100%
 
 ---
-
 
 # Configurações da sessão
 
@@ -45,4 +46,3 @@ Para definir o contexto de uma sessão para uma visualização de dados:
 
 
 4. Selecione **[!UICONTROL Salvar]** ou **[!UICONTROL Salvar e concluir]** para salvar a definição das configurações de sessão.
-

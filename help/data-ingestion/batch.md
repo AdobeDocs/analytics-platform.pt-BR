@@ -4,9 +4,10 @@ description: Explica como assimilar e usar dados em lote no Customer Journey Ana
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: dd46adee-821f-489c-9350-abcfffe7cc3c
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1948'
 ht-degree: 87%
 
 ---
@@ -48,8 +49,7 @@ Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
-1. Selecione **[!UICONTROL Criar esquema]**.
-.
+1. Selecionar **[!UICONTROL Criar esquema]**. .
 1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
    1. Selecionar **[!UICONTROL Perfil individual]**.
@@ -223,7 +223,7 @@ Consulte [Mapear um arquivo CSV em um esquema XDM existente](https://experiencel
 - como mapear dados quando os dados recebidos não são compatíveis com o esquema XDM.
 - usar modelos de mapeamento,
 - usar campos calculados para garantir que seus dados em lote estejam em conformidade com o que o esquema espera,
-- e mais.
+- e muito mais.
 
 
 ## Configurar uma conexão

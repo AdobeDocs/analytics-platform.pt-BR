@@ -3,10 +3,11 @@ description: O Construtor de filtros fornece uma tela para arrastar e soltar Dim
 title: Criar filtros
 feature: Filters
 exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 22%
+source-wordcount: '1255'
+ht-degree: 20%
 
 ---
 
@@ -36,7 +37,7 @@ Você pode acessar o Construtor de filtros de qualquer uma das seguintes maneira
 | **[!UICONTROL Descrição]** | Forneça uma descrição detalhada para o filtro. |
 | **[!UICONTROL Tags]** | [Marcar o filtro](/help/components/filters/manage-filters.md) você está criando ao selecionar de uma lista de tags existentes ou criar uma nova tag. |
 | **[!UICONTROL Definições]** | É aqui que você [criar e configurar filtros](/help/components/filters/filters-overview.md), adicione regras, aninhe e sequencie contêineres. |
-| **[!UICONTROL Incluir]** | (Seletor Contêiner superior.) Permite selecionar o nível superior [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Evento]). O container de nível superior padrão é o container Evento. |
+| **[!UICONTROL Incluir]** | (Seletor de contêiner superior.) Permite selecionar o nível superior [container](/help/components/filters/filters-overview.md) ( [!UICONTROL Person], [!UICONTROL Session], [!UICONTROL Evento]). O container de nível superior padrão é o container Evento. |
 | **[!UICONTROL Opções]** | Ícone (engrenagem) | <ul><li>**[!UICONTROL + Adicionar contêiner]**: permite adicionar um novo contêiner (abaixo do contêiner de nível superior) à definição do filtro.</li><li>**[!UICONTROL Excluir]**: permite definir o filtro excluindo uma ou mais dimensões, filtros ou métricas.</li></ul> |
 | **[!UICONTROL Dimensões]** | Os componentes são arrastados e soltos na lista Dimension (barra lateral laranja). |
 | **[!UICONTROL Operador]** | É possível comparar e restringir valores com operadores selecionados. (é igual a, não é igual, contém, contém todos os, etc.) |

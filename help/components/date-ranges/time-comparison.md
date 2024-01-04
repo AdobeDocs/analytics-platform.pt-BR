@@ -3,10 +3,11 @@ description: 'A comparação de datas no Analysis Workspace permite usar qualque
 title: Comparação de datas
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 87%
+source-wordcount: '740'
+ht-degree: 86%
 
 ---
 
@@ -55,7 +56,7 @@ A análise demanda contexto, e esse contexto é normalmente fornecido por um per
 
 A partir de agora, é possível adicionar um período de tempo a cada coluna de uma tabela, permitindo que você adicione períodos diferentes daqueles definidos no seu calendário. Essa é mais uma forma de comparar datas.
 
-1. Clique com o botão direito na tabela e selecione **[!UICONTROL Adicionar coluna de período]** ![Lista de colunas da tabela com Adicionar coluna de período realçada ](assets/add-time-period-column.png)
+1. Clique com o botão direito do mouse em uma coluna da tabela e selecione **[!UICONTROL Adicionar Coluna de Período]** ![Lista de colunas da tabela com Adicionar coluna de período realçada ](assets/add-time-period-column.png)
 
 1. Dependendo de como configurou o intervalo de data da tabela, você tem as opções a seguir para comparação:
 

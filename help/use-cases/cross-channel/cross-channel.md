@@ -4,10 +4,11 @@ description: Analise e extraia insights das interações em toda a jornada do cl
 exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 62%
+source-wordcount: '482'
+ht-degree: 61%
 
 ---
 
@@ -21,7 +22,7 @@ A análise entre canais possibilita uma única visualização consolidada do com
 
 1. [Crie esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) para os dados que serão assimilados.
 1. [Crie conjuntos de dados](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=pt-BR) para os dados que serão assimilados.
-1. [Assimilar dados na Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=pt-BR):
+1. [Assimilar dados no Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=pt-BR):
    1. Dados baseados em eventos ![evento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) do site ou aplicativo móvel pelo conector de origem da Rede de borda ou do Analytics.
    2. Dados do perfil ![perfil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (por exemplo, de um sistema CRM, aplicativo de call center, aplicativo de fidelidade).
    3. Dados de pesquisa ![pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (por exemplo, nome do produto, categoria de um sistema de informações do produto).
@@ -32,7 +33,7 @@ A análise entre canais possibilita uma única visualização consolidada do com
 1. Configure a mesma ID primária para os dados do perfil que foi configurada para os dados do evento.
 1. [Criar uma conexão](../../connections/overview.md) para assimilar os conjuntos de dados relevantes do Experience Platform para o Customer Journey Analytics.
 1. [Crie uma visualização de dados](/help/data-views/create-dataview.md) na conexão para selecionar as dimensões e métricas específicas a serem incluídas na visualização. As configurações de atribuição e alocação também são definidas na visualização de dados. Essas configurações são computadas no momento da emissão do relatório.
-1. [Crie um projeto para configurar painéis e relatórios dentro do Analysis Workspace.](/help/analysis-workspace/home.md)
+1. [Criar um projeto](/help/analysis-workspace/home.md) para configurar painéis e relatórios no Analysis Workspace.
 
 ## Considerações
 

@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Gerenciar exportações
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
-source-git-commit: 05cc65f3a463bc71db85d85292a172784c3d7c75
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1029'
-ht-degree: 6%
+ht-degree: 3%
 
 ---
 
@@ -35,9 +36,9 @@ Para encontrar as informações necessárias, você pode filtrar a lista de expo
 
    | Filtro | Descrição |
    |---------|----------|
-   | [!UICONTROL **Tipo de conta**] | O tipo de conta ao qual a exportação está associada. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Tipo de conta**] | O tipo de conta ao qual a exportação está associada. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **ARN de função do Amazon S3**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **RBAC do Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Ativo**]: indica que uma exportação agendada ainda não expirou ou que uma exportação única ainda não foi concluída. </li><li>[!UICONTROL **Concluído**]: indica que uma exportação foi bem-sucedida. Para exportações programadas, isso indica que a programação expirou.</li><li>[!UICONTROL **Falha**]<p>As situações a seguir podem resultar em falha na exportação. Passe o mouse sobre [!UICONTROL **Failed**] status para ver detalhes sobre a falha. <ul><li>Expiração de exportação agendada</li><li>Limite de linhas atingido para exportação agendada </li></ul> </p></li></ul> |
-   | [!UICONTROL **Frequência**] | Com que frequência a exportação ocorre. As seguintes frequências estão disponíveis: <ul><li>[!UICONTROL **Uma vez**]</li><li>[!UICONTROL **Diariamente**]</li><li>[!UICONTROL **Semanalmente**]</li><li>[!UICONTROL **Mensalmente**]</li><li>[!UICONTROL **Anualmente**]</li></ul> |
+   | [!UICONTROL **Frequência**] | Com que frequência a exportação ocorre. As seguintes frequências estão disponíveis: <ul><li>[!UICONTROL **Uma vez**]</li><li>[!UICONTROL **Diariamente**]</li><li>[!UICONTROL **Semanalmente**]</li><li>[!UICONTROL **Mensal**]</li><li>[!UICONTROL **Anual**]</li></ul> |
 
    {style="table-layout:auto"}
 
@@ -140,7 +141,7 @@ Selecione um cabeçalho de coluna para classificar as exportações por essa col
    | Tags | Exibe todas as tags aplicadas à exportação. Para obter informações sobre como aplicar tags a uma exportação, consulte [Marcar uma exportação](#tag-an-export). |
    | Tamanho da tabela (último envio) | O tamanho da exportação na última vez em que foi enviada. |
    | Criado por | O usuário que criou a exportação. |
-   | Criado | A data e a hora em que a exportação foi criada. <!-- true? --> |
+   | Criado em | A data e a hora em que a exportação foi criada. <!-- true? --> |
    | Localização | A localização na conta para a qual os dados foram exportados. |
    | Conta | A conta onde os dados foram exportados. |
    | Frequência | A frequência com que a exportação é enviada. As opções disponíveis são [!UICONTROL Uma vez], [!UICONTROL Diariamente], [!UICONTROL Semanalmente], [!UICONTROL Mensalmente por dia da semana], [!UICONTROL Mensalmente por dia do mês], [!UICONTROL Anualmente, por dia do mês], e [!UICONTROL Anualmente por data específica]. |

@@ -3,10 +3,11 @@ description: Há duas formas de utilizar as métricas no Analysis Workspace.
 title: Métricas
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 49%
+source-wordcount: '371'
+ht-degree: 40%
 
 ---
 
@@ -22,7 +23,7 @@ A Adobe oferece vários tipos de métricas para uso no Analysis Workspace:
 
 * **Métricas calculadas** ![Ícone de métrica calculada](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg): métricas definidas pelo usuário baseadas em métricas padrão, números estáticos ou funções algorítmicas.
 
-* **Modelos de métrica calculada**  <img src="./assets/adobe-logo.svg" width="18"> : métricas definidas por Adobe que se comportam de forma semelhante às métricas calculadas. É possível usá-los como estão nos projetos do Workspace ou salvar uma cópia para personalizar sua lógica.
+* **Modelos de métrica calculada**  <img src="./assets/adobe-logo.svg" width="18"> : métricas definidas por Adobe que se comportam de forma semelhante às métricas calculadas. Você pode usá-los como estão nos projetos do Workspace ou salvar uma cópia para personalizar a lógica.
 
 
 ![Painel do Workspace destacando Métricas no painel esquerdo.](assets/cja-metrics.png)
@@ -30,7 +31,7 @@ A Adobe oferece vários tipos de métricas para uso no Analysis Workspace:
 É possível ver se uma métrica foi aprovada ![Ícone Aprovado](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg)  ou não. Se quiser obter mais detalhes sobre uma métrica, passe o mouse sobre a métrica e selecione ![Ícone de informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg).
 
 
-As métricas são flexíveis em seu uso no Analysis Workspace. Arrastar uma métrica para uma Tabela de forma livre vazia para ver como essa métrica se comportou ao longo do período do projeto. Você também pode arrastar uma métrica quando uma dimensão estiver presente para ver essa métrica em comparação com cada item de dimensão. Arrastar uma métrica para cima de um cabeçalho de métrica existente a substitui e arrastar uma métrica ao lado de um cabeçalho permite ver ambas as métricas lado a lado.
+As métricas são flexíveis em seu uso no Analysis Workspace. Arraste uma métrica para uma Tabela de forma livre vazia para ver a tendência da métrica no período do projeto. Você também pode arrastar uma métrica quando uma dimensão estiver presente para ver essa métrica em comparação com cada item de dimensão. Arrastar uma métrica para cima de um cabeçalho de métrica existente a substitui e arrastar uma métrica ao lado de um cabeçalho permite ver ambas as métricas lado a lado.
 
 ## Métricas calculadas 
 

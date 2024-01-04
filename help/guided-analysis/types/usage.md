@@ -1,13 +1,14 @@
 ---
 title: Visualização de uso
-description: Medir o engajamento do usuário ao longo do tempo.
+description: Meça o engajamento do usuário ao longo do tempo.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: análise do produto
-source-git-commit: 170737214fea4dbd4d90d33ebf770920c8344fb1
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 2%
+source-wordcount: '702'
+ht-degree: 1%
 
 ---
 

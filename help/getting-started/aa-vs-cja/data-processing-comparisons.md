@@ -3,9 +3,10 @@ title: Comparar o processamento de dados entre os recursos de relatório do Adob
 description: Entender as diferenças no processamento de dados dos vários recursos de relatório
 exl-id: e3deedb2-0171-4fc2-9127-b9543603d4f0
 feature: Basics
-source-git-commit: f2f85db4b670f1c4b1f6bc0954a5549c793edf5a
-workflow-type: ht
-source-wordcount: '1221'
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1081'
 ht-degree: 100%
 
 ---

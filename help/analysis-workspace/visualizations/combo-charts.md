@@ -2,11 +2,11 @@
 description: Permite visualizar facilmente os dados de comparação no Analysis Workspace, criando comparações com o mês passado, o ano passado e assim por diante.
 title: Visualização de gráficos de combinação
 feature: Visualizations
-role: User, Admin
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '847'
 ht-degree: 85%
 
 ---

@@ -4,10 +4,11 @@ description: Saiba quais componentes o Customer Journey Analytics oferece e como
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
-source-git-commit: dbc0210936e8205fbe97b3c88e6c37597e7e43e3
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 79%
+source-wordcount: '1068'
+ht-degree: 75%
 
 ---
 
@@ -25,10 +26,10 @@ Você pode gerenciar os seguintes componentes:
 * [**Filtros**](filters/filters-overview.md): crie, gerencie, compartilhe e aplique filtros de público-alvo focados e avançados aos seus relatórios. Os filtros permitem identificar subconjuntos de pessoas com base em características ou interações.
 * [**Métricas calculadas:**](calc-metrics/calc-metr-overview.md) use métricas e fórmulas como novos componentes para usar nos relatórios
 * [**Dicionário de dados**](/help/components/data-dictionary/data-dictionary-overview.md): ajuda os usuários e os administradores a rastrear e entender melhor os componentes em seu ambiente do Analytics.
-* [**Intervalos de datas:**](date-ranges/create.md) personalize e refine os intervalos de datas nas ofertas do Analysis Workspace.
+* [**Intervalos de datas**](date-ranges/create.md): personalize e refine os intervalos de datas que o Analysis Workspace oferece.
 * [**Dimension**](/help/components/dimensions/view-dimensions.md): Dimension são variáveis que normalmente contêm valores de cadeias de caracteres. As dimensões comuns incluem Página e Domínio referenciador.
 * [**Métricas**](/help/components/apply-create-metrics.md): permite quantificar os pontos de dados no Analysis Workspace.
-* [**Projetos:**](/help/analysis-workspace/home.md) organize e mantenha seus projetos no Analysis Workspace.
+* [**Projetos**](/help/analysis-workspace/home.md): organize e mantenha seus projetos no Analysis Workspace.
 
 ## Componentes do Analysis Workspace
 
@@ -51,7 +52,7 @@ Há várias maneiras de gerenciar componentes (individualmente ou ao selecionar 
 | Ação de componente | Descrição |
 | --- | --- |
 | Tag | Organize ou gerencie componentes aplicando tags. Em seguida, ele é exibido no respectivo gerenciador de componente, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Filtros] ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos] |
-| Adicionar aos favoritos | Adicione o componente à sua lista de favoritos. Em seguida, ele é exibido no respectivo gerenciador de componente, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Filtros] ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos]. |
+| Marcar como favorito | Adicione o componente à sua lista de favoritos. Em seguida, ele é exibido no respectivo gerenciador de componente, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Filtros] ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos]. |
 | Aprovar | Aprove o componente para torná-lo canônico. Em seguida, ele é exibido no respectivo gerenciador de componente, como [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Filtros] ou [!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos] |
 | Compartilhar | Aplicado somente a filtros. |
 | Excluir | Aplicado somente a filtros. |
@@ -105,7 +106,7 @@ Pesquise, filtre e classifique a lista de componentes no painel esquerdo do Anal
 
 1. Selecione o ícone de **Componentes**, ![Ícone de componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg), no painel esquerdo.
 
-2. Selecione o ícone de **Filtro** ![Ícone de filtro do dicionário de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
+2. Selecione o **Filtro** ícone ![Ícone Filtro do dicionário de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
 
    Ou
 

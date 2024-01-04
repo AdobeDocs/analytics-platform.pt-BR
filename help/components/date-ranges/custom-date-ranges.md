@@ -4,9 +4,10 @@ keywords: Analysis Workspace
 title: Criar intervalos de datas personalizados
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '290'
 ht-degree: 85%
 
 ---
@@ -43,7 +44,7 @@ Por exemplo, você pode criar um intervalo de datas que especifica uma janela de
 
 ![Construtor de intervalo de datas mostrando um intervalo de datas que especifica uma janela de rolagem de 7 dias.](assets/create_date_range.png)
 
-Use *`rolling daily`*.
+Uso *`rolling daily`*.
 
 * As configurações de Início seriam *`current day minus 14 days`*.
 

@@ -2,10 +2,12 @@
 description: Há duas formas de utilizar as métricas no Analysis Workspace.
 title: Métricas
 feature: Components
-source-git-commit: 6f3ae14e4d34de17ed64ae30cee4611e4d6f3226
+exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '395'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -18,14 +20,14 @@ No Gerenciador de agendamento de projetos, é possível editar e excluir agendam
 | Campo | Descrição |
 | --- | --- |
 | [!UICONTROL Favoritos] | Selecionar o ícone de estrela torna esta programação uma favorita. |
-| [!UICONTROL ID de agendamento] | Essa ID é usada principalmente para fins de depuração. |
+| [!UICONTROL ID da programação] | Essa ID é usada principalmente para fins de depuração. |
 | [!UICONTROL Título e descrição] | Título e descrição deste projeto. |
 | [!UICONTROL Proprietário] | A pessoa que criou e é proprietária do projeto. |
 | [!UICONTROL Tags] | (opcional) Adicionar tags é uma boa maneira de organizar projetos. Todos os usuários podem criar tags e aplicar uma ou mais tags a um projeto. No entanto, é possível visualizar tags somente para os projetos que você possui ou que foram compartilhados com você. |
-| [!UICONTROL Entregue para] | O(s) recipient(s) deste projeto programado. |
+| [!UICONTROL Entregue para] | O(s) destinatário(s) deste projeto programado. |
 | [!UICONTROL Data de validade] | Você pode definir a data de expiração como até um ano, independentemente da frequência do agendamento. |
-| [!UICONTROL Frequência] | Com que frequência deseja que esse projeto programado seja enviado ao(s) recipient(s). |
-| [!UICONTROL Tempo de execução] | Em que hora do dia esse projeto programado é enviado. |
+| [!UICONTROL Frequência] | Com que frequência deseja que esse projeto programado seja enviado ao(s) destinatário(s). |
+| [!UICONTROL Tempo de execução] | Em que hora do dia esse projeto programado será enviado. |
 | [!UICONTROL Número de consultas] | O número de consultas relativas a este projeto. |
 
 As ações a seguir são comuns no Gerenciador de projetos programados:

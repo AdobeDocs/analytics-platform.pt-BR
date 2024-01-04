@@ -4,9 +4,10 @@ description: Explique como assimilar e usar dados de transmissão no Customer Jo
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '2026'
+source-wordcount: '1994'
 ht-degree: 85%
 
 ---
@@ -49,8 +50,7 @@ Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
-1. Selecione **[!UICONTROL Criar esquema]**.
-.
+1. Selecionar **[!UICONTROL Criar esquema]**. .
 1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
    1. Selecionar **[!UICONTROL Perfil individual]**.

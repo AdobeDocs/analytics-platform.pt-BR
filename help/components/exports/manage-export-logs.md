@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Gerenciar logs de exportação
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 7%
+source-wordcount: '837'
+ht-degree: 4%
 
 ---
 
@@ -56,7 +57,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de logs
    | Filtro | Descrição |
    |---------|----------|
    | [!UICONTROL **ID de exportação**] | Especifique a ID de exportação do log de exportação que deseja exibir. |
-   | [!UICONTROL **Tipo de conta**] | O tipo de conta à qual o log está associado. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Tipo de conta**] | O tipo de conta à qual o log está associado. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de destino de dados da AEP**]</li><li>[!UICONTROL **ARN de função do Amazon S3**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **RBAC do Azure**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Pending**]: uma instância específica de uma exportação foi iniciada, mas ainda não está concluída.<p>Executar novamente uma exportação com status Pendente atrasará o processo de exportação.</p></li><li>[!UICONTROL **Concluído**]: uma instância específica de uma exportação terminou de ser processada e está disponível na conta de exportação.</li><li>[!UICONTROL **Falha**]<p>Várias situações podem resultar em falha na exportação. Passe o mouse sobre o status Falha para ver detalhes sobre a falha.<p>Para obter mais informações sobre os possíveis motivos para uma falha, consulte [Solução de problemas de exportações com falha](/help/components/exports/troubleshoot-exports.md).</p> |
 
    {style="table-layout:auto"}

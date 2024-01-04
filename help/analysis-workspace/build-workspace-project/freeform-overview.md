@@ -4,10 +4,11 @@ keywords: Analysis Workspace
 title: Visão geral dos Projetos
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
-source-git-commit: 16f1a732260ace8393d7303134fc351740fd1661
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1371'
-ht-degree: 72%
+source-wordcount: '1336'
+ht-degree: 69%
 
 ---
 
@@ -29,7 +30,7 @@ A página Projetos contém as seguintes informações:
 
 | Elemento | Descrição |
 |---|---|
-| [Editar preferências](/help/analysis-workspace/user-preferences.md) | Gerencie as configurações do Analysis Workspace e seus componentes relacionados para todos os novos projetos ou painéis criados por você. |
+| [Editar preferências](/help/analysis-workspace/user-preferences.md) | Gerencie configurações para o Analysis Workspace e seus componentes relacionados para todos os novos projetos ou painéis que você criar. |
 | [Criar pasta](/help/analysis-workspace/build-workspace-project/workspace-folders/create-folders.md) | Adicione uma nova pasta ou subpasta à lista de projetos e pastas. |
 | [Criar projeto](/help/analysis-workspace/build-workspace-project/create-projects.md) | Inicie um novo projeto do zero. |
 | Mostrar mais | Revela opções para criar um projeto em branco ou cartão de pontuação móvel, [exibição de tutoriais de treinamento](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analysis-workspace-basics/analysis-workspace-introduction.html?lang=pt-BR)ou [exibição das notas de versão](/help/release-notes/latest.md). |
@@ -77,8 +78,8 @@ As configurações incluem:
 
 | Configuração | Descrição |
 |---|---|
-| Projeto  Nome | O nome fornecido ao projeto. Você pode clicar duas vezes no nome para editá-lo. |
-| Criada por | Nome do proprietário do projeto. |
+| Nome do projeto | O nome fornecido ao projeto. Você pode clicar duas vezes no nome para editá-lo. |
+| Criado por | Nome do proprietário do projeto. |
 | Última modificação | Data da última modificação do projeto. |
 | Tags | Lista qualquer tag aplicada a um projeto para classificar com mais facilidade. |
 | Descrição | Uma descrição é útil para esclarecer a finalidade de um projeto. Você pode clicar duas vezes na descrição para editá-la. |

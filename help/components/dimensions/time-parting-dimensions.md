@@ -3,10 +3,11 @@ description: A separação de tempo coleta o carimbo de data e hora de eventos c
 title: Dimensões de separação de tempo
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
-source-git-commit: 3f1112ebd2a4dfc881ae6cb7bd858901d2f38d69
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 61%
+source-wordcount: '196'
+ht-degree: 62%
 
 ---
 

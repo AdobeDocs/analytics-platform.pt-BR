@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: a67c12a7b5244b7802eba2cbcbfdb320802d088b
-workflow-type: ht
-source-wordcount: '1488'
-ht-degree: 100%
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Exemplos de identidades podem ser uma ID do cliente, ID da conta ou ID de email.
 * A ID não contém PII. Aplique hash a qualquer item que possa ser sensível.
 * A ID usa o mesmo formato em todas as fontes (mesmo comprimento, mesmo método de hash etc.)
 
-Em conjuntos de dados como o Adobe Analytics, uma identidade pode não existir em todas as linhas de dados, mas uma identidade secundária sim. Nesse caso, o Análise de vários canais (anteriormente conhecida como &quot;Configuração em campo&quot;) pode ser usada para preencher a lacuna entre linhas, quando um cliente é identificado apenas pela ECID e quando uma identidade é coletada (por exemplo, quando um cliente é autenticado). [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/cca/overview.html?lang=pt-BR)
+Em conjuntos de dados como o Adobe Analytics, uma identidade pode não existir em todas as linhas de dados, mas uma identidade secundária sim. Nesse caso, a Análise entre canais (também conhecida como &quot;Configuração&quot;) pode ser usada para preencher a lacuna entre linhas, quando um cliente é identificado apenas pela ECID e quando uma identidade é coletada (por exemplo, quando um cliente é autenticado). [Saiba mais](../stitching/overview.md).
 
 ### 2. Alinhar suas variáveis {#variables}
 
@@ -71,7 +71,7 @@ Esse método amplia muito as possibilidades de coleta de dados: não há mais um
 * Esquema flexível para definir qualquer campo necessário
 * Não depende da nomenclatura do Adobe Analytics (propriedades, eVar, evento etc.)
 * Nenhum problema de limite de caracteres (100 caracteres para propriedades)
-* Disponibilidade de dados mais rápida na Adobe Experience Platform para possibilitar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=pt-BR)
+* Disponibilidade de dados mais rápida no Adobe Experience Platform para ligar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=pt-BR)
 * [IDs de dispositivo próprio](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=pt-BR) para melhorar a precisão da identificação do visitante
 
 **Desvantagens de usar SDKs da Experience Platform**

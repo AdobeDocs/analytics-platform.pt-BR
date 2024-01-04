@@ -5,9 +5,11 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hide: true
 hidefromtoc: true
-source-git-commit: ec2778396f5090fb2ce71a991aa7a7bcaa913762
+exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1755'
 ht-degree: 15%
 
 ---
@@ -94,7 +96,7 @@ Para cada componente, são fornecidos o nome, o tipo de esquema, o caminho do es
 | Formulário iniciado | Sequência de caracteres | `web.fillOutForm.webFormName` | |
 | Clientes potenciais | Sequência de caracteres | eventType | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `leadOperation.newLead` |
 | Oportunidade atualizada | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `opportunityEvent.opportunityUpdated` |
-| Preço | Duplo | *_organizationID*`.interactions.products.price` |  |
+| Preço | Dupla | *_organizationID*`.interactions.products.price` |  |
 | Prioridade | Número inteiro | `leadOperation.changeScore.priority` |  |
 | Adicionar lista de produção | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `commerce.productListAdds.value` |
 | Abrir lista de produção | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `commerce.productListOpens.value` |
@@ -160,8 +162,8 @@ Nenhum componente de métrica é definido como parte desse conjunto de dados.
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
-| Receita esperada | Duplo | `expectedRevenue.amount` | Comportamento: **[!UICONTROL Contar valores]** |
-| Valor da oportunidade | Duplo | `opportunityAmount.amount` | Comportamento: **[!UICONTROL Contar valores]** |
+| Receita esperada | Dupla | `expectedRevenue.amount` | Comportamento: **[!UICONTROL Contar valores]** |
+| Valor da oportunidade | Dupla | `opportunityAmount.amount` | Comportamento: **[!UICONTROL Contar valores]** |
 | Estágio da Oportunidade - Livro Fechado | Sequência de caracteres | `opportunityStage` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `Closed - Booked` |
 | Estágio da oportunidade - Cliente potencial | Sequência de caracteres | `opportunityStage` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `Prospect` |
 | Estágio da oportunidade - qualificação | Sequência de caracteres | `opportunityStage` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `Opportunity Qualification` |
@@ -194,7 +196,7 @@ Nenhum componente de métrica é definido como parte desse conjunto de dados.
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
-| Custo da campanha | Duplo | `actualCost.amount` | |
+| Custo da campanha | Dupla | `actualCost.amount` | |
 
 {style="table-layout:auto"}
 
@@ -221,7 +223,7 @@ Nenhum componente de métrica é definido como parte desse conjunto de dados.
 
 | Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
 |---|---|---|---|
-| Receita anual | Duplo | `accountOrganization.annualRevenue.amount` | |
+| Receita anual | Dupla | `accountOrganization.annualRevenue.amount` | |
 | Número de funcionários | Número inteiro | `accountOrganization.numberOfEmployees` | |
 
 {style="table-layout:auto"}
@@ -307,4 +309,3 @@ Veja abaixo um exemplo de projeto que depende da conexão e da visualização de
 ![Visualizações](assets/visualizations.png)
 
 +++
-

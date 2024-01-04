@@ -4,10 +4,11 @@ description: Um método de análise de dados em Customer Journey Analytics que p
 keywords: análise do produto
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
-source-git-commit: f99d1ce1881cd1ed3262fa3d2b2a9e16f84aa288
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 8%
+ht-degree: 2%
 
 ---
 
@@ -24,13 +25,13 @@ A análise guiada categoriza os tipos de visualização em **Tipos de análise**
 | Tipo de análise | Tipo de visualização | Descrição |
 | --- | --- | --- |
 | [!UICONTROL Impacto] | [Versão](types/release.md) | Compare o desempenho em períodos iguais antes e depois do lançamento. |
-| [!UICONTROL Impacto] | [Primeiro uso](types/first-use.md) | Medir o impacto do uso de recursos pela primeira vez em indicadores-chave. |
-| [!UICONTROL Funil] | [Atrito](types/friction.md) | Comparar taxas de conversão entre etapas. |
-| [!UICONTROL Funil] | [Tendências de conversão](types/conversion-trends.md) | Acompanhe as alterações nas taxas de conversão ao longo do tempo. |
-| [!UICONTROL Crescimento de usuários] | [Ativo](types/active.md) | Identifique quem é novo, retido, recorrente ou inativo. |
-| [!UICONTROL Crescimento de usuários] | [Crescimento líquido](types/net-growth.md) | Você está ganhando ou perdendo usuários? |
-| [!UICONTROL Tendências] | [Uso](types/usage.md) | Medir o engajamento do usuário ao longo do tempo. |
-| [!UICONTROL Tendências] | [Frequência](types/frequency.md) | Meça o engajamento pela frequência de uso. |
+| [!UICONTROL Impacto] | [Primeira utilização](types/first-use.md) | Meça o impacto do uso de recursos pela primeira vez nos indicadores principais. |
+| [!UICONTROL Funil] | [Fricção](types/friction.md) | Comparar taxas de conversão entre etapas. |
+| [!UICONTROL Funil] | [Tendências de conversão](types/conversion-trends.md) | Rastreie as alterações nas taxas de conversão ao longo do tempo. |
+| [!UICONTROL Crescimento do usuário] | [Ativo](types/active.md) | Identifique quem é novo, está retido, retornando ou está inativo. |
+| [!UICONTROL Crescimento do usuário] | [Crescimento líquido](types/net-growth.md) | Você está ganhando ou perdendo usuários? |
+| [!UICONTROL Tendências] | [Uso](types/usage.md) | Meça o engajamento do usuário ao longo do tempo. |
+| [!UICONTROL Tendências] | [Frequência](types/frequency.md) | Meça o engajamento por frequência de uso. |
 
 {style="table-layout:auto"}
 

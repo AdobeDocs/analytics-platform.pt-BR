@@ -4,10 +4,11 @@ description: Use o conector de origem do Analytics para trazer regras de process
 exl-id: d1739b7d-3410-4c61-bb08-03dd4161c529
 solution: Customer Journey Analytics
 feature: Use Cases
-source-git-commit: a49ef8b35b9d5464df2c5409339b33eacb90cd9c
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 63%
+source-wordcount: '985'
+ht-degree: 61%
 
 ---
 
@@ -54,7 +55,7 @@ As configurações do canal de marketing operam de forma diferente entre os dado
   ![Primeira página da visita](../assets/first-page-of-visit.png)
 
 * **Substituir canal de último contato**: essa configuração no Gerenciador de canal de marketing normalmente impede que determinados canais obtenham crédito do canal de último contato. A Plataforma ignora essa configuração, permitindo que canais amplos como “Direto” ou “Interno” atribuam métricas de maneiras possivelmente indesejadas. A Adobe recomenda remover canais em que a opção “Substituir Canal de último contato” está desmarcada.
-   * Você pode excluir o canal de marketing &quot;Direto&quot; no Gerenciador de canal de marketing e, em seguida, confiar no item de dimensão &quot;Nenhum valor&quot; do Customer Journey Analytics para esse canal. Também é possível renomear esse item de dimensão como “Direto” ou excluir o item de dimensão totalmente ao configurar uma visualização de dados.
+   * Você pode excluir o canal de marketing &quot;Direto&quot; no Gerenciador de canal de marketing e, em seguida, recorrer ao item de dimensão &quot;Nenhum valor&quot; do Customer Journey Analytics para esse canal. Também é possível renomear esse item de dimensão como “Direto” ou excluir o item de dimensão totalmente ao configurar uma visualização de dados.
    * Como alternativa, você pode criar uma classificação de canal de marketing, classificando cada valor para si mesmo, exceto os canais que você deseja excluir no Customer Journey Analytics. Você pode usar essa dimensão de classificação ao criar uma visualização de dados em vez de `channel.typeAtSource`.
 
   ![Substituir o canal de último contato](../assets/override-last-touch-channel.png)

@@ -3,9 +3,10 @@ title: Regras de processamento, VISTA e classificações em comparação ao prep
 description: Saiba mais sobre a transformação de dados usando regras de processamento e VISTA em comparação ao uso do Preparo de dados
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
-source-git-commit: 59aabb38ea3e5ba1501ab8da11d14ea2385d8a6b
-workflow-type: ht
-source-wordcount: '619'
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+workflow-type: tm+mt
+source-wordcount: '546'
 ht-degree: 100%
 
 ---

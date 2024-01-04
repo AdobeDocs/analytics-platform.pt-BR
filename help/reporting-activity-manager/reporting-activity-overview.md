@@ -3,18 +3,20 @@ title: Visão geral do Gerenciador de atividades de relatórios
 description: Saiba mais sobre como usar o Gerente de atividade de relatórios para diagnosticar e corrigir problemas de capacidade durante o pico dos relatórios.
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 252b9849b904754fcf5841df51d01510ba9df53f
+exl-id: c3964147-06f1-462a-aea1-e681c4ef15b1
+role: Admin
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 23%
+ht-degree: 15%
 
 ---
 
-# Gerenciador de Atividades de relatórios visão geral
+# Visão geral do Gerenciador de atividades de relatórios
 
 A variável [!UICONTROL Gerenciador de atividades de relatórios] O está disponível para administradores do.
 
-Se a sua organização sofrer uma degradação no desempenho dos relatórios durante o pico dos relatórios, o Gerenciador de atividades de relatórios permitirá que você faça um autodiagnóstico e corrija problemas de capacidade sem a intervenção do Atendimento ao cliente do Adobe. Você pode gerenciar facilmente as filas de relatórios em uma única interface e agir imediatamente para melhorar a experiência dos usuários.
+Se a sua organização sofrer uma degradação no desempenho dos relatórios durante o pico dos relatórios, o Gerenciador de atividades de relatórios permitirá que você faça um autodiagnóstico e corrija problemas de capacidade sem a intervenção do Atendimento ao cliente do Adobe. Você pode gerenciar facilmente as filas de relatórios em uma única interface e agir imediatamente&#x200B;&#x200B; para melhorar a experiência dos usuários.
 
 ## Benefícios
 

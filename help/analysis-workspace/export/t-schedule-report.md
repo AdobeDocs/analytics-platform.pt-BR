@@ -5,10 +5,11 @@ title: Enviar dados de Customer Journey Analytics para outras pessoas por e-mail
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
-source-git-commit: 88cbea4ebebe68314a5de471bdf13a4d7760db0e
+role: User
+source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 58%
+source-wordcount: '1018'
+ht-degree: 55%
 
 ---
 
@@ -81,7 +82,7 @@ As ações a seguir são comuns no Gerenciador de projetos programados:
 | **[!UICONTROL Exibir programações expiradas]** | Acesse o painel esquerdo > Outros filtros > Expirado para ver as programações que expiraram. Clique no título da programação para configurar uma nova programação de entrega. |
 | **[!UICONTROL Exibir ID de programação]** | Acesse as opções de coluna na parte superior direita e adicione a coluna ID de programação à tabela. A ID programada geralmente é útil para depuração. |
 
-O Gerenciador de agendamento de projetos mostra os itens criados por um usuário específico. Se a conta de usuário for desabilitada no aplicativo, todas as entregas programadas serão interrompidas.
+O Gerenciador de agendamento de projetos mostra os itens criados por um usuário específico. Se a conta de usuário estiver desativada no aplicativo, todas as entregas programadas são interrompidas.
 Para obter mais informações, consulte [Projetos agendados](/help/components/scheduled-projects-manager.md).
 
 ## Proteger com senha um projeto agendado {#password}
