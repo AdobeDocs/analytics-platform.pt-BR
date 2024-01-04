@@ -4,10 +4,11 @@ description: Explicar como assimilar dados no Customer Journey Analytics por mei
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
-source-git-commit: caf2db9ae0b550ce47fa196a955fcceddf8bf2b7
+role: Admin
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '2353'
-ht-degree: 60%
+source-wordcount: '2351'
+ht-degree: 59%
 
 ---
 
@@ -53,8 +54,7 @@ Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
-1. Selecione **[!UICONTROL Criar esquema]**.
-.
+1. Selecionar **[!UICONTROL Criar esquema]**. .
 1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
    1. Selecionar **[!UICONTROL Evento de experiência]**.
@@ -101,6 +101,10 @@ Para configurar o esquema:
    ![Botão Adicionar campo de esquema de exemplo](./assets/example-gamingschema-plus.png)
 
 1. No [!UICONTROL Propriedades do campo] , insira `identification` como o [!UICONTROL Nome do campo], **[!UICONTROL Identificação]** como o [!UICONTROL Nome de exibição], selecione **[!UICONTROL Objeto]** como o [!UICONTROL Tipo] e selecione **[!UICONTROL ExperienceEvent Core v2.1]** como o [!UICONTROL Grupo de campos].
+
+   >[!NOTE]
+   >
+   >Se esse grupo de campos não estiver disponível, procure outro grupo de campos que contenha campos de identidade. Ou [criar um novo grupo de campos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) e [adicionar novos campos de identidade](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (como `ecid`, `crmId`, e outras necessárias) ao grupo de campos e selecione esse novo grupo de campos.
 
    ![Objeto de identificação](./assets/identification-field-gaming.png)
 
@@ -228,7 +232,7 @@ Para configurar seu armazenamento de dados:
 
 Sua sequência de dados agora está configurada para encaminhar os dados coletados do jogo para seu conjunto de dados no Adobe Experience Platform.
 
-Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
+Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
 
 ## Usar API do Servidor de Rede de Borda
 

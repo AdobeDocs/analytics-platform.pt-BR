@@ -4,10 +4,11 @@ description: Explique como assimilar dados no Customer Journey Analytics por mei
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+role: Admin
+source-git-commit: 59da35ddbdf06da354af4ab469a357caae41bd26
 workflow-type: tm+mt
-source-wordcount: '3616'
-ht-degree: 85%
+source-wordcount: '3603'
+ht-degree: 84%
 
 ---
 
@@ -53,8 +54,7 @@ Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
-1. Selecione **[!UICONTROL Criar esquema]**.
-.
+1. Selecionar **[!UICONTROL Criar esquema]**. .
 1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
    1. Selecionar **[!UICONTROL Evento de experiência]**.
@@ -101,6 +101,10 @@ Para configurar o esquema:
    ![Botão Adicionar campo de esquema de exemplo](./assets/example-schema-plus.png)
 
 1. No painel [!UICONTROL Propriedades do campo], digite `Identification` como nome, **[!UICONTROL Identificação]** como [!UICONTROL Nome de exibição], selecione **[!UICONTROL Objeto]** como [!UICONTROL Tipo] e selecione **[!UICONTROL ExperienceEvent Core v2.1]** como [!UICONTROL Grupo de campos].
+
+   >[!NOTE]
+   >
+   >Se esse grupo de campos não estiver disponível, procure outro grupo de campos que contenha campos de identidade. Ou [criar um novo grupo de campos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=en) e [adicionar novos campos de identidade](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#define-a-identity-field) (como `ecid`, `crmId`, e outras necessárias) ao grupo de campos e selecione esse novo grupo de campos.
 
    ![Objeto de identificação](./assets/identification-field.png)
 
@@ -228,7 +232,7 @@ Para configurar seu armazenamento de dados:
 
 O conjunto de dados agora está configurado para encaminhar os dados coletados de seu site para seu conjunto de dados na Adobe Experience Platform.
 
-Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
+Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=en) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
 
 
 
