@@ -4,9 +4,9 @@ description: Saiba mais sobre as medidas de proteção para o Customer Journey A
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: affe7fe57ba59a15458263afabe2715d4c5da5fe
+source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1478'
 ht-degree: 10%
 
 ---
@@ -210,8 +210,9 @@ Consulte também Experience Platform [Medidas de proteção para a assimilação
 | Conector de origem do Adobe Analytics para Perfil do cliente em tempo real (A4T não ativado) | &lt; 2 minutos |
 | Conector de origem do Adobe Analytics para Perfil do cliente em tempo real (habilitado para A4T) | &lt; 30 minutos |
 | Assimilação de dados no Data Lake pela Rede de borda ou assimilação por transmissão | &lt; 60 minutos |
-| Assimilação de dados no Data Lake pelo conector de origem do Adobe Analytics | &lt; 90 minutos |
+| Assimilação de dados no Data Lake pelo conector de origem do Adobe Analytics | &lt; 2,25 horas |
 | Assimilação de dados no Customer Journey Analytics a partir do Data Lake | &lt; 90 minutos |
+| Costura (recurso opcional; consulte [Visão geral da compilação](../stitching/overview.md) para obter mais informações) | &lt; 3,25 horas |
 | Preenchimento retroativo do conector de origem do Adobe Analytics de menos de 10 bilhões de eventos (máximo de 13 meses de dados históricos) | &lt; 4 semanas |
 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados. | aprox. 60 minutos |
 | Atualizar frequência dos públicos | Atualização única: latência inferior a 5 minutos.<br/>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização). |
