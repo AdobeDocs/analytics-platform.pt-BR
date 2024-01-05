@@ -6,9 +6,9 @@ feature: Use Cases
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 77f3c1c0f179ede05d9a10c50f74184953a16a84
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2558'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ Como alternativa, você pode usar `identityMap` para consultar identidades. Este
 
 Os campos XDM que você pode usar no query dependem da definição de esquema em que seus conjuntos de dados se baseiam. Entenda o esquema subjacente ao conjunto de dados.
 
-Para facilitar o mapeamento entre as colunas do Feed de dados e os campos XDM, considere incluir o [Modelo de evento de experiência do Adobe Analytics](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) grupo de campos no esquema de evento de experiência. Consulte [Práticas recomendadas para modelagem de dados](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) e mais especificamente [Grupos de campos de esquema do aplicativo Adobe](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
+Para definir o mapeamento entre as colunas do Feed de dados e os campos XDM, você deve considerar inspecionar e possivelmente (re)usar alguns aspectos da [Modelo de evento de experiência do Adobe Analytics](https://github.com/adobe/xdm/blob/master/extensions/adobe/experience/analytics/experienceevent-all.schema.json) grupo de campos. Consulte [Práticas recomendadas para modelagem de dados](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) e mais especificamente [Grupos de campos de esquema do aplicativo Adobe](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en#adobe-application-schema-field-groups).
 
 Por exemplo, caso deseje usar *nome da página* como parte do feed de dados:
 
