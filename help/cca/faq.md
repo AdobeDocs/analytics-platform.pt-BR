@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1057'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ A compilação em tempo real está disponível aproximadamente uma semana depois
 
 [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=pt-BR) é um recurso específico do Adobe Analytics tradicional que permite compreender como as pessoas operam em dispositivos. Ela oferece dois workflows para vincular dados do dispositivo: compilação em campo e gráfico do dispositivo.
 
-[Análise entre canais](/help/stitching/overview.md) é um recurso específico do Customer Journey Analytics que permite compreender como as pessoas operam em dispositivos e canais. Ela faz o rechaveamento da ID de pessoa de um conjunto de dados, permitindo que este seja combinado perfeitamente com outros conjuntos de dados. Esse recurso funciona de forma semelhante à compilação baseada em campos da análise entre dispositivos, mas a implementação difere devido às distintas arquiteturas de dados do Adobe Analytics e do Customer Journey Analytics.
+A [Análise de vários canais](/help/stitching/overview.md) é um recurso específico do Customer Journey Analytics que permite entender como as pessoas operam em diversos dispositivos e canais. Ela faz o rechaveamento da ID de pessoa de um conjunto de dados, permitindo que este seja combinado perfeitamente com outros conjuntos de dados. Esse recurso funciona de forma semelhante à compilação baseada em campos da análise entre dispositivos, mas a implementação difere devido às distintas arquiteturas de dados do Adobe Analytics e do Customer Journey Analytics.
 
 ## Como o Cross-Channel Analytics lida com solicitações do GDPR e CCPA?
 
