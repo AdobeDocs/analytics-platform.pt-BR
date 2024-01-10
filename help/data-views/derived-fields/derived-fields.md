@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1d248ebfef9c5f31662f74535a005b6cd7ccea15
 workflow-type: tm+mt
-source-wordcount: '5783'
+source-wordcount: '5933'
 ht-degree: 12%
 
 ---
@@ -1280,6 +1280,34 @@ As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 - Você pode usar no máximo dez campos de esquema diferentes (sem incluir campos padrão) ao definir regras para um campo derivado.
    - A partir desse máximo de dez campos de esquema diferentes, somente um máximo de três campos de esquema de pesquisa ou esquema de perfil são permitidos.
 - Você pode ter no máximo 100 campos derivados por conexão Customer Journey Analytics.
+
+
+### Resumo dos limites de função
+
+| Função | Limites |
+|---|---|
+| <p>Caso Quando</p> | <ul><li>5 Caso Quando funções por campo derivado</li><li>200 operadores por campo derivado</li></ul> |
+| <p>Classificar</p> | <ul><li>5 Classificar funções por campo derivado</li><li>100 linhas por função</li></ul> |
+| <p>Concatenar</p> | <ul><li>2 Funções concatenadas por campo derivado</li></ul> |
+| <p>Localizar e Substituir</p> | <ul><li>2 Funções Localizar e Substituir por campo derivado</li></ul> |
+| <p>Pesquisa</p> | <ul><li>5 Funções de pesquisa por campo derivado</li></ul> |
+| <p>Minúsculas</p> | <ul><li>2 funções em minúsculas por campo derivado</li></ul> |
+| <p>Mesclar campos</p> | <ul><li>2 funções Mesclar campos por campo derivado</li></ul> |
+| <p>Substituição de regex</p> | <ul><li>1 função Replace de Regex por campo derivado</li></ul> |
+| <p>Dividir</p> | <ul><li>5 Funções de divisão por campo derivado</li></ul> |
+| <p>Aparar</p> | <ul><li>1 função Trim por campo derivado</li></ul> |
+| <p>Análise de URL</p> | <ul><li>5 funções de análise de URL por campo derivado</li></ul> |
+
+{style="table-layout:auto"}
+
+### Operadores
+
+Um operador em uma construção If ou Else If em uma função Case When é a combinação de um critério com **um** valor. Cada valor adicional para o critério adiciona ao número de operadores.
+
+Como exemplo, a condição abaixo usa 13 operadores.
+
+![Operadores de amostra](assets/operators-sample.png)
+
 
 ## Mais informações
 
