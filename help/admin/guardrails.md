@@ -4,9 +4,9 @@ description: Saiba mais sobre as medidas de proteção para o Customer Journey A
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
-source-git-commit: f436084d71f19e9cf3dd67287e510e07586d58f6
+source-git-commit: 85aea47146d4079606ccdeb1bcc29d41bbf49837
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1480'
 ht-degree: 10%
 
 ---
@@ -76,7 +76,7 @@ Alguns dos recursos e seu valor associado para o limite dependem do pacote de Cu
 | Frequência de atualização de público | 4 | Proteção imposta pelo sistema | Frequência máxima em horas e [público](../components/audiences/audiences-overview.md) pode ser atualizado. | |
 | Janela de retrospectiva de atualização de público | 90 | Proteção imposta pelo sistema | Número máximo de dias para a janela de retrospectiva de atualização. |
 | Atualização da data de expiração do público-alvo | 13 | Proteção imposta pelo sistema | Número máximo de meses em que o público-alvo deixa de ser atualizado a partir da data de criação. Os clientes podem estender isso por mais 13 meses. |
-| Número de públicos-alvo de atualização | 75, 100, 150 | Proteção imposta pelo sistema | Número máximo de públicos-alvo de atualização. O valor varia de acordo com o pacote. |
+| Número de públicos-alvo de atualização | 75, 100 | Proteção imposta pelo sistema | Número máximo de públicos-alvo de atualização, o valor varia dependendo do pacote (consulte a Descrição do produto). |
 
 {style="table-layout:auto"}
 
