@@ -4,16 +4,26 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 6ae65a3356df4ce1b72cd30b055d4db734488235
 workflow-type: tm+mt
-source-wordcount: '2756'
-ht-degree: 91%
+source-wordcount: '2781'
+ht-degree: 90%
 
 ---
 
 # Customer Journey Analytics - atualizações de documentação
 
 Foram feitas as seguintes atualizações na documentação do Customer Journey Analytics desde a sua introdução.
+
+## 2024
+
+| Recurso | Descrição |
+| --- | --- |
+| **Janeiro de 2024** | |
+| Campos derivados | Adição do resumo da função [limitações](/help/data-views/derived-fields/derived-fields.md#limitations) e explicações sobre como determinar o número de [operadores](/help/data-views/derived-fields/derived-fields.md#operators) usado em uma função. |
+
+{style="table-layout:auto"}
+
 
 ## 2023
 
@@ -94,6 +104,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Página de destino | Novas atualizações da [página de destino](/help/getting-started/landing.md). |
 | Programar pastas de trabalho | Página dedicada para descrever como [Programar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) no Report Builder. |
 | Compatibilidade da array de objetos com conjuntos de dados de perfil e pesquisa | Atualização do [Uso de arrays de objetos](/help/use-cases/object-arrays.md) e da [Assimilação de públicos-alvo da Adobe Experience Platform](/help/use-cases/data-ingestion/ingest-aep-segments.md) para refletir a compatibilidade de arrays de objetos com conjuntos de dados de perfil e pesquisa. |
+
+{style="table-layout:auto"}
 
 ## 2022
 
