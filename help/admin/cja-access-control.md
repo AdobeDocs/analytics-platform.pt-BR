@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 05bd88ea215d0b41c58221b42581a8fd09a019b3
+source-git-commit: 75413a38b9291cc8c31de3f2389ae74a31e7b00c
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 76%
+source-wordcount: '942'
+ht-degree: 78%
 
 ---
 
@@ -93,7 +93,7 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto em [Admi
 | **[!UICONTROL Acesso aos logs de auditoria]** | Essa permissão impõe a verificação de permissão na [API](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) e na interface dos logs de auditoria. |
 | **[!UICONTROL Administrador de uso de relatórios]** | Permite que os usuários visualizem e excluam qualquer relatório em execução em sua empresa. |
 | **[!UICONTROL Exibição do uso de relatórios]** | Permite que os usuários vejam todas as solicitações de relatórios simultâneas. |
-| [!UICONTROL **Exportação de tabela completa**] | Permite que os usuários [exportar tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md). <p>Para obter informações sobre como adicionar acesso de Destinos para usuários do Customer Journey Analytics no Adobe Experience Platform, consulte [Destinos e controle de acesso](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en#access-controls) in [Visão geral dos destinos](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en)</p> |
+| [!UICONTROL **Exportação de tabela completa**] | Permite que os usuários [exportar tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
 | **[!UICONTROL Criação de métricas calculadas]** | Permite que os usuários criem [métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Criação de filtros]** | Permite que os usuários criem [filtros](/help/components/filters/filters-overview.md). |
 | **[!UICONTROL Acesso ao Labs]** | Permite que os usuários acessem o [Labs](/help/labs/labs.md) no Customer Journey Analytics. |
