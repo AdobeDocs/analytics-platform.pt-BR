@@ -4,9 +4,9 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 6ae65a3356df4ce1b72cd30b055d4db734488235
+source-git-commit: 9beeb2013eb3b94dc55fb721233096f1813e2bf3
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2792'
 ht-degree: 90%
 
 ---
@@ -20,6 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Janeiro de 2024** | |
+| Gerenciar conexões | Atualização do [Gerenciar conexões](../connections/manage-connections.md) artigo, com base no feedback dos clientes. |
 | Campos derivados | Adição do resumo da função [limitações](/help/data-views/derived-fields/derived-fields.md#limitations) e explicações sobre como determinar o número de [operadores](/help/data-views/derived-fields/derived-fields.md#operators) usado em uma função. |
 
 {style="table-layout:auto"}
