@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 60%
+source-wordcount: '393'
+ht-degree: 58%
 
 ---
 
@@ -26,7 +26,7 @@ Use o [conector do Marketo Engage](https://experienceleague.adobe.com/docs/exper
 
 ## Etapa 3: Configurar uma conexão com esse conjunto de dados no Customer Journey Analytics
 
-Para criar relatórios sobre conjuntos de dados de Experience Platform, primeiro é necessário estabelecer uma conexão entre os conjuntos de dados em Experience Platform e Customer Journey Analytics. Encontre mais informações em [Criar uma conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR).
+Para criar relatórios sobre conjuntos de dados de Experience Platform, primeiro é necessário estabelecer uma conexão entre os conjuntos de dados em Experience Platform e Customer Journey Analytics. Consulte para obter mais informações [Criar ou editar uma conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR).
 
 ## Etapa 4: Criar uma ou mais visualizações de dados
 

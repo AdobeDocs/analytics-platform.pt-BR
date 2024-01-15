@@ -1,18 +1,18 @@
 ---
-title: Criar uma conexão
-description: Descreve como criar uma conexão com um conjunto de dados da Plataform no Customer Journey Analytics.
+title: Criar ou editar uma conexão
+description: Descreve como criar ou editar uma conexão com um conjunto de dados Experience Platform no Customer Journey Analytics.
 exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '2741'
-ht-degree: 100%
+source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 99%
 
 ---
 
-# Criar uma conexão
+# Criar ou editar uma conexão
 
 A experiência de criação de conexão e edição de fluxo de trabalho traz todo o processo de configuração de conjuntos de dados e conexões para o centro da tela com o fluxo de trabalho de assistência. Ele fornece uma experiência de seleção, configuração e revisão detalhadas do conjunto de dados, com várias informações importantes como: tipo de conjunto de dados, tamanho, esquema, ID do conjunto de dados, status do lote, status do preenchimento retroativo, IDs de pessoa e muito mais, a fim de reduzir o risco de configurar uma conexão incorretamente. Esta é uma visão geral dos recursos:
 
