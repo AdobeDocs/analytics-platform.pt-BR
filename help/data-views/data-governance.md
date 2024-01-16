@@ -4,10 +4,10 @@ description: Saiba como as políticas e os rótulos de dados definidos na Adobe 
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '498'
-ht-degree: 100%
+source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ Clique em **[!UICONTROL Aplicar]** para ver quais políticas estão ativadas.
 
 ## Como as políticas ativadas afetam as visualizações de dados
 
-Se as políticas **[!UICONTROL Forçar análise]** ou **[!UICONTROL Forçar download]** estiverem ativadas, os componentes do esquema que têm determinados rótulos de dados (como C8 ou C12) associados a eles não poderão ser adicionados às visualizações de dados.
+Se a variável **[!UICONTROL Forçar análise]** estiver ativada, os componentes do esquema que têm determinados rótulos de dados (como C8) associados a eles não poderão ser adicionados às visualizações de dados.
 
 Esses componentes estão esmaecidos na lista [!UICONTROL Campos de esquema] no painel à esquerda:
 
