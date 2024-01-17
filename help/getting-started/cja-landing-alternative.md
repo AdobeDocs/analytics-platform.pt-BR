@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 214616922aa157c390265f76138f8836c80b72d5
+source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '446'
 ht-degree: 13%
 
 ---
@@ -23,13 +23,13 @@ Dê uma olhada nos últimos aperfeiçoamentos do produto e da documentação do 
 
 >[!TAB Workspace: previsão de série temporal]
 
-A previsão é um novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano).
+A previsão é um novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano). A previsão está disponível somente para dados relacionados a séries temporais.
 
 [![imagem](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
 
 >[!TAB Conexões: Registros Ignorados]
 
-Agora é possível inspecionar os motivos pelos quais os registros são ignorados como parte da definição de uma conexão. Consulte Gerenciar conexões para obter mais informações.
+Agora é possível inspecionar os motivos pelos quais os registros dos conjuntos de dados do evento são ignorados ao definir uma conexão. Você pode obter detalhes sobre os motivos pelos quais os registros são ignorados, como IDs de visitante vazias, retenções de dados e outros.
 
 [![imagem](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
 
