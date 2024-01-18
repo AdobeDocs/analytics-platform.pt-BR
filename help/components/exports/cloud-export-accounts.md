@@ -5,9 +5,9 @@ title: Configurar contas de exportação da nuvem
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c60b48fa7bdc141e41a1df9ab9f9383cd2332713
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1733'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
 
 ## Começar a criar uma conta de exportação em nuvem
 
+1. Certifique-se de atender aos [requisitos mínimos](/help/analysis-workspace/export/export-cloud.md#minimum-requirements) para exportar relatórios para a nuvem.
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 1. No [!UICONTROL Exportações] selecione a [!UICONTROL **Contas de localização**] guia.
 1. Selecionar [!UICONTROL **Adicionar conta**].
