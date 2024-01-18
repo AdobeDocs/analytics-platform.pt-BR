@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b41cc80310c49bd1b0c73f1323f86c8b280e15f
+source-git-commit: 852dbce716e151d5feee52e813c9db9d76d9ccea
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2485'
 ht-degree: 27%
 
 ---
@@ -118,17 +118,11 @@ Para acessar os detalhes de uma conexão, selecione um nome de conexão na tabel
 
 ![Janela Todos os conjuntos de dados mostrando os widgets e as configurações](assets/conn-details.png)
 
-A tela de detalhes de Conexões fornece uma exibição detalhada do status de uma conexão. É possível:
+A interface de detalhes de Conexões fornece uma exibição detalhada do status de uma conexão. É possível:
 
 * Verifique o status dos conjuntos de dados da conexão e do processo de assimilação.
 * Identifique problemas de configuração que podem causar registros ignorados ou excluídos.
 * Veja quando os dados estão disponíveis para relatórios.
-
->[!IMPORTANT]
->
->Quaisquer dados assimilados antes de 13 de agosto de 2021 não serão refletidos neste [!UICONTROL Conexões] diálogo.
-
-### Detalhes da conexão
 
 | Interface do usuário | Descrição |
 | --- | --- |
@@ -154,6 +148,10 @@ A tela de detalhes de Conexões fornece uma exibição detalhada do status de um
 | Esquema | O esquema de Experience Platform no qual o conjunto de dados se baseia. |
 | [!UICONTROL Importar novos dados] | Mostra o status da importação de novos dados para o conjunto de dados: <p><span style="color:green">●</span>   **[!UICONTROL _x _Ligado]**se o conjunto de dados estiver configurado para importar novos dados e<p><span style="color:gray">●</span>   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar nova importação de dados. |
 | [!UICONTROL Dados de preenchimento retroativo] | Mostra o status dos dados de preenchimento retroativo do conjunto de dados.<p><span style="color:red">●</span>   **[!UICONTROL _x _preenchimento retroativo com falha]**para o número de preenchimentos retroativos com falha,<p><span style="color:orange">●</span>   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o processamento de número de preenchimentos retroativos,<p><span style="color:green">●</span>   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p><span style="color:grey">●</span>   **[!UICONTROL _Desligado_]** caso nenhum preenchimento retroativo esteja configurado. |
+
+>[!IMPORTANT]
+>
+>Quaisquer dados assimilados antes de 13 de agosto de 2021 não serão refletidos na [!UICONTROL Conexões] interface.
 
 ### Painel Conexão
 
