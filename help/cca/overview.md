@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 hide: true
 hidefromtoc: true
 source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1159'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Depois que sua organização atender a todos os pré-requisitos e entender suas 
    * Nome da sandbox.
 1. O Suporte ao cliente da Adobe trabalhará com a equipe de engenharia para habilitar a Análise de vários canais ao receber sua solicitação. Depois de habilitada, um novo conjunto de dados rechaveado que contém uma nova coluna de ID de pessoa é exibido na Adobe Experience Platform. O Suporte ao cliente da Adobe pode fornecer a nova ID do conjunto de dados e o nome da coluna de ID de pessoa.
 1. Quando ativado pela primeira vez, a Adobe fornecerá um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento.
-1. [Criar ou editar uma conexão](/help/connections/create-connection.md) no Customer Journey Analytics usando o conjunto de dados recém-gerado e quaisquer outros conjuntos de dados que você deseja incluir. Escolha a ID de pessoa correta para cada conjunto de dados.
+1. [Crie ou edite uma conexão](/help/connections/create-connection.md) no Customer Journey Analytics utilizando o conjunto de dados recém-gerado e quaisquer outros conjuntos de dados que desejar incluir. Escolha a ID de pessoa correta para cada conjunto de dados.
 1. [Crie uma visualização de dados](/help/data-views/create-dataview.md) com base na conexão.
 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
