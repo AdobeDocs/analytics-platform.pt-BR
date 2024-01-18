@@ -5,15 +5,18 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 171eb52940fabd422288d0f4f9eae512aafe3308
+source-git-commit: ef46598db68372b8b3b58dc06aa7d5faacca6cc2
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 13%
+source-wordcount: '520'
+ht-degree: 19%
 
 ---
 
 # Guia do Customer Journey Analytics
 
+Este guia de documentação técnica fornece ajuda para o Customer Journey Analytics. O Customer Journey Analytics permite trazer os dados dos clientes de qualquer canal que escolher (online e offline) para o Adobe Experience Platform e, em seguida, analisar esses dados da mesma forma que faria com os dados digitais existentes usando o Analysis Workspace hoje.
+
+O Customer Journey Analytics permite controlar como você conecta os dados online e offline no Analysis Workspace em qualquer ID de cliente comum, finalmente permitindo que você faça atribuição, filtros, fluxo, fallout etc. nos dados do cliente.
 
 ## Novidades
 
@@ -21,23 +24,23 @@ Dê uma olhada nos últimos aperfeiçoamentos do produto e da documentação do 
 
 >[!BEGINTABS]
 
->[!TAB Workspace: previsão de série temporal]
+>[!TAB Análise guiada - Taxas de retenção]
 
-A previsão é um novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano). A previsão está disponível somente para dados relacionados a séries temporais.
+Um novo tipo de exibição que mostra a porcentagem de usuários que retornam após o engajamento inicial dentro do intervalo de datas desejado
 
-[![imagem](assets/learn-more-button.svg)](../analysis-workspace/export/export-cloud.md)
+[![imagem](assets/learn-more-button.svg)](/help//guided-analysis/types/retention-rates.md)
 
->[!TAB Conexões: Registros Ignorados]
+>[!TAB Análise guiada - Linhas de tendência]
 
-Agora é possível inspecionar os motivos pelos quais os registros dos conjuntos de dados do evento são ignorados ao definir uma conexão. Você pode obter detalhes sobre os motivos pelos quais os registros são ignorados, como IDs de visitante vazias, retenções de dados e outros.
-
-[![imagem](assets/learn-more-button.svg)](/help/connections/manage-connections.md)
-
->[!TAB Product Analytics: Linhas de tendência]
-
-As sobreposições de linha de tendência agora estão disponíveis na visualização Uso de análise guiada, que ajuda a descrever um padrão mais claro nos dados.
+As sobreposições de linha de tendência agora estão disponíveis na visualização Uso, que ajuda a distinguir um padrão mais claro nos dados.
 
 [![imagem](assets/learn-more-button.svg)](/help/guided-analysis/types/usage.md)
+
+>[!TAB Visualização do Resumo das métricas principais]
+
+Ao usar a visualização Resumo da métrica principal, o Intervalo de datas de comparação agora pode ser atualizado automaticamente, dependendo se a opção Intervalo de datas de comparação escolhida é relativa ao intervalo de datas principal ou fixa.
+
+[![imagem](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/key-metric.md)
 
 >[!ENDTABS]
 
