@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 75413a38b9291cc8c31de3f2389ae74a31e7b00c
+source-git-commit: 24d8d03867cf9619bbee1dd647b2a2a57a36492b
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 78%
+source-wordcount: '1047'
+ht-degree: 63%
 
 ---
 
@@ -21,21 +21,48 @@ Além disso, discutimos maneiras mais granulares de limitar o acesso, como curad
 
 ## Função de administrador do produto
 
-Os administradores de produto têm permissões para concluir qualquer tarefa necessária no Customer Journey Analytics. Você deve ser adicionado como administrador de produto do **Perfil de produto Customer Journey Analytics** no [Admin Console](https://adminconsole.adobe.com/enterprise/) em [!UICONTROL Customer Journey Analytics] > [!UICONTROL Administradores] guia > [!UICONTROL Adicionar administrador]. Os administradores de produtos recebem as seguintes permissões:
+Os usuários com a função Administrador de produto atribuída recebem as permissões necessárias para executar a maioria das tarefas no Customer Journey Analytics por padrão. No entanto, algumas tarefas exigem permissões adicionais.
 
-* Criar/atualizar/excluir conexões ou visualizações de dados
-* Atualizar/excluir projetos, filtros, métricas calculadas, públicos alvos, anotações ou filtros criados por outros usuários
+Para adicionar um usuário como administrador de produto:
+
+1. Vá para a [Admin Console](https://adminconsole.adobe.com/enterprise/).
+
+1. Selecionar [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **Administradores**] guia > [!UICONTROL **Adicionar administrador**].
+
+   Os usuários adicionados recebem a [Permissões padrão do administrador do produto](#product-admin-default-permissions). Você também pode concedê-los [permissões adicionais](#product-admin-additional-permissions) se necessário.
+
+### Permissões padrão do administrador do produto
+
+Os administradores de produto têm permissões para concluir a maioria das tarefas no Customer Journey Analytics.
+
+Por padrão, os administradores de produtos recebem as permissões necessárias para executar as seguintes tarefas:
+
+* Criar, atualizar e excluir visualizações de dados
+* Atualizar e excluir projetos, filtros, métricas calculadas, públicos, anotações ou filtros criados por outros usuários
 * Compartilhar projetos do Workspace com todos os usuários
 * Gerenciar atividade de relatórios no [Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity-overview.md)
 
-Tornar-se um administrador de produto no Customer Journey Analytics não é suficiente para poder criar, atualizar ou excluir uma [conexão](/help/connections/overview.md). Para criar uma conexão com um conjunto de dados da Experience Platform, você também precisa de permissões da Experience Platform. Especificamente, você deve fazer parte de um **Perfil de produto da Experience Platform** que oferece as seguintes permissões:
+### Permissões adicionais do administrador do produto
 
-* Modelagem de dados: Exibir esquemas, Gerenciar esquemas
-* Gerenciamento de dados: exibir conjuntos de dados, gerenciar conjuntos de dados
-* Assimilação de dados: Gerenciar fontes
-* Exibir namespaces de identidade
+Além de ser adicionado como administrador de produto no **Perfil de produto Customer Journey Analytics** no [Admin Console](https://adminconsole.adobe.com/enterprise/), são necessárias permissões adicionais para concluir as seguintes tarefas no Customer Journey Analytics:
 
-Para obter mais informações sobre permissões da Experience Platform, consulte [Controle de acesso na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=pt-BR).
+* Criar, atualizar e excluir dados [Conexões](/help/connections/overview.md)
+
+  Para executar essa tarefa, os usuários devem fazer parte de um **Perfil de produto Experience Platform** que fornece as seguintes permissões:
+   * Modelagem de dados: Exibir esquemas, Gerenciar esquemas
+   * Gerenciamento de dados: exibir conjuntos de dados, gerenciar conjuntos de dados
+   * Assimilação de dados: Gerenciar fontes
+   * Exibir namespaces de identidade
+
+     Para obter mais informações sobre permissões da Experience Platform, consulte [Controle de acesso na Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=pt-BR).
+
+* Exportar conjuntos de dados de destinos da AEP
+
+  Para executar essa tarefa, os usuários também precisam das seguintes permissões de Experience Platform:
+   * Gerenciar destinos
+   * Ativar destinos
+
+     Para obter mais informações sobre permissões de Destinos de Experience Platform, consulte [Visão geral dos destinos](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=pt-BR).
 
 ## Função de administrador do perfil do produto
 
