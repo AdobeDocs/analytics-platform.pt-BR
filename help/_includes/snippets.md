@@ -1,8 +1,8 @@
 ---
-source-git-commit: fb624689c91bfa25f9676a5823b800d918e24e18
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 64%
+ht-degree: 63%
 
 ---
 # Trechos
@@ -43,7 +43,7 @@ ht-degree: 64%
    | [!UICONTROL **Descrição ausente**] | Mostrar somente componentes que ainda não têm uma descrição no campo Descrição. Essa opção está disponível somente para administradores. |
    | [!UICONTROL **Mostrar duplicatas**] | Mostrar apenas componentes que tenham o mesmo nome ou a mesma descrição de outro componente na visualização de dados selecionada. Isso inclui componentes que você cria, bem como os fornecidos pelo Adobe. Os nomes ou descrições devem ser correspondências exatas para serem exibidos como duplicatas. Essa opção está disponível somente para administradores. |
    | [!UICONTROL **Sem dados recentes**] | Mostrar somente componentes que não coletaram dados nos últimos 90 dias. Essa opção está disponível somente para administradores. |
-   | [!UICONTROL **Criado pela Adobe**] <!-- I don't see this option--> | Mostrar somente componentes que foram criados pela Adobe. Os componentes que foram criados por um administrador ou outro usuário em sua organização não são mostrados. |
+   | [!UICONTROL **Criado por Adobe**] <!-- I don't see this option--> | Mostrar somente componentes que foram criados pela Adobe. Os componentes que foram criados por um administrador ou outro usuário em sua organização não são mostrados. |
 
    {style="table-layout:auto"}
 
@@ -74,7 +74,7 @@ ht-degree: 64%
 
 {style="table-layout:auto"}
 
-## Aplicar comparação de tempo {#apply-time-comparison}
+## Comparação de tempo {#apply-time-comparison}
 
 Você pode comparar o período atual com um período anterior. Se você selecionar uma opção nesse menu, cada ponto de dados receberá um equivalente colorido com linhas pontilhadas. Essa contraparte representa a mesma métrica no intervalo de datas anterior selecionado. Definir essa opção dobra o número de itens no gráfico e nas linhas na tabela.
 

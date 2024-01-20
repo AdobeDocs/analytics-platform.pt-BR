@@ -5,10 +5,10 @@ feature: Guided Analysis
 keywords: análise do produto
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 2%
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
@@ -31,14 +31,15 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
+* **[!UICONTROL Exibir]**: alterne entre esse tipo de visualização e [Uso](usage.md).
 * **[!UICONTROL Eventos]**: os eventos que você deseja medir. Cada evento selecionado é representado como um gráfico separado. Uma linha que representa o evento de tendência é adicionada à tabela. É possível incluir até cinco eventos.
-* **[!UICONTROL Pessoas]**: os segmentos que você deseja medir. Cada segmento selecionado dobra o número de barras no gráfico e de linhas na tabela. É possível incluir até cinco segmentos.
+* **[!UICONTROL Contado como]**: A métrica que você deseja medir. As opções incluem [!UICONTROL Usuários],  [!UICONTROL Sessões],  [!UICONTROL Porcentagem de usuários] e  [!UICONTROL Porcentagem de sessões]. Nesta exibição, o denominador das métricas baseadas em porcentagem são os usuários ou sessões que realizaram os eventos selecionados, não todos os usuários ativos do produto.
+* **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. Cada segmento selecionado dobra o número de barras no gráfico e de linhas na tabela. É possível incluir até cinco segmentos.
 
 ## Configurações de gráficos
 
 A variável [!UICONTROL Frequência] view oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **[!UICONTROL Métrica]**: A métrica que você deseja medir. As opções incluem [!UICONTROL Usuários],  [!UICONTROL Sessões],  [!UICONTROL Porcentagem de usuários] e  [!UICONTROL Porcentagem de sessões]. Nesta exibição, o denominador das métricas baseadas em porcentagem são os usuários ou sessões que realizaram os eventos selecionados, não todos os usuários ativos do produto.
 * **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Barra horizontal] e [!UICONTROL Barra empilhada].
 
 ## Configurações do compartimento
@@ -51,7 +52,7 @@ Determina como o evento é categorizado em grupos.
    * [!UICONTROL Para]: A frequência maior que esse valor é agrupada no último intervalo.
    * [!UICONTROL Tamanho]: o intervalo do bucket.
 
-## Aplicar comparação de tempo
+## Comparação de tempo
 
 {{apply-time-comparison}}
 

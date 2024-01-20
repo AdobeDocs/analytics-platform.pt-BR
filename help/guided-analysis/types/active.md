@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Guided Analysis
 keywords: análise do produto
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 60f1c20b4188b5363619af49b85373d081db6cc3
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '604'
 ht-degree: 1%
 
 ---
@@ -30,24 +30,25 @@ Todos os usuários ativos (novo + repetição + retorno) aparecem como uma sombr
 Os casos de uso para esse tipo de exibição incluem:
 
 * **Retenção e churn de usuário:** Fornece uma visualização clara em torno de períodos de alta ou baixa retenção de usuários. Reconhecer esses períodos de alta ou baixa retenção pode ajudar você a tomar decisões sobre o produto para incentivar alta retenção ou ajudar a minimizar o abandono.
-* **Avaliação de campanha**: visualizar uma campanha específica pode ajudar você a entender não apenas o tráfego gerado, mas também o quão bem a campanha ajudou os usuários a permanecerem envolvidos.
+* **Avaliação de campanha**: visualizar uma campanha específica pode ajudar você a entender quanto tráfego ela gerou e quão bem ajudou os usuários a permanecerem envolvidos.
 * **Análise do ciclo de vida do usuário**: analisar o crescimento ativo do usuário em todo o ciclo de vida do usuário pode ajudar a identificar estágios específicos em que o engajamento do usuário diminui. Por exemplo, se houver uma alta proporção de usuários inativos para indivíduos em um estágio de integração, isso pode indicar problemas de usabilidade ou a necessidade de melhor orientação no produto.
 
 ## Painel de consulta
 
 O painel de consulta permite configurar os seguintes componentes:
 
+* **[!UICONTROL Exibir]**: alterne entre esse tipo de visualização e [Crescimento líquido](net-growth.md).
 * **[!UICONTROL Eventos]**: o evento que você deseja medir. Como esse tipo de exibição é baseado no usuário, um usuário que interage com o evento uma vez dentro do período é contado como um usuário ativo. Você pode incluir um evento em uma query.
-* **[!UICONTROL Pessoas]**: o segmento que você deseja medir. É possível incluir um segmento em uma consulta.
+* **[!UICONTROL Contado como]**: A métrica que você deseja medir. As opções incluem [!UICONTROL Número de usuários] e [!UICONTROL Porcentagem de usuários].
+* **[!UICONTROL Segmentos]**: o segmento pelo qual você deseja filtrar os dados. É possível incluir um segmento em uma consulta.
 
 ## Configurações de gráficos
 
 A variável [!UICONTROL Ativo] view oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **[!UICONTROL Métrica]**: A métrica que você deseja medir. As opções incluem Número de usuários e Porcentagem de usuários.
-* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Barra empilhada e Área empilhada.
+* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Barra empilhada] e [!UICONTROL Área empilhada].
 
-## Aplicar comparação de tempo
+## Comparação de tempo
 
 {{apply-time-comparison}}
 

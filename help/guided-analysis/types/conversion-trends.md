@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: análise do produto
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '505'
 ht-degree: 1%
 
 ---
@@ -30,22 +30,23 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
+* **[!UICONTROL Exibir]**: alterne entre esse tipo de visualização e [Fricção](friction.md).
 * **[!UICONTROL Etapas]**: os pontos de contato do evento que você deseja rastrear. Cada barra no gráfico representa uma etapa. É possível incluir até dez etapas.
-* **[!UICONTROL Pessoas]**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
+* **[!UICONTROL Contado como]**: A métrica que você deseja medir. As opções incluem [!UICONTROL Usuários] e [!UICONTROL Sessões].
+* **[!UICONTROL Segmentos]**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
 
 ## Configurações de gráficos
 
-A exibição Tendências de conversão oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
+A variável [!UICONTROL Tendências de conversão] view oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **[!UICONTROL Métrica]**: A métrica que você deseja medir. As opções incluem Sessões e Usuários.
-* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Linha.
-* **[!UICONTROL Conversão de]**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir da Primeira etapa ou da Etapa anterior.
+* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Linha].
+* **[!UICONTROL Conversão de]**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir do [!UICONTROL Primeira etapa] ou [!UICONTROL Etapa anterior].
 
 >[!NOTE]
 >
 >A variável **Média** na tabela de exibição Tendências de conversão é diferente da variável **Total** na [Visualização de atrito](friction.md) tabela. A primeira é uma média das colunas de intervalo (por exemplo, média das taxas de conversão diárias), enquanto a última é um cálculo agregado no intervalo de datas completo.
 
-## Aplicar comparação de tempo
+## Comparação de tempo
 
 {{apply-time-comparison}}
 

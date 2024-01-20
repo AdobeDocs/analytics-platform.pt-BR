@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Guided Analysis
 keywords: análise do produto
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 486cd26bfacbae0072e14ec078ceca66909ac0ec
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '496'
 ht-degree: 1%
 
 ---
@@ -31,18 +31,21 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
+* **[!UICONTROL Exibir]**: alterne entre esse tipo de visualização e [Tendências de conversão](conversion-trends.md).
 * **[!UICONTROL Etapas]**: os pontos de contato do evento que você deseja rastrear. Cada barra no gráfico representa uma etapa. É possível incluir até dez etapas.
-* **[!UICONTROL Pessoas]**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
+* **[!UICONTROL Contado como]**: o escopo que você deseja aplicar ao funil. As opções incluem [!UICONTROL Sessões] e [!UICONTROL Usuários].
+   * [!UICONTROL Sessões]: Todas as etapas devem ocorrer na mesma sessão para serem contadas.
+   * [!UICONTROL Usuários]: para serem contadas, todas as etapas devem ocorrer na janela de relatórios selecionada.
+* **[!UICONTROL Segmentos]**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
 
 ## Configurações de gráficos
 
 A exibição de atrito oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **[!UICONTROL Métrica]**: o escopo que você deseja aplicar ao funil. As opções incluem Sessões e Usuários. Ao selecionar sessões, todas as etapas devem acontecer na mesma sessão para serem contadas. Ao selecionar usuários, todas as etapas devem ocorrer na janela de relatórios selecionada para serem contadas.
-* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Etapas.
-* **[!UICONTROL Conversão de]**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir da Primeira etapa ou da Etapa anterior.
+* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Etapas].
+* **[!UICONTROL Conversão de]**: Determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir do [!UICONTROL Primeira etapa] ou [!UICONTROL Etapa anterior].
 
-## Aplicar comparação de tempo
+## Comparação de tempo
 
 {{apply-time-comparison}}
 

@@ -5,16 +5,16 @@ feature: Guided Analysis
 keywords: análise do produto
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 60f1c20b4188b5363619af49b85373d081db6cc3
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '633'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL Primeira utilização] exibir
 
-A variável **[!UICONTROL Primeira utilização]** A exibição do mostra uma comparação do desempenho dos indicadores principais antes e depois que um usuário usa um recurso do produto pela primeira vez. O eixo horizontal desse relatório é um intervalo de tempo relativo antes e depois do evento, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa o dia 0 para quando um recurso é usado pela primeira vez por um determinado usuário. Como os usuários nem sempre adotam recursos no mesmo dia e as implantações podem ocorrer ao longo de vários dias, o dia 0 significa algo diferente para cada usuário individual.
+A variável **[!UICONTROL Primeira utilização]** A exibição do mostra uma comparação do desempenho dos indicadores principais antes e depois que um usuário usa um recurso do produto pela primeira vez. O eixo horizontal desse relatório é um intervalo de tempo relativo antes e depois do evento, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa o dia 0 para quando um recurso é usado pela primeira vez por um determinado usuário. Como os usuários nem sempre adotam recursos no mesmo dia e suas implantações podem ocorrer ao longo de vários dias, o dia 0 pode significar algo diferente para cada usuário individual.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
 
@@ -23,26 +23,31 @@ A variável **[!UICONTROL Primeira utilização]** A exibição do mostra uma co
 Os casos de uso para esse tipo de exibição incluem:
 
 * **Nova análise de recursos**: se estiver lançando um novo recurso no seu produto, você pode comparar o desempenho dos indicadores-chave antes e depois que os usuários foram expostos a esse novo recurso pela primeira vez.
-* **Implantações em fases**: como a análise busca o primeiro uso do recurso em vez de uma data fixa, essa visualização será particularmente útil se você implantar seus recursos gradualmente durante um período.
+* **Implantações em fases**: como a análise busca o primeiro uso do recurso em vez de uma data fixa, essa visualização será útil se você analisar a implantação dos seus recursos ao longo do tempo.
 * **Nova análise de versão de produto**: se estiver lançando uma nova versão do seu produto, você pode comparar o desempenho dos indicadores-chave antes e depois que os usuários foram expostos a essa nova versão pela primeira vez. Selecione &quot;qualquer evento&quot; como o primeiro evento de uso e filtre-o para a propriedade Número de versão.
-* **Melhorias de recursos existentes**: se estiver melhorando um recurso existente no seu produto, você pode comparar o desempenho dos indicadores principais antes e depois que os usuários foram expostos a essas novas melhorias pela primeira vez. É possível realizar essa análise de algumas maneiras, dependendo da instrumentação do recurso. 1) Selecione um evento que represente a melhoria como o evento de primeira utilização e/ou 2) Selecione a data em que as alterações começaram a ser implantadas e/ou 3) Segmente a análise para o grupo de pessoas expostas às melhorias.
+* **Melhorias de recursos existentes**: se estiver melhorando um recurso existente no seu produto, você pode comparar o desempenho dos indicadores principais antes e depois que os usuários foram expostos a essas novas melhorias pela primeira vez. É possível realizar essa análise de uma ou mais maneiras, dependendo da instrumentação do recurso.
+   * Selecione um evento que represente a melhoria como seu primeiro evento de uso
+   * Selecionar a data em que as alterações começaram a ser implantadas
+   * Segmente a análise para o grupo de pessoas expostas às melhorias
 * **Eficácia da campanha**: quando um usuário clica em uma determinada campanha, é possível comparar o desempenho dos indicadores-chave antes e depois da interação do usuário com essa campanha.
 
 ## Painel de consulta
 
 O painel de consulta permite configurar os seguintes componentes:
 
+* **[!UICONTROL Exibir]**: alterne entre esse tipo de visualização e [Versão](release.md).
 * **[!UICONTROL Indicadores-chave]**: os eventos que você deseja medir por usuário. Cada indicador principal selecionado é representado como uma linha colorida. Uma linha que representa o evento é adicionada à tabela. É possível incluir até três eventos.
+* 
+   * **[!UICONTROL Contado como]**: A métrica que você deseja medir. As opções incluem [!UICONTROL Eventos por usuário], [!UICONTROL Eventos], [!UICONTROL Sessões], e [!UICONTROL Usuários].
 * **[!UICONTROL Fatores]**: há dois fatores para essa exibição:
    * **[!UICONTROL Data]**: Até que ponto você deseja começar a procurar o primeiro evento de uso que ocorreu.
    * **[!UICONTROL Evento]**: o evento que você deseja procurar primeiro uso de, para centralizar a análise.
-* **[!UICONTROL Pessoas]**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nos indivíduos que correspondem aos critérios do segmento.
+* **[!UICONTROL Segmentos]**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nos indivíduos que correspondem aos critérios do segmento. Um único segmento é compatível com esse tipo de visualização.
 
 ## Configurações de gráficos
 
 A visualização First use oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **[!UICONTROL Métrica]**: A métrica que você deseja medir. As opções incluem [!UICONTROL Eventos por usuário], [!UICONTROL Eventos], [!UICONTROL Sessões], e [!UICONTROL Usuários].
 * **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem Linha.
 
 ## Intervalo de datas
