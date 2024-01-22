@@ -5,9 +5,9 @@ exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
 source-git-commit: 3b089a3d358a1a39a4b572576e911faaa4ceb1d5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Clique em **[!UICONTROL Aplicar]** para ver quais políticas estão ativadas.
 
 ## Como as políticas ativadas afetam as visualizações de dados
 
-Se a variável **[!UICONTROL Forçar análise]** estiver ativada, os componentes do esquema que têm determinados rótulos de dados (como C8) associados a eles não poderão ser adicionados às visualizações de dados.
+Se a política **[!UICONTROL Aplicar análise]** estiver ativada, os componentes do esquema que têm determinados rótulos de dados (como C8) associados a eles não poderão ser adicionados às visualizações de dados.
 
 Esses componentes estão esmaecidos na lista [!UICONTROL Campos de esquema] no painel à esquerda:
 
