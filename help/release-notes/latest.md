@@ -3,16 +3,16 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 79234ee442e49ebf7f5a08bd0214e8c9d547485e
+source-git-commit: 24b7e428b6652d3656d641ad030957b807d387d5
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 100%
+source-wordcount: '437'
+ht-degree: 78%
 
 ---
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (janeiro de 2024)
 
-**Última atualização:** 12 de janeiro de 2024
+**Última atualização:** sábado, 26 de janeiro de 2024
 
 Estas notas de versão cobrem o período de lançamento do final de outubro de 2023 a janeiro de 2024. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -20,13 +20,12 @@ Estas notas de versão cobrem o período de lançamento do final de outubro de 2
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Análise guiada – Taxas de retenção** | Um novo tipo de visualização que mostra a porcentagem de usuários que retornam após o engajamento inicial no intervalo de datas desejado. [Saiba mais](../guided-analysis/types/retention-rates.md) | N/D | 8 de janeiro de 2024 |
-| **Previsão de série temporal** | A previsão é um novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano). | 31 de janeiro de 2024 | quinta-feira, 21 de fevereiro de 2024 |
-| **Análise guiada – Linhas de tendência** | As sobreposições de linhas de tendência agora estão disponíveis na visualização [Uso](/help/guided-analysis/types/usage.md), o que ajuda a representar um padrão mais claro nos dados. | N/D | 17 de janeiro de 2024 |
-| **Página de detalhes das conexões – Registros ignorados** | Agora é possível inspecionar os motivos pelos quais os registros são pulados como parte da definição de uma conexão. | N/D | 31 de janeiro de 2024 |
+| **Adobe Product Analytics - Taxas de retenção** | As taxas de retenção são uma nova análise guiada que mostra a porcentagem de usuários que retornam após o engajamento inicial dentro do intervalo de datas desejado. [Saiba mais](../guided-analysis/types/retention-rates.md) | N/D | 8 de janeiro de 2024 |
+| **Adobe Product Analytics - Linhas de tendência** | As linhas de tendência são uma nova análise guiada disponível no [Uso](/help/guided-analysis/types/usage.md) , que ajuda a retratar um padrão mais claro nos dados. | N/D | 17 de janeiro de 2024 |
 | **Atualizações na visualização do Resumo das métricas principais** | Ao usar a visualização Resumo da métrica principal, o Intervalo de datas de comparação agora pode ser atualizado automaticamente, dependendo se a opção Intervalo de datas de comparação escolhida é relativa ao intervalo de datas principal ou fixa. [Saiba mais](/help/analysis-workspace/visualizations/key-metric.md). | N/D | 17 de janeiro de 2024 |
-| **Análise guiada – Fluxos** | Um novo tipo de visualização que permite explorar fluxos de evento de usuário individuais. Essa análise permite encontrar padrões de experiência e contar melhor a história do usuário. | N/D | 31 de janeiro de 2024 |
-| **Análise guiada – Melhorias no painel de consulta** | Algumas configurações de componentes agora estão incluídas no painel de consulta, fornecendo melhorias na usabilidade. | N/D | 31 de janeiro de 2024 |
+| **Adobe Product Analytics - Fluxos** | O Fluxo é uma nova análise guiada que permite explorar fluxos de evento de usuário individuais. Essa análise permite encontrar padrões de experiência e contar melhor a história do usuário. | N/D | 31 de janeiro de 2024 |
+| **Adobe Product Analytics - Melhorias no painel de consulta** | Na análise guiada, algumas configurações de componentes agora estão incluídas no painel de consulta, fornecendo melhorias na usabilidade. | N/D | 31 de janeiro de 2024 |
+| **Previsão de série temporal** | A previsão é um novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano). | 31 de janeiro de 2024 | quinta-feira, 21 de fevereiro de 2024 |
 
 {style="table-layout:auto"}
 
