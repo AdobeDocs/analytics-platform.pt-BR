@@ -25,7 +25,7 @@ Estas notas de versão cobrem o período de lançamento do final de outubro de 2
 | **Atualizações na visualização do Resumo das métricas principais** | Ao usar a visualização Resumo da métrica principal, o Intervalo de datas de comparação agora pode ser atualizado automaticamente, dependendo se a opção Intervalo de datas de comparação escolhida é relativa ao intervalo de datas principal ou fixa. [Saiba mais](/help/analysis-workspace/visualizations/key-metric.md). | N/D | 17 de janeiro de 2024 |
 | **Adobe Product Analytics - Fluxos** | O Fluxo é uma nova análise guiada que permite explorar fluxos de evento de usuário individuais. Essa análise permite encontrar padrões de experiência e contar melhor a história do usuário. | N/D | 31 de janeiro de 2024 |
 | **Adobe Product Analytics - Melhorias no painel de consulta** | Na análise guiada, algumas configurações de componentes agora estão incluídas no painel de consulta, fornecendo melhorias na usabilidade. | N/D | 31 de janeiro de 2024 |
-| **Previsão de série temporal** | A previsão é um novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano). | 31 de janeiro de 2024 | quinta-feira, 21 de fevereiro de 2024 |
+| **Previsão de série temporal** | A previsão é um novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano). | 31 de janeiro de 2024 | 21 de fevereiro de 2024 |
 
 {style="table-layout:auto"}
 
