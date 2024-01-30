@@ -5,10 +5,10 @@ title: Configurar locais de exportação da nuvem
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: e16d071df04d91ec6627efd250515fb2d54515bb
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 3%
+source-wordcount: '1635'
+ht-degree: 4%
 
 ---
 
@@ -38,11 +38,18 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    A caixa de diálogo Local é exibida.
 
-1. Especifique as seguintes informações: |Campo | Função | |—|—| | [!UICONTROL **Nome**] | O nome do local.  | | [!UICONTROL **Descrição**] | Forneça uma breve descrição da conta para ajudar a diferenciá-la de outras contas do mesmo tipo. | | [!UICONTROL **Conta de localização**] | Selecione a conta na qual deseja criar a localização. Para obter informações sobre como criar uma conta, consulte [Configurar contas de exportação da nuvem](/help/components/exports/cloud-export-accounts.md). |
+1. Especifique as seguintes informações: |Campo | Função | |—|—| | [!UICONTROL **Nome**] | O nome do local.  | | [!UICONTROL **Descrição**] | Forneça uma breve descrição da localização para ajudar a diferenciá-la de outros locais na conta. | | [!UICONTROL **Conta de localização**] | Selecione a conta na qual deseja criar a localização. Para obter informações sobre como criar uma conta, consulte [Configurar contas de exportação da nuvem](/help/components/exports/cloud-export-accounts.md). |
 
 1. No [!UICONTROL **Propriedades do local**] especifique as informações específicas ao tipo de conta da sua conta de localização.
 
    Continue com a seção abaixo que corresponde ao tipo de conta selecionado na [!UICONTROL **Conta de localização**] campo.
+
+   * [Zona de destino de dados da AEP](#aep-data-landing-zone)
+   * [Amazon S3 Role ARN](#amazon-s3-role-arn)
+   * [Google Cloud Platform](#google-cloud-platform)
+   * [Azure SAS](#azure-sas)
+   * [Azure RBAC](#azure-rbac)
+   * [Snowflake](#snowflake)
 
 ### Zona de destino de dados da AEP
 
@@ -50,7 +57,11 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 >
 >Ao exportar relatórios de Customer Journey Analytics para a Data Landing Zone da Adobe Experience Platform, baixe os dados em 7 dias e exclua-os da Data Landing Zone da AEP. Após 7 dias, os dados são excluídos automaticamente da Zona de aterrissagem de dados da AEP.
 
-1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+1. Comece a criar um local de exportação em nuvem das seguintes maneiras:
+
+   * Na página Exportações, conforme descrito acima, em [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
+
+   * Quando [exportação de tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] , especifique as seguintes informações para configurar um local da Zona de aterrissagem de dados da Adobe Experience Platform:
 
@@ -83,7 +94,11 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
 ### Amazon S3 Role ARN
 
-1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+1. Comece a criar um local de exportação em nuvem das seguintes maneiras:
+
+   * Na página Exportações, conforme descrito acima, em [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
+
+   * Quando [exportação de tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] especifique as seguintes informações para configurar um local ARN para a função Amazon S3:
 
@@ -102,7 +117,11 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
 ### Google Cloud Platform
 
-1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+1. Comece a criar um local de exportação em nuvem das seguintes maneiras:
+
+   * Na página Exportações, conforme descrito acima, em [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
+
+   * Quando [exportação de tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] especifique as seguintes informações para configurar um local da Google Cloud Platform:
 
@@ -121,7 +140,11 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
 ### Azure SAS
 
-1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+1. Comece a criar um local de exportação em nuvem das seguintes maneiras:
+
+   * Na página Exportações, conforme descrito acima, em [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
+
+   * Quando [exportação de tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] especifique as seguintes informações para configurar um local SAS do Azure:
 
@@ -138,7 +161,11 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
 ### Azure RBAC
 
-1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+1. Comece a criar um local de exportação em nuvem das seguintes maneiras:
+
+   * Na página Exportações, conforme descrito acima, em [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
+
+   * Quando [exportação de tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] especifique as seguintes informações para configurar um local do RBAC do Azure:
 
@@ -156,7 +183,11 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
 ### Snowflake
 
-1. [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location), conforme descrito acima.
+1. Comece a criar um local de exportação em nuvem das seguintes maneiras:
+
+   * Na página Exportações, conforme descrito acima, em [Começar a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
+
+   * Quando [exportação de tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
 
 1. No [!UICONTROL **Propriedades do local**] seção do [!UICONTROL **Adicionar localização**] especifique as seguintes informações para configurar a localização de um Snowflake:
 

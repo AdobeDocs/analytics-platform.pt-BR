@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c13dfaa5367210f48e419a3516d30f2c1fd5c24f
+source-git-commit: 1587f98d0650d07a2f496c239d7b6bf69611535e
 workflow-type: tm+mt
-source-wordcount: '2879'
-ht-degree: 87%
+source-wordcount: '2951'
+ht-degree: 85%
 
 ---
 
@@ -20,6 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Janeiro de 2024** | |
+| Atualização da documentação para adicionar contas e locais ao exportar tabelas completas | Atualização da documentação para refletir pequenas atualizações de interface ao configurar uma nova conta ou local ao [exportação de tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>Um novo [!UICONTROL **Adicionar conta**] agora está disponível na [!UICONTROL **Conta**] menu suspenso. A variável [!UICONTROL **Adicionar localização**] que estava disponível anteriormente como um botão ao lado da opção [!UICONTROL **Nome do local**] agora está disponível dentro do próprio menu. |
 | Novas informações de migração de componente ao migrar do Adobe Analytics | Adição de informações a [Evolução do Adobe Analytics](/help/getting-started/aa-to-cja.md) que referencia o novo [migração de componente](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=pt-BR) que estão documentados no Guia de administração do Adobe Analytics. |
 | Esclarecimento de que determinadas informações estão disponíveis somente para administradores do | Foram adicionadas informações declarando que as colunas &quot;Usado pela última vez&quot; e &quot;Usado em&quot; estão descritas em [Gerenciador de métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md) e a variável [Gerenciador de filtros](/help/components/filters/manage-filters.md) estão disponíveis somente para administradores do sistema. |
 | Permissões necessárias para exportar conjuntos de dados | Foram adicionadas informações explicando o [permissões necessárias](/help/admin/cja-access-control.md) para exportar conjuntos de dados para destinos na nuvem. |
