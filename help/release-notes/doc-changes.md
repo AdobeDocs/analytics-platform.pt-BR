@@ -4,7 +4,7 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
+source-git-commit: 7fdaf5868fd1aacbfec526749729be1fb5486cf7
 workflow-type: tm+mt
 source-wordcount: '2984'
 ht-degree: 84%
@@ -20,7 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Janeiro de 2024** | |
-| Previsão | Adição de documentação sobre [forecasting](../analysis-workspace/c-forecast/forecasting.md), o novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano) para tabelas de forma livre e gráficos lince. |
+| Previsão | Adição de documentação sobre [forecasting](../analysis-workspace/c-forecast/forecasting.md), o novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano) para tabelas de forma livre e gráficos de linha. |
 | Atualização da documentação para adicionar contas e locais ao exportar tabelas completas | Atualização da documentação para refletir pequenas atualizações de interface ao configurar uma nova conta ou local ao [exportação de tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>Um novo [!UICONTROL **Adicionar conta**] agora está disponível na [!UICONTROL **Conta**] menu suspenso. A variável [!UICONTROL **Adicionar localização**] que estava disponível anteriormente como um botão ao lado da opção [!UICONTROL **Nome do local**] agora está disponível dentro do próprio menu. |
 | Novas informações de migração de componente ao migrar do Adobe Analytics | Adição de informações a [Evolução do Adobe Analytics](/help/getting-started/aa-to-cja.md) que referencia o novo [migração de componente](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=pt-BR) que estão documentados no Guia de administração do Adobe Analytics. |
 | Esclarecimento de que determinadas informações estão disponíveis somente para administradores do | Foram adicionadas informações declarando que as colunas &quot;Usado pela última vez&quot; e &quot;Usado em&quot; estão descritas em [Gerenciador de métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md) e a variável [Gerenciador de filtros](/help/components/filters/manage-filters.md) estão disponíveis somente para administradores do sistema. |
