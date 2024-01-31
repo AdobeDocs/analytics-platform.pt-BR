@@ -5,18 +5,16 @@ feature: Guided Analysis
 keywords: análise do produto
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: c5cc2a696ac1a5619b174163b2b6b87116e4f778
+source-git-commit: 715d6f33b3cd3f1188e0bd3e6aa3785346c4c302
 workflow-type: tm+mt
 source-wordcount: '889'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 # Taxas de retenção
 
-{{release-limited-testing}}
-
-A variável **[!UICONTROL Taxas de retenção]** a exibição mostra a porcentagem de usuários que retornam após o engajamento inicial dentro do intervalo de datas desejado. O eixo horizontal representa o número de dias desde o engajamento inicial de um usuário. O eixo vertical representa o percentual de usuários que interagem novamente.
+A variável **[!UICONTROL Taxas de retenção]** a exibição mostra a porcentagem de usuários que retornam após o engajamento inicial dentro do intervalo de datas desejado. O eixo horizontal representa o número de dias desde o engajamento inicial de um usuário. O eixo vertical representa o percentual de usuários que interagiram novamente.
 
 Essa análise conta os usuários com base em dois eventos importantes:
 
