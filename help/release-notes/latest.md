@@ -3,10 +3,10 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 90d91f07296f8c961d1b60ddbdc3d6b086958141
+source-git-commit: 1e024f7f84f96be446a2a922bd026bc70a6edf7e
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 75%
+source-wordcount: '439'
+ht-degree: 71%
 
 ---
 
@@ -20,12 +20,12 @@ Essas notas de versão abrangem o período de lançamento de 8 de janeiro de 202
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Adobe Product Analytics - Taxas de retenção** | As taxas de retenção são uma nova análise guiada que mostra a porcentagem de usuários que retornam após o engajamento inicial dentro do intervalo de datas desejado. [Saiba mais](../guided-analysis/types/retention-rates.md) | N/D | 8 de janeiro de 2024 |
-| **Adobe Product Analytics - Linhas de tendência** | As linhas de tendência são uma nova análise guiada disponível no [Uso](/help/guided-analysis/types/usage.md) , que ajuda a retratar um padrão mais claro nos dados. | N/D | 17 de janeiro de 2024 |
-| **Atualizações na visualização do Resumo das métricas principais** | Ao usar a visualização Resumo da métrica principal, o Intervalo de datas de comparação agora pode ser atualizado automaticamente, dependendo se a opção Intervalo de datas de comparação escolhida é relativa ao intervalo de datas principal ou fixa. [Saiba mais](/help/analysis-workspace/visualizations/key-metric.md). | N/D | 17 de janeiro de 2024 |
-| **Adobe Product Analytics - Fluxos de usuário** | Fluxos de usuários é uma nova análise guiada que permite explorar fluxos de eventos de usuários individuais. Essa análise permite encontrar padrões de experiência e contar melhor a história do usuário. | N/D | quinta-feira, 7 de fevereiro de 2024 |
-| **Adobe Product Analytics - Melhorias no painel de consulta** | Na análise guiada, algumas configurações de componentes agora estão incluídas no painel de consulta, fornecendo melhorias na usabilidade. | N/D | 31 de janeiro de 2024 |
 | **Previsão de série temporal** | A previsão é um novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano). | 31 de janeiro de 2024 | 21 de fevereiro de 2024 |
+| **Atualizações na visualização do Resumo das métricas principais** | Ao usar a visualização Resumo da métrica principal, o Intervalo de datas de comparação agora pode ser atualizado automaticamente, dependendo se a opção Intervalo de datas de comparação escolhida é relativa ao intervalo de datas principal ou fixa. [Saiba mais](/help/analysis-workspace/visualizations/key-metric.md). | N/D | 17 de janeiro de 2024 |
+| **Adobe Product Analytics - Análise de taxas de retenção** | As taxas de retenção são uma nova análise guiada que permite medir os hábitos de retorno contínuos de seus usuários. [Saiba mais](../guided-analysis/types/retention-rates.md) | N/D | 8 de janeiro de 2024 |
+| **Adobe Product Analytics - Sobreposição de linha de tendência** | As linhas de tendência são uma nova configuração de sobreposição disponível no [Tendências de uso](/help/guided-analysis/types/usage.md) e ajuda para descrever um padrão mais claro nos dados. | N/D | 17 de janeiro de 2024 |
+| **Adobe Product Analytics - Melhorias no painel de consulta** | Na análise guiada, o painel de consulta à esquerda agora inclui as configurações Tipo de visualização e Contado como, anteriormente disponíveis nas configurações de visualização. | N/D | 31 de janeiro de 2024 |
+| **Adobe Product Analytics - Análise de fluxo de usuário** | Fluxos de usuários é uma nova análise guiada que permite explorar fluxos de eventos de usuários individuais que podem ajudá-lo a encontrar padrões de experiência e contar melhores histórias aos usuários. | N/D | quinta-feira, 7 de fevereiro de 2024 |
 
 {style="table-layout:auto"}
 
