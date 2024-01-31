@@ -5,10 +5,10 @@ title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c22f2d81eddbf9ee2fb3600fd5b727fb838de740
 workflow-type: tm+mt
-source-wordcount: '1325'
-ht-degree: 81%
+source-wordcount: '1326'
+ht-degree: 80%
 
 ---
 
@@ -22,7 +22,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
 | Nome da visualização | Descrição |
 | --- | --- | 
-| [Área](/help/analysis-workspace/visualizations/area.md)<p>![Ícone da área](assets/Smock_GraphArea_18_N.svg)</p> | Semelhante a um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Use um gráfico de área quando você tiver diversas métricas e desejar visualizar a área expressa pela interseção de duas ou mais métricas. | Responde a perguntas como: <ul><li> |
+| [Área](/help/analysis-workspace/visualizations/area.md)<p>![Ícone da área](assets/Smock_GraphArea_18_N.svg)</p> | Semelhante a um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Use um gráfico de área quando você tiver diversas métricas e desejar visualizar a área expressa pela interseção de duas ou mais métricas. |
 | [Barra](/help/analysis-workspace/visualizations/bar.md) <p>![Ícone de barra](assets/Smock_GraphBarVertical_18_N.svg)</p> | Mostra barras verticais que representam vários valores de uma ou mais métricas. |
 | [Gráfico em marcadores](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Ícone de Marcador](assets/Smock_GraphBullet_18_N.svg)</p> | Mostra a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas). |
 | [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Ícone da tabela de coorte](assets/Smock_TextNumbered_18_N.svg)</p> | A *`cohort`* é um grupo de pessoas com características comuns em um período específico. A Análise de coorte é útil para análise de retenção, churn ou latência. |
@@ -80,9 +80,9 @@ Você pode personalizar as configurações de todas as visualizações criadas. 
 
 ## Configurações  {#settings}
 
-Cada visualização tem suas próprias configurações que podem ser gerenciadas. Para acessar [!UICONTROL Configurações de visualização], clique no ícone de engrenagem [!UICONTROL Configurações de visualização].
+Cada visualização tem suas próprias configurações que podem ser gerenciadas. Para acessar as configurações de visualização, selecione o ícone de configurações ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg).
 
-![Configurações de visualização mostrando as opções de configuração descritas na próxima seção.](assets/settings.png)
+<img src="./assets/viz-settings-line.png" alt="Configurações de visualização" width="50%" />
 
 | Configuração | Descrição |
 | --- | --- |
@@ -96,6 +96,7 @@ Cada visualização tem suas próprias configurações que podem ser gerenciadas
 | Normalização | Força as métricas para proporções iguais. Isso é útil quando métricas projetadas têm magnitudes muito diferentes. |
 | Exibir eixo duplo | Somente se aplica se você tiver duas métricas. Você pode ter um eixo Y à esquerda (para uma métrica) e outro à direta (para a outra métrica). Isso é útil quando métricas projetadas têm magnitudes muito diferentes. |
 | Mostrar anomalias | Melhora os gráficos de linha e tabelas de forma livre exibindo a detecção de anomalias. A detecção de anomalias em visualizações de linha inclui um valor esperado (linha tracejada) e um intervalo esperado (faixa sombreada). |
+| Mostrar previsão | Aprimora gráficos de linha e tabelas de forma livre exibindo valores de previsão. |
 
 ## Legenda {#legend}
 
