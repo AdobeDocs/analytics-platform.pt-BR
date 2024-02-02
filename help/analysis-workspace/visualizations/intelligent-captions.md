@@ -4,10 +4,10 @@ title: Legendas inteligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 1%
+source-wordcount: '442'
+ht-degree: 2%
 
 ---
 
@@ -29,6 +29,10 @@ Para iniciar legendas geradas automaticamente para uma visualização de linha, 
 ![Janela Análise do Launch mostrando as legendas inteligentes para a tendência de Exibições de produto. ](assets/intell-caps-1.png)
 
 Os insights de linguagem natural estão sendo gerados agora.
+
+Lembre-se
+
+* É necessário ter no mínimo 3 pontos de dados para que as legendas sejam geradas com êxito. Caso contrário, você poderá receber um erro com a frase &quot;Dados insuficientes para analisar&quot;.
 
 * As legendas são geradas sempre que os dados subjacentes selecionados mudam na tabela que possibilita a visualização.
 
