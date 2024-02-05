@@ -12,7 +12,7 @@ ht-degree: 65%
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (janeiro de 2024)
 
-**Última atualização:** quarta-feira, 30 de janeiro de 2024
+**Última atualização**: quarta-feira, 30 de janeiro de 2024
 
 Essas notas de versão abrangem o período de lançamento de 8 de janeiro de 2024 a 13 de fevereiro de 2024. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
