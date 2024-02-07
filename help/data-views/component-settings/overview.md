@@ -5,7 +5,7 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 61%
@@ -14,7 +14,7 @@ ht-degree: 61%
 
 # Configurações de componente
 
-As informações a seguir descrevem as configurações c que um componente de visualização de dados usa.
+As informações a seguir descrevem as configurações que um componente de visualização de dados usa.
 
 ![Configurações de componente descritas nesta seção](../assets/component-settings.png)
 
