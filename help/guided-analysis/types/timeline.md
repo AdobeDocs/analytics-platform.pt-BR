@@ -4,16 +4,16 @@ description: Explore padrões na atividade da sessão.
 feature: Guided Analysis
 keywords: análise do produto
 role: User
-source-git-commit: 5cd54973b08285badbedce273ac28371158f194c
+source-git-commit: ecdbe1b68aa0824bd9db4acefd3ef9059d9ac927
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
 
 # [!UICONTROL Linha do tempo] exibir
 
-A variável **[!UICONTROL Linha do tempo]** permite analisar sessões individuais para determinar padrões de comportamento. O painel direito permite selecionar IDs de pessoa para análise. A área central mostra a hora, o valor da propriedade e a duração dessa pessoa.
+A variável **[!UICONTROL Linha do tempo]** permite analisar sessões individuais para determinar padrões de comportamento. O painel direito permite selecionar a ID de pessoa que deseja analisar. A área central mostra a hora, o valor da propriedade selecionada e a duração de cada evento dessa pessoa.
 
 Essa análise exige que você adicione a variável **[!UICONTROL ID de pessoa]** componente padrão para o [visualização de dados](/help/data-views/component-reference.md#optional). Se você não tiver o [!UICONTROL ID de pessoa] componente adicionado à visualização de dados, a seguinte mensagem é exibida:
 
@@ -47,5 +47,5 @@ A variável [!UICONTROL Linha do tempo] view oferece as seguintes configuraçõe
 
 O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
 
-* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir dados de tendência. Essa configuração não afeta as exibições sem tendências, como Frequência.
+* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir dados de tendência. Essa configuração não afeta exibições sem tendências, como a Linha do tempo.
 * **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
