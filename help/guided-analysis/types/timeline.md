@@ -4,9 +4,9 @@ description: Explore padrões de experiência e conte melhores histórias ao usu
 feature: Guided Analysis
 keywords: análise do produto
 role: User
-source-git-commit: 2836582b13ae9aa971b521db7ed1c54805eb0e94
+source-git-commit: d7e1092e1b2b4e9decd8d601c4b6415b13f1e02a
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
@@ -17,10 +17,11 @@ A variável **[!UICONTROL Linha do tempo]** A visualização permite observar ev
 
 >[!NOTE]
 >
->A exibição Linha do tempo exige que o **[!UICONTROL ID de pessoa]** componente padrão esteja disponível no [visualização de dados](/help/data-views/component-reference.md#optional). A inclusão da ID de pessoa em uma visualização de dados é gerenciada pelo administrador de dados da Adobe Analytics, fornecendo às organizações controle total de privacidade sobre quem pode acessar esses dados. Se uma visualização de dados não tiver o [!UICONTROL ID de pessoa] componente adicionado, a seguinte mensagem será exibida:
+>A exibição Linha do tempo exige que o **[!UICONTROL ID de pessoa]** componente padrão esteja disponível no [visualização de dados](/help/data-views/component-reference.md#optional). A inclusão da ID de pessoa em uma visualização de dados é gerenciada pelo administrador de dados da Adobe Analytics, fornecendo às organizações controle total de privacidade sobre quem pode acessar esses dados.
 
-* **Administradores**: a propriedade PersonID é necessária para essa análise. Adicione PersonID à visualização de dados.
-* **Não administradores**: a propriedade PersonID é necessária para essa análise. Entre em contato com o administrador do Adobe Analytics.
+Se uma visualização de dados não tiver o [!UICONTROL ID de pessoa] componente adicionado, a seguinte mensagem será exibida:
+* **Administradores**: a propriedade PersonID é necessária para essa análise. Adicione a ID de pessoa à visualização de dados.
+* **Não administradores**: a propriedade PersonID é necessária para essa análise. Trabalhe com o administrador de Customer Journey Analytics para adicionar a ID de pessoa à visualização de dados.
 
 ## Casos de uso
 
