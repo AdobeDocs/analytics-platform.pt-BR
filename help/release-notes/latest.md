@@ -6,13 +6,13 @@ feature: Release Notes
 source-git-commit: 9f60d83673591aebeffeb6442bf9f8b897ab2f20
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 62%
+ht-degree: 95%
 
 ---
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (janeiro de 2024)
 
-**Última atualização:** quarta-feira, 30 de janeiro de 2024
+**Última atualização**: 30 de janeiro de 2024
 
 Essas notas de versão abrangem o período de lançamento de 8 de janeiro de 2024 a 13 de fevereiro de 2024. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -21,12 +21,12 @@ Essas notas de versão abrangem o período de lançamento de 8 de janeiro de 202
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Detalhes dos registros ignorados** | Você pode recuperar detalhes sobre por que os registros são ignorados ao configurar uma conexão. Consulte [Detalhes da conexão](../connections/manage-connections.md#connection-details) para obter mais informações. | terça-feira, 5 de fevereiro de 2024 | terça-feira, 5 de fevereiro de 2024 |
-| **Previsão de série temporal** | [Previsão](../analysis-workspace/c-forecast/forecasting.md) é um novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano) para tabelas de forma livre e gráficos de linha. | 31 de janeiro de 2024 | 21 de fevereiro de 2024 |
+| **Previsão de série temporal** | A [previsão](../analysis-workspace/c-forecast/forecasting.md) é um novo recurso do Analysis Workspace que prevê uma métrica calculada ou padrão com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano) para tabelas forma livre e gráficos de linhas. | 31 de janeiro de 2024 | 21 de fevereiro de 2024 |
 | **Atualizações na visualização do Resumo das métricas principais** | Ao usar a visualização Resumo da métrica principal, o Intervalo de datas de comparação agora pode ser atualizado automaticamente, dependendo se a opção Intervalo de datas de comparação escolhida é relativa ao intervalo de datas principal ou fixa. [Saiba mais](/help/analysis-workspace/visualizations/key-metric.md). | N/D | 17 de janeiro de 2024 |
-| **Adobe Product Analytics - Análise de taxas de retenção** | As taxas de retenção são uma nova análise guiada que permite medir os hábitos de retorno contínuos de seus usuários. [Saiba mais](../guided-analysis/types/retention-rates.md) | N/D | 8 de janeiro de 2024 |
-| **Adobe Product Analytics - Sobreposição de linha de tendência** | As linhas de tendência são uma nova configuração de sobreposição disponível no [Tendências de uso](/help/guided-analysis/types/usage.md) e ajuda para descrever um padrão mais claro nos dados. | N/D | 17 de janeiro de 2024 |
-| **Adobe Product Analytics - Melhorias no painel de consulta** | Na análise guiada, o painel de consulta à esquerda agora inclui as configurações Tipo de visualização e Contado como, anteriormente disponíveis nas configurações de visualização. | N/D | 31 de janeiro de 2024 |
-| **Adobe Product Analytics - Análise de fluxo de usuário** | Fluxos de usuários é uma nova análise guiada que permite explorar fluxos de eventos de usuários individuais que podem ajudá-lo a encontrar padrões de experiência e contar melhores histórias aos usuários. | N/D | quinta-feira, 7 de fevereiro de 2024 |
+| **Adobe Product Analytics: análise das taxas de retenção** | As taxas de retenção são uma nova análise guiada que permite medir os hábitos de retorno atuais dos seus usuários. [Saiba mais](../guided-analysis/types/retention-rates.md) | N/D | 8 de janeiro de 2024 |
+| **Adobe Product Analytics: sobreposição de linhas de tendência** | As linhas de tendência são uma nova configuração de sobreposição disponível na visualização [Tendências de uso](/help/guided-analysis/types/usage.md) que ajuda a representar um padrão mais claro nos dados. | N/D | 17 de janeiro de 2024 |
+| **Adobe Product Analytics: melhorias no painel de consulta** | Na análise guiada, o painel de consulta esquerdo agora inclui as configurações “Tipo de visualização” e “Contado como”, anteriormente disponíveis nas configurações de visualização. | N/D | 31 de janeiro de 2024 |
+| **Adobe Product Analytics: análise do fluxo de usuários** | Os fluxos de usuários são uma nova análise guiada que permite explorar fluxos de eventos de usuários individuais, podendo ajudar a encontrar padrões de experiência e contar melhor o histórico de usuários. | N/D | 7 de fevereiro de 2024 |
 
 {style="table-layout:auto"}
 
