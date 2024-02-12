@@ -4,24 +4,27 @@ description: Explore padrões de experiência e conte melhores histórias ao usu
 feature: Guided Analysis
 keywords: análise do produto
 role: User
-source-git-commit: d7e1092e1b2b4e9decd8d601c4b6415b13f1e02a
+source-git-commit: fef60995e9241eaad99f6f536b1f329757ea0830
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL Linha do tempo] exibir
 
-A variável **[!UICONTROL Linha do tempo]** A visualização permite observar eventos de sessão no nível do usuário ao longo do tempo para encontrar padrões de experiência e contar melhores histórias de usuário. O painel esquerdo permite filtrar para valores de propriedade que você deseja transmitir e o painel direito permite selecionar a ID de pessoa que você deseja analisar. A área central mostra o fluxo por sessão, consistindo em carimbo de data e hora, valores de propriedade e duração. Observe que a duração não está disponível para o último evento em uma determinada sessão.
+A variável **[!UICONTROL Linha do tempo]** permite observar eventos de sessão no nível do usuário ao longo do tempo para encontrar padrões de experiência e contar melhores histórias de usuário. O painel esquerdo permite filtrar para valores de propriedade que você deseja transmitir. O painel direito permite selecionar a ID de pessoa que deseja analisar. A área central mostra o fluxo por sessão, consistindo em carimbo de data e hora, valores de propriedade e duração. A duração não está disponível para o último evento em uma determinada sessão.
 
 >[!NOTE]
 >
 >A exibição Linha do tempo exige que o **[!UICONTROL ID de pessoa]** componente padrão esteja disponível no [visualização de dados](/help/data-views/component-reference.md#optional). A inclusão da ID de pessoa em uma visualização de dados é gerenciada pelo administrador de dados da Adobe Analytics, fornecendo às organizações controle total de privacidade sobre quem pode acessar esses dados.
 
 Se uma visualização de dados não tiver o [!UICONTROL ID de pessoa] componente adicionado, a seguinte mensagem será exibida:
-* **Administradores**: a propriedade PersonID é necessária para essa análise. Adicione a ID de pessoa à visualização de dados.
-* **Não administradores**: a propriedade PersonID é necessária para essa análise. Trabalhe com o administrador de Customer Journey Analytics para adicionar a ID de pessoa à visualização de dados.
+
+* **Administradores**: *A propriedade PersonID é necessária para esta análise. Adicione a ID de pessoa à visualização de dados.*
+* **Não administradores**: *A propriedade PersonID é necessária para esta análise. Trabalhe com o administrador de Customer Journey Analytics para adicionar a ID de pessoa à visualização de dados.*
+
+![Captura de tela da linha do tempo](../assets/timeline.png)
 
 ## Casos de uso
 
@@ -29,7 +32,7 @@ Os casos de uso para esse tipo de exibição incluem:
 
 * **Exploração de atrito**: Se você encontrar uma queda acentuada no [Fricção](friction.md) , você pode criar um segmento desses usuários e aplicá-lo nessa visualização para investigar possíveis causas.
 * **Comportamento de erro**: se os usuários encontrarem um erro de produto, você poderá explorar o que os usuários estavam fazendo antes ou depois de ver esse erro.
-* **Validação da coleção de dados**: os administradores de dados podem filtrar essa exibição para sua própria ID de pessoa e usá-la para validar se a implementação de sua organização está funcionando como esperado.
+* **Validação da coleção de dados**: os administradores de dados podem filtrar essa exibição para sua própria ID de pessoa para validar se a implementação de sua organização está funcionando como esperado.
 
 ## Painel de consulta
 
@@ -44,8 +47,8 @@ A variável [!UICONTROL Linha do tempo] view oferece as seguintes configuraçõe
 
 * **[!UICONTROL Mostrar como]**: mostra os valores de propriedade desejados.
    * [!UICONTROL Mostrar tudo]: mostra todos os valores de propriedade em uma sessão.
-   * [!UICONTROL Realce]: destaque visualmente os valores de propriedade em uma sessão que corresponde aos filtros de consulta.
-   * [!UICONTROL Exibir apenas]: mostrar apenas os valores de propriedade em uma sessão que corresponde aos filtros de consulta.
+   * [!UICONTROL Realce]: destaca visualmente os valores de propriedade em uma sessão que corresponde aos filtros de consulta.
+   * [!UICONTROL Exibir apenas]: mostrar apenas valores de propriedade em uma sessão que corresponde aos filtros de consulta.
 
 ## Intervalo de datas
 
