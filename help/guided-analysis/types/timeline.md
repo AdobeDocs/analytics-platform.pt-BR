@@ -4,7 +4,7 @@ description: Observe os eventos de sessão no nível do usuário ao longo do tem
 feature: Guided Analysis
 keywords: análise do produto
 role: User
-source-git-commit: 6f3725653453e31244bfed34670782fe9d9c0c2f
+source-git-commit: 2eeaedd1c478fb9ae7a264a0af4a35327268c499
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -15,6 +15,8 @@ ht-degree: 1%
 
 A variável **[!UICONTROL Linha do tempo]** permite observar eventos de sessão no nível do usuário ao longo do tempo para encontrar padrões de experiência e contar melhores histórias de usuário. O painel esquerdo permite filtrar o fluxo por valores de propriedade e segmentos. O painel direito permite selecionar de uma lista aleatória de usuários que correspondem aos critérios do filtro. A área central mostra o fluxo do usuário selecionado por sessão, consistindo em carimbo de data e hora, valores de propriedade e duração. A duração não está disponível para o último evento em uma determinada sessão.
 
+![Captura de tela da linha do tempo](../assets/timeline.png)
+
 >[!NOTE]
 >
 >A exibição Linha do tempo exige que o **[!UICONTROL ID de pessoa]** componente padrão esteja disponível no [visualização de dados](/help/data-views/component-reference.md#optional). A inclusão da ID de pessoa em uma visualização de dados é gerenciada pelo administrador do Customer Journey Analytics, fornecendo à sua organização controle total de privacidade sobre quem pode acessar esses dados.
@@ -23,8 +25,6 @@ Se uma visualização de dados não tiver o [!UICONTROL ID de pessoa] componente
 
 * **Administradores**: *A propriedade PersonID é necessária para esta análise. Adicione a ID de pessoa à visualização de dados.*
 * **Não administradores**: *A propriedade PersonID é necessária para esta análise. Trabalhe com o administrador de Customer Journey Analytics para adicionar a ID de pessoa à visualização de dados.*
-
-![Captura de tela da linha do tempo](../assets/timeline.png)
 
 ## Casos de uso
 
