@@ -1,23 +1,23 @@
 ---
 title: Exibição da linha do tempo
-description: Explore padrões de experiência e conte melhores histórias ao usuário.
+description: Observe os eventos de sessão no nível do usuário ao longo do tempo para encontrar padrões de experiência.
 feature: Guided Analysis
 keywords: análise do produto
 role: User
-source-git-commit: fef60995e9241eaad99f6f536b1f329757ea0830
+source-git-commit: 6f3725653453e31244bfed34670782fe9d9c0c2f
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL Linha do tempo] exibir
 
-A variável **[!UICONTROL Linha do tempo]** permite observar eventos de sessão no nível do usuário ao longo do tempo para encontrar padrões de experiência e contar melhores histórias de usuário. O painel esquerdo permite filtrar para valores de propriedade que você deseja transmitir. O painel direito permite selecionar a ID de pessoa que deseja analisar. A área central mostra o fluxo por sessão, consistindo em carimbo de data e hora, valores de propriedade e duração. A duração não está disponível para o último evento em uma determinada sessão.
+A variável **[!UICONTROL Linha do tempo]** permite observar eventos de sessão no nível do usuário ao longo do tempo para encontrar padrões de experiência e contar melhores histórias de usuário. O painel esquerdo permite filtrar o fluxo por valores de propriedade e segmentos. O painel direito permite selecionar de uma lista aleatória de usuários que correspondem aos critérios do filtro. A área central mostra o fluxo do usuário selecionado por sessão, consistindo em carimbo de data e hora, valores de propriedade e duração. A duração não está disponível para o último evento em uma determinada sessão.
 
 >[!NOTE]
 >
->A exibição Linha do tempo exige que o **[!UICONTROL ID de pessoa]** componente padrão esteja disponível no [visualização de dados](/help/data-views/component-reference.md#optional). A inclusão da ID de pessoa em uma visualização de dados é gerenciada pelo administrador de dados da Adobe Analytics, fornecendo às organizações controle total de privacidade sobre quem pode acessar esses dados.
+>A exibição Linha do tempo exige que o **[!UICONTROL ID de pessoa]** componente padrão esteja disponível no [visualização de dados](/help/data-views/component-reference.md#optional). A inclusão da ID de pessoa em uma visualização de dados é gerenciada pelo administrador do Customer Journey Analytics, fornecendo à sua organização controle total de privacidade sobre quem pode acessar esses dados.
 
 Se uma visualização de dados não tiver o [!UICONTROL ID de pessoa] componente adicionado, a seguinte mensagem será exibida:
 
