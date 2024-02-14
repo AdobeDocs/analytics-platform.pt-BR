@@ -4,7 +4,7 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: b49db376cb62c0668b8433c5dc5f66481966c333
 workflow-type: tm+mt
 source-wordcount: '3065'
 ht-degree: 83%
@@ -20,7 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Fevereiro de 2024** | |
-| Esclarecimento de que os administradores de produtos sempre têm acesso às tabelas completas de exportação | As seguintes alterações foram feitas para esclarecer que os usuários com a função de Administrador de produto atribuída têm acesso à exportação de tabelas completas do Analysis Workspace por padrão: <ul><li>Adição de um novo marcador a [Permissões padrão do administrador do produto](/help/admin/cja-access-control.md#product-admin-default-permissions). <p>Adição de uma observação sob o [requisitos mínimos para exportar tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</p> |
+| Esclarecimento de que os administradores de produtos sempre têm acesso às tabelas completas de exportação | As seguintes alterações foram feitas para esclarecer que os usuários com a função de Administrador de produto atribuída têm acesso à exportação de tabelas completas do Analysis Workspace por padrão: <ul><li>Adição de um novo marcador a [Permissões padrão do administrador do produto](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Adição de uma observação sob o [requisitos mínimos para exportar tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
 | Detalhes do registro ignorados | Adição de documentação sobre a funcionalidade de detalhes de registros ignorados em Conexões. Consulte [Detalhes da conexão](../connections/manage-connections.md#connection-details) para obter mais informações. |
 | **Janeiro de 2024** | |
 | Previsão | Adição de documentação sobre [forecasting](../analysis-workspace/c-forecast/forecasting.md), o novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano) para tabelas de forma livre e gráficos de linha. |
