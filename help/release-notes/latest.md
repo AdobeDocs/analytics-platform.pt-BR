@@ -3,36 +3,36 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 9f60d83673591aebeffeb6442bf9f8b897ab2f20
+source-git-commit: 29c124da55842bcb9085059a9008f7a7d6baf44e
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 95%
+source-wordcount: '525'
+ht-degree: 47%
 
 ---
 
-# Notas de versão atuais do Adobe Customer Journey Analytics (janeiro de 2024)
+# Notas de versão atuais do Adobe Customer Journey Analytics (fevereiro de 2024)
 
-**Última atualização**: 30 de janeiro de 2024
+**Última atualização**: quinta-feira, 14 de fevereiro de 2024
 
-Essas notas de versão abrangem o período de lançamento de 8 de janeiro de 2024 a 13 de fevereiro de 2024. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
+Essas notas de versão abrangem o período de lançamento de quinta-feira, 14 de fevereiro de 2024 a terça-feira, 11 de março de 2024. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
 ## Recursos novos ou atualizados
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Detalhes dos registros ignorados** | Você pode recuperar detalhes sobre por que os registros são ignorados ao configurar uma conexão. Consulte [Detalhes da conexão](../connections/manage-connections.md#connection-details) para obter mais informações. | terça-feira, 5 de fevereiro de 2024 | terça-feira, 5 de fevereiro de 2024 |
-| **Previsão de série temporal** | A [previsão](../analysis-workspace/c-forecast/forecasting.md) é um novo recurso do Analysis Workspace que prevê uma métrica calculada ou padrão com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano) para tabelas forma livre e gráficos de linhas. | 31 de janeiro de 2024 | 21 de fevereiro de 2024 |
-| **Atualizações na visualização do Resumo das métricas principais** | Ao usar a visualização Resumo da métrica principal, o Intervalo de datas de comparação agora pode ser atualizado automaticamente, dependendo se a opção Intervalo de datas de comparação escolhida é relativa ao intervalo de datas principal ou fixa. [Saiba mais](/help/analysis-workspace/visualizations/key-metric.md). | N/D | 17 de janeiro de 2024 |
-| **Adobe Product Analytics: análise das taxas de retenção** | As taxas de retenção são uma nova análise guiada que permite medir os hábitos de retorno atuais dos seus usuários. [Saiba mais](../guided-analysis/types/retention-rates.md) | N/D | 8 de janeiro de 2024 |
-| **Adobe Product Analytics: sobreposição de linhas de tendência** | As linhas de tendência são uma nova configuração de sobreposição disponível na visualização [Tendências de uso](/help/guided-analysis/types/usage.md) que ajuda a representar um padrão mais claro nos dados. | N/D | 17 de janeiro de 2024 |
-| **Adobe Product Analytics: melhorias no painel de consulta** | Na análise guiada, o painel de consulta esquerdo agora inclui as configurações “Tipo de visualização” e “Contado como”, anteriormente disponíveis nas configurações de visualização. | N/D | 31 de janeiro de 2024 |
-| **Adobe Product Analytics: análise do fluxo de usuários** | Os fluxos de usuários são uma nova análise guiada que permite explorar fluxos de eventos de usuários individuais, podendo ajudar a encontrar padrões de experiência e contar melhor o histórico de usuários. | N/D | 7 de fevereiro de 2024 |
+| **Previsão de série temporal** | [Previsão](../analysis-workspace/c-forecast/forecasting.md) é um novo recurso do Analysis Workspace usado para prever uma métrica padrão ou calculada com qualquer granularidade de tempo compatível (por hora, dia, semana, mês e ano) para tabelas de forma livre e gráficos de linha. | 31 de janeiro de 2024 | 21 de fevereiro de 2024 |
+| **Relatórios do Media Analytics - Público-alvo médio por minuto (AMA)** | O painel Audiência média por minuto agora está disponível no CJA. Os clientes do Media Analytics podem usar o painel Audiência média por minuto para entender melhor o consumo médio de seu conteúdo. A Audiência média por minuto permite as comparações da programação de qualquer comprimento ou gênero. Além disso, os clientes podem comparar ou anexar essa Audiência média por minuto digital às métricas de minuto médio linear da TV. Esse painel oferece mais flexibilidade para medir a audiência média em períodos de tempo personalizados, bem como quando a classificação de duração for atualizada após o fato. |  | sábado, 16 de fevereiro de 2024 |
+| **Métricas de contagem de linhas para dados de pesquisa e perfil** | As métricas de contagem de linhas para conjuntos de dados configurados como parte de uma conexão agora incluem registros adicionados, ignorados ou excluídos dos conjuntos de dados de perfil e pesquisa. |  | quinta-feira, 14 de fevereiro de 2024 |
+| **Detecção de bot da Experience Edge** | [Detecção de bot](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html) O permite identificar eventos gerados pelo SDK da Web, SDK móvel e API do servidor como sendo gerados por spiders e bots conhecidos. | | 21 de fevereiro de 2024 |
+| **Métricas de uso** | A interface de métricas de uso mostra o uso de linhas assimiladas e reportáveis em todas as conexões. Essa interface permite determinar se o uso de Customer Journey Analytics está em conformidade com o que foi concordado contratualmente. | quarta-feira, 20 de fevereiro de 2024 | Início de março de 2024 |
+| **Adobe Product Analytics: Compartilhar com qualquer pessoa** | Permite compartilhar um link somente leitura para projetos do Adobe Product Analytics com pessoas que não têm acesso ao Product Analytics. |  | 21 de fevereiro de 2024 |
+| **Adobe Product Analytics: Aplicar métricas calculadas** | Agora é possível acessar as métricas calculadas criadas no Analysis Workspace ou no construtor de Métrica calculada na visualização Tendências: uso, permitindo analisar a tendência e comparar métricas ao longo do tempo. |  | sábado, 16 de fevereiro de 2024 |
 
 {style="table-layout:auto"}
 
 ## Correções no Customer Journey Analytics
 
-AN-310972; AN-332774; AN-332793; AN-332796; AN-333157; AN-334067; AN-334134; AN-334968; AN-335315; AN-335518; AN-335533; AN-335736;
+AN-333172; AN-336887; AN-337402; AN-337593; AN-338482; AN-338684; AN-339883; AN-340200
 
 ## Avisos importantes para admins do Customer Journey Analytics
 
