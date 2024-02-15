@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: análise do produto
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 715d6f33b3cd3f1188e0bd3e6aa3785346c4c302
+source-git-commit: b8e01079411d8a3edacb7e69a7bc529bf639c2b8
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 4%
 
 ---
@@ -44,13 +44,13 @@ Os casos de uso para esse tipo de exibição incluem:
 O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Evento de início e retorno]**: os critérios do evento que um usuário deve utilizar para se qualificar para inclusão na análise. Um evento é compatível, mas você pode incluir filtros de propriedade.
-* **[!UICONTROL Pessoas]**: os segmentos que você deseja medir. Cada segmento selecionado adiciona uma linha à tabela de coorte. É possível incluir até três segmentos.
+* **[!UICONTROL Contado como]**: como você deseja medir os usuários retidos. As opções incluem [!UICONTROL Usuários retidos] e [!UICONTROL Porcentagem de usuários retidos].
+* **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. Cada segmento selecionado adiciona uma linha à tabela de coorte. É possível incluir até três segmentos.
 
 ## Configurações de gráficos
 
 A variável [!UICONTROL Taxas de retenção] view oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **[!UICONTROL Métrica]**: como você deseja medir os usuários retidos. As opções incluem [!UICONTROL Usuários retidos] e [!UICONTROL Porcentagem de usuários retidos].
 * **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Barra] e [!UICONTROL Linha].
 
 ## Configurações de duração
