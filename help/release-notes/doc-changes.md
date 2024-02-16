@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: b49db376cb62c0668b8433c5dc5f66481966c333
+source-git-commit: 5f96aa52562c2281e4a0c8fa97fb8b4dff04042e
 workflow-type: tm+mt
-source-wordcount: '3065'
-ht-degree: 83%
+source-wordcount: '3106'
+ht-degree: 82%
 
 ---
 
@@ -20,8 +20,9 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Fevereiro de 2024** | |
+| Adição de requisitos de permissão para fazer upload de arquivos em buckets ARN e GCP de função do Amazon S3 ao configurar locais de exportação na nuvem | Adição de requisitos de permissão exatos para fazer upload de arquivos para os buckets do Amazon S3 Role ARN e Google Cloud Platform quando [configuração de locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md). |
 | Esclarecimento de que os administradores de produtos sempre têm acesso às tabelas completas de exportação | As seguintes alterações foram feitas para esclarecer que os usuários com a função de Administrador de produto atribuída têm acesso à exportação de tabelas completas do Analysis Workspace por padrão: <ul><li>Adição de um novo marcador a [Permissões padrão do administrador do produto](/help/admin/cja-access-control.md#product-admin-default-permissions).</li><li>Adição de uma observação sob o [requisitos mínimos para exportar tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
-| Detalhes do registro ignorados | Adição de documentação sobre a funcionalidade de detalhes de registros ignorados em Conexões. Consulte [Detalhes da conexão](../connections/manage-connections.md#connection-details) para obter mais informações. |
+| Detalhes do registro ignorados | Adição de documentação sobre a funcionalidade de detalhes de registros ignorados em Conexões. Consulte [Detalhes de conexão](../connections/manage-connections.md#connection-details) para obter mais informações. |
 | **Janeiro de 2024** | |
 | Previsão | Adição de documentação sobre [forecasting](../analysis-workspace/c-forecast/forecasting.md), o novo recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano) para tabelas de forma livre e gráficos de linha. |
 | Atualização da documentação para adicionar contas e locais ao exportar tabelas completas | Atualização da documentação para refletir pequenas atualizações de interface ao configurar uma nova conta ou local ao [exportação de tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace).<p>Um novo [!UICONTROL **Adicionar conta**] agora está disponível na [!UICONTROL **Conta**] menu suspenso. A variável [!UICONTROL **Adicionar localização**] que estava disponível anteriormente como um botão ao lado da opção [!UICONTROL **Nome do local**] agora está disponível dentro do próprio menu. |
