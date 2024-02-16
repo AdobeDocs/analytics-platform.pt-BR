@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: análise do produto
 role: User
-source-git-commit: 1d6a241766455a5da978b7e8401f1d7c0ba688d6
+source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '752'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Os casos de uso para esse tipo de exibição incluem:
 O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Eventos e métricas]**: os eventos ou as métricas que você deseja medir. Cada seleção é representada como uma série de gráfico e uma linha de tabela. Eventos e métricas não podem ser combinados na consulta; uma vez feita a primeira seleção, as seleções de consulta restantes devem ser do mesmo tipo. É possível incluir até cinco seleções.
-* **[!UICONTROL Contado como]**: A métrica que você deseja medir. As opções incluem Eventos, Sessões, Usuários, Porcentagem de usuários, Eventos por sessão e Eventos por usuário. As opções contadas como são aplicáveis somente a consultas de eventos e são removidas para consultas de métricas.
+* **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. As opções incluem Eventos, Sessões, Usuários, Porcentagem de usuários, Eventos por sessão e Eventos por usuário. As opções contadas como são aplicáveis somente a consultas de eventos e são removidas para consultas de métricas.
 * **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. Cada segmento selecionado dobra o número de séries de gráficos e linhas de tabela. É possível incluir até cinco segmentos.
 * **[!UICONTROL Detalhamento da propriedade]**: divide a série de gráficos e as linhas de tabela pelos valores da propriedade selecionada. Há suporte para uma única propriedade de detalhamento. Os 20 valores principais são exibidos na tabela e até dez valores podem ser exibidos no gráfico. Você pode ocultar ou expor uma linha no gráfico alternando a variável ![Mostrar ícone ocultar](../assets/hide-in-chart.png) ícone.
 
