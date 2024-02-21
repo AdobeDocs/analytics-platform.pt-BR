@@ -4,7 +4,7 @@ description: Observe os eventos de sessão no nível do usuário ao longo do tem
 feature: Guided Analysis
 keywords: análise do produto
 role: User
-source-git-commit: 2eeaedd1c478fb9ae7a264a0af4a35327268c499
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 A variável **[!UICONTROL Linha do tempo]** permite observar eventos de sessão no nível do usuário ao longo do tempo para encontrar padrões de experiência e contar melhores histórias de usuário. O painel esquerdo permite filtrar o fluxo por valores de propriedade e segmentos. O painel direito permite selecionar de uma lista aleatória de usuários que correspondem aos critérios do filtro. A área central mostra o fluxo do usuário selecionado por sessão, consistindo em carimbo de data e hora, valores de propriedade e duração. A duração não está disponível para o último evento em uma determinada sessão.
 
-![Captura de tela da linha do tempo](../assets/timeline.png)
+![Captura de tela da linha do tempo](../assets/timeline.png){style="border:1px solid gray"}
 
 >[!NOTE]
 >

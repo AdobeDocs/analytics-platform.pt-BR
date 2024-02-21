@@ -5,9 +5,9 @@ feature: Guided Analysis
 keywords: análise do produto
 exl-id: 2e004894-dc1b-42a7-a060-240f0151b2f2
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1487'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 
 {style="table-layout:auto"}
 
-![Exibição de atrito para varejo](assets/retail-funnel-friction.png)
+![Exibição de atrito para varejo](assets/retail-funnel-friction.png){style="border:1px solid gray"}
 
-![Modo de exibição de uso para varejo](assets/retail-trends-usage.png)
+![Modo de exibição de uso para varejo](assets/retail-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -44,11 +44,11 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 
 {style="table-layout:auto"}
 
-![Visualização de atrito para serviços financeiros](assets/fsi-funnel-friction.png)
+![Visualização de atrito para serviços financeiros](assets/fsi-funnel-friction.png){style="border:1px solid gray"}
 
-![Modo de exibição de uso para serviços financeiros](assets/fsi-trends-usage.png)
+![Modo de exibição de uso para serviços financeiros](assets/fsi-trends-usage.png){style="border:1px solid gray"}
 
-![Exibição ativa para serviços financeiros](assets/fsi-user-growth-active.png)
+![Exibição ativa para serviços financeiros](assets/fsi-user-growth-active.png){style="border:1px solid gray"}
 
 +++
 
@@ -63,11 +63,11 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 
 {style="table-layout:auto"}
 
-![Vista de atrito para viagem e hospitalidade](assets/th-funnel-friction.png)
+![Vista de atrito para viagem e hospitalidade](assets/th-funnel-friction.png){style="border:1px solid gray"}
 
-![Visualização de uso para viagem e hospitalidade](assets/th-trends-usage.png)
+![Visualização de uso para viagem e hospitalidade](assets/th-trends-usage.png){style="border:1px solid gray"}
 
-![Tendências de conversão para viagem e hospitalidade](assets/th-funnel-conversion-trends.png)
+![Tendências de conversão para viagem e hospitalidade](assets/th-funnel-conversion-trends.png){style="border:1px solid gray"}
 
 +++
 
@@ -79,15 +79,15 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 | **Identificar risco de churn** | Uma organização vê uma alta taxa de rotatividade de clientes que se inscrevem em sua plataforma para assistir a um evento sazonal e cancelar imediatamente após o término do evento. A identificação rápida desses usuários permite que eles mostrem recomendações que motivam os clientes a permanecer envolvidos com a plataforma. | **Manter assinantes felizes.** Encontre conteúdo que envolva um segmento de crescimento para intervir com recomendações. | [Exibição de crescimento de usuário ativo](types/active.md)<br>[Visão de crescimento líquido](types/net-growth.md) |
 | **Encontrar oportunidades para venda adicional** | Uma parte vital para o crescimento da receita de uma organização é entender quais ofertas no aplicativo são mais atraentes para os fãs enquanto eles estão no estádio. A análise guiada permite ver exatamente quais ofertas são mais eficazes. | **Aumente a receita auxiliar.** Entenda o impacto das ofertas no aplicativo na promoção dos comportamentos de compra. | [Visualização de primeiro uso](types/first-use.md)<br>[Visualização de atrito](types/friction.md) |
 | **Otimizar a experiência entre dispositivos** | Uma organização deseja analisar como os assinantes interagem com vários dispositivos/aplicativos. Esse conhecimento permite que eles entendam os padrões de consumo de conteúdo e determinem onde seria melhor redirecionar para eles. | **Personalize a experiência.** Entenda qual conteúdo corresponde melhor aos assinantes em cada dispositivo. | [Exibição de tendências de uso](types/usage.md) |
-| **Desviar chamadas da central de atendimento** | Uma organização usa a análise guiada para identificar um problema em que o pagamento automático não está funcionando, o que levou os clientes frustrados a ligar para o centro de suporte para cancelar o plano. | **Reduza as chamadas de suporte.** Crie uma melhor experiência do cliente e diminua as chamadas para o atendimento ao cliente. | [Visualização de atrito](types/friction.md)<br>[Exibição de tendências de conversão](types/conversion-trends.md) |
+| **Desviar chamadas da central de atendimento** | Uma organização usa análise guiada para identificar um problema em que o pagamento automático não está funcionando, o que levou os clientes frustrados a ligar para o centro de suporte para cancelar o plano. | **Reduza as chamadas de suporte.** Crie uma melhor experiência do cliente e diminua as chamadas para o atendimento ao cliente. | [Visualização de atrito](types/friction.md)<br>[Exibição de tendências de conversão](types/conversion-trends.md) |
 
 {style="table-layout:auto"}
 
-![Vista de atrito para mídia e entretenimento](assets/me-funnel-friction.png)
+![Vista de atrito para mídia e entretenimento](assets/me-funnel-friction.png){style="border:1px solid gray"}
 
-![Exibição ativa de mídia e entretenimento](assets/me-user-growth-active.png)
+![Exibição ativa de mídia e entretenimento](assets/me-user-growth-active.png){style="border:1px solid gray"}
 
-![](assets/me-trends-usage.png)
+![Visualização de uso para mídia e entretenimento](assets/me-trends-usage.png){style="border:1px solid gray"}
 
 +++
 
@@ -95,14 +95,14 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 
 | Caso de uso | Exemplo | Impacto | Análise |
 | --- | --- | --- | --- |
-| **Melhorar os resultados de saúde dos pacientes** | Uma organização tem os dados para concentrar seus esforços no crescimento. Antes de usar a análise guiada, eles não tinham uma compreensão clara de quantos membros do plano de bem-estar por semana simplesmente pararam de usá-la completamente. | **Reduza as consultas médicas.** Usuários inativos rapidamente identificados para reengajamento. | [Exibições ativas de crescimento do usuário](types/active.md) |
+| **Melhorar os resultados de saúde dos pacientes** | Uma organização tem os dados para concentrar seus esforços no crescimento. Antes de usar a análise guiada, eles não tinham uma compreensão clara de quantos membros do plano de bem-estar por semana simplesmente pararam de usá-lo completamente. | **Reduza as consultas médicas.** Usuários inativos rapidamente identificados para reengajamento. | [Exibições ativas de crescimento do usuário](types/active.md) |
 | **Melhorar a experiência do paciente** | A visibilidade de quantos pacientes entram em contato com os call centers para uma simples redefinição de senha renovou a paixão de um analista por se concentrar no fortalecimento da experiência do paciente. | **Reduzir o custo geral de atendimento.** Crie uma melhor experiência para o paciente e diminua as chamadas para os serviços de pacientes. | [Exibição de tendências de uso](types/usage.md)<br>[Visualização de atrito](types/friction.md) |
 | **Identificar ações repetidas entre canais por segmento** | Uma organização deseja entender como os membros qualificados da Medicare estão ativos com o uso do plano para fornecer mensagens específicas a eles em seus produtos digitais. Os insights obtidos com a análise guiada ajudam a tornar o marketing mais eficaz. | **Personalize as opções de inscrição do Medicare.** Comparar ações sequenciais comuns pelos membros mais ativos do plano. | [Visualização de atrito](types/friction.md)<br>[Exibição de crescimento de usuário ativo](types/active.md) |
 | **Manter os melhores talentos do setor** | Os recursos do Analytics de uma organização ficam limitados no tempo. A análise guiada permite que a organização obtenha rapidamente os dados de uso do produto necessários para chamadas de atualização de liderança. | **Reduza a carga de trabalho do analista.** Obtenha respostas mais rapidamente. Relatórios acessíveis para quando é mais importante. | [Análise guiada](overview.md) |
 
 {style="table-layout:auto"}
 
-![Vista de atrito para cuidados de saúde](assets/healthcare-funnel-friction.png)
+![Vista de atrito para cuidados de saúde](assets/healthcare-funnel-friction.png){style="border:1px solid gray"}
 
 +++
 
@@ -117,6 +117,6 @@ Os casos de uso para análise guiada variam de acordo com o setor. Esta página 
 
 {style="table-layout:auto"}
 
-![Visualização de uso para B2B](assets/b2b-trends-usage.png)
+![Visualização de uso para B2B](assets/b2b-trends-usage.png){style="border:1px solid gray"}
 
 +++

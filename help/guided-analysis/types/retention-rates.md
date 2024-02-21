@@ -5,7 +5,7 @@ feature: Guided Analysis
 keywords: análise do produto
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: e448f6ddbff2673abbd2920aacf41d4268f3ce07
+source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 4%
@@ -29,7 +29,7 @@ Os compartimentos de duração subsequentes contam o número de usuários que re
 * Se um usuário se envolver com o evento vários dias após a qualificação inicial para inclusão na análise, ele aparecerá no período de duração de qualificação mais recente e em todos os períodos de duração anteriores a ele. Esse tipo de cálculo às vezes é chamado de &quot;retenção não vinculada&quot;.
 * Se um usuário se envolver com o evento muitas vezes durante o intervalo de datas configurado, somente o primeiro e o último eventos serão incluídos na análise.
 
-![Captura de tela Taxas de retenção](../assets/retention-rates.png)
+![Captura de tela Taxas de retenção](../assets/retention-rates.png){style="border:1px solid gray"}
 
 ## Casos de uso
 
