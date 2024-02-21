@@ -5,10 +5,10 @@ exl-id: e23ce27a-77ab-4641-a126-93f00d4e6e14
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 20f48259881bade1978909610055d6b20b894092
-workflow-type: ht
-source-wordcount: '980'
-ht-degree: 100%
+source-git-commit: 949f0870c8607879d4f685f4fbeb838ddb68f80a
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -29,6 +29,7 @@ Esses componentes padrão obrigatórios são adicionados a cada visualização d
 | [!UICONTROL Pessoas] | Métrica | Baseado na ID de pessoa especificada em uma [!UICONTROL Conexão]. |
 | [!UICONTROL Sessões] | Métrica | Baseado nas configurações de sessão da visualização de dados. |
 | [!UICONTROL Eventos] | Métrica | O número de linhas de todos os conjuntos de dados de eventos em uma [!UICONTROL Conexão]. |
+| [!UICONTROL Segundos] | Dimensão | O segundo em que um determinado evento aconteceu (arredondado para baixo). O primeiro item de dimensão é o primeiro segundo no intervalo de datas, e o último item de dimensão é o último segundo no intervalo de datas. |
 | [!UICONTROL Minuto] | Dimensão | O minuto em que um determinado evento aconteceu (arredondado para baixo). O primeiro item de dimensão é o primeiro minuto no intervalo de datas, e o último item de dimensão é o último minuto no intervalo de datas. |
 | [!UICONTROL Hora] | Dimensão | A hora em que um determinado evento aconteceu (arredondada para baixo). O primeiro item de dimensão é a primeira hora no intervalo de datas, e o último item de dimensão é a última hora no intervalo de datas. |
 | [!UICONTROL Dia] | Dimensão | O dia em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro dia no intervalo de datas, e o último item de dimensão é o último dia no intervalo de datas. |

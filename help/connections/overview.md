@@ -5,16 +5,17 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '102'
-ht-degree: 100%
+source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 39%
 
 ---
 
 # Visão geral das conexões
 
-Uma conexão permite integrar conjuntos de dados do [!DNL Adobe Experience Platform] ao [!UICONTROL Espaço de trabalho]. Para criar relatórios sobre conjuntos de dados do [!DNL Experience Platform], primeiro é necessário estabelecer uma conexão entre os conjuntos de dados no [!DNL Experience Platform] e no [!UICONTROL Espaço de trabalho].
+As conexões permitem que os administradores de produtos do Customer Journey Analytics estabeleçam conexões com diferentes fontes de dados da AEP, como conjuntos de dados de evento, pesquisa e perfil. Essas conexões permitem a integração de dados de uma Conexão com uma Visualização de dados derivada. Recomendamos restringir o acesso ao gerenciamento de Conexões a um grupo de gerenciamento principal. As configurações no nível da conexão têm implicações contratuais relacionadas às alocações de volume para dados trazidos para o Customer Journey Analytics.
+As conexões são a base do CJA e são criadas a partir de conjuntos de dados de origem da AEP. O Acesso a Conexões também oferece a capacidade de exibir o Gerenciador de conexões, que permite visualizar os conjuntos de dados subjacentes que compõem a conexão, bem como fazer seleções críticas de edição e configuração.
 
 Veja um vídeo com uma visão geral:
 
