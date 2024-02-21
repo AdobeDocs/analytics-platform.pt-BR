@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Guided Analysis
 keywords: análise do produto
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '760'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,7 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
+* **[!UICONTROL Exibir]**: alterne entre esse tipo de visualização e [Frequência](frequency.md).
 * **[!UICONTROL Eventos e métricas]**: os eventos ou as métricas que você deseja medir. Cada seleção é representada como uma série de gráfico e uma linha de tabela. Eventos e métricas não podem ser combinados na consulta; uma vez feita a primeira seleção, as seleções de consulta restantes devem ser do mesmo tipo. É possível incluir até cinco seleções.
 * **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. As opções incluem Eventos, Sessões, Usuários, Porcentagem de usuários, Eventos por sessão e Eventos por usuário. As opções contadas como são aplicáveis somente a consultas de eventos e são removidas para consultas de métricas.
 * **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. Cada segmento selecionado dobra o número de séries de gráficos e linhas de tabela. É possível incluir até cinco segmentos.
