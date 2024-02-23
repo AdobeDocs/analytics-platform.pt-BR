@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
-workflow-type: ht
-source-wordcount: '1483'
-ht-degree: 100%
+source-git-commit: 9314aae4c62e5c7a21495beeea0a5d69c6e113a1
+workflow-type: tm+mt
+source-wordcount: '1455'
+ht-degree: 95%
 
 ---
 
@@ -66,11 +66,7 @@ Com essa flexibilidade, você pode encontrar situações em que um único campo 
 
 ## Alterações no conceito de segmentos
 
-A Adobe renomeou o componente “segmentos” como “filtros” para alinhar-se melhor aos padrões do setor e fornecer uma melhor distinção com segmentos na Adobe Experience Platform.
-
-O [!UICONTROL Customer Journey Analytics] não usa mais eVars, propriedades ou eventos; em vez disso, ele usa o nome do campo do esquema da Experience Platform para o qual foram mapeados. Com essa alteração, nenhum dos segmentos existentes no Adobe Analytics é compatível com o [!UICONTROL Customer Journey Analytics]. Se você quiser mover segmentos existentes do Adobe Analytics para o Customer Journey Analytics, assista ao vídeo a seguir:
-
->[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
+Tecnicamente, embora os segmentos não sejam migrados do Adobe Analytics para o Customer Journey Analytics, você pode usar a ferramenta de migração de componentes para recriar os segmentos do Adobe Analytics no Customer Journey Analytics. Os segmentos são recriados em Customer Journey Analytics com base nas dimensões e métricas mapeadas. Para obter mais informações, consulte [Preparar-se para migrar componentes e projetos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=pt-BR).
 
 Embora ainda não seja possível compartilhar ou publicar [!UICONTROL filtros] ([!UICONTROL segmentos]) do [!DNL Customer Journey Analytics] para o Perfil unificado da Experience Platform, essa funcionalidade está em desenvolvimento.
 
