@@ -3,7 +3,7 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 70705430e578ad49a919bc8ad172adf7d28c4887
+source-git-commit: fd12f9b90c3240d10bf2fd5e22a2983b844051b5
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 80%
@@ -21,7 +21,7 @@ Essas notas de versão abrangem o período de lançamento de 14 de fevereiro de 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
 | **Previsão de série temporal** | A [previsão](../analysis-workspace/c-forecast/forecasting.md) é um novo recurso do Analysis Workspace usado para prever uma métrica padrão ou calculada com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano) para tabelas de forma livre e gráficos de linhas. | 31 de janeiro de 2024 | 21 de fevereiro de 2024 |
-| **Relatórios do Media Analytics – Público-alvo médio por minuto (AMA)** | O painel Média de público-alvo por minuto agora está disponível no CJA. Os clientes do Media Analytics podem usar o painel Média de público-alvo por minuto para entender melhor o consumo médio de seu conteúdo. A Audiência média por minuto permite as comparações da programação de qualquer comprimento ou gênero. Além disso, os clientes podem comparar ou anexar essa Audiência média por minuto digital às métricas de minuto médio linear da TV. Este painel oferece mais flexibilidade para medir a média de público-alvo em períodos personalizados, bem como quando a classificação de duração foi atualizada após o fato. |  | Fevereiro de 2024 |
+| **Relatórios do Media Analytics – Público-alvo médio por minuto (AMA)** | O painel Média de público-alvo por minuto agora está disponível no CJA. Os clientes do Media Analytics podem usar o painel Média de público-alvo por minuto para entender melhor o consumo médio de seu conteúdo. A Audiência média por minuto permite as comparações da programação de qualquer comprimento ou gênero. Além disso, os clientes podem comparar ou anexar essa Audiência média por minuto digital às métricas de minuto médio linear da TV. Este painel oferece mais flexibilidade para medir a média de público-alvo em períodos personalizados, bem como quando a classificação de duração foi atualizada após o fato. |  | Março de 2024 |
 | **Métricas de contagem de linhas para dados de pesquisa e perfil** | As métricas de contagem de linhas para conjuntos de dados configurados como parte de uma conexão agora incluem registros adicionados, ignorados ou excluídos dos conjuntos de dados de perfil e pesquisa. |  | 14 de fevereiro de 2024 |
 | **Detecção de bot da Experience Edge** | A [Detecção de bots](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=pt-BR) permite identificar eventos gerados pelo SDK da Web, SDK móvel e API do servidor como sendo gerados por spiders e bots conhecidos. | | terça-feira, 29 de abril de 2024 |
 | **Métricas de uso** | A interface de métricas de uso mostra o uso de linhas assimiladas e relatáveis em todas as conexões. Essa interface permite determinar se o uso do Customer Journey Analytics está em conformidade com o que foi acordado contratualmente. | 20 de fevereiro de 2024 | Início de março de 2024 |
