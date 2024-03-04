@@ -2,9 +2,8 @@
 description: O Construtor de filtros fornece uma tela para arrastar e soltar Dimension, Filtros e Eventos métricos para filtrar pessoas com base na lógica, nas regras e nos operadores da hierarquia do contêiner. Essa ferramenta de desenvolvimento integrada permite criar e salvar filtros simples ou complexos que identificam os atributos e as ações da pessoa nas visitas e eventos.
 title: Criar filtros
 feature: Filters
-exl-id: 2107f301-4137-4e97-9aa7-07824b842e16
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: c19309488e0a541b522ca6925c7ca2bdb90f2390
 workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 20%
