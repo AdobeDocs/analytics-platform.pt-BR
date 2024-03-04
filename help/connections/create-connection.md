@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 2be283e0abd32229be1921b106d166f47fb410a8
+source-git-commit: 8303043d46365195d9ffde6eaa06f49c9d22101d
 workflow-type: tm+mt
-source-wordcount: '2763'
+source-wordcount: '2749'
 ht-degree: 98%
 
 ---
@@ -52,7 +52,7 @@ Você deve ter o **Selecionar** para adicionar números ilimitados de conjuntos 
    | **[!UICONTROL Chave]** | Somente para conjuntos de dados de pesquisa (como _id). |
    | **[!UICONTROL Chave correspondente]** | Somente para conjuntos de dados de pesquisa (como _id). |
    | **[!UICONTROL Importar novos dados]** | Defina como Ligado ou Desligado. |
-   | **[!UICONTROL Dados de preenchimento retroativo]** | Você pode solicitar o preenchimento retroativo de dados em um conjunto de dados com base nos carimbos de data e hora do evento. Por exemplo, você pode solicitar o preenchimento retroativo dos últimos 7 dias, configurar a ID de pessoa correta e testar a conexão para obter a configuração correta. Se tudo estiver bem, você pode preencher os dados restantes com facilidade.<p>Além disso, é possível habilitar a importação de novos dados por conjunto de dados. Por exemplo, é possível habilitar a importação de novos dados somente para dados de pesquisa. |
+   | **[!UICONTROL Dados de preenchimento retroativo]** | Você pode solicitar o preenchimento retroativo de dados em um conjunto de dados com base nos carimbos de data e hora do evento. Por exemplo, você pode solicitar o preenchimento retroativo dos últimos 7 dias, configurar a ID de pessoa correta e testar a conexão para obter a configuração correta. Se tudo estiver bem, você pode preencher os dados restantes com facilidade.<p>Além disso, você pode habilitar a importação de novos dados por conjunto de dados. |
    | **[!UICONTROL Status de preenchimento retroativo]** | Indica se os dados de preenchimento retroativo estão sendo processados. |
 
    {style="table-layout:auto"}
