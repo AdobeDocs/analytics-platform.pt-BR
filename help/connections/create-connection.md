@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
-workflow-type: ht
-source-wordcount: '2748'
-ht-degree: 100%
+source-git-commit: 2be283e0abd32229be1921b106d166f47fb410a8
+workflow-type: tm+mt
+source-wordcount: '2763'
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ A experiência de criação de conexão e edição de fluxo de trabalho traz tod
 
 ## Pré-requisitos 
 
-Você deve ter o pacote **Select** para adicionar um número ilimitado de conjuntos de dados a uma conexão. O pacote **Foundation** é limitado a um conjunto de dados. Entre em contato com a equipe de administração se não tiver certeza do pacote do Customer Journey Analytics que possui.
+Você deve ter o **Selecionar** para adicionar números ilimitados de conjuntos de dados de eventos a uma conexão. A variável **Foundation** o pacote é limitado a um conjunto de dados de evento. Você pode adicionar um número ilimitado de perfis ou conjuntos de dados de pesquisa a uma conexão. Entre em contato com a equipe de administração se não tiver certeza do pacote do Customer Journey Analytics que possui.
 
 ## Criar e configurar a conexão {#create-connection}
 
