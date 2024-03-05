@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 449aa54d1a1dd1ff2ce9e7408926f61533fc3c02
+source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
 workflow-type: tm+mt
-source-wordcount: '2765'
+source-wordcount: '2766'
 ht-degree: 97%
 
 ---
@@ -26,7 +26,7 @@ A experiência de criação de conexão e edição de fluxo de trabalho traz tod
 
 ## Pré-requisitos 
 
-O número de conjuntos de dados que você pode adicionar a uma conexão é limitado a 100. A combinação depende de qual pacote de Customer Journey Analytics sua empresa comprou.
+O número máximo de conjuntos de dados que você pode adicionar a uma conexão é 100. A combinação depende de qual pacote de Customer Journey Analytics sua empresa comprou.
 
 | **Selecionar** pacote | **Foundation** pacote |
 | --- | --- |
