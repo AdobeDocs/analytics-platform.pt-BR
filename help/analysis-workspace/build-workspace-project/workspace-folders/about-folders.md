@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Há dois tipos de pastas no Espaço de trabalho: a Pasta da empresa e as pastas 
 
 Ao fazer logon no Espaço de trabalho, a página inicial de Projetos exibe uma lista de seus projetos junto com a Pasta da empresa e qualquer pasta pessoal que você criou.
 
-![Home page do projeto listando seus projetos e a Pasta da empresa.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![Página inicial do projeto listando seus projetos e a Pasta da empresa.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
 
 ## Sobre a Pasta da empresa {#company-folder}
 
@@ -39,11 +39,11 @@ Quando um usuário faz logon no Espaço de trabalho, a Pasta da empresa é adici
 
 Os administradores têm privilégios especiais atribuídos à Pasta da empresa. Por exemplo, somente Administradores podem adicionar ou remover pastas ou projetos na Pasta da empresa. Os usuários sem acesso de Administrador podem visualizar o conteúdo da Pasta da empresa.
 
-![A página Projetos mostrando as opções de administração.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
+![A página Projetos mostrando as opções administrativas.](/help/analysis-workspace/build-workspace-project/assets/admin-options.png)
 
-Os não administradores têm opções limitadas.
+“Não admins” têm opções limitadas.
 
-![A página Projetos mostrando as opções não administrativas para pastas.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![A página Projetos mostrando as opções de “não admins” nas pastas.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
 
 ### Diretrizes da Pasta da empresa {#company-folder-guidelines}
 
@@ -51,7 +51,7 @@ Os não administradores têm opções limitadas.
 
 - Administradores podem criar subpastas dentro da Pasta da empresa.
 
-- Os administradores podem excluir uma pasta na Pasta da empresa criada por outro administrador. Os administradores podem precisar coordenar com outros administradores para manter as pastas e o acesso ao projeto consistentes.
+- Admins podem excluir uma pasta contida na Pasta da empresa que outro(a) admin criou. Os administradores podem precisar coordenar com outros administradores para manter as pastas e o acesso ao projeto consistentes.
 
 - Quando um Administrador move um projeto para a Pasta da empresa, o projeto é compartilhado com todos, mesmo se os privilégios compartilhados originais foram restritos.
 

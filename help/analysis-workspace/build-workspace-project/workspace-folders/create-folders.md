@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Para criar uma nova pasta,
 
    A nova pasta é adicionada à lista principal de projetos e pastas.
 
-   ![A página inicial de Projetos mostrando a lista atualizada de projetos e pastas.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
+   ![A página de destino Projetos mostrando a lista atualizada de projetos e pastas.](/help/analysis-workspace/build-workspace-project/assets/create-new-listed.png)
 
 ## Criar uma subpasta {#create-subfolder}
 
@@ -60,4 +60,4 @@ Para criar uma subpasta quando tiver uma pasta existente aberta,
    >
    >É possível criar até 10 níveis de subpastas em uma única pasta.
 
-   ![A lista suspensa pasta mostra todas as subpastas dentro da pasta.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)
+   ![A lista suspensa de pastas mostra todas as subpastas contidas na pasta.](/help/analysis-workspace/build-workspace-project/assets/create-subfolder-limit.png)

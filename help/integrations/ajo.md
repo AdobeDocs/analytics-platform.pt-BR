@@ -1,17 +1,17 @@
 ---
 title: Integrar o Adobe Journey Optimizer ao Customer Journey Analytics
-description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usando o Analysis Workspace dentro do Customer Journey Analytics.
+description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usando o Analysis Workspace no Customer Journey Analytics.
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '862'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
-# Integrar o Adobe Journey Optimizer com o Adobe Customer Journey Analytics
+# Integrar o Adobe Journey Optimizer ao Adobe Customer Journey Analytics
 
 O [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=pt-BR) ajuda a fornecer experiências conectadas, contextuais e personalizadas. Ele ajuda a apresentar seus clientes à próxima etapa da jornada do cliente.
 
@@ -23,17 +23,17 @@ A Adobe Experience Platform serve como a fonte de dados central e o vínculo ent
 
 ## Criar uma conexão no Customer Journey Analytics
 
-Depois que os dados do Journey Optimizer estiverem no Adobe Experience Platform, você poderá [Criar uma conexão](/help/connections/create-connection.md) com base nos conjuntos de dados do Journey Optimizer. Ou você pode adicionar conjuntos de dados do Journey Optimizer a uma conexão existente.
+Depois que os dados do Journey Optimizer estiverem na Adobe Experience Platform, será possível [criar uma conexão](/help/connections/create-connection.md) com base nos seus conjuntos de dados do Journey Optimizer. Ou você pode adicionar os conjuntos de dados do Journey Optimizer a uma conexão já existente.
 
 Selecione e configure os seguintes conjuntos de dados:
 
 | Conjunto de dados | Tipo de conjunto de dados | Configurações de conexão | Descrição |
 | --- | --- | --- | --- |
-| Conjunto de dados do evento de feedback de mensagem do AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de entrega de mensagem, como &#39;[!UICONTROL Envios]&#39; e &#39;[!UICONTROL Rejeições]&#39;. |
-| Conjunto de dados do evento de experiência de rastreamento de email do AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de email, como &#39;[!UICONTROL Aberturas]&#39;, &#39;[!UICONTROL Cliques]&#39; e &#39;[!UICONTROL Cancelamentos de assinatura]&#39;. |
-| Conjunto de dados do evento de experiência de rastreamento de push do AJO | Evento  | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de push, como &#39;[!UICONTROL Inicializações do aplicativo]&#39;. |
-| Jornada eventos de etapa | Evento  | ID de pessoa: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contém eventos que mostram quais perfis participaram de cada nó da jornada. |
-| Conjunto de dados da entidade AJO | Pesquisa | Chave: `_id`<br>Chave correspondente: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contém classificações que associam metadados de Jornada e Campanha a todos os dados de evento do Adobe Journey Optimizer. |
+| Conjunto de dados do evento de feedback de mensagem do AJO | Evento | ID de pessoa: `IdentityMap` | Contém eventos de entrega de mensagem, como “[!UICONTROL Envios]” e “[!UICONTROL Rejeições]”. |
+| Conjunto de dados do evento de experiência de rastreamento de email do AJO | Evento | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de email, como “[!UICONTROL Aberturas]”, “[!UICONTROL Cliques]” e “[!UICONTROL Cancelamentos de assinatura]”. |
+| Conjunto de dados do evento de experiência de rastreamento de push do AJO | Evento | ID da pessoa: `IdentityMap` | Contém eventos de rastreamento de push, como “[!UICONTROL Inicializações do aplicativo]”. |
+| Eventos de etapa da jornada | Evento | ID de pessoa: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contém eventos que mostram quais perfis participaram de cada nó da jornada. |
+| Conjunto de dados de entidade do AJO | Pesquisa | Chave: `_id`<br>Chave correspondente: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contém classificações que associam metadados de jornada e campanha a todos os dados de evento do Adobe Journey Optimizer. |
 
 {style="table-layout:auto"}
 
@@ -44,7 +44,7 @@ Após criar uma conexão, é possível criar uma ou mais [visualizações de dad
 
 >[!NOTE]
 >
->As discrepâncias de dados entre o Adobe Journey Optimizer e o Customer Journey Analytics normalmente são inferiores a 1-2%. Discrepâncias maiores são possíveis para dados coletados nas últimas duas horas. Use intervalos de datas, excluindo a data de hoje, para atenuar discrepâncias envolvendo o tempo de processamento.
+>As discrepâncias de dados entre o Adobe Journey Optimizer e o Customer Journey Analytics normalmente são menores do que 1-2%. Discrepâncias maiores são possíveis para dados coletados nas últimas duas horas. Use intervalos de datas, excluindo a data de hoje, para atenuar discrepâncias envolvendo o tempo de processamento.
 
 
 ### Configurar dimensões na visualização de dados
@@ -84,12 +84,12 @@ Você pode criar as seguintes métricas em uma visualização de dados para obte
 | Exclusões | O número de mensagens excluídas. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `exclude` |
 | Envios | O número de mensagens aceitas por provedores de email. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `sent` |
 | Reclamações de spam | A contagem de reclamações de spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `spam_complaint` |
-| Cancelamentos de inscrição | A contagem de cancelamentos de inscrição. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `unsubscribe` |
+| Cancelamentos de assinaturas | A contagem de cancelamentos de inscrição. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>valores de exclusão e exclusão: igual a `unsubscribe` |
 | Envios de borda | O número de vezes que a rede de borda envia uma mensagem para o SDK da Web ou móvel | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.send` |
 | Exibições de entrada | O número de vezes que uma mensagem na Web ou no aplicativo é mostrada ao usuário | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.display` |
 | Cliques de entrada | A contagem de cliques em mensagens na Web ou no aplicativo | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.interact` |
-| Acionadores do InApp | O número de vezes que o mecanismo de decisão sugeriu que a mensagem deve ser exibida. O SDK móvel pode substituir a decisão de reduzir o número de exibições reais. | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.trigger` |
-| Descartes no aplicativo | O número de vezes que uma mensagem no aplicativo é removida da interface do usuário pelo SDK | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.dismiss` |
+| Acionadores no aplicativo | O número de vezes que o mecanismo de decisão sugeriu que a mensagem deve ser exibida. O SDK móvel pode substituir a decisão que reduz o número de exibições reais. | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.trigger` |
+| Descartes no aplicativo | O número de vezes que uma mensagem no aplicativo é removida da interface pelo SDK | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.dismiss` |
 
 {style="table-layout:auto"}
 

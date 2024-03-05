@@ -5,9 +5,9 @@ feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -71,11 +71,11 @@ Basta selecionar uma ou mais anotações e a barra de tarefas é exibida.
 | Tarefa | Descrição |
 | --- | --- |
 | Adicionar | Direciona para o construtor de anotações, onde é possível criar novas anotações. |
-| Tag | Todos os usuários podem criar tags para anotações e aplicar uma ou mais tags a uma anotação. No entanto, só é possível visualizar as tags dos filtros que você possui. Que tipos de tags você deve criar? Estas são algumas sugestões para tags úteis:<ul><li>Tags com base em nomes de equipe, como Marketing social, Marketing móvel</li><li>Tags de projeto (tags de análise), como análises de página de entrada</li><li>Tags de categoria: masculino; geografia</li><li>Tags de fluxo de trabalho: organizado para (uma unidade de negócio específica); Aprovado</li></ul> |
+| Tag | Todos os usuários podem criar tags para anotações e aplicar uma ou mais tags a uma anotação. Entretanto, você pode exibir tags somente dos filtros proprietários. Que tipos de tags você deve criar? Estas são algumas sugestões para tags úteis:<ul><li>Tags com base em nomes de equipe, como Marketing social, Marketing móvel</li><li>Tags de projeto (tags de análise), como análises de página de entrada</li><li>Tags de categoria: masculino; geografia</li><li>Tags de fluxo de trabalho: organizado para (uma unidade de negócio específica); Aprovado</li></ul> |
 | Excluir | Excluir uma anotação a remove de qualquer projeto em sua organização. |
 | Renomear | Renomear uma anotação a renomeia em todos os projetos aos quais foi aplicada. |
 | Copiar | Cria uma cópia distinta com sua própria ID de anotação, mas com o mesmo nome e definição. |
 | Exportar para CSV | Exporte a definição da anotação para um arquivo CSV. |
-| Filtro (painel esquerdo) | Filtre por tags, visualização de dados, proprietários e outros filtros (Meus, Aprovados, Favoritos, Compartilhados comigo e Mostrar tudo). |
+| Filtro (painel esquerdo) | Filtre por tags, visualizações de dados, proprietários e outros filtros (Meus, Aprovados, Favoritos, Compartilhados comigo e Mostrar todos). |
 
 {style="table-layout:auto"}

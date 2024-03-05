@@ -7,9 +7,9 @@ type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
 source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -31,15 +31,15 @@ O Report Builder for Customer Journey Analytics está disponível para Excel nas
 
 ## Casos de uso comuns
 
-- **Extração de dados**: o Adobe Report Builder permite extrair dados do Customer Journey Analytics para o Excel. É possível criar relatórios e consultas personalizados para recuperar pontos de dados específicos relevantes para a análise.
+- **Extração de dados**: o Adobe Report Builder permite extrair dados do Customer Journey Analytics para o Excel. É possível criar relatórios e consultas personalizadas para recuperar pontos de dados específicos relevantes para a análise.
 
-- **Relatórios personalizados**: Você pode projetar e formatar relatórios personalizados no Excel para atender às suas necessidades específicas de relatórios. Isso é especialmente útil para adaptar relatórios a diferentes participantes.
+- **Relatórios personalizados**: você pode formatar relatórios personalizados e mudar seu design no Excel para atender às suas necessidades específicas de relatórios. Isso é especialmente útil para adaptar relatórios a diferentes partes interessadas.
 
-- **Ad-Hoc Analysis**: os usuários podem gerar relatórios ad-hoc rapidamente para responder a perguntas específicas ou explorar tendências de dados sem precisar passar por um longo processo de criação de relatórios.
+- **Análise ad hoc**: os usuários podem gerar relatórios ad hoc rapidamente para responder a perguntas específicas ou explorar tendências de dados sem precisar passar por um longo processo de criação de relatórios.
 
-- **Painéis**: os dados extraídos do CJA podem ser usados para criar painéis e visualizações baseados no Excel para obter uma visão geral de alto nível dos KPIs (indicadores-chave de desempenho).
+- **Painéis**: os dados extraídos do CJA podem ser usados para criar painéis e visualizações com base no Excel para uma visão geral de alto nível dos indicadores principais de desempenho (KPIs).
 
-- **Compartilhamento de insights**: Você pode compartilhar relatórios e insights do Excel com membros da equipe ou participantes que podem não ter acesso direto ao CJA.
+- **Compartilhamento de insights**: você pode compartilhar relatórios e insights do Excel com membros da equipe ou partes interessadas que podem não ter acesso direto ao CJA.
 
 ## Vídeo de visão geral
 

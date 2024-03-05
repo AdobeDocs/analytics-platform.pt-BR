@@ -1,14 +1,14 @@
 ---
 title: Quais são os componentes no Customer Journey Analytics?
-description: Saiba quais componentes o Customer Journey Analytics oferece e como usá-los no relatórios.
+description: Saiba quais componentes o Customer Journey Analytics oferece e como usá-los em relatórios.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -22,14 +22,14 @@ Os componentes são recursos do Customer Journey Analytics que podem ser usados 
 Você pode gerenciar os seguintes componentes:
 
 * [**Anotações**](/help/components/annotations/overview.md): Comunique nuances e insights de dados contextuais à sua organização.
-* [**Públicos-alvo**](/help/components/audiences/audiences-overview.md): crie e publique públicos-alvo descobertos no Customer Journey Analytics to [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCDP) no Adobe Experience Platform para direcionamento e personalização de clientes.
-* [**Filtros**](filters/filters-overview.md): crie, gerencie, compartilhe e aplique filtros de público-alvo focados e avançados aos seus relatórios. Os filtros permitem identificar subconjuntos de pessoas com base em características ou interações.
-* [**Métricas calculadas:**](calc-metrics/calc-metr-overview.md) use métricas e fórmulas como novos componentes para usar nos relatórios
-* [**Dicionário de dados**](/help/components/data-dictionary/data-dictionary-overview.md): ajuda os usuários e os administradores a rastrear e entender melhor os componentes em seu ambiente do Analytics.
-* [**Intervalos de datas**](date-ranges/create.md): personalize e refine os intervalos de datas que o Analysis Workspace oferece.
-* [**Dimension**](/help/components/dimensions/view-dimensions.md): Dimension são variáveis que normalmente contêm valores de cadeias de caracteres. As dimensões comuns incluem Página e Domínio referenciador.
-* [**Métricas**](/help/components/apply-create-metrics.md): permite quantificar os pontos de dados no Analysis Workspace.
-* [**Projetos**](/help/analysis-workspace/home.md): organize e mantenha seus projetos no Analysis Workspace.
+* [**Públicos-alvo**](/help/components/audiences/audiences-overview.md): crie e publique públicos-alvo descobertos no Customer Journey Analytics no [perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCDP) da Adobe Experience Platform para direcionar e personalizar clientes.
+* [**Filtros**](filters/filters-overview.md): crie, gerencie, compartilhe e aplique filtros de público-alvo avançados e focados nos seus relatórios. Os filtros permitem identificar subconjuntos de pessoas com base em características ou interações.
+* [**Métricas calculadas:**](calc-metrics/calc-metr-overview.md) use métricas e fórmulas como novos componentes para relatórios
+* [**Dicionário de dados**](/help/components/data-dictionary/data-dictionary-overview.md): ajuda usuários e admins a acompanhar e entender melhor os componentes em seus ambientes do Analytics.
+* [**Intervalos de data**](date-ranges/create.md): personalize e ajuste os intervalos de data do Analysis Workspace.
+* [**Dimensões**](/help/components/dimensions/view-dimensions.md): estas são variáveis que normalmente contêm valores de string. As dimensões comuns incluem uma página e um domínio referenciador.
+* [**Métricas**](/help/components/apply-create-metrics.md): permitem quantificar os pontos de dados no Analysis Workspace. 
+* [**Projetos**](/help/analysis-workspace/home.md): organize e mantenha seus projetos no Analysis Workspace.
 
 ## Componentes do Analysis Workspace
 
@@ -37,7 +37,7 @@ Os componentes do Analysis Workspace são métricas, dimensões, filtros e granu
 
 Para acessar o painel Componentes, clique no ícone **[!UICONTROL Componentes]** no painel à esquerda. Você pode alternar entre Painéis (Painel em branco, [Painel de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md), [Quick Insights](/help/analysis-workspace/c-panels/quickinsight.md) ou painel do [Attribution IQ](/help/analysis-workspace/c-panels/attribution.md)), [Visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) e Componentes usando os ícones do painel esquerdo ou usando [teclas de atalho](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md).
 
-![Painel do Workspace destacando o ícone Componentes no painel esquerdo](assets/components.png)
+![Painel do espaço de trabalho destacando o ícone Componentes no menu esquerdo](assets/components.png)
 
 Consulte [Criar um projeto](/help/analysis-workspace/home.md) para obter informações sobre como usar os Componentes em um projeto.
 
@@ -76,7 +76,7 @@ Assista ao vídeo Criar métricas, filtros e datas:
    >   Você pode selecionar vários componentes mantendo a tecla Shift pressionada ou mantendo a tecla Command (no Mac) ou Ctrl (no Windows) pressionada.
 
 
-   ![Lista de Ações do componente mostrando Tag, Adicionar aos favoritos, aprovar, Compartilhar e Excluir.](assets/component-actions.png)
+   ![Lista de ações do componente mostrando as opções Marcar, Adicionar aos favoritos, Aprovar, Compartilhar e Excluir.](assets/component-actions.png)
 
    | Ação de componente | Descrição |
    |--- |--- |
@@ -86,7 +86,7 @@ Assista ao vídeo Criar métricas, filtros e datas:
    | [!UICONTROL **Compartilhar**] | Compartilhe componentes com usuários em sua organização. Essa opção está disponível somente para componentes personalizados, como filtros ou métricas calculadas. |
    | [!UICONTROL **Excluir**] | Exclua componentes que não são mais necessários. Essa opção está disponível somente para componentes personalizados, como filtros ou métricas calculadas. |
 
-Os componentes personalizados também podem ser gerenciados por meio de seus respectivos Gerenciadores de componentes. Por exemplo, a variável [Gerenciar filtros](/help/components/filters/manage-filters.md).
+Os componentes personalizados também podem ser gerenciados por meio de seus respectivos Gerenciadores de componentes. Por exemplo, o componente [Gerenciar filtros](/help/components/filters/manage-filters.md).
 
 ## Pesquisar, filtrar e classificar a lista de componentes
 
@@ -98,7 +98,7 @@ Pesquise, filtre e classifique a lista de componentes no painel esquerdo do Anal
 
 2. No campo de pesquisa, comece a digitar o nome do componente que deseja usar em seu projeto.
 
-   O tipo de componente pode ser identificado tanto por cor como ícone. **Dimension** ![Ícone do Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) são laranja, **Filtros** ![Ícone Filtrar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis, **Intervalos de datas** ![Ícone de intervalo de datas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxas, e **Métricas** ![Ícone de Métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) são verdes. O ícone Adobe ![Ícone do Adobe](assets/default-calc-metric-icon.png) indica um modelo de métrica calculada ou um modelo de filtro, e o ícone calculadora ![Ícone da Calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indicou uma métrica calculada que foi criada por um administrador do Analytics em sua organização.
+   O tipo de componente pode ser identificado tanto por cor como ícone. As **dimensões** ![Ícone de dimensão](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) são alaranjadas, os **filtros** ![Ícone de filtro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis, os **intervalos de data** ![Ícone de intervalo de data](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxos e as **métricas** ![Ícone de métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) são verdes. O ícone da Adobe ![Ícone da Adobe](assets/default-calc-metric-icon.png) indica um modelo de métrica calculada ou de filtro e o ícone de calculadora ![Ícone de calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indica uma métrica calculada que foi criada por um(a) admin do Analytics em sua organização.
 
 3. Selecione o componente quando ele aparecer na lista suspensa.
 
@@ -106,7 +106,7 @@ Pesquise, filtre e classifique a lista de componentes no painel esquerdo do Anal
 
 1. Selecione o ícone de **Componentes**, ![Ícone de componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Curate_18_N.svg), no painel esquerdo.
 
-2. Selecione o **Filtro** ícone ![Ícone Filtro do dicionário de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
+2. Selecione o ícone de **Filtro** ![Ícone de filtro do Dicionário de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)).
 
    Ou
 
@@ -120,7 +120,7 @@ Pesquise, filtre e classifique a lista de componentes no painel esquerdo do Anal
    | [!UICONTROL **Favoritos**] | Mostrar somente componentes que estão na lista de Favoritos. Para obter informações sobre como adicionar componentes à lista de favoritos, consulte [Gerenciar componentes](#manage-components). |
    | [!UICONTROL **Dimensões**] | Mostrar somente componentes que são dimensões. |
    | [!UICONTROL **Métricas**] | Mostrar somente componentes que são métricas. |
-   | [!UICONTROL **Filtros**] | Mostrar apenas componentes que sejam Filtros. |
+   | [!UICONTROL **Filtros**] | Mostrar somente componentes que são filtros.  |
    | [!UICONTROL **Intervalos de datas**] | Mostrar somente componentes que são intervalos de datas. |
    | [!UICONTROL **Exibir tudo**] | Mostrar todos os componentes. Essa opção está disponível somente para administradores. |
    | [!UICONTROL **Não aprovado**] | Mostrar somente componentes que ainda não foram marcados como Aprovado por um administrador. Como administrador, isso é útil ao identificar componentes que exigem sua análise e aprovação. Essa opção está disponível somente para administradores. |

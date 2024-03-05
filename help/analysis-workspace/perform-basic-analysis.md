@@ -6,9 +6,9 @@ exl-id: b013f9ce-6a6c-4a33-8081-5133557cf0b6
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '153'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,6 +24,6 @@ Esta é uma amostra de visualizações básicas no Espaço de trabalho. Por exem
 
 * Detalhe o tamanho do público-alvo por fontes de dados, como dados de impressão de anúncio, dados do Customer Journey Analytics, dados de email, dados de PDV, dados da central de atendimento e dados de pesquisa.
 
-![Exemplos de visualizações de gráficos de análise básicos. ](assets/cja-basic-analysis.png)
+![Exemplos de visualizações de gráficos de análise básica. ](assets/cja-basic-analysis.png)
 
 ![Mais exemplos de visualizações de gráficos de análise básica](assets/cja-basic-analysis2.png)

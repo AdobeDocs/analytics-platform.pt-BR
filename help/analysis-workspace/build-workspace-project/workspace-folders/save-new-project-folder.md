@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 75%
 
 Para salvar um novo projeto em uma pasta específica, selecione o nome da pasta na janela de diálogo Salvar projeto.
 
-1. No Espaço de trabalho, crie um novo projeto.
+1. No Workspace, crie um novo projeto.
 
    ![A janela da tabela de forma livre onde você pode criar um novo projeto.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
 1. Na caixa de diálogo **Projeto** > **Salvar**, selecione um nome de pasta no menu suspenso Pasta.
 
-   ![A janela Salvar, onde você salva o novo projeto em uma pasta.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
+   ![A janela Salvar onde você salva o novo projeto em uma pasta.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
 1. Clique em **Salvar**.
 

@@ -7,9 +7,9 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '717'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ O vídeo a seguir fornece uma breve visão geral com exemplos do que é possíve
 
 A imagem a seguir e a tabela que a acompanha explicam algumas das principais áreas no Analysis Workspace:
 
-![Janela do Analysis Workspace destacando o painel à esquerda e à esquerda, a tela e o menu suspenso da visualização de dados.](assets/analysis-workspace-overvew.png)
+![Janela do Analysis Workspace com destaque para os menus à esquerda e na extremidade esquerda, a tela e o menu suspenso da visualização de dados.](assets/analysis-workspace-overvew.png)
 
 | Localização na imagem | Nome e função |
 |---------|----------|
 | A | **Painel mais à esquerda:** contém guias para adicionar painéis, visualizações e componentes ao Analysis Workspace. Também contém o ícone usado para abrir o dicionário de dados. |
 | B | **Painel esquerdo:** dependendo da guia selecionada no painel mais à esquerda, essa área pode conter painéis, visualizações ou componentes individuais. |
 | C | **Tela:** essa é a área principal onde você arrasta o conteúdo dos painéis à esquerda para criar o projeto. O projeto é atualizado dinamicamente à medida que você adiciona painéis, visualizações e componentes à tela. |
-| D | **Menu suspenso Visualização de dados:** Para cada painel no Analysis Workspace, o menu suspenso de visualização de dados permite escolher a visualização de dados que você deseja usar como fonte de dados. |
+| D | **Menu suspenso da visualização de dados:** para cada painel no Analysis Workspace, esse menu suspenso permite escolher a visualização de dados que você deseja usar como fonte de dados. |
 
 ## Recursos no Analysis Workspace {#analysis}
 

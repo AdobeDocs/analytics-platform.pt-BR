@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Adicione projetos a uma pasta na exibição de tabela na página inicial.
 
 1. Selecione um ou mais projetos que deseja adicionar a uma pasta.
 
-   ![Visualização da tabela Projetos mostrando três projetos selecionados.](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
+   ![Visualização da tabela de projetos mostrando os três projetos selecionados.](/help/analysis-workspace/build-workspace-project/assets/move-tv-selected.png)
 
 1. Selecione **Mover para**. A caixa de diálogo Selecionar pasta é exibida.
 
@@ -48,7 +48,7 @@ Você também pode adicionar projetos de dentro de uma pasta usando o link de re
 
 1. Selecione e abra uma pasta na exibição de tabela.
 
-   ![A subpasta que não contém nenhum projeto](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
+   ![A subpasta que não contém projetos](/help/analysis-workspace/build-workspace-project/assets/move-open-folder.png)
 
 1. Clique no ícone de reticências **...** no canto superior direito.
 
@@ -62,7 +62,7 @@ Você também pode adicionar projetos de dentro de uma pasta usando o link de re
 
    Você pode adicionar vários projetos à pasta.
 
-   ![A janela Adicionar projetos mostrando que três projetos são adicionados](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
+   ![A janela Adicionar projetos mostrando os três projetos adicionados](/help/analysis-workspace/build-workspace-project/assets/move-add-multiple-projects.png)
 
 1. Clique em **Adicionar** para adicionar os projetos à pasta.
 
@@ -71,4 +71,4 @@ Você também pode adicionar projetos de dentro de uma pasta usando o link de re
 
 >[!NOTE]
 >
->Somente administradores podem adicionar projetos à Pasta da empresa ou criar um novo projeto e salvá-lo na Pasta da empresa
+>Somente admins podem adicionar projetos à pasta da empresa ou criar um novo projeto e salvá-lo nessa pasta

@@ -1,14 +1,14 @@
 ---
 title: Casos de uso do Customer Journey Analytics
-description: Saiba mais sobre os casos de uso do Customer Journey Analytics
+description: Conheça os casos de uso do Customer Journey Analytics
 exl-id: 90746eb0-99df-463a-8f01-330fd460a4a8
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '213'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 

@@ -5,9 +5,9 @@ feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '320'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Veja a seguir uma lista de limitações conhecidas do Analysis Workspace e seus 
 ## Componentes > Filtros
 
 * Algumas métricas e dimensões não são filtráveis, como [!UICONTROL Ocorrências], [!UICONTROL Visitantes únicos], etc.
-* Filtros ad hoc criados no [área suspensa do painel](/help/analysis-workspace/c-panels/panels.md) são um tipo de filtro rápido. Eles não aparecem no painel esquerdo do Workspace ou no Gerenciador de componentes do filtro, a menos que sejam tornados públicos. Para obter mais informações, consulte [Filtros rápidos](/help/components/filters/quick-filters.md).
+* Filtros ad hoc criados na [zona de destino do painel](/help/analysis-workspace/c-panels/panels.md) são um tipo de filtro rápido. Eles não aparecem no painel esquerdo do espaço de trabalho ou no gerenciador de componentes de filtro, a menos que sejam tornados públicos. Para obter mais informações, consulte [Filtros rápidos](/help/components/filters/quick-filters.md).
 
 ## Componentes > Métricas calculadas
 
