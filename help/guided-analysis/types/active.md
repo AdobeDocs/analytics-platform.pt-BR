@@ -1,14 +1,14 @@
 ---
 title: Exibição ativa
-description: Identifique quem é novo, está retido, retornando ou está inativo.
+description: Identifique se é um usuário novo, retido, recorrente ou inativo.
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
-feature: Guided Analysis
-keywords: análise do produto
+feature: Adobe Product Analytics, Guided Analysis
+keywords: product analytics
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 

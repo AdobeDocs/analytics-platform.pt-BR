@@ -2,13 +2,13 @@
 title: Visualização de uso
 description: Meça o engajamento do usuário ao longo do tempo.
 exl-id: b632475f-371e-4156-9ffc-b138325aa120
-feature: Guided Analysis
-keywords: análise do produto
+feature: Adobe Product Analytics, Guided Analysis
+keywords: product analytics
 role: User
-source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 

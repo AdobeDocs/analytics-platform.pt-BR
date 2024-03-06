@@ -1,14 +1,14 @@
 ---
 title: Visualização da versão
 description: Compare o desempenho em períodos iguais antes e depois do lançamento.
-feature: Guided Analysis
-keywords: análise do produto
+feature: Adobe Product Analytics, Guided Analysis
+keywords: product analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: e7e3b4a64ded8af3fa8137194c160044da74db62
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '499'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 

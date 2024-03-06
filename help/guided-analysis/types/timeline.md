@@ -1,10 +1,10 @@
 ---
 title: Exibição da linha do tempo
 description: Observe os eventos de sessão no nível do usuário ao longo do tempo para encontrar padrões de experiência.
-feature: Guided Analysis
-keywords: análise do produto
+feature: Adobe Product Analytics, Guided Analysis
+keywords: product analytics
 role: User
-source-git-commit: a8ead81a8de8dcab4c12cbbe9cba56c4ce8417a3
+source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 1%
