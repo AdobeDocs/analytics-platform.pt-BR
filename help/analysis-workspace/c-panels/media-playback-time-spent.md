@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel Tempo gasto com a reprodução de 
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 1c9f3d1de499eda5aeeb4e6763871c8a2e7d075d
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 71%
+source-wordcount: '932'
+ht-degree: 67%
 
 ---
 
@@ -50,7 +50,7 @@ Você pode configurar o painel Tempo gasto com a reprodução de mídia usando e
 | Granularidade | O padrão de granularidade é Minuto.<br>Essa visualização é limitada a 1440 linhas de dados (por exemplo, 24 horas na granularidade no nível de minuto). Se uma combinação de intervalo de datas e granularidade resultar em mais de 1440 linhas, a granularidade será atualizada automaticamente para ajustar o intervalo de datas completo. |
 | Números de resumo do painel | Para visualizar os detalhes de data ou hora do tempo gasto com a reprodução, um número de resumo está disponível. O Máximo mostra detalhes para a simultaneidade de pico. O Mínimo mostra detalhes para o vale. O total soma o tempo total gasto com a reprodução para a seleção. O padrão do painel mostra somente o Máximo, mas você pode alterá-lo para mostrar Mínimo, Total ou qualquer combinação dos três.<br>Se você estiver usando detalhamentos, um número de resumo será exibido para cada um. |
 | Detalhamento por séries | Como opção, você pode detalhar sua visualização por filtros, dimensões, itens de dimensão ou intervalos de datas.<p>- É possível exibir até 10 linhas por vez. Os detalhamentos são limitados a um único nível.</p><p>- Ao arrastar uma dimensão, os itens de dimensão principais serão selecionados automaticamente com base no intervalo de datas do painel selecionado.</p>- Para comparar intervalos de datas, arraste dois ou mais intervalos de datas para o filtro de detalhamento por séries. |
-| Formato de tempo | Você pode visualizar o tempo gasto com a reprodução em Horas:Minutes:Segundos (padrão) ou em Minutos (que é exibido em números inteiros, arredondados para .5). |
+| Formato de tempo | Você pode visualizar o tempo gasto com a reprodução em `Hours:Minutes:Seconds` (padrão) ou em `Minutes` (exibido em números inteiros, arredondados para .5). |
 | Exibição da sequência de data | Se você tiver colocado pelo menos dois filtros de intervalo de datas como detalhamentos de séries, verá a opção de selecionar sobreposição (padrão) ou sequencial. A sobreposição exibirá as linhas com um início comum do eixo x para que sejam executadas em paralelo, enquanto as sequenciais exibirão as linhas com seu início específico do eixo x. Se os dados se alinharem (por exemplo, o filtro 1 termina às 20h44 e o filtro 2 começa às 20h45), as linhas serão exibidas em sequência. |
 
 ## Visualização padrão
@@ -73,7 +73,7 @@ A única métrica que pode ser usada nesse painel é Tempo gasto com a reproduç
 
 | Métrica | Descrição |
 |---|---|
-| Tempo gasto com a reprodução | Total de horas:minutes:segundos (ou minutos) do conteúdo exibido durante a granularidade selecionada, incluindo pausa, buffer e tempo para iniciar. |
+| Tempo gasto com a reprodução | Total `hours:minutes:seconds` (ou `minutes`) de conteúdo exibido durante a granularidade selecionada, incluindo pausa, buffer e tempo para iniciar. |
 
 ## Perguntas frequentes
 
