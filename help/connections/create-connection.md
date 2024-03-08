@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
 workflow-type: tm+mt
 source-wordcount: '2766'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -26,16 +26,16 @@ A experiência de criação de conexão e edição de fluxo de trabalho traz tod
 
 ## Pré-requisitos 
 
-O número máximo de conjuntos de dados que você pode adicionar a uma conexão é 100. A combinação depende de qual pacote de Customer Journey Analytics sua empresa comprou.
+O número máximo de conjuntos de dados que você pode adicionar a uma conexão é 100. A combinação depende de qual pacote do Customer Journey Analytics sua empresa comprou.
 
-| **Selecionar** pacote | **Foundation** pacote |
+| **Selecionar** pacote | Pacote **Foundation** |
 | --- | --- |
-| Qualquer combinação de conjuntos de dados de evento/perfil/pesquisa, adicionando até 100 | Um conjunto de dados de evento por conexão |
+| Qualquer combinação de conjuntos de dados de evento/perfil/pesquisa, cuja soma seja de até 100 | Um conjunto de dados de evento por conexão |
 |  | Até 99 conjuntos de dados de perfil ou pesquisa por conexão |
 
 {style="table-layout:auto"}
 
-Entre em contato com o administrador se não tiver certeza do pacote de Customer Journey Analytics que possui.&#x200B;
+Entre em contato com sua administração se não tiver certeza de qual pacote do Customer Journey Analytics você tem.
 
 ## Criar e configurar a conexão {#create-connection}
 
@@ -61,7 +61,7 @@ Entre em contato com o administrador se não tiver certeza do pacote de Customer
    | **[!UICONTROL Chave]** | Somente para conjuntos de dados de pesquisa (como _id). |
    | **[!UICONTROL Chave correspondente]** | Somente para conjuntos de dados de pesquisa (como _id). |
    | **[!UICONTROL Importar novos dados]** | Defina como Ligado ou Desligado. |
-   | **[!UICONTROL Dados de preenchimento retroativo]** | Você pode solicitar o preenchimento retroativo de dados em um conjunto de dados com base nos carimbos de data e hora do evento. Por exemplo, você pode solicitar o preenchimento retroativo dos últimos 7 dias, configurar a ID de pessoa correta e testar a conexão para obter a configuração correta. Se tudo estiver bem, você pode preencher os dados restantes com facilidade.<p>Além disso, você pode habilitar a importação de novos dados por conjunto de dados. |
+   | **[!UICONTROL Dados de preenchimento retroativo]** | Você pode solicitar o preenchimento retroativo de dados em um conjunto de dados com base nos carimbos de data e hora do evento. Por exemplo, você pode solicitar o preenchimento retroativo dos últimos 7 dias, configurar a ID de pessoa correta e testar a conexão para obter a configuração correta. Se tudo estiver bem, você pode preencher os dados restantes com facilidade.<p>Além disso, é possível habilitar a importação de novos dados por conjunto de dados.  |
    | **[!UICONTROL Status de preenchimento retroativo]** | Indica se os dados de preenchimento retroativo estão sendo processados. |
 
    {style="table-layout:auto"}
