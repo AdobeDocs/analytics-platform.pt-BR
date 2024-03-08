@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 2ed8f4c3768312bb8f6c108ef8b8b052acbfa574
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2032'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | --- | --- |
 | Detecção de anomalias | Suporte completo |
 | Attribution IQ | Suporte completo |
-| Detecção de bot | *Em breve!* Para [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR)conjuntos de dados baseados em, a filtragem de bot é aplicada. A lógica geral de detecção de bot para outros conjuntos de dados é executada por [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=en). |
+| Detecção de bots | *Em breve.* Para conjuntos de dados baseados no [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR), a filtragem de bots é aplicada. A lógica geral de filtragem de bots para outros conjuntos de dados não é executada pelo [Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=pt-BR). |
 | Métricas calculadas  | Suporte completo. Nenhuma métrica calculada existente no Analysis Workspace tradicional é transferida para o Customer Journey Analytics. |
 | Eventos de calendário | Suporte completo. Os eventos de calendário foram implementados como [Anotações](/help/components/annotations/overview.md) no Espaço de trabalho. |
 | Download do CSV | Suporte completo |
@@ -30,11 +30,11 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Comparação de datas | Suporte completo |
 | Intervalos de datas | Todas as funcionalidades de intervalo de datas são compatíveis. |
 | Dimensões | Suporte completo. O Customer Journey Analytics usa o XDM e oferece suporte a dimensões ilimitadas. O Customer Journey Analytics não está vinculado às eVars ou props personalizadas do Adobe Analytics tradicional. |
-| Exclusão do GDPR | Suporte completo; observe que o GDPR agora é tratado em coordenação com a [!UICONTROL Adobe Experience Platform]. O Customer Journey Analytics herda qualquer alteração de dados que a [!UICONTROL Experience Platform] faz nos conjuntos de dados subjacentes. |
-| Relatório de elevação e confiança | Suporte completo via [Painel de experimentação](/help/analysis-workspace/c-panels/experimentation.md) |
+| Exclusão do GDPR | Suporte completo. Observe que o GDPR agora é tratado em coordenação com a [!UICONTROL Adobe Experience Platform]. O Customer Journey Analytics herda qualquer alteração de dados que a [!UICONTROL Experience Platform] faz nos conjuntos de dados subjacentes. |
+| Relatório de elevação e confiança | Suporte completo através do [Painel de experimentação](/help/analysis-workspace/c-panels/experimentation.md) |
 | Variáveis de lista/propriedades de lista | Suporte completo. O Customer Journey Analytics usa o XDM e oferece suporte a matrizes de string ilimitadas que podem ser usadas de forma semelhante a listVars. |
-| eVars de merchandising | Suporte completo via [dimensões e métricas de ligação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension) |
-| Métricas | Suporte completo; o Customer Journey Analytics usa o Experience Data Model (XDM), oferece suporte a métricas ilimitadas e não está vinculado aos eventos bem-sucedidos personalizados do Adobe Analytics. Algumas métricas padrão do Adobe Analytics foram renomeadas: Visitantes = Pessoas, Visitas = Sessões, Ocorrências = Eventos. |
+| eVars de merchandising | Suporte completo por meio de [dimensões e métricas de vinculação](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/persistence.html?lang=pt-BR#binding-dimension) |
+| Métricas | Suporte completo: o Customer Journey Analytics usa o Experience Data Model (XDM), oferece suporte a métricas ilimitadas e não está vinculado aos eventos de sucesso personalizados do Adobe Analytics. Algumas métricas padrão do Adobe Analytics foram renomeadas: Visitantes = Pessoas, Visitas = Sessões, Ocorrências = Eventos. |
 | Migração de projetos, filtros e métricas calculadas do Adobe Analytics para o Customer Journey Analytics | Suporte completo. |
 | Cartão de pontuação/painéis móveis | Suporte completo |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. |
@@ -77,7 +77,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Compartilhamento de projetos | O compartilhamento de projetos só é permitido entre usuários(as) do Customer Journey Analytics. Não é possível compartilhar projetos entre o Customer Journey Analytics e o Analysis Workspace tradicional. |
 | Report Builder | Compatível com um novo plug-in do Office 365 para Excel. |
 | Permissões do usuário/Controles de acesso de dados | O Customer Journey Analytics distingue entre admins de produto do [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR), admins de perfil de produto e usuários. Somente admins de produtos podem criar, atualizar e excluir conexões, projetos, filtros ou métricas calculadas que foram criadas por outros usuários, enquanto admins de produto e admins de perfil de produto podem editar visualizações de dados. Permissões de usuário adicionais estão disponíveis para como criação de métricas calculadas, filtros e anotações. |
-| Visualizações | Todas as visualizações do Workspace são compatíveis, exceto a visualização de Mapa. |
+| Visualizações | Todas as visualizações do Workspace são compatíveis, exceto a visualização Mapa. |
 | Compilação entre dispositivos/canais | Compatível com conjuntos de dados que contêm informações de identidade diretamente (também conhecido como compilação “em campo”). A compilação baseada em gráfico ainda não é compatível, mas está planejada. Consulte [Compilação](../../stitching/overview.md). |
 
 {style="table-layout:auto"}

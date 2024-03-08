@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '622'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Cus
 
 >[!TAB Previsão]
 
-Previsão é um recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano). A previsão está disponível somente para dados relacionados a séries temporais.
+A previsão é um recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano). A previsão está disponível somente para dados relacionados a séries temporais.
 
 [![imagem](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
 

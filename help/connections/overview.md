@@ -6,16 +6,16 @@ feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
 source-git-commit: 14cdc7bd8817dbf1d7a9950fa6ff62aedff82640
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '188'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
 # Visão geral das conexões
 
-As conexões permitem que os administradores de produtos do Customer Journey Analytics estabeleçam conexões com diferentes fontes de dados da AEP, como conjuntos de dados de evento, pesquisa e perfil. Essas conexões permitem a integração de dados de uma Conexão com uma Visualização de dados derivada. Recomendamos restringir o acesso ao gerenciamento de Conexões a um grupo de gerenciamento principal. As configurações no nível da conexão têm implicações contratuais relacionadas às alocações de volume para dados trazidos para o Customer Journey Analytics.
-As conexões são a base do CJA e são criadas a partir de conjuntos de dados de origem da AEP. O Acesso a Conexões também oferece a capacidade de exibir o Gerenciador de conexões, que permite visualizar os conjuntos de dados subjacentes que compõem a conexão, bem como fazer seleções críticas de edição e configuração.
+As conexões permitem que administradores do produto Customer Journey Analytics estabeleçam conexões com diferentes fontes de dados da AEP, como conjuntos de dados de eventos, de pesquisas e de perfis. Essas conexões permitem a integração de dados de uma Conexão com uma visualização de dados derivada. Recomendamos restringir a um grupo de gerenciamento principal o acesso ao gerenciamento de conexões. As configurações no nível da conexão têm implicações contratuais relacionadas às alocações de volume para dados trazidos para o Customer Journey Analytics.
+As conexões são a base do CJA e são criadas a partir de conjuntos de dados de origem da AEP. O acesso a conexões também oferece a capacidade de exibir o gerenciador de conexões, que permite visualizar os conjuntos de dados subjacentes que compõem a conexão, bem como fazer seleções críticas de edição e configuração.
 
 Veja um vídeo com uma visão geral:
 

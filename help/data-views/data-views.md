@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: c1e6279d8e2f0b31a82c2588fce8b3c2e614e440
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ As visualizações de dados permitem que você altere espontaneamente as configu
 
 * Antes de criar visualizações de dados, é necessário [configurar uma ou mais conexões com os conjuntos de dados da Experience Platform](/help/connections/create-connection.md).
 * Para criar ou gerenciar uma visualização de dados, você precisa de um [conjunto de permissões no Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR#admin-access-permissions).
-* Se você estiver usando a variável [Conector de origem do Adobe Analytics](/help/data-ingestion/analytics.md) ou têm conhecimento em segundo plano sobre a Adobe Analytics, talvez você queira entender como os campos em seus esquemas e conjuntos de dados, parte da conexão, se relacionam com os correspondentes da Adobe Analytics. Consulte [Mapeamentos de campo do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR) para obter mais informações.
+* Se você estiver usando o [Conector de origem do Adobe Analytics](/help/data-ingestion/analytics.md) ou tiver conhecimento prévio do Adobe Analytics, convém entender como os campos em seus esquemas e conjuntos de dados, parte da conexão, se relacionam com seus equivalentes do Adobe Analytics. Consulte [Mapeamentos de campos do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR) para obter mais informações.
 
 ## Configurações de visualização de dados que você pode substituir no Espaço de trabalho {#settings-override}
 
