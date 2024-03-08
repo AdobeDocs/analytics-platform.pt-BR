@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: 77fbd2a9ad44affc62aa5e98728d3353d78d8c3c
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 5%
+source-wordcount: '932'
+ht-degree: 2%
 
 ---
 
 # Taxas de retenção
 
-A variável **[!UICONTROL Taxas de retenção]** a exibição mostra a porcentagem de usuários que retornam após o engajamento inicial dentro do intervalo de datas desejado. O eixo horizontal representa o número de dias desde o engajamento inicial de um usuário. O eixo vertical representa o percentual de usuários que interagiram novamente.
+A variável **[!UICONTROL Taxas de retenção]** A exibição do mostra aos usuários o comportamento de uso repetido no seu produto ao longo do tempo, o que pode ajudá-lo a entender sua adequação ao mercado do produto. Nesta exibição, o eixo horizontal representa o número de dias desde o engajamento inicial de um usuário, e o eixo vertical representa a porcentagem de usuários que se engajaram novamente.
 
 Essa análise conta os usuários com base em dois eventos importantes:
 
@@ -27,7 +27,6 @@ Os compartimentos de duração subsequentes contam o número de usuários que re
 
 * Se um usuário se envolver com o evento apenas uma vez durante o intervalo de datas desejado (o engajamento inicial), ele só aparecerá no intervalo de duração &quot;Dia 0&quot;.
 * Se um usuário se envolver com o evento vários dias após a qualificação inicial para inclusão na análise, ele aparecerá no período de duração de qualificação mais recente e em todos os períodos de duração anteriores a ele. Esse tipo de cálculo às vezes é chamado de &quot;retenção não vinculada&quot;.
-* Se um usuário se envolver com o evento muitas vezes durante o intervalo de datas configurado, somente o primeiro e o último eventos serão incluídos na análise.
 
 ![Captura de tela Taxas de retenção](../assets/retention-rates.png){style="border:1px solid gray"}
 
@@ -36,14 +35,15 @@ Os compartimentos de duração subsequentes contam o número de usuários que re
 Os casos de uso para esse tipo de exibição incluem:
 
 * **Análise de coorte**: agrupe usuários em coortes com base nas ações que realizam, como inscrições ou compras. Você pode comparar o desempenho desses grupos e determinar como abordar a melhoria da experiência do usuário de cada grupo.
-* **Análise de serviço de assinatura**: se seu produto emprega uma assinatura ou outro tipo de modelo de receita recorrente, você pode ver a porcentagem de usuários que estão aproveitando ao máximo seu produto. Você pode identificar determinadas qualidades e comportamentos que esses usuários exibem para entender melhor a adequação do mercado do produto.
+* **Ajuste do mercado do produto**: meça o uso regular do seu produto e visualize como curvas de retenção. Maior retenção significa maior ajuste no mercado de produtos e onde sua curva se achata indica quanto tempo leva para atingir seu ajuste. Veja essa análise em um nível geral ou detalhe por recursos de produtos individuais para obter insights mais profundos.
+* **Análise de serviço de assinatura**: se seu produto emprega uma assinatura ou outro tipo de modelo de receita recorrente, você pode ver a porcentagem de usuários que estão aproveitando ao máximo seu produto. Você pode identificar determinadas qualidades e comportamentos que esses usuários apresentam.
 * **Engajamento do usuário**: avalie como determinados tipos de usuários se envolvem com seu produto e compare lado a lado a frequência com que retornam. Um determinado segmento com menos retenção do que outros pode fornecer insights sobre como melhorar possíveis experiências de subpares.
 
 ## Painel de consulta
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **[!UICONTROL Evento de início e retorno]**: os critérios do evento que um usuário deve utilizar para se qualificar para inclusão na análise. Um evento é compatível, mas você pode incluir filtros de propriedade.
+* **[!UICONTROL Evento de início e retorno]**: os critérios de evento que um usuário deve utilizar para se qualificar para inclusão e retenção na análise. Um evento é compatível, mas você pode incluir filtros de propriedade.
 * **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos usuários retidos. As opções incluem [!UICONTROL Usuários retidos] e [!UICONTROL Porcentagem de usuários retidos].
 * **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. Cada segmento selecionado adiciona uma linha à tabela de coorte. É possível incluir até três segmentos.
 
@@ -51,7 +51,7 @@ O painel de consulta permite configurar os seguintes componentes:
 
 A variável [!UICONTROL Taxas de retenção] view oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
-* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Barra] e [!UICONTROL Linha].
+* **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Barra] e [!UICONTROL Linha]. A visualização de linha mostra o Dia 0 visualmente no gráfico.
 
 ## Configurações de duração
 
@@ -66,7 +66,7 @@ Os intervalos de duração disponíveis dependem do intervalo de datas definido.
 
 O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
 
-* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir os dados de retenção. As opções válidas incluem Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes, que afetam intervalos de duração definidos automaticamente.
+* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir os dados de retenção. As opções válidas incluem Diariamente, Semanalmente e Mensalmente. O mesmo intervalo de datas pode ter intervalos diferentes, que afetam as opções do intervalo de duração.
 * **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
 
 Se você selecionar um intervalo de datas próximo ao dia atual, os usuários que inicialmente se envolvem muito perto do dia atual não serão incluídos. Essa análise sempre oferece a todos os usuários a chance de serem incluídos em todos os intervalos de duração. Uma mensagem abaixo do seletor de calendário fornece informações sobre o intervalo de datas em que os usuários interagem e o intervalo reservado somente para usuários recorrentes:
