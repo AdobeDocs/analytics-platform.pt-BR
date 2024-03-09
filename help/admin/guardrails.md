@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: d6837178bccc1a80130ec3fc282d2b44858d06b1
+source-git-commit: 2380d1c176f2d0d6672714ee068ec198734bcdaf
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 8%
@@ -81,7 +81,7 @@ Alguns dos recursos e seu valor associado para o limite dependem do Pacote de Cu
 
 {style="table-layout:auto"}
 
-Consulte também Experience Platform [Medidas de proteção do Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en).
+Consulte também Experience Platform [Medidas de proteção do Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=pt-BR).
 
 
 ## Expiração automatizada do conjunto de dados
@@ -98,10 +98,10 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Projetos | 2.000 | Proteção imposta pelo sistema | Número máximo de projetos para uma organização. |
+| Projetos | 50.000 | Proteção imposta pelo sistema | Número máximo de projetos para uma organização. |
 | Visualizações de dados | 2.000 | Proteção imposta pelo sistema | Número máximo de [visualizações de dados](../data-views/data-views.md) para uma organização. |
 | Visualizações de dados | 50 | Proteção imposta pelo sistema | Número máximo de visualizações de dados para uma conexão |
-| Conjuntos de dados | 100 | Proteção imposta pelo sistema | Número máximo de [conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) por conexão. |
+| Conjuntos de dados | 100 | Proteção imposta pelo sistema | Número máximo de [conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=pt-BR) por conexão. |
 | Conexões | 1000 | Proteção imposta pelo sistema | Número máximo de [conexões](../connections/overview.md) para uma organização. |
 | Título da conexão | 500 | Proteção imposta pelo sistema | Número máximo de caracteres para um título de conexão. |
 | Métricas | 5.000 | Proteção imposta pelo sistema | Número máximo de métricas em uma visualização de dados. |
@@ -126,7 +126,7 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 
 {style="table-layout:auto"}
 
-Consulte também Experience Platform [Medidas de proteção para a assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=en).
+Consulte também Experience Platform [Medidas de proteção para a assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
 
 
 ## Zona de aterrissagem de dados
@@ -181,7 +181,7 @@ Consulte também Experience Platform [Medidas de proteção para a assimilação
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
 | Tamanho do arquivo da pasta de trabalho | 5 | Proteção imposta pelo sistema | Tamanho máximo de arquivo em MB de uma pasta de trabalho agendada. |
-| Blocos de dados | 1000 | Proteção imposta pelo sistema | Número máximo de [blocos de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=en) por pasta de trabalho |
+| Blocos de dados | 1000 | Proteção imposta pelo sistema | Número máximo de [blocos de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=pt-BR) por pasta de trabalho |
 | Métricas | 20 | Proteção imposta pelo sistema | Número máximo de métricas por bloco de dados. |
 | Intervalo de datas | 13 | Proteção imposta pelo sistema | Número máximo de meses que um intervalo de datas pode abranger por bloco de dados. |
 | Linhas | 50.000 | Proteção imposta pelo sistema | Número máximo de linhas por bloco de dados. |
@@ -204,7 +204,7 @@ Consulte também Experience Platform [Medidas de proteção para a assimilação
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato de Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte Experience Platform [Medidas de proteção para a assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html?lang=en) para obter mais informações.
+>Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato de Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte Experience Platform [Medidas de proteção para a assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/Guardrails.html) para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|
