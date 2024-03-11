@@ -3,10 +3,10 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 42232ff87ee822ceccf624ad8655c2dce8776814
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 99%
+source-wordcount: '627'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Essas notas de versão abrangem o período de lançamento de 14 de fevereiro de 
 | ----------- | ---------- | ------- | ---- |
 | **Previsão de série temporal** | A [previsão](../analysis-workspace/c-forecast/forecasting.md) é um novo recurso do Analysis Workspace usado para prever uma métrica padrão ou calculada com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano) para tabelas de forma livre e gráficos de linhas. | 31 de janeiro de 2024 | 21 de fevereiro de 2024 |
 | **Métricas de contagem de linhas para dados de pesquisa e perfil** | As métricas de contagem de linhas para conjuntos de dados, configuradas como parte de uma conexão, agora incluem registros adicionados, ignorados ou excluídos de conjuntos de dados de perfil e pesquisa. |  | 14 de fevereiro de 2024 |
-| **Detecção de bots do Experience Edge** | A [Detecção de bots](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=pt-BR) permite identificar eventos gerados pelo SDK da Web, SDK móvel e API do servidor como sendo gerados por aranhas e bots conhecidos. | | 29 de abril de 2024 |
+| **Detecção de bot da rede de borda** | [Detecção de bot](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=pt-BR) O permite identificar eventos gerados pelo SDK da Web, SDK móvel e API do servidor como sendo gerados por spiders e bots conhecidos. | | 29 de abril de 2024 |
 | **Métricas de uso** | A interface de métricas de uso mostra o uso de linhas assimiladas e relatáveis em todas as conexões. Essa interface permite determinar se o uso do Customer Journey Analytics está em conformidade com o que foi acordado contratualmente. | 20 de fevereiro de 2024 | quinta-feira, 13 de março de 2024 |
 | **Adobe Product Analytics: compartilhar com qualquer pessoa** | Permite compartilhar um link de somente leitura para projetos do Adobe Product Analytics com pessoas que não têm acesso ao Product Analytics. |  | Final de março de 2024 |
 | **Adobe Product Analytics: aplicar métricas calculadas** | Agora é possível acessar as métricas calculadas criadas no Analysis Workspace ou no construtor de métricas calculadas nas visualização Tendências: uso, permitindo analisar a tendência e comparar métricas ao longo do tempo. |  | 16 de fevereiro de 2024 |

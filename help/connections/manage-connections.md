@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0cf1f69d5623a827cba64427c8db614b690968a0
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2484'
 ht-degree: 26%
@@ -91,7 +91,7 @@ Selecionar **[!UICONTROL Continuar]** para excluir a conexão.
 Consulte [Excluir implicações](/help/admin/cja-deletion.md) para obter mais informações sobre as implicações da exclusão de uma conexão.
 
 
-## Criar uma exibição de dados
+## Criar uma visualização de dados
 
 Permite que os administradores criem uma visualização de dados para a conexão.
 
@@ -199,4 +199,4 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 
 >[!MORELIKETHIS]
 >
->[Exibir, solucionar problemas e modificar configurações de conexão](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja.html?lang=en) tutorial.
+>[Exibir, solucionar problemas e modificar configurações de conexão](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja.html) tutorial.

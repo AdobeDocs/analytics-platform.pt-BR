@@ -4,7 +4,7 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 57%
@@ -141,7 +141,7 @@ O Customer Journey Analytics transmite os dados para o RTCP por meio do pipeline
 
 +++**Que identidades o Customer Journey Analytics envia?**
 
-Qualquer par de identidade/namespace que tenha sido especificado na variável [Configuração da conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
+Qualquer par de identidade/namespace que tenha sido especificado na variável [Configuração da conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
 
 +++
 

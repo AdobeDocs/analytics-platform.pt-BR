@@ -4,25 +4,25 @@ description: Traga dados gerados pela gestão de decisões do Adobe Journey Opti
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '710'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 # Integrar a gestão de decisões ao Adobe Customer Journey Analytics
 
 
-A [gestão de decisões](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=pt_BR) do Adobe Journey Optimizer facilita a personalização com uma biblioteca central de ofertas de marketing e um mecanismo de decisão que aplica regras e restrições a perfis avançados e em tempo real, criados pela Adobe Experience Platform para ajudá-lo a enviar aos clientes a oferta certa na hora certa.
+A [gestão de decisões](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=pt-BR) do Adobe Journey Optimizer facilita a personalização com uma biblioteca central de ofertas de marketing e um mecanismo de decisão que aplica regras e restrições a perfis avançados e em tempo real, criados pela Adobe Experience Platform para ajudá-lo a enviar aos clientes a oferta certa na hora certa.
 
-A gestão de decisões é um elemento integrado do Adobe Journey Optimizer. Ela também pode ser usada independentemente de jornadas e campanhas definidas no Adobe Journey Optimizer, usando sua avançada [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=pt_BR) de suporte.
+A gestão de decisões é um elemento integrado do Adobe Journey Optimizer. Ela também pode ser usada independentemente de jornadas e campanhas definidas no Adobe Journey Optimizer, usando sua avançada [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html) de suporte.
 
 Você pode importar dados gerados pela gestão de decisões para realizar análises avançadas no Customer Journey Analytics através das seguintes etapas:
 
 ## Enviar os dados da gestão de decisões para a Adobe Experience Platform
 
-A Adobe Experience Platform serve como a fonte de dados central e link entre a gestão de decisões e o Customer Journey Analytics. Os dados da gestão de decisões são coletados na Experience Platform **automaticamente** ou como parte de **eventos de experiência enviados explicitamente** (por exemplo, impressões ou cliques). Consulte [Introdução à coleta de dados](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=pt_BR) para obter mais detalhes.
+A Adobe Experience Platform serve como a fonte de dados central e link entre a gestão de decisões e o Customer Journey Analytics. Os dados da gestão de decisões são coletados na Experience Platform **automaticamente** ou como parte de **eventos de experiência enviados explicitamente** (por exemplo, impressões ou cliques). Consulte [Introdução à coleta de dados](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html) para obter mais detalhes.
 
 ## Criar uma conexão
 
@@ -42,7 +42,7 @@ Selecione e configure os seguintes conjuntos de dados:
 
 ## Criar uma visualização de dados
 
-Após criar uma conexão, é possível criar uma ou mais [visualizações de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt_BR) para configurar as dimensões e métricas desejadas disponíveis no Customer Journey Analytics.
+Após criar uma conexão, é possível criar uma ou mais [visualizações de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR) para configurar as dimensões e métricas desejadas disponíveis no Customer Journey Analytics.
 
 >[!NOTE]
 >

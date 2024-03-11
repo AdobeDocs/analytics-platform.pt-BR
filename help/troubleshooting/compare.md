@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: serviço de consulta;serviço de consulta;sintaxe sql
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 64%
@@ -79,7 +79,7 @@ O Total de registros por carimbos de data e hora deve corresponder à métrica d
    | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53, 63 |
 
-   Para obter mais informações sobre hit\_source, consulte: [Referência da coluna de dados](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR). Para obter mais informações sobre page\_event, consulte: [Pesquisa de evento da página](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=pt-BR).
+   Para obter mais informações sobre hit\_source, consulte: [Referência da coluna de dados](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR). Para obter mais informações sobre page\_event, consulte: [Pesquisa de evento da página](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html).
 
 1. Se o conector filtrar linhas, retire essas linhas da métrica de [!UICONTROL Ocorrências]. O número resultante deve corresponder ao número de eventos nos conjuntos de dados da Adobe Experience Platform.
 

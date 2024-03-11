@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 18%
@@ -45,9 +45,9 @@ Antes de usar a compilação, verifique se sua organização está preparada com
    * Uma **ID persistente**, um identificador presente em cada linha. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurements do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Adobe Experience Cloud.
    * Uma **ID transitória**, um identificador presente em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash quando um visitante é autenticado. Você pode usar praticamente qualquer identificador que desejar. A compilação considerará esse campo como mantendo as informações reais da ID de pessoa. Para obter melhores resultados de compilação, uma ID transitória deve ser enviada nos eventos do conjunto de dados pelo menos uma vez para cada ID persistente. Se você planeja incluir esse conjunto de dados em uma conexão Customer Journey Analytics, é preferível que os outros conjuntos de dados também tenham um identificador comum semelhante.
 
-  Ambas as colunas (ID persistente e ID transitória) devem ser definidas como um campo de identidade com um namespace de identidade no esquema subjacente ao conjunto de dados que você deseja compilar. Ao usar a compilação de identidade na Real-time Customer Data Platform usando o [grupo de campos identityMap](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en#identity), ainda será necessário adicionar campos de identidade com um namespace de identidade, pois a compilação de Customer Journey Analytics discutida nesta seção não é compatível com o grupo de campos identityMap. Ao adicionar um campo de identidade no esquema e ao mesmo tempo usar o grupo de campos identityMap, não defina o campo de identidade adicional como uma identidade primária, pois isso interferirá no grupo de campos identityMap usado para o Real-time Customer Data Platform.
+  Ambas as colunas (ID persistente e ID transitória) devem ser definidas como um campo de identidade com um namespace de identidade no esquema subjacente ao conjunto de dados que você deseja compilar. Ao usar a compilação de identidade na Real-time Customer Data Platform usando o [grupo de campos identityMap](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#identity), ainda será necessário adicionar campos de identidade com um namespace de identidade, pois a compilação de Customer Journey Analytics discutida nesta seção não é compatível com o grupo de campos identityMap. Ao adicionar um campo de identidade no esquema e ao mesmo tempo usar o grupo de campos identityMap, não defina o campo de identidade adicional como uma identidade primária, pois isso interferirá no grupo de campos identityMap usado para o Real-time Customer Data Platform.
 
-* A compilação inclui a mesclagem de dados de usuário autenticados e não autenticados. Cumpra as leis e regulamentos aplicáveis e obtenha as permissões necessárias do usuário final antes de ativar a compilação em um conjunto de dados de evento. Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=en#) para obter mais informações.
+* A compilação inclui a mesclagem de dados de usuário autenticados e não autenticados. Cumpra as leis e regulamentos aplicáveis e obtenha as permissões necessárias do usuário final antes de ativar a compilação em um conjunto de dados de evento. Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#) para obter mais informações.
 
 
 ## Usar compilação

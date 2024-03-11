@@ -4,10 +4,10 @@ description: Saiba mais sobre o fluxo de trabalho abrangente que permite mover d
 exl-id: 10c485c9-66ab-4925-a357-a66a374d4c6f
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 87%
+source-wordcount: '311'
+ht-degree: 79%
 
 ---
 
@@ -25,7 +25,7 @@ Depois de trazer os dados históricos para a Platform com sucesso, você pode [C
 
 ## Configurar uma implementação do Google Analytics existente para a Adobe Experience Platform {#configure}
 
-A ingestão de dados atuais (transmissão) envolve o envio de dados para o Adobe Experience Edge, que então encaminha esses dados para a Adobe Experience Platform. Consulte [Configurar a transmissão de dados do Google Analytics na Adobe Experience Platform](streaming.md).
+A ingestão de dados atuais (transmissão) envolve o envio de dados para a Rede de borda da Adobe Experience Platform, que então encaminha esses dados para a Adobe Experience Platform. Consulte [Configurar a transmissão de dados do Google Analytics na Adobe Experience Platform](streaming.md).
 
 ## Configurar uma conexão e uma visualização de dados no Customer Journey Analytics
 

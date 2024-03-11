@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 58%
+ht-degree: 57%
 
 ---
 
@@ -18,11 +18,11 @@ Você pode aproveitar os conjuntos de dados de Marketo Engage recém-disponívei
 
 ## Etapa 1: Mapear campos de dados de origem do Marketo para seus públicos-alvo XDM
 
-Mapeie os objetos [Pessoas](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=pt-BR#persons) e [Atividades](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=pt-BR#activities) aos respectivos campos de público-alvo do esquema XDM.
+Mapeie os objetos [Pessoas](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons) e [Atividades](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities) aos respectivos campos de público-alvo do esquema XDM.
 
 ## Etapa 2: Assimilar dados do Marketo na Adobe Experience Platform
 
-Use o [conector do Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=pt-BR) para trazer os dados do Marketo para a Experience Platform e manter esses dados atualizados usando aplicativos conectados à Platform.
+Use o [conector do Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html) para trazer os dados do Marketo para a Experience Platform e manter esses dados atualizados usando aplicativos conectados à Platform.
 
 ## Etapa 3: Configurar uma conexão com esse conjunto de dados no Customer Journey Analytics
 

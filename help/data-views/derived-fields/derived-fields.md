@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: cdc82ee0b6562879afa2b955aa05f330e5cd225c
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '5932'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 Os campos derivados são um aspecto importante da funcionalidade de relatórios em tempo real no Adobe Customer Journey Analytics. Um campo derivado permite definir manipulações de dados (muitas vezes complexas) a qualquer momento, por meio de um criador de regras personalizável. Em seguida, você pode usar esse campo derivado como um componente (métrica ou dimensão) no [Workspace](../../analysis-workspace/home.md) ou definir ainda mais o campo derivado como um componente em [Visualização de dados](../data-views.md).
 
-Os campos derivados podem economizar uma quantidade significativa de tempo e esforço, em comparação à transformação ou manipulação de dados em outros locais fora do Customer Journey Analytics. Tais como [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR), [Distiller de dados](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=en), ou em seus próprios processos Extract Transform Load (ETL) / Extract Load Transform (ELT).
+Os campos derivados podem economizar uma quantidade significativa de tempo e esforço, em comparação à transformação ou manipulação de dados em outros locais fora do Customer Journey Analytics. Tais como [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=pt-BR), [Distiller de dados](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html), ou em seus próprios processos Extract Transform Load (ETL) / Extract Load Transform (ELT).
 
 Os campos derivados são definidos em [Visualizações de dados](../data-views.md), são baseados em um conjunto de funções definidas como regras e aplicadas aos campos padrão e/ou de esquema disponíveis.
 

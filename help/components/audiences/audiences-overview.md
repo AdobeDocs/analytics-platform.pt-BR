@@ -4,7 +4,7 @@ description: Saiba mais sobre o conceito de publicação de público-alvo no Cus
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: e1815cad331b47b281f61d427ef342ea3b5b5d87
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 50%
@@ -20,7 +20,7 @@ A publicação de públicos-alvo fornece uma maneira clara de ativar e executar 
 * Uso do público-alvo para uma jornada no Adobe Journey Optimizer.
 * Exportação do público-alvo para um terceiro por meio de um destino da Experience Platform.
 * Enriquecimento do perfil do cliente em tempo real com atributos úteis derivados de dados baseados em eventos no Customer Journey Analytics.
-* Tudo isso é feito com latência mínima após publicar o público. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=pt-BR#latency)
+* Tudo isso é feito com latência mínima após publicar o público. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency)
 * Publicação de públicos-alvo únicos ou públicos-alvo recorrentes.
 
 Os públicos-alvo criados no Customer Journey Analytics não precisam se basear em conjuntos de dados habilitados para o perfil. Você pode assimilar dados históricos no Experience Platform sem ativar conjuntos de dados e esquemas associados para o perfil. Em seguida, use esses conjuntos de dados para descobrir públicos relevantes no Customer Journey Analytics e publicá-los no Perfil do cliente em tempo real no Experience Platform para fins de ativação.

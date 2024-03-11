@@ -5,7 +5,7 @@ title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 534f163230ea7cafc97948fe0e8196d1dea47fa8
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2091'
 ht-degree: 57%
@@ -158,7 +158,7 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
    Selecionar essa opção cria um link para o projeto que pode ser compartilhado com qualquer pessoa. Você pode desabilitar o acesso ao projeto a qualquer momento desativando essa opção.
 
-   O proprietário do projeto também é o proprietário deste link. A propriedade do link pode ser transferida para outro usuário somente quando a propriedade do projeto é transferida, conforme descrito em [Transferir ativos do usuário ou definir expirações da conta](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html?lang=pt-BR) no Guia de administração do Analytics.
+   O proprietário do projeto também é o proprietário deste link. A propriedade do link pode ser transferida para outro usuário somente quando a propriedade do projeto é transferida, conforme descrito em [Transferir ativos do usuário ou definir expirações da conta](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/user-product-management/users-assets.html) no Guia de administração do Analytics.
 
 1. Escolha se deseja habilitar a seguinte opção de segurança (esta opção pode ser controlada pelo administrador de Customer Journey Analytics):
 

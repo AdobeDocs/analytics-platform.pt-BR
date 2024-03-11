@@ -4,8 +4,8 @@ description: Saiba mais sobre ambientes de relatórios virtuais e sandbox.
 exl-id: 8f0358d1-85fe-4e1e-8724-8a7caa16328c
 feature: Basics
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 100%
 

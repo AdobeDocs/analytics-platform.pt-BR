@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1755'
 ht-degree: 15%
@@ -26,7 +26,7 @@ Conjuntos de dados que você pode considerar adicionar à conexão:
 
 | Conjunto de dados | Esquema | Tipo de esquema | Classe base | Descrição |
 |---|---|---|---|---|
-| Conjunto de dados da atividade B2B | Esquema de atividade B2B | Evento  | XDM ExperienceEvent | Um ExperienceEvent é um registro de fato do que ocorreu, incluindo o momento e a identidade do indivíduo envolvido. ExperienceEvents podem ser explícitos (ações humanas diretamente observáveis) ou implícitos (gerados sem uma ação humana direta) e são registrados sem agregação ou interpretação. Eles são essenciais para a análise de domínio de tempo, pois permitem a observação e a análise de alterações que ocorrem em uma determinada janela de tempo e a comparação entre várias janelas de tempo para rastrear tendências. |
+| Conjunto de dados da atividade B2B | Esquema de atividade B2B | Evento | XDM ExperienceEvent | Um ExperienceEvent é um registro de fato do que ocorreu, incluindo o momento e a identidade do indivíduo envolvido. ExperienceEvents podem ser explícitos (ações humanas diretamente observáveis) ou implícitos (gerados sem uma ação humana direta) e são registrados sem agregação ou interpretação. Eles são essenciais para a análise de domínio de tempo, pois permitem a observação e a análise de alterações que ocorrem em uma determinada janela de tempo e a comparação entre várias janelas de tempo para rastrear tendências. |
 | Conjunto de dados de pessoa B2B | Esquema de pessoa B2B | Perfil | Perfil individual XDM | Um Perfil individual XDM forma uma representação singular dos atributos e interesses de indivíduos identificados e parcialmente identificados. Os perfis menos identificados podem conter apenas sinais comportamentais anônimos, como cookies de navegador, enquanto os perfis altamente identificados podem conter informações pessoais detalhadas, como nome, data de nascimento, localização e endereço de email. À medida que um perfil cresce, ele se torna um repositório robusto de informações pessoais, informações de identificação, detalhes de contato e preferências de comunicação de um indivíduo. |
 | Conjunto de dados de membro da campanha B2B | Esquema de membro da campanha B2B | Pesquisa | Membros da campanha de negócios XDM | Membros da campanha de negócios XDM é uma classe padrão do Experience Data Model (XDM) que descreve um contato ou um cliente potencial associado a uma campanha de negócios. |
 | Conjunto de dados da conta B2B | Esquema de conta B2B | Pesquisa | Conta de negócios XDM | A Conta comercial XDM é uma classe padrão do Experience Data Model (XDM) que captura as propriedades mínimas necessárias de uma conta comercial. |
@@ -37,7 +37,7 @@ Conjuntos de dados que você pode considerar adicionar à conexão:
 | Conjunto de dados da lista de marketing B2B | Esquema de lista de marketing B2B | Pesquisa | Lista de marketing XDM | A Lista de marketing de negócios XDM é uma classe padrão do Experience Data Model (XDM) que captura as propriedades mínimas necessárias de uma lista de marketing. As listas de marketing permitem que você priorize os clientes em potencial com maior probabilidade de comprar seu produto. |
 | Conjunto de dados de membros da Lista de marketing B2B | Esquema de membros da lista de marketing B2B | Pesquisa | Membros da lista de marketing XDM | Membros da Lista de marketing comercial XDM é uma classe padrão do Experience Data Model (XDM) que descreve membros, pessoas ou contatos associados a uma lista de marketing. |
 
-A relação entre os esquemas de pesquisa, esquema de perfil e esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas em [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html?lang=en) e [Definir uma relação muitos para um entre dois esquemas no Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html?lang=en) para obter mais detalhes.
+A relação entre os esquemas de pesquisa, esquema de perfil e esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas em [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) e [Definir uma relação muitos para um entre dois esquemas no Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) para obter mais detalhes.
 
 ![Relação entre esquemas B2B](assets/classes.png)
 

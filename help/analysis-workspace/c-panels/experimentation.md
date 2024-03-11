@@ -4,7 +4,7 @@ title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 58%
@@ -29,7 +29,7 @@ Foram adicionadas duas novas funções avançadas: [!UICONTROL Aumento] e [!UICO
 
 ## Etapa 1: criar conexão com conjuntos de dados de experimento {#connection}
 
-O esquema de dados recomendado é um no qual os dados experimentais estejam em uma [Matriz de objetos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html?lang=pt-BR) que contém os dados de experimento e variante em duas dimensões separadas. Ambas as dimensões precisam estar em uma **solteiro** matriz de objetos. Se você tiver seus dados de experimento em uma única dimensão com os dados de experimento e variante em uma string delimitada, poderá usar a configuração [substring](/help/data-views/component-settings/substring.md) das visualizações de dados para dividi-los em duas partes para uso no painel.
+O esquema de dados recomendado é um no qual os dados experimentais estejam em uma [Matriz de objetos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/array.html) que contém os dados de experimento e variante em duas dimensões separadas. Ambas as dimensões precisam estar em uma **solteiro** matriz de objetos. Se você tiver seus dados de experimento em uma única dimensão com os dados de experimento e variante em uma string delimitada, poderá usar a configuração [substring](/help/data-views/component-settings/substring.md) das visualizações de dados para dividi-los em duas partes para uso no painel.
 
 Após os dados do experimento terem sido [assimilado](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) no Adobe Experience Platform, [criar uma conexão no Customer Journey Analytics](/help/connections/create-connection.md) para um ou mais conjuntos de dados de experimento.
 

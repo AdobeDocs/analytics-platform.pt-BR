@@ -5,7 +5,7 @@ title: Exportar relatórios de Customer Journey Analytics para a nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 4f9878372f05da86b08449eeb17efb79b7432341
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '2210'
 ht-degree: 3%
@@ -146,7 +146,7 @@ Verifique se as tabelas, o ambiente e as permissões atendem aos seguintes requi
 
 * **Ambiente:** Os administradores devem garantir que os endereços IP listados no [Endereços IP usados pelo Customer Journey Analytics](/help/admin/ip-addresses.md) estão incluídos na inclui na lista de permissões de firewall.
 
-* **Permissões:** No Adobe Admin Console, os usuários devem receber um perfil de produto que tenha a [!UICONTROL **Exportação de tabela completa**] permissão atribuída a ele para exportar tabelas completas. Para obter informações sobre como atribuir uma permissão a um perfil de produto no Admin Console, consulte [Permissão de Customer Journey Analytics no Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html?lang=en#customer-journey-analytics-permissions-in-admin-console) in [Controle de acesso Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+* **Permissões:** No Adobe Admin Console, os usuários devem receber um perfil de produto que tenha a [!UICONTROL **Exportação de tabela completa**] permissão atribuída a ele para exportar tabelas completas. Para obter informações sobre como atribuir uma permissão a um perfil de produto no Admin Console, consulte [Permissão de Customer Journey Analytics no Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) in [Controle de acesso Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
 
   >[!NOTE]
   >

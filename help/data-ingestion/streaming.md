@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '1994'
 ht-degree: 85%
@@ -116,7 +116,7 @@ Para configurar o esquema:
 
    Você deve habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
-   Consulte [Ativar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#profile) para obter mais informações.
+   Consulte [Ativar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) para obter mais informações.
 
    >[!IMPORTANT]
    >
@@ -237,7 +237,7 @@ Para criar um conector de origem da API HTTP:
 
 Você pode copiar o URL do ponto de acesso de transmissão e usá-lo para configurar seu aplicativo de fidelidade para transmitir dados para o conjunto de dados de fidelidade da Adobe Experience Platform.
 
-Consulte [Criar uma conexão de transmissão da API HTTP usando a interface do](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=pt-BR) para obter um tutorial muito mais abrangente explicando:
+Consulte [Criar uma conexão de transmissão da API HTTP usando a interface do](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) para obter um tutorial muito mais abrangente explicando:
 
 - como usar autenticação,
 - como mapear dados quando os dados recebidos não são compatíveis com o esquema XDM e

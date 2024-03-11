@@ -3,10 +3,10 @@ description: Descreve as duas principais maneiras de encontrar suas métricas po
 title: Localizar métricas
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: f117c37ec7f2cc504752714a6f2f144e6d5ca055
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 24%
+source-wordcount: '54'
+ht-degree: 29%
 
 ---
 
@@ -14,4 +14,4 @@ ht-degree: 24%
 
 É possível localizar métricas no Analysis Workspace da mesma forma que localizar outros tipos de componentes.
 
-Para obter informações sobre como localizar componentes rapidamente, consulte [Pesquisar, filtrar e classificar a lista de componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/overview.html?lang=en#search%2C-filter%2C-and-sort-the-component-list) in [Visão geral dos componentes](/help/components/overview.md).
+Para obter informações sobre como localizar componentes rapidamente, consulte [Pesquisar, filtrar e classificar a lista de componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/overview.html#search%2C-filter%2C-and-sort-the-component-list) in [Visão geral dos componentes](/help/components/overview.md).

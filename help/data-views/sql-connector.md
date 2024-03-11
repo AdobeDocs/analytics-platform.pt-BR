@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 1827a637-6c0f-43f2-862a-928089340d30
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+workflow-type: tm+mt
 source-wordcount: '2789'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -117,7 +117,7 @@ Atualmente, o Customer Journey Analytics SQL Connector é compatível e testado 
 
       2. Cole o parâmetro **[!UICONTROL ** Banco de dados **]** das [!UICONTROL Credenciais] de consultas da Experience Platform no campo de texto **[!UICONTROL ** Banco de dados **]**.
 
-         Adicione `?FLATTEN` ao parâmetro **[!UICONTROL ** Banco de dados **]**, para que ele seja exibido como `prod:cja?FLATTEN` por exemplo. Consulte [Nivelar estruturas de dados aninhadas para uso com ferramentas de BI de terceiros](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=pt-BR) para obter mais informações.
+         Adicione `?FLATTEN` ao parâmetro **[!UICONTROL ** Banco de dados **]**, para que ele seja exibido como `prod:cja?FLATTEN` por exemplo. Consulte [Nivelar estruturas de dados aninhadas para uso com ferramentas de BI de terceiros](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) para obter mais informações.
 
       3. Quando solicitado pelo modo **[!UICONTROL ** Conectividade de dados **]**, selecione **[!UICONTROL ** DirectQuery **]** para garantir que as estruturas de dados sejam niveladas corretamente.
 
@@ -131,7 +131,7 @@ Atualmente, o Customer Journey Analytics SQL Connector é compatível e testado 
 
    Todas as dimensões e métricas associadas a uma ou mais tabelas selecionadas aparecem no painel direito, prontas para serem usadas em suas visualizações.
 
-   Consulte [Conectar o Power BI ao Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=pt-BR) para obter mais informações.
+   Consulte [Conectar o Power BI ao Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html) para obter mais informações.
 
 +++
 
@@ -159,7 +159,7 @@ Atualmente, o Customer Journey Analytics SQL Connector é compatível e testado 
 
       3. Cole o parâmetro **[!UICONTROL ** Banco de dados **]** das [!UICONTROL Credenciais] de consultas da Experience Platform no campo de texto **[!UICONTROL ** Banco de dados **]**.
 
-         Adicione `%3FFLATTEN` ao parâmetro **[!UICONTROL ** Banco de dados **]**, para que ele seja exibido como `prod:cja%3FFLATTEN` por exemplo. Consulte [Nivelar estruturas de dados aninhadas para uso com ferramentas de BI de terceiros](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=pt-BR) para obter mais informações.
+         Adicione `%3FFLATTEN` ao parâmetro **[!UICONTROL ** Banco de dados **]**, para que ele seja exibido como `prod:cja%3FFLATTEN` por exemplo. Consulte [Nivelar estruturas de dados aninhadas para uso com ferramentas de BI de terceiros](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) para obter mais informações.
 
       4. Selecione **[!UICONTROL ** Nome de usuário e senha **]** na lista **[!UICONTROL ** Autenticação **]**.
 
@@ -175,11 +175,11 @@ Atualmente, o Customer Journey Analytics SQL Connector é compatível e testado 
 
    Agora é possível trabalhar com os dados das tabelas de visualização de dados para criar relatórios e visualizações.
 
-   Consulte [Conectar o Tableau ao Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=pt-BR) para obter mais informações.
+   Consulte [Conectar o Tableau ao Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html) para obter mais informações.
 
 +++
 
-Consulte [Conectar clientes ao Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=pt-BR) para obter uma visão geral e mais informações sobre as várias ferramentas disponíveis.
+Consulte [Conectar clientes ao Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html) para obter uma visão geral e mais informações sobre as várias ferramentas disponíveis.
 
 ## Funcionalidade
 
@@ -219,11 +219,11 @@ prod:all=> \dv
 
 ### Aninhado versus nivelado
 
-Por padrão, o esquema das suas visualizações de dados usa estruturas aninhadas, da mesma forma que os esquemas XDM originais. A integração também oferece suporte à opção `FLATTEN`. Você pode usar essa opção para forçar o esquema para que as visualizações de dados (e qualquer outra tabela na sessão) sejam niveladas. O nivelamento facilita o uso em ferramentas de BI que não aceitam esquemas estruturados. Consulte [Trabalho com estruturas de dados aninhadas no Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html?lang=pt-BR) para obter mais informações.
+Por padrão, o esquema das suas visualizações de dados usa estruturas aninhadas, da mesma forma que os esquemas XDM originais. A integração também oferece suporte à opção `FLATTEN`. Você pode usar essa opção para forçar o esquema para que as visualizações de dados (e qualquer outra tabela na sessão) sejam niveladas. O nivelamento facilita o uso em ferramentas de BI que não aceitam esquemas estruturados. Consulte [Trabalho com estruturas de dados aninhadas no Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/essential-concepts/flatten-nested-data.html) para obter mais informações.
 
 ### SQL compatível
 
-Consulte [Referência SQL do Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html?lang=pt-BR) para obter uma referência completa sobre o tipo de SQL compatível.
+Consulte [Referência SQL do Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/sql/overview.html) para obter uma referência completa sobre o tipo de SQL compatível.
 
 Consulte a tabela abaixo para obter exemplos do SQL que você pode usar.
 
