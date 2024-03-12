@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 53ce86d0009f2f5d7602ce55b938006c2600d2ca
+source-git-commit: a6dd3495b51edcb823431ccb87b283665ccd765d
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1063'
 ht-degree: 79%
 
 ---
@@ -154,7 +154,8 @@ ht-degree: 79%
       + [Painel em branco](../analysis-workspace/c-panels/blank-panel.md)
       + [Painel de experimentação](../analysis-workspace/c-panels/experimentation.md)
       + [Painel de forma livre](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Painel do Quick Insights](../analysis-workspace/c-panels/quickinsight.md)
+      + [Painel Audiência média por minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Painel do Insights rápidos](../analysis-workspace/c-panels/quickinsight.md)
       + [Painel de visualizadores simultâneos de mídia](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Painel Tempo gasto com a reprodução da mídia](../analysis-workspace/c-panels/media-playback-time-spent.md)
    + Preparar, compartilhar e agendar projetos {#curate-share}
@@ -312,7 +313,7 @@ ht-degree: 79%
 
 + Integrações da Adobe {#integrations}
    + [Visão geral sobre a integração de soluções de Adobe com o Customer Journey Analytics](/help/integrations/overview.md)
-   + [Integrar soluções do Adobe Analytics com o Customer Journey Analytics](/help/integrations/aa.md)
+   + [Integrar o Adobe Analytics com o Customer Journey Analytics](/help/integrations/aa.md)
    + [Integrar dados do Journey Optimizer com o Customer Journey Analytics](/help/integrations/ajo.md)
    + [Integrar dados da Gestão de decisões com o Customer Journey Analytics](/help/integrations/ajo-od.md)
    + [Integrar a IA do cliente ao Customer Journey Analytics](/help/integrations/customer-ai.md)
