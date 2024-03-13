@@ -3,7 +3,8 @@ description: Saiba como exibir previsões em uma tabela ou em um gráfico de lin
 title: Como visualizar previsões no Analysis Workspace
 feature: Visualizations
 role: User
-source-git-commit: e52cee369be75785a99798d5acfa9cfc5aba2986
+exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
+source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 1%
@@ -16,7 +17,7 @@ Você pode exibir previsões em uma tabela de forma livre ou em um gráfico de l
 
 ## Exibir previsões em uma tabela
 
-Você pode exibir previsões em uma tabela de forma livre de série temporal. Quando Mostrar previsão está habilitado para a Tabela de forma livre em [preferências do usuário](../user-preferences.md), a previsão é mostrada automaticamente para a primeira coluna de métrica adicionada à tabela. Para qualquer coluna adicional:
+Você pode exibir previsões em uma tabela de forma livre de série temporal. Quando [!UICONTROL Mostrar previsão] está ativado para a tabela de forma livre no [preferências do usuário](../user-preferences.md), a previsão é mostrada automaticamente para a primeira coluna de métrica adicionada à tabela. Para qualquer coluna adicional:
 
 1. Selecione o ícone de configurações de coluna ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) no cabeçalho da coluna, verifique se **[!UICONTROL Mostrar previsão]** está selecionado na lista de opções. Para obter mais informações, consulte [Configurações de coluna](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
@@ -50,5 +51,4 @@ As previsões são exibidas no gráfico de linhas da seguinte maneira:
    * valor previsto para a métrica
    * limite superior do valor previsto para a métrica
    * limite inferior do valor previsto para a métrica
-* a área sombreada mostra a faixa de confiança da previsão.
-
+* A área sombreada mostra a faixa de confiança da previsão.

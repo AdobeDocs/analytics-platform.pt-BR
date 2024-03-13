@@ -3,16 +3,16 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 1b39449fa58157fb61d619de82235cba326ffe2c
+source-git-commit: 7f0a348738d2f3a53ec57558d321a3501afe8d00
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 55%
+source-wordcount: '841'
+ht-degree: 48%
 
 ---
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (março de 2024)
 
-**Última atualização**: sábado, 8 de março de 2024
+**Última atualização**: quinta-feira, 13 de março de 2024
 
 Essas notas de versão abrangem o período de lançamento compreendido entre 13 de março e abril de 2024. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -20,9 +20,9 @@ Essas notas de versão abrangem o período de lançamento compreendido entre 13 
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Nova coluna disponível na página inicial de Projetos** | A variável **[!UICONTROL Usado pela última vez]** agora está disponível ao visualizar a guia Projetos na [página de aterrissagem do Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). Essas informações podem ajudar você a determinar se um projeto é valioso para os usuários em sua organização, mostrando a data e a hora em que o projeto foi aberto pela última vez. Anteriormente, a variável **[!UICONTROL Usado pela última vez]** A coluna estava disponível somente no Gerenciador de métricas calculadas, no Gerenciador de segmentos e no Gerenciador de alertas. |  | quinta-feira, 13 de março de 2024 |
-| **Métricas de uso** | A interface de métricas de uso mostra o uso de linhas assimiladas e relatáveis em todas as conexões. Essa interface permite determinar se o uso do Customer Journey Analytics está em conformidade com o que foi acordado contratualmente. |  | quinta-feira, 13 de março de 2024 |
-| **Relatórios do Media Analytics – Público-alvo médio por minuto (AMA)** | O painel Média de público-alvo por minuto agora está disponível no CJA. Os clientes do Media Analytics podem usar o painel Média de público-alvo por minuto para entender melhor o consumo médio de seu conteúdo. A Audiência média por minuto permite as comparações da programação de qualquer comprimento ou gênero. Além disso, os clientes podem comparar ou anexar essa Audiência média por minuto digital às métricas de minuto médio linear da TV. Este painel oferece mais flexibilidade para medir a média de público-alvo em períodos personalizados, bem como quando a classificação de duração foi atualizada após o fato. |  | 12 de março de 2024 |
+| **Nova coluna disponível na página inicial de Projetos** | A variável **[!UICONTROL Usado pela última vez]** agora está disponível ao visualizar a guia Projetos na [página de aterrissagem do Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html). <p>Essas informações podem ajudar você a determinar se um projeto é valioso para os usuários em sua organização, mostrando a data e a hora em que o projeto foi aberto pela última vez. Anteriormente, a variável **[!UICONTROL Usado pela última vez]** A coluna estava disponível somente no Gerenciador de métricas calculadas, no Gerenciador de segmentos e no Gerenciador de alertas.</p> |  | quinta-feira, 13 de março de 2024 |
+| **Métricas de uso** | A variável [interface de métricas de uso](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR) mostra o uso de linhas assimiladas e reportáveis em todas as conexões. Essa interface permite determinar se o uso do Customer Journey Analytics está em conformidade com o que foi acordado contratualmente. |  | quinta-feira, 13 de março de 2024 |
+| **Relatórios do Media Analytics – Público-alvo médio por minuto (AMA)** | O painel Média de público-alvo por minuto agora está disponível no CJA. Os clientes do Media Analytics podem usar o painel Audiência média por minuto para entender melhor o consumo médio de seu conteúdo. <p>A Audiência média por minuto permite as comparações da programação de qualquer comprimento ou gênero. Além disso, os clientes podem comparar ou anexar esse público-alvo médio por minuto digital às métricas de minuto médio linear da TV.</p><p> Este painel oferece mais flexibilidade para medir a média de público-alvo em períodos personalizados, bem como quando a classificação de duração foi atualizada após o fato.</p><p>Para obter mais informações, consulte [Painel Audiência média por minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md).</p> |  | 12 de março de 2024 |
 | **Transformação de Esquema B2B de Pessoa para Conta** | Permite transformar conjuntos de dados para oferecer melhor suporte a pesquisas baseadas em pessoas nos cenários de relatórios Customer Journey Analytics B2B. Esse recurso está disponível para conjuntos de dados de esquemas B2B com base nas seguintes classes:<ul><li>Relação pessoal da conta de negócios XDM</li><li>Relação pessoal de oportunidade de negócios XDM</li><li>Membros da lista de marketing de negócios XDM</li><li>Membros da campanha de negócios XDM</li></ul> | | quarta-feira, 26 de março de 2024 |
 | **Adobe Product Analytics: Comparar eventos em uma única etapa de Funil** | Na visualização Funil: Fricção, agora é possível comparar eventos em uma única etapa de funil. Isso é particularmente útil quando sua jornada tem opções de etapa ou uma etapa em que um experimento A/B está sendo executado. | sábado, 29 de março de 2024 | sábado, 12 de abril de 2024 |
 | **Os administradores podem gerenciar todos os locais em sua organização** | Uma nova opção na página Locais permite que os administradores visualizem e gerenciem todos os locais na organização. Anteriormente, os administradores podiam visualizar e gerenciar apenas os locais que criavam. | | Abril de 2024 |

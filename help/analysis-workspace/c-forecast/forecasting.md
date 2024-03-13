@@ -3,20 +3,19 @@ description: Saiba mais sobre previsão no Analysis Workspace.
 title: Visão geral da previsão
 feature: Visualizations
 role: User
-source-git-commit: 2f5bd8bec1580077675d249fa0431d84ee2269fa
+exl-id: 9ec920c4-3273-4497-83a4-6a2e2fc92e2f
+source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
 
 # Visão geral da previsão
 
-
-
 {{select-package}}
 
-Previsão é um recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano). A previsão está disponível somente para dados relacionados a séries temporais.
+Previsão é um recurso do Analysis Workspace que ajuda a prever uma métrica padrão ou calculada com qualquer granularidade de tempo suportada (por hora, dia, semana, mês e ano). A previsão está disponível somente para dados relacionados a séries temporais.
 
 Você pode aproveitar a previsão para:
 
@@ -25,5 +24,3 @@ Você pode aproveitar a previsão para:
 * **Gerenciamento de riscos**: ao antecipar eventos e tendências futuros, você pode tomar medidas proativas para reduzir riscos e minimizar possíveis perdas.
 * **Alocação de recursos**: ao prever a demanda futura, você pode garantir que os recursos necessários estejam disponíveis para atender às necessidades do cliente e evitar faltas de estoque ou excesso de estoque.
 * **Avaliação de desempenho**: Comparando os resultados reais com os resultados previstos, é possível identificar áreas para aprimoramento e fazer os ajustes necessários.
-
-
