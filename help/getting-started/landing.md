@@ -4,10 +4,10 @@ title: Página inicial do Customer Journey Analytics
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 6bd4a0462547966342a52115eb9d45e7c1e1ad25
+source-git-commit: 0fb09e9a7d23c88fb3d18f39816dfae32b131469
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 89%
+source-wordcount: '1388'
+ht-degree: 88%
 
 ---
 
@@ -55,7 +55,7 @@ As colunas disponíveis são:
 | [!UICONTROL **Compartilhado com**] | Mostra com quem o projeto está compartilhado no momento. |
 | [!UICONTROL **Última modificação**] | A data e a hora em que o projeto foi modificado pela última vez. |
 | [!UICONTROL **Última Abertura**] | Identifica a data em que um projeto foi aberto pela última vez pelo usuário que está visualizando a página Projetos no momento. |
-| [!UICONTROL **Usado pela última vez**] | Ajuda a determinar se um projeto é valioso para os usuários em sua organização, mostrando a data e a hora em que o projeto foi aberto pela última vez por qualquer usuário na organização.<p>Essa coluna está disponível somente para administradores do sistema.</p> |
+| [!UICONTROL **Usado pela última vez**] | Ajuda a determinar se um projeto é valioso para os usuários em sua organização, mostrando a data e a hora em que o projeto foi aberto pela última vez por qualquer usuário na organização.<p>Considere o seguinte ao visualizar esta coluna:</p><ul><li>As informações de uso estarão disponíveis a partir de setembro de 2023.</li><li>Essa coluna está disponível somente para administradores do sistema.</li></ul> |
 | [!UICONTROL **ID do projeto**] | Pode ser usado para depurar projetos. |
 | [!UICONTROL **Intervalo de datas mais longo**] | Intervalos de datas mais longos aumentam a complexidade do projeto e podem aumentar os tempos de processamento e carregamento. |
 | [!UICONTROL **Número de consultas**] | O número total de solicitações feitas no Analytics quando o projeto é carregado. Um número maior de consultas de projeto aumenta a complexidade do projeto e pode aumentar os tempos de processamento e carregamento. Esses dados só estão disponíveis depois que um projeto é carregado ou depois que um projeto agendado é enviado. |
