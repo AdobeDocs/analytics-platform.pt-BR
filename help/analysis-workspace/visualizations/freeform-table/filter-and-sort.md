@@ -4,10 +4,10 @@ title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 772fa17f013ef0543027a7f60be780e9cf8f634a
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 67%
+source-wordcount: '924'
+ht-degree: 69%
 
 ---
 
@@ -53,12 +53,15 @@ Para excluir rapidamente linhas específicas de uma tabela de forma livre:
 
    Mantenha pressionada a tecla Shift para selecionar um intervalo de linhas, ou mantenha pressionada a tecla Command (no Mac) ou a tecla Ctrl (no Windows) para selecionar várias linhas.
 
-### Clique com o botão direito do mouse em > Excluir linhas selecionadas
+<!--### Right-click > Delete selected rows
 
-1. Selecione uma ou mais linhas.
-1. Clique com o botão direito e selecione **[!UICONTROL Excluir Linhas Selecionadas]**.
+Note: this option does not seem to work. AN-338422
 
-   Essa ação removerá as linhas da tabela e aplicará um filtro de tabela.
+1. Select 1 or more rows. 
+1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
+
+   This action will remove the rows from the table and apply a table filter.-->
+
 
 ### Aplicar um filtro simples ou avançado a uma tabela
 
