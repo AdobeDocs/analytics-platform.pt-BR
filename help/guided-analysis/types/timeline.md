@@ -4,9 +4,10 @@ description: Observe os eventos de sessão no nível do usuário ao longo do tem
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
+source-git-commit: e9721eaf993175dd46e9d8edf9176d7c00308e8c
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 A variável **[!UICONTROL Linha do tempo]** permite observar eventos de sessão no nível do usuário ao longo do tempo para encontrar padrões de experiência e contar melhores histórias de usuário. O painel esquerdo permite filtrar o fluxo por valores de propriedade e segmentos. O painel direito permite selecionar de uma lista aleatória de usuários que correspondem aos critérios do filtro. A área central mostra o fluxo do usuário selecionado por sessão, consistindo em carimbo de data e hora, valores de propriedade e duração. A duração não está disponível para o último evento em uma determinada sessão.
 
-![Captura de tela da linha do tempo](../assets/timeline.png){style="border:1px solid gray"}
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
 >[!NOTE]
 >
