@@ -3,16 +3,16 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: adb62f1a4c48955f890909d4f4b090786c3968d3
+source-git-commit: 20e99275a42312ed974ac4c1af28ede73180e748
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 44%
+source-wordcount: '957'
+ht-degree: 42%
 
 ---
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (março de 2024)
 
-**Última atualização**: quinta-feira, 13 de março de 2024
+**Última atualização**: quinta-feira, 20 de março de 2024
 
 Essas notas de versão abrangem o período de lançamento compreendido entre 13 de março e abril de 2024. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -26,7 +26,7 @@ Essas notas de versão abrangem o período de lançamento compreendido entre 13 
 | **Transformação de Esquema B2B de Pessoa para Conta** | Permite transformar conjuntos de dados para oferecer melhor suporte a pesquisas baseadas em pessoas nos cenários de relatórios Customer Journey Analytics B2B. Esse recurso está disponível para conjuntos de dados de esquemas B2B com base nas seguintes classes:<ul><li>Relação pessoal da conta de negócios XDM</li><li>Relação pessoal de oportunidade de negócios XDM</li><li>Membros da lista de marketing de negócios XDM</li><li>Membros da campanha de negócios XDM</li></ul> | | quarta-feira, 26 de março de 2024 |
 | **Uso de Report Builder incluído na coluna &quot;Usado em&quot; no gerenciador de métricas calculadas e no gerenciador de filtros** | Ao visualizar a variável **Usado em** No gerenciador de métricas calculadas ou no gerenciador de filtros, os dados de uso agora estão disponíveis para o Report Builder.<p>Anteriormente, os dados de uso no gerenciador Filtros estavam disponíveis apenas para Alertas, Projetos, Projetos agendados e Métricas calculadas; enquanto os dados de uso no gerenciador Métricas calculadas estavam disponíveis apenas para Alertas, Projetos e Projetos agendados.</p> |  | Final de março ou início de abril |
 | **Adobe Product Analytics: Comparar eventos em uma única etapa de Funil** | Na visualização Funil: Fricção, agora é possível comparar eventos em uma única etapa de funil. Isso é particularmente útil quando sua jornada tem opções de etapa ou uma etapa em que um experimento A/B está sendo executado. | sábado, 29 de março de 2024 | sábado, 12 de abril de 2024 |
-| **Os administradores podem gerenciar todos os locais em sua organização** | Uma nova opção na página Locais permite que os administradores visualizem e gerenciem todos os locais na organização. Anteriormente, os administradores podiam visualizar e gerenciar apenas os locais que criavam. | | Abril de 2024 |
+| **Os administradores podem gerenciar todos os locais e contas em sua organização** | Uma nova opção na guia Locais (na página Componentes > Exportações) permite que os administradores visualizem e gerenciem todos os locais na organização. <p>Uma nova opção na guia Contas de local (na página Componentes > Exportações) permite que os administradores visualizem e gerenciem todas as contas na organização.</p><p>Anteriormente, os administradores podiam visualizar e gerenciar apenas os locais e as contas que criavam.</p> | | Abril de 2024 |
 | **Os públicos-alvo são publicados em uma nova seção &quot;Públicos-alvo&quot; no Experience Platform** | Os públicos-alvo publicados no Customer Journey Analytics agora estão disponíveis na nova seção &quot;Públicos-alvo&quot; no Experience Platform. Anteriormente, os públicos publicados no Customer Journey Analytics estavam disponíveis na Platform, na seção &quot;Segmentos&quot;. Essa melhoria oferece os seguintes benefícios:<ul><li>Os públicos-alvo não têm mais um atraso de 1 hora antes de serem exibidos na Platform; eles estão disponíveis segundos após serem publicados.</li><li>Os públicos podem ser classificados na Platform usando a coluna &quot;Origem&quot;, que exibe o aplicativo do qual o público-alvo foi publicado originalmente.</li><li>As opções de filtro e classificação na Platform permitem encontrar os públicos relevantes com mais rapidez.</li></ul>Para obter mais informações, consulte a seção [Usar públicos-alvo do Customer Journey Analytics no Experience Platform](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=en#audiences-aep). |  | Abril de 2024 |
 | **Detecção de bots do Experience Edge** | A [Detecção de bots](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=pt-BR) permite identificar eventos gerados pelo SDK da Web, SDK móvel e API do servidor como sendo gerados por aranhas e bots conhecidos. | | 29 de abril de 2024 |
 
