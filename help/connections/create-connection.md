@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 948f5d986d9cde2b2994165896e0a22baace88ab
+source-git-commit: 18f7f4ab3ef368afb73445c5b6dccc3c4f468ef7
 workflow-type: tm+mt
-source-wordcount: '2888'
-ht-degree: 95%
+source-wordcount: '2910'
+ht-degree: 97%
 
 ---
 
@@ -35,7 +35,7 @@ O número máximo de conjuntos de dados que você pode adicionar a uma conexão 
 
 {style="table-layout:auto"}
 
-Entre em contato com o administrador se não tiver certeza do pacote de Customer Journey Analytics que possui.
+Entre em contato com sua administração se não tiver certeza de qual pacote do Customer Journey Analytics você possui.
 
 ## Criar e configurar a conexão {#create-connection}
 
@@ -187,10 +187,10 @@ Esse cálculo é feito para cada conjunto de dados na conexão.
 2. Para mostrar todos os conjuntos de dados existentes na Adobe Experience Platform, execute a consulta `Show Tables`.
 
 
-## Remoção algorítmica de grandes conjuntos de dados de pesquisa
+## Apara algorítmica de grandes conjuntos de dados de pesquisa
 
-Ao criar uma conexão, você pode adicionar grandes conjuntos de dados para fins de pesquisa. Por exemplo, um conjunto de dados que representa um catálogo de produtos para que as informações descritivas do produto possam ser pesquisadas ao criar relatórios e visualizações. Esse conjunto de dados de pesquisa grande pode exceder o máximo de 10 milhões de pesquisas exclusivas implementadas no momento como garantia, resultando no cancelamento de dados adicionais.
+Ao criar uma conexão, você pode adicionar grandes conjuntos de dados para fins de pesquisa. Por exemplo, um conjunto de dados que representa um catálogo de produtos para que as informações descritivas dos produtos possam ser pesquisadas ao criar relatórios e visualizações. Esse conjunto de dados de pesquisa grande pode exceder o máximo de 10 milhões de pesquisas únicas implementadas no momento como medida de proteção, resultando na omissão de dados adicionais.
 
-Você pode solicitar a remoção algorítmica de um conjunto de dados de pesquisa tão grande. Essa remoção carregará apenas dados no conjunto de dados de pesquisa para o qual as chaves estão disponíveis na parte do conjunto de dados do evento da sua conexão. A contagem de referência usada no algoritmo retorna para 90 dias e é atualizada uma vez por semana.
+Você pode solicitar uma remoção algorítmica de um grande conjunto de dados de pesquisa. Essa remoção algorítmica só mantém dados no conjunto de dados de pesquisa que correspondem às chaves no conjunto de dados do evento. Dessa forma, não é necessário carregar todo o conjunto de dados de pesquisa não removido. Os itens usados com menos frequência são removidos, o que pode afetar ligeiramente os relatórios, mas traz benefícios significativos. O algoritmo retroage em 90 dias e é atualizado semanalmente.
 
-Entre em contato com o representante da Adobe para obter mais informações.
+Entre em contato com a equipe de suporte do Adobe para obter mais informações e habilitar esse recurso.
