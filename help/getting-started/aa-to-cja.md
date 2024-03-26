@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1443'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -62,15 +62,15 @@ Com a introdução de [Campos derivados](../data-views/derived-fields/derived-fi
 
 Clientes do Adobe Analytics podem utilizar facilmente seus conjuntos de relatórios na Adobe Experience Platform e no Customer Journey Analytics usando o conector de origem do Analytics. Para obter informações acerca da utilização do conector de origem do Analytics, consulte o guia de início rápido sobre como [assimilar dados do Adobe Analytics e usá-los no Customer Journey Analytics](../data-ingestion/analytics.md). Consulte também [Criar uma conexão de origem do Adobe Analytics na interface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) para obter mais informações.
 
-O Adobe também oferece a capacidade de implementar a coleta de dados usando o [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/web-sdk.html?lang=pt-BR) ou [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=pt-BR). Esses métodos expandem muito as possibilidades de coleta de dados. Não há mais uma limitação no número de campos ou a necessidade de mapear elementos de dados para props, eVars e eventos, como no Analytics. Você pode usar elementos de esquema ilimitados de diferentes tipos e representá-los de várias maneiras com as [visualizações de dados](/help/data-views/data-views.md) do Customer Journey Analytics. A velocidade da disponibilidade dos dados aumenta quando enviados diretamente para a Adobe Experience Platform, já que o tempo para processamento de dados por meio do Adobe Analytics é removido.
+A Adobe também oferece a capacidade de implementar a coleção de dados usando o [SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/web-sdk.html?lang=pt-BR) ou o [SDK móvel da Adobe Experience Platform](https://experienceleague.adobe.com/docs/mobile.html?lang=pt-BR). Esses métodos expandem muito as possibilidades de coleção de dados. Não há mais uma limitação no número de campos ou a necessidade de mapear elementos de dados para propriedades, eVars e eventos como no Analytics. Você pode usar elementos de esquema ilimitados de diferentes tipos e representá-los de várias maneiras com as [visualizações de dados](/help/data-views/data-views.md) do Customer Journey Analytics. A velocidade da disponibilidade dos dados aumenta quando enviados diretamente para a Adobe Experience Platform, já que o tempo para processamento de dados por meio do Adobe Analytics é removido.
 
 **Vantagens de usar SDKs da Experience Platform:**
 
 * Esquema flexível para definir qualquer campo necessário
 * Não depende da nomenclatura do Adobe Analytics (propriedades, eVar, evento etc.)
 * Nenhum problema de limite de caracteres (100 caracteres para propriedades)
-* Disponibilidade de dados mais rápida na Adobe Experience Platform para permitir [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
-* [IDs de dispositivo próprio](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) para melhorar a precisão da identificação do visitante
+* Disponibilidade de dados mais rápida na Adobe Experience Platform para permitir [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=pt-BR)
+* [IDs de dispositivo próprio](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=pt-BR) para melhorar a precisão da identificação do visitante
 
 **Desvantagens de usar SDKs da Experience Platform**
 
@@ -120,7 +120,7 @@ Estes são alguns vídeos para orientá-lo:
 
 * [Transferir segmentos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/moving-adobe-analytics-segments-to-customer-journey-analytics.html?lang=pt-BR)
 
-* [Transferir suas métricas calculadas do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html)
+* [Transferir suas métricas calculadas do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.html?lang=pt-BR)
 
 ### Outras considerações
 

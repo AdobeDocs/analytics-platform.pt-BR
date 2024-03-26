@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2523'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ A Adobe alterou recentemente a forma do processamento de dados no Customer Journ
 
 ## 5. Definir janela contínua para retenção de dados de [!UICONTROL conexão] {#data-retention}
 
-A configuração [**[!UICONTROL Habilitar janela de dados contínua ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
+A configuração [**[!UICONTROL Habilitar janela de dados contínua ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
 
 O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
 
@@ -267,4 +267,4 @@ Quando os dados chegam ao data center regional, a configuração da sequência d
 O Customer Journey Analytics exige conjuntos de dados da Adobe Experience Platform, portanto, a configuração de encaminhamento de eventos/sequência de dados precisa que o serviço da Adobe Experience Platform encaminhe os dados do data center regional para o data center em que sua instância da Adobe Experience Platform está localizada. O Customer Journey Analytics e seus serviços e infraestrutura de suporte são implantados na mesma instância da Adobe Experience Platform.
 
 
-Consulte [Visão geral da coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) para obter mais informações sobre o processo de coleta de dados além da Rede de borda da Adobe Experience Platform e de seus data centers regionais.
+Consulte [Visão geral da coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=pt-BR) para obter mais informações sobre o processo de coleção de dados além da rede de borda da Adobe Experience Platform e seus data centers regionais.
