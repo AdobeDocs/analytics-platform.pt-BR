@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 18f7f4ab3ef368afb73445c5b6dccc3c4f468ef7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2910'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -191,6 +191,6 @@ Esse cálculo é feito para cada conjunto de dados na conexão.
 
 Ao criar uma conexão, você pode adicionar grandes conjuntos de dados para fins de pesquisa. Por exemplo, um conjunto de dados que representa um catálogo de produtos para que as informações descritivas dos produtos possam ser pesquisadas ao criar relatórios e visualizações. Esse conjunto de dados de pesquisa grande pode exceder o máximo de 10 milhões de pesquisas únicas implementadas no momento como medida de proteção, resultando na omissão de dados adicionais.
 
-Você pode solicitar uma remoção algorítmica de um grande conjunto de dados de pesquisa. Essa remoção algorítmica só mantém dados no conjunto de dados de pesquisa que correspondem às chaves no conjunto de dados do evento. Dessa forma, não é necessário carregar todo o conjunto de dados de pesquisa não removido. Os itens usados com menos frequência são removidos, o que pode afetar ligeiramente os relatórios, mas traz benefícios significativos. O algoritmo retroage em 90 dias e é atualizado semanalmente.
+E possível solicitar uma remoção algorítmica de um grande conjunto de dados de pesquisa. Essa remoção algorítmica mantém apenas os dados no conjunto de dados de pesquisa que correspondem às chaves no seu conjunto de dados de eventos. Dessa forma, não é preciso carregar todo o conjunto de dados de pesquisa não removido. Itens antigos ou usados com menos frequência são removidos, o que pode afetar ligeiramente os relatórios, mas oferece benefícios consideráveis. O algoritmo considera os últimos 90 dias e é atualizado semanalmente.
 
-Entre em contato com a equipe de suporte do Adobe para obter mais informações e habilitar esse recurso.
+Entre em contato com a equipe de suporte da Adobe para obter mais informações e habilitar esse recurso.
