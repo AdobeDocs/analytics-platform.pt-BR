@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: ht
-source-wordcount: '1964'
-ht-degree: 100%
+source-git-commit: 5333034f70ca9ca8252af2874d443bd09e746384
+workflow-type: tm+mt
+source-wordcount: '1969'
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Recurso | Notas |
 | --- | --- |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos e Analytics for Target (A4T) não são compatíveis. |
-| Analytics for Target (A4T) | Um suporte parcial é fornecido por meio de campos no [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). Há um suporte planejado para nomes amigáveis do A4T em atividades de direcionamento e experiência. |
+| Analytics for Target (A4T) | Atualmente na versão beta. Um suporte parcial é fornecido por meio de campos no [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). Há um suporte planejado para nomes amigáveis do A4T em atividades de direcionamento e experiência. |
 
 {style="table-layout:auto"}
 
@@ -115,7 +115,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 
 {style="table-layout:auto"}
 
-## Não haverá suporte {#never}
+## Nunca terá suporte {#never}
 
 * Métrica de pessoas usando o Cross-Device Coop
 
