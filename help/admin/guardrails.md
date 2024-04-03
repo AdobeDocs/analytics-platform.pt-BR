@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 56b909a542915cd64251fb8849e55df920668025
+source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1523'
 ht-degree: 8%
 
 ---
@@ -121,7 +121,7 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 |---|--:|---|---|
 | Campos | 10.000 | Proteção imposta pelo sistema | Número máximo de propriedades ou campos por linha em um conjunto de dados. |
 | Cadeias de Caracteres Exclusivas | 10 milhões | Proteção imposta pelo sistema | Número máximo de chaves exclusivas por conjunto de dados de pesquisa. |
-| Linhas | 1 milhão | Proteção imposta pelo sistema | Número máximo de linhas por ID de pessoa única em uma conexão. |
+| Linhas | 1 milhão | Proteção imposta pelo sistema | Número máximo de linhas por ID de pessoa única em um determinado mês em uma conexão. |
 | Tamanho da linha | 2 | Proteção de desempenho / Proteção imposta pelo sistema | Tamanho médio em quilobytes por linha de dados assimilados no Customer Journey Analytics (limite flexível). Um limite estático para o tamanho da linha é determinado pelas Medidas de proteção para assimilação de dados no Experience Platform. |
 
 {style="table-layout:auto"}
