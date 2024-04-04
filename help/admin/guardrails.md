@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: eca9b101cea489b77af0ec5287ff96907e637d1e
+source-git-commit: 8af2c48c4895e6015c16e3973b6cd213aff38441
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1606'
 ht-degree: 8%
 
 ---
@@ -127,6 +127,18 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 {style="table-layout:auto"}
 
 Consulte também Experience Platform [Medidas de proteção para a assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+
+
+## Exportação de dados de destinos
+
+| Nome | Valor | Tipo de limite | Descrição |
+|---|--:|---|---|
+| Exportação de dados | Total de armazenamentos autorizados do Data Lake | Proteção de desempenho | O Cliente pode usar a Exportação do conjunto de dados de destino para exportar os Dados do cliente no Data Lake até o Armazenamento total autorizado do Data Lake. |
+| Conjuntos de dados disponíveis | Perfil e evento | Proteção imposta pelo sistema | Conjuntos de dados de Perfil e Evento de experiência criados na interface do Experience Platform após assimilar ou coletar dados por meio de Fontes, SDK da Web, SDK móvel, Conector de dados do Analytics e Audience Manager. |
+
+{style="table-layout:auto"}
+
+Consulte também Experience Platform [Proteções de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Zona de aterrissagem de dados
