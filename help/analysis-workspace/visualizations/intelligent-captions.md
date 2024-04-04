@@ -4,9 +4,9 @@ title: Legendas inteligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 02e98b5ec1932e822c8d3805948d390eccc2b750
+source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '453'
 ht-degree: 2%
 
 ---
@@ -71,3 +71,7 @@ Você pode **exportar legendas via PDF**, desde que o projeto seja salvo com as 
 Se você preferir não gerar legendas inteligentes, é possível desativar esse recurso acessando as Preferências de visualização e desmarcando **[!UICONTROL Mostrar legendas inteligentes]**.
 
 ![Opções de visualização de linha que mostram a opção de desmarcar Mostrar legendas inteligentes.](assets/toggle-captions.png)
+
+## Legendas inteligentes em cartões de pontuação móveis
+
+Para obter mais informações, consulte [Gerenciar cartões de pontuação](/help/mobile-app/manage-scorecard.md)
