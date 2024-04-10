@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 135d1832a1c22248e3c52e3f7cb9f05293626522
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1073'
 ht-degree: 79%
 
 ---
@@ -176,6 +176,7 @@ ht-degree: 79%
    + Previsão {#forecasting}
       + [Visão geral da previsão](../analysis-workspace/c-forecast/forecasting.md)
       + [Exibir previsões no Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
+      + [Técnicas estatísticas usadas no serviço de previsão](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [Preferências do usuário](../analysis-workspace/user-preferences.md)
    + Perguntas frequentes sobre o Workspace {#workspace-faq}
       + [Perguntas frequentes](../analysis-workspace/workspace-faq/faq.md)
