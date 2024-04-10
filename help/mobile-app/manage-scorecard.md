@@ -4,13 +4,13 @@ title: Gerenciar cartões de pontuação
 feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
+source-git-commit: 6149d2cf23eb31f0aaa37546d3150017e155053c
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 72%
+source-wordcount: '1792'
+ht-degree: 66%
 
 ---
-
 
 # Gerenciar cartões de pontuação
 
@@ -202,12 +202,30 @@ Caso queira remover itens de dimensões [!UICONTROL Não especificados] dos seus
 
 1. Clique no ícone ao lado de **[!UICONTROL Não especificado]** para remover dados não especificados de seus relatórios. (Também é possível remover qualquer outro item de dimensão).
 
-## Exibir legendas inteligentes em cartões de pontuação
+## Exibir legendas inteligentes em cartões de pontuação {#captions}
 
 As legendas inteligentes podem ajudar os não analistas a entender melhor seus dados sem a ajuda dos analistas. As legendas inteligentes usam aprendizagem de máquina avançada e IA gerativa para fornecer insights valiosos de linguagem natural para visualizações.
 
-Para exibir legendas inteligentes:
+Essas legendas escolhem os principais insights estatísticos nos dados e os expressam em linguagem natural, ajudando assim os não analistas a desenvolver sua alfabetização de dados.
 
-1. Clique em um bloco.
+As legendas inteligentes estão disponíveis para todas as visualizações no aplicativo móvel, incluindo Linha, Rosca, Gráfico de barras e Número do resumo.
 
-1. more
+Para exibir legendas inteligentes em um cartão de pontuação para dispositivos móveis:
+
+1. Em um cartão de pontuação, clique em um bloco. Por exemplo, neste cartão de pontuação, clique no gráfico de linhas na parte inferior.
+
+   ![Scorecard com visualização de linha](assets/caption1.png)
+
+1. Toque no ícone azul na parte superior direita para gerar as legendas. As legendas aparecerão abaixo do gráfico de linhas.
+
+   ![Legenda inteligente na visualização de linha](assets/caption2.png)
+
+1. Deslize para a direita para ver todas as legendas inteligentes.
+
+   As legendas inteligentes podem apontar para picos de dados, anomalias, tendências, declínios, correlações e outros fenômenos.
+
+1. Toque no sinalizador preto dentro de uma legenda para relatar um problema, como conteúdo mal-intencionado ou ilegal.
+
+   ![Relatar problema com legenda](assets/caption-report.png)
+
+1. Clique no X para sair da janela **[!UICONTROL Resultados do relatório]** diálogo.
