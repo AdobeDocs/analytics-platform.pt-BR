@@ -4,9 +4,9 @@ title: Legendas inteligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '459'
 ht-degree: 2%
 
 ---
@@ -74,4 +74,4 @@ Se você preferir não gerar legendas inteligentes, é possível desativar esse 
 
 ## Legendas inteligentes em cartões de pontuação móveis
 
-Para obter mais informações, consulte [Gerenciar cartões de pontuação](/help/mobile-app/manage-scorecard.md)
+As legendas inteligentes também estão disponíveis no Customer Journey Analytics [cartões de pontuação móveis](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).

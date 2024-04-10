@@ -3,23 +3,24 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: e27e2ad81ed997c5aa19a270a9d682ac6a03ce2a
+source-git-commit: 542cbb35d3870b8eef6fe252d1ac20962a1b2b8f
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 94%
+source-wordcount: '1037'
+ht-degree: 91%
 
 ---
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (março de 2024)
 
-**Última atualização**: quinta-feira, 3 de abril de 2024
+**Última atualização**: quinta-feira, 10 de abril de 2024
 
-Essas notas de versão abrangem o período de lançamento de 13 de março de 2024 a abril de 2024. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
+Essas notas de versão abrangem o período de lançamento de quinta-feira, 13 de março de 2024 a abril de 2024. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
 ## Recursos novos ou atualizados
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Legendas inteligentes em cartões de pontuação móveis** | [Legendas inteligentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) O pode ajudar os não analistas a entender melhor seus dados sem a ajuda de analistas. Agora eles estão disponíveis em cartões de pontuação do Customer Journey Analytics. |  | quinta-feira, 10 de abril de 2024 |
 | **Alteração no protocolo de exclusão para projetos do Workspace** | Anteriormente, os projetos excluídos do Workspace nunca eram removidos do sistema. Agora, começaremos a limpar os projetos excluídos após 180 dias. Durante os 180 dias após a exclusão, os usuários ainda podem acessar um projeto excluído por meio da interface da Web se tiverem um URL para o projeto direto. | | 14 de março de 2024 |
 | **Nova coluna disponível na página de destino Projetos** | A coluna **[!UICONTROL Última utilização]** agora está disponível ao visualizar a guia Projetos na [página de destino do Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/landing.html?lang=pt-BR). <p>Essa informação pode ajudar a determinar se um projeto é valioso para usuários em sua organização, mostrando a data e a hora em que o projeto foi aberto pela última vez. Anteriormente, a coluna **[!UICONTROL Última utilização]** estava disponível somente no Gerenciador de métricas calculadas, no Gerenciador de segmentos e no Gerenciador de alertas.</p> |  | 13 de março de 2024 |
 | **Métricas de uso** | A [interface de métricas de uso](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR) mostra o uso de linhas assimiladas e relatáveis em todas as conexões. Essa interface permite determinar se o uso do Customer Journey Analytics está em conformidade com o que foi acordado contratualmente. |  | 13 de março de 2024 |
