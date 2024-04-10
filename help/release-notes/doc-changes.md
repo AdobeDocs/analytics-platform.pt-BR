@@ -4,9 +4,9 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: dd4a2e4770e0ead4c7b4c578acd2ceacdfaa856c
+source-git-commit: 3ca28d9c9f1c6a9e14ce4c9080bd180a5699ad5b
 workflow-type: tm+mt
-source-wordcount: '3277'
+source-wordcount: '3290'
 ht-degree: 78%
 
 ---
@@ -20,6 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Abril de 2024** | |
+| Previsão de técnicas estatísticas | Adição de um artigo descrevendo o [técnicas estatísticas utilizadas no serviço de previsões](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Foram adicionadas informações recomendando a Exportação de tabela completa para dimensões de alta cardinalidade | Adição de marcador em [Práticas recomendadas para dimensões de alta cardinalidade](/help/components/dimensions/high-cardinality.md) para recomendar o uso da Exportação de tabela completa para dimensões de alta cardinalidade. |
 | **Março de 2024** | |
 | A coluna “Usado em” disponibiliza informações de uso apenas a partir de setembro de 2023. | Esclarecimento de que as informações de uso relacionadas à coluna **Usado em** na [página de destino de projetos](/help/getting-started/landing.md) mostram apenas dados a partir de setembro de 2023. |
