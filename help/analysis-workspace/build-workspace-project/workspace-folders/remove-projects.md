@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
 source-git-commit: 7ba5a1d4d9f93cd15b76d26a880abe723120de72
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Você pode mover projetos de uma pasta para outra pasta que você criou.
 
 ## Excluir um projeto de uma pasta de projeto {#delete-project-in-folder}
 
-Quando você exclui um projeto de uma pasta, ele é removido do sistema após 180 dias. Durante os 180 dias após a exclusão, os usuários ainda podem acessar um projeto excluído por meio da interface da Web se tiverem um URL direto para o projeto.
+Ao excluir um projeto de uma pasta, ele é removido do sistema após 180 dias. Durante os 180 dias após a exclusão, os usuários ainda podem acessá-lo por meio da interface da Web se tiverem um URL direto para o projeto.
 
 1. Em uma pasta de projeto, selecione o ícone de reticências **...** ao lado do nome do projeto.
 
