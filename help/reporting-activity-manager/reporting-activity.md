@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: d6f2d7129b472b32edc30dadfeb2303a92d790de
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '2001'
 ht-degree: 7%
 
 ---
@@ -25,6 +25,10 @@ Para obter mais informações sobre o Gerente de atividades de relatórios, incl
    Uma lista de suas conexões base ativadas é exibida.
 
    ![Atividade de relatórios mostrando a fila de relatórios](assets/reporting-activity1.png)
+
+1. Para exibir o número total de solicitações de relatório para todas as conexões em sua organização, expanda [!UICONTROL **Mostrar mais**] para exibir o [!UICONTROL **Solicitações de relatório mensais**] gráfico.
+
+   Você pode visualizar o número de solicitações de relatório em sua organização para o mês atual e o mês anterior.
 
 1. (Opcional) É possível pesquisar ou filtrar a lista de conexões:
 
