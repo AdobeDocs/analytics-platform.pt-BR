@@ -5,10 +5,10 @@ title: Gerenciar locais e contas de exportação da nuvem
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: cdf99e31790f089950de8063445b6264158131dd
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 2%
+source-wordcount: '668'
+ht-degree: 1%
 
 ---
 
@@ -48,13 +48,19 @@ Para encontrar as informações necessárias, você pode filtrar a lista de loca
 
 1. Selecione o [!UICONTROL **Localizações**] guia.
 
+1. (Condicional) Se você for um administrador do sistema, poderá ativar a [!UICONTROL **Exibir locais para todos os usuários**] opção para exibir locais criados por todos os usuários em sua organização.
+
 1. No campo de pesquisa, comece digitando qualquer informação associada ao local em que você está pesquisando. Você pode pesquisar dados de qualquer coluna disponível na tabela.
 
 ## Editar locais
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. Selecione o [!UICONTROL **Localizações**] e selecione o local que deseja editar.
+1. Selecione o [!UICONTROL **Localizações**] guia.
+
+1. (Condicional) Se você for um administrador do sistema, poderá ativar a [!UICONTROL **Exibir locais para todos os usuários**] opção para exibir locais criados por todos os usuários em sua organização.
+
+1. Selecione o local que deseja editar.
 
    ![Janela Exportações mostrando a guia Locais e a lista de locais.](assets/locations-edit.png)
 
@@ -70,7 +76,11 @@ Para excluir um local:
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
-1. Selecione o [!UICONTROL **Localizações**] e, em seguida, selecione um ou mais locais que deseja excluir.
+1. Selecione o [!UICONTROL **Localizações**] guia.
+
+1. (Condicional) Se você for um administrador do sistema, poderá ativar a [!UICONTROL **Exibir locais para todos os usuários**] opção para exibir locais criados por todos os usuários em sua organização.
+
+1. Selecione um ou mais locais que deseja excluir.
 
    ![Janela Exportações mostrando a guia Locais e a lista de locais](assets/locations-edit.png)
 
@@ -92,6 +102,8 @@ Para excluir um local:
 
    ![Janela Exportações mostrando a guia Contas de local](assets/account-add.png)
 
+1. (Condicional) Se você for um administrador do sistema, poderá ativar a [!UICONTROL **Exibir contas para todos os usuários**] opção para exibir locais criados por todos os usuários em sua organização.
+
 1. Selecionar [!UICONTROL **Exibir detalhes**] na conta que deseja editar.
 
 1. Faça as alterações desejadas e selecione [!UICONTROL **Salvar**].
@@ -108,6 +120,8 @@ Para exibir chaves associadas a uma conta de exportação:
 
    ![Janela Exportações mostrando a guia Contas de local](assets/account-add.png)
 
+1. (Condicional) Se você for um administrador do sistema, poderá ativar a [!UICONTROL **Exibir contas para todos os usuários**] opção para exibir locais criados por todos os usuários em sua organização.
+
 1. Selecione o ícone de 3 pontos na conta que deseja editar e selecione [!UICONTROL **Chaves da conta**].
 
 ## Excluir contas
@@ -117,6 +131,8 @@ Para exibir chaves associadas a uma conta de exportação:
 1. Selecione o [!UICONTROL **Contas de localização**] guia.
 
    ![Janela Exportações mostrando a guia Contas de local](assets/account-add.png)
+
+1. (Condicional) Se você for um administrador do sistema, poderá ativar a [!UICONTROL **Exibir contas para todos os usuários**] opção para exibir locais criados por todos os usuários em sua organização.
 
 1. Selecione o ícone de 3 pontos na conta que deseja editar e selecione [!UICONTROL **Excluir conta**].
 

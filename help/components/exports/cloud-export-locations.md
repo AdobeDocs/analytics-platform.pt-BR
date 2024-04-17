@@ -5,10 +5,10 @@ title: Configurar locais de exportação da nuvem
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: dadb22558c93d0f528986dfc033b6668467d1c01
+source-git-commit: 067a9e3d5319a33bb5ae894d76f3445e2d968d0e
 workflow-type: tm+mt
-source-wordcount: '1738'
-ht-degree: 3%
+source-wordcount: '1789'
+ht-degree: 19%
 
 ---
 
@@ -40,7 +40,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
 1. Especifique as seguintes informações: |Campo | Função | |—|—| | [!UICONTROL **Nome**] | O nome do local.  | | [!UICONTROL **Descrição**] | Forneça uma breve descrição da localização para ajudar a diferenciá-la de outros locais na conta. | | [!UICONTROL **Conta de localização**] | Selecione a conta na qual deseja criar a localização. Para obter informações sobre como criar uma conta, consulte [Configurar contas de exportação da nuvem](/help/components/exports/cloud-export-accounts.md). |
 
-1. No [!UICONTROL **Propriedades do local**] especifique as informações específicas ao tipo de conta da sua conta de localização.
+1. Na seção [!UICONTROL **Propriedades da localização**], insira as informações específicas ao tipo da sua conta de localização.
 
    Continue com a seção abaixo que corresponde ao tipo de conta selecionado na [!UICONTROL **Conta de localização**] campo.
 
@@ -69,7 +69,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja colocar os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, `folder_name/` |
+   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, `folder_name/` |
 
    {style="table-layout:auto"}
 
@@ -106,8 +106,8 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Balde**] | O bucket da conta do Amazon S3 para o qual você deseja que os dados do Adobe Analytics sejam enviados. <p>Certifique-se de que o ARN do usuário fornecido pelo Adobe tenha o `S3:PutObject` para carregar arquivos nesse bucket. </p> |
-   | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja colocar os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, folder_name/ |
+   | [!UICONTROL **Balde**] | O bucket da conta do Amazon S3 para o qual você deseja enviar os dados do Adobe Analytics. <p>Certifique-se de que o ARN do usuário fornecido pelo Adobe tenha o `S3:PutObject` para carregar arquivos nesse bucket. </p><p>Os nomes dos buckets devem atender às regras de nomenclatura específicas. Por exemplo, eles devem ter entre 3 e 63 caracteres de comprimento, podem consistir apenas de letras minúsculas, números, pontos (.) e hifens (-) e devem começar e terminar com uma letra ou número. [Uma lista completa de regras de nomenclatura está disponível na documentação do AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, folder_name/ |
 
    {style="table-layout:auto"}
 
@@ -129,8 +129,8 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Balde**] | O bucket da conta GCP para o qual você deseja que os dados do Adobe Analytics sejam enviados. <p>Certifique-se de que você concedeu a `roles/storage.objectCreator` ao responsável principal fornecida pela Adobe. (O Principal é fornecido quando [configuração da conta da Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Para obter informações sobre a concessão de permissões, consulte [Adicionar uma entidade de segurança a uma política no nível do bucket](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) na documentação da Google Cloud.</p> |
-   | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja colocar os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, folder_name/ |
+   | [!UICONTROL **Balde**] | O bucket da conta da GCP para o qual você deseja enviar os dados do Adobe Analytics. <p>Certifique-se de que você concedeu a `roles/storage.objectCreator` ao responsável principal fornecida pela Adobe. (O Principal é fornecido quando [configuração da conta da Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Para obter informações sobre a concessão de permissões, consulte [Adicionar um principal a uma política de nível de bucket](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) na documentação da Google Cloud.</p> |
+   | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, folder_name/ |
 
    {style="table-layout:auto"}
 
@@ -150,8 +150,8 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Nome do contêiner**] | O container na conta especificada para onde você deseja que os dados de Customer Journey Analytics sejam enviados. |
-   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja colocar os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, `folder_name/`<p>Verifique se o armazenamento de tokens SAS especificado no campo Nome secreto do Cofre da Chave ao configurar a conta SAS do Azure tem o `Write` permissão. Isso permite que o token SAS crie arquivos no contêiner do Azure. <p>Se desejar que o token SAS também substitua arquivos, verifique se o armazenamento de token SAS tem o `Delete` permissão.</p><p>Para obter mais informações, consulte [Recursos de armazenamento de blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) na documentação do Armazenamento Azure Blob.</p> |
+   | [!UICONTROL **Nome do container**] | O container na conta especificada para onde você deseja que os dados de Customer Journey Analytics sejam enviados. |
+   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, `folder_name/`<p>Verifique se o armazenamento de tokens SAS que você especificou no campo Nome secreto do cofre de chaves ao configurar a conta do Azure SAS possui a permissão `Write`. Isso permite que o token SAS crie arquivos no container do Azure. <p>Se desejar que o token SAS também sobrescreva arquivos, verifique se o armazenamento de token SAS possui a permissão `Delete`.</p><p>Para obter mais informações, consulte [Recursos de armazenamento de blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) na documentação do Armazenamento Azure Blob.</p> |
 
    {style="table-layout:auto"}
 
@@ -171,8 +171,8 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Contêiner**] | O container na conta especificada para onde você deseja que os dados do Adobe Analytics sejam enviados. Conceda permissões para carregar arquivos para o aplicativo do Azure criado anteriormente. |
-   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja colocar os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, `folder_name/`<p>Verifique se a ID do aplicativo especificada ao configurar a conta RBAC do Azure recebeu o `Storage Blob Data Contributor` para acessar o container (pasta).</p> <p>Para obter mais informações, consulte [Funções integradas do Azure](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
+   | [!UICONTROL **Contêiner**] | O container na conta especificada para onde você deseja enviar os dados do Adobe Analytics. Conceda permissões para fazer upload de arquivos para o aplicativo do Azure que você criou anteriormente. |
+   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, `folder_name/`<p>Verifique se a ID do aplicativo que você especificou ao configurar a conta do Azure RBAC recebeu a função `Storage Blob Data Contributor` para acessar o container (pasta).</p> <p>Para obter mais informações, consulte [Funções integradas do Azure](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
    | [!UICONTROL **Conta**] | A conta de armazenamento do Azure. |
 
    {style="table-layout:auto"}
