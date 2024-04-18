@@ -4,7 +4,7 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 91ab1d3160db83979e1550f8f1b5135065cc6707
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 57%
@@ -86,7 +86,7 @@ Depois de criar um público-alvo, o Adobe cria um segmento de transmissão Exper
 
 Em vários pontos antes, durante e depois da publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
-![Latências na publicação de público-alvo, conforme descrito nesta seção.](assets/latency-diagram.png)
+![Latências na publicação de público-alvo, conforme descrito nesta seção.](/help/components/audiences/assets/latency-diagram.png)
 
 | # | Ponto de latência | Duração da latência |
 | --- | --- | --- |
@@ -141,7 +141,7 @@ O Customer Journey Analytics transmite os dados para o RTCP por meio do pipeline
 
 +++**Que identidades o Customer Journey Analytics envia?**
 
-Qualquer par de identidade/namespace que tenha sido especificado na variável [Configuração da conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
+Qualquer par de identidade/namespace que tenha sido especificado na variável [Configuração da conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
 
 +++
 
