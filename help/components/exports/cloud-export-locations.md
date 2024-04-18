@@ -5,10 +5,10 @@ title: Configurar locais de exportação da nuvem
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 067a9e3d5319a33bb5ae894d76f3445e2d968d0e
+source-git-commit: d1fc7c0ab95e43a20cdfba8d0948c188fda8bec8
 workflow-type: tm+mt
-source-wordcount: '1789'
-ht-degree: 19%
+source-wordcount: '1792'
+ht-degree: 16%
 
 ---
 
@@ -106,7 +106,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Balde**] | O bucket da conta do Amazon S3 para o qual você deseja enviar os dados do Adobe Analytics. <p>Certifique-se de que o ARN do usuário fornecido pelo Adobe tenha o `S3:PutObject` para carregar arquivos nesse bucket. </p><p>Os nomes dos buckets devem atender às regras de nomenclatura específicas. Por exemplo, eles devem ter entre 3 e 63 caracteres de comprimento, podem consistir apenas de letras minúsculas, números, pontos (.) e hifens (-) e devem começar e terminar com uma letra ou número. [Uma lista completa de regras de nomenclatura está disponível na documentação do AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **Balde**] | O bucket da conta do Amazon S3 para o qual você deseja que os dados de Customer Journey Analytics sejam enviados. <p>Certifique-se de que o ARN do usuário fornecido pelo Adobe tenha o `S3:PutObject` para carregar arquivos nesse bucket. </p><p>Os nomes dos buckets devem atender às regras de nomenclatura específicas. Por exemplo, eles devem ter entre 3 e 63 caracteres de comprimento, podem consistir apenas de letras minúsculas, números, pontos (.) e hifens (-) e devem começar e terminar com uma letra ou número. [Uma lista completa de regras de nomenclatura está disponível na documentação do AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
    | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, folder_name/ |
 
    {style="table-layout:auto"}
@@ -129,7 +129,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Balde**] | O bucket da conta da GCP para o qual você deseja enviar os dados do Adobe Analytics. <p>Certifique-se de que você concedeu a `roles/storage.objectCreator` ao responsável principal fornecida pela Adobe. (O Principal é fornecido quando [configuração da conta da Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Para obter informações sobre a concessão de permissões, consulte [Adicionar um principal a uma política de nível de bucket](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) na documentação da Google Cloud.</p> |
+   | [!UICONTROL **Balde**] | O bucket da conta GCP para o qual você deseja que os dados de Customer Journey Analytics sejam enviados. <p>Certifique-se de que você concedeu a `roles/storage.objectCreator` ao responsável principal fornecida pela Adobe. (O Principal é fornecido quando [configuração da conta da Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Para obter informações sobre a concessão de permissões, consulte [Adicionar um principal a uma política de nível de bucket](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) na documentação da Google Cloud.</p> |
    | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, folder_name/ |
 
    {style="table-layout:auto"}
@@ -171,7 +171,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Contêiner**] | O container na conta especificada para onde você deseja enviar os dados do Adobe Analytics. Conceda permissões para fazer upload de arquivos para o aplicativo do Azure que você criou anteriormente. |
+   | [!UICONTROL **Contêiner**] | O container na conta especificada para onde você deseja que os dados de Customer Journey Analytics sejam enviados. Conceda permissões para fazer upload de arquivos para o aplicativo do Azure que você criou anteriormente. |
    | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, `folder_name/`<p>Verifique se a ID do aplicativo que você especificou ao configurar a conta do Azure RBAC recebeu a função `Storage Blob Data Contributor` para acessar o container (pasta).</p> <p>Para obter mais informações, consulte [Funções integradas do Azure](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
    | [!UICONTROL **Conta**] | A conta de armazenamento do Azure. |
 
