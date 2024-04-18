@@ -3,10 +3,10 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 69566b840301f87a6362d6bd16b1e255a14d4e23
+source-git-commit: abaa747934ff2cdd0a3dab867165afb46fbc71db
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 48%
+source-wordcount: '945'
+ht-degree: 44%
 
 ---
 
@@ -32,6 +32,7 @@ Essas notas de versão abrangem o período de lançamento de 10 de abril de 2024
 | **Transformação de esquema B2B de pessoa para conta** | Permite transformar conjuntos de dados para oferecer melhor suporte a pesquisas baseadas em pessoa nos cenários de relatórios B2B do Customer Journey Analytics. Esse recurso está disponível para conjuntos de dados de esquemas B2B com base nas seguintes classes:<ul><li>Relação pessoal da conta de negócios XDM</li><li>Relação pessoal de oportunidade de negócios XDM</li><li>Membros da lista de marketing de negócios XDM</li><li>Membros da campanha de negócios XDM</li></ul> | | quinta-feira, 1 de maio de 2024 |
 | **Detecção de bots do Experience Edge** | A [Detecção de bots](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=pt-BR) permite identificar eventos gerados pelo SDK da Web, SDK móvel e API do servidor como sendo gerados por aranhas e bots conhecidos. | | quinta-feira, 1 de maio de 2024 |
 | **Campos derivados: função Next ou Previous** | Esses novos recursos permitem que você use um campo como entrada e, em seguida, identifique o valor n-anterior ou n-seguinte para obter uma melhor visualização na jornada do usuário. Essa funcionalidade também pode ser combinada com outras funções no [!UICONTROL Campos derivados], como [!UICONTROL Concatenar], para criar novas dimensões. |  | quinta-feira, 1 de maio de 2024 |
+| **Os públicos-alvo são publicados em uma nova seção “Públicos-alvo” na Experience Platform** | Os públicos-alvo publicados no Customer Journey Analytics agora estão disponíveis na nova seção &quot;Públicos-alvo&quot; no Adobe Experience Platform.<p>Anteriormente, os públicos publicados no Customer Journey Analytics estavam disponíveis no Experience Platform, na seção &quot;Segmentos&quot;.</p><p>Esta melhoria fornece os seguintes benefícios:</p><ul><li>Os públicos-alvo não têm mais um atraso de 1 hora antes de serem exibidos em Experience Platform; eles estão disponíveis segundos após a publicação.</li><li>Os públicos podem ser classificados em Experience Platform usando a coluna &quot;Origem&quot;, que exibe o aplicativo do qual o público-alvo foi publicado originalmente.</li><li>As opções de filtro e classificação no Experience Platform permitem encontrar os públicos relevantes com mais rapidez.</li></ul> |  | Maio de 2024 |
 
 {style="table-layout:auto"}
 
