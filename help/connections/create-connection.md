@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 18f7f4ab3ef368afb73445c5b6dccc3c4f468ef7
-workflow-type: ht
+source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
+workflow-type: tm+mt
 source-wordcount: '2910'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -189,7 +189,7 @@ Esse cálculo é feito para cada conjunto de dados na conexão.
 
 ## Apara algorítmica de grandes conjuntos de dados de pesquisa
 
-Ao criar uma conexão, você pode adicionar grandes conjuntos de dados para fins de pesquisa. Por exemplo, um conjunto de dados que representa um catálogo de produtos para que as informações descritivas dos produtos possam ser pesquisadas ao criar relatórios e visualizações. Esse conjunto de dados de pesquisa grande pode exceder o máximo de 10 milhões de pesquisas únicas implementadas no momento como medida de proteção, resultando na omissão de dados adicionais.
+Ao criar uma conexão, você pode adicionar grandes conjuntos de dados para fins de pesquisa. Por exemplo, um conjunto de dados que representa um catálogo de produtos para que as informações descritivas do produto possam ser pesquisadas ao criar relatórios e visualizações. Esse conjunto de dados de pesquisa grande pode exceder o máximo de 10 milhões de pesquisas únicas implementadas no momento como medida de proteção, resultando na omissão de dados adicionais.
 
 E possível solicitar uma remoção algorítmica de um grande conjunto de dados de pesquisa. Essa remoção algorítmica mantém apenas os dados no conjunto de dados de pesquisa que correspondem às chaves no seu conjunto de dados de eventos. Dessa forma, não é preciso carregar todo o conjunto de dados de pesquisa não removido. Itens antigos ou usados com menos frequência são removidos, o que pode afetar ligeiramente os relatórios, mas oferece benefícios consideráveis. O algoritmo considera os últimos 90 dias e é atualizado semanalmente.
 
