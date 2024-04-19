@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 5333034f70ca9ca8252af2874d443bd09e746384
-workflow-type: ht
-source-wordcount: '1969'
-ht-degree: 100%
+source-git-commit: 5c5e526c6442c6ad1c749b6472a342590db2eff5
+workflow-type: tm+mt
+source-wordcount: '2035'
+ht-degree: 96%
 
 ---
 
@@ -125,16 +125,18 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 
 | Recurso | Mais detalhes |
 | --- | --- |
+| Capacidade de combinar conjuntos de dados (como conjuntos de relatórios do Adobe Analytics) | O Customer Journey Analytics permite combinar dados de vários conjuntos de relatórios como se fossem um único conjunto de relatórios no Adobe Analytics. |
 | Acomodação para qualquer tipo de dados | O Customer Journey Analytics possui a habilidade da Experience Platform de armazenar toda espécie de esquemas de dados e tipos. Com o [Modelo de dados de experiência (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR), os dados podem ser representados e organizados uniformemente, para que estejam prontos para combinação e exploração. O Adobe Analytics foca predominantemente em dados de análise móveis e da Web com alguns recursos de [importação de dados](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=pt-BR). |
+| Análise entre dispositivos | O Customer Journey Analytics permite a combinação contínua de conjuntos de dados específicos de dispositivos a partir de sessões autenticadas e não autenticadas. O Customer Journey Analytics oferece o preenchimento retroativo de dados históricos para dispositivos conhecidos. No Analytics, esse recurso é limitado a um único conjunto de relatórios e ao uso de um gráfico de dispositivos. |
+| Campos derivados | Os campos derivados permitem transformações no tempo do relatório para seus dados. Os dados podem ser combinados, corrigidos ou criados rapidamente, aplicando-se retroativamente a todos os relatórios. |
+| Opções de privacidade e segurança aprimorada - Preparação para HIPAA | O Customer Journey Analytics está em conformidade com a HIPAA e oferece opções adicionais de segurança para cumprir com as regulamentações. O Adobe Analytics não está em conformidade com a HIPAA. |
+| Análise de experimentação | O Customer Journey Analytics pode avaliar o aumento e a confiança de um experimento a partir de qualquer fonte de dados definida como parte de uma conexão. Essa avaliação permite compreender as relações de causa e efeito entre as interações do cliente em qualquer canal. O Analytics está limitado à análise de experimentação por meio do A4T. |
+| Previsão | A previsão é um recurso de IA/ML que inclui uma previsão estatística para dados relacionados a séries temporais com base nos dados históricos que já existem no Customer Journey Analytics. As previsões podem aparecer em tabelas de forma livre e visualizações de gráfico de linhas. |
+| Análise guiada | A análise guiada é um formato de relatório que permite que os usuários atendam rapidamente às suas necessidades de dados para que possam obter insights de alta qualidade rapidamente e tomar mais decisões orientadas por dados. A análise guiada faz parte do Adobe Product Analytics, um complemento do Customer Journey Analytics. |
+| Legendas inteligentes | As legendas inteligentes usam aprendizagem de máquina avançada e IA gerativa para fornecer insights valiosos de linguagem natural para visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para o [Linha](/help/analysis-workspace/visualizations/line.md) visualização. |
+| Transformações em tempo do relatório | As visualizações de dados no Customer Journey Analytics permitem interpretar ainda mais os dados de uma conexão. É possível alterar ou remover dados sem alterar a implementação, usar substrings para manipular dimensões, criar métricas de qualquer valor ou filtrar subeventos. Todas essas transformações são feitas de modo não destrutivo. O Adobe Analytics fornece recursos limitados por meio de conjuntos de relatórios virtuais e duração da sessão personalizada. |
+| Acesso SQL | Usando a opção Data Distiller, o Customer Journey Analytics pode remover as limitações de dados coletados no processamento de back-end da Adobe. Você pode modificar seus dados com a SQL, criar valores e conjuntos de dados únicos para sua empresa e continuar a explorar. O Analytics não permite qualquer tipo de acesso SQL a seus dados. |
 | Dimensões e métricas ilimitadas de cliente | As dimensões do Customer Journey Analytics são ilimitadas; os valores podem ser números, textos, objetos, listas ou uma combinação desses elementos. As dimensões podem ser aninhadas ou hierárquicas. O Analytics permite um máximo de 75 props e 250 eVars. |
 | Valores únicos ilimitados | O Customer Journey Analytics oferece suporte a valores únicos ilimitados ou itens de dimensão que podem ser relatados em uma única dimensão. O Adobe Analytics é limitado a 500.000 valores únicos. Os valores únicos ilimitados ou dimensões removem as limitações de relatórios e análises existentes na implementação de larga escala do Analytics. |
-| Transformações em tempo do relatório | As visualizações de dados no Customer Journey Analytics permitem interpretar ainda mais os dados de uma conexão. É possível alterar ou remover dados sem alterar a implementação, usar substrings para manipular dimensões, criar métricas de qualquer valor ou filtrar subeventos. Todas essas transformações são feitas de modo não destrutivo. O Adobe Analytics fornece recursos limitados por meio de conjuntos de relatórios virtuais e duração da sessão personalizada. |
-| Análise de experimentação | O Customer Journey Analytics pode avaliar o aumento e a confiança de um experimento a partir de qualquer fonte de dados definida como parte de uma conexão. Essa avaliação permite compreender as relações de causa e efeito entre as interações do cliente em qualquer canal. O Analytics está limitado à análise de experimentação por meio do A4T. |
-| Análise entre dispositivos | O Customer Journey Analytics permite a combinação contínua de conjuntos de dados específicos de dispositivos a partir de sessões autenticadas e não autenticadas. O Customer Journey Analytics oferece o preenchimento retroativo de dados históricos para dispositivos conhecidos. No Analytics, esse recurso é limitado a um único conjunto de relatórios e ao uso de um gráfico de dispositivos. |
-| Acesso SQL | Usando a opção Data Distiller, o Customer Journey Analytics pode remover as limitações de dados coletados no processamento de back-end da Adobe. Você pode modificar seus dados com a SQL, criar valores e conjuntos de dados únicos para sua empresa e continuar a explorar. O Analytics não permite qualquer tipo de acesso SQL a seus dados. |
-| Opções de privacidade e segurança aprimorada - Preparação para HIPAA | O Customer Journey Analytics está em conformidade com a HIPAA e oferece opções adicionais de segurança para cumprir com as regulamentações. O Adobe Analytics não está em conformidade com a HIPAA. |
-| Capacidade de combinar conjuntos de dados (como conjuntos de relatórios do Adobe Analytics) | O Customer Journey Analytics permite combinar dados de vários conjuntos de relatórios como se fossem um único conjunto de relatórios no Adobe Analytics. |
-| Campos derivados | Os campos derivados permitem transformações no tempo do relatório para seus dados. Os dados podem ser combinados, corrigidos ou criados rapidamente, aplicando-se retroativamente a todos os relatórios. |
-| Análise guiada | A análise guiada é um formato de relatório que permite que os usuários atendam rapidamente às suas necessidades de dados para que possam obter insights de alta qualidade rapidamente e tomar mais decisões orientadas por dados. A análise guiada faz parte do Adobe Product Analytics, um complemento do Customer Journey Analytics. |
 
 {style="table-layout:auto"}

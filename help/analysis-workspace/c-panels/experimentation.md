@@ -4,9 +4,9 @@ title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 68289e274c8ea985b6d07bca228f5e6654e05aa4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1889'
 ht-degree: 58%
 
 ---
@@ -15,9 +15,7 @@ ht-degree: 58%
 
 O painel **[!UICONTROL Experimentação]** permite que os analistas comparem diferentes variações de experiência do usuário, marketing ou mensagens para determinar qual é a melhor para gerar um resultado específico. Você pode avaliar o aumento e a confiança de qualquer experimento A/B de qualquer plataforma de experimentação — online, offline, de soluções da Adobe, do Adobe Journey Optimizer e até mesmo dados BYO (traga os seus próprios).
 
->[!IMPORTANT]
->
->Neste ponto, [Adobe Analytics para Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=pt-BR) Dados do (A4T) *não é possível* ser analisadas no painel Experimentação.
+Leia mais sobre o [integração entre o Adobe Customer Journey Analytics e o Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja4t/cja4t).
 
 ## Controle de acesso {#access}
 
@@ -33,7 +31,7 @@ O esquema de dados recomendado é um no qual os dados experimentais estejam em u
 
 Após os dados do experimento terem sido [assimilado](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR) no Adobe Experience Platform, [criar uma conexão no Customer Journey Analytics](/help/connections/create-connection.md) para um ou mais conjuntos de dados de experimento.
 
-## Etapa 2: adicionar rótulos de contexto em visualizações de dados {#contect-labels}
+## Etapa 2: adicionar rótulos de contexto em visualizações de dados {#context-labels}
 
 Nas configurações de visualizações de dados do Customer Journey Analytics, os administradores podem adicionar [rótulos de contexto](/help/data-views/component-settings/overview.md) para uma dimensão ou métrica e serviços de Customer Journey Analytics como [!UICONTROL Experimentação] podem usar esses rótulos para suas finalidades. Dois rótulos predefinidos são usados para o painel Experimentação:
 
