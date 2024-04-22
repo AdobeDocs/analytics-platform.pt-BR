@@ -4,16 +4,16 @@ title: Baixar dados de Customer Journey Analytics
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a3fc89ed08102d57ce3cfaadde96ade843cd8f8b
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 55%
+source-wordcount: '1165'
+ht-degree: 72%
 
 ---
 
 # Baixar dados de Customer Journey Analytics
 
-Você pode fazer download dos dados do Customer Journey Analytics na sua estação de trabalho pessoal. Isso pode estar no formato de dados copiados, CSV ou PDF. Um PDF geralmente é melhor se você quiser que as visualizações sejam incluídas no arquivo baixado. CSV e dados copiados são preferidos se você simplesmente quiser dados de texto simples.
+Você pode fazer download dos dados do Customer Journey Analytics na sua estação de trabalho pessoal. Isso pode estar no formato de dados copiados, CSV ou PDF. Um PDF geralmente é melhor se você quiser que as visualizações sejam incluídas no arquivo baixado. CSV e dados copiados são melhores se você simplesmente quiser dados de texto simples.
 
 Estão também disponíveis outros métodos de exportação de dados de Customer Journey Analytics, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -21,11 +21,11 @@ Estão também disponíveis outros métodos de exportação de dados de Customer
 
 1. Siga um destes procedimentos, dependendo do formato em que você deseja que o download esteja:
 
-   * **PDF:** Selecionar **[!UICONTROL Projeto]** > **[!UICONTROL Baixar PDF]**.
+   * **PDF:** selecione **[!UICONTROL Projeto]** > **[!UICONTROL Baixar PDF]**.
 
      Escolha essa opção se desejar que o arquivo baixado contenha todas as tabelas e visualizações exibidas (visíveis) no projeto.
 
-   * **CSV:** Selecionar **[!UICONTROL Projeto]** > **[!UICONTROL Baixar CSV]**.
+   * **CSV:** selecione **[!UICONTROL Projeto]** > **[!UICONTROL Baixar CSV]**.
 
      Escolha essa opção se desejar que o arquivo baixado seja de texto sem formatação.
 
@@ -45,11 +45,11 @@ Para downloads de projetos, lembre-se:
 A opção de clique com o botão direito **[!UICONTROL Copiar para a área de transferência]** O permite copiar dados do Customer Journey Analytics rapidamente do Espaço de trabalho e colá-los em uma ferramenta de terceiros.
 
 * Se desejar que a tabela exibida seja copiada, clique com o botão direito do mouse no cabeçalho da tabela e escolha **Copiar dados para a área de transferência**.
-* Se quiser que um subconjunto de dados seja copiado, faça uma seleção na tabela e clique com o botão direito do mouse em > **Copiar seleção para a área de transferência**.
+* Se quiser que um subconjunto de dados seja copiado, faça uma seleção na tabela, clique com o botão direito do mouse e, em seguida, em **Copiar seleção para a área de transferência**.
 
 >[!TIP]
 >
->Você pode usar a tecla de atalho `Ctrl+C` para copiar sua seleção para a área de transferência, use `Ctrl+V` para colá-lo em uma ferramenta de terceiros.
+>Você pode usar o atalho `Ctrl+C` para copiar sua seleção para a área de transferência. Em seguida, use `Ctrl+V` para colá-la em uma ferramenta de terceiros.
 
 
 ![A opção Copiar seleção para a área de transferência. ](assets/copy-selection.png)
@@ -58,26 +58,26 @@ A opção de clique com o botão direito **[!UICONTROL Copiar para a área de tr
 
 A opção de clique com o botão direito **[!UICONTROL Baixar dados como CSV]** O permite baixar uma tabela de dados de Customer Journey Analytics ou a fonte de dados de qualquer visualização como CSV.
 
-* No cabeçalho de qualquer tabela ou visualização, clique com o botão direito do mouse e escolha **[!UICONTROL Baixar dados como CSV]**. Isso baixa os dados de Customer Journey Analytics exibidos na tabela ou na fonte de dados subjacente de uma visualização como CSV.
+* No cabeçalho de qualquer tabela ou visualização, clique com o botão direito do mouse e escolha **[!UICONTROL Baixar dados como CSV]**.  Isso baixa os dados de Customer Journey Analytics exibidos na tabela ou na fonte de dados subjacente de uma visualização como CSV.
 
   >[!NOTE]
   >
   >  Observação: a visualização de mapa não é compatível com essa opção.
 
 
-* Em uma tabela, clique com o botão direito do mouse e escolha **[!UICONTROL Baixar seleção como CSV]**. Somente a seleção é baixada com essa opção, em vez da tabela totalmente exibida.
+* Em uma tabela, clique com o botão direito do mouse e escolha **[!UICONTROL Baixar seleção como CSV]**. Somente a seleção é baixada com essa opção, em vez da tabela completa.
 
 ![A opção Baixar dados como CSV.](assets/download-data-viz.png)
 
 ## Baixar itens como CSV {#download-items}
 
-Se quiser analisar mais do que as 400 linhas de dados visíveis em uma tabela, clique com o botão direito do mouse no cabeçalho da tabela ou em qualquer linha e selecione **Baixar itens como CSV (_nome do Dimension_)**. Essa opção exporta até 50.000 itens de dimensão (com base na classificação da tabela) para a dimensão selecionada, com opções e filtros de classificação aplicados. Se você escolher essa opção na parte superior da tabela, a primeira dimensão na tabela será exportada. Embora nenhum limite seja empregado na tabela de forma livre, é recomendável que a opção Baixar itens seja usada em tabelas com menos de 20 colunas para garantir o desempenho ideal.
+Se quiser analisar mais do que as 400 linhas de dados visíveis em uma tabela, clique com o botão direito no cabeçalho da tabela ou em qualquer linha e selecione **Baixar itens como CSV (_Nome da dimensão_)**. Essa opção exporta até 50.000 itens de dimensão (com base na classificação da tabela) para a dimensão selecionada, com opções e filtros de classificação aplicados. Se você escolher essa opção na parte superior da tabela, a primeira dimensão na tabela será exportada. Embora nenhum limite seja empregado na tabela de forma livre, é recomendável que a opção Baixar itens seja usada em tabelas com menos de 20 colunas para garantir o desempenho ideal.
 
 >[!TIP]
 >
 > Se sua dimensão exceder 50.000 itens, baixe o arquivo com métricas de classificação diferentes aplicadas ou use um filtro. Por exemplo, classifique em ordem decrescente por Visitas em um download e em ordem crescente por Visitas em um segundo download. Esta dica pode ajudar você a recuperar itens mais longos.
 
-É possível executar várias tarefas no projeto e até mesmo navegar para um novo projeto do Workspace na mesma guia enquanto o download está em andamento. O download é pausado se você abrir uma nova guia do navegador. O download será cancelado se você sair do Workspace completamente ou fechar a guia do navegador.
+É possível executar várias tarefas no projeto e até mesmo navegar para um novo projeto do Workspace na mesma guia enquanto o download está em andamento. O download será pausado se você abrir uma nova guia do navegador. O download será cancelado se você sair do Workspace completamente ou fechar a guia do navegador.
 
 ![A opção Baixar itens como CSV (Página).](assets/download-items.png)
 
@@ -107,10 +107,12 @@ Se solicitar mais de um download por vez, você receberá uma notificação de q
 
 Se a variável **[!UICONTROL Forçar download]** [política de governança de dados](/help/data-views/data-governance.md) estiver ativada na visualização de dados para a qual você está relatando, qualquer download (como envio por email ou compartilhamento de arquivos PDF) de projetos do Workspace aplicará uma função de hash nos campos de dados rotulados como sigilosos. Ainda é possível fazer a análise desses campos no espaço de trabalho, mas se você tentar enviar um email ou compartilhar um projeto de outra forma, os campos bloqueados aparecerão vazios no arquivo PDF ou CSV.
 
+Se algum campo de dados rotulado como confidencial for incluído na variável [!UICONTROL Visualização de dados], a opção para selecionar e copiar dados da tela é restrita para todos os dados na [!UICONTROL Visualização de dados].
+
 ## Perguntas frequentes {#faq}
 
 | Pergunta | Resposta |
 | --- | --- |
 | Por que meu PDF baixado tem apenas uma página? | O Workspace não faz a paginação de PDFs baixados no momento. |
-| Posso exportar mais de 50.000 itens com a opção &quot;Baixar itens como CSV&quot;? | Embora cada download possa conter até 50.000 itens de dimensão, você pode alterar a classificação da tabela para recuperar itens mais longos ou aplicar um filtro para baixar itens mais específicos. |
-| O que a opção **[!UICONTROL Copiar visualização]** faz? | Ao contrário [!UICONTROL **Copiar dados para a área de transferência**] ou [!UICONTROL **Copiar seleção para a área de transferência**], o **[!UICONTROL Copiar visualização]** clicar com o botão direito do mouse não é uma opção de exportação. Ela permite copiar uma visualização ou painel de um local no Workspace para outro. Por exemplo, de um painel para outro no mesmo projeto ou de um projeto para outro. [Vídeo intravinculante](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=pt-BR) |
+| Posso exportar mais de 50.000 itens com a opção “Baixar itens como CSV”? | Embora cada download possa conter até 50.000 itens de dimensão, você pode alterar a classificação da tabela para recuperar itens mais longos ou aplicar um filtro para baixar itens mais específicos. |
+| O que a opção **[!UICONTROL Copiar visualização]** faz? | Ao contrário de [!UICONTROL **Copiar dados para a área de transferência**] ou [!UICONTROL **Copiar seleção para a área de transferência**], a opção do menu de contexto **[!UICONTROL Copiar visualização]** não é uma opção de exportação. Ela permite copiar uma visualização ou painel de um local no Workspace para outro. Por exemplo, de um painel para outro no mesmo projeto ou de um projeto para outro. [Vídeo intravinculante](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=pt-BR) |
