@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 86ce60cf-b3c7-43b5-aa18-9e16fa942e54
-source-git-commit: 923dfac33fcde368392fe29c6530069cc0d8fb9d
+source-git-commit: 3e362a62d2ffd6d15e3028706e3704264df80222
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ As informações nesta página abrangem a Etapa 4, conforme destacado na tabela 
 
 +++
 
-A tabela a seguir mostra que os métodos de implementação exigem o mapeamento de dados para o esquema XDM:
+Nem todos os métodos de migração exigem o mapeamento dos dados do Adobe Analytics para o esquema XDM. A tabela a seguir mostra quais métodos de implementação exigem o mapeamento do esquema XDM:
 
 
 | Método de migração | Mapeamento XDM necessário? | Mais informações |
