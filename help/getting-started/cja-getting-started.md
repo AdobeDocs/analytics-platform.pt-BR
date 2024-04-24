@@ -5,10 +5,10 @@ exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 7bc4425f11980780ab64a201029cd63e4bd7849c
+source-git-commit: 366fc232fad278f6a6448d68cda6d0e1f05718f3
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 51%
+source-wordcount: '742'
+ht-degree: 58%
 
 ---
 
@@ -33,7 +33,7 @@ O Customer Journey Analytics está disponível para clientes que
 | **Etapa 4: Criar visualizações de dados** | Uma visualização de dados é uma visualização “filtrada” dos dados. É possível criar visualizações de dados diferentes para a mesma conexão, com configurações diferentes para o tempo limite da visita, atribuição etc. É possível criar várias visualizações de dados para um único conjunto de dados.<br>Consulte [Criar uma visualização de dados](/help/data-views/create-dataview.md). |
 | **Etapa 5: portar o uso da API de relatórios**</br> Aplica-se somente ao migrar do Adobe Analytics | A API de relatórios de Customer Journey Analytics está no mesmo formato, mas usa um endpoint diferente. Porte o uso da API de relatórios da API de relatórios do Adobe Analytics para a API de relatórios do Customer Journey Analytics. |
 | **Etapa 6: Conta para feeds de dados e casos de uso de Data Warehouse**</br> Aplica-se somente ao migrar do Adobe Analytics | Decida como você usará as opções de exportação disponíveis no Customer Journey Analytics para replicar melhor os feeds de dados e recursos do Data Warehouse que você estava usando no Adobe Analytics. <!-- link to docs Rob is creating --> |
-| **Etapa 7: migrar projetos e componentes**</br> Aplica-se somente ao migrar do Adobe Analytics | A área Migração de componentes no Adobe Analytics permite migrar projetos e seus componentes associados do Adobe Analytics para o Customer Journey Analytics.<p>Para obter informações sobre como replicar os projetos do Adobe Analytics no Customer Journey Analytics, bem como mapear componentes de projeto de um conjunto de relatórios do Adobe Analytics para uma visualização de dados do Customer Journey Analytics, consulte [Migrar componentes e projetos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration.html?lang=pt-BR).</p> |
+| **Etapa 7: migrar projetos e componentes**</br> Aplica-se somente ao migrar do Adobe Analytics | A área Migração de componentes no Adobe Analytics permite migrar projetos e seus componentes associados do Adobe Analytics para o Customer Journey Analytics.<p>O processo de migração inclui:</p><ul><li>Recriação de projetos do Adobe Analytics no Customer Journey Analytics.</li><li>Mapeamento de dimensões e métricas de conjuntos de relatórios do Adobe Analytics de acordo com as dimensões e métricas das visualizações de dados do Customer Journey Analytics.</li></ul><p>Antes de iniciar a migração, [prepare-se para migrar os componentes e projetos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=pt-BR).</p><p>Depois de fazer todos os preparativos necessários, você poderá [migrar os componentes e projetos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/component-migration.html?lang=pt-BR).</p> |
 | **Etapa 8: planejar a integração do usuário** | Como no Adobe Analytics, o Analysis Workspace é a principal ferramenta voltada para o usuário no Customer Journey Analytics. No entanto, existem algumas diferenças importantes ao usar o Analysis Workspace no Customer Journey Analytics que os usuários precisam estar cientes.<p>Você deve dar aos seus usuários tempo suficiente (de 3 a 6 meses) para se familiarizar com as principais diferenças do Analysis Workspace no Customer Journey Analytics.</p><p>Para obter informações sobre algumas das principais diferenças entre o Adobe Analytics e o Customer Journey Analytics, consulte [Guia do usuário para usuários do Adobe Analytics](/help/getting-started/aa-to-cja-user.md).</p> |
 | **Etapa 9: Relatório dos dados entre canais no Espaço de trabalho** | Depois de criar conexões e visualizações de dados, analise os dados que você trouxe usando o potencial e a flexibilidade do Analysis Workspace.<br>Consulte [Fazer análise básica](/help/analysis-workspace/perform-basic-analysis.md) e [Fazer análise avançada](/help/analysis-workspace/perform-adv-analysis.md). |
 
