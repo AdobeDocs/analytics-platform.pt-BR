@@ -4,10 +4,10 @@ title: Filtros rápidos
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 33%
+source-wordcount: '1170'
+ht-degree: 39%
 
 ---
 
@@ -17,9 +17,10 @@ Filtros rápidos permitem explorar dados facilmente em um determinado projeto, s
 
 Considere o seguinte ao criar filtros rápidos:
 
-* Os filtros rápidos se aplicam somente ao projeto em que foram criados. Eles não estão disponíveis em outros projetos e não podem ser compartilhados com outros usuários.
+* Os filtros rápidos se aplicam somente ao projeto em que foram criados. Eles não estão disponíveis em outros projetos e não é possível compartilhá-los com outros usuários.
 * São permitidas no máximo 3 regras.
-* Não há suporte para contêineres aninhados ou regras sequenciais.
+* Não há suporte para containers aninhados ou regras sequenciais.
+* Se você compartilhar um projeto com outros usuários, esses usuários poderão editar filtros rápidos e outros componentes somente de projeto que estão incorporados ao projeto compartilhado.
 
 O vídeo a seguir demonstra como usar filtros rápidos. (Observação: este vídeo usa o termo &quot;segmentos rápidos&quot; em vez de &quot;filtros rápidos&quot;. No entanto, a funcionalidade é a mesma.)
 
@@ -66,7 +67,7 @@ Para criar um filtro rápido:
    | [!UICONTROL Intervalo de datas] | O validador usa o intervalo de datas do painel para a pesquisa de dados. Mas qualquer intervalo de datas aplicado em um filtro rápido substitui o intervalo de datas na parte superior do painel. |
    | Pré-visualizar (canto superior direito) | Permite ver se você tem um filtro válido e a amplitude deste. Representa o detalhamento do conjunto de dados que você pode esperar ao aplicar esse filtro. Você pode receber um aviso indicando que esse filtro não tem dados. Nesse caso, você pode continuar ou alterar a definição do filtro. |
 
-1. Selecionar [!UICONTROL **Aplicar**] para salvar as alterações.
+1. Clique em [!UICONTROL **Aplicar**] para salvar suas alterações.
 
 ## Editar um filtro rápido {#edit}
 
@@ -75,7 +76,7 @@ Para criar um filtro rápido:
    ![Editar filtro ad hoc](assets/filter-adhoc-edit.png)
 
 1. Edite a definição ou o nome do filtro.
-1. Selecionar [!UICONTROL **Aplicar**] para salvar as alterações.
+1. Clique em [!UICONTROL **Aplicar**] para salvar suas alterações.
 
 ## Salvar um filtro rápido como um filtro da lista de componentes {#save}
 
@@ -89,7 +90,7 @@ Para criar um filtro rápido:
 
 Você pode optar por salvar filtros rápidos como filtros da lista de componentes. As vantagens dos filtros da lista de componentes incluem:
 
-* Disponibilidade em todos os projetos do Workspace
+* Disponibilidade em todos os projetos do espaço de trabalho
 * Suporte a filtros mais complexos, bem como filtros sequenciais
 
 Você pode salvar filtros no construtor de filtros rápidos ou no [!UICONTROL Construtor de filtros].
@@ -97,7 +98,7 @@ Você pode salvar filtros no construtor de filtros rápidos ou no [!UICONTROL Co
 ### Salvar no construtor de filtros rápidos {#save2}
 
 1. Depois de aplicar o filtro rápido, passe o mouse sobre ele e selecione o ícone de informações (&quot;i&quot;).
-1. Selecionar **[!UICONTROL Disponibilizar para todos os projetos e adicionar à lista de componentes]**.
+1. Selecione **[!UICONTROL Disponibilizar em todos os projetos e adicionar à sua lista de componentes]**.
 1. Renomeie o filtro (opcional).
 1. Selecione **[!UICONTROL Salvar]**.
 
@@ -117,7 +118,7 @@ Depois de aplicar o filtro, você pode optar por adicioná-lo à lista de compon
 
 1. Passe o mouse sobre o filtro salvo e selecione o ícone do lápis.
 
-1. Selecionar [!UICONTROL **Abrir builder**].
+1. Selecione [!UICONTROL **Abrir construtor**].
 
 1. Na parte superior do Construtor de filtros, observe esta caixa de diálogo:
 
