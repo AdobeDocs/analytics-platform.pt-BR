@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
 source-git-commit: 8b7fedb9625ba60af1fea0b1580d32d2366081b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1649'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ O Customer Journey Analytics usa uma avançada arquitetura própria que distribu
 
 * **Aplicação rápida de caminhos e filtros complexos**: o mecanismo de relatórios trabalha em conjuntos de dados hierárquicos parcialmente ordenados (por exemplo, pessoa -> sessões -> eventos). Todos os dados de um objeto de nível superior (perfis individuais) residem em um único nó de processamento para obter resultados precisos. Esse particionamento permite a aplicação rápida de caminhos e filtros complexos. Operações complexas, como criação de sessões, atribuição, persistência de atributos de dados com monitoramento de estado e opções complexas de manipulação de dados são executadas em escala com uma rápida geração de relatórios. No contexto de BI, esses tipos de operações normalmente exigem a criação de novos cubos OLAP para cada caso de uso. O mecanismo de relatórios do Customer Journey Analytics permite acesso irrestrito a todo o conjunto de dados em cada consulta, resultando em dados totalmente correlacionados sem a necessidade de formação antecipada de cubos.
 
-* **Consulta eficiente de sequências de dados complexas**: uma das maiores diferenças do mecanismo de relatório em relação aos bancos de dados SQL e NoSQL tradicionais é sua capacidade de determinar predicados com base em relacionamentos orientados por sequência em um nível fundamental. Essas operações fundamentais de consulta podem observar o fluxo de registro, que é composto por muitas sequências intercaladas (e até aninhadas). Eles executam uma consulta em relação a todos esses fluxos de dados interligados com a eficiência de uma única operação de sequência contígua.
+* **Consulta eficiente de sequências de dados complexas**: uma das maiores diferenças do mecanismo de relatórios se comparado a bancos de dados SQL e NoSQL tradicionais é sua capacidade de determinar predicados com base em relações orientadas por sequências em um nível fundamental. Essas operações fundamentais de consulta podem observar o fluxo de registro, que é composto por muitas sequências intercaladas (e até aninhadas). Eles executam uma consulta em relação a todos esses fluxos de dados interligados com a eficiência de uma única operação de sequência contígua.
 
 * **Desenvolvido para responder rapidamente a consultas grandes**: o mecanismo de relatórios não possui um propósito tão geral quanto os tradicionais sistemas de “big data”. No entanto, ele foi desenvolvido especificamente para responder consultas que abrangem milhões ou até bilhões de registros (dados de evento/eventos de experiência), geralmente em menos de um segundo. Ao contrário de outros sistemas “big data”, ele não faz isso amostrando os dados ou pré-calculando as respostas para todas as perguntas que acha que você pode fazer. Em vez disso, ele é capaz de computar as respostas com rapidez suficiente para dar suporte a casos de uso de consulta interativa. Esse design específico do mecanismo de relatórios do Customer Journey Analytics facilita a disponibilização dos dados em alta velocidade para análise e exploração contínuas, permitindo assim obter insights de maneira progressiva e entender as jornadas de cliente.
 

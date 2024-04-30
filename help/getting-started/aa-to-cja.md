@@ -6,17 +6,17 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: d20655293a8248d26fed675d6f38e5a8a49a15c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Evolução a partir do Adobe Analytics
 
-## Preparar seus dados existentes
+## Preparar os dados existentes
 
-A preparação dos dados do Adobe Analytics para uma mudança perfeita para o Customer Journey Analytics é essencial para a integridade dos dados e a consistência dos relatórios.
+Preparar os dados do Adobe Analytics para uma migração perfeita para o Customer Journey Analytics é essencial para a integridade dos dados e a consistência dos relatórios.
 
 ### Coletar identidades
 
@@ -28,11 +28,11 @@ Exemplos de identidades podem ser uma ID do cliente, ID da conta ou ID de email.
 * A ID não contém PII. Aplique hash a qualquer item que possa ser sensível.
 * A ID usa o mesmo formato em todas as fontes (mesmo comprimento, mesmo método de hash etc.)
 
-Em conjuntos de dados como o Adobe Analytics, uma identidade pode não existir em todas as linhas de dados, mas uma identidade secundária sim. Nesse caso, [Análise entre canais (também conhecida como &quot;Costura&quot;)](/help/stitching/overview.md) O pode ser usado para preencher a lacuna entre linhas quando um cliente é identificado apenas pela ECID e quando uma identidade é coletada (por exemplo, quando um cliente é autenticado).
+Em conjuntos de dados como o Adobe Analytics, uma identidade pode não existir em todas as linhas de dados, mas uma identidade secundária sim. Nesse caso, a [análise de vários canais (também conhecida como “Identificação”)](/help/stitching/overview.md) pode ser usada para preencher a lacuna entre linhas, quando um cliente é identificado apenas por seu ECID e quando uma identidade é coletada (por exemplo, quando um cliente se autentica). 
 
 ### Alinhar as variáveis
 
-O método mais simples de transformar dados do Adobe Analytics em dados do Customer Journey Analytics é assimilar um [conjunto de relatórios global](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=pt-BR) no Experience Platform usando o [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR). Esse conector mapeia as variáveis do Adobe Analytics diretamente para um esquema XDM e um conjunto de dados na Experience Platform, que por sua vez podem ser facilmente conectados ao Customer Journey Analytics.
+O método mais direto para transformar dados do Adobe Analytics em dados do Customer Journey Analytics é assimilar um [conjunto de relatórios global](https://experienceleague.adobe.com/docs/analytics/implementation/prepare/global-rs.html?lang=pt-BR) na Experience Platform por meio do [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR). Esse conector mapeia as variáveis do Adobe Analytics diretamente para um esquema XDM e um conjunto de dados na Experience Platform, que por sua vez podem ser facilmente conectados ao Customer Journey Analytics.
 
 Um conjunto de relatórios global completo pode nem sempre ser viável para uma implementação. Se estiver planejando trazer vários conjuntos de relatórios para o Customer Journey Analytics, você terá duas opções:
 
@@ -44,7 +44,7 @@ Caso tenha evitado mudar para um conjunto de relatórios global devido a problem
 
 Veja um caso de uso sobre [combinação de conjuntos de relatórios com esquemas diferentes](/help/use-cases/aa-data/combine-report-suites.md).
 
-### (Re)Configurar seus Canais de marketing
+### (Re)configurar canais de marketing
 
 As configurações tradicionais de canal de marketing do Adobe Analytics não têm o mesmo desempenho no Customer Journey Analytics. Isso ocorre por dois motivos:
 
@@ -56,7 +56,7 @@ A Adobe publicou [práticas recomendadas atualizadas para a implementação de C
 
 Com a introdução de [Campos derivados](../data-views/derived-fields/derived-fields.md) como parte das Visualizações de dados do Customer Journey Analytics, os canais de marketing também passaram a ser compatíveis de maneira não destrutiva e retroativa usando o [Modelo da função do canal de marketing](../data-views/derived-fields/derived-fields.md#function-templates).
 
-## Prepare-se para as diferenças críticas ao migrar para o Customer Journey Analytics
+## Preparar-se para diferenças significativas ao migrar para o Customer Journey Analytics
 
 Conforme sua organização evolui para usar o Customer Journey Analytics, siga essas etapas para preparar os dados e conhecer as principais diferenças entre as duas tecnologias. Este artigo destina-se a um público-alvo de administradores.
 
