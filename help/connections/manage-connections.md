@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: dc3a109f162adfe48f621ba3ece95fedead3c6e1
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '2937'
 ht-degree: 21%
 
 ---
@@ -95,7 +95,7 @@ Ao excluir uma conexão, uma variável **[!UICONTROL Excluir conexão]** O paine
 
 Selecionar **[!UICONTROL Continuar]** para excluir a conexão.
 
-Consulte [Excluir implicações](/help/admin/cja-deletion.md) para obter mais informações sobre as implicações da exclusão de uma conexão.
+Consulte [Implicações da exclusão](/help/technotes/deletion.md) para obter mais informações sobre como excluir uma conexão.
 
 
 ### Criar uma visualização de dados

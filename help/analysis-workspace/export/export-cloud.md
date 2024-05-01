@@ -5,9 +5,9 @@ title: Exportar relatórios de Customer Journey Analytics para a nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: cf9920eb45803ff105e0d411475ee3df2a676cd1
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2205'
 ht-degree: 3%
 
 ---
@@ -144,13 +144,13 @@ Verifique se as tabelas, o ambiente e as permissões atendem aos seguintes requi
 
 * **Tabelas:** Todas as tabelas devem incluir pelo menos uma dimensão na linha e uma métrica em cada coluna para serem compatíveis com uma exportação de tabela completa.
 
-* **Ambiente:** Os administradores devem garantir que os endereços IP listados no [Endereços IP usados pelo Customer Journey Analytics](/help/admin/ip-addresses.md) estão incluídos na inclui na lista de permissões de firewall.
+* **Ambiente:** Certifique-se de que o [Endereços IP](/help/technotes/ip-addresses.md) e [Domínios](/help/technotes/domains.md) usados pelo Customer Journey Analytics são permitidos por meio do firewall da organização.
 
-* **Permissões:** No Adobe Admin Console, os usuários devem receber um perfil de produto que tenha a [!UICONTROL **Exportação de tabela completa**] permissão atribuída a ele para exportar tabelas completas. Para obter informações sobre como atribuir uma permissão a um perfil de produto no Admin Console, consulte [Permissão de Customer Journey Analytics no Admin Console](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html#customer-journey-analytics-permissions-in-admin-console) in [Controle de acesso Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-admin/cja-access-control.html).
+* **Permissões:** No Adobe Admin Console, os usuários devem receber um perfil de produto que tenha a [!UICONTROL **Exportação de tabela completa**] permissão atribuída a ele para exportar tabelas completas. Para obter informações sobre como atribuir uma permissão a um perfil de produto no Admin Console, consulte [Permissão de Customer Journey Analytics no Admin Console](/help/technotes/access-control.md).
 
   >[!NOTE]
   >
-  >  Usuários aos quais o [Função de administrador do produto](/help/admin/cja-access-control.md#product-admin-role) sempre ter acesso a tabelas completas de exportação; esses usuários não precisam ser atribuídos a [!UICONTROL **Exportação de tabela completa**] permissão.
+  >  Usuários aos quais o [Função de administrador do produto](/help/technotes/access-control.md#product-admin-role) sempre ter acesso a tabelas completas de exportação; esses usuários não precisam ser atribuídos a [!UICONTROL **Exportação de tabela completa**] permissão.
 
 
 ### Recursos incompatíveis

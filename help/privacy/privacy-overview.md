@@ -4,10 +4,10 @@ description: Descreve como a governança de dados funciona no Customer Journey A
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 74%
+source-wordcount: '375'
+ht-degree: 56%
 
 ---
 
@@ -29,7 +29,7 @@ Essa integração permite gerenciar a conformidade com mais facilidade. Os admin
 
 ## GDPR
 
-O Customer Journey Analytics não assinará diretamente o Serviço central do Regulamento Geral sobre a Proteção de Dados (GDPR) e herdará todas as alterações no conjunto de dados feitas na Experience Platform. Dependemos do Platform Data Lake para aplicar solicitações de exclusão do GDPR e notificá-los quando tiverem sido concluídos no Pipeline. Ouvimos o Pipeline e sincronizamos todas as alterações em lotes afetados no Customer Journey Analytics para conjuntos de dados de evento. Os conjuntos de dados de Perfil e Pesquisa afetados pelas solicitações de exclusão do GDPR serão assimilados novamente após cada solicitação de exclusão. Garantimos que as solicitações de exclusão sejam executadas dentro de 7 dias de um evento de exclusão no Data Lake.
+O Customer Journey Analytics não assinará diretamente o Serviço central do Regulamento Geral sobre a Proteção de Dados (GDPR) e herdará todas as alterações no conjunto de dados feitas na Experience Platform. O Customer Journey Analytics depende do Platform Data Lake para aplicar solicitações de exclusão do GDPR e notificar o Customer Journey Analytics quando as solicitações forem concluídas. Todas as alterações em lotes afetados no Customer Journey Analytics para conjuntos de dados de evento são sincronizadas com os dados da plataforma. Os conjuntos de dados de perfil e pesquisa afetados pelas solicitações de exclusão do GDPR são assimilados novamente após cada solicitação de exclusão. As solicitações de exclusão normalmente são concluídas em até 7 dias de um evento de exclusão no Data Lake.
 
 ## CCPA
 

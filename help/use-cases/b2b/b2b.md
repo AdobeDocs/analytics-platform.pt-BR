@@ -5,7 +5,7 @@ exl-id: d345f680-b657-4b87-9560-a50fc59bb7a7
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b4c77c3ef4d57aac6e914a2373b6a9169f4872df
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 73%
@@ -22,7 +22,7 @@ Este caso de uso B2B mostra como especificar os dados a um nível de conta em ve
 * Como essa conta funciona no geral, com relação a uma campanha de marketing específica, em comparação a outra conta?
 * Algumas funções (como o Gerente de TI) em uma conta estão se comportando de forma diferente da mesma função em outra conta?
 
-Você consegue tudo isso incluindo as informações no nível da conta como um conjunto de dados de [pesquisa](/help/getting-started/cja-glossary.md).
+Você consegue tudo isso incluindo as informações no nível da conta como um conjunto de dados de [pesquisa](/help/technotes/glossary.md).
 
 Primeiro, você cria um esquema de pesquisa no Adobe Experience Platform e, em seguida, cria um conjunto de dados de tabela de pesquisa assimilando dados de nível de conta baseados em .csv. Em seguida, você cria uma conexão em Customer Journey Analytics (Customer Journey Analytics) que combina diferentes conjuntos de dados, incluindo o conjunto de pesquisa criado. Depois disso, cria uma visualização de dados e, finalmente, pode utilizar todos esses dados no Espaço de trabalho.
 
@@ -32,7 +32,7 @@ Primeiro, você cria um esquema de pesquisa no Adobe Experience Platform e, em s
 
 ## 1. Criar esquema de pesquisa (Experience Platform)
 
-Criar seu próprio esquema para o [pesquisa](/help/getting-started/cja-glossary.md) A tabela garante que o conjunto de dados usado estará disponível no Customer Journey Analytics com a configuração correta (tipo de registro). Uma prática recomendada é [criar uma classe de esquema personalizada](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#create-new-class) chamada “Pesquisa”, sem elementos, que pode ser reutilizada para todas as tabelas de pesquisa.
+Criar seu próprio esquema para o [pesquisa](/help/technotes/glossary.md) A tabela garante que o conjunto de dados usado estará disponível no Customer Journey Analytics com a configuração correta (tipo de registro). Uma prática recomendada é [criar uma classe de esquema personalizada](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#create-new-class) chamada “Pesquisa”, sem elementos, que pode ser reutilizada para todas as tabelas de pesquisa.
 
 ![Caixa de diálogo Criar nova classe.](../assets/create-new-class.png)
 

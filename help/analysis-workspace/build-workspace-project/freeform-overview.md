@@ -5,7 +5,7 @@ title: Visão geral dos Projetos
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 69%
@@ -65,7 +65,7 @@ Em um projeto, o menu fornece opções para gerenciar o projeto, adicionar compo
 | Inserir | Insira novos painéis ou visualizações nesse menu. Você também pode inserir novos painéis e visualizações no painel esquerdo. |
 | [Componentes](/help/components/overview.md) | Crie novos filtros, métricas calculadas, intervalos de datas ou componentes de alerta a partir do seu projeto. Você também pode criar novos componentes no painel esquerdo. Se as definições de componente foram alteradas recentemente, Atualizar componentes recuperará as definições mais recentes. |
 | [Compartilhar](/help/analysis-workspace/curate-share/send-schedule-files.md) | Prepare, compartilhe e agende projetos em PDF/CSV para recipients em sua organização. |
-| Ajuda | Acesse a documentação de ajuda, os vídeos e a comunidade da Experience League [do Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=pt). Gerencie a visibilidade das dicas do Espaço de trabalho, bem como do [depurador](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Encontre detalhes sobre o Espaço de trabalho e fatores que afetam o [desempenho](/help/admin/optimizing-performance.md) do projeto. |
+| Ajuda | Acesse a documentação de ajuda, os vídeos e a comunidade da Experience League [do Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=pt). Gerencie a visibilidade das dicas do Espaço de trabalho, bem como do [depurador](https://www.adobe.io/apis/experiencecloud/analytics/docs.html#!AdobeDocs/analytics-2.0-apis/master/reporting-tricks.md). Encontre detalhes sobre o Espaço de trabalho e fatores que afetam o [desempenho](/help/technotes/optimizing-performance.md) do projeto. |
 | Botão Compartilhar ou Proprietário | Se você estiver em um projeto Próprio ou Editar, o botão Compartilhar na parte superior direita oferecerá acesso com um clique para gerenciar os recipients do projeto. Se você estiver em uma função Duplicar ou Exibir do projeto, verá o nome do proprietário do projeto. |
 
 ### Informações e configurações do projeto {#info-settings}

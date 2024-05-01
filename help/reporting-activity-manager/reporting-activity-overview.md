@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c3964147-06f1-462a-aea1-e681c4ef15b1
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 15%
+source-wordcount: '272'
+ht-degree: 16%
 
 ---
 
@@ -32,7 +32,7 @@ O Gerente de atividades de relatórios oferece os seguintes benefícios:
 
 <!-- update for CJA -->
 
-Para gerenciar a atividade de relatórios, você deve ter a função Administrador de produto. Para obter mais informações, consulte [Função de administrador do produto](/help/admin/cja-access-control.md#product-admin-role) in [Controle de acesso Customer Journey Analytics](/help/admin/cja-access-control.md).
+Para gerenciar a atividade de relatórios, você deve ter a função Administrador de produto. Para obter mais informações, consulte [Controle de acesso Customer Journey Analytics](/help/technotes/access-control.md).
 
 ## Exibir atividade de relatórios
 

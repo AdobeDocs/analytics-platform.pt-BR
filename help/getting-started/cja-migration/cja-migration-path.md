@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 1c789264a9867279f58a3ad139207fec8db29c1b
+source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 0%
@@ -123,7 +123,7 @@ A seguir estão os caminhos de migração disponíveis para organizações que i
 
 | Benefícios | Desvantagens |
 |----------|---------|
-| <ul><li>Caminho de migração menos demorado e exigente. <p>Os dados são migrados para Customer Journey Analytics rapidamente com o mínimo de investimento</p></li></ul> | <ul><li>**Os dados não são enviados para o Edge Network**: <p>Isso resulta nas seguintes desvantagens:</p><ul><li>Nível mais alto de [latência](/help/admin/guardrails.md#latencies) nos relatórios em todos os caminhos de migração; não otimizado para casos de uso de personalização em tempo real.</li><li>Os dados não podem ser compartilhados com outros aplicativos Adobe Experience Platform; estão restritos somente ao Customer Journey Analytics</li><li>Dependente da nomenclatura do Adobe Analytics (propriedades, eVar, evento e assim por diante)</li></ul><li>**Dificuldade em migrar para o SDK da Web no futuro**: </li><li>**Usa o grupo de campos Evento de experiência do Analytics no esquema**: Esse grupo de campos adiciona muitos eventos Adobe Analytics que não são necessários no esquema Customer Journey Analytics.  Isso pode levar a um esquema mais desorganizado e complexo do que o necessário para o Customer Journey Analytics.</li></ul> |
+| <ul><li>Caminho de migração menos demorado e exigente. <p>Os dados são migrados para Customer Journey Analytics rapidamente com o mínimo de investimento</p></li></ul> | <ul><li>**Os dados não são enviados para o Edge Network**: <p>Isso resulta nas seguintes desvantagens:</p><ul><li>Nível mais alto de [latência](/help/technotes/guardrails.md#latencies) nos relatórios em todos os caminhos de migração; não otimizado para casos de uso de personalização em tempo real.</li><li>Os dados não podem ser compartilhados com outros aplicativos Adobe Experience Platform; estão restritos somente ao Customer Journey Analytics</li><li>Dependente da nomenclatura do Adobe Analytics (propriedades, eVar, evento e assim por diante)</li></ul><li>**Dificuldade em migrar para o SDK da Web no futuro**: </li><li>**Usa o grupo de campos Evento de experiência do Analytics no esquema**: Esse grupo de campos adiciona muitos eventos Adobe Analytics que não são necessários no esquema Customer Journey Analytics.  Isso pode levar a um esquema mais desorganizado e complexo do que o necessário para o Customer Journey Analytics.</li></ul> |
 
 {style="table-layout:auto"}
 
