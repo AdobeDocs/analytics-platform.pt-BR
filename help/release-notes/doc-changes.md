@@ -4,7 +4,7 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 355052289c5e613212030b7748b6116a12455953
 workflow-type: tm+mt
 source-wordcount: '3375'
 ht-degree: 76%
@@ -23,7 +23,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Previsão de técnicas estatísticas | Adição de um artigo descrevendo o [técnicas estatísticas utilizadas no serviço de previsões](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Foram adicionadas informações recomendando a Exportação de tabela completa para dimensões de alta cardinalidade | Adição de marcador em [Práticas recomendadas para dimensões de alta cardinalidade](/help/components/dimensions/high-cardinality.md) para recomendar o uso da Exportação de tabela completa para dimensões de alta cardinalidade. |
 | Adição de documentação sobre Legendas inteligentes em cartões de pontuação móveis | [Legendas inteligentes](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) O pode ajudar os não analistas a entender melhor seus dados sem a ajuda de analistas. |
-| Documentação dos novos recursos do Adobe Product Analytics | <ul><li>[Matriz de recursos](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Aprimorado [taxas de retenção](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Insights aprimorados no funil](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Comparar eventos em uma única etapa de Funil</li></ul> |
+| Nova documentação para recursos de Adobe Product Analytics | <ul><li>[Matriz de recursos](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Aprimorado [taxas de retenção](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Insights aprimorados no funil](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Comparar eventos em uma única etapa de Funil</li></ul> |
 | **Março de 2024** | |
 | A coluna “Usado em” disponibiliza informações de uso apenas a partir de setembro de 2023. | Esclarecimento de que as informações de uso relacionadas à coluna **Usado em** na [página de destino de projetos](/help/getting-started/landing.md) mostram apenas dados a partir de setembro de 2023. |
 | Adição de documentação sobre aprimoramento de permissões para componentes do Workspace somente para projetos | Se você compartilhar um projeto com outros usuários, eles poderão editar [filtros rápidos](/help/components/filters/quick-filters.md) e outros componentes somente de projeto incorporados ao projeto compartilhado. |
