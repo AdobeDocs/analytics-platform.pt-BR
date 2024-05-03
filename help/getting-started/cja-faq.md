@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 172d80a832356b59df875336c15865c9bacdd837
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 99%
+source-wordcount: '2536'
+ht-degree: 98%
 
 ---
 
@@ -174,9 +174,9 @@ Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem 
 
 ## 8. Componentes do [!UICONTROL Adobe Analytics]
 
-+++**É possível compartilhar/publicar [!UICONTROL filtros] do [!DNL Customer Journey Analytics] na Real-Time CDP da Experience Platform ou em outros aplicativos da Experience Cloud?**
++++**Posso compartilhar/publicar [!UICONTROL públicos] de [!DNL Customer Journey Analytics] para o Experience Platform Real-Time CDP ou outros aplicativos Experience Cloud?**
 
-Ainda não, mas a Adobe está trabalhando ativamente para fornecer esse recurso.
+Você pode [criar e publicar públicos](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) identificado em Customer Journey Analytics para Perfil do cliente em tempo real no Adobe Experience Platform para direcionamento e personalização de clientes.
 
 +++
 
