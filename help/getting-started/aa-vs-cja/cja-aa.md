@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: c8796834de6b566783d53ba1602e44a8c91127bf
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
-source-wordcount: '2138'
-ht-degree: 92%
+source-wordcount: '2141'
+ht-degree: 91%
 
 ---
 
@@ -129,7 +129,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | Acomodação para qualquer tipo de dados | O Customer Journey Analytics possui a habilidade da Experience Platform de armazenar toda espécie de esquemas de dados e tipos. Com o [Modelo de dados de experiência (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR), os dados podem ser representados e organizados uniformemente, para que estejam prontos para combinação e exploração. O Adobe Analytics foca predominantemente em dados de análise móveis e da Web com alguns recursos de [importação de dados](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=pt-BR). |
 | Análise entre dispositivos | O Customer Journey Analytics permite a combinação contínua de conjuntos de dados específicos de dispositivos a partir de sessões autenticadas e não autenticadas. O Customer Journey Analytics oferece o preenchimento retroativo de dados históricos para dispositivos conhecidos. No Analytics, esse recurso é limitado a um único conjunto de relatórios e ao uso de um gráfico de dispositivos. |
 | Aprimoramentos de Dimension | O Customer Journey Analytics oferece maior flexibilidade ao usar dimensões: <ul><li>**Dimensões personalizadas baseadas em números**: [Criar suas próprias dimensões baseadas em números em uma visualização de dados](/help/data-views/create-dataview.md#components).</li><li>**Classificar dimensões com base em sequência de caracteres**: [Classificar dimensões baseadas em sequência em ordem alfabética em uma tabela de forma livre.](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>No Adobe Analytics, apenas algumas dimensões numéricas integradas estavam disponíveis e não era possível classificar por dimensões com base em sequência.</p> |
-| Campos derivados | Os campos derivados permitem transformações no tempo do relatório para seus dados. Os dados podem ser combinados, corrigidos ou criados rapidamente, aplicando-se retroativamente a todos os relatórios. |
+| Campos derivados | Os campos derivados permitem transformações de dados em tempo de relatório. Os dados podem ser combinados, corrigidos ou criados rapidamente, aplicando-se retroativamente a todos os relatórios. |
 | Opções de privacidade e segurança aprimorada - Preparação para HIPAA | O Customer Journey Analytics está em conformidade com a HIPAA e oferece opções adicionais de segurança para cumprir com as regulamentações. O Adobe Analytics não está em conformidade com a HIPAA. |
 | Análise de experimentação | O Customer Journey Analytics pode avaliar o aumento e a confiança de um experimento a partir de qualquer fonte de dados definida como parte de uma conexão. Essa avaliação permite compreender as relações de causa e efeito entre as interações do cliente em qualquer canal. O Analytics está limitado à análise de experimentação por meio do A4T. |
 | Previsão | A previsão é um recurso de IA e aprendizado de máquina que inclui uma previsão estatística em dados relacionados a séries temporais com base em dados históricos existentes no Customer Journey Analytics. As previsões podem aparecer em tabelas de forma livre e visualizações de gráficos de linhas. |
@@ -137,7 +137,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | Legendas inteligentes | As legendas inteligentes usam aprendizado de máquina avançado e IA generativa para fornecer insights valiosos de linguagem natural para visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para a visualização de [Linha](/help/analysis-workspace/visualizations/line.md). |
 | Transformações em tempo do relatório | As visualizações de dados no Customer Journey Analytics permitem interpretar ainda mais os dados de uma conexão. É possível alterar ou remover dados sem alterar a implementação, usar substrings para manipular dimensões, criar métricas de qualquer valor ou filtrar subeventos. Todas essas transformações são feitas de modo não destrutivo. O Adobe Analytics fornece recursos limitados por meio de conjuntos de relatórios virtuais e duração da sessão personalizada. |
 | Acesso SQL | Usando a opção Data Distiller, o Customer Journey Analytics pode remover as limitações de dados coletados no processamento de back-end da Adobe. Você pode modificar seus dados com a SQL, criar valores e conjuntos de dados únicos para sua empresa e continuar a explorar. O Analytics não permite qualquer tipo de acesso SQL a seus dados. |
-| Dimensões e métricas ilimitadas de cliente | As dimensões do Customer Journey Analytics são ilimitadas; os valores podem ser números, textos, objetos, listas ou uma combinação desses elementos. As dimensões podem ser aninhadas ou hierárquicas. O Analytics permite um máximo de 75 props e 250 eVars. |
+| Dimensões e métricas ilimitadas de cliente | As dimensões do Customer Journey Analytics são ilimitadas; os valores podem ser números, textos, objetos, listas ou uma combinação desses elementos. As dimensões podem ser aninhadas ou hierárquicas.  <p>Por outro lado, o Adobe Analytics oferece suporte a até 75 props e 250 eVars.</p> |
 | Valores únicos ilimitados | O Customer Journey Analytics suporta valores únicos ilimitados ou itens de dimensão que podem ser relatados em uma única dimensão.<p>Não há [limites de cardinalidade em uma dimensão](/help/components/dimensions/high-cardinality.md), permitindo que qualquer valor único seja exibido e contado.</p><p>Essa abordagem remove as limitações de relatórios e análises que podem existir com implementações Adobe Analytics em larga escala, resultando em [!UICONTROL Tráfego baixo] rótulos.</p><p>No Customer Journey Analytics, é possível ver um [!UICONTROL Únicos excedidos] rótulo, mas ocorrem com muito menos frequência e podem ser mitigados aplicando um filtro ou segmento aos dados.</p> |
 
 {style="table-layout:auto"}

@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 85%
+source-wordcount: '1978'
+ht-degree: 84%
 
 ---
 
-# Assimilar e usar dados usando conectores de origem.
+# Assimilar e usar dados usando conectores de origem
 
 Este guia de início rápido explica como você pode assimilar dados na Adobe Experience Platform usando um conector de origem para um provedor de dados e, em seguida, usar esses dados no Customer Journey Analytics.
 
@@ -218,43 +218,43 @@ Para criar sua conexão:
 
 1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Conexões]** na navegação superior.
 
-2. Selecione **[!UICONTROL Criar nova conexão]**.
+1. Selecione **[!UICONTROL Criar nova conexão]**.
 
-3. Na tela [!UICONTROL Conexão sem título]:
+1. Na tela **[!UICONTROL Conexão sem título]**:
 
-   Nomeie e descreva sua conexão em [!UICONTROL Configurações de conexão].
+   1. Nomeie e descreva sua conexão em **[!UICONTROL Configurações de conexão]**.
 
-   Selecione a sandbox correta na lista [!UICONTROL Sandbox] em [!UICONTROL Configurações de dados] e selecione o número de eventos diários na lista [!UICONTROL Número médio de eventos diários].
+   1. Selecione a sandbox correta na lista **[!UICONTROL Sandbox]** em **[!UICONTROL Configurações de dados]** e selecione o número de eventos diários na lista **[!UICONTROL Número médio de eventos diários]**.
 
-   ![Configurações de conexão](./assets/cja-connections-1.png)
+      ![Configurações de conexão](./assets/cja-connections-1.png)
 
-   Selecione **[!UICONTROL Adicionar conjuntos de dados]**.
+   1. Selecione **[!UICONTROL Adicionar conjuntos de dados]**.
 
-   Na etapa [!UICONTROL Selecionar conjuntos de dados] em [!UICONTROL Adicionar conjuntos de dados]:
+1. Na etapa **[!UICONTROL Selecionar conjuntos de dados]** em **[!UICONTROL Adicionar conjuntos de dados]**:
 
-   - Selecione o conjunto de dados criado anteriormente (`Example Loyalty Dataset`) e qualquer outro conjunto de dados que você deseja incluir em sua conexão.
+   1. Selecione o conjunto de dados criado anteriormente (`Example Loyalty Dataset`) e qualquer outro conjunto de dados que você deseja incluir em sua conexão.
 
-     ![Adicionar conjuntos de dados](./assets/cja-connections-2.png)
+      ![Adicionar conjuntos de dados](./assets/cja-connections-2.png)
 
-   - Selecione **[!UICONTROL Próximo]**.
+   1. Selecione **[!UICONTROL Próximo]**.
 
-   Na etapa [!UICONTROL Configurações de conjuntos de dados] em [!UICONTROL Adicionar conjuntos de dados]:
+1. Na etapa **[!UICONTROL Configurações de conjuntos de dados]** em **[!UICONTROL Adicionar conjuntos de dados]**:
 
-   - Para cada conjunto de dados:
+   Para cada conjunto de dados:
 
-      - Selecione uma [!UICONTROL ID de pessoa] a partir das identidades disponíveis definidas nos esquemas de conjunto de dados da Adobe Experience Platform.
+   1. Selecione uma [!UICONTROL ID de pessoa] a partir das identidades disponíveis definidas nos esquemas de conjunto de dados da Adobe Experience Platform.
 
-      - Selecione a fonte de dados correta na lista [!UICONTROL Tipo de fonte de dados]. Se você especificar **[!UICONTROL Outros]**, em seguida, adicione uma descrição para a fonte de dados.
+   1. Selecione a fonte de dados correta na lista [!UICONTROL Tipo de fonte de dados]. Se você especificar **[!UICONTROL Outros]**, em seguida, adicione uma descrição para a fonte de dados.
 
-      - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
+   1. Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
-     ![Configurar conjuntos de dados](./assets/cja-connections-3.png)
+      ![Configurar conjuntos de dados](./assets/cja-connections-3.png)
 
-   - Selecione **[!UICONTROL Adicionar conjuntos de dados]**.
+   1. Selecione **[!UICONTROL Adicionar conjuntos de dados]**.
 
-   Selecione **[!UICONTROL Salvar]**.
+   1. Selecione **[!UICONTROL Salvar]**.
 
-Consulte [Visão geral das conexões](../connections/overview.md) para obter mais informações sobre como criar e gerenciar uma conexão e como selecionar e combinar conjuntos de dados.
+Depois de criar um [conexão](/help/connections/overview.md), é possível executar várias tarefas de gerenciamento, como [seleção e combinação de conjuntos de dados](/help/connections/combined-dataset.md), [verificar o status dos conjuntos de dados de uma conexão e o status da assimilação de dados](/help/connections/manage-connections.md)e muito mais.
 
 ## Configurar uma visualização de dados
 

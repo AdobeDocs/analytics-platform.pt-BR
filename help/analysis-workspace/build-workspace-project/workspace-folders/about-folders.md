@@ -5,10 +5,10 @@ title: Visão geral das pastas
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '461'
-ht-degree: 100%
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ Há dois tipos de pastas no Espaço de trabalho: a Pasta da empresa e as pastas 
 
 Ao fazer logon no Espaço de trabalho, a página inicial de Projetos exibe uma lista de seus projetos junto com a Pasta da empresa e qualquer pasta pessoal que você criou.
 
-![Página inicial do projeto listando seus projetos e a Pasta da empresa.](/help/analysis-workspace/build-workspace-project/assets/landing-page2.png)
+![Página inicial de Projetos](../assets/landing-page2.png)
 
 ## Sobre a Pasta da empresa {#company-folder}
 
@@ -34,7 +34,6 @@ Como administrador, você pode compartilhar projetos rapidamente com todos os us
 
 Quando um usuário faz logon no Espaço de trabalho, a Pasta da empresa é adicionada automaticamente à lista de projetos e pastas. Não há permissões específicas para projetos contidos na Pasta da empresa.
 
-
 ### Opções de administração {#admin-options}
 
 Os administradores têm privilégios especiais atribuídos à Pasta da empresa. Por exemplo, somente Administradores podem adicionar ou remover pastas ou projetos na Pasta da empresa. Os usuários sem acesso de Administrador podem visualizar o conteúdo da Pasta da empresa.
@@ -43,7 +42,7 @@ Os administradores têm privilégios especiais atribuídos à Pasta da empresa. 
 
 “Não admins” têm opções limitadas.
 
-![A página Projetos mostrando as opções de “não admins” nas pastas.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png){width="45%"}
+![A página Projetos mostrando as opções de “não admins” nas pastas.](/help/analysis-workspace/build-workspace-project/assets/non-admin-folder-options.png)
 
 ### Diretrizes da Pasta da empresa {#company-folder-guidelines}
 
@@ -53,6 +52,6 @@ Os administradores têm privilégios especiais atribuídos à Pasta da empresa. 
 
 - Admins podem excluir uma pasta contida na Pasta da empresa que outro(a) admin criou. Os administradores podem precisar coordenar com outros administradores para manter as pastas e o acesso ao projeto consistentes.
 
-- Quando um Administrador move um projeto para a Pasta da empresa, o projeto é compartilhado com todos, mesmo se os privilégios compartilhados originais foram restritos.
+- Quando um Administrador move um projeto para a pasta Empresa, o projeto é compartilhado com todos com a **Editar cópia** mesmo se os privilégios compartilhados originais fossem restritos.
 
 - Quando um Administrador move um projeto para fora da Pasta da empresa, os privilégios de compartilhamento originais ou anteriores são respeitados.

@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
+source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
 workflow-type: tm+mt
 source-wordcount: '2420'
-ht-degree: 0%
+ht-degree: 68%
 
 ---
 
@@ -23,10 +23,10 @@ As informações nesta página abordam a Etapa 2 do processo de atualização, c
 | Atualizar tarefa | Detalhes |
 |---------|----------|
 | **Etapa 1: [Introdução à atualização](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)** | Saiba mais sobre os benefícios de atualizar para o Customer Journey Analytics e o processo básico de atualização. |
-| <span class="preview">**Etapa 2: Escolher o caminho de atualização**</span> | <span class="preview">Vários métodos estão disponíveis para atualizar para o Customer Journey Analytics. Escolha o método que é melhor para sua organização, dependendo do ambiente Adobe Analytics atual da organização e das metas de longo prazo.</span> |
-| **Etapa 3: [Enviar dados para o Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | O processo de envio de dados para o Adobe Experience Platform difere dependendo do caminho de atualização escolhido na Etapa 2. |
-| **Etapa 4: [Reter dados históricos](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | A maioria das organizações precisa manter seus dados históricos do Adobe Analytics por um determinado período. Várias opções estão disponíveis para fazer isso. |
-| **Etapa 5: [Executar tarefas de implementação adicionais](/help/getting-started/cja-getting-started.md)** | Nesse ponto do processo de atualização, é necessário executar várias tarefas antes que o ambiente de Customer Journey Analytics esteja pronto para uso.<p>Essas tarefas adicionais se aplicam às atualizações do Adobe Analytics, bem como às novas implementações do Customer Journey Analytics.</p><p>Essas tarefas incluem:</p><ul><li>Trazendo outros dados para o Experience Platform</li><li>Criação de conexões entre conjuntos de dados da plataforma e Customer Journey Analytics</li><li>Criação de visualizações de dados</li><li>Transferência do uso da API de relatórios</li><li>Contabilização de feeds de dados e Data Warehouse</li><li>Migração de projetos e componentes</li><li>Integração do usuário do Planning</li></ul> <p>Para obter mais informações, consulte [Customer Journey Analytics Introdução](/help/getting-started/cja-getting-started.md). |
+| <span class="preview">**Etapa 2: Escolher o caminho de atualização**</span> | <span class="preview">Vários métodos estão disponíveis para atualizar para o Customer Journey Analytics. Escolha o método mais adequado de acordo com o ambiente atual do Adobe Analytics e as metas de longo prazo da sua organização.</span> |
+| **Etapa 3: [enviar dados para a Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | O processo de envio de dados para o Adobe Experience Platform difere dependendo do caminho de atualização escolhido na Etapa 2. |
+| **Etapa 4: [reter dados históricos](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)** | A maioria das organizações precisa reter dados históricos do Adobe Analytics por um determinado período. Há várias opções disponíveis para fazer isso. |
+| **Etapa 5: [executar tarefas de implementação adicionais](/help/getting-started/cja-getting-started.md)** | Nesse ponto do processo de atualização, é necessário executar várias tarefas antes que o ambiente de Customer Journey Analytics esteja pronto para uso.<p>Essas tarefas adicionais se aplicam às atualizações do Adobe Analytics, bem como às novas implementações do Customer Journey Analytics.</p><p>Essas tarefas incluem:</p><ul><li>Migrar outros dados para a Experience Platform</li><li>Criar conexões entre conjuntos de dados da Platform e o Customer Journey Analytics</li><li>Criar visualizações de dados</li><li>Transferir o uso da API de relatórios</li><li>Contabilizar feeds de dados e data warehouse</li><li>Migrar projetos e componentes</li><li>Planejar a integração de usuários</li></ul> <p>Para mais informações, consulte [Introdução ao Customer Journey Analytics](/help/getting-started/cja-getting-started.md). |
 
 {style="table-layout:auto"}
 
@@ -58,12 +58,12 @@ Em geral, cada caminho de atualização difere no nível de esforço necessário
 
 A tabela a seguir lista cada caminho de upgrade, seu nível de esforço e sua viabilidade a longo prazo:
 
-| Caminho de atualização | Nível de esforço | Viabilidade a longo prazo |
+| Caminho de atualização | Nível de dificuldade | Viabilidade a longo prazo |
 |---------|----------|---------|
-| **Nova implementação do SDK da Web do Experience Platform**</br> Você pode começar a usar o Customer Journey Analytics fazendo uma nova implementação do SDK da Web do Experience Platform. Isso permite que você comece a enviar dados para o Edge Network e Customer Journey Analytics da Adobe Experience Platform. <p>Para organizações que ainda não estão no SDK da Web, esse caminho de atualização talvez seja o mais simples de obter dados para o Edge Network, pois requer o menor número de etapas; no entanto, como todo o trabalho é feito antecipadamente (como a criação do esquema XDM), ele requer um esforço inicial maior.</p><p>As etapas básicas são:</p><ol><li>Crie um esquema XDM para sua organização.</li><li>Implemente o SDK da Web.</li><li>Enviar dados para a Platform.</li></ol> | Alta | Alta |
-| **Atualizar a implementação do Adobe Analytics para usar o SDK da Web**</br> Se a implementação do Adobe Analytics for o AppMeasurement ou a extensão do Analytics, você poderá migrá-la para usar o SDK da Web da Adobe Experience Platform para começar a enviar dados para o Edge Network e o Adobe Analytics, antes de enviá-los para o Customer Journey Analytics.<p>Para organizações que ainda não estão no SDK da Web, essa é a maneira mais fácil e simples de obter dados para o Edge Network. Ela requer mais etapas, mas oferece uma transição mais metódica do Adobe Analytics para o Customer Journey Analytics, com marcos mais tangíveis.</p><p>As etapas básicas são:</p><ol><li>Mova sua implementação do Adobe Analytics existente para o SDK da Web e valide se tudo está funcionando no Adobe Analytics.</li><li>Crie um esquema XDM para sua organização à medida que tiver tempo.</li><li>Use o mapeamento da sequência de dados para mapear todos os campos no objeto de dados para o esquema XDM.</li><li>Enviar dados para a Platform.</li></ol> | Moderado | Alta |
-| **Configurar a implementação existente do SDK da Web da Adobe Analytics**</br> Se sua implementação do Adobe Analytics já estiver usando o SDK da Web da Adobe Experience Platform, você poderá começar a enviar dados para o Customer Journey Analytics com o mínimo esforço.<p>Antes de enviar dados para o Customer Journey Analytics, considere atualizar seu esquema do Adobe Analytics para as necessidades específicas de sua organização e quaisquer outros aplicativos da plataforma que você use.</p><p>As etapas básicas são:</p><ol><li>Começar a enviar dados para o Customer Journey Analytics.<!-- What's involved here? Just point it at CJA? --></li><li>(Opcional) Crie um esquema XDM para sua organização à medida que tiver tempo.</li><li>(Condicional) Se você criou um esquema XDM, use o mapeamento de sequência de dados para mapear todos os campos no objeto de dados para o esquema XDM.</li></ol> | Baixa | Alta |
-| **Usar o Conector de origem do Analytics**</br> Se a implementação do Adobe Analytics for o AppMeasurement ou a extensão do Analytics, você poderá começar a enviar dados para uma visualização de dados no Customer Journey Analytics.<p>Essa é a maneira mais fácil de obter dados para o Customer Journey Analytics, mas é o método menos viável a longo prazo.</p> | Baixa | Baixa |
+| **Nova implementação do SDK da Web do Experience Platform**</br> Você pode começar a usar o Customer Journey Analytics fazendo uma nova implementação do SDK da Web do Experience Platform. Isso permite iniciar o envio de dados para a Edge Network da Experience Plataform e o Customer Journey Analytics. <p>Para organizações que ainda não estão no SDK da Web, esse caminho de atualização talvez seja o mais simples de obter dados para o Edge Network, pois requer o menor número de etapas; no entanto, como todo o trabalho é feito antecipadamente (como a criação do esquema XDM), ele requer um esforço inicial maior.</p><p>As etapas básicas são:</p><ol><li>Criar um esquema XDM para a organização.</li><li>Implementar o SDK da web.</li><li>Enviar dados para a Platform.</li></ol> | Alto | Alto |
+| **Migrar sua implementação do Adobe Analytics para usar o SDK da web**</br> Se sua implementação do Adobe Analytics utiliza o AppMeasurement ou a extensão do Analytics, é possível migrá-la para usar o SDK da web da Adobe Experience Platform e começar a enviar dados para a Edge Network e o Adobe Analytics, antes de enviá-los para o Customer Journey Analytics.<p>Para organizações que ainda não estão no SDK da web, essa é a maneira mais fácil e simples de enviar dados para a Edge Network. Ela exige mais etapas, mas oferece uma transição mais metódica do Adobe Analytics para o Customer Journey Analytics, com marcos mais tangíveis.</p><p>As etapas básicas são:</p><ol><li>Mova sua implementação existente do Adobe Analytics para o SDK da web e verifique se tudo está funcionando no Adobe Analytics.</li><li>Crie um esquema XDM para sua organização assim que possível.</li><li>Use o mapeamento de sequência de dados para mapear todos os campos no objeto de dados para o esquema XDM.</li><li>Enviar dados para a Platform.</li></ol> | Moderado | Alto |
+| **Configurar a implementação existente do SDK da web do Adobe Analytics**</br> Se sua implementação do Adobe Analytics já estiver usando o SDK da web da Adobe Experience Platform, é possível iniciar o envio de dados para o Customer Journey Analytics com um esforço mínimo.<p>Antes de enviar dados para o Customer Journey Analytics, considere atualizar o esquema do Adobe Analytics para atender às necessidades específicas da sua organização e de quaisquer outros aplicativos da Platform que você utilize.</p><p>As etapas básicas são:</p><ol><li>Iniciar o envio de dados para o Customer Journey Analytics.<!-- What's involved here? Just point it at CJA? --></li><li>(Opcional) Crie um esquema XDM para sua organização assim que possível.</li><li>(Condicional) Se você criou um esquema XDM, use o mapeamento de sequência de dados para mapear todos os campos no objeto de dados para o esquema XDM.</li></ol> | Baixo | Alto |
+| **Usar o conector de origem do Analytics**</br> Se sua implementação do Adobe Analytics utiliza o AppMeasurement ou a extensão do Analytics, é possível iniciar o envio de dados para uma visualização de dados no Customer Journey Analytics.<p>Essa é a maneira mais fácil de enviar dados para o Customer Journey Analytics, mas é o método menos viável a longo prazo.</p> | Baixo | Baixo |
 
 {style="table-layout:auto"}
 
@@ -77,13 +77,13 @@ Nem todos os caminhos de atualização estão disponíveis para cada tipo de imp
 
 Use as informações abaixo para entender qual caminho de atualização é mais apropriado para sua organização.
 
-Entre em contato com o representante da Adobe se precisar de conselhos, orientações ou suporte mais específicos.
+Entre em contato com o(a) representante da Adobe se precisar de suporte ou conselhos e orientações específicas.
 
 | Implementação existente do Adobe Analytics | Caminhos de atualização disponíveis |
 |---------|----------|
-| AppMeasurement | <ul><li>Nova implementação do SDK da Web do Experience Platform</li><li>Migrar o Adobe Analytics para o SDK da Web</li><li>Conector de origem do Analytics</li></ul> |
-| Extensão do Adobe Analytics | <ul><li>Nova implementação do SDK da Web do Experience Platform</li><li>Migrar o Adobe Analytics para o SDK da Web</li><li>Conector de origem do Analytics</li></ul> |
-| SDK da Web | <ul><li>Configurar a implementação do SDK da Web da Adobe Analytics para enviar dados para o Customer Journey Analytics</li></ul> |
+| AppMeasurement | <ul><li>Nova implementação do SDK da web da Experience Platform</li><li>Migrar o Adobe Analytics para o SDK da web</li><li>Conector de origem do Analytics</li></ul> |
+| Extensão do Adobe Analytics | <ul><li>Nova implementação do SDK da web da Experience Platform</li><li>Migrar o Adobe Analytics para o SDK da web</li><li>Conector de origem do Analytics</li></ul> |
+| SDK da Web | <ul><li>Configurar a implementação do SDK da web do Adobe Analytics para enviar dados para o Customer Journey Analytics</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -93,43 +93,43 @@ As vantagens e desvantagens de um determinado caminho de atualização diferem d
 
 Antes de usar as informações abaixo para determinar qual é o caminho de upgrade certo para você, reveja as informações em [Entender os caminhos de atualização](#understand-migration-methods) se você ainda não tiver feito.
 
-### Para implementações do Adobe Analytics que usam: AppMeasurement e extensão Adobe Analytics
+### Para implementações do Adobe Analytics que usam o AppMeasurement e a extensão do Adobe Analytics
 
 A seguir estão os caminhos de atualização disponíveis para organizações que implementaram o Adobe Analytics com o AppMeasurement ou a extensão do Adobe Analytics. Expanda cada seção para visualizar as vantagens e desvantagens de cada caminho de atualização.
 
 #### Caminhos de atualização
 
-+++Nova implementação do SDK da Web do Experience Platform
++++Nova implementação do SDK da web da Experience Platform
 
-| Benefícios | Desvantagens |
+| Vantagens | Desvantagens |
 |----------|---------|
-| <ul><li>**Oferece todas as vantagens de hospedar dados no Experience Edge Network**: <p>Essas vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados porque o Adobe Experience Platform foi desenvolvido para potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=pt-BR)</li><li>Consolidar a implementação da coleta de dados da Adobe Experience Cloud entre outros produtos Experience Cloud (AJO, RTCDP e assim por diante)</li><li>Não depende da nomenclatura do Adobe Analytics (propriedades, eVar, evento e assim por diante)</li></ul></li><li>**À prova de obsolescência**: as atualizações de implementação futuras são mais fáceis.</li></ul> | <ul><li>**Requer uma nova implementação do zero**: O requisito de fazer uma nova implementação do zero significa as seguintes desvantagens: </li><ul><li>**Demorado**: este é o caminho de atualização mais demorado e exigente porque requer que você comece novamente com uma nova implementação.</li><li>**É necessário recriar o esquema completo no XDM**: antes de começar a implementar o SDK da Web, é necessário recriar o esquema completo no XDM.</li><li>**É necessário recriar regras e elementos de dados**: antes de começar a implementar o SDK da Web, é necessário recriar quaisquer condições de regra e elementos de dados da implementação do Adobe Analytics.</li></ul></ul> |
+| <ul><li>**Mostra todas as vantagens de hospedar dados na Experience Edge Network**: <p>As vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados devido à capacidade da Adobe Experience Platform de potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/br/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Consolidar a implementação da coleção de dados da Adobe Experience Cloud entre outros produtos da Experience Cloud (AJO, RTCDP e assim por diante)</li><li>Não dependente da nomenclatura do Adobe Analytics (prop, eVar, evento etc.)</li></ul></li><li>**À prova de obsolescência**: maior facilidade para atualizar implementações futuras.</li></ul> | <ul><li>**Exige uma nova implementação do zero**: o requisito de se realizar uma nova implementação do zero tem as seguintes desvantagens: </li><ul><li>**Demorado**: este é o caminho de atualização mais demorado e exigente porque requer que você comece novamente com uma nova implementação.</li><li>**Necessidade de recriar o esquema completo no XDM**: antes de começar a implementar o SDK da web, é necessário recriar o esquema completo no XDM.</li><li>**Necessidade de recriar regras e elementos de dados**: antes de começar a implementar o SDK da Web, é necessário recriar quaisquer condições de regra e elementos de dados da implementação do Adobe Analytics.</li></ul></ul> |
 
 {style="table-layout:auto"}
 
 +++
 
-+++Migrar Adobe Analytics para o SDK da Web do Experience Platform
++++Migrar o Adobe Analytics para o SDK da web da Experience Platform
 
-| Benefícios | Desvantagens |
+| Vantagens | Desvantagens |
 |----------|---------|
-| <ul><li>**Oferece todas as vantagens de hospedar dados no Experience Edge Network**: <p>Essas vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados porque o Adobe Experience Platform foi desenvolvido para potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=pt-BR)</li><li>Consolidar a implementação da coleta de dados da Adobe Experience Cloud entre outros produtos Experience Cloud (AJO, RTCDP e assim por diante)</li><li>Não depende da nomenclatura do Adobe Analytics (propriedades, eVar, evento e assim por diante)</li></ul><li>**Usa sua implementação existente**: Embora essa abordagem exija algumas alterações de implementação, ela não requer uma implementação totalmente nova do zero. Você pode usar sua camada de dados e código existentes com alterações mínimas na lógica de implementação sem afetar seus relatórios existentes do Adobe Analytics.</li><li>**Fornece flexibilidade para criar um esquema XDM para sua organização posteriormente**: é possível migrar sua implementação existente do Adobe Analytics para usar o SDK da Web, validar se tudo está funcionando no Adobe Analytics e criar o esquema XDM. Essa flexibilidade permite uma atualização mais metódica e ponderada para o Customer Journey Analytics.</li></ul> | <ul><li>**Requer mapeamento para enviar dados para a Plataforma**: quando sua organização estiver pronta para usar o Customer Journey Analytics, você deverá enviar dados para um conjunto de dados na Adobe Experience Platform. Essa ação requer que cada campo no objeto de dados seja uma entrada na ferramenta de mapeamento de fluxo de dados que o atribui a um campo de esquema XDM. O mapeamento só precisa ser feito uma vez para esse fluxo de trabalho e não envolve fazer alterações de implementação. No entanto, essa é uma etapa extra que não é necessária ao enviar dados em um objeto XDM.</li><li>**Dívida técnica**: como essa abordagem usa uma forma modificada da implementação existente, pode ser mais difícil rastrear a lógica de implementação e executar alterações no futuro, quando necessário. </li></ul> |
+| <ul><li>**Mostra todas as vantagens de hospedar dados na Experience Edge Network**: <p>As vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados devido à capacidade da Adobe Experience Platform de potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/br/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Consolidar a implementação da coleção de dados da Adobe Experience Cloud entre outros produtos da Experience Cloud (AJO, RTCDP e assim por diante)</li><li>Não dependente da nomenclatura do Adobe Analytics (prop, eVar, evento etc.)</li></ul><li>**Uso da implementação existente**: embora sejam necessárias algumas alterações de implementação, essa abordagem não exige uma implementação totalmente nova. Você pode usar sua camada de dados e código existentes com alterações mínimas na lógica de implementação sem afetar os relatórios existentes do Adobe Analytics.</li><li>**Flexibilidade para criar um esquema XDM para a organização posteriormente**: é possível migrar sua implementação existente do Adobe Analytics para usar o SDK da web, verificar se tudo está funcionando no Adobe Analytics e criar o esquema XDM. Essa flexibilidade permite uma atualização mais metódica e ponderada para o Customer Journey Analytics.</li></ul> | <ul><li>**Requisito de mapeamento para envio de dados para a Platform**: quando sua organização estiver pronta para usar o Customer Journey Analytics, envie dados para um conjunto de dados na Adobe Experience Platform. Essa ação exige que cada campo no objeto de dados seja uma entrada na ferramenta de mapeamento de sequência de dados que o atribui a um campo de esquema XDM. O mapeamento só precisa ser feito uma vez para esse fluxo de trabalho e não é necessário fazer alterações de implementação. No entanto, essa é uma etapa extra que não é necessária ao enviar dados em um objeto XDM.</li><li>**Dívida técnica**: como essa abordagem usa uma forma modificada da implementação existente, pode ser mais difícil rastrear a lógica de implementação e executar alterações futuras quando necessário. </li></ul> |
 
 {style="table-layout:auto"}
 
 +++
 
-+++Uso do Conector de origem do Analytics
++++Uso do conector de origem do Analytics
 
-| Benefícios | Desvantagens |
+| Vantagens | Desvantagens |
 |----------|---------|
-| <ul><li>O caminho de atualização menos demorado e exigente. <p>Os dados são migrados para Customer Journey Analytics rapidamente com o mínimo de investimento</p></li></ul> | <ul><li>**Os dados não são enviados para o Edge Network**: <p>Isso resulta nas seguintes desvantagens:</p><ul><li>Nível mais alto de [latência](/help/technotes/guardrails.md#latencies) nos relatórios em todos os caminhos de atualização; não otimizado para casos de uso de personalização em tempo real.</li><li>Os dados não podem ser compartilhados com outros aplicativos Adobe Experience Platform; estão restritos somente ao Customer Journey Analytics</li><li>Dependente da nomenclatura do Adobe Analytics (propriedades, eVar, evento e assim por diante)</li></ul><li>**Dificuldade em migrar para o SDK da Web no futuro**: </li><li>**Usa o grupo de campos Evento de experiência do Analytics no esquema**: Esse grupo de campos adiciona muitos eventos Adobe Analytics que não são necessários no esquema Customer Journey Analytics.  Isso pode levar a um esquema mais desorganizado e complexo do que o necessário para o Customer Journey Analytics.</li></ul> |
+| <ul><li>O caminho de atualização menos demorado e exigente. <p>Os dados são migrados para o Customer Journey Analytics rapidamente e com o mínimo de investimento</p></li></ul> | <ul><li>**Os dados não são enviados para a Edge Network**: <p>Isso resulta nas seguintes desvantagens:</p><ul><li>Nível mais alto de [latência](/help/technotes/guardrails.md#latencies) nos relatórios em todos os caminhos de atualização; não otimizado para casos de uso de personalização em tempo real.</li><li>Os dados não podem ser compartilhados com outros aplicativos da Adobe Experience Platform e estão restritos somente ao Customer Journey Analytics</li><li>Dependente da nomenclatura do Adobe Analytics (prop, eVar, evento etc.)</li></ul><li>**Dificuldade em migrar para o SDK da web no futuro**: </li><li>**Usa o grupo de campos de evento de experiência do Analytics no esquema**: esse grupo de campos adiciona muitos eventos do Adobe Analytics que não são necessários no esquema do Customer Journey Analytics.  Isso pode levar a um esquema mais desorganizado e complexo do que o necessário para o Customer Journey Analytics.</li></ul> |
 
 {style="table-layout:auto"}
 
 +++
 
-### Para implementações do Adobe Analytics usando: SDK da Web
+### Para implementações do Adobe Analytics que usam o SDK da web
 
 O seguinte caminho de atualização está disponível para organizações que implementaram o Adobe Analytics com o SDK da Web do Experience Platform.
 
@@ -137,38 +137,38 @@ Ao escolher esse caminho de atualização, você também precisa escolher seu es
 
 #### Caminho de atualização
 
-+++Configure a implementação do SDK da Web da Adobe Analytics para enviar dados ao Customer Journey Analytics
++++Configure a implementação do SDK da web do Adobe Analytics para enviar dados ao Customer Journey Analytics
 
-| Benefícios | Desvantagens |
+| Vantagens | Desvantagens |
 |----------|---------|
-| Esse é o caminho de atualização preferencial se a implementação do Adobe Analytics já estiver usando o SDK da Web.<ul><li>**Oferece todas as vantagens de hospedar dados no Experience Edge Network**: <p>Essas vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados porque o Adobe Experience Platform foi desenvolvido para potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=pt-BR)</li><li>Consolidar a implementação da coleta de dados da Adobe Experience Cloud entre outros produtos Experience Cloud (AJO, RTCDP e assim por diante)</li><li>Não depende da nomenclatura do Adobe Analytics (propriedades, eVar, evento e assim por diante)</li></ul><li>**Usa sua implementação existente**: Embora essa abordagem exija algumas alterações de implementação, ela não requer uma implementação totalmente nova do zero. Você pode usar sua camada de dados e código existentes com alterações mínimas na lógica de implementação sem afetar seus relatórios existentes do Adobe Analytics.</li><li>**Fornece uma opção para usar um esquema XDM**: você pode optar por usar seu esquema do Adobe Analytics existente ou criar um esquema XDM e mapear campos no objeto de dados para seu esquema XDM. [Esquemas XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home#xdm-schemas) são um esquema flexível para definir quaisquer campos necessários e somente os campos relevantes. <p>Consulte &quot;Usar seu próprio esquema XDM&quot; abaixo para obter mais informações sobre as vantagens de usar seu próprio esquema XDM.</p></li><li>**Mantém regras e elementos de dados**: embora isso exija novas ações de regra, você pode reutilizar os elementos de dados existentes e as condições da regra com alterações mínimas.</li><li>**À prova de obsolescência**: se você optar por usar seu próprio esquema XDM, as atualizações de implementação futuras serão mais fáceis.</li></ul> | Nenhum |
+| Esse é o caminho de atualização preferencial se a implementação do Adobe Analytics já estiver usando o SDK da Web.<ul><li>**Mostra todas as vantagens de hospedar dados na Experience Edge Network**: <p>As vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados devido à capacidade da Adobe Experience Platform de potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/br/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Consolidar a implementação da coleção de dados da Adobe Experience Cloud entre outros produtos da Experience Cloud (AJO, RTCDP e assim por diante)</li><li>Não dependente da nomenclatura do Adobe Analytics (prop, eVar, evento etc.)</li></ul><li>**Uso da implementação existente**: embora sejam necessárias algumas alterações de implementação, essa abordagem não exige uma implementação totalmente nova. Você pode usar sua camada de dados e código existentes com alterações mínimas na lógica de implementação sem afetar os relatórios existentes do Adobe Analytics.</li><li>**Fornece uma opção para usar um esquema XDM**: é possível optar por usar seu esquema do Adobe Analytics existente ou criar um esquema XDM e mapear campos no objeto de dados desse esquema. [Esquemas XDM](https://experienceleague.adobe.com/br/docs/experience-platform/xdm/home#xdm-schemas) são flexíveis e permitem definir quaisquer campos necessários e relevantes. <p>Consulte “Usar seu próprio esquema XDM” abaixo para obter mais informações sobre as vantagens de usar seu próprio esquema XDM.</p></li><li>**Mantém regras e elementos de dados**: embora sejam necessárias novas ações de regra, é possível reutilizar elementos de dados e condições de regra existentes com alterações mínimas.</li><li>**À prova de obsolescência**: se você optar por usar seu próprio esquema XDM, isso facilitará as atualizações de implementação futuras.</li></ul> | Nenhum |
 
 {style="table-layout:auto"}
 
 +++
 
-#### Escolha seu esquema
+#### Escolher o esquema
 
 Se você escolher o caminho de atualização que permite configurar a implementação do SDK da Web da Adobe Analytics para enviar dados para o Customer Journey Analytics, será possível escolher o esquema que deseja usar.
 
-Você pode escolher se deseja usar seu esquema do Adobe Analytics existente ou atualizar para seu próprio esquema XDM para se alinhar melhor às necessidades de sua organização à medida que começa a usar outros serviços da plataforma.
+É possível optar por usar o esquema existente do Adobe Analytics ou utilizar um esquema XDM próprio para se alinhar melhor às necessidades da organização à medida que começa a usar outros serviços da Platform.
 
-+++Use o esquema do Adobe Analytics com a implementação do SDK da Web da Adobe Analytics
++++Use o esquema do Adobe Analytics com a implementação do SDK da web do Adobe Analytics
 
-| Benefícios | Desvantagens |
+| Vantagens | Desvantagens |
 |----------|---------|
-| <p>As vantagens de usar o esquema do Adobe Analytics incluem:</p><ul><li>Facilidade de atualização<p>Se você já estiver enviando dados para a Adobe Analytics com o SDK da Web da Adobe Experience Platform, poderá adicionar um serviço adicional ao fluxo de dados para enviar dados para a Adobe Experience Platform (que, em seguida, pode ser usado na configuração do Customer Journey Analytics).</p></li></ul> | <p>As desvantagens de usar o esquema do Adobe Analytics incluem:</p><ul><li>Embora o uso do esquema do Adobe Analytics não limite você em termos de como ele pode ser usado com outros aplicativos da Platform, ele resulta em um esquema que é mais complexo do que poderia ser. Isso ocorre porque o esquema do Adobe Analytics contém muitos objetos específicos do Adobe Analytics que provavelmente não serão usados por sua organização.<p>Quando são necessárias alterações no esquema, é necessário analisar milhares de campos não utilizados para localizar o campo que requer atualização.</p></li></ul> |
+| <p>As vantagens de usar o esquema do Adobe Analytics incluem:</p><ul><li>Facilidade de atualização<p>Se você já estiver enviando dados para o Adobe Analytics com o SDK da web da Adobe Experience Platform, é possível adicionar um serviço extra à sequência de dados para enviar dados para a Adobe Experience Platform (que também pode ser usado na configuração do Customer Journey Analytics).</p></li></ul> | <p>As desvantagens de usar o esquema do Adobe Analytics incluem:</p><ul><li>Embora o uso do esquema do Adobe Analytics não limite a maneira como você utiliza outros aplicativos da Platform, ele é um esquema um pouco mais complexo. Isso ocorre porque o esquema do Adobe Analytics contém muitos objetos específicos do Adobe Analytics que provavelmente não serão usados pela organização.<p>Quando é preciso realizar alterações no esquema, é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.</p></li></ul> |
 
 +++
 
-+++Use seu próprio esquema XDM com a implementação do SDK da Web da Adobe Analytics
++++Use seu próprio esquema XDM com a implementação do SDK da web do Adobe Analytics
 
-| Benefícios | Desvantagens |
+| Vantagens | Desvantagens |
 |----------|---------|
-| <ul><p>As vantagens de atualizar para seu próprio esquema XDM incluem:</p><ul><li>Um esquema simplificado adaptado às necessidades da sua organização e aos aplicativos específicos da Platform que você usa.</li><p>Quando são necessárias alterações no esquema, não é necessário percorrer milhares de campos não utilizados para localizar o campo que requer atualização.</p></ul> | <p>As desvantagens de atualizar para seu próprio esquema XDM incluem:</p><ul><li>A atualização do esquema é um processo demorado e necessário antes de você começar a enviar dados para o Customer Journey Analytics.</li></ul> |
+| <ul><p>As vantagens de utilizar seu próprio esquema XDM incluem:</p><ul><li>Um esquema simplificado e adaptado às necessidades da organização e aos aplicativos específicos da Platform que você usa.</li><p>Quando é preciso realizar alterações no esquema, não é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.</p></ul> | <p>As desvantagens de utilizar seu próprio esquema XDM incluem:</p><ul><li>A atualização do esquema é um processo demorado e necessário para começar a enviar dados para o Customer Journey Analytics.</li></ul> |
 
 +++
 
-## Em seguida, envie dados para o Adobe Experience Platform
+## Em seguida, envie os dados para a Adobe Experience Platform
 
 Depois de usar as informações acima para escolher um caminho de atualização, saiba como [enviar dados para o Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md) dependendo do caminho de atualização escolhido.
