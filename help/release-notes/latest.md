@@ -4,9 +4,9 @@ description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
 source-git-commit: 284c73374ca3fdfc4afbc2824209bebdc764fb64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '946'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Essas notas de versão abrangem o período de lançamento de 10 de abril de 2024
 | **Mídia de streaming: enviar dados do Roku para a Adobe Experience Platform Edge** | Ao [instalar o Media Analytics com a Experience Platform Edge](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/edge-recommended/media-edge-sdk/implementation-edge), agora é possível usar o SDK Roku da Adobe Experience Platform para enviar dados de mídia de streaming para a Adobe Experience Platform. |  | 12 de abril de 2024 |
 | **Exibição de relatórios mensais no Gerenciador de atividades de relatórios** | Ao exibir a atividade de relatórios para todas as conexões no Gerenciador de atividades de relatórios, é disponibilizado um gráfico que mostra [relatórios e solicitações mensais](https://experienceleague.adobe.com/pt-BR/docs/analytics-platform/using/reporting-activity-manager/reporting-activity#view-all-report-suites) executadas no nível da organização IMS no mês atual e no anterior.<p>**Observação:** os dados estarão disponíveis a partir do mês de março de 2024. | | 15 de abril de 2024 |
 | **Legendas inteligentes em cartões de pontuação móveis** | As [Legendas inteligentes](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) podem ajudar quem não é analista a entender melhor seus dados sem a ajuda. Elas já estão disponíveis nos cartões de pontuação do Customer Journey Analytics. |  | 17 de abril de 2024 |
-| **Aprimoramento de permissões para componentes exclusivos de projetos do [!UICONTROL espaço de trabalho]** | Anteriormente, se o usuário A compartilhasse um projeto com o usuário B e concedesse acesso de edição ao projeto, o usuário B poderia editar o projeto. No entanto, o usuário B não poderia editar [!UICONTROL filtros rápidos] incorporado no projeto. Essa limitação foi removida - o usuário B pode editar [filtros rápidos](/help/components/filters/quick-filters.md) e outros componentes somente de projeto incorporados ao projeto compartilhado. |  | 17 de abril de 2024 |
+| **Aprimoramento de permissões para componentes exclusivos de projetos do [!UICONTROL espaço de trabalho]** | Anteriormente, se o usuário A compartilhasse um projeto com o usuário B e concedesse acesso de edição ao projeto, o usuário B poderia editar o projeto. No entanto, o usuário B não conseguiria editar [!UICONTROL filtros rápidos] incorporados ao projeto. Essa limitação foi removida: o usuário B agora pode editar [filtros rápidos](/help/components/filters/quick-filters.md) e outros componentes exclusivos incorporados ao projeto compartilhado. |  | 17 de abril de 2024 |
 | **Admins podem gerenciar todos os locais da organização** | Uma nova opção na [página Locais](https://experienceleague.adobe.com/pt-br/docs/analytics/components/locations/locations-manager) permite que admins visualizem e gerenciem todos os locais na organização. Anteriormente, admins só podiam visualizar e gerenciar os locais que criavam. |  | Abril de 2024 |
 | **Adobe Product Analytics: matriz de recursos** | Auxilie na tomada de decisões de investimento por entender o que são recursos principais, avançados, únicos e questionáveis. A [!UICONTROL matriz de recursos] mede eventos por frequência de uso com relação à porcentagem de usuários ativos e compara esses valores com o uso médio. | 17 de abril de 2024 | 30 de abril de 2024 |
 | **Adobe Product Analytics: insights aprimorados no funil** | Na exibição de [atrito](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/funnel/friction), os insights escritos foram aprimorados para incluir categorias, deltas e descrições para maior compreensão do gráfico e da tabela. | 17 de abril de 2024 | 26 de abril de 2024 |
