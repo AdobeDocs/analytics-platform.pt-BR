@@ -3,8 +3,7 @@ description: Como fazer perguntas sobre a documentação do Customer Journey Ana
 title: Assistente de IA para o Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
-hide: true
-source-git-commit: 23160a2227819d88f51e59565d5002a50bab74fa
+source-git-commit: 4ffdb6f963386079ce2f09a8538d2bdf5c394588
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
