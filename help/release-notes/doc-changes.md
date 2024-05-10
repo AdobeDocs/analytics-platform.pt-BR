@@ -4,9 +4,9 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ea3ea6ad387300e2efcafb8e49efcafdfc011ba9
+source-git-commit: 0014515b29885bf3eb44e8e49fc605fc76e4b439
 workflow-type: tm+mt
-source-wordcount: '3544'
+source-wordcount: '3567'
 ht-degree: 72%
 
 ---
@@ -24,6 +24,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Nova documentação para atualização do Adobe Analytics para o Customer Journey Analytics | Para organizações que estão atualizando do Adobe Analytics para o Customer Journey Analytics, há várias opções de atualização e várias considerações a serem levadas em conta com base na implementação atual do Adobe Analytics em uma organização e nas metas de longo prazo.<p>Novos recursos de documentação agora estão disponíveis para ajudá-lo a entender melhor:</p><ul><li>Os vários caminhos de atualização existentes</li><li>Quais caminhos de atualização estão disponíveis com base na implementação Adobe Analytics atual de uma organização</li><li>As vantagens e desvantagens de cada caminho de atualização</li><li>Orientação passo a passo para cada caminho de upgrade</li><li>Considerações para manuseio de dados históricos</li><li>E muito mais!</li></ul><p>[Introdução à atualização para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
 | Atualização da documentação sobre intervalos de datas personalizados | Capturas de tela e procedimentos atualizados relacionados ao [criação de intervalos de datas personalizados](/help/components/date-ranges/custom-date-ranges.md) para corresponder aos recursos e design atuais do produto. |
 | Informações gerais sobre o Dimension | Adição de informações sobre [dimensões](/help/components/dimensions/overview.md). |
+| Exemplos de conectores de origem | Adição de exemplos de conectores de origem disponíveis ao descrever como [usar um conector de origem](/help/data-ingestion/sources.md#use-a-source-connector) para assimilar dados. |
 | **Abril de 2024** | |
 | Previsão de técnicas estatísticas | Adição de um artigo descrevendo o [técnicas estatísticas utilizadas no serviço de previsões](../analysis-workspace/c-forecast/statistics-forecasting.md). |
 | Foram adicionadas informações recomendando a Exportação de tabela completa para dimensões de alta cardinalidade | Adição de marcador em [Práticas recomendadas para dimensões de alta cardinalidade](/help/components/dimensions/high-cardinality.md) para recomendar o uso da Exportação de tabela completa para dimensões de alta cardinalidade. |
