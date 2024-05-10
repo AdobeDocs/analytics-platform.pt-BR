@@ -1,16 +1,16 @@
 ---
-title: Casos de uso do feed de dados
+title: Casos de uso da exportação de dados
 description: Entenda vários casos de uso de exportação de dados para o Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 19018e31bb2a46e88a27643fe10c388b40de243e
+exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
+source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 0%
 
 ---
-
 
 # Casos de uso da exportação de dados
 
@@ -77,4 +77,3 @@ Em geral, a exportação de dados suporta vários casos de uso. Cada caso de uso
 | **Validação de dados**<br/> Avalie os dados de sequência de cliques para a precisão da coleta de dados. | **Experience Platform**: [**Serviço de consulta (Data Distiller) e conjuntos de dados de exportação**](queryservice-export-datasets.md)<br/> Interface PostgreSQL interativa para executar queries SQL ad-hoc usando sua ferramenta SQL favorita para validar os dados em seus conjuntos de dados.<br/><br/>**Customer Journey Analytics**: [**Exportar tabela inteira**](export-full-table.md)<br/> Validar dados processados do CJA com atribuição e sessão aplicadas. |
 | **Ferramentas Data Lake, Data Warehouse ou BI**<br/> Traga dados digitais para suas próprias ferramentas de BI ou Data Lake para uso com conjuntos de dados adicionais. | **Customer Journey Analytics**: [**Extensão BI**](bi-extension.md)<br/> Adicionar métricas processadas de Customer Journey Analytics às ferramentas de visualização de dados, como o Power BI, e combinar com dados adicionais para relatórios personalizados <br/><br/>**Experience Platform**: [**Serviço de consulta (Data Distiller) e conjuntos de dados de exportação**](queryservice-export-datasets.md)<br> Gere dados de sequência de cliques personalizados usando o SQL para serem entregues aos destinos da nuvem. |
 | **Disponibilidade para IA/ML**<br/> Aprimore a inteligência artificial/modelos e tarefas de aprendizado de máquina com dados de Customer Journey Analytics. | **Customer Journey Analytics**: [**Exportar tabela inteira**](export-full-table.md)<br/> Exporte dimensões e métricas processadas do Customer Journey Analytics para destinos em nuvem uma única vez ou recorrentes, incluindo métricas calculadas e segmentação.<br/><br/>**Experience Platform**: [**Serviço de consulta (Data Distiller) e conjuntos de dados de exportação**](queryservice-export-datasets.md)<br/> Gere dados de sequência de cliques personalizados usando SQL para enriquecer modelos de IA/ML. |
-
