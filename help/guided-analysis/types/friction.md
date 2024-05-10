@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: 2b8afe1dbac5057f867437e2bfce27f3bd752d57
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '529'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ Os casos de uso para esse tipo de exibição incluem:
 
 * **Análise de conversão**: é possível analisar conversões em cada estágio do funil. Ao rastrear o número de usuários que avançam de uma etapa para a próxima, é possível identificar gargalos que têm taxas de conversão incomuns ou indesejadas. Essas informações são importantes para entender onde você pode melhorar seu produto para obter resultados imediatos.
 * **Otimização da integração**: otimize o processo de integração do seu produto examinando o comportamento do usuário em torno de eventos importantes. Você pode identificar as etapas com as quais os usuários lutam ou não concluem.
-* **Adoção e engajamento de recursos**: entenda como os usuários interagem com recursos específicos no seu produto. Ao analisar a progressão dos usuários por meio de etapas relacionadas a recursos, é possível avaliar as taxas de adoção de recursos e identificar áreas em que os usuários podem abandonar ou subutilizar determinados recursos. Você pode usar essas informações para se concentrar em melhorias de recursos para aumentar as taxas de adoção.
+* **Adoção e engajamento de recursos**: entenda como os usuários interagem com recursos específicos no seu produto. A análise do progresso dos usuários por meio de etapas relacionadas a recursos permite ver as taxas de adoção e identificar áreas em que os usuários podem subutilizar determinados recursos. Você pode usar essas informações para se concentrar em melhorias de recursos para aumentar as taxas de adoção.
 * **Avaliação da campanha**: meça a eficácia das campanhas de marketing. Você pode criar um segmento que se concentre em usuários que tocaram em uma determinada campanha e comparar seu processo de conversão com outras campanhas ou no produto em geral.
 
 ## Painel de consulta
@@ -33,6 +33,7 @@ O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Exibir]**: alterne entre esse tipo de visualização e [Tendências de conversão](conversion-trends.md).
 * **[!UICONTROL Etapas]**: os pontos de contato do evento que você deseja rastrear. Cada barra no gráfico representa uma etapa. É possível incluir até dez etapas.
+   * [!UICONTROL Comparar]: cada etapa fornece uma opção para comparar vários eventos em uma única etapa de funil, criando um &quot;funil bifurcado&quot;. Esse recurso permite comparar o atrito de duas jornadas lado a lado sem criar duas análises separadas.
 * **[!UICONTROL Contado como]**: o escopo que você deseja aplicar ao funil. As opções incluem [!UICONTROL Sessões] e [!UICONTROL Usuários].
    * [!UICONTROL Sessões]: Todas as etapas devem ocorrer na mesma sessão para serem contadas.
    * [!UICONTROL Usuários]: para serem contadas, todas as etapas devem ocorrer na janela de relatórios selecionada.
