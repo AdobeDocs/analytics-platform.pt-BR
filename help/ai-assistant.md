@@ -3,13 +3,13 @@ description: Como fazer perguntas sobre a documentação do Customer Journey Ana
 title: Assistente de IA para o Adobe Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
-source-git-commit: 4ffdb6f963386079ce2f09a8538d2bdf5c394588
+exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
+source-git-commit: 02a0ad53d8c3ef0c10e2b9c2b11bb75a6a962cf0
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
-
 
 # Assistente de IA para o Adobe Customer Journey Analytics
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >O Assistente de IA para o Customer Journey Analytics está atualmente na versão beta. O recurso e sua documentação estão sujeitos a alterações.
 
-O Assistente de IA é um recurso da interface do usuário que você pode usar para navegar e entender conceitos e terminologia do Adobe Customer Journey Analytics. O Assistente de IA responde às perguntas enviadas consultando um banco de dados e, em seguida, traduzindo os dados do banco de dados em uma resposta legível.
+O Assistente de IA é um recurso da interface do usuário que você pode usar para navegar e entender conceitos e terminologia do Adobe Customer Journey Analytics. O Assistente de IA do Customer Journey Analytics é treinado em sua documentação do Adobe Experience League. Quando você faz uma pergunta, o Assistente de IA responde com uma resposta útil que permite o aprendizado rápido.
 
 Como usuário iniciante, você pode usar o AI Assistant para aprender conceitos de Customer Journey Analytics e integrar-se a produtos e recursos com os quais não está familiarizado. Como um usuário experiente, você pode usar o Assistente de IA para apresentar casos de uso mais avançados ou dicas e truques.
 
@@ -27,15 +27,13 @@ Alguns exemplos de questões de conceito incluem:
 * Para que o Customer Journey Analytics é melhor usado?
 * Como configurar uma visualização de dados?
 
-Atualmente, o índice de documentação abrange a documentação do Adobe Experience League no Customer Journey Analytics. O índice é atualizado periodicamente.
-
 O modelo de recuperação de documentação é treinado no Customer Journey Analytics. Perguntas fora do escopo do Customer Journey Analytics, como perguntas sobre outros produtos do Adobe, como o Adobe Target e o Adobe Creative Cloud Suite, não podem ser respondidas.
 
 O Assistente de IA para Customer Journey Analytics está disponível para todos os níveis de produto.
 
 >[!IMPORTANT]
 >
->Nesse ponto, o Assistente de IA no Customer Journey Analytics não responde a perguntas de uso sobre objetos de dados na organização.
+>Nesse ponto, o Assistente de IA para Customer Journey Analytics não responde a perguntas de uso sobre objetos de dados na organização.
 
 ## Acessar o assistente de IA na interface do usuário do Customer Journey Analytics
 
