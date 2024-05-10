@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-source-git-commit: 8118435a3982c405f76de9070afa05b8fd71ebf3
+source-git-commit: 40e4c3bd8f3c37e9a6143200b85ffe0ac4bcb2ca
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
 
 # Casos de uso da exportação de dados
 
-Esta seção fornece casos de uso de exportação de dados. Cada caso de uso é descrito em seu próprio artigo. Para alguns casos de uso, é fornecida mais de uma solução.
+Esta seção fornece casos de uso de exportação de dados e como implementá-los com uma ou mais funcionalidades de Customer Journey Analytics ou Experience Platform. Cada funcionalidade é detalhada em um artigo separado.
 
 ## Introdução
 
@@ -67,7 +67,7 @@ Para garantir a consistência da métrica, é preferível usar os novos recursos
    * definir alertas para problemas de entrega e limites nas janelas de entrega programada.
 
 
-## Casos de uso e soluções
+## Casos de uso e funcionalidades
 
 Em geral, a exportação de dados suporta vários casos de uso. Cada caso de uso é diferente em termos dos dados necessários e como acessá-los e exportá-los. Experience Platform e Customer Journey Analytics fornecem várias funcionalidades que, independentemente ou combinadas, podem resolver os vários casos de uso. A tabela abaixo fornece uma visão geral dos casos de uso da exportação de dados identificados e as funcionalidades de Experience Platform e Customer Journey Analytics para implementar esses casos de uso.
 
