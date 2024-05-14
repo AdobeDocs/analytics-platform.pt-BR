@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: SQL Connector
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 77a2975d5f23516acb925c5cf90a2fbde7fbf3e2
+source-git-commit: 87661e0000d050652d9510bb4830ca6f30bfeae9
 workflow-type: tm+mt
-source-wordcount: '2748'
+source-wordcount: '2747'
 ht-degree: 75%
 
 ---
@@ -311,7 +311,7 @@ A variável `daterangeName` uma coluna especial pode ser usada para filtrar sua 
 
 >[!NOTE]
 >
->O Power BI não oferece suporte ao `daterange` métricas que são inferiores a um dia (hora, 30 minutos, 5 minutos etc.).
+>O Power BI não oferece suporte `daterange` métricas que são inferiores a um dia (hora, 30 minutos, 5 minutos etc.).
 
 
 #### ID do filtro
