@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 6cceeaa3b57808a82012b124435aa1b7dbf1b3f2
+source-git-commit: f1e1fdd5ca8aa51a28de13cdb028bf585a0324e7
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 63%
+source-wordcount: '2475'
+ht-degree: 61%
 
 ---
 
@@ -83,7 +83,7 @@ Entre em contato com o(a) representante da Adobe se precisar de suporte ou conse
 |---------|----------|
 | AppMeasurement | <ul><li>Nova implementação do SDK da web da Experience Platform</li><li>Migrar o Adobe Analytics para o SDK da web</li><li>Conector de origem do Analytics</li></ul> |
 | Extensão do Adobe Analytics | <ul><li>Nova implementação do SDK da web da Experience Platform</li><li>Migrar o Adobe Analytics para o SDK da web</li><li>Conector de origem do Analytics</li></ul> |
-| SDK da Web | <ul><li>Configurar a implementação do SDK da web do Adobe Analytics para enviar dados para o Customer Journey Analytics</li></ul> |
+| SDK da Web | <ul><li>Configurar a implementação do SDK da Web da Adobe Analytics para enviar dados à Platform</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -137,7 +137,7 @@ Ao escolher esse caminho de atualização, você também precisa escolher seu es
 
 #### Caminho de atualização
 
-+++Configure a implementação do SDK da web do Adobe Analytics para enviar dados ao Customer Journey Analytics
++++Configure a implementação do SDK da Web da Adobe Analytics para enviar dados à Platform
 
 | Vantagens | Desvantagens |
 |----------|---------|
@@ -149,7 +149,7 @@ Ao escolher esse caminho de atualização, você também precisa escolher seu es
 
 #### Escolher o esquema
 
-Se você escolher o caminho de atualização que permite configurar a implementação do SDK da Web da Adobe Analytics para enviar dados para o Customer Journey Analytics, será possível escolher o esquema que deseja usar.
+Se você escolher o caminho de atualização que permite configurar a implementação do SDK da Web da Adobe Analytics para enviar dados para a Platform, será possível escolher o esquema que deseja usar.
 
 É possível optar por usar o esquema existente do Adobe Analytics ou utilizar um esquema XDM próprio para se alinhar melhor às necessidades da organização à medida que começa a usar outros serviços da Platform.
 
@@ -165,7 +165,7 @@ Se você escolher o caminho de atualização que permite configurar a implementa
 
 | Vantagens | Desvantagens |
 |----------|---------|
-| <ul><p>As vantagens de utilizar seu próprio esquema XDM incluem:</p><ul><li>Um esquema simplificado e adaptado às necessidades da organização e aos aplicativos específicos da Platform que você usa.</li><p>Quando é preciso realizar alterações no esquema, não é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.</p></ul> | <p>As desvantagens de utilizar seu próprio esquema XDM incluem:</p><ul><li>A atualização do esquema é um processo demorado e necessário para começar a enviar dados para o Customer Journey Analytics.</li></ul> |
+| <ul><p>As vantagens de utilizar seu próprio esquema XDM incluem:</p><ul><li>Um esquema simplificado e adaptado às necessidades da organização e aos aplicativos específicos da Platform que você usa.</li><p>Quando é preciso realizar alterações no esquema, não é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.</p></ul> | <p>As desvantagens de utilizar seu próprio esquema XDM incluem:</p><ul><li>A atualização do esquema é um processo demorado e necessário antes de você começar a enviar dados para a Platform.</li></ul> |
 
 +++
 
