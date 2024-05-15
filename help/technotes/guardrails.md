@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: c3293e2ce93113dd22157bb6470a780b20813d80
 workflow-type: tm+mt
-source-wordcount: '1606'
-ht-degree: 8%
+source-wordcount: '1632'
+ht-degree: 7%
 
 ---
 
@@ -73,11 +73,11 @@ Alguns dos recursos e seu valor associado para o limite dependem do Pacote de Cu
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
 | Filtros de público-alvo | 20 | Proteção imposta pelo sistema | Número máximo de [filtros](../components/filters/filters-overview.md) por público. |
-| Número de identidades de público | 20 milhões | Proteção imposta pelo sistema | Número máximo de identidades por público-alvo. |
+| Número de identidades de público-alvo | 20 milhões | Proteção imposta pelo sistema | Número máximo de identidades por público-alvo. |
 | Frequência de atualização do público-alvo | 4 | Proteção imposta pelo sistema | Frequência máxima em horas e [público](../components/audiences/audiences-overview.md) pode ser atualizado. |
-| Janela de retrospectiva de atualização de público | 90 | Proteção imposta pelo sistema | Número máximo de dias para a janela de retrospectiva de atualização. |
+| Janela de pesquisa de atualização de público-alvo | 90 | Proteção imposta pelo sistema | Número máximo de dias para a janela de retrospectiva de atualização. |
 | Atualização da data de expiração do público-alvo | 13 | Proteção imposta pelo sistema | Número máximo de meses em que o público-alvo deixa de ser atualizado a partir da data de criação. Os clientes podem estender isso por mais 13 meses. |
-| Número de públicos-alvo atualizados | 75, 100 | Proteção imposta pelo sistema | Número máximo de públicos-alvo de atualização, o valor varia dependendo do pacote (consulte a Descrição do produto). |
+| Número de públicos-alvo atualizados | 75, 150 | Proteção imposta pelo sistema | Número máximo de públicos-alvo de atualização, o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
 
 {style="table-layout:auto"}
 
@@ -110,7 +110,7 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 | Descrição da anotação | 250 | Proteção imposta pelo sistema | Número máximo de caracteres para uma descrição de anotação. |
 | Campos de esquema | 10 | Proteção imposta pelo sistema | Número máximo de campos de esquema (sem incluir campos padrão) ao definir regras para um [campo derivado](../data-views/derived-fields/derived-fields.md). |
 | Campos de pesquisa/perfil | 3 | Proteção imposta pelo sistema | Número máximo de campos de pesquisa ou de esquema de perfil dentro do número máximo de campos de esquema (sem incluir campos padrão) ao definir regras para um campo derivado. |
-| Campos derivados | 100 | Proteção imposta pelo sistema | Número máximo de campos derivados por conexão. |
+| Campos derivados | 100 - 500 | Proteção imposta pelo sistema | Número máximo de campos derivados por conexão; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
 
 {style="table-layout:auto"}
 
@@ -134,7 +134,7 @@ Consulte também Experience Platform [Medidas de proteção para a assimilação
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
 | Exportação de dados | Total de armazenamentos autorizados do Data Lake | Proteção de desempenho | O Cliente pode usar a Exportação do conjunto de dados de destino para exportar os Dados do cliente no Data Lake até o Armazenamento total autorizado do Data Lake. |
-| Conjuntos de dados disponíveis | Perfil e evento | Proteção imposta pelo sistema | Conjuntos de dados de Perfil e Evento de experiência criados na interface do Experience Platform após assimilar ou coletar dados por meio de Fontes, SDK da Web, SDK móvel, Conector de dados do Analytics e Audience Manager. |
+| Conjuntos de dados disponíveis | Perfil e evento | Proteção imposta pelo sistema | Conjuntos de dados de Evento, Perfil ou Pesquisa criados na interface do usuário do Experience Platform após assimilar ou coletar dados por meio de Fontes, SDK da Web, SDK móvel, Conector de dados do Analytics e Audience Manager. |
 
 {style="table-layout:auto"}
 
@@ -155,8 +155,8 @@ Consulte também Experience Platform [Proteções de exportação do conjunto de
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Conjuntos de dados compilados | 10 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente. O valor varia dependendo do pacote de Customer Journey Analytics aplicável (consulte a descrição do produto aplicável). |
-| Dados de preenchimento retroativo | 60 | Proteção imposta pelo sistema | Número máximo de dias de dados de preenchimento retroativo. |
+| Conjuntos de dados compilados | 5 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
+| Dados de preenchimento retroativo | 60 - 395 | Proteção imposta pelo sistema | Número máximo de dias de dados de preenchimento retroativo; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
 
 {style="table-layout:auto"}
 
@@ -205,7 +205,7 @@ Consulte também Experience Platform [Proteções de exportação do conjunto de
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Linhas por Relatório | 3 milhões - 300 milhões | Proteção imposta pelo sistema | Número máximo de linhas de relatório por relatório; o valor varia dependendo do pacote de Customer Journey Analytics aplicável (consulte a descrição do produto aplicável). |
+| Linhas por Relatório | 3 milhões - 300 milhões | Proteção imposta pelo sistema | Número máximo de linhas de relatório por relatório; o valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
 | Detalhamentos por tabela | 5 | Proteção imposta pelo sistema | Número máximo de detalhamentos por tabela. |
 | Métricas por tabela | 5 | Proteção imposta pelo sistema | Número máximo de métricas por tabela. |
 | Frequência de programação | 1 | Proteção imposta pelo sistema | As exportações podem ser agendadas uma vez (1) por dia ou em um agendamento mais longo (por exemplo: uma vez a cada 2 dias ou semanalmente). |
@@ -229,6 +229,6 @@ Consulte também Experience Platform [Proteções de exportação do conjunto de
 | Costura (recurso opcional; consulte [Visão geral da compilação](../stitching/overview.md) para obter mais informações) | &lt; 3,25 horas |
 | Preenchimento retroativo do conector de origem do Adobe Analytics de menos de 10 bilhões de eventos (máximo de 13 meses de dados históricos) | &lt; 4 semanas |
 | Publicação de público-alvo no perfil do cliente em tempo real, incluindo a criação automática do segmento de transmissão e permitindo que o segmento esteja pronto para receber os dados. | aprox. 60 minutos |
-| Atualizar frequência para públicos-alvo | Atualização única: latência inferior a 5 minutos.<br/>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização). |
+| Frequência de atualização para públicos | Atualização única: latência inferior a 5 minutos.<br/>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização). |
 
 {style="table-layout:auto"}
