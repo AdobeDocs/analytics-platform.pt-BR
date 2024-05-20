@@ -4,10 +4,10 @@ title: Criar projetos
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 84%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Os [projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md) do Analysis Workspace mostram análises essenciais para os negócios que podem ser compartilhadas com as partes interessadas dentro ou fora da organização.
 
-Para obter informações sobre como começar a usar o Analysis Workspace, consulte a [Visão geral do Analysis Workspace](/help/analysis-workspace/home.md).
+Para obter informações gerais sobre como começar a usar o Analysis Workspace, consulte a [Visão geral do Analysis Workspace](/help/analysis-workspace/home.md).
 
 As seções a seguir descrevem como criar um projeto e começar a adicionar os elementos essenciais para projetos do Analysis Workspace: painéis, visualizações e componentes.
 
@@ -25,20 +25,20 @@ As seções a seguir descrevem como criar um projeto e começar a adicionar os e
 
 1. Na guia [!UICONTROL **Espaço de trabalho**], selecione a guia [!UICONTROL **Projetos**] no lado esquerdo da página e selecione [!UICONTROL **Criar projeto**].
 
-1. Escolha se deseja criar um projeto em branco ou um cartão de pontuação para dispositivos móveis em branco
+1. Escolha se deseja criar um projeto em branco ou um cartão de pontuação móvel em branco
 
-   * Escolha **Projeto em branco** se você planeja compartilhar sua análise a partir do navegador
-   * Escolha [**Cartão de pontuação para dispositivos móveis em branco**](/help/mobile-app/curator.md) se você planeja compartilhar sua análise por meio do aplicativo móvel de painéis do Adobe Analytics.
+   * Selecione **Projeto em branco** se planeja compartilhar sua análise usando o navegador
+   * Selecione [**Cartão de pontuação móvel em branco**](/help/mobile-app/curator.md) se planeja compartilhar sua análise usando o aplicativo móvel de painéis do Adobe Analytics.
 
 1. Selecione [!UICONTROL **Criar**].
 
-1. Em seguida, você precisa adicionar painéis, visualizações e componentes ao seu projeto. Primeiro, adicione painéis ao projeto no Analysis Workspace, conforme descrito em [Adicionar painéis ao projeto](#add-panels-to-the-project). Em seguida, é possível adicionar visualizações a qualquer painel. Por fim, é possível adicionar componentes a qualquer painel ou visualização.
+1. Em seguida, você precisa adicionar painéis, visualizações e componentes ao seu projeto. Primeiro, adicione painéis ao seu projeto no Analysis Workspace, conforme descrito em [Adicionar painéis ao projeto](#add-panels-to-the-project). Em seguida, é possível adicionar visualizações a qualquer painel. Por fim, é possível adicionar componentes a qualquer painel ou visualização.
 
 ## Adicionar painéis ao projeto {#panels}
 
-Os [painéis](/help/analysis-workspace/c-panels/panels.md) são a base de qualquer projeto no Analysis Workspace. Painéis são usados para organizar o conteúdo (visualizações e componentes) de um projeto.
+Os [painéis](/help/analysis-workspace/c-panels/panels.md) são a base de qualquer projeto no Analysis Workspace. Os painéis são usados para organizar o conteúdo (visualizações e componentes) de um projeto.
 
-Muitos dos painéis fornecidos no Analysis Workspace geram um conjunto completo de análises com base em alguns dados inseridos pelo usuário.
+Muitos dos painéis fornecidos no Analysis Workspace geram um conjunto completo de análises com base em algumas informações inseridas pelo usuário.
 
 Para adicionar um painel:
 
@@ -54,37 +54,45 @@ Para adicionar um painel:
 
 ## Adicionar visualizações ao projeto
 
-As [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) (como uma tabela de forma livre, um gráfico de barras ou de linhas) podem dar vida aos dados.
+As [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) (como uma tabela de forma livre, um gráfico de barras ou um gráfico de linhas) podem ser usadas para dar vida aos dados.
 
 >[!TIP]
 >
 >As tabelas de forma livre são o tipo mais comum de visualização e são a base para a análise interativa de dados. Para obter mais detalhes sobre como trabalhar com tabelas de forma livre no Analysis Workspace, consulte [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
 
-Para adicionar uma visualização:
+Adicionar uma visualização:
 
 1. Selecione o ícone **[!UICONTROL Visualizações]** no menu esquerdo.
 
    ![O ícone Visualizações selecionado e a lista de visualizações disponíveis.](assets/build-visualizations.png)
 
-1. Procure a visualização que deseja adicionar. Quando ele aparecer no menu esquerdo, arraste-o para um painel dentro do projeto.
+1. Procure a visualização que deseja adicionar. Quando ela aparecer no menu à esquerda, arraste-a para um painel dentro do projeto.
 
 1. Adicione componentes à visualização, conforme descrito em [Adicionar componentes ao projeto](#add-components-to-the-project).
 
 ## Adicionar componentes ao projeto
 
-Os [componentes](/help/components/overview.md) representam os dados reais de qualquer projeto. É possível adicionar componentes a visualizações ou painéis.
+Os [componentes](/help/components/overview.md) compõem os dados reais de qualquer projeto. É possível adicionar componentes a visualizações ou painéis.
 
 >[!TIP]
 >
 >Para obter informações sobre cada componente, selecione o ícone Informações ao lado do nome de um componente no menu esquerdo ou consulte [Visão geral dos componentes](/help/components/overview.md).
 
-Para adicionar um componente:
+Veja a seguir informações básicas sobre como adicionar um componente a um projeto no Analysis Workspace. Para obter informações mais detalhadas sobre como adicionar os vários tipos de componentes (dimensões, métricas, filtros e intervalos de datas), consulte [Usar componentes no Analysis Workspace](/help/components/use-components-in-workspace.md).
+
+Para adicionar um componente a um projeto no Analysis Workspace:
 
 1. Selecione o ícone **[!UICONTROL Components]** no menu esquerdo.
 
    ![O ícone Componentes selecionado e a lista de dimensões disponíveis.](assets/build-components.png)
 
-1. Procure o componente que deseja adicionar. Quando ele aparecer no menu esquerdo, arraste-o para um painel ou uma visualização no projeto.
+1. Role para ou procure o componente que deseja adicionar e arraste-o para um painel ou visualização em seu projeto.
+
+   Por exemplo, você pode arrastar um filtro para a área de soltar do filtro em um cabeçalho do painel.
+
+   ![soltar um filtro na área designada](assets/filter-dropzone.png)
+
+   Para obter mais informações sobre como adicionar componentes a projetos, consulte [Usar componentes no Analysis Workspace](/help/components/use-components-in-workspace.md).
 
 1. (Opcional) Compartilhe o projeto conforme descrito em [Salvar e compartilhar o projeto](#save-and-share-the-project).
 
