@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2141'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | Legendas inteligentes | As legendas inteligentes usam aprendizado de máquina avançado e IA generativa para fornecer insights valiosos de linguagem natural para visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para a visualização de [Linha](/help/analysis-workspace/visualizations/line.md). |
 | Transformações em tempo do relatório | As visualizações de dados no Customer Journey Analytics permitem interpretar ainda mais os dados de uma conexão. É possível alterar ou remover dados sem alterar a implementação, usar substrings para manipular dimensões, criar métricas de qualquer valor ou filtrar subeventos. Todas essas transformações são feitas de modo não destrutivo. O Adobe Analytics fornece recursos limitados por meio de conjuntos de relatórios virtuais e duração da sessão personalizada. |
 | Acesso SQL | Usando a opção Data Distiller, o Customer Journey Analytics pode remover as limitações de dados coletados no processamento de back-end da Adobe. Você pode modificar seus dados com a SQL, criar valores e conjuntos de dados únicos para sua empresa e continuar a explorar. O Analytics não permite qualquer tipo de acesso SQL a seus dados. |
-| Dimensões e métricas ilimitadas de cliente | As dimensões do Customer Journey Analytics são ilimitadas; os valores podem ser números, textos, objetos, listas ou uma combinação desses elementos. As dimensões podem ser aninhadas ou hierárquicas.  <p>Por outro lado, o Adobe Analytics oferece suporte a até 75 props e 250 eVars.</p> |
+| Dimensões e métricas ilimitadas de cliente | As dimensões do Customer Journey Analytics são ilimitadas. Os valores podem ser números, textos, objetos, listas ou uma combinação desses elementos. As dimensões podem ser aninhadas ou hierárquicas.  <p>Em comparação, o Adobe Analytics permite até um máximo de 75 props e 250 eVars.</p> |
 | Valores únicos ilimitados | O Customer Journey Analytics oferece suporte a valores únicos ilimitados ou itens de dimensão que podem ser relatados em uma única dimensão. <p>Não há [limites de cardinalidade em uma dimensão](/help/components/dimensions/high-cardinality.md), permitindo que qualquer valor único seja exibido e contado.</p><p>Essa abordagem remove limitações de relatórios e análises que podem existir com implementações do Adobe Analytics em larga escala, resultando em rótulos de [!UICONTROL Tráfego baixo].</p><p>No Customer Journey Analytics, é possível ver um rótulo [!UICONTROL Únicos excedidos], mas ocorre com muito menos frequência e pode ser mitigado aplicando um filtro ou segmento aos dados.</p> |
 
 {style="table-layout:auto"}

@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '459'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Há dois tipos de pastas no Espaço de trabalho: a Pasta da empresa e as pastas 
 
 Ao fazer logon no Espaço de trabalho, a página inicial de Projetos exibe uma lista de seus projetos junto com a Pasta da empresa e qualquer pasta pessoal que você criou.
 
-![Página inicial de Projetos](../assets/landing-page2.png)
+![Página inicial de projetos](../assets/landing-page2.png)
 
 ## Sobre a Pasta da empresa {#company-folder}
 
@@ -52,6 +52,6 @@ Os administradores têm privilégios especiais atribuídos à Pasta da empresa. 
 
 - Admins podem excluir uma pasta contida na Pasta da empresa que outro(a) admin criou. Os administradores podem precisar coordenar com outros administradores para manter as pastas e o acesso ao projeto consistentes.
 
-- Quando um Administrador move um projeto para a pasta Empresa, o projeto é compartilhado com todos com a **Editar cópia** mesmo se os privilégios compartilhados originais fossem restritos.
+- Quando um administrador move um projeto para a pasta da empresa, ele é compartilhado com todos com a função **Editar Cópia**, mesmo se os privilégios compartilhados originais forem restritos.
 
-- Quando um Administrador move um projeto para fora da Pasta da empresa, os privilégios de compartilhamento originais ou anteriores são respeitados.
+- Quando um administrador move um projeto para fora da pasta da empresa, os privilégios de compartilhamento originais ou anteriores são respeitados.

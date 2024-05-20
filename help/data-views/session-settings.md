@@ -6,15 +6,15 @@ feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
 source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Configurações da sessão
 
-No Customer Journey Analytics, você pode definir uma sessão de qualquer maneira para corresponder a como as pessoas interagem com suas experiências digitais. Você define as configurações de sessão em uma visualização de dados.
+No Customer Journey Analytics, é possível definir uma sessão de qualquer maneira para corresponder a como as pessoas interagem com suas experiências digitais. Defina as configurações de sessão em uma visualização de dados.
 
 As definições das configurações de sessão não são destrutivas e não alteram os dados subjacentes. É possível configurar várias visualizações de dados (cada uma com sua própria definição das configurações de sessão) como base para os projetos do Workspace.
 
