@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 17ffd1865c9d24a6ed99577b4679b72ef855e898
 workflow-type: tm+mt
-source-wordcount: '5932'
+source-wordcount: '5986'
 ht-degree: 13%
 
 ---
@@ -255,7 +255,7 @@ Caso seu site receba os seguintes eventos de amostra, contendo [!UICONTROL Refer
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` |
+| `https://google.com` | |
 
 {style="table-layout:auto"}
 
@@ -445,13 +445,13 @@ Define um conjunto de valores que são substituídos por valores correspondentes
 
 >[!NOTE]
 >
->Esta função foi originalmente chamada de Pesquisa, mas foi renomeada para Classificar para acomodar uma função de Pesquisa futura com funcionalidade diferente.
+>Esta função foi originalmente chamada de Pesquisa, mas foi renomeada para Classificar para acomodar a função Pesquisa com funcionalidades diferentes.
 
 ## Especificações {#classify-io}
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limitações | Saída |
 |---|---|---|---|---|
-| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo a ser classificado]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></li><li>[!UICONTROL Quando o valor é igual a] e [!UICONTROL Substituir valores por]:</p><ul><li>Sequência de caracteres</li></ul><li>Mostrar valores originais<ul><li>Booleano</li></ul></li></ul> | <p>N/D</p> | <p>5 funções por campo derivado<br/>100 linhas por função</p> | <p>Novo campo derivado</p> |
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo a ser classificado]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></li><li>[!UICONTROL Quando o valor é igual a] e [!UICONTROL Substituir valores por]:</p><ul><li>Sequência de caracteres</li></ul><li>Mostrar valores originais<ul><li>Booleano</li></ul></li></ul> | <p>N/D</p> | <ul><li>5 funções por campo derivado</li><li>200 [operadores](#operators) por campo derivado. Todas as entradas de [!UICONTROL Quando o valor é igual ao valor original] [!UICONTROL Substituir valor por Novo valor] é considerada uma operação.</li></ul> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -1307,6 +1307,12 @@ Um operador em uma construção If ou Else If em uma função Case When é a com
 Como exemplo, a condição abaixo usa 13 operadores.
 
 ![Operadores de amostra](assets/operators-sample.png)
+
+Um operador na função Classify é uma única entrada para [!UICONTROL Quando o valor for igual ao Valor original] [!UICONTROL Substituir valor por Novo valor].
+
+Como exemplo, a regra Classify abaixo usa três operadores.
+
+![Captura de tela da regra de classificação 1](assets/classify-1.png)
 
 
 ## Mais informações
