@@ -3,16 +3,16 @@ description: Saiba como adicionar componentes a um projeto no Analysis Workspace
 title: Usar componentes no Analysis Workspace
 feature: Components
 role: User
-source-git-commit: d3f90414494b52aba9736fef83423e4a1b2508b5
+source-git-commit: b02a3954e7b531caabfbea1f7df4e322eb4af741
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
 # Usar componentes no Analysis Workspace
 
-Os componentes compõem os dados reais de qualquer projeto no Analysis Workspace. Os componentes consistem em dimensões, métricas, segmentos e intervalos de datas. Você pode adicionar componentes a um projeto arrastando-os para visualizações ou painéis.
+Os componentes compõem os dados reais de qualquer projeto no Analysis Workspace. Os componentes consistem em dimensões, métricas, filtros e intervalos de datas. Você pode adicionar componentes a um projeto arrastando-os para visualizações ou painéis.
 
 Para obter informações gerais sobre os tipos de componentes que podem ser adicionados, consulte [Visão geral dos componentes](/help/components/overview.md).
 
@@ -34,9 +34,9 @@ Para obter informações gerais sobre os tipos de componentes que podem ser adic
 
 1. Role para ou procure o componente que deseja adicionar e arraste-o para um painel ou visualização em seu projeto.
 
-   Por exemplo, você pode arrastar um segmento para a área de soltar de segmentos em um cabeçalho do painel.
+   Por exemplo, você pode arrastar um filtro para a área de soltar do filtro em um cabeçalho do painel.
 
-   ![soltar um segmento na área designada](assets/filter-dropzone.png)
+   ![soltar um filtro na área designada](assets/filter-dropzone.png)
 
 1. Para obter informações mais detalhadas, continue com uma das seções a seguir, dependendo do tipo de componente que você está adicionando:
 
@@ -44,7 +44,7 @@ Para obter informações gerais sobre os tipos de componentes que podem ser adic
 
    * [Adicionar métricas a um projeto](#add-metrics-to-a-project)
 
-   * [Adicionar segmentos a um projeto](#add-segments-to-a-project)
+   * [Adicionar filtro a um projeto](#add-filters-to-a-project)
 
    * [Adicionar intervalos de datas a um projeto](#add-date-ranges-to-a-project)
 
@@ -60,7 +60,7 @@ Para obter informações gerais sobre os tipos de componentes que podem ser adic
 
      ![Adicionar dimensões a um projeto](assets/add-dimensions.png)
 
-   * Arraste uma ou mais dimensões do painel esquerdo para a área suspensa de segmentos para criar um segmento ad hoc, conforme descrito em [Adicionar segmentos a um projeto](#add-segments-to-a-project).
+   * Arraste uma ou mais dimensões do painel esquerdo para a área suspensa de filtro para criar um filtro ad hoc, conforme descrito em [Adicionar filtros a um projeto](#add-filters-to-a-project).
 
 Para obter mais informações sobre como usar dimensões no Analysis Workspace, consulte [Visualizar dimensões](/help/components/dimensions/view-dimensions.md), [Detalhar dimensões](/help/components/dimensions/t-breakdown-fa.md), e [Dimensões de separação de tempo](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -96,11 +96,11 @@ Para adicionar um filtro a um projeto no Analysis Workspace:
 
 1. Escolha um dos seguintes métodos para começar a filtrar o painel:
 
-   * Arraste um filtro individual do painel esquerdo para a área de soltar segmentos.
+   * Arraste um filtro individual do painel esquerdo para a área de soltar do filtro.
 
      ![soltar um filtro na área designada](assets/filter-dropzone.png)
 
-   * Mantenha pressionada a tecla Shift ou Ctrl para selecionar vários segmentos no painel esquerdo e, em seguida, mantenha pressionada a tecla Shift ao soltá-los na área de soltar segmentos.
+   * Mantenha pressionada a tecla Shift ou Ctrl para selecionar vários filtros no painel esquerdo e, em seguida, mantenha pressionada a tecla Shift enquanto os solta na área de soltar dos filtros.
 
      ![soltar vários filtros na área designada](assets/filter-dropzone-multiple.png)
 
@@ -108,13 +108,13 @@ Para adicionar um filtro a um projeto no Analysis Workspace:
 
      Você pode selecionar o (x) para remover qualquer opção do menu suspenso. Se você remover a variável [!UICONTROL **Sem filtro**] então, um filtro é necessário.
 
-   * Crie segmentos ad hoc arrastando componentes que não são de segmentos para a área designada. Isso pode economizar o tempo e o esforço de acessar o Construtor de segmentos. Segmentos criados dessa forma são definidos automaticamente como segmentos de nível de ocorrência. Essa definição pode ser modificada clicando no ícone de informações (i) ao lado do segmento e, em seguida, no ícone de edição em forma de lápis e editando-os no Construtor de segmento.
+   * Crie filtros ad hoc arrastando componentes que não são de filtros até a área designada. Isso pode economizar o tempo e o esforço de acessar o Construtor de filtros. Os filtros criados dessa maneira são definidos automaticamente como filtros de nível de ocorrência. Essa definição pode ser modificada clicando no ícone de informações (i) ao lado do filtro e, em seguida, no ícone de edição em forma de lápis e editando-a no Construtor de filtros.
 
-     Segmentos ad hoc são um tipo de segmento rápido e são locais ao projeto. Eles não aparecem no painel esquerdo, a menos que você os torne públicos.
+     Os filtros ad hoc são um tipo de filtro rápido e são exclusivos ao projeto. Eles não aparecem no painel esquerdo, a menos que você os torne públicos.
 
      Para obter mais informações, consulte [Filtros rápidos](/help/components/filters/quick-filters.md).
 
-Para obter mais informações sobre como usar a área de destino do segmento em um painel para filtrar seu painel, consulte [Área para soltar](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Visão geral dos painéis](/help/analysis-workspace/c-panels/panels.md).
+Para obter mais informações sobre como usar a área de soltar do filtro em um painel para filtrar seu painel, consulte [Área para soltar](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Visão geral dos painéis](/help/analysis-workspace/c-panels/panels.md).
 
 ## Adicionar intervalos de datas a um projeto
 
