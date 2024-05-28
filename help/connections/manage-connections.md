@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
+source-git-commit: bba51d1354d14d6e7eb236b787b419571fea6423
 workflow-type: tm+mt
-source-wordcount: '2996'
+source-wordcount: '2995'
 ht-degree: 14%
 
 ---
@@ -208,7 +208,7 @@ A variável [!UICONTROL Uso] A interface do mostra o uso de linhas assimiladas e
 
 Selecione o **[!UICONTROL Uso]** para acessar a interface.
 
-Para relatar o uso:
+### Relatório de uso
 
 1. Selecione um **[!UICONTROL Intervalo de tempo]**. Você pode selecionar entre **[!UICONTROL Últimos 6 meses]**, **[!UICONTROL Acumulado no ano]** ou **[!UICONTROL Últimos 2 anos]**.
 1. Selecione um **[!UICONTROL Interval]**. Você pode selecionar entre **[!UICONTROL Mensal]** ou **[!UICONTROL Trimestral]**.
