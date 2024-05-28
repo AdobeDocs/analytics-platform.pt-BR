@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 73b9aa3bc7568c90c3e92b6fa8197577a904a6a2
+source-git-commit: 5ad3f9c85c583390e6c5ba933ee59c3d0b3f8c59
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2996'
 ht-degree: 14%
 
 ---
@@ -32,6 +32,8 @@ Depois de [criou ou editou uma ou mais conexões](/help/connections/create-conne
 ## Lista
 
 A variável [!UICONTROL Lista] interface é a interface padrão para Conexões. Se não estiver selecionado, selecione o **[!UICONTROL Lista]** para acessar a interface.
+
+![exibição de lista](assets/list-view.png)
 
 A variável [!UICONTROL Lista] mostra uma tabela de todas as conexões disponíveis. Você pode pesquisar rapidamente por uma conexão usando o botão Pesquisar ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) caixa.
 
@@ -202,6 +204,8 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 
 A variável [!UICONTROL Uso] A interface do mostra o uso de linhas assimiladas e reportáveis em todas as conexões. Essa interface permite determinar se o uso de Customer Journey Analytics está em conformidade com o que foi concordado contratualmente.
 
+![usage-view](assets/usage-view.png)
+
 Selecione o **[!UICONTROL Uso]** para acessar a interface.
 
 Para relatar o uso:
@@ -211,14 +215,14 @@ Para relatar o uso:
 
 Para [!UICONTROL Linhas assimiladas]:
 
-* um painel exibe o total de linhas assimiladas que incluem todos os dados de eventos em todas as conexões atualizadas a cada dois dias de um mês. No painel:
+* Um painel exibe o total de linhas assimiladas que incluem todos os dados de eventos em todas as conexões atualizadas a cada 2º dia de um mês. No painel:
    * uma caixa exibe o número de linhas assimiladas do último mês e a alteração em % (indicada por <span style="color:green">▲</span> ou <span style="color:c64545">2010</span>) do mês anterior.
    * um gráfico de linhas exibe a variável <span style="color:53b2ad">◼︎</span> [!UICONTROL Linhas assimiladas mensais].<br/>Para ver um pop-up que exibe o número de linhas assimiladas mensalmente por um mês, passe o mouse sobre qualquer ponto de dados no gráfico de linhas.
 
 
 Para [!UICONTROL Linhas relatáveis]:
 
-* um painel exibe o total de linhas reportáveis que incluem todos os dados de eventos em todas as conexões atualizadas a cada dois dias de um mês. No painel:
+* Um painel exibe o total de linhas reportáveis que incluem todos os dados de eventos em todas as conexões atualizadas a cada 2 dias de um mês. No painel:
    * uma caixa exibe o número total cumulativo de linhas reportáveis.
    * uma caixa exibe o número total de linhas reportáveis do último mês e a alteração em % (indicada por <span style="color:green">▲</span> ou <span style="color:c64545">2010</span>) do mês anterior.
    * um gráfico de linhas exibe a variável <span style="color:53b2ad">◼︎</span> [!UICONTROL Linhas reportáveis mensais].<br/>Para ver um pop-up que exibe o número de linhas reportáveis cumulativas para um mês específico, passe o mouse sobre qualquer ponto de dados no gráfico de linhas.
