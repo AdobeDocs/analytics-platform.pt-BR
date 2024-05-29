@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
-workflow-type: ht
-source-wordcount: '2141'
-ht-degree: 100%
+source-git-commit: e767639d1e6276e4f9a52ce3f1bdb53b7c42ac04
+workflow-type: tm+mt
+source-wordcount: '2135'
+ht-degree: 99%
 
 ---
 
@@ -56,6 +56,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 
 | Recurso | Notas |
 | --- | --- |
+| Analytics for Target (A4T) | A variável [integração entre Adobe Customer Journey Analytics e Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) O fornece ferramentas poderosas de análise e economia de tempo para o seu programa de otimização. |
 | Publicação para público-alvo | Compatível se licenciado com produtos do Customer Data Platform ou Journey Optimizer da Adobe. A [Publicação de público-alvo](/help/components/audiences/audiences-overview.md) envia públicos-alvo para o Perfil do cliente em tempo real na Experience Platform. |
 | Classificações | Agora chamadas de “Conjuntos de dados de pesquisa”. As classificações usadas no Analytics podem ser importadas para a Experience Platform e o Customer Journey Analytics usando o conector de origem de classificações do Analytics. O upload dos conjuntos de dados de pesquisa também pode ser feito diretamente para a Experience Platform e disponibilizado no Customer Journey Analytics. |
 | Construtor de regras de classificação | Compatível ao usar [substrings](/help/data-views/component-settings/substring.md) no Customer Journey Analytics. Usa manipulações de string no momento do relatório em vez de conjuntos de dados de pesquisa. |
@@ -87,7 +88,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Recurso | Notas |
 | --- | --- |
 | Painéis | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos e Analytics for Target (A4T) não são compatíveis. |
-| Analytics for Target (A4T) | Atualmente na versão beta. Um suporte parcial é fornecido por meio de campos no [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). Há um suporte planejado para nomes amigáveis do A4T em atividades de direcionamento e experiência. |
 
 {style="table-layout:auto"}
 
