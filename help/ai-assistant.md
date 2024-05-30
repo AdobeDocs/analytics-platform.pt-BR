@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: b21dba5b7bef0d9add116f1e9bca0403e9a8c1d5
+source-git-commit: c0ed9f09f9fc0c9bb1e4c002986866677aebfb1f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,9 @@ ht-degree: 0%
 >
 >O Assistente de IA para o Customer Journey Analytics está atualmente na versão beta. O recurso e sua documentação estão sujeitos a alterações.
 
-O Assistente de IA é um recurso da interface do usuário que você pode usar para navegar e entender conceitos e terminologia do Adobe Customer Journey Analytics. O Assistente de IA do Customer Journey Analytics é treinado em sua documentação do Adobe Experience League. Quando você faz uma pergunta, o Assistente de IA responde com uma resposta útil que permite o aprendizado rápido.
+O AI Assistant é uma experiência de conversação que permite que os profissionais executem tarefas em um ritmo rápido, sejam conceitos de compreensão, problemas de solução de problemas ou pesquisa de informações. Também permite que não especialistas realizem tarefas especializadas e aumenta a qualidade geral do trabalho.
+
+O Assistente de IA do Customer Journey Analytics é treinado em sua documentação do Adobe Experience League. Quando você faz uma pergunta, o Assistente de IA responde com uma resposta útil que permite o aprendizado rápido.
 
 Como usuário iniciante, você pode usar o AI Assistant para aprender conceitos de Customer Journey Analytics e integrar-se a produtos e recursos com os quais não está familiarizado. Como um usuário experiente, você pode usar o Assistente de IA para apresentar casos de uso mais avançados ou dicas e truques.
 
@@ -58,6 +60,6 @@ Nesta primeira versão, o acesso ao recurso Assistente de IA é regido pelos seg
 
    ![Caixa Pergunta](assets/ai-asst2.png)
 
-1. (Opcional) Para mostrar origens, clique em **[!UICONTROL Mostrar fontes]**, e as fontes de documentação que informaram a resposta são mostradas.
+1. (Opcional) Para mostrar origens, clique em **[!UICONTROL Mostrar fontes]**, e a fonte ou fontes de documentação que informaram a resposta serão mostradas.
 
 1. (Opcional) Você também pode fornecer um voto para aumentar ou diminuir a ajuda de qualquer resposta fornecida.
