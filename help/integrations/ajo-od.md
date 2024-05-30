@@ -4,10 +4,10 @@ description: Traga dados gerados pela gestão de decisões do Adobe Journey Opti
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 734751f94a5d066de80182eb1ca3668aa311a4c1
+source-git-commit: 027ff3983c67481dd8284667d97f59f427b18928
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 100%
+source-wordcount: '711'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Você pode criar as seguintes métricas em uma visualização de dados para atin
 | Pontuação da opção de decisão substituta | Valor calculado para uma opção de decisão substituta no contexto de um único escopo. | `_experience.decisioning.`<br/>`propositionDetails.fallback.score` | Tipo de componente: métrica |
 | Ofertas recusadas | O número de ofertas recusadas ou rejeitadas sem qualquer outra interação direta. | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Tipo de componente: métrica |
 | Exibição de ofertas | O número de ofertas exibidas no perfil. | `_experience.decisioning.`<br/>`propositionEventType.display` | Tipo de componente: métrica |
-| Interação com ofertas | O número de ofertas exibidas no perfil. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Tipo de componente: métrica |
+| Interação com ofertas | O número de ofertas com as quais o perfil interagiu. | `_experience.decisioning.`<br/>`propositionEventType.interact` | Tipo de componente: métrica |
 | Envio de ofertas | O número de ofertas enviadas para o perfil. | `_experience.decisioning.`<br/>`propositionEventType.send` | Tipo de componente: métrica |
 | Acionador de ofertas | O número de ofertas escolhidas para serem exibidas pelo SDK do cliente. | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Tipo de componente: métrica |
 | Cancelamento de inscrição de ofertas | O número de ofertas que não serão exibidas no futuro, conforme solicitado pelo perfil. | `_experience.decisioning.`<br/>`propositionEventType.unsubscribe` | Tipo de componente: métrica |
