@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: e767639d1e6276e4f9a52ce3f1bdb53b7c42ac04
+source-git-commit: 8e6f16acc475fb89c9b9ba50ccef174d3c7b10ea
 workflow-type: tm+mt
-source-wordcount: '2135'
-ht-degree: 99%
+source-wordcount: '2198'
+ht-degree: 96%
 
 ---
 
@@ -136,6 +136,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | Análise guiada | A análise guiada é um formato de relatório que permite que os usuários atendam rapidamente às suas necessidades de dados para que possam obter insights de alta qualidade rapidamente e tomar mais decisões orientadas por dados. A análise guiada faz parte do Adobe Product Analytics, um complemento do Customer Journey Analytics. |
 | Legendas inteligentes | As legendas inteligentes usam aprendizado de máquina avançado e IA generativa para fornecer insights valiosos de linguagem natural para visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para a visualização de [Linha](/help/analysis-workspace/visualizations/line.md). |
 | Transformações em tempo do relatório | As visualizações de dados no Customer Journey Analytics permitem interpretar ainda mais os dados de uma conexão. É possível alterar ou remover dados sem alterar a implementação, usar substrings para manipular dimensões, criar métricas de qualquer valor ou filtrar subeventos. Todas essas transformações são feitas de modo não destrutivo. O Adobe Analytics fornece recursos limitados por meio de conjuntos de relatórios virtuais e duração da sessão personalizada. |
+| Extensão BI | A extensão BI permite conectar o CJA diretamente às ferramentas populares de visualização de BI, como PowerBI ou Tableau, permitindo que seus relatórios de BI correspondam exatamente ao que você vê no Analysis Workspace e em outras interfaces de relatórios do CJA. Essa é uma maneira muito mais fácil de obter relatórios de BI para o CJA sem a necessidade de recriar relatórios/métricas a partir de dados brutos. |
 | Acesso SQL | Usando a opção Data Distiller, o Customer Journey Analytics pode remover as limitações de dados coletados no processamento de back-end da Adobe. Você pode modificar seus dados com a SQL, criar valores e conjuntos de dados únicos para sua empresa e continuar a explorar. O Analytics não permite qualquer tipo de acesso SQL a seus dados. |
 | Dimensões e métricas ilimitadas de cliente | As dimensões do Customer Journey Analytics são ilimitadas. Os valores podem ser números, textos, objetos, listas ou uma combinação desses elementos. As dimensões podem ser aninhadas ou hierárquicas.  <p>Em comparação, o Adobe Analytics permite até um máximo de 75 props e 250 eVars.</p> |
 | Valores únicos ilimitados | O Customer Journey Analytics oferece suporte a valores únicos ilimitados ou itens de dimensão que podem ser relatados em uma única dimensão. <p>Não há [limites de cardinalidade em uma dimensão](/help/components/dimensions/high-cardinality.md), permitindo que qualquer valor único seja exibido e contado.</p><p>Essa abordagem remove limitações de relatórios e análises que podem existir com implementações do Adobe Analytics em larga escala, resultando em rótulos de [!UICONTROL Tráfego baixo].</p><p>No Customer Journey Analytics, é possível ver um rótulo [!UICONTROL Únicos excedidos], mas ocorre com muito menos frequência e pode ser mitigado aplicando um filtro ou segmento aos dados.</p> |
