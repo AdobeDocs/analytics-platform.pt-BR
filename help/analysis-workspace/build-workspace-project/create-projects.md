@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 53d367e51f739ebf324390ba4114ddb58138fac8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '681'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -86,11 +86,11 @@ Para adicionar um componente a um projeto no Analysis Workspace:
 
    ![O ícone Componentes selecionado e a lista de dimensões disponíveis.](assets/build-components.png)
 
-1. Role para ou procure o componente que deseja adicionar e arraste-o para um painel ou visualização em seu projeto.
+1. Role até encontrar ou pesquise o componente que deseja adicionar e arraste-o para um painel ou visualização dentro do projeto.
 
-   Por exemplo, você pode arrastar um filtro para a área de soltar do filtro em um cabeçalho do painel.
+   Por exemplo, é possível arrastar um filtro para a área para soltar filtros em um cabeçalho do painel.
 
-   ![soltar um filtro na área designada](assets/filter-dropzone.png)
+   ![soltar um filtro na área de soltar](assets/filter-dropzone.png)
 
    Para obter mais informações sobre como adicionar componentes a projetos, consulte [Usar componentes no Analysis Workspace](/help/components/use-components-in-workspace.md).
 

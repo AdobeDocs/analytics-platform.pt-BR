@@ -5,9 +5,9 @@ feature: FAQ
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
 source-git-commit: 51a20b0a1f003d2e6ce8baf4d7cec16bfa2fe5b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Você pode encontrar erros ao interagir com o Analysis Workspace que também inf
 
 | Mensagem de erro | Por que isso ocorre? | Otimização |
 | --- | --- | --- |
-| [!UICONTROL A visualização de dados está excedendo sua capacidade de relatórios no momento. Simplifique a solicitação ou tente novamente mais tarde.] | Sua solicitação de relatórios é muito complexa e precisa ser simplificada. | Restrinja os critérios do relatório e tente a solicitação novamente. |
+| [!UICONTROL A visualização de dados está excedendo sua capacidade de relatórios no momento. Simplifique a solicitação ou tente novamente mais tarde.] | Sua solicitação de relatórios é muito complexa e precisa ser simplificada. | Limite os critérios do seu relatório e tente a solicitação novamente. |
 | [!UICONTROL Ocorreu um erro de sistema. Registre uma solicitação junto ao Atendimento ao cliente em **[!UICONTROL Ajuda > Enviar tíquete de suporte]** e inclua o código de erro.] | A Adobe está enfrentando um problema que precisa ser resolvido. | Envie o código de erro ao Atendimento ao cliente. |
 | [!UICONTROL Erro 500: Falha ao carregar a página] | Problemas com a rede local, como [configurações de firewall](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=pt-BR) da empresa, contribuem para esse erro. Além disso, a Adobe pode estar enfrentando um problema que precisa ser resolvido. | Tente fazer logon novamente após alguns minutos. Se o problema persistir, envie o código de ID da instância do EIM para o Atendimento ao cliente. |
 | [!UICONTROL Um dos filtros ou a pesquisa nesta visualização contém uma pesquisa de texto que retornou muitos resultados.] | Os critérios de filtro ou o filtro de relatório são muito amplos. | Restrinja os critérios de texto de pesquisa e tente a solicitação novamente. |
