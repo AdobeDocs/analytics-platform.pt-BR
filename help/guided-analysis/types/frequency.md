@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 481e52bbfe06268642522b908f9b7ac66c882433
+source-git-commit: 70c274819eaef46627bf66d05ef8f790f61906a4
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 6%
+source-wordcount: '629'
+ht-degree: 5%
 
 ---
 
@@ -44,7 +44,7 @@ A variável [!UICONTROL Frequência] view oferece as seguintes configurações d
 
 ## Configurações do compartimento
 
-Determina como o evento é categorizado em grupos.
+Determina como o evento é categorizado em grupos (grupos). Na exibição da tabela de tendências, os usuários são classificados com base na frequência de uso no total e em cada intervalo, o que significa que 1 usuário pode contar para diferentes intervalos em intervalos diferentes.
 
 * **[!UICONTROL Compartimentos automáticos]**: identifique automaticamente o tamanho do bucket ideal com base na distribuição de dados.
 * **[!UICONTROL Classificações personalizadas]**: personalize como os dados são agrupados em compartimentos.
@@ -60,5 +60,5 @@ Determina como o evento é categorizado em grupos.
 
 O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
 
-* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir dados de tendência. Essa configuração não afeta as exibições sem tendências, como Frequência.
+* **[!UICONTROL Interval]**: a granularidade de data pela qual você deseja exibir dados de tendências. O gráfico e a tabela mostram dados agregados por padrão, com a opção de expandir a tabela para uma exibição de tendências. Na exibição de tendências, os usuários são classificados com base na frequência de uso no total e em cada intervalo, o que significa que 1 usuário pode contar para diferentes intervalos em intervalos diferentes.
 * **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
