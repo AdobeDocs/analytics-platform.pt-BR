@@ -7,20 +7,20 @@ hide: true
 hidefromtoc: true
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 9c60c00818e82a6ca891ab9d90260922437c6cca
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 15%
+source-wordcount: '793'
+ht-degree: 8%
 
 ---
 
 # Um exemplo de projeto B2B
 
-Este artigo explica, por meio de exemplos, como definir, configurar e relatar dados B2B no Customer Journey Analytics.
+Este artigo explica como definir, configurar e relatar dados B2B baseados em nível de perfil (pessoa) no Customer Journey Analytics.
 
 ## Conexão
 
-Defina sua conexão para incluir todos os conjuntos de dados B2B relevantes do Experience Platform. Isso inclui os conjuntos de dados de pesquisa importantes necessários em uma configuração B2B típica no Experience Platform. Consulte [Adicionar dados a nível de conta como um conjunto de dados de pesquisa](b2b.md) para obter mais informações.
+Defina sua conexão para incluir todos os conjuntos de dados B2B relevantes do Experience Platform. Certifique-se de incluir e transformar todos os conjuntos de dados de pesquisa relevantes necessários para um cenário típico de relatórios com base em pessoas B2B. Consulte [Transformar conjuntos de dados de pesquisa B2B](/help/connections/transform-datasets-b2b-lookups.md) para obter mais informações.
 
 Conjuntos de dados que você pode considerar adicionar à conexão:
 
@@ -28,23 +28,34 @@ Conjuntos de dados que você pode considerar adicionar à conexão:
 |---|---|---|---|---|
 | Conjunto de dados da atividade B2B | Esquema de atividade B2B | Evento | XDM ExperienceEvent | Um ExperienceEvent é um registro de fato do que ocorreu, incluindo o momento e a identidade do indivíduo envolvido. ExperienceEvents podem ser explícitos (ações humanas diretamente observáveis) ou implícitos (gerados sem uma ação humana direta) e são registrados sem agregação ou interpretação. Eles são essenciais para a análise de domínio de tempo, pois permitem a observação e a análise de alterações que ocorrem em uma determinada janela de tempo e a comparação entre várias janelas de tempo para rastrear tendências. |
 | Conjunto de dados de pessoa B2B | Esquema de pessoa B2B | Perfil | Perfil individual XDM | Um Perfil individual XDM forma uma representação singular dos atributos e interesses de indivíduos identificados e parcialmente identificados. Os perfis menos identificados podem conter apenas sinais comportamentais anônimos, como cookies de navegador, enquanto os perfis altamente identificados podem conter informações pessoais detalhadas, como nome, data de nascimento, localização e endereço de email. À medida que um perfil cresce, ele se torna um repositório robusto de informações pessoais, informações de identificação, detalhes de contato e preferências de comunicação de um indivíduo. |
-| Conjunto de dados de membro da campanha B2B | Esquema de membro da campanha B2B | Pesquisa | Membros da campanha de negócios XDM | Membros da campanha de negócios XDM é uma classe padrão do Experience Data Model (XDM) que descreve um contato ou um cliente potencial associado a uma campanha de negócios. |
-| Conjunto de dados da conta B2B | Esquema de conta B2B | Pesquisa | Conta de negócios XDM | A Conta comercial XDM é uma classe padrão do Experience Data Model (XDM) que captura as propriedades mínimas necessárias de uma conta comercial. |
 | Conjunto de dados de relação pessoal da conta B2B | Esquema de relação pessoal da conta B2B | Pesquisa | Relação pessoal da conta de negócios XDM | A relação pessoal da conta comercial XDM é uma classe padrão do Experience Data Model (XDM) que captura as propriedades mínimas necessárias de uma pessoa associada a uma conta comercial. |
-| Conjunto de dados de oportunidade B2B | Esquema de oportunidade B2B | Pesquisa | Oportunidade de negócios XDM | A Oportunidade de negócios XDM é uma classe padrão do Experience Data Model (XDM) que captura as propriedades mínimas necessárias de uma oportunidade de negócios. |
 | Conjunto de dados de relação pessoal da oportunidade B2B | Esquema de relação pessoal de oportunidade B2B | Pesquisa | Relação pessoal de oportunidade de negócios XDM | A relação da pessoa com a oportunidade de negócios XDM é uma classe padrão do Experience Data Model (XDM) que captura as propriedades mínimas necessárias de uma pessoa associada a uma oportunidade de negócios. |
-| Conjunto de dados da campanha B2B | Esquema de campanha B2B | Pesquisa | Campanha de negócios XDM | Campanha Comercial XDM é uma classe padrão do Experience Data Model (XDM) que captura as propriedades mínimas necessárias de uma campanha comercial. |
-| Conjunto de dados da lista de marketing B2B | Esquema de lista de marketing B2B | Pesquisa | Lista de marketing XDM | A Lista de marketing de negócios XDM é uma classe padrão do Experience Data Model (XDM) que captura as propriedades mínimas necessárias de uma lista de marketing. As listas de marketing permitem que você priorize os clientes em potencial com maior probabilidade de comprar seu produto. |
 | Conjunto de dados de membros da Lista de marketing B2B | Esquema de membros da lista de marketing B2B | Pesquisa | Membros da lista de marketing XDM | Membros da Lista de marketing comercial XDM é uma classe padrão do Experience Data Model (XDM) que descreve membros, pessoas ou contatos associados a uma lista de marketing. |
+| Conjunto de dados de membro da campanha B2B | Esquema de membro da campanha B2B | Pesquisa | Membros da campanha de negócios XDM | Membros da campanha de negócios XDM é uma classe padrão do Experience Data Model (XDM) que descreve um contato ou um cliente potencial associado a uma campanha de negócios. |
+<!--
+| B2B Account Dataset | B2B Account Schema | Lookup | XDM Business Account | XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account.  |
+| B2B Opportunity Dataset | B2B Opportunity Schema | Lookup | XDM Business Opportunity | XDM Business Opportunity is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business opportunity.  |
+| B2B Campaign Dataset | B2B Campaign Schema | Lookup | XDM Business Campaign | XDM Business Campaign is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business campaign.  |
+| B2B Marketing List Dataset | B2B Marketing List Schema | Lookup | XDM Marketing List | XDM Business Marketing List is a standard Experience Data Model (XDM) class that captures the minimum required properties of a marketing list. Marketing lists allow you to prioritize on prospect clients who are most likely to buy your product.  |
+-->
+
 
 A relação entre os esquemas de pesquisa, esquema de perfil e esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas em [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) e [Definir uma relação muitos para um entre dois esquemas no Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) para obter mais detalhes.
 
 ![Relação entre esquemas B2B](assets/classes.png)
 
-Para cada conjunto de dados de pesquisa adicionado à conexão, você deve definir explicitamente a relação com um conjunto de dados de evento usando Chave e Chave correspondente na caixa de diálogo Editar conjunto de dados. Por exemplo:
+Para cada conjunto de dados de pesquisa adicionado à conexão, você deve definir explicitamente a relação com um conjunto de dados de evento usando **[!UICONTROL Chave]** e **[!UICONTROL Chave correspondente]** no **[!UICONTROL Editar conjunto de dados]** diálogo. Por exemplo:
 
 ![Chave - Chave correspondente](assets/key-matchingkey.png)
 
+Quatro esquemas são usados explicitamente para conectar o esquema Pessoa a outros esquemas relevantes: Account, Opportunity, Campaign e Marketing List. Esses esquemas são baseados nas seguintes classes de esquema:
+
+* Relação pessoal da conta de negócios XDM
+* Relação pessoal de oportunidade de negócios XDM
+* Membros da lista de marketing de negócios XDM
+* Membros da campanha de negócios XDM
+
+Para cada conjunto de dados de pesquisa, para um esquema baseado nessa classe de esquema, você também ativa **[!UICONTROL Transformar conjunto de dados]** para garantir que os dados sejam transformados para pesquisas com base em pessoas. Consulte [Transformar conjuntos de dados para pesquisas B2B](/help/connections/transform-datasets-b2b-lookups.md) para obter mais informações.
 
 A tabela abaixo fornece um exemplo de visão geral do [!UICONTROL ID de pessoa], [!UICONTROL Chave], e [!UICONTROL Chave correspondente] para cada um dos conjuntos de dados.
 
@@ -53,15 +64,12 @@ A tabela abaixo fornece um exemplo de visão geral do [!UICONTROL ID de pessoa],
 |---|---|---|---|
 | Conjunto de dados da atividade B2B | `personKey.sourceKey` | | |
 | Conjunto de dados de pessoa B2B | `b2b.personKey.sourceKey` | | |
-| Conjunto de dados da conta B2B | | `accountKey.sourceKey` | *_organizationID*`.interactions.accountKey.sourceKey` |
-| Conjunto de dados de oportunidade B2B | | `accountKey.sourceKey` | *_organizationID*`.interactions.accountKey.sourceKey` |
-| Conjunto de dados da campanha B2B | | `campaignKey.sourceKey` | *_organizationID*`.interactions.campaignKey.sourceKey` |
-| Conjunto de dados da lista de marketing B2B | | `listKey.sourceKey` | `listOperations.listKey.sourceKey` |
+| Conjunto de dados Pessoa da conta B2B | | `personKey.sourceKey` | `personKey.sourceKey` |
+| Conjunto de dados de oportunidade B2B | | `personKey.sourceKey` | `personKey.sourceKey` |
+| Conjunto de dados de membros da campanha B2B | | `personKey.sourceKey` | `personKey.sourceKey` |
+| Conjunto de dados da lista de marketing B2B | | `personKey.sourceKey` | `personKey.sourceKey` |
 
 {style="table-layout:auto"}
-
-
-Na tabela *_organizationID*`.interaction.*`, refere-se ao grupo de campos personalizados adicionado ao esquema de Atividade B2B para definir o relacionamento com o esquema de Conta B2B e Oportunidade B2B. A variável `listOperations.listKey.sourceKey` refere-se ao grupo de campos Adicionar à lista adicionado ao esquema Atividade B2B para rastrear quando uma pessoa é adicionada a uma lista específica.
 
 Consulte [Adicionar e configurar conjuntos de dados](../../connections/create-connection.md) para obter mais informações sobre como definir configurações para um conjunto de dados.
 
@@ -70,242 +78,237 @@ Consulte [Adicionar e configurar conjuntos de dados](../../connections/create-co
 
 Para ter acesso a dimensões e métricas B2B relevantes ao criar o projeto do Workspace, você deve definir sua visualização de dados de acordo.
 
-Esta seção fornece recomendações e sugestões sobre quais dimensões e métricas incluir ao definir a variável [componentes](../../data-views/create-dataview.md#components) para conjuntos de dados B2B na visualização de dados.
+Você pode adicionar os seguintes componentes como dimensões à sua visualização de dados para garantir que possa relatar o nível com base em pessoas nos seus dados B2B. Os nomes dos componentes são modificados para maior clareza.
 
-Para cada componente, são fornecidos o nome, o tipo de esquema, o caminho do esquema e (quando aplicável) detalhes sobre a configuração.
-
-+++ Conjunto de dados da atividade B2B
-
-### Métricas
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
+| Nome do componente | Conjunto de dados | Tipo de dados de esquema | Caminho do esquema |
 |---|---|---|---|
-| Adicionar à campanha | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `leadOperation.addToCampaign` |
-| Adicionar à oportunidade | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `opportunityEvent.addToOpportunity` |
-| Aplicativo fechado | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `application.close` |
-| Inicialização do aplicativo | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `application.launch` |
-| Fluxo da campanha | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** ` leadOperation.changeCampaignStream` |
-| Check-out | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `commerce.checkouts` |
-| Converter lead | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `leadOperation.convertLead` |
-| Email clicado | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `directMarketing.emailClicked` |
-| Email entregue | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `directMarketing.emailDelivered` |
-| Email aberto | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `directMarketing.emailOpened` |
-| Email enviado | Sequência de caracteres | eventType | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `directMarketing.emailSent` |
-| Email cancelado | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `directMarketing.emailUnsubscribed` |
-| Formulário preenchido | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `web.formFilledOut` |
-| Formulário iniciado | Sequência de caracteres | `web.fillOutForm.webFormName` | |
-| Clientes potenciais | Sequência de caracteres | eventType | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `leadOperation.newLead` |
-| Oportunidade atualizada | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `opportunityEvent.opportunityUpdated` |
-| Preço | Dupla | *_organizationID*`.interactions.products.price` |  |
-| Prioridade | Número inteiro | `leadOperation.changeScore.priority` |  |
-| Adicionar lista de produção | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `commerce.productListAdds.value` |
-| Abrir lista de produção | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `commerce.productListOpens.value` |
-| Exibição de produção | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `commerce.productViews.value` |
-| Compras | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `commerce.purchases.value` |
-| Remover da oportunidade | Sequência de caracteres | `eventType` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `opportunityEvent.removeFromOpportunity` |
-| Salvar para mais tarde | Sequência de caracteres | eventType | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `commerce.productViews.value` |
+| Pessoa | Atividade B2B | Sequência de caracteres | `personID` |
+| Conta | Conta B2B Pessoa | Sequência de caracteres | `accountKey.sourceID` |
+| Campanha | Membro da campanha B2B | Sequência de caracteres | `campaignKey.sourceKey` |
+| Nome da lista de marketing | Lista de marketing B2B | Sequência de caracteres | `marketingListID` |
+| Oportunidade | Pessoa da oportunidade B2B | Sequência de caracteres | `opportunityKey.sourceID` |
 
-{style="table-layout:auto"}
-
-
-### Dimensões
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
-|---|---|---|---|
-| Chave da conta (Chave de origem) | Sequência de caracteres | *_organizationID*`.Interactions.accountKey.sourceKey` | |
-| Status convertido | Sequência de caracteres | `leadOperation.convertLead.convertedStatus` | |
-| Tipo de evento | Sequência de caracteres | `eventType` | |
-| Nome do formulário | Sequência de caracteres | `leadOperation.newLead.formName` | |
-| Identificador | Sequência de caracteres | `_id` | |
-| Notificação Enviada | Booleano | `leadOperation.convertLead.isSentNotificationEmail` | |
-| Palavras-chave | Sequência de caracteres | `search.keywords` | |
-| ID da lista | Sequência de caracteres | `listOperations.listID` | |
-| Nome da lista | Sequência de caracteres | `leadOperation.newLead.listName` | |
-| Nome da página | Sequência de caracteres | `web.webPageDetails.name` | |
-| Chave da pessoa (Chave de origem) | Sequência de caracteres | `personKey.sourceKey` | |
-| Produzido por | Sequência de caracteres | productionBy | |
-| Nome do produto | Sequência de caracteres | *_organizationID*`.Interactions.products.name` | |
-| Função | Sequência de caracteres | `opportunityEvent.role` | |
-| Carimbo de data e hora | Data-hora | `timestamp` | Formato de data e hora: **[!UICONTROL Dia]** |
-| URL | Sequência de caracteres | `web.webPageDetails.URL` | |
-| Nome do formulário da Web | Sequência de caracteres | `web.fillOutForm.webFormName` | |
-| URL do produto | Sequência de caracteres | *_organizationID*`.Interactions.products.url` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-+++ Conjunto de dados Pessoa B2B
-
-
-### Métricas
-
-Nenhum componente de métrica é definido como parte desse conjunto de dados.
-
-
-### Dimensões
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
-|---|---|---|---|
-| Data da última atividade | Data-hora | `extSourceSystemAudit.lastActivityDate` | Formato de data e hora: **[!UICONTROL Dia]** |
-| ID de pessoa | Sequência de caracteres | `personID` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-+++  Conjunto de dados de oportunidade B2B
-
-### Métricas
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
-|---|---|---|---|
-| Receita esperada | Dupla | `expectedRevenue.amount` | Comportamento: **[!UICONTROL Contar valores]** |
-| Valor da oportunidade | Dupla | `opportunityAmount.amount` | Comportamento: **[!UICONTROL Contar valores]** |
-| Estágio da Oportunidade - Livro Fechado | Sequência de caracteres | `opportunityStage` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `Closed - Booked` |
-| Estágio da oportunidade - Cliente potencial | Sequência de caracteres | `opportunityStage` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `Prospect` |
-| Estágio da oportunidade - qualificação | Sequência de caracteres | `opportunityStage` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `Opportunity Qualification` |
-| Estágio da oportunidade - definição da solução | Sequência de caracteres | `opportunityStage` | **[!UICONTROL Definir a inclusão/exclusão de valores]**<br/>**[!UICONTROL Diferenciação de maiúsculas e minúsculas]**<br/>Corresponder:**[!UICONTROL  Se todos os critérios forem atendidos]**<br/>Critérios: **[!UICONTROL Igual a]** `Solution Definition and Validation` |
-
-{style="table-layout:auto"}
-
-
-### Dimensões
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
-|---|---|---|---|
-| Sinalizador fechado | Booleano | `isClosed` | |
-| ID da empresa | Sequência de caracteres | `opportunityID` | |
-| Categoria de previsão | Sequência de caracteres | `forecastCategoryName` | |
-| Data da última atividade | Data-hora | `lastActivityDate` | Formato de data e hora: **[!UICONTROL Dia]** |
-| Origem do lead | Sequência de caracteres | `leadSource` | |
-| Nome da oportunidade | Sequência de caracteres | `opportunityName` | |
-| Status da oportunidade | Sequência de caracteres | `opportunityStage` | |
-| Sinalizador conquistado | Booleano | `isWon` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-+++ Conjunto de dados da campanha B2B
-
-### Métricas
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
-|---|---|---|---|
-| Custo da campanha | Dupla | `actualCost.amount` | |
-
-{style="table-layout:auto"}
-
-
-### Dimensões
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
-|---|---|---|---|
-| ID da campanha | Sequência de caracteres | `campaignID` | |
-| Nome da campanha | Sequência de caracteres | `campaignName` | |
-| Data de início da campanha: | Data-hora | `campaignStartDate` | Formato de data e hora: **[!UICONTROL Dia]** |
-| ID de canal | Sequência de caracteres | `channelName` | |
-| ID da campanha principal | Sequência de caracteres | `parentCampaignID` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-
-+++ Conjunto de dados da conta B2B
-
-### Métricas
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
-|---|---|---|---|
-| Receita anual | Dupla | `accountOrganization.annualRevenue.amount` | |
-| Número de funcionários | Número inteiro | `accountOrganization.numberOfEmployees` | |
-
-{style="table-layout:auto"}
-
-
-### Dimensões
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
-|---|---|---|---|
-| Identificador da conta | Sequência de caracteres | `accountID` | |
-| Tipo de conta | Sequência de caracteres | `accountType` | |
-| Cidade | Sequência de caracteres | `accountBillingAddress.city` | |
-| País | Sequência de caracteres | `accountBillingAddress.country` | |
-| Setor | Sequência de caracteres | `accountOrganization.industry` | |
-| Região | Sequência de caracteres | `accountBillingAddress.region` | |
-| ID da origem | Sequência de caracteres | `accountKey.sourceID` | |
-| ID da instância de origem | Sequência de caracteres | `accountKey.sourceInstanceID` | |
-| Chave de origem | Sequência de caracteres | `accountKey.sourceKey` | |
-| Tipo de origem | Sequência de caracteres | `accountKey.sourceType` | |
-
-{style="table-layout:auto"}
-
-+++
-
-
-+++ Conjunto de dados de membro da campanha B2B
-
-### Métricas
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
-|---|---|---|---|
-| Rejeitado | Long | *_organizationID*`.campaignBounced` | Comportamento: **[!UICONTROL Contar valores]** |
-| Clicados | Long | *_organizationID*`.campaignClicked` | Comportamento: **[!UICONTROL Contar valores]** |
-| Abertos | Long | *_organizationID*`.CampaignOpened` | Comportamento: **[!UICONTROL Contar valores]** |
-| Enviado | Long | *_organizationID*`.campaignSent` | Comportamento: **[!UICONTROL Contar valores]** |
-| Inscrito | Long | *_organizationID*`.campaignSubscribed` | Comportamento: **[!UICONTROL Contar valores]** |
-| Registros do webinário | Long | *_organizationID*`.Registrations` | Comportamento: **[!UICONTROL Contar valores]** |
-
-{style="table-layout:auto"}
-
-### Dimensões
-
-| Nome do componente | Tipo de dados de esquema | Caminho do esquema | Configuração |
-|---|---|---|---|
-| ID da campanha | Sequência de caracteres | `campaignID` | |
-| ID do membro da campanha | Sequência de caracteres | `campaignMemberID` | |
-| Status do membro da campanha | Sequência de caracteres | `memberStatus` | |
-| Motivo do status do membro da campanha | Sequência de caracteres | `memberStatusReason` | |
-| Data de criação | Data-hora | `extSourceSystemAudit.createdDate` | Formato de data e hora: **[!UICONTROL Dia]** |
-| Primeira data de resposta | Sequência de caracteres | `firstRespondedDate` | Formato de data e hora: **[!UICONTROL Dia]** |
-| Obteve sucesso | Booleano | `hasReachedSuccess` | |
-| Respondeu | Booleano | `hasResponded` | |
-| Último status | Sequência de caracteres | `lastStatus` | |
-| Data da última atualização | Data-hora | `extSourceSystemAudit.lastUpdatedDate` | Formato de data e hora: **[!UICONTROL Dia]** |
-| Data de associação | Data-hora | `membershipDate` | Formato de data e hora: **[!UICONTROL Dia]** |
-| Cadência de criação | Sequência de caracteres | `nurtureCadence` | |
-| Nome da faixa de criação | Sequência de caracteres | `nurtureTrackName` | |
-| ID de pessoa | Sequência de caracteres | `personID` | |
-| Data de sucesso alcançada | Data-hora | `reachedSuccessDate` | Formato de data e hora: **[!UICONTROL Dia]** |
-| ID de registro do webinário | Sequência de caracteres | `webinarRegistrationID` | |
-| URL de registro do webinário | Sequência de caracteres | `webinarConfirmationUrl` | |
-| isExhausted | Booleano | isExhausted | |
-
-{style="table-layout:auto"}
-
-+++
 
 <!--
-### B2B Marketing List Member dataset
+This section provides recommendations and suggestions on what dimensions and metrics to include when defining the [components](../../data-views/create-dataview.md#components) for B2B datasets in your data view.
 
-The B2B Marketing List Member dataset contains member of marketing lists.
+For each component, the name, schema type, schema path, and (when applicable) details about the configuration are provided.
+
+
++++ B2B Activity dataset
+
+### Metrics
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Add To Campaign | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `leadOperation.addToCampaign` |
+| Add To Opportunity | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `opportunityEvent.addToOpportunity` |
+| Application Closed | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `application.close` |
+| Application Launch | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `application.launch` |
+| Campaign Stream | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** ` leadOperation.changeCampaignStream` |
+| Checkout | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.checkouts` |
+| Convert Lead | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `leadOperation.convertLead` |
+| Email Clicked | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `directMarketing.emailClicked` |
+| Email Delivered | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `directMarketing.emailDelivered` |
+| Email Opened | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `directMarketing.emailOpened` |
+| Email Sent | String | eventType | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `directMarketing.emailSent` |
+| Email Unsubscribed | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `directMarketing.emailUnsubscribed` |
+| Form Filled Out | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `web.formFilledOut` |
+| Form Started | String | `web.fillOutForm.webFormName` | |
+| Leads | String | eventType | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `leadOperation.newLead` |
+| Opportunity Updated | String | `eventType` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `opportunityEvent.opportunityUpdated` |
+| Price | Double | *_organizationID*`.interactions.products.price` |  |
+| Priority | Integer | `leadOperation.changeScore.priority` |  |
+| Prod List Add | String | `eventType` |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.productListAdds.value` |
+| Prod List Open | String | `eventType` |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.productListOpens.value` |
+| Prod View | String | `eventType` |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.productViews.value` |
+| Purchases | String | `eventType` |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.purchases.value` |
+| Remove From Opportunity | String | `eventType` |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `opportunityEvent.removeFromOpportunity` |
+| Save for Laters | String | eventType |  **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `commerce.productViews.value` |
+
+{style="table-layout:auto"}
+
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Account Key (Source Key) | String | *_organizationID*`.Interactions.accountKey.sourceKey` | |
+| Converted Status | String | `leadOperation.convertLead.convertedStatus` | |
+| Event Type | String | `eventType` | |
+| Form Name | String | `leadOperation.newLead.formName` | |
+| Identifier | String | `_id` | |
+| Is Sent Notification | Boolean | `leadOperation.convertLead.isSentNotificationEmail` | |
+| Keywords | String | `search.keywords` | |
+| List ID | String | `listOperations.listID` | |
+| List Name | String | `leadOperation.newLead.listName` | |
+| Page Name | String | `web.webPageDetails.name` | |
+| Person Key (Source Key) | String | `personKey.sourceKey` | |
+| Produced By | String | producedBy | |
+| Product Name | String | *_organizationID*`.Interactions.products.name` | |
+| Role | String | `opportunityEvent.role` | | 
+| Timestamp | Date-time | `timestamp` | Date-Time format: **[!UICONTROL Day]** |
+| URL | String | `web.webPageDetails.URL` | |
+| Web Form Name | String | `web.fillOutForm.webFormName` | |
+| Product URL | String | *_organizationID*`.Interactions.products.url` | |
+
+{style="table-layout:auto"}
+
++++
+
+
++++ B2B Person dataset
+
+
+### Metrics
+
+No metric components are defined as part of this dataset.
+
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Last Activity Date | Date-time | `extSourceSystemAudit.lastActivityDate` | Date-Time format: **[!UICONTROL Day]** |
+| Person ID | String | `personID` | |
+
+{style="table-layout:auto"}
+
++++
+
++++ B2B Account Person dataset
+
+### Metrics
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Annual Revenue | Double | `accountOrganization.annualRevenue.amount` | |
+| Number of employees | Integer | `accountOrganization.numberOfEmployees` | |
+
+{style="table-layout:auto"}
+
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Acount | String | `accountKey.sourceID` | 
+
+{style="table-layout:auto"}
+
+| Account Identifier | String | `accountID` | |
+| Account Type | String | `accountType` | |
+| City | String | `accountBillingAddress.city` | |
+| Country | String | `accountBillingAddress.country` | |
+| Industry | String | `accountOrganization.industry` | |
+| Region | String | `accountBillingAddress.region` | |
+| Source ID | String | `accountKey.sourceID` | |
+| Source Instance ID | String | `accountKey.sourceInstanceID` | |
+| Source Key | String | `accountKey.sourceKey` | |
+| Source Type | String | `accountKey.sourceType` | |
+
+
++++
+
++++  B2B Opportunity Person dataset
+
+### Metrics
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Expected Revenue | Double | `expectedRevenue.amount` | Behavior: **[!UICONTROL Count values]** |
+| Opportunity Amount | Double | `opportunityAmount.amount` | Behavior: **[!UICONTROL Count values]** |
+| Opportunity Stage - Closed Book | String | `opportunityStage` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `Closed - Booked` |
+| Opportunity Stage - Prospect | String | `opportunityStage` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `Prospect` |
+| Opportunity Stage - Qualification | String | `opportunityStage` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `Opportunity Qualification` |
+| Opportunity Stage - Solution Definition | String | `opportunityStage` | **[!UICONTROL Set include/exclude values]**<br/>**[!UICONTROL Case sensitive]**<br/>Match: **[!UICONTROL If all criteria are met]**<br/>Criteria: **[!UICONTROL Equals]** `Solution Definition and Validation` |
+
+{style="table-layout:auto"}
+
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Closed Flag | Boolean | `isClosed` | |
+| Company ID | String | `opportunityID` | |
+| Forecast Category | String | `forecastCategoryName` | |
+| Last Activity Date | Date-time | `lastActivityDate` | Date-time format: **[!UICONTROL Day]** |
+| Lead Source | String | `leadSource` | |
+| Opportunity Name | String | `opportunityName` | | 
+| Opportunity Status | String | `opportunityStage` | |
+| Won Flag | Boolean | `isWon` | |
+
+{style="table-layout:auto"}
+
++++
+
+
++++ B2B Campaign Member dataset
+
+### Metrics
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Bounced | Long | *_organizationID*`.campaignBounced` | Behavior: **[!UICONTROL Count values]** |
+| Clicked | Long | *_organizationID*`.campaignClicked` | Behavior: **[!UICONTROL Count values]** |
+| Opened | Long | *_organizationID*`.CampaignOpened` | Behavior: **[!UICONTROL Count values]** |
+| Sent | Long | *_organizationID*`.campaignSent` | Behavior: **[!UICONTROL Count values]** |
+| Subscribed | Long | *_organizationID*`.campaignSubscribed` | Behavior: **[!UICONTROL Count values]** |
+| Webinar Registrations | Long | *_organizationID*`.Registrations` | Behavior: **[!UICONTROL Count values]** |
+
+{style="table-layout:auto"}
+
+### Dimensions
+
+| Component Name | Schema data type | Schema path | Configuration |
+|---|---|---|---|
+| Campaign ID | String | `campaignID` | |
+| Campaign Member ID | String | `campaignMemberID` | |
+| Campaign Member Status | String | `memberStatus` | |
+| Campaign Member Status Reason | String | `memberStatusReason` | |
+| Created Date | Date-time | `extSourceSystemAudit.createdDate` | Date-time format: **[!UICONTROL Day]** |
+| First Responded Date | String | `firstRespondedDate` | Date-time format: **[!UICONTROL Day]** |
+| Has Reached Success | Boolean | `hasReachedSuccess` | |
+| Has Responded | Boolean | `hasResponded` | |
+| Last Status | String | `lastStatus` | |
+| Last Updated Date | Date-time | `extSourceSystemAudit.lastUpdatedDate` | Date-time format: **[!UICONTROL Day]** |
+| Membership Date | Date-time | `membershipDate` | Date-time format: **[!UICONTROL Day]** |
+| Nurture Cadence | String | `nurtureCadence` | |
+| Nurture Track Name | String | `nurtureTrackName` | |
+| Person ID | String | `personID` | |
+| Reached Success Date | Date-time | `reachedSuccessDate` | Date-time format: **[!UICONTROL Day]** |
+| Webinar Registration ID | String | `webinarRegistrationID` | |
+| Webinar Registration URL | String | `webinarConfirmationUrl` | |
+| isExhausted | Boolean | isExhausted | |
+
+{style="table-layout:auto"}
+
++++
+
++++ B2B Marketing List Member dataset
+
+### Metrics
+
+### Dimensions
+
++++
 
 -->
 
 ## Workspace
 
-Com seus componentes definidos corretamente, agora é possível criar visualizações B2B específicas no projeto do Workspace.
+Com seus componentes definidos corretamente na visualização de dados, agora é possível criar relatórios e visualizações B2B específicos no projeto do Espaço de trabalho.
 
-Veja abaixo um exemplo de projeto que depende da conexão e da visualização de dados descritas acima. Consulte as descrições de cada visualização para obter mais detalhes.
+Veja abaixo um exemplo de projeto que depende da conexão e da visualização de dados descritas acima.
 
-+++ Exemplo de projeto
+![Projeto de exemplo](assets/sample-project.png)
 
-![Visualizações](assets/visualizations.png)
+<!-- See the descriptions for each visualization for more details.
+
++++ Example project
+
+![Visualizations](assets/visualizations.png)
 
 +++
+-->
