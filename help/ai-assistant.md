@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 hide: true
 hidefromtoc: true
-source-git-commit: fb9b0d2c8d2333aba83598ab1e1aea2370636002
+source-git-commit: f73e7e9be8593c3bbcad02925ab8b525694a4a15
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,7 @@ Nesta primeira versão, o acesso ao recurso Assistente de IA é regido pelos seg
 A [administrador do perfil do produto](https://helpx.adobe.com/br/enterprise/using/manage-product-profiles.html) precisa seguir estas etapas no Admin Console:
    1. Navegue até [!UICONTROL Admin Console] > [!UICONTROL Produtos e serviços] > [!UICONTROL Customer Journey Analytics] > [!UICONTROL Perfil do produto] > [!UICONTROL Permissões] > [!UICONTROL Editar ferramentas de relatório].
    1. Adicione &quot;AI Assistant: Product Knowledge&quot;.
+      ![Adicionar permissão](assets/image.png)
 
 ## Acessar o assistente de IA na interface do usuário do Customer Journey Analytics
 
