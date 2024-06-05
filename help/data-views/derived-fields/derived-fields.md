@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: d9ec1dfe99ad77f7b995ef97b71eb31f28eafd35
+source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
 workflow-type: tm+mt
-source-wordcount: '5987'
-ht-degree: 13%
+source-wordcount: '6717'
+ht-degree: 12%
 
 ---
 
@@ -160,13 +160,193 @@ Para criar rapidamente um campo derivado para casos de uso específicos, os mode
 
 ### Canais de marketing
 
-Este modelo está configurado para usar o [Análise De Url](#dnl-url-parse) e [Ocorrência Quando](#dnl-case-when) O funciona várias vezes para obter valores apropriados de um URL. A lógica é aplicada nesses valores para associar o URL a um canal de marketing específico.
+Este modelo de função usa uma coleção de regras para criar canais de marketing.
 
 +++ Detalhes
 
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
-![Captura de tela do construtor de regras do modelo de canal de marketing](assets/marketing-channel-template.png)
+![Captura de tela do construtor de regras do modelo de canal de marketing](assets/function-template-marketing-channel-template.png)
+
++++
+
+### Rejeições
+
+Este modelo de função usa um conjunto de regras para identificar rejeições de site.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras de rejeições](assets/function-template-bounces.png)
+
++++
+
+### Combinação de várias dimensões
+
+Este modelo de função combina dois valores em um.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras de Combinação de Vários Dimension](assets/function-template-multi-dimension-combine.png)
+
++++
+
+### Nome amigável do conjunto de dados
+
+Esse modelo de função fornece um nome de conjunto de dados legível.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras do Nome do conjunto de dados amigável](assets/function-template-friendly-dataset-name.png)
+
++++
+
+### Nome da página do URL
+
+Este modelo de função cria um nome de página simples.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do Nome de página do construtor de regras de URL](assets/function-template-page-name-from-url.png)
+
++++
+
+### Temporada de feriados
+
+Esse modelo de função classifica os principais momentos do ano.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras da temporada de feriados](assets/function-template-holiday-season.png)
+
++++
+
+### Metas mensais
+
+Esse modelo de função define metas mensais personalizadas.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras de Metas mensais](assets/function-template-monthly-goals.png)
+
++++
+
+### Obter todos os valores na lista delimitada
+
+Este modelo de função converte uma lista limitada em uma matriz.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras Obter todos os valores na lista Delimitada](assets/function-template-get-all-values-in-delimited-list.png)
+
++++
+
+### Obter o primeiro valor na lista delimitada
+
+Este modelo de função obtém o primeiro valor em uma lista delimitada.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras Obter primeiro valor na lista delimitada](assets/function-template-get-first-value-in-delimited-list.png)
+
++++
+
+### Obter o último valor na lista delimitada
+
+Este modelo de função obtém o último valor em uma lista delimitada.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras Obter último valor na lista delimitada](assets/function-template-get-last-value-in-delimited-list.png)
+
++++
+
+### Nome do Domínio
+
+Este modelo de função extrai o nome de domínio usando uma expressão regular.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras do Nome de domínio](assets/function-template-domain-name.png)
+
++++
+
+### Obter parâmetro da string de consulta
+
+Este modelo de função extrai valores da sequência de consulta.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras Obter parâmetro da cadeia de caracteres de consulta](assets/function-template-get-query-string-parameter.png)
+
++++
+
+### Campo de transição
+
+Esse modelo de função faz a transição dos relatórios de um campo para outro.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras do Campo de transição](assets/function-template-transition-field.png)
+
++++
+
+### Detecção de bots simples
+
+Este modelo de função implementa a identificação de bots de luz.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras de Detecção de bot simples](assets/function-template-simple-bot-detection.png)
+
++++
+
+### Link de saída
+
+Este modelo de função identifica o último link clicado em uma sessão.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras do Link de saída](assets/function-template-exit-link.png)
+
++++
+
+### Link de download
+
+Esse modelo de função sinaliza links de download comuns.
+
++++ Detalhes
+
+Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
+
+![Captura de tela do construtor de regras do Link de download](assets/function-template-download-link.png)
 
 +++
 
