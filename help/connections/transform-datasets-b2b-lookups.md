@@ -4,10 +4,11 @@ description: Descreve como transformar dados em conjuntos de dados de esquemas d
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ffa57c19174bf1618957efe7191c8486c8e3a900
+exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
+source-git-commit: 6e50e9341c2eedd6e4882cc3eb943cbcb8dfc332
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 5%
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
@@ -17,10 +18,10 @@ Para oferecer suporte a pesquisas com base em pessoas em dados B2B (incluindo co
 
 Essa transformação só está disponível para conjuntos de dados com dados para esquemas de pesquisa B2B, com base nas seguintes classes:
 
-* Relação pessoal da conta de negócios XDM
-* Relação pessoal de oportunidade de negócios XDM
-* Membros da lista de marketing de negócios XDM
-* Membros da campanha de negócios XDM
+* [Relação pessoal da conta de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [Relação pessoal de oportunidade de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [Membros da lista de marketing de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [Membros da campanha de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 Para ativar a transformação desse conjunto de dados:
 
