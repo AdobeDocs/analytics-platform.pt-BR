@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 4396f6046f8a7aa27f04d2327c5b3c0ee967774b
+source-git-commit: 4d3d53ecb44a69bcf3f46ca0c358ef794a437add
 workflow-type: tm+mt
-source-wordcount: '6717'
+source-wordcount: '7147'
 ht-degree: 12%
 
 ---
@@ -435,7 +435,7 @@ Caso seu site receba os seguintes eventos de amostra, contendo [!UICONTROL Refer
 |  | `https://site.com/?cid=em_12345678` |
 | `https://google.com` | `https://site.com/?cid=ps_abc098765` |
 | `https://google.com` | `https://site.com/?cid=em_765544332` |
-| `https://google.com` | |
+| `https://google.com` |  |
 
 {style="table-layout:auto"}
 
@@ -1067,6 +1067,78 @@ Você deve selecionar o mesmo tipo de campos em uma regra Mesclar campos. Por ex
 
 +++
 
+
+<!-- NEXT OR PREVIOUS -->
+
+### Próximo ou anterior
+
+Pega um campo como entrada e resolve o valor seguinte ou anterior desse campo dentro do escopo da sessão ou do uso. Isso só se aplica aos campos da tabela Visita e Evento.
+
++++ Detalhes
+
+## Especificação {#prevornext-io}
+
+| Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
+|---|---|---|---|---|
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Método]:<ul><li>Valor anterior</li><li>Próximo valor</li></ul></li><li>[!UICONTROL Escopo]:<ul><li>Pessoa</li><li>Sessão</li></ul></li><li>[!UICONTROL Índice]:<ul><li>Numérico</li></ul><li>[!UICONTROL Incluir repetições]:<ul><li>Booleano</li></ul></li><li>[!UICONTROL Incluir &#39;Nenhum Valor&#39;]:<ul><li>Booleano</li></ul></li></ul> | <p>N/D</p> | <p>3 funções por campo derivado</p> | <p>Novo campo derivado</p> |
+
+{style="table-layout:auto"}
+
+## Caso de uso {#prevornext-uc1}
+
+Você gostaria de entender o que o **próximo** ou **anterior** é dos dados que você recebe, considerados os valores repetidos.
+
+### Dados {#prevornext-uc1-databefore}
+
+**Exemplo 1 - Manipular repetições de inclusão**
+
+| Dados recebidos | Próximo valor<br/>Session<br/>Índice = 1<br/>Incluir repetições | Próximo valor<br/>Session<br/>Índice = 1<br/>NÃO incluir repetições | Valor anterior<br/>Session<br/>Índice = 1<br/>Incluir repetições | Valor anterior<br/>Session<br/>Índice = 1<br/>NÃO incluir repetições |
+|---|---|---|---|---|
+| página inicial | página inicial | pesquisa | *Nenhum valor* | *Nenhum valor* |
+| página inicial | pesquisa | pesquisa | página inicial | *Nenhum valor* |
+| pesquisa | pesquisa | detalhes do produto | página inicial | página inicial |
+| pesquisa | detalhes do produto | detalhes do produto | pesquisa | página inicial |
+| detalhes do produto | pesquisa | pesquisa | pesquisa | pesquisa |
+| pesquisa | detalhes do produto | detalhes do produto | detalhes do produto | detalhes do produto |
+| detalhes do produto | pesquisa | pesquisa | pesquisa | pesquisa |
+| pesquisa | pesquisa | *Nenhum valor* | detalhes do produto | detalhes do produto |
+| pesquisa | *Nenhum valor* | *Nenhum valor* | pesquisa | detalhes do produto |
+
+{style="table-layout:auto"}
+
+**Exemplo 2 - O manuseio inclui repetições com valores em branco nos dados recebidos**
+
+| Dados recebidos | Próximo valor<br/>Session<br/>Índice = 1<br/>Incluir repetições | Próximo valor<br/>Session<br/>Índice = 1<br/>NÃO incluir repetições | Valor anterior<br/>Session<br/>Índice = 1<br/>Incluir repetições | Valor anterior<br/>Session<br/>Índice = 1<br/>NÃO incluir repetições |
+|---|---|---|---|---|
+| página inicial | página inicial | pesquisa | *Nenhum valor* | *Nenhum valor* |
+| página inicial | página inicial | pesquisa | página inicial | *Nenhum valor* |
+| página inicial | pesquisa | pesquisa | página inicial | *Nenhum valor* |
+| pesquisa | pesquisa | detalhes do produto | página inicial | página inicial |
+|   |   |   |   |   |
+| pesquisa | pesquisa | detalhes do produto | pesquisa | página inicial |
+| pesquisa | detalhes do produto | detalhes do produto | pesquisa | página inicial |
+| detalhes do produto | *Nenhum valor* | *Nenhum valor* | pesquisa | pesquisa |
+|   |   |   |   |   |
+
+{style="table-layout:auto"}
+
+### Campo derivado {#prevnext-uc1-derivedfield}
+
+Você define um `Next Value` ou `Previous value` campo derivado. Você usa o [!UICONTROL PRÓXIMO OU ANTERIOR] para definir uma regra que selecione a variável [!UICONTROL Dados recebidos] selecione [!UICONTROL Próximo valor] ou [!UICONTROL Valor anterior] as [!UICONTROL Método], [!UICONTROL Session] como Escopo e defina o valor de [!UICONTROL Índice] para `1`.
+
+![Captura de tela da regra Mesclar campos](assets/prevnext-next.png)
+
+## Mais informações {#prevnext-moreinfo}
+
+Você só pode selecionar campos que pertençam à tabela Visita ou Evento.
+
+[!UICONTROL Incluir repetições] determina como tratar valores repetidos para o [!UICONTROL PRÓXIMO OU ANTERIOR] função.
+
+- Incluir aparências repetidas e os valores anteriores ou seguintes. Se [!UICONTROL Incluir repetições] for selecionada, ela ignorará qualquer repetição sequencial de valores anteriores ou seguintes da ocorrência atual.
+
+- Linhas sem valores (em branco) para um campo selecionado não terão valores anteriores ou seguintes retornados como parte das [!UICONTROL PRÓXIMO OU ANTERIOR] saída da função.
+
++++
 
 <!-- REGEX REPLACE -->
 
