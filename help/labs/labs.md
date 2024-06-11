@@ -4,16 +4,20 @@ description: Visualizar projetos de protótipo do Customer Journey Analytics
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
 role: User
-source-git-commit: d5d81caff62d4fb56a57739ddffb81787f684e23
+source-git-commit: fd033854a3b871c802c38c098d0907062a1c9c07
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 89%
+source-wordcount: '469'
+ht-degree: 81%
 
 ---
 
 # Guia do usuário do [!UICONTROL Labs]
 
 O [!UICONTROL Labs] permite a prototipagem mais rápida de ideias em fase inicial. É uma combinação de ferramentas e processos que acelera o desenvolvimento de forma transparente, com foco no cliente. Isso permite que os usuários se envolvam com tecnologias emergentes, descubram informações valiosas e influenciem o desenvolvimento e as prioridades de recursos futuros. Você pode usar o Labs para obter acesso antecipado às inovações da Adobe Customer Journey Analytics e avaliar os recursos futuros no contexto de casos de uso e dados de sua empresa.
+
+>[!IMPORTANT]
+>
+>O Customer Journey Analytics Labs não é um serviço pronto para HIPAA e não pode ser usado para processar dados pessoais confidenciais, incluindo dados de saúde permitidos (como informações de saúde pessoal ou PHI) que sua organização pode ter permissão para usar no Customer Journey Analytics.
 
 ## Requisitos
 
