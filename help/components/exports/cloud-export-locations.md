@@ -5,10 +5,10 @@ title: Configurar locais de exportação da nuvem
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: cfc019133473cb7509677d03e897d4eeb934ef38
+source-git-commit: 1bf36f60b0b3aec04bb1452e5f63f97051d9bb50
 workflow-type: tm+mt
-source-wordcount: '1823'
-ht-degree: 18%
+source-wordcount: '1932'
+ht-degree: 20%
 
 ---
 
@@ -38,7 +38,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    A caixa de diálogo Local é exibida.
 
-1. Especifique as seguintes informações: |Campo | Função | |—|—| | [!UICONTROL **Nome**] | O nome do local.  | | [!UICONTROL **Descrição**] | Forneça uma breve descrição da localização para ajudar a diferenciá-la de outros locais na conta. | | [!UICONTROL **Conta de localização**] | Selecione a conta na qual deseja criar a localização. Para obter informações sobre como criar uma conta, consulte [Configurar contas de exportação da nuvem](/help/components/exports/cloud-export-accounts.md). |
+1. Especifique as seguintes informações: |Campo | Função | |—|—| | [!UICONTROL **Nome**] | O nome do local.  | | [!UICONTROL **Descrição**] | Forneça uma breve descrição da localização para ajudar a diferenciá-la de outros locais na conta. | | [!UICONTROL **Disponibilizar a localização a todos os usuários na organização**] | **Nota:** Essa funcionalidade está na fase de Teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md). <p>Habilite essa opção para permitir que outros usuários em sua organização usem o local.</p> <p>Considere o seguinte ao compartilhar locais:</p><ul><li>Os locais compartilhados não podem ter o compartilhamento cancelado.</li><li>Os locais compartilhados podem ser editados somente pelo proprietário do local.</li><li>Os locais podem ser compartilhados somente se a conta à qual o local está associado também for compartilhada.</li></ul> | | [!UICONTROL **Conta de localização**] | Selecione a conta na qual deseja criar a localização. Para obter informações sobre como criar uma conta, consulte [Configurar contas de exportação da nuvem](/help/components/exports/cloud-export-accounts.md). |
 
 1. Na seção [!UICONTROL **Propriedades da localização**], insira as informações específicas ao tipo da sua conta de localização.
 
@@ -127,7 +127,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Balde**] | O bucket da conta GCP para o qual você deseja que os dados de Customer Journey Analytics sejam enviados. <p>Certifique-se de que você concedeu a `roles/storage.objectCreator` ao responsável principal fornecida pela Adobe. (O Principal é fornecido quando [configuração da conta da Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Para obter informações sobre a concessão de permissões, consulte [Adicionar um principal a uma política de nível de bucket](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) na documentação da Google Cloud.</p><p>Se sua organização estiver usando [Restrições de política da organização](https://cloud.google.com/storage/docs/org-policy-constraints) para permitir somente a conta da Google Cloud Platform no lista de permissões, é necessário a seguinte ID de organização da Google Cloud Platform pertencente ao Adobe: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
+   | [!UICONTROL **Balde**] | O bucket da conta GCP para o qual você deseja que os dados de Customer Journey Analytics sejam enviados. <p>Certifique-se de que você concedeu a `roles/storage.objectCreator` ao responsável principal fornecida pela Adobe. (O Principal é fornecido quando [configuração da conta da Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Para obter informações sobre a concessão de permissões, consulte [Adicionar um principal a uma política de nível de bucket](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) na documentação da Google Cloud.</p><p>Se a sua organização estiver usando [Restrições de política da organização](https://cloud.google.com/storage/docs/org-policy-constraints) para permitir somente a conta da Google Cloud Platform na sua lista de permissões, você precisará da seguinte ID de organização da Google Cloud Platform pertencente à Adobe: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
    | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, folder_name/ |
 
    {style="table-layout:auto"}

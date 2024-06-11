@@ -5,9 +5,9 @@ title: Gerenciar locais e contas de exportação da nuvem
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: cdf99e31790f089950de8063445b6264158131dd
+source-git-commit: 6e36885cfba60c808b9f069159670db6834fe41f
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -54,6 +54,10 @@ Para encontrar as informações necessárias, você pode filtrar a lista de loca
 
 ## Editar locais
 
+Um local pode ser editado somente pelo usuário que o criou ou por um administrador do sistema.
+
+Para editar um local:
+
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
 1. Selecione o [!UICONTROL **Localizações**] guia.
@@ -95,6 +99,10 @@ Para excluir um local:
 1. Selecionar [!UICONTROL **Excluir**] novamente para confirmar.
 
 ## Editar contas
+
+Uma conta só pode ser editada pelo usuário que a criou ou por um administrador do sistema.
+
+Para editar uma conta:
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
 
