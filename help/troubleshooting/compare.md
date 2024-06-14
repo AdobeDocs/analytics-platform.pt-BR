@@ -5,29 +5,29 @@ role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-keywords: serviço de consulta;serviço de consulta;sintaxe sql
+keywords: query service;Query service;sql syntax
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '839'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # Comparar os dados do Adobe Analytics com os dados do Customer Journey Analytics
 
-À medida que sua organização adota o Customer Journey Analytics, você pode notar algumas diferenças nos dados entre o Adobe Analytics e o Customer Journey Analytics. Isso é normal e pode ocorrer por vários motivos. O Customer Journey Analytics foi projetado para permitir melhorias no que diz respeito a algumas limitações de dados do AA. No entanto, podem ocorrer discrepâncias inesperadas e não intencionais. Este artigo foi projetado para ajudar a diagnosticar e resolver essas diferenças, de modo que você e sua equipe possam usar o Customer Journey Analytics sem obstáculos devido a preocupações com a integridade dos dados.
+À medida que a sua organização adota o Customer Journey Analytics, você pode notar algumas diferenças nos dados do Adobe Analytics e do Customer Journey Analytics. Isso é normal e pode ocorrer por vários motivos. O Customer Journey Analytics foi projetado para permitir melhorias no que diz respeito a algumas limitações nos seus dados do AA. No entanto, podem ocorrer discrepâncias inesperadas e não intencionais. Este artigo foi elaborado para ajudar a diagnosticar e resolver essas diferenças, de maneira que você e sua equipe possam usar o Customer Journey Analytics sem se preocupar com a integridade dos dados.
 
-Suponhamos que você tenha assimilado dados do Adobe Analytics na Adobe Experience Platform por meio de [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR)e criou uma conexão Customer Journey Analytics usando esse conjunto de dados.
+Vamos supor que você assimilou dados do Adobe Analytics na Adobe Experience Platform por meio do [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) e, em seguida, criou uma conexão do Customer Journey Analytics usando esse conjunto de dados.
 
-![O fluxo de dados do Adobe Analytics através do conector de dados para o Adobe Experience Platform e para o Customer Jornada Analytics usando conexões do CJA.](assets/compare.png)
+![O fluxo de dados do Adobe Analytics através do conector de dados para a Adobe Experience Platform e para o Customer Journey Analytics usando conexões do CJA.](assets/compare.png)
 
-Em seguida, você criou uma visualização de dados e ao mesmo tempo em que relatava esses dados no Customer Journey Analytics, notou discrepâncias com os resultados do relatório no Adobe Analytics.
+Em seguida, você criou uma visualização de dados e, ao relatar esses dados posteriormente no Customer Journey Analytics, notou discrepâncias com os resultados dos relatórios no Adobe Analytics.
 
 Estas são algumas etapas a seguir para comparar seus dados originais do Adobe Analytics com os dados que agora estão no Customer Journey Analytics.
 
 ## Pré-requisitos
 
-* Verifique se o conjunto de dados do Analytics no Adobe Experience Platform contém dados para o intervalo de datas que você está investigando.
+* Certifique-se de que o conjunto de dados do Analytics na Adobe Experience Platform contenha dados para o intervalo de datas que você está investigando.
 
 * Certifique-se de que o conjunto de relatórios selecionado no Analytics corresponde ao que foi assimilado na Adobe Experience Platform.
 
@@ -41,7 +41,7 @@ A métrica [Ocorrências](https://experienceleague.adobe.com/docs/analytics/comp
 
 1. Salve este projeto para usá-lo na comparação.
 
-## Etapa 2: Comparar os resultados com [!UICONTROL Total de registros por carimbos de data e hora] no Customer Journey Analytics
+## Etapa 2: comparar os resultados com o [!UICONTROL Total de registros por carimbos de data/hora] no Customer Journey Analytics
 
 Agora compare as [!UICONTROL Ocorrências] no Analytics com o Total de registros por carimbos de data e hora no Customer Journey Analytics.
 
@@ -49,7 +49,7 @@ O Total de registros por carimbos de data e hora deve corresponder à métrica d
 
 >[!NOTE]
 >
->Isso funciona somente para conjuntos de dados de valores médios comuns, não para conjuntos de dados compilados (através do [Costura](/help/stitching/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no Customer Journey Analytics é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no Adobe Analytics, especialmente se a Costura tiver sido ativada.
+>Isso funciona apenas para conjuntos de dados de valores médios regulares, não para conjuntos de dados compilados (via [Compilação](/help/stitching/overview.md)). Observe que considerar a ID de pessoa que está sendo usada no Customer Journey Analytics é essencial para que a comparação funcione. Isso nem sempre é fácil de replicar no Adobe Analytics, especialmente se a Compilação estiver ativada.
 
 1. Nos [Serviços de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=pt-BR) da Adobe Experience Platform, execute a seguinte consulta de [!UICONTROL Total de registros por carimbos de data e hora]:
 
@@ -66,7 +66,7 @@ O Total de registros por carimbos de data e hora deve corresponder à métrica d
    ORDER BY Day; 
    ```
 
-1. Em [Feeds de dados do Analytics](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR), identifique nos dados brutos se algumas linhas foram filtradas pelo Conector de origem do Analytics.
+1. Em [Feeds de dados do Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference), identifique nos dados brutos se algumas linhas foram filtradas pelo Conector de origem do Analytics.
 
    O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) pode filtrar linhas durante a transformação para o esquema XDM. Pode haver vários motivos para que a linha inteira seja imprópria para transformação. Se qualquer um dos campos do Analytics a seguir tiver esses valores, a linha inteira será filtrada.
 
@@ -79,15 +79,15 @@ O Total de registros por carimbos de data e hora deve corresponder à métrica d
    | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53, 63 |
 
-   Para obter mais informações sobre hit\_source, consulte: [Referência da coluna de dados](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=pt-BR). Para obter mais informações sobre page\_event, consulte: [Pesquisa de evento da página](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html).
+   Para obter mais informações sobre hit\_source, consulte: [Referência da coluna de dados](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Para obter mais informações sobre page\_event, consulte: [Pesquisa de evento da página](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event).
 
 1. Se o conector filtrar linhas, retire essas linhas da métrica de [!UICONTROL Ocorrências]. O número resultante deve corresponder ao número de eventos nos conjuntos de dados da Adobe Experience Platform.
 
-## Por que os registros podem ser filtrados ou ignorados durante a assimilação do Adobe Experience Platform
+## Por que os registros podem ser filtrados ou ignorados durante a ingestão da Adobe Experience Platform
 
-Customer Journey Analytics [Conexões](/help/connections/create-connection.md) O permite reunir e associar vários conjuntos de dados com base em uma ID de pessoa comum nos conjuntos de dados. No back-end, aplicamos a desduplicação: a associação externa completa ou união de conjuntos de dados de evento com base em carimbos de data e hora e, em seguida, a associação interna em conjunto de dados de perfil e pesquisa, com base na ID de pessoa.
+As [conexões](/help/connections/create-connection.md) do Customer Journey Analytics permitem reunir e juntar vários conjuntos de dados com base em uma ID de pessoa comum nos conjuntos de dados. No back-end, aplicamos a desduplicação: a associação externa completa ou união de conjuntos de dados de eventos com base em carimbos de data e hora e, em seguida, a associação interna em conjunto de dados de perfil e pesquisa, com base na ID de pessoa.
 
-Estas são algumas das razões pelas quais os registros podem ser ignorados ao assimilar dados do Adobe Experience Platform.
+Estas são algumas das razões pelas quais os registros podem ser ignorados ao ingerir dados da Adobe Experience Platform.
 
 * **Carimbos de data e hora ausentes** - Se os carimbos de data e hora estiverem ausentes dos conjuntos de dados do evento, esses registros serão totalmente ignorados ou desconsiderados durante a assimilação.
 

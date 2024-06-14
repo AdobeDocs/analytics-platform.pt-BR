@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '677'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -25,19 +25,19 @@ Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Cus
 
 >[!TAB Assistente de IA]
 
-O AI Assistant é uma experiência de conversação que permite que os profissionais executem tarefas em um ritmo rápido, sejam conceitos de compreensão, problemas de solução de problemas ou pesquisa de informações. Também permite que não especialistas realizem tarefas especializadas e aumenta a qualidade geral do trabalho.
+O Assistente de IA é uma experiência de conversação que permite que os profissionais executem tarefas em um ritmo rápido, seja entender conceitos, solucionar problemas ou pesquisar informações. Também permite que não especialistas realizem tarefas especializadas e aumenta a qualidade geral do trabalho.
 
 [![imagem](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
 >[!TAB Pesquisas B2B]
 
-Como parte da configuração de uma conexão, você pode transformar conjuntos de dados para esquemas de pesquisa B2B específicos para oferecer melhor suporte a pesquisas baseadas em pessoas em dados B2B.
+Como parte da configuração de uma conexão, você pode transformar conjuntos de dados para esquemas de pesquisa B2B específicos para oferecer um melhor suporte a pesquisas baseadas em pessoas em dados B2B.
 
 [![imagem](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
 
 >[!TAB Campos derivados]
 
-Novas funções de campo derivadas (Matemática, Próximo ou Anterior) e modelos de função adicionais (como Rejeições, Nome amigável do conjunto de dados, Temporada de feriados, Metas mensais, Detecção simples de bot e outros) estão disponíveis.
+Novas funções de campos derivados (Math, Next or Previous) e modelos de função adicionais (como Rejeições, Nome amigável do conjunto de dados, Temporada de feriados, Metas mensais, Detecção de bots simples e outros) estão disponíveis.
 
 [![imagem](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
@@ -146,7 +146,7 @@ Veja como o Customer Journey Analytics se compara ao Adobe Analytics. Além diss
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Descrição do produto Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Descrição do produto Adobe Analytics (complemento Customer Journey Analytics)</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">APIs Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistente de IA</a>
+<a href="https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriais</a> – <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Descrição do produto Customer Journey Analytics</a> – <a href="https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Descrição do produto Adobe Analytics (complemento do Customer Journey Analytics)</a> – <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">APIs do Customer Journey Analytics</a> – <a href="/help/ai-assistant.md">Assistente de IA</a>
 </td>
 <td><strong>Assimilação de dados</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Visão geral</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK da Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK móvel</a> - <a href="/help/data-ingestion/batch.md">Em lote</a> - <a href="/help/data-ingestion/streaming.md">Transmissão</a> - <a href="/help/data-ingestion/sources.md">Origens</a> - <a href="/help/data-ingestion/serverapi.md">API do servidor</a>
 </td>
