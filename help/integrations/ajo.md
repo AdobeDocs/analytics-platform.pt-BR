@@ -4,8 +4,8 @@ description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usand
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
+source-git-commit: 5d89d6c3dae4964bc4085110d7baa51199e27044
+workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ Você pode criar as seguintes dimensões em uma visualização de dados para obt
 | --- | --- | --- |
 | Nome da jornada | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Tipo de componente: dimensão |
 | Nome e versão da jornada | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Tipo de componente: dimensão |
-| Nome do nó da jornada | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Tipo de componente: dimensão |
+| Nome do nó da jornada | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeName` | Tipo de componente: dimensão |
 | Tipo de nó da jornada | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Tipo de componente: dimensão |
 | Nome da campanha | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Tipo de componente: dimensão |
 | Canal | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Tipo de componente: dimensão |
@@ -85,11 +85,11 @@ Você pode criar as seguintes métricas em uma visualização de dados para obte
 | Envios | O número de mensagens aceitas por provedores de email. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `sent` |
 | Reclamações de spam | A contagem de reclamações de spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `spam_complaint` |
 | Cancelamentos de assinaturas | A contagem de cancelamentos de inscrição. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>valores de exclusão e exclusão: igual a `unsubscribe` |
-| Envios de borda | O número de vezes que a rede de borda envia uma mensagem para o SDK da Web ou móvel | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.send` |
-| Exibições de entrada | O número de vezes que uma mensagem na Web ou no aplicativo é mostrada ao usuário | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.display` |
-| Cliques de entrada | A contagem de cliques em mensagens na Web ou no aplicativo | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.interact` |
-| Acionadores no aplicativo | O número de vezes que o mecanismo de decisão sugeriu que a mensagem deve ser exibida. O SDK móvel pode substituir a decisão que reduz o número de exibições reais. | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.trigger` |
-| Descartes no aplicativo | O número de vezes que uma mensagem no aplicativo é removida da interface pelo SDK | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.dismiss` |
+| Envios de borda | O número de vezes que a rede de borda envia uma mensagem para o SDK da Web ou móvel | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.send` | |
+| Exibições de entrada | O número de vezes que uma mensagem na Web ou no aplicativo é mostrada ao usuário | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.display` | |
+| Cliques de entrada | A contagem de cliques em mensagens na Web ou no aplicativo | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.interact` | |
+| Acionadores no aplicativo | O número de vezes que o mecanismo de decisão sugeriu que a mensagem deve ser exibida. O SDK móvel pode substituir a decisão que reduz o número de exibições reais. | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.trigger` | |
+| Descartes no aplicativo | O número de vezes que uma mensagem no aplicativo é removida da interface pelo SDK | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.dismiss` | |
 
 {style="table-layout:auto"}
 
