@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6a77107680b4882a64b01bf1606761d4f6d5a3d1
+source-git-commit: 6f99a732688f59e3950fc9b4336ad5b0434f24a7
 workflow-type: tm+mt
-source-wordcount: '7843'
+source-wordcount: '8377'
 ht-degree: 12%
 
 ---
@@ -593,7 +593,7 @@ Você define um `Trip Duration (bucketed)` campo derivado. Você cria o seguinte
 | [!DNL long trip] |
 
 
-## Mais informações
+## Mais informações {#casewhen-more-info}
 
 O Customer Journey Analytics Adobe Experience Platform usa uma estrutura de contêiner aninhada, modelada de acordo com a configuração [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR) (Experience Data Model). Consulte [Contêineres](../create-dataview.md#containers) e [Filtrar contêineres](../../components/filters/filters-overview.md#filter-containers) para obter mais informações de referência. Esse modelo de contêiner, embora flexível por natureza, impõe algumas restrições ao usar o construtor de regras.
 
@@ -841,6 +841,8 @@ Impede a contagem de um valor várias vezes.
 
 +++ Detalhes
 
+{{release-limited-testing}}
+
 ## Especificações {#deduplicate-io}
 
 | Tipo de dados de entrada | Entrada | Operadores incluídos | Limitações | Saída |
@@ -1022,7 +1024,7 @@ Você define um `Activity Name` campo derivado. Você usa o [!UICONTROL PESQUISA
 
 ![Captura de tela da regra Minúsculas](assets/lookup.png)
 
-## Mais informações
+## Mais informações {#lookup-more-info}
 
 Você pode inserir rapidamente um [!UICONTROL Pesquisa] no construtor de regras, que já contém uma ou mais funções.
 
@@ -1161,6 +1163,8 @@ Há algumas considerações importantes ao trabalhar com números estáticos no 
 
    - Esta fórmula é válida.
      ![Matemática e Mais Informações 5](assets/math-more-info-5.png)
+
+Use a função Math para cálculos baseados em nível de ocorrência. Use o [Resuma](#summarize) função para cálculos baseados em evento, sessão ou escopo de pessoa.
 
 +++
 
@@ -1350,7 +1354,7 @@ Você cria um `Page Identifier` campo derivado. Você usa o [!UICONTROL SUBSTITU
 | customer-journey-analytics.html |
 | adobe-experience-platform.html |
 
-## Mais informações
+## Mais informações {#regex-replace-more-info}
 
 O Customer Journey Analytics usa um subconjunto da sintaxe de regex Perl. As seguintes expressões são suportadas:
 
@@ -1492,6 +1496,75 @@ Você cria um `Second Response` campo derivado para obter o último valor do [!U
 
 +++
 
+<!-- SUMMARIZE -->
+
+### Resumir
+
+Aplica funções do tipo agregação a métricas ou dimensões em níveis de evento, sessão e usuário.
+
++++ Detalhes
+
+{{release-limited-testing}}
+
+## Especificação {#summarize-io}
+
+| Tipo de dados de entrada | Entrada | Operadores incluídos | Limite | Saída |
+|---|---|---|---|---|
+| <ul><li>Sequência de caracteres</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Valor<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></li><li>Resumir métodos</li><li>Escopo<ul><li>Evento</li><li>Sessão</li><li>Pessoa</li></ul></li></ul> | <ul><li>Numérico<ul><li>MAX - retorna o maior valor de um conjunto de valores</li><li>MIN - retorna o menor valor de um conjunto de valores</li><li>MEDIAN - retorna a mediana para um conjunto de valores</li><li>MEAN - retorna a média para um conjunto de valores</li><li>SUM - retorna a soma de um conjunto de valores</li><li>COUNT - retorna o número de valores recebidos</li><li>DISTINCT - retorna o conjunto de valores distintos</li></ul></li><li>Strings<ul><li>DISTINCT - retorna o conjunto de valores distintos</li><li>COUNT DISTINCT - retorna o número de valores distintos</li><li>MAIS COMUM - retorna o valor da string recebido com mais frequência</li><li>LEAST COMMON - retorna o valor da string com menos frequência recebida</li><li>PRIMEIRO - O primeiro valor recebido; aplicável somente para as tabelas de sessão e evento</li><li>LAST - O último valor recebido; aplicável somente para as tabelas de sessão e evento</li></ul></li><li>Datas<ul><li>DISTINCT - retorna o conjunto de valores distintos</li><li>COUNT DISTINCT - retorna o número de valores distintos</li><li>MAIS COMUM - retorna o valor da string recebido com mais frequência</li><li>LEAST COMMON - retorna o valor da string com menos frequência recebida</li><li>PRIMEIRO - O primeiro valor recebido; aplicável somente para as tabelas de sessão e evento</li><li>LAST - O último valor recebido; aplicável somente para as tabelas de sessão e evento</li><li>MAIS CEDO - O primeiro valor recebido (determinado pelo tempo); aplicável somente para as tabelas de sessão e evento</li><li>MAIS RECENTE - O valor mais recente recebido (determinado pelo tempo); aplicável somente para as tabelas de sessão e evento</li></ul></li></ul> | 3 funções por campo derivado | Novo campo derivado |
+
+{style="table-layout:auto"}
+
+## Caso de uso {#summarize-uc}
+
+Você gostaria de categorizar Adicionar à receita do carrinho em três categorias diferentes: Pequeno, Médio e Grande. Isso permite analisar e identificar as características de clientes de alto valor.
+
+### Dados anteriores a {#summarize-uc-databefore}
+
+Suposições:
+
+- Adicionar ao carrinho A receita é coletada como um campo numérico.
+
+Cenários:
+
+- O CustomerABC123 adiciona US$ 35 ao carrinho para o ProductABC e, em seguida, adiciona separadamente o ProductDEF ao carrinho por US$ 75.
+- O CustomerDEF456 adiciona US$ 50 ao carrinho para o ProductGHI e, separadamente, adiciona o ProductJKL ao carrinho por US$ 275.
+- CustomerGHI789 adiciona $500 ao seu carrinho para ProductMNO.
+
+Lógica:
+
+- Se a Receita total adicionada ao carrinho de um visitante for inferior a US$ 150, defina como Pequeno.
+- Se a Receita total adicionada ao carrinho de um visitante for maior que US$ 150, mas menor que US$ 500, defina como Médio.
+- Se a Receita total adicionada ao carrinho de um visitante for maior ou igual a US$ 500, defina como Grande.
+
+Resultados:
+
+- Total de Adição à Receita do Carrinho de US$ 110 para ClienteABC123.
+- Total de receita adicionada ao carrinho de US$ 325 para CustomerDEF456.
+- Total de receita adicionada ao carrinho de US$ 500 para CustomerGHI789.
+
+### Campo derivado {#summarize-uc-derivedfield}
+
+Você cria um `Add To Cart Revenue Size` campo derivado. Você usa o [!UICONTROL RESUMIR] e a função [!UICONTROL Sum] [!UICONTROL Método Resumir] com [!UICONTROL Escopo] definir como [!UICONTROL Person] para somar os valores de [!UICONTROL cart_add] campo. Depois, use um segundo [!UICONTROL CASO QUANDO] regra para dividir o resultado nos tamanhos de categorias da árvore.
+
+![Captura de tela da regra Resumir 1](assets/summarize.png)
+
+
+
+### Dados após {#summarize-uc-dataafter}
+
+| Adicionar ao tamanho da receita do carrinho | Visitantes |
+|---|--:|
+| Pequena | 1 |
+| Médio | 1 |
+| Grande | 1 |
+
+{style="table-layout:auto"}
+
+## Mais informações {#summarize-more-info}
+
+Use a função Resumir para cálculos baseados em evento, sessão ou escopo de pessoa. Use o [Matemática](#math) para cálculos baseados em nível de ocorrência.
+
++++
 
 <!-- TRIM -->
 
@@ -1507,7 +1580,6 @@ Corta espaços em branco, caracteres especiais ou número de caracteres do iníc
 |---|---|---|---|---|
 | <ul><li>Sequência de caracteres</li></ul> | <ul><li>[!UICONTROL Campo]<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></li><li>Cortar espaço em branco</li><li>Cortar caracteres especiais<ul><li>Entrada de caracteres especiais</li></ul></li><li>Cortar da esquerda<ul><li>De <ul><li>Início da string</li><li>Posição<ul><li>Posição #</li></ul></li><li>Sequência de caracteres<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir cadeia de caracteres</li></ul></li></ul></li><li>Para<ul><li>Fim da string</li><li>Posição<ul><li>Posição #</li></ul></li><li>Sequência de caracteres<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir cadeia de caracteres</li></ul></li><li>Extensão</li></ul></li></ul></li><li>Cortar da direita<ul><li>De <ul><li>Fim da string</li><li>Posição<ul><li>Posição #</li></ul></li><li>Sequência de caracteres<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir cadeia de caracteres</li></ul></li></ul></li><li>Para<ul><li>Início da string</li><li>Posição<ul><li>Posição #</li></ul></li><li>Sequência de caracteres<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir cadeia de caracteres</li></ul></li><li>Extensão</li></ul></li></ul></li></ul> | <p>N/D</p> | <p>1 função por campo derivado</p> | <p>Novo campo derivado</p> |
 
-{style="table-layout:auto"}
 
 ## Caso de uso 1 {#trim-uc1}
 
@@ -1713,6 +1785,7 @@ As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 | <p>Próximo ou anterior</p> | <ul><li>3 Funções Next ou Previous por campo derivado</li></ul> |
 | <p>Substituição de regex</p> | <ul><li>1 função Replace de Regex por campo derivado</li></ul> |
 | <p>Dividir</p> | <ul><li>5 Funções de divisão por campo derivado</li></ul> |
+| <p>Resumir</p> | <ul><li>3 Resumir funções por campo derivado</li></ul> |
 | <p>Aparar</p> | <ul><li>1 função Trim por campo derivado</li></ul> |
 | <p>Análise de URL</p> | <ul><li>5 funções de análise de URL por campo derivado</li></ul> |
 
@@ -1733,7 +1806,7 @@ Como exemplo, a regra Classify abaixo usa três operadores.
 ![Captura de tela da regra de classificação 1](assets/classify-1.png)
 
 
-## Mais informações
+## Mais informações {#trim-more-info}
 
 [`Trim`](#trim) e [`Lowercase`](#lowercase) são recursos já disponíveis nas configurações de componente no [Visualizações de dados](../component-settings/overview.md). Usar campos derivados permite combinar essas funções para fazer transformações de dados mais complexas diretamente no Customer Journey Analytics. Por exemplo, você pode usar `Lowercase` para remover a diferenciação entre maiúsculas e minúsculas em um campo de evento, e use [`Lookup`](#lookup) para corresponder o novo campo em minúsculas a um conjunto de dados de pesquisa que tenha somente chaves de pesquisa em minúsculas. Ou você pode usar `Trim` para remover caracteres antes de configurar `Lookup` no novo campo.
 
