@@ -5,10 +5,10 @@ title: Visão geral dos Projetos
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 10751991e3c40cfefac7d32cea0b5cc557133232
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 69%
+source-wordcount: '1342'
+ht-degree: 64%
 
 ---
 
@@ -70,7 +70,7 @@ Em um projeto, o menu fornece opções para gerenciar o projeto, adicionar compo
 
 ### Informações e configurações do projeto {#info-settings}
 
-**[!UICONTROL Espaço de trabalho]** > **[!UICONTROL Projeto]** > **[!UICONTROL Configurações &amp; informações do projeto]** fornecem informações sobre o projeto ativo no momento.
+**[!UICONTROL Workspace]** > **[!UICONTROL Projeto]** > **[!UICONTROL Informações e configurações do projeto]** O fornece informações do projeto ativo no momento.
 
 ![A janela Informações e configurações do projeto.](assets/projectinfo.png)
 
@@ -89,11 +89,19 @@ As configurações incluem:
 
 ## Painel esquerdo {#left-rail}
 
-Em um projeto, [painéis](/help/analysis-workspace/c-panels/panels.md), tabelas, [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) e [componentes] são acessados pelo painel esquerdo. Estes são os componentes do projeto.
+Em um projeto, vários ícones estão disponíveis no painel esquerdo e cada um representa partes importantes de um projeto:
 
-Também é possível acessar visualizações e painéis no [Painel em branco](/help/analysis-workspace/c-panels/blank-panel.md).
+* [Painéis](/help/analysis-workspace/c-panels/panels.md) ![ícone de painéis](assets/panels-icon.png)
 
-Os componentes (Dimensões, Métricas, Filtros, Intervalos de datas) no painel esquerdo estão relacionados à visualização de dados do painel principal. O painel principal terá uma borda azul ao redor dele e a visualização de dados principal será listada na parte superior do painel de componentes.
+* [Visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)![ícone de visualizações](assets/visualizations-icon.png)
+
+* [Componentes](/help/components/overview.md)![ícone componentes](assets/components-icon.png)
+
+* [Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)![ícone do dicionário de dados](assets/data-dictionary-icon.png)
+
+* [Índice](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) ![ícone do sumário](assets/toc-icon.png)
+
+Os componentes (Dimensões, Métricas, Filtros, Intervalos de datas) no painel esquerdo estão relacionados à visualização de dados do painel principal. O painel ativo é identificado pela borda azul que o cerca e a visualização de dados ativa é listada na parte superior do painel de componentes.
 
 ![Os componentes relacionados à visualização de dados do painel ativo para visualização de dados de demonstração intersetorial.](assets/left-rail.png)
 

@@ -4,10 +4,10 @@ title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
-workflow-type: ht
-source-wordcount: '1306'
-ht-degree: 100%
+source-git-commit: 697503bba56f44159df7a2f6a0e60a0a4178266d
+workflow-type: tm+mt
+source-wordcount: '1448'
+ht-degree: 74%
 
 ---
 
@@ -50,7 +50,7 @@ A zona de destino do painel permite aplicar filtros simples e filtros suspensos 
 
 ### Filtros
 
-Arraste e solte quaisquer Filtros do painel esquerdo na área de lançamento do painel para começar a filtrá-lo.
+Arraste e solte quaisquer Filtros do painel esquerdo na área de lançamento do painel para começar a filtrá-lo. Repita esse processo para adicionar mais filtros ao painel. Os filtros são exibidos lado a lado na parte superior do painel.
 
 ![O painel esquerdo mostra as métricas disponíveis e a métrica Cliente móvel arrastada para a zona de destino do painel.](assets/segment-filter.png)
 
@@ -66,29 +66,44 @@ Para obter mais informações, consulte [Filtros rápidos](/help/components/filt
 
 ### Filtros suspensos estáticos
 
-Os filtros suspensos permitem interagir com os dados de forma controlada. Por exemplo, é possível adicionar um filtro suspenso de Tipos de dispositivo móvel para que você possa filtrar o painel por Tablet, Celular ou Desktop.
+Os filtros suspensos permitem interagir com os dados de forma controlada. Por exemplo, você pode adicionar um filtro suspenso para Tipos de dispositivo móvel para poder filtrar o painel por Tablet, Celular ou Desktop.
 
 Filtros suspensos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes filtros de País aplicados, é possível consolidar todas as versões em um único projeto e adicionar um filtro suspenso de País.
 
 ![Filtros suspensos estáticos destacando o filtro “Direto” do canal de mercado. ](assets/dropdown-filter-intro.png)
 
-Para criar um filtro suspenso estático:
+#### Criar filtros suspensos estáticos
 
-* Para filtros suspensos que utilizam itens de dimensão, clique no ícone de seta para a direita ao lado da dimensão desejada no painel esquerdo. Essa ação expõe todos os itens de dimensão disponíveis. Selecione vários itens de dimensão dessa lista usando `[Shift + Click]` ou `[Ctrl + Click]`; em seguida, solte-os na zona de destino do painel **enquanto mantém a tecla`[Shift]`** pressionada.
-* Para filtros suspensos que utilizam outros componentes, como métricas, filtros ou intervalos de datas, selecione vários componentes usando `[Shift + Click]` ou `[Ctrl + Click]`. Solte o item selecionado na zona de destino do painel **enquanto mantém a tecla`[Shift]`** pressionada. Todos os tipos de componentes são tratados como filtros neste contexto.
-* Um único filtro suspenso pode conter apenas um tipo de componente. Se você incluir vários tipos de componentes na seleção, um filtro suspenso separado será criado para cada tipo de componente. Por exemplo, se você incluir métricas e itens de dimensão na seleção, dois filtros suspensos separados serão criados. Um filtro suspenso inclui os itens de dimensão e o outro inclui as métricas.
+* Para filtros suspensos usando itens de dimensão, selecione uma única dimensão no painel esquerdo e solte-a na zona de destino do painel **ao manter`[Shift]`**. Isso cria um filtro suspenso com todos os itens de dimensão associados a essa dimensão.
 
-Selecione uma das opções na lista suspensa para alterar os dados no painel. Também é possível optar por não filtrar os dados do painel ao selecionar **[!UICONTROL Nenhum filtro]**.
+  Ou, se quiser que o filtro suspenso inclua apenas itens de dimensão específicos associados a uma dimensão, clique no ícone de seta para a direita ao lado da dimensão desejada no painel esquerdo. Essa ação expõe todos os itens de dimensão disponíveis. Selecione vários itens de dimensão dessa lista usando `[Shift + Click]` ou `[Ctrl + Click]`, em seguida, solte-os na área de destino do painel enquanto mantém pressionada a tecla `[Shift]`.
 
-![A janela Painel com o campo de segmento Cliente móvel disponível para se soltar um filtro suspenso estático. ](assets/create-dropdown.png)
+* Para filtros suspensos usando um único tipo de componente (por exemplo, somente dimensões ou somente filtros ou somente métricas), selecione vários itens do mesmo tipo no painel esquerdo usando `[Shift + Click]` ou `[Ctrl + Click]`, em seguida, solte-os na área suspensa do painel **ao manter`[Shift]`**.
+
+  Um único filtro suspenso é criado com os componentes selecionados.
+
+* Para filtros suspensos usando uma combinação de tipos de componentes (como 2 métricas e 3 filtros), selecione vários componentes usando `[Shift + Click]` ou `[Ctrl + Click]`. Solte o item selecionado na zona de destino do painel **enquanto mantém a tecla`[Shift]`** pressionada. Todos os tipos de componentes são tratados como filtros suspensos separados nesse contexto. Por exemplo, se você incluir métricas e itens de dimensão na seleção, dois filtros suspensos separados serão criados: um filtro suspenso inclui itens de dimensão e o outro inclui métricas.
+
+  ![A janela Painel com o campo de segmento Cliente móvel disponível para se soltar um filtro suspenso estático. ](assets/create-dropdown.png)
 
 Clicar com o botão direito em um filtro suspenso apresenta as seguintes opções:
 
-* **[!UICONTROL Adicionar rótulo]**: ao adicionar um filtro suspenso a um projeto, um rótulo é automaticamente definido para o nome do componente. Se você excluir o rótulo, poderá adicioná-lo novamente com essa opção.
+* **[!UICONTROL Menu suspenso Excluir]**: remove o filtro suspenso do painel.
 * **[!UICONTROL Excluir rótulo]**: remove o texto acima de um filtro suspenso.
-* **[!UICONTROL Excluir filtro suspenso]**: remove o filtro suspenso do painel.
+* **[!UICONTROL Adicionar rótulo]**: ao adicionar um filtro suspenso a um projeto, um rótulo é automaticamente definido para o nome do componente. Se você excluir o rótulo, poderá adicioná-lo novamente com essa opção.
+* **[!UICONTROL Exigir seleção]**: requer a definição de um filtro no painel.
 
 [Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-panels-to-organize-your-analysis-workspace-projects.html?lang=pt-BR) para saber mais sobre como adicionar filtros suspensos ao seu projeto.
+
+#### Usar filtros suspensos estáticos
+
+Os usuários podem usar o menu suspenso de qualquer uma das seguintes maneiras para filtrar o painel:
+
+* Aplique um único filtro ao painel selecionando o filtro no menu suspenso.
+
+* Aplique vários filtros ao painel selecionando mais de um filtro no menu suspenso. O painel é filtrado para incluir qualquer um dos filtros selecionados.
+
+  ![Selecionar vários filtros](assets/dropdown-filter-multiselect.png)
 
 ### Filtros suspensos dinâmicos
 

@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: cf399df3a8043f5ec9fe723a531bf2f8af68799a
-workflow-type: ht
-source-wordcount: '1093'
-ht-degree: 100%
+source-git-commit: cef43e45a647674c6f2472e9402224b5cbc617da
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 98%
 
 ---
 
@@ -105,6 +105,7 @@ ht-degree: 100%
       + [Visão geral dos Projetos](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Criar projetos](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Salvar projetos](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [Sumário do projeto](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Pastas no Espaço de trabalho {#workspace-folders}
          + [Sobre pastas no Espaço de trabalho](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Criar pastas e subpastas](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -120,6 +121,7 @@ ht-degree: 100%
       + [Gerenciar fontes de dados](../analysis-workspace/visualizations/t-sync-visualization.md)
       + Tabela de forma livre {#freeform-table}
          + [Tabela de forma livre](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Criar hiperlinks para dimensões em uma tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Configurações de coluna e linha {#column-row-settings}
             + [Configurações de coluna](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Configurações de linha](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)

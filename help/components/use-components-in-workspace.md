@@ -3,10 +3,11 @@ description: Saiba como adicionar componentes a um projeto no Analysis Workspace
 title: Usar componentes no Analysis Workspace
 feature: Components
 role: User
-source-git-commit: b02a3954e7b531caabfbea1f7df4e322eb4af741
+exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
+source-git-commit: 697503bba56f44159df7a2f6a0e60a0a4178266d
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 18%
+source-wordcount: '849'
+ht-degree: 16%
 
 ---
 
@@ -32,11 +33,15 @@ Para obter informações gerais sobre os tipos de componentes que podem ser adic
 
    ![](assets/build-components.png)
 
-1. Role para ou procure o componente que deseja adicionar e arraste-o para um painel ou visualização em seu projeto.
+1. Role até encontrar ou pesquise o componente que deseja adicionar, e arraste-o até um painel ou visualização dentro do projeto.
 
-   Por exemplo, você pode arrastar um filtro para a área de soltar do filtro em um cabeçalho do painel.
+1. (Opcional) Arraste um componente para a área de destino do filtro em um cabeçalho do painel.
 
-   ![soltar um filtro na área designada](assets/filter-dropzone.png)
+   Os filtros se aplicam a todo o conteúdo do painel.
+
+   Para obter informações sobre como usar a área de soltar do filtro em um painel para filtrar seu painel, consulte [Área para soltar](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Visão geral dos painéis](/help/analysis-workspace/c-panels/panels.md).
+
+   ![soltar um filtro na área de soltar](assets/filter-dropzone.png)
 
 1. Para obter informações mais detalhadas, continue com uma das seções a seguir, dependendo do tipo de componente que você está adicionando:
 
@@ -44,7 +49,7 @@ Para obter informações gerais sobre os tipos de componentes que podem ser adic
 
    * [Adicionar métricas a um projeto](#add-metrics-to-a-project)
 
-   * [Adicionar filtro a um projeto](#add-filters-to-a-project)
+   * [Adicionar filtros a um projeto](#add-filters-to-a-project)
 
    * [Adicionar intervalos de datas a um projeto](#add-date-ranges-to-a-project)
 
@@ -61,6 +66,10 @@ Para obter informações gerais sobre os tipos de componentes que podem ser adic
      ![Adicionar dimensões a um projeto](assets/add-dimensions.png)
 
    * Arraste uma ou mais dimensões do painel esquerdo para a área suspensa de filtro para criar um filtro ad hoc, conforme descrito em [Adicionar filtros a um projeto](#add-filters-to-a-project).
+
+1. (Opcional) Você pode detalhar dimensões e itens de dimensão no Analysis Workspace com outros componentes.
+
+   Para obter mais informações, consulte [Detalhamento de dimensões no Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
 Para obter mais informações sobre como usar dimensões no Analysis Workspace, consulte [Visualizar dimensões](/help/components/dimensions/view-dimensions.md), [Detalhar dimensões](/help/components/dimensions/t-breakdown-fa.md), e [Dimensões de separação de tempo](/help/components/dimensions/time-parting-dimensions.md).
 
@@ -90,31 +99,23 @@ Para obter mais informações sobre métricas, consulte [Visão geral das métri
 
 [Filtros](/help/components/filters/filters-overview.md) O permite identificar subconjuntos de visitantes com base em características ou interações específicas.
 
-Para adicionar um filtro a um projeto no Analysis Workspace:
+Você pode usar filtros no Analysis Workspace de qualquer uma das seguintes maneiras:
 
-1. Comece a adicionar um filtro ao seu projeto no Analysis Workspace, conforme descrito em [Começar a adicionar componentes a um projeto](#begin-adding-components-to-a-project).
+### Adicionar filtros a um painel
 
-1. Escolha um dos seguintes métodos para começar a filtrar o painel:
+Ao adicionar filtros a um painel, eles se aplicam a todo o conteúdo do painel.
 
-   * Arraste um filtro individual do painel esquerdo para a área de soltar do filtro.
+Para obter informações sobre como usar a área de soltar do filtro em um painel para filtrar seu painel, consulte [Área para soltar](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Visão geral dos painéis](/help/analysis-workspace/c-panels/panels.md).
 
-     ![soltar um filtro na área designada](assets/filter-dropzone.png)
+### Adicionar filtros a uma coluna em uma tabela de forma livre
 
-   * Mantenha pressionada a tecla Shift ou Ctrl para selecionar vários filtros no painel esquerdo e, em seguida, mantenha pressionada a tecla Shift enquanto os solta na área de soltar dos filtros.
+Ao adicionar filtros a uma coluna em uma tabela de forma livre, os filtros se aplicam a todo o conteúdo na coluna da tabela.
 
-     ![soltar vários filtros na área designada](assets/filter-dropzone-multiple.png)
+### Usar filtros ao criar métricas calculadas
 
-     Isso cria um menu suspenso que permite que os usuários do painel escolham o filtro que desejam aplicar. O menu suspenso contém uma [!UICONTROL **Sem filtro**] opção que os usuários podem selecionar, o que deixa o painel não filtrado.
+No Criador de métrica calculada, é possível aplicar filtros em suas definições de métricas.
 
-     Você pode selecionar o (x) para remover qualquer opção do menu suspenso. Se você remover a variável [!UICONTROL **Sem filtro**] então, um filtro é necessário.
-
-   * Crie filtros ad hoc arrastando componentes que não são de filtros até a área designada. Isso pode economizar o tempo e o esforço de acessar o Construtor de filtros. Os filtros criados dessa maneira são definidos automaticamente como filtros de nível de ocorrência. Essa definição pode ser modificada clicando no ícone de informações (i) ao lado do filtro e, em seguida, no ícone de edição em forma de lápis e editando-a no Construtor de filtros.
-
-     Os filtros ad hoc são um tipo de filtro rápido e são exclusivos ao projeto. Eles não aparecem no painel esquerdo, a menos que você os torne públicos.
-
-     Para obter mais informações, consulte [Filtros rápidos](/help/components/filters/quick-filters.md).
-
-Para obter mais informações sobre como usar a área de soltar do filtro em um painel para filtrar seu painel, consulte [Área para soltar](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Visão geral dos painéis](/help/analysis-workspace/c-panels/panels.md).
+Para obter mais informações, consulte [Métricas filtradas](/help/components/calc-metrics/cm-workflow/metrics-with-segments.md).
 
 ## Adicionar intervalos de datas a um projeto
 
