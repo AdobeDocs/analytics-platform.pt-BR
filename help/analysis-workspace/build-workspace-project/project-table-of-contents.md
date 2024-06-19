@@ -4,16 +4,17 @@ keywords: Analysis Workspace
 title: Sumário do projeto
 feature: Workspace Basics
 role: User
-source-git-commit: acd993c97ee396e7674729e7cfaa489844f242b7
+exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
+source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '135'
 ht-degree: 1%
 
 ---
 
 # Sumário do projeto
 
-Um índice está disponível em cada projeto. Assim, você pode alternar rapidamente entre painéis e visualizações no projeto. Isso é especialmente útil ao visualizar projetos maiores que contêm muitos painéis e visualizações.
+Você pode exibir um índice em cada projeto no Analysis Workspace, permitindo mover-se rapidamente entre quaisquer painéis e visualizações existentes no projeto. Isso é especialmente útil ao visualizar projetos maiores que contêm muitos painéis e visualizações.
 
 Para exibir o índice de um projeto:
 
@@ -21,6 +22,8 @@ Para exibir o índice de um projeto:
 
 1. Na navegação à esquerda, selecione o ícone de sumário ![ícone do sumário](assets/toc-icon.png).
 
-   O índice do projeto é exibido e expandido.
+   O índice do projeto é exibido e cada painel é expandido por padrão.
 
-1. Clique em uma seção no índice para ir para um painel ou visualização no projeto.
+   ![Sumário do projeto expandido](assets/project-toc-expanded.png)
+
+1. No índice, selecione uma visualização para acessá-la dentro do projeto.

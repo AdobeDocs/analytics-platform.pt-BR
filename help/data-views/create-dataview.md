@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 161dbfe828f83899ae2652513fbb90c21634becc
+source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1714'
 ht-degree: 85%
 
 ---
@@ -56,7 +56,7 @@ Fornece as configurações aplicáveis ao usar o Adobe Journey Optimizer além d
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL **Definir como visualização de dados padrão no Adobe Journey Optimizer**] | Essa opção de configuração padroniza os relatórios no Journey Optimizer e no Customer Journey Analytics. Ele também permite executar análise avançada dos dados do Adobe Journey Optimizer no Customer Journey Analytics (selecionando o [!UICONTROL **Analisar no CJA**] enquanto estiver no Journey Optimizer).<p>Para executar esse tipo de análise, o Journey Optimizer precisa acessar uma visualização de dados do Customer Journey Analytics.<p>Habilite essa opção para tornar essa a visualização de dados padrão usada nos relatórios do Journey Optimizer.</p><p>Essa opção de configuração automaticamente:</p><ul><li>Configura todos os conjuntos de dados do Journey Optimizer necessários na conexão associada no Customer Journey Analytics para uso com o Journey Optimizer.</li><li>Cria um conjunto de métricas e dimensões do Journey Optimizer na visualização de dados (incluindo campos derivados e métricas calculadas). Os rótulos de contexto são definidos automaticamente em todas essas métricas e dimensões.<!--do we need to provide a list somewhere? See https://wiki.corp.adobe.com/display/CJM/Required+Metrics+and+Dimensions--></li><p>**Nota:** Se necessário, você pode fazer personalizações adicionais e manuais nos conjuntos de dados, dimensões ou métricas disponíveis nas visualizações de dados que você usa para Journey Optimizer e Customer Journey Analytics, conforme descrito em [Integrar o Adobe Journey Optimizer com o Adobe Customer Journey Analytics](/help/integrations/ajo.md). </p></ul><p>É possível alterar a visualização de dados padrão posteriormente, mas isso pode alterar os dados de relatórios do Journey Optimizer. Se você optar por desativá-la depois de ativá-la, será solicitado a selecionar uma nova visualização de dados padrão.</p> |
+| [!UICONTROL **Definir como visualização de dados padrão no Adobe Journey Optimizer**] | Essa opção de configuração padroniza os relatórios no Journey Optimizer e no Customer Journey Analytics. Ele também permite executar análise avançada dos dados do Adobe Journey Optimizer no Customer Journey Analytics (selecionando o [!UICONTROL **Analisar no CJA**] enquanto estiver no Journey Optimizer).<p>Para executar esse tipo de análise, o Journey Optimizer precisa acessar uma visualização de dados do Customer Journey Analytics.<p>Habilite essa opção para tornar essa a visualização de dados padrão usada nos relatórios do Journey Optimizer.</p><p>Essa opção de configuração automaticamente:</p><ul><li>Configura todos os conjuntos de dados do Journey Optimizer necessários na conexão associada no Customer Journey Analytics para uso com o Journey Optimizer.</li><li>Cria um conjunto de métricas e dimensões do Journey Optimizer na visualização de dados (incluindo campos derivados e métricas calculadas). Os rótulos de contexto são definidos automaticamente em todas essas métricas e dimensões.<p>**Nota:** Se necessário, você pode fazer personalizações adicionais e manuais nos conjuntos de dados, dimensões ou métricas disponíveis nas visualizações de dados que você usa para Journey Optimizer e Customer Journey Analytics, conforme descrito em [Integrar o Adobe Journey Optimizer com o Adobe Customer Journey Analytics](/help/integrations/ajo.md). </p></li></ul><p>É possível alterar a visualização de dados padrão posteriormente, mas isso pode alterar os dados de relatórios do Journey Optimizer. Se você optar por desativar essa opção depois que ela for ativada, será solicitado que você selecione uma nova visualização de dados padrão.</p> |
 
 {style="table-layout:auto"}
 
