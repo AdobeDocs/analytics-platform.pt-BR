@@ -4,10 +4,10 @@ title: Baixar dados de Customer Journey Analytics
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: a3fc89ed08102d57ce3cfaadde96ade843cd8f8b
+source-git-commit: cd4722cc2eb95d7d5e4000361c8f96a30a3589e9
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 72%
+source-wordcount: '1194'
+ht-degree: 64%
 
 ---
 
@@ -18,6 +18,18 @@ Você pode fazer download dos dados do Customer Journey Analytics na sua estaç�
 Estão também disponíveis outros métodos de exportação de dados de Customer Journey Analytics, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Baixar como CSV ou PDF {#download-project}
+
+Considere o seguinte ao baixar projetos:
+
+* Ao baixar projetos como CSV ou PDF, o projeto pode ser salvo ou não ao solicitar um download do projeto. No entanto, somente os projetos salvos podem ser [agendados](/help/analysis-workspace/export/t-schedule-report.md).
+
+* Ao baixar projetos como um PDF:
+   * Os downloads podem levar vários minutos para serem exportados porque o projeto é executado novamente em servidores Adobe antes da renderização no formato PDF. Recomendamos não sair do projeto até que o PDF seja baixado no navegador. No entanto, você pode continuar fazendo alterações no projeto enquanto espera. Se um PDF demorar mais de 5 minutos para ser renderizado, você será solicitado a enviá-lo por email.
+   * Os downloads são renderizados como uma única página sem paginação aplicada.
+   * As renderizações de PDF contêm o que está na página no Espaço de trabalho. Se um projeto tiver visualizações e painéis com tamanhos personalizados, é necessário alterá-los para terem tamanhos automáticos (botão no canto superior direito) para que não haja truncamento de conteúdo.
+   * Qualquer [hiperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) que existem nas tabelas de forma livre não estão funcionais no PDF baixado.
+
+Para baixar um projeto como um arquivo CSV ou PDF:
 
 1. Siga um destes procedimentos, dependendo do formato em que você deseja que o download esteja:
 
@@ -32,13 +44,6 @@ Estão também disponíveis outros métodos de exportação de dados de Customer
    ![O menu suspenso Projeto com as opções Baixar CSV e Baixar PDF realçadas.](assets/download-project.png)
 
 1. (Condicional) Se você optar por baixar um PDF, uma mensagem será exibida depois que o projeto estiver pronto para ser baixado. Selecione [!UICONTROL **Download**].
-
-Para downloads de projetos, lembre-se:
-
-* O projeto pode ser salvo ou não ao solicitar um download do projeto. No entanto, somente os projetos salvos podem ser [agendados](/help/analysis-workspace/export/t-schedule-report.md).
-* Os PDFs baixados no navegador podem levar vários minutos para serem exportados porque o projeto é executado novamente em servidores da Adobe antes da renderização no formato PDF. Recomendamos não sair do projeto até que o PDF seja baixado no navegador. No entanto, você pode continuar fazendo alterações no projeto enquanto espera. Se um PDF demorar mais de 5 minutos para ser renderizado, você será solicitado a enviá-lo por email.
-* Os downloads de PDF são renderizados como uma página única sem paginação aplicada.
-* Quando um projeto é renderizado para PDF, renderizamos o que está na página. Se um projeto tiver visualizações e painéis com tamanhos personalizados, é necessário alterá-los para terem tamanhos automáticos (botão no canto superior direito) para que não haja truncamento de conteúdo.
 
 ## Copiar para a área de transferência (tecla de atalho: Ctrl+C) {#copy-data}
 

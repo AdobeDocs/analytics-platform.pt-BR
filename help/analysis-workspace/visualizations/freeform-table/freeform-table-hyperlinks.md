@@ -3,9 +3,10 @@ title: Criar hiperlinks em uma tabela de forma livre no Analysis Workspace
 description: Saiba como criar hiperlinks para itens de dimensão em uma tabela de forma livre no Analysis Workspace
 feature: Visualizations
 role: User
-source-git-commit: 433aabe6785527642db6b03ca54bd050323f2b70
+exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
+source-git-commit: 0c83d64a2ab3d23f92bc804092fc507479418052
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1730'
 ht-degree: 0%
 
 ---
@@ -35,6 +36,8 @@ Considere o seguinte ao criar hiperlinks para itens de dimensão:
   Se você criar um hiperlink com um URL inválido ou criar um hiperlink que faça referência a um item de dimensão que não tem um valor de URL (fazendo referência ao item de dimensão diretamente ou usando a variável `$value` ou `$breakdown` ), os usuários que clicarem no hiperlink verão uma mensagem de erro informando que o URL é inválido.
 
 * Os hiperlinks criados para um único item de dimensão substituem os hiperlinks criados na dimensão.
+
+* Os hiperlinks não são funcionais no [arquivos PDF baixados](/help/analysis-workspace/export/download-send.md).
 
 Para criar hiperlinks para um ou mais itens de dimensão:
 
@@ -130,4 +133,3 @@ Para remover hiperlinks de itens de dimensão:
    O hiperlink é removido do único item de dimensão (se você tiver selecionado um único item de dimensão) ou de todos os itens de dimensão (se você tiver selecionado o nome da dimensão no cabeçalho da coluna de dimensão).
 
 1. [Salve o projeto](/help/analysis-workspace/build-workspace-project/save-projects.md) para salvar as alterações.
-
