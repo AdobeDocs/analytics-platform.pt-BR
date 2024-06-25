@@ -4,7 +4,7 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: cfdbbacc1c6f280e8959513d8073cd17c8699962
+source-git-commit: 81ad9a41f1fa323f2e0149ce634904ceb1bc3198
 workflow-type: tm+mt
 source-wordcount: '3731'
 ht-degree: 73%
@@ -24,7 +24,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Transformar conjuntos de dados para pesquisas B2B | Adição de documentação sobre como oferecer suporte [pesquisas com base em pessoas em dados B2B](/help/connections//transform-datasets-b2b-lookups.md) (incluindo contas, oportunidades, listas de marketing e campanhas) usando a transformação de conjuntos de dados de pesquisa B2B. |
 | Funções de campo derivadas e modelos de função | Adição de documentação sobre as funções adicionais de campo derivadas ([Matemática](/help/data-views/derived-fields/derived-fields.md#math), [Próximo ou Anterior](/help/data-views/derived-fields/derived-fields.md#next-or-previous)) e [modelos de função](/help/data-views/derived-fields/derived-fields.md#function-templates). |
 | **Maio de 2024** | |
-| Integração do Target | Adicionado [artigo para a seção de integração Adobe](/help/integrations/cja4t.md) sobre como integrar o Target ao Customer Journey Analytics. |
+| Integração do Target | Adicionado [artigo para a seção de integração Adobe](/help/integrations/at.md) sobre como integrar o Target ao Customer Journey Analytics. |
 | Informações necessárias ao exportar relatórios de Customer Journey Analytics para a Google Cloud Platform enquanto usa restrições de política da organização | Adição da ID de organização da Google Cloud Platform de propriedade do Adobe à [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md) documentação para exportar relatórios de Customer Journey Analytics para a Google Cloud Platform. <p>Essas informações são necessárias somente para organizações que estejam usando as [Restrições de política da organização](https://cloud.google.com/storage/docs/org-policy-constraints) na Google Cloud Platform.</p> |
 | Documentação sobre a adição de componentes a projetos | Adição de informações gerais sobre como [adicionar os vários tipos de componente a projetos no Analysis Workspace](/help/components/use-components-in-workspace.md). |
 | Casos de uso da exportação de dados | Conjunto de novos artigos que descrevem [casos de uso da exportação de dados](/help/use-cases/data-export/overview.md) e como usar as funcionalidades Experience Platform e Customer Journey Analytics para implementar esses casos de uso |
@@ -64,7 +64,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Dezembro de 2023** | |
-| Centros de dados | Adição de um artigo sobre o Customer Journey Analytics [locais de hospedagem](../technotes/data-centers.md). |
+| Data centers | Adição de um artigo sobre o Customer Journey Analytics [locais de hospedagem](../technotes/data-centers.md). |
 | Medidas de proteção | Adição do Customer Journey Analytics de listagem de artigo [grades de proteção](../technotes/guardrails.md). |
 | Atualizações de conversão de moeda | Esclarecimento de documentação sobre como [configurar conversão de moeda](/help/data-views/component-settings/format.md). |
 | Atualizações na documentação da Detecção de anomalias | A documentação da Detecção de anomalias estava localizada anteriormente em uma seção sobre o Virtual Analyst. Foram feitas as seguintes alterações: <ul><li>O termo Virtual Analyst foi removido da documentação.</li><li>A seção sobre [Detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) foi movida para diretamente abaixo da seção do Analysis Workspace.</li></ul> |
