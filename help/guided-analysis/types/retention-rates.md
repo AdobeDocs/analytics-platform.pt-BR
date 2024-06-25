@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 6b8d9abf7d807a1e19aa86386eb2dae9bb18f472
+source-git-commit: b0fd55a289145aa7946ec6c4f60da5921125319c
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1232'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 2%
 A variável **[!UICONTROL Taxas de retenção]** a visualização mede como os usuários continuam a usar seu produto ao longo do tempo, o que pode ajudá-lo a entender sua adequação ao mercado do produto. A análise conta os usuários com base em dois eventos importantes:
 
 * Evento de início: o evento usado para qualificar usuários para inclusão na análise.
-* Evento de retorno: os eventos que um usuário deve participar para contar como um usuário recorrente na análise.
+* Evento de retorno: um ou mais eventos que um usuário deve participar para contar como um usuário recorrente na análise.
 
-Nessa exibição, o eixo x do gráfico representa o tempo decorrido desde o evento inicial de um usuário, e o eixo y representa o percentual de usuários que interagem com o(s) evento(s) de retorno. É possível visualizar a retenção e o abandono entre durações, e as durações exibidas podem ser personalizadas por meio das configurações de query. Abaixo do gráfico, uma tabela fornece dados agregados com a opção para mostrar coortes individuais, que são um grupo de pessoas que fizeram o evento inicial na mesma data.
+Nesta exibição, o eixo x do gráfico representa o tempo decorrido desde o evento inicial de um usuário, e o eixo y representa o percentual de usuários que interagem com um ou mais eventos de retorno. É possível visualizar a retenção e o abandono entre durações, e as durações exibidas podem ser personalizadas por meio das configurações de query. Abaixo do gráfico, uma tabela fornece dados agregados com a opção para mostrar coortes individuais, que são um grupo de pessoas que fizeram o evento inicial na mesma data.
 
-![Captura de tela Taxas de retenção](../assets/retention-rates.png){style="border:1px solid gray"}
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
 ## Casos de uso
 
@@ -36,15 +36,15 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **[!UICONTROL Iniciar evento]**: os critérios do evento que um usuário deve utilizar para se qualificar para inclusão na análise. Os usuários que interagem com o evento de início são contados na coluna &quot;Usuários&quot; da tabela. Isso serve como denominador das taxas de retenção exibidas. Há suporte para um evento e filtros de propriedade podem ser aplicados conforme necessário. Por padrão, o evento de início e retorno são vinculados, o que significa que um usuário deve realizar o evento selecionado uma vez para ser incluído na coorte e, em seguida, ser contado novamente como um usuário recorrente. No menu Mais, é possível desvincular os eventos de início e retorno se desejar que a ação de retorno seja diferente da ação de inclusão.
+* **[!UICONTROL Iniciar evento]**: os critérios do evento que um usuário deve utilizar para se qualificar para inclusão na análise. Os usuários que interagem com o evento de início são contados na coluna &quot;Usuários&quot; da tabela. Esse evento serve como denominador das taxas de retenção exibidas. Há suporte para um evento e filtros de propriedade podem ser aplicados conforme necessário. Por padrão, o evento de início e retorno são vinculados, o que significa que um usuário deve realizar o evento selecionado uma vez para ser incluído na coorte e, em seguida, ser contado novamente como um usuário recorrente. No menu Mais, é possível desvincular os eventos de início e retorno se desejar que a ação de retorno seja diferente da ação de inclusão.
 * **[!UICONTROL Eventos de retorno]**: os critérios de evento que um usuário deve utilizar para contar como usuários recorrentes nos intervalos de duração. Você pode selecionar até três eventos de retorno para comparar a retenção.
 * **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos usuários retidos. As opções incluem: 
-   * **[!UICONTROL Métrica]**: mostre o número de [!UICONTROL Usuários] ou o [!UICONTROL Porcentagem de usuários] retidas. O denominador do percentual de usuários retidos é o número de usuários incluídos no coorte, sendo o mesmo em todos os intervalos de duração.
+   * **[!UICONTROL Métrica]**: mostre o número de [!UICONTROL Usuários] ou o [!UICONTROL Porcentagem de usuários] retidas. O denominador para o percentual de usuários retidos é o número de usuários incluídos na coorte e é o mesmo em todos os intervalos de duração.
    * **[!UICONTROL Retornando]**: permite controlar como os usuários recorrentes são contados. As opções incluem: 
-      * **[!UICONTROL Em ou depois de]**: geralmente chamada de retenção &quot;não vinculada&quot;, essa opção conta um usuário se ele retornar em ou após a duração especificada. Por exemplo, no dia 7 ou em qualquer momento depois do dia 7. Essa opção é útil para mostrar como os usuários continuam a se envolver e, como resultado, gerará uma curva de retenção mais suave.
-      * **[!UICONTROL Em exatamente]**: geralmente chamada de retenção &quot;vinculada&quot;, essa opção conta um usuário se ele retornar dentro da duração especificada exatamente. Por exemplo, exatamente no dia 7. Essa opção é útil para mostrar como os usuários retornam em intervalos específicos e gerará uma curva de retenção com mais ondulação como resultado. Observação: a análise de coorte no Analysis Workspace usa a contagem &quot;exatamente&quot; como base para sua análise.
+      * **[!UICONTROL Em ou depois de]**: geralmente chamada de retenção &quot;não vinculada&quot;, essa opção conta um usuário se ele retornar em ou após a duração especificada. Por exemplo, no dia 7 ou em qualquer momento depois do dia 7. Essa opção é útil para mostrar como os usuários continuam a se envolver e gera uma curva de retenção mais suave como resultado.
+      * **[!UICONTROL Em exatamente]**: geralmente chamada de retenção &quot;vinculada&quot;, essa opção conta um usuário se ele retornar dentro da duração especificada exatamente. Por exemplo, exatamente no dia 7. Essa opção é útil para mostrar como os usuários retornam em intervalos de tempo específicos e gera uma curva de retenção com mais ondulação como resultado. Observação: a análise de coorte no Analysis Workspace usa a contagem &quot;exatamente&quot; como base para sua análise.
    * **[!UICONTROL Each]**: o período que você deseja que cada período de duração seja. As opções incluem: 
-      * **[!UICONTROL Dia/semana/mês]**: as opções disponíveis dependem do intervalo de datas selecionado. Essas opções são idênticas às opções **[!UICONTROL Interval]** ao selecionar o intervalo de datas, e atualizará essa configuração automaticamente.
+      * **[!UICONTROL Dia/semana/mês]**: as opções disponíveis dependem do intervalo de datas selecionado. Essas opções são idênticas às opções **[!UICONTROL Interval]** ao selecionar o intervalo de datas e atualiza essa configuração automaticamente.
       * **[!UICONTROL Colchetes personalizados]**: esta opção está disponível somente para a configuração &quot;Em cada&quot;. Isso permite que você conte os usuários em um período maior; por exemplo, Dia 7-10, em vez de somente Dia 7.
    * **[!UICONTROL Configurações de duração]**: permite controlar os períodos de duração exibidos no gráfico e na tabela. Uma duração é o período após o evento de início em que o evento de retorno ocorreu. Nota: Os usuários qualificados para períodos de duração são baseados no tempo decorrido, não em dias do calendário. Por exemplo, se um usuário se qualificar para um evento às 23h55 do dia 6 de setembro e, em seguida, se qualificar para um evento de retorno às 12h05 do dia 7 de setembro, ele não aparecerá no intervalo de duração de um dia. Devem decorrer 24 horas antes de o usuário se qualificar para o período de duração de 1 dia. Os intervalos de duração disponíveis dependem do intervalo de datas definido.
       * **[!UICONTROL Durações automáticas]** O define automaticamente os intervalos de duração com base na duração do intervalo de datas e na proximidade do dia atual em que o intervalo de datas está.
