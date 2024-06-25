@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 172d80a832356b59df875336c15865c9bacdd837
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
 source-wordcount: '2536'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -58,14 +58,14 @@ Sim. A [compilação](../stitching/overview.md) examina os dados do usuário de 
 
 +++**Como a “repetição” funciona na compilação?**
 
-A compilação “repete” dados com base em identificadores únicos que foram memorizados. A repetição tem como objetivo compilar eventos inicialmente não autenticados de dispositivos que foram identificados durante esse período. [Saiba mais](../stitching/explained.md)
+A compilação “repete” dados com base em identificadores únicos que foram memorizados. A repetição tem como objetivo compilar eventos inicialmente não autenticados de dispositivos que foram identificados durante esse período. [Saiba mais](../stitching/overview.md)
 
 +++
 
 
 +++**Como funciona a compilação de dados históricos (preenchimento retroativo)?**
 
-Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento. [Saiba mais](../stitching/explained.md)
+Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento. [Saiba mais](../stitching/overview.md)
 
 +++
 
@@ -174,9 +174,9 @@ Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem 
 
 ## 8. Componentes do [!UICONTROL Adobe Analytics]
 
-+++**Posso compartilhar/publicar [!UICONTROL públicos] de [!DNL Customer Journey Analytics] para o Experience Platform Real-Time CDP ou outros aplicativos Experience Cloud?**
++++**É possível compartilhar/publicar [!UICONTROL públicos-alvo] do [!DNL Customer Journey Analytics] para a Real-Time CDP da Experience Platform ou para outros aplicativos da Experience Cloud?**
 
-Você pode [criar e publicar públicos](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) identificado em Customer Journey Analytics para Perfil do cliente em tempo real no Adobe Experience Platform para direcionamento e personalização de clientes.
+Você pode [criar e publicar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/audiences/publish) identificados no Customer Journey Analytics no Perfil do cliente em tempo real na Adobe Experience Platform para direcionamento e personalização de clientes. 
 
 +++
 

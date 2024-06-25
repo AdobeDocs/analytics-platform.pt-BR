@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 34%
+source-wordcount: '1428'
+ht-degree: 29%
 
 ---
 
@@ -31,7 +31,7 @@ Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá 
 
 +++**Até que ponto a compilação repete os visitantes?**
 
-A janela de pesquisa para rechaveamento depende da frequência desejada de [repetição](explained.md) de dados. Por exemplo, se você configurar a compilação para repetir os dados uma vez por semana, a janela de pesquisa para rechaveamento será de sete dias. Se você configurar a compilação para repetir dados todos os dias, a janela de pesquisa para rechaveamento será de um dia.
+A janela de pesquisa para rechaveamento depende da frequência desejada de repetição de dados. Por exemplo, se você configurar a compilação para repetir os dados uma vez por semana, a janela de pesquisa para rechaveamento será de sete dias. Se você configurar a compilação para repetir dados todos os dias, a janela de pesquisa para rechaveamento será de um dia.
 
 +++
 
@@ -47,7 +47,9 @@ A ID transitória substitui a ID persistente; portanto, os dispositivos comparti
 
 Em algumas situações, um usuário individual pode ser associado a muitas IDs persistentes. Um exemplo é a limpeza frequente de cookies do navegador ou o uso do modo privado/anônimo do navegador.
 
-O número de IDs persistentes é irrelevante em favor da ID transitória. Um único usuário pode pertencer a qualquer número de dispositivos sem afetar a capacidade do Customer Journey Analytics de compilar entre dispositivos.
+Para a compilação em campo, o número de IDs persistentes é irrelevante em favor da ID transitória. Um único usuário pode pertencer a qualquer número de dispositivos sem afetar a capacidade do Customer Journey Analytics de compilar entre dispositivos.
+
+Para a compilação baseada em gráficos, uma única pessoa pode ter muitas ID persistentes no gráfico de identidade. A compilação baseada em gráfico usa a ID persistente com base no namespace especificado. Caso haja mais ID persistente para o mesmo namespace, a primeira ID persistente lexicográfica será usada.
 
 +++
 
@@ -85,7 +87,7 @@ Se o campo ID persistente estiver em branco em um evento em um conjunto de dados
 
 Tenha cuidado com o &quot;recolhimento de pessoas&quot;, que ocorre quando a compilação é aplicada a dados que usam valores de espaço reservado para IDs transitórias. Na tabela de exemplo abaixo, IDs de pessoa indefinidas originárias de um conjunto de dados proveniente de um sistema CRM são preenchidas com o valor &quot;Indefinido&quot;, resultando na representação incorreta de pessoas.
 
-| Evento  | Carimbo de data e hora | ID persistente (ID do cookie) | ID transitória (ID de logon) | ID compilada (após repetição) |
+| Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID transitória (ID de logon) | ID compilada (após repetição) |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 123 | - | **Cory** |
 | 2 | 2023-05-12 12:02 | 123 | Cory | **Cory** |
@@ -120,3 +122,21 @@ Outras métricas podem ser semelhantes no Customer Journey Analytics e no Adobe 
 Não, o Customer Journey Analytics não pode usar campos do Mapa de identidade para compilação no momento.
 
 +++
+
++++**Os dados precisarão ser assimilados novamente para alternar da compilação em campo para a compilação em gráfico?**
+Os dados não precisam ser assimilados novamente no Experience Platform, no entanto, eles precisarão ser reconfigurados no Customer Journey Analytics. Siga estas etapas:
+
+1. Configure o novo conjunto de dados compilado com base em gráfico.
+1. Configure o novo conjunto de dados como parte de uma nova conexão no Customer Journey Analytics.
+1. Alterne sua Visualização de dados existente para usar a nova conexão (e, como tal, o novo conjunto de dados compilado com base em gráfico)
+1. Remova a conexão antiga que estava usando o conjunto de dados compilado com base em campo.
+
++++
+
++++**Haveria alguma interrupção nos relatórios existentes?**
+
+Não se seguir as etapas descritas acima. Caso contrário, peça suporte adicional à Adobe Consulting.
+
++++
+
+
