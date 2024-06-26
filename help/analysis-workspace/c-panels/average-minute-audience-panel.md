@@ -3,9 +3,10 @@ title: Painel Público-alvo médio por minuto de mídia
 description: Como usar e interpretar o painel Público-alvo médio por minuto de mídia no Analysis Workspace.
 feature: Panels
 role: User, Admin
-source-git-commit: 907a627720910794d77f016d797f1b95d2d3ce13
+exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1664'
 ht-degree: 31%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 31%
 
 >[!NOTE]
 >
->O painel Público-alvo médio por minuto de mídia está disponível somente para clientes que compraram o complemento do Media Analytics para Customer Journey Analytics.
+>O painel Público-alvo médio por minuto de mídia está disponível somente para clientes que compraram o complemento Coleção de mídia de transmissão para Customer Journey Analytics.
 >
->Entre em contato com o representante de vendas do Adobe ou com a equipe de conta do Adobe para adquirir o Media Analytics.
+>Entre em contato com o representante de vendas do Adobe ou com a equipe de conta do Adobe para adquirir o complemento de coleção de mídia de transmissão.
 
 No Analysis Workspace, a Audiência média por minuto é o tempo gasto visualizando seu fluxo de mídia dividido pela duração do conteúdo ou pela seleção total do período e granularidade selecionada.
 
@@ -34,7 +35,7 @@ O painel Público-alvo médio por minuto da mídia oferece os seguintes benefíc
 
 ## Acessar o painel Público-alvo médio por minuto de mídia
 
-1. No Analysis Workspace, vá para um conjunto de relatórios que tenha os componentes do Media Analytics ativados.
+1. No Analysis Workspace, vá para um conjunto de relatórios que tenha componentes ativados do complemento Coleção de mídia de transmissão.
 
 1. Na navegação à esquerda, selecione o **Painéis** ícone.
 

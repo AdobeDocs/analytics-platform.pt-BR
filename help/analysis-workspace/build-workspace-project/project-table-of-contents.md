@@ -1,20 +1,24 @@
 ---
 description: Informações sobre o sumário de projetos que está disponível em projetos
 keywords: Analysis Workspace
-title: Sumário do projeto
+title: Índice do projeto
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: 8ff130a20c719a594207f854ff3b85619f38b512
+source-git-commit: 1534b628841a5b4588379b944822073f3288d710
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 1%
+source-wordcount: '143'
+ht-degree: 6%
 
 ---
 
-# Sumário do projeto
+# Índice do projeto
 
 Você pode exibir um índice em cada projeto no Analysis Workspace, permitindo mover-se rapidamente entre quaisquer painéis e visualizações existentes no projeto. Isso é especialmente útil ao visualizar projetos maiores que contêm muitos painéis e visualizações.
+
+Veja a seguir uma demonstração em vídeo desse recurso:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3430412/?learn=on)
 
 Para exibir o índice de um projeto:
 

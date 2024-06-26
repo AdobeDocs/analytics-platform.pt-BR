@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: e4d4ff530d28e692301ca0671e055a164b9f7035
 workflow-type: tm+mt
-source-wordcount: '3746'
-ht-degree: 73%
+source-wordcount: '3810'
+ht-degree: 72%
 
 ---
 
@@ -20,6 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Junho de 2024** | |
+| Nome do produto atualizado que se refere aos recursos de streaming de mídia | As instâncias de &quot;Media Analytics&quot; e &quot;Mídia de streaming&quot; foram substituídas pelo nome &quot;Complemento de coleção de mídia de streaming&quot; ao se referirem ao conjunto de recursos de mídia de streaming que coletam dados de mídia de streaming e os exibem no Analysis Workspace. <p>Essas atualizações estão disponíveis em toda a documentação do Customer Journey Analytics, bem como no [Documentação do complemento Coleção de mídia de streaming](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview?lang=pt-BR).</p> |
 | Compilação baseada em gráfico | Atualizado e reestruturado [documentação de compilação](/help/stitching/overview.md) com a introdução da compilação baseada em gráficos. |
 | Assistente de IA | Adicionado [documentação](../ai-assistant.md) no Assistente de IA para o Customer Journey Analytics. |
 | Transformar conjuntos de dados para pesquisas B2B | Adição de documentação sobre como oferecer suporte [pesquisas com base em pessoas em dados B2B](/help/connections//transform-datasets-b2b-lookups.md) (incluindo contas, oportunidades, listas de marketing e campanhas) usando a transformação de conjuntos de dados de pesquisa B2B. |
@@ -40,7 +41,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Nova documentação para recursos de Adobe Product Analytics | <ul><li>[Matriz de recursos](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Aprimorado [taxas de retenção](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/retention/retention-rates)</li><li>[Insights aprimorados no funil](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/funnel/friction)</li><li>Comparar eventos em uma única etapa de Funil</li></ul> |
 | **Março de 2024** | |
 | A coluna “Usado em” disponibiliza informações de uso apenas a partir de setembro de 2023. | Esclarecimento de que as informações de uso relacionadas à coluna **Usado em** na [página de destino de projetos](/help/getting-started/landing.md) mostram apenas dados a partir de setembro de 2023. |
-| Adição de documentação sobre aprimoramento de permissões para componentes do Workspace somente para projetos | Se você compartilhar um projeto com outros usuários, eles poderão editar [filtros rápidos](/help/components/filters/quick-filters.md) e outros componentes somente de projeto incorporados ao projeto compartilhado. |
+| Adição de documentação sobre o aprimoramento de permissões para componentes Workspace somente de projeto | Se você compartilhar um projeto com outros usuários, eles poderão editar [filtros rápidos](/help/components/filters/quick-filters.md) e outros componentes somente de projeto incorporados ao projeto compartilhado. |
 | **Fevereiro de 2024** | |
 | Atualizações na documentação de compartilhamento do projeto | Foram adicionadas informações sobre como [visualizar projetos compartilhados com você](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Simplificação das informações sobre [compartilhamento de projetos individuais ou de vários projetos](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Adição de requisitos de permissão para fazer upload de arquivos no Azure SAS e no Azure RBAC ao configurar locais de exportação na nuvem | Adição de requisitos de permissão exatos para fazer upload de arquivos no Azure SAS e no Azure RBAC quando [configuração de contas de exportação na nuvem](/help/components/exports/cloud-export-accounts.md) e [configuração de locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md). |
@@ -93,7 +94,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Campos derivados | Um [campo derivado](/help/data-views/derived-fields/derived-fields.md) permite definir manipulações de dados (muitas vezes complexas) a qualquer momento, por meio de um construtor de regras personalizável. |
 | A compatibilidade de pesquisa foi expandida para dados de perfil e pesquisa | Fornece a capacidade de adicionar conjuntos de dados como pesquisas de campos nos conjuntos de dados de perfil ou pesquisa. Anteriormente, somente os conjuntos de dados de eventos eram compatíveis. [Saiba mais](/help/connections/create-connection.md) |
 | Aprimoramentos do Report Builder | <ul><li>[Filtrar a partir da célula para vários blocos de dados](/help/report-builder/select-data-view.md)</li><li>[Mostrar e ocultar cabeçalhos de linha e de coluna](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/create-a-data-block.html?lang=pt-BR#build-the-data-block)</li></ul> |
-| Pesquisas geográficas da rede de borda | [Configurações de sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=pt-BR) como o tem um serviço de pesquisa geográfica que fornece dados geográficos unificados. |
+| pesquisas geográficas do Edge Network | [Configurações de sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=pt-BR) como o tem um serviço de pesquisa geográfica que fornece dados geográficos unificados. |
 | **Junho de 2023** | |
 | Análise de vários canais e compilação | Em antecipação às próximas alterações que habilitarão a compilação e para esclarecer ainda mais como a análise de vários canais pode ser elevada usando a compilação, a documentação relacionada a esta funcionalidade foi editada para se referir à [análise de vários canais](../use-cases/cross-channel/cross-channel.md) como um recurso e caso de uso do Customer Journey Analytics e à [compilação](../stitching/overview.md) como uma funcionalidade importante para alcançar esse objetivo. |
 | Acesso do Power BI e do Tableau às visualizações de dados do Customer Journey Analytics | A extensão Customer Journey Analytics BI permite o acesso SQL a visualizações de dados definidas no Customer Journey Analytics. [Saiba mais](/help/data-views/bi-extension.md) |
