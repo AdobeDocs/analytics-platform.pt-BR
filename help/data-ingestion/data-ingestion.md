@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: dca1cc33058ba57815c3534ab21da86d5247531a
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 70%
+source-wordcount: '943'
+ht-degree: 63%
 
 ---
 
@@ -20,8 +20,7 @@ Você tem várias opções ao assimilar dados no Customer Journey Analytics. Alg
 >
 >Em todos os cenários, os dados que você deseja _usar_ no Customer Journey Analytics é _assimilado_ na Adobe Experience Platform.
 
-
-Consulte a arquitetura de alto nível do Customer Journey Analytics mostrada anteriormente na [Visão geral](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR):
+Consulte a arquitetura de alto nível do Customer Journey Analytics mostrada anteriormente na [Visão geral](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-overview):
 
 ![Arquitetura de Customer Journey Analytics descrita nesta seção](./assets/cja-architecture.png)
 
@@ -35,13 +34,25 @@ O conjunto de dados na arquitetura acima pode se originar de várias fontes:
 
 - dados do rastreamento do seu site/aplicativo móvel usando o SDK da Web/móvel da Adobe Experience Platform,
 
-- dados do rastreamento de um aplicativo de desktop, jogo de console, decodificador de sinais ou dispositivo IoT usando a API do servidor de rede de borda da Adobe Experience Platform, ou
+- dados do rastreamento de um aplicativo de desktop, jogo de console, decodificador de sinais ou dispositivo IoT usando a API do servidor Adobe Experience Platform Edge Network ou
 
 - dados provenientes de um provedor de dados de terceiros para o qual a Adobe fornece um conector de origem.
 
 E você pode ter muitos desses conjuntos de dados.
 
 Esta seção da documentação fornece guias de início rápido para vários cenários.
+
+## Priorização e latência de assimilação
+
+Você pode assimilar os dados do evento no Customer Journey Analytics em 90 minutos (SLT), independentemente de os dados terem 24 horas, 48 horas ou 7 dias.
+
+Observe que esse recurso é diferente com base no pacote SKU que sua empresa adquiriu:
+
+- Assimilação por prioridade Básica: dados antigos de 24 horas com processamento SLT de 90 minutos (disponível para **Fundação CJA** e **Seleção do CJA**)
+
+- Assimilação por prioridade Intermediária: dados antigos de 72 horas com processamento SLT de 90 minutos (disponível para **CJA Prime**)
+
+- Assimilação por prioridade Avançada: dados com 1 semana de duração dentro do processamento SLT de 90 minutos (disponível para **CJA Ultimate**)
 
 ## Assimilar e usar dados do Adobe Analytics tradicional
 
@@ -50,7 +61,7 @@ O Adobe Analytics já implantou e deseja assimilar esses dados na Adobe Experien
 Consulte [Assimilar e usar dados do Adobe Analytics tradicional](./analytics.md) para obter mais informações.
 
 
-## Assimilar e use dados pela rede de borda
+## Assimilar e use dados por meio do Edge Network
 
 ### Uso do SDK da Web da Adobe Experience Platform
 
@@ -64,11 +75,11 @@ Você deseja analisar seu aplicativo móvel com a tecnologia Adobe, migrando pot
 
 Consulte [Assimilar e usar dados por meio do Adobe Experience Platform Mobile SDK](./aepmobilesdk.md) para obter mais informações.
 
-### Uso da API do servidor de rede de borda da Adobe Experience Platform
+### Uso da API do servidor Adobe Experience Platform Edge Network
 
-Você deseja analisar seu aplicativo de desktop, o jogo conforme é reproduzido em um console de jogos, o uso de um aplicativo de streaming de vídeo em um decodificador de sinais ou seu dispositivo IoT com tecnologia Adobe. Migração potencial de outra solução ou início do rastreamento do comportamento de uma pessoa nesses dispositivos do zero. Você deseja seguir as práticas recomendadas de implementação do Adobe, que é usar as APIs do servidor da rede de borda da Adobe Experience Platform e a rede de borda, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
+Você deseja analisar seu aplicativo de desktop, o jogo conforme é reproduzido em um console de jogos, o uso de um aplicativo de streaming de vídeo em um decodificador de sinais ou seu dispositivo IoT com tecnologia Adobe. Migração potencial de outra solução ou início do rastreamento do comportamento de uma pessoa nesses dispositivos do zero. Você deseja seguir as práticas recomendadas de implementação do Adobe, que é o uso das APIs e Edge Network do servidor Edge Network da Adobe Experience Platform, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
 
-Consulte [Assimilar e use dados por meio da API do servidor de rede de borda da Adobe Experience Platform](./serverapi.md) para obter mais informações.
+Consulte [Assimilar e use dados por meio da API do Adobe Experience Platform Edge Network Server](./serverapi.md) para obter mais informações.
 
 ## Assimilar e usar dados em lote
 
