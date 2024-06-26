@@ -4,10 +4,10 @@ description: Página inicial do Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 67a249ab291201926eb50df296e031b616de6e6f
-workflow-type: ht
-source-wordcount: '677'
-ht-degree: 100%
+source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 85%
 
 ---
 
@@ -29,6 +29,12 @@ O Assistente de IA é uma experiência de conversação que permite que os profi
 
 [![imagem](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+>[!TAB Compilação baseada em gráfico]
+
+Por meio da compilação baseada em gráfico, é possível usar o gráfico de identidade do Serviço de identidade do Experience Platform para obter uma melhor visualização da jornada do cliente: <ul><li>Associar conjuntos de dados com identificadores diferentes sem precisar extrair, transformar e carregar dados adicionais para refletir um único identificador.</li> <li>Melhorar a cobertura da identidade preferencial ou dourada para um único conjunto de dados ao compartilhar identidades entre conjuntos de dados,</li><li>Alinhamento dos perfis criados no Real-time Customer Data Platform e no Journey Optimizer com as pessoas no Customer Journey Analytics.</li></ul>
+
+[![imagem](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
 >[!TAB Pesquisas B2B]
 
 Como parte da configuração de uma conexão, você pode transformar conjuntos de dados para esquemas de pesquisa B2B específicos para oferecer um melhor suporte a pesquisas baseadas em pessoas em dados B2B.
@@ -37,7 +43,7 @@ Como parte da configuração de uma conexão, você pode transformar conjuntos d
 
 >[!TAB Campos derivados]
 
-Novas funções de campos derivados (Math, Next or Previous) e modelos de função adicionais (como Rejeições, Nome amigável do conjunto de dados, Temporada de feriados, Metas mensais, Detecção de bots simples e outros) estão disponíveis.
+Novas funções de campo derivadas (Matemática, Próximo ou Anterior, Resumir) e modelos de função adicionais (como Rejeições, Nome do conjunto de dados amigável, Temporada de feriados, Metas mensais, Detecção de bot simples e outros) estão disponíveis.
 
 [![imagem](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
