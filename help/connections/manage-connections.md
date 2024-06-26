@@ -6,7 +6,7 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
 workflow-type: tm+mt
 source-wordcount: '3188'
 ht-degree: 14%
@@ -51,7 +51,7 @@ As seguintes colunas ou ícones estão disponíveis na tabela.
 | [!UICONTROL Importar novos dados] | Mostra o status da importação de novos dados para conjuntos de dados: <p>![Status verde](assets/status-green.svg))    **[!UICONTROL _x _Ligado]**para conjuntos de dados configurados para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para conjuntos de dados não configurados para importar novos dados. |
 | [!UICONTROL Data de criação] | O carimbo de data e hora quando a conexão foi criada. |
 | [!UICONTROL Última modificação] | O carimbo de data e hora quando a conexão é atualizada pela última vez. |
-| [!UICONTROL Dados de preenchimento retroativo] | Mostra o status dos dados de preenchimento retroativo nos conjuntos de dados.<p>![Status em vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimento retroativo com falha]**para o número de preenchimentos retroativos com falha entre conjuntos de dados,<p>![Status laranja](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos de processamento em conjuntos de dados,<p>![Status verde](assets/status-green.svg))   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos para conjuntos de dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desligado_]** caso nenhum preenchimento retroativo seja definido para os conjuntos de dados na conexão. |
+| [!UICONTROL Dados de preenchimento retroativo] | Mostra o status dos dados de preenchimento retroativo nos conjuntos de dados.<p>![Status em vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimento retroativo com falha]**para o número de preenchimentos retroativos com falha entre conjuntos de dados,<p>![Status laranja](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos de processamento em conjuntos de dados,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos para conjuntos de dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desligado_]** caso nenhum preenchimento retroativo seja definido para os conjuntos de dados na conexão. |
 
 Para configurar quais colunas serão exibidas, selecione ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), que mostra a **Personalizar tabela** permite ativar ou desativar colunas na tabela.
 
@@ -89,7 +89,7 @@ Como alternativa, você pode:
 
 Ao excluir uma conexão, uma variável **[!UICONTROL Excluir conexão]** O painel indica quais visualizações de dados são excluídas e quais projetos do espaço de trabalho são afetados.
 
-<img src="./assets/delete-connection.png" alt="Excluir conexão" width="400"/>
+![Excluir conexão](assets/delete-connection.png)
 
 Selecionar **[!UICONTROL Continuar]** para excluir a conexão.
 
