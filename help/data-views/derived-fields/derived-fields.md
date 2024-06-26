@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: efa7aaf80f0f7c6b232f7024a556e0e54504c0be
+source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
 workflow-type: tm+mt
 source-wordcount: '8075'
 ht-degree: 12%
@@ -607,9 +607,9 @@ As restrições a seguir se aplicam e são aplicadas quando *seleção* e *confi
 
 |  | Limitações |
 |:---:|----|
-| **<span style='color: red'>A</span>** | Valores que *selecionar* dentro do mesmo [!UICONTROL Se], [!UICONTROL Else If] construir (usando [!UICONTROL E] ou [!UICONTROL Ou]) em uma regra deve se originar do mesmo container e pode ser de qualquer tipo (string ![String](assets/Smock_ABC_18_N.svg), numérico ![Numérico](assets/Smock_123_18_N.svg)e assim por diante). <br/>![Captura de tela da dependência A](assets/dependency-a.png) |
-| **<span style='color: red'>B</span>** | Todos os valores *set* em uma regra deve ser do mesmo container e ter o mesmo tipo ou um valor derivado do mesmo tipo. <br/> ![Captura de tela da dependência B](assets/dependency-b.png) |
-| **<span style='color: blue'>C</span>** | Os valores que *selecionar* em [!UICONTROL Se], [!UICONTROL Else If] construções na regra do *não* têm de se originar do mesmo recipiente e não *não* devem ser do mesmo tipo. <br/> ![Captura de tela da dependência C](assets/dependency-c.png) |
+| **A** | Valores que *selecionar* dentro do mesmo [!UICONTROL Se], [!UICONTROL Else If] construir (usando [!UICONTROL E] ou [!UICONTROL Ou]) em uma regra deve se originar do mesmo container e pode ser de qualquer tipo (string ![String](assets/Smock_ABC_18_N.svg), numérico ![Numérico](assets/Smock_123_18_N.svg)e assim por diante). <br/>![Captura de tela da dependência A](assets/dependency-a.png) |
+| **B** | Todos os valores *set* em uma regra deve ser do mesmo container e ter o mesmo tipo ou um valor derivado do mesmo tipo. <br/> ![Captura de tela da dependência B](assets/dependency-b.png) |
+| **C** | Os valores que *selecionar* em [!UICONTROL Se], [!UICONTROL Else If] construções na regra do *não* têm de se originar do mesmo recipiente e não *não* devem ser do mesmo tipo. <br/> ![Captura de tela da dependência C](assets/dependency-c.png) |
 
 {style="table-layout:auto"}
 
@@ -1151,7 +1151,7 @@ Para criar uma fórmula:
 1. Para inserir um valor estático (por exemplo, `1.05`), digite o valor e selecione **[!UICONTROL Adicionar *x* como um valor estático]** ou **[!UICONTROL Adicionar -*x* como um valor estático negativo]** no menu pop-up.
    ![Mais Informações Matemáticas 2](assets/math-more-info-2.png)
 
-1. Uma marca de seleção verde ![Marca de seleção](./assets/checkmark.svg)</span> indica se a fórmula matemática é válida; caso contrário, você verá um aviso <span style="color:red">![Alerta](./assets/alert.svg)</span> e a mensagem <span style="color:#ea3829">[!UICONTROL Expressão de fórmula inválida].</span>
+1. Uma marca de seleção verde ![Marca de seleção](./assets/checkmark.svg)</span> indica se a fórmula matemática é válida; caso contrário, você verá um aviso ![Alerta](./assets/alert.svg) e a mensagem [!UICONTROL Expressão de fórmula inválida].
    ![Matemática e Mais Informações 3](assets/math-more-info-3.png)
 
 Há algumas considerações importantes ao trabalhar com números estáticos no [!UICONTROL MATEMÁTICA] função:
@@ -1516,7 +1516,7 @@ Aplica funções do tipo agregação a métricas ou dimensões em níveis de eve
 
 ## Caso de uso {#summarize-uc}
 
-Você gostaria de categorizar Adicionar à receita do carrinho em três categorias diferentes: Pequeno, Médio e Grande. Isso permite analisar e identificar as características de clientes de alto valor.
+Você gostaria de categorizar Adicionar à receita do carrinho em três categorias diferentes: Pequena, Medium e Grande. Isso permite analisar e identificar as características de clientes de alto valor.
 
 ### Dados anteriores a {#summarize-uc-databefore}
 
@@ -1533,7 +1533,7 @@ Cenários:
 Lógica:
 
 - Se a Receita total adicionada ao carrinho de um visitante for inferior a US$ 150, defina como Pequeno.
-- Se a Receita total adicionada ao carrinho de um visitante for maior que US$ 150, mas menor que US$ 500, defina como Médio.
+- Se a Receita total adicionada ao carrinho de um visitante for maior que US$ 150, mas inferior a US$ 500, defina como Medium.
 - Se a Receita total adicionada ao carrinho de um visitante for maior ou igual a US$ 500, defina como Grande.
 
 Resultados:
