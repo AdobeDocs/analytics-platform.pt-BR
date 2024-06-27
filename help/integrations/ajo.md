@@ -4,9 +4,9 @@ description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usand
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 529dd2ed2af60f8b417a5bf7d728a201dad70218
+source-git-commit: 5185c28c7a2cf1a0690e783633bbfbf851a1dcd1
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1541'
 ht-degree: 52%
 
 ---
@@ -45,7 +45,7 @@ A conexão tem o nome **[!UICONTROL Conexão ativada pelo AJO (*nome da sandbox*
 
 | Nome do conjunto de dados | Esquema | Tipo de conjunto de dados | Tipo de fonte de dados | ID da pessoa | Chave | Chave correspondente | Importar novos dados | Dados de preenchimento retroativo |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL Conjunto de dados da entidade AJO] | [!UICONTROL Esquema de registro de entidade AJO] | [!UICONTROL Pesquisa] | [!UICONTROL Outro] | - | ` _id` | `_experience.decisioning.`<br/>`propositions.scopeDetails.`<br/>`correlationID` | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
+| [!UICONTROL Conjunto de dados da entidade AJO] | [!UICONTROL Esquema de registro de entidade AJO] | [!UICONTROL Pesquisa] | [!UICONTROL Outro] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
 | [!UICONTROL Jornada eventos de etapa] | [!UICONTROL Esquema de evento de etapa de Jornada para o Journey Orchestration] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL  IdentityMap(\&lt;primary>)] | - | - | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
 | [!UICONTROL Conjunto de dados de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema do evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
 | [!UICONTROL Conjunto de dados de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema do evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
@@ -87,10 +87,10 @@ A visualização de dados tem o nome **Habilitar visualização de dados do AJO 
 
 
 - No **Componentes** guia:
-   - Todas as métricas e dimensões que têm **[!UICONTROL (AJO)]** anexados ao seu nome são adicionados automaticamente como parte dessa configuração automática.
-   - Algumas métricas ou dimensões que foram adicionadas automaticamente se baseiam em campos derivados. Esses campos derivados são criados especificamente para essa integração. Por exemplo, a métrica Cliques na página inicial (AJO) é baseada no campo derivado Cliques na página inicial.
-   - Algumas métricas ou dimensões têm configuração adicional. Por exemplo, as configurações Reclamação de spam (AJO) tem Formato e Incluir valores de exclusão foram aplicadas.
-   - Todas as métricas e dimensões adicionadas automaticamente têm um rótulo de contexto chamado **[!UICONTROL :*nome_da_métrica_ou_dimensão *]**. Por exemplo, a variável[!UICONTROL Cliques na página inicial (AJO)] a métrica tem o rótulo de contexto [!UICONTROL :Cliques na página de aterrissagem (AJO)].
+   - Todas as métricas e dimensões que têm [!UICONTROL (AJO)] anexados ao seu nome são adicionados automaticamente como parte dessa configuração automática.
+   - Algumas métricas ou dimensões, que foram adicionadas automaticamente, são baseadas em campos derivados. Esses campos derivados são criados especificamente para essa integração. Por exemplo, a métrica [!UICONTROL Cliques na página inicial (AJO)] baseia-se no [!UICONTROL Cliques na landing page] campo derivado.
+   - Algumas métricas ou dimensões têm configuração adicional. Por exemplo, [!UICONTROL Reclamação de spam (AJO)] tem [!UICONTROL Formato] e [!UICONTROL Incluir/Excluir valores] configurações aplicadas.
+   - Todas as métricas e dimensões adicionadas automaticamente têm um rótulo de contexto chamado `:`*`name_of_metric_or_dimension`*. Por exemplo, a variável [!UICONTROL Cliques na página inicial (AJO)] a métrica tem o rótulo de contexto `: Landing page clicks (AJO)`.
 
 - No **[!UICONTROL Configurações]** , nenhum valor de configuração específico é aplicado
 
