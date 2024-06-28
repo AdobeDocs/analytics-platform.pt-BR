@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 71931b85de6b238c0c6c6fd7b72d06f25103b906
+source-git-commit: c0599526e6a6a9ac9788a4ce29bcf44256b6c4df
 workflow-type: tm+mt
-source-wordcount: '3188'
+source-wordcount: '3277'
 ht-degree: 14%
 
 ---
@@ -206,7 +206,12 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 
 ## Uso
 
-A variável [!UICONTROL Uso] A interface do mostra o uso de linhas assimiladas e reportáveis em todas as conexões. Essa interface permite determinar se o uso de Customer Journey Analytics está em conformidade com o que foi concordado contratualmente.
+A variável [!UICONTROL Uso] A interface do mostra o uso de linhas assimiladas e reportáveis em todas as conexões. Essa interface permite determinar se o uso de Customer Journey Analytics está em conformidade com o que foi concordado contratualmente. Além dos propósitos de monitoramento, você pode usar a interface do usuário de Uso para planejar melhor a renovação da licença de Customer Journey Analytics.
+
+Você pode selecionar um intervalo de tempo (entre os últimos 6 meses, acumulado no ano ou os últimos 2 anos) e um intervalo (entre mensal ou trimestral) para monitorar o uso do Customer Journey Analytics. A interface do é dividida em duas seções:
+
+* Linhas assimiladas: total de linhas assimiladas/enviadas de conjuntos de dados de eventos em todas as conexões do CJA, incluindo registros ignorados durante a assimilação
+* Linhas relatáveis: total de linhas relatáveis que incluem todos os dados de eventos em todas as Conexões do CJA
 
 ![usage-view](assets/usage-view.png)
 
