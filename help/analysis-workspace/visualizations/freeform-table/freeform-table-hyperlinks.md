@@ -4,9 +4,9 @@ description: Saiba como criar hiperlinks para itens de dimensão em uma tabela d
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: afa6a3cf8763a2d6419ec859385abc4cf095f214
+source-git-commit: e1e57eaa9445fc4d553aa7804c4038c03fbe65cd
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1736'
 ht-degree: 1%
 
 ---
@@ -23,9 +23,11 @@ Essa funcionalidade é particularmente útil ao criar hiperlinks para os seguint
 
 * Itens de Dimension ou detalhamentos que têm valores que são parte de um URL ao qual você deseja vincular (por exemplo, uma dimensão Nome da página que é parte de um URL)
 
-Veja a seguir uma demonstração em vídeo desse recurso:
++++Exibir uma demonstração em vídeo desse recurso.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
+
++++
 
 ## Criar hiperlinks para um ou mais itens de dimensão
 
