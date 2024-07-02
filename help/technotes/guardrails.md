@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: ffa7899b8ece8c39079ed64401ec6cad111e9a84
+source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
 workflow-type: tm+mt
-source-wordcount: '1632'
+source-wordcount: '1747'
 ht-degree: 7%
 
 ---
@@ -58,8 +58,6 @@ Alguns dos recursos e seu valor associado para o limite dependem do Pacote de Cu
 
 <!--
 ## Attribution AI
-
-
 
 | Name |  Value | Description | PD? |
 |---|--:|---|:---:|
@@ -158,9 +156,19 @@ Consulte também Experience Platform [Proteções de exportação do conjunto de
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
 | Conjuntos de dados compilados | 5 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
-| Dados de preenchimento retroativo | 60 - 395 | Proteção imposta pelo sistema | Número máximo de dias de dados de preenchimento retroativo; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
+| Comprimento do preenchimento retroativo | 6 - 25 | Proteção imposta pelo sistema | Número máximo de meses de dados de preenchimento retroativo; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
+| Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição; o valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
 
 {style="table-layout:auto"}
+
+
+## Compilação baseada em gráfico
+
+| Nome | Valor | Tipo de limite | Descrição |
+|---|--:|---|---|
+| Conjuntos de dados compilados | 10 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
+| Comprimento do preenchimento retroativo | 13 - 25 | Proteção imposta pelo sistema | Número máximo de meses de dados de preenchimento retroativo; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
+| Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição; o valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
 
 
 ## Filtros e métricas calculadas
@@ -222,14 +230,14 @@ Consulte também Experience Platform [Proteções de exportação do conjunto de
 
 | Fluxo de dados | Latência esperada |
 |---|---|
-| Conector de origem do Adobe Analytics para Adobe Analytics (A4T ativado) | &lt; 30 minutos |
-| Conector de origem do Adobe Analytics para Perfil do cliente em tempo real (A4T não ativado) | &lt; 2 minutos |
-| Conector de origem do Adobe Analytics para Perfil do cliente em tempo real (habilitado para A4T) | &lt; 30 minutos |
+| Adobe Analytics para o Adobe Analytics Source Connector (habilitado para A4T) | &lt; 30 minutos |
+| Conector do Adobe Analytics Source para Perfil do cliente em tempo real (A4T não ativado) | &lt; 2 minutos |
+| Conector do Adobe Analytics Source para Perfil do cliente em tempo real (habilitado para A4T) | &lt; 30 minutos |
 | Assimilação de dados no Data Lake a partir da assimilação de Edge Network ou Streaming | &lt; 60 minutos |
-| Assimilação de dados no Data Lake a partir do Conector de origem do Adobe Analytics | &lt; 2,25 horas |
+| Assimilação de dados no Data Lake pelo Adobe Analytics Source Connector | &lt; 2,25 horas |
 | Assimilação de dados no Customer Journey Analytics a partir do Data Lake | &lt; 90 minutos |
 | Costura (recurso opcional; consulte [Visão geral da compilação](../stitching/overview.md) para obter mais informações) | &lt; 3,25 horas |
-| Preenchimento retroativo do conector de origem do Adobe Analytics de menos de 10 bilhões de eventos (máximo de 13 meses de dados históricos) | &lt; 4 semanas |
+| Preenchimento retroativo do Adobe Analytics Source Connector de menos de 10 bilhões de eventos (máximo de 13 meses de dados históricos) | &lt; 4 semanas |
 | Publicação de público-alvo no perfil do cliente em tempo real, incluindo a criação automática do segmento de transmissão e permitindo que o segmento esteja pronto para receber os dados. | aprox. 60 minutos |
 | Frequência de atualização para públicos | Atualização única: latência inferior a 5 minutos.<br/>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização). |
 

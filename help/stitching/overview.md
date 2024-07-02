@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 328939daf3e4dfe7f586d6c3822ce331cf24b97d
+source-git-commit: 32f0da9ea54952dbe3a765661b800e061ac5f039
 workflow-type: tm+mt
-source-wordcount: '3712'
+source-wordcount: '3723'
 ht-degree: 12%
 
 ---
@@ -345,13 +345,13 @@ Assim que sua organização atender a todas as [pré-requisitos](#prerequisites)
 
 ### Opções
 
-Selecione as opções de compilação. O pacote Customer Journey Analytics determina as opções disponíveis para a duração do preenchimento retroativo inicial, a janela de pesquisa, a frequência de repetição e o número máximo de conjuntos de dados permitidos para compilação.
+Selecione as opções de compilação. O pacote Customer Journey Analytics determina as opções disponíveis para a duração do preenchimento retroativo inicial, a janela de pesquisa, a frequência de repetição e o número máximo de conjuntos de dados permitidos para compilação. Consulte a [Descrição do produto Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) para obter mais detalhes.
 
 | | Customer Journey Analytics<br/>Selecionar | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
 | Duração do preenchimento retroativo de compilação única | 13 meses | 13 meses | 25 meses |
 | Janela de pesquisa e frequência de repetição | <li>1 dia, todos os dias</li><li>até 7 dias, semanalmente</li> | <li>1 dia, todos os dias</li><li>até 14 dias, semanalmente</li> | <li>1 dia, todos os dias</li><li>até 30 dias, semanalmente</li> |
-| Número máximo de conjuntos de dados permitidos para compilação | 5 | 10 | 15 |
+| Número máximo de conjuntos de dados permitidos para compilação | 5 | 10 | 50 |
 
 ### Solicitar suporte
 
