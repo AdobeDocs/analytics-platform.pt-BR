@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 805eb9dc9ab287934dd15eb56d3ac35187c979d7
+source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
 workflow-type: tm+mt
 source-wordcount: '3752'
 ht-degree: 11%
@@ -322,11 +322,11 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 Os seguintes pré-requisitos se aplicam especificamente à compilação baseada em gráfico:
 
 - O conjunto de dados do evento no Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter uma coluna que identifique um visitante em cada linha, a variável **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurements do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Adobe Experience Cloud.
-- o gráfico de identidade do Experience Cloud Identity Service deve ter um namespace (por exemplo, `Email`ou `Phone`) que você deseja usar durante a compilação para resolver o **ID transitória**. Consulte [Serviço de identidade Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) para obter mais informações.
+- O gráfico de identidade do Experience Cloud Identity Service deve ter um namespace (por exemplo, `Email`ou `Phone`) que você deseja usar durante a compilação para resolver o **ID transitória**. Consulte [Serviço de identidade Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) para obter mais informações.
 
 >[!NOTE]
 >
->Você tem **não** exigem uma licença da Real-time Customer Data Platform para compilação baseada em gráficos. A variável **Selecionar** Um ou mais pacotes de Customer Journey Analytics incluem os direitos necessários do Serviço de identidade do usuário.
+>Você tem **não** exigem uma licença da Real-time Customer Data Platform para compilação baseada em gráficos. A variável **Selecionar** ou pacotes superiores de Customer Journey Analytics incluem os direitos necessários do Serviço de identidade do usuário.
 
 
 
