@@ -5,16 +5,19 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 38bcb262023773763c0ff710a6aba4e06b864d01
+source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
 workflow-type: tm+mt
-source-wordcount: '3752'
-ht-degree: 11%
+source-wordcount: '3793'
+ht-degree: 12%
 
 ---
 
 # Compilação
 
-{{select-package}}
+>[!NOTE]
+>
+>Você deve ter o **Selecionar** pacote ou superior (para compilação em campo) ou **Prime** pacote ou superior (para compilação baseada em gráfico) para usar a funcionalidade descrita nesta seção. Entre em contato com sua administração se não tiver certeza de qual pacote do Customer Journey Analytics você possui.
+
 
 A compilação de identidade (ou simplesmente, compilação) é um recurso poderoso que eleva a adequação de um conjunto de dados de evento para análise entre canais. A análise entre canais é um caso de uso principal que o Customer Journey Analytics pode manipular, permitindo combinar e executar relatórios de maneira contínua em vários conjuntos de dados de diferentes canais, com base em um identificador comum (ID de pessoa).
 
@@ -189,7 +192,7 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação em campo
 
 - O conjunto de dados do evento no Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter duas colunas que ajudem a identificar visitantes:
 
-   - A **ID persistente**, um identificador disponível em cada linha. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurements do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Adobe Experience Cloud.
+   - A **ID persistente**, um identificador disponível em cada linha. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurements do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Adobe Experience Platform.
    - A **ID transitória**, um identificador disponível em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash quando um visitante é autenticado. Você pode usar praticamente qualquer identificador que desejar. A compilação considera esse campo como mantendo as informações reais da ID de pessoa. Para obter melhores resultados de compilação, uma ID transitória deve ser enviada nos eventos do conjunto de dados pelo menos uma vez para cada ID persistente. Se você planeja incluir esse conjunto de dados em uma conexão Customer Journey Analytics, é preferível que os outros conjuntos de dados também tenham um identificador comum semelhante.
 
 - Ambas as colunas (ID persistente e ID transitória) devem ser definidas como um campo de identidade com um namespace de identidade no esquema para o conjunto de dados que você deseja compilar. Ao usar a compilação de identidade na Real-time Customer Data Platform, use o [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), ainda será necessário adicionar campos de identidade com um namespace de identidade. Essa identificação de campos de identidade é necessária, pois a compilação de Customer Journey Analytics não é compatível com o `identityMap` grupo de campos. Ao adicionar um campo de identidade no esquema, ao mesmo tempo em que usa a variável `identityMap` grupo de campos, não defina o campo de identidade adicional como uma identidade primária. Definir um campo de identidade adicional como identidade primária interfere na `identityMap` grupo de campos usado para o Real-time Customer Data Platform.
@@ -321,13 +324,12 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 
 Os seguintes pré-requisitos se aplicam especificamente à compilação baseada em gráfico:
 
-- O conjunto de dados do evento no Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter uma coluna que identifique um visitante em cada linha, a variável **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurements do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Adobe Experience Cloud.
-- O gráfico de identidade do Experience Cloud Identity Service deve ter um namespace (por exemplo, `Email`ou `Phone`) que você deseja usar durante a compilação para resolver o **ID transitória**. Consulte [Serviço de identidade Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) para obter mais informações.
+- O conjunto de dados do evento no Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter uma coluna que identifique um visitante em cada linha, a variável **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurements do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Adobe Experience Platform.
+- O gráfico de identidade do Experience Platform Identity Service deve ter um namespace (por exemplo, `Email`ou `Phone`) que você deseja usar durante a compilação para resolver o **ID transitória**. Consulte [Serviço de identidade Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) para obter mais informações.
 
 >[!NOTE]
 >
->Você tem **não** exigem uma licença da Real-time Customer Data Platform para compilação baseada em gráficos. A variável **Selecionar** ou pacotes superiores de Customer Journey Analytics incluem os direitos necessários do Serviço de identidade do usuário.
-
+>Você tem **não** exigem uma licença da Real-time Customer Data Platform para compilação baseada em gráficos. A variável **Prime** pacote ou superior de Customer Journey Analytics inclui os direitos necessários do Serviço de identidade do Experience Platform.
 
 
 ### Limitações
