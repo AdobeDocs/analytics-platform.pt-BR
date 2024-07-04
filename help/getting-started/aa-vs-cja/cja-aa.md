@@ -8,7 +8,7 @@ role: User
 source-git-commit: f091dda08391bad3974493e93dce942b8a2fc4d3
 workflow-type: tm+mt
 source-wordcount: '2287'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Conjuntos de relatórios virtuais | Suporte completo. Agora chamado de [Visualizações de dados](/help/data-views/create-dataview.md). |
 | Curadoria de componentes do conjunto de relatórios virtual | Suporte completo. Agora parte das Visualizações de dados. |
 | Dimensões Dispositivo, Navegador, Referenciador e Tecnologia | Compatível com conjuntos de dados baseados no [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR) e com conjuntos de dados gerados pelo WebSDK. Consulte a [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR)Se você usa a coleção de dados do SDK da Web da Experience Platform, Dispositivo e as dimensões baseadas na pesquisa Dispositivo não são compatíveis no momento. Uma futura compatibilidade está planejada. Para adicionar pesquisas de dispositivos e navegadores à sequência de dados do SDK da web, consulte [esta documentação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure.html) |
-| O complemento Coleção de mídia de transmissão | Os dados de mídia de transmissão estão disponíveis usando o conector de origem do Analytics como parte do painel Visualizadores simultâneos de mídia e do painel Tempo gasto com a reprodução da mídia no Workspace. |
+| O complemento Coleção de mídia de transmissão | Os dados de mídia de transmissão estão disponíveis ao usar o conector de origem do Analytics como parte do painel Visualizadores simultâneos de mídia e do painel Tempo gasto na reprodução de mídia do espaço de trabalho. |
 
 {style="table-layout:auto"}
 
