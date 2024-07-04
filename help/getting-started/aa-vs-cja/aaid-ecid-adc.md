@@ -5,9 +5,9 @@ exl-id: c983cf50-0b6c-4daf-86a8-bcd6c01628f7
 feature: Basics
 role: User
 source-git-commit: 5c5f276711f39abb1b3f3b955ad99e17cb0ac09c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ No identityMap:
 Caso contrário, a AAID é marcada como a identidade principal do evento.
 * AACUSTOMID nunca é marcada como a ID principal do evento. No entanto, se AACUSTOMID estiver presente, a AAID é baseado na AACUSTOMID de acordo com a discussão acima.
 
-Quando a identidade ou identidades são copiadas em `identityMap`, `endUserIDs._experience.mcid.namespace.code` também é definida no mesmo evento:
+Quando a identidade ou as identidades são copiadas para o `identityMap`, o `endUserIDs._experience.mcid.namespace.code` também é definido no mesmo evento:
 
-* Se a AAID estiver presente, `endUserIDs._experience.aaid.namespace.code` está definido como &quot;AAID&quot;.
-* Se a ECID estiver presente, `endUserIDs._experience.mcid.namespace.code` está definido como &quot;ECID&quot;.
-* Se AACUSTOMID estiver presente, `endUserIDs._experience.aacustomid.namespace.code` está definido como &quot;AACUSTOMID&quot;.
+* Se a AAID estiver presente, o `endUserIDs._experience.aaid.namespace.code` será definido como “AAID”.
+* Se a ECID estiver presente, o `endUserIDs._experience.mcid.namespace.code` será definido como “ECID”.
+* Se a AACUSTOMID estiver presente, o `endUserIDs._experience.aacustomid.namespace.code` será definido como “AACUSTOMID”.
 
 ## Customer Journey Analytics e ID primária
 

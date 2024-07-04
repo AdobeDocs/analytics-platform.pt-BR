@@ -5,29 +5,29 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1541'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
-# Integrar o Journey Optimizer com o Customer Journey Analytics
+# Integrar o Journey Optimizer ao Customer Journey Analytics
 
-O [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) ajuda a fornecer experiências conectadas, contextuais e personalizadas. Ele ajuda a apresentar seus clientes à próxima etapa da jornada do cliente.
+O [Adobe Journey Optimizer](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/get-started/get-started) ajuda a fornecer experiências conectadas, contextuais e personalizadas. Ele ajuda a apresentar seus clientes à próxima etapa da jornada do cliente.
 
-É possível configurar dados gerados pelo Journey Optimizer para executar análise avançada no Customer Journey Analytics. É possível configurar essa integração automaticamente. Se necessário, você pode fazer personalizações manuais adicionais nos conjuntos de dados, dimensões ou métricas que estão disponíveis em sua conexão ou visualizações de dados.
+É possível configurar dados gerados pelo Journey Optimizer para realizar análises avançadas no Customer Journey Analytics. É possível configurar essa integração automaticamente. Se necessário, é possível fazer personalizações manuais adicionais nos conjuntos de dados, dimensões ou métricas que estão disponíveis em sua conexão ou visualizações de dados.
 
 ## Configurar automaticamente a integração do Journey Optimizer
 
 {{release-limited-testing-section}}
 
-A Journey Optimizer oferece suporte ao uso do Customer Journey Analytics como mecanismo de relatórios. Consulte [Introdução à nova interface de relatórios](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/report-gs-cja) na documentação do Journey Optimizer.
+O Journey Optimizer oferece suporte ao uso do Customer Journey Analytics como mecanismo de relatórios. Consulte [Introdução à nova interface de relatórios](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channel-report/report-gs-cja) na documentação do Journey Optimizer.
 
-Quando você tiver ativado os relatórios de Customer Journey Analytics para o Journey Optimizer, automaticamente uma [conexão](/help/connections/overview.md) e [visualização de dados](/help/data-views/data-views.md) são criados para a sandbox específica.
+Ao habilitar os relatórios do Customer Journey Analytics para o Journey Optimizer, uma [conexão](/help/connections/overview.md) e uma [visualização de dados](/help/data-views/data-views.md) são criadas automaticamente para a sandbox específica.
 
 ### Conexão
 
-A conexão tem o nome **[!UICONTROL Conexão ativada pelo AJO (*nome da sandbox*)]** e tem os seguintes valores prontos para uso para configuração e conjuntos de dados:
+A conexão tem o nome **[!UICONTROL Conexão habilitada para o AJO (*nome da sandbox*)]** e disponibiliza os seguintes valores prontos para uso para configuração e conjuntos de dados:
 
 | **Configurações de conexão** | Valor |
 |---|---| 
@@ -38,41 +38,41 @@ A conexão tem o nome **[!UICONTROL Conexão ativada pelo AJO (*nome da sandbox*
 
 | **Configurações de dados** | Valor |
 |---|---| 
-| [!UICONTROL Ativar janela de dados contínuos] | Ativado. [!UICONTROL Número de meses selecionado] `13`. |
-| [!UICONTROL Sandbox] | [!UICONTROL *nome da sandbox*] (desativado; não é possível modificar essa configuração). |
+| [!UICONTROL Habilitar janela de dados contínuos] | Habilitado. [!UICONTROL Número de meses selecionado] `13`. |
+| [!UICONTROL Sandbox] | [!UICONTROL *nome da sandbox*] (desabilitado; não é possível modificar essa configuração). |
 | [!UICONTROL Número médio de eventos diários] | menos de 1 milhão (desabilitado; não é possível modificar esta configuração). |
 
 
-| Nome do conjunto de dados | Esquema | Tipo de conjunto de dados | Tipo de fonte de dados | ID da pessoa | Chave | Chave correspondente | Importar novos dados | Dados de preenchimento retroativo |
+| Nome do conjunto de dados | Esquema | Tipo de conjunto de dados | Tipo de fonte de dados | ID de pessoa | Chave | Chave correspondente | Importar novos dados | Dados de preenchimento retroativo |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL Conjunto de dados da entidade AJO] | [!UICONTROL Esquema de registro de entidade AJO] | [!UICONTROL Pesquisa] | [!UICONTROL Outro] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
-| [!UICONTROL Jornada eventos de etapa] | [!UICONTROL Esquema de evento de etapa de Jornada para o Journey Orchestration] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL  IdentityMap(\&lt;primary>)] | - | - | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
-| [!UICONTROL Conjunto de dados de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema do evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
-| [!UICONTROL Conjunto de dados de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema do evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
-| [!UICONTROL Conjunto de dados do evento de feedback de mensagem do AJO] | [!UICONTROL Esquema do evento de feedback de mensagem do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
-| [!UICONTROL Conjunto de dados de evento de experiência de rastreamento de push do AJO] | [!UICONTROL Esquema do evento de experiência de rastreamento de push do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary>)] | - | - | ![Status Verde](assets/../../connections/assets/status-green.svg) Ligado | ![Cinza de Status](assets/../../connections/assets/status-gray.svg) Desligado |
+| [!UICONTROL Conjunto de dados de entidade do AJO] | [!UICONTROL Esquema de registro de entidade do AJO] | [!UICONTROL Pesquisa] | [!UICONTROL Outro] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Eventos de etapa da jornada] | [!UICONTROL Esquema de evento de etapa da jornada do Journey Orchestration] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Conjunto de dados de eventos de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Conjunto de dados de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Conjunto de dados de evento de feedback de mensagem do AJO] | [!UICONTROL Esquema de evento de feedback de mensagem do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Conjunto de dados de evento de experiência de rastreamento por push do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento por push do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 
 
 ### Visualização de dados
 
-A visualização de dados tem o nome **Habilitar visualização de dados do AJO (*nome da sandbox*)**.
+A visualização de dados tem o nome **Visualização de dados habilitada para o AJO (*nome da sandbox*)**.
 
-- No **[!UICONTROL Configurar]** , os seguintes valores serão configurados imediatamente.
+- Na guia **[!UICONTROL Configurar]**, os seguintes valores são definidos imediatamente.
 
   | Configurações  | Valor |
   |---|---|
-  | [!UICONTROL Conexão] | Conexão ativada pelo AJO (*nome da sandbox*) |
+  | [!UICONTROL Conexão] | Conexão habilitada para o AJO (*nome da sandbox*) |
   | [!UICONTROL Nome] | `AJO Enabled Data View (`_`sandbox name`_`)` |
-  | [!UICONTROL ID externa] | `AJO_Enabled_Data_View__`_`sandbox_name`_`_` (derivado do nome) |
+  | [!UICONTROL ID externa] | `AJO_Enabled_Data_View__`_`sandbox_name`_`_` (derivado do nome) |
   | [!UICONTROL Descrição] | `undefined` |
 
   {style="table-layout:fixed"}
 
   | Compatibilidade | Valor |
   |---|---|
-  | [!UICONTROL Definir como visualização de dados padrão no Adobe Journey Optimizer] | Ativado (padrão).<br/><br/>Essa opção de configuração permite designar uma visualização de dados para usar com o Journey Optimizer, sem a necessidade de configuração manual. Para obter informações sobre como ativar essa opção de configuração (se ainda não estiver habilitada por padrão), consulte [Compatibilidade](/help/data-views/create-dataview.md#compatibility) seção em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md). <br/><br/>Quando você desativa a opção, uma caixa de diálogo pergunta se você deseja continuar alterando a visualização de dados padrão. Ao selecionar **[!UICONTROL Continuar]**, é necessário selecionar outra visualização de dados como a visualização de dados padrão. Selecionar **[!UICONTROL Confirmar o]** para confirmar a seleção. Selecionar **[!UICONTROL Cancelar]** para cancelar a alteração da visualização de dados padrão. |
+  | [!UICONTROL Definir como visualização de dados padrão no Adobe Journey Optimizer] | Habilitado (padrão).<br/><br/>Esta opção de configuração permite designar uma visualização de dados para usar com o Journey Optimizer, sem a necessidade de configuração manual. Para obter informações sobre como habilitar essa opção de configuração (se ainda não estiver habilitada por padrão), consulte a seção [Compatibilidade](/help/data-views/create-dataview.md#compatibility) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md). <br/><br/>Ao desabilitar a opção, uma caixa de diálogo pergunta se você deseja continuar com a alteração da visualização de dados padrão. Ao selecionar **[!UICONTROL Continuar]**, é necessário selecionar outra visualização de dados como padrão. Clique em **[!UICONTROL Confirmar]** para confirmar a seleção. Selecione **[!UICONTROL Cancelar]** para cancelar a alteração da visualização de dados padrão. |
 
-  | Contêineres | Valor |
+  | Containers | Valor |
   |---|---|
   | [!UICONTROL Nome do container de pessoas] | `Person` |
   | [!UICONTROL Nome do container da sessão] | `Session` |
@@ -86,26 +86,26 @@ A visualização de dados tem o nome **Habilitar visualização de dados do AJO 
   | [!UICONTROL Primeiro dia da semana] | Domingo |
 
 
-- No **Componentes** guia:
-   - Todas as métricas e dimensões que têm [!UICONTROL (AJO)] anexados ao seu nome são adicionados automaticamente como parte dessa configuração automática.
-   - Algumas métricas ou dimensões, que foram adicionadas automaticamente, são baseadas em campos derivados. Esses campos derivados são criados especificamente para essa integração. Por exemplo, a métrica [!UICONTROL Cliques na página inicial (AJO)] baseia-se no [!UICONTROL Cliques na landing page] campo derivado.
-   - Algumas métricas ou dimensões têm configuração adicional. Por exemplo, [!UICONTROL Reclamação de spam (AJO)] tem [!UICONTROL Formato] e [!UICONTROL Incluir/Excluir valores] configurações aplicadas.
-   - Todas as métricas e dimensões adicionadas automaticamente têm um rótulo de contexto chamado `:`*`name_of_metric_or_dimension`*. Por exemplo, a variável [!UICONTROL Cliques na página inicial (AJO)] a métrica tem o rótulo de contexto `:Landing page clicks (AJO)`.
+- Na guia **Componentes**:
+   - Todas as métricas e dimensões que têm [!UICONTROL (AJO)] anexado ao nome são adicionadas automaticamente como parte dessa configuração automática.
+   - Algumas métricas ou dimensões (que foram adicionadas automaticamente) são baseadas em campos derivados. Esses campos derivados são criados especificamente para essa integração. Por exemplo, a métrica [!UICONTROL Cliques na página de destino (AJO)] se baseia no campo derivado [!UICONTROL Cliques na página de destino].
+   - Algumas métricas ou dimensões têm configuração adicional. Por exemplo, [!UICONTROL Reclamação de spam (AJO)] tem as configurações [!UICONTROL Formato] e [!UICONTROL Incluir/Excluir valores] aplicadas.
+   - Todas as métricas e dimensões adicionadas automaticamente têm um rótulo de contexto chamado `:`*`name_of_metric_or_dimension`*. Por exemplo, a métrica [!UICONTROL Cliques na página de destino (AJO)] tem o rótulo de contexto `:Landing page clicks (AJO)`.
 
-- No **[!UICONTROL Configurações]** , nenhum valor de configuração específico é aplicado
+- A guia **[!UICONTROL Configurações]** não utiliza nenhum valor de configuração específico
 
 >[!IMPORTANT]
 >
->Modificar qualquer um dos valores configurados automaticamente para a conexão e a visualização de dados tem consequências para os relatórios do Journey Optimizer que dependem e usam a integração de Customer Journey Analytics configurada automaticamente.
+>Modificar qualquer um dos valores definidos automaticamente para a conexão e a visualização de dados tem consequências para os relatórios do Journey Optimizer que dependem e usam as configurações automáticas da integração do Customer Journey Analytics.
 
 
-## Configurar manualmente uma visualização de dados para ser usada com o Journey Optimizer
+## Configurar manualmente uma visualização de dados para usar com o Journey Optimizer
 
-As seções a seguir descrevem como é possível usar dados gerados pelo Journey Optimizer manualmente para executar análise avançada no Customer Journey Analytics. Isso é necessário somente se o [opção de configuração automática](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) é insuficiente para suas necessidades.
+As seções a seguir descrevem como usar manualmente os dados gerados pelo Journey Optimizer para executar análises avançadas no Customer Journey Analytics. Isso é necessário somente se a [opção de configuração automática](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) for insuficiente para suas necessidades.
 
-### Enviar dados do Journey Optimizer para o Experience Platform
+### Enviar dados do Journey Optimizer para a Experience Platform
 
-A Adobe Experience Platform serve como a fonte de dados central e o vínculo entre o Journey Optimizer e o Customer Journey Analytics. Consulte [Introdução aos conjuntos de dados](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) no guia do usuário do Journey Optimizer para obter etapas sobre como enviar dados do Journey Optimizer para o Experience Platform como um conjunto de dados.
+A Adobe Experience Platform serve como a fonte de dados central e o vínculo entre o Journey Optimizer e o Customer Journey Analytics. Consulte [Introdução aos conjuntos de dados](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) no guia do usuário do Journey Optimizer para ver as etapas de como enviar dados do Journey Optimizer para a Experience Platform como um conjunto de dados.
 
 ### Criar uma conexão no Customer Journey Analytics
 
@@ -119,7 +119,7 @@ Selecione e configure os seguintes conjuntos de dados:
 | Conjunto de dados do evento de experiência de rastreamento de email do AJO | Evento | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de email, como “[!UICONTROL Aberturas]”, “[!UICONTROL Cliques]” e “[!UICONTROL Cancelamentos de assinatura]”. |
 | Conjunto de dados do evento de experiência de rastreamento de push do AJO | Evento | ID da pessoa: `IdentityMap` | Contém eventos de rastreamento de push, como “[!UICONTROL Inicializações do aplicativo]”. |
 | Eventos de etapa da jornada | Evento | ID de pessoa: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contém eventos que mostram quais perfis participaram de cada nó da jornada. |
-| Conjunto de dados de entidade do AJO | Pesquisa | Chave: `_id`<br>Chave correspondente: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contém classificações que associam metadados de Jornada e Campanha a todos os dados de evento do Journey Optimizer. |
+| Conjunto de dados de entidade do AJO | Pesquisa | Chave: `_id`<br>Chave correspondente: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contém classificações que associam metadados de jornada e campanha a todos os dados de evento do Journey Optimizer. |
 
 {style="table-layout:auto"}
 
@@ -130,12 +130,12 @@ Após criar uma conexão, é possível criar uma ou mais [visualizações de dad
 
 >[!NOTE]
 >
->As discrepâncias de dados entre o Journey Optimizer e o Customer Journey Analytics normalmente são inferiores a 1-2%. Discrepâncias maiores são possíveis para dados coletados nas últimas duas horas. Use intervalos de datas, excluindo a data de hoje, para atenuar discrepâncias envolvendo o tempo de processamento.
+>As discrepâncias de dados entre o Journey Optimizer e o Customer Journey Analytics normalmente são menores do que 1 a 2%. Discrepâncias maiores são possíveis para dados coletados nas últimas duas horas. Use intervalos de datas, excluindo a data de hoje, para atenuar discrepâncias envolvendo o tempo de processamento.
 
 
 #### Configurar dimensões na visualização de dados
 
-Você pode criar as seguintes dimensões em uma visualização de dados para obter uma paridade aproximada com dimensões semelhantes no Journey Optimizer. Consulte [Configurações do componente](/help/data-views/component-settings/overview.md) no Gerenciador de View de Dados para obter detalhes sobre as opções de personalização de dimensões.
+Você pode criar as seguintes dimensões em uma visualização de dados para obter uma paridade aproximada com dimensões semelhantes no Journey Optimizer. Consulte [Configurações do componente](/help/data-views/component-settings/overview.md) no Gerenciador de visualização de dados para obter detalhes sobre as opções de personalização de dimensões.
 
 | Dimensão | Elemento de esquema | Configurações de componente |
 | --- | --- | --- |

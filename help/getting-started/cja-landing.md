@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ O Assistente de IA é uma experiência de conversação que permite que os profi
 
 >[!TAB Compilação baseada em gráfico]
 
-Por meio da compilação baseada em gráfico, é possível usar o gráfico de identidade do Serviço de identidade do Experience Platform para obter uma melhor visualização da jornada do cliente: <ul><li>Associar conjuntos de dados com identificadores diferentes sem precisar extrair, transformar e carregar dados adicionais para refletir um único identificador.</li> <li>Melhorar a cobertura da identidade preferencial ou dourada para um único conjunto de dados ao compartilhar identidades entre conjuntos de dados,</li><li>Alinhamento dos perfis criados no Real-time Customer Data Platform e no Journey Optimizer com as pessoas no Customer Journey Analytics.</li></ul>
+Por meio da compilação baseada em gráfico, é possível usar o gráfico de identidade do Experience Platform Identity Service para obter uma visão melhor da jornada do cliente por: <ul><li>Associar conjuntos de dados com identificadores diferentes sem precisar extrair, transformar e carregar dados adicionais para refletir um único identificador.</li> <li>Aprimorar a cobertura de identidade preferencial ou “ouro” de um único conjunto de dados ao compartilhar identidades entre conjuntos de dados.</li><li>Alinhamento dos perfis criados na Real-Time Customer Data Platform e no Journey Optimizer com pessoas no Customer Journey Analytics.</li></ul>
 
 [![imagem](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
@@ -43,7 +43,7 @@ Como parte da configuração de uma conexão, você pode transformar conjuntos d
 
 >[!TAB Campos derivados]
 
-Novas funções de campo derivadas (Matemática, Próximo ou Anterior, Resumir) e modelos de função adicionais (como Rejeições, Nome do conjunto de dados amigável, Temporada de feriados, Metas mensais, Detecção de bot simples e outros) estão disponíveis.
+Há novas funções de campos derivados (Matemática, Próximo ou Anterior, Resumo) e modelos de função adicionais (como Rejeições, Nome amigável do conjunto de dados, Temporada de festas, Metas mensais, Detecção de bots simples e outros) disponíveis.
 
 [![imagem](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
@@ -53,7 +53,7 @@ A extensão BI permite acesso SQL às visualizações de dados definidas no Cust
 
 [![imagem](assets/learn-more-button.svg)](/help/data-views/bi-extension.md)
 
-*_Você deve ter o pacote Select ou superior para usar a extensão BI._*
+*_Você deve ter o pacote Select ou superior para usar a extensão de BI._*
 
 
 <!--

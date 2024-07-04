@@ -10,9 +10,9 @@ user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 6d4dd1cd0e2c9b89ed37ca713ecc6d5db7d9e745
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1102'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 98%
       + [Visão geral dos Projetos](../analysis-workspace/build-workspace-project/freeform-overview.md)
       + [Criar projetos](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Salvar projetos](../analysis-workspace/build-workspace-project/save-projects.md)
-      + [Sumário do projeto](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
+      + [Índice do projeto](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Pastas no Espaço de trabalho {#workspace-folders}
          + [Sobre pastas no Espaço de trabalho](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Criar pastas e subpastas](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)

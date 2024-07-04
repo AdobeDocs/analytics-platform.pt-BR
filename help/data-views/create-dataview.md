@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1761'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Para configurar uma visualização de dados nova ou existente:
 1. Selecione **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
 
-### Configurações
+### Configurações 
 
 Fornece configurações abrangentes para a visualização de dados.
 
@@ -54,17 +54,17 @@ Fornece configurações abrangentes para a visualização de dados.
 
 {{release-limited-testing-section}}
 
-Fornece as configurações aplicáveis ao usar o Adobe Journey Optimizer além do Customer Journey Analytics.
+Fornece as configurações aplicáveis ao usar o Adobe Journey Optimizer junto com o Customer Journey Analytics.
 
-Esta seção está visível somente para administradores provisionados com o Journey Optimizer.
+Esta seção é visível somente para admins provisionados com o Journey Optimizer.
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL **Definir como visualização de dados padrão no Adobe Journey Optimizer**] | Essa opção de configuração padroniza os relatórios no Journey Optimizer e no Customer Journey Analytics. Ele também permite executar análise avançada dos dados do Adobe Journey Optimizer no Customer Journey Analytics (selecionando ![Abertura](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) [!UICONTROL **Analisar no CJA**] no Journey Optimizer).<p>Para executar esse tipo de análise, o Journey Optimizer precisa acessar uma visualização de dados do Customer Journey Analytics.<p>Habilite essa opção para tornar essa a visualização de dados padrão usada nos relatórios do Journey Optimizer para sua sandbox.</p><p>Essa opção de configuração automaticamente:</p><ul><li>Configura todos os conjuntos de dados do Journey Optimizer necessários na conexão associada no Customer Journey Analytics para uso com o Journey Optimizer.</li><li>Cria um conjunto de métricas e dimensões do Journey Optimizer na visualização de dados (incluindo campos derivados e métricas calculadas). Os rótulos de contexto são definidos automaticamente em todas essas métricas e dimensões.</li></ul><p><p>Considere o seguinte ao habilitar essa opção: <ul><li>É possível alterar a visualização de dados padrão posteriormente, mas isso pode alterar os dados de relatórios do Journey Optimizer. Se você optar por desativar essa opção depois que ela for ativada, será solicitado que você selecione uma nova visualização de dados padrão.</li><li>Se você já tiver feito personalizações manuais nos conjuntos de dados, dimensões ou métricas na visualização de dados do Customer Journey Analytics, suas personalizações manuais permanecerão intactas ao ativar essa opção de configuração. Essa opção faz personalizações adicionais que padronizam ainda mais os relatórios no Journey Optimizer e no Customer Journey Analytics. Você também pode fazer personalizações manuais depois de ativar essa opção.</li></ul>Consulte [Integrar o Adobe Journey Optimizer com o Adobe Customer Journey Analytics](/help/integrations/ajo.md) para obter mais informações. |
+| [!UICONTROL **Definir como visualização de dados padrão no Adobe Journey Optimizer**] | Essa opção de configuração padroniza os relatórios no Journey Optimizer e no Customer Journey Analytics. Também permite executar análises avançadas dos dados do Adobe Journey Optimizer no Customer Journey Analytics (selecionando as opções ![Abrir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) e [!UICONTROL **Analisar no CJA**] no Journey Optimizer).<p>Para executar esse tipo de análise, o Journey Optimizer precisa acessar uma visualização de dados do Customer Journey Analytics.<p>Habilite esta opção para torná-la a visualização de dados padrão usada nos relatórios do Journey Optimizer da sandbox.</p><p>Essa opção de configuração automaticamente:</p><ul><li>Configura todos os conjuntos de dados do Journey Optimizer necessários na conexão associada no Customer Journey Analytics para uso com o Journey Optimizer.</li><li>Cria um conjunto de métricas e dimensões do Journey Optimizer na visualização de dados (incluindo campos derivados e métricas calculadas). Os rótulos de contexto são definidos automaticamente em todas essas métricas e dimensões.</li></ul><p><p>Considere o seguinte ao habilitar essa opção: <ul><li>É possível alterar a visualização de dados padrão posteriormente, mas isso pode alterar os dados dos relatórios do Journey Optimizer. Se optar por desabilitar essa opção posteriormente, será necessário selecionar uma nova visualização de dados padrão.</li><li>Se você já fez personalizações manuais nos conjuntos de dados, dimensões ou métricas na visualização de dados do Customer Journey Analytics, elas permanecerão intactas ao habilitar essa opção de configuração. Essa opção faz personalizações adicionais que padronizam ainda mais os relatórios no Journey Optimizer e no Customer Journey Analytics. Você também pode fazer personalizações manuais depois de habilitar essa opção.</li></ul>Consulte [Integrar o Adobe Journey Optimizer ao Adobe Customer Journey Analytics](/help/integrations/ajo.md) para obter mais informações. |
 
 {style="table-layout:auto"}
 
-### Contêineres
+### Containers
 
 Determina o nome dos containers para a visualização de dados. Os nomes dos containers são usados com frequência em [filtros](/help/components/filters/filters-overview.md#Filter-containers).
 
