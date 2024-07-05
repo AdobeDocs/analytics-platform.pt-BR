@@ -4,14 +4,21 @@ description: Como usar e interpretar o painel de atribuição no Analysis Worksp
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 4ed05334a3866ec784901d273fcb13bd24b2d449
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 77%
+source-wordcount: '554'
+ht-degree: 75%
 
 ---
 
-# Painel de atribuição
+# Painel de atribuição {#attribution-panel}
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_attribution"
+>title="Atribuição"
+>abstract="Compare e visualize modelos de atribuição rapidamente usando qualquer dimensão e métrica de conversão"
+>additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Attribution IQ panel"
+
 
 O painel [!UICONTROL Atribuição] é uma maneira fácil de criar uma análise comparando vários modelos de atribuição. É um recurso que oferece um espaço de trabalho dedicado para usar e comparar modelos de atribuição.
 
