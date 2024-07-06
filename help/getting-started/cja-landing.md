@@ -4,10 +4,10 @@ description: Página inicial do Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
-workflow-type: ht
-source-wordcount: '758'
-ht-degree: 100%
+source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 98%
 
 ---
 
@@ -29,11 +29,13 @@ O Assistente de IA é uma experiência de conversação que permite que os profi
 
 [![imagem](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
->[!TAB Compilação baseada em gráfico]
+>[!TAB Compilação baseada em gráfico*]
 
 Por meio da compilação baseada em gráfico, é possível usar o gráfico de identidade do Experience Platform Identity Service para obter uma visão melhor da jornada do cliente por: <ul><li>Associar conjuntos de dados com identificadores diferentes sem precisar extrair, transformar e carregar dados adicionais para refletir um único identificador.</li> <li>Aprimorar a cobertura de identidade preferencial ou “ouro” de um único conjunto de dados ao compartilhar identidades entre conjuntos de dados.</li><li>Alinhamento dos perfis criados na Real-Time Customer Data Platform e no Journey Optimizer com pessoas no Customer Journey Analytics.</li></ul>
 
 [![imagem](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
+
+*_Você deve ter o pacote Prime para compilação baseada em gráfico._*
 
 >[!TAB Pesquisas B2B]
 
