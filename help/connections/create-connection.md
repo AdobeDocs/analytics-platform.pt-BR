@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ce1a6b631baefaccf7daac5ebaf272bd5c7ed88a
-workflow-type: ht
-source-wordcount: '3027'
-ht-degree: 100%
+source-git-commit: 3176be3fe1a117718cd675a4ed79df978d1f33f6
+workflow-type: tm+mt
+source-wordcount: '3174'
+ht-degree: 95%
 
 ---
 
@@ -72,15 +72,33 @@ O novo fluxo de trabalho permite adicionar um conjunto de dados da Experience Pl
 
 1. Na caixa de diálogo Configurações de conexão, clique em **[!UICONTROL Adicionar conjuntos de dados]**.
 
-2. Na etapa [!UICONTROL Selecionar conjuntos de dados], selecione um ou mais conjuntos de dados e clique em **[!UICONTROL Próximo]**. Pelo menos um conjunto de dados de evento deve fazer parte da conexão.
+1. No [!UICONTROL Selecionar conjuntos de dados] etapa, você verá uma lista dos conjuntos de dados de Experience Platform.
+
+   ![Selecionar conjuntos de dados](assets/select-datasets.png)
+
+   Para cada conjunto de dados, a lista mostra:
+
+   | Coluna | Descrição |
+   |---|---|
+   | Conjunto de dados | Nome do conjunto de dados. Selecione o nome para direcioná-lo ao conjunto de dados no Experience Platform. Selecionar ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para exibir um pop-up com mais detalhes para o conjunto de dados. No pop-up, é possível selecionar **[!UICONTROL Editar na plataforma]** para editar o conjunto de dados diretamente no Experience Platform. |
+   | Tipo de conjunto de dados | O tipo de conjunto de dados: Evento, Perfil ou Pesquisa. |
+   | Número de registros | O número de registros disponíveis no último lote do conjunto de dados no Experience Platform. |
+   | Esquema | O esquema no qual o conjunto de dados se baseia. Selecione o nome para direcioná-lo ao esquema no Experience Platform. |
+   | Último lote | O estado do último lote assimilado no Experience Platform. Consulte [Estados em lote](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) mais informações. |
+   | ID do conjunto de dados | A ID do conjunto de dados. |
+   | Última atualização | O carimbo de data e hora da última atualização do conjunto de dados. |
+
+
+1. Selecione um ou mais conjuntos de dados e **[!UICONTROL Próxima]**. Pelo menos um conjunto de dados de evento deve fazer parte da conexão.
    * Para alterar as colunas exibidas para a lista de conjuntos de dados, selecione ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) e selecione as colunas a serem exibidas na caixa de diálogo [!UICONTROL Personalizar tabela].
    * Para pesquisar um conjunto de dados específico, use o campo ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
    * Para alternar entre mostrar ou ocultar os conjuntos de dados selecionados, clique em ![Selecionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Ocultar selecionados]** ou **[!UICONTROL Mostrar selecionados]**.
    * Para remover um conjunto de dados da lista de conjuntos de dados selecionados, use ![Fechar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Para remover todos os conjuntos de dados selecionados, clique em **[!UICONTROL Limpar tudo]**.
 
-   ![Selecionar conjuntos de dados](assets/select-datasets.png)
 
-3. Agora, configure os conjuntos de dados um por um.
+
+
+1. Agora, configure os conjuntos de dados um por um.
 
    ![Configurar conjuntos de dados](assets/add-dataset.png)
 
