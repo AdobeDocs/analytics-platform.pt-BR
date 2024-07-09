@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
+source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
 workflow-type: tm+mt
-source-wordcount: '3809'
+source-wordcount: '3817'
 ht-degree: 12%
 
 ---
@@ -350,9 +350,9 @@ As seguintes limitações se aplicam especificamente à compilação baseada em 
 
 Assim que sua organização atender a todas as [pré-requisitos](#prerequisites) e compreenda as [limitações](#limitations) e específico do método de compilação ([baseado em campo](#limitations-1) e [baseado em gráfico](#limitations-2)), é possível seguir essas etapas para começar a usar a compilação no Customer Journey Analytics.
 
-### Opções
+### Selecionar opções
 
-Selecione as opções de compilação. O pacote Customer Journey Analytics determina os métodos de compilação disponíveis, as opções de duração do preenchimento retroativo inicial, a janela de pesquisa, a frequência de repetição e o número máximo de conjuntos de dados permitidos para compilação. Consulte a [Descrição do produto Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) para obter mais detalhes.
+O pacote de Customer Journey Analytics que você tem direito determina os métodos de compilação disponíveis, as opções para a duração do preenchimento retroativo inicial, a janela de pesquisa, a frequência de repetição e o número máximo de conjuntos de dados permitidos para compilação. Consulte a [Descrição do produto Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) para obter mais detalhes. Decida sobre as opções disponíveis antes de solicitar suporte.
 
 | | Customer Journey Analytics<br/>Selecionar | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
