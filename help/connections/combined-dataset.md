@@ -1,11 +1,11 @@
 ---
 title: Conjuntos de dados de evento combinados
-description: Saiba como Customer Journey Analytics cria uma conexão combinando conjuntos de dados.
+description: Saiba como o Customer Journey Analytics cria uma conexão combinando conjuntos de dados.
 exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3389c141105ff71ed26abe4384fe3bb930448d43
+source-git-commit: 22f3519445564ebdb2092db04cc966001bda8b1c
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 35%
@@ -15,10 +15,10 @@ ht-degree: 35%
 
 # Conjuntos de dados de evento combinados
 
-Ao criar uma conexão, o Customer Journey Analytics combina todos os conjuntos de dados de eventos em um único conjunto de dados. Essa evento conjunto de dados combinada é o que Customer Journey Analytics usa para relatórios (junto com conjuntos de dados de perfil e pesquisa). Ao incluir vários conjuntos de dados de eventos em uma conexão:
+Ao criar uma conexão, o Customer Journey Analytics combina todos os conjuntos de dados de eventos em um único conjunto de dados. Esse conjunto de dados combinados de eventos é o que o Customer Journey Analytics usa para os relatórios (juntamente com conjuntos de dados de perfil e pesquisa). Ao incluir vários conjuntos de dados de eventos em uma conexão:
 
-* Os dados dos campos em conjuntos de dados com base na **mesma schema caminho** são unidos em uma única coluna na conjunto de dados combinada.
-* A coluna ID da pessoa, especificada para cada conjunto de dados, é mesclada em uma única coluna na conjunto de dados combinada, **independentemente do nome**. Essa coluna é a base da identificação de pessoas únicas no Customer Journey Analytics.
+* Os dados para campos em conjuntos de dados com base na variável **mesmo caminho de esquema** são mesclados em uma única coluna no conjunto de dados combinado.
+* A coluna ID de pessoa, especificada para cada conjunto de dados, é mesclada em uma única coluna no conjunto de dados combinado, **independentemente do nome**. Essa coluna é a base para identificar pessoas únicas no Customer Journey Analytics.
 * As linhas são processadas com base no carimbo de data e hora.
 * Os eventos são resolvidos até o nível de milissegundo.
 
@@ -28,7 +28,7 @@ Considere o exemplo a seguir. Você tem dois conjuntos de dados de eventos, cada
 
 >[!NOTE]
 >
->Adobe Experience Platform normalmente armazena um carimbo de data e hora em milissegundos UNIX®. Para leitura neste exemplo, data e hora são usadas.
+>A Adobe Experience Platform geralmente armazena um carimbo de data e hora em milissegundos do UNIX®. Neste exemplo, são usadas data e hora.
 
 | `example_id` | `timestamp` | `string_color` | `string_animal` | `metric_a` |
 | --- | --- | --- | --- | --- |
@@ -45,12 +45,12 @@ Considere o exemplo a seguir. Você tem dois conjuntos de dados de eventos, cada
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | `Square` | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | `Triangle` | `3.1` |
 
-Ao criar uma conexão usando esses dois conjuntos de dados evento, e identificar
+Ao criar uma conexão usando esses dois conjuntos de dados de eventos e tiver identificado
 
 * `example_id` como a ID de pessoa para o primeiro conjunto de dados e
-* `different_id` como A ID da pessoa para o segundo conjunto de dados,
+* `different_id` como a ID de pessoa para o segundo conjunto de dados,
 
-a conjunto de dados combinada a seguir é usada para relatórios.
+o conjunto de dados combinado a seguir é usado para os relatórios.
 
 | `id` | `timestamp` | `string_color` | `string_animal` | `string_shape` | `metric_a` | `metric_b` |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -64,9 +64,9 @@ a conjunto de dados combinada a seguir é usada para relatórios.
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-Para ilustrar a importância dos schema caminhos, considere este cenário. No primeiro conjunto de dados, `string_color` baseia-se schema caminho `_experience.whatever.string_color` e na segunda conjunto de dados em schema caminho  `_experience.somethingelse.string_color`. Nesse cenário, os dados não **são** unidos em uma coluna no conjunto de conjunto de dados resultante. Em vez disso, o resultado é duas `string_color` colunas na conjunto de dados combinada.
+Para ilustrar a importância dos caminhos de esquema, considere este cenário. No primeiro conjunto de dados, `string_color` é baseado no caminho do esquema `_experience.whatever.string_color` e no segundo conjunto de dados no caminho do esquema  `_experience.somethingelse.string_color`. Nesse cenário, os dados são **não** mesclado em uma coluna no conjunto de dados combinado resultante. Em vez disso, o resultado é dois `string_color` no conjunto de dados combinado.
 
-Esse conjunto de dados combinados de eventos é o que é usado nos relatórios. Não importa de qual conjunto de dados linha. Customer Journey Analytics trata todos os dados como se estivesse na mesma conjunto de dados. Se uma ID de pessoa correspondente aparecer em ambos os conjuntos de dados, elas serão consideradas as mesmas único usuário. Se uma ID de pessoa correspondente aparecer em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, elas serão consideradas parte da mesma sessão. Campos com caminhos de schema idênticos são unidos.
+Esse conjunto de dados combinados de eventos é o que é usado nos relatórios. Não importa de que conjunto de dados uma linha é derivada. O Customer Journey Analytics trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados a mesma pessoa única. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão. Os campos com caminhos de esquema idênticos são mesclados.
 
 Este conceito também se aplica à atribuição. Não importa de que conjunto de dados uma linha é derivada; a atribuição funciona exatamente como se todos os eventos viessem de um único conjunto de dados. Usando as tabelas acima como exemplo:
 
@@ -88,28 +88,28 @@ No entanto, se você incluiu ambas as tabelas em sua conexão, a atribuição se
 
 >[!NOTE]
 >
->Se um campo mesclado for uma chave de pesquisa para um conjunto de dados de evento na conexão, o conjunto de dados de pesquisa associado será enriquecido *all* valores desse campo. Não importa de que conjunto de dados de evento uma linha é derivada, pois a relação de pesquisa está associada ao caminho de esquema compartilhado.
+>Se um campo mesclado for uma chave de pesquisa para um conjunto de dados de evento na conexão, o conjunto de dados de pesquisa associado será enriquecido **all** valores desse campo. Não importa de que conjunto de dados de evento uma linha é derivada, pois a relação de pesquisa está associada ao caminho de esquema compartilhado.
 
 ## Análise entre canais
 
 O próximo nível de combinação de conjuntos de dados é a análise entre canais, em que os conjuntos de dados de diferentes canais são combinados, com base em um identificador comum (ID de pessoa). A análise entre canais pode se beneficiar da funcionalidade de compilação, permitindo rechavear a ID de pessoa de um conjunto de dados para que o conjunto de dados seja atualizado corretamente e permita uma combinação contínua de vários conjuntos de dados. A compilação analisa os dados do usuário de sessões autenticadas e não autenticadas para gerar uma ID compilada.
 
-A canal análise permite que você responda a perguntas como:
+A análise entre canais permite responder perguntas como:
 
 * Quantas pessoas começam sua experiência em um canal e depois terminam em outro?
 * Quantas pessoas interagem com a minha marca? Quantos e quais tipos de dispositivos eles usam? Como eles se sobrepõem?
 * Com que frequência as pessoas iniciam uma tarefa em um dispositivo móvel e depois movem para um PC de desktop para concluí-la? Os click-throughs da campanha direcionados a um dispositivo levam para a conversão em outro lugar?
-* Como minha compreensão de campanha eficácia muda se eu considerar jornadas entre dispositivo? Como a minha análise de funil muda?
+* O quanto muda minha compreensão da eficácia da campanha se eu considerar jornadas entre dispositivos? Como a minha análise de funil muda?
 * Quais são os caminhos mais comuns que os usuários fazem de um dispositivo para outro? Onde eles desistem? Onde eles têm sucesso?
 * Como o comportamento de usuários com vários dispositivos difere dos usuários com um único dispositivo?
 
 
-Para obter mais informações sobre análise entre canais, consulte o caso de uso específico:
+Para obter mais informações sobre a análise entre canais, consulte o caso de uso específico:
 
-* [Entre canal análise](../use-cases/cross-channel/cross-channel.md)
+* [Análise entre canais](../use-cases/cross-channel/cross-channel.md)
 
-Para uma discussão mais aprofundada sobre a costura de funcionalidade, acesse:
+Para uma discussão mais detalhada da funcionalidade de compilação, acesse:
 
-* [Visão geral da costura](/help/stitching/overview.md)
+* [Visão geral da compilação](/help/stitching/overview.md)
 * [Perguntas frequentes](/help/stitching/faq.md)
 
