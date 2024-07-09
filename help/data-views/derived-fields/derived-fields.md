@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 6d5877b59dcc625e6cf324109bcb8162fb194187
+source-git-commit: 543443fa6483034f5604fca082fcb75f409006a1
 workflow-type: tm+mt
-source-wordcount: '8075'
+source-wordcount: '8068'
 ht-degree: 12%
 
 ---
@@ -381,9 +381,6 @@ Para cada função compatível, encontre os detalhes abaixo sobre:
 
 - restrições (se aplicável).
 
->[!NOTE]
->
->A função Lookup foi renomeada para [Classificar](#classify). Consulte a [Classificar](#classify) para obter mais informações.
 
 <!-- CASE WHEN -->
 
@@ -622,10 +619,6 @@ As restrições a seguir se aplicam e são aplicadas quando *seleção* e *confi
 Define um conjunto de valores que são substituídos por valores correspondentes em um novo campo derivado.
 
 +++ Detalhes
-
->[!NOTE]
->
->Esta função foi originalmente chamada de Pesquisa, mas foi renomeada para Classificar para acomodar a função Pesquisa com funcionalidades diferentes.
 
 ## Especificações {#classify-io}
 
@@ -1027,6 +1020,8 @@ Você define um `Activity Name` campo derivado. Você usa o [!UICONTROL PESQUISA
 ![Captura de tela da regra Minúsculas](assets/lookup.png)
 
 ## Mais informações {#lookup-more-info}
+
+A função Pesquisa é aplicada no momento do relatório aos dados recuperados pelo Customer Journey Analytics do conjunto de dados de pesquisa configurado como parte da conexão.
 
 Você pode inserir rapidamente um [!UICONTROL Pesquisa] no construtor de regras, que já contém uma ou mais funções.
 
@@ -1776,7 +1771,7 @@ As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 | <p>Caso Quando</p> | <ul><li>5 Caso Quando funções por campo derivado</li><li>200 [operadores](#operators) por campo derivado</li></ul> |
 | <p>Classificar</p> | <ul><li>5 Classificar funções por campo derivado</li><li>200 [operadores](#operators) por campo derivado</li></ul> |
 | <p>Concatenar</p> | <ul><li>2 Funções concatenadas por campo derivado</li></ul> |
-| <p>Desfazer duplicação</p> | <ul><li>5 Desduplicar funções por campo derivado</li></ul> |
+| <p>Desduplicação</p> | <ul><li>5 Desduplicar funções por campo derivado</li></ul> |
 | <p>Localizar e Substituir</p> | <ul><li>2 Funções Localizar e Substituir por campo derivado</li></ul> |
 | <p>Pesquisa</p> | <ul><li>5 Funções de pesquisa por campo derivado</li></ul> |
 | <p>Minúsculas</p> | <ul><li>2 funções em minúsculas por campo derivado</li></ul> |
