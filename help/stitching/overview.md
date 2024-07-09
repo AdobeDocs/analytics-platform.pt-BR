@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 195659d6665e5a3c0e4bf5a4f02ce2af5b95749c
+source-git-commit: d8487c48b4ca4c2a7e5f407d73e71d227aa0de1c
 workflow-type: tm+mt
-source-wordcount: '3793'
+source-wordcount: '3809'
 ht-degree: 12%
 
 ---
@@ -325,7 +325,7 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 Os seguintes pré-requisitos se aplicam especificamente à compilação baseada em gráfico:
 
 - O conjunto de dados do evento no Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter uma coluna que identifique um visitante em cada linha, a variável **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurements do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Adobe Experience Platform.
-- O gráfico de identidade do Experience Platform Identity Service deve ter um namespace (por exemplo, `Email`ou `Phone`) que você deseja usar durante a compilação para resolver o **ID transitória**. Consulte [Serviço de identidade Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) para obter mais informações.
+- O gráfico de identidade do Experience Platform Identity Service deve ter um namespace (por exemplo, `Email`ou `Phone`) que você deseja usar durante a compilação para resolver o **ID transitória**. Consulte [Serviço de identidade Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) para obter mais informações.
 
 >[!NOTE]
 >
@@ -352,10 +352,11 @@ Assim que sua organização atender a todas as [pré-requisitos](#prerequisites)
 
 ### Opções
 
-Selecione as opções de compilação. O pacote Customer Journey Analytics determina as opções disponíveis para a duração do preenchimento retroativo inicial, a janela de pesquisa, a frequência de repetição e o número máximo de conjuntos de dados permitidos para compilação. Consulte a [Descrição do produto Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) para obter mais detalhes.
+Selecione as opções de compilação. O pacote Customer Journey Analytics determina os métodos de compilação disponíveis, as opções de duração do preenchimento retroativo inicial, a janela de pesquisa, a frequência de repetição e o número máximo de conjuntos de dados permitidos para compilação. Consulte a [Descrição do produto Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) para obter mais detalhes.
 
 | | Customer Journey Analytics<br/>Selecionar | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
+| Métodos de compilação disponíveis | <li>Compilação em campo</li> | <li>Compilação em campo</li><li>Compilação baseada em gráfico</li> | <li>Compilação em campo</li><li>Compilação baseada em gráfico</li> |
 | Duração do preenchimento retroativo de compilação única | 13 meses | 13 meses | 25 meses |
 | Janela de pesquisa e frequência de repetição | <li>1 dia, todos os dias</li><li>até 7 dias, semanalmente</li> | <li>1 dia, todos os dias</li><li>até 14 dias, semanalmente</li> | <li>1 dia, todos os dias</li><li>até 30 dias, semanalmente</li> |
 | Número máximo de conjuntos de dados permitidos para compilação | 5 | 10 | 50 |
