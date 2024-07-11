@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 466bcd2d790dae9eccb5d9114a375c5b9666c435
+source-git-commit: f0ff4abcfdb7361aed62bd35b50c4b014b223ec9
 workflow-type: tm+mt
-source-wordcount: '3810'
-ht-degree: 72%
+source-wordcount: '3824'
+ht-degree: 73%
 
 ---
 
@@ -19,8 +19,10 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 | --- | --- |
+| **Julho de 2024** | |
+| Mensagens de erro comuns atualizadas | Pequenas atualizações feitas no [mensagens de erro comuns](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **Junho de 2024** | |
-| Nome do produto atualizado que se refere aos recursos de streaming de mídia | As instâncias de &quot;Media Analytics&quot; e &quot;Mídia de streaming&quot; foram substituídas pelo nome &quot;Complemento de coleção de mídia de streaming&quot; ao se referirem ao conjunto de recursos de mídia de streaming que coletam dados de mídia de streaming e os exibem no Analysis Workspace. <p>Essas atualizações estão disponíveis em toda a documentação do Customer Journey Analytics, bem como no [Documentação do complemento Coleção de mídia de streaming](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-overview?lang=pt-BR).</p> |
+| Atualização do nome do produto que se refere aos recursos de mídia de streaming | As instâncias do “Media Analytics” e de “Mídia de streaming” foram substituídas pelo nome “complemento Coleção de mídia de streaming” ao se referirem ao conjunto de recursos de mídia de streaming que coletam dados de mídia de streaming e os exibem no Analysis Workspace. <p>Essas atualizações estão disponíveis em toda a documentação do Customer Journey Analytics, bem como no [Documentação do complemento Coleção de mídia de streaming](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/media-overview).</p> |
 | Compilação baseada em gráfico | Atualizado e reestruturado [documentação de compilação](/help/stitching/overview.md) com a introdução da compilação baseada em gráficos. |
 | Assistente de IA | Adicionado [documentação](../ai-assistant.md) no Assistente de IA para o Customer Journey Analytics. |
 | Transformar conjuntos de dados para pesquisas B2B | Adição de documentação sobre como oferecer suporte [pesquisas com base em pessoas em dados B2B](/help/connections//transform-datasets-b2b-lookups.md) (incluindo contas, oportunidades, listas de marketing e campanhas) usando a transformação de conjuntos de dados de pesquisa B2B. |
@@ -98,7 +100,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | **Junho de 2023** | |
 | Análise de vários canais e compilação | Em antecipação às próximas alterações que habilitarão a compilação e para esclarecer ainda mais como a análise de vários canais pode ser elevada usando a compilação, a documentação relacionada a esta funcionalidade foi editada para se referir à [análise de vários canais](../use-cases/cross-channel/cross-channel.md) como um recurso e caso de uso do Customer Journey Analytics e à [compilação](../stitching/overview.md) como uma funcionalidade importante para alcançar esse objetivo. |
 | Acesso do Power BI e do Tableau às visualizações de dados do Customer Journey Analytics | A extensão Customer Journey Analytics BI permite o acesso SQL a visualizações de dados definidas no Customer Journey Analytics. [Saiba mais](/help/data-views/bi-extension.md) |
-| Visualizações de dados do Adobe Journey Optimizer | Admins do Customer Journey Analytics têm acesso a algumas visualizações de dados adicionais, chamadas de “Visualização de dados do AJO (nome da sandbox)”. [Saiba mais](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration). |
+| Visualizações de dados do Adobe Journey Optimizer | Admins do Customer Journey Analytics têm acesso a algumas visualizações de dados adicionais, chamadas de “Visualização de dados do AJO (nome da sandbox)”. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration). |
 | Conversão de moeda | Atualização da documentação sobre compatibilidade com [conversão de moeda](../data-views/component-settings/format.md#currency). |
 | Atualizações de métricas calculadas | As seguintes atualizações foram feitas na documentação das métricas calculadas para alinhá-la à funcionalidade atual do Customer Journey Analytics: <ul><li>Atualização da lista de [métricas calculadas padrão](/help/components/calc-metrics/default-calcmetrics.md) disponível no Customer Journey Analytics</li><li>Atualização dos procedimentos e capturas de tela em vários artigos de métricas calculadas </li></ul> |
 | **Maio de 2023** | |
