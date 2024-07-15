@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 52021e557171754901fe6a64c7fa544243af70f1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Por meio da compilação baseada em gráfico, é possível usar o gráfico de id
 
 [![imagem](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
-*_Você deve ter o pacote Prime para compilação baseada em gráfico._*
+*_Você precisa ter o pacote Prime para a compilação baseada em gráfico._*
 
 >[!TAB Pesquisas B2B]
 
