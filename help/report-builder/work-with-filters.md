@@ -37,11 +37,11 @@ Para editar filtros usando o painel Edição rápida
 
 1. Selecione um intervalo de células de um ou vários blocos de dados.
 
-   ![Painel de filtro Edição rápida mostrando opções de filtro para visualizações de dados, intervalo de datas e filtros.](./assets/select_multiple_dbs.png)
+   ![Painel de filtro Edição Rápida mostrando opções de filtro para visualizações de dados, intervalo de datas e filtros.](./assets/select_multiple_dbs.png)
 
 1. Clique no link Filtros para iniciar o painel de Edição rápida - Filtros.
 
-   ![Painel Filtros mostrando o campo Adicionar filtro e as listas Filtros aplicados.](./assets/quick_edit_filters.png)
+   ![o painel Filtros mostrando o campo Adicionar Filtro e as listas Filtros Aplicados.](./assets/quick_edit_filters.png)
 
 ### Adicionar ou remover um filtro
 
@@ -53,7 +53,7 @@ Para editar filtros usando o painel Edição rápida
 
    Quando vários filtros estiverem presentes nos blocos de dados selecionados, você poderá pesquisar por filtros específicos usando o campo de pesquisa **Adicionar filtro**.
 
-   ![O campo Adicionar filtro.](./assets/add_filter.png)
+   ![O campo Adicionar Filtro.](./assets/add_filter.png)
 
 1. Adicionar filtros selecionando filtros do menu suspenso **Adicionar filtro**.
 
@@ -83,7 +83,7 @@ Para editar filtros usando o painel Edição rápida
 
    Selecionar um filtro o adiciona à lista **Substituir por**...
 
-   ![A guia Substituir com o bloco de dados Pessoas no aplicativo selecionado e a lista Substituir por atualizada mostrando Pessoas no aplicativo revisadas.](./assets/replace_screen_new.png)
+   ![A guia Substituir com o bloco de dados Pessoas no Aplicativo selecionado e a lista Substituir por atualizada mostrando Pessoas no Aplicativo Revisado.](./assets/replace_screen_new.png)
 
 1. Clique em **Aplicar**.
 
@@ -96,10 +96,10 @@ Os blocos de dados podem fazer referência a filtros de uma célula. Vários blo
 Para aplicar filtros de uma célula
 
 1. Navegue até a Etapa 2 no processo de criação ou edição do bloco de dados. Consulte [Criar um bloco de dados](./create-a-data-block.md).
-1. Clique em **Filtros** para definir filtros.
-1. Clique em **Criar filtro a partir da célula**.
+1. Clique na guia **Filtros** para definir filtros.
+1. Clique em **Criar filtro da célula**.
 
-   ![Ícone Criar filtro a partir da célula](./assets/create-filter-from-cell.png)
+   ![Ícone Criar filtro a partir da célula.](./assets/create-filter-from-cell.png)
 
 1. Selecione a célula da qual deseja que os blocos de dados façam referência a um filtro.
 
@@ -107,11 +107,11 @@ Para aplicar filtros de uma célula
 
    Observação: apenas uma opção pode ser selecionada para a célula em questão de cada vez.
 
-   ![A janela Add filter from cell mostra os Filtros incluídos.](./assets/select-filters.png)
+   ![A janela Adicionar filtro a partir da célula mostra os Filtros incluídos.](./assets/select-filters.png)
 
 1. Clique em **Aplicar** para criar a célula de referência.
 
-1. No **Filtros** adicione o filtro de célula de referência recém-criado ao bloco de dados.
+1. Na guia **Filtros**, adicione o filtro de célula de referência recém-criado ao bloco de dados.
 
    ![Guia Filtros mostrando o filtro Sheet1!J1(All Data) adicionado à tabela.](./assets/reference-cell-filter.png)
 
@@ -123,9 +123,9 @@ Para aplicar filtros de uma célula
 
 1. Selecione a célula de referência na planilha.
 
-1. Clique no link em **Filtros da Célula** no menu Edição rápida.
+1. Clique no link em **Filtros da Célula** no menu Edição Rápida.
 
-   ![Filtros de link de célula mostrando Sheet1!J1 (Todos os Dados)](./assets/filters-from-cell-link.png)
+   ![Filtros do link de célula mostrando Sheet1!J1 (Todos os Dados)](./assets/filters-from-cell-link.png)
 
 1. Selecione o filtro no menu suspenso.
 

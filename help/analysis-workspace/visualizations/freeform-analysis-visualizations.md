@@ -22,22 +22,22 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
 | Nome da visualização | Descrição |
 | --- | --- | 
-| [Área](/help/analysis-workspace/visualizations/area.md)<p>![Ícone da área](assets/Smock_GraphArea_18_N.svg)</p> | Semelhante a um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Use um gráfico de área quando você tiver diversas métricas e desejar visualizar a área expressa pela interseção de duas ou mais métricas. |
+| [Área](/help/analysis-workspace/visualizations/area.md)<p>![Ícone de área](assets/Smock_GraphArea_18_N.svg)</p> | Semelhante a um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Use um gráfico de área quando você tiver diversas métricas e desejar visualizar a área expressa pela interseção de duas ou mais métricas. |
 | [Barra](/help/analysis-workspace/visualizations/bar.md) <p>![Ícone de barra](assets/Smock_GraphBarVertical_18_N.svg)</p> | Mostra barras verticais que representam vários valores de uma ou mais métricas. |
-| [Gráfico em marcadores](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Ícone de Marcador](assets/Smock_GraphBullet_18_N.svg)</p> | Mostra a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas). |
-| [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Ícone da tabela de coorte](assets/Smock_TextNumbered_18_N.svg)</p> | A *`cohort`* é um grupo de pessoas com características comuns em um período específico. A Análise de coorte é útil para análise de retenção, churn ou latência. |
+| [Gráfico em marcadores](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![Ícone de marcador](assets/Smock_GraphBullet_18_N.svg)</p> | Mostra a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas). |
+| [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![Ícone de tabela de coorte](assets/Smock_TextNumbered_18_N.svg)</p> | A *`cohort`* é um grupo de pessoas com características comuns em um período específico. A Análise de coorte é útil para análise de retenção, churn ou latência. |
 | [Rosca](/help/analysis-workspace/visualizations/donut.md) <p>![Ícone de rosca](assets/Smock_GraphDonut_18_N.svg)</p> | Semelhante ao gráfico de pizza, essa visualização mostra os dados como partes ou filtros de um todo. |
-| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Ícone de Fallout](assets/Smock_ConversionFunnel_18_N.svg)</p> | Os relatórios de fallout mostram onde as pessoas saíram e continuaram em uma sequência predefinida de páginas. Pode ser definido como sequências eventuais ou exatas |
-| [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![Ícone de Fluxo](assets/flow-icon.png)</p> | Mostra os percursos exatos do cliente pelos sites e aplicativos. |
-| [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![Ícone da tabela de forma livre](assets/Smock_ViewTable_18_N.svg)</p> | Uma tabela de forma livre não é apenas uma tabela de dados, mas também uma visualização interativa. É a base para a análise de dados no Espaço de trabalho. |
-| [Histograma](/help/analysis-workspace/visualizations/histogram.md)<p>![Ícone do histograma](assets/Smock_GraphHistogram_18_N.svg)</p> | Um histograma agrupa pessoas, visitas ou eventos em compartimentos com base em um volume de métrica. |
-| [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![Ícone da barra horizontal](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | Mostra barras horizontais que representam vários valores de uma ou mais métricas. |
-| [Linha](/help/analysis-workspace/visualizations/line.md)<p>![Ícone de Linha](assets/Smock_GraphTrend_18_N.svg)</p> | Representa as métricas que usam uma linha para mostrar como os valores são alterados durante um período. Um gráfico de linhas usa o tempo no eixo x. |
+| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![Ícone de fallout](assets/Smock_ConversionFunnel_18_N.svg)</p> | Os relatórios de fallout mostram onde as pessoas saíram e continuaram em uma sequência predefinida de páginas. Pode ser definido como sequências eventuais ou exatas |
+| [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![Ícone de fluxo](assets/flow-icon.png)</p> | Mostra os percursos exatos do cliente pelos sites e aplicativos. |
+| [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![Ícone de tabela de forma livre](assets/Smock_ViewTable_18_N.svg)</p> | Uma tabela de forma livre não é apenas uma tabela de dados, mas também uma visualização interativa. É a base para a análise de dados no Espaço de trabalho. |
+| [Histograma](/help/analysis-workspace/visualizations/histogram.md)<p>![Ícone de Histograma](assets/Smock_GraphHistogram_18_N.svg)</p> | Um histograma agrupa pessoas, visitas ou eventos em compartimentos com base em um volume de métrica. |
+| [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![Ícone de barra horizontal](assets//Smock_GraphBarHorizontal_18_N.svg)</p> | Mostra barras horizontais que representam vários valores de uma ou mais métricas. |
+| [Linha](/help/analysis-workspace/visualizations/line.md)<p>![Ícone de linha](assets/Smock_GraphTrend_18_N.svg)</p> | Representa as métricas que usam uma linha para mostrar como os valores são alterados durante um período. Um gráfico de linhas usa o tempo no eixo x. |
 | [Gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) <p>![Ícone de Gráfico de dispersão](assets/Smock_GraphScatter_18_N.svg)</p> | Mostra a relação entre itens de dimensão e até três métricas. |
-| [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Ícone do número do resumo](assets/summary-number-icon.png)</p> | Mostra a célula selecionada como um número grande. |
-| [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Ícone Alteração de resumo](assets/summary-change-icon.png)</p> | Mostra a alteração entre as células selecionadas como um número grande/porcentagem. |
+| [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Ícone de número de resumo](assets/summary-number-icon.png)</p> | Mostra a célula selecionada como um número grande. |
+| [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Ícone de alteração do resumo](assets/summary-change-icon.png)</p> | Mostra a alteração entre as células selecionadas como um número grande/porcentagem. |
 | [Texto](/help/analysis-workspace/visualizations/text.md)<p>![Ícone de Gráfico de dispersão](assets/Smock_Text_18_N.svg)</p> | Permite adicionar texto definido pelo usuário ao Espaço de trabalho Útil para adicionar contexto à análise e aos insights, além de aproveitar as descrições do painel/da visualização |
-| [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p>![Ícone Treemap](assets/Smock_GraphTree_18_N.svg)</p> | Exibe dados hierárquicos (estruturados em formato de árvore) como um conjunto de retângulos aninhados. |
+| [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p>![Ícone de Mapa de árvore](assets/Smock_GraphTree_18_N.svg)</p> | Exibe dados hierárquicos (estruturados em formato de árvore) como um conjunto de retângulos aninhados. |
 | [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Ícone de Venn](assets/venn-icon.png)</p> | Usa círculos para descrever a sobreposição de métrica de até três filtros. |
 
 ## Adicionar visualizações a um painel
@@ -46,19 +46,19 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
 1. Use qualquer um dos métodos a seguir para adicionar a visualização:
 
-   * No painel à esquerda, selecione o **Visualizações** ícone <!-- add icon -->, em seguida, arraste uma visualização para o painel onde deseja adicioná-la.
+   * No painel à esquerda, selecione o ícone **Visualizações** <!-- add icon --> e arraste uma visualização para o painel onde deseja adicioná-la.
 
-     ![Painel Visualizações](assets/viz-rail.png)
+     ![Painel de visualizações](assets/viz-rail.png)
 
-   * No painel onde deseja adicionar a visualização, selecione a **Plus** e escolha o ícone que representa a visualização que deseja adicionar. Passe o mouse sobre o ícone de cada visualização para ver seu nome.
+   * No painel em que você deseja adicionar a visualização, selecione o ícone **De adição** e escolha o ícone que representa a visualização que você deseja adicionar. Passe o mouse sobre o ícone de cada visualização para ver seu nome.
 
      ![Botão para adicionar uma visualização](assets/visualization-add-to-panel.png)
 
-   * Adicionar um [painel em branco](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=pt-BR), em seguida, escolha a visualização que deseja adicionar.
+   * Adicione um [painel em branco](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/blank-panel.html?lang=pt-BR) e escolha a visualização que deseja adicionar.
 
      ![Painel em branco](assets/blank_panel.png)
 
-   * Clique com o botão direito do mouse em um painel existente no projeto do Analysis Workspace e selecione [!UICONTROL **Duplicar visualização**] ou [!UICONTROL **Copiar visualização**].
+   * Clique com o botão direito do mouse em um painel existente em seu projeto do Analysis Workspace e selecione [!UICONTROL **Duplicar visualização**] ou [!UICONTROL **Copiar visualização**].
 
 ## Personalizar configurações de visualização
 
@@ -89,7 +89,7 @@ Cada visualização tem suas próprias configurações que podem ser gerenciadas
 | Tipo de visualização | Altere o tipo de visual usado para descrever os dados. |
 | Granularidade | Para visualizações de tendências, você pode alterar a granularidade de tempo (dia, semana, mês etc.) nesta lista suspensa. Essa alteração também se aplica à tabela de fonte de dados. |
 | Porcentagens | Exibe os valores em porcentagens. |
-| 100% empilhada | Essa configuração de visualizações de área empilhada, barra empilhada ou barra horizontal empilhada transforma o gráfico em uma visualização “100% empilhada”. Exemplo: ![Um gráfico de barras que mostra a exibição de opção 100% Empilhada.](assets/stacked_100_percent.png) |
+| 100% empilhada | Essa configuração de visualizações de área empilhada, barra empilhada ou barra horizontal empilhada transforma o gráfico em uma visualização “100% empilhada”. Exemplo: ![Um gráfico de barras que mostra a exibição de opção 100% empilhada.](assets/stacked_100_percent.png) |
 | Legenda visível | Permite ocultar o texto detalhado da legenda para a visualização Número de resumo/Alteração de resumo. |
 | Limite máximo de itens | Permite limitar o número de itens exibidos em uma visualização. |
 | Ancorar eixo Y no zero | Se todos os valores exibidos no gráfico forem consideravelmente superiores a zero, o padrão do gráfico tornará a parte inferior do eixo y DIFERENTE DE ZERO. Se marcar esta caixa, o eixo y será forçado a zero (e o gráfico será redesenhado). |
@@ -109,7 +109,7 @@ Para editar um rótulo de legenda:
 1. Clique com o botão direito do mouse em uma das etiquetas de legenda.
 1. Clique em **[!UICONTROL Editar rótulo]**.
 
-   ![Um rótulo de legenda e a opção Edit label.](assets/edit-label.png)
+   ![Um rótulo de legenda e a opção Editar rótulo.](assets/edit-label.png)
 
 1. Digite o texto do novo rótulo.
 1. Pressione **[!UICONTROL Enter]** para salvar.

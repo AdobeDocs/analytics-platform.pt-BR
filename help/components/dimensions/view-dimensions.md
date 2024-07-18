@@ -23,7 +23,7 @@ A partir de agora, por padrão, mostramos valores dinâmicos em vez de estático
 * Uma coluna de dimensão dinâmica que é copiada ou movida se tornará estática.
 * Ao passar o cursor sobre uma coluna de dimensão estática, você verá um ícone de cadeado, indicando que a dimensão é estática.
 
-![pop-up da coluna Dimension destacando o ícone de bloqueio.](assets/dimension_static.png)
+pop-up da coluna ![Dimension destacando o ícone de bloqueio.](assets/dimension_static.png)
 
 ## Mostrar itens da dimensão
 

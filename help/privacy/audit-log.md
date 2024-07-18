@@ -23,7 +23,7 @@ Este tópico aborda logs de auditoria no Customer Journey Analytics, incluindo c
 
 Quando o recurso é ativado para sua organização, os logs de auditoria são coletados automaticamente conforme a atividade ocorre. Não é necessário ativar manualmente a coleção de log.
 
-Para visualizar e exportar logs de auditoria, você deve ter recebido a permissão de controle **[!UICONTROL Acesso aos logs de auditoria]** no console da Adobe. Para saber como gerenciar permissões individuais para recursos do Customer Journey Analytics, consulte a [documentação de controle de acesso](../technotes/access-control.md).
+Para visualizar e exportar logs de auditoria, você deve ter recebido a permissão de controle **[!UICONTROL Acesso aos logs de auditoria]** no console da Adobe. Para saber como gerenciar permissões individuais para recursos do Customer Journey Analytics, consulte a [documentação sobre controle de acesso](../technotes/access-control.md).
 
 ## Exibir o log de auditoria na interface
 
@@ -31,7 +31,7 @@ No Customer Journey Analytics, navegue até **[!UICONTROL Ferramentas]** > **[!U
 
 O log de auditoria de hoje e ontem é mostrado por padrão.
 
-![Log de auditoria destacando hoje e ontem. ](assets/audit_ui.png)
+![Realce do log de auditoria hoje e ontem. ](assets/audit_ui.png)
 
 Você pode selecionar quais colunas ficam visíveis ao acessar o seletor de colunas na parte superior direita.
 
@@ -43,7 +43,7 @@ Clique duas vezes no botão info (i) ao lado de uma descrição.
 
 Os seguintes itens são mostrados:
 
-* **[!UICONTROL Nome da ação]**: A ação executada. Os valores possíveis incluem:
+* **[!UICONTROL Nome da Ação]**: a ação foi executada. Os valores possíveis incluem:
    * API_REQUEST
    * APROVAR
    * CRIAR
@@ -57,11 +57,11 @@ Os seguintes itens são mostrados:
    * TRANSFERIR
    * CANCELAR APROVAÇÃO
    * CANCELAR COMPARTILHAMENTO
-* **[!UICONTROL Data de criação]**: A data e a hora em que a ação foi executada.
+* **[!UICONTROL Data de criação]**: a data e a hora em que a ação foi executada.
 * **[!UICONTROL Descrição]**: um resumo da ação.
-* **[!UICONTROL Nome do usuário]**: o usuário que executou a ação.
-* **[!UICONTROL E-mail]**: o endereço de email do usuário que executou a ação.
-* **[!UICONTROL Nome do componente]**: o componente no qual o usuário executou a ação.
+* **[!UICONTROL Nome do Usuário]**: o usuário que executou a ação.
+* **[!UICONTROL Email]**: o endereço de email do usuário que executou a ação.
+* **[!UICONTROL Nome do Componente]**: o componente no qual o usuário executou uma ação.
 * **[!UICONTROL Tipo de componente]**: o tipo de componente. Os valores possíveis incluem:
    * ANOTAÇÃO
    * PÚBLICO
@@ -80,11 +80,11 @@ Os seguintes itens são mostrados:
    * SCHEDULED_PROJECT
    * USUÁRIO
    * USER_GROUP
-* **[!UICONTROL ID do componente]**: a ID do componente no qual o usuário executou a ação.
-* **[!UICONTROL ID organizacional IMS]**: a ID IMS da organização, no formato de `ABC123@AdobeOrg`.
-* **[!UICONTROL ID do log]**: uma ID exclusiva que identifica essa entrada de log.
-* **[!UICONTROL ID de usuário]**: a ID exclusiva que identifica o usuário que executou a ação.
-* **[!UICONTROL Tipo de usuário]**: o tipo de autenticação usado. Os valores válidos incluem:
+* **[!UICONTROL ID do Componente]**: a ID do componente no qual o usuário executou uma ação.
+* **[!UICONTROL ID da Organização IMS]**: a ID IMS da organização, no formato de `ABC123@AdobeOrg`.
+* **[!UICONTROL ID do Log]**: uma ID exclusiva que identifica esta entrada de log.
+* **[!UICONTROL ID de Usuário]**: a ID exclusiva que identifica o usuário que executou a ação.
+* **[!UICONTROL Tipo de Usuário]**: o tipo de autenticação usado. Os valores válidos incluem:
    * IMS
    * OKTA
 
@@ -92,7 +92,7 @@ Os seguintes itens são mostrados:
 
 Selecione o ícone de funil (![filtro](assets/filter-icon.png)) para exibir uma lista de controles de filtro para ajudar a limitar os resultados. Somente os últimos 1.000 registros são exibidos, independentemente dos vários filtros selecionados.
 
-![Log de auditoria mostrando os filtros exibidos para o Intervalo de dados.](assets/filters.png)
+![Log de auditoria mostrando os filtros exibidos para o Intervalo de Dados.](assets/filters.png)
 
 Os seguintes filtros estão disponíveis para eventos de auditoria na interface do usuário:
 
@@ -139,4 +139,4 @@ Você pode baixar logs de auditoria em formatos CSV ou JSON. Todos os filtros ap
 
 ## Gerenciar logs de auditoria na API
 
-Todas as ações que você pode executar na interface do usuário também podem ser realizadas usando chamadas de API. Consulte a [Documento de referência da API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) para obter mais informações.
+Todas as ações que você pode executar na interface do usuário também podem ser realizadas usando chamadas de API. Consulte o [documento de referência da API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) para obter mais informações.

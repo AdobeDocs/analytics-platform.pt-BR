@@ -6,8 +6,8 @@ role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 71%
+source-wordcount: '320'
+ht-degree: 79%
 
 ---
 
@@ -31,7 +31,7 @@ Para exibir informações sobre um componente no Dicionário de dados:
 
 1. (Opcional) No campo de pesquisa, comece a digitar o nome do componente que deseja visualizar.
 
-   O tipo de componente pode ser identificado por cor e ícone. **Dimension** ![Ícone do Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) são laranja, **Filtros** ![Ícone de Segmento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis, **Intervalos de datas** ![Ícone de intervalo de datas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxas, e **Métricas** ![Ícone de Métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) são verdes. O ícone Adobe ![Ícone do Adobe](assets/default-calc-metric-icon.png) indica um modelo de métrica calculada ou um modelo de filtro, e o ícone calculadora ![Ícone da Calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indicou uma métrica calculada que foi criada por um administrador do Analytics em sua organização.
+   O tipo de componente pode ser identificado por cor e ícone. **Dimension** ![ícone de Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) são laranja, **Filtros** ![ícone de segmento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis, **Intervalos de datas** ![ícone de intervalo de datas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxos e **Métricas** ![ícone de métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) são verdes. O ícone da Adobe ![Ícone da Adobe](assets/default-calc-metric-icon.png) indica um modelo de métrica calculada ou de filtro e o ícone de calculadora ![Ícone de calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indica uma métrica calculada que foi criada por um(a) admin do Analytics em sua organização.
 
 {{dd-filter-criteria}}
 

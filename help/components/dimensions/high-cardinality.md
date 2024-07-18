@@ -18,7 +18,7 @@ Ao usar uma dimensão que contém muitos valores únicos, o relatório resultant
 
 Quando você solicita um relatório com muitos valores únicos, o Analysis Workspace mostra um indicador no cabeçalho da dimensão informando que nem todos os itens de dimensão estão incluídos. Por exemplo, &quot;Linhas: 1-50 de mais de 22.343.156&quot;. A palavra-chave &quot;mais de&quot; indica que alguma otimização foi aplicada ao relatório para retornar os itens de dimensão mais importantes.
 
-![Tabela de forma livre no Workspace mostrando a palavra-chave &quot;mais de&quot; para mostrar de 1 a 50 entre mais de 22.343.156](assets/high-cardinality.png)
+![Tabela de forma livre no Workspace mostrando a palavra-chave &quot;mais de&quot; para mostrar 1-50 de mais de 22.343.156](assets/high-cardinality.png)
 
 ## Determinar quais itens de dimensão exibir
 
@@ -37,6 +37,6 @@ A melhor maneira de acomodar dimensões de alta cardinalidade é limitar o núme
 * Use um [Filtro](/help/components/filters/create-filters.md). Os filtros são aplicados no momento em que cada servidor processa um subconjunto de dados.
 * Use uma pesquisa. Os itens de Dimension excluídos do termo de pesquisa são removidos dos resultados do relatório, tornando mais provável que você veja os itens de dimensão desejados.
 * Use uma dimensão de conjunto de dados de pesquisa. As dimensões do conjunto de dados de pesquisa combinam itens de dimensão do conjunto de dados do evento, que limitam o número de valores únicos retornados.
-* Use o [Incluir/excluir](/help/data-views/component-settings/include-exclude-values.md) configuração de componente no gerenciador de visualizações de dados.
+* Use a configuração de componente [Incluir/excluir](/help/data-views/component-settings/include-exclude-values.md) no gerenciador de visualização de dados.
 * Diminua o intervalo de datas da solicitação. Se muitos valores únicos se acumularem ao longo do tempo, a redução do intervalo de datas do relatório do Workspace pode limitar o número de valores únicos a serem processados pelos servidores.
-* Considere usar [Exportação de tabela completa](/help/analysis-workspace/export/export-cloud.md) para retornar todas as linhas da tabela.
+* Considere usar [Exportação de Tabela Completa](/help/analysis-workspace/export/export-cloud.md) para retornar todas as linhas da tabela.

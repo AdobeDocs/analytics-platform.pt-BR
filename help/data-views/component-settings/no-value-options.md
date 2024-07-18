@@ -31,4 +31,4 @@ As Opções de valor nulo permitem determinar como o Analysis Workspace trata si
 
 ## Publicação do blog
 
-Aqui está uma publicação relacionada sobre [manipulação de &quot;nenhum valor&quot; no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).
+Esta é uma publicação relacionada ao blog sobre [manipulação de &quot;nenhum valor&quot; em Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/handling-quot-no-value-quot-in-customer-journey-analytics/ba-p/597339).

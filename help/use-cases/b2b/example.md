@@ -10,7 +10,7 @@ role: User
 source-git-commit: 9c60c00818e82a6ca891ab9d90260922437c6cca
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -40,11 +40,11 @@ Conjuntos de dados que você pode considerar adicionar à conexão:
 -->
 
 
-A relação entre os esquemas de pesquisa, esquema de perfil e esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas em [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) e [Definir uma relação muitos para um entre dois esquemas no Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) para obter mais detalhes.
+A relação entre os esquemas de pesquisa, esquema de perfil e esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas no [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/schemas/b2b.html) e [Definir uma relação muitos para um entre dois esquemas no Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-b2b.html) para obter mais detalhes.
 
 ![Relação entre esquemas B2B](assets/classes.png)
 
-Para cada conjunto de dados de pesquisa adicionado à conexão, você deve definir explicitamente a relação com um conjunto de dados de evento usando **[!UICONTROL Chave]** e **[!UICONTROL Chave correspondente]** no **[!UICONTROL Editar conjunto de dados]** diálogo. Por exemplo:
+Para cada conjunto de dados de pesquisa adicionado à sua conexão, defina explicitamente a relação com um conjunto de dados de evento usando a **[!UICONTROL Chave]** e a **[!UICONTROL Chave correspondente]** na caixa de diálogo **[!UICONTROL Editar conjunto de dados]**. Por exemplo:
 
 ![Chave - Chave correspondente](assets/key-matchingkey.png)
 
@@ -55,9 +55,9 @@ Quatro esquemas são usados explicitamente para conectar o esquema Pessoa a outr
 * Membros da lista de marketing de negócios XDM
 * Membros da campanha de negócios XDM
 
-Para cada conjunto de dados de pesquisa, para um esquema baseado nessa classe de esquema, você também ativa **[!UICONTROL Transformar conjunto de dados]** para garantir que os dados sejam transformados para pesquisas com base em pessoas. Consulte [Transformar conjuntos de dados para pesquisas B2B](/help/connections/transform-datasets-b2b-lookups.md) para obter mais informações.
+Para cada conjunto de dados de pesquisa, para um esquema baseado nessa classe de esquema, você também habilita **[!UICONTROL Transformar conjunto de dados]** para garantir que os dados sejam transformados para pesquisas baseadas em pessoas. Consulte [Transformar conjuntos de dados para pesquisas B2B](/help/connections/transform-datasets-b2b-lookups.md) para obter mais informações.
 
-A tabela abaixo fornece um exemplo de visão geral do [!UICONTROL ID de pessoa], [!UICONTROL Chave], e [!UICONTROL Chave correspondente] para cada um dos conjuntos de dados.
+A tabela abaixo fornece um exemplo de visão geral dos valores de [!UICONTROL ID de pessoa], [!UICONTROL Chave] e [!UICONTROL Chave correspondente] para cada um dos conjuntos de dados.
 
 
 | Conjunto de dados | ID de pessoa | Chave | Chave correspondente (no conjunto de dados do evento) |
@@ -76,7 +76,7 @@ Consulte [Adicionar e configurar conjuntos de dados](../../connections/create-co
 
 ## Visualização de dados
 
-Para ter acesso a dimensões e métricas B2B relevantes ao criar o projeto do Workspace, você deve definir sua visualização de dados de acordo.
+Para ter acesso a dimensões e métricas B2B relevantes ao criar seu projeto do Workspace, você deve definir sua visualização de dados adequadamente.
 
 Você pode adicionar os seguintes componentes como dimensões à sua visualização de dados para garantir que possa relatar o nível com base em pessoas nos seus dados B2B. Os nomes dos componentes são modificados para maior clareza.
 
@@ -298,7 +298,7 @@ No metric components are defined as part of this dataset.
 
 ## Workspace
 
-Com seus componentes definidos corretamente na visualização de dados, agora é possível criar relatórios e visualizações B2B específicos no projeto do Espaço de trabalho.
+Com seus componentes definidos corretamente na visualização de dados, agora é possível criar relatórios e visualizações B2B específicos no projeto do Workspace.
 
 Veja abaixo um exemplo de projeto que depende da conexão e da visualização de dados descritas acima.
 

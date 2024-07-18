@@ -8,7 +8,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -28,13 +28,13 @@ Os componentes usados no projeto serão adicionados automaticamente.
 
 A preparação também pode ser aplicada no menu [!UICONTROL Compartilhar] clicando em **[!UICONTROL Preparar e Compartilhar]**. Essa opção organiza automaticamente o projeto para os componentes em uso no projeto. Você pode adicionar outros componentes seguindo as etapas acima.
 
-![A janela Preparar componentes mostrando os componentes em uso no projeto.](assets/curation-field.png)
+![A janela Preparar Componentes mostrando os componentes em uso no projeto.](assets/curation-field.png)
 
 ## Visualização de projeto preparado
 
 Quando um recipient abrir um projeto preparado, ele verá apenas o conjunto preparado de componentes que você definiu:
 
-![Um projeto com curadoria compartilhada mostrando os componentes definidos.](assets/curate-project.png)
+![Um projeto com curadoria compartilhada mostrando os componentes que você definiu.](assets/curate-project.png)
 
 ## Remover preparação do projeto
 
@@ -46,7 +46,7 @@ Para remover a preparação do projeto e restaurar o conjunto completo de compon
 
 ## Opções de curadoria de componentes
 
-Em um projeto com curadoria, o recipient terá a opção de **[!UICONTROL Mostrar todos]** os componentes no painel esquerdo. [!UICONTROL Mostrar tudo] revela conjuntos diferentes de componentes, dependendo do/da:
+Em um projeto com curadoria, o recipient terá a opção de **[!UICONTROL Mostrar todos]** os componentes no painel esquerdo. [!UICONTROL Mostrar tudo] revela conjuntos diferentes de componentes, dependendo dos seguintes fatores:
 
 * O nível de permissão do usuário (administrador ou não)
 * Função do projeto (proprietário/editor ou não)

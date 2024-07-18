@@ -13,9 +13,9 @@ ht-degree: 57%
 
 # Criar e publicar públicos-alvo
 
-Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics para o [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
+Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
-Leia isto [visão geral](/help/components/audiences/audiences-overview.md) para familiarizar-se com o conceito de públicos-alvo Customer Journey Analytics.
+Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para familiarizar-se com o conceito de públicos-alvo do Customer Journey Analytics.
 
 ## Criar público-alvo {#create}
 
@@ -33,7 +33,7 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) para 
 
    Defina essas configurações antes de publicar o público-alvo.
 
-   ![Captura de tela das configurações de criação de um público-alvo subindo descritas na próxima seção.](assets/create-audience.png)
+   ![Captura de tela de como criar um público-alvo enviando as configurações descritas na próxima seção.](assets/create-audience.png)
 
    | Configuração | Descrição |
    | --- | --- |
@@ -53,7 +53,7 @@ Leia isto [visão geral](/help/components/audiences/audiences-overview.md) para 
 
    A visualização do público-alvo é exibida no painel direito. Ela permite uma análise resumida do público-alvo criado.
 
-   ![Captura de tela da pré-visualização de dados mostrando uma análise resumida do público-alvo.](assets/data-preview.png)
+   ![Captura de tela da visualização de dados mostrando uma análise resumida do público-alvo.](assets/data-preview.png)
 
    | Configuração de visualização | Descrição |
    | --- | --- |
@@ -86,14 +86,14 @@ Depois de criar um público-alvo, o Adobe cria um segmento de transmissão Exper
 
 Em vários pontos antes, durante e depois da publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
-![Latências na publicação de público-alvo, conforme descrito nesta seção.](/help/components/audiences/assets/latency-diagram.png)
+![Latências na publicação de público-alvo conforme descrito nesta seção.](/help/components/audiences/assets/latency-diagram.png)
 
 | # | Ponto de latência | Duração da latência |
 | --- | --- | --- |
 | Não exibido | Conector de origem do Adobe Analytics para o Analytics (A4T) | Até 30 minutos |
 | 1 | Assimilação de dados no Data Lake (do conector de origem do Analytics ou de outras fontes) | Até 90 minutos |
 | 2 | Assimilação de dados do Experience Platform Data Lake no Customer Journey Analytics | Até 90 minutos |
-| 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados.<p>**Nota**: o público-alvo é criado/definido no Experience Platform em 1-2 minutos. No entanto, leva cerca de 60 minutos para que o público-alvo comece a receber as IDs com base em critérios correspondentes e esteja pronto para ativação. | Cerca de 60 minutos |
+| 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados.<p>**Observação**: o público-alvo é criado/definido em Experience Platform em 1-2 minutos. No entanto, leva cerca de 60 minutos para que o público-alvo comece a receber as IDs com base em critérios correspondentes e esteja pronto para ativação. | Cerca de 60 minutos |
 | 4 | Atualizar frequência dos públicos | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
 | 5 | Criação de destino no Adobe Experience Platform: ativação do novo segmento | 1 a 2 horas |
 
@@ -101,21 +101,21 @@ Em vários pontos antes, durante e depois da publicação do público-alvo, pode
 
 ## Usar públicos-alvo do Customer Journey Analytics no Experience Platform {#audiences-aep}
 
-O Customer Journey Analytics pega todas as combinações de namespace e ID de seu público publicado e as transmite para o Perfil do cliente em tempo real (RTCP). Customer Journey Analytics envia o público-alvo para o Experience Platform com a identidade principal definida, de acordo com o que foi selecionado como a [!UICONTROL ID de pessoa] quando a conexão foi configurada.
+O Customer Journey Analytics pega todas as combinações de namespace e ID de seu público publicado e as transmite para o Perfil do cliente em tempo real (RTCP). O Customer Journey Analytics envia o público-alvo para o Experience Platform com a identidade primária definida, de acordo com o que foi selecionado como a [!UICONTROL ID de pessoa] quando a conexão foi configurada.
 
-Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, <user@adobe.com> podem ser direcionados para todos os dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
+Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, <user@adobe.com> pode ser direcionado para todos os seus dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
-Você pode visualizar públicos-alvo do Customer Journey Analytics na Platform acessando **[!UICONTROL Segmentos]** > **[!UICONTROL Criar segmentos]** > **[!UICONTROL Públicos-alvo]** guia > **[!UICONTROL Públicos-alvo do CJA]**.
+Você pode visualizar públicos-alvo Customer Journey Analytics na Platform acessando **[!UICONTROL Segmentos]** > **[!UICONTROL Criar segmentos]** > **[!UICONTROL Públicos-alvo]** guia > **[!UICONTROL Públicos-alvo do CJA]**.
 
 Você pode arrastar os públicos-alvo do Customer Journey Analytics para a definição de segmentos do Adobe Experience Platform.
 
-![Interface da Experience Platform do Adobe destacando Segmentos no painel esquerdo e Públicos do CJA no painel principal.](assets/audiences-aep.png)
+![Interface do usuário da Adobe Experience Platform destacando Segmentos no painel esquerdo e Públicos-alvo do CJA no painel principal.](assets/audiences-aep.png)
 
 ## Perguntas frequentes {#faq}
 
 Perguntas frequentes sobre a publicação de público-alvo.
 
-+++**O que acontece se um usuário não é mais membro de um público-alvo no Customer Journey Analytics?**
++++**O que acontece se um usuário não é mais membro de um público no Customer Journey Analytics?**
 
 Nesse caso, um evento de saída é enviado para o Experience Platform do Customer Journey Analytics.
 
@@ -139,9 +139,9 @@ O Customer Journey Analytics transmite os dados para o RTCP por meio do pipeline
 
 +++
 
-+++**Que identidades o Customer Journey Analytics envia?**
++++**Sobre quais identidades o Customer Journey Analytics envia?**
 
-Qualquer par de identidade/namespace que tenha sido especificado na variável [Configuração da conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
+Qualquer par de identidade/namespace que tenha sido especificado na [Configuração de conexão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection). Especificamente, a etapa na qual um usuário seleciona o campo que deseja usar como “ID de pessoa”:
 
 +++
 
@@ -151,13 +151,13 @@ Veja acima. Só enviamos uma identidade por Customer Journey Analytics &quot;pes
 
 +++
 
-+++**O RTCP processa as mensagens Customer Journey Analytics também? O Customer Journey Analytics pode adicionar identidades a um gráfico de identidade de perfil por meio do compartilhamento de público-alvo?**
++++**O RTCP também processa as mensagens Customer Journey Analytics? O Customer Journey Analytics pode adicionar identidades a um gráfico de identidade de perfil por meio do compartilhamento de público-alvo?**
 
 Não. Enviamos apenas uma identidade por “pessoa”, de modo que não haveria bordas de gráfico para a RTCP consumir.
 
 +++
 
-+++**A que horas do dia ocorrem as atualizações diárias, semanais e mensais? Em que dia da semana ocorrem as atualizações semanais?**
++++**Que hora do dia ocorrem as atualizações diárias, semanais e mensais? Que dia da semana ocorrem as atualizações semanais?**
 
 O momento da atualização é baseado em quando o público original foi publicado e ancora esse horário do dia (e dia da semana ou mês).
 

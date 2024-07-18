@@ -1,5 +1,5 @@
 ---
-title: Assimilar dados de Marketo Engage no Adobe Experience Platform e relatórios no Customer Journey Analytics
+title: Assimilar dados do Marketo Engage na Adobe Experience Platform e relatórios no Customer Journey Analytics
 description: Saiba como trazer dados do Marketo Engage para o Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -8,11 +8,11 @@ role: Admin
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 57%
+ht-degree: 64%
 
 ---
 
-# Assimilar dados de Marketo Engage no Adobe Experience Platform e relatórios no Customer Journey Analytics
+# Assimilar dados do Marketo Engage na Adobe Experience Platform e relatórios no Customer Journey Analytics
 
 Você pode aproveitar os conjuntos de dados de Marketo Engage recém-disponíveis no Adobe Experience Platform (Adobe Experience Platform) para fornecer análises e soluções de relatórios valiosas para profissionais de marketing B2B. Em seguida, relate esses conjuntos de dados na Adobe Customer Journey Analytics.
 
@@ -41,7 +41,7 @@ Clientes com CDP B2B/B2P podem realizar análise no estilo B2C no Customer Journ
 
 1. Crie um [filtro](/help/components/filters/create-filters.md) para exibições de página da Web da seguinte maneira - Tipo de evento = web.webpagedetails.pageViews :
 
-   ![Janela Definição mostrando o tipo de evento e evento](../assets/marketo-filter.png)
+   ![Janela Definição mostrando o Tipo de Evento e Evento](../assets/marketo-filter.png)
 
 1. Na tabela de Forma livre, obtenha o filtro criado - Exibições de página da Web e obtenha o intervalo de datas Mês. Você obtém as visitas à página da Web por clientes potenciais a cada mês:
 
@@ -49,4 +49,4 @@ Clientes com CDP B2B/B2P podem realizar análise no estilo B2C no Customer Journ
 
 1. Ou obtém as seguintes dimensões: Chave de pessoa ou endereço de email de trabalho. Você obtém as visitas à página da Web por cada lead:
 
-   ![Tabela de forma livre mostrando Eventos e workEmail.Address e Exibições de página da Web.](../assets/marketo-freeform2.png)
+   ![Tabela de forma livre mostrando Eventos e workEmail.Address e Exibições de Página da Web.](../assets/marketo-freeform2.png)

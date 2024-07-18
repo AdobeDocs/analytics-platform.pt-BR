@@ -24,11 +24,11 @@ As informações a seguir instruem os curadores de dados do Customer Journey Ana
 
 Um cartão de pontuação do Analytics exibe as principais visualizações de dados para usuários executivos em um layout lado a lado, como mostrado abaixo:
 
-![Exemplo de cartão de pontuação do Analytics mostrando a demonstração do cartão de pontuação para dispositivos móveis](assets/intro_scorecard.png)
+![Exemplo de cartão de pontuação do Analytics mostrando a demonstração do cartão de pontuação móvel](assets/intro_scorecard.png)
 
 Como curador deste cartão de pontuação, você pode usar o construtor de cartões de pontuação para configurar quais blocos são exibidos no cartão de pontuação para o consumidor executivo. Você também configura como as exibições detalhadas ou os detalhamentos podem ser ajustados quando os blocos forem tocados. A interface do construtor de cartões de pontuação é mostrada abaixo:
 
-![Construtor de cartão de pontuação mostrando a nova janela de cartão de pontuação móvel. ](assets/scorecard_builder.png)
+![Construtor de scorecard mostrando a nova janela de scorecard móvel. ](assets/scorecard_builder.png)
 
 Para criar o cartão de pontuação, é necessário fazer o seguinte:
 
@@ -41,11 +41,11 @@ Você pode acessar o modelo [!UICONTROL Cartão de pontuação para dispositivos
 
 ### Criar um novo projeto {#create}
 
-1. Abra o Customer Journey Analytics e clique no link **[!UICONTROL Workspace]** guia.
+1. Abra o Customer Journey Analytics e clique na guia **[!UICONTROL Workspace]**.
 1. Clique em **[!UICONTROL Criar projeto]** e selecione o modelo de projeto **[!UICONTROL Cartão de pontuação para dispositivos móveis em branco]**.
 1. Clique em **[!UICONTROL Criar]**.
 
-![Janela Todos os modelos com o Scorecard para dispositivos móveis em branco selecionado.](assets/new_template.png)
+![Janela Todos os Modelos com o Scorecard de Móvel em Branco selecionado.](assets/new_template.png)
 
 ### Menu Ferramentas
 
@@ -58,9 +58,9 @@ Para implementar o modelo de scorecard:
 
 1. Em **[!UICONTROL Propriedades]** (no painel direito), especifique uma **[!UICONTROL Visualização de dados do projeto]** da qual você quer usar dados.
 
-   ![Nova janela de cartão de pontuação para dispositivos móveis que destaca a seleção da visualização de dados](assets/properties_save.png)
+   ![Nova janela de cartão de pontuação móvel que destaca a seleção da visualização de dados](assets/properties_save.png)
 
-1. Para adicionar um novo bloco ao cartão de pontuação, arraste uma métrica do painel esquerdo e solte-a na **[!UICONTROL Arrastar e soltar métricas aqui]** zona. Também é possível inserir uma métrica entre dois blocos usando um fluxo de trabalho semelhante.
+1. Para adicionar um novo bloco ao cartão de pontuação, arraste uma métrica do painel esquerdo e solte-a na zona **[!UICONTROL Arrastar e soltar métricas aqui]**. Também é possível inserir uma métrica entre dois blocos usando um fluxo de trabalho semelhante.
 
    ![Nova janela de cartão de pontuação móvel com uma seta apontando para uma métrica (Novo KPI) colocada no cartão de pontuação. ](assets/build_list.png)
 
@@ -79,15 +79,15 @@ Por exemplo, é possível adicionar dimensões apropriadas (como **[!DNL Marketi
 
 Para aplicar filtros a blocos individuais, arraste um filtro (segmentos são filtros em Customer Journey Analytics) do painel esquerdo e solte-o diretamente em cima do bloco.
 
-Se quiser aplicar o filtro a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão de pontuação. Ou você também pode aplicar filtros selecionando filtros no menu de filtro abaixo dos intervalos de datas. Você [configurar e aplicar filtros para seus cartões de pontuação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que no Customer Journey Analytics Workspace.
+Se quiser aplicar o filtro a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão de pontuação. Ou você também pode aplicar filtros selecionando filtros no menu de filtro abaixo dos intervalos de datas. Você [configura e aplica filtros para seus cartões de pontuação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que faria no Customer Journey Analytics Workspace.
 
-![Seletor suspenso de filtros que destaca os filtros de build](assets/segment_ui.png)
+![Seletor da lista suspensa de filtros destacando os filtros de compilação](assets/segment_ui.png)
 
 ## Adicionar intervalos de datas {#dates}
 
 Adicione e remova combinações de intervalo de datas que podem ser selecionadas no cartão de pontuação selecionando o menu suspenso Intervalo de datas.
 
-![Novo scorecard para dispositivos móveis destacado Ontem vs. Mesmo dia da semana passada](assets/new_score_card.png)
+![Novo scorecard para dispositivos móveis destacado ontem vs. Mesmo dia da semana passada](assets/new_score_card.png)
 
 Cada novo cartão de pontuação começa com seis combinações de intervalo de datas, com foco nos dados de hoje e ontem. Você pode remover intervalos de datas desnecessários clicando no x ou editar cada combinação de intervalo de datas clicando no lápis.
 
@@ -95,7 +95,7 @@ Cada novo cartão de pontuação começa com seis combinações de intervalo de 
 
 Para criar ou alterar uma data principal, use o menu suspenso para selecionar intervalos de datas disponíveis ou arraste e solte um componente de data do painel direito na área designada.
 
-![Novo cartão de pontuação para dispositivos móveis destacando os Intervalos de datas com a data principal/Ontem selecionada](assets/new_score_card3.png)
+![Novo cartão de pontuação para dispositivos móveis destacando os Intervalos de datas com a data/ontem principal selecionada](assets/new_score_card3.png)
 
 Para criar uma data de comparação, você pode selecionar entre predefinições convenientes para comparações de tempo comuns no menu suspenso. Você também pode arrastar e soltar um componente de data no painel direito.
 
@@ -111,11 +111,11 @@ Você será direcionado ao construtor de intervalo de datas, em que é possível
 
 Para incluir intervalos de datas de comparação, ative a configuração **Incluir datas de comparação**.
 
-![Novo scorecard para dispositivos móveis destacado como Ontem vs. Dia anterior e Incluir datas de comparação](assets/include-comparison-dates.png)
+![Novo scorecard para dispositivos móveis destacando ontem vs. dia anterior e Incluir datas de comparação](assets/include-comparison-dates.png)
 
 A configuração está *ativada* por padrão. Deixe-a *desativada* se não quiser exibir datas de comparação.
 
-![Novo scorecard para dispositivos móveis destacado Ontem e Incluir datas de comparação](assets/no-comparison-dates.png)
+![Novo scorecard para dispositivos móveis destacado ontem e Incluir datas de comparação](assets/no-comparison-dates.png)
 
 ## Aplicar visualizações {#viz}
 
@@ -137,19 +137,19 @@ Use a visualização Número do resumo para realçar um grande número que é im
 
 Semelhante ao gráfico de pizza, essa visualização mostra dados como partes de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. Por exemplo, digamos que você queira ver qual plataforma de publicidade contribuiu para o número total de pessoas únicas:
 
-![Novo cartão de pontuação para dispositivos móveis mostrando uma visualização em Rosca](assets/donut-viz.png)
+![Novo scorecard para filme mostrando uma visualização em Rosca](assets/donut-viz.png)
 
 ### [!UICONTROL Linha]
 
 A visualização de linha representa as métricas que usam uma linha para mostrar como os valores são alterados em um período. Um gráfico de linha mostra dimensões ao longo do tempo, mas funciona com qualquer visualização. Você está visualizando a dimensão categoria do produto neste exemplo.
 
-![Novo cartão de pontuação para dispositivos móveis mostrando uma visualização de Linha](assets/line.png)
+![Novo cartão de pontuação móvel mostrando uma visualização de Linha](assets/line.png)
 
 ### [!UICONTROL Barra horizontal]
 
 Esta visualização mostra barras horizontais que representam vários valores de uma ou mais métricas. Por exemplo, para ver facilmente seus principais produtos, use a [!UICONTROL Barra horizontal] como sua visualização preferida.
 
-![Novo cartão de pontuação para dispositivos móveis mostrando uma barra horizontal](assets/horizontal.png)
+![Novo cartão de pontuação móvel mostrando uma barra horizontal](assets/horizontal.png)
 
 ## Nomear cartões de pontuação {#name}
 
@@ -218,7 +218,7 @@ Para adicionar texto a um slide de detalhes, selecione um layout que apresente o
 
 ## Remover componentes {#remove}
 
-Da mesma forma, para remover um componente aplicado a todo o cartão de pontuação, clique em qualquer lugar do cartão de pontuação fora dos blocos e remova-o clicando no **x** que aparece quando você passa o mouse sobre o componente, conforme mostrado abaixo para o **Novas visitas**:
+Da mesma forma, para remover um componente aplicado a todo o cartão de pontuação, clique em qualquer lugar do cartão de pontuação fora dos blocos e remova-o clicando no **x** exibido ao passar o mouse sobre o componente, como mostrado abaixo para **Primeiras visitas**:
 
 ![Remover_componentes](assets/new_remove.png)
 
@@ -309,7 +309,7 @@ Para compartilhar o cartão de pontuação com um usuário executivo:
 
 1. Clique no menu **[!UICONTROL Compartilhar]** e selecione **[!UICONTROL Compartilhar scorecard]**.
 
-1. No **[!UICONTROL Compartilhar Scorecard para dispositivos móveis]** preencha os campos ao:
+1. No formulário **[!UICONTROL Compartilhar Scorecard para Dispositivos Móveis]**, preencha os campos da seguinte forma:
 
    * Fornecer o nome do cartão de pontuação
    * Fornecer uma descrição do cartão de pontuação
@@ -336,7 +336,7 @@ Para compartilhar um cartão de pontuação usando um link compartilhável
 
 1. Copie o link e cole-o em um email, documento ou aplicativo de mensagens instantâneas.
 
-   Quando um recipient usa um aplicativo de desktop ou navegador para abrir o link, o projeto de cartão de pontuação para dispositivos móveis é aberto no Espaço de trabalho.
+   Quando um recipient usa um aplicativo de desktop ou navegador para abrir o link, o projeto de cartão de pontuação para dispositivos móveis é aberto no Workspace.
 
    Quando um recipient abre o link em um dispositivo móvel, o cartão de pontuação é aberto diretamente no aplicativo de painéis do Adobe Analytics.
 

@@ -25,13 +25,13 @@ Para alterar os itens de dimensão retornados para cada dimensão
 
 1. Clique no ícone **...** ao lado do nome de um componente na tabela.
 
-   ![As opções do ícone de reticências.](./assets/image27.png)
+   ![As opções de ícone de reticências.](./assets/image27.png)
 
 1. Selecionar **Filtrar dimensão** no menu pop-up para exibir o painel **Filtrar dimensão**.
 
 1. Selecionar **Mais popular** ou **Específico**.
 
-   ![A opção específica selecionada no painel Filtrar dimensão.](./assets/image28.png)
+   ![A opção específica selecionada no painel de dimensão Filtro.](./assets/image28.png)
 
 1. Selecione as opções apropriadas com base no tipo de filtro escolhido.
 
@@ -114,14 +114,14 @@ Para alterar a métrica usada para filtrar e classificar o bloco de dados,
 
 2. Clique na seta da métrica preferida. 
 
-   ![O Criador de tabela e as métricas.](./assets/image30.png)
+   ![O construtor de tabela e as métricas.](./assets/image30.png)
 
 
 ## Filtragem específica
 
 A opção Específico permite criar uma lista fixa de itens de dimensão para cada dimensão. Use o tipo de filtro **Específico** para especificar os itens de dimensão exatos a serem incluídos no filtro. É possível selecionar itens de uma lista ou de um intervalo de células.
 
-![As opções Específicas e os itens selecionados.](./assets/image32.png)
+![As opções específicas e os itens selecionados.](./assets/image32.png)
 
 ### A partir da lista
 
@@ -139,7 +139,7 @@ A opção Específico permite criar uma lista fixa de itens de dimensão para ca
 
    ![A lista Mostrar itens dos últimos 6 meses.](./assets/image34.png)
 
-   Após carregar os dados dos últimos 6 meses, o Report Builder atualiza o link para **Mostrar itens dos últimos 18 meses**.
+   Após carregar os dados dos últimos 6 meses, o Report Builder atualiza o link para **Mostrar itens para os últimos 18 meses**.
 
 1. Selecionar um item de dimensão.
 
@@ -161,7 +161,7 @@ A opção Específico permite criar uma lista fixa de itens de dimensão para ca
 
 Selecione a opção **A partir de intervalo de células** para escolher um intervalo de células que contenha a lista de itens de dimensões a serem correspondidos.
 
-![A opção From range of cells e o campo para selecionar um intervalo de células.](./assets/image37.png)
+![A opção E o campo Do intervalo de células para selecionar um intervalo de células.](./assets/image37.png)
 
 Ao selecionar um intervalo de células, considere as seguintes restrições:
 

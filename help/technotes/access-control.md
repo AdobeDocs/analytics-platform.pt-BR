@@ -25,11 +25,11 @@ Os usuários com a função Administrador de produto atribuída recebem as permi
 
 Para adicionar um usuário como administrador de produto:
 
-1. Vá para a [Admin Console](https://adminconsole.adobe.com/enterprise/).
+1. Vá para o [Admin Console](https://adminconsole.adobe.com/enterprise/).
 
-1. Selecionar [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **Administradores**] guia > [!UICONTROL **Adicionar administrador**].
+1. Selecione [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **guia Administradores**] > [!UICONTROL **Adicionar administrador**].
 
-   Os usuários adicionados recebem a [Permissões padrão do administrador do produto](#product-admin-default-permissions). Você também pode concedê-los [permissões adicionais](#product-admin-additional-permissions) se necessário.
+   Os usuários adicionados recebem as [permissões padrão de Administrador de Produto](#product-admin-default-permissions). Você também pode conceder a eles [permissões adicionais](#product-admin-additional-permissions), se necessário.
 
 ### Permissões padrão do administrador do produto
 
@@ -40,16 +40,16 @@ Por padrão, os administradores de produtos recebem as permissões necessárias 
 * Criar, atualizar e excluir visualizações de dados
 * Atualizar e excluir projetos, filtros, métricas calculadas, públicos, anotações ou filtros criados por outros usuários
 * Compartilhar projetos do Workspace com todos os usuários
-* Gerenciar atividade de relatórios no [Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity-overview.md)
+* Gerenciar atividade de relatório no [Gerenciador de Atividades de Relatórios](/help/reporting-activity-manager/reporting-activity-overview.md)
 * [Exportar tabelas completas](/help/analysis-workspace/export/export-cloud.md) do Analysis Workspace
 
 ### Permissões adicionais do administrador do produto
 
-Além de ser adicionado como administrador de produto no **Perfil de produto Customer Journey Analytics** no [Admin Console](https://adminconsole.adobe.com/enterprise/), permissões adicionais são necessárias para concluir as seguintes tarefas no Customer Journey Analytics:
+Além de ser adicionado como administrador de produto no **Perfil de produto do Customer Journey Analytics** no [Admin Console](https://adminconsole.adobe.com/enterprise/), permissões adicionais são necessárias para concluir as seguintes tarefas no Customer Journey Analytics:
 
 * Criar, atualizar e excluir dados [Conexões](/help/connections/overview.md)
 
-  Para executar essa tarefa, os usuários devem fazer parte de um **Perfil de produto Experience Platform** que fornece as seguintes permissões:
+  Para executar esta tarefa, os usuários devem fazer parte de um **Perfil de Produto do Experience Platform** que forneça as seguintes permissões:
    * Modelagem de dados: Exibir esquemas, Gerenciar esquemas
    * Gerenciamento de dados: exibir conjuntos de dados, gerenciar conjuntos de dados
    * Assimilação de dados: Gerenciar fontes
@@ -57,23 +57,23 @@ Além de ser adicionado como administrador de produto no **Perfil de produto Cus
 
      Para obter mais informações sobre permissões da Experience Platform, consulte [Controle de acesso na Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
-* Exportar conjuntos de dados para nuvem [Destinos](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=pt-BR)
+* Exportar conjuntos de dados para [Destinos](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=pt-BR) da nuvem
 
   Para executar essa tarefa, os usuários precisam das seguintes permissões de Experience Platform:
 
    * Gerenciar destinos
    * Ativar destinos
 
-     Para obter mais informações sobre permissões de Destinos de Experience Platform, consulte [Visão geral dos destinos](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home).
+     Para obter mais informações sobre permissões de Destinos do Experience Platform, consulte [Visão geral sobre Destinos](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home).
 
-* Use o [Extensão BI](../data-views/bi-extension.md)
+* Usar a [extensão de BI](../data-views/bi-extension.md)
 
   Para que os usuários usem a extensão BI, um Administrador de produto
 
-   * deve garantir que as permissões de Experience Platform para o usuário incluam uma função que tenha o recurso Serviço de consulta com as opções Gerenciar consultas e Gerenciar integração do serviço de consulta. Consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+   * deve garantir que as permissões de Experience Platform para o usuário incluam uma função que tenha o recurso Serviço de consulta com as opções Gerenciar consultas e Gerenciar integração do serviço de consulta. Consulte [Gerenciar permissões para um perfil de produto](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
    * deve garantir as permissões de Customer Journey Analytics adequadas para o usuário:
-      * permissão para acessar as visualizações de dados relevantes. Consulte Visualizações de dados em [permissões de Customer Journey Analytics no Admin Console](#customer-journey-analytics-permissions-in-admin-console).
-      * permissão para acessar a extensão BI do CJA. Consulte Ferramentas de visualização de dados em [permissões de Customer Journey Analytics no Admin Console](#customer-journey-analytics-permissions-in-admin-console).
+      * permissão para acessar as visualizações de dados relevantes. Consulte Visualizações de Dados em [permissões de Customer Journey Analytics no Admin Console](#customer-journey-analytics-permissions-in-admin-console).
+      * permissão para acessar a extensão BI do CJA. Consulte Ferramentas de Visualização de Dados em [permissões de Customer Journey Analytics no Admin Console](#customer-journey-analytics-permissions-in-admin-console).
 
 ## Função de administrador do perfil do produto
 
@@ -104,7 +104,7 @@ Outro nível de controle de acesso pode ser usado no nível de relatório do Wor
 
 ## Conceder acesso a métricas ou dimensões individuais
 
-Você não pode conceder ou negar permissões em métricas ou dimensões individuais no Customer Journey Analytics, como no Adobe Analytics tradicional. Métricas e dimensões podem ser modificadas no [visualizações de dados](/help/data-views/data-views.md) e estão, portanto, sujeitas a alterações no Customer Journey Analytics. Alterá-las também altera retroativamente o relatório.
+Você não pode conceder ou negar permissões em métricas ou dimensões individuais no Customer Journey Analytics, como no Adobe Analytics tradicional. Métricas e dimensões podem ser modificadas em [visualizações de dados](/help/data-views/data-views.md) e, portanto, estão sujeitas a alterações no Customer Journey Analytics. Alterá-las também altera retroativamente o relatório.
 
 ## Casos de uso
 
@@ -118,7 +118,7 @@ Um terceiro com o qual sua empresa trabalha tem um gerente de equipe que pode se
 
 Considere que você deseje conceder aos usuários acesso aos dados somente de um dia. Esta é a forma como você limitaria o acesso a essas linhas específicas:
 
-1. Criar um filtro no Customer Journey Analytics onde **[!UICONTROL Dia]** é igual à data que você deseja que eles tenham acesso aos dados.
+1. Crie um filtro no Customer Journey Analytics onde **[!UICONTROL Dia]** seja igual à data que você deseja que eles tenham acesso aos dados.
 1. Em [!UICONTROL Visualizações de dados] > [!UICONTROL Configurações], adicione esse filtro à visualização de dados.
 1. Salve a visualização de dados e ela aplicará automaticamente o filtro ao conjunto de dados. Qualquer linha que não se ajuste à definição de filtro agora é excluída automaticamente da visualização de dados editada.
 1. Crie um novo perfil de produto no Admin Console, adicione usuários a ele e limite o acesso a essa visualização de dados.
@@ -141,20 +141,20 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto em [Admi
 | **[!UICONTROL Ferramentas de relatório]**: |   |
 | **[!UICONTROL Acesso aos logs de auditoria]** | Essa permissão impõe a verificação de permissão na [API](https://www.adobe.io/cja-apis/docs/endpoints/auditlogs/) e na interface dos logs de auditoria. |
 | **[!UICONTROL Acesso à Analysis Workspace]** | Permitir que os usuários acessem o Analysis Workspace no Customer Journey Analytics. |
-| [!UICONTROL **Acesso guiado à análise**] | Permitir que os usuários criem [Projetos de análise guiada](/help/guided-analysis/overview.md). |
+| [!UICONTROL **Acesso à Análise Guiada**] | Permitir que os usuários criem [projetos de Análise Guiada](/help/guided-analysis/overview.md). |
 | [!UICONTROL **Previsão**] | Permitir que os usuários acessem o recurso Previsão no Analysis Workspace |
 | **[!UICONTROL Administrador de uso de relatórios]** | Permitir que os usuários visualizem e excluam qualquer relatório em execução em sua empresa. |
 | **[!UICONTROL Exibição do uso de relatórios]** | Permitir que os usuários vejam todas as solicitações de relatórios simultâneas. |
-| [!UICONTROL **Exportação de tabela completa**] | Permitir que usuários [exportar tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
-| **[!UICONTROL Criação de métricas calculadas]** | Permitir que os usuários criem [métricas calculada](/help/components/calc-metrics/calc-metr-overview.md). |
+| [!UICONTROL **Exportação de Tabela Completa**] | Permitir que os usuários [exportem tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
+| **[!UICONTROL Criação de métricas calculadas]** | Permitir que os usuários criem [métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Criação de filtros]** | Permitir que os usuários criem [filtros](/help/components/filters/filters-overview.md). |
-| **[!UICONTROL Acesso ao Labs]** | Permitir que os usuários acessem o [Labs](/help/labs/labs.md) no Customer Journey Analytics. |
+| **[!UICONTROL Acesso ao Labs]** | Permitir que os usuários acessem a guia [Labs](/help/labs/labs.md) no Customer Journey Analytics. |
 | **[!UICONTROL Criação de anotação]** | Permitir que os usuários criem [anotações](/help/components/annotations/overview.md). |
-| **[!UICONTROL Criação de público]** | Permitir que os usuários criem [públicos](/help/components/audiences/audiences-overview.md). |
-| **[!UICONTROL Visualização de público]** | Permitir que os usuários visualizem [públicos](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL **Compartilhar Links De Projeto Com Qualquer Pessoa**] | Permitir que usuários [compartilhe projetos com qualquer pessoa.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
-| **[!UICONTROL Ferramentas de visualização de dados]**: |   |
-| [!UICONTROL **Exportação de tabela completa**] | Permitir que usuários [exportar tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
-| **[!UICONTROL [!UICONTROL Extensão do CJA BI]]** | Permitir que os usuários usem o [Extensão BI](../data-views/bi-extension.md). |
+| **[!UICONTROL Criação de público]** | Permitir que os usuários criem [públicos-alvo](/help/components/audiences/audiences-overview.md). |
+| **[!UICONTROL Visualização de público]** | Permitir que os usuários visualizem [públicos-alvo](/help/components/audiences/audiences-overview.md). |
+| [!UICONTROL **Compartilhar Links De Projeto Com Qualquer Pessoa**] | Permitir que os usuários [compartilhem projetos com qualquer pessoa.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| **[!UICONTROL Ferramentas de Visualização de Dados]**: |   |
+| [!UICONTROL **Exportação de Tabela Completa**] | Permitir que os usuários [exportem tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
+| **[!UICONTROL [!UICONTROL Extensão do CJA BI]]** | Permitir que os usuários usem a [extensão de BI](../data-views/bi-extension.md). |
 
 {style="table-layout:auto"}

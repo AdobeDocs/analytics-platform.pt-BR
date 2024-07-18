@@ -33,6 +33,6 @@ Para compartilhar um filtro:
 
 1. Na barra de ferramentas do gerenciamento de filtros, clique em **[!UICONTROL Compartilhar]**.
 
-1. Se você for um Administrador, é possível selecionar Tudo ou escolher a partir de Grupos e Usuários na organização. Como um não Administrador, você pode usar somente os usuários individuais. Use o campo Pesquisa para pesquisar por grupos ou usuários. Clique em **[!UICONTROL Compartilhar]**. O ícone Compartilhado é exibido ao lado do filtro: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
+1. Se você for um Administrador, é possível selecionar Tudo ou escolher a partir de Grupos e Usuários na organização. Como um não Administrador, você pode usar somente os usuários individuais. Use o campo Pesquisa para pesquisar por grupos ou usuários. Clique em **[!UICONTROL Compartilhar]**. O ícone Compartilhado aparece ao lado do filtro: ![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Share_18_N.svg)
 
 1. É possível filtrar por filtros compartilhados com você em Filtros > Outros filtros > Compartilhados comigo.

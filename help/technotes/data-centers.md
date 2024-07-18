@@ -19,4 +19,4 @@ Após o provisionamento, os clientes designam a região em que seus dados do Ado
 
 ![Data centers do CJA](assets/data-centers.png)
 
-Consulte [Coleta de dados regionais](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) na documentação do Adobe Experience Cloud para obter mais informações.
+Consulte [Coleta de dados regionais](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) na documentação da Adobe Experience Cloud para obter mais informações.

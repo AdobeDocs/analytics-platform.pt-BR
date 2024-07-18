@@ -41,8 +41,8 @@ Lembre-se:
 
    | Tipo de comparação de linha | Definição |
    | --- | --- |
-   | **[!UICONTROL Comparação de tempo]** | O tipo de comparação mais comum: comparar esse período com 4 semanas atrás, por exemplo. Se você selecionou [!UICONTROL Comparação de tempo], selecione uma segunda opção para definir com qual período deseja comparar.<p>![Uma comparação com Período selecionado e o campo de seleção secundário para Período.](assets/combo-time-period.png) |
-   | **[!UICONTROL Função]** | Você pode incluir uma função, como [!UICONTROL Média], na comparação. Consulte uma lista de funções compatíveis abaixo.<p>![Menu suspenso de comparação de linhas mostrando as Funções selecionadas e uma lista de funções compatíveis disponíveis.](assets/combo-functions.png) |
+   | **[!UICONTROL Comparação de tempo]** | O tipo de comparação mais comum: comparar esse período com 4 semanas atrás, por exemplo. Se você selecionou [!UICONTROL Comparação de tempo], selecione uma segunda opção para definir com qual período deseja comparar.<p>![Comparação de linha com Período selecionado e o campo de seleção secundário para Período.](assets/combo-time-period.png) |
+   | **[!UICONTROL Função]** | Você pode incluir uma função, como [!UICONTROL Média], na comparação. Consulte uma lista de funções compatíveis abaixo.<p>![Menu suspenso Comparação de linhas mostrando as Funções selecionadas e uma lista de funções com suporte disponíveis.](assets/combo-functions.png) |
    | **[!UICONTROL Métrica secundária]** | Você pode, por exemplo, comparar a [!UICONTROL Receita] com outra métrica.<p>![Um gráfico de combinação comparando duas métricas.](assets/combo-2metrics.png) |
 
    {style="table-layout:auto"}
@@ -83,7 +83,7 @@ Este é um exemplo de um gráfico de combinação com as funções Média cumula
 
 Clique no ícone de engrenagem na parte superior direita de um gráfico de combinação para alterar suas configurações.
 
-![Visualização das configurações do gráfico de combinação mostrando as opções descritas abaixo.](assets/combo-settings.png)
+![Exibição de configurações do gráfico de combinação mostrando as opções descritas abaixo.](assets/combo-settings.png)
 
 | Configuração | Definição |
 | --- | --- |

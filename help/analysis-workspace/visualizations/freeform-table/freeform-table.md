@@ -15,7 +15,7 @@ ht-degree: 90%
 
 No Analysis Workspace, uma Tabela de forma livre é a base para a análise de dados interativa. Você pode arrastar e soltar uma combinação de [componentes](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components.html?lang=pt-BR) em linhas e colunas para criar uma tabela personalizada para sua análise. À medida que cada componente é solto, a tabela é atualizada imediatamente para que você possa analisar e pesquisar com mais detalhes rapidamente.
 
-![Tabela de forma livre que mostra componentes em linhas e colunas, incluindo visitas e pedidos online para várias páginas da Web.](assets/opening-section.png)
+![Tabela de forma livre mostrando componentes em linhas e colunas, incluindo visitas e pedidos online de várias páginas da Web.](assets/opening-section.png)
 
 ## Tabelas automatizadas
 
@@ -27,7 +27,7 @@ A maneira mais rápida de criar uma tabela é soltar os componentes diretamente 
 
 Se preferir adicionar primeiro vários componentes à tabela e, em seguida, renderizar os dados, ative o Construtor de tabelas de forma livre. Com o construtor ativado, você pode arrastar e soltar em muitas dimensões, detalhamentos, métricas e filtros para criar tabelas que respondam a perguntas mais complexas. Os dados não serão atualizados dinamicamente, serão atualizados assim que você clicar em **[!UICONTROL Criar]**.
 
-![Um Construtor de tabela de forma livre mostrando ](assets/table-builder.png)
+![Um Construtor de Tabela de Forma Livre mostrando ](assets/table-builder.png)
 
 ## Interações de tabela
 

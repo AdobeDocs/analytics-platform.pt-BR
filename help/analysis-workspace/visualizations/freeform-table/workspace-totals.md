@@ -15,25 +15,25 @@ ht-degree: 75%
 
 Nas Tabelas de forma livre, aparece uma linha total em cada nível de detalhamento, que pode mostrar dois totais:
 
-* **[!UICONTROL Total geral]** (número cinza abaixo do resultado): esse total representa todos os eventos coletados. Quando um filtro é aplicado no nível do painel ou na tabela de forma livre, esse total é ajustado para refletir todos os eventos que correspondem aos critérios do filtro.
+* **[!UICONTROL Total geral]** (número cinza abaixo do resultado): esse total representa todos os eventos que foram coletados. Quando um filtro é aplicado no nível do painel ou na tabela de forma livre, esse total é ajustado para refletir todos os eventos que correspondem aos critérios do filtro.
 * **[!UICONTROL Total da tabela]** (número preto): normalmente esse total é uma parte do [!UICONTROL Total geral] ou igual a ele. Ele reflete todos os filtros de tabela aplicados na tabela de forma livre, incluindo a opção [!UICONTROL Não incluir].
 
-![Tabela de forma livre que destaca o total geral e o total da tabela.](assets/total-row.png)
+![Tabela de forma livre destacando o total geral e o total da tabela.](assets/total-row.png)
 
 ## Exibir configuração total
 
 Em **[!UICONTROL Configurações da coluna]**, há opções para **[!UICONTROL Mostrar totais]** e **[!UICONTROL Mostrar total geral]**. Se essas configurações estiverem desmarcadas, os totais serão removidos da tabela. Isso pode ser desejado nos casos em que os totais não fazem sentido, por exemplo, em determinados cenários [Métrica calculada](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetrics-reference/cm-totals.html?lang=pt-BR).
 
-![As opções de Configurações de coluna mostram marcas de seleção para Mostrar totais e Mostrar total de concessão.](assets/column-settings-total.png)
+![Opções de Configurações de Coluna mostrando marcas de seleção para Mostrar Totais e Mostrar Total de Concessão.](assets/column-settings-total.png)
 
 ## Configurações do Total de linhas estáticas
 
 Os totais de [linhas estáticas](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) se comportam de maneira diferente e são controlados em **[!UICONTROL Configurações da linha]**.
 
-* **[!UICONTROL Mostrar a soma das linhas atuais como total]** - mostra uma soma das linhas do lado do cliente na tabela, o que significa que o total **não** remove a duplicação de métricas como visitas ou pessoas.
-* **[!UICONTROL Mostrar Total Geral]** - mostra uma soma do lado do servidor, o que significa que o total removerá a duplicação de métricas como visitas ou pessoas.
+* **[!UICONTROL Mostrar a soma das linhas atuais como total]**: mostra uma soma das linhas da tabela do lado do cliente, o que significa que o total **não** removerá a duplicação de métricas como visitas ou pessoas.
+* **[!UICONTROL Mostrar total geral]** - mostra uma soma do lado do servidor, o que significa que o total removerá a duplicação de métricas como visitas ou pessoas.
 
-![Configurações de linha que mostram Mostrar total geral selecionado.](assets/static-rows.png)
+![Configurações de Linha mostrando Mostrar Total Geral selecionado.](assets/static-rows.png)
 
 ## Perguntas frequentes
 

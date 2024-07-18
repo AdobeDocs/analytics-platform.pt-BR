@@ -56,7 +56,7 @@ Uma vez selecionado o modelo e identificados os feriados no intervalo de datas d
 
 Observe a melhoria significativa no desempenho do Natal e do Ano Novo no seguinte exemplo:
 
-![Dois gráficos de linha mostrando alterações de desempenho com e sem desempenho de feriado.](assets/anomaly_statistics.png)
+![Gráficos de duas linhas mostrando alterações de desempenho com e sem desempenho de feriado.](assets/anomaly_statistics.png)
 
 ## Detecção de anomalias para granularidade horária
 

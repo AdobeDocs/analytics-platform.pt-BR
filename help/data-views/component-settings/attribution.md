@@ -16,7 +16,7 @@ ht-degree: 28%
 
 A atribuição permite personalizar como os itens de dimensão recebem crédito por eventos bem-sucedidos.
 
-![Janela Visualizações de dados destacando a opção Definir atribuição](../assets/attribution-settings.png)
+![Janela de visualizações de dados destacando a opção Definir atribuição](../assets/attribution-settings.png)
 
 Por exemplo:
 
@@ -33,11 +33,11 @@ Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquis
 >
 >Considere o seguinte ao ativar a atribuição em uma métrica:
 >
->* **Ao usar o componente em um relatório com o *uma única dimensão*:** A atribuição do componente ignora o modelo de alocação quando um modelo de atribuição não padrão é usado.
+>* **Ao usar o componente em um relatório com *uma única dimensão*:** a atribuição do componente ignora o modelo de alocação quando um modelo de atribuição não padrão é usado.
 >
->* **Ao usar o componente em um relatório com o *várias dimensões*:** A atribuição do componente retém o modelo de alocação quando um modelo de atribuição não padrão é usado.
+>* **Ao usar o componente em um relatório com *várias dimensões*:** a atribuição do componente retém o modelo de alocação quando um modelo de atribuição não padrão é usado.
 >
->   Várias dimensões estão disponíveis somente quando [exportação de dados para a nuvem](/help/analysis-workspace/export/export-cloud.md).
+>   Várias dimensões estão disponíveis somente ao [exportar dados para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 >
 > Para obter mais informações sobre alocação, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).
 
@@ -47,9 +47,9 @@ Para atualizar o modelo de atribuição padrão de um componente:
 
 1. Selecione o componente e expanda a seção Atribuição no lado direito da tela.
 
-   ![Janela Visualizações de dados destacando a opção Definir atribuição](../assets/attribution-settings.png)
+   ![Janela de visualizações de dados destacando a opção Definir atribuição](../assets/attribution-settings.png)
 
-1. Selecionar [!UICONTROL **Definir atribuição**] e selecione o modelo de atribuição na [!UICONTROL **Modelo de atribuição**] menu suspenso.
+1. Selecione [!UICONTROL **Definir atribuição**] e selecione o modelo de atribuição no menu suspenso [!UICONTROL **Modelo de atribuição**].
 
    Consulte [Modelos de atribuição](#attribution-models) para saber mais sobre cada modelo de atribuição.
 
@@ -61,7 +61,7 @@ Para atualizar o modelo de atribuição padrão de um componente:
 >
 > * Copie a métrica na visualização de dados com cada configuração de atribuição desejada. É possível incluir a mesma métrica várias vezes em uma visualização de dados, dando a cada métrica uma configuração diferente. Certifique-se de rotular cada métrica apropriadamente para que os analistas entendam a diferença entre essas métricas ao gerar relatórios.
 >
-> * Substitua a métrica no Analysis Workspace. Em métricas de [Configurações de coluna](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md), selecione **[!UICONTROL Usar modelo de atribuição não-padrão]** para alterar o modelo de atribuição da métrica e a janela de retrospectiva desse relatório específico.
+> * Substitua a métrica no Analysis Workspace. Nas [Configurações de coluna](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md) de uma métrica, selecione **[!UICONTROL Usar modelo de atribuição não padrão]** para alterar o modelo de atribuição da métrica e a janela de retrospectiva desse relatório específico.
 
 ## Modelos de atribuição
 
@@ -79,7 +79,7 @@ Um modelo de atribuição determina quais itens de dimensão recebem crédito po
 | ![J invertido](../assets/attribution-models/inverse_j.png) | J invertido | Dá 60% de crédito ao primeiro ponto de contato, 20% de crédito ao último ponto de contato e divide os 20% restantes para os pontos de contato entre os dois. Para conversões com um só ponto de contato, o crédito é de 100%. Para conversões com dois pontos de contato, o crédito é de 75% para a primeira interação e de 25% para a última. Semelhante ao Forma de J, esse modelo de atribuição favorece a primeira e a última interações, mas favorece mais a primeira interação. |
 | ![Declínio de tempo](../assets/attribution-models/time_decay.png) | Declínio de tempo | Segue um declínio exponencial com um parâmetro personalizado de meia-vida e padrão de 7 dias. O peso de cada canal depende da quantidade de tempo decorrido entre a iniciação do ponto de contato e a conversão final. A fórmula usada para determinar o crédito é `2^(-t/halflife)`, em que `t` é o tempo entre um ponto de contato e uma conversão. Todos os pontos de contato são normalizados para 100%. Ideal para cenários em que você deseja medir a atribuição em relação a um evento específico e significativo. Quanto mais tarde ocorrer uma conversão após esse evento, menos crédito será dado. |
 | ![Personalizado](../assets/attribution-models/custom.png) | Personalizado | Permite que você especifique os pesos que deseja atribuir ao primeiro, ao último e ao resto de pontos de contato. Os valores especificados são regularizados para 100% mesmo se os números inseridos, quando somados, não resultarem em 100. Para conversões com um só ponto de contato, o crédito é de 100%. Para interações com dois pontos de contato, o parâmetro intermediário é ignorado. O primeiro e o último ponto de contato são normalizados para 100% e o crédito é atribuído em conformidade. Esse modelo é ideal para analistas que desejam ter controle total sobre seu modelo de atribuição e têm necessidades específicas que outros modelos de atribuição não atendem. |
-| ![Algorítmico](../assets/attribution-models/algorithmic.png) | Algorítmico | Usa técnicas estatísticas para determinar dinamicamente a alocação ideal de crédito para a métrica selecionada. O algoritmo usado para atribuição é baseado no Harsanyi Dividend da teoria dos jogos cooperativos. O dividendo de Harsanyi é uma generalização da solução de valor de Shapley (batizada de Lloyd Shapley, economista vencedor do Nobel) para distribuir crédito entre os jogadores em um jogo com contribuições desiguais para o resultado.<br>Em um alto nível, a atribuição é calculada como uma coalizão de jogadores aos quais um excedente deve ser distribuído de forma equitativa. A distribuição excedente de cada coalizão é determinada de acordo com o excedente anteriormente criado por cada subcoalizão (ou itens de dimensão anteriormente participantes) de forma recursiva. Para obter mais detalhes, consulte os documentos originais de John Harsanyi e Lloyd Shapley:<br>Shapley, Lloyd S. (1953). Um valor para jogos em pessoa. *Contribuições para a Teoria dos Jogos, 2(28)*, 307-317.<br>Harsanyi, John C. (1963). Um modelo de negociação simplificado para o jogo cooperativo entre pessoas. *International Economic Review 4(2)*, 194-220. |
+| ![Algorítmico](../assets/attribution-models/algorithmic.png) | Algorítmico | Usa técnicas estatísticas para determinar dinamicamente a alocação ideal de crédito para a métrica selecionada. O algoritmo usado para atribuição é baseado no Harsanyi Dividend da teoria dos jogos cooperativos. O dividendo de Harsanyi é uma generalização da solução de valor de Shapley (batizada de Lloyd Shapley, economista vencedor do Nobel) para distribuir crédito entre os jogadores em um jogo com contribuições desiguais para o resultado.<br>Em um nível alto, a atribuição é calculada como uma coalizão de jogadores aos quais um excedente deve ser distribuído de forma equitativa. A distribuição excedente de cada coalizão é determinada de acordo com o excedente anteriormente criado por cada subcoalizão (ou itens de dimensão anteriormente participantes) de forma recursiva. Para mais detalhes, veja os documentos originais de John Harsanyi e Lloyd Shapley:<br>Shapley, Lloyd S. (1953). Um valor para jogos em pessoa. *Contribuições para a Teoria dos Jogos, 2(28)*, 307-317.<br>Harsanyi, John C. (1963). Um modelo de negociação simplificado para o jogo cooperativo entre pessoas. *International Economic Review 4(2)*, 194-220. |
 
 {style="table-layout:auto"}
 
@@ -87,13 +87,13 @@ Um modelo de atribuição determina quais itens de dimensão recebem crédito po
 
 As janelas de retrospectiva representam quanto tempo uma conversão deve retroceder para incluir pontos de contato. Se um item de dimensão for definido fora da janela de pesquisa, o valor não será incluído em nenhum cálculo de atribuição.
 
-* **14 dias**: retroage até 14 dias a partir do momento em que a conversão ocorreu.
-* **30 dias**: retroage até 30 dias a partir do momento em que a conversão ocorreu.
-* **60 dias**: retroage até 60 dias a partir do momento em que a conversão ocorreu.
-* **90 dias**: retroage até 90 dias a partir do momento em que a conversão ocorreu.
-* **Session**: retroage até o início da sessão em que ocorreu uma conversão. As janelas de retrospectiva de sessão respeitam as [Tempo limite da sessão](../create-dataview.md#session-settings).
-* **Pessoa (Janela Relatórios)**: verifica todas as visitas até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da pessoa será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
-* **Tempo personalizado:** Permite definir uma janela de retrospectiva personalizada a partir de quando ocorreu uma conversão. Você pode especificar o número de minutos, horas, dias, semanas, meses ou trimestres. Por exemplo, se uma conversão ocorresse em 20 de fevereiro, uma janela de pesquisa de cinco dias avaliaria todos os pontos de contato de dimensão de 15 a 20 de fevereiro no modelo de atribuição.
+* **14 Dias**: retroage até 14 dias a partir de quando a conversão ocorreu.
+* **30 Dias**: retroage até 30 dias a partir do momento em que a conversão ocorreu.
+* **60 Dias**: retroage até 60 dias a partir do momento da conversão.
+* **90 Dias**: retroage até 90 dias a partir do momento da conversão.
+* **Sessão**: retroage até o início da sessão em que ocorreu uma conversão. As janelas de retrospectiva de sessão respeitam o [tempo limite de sessão](../create-dataview.md#session-settings) modificado.
+* **Pessoa (Janela de Relatório)**: verifica todas as visitas até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da pessoa será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
+* **Tempo personalizado:** permite que você defina uma janela de pesquisa personalizada a partir de quando ocorreu uma conversão. Você pode especificar o número de minutos, horas, dias, semanas, meses ou trimestres. Por exemplo, se uma conversão ocorresse em 20 de fevereiro, uma janela de pesquisa de cinco dias avaliaria todos os pontos de contato de dimensão de 15 a 20 de fevereiro no modelo de atribuição.
 
 ## Exemplo
 
@@ -105,15 +105,15 @@ Considere o exemplo a seguir:
 
 Dependendo da janela de retrospectiva e do modelo de atribuição, os canais recebem crédito diferente. Veja a seguir alguns exemplos:
 
-* Usar **primeiro contato** e uma **janela de retrospectiva de sessão**, a atribuição considera somente a terceira visita. Entre email e exibição, o email foi o primeiro, então o email recebe 100% de crédito pela compra de US$ 50.
-* Usar **primeiro contato** e uma **janela de retrospectiva de pessoa**, a atribuição considera todas as três visitas. A pesquisa paga foi a primeira, então ela recebe 100% de crédito pela compra de US$ 50.
-* Usar **linear** e uma **janela de retrospectiva de sessão**, o crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25 dólares.
-* Usar **linear** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 por esta compra.
-* Usar **Forma de J** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição.
+* Usando o **primeiro contato** e uma **janela de retrospectiva de sessão**, a atribuição considera somente a terceira visita. Entre email e exibição, o email foi o primeiro, então o email recebe 100% de crédito pela compra de US$ 50.
+* Usando o **primeiro contato** e uma **janela de retrospectiva de pessoa**, a atribuição considera todas as três visitas. A pesquisa paga foi a primeira, então ela recebe 100% de crédito pela compra de US$ 50.
+* Usando o **linear** e uma **janela de retrospectiva de sessão**, o crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25 dólares.
+* Usando o **linear** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 por esta compra.
+* Usando o **Forma de J** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição.
    * O crédito será de 60% para a exibição (US$ 30).
    * De 20% para a pesquisa paga (US$ 10).
    * Os 20% restantes são divididos entre redes sociais e email (US$ 5 para cada).
-* Usar **Decaimento de tempo** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Usando a meia-vida padrão de 7 dias:
+* Usando o **Declínio de Tempo** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Usando a meia-vida padrão de 7 dias:
    * Espaço de zero dias entre o ponto de contato de exibição e a conversão. `2^(-0/7) = 1`
    * Intervalo de zero dias entre o ponto de contato do email e a conversão. `2^(-0/7) = 1`
    * Intervalo de seis dias entre o ponto de contato social e a conversão. `2^(-6/7) = 0.552`

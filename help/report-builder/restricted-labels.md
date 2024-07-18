@@ -40,4 +40,4 @@ Os componentes afetados por essas políticas ficam esmaecidos. Quando você pass
 
 Nos casos em que um usuário criou um relatório do Report Builder com elementos de dados restritos posteriormente, quando o relatório for atualizado uma mensagem de erro será exibida.
 
-![A mensagem de erro exibida depois que os elementos de dados são restritos.](assets/error-restricted-data.png)
+![A mensagem de erro exibida após os elementos de dados serem restritos posteriormente.](assets/error-restricted-data.png)

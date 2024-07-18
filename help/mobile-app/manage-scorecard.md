@@ -66,7 +66,7 @@ Para adicionar texto a um slide de detalhes, selecione um layout que apresente o
 
 ## Remover componentes {#remove}
 
-Da mesma forma, para remover um componente aplicado a todo o cartão de pontuação, clique em qualquer lugar do cartão de pontuação fora dos blocos e remova-o clicando no **x** que aparece quando você passa o mouse sobre o componente, conforme mostrado abaixo para o **Novas visitas**:
+Da mesma forma, para remover um componente aplicado a todo o cartão de pontuação, clique em qualquer lugar do cartão de pontuação fora dos blocos e remova-o clicando no **x** exibido ao passar o mouse sobre o componente, como mostrado abaixo para **Primeiras visitas**:
 
 ![Remover_componentes](assets/new_remove.png)
 
@@ -157,7 +157,7 @@ Para compartilhar o cartão de pontuação com um usuário executivo:
 
 1. Clique no menu **[!UICONTROL Compartilhar]** e selecione **[!UICONTROL Compartilhar scorecard]**.
 
-1. No **[!UICONTROL Compartilhar Scorecard para dispositivos móveis]** preencha os campos ao:
+1. No formulário **[!UICONTROL Compartilhar Scorecard para Dispositivos Móveis]**, preencha os campos da seguinte forma:
 
    * Fornecer o nome do cartão de pontuação
    * Fornecer uma descrição do cartão de pontuação
@@ -184,7 +184,7 @@ Para compartilhar um cartão de pontuação usando um link compartilhável
 
 1. Copie o link e cole-o em um email, documento ou aplicativo de mensagens instantâneas.
 
-   Quando um recipient usa um aplicativo de desktop ou navegador para abrir o link, o projeto de cartão de pontuação para dispositivos móveis é aberto no Espaço de trabalho.
+   Quando um recipient usa um aplicativo de desktop ou navegador para abrir o link, o projeto de cartão de pontuação para dispositivos móveis é aberto no Workspace.
 
    Quando um recipient abre o link em um dispositivo móvel, o cartão de pontuação é aberto diretamente no aplicativo de painéis do Adobe Analytics.
 
@@ -226,6 +226,6 @@ Para exibir legendas inteligentes em um cartão de pontuação para dispositivos
 
 1. Toque no sinalizador preto dentro de uma legenda para relatar um problema, como conteúdo mal-intencionado ou ilegal.
 
-   ![Relatar problema com legenda](assets/caption-report.png)
+   ![Relatar problema com a legenda](assets/caption-report.png)
 
-1. Clique no X para sair da janela **[!UICONTROL Resultados do relatório]** diálogo.
+1. Clique no X para sair da caixa de diálogo **[!UICONTROL Resultados do relatório]**.

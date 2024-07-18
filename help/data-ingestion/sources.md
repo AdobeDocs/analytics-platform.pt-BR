@@ -52,23 +52,24 @@ Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
-1. Selecionar **[!UICONTROL Criar esquema]**. .
+1. Selecione **[!UICONTROL Criar esquema]**.
+.
 1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
-   1. Selecionar **[!UICONTROL Perfil individual]**.
+   1. Selecione **[!UICONTROL Perfil Individual]**.
 
-      ![Criar uma janela de esquema com Perfil individual selecionado](./assets/create-pr-schema-wizard-step-1.png)
+      ![Criar uma janela de esquema com Perfil Individual selecionado](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Um esquema de Evento de experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+      >    Um esquema de Evento de Experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão de push para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
 
    1. Selecione **[!UICONTROL Próximo]**.
 
 
-1. No [!UICONTROL Nomear e revisar a etapa] do [!UICONTROL Criar esquema] assistente:
+1. No [!UICONTROL Nome e na etapa de revisão] do assistente [!UICONTROL Criar esquema]:
 
-   1. Insira um **[!UICONTROL Nome de exibição do esquema]** para o esquema e (opcional) uma **[!UICONTROL Descrição]**.
+   1. Insira um **[!UICONTROL nome para exibição do esquema]** para seu esquema e (opcional) uma **[!UICONTROL Descrição]**.
 
       ![Janela Criar esquema mostrando os campos para nomear seu esquema ](./assets/create-pr-schema-wizard-step-2.png)
 
@@ -175,15 +176,15 @@ Dependendo de onde você recebe os dados de fidelidade, é possível escolher o 
 
 Você pode assimilar dados de várias fontes. Veja a seguir apenas algumas das muitas fontes disponíveis:
 
-- aplicativos Adobe (conectores de origem incluem [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager)e mais)
+- aplicativos Adobe (os conectores de origem incluem [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) e muito mais)
 
-- Armazenamento na nuvem (os conectores de origem incluem [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob)e mais)
+- Armazenamento na nuvem (os conectores de origem incluem [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) e muito mais)
 
-- Bancos de dados (os conectores de origem incluem [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server)e mais)
+- Bancos de dados (os conectores de origem incluem [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) e muito mais)
 
 Para configurar um conector de origem:
 
-1. No Adobe Experience Platform, selecione **[!UICONTROL Origens]** de [!UICONTROL CONEXÕES] no painel esquerdo.
+1. No Adobe Experience Platform, selecione **[!UICONTROL Fontes]** de [!UICONTROL CONEXÕES] no painel esquerdo.
 
 1. Selecione o conector de origem na lista de conectores de origem disponíveis.
 
@@ -209,7 +210,7 @@ Para configurar um conector de origem:
 
    1. Selecione **[!UICONTROL Exibir documentação]**.
 
-Consulte [Assimilar e use dados do Adobe Analytics tradicional](./analytics.md) para obter informações sobre como usar o conector de origem do Adobe Analytics.
+Consulte [Assimilar e usar dados do Adobe Analytics tradicional](./analytics.md) para obter informações sobre como usar o conector de origem do Adobe Analytics.
 
 Consulte [Assimilar e usar dados de transmissão](./streaming.md) para obter informações sobre como usar o conector de origem da API HTTP.
 
@@ -262,7 +263,7 @@ Para criar sua conexão:
 
    1. Selecione **[!UICONTROL Salvar]**.
 
-Depois de criar um [conexão](/help/connections/overview.md), é possível executar várias tarefas de gerenciamento, como [seleção e combinação de conjuntos de dados](/help/connections/combined-dataset.md), [verificar o status dos conjuntos de dados de uma conexão e o status da assimilação de dados](/help/connections/manage-connections.md)e muito mais.
+Depois de criar uma [conexão](/help/connections/overview.md), você poderá executar várias tarefas de gerenciamento, como [selecionar e combinar conjuntos de dados](/help/connections/combined-dataset.md), [verificar o status dos conjuntos de dados de uma conexão e o status da assimilação de dados](/help/connections/manage-connections.md) e muito mais.
 
 ## Configurar uma visualização de dados
 
@@ -323,7 +324,7 @@ Para criar o projeto:
 
    ![Visualização de dados de seleção do Espaço de trabalho](./assets/cja-projects-3.png).
 
-5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas no [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] . Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
+5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] do [!UICONTROL Painel]. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
 
    ![Espaço de trabalho - Primeiro relatório](./assets/cja-projects-5.png)
 

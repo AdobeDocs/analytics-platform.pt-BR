@@ -10,7 +10,7 @@ hidefromtoc: true
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '299'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ O Customer Journey Analytics permite controlar como você conecta os dados onlin
    <td colname="col1" colsep="0" rowsep="0" valign="top"> <p class="head"> <b>Itens novos ou em destaque</b> </p> <p> 
      <ul>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/stitching/overview.html?lang=pt-BR"> Análise entre canais (compilação de IDs no Customer Journey Analytics) </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html">Utilização dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html"> Combinar conjuntos de relatórios com esquemas diferentes </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html"> Regras de processamento, VISTA e classificações em relação ao Preparo de dados </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html"> Comparar o processamento de dados entre os recursos de relatório do Adobe Analytics e do Customer Journey Analytics </a> </li>
-      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html"> Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da Adobe Experience Platform e o conector de origem do Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aa-data-in-cja.html?lang=pt-BR">Utilização dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=pt-BR"> Combinar conjuntos de relatórios com esquemas diferentes </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/pr-vista-dataprep.html?lang=pt-BR"> Regras de processamento, VISTA e classificações em relação ao Preparo de dados </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/data-processing-comparisons.html?lang=pt-BR"> Comparar o processamento de dados entre os recursos de relatório do Adobe Analytics e do Customer Journey Analytics </a> </li>
+      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/vrs-dataview-sandbox-adc.html?lang=pt-BR"> Conjuntos de relatórios virtuais, visualizações de dados, sandboxes da Adobe Experience Platform e o conector de origem do Analytics </a> </li>
       <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja.html?lang=pt-BR"> Evolução do Adobe Analytics para o Customer Journey Analytics </a> </li>
       <li> <a href="https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/aa-to-cja-user.html?lang=pt-BR"> Guia do usuário do Customer Journey Analytics para usuários do Adobe Analytics </a> </li>
      <li><a href="https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#connection-detail"> Usar os recursos aprimorados de gerenciamento de conexão </a> </li>

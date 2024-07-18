@@ -25,7 +25,7 @@ Para alterar as configurações do Report Builder
 
 1. Clique em **Aplicar**.
 
-   ![Painel Intervalo de datas do Report Builder mostrando o botão Cancelar e Aplicar.](./assets/image38.png)
+   Painel de intervalo de datas ![Report Builder mostrando o botão Cancelar e Aplicar.](./assets/image38.png)
 
 ## Modo offline
 
@@ -51,7 +51,7 @@ Para selecionar o idioma usado na interface do Report Builder
 
 1. Selecione um idioma no menu suspenso **Idioma**.
 
-   ![painel Intervalo de datas do Report Builder mostrando a lista Idioma com inglês selecionado.](./assets/image39.png)
+   Painel de intervalo de datas ![Report Builder mostrando a lista Idioma com inglês selecionado.](./assets/image39.png)
 
 1. Clique em **Aplicar.**
 

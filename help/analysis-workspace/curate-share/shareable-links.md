@@ -8,25 +8,25 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 55%
+ht-degree: 79%
 
 ---
 
 # Criar links compartilháveis
 
-O Analysis Workspace oferece várias maneiras de compartilhar um projeto com seus usuários, incluindo a capacidade de obter um link para um projeto ou uma parte específica de um projeto. Alguns tipos de link exigem que o recipient faça logon no Adobe Analytics antes de acessar o projeto, enquanto outros não.
+O Analysis Workspace oferece várias maneiras de compartilhar um projeto com seus usuários, incluindo a capacidade de obter um link para um projeto ou uma parte específica de um projeto. Alguns tipos de link exigem que o destinatário faça logon no Adobe Analytics antes de acessar o projeto, enquanto outros não.
 
 ## Obter um link do projeto para compartilhar com outros usuários do Workspace {#project-link}
 
-Para compartilhar um link para um projeto, vá para o projeto que deseja compartilhar e selecione ir para [!UICONTROL **Compartilhar**] > [!UICONTROL **Obter link do projeto**] (ou **Compartilhar**] > [!UICONTROL **Compartilhar com usuários do Workspace**] > [!UICONTROL **Compartilhar por link**). Os usuários com os quais você compartilha o link são solicitados a fazer logon.
+Para compartilhar um link com um projeto, vá para o projeto que deseja compartilhar e selecione ir para [!UICONTROL **Compartilhar**] > [!UICONTROL **Obter link do projeto**] (ou **Compartilhar**] > [!UICONTROL **Compartilhar com usuários do Workspace**] > [!UICONTROL **Compartilhar por link**). Usuários com os quais você compartilha o link são solicitados a fazer logon.
 
-Se o recipient do link não tiver recebido uma [função do projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=pt-BR), administradores recebem **[!UICONTROL Editar original]** e os não administradores recebem **[!UICONTROL Editar cópia]** experiências.
+Se o destinatário do link não tiver recebido uma [função do projeto](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/share-projects.html?lang=pt-BR), os administradores receberão a experiência **[!UICONTROL Editar original]** e os não administradores receberão a experiência **[!UICONTROL Editar cópia]**.
 
-## Obter um link somente leitura para compartilhar com qualquer pessoa
+## Obter um link de somente leitura para compartilhar com qualquer pessoa
 
 Você pode compartilhar um link somente leitura para projetos Analysis Workspace com pessoas que não têm acesso ao Customer Journey Analytics.
 
-Para obter mais informações, consulte &quot;Compartilhar um projeto com qualquer pessoa (não é necessário fazer logon)&quot; no artigo [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).
+Para obter mais informações, consulte “Compartilhar um projeto com qualquer pessoa (sem necessidade de fazer logon)” no artigo [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).
 
 ## Obter um painel ou link de visualização {#panel-link}
 
@@ -37,7 +37,7 @@ Você também pode compartilhar um link para uma parte específica de um projeto
 
 [Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=pt-BR) sobre como criar links e usá-los para direcionar recipients para partes específicas do seu projeto.
 
-![O menu suspenso depois de clicar com o botão direito do mouse no cabeçalho com o link Obter visualização realçado.](assets/get-viz-link.png)
+![O menu suspenso após clicar com o botão direito do mouse no cabeçalho com o link Obter visualização realçado.](assets/get-viz-link.png)
 
 ## Usar links em um índice {#TOC}
 

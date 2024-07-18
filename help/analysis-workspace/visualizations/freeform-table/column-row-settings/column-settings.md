@@ -21,7 +21,7 @@ Assista a um vídeo sobre as configurações de linha e coluna aqui:
 
 ## Editar [!UICONTROL Configurações de coluna] {#edit-column-settings}
 
-Para acessar o [!UICONTROL Configurações de coluna], arraste uma Tabela de forma livre para o projeto e clique no ícone de configurações ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) no cabeçalho da coluna.
+Para acessar [!UICONTROL Configurações de coluna], arraste uma Tabela de forma livre para o projeto e clique no ícone de configurações ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) no cabeçalho da coluna.
 
 <img src="./assets/column-settings.png" alt="As configurações de Coluna que mostram Total de células, Células da tabela e Visualização da célula da tabela." width="50%" />
 
@@ -56,17 +56,17 @@ A formatação condicional aplica formatação a limites superiores, intermediá
 
 ## Usar modelo de atribuição não-padrão {#attribution}
 
-Permite substituir o modelo de atribuição padrão definido em [Visualizações de dados](/help/data-views/component-settings/attribution.md).
+Permite substituir o conjunto de modelos de atribuição padrão em [Visualizações de dados](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >
 >Considere o seguinte ao atualizar a atribuição de um componente para um modelo de atribuição não padrão:
 >
->* **Ao usar o componente em um relatório com o *uma única dimensão*:** A atribuição do componente ignora o modelo de alocação quando um modelo de atribuição não padrão é usado.
+>* **Ao usar o componente em um relatório com *uma única dimensão*:** a atribuição do componente ignora o modelo de alocação quando um modelo de atribuição não padrão é usado.
 >
->* **Ao usar o componente em um relatório com o *várias dimensões*:** A atribuição do componente retém o modelo de alocação quando um modelo de atribuição não padrão é usado.
+>* **Ao usar o componente em um relatório com *várias dimensões*:** a atribuição do componente retém o modelo de alocação quando um modelo de atribuição não padrão é usado.
 >
->   Várias dimensões estão disponíveis somente quando [exportação de dados para a nuvem](/help/analysis-workspace/export/export-cloud.md).
+>   Várias dimensões estão disponíveis somente ao [exportar dados para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 >
 > Para obter mais informações sobre alocação, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).
 
@@ -74,11 +74,11 @@ Para usar um modelo de atribuição não padrão para uma métrica em uma Analys
 
 1. Clique no ícone de Configurações (engrenagem) em uma métrica em uma coluna de Tabela de forma livre.
 
-   ![As opções de Configuração de coluna destacando a opção Configurações de dados: Use o modo de atribuição não padrão.](assets/attribution-checkbox.png)
+   ![As opções de Configuração de Coluna que destacam a opção de Configurações de Dados: Usar modo de atribuição não padrão.](assets/attribution-checkbox.png)
 
 2. Em **[!UICONTROL Configurações de dados]**, marque a opção **[!UICONTROL Usar modelo de atribuição não padrão]**. Para obter mais informações sobre os diferentes modelos de atribuição, consulte [Modelos de atribuição](/help/data-views/component-settings/attribution.md).
 
-   ![As opções de Modelo de atribuição de coluna que mostram Linear selecionado.](assets/attribution-select.png)
+   ![As opções de Modelo de Atribuição de Coluna mostrando Linear selecionado.](assets/attribution-select.png)
 
 >[!MORELIKETHIS]
 >

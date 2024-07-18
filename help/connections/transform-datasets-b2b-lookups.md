@@ -18,9 +18,9 @@ Para oferecer suporte a pesquisas com base em pessoas em dados B2B (incluindo co
 
 Essa transformação só está disponível para conjuntos de dados com dados para esquemas de pesquisa B2B, com base nas seguintes classes:
 
-* [Relação pessoal da conta de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [Relação pessoal da conta comercial XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
 * [Relação pessoal de oportunidade de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [Membros da lista de marketing de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [Membros da Lista de Marketing Comercial XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
 * [Membros da campanha de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
@@ -36,7 +36,7 @@ Para ativar a transformação desse conjunto de dados:
 
 * Selecione as opções para importar novos dados e preenchimento retroativo de conjunto de dados.
 
-* Selecionar **[!UICONTROL Transformar conjunto de dados para pesquisas B2B]**.
+* Selecione **[!UICONTROL Transformar conjunto de dados para pesquisas B2B]**.
 
   Essa opção transforma o conjunto de dados para que ele possa ser usado para pesquisas baseadas em pessoas em cenários B2B.
 

@@ -54,7 +54,7 @@ Para criar um conector de origem do Adobe Analytics:
 
 3. Selecione **[!UICONTROL Configurar]** ou **[!UICONTROL Adicionar dados]** no bloco Adobe Analytics.
 
-   ![A janela Adobe Experience Platform com Fontes selecionadas junto com os aplicativos Adobe e Adicionar dados está realçada.](./assets/sources-overview.png)
+   ![Janela do Adobe Experience Platform com Fontes selecionadas junto com aplicativos Adobe e Adicionar dados realçados.](./assets/sources-overview.png)
 
 4. Selecione **[!UICONTROL Conjunto de relatórios]**. Na lista de conjuntos de relatórios, selecione aquele que deseja usar.
 
@@ -70,13 +70,13 @@ Para criar um conector de origem do Adobe Analytics:
 
 6. Nomeie o fluxo de dados e (opcionalmente) forneça uma descrição.
 
-   ![Janela Adobe Experience Platform destacando a seção de detalhes do fluxo de dados](./assets/dataflow-detail.png)
+   ![Janela do Adobe Experience Platform destacando a seção de detalhes do Fluxo de Dados](./assets/dataflow-detail.png)
 
    Selecione **[!UICONTROL Próximo]**.
 
 7. Revise a conexão e selecione **[!UICONTROL Concluir]**.
 
-   ![Janela do Adobe Experience Platform destacando as seções do tipo Conectar e Dados para revisão](./assets/review.png)
+   ![Janela do Adobe Experience Platform destacando as seções Connect e Data type para revisão](./assets/review.png)
 
 
 Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics no conjunto de relatórios. O fluxo de dados assimila até 13 meses de dados históricos para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é limitado a três meses.
@@ -193,7 +193,7 @@ Para criar o projeto:
 
    ![Visualização de dados de seleção do Espaço de trabalho](./assets/cja-projects-3.png).
 
-5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas no [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel] . Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
+5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] do [!UICONTROL Painel]. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
 
    ![Espaço de trabalho - Primeiro relatório](./assets/cja-projects-5.png)
 

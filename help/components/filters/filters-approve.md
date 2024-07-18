@@ -27,6 +27,6 @@ Esta é a forma de marcar um filtro como aprovado:
 
    Observe o ícone de aprovação ao lado do filtro na lista:
 
-   ![Gerenciador de filtros mostrando que os Pedidos maiores que 100 estão aprovados para compartilhamento.](assets/seg_approved.png)
+   ![O Gerenciador de Filtros está mostrando que os Pedidos maiores que 100 estão aprovados para compartilhamento.](assets/seg_approved.png)
 
 1. Também é possível cancelar a aprovação de um filtro aprovado clicando em **[!UICONTROL Cancelar aprovação]**.

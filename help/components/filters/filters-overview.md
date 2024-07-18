@@ -26,7 +26,7 @@ Os filtros podem ser baseados em
 
 Você pode criar e salvar filtros no Construtor de filtros ou gerar filtros de uma visualização de Fallout (no Espaço de trabalho). Além disso, filtros podem ser usados juntos como filtros empilhados.
 
-A filtragem inclui o [Construtor de filtros](/help/components/filters/filter-builder.md) para construir filtros e executar um pré-teste, e a variável [Gerenciador de filtros](/help/components/filters/manage-filters.md) para coletar, marcar, aprovar, definir a segurança e compartilhar filtros na organização.
+A filtragem inclui o [Construtor de Filtros](/help/components/filters/filter-builder.md) para construir filtros e executar um pré-teste, e o [Gerenciador de Filtros](/help/components/filters/manage-filters.md) para coletar, marcar, aprovar, definir a segurança e compartilhar filtros na organização.
 
 O número máximo de filtros que podem ser criados por organização IMS é 50.000.
 
@@ -40,7 +40,7 @@ Os filtros sequenciais permitem identificar as pessoas com base na navegação (
 
 >[!IMPORTANT]
 >
->Você deve ter o **Selecionar** pacote para criar filtros sequenciais entre canais. Entre em contato com o administrador se não tiver certeza do pacote de Customer Journey Analytics que possui.
+>Você deve ter o pacote **Select** para criar filtros sequenciais entre canais. Entre em contato com o administrador se não tiver certeza do pacote de Customer Journey Analytics que possui.
 
 Veja um exemplo:
 
@@ -67,7 +67,7 @@ Os filtros são baseados em uma hierarquia de nível de Pessoa, Sessão e Evento
 <tr>
 <td style="background-color: #E5E4E2;" width="200" height="100"></td>
 <td style="background-color: #D3D3D3;" width="200" height="100"></td>
-<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Evento </td>
+<td style="background-color: #C0C0C0;" width="200" height="100" colspan="1"><img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg"/> Evento</td>
 </tr>
 </table>
 

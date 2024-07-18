@@ -3,13 +3,13 @@ description: A Previsão no Analysis Workspace usa uma série de técnicas estat
 title: Técnicas estatísticas usadas na previsão
 feature: Visualizations
 role: User
-source-git-commit: 1bd24ee1163e4615bf5626c51aec9f167352f2f6
+exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
+source-git-commit: accd7300c2dd6224e4d154cb6e3889f564e07a1a
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
-
 
 # Técnicas estatísticas usadas no serviço de previsão
 
@@ -54,7 +54,6 @@ O serviço não faz suposições sobre os dados do usuário. Por exemplo, o serv
 
 ## Referências
 
-1. Taylor, Sean J. e Benjamin Letham: *Previsão em escala.* The American Statistician 72.1 (2018): 37-45 (em inglês).
-1. Triebe, Oskar, et al.: *Neuralprofet: Previsão explicável em escala.* Pré-impressão arXiv:2111.15397(2021).
-1. Zhang e Arbor: *Detecção de anomalias em série temporal.* Pedido de patente norte-americana #18/057883.
-
+1. Taylor, Sean J. e Benjamin Letham: *Previsão em escala.* The American Statistician 72.1 (2018): 37-45.
+1. Triebe, Oskar, et al.: *Neuralprofet: previsão explicável em escala.* arXiv pré-impressão arXiv:2111.15397(2021).
+1. Zhang e Arbor: *Detecção de anomalias em série temporal.* Pedido de patente nos EUA #18/057883.

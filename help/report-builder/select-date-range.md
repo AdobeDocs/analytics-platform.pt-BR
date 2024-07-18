@@ -36,7 +36,7 @@ A opção A partir da célula permite fazer referência às datas inseridas em c
 
 Você tem a opção de excluir o hoje em qualquer intervalo de datas selecionado.
 
-![Painel de edição rápida do Report Builder com o calendário selecionado e Excluir hoje selecionado.](./assets/image17.png)
+Report Builder ![Painel de edição rápida com o calendário selecionado e Excluir hoje selecionado.](./assets/image17.png)
 
 ## Usar o calendário
 
@@ -62,7 +62,7 @@ Para selecionar datas usando o calendário
 
 Para definir um intervalo de datas invertido, clique primeiro na data final e, em seguida, clique na data inicial.
 
-![painel Intervalo de datas do Report Builder mostrando o calendário, a data final e a data inicial selecionada.](./assets/image18.png)
+Painel de intervalo de datas ![Report Builder mostrando o calendário, a data de término e a data de início selecionada.](./assets/image18.png)
 
 ### Menu suspenso Predefinição
 
@@ -76,7 +76,7 @@ A opção Datas em andamento permite selecionar um intervalo de datas usando dat
 
 1. Selecione uma expressão em andamento para a data de início e/ou de término.
 
-   ![painel Intervalo de datas do Report Builder mostrando Usar datas do acumulado selecionadas e a expressão do acumulado.](./assets/image19.png)
+   Painel de intervalo de datas ![Report Builder mostrando Usar datas do acumulado selecionadas e a expressão do acumulado.](./assets/image19.png)
 
    **Início do** — Permite selecionar o início de um dia, semana, mês, trimestre ou ano.
 
@@ -86,11 +86,11 @@ A opção Datas em andamento permite selecionar um intervalo de datas usando dat
 
 1. Escolha dia, semana, mês, trimestre ou ano como o período do acumulado.
 
-   ![Painel de intervalo de datas do Report Builder que mostra o dia atual selecionado.](./assets/image20.png)
+   Painel de intervalo de datas ![Report Builder mostrando o dia atual selecionado.](./assets/image20.png)
 
 1. Adicione ou subtraia dias, semanas, meses, trimestres ou anos a partir da data em andamento.
 
-   ![painel Intervalo de datas do Report Builder mostrando o dia atual mais 14 dias selecionados.](./assets/image21.png)
+   Painel de intervalo de datas ![Report Builder mostrando o dia atual mais 14 dias selecionados.](./assets/image21.png)
 
 1. Clique em Próximo para definir o intervalo de dados.
 

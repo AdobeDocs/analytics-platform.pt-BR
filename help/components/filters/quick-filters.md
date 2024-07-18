@@ -34,11 +34,11 @@ Para criar um filtro rápido:
 
 1. Escolha um dos seguintes métodos para começar a criar o filtro rápido:
 
-   * **Ad hoc (arrastar e soltar):** No painel à esquerda, arraste um componente para a área de destino do filtro no cabeçalho do painel.
+   * **Ad hoc (arrastar e soltar):** No painel esquerdo, arraste um componente para a área de destino do filtro no cabeçalho do painel.
 
-     ![soltar um segmento na área designada](assets/filter-dropzone.png)
+     ![soltar um segmento na área de soltar](assets/filter-dropzone.png)
 
-     É possível editar o filtro rápido conforme descrito em [Editar um filtro rápido](#edit-a-quick-filter).
+     Você pode editar o filtro rápido conforme descrito em [Editar um filtro rápido](#edit-a-quick-filter).
 
      >[!NOTE]
      >
@@ -48,7 +48,7 @@ Para criar um filtro rápido:
      > * Se “não especificado” ou “nenhum” forem soltos na área de destino do filtro, eles serão automaticamente convertidos em um filtro “não existe” para que sejam tratados corretamente durante a filtragem.
 
 
-   * **Usando o ícone de filtro:** Em uma tabela de Forma livre, selecione o **Filtro** no cabeçalho do painel.
+   * **Usando o ícone de filtro:** Em uma tabela de Forma livre, selecione o ícone **Filtro** no cabeçalho do painel.
 
      ![Filtro de segmentos](assets/quick-seg1.png)
 
@@ -58,13 +58,13 @@ Para criar um filtro rápido:
    | --- | --- |
    | [!UICONTROL Nome] | O nome padrão de um filtro é uma combinação dos nomes das regras no filtro. É possível renomear o filtro para um nome mais amigável. |
    | [!UICONTROL Incluir/excluir] | Você pode incluir ou excluir componentes na definição do filtro, mas não ambos. |
-   | [!UICONTROL Container de ocorrência/visita/visitante] | Filtros rápidos incluem somente um [container de filtro](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) que permite incluir uma dimensão/métrica/intervalo de datas no (ou excluí-lo do) filtro. [!UICONTROL Visitante] contém dados abrangentes específicos para a pessoa entre visitas e visualizações de página. A [!UICONTROL Visita] permite definir regras para detalhar os dados da pessoa com base em visitas, e uma [!UICONTROL Hit] container permite detalhar as informações da pessoa com base em exibições de página individuais. O container padrão é o de [!UICONTROL Ocorrência]. |
+   | [!UICONTROL Container de ocorrência/visita/visitante] | Filtros rápidos incluem somente um [container de filtro](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/cja-filters/filters-overview.html?lang=pt-BR#filter-containers) que permite incluir uma dimensão/métrica/intervalo de datas no (ou excluí-lo do) filtro. [!UICONTROL Visitante] contém dados abrangentes específicos para a pessoa entre visitas e visualizações de página. Um contêiner de [!UICONTROL Visita] permite definir regras para detalhar os dados da pessoa com base em visitas, e um contêiner de [!UICONTROL Ocorrência] permite detalhar as informações da pessoa com base em visualizações de página individuais. O container padrão é o de [!UICONTROL Ocorrência]. |
    | [!UICONTROL Componentes] (Dimensão/métrica/intervalo de datas) | Defina até 3 regras adicionando componentes (dimensões, métricas, intervalos de datas ou valores de dimensão). Há três maneiras de encontrar o componente correto:<ul><li>Comece a digitar e o construtor de filtros rápidos encontrará automaticamente o componente apropriado.</li><li>Use a lista suspensa para localizar o componente.</li><li>Arraste os componentes do painel esquerdo e solte-os.</li></ul> |
    | [!UICONTROL Operador] | Use o menu suspenso para encontrar operadores padrão e operadores de [!UICONTROL Contagem distinta]. Consulte [Operadores de filtro](operators.md). |
    | Sinal de mais (+) | Adicionar outra regra |
    | Qualificadores AND/OR | É possível adicionar qualificadores “AND” ou ”OR” às regras, mas não é possível misturar &quot;AND&quot; e &quot;OR&quot; em uma única definição de filtro. |
    | [!UICONTROL Aplicar] | Aplicar esse filtro ao painel. Se o filtro não contiver dados, você será perguntado se deseja continuar. |
-   | [!UICONTROL Abrir builder] | Abre o Construtor de filtros. Depois de salvar ou aplicar o filtro no Construtor de filtros, ele não é mais considerado um &quot;Filtro rápido&quot;. Ele se torna parte da biblioteca de filtros da lista de componentes. <p>Para disponibilizar o componente em todos os projetos e no painel esquerdo, selecione a opção [!UICONTROL **Disponibilize este filtro para todos os projetos e adicione-o à lista de componentes**].</p><p>Para obter mais informações, consulte a seção [Salvar um filtro rápido como um filtro da lista de componentes](#save-a-quick-filter-as-a-component-list-filter) neste artigo.</p><p>**Nota:** Somente usuários com a permissão Criação de segmento no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=pt-BR) O pode abrir o Construtor de filtros.</p> |
+   | [!UICONTROL Abrir builder] | Abre o Construtor de filtros. Depois de salvar ou aplicar o filtro no Construtor de filtros, ele não é mais considerado um &quot;Filtro rápido&quot;. Ele se torna parte da biblioteca de filtros da lista de componentes. <p>Para disponibilizar o componente em todos os projetos e no painel esquerdo, selecione a opção [!UICONTROL **Disponibilizar este filtro para todos os projetos e adicioná-lo à lista de componentes**].</p><p>Para obter mais informações, consulte a seção [Salvar um filtro rápido como um filtro da lista de componentes](#save-a-quick-filter-as-a-component-list-filter) neste artigo.</p><p>**Observação:** somente usuários com a permissão Criação de Segmentos no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=pt-BR) podem abrir o Construtor de Filtros.</p> |
    | [!UICONTROL Cancelar] | Cancelar este filtro rápido (não o aplicar). |
    | [!UICONTROL Intervalo de datas] | O validador usa o intervalo de datas do painel para a pesquisa de dados. Mas qualquer intervalo de datas aplicado em um filtro rápido substitui o intervalo de datas na parte superior do painel. |
    | Pré-visualizar (canto superior direito) | Permite ver se você tem um filtro válido e a amplitude deste. Representa o detalhamento do conjunto de dados que você pode esperar ao aplicar esse filtro. Você pode receber um aviso indicando que esse filtro não tem dados. Nesse caso, você pode continuar ou alterar a definição do filtro. |
@@ -73,7 +73,7 @@ Para criar um filtro rápido:
 
 ## Editar um filtro rápido {#edit}
 
-1. Passe o mouse sobre o filtro rápido que deseja editar, em seguida, selecione o **Editar** ícone.
+1. Passe o mouse sobre o filtro rápido que deseja editar, em seguida, selecione o ícone **Editar**.
 
    ![Editar filtro ad hoc](assets/filter-adhoc-edit.png)
 
@@ -86,7 +86,7 @@ Para criar um filtro rápido:
 >
 > Considere o seguinte ao salvar um filtro rápido:
 > 
-> * Para salvar um filtro rápido, é necessário ter a permissão Criação de segmentos no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=pt-BR).
+> * Para salvar um filtro rápido, você precisa da permissão Criação de segmentos no [Adobe Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=pt-BR).
 > 
 > * Depois de salvar ou aplicar o filtro, ele não poderá mais ser editado no construtor de filtros rápidos. Em vez disso, você deve usar o Construtor de filtros comum.
 
@@ -112,7 +112,7 @@ Você pode salvar filtros no construtor de filtros rápidos ou no [!UICONTROL Co
 1. Selecione **[!UICONTROL Salvar filtro]**
 1. (Opcional) Renomeie o filtro e selecione [!UICONTROL **Aplicar**].
 
-   Volte para o Workspace e observe que a barra lateral do filtro muda de azul-claro para azul-escuro, indicando que ele não pode mais ser editado ou aberto no construtor de filtros rápidos. E ao salvá-lo, ele se torna parte da lista de componentes.
+   Retorne ao Workspace e observe que a barra lateral do filtro muda de azul-claro para azul-escuro, indicando que ele não pode mais ser editado ou aberto no construtor de filtros rápidos. E ao salvá-lo, ele se torna parte da lista de componentes.
 
    ![Filtrar lista de componentes](assets/quick-seg4.png)
 

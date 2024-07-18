@@ -20,7 +20,7 @@ ht-degree: 24%
 
 1. Na tela Definição, solte o novo filtro ao lado do filtro existente:
 
-![A tela de Definição que mostra a métrica Visitantes dos EUA colocada ao lado dos Visitantes internacionais existentes.](assets/cm_stack_seg.png)
+![Tela de definição mostrando a métrica Visitantes dos EUA colocada ao lado dos Visitantes Internacionais existentes.](assets/cm_stack_seg.png)
 
 ## Substituir um filtro por outro {#replace-filter}
 
@@ -28,4 +28,4 @@ ht-degree: 24%
 
 1. Na tela Definição, solte o novo filtro sobre o filtro existente:
 
-![Tela de Definição que mostra os Visitantes dos EUA colocados sobre a métrica Visitantes internacionais.](assets/cm_replace_seg.png)
+![Tela de definição mostrando os Visitantes dos EUA incluídos na métrica Visitantes Internacionais.](assets/cm_replace_seg.png)

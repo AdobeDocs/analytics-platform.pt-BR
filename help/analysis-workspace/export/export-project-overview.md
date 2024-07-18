@@ -8,11 +8,11 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '304'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Visão geral da exportação
+# Visão geral de exportação
 
 Você pode exportar relatórios de Customer Journey Analytics do Analysis Workspace. Talvez você queira exportar relatórios de Customer Journey Analytics por vários motivos, como utilizar o em ferramentas de terceiros ou combinar com dados externos.
 
@@ -22,17 +22,17 @@ As seções a seguir descrevem os tipos de arquivos compatíveis, os vários mé
 
 Você pode exportar relatórios de Customer Journey Analytics como um PDF, CSV ou arquivo JSON.
 
-* **PDF:** Fornece uma maneira fácil de compartilhar dados visuais com as partes interessadas. Os arquivos PDF contêm todas as tabelas e visualizações exibidas (visíveis) no projeto.
+* **PDF:** fornece uma maneira fácil de compartilhar dados visuais com as partes interessadas. Os arquivos PDF contêm todas as tabelas e visualizações exibidas (visíveis) no projeto.
 
-* **CSV:** Permite exibir dados brutos em um aplicativo de planilha, como o Excel. Os arquivos CSV contêm dados de texto sem formatação.
+* **CSV:** permite exibir dados brutos em um aplicativo de planilha, como o Excel. Os arquivos CSV contêm dados de texto sem formatação.
 
-* **JSON:** Fornece um formato de arquivo padrão aberto para compartilhamento de dados.
+* **JSON:** fornece um formato de arquivo padrão aberto para compartilhamento de dados.
 
 ## Métodos de exportação
 
 Há vários métodos disponíveis ao exportar do Analysis Workspace. Ao escolher um método de exportação, considere o que deseja exportar e quem precisa acessá-lo.
 
-| Método de exportação | Benefícios |
+| Método de exportação | Vantagens |
 |---------|----------|
 | [Baixar para sua estação de trabalho](/help/analysis-workspace/export/download-send.md) | Use este método se desejar: <ul><li>Baixe projetos na sua estação de trabalho pessoal.</li><li>Os downloads são somente ad hoc (não pode ser programado).</li> <li>Baixe um total de 50.000 linhas.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
 | [Enviar para outros usuários](/help/analysis-workspace/export/t-schedule-report.md) | Use este método se desejar: <ul><li>Enviar dados de Customer Journey Analytics exportados por email para outros usuários em sua organização.</li><li>Pode ser ad hoc ou em um cronograma.</li> <li>Inclua um total de 50.000 linhas.</li> <!--true?--> |

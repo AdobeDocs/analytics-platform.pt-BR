@@ -77,7 +77,7 @@ The catch here is that they can only populate those IDs today if they have a dir
 
 Para relatar as dimensões de pesquisa padrão é necessário adicioná-las ao criar uma visualização de dados no Customer Journey Analytics:
 
-![Criar uma visualização de dados mostrando a lista Adicionar componentes](assets/global-lookup.png)
+![Criar uma visualização de dados mostrando a lista Adicionar Componentes](assets/global-lookup.png)
 
 Você poderá ver os dados de pesquisa no Espaço de trabalho:
 

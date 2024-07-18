@@ -16,7 +16,7 @@ ht-degree: 31%
 
 Algumas configurações de firewall bloqueiam endereços IP dos servidores de coleção de dados da Adobe ou dos servidores responsáveis por acessar os dados do Você pode usar essa lista de intervalos para alterar as configurações de firewall da sua organização para permitir acesso e enviar dados de dentro da organização.
 
-Essa página inclui endereços ip que você precisa adicionar ao incluo na lista de permissões para que os sistemas de saída funcionem, como [exportação de dados para um provedor de nuvem](/help/analysis-workspace/export/export-cloud.md).
+Incluir na lista de permissões Esta página inclui endereços ip que você precisa adicionar ao seu arquivo para que os sistemas de saída funcionem, como [exportar dados para um provedor de nuvem](/help/analysis-workspace/export/export-cloud.md).
 
 >[!IMPORTANT]
 >
@@ -143,4 +143,4 @@ Essa página inclui endereços ip que você precisa adicionar ao incluo na lista
 >
 >[Domínios usados pelo Customer Journey Analytics](domains.md)
 >
->[Endereços IP usados pela Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
+>[Endereços IP usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

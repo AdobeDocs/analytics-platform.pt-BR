@@ -116,7 +116,7 @@ Após criar a visualização, ainda é possível editar a configuração origina
 
 1. Clique no ícone de lápis no canto superior direito da visualização (ao lado do ícone de engrenagem de configurações).
 
-   ![Ícones de edição de visualização](assets/edit-icon.png)
+   ![Ícone de edição de visualização](assets/edit-icon.png)
 
    Você será levado de volta à visualização da configuração original.
 

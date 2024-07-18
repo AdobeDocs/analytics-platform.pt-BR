@@ -23,10 +23,10 @@ Ao soltar uma dimensão em uma tabela de forma livre, linhas dinâmicas são ret
 
 Por exemplo, ao arrastar a dimensão Tipo de navegador para a tabela, os principais itens de dimensão Tipo de navegador (por exemplo, Microsoft, Apple, Google etc.) retornam dinamicamente às linhas da tabela. Se forem soltos em uma coluna, os 5 principais itens de dimensão Tipo de navegador retornarão dinamicamente.
 
-Os itens de dimensão dinâmicos têm a opção de filtro de linha e os ícones X, e **não** tem um ícone de cadeado presente. <!--do they have the lock icon? --> Ao clicar no x ao lado de um item de dimensão dinâmico, um filtro é aplicado automaticamente. Para obter mais informações sobre como aplicar filtros a tabelas, consulte [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Os itens de dimensão dinâmicos têm a opção de filtro de linha e os ícones X e **não** têm ícone de bloqueio presente. <!--do they have the lock icon? --> Ao clicar no x ao lado de um item de dimensão dinâmico, um filtro é aplicado automaticamente. Para obter mais informações sobre como aplicar filtros a tabelas, consulte [Filtro e tabelas de classificação](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 
-![Uma Tabela de forma livre que destaca o ícone do filtro.](assets/dynamic-items.png)
+![Uma Tabela de Forma Livre que destaca o ícone de filtro.](assets/dynamic-items.png)
 
 ## Itens de dimensão estáticos
 
@@ -41,13 +41,13 @@ Por exemplo, ao arrastar sobre itens específicos Tipo de navegador, como Micros
 
 Os itens de dimensão estáticos **não** têm a opção de filtro de linha. Em vez disso, os ícones de bloqueio e X estão presentes em cada item. Clique no ícone X para remover esse item de dimensão da tabela.
 
-![Uma Tabela de forma livre mostrando o Tipo de navegador e a linha Microsoft com um ícone de bloqueio observação: Esse item de dimensão é estático e não será alterado com o tempo.](assets/static-items.png)
+![Uma Tabela de Forma Livre mostrando o Tipo de Navegador e a linha Microsoft com um ícone de bloqueio observação: Este item de dimensão é estático e não será alterado com o tempo.](assets/static-items.png)
 
 ## Itens de dimensão mistos
 
 Itens de dimensão de diferentes dimensões podem ser adicionados à mesma tabela. Nesses casos, o cabeçalho da linha indica “Dimensões mistas”. Esses itens de dimensão são estáticos. Por exemplo, adicionar itens de dimensão específicos da dimensão Tipo de navegador e outros itens de dimensão da dimensão Navegador.
 
-![Uma Tabela de forma livre que destaca a coluna Dimension mista.](assets/mixed-dimensions.png)
+![Uma Tabela de Forma Livre que destaca a coluna Dimension mista.](assets/mixed-dimensions.png)
 
 ## Total de linhas de forma livre
 

@@ -5,7 +5,7 @@ feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '528'
 ht-degree: 53%
 
 ---
@@ -32,25 +32,25 @@ Crie e salve uma métrica chamada &quot;Visitantes alemães&quot; e uma métrica
 
    >[!NOTE]
    >
-   >Também é possível fazer isso no [Construtor de filtros](/help/components/filters/create-filters.md), mas simplificamos o fluxo de trabalho disponibilizando dimensões no Criador de métricas calculadas. &quot;Adhoc&quot; significa que o filtro não está visível na variável **[!UICONTROL Filtros]** no painel esquerdo. Entretanto, é possível torná-lo público ao passar o mouse sobre o ícone &quot;i&quot; e clicar em **[!UICONTROL Tornar público]**.
+   >Também é possível fazer isso no [Construtor de filtros](/help/components/filters/create-filters.md), mas simplificamos o fluxo de trabalho, disponibilizando dimensões no Criador de métricas calculadas. &quot;Adhoc&quot; significa que o filtro não está visível na lista **[!UICONTROL Filtros]** no painel esquerdo. Entretanto, é possível torná-lo público ao passar o mouse sobre o ícone &quot;i&quot; e clicar em **[!UICONTROL Tornar público]**.
 
 1. Arraste o filtro Alemanha para a tela Definição e arraste a métrica Visitantes únicos dentro dele:
 
-   ![Resumo e definição de países iguais a Alemanha e Visitantes únicos](assets/german-visitors.png)
+   ![Resumo e Definição de Países iguais a Alemanha e Visitantes Únicos](assets/german-visitors.png)
 
-1. Selecionar [!UICONTROL **Salvar**] para salvar a métrica calculada.
+1. Selecione [!UICONTROL **Salvar**] para salvar a métrica calculada.
 
 1. Crie um filtro adhoc no Criador de métrica calculada chamado &quot;Visitantes internacionais&quot;, em que &quot;Países&quot; não corresponda a &quot;Alemanha&quot;.
 
-   Arraste a dimensão Países para a tela Definição e selecione [!UICONTROL **Alemanha**] como o valor e selecione [!UICONTROL **não é igual a**] como operador.
+   Arraste a dimensão Países para a tela Definição, selecione [!UICONTROL **Alemanha**] como o valor e [!UICONTROL **não é igual**] como operador.
 
 1. Arraste a métrica Visitantes únicos para dentro dela.
 
-1. Selecionar [!UICONTROL **Salvar**] para salvar a métrica calculada.
+1. Selecione [!UICONTROL **Salvar**] para salvar a métrica calculada.
 
 1. Na Analysis Workspace, arraste a dimensão **[!UICONTROL Página]** para uma Tabela de forma livre e arraste as 2 novas métricas calculadas para ficarem próximas na parte superior:
 
-   ![Tabela de forma livre que mostra a dimensão Página para visitantes alemães e internacionais](assets/workspace-pages.png)
+   ![Tabela de forma livre mostrando a dimensão Página para visitantes alemães e internacionais](assets/workspace-pages.png)
 
 Esta é uma visão geral do vídeo:
 
@@ -63,7 +63,7 @@ Esta é uma visão geral do vídeo:
 1. Solte o filtro Visitantes alemães (ou internacionais) dentro da tela.
 1. Solte outro filtro Visitantes alemães (ou internacionais) abaixo. Mas, desta vez, clique no ícone de configurações (engrenagem) e selecione o Tipo de métrica &quot;Total&quot;. O Formato deve ser &quot;Porcentagem&quot;. O operador deve ser &quot;dividido por&quot;. No final, você terá a seguinte definição de métrica:
 
-   ![Países é igual a Alemanha e Total de visitantes únicos](assets/cm_metric_total.png)
+   ![Países é igual a Alemanha e Total de Visitantes Únicos](assets/cm_metric_total.png)
 
 1. Aplique esta métrica ao seu projeto:
 

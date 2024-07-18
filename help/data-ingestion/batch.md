@@ -49,23 +49,24 @@ Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
-1. Selecionar **[!UICONTROL Criar esquema]**. .
+1. Selecione **[!UICONTROL Criar esquema]**.
+.
 1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
-   1. Selecionar **[!UICONTROL Perfil individual]**.
+   1. Selecione **[!UICONTROL Perfil Individual]**.
 
       ![Criar um esquema](./assets/create-pr-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Um esquema de Evento de experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+      >    Um esquema de Evento de Experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão de push para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
 
    1. Selecione **[!UICONTROL Próximo]**.
 
 
-1. No [!UICONTROL Nomear e revisar a etapa] do [!UICONTROL Criar esquema] assistente:
+1. No [!UICONTROL Nome e na etapa de revisão] do assistente [!UICONTROL Criar esquema]:
 
-   1. Insira um **[!UICONTROL Nome de exibição do esquema]** para o esquema e (opcional) uma **[!UICONTROL Descrição]**.
+   1. Insira um **[!UICONTROL nome para exibição do esquema]** para seu esquema e (opcional) uma **[!UICONTROL Descrição]**.
 
       ![Dê um nome ao esquema](./assets/create-pr-schema-wizard-step-2.png)
 
@@ -218,7 +219,7 @@ Para usar workflows:
 
 6. Selecione **[!UICONTROL Concluir]** para começar a assimilar os dados em lote na Adobe Experience Platform.
 
-Consulte [Mapear um arquivo CSV em um esquema XDM existente](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=pt-BR) para obter mais informações sobre:
+Consulte [Mapear um arquivo CSV como um esquema XDM existente](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=pt-BR) para obter mais informações sobre:
 
 - como mapear dados quando os dados recebidos não são compatíveis com o esquema XDM.
 - usar modelos de mapeamento,
@@ -333,7 +334,7 @@ Para criar o projeto:
 
    ![Visualização de dados de seleção do Espaço de trabalho](./assets/cja-projects-3.png).
 
-5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas no [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel]. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
+5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] do [!UICONTROL Painel]. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
 
    ![Espaço de trabalho - Primeiro relatório](./assets/cja-projects-5.png)
 

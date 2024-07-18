@@ -15,6 +15,6 @@ ht-degree: 86%
 
 Permite ver a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas).
 
-![Janela Configurações de visualização mostrando a opção Tipo de gráfico, Opções de marcador e outras configurações de gráfico.](assets/bullet-image.png)
+![Janela Configurações de Visualização mostrando a opção Tipo de gráfico, Opções de Marcador e outras configurações de gráfico.](assets/bullet-image.png)
 
 O gráfico de marcadores apresenta uma só medida principal (por exemplo, receita acumulada no ano atual) e permite que você informe intervalos qualitativos de desempenho (por exemplo, em comparação com uma receita alvo). Você pode especificar alto, médio e baixo. É possível especificar intervalos de meta em [!UICONTROL Configurações de visualização].

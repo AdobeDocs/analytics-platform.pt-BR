@@ -14,4 +14,4 @@ ht-degree: 29%
 
 É possível localizar métricas no Analysis Workspace da mesma forma que localizar outros tipos de componentes.
 
-Para obter informações sobre como localizar componentes rapidamente, consulte [Pesquisar, filtrar e classificar a lista de componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/overview.html#search%2C-filter%2C-and-sort-the-component-list) in [Visão geral dos componentes](/help/components/overview.md).
+Para obter informações sobre como localizar componentes rapidamente, consulte [Pesquisar, filtrar e classificar a lista de componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/overview.html#search%2C-filter%2C-and-sort-the-component-list) na [Visão geral de componentes](/help/components/overview.md).

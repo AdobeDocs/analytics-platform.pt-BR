@@ -7,7 +7,7 @@ exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '712'
 ht-degree: 74%
 
 ---
@@ -51,7 +51,7 @@ Clique no link a seguir (ele também está disponível no Customer Journey Analy
 
 Após o download e a instalação, os usuários executivos podem fazer logon no aplicativo usando suas credenciais de Customer Journey Analytics existentes. Oferecemos suporte para Adobe e Enterprise/Federated ID.
 
-![Tela de boas-vindas dos painéis do Adobe Analytics](assets/welcome.png)
+![tela de boas-vindas dos painéis do Adobe Analytics](assets/welcome.png)
 
 ## Ajudar os executivos a acessar seu cartão de pontuação
 
@@ -74,7 +74,7 @@ Após o download e a instalação, os usuários executivos podem fazer logon no 
 
 Explique ao usuário executivo como os blocos são exibidos nos cartões de pontuação que você compartilha.
 
-![Explicar os blocos, incluindo o intervalo de datas, o filtro de segmento e as métricas e dimensões selecionadas](assets/newexplain.png)
+![Explique os blocos, incluindo o intervalo de datas, o filtro de segmento e as métricas e dimensões selecionadas](assets/newexplain.png)
 
 ![Exemplo de scorecard](assets/intro_scorecard.png)
 

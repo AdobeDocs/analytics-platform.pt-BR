@@ -9,7 +9,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1018'
-ht-degree: 55%
+ht-degree: 61%
 
 ---
 
@@ -19,7 +19,7 @@ Você pode exportar relatórios de Customer Journey Analytics enviando-os aos re
 
 Quaisquer tags aplicadas ao projeto são automaticamente aplicadas à exportação.
 
-Estão também disponíveis outros métodos de exportação de dados de Customer Journey Analytics, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
+Outros métodos de exportação de dados de Customer Journey Analytics também estão disponíveis, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Enviar arquivo agora {#now}
 
@@ -29,7 +29,7 @@ Para enviar um arquivo imediatamente aos recipients por email:
 1. Especifique o tipo de arquivo:
    * [!UICONTROL **CSV**]: escolha essa opção se desejar dados de texto simples.
    * [!UICONTROL **PDF**]: escolha essa opção se desejar que o arquivo baixado contenha todas as tabelas e visualizações exibidas (visíveis) no projeto.
-1. (Opcional) Adicione uma descrição a ser incluída no email para explicar o arquivo que está sendo recebido.
+1. (Opcional) Adicione uma descrição que será incluída no email para explicar o arquivo que está sendo recebido.
 1. Adicione recipients ou grupos. Endereços de email também podem ser inseridos.
 1. (Somente para clientes do Healthcare Shield) Forneça uma senha. Consulte a seção Proteger com senha um relatório agendado.
 1. (Opcional) Clique em **[!UICONTROL Mostrar opções de agendamento]** para especificar um agendamento de delivery.
@@ -41,7 +41,7 @@ Para enviar um arquivo imediatamente aos recipients por email:
 
 Para enviar um arquivo por email de acordo com uma programação recorrente a recipients:
 
-1. Clique em **[!UICONTROL Compartilhar] > [!UICONTROL Programar exportação de arquivo]**.
+1. Clique em **[!UICONTROL Compartilhar] > [!UICONTROL Agendar exportação de arquivo]**.
 1. Especifique o tipo de arquivo (CSV ou PDF).
 1. (Opcional) Adicione uma descrição que será incluída no email para o arquivo que está sendo recebido.
 1. Adicione recipients ou grupos. Endereços de email também podem ser inseridos.
@@ -54,7 +54,7 @@ Para enviar um arquivo por email de acordo com uma programação recorrente a re
 
 ## Gerenciador de projetos programados {#manager}
 
-Os projetos agendados do Analysis Workspace podem ser gerenciados em **[!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos Agendados]**.
+Os projetos agendados do Analysis Workspace podem ser gerenciados em **[!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos agendados]**.
 
 No Gerenciador de agendamento de projetos, é possível editar e excluir agendamentos de projetos recorrentes. Procure um agendamento na barra de pesquisa ou usando as opções de filtro no painel esquerdo. Você pode filtrar por tag, programação aprovada, proprietários e muito mais.
 
@@ -89,7 +89,7 @@ Para obter mais informações, consulte [Projetos agendados](/help/components/sc
 
 >[!NOTE]
 >
->A opção de proteger com senha um projeto agendado aparece somente para clientes do Customer Journey Analytics que compraram o [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html) produto complementar.
+>A opção de proteger com senha um projeto agendado aparece somente para clientes do Customer Journey Analytics que compraram o produto complementar [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html).
 
 A Adobe usa a senha para criptografar projetos agendados, sejam eles enviados nos formatos .pdf ou .csv.
 
@@ -107,7 +107,7 @@ Os requisitos de senha estão em conformidade com os padrões de Adobe, exigindo
 
 ### Proteger com senha um novo projeto agendado
 
-1. Depois de salvar o projeto, acesse **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo agora]** ou **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo agendado]**.
+1. Depois de salvar o projeto, vá para **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo agora]** ou **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo agendado]**.
 1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=pt-BR#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=pt-BR#schedule).
 
 ### Proteger por senha um projeto agendado existente
@@ -117,6 +117,6 @@ Antes de um projeto ser agendado, o proprietário do projeto recebe um email sem
 ![A notificação por email Customer Journey Analytics indicando que a criptografia de senha é necessária para sua organização.](assets/email-password.png)
 
 1. Efetue logon no Customer Journey Analytics.
-1. Selecionar **[!UICONTROL Visualizar Projeto Agendado]**.
+1. Selecione **[!UICONTROL Exibir Projeto Agendado]**.
 1. Na caixa de diálogo **[!UICONTROL Editar projeto agendado]**, digite e digite novamente uma senha.
 1. Informe os recipients do projeto agendado sobre essa senha. Não distribua a senha a pessoas que não são destinatários do projeto agendado.

@@ -24,7 +24,7 @@ O gerenciamento de uma fonte de dados permite exibir a fonte de dados ou bloquea
 1. Na tabela de dados, selecione as células (fonte de dados) que você deseja associar à visualização.
 1. Na visualização, clique no ponto ao lado do título para abrir a caixa de diálogo **[!UICONTROL Fonte de dados]**. Selecione **[!UICONTROL Exibir fonte de dados]** ou **[!UICONTROL Bloquear seleção]**.
 
-   ![A caixa de diálogo da opção Fonte de dados mostrando as opções descritas na próxima seção.](assets/manage-data-source.png)
+   ![A caixa de diálogo da opção Data Source mostrando as opções descritas na próxima seção.](assets/manage-data-source.png)
 
    A sincronização de uma visualização a uma célula da tabela cria uma nova tabela (oculta) e coloca códigos de cor na visualização sincronizada à tabela.
 
@@ -46,4 +46,4 @@ Essa arquitetura difere da anterior no sentido de que o Analysis Workspace já n
   ![Local da fonte de dados com visualizações adicionadas provenientes de várias células](assets/data-source3.png)>
 * Você pode ver se há visualizações conectadas a uma tabela de forma livre ou tabela coorte ao clicar no ponto esquerdo superior (Configurações da fonte de dados). Passar o mouse destacará a visualização vinculada e clicar nela levará você para o link especificado.
 
-  ![Configurações da fonte de dados que destacam uma visualização vinculada para as Principais exibições da página.](assets/linked-visualizations.png)>
+  ![Configurações do Data Source que destacam uma visualização vinculada para as Principais Exibições de Página.](assets/linked-visualizations.png)>

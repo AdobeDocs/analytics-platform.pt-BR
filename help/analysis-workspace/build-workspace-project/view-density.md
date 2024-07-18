@@ -20,7 +20,7 @@ Há três opções para alternar a densidade da exibição com os botões de op�
 - **[!UICONTROL Confortável]**: é um pouco mais ampla do que a versão Compacta.
 - **[!UICONTROL Estendida]** (padrão): é a exibição com a qual você está familiarizado no Espaço de trabalho.
 
-![As densidades das visualizações Compacta, Confortável e Expandida.](assets/view-density.png)
+![As densidades de exibição Compacta, Confortável e Expandida.](assets/view-density.png)
 
 Para definir a densidade da exibição:
 

@@ -47,7 +47,7 @@ Essa visualização se comporta das seguintes maneiras:
 * Se a coluna estiver selecionada, compara o primeiro valor a si mesmo, mostrando uma alteração de 0.
 
 
-![Visualização de alteração de resumo mostrando o delta entre dois números.](assets/summary-change.png)
+![Visualização de alteração de resumo mostrando o delta entre dois números.s](assets/summary-change.png)
 
 
 Clique na engrenagem **Configurações de visualização** no canto superior direito para definir as configurações de Alteração de resumo:

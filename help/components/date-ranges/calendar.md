@@ -8,7 +8,7 @@ role: User
 source-git-commit: 47b7747b37f82e4d75d5272ce1d8d37f4e497bb5
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
@@ -18,7 +18,7 @@ Usando o calendário, você pode especificar datas e intervalos de datas ou sele
 
 As seleções do calendário se aplicam a nível de painel, mas existe a opção de aplicá-las a todos os painéis. Ao clicar em um intervalo de datas no Espaço de trabalho, a interface exibe o mês atual do calendário e o mês anterior. Você pode ajustar esses dois calendários clicando nas setas para a direita e para a esquerda em cada canto superior respectivo.
 
-![Calendário exibido em outubro de 2022 e novembro de 2022, com de 1 a 30 de novembro selecionados.](assets/aw_calendar2.png){width="60%"}
+![Calendário exibido em outubro de 2022 e novembro de 2022 com 1 até 30 de novembro selecionado.](assets/aw_calendar2.png){width="60%"}
 
 O primeiro clique em um calendário inicia uma seleção de intervalo de datas. O segundo clique conclui uma seleção de intervalo de datas, que é realçada. Se a tecla `Shift` for pressionada (ou se o clique com o botão direito do mouse for usado), ela será anexada ao intervalo selecionado no momento.
 
@@ -29,7 +29,7 @@ Você também pode arrastar datas (e dimensões de tempo) em um projeto do Espa�
 | Configuração | Descrição |
 | --- | --- |
 | Dias selecionados | Dias/semanas/meses/anos selecionados |
-| Usar datas do acumulado | Datas do acumulado permitem gerar um relatório dinâmico que analisa antes e depois de um período de tempo com base na execução do relatório. Por exemplo, se você quiser relatar todos os pedidos feitos no “Mês anterior” (dependendo da Data de criação) e executar o relatório em dezembro, você verá os pedidos feitos em novembro. Se executar o mesmo relatório em janeiro, verá os pedidos feitos em dezembro.<ul><li>**[!UICONTROL Visualização de data]**: indica o período compreendido no calendário em andamento.</li><li>**[!UICONTROL Início]**: você pode escolher entre dia atual, semana atual, mês atual, trimestre atual, ano atual.</li><li>**[!UICONTROL Fim]**: você pode escolher entre dia atual, semana atual, mês atual, trimestre atual, ano atual.</li></ul>Par ver um exemplo, clique [aqui](/help/components/date-ranges/custom-date-ranges.md). |
+| Usar datas contínuas | Datas contínuas permitem gerar um relatório dinâmico que analisa um certo período de tempo, seja para frente ou para trás, com base na execução do relatório. Por exemplo, se você quiser relatar todos os pedidos feitos no “Mês anterior” (dependendo da Data de criação) e executar o relatório em dezembro, você verá os pedidos feitos em novembro. Se executar o mesmo relatório em janeiro, verá os pedidos feitos em dezembro.<ul><li>**[!UICONTROL Visualização de data]**: indica o período compreendido no calendário em andamento.</li><li>**[!UICONTROL Início]**: você pode escolher entre dia atual, semana atual, mês atual, trimestre atual, ano atual.</li><li>**[!UICONTROL Fim]**: você pode escolher entre dia atual, semana atual, mês atual, trimestre atual, ano atual.</li></ul>Par ver um exemplo, clique [aqui](/help/components/date-ranges/custom-date-ranges.md). |
 | Intervalo de datas | Permite selecionar um intervalo de datas predefinido. Últimos 30 dias é padrão. **[!UICONTROL Essa semana/mês/trimestre/ano (exceto hoje)]** permite escolher entre intervalos de datas que não incluem dados parciais do dia de hoje. |
 | Aplicar a todos os painéis | Permite alterar o intervalo de datas selecionado para o painel atual e também para todos os outros painéis do projeto. |
 | Aplicar | Aplica o intervalo de datas somente a este painel. |
@@ -54,7 +54,7 @@ Se datas relativas forem selecionadas, as datas contínuas serão baseadas na da
 1. Clique em **Aplicar**.
 As datas relativas são mostradas no canto superior direito.
 
-   ![Tabela de forma livre com datas relativas destacadas e mostrando Mês passado destacado. ](assets/relative-date-range1.png)
+   ![Tabela de forma livre com datas relativas realçadas e mostrando o Último mês realçado. ](assets/relative-date-range1.png)
 
 ## Diretrizes para intervalos de datas relativas do painel {#guidelines}
 
@@ -62,7 +62,7 @@ Lembre-se das seguintes diretrizes ao usar intervalos de datas relativos ao pain
 
 ### Fórmulas e intervalos de datas relativos {#formula-relative-dates}
 
-Se você tiver datas relativas selecionadas, todas as fórmulas de data usarão a data de início do painel como ponto de partida.
+Se você tiver selecionado datas relativas, todas as fórmulas de datas usarão a data inicial do painel como ponto de partida.
 
 ### Calendários personalizados e intervalos de datas relativos {#custom-calendar-formulas}
 
@@ -70,7 +70,7 @@ Ao usar um calendário personalizado com base em semanas e adicionar meses ou an
 
 ### Sobre filtros que usam datas do acumulado e intervalos de datas relativos do painel {#segments-relative-dates}
 
-Se você criar um filtro ou usar um filtro com uma data do acumulado, por exemplo, os Últimos 7 dias ou as Últimas 2 semanas, e clicar na pré-visualização do filtro, ela iniciará a data do acumulado em *Hoje* em vez da data de início do painel. Como resultado, a visualização do filtro não corresponderá quando você realmente usar o filtro na tabela. A visualização foi afetada, não o filtro em si.
+Se você criar um filtro ou usar um filtro com uma data do acumulado, por exemplo, os Últimos 7 dias ou as Últimas 2 semanas, e clicar na pré-visualização do filtro, ela iniciará a data do acumulado de *Hoje* em vez da data de início do painel. Como resultado, a visualização do filtro não corresponderá quando você realmente usar o filtro na tabela. A visualização foi afetada, não o filtro em si.
 
 ## Diretrizes para intervalos de datas e visualizações do painel {#guidelines-panel-dates}
 

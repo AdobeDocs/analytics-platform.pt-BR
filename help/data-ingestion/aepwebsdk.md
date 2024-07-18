@@ -54,25 +54,26 @@ Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
-1. Selecionar **[!UICONTROL Criar esquema]**. .
+1. Selecione **[!UICONTROL Criar esquema]**.
+.
 1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
-   1. Selecionar **[!UICONTROL Evento de experiência]**.
+   1. Selecione **[!UICONTROL Evento de experiência]**.
 
-      ![Criar um esquema destacando o Evento de experiência](./assets/create-ee-schema-wizard-step-1.png)
+      ![Criar um esquema destacando o Evento de Experiência](./assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Um esquema de Evento de experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+      >    Um esquema de Evento de Experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão de push para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
 
    1. Selecione **[!UICONTROL Próximo]**.
 
 
-1. No [!UICONTROL Nomear e revisar a etapa] do [!UICONTROL Criar esquema] assistente:
+1. No [!UICONTROL Nome e na etapa de revisão] do assistente [!UICONTROL Criar esquema]:
 
-   1. Insira um **[!UICONTROL Nome de exibição do esquema]** para o esquema e (opcional) uma **[!UICONTROL Descrição]**.
+   1. Insira um **[!UICONTROL nome para exibição do esquema]** para seu esquema e (opcional) uma **[!UICONTROL Descrição]**.
 
-      ![Janela Criar esquema mostrando o Nome dos campos de esquema](./assets/create-ee-schema-wizard-step-2.png)
+      ![Janela Criar esquema mostrando os campos Nomear seu esquema](./assets/create-ee-schema-wizard-step-2.png)
 
    1. Selecione **[!UICONTROL Concluir]**.
 
@@ -104,7 +105,7 @@ Para configurar o esquema:
 
    >[!NOTE]
    >
-   >Se esse grupo de campos não estiver disponível, procure outro grupo de campos que contenha campos de identidade. Ou [criar um novo grupo de campos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) e [adicionar novos campos de identidade](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (como `ecid`, `crmId`, e outras necessárias) ao grupo de campos e selecione esse novo grupo de campos.
+   >Se esse grupo de campos não estiver disponível, procure outro grupo de campos que contenha campos de identidade. Ou [crie um novo grupo de campos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) e [adicione novos campos de identidade](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (como `ecid`, `crmId` e outros que você precise) ao grupo de campos e selecione esse novo grupo de campos.
 
    ![Objeto de identificação](./assets/identification-field.png)
 
@@ -279,7 +280,7 @@ Para criar e configurar a extensão do SDK da Web da Adobe Experience Platform:
 
 Consulte [Configurar a extensão do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) para obter mais informações.
 
-O SDK da Web inclui a variável [!UICONTROL Serviço da Adobe Experience Cloud ID] nativamente, portanto, não é necessário adicionar a extensão do serviço de ID à tag.
+O SDK da Web inclui o [!UICONTROL Serviço da Adobe Experience Cloud ID] nativamente, portanto, não é necessário adicionar a extensão do serviço de ID à sua marca.
 
 #### **Elementos de dados**
 
@@ -591,7 +592,7 @@ Para criar o projeto:
 
    ![Visualização de dados de seleção do Espaço de trabalho](./assets/cja-projects-3.png).
 
-5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas no [!UICONTROL Tabela de forma livre] no [!UICONTROL Painel]. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
+5. Para criar seu primeiro relatório, comece a arrastar e soltar dimensões e métricas na [!UICONTROL Tabela de forma livre] do [!UICONTROL Painel]. Como exemplo, arraste `Program Points Balance` e `Page View` como métricas e `email` como dimensão para obter uma visão geral rápida dos perfis que visitaram seu site e fazem parte do programa de fidelidade que coleta pontos.
 
    ![Espaço de trabalho - Primeiro relatório](./assets/cja-projects-5.png)
 

@@ -78,11 +78,11 @@ Na Google Cloud Platform, navegue até **Exportar > Exportar para o GCS**. Quand
 
 >[!TIP]
 >
->Se você planeja importar dados históricos e transmitidos em tempo real do Google Analytics, certifique-se de usar o mesmo esquema para ambos os conjuntos de dados. É possível mesclar os conjuntos de dados em um Customer Journey Analytics usando uma [Conjunto de dados combinado](/help/connections/combined-dataset.md).
+>Se você planeja importar dados históricos e transmitidos em tempo real do Google Analytics, certifique-se de usar o mesmo esquema para ambos os conjuntos de dados. Você pode mesclar os conjuntos de dados em um Customer Journey Analytics usando um [Conjunto de dados combinado](/help/connections/combined-dataset.md).
 
 Você pode mapear os dados do evento do GA em um conjunto de dados existente criado anteriormente ou criar um conjunto de dados usando um esquema XDM de sua escolha. Depois que você seleciona o esquema, a Experience Platform aplica o aprendizado de máquina para mapear automaticamente cada um dos campos nos dados do Google Analytics para o [esquema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR#ui).
 
-![Mapa de esquema destacando os campos de dados do GA e os mapeamentos de esquema do Target](../assets/schema-map.png)
+![Mapa de esquema destacando os campos de dados do GA e os mapeamentos de esquema de Destino](../assets/schema-map.png)
 
 Quando terminar de mapear os campos no esquema XDM, você poderá agendar essa importação de forma recorrente e aplicar a validação de erros durante o processo de ingestão. Essa validação garante que não haja problemas com os dados importados.
 
@@ -98,7 +98,7 @@ Determinados campos XDM na Platform exigem o formato correto para que os dados s
 
   ![Carimbo de data e hora](../assets/timestamp.png)
 
-* **`_id`**: este campo deve conter um valor. O valor não importa para o Customer Journey Analytics. Você pode adicionar o valor “1” ao campo:
+* **`_id`**: Este campo deve conter um valor - o valor não importa para o Customer Journey Analytics. Você pode adicionar o valor “1” ao campo:
 
   ![ID](../assets/_id.png)
 

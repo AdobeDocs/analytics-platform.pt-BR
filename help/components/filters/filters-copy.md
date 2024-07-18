@@ -7,7 +7,7 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '83'
-ht-degree: 7%
+ht-degree: 12%
 
 ---
 
@@ -17,10 +17,10 @@ Ao criar um novo filtro, às vezes é mais fácil copiar um filtro existente pr�
 
 Para copiar um filtro no Gerenciador de filtros:
 
-1. No Customer Journey Analytics, selecione a variável **[!UICONTROL Componentes]** e selecione **[!UICONTROL Filtro]**.
+1. No Customer Journey Analytics, selecione a guia **[!UICONTROL Componentes]** e selecione **[!UICONTROL Filtro]**.
 
 1. No Gerenciador de filtros, selecione o filtro que deseja copiar.
 
    A barra de ferramentas de gerenciamento de filtros aparece.
 
-1. Selecionar **[!UICONTROL Copiar]**.
+1. Selecione **[!UICONTROL Copiar]**.

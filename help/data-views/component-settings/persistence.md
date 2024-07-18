@@ -17,13 +17,13 @@ ht-degree: 80%
 
 [!UICONTROL Persistência] é a capacidade de um determinado valor de dimensão se relacionar a uma métrica além do evento em que está definido. Ela usa uma combinação de alocação e expiração.
 
-![Janela Visualizações de dados destacando as opções de Persistência](../assets/persistence.png)
+![Janela de visualizações de dados destacando as opções de Persistência](../assets/persistence.png)
 
 * A **Alocação** permite determinar qual valor é mantido quando mais de um item de dimensão pode persistir de cada vez em uma única coluna.
 
   >[!NOTE]
   >
-  >Se você tiver uma [modelo de atribuição não-padrão](/help/data-views/component-settings/attribution.md) definido em uma métrica em um relatório, o modelo de atribuição ignora a alocação definida na dimensão para o mesmo relatório.
+  >Se você tiver um [modelo de atribuição não padrão](/help/data-views/component-settings/attribution.md) definido em uma métrica em um relatório, o modelo de atribuição ignorará a alocação definida na dimensão para o mesmo relatório.
   >
   >No entanto, ao fazer uma [exportação de tabela completa](/help/analysis-workspace/export/export-cloud.md) que inclui várias dimensões, a atribuição retém os modelos de alocação aplicados a cada dimensão.
 

@@ -21,11 +21,11 @@ Esses casos de uso mostram a flexibilidade e o potencial das visualizações de 
 Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica [!UICONTROL Pedidos] de um campo de esquema [!UICONTROL pageTitle] que seja uma sequência. Estas são as etapas:
 
 1. Na guia Componentes, arraste [!UICONTROL pageTitle] até a seção [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
-   ![Campos de esquema com seta apontando para pageTitle na lista Nome do componente.](../assets/use-case1a.png)
+   ![Campos de esquema com seta apontando para pageTitle na lista de nomes de Componente.](../assets/use-case1a.png)
 1. Agora, destaque a métrica que você acabou de arrastar e renomeie-a em [!UICONTROL Configurações do componente] à direita:
-   ![Campos de esquema que destacam Pedidos nas Configurações de componente.](../assets/orders.png)
+   ![Campos de esquema destacando Pedidos nas Configurações de Componente.](../assets/orders.png)
 1. Abra a caixa de diálogo [!UICONTROL Incluir/Excluir valores] à direita e especifique o seguinte:
-   ![Incluir/Excluir valores com Definir valores de inclusão/exclusão e Diferenciação de maiúsculas e minúsculas selecionado.](../assets/orders2.png)
+   ![Incluir/Excluir valores com Definir valores de inclusão/exclusão e distinção entre maiúsculas e minúsculas selecionado.](../assets/orders2.png)
 
    A frase &quot;confirmação&quot; indica que é um pedido. Depois de examinar todos os títulos de página em que esses critérios são atendidos, &quot;1&quot; será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores de inclusão/exclusão pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, filtros e em qualquer lugar que você puder usar as métricas padrão.
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
@@ -43,7 +43,7 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
 1. Agora você pode adicionar [!UICONTROL Classificação de valores] para apresentar essa dimensão de forma segmentada nos relatórios. (Sem a classificação, cada instância dessa dimensão seria exibida como um item da linha nos relatórios do Espaço de trabalho.)
 
-   ![Classificação de valores com o valor de Classificação selecionado.](../assets/bucketing.png)
+   ![Classificação de valores com o valor do bloco selecionado.](../assets/bucketing.png)
 
 ## 3. Usar dimensões numéricas como &quot;métricas&quot; em diagramas de fluxo {#numeric}
 
@@ -52,7 +52,7 @@ Você pode usar uma dimensão numérica para inserir “métricas” na visualiz
 1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-component-settings), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Espaço de trabalho, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
 
-![Fluxo do canal de marketing de emails para pedidos/Saída.](../assets/flow.png)
+![Fluxo do Canal de marketing dos emails para Saída/pedidos.](../assets/flow.png)
 
 ## 4. Fazer filtragem de subeventos {#sub-event}
 
@@ -102,7 +102,7 @@ Uma dimensão e duas métricas facilitam esse relatório:
 
 * [Primeiras sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional). A métrica Primeiras sessões é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
 
-* [Sessões de retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional) A métrica Sessões de retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
+* [Sessões de Retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional) A métrica de Sessões de Retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
 
 Para acessar esses componentes:
 

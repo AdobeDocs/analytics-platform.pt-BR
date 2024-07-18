@@ -29,11 +29,11 @@ Use o botão Programar tarefa no hub do Report Builder para criar com rapidez um
 
 1. Clique no botão Programação no hub do Report Builder.
 
-   ![Clique no botão Schedule para criar um agendamento.](./assets/schedule-button.png){width="55%"}
+   ![Clique no botão Agendar para criar um agendamento.](./assets/schedule-button.png){width="55%"}
 
 1. Clique em Programar pasta de trabalho ou no botão de mais no canto superior esquerdo para criar uma nova pasta de trabalho programada.
 
-   ![A janela Programar pastas de trabalho.](./assets/schedule-workbook.png){width="55%"}
+   ![A janela Agendar pastas de trabalho.](./assets/schedule-workbook.png){width="55%"}
 
    O painel de programação exibe algumas informações predefinidas sobre a pasta de trabalho, como o nome da pasta de trabalho e a última data em que a pasta de trabalho foi modificada.
 
@@ -57,7 +57,7 @@ Use o botão Programar tarefa no hub do Report Builder para criar com rapidez um
 
 1. Insira o **Assunto** do email e uma descrição para seus recipients. O assunto assume o padrão do nome do arquivo da pasta de trabalho, mas você pode modificar o assunto, se necessário. Você pode adicionar detalhes na seção de descrição.
 
-   ![Informe um assunto no campo Assunto.](./assets/recipients-subject.png){width="55%"}
+   ![Insira um assunto no campo Assunto.](./assets/recipients-subject.png){width="55%"}
 
 1. Configure as opções de programação para definir a data e a hora em que deseja que a pasta de trabalho seja enviada por email para os recipients.
 
@@ -73,7 +73,7 @@ Use o botão Programar tarefa no hub do Report Builder para criar com rapidez um
 
    Você verá uma confirmação na parte inferior do hub do Report Builder e a pasta de trabalho programada será listada na guia Pastas de trabalho.
 
-   ![Notificação do sistema de confirmação](./assets/confirmation-toast.png){width="55%"}
+   ![Notificação do sistema](./assets/confirmation-toast.png){width="55%"}
 
 ## Enviar a pasta de trabalho apenas uma vez
 
@@ -93,7 +93,7 @@ Você pode exibir e gerenciar todas as pastas de trabalho programadas em um loca
 
 1. Selecione uma pasta de trabalho. São exibidas várias ferramentas que permitem editar a pasta de trabalho, editar a tarefa de agendamento, pausar e reiniciar a tarefa de agendamento, baixar um relatório de tarefa agendada ou excluir a tarefa de agendamento.
 
-   ![Captura de tela mostrando os ícones de programação da pasta de trabalho.](./assets/schedule-icons.png){width="20%"}
+   ![Captura de tela mostrando os ícones de agendamento da pasta de trabalho.](./assets/schedule-icons.png){width="20%"}
 
 * (Opcional) Clique no ícone de lápis para editar a tarefa de programação da pasta de trabalho.
 
@@ -125,4 +125,4 @@ Também é possível exibir o histórico de uma pasta de trabalho específica na
 
 O filtro da pasta de trabalho será exibido na parte superior do histórico. Para visualizar o histórico de todas as tarefas programadas novamente, clique no x ao lado do filtro.
 
-![O filtro da pasta de trabalho.](./assets/history3.png){width="55%"}
+![O filtro de pasta de trabalho.](./assets/history3.png){width="55%"}

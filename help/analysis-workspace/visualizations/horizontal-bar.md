@@ -17,14 +17,14 @@ ht-degree: 68%
 
 Esta visualização mostra barras horizontais que representam vários valores de uma ou mais métricas.
 
-![Barra horizontal que mostra métricas, incluindo Visualizações de página, Velocidade da página, Visitas, Entradas e Saídas.](assets/horizontal_bar.png)
+![Barra horizontal que mostra métricas como Exibições de página, Velocidade da página, Visitas, Entradas e Saídas.](assets/horizontal_bar.png)
 
 ## Barra horizontal empilhada {#section_50C08E9E20A94024A6553BC352ADB597}
 
 Esta visualização se parece com o [!UICONTROL Gráfico de barra horizontal], mas as barras de série aparecem empilhadas.
 
-![Uma barra horizontal empilhada que mostra Exibições de página, visitas, entradas e saídas.](assets/horizontal-bar-stacked.png)
+![Uma barra horizontal empilhada que mostra Exibições de Página, Visitas, Entradas e Saídas.](assets/horizontal-bar-stacked.png)
 
 A configuração de visualização [!UICONTROL Barra horizontal empilhada] nas visualizações de barra empilhada transforma o gráfico em uma visualização 100% empilhada:
 
-![Barra horizontal 100% empilhada mostrando Visitas, Exibições de página e Visitantes únicos.](assets/horizstacked100.png)
+![Barra horizontal 100% empilhada mostrando Visitas, Exibições de Página e Visitantes Únicos.](assets/horizstacked100.png)

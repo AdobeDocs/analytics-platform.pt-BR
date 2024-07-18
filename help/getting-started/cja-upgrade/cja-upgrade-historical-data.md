@@ -8,7 +8,7 @@ exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 source-git-commit: c64f7a1676f4fd3712e618e26357f430e7d9f019
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 0%
+ht-degree: 55%
 
 ---
 
@@ -23,38 +23,38 @@ As informações nesta página abordam a Etapa 4 do processo de atualização, c
 | Atualizar tarefa | Detalhes |
 |---------|----------|
 | **Etapa 1: [Introdução à atualização](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md)** | Saiba mais sobre os benefícios de atualizar para o Customer Journey Analytics e o processo básico de atualização. |
-| **Etapa 2: [Escolher o caminho de atualização](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Vários métodos estão disponíveis para atualizar para o Customer Journey Analytics. Escolha o método que é melhor para sua organização, dependendo do ambiente Adobe Analytics atual da organização e das metas de longo prazo. |
-| **Etapa 3: [Enviar dados para o Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | O processo de envio de dados para o Adobe Experience Platform difere dependendo do caminho de atualização escolhido na Etapa 2. |
-| <span class="preview">**Etapa 4: Reter dados históricos**</span> | <span class="preview">A maioria das organizações precisa manter seus dados históricos do Adobe Analytics por um determinado período. Várias opções estão disponíveis para fazer isso.</span> |
-| **Etapa 5: [Executar tarefas de implementação adicionais](/help/getting-started/cja-getting-started.md)** | Nesse ponto do processo de atualização, é necessário executar várias tarefas antes que o ambiente de Customer Journey Analytics esteja pronto para uso.<p>Essas tarefas adicionais se aplicam às atualizações do Adobe Analytics, bem como às novas implementações do Customer Journey Analytics.</p><p>Essas tarefas incluem:</p><ul><li>Trazendo outros dados para o Experience Platform</li><li>Criação de conexões entre conjuntos de dados da plataforma e Customer Journey Analytics</li><li>Criação de visualizações de dados</li><li>Transferência do uso da API de relatórios</li><li>Contabilização de feeds de dados e Data Warehouse</li><li>Migração de projetos e componentes</li><li>Integração do usuário do Planning</li></ul> <p>Para obter mais informações, consulte [Customer Journey Analytics Introdução](/help/getting-started/cja-getting-started.md). |
+| **Etapa 2: [Escolher o caminho de atualização](/help/getting-started/cja-upgrade/cja-upgrade-path.md)** | Vários métodos estão disponíveis para atualizar para o Customer Journey Analytics. Escolha o método mais adequado de acordo com o ambiente atual do Adobe Analytics e as metas de longo prazo da sua organização. |
+| **Etapa 3: [enviar dados à Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)** | O processo de envio de dados para o Adobe Experience Platform difere dependendo do caminho de atualização escolhido na Etapa 2. |
+| <span class="preview">**Etapa 4: reter dados históricos**</span> | <span class="preview">A maioria das organizações precisa reter dados históricos do Adobe Analytics por um determinado período. Há várias opções disponíveis para fazer isso.</span> |
+| **Etapa 5: [executar tarefas de implementação adicionais](/help/getting-started/cja-getting-started.md)** | Nesse ponto do processo de atualização, é necessário executar várias tarefas antes que o ambiente de Customer Journey Analytics esteja pronto para uso.<p>Essas tarefas adicionais se aplicam às atualizações do Adobe Analytics, bem como às novas implementações do Customer Journey Analytics.</p><p>Essas tarefas incluem:</p><ul><li>Migrar outros dados para a Experience Platform</li><li>Criar conexões entre conjuntos de dados da Platform e o Customer Journey Analytics</li><li>Criar visualizações de dados</li><li>Transferir o uso da API de relatórios</li><li>Contabilizar feeds de dados e data warehouse</li><li>Migrar projetos e componentes</li><li>Planejar a integração de usuários</li></ul> <p>Para mais informações, consulte [Introdução ao Customer Journey Analytics](/help/getting-started/cja-getting-started.md). |
 
 {style="table-layout:auto"}
 
 +++
 
-Escolha uma das seguintes opções para reter dados históricos ao mover do Adobe Analytics para o Customer Journey Analytics:
+Escolha uma das seguintes opções para reter dados históricos ao migrar do Adobe Analytics para o Customer Journey Analytics:
 
 >[!IMPORTANT]
 >
->Ao escolher como reter os dados históricos, entre em contato com o representante de conta Adobe para determinar os preços.
+>Ao escolher como reter dados históricos, entre em contato com o(a) representante da sua conta da Adobe para determinar os preços.
 
-## Usar o Conector de origem do Analytics
+## Usar o conector de origem do Analytics
 
-Você pode usar o [Conector de origem do Analytics](/help/data-ingestion/analytics.md) para reter dados históricos. Independentemente do caminho de atualização escolhido (mesmo se você atualizar usando o SDK da Web), é possível usar o Conector de origem do Analytics para reter dados históricos do ambiente do Adobe Analytics.
+É possível usar o [conector de origem do Analytics](/help/data-ingestion/analytics.md) para reter dados históricos. Independentemente do caminho de atualização escolhido (mesmo se você atualizar usando o SDK da Web), é possível usar o Conector Source do Analytics para reter dados históricos do ambiente do Adobe Analytics.
 
-Você pode usar o Conector de origem do Analytics para reter dados históricos, trazendo dados históricos para seu próprio local dedicado, separado de seus dados atuais.
+É possível usar o conector de origem do Analytics para reter dados históricos, armazenando-os em um local dedicado e separado dos dados atuais.
 
-O Conector de origem do Analytics deve estar funcionando enquanto você precisar acessar os dados históricos.
+O conector de origem do Analytics deve estar em funcionamento ao longo de todo o período de acesso aos dados históricos.
 
 <!-- Another possibility in the future: Map historical data in a way that allows you to tie it to your new data.  Possible? Explain -->
 
 ## Manter a implementação existente do Adobe Analytics
 
-Você pode manter sua implementação atual do Adobe Analytics junto com sua nova implementação do Customer Journey Analytics por um período específico (por exemplo, 1 ano). Ao escolher essa opção, considere o seguinte:
+É possível manter a implementação existente do Adobe Analytics junto com a nova implementação do Customer Journey Analytics por um período específico (por exemplo, 1 ano). Ao escolher essa opção, considere o seguinte:
 
-* Os dados não estariam disponíveis no Experience Platform.
+* Os dados não estariam disponíveis na Experience Platform.
 
-* Você deve planejar desativar a implementação do Adobe Analytics depois de ter dados suficientes no Customer Journey Analytics.
+* Planeje a desativação da implementação do Adobe Analytics quando tiver dados suficientes no Customer Journey Analytics.
 
 ## Em seguida, execute tarefas de implementação adicionais
 
@@ -64,18 +64,18 @@ Essas tarefas adicionais se aplicam às atualizações do Adobe Analytics, bem c
 
 Essas tarefas incluem:
 
-* Trazendo outros dados para o Experience Platform
+* Migrar outros dados para a Experience Platform
 
-* Criação de conexões entre conjuntos de dados da plataforma e Customer Journey Analytics
+* Criar conexões entre conjuntos de dados da Platform e o Customer Journey Analytics
 
-* Criação de visualizações de dados
+* Criar visualizações de dados
 
-* Transferência do uso da API de relatórios
+* Transferir o uso da API de relatórios
 
-* Contabilização de feeds de dados e casos de uso de Data Warehouse
+* Casos de uso de contabilização de feeds de dados e data warehouse
 
-* Migração de projetos e componentes
+* Migrar projetos e componentes
 
-* Integração do usuário do Planning
+* Planejar a integração de usuários
 
-Para obter mais informações, comece com a Etapa 2 em [Customer Journey Analytics Introdução](/help/getting-started/cja-getting-started.md).
+Para mais informações, comece pela etapa 2 da [Introdução ao Customer Journey Analytics](/help/getting-started/cja-getting-started.md).

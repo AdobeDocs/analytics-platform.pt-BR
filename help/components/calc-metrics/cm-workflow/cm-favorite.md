@@ -14,7 +14,7 @@ ht-degree: 29%
 
 Outra maneira de organizá-los para facilitar o uso é marcar as métricas calculadas como favoritos.
 
-1. No Customer Journey Analytics, selecione a variável **[!UICONTROL Componentes]** e selecione **[!UICONTROL Métricas calculadas]**.
+1. No Customer Journey Analytics, selecione a guia **[!UICONTROL Componentes]** e selecione **[!UICONTROL Métricas calculadas]**.
 
 1. No Gerenciador de métricas calculadas, marque a estrala ao lado de qualquer métrica calculada que você deseja marcar como favorita. Agora deve aparecer como uma estrela amarela:
 

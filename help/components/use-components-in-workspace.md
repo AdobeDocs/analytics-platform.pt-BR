@@ -15,7 +15,7 @@ ht-degree: 16%
 
 Os componentes compõem os dados reais de qualquer projeto no Analysis Workspace. Os componentes consistem em dimensões, métricas, filtros e intervalos de datas. Você pode adicionar componentes a um projeto arrastando-os para visualizações ou painéis.
 
-Para obter informações gerais sobre os tipos de componentes que podem ser adicionados, consulte [Visão geral dos componentes](/help/components/overview.md).
+Para obter informações gerais sobre os tipos de componentes que você pode adicionar, consulte [Visão geral dos componentes](/help/components/overview.md).
 
 >[!TIP]
 >
@@ -23,9 +23,9 @@ Para obter informações gerais sobre os tipos de componentes que podem ser adic
 
 ## Começar a adicionar componentes a um projeto
 
-1. [Criar um projeto no Analysis Workspace](/help/analysis-workspace/build-workspace-project/create-projects.md) se você ainda não tiver feito.
+1. [Crie um projeto no Analysis Workspace](/help/analysis-workspace/build-workspace-project/create-projects.md) se você ainda não tiver feito isso.
 
-1. [Adicionar um painel](/help/analysis-workspace/c-panels/panels.md) ou [adicionar uma visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) ao projeto no Analysis Workspace.
+1. [Adicione um painel](/help/analysis-workspace/c-panels/panels.md) ou [adicione uma visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) ao projeto no Analysis Workspace.
 
    Se você adicionar um componente a um projeto em branco, uma visualização de tabela de forma livre será criada automaticamente.
 
@@ -39,7 +39,7 @@ Para obter informações gerais sobre os tipos de componentes que podem ser adic
 
    Os filtros se aplicam a todo o conteúdo do painel.
 
-   Para obter informações sobre como usar a área de soltar do filtro em um painel para filtrar seu painel, consulte [Área para soltar](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Visão geral dos painéis](/help/analysis-workspace/c-panels/panels.md).
+   Para obter informações sobre como você pode usar a área de destino do filtro em um painel para filtrar seu painel, consulte [Área de destino](/help/analysis-workspace/c-panels/panels.md#drop-zone) na [Visão geral dos painéis](/help/analysis-workspace/c-panels/panels.md).
 
    ![soltar um filtro na área de soltar](assets/filter-dropzone.png)
 
@@ -55,9 +55,9 @@ Para obter informações gerais sobre os tipos de componentes que podem ser adic
 
 ## Adicionar dimensões a um projeto
 
-[Dimension](/help/components/dimensions/overview.md) são variáveis no Adobe Analytics que normalmente contêm valores de string. Por outro lado, as [métricas](/help/components/calc-metrics/calc-metr-overview.md) contêm valores numéricos que se vinculam a uma dimensão. Um relatório básico mostra linhas de valores da sequência de caracteres (dimensão) em relação a uma coluna de valores numéricos (métrica).
+[Dimension](/help/components/dimensions/overview.md) são variáveis no Adobe Analytics que normalmente contêm valores de cadeia de caracteres. Por outro lado, as [métricas](/help/components/calc-metrics/calc-metr-overview.md) contêm valores numéricos que se vinculam a uma dimensão. Um relatório básico mostra linhas de valores da sequência de caracteres (dimensão) em relação a uma coluna de valores numéricos (métrica).
 
-1. Comece a adicionar uma dimensão ao seu projeto no Analysis Workspace, conforme descrito em [Começar a adicionar componentes a um projeto](#begin-adding-components-to-a-project).
+1. Comece a adicionar uma dimensão ao seu projeto no Analysis Workspace, conforme descrito em [Comece a adicionar componentes a um projeto](#begin-adding-components-to-a-project).
 
 1. Escolha um dos métodos a seguir para adicionar dimensões e determinar o tipo de dados que deseja analisar:
 
@@ -65,13 +65,13 @@ Para obter informações gerais sobre os tipos de componentes que podem ser adic
 
      ![Adicionar dimensões a um projeto](assets/add-dimensions.png)
 
-   * Arraste uma ou mais dimensões do painel esquerdo para a área suspensa de filtro para criar um filtro ad hoc, conforme descrito em [Adicionar filtros a um projeto](#add-filters-to-a-project).
+   * Arraste uma ou mais dimensões do painel esquerdo para a área de destino do filtro para criar um filtro ad hoc, conforme descrito em [Adicionar filtros a um projeto](#add-filters-to-a-project).
 
 1. (Opcional) Você pode detalhar dimensões e itens de dimensão no Analysis Workspace com outros componentes.
 
-   Para obter mais informações, consulte [Detalhamento de dimensões no Workspace](/help/components/dimensions/t-breakdown-fa.md).
+   Para obter mais informações, consulte [Analisar dimensões no Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
-Para obter mais informações sobre como usar dimensões no Analysis Workspace, consulte [Visualizar dimensões](/help/components/dimensions/view-dimensions.md), [Detalhar dimensões](/help/components/dimensions/t-breakdown-fa.md), e [Dimensões de separação de tempo](/help/components/dimensions/time-parting-dimensions.md).
+Para obter mais informações sobre como usar dimensões no Analysis Workspace, consulte [Visualizar dimensões](/help/components/dimensions/view-dimensions.md), [Analisar dimensões](/help/components/dimensions/t-breakdown-fa.md) e [Dimensões de separação de tempo](/help/components/dimensions/time-parting-dimensions.md).
 
 ## Adicionar métricas a um projeto
 
@@ -79,7 +79,7 @@ As métricas permitem quantificar os pontos de dados no Analysis Workspace. Elas
 
 Para adicionar uma métrica a um projeto no Analysis Workspace:
 
-1. Comece a adicionar uma métrica ao seu projeto no Analysis Workspace, conforme descrito em [Começar a adicionar componentes a um projeto](#begin-adding-components-to-a-project).
+1. Comece a adicionar uma métrica ao seu projeto no Analysis Workspace, conforme descrito em [Comece a adicionar componentes a um projeto](#begin-adding-components-to-a-project).
 
 1. Escolha um dos seguintes métodos para adicionar uma métrica no Analysis Workspace:
 
@@ -97,7 +97,7 @@ Para obter mais informações sobre métricas, consulte [Visão geral das métri
 
 ## Adicionar filtros a um projeto
 
-[Filtros](/help/components/filters/filters-overview.md) O permite identificar subconjuntos de visitantes com base em características ou interações específicas.
+[Filtros](/help/components/filters/filters-overview.md) permitem identificar subconjuntos de visitantes com base em características ou interações específicas.
 
 Você pode usar filtros no Analysis Workspace de qualquer uma das seguintes maneiras:
 
@@ -105,7 +105,7 @@ Você pode usar filtros no Analysis Workspace de qualquer uma das seguintes mane
 
 Ao adicionar filtros a um painel, eles se aplicam a todo o conteúdo do painel.
 
-Para obter informações sobre como usar a área de soltar do filtro em um painel para filtrar seu painel, consulte [Área para soltar](/help/analysis-workspace/c-panels/panels.md#drop-zone) in [Visão geral dos painéis](/help/analysis-workspace/c-panels/panels.md).
+Para obter informações sobre como você pode usar a área de destino do filtro em um painel para filtrar seu painel, consulte [Área de destino](/help/analysis-workspace/c-panels/panels.md#drop-zone) na [Visão geral dos painéis](/help/analysis-workspace/c-panels/panels.md).
 
 ### Adicionar filtros a uma coluna em uma tabela de forma livre
 
@@ -119,14 +119,14 @@ Para obter mais informações, consulte [Métricas filtradas](/help/components/c
 
 ## Adicionar intervalos de datas a um projeto
 
-[Intervalos de datas](/help/components/date-ranges/custom-date-ranges.md) determine o intervalo de tempo do relatório no Analysis Workspace e possa ser aplicado a um ou mais painéis em um projeto.
+[Intervalos de datas](/help/components/date-ranges/custom-date-ranges.md) determinam o intervalo de tempo dos relatórios no Analysis Workspace e podem ser aplicados a um ou mais painéis dentro do projeto.
 
 Cada painel inclui um intervalo de datas por padrão. Há várias maneiras de atualizar um intervalo de datas para um painel. Uma maneira de atualizar um intervalo de datas para um painel no Analysis Workspace é arrastar um componente de intervalo de datas do painel esquerdo:
 
-1. Comece a adicionar um intervalo de datas ao seu projeto no Analysis Workspace, conforme descrito em [Começar a adicionar componentes a um projeto](#begin-adding-components-to-a-project).
+1. Comece a adicionar um intervalo de datas ao seu projeto no Analysis Workspace, conforme descrito em [Comece a adicionar componentes a um projeto](#begin-adding-components-to-a-project).
 
 1. Arraste um intervalo de datas do painel esquerdo para o intervalo de datas atual na parte superior direita do painel.
 
-   ![soltar um intervalo de datas](assets/daterange-drop.png)
+   ![descartar um intervalo de datas](assets/daterange-drop.png)
 
 Para obter mais informações sobre como usar calendários e intervalos de datas no Analysis Workspace, consulte [Visão geral do calendário e de intervalos de datas](/help/components/date-ranges/custom-date-ranges.md).

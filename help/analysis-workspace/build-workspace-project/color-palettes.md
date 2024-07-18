@@ -19,7 +19,7 @@ ht-degree: 88%
 >
 >O suporte para a paleta de cores não está habilitado para o Internet Explorer 11.
 
-![A janela Informações e configurações do projeto.](assets/color_palettes.png)
+![A janela Informações e Configurações do Projeto.](assets/color_palettes.png)
 
 Lembre-se:
 
@@ -29,7 +29,7 @@ Lembre-se:
 ## Para alterar a paleta de cores:
 
 1. Navegue até **[!UICONTROL Workspace]** > **[!UICONTROL Projeto]** > **[!UICONTROL Informações e configurações do projeto]**.
-1. No **[!UICONTROL Paleta de cores do projeto]** escolha um dos cinco esquemas de cores predefinidos.
+1. Na lista suspensa **[!UICONTROL Paleta de Cores do Projeto]**, você pode escolher um dos cinco esquemas de cores predefinidos.
 
    ![Os cinco esquemas de cores predefinidos.](assets/custom_palette.png)
 

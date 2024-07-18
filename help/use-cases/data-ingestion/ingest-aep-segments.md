@@ -1,5 +1,5 @@
 ---
-title: Assimilar públicos da Adobe Experience Platform no Customer Journey Analytics
+title: Assimilar públicos-alvo da Adobe Experience Platform no Customer Journey Analytics
 description: Explica como assimilar públicos-alvo da Adobe Experience Platform no Customer Journey Analytics para análise adicional.
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -8,13 +8,13 @@ role: Admin
 source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 50%
+ht-degree: 51%
 
 ---
 
 # Assimilar públicos da Adobe Experience Platform na Adobe Customer Journey Analytics
 
-Esse caso de uso explora uma maneira temporária e manual de trazer públicos-alvo da Adobe Experience Platform (Adobe Experience Platform) para o Customer Journey Analytics. Esses públicos-alvo podem ter sido criados no Construtor de segmentos do Adobe Experience Platform, no Adobe Audience Manager ou em outras ferramentas e são armazenados no Perfil do cliente em tempo real (RTCP). Os públicos-alvo consistem em um conjunto de IDs de perfil, juntamente com quaisquer atributos/eventos/etc. aplicáveis. e queremos trazê-los para o Espaço de trabalho do Customer Journey Analytics para análise.
+Esse caso de uso explora uma maneira temporária e manual de trazer públicos-alvo da Adobe Experience Platform (Adobe Experience Platform) para o Customer Journey Analytics. Esses públicos-alvo podem ter sido criados no Construtor de segmentos do Adobe Experience Platform, no Adobe Audience Manager ou em outras ferramentas e são armazenados no Perfil do cliente em tempo real (RTCP). Os públicos-alvo consistem em um conjunto de IDs de perfil, juntamente com quaisquer atributos/eventos/etc. aplicáveis. e queremos trazê-los ao Customer Journey Analytics Workspace para análise.
 
 ## Pré-requisitos 
 
@@ -44,7 +44,7 @@ Você pode criar um trabalho de exportação usando a ID de público-alvo de sua
 
 ## Etapa 4: Editar a saída de exportação
 
-Os resultados do trabalho de exportação precisam ser transformados em um conjunto de dados de Perfil separado para serem assimilados no Customer Journey Analytics.  Essa transformação pode ser feita com [Serviço de consulta Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR)ou outra ferramenta de transformação de sua escolha. Somente precisamos da ID de perfil (que corresponderá à ID de pessoa no Customer Journey Analytics) e uma ou mais IDs de público-alvo para fazer o relatório no Customer Journey Analytics.
+Os resultados do trabalho de exportação precisam ser transformados em um conjunto de dados de Perfil separado para serem assimilados no Customer Journey Analytics.  Esta transformação pode ser feita com o [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR) ou outra ferramenta de transformação de sua escolha. Somente precisamos da ID de perfil (que corresponderá à ID de pessoa no Customer Journey Analytics) e uma ou mais IDs de público-alvo para fazer o relatório no Customer Journey Analytics.
 
 No entanto, o trabalho de exportação padrão contém mais dados e, portanto, precisamos editar essa saída para remover dados irrelevantes, bem como mover algumas coisas. Além disso, é necessário criar um esquema/conjunto de dados primeiro antes de adicionar os dados transformados a ele.
 
@@ -91,4 +91,4 @@ Agora você pode criar relatórios sobre `audienceMembershipId`, `audienceMember
    1. Execute esse processo para cada público-alvo desejado em sua coleção de públicos-alvo no RTCP.
    1. O Customer Journey Analytics oferece suporte a matrizes/matrizes de objetos em conjuntos de dados de perfil. Uso de uma [array de objetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=pt-BR) para audienceMembershipId ou audienceMembershipIdName é a melhor opção.
    1. Na visualização de dados, crie uma nova dimensão usando a transformação de Substring no campo `audienceMembershipId` para converter a string de valores separados por vírgula em uma matriz. OBSERVAÇÃO: atualmente, há um limite de 10 valores na matriz.
-   1. Agora você pode relatar sobre essa nova dimensão `audienceMembershipIds` no Espaço de trabalho do Customer Journey Analytics.
+   1. Agora você pode relatar sobre esta nova dimensão `audienceMembershipIds` no Customer Journey Analytics Workspace.

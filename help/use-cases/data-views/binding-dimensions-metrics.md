@@ -79,7 +79,7 @@ Se você desejar observar a receita por cor sem uma dimensão de ligação, a di
 | --- | --- |
 | laranja neon | 2099 |
 
-Acesse **[!UICONTROL Visualizações de dados]** e vincular o [!DNL Product Color] dimensão para [!DNL Product Name]:
+Acesse **[!UICONTROL Visualizações de dados]** e associe a dimensão [!DNL Product Color] a [!DNL Product Name]:
 
 ![Dimensão de ligação](../assets/binding-dimension.png)
 
@@ -238,13 +238,13 @@ Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vi
    }
    ```
 
-Se você usar um modelo de alocação que não inclua uma dimensão de ligação com termo de pesquisa, todos os três produtos atribuirão receita a apenas um único termo de pesquisa. Por exemplo, se você usou [!UICONTROL Original] alocação com a dimensão de termo de pesquisa:
+Se você usar um modelo de alocação que não inclua uma dimensão de ligação com termo de pesquisa, todos os três produtos atribuirão receita a apenas um único termo de pesquisa. Por exemplo, se você usou a alocação [!UICONTROL Original] com a dimensão de termo de pesquisa:
 
 | search_term | receita |
 | --- | --- |
 | luvas de boxe | US$ 204,97 |
 
-Se você usou [!UICONTROL Mais recente] alocação com a dimensão termo de pesquisa, os três produtos ainda atribuem receita a um único termo de pesquisa:
+Se você usou a alocação [!UICONTROL Mais recente] com a dimensão de termo de pesquisa, os três produtos ainda atribuirão a receita a um único termo de pesquisa:
 
 | search_term | receita |
 | --- | --- |
@@ -252,7 +252,7 @@ Se você usou [!UICONTROL Mais recente] alocação com a dimensão termo de pesq
 
 Embora este exemplo inclua apenas uma pessoa, muitas pessoas que pesquisam por coisas diferentes podem atribuir erroneamente termos de pesquisa a produtos diferentes, tornando difícil determinar quais são os melhores resultados de pesquisa.
 
-Agora você pode vincular [!DNL Search Term] para [!DNL Product Name] sempre que o [!DNL Searches] está presente para atribuir corretamente o termo de pesquisa à receita.
+Agora você pode vincular [!DNL Search Term] a [!DNL Product Name] sempre que a métrica [!DNL Searches] estiver presente para atribuir corretamente o termo de pesquisa à receita.
 
 ![Métrica de ligação](../assets/binding-metric.png)
 
@@ -440,4 +440,4 @@ No entanto, se você vincular o `product_finding_method` à métrica Adições a
 
 >[!MORELIKETHIS]
 >
->[Vinculação de Dimension em visualizações de dados](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html) tutorial.
+>[Tutorial de Dimension de Ligação em Visualizações de Dados](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html).

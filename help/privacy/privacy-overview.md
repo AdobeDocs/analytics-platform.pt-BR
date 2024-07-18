@@ -17,7 +17,7 @@ De modo geral, todas as configurações relacionadas à governança de dados no 
 
 ## Governança de dados
 
-A integração entre o Adobe Customer Journey Analytics e o [Governança de dados do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=pt-BR) permite a rotulagem de dados Customer Journey Analytics sensíveis e a aplicação de políticas de privacidade.
+A integração entre o Adobe Customer Journey Analytics e a [Governança de dados da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=pt-BR) permite rotular dados de Customer Journey Analytics confidenciais e aplicar políticas de privacidade.
 
 Os rótulos e políticas de privacidade que foram criados em conjuntos de dados consumidos pela Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do Customer Journey Analytics. Esses rótulos interrompem ou avisam os usuários que criam métricas e/ou dimensões a partir de campos sigilosos.
 

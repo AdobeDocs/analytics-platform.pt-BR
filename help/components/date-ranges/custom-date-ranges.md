@@ -22,9 +22,9 @@ Para criar um intervalo de datas personalizado:
 
 1. No Adobe Analytics, selecione **[!UICONTROL Componentes]** > **[!UICONTROL Intervalos de datas]**.
 
-   ![página de intervalo de datas](assets/date-ranges.png)
+   ![intervalo de datas](assets/date-ranges.png)
 
-1. Selecionar [!UICONTROL **Criar novo intervalo de datas**].
+1. Selecione [!UICONTROL **Criar novo intervalo de datas**].
 
 1. No Criador de intervalo de datas, especifique as seguintes informações:
 
@@ -36,8 +36,8 @@ Para criar um intervalo de datas personalizado:
    | [!UICONTROL **Intervalo de datas**] | Permite escolher um intervalo de datas personalizado. Por padrão, os últimos 30 dias são selecionados. |
    | [!UICONTROL **Predefinição**] | Escolha em uma lista de intervalos de datas predefinidos, como [!UICONTROL **Ontem**], [!UICONTROL **Últimos 7 dias**], [!UICONTROL **Últimos 30 dias**] e assim por diante. |
    | [!UICONTROL **Hora de início**] | A hora do dia em que o intervalo de datas começa. |
-   | [!UICONTROL **Hora final**] | A hora do dia em que o intervalo de datas termina. |
-   | [!UICONTROL **Usar datas do acumulado**] | Datas do acumulado permitem gerar um relatório dinâmico que analisa antes e depois de um período de tempo com base na execução do relatório. Por exemplo, se você quiser relatar todos os pedidos feitos no “Mês anterior” (dependendo da Data de criação) e executar o relatório em dezembro, você verá os pedidos feitos em novembro. Se executar o mesmo relatório em janeiro, verá os pedidos feitos em dezembro.<ul><li>**[!UICONTROL Visualização de data]**: indica o período compreendido no calendário em andamento.</li><li>**[!UICONTROL Início]**: você pode escolher entre dia atual, semana atual, mês atual, trimestre atual, ano atual.</li><li>**[!UICONTROL Fim]**: você pode escolher entre dia atual, semana atual, mês atual, trimestre atual, ano atual.</li></ul><br>Selecionado por padrão. |
+   | [!UICONTROL **Hora de término**] | A hora do dia em que o intervalo de datas termina. |
+   | [!UICONTROL **Usar datas do acumulado**] | Datas contínuas permitem gerar um relatório dinâmico que analisa um certo período de tempo, seja para frente ou para trás, com base na execução do relatório. Por exemplo, se você quiser relatar todos os pedidos feitos no “Mês anterior” (dependendo da Data de criação) e executar o relatório em dezembro, você verá os pedidos feitos em novembro. Se executar o mesmo relatório em janeiro, verá os pedidos feitos em dezembro.<ul><li>**[!UICONTROL Visualização de data]**: indica o período compreendido no calendário em andamento.</li><li>**[!UICONTROL Início]**: você pode escolher entre dia atual, semana atual, mês atual, trimestre atual, ano atual.</li><li>**[!UICONTROL Fim]**: você pode escolher entre dia atual, semana atual, mês atual, trimestre atual, ano atual.</li></ul><br>Selecionado por padrão. |
 
 1. Selecione [!UICONTROL **Salvar**].
 
@@ -61,7 +61,7 @@ Você pode criar um intervalo de datas que especifique uma janela contínua de 7
 
 ![](assets/create_date_range.png)
 
-Uso *`rolling daily`*.
+Usar *`rolling daily`*.
 
 * As configurações de Início seriam *`current day minus 6 days`*.
 

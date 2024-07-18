@@ -18,22 +18,22 @@ A análise entre canais possibilita uma única visualização consolidada do com
 
 ## Etapas da implementação
 
-![Fluxo das etapas de implementação conforme descrito nesta seção.](../assets/cca-architecture.png)
+![Fluxo de etapas de implementação conforme descrito nesta seção.](../assets/cca-architecture.png)
 
 1. [Crie esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) para os dados que serão assimilados.
 1. [Crie conjuntos de dados](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=pt-BR) para os dados que serão assimilados.
 1. [Assimilar dados no Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=pt-BR):
-   1. Dados baseados em eventos ![evento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) do site ou aplicativo móvel pelo conector de origem da Rede de borda ou do Analytics.
-   2. Dados do perfil ![perfil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (por exemplo, de um sistema CRM, aplicativo de call center, aplicativo de fidelidade).
+   1. Dados ![evento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) baseados em eventos do site ou aplicativo móvel por meio do conector de origem do Edge Network ou Analytics.
+   2. Dados de perfil ![perfil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (por exemplo, de um sistema CRM, aplicativo da central de atendimento, aplicativo de fidelidade).
    3. Dados de pesquisa ![pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (por exemplo, nome do produto, categoria de um sistema de informações do produto).
 
-1. Use uma ID de namespace comum em conjuntos de dados. Uso [Costura](../../stitching/overview.md) para elevar qualquer conjunto de dados baseado em eventos ![atualização de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) em relação ao fornecimento da ID comum em cada linha. Observe que o Customer Journey Analytics não usa atualmente os serviços de Perfil ou de Identidade da Experience Platform para compilações.
+1. Use uma ID de namespace comum em conjuntos de dados. Use a [compilação](../../stitching/overview.md) para elevar qualquer ![atualização de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) do conjunto de dados baseado em eventos com relação ao fornecimento da ID comum em cada linha. Observe que o Customer Journey Analytics não usa atualmente os serviços de Perfil ou de Identidade da Experience Platform para compilações.
 1. Execute qualquer preparação de dados personalizada para garantir uma chave comum entre os conjuntos de dados de série de tempo que serão assimilados no Customer Journey Analytics.
 1. Forneça aos dados de pesquisa uma ID primária que possa se associar a um campo nos dados do evento. Conta como linhas no licenciamento.
 1. Configure a mesma ID primária para os dados do perfil que foi configurada para os dados do evento.
-1. [Criar uma conexão](../../connections/overview.md) para assimilar os conjuntos de dados relevantes do Experience Platform para o Customer Journey Analytics.
+1. [Crie uma conexão](../../connections/overview.md) para assimilar os conjuntos de dados relevantes de Experience Platform para Customer Journey Analytics.
 1. [Crie uma visualização de dados](/help/data-views/create-dataview.md) na conexão para selecionar as dimensões e métricas específicas a serem incluídas na visualização. As configurações de atribuição e alocação também são definidas na visualização de dados. Essas configurações são computadas no momento da emissão do relatório.
-1. [Criar um projeto](/help/analysis-workspace/home.md) para configurar painéis e relatórios no Analysis Workspace.
+1. [Crie um projeto](/help/analysis-workspace/home.md) para configurar painéis e relatórios no Analysis Workspace.
 
 ## Considerações
 

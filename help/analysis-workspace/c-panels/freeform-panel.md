@@ -15,4 +15,4 @@ ht-degree: 69%
 
 Um painel de forma livre é um painel em branco com uma tabela de forma livre incluída como o estado inicial.
 
-![O painel Forma livre padrão mostrando um painel em branco com uma tabela de forma livre.](assets/freeform-panel.png)
+![O painel de Forma livre padrão mostrando um painel em branco com uma tabela de forma livre.](assets/freeform-panel.png)

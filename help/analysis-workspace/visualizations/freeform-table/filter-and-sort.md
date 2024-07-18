@@ -35,7 +35,7 @@ Você pode usar vários métodos para filtrar linhas de uma tabela de forma livr
 - Filtros de tabela
 - Segmentação
 
-Certifique-se de ler como cada método afeta [Totais de tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
+Leia como cada método afeta [os totais das tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### Excluir rapidamente linhas específicas de uma tabela
 
@@ -43,7 +43,7 @@ Você pode excluir rapidamente linhas específicas da tabela sem precisar abrir 
 
 >[!NOTE]
 >
->Quando você exclui linhas conforme descrito nesta seção, uma [!UICONTROL **Sempre excluir itens**] A regra é aplicada automaticamente na caixa de diálogo de filtro avançado. (É possível exibir a regra aplicada selecionando o ícone Filtrar e, em seguida, [**[!UICONTROL Mostrar avançado]**](#apply-a-simple-or-advanced-filter-to-a-table).)
+>Quando você exclui linhas conforme descrito nesta seção, uma regra [!UICONTROL **Sempre excluir itens**] é aplicada automaticamente na caixa de diálogo de filtro avançado. (Você pode exibir a regra aplicada selecionando o ícone Filtro e [**[!UICONTROL Mostrar avançado]**](#apply-a-simple-or-advanced-filter-to-a-table).)
 
 Para excluir rapidamente linhas específicas de uma tabela de forma livre:
 
@@ -95,7 +95,7 @@ Para filtrar dados em tabelas de forma livre:
 
 ### Filtros
 
-Consulte nossa [Filtrar documentação](/help/components/filters/filters-overview.md) para obter mais detalhes.
+Consulte nossa [Documentação de filtragem](/help/components/filters/filters-overview.md) para obter mais detalhes.
 
 ## Classificar tabelas
 
@@ -110,6 +110,6 @@ Um ícone de seta para baixo ![Ícone de seta para baixo na tabela classificada 
    - A seta para baixo classifica em ordem decrescente e a seta para cima (padrão), em ordem crescente.
    - É possível classificar dimensões em ordem alfabética ou numérica. Por exemplo, pode ser que você tenha etapas numeradas em um fluxo de trabalho e deseje classificar pelo número da etapa. É possível classificar uma dimensão por data. Ou você pode classificar as fontes de dados em ordem alfabética, como na imagem a seguir.
 
-   ![A visualização das Fontes de dados destaca o ícone de classificação.](assets/sort-dimensions.png)
+   ![Exibição das Fontes de Dados destacando o ícone de classificação.](assets/sort-dimensions.png)
 
 

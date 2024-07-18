@@ -39,7 +39,7 @@ Ao clicar no intervalo de datas na janela modal, você tem várias opções:
 
 * **Calendário**: selecione as datas inicial e final.
 * **Usar datas do acumulado**: marque essa caixa se desejar que o intervalo de datas mude com o passar do tempo. Não marque essa caixa se desejar que o intervalo de datas permaneça estático.
-* **Selecionar predefinição**: use essa seleção suspensa se desejar um intervalo de datas personalizado com base em um intervalo que o Adobe oferece por padrão. Ao selecionar uma predefinição, você pode personalizar ainda mais o intervalo de datas para atender às suas necessidades. Isso não afeta a predefinição que a Adobe oferece.
+* **Selecionar predefinição**: use esta seleção suspensa se desejar um intervalo de datas personalizado com base em um intervalo que o Adobe oferece por padrão. Ao selecionar uma predefinição, você pode personalizar ainda mais o intervalo de datas para atender às suas necessidades. Isso não afeta a predefinição que a Adobe oferece.
 
 ## Intervalos de datas acumulados
 

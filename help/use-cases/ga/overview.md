@@ -21,11 +21,11 @@ Os fluxos de trabalho são fornecidos tanto para dados históricos quanto para a
 
 A ingestão de dados históricos (preenchimento retroativo) envolve a exportação de dados do Google e a importação desses dados para a Adobe Experience Platform. Consulte [Ingestão de dados do Google Analytics na Adobe Experience Platform](backfill.md).
 
-Depois de trazer os dados históricos para a Platform com sucesso, você pode [Configurar transmissão de dados atuais](streaming.md), ou comece imediatamente a relatar dados preenchidos retroativamente no Customer Journey Analytics por [Criação de uma conexão](/help/connections/create-connection.md).
+Depois de trazer os dados históricos para a Platform com êxito, você pode [Configurar a transmissão de dados atuais](streaming.md) ou iniciar imediatamente os relatórios de dados preenchidos retroativamente no Customer Journey Analytics por [Criar uma conexão](/help/connections/create-connection.md).
 
 ## Configurar uma implementação do Google Analytics existente para a Adobe Experience Platform {#configure}
 
-A ingestão de dados atuais (transmissão) envolve o envio de dados para a Rede de borda da Adobe Experience Platform, que então encaminha esses dados para a Adobe Experience Platform. Consulte [Configurar a transmissão de dados do Google Analytics na Adobe Experience Platform](streaming.md).
+A ingestão de dados atuais (transmissão) envolve o envio de dados para o Edge Network da Adobe Experience Platform, que então encaminha esses dados para a Adobe Experience Platform. Consulte [Configurar a transmissão de dados do Google Analytics na Adobe Experience Platform](streaming.md).
 
 ## Configurar uma conexão e uma visualização de dados no Customer Journey Analytics
 

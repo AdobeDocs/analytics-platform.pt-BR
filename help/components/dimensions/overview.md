@@ -12,7 +12,7 @@ ht-degree: 37%
 
 # Visão geral das dimensões
 
-Dimension são um tipo de componente em Customer Journey Analytics usado para analisar dados. Por exemplo, você usa dimensões ao criar relatórios no [Analysis Workspace](/help/analysis-workspace/home.md) ou em [Report Builder](/help/report-builder/report-buider-overview.md).
+Dimension são um tipo de componente em Customer Journey Analytics usado para analisar dados. Por exemplo, você usa dimensões ao criar relatórios no [Analysis Workspace](/help/analysis-workspace/home.md) ou no [Report Builder](/help/report-builder/report-buider-overview.md).
 
 as dimensões Customer Journey Analytics são ilimitadas; os valores podem ser numéricos, texto, objetos, listas ou misturas de todos.
 

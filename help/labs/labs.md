@@ -31,7 +31,7 @@ Para acessar o [!UICONTROL Labs]:
 
 1. Caso ainda não tenha acesso ao [!UICONTROL Workspace] e ao [!UICONTROL Labs], peça as credenciais ao seu administrador.
 
-1. No Customer Journey Analytics, clique no botão **[!UICONTROL Labs]** guia.
+1. No Customer Journey Analytics, clique na guia **[!UICONTROL Labs]**.
 
 ## Avaliar um protótipo
 
@@ -65,7 +65,7 @@ Para iniciar e avaliar um protótipo:
 
 1. Para experimentar um protótipo diferente ou sair do ambiente do protótipo, clique em **[!UICONTROL Sair do protótipo]**, no canto superior direito da tela, e conclua a breve pesquisa do protótipo. As mudanças feitas em um projeto de protótipo são perdidas ao sair do ambiente do protótipo.
 
-   ![Janela Comentários sobre definição de caminho inteligente](assets/short-survey.png)
+   ![Janela de Comentários sobre Definição de Caminho Inteligente](assets/short-survey.png)
 
 1. Clique em **[!UICONTROL Enviar]** para retornar ao portal Visualizações principal.
 

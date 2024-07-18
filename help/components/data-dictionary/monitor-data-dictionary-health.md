@@ -37,7 +37,7 @@ Para identificar problemas de integridade no dicionário de dados:
 
    A janela do dicionário de dados é exibida.
 
-   ![A visualização do administrador do Dicionário de dados que mostra a integridade do dicionário](assets/data-dictionary-admin.png)
+   ![Exibição do administrador do Dicionário de Dados mostrando a integridade do Dicionário](assets/data-dictionary-admin.png)
 
 1. Verifique se a visualização de dados correta está selecionada no menu suspenso.
 

@@ -36,12 +36,12 @@ Você pode configurar o painel Visualizadores simultâneos de mídia usando esta
 
 ### Visualização padrão
 
-![A visualização padrão dos Visualizadores simultâneos de mídia.](assets/concurrent-viewers-default.png)
+![O modo de exibição padrão dos Visualizadores Simultâneos de Mídia.](assets/concurrent-viewers-default.png)
 
 
 ### Visualização de detalhamento por séries
 
-![A visualização de detalhamento da Série Visualizadores simultâneos de mídia que mostra 7 de 10 dimensões, segmentos ou intervalos de datas.](assets/concurrent-viewers-series-breakdown.png)
+![A exibição de detalhamento da Série de Visualizadores Simultâneos de Mídia mostrando 7 de 10 dimensões, segmentos ou intervalos de datas.](assets/concurrent-viewers-series-breakdown.png)
 
 ## Saída do painel {#Output}
 
@@ -51,7 +51,7 @@ A qualquer momento, você pode editar e reconstruir o painel clicando no lápis 
 
 Se você selecionou o detalhamento por séries, uma linha no gráfico de linha e um número de resumo é exibida para cada:
 
-![A saída dos Visualizadores simultâneos de mídia.](assets/concurrent-viewers-output.png)
+![A saída dos Visualizadores Simultâneos de Mídia.](assets/concurrent-viewers-output.png)
 
 ### Fonte de dados
 
@@ -64,7 +64,7 @@ A única métrica que pode ser usada nesse painel é a de Visualizadores simult�
 Uma tabela de forma livre não está disponível nessa visualização.  Para visualizar a fonte de dados, clique com o botão direito do mouse no gráfico de linha e baixe como um arquivo .csv.  Os detalhamentos por séries serão incluídos.
 
 
-![As opções de saída do Visualizador simultâneo com &quot;Baixar dados como CSV&quot; realçadas.](assets/concurrent-viewers-download-csv.png)
+![As opções de saída de Visualizadores simultâneos com &quot;Baixar dados como CSV&quot; realçadas.](assets/concurrent-viewers-download-csv.png)
 
 ## Perguntas frequentes {#FAQ}
 

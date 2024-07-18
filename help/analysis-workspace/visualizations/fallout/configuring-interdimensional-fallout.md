@@ -17,14 +17,14 @@ O recurso de Fallout no Analysis Workspace permite combinar dimensões e métric
 
 Por exemplo, além de uma dimensão Página, é possível adicionar itens de dimensão baseados em ação a uma visualização de Fallout. Isso permite visualizar como as páginas e determinadas ações interagem nos caminhos dos clientes.
 
-![A visualização Todas as visitas mostrando várias dimensões como pontos de contato.](assets/interdimensional-fallout1.png)
+![O modo de exibição Todas as Visitas mostrando várias dimensões como pontos de contato.](assets/interdimensional-fallout1.png)
 
 O fallout é atualizado de forma dinâmica e permite ver os fallouts em várias dimensões.
 
 Você também pode adicionar métricas a esta combinação. Neste exemplo, adicionamos a métrica “Foto compartilhada” para desenvolver o caminho tomado pelos clientes:
 
-![A exibição Todas as visitas mostrando a métrica adicionada: &quot;Foto compartilhada&quot;.](assets/interdimensional-fallout2.png)
+![O modo de exibição Todas as Visitas mostrando a métrica adicionada: &quot;Foto Compartilhada&quot;.](assets/interdimensional-fallout2.png)
 
 Além disso, você pode combinar diferentes dimensões e métricas em pontos de verificação AND. Basta arrastar outra dimensão ou métrica sobre uma existente:
 
-![A exibição Todas as visitas mostrando a métrica Nome da ação: Compartilhado E Foto compartilhada adicionada.](assets/interdimensional-fallout3.png)
+![O modo de exibição Todas as Visitas mostrando a métrica Nome da Ação adicionada: Foto Compartilhada E Compartilhada.](assets/interdimensional-fallout3.png)

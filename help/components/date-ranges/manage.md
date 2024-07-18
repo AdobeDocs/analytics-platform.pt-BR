@@ -20,7 +20,7 @@ Use o gerenciador de intervalo de datas para compartilhar, renomear ou excluir i
 
 ## Interface
 
-![Intervalos de datas com intervalo de exemplo destacado.](../assets/date-range-ui.png)
+![Intervalos de datas com intervalo de Exemplo realçado.](../assets/date-range-ui.png)
 
 O gerenciador de intervalo de datas inclui as seguintes opções:
 

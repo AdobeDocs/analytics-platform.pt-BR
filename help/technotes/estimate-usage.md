@@ -42,7 +42,7 @@ Talvez seja necessário saber quantas linhas de dados do evento você tem atualm
 
 1. Adicione os **[!UICONTROL Registros de dados do evento disponíveis]** para cada conexão criada pela organização. (Dependendo do tamanho da conexão, o número pode levar algum tempo para ser exibido.)
 
-   ![Registros dos dados do evento disponíveis.](./assets/event-data.png)
+   ![Registros de dados do evento disponíveis.](./assets/event-data.png)
 
    >[!CAUTION]
    >
@@ -69,7 +69,7 @@ Esse método permite fazer uma análise mais profunda dos dados de uso, bem como
 >
 >    Não crie uma nova conexão que englobe todos os seus dados apenas para medir o uso, pois isso duplicaria efetivamente o uso.
 
-1. No Espaço de trabalho, crie novos projetos com base em cada visualização de dados e obtenha todos os eventos (da **[!UICONTROL Métricas]** lista suspensa) até a primeira sexta-feira do mês, começando com o primeiro dia do contrato Customer Journey Analytics atual.
+1. No Workspace, crie novos projetos com base em cada visualização de dados e obtenha todos os eventos (da lista suspensa **[!UICONTROL Métricas]**) até a primeira sexta-feira do mês, começando pelo primeiro dia do contrato de Customer Journey Analytics atual.
 
    ![Tabela de forma livre mostrando eventos.](./assets/events-usage.png)
 
@@ -83,7 +83,7 @@ No Report Builder, [crie um bloco de dados](/help/report-builder/create-a-data-b
 
 ## Criar um relatório automatizado na API Customer Journey Analytics {#api-report}
 
-1. Use o [API de relatórios do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) para executar um relatório sobre todos os dados do evento, **para cada conexão**. Configure isso para que o relatório seja executado
+1. Use a [API de relatórios do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Reporting-API) para executar um relatório sobre todos os dados do evento, **para cada conexão**. Configure isso para que o relatório seja executado
 
    * em todas as primeiras sextas-feiras de cada mês.
    * retornando ao primeiro dia do contrato Customer Journey Analytics atual.
@@ -94,7 +94,7 @@ No Report Builder, [crie um bloco de dados](/help/report-builder/create-a-data-b
 
 ## Gerencie o uso definindo uma janela de dados contínua {#rolling}
 
-Para gerenciar o uso, a variável [interface de conexões](/help/connections/create-connection.md) O permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (1 mês, 3 meses, 6 meses etc.), no nível da conexão.
+Para gerenciar seu uso, a [interface de conexões](/help/connections/create-connection.md) permite definir a retenção de dados de Customer Journey Analytics como uma janela contínua em meses (1 mês, 3 meses, 6 meses etc.), no nível da conexão.
 
 O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
 

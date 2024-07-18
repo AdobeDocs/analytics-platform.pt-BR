@@ -14,7 +14,7 @@ ht-degree: 16%
 
 # Visão geral do Gerenciador de atividades de relatórios
 
-A variável [!UICONTROL Gerenciador de atividades de relatórios] O está disponível para administradores do.
+O [!UICONTROL Gerente de Atividades de Relatórios] está disponível para administradores.
 
 Se a sua organização sofrer uma degradação no desempenho dos relatórios durante o pico dos relatórios, o Gerenciador de atividades de relatórios permitirá que você faça um autodiagnóstico e corrija problemas de capacidade sem a intervenção do Atendimento ao cliente do Adobe. Você pode gerenciar facilmente as filas de relatórios em uma única interface e agir imediatamente&#x200B;&#x200B; para melhorar a experiência dos usuários.
 
@@ -32,12 +32,12 @@ O Gerente de atividades de relatórios oferece os seguintes benefícios:
 
 <!-- update for CJA -->
 
-Para gerenciar a atividade de relatórios, você deve ter a função Administrador de produto. Para obter mais informações, consulte [Controle de acesso Customer Journey Analytics](/help/technotes/access-control.md).
+Para gerenciar a atividade de relatórios, você deve ter a função Administrador de produto. Para obter mais informações, consulte [Controle de acesso ao Customer Journey Analytics](/help/technotes/access-control.md).
 
 ## Exibir atividade de relatórios
 
-Para obter informações sobre como exibir a atividade de relatórios no Gerenciador de Atividades de relatórios, consulte [Exibir atividade de relatórios no Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md).
+Para obter informações sobre como exibir a atividade de relatórios no Gerenciador de Atividades de relatórios, consulte [Exibir atividade de relatórios no Gerenciador de Atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md).
 
 ## Cancelar solicitações de relatórios
 
-Para obter informações sobre como cancelar solicitações de relatórios no Gerenciador de atividades de relatórios, consulte [Cancelar solicitações de relatórios no Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).
+Para obter informações sobre como cancelar solicitações de relatórios no Gerenciador de Atividades de relatórios, consulte [Cancelar solicitações de relatórios no Gerenciador de Atividades de relatórios](/help/reporting-activity-manager/reporting-activity-cancel-requests.md).

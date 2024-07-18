@@ -19,13 +19,13 @@ Você também pode adicionar filtros em um ponto de contato. Por exemplo, você 
 
 Não há limite de número de etapas que você pode adicionar ou do número de dimensões usadas.
 
-É possível definir o caminho das eVars, incluindo eVars de merchandising e [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=pt-BR) (variáveis que podem ter vários valores por evento, como produtos, listVars, eVars de merchandising e propriedades de lista). Por exemplo, suponha que alguém esteja pesquisando sapatos e camisetas em uma página e camisetas e meias em outra. O próximo relatório de fluxo do produto para sapatos será camisetas e meias, e NÃO camisetas.
+Você pode criar caminhos em eVars, incluindo eVars de merchandising e [listVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=pt-BR) (variáveis que podem ter vários valores por evento, como produtos, listVars, eVars de merchandising e propriedades de lista). Por exemplo, suponha que alguém esteja pesquisando sapatos e camisetas em uma página e camisetas e meias em outra. O próximo relatório de fluxo do produto para sapatos será camisetas e meias, e NÃO camisetas.
 
 1. Arraste uma visualização de [!UICONTROL Fallout] do menu suspenso Visualizações em uma [!UICONTROL Tabela de forma livre].
 
 1. Arraste a dimensão de Página à Tabela de forma livre e arraste uma página de lá (neste caso, Início - JJEsquire) para o campo **[!UICONTROL Adicionar ponto de contato]** como o primeiro ponto de contato.
 
-   ![A lista suspensa Todas as visitas mostrando o JJEsquire arrastado para o campo Adicionar ponto de contato.](assets/fallout1.png)
+   ![O menu suspenso Todas as visitas mostrando o JJEsquire arrastado para o campo Adicionar Touchpoint.](assets/fallout1.png)
 
    Passe o mouse sobre um ponto de contato para ver o fallout e outras informações sobre o nível, como o nome do ponto de contato e a contagem de pessoas no ponto, e ver a taxa de sucesso do ponto de contato (bem como comparar a taxa de sucesso com outros pontos de contato).
 
@@ -41,11 +41,11 @@ Não há limite de número de etapas que você pode adicionar ou do número de d
    >
    >Quando são vários filtros, eles são ligados com AND. No caso de vários itens (como itens de dimensão e métricas), são ligados com OR.
 
-   ![A página: CamerRoll ou Página: Pontos de contato da câmera destacados.](assets/multiple_obj_touchpoint.png)
+   ![Página:CamerRoll ou Página: pontos de contato de câmera destacados.](assets/multiple_obj_touchpoint.png)
 
-1. Também é possível **restringir pontos de contato individuais ao próximo evento** (em vez de &quot;eventualmente&quot;) dentro do caminho. Embaixo de cada ponto de contato, há um seletor com as opções “Caminho eventual” e “Próxima ocorrência”, da seguinte forma:
+1. Você também pode **restringir pontos de contato individuais ao próximo evento** (em vez de &quot;eventualmente&quot;) dentro do caminho. Embaixo de cada ponto de contato, há um seletor com as opções “Caminho eventual” e “Próxima ocorrência”, da seguinte forma:
 
-   ![A exibição Todas as visitas mostrando a opção Caminho eventual foi realçada. ](assets/next-hit-eventually.png)
+   ![O modo de exibição Todas as Visitas mostrando a opção Caminho Eventual foi realçado. ](assets/next-hit-eventually.png)
 
 <table id="table_A91D99D9364B41929CC5A5BC907E8985"> 
  <tbody> 

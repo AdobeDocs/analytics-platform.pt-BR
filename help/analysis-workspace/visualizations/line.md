@@ -15,13 +15,13 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->A visualização de linha será exibida em breve [legendas inteligentes](/help/analysis-workspace/visualizations/intelligent-captions.md).
+>A visualização de linha logo apresentará [legendas inteligentes](/help/analysis-workspace/visualizations/intelligent-captions.md).
 
 A visualização de linha representa as métricas que usam uma linha para mostrar como os valores são alterados em um período. Um gráfico de linha pode ser usado apenas quando o horário for usado como uma dimensão.
 
 ![Visualização de linha](assets/line-viz.png)
 
-Selecione o ícone de configurações ![Configurações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) na barra superior da visualização Linha para acessar [Configurações de visualização](freeform-analysis-visualizations.md) disponíveis. As configurações são categorizadas em:
+Selecione o ícone de configurações ![Configurações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) na barra superior da visualização de linha para acessar as [Configurações de visualização](freeform-analysis-visualizations.md) disponíveis. As configurações são categorizadas em:
 
 <img src="./assets/viz-settings-line.png" alt="Configurações de visualização" width="50%" />
 

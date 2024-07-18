@@ -39,50 +39,50 @@ Considere o seguinte ao criar hiperlinks para itens de dimensão:
 
 * A validade dos URLs não é verificada ao criar o hiperlink.
 
-  Se você criar um hiperlink com um URL inválido ou criar um hiperlink que faça referência a um item de dimensão que não tem um valor de URL (fazendo referência ao item de dimensão diretamente ou usando a variável `$value` ou `$breakdown` ), os usuários que clicarem no hiperlink verão uma mensagem de erro informando que o URL é inválido.
+  Se você criar um hiperlink que tenha uma URL inválida ou se criar um hiperlink que faça referência a um item de dimensão que não tenha um valor de URL (referenciando o item de dimensão diretamente ou usando as variáveis `$value` ou `$breakdown`), os usuários que clicarem no hiperlink verão uma mensagem de erro informando que a URL é inválida.
 
 * Os hiperlinks criados para um único item de dimensão substituem os hiperlinks criados na dimensão.
 
-* Os hiperlinks não são funcionais no [arquivos PDF baixados](/help/analysis-workspace/export/download-send.md).
+* Os hiperlinks não estão funcionando em [arquivos de PDF baixados](/help/analysis-workspace/export/download-send.md).
 
 Para criar hiperlinks para um ou mais itens de dimensão:
 
 1. Em uma tabela de forma livre no Analysis Workspace, siga um destes procedimentos:
 
-   * **Crie um hiperlink para um único item de dimensão:** Clique com o botão direito do mouse no item de dimensão na tabela para a qual deseja criar o hiperlink e selecione [!UICONTROL **Criar hiperlink**].
+   * **Crie um hiperlink para um único item de dimensão:** Clique com o botão direito do mouse no item de dimensão na tabela para o qual deseja criar o hiperlink e selecione [!UICONTROL **Criar hiperlink**].
 
      ![Criar hiperlink para um único item de dimensão](assets/hyperlink-single-add.png)
 
-     A variável [!UICONTROL **Criar hiperlink**] será exibida. O nome do item de dimensão para o qual você está criando um hiperlink é mostrado na caixa de diálogo.
+     A caixa de diálogo [!UICONTROL **Criar hiperlink**] é exibida. O nome do item de dimensão para o qual você está criando um hiperlink é mostrado na caixa de diálogo.
 
-     ![Caixa de diálogo Criar hiperlink para um único item](assets/hyperlink-dialog-single.png)
+     ![Criar hiperlink para caixa de diálogo de um único item](assets/hyperlink-dialog-single.png)
 
    * **Criar hiperlinks para todos os itens de dimensão em uma coluna de dimensão:** Clique com o botão direito do mouse no nome da dimensão no cabeçalho da coluna de dimensão e selecione [!UICONTROL **Criar hiperlinks para todos os itens de dimensão**].
 
      ![Criar hiperlink para uma dimensão](assets/hyperlink-multiple-add.png)
 
-     A variável [!UICONTROL **Criar hiperlinks para todos os itens de dimensão**] será exibida. O nome da dimensão para a qual você está criando hiperlinks é mostrado na caixa de diálogo.
+     A caixa de diálogo [!UICONTROL **Criar hiperlinks para todos os itens de dimensão**] é exibida. O nome da dimensão para a qual você está criando hiperlinks é mostrado na caixa de diálogo.
 
      ![Caixa de diálogo Criar hiperlinks](assets/hyperlink-dialog-multiple.png)
 
 1. Escolha entre as seguintes opções:
 
-   * [!UICONTROL **Usar o valor do item de dimensão como o URL**]: escolha essa opção para itens de dimensão que tenham valores de URL, como uma dimensão de URL de página.
+   * [!UICONTROL **Usar o valor do item de dimensão como a URL**]: escolha esta opção para itens de dimensão que tenham valores de URL, como uma dimensão de URL de Página.
 
      Por exemplo, se você estiver usando uma dimensão URL de página em que o valor de cada item de dimensão é um URL, selecionar essa opção criará um hiperlink para o URL.
 
-   * [!UICONTROL **Criar um URL personalizado**]: especifique um URL personalizado estático ou dinâmico. Escolha essa opção para criar hiperlinks para itens de dimensão que não têm valores de URL.
+   * [!UICONTROL **Criar uma URL personalizada**]: especifique uma URL personalizada estática ou dinâmica. Escolha essa opção para criar hiperlinks para itens de dimensão que não têm valores de URL.
 
      Por exemplo, se estiver usando uma dimensão Nome da página em que o valor de cada item de dimensão é o nome de uma página (e não um URL completo), selecionar essa opção permitirá especificar um hiperlink a ser usado como o link para o item de dimensão.
 
-     Se quiser criar URLs dinâmicos para vários itens de dimensão, você poderá usar o `$value` e `$breakdown` variáveis no URL personalizado. Consulte a tabela abaixo para obter mais informações.
+     Se você quiser criar URLs dinâmicos para vários itens de dimensão, poderá usar as variáveis `$value` e `$breakdown` em sua URL personalizada. Consulte a tabela abaixo para obter mais informações.
 
      Para criar um URL personalizado, especifique as seguintes informações:
 
      | Campo | Descrição |
      |---------|----------|
-     | [!UICONTROL **URL personalizado**] | Especifique um URL personalizado que deseja usar para o hiperlink. Os URLs devem ser inseridos como URLs totalmente qualificados. Por exemplo: <https://www.example.com><p>O URL personalizado que você cria pode ser estático ou dinâmico:</p> <ul><li>**URLs estáticos:** Se você estiver criando um hiperlink para um item de dimensão individual, um URL estático poderá ser suficiente. <p>Considere o exemplo a seguir: por exemplo, se você tiver um item de dimensão Nome da página, poderá criar um URL estático que vincule os usuários à página da Web específica que deseja associar ao nome da página.</p><p>Suponha que você queira criar hiperlinks para uma lista de itens de dimensão, cada um vinculando à sua respectiva definição na documentação em uma página wiki interna.</p><p>Você pode fazer isso criando um URL estático para cada item de dimensão. Por exemplo:</p><p>https://wiki.internal.company_name/page_name#item_definition</p></li><li>**URLs dinâmicos:** Se você estiver criando um hiperlink para vários itens de dimensão ou para todos os itens de dimensão em uma coluna de dimensão, um URL dinâmico provavelmente será mais prático. <p>Para tornar dinâmicos os URLs personalizados, você inclui variáveis no URL que permitem alterar o URL dinamicamente com base no valor da própria dimensão ou no valor da dimensão de detalhamento.</p><p>Ao usar variáveis, todos os itens de dimensão que contêm caracteres inválidos em URLs (como espaços) são codificados por URL.</p><p>As seguintes variáveis estão disponíveis: (**Nota**: embora você possa usar essas variáveis no mesmo URL, provavelmente é mais comum usá-las separadamente.)</p> <ul><li>**`$value`:** Permite inserir o valor do item de dimensão no URL especificado. <p>Considere o seguinte cenário como exemplo:</p><p>Suponha que você queira criar hiperlinks para todos os itens de dimensão Nome da página em uma tabela de forma livre, em que o valor de cada item de dimensão faça parte de um URL da página da Web. Nesse caso, é possível construir um único URL personalizado que se ajusta dinamicamente para cada item de dimensão. </p><p>Você pode fazer isso adicionando o `$value` até o final do URL personalizado especificado. Por exemplo:</p> <p>https://company-name.com/browse/product#\$value</p><p>Quando esse URL personalizado é aplicado aos itens de dimensão de Nome da página cujos valores são &quot;ProductY&quot; e &quot;ProductZ&quot;, os hiperlinks gerados são semelhantes a: </p><p>https://company-name.com/browse/product#ProductY</p><p>e</p><p> https://company-name.com/browse/product#ProductZ </p><p>![usar valores em hiperlinks](assets/table-hyperlinks-vaule.png)</p><p>**Dica**: Se você adicionar somente a variável `$value` no campo URL personalizado, seria o mesmo que selecionar a variável [!UICONTROL **Usar o valor do item de dimensão**] ao criar o URL.</p></li><li>**`$breakdown`:** Permite inserir o valor do item de dimensão de detalhamento no URL especificado. Isso permite usar uma dimensão com um nome amigável em seu relatório (como uma dimensão Nome do produto) ao criar o hiperlink com base em uma dimensão de detalhamento que pode ser menos amigável ao usuário (como uma dimensão ID de produto ou URL de página).<p>Ao fazer referência a uma dimensão de detalhamento, é mais comum ter apenas um item de detalhamento para um determinado item de dimensão. Se houver vários itens de detalhamento para um determinado item de dimensão, o valor do primeiro item de detalhamento será usado no URL. Se nenhum item de detalhamento for listado, o URL será inválido. A mesma ordem de classificação é aplicada aos itens de detalhamento como é aplicada à tabela.</p><p>Especifique a dimensão de detalhamento na variável [!UICONTROL **Detalhamento da dimensão**] abaixo.</p> <p>Considere o exemplo de cenário descrito para a variável [!UICONTROL **Detalhamento da dimensão**] abaixo.</p></li></ul> |
-     | [!UICONTROL **Dimensão de detalhamento (opcional)**] | Comece digitando o nome da dimensão de detalhamento que deseja usar e selecione-a na lista suspensa. <p>Se você selecionar uma dimensão de detalhamento neste campo, deverá referenciá-la usando o `$breakdown` no URL especificado na variável [!UICONTROL **URL personalizado**] campo.</p><p>Considere o seguinte cenário como exemplo:</p><p>Suponha que você deseja criar hiperlinks para todos os itens de dimensão de Nome do produto em uma tabela de forma livre. Cada item de dimensão de Nome de produto contém um detalhamento de uma dimensão de ID de produto.</p></p>Nesse caso, é possível criar hiperlinks para cada dimensão de Nome do produto que direciona os usuários para a página do produto usando o valor da dimensão de detalhamento ID do produto. </p><p>Você pode fazer isso adicionando o `$breakdown` até o final do URL personalizado especificado na variável [!UICONTROL **URL personalizado**] campo. Por exemplo:</p><p>https://company-name.com/browse/product/$breakdown</p><p>Quando esse URL personalizado é aplicado aos itens de dimensão de Nome do produto que têm itens de dimensão de detalhamento cujos valores são &quot;ProductY&quot; e &quot;ProductZ&quot;, os hiperlinks gerados são semelhantes a:</p><p>https://company-name.com/browse/product/ProductY</p><p>e</p><p>https://company-name.com/browse/product/ProductZ</p><p>Em seguida, você selecionaria a dimensão ID do produto na [!UICONTROL **Detalhamento da dimensão**] campo </p><p>![usar detalhamentos em hiperlinks](assets/table-hyperlinks-breakdown.png)</p> |
+     | [!UICONTROL **URL personalizada**] | Especifique um URL personalizado que deseja usar para o hiperlink. Os URLs devem ser inseridos como URLs totalmente qualificados. Por exemplo: <https://www.example.com><p>O URL personalizado que você cria pode ser estático ou dinâmico:</p> <ul><li>**URLs estáticas:** Se você estiver criando um hiperlink para um item de dimensão individual, uma URL estática poderá ser suficiente. <p>Considere o exemplo a seguir: por exemplo, se você tiver um item de dimensão Nome da página, poderá criar um URL estático que vincule os usuários à página da Web específica que deseja associar ao nome da página.</p><p>Suponha que você queira criar hiperlinks para uma lista de itens de dimensão, cada um vinculando à sua respectiva definição na documentação em uma página wiki interna.</p><p>Você pode fazer isso criando um URL estático para cada item de dimensão. Por exemplo:</p><p>https://wiki.internal.company_name/page_name#item_definition</p></li><li>**URLs dinâmicos:** se você estiver criando um hiperlink para vários itens de dimensão ou para todos os itens de dimensão em uma coluna de dimensão, uma URL dinâmica provavelmente será mais prática. <p>Para tornar dinâmicos os URLs personalizados, você inclui variáveis no URL que permitem alterar o URL dinamicamente com base no valor da própria dimensão ou no valor da dimensão de detalhamento.</p><p>Ao usar variáveis, todos os itens de dimensão que contêm caracteres inválidos em URLs (como espaços) são codificados por URL.</p><p>As seguintes variáveis estão disponíveis: (**Observação**: embora você possa usar essas variáveis na mesma URL, provavelmente é mais comum usá-las separadamente.)</p> <ul><li>**`$value`:** Permite inserir o valor do item de dimensão na URL especificada. <p>Considere o seguinte cenário como exemplo:</p><p>Suponha que você queira criar hiperlinks para todos os itens de dimensão Nome da página em uma tabela de forma livre, em que o valor de cada item de dimensão faça parte de um URL da página da Web. Nesse caso, é possível construir um único URL personalizado que se ajusta dinamicamente para cada item de dimensão. </p><p>Você pode fazer isso adicionando a variável `$value` ao final da URL personalizada que você especificar. Por exemplo:</p> <p>https://company-name.com/browse/product#\$value</p><p>Quando esse URL personalizado é aplicado aos itens de dimensão de Nome da página cujos valores são &quot;ProductY&quot; e &quot;ProductZ&quot;, os hiperlinks gerados são semelhantes a: </p><p>https://company-name.com/browse/product#ProductY</p><p>e</p><p> https://company-name.com/browse/product#ProductZ </p><p>![usar valores em hiperlinks](assets/table-hyperlinks-vaule.png)</p><p>**Dica**: se você adicionasse somente a variável `$value` ao campo URL Personalizado, seria o mesmo que selecionar a opção [!UICONTROL **Usar o valor do item de dimensão**] ao criar a URL.</p></li><li>**`$breakdown`:** Permite inserir o valor do item de dimensão de detalhamento na URL especificada. Isso permite usar uma dimensão com um nome amigável em seu relatório (como uma dimensão Nome do produto) ao criar o hiperlink com base em uma dimensão de detalhamento que pode ser menos amigável ao usuário (como uma dimensão ID de produto ou URL de página).<p>Ao fazer referência a uma dimensão de detalhamento, é mais comum ter apenas um item de detalhamento para um determinado item de dimensão. Se houver vários itens de detalhamento para um determinado item de dimensão, o valor do primeiro item de detalhamento será usado no URL. Se nenhum item de detalhamento for listado, o URL será inválido. A mesma ordem de classificação é aplicada aos itens de detalhamento como é aplicada à tabela.</p><p>Você especifica a dimensão de detalhamento no campo [!UICONTROL **Dimensão de detalhamento**] abaixo.</p> <p>Considere o exemplo de cenário descrito para o campo [!UICONTROL **Dimensão de detalhamento**] abaixo.</p></li></ul> |
+     | [!UICONTROL **Dimensão de detalhamento (opcional)**] | Comece digitando o nome da dimensão de detalhamento que deseja usar e selecione-a na lista suspensa. <p>Se você selecionar uma dimensão de detalhamento neste campo, deverá referenciá-la usando a variável `$breakdown` na URL especificada no campo [!UICONTROL **URL Personalizada**].</p><p>Considere o seguinte cenário como exemplo:</p><p>Suponha que você deseja criar hiperlinks para todos os itens de dimensão de Nome do produto em uma tabela de forma livre. Cada item de dimensão de Nome de produto contém um detalhamento de uma dimensão de ID de produto.</p></p>Nesse caso, é possível criar hiperlinks para cada dimensão de Nome do produto que direciona os usuários para a página do produto usando o valor da dimensão de detalhamento ID do produto. </p><p>Você pode fazer isso adicionando a variável `$breakdown` ao final da URL personalizada que você especificar no campo [!UICONTROL **URL Personalizada**]. Por exemplo:</p><p>https://company-name.com/browse/product/$breakdown</p><p>Quando esse URL personalizado é aplicado aos itens de dimensão de Nome do produto que têm itens de dimensão de detalhamento cujos valores são &quot;ProductY&quot; e &quot;ProductZ&quot;, os hiperlinks gerados são semelhantes a:</p><p>https://company-name.com/browse/product/ProductY</p><p>e</p><p>https://company-name.com/browse/product/ProductZ</p><p>Em seguida, você selecionaria a dimensão ID do produto no campo [!UICONTROL **Detalhamento da dimensão**] </p><p>![usar detalhamentos em hiperlinks](assets/table-hyperlinks-breakdown.png)</p> |
 
 1. Selecione [!UICONTROL **Criar**].
 
@@ -90,7 +90,7 @@ Para criar hiperlinks para um ou mais itens de dimensão:
 
    <!-- add screenshot of a table with hyperlinks.-->
 
-1. [Salve o projeto](/help/analysis-workspace/build-workspace-project/save-projects.md) para salvar as alterações.
+1. [Salve o projeto](/help/analysis-workspace/build-workspace-project/save-projects.md) para salvar suas alterações.
 
 ## Editar hiperlinks
 
@@ -98,7 +98,7 @@ Para criar hiperlinks para um ou mais itens de dimensão:
 
 1. Em uma tabela de forma livre no Analysis Workspace, siga um destes procedimentos:
 
-   * **Editar um hiperlink para um único item de dimensão:** Clique com o botão direito do mouse no item de dimensão na tabela em que deseja editar o hiperlink.
+   * **Edite um hiperlink para um único item de dimensão:** Clique com o botão direito do mouse no item de dimensão na tabela em que deseja editar o hiperlink.
 
      ![Editar hiperlink para um único item de dimensão](assets/hyperlink-single-edit.png)
 
@@ -106,13 +106,13 @@ Para criar hiperlinks para um ou mais itens de dimensão:
 
      ![Editar hiperlink para uma dimensão](assets/hyperlink-dimension-edit.png)
 
-1. Selecionar [!UICONTROL **Editar hiperlink**] no menu de contexto.
+1. Selecione [!UICONTROL **Editar hiperlink**] no menu de contexto.
 
-   A variável [!UICONTROL **Editar hiperlinks para itens de dimensão**] será exibida.
+   A caixa de diálogo [!UICONTROL **Editar hiperlinks para itens de dimensão**] é exibida.
 
-1. Para obter informações sobre as opções de configuração para editar o hiperlink, consulte Etapa 3 no [Criar hiperlinks para um ou mais itens de dimensão](#create-hyperlinks-for-one-or-more-dimension-items) acima e selecione [!UICONTROL **Aplicar**] quando terminar as atualizações.
+1. Para obter informações sobre as opções de configuração para editar o hiperlink, consulte a Etapa 3 na seção [Criar hiperlinks para um ou mais itens de dimensão](#create-hyperlinks-for-one-or-more-dimension-items) acima e selecione [!UICONTROL **Aplicar**] quando terminar de atualizar.
 
-1. [Salve o projeto](/help/analysis-workspace/build-workspace-project/save-projects.md) para salvar as alterações.
+1. [Salve o projeto](/help/analysis-workspace/build-workspace-project/save-projects.md) para salvar suas alterações.
 
 ## Remover hiperlinks
 
@@ -126,16 +126,16 @@ Para remover hiperlinks de itens de dimensão:
 
 1. Em uma tabela de forma livre no Analysis Workspace, siga um destes procedimentos:
 
-   * **Remover um hiperlink de um único item de dimensão:** Clique com o botão direito do mouse no item de dimensão na tabela em que deseja remover o hiperlink.
+   * **Remover um hiperlink de um único item de dimensão:** Clique com o botão direito do mouse no item de dimensão na tabela onde deseja remover o hiperlink.
 
      ![Remover hiperlink de um único item de dimensão](assets/hyperlink-single-remove.png)
 
-   * **Remover hiperlinks de todos os itens de dimensão em uma coluna de dimensão:** Clique com o botão direito do mouse no nome da dimensão no cabeçalho da coluna de dimensão.
+   * **Remova os hiperlinks de todos os itens de dimensão em uma coluna de dimensão:** Clique com o botão direito do mouse no nome da dimensão no cabeçalho da coluna de dimensão.
 
      ![Remover hiperlink de uma dimensão](assets/hyperlink-dimension-remove.png)
 
-1. Selecionar [!UICONTROL **Remover hiperlink**] no menu de contexto.
+1. Selecione [!UICONTROL **Remover hiperlink**] no menu de contexto.
 
    O hiperlink é removido do único item de dimensão (se você tiver selecionado um único item de dimensão) ou de todos os itens de dimensão (se você tiver selecionado o nome da dimensão no cabeçalho da coluna de dimensão).
 
-1. [Salve o projeto](/help/analysis-workspace/build-workspace-project/save-projects.md) para salvar as alterações.
+1. [Salve o projeto](/help/analysis-workspace/build-workspace-project/save-projects.md) para salvar suas alterações.

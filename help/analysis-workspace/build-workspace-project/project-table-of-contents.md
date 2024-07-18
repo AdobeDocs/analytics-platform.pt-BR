@@ -26,7 +26,7 @@ Para exibir o índice de um projeto:
 
 1. No Analysis Workspace, vá para o projeto em que deseja exibir o índice.
 
-1. Na navegação à esquerda, selecione o ícone de sumário ![ícone do sumário](assets/toc-icon.png).
+1. Na navegação à esquerda, selecione o ícone de sumário ![ícone de sumário](assets/toc-icon.png).
 
    O índice do projeto é exibido e cada painel é expandido por padrão.
 

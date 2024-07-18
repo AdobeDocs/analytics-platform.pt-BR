@@ -2,7 +2,8 @@
 title: Domínios usados pelo Customer Journey Analytics
 description: Se o firewall da sua organização bloquear endereços IP originados da Adobe, use esta lista para atualizar as configurações do firewall.
 role: Admin
-source-git-commit: 43bda939a5464c5f65b0a050ccfdb5ba17f7d34b
+exl-id: 0c3e7b2e-cb48-4e14-ae18-65258ebce1b4
+source-git-commit: 8ffbca5dd83987a90d7b744d236e0556314000dd
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 20%
@@ -27,10 +28,10 @@ Algumas configurações de firewall bloqueiam domínios dos quais o Customer Jou
 
 ## Domínios da Adobe Experience Cloud
 
-Além dos domínios acima, o Adobe Experience Cloud depende de vários domínios para a coleta de dados e exportação de relatórios. Consulte [Domínios usados pela Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) para esta lista de domínios.
+Além dos domínios acima, o Adobe Experience Cloud depende de vários domínios para a coleta de dados e exportação de relatórios. Consulte [Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) para obter esta lista de domínios.
 
 >[!MORELIKETHIS]
 >
 >[Endereços IP usados pelo Customer Journey Analytics](ip-addresses.md)
 >
->[Domínios usados pela Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
+>[Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)

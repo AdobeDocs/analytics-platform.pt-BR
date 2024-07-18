@@ -32,9 +32,9 @@ Primeiro, você cria um esquema de pesquisa no Adobe Experience Platform e, em s
 
 ## 1. Criar esquema de pesquisa (Experience Platform)
 
-Criar seu próprio esquema para o [pesquisa](/help/technotes/glossary.md) A tabela garante que o conjunto de dados usado estará disponível no Customer Journey Analytics com a configuração correta (tipo de registro). Uma prática recomendada é [criar uma classe de esquema personalizada](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#create-new-class) chamada “Pesquisa”, sem elementos, que pode ser reutilizada para todas as tabelas de pesquisa.
+Criar seu próprio esquema para a tabela [de pesquisa](/help/technotes/glossary.md) garante que o conjunto de dados usado estará disponível no Customer Journey Analytics com a configuração correta (tipo de registro). Uma prática recomendada é [criar uma classe de esquema personalizada](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#create-new-class) chamada “Pesquisa”, sem elementos, que pode ser reutilizada para todas as tabelas de pesquisa.
 
-![Caixa de diálogo Criar nova classe.](../assets/create-new-class.png)
+![Caixa de diálogo Criar Nova Classe.](../assets/create-new-class.png)
 
 ## 2. Criar conjunto de dados de pesquisa (Experience Platform)
 
@@ -63,8 +63,8 @@ Neste exemplo, estamos combinando 3 conjuntos de dados em uma conexão Customer 
 | Nome do conjunto de dados | Descrição | Classe de esquema do Adobe Experience Platform | Detalhes do conjunto de dados |
 | --- | --- | --- | --- |
 | Impressão B2B | Contém dados de sequência de cliques e nível de evento no nível de conta. Por exemplo, contém a ID de email e a ID de conta correspondente, além do nome de marketing, para a execução de anúncios de marketing. Também inclui as impressões desses anúncios, por usuário. | Com base na classe de esquema XDM ExperienceEvent | O `emailID` é usado como a identidade primária e recebe um namespace `Customer ID`. Como resultado, será exibido como a **[!UICONTROL ID de pessoa]** padrão no Customer Journey Analytics. ![Impressões](../assets/impressions-mixins.png) |
-| Perfil B2B | Este conjunto de dados de perfil informa mais sobre os usuários em uma conta, como o cargo, a qual conta eles pertencem, o perfil do LinkedIn etc. | Com base na classe de esquema Perfil individual XDM | Selecionar `emailID` como a ID primária neste esquema. |
-| Informações B2B | Consulte &quot;Criar conjunto de dados de pesquisa&quot; acima. | B2BAccount (classe de esquema de pesquisa personalizada) | A relação entre `accountID` e o conjunto de dados Impressões B2B foi criado automaticamente ao conectar o conjunto de dados Informações B2B ao conjunto de dados Impressões B2B no Customer Journey Analytics, conforme descrito nas etapas abaixo. ![Pesquisa](../assets/lookup-mixins.png) |
+| Perfil B2B | Este conjunto de dados de perfil informa mais sobre os usuários em uma conta, como o cargo, a qual conta eles pertencem, o perfil do LinkedIn etc. | Com base na classe de esquema Perfil individual XDM | Selecione `emailID` como a ID primária neste esquema. |
+| Informações B2B | Consulte &quot;Criar conjunto de dados de pesquisa&quot; acima. | B2BAccount (classe de esquema de pesquisa personalizada) | A relação entre `accountID` e o conjunto de dados Impressões B2B foi criada automaticamente ao conectar o conjunto de dados Informações B2B ao conjunto de dados Impressões B2B no Customer Journey Analytics, conforme descrito nas etapas abaixo. ![Pesquisa](../assets/lookup-mixins.png) |
 
 Veja como combinar conjuntos de dados:
 

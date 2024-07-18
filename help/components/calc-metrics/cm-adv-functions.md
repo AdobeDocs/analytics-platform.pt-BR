@@ -62,11 +62,11 @@ A Contagem distinta aproximada (eVar de ID de cliente) é um caso de uso comum p
 
 Definição de uma nova métrica calculada &quot;Número aproximado de clientes&quot;:
 
-![Nova definição de dimensão distinta de município aproximada mostrando a ID do cliente (eVar 1)](assets/approx-count-distinct.png)
+![Definição de nova dimensão distinta de região aproximada mostrando a ID do Cliente (eVar 1)](assets/approx-count-distinct.png)
 
 A métrica “Número aproximado de clientes” deve ser usada em relatórios da seguinte maneira:
 
-![Tabela de forma livre que mostra visitantes únicos e clientes aproximados ](assets/approx-customers.png)
+![Tabela de forma livre mostrando Visitantes únicos e Clientes aproximados ](assets/approx-customers.png)
 
 ## Comparação de funções de contagem
 

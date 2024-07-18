@@ -59,7 +59,7 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
    - Os componentes Data são adicionados à seção Coluna.
    - Os componentes de Filtro são adicionados à seção Filtros.
 
-   **Data de início como Dimension**
+   **Data inicial como Dimension**
 
    Defina a Data de início como uma dimensão para identificar claramente a data de início do bloco de dados. Isso é útil se você tiver um relatório agendado regularmente com um intervalo de datas em andamento ou se tiver um intervalo de datas não convencional e precisar estar livre da data de início.
 
@@ -75,9 +75,9 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
 
    **Exibir ou ocultar cabeçalhos de linha e coluna**
 
-1. Clique em **Tabela** ícone de configurações.
+1. Clique no ícone de configurações **Tabela**.
 
-   ![Captura de tela mostrando a opção Configurações da tabela.](./assets/table-settings.png){width="35%"}
+   ![Captura de tela mostrando a opção de configurações de Tabela.](./assets/table-settings.png){width="35%"}
 
 1. Marque ou desmarque a opção Display row and column headers. Os cabeçalhos são exibidos por padrão.
 

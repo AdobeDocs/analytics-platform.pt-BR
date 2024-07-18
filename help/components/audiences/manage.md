@@ -18,12 +18,12 @@ O gerenciamento de públicos-alvo criados anteriormente permite:
 * **Agendar ou cancelar o agendamento** de atualização automática de público-alvo. A expiração máxima na programação é de 1 ano.
 * **Renovar um cronograma de atualização de público** quando estiver prestes a expirar. Públicos que estão prestes a expirar são tratados de forma semelhante aos relatórios agendados que se encontram na mesma situação: o administrador recebe um email um mês antes da expiração programada.
 * Visualize o **intervalo de atualização** e a **última vez que um público foi atualizado**
-* Obter informações sobre o **tempo necessário para produzir um público-alvo** do Customer Journey Analytics e o tempo necessário para que o público-alvo fosse exibido no Perfil do cliente em tempo real para fins de ativação.
-* Veja se os públicos-alvo no Customer Journey Analytics são **sendo usado ativamente pelo Perfil do cliente em tempo real** ou (idealmente) qualquer aplicativo Experience Platform que consuma os públicos-alvo criados pelo Customer Journey Analytics.
+* Obter informações sobre o **tempo necessário para produzir um público-alvo** a partir do Customer Journey Analytics e o tempo necessário para que o público-alvo apareça no Perfil do cliente em tempo real para fins de ativação.
+* Veja se os públicos-alvo no Customer Journey Analytics estão **sendo usados ativamente pelo Perfil de cliente em tempo real** ou (idealmente) por aplicativos Experience Platform que consomem os públicos-alvo criados pelo Customer Journey Analytics.
 
 ## Interface do usuário de gerenciamento
 
-![Painel da janela Públicos mostrando vários filtros.](assets/manage.png)
+![Painel da janela Públicos-alvo mostrando vários filtros.](assets/manage.png)
 
 | Configuração da interface do usuário | Definição |
 | --- | --- |

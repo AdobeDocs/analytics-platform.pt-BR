@@ -44,7 +44,7 @@ Todos os projetos no Analysis Workspace são salvos automaticamente a cada 2 min
 
    1. Acesse a pastas [!UICONTROL **Projetos recuperados**] na página de destino do Analysis Workspace.
 
-      ![A lista de pastas que destaca a pasta Projeto recuperado.](assets/recovered-folder.png)
+      ![A lista de pastas que destaca a pasta de Projetos Recuperados.](assets/recovered-folder.png)
 
    1. Abra o projeto e salve-o no local desejado.
 

@@ -5,8 +5,8 @@ feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
 source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 18%
+source-wordcount: '238'
+ht-degree: 14%
 
 ---
 
@@ -16,7 +16,7 @@ No Gerenciador de métrica calculada, os administradores podem configurar um flu
 
 >[!NOTE]
 >
->Os administradores também podem aprovar métricas calculadas (e outros componentes) a partir do dicionário de dados, conforme descrito em [Editar entradas de componentes no Dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+>Os administradores também podem aprovar métricas calculadas (e outros componentes) do Dicionário de Dados, conforme descrito em [Editar entradas de componentes no Dicionário de Dados](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 >
 >Todas as métricas calculadas aprovadas no Dicionário de dados são refletidas no gerenciador de Métricas calculadas. Da mesma forma, as métricas aprovadas no Gerenciador de métricas calculadas são refletidas no Dicionário de dados.
 
@@ -26,7 +26,7 @@ Para marcar métricas calculadas como aprovadas:
 
 1. No Gerenciador de métricas calculadas, marque a caixa de seleção à esquerda de qualquer métrica que você deseja marcar como aprovada.
 
-1. Selecionar **[!UICONTROL Aprovar]** na tarefa de gerenciamento na parte superior da página.
+1. Selecione **[!UICONTROL Aprovar]** na tarefa de gerenciamento na parte superior da página.
 
    Para remover uma métrica da lista de métricas aprovadas, selecione **[!UICONTROL Cancelar aprovação]**.
 
@@ -34,6 +34,6 @@ Para marcar métricas calculadas como aprovadas:
 
 1. Clique em **[!UICONTROL OK]**.
 
-   Observe o ícone de aprovação ao lado da métrica calculada:  ![Marca de seleção do ícone de aprovação em um círculo.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
+   Observe o ícone de aprovação ao lado da métrica calculada: ![Marca de seleção de ícone de aprovação em um círculo.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_CheckmarkCircle_18_N.svg)
 
-1. (Opcional) Para filtrar a lista de métricas calculadas no Gerenciador de métricas calculadas para mostrar apenas as métricas aprovadas, selecione a variável **Filtro** ícone, expandir **[!UICONTROL Outros filtros]** e selecione **[!UICONTROL Aprovado]**.
+1. (Opcional) Para filtrar a lista de métricas calculadas no gerenciador de métricas calculadas para mostrar apenas as métricas aprovadas, selecione o ícone **Filtro**, expanda **[!UICONTROL Outros filtros]** e selecione **[!UICONTROL Aprovado]**.

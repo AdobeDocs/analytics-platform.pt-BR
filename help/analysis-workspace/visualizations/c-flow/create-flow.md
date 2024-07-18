@@ -7,27 +7,27 @@ role: User
 source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
 workflow-type: tm+mt
 source-wordcount: '1595'
-ht-degree: 56%
+ht-degree: 80%
 
 ---
 
 # Configurar uma visualização de fluxo
 
-As Visualizações de fluxo ajudam você a entender a jornada decorrente ou que leva a um evento de conversão específico em seu site ou aplicativo. Ela rastreia um caminho pelas suas dimensões (e itens de dimensão) ou métricas.
+As visualizações de fluxo permitem entender a jornada decorrente ou que leva a um evento de conversão específico em seu site ou aplicativo. Elas rastreiam um caminho pelas suas dimensões (e itens de dimensão) ou métricas. 
 
-As visualizações de fluxo permitem configurar o início ou o fim do caminho em que você está interessado ou analisar todos os caminhos que fluem por uma dimensão ou item de dimensão.
+As visualizações de fluxo permitem definir o início ou o fim do caminho no qual você possui interesse ou analisar todos os caminhos que levam a uma dimensão ou item de dimensão.
 
-![A tela Configuração de fluxo mostrando os campos Começa com, Contém e Termina com.](assets/new-flow.png)
+![A tela de configuração do Fluxo mostrando os campos Começa com, Contém e Termina com.](assets/new-flow.png)
 
 ## Criar uma visualização de fluxo {#configure}
 
-1. Adicione um painel em branco ao projeto, selecione o ícone Visualizações no painel à esquerda e arraste o [!UICONTROL **Fluxo**] no painel.
+1. Adicione um painel em branco ao projeto, selecione o ícone Visualizações no painel à esquerda e arraste a visualização [!UICONTROL **Fluxo**] para o painel.
 
    Ou
 
-   Adicione uma visualização de qualquer uma das maneiras descritas na seção &quot;Adicionar visualizações a um painel&quot; no [Visão geral das visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+   Adicione uma visualização utilizando os métodos descritos na seção “Adicionar visualizações a um painel” em [Visão geral das visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
-1. Ancore a visualização de Fluxo usando uma das seguintes opções:
+1. Crie uma âncora para a visualização de fluxo usando uma das seguintes opções:
 
    * [!UICONTROL **Começa com**] (métricas, dimensões ou itens) ou
    * [!UICONTROL **Contém**] (dimensões ou itens), ou
@@ -37,15 +37,15 @@ As visualizações de fluxo permitem configurar o início ou o fim do caminho em
 
    * Use o menu suspenso para selecionar métricas ou dimensões.
    * Arraste dimensões ou métricas do painel esquerdo.
-   * Comece digitando o nome de uma dimensão ou métrica e selecione-a quando ela aparecer na lista suspensa.
+   * Comece a digitar o nome de uma dimensão ou métrica e selecione-a quando aparecer na lista suspensa.
 
    >[!IMPORTANT]
    >
-   >Métricas calculadas não podem ser usadas na variável  **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]** campos.
+   >As métricas calculadas não podem ser usadas nos campos **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]**.
 
-1. Se você escolher uma métrica, também precisará fornecer uma [!UICONTROL **Definição de caminho do Dimension**] para usar como o caminho conduzindo ou saindo do componente selecionado, como mostrado aqui. O padrão é [!UICONTROL **Página**].
+1. Se você escolher uma métrica, também precisará fornecer um [!UICONTROL **Dimension de definição de caminho**] para usar como caminho conduzindo ou saindo do componente selecionado, conforme mostrado aqui. O padrão é [!UICONTROL **Página**].
 
-   ![A dimensão Definição de caminho.](assets/pathing-dim.png)
+   ![A dimensão de Definição de Caminho.](assets/pathing-dim.png)
 
 1. (Opcional) Selecione **[!UICONTROL Mostrar configurações avançadas]** para configurar qualquer uma das seguintes opções:
 
@@ -55,32 +55,32 @@ As visualizações de fluxo permitem configurar o início ou o fim do caminho em
    | --- | --- |
    | **[!UICONTROL Rótulos de quebra de linha]** | Normalmente, os rótulos nos Elementos de fluxo são truncados para não poluir visualmente a tela, mas é possível tornar todos os rótulos visíveis ao selecionar esta caixa.  Padrão = desmarcado. |
    | **[!UICONTROL Incluir instâncias repetidas]** | As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas, por exemplo, recarregamentos de página. No entanto, as repetições não podem ser removidas das Visualizações de fluxo que incluem dimensões com vários valores, como listVars, listProps, s.product, eVars de merchandising etc. <p>Essa opção está desabilitada por padrão.</p> |
-   | **[!UICONTROL Limite para a primeira/última ocorrência]** | Limite os caminhos para aqueles que começam/terminam com a primeira/última ocorrência de uma dimensão/item/métrica. Consulte a seção abaixo, [Exemplo de cenário para &quot;limitar à primeira/última ocorrência&quot;](#example-scenario-for-limit-to-firstlast-occurrence), para obter uma explicação mais detalhada. |
-   | **[!UICONTROL Número de colunas]** | O número de colunas desejado no diagrama de Fluxo. Você pode especificar no máximo 5 colunas. |
-   | **[!UICONTROL Itens expandidos por coluna]** | O número de itens desejado em cada coluna. É possível especificar no máximo 10 itens expandidos por coluna. |
+   | **[!UICONTROL Limitar à primeira/última ocorrência]** | Limite os caminhos para aqueles que começam/terminam com a primeira/última ocorrência de uma dimensão/item/métrica. Consulte a seção [Exemplo de cenário da opção “Limitar à primeira/última ocorrência”](#example-scenario-for-limit-to-firstlast-occurrence) abaixo para obter uma explicação mais detalhada. |
+   | **[!UICONTROL Número de colunas]** | O número de colunas que você deseja no diagrama de fluxo. É possível especificar um máximo de cinco colunas. |
+   | **[!UICONTROL Itens expandidos por coluna]** | O número de itens que você deseja em cada coluna. É possível especificar no máximo 10 itens expandidos por coluna. |
    | **[!UICONTROL Container de fluxo]** | <ul><li>Visita</li><li>Visitante</li></ul> Permite alternar entre Visita e Visitante para analisar a definição do caminho do visitante. Essas configurações ajudam você a entender o envolvimento no nível dos visitantes (ao longo das visitas) ou restringir a análise a uma só visita. |
 
    >[!IMPORTANT]
    >
-   >A combinação de **[!UICONTROL Número de colunas]** e **[!UICONTROL Itens expandidos por coluna]** determine o número de solicitações subjacentes necessárias para criar a visualização de fluxo. Quanto mais altos esses números, mais tempo leva para renderizar uma visualização.
+   >A combinação de **[!UICONTROL Número de colunas]** e **[!UICONTROL Itens expandidos por coluna]** determina o número de solicitações subjacentes necessárias para criar a visualização de fluxo. Quanto mais altos esses números, mais tempo leva para renderizar uma visualização.
 
 
-1. Selecionar **[!UICONTROL Build]**.
+1. Selecione **[!UICONTROL Criar]**.
 
 >[!INFO]
 >
->**Exemplo:** Suponha que você queira rastrear o caminho que os usuários tomaram para e das páginas mais populares do site.
+>**Exemplo:** suponha que você queira rastrear o caminho que os usuários percorreram para entrar e sair das páginas mais populares do site.
 >
->Para fazer isso, você
+>Para fazer isso, você precisa
 >
->1. Comece a criar uma visualização de fluxo conforme descrito acima.
->1. Arraste o [!UICONTROL **Página**] dimensão na **[!UICONTROL Contém]** e selecione [!UICONTROL **Build**].
->1. A visualização de Fluxo é criada com a página mais visualizada visível no nó de foco no centro da visualização. Você também pode ver as principais páginas que entram nessa página (à esquerda do nó de foco), bem como as principais páginas que saem dessa página de foco (à direita do nó de foco).
->1. Analise os dados no fluxo, conforme descrito em [Exibir e alterar a saída do Fluxo](#view-and-change-the-flow-output).
+>1. Criar uma visualização de fluxo conforme descrito acima.
+>1. Arraste a dimensão [!UICONTROL **Página**] para o campo **[!UICONTROL Contém]** e selecione [!UICONTROL **Criar**].
+>1. A visualização de fluxo é criada com a página mais exibida visível no nó de foco no centro da visualização. Você também pode ver as principais páginas que levam a essa página (à esquerda do nó de foco), bem como as principais páginas de saída dessa página de foco (à direita do nó de foco).
+>1. Analise os dados no fluxo, conforme descrito em [Visualizar e alterar a saída do fluxo](#view-and-change-the-flow-output).
 
 ## Exibir e alterar a saída do fluxo {#output}
 
-![Exemplo de saída de fluxo mostrando Termina com visitas, Dimensão de definição de caminho: Página e Contêiner de fluxo: Visitantes.](assets/flow-output.png)
+![Exemplo de saída de fluxo mostrando Termina com Visitas, Dimensão de definição de caminho: Página e Contêiner de fluxo: Visitantes.](assets/flow-output.png)
 
 Um resumo da configuração de fluxo é exibido na parte superior do diagrama. Os caminhos no diagrama são proporcionais. Caminhos com maior atividade aparecem mais grossos.
 
@@ -100,7 +100,7 @@ Para detalhar ainda mais os dados, você tem várias opções:
 
 * Clique no ícone de lápis ao lado do resumo da configuração para editar ainda mais o fluxo ou recriá-lo com opções diferentes.
 
-* Além disso, é possível exportar e analisar posteriormente o diagrama de Fluxo como parte de um arquivo .CSV de um projeto. Basta ir até **[!UICONTROL Projeto]** > **[!UICONTROL Baixar CSV]**.
+* Além disso, é possível exportar e analisar posteriormente o diagrama de fluxo como parte de um arquivo .CSV de um projeto. Basta ir até **[!UICONTROL Projeto]** > **[!UICONTROL Baixar CSV]**.
 
 ## Filtragem
 
@@ -117,7 +117,7 @@ Acima de cada coluna, um filtro é exibido quando você passa o mouse sobre ele.
 | Opção | Descrição |
 |--- |--- |
 | [!UICONTROL Concentre-se neste nó] | Altere o foco para o nó selecionado. O nó de foco é exibido no centro do diagrama de fluxo. |
-| [!UICONTROL Recomeçar] | Retomar ao criador de diagrama de Forma livre, no qual você pode criar um novo diagrama de Fluxo. |
+| [!UICONTROL Começar de novo] | Retorna ao criador de diagrama de forma livre, no qual é possível criar um novo diagrama de fluxo. |
 | [!UICONTROL Criar filtro para este caminho] | Criar um filtro. Isso leva você ao Construtor de filtros, onde é possível configurar o novo filtro. |
 | [!UICONTROL Detalhamento] | Detalhe o nó por Dimensões, Métricas ou Tempo disponíveis. |
 | [!UICONTROL Filtrar coluna] | As mesmas opções de filtro são exibidas conforme disponíveis na tabela de Forma livre. Para obter mais informações sobre as opções disponíveis, consulte a seção &quot;Aplicar um filtro simples ou avançado a uma tabela&quot; em [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
@@ -136,7 +136,7 @@ Ao usar essa opção, lembre-se de que:
 * **[!UICONTROL Limitar à primeira/última ocorrência]** conta somente a primeira/última ocorrências na série. Todas as outras ocorrências dos critérios **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]** são descartados.
 * Se usada com um fluxo **[!UICONTROL Começa com]**, somente a primeira ocorrência que corresponde aos critérios de início é incluída.
 * Se usada com um fluxo **[!UICONTROL Termina com]**, somente a última ocorrência que corresponde aos critérios finais será incluída.
-* As séries utilizadas diferem de acordo com o container. Se estiver usando o **[!UICONTROL Visita]** contêiner, a série de eventos será a sessão. Se estiver usando o **[!UICONTROL Visitante]** , a série de eventos será todos os eventos para um determinado usuário no intervalo de datas fornecido.
+* As séries utilizadas diferem de acordo com o container. Se estiver usando o contêiner **[!UICONTROL Visita]**, a série de eventos será a sessão. Se estiver usando o contêiner **[!UICONTROL Visitante]**, a série de eventos será todos os eventos de um determinado usuário no intervalo de datas fornecido.
 * A opção **[!UICONTROL Limitar à primeira/última ocorrência]** pode ser definida nas configurações avançadas ao usar uma Métrica ou Item de dimensão nos campos “Inicia com” ou “Termina com”.
 
 Exemplo de série de eventos:
@@ -164,7 +164,7 @@ Saída de fluxo esperada:
 * Dimensão da definição de caminho de [!UICONTROL Página]
 * Container de [!UICONTROL Visita]
 
-Se **[!UICONTROL Limite para a primeira/última ocorrência]** é *desabilitado*, essa única série de eventos contaria duas ocorrências de &quot;Adicionar ao carrinho&quot;.
+Se a opção **[!UICONTROL Limitar à primeira/última ocorrência]** estiver *desabilitada*, essa única série de eventos contará duas ocorrências de &quot;Adicionar ao carrinho&quot;.
 Saída de fluxo esperada:
 “Produtos” (2) &lt;— “Adicionar ao carrinho” (2)
 

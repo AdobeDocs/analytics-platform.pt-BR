@@ -19,10 +19,10 @@ A visualização de Venn permite arrastar até três filtros (de componentes) e 
 
 É possível passar o mouse sobre os filtros para saber mais sobre as porcentagens, etc.
 
-![Visualização de Venn com informações expandidas sobre o filtro para Participantes do último trimestre de 2015.](assets/venn_hover.png)
+![Visualização de Venn com informações expandidas sobre o filtro para Participantes do Outdoor Fall 2015.](assets/venn_hover.png)
 
 Para transformar o diagrama Venn em uma tabela de forma livre, clique no ponto colorido ao lado do cabeçalho **[!UICONTROL Venn]** e selecione **[!UICONTROL Gerenciar fontes de dados]** > **[!UICONTROL Fontes de dados disponíveis]** > **[!UICONTROL Tabela de forma livre]**.
 
 Para normalizar o diagrama de Venn (extrair o tamanho), vá até o ícone Configurações de visualização e selecione **[!UICONTROL Normalização]**.
 
-![Opção de Configurações de visualização para o Tipo de visualização: diagrama Venn.](assets/normalization.png)
+![Opção de Configurações de Visualização para o tipo de Visualização: diagrama Venn.](assets/normalization.png)

@@ -19,7 +19,7 @@ Você pode adicionar texto definido pelo usuário ao projeto do Workspace usando
 
 Ao editar sua caixa de texto ou descrição, você pode ajustar o tamanho da fonte (níveis de cabeçalho), a cor, o estilo (negrito, itálico, sublinhado) e o alinhamento do texto selecionado. Você também pode adicionar listas numeradas e com marcadores.
 
-![Opções de texto para um projeto do Workspace destacando a paleta de cores do texto.](assets/format.png)
+![Opções de texto para um projeto do Workspace destacando a paleta de cores de texto.](assets/format.png)
 
 ## Adicionar hyperlinks {#hyperlinks}
 

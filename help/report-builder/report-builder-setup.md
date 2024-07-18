@@ -76,7 +76,7 @@ Entre em contato com a equipe de TI ou de segurança para solicitar aprovação 
 
 Depois de instalar o Suplemento Report Builder, o ícone de Report Builder é exibido na faixa de opções da guia Página inicial, do Excel.
 
-![O ícone Report Builder no Excel](./assets/rb_app_icon.png)
+![O ícone de Report Builder no Excel](./assets/rb_app_icon.png)
 
 ## Fazer logon no Report Builder
 
@@ -88,11 +88,11 @@ Depois de instalar o Suplemento Report Builder for Excel na sua plataforma opera
 
 1. Na barra de ferramentas do Adobe Report Builder, clique em **Logon**.
 
-   ![Clique no botão Report Builder login.](./assets/rb_login.png)
+   ![Clique no botão de logon do Report Builder.](./assets/rb_login.png)
 
 1. Insira as informações da conta de ID da Adobe Experience. As informações da sua conta devem corresponder às suas credenciais do Customer Journey Analytics.
 
-   ![Seu ícone de logon e a organização.](./assets/image4.png)
+   ![Seu ícone e organização de logon.](./assets/image4.png)
 
 Depois de fazer logon, o ícone de logon e a organização aparecerão na parte superior do painel
 

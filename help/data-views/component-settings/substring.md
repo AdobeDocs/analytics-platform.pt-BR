@@ -22,7 +22,7 @@ As configurações do componente [!UICONTROL Substring] permitem executar métod
 
 ## Da esquerda/direita
 
-Pegue uma parte de uma string com base em sua posição no início ou no fim de uma string. **[!UICONTROL Da esquerda]** e **[!UICONTROL Da direita]** Os métodos do fornecem duas listas suspensas: **[!UICONTROL De]** (onde a saída começa) e **[!UICONTROL Para]** (onde a saída termina).
+Pegue uma parte de uma string com base em sua posição no início ou no fim de uma string. Os métodos **[!UICONTROL Da Esquerda]** e **[!UICONTROL Da Direita]** fornecem duas listas suspensas: **[!UICONTROL De]** (em que a saída começa) e **[!UICONTROL Para]** (em que a saída termina).
 
 * **[!UICONTROL Início da string]**: o início da string.
 * **[!UICONTROL Fim da string]**: o fim da string.
@@ -31,7 +31,7 @@ Pegue uma parte de uma string com base em sua posição no início ou no fim de 
    * **[!UICONTROL Corresponder]**: a string que será correspondida. Se a entrada não tiver correspondência com esse campo, [Nenhuma opção de valor](no-value-options.md) será aplicada.
    * **[!UICONTROL Índice]**: o critério **[!UICONTROL Corresponder]** pode ser apresentado várias vezes em uma string. Esse número inteiro determina qual correspondência deve iniciar ou finalizar a saída, dependendo do método. Por exemplo, um índice de `1` representa a primeira correspondência. Se o índice for superior ao número de correspondências disponíveis, [Nenhuma opção de valor](no-value-options.md) será aplicada.
    * **[!UICONTROL Incluir string]**: uma caixa de seleção que inclui a string **[!UICONTROL Corresponder]** na saída, se ativada.
-* **[!UICONTROL Comprimento]**: um número inteiro que especifica a contagem de caracteres a ser incluída após a posição inicial da saída. Disponível somente sob o **[!UICONTROL Para]** lista suspensa.
+* **[!UICONTROL Comprimento]**: um número inteiro que especifica a contagem de caracteres a ser incluída após a posição inicial da saída. Disponível somente na lista suspensa **[!UICONTROL Para]**.
 
 ## Delimitador
 

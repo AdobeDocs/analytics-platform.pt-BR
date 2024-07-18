@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # Grades de Proteção do Customer Journey Analytics
 
-Este documento fornece limites para vários componentes do Customer Journey Analytics. Para Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte o [Descrição de produto do Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) ou o [Descrição de produto do complemento Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+Este documento fornece limites para vários componentes do Customer Journey Analytics. Para Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) ou a [Descrição do Produto para o Complemento Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
 
 ## Tipos de limite
 
@@ -22,8 +22,8 @@ Há dois tipos de limites padrão neste documento:
 
 | Tipo de grade de proteção | Descrição |
 |----------|---------|
-| **Proteções de desempenho (limite flexível)** | As Medidas de proteção de desempenho são limites de uso relacionados ao escopo dos seus casos de uso. Ao exceder as medidas de proteção de desempenho, você pode enfrentar degradação e latência do desempenho. O Adobe não é responsável por essa degradação de desempenho. Os clientes que excederem consistentemente uma Garantia de desempenho podem optar por licenciar capacidade adicional para evitar a degradação do desempenho. |
-| **Proteções aplicadas pelo sistema (limite rígido)** | As medidas de proteção aplicadas pelo sistema são aplicadas pela interface do usuário ou API do Customer Journey Analytics. Esses são limites que você não pode exceder, pois a interface do usuário e a API o impedem de fazer isso ou retornam um erro. |
+| **Medidas de Proteção de Desempenho (limite flexível)** | As Medidas de proteção de desempenho são limites de uso relacionados ao escopo dos seus casos de uso. Ao exceder as medidas de proteção de desempenho, você pode enfrentar degradação e latência do desempenho. O Adobe não é responsável por essa degradação de desempenho. Os clientes que excederem consistentemente uma Garantia de desempenho podem optar por licenciar capacidade adicional para evitar a degradação do desempenho. |
+| **Medidas de Proteção aplicadas pelo sistema (limite rígido)** | As medidas de proteção aplicadas pelo sistema são aplicadas pela interface do usuário ou API do Customer Journey Analytics. Esses são limites que você não pode exceder, pois a interface do usuário e a API o impedem de fazer isso ou retornam um erro. |
 
 {style="table-layout:auto"}
 
@@ -72,9 +72,9 @@ Alguns dos recursos e seu valor associado para o limite dependem do Pacote de Cu
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Filtros de público-alvo | 20 | Proteção imposta pelo sistema | Número máximo de [filtros](../components/filters/filters-overview.md) por público. |
+| Filtros de público-alvo | 20 | Proteção imposta pelo sistema | Número máximo de [filtros](../components/filters/filters-overview.md) por público-alvo. |
 | Número de identidades de público-alvo | 20 milhões | Proteção imposta pelo sistema | Número máximo de identidades por público-alvo. |
-| Frequência de atualização do público-alvo | 4 | Proteção imposta pelo sistema | Frequência máxima em horas e [público](../components/audiences/audiences-overview.md) pode ser atualizado. |
+| Frequência de atualização do público-alvo | 4 | Proteção imposta pelo sistema | A frequência máxima em horas que um [público-alvo](../components/audiences/audiences-overview.md) pode ser atualizado. |
 | Janela de pesquisa de atualização de público-alvo | 90 | Proteção imposta pelo sistema | Número máximo de dias para a janela de retrospectiva de atualização. |
 | Atualização da data de expiração do público-alvo | 13 | Proteção imposta pelo sistema | Número máximo de meses em que o público-alvo deixa de ser atualizado a partir da data de criação. Os clientes podem estender isso por mais 13 meses. |
 | Número de públicos-alvo atualizados | 75, 150 | Proteção imposta pelo sistema | Número máximo de públicos-alvo de atualização, o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
@@ -138,7 +138,7 @@ Consulte também Experience Platform [Medidas de proteção para a assimilação
 
 {style="table-layout:auto"}
 
-Consulte também Experience Platform [Proteções de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
+Consulte também Experience Platform [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
 
 
 ## Zona de aterrissagem de dados
@@ -203,7 +203,7 @@ Consulte também Experience Platform [Proteções de exportação do conjunto de
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
 | Tamanho do arquivo da pasta de trabalho | 5 | Proteção imposta pelo sistema | Tamanho máximo de arquivo em MB de uma pasta de trabalho agendada. |
-| Blocos de dados | 1000 | Proteção imposta pelo sistema | Número máximo de [blocos de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=pt-BR) por pasta de trabalho |
+| Blocos de dados | 1000 | Proteção imposta pelo sistema | Número máximo de [blocos de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/manage-reportbuilder.html?lang=pt-BR) por pasta de trabalho. |
 | Métricas | 20 | Proteção imposta pelo sistema | Número máximo de métricas por bloco de dados. |
 | Intervalo de datas | 13 | Proteção imposta pelo sistema | Número máximo de meses que um intervalo de datas pode abranger por bloco de dados. |
 | Linhas | 50.000 | Proteção imposta pelo sistema | Número máximo de linhas por bloco de dados. |
@@ -226,7 +226,7 @@ Consulte também Experience Platform [Proteções de exportação do conjunto de
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato de Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte Experience Platform [Medidas de proteção para a assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) para obter mais informações.
+>Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato de Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte Experience Platform [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|
@@ -239,6 +239,6 @@ Consulte também Experience Platform [Proteções de exportação do conjunto de
 | Costura (recurso opcional; consulte [Visão geral da compilação](../stitching/overview.md) para obter mais informações) | &lt; 3,25 horas |
 | Preenchimento retroativo do Adobe Analytics Source Connector de menos de 10 bilhões de eventos (máximo de 13 meses de dados históricos) | &lt; 4 semanas |
 | Publicação de público-alvo no perfil do cliente em tempo real, incluindo a criação automática do segmento de transmissão e permitindo que o segmento esteja pronto para receber os dados. | aprox. 60 minutos |
-| Frequência de atualização para públicos | Atualização única: latência inferior a 5 minutos.<br/>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização). |
+| Frequência de atualização para públicos | Atualização única: latência inferior a 5 minutos.<br/>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência é indissociável da taxa de atualização). |
 
 {style="table-layout:auto"}

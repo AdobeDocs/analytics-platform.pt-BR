@@ -30,7 +30,7 @@ A [!UICONTROL Análise de coorte] está disponível a todos os clientes do Custo
 
 >[!IMPORTANT]
 >
->[!UICONTROL Análise de coorte] não aceita métricas não filtráveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em filtros podem ser usadas na [!UICONTROL Análise de coorte], e só podem ser aumentados 1 de cada vez.
+>A [!UICONTROL Análise de coorte] não dá suporte a métricas não filtráveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em filtros podem ser usadas na [!UICONTROL Análise de coorte], e só podem ser aumentadas 1 de cada vez.
 
 ## Recursos da análise de coorte
 
@@ -38,13 +38,13 @@ Os seguintes recursos permitem o controle ajustado dos coortes que você está c
 
 ### Tabela de [!UICONTROL retenção]
 
-A [!UICONTROL Retenção] o relatório de coorte retorna pessoas: cada célula de dados mostra o número bruto e a porcentagem de pessoas na coorte que realizaram a ação durante esse período. É possível incluir até 3 métricas e 10 filtros.
+Um relatório de coorte de [!UICONTROL Retenção] retorna pessoas: cada célula de dados mostra o número bruto e a porcentagem de pessoas na coorte que realizaram a ação durante esse período. É possível incluir até 3 métricas e 10 filtros.
 
 ![Um relatório de coorte de representação que mostra as unidades e a porcentagem de pessoas na coorte.](assets/retention-report.png)
 
 ### [!UICONTROL Tabela de abandono]
 
-A [!UICONTROL Churn] a coorte é o inverso da tabela de retenção e mostra as pessoas que abandonaram ou que nunca atenderam aos critérios de retorno da sua coorte ao longo do tempo. É possível incluir até 3 métricas e 10 filtros.
+A coorte [!UICONTROL Churn] é o inverso da tabela de retenção e mostra as pessoas que abandonaram ou que nunca atenderam aos critérios de retorno da sua coorte ao longo do tempo. É possível incluir até 3 métricas e 10 filtros.
 
 ![Uma tabela de churn mostrando unidades e porcentagem de pessoas que não atenderam aos critérios de retorno para uma coorte.](assets/churn-report.png)
 
@@ -52,7 +52,7 @@ A [!UICONTROL Churn] a coorte é o inverso da tabela de retenção e mostra as p
 
 Permite calcular a retenção ou o abandono com base na coluna anterior em vez da coluna incluída.
 
-![Um relatório de Retenção de coorte mostrando cálculos com base em uma coluna de dados anterior.](assets/cohort-rolling-calculation.png)
+![Um relatório de retenção de coorte mostrando cálculos com base em uma coluna de dados anterior.](assets/cohort-rolling-calculation.png)
 
 ### [!UICONTROL Tabela de latência]
 
@@ -64,6 +64,6 @@ Mede o tempo decorrido antes e depois da ocorrência do evento de inclusão. Ess
 
 Crie coortes com base em uma dimensão selecionada, em vez de coortes com base em tempo, que são o padrão. Use dimensões como [!UICONTROL canal de marketing], [!UICONTROL campanha], [!UICONTROL produto], [!UICONTROL página], [!UICONTROL região] ou qualquer outra dimensão no Customer Journey Analytics para mostrar como a retenção é alterada com base nos diferentes valores dessas dimensões.
 
-![Um relatório de Coorte que mostra um relatório personalizado com dimensões selecionadas, não a coorte baseada no tempo padrão.](assets/cohort-customizable-cohort-row.png)
+![Um relatório de Coorte que mostra um relatório personalizado com dimensões selecionadas, não a coorte baseada em tempo padrão.](assets/cohort-customizable-cohort-row.png)
 
 Para obter instruções sobre como configurar e executar um relatório de coorte, acesse [Configurar um relatório de análise de coorte](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).

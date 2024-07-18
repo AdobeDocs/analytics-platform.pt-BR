@@ -16,7 +16,7 @@ ht-degree: 97%
 
 Valores de inclusão e exclusão permitem criar regras que dependem do valor de um item de dimensão. Valores que não atendem aos critérios definidos são tratados no Analysis Workspace como se nunca houvessem existido, embora os dados ainda existam no conjunto de dados subjacente.
 
-![Janela Visualizações de dados destacando os valores de exclusão de Inclusão](../assets/include-exclude.png)
+![Janela de visualizações de dados destacando os valores de exclusão de Inclusão](../assets/include-exclude.png)
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |

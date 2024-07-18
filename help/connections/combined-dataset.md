@@ -17,8 +17,8 @@ ht-degree: 35%
 
 Ao criar uma conexão, o Customer Journey Analytics combina todos os conjuntos de dados de eventos em um único conjunto de dados. Esse conjunto de dados combinados de eventos é o que o Customer Journey Analytics usa para os relatórios (juntamente com conjuntos de dados de perfil e pesquisa). Ao incluir vários conjuntos de dados de eventos em uma conexão:
 
-* Os dados para campos em conjuntos de dados com base na variável **mesmo caminho de esquema** são mesclados em uma única coluna no conjunto de dados combinado.
-* A coluna ID de pessoa, especificada para cada conjunto de dados, é mesclada em uma única coluna no conjunto de dados combinado, **independentemente do nome**. Essa coluna é a base para identificar pessoas únicas no Customer Journey Analytics.
+* Os dados de campos em conjuntos de dados baseados no **mesmo caminho de esquema** são mesclados em uma única coluna no conjunto de dados combinado.
+* A coluna de ID de pessoa, especificada para cada conjunto de dados, é mesclada em uma única coluna no conjunto de dados combinado, **independentemente do nome**. Essa coluna é a base para identificar pessoas únicas no Customer Journey Analytics.
 * As linhas são processadas com base no carimbo de data e hora.
 * Os eventos são resolvidos até o nível de milissegundo.
 
@@ -64,7 +64,7 @@ o conjunto de dados combinado a seguir é usado para os relatórios.
 | `alternateid_656` | `2 Jan 8:58 PM` | `Red` | | `Square` | | `4.2` |
 | `alternateid_656` | `2 Jan 9:03 PM` | | | `Triangle` | | `3.1` |
 
-Para ilustrar a importância dos caminhos de esquema, considere este cenário. No primeiro conjunto de dados, `string_color` é baseado no caminho do esquema `_experience.whatever.string_color` e no segundo conjunto de dados no caminho do esquema  `_experience.somethingelse.string_color`. Nesse cenário, os dados são **não** mesclado em uma coluna no conjunto de dados combinado resultante. Em vez disso, o resultado é dois `string_color` no conjunto de dados combinado.
+Para ilustrar a importância dos caminhos de esquema, considere este cenário. No primeiro conjunto de dados, `string_color` é baseado no caminho de esquema `_experience.whatever.string_color` e no segundo conjunto de dados no caminho de esquema `_experience.somethingelse.string_color`. Neste cenário, os dados são **não** mesclados em uma coluna no conjunto de dados combinado resultante. Em vez disso, o resultado é duas colunas `string_color` no conjunto de dados combinado.
 
 Esse conjunto de dados combinados de eventos é o que é usado nos relatórios. Não importa de que conjunto de dados uma linha é derivada. O Customer Journey Analytics trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados a mesma pessoa única. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão. Os campos com caminhos de esquema idênticos são mesclados.
 
@@ -88,7 +88,7 @@ No entanto, se você incluiu ambas as tabelas em sua conexão, a atribuição se
 
 >[!NOTE]
 >
->Se um campo mesclado for uma chave de pesquisa para um conjunto de dados de evento na conexão, o conjunto de dados de pesquisa associado será enriquecido **all** valores desse campo. Não importa de que conjunto de dados de evento uma linha é derivada, pois a relação de pesquisa está associada ao caminho de esquema compartilhado.
+>Se um campo mesclado for uma chave de pesquisa para um conjunto de dados de evento na conexão, o conjunto de dados de pesquisa associado enriquecerá **todos** valores desse campo. Não importa de que conjunto de dados de evento uma linha é derivada, pois a relação de pesquisa está associada ao caminho de esquema compartilhado.
 
 ## Análise entre canais
 
