@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 8fe3fb966f559aa12f3203e02a1766436e45a24a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3172'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ O novo fluxo de trabalho permite adicionar um conjunto de dados da Experience Pl
 
 1. Na caixa de diálogo Configurações de conexão, clique em **[!UICONTROL Adicionar conjuntos de dados]**.
 
-1. Na etapa [!UICONTROL Selecionar conjuntos de dados], você verá uma lista dos conjuntos de dados do Experience Platform.
+1. Na etapa [!UICONTROL Selecionar conjuntos de dados], você verá uma lista dos conjuntos de dados da Experience Platform.
 
    ![Selecionar conjuntos de dados](assets/select-datasets.png)
 
@@ -80,16 +80,16 @@ O novo fluxo de trabalho permite adicionar um conjunto de dados da Experience Pl
 
    | Coluna | Descrição |
    |---|---|
-   | Conjunto de dados | Nome do conjunto de dados. Selecione o nome para direcioná-lo ao conjunto de dados no Experience Platform. Selecione ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para exibir um pop-up com mais detalhes para o conjunto de dados. No pop-up, você pode selecionar **[!UICONTROL Editar na Plataforma]** para editar o conjunto de dados diretamente no Experience Platform. |
-   | Tipo de conjunto de dados | O tipo de conjunto de dados: Evento, Perfil ou Pesquisa. |
-   | Número de registros | O total de registros no mês anterior do conjunto de dados no Experience Platform. |
-   | Esquema | O esquema no qual o conjunto de dados se baseia. Selecione o nome para direcioná-lo ao esquema no Experience Platform. |
-   | Último lote | O estado do último lote assimilado no Experience Platform. Consulte [Estados em lote](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) para obter mais informações. |
-   | ID do conjunto de dados | A ID do conjunto de dados. |
+   | Conjunto de dados | Nome do conjunto de dados. Selecione o nome para acessar o conjunto de dados na Experience Platform. Selecione ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para exibir uma janela pop-up com mais detalhes sobre o conjunto de dados. Na janela pop-up, você pode selecionar **[!UICONTROL Editar na Platform]** para editar o conjunto de dados diretamente na Experience Platform. |
+   | Tipo de conjunto de dados | O tipo de conjunto de dados: evento, perfil ou pesquisa. |
+   | Número de registros | O total de registros no mês anterior do conjunto de dados na Experience Platform. |
+   | Esquema | O esquema no qual o conjunto de dados se baseia. Selecione o nome para acessar o esquema na Experience Platform. |
+   | Último lote | O estado do último lote assimilado na Experience Platform. Consulte [Estados dos lotes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/batch/troubleshooting#batch-states) para mais informações. |
+   | ID do conjunto de dados | O ID do conjunto de dados. |
    | Última atualização | O carimbo de data e hora da última atualização do conjunto de dados. |
 
 
-1. Selecione um ou mais conjuntos de dados e selecione **[!UICONTROL Próximo]**. Pelo menos um conjunto de dados de evento deve fazer parte da conexão.
+1. Selecione um ou mais conjuntos de dados e clique em **[!UICONTROL Próximo]**. Pelo menos um conjunto de dados de evento deve fazer parte da conexão.
    * Para alterar as colunas exibidas para a lista de conjuntos de dados, selecione ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) e selecione as colunas a serem exibidas na caixa de diálogo [!UICONTROL Personalizar tabela].
    * Para pesquisar um conjunto de dados específico, use o campo ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
    * Para alternar entre mostrar ou ocultar os conjuntos de dados selecionados, clique em ![Selecionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Ocultar selecionados]** ou **[!UICONTROL Mostrar selecionados]**.
