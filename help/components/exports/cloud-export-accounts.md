@@ -5,10 +5,10 @@ title: Configurar contas de exportação na nuvem
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 9a0e6ed66a20eac1fa5f94efd378842a579826c0
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 30%
+source-wordcount: '1965'
+ht-degree: 29%
 
 ---
 
@@ -45,8 +45,6 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
    * As contas compartilhadas podem ser editadas somente pelo proprietário da conta.
 
    * Qualquer pessoa pode criar um local para a conta compartilhada.
-
-   **Observação:** esta funcionalidade está na fase de Teste Limitado da versão e pode não estar disponível ainda em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
 
 1. No campo [!UICONTROL **Tipo de conta**], selecione o tipo de conta de nuvem para a qual você está exportando. Os tipos de conta disponíveis são Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake e AEP Data Landing Zone.
 

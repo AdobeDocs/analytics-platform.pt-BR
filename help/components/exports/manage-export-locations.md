@@ -5,7 +5,7 @@ title: Gerenciar locais e contas de exportação da nuvem
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 9f3182ed33fc5ad537b05e9effbdd25caf4e87d7
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
 source-wordcount: '1370'
 ht-degree: 1%
@@ -147,8 +147,6 @@ Para exibir chaves associadas a uma conta de exportação:
 1. Selecione [!UICONTROL **Excluir**] novamente na caixa de diálogo de confirmação.
 
 ## Definir configurações em toda a empresa (somente administradores)
-
-{{release-limited-testing-section}}
 
 Os administradores do sistema podem impedir que os usuários criem contas e locais ou podem limitar os tipos de contas que os usuários podem criar e usar.
 

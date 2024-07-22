@@ -5,10 +5,10 @@ title: Configurar locais de exportação na nuvem
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 1bf36f60b0b3aec04bb1452e5f63f97051d9bb50
+source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 21%
+source-wordcount: '1888'
+ht-degree: 20%
 
 ---
 
@@ -43,7 +43,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 |—|—|
 | [!UICONTROL **Nome**] | O nome do local.  |
 | [!UICONTROL **Descrição**] | Forneça uma breve descrição da localização para ajudar a diferenciá-la de outros locais na conta. |
-| [!UICONTROL **Disponibilizar a localização a todos os usuários em sua organização**] | **Observação:** esta funcionalidade está na fase de Teste Limitado da versão e pode não estar disponível ainda em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Analytics, consulte [Versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md). <p>Habilite essa opção para permitir que outros usuários em sua organização usem o local.</p> <p>Considere o seguinte ao compartilhar locais:</p><ul><li>Os locais compartilhados não podem ter o compartilhamento cancelado.</li><li>Os locais compartilhados podem ser editados somente pelo proprietário do local.</li><li>Os locais podem ser compartilhados somente se a conta à qual o local está associado também for compartilhada.</li></ul> |
+| [!UICONTROL **Disponibilizar a localização a todos os usuários em sua organização**] | Habilite essa opção para permitir que outros usuários em sua organização usem o local. <p>Considere o seguinte ao compartilhar locais:</p><ul><li>Os locais compartilhados não podem ter o compartilhamento cancelado.</li><li>Os locais compartilhados podem ser editados somente pelo proprietário do local.</li><li>Os locais podem ser compartilhados somente se a conta à qual o local está associado também for compartilhada.</li></ul> |
 | [!UICONTROL **Conta da localização**] | Selecione a conta na qual deseja criar a localização. Para obter informações sobre como criar uma conta, consulte [Configurar contas de exportação na nuvem](/help/components/exports/cloud-export-accounts.md). |
 
 1. Na seção [!UICONTROL **Propriedades da localização**], insira as informações específicas ao tipo da sua conta de localização.
