@@ -4,10 +4,10 @@ title: Como configurar uma visualização de fluxo
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b196b8c05ba05a3f46d71c10fdcaa2ad8ef0dcd6
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 80%
+source-wordcount: '1594'
+ht-degree: 78%
 
 ---
 
@@ -43,7 +43,7 @@ As visualizações de fluxo permitem definir o início ou o fim do caminho no qu
    >
    >As métricas calculadas não podem ser usadas nos campos **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]**.
 
-1. Se você escolher uma métrica, também precisará fornecer um [!UICONTROL **Dimension de definição de caminho**] para usar como caminho conduzindo ou saindo do componente selecionado, conforme mostrado aqui. O padrão é [!UICONTROL **Página**].
+1. Se você escolher uma métrica, também precisará fornecer um [!UICONTROL **Dimension de definição de caminho**] para usar como caminho conduzindo ou vindo do componente selecionado, como mostrado aqui. O padrão é [!UICONTROL **Página**].
 
    ![A dimensão de Definição de Caminho.](assets/pathing-dim.png)
 
@@ -75,7 +75,7 @@ As visualizações de fluxo permitem definir o início ou o fim do caminho no qu
 >
 >1. Criar uma visualização de fluxo conforme descrito acima.
 >1. Arraste a dimensão [!UICONTROL **Página**] para o campo **[!UICONTROL Contém]** e selecione [!UICONTROL **Criar**].
->1. A visualização de fluxo é criada com a página mais exibida visível no nó de foco no centro da visualização. Você também pode ver as principais páginas que levam a essa página (à esquerda do nó de foco), bem como as principais páginas de saída dessa página de foco (à direita do nó de foco).
+>1. A visualização de fluxo é criada com a página mais exibida visível no nó de foco no centro da visualização. Você também pode ver as principais páginas que entram nessa página (à esquerda do nó de foco), bem como as principais páginas que saem dessa página (à direita do nó de foco).
 >1. Analise os dados no fluxo, conforme descrito em [Visualizar e alterar a saída do fluxo](#view-and-change-the-flow-output).
 
 ## Exibir e alterar a saída do fluxo {#output}
