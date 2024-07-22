@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: ca2387c2dd4c6c0ccdf6cec245c5d66ecea93bd5
+source-git-commit: f390789287721a777947093123f672e0a854540a
 workflow-type: tm+mt
-source-wordcount: '3817'
+source-wordcount: '3830'
 ht-degree: 12%
 
 ---
@@ -324,7 +324,8 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 
 Os seguintes pré-requisitos se aplicam especificamente à compilação baseada em gráfico:
 
-- O conjunto de dados de evento no Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter uma coluna que identifique um visitante em cada linha, a **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurements do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Adobe Experience Platform.
+- O conjunto de dados de evento no Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter uma coluna que identifique um visitante em cada linha, a **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurements Adobe Analytics ou uma ECID gerada pelo Serviço de identidade Experience Platform.
+- A ID persistente também deve ser [definida como uma identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) no esquema.
 - O gráfico de identidade do Experience Platform Identity Service deve ter um namespace (por exemplo, `Email` ou `Phone`) que você deseja usar durante a compilação para resolver a **ID transitória**. Consulte [Experience Platform Identity Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) para obter mais informações.
 
 >[!NOTE]
