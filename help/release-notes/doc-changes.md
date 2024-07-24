@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
+source-git-commit: cdab5d8b674527a1c3f950284daac65d0ab01900
 workflow-type: tm+mt
-source-wordcount: '3836'
-ht-degree: 73%
+source-wordcount: '3940'
+ht-degree: 71%
 
 ---
 
@@ -20,8 +20,9 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Julho de 2024** | |
+| Adição de informações sobre métricas calculadas rápidas | Atualização das informações em [Métricas](/help/components/apply-create-metrics.md) para esclarecer a diferença entre [métricas calculadas criadas no construtor de métricas calculadas](/help/components/apply-create-metrics.md#create-calculated-metrics-for-all-projects) e [as criadas como métricas calculadas rápidas em um único projeto](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). Também foram adicionados mais detalhes sobre como criar métricas calculadas rápidas.<p>As métricas calculadas criadas no construtor de métricas calculadas estão disponíveis na lista de componentes e podem ser aplicadas aos projetos em toda a organização, enquanto as métricas calculadas criadas como métricas calculadas rápidas estão disponíveis somente no projeto em que foram criadas.</p><p>Informações também atualizadas em [Criar métricas](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) para fazer esclarecimentos semelhantes.</p> |
 | Função de desduplicação de campo derivado | Adição de documentação sobre a função [deduplicate](/help/data-views/derived-fields/derived-fields.md#deduplicate) do campo derivado. |
-| Mensagens de erro comuns atualizadas | Pequenas atualizações feitas às [mensagens de erro comuns](/help/analysis-workspace/workspace-faq/error-messages.md). |
+| Mensagens de erro comuns atualizadas | Atualizações secundárias feitas nas [mensagens de erro comuns](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **Junho de 2024** | |
 | Atualização do nome do produto que se refere aos recursos de mídia de streaming | As instâncias do “Media Analytics” e de “Mídia de streaming” foram substituídas pelo nome “complemento Coleção de mídia de streaming” ao se referirem ao conjunto de recursos de mídia de streaming que coletam dados de mídia de streaming e os exibem no Analysis Workspace. <p>Essas atualizações estão disponíveis em toda a documentação do Customer Journey Analytics, bem como na [documentação do complemento Coleção de mídia de streaming](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/media-overview).</p> |
 | Compilação baseada em gráfico | Atualização e reestruturação da [documentação de compilação](/help/stitching/overview.md) com a introdução da compilação baseada em gráfico. |
