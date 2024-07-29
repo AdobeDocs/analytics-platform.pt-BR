@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 7d915fc9b50163b7ec9c48232b99a85a3b063a77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Como parte da configuração de uma conexão, você pode transformar conjuntos d
 
 >[!TAB Campos derivados]
 
-Novas funções de campo derivadas (Matemática, Próximo ou Anterior, Resumir, Desduplicar) e modelos de função adicionais (como Rejeições, Nome do conjunto de dados amigável, Temporada de feriados, Metas mensais, Detecção de bot simples e outros) estão disponíveis.
+Há novas funções de campos derivados (Matemática, Próximo ou Anterior, Resumo, Desduplicar) e modelos de função adicionais (como Rejeições, Nome amigável do conjunto de dados, Temporada de festas, Metas mensais, Detecção de bots simples e outros) disponíveis.
 
 [![imagem](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 

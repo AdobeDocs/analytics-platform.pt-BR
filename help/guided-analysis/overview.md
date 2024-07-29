@@ -6,9 +6,9 @@ exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
 source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1399'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -68,19 +68,19 @@ A análise guiada usa os seguintes elementos de interface:
 
 ## Provisionamento
 
-As exibições de análise guiada estão incluídas nos pacotes de Customer Journey Analytics da seguinte maneira:
+As exibições de análise guiada estão incluídas nos pacotes do Customer Journey Analytics da seguinte maneira:
 
 | Pacote | Exibições disponíveis |
 | --- | --- |
-| [!UICONTROL Complementos do CJA] | Tendências: Uso, Tendências: Frequência, Funil: Fricção, Funil: Tendências de conversão, Retenção: Taxas de retenção, Crescimento do usuário: Ativo, Crescimento do usuário: Crescimento líquido |
-| [!UICONTROL Fundação CJA] | Tendências: uso |
-| [!UICONTROL Seleção do CJA] | Visualizações do Foundation + Tendências: Frequência, Funil: Fricção, Funil: Tendências de conversão, Retenção: Taxas de retenção, Crescimento do usuário: Ativo, Crescimento do usuário: Crescimento líquido |
-| [!UICONTROL CJA Prime] | Selecionar exibições + Fluxo de usuários: Linha do tempo, Matriz de recursos: Envolvimento, Impacto: Versão, Impacto: Primeiro uso |
-| [!UICONTROL CJA Ultimate] | Visualizações do Prime |
+| [!UICONTROL Complementos do CJA] | Tendências: uso, tendências: frequência, funil: atrito, funil: tendências de conversão, retenção: taxas de retenção, crescimento do usuário: ativo, crescimento do usuário: crescimento líquido |
+| [!UICONTROL CJA Foundation] | Tendências: uso |
+| [!UICONTROL CJA Select] | Exibições do Foundation + Tendências: frequência, funil: atrito, funil: tendências de conversão, retenção: taxas de retenção, crescimento do usuário: ativo, crescimento do usuário: crescimento líquido |
+| [!UICONTROL CJA Prime] | Exibições do Select + Fluxo de usuários: linha do tempo, matriz de recursos: engajamento, impacto: versão, impacto: primeiro uso |
+| [!UICONTROL CJA Ultimate] | Exibições do Prime |
 
 {style="table-layout:auto"}
 
-Os administradores de perfil de produto podem adicionar ou remover o acesso à análise guiada no Adobe Admin Console.
+Admins de perfil de produto podem adicionar ou remover o acesso à análise guiada no Adobe Admin Console.
 
 1. Faça logon no [Adobe Admin Console](https://adminconsole.adobe.com).
 1. Selecione **[!UICONTROL Customer Journey Analytics]** na lista de produtos.
