@@ -5,10 +5,10 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: df00d954de5db89f0ccc40f7eb2474523d9e774e
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: d6f26da108a2c840838ac71d9b98f45cd145ad3e
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 94%
 
 ---
 
@@ -40,15 +40,17 @@ O **[Analysis Workspace](../analysis-workspace/home.md)** é um espaço de forma
 
 +++**Como a terminologia se compara entre a análise guiada e o Analysis Workspace?**
 
-A análise guiada usa termos mais conhecidos pelas equipes de produtos. Você pode consultar essa tabela ao alternar entre a análise guiada e o [Analysis Workspace](../analysis-workspace/home.md).
+A análise guiada e o [Analysis Workspace](../analysis-workspace/home.md) se alinham à maioria das terminologias principais, com algumas pequenas diferenças.
 
 | Termo da análise guiada | Termo do Analysis Workspace |
 | --- | --- |
-| Evento | Métrica |
+| Evento (uma métrica binária 1/0) | Métrica |
 | Usuários | Pessoas |
-| Propriedade | Dimensão |
-| Valor | Item de dimensão |
+| Dimensão | Dimensão |
+| Item de dimensão | Item de dimensão |
 | Segmento | Filtro |
+| Filtro | Filtro do relatório |
+| Métrica calculada, Métricas | Métrica calculada |
 
 {style="table-layout:auto"}
 
