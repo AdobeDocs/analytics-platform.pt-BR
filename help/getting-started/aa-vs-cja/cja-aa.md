@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: f091dda08391bad3974493e93dce942b8a2fc4d3
+source-git-commit: 1abd23ded188697a910d4e6d04675f96f51e9b0e
 workflow-type: tm+mt
-source-wordcount: '2287'
-ht-degree: 100%
+source-wordcount: '2273'
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Report Builder | Compatível com um novo plug-in do Office 365 para Excel. |
 | Permissões do usuário/Controles de acesso de dados | O Customer Journey Analytics distingue entre admins de produto do [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR), admins de perfil de produto e usuários. Somente admins de produtos podem criar, atualizar e excluir conexões, projetos, filtros ou métricas calculadas que foram criadas por outros usuários, enquanto admins de produto e admins de perfil de produto podem editar visualizações de dados. Permissões de usuário adicionais estão disponíveis para como criação de métricas calculadas, filtros e anotações. |
 | Visualizações | Todas as visualizações do Workspace são compatíveis, exceto a visualização Mapa. |
-| Compilação entre dispositivos/canais | Compatível com conjuntos de dados que contêm informações de identidade diretamente (também conhecido como compilação “em campo”). A compilação baseada em gráfico ainda não é compatível, mas está planejada. Consulte [Compilação](../../stitching/overview.md). |
+| Compilação entre dispositivos/canais | Compatível com conjuntos de dados de evento que contêm informações de identidade. Consulte [Compilação](../../stitching/overview.md). |
 
 {style="table-layout:auto"}
 
