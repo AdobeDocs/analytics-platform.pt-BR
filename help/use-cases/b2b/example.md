@@ -7,7 +7,7 @@ hide: true
 hidefromtoc: true
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 9c60c00818e82a6ca891ab9d90260922437c6cca
+source-git-commit: c3d97fe2353011f4747d0c1742e49189cc91b85c
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 10%
@@ -32,6 +32,7 @@ Conjuntos de dados que você pode considerar adicionar à conexão:
 | Conjunto de dados de relação pessoal da oportunidade B2B | Esquema de relação pessoal de oportunidade B2B | Pesquisa | Relação pessoal de oportunidade de negócios XDM | A relação da pessoa com a oportunidade de negócios XDM é uma classe padrão do Experience Data Model (XDM) que captura as propriedades mínimas necessárias de uma pessoa associada a uma oportunidade de negócios. |
 | Conjunto de dados de membros da Lista de marketing B2B | Esquema de membros da lista de marketing B2B | Pesquisa | Membros da lista de marketing XDM | Membros da Lista de marketing comercial XDM é uma classe padrão do Experience Data Model (XDM) que descreve membros, pessoas ou contatos associados a uma lista de marketing. |
 | Conjunto de dados de membro da campanha B2B | Esquema de membro da campanha B2B | Pesquisa | Membros da campanha de negócios XDM | Membros da campanha de negócios XDM é uma classe padrão do Experience Data Model (XDM) que descreve um contato ou um cliente potencial associado a uma campanha de negócios. |
+
 <!--
 | B2B Account Dataset | B2B Account Schema | Lookup | XDM Business Account | XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account.  |
 | B2B Opportunity Dataset | B2B Opportunity Schema | Lookup | XDM Business Opportunity | XDM Business Opportunity is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business opportunity.  |
