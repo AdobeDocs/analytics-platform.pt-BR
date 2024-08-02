@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 252ddfd3a321d94d14fbe2593b942ac36bf932a5
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 100%
+source-wordcount: '2547'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ A compilação “repete” dados com base em identificadores únicos que foram 
 
 +++**Como funciona a compilação de dados históricos (preenchimento retroativo)?**
 
-Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de dados compilados que retorna até o início do mês anterior (até 60 dias). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento. [Saiba mais](../stitching/overview.md)
+Quando ativado pela primeira vez, o Adobe fornece um preenchimento retroativo de dados compilados que retorna até o limite selecionado por você (até um máximo de 25 meses, dependendo do pacote de Customer Journey Analytics ao qual você tem direito). Para fazer esse preenchimento retroativo, a ID transitória deve existir nos dados não compilados até aquele momento. [Saiba mais](../stitching/overview.md)
 
 +++
 
