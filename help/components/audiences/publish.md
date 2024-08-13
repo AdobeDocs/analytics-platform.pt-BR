@@ -4,10 +4,10 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 91ab1d3160db83979e1550f8f1b5135065cc6707
+source-git-commit: c384c4cdd1a63fd26e6eff0ff3394a089105275c
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 57%
+source-wordcount: '1697'
+ht-degree: 53%
 
 ---
 
@@ -17,9 +17,9 @@ Este tópico discute como criar e publicar públicos-alvo identificados no Custo
 
 Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para familiarizar-se com o conceito de públicos-alvo do Customer Journey Analytics.
 
-## Criar público-alvo {#create}
+## Criar e publicar um público-alvo {#create}
 
-1. Há várias maneiras de começar a criar públicos-alvo:
+1. Para começar a criar e publicar um público-alvo, siga um destes procedimentos:
 
    | Método de criação | Detalhes |
    | --- | --- |
@@ -74,26 +74,26 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
 
 1. Clique em **[!UICONTROL Exibir público-alvo na AEP]** na mesma mensagem e você será direcionado para a [Interface do usuário do segmento](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=pt-BR) na Adobe Experience Platform. Veja mais informações abaixo.
 
-## O que acontece depois que um público é criado? {#after-audience-created}
+## O que acontece depois que um público-alvo é criado e publicado? {#after-audience-created}
 
-Depois de criar um público-alvo, o Adobe cria um segmento de transmissão Experience Platform para cada novo público-alvo do Customer Journey Analytics. Um segmento de transmissão do Adobe Experience Platform só será criado se sua organização estiver configurada para segmentação de transmissão.
+Depois de criar e publicar um público-alvo no Customer Journey Analytics, o público-alvo fica disponível no Experience Platform. Um segmento de transmissão do Adobe Experience Platform só será criado se sua organização estiver configurada para segmentação de transmissão.
 
-* O segmento do Adobe Experience Platform compartilha o mesmo nome/descrição do público-alvo Customer Journey Analytics, mas o nome será anexado com a ID de público-alvo Customer Journey Analytics para garantir que seja exclusivo.
-* Se o nome/descrição do público-alvo do Customer Journey Analytics for alterado, o nome/descrição do segmento do Adobe Experience Platform também refletirá essa alteração.
-* Se um público-alvo do Customer Journey Analytics for excluído por um usuário, o segmento do Adobe Experience Platform NÃO será excluído. O motivo é que o público-alvo do Customer Journey Analytics pode ser excluído posteriormente.
+* O público-alvo na Platform compartilha o mesmo nome/descrição do público-alvo da Customer Journey Analytics, mas o nome será anexado com a ID de público-alvo da Customer Journey Analytics para garantir que seja exclusivo.
+* Quaisquer alterações feitas no nome ou na descrição do público-alvo no Customer Journey Analytics são refletidas na Platform.
+* Se um público-alvo for excluído no Customer Journey Analytics, ele continuará disponível na Platform.
 
 ## Considerações sobre latência {#latency}
 
 Em vários pontos antes, durante e depois da publicação do público-alvo, podem ocorrer latências. Esta é uma visão geral de possíveis latências.
 
-![Latências na publicação de público-alvo conforme descrito nesta seção.](/help/components/audiences/assets/latency-diagram.png)
+![Latências na publicação de público-alvo conforme descrito nesta seção.](assets/latency-diagram.svg)
 
 | # | Ponto de latência | Duração da latência |
 | --- | --- | --- |
 | Não exibido | Conector de origem do Adobe Analytics para o Analytics (A4T) | Até 30 minutos |
 | 1 | Assimilação de dados no Data Lake (do conector de origem do Analytics ou de outras fontes) | Até 90 minutos |
 | 2 | Assimilação de dados do Experience Platform Data Lake no Customer Journey Analytics | Até 90 minutos |
-| 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados.<p>**Observação**: o público-alvo é criado/definido em Experience Platform em 1-2 minutos. No entanto, leva cerca de 60 minutos para que o público-alvo comece a receber as IDs com base em critérios correspondentes e esteja pronto para ativação. | Cerca de 60 minutos |
+| 3 | Publicação de público no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e permitindo que o segmento esteja pronto para receber os dados. | Alguns segundos |
 | 4 | Atualizar frequência dos públicos | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
 | 5 | Criação de destino no Adobe Experience Platform: ativação do novo segmento | 1 a 2 horas |
 
@@ -103,13 +103,32 @@ Em vários pontos antes, durante e depois da publicação do público-alvo, pode
 
 O Customer Journey Analytics pega todas as combinações de namespace e ID de seu público publicado e as transmite para o Perfil do cliente em tempo real (RTCP). O Customer Journey Analytics envia o público-alvo para o Experience Platform com a identidade primária definida, de acordo com o que foi selecionado como a [!UICONTROL ID de pessoa] quando a conexão foi configurada.
 
-Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Agora, por exemplo, <user@adobe.com> pode ser direcionado para todos os seus dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
+Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Por exemplo, <user@adobe.com> pode ser direcionado em todos os seus dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
-Você pode visualizar públicos-alvo Customer Journey Analytics na Platform acessando **[!UICONTROL Segmentos]** > **[!UICONTROL Criar segmentos]** > **[!UICONTROL Públicos-alvo]** guia > **[!UICONTROL Públicos-alvo do CJA]**.
+Para exibir públicos-alvo do Customer Journey Analytics na Platform:
 
-Você pode arrastar os públicos-alvo do Customer Journey Analytics para a definição de segmentos do Adobe Experience Platform.
+>[!AVAILABILITY]
+>
+>A funcionalidade descrita nas etapas a seguir está na fase de Teste limitado da versão e pode ainda não estar disponível em seu ambiente. Se essas etapas não corresponderem ao que você vê em seu ambiente, use as seguintes etapas: Vá para [!UICONTROL **Segmentos**] > [!UICONTROL **Criar segmentos**] > guia [!UICONTROL **Públicos-alvo**] > [!UICONTROL **Públicos-alvo do CJA**].
+>
+>Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
 
-![Interface do usuário da Adobe Experience Platform destacando Segmentos no painel esquerdo e Públicos-alvo do CJA no painel principal.](assets/audiences-aep.png)
+1. Expanda [!UICONTROL **Cliente**] no painel esquerdo e selecione [!UICONTROL **Públicos-alvo**]. <!-- is there a folder called "Customer Journey Analytics? -->
+
+1. Selecione a guia [!UICONTROL **Procurar**].
+
+   ![Opção Públicos-alvo no painel esquerdo](assets/audiences-aep.png)
+
+1. Para localizar o público-alvo publicado pelo Customer Journey Analytics, siga um destes procedimentos:
+
+   * Classifique a tabela pela coluna [!UICONTROL **Origin**] para exibir públicos-alvo que mostram [!UICONTROL **Customer Journey Analytics**] como a origem.
+
+   * Selecione o ícone de filtro.
+
+   * Use o campo de pesquisa.
+
+Para obter mais informações sobre como usar o Audiences na Platform, consulte a seção [Audiences](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences) no [guia da interface do usuário do Construtor de segmentos](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html), na documentação do Experience Platform.
+
 
 ## Perguntas frequentes {#faq}
 
