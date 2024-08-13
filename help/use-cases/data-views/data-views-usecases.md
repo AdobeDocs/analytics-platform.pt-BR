@@ -5,92 +5,102 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 62779154e889158c62e4713a951fb3633c16d5e1
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 90%
+source-wordcount: '1346'
+ht-degree: 35%
 
 ---
 
 # Casos de uso de visualizações de dados
 
-Esses casos de uso mostram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics.
+Esses casos de uso ilustram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics.
 
-## 1. Criar uma métrica com base em um campo de esquema de cadeia de caracteres {#string}
+## Uso de métricas de dimensões de ligação
 
-Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica [!UICONTROL Pedidos] de um campo de esquema [!UICONTROL pageTitle] que seja uma sequência. Estas são as etapas:
+Consulte o caso de uso das [métricas](binding-dimensions-metrics.md) de dimensões de vínculo para obter mais detalhes.
 
-1. Na guia Componentes, arraste [!UICONTROL pageTitle] até a seção [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
-   ![Campos de esquema com seta apontando para pageTitle na lista de nomes de Componente.](../assets/use-case1a.png)
-1. Agora, destaque a métrica que você acabou de arrastar e renomeie-a em [!UICONTROL Configurações do componente] à direita:
-   ![Campos de esquema destacando Pedidos nas Configurações de Componente.](../assets/orders.png)
-1. Abra a caixa de diálogo [!UICONTROL Incluir/Excluir valores] à direita e especifique o seguinte:
-   ![Incluir/Excluir valores com Definir valores de inclusão/exclusão e distinção entre maiúsculas e minúsculas selecionado.](../assets/orders2.png)
+## Usar dados de resumo
 
-   A frase &quot;confirmação&quot; indica que é um pedido. Depois de examinar todos os títulos de página em que esses critérios são atendidos, &quot;1&quot; será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores de inclusão/exclusão pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, filtros e em qualquer lugar que você puder usar as métricas padrão.
+Consulte o caso de uso [Usar dados de resumo](summary-data.md) para obter mais detalhes.
+
+## Criar uma métrica com base em um campo de esquema de sequência {#string}
+
+Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica [!UICONTROL Pedidos] a partir de um campo de esquema [!UICONTROL Título da página] que seja uma sequência.
+
+
+
+1. Na guia **[!UICONTROL Componentes]**, arraste o **[!UICONTROL Título da Página]** para a seção **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
+1. Destaque o métrica que acabou de arrastá-lo e renomeá-lo `Orders` na **[!UICONTROL Componente Configurações]** em
+1. Abra a **[!UICONTROL seção Incluir/Excluir valores e especifique]** o seguinte:
+   1. Ativar **[!UICONTROL Definir incluir valores]** de exclusão.
+   1. Selecione **[!UICONTROL se todos os critérios forem atendidos a]** partir da **[!UICONTROL Correspondência]**.
+   1. Especifique `confirmation`. Este texto para o página_title indica que esta página está relacionada à colocação de uma solicitar. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores de inclusão/exclusão pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, filtros e em qualquer lugar que você puder usar as métricas padrão.
+
+   ![Dimension para métrica](../assets/string-to-metric.gif){width=100%}
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
-Você também pode criar outra métrica [!UICONTROL Pedidos] do mesmo campo e especificar um modelo de atribuição diferente para ele, como [!UICONTROL Primeiro contato], e uma [!UICONTROL janela de pesquisa] diferente, como [!UICONTROL 30 dias].
+Você também pode criar outra métrica [!UICONTROL Pedidos] do mesmo campo e especificar um modelo de atribuição diferente. [!UICONTROL Como o Primeiro Contato] e uma janela] de Lookback diferente[!UICONTROL , como [!UICONTROL 30 dias].
 
-Outro exemplo seria usar a ID de visitante, uma dimensão, como uma métrica para determinar quantas IDs de visitante sua empresa tem.
+Outro exemplo seria usar a ID de pessoa, uma dimensão, como uma métrica para determinar quantas IDs de pessoa sua empresa tem.
 
-## 2. Usar números inteiros como dimensões {#integers}
+## Usar números inteiros como dimensões {#integers}
 
 Anteriormente, os números inteiros eram automaticamente tratados como métricas no Customer Journey Analytics. Agora, os números (incluindo eventos personalizados do Adobe Analytics) podem ser tratados como dimensões. Exemplo:
 
-1. Arraste o inteiro [!UICONTROL call_length_min] até a seção [!UICONTROL Dimensões] em [!UICONTROL Componentes incluídos]:
 
-   ![Seta apontando para call_length_mins na lista de Dimension.](../assets/integers.png)
 
-1. Agora você pode adicionar [!UICONTROL Classificação de valores] para apresentar essa dimensão de forma segmentada nos relatórios. (Sem a classificação, cada instância dessa dimensão seria exibida como um item da linha nos relatórios do Espaço de trabalho.)
+1. Arraste o inteiro **[!UICONTROL Duração]** para a seção **[!UICONTROL Dimension]** em [!UICONTROL Componentes incluídos]:
+1. Agora você pode adicionar **[!UICONTROL Classificação de valores]** para apresentar essa dimensão de forma segmentada nos relatórios. Sem bucketing, cada instância desse dimensão apareceria como uma item da linha em Área de trabalho relatórios.
+   ![Inteiro para dimensão](../assets/integer-to-dimension.gif){width=100%}
 
-   ![Classificação de valores com o valor do bloco selecionado.](../assets/bucketing.png)
 
-## 3. Usar dimensões numéricas como &quot;métricas&quot; em diagramas de fluxo {#numeric}
+## Usar dimensões numéricas como métricas em diagramas de fluxo {#numeric}
 
-Você pode usar uma dimensão numérica para inserir “métricas” na visualização de [!UICONTROL Fluxo].
+Você pode usar uma dimensão numérica para inserir métricas na visualização [!UICONTROL  Fluxo].
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-component-settings), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Espaço de trabalho, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
 
-![Fluxo do Canal de marketing dos emails para Saída/pedidos.](../assets/flow.png)
+![Fluxo de canal de marketing de emails para Sair/pedidos.](../assets/flow.png)
 
-## 4. Fazer filtragem de subeventos {#sub-event}
+## Fazer filtragem evento sub-evento {#sub-event}
 
-Esse recurso é especificamente aplicável a campos com base em matriz. A funcionalidade de inclusão/exclusão permite que você filtre no nível do subevento, enquanto os filtros (segmentos) criados no construtor de filtros fornecem apenas a filtragem no nível do evento. Assim, você pode fazer a filtragem de subeventos usando incluir/excluir em Visualizações de dados e, em seguida, fazer referência a essa nova métrica/dimensão em um filtro no nível do evento.
+Esse recurso é especificamente aplicável a campos com base em matriz. A funcionalidade de inclusão/exclusão permite filtrar no nível da evento, enquanto filtros (segmentos) construídos no construtor de filtros só lhe dão filtragem no nível evento. Dessa forma, é possível fazer filtragem sub-evento usando incluir/excluir em exibições de Dados e, em seguida, fazer referência a essa nova métrica/dimensão em um filtro no nível evento.
 
-Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de dados para focalizar os produtos que geraram vendas de mais de 50 dólares. Portanto, se você tiver um pedido que inclua uma compra de produto de 50 dólares e uma compra de produto de 25 dólares, removeremos apenas a compra de produto de 25 dólares, não o pedido inteiro.
+Por exemplo, use a funcionalidade incluir/excluir nas exibições de Dados para focalizar apenas em produtos que geraram vendas de mais de US$ 50. Então, se você tem um solicitar que inclui uma compra de produto de US$ 50 e uma compra de produto de US$ 25, a funcionalidade de inclusão/exclusão remove a compra de um produto de US$ 25, não todo o solicitar.
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-component-settings), arraste o campo de esquema [!UICONTROL Receita] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema **[!UICONTROL Receita]** para a área **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
 1. Selecione a métrica e configure o seguinte no lado direito:
-a. Em [!UICONTROL Formato], selecione [!UICONTROL Moeda].
-b. Em [!UICONTROL Moeda], selecione USD.
-c. Em [!UICONTROL Incluir/Excluir valores], marque a caixa de seleção ao lado de [!UICONTROL Definir valores de inclusão/exclusão].
-d. Em [!UICONTROL Corresponder], selecione [!UICONTROL Se todos os critérios forem atendidos].
-e. Em [!UICONTROL Critérios], selecione [!UICONTROL é maior ou igual a].
-f. Especificar &quot;50&quot; como o valor.
+a. Em **[!UICONTROL Formato]**, selecione **[!UICONTROL Moeda]**.
+b. Em **[!UICONTROL Moeda]**, selecione **[!UICONTROL USD]**.
+c. Em **[!UICONTROL Incluir/Excluir valores]**, marque a caixa de seleção ao lado de **[!UICONTROL Definir valores de inclusão/exclusão]**.
+d. Em **[!UICONTROL Corresponder]**, selecione **[!UICONTROL Se todos os critérios forem atendidos]**.
+e. Em **[!UICONTROL Critérios]**, selecione **[!UICONTROL é maior ou igual a]**.
+f. Especifique `50` como o valor.
 
 Essas novas configurações permitem que você visualize somente a receita de alto valor e filtre qualquer valor abaixo de US$ 50.
 
-## 5. Utilizar a configuração [!UICONTROL Nenhuma opção de valor] {#no-value}
+## Usar a configuração de [!UICONTROL opções] Sem valor {#no-value}
 
-Sua empresa pode ter passado tempo treinando os usuários para esperar &quot;Não especificado&quot; nos relatórios. O padrão em Visualizações de dados é &quot;Sem valor&quot;. Agora é possível [renomear &quot;Sem valor&quot; como &quot;Não especificado&quot;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-no-value-options-settings) na interface de Visualizações de dados.
+Sua empresa pode ter passado tempo treinando os usuários para esperar &quot;Não especificado&quot; para dimensões em relatórios. O padrão para dimensões em Visualizações de dados é &quot;Sem valor&quot;. No entanto, é possível especificar por dimensão como Nenhum valor deve ser relatado. Consulte as opções Nenhum valor para um componente de dimensão.
 
-Outro exemplo seria uma dimensão para um registro de programa de associação. Nesse caso, você pode renomear &quot;Sem valor&quot; como &quot;Sem registro de programa de associação&quot;.
+![Nenhuma opção de valor](../assets/no-value-options.gif){width=100%}
 
-## 6. Criar várias métricas com diferentes configurações de [!UICONTROL Atribuição] {#attribution}
 
-Usando o recurso [!UICONTROL Duplicar] no canto superior direito, crie várias métricas de Receita com diferentes configurações de atribuição, como [!UICONTROL Primeiro contato], [!UICONTROL Último contato] e [!UICONTROL Algorítmico].
+## Criar várias métricas com diferentes configurações de atribuição {#attribution}
 
-Não se esqueça de renomear cada métrica para refletir as diferenças, como &quot;Receita algorítmica&quot;:
+Utilização do **[!UICONTROL recurso Duplicar]** no canto superior direito, para criar diversas métricas de Receita Total com configurações atribuição diferentes curtir **[!UICONTROL Primeiro Contato]**, **[!UICONTROL Último Contato]** e **[!UICONTROL Algorítmico]**.
 
-![Receita algorítmica com valores de Contagem selecionados na lista Comportamento.](../assets/algo-revenue.png)
+Não se esqueça de renomear cada métrica para refletir as diferenças, como `Total Revenue (Algorithmic)`
+
+![métrica duplicados para diferentes configurações](../assets/duplicate-metric-for-attribution.gif) de atribuição{width=100%}
 
 Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview.md).
 Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).
 
-## 7. Relatórios de novas sessões e sessões de retorno {#new-repeat}
+## Novo de sessão e de retorno relatórios {#new-repeat}
 
-Você pode determinar se uma sessão é realmente a primeira sessão de um usuário ou uma sessão de retorno com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
+Você pode determinar se uma sessão é realmente a primeira sessão de um usuário ou uma sessão de retorno. Com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
 
 * Que porcentagem de seus pedidos vem de sessões novas ou de retorno?
 
@@ -98,25 +108,25 @@ Você pode determinar se uma sessão é realmente a primeira sessão de um usuá
 
 Uma dimensão e duas métricas facilitam esse relatório:
 
-* [Tipo de sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional) - Essa dimensão tem dois valores: 1) [!UICONTROL Novo] e 2) [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item de linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão.
+* [Tipo de sessão](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Esta dimensão tem dois valores: [!UICONTROL Novo] e [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item da linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão.
 
-* [Primeiras sessões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional). A métrica Primeiras sessões é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
+* [Primeiras sessões](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference). A métrica Primeiras sessões é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
 
-* [Sessões de Retorno](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-reference.html#optional) A métrica de Sessões de Retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
+* [Sessões de Retorno](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) A métrica de Sessões de Retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
 
-Para acessar esses componentes:
+Para acessar os componentes:
 
 1. Acesse o editor de visualização de dados.
-1. Clique na guia **[!UICONTROL Componentes]** > **[!UICONTROL Componentes padrão opcionais]** no painel esquerdo.
-1. Arraste esses componentes para a sua visualização de dados.
+1. Selecione a guia **[!UICONTROL Componentes]** e selecione **[!UICONTROL Componentes padrão]** no painel esquerdo.
+1. Arraste os componentes **[!UICONTROL Tipo de sessão]**, **[!UICONTROL Primeiras sessões]** e **[!UICONTROL Retornar sessões]** para a visualização de dados.
 
-Durante 95% a 99% do tempo, as novas sessões são relatadas com precisão. As únicas exceções são:
+As novas sessões são relatadas com precisão quase sempre. As únicas exceções são:
 
-* Quando uma primeira sessão ocorreu antes da janela de retrospectiva de 13 meses. Esta sessão será ignorada.
+* Quando uma primeira sessão ocorreu antes da janela de retrospectiva de 13 meses. <br/>Esta sessão é ignorada.
 
-* Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. Digamos que você execute um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva englobaria de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1º de junho de 2022, como a sessão está incluída na janela de retrospectiva, todas as sessões na janela de relatório serão contadas como sessões de retorno.
+* Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. <br/>Por exemplo, você executa um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva se estenderia de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão começar em 30 de maio de 2022 e terminar em 1º de junho de 2022, a sessão será incluída na janela de retrospectiva. E todas as sessões na janela relatórios são contadas como sessões de retorno.
 
-## 8. Use a funcionalidade de Data e Data e hora {#date}
+## Usar as funcionalidades de Data e Data e hora {#date}
 
 Os esquemas na Adobe Experience Platform contêm campos de [!UICONTROL Data] e [!UICONTROL Data e hora]. As visualizações de dados do Customer Journey Analytics agora são compatíveis com esses campos. Ao arrastar esses campos para uma visualização de dados como uma dimensão, você pode especificar seus [formatos](/help/data-views/component-settings/format.md). Essa configuração de formato determina como os campos são exibidos em relatórios. Por exemplo:
 
@@ -124,14 +134,16 @@ Os esquemas na Adobe Experience Platform contêm campos de [!UICONTROL Data] e [
 
 * Para o formato Data e hora, se você selecionar **[!UICONTROL Minuto do dia]** com o formato **[!UICONTROL Hora:Minuto]**, sua saída pode se parecer com: 20:20.
 
-Atualmente, oferecemos suporte a datas após 1º de janeiro de 1900 (com a única exceção de 1º de janeiro de 1970) e valores de data e hora após 1º de janeiro de 2000 00:00:00.
+Datas após 1º de janeiro de 1900 (com a única exceção de 1º de janeiro de 1970) e valores de data-hora após 1º de janeiro de 2000 00:00:00 são suportados.
 
 ### Casos de uso de data e data e hora
 
-* Data: uma empresa de viagens está coletando a data de partida para viagens como um campo em seus dados. Eles gostariam de ter um relatório que compara a variável [!UICONTROL Dia da semana] de todas as datas de partida coletadas para saber qual é a mais popular. Eles gostariam de fazer o mesmo para o [!UICONTROL Mês do ano].
+* Data: uma empresa de viagens coleta a data de partida para viagens como um campo em seus dados. A empresa gostaria de ter um relatório, que compara o [!UICONTROL Dia da semana] de todas as datas de partida coletadas para saber qual é o mais popular. E a empresa gostaria de fazer o mesmo para o [!UICONTROL Mês do Ano].
 
-* Data e hora: uma empresa de varejo está coletando o tempo de cada compra de ponto de venda (POS) da loja. Em um determinado mês, eles gostariam de saber quais são os períodos de compras mais movimentados por [!UICONTROL Hora do dia].
+* Data e hora: uma empresa de varejo coleta o tempo de cada compra de ponto de venda (POS) da loja. Em um determinado mês, a empresa gostaria de entender os períodos de compras mais movimentados por [!UICONTROL Hora do dia].
 
 >[!MORELIKETHIS]
+>
 >[Data e Data e hora na configuração do componente Formato](/help/data-views/component-settings/format.md)
+>
 

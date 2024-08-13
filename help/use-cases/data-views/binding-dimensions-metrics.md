@@ -4,19 +4,19 @@ description: Atribua dimensões a arrays de objetos para análise de persistênc
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
 workflow-type: tm+mt
 source-wordcount: '1342'
-ht-degree: 83%
+ht-degree: 70%
 
 ---
 
 
-# Uso de dimensões e métricas de ligação no Customer Journey Analytics
+# Uso de dimensões e métricas de ligação
 
 O Customer Journey Analytics oferece várias maneiras de persistir valores de dimensão além da ocorrência em que estão definidos. Um dos métodos de persistência que a Adobe oferece é conhecido como Ligação. Em versões anteriores do Adobe Analytics, esse conceito era conhecido como merchandising.
 
-Embora você possa usar dimensões de ligação com dados de evento de nível superior, esse conceito é melhor usado ao trabalhar com [Arrays de objetos](/help/use-cases/object-arrays.md). Você pode atribuir uma dimensão a uma parte de um array de objetos sem aplicá-la a todos os atributos em um determinado evento. Por exemplo, você pode atribuir um termo de pesquisa a um produto no array de objetos do carrinho de compras sem vincular esse termo de pesquisa ao evento inteiro.
+Embora você possa usar dimensões de ligação com dados de evento de nível superior, esse conceito é melhor usado ao trabalhar com [Arrays de objetos](/help/use-cases/object-arrays.md). Você pode atribuir uma dimensão a uma parte de um array de objetos sem aplicar a dimensão a todos os atributos em um determinado evento. Por exemplo, você pode atribuir um termo de pesquisa a um produto no array de objetos do carrinho de compras sem vincular esse termo de pesquisa ao evento inteiro.
 
 ## Exemplo 1: uso de dimensões de ligação para conceder atributos de produto adicionais a uma compra
 
@@ -92,9 +92,9 @@ Ao definir esse modelo de persistência, o Customer Journey Analytics anota o no
 
 ## Exemplo 2: uso de métricas de ligação para vincular um termo de pesquisa a uma compra de produto
 
-Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vincular um termo de pesquisa a um produto para que cada termo de pesquisa receba crédito pelo seu produto apropriado. Considere a seguinte jornada do cliente:
+Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vincular um termo de pesquisa a um produto para que cada termo de pesquisa receba crédito pelo produto apropriado. Considere a seguinte jornada do cliente:
 
-1. Um visitante chega ao seu site e procura por “luvas de boxe”. A métrica de pesquisa é incrementada por um e os três principais resultados de pesquisa são exibidos.
+1. Um visitante chega ao seu site e procura por `boxing gloves`. A métrica de pesquisa é incrementada por um e os três principais resultados de pesquisa são exibidos.
 
    ```json
    {
@@ -131,7 +131,7 @@ Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vi
    }
    ```
 
-3. O visitante então procura por “raquete de tênis”. A métrica de pesquisa é incrementada por um e os três principais resultados de pesquisa são exibidos.
+3. O visitante então procura por `tennis racket`. A métrica de pesquisa é incrementada por um e os três principais resultados de pesquisa são exibidos.
 
    ```json
    {
@@ -171,7 +171,7 @@ Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vi
    }
    ```
 
-5. O visitante faz uma terceira pesquisa, por “sapatos”. A métrica de pesquisa é incrementada por um e os três principais resultados de pesquisa são exibidos.
+5. O visitante faz uma terceira pesquisa por `shoes`. A métrica de pesquisa é incrementada por um e os três principais resultados de pesquisa são exibidos.
 
    ```json
    {
@@ -250,9 +250,9 @@ Se você usou a alocação [!UICONTROL Mais recente] com a dimensão de termo de
 | --- | --- |
 | sapatos | US$ 204,97 |
 
-Embora este exemplo inclua apenas uma pessoa, muitas pessoas que pesquisam por coisas diferentes podem atribuir erroneamente termos de pesquisa a produtos diferentes, tornando difícil determinar quais são os melhores resultados de pesquisa.
+Embora este exemplo inclua apenas uma pessoa, muitas pessoas que pesquisam por coisas diferentes podem atribuir erroneamente termos de pesquisa a produtos diferentes. Várias pessoas pesquisam por coisas diferentes, o que torna difícil determinar quais são os melhores resultados de pesquisa.
 
-Agora você pode vincular [!DNL Search Term] a [!DNL Product Name] sempre que a métrica [!DNL Searches] estiver presente para atribuir corretamente o termo de pesquisa à receita.
+Agora você pode vincular [!DNL Search Term] a [!DNL Product Name] sempre que a métrica [!DNL Searches] estiver presente para atribuir o termo de pesquisa corretamente à receita.
 
 ![Métrica de ligação](../assets/binding-metric.png)
 
@@ -268,11 +268,11 @@ O Customer Journey Analytics detecta automaticamente a relação entre a dimens�
 
 Definir a dimensão do termo de pesquisa para esse modelo de persistência executa a seguinte lógica:
 
-* Quando a dimensão do termo de pesquisa for definida, verifique a presença do nome do produto.
+* Quando a dimensão do termo de pesquisa for definida, verifique a presença de um nome de produto.
 * Se o nome do produto não estiver lá, nada será feito.
 * Se o nome do produto estiver lá, será verificada a presença da métrica de Pesquisas.
 * Se a métrica de Pesquisas não estiver lá, nada será feito.
-* Se a métrica de pesquisa estiver lá, vincule o termo de pesquisa a todos os nomes de produtos nesse evento. Ele se copia para o mesmo nível que o nome do produto para esse evento. Neste exemplo, ele é tratado como product.search_term.
+* Se a métrica de pesquisa estiver lá, vincule o termo de pesquisa a todos os nomes de produtos nesse evento. Ele se copia para o mesmo nível que o nome do produto para esse evento. Neste exemplo, ele é tratado como `product.search_term`.
 * Se o mesmo nome de produto for visualizado em um evento subsequente, o termo de pesquisa vinculado também será transportado para esse evento.
 
 ## Exemplo 3: vincular o termo de pesquisa de vídeo ao perfil do usuário
@@ -334,7 +334,7 @@ Você pode vincular um termo de pesquisa a um perfil de usuário, de modo que a 
    }
    ```
 
-Se você usar a alocação mais recente com a expiração de pessoa, o termo de pesquisa `"grownup movie"` é atribuído à última exibição do programa para crianças.
+Se você usar a alocação mais recente com a expiração de pessoa, o termo de pesquisa `grownup movie` é atribuído à última exibição do programa para crianças.
 
 | Termo de pesquisa | Início do vídeo |
 | --- | --- |
@@ -345,7 +345,7 @@ No entanto, se você vincular o `search_term` ao `ProfileID`, cada pesquisa de p
 
 ![Vínculo do visitante](../assets/binding-profileid.png)
 
-O Analysis Workspace atribuiria corretamente o segundo episódio de Orangey ao termo de pesquisa `"kids show"`, sem levar em conta as pesquisas de outros perfis.
+O Analysis Workspace atribui o segundo episódio de Orangey ao termo de pesquisa `kids show` sem levar em conta as pesquisas de outros perfis.
 
 | Termo de pesquisa | Início do vídeo |
 | --- | --- |
@@ -356,7 +356,7 @@ O Analysis Workspace atribuiria corretamente o segundo episódio de Orangey ao t
 
 É possível vincular valores a dimensões definidas em eventos anteriores. Ao definir uma variável com uma dimensão de vínculo, o Customer Journey Analytics leva em consideração o valor persistente. Se esse comportamento for indesejado, é possível ajustar as configurações de persistência da dimensão de vínculo. Considere o exemplo a seguir em que o `product_finding_method` é definido em um evento e vinculado à métrica Adições ao carrinho no evento a seguir.
 
-1. Um visitante pesquisa por `"camera"`. Observe que nenhum produto está definido nesta página.
+1. Um visitante pesquisa por `camera`. Observe que nenhum produto está definido nesta página.
 
    ```json
    {
