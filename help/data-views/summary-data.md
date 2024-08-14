@@ -4,7 +4,7 @@ description: Detalhes e informações sobre como usar e configurar dados de resu
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+source-git-commit: 9517d698acf41a25fa972ced32faa75de540a080
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 4%
@@ -13,6 +13,8 @@ ht-degree: 4%
 
 
 # Dados de resumo
+
+{{release-limited-testing}}
 
 Os dados de resumo são dados de série temporal que não estão vinculados a uma ID de pessoa individual. Os dados de resumo representam dados agregados em um nível diferente de agregação, por exemplo, campanhas. Você pode usar esses dados no Customer Journey Analytics para suportar vários casos de uso. Por exemplo, dados contendo uma data e um único valor de métrica ou dados contendo várias dimensões e métricas.
 
