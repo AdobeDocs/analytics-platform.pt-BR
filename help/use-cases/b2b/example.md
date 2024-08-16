@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 3f83b4c141324a7b255ac5af039fa1d7607f3b15
+source-git-commit: aa1615be6eaeb5c098659ec6b58829ca8efe64a4
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1222'
 ht-degree: 7%
 
 ---
@@ -62,7 +62,7 @@ Para garantir uma configuração adequada de uma conexão que suporte pesquisas 
    | Conjunto de dados de pessoa B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
    | Conjunto de dados da conta B2B | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(Conjunto de Dados de Pessoa B2B)<br/>**b2b.accountKey.sourceKey**❶ |
    | Conjunto de dados de oportunidade B2B | | Chave do Source <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/>(Conjunto de Dados de Relação de Oportunidade B2B)<br/>**opportunityKey.sourceKey**❷ |
-   | Conjunto de dados da campanha B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(Conjunto de Dados de Membro da Campanha B2B)<br/>c **ampaignKey.sourceKey**❸<br/> |
+   | Conjunto de dados da campanha B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(Conjunto de Dados de Membro da Campanha B2B)<br/>**campaignKey.sourceKey**❸<br/> |
    | Conjunto de dados da lista de marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(Conjunto de Dados de Membro da Lista de Marketing B2B)<br/>**marketingListKey.sourceKey**❹ |
    | Conjunto de dados de relação pessoal da conta B2B | | SourceKey <br/>**personKey.sourceKey**❺ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**❺ |
    | Conjunto de dados de relação pessoal da oportunidade B2B | | SourceKey <br/>**personKey.sourceKey** y❻ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**❻ |
