@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hide-from-toc: true
 role: Admin
-source-git-commit: 97fcb5f16962b85aa4f95bfbe2f16295d8bb3452
+source-git-commit: f17d2ebdf9a45ebb3a4e923a34c4b9b3d629f038
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '993'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ A compilação pode atribuir dados de dispositivo compartilhado usando atribuiç
 
 #### Atribuição de última autenticação
 
-A última autenticação atribui toda a atividade desconhecida de um dispositivo compartilhado ao usuário que fez a última autenticação. A última autenticação é usada no Audience Manager e é a abordagem preferida para casos de uso do Perfil de dados do cliente em tempo real. O Serviço de identidade do Experience Platform cria o gráfico com base na atribuição de última autenticação e, como tal, é usado na compilação baseada em gráficos.
+A última autenticação atribui toda a atividade desconhecida de um dispositivo compartilhado ao usuário que fez a última autenticação. A última autenticação é usada no Audience Manager e é a abordagem preferida para casos de uso do Perfil de dados do cliente em tempo real. O Serviço de identidade do Experience Platform cria o gráfico com base na atribuição de última autenticação e, como tal, é usado na compilação baseada em gráficos. Consulte [Visão geral das regras de vinculação do gráfico de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) para obter mais informações.
 
 Ao usar a atribuição de última autenticação na compilação, as IDs compiladas são resolvidas conforme mostrado na tabela abaixo.
 
@@ -65,7 +65,7 @@ Ao usar a atribuição de última autenticação na compilação, as IDs compila
 
 #### Divisão de dispositivo
 
-A divisão de dispositivo atribui uma atividade anônima de um dispositivo compartilhado ao usuário que está mais próximo da atividade anônima. A divisão de dispositivos é a abordagem preferida para casos de uso analítico, pois a divisão de dispositivos dá crédito por atividades não autenticadas e autenticadas à pessoa mais próxima conhecida. A divisão de dispositivo é usada atualmente na compilação em campo.
+A divisão de dispositivo atribui uma atividade anônima de um dispositivo compartilhado ao usuário que está mais próximo da atividade anônima. A divisão de dispositivo é usada atualmente na compilação em campo. A divisão de dispositivos é a abordagem preferida para casos de uso analítico, pois a divisão de dispositivos dá crédito por atividades não autenticadas e autenticadas à pessoa mais próxima conhecida. A divisão de dispositivo é usada atualmente na compilação em campo.
 
 Ao usar a atribuição dividida por dispositivo na compilação, as IDs com título resolvem como mostrado na tabela abaixo.
 
