@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: a0124ee6c4534cbaf607367ee3ae79f1cbfc239c
+source-git-commit: a80b20eb2e0395445e8f2e7fd0e76e2eef40522a
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1760'
 ht-degree: 7%
 
 ---
@@ -77,7 +77,7 @@ Alguns dos recursos e seu valor associado para o limite dependem do Pacote de Cu
 | Frequência de atualização do público-alvo | 4 | Proteção imposta pelo sistema | A frequência máxima em horas que um [público-alvo](../components/audiences/audiences-overview.md) pode ser atualizado. |
 | Janela de pesquisa de atualização de público-alvo | 90 | Proteção imposta pelo sistema | Número máximo de dias para a janela de retrospectiva de atualização. |
 | Atualização da data de expiração do público-alvo | 13 | Proteção imposta pelo sistema | Número máximo de meses em que o público-alvo deixa de ser atualizado a partir da data de criação. Os clientes podem estender isso por mais 13 meses. |
-| Número de públicos-alvo atualizados | 75, 150 | Proteção imposta pelo sistema | Número máximo de públicos-alvo de atualização, o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
+| Número de públicos-alvo atualizados | 75, 150 | Proteção imposta pelo sistema | Número máximo de públicos-alvo para atualização. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
 
 {style="table-layout:auto"}
 
@@ -100,7 +100,7 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 |---|--:|---|---|
 | Projetos | 50.000 | Proteção imposta pelo sistema | Número máximo de projetos para uma organização. |
 | Visualizações de dados | 2.000 | Proteção imposta pelo sistema | Número máximo de [visualizações de dados](../data-views/data-views.md) para uma organização. |
-| Visualizações de dados | 50 | Proteção imposta pelo sistema | Número máximo de visualizações de dados para uma conexão |
+| Visualizações de dados | 500-1000 | Proteção imposta pelo sistema | Número máximo de visualizações de dados para uma conexão. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
 | Conjuntos de dados | 100 | Proteção imposta pelo sistema | Número máximo de [conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=pt-BR) por conexão. |
 | Conexões | 1000 | Proteção imposta pelo sistema | Número máximo de [conexões](../connections/overview.md) para uma organização. |
 | Título da conexão | 500 | Proteção imposta pelo sistema | Número máximo de caracteres para um título de conexão. |
@@ -110,7 +110,7 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 | Descrição da anotação | 250 | Proteção imposta pelo sistema | Número máximo de caracteres para uma descrição de anotação. |
 | Campos de esquema | 10 | Proteção imposta pelo sistema | Número máximo de campos de esquema (sem incluir campos padrão) ao definir regras para um [campo derivado](../data-views/derived-fields/derived-fields.md). |
 | Campos de pesquisa/perfil | 3 | Proteção imposta pelo sistema | Número máximo de campos de pesquisa ou de esquema de perfil dentro do número máximo de campos de esquema (sem incluir campos padrão) ao definir regras para um campo derivado. |
-| Campos derivados | 100 - 500 | Proteção imposta pelo sistema | Número máximo de campos derivados por conexão; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
+| Campos derivados | 100 - 500 | Proteção imposta pelo sistema | Número máximo de campos derivados por conexão. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
 
 {style="table-layout:auto"}
 
@@ -155,9 +155,9 @@ Consulte também Experience Platform [Medidas de proteção de exportação do c
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Conjuntos de dados compilados | 5 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
-| Comprimento do preenchimento retroativo | 6 - 25 | Proteção imposta pelo sistema | Número máximo de meses de dados de preenchimento retroativo; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
-| Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição; o valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
+| Conjuntos de dados compilados | 5 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Comprimento do preenchimento retroativo | 6 - 25 | Proteção imposta pelo sistema | Número máximo de meses de dados de preenchimento retroativo. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
 
 {style="table-layout:auto"}
 
@@ -166,9 +166,9 @@ Consulte também Experience Platform [Medidas de proteção de exportação do c
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Conjuntos de dados compilados | 10 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
-| Comprimento do preenchimento retroativo | 13 - 25 | Proteção imposta pelo sistema | Número máximo de meses de dados de preenchimento retroativo; o valor varia dependendo do pacote de Customer Journey Analytics (consulte a Descrição do produto). |
-| Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição; o valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
+| Conjuntos de dados compilados | 10 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Comprimento do preenchimento retroativo | 13 - 25 | Proteção imposta pelo sistema | Número máximo de meses de dados de preenchimento retroativo. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
 
 
 ## Filtros e métricas calculadas
@@ -215,7 +215,7 @@ Consulte também Experience Platform [Medidas de proteção de exportação do c
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Linhas por Relatório | 3 milhões - 300 milhões | Proteção imposta pelo sistema | Número máximo de linhas de relatório por relatório; o valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Linhas por Relatório | 3 milhões - 300 milhões | Proteção imposta pelo sistema | Número máximo de linhas de relatório por relatório. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
 | Detalhamentos por tabela | 5 | Proteção imposta pelo sistema | Número máximo de detalhamentos por tabela. |
 | Métricas por tabela | 5 | Proteção imposta pelo sistema | Número máximo de métricas por tabela. |
 | Frequência de programação | 1 | Proteção imposta pelo sistema | As exportações podem ser agendadas uma vez (1) por dia ou em um agendamento mais longo (por exemplo: uma vez a cada 2 dias ou semanalmente). |
