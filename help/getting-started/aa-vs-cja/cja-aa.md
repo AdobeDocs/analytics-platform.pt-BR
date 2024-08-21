@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 835be84fd5f1398b88e265a21fe6f9665c758dce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2272'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 | Acesso à API de relatórios | Suporte completo: disponível por meio da [API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | Relatórios/projetos agendados | Suporte completo |
 | Segmentos | Suporte completo. Chamados agora de “Filtros”: observe que nenhum segmento existente no Analysis Workspace tradicional será transferido para o Customer Journey Analytics. |
-| Fontes de dados a nível de resumo | Suporte completo |
+| Fontes de dados de nível de resumo | Suporte completo |
 | Conjuntos de relatórios virtuais | Suporte completo. Agora chamado de [Visualizações de dados](/help/data-views/create-dataview.md). |
 | Curadoria de componentes do conjunto de relatórios virtual | Suporte completo. Agora parte das Visualizações de dados. |
 | Dimensões Dispositivo, Navegador, Referenciador e Tecnologia | Compatível com conjuntos de dados baseados no [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR) e com conjuntos de dados gerados pelo WebSDK. Consulte a [documentação sobre quais variáveis do Analytics são compatíveis por meio do ADC](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics.html?lang=pt-BR)Se você usa a coleção de dados do SDK da Web da Experience Platform, Dispositivo e as dimensões baseadas na pesquisa Dispositivo não são compatíveis no momento. Uma futura compatibilidade está planejada. Para adicionar pesquisas de dispositivos e navegadores à sequência de dados do SDK da web, consulte [esta documentação](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=pt-br) |
