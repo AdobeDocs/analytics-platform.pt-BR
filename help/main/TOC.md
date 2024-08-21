@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: d94f6d6b592b2ddecfa0b1024b9ae045b3c3ce11
 workflow-type: tm+mt
 source-wordcount: '1102'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -78,7 +78,7 @@ ht-degree: 98%
    + [Pesquisas B2B](../connections/transform-datasets-b2b-lookups.md)
 
 + Visualizações de dados {#cja-dataviews}
-   + [Visão geral das visualizações de dados](../data-views/data-views.md)
+   + [Visão geral das exibições de dados](../data-views/data-views.md)
    + [Criar ou editar uma visualização de dados](../data-views/create-dataview.md)
    + [Configurações da sessão](../data-views/session-settings.md)
    + Configurações de componente {#component-settings}
@@ -349,7 +349,7 @@ ht-degree: 98%
       + [Relatório de dados do Google Analytics no Customer Journey Analytics](../use-cases/ga/report.md)
    + Ingestão de dados {#data-ingestion}
       + [Assimilar e usar dados do Marketo Engage](../use-cases/data-ingestion/marketo.md)
-      + [Assimilar e use públicos do Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Assimilar e use públicos-alvo da Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Visualizações de dados {#data-views}
       + [Casos de uso de visualizações de dados](../use-cases/data-views/data-views-usecases.md)
       + [Uso de dimensões e métricas de ligação](../use-cases/data-views/binding-dimensions-metrics.md)
