@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
+source-git-commit: c1ed707f63db87566331783ea24f33cc69721af9
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 7%
+source-wordcount: '930'
+ht-degree: 5%
 
 ---
 
@@ -26,11 +26,11 @@ Quando duas pessoas usam o mesmo dispositivo e fazem uma compra, os dados de exe
 
 | Carimbo de data e hora | Nome da página | ID do dispositivo | Email |
 |---|---|---|---|
-| 2023-05-12 12:01 | Página inicial | 1234 | |
-| 2023-05-12 12:02 | Página do produto | 1234 | |
-| 2023-05-12 12:03 | Êxito do pedido | 1234 | <ryan@a.com> |
-| 2023-05-12 12:07 | Página do produto | 1234 | |
-| 2023-05-12 12:08 | Êxito do pedido | 1234 | <cassidy@a.com> |
+| 2023-05-12 12:01 | Página inicial | `1234` | |
+| 2023-05-12 12:02 | Página do produto | `1234` | |
+| 2023-05-12 12:03 | Êxito do pedido | `1234` | `ryan@a.com` |
+| 2023-05-12 12:07 | Página do produto | `1234` | |
+| 2023-05-12 12:08 | Êxito do pedido | `1234` | `cassidy@a.com` |
 
 Os eventos de sucesso (compra) do pedido atribuem os dados precisamente ao email correto. A forma como essa atribuição afeta sua análise depende de como você realiza a análise:
 
@@ -56,12 +56,12 @@ Ao usar a atribuição de última autenticação na compilação, as IDs compila
 
 | Carimbo de data e hora | Nome da página | ID do dispositivo | Email | ID com título |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Página inicial | 1234 | | <cassidy@a.com> |
-| 2023-05-12 12:02 | Página do produto | 1234 | | <cassidy@a.com> |
-| 2023-05-12 12:03 | Êxito do pedido | 1234 | <ryan@a.com> | <cassidy@a.com> |
-| 2023-05-12 12:07 | Página do produto | 1234 | | <cassidy@a.com> |
-| 2023-05-12 12:08 | Êxito do pedido | 1234 | <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Página inicial | 1234 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Página inicial | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:02 | Página do produto | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:03 | Êxito do pedido | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 2023-05-12 12:07 | Página do produto | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:08 | Êxito do pedido | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Página inicial | `1234` | | `cassidy@a.com` |
 
 
 #### Divisão de dispositivo
@@ -72,12 +72,12 @@ Ao usar a atribuição dividida por dispositivo na compilação, as IDs com tít
 
 | Carimbo de data e hora | Nome da página | ID do dispositivo | Email | ID com título |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Página inicial | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:02 | Página do produto | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:03 | Êxito do pedido | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 12:07 | Página do produto | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:08 | Êxito do pedido | 1234 | <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Página inicial | 1234 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Página inicial | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | Página do produto | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:03 | Êxito do pedido | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Página do produto | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:08 | Êxito do pedido | `1234` | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Página inicial | `1234` | | `cassidy@a.com` |
 
 
 ### Redefinição de ECID
@@ -89,12 +89,12 @@ Ao usar a redefinição da ECID, as IDs compiladas resolvem como mostrado na tab
 
 | Carimbo de data e hora | Nome da página | ID do dispositivo | Email | ID com título |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Página inicial | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:02 | Página do produto | 1234 | | <ryan@a.com> |
-| 2023-05-12 12:03 | Êxito do pedido | 1234 | <ryan@a.com> | <ryan@a.com> |
-| 2023-05-12 12:07 | Página do produto | 5678 | | <cassidy@a.com> |
-| 2023-05-12 12:08 | Êxito do pedido | 5678 | <cassidy@a.com> | <cassidy@a.com> |
-| 2023-05-13 11:08 | Página inicial | 5678 | | <cassidy@a.com> |
+| 2023-05-12 12:01 | Página inicial | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:02 | Página do produto | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:03 | Êxito do pedido | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Página do produto | 5678 | | `cassidy@a.com` |
+| 2023-05-12 12:08 | Êxito do pedido | 5678 | `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Página inicial | 5678 | | `cassidy@a.com` |
 
 ## Exposição do dispositivo compartilhado
 
