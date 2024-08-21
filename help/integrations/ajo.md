@@ -4,10 +4,10 @@ description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usand
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 13c3f99dba7725553c775df4492803f759ebead5
+source-git-commit: eda523204ec40a5660621cfd9e96ba77b61aa22c
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 100%
+source-wordcount: '3036'
+ht-degree: 69%
 
 ---
 
@@ -47,7 +47,6 @@ A conexão tem o nome **[!UICONTROL Conexão habilitada para o AJO (*nome da san
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL Conjunto de dados de entidade do AJO] | [!UICONTROL Esquema de registro de entidade do AJO] | [!UICONTROL Pesquisa] | [!UICONTROL Outro] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Eventos de etapa da jornada] | [!UICONTROL Esquema de evento de etapa da jornada do Journey Orchestration] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
-| [!UICONTROL Conjunto de dados de eventos de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de eventos de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de evento de feedback de mensagem do AJO] | [!UICONTROL Esquema de evento de feedback de mensagem do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de evento de experiência de rastreamento por push do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento por push do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
@@ -70,7 +69,7 @@ A visualização de dados tem o nome **Visualização de dados habilitada para o
 
   | Compatibilidade | Valor |
   |---|---|
-  | [!UICONTROL Definir como visualização de dados padrão no Adobe Journey Optimizer] | Habilitado (padrão).<br/><br/>Esta opção de configuração permite designar uma visualização de dados para usar com o Journey Optimizer, sem a necessidade de configuração manual. Para obter informações sobre como habilitar essa opção de configuração (se ainda não estiver habilitada por padrão), consulte a seção [Compatibilidade](/help/data-views/create-dataview.md#compatibility) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md). <br/><br/>Ao desabilitar a opção, uma caixa de diálogo pergunta se você deseja continuar com a alteração da visualização de dados padrão. Ao selecionar **[!UICONTROL Continuar]**, é necessário selecionar outra visualização de dados como padrão. Clique em **[!UICONTROL Confirmar]** para confirmar a seleção. Selecione **[!UICONTROL Cancelar]** para cancelar a alteração da visualização de dados padrão. |
+  | [!UICONTROL Definir como exibição de dados padrão no Adobe Journey Optimizer] | Habilitado (padrão).<br/><br/>Esta opção de configuração permite designar uma visualização de dados para usar com o Journey Optimizer, sem a necessidade de configuração manual. Para obter informações sobre como habilitar essa opção de configuração (se ainda não estiver habilitada por padrão), consulte a seção [Compatibilidade](/help/data-views/create-dataview.md#compatibility) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md). <br/><br/>Ao desabilitar a opção, uma caixa de diálogo pergunta se você deseja continuar com a alteração da visualização de dados padrão. Ao selecionar **[!UICONTROL Continuar]**, é necessário selecionar outra visualização de dados como padrão. Clique em **[!UICONTROL Confirmar]** para confirmar a seleção. Selecione **[!UICONTROL Cancelar]** para cancelar a alteração da visualização de dados padrão. |
 
   | Containers | Valor |
   |---|---|
@@ -88,7 +87,7 @@ A visualização de dados tem o nome **Visualização de dados habilitada para o
 
 - Na guia **Componentes**:
    - Todas as métricas e dimensões que têm [!UICONTROL (AJO)] anexado ao nome são adicionadas automaticamente como parte dessa configuração automática.
-   - Algumas métricas ou dimensões (que foram adicionadas automaticamente) são baseadas em campos derivados. Esses campos derivados são criados especificamente para essa integração. Por exemplo, a métrica [!UICONTROL Cliques na página de destino (AJO)] se baseia no campo derivado [!UICONTROL Cliques na página de destino].
+   - Algumas métricas ou dimensões que foram adicionadas automaticamente se baseiam em campos derivados. Esses campos derivados são criados especificamente para essa integração. Por exemplo, a métrica [!UICONTROL Cliques na página de destino (AJO)] se baseia no campo derivado [!UICONTROL Cliques na página de destino].
    - Algumas métricas ou dimensões têm configuração adicional. Por exemplo, [!UICONTROL Reclamação de spam (AJO)] tem as configurações [!UICONTROL Formato] e [!UICONTROL Incluir/Excluir valores] aplicadas.
    - Todas as métricas e dimensões adicionadas automaticamente têm um rótulo de contexto chamado `:`*`name_of_metric_or_dimension`*. Por exemplo, a métrica [!UICONTROL Cliques na página de destino (AJO)] tem o rótulo de contexto `:Landing page clicks (AJO)`.
 
@@ -101,7 +100,7 @@ A visualização de dados tem o nome **Visualização de dados habilitada para o
 
 ## Configurar manualmente uma visualização de dados para usar com o Journey Optimizer
 
-As seções a seguir descrevem como usar manualmente os dados gerados pelo Journey Optimizer para executar análises avançadas no Customer Journey Analytics. Isso é necessário somente se a [opção de configuração automática](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) for insuficiente para suas necessidades.
+As seções a seguir descrevem como usar manualmente os dados gerados pelo Journey Optimizer para executar análises avançadas no Customer Journey Analytics. Esta configuração manual é necessária somente se a [opção de configuração automática](#automatically-configure-a-customer-journey-analytics-data-view-to-be-used-with-adobe-journey-optimizer) for insuficiente para suas necessidades.
 
 ### Enviar dados do Journey Optimizer para a Experience Platform
 
@@ -124,7 +123,7 @@ Selecione e configure os seguintes conjuntos de dados:
 {style="table-layout:auto"}
 
 
-### Configure a visualização de dados para acomodar as dimensões e métricas do Journey Optimizer
+### Configurar a visualização de dados
 
 Após criar uma conexão, é possível criar uma ou mais [visualizações de dados](/help/data-views/create-dataview.md) para configurar as dimensões e métricas desejadas disponíveis no Customer Journey Analytics.
 
@@ -133,26 +132,45 @@ Após criar uma conexão, é possível criar uma ou mais [visualizações de dad
 >As discrepâncias de dados entre o Journey Optimizer e o Customer Journey Analytics normalmente são menores do que 1 a 2%. Discrepâncias maiores são possíveis para dados coletados nas últimas duas horas. Use intervalos de datas, excluindo a data de hoje, para atenuar discrepâncias envolvendo o tempo de processamento.
 
 
-#### Configurar dimensões na visualização de dados
+#### Configurar dimensões
 
 Você pode criar as seguintes dimensões em uma visualização de dados para obter uma paridade aproximada com dimensões semelhantes no Journey Optimizer. Consulte [Configurações do componente](/help/data-views/component-settings/overview.md) no Gerenciador de visualização de dados para obter detalhes sobre as opções de personalização de dimensões.
 
-| Dimensão | Elemento de esquema | Configurações de componente |
-| --- | --- | --- |
-| Nome da jornada | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyName` | Tipo de componente: dimensão |
-| Nome e versão da jornada | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNameAndVersion` | Tipo de componente: dimensão |
-| Nome do nó da jornada | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeName` | Tipo de componente: dimensão |
-| Tipo de nó da jornada | `_experience.customerJourneyManagement.`<br>`entities.journey.journeyNodeType` | Tipo de componente: dimensão |
-| Nome da campanha | `_experience.customerJourneyManagement.`<br>`entities.campaign.name` | Tipo de componente: dimensão |
-| Canal | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.channel._id` | Tipo de componente: dimensão |
-| Título de push | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.push.title` | Tipo de componente: dimensão |
-| Assunto do email | `_experience.customerJourneyManagement.`<br>`entities.channelDetails.email.subject` | Tipo de componente: dimensão |
-| Rótulo do link | `_experience.customerJourneyManagement.`<br>`messageInteraction.label` | Tipo de componente: dimensão |
-| Nome do experimento | `_experience.customerJourneyManagement.`<br>`entities.experiment.experimentName` | Tipo de componente: dimensão<br>Rótulos de contexto: experimento de experimentação |
-| Nome do tratamento | `_experience.customerJourneyManagement.`<br>`entities.experiment.treatmentName` | Tipo de componente: dimensão<br>Rótulos de contexto: variante de experimentação |
-| Motivo da falha de entrega de email | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.reason` | Tipo de componente: dimensão |
-| Motivo de exclusão da entrega de email | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageExclusion.reason` | Tipo de componente: dimensão |
-| Rótulo do elemento | `_experience.decisioning.propositionAction.label` | Tipo de componente: dimensão |
+| Dimensão | Descrição | Conjunto(s) de dados | Elemento de esquema | Configurações de componente |
+| --- | --- | --- | --- | --- |
+| Erro de execução da ação (AJO) | Condição de erro que impediu o tempo de execução da jornada de executar a ação. | Eventos de etapa da jornada | `_experience.journeyOrchestration.`<br/>`stepEvents.actionExecutionError ` | Tipo de componente: dimensão |
+| Rótulo da ação (AJO) | O nome de exibição gerado pelo cliente do elemento com o qual o usuário final interagiu. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionAction.label` | Tipo de componente: dimensão |
+| ID do lote (AJO) | GUID criado na invocação de cada nova instância de lote para uma Jornada ou Ação de campanha agendada. Por exemplo, se uma Jornada ou Ação de campanha programada for executada às 8h e às 10h, haverá dois batchInstanceID&#39;s diferentes. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, Conjunto de dados de evento de feedback de mensagens do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | ` _experience.customerJourneyManagement.`<br/>`messageExecution.batchInstanceID` | Tipo de componente: dimensão |
+| Carimbo de data e hora da instância do lote (AJO) | O carimbo de data e hora da instância do lote. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: Dimension (campo derivado) |
+| ID da campanha (AJO) | A ID da campanha. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.entities.`<br/>`campaign.campaignID` | Tipo de componente: dimensão |
+| Nome da campanha (AJO) | O nome da campanha. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.entities.`<br/>`campaign.name` | Tipo de componente: dimensão |
+| ID da versão do Campaign (AJO) | A ID da versão da campanha. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.campaign.campaignVersionID` | Tipo de componente: dimensão |
+| Canal (AJO) | O canal ao qual esses dados devem ser correlacionados. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.channel._id` | Tipo de componente: dimensão |
+| ID da correlação (AJO) | A ID da correlação. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.propositions.`<br/>`scopeDetails.correlationID` | Tipo de componente: dimensão |
+| ID da política de decisão (AJO) | A ID da política de decisão usada ao decidir quais itens incluir nessa proposta. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: Dimension (campo derivado) |
+| Domínio do destinatário do email (AJO) | Domínio do endereço de email | Conjunto de dados de evento de experiência de rastreamento de push do AJO, Conjunto de dados de evento de feedback de mensagens do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`emailChannelContext.address` | Tipo de componente: dimensão |
+| Assunto do email (AJO) | Assunto do email, não personalizado | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.entities.`<br/>`channelDetails.email.subject` | Tipo de componente: dimensão |
+| ID do evento (AJO) | Um identificador exclusivo do evento da série temporal. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_id` | Tipo de componente: Dimension (campo derivado) |
+| ID dos critérios de saída (AJO) | A ID dos critérios de saída usada para determinar se a jornada deve ser fechada. | Eventos de etapa da jornada | `_experience.journeyOrchestration.`<br/>`stepEvents.exitCriteriaID` | Tipo de componente: dimensão |
+| Nome dos critérios de saída (AJO) | Nome dos critérios de saída. | Eventos de etapa da jornada | `_experience.journeyOrchestration.`<br/>`stepEvents.exitCriteriaName` | Tipo de componente: dimensão |
+| ID do experimento (AJO) | A ID do experimento. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | Tipo de componente: dimensão |
+| Nome do experimento (AJO) | O nome do experimento. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.entities.`<br/>`experiment.experimentName` | Tipo de componente: Rótulos de contexto de Dimension: Experimento de experimentação |
+| Erro de obtenção (AJO) | Condição de erro que impediu o tempo de execução da jornada de executar a obtenção. | Eventos de etapa da jornada | `_experience.journeyOrchestration.`<br/>`stepEvents.fetchError` | Tipo de componente: dimensão |
+| É otimizado para o tempo de envio (AJO) | A execução da mensagem é SendTimeOptimized | Conjunto de dados de evento de experiência de rastreamento de push do AJO, Conjunto de dados de evento de feedback de mensagens do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageProfile.isSendTimeOptimized` | Tipo de componente: dimensão |
+| É uma jornada de teste (AJO) | O evento faz parte da execução de uma jornada de teste | Eventos de etapa da jornada | `_experience.journeyOrchestration.`<br/>`stepEvents.inTest` | Tipo de componente: dimensão |
+| É mensagem de teste (AJO) | A mensagem é enviada como execução de teste | Conjunto de dados de evento de experiência de rastreamento de push do AJO, Conjunto de dados de evento de feedback de mensagens do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageProfile.isTestExecution` | Tipo de componente: dimensão |
+| ID do item (AJO) | O ID do item. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositions.items.id` | Tipo de componente: dimensão |
+| Nome do item (AJO) | O nome do item | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositions.items.name` | Tipo de componente: dimensão |
+| ID da Ação de Jornada | ID da Ação de Jornada para a qual MessageExecution é acionado. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, Conjunto de dados de evento de feedback de mensagens do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageExecution.journeyActionID` | Tipo de componente: dimensão |
+| Nome do nó da ação da jornada (AJO) | O nome do nó da ação da jornada. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO, Conjunto de dados da entidade AJO | Campos derivados | Tipo de componente: Dimension (campo derivado) |
+| Nome do nó do evento da jornada (AJO) | Este valor é definido sempre que um segmento ou evento externo ocorre em uma jornada. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO, Conjunto de dados da entidade AJO | Campos derivados | Tipo de componente: Dimension (campo derivado) |
+| ID da jornada (AJO) | A ID da jornada. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyID` | Tipo de componente: dimensão |
+| Nome da jornada (AJO) | O nome da jornada. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyName` | Tipo de componente: dimensão |
+| Nome e versão da jornada (AJO) | O nome e a versão da jornada. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNameAndVersion` | Tipo de componente: dimensão |
+| ID da versão da jornada (AJO) | A ID da versão da jornada. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.entities.`<br/>`journey.journeyVersionID` | Tipo de componente: dimensão |
+| ID da página de destino (AJO) | Identificador exclusivo da página de destino. | Conjunto de dados do evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.landingpage.landingPageID` | Tipo de componente: dimensão |
+| Fonte da página de destino (AJO) | A origem da página de destino. | Conjunto de dados do evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: Dimension (campo derivado) |
+| URL do link (AJO) | O URL clicado pelo usuário. | Conjunto de dados do evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Tipo de componente: dimensão |
 
 {style="table-layout:auto"}
 
@@ -160,32 +178,44 @@ Você pode criar as seguintes dimensões em uma visualização de dados para obt
 
 Você pode criar as seguintes métricas em uma visualização de dados para obter uma paridade aproximada com métricas semelhantes no Journey Optimizer. Consulte as [Configurações do componente](/help/data-views/component-settings/overview.md) no Gerenciador de visualização de dados para obter detalhes sobre as opções de personalização de métricas.
 
-| Métrica | Descrição | Elemento de esquema | Configurações de componente |
-| --- | --- | --- | --- |
-| Rejeições | O número de mensagens que foram rejeitadas, incluindo rejeições imediatas e rejeições após a entrega. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica<br>Incluir valores de exclusão: se algum critério for atendido<br>Igual a: `bounce`, Igual a: `denylist` |
-| Rejeições após a entrega | Alguns serviços de email relatam que os emails foram entregues e depois os rejeitam. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.messageFailure.category` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `async` |
-| Cliques de email | A contagem de cliques nas mensagens. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `click` |
-| Aberturas de email | O número de mensagens abertas. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `open` |
-| Erros | O número de mensagens com erro. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `error` |
-| Exclusões | O número de mensagens excluídas. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `exclude` |
-| Envios | O número de mensagens aceitas por provedores de email. | `_experience.customerJourneyManagement.`<br>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `sent` |
-| Reclamações de spam | A contagem de reclamações de spam. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>Incluir valores de exclusão: igual a `spam_complaint` |
-| Cancelamentos de assinaturas | A contagem de cancelamentos de inscrição. | `_experience.customerJourneyManagement.`<br>`messageInteraction.interactionType` | Tipo de componente: métrica<br>valores de exclusão e exclusão: igual a `unsubscribe` |
-| Envios de borda | O número de vezes que a rede de borda envia uma mensagem para o SDK da Web ou móvel | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.send` | |
-| Exibições de entrada | O número de vezes que uma mensagem na Web ou no aplicativo é mostrada ao usuário | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.display` | |
-| Cliques de entrada | A contagem de cliques em mensagens na Web ou no aplicativo | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.interact` | |
-| Acionadores no aplicativo | O número de vezes que o mecanismo de decisão sugeriu que a mensagem deve ser exibida. O SDK móvel pode substituir a decisão, reduzindo o número de exibições reais. | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.trigger` | |
-| Descartes no aplicativo | O número de vezes que uma mensagem no aplicativo é removida da interface pelo SDK | Usar o elemento da string de esquema `_experience.decisioning.propositionEventType.dismiss` | |
-
-{style="table-layout:auto"}
-
-#### Configurar métricas calculadas no Analysis Workspace
-
-Depois de configurar as dimensões e métricas desejadas para o conjunto de dados do Journey Optimizer, você também pode configurar [métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md) para obter insights adicionais sobre esses dados. Essas métricas calculadas são baseadas nas métricas acima que foram criadas no Gerenciador de visualização de dados.
-
-| Métrica calculada | Descrição | Fórmula |
-| --- | --- | --- |
-| Mensagens enviadas | O número total de mensagens enviadas. Inclui mensagens bem-sucedidas ou com falha. | `[Sends] + [Bounces] - [Bounces After Delivery]` |
-| Mensagens entregues | O número de emails entregues aos clientes. | `[Sends] - [Bounces After Delivery]` |
+| Métrica | Descrição | Conjunto(s) de dados | Elemento de esquema | Configurações de componente |
+| --- | --- | --- | --- | --- |
+| Instalações de aplicativos (AJO) | Número de instalações de aplicativos | Conjunto de dados do evento de experiência de rastreamento de push do AJO | `application.installs.value` | Tipo de componente: métrica |
+| Inicializações do aplicativo (AJO) | Número de vezes que o aplicativo móvel é iniciado | Conjunto de dados do evento de experiência de rastreamento de push do AJO | `application.launches.value` | Tipo de componente: métrica |
+| Rejeições pelos canais de saída (AJO) | Contagem total de mensagens rejeitadas nos canais de saída | Conjunto de dados do evento de feedback de mensagem do AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica |
+| Cliques (AJO) | Contagem total de cliques em todos os canais | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de experiência de rastreamento de email do AJO, Conjunto de dados de evento de feedback de mensagem do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Contagem de ofertas substitutas (AJO) | Contagem de ofertas substitutas. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.propositions.items.`<br/>`itemSelection.selectionDetail.selectionType` | Tipo de componente: métrica |
+| Contagem de ofertas (AJO) | Contagem de ofertas. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | ` _experience.decisioning.`<br/>`propositions.items.id` | Tipo de componente: métrica |
+| Métrica de desduplicação (AJO) | Métrica de desduplicação | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_id` | Tipo de componente: métrica |
+| Entregue (AJO) | Contagem total de mensagens entregues. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Descartado (AJO) | Conta todas as vezes em que a mensagem no aplicativo é fechada pelo SDK da Adobe, independentemente da ação escolhida pelo usuário final para fechá-la. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Tipo de componente: métrica |
+| Exibições (AJO) | Essa contagem exibe as mensagens do AJO. Isso inclui aberturas de emails, exibições da web e exibições no aplicativo. As plataformas móveis não relatam exibições de mensagens SMS e de push, portanto, não são contadas. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de experiência de rastreamento de email do AJO, Conjunto de dados de evento de feedback de mensagem do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Aberturas de email (AJO) | Contagem total de aberturas de email | Conjunto de dados do evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Tipo de componente: métrica |
+| Cliques de entrada (AJO) | Contagem total de cliques nos canais de entrada | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionEventType.interact` | Tipo de componente: métrica |
+| Descartes de entrada (AJO) | Contagem total de recusas nos canais de entrada | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Tipo de componente: métrica |
+| Impressões de entrada (AJO) | Contagem total de impressões nos canais de entrada | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionEventType.display` | Tipo de componente: métrica |
+| Fim da jornada (AJO) | True se a etapa atual levou ao encerramento de uma instância da jornada. A última etapa em uma jornada para um determinado perfil foi executada com êxito. | Eventos de etapa da jornada | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | Tipo de componente: métrica |
+| Entradas da jornada (AJO) | “Verdadeiro” se o evento de etapa for um evento de entrada de jornada de um perfil. | Eventos de etapa da jornada | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Saídas da jornada (AJO) | True se a etapa atual levou ao encerramento de uma instância da jornada. Essa é a última etapa em que uma jornada para um determinado perfil foi executada com sucesso. | Eventos de etapa da jornada | `_experience.journeyOrchestration.`<br/>`stepEvents.instanceEnded` | Tipo de componente: métrica |
+| Falhas da jornada (AJO) | Fornece o estado atual da etapa que terminou de ser executada. Valores Possíveis: `Transitions` (A próxima etapa ocorrerá em uma transição de evento), `EndStep` (A última etapa nesta instância do jornada foi executada), `Error` (Esta etapa encontrou uma condição de erro, encerrando a instância do jornada atual), `TimedOut` (A etapa atual terminou devido ao tempo limite em uma busca ou ação). | Eventos de etapa da jornada | `_experience.journeyOrchestration.`<br/>`stepEvents.stepStatus` | Tipo de componente: métrica |
+| Cliques na página de destino (AJO) | Contagem total de cliques na página de destino. | Conjunto de dados do evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Conversões na página de destino (AJO) | Contagem total de conversões na página de destino. | Conjunto de dados do evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Tipo de componente: métrica |
+| Visualizações da página de destino (AJO) | Contagem total de visualizações da página de destino. | Conjunto de dados do evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Tipo de componente: métrica |
+| Entradas do nó (AJO) | “Verdadeiro” se o evento de etapa for um evento de entrada de nó de um perfil. | Eventos de etapa da jornada | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Cliques de saída (AJO) | Contagem total de cliques nos canais de saída | Conjunto de dados do evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Tipo de componente: métrica |
+| Erros de saída (AJO) | Contagem total de mensagens com erros nos canais de saída | Conjunto de dados do evento de feedback de mensagem do AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica |
+| Exclusões de saída (AJO) | Contagem total de eventos de exclusão nos canais de saída | Conjunto de dados do evento de feedback de mensagem do AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica |
+| Envios de saída (AJO) | Contagem total de mensagens enviadas pelos canais de saída | Conjunto de dados do evento de feedback de mensagem do AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.feedbackStatus` | Tipo de componente: métrica |
+| Ações personalizadas por push (AJO) | Contagem total de ações personalizadas na interação por push. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `eventType` | Tipo de componente: métrica |
+| Interações por push (AJO) | Número de vezes que o aplicativo móvel é iniciado devido a uma interação direta com uma mensagem por push | Conjunto de dados do evento de experiência de rastreamento de push do AJO | `application.launches.value` | Tipo de componente: métrica |
+| Envios (AJO) | Contagem total de mensagens enviadas em todos os canais | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Mensagens SMS de entrada (AJO) | Resposta de entrada de SMS. Por exemplo, parar, iniciar, assinar etc. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, Conjunto de dados de evento de feedback de mensagens do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | Tipo de componente: métrica |
+| Reclamação de spam (AJO) | Contagem total de reclamações de spam | Conjunto de dados do evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Tipo de componente: métrica |
+| Adições à lista de assinaturas (AJO) | Contagem total de adições à lista de assinaturas. | Conjunto de dados do evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Remoções da lista de assinaturas (AJO) | Contagem total de remoções da lista de assinaturas. | Conjunto de dados do evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Direcionado (AJO) | Essa contagem do número de vezes que uma proposta foi direcionada a uma pessoa. É o número de vezes que uma proposta foi considerada para exibição a uma pessoa. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Acionado (AJO) | A proposta foi escolhida para ser exibida pelo SDK da Adobe. Outros fatores podem impedir que ele seja exibido de fato. | Conjunto de dados de evento de experiência de rastreamento de push do AJO, eventos de etapa de Jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Tipo de componente: métrica |
+| Visitantes únicos no experimento (AJO) | Os visitantes únicos no experimento | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | Tipo de componente: métrica |
+| Cancelamentos de inscrições (AJO) | Contagem total de cancelamentos de inscrições | Conjunto de dados do evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Tipo de componente: métrica |
 
 {style="table-layout:auto"}
