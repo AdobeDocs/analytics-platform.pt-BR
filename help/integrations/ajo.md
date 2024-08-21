@@ -4,10 +4,10 @@ description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usand
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: eda523204ec40a5660621cfd9e96ba77b61aa22c
+source-git-commit: 5434b8432608ba5ee49f7062070fa1624af1b46a
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 69%
+source-wordcount: '3028'
+ht-degree: 70%
 
 ---
 
@@ -106,7 +106,7 @@ As seções a seguir descrevem como usar manualmente os dados gerados pelo Journ
 
 A Adobe Experience Platform serve como a fonte de dados central e o vínculo entre o Journey Optimizer e o Customer Journey Analytics. Consulte [Introdução aos conjuntos de dados](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) no guia do usuário do Journey Optimizer para ver as etapas de como enviar dados do Journey Optimizer para a Experience Platform como um conjunto de dados.
 
-### Criar uma conexão no Customer Journey Analytics
+### Criar uma conexão
 
 Depois que os dados do Journey Optimizer estiverem na Adobe Experience Platform, será possível [criar uma conexão](/help/connections/create-connection.md) com base nos seus conjuntos de dados do Journey Optimizer. Ou você pode adicionar os conjuntos de dados do Journey Optimizer a uma conexão já existente.
 
@@ -174,7 +174,7 @@ Você pode criar as seguintes dimensões em uma visualização de dados para obt
 
 {style="table-layout:auto"}
 
-#### Configurar métricas na visualização de dados
+#### Configurar métricas
 
 Você pode criar as seguintes métricas em uma visualização de dados para obter uma paridade aproximada com métricas semelhantes no Journey Optimizer. Consulte as [Configurações do componente](/help/data-views/component-settings/overview.md) no Gerenciador de visualização de dados para obter detalhes sobre as opções de personalização de métricas.
 
