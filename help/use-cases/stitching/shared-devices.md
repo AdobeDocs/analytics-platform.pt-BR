@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d94f6d6b592b2ddecfa0b1024b9ae045b3c3ce11
+source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 6%
+source-wordcount: '950'
+ht-degree: 7%
 
 ---
 
@@ -102,7 +102,9 @@ Considere vários fatores para entender corretamente a extensão dos dispositivo
 
 Para entender a exposição do dispositivo compartilhado, você pode pensar em executar as seguintes consultas.
 
-1. Entenda o número de dispositivos compartilhados. Você pode usar uma consulta que conte as IDs de dispositivo que têm duas ou mais IDs de pessoa associadas à ID de dispositivo. Um exemplo de consulta pode ser semelhante a:
+1. **Identificar dispositivos compartilhados**
+
+   Para entender o número de dispositivos compartilhados, execute uma consulta que conte as IDs de dispositivo com duas ou mais IDs de pessoa associadas. Isso ajuda a identificar dispositivos usados por vários indivíduos.
 
    ```sql
    SELECT COUNT(*)
@@ -116,7 +118,9 @@ Para entender a exposição do dispositivo compartilhado, você pode pensar em e
    ```
 
 
-2. Para os dispositivos compartilhados, resultantes da primeira consulta, é necessário entender quantos eventos do total de eventos podem ser atribuídos a esses dispositivos compartilhados. Essa atribuição oferece uma melhor noção do impacto de dispositivos compartilhados em seus dados e do impacto ao realizar a análise. Um exemplo de consulta pode ser semelhante a:
+2. **Atribuição de eventos a dispositivos compartilhados**
+
+   Para os dispositivos compartilhados identificados, determine quantos eventos do total podem ser atribuídos a esses dispositivos. Isso fornece informações sobre o impacto que os dispositivos compartilhados têm nos seus dados e as implicações para a análise.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -141,7 +145,9 @@ Para entender a exposição do dispositivo compartilhado, você pode pensar em e
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-3. Para os eventos atribuídos a dispositivos compartilhados (o resultado da segunda consulta), é necessário entender quantos desses eventos NÃO têm uma ID de pessoa. Caso contrário, quantos dos eventos de dispositivo compartilhado são eventos anônimos. Em última análise, o algoritmo (última autenticação, divisão de dispositivo, redefinição de ECID) selecionado para melhorar a qualidade dos dados afeta esses eventos de dispositivo compartilhado anônimo. Um exemplo de consulta pode ser semelhante a:
+3. **Identificar eventos anônimos em dispositivos compartilhados**
+
+   Entre os eventos atribuídos a dispositivos compartilhados, identifique quantos carecem de uma ID de pessoa, indicando eventos anônimos. O algoritmo escolhido (por exemplo, last-auth, device-split ou ECID-reset) para aprimorar a qualidade dos dados afetará esses eventos anônimos.
 
    ```sql
    SELECT COUNT(IF(shared_persistent_ids.persistent_id IS NOT NULL, 1, null)) shared_persistent_ids_events,
@@ -166,7 +172,9 @@ Para entender a exposição do dispositivo compartilhado, você pode pensar em e
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
 
-4. Por fim, você quer entender a exposição que cada cliente teria devido à classificação incorreta do evento. Para obter essa exposição, é necessário calcular, para cada dispositivo compartilhado, a porcentagem de eventos anônimos relacionados ao número total de eventos. Um exemplo de consulta pode ser semelhante a:
+4. **Calcular exposição a partir da classificação incorreta do evento**
+
+   Por fim, avalie o risco que cada cliente pode enfrentar devido à classificação incorreta do evento. Calcule a porcentagem de eventos anônimos sobre o total de eventos para cada dispositivo compartilhado. Isso ajuda a entender o impacto potencial na precisão dos dados do cliente.
 
    ```sql
    SELECT COUNT(*) AS total_events,

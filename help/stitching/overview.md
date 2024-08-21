@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: f390789287721a777947093123f672e0a854540a
+source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3919'
 ht-degree: 12%
 
 ---
@@ -86,7 +86,7 @@ A compilação faz um mínimo de duas passagens de dados em um determinado conju
 
 - **Repetir compilação**: &quot;repete&quot; dados com base em identificadores exclusivos (IDs transitórias) que ele aprendeu. É nesse estágio que as ocorrências de dispositivos desconhecidos anteriormente (IDs persistentes) são compiladas (em IDs transitórias). A Adobe oferece dois intervalos de repetição:
    - **Diariamente**: os dados são repetidos todos os dias com uma janela de retrospectiva de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os visitantes não autenticados devem se autenticar no mesmo dia em que visitam o site.
-   - **Semanalmente**: os dados são repetidos uma vez por semana com a janela de pesquisa selecionada (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
+   - **Semanalmente**: os dados são repetidos uma vez por semana com a janela de pesquisa selecionada (consulte [opções](#select-options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
 
 - **Privacidade**: quando solicitações relacionadas à privacidade são recebidas, além de remover a identidade solicitada, qualquer compilação dessa identidade em eventos não autenticados deve ser desfeita.
 
@@ -226,6 +226,8 @@ A compilação faz um mínimo de duas passagens de dados em um determinado conju
 - **Repetir compilação**: &quot;repete&quot; dados com base em identidades atualizadas do gráfico de identidade. É nesse estágio que as ocorrências de dispositivos anteriormente desconhecidos (IDs persistentes) são compiladas, pois o gráfico de identidade resolveu a identidade de um namespace. A Adobe oferece dois intervalos de repetição:
    - **Diariamente**: os dados são repetidos todos os dias com uma janela de retrospectiva de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os visitantes não autenticados devem se autenticar no mesmo dia em que visitam o site.
    - **Semanalmente**: os dados são repetidos uma vez por semana com a janela de pesquisa (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
+   - **Quinzenalmente**: os dados são repetidos uma vez a cada duas semanas com a janela de pesquisa (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de duas semanas não são reprocessados até a próxima repetição quinzenal.
+   - **Mensalmente**: os dados são repetidos uma vez por mês com a janela de retrospectiva (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
 
 - **Privacidade**: quando solicitações relacionadas à privacidade são recebidas, além de remover a identidade solicitada do conjunto de dados de origem, qualquer compilação dessa identidade em eventos não autenticados deve ser desfeita. Além disso, a identidade deve ser removida do gráfico de identidade para evitar futuras compilações baseadas em gráfico para essa identidade específica.
 
