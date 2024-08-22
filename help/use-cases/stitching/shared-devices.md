@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: c1ed707f63db87566331783ea24f33cc69721af9
+source-git-commit: 1a5646700dba6362a35158890f2917fc472fbddd
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 5%
+source-wordcount: '977'
+ht-degree: 4%
 
 ---
 
@@ -39,7 +39,7 @@ Os eventos de sucesso (compra) do pedido atribuem os dados precisamente ao email
 
 ## Melhorar a análise centrada em pessoas
 
-Para melhorar a análise centrada em pessoas de dispositivos compartilhados, você tem duas opções: você pode usar a compilação ou implementar a funcionalidade de redefinição da ECID. Ambas as abordagens são discutidas em mais detalhes nas seções abaixo.
+Os dados de exemplo são uma combinação de atividades autenticadas e não autenticadas para o mesmo dispositivo. O desafio é atribuir uma pessoa ao tráfego não autenticado, para que você possa executar uma análise centrada em pessoas e impedir que o Customer Jornada Analytics descarte as atividades que não têm um valor de ID de pessoa. Para resolver esse desafio, você tem duas opções: pode usar a compilação ou implementar a funcionalidade de redefinição da ECID. Ambas as opções são discutidas em mais detalhes nas seções abaixo.
 
 ### Compilação
 
