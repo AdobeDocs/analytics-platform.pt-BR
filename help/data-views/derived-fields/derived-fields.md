@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 0a046a89e1742d3470a78ebad4f93cb3b4ea7f4c
+source-git-commit: 1fddf0e8421b35021a1f1641a684cacbc0ec1f0d
 workflow-type: tm+mt
 source-wordcount: '8366'
 ht-degree: 12%
@@ -26,7 +26,7 @@ Exemplos de casos de uso:
 
 - Defina um campo Canal de marketing derivado que determine o canal de marketing adequado com base em uma ou mais condições (por exemplo, parâmetro de URL, URL da página, nome da página).
 
-## Interface de campo derivada
+## Interface de campo derivada {#interface}
 
 Ao criar ou editar um campo derivado, você usa a interface de campo derivado.
 
@@ -42,7 +42,7 @@ Ao criar ou editar um campo derivado, você usa a interface de campo derivado.
 
 {style="table-layout:auto"}
 
-## Assistente de modelo de campo
+## Assistente de modelo de campo {#wizard}
 
 Quando você acessa a interface de campo derivada pela primeira vez, o assistente [!UICONTROL Iniciar com um modelo de campo] é exibido.
 
@@ -51,7 +51,7 @@ Quando você acessa a interface de campo derivada pela primeira vez, o assistent
 
 Sua caixa de diálogo de campo derivado é preenchida com regras (e funções) necessárias ou úteis para o tipo de campo selecionado. Consulte [Modelos de função](#function-templates) para obter mais informações sobre os modelos disponíveis.
 
-## Interface de regras
+## Interface de regras {#rules}
 
 Ao definir uma regra no construtor de regras, use a interface de regras.
 
@@ -66,7 +66,7 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 
 {style="table-layout:auto"}
 
-## Criar um campo derivado
+## Criar um campo derivado {#create}
 
 1. Selecione uma visualização de dados existente ou crie uma visualização de dados. Consulte [Visualizações de dados](../data-views.md) para obter mais informações.
 
@@ -81,7 +81,7 @@ Ao definir uma regra no construtor de regras, use a interface de regras.
 5. O novo campo derivado é adicionado ao contêiner [!UICONTROL Campos derivados >], como parte dos **[!UICONTROL ** Campos de esquema **]** no painel esquerdo da visualização de dados.
 
 
-## Editar um campo derivado
+## Editar um campo derivado {#edit}
 
 1. Selecione uma visualização de dados existente. Consulte [Visualizações de dados](../data-views.md) para obter mais informações.
 
@@ -117,7 +117,7 @@ Como alternativa, se você tiver usado um campo derivado como um componente para
 
 
 
-## Excluir um campo derivado
+## Excluir um campo derivado {#delete}
 
 1. Selecione uma visualização de dados existente. Consulte [Visualizações de dados](../data-views.md) para obter mais informações.
 
@@ -153,12 +153,12 @@ Como alternativa, se você tiver usado um campo derivado como um componente para
 
 
 
-## Modelos de função
+## Modelos de função {#templates}
 
 Para criar rapidamente um campo derivado para casos de uso específicos, os modelos de função estão disponíveis. Esses modelos de função podem ser acessados da área do seletor na interface de campo derivada ou são apresentados no primeiro uso no assistente [!UICONTROL Iniciar com um modelo de campo].
 
 
-### Canais de marketing
+### Canais de marketing {#mchannel}
 
 Este modelo de função usa uma coleção de regras para criar canais de marketing.
 
@@ -170,7 +170,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Rejeições
+### Rejeições {#bounces}
 
 Este modelo de função usa um conjunto de regras para identificar rejeições de site.
 
@@ -182,7 +182,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Combinação de várias dimensões
+### Combinação de várias dimensões {#multi-dim}
 
 Este modelo de função combina dois valores em um.
 
@@ -194,7 +194,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Nome amigável do conjunto de dados
+### Nome amigável do conjunto de dados {#friendlyname}
 
 Esse modelo de função fornece um nome de conjunto de dados legível.
 
@@ -206,7 +206,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Nome da página do URL
+### Nome da página do URL {#pagename}
 
 Este modelo de função cria um nome de página simples.
 
@@ -218,7 +218,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Temporada de feriados
+### Temporada de feriados {#holiday}
 
 Esse modelo de função classifica os principais momentos do ano.
 
@@ -230,7 +230,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Metas mensais
+### Metas mensais {#goals}
 
 Esse modelo de função define metas mensais personalizadas.
 
@@ -242,7 +242,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Obter todos os valores na lista delimitada
+### Obter todos os valores na lista delimitada {#allvalues}
 
 Este modelo de função converte uma lista limitada em uma matriz.
 
@@ -254,7 +254,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Obter o primeiro valor na lista delimitada
+### Obter o primeiro valor na lista delimitada {#firstvalue}
 
 Este modelo de função obtém o primeiro valor em uma lista delimitada.
 
@@ -266,7 +266,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Obter o último valor na lista delimitada
+### Obter o último valor na lista delimitada {#lastvalue}
 
 Este modelo de função obtém o último valor em uma lista delimitada.
 
@@ -278,7 +278,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Nome do Domínio
+### Nome do Domínio {#domain}
 
 Este modelo de função extrai o nome de domínio usando uma expressão regular.
 
@@ -290,7 +290,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Obter parâmetro da string de consulta
+### Obter parâmetro da string de consulta {#querystring}
 
 Este modelo de função extrai valores da sequência de consulta.
 
@@ -302,7 +302,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Campo de transição
+### Campo de transição {#transition}
 
 Esse modelo de função faz a transição dos relatórios de um campo para outro.
 
@@ -314,7 +314,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Detecção de bots simples
+### Detecção de bots simples {#botdetection}
 
 Este modelo de função implementa a identificação de bots de luz.
 
@@ -326,7 +326,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Link de saída
+### Link de saída {#exit}
 
 Este modelo de função identifica o último link clicado em uma sessão.
 
@@ -338,7 +338,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 +++
 
-### Link de download
+### Link de download {#download}
 
 Esse modelo de função sinaliza links de download comuns.
 
@@ -361,7 +361,7 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 
 -->
 
-## Referência de função
+## Referência de função {#functionref}
 
 {{select-package}}
 
@@ -384,7 +384,7 @@ Para cada função compatível, encontre os detalhes abaixo sobre:
 
 <!-- CASE WHEN -->
 
-### Caso Quando
+### Caso Quando {#casewhen}
 
 Aplica condicionais, com base em critérios definidos de um ou mais campos. Esses critérios são usados para definir os valores em um novo campo derivado, com base na sequência das condições.
 
@@ -614,7 +614,7 @@ As restrições a seguir se aplicam e são aplicadas quando os valores *selecion
 
 <!-- CLASSIFY -->
 
-### Classificar
+### Classificar {#classify}
 
 Define um conjunto de valores que são substituídos por valores correspondentes em um novo campo derivado.
 
@@ -749,7 +749,7 @@ A seguinte funcionalidade adicional está disponível na interface Classificar r
 
 <!-- CONCATENATE -->
 
-### Concatenar
+### Concatenar {#concatenate}
 
 Combina valores de campo em um único campo derivado novo com delimitadores definidos.
 
@@ -826,7 +826,7 @@ Você define um campo derivado de `Origin - Destination`. Use a função [!UICON
 +++
 
 
-### Desduplicação
+### Desduplicação {#dedup}
 
 Impede a contagem de um valor várias vezes.
 
@@ -911,7 +911,7 @@ Você define um novo campo derivado de `Tracking Code (deduplicated)`. Use a fun
 
 <!-- FIND AND REPLACE -->
 
-### Localizar e substituir
+### Localizar e substituir {#find-replace}
 
 Localiza todos os valores em um campo selecionado e substitui esses valores por um valor diferente em um novo campo derivado.
 
@@ -981,7 +981,7 @@ Você define um campo derivado de `Email Marketing (updated)`. Você usa a funç
 
 <!-- LOOKUP -->
 
-### Pesquisa
+### Pesquisa {#lookup}
 
 Valores de pesquisa usando um campo de um conjunto de dados de pesquisa e retorna um valor em um novo campo derivado ou para processamento de regras adicional.
 
@@ -1032,7 +1032,7 @@ Você pode inserir rapidamente uma função [!UICONTROL Pesquisa] no construtor 
 
 <!-- LOWERCASE -->
 
-### Minúsculas
+### Minúsculas {#lowercase}
 
 Converte valores de um campo em minúsculas e o armazena em um novo campo derivado.
 
@@ -1083,7 +1083,7 @@ Você define um campo derivado de `Product Names`. Use a função [!UICONTROL MI
 
 <!-- MATH -->
 
-### Matemática
+### Matemática {#math}
 
 Use operadores matemáticos básicos (adicionar, subtrair, multiplicar, dividir e elevar a uma potência) em campos numéricos.
 
@@ -1164,7 +1164,7 @@ Use a função Math para cálculos baseados em nível de ocorrência. Use a fun�
 
 <!-- MERGE FIELDS -->
 
-### Mesclar campos
+### Mesclar campos {#merge}
 
 Mescla valores de dois campos diferentes em um novo campo derivado.
 
@@ -1230,7 +1230,7 @@ Você deve selecionar o mesmo tipo de campos em uma regra Mesclar campos. Por ex
 
 <!-- NEXT OR PREVIOUS -->
 
-### Próximo ou anterior
+### Próximo ou anterior {#next-previous}
 
 Pega um campo como entrada e resolve o valor seguinte ou anterior desse campo dentro do escopo da sessão ou do uso. Isso só se aplica aos campos da tabela Visita e Evento.
 
@@ -1302,7 +1302,7 @@ Você só pode selecionar campos que pertençam à tabela Visita ou Evento.
 
 <!-- REGEX REPLACE -->
 
-### Substituição de regex
+### Substituição de regex {#regex-replace}
 
 Substitui um valor de um campo usando uma expressão regular em um novo campo derivado.
 
@@ -1399,7 +1399,7 @@ O Customer Journey Analytics usa um subconjunto da sintaxe de regex Perl. As seg
 
 <!-- SPLIT -->
 
-### Dividir
+### Dividir {#split}
 
 Divide um valor de um campo em um novo campo derivado.
 
@@ -1491,7 +1491,7 @@ Você cria um campo derivado `Second Response` para pegar o último valor do cam
 
 <!-- SUMMARIZE -->
 
-### Resumir
+### Resumir {#summarize}
 
 Aplica funções do tipo agregação a métricas ou dimensões em níveis de evento, sessão e usuário.
 
