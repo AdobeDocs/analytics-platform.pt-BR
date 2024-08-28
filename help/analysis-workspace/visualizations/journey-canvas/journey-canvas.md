@@ -5,10 +5,10 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: fb2a24d6f7a93e941a76db0d10c515381c476c31
+source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 3%
+source-wordcount: '1193'
+ht-degree: 2%
 
 ---
 
@@ -94,16 +94,25 @@ A tela de Jornada fornece uma análise profunda e completa que não é possível
 
 Usar a tela do Jornada para analisar jornadas que foram criadas no Journey Optimizer oferece vários benefícios:
 
-| Recurso | Benefícios |
-|---------|----------|
-| **Criar eventos** | Crie eventos facilmente usando qualquer dimensão, métrica ou filtro de Customer Journey Analytics. <p>No Journey Optimizer, um usuário técnico deve criar um evento antes que ele possa ser adicionado a uma jornada.</p> |
-| **Criar públicos-alvo de nós personalizados** | Crie públicos-alvo com base em um nó personalizado criado na jornada dentro da visualização da tela de Jornada. (Inicia o construtor de público-alvo do Customer Journey Analytics.) <p>No Journey Optimizer, você pode criar públicos-alvo somente para atividades predefinidas.</p> |
-| **Fallthrough e fallout** | B3 |
-| **Analisar eventos** | B3 |
-| **Renomear eventos** | B3 |
-| **Excluir eventos** | B3 |
-| **Combinar eventos** | B3 |
-| **Conectar eventos** | B3 |
+* Crie eventos usando qualquer dimensão de Customer Journey Analytics, métrica, filtro ou intervalo de datas.
+
+  No Journey Optimizer, um usuário técnico deve criar um evento antes que ele possa ser adicionado a uma jornada.
+
+* Criar públicos-alvo com base em um nó personalizado criado por você (inicia o construtor de público-alvo do Customer Journey Analytics).
+
+  No Journey Optimizer, você pode criar públicos-alvo somente para atividades predefinidas.
+
+* Analisar fallthrough e fallout
+
+* Analisar eventos com qualquer dimensão
+
+* Combinar eventos
+
+* Conectar eventos
+
+* Renomear e excluir eventos
+
+* Muito mais
 
 ### Sincronização entre a tela do Journey Optimizer e do Jornada
 
@@ -144,8 +153,6 @@ Certos termos que significam uma coisa no Journey Optimizer significam outra coi
 | Termo | Tela da jornada | Journey Optimizer |
 |---------|----------|---------|
 | **Evento** | Uma das várias métricas padrão disponíveis no Customer Journey Analytics. Essa métrica conta itens como receita, assinaturas ou leads gerados. | A categoria de atividade que aciona uma jornada personalizada, como uma compra online. |
-| A2 | B2 | C2 |
-| A3 | B3 | C3 |
 
 ### Analisar uma jornada do Journey Optimizer na tela do Jornada
 

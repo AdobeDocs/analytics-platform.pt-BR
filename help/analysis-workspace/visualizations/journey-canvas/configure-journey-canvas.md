@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: e06793a0ce73fa8d6aa9b798209bfc044e696931
+source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4138'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,12 @@ A lógica aplicada aos nós quando eles são combinados difere, dependendo dos t
 ### Conectar nós
 
 Você pode conectar nós que já estão na tela ou pode conectar um nó ao adicioná-lo à tela.
+
+#### Lógica ao conectar nós
+
+Ao conectar nós na tela do Jornada, eles são conectados por meio do operador THEN. Isso também é conhecido como [filtragem sequencial](/help/components/filters/seg-sequential-build.md).
+
+Você pode exibir a lógica dos nós conectados clicando com o botão direito do mouse no nó e selecionando [!UICONTROL **Criar filtro do nó**]. A lógica é mostrada na seção [!UICONTROL **Definição**].
 
 #### Conectar nós existentes
 
