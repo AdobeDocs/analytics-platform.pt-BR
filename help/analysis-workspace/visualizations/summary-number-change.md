@@ -4,7 +4,7 @@ title: Número do resumo e alteração do resumo
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 3a63c22c080b0d4d4848d707c6219902de687abd
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 97%
@@ -35,7 +35,7 @@ Clique na engrenagem **Configurações de visualização** no canto superior dir
 
 ## Visualização da alteração do resumo {#summary-change}
 
-Use a visualização Alteração de resumo para mostrar o delta (mudança) entre dois números. A cor verde e vermelha da Alteração de resumo pode ser controlada por meio da [polaridade do evento personalizado](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html?lang=pt-BR) ou da opção [Mostrar tendência ascendente como](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=pt-BR) de uma métrica calculada.
+Use a visualização Alteração de resumo para mostrar o delta (mudança) entre dois números. A cor verde e vermelha da Alteração de resumo pode ser controlada por meio da [polaridade do evento personalizado](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) ou da opção [Mostrar tendência ascendente como](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=pt-BR) de uma métrica calculada.
 
 Essa visualização se comporta das seguintes maneiras:
 
