@@ -5,7 +5,8 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
+exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
+source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -14,9 +15,11 @@ ht-degree: 2%
 
 # Visão geral da tela de jornada
 
+{{release-limited-testing}}
+
 A visualização da tela de Jornada permite analisar e obter insights profundos sobre as jornadas fornecidas aos usuários e clientes. Ele permite definir uma jornada do zero ou visualizá-la no Journey Optimizer e, em seguida, ver como as pessoas saíram (abandonaram) ou continuaram (atravessaram) a jornada.
 
-Você pode criar análises de jornadas de usuário usando qualquer combinação de eventos, itens de dimensão, filtros e intervalos de datas para criar nós de jornada. Conecte os nós para criar o fluxo da jornada e incluir vários caminhos e pontos de decisão. Arraste nós na tela para reorganizar os eventos e as condições da jornada. Atualizações de dados em tempo real à medida que você faz alterações.
+Você pode [criar análises de jornadas de usuário](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) usando qualquer combinação de eventos, itens de dimensão, filtros e intervalos de datas para criar nós de jornada. Conecte os nós para criar o fluxo da jornada e incluir vários caminhos e pontos de decisão. Arraste nós na tela para reorganizar os eventos e as condições da jornada. Atualizações de dados em tempo real à medida que você faz alterações.
 
 ## Recursos principais
 
@@ -161,5 +164,3 @@ Para obter informações sobre como analisar uma jornada do Journey Optimizer na
 ## Criar análises na tela de Jornada
 
 Você pode criar análises na tela do Jornada com base em qualquer dimensão ou métrica disponível no Analysis Workspace. Ou você pode analisar jornadas que foram criadas no Journey Optimizer. Para obter mais informações, consulte [Configurar uma visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
-
-

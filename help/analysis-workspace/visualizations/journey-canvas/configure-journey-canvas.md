@@ -5,14 +5,17 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 777c37dbd8bc678021ced5f1697058dc7812f5a8
+exl-id: 53984934-6fba-4f15-aeeb-d91039260553
+source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
 workflow-type: tm+mt
-source-wordcount: '4138'
+source-wordcount: '4276'
 ht-degree: 1%
 
 ---
 
 # Configurar uma visualização da tela de Jornada
+
+{{release-limited-testing}}
 
 A visualização da tela de Jornada permite analisar e obter insights profundos sobre as jornadas fornecidas aos usuários e clientes.
 
@@ -78,9 +81,9 @@ Você precisa [começar a criar uma visualização da tela de Jornada](#begin-bu
    | Configuração | Função |
    |---------|----------|
    | [!UICONTROL **Tipo de nó**] | Permite configurar quais tipos de nó são mostrados na visualização. Para ocultar um tipo de nó da visualização, selecione o (x) ao lado do tipo de nó ou desmarque-o do menu suspenso. Para mostrar um tipo de nó oculto, selecione-o no menu suspenso. <p>Dependendo do conteúdo da visualização, os possíveis tipos de nó incluem:</p><ul><li>[!UICONTROL **Ler segmento**]</li><li>[!UICONTROL **Fim**]</li><li>[!UICONTROL **Dimensão**]</li><li>[!UICONTROL **Métrica**]</li></ul><p>**Observação**: considere o seguinte ao usar este campo:</p><ul><li>Essa opção é exibida somente quando os dados do Journey Optimizer são detectados na visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</li><li>Depois de modificar uma jornada do Journey Optimizer na Tela de Jornada, essa opção não está mais disponível. Para obter mais informações, consulte [Diferenças visuais após modificar uma jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
-   | [!UICONTROL **Valor percentual**] | Escolha entre as seguintes opções: <ul><li>[!UICONTROL **Percentual do total**]: a porcentagem de todas as pessoas incluídas na visualização de dados dentro do intervalo de datas do painel.</li><li>[!UICONTROL **Percentual do nó inicial**]: a porcentagem de todas as pessoas incluídas no nó inicial.<p>Essa opção só estará disponível se você tiver um único nó inicial. Ela fica oculta se você tiver vários nós iniciais.</p></li></ul> |
+   | [!UICONTROL **Valor percentual**] | Escolha entre as seguintes opções: <ul><li>[!UICONTROL **Percentual do total**]: a porcentagem de todas as pessoas incluídas na visualização de dados dentro do intervalo de datas do painel.</li><li>[!UICONTROL **Porcentagem do nó inicial**]: a porcentagem de todas as pessoas incluídas na visualização de dados no intervalo de datas do painel que também atendem aos critérios do nó inicial da jornada. (Essa opção está disponível somente no jornada com um único nó inicial; ela está desativada no jornada com vários nós iniciais. Um nó inicial é definido como qualquer nó que não tenha uma conexão.)</li></ul> |
    | [!UICONTROL **Configurações de seta**] | Escolha entre as seguintes opções:<ul><li>[!UICONTROL **Nenhum**]: </li><li>[!UICONTROL **Condição**]: </li><li>[!UICONTROL **Todos os rótulos**]: </li></ul><p>**Observação**: esta opção é exibida somente quando dados do Journey Optimizer são detectados na exibição de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</p> |
-   | [!UICONTROL **Mostrar fallout**] | Exibir dados de fallout de cada nó, mostrando o número e a porcentagem de pessoas que deixaram a jornada em um determinado nó. |
+   | [!UICONTROL **Mostrar fallout**] | Exibir dados de fallout de cada nó. Isso mostra o número e a porcentagem de pessoas que deixaram a jornada em um determinado nó. <p>As pessoas que abandonaram a jornada podem ter executado outras ações no site, mas nunca atenderam aos critérios definidos pelo próximo nó na jornada.</p> |
 
 1. Continuar com [Adicionar um nó](#add-a-node).
 
@@ -92,7 +95,7 @@ Para adicionar um nó a uma visualização da tela de Jornada:
 
 1. No Analysis Workspace, abra uma visualização existente da tela de Jornada ou [comece a criar uma nova](#begin-building-a-journey-canvas-visualization).
 
-1. Arraste métricas, dimensões, itens de dimensão, filtros ou intervalos de datas do painel esquerdo para a tela. Métricas calculadas não são suportadas. Além disso, as métricas ou dimensões baseadas em um [conjunto de dados de resumo](/help/data-views/summary-data.md) não são suportadas.
+1. Arraste métricas, dimensões, itens de dimensão, filtros ou intervalos de datas do painel esquerdo para a tela. Métricas baseadas em um [campo derivado](/help/data-views/derived-fields/derived-fields.md) têm suporte. No entanto, métricas calculadas, bem como qualquer métrica ou dimensão que seja baseada em um [conjunto de dados de resumo](/help/data-views/summary-data.md), não são suportadas.
 
    Você pode selecionar vários componentes no painel à esquerda, mantendo pressionada a tecla Shift ou a tecla Command (no Mac) ou Ctrl (no Windows).
 
@@ -221,15 +224,25 @@ A lógica aplicada aos nós quando eles são combinados difere, dependendo dos t
 
 Você pode conectar nós que já estão na tela ou pode conectar um nó ao adicioná-lo à tela.
 
+#### Setas entre nós
+
+Os nós são conectados por uma seta. A direção e a largura da seta têm significado:
+
+* **Direção**: indica a sequência de eventos da jornada
+
+* **Largura**: indica o volume percentual de um nó para outro
+
 #### Lógica ao conectar nós
 
 Ao conectar nós na tela do Jornada, eles são conectados por meio do operador THEN. Isso também é conhecido como [filtragem sequencial](/help/components/filters/seg-sequential-build.md).
+
+Os nós são conectados como um &quot;caminho eventual&quot;, o que significa que os visitantes são contados desde que eventualmente se movam de um nó para outro, independentemente de quaisquer eventos que ocorram entre os dois nós.
 
 Você pode exibir a lógica dos nós conectados clicando com o botão direito do mouse no nó e selecionando [!UICONTROL **Criar filtro do nó**]. A lógica é mostrada na seção [!UICONTROL **Definição**].
 
 #### Conectar nós existentes
 
-A seta entre os nós na tela de Jornada determina a sequência de eventos na jornada.
+O Jornada não pode ser circular, fazendo loopback para nós conectados anteriormente.
 
 Para conectar nós na tela do Jornada:
 
@@ -239,7 +252,7 @@ Para conectar nós na tela do Jornada:
 
 1. Arraste qualquer um dos 4 pontos azuis para qualquer um dos 4 lados do nó ao qual você deseja se conectar.
 
-   Uma seta é exibida, conectando os 2 nós. A seta indica a direção em que as pessoas se movem pela jornada.
+   Uma seta é exibida, conectando os 2 nós. Consulte [Setas entre nós](#arrows-between-nodes) para obter mais informações.
 
 #### Conectar nós ao adicionar um nó
 
@@ -249,7 +262,7 @@ Para obter mais informações, consulte [Adicionar um nó](#add-a-node).
 
 ### Alterar a cor de um nó ou seta
 
-É possível alterar a cor de um nó ou seta na tela de desenho.
+É possível personalizar visualmente uma jornada alterando a cor de qualquer nó ou seta na tela de desenho. Por exemplo, você pode ajustar uma cor para indicar um evento desejável ou indesejável.
 
 A opção para alterar a cor está disponível para os seguintes objetos na tela de desenho:
 
@@ -339,7 +352,7 @@ Para criar um público-alvo:
 
 ### Exibir dados de tendência
 
-Você pode exibir os dados de tendência em um gráfico de linhas para objetos na tela de Jornada. &lt;!—, com alguns dados de detecção de anomalias pré-criados (essa é a definição no Fallout)>
+Você pode exibir os dados de tendência em um gráfico de linhas para objetos na tela de Jornada. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 A opção de definir tendência está disponível para os seguintes objetos na tela:
 
@@ -474,4 +487,3 @@ Para excluir setas entre nós na tela de Jornada:
 No Journey Optimizer, abra a jornada que deseja analisar na tela do Jornada.
 
 1. Selecione [!UICONTROL **Analisar no CJA**]. <!-- ?? -->
-
