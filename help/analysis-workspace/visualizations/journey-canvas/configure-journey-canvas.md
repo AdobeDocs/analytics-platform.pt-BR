@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
+source-git-commit: bd50c5bdcce0617da78eed918338e44474419e31
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: '4359'
 ht-degree: 1%
 
 ---
@@ -65,16 +65,20 @@ Consulte [visão geral da tela de Jornada](/help/analysis-workspace/visualizatio
 
    <!-- add screen shot -->
 
-1. Se você estiver criando uma nova análise a partir de uma tela em branco ou analisando uma jornada do Journey Optimizer, poderá configurar a jornada conforme descrito em [Configurar uma visualização da tela de Jornada](#begin-building-a-journey-canvas-visualization).
+1. Se você estiver criando uma nova análise a partir de uma tela em branco ou analisando uma jornada do Journey Optimizer, poderá configurar a jornada conforme descrito em [Definir configurações de visualização](#configure-visualization-settings).
 
 
-## Configurar uma visualização da tela de Jornada
+## Definir configurações de visualização
 
-Você precisa [começar a criar uma visualização da tela de Jornada](#begin-building-a-journey-canvas-visualization) antes de configurá-la conforme descrito nas seções a seguir.
+Várias opções de configuração estão disponíveis no cabeçalho da tela de Jornada.
 
-### Definir configurações
+Para definir as configurações da visualização da tela de Jornada:
 
 1. No Analysis Workspace, abra uma visualização existente da tela de Jornada ou [comece a criar uma nova](#begin-building-a-journey-canvas-visualization).
+
+   As opções que permitem configurar a visualização da tela de Jornada estão disponíveis no cabeçalho:
+
+   ![Opções de cabeçalho da tela de Jornada](assets/journey-canvas-header.png)
 
 1. Defina qualquer uma das seguintes configurações exibidas na parte superior da visualização:
 
@@ -83,15 +87,17 @@ Você precisa [começar a criar uma visualização da tela de Jornada](#begin-bu
    | [!UICONTROL **Tipo de nó**] | Permite configurar quais tipos de nó são mostrados na visualização. Para ocultar um tipo de nó da visualização, selecione o (x) ao lado do tipo de nó ou desmarque-o do menu suspenso. Para mostrar um tipo de nó oculto, selecione-o no menu suspenso. <p>Dependendo do conteúdo da visualização, os possíveis tipos de nó incluem:</p><ul><li>[!UICONTROL **Ler segmento**]</li><li>[!UICONTROL **Fim**]</li><li>[!UICONTROL **Dimensão**]</li><li>[!UICONTROL **Métrica**]</li></ul><p>**Observação**: considere o seguinte ao usar este campo:</p><ul><li>Essa opção é exibida somente quando os dados do Journey Optimizer são detectados na visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</li><li>Depois de modificar uma jornada do Journey Optimizer na Tela de Jornada, essa opção não está mais disponível. Para obter mais informações, consulte [Diferenças visuais após modificar uma jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
    | [!UICONTROL **Valor percentual**] | Escolha entre as seguintes opções: <ul><li>[!UICONTROL **Percentual do total**]: a porcentagem de todas as pessoas incluídas na visualização de dados dentro do intervalo de datas do painel.</li><li>[!UICONTROL **Porcentagem do nó inicial**]: a porcentagem de todas as pessoas incluídas na visualização de dados no intervalo de datas do painel que também atendem aos critérios do nó inicial da jornada. (Essa opção está disponível somente no jornada com um único nó inicial; ela está desativada no jornada com vários nós iniciais. Um nó inicial é definido como qualquer nó que não tenha uma conexão.)</li></ul> |
    | [!UICONTROL **Configurações de seta**] | Escolha entre as seguintes opções:<ul><li>[!UICONTROL **Nenhum**]: </li><li>[!UICONTROL **Condição**]: </li><li>[!UICONTROL **Todos os rótulos**]: </li></ul><p>**Observação**: esta opção é exibida somente quando dados do Journey Optimizer são detectados na exibição de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</p> |
-   | [!UICONTROL **Mostrar fallout**] | Exibir dados de fallout de cada nó. Isso mostra o número e a porcentagem de pessoas que deixaram a jornada em um determinado nó. <p>As pessoas que abandonaram a jornada podem ter executado outras ações no site, mas nunca atenderam aos critérios definidos pelo próximo nó na jornada.</p> |
+   | [!UICONTROL **Mostrar fallout**] | Exibir dados de fallout de cada nó. Isso mostra o número e a porcentagem de pessoas que deixaram a jornada após um determinado nó. <p>As pessoas que abandonaram a jornada podem ter executado outras ações no site, mas nunca atenderam aos critérios definidos pelo próximo nó na jornada.</p> |
 
-1. Continuar com [Adicionar um nó](#add-a-node).
+1. Continuar com [Adicionar nós](#add-nodes).
 
-### Adicionar um nó
+## Adicionar nós
 
-Os nós em uma visualização da tela de Jornada representam os eventos ou as ações de uma jornada do usuário. Você cria nós arrastando componentes do Workspace do painel esquerdo para a tela.
+Os nós em uma visualização da tela de Jornada representam os eventos ou as ações de uma jornada do usuário.
 
-Para adicionar um nó a uma visualização da tela de Jornada:
+Você cria nós arrastando componentes do Workspace do painel esquerdo para a tela de desenho, permitindo que a tela de Jornada escolha os nós superiores anteriores ou seguintes com base nos nós existentes, ou duplicando nós existentes.
+
+### Arraste os componentes do painel esquerdo
 
 1. No Analysis Workspace, abra uma visualização existente da tela de Jornada ou [comece a criar uma nova](#begin-building-a-journey-canvas-visualization).
 
@@ -180,6 +186,24 @@ Você pode adicionar os 3 principais nós que ficam entre 2 nós existentes:
 
    Os 3 nós principais são adicionados entre os 2 nós existentes e cada um é conectado como uma ramificação separada.
 
+### Nós duplicados
+
+A opção de duplicação está disponível para os seguintes objetos na tela:
+
+* Vários nós
+
+Para duplicar nós:
+
+1. Selecione vários nós que deseja duplicar.
+
+1. Clique com o botão direito em um dos nós selecionados e selecione [!UICONTROL **Duplicar**].
+
+## Projetar a jornada
+
+A ordem dos nós e as conexões entre eles afetam os dados da tela de Jornada. As jornadas devem refletir de forma visual e precisa a sequência de eventos sobre a qual você deseja criar relatórios.
+
+Depois que os nós forem adicionados à tela, você poderá reorganizá-los, combiná-los, conectá-los e adicionar restrições de tempo entre eles.
+
 ### Reorganizar nós
 
 As jornadas na tela de Jornada consistem em um gráfico flexível de nós e setas que representam qualquer combinação de eventos, itens de dimensão e filtros.
@@ -260,9 +284,30 @@ Ao adicionar um nó à tela, você pode colocá-lo entre dois nós conectados. O
 
 Para obter mais informações, consulte [Adicionar um nó](#add-a-node).
 
+### Adicionar uma restrição de tempo entre nós
+
+Você pode definir uma restrição de tempo entre nós. Quando uma restrição de tempo está em vigor, se uma pessoa segue a jornada definida, mas demora mais do que o período de tempo alocado para se mover entre os nós, ela é considerada como tendo saído da jornada.
+
+A opção para adicionar uma restrição de tempo está disponível para os seguintes objetos na tela de desenho:
+
+* A seta entre os nós
+
+Para adicionar uma restrição de tempo:
+
+1. Clique com o botão direito do mouse na seta entre 2 nós e selecione [!UICONTROL **Adicionar restrição de tempo**].
+
+<!-- 
+
+from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
+1. Choose from the following options: 
+
+-->
+
+## Gerenciar nós ou setas
+
 ### Alterar a cor de um nó ou seta
 
-É possível personalizar visualmente uma jornada alterando a cor de qualquer nó ou seta na tela de desenho. Por exemplo, você pode ajustar uma cor para indicar um evento desejável ou indesejável.
+É possível personalizar visualmente uma jornada alterando a cor de qualquer nó ou seta na tela de desenho. Por exemplo, você pode ajustar as cores para indicar um evento desejável ou indesejável.
 
 A opção para alterar a cor está disponível para os seguintes objetos na tela de desenho:
 
@@ -310,7 +355,7 @@ A opção para aplicar um detalhamento aos seus dados está disponível para os 
 
 * Várias setas entre nós
 
-### Aplicar um detalhamento a um ou mais nós ou setas
+#### Aplicar um detalhamento a um ou mais nós ou setas
 
 1. Selecione um ou mais nós aos quais deseja aplicar um detalhamento e clique com o botão direito do mouse em um dos nós selecionados.
 
@@ -320,7 +365,7 @@ A opção para aplicar um detalhamento aos seus dados está disponível para os 
 
 1. Selecione [!UICONTROL **Detalhamento**].
 
-### Aplicar um detalhamento a um nó individual
+#### Aplicar um detalhamento a um nó individual
 
 Você pode arrastar uma dimensão do painel esquerdo para o nó na tela em que deseja aplicar o detalhamento.
 
@@ -374,37 +419,6 @@ Para exibir dados de tendência:
 
 1. Selecione [!UICONTROL **Tendência**].
 
-### Nós duplicados
-
-A opção de duplicação está disponível para os seguintes objetos na tela:
-
-* Vários nós
-
-Para duplicar nós:
-
-1. Selecione vários nós que deseja duplicar.
-
-1. Clique com o botão direito em um dos nós selecionados e selecione [!UICONTROL **Duplicar**].
-
-
-### Adicionar uma restrição de tempo entre nós
-
-Você pode definir uma restrição de tempo entre nós. Quando uma restrição de tempo está em vigor, se uma pessoa segue a jornada definida, mas demora mais do que o período de tempo alocado para se mover entre os nós, ela é considerada como tendo saído da jornada.
-
-A opção para adicionar uma restrição de tempo está disponível para os seguintes objetos na tela de desenho:
-
-* A seta entre os nós
-
-Para adicionar uma restrição de tempo:
-
-1. Clique com o botão direito do mouse na seta entre 2 nós e selecione [!UICONTROL **Adicionar restrição de tempo**].
-
-<!-- 
-
-from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
-1. Choose from the following options: 
-
--->
 
 ### Criar um filtro com base em um nó ou seta
 
