@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 81bde9f61f208fd01b3ba1c3df57609104109800
+source-git-commit: 27749382a311330e6ece76c663f4c610ef20d8c1
 workflow-type: tm+mt
 source-wordcount: '2928'
 ht-degree: 65%
@@ -192,19 +192,6 @@ As configurações relacionadas à governança de dados no Customer Journey Anal
 
 Os rótulos e políticas de privacidade que foram criados em conjuntos de dados consumidos pela Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do Customer Journey Analytics. Portanto, os dados consultados usando o [!DNL Customer Journey Analytics BI extension] mostram avisos ou erros apropriados quando não estão em conformidade com os rótulos e políticas de privacidade definidos.
 
-#### Padrões e limitações
-
-Os padrões e limitações adicionais a seguir se aplicam por motivos de governança de dados.
-
-* A Extensão BI requer um limite de linha para os resultados da consulta. O padrão é 50, mas você pode substituí-lo no SQL usando `LIMIT n`, onde `n` é 1 - 50000.
-* A Extensão BI requer um intervalo de datas para limitar as linhas usadas para cálculos. O padrão é os últimos 30 dias, mas você pode substituí-lo na cláusula `WHERE` do SQL usando as colunas especiais [`timestamp`](#timestamp) ou [`daterange`](#date-range).
-* A Extensão BI requer consultas agregadas. Você não pode usar SQL como `SELECT * FROM ...` para obter as linhas brutas subjacentes. Em um alto nível, as consultas agregadas devem usar:
-   * Selecionar totais usando `SUM` e/ou `COUNT`.<br/> Por exemplo, `SELECT SUM(metric1), COUNT(*) FROM ...`
-   * Selecione métricas detalhadas por uma dimensão. <br/>Por exemplo, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
-   * Selecione valores de métrica distintos.<br/>Por exemplo, `SELECT DISTINCT dimension1 FROM ...`
-
-     Consulte para obter mais detalhes [SQL com suporte](#supported-sql).
-
 ### Listar visualizações de dados
 
 Na CLI padrão do PostgreSQL, é possível listar suas visualizações usando `\dv`
@@ -221,6 +208,21 @@ prod:all=> \dv
 ### Aninhado versus nivelado
 
 Por padrão, o esquema das suas visualizações de dados usa estruturas aninhadas, da mesma forma que os esquemas XDM originais. A integração também oferece suporte à opção `FLATTEN`. Você pode usar essa opção para forçar o esquema para que as visualizações de dados (e qualquer outra tabela na sessão) sejam niveladas. O nivelamento facilita o uso em ferramentas de BI que não aceitam esquemas estruturados. Consulte [Trabalho com estruturas de dados aninhadas no Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) para obter mais informações.
+
+
+### Padrões e limitações
+
+Os seguintes padrões e limitações adicionais se aplicam ao uso da Extensão BI:
+
+* A extensão BI requer um limite de linha para os resultados da consulta. O padrão é 50, mas você pode substituí-lo no SQL usando `LIMIT n`, onde `n` é 1 - 50000.
+* A extensão BI requer um intervalo de datas para limitar as linhas usadas para cálculos. O padrão é os últimos 30 dias, mas você pode substituí-lo na cláusula `WHERE` do SQL usando as colunas especiais [`timestamp`](#timestamp) ou [`daterange`](#date-range).
+* A extensão BI requer consultas agregadas. Você não pode usar SQL como `SELECT * FROM ...` para obter as linhas brutas subjacentes. Em um alto nível, as consultas agregadas devem usar:
+   * Selecionar totais usando `SUM` e/ou `COUNT`.<br/> Por exemplo, `SELECT SUM(metric1), COUNT(*) FROM ...`
+   * Selecione métricas detalhadas por uma dimensão. <br/>Por exemplo, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+   * Selecione valores de métrica distintos.<br/>Por exemplo, `SELECT DISTINCT dimension1 FROM ...`
+
+     Consulte para obter mais detalhes [SQL com suporte](#supported-sql).
+
 
 ### SQL compatível
 
