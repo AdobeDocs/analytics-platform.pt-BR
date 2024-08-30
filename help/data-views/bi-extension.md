@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 483f74408cfb81f2cbbbb25df9402aa829be09b1
+source-git-commit: 79efab0baf9c44603a7aad7383f42a9d9c0b63cb
 workflow-type: tm+mt
-source-wordcount: '2797'
-ht-degree: 68%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -192,6 +192,19 @@ As configurações relacionadas à governança de dados no Customer Journey Anal
 
 Os rótulos e políticas de privacidade que foram criados em conjuntos de dados consumidos pela Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do Customer Journey Analytics. Portanto, os dados consultados usando o [!DNL Customer Journey Analytics BI extension] mostram avisos ou erros apropriados quando não estão em conformidade com os rótulos e políticas de privacidade definidos.
 
+#### Padrões e limitações
+
+Os padrões e limitações adicionais a seguir se aplicam por motivos de governança de dados.
+
+* A Extensão BI requer um limite de linha para os resultados da consulta. O padrão é 50, mas você pode substituí-lo no SQL usando `LIMIT n`, onde `n` é 1 - 50000.
+* A Extensão BI requer um intervalo de datas para limitar as linhas usadas para cálculos. O padrão é os últimos 30 dias, mas você pode substituí-lo na cláusula `WHERE` do SQL usando as colunas especiais [`timestamp`](#timestamp) ou [`daterange`](#date-range) (consulte a documentação adicional).
+* A Extensão BI requer consultas agregadas. Você não pode usar SQL como `SELECT * FROM ...` para obter as linhas brutas subjacentes. Em um alto nível, as consultas agregadas devem usar:
+   * Selecionar totais usando `SUM` e/ou `COUNT`.<br/> Por exemplo, `SELECT SUM(metric1), COUNT(*) FROM ...`
+   * Selecione métricas detalhadas por uma dimensão. <br/>Por exemplo, `SELECT dimension1, SUM(metric1), COUNT(*) FROM ... GROUP BY dimension1`
+   * Selecione valores de métrica distintos.<br/>Por exemplo, `SELECT DISTINCT dimension1 FROM ...`
+
+     Consulte para obter mais detalhes [SQL com suporte](#supported-sql).
+
 ### Listar visualizações de dados
 
 Na CLI padrão do PostgreSQL, é possível listar suas visualizações usando `\dv`
@@ -310,7 +323,7 @@ A coluna especial `daterangeName` pode ser usada para filtrar sua consulta usand
 >[!NOTE]
 >
 >O Power BI não oferece suporte a métricas `daterange` com menos de um dia (hora, 30 minutos, 5 minutos etc.).
-
+>
 
 #### ID do filtro
 
