@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: bd50c5bdcce0617da78eed918338e44474419e31
+source-git-commit: 6fc4645bba82e0f844dbf98df9f1cc7f05455bef
 workflow-type: tm+mt
-source-wordcount: '4359'
+source-wordcount: '4484'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ Consulte [visão geral da tela de Jornada](/help/analysis-workspace/visualizatio
    |---------|----------|
    | [!UICONTROL **Métrica primária**] | A métrica primária afeta os seguintes aspectos da visualização da tela de Jornada:  <ul><li>Define como as pessoas se movem pela jornada.</li><li>O número total exibido em cada nó.<p>Por exemplo, se a métrica principal for Pessoas, cada nó mostrará o número de pessoas que acessaram esse nó na jornada.</p></li><li>A porcentagem mostrada em cada nó. (Depois que a visualização é criada, você pode optar por mostrar a porcentagem do total ou do nó inicial.)</li><p>Por exemplo, se a métrica principal for Pessoas, cada nó mostrará a porcentagem de pessoas que atingiram esse nó na jornada (a porcentagem do total ou do nó inicial).</p></li><li>Quando uma dimensão é adicionada à visualização, os três principais nós da visualização são adicionados, com base na métrica primária.</li></ul> |
    | [!UICONTROL **Métrica secundária**] | A métrica secundária é opcional. Quando um é selecionado, as seguintes informações são mostradas em cada nó abaixo da métrica primária: <ul><li>O número total<p>Por exemplo, se Sessões for a métrica secundária, cada nó mostrará o número de sessões que atingiram esse nó na jornada.</p></li><li>A porcentagem (após a visualização ser criada, é possível optar por mostrar a porcentagem do total ou do nó inicial).</li><p>Por exemplo, se Sessões for a métrica secundária, cada nó mostrará a porcentagem de sessões que atingiram esse nó na jornada (a porcentagem do total ou do nó inicial).</p></li></ul> |
-   | [!UICONTROL **jornada DO Journey Optimizer**]<!-- name? --> | Selecione a jornada do Journey Optimizer que deseja usar como base para sua análise na tela de Jornada. (Como alternativa, você pode deixar essa opção em branco se quiser uma tela em branco da qual criar sua análise no Analysis Workspace.)</p> <p>Ao analisar uma jornada do Journey Optimizer na tela do Jornada, a jornada é exibida com a mesma ordem, sequência e estrutura que tem no Journey Optimizer. Para obter mais informações, consulte [Analisar jornadas do Journey Optimizer](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) em [visão geral da tela do Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Observação**: esta opção é exibida somente quando dados do Journey Optimizer são detectados na exibição de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</p> |
+   | [!UICONTROL **jornada DO Journey Optimizer**]<!-- name? --> | Selecione a jornada do Journey Optimizer que deseja usar como base para sua análise na tela de Jornada. (Como alternativa, você pode deixar essa opção em branco se quiser uma tela em branco da qual criar sua análise no Analysis Workspace.)</p> <p>Ao analisar uma jornada do Journey Optimizer na tela do Jornada, a jornada é exibida com a mesma ordem, sequência e estrutura que tem no Journey Optimizer. Para obter mais informações, consulte [Analisar jornadas do Journey Optimizer](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) em [visão geral da tela do Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Observação**: essa opção é exibida somente quando dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</p> |
 
 1. (Opcional) Selecione [!UICONTROL **Mostrar configurações avançadas**] e especifique as seguintes informações:
 
@@ -84,10 +84,11 @@ Para definir as configurações da visualização da tela de Jornada:
 
    | Configuração | Função |
    |---------|----------|
-   | [!UICONTROL **Tipo de nó**] | Permite configurar quais tipos de nó são mostrados na visualização. Para ocultar um tipo de nó da visualização, selecione o (x) ao lado do tipo de nó ou desmarque-o do menu suspenso. Para mostrar um tipo de nó oculto, selecione-o no menu suspenso. <p>Dependendo do conteúdo da visualização, os possíveis tipos de nó incluem:</p><ul><li>[!UICONTROL **Ler segmento**]</li><li>[!UICONTROL **Fim**]</li><li>[!UICONTROL **Dimensão**]</li><li>[!UICONTROL **Métrica**]</li></ul><p>**Observação**: considere o seguinte ao usar este campo:</p><ul><li>Essa opção é exibida somente quando os dados do Journey Optimizer são detectados na visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</li><li>Depois de modificar uma jornada do Journey Optimizer na Tela de Jornada, essa opção não está mais disponível. Para obter mais informações, consulte [Diferenças visuais após modificar uma jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
+   | [!UICONTROL **Tipo de nó**] | Permite configurar quais tipos de nó são mostrados na visualização. Para ocultar um tipo de nó da visualização, selecione o (x) ao lado do tipo de nó ou desmarque-o do menu suspenso. Para mostrar um tipo de nó oculto, selecione-o no menu suspenso. <p>Dependendo do conteúdo da visualização, os possíveis tipos de nó incluem:</p><ul><li>[!UICONTROL **Ler segmento**]</li><li>[!UICONTROL **Fim**]</li><li>[!UICONTROL **Dimensão**]</li><li>[!UICONTROL **Métrica**]</li></ul><p>**Observação**: considere o seguinte ao usar este campo:</p><ul><li>Essa opção é exibida somente quando os dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</li><li>Depois de modificar uma jornada do Journey Optimizer na Tela de Jornada, essa opção não está mais disponível. Para obter mais informações, consulte [Diferenças visuais após modificar uma jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
    | [!UICONTROL **Valor percentual**] | Escolha entre as seguintes opções: <ul><li>[!UICONTROL **Percentual do total**]: a porcentagem de todas as pessoas incluídas na visualização de dados dentro do intervalo de datas do painel.</li><li>[!UICONTROL **Porcentagem do nó inicial**]: a porcentagem de todas as pessoas incluídas na visualização de dados no intervalo de datas do painel que também atendem aos critérios do nó inicial da jornada. (Essa opção está disponível somente no jornada com um único nó inicial; ela está desativada no jornada com vários nós iniciais. Um nó inicial é definido como qualquer nó que não tenha uma conexão.)</li></ul> |
-   | [!UICONTROL **Configurações de seta**] | Escolha entre as seguintes opções:<ul><li>[!UICONTROL **Nenhum**]: </li><li>[!UICONTROL **Condição**]: </li><li>[!UICONTROL **Todos os rótulos**]: </li></ul><p>**Observação**: esta opção é exibida somente quando dados do Journey Optimizer são detectados na exibição de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</p> |
+   | [!UICONTROL **Configurações de seta**] | Escolha entre as seguintes opções:<ul><li>[!UICONTROL **Nenhum**]: </li><li>[!UICONTROL **Condição**]: </li><li>[!UICONTROL **Todos os rótulos**]: </li></ul><p>**Observação**: essa opção é exibida somente quando dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</p> |
    | [!UICONTROL **Mostrar fallout**] | Exibir dados de fallout de cada nó. Isso mostra o número e a porcentagem de pessoas que deixaram a jornada após um determinado nó. <p>As pessoas que abandonaram a jornada podem ter executado outras ações no site, mas nunca atenderam aos critérios definidos pelo próximo nó na jornada.</p> |
+   | **Controles de zoom** | Os seguintes controles de zoom estão disponíveis no canto superior direito da tela:<ul><li>**Ícone de Ampliação** ![Ampliar](assets/zoom-in-icon.png): Amplia áreas específicas da visualização.<p>Também é possível usar os controles do mouse, como o pinçamento em um trackpad.</p></li><li>**Ícone de menos zoom** ![menos zoom](assets/zoom-out-icon.png): reduz a visualização para permitir mais espaço na tela.<p>Também é possível usar os controles do mouse, como o pinçamento em um trackpad.</p></li><li>**Ajustar tela** ![ícone de ajustar tela](assets/fill-screen-icon.png): ajusta as configurações atuais de zoom e panorâmica para preencher a tela com a visualização completa.</li></ul><p>Para deslocar-se pela tela de desenho depois de aumentar ou diminuir o zoom, clique com o mouse e arraste para o local desejado.</p> |
 
 1. Continuar com [Adicionar nós](#add-nodes).
 
@@ -208,7 +209,9 @@ Depois que os nós forem adicionados à tela, você poderá reorganizá-los, com
 
 As jornadas na tela de Jornada consistem em um gráfico flexível de nós e setas que representam qualquer combinação de eventos, itens de dimensão e filtros.
 
-Você pode arrastar nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo.
+Você pode arrastar nós na tela para reorganizar os eventos e as condições da jornada. Você pode selecionar vários nós mantendo a tecla Command (no Mac) ou Ctrl (no Windows) pressionada.
+
+À medida que você reorganiza a ordem dos nós na jornada, os dados são atualizados de acordo.
 
 ### Combinar nós
 
@@ -282,7 +285,7 @@ Para conectar nós na tela do Jornada:
 
 Ao adicionar um nó à tela, você pode colocá-lo entre dois nós conectados. O nó é adicionado ao fluxo da jornada entre os dois nós existentes.
 
-Para obter mais informações, consulte [Adicionar um nó](#add-a-node).
+Para obter mais informações, consulte [Adicionar nós](#add-nodes).
 
 ### Adicionar uma restrição de tempo entre nós
 
@@ -369,7 +372,7 @@ A opção para aplicar um detalhamento aos seus dados está disponível para os 
 
 Você pode arrastar uma dimensão do painel esquerdo para o nó na tela em que deseja aplicar o detalhamento.
 
-Para obter mais informações, consulte [Adicionar um nó](#add-a-node).
+Para obter mais informações, consulte [Adicionar nós](#add-nodes).
 
 ### Criar um público-alvo
 
