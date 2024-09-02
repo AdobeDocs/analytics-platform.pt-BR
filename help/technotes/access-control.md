@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: fb106077949cc5a1a2fbaf7702bd0c872152499f
+source-git-commit: 30133a5d825c3623a5f46a972e787cf60626edf3
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1463'
 ht-degree: 14%
 
 ---
@@ -110,7 +110,7 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto no [Admi
 
 | Categoria | Permissão | Descrição |
 | --- | --- | ---|
-| [!UICONTROL Visualizações de dados] | *nome de uma visualização de dados* | Se você alternar a configuração **[!UICONTROL Incluir automaticamente]** para **[!UICONTROL Ativado]**, os usuários que fazem parte desse perfil de produto poderão visualizar todas as visualizações de dados existentes e recém-criadas. Se esta configuração estiver definida como **[!UICONTROL Desativado]**, será possível selecionar visualizações de dados específicas às quais os usuários têm acesso. |
+| [!UICONTROL Visualizações de dados] | *nome da exibição de dados* | Se você alternar a configuração **[!UICONTROL Incluir automaticamente]** para **[!UICONTROL Ativado]**, os usuários que fazem parte desse perfil de produto poderão visualizar todas as visualizações de dados existentes e recém-criadas. Se esta configuração estiver definida como **[!UICONTROL Desativado]**, será possível selecionar visualizações de dados específicas às quais os usuários têm acesso. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso à Analysis Workspace] | Permitir que os usuários acessem o [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso à Análise Guiada] | Permitir que os usuários acessem a [Análise Guiada](/help/guided-analysis/overview.md). |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de métricas calculadas] | Permitir que os usuários criem [métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md). Os usuários podem marcar, compartilhar, excluir, renomear, aprovar ou cancelar a aprovação somente das métricas calculadas que criam ou das métricas calculadas compartilhadas com eles. |
