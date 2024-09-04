@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 6fc4645bba82e0f844dbf98df9f1cc7f05455bef
+source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
 workflow-type: tm+mt
-source-wordcount: '4484'
+source-wordcount: '4526'
 ht-degree: 1%
 
 ---
@@ -145,6 +145,10 @@ Você cria nós arrastando componentes do Workspace do painel esquerdo para a te
 
 ### Adicionar os nós principais com base nos nós existentes
 
+>[!AVAILABILITY]
+>
+>Este recurso ainda não está disponível.
+
 Você pode adicionar automaticamente os nós principais com base nos nós que já estão na tela.
 
 Essa opção está disponível para os seguintes objetos na tela de desenho:
@@ -188,6 +192,10 @@ Você pode adicionar os 3 principais nós que ficam entre 2 nós existentes:
    Os 3 nós principais são adicionados entre os 2 nós existentes e cada um é conectado como uma ramificação separada.
 
 ### Nós duplicados
+
+>[!AVAILABILITY]
+>
+>Este recurso ainda não está disponível.
 
 A opção de duplicação está disponível para os seguintes objetos na tela:
 
@@ -289,6 +297,10 @@ Para obter mais informações, consulte [Adicionar nós](#add-nodes).
 
 ### Adicionar uma restrição de tempo entre nós
 
+>[!AVAILABILITY]
+>
+>Este recurso ainda não está disponível.
+
 Você pode definir uma restrição de tempo entre nós. Quando uma restrição de tempo está em vigor, se uma pessoa segue a jornada definida, mas demora mais do que o período de tempo alocado para se mover entre os nós, ela é considerada como tendo saído da jornada.
 
 A opção para adicionar uma restrição de tempo está disponível para os seguintes objetos na tela de desenho:
@@ -310,6 +322,10 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ### Alterar a cor de um nó ou seta
 
+>[!AVAILABILITY]
+>
+>Este recurso ainda não está disponível.
+
 É possível personalizar visualmente uma jornada alterando a cor de qualquer nó ou seta na tela de desenho. Por exemplo, você pode ajustar as cores para indicar um evento desejável ou indesejável.
 
 A opção para alterar a cor está disponível para os seguintes objetos na tela de desenho:
@@ -329,6 +345,10 @@ Para alterar a cor de um nó ou seta:
    As seguintes cores estão disponíveis: <!--look into this interaction and color list-->
 
 ### Renomear um nó ou uma seta
+
+>[!AVAILABILITY]
+>
+>Este recurso ainda não está disponível.
 
 Quando você arrasta um componente para uma visualização da tela de Jornada, ele cria um nó com o mesmo nome do componente. Você pode renomear o nó para corresponder melhor à etapa da jornada que o nó representa.
 
@@ -359,6 +379,10 @@ A opção para aplicar um detalhamento aos seus dados está disponível para os 
 * Várias setas entre nós
 
 #### Aplicar um detalhamento a um ou mais nós ou setas
+
+>[!AVAILABILITY]
+>
+>Este recurso ainda não está disponível.
 
 1. Selecione um ou mais nós aos quais deseja aplicar um detalhamento e clique com o botão direito do mouse em um dos nós selecionados.
 
@@ -400,6 +424,10 @@ Para criar um público-alvo:
 
 ### Exibir dados de tendência
 
+>[!AVAILABILITY]
+>
+>Este recurso ainda não está disponível.
+
 Você pode exibir os dados de tendência em um gráfico de linhas para objetos na tela de Jornada. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
 A opção de definir tendência está disponível para os seguintes objetos na tela:
@@ -421,7 +449,6 @@ Para exibir dados de tendência:
    Selecione uma ou mais setas entre dois nós para os quais deseja exibir dados de tendência e clique com o botão direito do mouse em uma das setas selecionadas.
 
 1. Selecione [!UICONTROL **Tendência**].
-
 
 ### Criar um filtro com base em um nó ou seta
 

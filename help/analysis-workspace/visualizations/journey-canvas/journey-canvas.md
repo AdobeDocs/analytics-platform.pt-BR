@@ -6,7 +6,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 707bfbf6d34d999bc1b275b24cd6a78b8ef65e74
+source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 2%
@@ -133,13 +133,13 @@ Depois de modificar uma jornada do Journey Optimizer na tela do Jornada, podem o
 
 #### Diferenças no processamento de dados
 
-Depois de modificar uma jornada do Journey Optimizer na Tela do Jornada, você pode notar alterações nos dados se a jornada contiver métricas que têm modelos de atribuição não padrão.
+Depois de modificar uma jornada do Journey Optimizer na tela do Jornada, você pode notar alterações nos dados se a jornada contiver métricas que têm modelos de atribuição não padrão.
 
 Isso ocorre porque, ao contrário do Journey Optimizer, a tela de Jornada permite aplicar várias dimensões em uma única jornada. Este recurso significa que não há suporte para a [atribuição de métrica](/help/data-views/component-settings/attribution.md).
 
 #### Diferenças nos recursos
 
-Depois de modificar uma jornada do Journey Optimizer na Tela do Jornada, o campo suspenso [!UICONTROL **Tipo de nó**] não estará mais disponível.
+Depois de modificar uma jornada Journey Optimizer na tela de Jornada, o campo suspenso [!UICONTROL **Tipo de nó**] não estará mais disponível.
 
 Para obter mais informações sobre este campo, consulte [Definir configurações](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
@@ -147,7 +147,7 @@ Para obter mais informações sobre este campo, consulte [Definir configuraçõe
 
 As alterações feitas em uma jornada no Journey Optimizer serão sincronizadas com a tela de Jornada somente se a jornada Jornada permanecer inalterada nessa tela.
 
-Depois de modificar uma jornada do Journey Optimizer na Tela do Jornada, as alterações feitas na jornada no Journey Optimizer não são refletidas na tela da Jornada. Para ver as alterações refletidas na tela de Jornada, você pode excluir e [recriar a jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Depois de modificar uma jornada do Journey Optimizer na tela de Jornada, as alterações feitas na jornada no Journey Optimizer não são refletidas na tela de Jornada. Para ver as alterações refletidas na tela de Jornada, você pode excluir e [recriar a jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 ### Diferenças de terminologia entre o Journey Optimizer e o Customer Journey Analytics
 
