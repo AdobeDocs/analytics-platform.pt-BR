@@ -6,9 +6,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
+source-git-commit: c94544baf4c934b16b2fc9ce837dd41e07a3dcac
 workflow-type: tm+mt
-source-wordcount: '4526'
+source-wordcount: '5141'
 ht-degree: 1%
 
 ---
@@ -84,9 +84,9 @@ Para definir as configurações da visualização da tela de Jornada:
 
    | Configuração | Função |
    |---------|----------|
-   | [!UICONTROL **Tipo de nó**] | Permite configurar quais tipos de nó são mostrados na visualização. Para ocultar um tipo de nó da visualização, selecione o (x) ao lado do tipo de nó ou desmarque-o do menu suspenso. Para mostrar um tipo de nó oculto, selecione-o no menu suspenso. <p>Dependendo do conteúdo da visualização, os possíveis tipos de nó incluem:</p><ul><li>[!UICONTROL **Ler segmento**]</li><li>[!UICONTROL **Fim**]</li><li>[!UICONTROL **Dimensão**]</li><li>[!UICONTROL **Métrica**]</li></ul><p>**Observação**: considere o seguinte ao usar este campo:</p><ul><li>Essa opção é exibida somente quando os dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</li><li>Depois de modificar uma jornada do Journey Optimizer na Tela de Jornada, essa opção não está mais disponível. Para obter mais informações, consulte [Diferenças visuais após modificar uma jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li></ul></p> |
-   | [!UICONTROL **Valor percentual**] | Escolha entre as seguintes opções: <ul><li>[!UICONTROL **Percentual do total**]: a porcentagem de todas as pessoas incluídas na visualização de dados dentro do intervalo de datas do painel.</li><li>[!UICONTROL **Porcentagem do nó inicial**]: a porcentagem de todas as pessoas incluídas na visualização de dados no intervalo de datas do painel que também atendem aos critérios do nó inicial da jornada. (Essa opção está disponível somente no jornada com um único nó inicial; ela está desativada no jornada com vários nós iniciais. Um nó inicial é definido como qualquer nó que não tenha uma conexão.)</li></ul> |
-   | [!UICONTROL **Configurações de seta**] | Escolha entre as seguintes opções:<ul><li>[!UICONTROL **Nenhum**]: </li><li>[!UICONTROL **Condição**]: </li><li>[!UICONTROL **Todos os rótulos**]: </li></ul><p>**Observação**: essa opção é exibida somente quando dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</p> |
+   | [!UICONTROL **Tipo de nó**] | Permite configurar quais tipos de nó são mostrados na visualização. Para ocultar um tipo de nó da visualização, selecione o (x) ao lado do tipo de nó ou desmarque-o do menu suspenso. Para mostrar um tipo de nó oculto, selecione-o no menu suspenso. <p>Dependendo do conteúdo da visualização, os possíveis tipos de nó incluem:</p><ul><li>[!UICONTROL **Ler segmento**]</li><li>[!UICONTROL **Fim**]</li><li>[!UICONTROL **Dimensão**]</li><li>[!UICONTROL **Métrica**]</li></ul><p>**Observação**: considere o seguinte ao usar este campo:</p><ul><li>Essa opção é exibida somente quando os dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</li><li>Depois de modificar uma jornada do Journey Optimizer na tela de Jornada, essa opção não está mais disponível. Para obter mais informações, consulte [Diferenças visuais após modificar uma jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#visual-differences-after-modifying-a-journey-in-journey-canvas)</li><li>Os nós não são excluídos da jornada quando você os oculta. Para obter informações sobre como excluir um nó, consulte [Excluir nós](#delete-nodes).</li></ul></p> |
+   | [!UICONTROL **Valor percentual**] | Escolha entre as seguintes opções: <ul><li>[!UICONTROL **Percentual do total**]: a porcentagem de todas as pessoas incluídas na visualização de dados no intervalo de datas do painel.</li><li>[!UICONTROL **Percentual do nó inicial**]: a porcentagem de todas as pessoas incluídas na visualização de dados no intervalo de datas do painel que também atendem aos critérios do nó inicial da jornada. (Essa opção está disponível somente no jornada com um único nó inicial; ela está desativada no jornada com vários nós iniciais. Um nó inicial é definido como qualquer nó que não tenha uma conexão.)</li></ul> |
+   | [!UICONTROL **Configurações de seta**] | As setas que aparecem entre os nós na tela de Jornada podem conter nomes personalizados, rótulos de Journey Optimizer e condições de Journey Optimizer. Escolha entre as seguintes opções para determinar quais serão exibidas:<ul><li>[!UICONTROL **Nenhum**]: nenhum nome personalizado, rótulo Journey Optimizer ou condição Journey Optimizer são exibidos nas setas na tela de Jornada. </li><li>[!UICONTROL **Condição**]: todos os rótulos de condição configurados no Journey Optimizer são mostrados em setas na tela de Jornada. Nenhum nome personalizado ou outro rótulo do Journey Optimizer é exibido.</li><li>[!UICONTROL **Todos os rótulos**]: se uma seta contiver um nome, rótulo ou condição personalizados, ela será mostrada na seta na tela de Jornada. Somente um nome, rótulo ou condição é exibido por seta, na seguinte ordem de preferência: <ol><li>Um nome personalizado foi adicionado da tela de Jornada (conforme descrito em [Renomear um nó ou uma seta](#rename-a-node-or-arrow))</li><li>Um rótulo do Journey Optimizer</li><li>Uma condição do Journey Optimizer</li></ol></li></ul><p>**Observação**: essa opção é exibida somente quando dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</p> |
    | [!UICONTROL **Mostrar fallout**] | Exibir dados de fallout de cada nó. Isso mostra o número e a porcentagem de pessoas que deixaram a jornada após um determinado nó. <p>As pessoas que abandonaram a jornada podem ter executado outras ações no site, mas nunca atenderam aos critérios definidos pelo próximo nó na jornada.</p> |
    | **Controles de zoom** | Os seguintes controles de zoom estão disponíveis no canto superior direito da tela:<ul><li>**Ícone de Ampliação** ![Ampliar](assets/zoom-in-icon.png): Amplia áreas específicas da visualização.<p>Também é possível usar os controles do mouse, como o pinçamento em um trackpad.</p></li><li>**Ícone de menos zoom** ![menos zoom](assets/zoom-out-icon.png): reduz a visualização para permitir mais espaço na tela.<p>Também é possível usar os controles do mouse, como o pinçamento em um trackpad.</p></li><li>**Ajustar tela** ![ícone de ajustar tela](assets/fill-screen-icon.png): ajusta as configurações atuais de zoom e panorâmica para preencher a tela com a visualização completa.</li></ul><p>Para deslocar-se pela tela de desenho depois de aumentar ou diminuir o zoom, clique com o mouse e arraste para o local desejado.</p> |
 
@@ -114,7 +114,7 @@ Você cria nós arrastando componentes do Workspace do painel esquerdo para a te
    | Métrica | Um nó existente | O componente é combinado automaticamente com o nó existente. (Consulte [Combinar nós](#combine-nodes) para obter mais informações.)</p> |
    | Métrica | Uma seta entre 2 nós existentes | O nó é exibido entre os dois nós existentes onde o componente foi descartado e está conectado a ambos os nós existentes. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p> |
    | Dimensão | Área em branco da tela de desenho | Três nós são criados para os três principais itens de dimensão em que o componente foi descartado, desconectados de qualquer nó existente. (**Observação:** se apenas um ou dois nós forem exibidos, significa que os dados estão disponíveis apenas para um ou dois dos itens de dimensão. Se nenhum nó for exibido, significa que os dados não estão disponíveis para nenhum dos itens de dimensão. Nesse caso, tente adicioná-lo a um ponto diferente da jornada, ajustar o intervalo de datas da visualização ou escolher uma dimensão diferente.)<p>Mantenha pressionada a tecla Shift ao soltar a dimensão na tela para adicioná-la como um único nó com 3 itens de dimensão.</p><p></p> |
-   | Dimensão | Um nó existente | Um detalhamento é aplicado automaticamente ao nó com os 5 itens de dimensão principais exibidos.<!--what happens if you hold Shift?--> |
+   | Dimensão | Um nó existente | Um detalhamento é aplicado automaticamente ao nó com os 5 itens de dimensão principais exibidos.<!--what happens if you hold Shift?--><p>Para exibir o detalhamento em uma nova visualização de tabela de forma livre, selecione o link [!UICONTROL **Abrir em uma tabela de forma livre**] no nó.</p> |
    | Dimensão | Uma seta que conecta dois nós existentes | Três nós são criados para os três principais itens de dimensão que seguem o primeiro evento após o primeiro nó (de pessoas/sessões que eventualmente chegam ao segundo nó). Os nós são exibidos entre os dois nós existentes onde o componente foi descartado e cada nó está conectado aos dois nós existentes. (**Observação:** se apenas um ou dois nós forem exibidos, significa que os dados estão disponíveis apenas para um ou dois dos itens de dimensão. Se nenhum nó for exibido, significa que os dados não estão disponíveis para nenhum dos itens de dimensão. Nesse caso, tente adicioná-lo a um ponto diferente da jornada, ajustar o intervalo de datas da visualização ou escolher uma dimensão diferente.)<p>Mantenha pressionada a tecla Shift ao soltar a dimensão na tela para adicioná-la como um único nó com 3 itens de dimensão. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p> |
    | Item de dimensão | Área em branco da tela de desenho | O nó exibe onde o componente foi solto, desconectado de todos os nós existentes. |
    | Item de dimensão | Um nó existente | O componente é combinado automaticamente com o nó existente. |
@@ -125,9 +125,9 @@ Você cria nós arrastando componentes do Workspace do painel esquerdo para a te
    | Intervalo de datas | Área em branco da tela de desenho | O nó exibe onde o componente foi solto, desconectado de quaisquer outros nós.<p>O número e a porcentagem exibidos no nó incluem o total da métrica primária, filtrado pelo intervalo de datas selecionado.</p> <p>Por exemplo, se a opção Pessoas estiver selecionada como a métrica principal da jornada, adicionar um intervalo de datas Este mês a uma área em branco da tela mostrará todas as pessoas que tiveram um evento durante o mês atual.</p> |
    | Intervalo de datas | Um nó existente | Aplica o intervalo de datas ao nó existente. |
    | Intervalo de datas | Uma seta que conecta dois nós | O nó é exibido entre os dois nós existentes onde o componente foi descartado e está conectado a ambos os nós existentes. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p><p>Aplica o intervalo de datas ao ponto no caminho em que o componente foi solto.</p> |
-   | Vários componentes | Uma área em branco da tela de desenho | **Se nenhum dos componentes for uma dimensão:**<p>Cada componente é exibido como um nó separado onde os componentes foram descartados, desconectado de qualquer nó existente.</p><p>Mantenha pressionada a tecla Shift ao soltar os componentes na tela para adicioná-los como um nó combinado. </p><p>**Se algum dos componentes que você está adicionando for uma dimensão:**</p><p>Cada componente é exibido como um nó separado onde os componentes foram descartados, desconectado de qualquer nó existente.</p><p>Somente uma dimensão pode ser adicionada por vez e três nós são criados para os três principais itens de dimensão nos quais o componente foi descartado.</p><p>Mantenha pressionada a tecla Shift ao soltar os componentes na tela para adicioná-los como um nó combinado. Os três principais itens de dimensão são combinados com cada nó. (Consulte [Combinar nós](#combine-nodes) para obter mais informações.)</p> |
+   | Vários componentes | Uma área em branco da tela de desenho | **Se nenhum dos componentes for uma dimensão:**<p>Cada componente é exibido como um nó separado onde os componentes foram descartados, desconectado de qualquer nó existente.</p><p>Mantenha pressionada a tecla Shift ao soltar os componentes na tela para adicioná-los como um nó combinado. </p><p>**Se algum dos componentes que você está adicionando for uma dimensão:**</p><p>Cada componente é exibido como um nó separado onde os componentes foram descartados, desconectado de qualquer nó existente.</p><p>Somente uma dimensão pode ser adicionada de cada vez. Quando a dimensão é adicionada, três nós são criados para os três principais itens de dimensão nos quais o componente foi descartado.</p><p>Mantenha pressionada a tecla Shift ao soltar os componentes na tela para adicioná-los como um nó combinado. Os três principais itens de dimensão são combinados com cada nó. (Consulte [Combinar nós](#combine-nodes) para obter mais informações.)</p> |
    | Vários componentes | Um nó existente | Todos os componentes são combinados com o nó existente.<p>Se qualquer um dos componentes que você está adicionando for de dimensões, os três principais itens de dimensão serão combinados com o nó.</p> <p>Somente uma dimensão pode ser adicionada de cada vez.</p> |
-   | Vários componentes | Uma seta que conecta dois nós existentes | **Se nenhum dos componentes for uma dimensão:**<p>Cada componente é exibido como um nó separado, em que os componentes foram descartados e cada nó está conectado aos dois nós existentes. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p><p>Mantenha pressionada a tecla Shift ao soltar os componentes na tela para adicioná-los como um nó combinado. (Os componentes devem ser do mesmo tipo para serem combinados em um único nó.) (Consulte [Combinar nós](#combine-nodes) para obter mais informações.)</p><p>**Se algum dos componentes que você está adicionando for uma dimensão:**</p><p>Cada componente é exibido como um nó separado, em que os componentes foram descartados e cada nó está conectado aos dois nós existentes.</p><p>Somente uma dimensão pode ser adicionada por vez e três nós são criados para os três principais itens da dimensão que seguem o primeiro evento após o primeiro nó (de pessoas/sessões que eventualmente chegam ao segundo nó). Cada nó está conectado aos dois nós existentes. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p><p>Mantenha pressionada a tecla Shift ao soltar os componentes na tela para adicioná-los como um nó combinado. Os três principais itens de dimensão são combinados com cada nó, e cada nó é conectado aos dois nós existentes. (Consulte [Combinar nós](#combine-nodes) para obter mais informações.)</p> |
+   | Vários componentes | Uma seta que conecta dois nós existentes | **Se nenhum dos componentes for uma dimensão:**<p>Cada componente é exibido como um nó separado, em que os componentes foram descartados e cada nó está conectado aos dois nós existentes. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p><p>Mantenha pressionada a tecla Shift ao soltar os componentes na tela para adicioná-los como um nó combinado. (Os componentes devem ser do mesmo tipo para serem combinados em um único nó.) (Consulte [Combinar nós](#combine-nodes) para obter mais informações.)</p><p>**Se algum dos componentes que você está adicionando for uma dimensão:**</p><p>Cada componente é exibido como um nó separado, em que os componentes foram descartados e cada nó está conectado aos dois nós existentes.</p><p>Somente uma dimensão pode ser adicionada de cada vez. Quando a dimensão é adicionada, três nós são criados para os três principais itens da dimensão que seguem o primeiro evento após o primeiro nó (de pessoas/sessões que eventualmente chegam ao segundo nó). Cada nó está conectado aos dois nós existentes. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p><p>Mantenha pressionada a tecla Shift ao soltar os componentes na tela para adicioná-los como um nó combinado. Os três principais itens de dimensão são combinados com cada nó, e cada nó é conectado aos dois nós existentes. (Consulte [Combinar nós](#combine-nodes) para obter mais informações.)</p> |
 
    Os nós são exibidos como uma caixa retangular com as seguintes informações:
 
@@ -143,13 +143,13 @@ Você cria nós arrastando componentes do Workspace do painel esquerdo para a te
 
 1. Continue personalizando a jornada conforme descrito nas seções abaixo. Você pode conectar nós, renomear nós, aplicar detalhamentos, criar públicos, adicionar restrições de tempo e muito mais.
 
-### Adicionar os nós principais com base nos nós existentes
+### Mostrar os nós principais com base nos nós existentes
 
 >[!AVAILABILITY]
 >
 >Este recurso ainda não está disponível.
 
-Você pode adicionar automaticamente os nós principais com base nos nós que já estão na tela.
+Você pode mostrar automaticamente os nós principais com base nos nós que já estão na tela. Você pode adicionar os nós principais à tela de Jornada ou visualizá-los em uma tabela de forma livre.
 
 Essa opção está disponível para os seguintes objetos na tela de desenho:
 
@@ -157,39 +157,63 @@ Essa opção está disponível para os seguintes objetos na tela de desenho:
 
 * A seta entre os nós
 
-#### Adicionar nós principais após um nó existente
+#### Mostrar nós principais após um nó existente
 
-Você pode selecionar um nó e adicionar os 3 nós principais que vêm depois dele na jornada.
+Você pode selecionar um nó e mostrar os itens de dimensão principais que vêm depois dele na jornada. Você pode adicionar os três principais itens de dimensão à tela de Jornada como nós separados, ou pode exibir todos os itens de dimensão principais em uma tabela de forma livre.
 
-1. Clique com o botão direito do mouse no nó em que deseja adicionar os 3 nós principais que vêm depois dele na jornada.
+1. Clique com o botão direito do mouse no nó onde deseja mostrar os itens de dimensão principais que vêm depois dele na jornada.
 
-   Este nó não pode ter nenhum nó existente saindo dele na jornada.
+   O nó não pode ter nenhum nó existente saindo dele na jornada.
 
-1. Selecione [!UICONTROL **Adicionar nós principais após este nó**].
+1. Selecione [!UICONTROL **Mostrar nós principais após este nó**].
 
-   Os 3 nós principais que vêm após esse nó na jornada são adicionados e cada um é conectado ao nó selecionado como uma ramificação separada.
+1. Selecione onde deseja mostrar os itens de dimensão:
 
-#### Adicionar nós principais antes de um nó existente
+   * [!UICONTROL **Na tela de Jornada**]: adiciona os 3 nós principais à tela que vem após este nó na jornada. Cada nó está conectado ao nó selecionado como uma ramificação separada na tela.
 
-Você pode adicionar os 3 principais nós que vêm antes de um nó existente na jornada.
+   * [!UICONTROL **Em uma tabela de forma livre**]: cria uma visualização de tabela de forma livre mostrando todos os itens de dimensão principais que vêm após este nó na jornada.
 
-1. Clique com o botão direito do mouse no nó em que deseja adicionar os 3 nós principais que vêm antes dele na jornada.
+1. Selecione a dimensão desejada na lista de dimensões.
+
+   Dependendo do que você escolheu na etapa anterior, os três principais itens de dimensão são adicionados à tela como três nós separados, ou todos os itens de dimensão principais são mostrados em uma tabela de forma livre.
+
+#### Mostrar nós principais antes de um nó existente
+
+Você pode selecionar um nó e mostrar os itens de dimensão principais que vêm antes dele na jornada. Você pode adicionar os três principais itens de dimensão à tela de Jornada como nós separados, ou pode exibir todos os itens de dimensão principais em uma tabela de forma livre.
+
+1. Clique com o botão direito do mouse no nó onde deseja mostrar os itens de dimensão principais que vêm antes dele na jornada.
 
    Este nó não pode ter nós existentes entrando nele na jornada.
 
-1. Selecione [!UICONTROL **Adicionar nós principais antes deste nó**].
+1. Selecione [!UICONTROL **Mostrar nós principais antes deste nó**].
 
-   Os 3 nós principais que vêm antes deste nó na jornada são adicionados e cada um é conectado ao nó selecionado como uma ramificação separada.
+1. Selecione onde deseja mostrar os itens de dimensão:
 
-#### Adicionar nós principais entre nós existentes
+   * [!UICONTROL **Na tela de Jornada**]: adiciona os 3 nós principais à tela que vem antes deste nó na jornada. Cada nó está conectado ao nó selecionado como uma ramificação separada na tela.
 
-Você pode adicionar os 3 principais nós que ficam entre 2 nós existentes:
+   * [!UICONTROL **Em uma tabela de forma livre**]: cria uma visualização de tabela de forma livre mostrando todos os itens de dimensão principais que vêm antes deste nó na jornada.
 
-1. Clique com o botão direito do mouse na seta entre os 2 nós aos quais deseja adicionar os 3 nós principais na jornada.
+1. Selecione a dimensão desejada na lista de dimensões.
 
-1. Selecione [!UICONTROL **Adicionar nós principais**].<!-- I don't think this should have the word "next" in the UI option, because it's both next and previous. It's in between. Just "Get top nodes" sounds better to me.-->
+   Dependendo do que você escolheu na etapa anterior, os três principais itens de dimensão são adicionados à tela como três nós separados, ou todos os itens de dimensão principais são mostrados em uma tabela de forma livre.
 
-   Os 3 nós principais são adicionados entre os 2 nós existentes e cada um é conectado como uma ramificação separada.
+#### Mostrar nós principais entre nós existentes
+
+Você pode selecionar uma seta e mostrar os itens de dimensão principais que ficam entre dois nós existentes na jornada. Você pode adicionar os três principais itens de dimensão à tela de Jornada como nós separados, ou pode exibir todos os itens de dimensão principais em uma tabela de forma livre.
+
+1. Clique com o botão direito do mouse na seta entre os dois nós em que deseja mostrar os itens de dimensão principais.
+
+1. Selecione [!UICONTROL **Mostrar nós superiores entre estes nós**].
+
+1. Selecione onde deseja mostrar os itens de dimensão:
+
+   * [!UICONTROL **Na tela de Jornada**]: adiciona os 3 nós principais à tela que fica entre os 2 nós existentes. Cada nó é conectado aos nós adjacentes como uma ramificação separada na tela.
+
+   * [!UICONTROL **Em uma tabela de forma livre**]: cria uma visualização de tabela de forma livre mostrando todos os itens de dimensão principais que vêm entre os dois nós existentes.
+
+1. Selecione a dimensão desejada na lista de dimensões.
+
+   Dependendo do que você escolheu na etapa anterior, os três principais itens de dimensão são adicionados à tela como três nós separados, ou todos os itens de dimensão principais são mostrados em uma tabela de forma livre.
 
 ### Nós duplicados
 
@@ -301,7 +325,7 @@ Para obter mais informações, consulte [Adicionar nós](#add-nodes).
 >
 >Este recurso ainda não está disponível.
 
-Você pode definir uma restrição de tempo entre nós. Quando uma restrição de tempo está em vigor, se uma pessoa segue a jornada definida, mas demora mais do que o período de tempo alocado para se mover entre os nós, ela é considerada como tendo saído da jornada.
+Você pode definir uma restrição de tempo entre nós. Quando uma restrição de tempo está em vigor, as pessoas são consideradas como tendo saído da jornada se seguirem a jornada definida, mas levarem mais tempo do que o período de tempo alocado para se moverem entre os nós.
 
 A opção para adicionar uma restrição de tempo está disponível para os seguintes objetos na tela de desenho:
 
@@ -378,6 +402,16 @@ A opção para aplicar um detalhamento aos seus dados está disponível para os 
 
 * Várias setas entre nós
 
+Considere o seguinte ao aplicar um detalhamento:
+
+* Os detalhamentos são aplicados à métrica principal. A métrica secundária não é afetada.
+
+* Aplicar um detalhamento não altera a jornada. Em vez disso, ele simplesmente mostra um detalhamento dos dados do nó em que é aplicado.
+
+* Se um nó já tiver um detalhamento, a aplicação de um novo detalhamento substituirá o existente.
+
+* Os dados de detalhamento são atualizados se as alterações forem feitas em um ponto anterior da jornada.
+
 #### Aplicar um detalhamento a um ou mais nós ou setas
 
 >[!AVAILABILITY]
@@ -391,6 +425,14 @@ A opção para aplicar um detalhamento aos seus dados está disponível para os 
    Selecione uma ou mais setas entre 2 nós nos quais deseja aplicar o detalhamento e clique com o botão direito do mouse em uma das setas selecionadas.
 
 1. Selecione [!UICONTROL **Detalhamento**].
+
+<!-- 1. Choose where you want to view the breakdown:
+
+        * [!UICONTROL **In Journey canvas**]
+
+        * [!UICONTROL **In a freeform table**]
+
+-->
 
 #### Aplicar um detalhamento a um nó individual
 
@@ -410,6 +452,8 @@ A opção para criar um público-alvo está disponível para os seguintes objeto
 
 * Várias setas entre nós
 
+Ao criar um público-alvo a partir de vários nós ou setas, eles são unidos com o operador OU.
+
 Para criar um público-alvo:
 
 1. Selecione um ou mais nós nos quais deseja criar um público-alvo e clique com o botão direito do mouse em um dos nós selecionados.
@@ -419,6 +463,14 @@ Para criar um público-alvo:
    Selecione uma ou mais setas entre 2 nós onde deseja criar um público-alvo e clique com o botão direito do mouse em uma das setas selecionadas.
 
 1. Selecione [!UICONTROL **Criar audiência**].
+
+<!-- 1. Choose where you want to create the audience:
+
+        * [!UICONTROL **In Journey canvas**]
+
+        * [!UICONTROL **In a freeform table**]
+
+-->
 
 1. Continue criando e publicando o público-alvo conforme descrito em [Criar e publicar públicos-alvo](/help/components/audiences/publish.md).
 
@@ -454,7 +506,7 @@ Para exibir dados de tendência:
 
 Você pode criar um novo filtro com base em um nó ou seta em uma jornada. Depois que o filtro é criado, é possível usá-lo em qualquer lugar do Analysis Workspace.
 
-Os filtros criados a partir da tela de Jornada usam [filtragem sequencial](/help/components/filters/seg-sequential-build.md). Isso significa que o filtro usa o operador THEN para vincular a sequência de eventos (ou seja, a jornada) pela qual as pessoas fluíram, levando até o nó ou a seta selecionada. Todos os eventos que correspondem ao nó ou à seta selecionada são incluídos no filtro.
+Os filtros criados a partir da tela de Jornada usam [filtragem sequencial](/help/components/filters/seg-sequential-build.md). Isso significa que o filtro usa o operador THEN para vincular a sequência de eventos (a jornada) pela qual as pessoas fluíram, levando até o nó ou a seta selecionada. Todos os eventos que correspondem ao nó ou à seta selecionada são incluídos no filtro.
 
 Se você criar um filtro com base em um nó que tenha vários caminhos fluindo para ele, todos os caminhos serão incluídos no filtro. Caminhos separados são unidos com o operador OR.
 
