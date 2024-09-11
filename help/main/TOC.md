@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 91e28c2919ab5ace21ae9407ca758288370c7eca
-workflow-type: ht
-source-wordcount: '1112'
-ht-degree: 100%
+source-git-commit: f25c6e2bb7a9644a7356b3a1fc42a3b383d6f5e6
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 99%
 
 ---
 
@@ -190,6 +190,12 @@ ht-degree: 100%
       + [Visão geral da previsão](../analysis-workspace/c-forecast/forecasting.md)
       + [Previsões de visualização no Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Técnicas estatísticas usadas no serviço de previsão](../analysis-workspace/c-forecast/statistics-forecasting.md)
+   + Alertas inteligentes {#alerts}
+      + [Visão geral de Alertas inteligentes](/help/analysis-workspace/c-intelligent-alerts/intellligent-alerts.md)
+      + [Diferenças no Customer Journey Analytics](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md)
+      + [Criar alertas](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md)
+      + [Gerenciar alertas](/help/analysis-workspace/c-intelligent-alerts/alert-manager.md)
+      + [Casos de uso](/help/analysis-workspace/c-intelligent-alerts/alerts-use-cases.md)
    + [Preferências do usuário](../analysis-workspace/user-preferences.md)
    + Perguntas frequentes sobre o Workspace {#workspace-faq}
       + [Perguntas frequentes](../analysis-workspace/workspace-faq/faq.md)

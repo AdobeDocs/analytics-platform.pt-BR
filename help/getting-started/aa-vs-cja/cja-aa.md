@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 75edfb09e3d2d4673d4c7f86b53eb5a620e77cbc
+source-git-commit: 789e461bf45f272e4c93ea5aa77e5bcaf4ee6a29
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 98%
+source-wordcount: '2307'
+ht-degree: 96%
 
 ---
 
@@ -57,6 +57,7 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 
 | Recurso | Notas |
 | --- | --- |
+| Alertas | O processo de [usar Alertas inteligentes no Customer Journey Analytics](/help/analysis-workspace/c-intelligent-alerts/alerts-feature-comparison.md) é quase idêntico ao uso de Alertas inteligentes no Adobe Analytics. <p>No entanto, devido ao tempo de coleta de dados no Customer Journey Analytics, os alertas por hora não estão disponíveis. No Customer Journey Analytics, os alertas podem ser configurados para diariamente, semanalmente ou mensalmente.</p> |
 | Analytics for Target (A4T) | A [integração entre o Adobe Customer Journey Analytics e o Target](https://experienceleague.adobe.com/pt-br/docs/target/using/integrate/cja/target-reporting-in-cja) fornece análises eficientes e ferramentas que economizam tempo para seu programa de otimização. |
 | Publicação para público-alvo | Compatível se licenciado com produtos do Customer Data Platform ou Journey Optimizer da Adobe. A [Publicação de público-alvo](/help/components/audiences/audiences-overview.md) envia públicos-alvo para o Perfil do cliente em tempo real na Experience Platform. |
 | Classificações | Agora chamadas de “Conjuntos de dados de pesquisa”. As classificações usadas no Analytics podem ser importadas para a Experience Platform e o Customer Journey Analytics usando o conector de origem de classificações do Analytics. O upload dos conjuntos de dados de pesquisa também pode ser feito diretamente para a Experience Platform e disponibilizado no Customer Journey Analytics. |
@@ -97,7 +98,6 @@ As tabelas a seguir listam quais recursos do Adobe Analytics são compatíveis, 
 
 | Recurso | Notas |
 | --- | --- |
-| Alertas | Suporte planejado. |
 | Análise de contribuição | Suporte planejado. |
 | Modelos de projetos | Suporte planejado. |
 | Relatório em tempo real | Suporte planejado. |
