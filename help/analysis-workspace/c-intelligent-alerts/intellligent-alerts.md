@@ -3,14 +3,18 @@ description: O novo sistema de Alertas inteligentes permite um controle mais det
 title: Visão geral de Alertas inteligentes
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: 17a7e794533c1536e362ca1fd11f45b053954c0a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 56%
+source-wordcount: '356'
+ht-degree: 52%
 
 ---
 
 # Visão geral de Alertas inteligentes
+
+>[!NOTE]
+>
+>Os Alertas inteligentes estão disponíveis para todos os clientes. No entanto, para usar a Detecção de anomalias em Alertas inteligentes, você deve ter o Customer Journey Analytics Select, Prime ou Ultimate.
 
 Os Alertas inteligentes (ou apenas &quot;alertas&quot;) no Customer Journey Analytics permitem que você seja notificado quando eventos anormais ocorrerem em seus dados.
 

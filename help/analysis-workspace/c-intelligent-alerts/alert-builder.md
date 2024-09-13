@@ -3,10 +3,10 @@ description: Obtenha alertas quando os componentes do projeto atingirem determin
 title: Criar alertas (Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: 8f866d47ef0caccb91bd0e9cb9043bb1e16e0d89
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 22%
+source-wordcount: '1001'
+ht-degree: 21%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->Os Alertas inteligentes estão disponíveis somente para clientes do Adobe Analytics Prime e do Adobe Analytics Ultimate.
+>Os Alertas inteligentes estão disponíveis para todos os clientes. No entanto, para usar a Detecção de anomalias em Alertas inteligentes, você deve ter o Customer Journey Analytics Select, Prime ou Ultimate.
 
 Os Alertas inteligentes (ou apenas &quot;alertas&quot;) no Customer Journey Analytics permitem que você seja notificado imediatamente quando ocorrerem eventos anormais em seus dados.
 
