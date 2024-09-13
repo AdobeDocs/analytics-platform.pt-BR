@@ -3,7 +3,7 @@ description: O novo sistema de Alertas inteligentes permite um controle mais det
 title: Visão geral de Alertas inteligentes
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 74ad39f6ccc6436f7c8540b7d8b69b20b93d2b5c
+source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 56%
@@ -11,8 +11,6 @@ ht-degree: 56%
 ---
 
 # Visão geral de Alertas inteligentes
-
-{{release-limited-testing}}
 
 Os Alertas inteligentes (ou apenas &quot;alertas&quot;) no Customer Journey Analytics permitem que você seja notificado quando eventos anormais ocorrerem em seus dados.
 
