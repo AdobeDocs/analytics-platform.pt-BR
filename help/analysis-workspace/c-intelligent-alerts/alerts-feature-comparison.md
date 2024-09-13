@@ -3,9 +3,9 @@ description: Saiba como os Alertas inteligentes diferem do Adobe Analytics no Cu
 title: Customer Journey Analytics e Adobe Analytics de comparação de recursos de Alertas inteligentes
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 1613b3fc7e9cce1fb74b86bb7435612b2d469eb1
+source-git-commit: d6f800a6e3e79556026291387e984a35949b3c46
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '449'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Para levar em conta esse atraso no tempo de assimilação, os alertas têm um at
 
 Você pode ajustar o atraso padrão de 9 horas para qualquer valor entre 0 e 24 horas. No entanto, diminuir o atraso para menos de 9 horas pode significar que você está relatando dados incompletos, o que resulta em informações de alerta imprecisas.
 
-Para obter mais informações sobre como ajustar o atraso e os fatores que devem ser considerados ao fazer isso, consulte <!--add link -->.
+Para obter mais informações sobre como ajustar o atraso e os fatores que devem ser considerados ao fazer isso, consulte [Criar alertas](/help/analysis-workspace/c-intelligent-alerts/alert-builder.md).
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
