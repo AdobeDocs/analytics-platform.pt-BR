@@ -3,7 +3,7 @@ description: Criar, editar ou excluir alertas.
 title: Gerenciador de alertas (Analysis Workspace)
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 7%
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 Você pode gerenciar alertas existentes no Gerenciador de alertas. Você pode executar várias tarefas de gerenciamento em alertas, como marcar, renomear, excluir e muito mais.
 
-O gerenciador de Alertas está estruturado de maneira semelhante ao [Gerenciador de filtros](/help/components/filters/manage-filters.md) e ao [Gerenciador de Métricas Calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+O gerenciador de Alertas está estruturado de maneira semelhante ao [gerenciador de Filtros](/help/components/filters/manage-filters.md) e ao [gerenciador de métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 ## Criar alertas
 

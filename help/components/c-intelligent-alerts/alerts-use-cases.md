@@ -1,18 +1,18 @@
 ---
-description: Casos de uso para alertas inteligentes.
-title: 'Alertas inteligentes: casos de uso'
+description: Casos de uso para alertas.
+title: Alertas - Casos de uso
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 640624ab017d8fc0e7b942c2f00c71cf255c4296
+source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 55%
+source-wordcount: '63'
+ht-degree: 38%
 
 ---
 
-# Alertas inteligentes: casos de uso
+# Alertas - Casos de uso
 
-Você pode criar alertas inteligentes conforme descrito em [Criar alertas](/help/components/c-intelligent-alerts/alert-builder.md).
+Você pode criar alertas conforme descrito em [Criar alertas](/help/components/c-intelligent-alerts/alert-builder.md).
 
 As seções a seguir ilustram exemplos de casos de uso a serem considerados ao criar alertas.
 
