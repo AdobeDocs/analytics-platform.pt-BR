@@ -5,9 +5,9 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 64a05e72f512bc68cfd324ab20810ade8c0c5f66
+source-git-commit: 22ae84479142d45f400f6ae39fe1416c9aaf7229
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 98%
 
 ---
@@ -136,7 +136,7 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 
 A Adobe alterou recentemente a forma do processamento de dados no Customer Journey Analytics:
 
-<ul><li>Os dados do evento do dia "atual" são transmitidos como dados em tempo real. Todos os dados com uma hora de evento anterior a 11:59:59 (23:59:59) no dia anterior são tratados como preenchimento retroativo.</li><li>Quaisquer dados de evento com um carimbo de data e hora superior a 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados de preenchimento retroativo e serão assimilados com uma prioridade mais baixa.</li></ul>
+<ul><li>Os dados do evento do dia "atual" são transmitidos como dados em tempo real. Quaisquer dados com uma hora de evento anterior a 23:59:59 pm(23:59:59) no dia anterior são tratados como preenchimento retroativo.</li><li>Quaisquer dados de evento com um carimbo de data e hora superior a 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados de preenchimento retroativo e serão assimilados com uma prioridade mais baixa.</li></ul>
 
 ## 5. Definir janela contínua para retenção de dados de [!UICONTROL conexão] {#data-retention}
 
@@ -150,7 +150,7 @@ Para exclusão de dados, você deve considerar seis tipos de componentes: sandbo
 
 | Se você... | Isso acontece... |
 | --- | --- |
-| Excluir uma sandbox na [!UICONTROL Adobe Experience Platform] | A exclusão de uma sandbox interromperá o fluxo de dados para qualquer conexão do [!UICONTROL Customer Journey Analytics] com conjuntos de dados nessa sandbox. Atualmente, as [!UICONTROL conexões] do Customer Journey Analytics vinculadas à sandbox excluída não são excluídas automaticamente. |
+| Excluir uma sandbox na [!UICONTROL Adobe Experience Platform] | A exclusão de uma sandbox interromperá o fluxo de dados para qualquer conexão do [!UICONTROL Customer Journey Analytics] com conjuntos de dados nessa sandbox. Conexões, visualizações de dados, métricas e dimensões relacionadas a essa sandbox excluída também serão excluídas. | |
 | Excluir um esquema na [!UICONTROL Adobe Experience Platform], mas não os conjuntos de dados associados a esse esquema | [!UICONTROL A Adobe Experience Platform] não permite a exclusão de [!UICONTROL esquemas] que tenham um ou mais [!UICONTROL conjuntos de dados] associados a eles. No entanto, um Administrador com o conjunto apropriado de direitos pode excluir os conjuntos de dados primeiro e, em seguida, excluir o esquema. |
 | Exclusão de um conjunto de dados no data lake da [!UICONTROL Adobe Experience Platform] | A exclusão de um conjunto de dados no data lake da Adobe Experience Platform interrompe seu fluxo de dados para qualquer conexão do Customer Journey Analytics que o inclua. Qualquer dado desse conjunto de dados é excluído automaticamente das conexões associadas do Customer Journey Analytics. |
 | Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Entre em contato com sua equipe de contas da Adobe para iniciar o processo de exclusão de um conjunto de dados em uma conexão salva. |
