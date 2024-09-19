@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
