@@ -4,13 +4,13 @@ description: Detalhes e informações sobre como usar e configurar dados de resu
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bdf13331967a1b2e51ce9d1dab650fb3dba1606d
+exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
+source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 8%
+source-wordcount: '1137'
+ht-degree: 7%
 
 ---
-
 
 # Dados de resumo
 
@@ -75,6 +75,14 @@ A combinação dos dados resumidos do evento e dos dados de sequência de clique
 | def456 | 775 | $ 650 | 775 | $ 1.250 | 1,92 |
 | ghi789 | 500 | $ 500 | 500 | $ 750 | 1,50 |
 
+
+### Dados de pesquisa
+
+Se quiser criar um relatório usando uma dimensão definida em um conjunto de dados de pesquisa adicional (por exemplo, nome da campanha), siga estas etapas adicionais:
+
+1. Crie um novo campo derivado que use a função [Pesquisa](/help/data-views/derived-fields/derived-fields.md#lookup) para pesquisar o nome da campanha no conjunto de dados de pesquisa. Na definição da função [Pesquisa](/help/data-views/derived-fields/derived-fields.md#lookup), você usa a correspondência entre o código da campanha e o código de rastreamento para pesquisar o nome da campanha.
+1. Adicione o campo derivado recém-criado como um componente de dimensão à visualização de dados.
+1. Configure o componente de dimensão do nome da campanha (do conjunto de dados de pesquisa) para ter um agrupamento de dados de resumo com o campo derivado recém-criado.
 
 Consulte o caso de uso [Assimilar e relatar dados de resumo](/help/use-cases/data-views/summary-data.md) para obter um artigo detalhado sobre como usar, relatar e analisar dados de resumo no Customer Journey Analytics.
 

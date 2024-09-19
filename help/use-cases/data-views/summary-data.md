@@ -4,9 +4,10 @@ description: Use a explicação de todos os detalhes sobre como trazer dados de 
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
+exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
+source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
 workflow-type: tm+mt
-source-wordcount: '4974'
+source-wordcount: '5187'
 ht-degree: 8%
 
 ---
@@ -277,7 +278,7 @@ Os dados de pesquisa estão disponíveis no Conjunto de dados de pesquisa de exe
 | 17 | def321 | def-adgroup | Campanha 321 |
 | 18 | ghi321 | ghi-adgroup | Campanha 321 |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg) Baixar dados de pesquisa de exemplo](./assets/lookup-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Baixar dados de pesquisa de amostra](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -487,6 +488,26 @@ Para garantir que você possa relatar os dados corretos no Workspace, é necess�
             1. Selecione a dimensão **[!UICONTROL ID da Campanha]** na lista **[!UICONTROL Dimension]**.
             1. Você percebe que **[!UICONTROL Ocultar componente nos relatórios]** em **[!UICONTROL Configurações de componente]** agora é habilitado automaticamente.
 
+      1. Crie um novo campo derivado, por exemplo `Campaign Name (Lookup Derived Field)`, para garantir que você possa relatar no Workspace usando a dimensão Nome da campanha (Pesquisa) do conjunto de dados Exemplo de dados de Pesquisa.
+
+         ![Campo derivado do nome da campanha](../aa-data/../assets/summary-derived-field.png)
+
+         1. Selecione **[!UICONTROL campaign_id]** para **[!UICONTROL Value]**.
+         1. Selecione **[!UICONTROL Exemplo de Conjunto de Dados de Pesquisa]** no menu suspenso **[!UICONTROL Conjunto de Dados de Pesquisa]**.
+         1. Selecione **[!UICONTROL tracking_code]** do menu suspenso **[!UICONTROL Chave de Correspondência]**.
+         1. Selecione **[!UICONTROL campaign_name]** no menu suspenso **[!UICONTROL Valores para retornar]**.
+         1. Selecione **[!UICONTROL Salvar]**.
+
+      1. Adicione o campo derivado recém-criado, **[!UICONTROL Nome da Campanha (Campo Derivado de Pesquisa)]**, à lista de componentes **[!UICONTROL Dimension]**.
+
+      1. Selecione a dimensão **[!UICONTROL Nome da campanha (Pesquisa)]** na lista **[!UICONTROL Dimension]**. No painel do componente:
+
+         ![Grupo de Dados de Resumo de Campo Derivado](../assets/derived-field-summary-data-group.png)
+
+         1. Expandir ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Grupo de Dados de Resumo]**.
+         1. Habilitar **[!UICONTROL Criar agrupamento]**.
+         1. Selecione **[!UICONTROL Nome da campanha (campo derivado de pesquisa)]** na lista suspensa **[!UICONTROL Dimension]**. Esta etapa garante que o Nome da Campanha (Pesquisa) do Conjunto de Dados de Pesquisa de Exemplo possa ser usado com segurança nos relatórios (consulte [Workspace](#workspace)).
+
       1. Selecione a métrica **[!UICONTROL Receita]** na lista **[!UICONTROL Métricas]**. No painel do componente:
 
          ![Dados de resumo da receita](../assets/revenue-summary-data.png)
@@ -566,6 +587,14 @@ Adicione suas métricas calculadas ao relatório.
          1. Selecione uma **[!UICONTROL paleta de formatação condicional]** preferencial.
    1. Selecione **[!UICONTROL Salvar]** para salvar seu projeto.
 
+Se você quiser relatar o Nome da campanha em vez do Código de rastreamento (Evento), siga estas etapas:
+
+1. Duplique a visualização da tabela de forma livre **[!UICONTROL Relatório de dados de resumo]**.
+1. Renomeie a visualização duplicada para `Summary Data Report (using Campaign Name)`.
+1. Substitua ![Switch](/help/assets/icons/Switch.svg) a dimensão **[!UICONTROL Código de Rastreamento (Evento)]** pela dimensão **[!UICONTROL Nome da Campanha (Pesquisa)]**.
+
+Você pode criar relatórios corretamente sobre o Nome da campanha (Pesquisa) devido ao campo derivado criado e à configuração do componente de grupo de dados de resumo para o Nome da campanha (Pesquisa). Consulte [Visualização de dados](#data-view).
+
 O projeto final deve ser semelhante ao mostrado abaixo.
 
 ![Exemplo de Projeto Usando Dados de Resumo, mostrando o Painel de Dados de Resumo com o Relatório de Dados de Resumo](../assets/summary-workspace.png)
@@ -575,4 +604,3 @@ O projeto final deve ser semelhante ao mostrado abaixo.
 >
 >[Dados de resumo](/help/data-views/summary-data.md)
 >[Configurações do componente do grupo de dados de resumo](/help/data-views/component-settings/summary-data-group.md)
-
