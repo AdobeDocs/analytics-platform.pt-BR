@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 9314aae4c62e5c7a21495beeea0a5d69c6e113a1
+source-git-commit: a4b838f7813d78681eba072e4febd90ba0c7111d
 workflow-type: tm+mt
-source-wordcount: '1455'
-ht-degree: 100%
+source-wordcount: '1442'
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ Você também pode ter várias visualizações de dados com base na mesma conex�
 
 ## Alterações ao conceito de classificações
 
-“Classificações” agora são conhecidas como “Conjuntos de dados de pesquisa”. Os conjuntos de dados de pesquisa são usados para procurar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode fazer o upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte [Adicionar dados a conta como um conjunto de dados de pesquisa](/help/use-cases/b2b/b2b.md) para obter um exemplo de caso de uso.
+&quot;Classificações&quot; agora são conhecidas como *Conjuntos de dados de pesquisa*. Os conjuntos de dados de pesquisa são usados para procurar valores ou chaves encontrados nos dados do Evento ou Perfil. Por exemplo, você pode fazer o upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos.
 
 ## Alterações no conceito de atributos do cliente
 
