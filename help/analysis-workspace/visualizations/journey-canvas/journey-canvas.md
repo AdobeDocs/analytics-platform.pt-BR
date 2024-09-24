@@ -1,19 +1,19 @@
 ---
-description: Visão geral da tela de jornada
+description: Visão geral da tela da jornada
 title: Tela da jornada
 feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 2f42c64443cc5798388287e6f84b125fb8694812
+source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1300'
 ht-degree: 2%
 
 ---
 
-# Visão geral da tela de jornada
+# Visão geral da tela da jornada
 
 {{release-limited-testing}}
 
@@ -127,6 +127,16 @@ Além disso, as alterações feitas em uma jornada no Journey Optimizer serão s
 
 Depois de modificar uma jornada do Journey Optimizer na tela do Jornada, podem ocorrer alterações no processamento de dados, nos recursos disponíveis e no comportamento de sincronização.
 
+Se você fizer uma modificação significativa em uma jornada do Journey Optimizer na tela do Jornada, poderão ocorrer alterações no processamento de dados, nos recursos disponíveis e no comportamento da sincronização. Uma modificação significativa inclui qualquer uma das seguintes opções:
+
+* Adicionar ou remover um nó
+
+* Adição ou remoção de uma seta entre nós
+
+* Alteração dos componentes em um nó
+
+Se você fizer outras alterações em uma jornada do Journey Optimizer na tela de Jornada, como arrastar um nó ou adicionar um detalhamento, as diferenças descritas nas seções a seguir não se aplicam.
+
 >[!NOTE]
 >
 >Para retornar a jornada ao seu estado original, pressione Ctrl+z depois de fazer sua primeira alteração na tela de Jornada. Ou você pode excluir e [recriar a jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
@@ -139,9 +149,13 @@ Isso ocorre porque, ao contrário do Journey Optimizer, a tela de Jornada permit
 
 #### Diferenças nos recursos
 
-Depois de modificar uma jornada Journey Optimizer na tela de Jornada, o campo suspenso [!UICONTROL **Tipo de nó**] não estará mais disponível.
+Depois de modificar uma jornada do Journey Optimizer na tela do Jornada, a funcionalidade pode mudar para os seguintes recursos, dependendo de suas modificações:
 
-Para obter mais informações sobre este campo, consulte [Definir configurações](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+* Os valores mostrados na alteração de campo [!UICONTROL **Tipo de nó**].
+
+* As opções disponíveis no campo suspenso [!UICONTROL **Configurações de seta**] são alteradas.
+
+Para obter mais informações sobre esses campos, consulte [Definir configurações](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 #### Diferenças de sincronização
 
