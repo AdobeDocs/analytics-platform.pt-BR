@@ -3,10 +3,10 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: a07823d3671c683ec30cf1be4efc542b2b1b29d9
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 81%
+source-wordcount: '508'
+ht-degree: 79%
 
 ---
 
@@ -23,9 +23,7 @@ Essas notas de versão englobam o período de lançamento de 11 de setembro de 2
 | **Informações adicionais na coluna “Usado em” no gerenciador de métricas calculadas e no gerenciador de filtros** | A coluna “Usado em” no gerenciador de métricas calculadas e no gerenciador de filtros contém as novas áreas de relatório a seguir:<ul><li>**Report Builder:** mostra o número de métricas calculadas ou filtros em uso no Report Builder.</li><li>**Componentes ad hoc:** mostra o número de métricas calculadas ad hoc ou filtros ad hoc em uso em projetos. Essas métricas calculadas e filtros ad hoc (conhecidos como “métricas calculadas rápidas” e “filtros rápidos”) podem ser usados somente no projeto em que foram criados e, portanto, são relatados separadamente da área de relatórios “Projeto” na coluna “Usado em”.</li></ul>Para obter mais informações, consulte [Gerenciador de métricas calculadas](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager) e [Gerenciador de filtros](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/cja-filters/manage-filters). |  | 11 de setembro de 2024 |
 | **Alertas** | Os alertas no Customer Journey Analytics permitem que você seja notificado com base em porcentagens alteradas ou pontos de dados específicos.<p>Dependendo do pacote Customer Journey Analytics, você também pode usar alertas para serem acionados com base em limites de anomalias. Esses alertas (também conhecidos como &quot;Alertas inteligentes&quot;) fornecem controles detalhados que se integram à Detecção de anomalias, acionados quando você mais precisa deles.</p><p>O processo de usar alertas no Customer Journey Analytics é quase idêntico ao uso de alertas no Adobe Analytics. Uma diferença importante é que os alertas de hora em hora não estão disponíveis no Customer Journey Analytics. Essa diferença ocorre porque a assimilação de dados para os vários tipos de dados de eventos que podem ser assimilados é concluída somente após um atraso, normalmente variando de 3 a 9 horas após o horário do evento de dados.</p><p>Para obter mais informações sobre as diferenças ao usar alertas no Customer Journey Analytics do Adobe Analytics, consulte [Comparação de recursos de alertas](/help/components/c-intelligent-alerts/alerts-feature-comparison.md).</p><p>Para saber mais sobre alertas, consulte [Visão geral dos alertas](/help/components/c-intelligent-alerts/intelligent-alerts.md) |  | sábado, 13 de setembro de 2024 |
 | **Atualizações no conector de origem do Adobe Analytics** | A página de atividade do conjunto de dados não exibe informações sobre lotes, pois o Conector de origem do Analytics é totalmente gerenciado pela Adobe. Você pode monitorar o fluxo de dados observando as métricas em torno dos registros assimilados. Leia o manual sobre [criação de uma conexão de origem de dados do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) para obter mais informações. |  | Disponível agora |
-| **Análise de uso** | Veja como sua organização usa o Customer Journey Analytics. Habilitar esse recurso cria um conjunto de dados na Adobe Experience Platform que coleta dados quando qualquer pessoa na organização usa o Analysis Workspace. Uma conexão e uma exibição de dados também são criadas automaticamente, fornecendo acesso a dimensões como os principais tipos de projeto, usuários mais ativos e componentes mais populares usados em projetos. (Link da documentação em breve) |  | 18 de setembro de 2024 |
 | **Análise guiada: incorporada no Workspace** | Combine várias análises guiadas em uma única exibição no Analysis Workspace. (Link da documentação em breve) | 22 de setembro de 2024 | 2 de outubro de 2024 |
-
 
 ## Correções no Customer Journey Analytics
 
