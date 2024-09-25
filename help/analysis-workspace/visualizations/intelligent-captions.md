@@ -4,10 +4,10 @@ title: Legendas inteligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: dae2282717d5d84862259d5b056fbfeb2d068cce
+source-git-commit: 6a193f2fd179809afac6808f3fb958c020f53a8d
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 4%
+source-wordcount: '646'
+ht-degree: 5%
 
 ---
 
@@ -32,38 +32,40 @@ Os insights de linguagem natural estão sendo gerados agora.
 
 Lembre-se
 
-* Você precisa de no mínimo 3 pontos de dados para gerar legendas com êxito. Caso contrário, você poderá receber um erro com a frase &quot;Dados insuficientes para analisar&quot;.
+* Você precisa de no mínimo 3 pontos de dados para gerar legendas com êxito. Caso contrário, você poderá receber um erro como **[!UICONTROL Dados insuficientes para analisar]**.
 
-* As legendas são geradas sempre que os dados subjacentes selecionados mudam na tabela que possibilita a visualização.
+* As legendas são geradas sempre que os dados subjacentes selecionados são alterados na tabela que habilita a visualização.
 
 * Se houver várias métricas na tabela, as legendas serão geradas apenas para a primeira métrica ou para a métrica selecionada no momento pelo usuário.
 
-* Se você salvar o projeto neste ponto e recarregá-lo posteriormente, as legendas serão atualizadas automaticamente com novos dados. O mesmo se aplica a projetos agendados e arquivos PDF exportados deste projeto.
+* Se você salvar o projeto em um ponto específico e recarregá-lo posteriormente, as legendas serão atualizadas automaticamente com novos dados. O mesmo se aplica a projetos agendados e arquivos de PDF exportados de um projeto.
 
-## Exibir e interpretar legendas {#view}
-
-Esta é uma amostra de como as legendas podem ser:
+Este é um exemplo de como as legendas inteligentes podem ser:
 
 ![Legendas inteligentes para visualização de Linha, incluindo Sazonalidade, Mín, Máx, Pico e Recusar.](assets/captions.png)
 
-## Copiar para a área de transferência {#copy}
+## Ações
+
+Você pode executar as seguintes ações em legendas inteligentes:
+
+### Copiar para a área de transferência {#copy}
 
 Você pode copiar as legendas para uma área de transferência e colá-las em um PowerPoint ou outras ferramentas. Selecione ![Copiar legendas para a área de transferência](/help/assets/icons/Copy.svg) na parte superior direita da caixa de diálogo de legendas.
 
-## Editar legendas {#edit}
+### Editar exibição {#edit}
 
-É possível editar as legendas, como ocultar ou reexibir uma categoria específica de insights. Por exemplo, se você não quiser informações sobre a ordem mínima, oculte essas informações e clique em Aplicar. e não será exibido novamente.
+É possível editar a exibição de legendas, como ocultar ou reexibir uma categoria específica de insights.
 
 1. Selecione ![Editar exibição de legendas inteligentes](/help/assets/icons/EditInLight.svg) na caixa de diálogo Legendas inteligentes.
 
-1. Alterne entre ![Visibility](/help/assets/icons/Visibility.svg) para mostrar um insight específico (como **[!UICONTROL Min]**) ou ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) para ocultar um insight específico (como **[!UICONTROL Spike]**).
+1. Alterne entre ![Visibility](/help/assets/icons/Visibility.svg) para exibir um insight específico (como **[!UICONTROL Min]**) ou ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) para ocultar um insight específico (como **[!UICONTROL Spike]**).
 
    ![Editar legendas inteligentes](assets/edit-intelligent-captions.png)
 
 1. Selecione **[!UICONTROL Aplicar]**.
 
 
-## Fornecer feedback
+### Fornecer feedback
 
 Você pode fornecer feedback sobre as legendas inteligentes geradas.
 
@@ -73,13 +75,13 @@ Você pode fornecer feedback sobre as legendas inteligentes geradas.
 
 1. Na caixa de diálogo **[!UICONTROL Obrigado por seus comentários]**, forneça seus comentários e selecione **[!UICONTROL Enviar]** para enviar os comentários.
 
-## Exportar legendas {#export}
+### Exportar {#export}
 
-Você pode **exportar legendas via PDF**, desde que o projeto seja salvo com as legendas geradas.
+É possível exportar legendas inteligentes como parte de um PDF, desde que o projeto seja salvo com as legendas inteligentes geradas.
 
-## Ativar/desativar legendas {#toggle}
+### Ativar/desativar {#toggle}
 
-Se você preferir não mostrar legendas inteligentes, é possível desativar esse recurso.
+Se você preferir não mostrar legendas inteligentes, é possível desativar o recurso.
 
 1. Vá para [Preferências de visualização](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 1. Desmarque **[!UICONTROL Mostrar legendas inteligentes]**.
@@ -87,9 +89,6 @@ Se você preferir não mostrar legendas inteligentes, é possível desativar ess
    ![Opções de visualização de linha que mostram a opção de desmarcar Mostrar legendas inteligentes.](assets/toggle-captions.png)
 
 1. Selecione **[!UICONTROL Salvar]** para salvar a preferência.
-
-
-
 
 
 ## Legendas inteligentes em cartões de pontuação móveis
