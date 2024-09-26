@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 27749382a311330e6ece76c663f4c610ef20d8c1
+source-git-commit: b2e165e5bb2c15fecaba1c8b14daeb727c0cead5
 workflow-type: tm+mt
-source-wordcount: '2928'
-ht-degree: 65%
+source-wordcount: '3044'
+ht-degree: 63%
 
 ---
 
@@ -399,5 +399,15 @@ Essas funções podem ser usadas em dimensões na cláusula `SELECT`, `WHERE` ou
 | [Extrair](https://spark.apache.org/docs/latest/api/sql/index.html#extract) | ``SELECT EXTRACT(MONTH FROM `timestamp`)`` | Gere uma identidade de dimensão dinâmica no campo transmitido. Use a ID do item em vez do valor para algumas partes dessa função, pois você precisa do número e não do nome amigável.<br/>As partes compatíveis são:<br>- Palavras-chave: `YEAR`, `MONTH`, `DAYOFMONTH`, `DAYOFWEEK`, `DAYOFYEAR`, `WEEK`, `QUARTER`, `HOUR`, `MINUTE`.<br/>- Strings:  `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
 | [Data (parte)](https://spark.apache.org/docs/latest/api/sql/index.html#date_part) | ``SELECT DATE_PART('month', `timestamp`)`` | Gere uma identidade de dimensão dinâmica no campo transmitido. Use a ID do item em vez do valor para algumas partes dessa função, pois você precisa do número e não do nome amigável.<br/>As partes da string compatíveis são: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
 | [Data (truncada)](https://spark.apache.org/docs/latest/api/sql/index.html#date_trunc) | ``SELECT DATE_TRUNC('quarter', `timestamp`)`` | Gere uma identidade de dimensão dinâmica no campo transmitido.<br/>As granularidades de string compatíveis são: `'YEAR'`, `'Y'`, `'MONTH'`, `'M'`, `'DAYOFMONTH'`, `'DAY'`, `'D'`, `'DAYOFWEEK'`, `'DOW'`, `'DAYOFYEAR'`, `'DOY'`, `'WEEK'`, `'WOY`&#39;, `'W'`, `'QUARTER'`, `'QOY'`, `'Q'`, `'HOUR'` ou `'MINUTE'`. |
+
+{style="table-layout:auto"}
+
+### Suporte parcial
+
+Há suporte parcial para alguma funcionalidade SQL com a extensão BI e ela não retorna os mesmos resultados vistos com outros bancos de dados.  Essa funcionalidade específica é usada no SQL gerado por várias ferramentas de BI, para as quais a extensão de BI não tem uma correspondência exata. Como resultado, a extensão BI se concentra em uma implementação limitada que cobre o uso mínimo da ferramenta BI sem gerar erros. Consulte a tabela abaixo para obter mais detalhes.
+
+| Função | Exemplo | Detalhes |
+|---|---|---|
+| MIN() &amp; MAX() | ``MIN(daterange)`` ou <br/> ``MAX(daterange)`` | `MIN()` em `timestamp`, `daterange`, ou qualquer um dos `daterangeX` como `daterangeday` retornará há 2 anos.<br/><br/> `MAX()` em `timestamp`, `daterange`, ou qualquer um dos `daterangeX` como `daterangeday` retornará a data/hora atual.<br/><br/>`MIN()` ou `MAX()` em qualquer outra dimensão, métrica ou expressão retornará 0. |
 
 {style="table-layout:auto"}
