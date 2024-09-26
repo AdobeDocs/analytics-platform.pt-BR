@@ -4,9 +4,9 @@ title: Legendas inteligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 6a193f2fd179809afac6808f3fb958c020f53a8d
+source-git-commit: 9d94d52b14a4f119193696c1e5fc6df9538f77cb
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '632'
 ht-degree: 5%
 
 ---
@@ -19,8 +19,6 @@ As legendas inteligentes são voltadas para:
 
 * Analistas que precisam de narrativas para compartilhar com outros usuários. Os analistas precisam desses insights para fornecer contexto aos usuários.
 * Usuários empresariais que desejam descobrir os principais pontos de partida rapidamente.
-
-As legendas estão disponíveis para todos os usuários de Customer Journey Analytics e não exigem permissões especiais.
 
 ## Iniciar legendas inteligentes {#launch}
 
@@ -101,7 +99,7 @@ Os parâmetros a seguir controlam o acesso a legendas inteligentes:
 
 * **Acesso à solução**: o recurso Legendas inteligentes está disponível no Customer Journey Analytics, mas não no Adobe Analytics.
 
-* **Acesso contratual**: se você não puder usar legendas inteligentes, entre em contato com o administrador da sua organização ou com o Representante de Conta do Adobe. Antes de usar o Intelligent em sua organização, você deve concordar com determinados termos legais relacionados à GenAI.
+* **Acesso contratual**: se você não puder usar as legendas inteligentes, entre em contato com o administrador da sua organização ou com o representante de conta do Adobe. Antes de usar legendas inteligentes em sua organização, você deve concordar com determinados termos legais relacionados à GenAI.
 
 * **Permissões**: no [!UICONTROL Adobe Admin Console], a permissão [!UICONTROL Ferramentas de Relatório] **[!UICONTROL Legendas inteligentes]** determina o acesso. Um [administrador de perfil de produto](https://helpx.adobe.com/br/enterprise/using/manage-product-profiles.html) precisa seguir estas etapas no [!UICONTROL Admin Console]:
    1. Navegue até **[!UICONTROL Admin Console]** > **[!UICONTROL Produtos e serviços]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Perfis de Produtos]**.
