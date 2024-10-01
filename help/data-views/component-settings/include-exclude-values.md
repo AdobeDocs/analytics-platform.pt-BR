@@ -5,14 +5,34 @@ exl-id: 1a3f8ab5-bd82-415a-989a-f93e6714df4b
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 97%
+source-wordcount: '353'
+ht-degree: 94%
 
 ---
 
-# Configurações do componente dos valores de Inclusão e Exclusão
+# Configurações do componente dos valores de Inclusão e Exclusão {#include-exclude-values-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_includeexcludevalues"
+>title="Incluir/excluir valores"
+>abstract="Filtrar uma métrica para contar apenas os valores que correspondem a critérios específicos."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_includeexcludevalues"
+>title="Incluir/excluir valores"
+>abstract="Limite uma dimensão para incluir apenas valores que correspondam a critérios específicos. As inclusões e exclusões acontecem antes da alocação e dos filtros nos relatórios.<br/><br/>**Parâmetros **<br/>**Diferencia maiúsculas de minúsculas**: determine se a lógica de filtro abaixo diferencia maiúsculas de minúsculas."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 Valores de inclusão e exclusão permitem criar regras que dependem do valor de um item de dimensão. Valores que não atendem aos critérios definidos são tratados no Analysis Workspace como se nunca houvessem existido, embora os dados ainda existam no conjunto de dados subjacente.
 

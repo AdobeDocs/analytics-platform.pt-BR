@@ -4,141 +4,207 @@ title: Criar filtros
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: e1f1e37293f1a18616b11fea685d372ec499c407
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 20%
+source-wordcount: '1450'
+ht-degree: 4%
 
 ---
 
-# Construtor de filtros
+# Criar filtros {#build-filters}
 
-O [!UICONTROL Construtor de filtros] permite que você crie filtros simples ou complexos que identificam os atributos e as ações da pessoa nas visitas e eventos. Ele fornece uma tela para arrastar e soltar dimensões de métrica, eventos ou outros filtros para filtrar pessoas com base em lógica de hierarquia, regras e operadores.
+<!-- markdownlint-disable MD034 -->
 
-Para obter informações sobre como criar filtros rápidos que se aplicam apenas ao projeto em que foram criados, consulte [Filtros rápidos](/help/components/filters/quick-filters.md).
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_createaudience"
+>title="Criar público"
+>abstract="O público pode ser criado a partir de um filtro e compartilhado com a Adobe Experience Platform para ativação. "
 
-## Acessar o construtor de filtros
+<!-- markdownlint-enable MD034 -->
 
-Você pode acessar o Construtor de filtros de qualquer uma das seguintes maneiras:
 
-* **Navegação superior**: Clique em **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Componentes]** > **[!UICONTROL Filtros]**.
-* **[!UICONTROL Analysis Workspace]**: com um projeto aberto no Analysis Workspace, selecione **[!UICONTROL + Componentes]** > **[!UICONTROL Criar filtro]**.
-* **[!UICONTROL Report Builder]**: [Trabalhar com Filtros em Report Builder](/help/report-builder/work-with-filters.md).
+A caixa de diálogo **[!UICONTROL Construtor de filtros]** é usada para criar filtros novos ou editar filtros existentes. A caixa de diálogo é denominada **[!UICONTROL Novo filtro]** ou **[!UICONTROL Editar filtro]** para filtros que você cria ou gerencia no gerenciador [[!UICONTROL Filtros]](/help/components/filters/manage-filters.md).
 
-## Visão geral dos critérios do construtor {#section_F61C4268A5974C788629399ADE1E6E7C}
+>[!BEGINTABS]
 
-É possível adicionar definições de regra e contêineres para definir seus filtros. (Para obter informações sobre como acessar o Construtor de filtros, consulte [Acessar o Construtor de filtros](#access-the-filter-builder).)
+>[!TAB Construtor de filtros]
 
-![Construtor de filtros mostrando as novas opções de filtro descritas nesta seção.](assets/segment_builder_ui_2.png)
+![Janela de detalhes do filtro mostrando campos e opções descritos na próxima seção.](assets/filter-builder.png)
 
-| Elemento da interface | Descrição |
-| --- | --- |
-| **[!UICONTROL Título]** | Nomear o filtro |
-| **[!UICONTROL Descrição]** | Forneça uma descrição detalhada para o filtro. |
-| **[!UICONTROL Tags]** | [Marque o filtro](/help/components/filters/manage-filters.md) que você está criando ao selecionar de uma lista de marcas existentes ou criar uma nova marca. |
-| **[!UICONTROL Definições]** | É aqui que você [compila e configura filtros](/help/components/filters/filters-overview.md), adiciona regras, bem como aninha e faz a sequência de contêineres. |
-| **[!UICONTROL Incluir]** | (Seletor de contêiner superior.) Permite selecionar o [contêiner](/help/components/filters/filters-overview.md) de nível superior ( [!UICONTROL Pessoa], [!UICONTROL Sessão], [!UICONTROL Evento]). O container de nível superior padrão é o container Evento. |
-| **[!UICONTROL Opções]** | Ícone (engrenagem) | <ul><li>**[!UICONTROL + Adicionar contêiner]**: permite que você adicione um novo contêiner (abaixo do contêiner de nível superior) à definição do filtro.</li><li>**[!UICONTROL Excluir]**: permite que você defina o filtro ao excluir uma ou mais dimensões, filtros ou métricas.</li></ul> |
-| **[!UICONTROL Dimensões]** | Os componentes são arrastados e soltos na lista Dimension (barra lateral laranja). |
-| **[!UICONTROL Operador]** | É possível comparar e restringir valores com operadores selecionados. (é igual a, não é igual, contém, contém todos os, etc.) |
-| **[!UICONTROL Valor]** | O valor inserido ou selecionado para a dimensão, filtro ou métrica. |
-| **[!UICONTROL Modelos de atribuição]** | Disponível somente para dimensões, esses modelos determinam quais valores filtrar em uma dimensão. Os modelos de Dimension são particularmente úteis em filtros sequenciais.<ul><li>**[!UICONTROL Repetição]** (padrão): inclui instâncias e valores persistentes da dimensão.</li><li>**[!UICONTROL Instância]**: inclui instâncias da dimensão.</li><li>**[!UICONTROL Instância de não repetição]**: inclui instâncias exclusivas (não repetitivas) da dimensão. Esse é o modelo aplicado no Fluxo quando instâncias repetidas são excluídas.</li></ul>Para obter um exemplo, consulte a seção &quot;Modelos de atribuição&quot; abaixo. |
-| **[!UICONTROL E/Ou/Então]** | Atribui os operadores [!UICONTROL E/OU/ENTÃO] entre contêineres ou regras. O operador THEN permite [definir filtros sequenciais](/help/components/filters/filters-overview.md). |
-| **[!UICONTROL Métrica]** | (Barra lateral verde) Métrica que foi arrastada e solta na lista de Métricas. |
-| **[!UICONTROL X]** | (Excluir) Permite excluir essa parte da definição de filtro. |
-| **[!UICONTROL Criar público a partir do filtro]** | A criação de um público-alvo a partir de um filtro permite que você compartilhe o filtro com o Adobe Experience Platform para ativação. [Saiba mais...](/help/components/audiences/audiences-overview.md) |
-| **[!UICONTROL Componente de pesquisa]** | Pesquisa a lista de dimensões, filtros ou métricas. |
-| **[!UICONTROL Dimensões]** | (Lista) A lista de dimensões que você pode incluir no filtro. Clique no cabeçalho para expandir. |
-| **[!UICONTROL Métricas]** | A lista de métricas que você pode incluir no filtro. Clique no cabeçalho para expandir. |
-| **[!UICONTROL Filtros]** | A lista de filtros existentes que podem ser incluídos no filtro. Clique no cabeçalho para expandir. |
-| **[!UICONTROL Seletor de Modo de Exibição de Dados]** | Permite selecionar o conjunto de relatórios em que esse filtro será salvo. Você ainda pode utilizar o filtro em todas as visualizações de dados. |
-| **[!UICONTROL Visualização do Filtro]** | Permite que você visualize as métricas principais para conferir se você tem um filtro válido e a amplitude deste. Representa o detalhamento do conjunto de dados que se pode esperar ao aplicar esse filtro. Mostra 3 círculos concêntricos e uma lista para mostrar o número e a porcentagem de correspondências de [!UICONTROL Pessoas], [!UICONTROL Sessões] e [!UICONTROL Relatórios Executados] para um filtro executado em um conjunto de dados.<p>Esse gráfico é atualizado imediatamente após a criação ou alteração da definição do filtro. |
-| **[!UICONTROL Salvar]** ou **[!UICONTROL Cancelar]** | Salva ou cancela o filtro. Depois de clicar em **[!UICONTROL Salvar]**, você será levado para o Gerenciador de filtros, onde será possível gerenciar o filtro. |
+>[!TAB Criar ou editar filtro]
 
-## Criar um filtro {#build-filters}
+![Janela de detalhes do filtro mostrando campos e opções descritos na próxima seção.](assets/create-edit-filter.png)
 
-1. Basta arrastar um Dimension, Filtro ou Evento de métrica do painel esquerdo para o campo [!UICONTROL Definições].
+>[!ENDTABS]
 
-   ![](assets/drag_n_drop_dimension.png)
+1. Especifique os seguintes detalhes (![Obrigatório](/help/assets/icons/Required.svg) é obrigatório):
 
-1. Defina o [operador](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segment-reference/seg-operators.html?lang=pt-BR) no menu suspenso.
-1. Digite ou selecione um valor para o item selecionado.
-1. Adicione contêineres adicionar se necessário, com as regras **[!UICONTROL AND]**, **[!UICONTROL OR]**, ou **[!UICONTROL THEN]**.
-1. Depois de colocar os contêineres e definir as regras, consulte os resultados do filtro no gráfico de validação na parte superior direita. O validador indica a porcentagem e o número absoluto de exibições de página, visitas e pessoas únicas que correspondem ao filtro criado.
-1. Em **[!UICONTROL Marcas]**, [marque](/help/components/filters/filters-tag.md) o contêiner ao selecionar uma marca existente ou criar uma nova.
-1. Clique em **[!UICONTROL Salvar]** para salvar o filtro.
+   | Elemento | Descrição |
+   | --- | --- |
+   | **[!UICONTROL Visualização de dados]** | É possível selecionar a visualização de dados para o filtro.  O filtro definido está disponível como um filtro na guia [Configurações](/help/data-views/create-dataview.md#settings-filters) de uma exibição de dados. |
+   | **[!UICONTROL Filtro somente de projeto]** | Uma caixa de informações para explicar que o filtro só está visível no projeto em que foi criado e que o filtro não será adicionado à lista de componentes. Habilitar **[!UICONTROL Disponibilize este filtro para todos os projetos e adicione-o à lista de componentes]** para alterar essa configuração. Esta caixa de informações só é visível quando você cria um [filtro rápido](quick-filters.md) e transforma as informações do filtro rápido em um filtro regular usando o **[!UICONTROL Abrir construtor]** da interface do [!UICONTROL filtro rápido]. |
+   | **[!UICONTROL Título]** ![Obrigatório](/help/assets/icons/Required.svg) | Nomeie o filtro, por exemplo, `Last month mobile customers`. |
+   | **[!UICONTROL Descrição]** | Forneça uma descrição para o filtro, por exemplo, `Filter to define the mobile customers for the last month`. |
+   | **[!UICONTROL Tags]** | Organize o filtro criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova marca. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma marca. |
+   | **[!UICONTROL Definição]** ![Necessária](/help/assets/icons/Required.svg) | Defina seu filtro usando o [Criador de definições](#definition-builder). |
 
-   Você é levado ao [Gerenciador de filtros](/help/components/filters/manage-filters.md), onde é possível marcar, compartilhar e gerenciar o filtro de várias maneiras.
+   {style="table-layout:auto"}
 
-## Adicionar contêiners {#containers}
+1. Para verificar se a definição do filtro está correta, use a visualização constantemente atualizada dos resultados do filtro na parte superior direita.
+1. Para criar um público-alvo a partir do filtro e compartilhá-lo com o Experience Platform, selecione **[!UICONTROL Criar público-alvo a partir do filtro]**. Consulte [Criar e publicar públicos-alvo](/help/components/audiences/publish.md) para obter mais informações.
+1. Selecionar:
+   * **[!UICONTROL Salvar]** para salvar o filtro.
+   * **[!UICONTROL Salvar como]** para salvar uma cópia do filtro.
+   * **[!UICONTROL Excluir]** para excluir o filtro.
+   * **[!UICONTROL Cancelar]** para cancelar as alterações feitas no filtro ou a criação de um novo filtro.
 
-É possível [construir uma estrutura de contêineres](/help/components/filters/filters-overview.md) e, em seguida, colocar regras de lógica e operadores entre eles.
 
-1. Clique em **[!UICONTROL Opções > Adicionar container]**.
+## Construtor de definições
 
-   Um novo contêiner de [!UICONTROL **Evento**] é aberto sem um [!UICONTROL **Evento**] (Exibição de Página) identificado.
+Use o Criador de definições para criar sua definição de filtro. Nessa construção, você usa componentes, contêineres, operadores e lógica.
 
-   ![](assets/new_container.png)
+Você pode configurar o tipo e o escopo de sua definição:
 
-1. Altere o tipo de contêiner como necessário.
-1. Arraste um Dimension, Filtro ou Evento do painel esquerdo para o container.
-1. Continue a adicionar novos contêineres com o botão **[!UICONTROL Opções]** > **[!UICONTROL Adicionar contêiner]** na parte superior da definição, ou adicione contêineres de um contêiner para aninhar a lógica.
+1. Para especificar o tipo da definição, especifique se deseja que o build inclua ou exclua a definição. Selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Opções]** e, na lista suspensa, selecione **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]**.
+1. Para especificar o escopo da definição, selecione na lista suspensa **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]** se deseja que o escopo da definição seja **[!UICONTROL Evento]**, **[!UICONTROL Sessão]** ou **[!UICONTROL Pessoa]**.
 
-   **OR**
+Você sempre pode alterar essas configurações mais tarde.
 
-   Selecione uma ou mais regras, em seguida, clique em **[!UICONTROL Opções]** > **[!UICONTROL Adicionar contêiner da seleção]**. Isso transforma sua seleção em um contêiner separado.
+### Componentes
 
-## Utilize intervalos de datas {#date-ranges}
+Uma parte essencial da construção da definição de filtro é usar dimensões, métricas, filtros existentes e intervalos de datas. Todos esses componentes estão disponíveis no painel de componentes no Construtor de filtros.
 
-Você pode criar filtros que contêm intervalos de datas flexíveis para responder questões sobre campanhas ou eventos em andamento.
+![Comece a criar uma definição](assets/start-building-filter.gif){width=100%}
 
-Por exemplo, crie facilmente um filtro que inclua &quot;todos que realizaram uma compra nos últimos 60 dias&quot;.
+Para adicionar um componente:
 
-Crie um contêiner Sessão e adicione o intervalo [!UICONTROL Últimos 60 dias] e a métrica [!UICONTROL Pedidos é superior ou igual a 1], com um operador AND.
+1. Arraste e solte um componente do painel componentes em **[!UICONTROL Arraste e solte Métricas, Filtros e/ou Dimension aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
+1. Especifique os detalhes do componente. Por exemplo, selecione um valor de **[!UICONTROL Selecionar valor]**. Ou insira um valor. O que e como você pode especificar um ou mais valores dependem do componente e do operador.
+1. Opcionalmente, modifique o operador padrão. Por exemplo, de **[!UICONTROL é igual a]** a **[!UICONTROL é igual a qualquer um de]**. Consulte [Operadores](operators.md) para obter uma visão geral detalhada dos operadores disponíveis.
 
-Veja um vídeo sobre o uso de intervalos de datas contínuas em filtros:
+Para editar um componente:
+
+* Selecione um novo operador para o componente no menu suspenso do operador.
+* Selecione ou especifique um valor diferente para o operador, se apropriado.
+* Se o tipo de componente for uma dimensão, você poderá definir o modelo de atribuição. Consulte [Modelo de atribuição](#attribution-models) para obter mais informações.
+
+Para excluir um componente:
+
+* Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) em um componente.
+
+### Containers
+
+É possível agrupar vários componentes em um ou mais contêineres e definir a lógica dentro e entre contêineres. Os containers permitem criar definições complexas para o filtro.
+
+![Adicionar um contêiner](assets/add-container.gif){Width=100%}
+
+* Para adicionar um contêiner, selecione **[!UICONTROL Adicionar contêiner]** de ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Opções]**.
+* Para adicionar um componente existente ao contêiner, arraste e solte o componente no contêiner.
+* Para adicionar outro componente ao contêiner, arraste e solte um componente do painel do componente no contêiner. Use a linha de inserção azul como guia.
+* Para adicionar outro componente fora do contêiner, arraste e solte um componente do painel do componente fora do contêiner, mas dentro do contêiner de definição principal. Use a linha de inserção azul como guia.
+* Para modificar a lógica entre componentes em um contêiner, entre contêineres ou entre um contêiner e um componente, selecione o **[!UICONTROL And]**, **[!UICONTROL Or]**, **[!UICONTROL Then]** apropriado. Ao selecionar Then, você transforma o filtro em um filtro sequencial. Consulte [Criar filtro sequencial](seg-sequential-build.md) para obter mais informações.
+* Para alternar o nível de contêiner, selecione ![PáginaWeb](/help/assets/icons/WebPage.svg) **[!UICONTROL Evento]**, ![Visita](/help/assets/icons/Visit.svg) **[!UICONTROL Sessão]** ou ![Usuário](/help/assets/icons/User.svg) **[!UICONTROL Pessoa]**.
+
+Você pode usar a ![Configuração](/help/assets/icons/Setting.svg) em um contêiner para as seguintes ações:
+
+| Ação do contêiner | Descrição |
+|---|---|
+| **[!UICONTROL Adicionar contêiner]** | Adicione um container aninhado ao container. |
+| **[!UICONTROL Excluir]** | Excluir o resultado do container na definição de filtro. Uma barra esquerda vermelha fina identifica um container de exclusão. |
+| **[!UICONTROL Incluir]** | Inclua o resultado do container na definição de filtro. Incluir é o padrão. Uma barra à esquerda cinza fina identifica um container de inclusão. |
+| **[!UICONTROL Contêiner de nome]** | Renomeie o container de sua descrição padrão. Digite um nome no campo de texto. Se você não fornecer nenhuma entrada, a descrição padrão será usada. |
+| **[!UICONTROL Excluir contêiner]** | Exclua o contêiner da definição. |
+
+
+## Intervalos de datas
+
+Você pode criar filtros que contêm intervalos de datas contínuas. Assim, você é capaz de responder perguntas sobre campanhas ou eventos em andamento. Por exemplo, você pode criar um filtro que inclua *todos que realizaram uma compra online nos últimos 60 dias*.
+
+![Filtrar usando intervalo de datas em andamento](assets/filter-rolling-date-range.gif)
+
++++ Veja um vídeo sobre o uso de intervalos de datas contínuas em filtros
 
 >[!VIDEO](https://video.tv.adobe.com/v/25403/?quality=12)
 
+{{videoaa}}
+
++++
+
 ## Empilhar filtros {#stack}
 
-O empilhamento de filtros funciona ao combinar os critérios em cada filtro com um operador &quot;and&quot;, em seguida, ao aplicar os critérios combinados. Isso pode ser feito diretamente em um projeto do Workspace ou no Construtor de filtros.
+É possível criar um filtro usando filtros. Ao usar filtros em um filtro, você pode otimizar seu filtro e reduzir a complexidade.
 
-Por exemplo, empilhar um filtro &quot;usuários de celular&quot; e um filtro &quot;geografia dos EUA&quot; retornaria dados somente para usuários de celular nos EUA.
+Imagine que você queira filtrar a combinação de dispositivos do tipo (2) e estados dos EUA (50). Você poderia criar 100 filtros, cada um para a combinação exclusiva de tipo de dispositivo (celular versus tablet) e estado dos EUA. Para obter os usuários do tablet da Califórnia, você usaria um dos 100 filtros:
 
-Pense nesses filtros como blocos de construção ou módulos que você pode incluir em uma biblioteca de filtros, para que os usuários usem da maneira que quiserem. Dessa forma, você pode reduzir drasticamente o número de filtros necessários. Por exemplo, suponha que você tenha 40 filtros:
+![Filtro simples para CA e tablet](assets/filter-ca-tablet-single.png)
 
-* 20 para usuários de telefones celulares em países diferentes (US_mobile, Germany_mobile, France_mobile, Brazil_mobile etc.)
-* 20 para usuários de tablet em países diferentes (US_tablet, Germany_tablet, France_tablet, Brazil_tablet etc.)
+Ou você poderia definir 52 filtros: 50 filtros para os estados dos EUA, um para celular e um para tablet. E, em seguida, empilhe os filtros para obter os mesmos resultados. Para obter os usuários do tablet da Califórnia, você empilharia dois filtros:
 
-Usando o empilhamento de filtros, você pode reduzir a contagem de filtros para 22 e empilhá-los conforme necessário. Seria necessário criar estes filtros:
+![Filtro empilhado para CA e tablet](assets/filter-ca-tablet-stacked.png)
 
-* um filtro para usuários móveis
-* um filtro para usuários do tablet
-* 20 filtros para as diferentes regiões
 
->[!NOTE]
->
->Ao empilhar dois filtros, eles são unidos por padrão por uma instrução E. Isso não pode ser alterado para uma instrução OR.
+## Atribuição {#attribution}
 
-1. Acesse o Construtor de filtros.
+<!-- markdownlint-disable MD034 -->
 
-1. Forneça um título e uma descrição para o filtro.
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_repeating"
+>title="Repetição"
+>abstract="Inclui instâncias e valores persistentes da dimensão."
 
-1. Clique em **[!UICONTROL Mostrar filtros]** para trazer a lista de filtros para frente no painel de navegação à esquerda.
+<!-- markdownlint-enable MD034 -->
 
-1. Arraste os filtros que deseja empilhar para a tela de definição de filtro.
+<!-- markdownlint-disable MD034 -->
 
-1. Selecione [!UICONTROL **Salvar**].
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_instance"
+>title="Instância"
+>abstract="Inclui instâncias e valores persistentes da dimensão."
 
-## Modelos de atribuição {#attribution}
+<!-- markdownlint-enable MD034 -->
 
-![](assets/attribution-models.jpg)
+<!-- markdownlint-disable MD034 -->
 
-**Exemplo: Filtro de evento onde eVar 1 = A**
+>[!CONTEXTUALHELP]
+>id="cja_components_filters_attribution_nonrepeatinginstance"
+>title="Instância de não repetição"
+>abstract="Inclui instâncias exclusivas (não repetitivas) da dimensão."
 
-| Exemplo | A | A | A (persistente) | B | A | C |
-|---|---|---|---|---|---|---|
-| Repetição | X | X | X | - | X | - |
-| Instância | X | X | - | - | X | - |
-| Instância de não repetição | X | - | - | - | X | - |
+<!-- markdownlint-enable MD034 -->
+
+
+
+Ao usar uma dimensão no Construtor de filtros, você tem as opções para especificar o modelo de atribuição dessa dimensão. O modelo de atribuição selecionado determina se os dados se qualificam para a condição especificada para o componente de dimensão.
+
+Selecione ![Configuração](/help/assets/icons/Setting.svg) dentro do componente de dimensão e selecione um dos modelos de Atribuição do pop-up:
+
+| Modelos | Descrição |
+|---|---|
+| **[!UICONTROL Modelo repetitivo (padrão)]** | Inclua a instância e os valores persistentes da dimensão para determinar a qualificação. |
+| **[!UICONTROL Instância]** | Inclua apenas valores de instância da dimensão para determinar a qualificação. |
+| **[!UICONTROL Instância não repetitiva]** | Inclua valores de instância exclusiva (não repetitivos) da dimensão para determinar a qualificação. |
+
+
+![Modelo de atribuição na dimensão ao criar um filtro](assets/filter-dimension-attribution.png)
+
+### Exemplo
+
+Como parte de uma definição de filtro, você especificou a seguinte condição: Nome da página igual a Mulheres. Semelhante ao exemplo acima. Repita essa definição de filtro usando os dois outros modelos de atribuição. Portanto, você tem três filtros cada um com seu próprio modelo de atribuição:
+
+* Página Mulheres - Atribuição - Repetição (padrão)
+* Página Mulheres - Atribuição - Instância
+* Página Mulheres - Atribuição - Instância de não repetição
+
+
+A tabela abaixo explica, para cada modelo de atribuição, quais eventos de entrada são qualificados ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) para essa condição.
+
+
+| Página Mulheres - Atribuição - <br/>*modelo de atribuição* | Evento 1:<br/>Nome de Página igual a<br/>Mulheres | Evento 2:<br/>Nome de Página igual a<br/>Homens | Evento 3:<br/>Nome de Página igual a<br/>Mulheres | Evento 4:<br/>Nome da Página igual a<br/>Mulheres<br/>(persistente) | Evento 5:<br/>Nome da Página igual a<br/>Check-out | Evento 6:<br/>Nome de Página igual a<br/>Mulheres | Evento 7:<br/>Nome de página igual<br/>Página inicial |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
+| Repetição (padrão) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) |
+| Instância | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) |
+| Instância de não repetição | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) |
+
+Um exemplo de relatório sobre eventos que usam os três filtros é semelhante a:
+
+![Filtrar resultados do modelo de atribuição](assets/filter-dimension-attribution-results.png)

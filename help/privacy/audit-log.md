@@ -4,14 +4,33 @@ description: Saiba como visualizar e gerenciar logs de auditoria de Customer Jou
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 65%
+source-wordcount: '837'
+ht-degree: 66%
 
 ---
 
-# Logs de auditoria
+# Logs de auditoria {#audit-logs}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_auditlog_userid"
+>title="ID de usuário"
+>abstract="A ID do usuário pode ser encontrada clicando no botão de informação em uma entrada do log que contém o usuário desejado."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_auditlog_componentid"
+>title="ID de componente"
+>abstract="A ID do componente pode ser encontrada clicando no botão de informação em uma entrada do log que contém o componente desejado."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Para aumentar a transparência e a visibilidade das atividades realizadas no sistema, o Adobe Customer Journey Analytics permite auditar a atividade do usuário em vários serviços e recursos na forma de &quot;logs de auditoria&quot;. Esses registros formam uma trilha de auditoria que pode ajudar na solução de problemas e ajudar sua empresa a cumprir com as políticas corporativas de gerenciamento de dados e os requisitos normativos, como a HIPAA (Health Insurance Portability and Accountability Act, Lei de Portabilidade e Responsabilidade do Seguro de Saúde).
 

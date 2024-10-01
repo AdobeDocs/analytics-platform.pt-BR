@@ -5,15 +5,26 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+source-wordcount: '900'
+ht-degree: 81%
 
 ---
 
 
-# Configurações de componente de [!UICONTROL Persistência]
+# Configurações de componente de [!UICONTROL Persistência] {#persistence-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_persistence"
+>title="Persistência"
+>abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação se aplica antes dos filtros nos relatórios."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 [!UICONTROL Persistência] é a capacidade de um determinado valor de dimensão se relacionar a uma métrica além do evento em que está definido. Ela usa uma combinação de alocação e expiração.
 

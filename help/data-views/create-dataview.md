@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: f6b0088522a821a006d1c7fb4c55b4b2e11ff310
+source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 100%
+source-wordcount: '1832'
+ht-degree: 96%
 
 ---
 
@@ -16,9 +16,11 @@ ht-degree: 100%
 
 A criação de uma visualização de dados envolve criar métricas e dimensões com base em elementos de esquema ou utilizar componentes padrão. A maioria dos elementos do esquema pode ser uma dimensão ou uma métrica, dependendo das necessidades da sua empresa. Depois de arrastar um elemento do esquema para uma visualização de dados, algumas opções serão exibidas à direita, onde você poderá ajustar como a dimensão ou métrica opera no Customer Journey Analytics.
 
-Veja um vídeo sobre este tópico:
++++ Assista a um vídeo que ilustra as visualizações de dados no Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
+
++++
 
 Criar ou editar uma visualização de dados:
 
@@ -26,7 +28,17 @@ Criar ou editar uma visualização de dados:
 1. Para criar uma visualização de dados, selecione **[!UICONTROL Criar nova visualização de dados]**. Como alternativa, selecione uma visualização de dados existente na lista de visualizações de dados para editá-la.
 
 
-## Configurar
+## Configurar {#configure}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_externalid"
+>title="ID externa"
+>abstract="A alteração da ID externa pode afetar como o nome da visualização de dados aparece em fontes externas, como ferramentas de inteligência de negócios."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Para configurar uma visualização de dados nova ou existente:
 
@@ -50,9 +62,20 @@ Fornece configurações abrangentes para a visualização de dados.
 
 {style="table-layout:auto"}
 
-### Compatibilidade
+### Compatibilidade {#compatibility}
 
 {{release-limited-testing-section}}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_dataviewsinadobejourneyoptimizer"
+>title="Visualizações de dados no Journey Optimizer"
+>abstract="O Journey Optimizer precisa usar uma visualização de dados configurada com Customer Journey Analytics.<br/>Habilite esta opção para tornar esta a exibição de dados padrão usada nos relatórios do Adobe Journey Optimizer."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Quais componentes e conjuntos de dados são adicionados."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Fornece as configurações aplicáveis ao usar o Adobe Journey Optimizer junto com o Customer Journey Analytics.
 

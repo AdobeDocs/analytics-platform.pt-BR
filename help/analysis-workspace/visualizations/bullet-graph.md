@@ -1,20 +1,55 @@
 ---
-description: Permite ver a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas).
-title: Gráfico de marcadores
+description: Mostra a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas).
+title: Gráfico em marcadores
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 86%
+source-wordcount: '228'
+ht-degree: 22%
 
 ---
 
-# Gráfico de marcadores
+# Marcador {#bullet}
 
-Permite ver a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas).
+<!-- markdownlint-disable MD034 -->
 
-![Janela Configurações de Visualização mostrando a opção Tipo de gráfico, Opções de Marcador e outras configurações de gráfico.](assets/bullet-image.png)
+>[!CONTEXTUALHELP]
+>id="cja_workspace_bullet_goalvalue"
+>title="Valor da meta"
+>abstract="**[!UICONTROL Meta alta]** é a meta principal que você está almejando. **[!UICONTROL Meta baixa]** e **[!UICONTROL Meta intermediária]** criam intervalos abaixo da [!UICONTROL Meta alta]. Observação: quando a opção **[!UICONTROL Porcentagens]** estiver marcada, insira metas como números inteiros. Por exemplo: `20` se a sua meta for vinte por cento."
 
-O gráfico de marcadores apresenta uma só medida principal (por exemplo, receita acumulada no ano atual) e permite que você informe intervalos qualitativos de desempenho (por exemplo, em comparação com uma receita alvo). Você pode especificar alto, médio e baixo. É possível especificar intervalos de meta em [!UICONTROL Configurações de visualização].
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_bullet_button"
+>title="Nullet"
+>abstract="Crie uma visualização de gráfico de marcadores para mostrar como uma métrica se compara a, ou se mede em relação a, intervalos de desempenho (metas)."
+
+<!-- markdownlint-enable MD034 -->
+
+
+A visualização do ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** mostra como uma métrica se compara a, ou se mede em relação a, intervalos de desempenho (metas).
+
+![](assets/bullet.png)
+
+O gráfico de marcadores apresenta uma só medida principal (por exemplo, receita acumulada no ano atual) e permite que você informe intervalos qualitativos de desempenho (por exemplo, em comparação com uma receita alvo). Você pode especificar intervalos de meta altos, médios e baixos. Você pode especificar intervalos de meta em ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]**.
+
+## Configurações 
+
+Você pode definir configurações específicas para uma visualização de [!UICONTROL Marcador].
+
+| Configuração | Descrição |
+|---|---|
+| **[!UICONTROL Opções de marcador]** | Especifique valores para **[!UICONTROL Meta alta]**, **[!UICONTROL Meta intermediária]** e **[!UICONTROL Meta baixa]** na visualização [!UICONTROL Marcador]. <br/>**[!UICONTROL Meta alta ]**é a meta principal que você está almejando.**[!UICONTROL  Meta baixa ]**e**[!UICONTROL  Meta intermediária ]**criam intervalos abaixo da meta alta. Observação: quando a opção**[!UICONTROL  Porcentagens ]**estiver marcada, insira metas como números inteiros. Por exemplo: `20` se a sua meta for vinte por cento. |
+
+>[!MORELIKETHIS]
+>
+>[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu de contexto de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

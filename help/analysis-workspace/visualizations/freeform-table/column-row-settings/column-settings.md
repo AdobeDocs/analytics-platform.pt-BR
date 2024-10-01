@@ -4,59 +4,75 @@ title: Configurações de coluna
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 49b165c4dfec99ff1c65d4aacf4a5ffbe65d4004
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 74%
+source-wordcount: '875'
+ht-degree: 19%
 
 ---
 
 # [!UICONTROL Configurações de coluna]
 
-As [!UICONTROL Configurações de coluna] permitem que você configure a formatação da coluna; alguns elementos podem ser condicionais.
+As [!UICONTROL configurações de coluna] permitem que você configure a formatação da coluna; alguns elementos podem ser condicionais.
 
-Assista a um vídeo sobre as configurações de linha e coluna aqui:
++++ Assista a uma demonstração em vídeo dessa funcionalidade.
 
 >[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
 
-## Editar [!UICONTROL Configurações de coluna] {#edit-column-settings}
+{{videoaa}}
 
-Para acessar [!UICONTROL Configurações de coluna], arraste uma Tabela de forma livre para o projeto e clique no ícone de configurações ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) no cabeçalho da coluna.
++++
 
-<img src="./assets/column-settings.png" alt="As configurações de Coluna que mostram Total de células, Células da tabela e Visualização da célula da tabela." width="50%" />
+Para acessar [!UICONTROL Configurações de coluna], selecione ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) no cabeçalho da coluna.
 
-É possível editar as configurações de **diversas colunas de uma só vez**. Basta selecionar várias colunas e clicar no ícone de configurações de qualquer uma dessas colunas. Todas as alterações feitas serão aplicadas a todas as colunas com as células selecionadas.
+![Configurações de coluna](assets/column-settings.png)
 
-| Elemento | Descrição |
+
+É possível editar configurações para várias colunas de uma só vez. Selecione várias colunas e selecione ![Configuração](/help/assets/icons/Setting.svg) em qualquer uma das colunas selecionadas. Qualquer alteração feita se aplica a todas as colunas com células selecionadas.
+
+| Opção | Descrição |
 | --- | --- |
-| Número | Determina se uma célula exibe ou oculta o valor numérico para a métrica. Por exemplo, se a métrica for Exibições de página, o valor numérico será o número de exibições de página para o item da linha. |
-| Porcentagem | Determina se uma célula exibe ou oculta o valor percentual para a métrica. Por exemplo, se a métrica for Exibições de página, o valor percentual será o número de exibições de página para o item da linha dividido pelo total de exibições de página para a coluna.  Observação: podemos apresentar percentuais maiores que 100%, para maior precisão. Também fixamos o limite superior como 1.000% para garantir que as colunas possam aumentar em largura. |
-| Mostrar anomalias | Determina se a detecção de anomalias é executada nos valores desta coluna. |
-| Mostrar previsão | Determina se os valores de previsão são mostrados nesta coluna. |
-| Quebrar linha do texto do cabeçalho | Permite quebrar o texto de cabeçalho em tabelas de forma livre para tornar os cabeçalhos mais legíveis e as tabelas mais compartilháveis. Essa opção é útil para renderização de .pdf e para métricas com nomes compridos. Ativado por padrão. |
-| Interpretar o zero como valor inexistente | Para células com valor 0, determina se exibirá um 0 ou uma célula em branco. Isso é útil para observar dados diários de um mês que ainda não tenha terminado.  Em vez de mostrar 0 para as datas futuras, pode-se exibir células em branco. Essa configuração também aplica-se a gráficos (ou seja, eles não exibem uma linha ou uma barra com valores de 0 quando essa configuração estiver selecionada). |
-| Histórico | Determina se uma célula exibe ou oculta todas as formatações de célula, incluindo o gráfico de barras e a formatação condicional. |
-| Gráfico de barras | Exibe um gráfico de barras horizontal que representa o valor da célula relativo ao total da coluna. |
-| Formatação condicional | Consulte a seção abaixo. |
-| Visualização de célula de tabela | Mostra uma visualização de como cada célula é exibida com a aplicação das opções de formatação atuais selecionadas. |
+| **[!UICONTROL Mostrar total]** | Mostrar uma soma da coluna do lado do cliente. Este total **não** remove a duplicação de métricas como sessões ou pessoas. |
+| **[!UICONTROL Mostrar total geral]** | Mostrar uma soma da coluna do lado do servidor. O total geral remove a duplicação de métricas como sessões ou pessoas. |
+| **[!UICONTROL Mostrar minigráfico]** | Mostrar um gráfico de linhas no cabeçalho da coluna. |
+| **[!UICONTROL Número]** | Determine se uma célula mostra/oculta o valor numérico da métrica. Por exemplo, se a métrica for Exibições de página, o valor numérico será o número de exibições de página para o item da linha. |
+| **[!UICONTROL Porcentagem]** | Determine se uma célula mostra/oculta o valor percentual para a métrica. Por exemplo, se a métrica for Exibições de página, o valor percentual será o número de exibições de página para o item da linha, dividido pelo total de exibições de página para a coluna.  Observação: Porcentagens maiores que 100% são possíveis para garantir a precisão. O limite superior pode ser movido para 1.000% para evitar que a largura das colunas fique muito grande. |
+| **[!UICONTROL Mostrar anomalias]** | Determine se a detecção de anomalias é executada nos valores desta coluna. |
+| **[!UICONTROL Mostrar previsão]** | Determine se os valores de previsão são mostrados nessa coluna. |
+| **[!UICONTROL Quebrar linha do texto do cabeçalho]** | Quebre o texto de cabeçalho em tabelas de forma livre para tornar os cabeçalhos mais legíveis e as tabelas mais compartilháveis. A quebra é útil para renderização de PDF e para métricas com nomes compridos. Ativado por padrão. |
+| **[!UICONTROL Interpretar zero como nenhum valor]** | Determine, para células com um valor 0, se deseja mostrar um 0 ou uma célula em branco. Essa interpretação é útil quando você observa dados de cada dia de um mês e alguns dias estão no futuro.  Em vez de mostrar 0 para datas futuras, células em branco são exibidas. Os gráficos também respeitam essa configuração (ou seja, os gráficos não mostram uma linha ou barra com valores 0). |
+| **[!UICONTROL Histórico]** | Determine se uma célula exibe ou oculta toda a formatação de célula, incluindo o gráfico de barras e a formatação condicional. |
+| **[!UICONTROL Gráfico de barras]** | Mostrar um gráfico de barras horizontal que representa o valor da célula relativo ao total da coluna. |
+| **[!UICONTROL Formatação condicional]** | Usar formatação condicional. Consulte a [seção](#conditional-formatting) abaixo. |
+| **[!UICONTROL Visualização de célula de tabela]** | Uma visualização de como cada célula é exibida com a aplicação das opções de formatação selecionadas no momento. |
+| **[!UICONTROL Usar modelo de atribuição não-padrão]** | Use um modelo de atribuição não padrão. Consulte a [seção](#use-non-default-attribution-model) abaixo. |
 
 ## Formatação condicional {#conditional-formatting}
 
-A formatação condicional aplica formatação a limites superiores, intermediários e inferiores que você pode definir. A aplicação de formatação condicional (cores, etc.) nas tabelas de forma livre também é ativada automaticamente nos detalhamentos, a menos que sejam selecionados limites “Personalizados”.
+A formatação condicional aplica formatação a limites superiores, intermediários e inferiores que você pode definir. A aplicação de formatação condicional nas tabelas de forma livre também é habilitada automaticamente nos detalhamentos, a menos que os limites [!UICONTROL Personalizado] sejam selecionados.
 
-<img src="./assets/conditional-formatting.png" alt="As opções de formatação condicional com Personalizado selecionado" width="50%" />
+<img src="./assets/conditional-formatting.png" alt="As opções de formatação condicional com Personalizado selecionado" width="40%" />
 
-| Elemento | Descrição |
+| Opções de formatação condicional | Descrição |
 | --- | --- |
-| Formatação condicional | Aplica um conjunto de cores pré-configurado de sua escolha às células. Dependendo de qual dos 4 esquemas de cores disponíveis você selecionar, cores diferentes serão atribuídas a valores altos, valores médios e valores baixos. <br> Substituir uma dimensão na tabela redefine os limites da formatação condicional. Substituir uma métrica recalcula os limites da coluna (na qual haja uma métrica no eixo X e uma dimensão no eixo Y). |
-| Usar limites de porcentagem | Alterar para que o intervalo limite se baseie em percentagens em vez de valores absolutos. Isso funciona com métricas exclusivamente baseadas em porcentagem (como a Taxa de retorno), além de métricas que possuem uma contagem e uma porcentagem (como Exibições de página). |
-| Gerado automaticamente | Calcular limites superior/médio/inferior automaticamente de acordo com os dados. O limite superior é o valor mais alto na coluna. O limite inferior é o menor valor e o ponto intermediário é a média entre os limites superior e inferior. |
-| Personalizado | Atribuir limites superior/médio/inferior manualmente. Isso oferece a flexibilidade de determinar quando o valor de uma coluna se torna bom, médio ou ruim. |
-| Paleta de formatação condicional | Escolha qual dos 4 esquemas de cores disponíveis usar para a formatação condicional. |
+| **[!UICONTROL Limites de porcentagem de uso]** | Alterar para que o intervalo limite se baseie em percentagens em vez de valores absolutos. O intervalo de limite de porcentagem funciona para métricas exclusivamente baseadas em porcentagem (como a Taxa de rejeição) e para métricas que têm uma contagem e uma porcentagem (como Exibições de página). |
+| **[!UICONTROL Gerado automaticamente]** | Calcular limites superior/médio/inferior automaticamente de acordo com os dados. O limite superior é o valor mais alto na coluna. O limite inferior é o menor valor e o ponto intermediário é a média entre os limites superior e inferior. |
+| **[!UICONTROL Personalizado]** | Atribuir manualmente **[!UICONTROL Limite superior]**, **[!UICONTROL Ponto médio]** e **[!UICONTROL Limite inferior]**. Os limites fornecem a flexibilidade para determinar quando um valor de coluna se torna bom, médio ou ruim. |
+| **[!UICONTROL Paleta de formatação condicional]** | Aplique um conjunto de cores pré-configurado às células. Dependendo de qual dos quatro esquemas de cores disponíveis você selecionar, cores diferentes serão atribuídas a valores altos, valores de ponto médio e valores baixos. <br> Substituir uma dimensão na tabela redefine os limites da formatação condicional. Substituir uma métrica recalcula os limites da coluna (na qual haja uma métrica no eixo X e uma dimensão no eixo Y). |
 
-## Usar modelo de atribuição não-padrão {#attribution}
+## Usar modelo de atribuição não-padrão {#use-non-default-attribution-model}
 
-Permite substituir o conjunto de modelos de atribuição padrão em [Visualizações de dados](/help/data-views/component-settings/attribution.md).
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
+>title="Usar modelo de atribuição não-padrão"
+>abstract="Habilitar um modelo de atribuição não padrão para as colunas selecionadas"
+
+<!-- markdownlint-enable MD034 -->
+
+
+Você pode substituir o modelo de atribuição padrão configurado em [Visualizações de dados](/help/data-views/component-settings/attribution.md).
 
 >[!NOTE]
 >
@@ -72,13 +88,24 @@ Permite substituir o conjunto de modelos de atribuição padrão em [Visualizaç
 
 Para usar um modelo de atribuição não padrão para uma métrica em uma Analysis Workspace:
 
-1. Clique no ícone de Configurações (engrenagem) em uma métrica em uma coluna de Tabela de forma livre.
+1. Selecione **[!UICONTROL Usar modelo de atribuição não padrão]**. Quando já selecionado, use **[!UICONTROL Editar]** para editar o modelo de atribuição. Ou desmarque para retornar ao modelo de atribuição padrão.
 
    ![As opções de Configuração de Coluna que destacam a opção de Configurações de Dados: Usar modo de atribuição não padrão.](assets/attribution-checkbox.png)
 
-2. Em **[!UICONTROL Configurações de dados]**, marque a opção **[!UICONTROL Usar modelo de atribuição não padrão]**. Para obter mais informações sobre os diferentes modelos de atribuição, consulte [Modelos de atribuição](/help/data-views/component-settings/attribution.md).
+2. Em **[!UICONTROL Modelo de atribuição de coluna]**, selecione um **[!UICONTROL Modelo]** e uma **[!UICONTROL Janela de pesquisa]**. A janela de retrospectiva determina a janela de atribuição de dados aplicada a cada conversão.
 
    ![As opções de Modelo de Atribuição de Coluna mostrando Linear selecionado.](assets/attribution-select.png)
+
+
+### Modelos de atribuição
+
+{{attribution-models-details}}
+
+### Janela de lookback
+
+{{attribution-lookback-window}}
+
+
 
 >[!MORELIKETHIS]
 >

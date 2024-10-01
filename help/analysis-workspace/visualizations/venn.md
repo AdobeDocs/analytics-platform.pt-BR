@@ -4,25 +4,44 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 79%
+source-wordcount: '136'
+ht-degree: 17%
 
 ---
 
-# Venn
+# Venn {#venn}
 
-A visualização de Venn permite arrastar até três filtros (de componentes) e uma métrica para criar um diagrama de Venn.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_venn_button"
+>title="Venn"
+>abstract="Cria uma visualização de gráfico de Venn para comparar rapidamente visualmente dois elementos e o tamanho de sua sobreposição."
+
+<!-- markdownlint-enable MD034 -->
+
+
+A visualização ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** permite arrastar até 3 filtros e uma métrica (do painel Componentes) para criar um diagrama Venn.
 
 ![Visualização de Venn que inclui três filtros.](assets/venn.png)
 
-É possível passar o mouse sobre os filtros para saber mais sobre as porcentagens, etc.
+Você pode passar o mouse sobre os filtros para saber mais sobre porcentagens e muito mais.
 
-![Visualização de Venn com informações expandidas sobre o filtro para Participantes do Outdoor Fall 2015.](assets/venn_hover.png)
+Para gerar uma [!UICONTROL Tabela de forma livre] da visualização [!UICONTROL Venn], selecione o ![StatusOrange](/help/assets/icons/StatusOrange.svg) colorido ao lado do cabeçalho **[!UICONTROL Venn]** e selecione **[!UICONTROL Mostrar fonte de dados]**. Você verá uma tabela de forma livre de **[!UICONTROL Dados de Venn]** com os dados usados para criar a visualização de [!UICONTROL Venn].
 
-Para transformar o diagrama Venn em uma tabela de forma livre, clique no ponto colorido ao lado do cabeçalho **[!UICONTROL Venn]** e selecione **[!UICONTROL Gerenciar fontes de dados]** > **[!UICONTROL Fontes de dados disponíveis]** > **[!UICONTROL Tabela de forma livre]**.
+<!--
+To normalize the Venn diagram (take the size out of it), go select ![Setting](/help/assets/icons/Setting.svg) and select **[!UICONTROL Normalization]**.
 
-Para normalizar o diagrama de Venn (extrair o tamanho), vá até o ícone Configurações de visualização e selecione **[!UICONTROL Normalização]**.
+![Visualization Settings option for Visualization type: Venn diagram.](assets/normalization.png)
 
-![Opção de Configurações de Visualização para o tipo de Visualização: diagrama Venn.](assets/normalization.png)
+-->
+
+>[!MORELIKETHIS]
+>
+>[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu de contexto de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>
+

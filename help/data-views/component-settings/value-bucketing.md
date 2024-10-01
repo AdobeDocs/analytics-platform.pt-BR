@@ -5,14 +5,24 @@ exl-id: 52f9abf6-69f1-47d0-86ab-57123bc178d5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '208'
 ht-degree: 100%
 
 ---
 
-# Configurações do componente de [!UICONTROL Segmentação de valores]
+# Configurações do componente de [!UICONTROL Segmentação de valores] {#value-bucketing-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_valuebucketing"
+>title="Classificação de valor"
+>abstract="Valores de bloco em intervalos específicos. Esses intervalos aparecem como itens de dimensão em relatórios."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Ao criar ou editar uma visualização de dados, a segmentação de valores permite combinar valores numéricos com base em um intervalo. Essa função está disponível apenas para dimensões que utilizam dados de esquema do tipo Integer ou Double.
 

@@ -4,14 +4,32 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 7d21f6816412b45b795d223d351d4b48bd679c6d
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 50%
+source-wordcount: '1726'
+ht-degree: 49%
 
 ---
 
-# Criar e publicar públicos-alvo
+# Criar e publicar públicos-alvo {#create-and-publish-audiences}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_refreshfrequency"
+>title="Frequência de atualização"
+>abstract="Veja com que frequência a associação de um público-alvo será reavaliada.<br/>Públicos-alvo únicos são avaliados apenas uma vez."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_audiences_audiencelimit"
+>title="Atualizar público"
+>abstract="As atualizações de públicos são limitadas com base na frequência com que são atualizadas."
+
+<!-- markdownlint-enable MD034 -->
 
 Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
@@ -53,7 +71,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
 
 1. Interpretar a visualização de dados.
 
-   A visualização do público-alvo é exibida no painel direito. Ela permite uma análise resumida do público-alvo criado.
+   A pré-visualização do público-alvo é exibida no painel direito. Ela permite uma análise resumida do público-alvo criado.
 
    ![Captura de tela da visualização de dados mostrando uma análise resumida do público-alvo.](assets/data-preview.png)
 

@@ -4,24 +4,42 @@ title: Sobre relatórios e visualizações de fallout
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: b38e9052618f7326cd5ea22b6cda8b96624a3f84
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 79%
+source-wordcount: '244'
+ht-degree: 46%
 
 ---
 
-# Visão geral de fallout
+# Visão geral de fallout {#fallout-overview}
 
-Os relatórios de fallout mostram onde as pessoas saíram e continuaram em uma sequência predefinida de páginas.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_fallout_button"
+>title="Fallout"
+>abstract="Cria uma visualização para ver como as pessoas avançam com êxito para os pontos de verificação desejados."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Uma visualização de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) [!UICONTROL Fallout] mostra onde as pessoas saíram e continuaram em uma sequência predefinida de páginas.
+
++++ Veja uma demonstração em vídeo da [!UICONTROL Visualização de fallout].
+
+>[!VIDEO](https://video.tv.adobe.com/v/345883/?quality=12)
+
+{{videoaa}}
+
++++
 
 As visualizações de Fallout oferecem mais opções para criar relatórios de fallout. As visualizações de fallout permitem:
 
 * Fazer comparações lado a lado de dois filtros diferentes no mesmo relatório.
-* Arrastar, soltar e reorganizar as etapas do funil (pontos de contato).
-* Combinar valores de diferentes dimensões e métricas
-* Criar um relatório de fallout multidimensional
-* Identificar o que os clientes acessam imediatamente depois de sair
+* Arraste e solte (e reorganize) as etapas do funil (pontos de contato).
+* Misture e associe valores de diferentes dimensões e métricas.
+* Crie um relatório de fallout multidimensional.
+* Identifique para onde os clientes vão imediatamente após sair.
 
 O Fallout exibe as taxas de conversão e de fallout entre cada etapa ou ponto de contato em uma sequência.
 
@@ -30,8 +48,12 @@ Por exemplo, você pode rastrear os pontos de fallout de uma pessoa durante um p
 Uma visualização de fallout é útil para analisar:
 
 * Taxas de conversão por meio de processos específicos no site (como um processo de compra ou registro).
-* Fluxos gerais de escopo mais amplo: das pessoas que visualizaram a página inicial, esse fluxo mostra quantas fizeram uma pesquisa e quantas delas eventualmente acessaram um item específico.
+* Fluxos de tráfego gerais e de escopo mais amplo: das pessoas que visitaram a página inicial, esse fluxo mostra quantas realizaram uma pesquisa. E então quantos deles eventualmente olharam para um item específico.
 * Correlações entre eventos no site. As correlações mostram a porcentagem de pessoas que acessaram sua política de privacidade e que fizeram uma compra.
 
-[Tutorial em vídeo de Visualização de fallout](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization.html?lang=pt-BR) (4:15)
+>[!MORELIKETHIS]
+>
+>[Configurar uma visualização de fallout](configuring-fallout.md)
+
+
 

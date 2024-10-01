@@ -1,19 +1,41 @@
 ---
-description: Permite adicionar texto definido pelo usuário à Workspace.
+description: Adiciona texto definido pelo usuário à sua Workspace.
 title: Texto
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 86%
+source-wordcount: '243'
+ht-degree: 25%
 
 ---
 
-# Texto
+# Texto {#text-visualization}
 
-Você pode adicionar texto definido pelo usuário ao projeto do Workspace usando visualizações de texto ou descrições de painel/visualização (clique com o botão direito do mouse no cabeçalho > **[!UICONTROL Editar descrição]**). Você também pode alterar a formatação do texto, adicionar hiperlinks e imagens.
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_text_button"
+>title="Texto"
+>abstract="Adicione uma visualização de rich text definida pelo usuário ao projeto."
+
+<!-- markdownlint-enable MD034 -->
+
+
+Para adicionar rich text definido pelo usuário ao seu projeto do Workspace, você pode usar uma visualização de ![Texto](/help/assets/icons/Text.svg) **[!UICONTROL Texto]** ou usar descrições para uma visualização e um painel.
+
+## Use 
+
+Você pode usar a visualização de Texto das seguintes maneiras:
+
+1. Adicionar uma visualização de ![Texto](/help/assets/icons/Text.svg) **[!UICONTROL Texto]**. Consulte [Adicionar uma visualização a um painel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+
+1. Em um painel ou visualização, no menu de contexto, selecione **[!UICONTROL Editar descrição]**.
+
+   Selecione ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) quando terminar de editar a descrição, selecione ![CloseCircle](/help/assets/icons/CloseCircle.svg) para cancelar.
+
+Você pode alterar a formatação do texto, adicionar hiperlinks e imagens.
 
 ## Ajustar a formatação {#format}
 
@@ -23,12 +45,12 @@ Ao editar sua caixa de texto ou descrição, você pode ajustar o tamanho da fon
 
 ## Adicionar hyperlinks {#hyperlinks}
 
-Para adicionar um hiperlink, realce o texto e clique no ícone de hiperlink no menu. Hiperlinks podem ser vinculados a sites externos, páginas de documentação, [projetos/painéis/visualizações do Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links.html?lang=pt-BR) e muito mais para ajudar os destinatários do projeto.
+Para adicionar um hiperlink, realce o texto e selecione ![Link](/help/assets/icons/Link.svg) no menu. Você pode usar hiperlinks para fornecer assistência adicional aos recipients do projeto. Hiperlinks podem ser vinculados a sites externos, páginas de documentação, [projetos, painéis ou visualizações do Workspace](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links) e muito mais.
 
 ![Opções de texto com o ícone de link realçado.](assets/hyperlink.png)
 
 ## Adicionar imagens {#images}
 
-Para adicionar uma imagem ao seu projeto, clique no ícone de imagem no menu e insira uma URL de imagem pública. A URL da imagem deve estar acessível publicamente, começar com `https` e ter o formato `.png`, `.jpeg`, `.jpg` ou `.gif`. Há suporte para imagens estáticas e animadas.
+Para adicionar uma imagem ao seu projeto, selecione ![Imagem](/help/assets/icons/Image.svg) no menu e insira uma URL de imagem pública. A URL da imagem deve estar acessível publicamente, começar com `https` e ter o formato `.png`, `.jpeg`, `.jpg` ou `.gif`. Há suporte para imagens estáticas e animadas.
 
 ![Opções de texto com o ícone de imagem selecionado.](assets/image.png)

@@ -5,14 +5,24 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: c5f4ddd2f0a2840e7c0d456475f95d891863666e
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2659'
-ht-degree: 68%
+source-wordcount: '2672'
+ht-degree: 67%
 
 ---
 
-# Criar um cartão de pontuação para dispositivos móveis
+# Criar um cartão de pontuação para dispositivos móveis {#create-a-mobile-scorecard}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_mobilescorecard_annotations"
+>title="Anotações"
+>abstract="As anotações podem ser criadas no gerenciador de componentes de dentro de um projeto do espaço de trabalho."
+
+<!-- markdownlint-enable MD034 -->
+
 
 As informações a seguir instruem os curadores de dados do Customer Journey Analytics sobre como configurar e apresentar painéis para usuários executivos. Para começar, você pode exibir o vídeo do construtor de cartão de pontuação dos painéis do Analytics:
 
@@ -135,7 +145,7 @@ Use a visualização Número do resumo para realçar um grande número que é im
 
 ### [!UICONTROL Rosca]
 
-Semelhante ao gráfico de pizza, essa visualização mostra dados como partes de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. Por exemplo, digamos que você queira ver qual plataforma de publicidade contribuiu para o número total de pessoas únicas:
+Semelhante ao gráfico de pizza, essa visualização mostra dados como partes de um todo. Use um gráfico de rosca ao comparar porcentagens de um total. Por exemplo, você deseja ver qual plataforma de publicidade contribuiu para o número total de pessoas únicas:
 
 ![Novo scorecard para filme mostrando uma visualização em Rosca](assets/donut-viz.png)
 

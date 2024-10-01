@@ -4,14 +4,25 @@ description: Detalhes e como configurar dimensões de conjuntos de dados para ga
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cba5904191b0602557903b5b9f32a2b793c8207d
+exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 9%
+source-wordcount: '343'
+ht-degree: 17%
 
 ---
 
-# Configurações do componente [!UICONTROL Grupo de dados de resumo]
+# Configurações do componente [!UICONTROL Grupo de dados de resumo] {#summary-data-group-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup"
+>title="Grupo de dados de resumo"
+>abstract="Um grupo de dados de resumo cria uma associação entre todas as dimensões no agrupamento e é usado para combinar dimensões de conjuntos de dados de resumo com outras dimensões para gerar relatórios."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Um grupo de dados de resumo cria uma associação entre todas as dimensões no agrupamento e é usado para combinar dimensões de conjuntos de dados de resumo com outras dimensões para gerar relatórios.
 
@@ -40,5 +51,3 @@ Os valores em `tracking_code` podem ser exibidos como diferentes de `campaign_co
 >
 >Certifique-se de fazer o agrupamento de dimensões somente de uma dimensão, e não aplique o agrupamento de várias dimensões. Por exemplo, se você criar um agrupamento adicionando a dimensão `campaign_name` à dimensão `tracking_code`, não crie também um agrupamento para a dimensão `campaign_name`.
 >
-
-

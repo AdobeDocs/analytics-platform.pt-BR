@@ -1,21 +1,21 @@
 ---
 description: Envie um projeto do Analysis Workspace por email ou agende o seu envio.
 keywords: Analysis Workspace
-title: Enviar dados de Customer Journey Analytics para outras pessoas por e-mail
+title: Enviar relatórios para outras pessoas por e-mail
 feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388e008f4ee092dd8224bfacd020cdf762d4fb82
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 61%
+source-wordcount: '1034'
+ht-degree: 58%
 
 ---
 
-# Enviar dados de Customer Journey Analytics para outras pessoas por e-mail
+# Enviar arquivos para outras pessoas
 
-Você pode exportar relatórios de Customer Journey Analytics enviando-os aos recipients selecionados por email. Você pode enviar arquivos ad hoc ou pode configurar arquivos para serem enviados de acordo com um agendamento. Os arquivos podem ser enviados no formato CSV ou PDF.
+Você pode enviar relatórios de Customer Journey Analytics como arquivos para usuários selecionados por email. Você pode enviar arquivos ad hoc ou pode configurar arquivos para serem enviados de acordo com um agendamento. Os arquivos podem ser enviados no formato CSV ou PDF.
 
 Quaisquer tags aplicadas ao projeto são automaticamente aplicadas à exportação.
 
@@ -78,14 +78,24 @@ As ações a seguir são comuns no Gerenciador de projetos programados:
 | **[!UICONTROL Editar programação]** | Clique no título da programação para atualizar as configurações de delivery. |
 | **[!UICONTROL Excluir programação]** | Selecione o projeto programado na lista e clique em Excluir no menu. Essa ação eliminará o calendário selecionado para o projeto; o projeto em si não será excluído. |
 | **[!UICONTROL Adicionar tags]** | Selecione o projeto programado na lista e escolha “Tag” ou “Aprovar” para organizar as programações e facilitar a pesquisa. |
-| **[!UICONTROL Exibir programações com falha]** | Acesse o painel esquerdo > Outros filtros > Falha para visualizar as programações que apresentaram falhas. |
-| **[!UICONTROL Exibir programações expiradas]** | Acesse o painel esquerdo > Outros filtros > Expirado para ver as programações que expiraram. Clique no título da programação para configurar uma nova programação de entrega. |
+| **[!UICONTROL Exibir programações com falha]** | Acesse o painel esquerdo > Outros filtros > Falha para visualizar as programações que falharam. |
+| **[!UICONTROL Exibir programações expiradas]** | Navegue até o painel esquerdo > Outros filtros > Expirado para ver os agendamentos que expiraram. Clique no título da programação para configurar uma nova programação de entrega. |
 | **[!UICONTROL Exibir ID de programação]** | Acesse as opções de coluna na parte superior direita e adicione a coluna ID de programação à tabela. A ID programada geralmente é útil para depuração. |
 
 O Gerenciador de agendamento de projetos mostra os itens criados por um usuário específico. Se a conta de usuário estiver desativada no aplicativo, todas as entregas programadas são interrompidas.
 Para obter mais informações, consulte [Projetos agendados](/help/components/scheduled-projects-manager.md).
 
 ## Proteger com senha um projeto agendado {#password}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_sendfile_password"
+>title="Criptografia de senha"
+>abstract="A senha fornecida será usada para criptografar o arquivo para o projeto programado. Os requisitos de segurança da sua organização exigem criptografia de senha."
+
+<!-- markdownlint-enable MD034 -->
+
 
 >[!NOTE]
 >

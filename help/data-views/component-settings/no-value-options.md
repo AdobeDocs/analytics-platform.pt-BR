@@ -5,14 +5,24 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 92%
+source-wordcount: '258'
+ht-degree: 93%
 
 ---
 
-# Configurações do componente Opções de valor nulo
+# Configurações do componente Opções de valor nulo {#no-value-options-component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_novalueoptions"
+>title="Sem opções de valor"
+>abstract="Configure o comportamento padrão para quando nenhum valor estiver presente em uma dimensão."
+
+<!-- markdownlint-enable MD034 -->
+
 
 As Opções de valor nulo permitem determinar como o Analysis Workspace trata situações em que um evento em um conjunto de dados contém uma métrica, mas a dimensão não continha um valor. Permite escolher o nome desse item de dimensão, ocultá-lo totalmente ou até mesmo tratá-lo como um valor real.
 

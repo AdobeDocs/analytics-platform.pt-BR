@@ -1,41 +1,58 @@
 ---
-description: Use o Número do resumo e as Visualizações de alteração para exibir pontos de dados importantes em um projeto.
+description: Use as visualizações Número do resumo e Alteração do resumo para exibir pontos de dados importantes em um projeto.
 title: Número do resumo e alteração do resumo
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 61c1fe48ebe8ebff5b7104cebae1ce7b62289b7d
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 94%
+source-wordcount: '467'
+ht-degree: 45%
 
 ---
 
 # Número do resumo e alteração do resumo
 
-## Visualização do número de resumo {#summary-number}
+## Número do resumo {#summary-number}
 
-Use a visualização Número do resumo para realçar um grande número que é importante em um projeto. Essa visualização se comporta das seguintes maneiras:
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarynumber_button"
+>title="Número do resumo"
+>abstract="Crie uma visualização que mostre totais e subtotais."
+
+<!-- markdownlint-enable MD034 -->
+
+Use a visualização ![Resumir](/help/assets/icons/123.svg) **[!UICONTROL Número do resumo]** para realçar um número grande que seja importante em um projeto. Essa visualização se comporta das seguintes maneiras, usando a fonte de dados associada:
 
 * Seleciona o total da coluna caso nenhuma célula esteja selecionada.
 * Se alguma célula estiver selecionada, mostra o resumo dessa célula.
 * Se mais de uma célula estiver selecionada, mostra a primeira célula selecionada.
 * Se a coluna estiver selecionada, escolhe o primeiro valor de célula na coluna.
 
-Clique na engrenagem **Configurações de visualização** no canto superior direito para definir as configurações de Número do resumo:
+![Visualização do número do resumo](asses/../assets/summary-number.png)
 
-| Configuração | Definição |
+Como parte das configurações de visualização, opções específicas de Número do resumo estão disponíveis.
+
+| Opção | Definição |
 |--- |--- |
-| Porcentagens | Exiba porcentagens em vez de números brutos. |
-| Legenda visível | Exiba informações sobre a métrica mostrada. |
-| Abreviar valor | Escolha abreviar valores e mostrar até 3 casas decimais. |
-| Resumir valor por | Opte por exibir o máximo, mínimo, médio, mediano ou soma para uma seleção de dados. |
+| **[!UICONTROL Abreviar valor]** | Selecione **[!UICONTROL Abreviar valor]** para abreviar de forma inteligente o valor do número. Quando selecionado, insira um número para definir a quantidade de abreviação. Por exemplo:<br/><table><tr><td>**Valor original**</td><td>**Valor de abreviação**</td><td>**Resultado**</td></tr><tr><td>$ 12.011.141,25</td><td>Não selecionado</td><td  align="right">$ 12.011.141,25</td></tr><tr><td>$ 12.011.141,25</td><td>Selecionado, definido como `0`</td><td align="right">US$ 12 milhões</td></tr><tr><td>$ 12.011.141,25</td><td> Selecionado, definido como `1`</td><td  align="right">US$ 12,0 milhões</td></tr><tr><td>$ 12.011.141,25</td><td>Selecionado, definido como `2`</td><td align="right">US$ 12,01 milhões</td></tr><tr><td>$ 12.011.141,25</td><td>Selecionado, definido como `3`</td><td align="right">US$ 12,011 milhões</td></tr></table> |
+| **[!UICONTROL Resumir valor por]** | Opte por exibir o máximo, mínimo, médio, mediano ou soma para uma seleção de dados. |
 
-{style="table-layout:auto"}
+## Alteração de resumo {#summary-change}
 
-## Visualização da alteração do resumo {#summary-change}
+<!-- markdownlint-disable MD034 -->
 
-Use a visualização Alteração do resumo para mostrar o delta (alteração) entre dois números.
+>[!CONTEXTUALHELP]
+>id="cja_workspace_summarychange_button"
+>title="Alteração de resumo"
+>abstract="Crie uma visualização que mostre o delta (alteração) entre dois números"
+
+<!-- markdownlint-enable MD034 -->
+
+
+Use a visualização ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL Alteração do resumo]** para mostrar o delta (alteração) entre dois números. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 <!--
 The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
@@ -54,11 +71,17 @@ Essa visualização se comporta das seguintes maneiras:
 ![Visualização de alteração de resumo mostrando o delta entre dois números.s](assets/summary-change.png)
 
 
-Clique na engrenagem **Configurações de visualização** no canto superior direito para definir as configurações de Alteração de resumo:
+Como parte das configurações de visualização, estão disponíveis **[!UICONTROL Opções de alteração do resumo]** específicas.
 
-| Configuração | Definição |
+| Opção | Definição |
 |--- |--- |
-| Porcentagens | Exiba porcentagens em vez de números brutos. |
-| Legenda visível | Exiba informações sobre a métrica mostrada. |
-| Mostrar variação percentual | Mostra a variação percentual entre os 2 números. |
-| Mostrar diferença bruta | Mostra a diferença bruta entre 2 números. Também é possível abreviar valores e mostrar até 3 casas decimais com essa opção. |
+| **[!UICONTROL Mostrar alteração percentual]** | Mostrar a variação percentual entre os 2 números. |
+| **[!UICONTROL Mostrar diferença bruta]** | Mostrar a diferença bruta entre os 2 números. Também é possível abreviar valores e mostrar até 3 casas decimais com essa opção. |
+| **[!UICONTROL Abreviar valor]** | Selecione **[!UICONTROL Abreviar valor]** para abreviar de forma inteligente o valor alterado. Quando selecionado, insira um número para definir a quantidade de abreviação. Por exemplo:<br/><table><tr><td>**Valor original**</td><td>**Valor de abreviação**</td><td>**Resultado**</td></tr><tr><td>$ 12.011.141,25</td><td>Não selecionado</td><td  align="right">$ 12.011.141,25</td></tr><tr><td>$ 12.011.141,25</td><td>Selecionado, definido como `0`</td><td align="right">US$ 12 milhões</td></tr><tr><td>$ 12.011.141,25</td><td> Selecionado, definido como `1`</td><td  align="right">US$ 12,0 milhões</td></tr><tr><td>$ 12.011.141,25</td><td>Selecionado, definido como `2`</td><td align="right">US$ 12,01 milhões</td></tr><tr><td>$ 12.011.141,25</td><td>Selecionado, definido como `3`</td><td align="right">US$ 12,011 milhões</td></tr></table> |
+
+>[!MORELIKETHIS]
+>
+>[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu de contexto de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>

@@ -4,35 +4,55 @@ title: Visão geral do Fluxo
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 93%
+source-wordcount: '260'
+ht-degree: 30%
 
 ---
 
-# Visão geral do fluxo
+# Fluxo {#flow}
 
-O recurso Fluxo mostra os caminhos do cliente pelos seus sites e aplicativos.
+<!-- markdownlint-disable MD034 -->
 
-Ele permite:
+>[!CONTEXTUALHELP]
+>id="cja_workspace_flow_button"
+>title="Fluxo"
+>abstract="Crie uma visualização para exibir o fluxo de pessoas de um ponto de verificação para o próximo."
 
-* Visualizar a jornada do cliente pelo seu site ou aplicativo
-* Analisar para onde os clientes vão antes e depois de pontos de verificação específicos, como a entrada, uma dimensão específica ou a saída
+>[!CONTEXTUALHELP]
+>id="cja_workspace_flow_panel"
+>title="Fluxo"
+>abstract="Analise o fluxo de visitas ou visitantes de um ponto de contato para o próximo.<br/><br/>**Parâmetros **<br/>**Começa com**: adicione uma dimensão, item de dimensão ou métrica para ver os principais pontos de contato após a ocorrência do componente selecionado.<br/>**Contém**: adicione uma dimensão ou item de dimensão para ver os principais pontos de contato antes e depois da ocorrência do componente selecionado.<br/>**Termina com**: adicione uma dimensão, item de dimensão ou métrica para ver os principais pontos de contato antes da ocorrência do componente selecionado.<br/>**Dimensão de definição de caminho**: adicione uma dimensão para usar como caminho conduzindo ou saindo do componente selecionado."
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+A visualização de ![GraphPathing](/help/assets/icons/GraphPathing.svg) [!UICONTROL Fluxo] mostra os caminhos do cliente pelos seus sites e aplicativos.
+
+Com a visualização, é possível:
+
+* Visualize a jornada do cliente em seu site ou aplicativo.
+* Analise onde os clientes vão antes e depois de pontos de verificação especificados, como entrada, uma dimensão específica ou saída.
 * Crie filtros ao designar um ponto específico em um determinado caminho
 
-[Tutorial em vídeo de Visualização de fluxo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/flow-visualization.html?lang=pt-BR) (4:56)
++++ Exiba uma demonstração em vídeo da visualização [!UICONTROL Fluxo].
 
-## Fluxos interdimensionais {#in}
+>[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
+
+{{videoaa}}
+
++++
+
+## Fluxos interdimensionais
 
 É possível mostrar o [fluxo entre dimensões](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Por exemplo, você pode combinar páginas e departamentos em um diagrama. Neste caso, seu fluxo pode ir da página inicial à página Masculino e, então, para o departamento de Sapatos.
 
 Cada coluna pode exibir uma dimensão diferente. Arraste uma dimensão e solte em uma área para adicioná-la ao diagrama.
 
-## Configurar uma visualização de fluxo
+>[!MORELIKETHIS]
+>
+>[Configurar uma visualização de fluxo](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
+>
 
-Para obter informações sobre como configurar uma visualização de fluxo, consulte [Configurar uma visualização de fluxo](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
-
-## Exportar diagramas de fluxo como parte dos arquivos .CSV do projeto {#section_BACD2639A0FC4C49A75398F7D0363D9D}
-
-Os diagramas de fluxo são parte de um arquivo .CSV do projeto que podem ser criados ao acessar **[!UICONTROL Projeto]** > **[!UICONTROL Baixar CSV]**. Essa ação permite analisar os resultados de Fluxo no Microsoft Excel (exibidos como uma tabela) ou em outro lugar.

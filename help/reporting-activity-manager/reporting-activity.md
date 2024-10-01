@@ -5,20 +5,30 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 7%
+source-wordcount: '2016'
+ht-degree: 8%
 
 ---
 
-# Exibir atividade de relatórios no Gerenciador de atividades de relatórios
+# Exibir atividade de relatórios {#view-reporting-activity}
 
 O [!UICONTROL Gerenciador de Atividades de Relatórios] permite que os administradores diagnostiquem e corrijam rapidamente problemas de capacidade de relatórios durante os horários de pico de relatórios.
 
 Para obter mais informações sobre o Gerenciador de Atividades de relatórios, incluindo os principais benefícios e requisitos de permissão, consulte [Visão geral do Gerenciador de Atividades de relatórios](/help/reporting-activity-manager/reporting-activity-overview.md).
 
-## Exibir atividade de relatório para todas as conexões {#view-all-report-suites}
+## Para todas as conexões {#view-all-report-suites}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_tools_reportingactivitymanager_connections"
+>title="Conexões"
+>abstract="Esta tabela mostra as conexões para as quais você possui direitos para gerenciar atividades de relatórios. As informações sobre cada conexão estão disponíveis nas colunas da tabela."
+
+<!-- markdownlint-enable MD034 -->
+
 
 1. No Customer Journey Analytics, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Gerente de atividades de relatórios]**.
 
@@ -36,7 +46,7 @@ Para obter mais informações sobre o Gerenciador de Atividades de relatórios, 
 
    * Use o campo de pesquisa para procurar uma conexão específica. Comece a digitar o nome ou ID da conexão e a lista de conexões será atualizada conforme você digitar.
 
-   * Selecione o ícone [!UICONTROL **Filtro**] ![Ícone Filtro](assets/filter-icon.png) para expandir a lista de opções de filtro. Você pode filtrar por [!UICONTROL **Favoritos**] ou [!UICONTROL **Status**].
+   * Selecione ![Filtro](/help/assets/icons/Filter.svg) para expandir a lista de opções de filtro. Você pode filtrar por [!UICONTROL **Favoritos**] ou [!UICONTROL **Status**].
 
      Para marcar uma conexão como favorita, selecione o ícone de estrela à esquerda do nome da conexão.
 
@@ -57,7 +67,7 @@ Para obter mais informações sobre o Gerenciador de Atividades de relatórios, 
 
    {style="table-layout:auto"}
 
-## Exibir atividade de relatórios para uma única conexão
+## Para uma única conexão
 
 1. No Customer Journey Analytics, selecione [!UICONTROL **Ferramentas**] > [!UICONTROL **Gerente de Atividades de Relatórios**].
 

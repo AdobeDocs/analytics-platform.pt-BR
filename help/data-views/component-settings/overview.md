@@ -5,14 +5,33 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: aa0a6715c216730e0768cfa870ea75f315455101
+source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 100%
+source-wordcount: '554'
+ht-degree: 94%
 
 ---
 
-# Configurações de componente
+# Configurações de componente {#component-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_settings"
+>title="Configurações de componente"
+>abstract="Visualize e configure o nome, a descrição e outras configurações relacionadas a um componente.<br/><br/>**Parâmetros **<br/>**Ocultar componente nos relatórios**: marcar esta caixa ocultará este componente de usuários não administradores nos relatórios. Os administradores ainda podem acessá-lo selecionando **[!UICONTROL Mostrar todos os componentes]** em um projeto do Workspace."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_contextlabels"
+>title="Rótulos de contexto"
+>abstract="A remoção de um rótulo de contexto pode afetar painéis ou relatórios específicos em que o componente é necessário."
+
+<!-- markdownlint-enable MD034 -->
+
 
 As informações a seguir descrevem as configurações que um componente de visualização de dados usa.
 

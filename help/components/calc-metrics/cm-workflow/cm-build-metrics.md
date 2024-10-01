@@ -1,71 +1,206 @@
 ---
 description: O Criador de métricas calculadas oferece uma tela para arrastar e soltar dimensões, métricas, filtros e funções a fim de criar métricas personalizadas com base em lógicas de hierarquia de container, regras e operadores. Essa ferramenta de desenvolvimento integrado permite criar e salvar métricas calculadas simples ou métricas calculadas avançadas complexas.
-title: Criar métricas
+title: Criar métricas calculadas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 7cdd81c9e38219d2d17decd5b9c3e987b814fc53
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 49%
+source-wordcount: '1526'
+ht-degree: 6%
 
 ---
 
-# Criar métricas
+# Criar métricas calculadas {#build-metrics}
 
-O Customer Journey Analytics fornece uma tela para arrastar e soltar dimensões, métricas, filtros e funções a fim de criar métricas personalizadas com base na lógica, nas regras e nos operadores da hierarquia do container. Essa ferramenta de desenvolvimento integrado permite criar e salvar métricas calculadas simples ou métricas calculadas avançadas complexas.
-
-## Começar a criar uma métrica calculada
-
-Você pode usar o construtor de métrica calculada para criar métricas calculadas. Quando criadas dessa forma, as métricas calculadas ficam disponíveis na lista de componentes e podem ser usadas em projetos em toda a organização. Como alternativa, crie uma métrica calculada rápida, conforme descrito em [Criar métricas calculadas para um único projeto](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) em [Métricas](/help/components/apply-create-metrics.md).
-
-Acesse o construtor de métricas calculadas para começar a criar uma métrica calculada que esteja disponível na lista de componentes.
-
-1. Acesse o construtor de métricas calculadas de qualquer uma das seguintes maneiras:
-
-   * No Analysis Workspace, abra um projeto e selecione **[!UICONTROL Componentes]** > **[!UICONTROL Criar métrica]**.
-   * No Analysis Workspace, abra um projeto e selecione o ícone **De adição** ao lado da seção [!UICONTROL **Métricas**] no painel esquerdo.
-   * Em [!DNL Customer Journey Analytics], vá para **[!UICONTROL Componentes]** > **[!UICONTROL Métricas calculadas]** e selecione **[!UICONTROL + Adicionar]** na parte superior da página Métricas calculadas.
-
-1. Continue com [Áreas do construtor de métrica calculada](#areas-of-the-calculated-metrics-builder).
-
-## Áreas do construtor de métricas calculadas
-
-<!-- 
+<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_journeycanvas_viz_product_compatibility"
->title="Product compatibility"
->abstract="Indicates where in Customer Journey Analytics this calculated metric can be used, such as in Analysis Workspace, Report Builder, and so forth."  
->"Some calculated metrics cannot be used with experimentation. Calculated metrics that are not compatible with experimentation have the following value: "Everywhere in Customer Journey Analytics (excluding experimentation)" "
->"Various factors affect whether a calculated metric is compatible with experimentation. Learn more (https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation) ."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Use calculated metrics in experimentation"
+>id="cja_components_calculatedmetrics_productcompatibility"
+>title="Compatibilidade do produto"
+>abstract="Indica onde no Customer Journey Analytics essa métrica calculada pode ser usada, como em Analysis Workspace, Report Builder e assim por diante. Algumas métricas calculadas não podem ser usadas com experimentação."
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Usar métricas calculadas na experimentação"
 
--->
+<!-- markdownlint-enable MD034 -->
 
-A imagem a seguir e a tabela que a acompanha explicam algumas das principais áreas e recursos do Criador de métricas calculadas.
+<!-- markdownlint-disable MD034 -->
 
-![Nova janela de métricas calculadas mostrando as principais áreas e recursos descritos nesta seção.](assets/cm_builder_ui.png)
+>[!CONTEXTUALHELP]
+>id="cja_components_calculatedmetrics_externalid"
+>title="ID externa"
+>abstract="Alterar a ID externa pode afetar como a métrica calculada aparece em fontes externas, como ferramentas de business intelligence"
 
-| Campo | Descrição |
-| --- | --- |
-| Título | É obrigatório fornecer um nome para a métrica. Não é possível salvar a métrica sem um nome. |
-| Descrição | Forneça uma descrição simples para mostrar sua utilização e diferenciá-la de métricas similares. <p>A descrição também será exibida em um relatório. É melhor NÃO colocar a fórmula na descrição; em vez disso, descreva quando ela deve ou não ser utilizada. (A fórmula é gerada conforme você cria a métrica, abaixo do cabeçalho Resumo. Como resultado, não é necessário adicionar a fórmula à descrição.) </p> |
-| Formato | As opções incluem Decimal, Hora, Porcentagem e Moeda. |
-| Casas decimais | Mostra quantas casas decimais serão exibidas no relatório. O número máximo de casas decimais que você pode especificar é 10. |
-| Mostrar tendência para cima como... | A configuração de polaridade desta métrica mostra se o Analytics deve considerar uma tendência para cima na métrica como algo positivo (verde) ou negativo (vermelho). Como resultado, o gráfico do relatório será exibido em verde ou vermelho ao subir. |
-| Moeda | A moeda base dessa visualização de dados. |
-| Tags | Adicionar tags é uma boa maneira de organizar as métricas. Todos os usuários podem criar tags e aplicar uma ou mais tags a uma métrica. No entanto, é possível visualizar tags somente para os filtros que você possui ou que foram compartilhados com você. Que tipos de tags você deve criar? Estas são algumas sugestões para tags úteis:<ul><li>**Nomes de equipes**, como Marketing Social, Marketing para dispositivos móveis.</li><li>**Projetos** (marcas de análise), como Análise de página de entrada.</li><li>**Categorias**, como Mulheres; Geografia.</li><li>**Fluxos de trabalho**, como Para ser aprovado; Preparado para (uma unidade de negócios específica)</li></ul> |
-| Resumo | <p>A fórmula Resumo é atualizada sempre que a definição da métrica é alterada. Esta fórmula também é exibida no painel Métricas à esquerda, ao passar o mouse sobre uma métrica e clicar no botão Ícone <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg" id="image_BDA0EAF89C19440CB02AE248BA3F968E" />. </p> |
-| Definição | É aqui que você arrasta métricas/métricas calculadas, filtros e/ou funções para criar a métrica calculada. <ul><li>Se você arrastar uma métrica calculada, ela expandirá automaticamente sua definição de métrica. </li> <li>Você pode aninhar definições em contêineres. No entanto, diferentemente dos contêineres de filtro, esses contêineres funcionam como uma expressão matemática e determinam a ordem das operações. </li> </ul> |
-| Operador | Dividido por ( <img placement="inline"  src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_Divide_18_N.svg" width="15" id="image_320D7363DE024BDEB21E44606C8B367F" width="25px" /> ) é o operador padrão, além dos operadores +, - e x. |
-| Visualização | Fornece uma leitura rápida sobre possíveis erros. A visualização abrange os últimos 90 dias. Esta é uma maneira de medir, ao menos de maneira inicial, se você selecionou os componentes certos para a sua métrica. Um resultado inesperado significa que você precisa analisar a definição da métrica novamente. |
-| Compatibilidade do produto | Indica em que Customer Journey Analytics essa métrica calculada pode ser usada. <p>Os valores possíveis são:</p><ul><li>[!UICONTROL **Em qualquer lugar no Customer Journey Analytics**]: a métrica calculada pode ser usada em todo o Customer Journey Analytics, inclusive no Analysis Workspace, Report Builder e assim por diante.</li><li>[!UICONTROL **Em todos os lugares no Customer Journey Analytics (exceto a experimentação)**]: a métrica calculada pode ser usada em todo o Customer Journey Analytics, exceto no painel Experimentação.</li> <p>Para obter informações sobre os critérios que determinam se uma métrica calculada pode ser usada com experimentação, consulte [Usar métricas calculadas no painel Experimentação](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) em [Painel Experimentação](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
-| Adicionar | Para todos os tipos de métricas calculadas, é possível adicionar contêineres e números estáticos à definição. Para métricas calculadas avançadas, também é possível adicionar filtros e funções.<ul><li>Os contêineres funcionam como uma expressão matemática e determinam a ordem das operações. Todo o conteúdo do contêiner será processado antes da próxima operação.</li><li>Arrastar um filtro para um container filtra tudo nesse container. (Somente métricas calculadas avançadas)</li><li>É possível empilhar vários filtros em um container.</li></ul> |
-| Ícone de engrenagem (Tipo de métrica, Atribuição) | Selecionar o ícone de engrenagem ao lado de uma métrica permite especificar o tipo de métrica e os modelos de atribuição. <p>**Observação:** considere o seguinte ao atualizar uma atribuição de componente para um modelo de atribuição não padrão:</p><ul><li>**Ao usar o componente em um relatório com *uma única dimensão*:** a atribuição do componente ignora o modelo de alocação quando um modelo de atribuição não padrão é usado.</li><li>**Ao usar o componente em um relatório com *várias dimensões*:** a atribuição do componente retém o modelo de alocação quando um modelo de atribuição não padrão é usado.</li><li>Várias dimensões estão disponíveis somente ao [exportar dados para a nuvem](/help/analysis-workspace/export/export-cloud.md).</li></ul> <p>Para obter mais informações sobre alocação, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).</p> |
-| Ícone de adição (+) | Permite criar um novo componente, como um novo filtro (que leva você ao Construtor de filtros). |
-| Pesquisar componentes | Essa barra de pesquisa permite procurar dimensões, métricas, filtros (somente métricas calculadas avançadas) e funções (somente métricas calculadas avançadas). |
-| Lista de dimensões | Em vez de sair do construtor de métricas calculadas para criar um filtro simples (no Construtor de filtros), por exemplo &quot;Página = Página inicial&quot;, é possível arrastar para a Página e selecionar Página inicial diretamente do construtor de métricas calculadas. Isso resulta em um fluxo de trabalho mais simplificado para a criação de métricas calculadas filtradas. |
-| Lista de métricas | As métricas possuem 3 categorias:<ul><li>Métricas padrão</li><li>Métricas calculadas</li><li>Modelos de métricas - na parte inferior da lista.</li></ul>Ao passar o mouse sobre uma métrica, é possível ver o ícone Informações à direita. Clicar neste ícone fornece as seguintes informações:<ul><li>A fórmula de como é calculado.</li><li>Uma tendência prevista da métrica.</li><li>Um ícone de edição (lápis) na parte superior direita, que direcionará você ao construtor de métricas calculadas, onde será possível editar essa métrica calculada.</li></ul> |
-| Lista de filtros | (Somente métricas calculadas avançadas) Como administrador, esta lista mostra todos os filtros criados na sua empresa de logon. Caso seja um usuário não administrador, esta lista mostra os filtros que possui e os que são compartilhados com você. |
-| Lista de funções | (Somente métricas calculadas avançadas) As funções estão divididas em duas listas: Básicas (usadas com mais frequência) e Avançadas. |
-| Seletor de visualizações de dados | Esse seletor (na parte superior direita) permite alternar para uma visualização de dados diferente. |
+<!-- markdownlint-enable MD034 -->
+
+
+A caixa de diálogo **[!UICONTROL Construtor de métrica calculada]** é usada para criar métricas calculadas novas ou editar métricas calculadas existentes. A caixa de diálogo é denominada **[!UICONTROL Nova métrica calculada]** ou **[!UICONTROL Editar métrica calculada]** para métricas que você cria ou gerencia a partir do gerenciador [[!UICONTROL Métricas calculadas]](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+
+>[!BEGINTABS]
+
+>[!TAB Construtor de métrica calculada]
+
+![Janela de detalhes da métrica calculada mostrando campos e opções descritos na próxima seção.](assets/calculated-metric-builder.png)
+
+>[!TAB Criar ou editar métrica calculada]
+
+![Janela de detalhes da métrica calculada mostrando campos e opções descritos na próxima seção.](assets/create-edit-calculated-metric.png)
+
+>[!ENDTABS]
+
+1. Especifique os seguintes detalhes (![Obrigatório](/help/assets/icons/Required.svg) é obrigatório):
+
+   | Elemento | Descrição |
+   | --- | --- |
+   | **[!UICONTROL Visualização de dados]** | É possível selecionar a visualização de dados para a métrica calculada.  A métrica calculada definida está disponível nos projetos do Workspace com base na visualização de dados selecionada. |
+   | **[!UICONTROL Métrica somente de projeto]** | Uma caixa de informações para explicar que a métrica só é visível no projeto em que foi criada e que a métrica não será adicionada à lista de componentes. Habilitar **[!UICONTROL Disponibilize esta métrica para todos os seus projetos e adicione-a à lista de componentes]** para alterar essa configuração. Esta caixa de informações só fica visível quando você cria uma métrica no Workspace usando **[!UICONTROL Criar métrica a partir da seleção]** e seleciona uma função (como **[!UICONTROL Média]** ou **[!UICONTROL Mediana]**). E depois use as [Informações do componente](/help/components/use-components-in-workspace.md#component-info) para editar a métrica criada. |
+   | **[!UICONTROL Título]** ![Obrigatório](/help/assets/icons/Required.svg) | Nomeie a métrica calculada, por exemplo, `Conversion Rate`. |
+   | **[!UICONTROL ID Externa]** ![Necessária](/help/assets/icons/Required.svg) | O nome da métrica calculada ao usar uma ferramenta BI externa e a extensão BI. O valor é automaticamente definido como `undefined_xxx`, a menos que você substitua o valor. |
+   | **[!UICONTROL Descrição]** | Forneça uma descrição para o filtro, por exemplo, `Calculated metric to define the conversion rate.` Não há necessidade de descrever a fórmula da métrica calculada, pois a fórmula já está automaticamente disponível no [!UICONTROL Resumo]. |
+   | **[!UICONTROL Formato]** | Selecione um formato para a métrica calculada: você pode selecionar entre **[!UICONTROL Decimal]**, **[!UICONTROL Hora]**, **[!UICONTROL Percentual]** e **[!UICONTROL Moeda]**. |
+   | **[!UICONTROL Casas decimais]** | Especifique o número de casas decimais para o formato selecionado. Habilitado somente quando o formato selecionado é Decimal, Moeda e Porcentagem. |
+   | **[!UICONTROL Exibir tendência ascendente como]** | Especifique se uma tendência de alta da métrica calculada será exibida como ▲ **[!UICONTROL Bom (Verde)]** ou como _ **[!UICONTROL Ruim (Vermelho)]**. |
+   | **[!UICONTROL Moeda]** | Especifique a moeda da métrica calculada. Habilitado somente quando o formato selecionado é Moeda. |
+   | **[!UICONTROL Tags]** | Organize a métrica calculada criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova marca. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma marca. |
+   | **[!UICONTROL Pré-visualizar]** | A visualização abrange os últimos 90 dias e é uma maneira de medir se você definiu sua métrica corretamente. |
+   | **[!UICONTROL Resumo]** | Exibe um resumo da definição da métrica calculada. <br/>Por exemplo: ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Total de Pedidos]** ![Divisão](/help/assets/icons/Divide.svg) ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Sessões]**. |
+   | **[!UICONTROL Definição]** ![Necessária](/help/assets/icons/Required.svg) | Defina seu filtro usando o [Criador de definições](#definition-builder). |
+
+1. Para verificar se a definição da sua métrica calculada está correta, use a **[!UICONTROL Visualização]** atualizada constantemente dos resultados da métrica calculada. A **[!UICONTROL Visualização]** abrange os últimos 90 dias e avalia continuamente a definição da sua métrica calculada.
+
+   A **[!UICONTROL compatibilidade de produto]** indica se a métrica calculada pode ser usada em experimentação. Os valores possíveis são:
+   * **[!UICONTROL Em qualquer lugar no Customer Journey Analytics]**: a métrica calculada pode ser usada em todo o Customer Journey Analytics, exceto no painel Experimentação.
+   * **[!UICONTROL Em todos os lugares no Customer Journey Analytics (exceto a experimentação)]**: a métrica calculada pode ser usada em todo o Customer Journey Analytics.
+
+1. Selecionar:
+   * **[!UICONTROL Salvar]** para salvar a métrica calculada.
+   * **[!UICONTROL Salvar como]** para salvar uma cópia da métrica calculada.
+   * **[!UICONTROL Cancelar]** para cancelar as alterações feitas na métrica calculada ou a criação de uma nova métrica calculada.
+
+
+## Construtor de definições
+
+Use o Criador de definições para arrastar e soltar dimensões, métricas, filtros e funções a fim de criar métricas personalizadas com base na lógica, nas regras e nos operadores da hierarquia do container. Nessa construção, você pode usar métricas padrão, métricas definidas por Adobe, métricas calculadas, filtros, dimensões e funções. Todos esses componentes estão disponíveis no painel de componentes no Criador de métricas calculadas. Além disso, você pode usar operadores e contêineres na definição.
+
+![Criar métrica calculada](/help/components/calc-metrics/cm-workflow/assets/create-calculated-metric.gif)
+
+Somente métricas são definidas como componentes singulares na área **[!UICONTROL Definição]**. Todos os outros componentes são definidos como um contêiner, métricas de encapsulamento ou outros contêineres. Consulte [Contêineres](#containers) para obter mais informações.
+
+### Métricas
+
+Para adicionar uma métrica:
+
+* Arraste e solte um componente ![Eventos](/help/assets/icons/Event.svg) **[!UICONTROL Métricas]** do painel componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, filtros e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
+
+Quando você usa uma métrica calculada como parte de sua definição, a métrica calculada é expandida.
+
+Para modificar uma métrica:
+
+1. Selecione a ![Configuração](/help/assets/icons/Setting.svg) em um componente de métrica na área **[!UICONTROL Definição]**.
+1. Na caixa de diálogo pop-up, é possível definir o tipo de métrica e um modelo de atribuição. Consulte [Atribuição e tipo de métrica](m-metric-type-alloc.md).
+
+Para excluir uma métrica:
+
+* Selecione ![Fechar](/help/assets/icons/Close.svg) na métrica.
+
+### Operadores
+
+Os operadores permitem especificar o operador entre componentes ou contêineres. Os operadores aparecem automaticamente entre
+
+* duas ou mais métricas em um contêiner,
+* dois ou mais contêineres num contêiner,
+* uma ou mais métricas e um ou mais containers em um container.
+
+Você pode selecionar:
+
+| Símbolo | Operador |
+|:---:|---|
+| ![Dividir](/help/assets/icons/Divide.svg) | Dividir (padrão) |
+| ![Fechar](/help/assets/icons/Close.svg) | Multiplicar |
+| ![Remover](/help/assets/icons/Remove.svg) | Subtrair |
+| ![Adicionar](/help/assets/icons/Add.svg) | Adicionar |
+
+### Número estático
+
+É possível adicionar um número estático à definição da métrica calculada. Para adicionar um número estático:
+
+* Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** de dentro de um container.
+* Selecione **[!UICONTROL Número estático]**. Um contêiner de número estático é exibido.
+* Selecione [!UICONTROL *Clique para adicionar um valor*] e digite um valor.
+
+
+### Containers
+
+Adicione dimensões, filtros e funções como contêineres a uma definição de métrica calculada. Você também pode adicionar um container genérico. Os contêineres funcionam como uma expressão matemática e determinam a ordem das operações. Qualquer coisa em um contêiner é processada antes do próximo componente ou contêiner.
+
+
+#### Filtrar contêiner
+
+Use o conceito de um contêiner de filtro para criar uma [métrica filtrada](metrics-with-segments.md). É possível construir um container de filtro usando um filtro ou usando um filtro criado a partir de uma dimensão.
+
+* Para adicionar um container de filtro a partir de uma dimensão:
+
+   1. Arraste e solte um componente ![Dimension](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimension]** do painel de componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, filtros e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
+   1. No pop-up **[!UICONTROL Criar filtro a partir do Dimension]**, defina a condição do filtro. Selecione na lista de operadores e selecione um valor ou insira um valor. Por exemplo, **[!UICONTROL Mês]** **[!UICONTROL é igual a]** ![DivisaInferior](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. Selecione **[!UICONTROL Concluído]**. Contêiner de filtro adicionado à **[!UICONTROL Definição]**.
+
+
+* Para adicionar um contêiner de filtro a partir de um filtro, é possível usar:
+
+   * Arraste e solte um componente ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtros]** do painel componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, filtros e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar filtros específicos.
+Automaticamente, um contêiner de filtro é adicionado à **[!UICONTROL Definição]**, usando o nome do filtro.
+
+   * Arraste e solte um componente ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtros]** do painel componentes em um contêiner genérico. O contêiner é modificado em um contêiner de filtro.
+
+   * Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** de dentro de um contêiner:
+
+      1. Selecione **[!UICONTROL Filtro]**. Contêiner de filtro adicionado à **[!UICONTROL Definição]**.
+      1. No novo contêiner de filtro, selecione um filtro no menu suspenso [!UICONTROL *Selecionar...*].
+
+  >[!TIP]
+  >
+  >É possível adicionar mais de um filtro a um container.
+
+  Os filtros no contêiner são nomeados com base no componente de filtro. Por exemplo, ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL sessões da Web]**. Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para exibir um pop-up com detalhes sobre o filtro. No pop-up, selecione ![Editar](/help/assets/icons/Edit.svg) para editar a definição do filtro.
+
+Para remover um filtro de um container:
+
+* Selecione ![Fechar](/help/assets/icons/Close.svg) ao lado do nome do filtro.
+
+Consulte [Métricas filtradas](metrics-with-segments.md) para obter mais detalhes e exemplos.
+
+#### Contêiner de função
+
+Para adicionar um contêiner de função, é possível usar:
+
+* Arrastar e soltar:
+
+   1. Arraste e solte um componente ![Função](/help/assets/icons/Effect.svg) **[!UICONTROL Funções]** do painel de componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, filtros e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar funções específicas.
+   1. Automaticamente, um contêiner de função é adicionado à **[!UICONTROL Definição]** usando o nome da função.
+
+* Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** de dentro de um contêiner:
+
+   1. Selecione a **[!UICONTROL Função]**.
+   1. No contêiner, selecione uma função do menu suspenso [!UICONTROL *Selecionar...*].
+
+O container de função é nomeado após o componente de função. Por exemplo, ![Função](/help/assets/icons/Effect.svg) **[!UICONTROL RAIZ QUADRADA (métrica)]**. Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para exibir um pop-up com detalhes sobre a função. Selecione **[!UICONTROL Saiba mais]** para obter mais informações sobre a função.
+
+Consulte [Usar funções](cm-using-functions.md) para obter detalhes sobre como usar funções e quais funções estão disponíveis para criar uma métrica calculada.
+
+
+#### Contêiner genérico
+
+Para adicionar um container genérico:
+
+* Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** de dentro de um container
+* Selecione **[!UICONTROL Contêiner]**. Um novo contêiner genérico vazio foi adicionado à **[!UICONTROL Definição]**. Você pode usar um contêiner genérico para aninhar ou criar uma hierarquia na definição da métrica calculada.
+
+
+#### Excluir um contêiner
+
+Para excluir um contêiner, selecione ![Fechar](/help/assets/icons/Close.svg) no nível do contêiner.
+
+>[!MORELIKETHIS]
+>
+>[Usar funções](cm-using-functions.md)
+>[Filtros](/help/components/filters/filters-overview.md)
+>
+
