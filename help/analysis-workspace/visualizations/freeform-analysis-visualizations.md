@@ -5,10 +5,10 @@ title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 714e37433b12713e45a66ebd64771c050edb89a5
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 16%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,26 +20,30 @@ O Workspace oferece várias visualizações que permitem gerar representações 
 
 Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
-| Nome da visualização<br/>Ícone de visualização | Descrição |
-| --- | --- | 
-| [Área](/help/analysis-workspace/visualizations/area.md)<p>![GraphArea](/help/assets/icons/GraphArea.svg)</p> | Uma visualização de gráfico de área. Semelhante a um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Use um gráfico de área quando você tiver diversas métricas e desejar visualizar a área expressa pela interseção de duas ou mais métricas. |
-| [Barra](/help/analysis-workspace/visualizations/bar.md) <p>![BarraDeGráficosVertical](/help/assets/icons/GraphBarVertical.svg)</p> | Uma visualização de gráfico de barras com barras verticais representando vários valores de uma ou mais métricas. |
-| [Gráfico em marcadores](/help/analysis-workspace/visualizations/bullet-graph.md) <p>![MarcadorGráfico](/help/assets/icons/GraphBullet.svg)</p> | Uma visualização de gráfico de marcadores, que mostra a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas). |
-| [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)<p>![TextoNumerado](/help/assets/icons/TextNumbered.svg)</p> | Uma visualização de coorte é um grupo de pessoas que compartilham características comuns em um período especificado. Uma tabela de coorte é útil para análise de retenção, churn ou latência. |
-| [Rosca](/help/analysis-workspace/visualizations/donut.md) <p>![RoscaGráfica](/help/assets/icons/GraphDonut.svg)</p> | Semelhante ao gráfico de pizza, uma visualização de rosca mostra os dados como partes ou filtros de um todo. |
-| [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)<p>![FunilConversão](/help/assets/icons/ConversionFunnel.svg)</p> | Uma visualização de fallout mostra onde as pessoas saíram e continuaram em uma sequência predefinida de páginas. |
-| [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)<p>![GraphPathing](/help/assets/icons/GraphPathing.svg)</p> | Uma visualização de fluxo mostra os caminhos exatos do cliente pelos seus sites e aplicativos. |
-| [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)<p>![ExibirTabela](/help/assets/icons/ViewTable.svg)</p> | Uma visualização de tabela de forma livre é uma visualização interativa. A visualização de tabela de forma livre é a base para a análise de dados no Workspace. |
-| [Histograma](/help/analysis-workspace/visualizations/histogram.md)<p>![HistogramaGráfico](/help/assets/icons/GraphHistogram.svg)</p> | Uma visualização de histograma agrupa pessoas, visitas ou eventos em compartimentos com base em um volume de métrica. |
-| [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md)<p>![BarraDeGráficosHorizontal](/help/assets/icons/GraphBarHorizontal.svg)</p> | Uma visualização de barra horizontal mostra barras horizontais que representam vários valores de uma ou mais métricas. |
-| [Resumo da métrica principal](/help/analysis-workspace/visualizations/key-metric.md)<p>![MétricasChave](/help/assets/icons/KeyMetrics.svg) | Uma visualização de resumo das Métricas principais combina as visualizações de linha, alteração de resumo e número de resumo. |
-| [Linha](/help/analysis-workspace/visualizations/line.md)<p>![TendênciaGráfica](/help/assets/icons/GraphTrend.svg)</p> | Uma visualização de linha representa as métricas usando uma linha para mostrar como os valores são alterados em um período. Um gráfico de linhas usa o tempo no eixo x. |
-| [Gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) <p>![DispersãoDeGráfico](/help/assets/icons/GraphScatter.svg)</p> | Uma visualização do gráfico de dispersão mostra a relação entre itens de dimensão e até três métricas. |
-| [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![123](/help/assets/icons/123.svg)</p> | Uma visualização do número de resumo mostra a célula selecionada como um número grande. |
-| [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md)<p>![Mover para Cima](/help/assets/icons/MoveUpDown.svg)</p> | Uma visualização de alteração de resumo mostra a alteração entre as células selecionadas como um número grande ou porcentagem. |
-| [Texto](/help/analysis-workspace/visualizations/text.md)<p>![Texto](/help/assets/icons/Text.svg)</p> | Uma visualização de texto permite adicionar texto definido pelo usuário à Workspace. Útil para adicionar contexto à análise e aos insights, além de aproveitar as descrições do painel/da visualização |
-| [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p>![ModernGridView](/help/assets/icons/ModernGridView.svg)</p> | Uma visualização de mapa de árvore exibe dados hierárquicos (estruturados em árvore) como um conjunto de retângulos aninhados. |
-| [Venn](/help/analysis-workspace/visualizations/venn.md)<p>![Tipo](/help/assets/icons/TwoDots.svg)</p> | Uma visualização de venn usa círculos para descrever a sobreposição de métrica de até três filtros. |
+| Ícone | Nome | Descrição |
+| :---: | --- | ---| 
+| ![GraphArea](/help/assets/icons/GraphArea.svg) | [Área](/help/analysis-workspace/visualizations/area.md) | Uma visualização de gráfico de área. Semelhante a um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Use um gráfico de área quando você tiver diversas métricas e desejar visualizar a área expressa pela interseção de duas ou mais métricas. |
+| ![BarraDeGráficosVertical](/help/assets/icons/GraphBarVertical.svg) | [Barra](/help/analysis-workspace/visualizations/bar.md) | Uma visualização de gráfico de barras com barras verticais representando vários valores de uma ou mais métricas. |
+| ![BarraDeGráficosVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barra empilhada](/help/analysis-workspace/visualizations/bar.md) | Uma visualização de gráfico de barras empilhadas com barras verticais representando vários valores em uma ou mais métricas. |
+| ![MarcadorGráfico](/help/assets/icons/GraphBullet.svg)</p> | [Marcador](/help/analysis-workspace/visualizations/bullet-graph.md) | Uma visualização de gráfico de marcadores, que mostra a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas). |
+| ![TextoNumerado](/help/assets/icons/TextNumbered.svg) | [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Uma visualização de coorte é um grupo de pessoas que compartilham características comuns em um período especificado. Uma tabela de coorte é útil para análise de retenção, churn ou latência. |
+| ![Combinação](/help/assets/icons/ComboChart.svg) | [Combinação](combo-charts.md) | Um gráfico de combinação permite criar rapidamente uma visualização de comparação sem precisar criar uma tabela primeiro. |
+| ![RoscaGráfica](/help/assets/icons/GraphDonut.svg) | [Rosca](/help/analysis-workspace/visualizations/donut.md) | Semelhante ao gráfico de pizza, uma visualização de rosca mostra os dados como partes ou filtros de um todo. |
+| ![FunilConversão](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Uma visualização de fallout mostra onde as pessoas saíram e continuaram em uma sequência predefinida de páginas. |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) | Uma visualização de fluxo mostra os caminhos exatos do cliente pelos seus sites e aplicativos. |
+| ![ExibirTabela](/help/assets/icons/ViewTable.svg)</p> | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Uma visualização de tabela de forma livre é uma visualização interativa. A visualização de tabela de forma livre é a base para a análise de dados no Workspace. |
+| ![HistogramaGráfico](/help/assets/icons/Histogram.svg) | [Histograma](/help/analysis-workspace/visualizations/histogram.md) | Uma visualização de histograma agrupa pessoas, visitas ou eventos em compartimentos com base em um volume de métrica. |
+| ![BarraDeGráficosHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) | Uma visualização de barra horizontal mostra barras horizontais que representam vários valores de uma ou mais métricas. |
+| ![BarraDeGráficosHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barra horizontal empilhada](/help/analysis-workspace/visualizations/horizontal-bar.md) | Uma visualização de barra horizontal empilhada mostra barras horizontais que representam vários valores de uma ou mais métricas. |
+| ![MétricasChave](/help/assets/icons/KeyMetrics.svg) | [Resumo da métrica principal](/help/analysis-workspace/visualizations/key-metric.md) | Uma visualização de resumo das Métricas principais combina as visualizações de linha, alteração de resumo e número de resumo. |
+| ![TendênciaGráfica](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | Uma visualização de linha representa as métricas usando uma linha para mostrar como os valores são alterados em um período. Um gráfico de linhas usa o tempo no eixo x. |
+| ![DispersãoDeGráfico](/help/assets/icons/GraphScatter.svg) | [Dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | Uma visualização do gráfico de dispersão mostra a relação entre itens de dimensão e até três métricas. |
+| ![RegraDePágina](/help/assets/icons/PageRule.svg) | [Cabeçalho da seção](section-header.md) | Para identificar e articular seções em um painel. |
+| ![Mover para Cima](/help/assets/icons/MoveUpDown.svg) | [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Uma visualização de alteração de resumo mostra a alteração entre as células selecionadas como um número grande ou porcentagem. |
+| ![123](/help/assets/icons/123.svg)</p> | [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Uma visualização do número de resumo mostra a célula selecionada como um número grande. |
+| ![Texto](/help/assets/icons/Text.svg) | [Texto](/help/analysis-workspace/visualizations/text.md) | Uma visualização de texto permite adicionar texto definido pelo usuário à Workspace. Útil para adicionar contexto à análise e aos insights, além de aproveitar as descrições do painel/da visualização |
+| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p> | Uma visualização de mapa de árvore exibe dados hierárquicos (estruturados em árvore) como um conjunto de retângulos aninhados. |
+| ![Tipo](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | Uma visualização de venn usa círculos para descrever a sobreposição de métrica de até três filtros. |
 
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
@@ -141,7 +145,7 @@ Use o menu de contexto (disponível por meio da seleção alternativa, por exemp
 | **[!UICONTROL Baixar itens como CSV (*nome da dimensão*)]** | Baixe os itens de dimensão (até um máximo de 50.000) da visualização em seu dispositivo local. Um máximo de 50.000 itens de dimensão para a dimensão selecionada. |
 | **[!UICONTROL Copiar visualização]** | Copie a visualização para que possa inseri-la em outro lugar no projeto ou em um projeto completamente diferente. |
 | **[!UICONTROL Baixar dados CSV]** | Baixe os dados exibidos da visualização no seu dispositivo local. |
-| **[!UICONTROL Exportar tabela completa...]** | Exportar a tabela completa para locais de nuvem designados. Consulte [Exporta relatórios de Customer Journey Analytics para a nuvem](../export/export-cloud.md) |
+| **[!UICONTROL Exportar tabela completa]** | Exportar a tabela completa para locais de nuvem designados. Consulte [Exporta relatórios de Customer Journey Analytics para a nuvem](../export/export-cloud.md) |
 | **[!UICONTROL Duplicar visualização]** | Faça uma duplicata exata da visualização. |
 | **[!UICONTROL Editar descrição]** | Adicione (ou edite) uma descrição de texto para a visualização. Consulte [Texto](text.md). |
 | **[!UICONTROL Obter link de visualização]** | Copie e compartilhe um link diretamente na visualização. Uma caixa de diálogo Compartilhar link exibe o link. Selecione Copiar para copiar o link para a área de transferência. |
