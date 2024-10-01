@@ -3,12 +3,10 @@ description: Visão geral da tela da jornada
 title: Tela da jornada
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5d65f2cee34741d985ae7b85ad62f65a68c6289a
+source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1318'
 ht-degree: 2%
 
 ---
@@ -35,7 +33,7 @@ Os principais recursos da visualização da tela de Jornada incluem:
 
 ## Possíveis insights
 
-A seguir estão alguns exemplos dos tipos de insights que a tela da Jornada pode ajudar a fornecer. Você pode escolher se esses insights são baseados em todas as pessoas na visualização de dados ou em todas as pessoas que iniciaram a jornada.
+A seguir estão alguns exemplos dos tipos de insights que a tela da Jornada pode ajudar a fornecer. Você pode escolher se esses insights são baseados em todas as pessoas na visualização de dados, todas as pessoas que iniciaram a jornada ou todas as pessoas do nó anterior da jornada.
 
 **Fallthrough**
 
@@ -47,7 +45,7 @@ A seguir estão alguns exemplos dos tipos de insights que a tela da Jornada pode
 
 **Fallout**
 
-* Os pontos (nós) da jornada em que as pessoas mais comumente abandonaram a jornada
+* Os pontos (nós) da jornada em que as pessoas mais comumente abandonaram a jornada (nunca chegaram a nenhum dos próximos nós imediatos)
 
 **Outro**
 

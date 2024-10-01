@@ -3,12 +3,10 @@ description: Configurar a visualização de uma tela da jornada
 title: Tela da jornada
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 90180e1231ab8b50f1f6b8552e00d1c251d10a2f
+source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
 workflow-type: tm+mt
-source-wordcount: '5408'
+source-wordcount: '6520'
 ht-degree: 1%
 
 ---
@@ -41,19 +39,19 @@ Consulte [visão geral da tela de Jornada](/help/analysis-workspace/visualizatio
 
    Adicione uma visualização da tela de Jornada de qualquer uma das maneiras descritas na seção [Adicionar visualizações a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) em [Visão geral das visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
 
-1. Especifique as seguintes informações básicas:
+1. Especifique as seguintes informações básicas para configurar a tela de Jornada:
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Métrica primária**] | A métrica primária afeta os seguintes aspectos da visualização da tela de Jornada:  <ul><li>Define como as pessoas se movem pela jornada.</li><li>O número total exibido em cada nó.<p>Por exemplo, se a métrica principal for Pessoas, cada nó mostrará o número de pessoas que acessaram esse nó na jornada.</p></li><li>A porcentagem mostrada em cada nó. (Depois que a visualização é criada, você pode optar por mostrar a porcentagem do total ou do nó inicial.)</li><p>Por exemplo, se a métrica principal for Pessoas, cada nó mostrará a porcentagem de pessoas que atingiram esse nó na jornada (a porcentagem do total ou do nó inicial).</p></li><li>Quando uma dimensão é adicionada à visualização, os três principais nós da visualização são adicionados, com base na métrica primária.</li></ul> |
-   | [!UICONTROL **Métrica secundária**] | A métrica secundária é opcional. Quando um é selecionado, as seguintes informações são mostradas em cada nó abaixo da métrica primária: <ul><li>O número total<p>Por exemplo, se Sessões for a métrica secundária, cada nó mostrará o número de sessões que atingiram esse nó na jornada.</p></li><li>A porcentagem (após a visualização ser criada, é possível optar por mostrar a porcentagem do total ou do nó inicial).</li><p>Por exemplo, se Sessões for a métrica secundária, cada nó mostrará a porcentagem de sessões que atingiram esse nó na jornada (a porcentagem do total ou do nó inicial).</p></li></ul> |
-   | [!UICONTROL **jornada DO Journey Optimizer**]<!-- name? --> | Selecione a jornada do Journey Optimizer que deseja usar como base para sua análise na tela de Jornada. (Como alternativa, você pode deixar essa opção em branco se quiser uma tela em branco da qual criar sua análise no Analysis Workspace.)</p> <p>Ao analisar uma jornada do Journey Optimizer na tela do Jornada, a jornada é exibida com a mesma ordem, sequência e estrutura que tem no Journey Optimizer. Para obter mais informações, consulte [Analisar jornadas do Journey Optimizer](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) em [visão geral da tela do Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Observação**: essa opção é exibida somente quando dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</p> |
+   | [!UICONTROL **Métrica primária**] | Determina a métrica usada ao calcular os valores de porcentagem e número em cada nó na jornada. <p>**Observação**: o escopo dos dados incluídos em cada valor de porcentagem e número é determinado pela métrica escolhida no campo **[!UICONTROL contêiner da tela de Jornada]**. Por exemplo, se **[!UICONTROL Pessoa]** estiver definida como o contêiner, as estatísticas mostradas na jornada abrangerão várias sessões para uma determinada pessoa. Se **[!UICONTROL Session]** estiver definida como o contêiner, as estatísticas mostradas na jornada serão restritas a uma única sessão definida para uma determinada pessoa.</p><p>Considere os exemplos a seguir:</p><ul><li>Se _Pessoas_ for a métrica primária e _Pessoa_ for o contêiner, apenas as pessoas que têm um evento que corresponde aos critérios de cada nó sucessivo na jornada serão movidas pela jornada. O fallout ocorre em um nó quando uma pessoa nunca chegou a qualquer um dos próximos nós imediatos na jornada. Eles podem ter executado outras ações no site, mas não atendem aos critérios definidos por qualquer um dos nós que se seguem imediatamente.</li><li>Se _Pessoas_ for a métrica primária e _Sessão_ for o contêiner, apenas as pessoas que têm um evento que corresponde aos critérios de cada nó na jornada em uma única sessão serão movidas pela jornada. O fallout ocorre em um nó quando uma pessoa nunca chegou a qualquer um dos próximos nós imediatos na jornada em uma única sessão. Eles podem ter executado outras ações no site na sessão, mas não atendem aos critérios definidos por qualquer um dos nós que se seguem imediatamente.</li></ul> <p>A métrica primária afeta os seguintes aspectos da visualização da tela de Jornada:</p><ul><li>O número total exibido em cada nó.  <p>Por exemplo, se Eventos for a métrica principal, cada nó mostrará o número de pessoas que tiveram um evento que corresponde aos critérios desse nó (e cada nó anterior que o antecedeu na jornada).</p></li><li>A porcentagem mostrada em cada nó. (Depois que a visualização for criada, você poderá usar o menu suspenso **[!UICONTROL Valor percentual]** para escolher mostrar a porcentagem do total, a porcentagem do nó anterior ou a porcentagem do nó inicial.)</li><p>Por exemplo, se Eventos for a métrica principal, cada nó mostrará a porcentagem de pessoas que tiveram um evento que corresponde aos critérios desse nó (e de cada nó anterior que o antecedeu na jornada).</p></li><li>Quando uma dimensão é adicionada à visualização, os três principais nós da visualização são adicionados, com base na métrica primária.</li></ul> |
+   | [!UICONTROL **Métrica secundária**] | Determina a métrica secundária usada ao calcular os valores de porcentagem e número em cada nó na jornada. A métrica secundária é opcional. <p>**Observação**: o escopo dos dados incluídos em cada valor de porcentagem e número é determinado pela métrica escolhida no campo **[!UICONTROL contêiner da tela de Jornada]**. Por exemplo, se **[!UICONTROL Pessoa]** estiver definida como o contêiner, as estatísticas mostradas na jornada abrangerão várias sessões para uma determinada pessoa. Se **[!UICONTROL Session]** estiver definida como o contêiner, as estatísticas mostradas na jornada serão restritas a uma única sessão definida para uma determinada pessoa.</p><p>Quando uma métrica secundária é selecionada, ela afeta os seguintes aspectos da visualização da tela de Jornada:</p><ul><li>O número total mostrado em cada nó abaixo da métrica primária. <p>Por exemplo, se Contas for a métrica secundária, o número de contas será mostrado no nó para todas as pessoas que atingiram esse nó, e cada nó mostrará o número de sessões que atingiram esse nó na jornada.</p></li><li>A porcentagem mostrada em cada nó abaixo da métrica primária. (Depois que a visualização é criada, você pode optar por mostrar a porcentagem do total ou do nó inicial.)</li><p>Por exemplo, se Sessões for a métrica secundária, cada nó mostrará a porcentagem de sessões que atingiram esse nó na jornada (a porcentagem do total ou do nó inicial).</p></li></ul> |
+   | [!UICONTROL **jornada DO Journey Optimizer**]<!-- name? --> | Selecione a jornada do Journey Optimizer que deseja usar como base para sua análise na tela de Jornada. Jornadas com qualquer um dos seguintes status estão disponíveis: Ativo, Interrompido ou Concluído <p>Como alternativa, é possível deixar essa opção em branco caso deseje uma tela em branco a partir da qual a análise será criada no Analysis Workspace.</p> <p>Ao analisar uma jornada do Journey Optimizer na tela do Jornada, a jornada é exibida com a mesma ordem, sequência e estrutura que tem no Journey Optimizer. Para obter mais informações, consulte [Analisar jornadas do Journey Optimizer](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md#analyze-journey-optimizer-journeys) em [visão geral da tela do Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).</p><p>**Observação**: essa opção é exibida somente quando dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).</p> |
 
 1. (Opcional) Selecione [!UICONTROL **Mostrar configurações avançadas**] e especifique as seguintes informações:
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **contêiner da tela de Jornada**] | Escolha o contêiner no qual deseja se concentrar na jornada. O contêiner escolhido determina as estatísticas exibidas na visualização. (Se os nomes dos containers forem diferentes dos nomes padrão mostrados abaixo, eles serão personalizados na visualização de dados.)<ul><li>**Sessões:** Restringe as estatísticas da visualização a se enquadrarem em uma única sessão definida para uma determinada pessoa. Isso significa que os números e as porcentagens exibidos em cada nó (que são baseados nas métricas principal e secundária) devem ocorrer em uma única sessão para cada pessoa.</li><li>**Pessoas:** permite que as estatísticas da visualização abranjam várias sessões de uma determinada pessoa. Isso significa que os números e porcentagens exibidos em cada nó (que são baseados nas métricas primária e secundária) podem ocorrer em qualquer número de sessões, desde que as sessões pertençam à mesma pessoa. Esta é a configuração padrão.</li></ul> |
+   | [!UICONTROL **contêiner da tela de Jornada**] | Escolha o contêiner no qual deseja se concentrar na jornada. O container escolhido determina o escopo dos dados capturados na jornada. Isso afeta as estatísticas exibidas na visualização. (Se os nomes dos containers forem diferentes dos nomes padrão mostrados abaixo, eles serão personalizados na visualização de dados.)<ul><li>**Sessão:** Restringe as estatísticas da visualização a se enquadrarem em uma única sessão definida para uma determinada pessoa. Isso significa que os números e as porcentagens exibidos em cada nó (que são baseados nas métricas principal e secundária) devem ocorrer em uma única sessão para cada pessoa. Em outras palavras, uma pessoa pode ser representada várias vezes em uma única jornada.<p>Esse container usa a métrica Sessões.</p></li><li>**Pessoa:** (padrão) permite que as estatísticas da visualização abranjam várias sessões para uma determinada pessoa. Isso significa que os números e porcentagens exibidos em cada nó (que são baseados nas métricas primária e secundária) podem ocorrer em qualquer número de sessões, desde que as sessões pertençam à mesma pessoa. Em outras palavras, uma pessoa só pode ser representada uma vez em uma única jornada.<p>Esse contêiner usa a métrica Pessoas.</p></li></ul> |
 
 1. Selecione [!UICONTROL **Criar**].
 
@@ -61,7 +59,7 @@ Consulte [visão geral da tela de Jornada](/help/analysis-workspace/visualizatio
 
    <!-- add screen shot -->
 
-   Se você não tiver o Journey Optimizer ou se não tiver selecionado uma jornada do Journey Optimizer, uma tela em branco será exibida, onde você poderá começar a preencher a jornada.
+   Se você não tiver o Journey Optimizer ou se não tiver selecionado uma jornada do Journey Optimizer, uma tela em branco será exibida, onde você poderá começar a adicionar nós à jornada.
 
    <!-- add screen shot -->
 
@@ -85,9 +83,9 @@ Para definir as configurações da visualização da tela de Jornada:
    | Configuração | Função |
    |---------|----------|
    | [!UICONTROL **Tipo de nó**] | Permite configurar quais tipos de nó são mostrados na visualização.<p>Para ocultar um tipo de nó da visualização, selecione o (x) ao lado do tipo de nó ou desmarque-o do menu suspenso. Para mostrar um tipo de nó oculto, selecione-o no menu suspenso. (Os nós não são excluídos da jornada quando você os oculta. Para obter informações sobre como excluir um nó, consulte [Excluir nós](#delete-nodes).)</p><p>Este campo pode conter tipos de nó Journey Optimizer ([!UICONTROL **Segmento de leitura**], [!UICONTROL **Fim**] e assim por diante) e tipos de nó de componente ([!UICONTROL **Dimension**], [!UICONTROL **Métrica**], [!UICONTROL **Filtro**] e [!UICONTROL **Intervalo de datas**]), como a seguir: </p><ul><li>**Somente os tipos de nó do Journey Optimizer serão exibidos** se a jornada for uma jornada do Journey Optimizer que não foi modificada na tela do Jornada com qualquer uma das seguintes modificações:<ul><li>Nós adicionados ou removidos</li><li>Setas adicionadas ou removidas</li><li>Alterados os componentes em um nó</li></ul></li><li>**Os tipos de nó do Journey Optimizer e os tipos de nó de componente serão mostrados** se a jornada for uma jornada do Journey Optimizer que foi modificada na tela do Jornada com qualquer uma das seguintes modificações:<ul><li>Nós adicionados ou removidos</li><li>Setas adicionadas ou removidas</li><li>Alterados os componentes em um nó</li></ul></li><li>**Somente tipos de nó de componente serão exibidos** se a jornada não for uma jornada do Journey Optimizer.</li></ul></p> |
-   | [!UICONTROL **Valor percentual**] | O valor percentual mostrado em cada nó da jornada. Essa porcentagem inclui apenas as pessoas incluídas na visualização de dados dentro do intervalo de datas do painel. <p>Escolha entre as seguintes opções:</p> <ul><li>[!UICONTROL **Percentual do nó inicial**]: a porcentagem de todas as pessoas que atendem aos critérios de um nó inicial na jornada. <p>Um _nó inicial_ é um nó que não tem nós conectados anteriores a ele.</p><p>Uma jornada pode conter vários nós iniciais. No entanto, [!UICONTROL **Percentual do total**] será usado se a jornada contiver 2 ou mais nós iniciais que levam a um nó comum. Se quiser usar [!UICONTROL **Percentual do nó inicial**], atualize a jornada para que cada nó na jornada possa ser rastreado até um único nó inicial.</p></li><li>[!UICONTROL **Percentual do nó anterior**]: a porcentagem de todas as pessoas do nó anterior.</li><li>[!UICONTROL **Percentual do total**]: a porcentagem de todas as pessoas incluídas na visualização de dados no intervalo de datas do painel.</li></ul> |
-   | [!UICONTROL **Configurações de seta**] | As setas que aparecem entre os nós na tela de Jornada podem ser configuradas para mostrar rótulos e valores personalizados. <p>_Rótulos_ são nomes personalizados que aparecem em setas. Somente um único rótulo é exibido em uma determinada seta. Os rótulos podem ser qualquer um dos seguintes e são mostrados nesta ordem de preferência:</p><ol><li>Um nome personalizado foi adicionado da tela de Jornada (conforme descrito em [Renomear um nó ou uma seta](#rename-a-node-or-arrow))</li><li>Um rótulo do Journey Optimizer</li><li>Uma condição do Journey Optimizer</li></ol><p>_Valores_ são os números e porcentagens que aparecem nas setas e indicam as pessoas ou sessões que passaram de um nó para outro na jornada. (Em outras palavras, aqueles que não caíram da jornada em uma determinada etapa.) </p><p>As seguintes opções estão disponíveis para jornadas que não se originaram do Journey Optimizer e para jornadas do Journey Optimizer que não foram modificadas significativamente na tela do Jornada: (Modificações significativas incluem adicionar ou remover nós, adicionar ou remover setas ou alterar os componentes de um nó.)</p><ul><li>[!UICONTROL **Nenhum rótulo**]: nenhum rótulo é mostrado nas setas da jornada. </br> Essa opção só estará disponível se a jornada tiver sido modificada em </li><li>[!UICONTROL **Somente rótulos**]: os rótulos são mostrados nas setas da jornada.</li></ul><p>As seguintes opções estão disponíveis para o Journey Optimizer jornada que foram significativamente modificadas na tela do Jornada: (Modificações significativas incluem adicionar ou remover nós, adicionar ou remover setas ou alterar os componentes de um nó.)(**Observação**: essas opções são exibidas somente quando os dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Nenhum rótulo ou valor**]: nenhum rótulo ou valor é mostrado nas setas da jornada.</li><li>[!UICONTROL **Somente rótulos**]: somente rótulos são exibidos nas setas da jornada. Os valores não são exibidos.</li><li>[!UICONTROL **Somente valores**]: somente valores são mostrados nas setas da jornada. Os rótulos não são exibidos.</li><li>[!UICONTROL **Valores e rótulos**]: ambos os rótulos e valores são mostrados nas setas da jornada.</li></ul> |
-   | [!UICONTROL **Mostrar fallout**] | Exibir dados de fallout de cada nó. Isso mostra o número e a porcentagem de pessoas que deixaram a jornada após um determinado nó. <p>As pessoas que abandonaram a jornada podem ter executado outras ações no site, mas nunca atenderam aos critérios definidos pelo próximo nó na jornada.</p> |
+   | [!UICONTROL **Valor percentual**] | O valor percentual mostrado em cada nó da jornada. <p>Considere o seguinte ao configurar os valores percentuais mostrados nos nós na jornada:</p><ul><li>Uma porcentagem é mostrada em cada nó para a métrica primária. Uma porcentagem também é mostrada para a métrica secundária, se uma estiver configurada. (Para obter mais informações sobre as configurações de métrica primária e secundária, consulte [Começar a criar uma visualização da tela de Jornada](#begin-building-a-journey-canvas-visualization).)</li><li>As porcentagens incluem todas as pessoas ou sessões incluídas na visualização de dados no intervalo de datas do painel. A utilização de _pessoas_ ou _sessões_ depende da configuração do contêiner. (Para obter mais informações sobre a configuração do contêiner, consulte [Começar a criar uma visualização da tela de Jornada](#begin-building-a-journey-canvas-visualization).)</li></ul> <p>Escolha entre as seguintes opções:</p> <ul><li>[!UICONTROL **Percentual do nó inicial**]: calcula as porcentagens exibidas em cada nó em relação ao nó inicial. As porcentagens se baseiam na métrica primária e secundária selecionada. <p>Um _nó inicial_ é um nó que não tem nós conectados anteriores a ele.</p><p>Uma jornada pode conter vários nós iniciais. No entanto, [!UICONTROL **Percentual do total**] será usado se a jornada contiver 2 ou mais nós iniciais que levam a um nó comum. Se quiser usar [!UICONTROL **Percentual do nó inicial**], atualize a jornada para que cada nó na jornada possa ser rastreado até um único nó inicial.</p></li><li>[!UICONTROL **Percentual do nó anterior**]: calcula as porcentagens exibidas em cada nó em relação ao nó anterior. As porcentagens se baseiam na métrica primária e secundária selecionada.</li><li>[!UICONTROL **Percentual do total**]: calcula as porcentagens exibidas em cada nó em relação a todos os dados na exibição de dados. As porcentagens se baseiam na métrica primária e secundária selecionada.</li></ul> |
+   | [!UICONTROL **Configurações de seta**] | As setas que aparecem entre os nós na tela de Jornada podem ser configuradas para mostrar rótulos e valores personalizados. <p>_Rótulos_ são nomes personalizados que aparecem em setas. Somente um único rótulo é exibido em uma determinada seta. Os rótulos podem ser qualquer um dos seguintes e são mostrados nesta ordem de preferência:</p><ol><li>Um nome personalizado foi adicionado da tela de Jornada (conforme descrito em [Adicionar ou atualizar um rótulo em uma seta](#add-or-update-a-label-on-an-arrow))</li><li>Um rótulo do Journey Optimizer</li><li>Uma condição do Journey Optimizer</li></ol><p>_Valores_ são os números e porcentagens que aparecem nas setas e indicam as pessoas ou sessões que passaram de um nó para outro na jornada. (Em outras palavras, aqueles que não caíram da jornada em uma determinada etapa.) </p><p>As seguintes opções estão disponíveis para jornadas que não se originaram do Journey Optimizer e para jornadas do Journey Optimizer que não foram modificadas significativamente na tela do Jornada: (Modificações significativas incluem adicionar ou remover nós, adicionar ou remover setas ou alterar os componentes de um nó.)</p><ul><li>[!UICONTROL **Nenhum rótulo**]: nenhum rótulo é mostrado nas setas da jornada. </br> Essa opção só estará disponível se a jornada tiver sido modificada em </li><li>[!UICONTROL **Somente rótulos**]: os rótulos são mostrados nas setas da jornada.</li></ul><p>As seguintes opções estão disponíveis para o Journey Optimizer jornada que foram significativamente modificadas na tela do Jornada: (Modificações significativas incluem adicionar ou remover nós, adicionar ou remover setas ou alterar os componentes de um nó.)(**Observação**: essas opções são exibidas somente quando os dados do Journey Optimizer são detectados na mesma visualização de dados selecionada no painel do Analysis Workspace ao qual você está adicionando a visualização. Para obter informações sobre como alterar a visualização de dados em um painel no Analysis Workspace, consulte [visão geral do Analysis Workspace](/help/analysis-workspace/home.md).)</p><ul><li>[!UICONTROL **Nenhum rótulo ou valor**]: nenhum rótulo ou valor é mostrado nas setas da jornada.</li><li>[!UICONTROL **Somente rótulos**]: somente rótulos são exibidos nas setas da jornada. Os valores não são exibidos.</li><li>[!UICONTROL **Somente valores**]: somente valores são mostrados nas setas da jornada. Os rótulos não são exibidos.</li><li>[!UICONTROL **Valores e rótulos**]: ambos os rótulos e valores são mostrados nas setas da jornada.</li></ul> |
+   | [!UICONTROL **Mostrar fallout**] | Os dados de fallout mostram uma porcentagem e um número que caem de cada nó da jornada. Os dados de fallout baseiam-se na métrica associada às configurações do contêiner da jornada; não se baseiam na métrica primária ou secundária.<p>Por padrão, o contêiner é _Pessoa_, portanto, a métrica usada para os dados de fallout é _Pessoas_. Se o contêiner for alterado para _Sessão_, a métrica usada para os dados de fallout será _Sessões_, e assim por diante.</p><p>Por exemplo, com _Pessoa_ como a configuração do contêiner, o fallout mostra a porcentagem e o número de pessoas em cada nó da jornada que nunca chegaram a nenhum dos próximos nós imediatos. Eles podem ter executado outras ações no site, mas não atendem aos critérios definidos por qualquer um dos nós que se seguem imediatamente.</p> <p>Para obter mais informações sobre a configuração do contêiner da tela de Jornada, consulte [Começar a criar uma visualização da tela de Jornada](#begin-building-a-journey-canvas-visualization). |
    | **Controles de zoom** | Os seguintes controles de zoom estão disponíveis no canto superior direito da tela:<ul><li>**Ícone de Ampliação** ![Ampliar](assets/zoom-in-icon.png): Amplia áreas específicas da visualização.<p>Também é possível usar os controles do mouse, como o pinçamento em um trackpad.</p></li><li>**Ícone de menos zoom** ![menos zoom](assets/zoom-out-icon.png): reduz a visualização para permitir mais espaço na tela.<p>Também é possível usar os controles do mouse, como o pinçamento em um trackpad.</p></li><li>**Ajustar tela** ![ícone de ajustar tela](assets/fill-screen-icon.png): ajusta as configurações atuais de zoom e panorâmica para preencher a tela com a visualização completa.</li></ul><p>Para deslocar-se pela tela de desenho depois de aumentar ou diminuir o zoom, clique com o mouse e arraste para o local desejado.</p> |
 
 1. Continuar com [Adicionar nós](#add-nodes).
@@ -96,7 +94,7 @@ Para definir as configurações da visualização da tela de Jornada:
 
 Os nós em uma visualização da tela de Jornada representam os eventos ou as ações de uma jornada do usuário.
 
-Você cria nós arrastando componentes do Workspace do painel esquerdo para a tela de desenho, permitindo que a tela de Jornada escolha os nós superiores anteriores ou seguintes com base nos nós existentes, ou duplicando nós existentes.
+Você cria nós das seguintes maneiras: arrastando componentes do Workspace do painel esquerdo para a tela; permitindo que a tela de Jornada escolha os nós principais anteriores ou seguintes com base em nós existentes; ou duplicando nós existentes.
 
 ### Arraste os componentes do painel esquerdo
 
@@ -138,6 +136,8 @@ Você cria nós arrastando componentes do Workspace do painel esquerdo para a te
    * Estatísticas de métrica primária (total e porcentagem)
 
    * Estatísticas de métrica secundária (total e porcentagem)
+
+   Um nó pulsante ou brilhante indica que os dados estão sendo carregados para esse nó.
 
 1. Repita esse processo para continuar adicionando nós para criar sua jornada.
 
@@ -241,7 +241,7 @@ Depois que os nós forem adicionados à tela, você poderá reorganizá-los, com
 
 As jornadas na tela de Jornada consistem em um gráfico flexível de nós e setas que representam qualquer combinação de eventos, itens de dimensão e filtros.
 
-Você pode arrastar nós na tela para reorganizar os eventos e as condições da jornada. Você pode selecionar vários nós mantendo a tecla Command (no Mac) ou Ctrl (no Windows) pressionada.
+Você pode arrastar nós na tela para reorganizar os eventos e as condições da jornada.
 
 À medida que você reorganiza a ordem dos nós na jornada, os dados são atualizados de acordo.
 
@@ -251,7 +251,7 @@ Um nó combinado na tela do Jornada é um único ponto na jornada do usuário (n
 
 #### Criar nós combinados
 
-Você pode executar qualquer um dos seguintes procedimentos para criar nós combinados na tela do Jornada:
+Você pode executar qualquer um dos seguintes procedimentos para combinar nós na tela de Jornada:
 
 * No painel à esquerda, arraste um único componente para um nó na tela.
 
@@ -306,7 +306,7 @@ O Jornada não pode ser circular, fazendo loopback para nós conectados anterior
 
 Para conectar nós na tela do Jornada:
 
-1. Na tela, passe o mouse sobre o nó que vem primeiro na sequência de jornadas que você deseja conectar a outro nó.
+1. Em uma visualização da tela de Jornada, passe o mouse sobre o nó que aparece primeiro na sequência de jornadas que você deseja conectar a outro nó.
 
    4 pontos azuis são exibidos em cada lado do nó selecionado.
 
@@ -334,7 +334,7 @@ A opção para adicionar uma restrição de tempo está disponível para os segu
 
 Para adicionar uma restrição de tempo:
 
-1. Clique com o botão direito do mouse na seta entre 2 nós e selecione [!UICONTROL **Adicionar restrição de tempo**].
+1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse na seta entre 2 nós e selecione [!UICONTROL **Adicionar restrição de tempo**].
 
 <!-- 
 
@@ -361,7 +361,7 @@ A opção para alterar a cor está disponível para os seguintes objetos na tela
 
 Para alterar a cor de um nó ou seta:
 
-1. Clique com o botão direito do mouse no nó ou na seta cuja cor você deseja alterar.
+1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse no nó ou na seta cuja cor você deseja alterar.
 
 1. Selecione [!UICONTROL **Alterar cor**]. <!--make sure "color" isn't capitalized. It is in the req doc-->
 
@@ -369,7 +369,7 @@ Para alterar a cor de um nó ou seta:
 
    As seguintes cores estão disponíveis: <!--look into this interaction and color list-->
 
-### Renomear um nó ou uma seta
+### Renomear um nó
 
 >[!AVAILABILITY]
 >
@@ -381,15 +381,45 @@ A opção para renomear está disponível para os seguintes objetos na tela:
 
 * Nós individuais
 
-* A seta entre os nós
-
 Para renomear um nó:
 
-1. Clique com o botão direito do mouse no nó que deseja renomear.
+1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse no nó que deseja renomear.
 
 1. Selecione [!UICONTROL **Renomear**].
 
 1. Especifique um novo nome e pressione Enter.<!--is that right?-->
+
+### Adição ou atualização de um rótulo em uma seta
+
+As setas que aparecem entre os nós na tela de Jornada podem ser configuradas para mostrar rótulos e valores personalizados.
+
+Rótulos são nomes personalizados que aparecem em setas. Somente um único rótulo é exibido em uma determinada seta.
+
+Para obter mais informações sobre os rótulos e valores que aparecem nas setas, consulte &quot;Configurações de seta&quot; em [Definir configurações de visualização](#configure-visualization-settings).
+
+A opção para adicionar ou atualizar um rótulo está disponível para os seguintes objetos na tela:
+
+* A seta entre os nós
+
+Para adicionar um rótulo a uma seta:
+
+1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse na seta à qual deseja adicionar um rótulo.
+
+1. Selecione **[!UICONTROL Adicionar rótulo]**.
+
+1. Especifique um nome para o rótulo e pressione Enter.
+
+   Se as configurações de seta estiverem configuradas para ocultar rótulos, uma mensagem será exibida solicitando que você mostre rótulos.
+
+Para atualizar um rótulo existente em uma seta:
+
+1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse na seta à qual deseja adicionar um rótulo.
+
+1. Selecione **[!UICONTROL Atualizar rótulo]**.
+
+1. Especifique um nome para o rótulo e pressione Enter.
+
+   Se as configurações de seta estiverem configuradas para ocultar rótulos, uma mensagem será exibida solicitando que você mostre rótulos.
 
 ### Aplicar um detalhamento
 
@@ -419,21 +449,25 @@ Considere o seguinte ao aplicar um detalhamento:
 >
 >Este recurso ainda não está disponível.
 
-1. Selecione um ou mais nós aos quais deseja aplicar um detalhamento e clique com o botão direito do mouse em um dos nós selecionados.
+1. Em uma visualização da tela de Jornada, selecione um ou mais nós aos quais deseja aplicar um detalhamento e clique com o botão direito do mouse em um dos nós selecionados.
 
    Ou
 
-   Selecione uma ou mais setas entre 2 nós nos quais deseja aplicar o detalhamento e clique com o botão direito do mouse em uma das setas selecionadas.
+   Em uma visualização da tela de Jornada, selecione uma ou mais setas entre 2 nós nos quais deseja aplicar o detalhamento e clique com o botão direito do mouse em uma das setas selecionadas.
 
 1. Selecione [!UICONTROL **Detalhamento**].
 
-<!-- 1. Choose where you want to view the breakdown:
+1. Escolha onde deseja exibir o detalhamento:
 
-        * [!UICONTROL **In Journey canvas**]
+   * [!UICONTROL **Na tela de Jornada**]
 
-        * [!UICONTROL **In a freeform table**]
+   * [!UICONTROL **Em uma tabela de forma livre**]
 
--->
+1. Selecione a dimensão que deseja usar para o detalhamento.
+
+   Se você optar por exibir o detalhamento na tela de Jornada, os 5 principais itens de dimensão serão mostrados no nó. Uma opção está disponível no nó para abrir o detalhamento em uma tabela de forma livre.
+
+   Se você optar por exibir o detalhamento em uma tabela de forma livre, os itens de dimensão principais serão mostrados em uma nova tabela de forma livre imediatamente acima da visualização da tela de Jornada.
 
 #### Aplicar um detalhamento a um nó individual
 
@@ -457,21 +491,17 @@ Ao criar um público-alvo a partir de vários nós ou setas, eles são unidos co
 
 Para criar um público-alvo:
 
-1. Selecione um ou mais nós nos quais deseja criar um público-alvo e clique com o botão direito do mouse em um dos nós selecionados.
+1. Em uma visualização da tela de Jornada, selecione um ou mais nós onde deseja criar um público-alvo e clique com o botão direito do mouse em um dos nós selecionados.
 
    Ou
 
-   Selecione uma ou mais setas entre 2 nós onde deseja criar um público-alvo e clique com o botão direito do mouse em uma das setas selecionadas.
+   Em uma visualização da tela de Jornada, selecione uma ou mais setas entre 2 nós onde deseja criar um público-alvo e clique com o botão direito do mouse em uma das setas selecionadas.
 
-1. Selecione [!UICONTROL **Criar audiência**].
+   >[!NOTE]
+   >
+   >Os públicos-alvo não podem incluir métricas calculadas ou qualquer métrica baseada em um [conjunto de dados de resumo](/help/data-views/summary-data.md). Se você tentar criar um público-alvo a partir de qualquer área da tela de Jornada que contenha uma métrica calculada ou uma métrica baseada em um conjunto de dados de resumo, a métrica calculada não será incluída na definição de público-alvo.
 
-<!-- 1. Choose where you want to create the audience:
-
-        * [!UICONTROL **In Journey canvas**]
-
-        * [!UICONTROL **In a freeform table**]
-
--->
+1. Selecione [!UICONTROL **Criar público-alvo do nó**] ou [!UICONTROL **Criar público-alvo a partir da seta**].
 
 1. Continue criando e publicando o público-alvo conforme descrito em [Criar e publicar públicos-alvo](/help/components/audiences/publish.md).
 
@@ -495,11 +525,11 @@ A opção de definir tendência está disponível para os seguintes objetos na t
 
 Para exibir dados de tendência:
 
-1. Selecione um ou mais nós para os quais deseja exibir dados de tendência e clique com o botão direito do mouse em um dos nós selecionados.
+1. Em uma visualização da tela de Jornada, selecione um ou mais nós para os quais deseja exibir dados de tendência e clique com o botão direito do mouse em um dos nós selecionados.
 
    Ou
 
-   Selecione uma ou mais setas entre dois nós para os quais deseja exibir dados de tendência e clique com o botão direito do mouse em uma das setas selecionadas.
+   Em uma visualização da tela de Jornada, selecione uma ou mais setas entre 2 nós para os quais deseja exibir dados de tendência e clique com o botão direito do mouse em uma das setas selecionadas.
 
 1. Selecione [!UICONTROL **Tendência**].
 
@@ -513,7 +543,7 @@ Se você criar um filtro com base em um nó que tenha vários caminhos fluindo p
 
 Para criar um filtro:
 
-1. Na tela de desenho, clique com o botão direito do mouse no nó ou na seta que deseja usar para criar o filtro.
+1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse no nó ou na seta que deseja usar para criar o filtro.
 
 1. Selecione [!UICONTROL **Criar filtro a partir do nó**] ou [!UICONTROL **Criar filtro a partir da seta**].
 
@@ -529,7 +559,7 @@ Para criar um filtro:
 
 Para excluir nós na tela de Jornada:
 
-1. Selecione um ou mais nós que deseja excluir e clique com o botão direito do mouse em um dos nós selecionados.
+1. Em uma visualização da tela de Jornada, selecione um ou mais nós que deseja excluir e clique com o botão direito do mouse em um dos nós selecionados.
 
 1. Clique em [!UICONTROL **Excluir**].
 
@@ -539,48 +569,14 @@ Para excluir nós na tela de Jornada:
 
 Para excluir setas entre nós na tela de Jornada:
 
-1. Selecione uma ou mais setas entre 2 nós que deseja excluir e clique com o botão direito do mouse em uma das setas selecionadas.
+1. Em uma visualização da tela de Jornada, selecione uma ou mais setas entre 2 nós que deseja excluir e clique com o botão direito do mouse em uma das setas selecionadas.
 
 1. Clique em [!UICONTROL **Excluir**].
 
-
-<!-- Delete this after I decide I don't want to do it this way. Will probably use sections like I hav above.
-
-### Manage existing nodes
-
-1. In Analysis Workspace, open an existing Journey canvas visualization, or [begin building a new one](#begin-building-a-journey-canvas-visualization).
-
-1. Right-click an **individual node** on the canvas, then select any of the following options:
-   
-   | Option | Function | 
-   |---------|----------|
-   | [!UICONTROL **Create segment**] | B1 |
-   | [!UICONTROL **Publish audience**] | B2 |
-   | [!UICONTROL **Trend**] | B3 | 
-   | [!UICONTROL **Breakdown**] | B2 |
-   | [!UICONTROL **Get top next ...**] | B2 |
-   | [!UICONTROL **Change color**] | B2 |
-   | [!UICONTROL **Rename**] | B2 |
-   | [!UICONTROL **Delete**] | B2 |
-
-1. Select **multiple nodes** on the canvas, right-click one of the selected nodes, then select any of the following options:
-
-   | Option | Function | 
-   |---------|----------|
-   | [!UICONTROL **Combine**] | B1 |
-   | [!UICONTROL **Delete**] | B2 |
-   | [!UICONTROL **Duplicate**] | B3 | 
-   | [!UICONTROL **Trend**] | B2 |
-   | [!UICONTROL **Breakdown**] | B2 |
-   | [!UICONTROL **Create segment**] | B2 |
-   | [!UICONTROL **Publish audience**] | B2 |
-
-   -->
-
-
 ## Abrir uma jornada do Journey Optimizer
 
+Ao visualizar uma jornada no Journey Optimizer, você pode optar por visualizá-la na tela do Jornada.
 
-No Journey Optimizer, abra a jornada que deseja analisar na tela do Jornada.
+1. No Journey Optimizer, abra a jornada que deseja analisar na tela do Jornada.
 
 1. Selecione [!UICONTROL **Analisar no CJA**]. <!-- ?? -->
