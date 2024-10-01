@@ -4,14 +4,24 @@ description: As tabelas de forma livre são a base para a análise de dados no W
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '761'
 ht-degree: 21%
 
 ---
 
-# Visão geral da tabela de forma livre
+# Visão geral da tabela de forma livre {#freeform-table-overview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_button"
+>title="Tabela de forma livre"
+>abstract="Crie uma visualização de tabela de forma livre vazia que você pode criar usando dimensões, segmentos, métricas e intervalos de datas. Você pode usar a tabela de forma livre como base para outras visualizações."
+
+<!-- markdownlint-enable MD034 -->
+
 
 No Analysis Workspace, uma visualização de ![Tabela](/help/assets/icons/Table.svg) **[!UICONTROL Tabela de forma livre]** é a base para a análise interativa de dados. Você pode arrastar e soltar uma combinação de [componentes](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) em linhas e colunas para criar uma tabela personalizada para sua análise. À medida que cada componente é solto, a tabela é atualizada imediatamente para que você possa analisar e pesquisar com mais detalhes rapidamente.
 

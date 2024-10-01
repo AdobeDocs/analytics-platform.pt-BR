@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '3507'
+source-wordcount: '3526'
 ht-degree: 97%
 
 ---
@@ -58,6 +58,16 @@ ht-degree: 97%
 >abstract="Defina a retenção de dados como uma janela contínua em meses no nível da conexão."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_averagenumberofdailyuses"
+>title="Número médio de usos diários"
+>abstract="Selecione um intervalo para o número de eventos diários esperados para toda a conexão."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 A experiência de criação e edição de conexão reúne todos os conjuntos de dados e configurações de conexão no centro da tela com um fluxo de trabalho auxiliar. Ele fornece uma experiência detalhada de seleção, configuração e revisão de conjunto de dados. Também é possível especificar informações vitais como o tipo de conjunto de dados, tamanho, esquema, ID do conjunto de dados, status do lote, status de preenchimento, IDs de pessoa e muito mais, para reduzir o risco de configuração incorreta da conexão. Esta é uma visão geral dos recursos:

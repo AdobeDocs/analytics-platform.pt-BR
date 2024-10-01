@@ -4,14 +4,24 @@ title: Criar projetos
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '412'
 ht-degree: 40%
 
 ---
 
-# Criar projetos
+# Criar projetos {#create-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_countrepeatinstances"
+>title="Contar instâncias repetidas"
+>abstract="Especifica se as instâncias repetidas devem ser contadas nos relatórios.<br/><br/>Observação: essa configuração não se aplica às visualizações de Fluxo ou Fallout."
+
+<!-- markdownlint-enable MD034 -->
+
 
 [Os projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md) no Analysis Workspace permitem que você crie e visualize análises comerciais críticas.  Essas análises podem ser compartilhadas com as partes interessadas dentro ou fora da organização.
 

@@ -4,14 +4,24 @@ title: Salvar projetos
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 18%
+source-wordcount: '851'
+ht-degree: 17%
 
 ---
 
-# Salvar projetos
+# Salvar projetos {#save-projects}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_project_addnotes"
+>title="Adicionar observações"
+>abstract="Adicione observações sobre a versão do projeto que está sendo salva. Essas notas serão armazenadas com a versão e poderão ser acessadas no menu **[!UICONTROL Projeto]** > **[!UICONTROL Abrir versão anterior]**."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Os projetos na Analysis Workspace são salvos automaticamente a cada 2 minutos. Você mesmo também pode salvar projetos, salvar um projeto como uma duplicata ou salvar um projeto com notas de versão.
 
