@@ -4,9 +4,9 @@ description: Como gerenciar anotações no Espaço de trabalho.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
+source-git-commit: 19d2130f4fae736a8553c1a3dd573706d4fb8083
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 6%
 
 ---
@@ -36,7 +36,7 @@ A ➊ Lista de anotações exibe todas as anotações que você possui, as anota
 | Coluna | Descrição |
 | --- | --- | 
 | ![EstruturaEstrela](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) uma anotação. |
-| **[!UICONTROL Título e descrição]** | Fornecidos no Construtor de anotações. Para editar o título e a descrição, selecione o link de título - abre o [Construtor de anotações](/help/components/annotations/create-annotations.md#annotation-builder). Uma anotação compartilhada é indicada com ![Compartilhamento](/help/assets/icons/Share.svg). |
+| **[!UICONTROL Título e descrição]** | Fornecidos no Construtor de anotações. Para editar o título e a descrição, selecione o link de título - abre o [Construtor de anotações](/help/components/annotations/create-annotations.md#annotation-builder). Uma anotação compartilhada é indicada com ![Compartilhamento](/help/assets/icons/ShareLight.svg). |
 | **[!UICONTROL Visualização de dados]** | As visualizações de dados às quais essa anotação se aplica. |
 | **[!UICONTROL Proprietário]** | O proprietário da anotação. Como usuário, você só verá as anotações que possui ou as anotações que são compartilhadas com você. |
 | **[!UICONTROL Intervalo de datas aplicado]** | A data ou o intervalo de datas ao qual essa anotação se aplica. |
@@ -57,7 +57,7 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 | ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** | Adicione outra anotação, usando o [Construtor de anotações](create-annotations.md#annotation-builder). |
 | ![Pesquisar](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar por título*] | Quando nenhuma anotação for selecionada na lista, pesquise por anotações usando esse campo de pesquisa. |
 | ![Rótulo](/help/assets/icons/Label.svg) **[!UICONTROL Marca]** | Marcar as anotações selecionadas. Na caixa de diálogo **[!UICONTROL Componente de Marca]**, selecione ou desmarque as marcas das anotações selecionadas. Selecione **[!UICONTROL Salvar]** para salvar as marcas das anotações selecionadas. |
-| ![Compartilhar](/help/assets/icons/Share.svg) **[!UICONTROL Compartilhar]** | Compartilhar as anotações selecionadas. Na caixa de diálogo **[!UICONTROL Compartilhar Componente]**, você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar pessoas físicas ou grupos* ou selecionar **[!UICONTROL Organização]** ou **[!UICONTROL Grupos]**. Selecione **[!UICONTROL Salvar]** para salvar os detalhes de compartilhamento das anotações selecionadas. Consulte [Compartilhar anotações](#share-annotations) para obter mais detalhes. |
+| ![Compartilhar](/help/assets/icons/ShareLight.svg) **[!UICONTROL Compartilhar]** | Compartilhar as anotações selecionadas. Na caixa de diálogo **[!UICONTROL Compartilhar Componente]**, você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar pessoas físicas ou grupos* ou selecionar **[!UICONTROL Organização]** ou **[!UICONTROL Grupos]**. Selecione **[!UICONTROL Salvar]** para salvar os detalhes de compartilhamento das anotações selecionadas. Consulte [Compartilhar anotações](#share-annotations) para obter mais detalhes. |
 | ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** | Excluir as anotações selecionadas. Será solicitada uma confirmação. |
 | ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Renomear]** | Renomear uma única anotação selecionada. Quando selecionada, você pode renomear a anotação em linha. |
 | ![Cópia](/help/assets/icons/Copy.svg) **[!UICONTROL Cópia]** | Copiar as anotações selecionadas. Novas anotações são criadas com o mesmo nome e sufixo (Copiar) |
@@ -69,7 +69,7 @@ O ➌ da barra de filtros mostra os filtros ativos (se houver). Você pode remov
 
 ### Painel Filtro
 
-Você pode filtrar anotações usando o ➍ do painel esquerdo ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]**. O painel de filtros exibe o tipo de filtro e o número de anotações que respeitam o filtro. Selecione ![Filtro](/help/assets/icons/Filter.svg) para alternar a exibição do painel de filtro.
+Você pode filtrar anotações usando o ➍ do painel esquerdo **[!UICONTROL Filtro]**. O painel de filtros exibe o tipo de filtro e o número de anotações que respeitam o filtro. Selecione ![Filtro](/help/assets/icons/Filter.svg) para alternar a exibição do painel de filtro.
 
 Para filtrar a lista de filtros:
 

@@ -4,9 +4,9 @@ description: Compartilhar, renomear ou excluir intervalos de datas no Analysis W
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 01f862997503cb36502145eddb47873bc7cb28fe
+source-git-commit: 19d2130f4fae736a8553c1a3dd573706d4fb8083
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '606'
 ht-degree: 9%
 
 ---
@@ -51,7 +51,7 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 | ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** | Adicione outro intervalo de datas, usando o [Construtor de intervalo de datas](create.md#date-range-builder). |
 | ![Pesquisar](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar por título*] | Quando nenhum intervalo de datas for selecionado na lista, procure intervalos de datas usando esse campo de pesquisa. |
 | ![Rótulo](/help/assets/icons/Label.svg) **[!UICONTROL Marca]** | Marcar os intervalos de datas selecionados. Na caixa de diálogo **[!UICONTROL Intervalo de datas da marca]**, selecione ou desmarque as marcas para os intervalos de datas selecionados. Selecione **[!UICONTROL Salvar]** para salvar as marcas para os intervalos de datas selecionados. |
-| ![Compartilhar](/help/assets/icons/Share.svg) **[!UICONTROL Compartilhar]** | Compartilhar os intervalos de datas selecionados. Na caixa de diálogo **[!UICONTROL Compartilhar Intervalo de datas]**, você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar pessoas físicas ou grupos* ou selecionar **[!UICONTROL Organização]** ou **[!UICONTROL Grupos]**. Selecione **[!UICONTROL Salvar]** para salvar os detalhes de compartilhamento dos intervalos de datas selecionados. |
+| ![Compartilhar](/help/assets/icons/ShareLight.svg) **[!UICONTROL Compartilhar]** | Compartilhar os intervalos de datas selecionados. Na caixa de diálogo **[!UICONTROL Compartilhar Intervalo de datas]**, você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar pessoas físicas ou grupos* ou selecionar **[!UICONTROL Organização]** ou **[!UICONTROL Grupos]**. Selecione **[!UICONTROL Salvar]** para salvar os detalhes de compartilhamento dos intervalos de datas selecionados. |
 | ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** | Exclua os intervalos de datas selecionados. Será solicitada uma confirmação. |
 | ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Renomear]** | Renomeie um único intervalo de datas selecionado. Quando selecionado, você pode renomear o intervalo de datas em linha. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Aprovar]** | Aprove os intervalos de datas selecionados. |
@@ -64,7 +64,7 @@ O ➌ da barra de filtros mostra os filtros ativos (se houver). Você pode remov
 
 ### Painel Filtro
 
-Você pode filtrar intervalos de datas usando a ➍ do painel esquerdo ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]**. O painel de filtro exibe o tipo de filtro e o número de intervalos de datas que respeitam o filtro. Selecione ![Filtro](/help/assets/icons/Filter.svg) para alternar a exibição do painel de filtro.
+Você pode filtrar intervalos de datas usando a ➍ do painel esquerdo **[!UICONTROL Filtro]**. O painel de filtro exibe o tipo de filtro e o número de intervalos de datas que respeitam o filtro. Selecione ![Filtro](/help/assets/icons/Filter.svg) para alternar a exibição do painel de filtro.
 
 Para filtrar a lista de filtros:
 
