@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 33%
@@ -75,7 +75,7 @@ Você pode gerenciar componentes (individualmente ou selecionando mais de um).
    | ![Estrela](/help/assets/icons/Star.svg) [!UICONTROL **Favorito**] | Adicione o componente à sua lista de favoritos. Como tags, você pode pesquisar por Favoritos no painel esquerdo e filtrar por eles nos gerenciadores de componentes. |
    | ![EstruturaEstrela](/help/assets/icons/StarOutline.svg) **[!UICONTROL Não-favorita]** | Remover o componente da lista de favoritos. |
    | ![Marca de seleção](/help/assets/icons/Checkmark.svg) [!UICONTROL **Aprovar**] | Marque os componentes como Aprovado para avisar aos usuários que o componente é aprovado pela organização. Como tags, você pode pesquisar e filtrar por Aprovado no painel esquerdo. Uma ![Marca de seleção](/help/assets/icons/Checkmark.svg) identifica componentes aprovados. |
-   | ![Compartilhar](/help/assets/icons/Share.svg) [!UICONTROL **Compartilhar**] | Compartilhe componentes com usuários em sua organização. Essa opção está disponível somente para componentes personalizados, como filtros ou métricas calculadas. |
+   | ![Compartilhar](/help/assets/icons/ShareLight.svg) [!UICONTROL **Compartilhar**] | Compartilhe componentes com usuários em sua organização. Essa opção está disponível somente para componentes personalizados, como filtros ou métricas calculadas. |
    | ![Excluir](/help/assets/icons/Delete.svg) [!UICONTROL **Excluir**] | Exclua componentes que não são mais necessários. Essa opção está disponível somente para componentes personalizados, como filtros ou métricas calculadas. |
 
 Os componentes personalizados também podem ser gerenciados por meio de seus respectivos Gerenciadores de componentes. Por exemplo, consulte [Gerenciar filtros](/help/components/filters/manage-filters.md).

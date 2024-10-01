@@ -5,7 +5,7 @@ title: Visão geral dos Projetos
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 6%
@@ -52,7 +52,7 @@ O ➋ da lista de projetos exibe todos os projetos que você possui e que foram 
 | --- | --- | 
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | Quando um ou mais projetos são selecionados, uma barra de ação azul é exibida na parte inferior da interface Projeto. Consulte [Ações](#actions) para obter mais detalhes. |
 | ![EstruturaEstrela](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um projeto. |
-| **[!UICONTROL Título e descrição]** | Para editar o projeto, selecione o link de título, que abrirá o [projeto do Workspace](/help/analysis-workspace/home.md). Projetos compartilhados com você são indicados com ![Compartilhar](/help/assets/icons/Share.svg). Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para exibir um menu pop-up com mais detalhes sobre o projeto. Selecione ![Mais](/help/assets/icons/More.svg) para abrir um menu de contexto com ações. Consulte [Ações](#actions) para obter mais detalhes. |
+| **[!UICONTROL Título e descrição]** | Para editar o projeto, selecione o link de título, que abrirá o [projeto do Workspace](/help/analysis-workspace/home.md). Projetos compartilhados com você são indicados com ![Compartilhar](/help/assets/icons/ShareLight.svg). Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para exibir um menu pop-up com mais detalhes sobre o projeto. Selecione ![Mais](/help/assets/icons/More.svg) para abrir um menu de contexto com ações. Consulte [Ações](#actions) para obter mais detalhes. |
 | **[!UICONTROL Tipo]** | Um projeto do Workspace, uma pasta ![FolderUser](/help/assets/icons/FolderUser.svg) ou um [Scorecard Móvel](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home). |
 | **[!UICONTROL Tags]** | As tags aplicadas ao projeto. |
 | Programado | Se um projeto está agendado para ser enviado por email para os recipients. As opções são ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** ou ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. Consulte [Enviar dados do projeto para outras pessoas](/help/analysis-workspace/export/t-schedule-report.md). |
@@ -82,7 +82,7 @@ Passe o mouse sobre qualquer cabeçalho de coluna para exibir ![Divisa para baix
 |---|---|
 | ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x *selecionado]** | Desmarque os projetos e as pastas selecionados e remova a barra de ação azul. |
 | ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** | Exclua um ou mais projetos ou pastas. Será solicitada uma confirmação. |
-| ![Compartilhar](/help/assets/icons/Share.svg) **[!UICONTROL Compartilhar]** | Compartilhar um projeto. Consulte [Compartilhar um projeto](/help/analysis-workspace/curate-share/share-projects.md) para obter mais informações. |
+| ![Compartilhar](/help/assets/icons/ShareLight.svg) **[!UICONTROL Compartilhar]** | Compartilhar um projeto. Consulte [Compartilhar um projeto](/help/analysis-workspace/curate-share/share-projects.md) para obter mais informações. |
 | ![Editar](/help/assets/icons/Edit.svg) Renomear | Renomeie um projeto. Abre uma **[!UICONTROL caixa de diálogo Renomear: *nome do projeto *]**. Digite um novo nome e selecione**[!UICONTROL Salvar ]**. |
 | ![Cópia](/help/assets/icons/Copy.svg) **[!UICONTROL Cópia]** | Copie um ou mais projetos. O projeto tem o mesmo nome e sufixo `(Copy)`. |
 | ![PinOnff](/help/assets/icons/PinOff.svg) **[!UICONTROL Pin]** ou **[!UICONTROL Unpin]** | Fixar ou desafixar um ou mais projetos ou pastas. Os projetos e pastas fixados aparecem na parte superior da lista e ignoram a ordem de classificação especificada. |

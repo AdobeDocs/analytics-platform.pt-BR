@@ -4,7 +4,7 @@ title: Compartilhar filtros
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: e07197325e992cd85b852899c2f7cef60637f532
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 10%
@@ -21,7 +21,7 @@ No [Gerenciador de filtros](manage-filters.md), você pode compartilhar filtros.
 Para compartilhar um ou mais filtros:
 
 1. No [Gerenciador de filtros](manage-filters.md), selecione um ou mais filtros que deseja compartilhar.
-1. Na barra de ações, selecione ![Compartilhar](/help/assets/icons/Share.svg) **[!UICONTROL Compartilhar]**.
+1. Na barra de ações, selecione ![Compartilhar](/help/assets/icons/ShareLight.svg) **[!UICONTROL Compartilhar]**.
 1. Na caixa de diálogo **[!UICONTROL Compartilhar Filtros]**:
 
    ![Caixa de diálogo Compartilhar Filtros](assets/share-filter-dialog.png)
