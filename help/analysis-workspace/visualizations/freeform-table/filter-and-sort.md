@@ -4,10 +4,10 @@ title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 0300422b50cf6312c9148bbe38cd43003eb73bb2
+source-git-commit: a9976a053021b2b0ac26daaad2cfe89f8af61a96
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 69%
+source-wordcount: '847'
+ht-degree: 42%
 
 ---
 
@@ -27,27 +27,25 @@ Os filtros do Analysis Workspace ajudam você a encontrar as informações mais 
 >
 > Somente itens de dimensão dinâmicos podem ser filtrados conforme descrito nesta seção. Itens de dimensão estáticos não podem ser filtrados. Para obter mais informações, consulte [Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 
-## Filtrar linhas da tabela de forma livre
+Você pode usar vários métodos para filtrar linhas de uma tabela de forma livre.
 
-Você pode usar vários métodos para filtrar linhas de uma tabela de forma livre. 
-
-- Clique no X na linha
-- Filtros de tabela
-- Segmentação
+- Excluir linhas específicas de uma tabela
+- Aplicar filtros a uma tabela
+- Usar filtros de público
 
 Leia como cada método afeta [os totais das tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
-### Excluir rapidamente linhas específicas de uma tabela
+### Excluir linhas específicas de uma tabela
 
-Você pode excluir rapidamente linhas específicas da tabela sem precisar abrir a caixa de diálogo Filtro.
+Você pode excluir rapidamente linhas específicas da tabela sem a necessidade de usar o ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]**.
 
 >[!NOTE]
 >
->Quando você exclui linhas conforme descrito nesta seção, uma regra [!UICONTROL **Sempre excluir itens**] é aplicada automaticamente na caixa de diálogo de filtro avançado. (Você pode exibir a regra aplicada selecionando o ícone Filtro e [**[!UICONTROL Mostrar avançado]**](#apply-a-simple-or-advanced-filter-to-a-table).)
+>Ao excluir linhas conforme descrito nesta seção, uma regra [!UICONTROL Sempre excluir itens] é adicionada automaticamente na caixa de diálogo de filtro [!UICONTROL Avançado]. Você pode exibir a regra aplicada selecionando o ícone Filtro ![Filtro](/help/assets/icons/Filter.svg) e Avançado [**[!UICONTROL Mostrar avançado]**](#apply-a-simple-or-advanced-filter-to-a-table).
 
-Para excluir rapidamente linhas específicas de uma tabela de forma livre:
+Para excluir linhas específicas de uma tabela de forma livre:
 
-1. Passe o mouse sobre a linha que deseja excluir e selecione o ícone x.
+1. Passe o mouse sobre a linha que deseja excluir e selecione ![Fechar](/help/assets/icons/Close.svg).
 
    Mantenha pressionada a tecla Shift para selecionar um intervalo de linhas, ou mantenha pressionada a tecla Command (no Mac) ou a tecla Ctrl (no Windows) para selecionar várias linhas.
 
@@ -67,49 +65,41 @@ Para filtrar dados em tabelas de forma livre:
 
 1. Passe o mouse sobre a coluna que contém os dados que você deseja filtrar. <!--only some types of columns show the filter... Which? Just Dimensions?-->
 
-1. Selecione o ícone **Filtro** quando for exibido.
+1. Selecione ![Filtro](/help/assets/icons/Filter.svg) **Filtro** quando ele aparecer.
 
    ![Tabela de forma livre destacando o ícone Filtro.](assets/table-filter-icon.png)
 
-   As opções disponíveis são as seguintes:
+   As seguintes opções estão disponíveis na caixa de diálogo **[!UICONTROL Pesquisar]**:
+
+   ![Filtro simples](assets/filter-simple.png){width="500"}
 
    | Opção | Função |
    |---------|----------|
+   | [!UICONTROL **Incluir &quot;Nenhum valor&quot;**] | Selecione esta opção para mostrar uma linha **[!UICONTROL Nenhum valor]** na tabela para dados que não têm valor para a dimensão selecionada. Desmarque esta opção para ocultar a linha **[!UICONTROL Nenhum valor]**. |
    | [!UICONTROL **Pesquisar palavra ou frase**] | Especifique uma palavra ou frase pela qual deseja filtrar. Somente as linhas que contêm a palavra ou a frase exata especificada são mostradas. |
-   | [!UICONTROL **Incluir não especificado (nenhum)**] | Selecione essa opção para mostrar dados na tabela que não se enquadram em nenhuma das dimensões da tabela. <!--what is this?--> |
+
 
 1. (Opcional) Para filtrar por critérios diferentes ou por vários critérios, selecione [!UICONTROL **Mostrar avançado**].
 
    As seguintes opções de filtro avançado estão disponíveis:
 
+   ![Filtro simples](assets/filter-advanced.png){width=500}
+
    | Opção | Função |
    |---------|----------|
-   | [!UICONTROL **Incluir não especificado (nenhum)**] | Selecione essa opção para mostrar dados na tabela que não se enquadram em nenhuma das dimensões da tabela. <!--what is this?--> |
-   | [!UICONTROL **Corresponder**] | <p>Selecione [!UICONTROL **Se todos os critérios forem atendidos**] para mostrar apenas os dados que atendem a todos os critérios especificados. Essa opção normalmente resulta em dados mais refinados.</p> <p>Selecione [!UICONTROL **Se algum critério for atendido**] para mostrar dados que atendem a qualquer um dos critérios de filtro especificados. Essa opção normalmente resulta em dados menos refinados.</p> |
-   | [!UICONTROL **Critérios**] | <p>Selecione dentre as seguintes opções de filtro:</p><p>(Selecione [!UICONTROL **Adicionar linha**] para adicionar vários critérios de filtro. A opção selecionada na seção [!UICONTROL **Corresponder**] determina se todos ou qualquer um dos critérios adicionados devem ser atendidos.)</p><ul><li><p>[!UICONTROL **Contém a frase**]: somente os dados que contêm a frase exata especificada são incluídos nos resultados filtrados. As palavras devem estar na ordem especificada no campo [!UICONTROL **Pesquisar palavra ou frase**].<p>Essa é a configuração padrão ao fazer uma pesquisa simples.</p></p></li><li><p>[!UICONTROL **Contém qualquer termo**]: somente os dados que contêm uma ou mais palavras da frase especificada são incluídos nos resultados filtrados. </p></li><li><p>[!UICONTROL **Contém todos os termos**]: somente os dados que contêm todas as palavras da frase especificada são incluídos nos resultados filtrados. As palavras não precisam estar na ordem especificada no campo [!UICONTROL **Pesquisar palavra ou frase**].</p></li><li><p>[!UICONTROL **Não contém nenhum termo**]: somente os dados que não contêm nenhuma das palavras da frase especificada são incluídos nos resultados filtrados. </p></li><li><p>[!UICONTROL **Não contém a frase**]: somente os dados que não contêm a frase exata especificada são incluídos nos resultados filtrados. As palavras devem estar na ordem especificada no campo [!UICONTROL **Pesquisar palavra ou frase**].</p></li><li><p>[!UICONTROL **Igual**]: somente os dados que correspondem exatamente à frase especificada são incluídos nos resultados filtrados. </p></li><li><p>[!UICONTROL **Não é igual**]: somente os dados que não correspondem exatamente à frase especificada são incluídos nos resultados filtrados. </p></li><li><p>[!UICONTROL **Começa com**]: somente os dados que começam com a palavra ou frase exata especificada são incluídos nos resultados filtrados. </p></li><li><p>[!UICONTROL **Termina com**]: somente os dados que terminam com a palavra ou frase exata especificada são incluídos nos resultados filtrados. </p></li></ul> |
+   | [!UICONTROL **Incluir &quot;Nenhum valor&quot;**] | Selecione esta opção para mostrar uma linha **[!UICONTROL Nenhum valor]** na tabela para dados que não têm valor para a dimensão selecionada. Desmarque esta opção para ocultar a linha **[!UICONTROL Nenhum valor]**. |
+   | [!UICONTROL **Corresponder**] | Selecione [!UICONTROL **Se todos os critérios forem atendidos**] para mostrar apenas os dados que atendem a todos os critérios especificados. Essa opção normalmente resulta em dados mais refinados.<br/><br/>Escolha [!UICONTROL **Se algum critério for atendido**] para mostrar dados que atendam a qualquer um dos critérios de filtro especificados. Essa opção normalmente resulta em dados menos refinados. |
+   | [!UICONTROL **Critérios**] | Selecione entre as seguintes opções de filtro:<br/><ul><li>[!UICONTROL **Contém a frase**] (padrão): somente os dados que contêm a frase exata especificada por você são incluídos nos resultados filtrados. As palavras devem estar na ordem especificada no campo [!UICONTROL **Pesquisar palavra ou frase**].</li><li>[!UICONTROL **Contém qualquer termo**]: somente os dados que contêm uma ou mais palavras da frase especificada são incluídos nos resultados filtrados. </li><li>[!UICONTROL **Contém todos os termos**]: somente os dados que contêm todas as palavras da frase especificada são incluídos nos resultados filtrados. As palavras não precisam estar na ordem especificada no campo [!UICONTROL **Pesquisar palavra ou frase**].</li><li>[!UICONTROL **Não contém nenhum termo**]: somente os dados que não contêm nenhuma das palavras da frase especificada são incluídos nos resultados filtrados. </li><li>[!UICONTROL **Não contém a frase**]: somente os dados que não contêm a frase exata especificada são incluídos nos resultados filtrados. As palavras devem estar na ordem especificada no campo [!UICONTROL **Pesquisar palavra ou frase**].</li><li>[!UICONTROL **Igual a**]: somente dados que correspondem exatamente à frase especificada são incluídos nos resultados filtrados. </li><li>[!UICONTROL **Não é igual**]: somente os dados que não correspondem exatamente à frase especificada são incluídos nos resultados filtrados. </li><li>[!UICONTROL **Começa com**]: somente os dados que começam com a palavra ou frase exata especificada são incluídos nos resultados filtrados. </li><li>[!UICONTROL **Termina com**]: somente os dados que terminam com a palavra ou frase exata especificada são incluídos nos resultados filtrados. </li></ul>Selecione ![Adicionar](/help/assets/icons/Add.svg) [!UICONTROL **Adicionar linha**] para adicionar vários critérios de filtro. A opção selecionada para [!UICONTROL **Corresponder**] determina **[!UICONTROL Se todos os critérios forem atendidos]** ou **[!UICONTROL Se algum critério for atendido]**. |
    | [!UICONTROL **Sempre excluir itens**] | Especifique o nome de qualquer item que deseja excluir dos dados filtrados. |
 
-1. Selecione [!UICONTROL **Aplicar**] para filtrar os dados.
+1. Selecione **[!UICONTROL Aplicar]** para filtrar os dados. Selecione **[!UICONTROL Limpar]** para limpar todas as entradas. Selecione **[!UICONTROL Cancelar]** para cancelar e fechar a caixa de diálogo. <br/>Um ícone colorido de ![Filtro](/help/assets/icons/FilterColored.svg) **Filtro** indica e exibe detalhes quando um filtro é aplicado à tabela.
 
-   O ícone de **Filtro** ![Ícone de filtro azul da tabela filtrada](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) fica azul quando um filtro é aplicado à tabela.
+### Usar filtros de público
 
-### Filtros
-
-Consulte nossa [Documentação de filtragem](/help/components/filters/filters-overview.md) para obter mais detalhes.
+Consulte [Visão geral dos filtros](/help/components/filters/filters-overview.md) para obter mais detalhes.
 
 ## Classificar tabelas
 
-Você pode classificar os dados de uma tabela de forma livre por qualquer coluna no Analysis Workspace que seja uma dimensão ou uma métrica.
+Você pode classificar os dados de uma tabela de forma livre por qualquer coluna no Analysis Workspace que seja uma dimensão ou uma métrica. Uma seta indica como os dados são classificados (**** para decrescente, ou **^** para crescente).
 
-Um ícone de seta para baixo ![Ícone de seta para baixo na tabela classificada por coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) é visível no cabeçalho da coluna pela qual os dados estão sendo classificados no momento.
-
-1. Em qualquer tabela de Forma livre no Analysis Workspace, clique na seta ao lado do nome da dimensão ou métrica.
-
-   Considere o seguinte ao classificar:
-
-   - A seta para baixo classifica em ordem decrescente e a seta para cima (padrão), em ordem crescente.
-   - É possível classificar dimensões em ordem alfabética ou numérica. Por exemplo, pode ser que você tenha etapas numeradas em um fluxo de trabalho e deseje classificar pelo número da etapa. É possível classificar uma dimensão por data. Ou você pode classificar as fontes de dados em ordem alfabética, como na imagem a seguir.
-
-   ![Exibição das Fontes de Dados destacando o ícone de classificação.](assets/sort-dimensions.png)
-
-
+![Classificação](assets/sorting.gif)

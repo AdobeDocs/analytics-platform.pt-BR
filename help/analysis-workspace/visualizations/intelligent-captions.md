@@ -1,12 +1,12 @@
 ---
-description: Use legendas inteligentes para gerar insights em linguagem natural e exibir tendências rapidamente nas visualizações.
+description: Use legendas inteligentes para gerar insights em linguagem natural e exibir tendências nas visualizações.
 title: Legendas inteligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 93b4426bc3e46540d3b4c9d6ae816a6d1f96f6ed
+source-git-commit: c65efad313df660467f5738d3fcbbb327060a502
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '630'
 ht-degree: 5%
 
 ---
@@ -22,13 +22,13 @@ As legendas inteligentes são voltadas para:
 
 ## Iniciar legendas inteligentes {#launch}
 
-Para iniciar legendas geradas automaticamente em uma visualização de linha, clique no ícone **[!UICONTROL Legendas inteligentes]** na parte superior direita da visualização.
+Para iniciar legendas geradas automaticamente para uma visualização de linha, selecione ![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL Legendas inteligentes]** na parte superior direita da visualização.
 
 ![Janela Análise do Launch mostrando as legendas inteligentes para a tendência de Exibições de produtos. ](assets/intell-caps-1.png)
 
 Os insights de linguagem natural estão sendo gerados agora.
 
-Lembre-se
+Lembre-se:
 
 * Você precisa de no mínimo 3 pontos de dados para gerar legendas com êxito. Caso contrário, você poderá receber um erro como **[!UICONTROL Dados insuficientes para analisar]**.
 

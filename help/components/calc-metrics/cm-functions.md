@@ -4,16 +4,17 @@ description: O Criador de métricas calculadas permite aplicar funções matemá
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1071'
+ht-degree: 97%
 
 ---
 
 # Referência - funções básicas
 
-O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas.
+
+O [Construtor de métricas calculadas](cm-workflow/cm-build-metrics.md) permite aplicar funções matemáticas e estatísticas.
 
 Veja uma lista em ordem alfabética das funções e suas definições.
 
@@ -21,9 +22,12 @@ Veja uma lista em ordem alfabética das funções e suas definições.
 >
 >Sempre que [!DNL metric] for definida como um argumento em uma função, outras expressões de métricas também serão permitidas. Por exemplo, [!DNL MAXV(metrics)] também permite [!DNL MAXV(PageViews + Visits).]
 
+
 ## Funções de tabela versus Funções de linha
 
 Uma função de tabela exibe um resultado igual para cada linha da tabela. Uma função de linha exibe um resultado diferente para cada linha da tabela.
+
+
 
 ## Valor absoluto (Linha)
 
@@ -101,9 +105,9 @@ EXP(metric)
 
 Operador de potência
 
-<pre>
-pow(x,y) = x<sup>y</sup> = x*x*x*... (y vezes)
-</pre>
+
+pow(x,y) = x<sup>y</sup> = x *x* x*... (y vezes)
+
 
 ## Média (Tabela)
 
@@ -313,7 +317,7 @@ Para calcular uma variação, considere uma coluna inteira de números. Nessa li
 
 Quando você iterar na coluna inteira, terá um total único. Depois, divida o total pelo número de itens na coluna. Esse número é a variação da coluna. É um número único. No entanto, é exibido como uma coluna de números.
 
-Por exemplo, digamos que você tenha uma coluna de três itens:
+No caso de uma coluna de três itens:
 
 1
 

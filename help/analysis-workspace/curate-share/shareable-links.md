@@ -5,16 +5,16 @@ title: Criar links compartilháveis
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 79%
+source-wordcount: '381'
+ht-degree: 67%
 
 ---
 
 # Criar links compartilháveis
 
-O Analysis Workspace oferece várias maneiras de compartilhar um projeto com seus usuários, incluindo a capacidade de obter um link para um projeto ou uma parte específica de um projeto. Alguns tipos de link exigem que o destinatário faça logon no Adobe Analytics antes de acessar o projeto, enquanto outros não.
+O Analysis Workspace oferece várias maneiras de compartilhar um projeto com seus usuários, incluindo a capacidade de obter um link para um projeto ou uma parte específica de um projeto. Alguns tipos de link exigem que o recipient faça logon no Customer Journey Analytics antes de acessar o projeto, enquanto outros não.
 
 ## Obter um link do projeto para compartilhar com outros usuários do Workspace {#project-link}
 
@@ -32,8 +32,8 @@ Para obter mais informações, consulte “Compartilhar um projeto com qualquer 
 
 Você também pode compartilhar um link para uma parte específica de um projeto, como um painel ou uma visualização individual. Às vezes, esse compartilhamento é chamado de intravinculação. Ele pode ser útil para chamar a atenção dos usuários para os principais insights do projeto.
 
-* Em qualquer cabeçalho do painel, clique com o botão direito do mouse no link **[!UICONTROL Obter painel]**
-* Em qualquer tabela ou cabeçalho de visualização, clique com o botão direito do mouse em **[!UICONTROL Obter link de visualização]**
+* No menu de contexto de um cabeçalho do painel, selecione **[!UICONTROL Obter link do painel]**
+* No menu de contexto de um cabeçalho de visualização, selecione **[!UICONTROL Obter link de visualização]**
 
 [Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=pt-BR) sobre como criar links e usá-los para direcionar recipients para partes específicas do seu projeto.
 

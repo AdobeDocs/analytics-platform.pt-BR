@@ -3,22 +3,20 @@ description: Saiba como os alertas diferem do Adobe Analytics no Customer Journe
 title: Customer Journey Analytics de comparação de recursos de alertas e Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 5%
 
 ---
 
-# Comparação de recursos de alertas: Customer Journey Analytics e Adobe Analytics
+# Comparação de recursos de alertas
 
-O processo de usar alertas no Customer Journey Analytics é quase idêntico ao uso de alertas no Adobe Analytics. No entanto, existem diferenças importantes.
-
-As seções a seguir descrevem as principais diferenças.
+O processo de uso de alertas no Customer Journey Analytics é quase idêntico ao uso de alertas no Adobe Analytics. No entanto, existem diferenças importantes. As seções a seguir descrevem as principais diferenças.
 
 ## Os alertas por hora não estão disponíveis no Customer Journey Analytics
 
-Os alertas por hora não estão disponíveis no Customer Journey Analytics como no Adobe Analytics. No Customer Journey Analytics, os alertas podem ser configurados para diariamente, semanalmente ou mensalmente.
+Os alertas por hora não estão disponíveis no Customer Journey Analytics como no Adobe Analytics. No Customer Journey Analytics, os alertas podem ser configurados com frequência diária, semanal ou mensal.
 
 Isso se deve às várias maneiras pelas quais os dados podem ser assimilados no Adobe Experience Platform, antes de serem relatados no Customer Journey Analytics. A integridade e a disponibilidade dos dados não podem ser obtidas de forma confiável em uma hora, tornando os alertas por hora impraticáveis devido ao alto potencial para dados incompletos. Para obter mais informações, consulte [Os tempos de assimilação de dados variam](#data-ingestion-times-vary-in-customer-journey-analytics).
 

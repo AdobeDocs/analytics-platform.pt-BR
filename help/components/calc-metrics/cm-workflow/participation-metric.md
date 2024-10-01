@@ -1,41 +1,38 @@
 ---
-description: Com o Criador de métricas calculadas, qualquer um pode criar uma métrica de participação.
+description: Com o Criador de métrica calculada, qualquer pessoa pode criar uma métrica de participação.
 title: Métrica de participação
 feature: Calculated Metrics
 exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '220'
+ht-degree: 0%
 
 ---
 
-# Criar uma métrica de participação
+# Métricas de participação
 
-Este artigo explica como criar uma métrica de participação. Uma métrica de participação mostra como os valores individuais de uma dimensão (como Exibições de página, Canal de marketing) contribuem para ou participam de sessões que contêm uma métrica específica (por exemplo, Pedidos).
-
-Esse tipo de informação pode ser útil para qualquer proprietário de conteúdo.
+As Métricas de participação são usadas para quantificar como os valores individuais de uma dimensão (como Exibições de página) contribuem ou participam de sessões que contêm uma métrica específica (como Pedidos).
 
 >[!NOTE]
 >
->Métricas com outros modelos de atribuição, como Participação, também podem ser criadas por administradores como parte de uma [visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=pt-BR). Consulte [Configurações do componente de atribuição](../../../data-views/component-settings/attribution.md) para obter mais detalhes.<br/>O exemplo abaixo mostra como uma métrica de participação pode ser criada por qualquer usuário com acesso ao construtor de métricas calculadas no Workspace.
+>Os administradores podem criar métricas com modelos de atribuição não padrão, como Participação, como parte de uma [visualização de dados](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views). Consulte [Configurações do componente de atribuição](../../../data-views/component-settings/attribution.md) para obter mais detalhes.
 
+As etapas abaixo mostram como qualquer usuário com [Permissão de criação de métrica calculada](/help/technotes//access-control.md#user-level-access) pode criar uma métrica de participação.
 
-1. Comece a criar uma métrica, conforme descrito em [Criar métricas](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
-1. No Criador de métricas calculadas, nomeie a métrica `Participation` ou algo semelhante.
-1. Arraste uma métrica contendo um evento bem-sucedido, por exemplo [!DNL Orders], para a tela [!UICONTROL Definição].
+1. [Crie uma métrica calculada](cm-workflow.md) e, no [Construtor de métricas calculadas](cm-build-metrics.md), nomeie a métrica `Participation` ou algo semelhante.
+1. Arraste uma métrica contendo um evento bem-sucedido, por exemplo [!DNL Orders], para a área [!UICONTROL **[!UICONTROL Definição]**].
 1. Selecione ![engrenagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) para a métrica.
 1. Na janela pop-up exibida, selecione **[!UICONTROL Usar um modelo de atribuição não padrão]** para definir o [modelo de atribuição](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) desse evento para **[!UICONTROL Participação]** e selecione **[!UICONTROL Sessão]** para a [!UICONTROL Janela de pesquisa]. Selecione **[!UICONTROL Aplicar]** para confirmar.
 
-   Na caixa Definição, a métrica selecionada é atualizada ao anexar **(Partipation|Session)** ao seu nome.
 
    ![Pop-up de modelo de atribuição de coluna mostrando a Participação selecionada como o modelo e a Sessão selecionada para a janela de pesquisa.](assets/participation-setup.png)
+
+   **(Partipation|Session)** é adicionado ao nome do componente de métrica.
 
 
 
 1. Selecione [!UICONTROL **Salvar**] para salvar a métrica.
-1. Use a métrica calculada em seu relatório. Por exemplo, use a métrica [!DNL Orders (Session Participation)] calculada (conforme definido na etapa 5) em um relatório para mostrar qual Camada do cliente contribuiu para (ou participou de) sessões que continham um pedido.
+1. Use a métrica calculada em seu relatório. Por exemplo, use a métrica [!DNL Orders (Session Participation)] calculada em um relatório para mostrar qual Camada de cliente contribuiu para (ou participou de) sessões que continham um pedido.
 
    ![Tabela de forma livre mostrando a camada e os pedidos do cliente.](assets/participation-pages-customer-tier.png)
-
-1. (Opcional) Compartilhe a métrica com outros usuários em sua organização, conforme descrito em [Compartilhar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-sharing.md).

@@ -4,29 +4,26 @@ title: Aprovar filtros
 feature: Filters
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 71%
+source-wordcount: '131'
+ht-degree: 3%
 
 ---
 
-# Aprovar filtros {#approve}
+# Aprovar filtros
 
-No Gerenciador de filtros você pode configurar um fluxo de trabalho que inclui a aprovação de filtros para vários níveis do aplicativo, para departamentos ou grupos específicos, e que seja consistente com políticas de relatórios.
+No [Gerenciador de filtros](manage-filters.md), você pode aprovar e cancelar a aprovação de filtros. Somente administradores podem aprovar filtros.
 
-Esta é a forma de marcar um filtro como aprovado:
+Para aprovar filtros:
 
-1. No Gerenciador de filtros, marque a caixa de seleção à esquerda do título do Filtro.
+1. No [Gerenciador de filtros](manage-filters.md), selecione um ou mais filtros que deseja aprovar.
+1. Na barra de ações, selecione ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]**. Os filtros aprovados são indicados com ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)
 
-1. Clique em **[!UICONTROL Aprovar]** na barra de tarefas do gerenciador de filtros.
+Para cancelar a aprovação de filtros:
 
-1. Considere compartilhar os filtros aprovados com a sua organização.
+1. No [Gerenciador de filtros](manage-filters.md), selecione um ou mais filtros que deseja cancelar a aprovação.
+1. Na barra de ações, selecione ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]**.
 
-1. Clique em **[!UICONTROL OK]**.
 
-   Observe o ícone de aprovação ao lado do filtro na lista:
-
-   ![O Gerenciador de Filtros está mostrando que os Pedidos maiores que 100 estão aprovados para compartilhamento.](assets/seg_approved.png)
-
-1. Também é possível cancelar a aprovação de um filtro aprovado clicando em **[!UICONTROL Cancelar aprovação]**.
+Você pode filtrar sua lista de filtros por filtros aprovados. Selecione **[!UICONTROL Outros filtros]** no painel ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]** e selecione **[!UICONTROL Aprovado]**. Consulte [Filtrar a lista de filtros](/help/components/filters/filters-filter.md) para obter mais informações.

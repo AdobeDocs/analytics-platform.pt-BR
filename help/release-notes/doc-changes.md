@@ -4,9 +4,9 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
+source-git-commit: d0dbdcb6fa1402bce73584d1dd9165c1b3f00b33
 workflow-type: tm+mt
-source-wordcount: '4065'
+source-wordcount: '4064'
 ht-degree: 71%
 
 ---
@@ -43,7 +43,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Documentação sobre a adição de componentes a projetos | Adição de informações gerais sobre como [adicionar os vários tipos de componente a projetos no Analysis Workspace](/help/components/use-components-in-workspace.md). |
 | Casos de uso da exportação de dados | Conjunto de novos artigos que descreve [casos de uso de exportação de dados](/help/use-cases/data-export/overview.md) e como usar as funcionalidades de Experience Platform e Customer Journey Analytics para implementar esses casos de uso |
 | Nova documentação para atualização do Adobe Analytics para o Customer Journey Analytics | Para organizações que estão atualizando do Adobe Analytics para o Customer Journey Analytics, há várias opções de atualização e várias considerações a serem levadas em conta com base na implementação atual do Adobe Analytics em uma organização e nas metas de longo prazo.<p>Novos recursos de documentação agora estão disponíveis para ajudar você a entender melhor:</p><ul><li>Os vários caminhos de atualização existentes</li><li>Quais caminhos de atualização estão disponíveis com base na implementação atual do Adobe Analytics de uma organização</li><li>As vantagens e desvantagens de cada caminho de atualização</li><li>Orientação passo a passo para cada caminho de atualização</li><li>Considerações para manuseio de dados históricos</li><li>E muito mais.</li></ul><p>[Introdução à atualização para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
-| Atualização da documentação sobre intervalos de datas personalizados | Capturas de tela e procedimentos atualizados relacionados à [criação de intervalos de datas personalizados](/help/components/date-ranges/custom-date-ranges.md) para corresponder aos recursos e ao design atuais do produto. |
+| Atualização da documentação sobre intervalos de datas personalizados | Atualização de capturas de tela e procedimentos relacionados a [intervalos de datas de exemplo](/help/components/date-ranges/custom-date-ranges.md) para corresponder aos recursos e ao design atuais do produto. |
 | Informações gerais sobre o Dimension | Adição de informações sobre [dimensões](/help/components/dimensions/overview.md). |
 | Exemplos de conectores de origem | Adição de exemplos de conectores de origem disponíveis ao descrever como [usar um conector de origem](/help/data-ingestion/sources.md#use-a-source-connector) para assimilar dados. |
 | **Abril de 2024** | |
@@ -141,7 +141,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Comparar soluções do Customer Journey Analytics às soluções de BI | Novo documento que apresenta uma [comparação](../getting-started/cja-vs-bi.md) do Customer Journey Analytics com soluções típicas de BI. |
 | Atualização da documentação do Audiences | Nova seção sobre [considerações de latência](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html#latency). |
 | Atualização da documentação do Audiences | Depois de criar um público-alvo, a Adobe cria um [segmento de transmissão da Experience Platform para cada novo público-alvo do Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/publish.html?lang=pt-BR#after-audience-created). |
-| Calendários e intervalos de datas do Espaço de trabalho | Conteúdo atualizado para descrever intervalos de datas relativas, atualizações de cálculo de fórmulas e alterações na interface do calendário. Consulte [Sobre intervalos de datas relativas do painel](/help/components/date-ranges/calendar.md#relative-panel-dates). |
+| Calendários e intervalos de datas do Espaço de trabalho | Conteúdo atualizado para descrever intervalos de datas relativas, atualizações de cálculo de fórmulas e alterações na interface do calendário. Consulte [Sobre intervalos de datas relativas do painel](/help/components/date-ranges/overview.md#custom-date-ranges). |
 | Cartões de pontuação para dispositivos móveis | Nova seção de documentação para descrever como mostrar e ocultar intervalos de datas de comparação. Consulte [Mostrar intervalos de datas de comparação](/help/mobile-app/create-scorecard.md#show-comparison-dates) no Customer Journey Analytics. |
 | **Janeiro de 2023** | |
 | Filtrar e classificar tabelas | Conteúdo atualizado (incluindo a adição de procedimentos e a explicação das opções disponíveis) no artigo [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). Anteriormente, o nome desse artigo era “Paginação, filtragem e classificação de tabelas”. |

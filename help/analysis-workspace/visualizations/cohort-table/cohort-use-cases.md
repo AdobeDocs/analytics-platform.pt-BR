@@ -5,16 +5,16 @@ title: Casos de uso da análise de coorte
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388042e24a7b9d33ac88e05a68689308e6258339
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 97%
+source-wordcount: '973'
+ht-degree: 52%
 
 ---
 
-# Casos de uso da [!UICONTROL análise de coorte]
+# [!UICONTROL Casos de uso da análise de coorte]
 
-Exemplos de casos de uso da [!UICONTROL análise de coorte].
+Este artigo descreve alguns exemplos de casos de uso da [!UICONTROL Análise de coorte].
 
 ## Caso de uso sobre interação com o aplicativo
 
@@ -28,7 +28,7 @@ Você pode criar uma [!UICONTROL análise de coorte] de seis meses:
 
 **Métrica de retorno**: sessões ou inicializações
 
-Os visitantes não contam como *`engaged`* nos meses seguintes, a menos que tenham uma sessão ou, pelo menos, inicializem o aplicativo. A [!UICONTROL análise de coorte] mostraria padrões de uso em que sempre *`App Install`* ocorre no Mês 0. Você pode notar que o uso diminui no Mês 2, independentemente de quando os usuários instalaram o aplicativo. (Para os usuários que instalaram o aplicativo em janeiro de 2015, o Mês 2 é março de 2015. Para aqueles que instalaram o aplicativo em fevereiro de 2015, o Mês 2 é abril de 2015 e, assim por diante.) Essa análise permite que você envie um email ou uma mensagem automática para todos os usuários durante o segundo mês após a instalação para lembrá-los de usar o aplicativo.
+As pessoas não contam como *engajadas* nos meses seguintes, a menos que tenham uma sessão ou, pelo menos, inicializem o aplicativo. A [!UICONTROL Análise de coorte] mostraria padrões de uso em que a *Instalação do aplicativo* sempre ocorre no Mês 0. Você pode notar que o uso diminui no Mês 2, independentemente de quando os usuários instalaram o aplicativo. (Para os usuários que instalaram o aplicativo em janeiro de 2015, o Mês 2 é março de 2015. Para as pessoas que instalaram o aplicativo em fevereiro de 2015, o Mês 2 é abril de 2015 e assim por diante.) Essa análise permite enviar um email ou uma mensagem por push a todos os usuários durante o segundo mês após a instalação do aplicativo, para lembrá-los de usar o aplicativo.
 
 ## Caso de uso de assinatura
 
@@ -40,23 +40,23 @@ Você trabalha na Adobe.com e oferece uma assinatura gratuita da Creative Cloud.
 
 **Métrica de retorno**: compra paga da Creative Cloud
 
-Com essa [!UICONTROL análise de coorte], você pode observar, por exemplo, que entre 8% e 10% dos usuários gratuitos da Creative Cloud atualizam no primeiro mês após a instalação, independentemente de quando ela foi feita. De 12 a 15% atualizam no segundo mês de uso. Depois disso, a atualização diminui significativamente: de 4 a 5% no terceiro mês, de 3 a 4% no quatro mês e de 1 a 2% no quinto mês.
+Com a [!UICONTROL Análise de coorte], você pode observar, por exemplo, que entre 8% e 10% dos usuários de Creative Cloud livre atualizam no primeiro mês após a instalação. Independentemente de quando os usuários instalaram o. De 12 a 15% atualizam no segundo mês de uso. Depois disso, a atualização diminui significativamente: de 4 a 5% no terceiro mês, de 3 a 4% no quatro mês e de 1 a 2% no quinto mês.
 
-Ao reconhecer que não pode perder os possíveis clientes em três meses, você configura uma campanha de email projetada para ser enviada no meio do terceiro mês para uma amostra de clientes, oferecendo um cupom de US$ 50 aos usuários que ainda não fizeram a atualização.
+Você não deseja perder clientes em potencial no terceiro mês. Assim, você configurou uma campanha de email projetada para sair no meio do terceiro mês para uma amostra de usuários. Oferecer um cupom de US$ 50 para usuários que ainda não atualizaram.
 
-Verifique novamente o seu relatório de análise de coorte alguns meses depois. Para os grupos formados após o lançamento da campanha, a conversão para assinaturas pagas da Creative Cloud no terceiro mês subiu de 4-5% para 13-14%, resultando em centenas de milhares de dólares por coorte, para cada coorte mensal que atingir três meses a partir desse ponto em diante.
+Verifique com seus relatórios de análise de coorte alguns meses depois. Para os coortes formados após o lançamento da campanha, a conversão para assinaturas de Creative Cloud pagas no terceiro mês aumentou de 4-5% para 13-14%. Esse aumento na conversão resulta em centenas de milhares de dólares por coorte para cada coorte mensal que chega ao terceiro mês a partir desse ponto.
 
 ## Caso de uso de filtros de coorte complexos
 
-Uma grande cadeia de hotéis tem como alvo vários grupos de clientes para promoções e os monitora em relação ao desempenho. Para identificar os melhores grupos de coortes de usuário para fins de direcionamento, deve-se criar grupos de coorte muito específicos. Usando os critérios aumentados de [!UICONTROL Inclusão] e [!UICONTROL Retorno] em Tabelas de [!UICONTROL coorte], é possível definir os grupos de coorte ideais com várias métricas e filtros para identificar grupos de clientes com baixo desempenho e assim direcionar a tais grupos promoções e ofertas para aumentar a taxa de reservas.
+Uma grande cadeia de hotéis tem como alvo vários grupos de clientes para promoções e os monitora em relação ao desempenho. Para identificar os melhores grupos de coortes de usuários a serem direcionados, é necessário criar grupos de coorte muito específicos. Usando os critérios aumentados de [!UICONTROL Inclusão] e [!UICONTROL Retorno] nas Tabelas de [!UICONTROL Coorte], a cadeia de hotéis pode definir os grupos de coorte ideais com várias métricas e filtros. Assim, a cadeia de hotéis pode identificar grupos de clientes com baixo desempenho para direcionar clientes com promoções e ofertas para aumentar as reservas.
 
 ## Caso de uso de preferência de versão do aplicativo
 
-Uma grande empresa de seguros impulsiona muito engajamento de cliente por meio de seu aplicativo para dispositivos móveis. Entretanto, conforme novos recursos são adicionados ao aplicativo, é de enorme importância que os clientes atualizem para a versão mais recente. É possível analisar e comparar todas as versões do aplicativo lado a lado usando o Coorte de [!UICONTROL dimensão personalizado] para ver quais clientes e suas respectivas versões do aplicativo para direcionar. Além disso, pode-se monitorar a retenção e o churn para ver se versões específicas do aplicativo estão causando a interrupção do uso do aplicativo ao longo do tempo. Por meio de mensagens em dispositivos móveis, a empresa pode voltar a engajar esses clientes para que atualizem para a versão mais recente e aproveitem os últimos recursos.
+Uma grande empresa de seguros promove o engajamento do cliente por meio do uso de seu aplicativo móvel. Entretanto, conforme novos recursos são adicionados ao aplicativo, é de enorme importância que os clientes atualizem para a versão mais recente. É possível analisar e comparar todas as versões do aplicativo lado a lado usando o Coorte de [!UICONTROL dimensão personalizado] para ver quais clientes e suas respectivas versões do aplicativo para direcionar. Além disso, pode-se monitorar a retenção e o churn para ver se versões específicas do aplicativo estão causando a interrupção do uso do aplicativo ao longo do tempo. Por meio de mensagens em dispositivos móveis, a empresa pode voltar a engajar esses clientes para que atualizem para a versão mais recente e aproveitem os últimos recursos.
 
 ## Caso de uso de adesão de campanha
 
-Uma empresa de mídia multinacional usa campanhas direcionadas para direcionar usuários a suas várias plataformas para gerar engajamento. O gasto com anúncios por plataforma baseia-se no engajamento e na retenção do cliente. Portanto, campanhas bem-sucedidas são essenciais para o sucesso dos negócios. A empresa usa nosso novo recurso [!UICONTROL Coorte de dimensão] personalizado em Tabelas de [!UICONTROL coorte] para comparar várias campanhas lado a lado, para identificar quais campanhas são mais eficazes para conquistar e reter usuários para aumentar o engajamento. Podem identificar quais aspectos tornam uma campanha bem-sucedida e aplicá-los a outras campanhas para aumentar o engajamento nas várias plataformas.
+Uma empresa de mídia multinacional usa campanhas direcionadas para direcionar usuários a suas várias plataformas para gerar engajamento. O gasto com anúncios por plataforma baseia-se no engajamento e na retenção do cliente. Portanto, campanhas bem-sucedidas são essenciais para o sucesso dos negócios. Eles usam o novo recurso de Coorte [!UICONTROL Dimension personalizado] nas Tabelas [!UICONTROL Coorte] para comparar várias campanhas lado a lado, para identificar quais campanhas são mais eficazes para conquistar e reter usuários para aumentar o engajamento. Podem identificar quais aspectos tornam uma campanha bem-sucedida e aplicá-los a outras campanhas para aumentar o engajamento nas várias plataformas.
 
 ## Caso de uso de lançamento de produto
 
@@ -64,4 +64,4 @@ Uma grande varejista de vestuário tem muitos filtros de clientes específicos q
 
 ## Caso de uso de adesão individual: usuários mais fiéis
 
-Uma grande companhia aérea obtém a maior parte de seu sucesso e receita por meio de clientes repetidos e fiéis. Em muitos casos, seus viajantes fiéis compõem a maior parte de sua receita e manter esses clientes é fundamental para o sucesso a longo prazo. Identificar os clientes mais leais e consistentes pode ser difícil. Entretanto, usando a nova configuração [!UICONTROL Cálculo contínuo] na [!UICONTROL Análise de coorte], foi possível analisar filtros de clientes fiéis e descobrir quais viajantes eram compradores recorrentes mês a mês. Então, foi possível direcionar recompensas e benefícios a esses viajantes por sua fidelidade. Além disso, ao alternar o tipo de coorte desde a retenção até o churn, também pode-se identificar quais clientes não eram compradores recorrentes mês a mês e direcionar esses filtros com promoções, a fim de retomar o engajamento e garantir que permanecessem fiéis no futuro.
+Uma grande companhia aérea obtém a maior parte de seu sucesso e receita por meio de clientes repetidos e fiéis. Em muitos casos, seus viajantes fiéis compõem a maior parte de sua receita e manter esses clientes é fundamental para o sucesso a longo prazo. Identificar os clientes mais leais e consistentes pode ser difícil. Entretanto, usando a nova configuração [!UICONTROL Cálculo contínuo] em [!UICONTROL Análise de coorte], a companhia aérea pode analisar filtros de clientes fiéis e descobrir quais viajantes eram compradores recorrentes mês a mês. A companhia aérea também é capaz de direcionar a esses viajantes recompensas e benefícios por sua fidelidade. Além disso, ao alternar o tipo de coorte de retenção para churn, a companhia aérea pode identificar quais clientes não são compradores recorrentes mês a mês e direcionar esses clientes com promoções. Assim, a companhia aérea pode reengajar-se com esses clientes e garantir que eles permaneçam fiéis no futuro.

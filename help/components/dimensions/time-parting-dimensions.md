@@ -4,10 +4,10 @@ title: Dimensões de separação de tempo
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: e3b80438f5bffc94efd24b80a93d2e4674906780
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 61%
+ht-degree: 58%
 
 ---
 
@@ -24,11 +24,11 @@ As dimensões de separação de tempo são baseadas no fuso horário da visualiz
 
 | Dimensão | Valores de exemplo |
 |--- |--- |
-| Hora do dia | 0-23 |
-| AM/PM | AM, PM |
-| Dia da semana | Segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado, domingo |
-| Dia da semana/Fim de semana | Dia da semana, Fim de semana |
-| Dia do mês | 1-31 |
-| Mês do ano | Janeiro - Dezembro |
-| Dia do ano | 1-366 |
-| Trimestre do ano | T1, T2, T3, T4 |
+| **[!UICONTROL Hora do dia]** | 0-23 |
+| **[!UICONTROL AM/PM]** | AM, PM |
+| **[!UICONTROL Dia da semana]** | Segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado, domingo |
+| **[!UICONTROL Dia da semana/Fim de semana]** | Dia da semana, Fim de semana |
+| **[!UICONTROL Dia do mês]** | 1-31 |
+| **[!UICONTROL Mês do Ano]** | Janeiro - Dezembro |
+| **[!UICONTROL Dia do ano]** | 1-366 |
+| **[!UICONTROL Trimestre do ano]** | T1, T2, T3, T4 |

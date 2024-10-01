@@ -1,35 +1,64 @@
 ---
-description: Mostra exemplos de métricas filtradas e ponderadas.
-title: Métricas filtradas e ponderadas
+description: Mostra exemplos de métricas calculadas.
+title: Exemplos de métricas calculadas
 feature: Calculated Metrics
 exl-id: 5e73ab52-627a-4064-bfb7-354c0ba1e4ee
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 76%
+source-wordcount: '235'
+ht-degree: 5%
 
 ---
 
-# Métricas filtradas e ponderadas
+# Exemplos de métricas calculadas
 
-Mostra exemplos de métricas filtradas e ponderadas.
+Este artigo mostra exemplos de como definir métricas calculadas mais avançadas.
 
-## Taxa de rejeição filtrada {#section_D42F2452E4464948934063EB6F2DAAB4}
+## Taxa de rejeição
 
-Essa métrica filtrada simples mostra a taxa de rejeição das páginas com mais de 100 visitas:
+Você deseja calcular a taxa de rejeição.
 
-![Janela de resumo que mostra as métricas aplicadas à coluna 1 (Visitas) e à coluna 2 (100) juntamente com a Taxa de rejeição. ](assets/cm_fbr.png)
++++ Detalhes
 
-Tenha em mente que esta fórmula depende de um intervalo de tempo consistente. Se você gerar um relatório para um único dia, qualquer página com mais de 20 visitas merece atenção. Se você gerar um relatório de um mês, pode querer filtrar para incluir mais visitas.
+A definição de uma rejeição é assunto para outra discussão, mas para este exemplo, você define um filtro de Eventos rejeitados, em que Início da sessão é igual a 1 e Términos de sessão é igual a 1. Use esse filtro para definir a taxa de sessões com rejeição para sessões.
 
-## Taxa de rejeição filtrada com percentil {#section_4F3E6D33A1FD438A932FA662B3510552}
 
-Esse filtro mostra a Taxa de rejeição para os primeiros 30% das páginas, quando classificadas por visitas.
+### Filtro
 
-![Se e, em seguida, filtre mostrando a Taxa de rejeição para os 30% principais de páginas classificadas por visitas.](assets/cm_wbr_2.png)
+![Rejeitando eventos](assets/example-bounce-bouncedevents.png)
 
-## Métrica ponderada {#section_F2D16B14569948289CF1310F9E6E3FC2}
+### Métrica calculada
 
-Suponha que você deseja classificar pela taxa de rejeição em geral, mas ainda quer exibir as páginas com mais visitas no topo da lista. Você pode criar uma Taxa de rejeição ponderada com a seguinte aparência:
+![Taxa de rejeição](assets/example-bounce-rate.png)
 
-![Resumo com definição para Taxa de Rejeição vezes Visitas.](assets/cm_wbr.png)
+
+### Campos derivados
+
+Como alternativa, você pode definir uma [taxa de rejeição usando campos derivados](/help/data-views/derived-fields/derived-fields.md#bounces).
+
+Os campos derivados fazem parte de uma visualização de dados que tem a vantagem de que nem todos os usuários podem substituir ou modificar a definição de uma métrica de taxa de rejeição. Essa vantagem também introduziu uma limitação. Os usuários que não têm acesso a uma visualização de dados não podem usar campos derivados e precisam recorrer a filtros e métricas calculadas para definir uma taxa de rejeição.
+
+Consulte para obter mais informações sobre como calcular rejeições e taxa de rejeição no Customer Journey Analytics, esta [publicação do blog](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
+
++++
+
+
+## Exibições de página condicionais
+
+Você deseja definir uma métrica calculada que calcula apenas as exibições de página das páginas que foram visitadas em mais de 100 sessões.
+
++++ Detalhes
+
+![Exibições de página condicionais](assets/conditional-page-views.png)
+
++++
+
+## Exibições de página para as 30% principais sessões
+
+Você deseja definir uma métrica calculada que calcula apenas as exibições de página das 30% principais sessões.
+
++++ Detalhes
+
+![Principais 30% de exibições de página](assets/top30-page-views.png)
+
++++

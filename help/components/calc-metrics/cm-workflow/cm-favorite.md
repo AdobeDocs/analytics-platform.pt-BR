@@ -3,21 +3,19 @@ description: Outra maneira de organizá-los para facilitar o uso é marcar as m�
 title: Marcar métricas calculadas como favoritas
 feature: Calculated Metrics
 exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 29%
+source-wordcount: '108'
+ht-degree: 9%
 
 ---
 
 # Marcar métricas calculadas como favoritas
 
-Outra maneira de organizá-los para facilitar o uso é marcar as métricas calculadas como favoritos.
+Você pode marcar uma métrica calculada como favorita. Marcar métricas calculadas como favoritas ajuda a organizar sua métrica calculada. Todos os usuários podem favorecer as métricas calculadas.
 
-1. No Customer Journey Analytics, selecione a guia **[!UICONTROL Componentes]** e selecione **[!UICONTROL Métricas calculadas]**.
+Para favorecer ou desfavorecer uma métrica calculada, no [Gerenciador de métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md):
 
-1. No Gerenciador de métricas calculadas, marque a estrala ao lado de qualquer métrica calculada que você deseja marcar como favorita. Agora deve aparecer como uma estrela amarela:
+* Selecione ![StarOutline](/help/assets/icons/StarOutline.svg) a favor ou ![Star](/help/assets/icons/Star.svg) para desfavorecer uma métrica calculada.
 
-   ![Estrela amarela mostrando os visitantes do Bing.](assets/favorites.png)
-
-1. Você também pode filtrar por favoritos em **[!UICONTROL Filtros]** > **[!UICONTROL Outros filtros]** > **[!UICONTROL Favoritos]**.
+Você pode filtrar sua lista de métricas calculadas por favoritos. Selecione **[!UICONTROL Outros filtros]** no painel ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]** e selecione **[!UICONTROL Favoritos]**. Consulte [Filtrar a lista de métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-filter.md) para obter mais informações.

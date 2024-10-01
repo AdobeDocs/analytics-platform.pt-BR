@@ -4,10 +4,10 @@ description: Saiba como gerenciar públicos-alvo no Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 68%
+ht-degree: 64%
 
 ---
 

@@ -4,10 +4,10 @@ description: Saiba como usar o Preparo de dados para combinar conjuntos de relat
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 57%
+source-wordcount: '1321'
+ht-degree: 55%
 
 ---
 
@@ -26,7 +26,7 @@ Suponha que sua empresa queira trazer dados de dois conjuntos de relatórios dif
 | eVar1 = Termo de pesquisa | eVar1 = Unidade de negócios |
 | eVar2 = Categoria do cliente | eVar2 = Termo de pesquisa |
 
-Por uma questão de simplicidade, considere que essas são as únicas eVars definidas para ambos os conjuntos de relatórios.
+Por uma questão de simplicidade, suponha que essas sejam as únicas eVars definidas para ambos os conjuntos de relatórios.
 
 Além disso, suponha que você execute as seguintes ações:
 

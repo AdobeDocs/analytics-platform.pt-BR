@@ -5,10 +5,10 @@ keywords: product analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 2addd3d17f62da69eb6636d987931fc21df07af5
-workflow-type: ht
-source-wordcount: '1399'
-ht-degree: 100%
+source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+workflow-type: tm+mt
+source-wordcount: '1392'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ As seguintes visualizações de análise guiada estão disponíveis:
 
 ## Acesso
 
-Se sua organização for provisionada para a análise guiada, você poderá acessá-la na página inicial do Customer Journey Analytics.
+Você pode acessar a Análise guiada na página inicial do Customer Journey Analytics.
 
 1. Clique em **[!UICONTROL Análise guiada]** na página inicial, o que leva você diretamente para a [Visualização de tendências de uso](types/usage.md).
 

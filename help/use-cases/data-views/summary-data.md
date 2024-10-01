@@ -1,13 +1,13 @@
 ---
 title: Usar dados de resumo no Customer Journey Analytics
-description: Use a explicação de todos os detalhes sobre como trazer dados de resumo para o Customer Journey Analytics
+description: Caso de uso que explica todos os detalhes sobre como trazer dados de resumo para o Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: e6f57b03689bd9aaaec12c13fc95da5b079b901e
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
 workflow-type: tm+mt
-source-wordcount: '5187'
+source-wordcount: '5188'
 ht-degree: 8%
 
 ---
@@ -512,7 +512,7 @@ Para garantir que você possa relatar os dados corretos no Workspace, é necess�
 
          ![Dados de resumo da receita](../assets/revenue-summary-data.png)
          1. Expandir ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Atribuição]**.
-            1. Selecione ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Last Touch]** na lista suspensa **[!UICONTROL Modelo de atribuição]**.
+            1. Selecione ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** na lista suspensa **[!UICONTROL Modelo de atribuição]**.
             1. Selecione **[!UICONTROL 30 Day]** na lista suspensa **[!UICONTROL Janela de pesquisa]**.
          1. Expandir ![Divisa](/help/assets/icons/ChevronDown.svg) **Formato**.
             1. Selecione **[!UICONTROL Moeda]** na lista suspensa **[!UICONTROL Formato]**.
@@ -522,7 +522,7 @@ Para garantir que você possa relatar os dados corretos no Workspace, é necess�
 
          ![Dados de resumo dos pedidos](../assets/orders-summary-data.png)
          1. Expandir ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Atribuição]**.
-            1. Selecione ![AttributionLastTouch](/help/assets/icons/AttributionLastTouch.svg) **[!UICONTROL Last Touch]** na lista suspensa **[!UICONTROL Modelo de atribuição]**.
+            1. Selecione ![AttributeLastTouch](/help/assets/icons/AttributeLastTouch.svg) **[!UICONTROL Last Touch]** na lista suspensa **[!UICONTROL Modelo de atribuição]**.
             1. Selecione **[!UICONTROL 30 Day]** na lista suspensa **[!UICONTROL Janela de pesquisa]**.
          1. Expandir ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Formato]**.
             1. Selecione **[!UICONTROL Decimal]** na lista suspensa **[!UICONTROL Formato]**.

@@ -4,29 +4,34 @@ title: Como visualizar dimensões no Customer Journey Analytics Workspace
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 90%
+source-wordcount: '113'
+ht-degree: 18%
 
 ---
 
 # Visualizar dimensões no Analysis Workspace
 
-Passe o mouse sobre o ícone de informações (i) localizado próximo a uma dimensão. Serão exibidos os 5 principais valores para dimensões que não são de tempo (e 15 para dimensões de tempo). Costumávamos mantes esses valores estáticos (ou seja, os 5 valores escolhidos nunca eram alterados).
+Você pode usar as [informações do componente](/help/components/use-components-in-workspace.md#component-info) de um componente para mostrar os itens principais de uma dimensão.
 
-![Os 5 principais valores para dimensões que não são de tempo.](assets/dimension-preview.png)
+![Informações do componente](../assets/component-info.png)
 
-A partir de agora, por padrão, mostramos valores dinâmicos em vez de estáticos, com a opção de transformá-los em valores estáticos. Outras observações:
+<!--
+Now, by default, we show dynamic values instead of static ones, with the option to turn them into static values. Other things to note:
 
-* Conforme seus dados atualizam, as colunas de dimensão dinâmica serão atualizadas para mostrar os itens de dimensão atuais de 5/15.
-* Uma coluna de dimensão dinâmica que é copiada ou movida se tornará estática.
-* Ao passar o cursor sobre uma coluna de dimensão estática, você verá um ícone de cadeado, indicando que a dimensão é estática.
+* As your data updates, the dynamic dimension columns will update to show the current 5/15 dimension items.
+* A dynamic dimension column that is copied or moved will become static.
+* When hovering a static dimension column you will see a lock icon, indicating that the dimension is static.
 
-pop-up da coluna ![Dimension destacando o ícone de bloqueio.](assets/dimension_static.png)
+![Dimension column popup highlighting the lock icon.](assets/dimension_static.png)
+
+-->
+
 
 ## Mostrar itens da dimensão
 
-Ao passar o mouse sobre uma dimensão e clicar na seta para a direita cinza próxima a ela, é exibida uma lista de itens de dimensão. Uma lista de itens de dimensão normalmente mostra os itens principais referentes aos últimos 30 dias.
+Ao selecionar ![DivisaDireita](/help/assets/icons/ChevronRight.svg) para uma dimensão no painel Componentes, uma lista de seus itens de dimensão é exibida. A lista de itens de dimensão geralmente mostra os itens principais referentes aos últimos 30 dias. Quando mais itens estiverem disponíveis, fora do intervalo de datas selecionado para o painel, selecione o link para mostrar mais itens. Por exemplo, **[!UICONTROL Mostrar itens do mês passado]**.
 
-Ao rolar para o final da lista, você verá **[!UICONTROL Mostrar itens superiores dos últimos 6 meses]**. Clique nessa opção para ver os itens superiores da dimensão nos últimos 180 dias.
+![Mostrar itens da dimensão](assets/dimension-items.png)
+

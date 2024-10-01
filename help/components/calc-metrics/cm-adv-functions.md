@@ -4,16 +4,16 @@ description: Para acessar essas funções, selecione Mostrar avançadas na lista
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: cfaf29b8dd92325a4e5fdd2a960de798178db933
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '3024'
-ht-degree: 98%
+source-wordcount: '3036'
+ht-degree: 97%
 
 ---
 
 # Referência - funções avançadas
 
-Para acessar essas funções, selecione **[!UICONTROL Mostrar avançadas]** na lista suspensa **[!UICONTROL Funções]**.
+Para acessar essas funções, selecione a lista **[!UICONTROL Mostrar tudo]** abaixo de ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL Funções]** no painel Componentes. Role para baixo para ver a lista de funções Avançadas.
 
 ## Funções de tabela versus Funções de linha
 
@@ -26,6 +26,7 @@ Informa se os zeros devem ou não ser incluídos no cálculo. Muitas vezes, zero
 Por exemplo, se você possuir uma métrica de Receita e adicionar a métrica de Exibições de página ao relatório, aparecerão mais linhas com valores iguais a zero para sua receita. Você provavelmente não quer que isso afete nenhum cálculo de MÉDIA, MÍN, QUARTIL etc. que você possui na coluna de receita. Neste caso, você deve marcar o parâmetro Incluir zeros.
 
 Por outro lado, se você possuir duas métricas de interesse, pode não ser correto dizer que uma tem uma média ou valor mínimo maior que a outra por causa dos zeros de algumas linhas. Neste caso, é melhor não marcar o parâmetro Incluir zeros.
+
 
 ## AND
 
@@ -56,7 +57,7 @@ Approximate Count Distinct (dimension)
 |---|---|
 | *dimension* | A dimensão cuja contagem distinta de itens você deseja obter. |
 
-## Caso de uso de exemplo
+### Caso de uso de exemplo
 
 A Contagem distinta aproximada (eVar de ID de cliente) é um caso de uso comum para essa função.
 
@@ -68,7 +69,7 @@ A métrica “Número aproximado de clientes” deve ser usada em relatórios da
 
 ![Tabela de forma livre mostrando Visitantes únicos e Clientes aproximados ](assets/approx-customers.png)
 
-## Comparação de funções de contagem
+### Comparação de funções de contagem
 
 Approximate Count Distinct() é uma melhoria das funções Count() e RowCount(), pois a métrica criada pode ser usada em qualquer relatório dimensional para renderizar uma contagem aproximada de itens de uma dimensão separada. Por exemplo, a contagem de IDs de clientes usadas em um relatório de Tipo de dispositivo móvel.
 

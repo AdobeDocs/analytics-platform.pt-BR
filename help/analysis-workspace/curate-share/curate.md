@@ -5,10 +5,10 @@ title: Preparar projetos do
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 94%
+ht-degree: 83%
 
 ---
 
@@ -46,7 +46,7 @@ Para remover a preparação do projeto e restaurar o conjunto completo de compon
 
 ## Opções de curadoria de componentes
 
-Em um projeto com curadoria, o recipient terá a opção de **[!UICONTROL Mostrar todos]** os componentes no painel esquerdo. [!UICONTROL Mostrar tudo] revela conjuntos diferentes de componentes, dependendo dos seguintes fatores:
+Em um projeto com curadoria, o recipient terá a opção de **[!UICONTROL Mostrar todos os]** componentes no painel esquerdo. [!UICONTROL Mostrar tudo] revela conjuntos diferentes de componentes, dependendo dos seguintes fatores:
 
 * O nível de permissão do usuário (administrador ou não)
 * Função do projeto (proprietário/editor ou não)

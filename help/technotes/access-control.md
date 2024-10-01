@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: c6800f1fa36298f3d2aa53c36c78398d9d3fd670
+source-git-commit: 664576605b8be098a751609536e388c304c65513
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1461'
 ht-degree: 14%
 
 ---
@@ -146,7 +146,7 @@ Você pode fornecer acesso de administração ao perfil de produto a um líder d
 
 ### Controle de acesso em nível de linha
 
-Digamos que você queira conceder aos usuários acesso aos dados somente de um dia. Esta é a forma como você limitaria o acesso a essas linhas específicas:
+Você deseja conceder aos usuários acesso aos dados somente de um dia. Esta é a forma como você limitaria o acesso a essas linhas específicas:
 
 1. Crie um filtro em [!UICONTROL Configurações] de uma exibição de dados específica, em que [!UICONTROL Dia] seja igual à data que você deseja que eles tenham acesso aos dados. Consulte [Criar visualização de dados](/help/data-views/create-dataview.md#settings-filters) para obter mais informações.
 1. Salve a visualização de dados, que aplica o filtro à parte de dados dos conjuntos de dados na conexão subjacente. Qualquer linha que não se ajuste à definição de filtro é excluída automaticamente da visualização de dados e não fica disponível para o Analysis Workspace ao usar esta visualização de dados.

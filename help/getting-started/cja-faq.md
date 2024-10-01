@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 22ae84479142d45f400f6ae39fe1416c9aaf7229
-workflow-type: ht
-source-wordcount: '2567'
-ht-degree: 100%
+source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+workflow-type: tm+mt
+source-wordcount: '2565'
+ht-degree: 99%
 
 ---
 
@@ -218,7 +218,7 @@ Consulte [Estimar e gerenciar o uso](/help/technotes/estimate-usage.md).
 
 Os limites de uso são monitorados e aplicados regularmente pela Adobe. “Linhas de dados” são as linhas médias diárias de dados disponíveis para análise no Customer Journey Analytics.
 
-Por exemplo, digamos que o seu contrato dê direito a um milhão de linhas de dados. Suponha que, no primeiro dia de uso do Customer Journey Analytics, você faça o upload de dois milhões de linhas de dados. No dia 2, você exclui 1 milhão de linhas e mantém seu uso no máximo permitido (ou seja, um milhão de linhas de dados) durante o restante do Prazo da licença. Dependendo dos termos contratuais, você ainda poderá incorrer em taxas de uso excessivo proporcionais em relação ao dia 1, já que você excedeu o direito de licença de “linhas de dados”.
+Por exemplo, seu contrato lhe dá direito a um milhão de linhas de dados. Suponha que, no primeiro dia de uso do Customer Journey Analytics, você faça o upload de dois milhões de linhas de dados. No dia 2, você exclui 1 milhão de linhas e mantém seu uso no máximo permitido (ou seja, um milhão de linhas de dados) durante o restante do Prazo da licença. Dependendo dos termos contratuais, você ainda poderá incorrer em taxas de uso excessivo proporcionais em relação ao dia 1, já que você excedeu o direito de licença de “linhas de dados”.
 
 ## 11. Diagnosticar discrepâncias de dados {#discrepancies}
 

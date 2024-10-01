@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: aaab21ef817e3acf67ca83cb6f9258b812625c8e
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 Ao usar uma dimensão que contém muitos valores únicos, o relatório resultante pode conter muitos itens de dimensão únicos para exibir ou calcular. Os resultados são truncados com a remoção dos itens de dimensão considerados menos importantes. Essas otimizações são feitas para manter o desempenho do projeto e do produto.
 
-Quando você solicita um relatório com muitos valores únicos, o Analysis Workspace mostra um indicador no cabeçalho da dimensão informando que nem todos os itens de dimensão estão incluídos. Por exemplo, &quot;Linhas: 1-50 de mais de 22.343.156&quot;. A palavra-chave &quot;mais de&quot; indica que alguma otimização foi aplicada ao relatório para retornar os itens de dimensão mais importantes.
+Quando você solicita um relatório com muitos valores únicos, o Analysis Workspace mostra um indicador no cabeçalho da dimensão informando que nem todos os itens de dimensão estão incluídos. Por exemplo, **[!UICONTROL Linhas: 1-50 de mais de 22.343.156]**. A palavra-chave **[!UICONTROL more than]** indica que alguma otimização foi aplicada ao relatório para retornar os itens de dimensão mais importantes.
 
 ![Tabela de forma livre no Workspace mostrando a palavra-chave &quot;mais de&quot; para mostrar 1-50 de mais de 22.343.156](assets/high-cardinality.png)
 

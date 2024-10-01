@@ -4,14 +4,14 @@ description: Como interagir com itens de dimensão dinâmicos e estáticos em ta
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 388042e24a7b9d33ac88e05a68689308e6258339
 workflow-type: tm+mt
 source-wordcount: '550'
-ht-degree: 81%
+ht-degree: 79%
 
 ---
 
-# Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre
+# Itens de dimensão dinâmicos e estáticos em tabelas de forma livre
 
 Nas tabelas de forma livre, as linhas e colunas podem conter vários valores de componentes. Esses valores podem ser dinâmicos (mudam com o tempo) ou estáticos (não mudam com o tempo), dependendo da análise que você deseja criar.
 

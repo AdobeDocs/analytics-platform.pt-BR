@@ -4,38 +4,48 @@ title: Marcar filtros
 feature: Filters
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 96%
+source-wordcount: '193'
+ht-degree: 2%
 
 ---
 
-# Marcar filtros {#tag}
+# Marcar filtros
 
-No Gerenciador de filtros, a marcação de filtros permite que você os organize. Todos os usuários podem criar tags para filtros e aplicar uma ou mais tags a um filtro. No entanto, você pode visualizar tags somente para seus filtros ou os compartilhados com você.
+No [Gerenciador de filtros](manage-filters.md), você pode usar marcas para organizar filtros. Os administradores podem marcar todos os filtros. Os não administradores podem marcar somente os filtros que criam ou que foram compartilhados com eles.
 
-Que tipos de tags você deve criar? Estas são algumas sugestões para tags úteis:
+Para marcar um ou mais filtros:
 
-* Tags com base em nomes de equipe, como Marketing social, Marketing móvel.
+1. No [Gerenciador de filtros](manage-filters.md), selecione um ou mais filtros que deseja marcar.
+1. Na barra de ações, selecione ![Rótulos](/help/assets/icons/Labels.svg) **[!UICONTROL Marca]**.
+1. Na caixa de diálogo **[!UICONTROL Filtros de Marca]**:
 
-* Tags de projeto (tags de análise), como análises de página de entrada.
+   ![Caixa de diálogo Filtros de Marca](assets/tag-filter-dialog.png)
 
-* Tags de categoria: masculino; geografia.
+   1. (opcionalmente) use a ![Pesquisa](/help/assets/icons/Search.svg) para pesquisar e limitar a lista de marcas.
 
-* Tags de fluxo de trabalho: para ser aprovado; auxiliar para (uma unidade de negócios específica).
+   2. Com base na lista de tags:
 
-Para marcar um filtro:
+      * selecione uma ou mais tags existentes na lista, ou
+      * digite uma nova marca e pressione **[!UICONTROL ENTER]**. Repita para adicionar mais de uma nova tag.
 
-1. No Gerenciador de filtros, marque a caixa de seleção ao lado do filtro que você deseja marcar. A barra de ferramentas de gerenciamento de filtros aparece.
+1. Selecione **[!UICONTROL Salvar]** para salvar as marcas do filtro. Selecione **[!UICONTROL Cancelar]** para cancelar.
 
-1. Clique em **[!UICONTROL Tag]** e
+Depois de salvas, as marcas são listadas no campo [!UICONTROL Marca] para os filtros selecionados no [Construtor de filtros](filter-builder.md).
 
-   * selecione a partir das tags existentes, ou
 
-   * digite um novo nome de tag e pressione **[!UICONTROL Enter]**.
+## Sugestões
 
-1. Clique em **[!UICONTROL Tag]** novamente para adicionar uma tag ao filtro.
+Abaixo estão algumas sugestões para organizar tags com base em:
 
-A tag agora deve aparecer na coluna Tags. (Clique no ícone de engrenagem na parte superior direita para gerenciar suas colunas).
-Também é possível filtrar tags em **[!UICONTROL Filtros > Tags]**.
+* **Equipe**: Por exemplo, Marketing Social, Marketing para Dispositivos Móveis.
+
+* **Projeto**: por exemplo, Análise de página de entrada.
+
+* **Categoria**:. Por exemplo, Homens, Mulheres, Crianças.
+
+* **Geografia**: Por exemplo: Estados Unidos, Califórnia.
+
+* **Fluxo de trabalho**: Por exemplo: Para ser aprovado, preparado
+
