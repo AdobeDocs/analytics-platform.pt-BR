@@ -3,9 +3,9 @@ title: Configurações de dados de uso do produto
 description: Ativar, desativar ou definir as configurações de uso do produto.
 hide: true
 hidefromtoc: true
-source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
+source-git-commit: 40b761928697d1d55e1177aa7b2b3c056739ecc9
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,8 @@ A página _Configurações de dados_ lida com a configuração de uso do seu pro
 As seguintes configurações estão disponíveis nesta página:
 
 * **Habilitar uso do produto**: alterna a disponibilidade da coleta de dados de uso do produto. Se você habilitar o uso do produto e desabilitá-lo no futuro, o conjunto de dados, a conexão e a visualização de dados não serão excluídos. O rastreamento é desativado globalmente para sua organização quando desligado.
-* **Sandbox**: determina a sandbox da Adobe Experience Platform em que o esquema e o conjunto de dados são criados. A sandbox escolhida não afeta a coleta de dados de uso do produto. Se você alterar essa configuração de sandbox, um conjunto de dados, uma conexão e uma visualização de dados separadas serão criadas. Os dados históricos permanecem na sandbox anterior.
-* **Substituir janela de retenção de dados**: cada conjunto de dados tem uma janela de retenção de dados padrão. Se essa configuração estiver desativada, o uso do produto seguirá o período padrão. Você pode ativar essa configuração se quiser reduzir a quantidade de tempo em que os dados são mantidos. Não é possível estender a retenção de dados além da janela de retenção de dados padrão do conjunto de dados.
+* **Sandbox**: determina a sandbox da Adobe Experience Platform em que o esquema e o conjunto de dados são criados. A sandbox escolhida não afeta a coleta de dados de uso do produto. Se você alterar essa configuração de sandbox, todos os dados existentes serão excluídos. Um novo conjunto de dados, conexão e visualização de dados são criados na sandbox selecionada.
+* **Substituir janela de retenção de dados**: cada conjunto de dados tem uma janela de retenção de dados padrão. Se essa configuração estiver desativada, o uso do produto seguirá o período padrão. Você pode ativar essa configuração se quiser reduzir a quantidade de tempo em que os dados são mantidos. Diminuição da janela de retenção de dados, ajuda a reduzir custos e permite que você esteja em conformidade com qualquer diretriz de privacidade específica do funcionário. Não é possível estender a retenção de dados além da janela de retenção de dados padrão do conjunto de dados.
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_sandbox"
@@ -36,4 +36,4 @@ As seguintes configurações estão disponíveis nesta página:
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
 >title="Substituir janela de retenção de dados"
->abstract="Diminua a disponibilidade dos dados de uso do produto para ajudar a reduzir custos."
+>abstract="Diminua a disponibilidade dos dados de uso do produto para ajudar a reduzir custos ou estar em conformidade com as diretrizes de privacidade."

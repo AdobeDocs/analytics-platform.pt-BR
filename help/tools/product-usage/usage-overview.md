@@ -3,7 +3,7 @@ title: Visão geral do uso do produto
 description: Visualize insights e relatórios sobre como sua organização usa o Customer Journey Analytics.
 hide: true
 hidefromtoc: true
-source-git-commit: 8f2a340f59d8cdf97a5309ec20dc36f49b8f1129
+source-git-commit: dcd3ee5f3db5af434b87bfded0e360c66643793e
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 7%
@@ -25,7 +25,7 @@ Toda a coleta e configuração de dados é configurada automaticamente para voc�
 
 >[!IMPORTANT]
 >
->Esse recurso conta para os limites de dados contratuais no Adobe Experience Platform. Certifique-se de que sua organização possa acomodar os dados gerados por esse recurso antes de habilitá-lo.
+>Esse recurso conta para os limites de linha contratuais no Adobe Experience Platform. Certifique-se de que sua organização possa acomodar os dados gerados por esse recurso antes de habilitá-lo.
 
 ## Dimensões disponíveis
 
