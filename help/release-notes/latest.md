@@ -3,31 +3,32 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: b7e8c535d178ef406e1563408cee83c638d6858b
+source-git-commit: c403e2bbf20de3dca4440160ef3f69a9d0d60a2f
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 100%
+source-wordcount: '485'
+ht-degree: 52%
 
 ---
 
-# Notas da versão atual do Adobe Customer Journey Analytics (setembro de 2024)
+# Notas de versão atuais do Adobe Customer Journey Analytics (outubro de 2024)
 
-**Última atualização**: 11 de setembro de 2024
+**Última atualização**: quinta-feira, 2 de outubro de 2024
 
-Essas notas de versão englobam o período de lançamento de 11 de setembro de 2024 ao começo de outubro. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
+Essas notas de versão abrangem o período de 2 de outubro de 2024 a 22 de outubro de 2024. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
 ## Recursos novos ou atualizados
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Informações adicionais na coluna “Usado em” no gerenciador de métricas calculadas e no gerenciador de filtros** | A coluna “Usado em” no gerenciador de métricas calculadas e no gerenciador de filtros contém as novas áreas de relatório a seguir:<ul><li>**Report Builder:** mostra o número de métricas calculadas ou filtros em uso no Report Builder.</li><li>**Componentes ad hoc:** mostra o número de métricas calculadas ad hoc ou filtros ad hoc em uso em projetos. Essas métricas calculadas e filtros ad hoc (conhecidos como “métricas calculadas rápidas” e “filtros rápidos”) podem ser usados somente no projeto em que foram criados e, portanto, são relatados separadamente da área de relatórios “Projeto” na coluna “Usado em”.</li></ul>Para obter mais informações, consulte [Gerenciador de métricas calculadas](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager) e [Gerenciador de filtros](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/cja-filters/manage-filters). |  | 11 de setembro de 2024 |
-| **Alertas** | Os alertas no Customer Journey Analytics permitem que você seja notificado com base em porcentagens alteradas ou pontos de dados específicos.<p>Dependendo do pacote do Customer Journey Analytics, você também pode usar alertas para serem acionados com base em limites de anomalias. Os alertas (também conhecidos como “Alertas inteligentes”) fornecem controles granulares que se integram à Detecção de anomalias e são acionados quando você mais precisa deles.</p><p>O processo de uso de alertas no Customer Journey Analytics é quase idêntico ao uso de alertas no Adobe Analytics. Uma diferença importante é que os alertas de hora em hora não estão disponíveis no Customer Journey Analytics. Essa diferença ocorre porque a assimilação de dados para os vários tipos de dados de eventos que podem ser assimilados é concluída somente após um atraso, normalmente variando de 3 a 9 horas após o horário do evento de dados.</p><p>Para obter mais informações sobre as diferenças ao usar alertas entre o Customer Journey Analytics e o Adobe Analytics, consulte [Comparação de recursos de alertas](/help/components/c-intelligent-alerts/alerts-feature-comparison.md).</p><p>Para saber mais sobre alertas, consulte [Visão geral de alertas](/help/components/c-intelligent-alerts/intelligent-alerts.md). |  | 13 de setembro de 2024 |
-| **Atualizações no conector de origem do Adobe Analytics** | A página de atividade do conjunto de dados não exibe informações sobre lotes, pois o Conector de origem do Analytics é totalmente gerenciado pela Adobe. Você pode monitorar o fluxo de dados observando as métricas em torno dos registros assimilados. Leia o manual sobre [criação de uma conexão de origem de dados do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) para obter mais informações. |  | Disponível agora |
-| **Análise guiada: incorporada no Workspace** | Combine várias análises guiadas em uma única exibição no Analysis Workspace. (Link da documentação em breve) | 2 de outubro de 2024 | sexta-feira, 31 de outubro de 2024 |
+| **Análise guiada: incorporada no Workspace** | [A análise guiada](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/overview) agora está disponível diretamente no Analysis Workspace, permitindo que os usuários criem painéis com insights abrangentes a partir de painéis, visualizações e análises guiadas. Em uma nova seção do painel esquerdo, você pode criar novas análises guiadas para adicionar aos seus projetos. Você também pode acessar análises guiadas salvas que podem ser reutilizadas como blocos de construção em muitos projetos. | 2 de outubro de 2024 | 31 de outubro de 2024 |
+| **Uso do produto** | Veja como sua organização usa o Customer Journey Analytics. Habilitar esse recurso cria um conjunto de dados na Adobe Experience Platform que coleta dados quando qualquer pessoa na organização usa o Analysis Workspace. Uma conexão e uma exibição de dados também são criadas automaticamente, fornecendo acesso a dimensões como os principais tipos de projeto, usuários mais ativos e componentes mais populares usados em projetos. [Saiba mais](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) | sexta-feira, 3 de outubro de 2024 | quinta-feira, 23 de outubro de 2024 |
+| **Visualização da tela de Jornada** | A tela de Jornada é uma visualização na Analysis Workspace que permite analisar como as pessoas avançam ou saem de uma jornada definida. Crie análises de jornadas de usuários, criando um gráfico flexível de nós e setas para representar qualquer combinação de eventos, itens de dimensão e filtros. Arraste nós na tela para reorganizar os eventos e condições da jornada. À medida que você faz isso, os dados são devidamente atualizados.<p>Clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas do Journey Optimizer já existente.<p>Para saber mais sobre a tela do Jornada, consulte [visão geral da tela do Jornada](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas).<p>Para saber como criar uma visualização da tela de Jornada, consulte [Configurar tela de Jornada](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/configure-journey-canvas). | 2 de outubro de 2024 | terça-feira, 14 de outubro de 2024 |
+| **Filtros de painel e de coluna agora são incluídos ao criar uma audiência** | Ao criar um público-alvo a partir de uma visualização no Analysis Workspace, os filtros de painel e de coluna agora são incluídos como critérios adicionais. Se os filtros não forem necessários, eles poderão ser removidos antes da publicação do público-alvo. Anteriormente, quaisquer filtros aplicados ao painel ou à coluna de uma visualização no Analysis Workspace eram ignorados ao criar um público-alvo.<p>Para obter informações sobre como criar um público-alvo do Customer Journey Analytics, consulte [Criar e publicar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/audiences/publish). |  | 2 de outubro de 2024 |
+
 
 ## Correções no Customer Journey Analytics
 
-AN-352461; AN-355446: AN-355665
+AN-354085; AN-355870; AN-356037; AN-356881; AN-357100; AN-358193; AN-358364; AN-358911; AN-359000; AN-359160
 
 ## Avisos importantes para admins do Customer Journey Analytics
 
@@ -35,7 +36,6 @@ AN-352461; AN-355446: AN-355665
 | --- | --- | --- |
 | N/D | | |
 
-{style="table-layout:auto"}
 
 ## Recursos relacionados
 
