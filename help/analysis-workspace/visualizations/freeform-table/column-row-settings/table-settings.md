@@ -4,9 +4,9 @@ title: Configurações de linha
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: bc03cd75c03d41c5d0f8c2bc54bedc115b723211
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1019'
 ht-degree: 15%
 
 ---
@@ -80,8 +80,8 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 | Opção | Descrição |
 |---|---|
 | **[!UICONTROL Criar métrica a partir da seleção]** | Criar uma nova métrica a partir da métrica selecionada. A métrica pode ser Média, Mídia, Máximo da coluna, Mín. da coluna, Soma da coluna. Você também pode selecionar Abrir no construtor de métricas calculadas para criar uma métrica calculada. |
-| **[!UICONTROL Adicionar coluna de período de tempo]** | Adicione uma coluna de período. São oferecidas várias opções, onde o intervalo do calendário do painel determina o *intervalo de datas*: <li>**[!UICONTROL Intervalo de datas *anterior* a este intervalo de dados]**</li><li>**[!UICONTROL Este *intervalo de datas* para este intervalo de datas]**.</li><li>**[!UICONTROL Intervalo de dados personalizado para este intervalo de datas]**. Abre o **[!UICONTROL Criador de intervalo de datas]** para especificar o intervalo de datas.</li> |
-| **[!UICONTROL Comparar períodos de tempo]** | Adiciona colunas de período de comparação. Disponível somente quando a dimensão não se baseia no tempo. São oferecidas várias opções que determinam o *intervalo de datas*: <li>**[!UICONTROL Intervalo de datas *anterior* a este intervalo de dados]**</li><li>**[!UICONTROL Intervalo de dados personalizado para este intervalo de datas]**. Abre o **[!UICONTROL Criador de intervalo de datas]** para especificar o intervalo de datas.</li> |
+| **[!UICONTROL Adicionar coluna de período de tempo]** | Adicione uma coluna de período. São oferecidas várias opções, onde o intervalo do calendário do painel determina o *intervalo de datas*: <li>**[!UICONTROL Intervalo de datas *anterior* a este intervalo de dados]**</li><li>**[!UICONTROL Este *intervalo de datas* para este intervalo de datas]**.</li><li>**[!UICONTROL Intervalo de dados personalizado para este intervalo de datas]**. Abre o **[!UICONTROL Criador de intervalo de datas]** para especificar o intervalo de datas.</li>Consulte [Comparação de datas](/help/components/date-ranges/time-comparison.md) para obter mais informações. |
+| **[!UICONTROL Comparar períodos de tempo]** | Adiciona colunas de período de comparação. Disponível somente quando a dimensão não se baseia no tempo. São oferecidas várias opções que determinam o *intervalo de datas*: <li>**[!UICONTROL Intervalo de datas *anterior* a este intervalo de dados]**</li><li>**[!UICONTROL Intervalo de dados personalizado para este intervalo de datas]**. Abre o **[!UICONTROL Criador de intervalo de datas]** para especificar o intervalo de datas.</li>Consulte [Comparação de datas](/help/components/date-ranges/time-comparison.md) para obter mais informações. |
 | **[!UICONTROL Modificar modelos de atribuição]** | Modifique o modelo de atribuição da coluna. |
 | **[!UICONTROL Comparar modelo de atribuição]** | Especifique um novo modelo de atribuição e compare-o ao modelo de atribuição da coluna selecionada. Uma nova coluna é adicionada com as novas métricas do modelo de atribuição. Além disso, uma coluna Alteração percentual é adicionada para comparação. |
 | **[!UICONTROL Redefinir larguras de coluna]** | Redefinir as larguras de coluna para a largura padrão. |

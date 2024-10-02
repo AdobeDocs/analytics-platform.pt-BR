@@ -3,10 +3,10 @@ description: Criar, editar ou excluir alertas.
 title: Gerenciar alertas
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: bd58af0680fc9524453e072ecb60e3ada72ce634
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 4%
+source-wordcount: '567'
+ht-degree: 7%
 
 ---
 
@@ -50,17 +50,17 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 
 É possível executar ações em alertas usando o ➋ da barra de ações. A barra de ação contém as seguintes ações:
 
-| Ação | Descrição |
-|---|---|
-| ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** | Adicione outro alerta, usando o [Criador de alertas](alert-builder.md#alert-builder). |
-| ![Pesquisar](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar por título*] | Quando nenhum alerta for selecionado na lista, procure por alertas usando esse campo de pesquisa. |
-| ![Rótulo](/help/assets/icons/Label.svg) **[!UICONTROL Marca]** | Marcar os alertas selecionados. Na caixa de diálogo **[!UICONTROL Alerta de Marca]**, selecione ou desmarque as marcas dos alertas selecionados. Selecione **[!UICONTROL Salvar]** para salvar as marcas dos alertas selecionados. |
-| ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** | Excluir os alertas selecionados. Será solicitada uma confirmação. |
-| ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Renomear]** | Renomear um único alerta selecionado. Quando selecionada, você pode renomear o alerta em linha. |
-| ![Cópia](/help/assets/icons/Copy.svg) **[!UICONTROL Cópia]** | Copiar o alerta selecionado. Novos alertas são criados com o mesmo nome e sufixo `(Copy)`. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Habilitar]** ou **[!UICONTROL Desabilitar]** | Ativar ou desativar os alertas selecionados. |
-| ![Atualizar](/help/assets/icons/Refresh.svg) **[!UICONTROL Renovar]** | Renova a data de expiração do alerta. A data de expiração se estende por 1 ano a partir do dia em que você selecionar essa opção, independentemente da data de expiração original. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exportar para CSV]** | Exportar os alertas para um arquivo `Alerts List.csv`. |
+| Ícone | Ação | Descrição |
+|:---:|---|---|
+| ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Adicionar]** | Adicione outro alerta, usando o [Criador de alertas](alert-builder.md#alert-builder). |
+| ![Pesquisar](/help/assets/icons/Search.svg) | [!UICONTROL *Pesquisar por título*] | Quando nenhum alerta for selecionado na lista, procure por alertas usando esse campo de pesquisa. |
+| ![Rótulo](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Marcar os alertas selecionados. Na caixa de diálogo **[!UICONTROL Alerta de Marca]**, selecione ou desmarque as marcas dos alertas selecionados. Selecione **[!UICONTROL Salvar]** para salvar as marcas dos alertas selecionados. |
+| ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Excluir os alertas selecionados. Será solicitada uma confirmação. |
+| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomear um único alerta selecionado. Quando selecionada, você pode renomear o alerta em linha. |
+| ![Copiar](/help/assets/icons/Copy.svg) | **[!UICONTROL Copiar]** | Copiar o alerta selecionado. Novos alertas são criados com o mesmo nome e sufixo `(Copy)`. |
+| ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Habilitar]** ou **[!UICONTROL Desabilitar]** | Ativar ou desativar os alertas selecionados. |
+| ![Atualizar](/help/assets/icons/Refresh.svg) | **[!UICONTROL Renovar]** | Renova a data de expiração do alerta. A data de expiração se estende por 1 ano a partir do dia em que você selecionar essa opção, independentemente da data de expiração original. |
+| ![ArquivoCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar os alertas para um arquivo `Alerts List.csv`. |
 
 
 ### Barra de filtros ativa

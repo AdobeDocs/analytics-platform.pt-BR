@@ -4,10 +4,10 @@ description: Compartilhar, renomear ou excluir intervalos de datas no Analysis W
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 9%
+source-wordcount: '607'
+ht-degree: 12%
 
 ---
 
@@ -46,17 +46,17 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 
 É possível agir em intervalos de datas usando a ➋ da barra de ação. A barra de ação contém as seguintes ações:
 
-| Ação | Descrição |
-|---|---|
-| ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** | Adicione outro intervalo de datas, usando o [Construtor de intervalo de datas](create.md#date-range-builder). |
-| ![Pesquisar](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar por título*] | Quando nenhum intervalo de datas for selecionado na lista, procure intervalos de datas usando esse campo de pesquisa. |
-| ![Rótulo](/help/assets/icons/Label.svg) **[!UICONTROL Marca]** | Marcar os intervalos de datas selecionados. Na caixa de diálogo **[!UICONTROL Intervalo de datas da marca]**, selecione ou desmarque as marcas para os intervalos de datas selecionados. Selecione **[!UICONTROL Salvar]** para salvar as marcas para os intervalos de datas selecionados. |
-| ![Compartilhar](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Compartilhar]** | Compartilhar os intervalos de datas selecionados. Na caixa de diálogo **[!UICONTROL Compartilhar Intervalo de datas]**, você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar pessoas físicas ou grupos* ou selecionar **[!UICONTROL Organização]** ou **[!UICONTROL Grupos]**. Selecione **[!UICONTROL Salvar]** para salvar os detalhes de compartilhamento dos intervalos de datas selecionados. |
-| ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** | Exclua os intervalos de datas selecionados. Será solicitada uma confirmação. |
-| ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Renomear]** | Renomeie um único intervalo de datas selecionado. Quando selecionado, você pode renomear o intervalo de datas em linha. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Aprovar]** | Aprove os intervalos de datas selecionados. |
-| ![Cópia](/help/assets/icons/Copy.svg) **[!UICONTROL Cópia]** | Copiar os intervalos de datas selecionados. Novos intervalos de datas são criados com o mesmo nome e sufixo (Copiar) |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exportar para CSV]** | Exportar os intervalos de datas selecionados para um arquivo `Date ranges List.csv`. |
+| Ícone | Ação | Descrição |
+|:---:|---|---|
+| ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Adicionar]** | Adicione outro intervalo de datas, usando o [Construtor de intervalo de datas](create.md#date-range-builder). |
+| ![Pesquisar](/help/assets/icons/Search.svg) | [!UICONTROL *Pesquisar por título*] | Quando nenhum intervalo de datas for selecionado na lista, procure intervalos de datas usando esse campo de pesquisa. |
+| ![Rótulo](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Marcar os intervalos de datas selecionados. Na caixa de diálogo **[!UICONTROL Intervalo de datas da marca]**, selecione ou desmarque as marcas para os intervalos de datas selecionados. Selecione **[!UICONTROL Salvar]** para salvar as marcas para os intervalos de datas selecionados. |
+| ![Compartilhar](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Compartilhar]** | Compartilhar os intervalos de datas selecionados. Na caixa de diálogo **[!UICONTROL Compartilhar Intervalo de datas]**, você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar pessoas físicas ou grupos* ou selecionar **[!UICONTROL Organização]** ou **[!UICONTROL Grupos]**. Selecione **[!UICONTROL Salvar]** para salvar os detalhes de compartilhamento dos intervalos de datas selecionados. |
+| ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Exclua os intervalos de datas selecionados. Será solicitada uma confirmação. |
+| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie um único intervalo de datas selecionado. Quando selecionado, você pode renomear o intervalo de datas em linha. |
+| ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aprovar]** | Aprove os intervalos de datas selecionados. |
+| ![Copiar](/help/assets/icons/Copy.svg) | **[!UICONTROL Copiar]** | Copiar os intervalos de datas selecionados. Novos intervalos de datas são criados com o mesmo nome e sufixo (Copiar) |
+| ![ArquivoCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar os intervalos de datas selecionados para um arquivo `Date ranges List.csv`. |
 
 ### Barra de filtros ativa
 

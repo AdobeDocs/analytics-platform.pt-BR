@@ -4,9 +4,9 @@ title: Configurações de coluna
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '882'
 ht-degree: 19%
 
 ---
@@ -51,7 +51,7 @@ Para acessar [!UICONTROL Configurações de coluna], selecione ![Configurações
 
 A formatação condicional aplica formatação a limites superiores, intermediários e inferiores que você pode definir. A aplicação de formatação condicional nas tabelas de forma livre também é habilitada automaticamente nos detalhamentos, a menos que os limites [!UICONTROL Personalizado] sejam selecionados.
 
-<img src="./assets/conditional-formatting.png" alt="As opções de formatação condicional com Personalizado selecionado" width="40%" />
+![Formatação condicional](./assets/conditional-formatting.png)
 
 | Opções de formatação condicional | Descrição |
 | --- | --- |
@@ -67,9 +67,19 @@ A formatação condicional aplica formatação a limites superiores, intermediá
 >[!CONTEXTUALHELP]
 >id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="Usar modelo de atribuição não-padrão"
->abstract="Habilitar um modelo de atribuição não padrão para as colunas selecionadas"
+>abstract="Habilite um modelo de atribuição não padrão para as colunas selecionadas."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>title="Usar modelo de atribuição não-padrão"
+>abstract="O modo de atribuição não padrão não está disponível para esta métrica."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Você pode substituir o modelo de atribuição padrão configurado em [Visualizações de dados](/help/data-views/component-settings/attribution.md).

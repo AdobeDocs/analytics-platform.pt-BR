@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 0e627d536682f62b499f7f6d477c1d906de13f24
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 92%
+source-wordcount: '1052'
+ht-degree: 91%
 
 ---
 
@@ -173,7 +173,7 @@ ht-degree: 92%
       + [Atribuição](../analysis-workspace/c-panels/attribution.md)
       + [Experimentação](../analysis-workspace/c-panels/experimentation.md)
       + [Forma livre](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Público médio por minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Público médio a cada minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Visualizadores simultâneos de mídia](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Tempo gasto com a reprodução da mídia](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Próximo item ou anterior](../analysis-workspace/c-panels/next-previous.md)
@@ -257,7 +257,7 @@ ht-degree: 92%
       + [Visualizar dimensões](../components/dimensions/view-dimensions.md)
       + [Analisar dimensões](../components/dimensions/t-breakdown-fa.md)
       + [Dimensões de separação de tempo](../components/dimensions/time-parting-dimensions.md)
-      + [Dimensões com cardinalidade muito alta](../components/dimensions/high-cardinality.md)
+      + [Dimensões de alta cardinalidade](../components/dimensions/high-cardinality.md)
    + [Métricas](../components/apply-create-metrics.md)
    + Filtros {#cja-filters}
       + [Visão geral dos filtros](../components/filters/filters-overview.md)

@@ -1,12 +1,12 @@
 ---
 description: Casos de uso para alertas.
-title: Alertas - Casos de uso
+title: Casos de uso de alertas
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: def8b074ea468e409e340415d5e96f75d6b69312
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 38%
+source-wordcount: '105'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,9 @@ Você pode criar alertas conforme descrito em [Criar alertas](/help/components/c
 
 As seções a seguir ilustram exemplos de casos de uso a serem considerados ao criar alertas.
 
-## Criar alertas simples filtrados por dois filtros {#section_2E96FFFA93D44F7D8DBCEC97203204AA}
+## Filtrar alertas
+
+Você pode criar alertas simples usando filtros. Por exemplo, defina um alerta sobre o número de sessões para pessoas que visitam a página inicial por meio de uma sessão de aplicativo móvel.
 
 <!-- 
 
@@ -24,12 +26,12 @@ Update screenshots for better readability.
 
  -->
 
-![](assets/alerts_example1.png)
+![](assets/alerts-example1.png)
 
 
 
-## Consolidar (empilhar) alertas em vez de criar vários alertas {#section_B27B0856BA104B9FB6D0BBB317633F18}
+## Empilhar alertas
 
-O empilhamento de alertas combina os alertas para que você não receba vários alertas separados.
+Você pode consolidar (empilhar) alertas em vez de criar vários alertas. O empilhamento de alertas combina os alertas para que você não receba vários alertas separados. No exemplo abaixo, um alerta é enviado quando um dos limites de métrica é acionado.
 
-![](assets/alerts_example2.png)
+![](assets/alerts-example2.png)

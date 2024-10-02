@@ -4,7 +4,7 @@ title: Visão geral do Fluxo
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 30%
@@ -29,7 +29,7 @@ ht-degree: 30%
 
 
 
-A visualização de ![GraphPathing](/help/assets/icons/GraphPathing.svg) [!UICONTROL Fluxo] mostra os caminhos do cliente pelos seus sites e aplicativos.
+A visualização de ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Fluxo]** mostra os caminhos do cliente pelos seus sites e aplicativos.
 
 Com a visualização, é possível:
 
@@ -37,7 +37,7 @@ Com a visualização, é possível:
 * Analise onde os clientes vão antes e depois de pontos de verificação especificados, como entrada, uma dimensão específica ou saída.
 * Crie filtros ao designar um ponto específico em um determinado caminho
 
-+++ Exiba uma demonstração em vídeo da visualização [!UICONTROL Fluxo].
++++ Assista a uma demonstração em vídeo da visualização de Fluxo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
 

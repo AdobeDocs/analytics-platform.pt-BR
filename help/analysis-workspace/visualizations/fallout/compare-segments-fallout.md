@@ -5,10 +5,10 @@ title: Aplicar filtros na análise de fallout
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 45%
+ht-degree: 43%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 45%
 
 >[!IMPORTANT]
 >
->Os filtros usados como pontos de verificação no Fallout devem usar um contêiner que esteja em um nível inferior ao contexto geral da visualização do Fallout. Com um Fallout de contexto de pessoa, os filtros usados como pontos de verificação devem ser filtros baseados em visitas ou eventos. Com um Fallout de contexto de visita, os filtros usados como ponto de verificação devem ser filtros baseados em eventos. Se você usar uma combinação inválida, o fallout será de 100%. Você vê um aviso para a visualização de Fallout ao adicionar um filtro incompatível como ponto de contato. Determinadas combinações inválidas de contêineres de filtro geram diagramas de Fallout inválidos, como:
-
-* Usar um filtro com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de pessoas
-* Usar um filtro com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de visitas
-* Usar um filtro com base em visitas como um ponto de contato dentro de uma visualização de Fallout de contexto de visitas
+>Os filtros usados como pontos de verificação no Fallout devem usar um contêiner que esteja em um nível inferior ao contexto geral da visualização do Fallout. Com um Fallout de contexto de pessoa, os filtros usados como pontos de verificação devem ser filtros baseados em sessão ou evento. Com um Fallout de contexto de sessão, os filtros usados como ponto de verificação devem ser filtros baseados em eventos. Se você usar uma combinação inválida, o fallout será de 100%. Você vê um aviso para a visualização de Fallout ao adicionar um filtro incompatível como ponto de contato. Determinadas combinações inválidas de contêineres de filtro geram diagramas de Fallout inválidos, como:
+>
+>* Usar um filtro com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de pessoas
+>* Usar um filtro com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de sessão
+>* Usar um filtro baseado em sessão como um ponto de contato dentro de uma visualização de Fallout de contexto de sessão
 
 ## Criar um filtro a partir de um ponto de contato
 

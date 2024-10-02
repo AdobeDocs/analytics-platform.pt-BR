@@ -4,10 +4,10 @@ title: Visualização de gráficos de combinação
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 42%
+source-wordcount: '579'
+ht-degree: 41%
 
 ---
 
@@ -50,7 +50,7 @@ Lembre-se:
    | Tipo de comparação de linha | Definição |
    | --- | --- |
    | **[!UICONTROL Comparação de tempo]** | O tipo de comparação mais comum: comparar esse período com 4 semanas atrás, por exemplo. Se você selecionou [!UICONTROL Comparação de tempo], selecione uma segunda opção para definir com qual período deseja comparar.<p>![Comparação de linha com Período selecionado e o campo de seleção secundário para Período.](assets/combo-time-period.png) |
-   | **[!UICONTROL Função]** | Você pode incluir uma função, como [!UICONTROL Média], na comparação. Consulte uma lista de funções compatíveis abaixo.<p>![Menu suspenso Comparação de linhas mostrando as Funções selecionadas e uma lista de funções com suporte disponíveis.](assets/combo-functions.png) |
+   | **[!UICONTROL Função]** | Você pode incluir uma função, como [!UICONTROL Média], na comparação. Consulte a lista de [funções com suporte](#supported-functions).<p>![Menu suspenso Comparação de linhas mostrando as Funções selecionadas e uma lista de funções com suporte disponíveis.](assets/combo-functions.png) |
    | **[!UICONTROL Métrica secundária]** | Você pode, por exemplo, comparar a [!UICONTROL Receita] com outra métrica.<p>![Um gráfico de combinação comparando duas métricas.](assets/combo-2metrics-settings.png) |
 
    {style="table-layout:auto"}

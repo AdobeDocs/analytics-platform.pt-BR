@@ -3,10 +3,10 @@ description: O Gerenciador de métrica calculada permite compartilhar, filtrar, 
 title: Gerenciador de métricas calculadas
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 5%
+source-wordcount: '901'
+ht-degree: 6%
 
 ---
 
@@ -51,17 +51,17 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 
 É possível executar ações em filtros usando o ➋ da barra de ações. A barra de ação contém as seguintes ações:
 
-| Ação | Descrição |
-|---|---|
-| ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** | Adicione outras métricas calculadas, usando o [Criador de métricas calculadas](cm-build-metrics.md). |
-| ![Pesquisar](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar por título*] | Quando nenhuma métrica calculada for selecionada na lista, procure por filtros usando esse campo de pesquisa. |
-| ![Rótulo](/help/assets/icons/Label.svg) **[!UICONTROL Marca]** | Marcar as métricas calculadas selecionadas. Na caixa de diálogo **[!UICONTROL Marcar métrica calculada]**, selecione ou desmarque as marcas da métrica calculada selecionada. Selecione **[!UICONTROL Salvar]** para salvar as marcas das métricas calculadas selecionadas. Consulte [Marcar métricas calculadas](cm-tagging.md) para obter mais informações. |
-| ![Compartilhar](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Compartilhar]** | Compartilhar as métricas calculadas selecionadas. Na caixa de diálogo **[!UICONTROL Compartilhar métricas calculadas]**, você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar pessoas físicas ou grupos* ou selecionar **[!UICONTROL Organização]** ou **[!UICONTROL Grupos]**. Selecione **[!UICONTROL Salvar]** para salvar os detalhes de compartilhamento das métricas calculadas selecionadas. Consulte [Compartilhar métricas calculadas](cm-sharing.md) para obter mais informações. |
-| ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** | Excluir as métricas calculadas selecionadas. Será solicitada uma confirmação. |
-| ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Renomear]** | Renomear uma única métrica calculada selecionada. Quando selecionada, você pode renomear a métrica calculada em linha. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Aprovar]** | Aprove as métricas calculadas selecionadas. Consulte [Aprovar métricas calculadas](cm-approving.md). |
-| ![Cópia](/help/assets/icons/Copy.svg) **[!UICONTROL Cópia]** | Copie as métricas calculadas selecionadas. Novas métricas calculadas são criadas com o mesmo nome e sufixo `(Copy)` |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exportar para CSV]** | Exportar as métricas calculadas para um arquivo `Calculated  metric List.csv`. |
+| Ícone | Ação | Descrição |
+|:---:|---|---|
+| ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Adicionar]** | Adicione outras métricas calculadas, usando o [Criador de métricas calculadas](cm-build-metrics.md). |
+| ![Pesquisar](/help/assets/icons/Search.svg) | [!UICONTROL *Pesquisar por título*] | Quando nenhuma métrica calculada for selecionada na lista, procure por filtros usando esse campo de pesquisa. |
+| ![Rótulo](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Marcar as métricas calculadas selecionadas. Na caixa de diálogo **[!UICONTROL Marcar métrica calculada]**, selecione ou desmarque as marcas da métrica calculada selecionada. Selecione **[!UICONTROL Salvar]** para salvar as marcas das métricas calculadas selecionadas. Consulte [Marcar métricas calculadas](cm-tagging.md) para obter mais informações. |
+| ![Compartilhar](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Compartilhar]** | Compartilhar as métricas calculadas selecionadas. Na caixa de diálogo **[!UICONTROL Compartilhar métricas calculadas]**, você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar pessoas físicas ou grupos* ou selecionar **[!UICONTROL Organização]** ou **[!UICONTROL Grupos]**. Selecione **[!UICONTROL Salvar]** para salvar os detalhes de compartilhamento das métricas calculadas selecionadas. Consulte [Compartilhar métricas calculadas](cm-sharing.md) para obter mais informações. |
+| ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Excluir as métricas calculadas selecionadas. Será solicitada uma confirmação. |
+| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomear uma única métrica calculada selecionada. Quando selecionada, você pode renomear a métrica calculada em linha. |
+| ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aprovar]** | Aprove as métricas calculadas selecionadas. Consulte [Aprovar métricas calculadas](cm-approving.md). |
+| ![Copiar](/help/assets/icons/Copy.svg) | **[!UICONTROL Copiar]** | Copie as métricas calculadas selecionadas. Novas métricas calculadas são criadas com o mesmo nome e sufixo `(Copy)` |
+| ![ArquivoCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar as métricas calculadas para um arquivo `Calculated  metric List.csv`. |
 
 ### Barra de filtros ativa
 

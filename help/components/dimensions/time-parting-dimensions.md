@@ -4,7 +4,7 @@ title: Dimensões de separação de tempo
 feature: Dimensions
 exl-id: 5c3c2867-58de-4765-a4e1-91eac1891b38
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 58%
@@ -13,7 +13,7 @@ ht-degree: 58%
 
 # Dimensões de separação de tempo no Analysis Workspace
 
-A separação de tempo coleta o carimbo de data e hora de eventos coletados e o divide em dimensões mais significativas, como &quot;Hora do dia&quot; ou &quot;Dia da semana&quot;.
+A divisão de tempo coleta o carimbo de data e hora de eventos coletados e o divide em dimensões mais significativas, como **Hora do dia** ou **Dia da semana**.
 
 As dimensões de separação de tempo são baseadas no fuso horário da visualização de dados. Essas dimensões estão disponíveis no Analysis Workspace e podem ajudar nas seguintes questões:
 

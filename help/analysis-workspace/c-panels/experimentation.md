@@ -4,9 +4,9 @@ title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2167'
 ht-degree: 23%
 
 ---
@@ -180,7 +180,6 @@ As métricas calculadas que incluem qualquer uma das seguintes métricas ou cons
 * Constantes adicionadas ou subtraídas de uma métrica base (por exemplo, `Revenue+50`)
 * Qualquer uma das seguintes métricas básicas:
    * Pessoas
-   * (o que mais?)
 
 As métricas calculadas que não são compatíveis com o painel Experimentação têm o valor [!UICONTROL **Em todos os lugares na Customer Journey Analytics (excluindo a experimentação)**] no campo [!UICONTROL **Compatibilidade de produto**] ao criar a métrica calculada. Para obter informações sobre como criar uma métrica calculada, consulte [Criar métricas](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 

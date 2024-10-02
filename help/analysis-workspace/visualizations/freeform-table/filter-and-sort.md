@@ -4,9 +4,9 @@ title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a9976a053021b2b0ac26daaad2cfe89f8af61a96
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '846'
 ht-degree: 42%
 
 ---
@@ -47,7 +47,7 @@ Para excluir linhas específicas de uma tabela de forma livre:
 
 1. Passe o mouse sobre a linha que deseja excluir e selecione ![Fechar](/help/assets/icons/Close.svg).
 
-   Mantenha pressionada a tecla Shift para selecionar um intervalo de linhas, ou mantenha pressionada a tecla Command (no Mac) ou a tecla Ctrl (no Windows) para selecionar várias linhas.
+   Mantenha pressionada a tecla ***shift*** para selecionar um intervalo de linhas, ou mantenha pressionada a tecla ***cmd*** (no Mac) ou a tecla ***ctrl*** (no Windows) para selecionar várias linhas.
 
 <!--### Right-click > Delete selected rows
 

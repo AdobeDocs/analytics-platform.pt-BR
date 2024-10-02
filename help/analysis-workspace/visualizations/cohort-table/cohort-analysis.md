@@ -4,7 +4,7 @@ description: Saiba como usar uma tabela de coorte para análise de coorte no Ana
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 383fad799944f7405af6de1754aa2e0af83e2cab
+source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 28%
@@ -32,7 +32,7 @@ ht-degree: 28%
 <!-- markdownlint-enable MD034 -->
 
 
-*coorte* é um grupo de pessoas que compartilham características comuns em um período especificado. Uma visualização de ![TabelaDeTexto](/help/assets/icons/TextNumbered.svg) [!UICONTROL TabelaDeCoorte] é útil, por exemplo, quando você deseja saber como uma coorte interage com uma marca. Você pode detectar facilmente as mudanças nas tendências e atuar de acordo com elas. (Há explicações sobre a [!UICONTROL análise de coorte] disponíveis na Web, por exemplo, em [Análise de coorte 101](https://pt.wikipedia.org/wiki/Cohort_analysis).)
+*coorte* é um grupo de pessoas que compartilham características comuns em um período especificado. Uma visualização de ![TabelaDeTexto](/help/assets/icons/TextNumbered.svg) **[!UICONTROL TabelaDeCoorte]** é útil, por exemplo, quando você deseja saber como uma coorte interage com uma marca. Você pode detectar facilmente as mudanças nas tendências e atuar de acordo com elas. (Há explicações sobre a [!UICONTROL análise de coorte] disponíveis na Web, por exemplo, em [Análise de coorte 101](https://pt.wikipedia.org/wiki/Cohort_analysis).)
 
 Após criar um relatório de coorte, você pode preparar seus componentes (dimensões, métricas e filtros específicos) e, em seguida, compartilhá-lo com qualquer pessoa. Consulte [Preparar e compartilhar](/help/analysis-workspace/curate-share/curate.md).
 
