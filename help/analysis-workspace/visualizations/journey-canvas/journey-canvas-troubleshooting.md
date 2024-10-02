@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 057c9f4a0e8fb163bfb23cea1870f949ad4ae1c0
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '587'
 ht-degree: 1%
 
 ---
@@ -41,10 +41,23 @@ Por exemplo, se você usar Pessoa como o contêiner com Sessão como a métrica 
 
 As configurações a seguir podem resultar em nós que mostram porcentagens que excedem 100%:
 
-* Quando o campo **[!UICONTROL Valor percentual]** está definido como **[!UICONTROL Percentual do total]** e uma métrica primária é selecionada, isso resulta em menos dados para o nó inicial do que em nós subsequentes.
+* Quando o campo **[!UICONTROL Valor percentual]** está definido como **[!UICONTROL Percentual do total]** ou **[!UICONTROL Percentual do nó inicial]**, e uma métrica primária é selecionada, o que resulta em menos dados para o nó inicial do que em nós subsequentes.
 
   Por exemplo, se Receita for selecionada como a métrica principal e nenhuma receita estiver sendo realizada na métrica principal, qualquer nó em que a receita estiver sendo realizada será exibido como excedendo 100%.
 
+## Nós que têm uma porcentagem ou valor maior que os nós anteriores
+
+## Nós que têm uma porcentagem ou valor maior que os nós anteriores
+
+## Os nós que vêm depois na jornada têm uma porcentagem ou valor maior do que aqueles que vêm antes
+
+## Um nó com uma porcentagem ou valor maior do que os nós que o precedem na jornada
+
+## Nós com uma porcentagem ou valor maior que os nós anteriores
+
+## Nós
+
+## Uma porcentagem ou valor maior em nós subsequentes
 
 ## Uma jornada que não tem forma de funil
 

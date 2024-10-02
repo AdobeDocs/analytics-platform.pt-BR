@@ -4,10 +4,10 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: 17b684a3662caf68b4c4a097caad9cf6d0eb3d9f
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 49%
+source-wordcount: '1651'
+ht-degree: 51%
 
 ---
 
@@ -126,12 +126,6 @@ O Customer Journey Analytics pega todas as combinações de namespace e ID de se
 Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Por exemplo, <user@adobe.com> pode ser direcionado em todos os seus dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
 Para exibir públicos-alvo do Customer Journey Analytics na Platform:
-
->[!AVAILABILITY]
->
->A funcionalidade descrita nas etapas a seguir está na fase de Teste limitado da versão e pode ainda não estar disponível em seu ambiente. Se essas etapas não corresponderem ao que você vê em seu ambiente, use as seguintes etapas: Vá para [!UICONTROL **Segmentos**] > [!UICONTROL **Criar segmentos**] > guia [!UICONTROL **Públicos-alvo**] > [!UICONTROL **Públicos-alvo do CJA**].
->
->Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
 
 1. Expanda [!UICONTROL **Cliente**] no painel esquerdo e selecione [!UICONTROL **Públicos-alvo**]. <!-- is there a folder called "Customer Journey Analytics? -->
 

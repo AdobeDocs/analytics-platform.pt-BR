@@ -4,9 +4,9 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c42858908aa8e73c5f3b622b9911ff9e9724f2dc
+source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
 workflow-type: tm+mt
-source-wordcount: '1318'
+source-wordcount: '1367'
 ht-degree: 2%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 2%
 A visualização da tela de Jornada permite analisar e obter insights profundos sobre as jornadas fornecidas aos usuários e clientes. Ele permite definir uma jornada do zero ou visualizá-la no Journey Optimizer e, em seguida, ver como as pessoas saíram (abandonaram) ou continuaram (atravessaram) a jornada.
 
 Você pode [criar análises de jornadas de usuário](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) usando qualquer combinação de eventos, itens de dimensão, filtros e intervalos de datas para criar nós de jornada. Conecte os nós para criar o fluxo da jornada e incluir vários caminhos e pontos de decisão. Arraste nós na tela para reorganizar os eventos e as condições da jornada. Atualizações de dados em tempo real à medida que você faz alterações.
+
+[Os nós estão conectados](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) como um &quot;caminho eventual&quot;, o que significa que os visitantes são contados enquanto eventualmente se movem de um nó para outro, independentemente de quaisquer eventos que ocorram entre os dois nós. O tempo alocado para que os usuários percorram o caminho é determinado pela configuração do container.
+
+![tela de Jornada](assets/journey-canvas.png)
 
 ## Recursos principais
 
@@ -39,13 +43,13 @@ A seguir estão alguns exemplos dos tipos de insights que a tela da Jornada pode
 
 * O número e a porcentagem de pessoas que concluíram a jornada (chegou ao nó final)
 
-* O número e a porcentagem de pessoas que chegaram a um determinado ponto (nó) da jornada
+* O número e a porcentagem de pessoas que chegaram a um determinado nó da jornada
 
-* A etapa mais comum após ou antes de um determinado ponto (nó) da jornada
+* A etapa mais comum após ou antes de um determinado nó da jornada
 
 **Fallout**
 
-* Os pontos (nós) da jornada em que as pessoas mais comumente abandonaram a jornada (nunca chegaram a nenhum dos próximos nós imediatos)
+* Os nós da jornada em que as pessoas mais comumente saíam da jornada (nunca chegaram a nenhum dos nós seguintes imediatos)
 
 **Outro**
 

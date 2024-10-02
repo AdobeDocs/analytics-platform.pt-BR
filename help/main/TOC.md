@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: 04a95b6e502a8a1c1e686738d490d2a40936e738
 workflow-type: tm+mt
-source-wordcount: '1052'
-ht-degree: 91%
+source-wordcount: '1021'
+ht-degree: 92%
 
 ---
 
@@ -127,31 +127,31 @@ ht-degree: 91%
       + [Gerenciar fontes de dados](../analysis-workspace/visualizations/t-sync-visualization.md)
       + [Legendas inteligentes](../analysis-workspace/visualizations/intelligent-captions.md)
       + Tabela de forma livre {#freeform-table}
-         + [Visão geral da tabela de forma livre](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
+         + [Visão geral](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Criar hiperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
          + Configurações de coluna e linha {#column-row-settings}
             + [Configurações de coluna](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Configurações de linha](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Itens dinâmicos vs. estáticos](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
          + [Filtrar e classificar tabelas](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Totais do Espaço de trabalho](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Totais do Workspace](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Tabela de coorte {#cohort-table}
-         + [Visão geral da tabela de coorte](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
-         + [Configurar uma tabela de coorte](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
-         + [Casos de uso da análise de coorte](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+         + [Visão geral](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+         + [Configurar](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
+         + [Casos de uso](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Fallout {#fallout}
-         + [Visão geral de fallout](../analysis-workspace/visualizations/fallout/fallout-flow.md)
-         + [Configurar um fallout](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
+         + [Visão geral](../analysis-workspace/visualizations/fallout/fallout-flow.md)
+         + [Configurar](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
          + [Fallout interdimensional](../analysis-workspace/visualizations/fallout/configuring-interdimensional-fallout.md)
-         + [Aplicar filtros na análise de fallout](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
+         + [Aplicar filtros](../analysis-workspace/visualizations/fallout/compare-segments-fallout.md)
       + Fluxo {#flow}
-         + [Visão geral do Fluxo](../analysis-workspace/visualizations/c-flow/flow.md)
-         + [Configurar um fluxo](../analysis-workspace/visualizations/c-flow/create-flow.md)
+         + [Visão geral](../analysis-workspace/visualizations/c-flow/flow.md)
+         + [Configurar](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Fluxos interdimensionais](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
       + Tela da jornada {#journey-canvas}
-         + [Visão geral da tela da jornada](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
-         + [Configurar a visualização de uma tela da jornada](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
-         + [Solução de problemas da tela de jornada](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+         + [Visão geral](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
+         + [Configurar](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+         + [Solução de problemas](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [Área (empilhada)](../analysis-workspace/visualizations/area.md)
       + [Barra (empilhada)](../analysis-workspace/visualizations/bar.md)
       + [Marcador](../analysis-workspace/visualizations/bullet-graph.md)
@@ -168,7 +168,7 @@ ht-degree: 91%
       + [Mapa de árvore](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Painéis {#panels}
-      + [Visão geral dos painéis](../analysis-workspace/c-panels/panels.md)
+      + [Visão geral](../analysis-workspace/c-panels/panels.md)
       + [Painel em branco](../analysis-workspace/c-panels/blank-panel.md)
       + [Atribuição](../analysis-workspace/c-panels/attribution.md)
       + [Experimentação](../analysis-workspace/c-panels/experimentation.md)
@@ -185,16 +185,16 @@ ht-degree: 91%
       + [Criar links compartilháveis](../analysis-workspace/curate-share/shareable-links.md)
       + [Projetos do somente para visualização](../analysis-workspace/curate-share/view-only-projects.md)
    + Exportar {#export}
-      + [Visão geral de exportação](../analysis-workspace/export/export-project-overview.md)
+      + [Visão geral](../analysis-workspace/export/export-project-overview.md)
       + [Baixar](../analysis-workspace/export/download-send.md)
       + [Enviar para outros](../analysis-workspace/export/t-schedule-report.md)
       + [Exportar para a nuvem](../analysis-workspace/export/export-cloud.md)
    + Detecção de anomalias {#anomaly-detection}
-      + [Visão geral da Detecção de anomalias](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
+      + [Visão geral](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [Exibir anomalias no Analysis Workspace](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
       + [Técnicas estatísticas usadas na Detecção de anomalias](../analysis-workspace/c-anomaly-detection/statistics-anomaly-detection.md)
    + Previsão {#forecasting}
-      + [Visão geral da previsão](../analysis-workspace/c-forecast/forecasting.md)
+      + [Visão geral](../analysis-workspace/c-forecast/forecasting.md)
       + [Previsões de visualização no Analysis Workspace](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Técnicas estatísticas usadas no serviço de previsão](../analysis-workspace/c-forecast/statistics-forecasting.md)
       + [Índice ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
