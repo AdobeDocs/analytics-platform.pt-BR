@@ -376,7 +376,7 @@ ht-degree: 91%
       + [Extensão BI](../use-cases/data-export/bi-extension.md)
       + [Exportar conjuntos de dados](../use-cases/data-export/export-datasets.md)
       + [Exportar tabela completa](../use-cases/data-export/export-full-table.md)
-      + [Conjuntos de dados de exportação e Serviço de consulta ](../use-cases/data-export/queryservice-export-datasets.md)
+      + [Conjuntos de dados de exportação e Serviço de consulta](../use-cases/data-export/queryservice-export-datasets.md)
    + B2B {#b2b}
       + [Um exemplo de projeto B2B](../use-cases/b2b/example.md)
    + Dados entre canais {#cross-channel}
