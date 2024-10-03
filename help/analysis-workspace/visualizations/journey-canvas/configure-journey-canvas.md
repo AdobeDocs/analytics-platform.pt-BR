@@ -4,9 +4,9 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
+source-git-commit: 3b9f477001747a96359f77f2e48baf7589b7a1e4
 workflow-type: tm+mt
-source-wordcount: '6593'
+source-wordcount: '6391'
 ht-degree: 1%
 
 ---
@@ -149,10 +149,6 @@ Você cria nós das seguintes maneiras: arrastando componentes do Workspace do p
 
 ### Mostrar os nós principais com base nos nós existentes
 
->[!AVAILABILITY]
->
->Este recurso ainda não está disponível.
-
 Você pode mostrar automaticamente os nós principais com base nos nós que já estão na tela. Você pode adicionar os nós principais à tela de Jornada ou visualizá-los em uma tabela de forma livre.
 
 Essa opção está disponível para os seguintes objetos na tela de desenho:
@@ -221,17 +217,17 @@ Você pode selecionar uma seta e mostrar os itens de dimensão principais que fi
 
 ### Nós duplicados
 
->[!AVAILABILITY]
->
->Este recurso ainda não está disponível.
-
 A opção de duplicação está disponível para os seguintes objetos na tela:
+
+* Nós individuais
 
 * Vários nós
 
 Para duplicar nós:
 
-1. Selecione vários nós que deseja duplicar.
+1. Selecione um ou mais nós que deseja duplicar.
+
+   Para selecionar vários nós, mantenha pressionada a tecla Command (no Mac) ou Ctrl (no Windows).
 
 1. Clique com o botão direito em um dos nós selecionados e selecione [!UICONTROL **Duplicar**].
 
@@ -263,7 +259,7 @@ Você pode executar qualquer um dos seguintes procedimentos para combinar nós n
 
 * No painel esquerdo, arraste vários componentes simultaneamente para uma área em branco da tela de desenho enquanto mantém pressionada a tecla Shift.
 
-* Na tela, selecione os nós que deseja combinar, clique com o botão direito do mouse em um dos nós selecionados e selecione **Combinar**.<!--Is there a limit on how many you can combine? -->
+<!-- * On the canvas, select the nodes that you want to combine, right-click one of the selected nodes, then select **Combine**. Is there a limit on how many you can combine? -->
 
 #### Lógica ao combinar nós
 
@@ -304,7 +300,7 @@ Os nós são conectados por uma seta. A direção e a largura da seta têm signi
 
 Ao conectar nós na tela do Jornada, eles são conectados por meio do operador THEN. Isso também é conhecido como [filtragem sequencial](/help/components/filters/seg-sequential-build.md).
 
-Os nós são conectados como um &quot;caminho eventual&quot;, o que significa que os visitantes são contados desde que eventualmente se movam de um nó para outro, independentemente de quaisquer eventos que ocorram entre os dois nós. O tempo alocado para que os usuários percorram o caminho é determinado pela configuração do container. Também pode ser controlado por [adicionar uma restrição de tempo](#add-a-time-constraint-between-nodes).
+Os nós são conectados como um &quot;caminho eventual&quot;, o que significa que os visitantes são contados desde que eventualmente se movam de um nó para outro, independentemente de quaisquer eventos que ocorram entre os dois nós. O tempo alocado para que os usuários percorram o caminho é determinado pela configuração do container. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
 Você pode exibir a lógica dos nós conectados clicando com o botão direito do mouse no nó e selecionando [!UICONTROL **Criar filtro do nó**]. A lógica é mostrada na seção [!UICONTROL **Definição**].
 
@@ -328,23 +324,23 @@ Ao adicionar um nó à tela, você pode colocá-lo entre dois nós conectados. O
 
 Para obter mais informações, consulte [Adicionar nós](#add-nodes).
 
-### Adicionar uma restrição de tempo entre nós
+<!--
+
+### Add a time constraint between nodes
 
 >[!AVAILABILITY]
 >
->Este recurso ainda não está disponível.
+>This feature is not yet available.
 
-Você pode definir uma restrição de tempo entre nós. Quando uma restrição de tempo está em vigor, as pessoas são consideradas como tendo saído da jornada se seguirem a jornada definida, mas levarem mais tempo do que o período de tempo alocado para se moverem entre os nós.
+You can set a time constraint between nodes. When a time constraint is in place, people are considered to have fallen out of the journey if they follow the defined journey but take longer than the allotted time period to move between the nodes.
 
-A opção para adicionar uma restrição de tempo está disponível para os seguintes objetos na tela de desenho:
+The option to add a time constraint is available for the following objects on the canvas:
 
-* A seta entre os nós
+* The arrow between nodes
 
-Para adicionar uma restrição de tempo:
+To add a time constraint:
 
-1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse na seta entre 2 nós e selecione [!UICONTROL **Adicionar restrição de tempo**].
-
-<!-- 
+1. In a Journey canvas visualization, right-click the arrow between 2 nodes, then select [!UICONTROL **Add time constraint**].
 
 from Travis: You can set time to be within X amount of time or after X amount of time (those are the only two options I think, but we can check with Brandon). 
 1. Choose from the following options: 
@@ -353,35 +349,35 @@ from Travis: You can set time to be within X amount of time or after X amount of
 
 ## Gerenciar nós ou setas
 
-### Alterar a cor de um nó ou seta
+<!--
+
+### Change the color of a node or arrow
 
 >[!AVAILABILITY]
 >
->Este recurso ainda não está disponível.
+>This feature is not yet available.
 
-É possível personalizar visualmente uma jornada alterando a cor de qualquer nó ou seta na tela de desenho. Por exemplo, você pode ajustar as cores para indicar um evento desejável ou indesejável.
+You can visually customize a journey by changing the color of any node or arrow on the canvas. For example, you could adjust colors to indicate a desirable or undesirable event.
 
-A opção para alterar a cor está disponível para os seguintes objetos na tela de desenho:
+The option to change the color is available for the following objects on the canvas:
 
-* Nós individuais
+* Individual nodes
 
-* A seta entre os nós
+* The arrow between nodes
 
-Para alterar a cor de um nó ou seta:
+To change the color of a node or arrow:
 
-1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse no nó ou na seta cuja cor você deseja alterar.
+1. In a Journey canvas visualization, right-click the node or arrow whose color you want to change.
 
-1. Selecione [!UICONTROL **Alterar cor**]. <!--make sure "color" isn't capitalized. It is in the req doc-->
+1. Select [!UICONTROL **Change color**]. 
 
-1. Selecione a cor desejada.
+1. Select the desired color. 
 
-   As seguintes cores estão disponíveis: <!--look into this interaction and color list-->
+   The following colors are available: 
+
+-->
 
 ### Renomear um nó
-
->[!AVAILABILITY]
->
->Este recurso ainda não está disponível.
 
 Quando você arrasta um componente para uma visualização da tela de Jornada, ele cria um nó com o mesmo nome do componente. Você pode renomear o nó para corresponder melhor à etapa da jornada que o nó representa.
 
@@ -453,15 +449,13 @@ Considere o seguinte ao aplicar um detalhamento:
 
 #### Aplicar um detalhamento a um ou mais nós ou setas
 
->[!AVAILABILITY]
->
->Este recurso ainda não está disponível.
-
 1. Em uma visualização da tela de Jornada, selecione um ou mais nós aos quais deseja aplicar um detalhamento e clique com o botão direito do mouse em um dos nós selecionados.
 
    Ou
 
    Em uma visualização da tela de Jornada, selecione uma ou mais setas entre 2 nós nos quais deseja aplicar o detalhamento e clique com o botão direito do mouse em uma das setas selecionadas.
+
+   Para selecionar vários nós ou setas, mantenha pressionada a tecla Command (no Mac) ou Ctrl (no Windows).
 
 1. Selecione [!UICONTROL **Detalhamento**].
 
@@ -513,6 +507,8 @@ Para criar um público-alvo:
 
    Em uma visualização da tela de Jornada, selecione uma ou mais setas entre 2 nós onde deseja criar um público-alvo e clique com o botão direito do mouse em uma das setas selecionadas.
 
+   Para selecionar vários nós ou setas, mantenha pressionada a tecla Command (no Mac) ou Ctrl (no Windows).
+
    >[!NOTE]
    >
    >Os públicos-alvo não podem incluir métricas calculadas ou qualquer métrica baseada em um [conjunto de dados de resumo](/help/data-views/summary-data.md). Se você tentar criar um público-alvo a partir de qualquer área da tela de Jornada que contenha uma métrica calculada ou uma métrica baseada em um conjunto de dados de resumo, a métrica calculada não será incluída na definição de público-alvo.
@@ -522,10 +518,6 @@ Para criar um público-alvo:
 1. Continue criando e publicando o público-alvo conforme descrito em [Criar e publicar públicos-alvo](/help/components/audiences/publish.md).
 
 ### Exibir dados de tendência
-
->[!AVAILABILITY]
->
->Este recurso ainda não está disponível.
 
 Você pode exibir os dados de tendência em um gráfico de linhas para objetos na tela de Jornada. <!--, with some prebuilt anomaly detection data (this is the definition in Fallout) -->
 
@@ -546,6 +538,8 @@ Para exibir dados de tendência:
    Ou
 
    Em uma visualização da tela de Jornada, selecione uma ou mais setas entre 2 nós para os quais deseja exibir dados de tendência e clique com o botão direito do mouse em uma das setas selecionadas.
+
+   Para selecionar vários nós ou setas, mantenha pressionada a tecla Command (no Mac) ou Ctrl (no Windows).
 
 1. Selecione [!UICONTROL **Tendência**].
 
