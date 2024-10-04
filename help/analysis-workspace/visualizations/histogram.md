@@ -4,7 +4,7 @@ title: Histograma
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 37%
@@ -42,7 +42,7 @@ No exemplo abaixo, um histograma é usado para agrupar sessões para o número d
 
 ![](assets/histogram.png)
 
-## Configurações avançadas {#section_09D774C584864D4CA6B5672DC2927477}
+## Configurações avançadas
 
 Como parte da visualização, configurações específicas do histograma estão disponíveis.
 

@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 6bfb7254-5bb7-45c6-86a2-0651a0d222fa
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '2351'
+source-wordcount: '2348'
 ht-degree: 59%
 
 ---
 
-# Assimilar dados por meio da API do servidor Adobe Experience Platform Edge Network
+# Assimilar dados por meio da API do servidor Edge Network
 
 Este guia de início rápido explica como você pode assimilar dados de rastreamento de dispositivos como dispositivos IoT, decodificadores de sinais, consoles de jogos, aplicativos de desktop diretamente no Adobe Experience Platform usando a API e Edge Network do servidor Edge Network da Adobe Experience Platform. Em seguida, use esses dados no Customer Journey Analytics.
 

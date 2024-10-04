@@ -1,17 +1,17 @@
 ---
-title: Configurar transmissão de dados do Google Analytics para a Adobe Experience Platform
+title: Configurar transmissão de dados do Google Analytics
 description: Saiba como configurar sua implementação para enviar uma camada de dados do Google para a Adobe Experience Platform
 exl-id: 58854f4b-ae28-424e-a2cf-0e76219cb802
 feature: Use Cases
 role: Admin
-source-git-commit: bfaf76fa5f225e9aa3153fc4ee10c5be8f3164e7
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 89%
+source-wordcount: '226'
+ht-degree: 84%
 
 ---
 
-# Configurar transmissão de dados do Google Analytics para a Adobe Experience Platform
+# Configurar transmissão de dados do Google Analytics
 
 Esta página foca em como assimilar seus dados em tempo real do Google Analytics na Adobe Experience Platform, permitindo que você referencie esse conjunto de dados em uma Visualização de dados no Customer Journey Analytics. Você pode combinar as etapas desta página com a [Ingestão de dados históricos do Google Analytics na Adobe Experience Platform](backfill.md), que gera um conjunto de dados contendo dados históricos. Combine um conjunto de dados de transmissão com um conjunto de dados de preenchimento retroativo para obter uma visualização contínua de dados anteriores e atuais no Customer Journey Analytics.
 

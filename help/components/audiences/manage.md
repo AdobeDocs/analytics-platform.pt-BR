@@ -4,9 +4,9 @@ description: Saiba como gerenciar públicos-alvo no Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '677'
 ht-degree: 20%
 
 ---
@@ -24,6 +24,8 @@ O gerenciamento de públicos-alvo criados anteriormente permite:
 * Veja se os públicos-alvo no Customer Journey Analytics estão **sendo usados ativamente pela Real-time Customer Platform**. Ou (idealmente) qualquer aplicativo Experience Platform que consuma os públicos-alvo criados pelo Customer Journey Analytics.
 
 Se você tiver acesso de [Visualização de público-alvo](/help/technotes/access-control.md#user-level-access), poderá visualizar públicos-alvo. Se você tiver acesso de [Criação de público](/help/technotes/access-control.md#user-level-access), poderá editar e excluir públicos. A [lista de Públicos-alvo](#audiences-list) mostra os públicos-alvo.
+
+![Gerenciador de públicos-alvo](assets/audiences-manager.png)
 
 ## Lista de públicos-alvo
 

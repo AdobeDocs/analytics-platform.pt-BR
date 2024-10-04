@@ -4,10 +4,10 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: e131fd78ceee67a05a1ea7256e58b4b34ce44ae5
 workflow-type: tm+mt
-source-wordcount: '1931'
-ht-degree: 17%
+source-wordcount: '1952'
+ht-degree: 16%
 
 ---
 
@@ -147,25 +147,25 @@ Em vários pontos antes, durante e depois da publicação do público-alvo, pode
 
 ## Usar públicos-alvo do Customer Journey Analytics no Experience Platform {#audiences-aep}
 
-O Customer Journey Analytics pega todas as combinações de namespace e ID de seu público publicado e as transmite para o Perfil do cliente em tempo real (RTCP). O Customer Journey Analytics envia o público-alvo para o Experience Platform com a identidade primária definida, de acordo com o que foi selecionado como a [!UICONTROL ID de pessoa] quando a conexão foi configurada.
+O Customer Journey Analytics pega todas as combinações de namespace e ID de seu público-alvo publicado e as transmite para o Real-time Customer Data Platform. O Customer Journey Analytics envia o público-alvo para o Experience Platform com a identidade primária definida, de acordo com o que foi selecionado como a [!UICONTROL ID de pessoa] quando a conexão foi configurada.
 
-Em seguida, o RTCP examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Por exemplo, <user@adobe.com> pode ser direcionado em todos os seus dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
+Em seguida, o Real-time Customer Data Platform examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Por exemplo, <user@adobe.com> pode ser direcionado em todos os seus dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
 Para exibir públicos-alvo do Customer Journey Analytics na Platform:
 
-1. Expanda [!UICONTROL **Cliente**] no painel esquerdo e selecione [!UICONTROL **Públicos-alvo**]. <!-- is there a folder called "Customer Journey Analytics? -->
+1. Expanda **[!UICONTROL Cliente]** no painel esquerdo e selecione **[!UICONTROL Públicos-alvo]**. <!-- is there a folder called "Customer Journey Analytics? -->
 
-1. Selecione a guia [!UICONTROL **Procurar**].
-
-   ![Opção Públicos-alvo no painel esquerdo](assets/audiences-aep.png)
+1. Selecione a guia **[!UICONTROL Procurar]**.
 
 1. Para localizar o público-alvo publicado pelo Customer Journey Analytics, siga um destes procedimentos:
 
-   * Classifique a tabela pela coluna [!UICONTROL **Origin**] para exibir públicos-alvo que mostram [!UICONTROL **Customer Journey Analytics**] como a origem.
+   ![Opção Públicos-alvo no painel esquerdo](assets/aep-audiences.png)
 
-   * Selecione o ícone de filtro.
+   * Classifique a tabela pela coluna **[!UICONTROL Origin]** para exibir públicos-alvo que mostram [!UICONTROL **Customer Journey Analytics**] como a origem.
 
-   * Use o campo de pesquisa.
+   * Filtrar ![Filtro](/help/assets/icons/Filter.svg) em **[!UICONTROL Origem]** e selecionar **[!UICONTROL Customer Journey Analytics]**.
+
+   * Use o campo de pesquisa ![Pesquisa](/help/assets/icons/Search.svg).
 
 Para obter mais informações sobre como usar o Audiences na Platform, consulte a seção [Audiences](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) no [guia da interface do usuário do Construtor de segmentos](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder), na documentação do Experience Platform.
 
@@ -186,7 +186,7 @@ Quando um público-alvo do tipo Customer Journey Analytics é excluído, ele nã
 
 +++
 
-+++**Se um perfil correspondente não existir no RTCDP, um novo perfil será criado?**
++++**Se um perfil correspondente não existir no Real-time Customer Data Platform, um novo perfil será criado?**
 
 Sim, será.
 
@@ -194,7 +194,7 @@ Sim, será.
 
 +++**O Customer Journey Analytics envia os dados do público-alvo como eventos de pipeline ou como um arquivo simples que também vai para o data lake?**
 
-O Customer Journey Analytics transmite os dados para o RTCP por meio do pipeline e esses dados também são coletados em um conjunto de dados do sistema no data lake.
+O Customer Journey Analytics transmite os dados para o Real-time Customer Data Platform por meio do pipeline e esses dados também são coletados em um conjunto de dados do sistema no data lake.
 
 +++
 
@@ -210,9 +210,9 @@ Veja acima. Somente uma identidade por Customer Journey Analytics é enviada.
 
 +++
 
-+++**O RTCP também processa as mensagens Customer Journey Analytics? O Customer Journey Analytics pode adicionar identidades a um gráfico de identidade de perfil por meio do compartilhamento de público-alvo?**
++++**O Real-time Customer Data Platform também processa as mensagens Customer Journey Analytics? O Customer Journey Analytics pode adicionar identidades a um gráfico de identidade de perfil por meio do compartilhamento de público-alvo?**
 
-Não. Somente uma identidade por pessoa é enviada, portanto, não haveria bordas de gráfico para o RTCP consumir.
+Não. Somente uma identidade por pessoa é enviada, portanto, não haveria bordas de gráfico para o Real-time Customer Data Platform consumir.
 
 +++
 

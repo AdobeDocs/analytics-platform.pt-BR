@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: f078bf7b9b9d87335f435db2bbba87b078412738
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '3385'
+source-wordcount: '3382'
 ht-degree: 60%
 
 ---
 
-# Assimilar dados por meio do SDK móvel do Adobe Experience Platform
+# Assimilar dados por meio do SDK móvel
 
 Este guia de início rápido explica como você pode assimilar dados de rastreamento de aplicativos móveis diretamente na Adobe Experience Platform usando o SDK e o Edge Network do Adobe Experience Platform Mobile. Em seguida, use esses dados no Customer Journey Analytics.
 
@@ -283,7 +283,7 @@ Consulte [Configurar a extensão Edge Network do Adobe Experience Platform](http
 Você também pode configurar as seguintes extensões adicionais no catálogo:
 
 - Identidade.
-- Garantia da AEP.
+- AEP Assurance.
 - Consentimento.
 
 Consulte [Configurar uma propriedade de tag](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=pt-BR) no Tutorial do aplicativo móvel para a Experience Platform para obter muito mais informações sobre extensões e suas configurações.

@@ -1,18 +1,18 @@
 ---
 description: Explica quais fatores influenciam a consistência das métricas e as contagens de associação de público-alvo na Real-time Customer Data Platform (Real-time CDP) e no Customer Journey Analytics.
-title: Consistência de métricas e contagens de associação de público na Real-time CDP e no Customer Journey Analytics
+title: Consistência das métricas e associação do público-alvo
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 100%
+source-wordcount: '592'
+ht-degree: 97%
 
 ---
 
 
-# Consistência de métricas e contagens de associação de público-alvo na Real-time CDP e no Adobe Customer Journey Analytics
+# Consistência das métricas e associação do público-alvo
 
 Em cenários reais, a consistência de métricas e as contagens de associação de público-alvo na Real-time Customer Data Platform (Real-time CDP) e no Customer Journey Analytics (CJA) não podem ser garantidas. Este documento explica o porquê.
 

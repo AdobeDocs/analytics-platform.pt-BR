@@ -1,19 +1,19 @@
 ---
-title: Comparar os dados do Adobe Analytics com os dados do Customer Journey Analytics
+title: Comparar com os dados do Adobe Analytics
 description: Saiba como comparar dados do Adobe Analytics com os dados do Customer Journey Analytics
 role: Data Engineer, Data Architect, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: query service;Query service;sql syntax
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 100%
+source-wordcount: '831'
+ht-degree: 98%
 
 ---
 
-# Comparar os dados do Adobe Analytics com os dados do Customer Journey Analytics
+# Comparar com os dados do Adobe Analytics
 
 À medida que a sua organização adota o Customer Journey Analytics, você pode notar algumas diferenças nos dados do Adobe Analytics e do Customer Journey Analytics. Isso é normal e pode ocorrer por vários motivos. O Customer Journey Analytics foi projetado para permitir melhorias no que diz respeito a algumas limitações nos seus dados do AA. No entanto, podem ocorrer discrepâncias inesperadas e não intencionais. Este artigo foi elaborado para ajudar a diagnosticar e resolver essas diferenças, de maneira que você e sua equipe possam usar o Customer Journey Analytics sem se preocupar com a integridade dos dados.
 

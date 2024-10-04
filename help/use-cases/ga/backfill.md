@@ -1,19 +1,19 @@
 ---
-title: Ingestão de dados históricos do Google Analytics na Adobe Experience Platform
+title: Assimilar dados históricos de Google Analytics
 description: Explica como usar o Adobe Customer Journey Analytics para assimilar dados do Google Analytics na Adobe Experience Platform.
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 90%
+source-wordcount: '618'
+ht-degree: 88%
 
 ---
 
 
-# Ingestão de dados históricos do Google Analytics na Adobe Experience Platform
+# Assimilar dados históricos de Google Analytics
 
 Esta página foca em como assimilar seus dados históricos do Google Analytics na Adobe Experience Platform como um conjunto de dados, permitindo referenciar esse conjunto de dados em uma visualização de dados no Customer Journey Analytics. Você pode combinar as etapas desta página com a [Configuração de uma implementação em tempo real do Google Analytics](streaming.md), que gera um conjunto de dados recorrente. Combine esse conjunto de dados histórico com o seu conjunto de dados da implementação atual para obter uma visualização contínua dos dados no Customer Journey Analytics com dados atuais e preenchidos retroativamente.
 

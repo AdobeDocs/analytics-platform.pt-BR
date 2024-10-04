@@ -5,14 +5,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 1ded359997c4915f1b5ea6237aceb4d3d922b3a9
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '3546'
+source-wordcount: '3543'
 ht-degree: 83%
 
 ---
 
-# Assimilar dados por meio do SDK da Web da Adobe Experience Platform
+# Assimilar dados por meio do SDK da Web
 
 Este guia de início rápido explica como você pode assimilar dados de rastreamento de site diretamente na Adobe Experience Platform usando o SDK da Web da Adobe Experience Platform e a Rede de borda e, em seguida, usar esses dados no Customer Journey Analytics.
 

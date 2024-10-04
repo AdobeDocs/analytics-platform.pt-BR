@@ -1,18 +1,18 @@
 ---
-title: Assimilar dados do Marketo Engage na Adobe Experience Platform e relatórios no Customer Journey Analytics
-description: Saiba como trazer dados do Marketo Engage para o Customer Journey Analytics
+title: Relatório sobre dados de Marketo Engage
+description: Saiba como criar relatórios sobre dados do Marketo Engage no Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 64%
+source-wordcount: '376'
+ht-degree: 59%
 
 ---
 
-# Assimilar dados do Marketo Engage na Adobe Experience Platform e relatórios no Customer Journey Analytics
+# Relatório sobre dados de Marketo Engage
 
 Você pode aproveitar os conjuntos de dados de Marketo Engage recém-disponíveis no Adobe Experience Platform (Adobe Experience Platform) para fornecer análises e soluções de relatórios valiosas para profissionais de marketing B2B. Em seguida, relate esses conjuntos de dados na Adobe Customer Journey Analytics.
 
