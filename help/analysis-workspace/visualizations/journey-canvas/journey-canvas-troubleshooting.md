@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 82f8ba3fb04b50e352b76fd1ce866c0615971335
+source-git-commit: 2fc2bd660b017140b8dfa660cf71054af9efb87e
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -48,21 +48,21 @@ A jornada usada nos seguintes cenários é definida com as seguintes configuraç
 
 #### Cenário 1 - O usuário A segue o caminho da jornada na primeira sessão e somente os nós posteriores em uma sessão subsequente
 
-Suponha que o Usuário A visite o site e siga o caminho da jornada (Nó 1: Visite o site > Nó 2: Exiba o Produto A > Nó 3: Confira). Nesse cenário, um evento é contado em cada nó da jornada.
+Suponha que o Usuário A visite o site e conclua a jornada (Nó 1: &quot;Visitar site&quot; > Nó 2: &quot;Exibir produto A&quot; > Nó 3: &quot;Check-out&quot;). Como o Usuário A concluiu a jornada, um evento é contado em cada nó da jornada.
 
-Agora suponha que o Usuário A visite o site novamente em uma sessão posterior. Como o Usuário A já atendeu aos requisitos da jornada seguindo o caminho de jornada em uma sessão anterior, isso significa que sempre que o Usuário A fizer check-out (mesmo que o Usuário A não tenha seguido o caminho da jornada na sessão atual) um evento será contado no terceiro nó da jornada, &quot;Check-out&quot;. Isso resulta em uma porcentagem e um número mais altos no nó &quot;Check-out&quot; do que no nó anterior, &quot;Exibir produto A&quot;.
+Agora, suponha que o Usuário A visite o site novamente em uma sessão posterior. Como o Usuário A já concluiu a jornada em uma sessão anterior seguindo o caminho da jornada, isso significa que sempre que o Usuário A tiver um evento que corresponda a qualquer nó na jornada, mesmo que o Usuário A não tenha seguido o caminho da jornada em sua sessão atual, um evento será contado no nó relevante na jornada. Por exemplo, se o Usuário A fizer check-out, um evento será contado no nó &quot;Check-out&quot;. Isso pode resultar em uma porcentagem e um número mais altos no nó &quot;Check-out&quot; do que no nó anterior, &quot;Exibir produto A&quot;.
 
-Neste exemplo, a configuração do container da jornada desempenha um papel essencial ao determinar se o evento no terceiro nó (&quot;Check-out&quot;) é contado na sessão subsequente.
+Neste exemplo, a configuração de contêiner de jornada de &quot;Pessoa&quot; desempenha um papel essencial ao determinar que o evento no terceiro nó (&quot;Check-out&quot;) é contado na sessão subsequente.
 
-Como alternativa, se Sessão tivesse sido definida como o contêiner (em vez de Pessoa), o evento que ocorreu somente no terceiro nó na visita subsequente não teria contado na jornada, pois as estatísticas mostradas na jornada seriam restritas a uma única sessão definida para uma determinada pessoa. Para saber mais sobre a configuração do contêiner, consulte [Começar a criar uma visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) no artigo [Configurar uma visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
+Como alternativa, se a configuração do contêiner tivesse sido definida como &quot;Sessão&quot;, o evento que ocorreu somente no terceiro nó na visita subsequente não teria contado na jornada, pois as estatísticas mostradas na jornada estariam restritas a uma única sessão definida para uma determinada pessoa. Para saber mais sobre a configuração do contêiner, consulte [Começar a criar uma visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#begin-building-a-journey-canvas-visualization) no artigo [Configurar uma visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
 
 <!-- The time allotted for users to move along the path is determined by the container setting. Because "Person" is selected as the container setting in this example, people who followed the journey's path in one session (moving from Node 1 to Node 2 and to Node 3) met the criteria of the journey. On any subsequent visits to the site, any event they have that matches any node on the journey is counted on that node. -->
 
 #### Cenário 2 - O usuário B cai fora da jornada
 
-Suponha que o Usuário B visite o site e não siga o caminho da jornada (visite o site, visualize o Produto B e faça check-out), um evento é contado para o nó inicial da jornada, &quot;Visita do site&quot;, mas um evento não é contado para os nós restantes e o Usuário B fica fora da jornada. Embora o usuário B tenha realizado o check-out, um evento não é contado no terceiro nó, &quot;Check-out&quot;, porque o usuário B não seguiu o caminho da jornada visualizando o produto A.
+Suponha que o Usuário B visite o site e não conclua a jornada (visite o site, visualize o Produto B e faça check-out). Nesse caso, um evento é contado para o nó inicial da jornada, &quot;Visita do site&quot;, mas um evento não é contado para os nós restantes, e o Usuário B cai fora da jornada. Mesmo que o usuário B tenha feito check-out, um evento não é contado no terceiro nó (&quot;Check-out&quot;) porque o usuário B não concluiu a jornada visualizando o Produto A antes de fazer check-out.
 
-Isso ocorre porque os eventos são contados para cada nó somente quando as pessoas seguem o &quot;caminho final&quot; da jornada, o que significa que os eventos são contados desde que a pessoa eventualmente se mova de um nó para outro, independentemente de quaisquer eventos que ocorram entre os dois nós.
+Isso ocorre porque os eventos são contados para cada nó somente quando as pessoas seguem o &quot;caminho final&quot; da jornada, o que significa que os eventos são contados somente se a pessoa eventualmente se mover de um nó para outro, independentemente de quaisquer eventos que ocorram entre os dois nós.
 
 ### A jornada tem vários caminhos convergindo em um único nó
 
