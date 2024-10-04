@@ -4,10 +4,10 @@ title: Métricas
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 25%
+source-wordcount: '784'
+ht-degree: 15%
 
 ---
 
@@ -15,15 +15,20 @@ ht-degree: 25%
 
 Os projetos agendados do Analysis Workspace podem ser gerenciados no Customer Journey Analytics usando **[!UICONTROL Componentes]** > **[!UICONTROL Projetos agendados]**.
 
-Em **[!UICONTROL Projetos agendados]**, você pode editar e excluir agendamentos de projetos recorrentes. Procure um agendamento usando a ![Pesquisa](/help/assets/icons/Search.svg) no campo de pesquisa. Ou use as opções de filtro ![Filtro](/help/assets/icons/Filter.svg) no painel esquerdo. Você pode filtrar por **[!UICONTROL Marca]**, **[!UICONTROL Proprietários]** e **[!UICONTROL Outros filtros]**.
+Em **[!UICONTROL Projetos agendados]**, você pode editar e excluir agendamentos de projetos recorrentes.  A [Lista de projetos agendados](#scheduled-project-list) mostra os itens criados por um usuário específico. Se a conta de usuário estiver desabilitada no aplicativo, todos os deliveries agendados serão interrompidos.
 
-A lista de Projetos agendados exibe colunas para:
+![Interface de projetos agendados](assets/scheduled-projects.png)
 
-| Campo | Descrição |
+## Lista de projetos agendados
+
+A lista ➊ Projetos agendados exibe colunas para:
+
+| Coluna | Descrição |
 | --- | --- |
-| ![Estrela](/help/assets/icons/Star.svg) | Selecionar ![Estrela](/help/assets/icons/Star.svg) torna esta programação uma favorita. |
+| ![SelectBox](/help/assets/icons/SelectBox.svg) | Quando um ou mais projetos agendados são selecionados, uma barra de ação azul é exibida na parte inferior da interface Projetos agendados. Consulte [Ações](#actions) para obter mais detalhes. |
+| ![Estrela](/help/assets/icons/Star.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um projeto agendado. |
 | **[!UICONTROL ID da programação]** | Uma ID usada principalmente para fins de depuração. |
-| [!UICONTROL Nome] | Nome deste projeto.<br/>Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para ver mais detalhes do projeto agendado.<br/>Selecione ![Mais](/help/assets/icons/More.svg) para abrir um menu de contexto. Nesse menu, é possível:<ul><li>![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** um projeto agendado.</li><li>![Rótulos](/help/assets/icons/Labels.svg) **[!UICONTROL Marca]** um projeto agendado.</li><li>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Aprovar]** um projeto agendado.</li><li>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export CSV]**: exporte um projeto agendado para um arquivo CSV.</li></ul> |
+| **[!UICONTROL Nome]** | Nome deste projeto.<br/>Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para ver mais detalhes do projeto agendado.<br/>Selecione ![Mais](/help/assets/icons/More.svg) para abrir um menu de contexto. Nesse menu, é possível:<ul><li>![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** um projeto agendado.</li><li>![Rótulos](/help/assets/icons/Labels.svg) **[!UICONTROL Marca]** um projeto agendado.</li><li>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Aprovar]** um projeto agendado.</li><li>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export CSV]**: exporte um projeto agendado para um arquivo CSV.</li></ul> |
 | **[!UICONTROL Proprietário]** | A pessoa que criou e é proprietária do projeto. |
 | **[!UICONTROL Tags]** | (opcional) Adicionar tags é uma boa maneira de organizar projetos. Todos os usuários podem criar tags e aplicar uma ou mais tags a um projeto. No entanto, é possível visualizar tags somente para os projetos que você possui ou que foram compartilhados com você. |
 | **[!UICONTROL Entregue a]** | Os recipients deste projeto agendado. |
@@ -34,27 +39,55 @@ A lista de Projetos agendados exibe colunas para:
 | **[!UICONTROL Intervalo de datas mais longo]** | O intervalo de datas mais longo definido para o projeto agendado. Esse valor pode ser relevante para investigar problemas de desempenho. Consulte [Gerente de Atividades de Relatórios](/help/reporting-activity-manager/reporting-activity-overview.md) para obter mais informações. |
 | **[!UICONTROL Número de consultas]** | O número de consultas executadas para o projeto agendado. Esse valor pode ser relevante para investigar problemas de desempenho. Consulte [Gerente de Atividades de Relatórios](/help/reporting-activity-manager/reporting-activity-overview.md) para obter mais informações. |
 
+
 Você pode usar ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para configurar quais colunas exibir.
 
-Projetos agendados mostra os itens criados por um usuário específico. Se a conta de usuário estiver desabilitada no aplicativo, todos os deliveries agendados serão interrompidos.
+Procurar um projeto agendado usando ![Pesquisar](/help/assets/icons/Search.svg). Você também pode ver se algum filtro é aplicado no painel Filtros. Para remover um filtro, selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para um filtro. Para remover todos os filtros, selecione **[!UICONTROL Limpar tudo]**.
+
+Para editar um projeto agendado, selecione o título do projeto agendado. Use a caixa de diálogo **[!UICONTROL Editar projeto agendado]** para atualizar os detalhes do agendamento.
+
+![Editar projeto agendado](assets/edit-scheduled-project.png)
+
+Selecione **[!UICONTROL Atualizar]** para atualizar o agendamento.
+
 
 
 
 ## Ações
 
-As ações a seguir são comuns no Gerenciador de projetos programados. Você pode selecionar ações no menu de contexto ou na barra de ação azul ao selecionar mais de um projeto agendado.
+As ações a seguir são comuns no Gerenciador de projetos programados. Você pode selecionar ações no menu de contexto ou na barra de ação azul ao selecionar um ou mais projetos agendados.
 
-| Ação | Descrição |
+| Ícone | Ação | Descrição |
+|:---:|---|---|
+| ![Fechar](/help/assets/icons/Close.svg) | **[!UICONTROL *x *selecionado]** | Selecione para desmarcar os projetos agendados selecionados. |
+| ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Excluir os projetos agendados selecionados para o projeto; os projetos não são excluídos. |
+| ![Rótulos](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Marcar os projetos agendados selecionados. Em **[!UICONTROL Marcar projetos agendados]**, selecione marcas e **[!UICONTROL Salvar]** para salvar. |
+| ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aprovar]** | Aprovar os projetos agendados selecionados. |
+| ![ArquivoCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar os projetos agendados selecionados para um arquivo chamado `Export Scheduled Projects List.csv`. |
+
+
+## Filtro
+
+Você pode filtrar os projetos agendados [Lista de projetos agendados](#scheduled-project-list) usando a ➌ do painel de filtro. Para mostrar ou ocultar o painel de filtro, use ![Filtro](/help/assets/icons/Filter.svg).
+
+O painel de filtro consiste nas seções a seguir.
+
+### Tags
+
+| Tags | Descrição |
 |---|---|
-| **[!UICONTROL Aprovar]** | Aprove o projeto agendado. |
-| **[!UICONTROL Editar]** | Clique no título da programação para atualizar as configurações de delivery. |
-| **[!UICONTROL Excluir]** | Apaga o calendário selecionado para o projeto; o projeto em si não é apagado. |
-| **[!UICONTROL Tag]** | Adicione uma tag ao projeto agendado para facilitar a localização dos projetos. |
+| ![Tags](/help/components/assets/scheduledprojects-filter-tags.png){width="300"} | A seção **[!UICONTROL Tags]** permite filtrar em tags. <ul><li>Você usa a ![Pesquisa](/help/assets/icons/Search.svg) **[!UICONTROL Tags de Pesquisa]** para procurar tags que deseja usar para filtrar.</li><li>É possível selecionar mais de uma tag. As tags disponíveis dependem das seleções feitas em outras seções no painel de filtro.</li><li>Os números indicam:<ul><li>7︎⃣: o número de projetos agendados associados à tag específica.</li></ul></li></ul> |
 
-Usando o Filtro ![Filtro](/help/assets/icons/Filter.svg), você também pode realizar as seguintes ações:
 
-| Ação | Descrição |
+### Proprietários
+
+| Proprietário | Descrição |
 |---|---|
-| **[!UICONTROL Exibir programações com falha]** | Navegue até **[!UICONTROL Outros filtros]** e selecione **[!UICONTROL Falha]** para ver os agendamentos que falharam. |
-| **[!UICONTROL Exibir programações expiradas]** | Navegue até **[!UICONTROL Outros filtros]** e selecione **[!UICONTROL Expirado]** para ver as agendas que expiraram. Clique no título da programação para configurar uma nova programação de delivery. |
+| ![Proprietários](/help/components/assets/scheduledprojects-filter-owners.png){width="300"} | A seção **[!UICONTROL Proprietário]** permite filtrar por proprietários. <ul><li>Você usa a ![Pesquisa](/help/assets/icons/Search.svg) *Proprietários da Pesquisa* para procurar proprietários que deseja usar para filtrar.</li><li>É possível selecionar mais de um proprietário. Os proprietários disponíveis dependem das seleções feitas em outras seções no painel de filtro.</li><li>Os números indicam:<ul><li>4︎⃣: o número de projetos agendados associados ao proprietário específico.</li></ul></li></ul> |
 
+
+### Outros filtros
+
+| Outros filtros | Descrição |
+|---|---|
+| ![Outros filtros](/help/components/assets/scheduledprojects-filter-otherfilters.png){width="300"} | A seção **[!UICONTROL Outros filtros]** permite filtrar por outro filtro predefinido.<ul><li>É possível selecionar uma ou mais das seguintes opções:<ul><li> **[!UICONTROL Expirado]**: filtrar em projetos agendados expirados.</li><li>**[!UICONTROL Falha]**: filtrar projetos agendados para os quais o agendamento falhou.</li></ul>O que você pode selecionar depende de sua função e permissões.</li><li>É possível selecionar mais de um filtro. Os outros filtros disponíveis dependem das seleções feitas em outras seções no painel de filtros.</li><li>Os números indicam:<ul><li>4︎⃣: o número de projetos agendados associados ao outro filtro específico.</li></ul></li></ul> |

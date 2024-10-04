@@ -3,9 +3,9 @@ description: Saiba como os alertas diferem do Adobe Analytics no Customer Journe
 title: Customer Journey Analytics de comparação de recursos de alertas e Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '569'
 ht-degree: 5%
 
 ---
@@ -56,9 +56,8 @@ No Adobe Analytics, as seguintes opções estão disponíveis:
 
 * Abra um projeto no Analysis Workspace e selecione **[!UICONTROL Componentes]** > **[!UICONTROL Criar alerta]**.
 
-* Abra um projeto no Analysis Workspace e use o seguinte atalho:
+* Abra um projeto no Analysis Workspace e use o seguinte atalho: **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**(Windows) ou**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** (macOS).
 
-  `ctrl (or cmd) + shift + a`
 
 
 

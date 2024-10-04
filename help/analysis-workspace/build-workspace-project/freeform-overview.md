@@ -5,10 +5,10 @@ title: Visão geral dos Projetos
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 6%
+source-wordcount: '1628'
+ht-degree: 7%
 
 ---
 
@@ -78,21 +78,21 @@ Passe o mouse sobre qualquer cabeçalho de coluna para exibir ![Divisa para baix
 
 É possível realizar ações em um ou mais projetos usando o menu de contexto ![Mais](/help/assets/icons/More.svg) ou a barra de ação azul.
 
-| Ação | Descrição |
-|---|---|
-| ![CrossSize75](/help/assets/icons/CrossSize75.svg) **[!UICONTROL *x *selecionado]** | Desmarque os projetos e as pastas selecionados e remova a barra de ação azul. |
-| ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** | Exclua um ou mais projetos ou pastas. Será solicitada uma confirmação. |
-| ![Compartilhar](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Compartilhar]** | Compartilhar um projeto. Consulte [Compartilhar um projeto](/help/analysis-workspace/curate-share/share-projects.md) para obter mais informações. |
-| ![Editar](/help/assets/icons/Edit.svg) Renomear | Renomeie um projeto. Abre uma **[!UICONTROL caixa de diálogo Renomear: *nome do projeto *]**. Digite um novo nome e selecione**[!UICONTROL Salvar ]**. |
-| ![Cópia](/help/assets/icons/Copy.svg) **[!UICONTROL Cópia]** | Copie um ou mais projetos. O projeto tem o mesmo nome e sufixo `(Copy)`. |
-| ![PinOnff](/help/assets/icons/PinOff.svg) **[!UICONTROL Pin]** ou **[!UICONTROL Unpin]** | Fixar ou desafixar um ou mais projetos ou pastas. Os projetos e pastas fixados aparecem na parte superior da lista e ignoram a ordem de classificação especificada. |
-| ![Seta para Cima](/help/assets/icons/ArrowUp.svg) **[!UICONTROL Mover para Cima]** | Mova um projeto ou uma pasta fixada para cima na lista de projetos. |
-| ![Seta para baixo](/help/assets/icons/ArrowDown.svg) **[!UICONTROL Mover para baixo]** | Mova um projeto ou uma pasta fixada para baixo na lista de projetos. |
-| ![Rótulo](/help/assets/icons/Label.svg) **[!UICONTROL Marca]** | Adicione tags a um ou mais projetos ou pastas. A caixa de diálogo **[!UICONTROL Componentes da Marca]** é exibida para selecionar uma ou mais marcas. Selecione **[!UICONTROL Salvar]** para salvar as marcas dos projetos ou pastas selecionados. |
-| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Aprovar]** ou **[!UICONTROL Cancelar aprovação]** | Aprovar ou cancelar a aprovação de um projeto. Somente administradores podem aprovar projetos. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export CSV]** | Exportar os projetos selecionados para um arquivo CSV de nome `Project List.csv`. |
-| ![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Adicionar Projetos]** | Adicionar um ou mais projetos a uma pasta selecionada. Em **[!UICONTROL Adicionar projetos]**, você pode selecionar um ou mais projetos. Selecione **[!UICONTROL Adicionar]** para adicionar os projetos à pasta. Consulte [Adicionar projetos a pastas](workspace-folders/add-projects.md#from-inside-a-folder) para obter mais informações. |
-| ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **[!UICONTROL Mover para]** | Mova um ou mais projetos selecionados para uma pasta. Em **[!UICONTROL Selecionar pasta]**, selecione a pasta para onde mover o projeto selecionado e selecione **[!UICONTROL Mover]**. Consulte [Adicionar projetos a pastas](workspace-folders/add-projects.md#from-the-project-list) para obter mais informações. |
+| Ícone | Ação | Descrição |
+|:---:| ---|---|
+| ![CrossSize75](/help/assets/icons/Close.svg) | **[!UICONTROL *x *selecionado]** | Desmarque os projetos e as pastas selecionados e remova a barra de ação azul. |
+| ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Exclua um ou mais projetos ou pastas. Será solicitada uma confirmação. |
+| ![Compartilhar](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Compartilhar]** | Compartilhar um projeto. Consulte [Compartilhar um projeto](/help/analysis-workspace/curate-share/share-projects.md) para obter mais informações. |
+| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie um projeto. Abre uma **[!UICONTROL caixa de diálogo Renomear: *nome do projeto *]**. Digite um novo nome e selecione**[!UICONTROL Salvar ]**. |
+| ![Copiar](/help/assets/icons/Copy.svg) | **[!UICONTROL Copiar]** | Copie um ou mais projetos. O projeto tem o mesmo nome e sufixo `(Copy)`. |
+| ![PinOnff](/help/assets/icons/PinOff.svg) | **[!UICONTROL Fixar]** ou **[!UICONTROL Desfixar]** | Fixar ou desafixar um ou mais projetos ou pastas. Os projetos e pastas fixados aparecem na parte superior da lista e ignoram a ordem de classificação especificada. |
+| ![SetaParaCima](/help/assets/icons/ArrowUp.svg) | **[!UICONTROL Mover para cima]** | Mova um projeto ou uma pasta fixada para cima na lista de projetos. |
+| ![Seta para baixo](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL Mover para baixo]** | Mova um projeto ou uma pasta fixada para baixo na lista de projetos. |
+| ![Rótulo](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Adicione tags a um ou mais projetos ou pastas. A caixa de diálogo **[!UICONTROL Componentes da Marca]** é exibida para selecionar uma ou mais marcas. Selecione **[!UICONTROL Salvar]** para salvar as marcas dos projetos ou pastas selecionados. |
+| ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aprovar]** ou **[!UICONTROL Cancelar aprovação]** | Aprovar ou cancelar a aprovação de um projeto. Somente administradores podem aprovar projetos. |
+| ![ArquivoCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar CSV]** | Exportar os projetos selecionados para um arquivo CSV de nome `Project List.csv`. |
+| ![AdiçãodeProjeto](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL Adicionar Projetos]** | Adicionar um ou mais projetos a uma pasta selecionada. Em **[!UICONTROL Adicionar projetos]**, você pode selecionar um ou mais projetos. Selecione **[!UICONTROL Adicionar]** para adicionar os projetos à pasta. Consulte [Adicionar projetos a pastas](workspace-folders/add-projects.md#from-inside-a-folder) para obter mais informações. |
+| ![AdicionarPasta](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL Mover para]** | Mova um ou mais projetos selecionados para uma pasta. Em **[!UICONTROL Selecionar pasta]**, selecione a pasta para onde mover o projeto selecionado e selecione **[!UICONTROL Mover]**. Consulte [Adicionar projetos a pastas](workspace-folders/add-projects.md#from-the-project-list) para obter mais informações. |
 
 
 

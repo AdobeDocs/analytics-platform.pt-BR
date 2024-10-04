@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 664576605b8be098a751609536e388c304c65513
+source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 14%
+source-wordcount: '1469'
+ht-degree: 15%
 
 ---
 
@@ -117,6 +117,7 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto no [Admi
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de filtros] | Permitir que os usuários criem [filtros](/help/components/filters/filters-overview.md). Os usuários podem marcar, compartilhar, excluir, renomear, aprovar ou cancelar a aprovação somente dos filtros que criam ou dos filtros compartilhados com eles. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso ao Labs] | Permitir que os usuários acessem a guia [Labs](/help/labs/labs.md) no Customer Journey Analytics. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de anotação] | Permitir que os usuários criem [anotações](/help/components/annotations/overview.md). Os usuários podem marcar, compartilhar, excluir e renomear apenas as anotações que criam ou as anotações compartilhadas com eles. |
+| [!UICONTROL Ferramentas de relatório] | [!UICONTROL Visualização de público] | Permitir que os usuários visualizem [públicos-alvo](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de público] | Permitir que os usuários criem [públicos-alvo](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso aos logs de auditoria] | Imponha a verificação de permissão na [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) e na interface dos logs de auditoria. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Compartilhar Links De Projeto Com Qualquer Pessoa] | Permitir que os usuários [compartilhem projetos com qualquer pessoa.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
