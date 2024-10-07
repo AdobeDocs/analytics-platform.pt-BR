@@ -3,14 +3,14 @@ description: Casos de uso para alertas.
 title: Casos de uso de alertas
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
 
 ---
 
-# Alertas - Casos de uso
+# Casos de uso de alerta
 
 Você pode criar alertas conforme descrito em [Criar alertas](/help/components/c-intelligent-alerts/alert-builder.md).
 
@@ -20,11 +20,6 @@ As seções a seguir ilustram exemplos de casos de uso a serem considerados ao c
 
 Você pode criar alertas simples usando filtros. Por exemplo, defina um alerta sobre o número de sessões para pessoas que visitam a página inicial por meio de uma sessão de aplicativo móvel.
 
-<!-- 
-
-Update screenshots for better readability.
-
- -->
 
 ![](assets/alerts-example1.png)
 

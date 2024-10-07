@@ -1,17 +1,17 @@
 ---
-title: Criar um intervalo de datas
+title: Criar intervalos de datas
 description: Criar um intervalo de datas para uso em relatórios.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
+source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 6%
+source-wordcount: '513'
+ht-degree: 4%
 
 ---
 
-# Criar um intervalo de datas
+# Criar intervalos de datas
 
 
 Qualquer pessoa pode criar um intervalo de datas personalizado. Você cria um intervalo de datas das seguintes maneiras:
