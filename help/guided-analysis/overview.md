@@ -5,10 +5,10 @@ keywords: product analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: c403a660e1d60b1ee2e5552d615dffc2b52930a4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 83%
+source-wordcount: '1454'
+ht-degree: 82%
 
 ---
 
@@ -84,11 +84,11 @@ As exibições de análise guiada estão incluídas nos pacotes do Customer Jour
 
 | Pacote | Exibições disponíveis |
 | --- | --- |
-| [!UICONTROL Complementos do CJA] | Tendências: uso, tendências: frequência, funil: atrito, funil: tendências de conversão, retenção: taxas de retenção, crescimento do usuário: ativo, crescimento do usuário: crescimento líquido |
-| [!UICONTROL CJA Foundation] | Tendências: uso |
-| [!UICONTROL CJA Select] | Visualizações do Foundation + Tendências: Frequência, Funil: Fricção, Funil: Tendências de conversão, Retenção: Taxas de retenção, Crescimento do usuário: Ativo, Crescimento do usuário: Crescimento líquido |
-| [!UICONTROL CJA Prime] | Selecionar exibições + Fluxo de usuários: Linha do tempo, Matriz de recursos: Envolvimento, Impacto: Versão, Impacto: Primeiro uso |
-| [!UICONTROL CJA Ultimate] | Exibições do Prime |
+| [!UICONTROL complementos de Customer Journey Analytics] | Tendências: uso, tendências: frequência, funil: atrito, funil: tendências de conversão, retenção: taxas de retenção, crescimento do usuário: ativo, crescimento do usuário: crescimento líquido |
+| [!UICONTROL Customer Journey Analytics Foundation] | Tendências: uso |
+| [!UICONTROL Seleção de Customer Journey Analytics] | Visualizações do Foundation + Tendências: Frequência, Funil: Fricção, Funil: Tendências de conversão, Retenção: Taxas de retenção, Crescimento do usuário: Ativo, Crescimento do usuário: Crescimento líquido |
+| [!UICONTROL Customer Journey Analytics Prime] | Selecionar exibições + Fluxo de usuários: Linha do tempo, Matriz de recursos: Envolvimento, Impacto: Versão, Impacto: Primeiro uso |
+| [!UICONTROL Customer Journey Analytics Ultimate] | Exibições do Prime |
 
 {style="table-layout:auto"}
 
