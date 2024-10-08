@@ -4,9 +4,9 @@ description: Página inicial do Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 0325b48e7144ac3e334ab57448b9adba9fcea21d
+source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '820'
 ht-degree: 96%
 
 ---
@@ -29,9 +29,16 @@ O Assistente de IA é uma experiência de conversação que permite que os profi
 
 [![imagem](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
+
+>[!TAB Análise Guiada]
+
+A Análise guiada agora está disponível diretamente no Analysis Workspace, permitindo que os usuários criem painéis com insights abrangentes de painéis, visualizações e análises guiadas.
+
+[![imagem](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+
 >[!TAB Alertas]
 
-Os alertas permitem que você seja notificado com base nas porcentagens alteradas ou em pontos de dados específicos. Você pode visualizar a frequência de disparo de um alerta, enviar alertas por email ou SMS, criar alertas empilhados e muito mais.
+Os alertas permitem que você seja notificado com base em pontos de dados específicos ou porcentagens alteradas. Você pode visualizar a frequência de acionamento de um alerta, enviar alertas por email ou SMS, criar alertas empilhados e muito mais.
 
 [![imagem](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 
@@ -73,27 +80,6 @@ A extensão BI permite acesso SQL às visualizações de dados definidas no Cust
 *_Você deve ter o pacote Select ou superior para usar a extensão de BI._*
 
 
-<!--
->[!TAB Improved Audience Publising] 
-
-Audiences that are published from Customer Journey Analytics are now available in the new **Audiences** section in Adobe Experience Platform. Audiences are now available in Experience Platform seconds after they are published from Customer Journey Analytics. Improved sorting and filter options in Experience Platform for Customer Journey Analytics audiences. 
-
-[![image](assets/learn-more-button.svg)](/help/components/audiences/publish.md)
-
--->
-
->[!TAB Previsão]
-
-A previsão é um recurso do Analysis Workspace para prever uma métrica padrão ou calculada com qualquer granularidade de tempo aceita (por hora, dia, semana, mês e ano). A previsão está disponível somente para dados relacionados a séries temporais.
-
-[![imagem](assets/learn-more-button.svg)](/help/analysis-workspace/c-forecast/forecasting.md)
-
->[!TAB Nova documentação]
-
-Novas seções de documentação agora estão disponíveis em:<ul><li>Caso de uso de dados de resumo e caso de uso de exemplo B2B.</li><li>Como atualizar do Adobe Analytics para o Customer Journey Analytics.</li><li>Casos de uso de exportação de dados e as funcionalidades necessárias da Experience Platform e da jornada do cliente. </li></ul>Selecione **[!UICONTROL Saiba mais]** para acessar esta e outras atualizações de documentação.
-
-[![imagem](assets/learn-more-button.svg)](/help/release-notes/doc-changes.md)
-
 >[!ENDTABS]
 
 ## Comece com as noções básicas
@@ -112,7 +98,7 @@ Comece lendo o material nos links abaixo para familiarizar-se com os recursos e 
     </td>
     <td>
     <a href="/help/guided-analysis/overview.md"><img src="./assets/product-analytics.png"></a>
-    <div><strong>Análise guiada</strong><br/>Saiba como usar fluxos de trabalho para obter dados e insights sobre a experiência de produto do cliente. Product Analytics através da análise guiada...
+    <div><strong>Análise guiada</strong><br/>Saiba como usar fluxos de trabalho para obter dados e insights sobre a experiência de produto do cliente. Product Analytics através da análise guiada…
     </div>
     </td>
     <td>

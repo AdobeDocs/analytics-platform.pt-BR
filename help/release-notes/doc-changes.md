@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: ba7b16bd7bae75c3ecb72797236405519d361921
 workflow-type: tm+mt
-source-wordcount: '4094'
-ht-degree: 71%
+source-wordcount: '4108'
+ht-degree: 70%
 
 ---
 
@@ -21,6 +21,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | --- | --- |
 | **Outubro de 2024** | |
 | Workspace e componentes | Atualização da documentação sobre projetos (projetos, visualizações e painéis) e componentes do Analysis Workspace (anotações, dimensões, métricas (calculadas), filtros, intervalos de datas, alertas, projetos e públicos-alvo agendados). |
+| Análise guiada | Atualizada a documentação com a disponibilidade da [Análise Guiada](/help/guided-analysis/overview.md) no Analysis Workspace. |
 | **Setembro de 2024** | |
 | Atualização de dados de resumo | Artigos de resumo de dados atualizados com informações sobre como usar corretamente os [dados de pesquisa](/help/data-views/summary-data.md#lookup-data) ao criar relatórios sobre dados de resumo. |
 | Atualização de extensão do BI | Adição da seção [padrões e limitações](/help/data-views/bi-extension.md#defaults-and-limitations) à documentação de extensão do BI. |
