@@ -1,29 +1,33 @@
 ---
-title: Referência - funções avançadas
+title: Funções avançadas
 description: Para acessar essas funções, selecione Mostrar avançadas na lista suspensa Funções.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
+source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3126'
 ht-degree: 19%
 
 ---
 
-# Referência - funções avançadas
+# Funções avançadas
 
-Para acessar essas funções, selecione a lista **[!UICONTROL Mostrar tudo]** abaixo de ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL Funções]** no painel Componentes. Role para baixo para ver a lista de funções Avançadas.
+O [Construtor de métricas calculadas](cm-workflow/cm-build-metrics.md) permite aplicar funções matemáticas e estatísticas. Este artigo documenta a lista alfabética das funções avançadas e suas definições.
+
+Para acessar essas funções, selecione a lista **[!UICONTROL Mostrar tudo]** abaixo de ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL Funções]** no painel Componentes. Role para baixo para ver a lista de **[!UICONTROL Funções avançadas]**.
 
 ## Funções de tabela versus funções de linha
 
-Uma função de tabela exibe um resultado igual para cada linha da tabela. Uma função de linha é aquela em que a saída é diferente para cada linha da tabela. Quando aplicável e relevante, uma função é anotada com o tipo de função.
+Uma função de tabela exibe um resultado igual para cada linha da tabela. Uma função de linha exibe um resultado diferente para cada linha da tabela.
+
+Quando aplicável e relevante, uma função é anotada com o tipo de função: [!BADGE Tabela]{type="Neutral"}[!BADGE Linha]{type="Neutral"}
 
 ## O que significa o parâmetro include-zeros?
 
 Informa se os zeros devem ou não ser incluídos no cálculo. Às vezes zero significa *nada*, mas às vezes é importante.
 
-Por exemplo, se você tiver uma métrica Receita e, em seguida, adicionar uma métrica Exibições de página ao relatório, haverá de repente mais linhas para a sua receita, que são todas zero. Você provavelmente não quer que essa métrica adicional afete qualquer [MEAN](cm-functions.md#mean), [MIN](cm-functions.md#row-min), [QUARTILE](cm-functions.md#quartile) e mais cálculos que você tenha na coluna de receita. Nesse caso, você verificaria o parâmetro `include-zeros`.
+Por exemplo, se você tiver uma métrica Receita e, em seguida, adicionar uma métrica Exibições de página ao relatório, haverá de repente mais linhas para a sua receita, que são todas zero. Você provavelmente não quer que essa métrica adicional afete qualquer **[MEAN](cm-functions.md#mean)**, **[ROW MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** e mais cálculos que você tenha na coluna de receita. Nesse caso, você verificaria o parâmetro `include-zeros`.
 
 Um cenário alternativo é que você tem duas métricas de interesse e uma tem uma média ou um mínimo mais alto porque algumas linhas são zeros.  Nesse caso, você pode optar por não marcar o parâmetro para incluir zeros.
 
@@ -918,13 +922,13 @@ O valor de retorno é a probabilidade de exibição da estatística de teste x, 
 
 **Exemplos:**
 
-1. Use-o para encontrar outliers:
+1. Use a função para encontrar valores atípicos:
 
    ```
    T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2)
    ```
 
-1. Combine-o com **[IF](#if)** para ignorar taxas de devolução muito altas ou baixas e para contar sessões em outro local:
+1. Combine a função com **[IF](#if)** para ignorar taxas de devolução muito altas ou baixas e para contar sessões em outro local:
 
    ```
    IF(T-TEST(Z-SCORE(bouncerate), ROW COUNT - 1, 2) < 0.01, 0, sessions )
