@@ -5,10 +5,10 @@ title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 714e37433b12713e45a66ebd64771c050edb89a5
+source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1617'
+ht-degree: 15%
 
 ---
 
@@ -35,6 +35,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 | ![HistogramaGráfico](/help/assets/icons/Histogram.svg) | [Histograma](/help/analysis-workspace/visualizations/histogram.md) | Uma visualização de histograma agrupa pessoas, visitas ou eventos em compartimentos com base em um volume de métrica. |
 | ![BarraDeGráficosHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) | Uma visualização de barra horizontal mostra barras horizontais que representam vários valores de uma ou mais métricas. |
 | ![BarraDeGráficosHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barra horizontal empilhada](/help/analysis-workspace/visualizations/horizontal-bar.md) | Uma visualização de barra horizontal empilhada mostra barras horizontais que representam vários valores de uma ou mais métricas. |
+| ![Ramificação3](/help/assets/icons/Branch3.svg) | [tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Uma visualização da tela de jornada ajuda a analisar e obter insights sobre as jornadas que você fornece aos usuários e clientes. |
 | ![MétricasChave](/help/assets/icons/KeyMetrics.svg) | [Resumo da métrica principal](/help/analysis-workspace/visualizations/key-metric.md) | Uma visualização de resumo das Métricas principais combina as visualizações de linha, alteração de resumo e número de resumo. |
 | ![TendênciaGráfica](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | Uma visualização de linha representa as métricas usando uma linha para mostrar como os valores são alterados em um período. Um gráfico de linhas usa o tempo no eixo x. |
 | ![DispersãoDeGráfico](/help/assets/icons/GraphScatter.svg) | [Dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | Uma visualização do gráfico de dispersão mostra a relação entre itens de dimensão e até três métricas. |

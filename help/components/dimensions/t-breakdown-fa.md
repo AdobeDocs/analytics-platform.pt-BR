@@ -6,9 +6,9 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '523'
 ht-degree: 58%
 
 ---
@@ -51,7 +51,7 @@ Este é o comportamento esperado ao aplicar modelos de atribuição a detalhamen
 
 * Se já houver atribuições na árvore de colunas, alterar a atribuição afetará somente a que você estiver editando.
 
-+++ Exibir vídeos que ilustram detalhamentos
++++ Assista a vídeos que ilustram dimensões e detalhamentos de dimensão
 
 Dimension no Analysis Workspace
 

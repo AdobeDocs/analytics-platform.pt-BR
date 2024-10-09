@@ -4,10 +4,10 @@ description: O Criador de métricas calculadas permite aplicar funções matemá
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: ecf8156df0b31e81f1a5546829c6100831b2a600
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 97%
+source-wordcount: '1060'
+ht-degree: 31%
 
 ---
 
@@ -20,130 +20,417 @@ Veja uma lista em ordem alfabética das funções e suas definições.
 
 >[!NOTE]
 >
->Sempre que [!DNL metric] for definida como um argumento em uma função, outras expressões de métricas também serão permitidas. Por exemplo, [!DNL MAXV(metrics)] também permite [!DNL MAXV(PageViews + Visits).]
+>Sempre que [!DNL metric] for definida como um argumento em uma função, outras expressões de métricas também serão permitidas. Por exemplo, [COLUMN MAXIMUM(metrics)](#column-maximum) também permite [COLUMN MAXIMUM(PageViews + Visits)](#column-maximum).
 
 
-## Funções de tabela versus Funções de linha
+## Funções de tabela versus funções de linha
 
-Uma função de tabela exibe um resultado igual para cada linha da tabela. Uma função de linha exibe um resultado diferente para cada linha da tabela.
+Uma função de tabela exibe um resultado igual para cada linha da tabela. Uma função de linha é aquela em que a saída é diferente para cada linha da tabela. Quando aplicável e relevante, uma função é anotada com o tipo de função.
+
+
+## Valor absoluto
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VALOR ABSOLUTO(métrica)]**
+
+[!BADGE Linha]{type="Neutral"}
+
+| Argumento | Descrição |
+|---|---|
+| métrica | A métrica para a qual você deseja calcular o valor absoluto. |
+
+
+## Máximo da coluna
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COLUNA MÁXIMA(métrica, include_zeros)]**
+
+Retorna o maior valor em um conjunto de elementos de dimensão para uma coluna de métrica. MAXV avalia verticalmente em uma única coluna (métrica) nos elementos da dimensão.
+
+| Argumento | Descrição |
+|---|---|
+| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+| include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
+
+
+## Mínimo da coluna
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COLUNA MÍNIMA(métrica, include_zeros)]**
+
+Retorna o menor valor em um conjunto de elementos de dimensão para uma coluna de métrica. MINV avalia verticalmente em uma única coluna (métrica) nos elementos da dimensão.
+
+| Argumento | Descrição |
+|---|---|
+| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+| include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
+
+
+## Soma da coluna
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL SOMA(métrica) DA COLUNA]**
+
+Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elementos de uma dimensão).
+
+| Argumento | Descrição |
+|---|---|
+| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+
+
+## Contagem
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL CONTAGEM(métrica)]**
+
+[!BADGE Tabela]{type="Neutral"}
+
+| Argumento | Descrição |
+|---|---|
+| métrica | A métrica que você deseja contar. |
+
+
+## Expoente
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTE(métrica)]**
+
+[!BADGE Linha]{type="Neutral"}
+
+| Argumento | Descrição |
+|---|---|
+| métrica | O expoente aplicado à base e. |
+
+
+## Média
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
+
+[!BADGE Tabela]{type="Neutral"}
+
+| Argumento | Descrição |
+|---|---|
+| métrica | A métrica para a qual você deseja calcular a média. |
+| include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
+
+
+## Medianiz
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
+
+[!BADGE Tabela]{type="Neutral"}
+
+| Argumento | Descrição |
+|---|---|
+| métrica | A métrica para a qual você deseja calcular a mediana. |
+| include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
+
+
+## Módulo
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
+
+Retorna o restante após a divisão de x por y usando a divisão euclidiana.
+
+| Argumento | Descrição |
+|---|---|
+| metric_X | A primeira métrica que você deseja dividir. |
+| metric_Y | A segunda métrica que você deseja dividir. |
+
+### Exemplos
+
+O valor retornado tem o mesmo sinal que a entrada (ou é zero).
+
+```
+MODULO(4,3) = 1
+MODULO(-4,3) = -1
+MODULO(-3,3) = 0
+```
+
+Para garantir que você sempre obtenha um número positivo, use
+
+```
+MODULO(MODULO(x,y)+y,y)
+```
+
+## Percentil
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
+
+[!BADGE Tabela]{type="Neutral"}
+
+| Argumento | Descrição |
+|---|---|
+| métrica | O valor do percentil no intervalo de 0 a 100, incluso. |
+| k | A coluna de métrica que define a posição relativa. |
+| include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
 
-## Valor absoluto (Linha)
+## Operador de potência
 
-Retorna o valor absoluto de um número. O valor absoluto de um número é o número com um valor positivo.
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL OPERADOR DE ENERGIA(metric_X, metrix_Y)]**
+
+Retorna x elevado à potência y.
+
+| Argumento | Descrição |
+|---|---|
+| metric_X | A métrica que você gostaria de elevar para a potência metric_Y. |
+| metric_Y | A potência para a qual você gostaria de elevar metric_X. |
+
+
+## Quartil
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTIL(métrica, quartil, include_zeros)]**
+
+[!BADGE Tabela]{type="Neutral"}[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) e [COLUMN MAXIMUM](#column-maximum) retornam o mesmo valor que [QUARTILE](#quartile) quando o quartil é igual a `0` (zero), `2` e `4`, respectivamente.
+
+| Argumento | Descrição |
+|---|---|
+| métrica | A métrica para a qual você deseja calcular o valor do quartil. |
+| quartil | Indica qual valor do quartil retornar. |
+| include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
+
+
+## Arredondar
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(métrica, número)]**
+
+Arredondar sem um parâmetro *number* é o mesmo que arredondar com um parâmetro *number* de 0, ou seja, arredondar para o número inteiro mais próximo.  Com um parâmetro *number*, ROUND retorna os dígitos *number* à direita do decimal.  Se *number* for negativo, ele retornará 0 à esquerda do decimal.
+
+| Argumento | Descrição |
+|---|---|
+| métrica | A métrica que deseja arredondar. |
+| number | Quantos dígitos à direita do decimal devem ser retornados. (Se negativo, retorna zeros à esquerda do decimal). |
+
+### Exemplos
+
+```
+ROUND( 314.15, 0) = 314
+ROUND( 314.15, 1) = 314.1
+ROUND( 314.15, -1) = 310
+ROUND( 314.15, -2) = 300
+```
+
+
+## Contagem de linhas
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL CONTAGEM DE LINHAS()]**
+
+Retorna a contagem de linhas referente a uma determinada coluna (o número de elementos únicos reportados em uma dimensão). *Únicos excedidos* são contados como 1.
+
+
+## Máx. da linha
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MAX(metric, include_zeros) de LINHA]**
+
+Máximo de colunas de cada linha.
+
+| Argumento | Descrição |
+|---|---|
+| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+| include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
+
+## Mín. da linha
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MÍN. LINHA(métrica, include_zeros)]**
+
+Mínimo de colunas de cada linha.
+
+| Argumento | Descrição |
+|---|---|
+| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+| include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
+
+
+
+## Soma da linha
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL SOMA DA LINHA(métrica, include_zeros)]**
+
+Soma das colunas de cada linha.
+
+| Argumento | Descrição |
+|---|---|
+| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+
+
+## Raiz quadrada
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL RAIZ QUADRADA(métrica, include_zeros)]**
+
+[!BADGE Linha]{type="Neutral"}
+
+| Argumento | Descrição |
+|---|---|
+| métrica | A métrica para a qual você deseja calcular a raiz quadrada. |
+
+
+## Desvio padrão
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL DESVIO PADRÃO(métrica, include_zeros)]**
+
+[!BADGE Tabela]{type="Neutral"}
+
+| Argumento | Descrição |
+|---|---|
+| | A métrica para a qual você deseja calcular o desvio padrão. |
+| include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
+
+
+## Variação
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
+
+[!BADGE Tabela]{type="Neutral"}
+
+| Argumento | Descrição |
+|---|---|
+| métrica | A métrica para a qual você deseja calcular a variação. |
+| include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
+
+
+A equação de VARIANCE é:
+
+![](assets/variance_eq.png){width="100"}
+
+Onde *x* é a média da amostra, [MEAN(*metric*)](#mean) e *n* é o tamanho da amostra.
+
+
+Para calcular uma variação, você observa uma coluna inteira de números. Nessa lista de números, calcule primeiro a média. Depois de obter a média, você percorre cada entrada e faz o seguinte:
+
+1. Subtraia a média do número.
+
+1. Eleve o resultado ao quadrado.
+
+1. Adicione-o ao total.
+
+Depois de iterar em toda a coluna, você tem um único total. Depois, divida o total pelo número de itens na coluna. Esse número é a variação da coluna. É um número único. No entanto, é exibido como uma coluna de números.
+
+No exemplo da seguinte coluna de três itens:
+
+| coluna |
+|:---:|
+| 1 |
+| 2 |
+| 3 |
+
+A média dessa coluna é 2. A variação da coluna é ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3.
+
+
+
+
+<!--
+
+## Absolute Value (Row)
+
+Returns the absolute value of a number. The absolute value of a number is the number with a positive value.
 
 ```
 ABS(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter o valor absoluto. |
+|  *metric* | The metric for which you want the absolute value.  |
 
-## Máximo da coluna
+## Column Maximum
 
-Retorna o maior valor em um conjunto de elementos de dimensão para uma coluna de métrica. MAXV avalia verticalmente em uma única coluna (métrica) nos elementos da dimensão.
+Returns the largest value in a set of dimension elements for a metric column. MAXV evaluates vertically within a single column (metric) across dimension elements.
 
 ```
 MAXV(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *metric* | Uma métrica que você gostaria de avaliar. |
+|  *metric* | A metric that you would like to have evaluated.  |
 
-## Mínimo da coluna
+## Column Minimum 
 
-Retorna o menor valor em um conjunto de elementos de dimensão para uma coluna de métrica. MINV avalia verticalmente em uma única coluna (métrica) nos elementos da dimensão.
+Returns the smallest value in a set of dimension elements for a metric column. MINV evaluates vertically within a single column (metric) across dimension elements.
 
 ```
 MINV(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *metric* | Uma métrica que você gostaria de avaliar. |
+|  *metric* | A metric that you would like to have evaluated.  |
 
-## Soma da coluna
+## Column Sum 
 
-Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elementos de uma dimensão).
+Adds all of the numeric values for a metric within a column (across the elements of a dimension).
 
 ```
 SUM(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter o valor total ou soma. |
+|  *metric* | The metric for which you want the total value or sum.  |
 
-## Contagem (Tabela)
+## Count (Table) 
 
-Retorna o número, ou contagem, de valores diferentes de zero de uma métrica em uma coluna (o número de elementos únicos informados em uma dimensão).
+Returns the number, or count, of non-zero values for a metric within a column (the number of unique elements reported within a dimension).
 
 ```
 COUNT(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *metric* | A métrica que deseja contar. |
+|  *metric* | The metric that you want to count.  |
 
-## Expoente (Linha)
+## Exponent (Row) 
 
-Retorna *e* elevado à potência de um número especificado. A constante *e* é igual a 2,71828182845904, a base do logaritmo natural. EXP é o inverso de LN, o logaritmo natural de um número.
+Returns *e* raised to the power of a given number. The constant *e* equals 2.71828182845904, the base of the natural logarithm. EXP is the inverse of LN, the natural logarithm of a number.
 
 ```
 EXP(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *metric* | O exponente aplicado à base *e*. |
+|  *metric* | The exponent applied to the base *e*.  |
 
-## Exponenciação
+## Exponentiation 
 
-Operador de potência
-
-
-pow(x,y) = x<sup>y</sup> = x *x* x*... (y vezes)
+Power Operator
 
 
-## Média (Tabela)
+pow(x,y) = x<sup>y</sup> = x*x*x*… (y times)
 
-Retorna a média aritmética, ou média, de uma métrica em uma coluna.
+
+## Mean (Table) 
+
+Returns the arithmetic mean, or average, for a metric in a column.
 
 ```
 MEAN(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a média. |
+|  *metric* | The metric for which you want the average.  |
 
-## Mediana (Tabela)
+## Median (Table) 
 
-Retorna a mediana de uma métrica em uma coluna. A mediana é o número presente no meio de um conjunto de números, ou seja, metade dos números apresentam valores maiores ou iguais à mediana e metade são menores ou iguais à mediana.
+Returns the median for a metric in a column. The median is the number in the middle of a set of numbers—that is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median.
 
 ```
 MEDIAN(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a mediana. |
+|  *metric* | The metric for which you want the median.  |
 
-## Módulo
+## Modulo 
 
-O restante de col1/col2, usado a divisão euclidiana.
+The remainder of col1 / col2, using Euclidean division.
 
-Retorna o resto da divisão de x por y.
+Returns the remainder after dividing x by y.
 
 ```
 x = floor(x/y) + modulo(x,y)
 ```
 
-O valor retornado tem o mesmo sinal que a entrada (ou é zero).
+The return value has the same sign as the input (or is zero).
 
 ```
 modulo(4,3) = 1 
@@ -151,15 +438,15 @@ modulo(-4,3) = -1
 modulo(-3,3) = 0
 ```
 
-Para obter sempre um número positivo, use
+To always get a positive number, use 
 
 ```
 modulo(modulo(x,y)+y,y)
 ```
 
-## Percentil (Tabela)
+## Percentile (Table) 
 
-Retorna o milésimo percentil dos valores de uma métrica. É possível usar esta função para estabelecer um limite de aceitação. Por exemplo, é possível analisar elementos de dimensão com pontuação acima do percentil 90.
+Returns the k-th percentile of values for a metric. You can use this function to establish a threshold of acceptance. For example, you can decide to examine dimension elements who score above the 90  percentile.
 
 ```
 PERCENTILE(metric,k)
@@ -168,25 +455,25 @@ PERCENTILE(metric,k)
 <table id="table_35CD840ACFB44CD9979881DB8823CC53"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Argumento </th> 
-   <th colname="col2" class="entry"> Descrição </th> 
+   <th colname="col1" class="entry"> Argument </th> 
+   <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <i>metric</i> </td> 
-   <td colname="col2"> A coluna de métrica que define a posição relativa. </td> 
+   <td colname="col2"> The metric column that defines relative standing. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>k </p> </td> 
-   <td colname="col2"> O valor do percentil no intervalo de 0 a 100, incluso. </td> 
+   <td colname="col2"> The percentile value in the range 0 to 100, inclusive. </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Quartil (Tabela)
+## Quartile (Table) 
 
-Retorna o quartil de valores de uma métrica. Por exemplo, os quartis podem ser usados para encontrar a porcentagem de 25% dos produtos com maior receita. MINV, MEDIAN, e MAXV retornam o mesmo valor que QUARTILE quando o quartil é igual a 0 (zero), 2 e 4, respectivamente.
+Returns the quartile of values for a metric. For example, quartiles can be used to find the top 25% of products driving the most revenue. MINV, MEDIAN, and MAXV return the same value as QUARTILE when quart is equal to 0 (zero), 2, and 4, respectively.
 
 ```
 QUARTILE(metric,quart)
@@ -195,37 +482,37 @@ QUARTILE(metric,quart)
 <table id="table_64EA3DAAE77541439D59FAF0353F83A2"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Argumento </th> 
-   <th colname="col2" class="entry"> Descrição </th> 
+   <th colname="col1" class="entry"> Argument </th> 
+   <th colname="col2" class="entry"> Description </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <i>metric</i> </td> 
-   <td colname="col2"> A métrica para a qual você deseja obter o valor do quartil. </td> 
+   <td colname="col2"> The metric for which you want the quartile value. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>quartil </p> </td> 
-   <td colname="col2"> Indica o *valor a retornar. </td> 
+   <td colname="col1"> <p>quart </p> </td> 
+   <td colname="col2"> Indicates which *value to return. </td> 
   </tr> 
  </tbody> 
 </table>
 
-&#42;Se *quart* = 0, QUARTILE retorna o valor mínimo. Se *quart* = 1, QUARTILE retorna o primeiro quartil (percentil 25). Se *quart* = 2, QUARTILE retorna o primeiro quartil (percentil 50). Se *quart* = 3, QUARTILE retorna o primeiro quartil (percentil 75). Se *quart* = 4, QUARTILE retorna o valor máximo.
+&#42;If *quart* = 0, QUARTILE returns the minimum value. If *quart* = 1, QUARTILE returns the first quartile (25 percentile). If *quart* = 2, QUARTILE returns the first quartile (50 percentile). If *quart* = 3, QUARTILE returns the first quartile (75 percentile). If *quart* = 4, QUARTILE returns the maximum value.
 
-## Arredondar
+## Round 
 
-Retorna o número inteiro mais próximo para um determinado valor. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula Round(*Revenue*) para arredondar a receita para o número inteiro mais próximo; neste caso, US$569. Um produto de US$569,51 será arredondado para o valor inteiro mais próximo, ou seja, US$570.
+Returns the nearest integer for a given value. For example, if you want to avoid reporting currency decimals for revenue and a product has $569.34, use the formula Round( *Revenue*) to round revenue to the nearest dollar, or $569. A product reporting $569.51 will be round to the nearest dollar, or $570.
 
 ```
 ROUND(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *número* | A métrica que deseja arredondar. |
+|  *number* | The metric you want to round.  |
 
-Arredondar sem um parâmetro de dígitos é igual a arredondar com um parâmetro de dígitos de 0; ou seja, arredondar para o número inteiro mais próximo. Com um parâmetro de dígitos, ele retorna o mesmo número de dígitos à direita da casa decimal. Se os dígitos forem negativos, retornará zeros à esquerda da casa decimal.
+Round without a digits parameter is the same as round with a digits parameter of 0, namely round to the nearest integer. With a digits parameter it returns that many digits to the right of the decimal. If digits is negative, it returns 0's to the left of the decimal.
 
 ```
 round( 314.15, 0) = 314 
@@ -234,43 +521,43 @@ round( 314.15, -1) = 310
 round( 314.15, -2) = 300
 ```
 
-## Contagem de linhas
+## Row Count 
 
-Retorna a contagem de linhas de uma determinada coluna (o número de elementos únicos relatados em uma dimensão). Os valores &quot;únicos excedidos&quot; são contados como 1.
+Returns the count of rows for a given column (the number of unique elements reported within a dimension). "Uniques exceeded" is counted as 1.
 
-## Máx. da linha
+## Row Max 
 
-O número máximo de colunas em cada linha.
+The maximum of the columns in each row.
 
-## Mín. da linha
+## Row Min 
 
-O número mínimo de colunas em cada linha.
+The minimum of the columns in each row.
 
-## Soma da linha
+## Row Sum
 
-A soma das colunas em cada linha.
+The sum of the columns of each row.
 
-## Raiz quadrada (Linha)
+## Square Root (Row) 
 
-Retorna a raiz quadrada positiva de um número. A raiz quadrada de um número é o valor do número elevado à potência de 1/2.
+Returns the positive square root of a number. The square root of a number is the value of that number raised to the power of 1/2.
 
 ```
 SQRT(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *número* | A métrica para a qual você deseja obter a raiz quadrada. |
+|  *number* | The metric for which you want the square root.  |
 
-## Desvio padrão (Tabela)
+## Standard Deviation (Table) 
 
-Retorna o desvio padrão, ou a raiz quadrada da variação, baseada em uma amostra da população de dados.
+Returns the standard deviation, or square root of the variance, based on a sample population of data.
 
-A equação de STDEV é:
+The equation for STDEV is:
 
 ![](assets/std_dev.png)
 
-onde x é a média da amostra (*métrica*), e *n* é o tamanho da amostra.
+where x is the sample mean (*metric*) and *n* is the sample size.
 
 ```
 STDEV(metric)
@@ -279,45 +566,45 @@ STDEV(metric)
 <table id="table_8BCF2E4B02434AABAAD026FB3C4E8B2F"> 
  <tbody> 
   <tr> 
-   <td> <b> Argumento</b> </td> 
-   <td> <b> Descrição</b> </td> 
+   <td> <b> Argument</b> </td> 
+   <td> <b> Description</b> </td> 
   </tr> 
   <tr> 
    <td> <b> <i> metric</i> </b> </td> 
-   <td> <p> A métrica para a qual você deseja obter o desvio padrão. </p> </td> 
+   <td> <p> The metric for which you want for standard deviation. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Variação (Tabela)
+## Variance (Table) 
 
-Retorna a variação baseada em uma amostra da população de dados.
+Returns the variance based on a sample population of data.
 
-A equação de VARIANCE é:
+The equation for VARIANCE is:
 
 ![](assets/variance_eq.png)
 
-onde x é a média da amostra, MEAN(*metric*), e *n* é o tamanho da amostra.
+where x is the sample mean, MEAN(*metric*), and *n* is the sample size.
 
 ```
 VARIANCE(metric)
 ```
 
-| Argumento | Descrição |
+|  Argument  | Description  |
 |---|---|
-| *metric* | A métrica para a qual você deseja obter a variação. |
+|  *metric* | The metric for which you want the variance.  |
 
-Para calcular uma variação, considere uma coluna inteira de números. Nessa lista de números, calcule primeiro a média. Após obter a média, faça o seguinte em cada entrada:
+In order to calculate a variance you look at an entire column of numbers. From that list of numbers you first calculate the average. Once you have the average you go through each entry and do the following:
 
-1. Subtraia a média do número.
+1. Subtract the average from the number.
 
-2. Eleve o resultado ao quadrado.
+2. Square the result.
 
-3. Adicione-o ao total.
+3. Add that to the total.
 
-Quando você iterar na coluna inteira, terá um total único. Depois, divida o total pelo número de itens na coluna. Esse número é a variação da coluna. É um número único. No entanto, é exibido como uma coluna de números.
+Once you have iterated over the entire column you have a single total. You then divide that total by the number of items in the column. That number is the variance for the column. It is a single number. It is, however, displayed as a column of numbers.
 
-No caso de uma coluna de três itens:
+In case of a three-item column:
 
 1
 
@@ -325,4 +612,6 @@ No caso de uma coluna de três itens:
 
 3
 
-A média dessa coluna é 2. A variação da coluna será ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3.
+The average of this column is 2. The variance for the column will be ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3 = 2/3.
+
+-->
