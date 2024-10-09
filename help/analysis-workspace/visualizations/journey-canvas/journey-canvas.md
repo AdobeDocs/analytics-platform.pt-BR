@@ -4,9 +4,9 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: c79d1174d78c0bfb1c9b082eb93855bdab4283e4
+source-git-commit: 7a8c1dd1135f827acfe09f39823c6fbefbcd444d
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1697'
 ht-degree: 2%
 
 ---
@@ -37,9 +37,36 @@ Os principais recursos da visualização da tela de Jornada incluem:
 
 ## Possíveis insights
 
-A seguir estão alguns exemplos dos tipos de insights que a tela da Jornada pode ajudar a fornecer. Você pode escolher se esses insights são baseados em todas as pessoas na visualização de dados, todas as pessoas que iniciaram a jornada ou todas as pessoas do nó anterior da jornada.
+A tela do Jornada fornece insights acionáveis para as jornadas mais complexas.
 
-**Fallthrough**
+### Caminho com a taxa de conversão mais alta {#conversion-rate-caption}
+
+O insight mais proeminente na tela de Jornada é mostrado como uma legenda na parte superior da tela.
+
+Esta legenda resume qual de todos os caminhos na jornada tinha a taxa de conversão mais alta.
+
+![legenda de insight da tela de Jornada](assets/journey-canvas-caption.png)
+
+Considere o seguinte ao interpretar esta legenda:
+
+* Um _caminho_ é definido como um nó inicial que é conectado por setas a um nó final, com qualquer número de nós conectados entre eles.
+
+* O cálculo da taxa de conversão depende do tipo de jornada (o número de nós iniciais e finais contidos na jornada e se os caminhos se cruzam entre eles).
+
+  A tabela a seguir descreve como as taxas de conversão são calculadas com base no tipo de jornada:
+
+  | Tipo de jornada | Cálculo do índice de conversão | Exemplo |
+  |---------|----------|---------|
+  | **Um único nó inicial e um único nó final** | A taxa de conversão é calculada dividindo o número do nó final pelo do nó inicial. | ![Jornada com várias inicializações que convergem para um nó comum](assets/journey-canvas-single-path.png) |
+  | **Um único nó inicial e vários nós finais** | A taxa de conversão é calculada localizando o nó final com o número mais alto e dividindo esse número pelo do nó inicial. | ![Jornada com várias inicializações que convergem para um nó comum](assets/journey-canvas-singlestart-multiend.png) |
+  | **Vários caminhos independentes, com cada caminho contendo um único nó inicial e um único nó final** | A taxa de conversão é calculada dividindo o número do nó final pelo do nó inicial. O caminho com a taxa de conversão mais alta está descrito na legenda. | ![Jornada com várias inicializações que convergem para um nó comum](assets/journey-canvas-multi-start-separate.png) |
+  | **Vários nós iniciais que em qualquer ponto da jornada convergem em um nó comum** | A taxa de conversão é calculada localizando o nó final com o número mais alto e dividindo esse número pelo nó inicial com o número mais baixo. | ![Jornada com várias inicializações que convergem para um nó comum](assets/journey-canvas-multi-start-converge.png) |
+
+### Fallthrough, Fallout e muito mais
+
+A seguir estão alguns exemplos de outros insights que a tela do Jornada pode ajudar a fornecer. Você pode escolher se esses insights são baseados em todas as pessoas na visualização de dados, todas as pessoas que iniciaram a jornada ou todas as pessoas do nó anterior da jornada.
+
+#### Falha
 
 * O número e a porcentagem de pessoas que concluíram a jornada (chegou ao nó final)
 
@@ -47,14 +74,13 @@ A seguir estão alguns exemplos dos tipos de insights que a tela da Jornada pode
 
 * A etapa mais comum após ou antes de um determinado nó da jornada
 
-**Fallout**
+#### Fallout
 
 * Os nós da jornada em que as pessoas mais comumente saíam da jornada (nunca chegaram a nenhum dos nós seguintes imediatos)
 
-**Outro**
+#### Dados adicionais para cada nó
 
-* Dados adicionais para qualquer nó na jornada (adicionando uma dimensão de detalhamento para o nó)
-
+* Adicione uma dimensão de detalhamento em qualquer nó da jornada para visualizar dados adicionais desse nó específico
 
 ## Escolha entre a tela de Jornada e as visualizações de Fallout
 
