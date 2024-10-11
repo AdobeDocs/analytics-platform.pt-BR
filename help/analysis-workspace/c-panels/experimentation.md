@@ -4,10 +4,10 @@ title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 835f061a5fdc52b39a7c8fee1e3ce474118d0e68
 workflow-type: tm+mt
-source-wordcount: '2167'
-ht-degree: 23%
+source-wordcount: '2145'
+ht-degree: 19%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_panel"
 >title="Experimentação"
->abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é o melhor para gerar um resultado específico.<br/><br/>**Parâmetros **<br/>**Experimento**: o experimento que será analisado.<br>**Variante de controle**: Variante de controle do experimento selecionado.<br/>**Métrica de sucesso**: até 5 métricas de sucesso padrão (não calculadas) para analisar o experimento.<br/>**Métrica de normalização**: pessoas, sessões ou eventos. Essa métrica (também chamada de metodologia de contagem) torna-se o denominador do cálculo do incentivo. Essa métrica também afeta como os dados são agregados antes da aplicação do cálculo de confiança."
+>abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é o melhor para gerar um resultado específico.<br/><br/>**Parâmetros **<br/>**Experimento**: o experimento que é analisado.<br>**Variante de controle**: Variante de controle do experimento selecionado.<br/>**Métrica de sucesso**: até 5 métricas de sucesso padrão (não calculadas) para analisar o experimento.<br/>**Métrica de normalização**: pessoas, sessões ou eventos. Essa métrica (também chamada de metodologia de contagem) torna-se o denominador do cálculo do incentivo. Essa métrica também afeta como os dados são agregados antes da aplicação do cálculo de confiança."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,19 +39,20 @@ Leia mais sobre a [integração entre o Adobe Customer Journey Analytics e o Ado
 
 ## Controle de acesso {#access}
 
-O painel Experimentação está disponível para uso por todos os usuários do Customer Journey Analytics. Não são necessários direitos de administrador ou outras permissões. No entanto, os [pré-requisitos](#prerequisites) exigem ações que somente administradores podem executar.
+O painel Experimentação está disponível para uso por todos os usuários do Customer Journey Analytics. Não são necessários direitos de administrador ou outras permissões. No entanto, os pré-requisitos exigem ações que somente os administradores podem executar.
 
 ## Novas funções em métricas calculadas
 
 Foram adicionadas duas novas funções avançadas: Aumento e Confiança. Para obter mais informações, consulte [Referência - funções avançadas](/help/components/calc-metrics/cm-adv-functions.md).
 
-## Pré-requisitos 
+## Pré-requisitos
 
 Para usar o painel de experimentação, siga estes pré-requisitos:
 
 ### Criar conexão com conjuntos de dados de experimento
 
 O esquema de dados recomendado é um no qual os dados experimentais estejam em uma [Matriz de objetos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) que contém os dados de experimento e variante em duas dimensões separadas. Ambas as dimensões precisam estar em uma matriz de objetos **single**. Se você tiver seus dados de experimento em uma única dimensão (com os dados de experimento e variante em uma cadeia de caracteres delimitada), poderá usar a configuração [subcadeia de caracteres](/help/data-views/component-settings/substring.md) nas visualizações de dados para dividir a dimensão em duas partes para uso no painel.
+
 
 Depois que seus dados de experimento tiverem sido [assimilados](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) na Adobe Experience Platform, [crie uma conexão em Customer Journey Analytics](/help/connections/create-connection.md) para um ou mais conjuntos de dados de experimento.
 
@@ -79,8 +80,6 @@ Para usar um painel **[!UICONTROL Experimentação]**:
 
 1. Observe a [saída](#panel-output) do painel.
 
-   ![O painel Experimentação foi arrastado para um projeto.](assets/experiment.png)
-
    >[!IMPORTANT]
    >
    >Se a configuração necessária nas visualizações de dados de Customer Journey Analytics não tiver sido concluída, esta mensagem será exibida antes que você possa continuar: [!UICONTROL Configure as dimensões de experimento e variante nas visualizações de dados].
@@ -92,13 +91,15 @@ Para usar o painel Experimentação:
 
 1. Defina as configurações de entrada do painel:
 
+   ![O painel Experimentação foi arrastado para um projeto.](assets/experiment-input.png)
+
    | Configuração | Definição |
    | --- | --- |
    | **[!UICONTROL Intervalo de datas]** | O intervalo de datas do painel Experimentação é definido automaticamente com base no primeiro evento recebido em Customer Journey Analytics para o experimento selecionado. Você pode restringir ou expandir o intervalo de datas para um período mais específico, se necessário. |
    | **[!UICONTROL Experimento]** | Um conjunto de variações em uma experiência que foi exposto aos usuários finais para determinar qual é a melhor opção a ser mantida como permanente. Um experimento é composto por duas ou mais variantes, sendo uma delas considerada a variante de controle. Esta configuração é pré-preenchida com as dimensões que foram rotuladas com o rótulo **[!UICONTROL Experimento]** nas visualizações de dados e com os últimos 3 meses de dados experimentais. |
    | **[!UICONTROL Variante de controle]** | Uma de duas ou mais alterações na experiência de um usuário final que estão sendo comparadas com o objetivo de identificar a melhor alternativa. Uma variante deve ser selecionada como controle, e somente uma variante pode ser considerada como a variante de controle. Esta configuração é pré-preenchida com as dimensões que foram rotuladas com o rótulo **[!UICONTROL Variante]** nas visualizações de dados. Essa configuração extrai os dados de variantes associados a esse experimento. |
-   | **[!UICONTROL Métricas de sucesso]** | A métrica, ou as métricas, com as quais um usuário está comparando variantes. A variante com o resultado mais desejável para a métrica de conversão (seja mais alta ou mais baixa) é declarada a “variante com melhor desempenho” de um experimento. Você pode adicionar até 5 métricas. |
-   | **[!UICONTROL Normalizando métrica]** | A base ([!UICONTROL Pessoas], [!UICONTROL Sessões] ou [!UICONTROL Eventos]) em que um teste é executado. Por exemplo, um teste pode comparar as taxas de conversão de diversas variações, onde o **[!UICONTROL Índice de conversão]** é calculado como **[!UICONTROL Conversões por sessão]** ou **[!UICONTROL Conversões por pessoa]**. |
+   | **[!UICONTROL Métricas de sucesso]** ➊ | A métrica, ou as métricas, com as quais um usuário está comparando variantes. A variante com o resultado mais desejável para a métrica de conversão (seja maior ou menor) é declarada a *variante com melhor desempenho* de um experimento. Você pode adicionar até 5 métricas. |
+   | **[!UICONTROL Normalizando métrica]** ➋ | A base ([!UICONTROL Pessoas], [!UICONTROL Sessões] ou [!UICONTROL Eventos]) em que um teste é executado. Por exemplo, um teste pode comparar as taxas de conversão de várias variações, onde **[!UICONTROL Taxa de conversão]** é calculada como Exibição de página |
    | **[!UICONTROL Incluir limites superior/inferior de confiança]** | Habilite esta opção para mostrar os limites superior e inferior para os níveis de confiança. |
 
 
@@ -106,17 +107,14 @@ Para usar o painel Experimentação:
 
 ### Saída do painel
 
-O painel Experimentação retorna um conjunto avançado de dados e visualizações para ajudá-lo a entender melhor o desempenho de seus experimentos. Na parte superior do painel, uma linha de resumo é fornecida para lembrar das configurações do painel que você selecionou. A qualquer momento, você pode editar o painel selecionando o lápis de edição na parte superior direita.
+O painel Experimentação retorna um conjunto avançado de dados e visualizações para ajudá-lo a entender melhor o desempenho de seus experimentos. Na parte superior do painel, são fornecidas visualizações de [alteração de resumo](../visualizations/summary-number-change.md) para lembrá-lo das configurações do painel selecionadas. A qualquer momento, você pode editar o painel selecionando o lápis de edição na parte superior direita.
 
 Você também recebe um resumo de texto que indica se o experimento é conclusivo ou não e resume o resultado. A conclusão se baseia na significância estatística (consulte [Metodologia estatística](#adobes-statistical-methodology).) Você pode ver números de resumo para a variante de melhor desempenho, com o maior aumento e confiança.
 
-Para cada métrica de sucesso selecionada, uma tabela de forma livre e uma tendência de taxa de conversão são mostradas.
+Para cada métrica de sucesso selecionada, são mostradas uma visualização da [tabela de forma livre](../visualizations/freeform-table/freeform-table.md) e uma visualização da taxa de conversão [linha](../visualizations/line.md).
 
-![A saída de experimentação mostrando uma tabela de forma livre e uma tendência de taxa de conversão.](assets/exp-output1.png)
+![A saída de experimentação mostrando uma tabela de forma livre e uma tendência de taxa de conversão.](assets/experiment-output.png)
 
-O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] em comparação com a [!UICONTROL Variante de controle]:
-
-![A saída do gráfico de linhas que mostra o desempenho do Controle em comparação com a Variante de Controle.](assets/exp-output2.png)
 
 >[!NOTE]
 >
@@ -124,11 +122,11 @@ O gráfico de [!UICONTROL Linha] fornece o desempenho do [!UICONTROL Controle] e
 
 #### Interpretar os resultados
 
-1. **O experimento é conclusivo**: cada vez que você exibe o relatório de experimentação, os dados acumulados no experimento até o momento são analisados. A análise declara um experimento como conclusivo quando a confiança válida a qualquer momento ultrapassa um limite de 95% para *pelo menos uma* das variantes. Com mais de dois braços, uma correção de Benjamini-Hochberg é aplicada para corrigir testes de hipótese múltipla.
+1. **O experimento é conclusivo**: cada vez que você exibe o relatório de experimentação, os dados acumulados no experimento até o momento são analisados. A análise declara um experimento como conclusivo quando a confiança válida *a qualquer momento* ultrapassa um limite de 95% para *pelo menos uma* das variantes. Com mais de dois braços, uma correção de Benjamini-Hochberg é aplicada para corrigir testes de hipótese múltipla.
 
-2. **Variante com melhor desempenho**: quando um experimento é declarado conclusivo, a variante com a maior taxa de conversão é rotulada como a variante com melhor desempenho. Observe que essa variante deve ser a variante de controle ou de linha de base, ou uma das variantes que cruzam o limite de confiança válido a qualquer momento de 95% (com as correções de Benjamini-Hochberg aplicadas).
+2. **Variante com melhor desempenho**: quando um experimento é declarado conclusivo, a variante com a maior taxa de conversão é rotulada como a variante com melhor desempenho. Observe que essa variante deve ser a variante de controle ou de linha de base, ou uma das variantes que ultrapassa o limite de confiança válido de 95% *a qualquer momento* (com as correções de Benjamini-Hochberg aplicadas).
 
-3. **Taxa de conversão**: a taxa de conversão mostrada é uma relação do valor da métrica de sucesso com o valor da métrica de normalização. Observe que esse valor pode, às vezes, ser maior que 1 se a métrica não for binária (1 ou 0 para cada unidade no experimento)
+3. **Taxa de conversão**: a taxa de conversão mostrada é uma relação do valor da métrica de sucesso ➊ a ➋ do valor da métrica de normalização. Observe que esse valor pode ser maior que 1 se a métrica não for binária (1 ou 0 para cada unidade no experimento)
 
 4. **Aumento**: o resumo do relatório de Experimento mostra o aumento em relação à linha de base, que é uma medida da melhora da porcentagem no índice de conversão de uma determinada variante em relação à linha de base. Para definir com precisão, é a diferença no desempenho entre uma determinada variante e a linha de base, dividida pelo desempenho da linha de base expresso como uma porcentagem.
 
