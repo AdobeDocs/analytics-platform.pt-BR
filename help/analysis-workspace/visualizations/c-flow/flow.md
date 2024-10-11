@@ -4,10 +4,10 @@ title: Visão geral do Fluxo
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 30%
+source-wordcount: '362'
+ht-degree: 21%
 
 ---
 
@@ -56,3 +56,22 @@ Cada coluna pode exibir uma dimensão diferente. Arraste uma dimensão e solte e
 >[Configurar uma visualização de fluxo](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 >
 
+## Escolha entre as visualizações da tela de Fluxo, Fallout ou Jornada
+
+A visualização de Fluxo tem semelhanças com a [visualização de Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) e a [visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md), mas com diferenças importantes.
+
+### Entender as diferenças
+
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
+
+{{journey-visualization-comparisons}}
+
+### Quando usar o Fluxo
+
+As visualizações de fluxo são mais adequadas para:
+
+* Análise ad hoc exploratória para o próximo ponto de contato imediato no caminho. (Use a tela de Jornada para jornadas com uma sequência predefinida de páginas ou aquelas que usam um caminho eventual.)
+
+* Jornadas não lineares com vários pontos de entrada e caminhos. (Use a tela de Jornada para jornadas com uma sequência predefinida de páginas.)
+
+Use [a tabela acima](#understand-the-differences) para entender as diferenças entre as telas de Fluxo, Fallout e Jornada.

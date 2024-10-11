@@ -4,10 +4,10 @@ title: Sobre relatórios e visualizações de fallout
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 02055bd9e6c7bb7b909d6ac0e3822a98ff147443
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 46%
+source-wordcount: '331'
+ht-degree: 29%
 
 ---
 
@@ -33,7 +33,7 @@ Uma visualização de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.sv
 
 +++
 
-As visualizações de Fallout oferecem mais opções para criar relatórios de fallout. As visualizações de fallout permitem:
+As visualizações de fallout permitem:
 
 * Fazer comparações lado a lado de dois filtros diferentes no mesmo relatório.
 * Arraste e solte (e reorganize) as etapas do funil (pontos de contato).
@@ -45,11 +45,31 @@ O Fallout exibe as taxas de conversão e de fallout entre cada etapa ou ponto de
 
 Por exemplo, você pode rastrear os pontos de fallout de uma pessoa durante um processo de compra. Selecione um ponto de contato inicial e um ponto de contato final e adicione pontos de contato intermediários para criar um caminho de navegação no site. Mas você também pode executar fallouts multidimensionais.
 
-Uma visualização de fallout é útil para analisar:
+## Escolha entre as visualizações de tela de Fallout, Fluxo e Jornada
+
+A visualização Fallout tem semelhanças com a [Visualização de fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) e a [Visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
+
+### Entender as diferenças
+
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
+
+{{journey-visualization-comparisons}}
+
+### Quando usar o Fallout
+
+As visualizações Fallout e [tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) são úteis para analisar:
 
 * Taxas de conversão por meio de processos específicos no site (como um processo de compra ou registro).
 * Fluxos de tráfego gerais e de escopo mais amplo: das pessoas que visitaram a página inicial, esse fluxo mostra quantas realizaram uma pesquisa. E então quantos deles eventualmente olharam para um item específico.
 * Correlações entre eventos no site. As correlações mostram a porcentagem de pessoas que acessaram sua política de privacidade e que fizeram uma compra.
+
+As visualizações de Fallout são mais adequadas para:
+
+* Análise de fallout envolvendo jornadas com uma sequência predefinida de páginas e um único ponto de entrada e caminho. (Use a tela de Jornada para jornadas com vários pontos de entrada e caminhos.)
+
+* Jornadas nas quais você precisa executar comparações lado a lado de dois filtros diferentes no mesmo relatório.
+
+Use [a tabela acima](#understand-the-differences) para entender as diferenças entre as visualizações de tela de Jornada, Fallout e Fluxo.
 
 >[!MORELIKETHIS]
 >

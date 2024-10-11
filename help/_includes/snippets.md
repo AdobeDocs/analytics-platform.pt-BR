@@ -1,8 +1,8 @@
 ---
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '3646'
-ht-degree: 34%
+source-wordcount: '3977'
+ht-degree: 32%
 
 ---
 # Trechos
@@ -227,3 +227,23 @@ Usando o **linear** e uma **janela de retrospectiva de pessoa**, o crédito é d
 
 Os eventos de conversão que normalmente têm números inteiros são divididos se o crédito pertencer a mais de um canal. Por exemplo, se dois canais contribuem para um pedido usando um modelo de atribuição Linear, ambos os canais obtêm 0,5 desse pedido. Essas métricas parciais são somadas em todas as pessoas e depois arredondadas para o número inteiro mais próximo para o relatório.
 
+## Jornada comparações de visualização {#journey-visualization-comparisons}
+
+Várias visualizações na Análise de Jornada do cliente foram criadas para analisar as jornadas fornecidas aos clientes.
+
+Use as informações a seguir para escolher a visualização que melhor atende às suas necessidades.
+
+| Função | Tela da jornada | Fallout | Fluxo |
+|---------|----------|---------|---------|
+| **Sequência predefinida de páginas** | Sim</br>Combina análise predefinida e exploratória. O caminho eventual é usado ao usar nós predefinidos no caminho (os visitantes são contados desde que eventualmente se movam de um nó predefinido para o outro). Os próximos nós imediatos (não eventuais) também podem ser mostrados. | Sim</br>O caminho pode ser um caminho eventual ou pode ser restrito ao próximo ponto de contato | Não |
+| **Sequência exploratória de páginas (Ad Hoc Analysis)** | Sim</br>Combina análise predefinida e exploratória. O caminho eventual é usado ao usar nós predefinidos no caminho (os visitantes são contados desde que eventualmente se movam de um nó predefinido para o outro). Os próximos nós imediatos (não eventuais) também podem ser mostrados. | Limitado</br>Permite clicar com o botão direito do mouse e exibir o fallout imediato em uma tabela de Forma livre. | Sim</br>Somente análise exploratória. Cada nó mostra o próximo ponto de contato imediato (não eventual) ao longo do caminho. |
+| **Mostra de onde as pessoas saíram e continuaram(atravessaram)** | Sim</br>Mostra para jornadas predefinidas e exploratórias | Sim</br>Mostra jornadas predefinidas | Sim</br>Shows para jornadas exploratórias |
+| **jornadas lineares** | Sim | Sim | Não |
+| **jornadas não lineares com vários pontos de entrada e caminhos** | Sim | Não | Sim |
+| **Métrica primária** | Qualquer métrica, incluindo métricas calculadas | Somente sessão ou pessoa | Somente ocorrências |
+| **Métrica secundária** | Sim<p>Qualquer métrica, incluindo métricas calculadas</p> | Não | Não |
+| **Suporte a componentes em nós ou pontos de contato** | Qualquer componente para todos os nós, incluindo métricas, métricas calculadas, dimensões, itens de dimensão, filtros e intervalos de datas. | Qualquer componente para todos os nós, incluindo métricas, métricas calculadas, dimensões, itens de dimensão, filtros e intervalos de datas. | Somente itens de dimensão (exceto para o ponto de contato inicial e final) |
+| **Comparar filtros** | Não | Sim<p>Fazer comparações lado a lado de dois filtros diferentes no mesmo relatório.</p> | Não |
+| **jornadas Adobe Journey Optimizer** | Sim</br>Abrir jornadas do Journey Optimizer para análise e personalização mais profundas | Não | Não |
+
+{style="table-layout:auto"}

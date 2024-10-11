@@ -4,10 +4,10 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 7a8c1dd1135f827acfe09f39823c6fbefbcd444d
+source-git-commit: 609aac6e0a2231b15296945dbf9dd4f917fb9a19
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 2%
+source-wordcount: '1606'
+ht-degree: 1%
 
 ---
 
@@ -82,32 +82,31 @@ A seguir estão alguns exemplos de outros insights que a tela do Jornada pode aj
 
 * Adicione uma dimensão de detalhamento em qualquer nó da jornada para visualizar dados adicionais desse nó específico
 
-## Escolha entre a tela de Jornada e as visualizações de Fallout
+## Escolha entre as visualizações Tela de Jornada, Fallout ou Fluxo
 
-As visualizações da tela de jornada são semelhantes às [Visualizações de fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), pois as duas visualizações mostram onde as pessoas saíram e continuaram em uma sequência predefinida de páginas.
-
-No entanto, existem diferenças importantes.
+A visualização da tela de Jornada tem semelhanças com a [Visualização de fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) e a [Visualização de fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md), mas com diferenças importantes.
 
 ### Entender as diferenças
 
-A tabela a seguir mostra os tipos de análises compatíveis com a visualização da tela de Jornada e a visualização de Fallout:
+<!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
-| Função | Jornada visualização da tela | Visualização de fallout |
-|---------|----------|---------|
-| Jornadas lineares | Sim | Sim |
-| Jornadas não lineares com vários pontos de entrada e caminhos | Sim | Não |
-| Adobe Journey Optimizer jornada | Sim | Não |
-| Métrica primária | Qualquer métrica, incluindo métricas calculadas | Pode usar apenas as métricas de Sessão ou Usuário |
-| Métrica secundária | Sim<p>Qualquer métrica, incluindo métricas calculadas</p> | Não |
-| Comparar filtros | Não | Sim<p>Comparar um [número ilimitado de filtros](/help/analysis-workspace/visualizations/fallout/compare-segments-fallout.md#compare-filters-in-fallout)</p> |
+{{journey-visualization-comparisons}}
 
-### Escolha qual visualização usar
+### Quando usar a tela de Jornada
 
-Antes de escolher entre usar a tela de Jornada ou o Fallout, verifique se você [compreende as diferenças entre as duas](#understand-the-differences).
+A tela de jornada é essencial para:
 
-Se a análise de fallout envolver apenas uma jornada linear que tenha um único início e fim conhecidos, considere usar uma [Visualização de fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) como uma opção mais simples para essas jornadas de usuário mais simples.
+* Análise de fallout envolvendo jornadas com vários pontos de entrada e caminhos.
 
-A tela de Jornada é essencial para a análise de fallout que envolve jornadas com vários pontos de entrada e caminhos, ou para analisar jornadas que foram criadas no Journey Optimizer.
+* Jornadas não lineares com vários pontos de entrada e caminhos, com uma sequência predefinida de páginas.
+
+* Análise ad hoc exploratória baseada em uma jornada predefinida.
+
+* Análise que requer uma métrica primária diferente de Sessão, Pessoa ou Ocorrências.
+
+* Análise mais profunda das jornadas originadas no Adobe Journey Optimizer.
+
+Use [a tabela acima](#understand-the-differences) para entender as diferenças entre as visualizações de tela de Jornada, Fallout e Fluxo.
 
 ## Analisar jornadas do Journey Optimizer
 
