@@ -5,10 +5,10 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
+source-git-commit: 8241bcc4a2653da456c1577eb95d5504ca118cd9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '919'
+ht-degree: 33%
 
 ---
 
@@ -66,7 +66,7 @@ o conjunto de dados combinado a seguir é usado para os relatórios.
 
 Para ilustrar a importância dos caminhos de esquema, considere este cenário. No primeiro conjunto de dados, `string_color` é baseado no caminho de esquema `_experience.whatever.string_color` e no segundo conjunto de dados no caminho de esquema `_experience.somethingelse.string_color`. Neste cenário, os dados são **não** mesclados em uma coluna no conjunto de dados combinado resultante. Em vez disso, o resultado é duas colunas `string_color` no conjunto de dados combinado:
 
-| id | carimbo de data e hora | _experiência.<br/>seja o que for.<br/>cor_da_string | experiência.<br/>algo mais.<br/>cor_da_string | string_animal | string_shape | metric_a | metric_b |
+| id | carimbo de data e hora | _experiência.<br/>seja o que for.<br/>cor_da_string | _experiência.<br/>algo mais.<br/>cor_da_string | string_animal | string_shape | metric_a | metric_b |
 | --- | --- | --- | --- | --- | --- | ---: | ---:|
 | user_310 | 1 jan 7:02 AM | Vermelho | | Fox | | | |
 | user_310 | 1 jan 7:04 AM | | | | | 2 | |
