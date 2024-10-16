@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 63bdb36f7c33a129f294157a814f9fb15868006e
+source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
 workflow-type: tm+mt
-source-wordcount: '3919'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ A compilação permite rechavear identidades em linhas de um conjunto de dados, 
 
 O Customer Journey Analytics oferece suporte a dois tipos de costura: compilação em campo e compilação em gráfico.
 
-## Pré-requisitos 
+## Pré-requisitos
 
 >[!IMPORTANT]
 >
@@ -84,9 +84,11 @@ A compilação faz um mínimo de duas passagens de dados em um determinado conju
 
 - **Compilação em tempo real**: tenta compilar cada ocorrência (evento) à medida que elas chegam. As ocorrências de dispositivos que são &quot;novas&quot; para o conjunto de dados (nunca foram autenticadas) normalmente não são compiladas neste nível. As ocorrências de dispositivos já reconhecidos são compiladas imediatamente.
 
-- **Repetir compilação**: &quot;repete&quot; dados com base em identificadores exclusivos (IDs transitórias) que ele aprendeu. É nesse estágio que as ocorrências de dispositivos desconhecidos anteriormente (IDs persistentes) são compiladas (em IDs transitórias). A Adobe oferece dois intervalos de repetição:
+- **Repetir compilação**: &quot;repete&quot; dados com base em identificadores exclusivos (IDs transitórias) que ele aprendeu. É nesse estágio que as ocorrências de dispositivos desconhecidos anteriormente (IDs persistentes) são compiladas (em IDs transitórias). O Adobe oferece os seguintes intervalos de repetição:
    - **Diariamente**: os dados são repetidos todos os dias com uma janela de retrospectiva de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os visitantes não autenticados devem se autenticar no mesmo dia em que visitam o site.
-   - **Semanalmente**: os dados são repetidos uma vez por semana com a janela de pesquisa selecionada (consulte [opções](#select-options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
+   - **Semanalmente**: os dados são repetidos uma vez por semana com a janela de pesquisa (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
+   - **Quinzenalmente**: os dados são repetidos uma vez a cada duas semanas com a janela de pesquisa (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de duas semanas não são reprocessados até a próxima repetição quinzenal.
+   - **Mensalmente**: os dados são repetidos uma vez por mês com a janela de retrospectiva (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de um mês não são reprocessados até a repetição do próximo mês.
 
 - **Privacidade**: quando solicitações relacionadas à privacidade são recebidas, além de remover a identidade solicitada, qualquer compilação dessa identidade em eventos não autenticados deve ser desfeita.
 
@@ -186,7 +188,7 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 
 +++
 
-### Pré-requisitos 
+### Pré-requisitos
 
 Os seguintes pré-requisitos se aplicam especificamente à compilação em campo:
 
@@ -223,11 +225,11 @@ A compilação faz um mínimo de duas passagens de dados em um determinado conju
 
 - **Compilação em tempo real**: tenta compilar cada ocorrência (evento) à medida que elas chegam, usando a ID persistente para pesquisar a ID transitória do namespace selecionado, consultando o gráfico de identidade. Se a ID transitória estiver disponível na pesquisa, essa ID transitória será imediatamente compilada.
 
-- **Repetir compilação**: &quot;repete&quot; dados com base em identidades atualizadas do gráfico de identidade. É nesse estágio que as ocorrências de dispositivos anteriormente desconhecidos (IDs persistentes) são compiladas, pois o gráfico de identidade resolveu a identidade de um namespace. A Adobe oferece dois intervalos de repetição:
+- **Repetir compilação**: &quot;repete&quot; dados com base em identidades atualizadas do gráfico de identidade. É nesse estágio que as ocorrências de dispositivos anteriormente desconhecidos (IDs persistentes) são compiladas, pois o gráfico de identidade resolveu a identidade de um namespace. O Adobe oferece os seguintes intervalos de repetição:
    - **Diariamente**: os dados são repetidos todos os dias com uma janela de retrospectiva de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os visitantes não autenticados devem se autenticar no mesmo dia em que visitam o site.
    - **Semanalmente**: os dados são repetidos uma vez por semana com a janela de pesquisa (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
    - **Quinzenalmente**: os dados são repetidos uma vez a cada duas semanas com a janela de pesquisa (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de duas semanas não são reprocessados até a próxima repetição quinzenal.
-   - **Mensalmente**: os dados são repetidos uma vez por mês com a janela de retrospectiva (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
+   - **Mensalmente**: os dados são repetidos uma vez por mês com a janela de retrospectiva (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de um mês não são reprocessados até a repetição do próximo mês.
 
 - **Privacidade**: quando solicitações relacionadas à privacidade são recebidas, além de remover a identidade solicitada do conjunto de dados de origem, qualquer compilação dessa identidade em eventos não autenticados deve ser desfeita. Além disso, a identidade deve ser removida do gráfico de identidade para evitar futuras compilações baseadas em gráfico para essa identidade específica.
 
@@ -322,7 +324,7 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 
 +++
 
-### Pré-requisitos 
+### Pré-requisitos
 
 Os seguintes pré-requisitos se aplicam especificamente à compilação baseada em gráfico:
 
