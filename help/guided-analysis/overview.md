@@ -5,9 +5,9 @@ keywords: product analytics
 exl-id: 1ac8157f-87e8-4d98-a2ca-f6beb68d9d6b
 feature: Guided Analysis
 role: User
-source-git-commit: 6497a73aaf7ab7ab597d7a9b00315d126ce402f8
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1393'
 ht-degree: 72%
 
 ---
@@ -18,19 +18,19 @@ A análise guiada permite que os usuários, desde marketing até produto e anali
 
 As seguintes análises guiadas estão disponíveis:
 
-| Análise | Descrição |
-| --- | --- |
-| [Crescimento ativo](types/active.md) | Identifique se é um usuário novo, retido, recorrente ou inativo. |
-| [Tendências de conversão](types/conversion-trends.md) | Acompanhe as alterações nas taxas de conversão ao longo do tempo. |
-| [Engajamento](types/engagement.md) | Entenda a amplitude e a profundidade do engajamento de recursos. |
-| [Impacto da primeira utilização](types/first-use.md) | Meça o impacto do uso de recursos pela primeira vez com indicadores principais. |
-| [Frequência](types/frequency.md) | Meça o engajamento pela frequência de uso. |
-| [Funil](types/friction.md) | Compare taxas de conversão entre etapas. |
-| [Crescimento líquido](types/net-growth.md) | Você está ganhando ou perdendo usuários? |
-| [Impacto na versão](types/release.md) | Compare o desempenho em períodos iguais antes e depois do lançamento. |
-| [Retenção](types/retention-rates.md) | Meça os hábitos de retorno dos usuários. |
-| [Linha do tempo](types/timeline.md) | Descubra os padrões na atividade da sessão. |
-| [Tendências](types/usage.md) | Meça o engajamento do usuário ao longo do tempo. |
+| Ícone | Análise | Descrição |
+| :----:|--- | --- |
+| ![GrupoDePessoas](/help/assets/icons/PeopleGroup.svg) | [Crescimento ativo](types/active-growth.md) | Identifique se é um usuário novo, retido, recorrente ou inativo. |
+| ![TendênciasConversão](/help/assets/icons/ConversionTrends.svg) | [Tendências de conversão](types/conversion-trends.md) | Acompanhe as alterações nas taxas de conversão ao longo do tempo. |
+| ![GráficoDeEnvolvimento](/help/assets/icons/EngagementGraph.svg) | [Engajamento](types/engagement.md) | Entenda a amplitude e a profundidade do engajamento de recursos. |
+| ![PrimeiroUso](/help/assets/icons/FirstUse.svg) | [Impacto da primeira utilização](types/first-use-impact.md) | Meça o impacto do uso de recursos pela primeira vez com indicadores principais. |
+| ![Histograma](/help/assets/icons/Histogram.svg) | [Frequência](types/frequency.md) | Meça o engajamento pela frequência de uso. |
+| ![FunilConversão](/help/assets/icons/ConversionFunnel.svg) | [Funil](types/funnel.md) | Compare taxas de conversão entre etapas. |
+| ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [Crescimento líquido](types/net-growth.md) | Você está ganhando ou perdendo usuários? |
+| ![Lançamento](/help/assets/icons/Release.svg) | [Impacto na versão](types/release-impact.md) | Compare o desempenho em períodos iguais antes e depois do lançamento. |
+| ![Retenção](/help/assets/icons/Retention.svg) | [Retenção](types/retention.md) | Meça os hábitos de retorno dos usuários. |
+| ![Linha do tempo](/help/assets/icons/Timeline.svg) | [Linha do tempo](types/timeline.md) | Descubra os padrões na atividade da sessão. |
+| ![TendênciaGráfica](/help/assets/icons/GraphTrend.svg) | [Tendências](types/trends.md) | Meça o engajamento do usuário ao longo do tempo. |
 
 {style="table-layout:auto"}
 
@@ -38,7 +38,7 @@ As seguintes análises guiadas estão disponíveis:
 
 Você pode acessar a Análise guiada na página inicial do Customer Journey Analytics.
 
-1. Selecione **[!UICONTROL Análise guiada]** na página inicial, que leva você diretamente para a [exibição de tendências de uso](types/usage.md).
+1. Selecione **[!UICONTROL Análise guiada]** na página inicial, que leva você diretamente para a [exibição de tendências de uso](types/trends.md).
 
    ![Mosaico da página de destino](assets/landing-page-tile.png){style="border:1px solid gray"}
 

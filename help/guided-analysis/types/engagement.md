@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 670443a8caf6b71f49fc63a23b5328609864a9be
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '722'
 ht-degree: 4%
 
 ---
 
 # Exibição de [!UICONTROL Envolvimento]
 
-A exibição **[!UICONTROL Envolvimento]** fornece informações sobre a frequência com que um recurso é usado e quantas pessoas o usam. Essa análise funciona melhor ao comparar vários recursos entre si. Ele ajuda a alimentar as decisões de investimento, entendendo o que são seus recursos principais, avançados, únicos e questionáveis.
+A exibição ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Engagement]** fornece informações sobre a frequência com que um recurso é usado, em comparação com o número de pessoas que o usam. Essa análise funciona melhor ao comparar vários recursos entre si. Ele ajuda a alimentar as decisões de investimento, entendendo o que são seus recursos principais, avançados, únicos e questionáveis.
 
 Os recursos que aparecem na parte superior dessa visualização indicam que são usados com frequência entre usuários engajados. Os recursos que plotam para a direita dessa visualização indicam que são amplamente adotados entre os usuários ativos. O número médio de vezes que um recurso é usado divide o gráfico horizontalmente. O percentual médio de usuários ativos divide o gráfico verticalmente. Os medianos são calculados com base nos eventos selecionados no query, não em todos os dados.
 

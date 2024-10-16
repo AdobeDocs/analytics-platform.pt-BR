@@ -5,9 +5,9 @@ role: User, Admin
 feature: Basics
 hide: true
 hide-from-toc: true
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1954'
 ht-degree: 13%
 
 ---
@@ -408,7 +408,6 @@ Assista à [página Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Sp
 | Previsão | `![Forecast](/help/assets/icons/Forecast.svg)` | ![Previsão](/help/assets/icons/Forecast.svg) |
 | Formulário | `![Form](/help/assets/icons/Form.svg)` | ![Formulário](/help/assets/icons/Form.svg) |
 | Encaminhar | `![Forward](/help/assets/icons/Forward.svg)` | ![Avançar](/help/assets/icons/Forward.svg) |
-| Frequência | `![Frequency](/help/assets/icons/Frequency.svg)` | ![Frequência](/help/assets/icons/Frequency.svg) |
 | Tela cheia | `![FullScreen](/help/assets/icons/FullScreen.svg)` | ![Tela cheia](/help/assets/icons/FullScreen.svg) |
 | SaídaTelaInteira | `![FullScreenExit](/help/assets/icons/FullScreenExit.svg)` | ![SaídaTelaInteira](/help/assets/icons/FullScreenExit.svg) |
 | Função | `![Function](/help/assets/icons/Function.svg)` | ![Função](/help/assets/icons/Function.svg) |
@@ -706,6 +705,7 @@ Assista à [página Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Sp
 | Obrigatório | `![Required](/help/assets/icons/Required.svg)` | ![Obrigatório](/help/assets/icons/Required.svg) |
 | Redimensionar | `![Resize](/help/assets/icons/Resize.svg)` | ![Redimensionar](/help/assets/icons/Resize.svg) |
 | ResolvedComment | `![ResolvedComment](/help/assets/icons/ResolvedComment.svg)` | ![ComentárioResolvido](/help/assets/icons/ResolvedComment.svg) |
+| Retenção | `![Retention](/help/assets/icons/Retention.svg)` | ![Retenção](/help/assets/icons/Retention.svg) |
 | TaxasdeRetenção | `![RetentionRates](/help/assets/icons/RetentionRates.svg)` | ![TaxasDeRetenção](/help/assets/icons/RetentionRates.svg) |
 | Retuitar | `![Retweet](/help/assets/icons/Retweet.svg)` | ![Retweet](/help/assets/icons/Retweet.svg) |
 | Reutilizar | `![Reuse](/help/assets/icons/Reuse.svg)` | ![Reutilizar](/help/assets/icons/Reuse.svg) |
@@ -918,7 +918,6 @@ Assista à [página Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Sp
 | ComentárioNãoResolvido | `![UnresolvedComment](/help/assets/icons/UnresolvedComment.svg)` | ![ComentárioNãoResolvido](/help/assets/icons/UnresolvedComment.svg) |
 | UploadToCloud | `![UploadToCloud](/help/assets/icons/UploadToCloud.svg)` | ![CarregarParaNuvem](/help/assets/icons/UploadToCloud.svg) |
 | UploadToCloudOutline | `![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg)` | ![UploadToCloudOutline](/help/assets/icons/UploadToCloudOutline.svg) |
-| Uso | `![Usage](/help/assets/icons/Usage.svg)` | ![Uso](/help/assets/icons/Usage.svg) |
 | Usuário | `![User](/help/assets/icons/User.svg)` | ![Usuário](/help/assets/icons/User.svg) |
 | UserActivity | `![UserActivity](/help/assets/icons/UserActivity.svg)` | ![AtividadeDoUsuário](/help/assets/icons/UserActivity.svg) |
 | UserAdd | `![UserAdd](/help/assets/icons/UserAdd.svg)` | ![AdiçãodeUsuário](/help/assets/icons/UserAdd.svg) |

@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: e9721eaf993175dd46e9d8edf9176d7c00308e8c
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
 
 # Exibição de [!UICONTROL Linha do tempo]
 
-A exibição **[!UICONTROL Linha do tempo]** permite observar eventos de sessão no nível do usuário ao longo do tempo para encontrar padrões de experiência e contar melhores histórias de usuário. O painel esquerdo permite filtrar o fluxo por valores de propriedade e segmentos. O painel direito permite selecionar de uma lista aleatória de usuários que correspondem aos critérios do filtro. A área central mostra o fluxo do usuário selecionado por sessão, consistindo em carimbo de data e hora, valores de propriedade e duração. A duração não está disponível para o último evento em uma determinada sessão.
+A exibição ![Linha do tempo](/help/assets/icons/Timeline.svg) **[!UICONTROL Linha do tempo]** permite observar eventos de sessão no nível do usuário ao longo do tempo, para encontrar padrões de experiência e contar melhores histórias de usuário. O painel esquerdo permite filtrar o fluxo por valores de propriedade e segmentos. O painel direito permite selecionar de uma lista aleatória de usuários que correspondem aos critérios do filtro. A área central mostra o fluxo do usuário selecionado por sessão, consistindo em carimbo de data e hora, valores de propriedade e duração. A duração não está disponível para o último evento em uma determinada sessão.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427810/?learn=on)
 
@@ -31,7 +31,7 @@ Se uma visualização de dados não tiver o componente [!UICONTROL ID de pessoa]
 
 Os casos de uso para esse tipo de exibição incluem:
 
-* **Exploração de atrito**: se você encontrar uma queda acentuada na exibição [Atrito](friction.md), poderá criar um segmento desses usuários e aplicar o segmento nessa exibição para investigar possíveis causas.
+* **Exploração de atrito**: se você encontrar uma queda acentuada na exibição [Atrito](funnel.md), poderá criar um segmento desses usuários e aplicar o segmento nessa exibição para investigar possíveis causas.
 * **Comportamento de erro**: se os usuários encontrarem um erro de produto, você poderá explorar o que os usuários estavam fazendo antes ou depois de verem esse erro.
 * **Validação da coleção de dados**: os administradores de dados podem filtrar essa exibição para sua própria ID de pessoa para validar se a implementação de sua organização está funcionando como esperado.
 

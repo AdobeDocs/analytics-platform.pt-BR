@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: 240a17923b55479865affaafb098b56e32d083a3
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
 
 # Visualização [!UICONTROL Crescimento líquido]
 
-O tipo de exibição **[!UICONTROL Crescimento Líquido]** fornece informações sobre a taxa em que você ganha ou perde usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é a medida do crescimento.
+O tipo de exibição ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net growth]** fornece informações sobre a taxa em que você ganha ou perde usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é a medida do crescimento.
 
 Cada ponto de dados representa o crescimento líquido, que é calculado usando a seguinte fórmula:
 
@@ -22,7 +22,7 @@ Cada ponto de dados representa o crescimento líquido, que é calculado usando a
 
 O resultado desta fórmula é uma proporção. Um crescimento líquido de `1` representa um equilíbrio; o produto ganhou o mesmo número de usuários que perdeu. Um crescimento líquido maior que `1` representa um crescimento positivo; havia mais usuários novos + usuários de retorno do que usuários inativos. Da mesma forma, um crescimento líquido menor que `1` representa uma perda; havia mais usuários inativos do que novos usuários + usuários de retorno.
 
-Semelhante ao tipo de exibição [Ativo](active.md), os usuários são definidos como a seguir:
+Semelhante ao tipo de exibição [Ativo](active-growth.md), os usuários são definidos como a seguir:
 
 * **[!UICONTROL Novo]**: o usuário estava ativo durante o período atual, mas não anteriormente. Veja até que ponto a análise retroage para determinar um novo usuário passando o cursor do mouse sobre &#39;[!UICONTROL Novos usuários]&#39; na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
 * **[!UICONTROL Retorno]**: o usuário estava ativo no período atual e inativo no período imediatamente anterior, mas estava ativo em algum momento. Veja até que ponto a análise retroage para determinar um usuário de retorno passando o cursor do mouse sobre &#39;[!UICONTROL Usuários de retorno]&#39; na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
@@ -46,7 +46,7 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **[!UICONTROL Modo de Exibição]**: Alternar entre este tipo de modo de exibição e [Ativo](active.md).
+* **[!UICONTROL Modo de Exibição]**: Alternar entre este tipo de modo de exibição e [Ativo](active-growth.md).
 * **[!UICONTROL Eventos]**: o evento que você deseja medir. Como esse tipo de exibição é baseado no usuário, um usuário que interage com o evento uma vez dentro do período é contado como um usuário ativo. Você pode incluir um evento em uma query.
 * **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. As opções incluem [!UICONTROL Número de usuários] e [!UICONTROL Porcentagem de usuários].
 * **[!UICONTROL Segmentos]**: o segmento que você deseja medir. É possível incluir um segmento em uma consulta.

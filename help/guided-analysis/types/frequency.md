@@ -5,16 +5,16 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 70c274819eaef46627bf66d05ef8f790f61906a4
+source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 6%
 
 ---
 
 # Exibição de [!UICONTROL Frequência]
 
-A exibição **[!UICONTROL Frequência]** agrupa os dados do evento de acordo com a frequência com que os eventos ocorrem em seu produto. O eixo vertical desta exibição contém intervalos que representam a frequência do evento. O eixo horizontal mede o número de usuários ou sessões para cada bucket.
+A exibição de ![Frequência](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequência]** agrupa os dados do evento de acordo com a frequência com que os eventos ocorrem em seu produto. O eixo vertical desta exibição contém intervalos que representam a frequência do evento. O eixo horizontal mede o número de usuários ou sessões para cada bucket.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
 
@@ -31,7 +31,7 @@ Os casos de uso para esse tipo de exibição incluem:
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **[!UICONTROL Exibir]**: alternar entre este tipo de modo de exibição e [Uso](usage.md).
+* **[!UICONTROL Exibir]**: alternar entre este tipo de modo de exibição e [Uso](trends.md).
 * **[!UICONTROL Eventos]**: os eventos que você deseja medir. Cada evento selecionado é representado como um gráfico separado. Uma linha que representa o evento de tendência é adicionada à tabela. É possível incluir até cinco eventos.
 * **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. As opções incluem [!UICONTROL Usuários], [!UICONTROL Sessões], [!UICONTROL Porcentagem de usuários] e [!UICONTROL Porcentagem de sessões]. Nesta exibição, o denominador das métricas baseadas em porcentagem são os usuários ou sessões que realizaram os eventos selecionados, não todos os usuários ativos do produto.
 * **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. Cada segmento selecionado dobra o número de barras no gráfico e de linhas na tabela. É possível incluir até cinco segmentos.
