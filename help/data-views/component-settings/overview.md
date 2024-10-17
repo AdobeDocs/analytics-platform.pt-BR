@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_settings"
 >title="Configurações de componente"
->abstract="Visualize e configure o nome, a descrição e outras configurações relacionadas a um componente.<br/><br/>**Parâmetros **<br/>**Ocultar componente nos relatórios**: marcar esta caixa ocultará este componente de usuários não administradores nos relatórios. Os administradores ainda podem acessá-lo selecionando **[!UICONTROL Mostrar todos os componentes]** em um projeto do Workspace."
+>abstract="Visualize e configure o nome, a descrição e outras configurações relacionadas a um componente.<br/><br/>**Parâmetros **<br/>**Ocultar componente nos relatórios**: marcar esta caixa ocultará este componente de usuários não administradores nos relatórios. Os administradores ainda o poderão acessar, clicando em **[!UICONTROL Mostrar todos os componentes]** em um projeto do Workspace."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_contextlabels"
 >title="Rótulos de contexto"
->abstract="A remoção de um rótulo de contexto pode afetar painéis ou relatórios específicos em que o componente é necessário."
+>abstract="A remoção de um rótulo de contexto pode afetar painéis ou relatórios específicos que precisam do componente."
 
 <!-- markdownlint-enable MD034 -->
 

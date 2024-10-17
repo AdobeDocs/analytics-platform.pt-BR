@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_deduplication"
 >title="Desduplicação de métrica"
->abstract="Configurar uma métrica para contar apenas os valores que ocorrem de forma não repetitiva."
+>abstract="Configure uma métrica para contar apenas os valores que ocorrem de forma não repetitiva."
 
 <!-- markdownlint-enable MD034 -->
 

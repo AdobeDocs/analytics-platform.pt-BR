@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_substring"
 >title="Substring"
->abstract="Extrair partes de uma string usando regras ou expressões regulares."
+>abstract="Extraia partes de uma string com base em regras ou expressões regulares."
 
 <!-- markdownlint-enable MD034 -->
 

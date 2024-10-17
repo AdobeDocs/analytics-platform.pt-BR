@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 40%
+ht-degree: 44%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_attribution_panel"
 >title="Painel de atribuição"
->abstract="Compare e visualize modelos de atribuição rapidamente usando qualquer dimensão e métrica de conversão.<br/><br/>**Parâmetros **<br/>**Canal**<br/> A dimensão à qual atribuir. Essa dimensão pode ser canais de marketing, campanhas ou qualquer outra dimensão.<br/>**Modelos**<br/> O modelo determina como o crédito é atribuído aos pontos de contato.<br/>**Janela de retrospectiva**<br/> Essa configuração determina a janela de atribuição de dados que se aplica a cada conversão."
+>abstract="Compare e visualize modelos de atribuição rapidamente usando qualquer dimensão e métrica de conversão.<br/><br/>**Parâmetros **<br/>**Canal**<br/> A dimensão à qual atribuir. Essa dimensão pode ser canais de marketing, campanhas ou qualquer outra dimensão.<br/>**Modelos**<br/> O modelo determina como o crédito é atribuído aos pontos de contato.<br/>**Janela de pesquisa**<br/> Essa configuração determina a janela de atribuição de dados que será aplicada a cada conversão."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Painel do Attribution IQ"
 
 <!-- markdownlint-enable MD034 -->

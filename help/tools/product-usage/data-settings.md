@@ -1,16 +1,16 @@
 ---
-title: Configurações de dados de uso do produto
+title: Configurações dos dados de uso do produto
 description: Ativar, desativar ou definir as configurações de uso do produto.
 hide: true
 hidefromtoc: true
 source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
-# Configurações de dados de uso do produto {#product-usage-data-settings}
+# Configurações dos dados de uso do produto {#product-usage-data-settings}
 
 {{release-limited-testing}}
 
@@ -30,10 +30,10 @@ As seguintes configurações estão disponíveis nesta página:
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_sandbox"
->title="sandbox Adobe Experience Platform"
->abstract="Determina a sandbox da Adobe Experience Platform em que o esquema e o conjunto de dados são criados."
+>title="Sandbox da Adobe Experience Platform"
+>abstract="Determina a sandbox da Adobe Experience Platform na qual o esquema e o conjunto de dados são criados."
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_data_retention"
 >title="Substituir janela de retenção de dados"
->abstract="Diminua a disponibilidade dos dados de uso do produto para ajudar a reduzir custos ou estar em conformidade com as diretrizes de privacidade."
+>abstract="Diminua a disponibilidade dos dados de uso do produto para ajudar a reduzir custos ou cumprir as diretrizes de privacidade."

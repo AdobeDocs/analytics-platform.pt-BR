@@ -25,7 +25,7 @@ Para obter mais informações sobre o Gerenciador de Atividades de relatórios, 
 >[!CONTEXTUALHELP]
 >id="cja_tools_reportingactivitymanager_connections"
 >title="Conexões"
->abstract="Esta tabela mostra as conexões para as quais você possui direitos para gerenciar atividades de relatórios. As informações sobre cada conexão estão disponíveis nas colunas da tabela."
+>abstract="Esta tabela mostra as conexões para as quais você tem direitos de gerenciar a atividade de relatórios. As informações sobre cada conexão estão disponíveis em cada coluna da tabela."
 
 <!-- markdownlint-enable MD034 -->
 

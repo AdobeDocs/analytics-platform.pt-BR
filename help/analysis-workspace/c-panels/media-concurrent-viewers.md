@@ -7,18 +7,18 @@ role: User
 source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
 workflow-type: tm+mt
 source-wordcount: '1208'
-ht-degree: 36%
+ht-degree: 44%
 
 ---
 
-# Painel Visualizadores simultâneos de mídia {#media-concurrent-viewers-panel}
+# Painel de visualizadores simultâneos de mídia {#media-concurrent-viewers-panel}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_button"
 >title="Visualizadores simultâneos de mídia"
->abstract="Crie um painel para analisar o público-alvo médio por minuto de um conteúdo específico ou ao longo de um período específico."
+>abstract="Crie um painel para analisar a audiência média por minuto de um conteúdo específico ou ao longo de um período específico."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 36%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaconcurrentviewers_panel"
 >title="Visualizadores simultâneos de mídia"
->abstract="Analise visualizadores simultâneos ao longo do tempo, visualize o pico de simultaneidade ou analise e compare.<br/><br>**Granularidade**: selecione o período pelo qual visualizar visualizadores simultâneos.<br/>**Números de resumo do painel**:<br/>Opção para mostrar números de resumo com detalhes de data ou hora para cada linha. Maximum mostrará detalhes para o pico de simultaneidade. O Mínimo mostrará detalhes para o vale.<br/>**Detalhamento por séries (opcional)**: analisar a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas. Exibir até 10 linhas por vez. Os detalhamentos são limitados a um único nível."
+>abstract="Analise visualizadores simultâneos ao longo do tempo, visualize o pico de simultaneidade ou faça o detalhamento e compare.<br/><br>**Granularidade**: selecione o período pelo qual exibir visualizadores simultâneos.<br/>**Números de resumo do painel**:<br/>opção para mostrar números de resumo com detalhes de data ou hora para cada linha. O máximo mostra detalhes para a simultaneidade de pico. O mínimo mostra detalhes para o vale.  <br/>**Detalhamento de série (opcional)**: divide a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas. Visualize até 10 linhas por vez. Os detalhamentos são limitados a um único nível."
 
 <!-- markdownlint-enable MD034 -->
 

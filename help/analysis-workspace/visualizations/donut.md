@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 14%
+ht-degree: 32%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 14%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_donut_button"
 >title="Rosca"
->abstract="Crie uma visualização de rosca para comparar porcentagens de um total, normalmente com um pequeno número de itens."
+>abstract="Crie uma visualização de donut para comparar porcentagens de um total, normalmente com um pequeno número de itens."
 
 <!-- markdownlint-enable MD034 -->
 

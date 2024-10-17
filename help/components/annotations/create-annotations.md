@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 17%
+ht-degree: 24%
 
 ---
 
@@ -41,7 +41,7 @@ Para definir a anotação, use o [[!UICONTROL Construtor de anotações]](#annot
 >[!CONTEXTUALHELP]
 >id="cja_components_annotations_details"
 >title="Detalhes da anotação"
->abstract="As anotações permitem comunicar com eficácia nuances de dados contextuais e insights à sua organização. Eles permitem vincular eventos de calendário a dimensões/métricas específicas."
+>abstract="As anotações permitem comunicar com eficácia nuances de dados contextuais e insights à sua organização. Elas permitem vincular eventos de calendário a dimensões/métricas específicas. "
 
 <!-- markdownlint-enable MD034 -->
 

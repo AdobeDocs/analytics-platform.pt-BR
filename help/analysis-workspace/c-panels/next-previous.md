@@ -6,7 +6,7 @@ role: User, Admin
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 6%
+ht-degree: 31%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_nextorpreviousitem_button"
->title="Próximo item ou anterior"
+>title="Item anterior ou seguinte"
 >abstract="Crie um painel para entender as dimensões anteriores de onde as pessoas vêm ou a próxima dimensão que as pessoas acessam."
 
 <!-- markdownlint-disable MD034 -->
@@ -25,8 +25,8 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_nextorpreviousitem_panel"
->title="Aninhar ou item anterior"
->abstract="Analise quais são os locais mais comuns dos quais os visitantes vieram anteriormente ou vão para o próximo.<br/><br/>**Dimension**: selecione uma dimensão. Por exemplo **Página**.<br/>**item de Dimension**: selecione um item de dimensão específico. Por exemplo, **Página inicial**.<br/>**Direção**: selecione **Avançar** para ver os itens de dimensão imediatamente a seguir ao item de dimensão selecionado. Selecione **Anterior** para ver os itens de dimensão que antecedem o item de dimensão selecionado.<br/>**Contêiner**: selecione **Sessão** para ver os itens de dimensão anteriores/seguintes na mesma sessão ou selecione **Pessoa** para ver o item de dimensão anterior/seguinte para a mesma pessoa."
+>title="Item anterior ou seguinte"
+>abstract="Analise quais são os lugares mais comuns de onde os visitantes vieram ou para onde irão em seguida.<br/><br/>**Dimensão**: selecione uma dimensão. Por exemplo, **Página**.<br/>**item de dimensão**: selecione um item de dimensão específico. Por exemplo, **Página inicial**.<br/>**Direção**: selecione **Próximo** para ver os itens de dimensão imediatamente a seguir ao item de dimensão selecionado. Selecione **Anterior** para ver os itens de dimensão que antecedem o item de dimensão selecionado.<br/>**Contêiner**: selecione **Sessão** para ver os itens de dimensão anteriores/seguintes na mesma sessão ou selecione **Pessoa** para ver o item de dimensão anterior/seguinte para a mesma pessoa."
 
 <!-- markdownlint-enable MD034 -->
 

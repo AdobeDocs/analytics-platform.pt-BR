@@ -7,7 +7,7 @@ exl-id: 160021f1-6942-4682-9114-d375307d9912
 source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
 workflow-type: tm+mt
 source-wordcount: '1450'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="cja_components_filters_createaudience"
->title="Criar público"
->abstract="O público pode ser criado a partir de um filtro e compartilhado com a Adobe Experience Platform para ativação. "
+>title="Criar público-alvo"
+>abstract="Os públicos-alvo podem ser criados a partir de um filtro e compartilhados com a Adobe Experience Platform para ativação."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -168,7 +168,7 @@ Ou você poderia definir 52 filtros: 50 filtros para os estados dos EUA, um para
 >[!CONTEXTUALHELP]
 >id="cja_components_filters_attribution_nonrepeatinginstance"
 >title="Instância de não repetição"
->abstract="Inclui instâncias exclusivas (não repetitivas) da dimensão."
+>abstract="Inclui as instâncias exclusivas (não repetidas) da dimensão."
 
 <!-- markdownlint-enable MD034 -->
 

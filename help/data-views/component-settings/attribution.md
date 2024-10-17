@@ -19,7 +19,7 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_attribution"
 >title="Atribuição"
->abstract="Configure o modelo de atribuição padrão aplicado a uma métrica em relatórios."
+>abstract="Configure o modelo de atribuição padrão aplicado a uma métrica nos relatórios."
 
 <!-- markdownlint-enable MD034 -->
 

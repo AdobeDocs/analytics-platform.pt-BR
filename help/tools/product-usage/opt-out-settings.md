@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -27,5 +27,5 @@ O Adobe usa uma combinação de rastreamento do lado do cliente e do lado do ser
 
 >[!CONTEXTUALHELP]
 >id="cja_product_usage_opt_out_settings"
->title="Usuários que se excluíram"
->abstract="Excluir usuários do rastreamento de uso do produto."
+>title="Usuários que recusaram"
+>abstract="Exclua usuários do rastreamento de uso do produto."

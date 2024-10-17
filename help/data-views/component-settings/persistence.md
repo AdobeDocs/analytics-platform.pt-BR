@@ -20,7 +20,7 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="Persistência"
->abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação se aplica antes dos filtros nos relatórios."
+>abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação é aplicada antes dos filtros nos relatórios."
 
 <!-- markdownlint-enable MD034 -->
 

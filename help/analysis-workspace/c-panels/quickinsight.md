@@ -7,18 +7,18 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
-# Painel Quick Insights {#quick-insights-panel}
+# Painel de Insights rápidos {#quick-insights-panel}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_quickinsights_button"
 >title="Insights rápidos"
->abstract="Crie um painel para criar rapidamente uma tabela de forma livre e uma visualização de acompanhamento para analisar e descobrir insights mais rapidamente."
+>abstract="Crie um painel para desenvolver rapidamente uma tabela de forma livre e uma visualização de acompanhamento para analisar e descobrir insights mais rapidamente."
 
 <!-- markdownlint-enable MD034 -->
 

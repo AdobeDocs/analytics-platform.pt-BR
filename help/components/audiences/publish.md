@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="cja_components_audiences_audiencelimit"
->title="Atualizar público"
->abstract="As atualizações de públicos são limitadas com base na frequência com que são atualizadas."
+>title="Limite de público-alvo"
+>abstract="As atualizações de públicos-alvo são limitadas com base na frequência com que são atualizadas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_refreshlookbackwindow"
 >title="Atualizar janela de retrospectiva"
->abstract="Defina o número de dias da retrospectiva, a partir de hoje, com base na qual o público será avaliado."
+>abstract="Defina o número de dias da retrospectiva, a partir de hoje, com base na qual o público-alvo será avaliado."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,8 +44,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_audiencesizelimit"
->title="Limite de tamanho do público"
->abstract="O público não pode exceder um tamanho de 20 milhões de membros."
+>title="Limite de tamanho do público-alvo"
+>abstract="O público-alvo não pode exceder um tamanho de 20 milhões de membros."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,7 +54,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja_component_audiences_namespacesincluded"
 >title="Namespaces incluídos"
->abstract="As identidades nesse público são compostas pelos namespaces abaixo."
+>abstract="As identidades nesse público-alvo são compostas pelos namespaces abaixo."
 
 <!-- markdownlint-enable MD034 -->
 

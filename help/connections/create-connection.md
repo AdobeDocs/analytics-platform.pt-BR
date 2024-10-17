@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '3526'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="Registros adicionados"
->abstract="O número de registros (linhas) adicionados a uma Conexão durante o intervalo selecionado para os conjuntos de dados selecionados."
+>abstract="A quantidade de registros (linhas) adicionados a uma conexão durante o intervalo de tempo selecionado para os conjuntos de dados selecionados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="Registros ignorados"
->abstract="O número de registros (linhas) ignorados durante a transferência de dados para uma Conexão durante o intervalo de tempo selecionado para os conjuntos de dados selecionados."
+>abstract="A quantidade de registros (linhas) ignorados durante a transferência de dados para uma conexão durante o intervalo selecionado para os conjuntos de dados selecionados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,7 +37,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="Registros excluídos"
->abstract="O número de registros (linhas) removidos de uma Conexão durante o intervalo selecionado para os conjuntos de dados selecionados"
+>abstract="A quantidade de registros (linhas) removidos de uma conexão durante o intervalo selecionado para os conjuntos de dados selecionados"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_connection_enablerollingdatawindow"
 >title="Habilitar janela de dados contínuos"
->abstract="Defina a retenção de dados como uma janela contínua em meses no nível da conexão."
+>abstract="Defina a retenção de dados como uma janela contínua em meses na camada da conexão."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,7 +63,7 @@ ht-degree: 97%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_averagenumberofdailyuses"
->title="Número médio de usos diários"
+>title="Quantidade média de usos diários"
 >abstract="Selecione um intervalo para o número de eventos diários esperados para toda a conexão."
 
 <!-- markdownlint-enable MD034 -->
@@ -136,7 +136,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Chave correspondente"
->abstract="Selecione um campo para se associar em um dos conjuntos de dados do evento. Se a lista estiver vazia, é provável que você não tenha adicionado ou configurado um conjunto de dados de evento."
+>abstract="Selecione o campo a ser associado a um dos conjuntos de dados de evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -145,7 +145,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="Importar novos dados"
->abstract="Quaisquer novos lotes adicionados ao conjunto de dados Experience Platform serão automaticamente adicionados nesse contexto e disponibilizados para análise."
+>abstract="Quaisquer novos lotes adicionados ao conjunto de dados da Experience Platform serão automaticamente adicionados nesta conexão e disponibilizados para análise."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -163,7 +163,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="Transformar conjunto de dados"
->abstract="Esta opção transformará o conjunto de dados, para que ele possa ser usado em pesquisas baseadas em pessoas nos cenários B2B. Uma vez ativada, a transformação do conjunto de dados é irreversível."
+>abstract="Esta opção transformará o conjunto de dados, para que ele possa ser usado em pesquisas baseadas em pessoas em cenários de B2B. Uma vez ativada, a transformação do conjunto de dados é irreversível."
 
 <!-- markdownlint-enable MD034 -->
 

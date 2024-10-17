@@ -7,7 +7,7 @@ role: User
 source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,7 @@ Para definir a anotação, use o [[!UICONTROL Criador de intervalo de datas]](#a
 
 >[!CONTEXTUALHELP]
 >id="cja_components_dateranges_endtime"
->title="Hora final"
+>title="Horário de término"
 >abstract="Os horários de término sempre incluem 59 segundos."
 
 <!-- markdownlint-enable MD034 -->

@@ -18,7 +18,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_tools_auditlog_userid"
 >title="ID de usuário"
->abstract="A ID do usuário pode ser encontrada clicando no botão de informação em uma entrada do log que contém o usuário desejado."
+>abstract="A ID do usuário pode ser encontrada por meio do botão de informação em uma entrada do log que contenha o usuário desejado."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_tools_auditlog_componentid"
 >title="ID de componente"
->abstract="A ID do componente pode ser encontrada clicando no botão de informação em uma entrada do log que contém o componente desejado."
+>abstract="A ID do componente pode ser encontrada por meio do botão de informação em uma entrada do log que contenha o componente desejado."
 
 <!-- markdownlint-enable MD034 -->
 

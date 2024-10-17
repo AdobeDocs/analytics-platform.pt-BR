@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 18%
+ht-degree: 23%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_line_button"
 >title="Linha"
->abstract="Crie uma visualização de linha que mostre como os valores são alterados durante um período. Uma visualização de linha só pode ser usada quando o horário é usado como uma dimensão."
+>abstract="Crie uma visualização de linha que mostre como os valores são alterados durante um período. Uma visualização de linha só pode ser usada quando o tempo é usado como uma dimensão."
 
 <!-- markdownlint-enable MD034 -->
 

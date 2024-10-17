@@ -7,7 +7,7 @@ role: User
 source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 66%
+ht-degree: 77%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_scatter_button"
 >title="Dispersão"
->abstract="Crie uma visualização de dispersão que mostre a relação entre itens de dimensão e até três métricas."
+>abstract="Crie uma visualização de dispersão que mostre a relação entre itens de dimensão e até três métricas. "
 
 <!-- markdownlint-enable MD034 -->
 

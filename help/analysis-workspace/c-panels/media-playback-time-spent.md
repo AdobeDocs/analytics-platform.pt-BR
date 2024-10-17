@@ -7,11 +7,11 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 41%
+ht-degree: 54%
 
 ---
 
-# Painel Tempo gasto com a reprodução da mídia {#media-playback-time-spent-panel}
+# Painel de tempo gasto com a reprodução da mídia {#media-playback-time-spent-panel}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 41%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_mediaplaybacktimespent_panel"
 >title="Tempo gasto com a reprodução da mídia"
->abstract="Analise o consumo de vídeo ao longo do tempo, selecione várias granularidades, detalhamento e comparação.<br/><br/>**Granularidade**: selecione o período pelo qual visualizar visualizadores simultâneos.<br/>**Números de resumo do painel (opcional)**: opção para mostrar números de resumo com detalhes de data ou hora para cada linha. Maximum mostrará detalhes sobre a tendência de tempo de reprodução de pico. O Mínimo mostrará detalhes para o vale. O total mostrará detalhes sobre a soma total do tempo gasto com a reprodução.<br/>**Detalhamento por séries (opcional)**: analisar a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas. Exibir até 10 linhas por vez. Os detalhamentos são limitados a um único nível.<br/>**Formato de hora**: opção para mostrar o formato de hora das visualizações em horas ou minutos."
+>abstract="Analise o consumo de vídeo ao longo do tempo, selecione várias granularidades, faça o detalhamento e compare.<br/><br/>**Granularidade**: selecione o período pelo qual exibir visualizadores simultâneos.<br/>**Números de resumo do painel (opcional)**: opção para mostrar números de resumo com detalhes de data ou hora para cada linha. O máximo mostra detalhes do tempo de pico de reprodução gasto. O mínimo mostra detalhes para o vale. A soma mostra detalhes sobre a soma total do tempo gasto com a reprodução.<br/>**Detalhamento de série (opcional)**: divide a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas. Visualize até 10 linhas por vez. Os detalhamentos são limitados a um único nível.<br/>**Formato de hora**: opção para mostrar o formato de hora das visualizações em horas ou minutos."
 
 <!-- markdownlint-enable MD034 -->
 

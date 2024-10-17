@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
 workflow-type: tm+mt
 source-wordcount: '353'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_metric_includeexcludevalues"
 >title="Incluir/excluir valores"
->abstract="Filtrar uma métrica para contar apenas os valores que correspondem a critérios específicos."
+>abstract="Filtre uma métrica para contar apenas os valores que correspondem a critérios específicos."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_includeexcludevalues"
 >title="Incluir/excluir valores"
->abstract="Limite uma dimensão para incluir apenas valores que correspondam a critérios específicos. As inclusões e exclusões acontecem antes da alocação e dos filtros nos relatórios.<br/><br/>**Parâmetros **<br/>**Diferencia maiúsculas de minúsculas**: determine se a lógica de filtro abaixo diferencia maiúsculas de minúsculas."
+>abstract="Restrinja uma dimensão para incluir apenas valores que correspondam a critérios específicos. As inclusões e exclusões ocorrem antes da alocação e dos filtros nos relatórios.<br/><br/>**Parâmetros **<br/>**Diferenciar maiúsculas de minúsculas**: determine se a lógica de filtro abaixo diferencia maiúsculas de minúsculas."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_valuebucketing"
 >title="Classificação de valor"
->abstract="Valores de bloco em intervalos específicos. Esses intervalos aparecem como itens de dimensão em relatórios."
+>abstract="Valores de bloco em intervalos específicos. Estes intervalos aparecem como itens de dimensão nos relatórios."
 
 <!-- markdownlint-enable MD034 -->
 

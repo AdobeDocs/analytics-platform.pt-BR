@@ -7,7 +7,7 @@ role: User
 source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
 workflow-type: tm+mt
 source-wordcount: '597'
-ht-degree: 28%
+ht-degree: 37%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_cohorttable_button"
 >title="Tabela de coorte"
->abstract="Crie uma visualização de coorte para agrupar usuários com base na conclusão de um evento e analise o envolvimento contínuo e a variação ao longo do tempo."
+>abstract="Crie uma visualização de coorte para agrupar usuários com base na conclusão de um evento e analise o engajamento contínuo e o churn ao longo do tempo."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_cohorttable_panel"
 >title="Tabela de coorte"
->abstract="Agrupe os usuários com base na conclusão de um evento e, em seguida, analise o envolvimento contínuo e a variação ao longo do tempo.<br/><br/>**Parâmetros **<br/>**Critérios de inclusão**: os componentes usados para definir seus coortes de visitantes iniciais.<br/>**Critérios de retorno**: os componentes usados para determinar se um visitante retornou."
+>abstract="Agrupe os usuários com base na conclusão de um evento e, em seguida, analise o engajamento contínuo e o churn ao longo do tempo.<br/><br/>**Parâmetros **<br/>**Critérios de inclusão**: os componentes usados para definir seus coortes de visitantes iniciais.<br/>**Critérios de retorno**: os componentes usados para determinar se um visitante retornou."
 
 <!-- markdownlint-enable MD034 -->
 

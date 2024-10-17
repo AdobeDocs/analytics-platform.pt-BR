@@ -6,7 +6,7 @@ exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 source-git-commit: 37209097327ffb142068b5df184c07c7c8021442
 workflow-type: tm+mt
 source-wordcount: '1526'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_productcompatibility"
 >title="Compatibilidade do produto"
->abstract="Indica onde no Customer Journey Analytics essa métrica calculada pode ser usada, como em Analysis Workspace, Report Builder e assim por diante. Algumas métricas calculadas não podem ser usadas com experimentação."
+>abstract="Indica onde é possível usar essa métrica calculada no Customer Journey Analytics, seja no Analysis Workspace, Report Builder e assim por diante. Algumas métricas calculadas não podem ser usadas com experimentação. "
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Usar métricas calculadas na experimentação"
 
 <!-- markdownlint-enable MD034 -->
@@ -27,7 +27,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="cja_components_calculatedmetrics_externalid"
 >title="ID externa"
->abstract="Alterar a ID externa pode afetar como a métrica calculada aparece em fontes externas, como ferramentas de business intelligence"
+>abstract="Alterar o ID externo pode afetar como a métrica calculada aparece em fontes externas, como em ferramentas de business intelligence"
 
 <!-- markdownlint-enable MD034 -->
 

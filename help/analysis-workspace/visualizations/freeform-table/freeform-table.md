@@ -1,5 +1,5 @@
 ---
-title: Visão geral da tabela de forma livre
+title: 'Visão geral da tabela de forma livre:'
 description: As tabelas de forma livre são a base para a análise de dados no Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
@@ -7,11 +7,11 @@ role: User
 source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 21%
+ht-degree: 26%
 
 ---
 
-# Visão geral da tabela de forma livre {#freeform-table-overview}
+# Visão geral da tabela de forma livre: {#freeform-table-overview}
 
 <!-- markdownlint-disable MD034 -->
 
