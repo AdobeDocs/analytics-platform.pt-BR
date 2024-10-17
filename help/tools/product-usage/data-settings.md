@@ -3,10 +3,10 @@ title: Configurações dos dados de uso do produto
 description: Ativar, desativar ou definir as configurações de uso do produto.
 hide: true
 hidefromtoc: true
-source-git-commit: f337dfbd780aab4ae40534c5c1151dba35681b21
+source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 13%
+source-wordcount: '318'
+ht-degree: 14%
 
 ---
 
@@ -19,8 +19,7 @@ A página _Configurações de dados_ lida com a configuração de uso do seu pro
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Uso do Produto]** > **[!UICONTROL Configurações de dados]**
 
 >[!IMPORTANT]
->
->Ao habilitar esse recurso, você deve aceitar os termos e condições antes de usá-lo. Ao aceitar esses termos e condições, você o faz em nome de toda a organização. O indivíduo que aceita esses termos e condições é proprietário da visualização de dados criada automaticamente quando esse recurso é ativado.
+>Ao habilitar esse recurso, você deve aceitar os termos e condições antes de usá-lo. Ao aceitar esses termos e condições, você o faz em nome de toda a organização.
 
 As seguintes configurações estão disponíveis nesta página:
 
