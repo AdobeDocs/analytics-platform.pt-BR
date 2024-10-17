@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 50019cc5c66eee98f02d24bc55f3d993d9114dd0
+source-git-commit: 8cf8af1d1d84f4db93ab627e76554f3fe618ef92
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4009'
+ht-degree: 13%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Você deve ter o pacote **Select** ou superior (para compilação em campo) ou o pacote **Prime** ou superior (para compilação em gráfico) para usar a funcionalidade descrita nesta seção. Entre em contato com sua administração se não tiver certeza de qual pacote do Customer Journey Analytics você possui.
-
 
 A compilação de identidade (ou simplesmente, compilação) é um recurso poderoso que eleva a adequação de um conjunto de dados de evento para análise entre canais. A análise entre canais é um caso de uso principal que o Customer Journey Analytics pode manipular, permitindo combinar e executar relatórios de maneira contínua em vários conjuntos de dados de diferentes canais, com base em um identificador comum (ID de pessoa).
 
