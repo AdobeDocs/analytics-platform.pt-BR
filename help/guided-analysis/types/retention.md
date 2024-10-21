@@ -1,38 +1,48 @@
 ---
-title: Retenção
+title: Análise de retenção
 description: Meça quantos usuários continuam usando o seu produto.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 8592d6d5d4a9d7b8ac6a40963059d386ec5ee804
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '1230'
+source-wordcount: '1252'
 ht-degree: 2%
 
 ---
 
-# Retenção
+# Análise de retenção
 
-A visualização ![Retenção](/help/assets/icons/Retention.svg) **[!UICONTROL Retenção]** mede como os usuários continuam a usar seu produto ao longo do tempo, o que pode ajudá-lo a entender sua adequação ao mercado do produto. A análise conta os usuários com base em dois eventos importantes:
+A análise de ![Retenção](/help/assets/icons/Retention.svg) **[!UICONTROL Retenção]** mede como os usuários continuam a usar seu produto ao longo do tempo, o que pode ajudá-lo a entender sua adequação ao mercado do produto. A análise conta os usuários com base em dois eventos importantes:
 
 * Evento de início: o evento usado para qualificar usuários para inclusão na análise.
 * Evento de retorno: um ou mais eventos que um usuário deve participar para contar como um usuário recorrente na análise.
 
-Nesta exibição, o eixo x do gráfico representa o tempo decorrido desde o evento inicial de um usuário, e o eixo y representa o percentual de usuários que interagem com um ou mais eventos de retorno. É possível visualizar a retenção e o abandono entre durações, e as durações exibidas podem ser personalizadas por meio das configurações de query. Abaixo do gráfico, uma tabela fornece dados agregados com a opção para mostrar coortes individuais, que são um grupo de pessoas que fizeram o evento inicial na mesma data.
+Nesta análise, o eixo x do gráfico representa o tempo decorrido desde o evento inicial de um usuário, e o eixo y representa o percentual de usuários que interagem com um ou mais eventos de retorno. É possível visualizar a retenção e o abandono entre durações, e as durações exibidas podem ser personalizadas por meio das configurações de query. Abaixo do gráfico, uma tabela fornece dados agregados com a opção para mostrar coortes individuais, que são um grupo de pessoas que fizeram o evento inicial na mesma data.
+
++++ Vídeo de demonstração
 
 >[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
++++
+
+![Retenção](../assets/retention.png)
+
 ## Casos de uso
 
-Os casos de uso para esse tipo de exibição incluem:
+Os casos de uso para esta análise incluem:
 
 * **Análise de coorte**: agrupe usuários em coortes com base nas ações que eles realizam, como inscrições ou compras. Você pode comparar o desempenho desses grupos e determinar como abordar a melhoria da experiência do usuário de cada grupo.
 * **Ajuste do mercado do produto**: meça o uso regular do seu produto e visualize como curvas de retenção. Maior retenção significa maior ajuste no mercado de produtos e onde sua curva se achata indica quanto tempo leva para atingir seu ajuste. Veja essa análise em um nível geral ou detalhe por recursos de produtos individuais para obter insights mais profundos.
 * **Análise de serviço de assinatura**: se seu produto emprega uma assinatura ou outro tipo de modelo de receita recorrente, você pode ver a porcentagem de usuários que estão aproveitando ao máximo seu produto. Você pode identificar determinadas qualidades e comportamentos que esses usuários apresentam.
 * **Engajamento do usuário**: avalie como certos tipos de usuários interagem com seu produto e compare lado a lado com a frequência com que eles retornam. Um determinado segmento com menos retenção do que outros pode fornecer informações sobre como melhorar possíveis experiências de subpares.
 
-## Painel de consulta
+## Interface
+
+Consulte [Interface](../overview.md#interface) para obter uma visão geral da interface de Análise guiada. As seguintes configurações são específicas para essa análise:
+
+### Painel de consulta
 
 O painel de consulta permite configurar os seguintes componentes:
 
@@ -51,13 +61,13 @@ O painel de consulta permite configurar os seguintes componentes:
       * **[!UICONTROL As durações personalizadas]** permitem personalizar os quatro intervalos de duração exibidos no gráfico e na tabela.
 * **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. Cada segmento selecionado adiciona uma linha à tabela de coorte. É possível incluir até três segmentos.
 
-## Configurações de gráficos
+### Configurações de gráficos
 
-A exibição [!UICONTROL Taxas de retenção] oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
+A análise [!UICONTROL Retenção] oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
 * **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Barra] e [!UICONTROL Linha].
 
-## Intervalo de datas
+### Intervalo de datas
 
 O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
 

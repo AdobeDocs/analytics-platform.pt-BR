@@ -1,20 +1,20 @@
 ---
-title: Visualização de crescimento ativa
+title: Análise ativa do crescimento
 description: Identifique se é um usuário novo, retido, recorrente ou inativo.
 exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: 8592d6d5d4a9d7b8ac6a40963059d386ec5ee804
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '632'
 ht-degree: 3%
 
 ---
 
-# Exibição de [!UICONTROL Crescimento ativo]
+# Análise de [!UICONTROL Crescimento ativo]
 
-A exibição ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Crescimento ativo]** fornece informações sobre o crescimento e a aquisição de usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é uma medida de usuários. Os usuários são divididos em quatro categorias:
+A análise do ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Crescimento ativo]** fornece informações sobre o crescimento e a aquisição de usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é uma medida de usuários. Os usuários são divididos em quatro categorias:
 
 * **[!UICONTROL Novo]**: o usuário estava ativo durante o período atual, mas não anteriormente. Veja até que ponto a análise retroage passando o cursor do mouse sobre _[!UICONTROL Novos usuários]_ na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
 * **[!UICONTROL Repetir]**: o usuário estava ativo no período atual e imediatamente anterior.
@@ -23,38 +23,46 @@ A exibição ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Cr
 
 Todos os usuários ativos (novo + repetição + retorno) aparecem como uma sombra de azul-petróleo acima do eixo horizontal, enquanto todos os usuários inativos aparecem em laranja abaixo do eixo horizontal.
 
++++ Vídeo de demonstração
+
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
+
++++
+
+![Comparação de tempo ativo](../assets/active-growth-compare.png){style="border:1px solid gray"}
 
 ## Casos de uso
 
-Os casos de uso para esse tipo de exibição incluem:
+Os casos de uso para esta análise incluem:
 
 * **Retenção e churn de usuário:** fornece uma visualização clara de períodos de alta ou baixa retenção de usuários. Reconhecer esses períodos de alta ou baixa retenção pode ajudar você a tomar decisões sobre o produto para incentivar alta retenção ou ajudar a minimizar o abandono.
 * **Avaliação da campanha**: visualizar uma campanha específica pode ajudá-lo a entender quanto tráfego ela gerou e quão bem ajudou os usuários a permanecerem envolvidos.
 * **Análise do ciclo de vida do usuário**: analisar o crescimento ativo do usuário em todo o ciclo de vida do usuário pode ajudar a identificar estágios específicos em que o engajamento do usuário diminui. Por exemplo, se houver uma alta proporção de usuários inativos para indivíduos em um estágio de integração, isso pode indicar problemas de usabilidade ou a necessidade de melhor orientação no produto.
 
-## Painel de consulta
+## Interface
+
+Consulte [Interface](../overview.md#interface) para obter uma visão geral da interface de Análise guiada. As seguintes configurações são específicas para essa análise:
+
+### Painel de consulta
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **[!UICONTROL Exibir]**: alternar entre este tipo de exibição e [Crescimento líquido](net-growth.md).
-* **[!UICONTROL Eventos]**: o evento que você deseja medir. Como esse tipo de exibição é baseado no usuário, um usuário que interage com o evento uma vez dentro do período é contado como um usuário ativo. Você pode incluir um evento em uma query.
+* **[!UICONTROL Visualização]**: alternar entre esta análise e [Crescimento líquido](net-growth.md).
+* **[!UICONTROL Eventos]**: o evento que você deseja medir. Como essa análise é baseada no usuário, um usuário que interage com o evento uma vez dentro do período é contado como um usuário ativo. Você pode incluir um evento em uma query.
 * **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. As opções incluem [!UICONTROL Número de usuários] e [!UICONTROL Porcentagem de usuários].
 * **[!UICONTROL Segmentos]**: o segmento pelo qual você deseja filtrar dados. É possível incluir um segmento em uma consulta.
 
-## Configurações de gráficos
+### Configurações de gráficos
 
-A exibição [!UICONTROL Ativo] oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
+A análise [!UICONTROL Crescimento ativo] oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
 * **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Barra empilhada] e [!UICONTROL Área empilhada].
 
-## Comparação de tempo
+### Comparação de tempo
 
 {{apply-time-comparison}}
 
-![Comparação de tempo ativo](../assets/active-compare.png){style="border:1px solid gray"}
-
-## Intervalo de datas
+### Intervalo de datas
 
 O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
 

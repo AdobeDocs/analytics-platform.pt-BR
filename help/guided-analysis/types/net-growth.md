@@ -1,20 +1,20 @@
 ---
-title: Visualização de crescimento líquido
+title: Análise do crescimento líquido
 description: Você está ganhando ou perdendo usuários?
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: ce04e69d2c933f893eeeff04abb0f56fb4000e6f
+source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '673'
 ht-degree: 2%
 
 ---
 
-# Visualização [!UICONTROL Crescimento líquido]
+# Análise de [!UICONTROL Crescimento líquido]
 
-O tipo de exibição ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net growth]** fornece informações sobre a taxa em que você ganha ou perde usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é a medida do crescimento.
+A análise de ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net growth]** fornece informações sobre a taxa em que você ganha ou perde usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é a medida do crescimento.
 
 Cada ponto de dados representa o crescimento líquido, que é calculado usando a seguinte fórmula:
 
@@ -22,7 +22,7 @@ Cada ponto de dados representa o crescimento líquido, que é calculado usando a
 
 O resultado desta fórmula é uma proporção. Um crescimento líquido de `1` representa um equilíbrio; o produto ganhou o mesmo número de usuários que perdeu. Um crescimento líquido maior que `1` representa um crescimento positivo; havia mais usuários novos + usuários de retorno do que usuários inativos. Da mesma forma, um crescimento líquido menor que `1` representa uma perda; havia mais usuários inativos do que novos usuários + usuários de retorno.
 
-Semelhante ao tipo de exibição [Ativo](active-growth.md), os usuários são definidos como a seguir:
+Semelhante à análise [Ativo](active-growth.md), os usuários são definidos como a seguir:
 
 * **[!UICONTROL Novo]**: o usuário estava ativo durante o período atual, mas não anteriormente. Veja até que ponto a análise retroage para determinar um novo usuário passando o cursor do mouse sobre &#39;[!UICONTROL Novos usuários]&#39; na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
 * **[!UICONTROL Retorno]**: o usuário estava ativo no período atual e inativo no período imediatamente anterior, mas estava ativo em algum momento. Veja até que ponto a análise retroage para determinar um usuário de retorno passando o cursor do mouse sobre &#39;[!UICONTROL Usuários de retorno]&#39; na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
@@ -32,30 +32,40 @@ Semelhante ao tipo de exibição [Ativo](active-growth.md), os usuários são de
 >
 >Usuários repetidos não são considerados nesse cálculo, pois não representam nenhum ganho ou perda de usuários.
 
++++ Vídeo de demonstração
+
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
+
++++
+
+![Comparação de crescimento líquido](../assets/net-growth-compare.png)
 
 ## Casos de uso
 
-Os casos de uso para esse tipo de exibição incluem:
+Os casos de uso para esta análise incluem:
 
 * **Avaliação de desempenho**: permite avaliar o desempenho geral do produto em termos de aquisição de novos usuários. Ao rastrear as tendências de crescimento, é possível entender melhor se o seu produto está atraindo e retendo usuários no ritmo desejado.
 * **Análise de aquisição de usuário**: permite avaliar a eficácia das estratégias de aquisição de usuários. A análise das fontes de crescimento do usuário, como mecanismos de pesquisa, campanhas ou outros canais de marketing, permite identificar as fontes mais significativas de crescimento, para que você possa alocar recursos adequadamente.
 * **Análise de churn**: o crescimento líquido inclui o atrito em sua fórmula (usuários dormentes). Você pode avaliar a integridade geral de sua base de usuários ao longo do tempo. Se o crescimento líquido estiver consistentemente abaixo de `1`, isso indica uma grande quantidade de desgaste que pode levar à implementação de estratégias de retenção.
 
-## Painel de consulta
+## Interface
+
+Consulte [Interface](../overview.md#interface) para obter uma visão geral da interface de Análise guiada. As seguintes configurações são específicas para essa análise:
+
+### Painel de consulta
 
 O painel de consulta permite configurar os seguintes componentes:
 
-* **[!UICONTROL Modo de Exibição]**: Alternar entre este tipo de modo de exibição e [Ativo](active-growth.md).
-* **[!UICONTROL Eventos]**: o evento que você deseja medir. Como esse tipo de exibição é baseado no usuário, um usuário que interage com o evento uma vez dentro do período é contado como um usuário ativo. Você pode incluir um evento em uma query.
+* **[!UICONTROL Visualização]**: alternar entre esta análise e [Crescimento ativo](active-growth.md).
+* **[!UICONTROL Eventos]**: o evento que você deseja medir. Como essa análise é baseada no usuário, um usuário que interage com o evento uma vez dentro do período é contado como um usuário ativo. Você pode incluir um evento em uma query.
 * **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. As opções incluem [!UICONTROL Número de usuários] e [!UICONTROL Porcentagem de usuários].
 * **[!UICONTROL Segmentos]**: o segmento que você deseja medir. É possível incluir um segmento em uma consulta.
 
-## Comparação de tempo
+### Comparação de tempo
 
 {{apply-time-comparison}}
 
-## Intervalo de datas
+### Intervalo de datas
 
 O intervalo de datas desejado para sua análise. Há dois componentes nessa configuração:
 
