@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '647'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 5%
 
 A análise de ![Frequência](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequência]** agrupa os dados do evento de acordo com a frequência com que os eventos ocorrem em seu produto. O eixo vertical dessa análise contém intervalos que representam a frequência do evento. O eixo horizontal mede o número de usuários ou sessões para cada bucket.
 
-+++ Vídeo de demonstração
-
 >[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
-
-+++
-
-![Frequência](../assets/frequency.png)
 
 ## Casos de uso
 
@@ -72,3 +66,13 @@ O intervalo de datas desejado para sua análise. Há dois componentes nessa conf
 
 * **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir dados de tendência. O gráfico e a tabela mostram dados agregados por padrão, com a opção de expandir a tabela para uma exibição de tendências. Na exibição de tendências, os usuários são classificados com base na frequência de uso no total e em cada intervalo, o que significa que 1 usuário pode contar para diferentes intervalos em intervalos diferentes.
 * **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+
+
+<!--
+## Example
+
+See below foran example of the analysis.
+
+![Frequency](../assets/frequency.png)
+
+-->

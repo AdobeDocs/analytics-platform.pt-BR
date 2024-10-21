@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '661'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,8 @@ ht-degree: 4%
 
 A análise ![Primeiro uso](/help/assets/icons/FirstUse.svg) **[!UICONTROL Primeiro impacto sobre o uso]** mostra uma comparação do desempenho dos indicadores principais antes e depois que um usuário usa um recurso de produto pela primeira vez. O eixo horizontal desse relatório é um intervalo de tempo relativo antes e depois do evento, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa o dia 0 para quando um recurso é usado pela primeira vez por um determinado usuário. Como os usuários nem sempre adotam recursos no mesmo dia e suas implantações podem ocorrer ao longo de vários dias, o dia 0 pode significar algo diferente para cada usuário individual.
 
-+++ Vídeo de demonstração
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421661/?learn=on)
-
-+++
-
-![Impacto da primeira utilização](../assets/first-use-impact.png)
 
 
 ## Casos de uso
@@ -66,3 +61,12 @@ As seleções de data na análise [!UICONTROL Primeiro impacto sobre o uso] oper
 
 * **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir dados de tendência. As opções válidas incluem [!UICONTROL Diariamente], [!UICONTROL Semanalmente], [!UICONTROL Mensalmente] e [!UICONTROL Trimestralmente]. A alteração do intervalo afeta as opções disponíveis para o Período anterior e posterior.
 * **[!UICONTROL Período anterior e posterior]**: o tempo a ser analisado antes e depois do primeiro evento de uso especificado no painel de consulta. As opções disponíveis dependem da seleção [!UICONTROL Intervalo].
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![First use impact](../assets/first-use-impact.png)
+
+-->

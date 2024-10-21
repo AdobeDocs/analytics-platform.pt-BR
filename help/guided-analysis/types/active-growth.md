@@ -5,9 +5,9 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
@@ -23,13 +23,8 @@ A análise do ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL C
 
 Todos os usuários ativos (novo + repetição + retorno) aparecem como uma sombra de azul-petróleo acima do eixo horizontal, enquanto todos os usuários inativos aparecem em laranja abaixo do eixo horizontal.
 
-+++ Vídeo de demonstração
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421667/?learn=on)
-
-+++
-
-![Comparação de tempo ativo](../assets/active-growth-compare.png)
 
 ## Casos de uso
 
@@ -68,3 +63,12 @@ O intervalo de datas desejado para sua análise. Há dois componentes nessa conf
 
 * **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir dados de tendência. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes, que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a visualização de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
 * **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Active time compare](../assets/active-growth-compare.png)
+
+-->

@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: f71abfb76a22171004a6f2a501c8ec70d8485478
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '664'
 ht-degree: 2%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 2%
 
 A análise de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funil ]**fornece uma representação visual de uma jornada de usuário crítica em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa o percentual de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
 
-+++ Vídeo de demonstração
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421663/?learn=on){width="90%"}
-
-+++
-
-![Comparação de tempo de funil](../assets/funnel-compare.png)
 
 ## Casos de uso
 
@@ -69,3 +63,12 @@ O intervalo de datas desejado para sua análise. Há dois componentes nessa conf
 
 * **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir dados de tendência. Essa configuração não afeta análises de tendências como [Funil](funnel.md).
 * **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Funnel time compare](../assets/funnel-compare.png)
+
+-->

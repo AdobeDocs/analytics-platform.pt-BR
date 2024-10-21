@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '520'
 ht-degree: 5%
 
 ---
@@ -16,13 +16,7 @@ ht-degree: 5%
 
 A análise de ![Impacto da versão](/help/assets/icons/Release.svg) **[!UICONTROL 3} mostra uma comparação de como os indicadores-chave foram executados antes e depois de uma determinada data.]** O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa a data que você deseja comparar antes e depois. Normalmente, essa data representa uma alteração notável no produto em relação ao qual você deseja avaliar, como uma atualização do produto ou um lançamento de campanha.
 
-+++ Vídeo de demonstração
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421665/?learn=on)
-
-+++
-
-![Impacto na versão](../assets/release-impact.png)
 
 ## Casos de uso
 
@@ -59,3 +53,13 @@ A seleção de datas na Análise de impacto opera de forma diferente das outras 
 
 * **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir dados de tendência. As opções válidas incluem [!UICONTROL Diariamente], [!UICONTROL Semanalmente], [!UICONTROL Mensalmente] e [!UICONTROL Trimestralmente]. A alteração do intervalo afeta as opções disponíveis para o Período anterior e posterior.
 * **[!UICONTROL Período anterior e posterior]**: o tempo de análise antes e depois da data especificada no painel de consulta. As opções disponíveis dependem da seleção [!UICONTROL Intervalo].
+
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Release impact](../assets/release-impact.png)
+
+-->

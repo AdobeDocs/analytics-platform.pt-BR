@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1259'
 ht-degree: 2%
 
 ---
@@ -21,13 +21,8 @@ A análise de ![Retenção](/help/assets/icons/Retention.svg) **[!UICONTROL Rete
 
 Nesta análise, o eixo x do gráfico representa o tempo decorrido desde o evento inicial de um usuário, e o eixo y representa o percentual de usuários que interagem com um ou mais eventos de retorno. É possível visualizar a retenção e o abandono entre durações, e as durações exibidas podem ser personalizadas por meio das configurações de query. Abaixo do gráfico, uma tabela fornece dados agregados com a opção para mostrar coortes individuais, que são um grupo de pessoas que fizeram o evento inicial na mesma data.
 
-+++ Vídeo de demonstração
-
 >[!VIDEO](https://video.tv.adobe.com/v/3430503/?learn=on)
 
-+++
-
-![Retenção](../assets/retention.png)
 
 ## Casos de uso
 
@@ -78,3 +73,9 @@ Se você selecionar um intervalo de datas próximo ao dia atual, os usuários qu
 
 * **[!UICONTROL Analisando usuários que iniciaram o evento em [Intervalo de datas]]**: se um usuário interagir com o evento dentro desse intervalo de datas, ele será incluído na análise. Esse intervalo de datas garante que todos os usuários tenham tempo suficiente para se qualificar para todos os intervalos de duração. Esse intervalo de datas pode ser diferente da sua seleção se estiver próximo do dia atual.
 * **[!UICONTROL Os dados de [Intervalo de datas] estão reservados para concluir a análise]**: se um usuário se envolver pela primeira vez dentro desse período, eles **não** serão incluídos na análise. Para intervalos de datas recentes, esses usuários não teriam a oportunidade de se qualificar para todos os intervalos de duração. Para intervalos de datas anteriores, esses usuários estavam ativos fora do intervalo de datas selecionado.
+
+## Exemplo
+
+Consulte um exemplo da análise abaixo.
+
+![Retenção](../assets/retention.png)

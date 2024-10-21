@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 4%
+source-wordcount: '739'
+ht-degree: 5%
 
 ---
 
@@ -23,13 +23,8 @@ Os recursos que aparecem na parte superior dessa visualização indicam que são
 * Os recursos na parte inferior esquerda da matriz são os seus **recursos de baixo impacto**; eles não são amplamente adotados ou usados com frequência.
 * Os recursos na parte inferior direita da matriz são seus **recursos únicos**; eles são amplamente adotados, mas não são usados com frequência.
 
-+++ Vídeo de demonstração
-
 >[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
-+++
-
-![Comparação de engajamento](../assets/engagement-compare.png)
 
 ## Casos de uso
 
@@ -76,3 +71,11 @@ O intervalo de datas desejado para sua análise. Há dois componentes nessa conf
 
 * **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir dados de tendência. Esta análise trata [!UICONTROL Intervalo] de forma semelhante a [!UICONTROL Contado como] no painel de consulta. Usuários ativos por hora não são suportados.
 * **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+
+<!--
+## Example
+
+See below for an example of the analysis.
+
+![Enagement compare](../assets/engagement-compare.png)
+-->

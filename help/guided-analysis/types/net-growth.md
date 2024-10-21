@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: ad181b5ba3de1a038c661159a159d234da6c3edf
+source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -32,13 +32,8 @@ Semelhante à análise [Ativo](active-growth.md), os usuários são definidos co
 >
 >Usuários repetidos não são considerados nesse cálculo, pois não representam nenhum ganho ou perda de usuários.
 
-+++ Vídeo de demonstração
-
 >[!VIDEO](https://video.tv.adobe.com/v/3421664/?learn=on)
 
-+++
-
-![Comparação de crescimento líquido](../assets/net-growth-compare.png)
 
 ## Casos de uso
 
@@ -71,3 +66,10 @@ O intervalo de datas desejado para sua análise. Há dois componentes nessa conf
 
 * **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir dados de tendência. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a visualização de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
 * **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para sua conveniência ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+
+
+## Exemplo
+
+Consulte um exemplo da análise abaixo.
+
+![Comparação de crescimento líquido](../assets/net-growth-compare.png)
