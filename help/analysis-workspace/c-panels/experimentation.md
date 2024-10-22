@@ -7,7 +7,7 @@ role: User
 source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
 workflow-type: tm+mt
 source-wordcount: '2144'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_experimentation_panel"
 >title="Experimentação"
->abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é melhor para gerar um resultado específico.<br/><br/>**Parâmetros **<br/>**Experimento**: o experimento que é analisado.<br>**Variante de controle**: a variante de controle do experimento selecionado.<br/>**Métrica de sucesso**: até 5 métricas de sucesso padrão (não calculadas) para analisar o experimento.<br/>**Métrica de normalização**: pessoas, sessões ou eventos. Essa métrica (também chamada de metodologia de contagem) torna-se o denominador do cálculo do incentivo. Essa métrica também afeta a maneira como os dados são agregados antes da aplicação do cálculo de confiança."
+>abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é melhor para gerar um resultado específico.<br/><br/>**Parâmetros **<br/>**Experimento**: o experimento que será analisado.<br>**Variante de controle**: a variante de controle do experimento selecionado.<br/>**Métrica de sucesso**: até 5 métricas de sucesso padrão (não calculadas) para analisar o experimento.<br/>**Métrica de normalização**: pessoas, sessões ou eventos. Essa métrica (também chamada de metodologia de contagem) torna-se o denominador do cálculo do incentivo. Essa métrica também afeta a maneira como os dados são agregados antes da aplicação do cálculo de confiança."
 
 <!-- markdownlint-enable MD034 -->
 
