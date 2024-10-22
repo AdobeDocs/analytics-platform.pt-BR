@@ -4,10 +4,10 @@ title: Otimizar o desempenho do Customer Journey Analytics e do Analysis Workspa
 feature: FAQ
 exl-id: ad00e476-6f19-462b-ba53-d72ddd949802
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: fc3aee031808d7a6c12ed2a2cbcad8f7ae6caa82
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 74%
+source-wordcount: '2578'
+ht-degree: 57%
 
 ---
 
@@ -86,3 +86,32 @@ Os fatores de projeto [!UICONTROL Ajuda] > [!UICONTROL Desempenho] incluem:
 | **Número de células de forma livre** | Consulte a tabela &quot;Fatores de consulta&quot; acima. | |
 | **Componentes usados** | Consulte a tabela &quot;Fatores de consulta&quot; acima. | |
 | **Intervalo de datas mais longo** | Consulte a tabela &quot;Fatores de consulta&quot; acima. | |
+
+## Fatores de solicitação
+
+[!UICONTROL Ajuda] > [!UICONTROL Desempenho] fatores de solicitação
+
+Use o diagrama e os termos a seguir para saber como as solicitações são processadas e os vários fatores que influenciam os tempos de processamento:
+
+>[!NOTE]
+>
+>As diretrizes recomendadas para esses fatores se baseiam em uma pontuação de complexidade do Medium para solicitações de relatórios.
+
+
+### Diagrama de processamento de solicitações
+
+![Processamento da solicitação](assets/request-processing.png)
+
+### Termos de processamento de solicitação
+
+| Fator | Definição | Otimização |
+| --- | --- | --- |
+| [!UICONTROL **Tempo médio de solicitação**] | O tempo necessário, desde o momento em que a solicitação é iniciada até o momento em que é concluída. A orientação é de 15 segundos. <p>No diagrama [Processamento da solicitação](#request-processing-diagram) acima, o tempo de solicitação representa o processo completo, desde **solicitação do Analysis Workspace iniciada** até **solicitação do Analysis Workspace concluída**.</p> |  |
+| [!UICONTROL **Tempo de solicitação mais longo**] | O tempo necessário, desde o momento em que a solicitação é iniciada até o momento em que é concluída. <p>No diagrama [Processamento da solicitação](#request-processing-diagram) acima, o tempo de solicitação representa o processo completo, desde **solicitação do Analysis Workspace iniciada** até **solicitação do Analysis Workspace concluída**.</p> |  |
+| [!UICONTROL **Tempo médio de pesquisa**] | Como o Analysis Workspace armazena somente o hash para qualquer cadeia de caracteres usada em qualquer segmento, cada vez que você processa um projeto, **Pesquisas** são executadas para corresponder os hashes aos valores apropriados. A orientação é de menos de 2 segundos.<p>Esse processo pode consumir muitos recursos, dependendo do número de valores que podem corresponder ao hash. </p><p>No diagrama [Processamento de solicitação](#request-processing-diagram) acima, o tempo de pesquisa é representado na fase **Pesquisas** (no momento da fase **Processamento do mecanismo de solicitação**).</p> | Se as solicitações estiverem ficando lentas aqui, isso provavelmente se deve ao fato de você ter muitos segmentos de sequência em seu projeto ou cadeias de caracteres com valores excessivamente genéricos que têm muitas correspondências em potencial. |
+| [!UICONTROL **Tempo médio da fila**] | O tempo total de espera na fila antes do processamento das solicitações. A orientação é de 5 segundos.<p>No diagrama acima, [Processamento de solicitação](#request-processing-diagram), o tempo de espera é representado na fase **Fila do mecanismo de solicitação** e na fase **Fila do servidor**.</p> | Se as solicitações estiverem lentas aqui, talvez seja devido ao excesso de solicitações em execução simultaneamente em sua organização. Tente executar a solicitação fora do horário de pico. |
+| [!UICONTROL **Tempo médio de processamento do servidor**] | A quantidade média de tempo que leva para processar a solicitação.<p>No diagrama acima, [Processamento de solicitação](#request-processing-diagram), o tempo médio de processamento do servidor é representado na fase **Fila do servidor** e **Processamento do servidor**. A orientação é de 10 segundos | Se as solicitações estiverem ficando lentas aqui, é provável que o projeto tenha intervalos de datas muito longos ou visualizações complexas. Tente reduzir o intervalo de datas do projeto para diminuir os tempos de processamento. |
+| [!UICONTROL **Complexidade**] | Nem todas as solicitações exigem o mesmo tempo para serem processadas. A complexidade da solicitação pode ajudar a fornecer uma ideia geral sobre o tempo necessário para processar a solicitação. A diretriz é Medium ou inferior. <p>Os valores possíveis incluem:</p> <ul><li>[!UICONTROL **Baixo**]</li><li>[!UICONTROL **Medium**]</li><li>[!UICONTROL **Alta**]</li></ul>Esse valor é influenciado pelos valores nas seguintes colunas:<ul><li>[!UICONTROL **Limites de mês**]</li><li>[!UICONTROL **Colunas**]</li><li>[!UICONTROL **Segmentos**]</li></ul> |  |
+| [!UICONTROL **Limites de mês**] | O número de meses incluídos em uma solicitação. Mais limites de mês aumentam a complexidade da solicitação. A orientação é 6 ou menos. | Se as solicitações estiverem lentas aqui, pode ser porque os limites do mês no seu projeto são muito grandes. Tente reduzir o número de meses. |
+| [!UICONTROL **Colunas**] | O número de métricas e divisões na solicitação. Mais colunas aumentam a complexidade da solicitação. A orientação é 10 ou menos. | Se as solicitações estiverem lentas aqui, pode ser porque há muitas colunas em seu projeto. Tente reduzir o número de colunas. |
+| [!UICONTROL **Segmentos**] | O número de segmentos aplicados à solicitação. Mais segmentos aumentam a complexidade da solicitação. A orientação é 5 ou menos. | Se as solicitações estiverem lentas aqui, pode ser porque há muitos segmentos em seu projeto. Tente reduzir o número de segmentos. |
