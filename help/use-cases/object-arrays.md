@@ -5,10 +5,10 @@ exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 66%
+source-wordcount: '489'
+ht-degree: 61%
 
 ---
 
@@ -265,3 +265,10 @@ A aplicação dessa métrica calculada exibe os resultados desejados:
 | `Washing Machines` | `1850` |
 | `Dryers` | `500` |
 | `Total` | `2350` |
+
+
+
+## Limitações
+
+As limitações se aplicam aos arrays nos dados usados pelo Customer Journey Analytics e modelados como parte de um esquema no Experience Platform. Consulte [Limites do modelo de dados](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) e [Limites de tamanho de dados](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) nas [Medidas de proteção padrão para dados e segmentação do Perfil do cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails).
+
