@@ -4,7 +4,7 @@ description: Saiba como visualizar e gerenciar logs de auditoria de Customer Jou
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 31381cd397a821cc3ff1b3c15ae968a7260a6e9e
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 66%
@@ -111,7 +111,7 @@ Os seguintes itens são mostrados:
 
 Selecione o ícone de funil (![filtro](assets/filter-icon.png)) para exibir uma lista de controles de filtro para ajudar a limitar os resultados. Somente os últimos 1.000 registros são exibidos, independentemente dos vários filtros selecionados.
 
-![Log de auditoria mostrando os filtros exibidos para o Intervalo de Dados.](assets/filters.png)
+![Log de auditoria mostrando os filtros exibidos para o Intervalo de Datas.](assets/filters.png)
 
 Os seguintes filtros estão disponíveis para eventos de auditoria na interface do usuário:
 

@@ -4,7 +4,7 @@ title: Painel do Insights rápidos
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 26%
@@ -77,7 +77,7 @@ Selecione os blocos de construção:
 * **[!UICONTROL Analisar]** - especifique uma dimensão (laranja)
 * **[!UICONTROL por]** - especifique uma métrica (verde)
 * **[!UICONTROL filtrar por]** - especifique um filtro (azul)
-* **[!UICONTROL em]** - especifique um intervalo de dados (roxo).
+* **[!UICONTROL em]** - especifique um intervalo de datas (roxo).
 
 É necessário selecionar pelo menos uma dimensão e uma métrica para que a visualização funcione corretamente.
 
@@ -114,7 +114,7 @@ Outras dicas úteis aparecem no [!UICONTROL Quick Insights Builder], algumas del
 
   ![A notificação do Painel do Quick Insights é exibida após a seleção do ícone Ajuda.](assets/qibuilder4.png)
 
-* É possível analisar várias dimensões e métricas, combinar ou comparar filtros e especificar um intervalo de dados:
+* É possível analisar várias dimensões e métricas, combinar ou comparar filtros e especificar um intervalo de datas:
 
   ![Resultado do Quick Insights Builder](assets/qibuilder-result.png)
 
@@ -124,7 +124,7 @@ Outras dicas úteis aparecem no [!UICONTROL Quick Insights Builder], algumas del
 
    * **[!UICONTROL filtrar por]**: você pode adicionar até mais 2 filtros. Por exemplo, adicione Reservas como um filtro e combine esse filtro com os filtros Reservadores frequentes e Primeiro voo que você compara. Consulte ➏, ➐ e ➑.
 
-   * ativado: Você pode especificar o intervalo de dados. Consulte ➒.
+   * em: é possível especificar o intervalo de datas. Consulte ➒.
 
 ## Limitações conhecidas
 

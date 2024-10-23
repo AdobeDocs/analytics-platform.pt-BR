@@ -6,7 +6,7 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1479'
 ht-degree: 13%
@@ -111,7 +111,7 @@ Consulte as tabelas abaixo para obter uma visão geral dos menus disponíveis.
 |---|---|---|---|
 | **[!UICONTROL Criar filtro...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+ctrl+e *]** | Criar um novo [filtro](/help/components/filters/create-filters.md). |
 | **[!UICONTROL Criar métrica...]** | **[!UICONTROL *shift+cmd+c *]** | **[!UICONTROL *shift+ctrl+c *]** | Crie uma nova [métrica calculada](/help/components/calc-metrics/calc-metr-overview.md). |
-| **[!UICONTROL Criar intervalo de datas...]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+ctrl+d *]** | Crie um novo [intervalo de dados](/help/components/date-ranges/overview.md). |
+| **[!UICONTROL Criar intervalo de datas...]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+ctrl+d *]** | Crie um novo [intervalo de datas](/help/components/date-ranges/overview.md). |
 | **[!UICONTROL Criar anotação...]** | **[!UICONTROL *shift+cmd+o *]** | **[!UICONTROL *shift+ctrl+o *]** | Criar uma nova [anotação](/help/components/annotations/overview.md). |
 | **[!UICONTROL Criar público-alvo...]** | **[!UICONTROL *shift+cmd+u *]** | **[!UICONTROL *shift+ctrl+u *]** | Crie um novo [público-alvo](/help/components/audiences/audiences-overview.md). |
 | **[!UICONTROL Atualizar componentes]** | **[!UICONTROL *opt+shift+r *]** | **[!UICONTROL *alt+shift+r *]** | Atualize os componentes no projeto. |

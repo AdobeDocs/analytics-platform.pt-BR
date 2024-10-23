@@ -1,15 +1,15 @@
 ---
-title: Como selecionar um intervalo de dados em Report Builder no Customer Journey Analytics
+title: Como selecionar um intervalo de datas em Report Builder no Customer Journey Analytics
 description: Descreve como usar o calendário, as datas do acumulado e as expressões personalizadas no Report Builder para Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 89%
+ht-degree: 87%
 
 ---
 
@@ -40,7 +40,7 @@ Report Builder ![Painel de edição rápida com o calendário selecionado e Excl
 
 ## Usar o calendário
 
-Quando você usa o **Calendário**, o campo de intervalo de datas exibe o intervalo de datas atual para a solicitação de bloco de dados. Você pode inserir datas diretamente no campo de intervalo de datas ou usar uma opção de seleção de intervalo de dados.
+Quando você usa o **Calendário**, o campo de intervalo de datas exibe o intervalo de datas atual para a solicitação de bloco de dados. Você pode inserir datas diretamente no campo de intervalo de datas ou usar uma opção de seleção de intervalo de datas.
 
 ### Campo de intervalo de datas
 
@@ -92,7 +92,7 @@ A opção Datas em andamento permite selecionar um intervalo de datas usando dat
 
    Painel de intervalo de datas ![Report Builder mostrando o dia atual mais 14 dias selecionados.](./assets/image21.png)
 
-1. Clique em Próximo para definir o intervalo de dados.
+1. Clique em Próximo para definir o intervalo de datas.
 
    Use a pré-visualização de data para confirmar se o intervalo de datas resultante é o intervalo desejado.
 

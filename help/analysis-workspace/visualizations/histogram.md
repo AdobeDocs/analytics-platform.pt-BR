@@ -4,10 +4,10 @@ title: Histograma
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 37%
+ht-degree: 42%
 
 ---
 
@@ -38,7 +38,7 @@ Para criar um histograma:
 >
 >Os histogramas são compatíveis apenas com métricas padrão, não calculadas.
 
-No exemplo abaixo, um histograma é usado para agrupar sessões para o número de pessoas. O histograma mostra que a maioria das pessoas tem entre 16 e 21 sessões para o intervalo de dados selecionado.
+No exemplo abaixo, um histograma é usado para agrupar sessões para o número de pessoas. O histograma mostra que a maioria das pessoas tem entre 16 e 21 sessões para o intervalo de datas selecionado.
 
 ![](assets/histogram.png)
 

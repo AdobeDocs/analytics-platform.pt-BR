@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: cbb48623212c2f3d8968dc6daca491761e2f4a9e
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -37,7 +37,7 @@ Configure os parâmetros do bloco de dados inicial para o Local do bloco de dado
 
 1. Defina o **Intervalo de datas**.
 
-   A opção Intervalo de datas permite escolher um intervalo de datas. Os intervalos de datas podem ser fixos ou contínuos. Para obter informações sobre opções de intervalo de dados, consulte [Selecionar um intervalo de datas](select-date-range.md).
+   A opção Intervalo de datas permite escolher um intervalo de datas. Os intervalos de datas podem ser fixos ou contínuos. Para obter informações sobre opções de intervalo de datas, consulte [Selecionar um intervalo de datas](select-date-range.md).
 
 1. Clique **Próximo**.
 

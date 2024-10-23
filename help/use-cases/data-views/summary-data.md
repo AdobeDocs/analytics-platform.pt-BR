@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '5188'
 ht-degree: 8%
@@ -430,7 +430,7 @@ Após algum tempo, verifique se os dados dos conjuntos de dados estão carregado
 1. Selecione **[!UICONTROL Customer Journey Analytics]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
 1. Selecione **[!UICONTROL Conexões]** no menu superior.
 1. Selecione sua conexão, por exemplo **[!UICONTROL Exemplo de Conexão Usando Dados de Resumo]**.
-1. Selecione um intervalo de dados apropriado nos detalhes de **[!UICONTROL Conexão]** > **[!UICONTROL Exemplo de Conexão Usando dados de Resumo]**.
+1. Selecione um intervalo de datas apropriado nos detalhes de **[!UICONTROL Conexão]** > **[!UICONTROL Exemplo de Conexão Usando dados de Resumo]**.
    1. Selecione ![Calendário](/help/assets/icons/Calendar.svg) e **[!UICONTROL Últimos 7 dias]**.
    1. Selecione **[!UICONTROL Aplicar]**.
 
@@ -550,7 +550,7 @@ Para relatar os dados de resumo, crie um novo Projeto no Analysis Workspace.
 Você vê uma tela vazia com um painel [!UICONTROL Forma livre], que consiste em uma [!UICONTROL Tabela de forma livre] vazia.
 
 1. Verifique se a visualização de dados, selecionada para o painel, refere-se à visualização de dados que contém a configuração dos dados de resumo. Por exemplo, **[!UICONTROL Exemplo de Visualização de Dados Usando Dados de Resumo.]**
-1. Verifique se o intervalo de dados é válido para os dados sobre os quais deseja criar relatórios. Por exemplo: **[!UICONTROL Últimos 2 meses completos]**.
+1. Verifique se o intervalo de datas é válido para os dados que você deseja relatar. Por exemplo: **[!UICONTROL Últimos 2 meses completos]**.
 1. Arraste **[!UICONTROL Código de Rastreamento (Evento)]** de **[!UICONTROL Dimension]** e solte a dimensão na tabela de Forma livre vazia.
 1. Arraste **[!UICONTROL Pedidos]** de **[!UICONTROL Métricas]** e solte a métrica na coluna **[!UICONTROL Eventos]** para substituir essa coluna na tabela de Forma livre.
 1. Arraste **[!UICONTROL Receita]** de **[!UICONTROL Métricas]** e solte a métrica para adicionar como uma coluna adicional à tabela de Forma livre.

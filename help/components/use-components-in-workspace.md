@@ -4,7 +4,7 @@ title: Usar componentes no Analysis Workspace
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 7%
@@ -120,7 +120,7 @@ Cada painel inclui um intervalo de datas por padrão. Há várias maneiras de at
 
      ![Soltar um intervalo de datas](assets/add-date-range.gif)
 
-   * Uma métrica ou dimensão em uma visualização de tabela de forma livre. Consulte [Usar intervalos de dados](/help/components/date-ranges/overview.md#use-date-ranges) para obter mais informações.
+   * Uma métrica ou dimensão em uma visualização de tabela de forma livre. Consulte [Usar intervalos de datas](/help/components/date-ranges/overview.md#use-date-ranges) para obter mais informações.
 
 Para obter mais informações sobre como usar e gerenciar intervalos de datas no Analysis Workspace, consulte [Visão geral sobre intervalos de datas](/help/components/date-ranges/overview.md).
 
