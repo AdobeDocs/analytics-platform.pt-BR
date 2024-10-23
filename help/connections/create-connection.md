@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ea95b576a9d8309d2c6c2aeba589db1fd28ce499
+source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
-source-wordcount: '3676'
-ht-degree: 95%
+source-wordcount: '3747'
+ht-degree: 94%
 
 ---
 
@@ -194,6 +194,16 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >abstract="Selecione uma ID de grupo de compras (o identificador exclusivo de um grupo de compras) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_matchingkey"
+>title="Chave correspondente"
+>abstract="Selecione como unir: com base em uma chave correspondente ou em um container correspondente.<br/><br/>**[!UICONTROL Chave correspondente ]**: selecione um campo para associar a um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Contêiner correspondente]**: selecione um contêiner a ser usado para unir com um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não configurou um ou mais contêineres."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 <!-- markdownlint-disable MD034 -->
