@@ -4,9 +4,9 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 5e4666b81f23e09a4208f0efed17a7bc44dff0fc
+source-git-commit: 27c76e5090e4dfcfc00fd11c7a67574dc6af1c63
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1654'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,13 @@ O insight mais proeminente na tela de Jornada é mostrado como uma legenda na pa
 
 Esta legenda resume qual de todos os caminhos na jornada tinha a taxa de conversão mais alta.
 
+Quando a jornada contém vários nós iniciais, a legenda tem esta aparência:
+
 ![legenda de insight da tela de Jornada](assets/journey-canvas-caption.png)
+
+Quando a jornada contém um único nó inicial, a legenda tem esta aparência:
+
+![Nó de início único da legenda de insight da tela de Jornada](assets/journey-canvas-caption-singlestart.png)
 
 Considere o seguinte ao interpretar esta legenda:
 
@@ -176,13 +182,9 @@ Isso ocorre porque, ao contrário do Journey Optimizer, a tela de Jornada permit
 
 #### Diferenças nos recursos
 
-Depois de modificar uma jornada do Journey Optimizer na tela do Jornada, a funcionalidade pode mudar para os seguintes recursos, dependendo de suas modificações:
+Depois de modificar uma jornada Journey Optimizer na tela de Jornada, as opções disponíveis no campo suspenso [!UICONTROL **Configurações de seta**] são alteradas, dependendo de suas modificações. Para obter mais informações, consulte [Definir configurações](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-* Os valores mostrados na alteração de campo [!UICONTROL **Tipo de nó**].
-
-* As opções disponíveis no campo suspenso [!UICONTROL **Configurações de seta**] são alteradas.
-
-Para obter mais informações sobre esses campos, consulte [Definir configurações](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+O campo [!UICONTROL **Tipo de nó**] está disponível somente no Journey Optimizer. Não está disponível ao visualizar uma jornada do Journey Optimizer na tela do Jornada, independentemente de você fazer modificações na jornada na tela do Jornada.
 
 #### Diferenças de sincronização
 
