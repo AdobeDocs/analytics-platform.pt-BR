@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
+source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 85%
+source-wordcount: '942'
+ht-degree: 86%
 
 ---
 
@@ -175,10 +175,10 @@ ht-degree: 85%
       + [Atribuição](../analysis-workspace/c-panels/attribution.md)
       + [Experimentação](../analysis-workspace/c-panels/experimentation.md)
       + [Forma livre](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Público médio a cada minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Audiência média por minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Visualizadores simultâneos de mídia](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Tempo gasto com a reprodução da mídia](../analysis-workspace/c-panels/media-playback-time-spent.md)
-      + [Próximo item ou anterior](../analysis-workspace/c-panels/next-previous.md)
+      + [Item anterior ou seguinte](../analysis-workspace/c-panels/next-previous.md)
       + [Insights rápidos](../analysis-workspace/c-panels/quickinsight.md)
    + Preparar, compartilhar e agendar projetos {#curate-share}
       + [Visão geral](../analysis-workspace/curate-share/send-schedule-files.md)
@@ -363,9 +363,10 @@ ht-degree: 85%
       + [Assimilar e usar dados do Marketo Engage](../use-cases/data-ingestion/marketo.md)
       + [Assimilar e use públicos-alvo da Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Visualizações de dados {#data-views}
-      + [Casos de uso de visualizações de dados](../use-cases/data-views/data-views-usecases.md)
-      + [Uso de dimensões e métricas de ligação](../use-cases/data-views/binding-dimensions-metrics.md)
-      + [Usar dados de resumo](../use-cases/data-views/summary-data.md)
+      + [Casos de uso de visualizações de dados](/help/use-cases/data-views/data-views-usecases.md)
+      + [Uso de dimensões e métricas de ligação](/help/use-cases/data-views/binding-dimensions-metrics.md)
+      + [Usar dados de resumo](/help/use-cases/data-views/summary-data.md)
+      + [Casos de uso de extensão do BI](/help/use-cases/data-views/bi-extension-usecases.md)
    + Exportação de dados {#data-export}
       + [Visão geral](../use-cases/data-export/overview.md)
       + [Extensão BI](../use-cases/data-export/bi-extension.md)

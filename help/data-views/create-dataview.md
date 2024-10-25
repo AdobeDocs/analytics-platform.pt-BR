@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
+source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 99%
+source-wordcount: '1884'
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ Fornece configurações abrangentes para a visualização de dados.
 >[!CONTEXTUALHELP]
 >id="cja_dataview_dataviewsinadobejourneyoptimizer"
 >title="Visualizações de dados no Journey Optimizer"
->abstract="O Journey Optimizer precisa usar uma visualização de dados configurada com o Customer Journey Analytics.<br/>Habilite esta opção para torná-la a visualização de dados padrão usada nos relatórios do Adobe Journey Optimizer."
+>abstract="O Customer Journey Analytics precisa usar uma conexão e uma visualização de dados compatíveis com o Adobe Journey Optimizer. Por padrão, uma conexão e uma visualização de dados são criadas automaticamente para essa finalidade.<br/>Como alternativa, você pode habilitar essa opção para tornar essa a exibição de dados padrão usada nos relatórios do Adobe Journey Optimizer. Quando ativado, todos os componentes necessários para o Journey Optimizer são adicionados a essa visualização de dados e todos os conjuntos de dados do Journey Optimizer necessários são adicionados à conexão associada a essa visualização de dados."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/integrations/ajo#connection" text="Quais componentes e conjuntos de dados são adicionados."
 
 <!-- markdownlint-enable MD034 -->
