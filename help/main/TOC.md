@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
+source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 92%
+source-wordcount: '975'
+ht-degree: 91%
 
 ---
 
@@ -45,6 +45,16 @@ ht-degree: 92%
       + [Escolha seu caminho de atualização](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [Enviar dados para a Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Reter dados históricos](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
+      + [Processo recomendado](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [Projetar o esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [Criar seu esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+      + [Usar seu esquema existente](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + [Criar um conjunto de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+      + [Criar um fluxo de dados](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+      + [Adicionar a Platform como um serviço](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Criar uma conexão](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
+      + [Criar uma visualização de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+      + [Validar fluxo de dados](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
    + Comparação com o Adobe Analytics {#cja-aa-comparison}
       + [Visão geral](../getting-started/aa-vs-cja/overview.md)
       + [Usar dados do Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
