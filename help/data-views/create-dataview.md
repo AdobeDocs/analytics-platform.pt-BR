@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
 workflow-type: tm+mt
 source-wordcount: '1884'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 A criação de uma visualização de dados envolve criar métricas e dimensões com base em elementos de esquema ou utilizar componentes padrão. A maioria dos elementos do esquema pode ser uma dimensão ou uma métrica, dependendo das necessidades da sua empresa. Depois de arrastar um elemento do esquema para uma visualização de dados, algumas opções serão exibidas à direita, onde você poderá ajustar como a dimensão ou métrica opera no Customer Journey Analytics.
 
-+++ Assista a um vídeo que ilustra as visualizações de dados no Customer Journey Analytics
++++ Assista a um vídeo que ilustra sobre as visualizações de dados no Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/35110/?quality=12&learn=on)
 
@@ -35,7 +35,7 @@ Criar ou editar uma visualização de dados:
 >[!CONTEXTUALHELP]
 >id="cja_dataview_externalid"
 >title="ID externa"
->abstract="Alterar a ID externa pode afetar como o nome da visualização de dados aparece em fontes externas, como ferramentas de inteligência de negócios."
+>abstract="A alteração da ID externa pode afetar como o nome da visualização de dados aparece em fontes externas, como ferramentas de inteligência de negócios."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 925eae6eb1b23e761432081f0dbcdcada9ce9be4
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 86%
+ht-degree: 92%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 86%
       + [Comparar terminologia](../getting-started/aa-vs-cja/terminology.md)
       + [Comparar processamento de dados](../getting-started/aa-vs-cja/data-processing-comparisons.md)
       + [Ambientes](../getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
-      + [Processamento do Analytics versus Preparo de dados](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
+      + [Processamento do Analytics em comparação ao Preparo de dados](../getting-started/aa-vs-cja/pr-vista-dataprep.md)
       + [Identidades do Analytics](../getting-started/aa-vs-cja/aaid-ecid-adc.md)
    + [Evolução a partir do Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Guia do usuário para usuários do Adobe Analytics](../getting-started/aa-to-cja-user.md)
@@ -105,7 +105,7 @@ ht-degree: 86%
    + Uso do produto {#product-usage}
       + [Visão geral](../tools/product-usage/usage-overview.md)
       + [Configurações de dados](../tools/product-usage/data-settings.md)
-      + [Configurações de rejeição](../tools/product-usage/opt-out-settings.md)
+      + [Configurações de recusa](../tools/product-usage/opt-out-settings.md)
 
 + Projetos do Workspace {#cja-workspace}
    + [Visão geral do Analysis Workspace](../analysis-workspace/home.md)
@@ -175,10 +175,10 @@ ht-degree: 86%
       + [Atribuição](../analysis-workspace/c-panels/attribution.md)
       + [Experimentação](../analysis-workspace/c-panels/experimentation.md)
       + [Forma livre](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Audiência média por minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Público médio a cada minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Visualizadores simultâneos de mídia](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Tempo gasto com a reprodução da mídia](../analysis-workspace/c-panels/media-playback-time-spent.md)
-      + [Item anterior ou seguinte](../analysis-workspace/c-panels/next-previous.md)
+      + [Próximo item ou anterior](../analysis-workspace/c-panels/next-previous.md)
       + [Insights rápidos](../analysis-workspace/c-panels/quickinsight.md)
    + Preparar, compartilhar e agendar projetos {#curate-share}
       + [Visão geral](../analysis-workspace/curate-share/send-schedule-files.md)
@@ -292,7 +292,7 @@ ht-degree: 86%
       + [Funções avançadas](../components/calc-metrics/cm-adv-functions.md)
    + Intervalos de datas {#cja-date-ranges}
       + [Visão geral](../components/date-ranges/overview.md)
-      + [Criar intervalos de datas](../components/date-ranges/create.md)
+      + [Criar intervalos de datas ](../components/date-ranges/create.md)
       + [Gerenciar intervalos de datas](../components/date-ranges/manage.md)
       + [Comparação de datas](../components/date-ranges/time-comparison.md)
       + [Exemplos](../components/date-ranges/custom-date-ranges.md)

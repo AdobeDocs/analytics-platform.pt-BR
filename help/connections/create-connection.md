@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
 source-wordcount: '3747'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsadded"
 >title="Registros adicionados"
->abstract="A quantidade de registros (linhas) adicionados a uma conexão durante o intervalo de tempo selecionado para os conjuntos de dados selecionados."
+>abstract="O número de registros (linhas) adicionados a uma conexão durante o intervalo de tempo selecionado para os conjuntos de dados escolhidos."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsskipped"
 >title="Registros ignorados"
->abstract="A quantidade de registros (linhas) ignorados durante a transferência de dados para uma conexão durante o intervalo selecionado para os conjuntos de dados selecionados."
+>abstract="O número de registros (linhas) ignorados durante a transferência de dados para uma conexão durante o intervalo de tempo selecionado para os conjuntos de dados escolhidos."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -37,7 +37,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connections_recordsdeleted"
 >title="Registros excluídos"
->abstract="A quantidade de registros (linhas) removidos de uma conexão durante o intervalo selecionado para os conjuntos de dados selecionados"
+>abstract="O número de registros (linhas) removidos de uma conexão durante o intervalo de tempo selecionado para os conjuntos de dados escolhidos"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="cja_connection_enablerollingdatawindow"
 >title="Habilitar janela de dados contínuos"
->abstract="Defina a retenção de dados como uma janela contínua em meses na camada da conexão."
+>abstract="Defina a retenção de dados como uma janela contínua em meses no nível da conexão."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -63,7 +63,7 @@ ht-degree: 94%
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_averagenumberofdailyuses"
->title="Quantidade média de usos diários"
+>title="Número médio de usos diários"
 >abstract="Selecione um intervalo para o número de eventos diários esperados para toda a conexão."
 
 <!-- markdownlint-enable MD034 -->
@@ -136,7 +136,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_primaryID"
 >title="ID primária"
->abstract="Selecione a ID primária adequada para sua conexão: Pessoa para um cenário B2C. Conta para um cenário B2B."
+>abstract="Selecione a ID principal adequada para a sua conexão: pessoa para um cenário B2C. Conta para um cenário B2B."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -155,7 +155,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_personID"
 >title="ID de pessoa"
->abstract="Selecione uma ID de pessoa a partir das identidades disponíveis definidas no esquema de conjunto de dados da Experience Platform."
+>abstract="Selecione uma ID de pessoa entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -164,7 +164,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountID"
 >title="ID da Conta"
->abstract="Selecione uma ID de conta (o identificador exclusivo de uma conta) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform."
+>abstract="Selecione uma ID de conta (o identificador exclusivo de uma conta) entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -173,7 +173,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_globalAccountID"
 >title="ID da conta global"
->abstract="Selecione uma ID de conta global (o identificador exclusivo de uma conta global) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform."
+>abstract="Selecione uma ID de conta global (o identificador exclusivo de uma conta global) entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -182,7 +182,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_opportunityID"
 >title="ID da oportunidade"
->abstract="Selecione uma ID de oportunidade (o identificador exclusivo de uma oportunidade) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform."
+>abstract="Selecione uma ID de oportunidade (o identificador exclusivo de uma oportunidade) entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -190,8 +190,8 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_buyingGroupID"
->title="ID do grupo de compras"
->abstract="Selecione uma ID de grupo de compras (o identificador exclusivo de um grupo de compras) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform."
+>title="ID de grupo de compras"
+>abstract="Selecione uma ID de grupo de compras (o identificador exclusivo de um grupo de compras) entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -211,7 +211,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
 >title="Importar novos dados"
->abstract="Quaisquer novos lotes adicionados ao conjunto de dados da Experience Platform serão automaticamente adicionados nesta conexão e disponibilizados para análise."
+>abstract="Todos os novos lotes adicionados ao conjunto de dados da Experience Platform serão automaticamente adicionados nessa conexão e disponibilizados para análise."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -229,7 +229,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_transformdataset"
 >title="Transformar conjunto de dados"
->abstract="Esta opção transformará o conjunto de dados, para que ele possa ser usado em pesquisas baseadas em pessoas em cenários de B2B. Uma vez ativada, a transformação do conjunto de dados é irreversível."
+>abstract="Esta opção transformará o conjunto de dados, para que ele possa ser usado em pesquisas baseadas em pessoas nos cenários B2B. Uma vez ativada, a transformação do conjunto de dados é irreversível."
 
 <!-- markdownlint-enable MD034 -->
 

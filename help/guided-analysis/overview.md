@@ -8,7 +8,7 @@ role: User
 source-git-commit: 1e7d61f05a8351a1bd9e4d289c9d31906676f909
 workflow-type: tm+mt
 source-wordcount: '1806'
-ht-degree: 28%
+ht-degree: 32%
 
 ---
 
@@ -25,7 +25,7 @@ As seguintes análises guiadas estão disponíveis:
 | ![GráficoDeEnvolvimento](/help/assets/icons/EngagementGraph.svg) | [Engajamento](types/engagement.md) | Entenda a amplitude e a profundidade do engajamento de recursos. |
 | ![PrimeiroUso](/help/assets/icons/FirstUse.svg) | [Impacto da primeira utilização](types/first-use-impact.md) | Meça o impacto do uso de recursos pela primeira vez com indicadores principais. |
 | ![Histograma](/help/assets/icons/Histogram.svg) | [Frequência](types/frequency.md) | Meça o engajamento pela frequência de uso. |
-| ![FunilConversão](/help/assets/icons/ConversionFunnel.svg) | [Funil](types/funnel.md) | Compare taxas de conversão entre etapas. |
+| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [Funil](types/funnel.md) | Compare taxas de conversão entre etapas. |
 | ![NetGrowth](/help/assets/icons/NetGrowth.svg) | [Crescimento líquido](types/net-growth.md) | Você está ganhando ou perdendo usuários? |
 | ![Lançamento](/help/assets/icons/Release.svg) | [Impacto na versão](types/release-impact.md) | Compare o desempenho em períodos iguais antes e depois do lançamento. |
 | ![Retenção](/help/assets/icons/Retention.svg) | [Retenção](types/retention.md) | Meça os hábitos de retorno dos usuários. |
@@ -42,21 +42,21 @@ Você pode acessar a Análise guiada na página inicial do Customer Journey Anal
 
    ![Mosaico da página de destino](assets/landing-page-tile.png){style="border:1px solid gray"}
 
-1. Selecione **[!UICONTROL Criar novo]** para ver as diferentes opções de exibição e escolher um ponto de partida diferente para sua análise.
+1. Selecione **[!UICONTROL Criar novo]** para ver as diferentes opções de visualização e escolher um ponto de partida diferente para sua análise.
 
    ![Criar um novo modal](assets/create-new-modal.png){style="border:1px solid gray"}
 
 Você também pode acessar a Análise guiada em um projeto do Analysis Workspace.
 
-1. Selecione **[!UICONTROL Projeto em branco]** na página inicial para criar um projeto do Workspace vazio.
+1. Selecione **[!UICONTROL Projeto em branco]** na página inicial para criar um projeto vazio do espaço de trabalho.
 
    ![Criar projeto em branco](assets/blank-project.png){style="border:1px solid gray"}
 
 1. Selecione ![Análise guiada](/help/assets/icons/GuidedAnalysis.svg) **[!UICONTROL Análise guiada]** no painel esquerdo.
 
-   ![Painel esquerdo do Workspace](assets/workspace-left-rail.png){style="border:1px solid gray"}
+   ![Painel esquerdo do espaço de trabalho](assets/workspace-left-rail.png){style="border:1px solid gray"}
 
-1. Arraste qualquer nova análise para a tela do Workspace e selecione **[!UICONTROL Criar]** para gerar a análise desejada (por exemplo: **[!UICONTROL Criar tendências]**). Você também pode arrastar uma análise existente para a tela do Workspace na seção **[!UICONTROL Salvos]**.
+1. Arraste qualquer nova análise para a tela do Workspace e selecione **[!UICONTROL Criar]** para gerar a análise desejada (por exemplo: **[!UICONTROL Criar tendências]**). Você também pode arrastar uma análise existente para a tela do espaço de trabalho a partir da seção **[!UICONTROL Salvos]**.
 
    ![Criar painel](assets/create-guided-analysis-panel.gif)
 

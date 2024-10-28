@@ -19,7 +19,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_settings"
 >title="Configurações de componente"
->abstract="Visualize e configure o nome, a descrição e outras configurações relacionadas a um componente.<br/><br/>**Parâmetros **<br/>**Ocultar componente nos relatórios**: marcar esta caixa ocultará este componente de usuários não administradores nos relatórios. Os administradores ainda o poderão acessar, clicando em **[!UICONTROL Mostrar todos os componentes]** em um projeto do Workspace."
+>abstract="Visualize e defina o nome, a descrição e outras configurações relacionadas a um componente.<br/><br/>**Parâmetros **<br/>**Ocultar componente nos relatórios**: marcar esta caixa ocultará este componente de usuários não admins nos relatórios. Admins ainda podem acessá-lo clicando em **[!UICONTROL Mostrar todos os componentes]** em um projeto do espaço de trabalho."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_contextlabels"
 >title="Rótulos de contexto"
->abstract="A remoção de um rótulo de contexto pode afetar painéis ou relatórios específicos que precisam do componente."
+>abstract="A remoção de um rótulo de contexto pode afetar painéis ou relatórios específicos que utilizam o componente."
 
 <!-- markdownlint-enable MD034 -->
 
