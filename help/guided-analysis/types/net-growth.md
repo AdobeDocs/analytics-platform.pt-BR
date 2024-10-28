@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 2%
+source-wordcount: '676'
+ht-degree: 3%
 
 ---
 
-# Análise de [!UICONTROL Crescimento líquido]
+# Análise de [!UICONTROL Crescimento líquido] {#net-growth}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_netgrowth_button"
+>title="Crescimento líquido"
+>abstract="Você está ganhando ou perdendo usuários?"
+
+<!-- markdownlint-enable MD034 -->
 
 A análise de ![NetGrowth](/help/assets/icons/NetGrowth.svg) **[!UICONTROL Net growth]** fornece informações sobre a taxa em que você ganha ou perde usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é a medida do crescimento.
 

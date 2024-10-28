@@ -5,14 +5,23 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 3%
+source-wordcount: '781'
+ht-degree: 4%
 
 ---
 
-# Análise de [!UICONTROL tendências]
+# Análise de [!UICONTROL tendências] {#trends}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_trends_button"
+>title="Tendências"
+>abstract="Meça o engajamento do usuário ao longo do tempo."
+
+<!-- markdownlint-enable MD034 -->
 
 A análise de ![TendênciaGráfico](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Tendências]** fornece informações valiosas sobre o desempenho do seu produto ou o comportamento dos seus usuários ao longo do tempo. O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os eventos desejados.
 

@@ -5,14 +5,24 @@ exl-id: 53ef7485-9cae-4663-bf61-4eb77c126830
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 3%
+source-wordcount: '637'
+ht-degree: 4%
 
 ---
 
-# Análise de [!UICONTROL Crescimento ativo]
+# Análise de [!UICONTROL Crescimento ativo] {#active-growth}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_activegrowth_button"
+>title="Crescimento ativo"
+>abstract="Identifique se é um usuário novo, retido, recorrente ou inativo."
+
+<!-- markdownlint-enable MD034 -->
+
 
 A análise do ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Crescimento ativo]** fornece informações sobre o crescimento e a aquisição de usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é uma medida de usuários. Os usuários são divididos em quatro categorias:
 

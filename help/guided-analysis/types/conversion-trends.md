@@ -5,14 +5,24 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 2%
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
-# Análise de [!UICONTROL Tendências de conversão]
+# Análise de [!UICONTROL Tendências de conversão] {#conversion-trends}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_conversiontrends_button"
+>title="Tendências de conversão"
+>abstract="Acompanhe as alterações nas taxas de conversão ao longo do tempo."
+
+<!-- markdownlint-enable MD034 -->
+
 
 A análise ![Tendências de Conversão](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Tendências de conversão]** fornece uma visualização de tendências das taxas de conversão ao longo do tempo. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical representa a taxa de conversão.
 

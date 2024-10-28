@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: ad446f55855696cf7721f34f779883792b7958fa
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '376'
 ht-degree: 17%
 
 ---
@@ -19,12 +19,22 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_summarydatagroup"
 >title="Grupo de dados de resumo"
->abstract="Um grupo de dados de resumo cria uma associação entre todas as dimensões no agrupamento e é usado para combinar dimensões de conjuntos de dados de resumo com outras dimensões para gerar relatórios."
+>abstract="Um grupo de dados de resumo cria uma associação entre todas as dimensões no agrupamento e é usado para combinar dimensões de conjuntos de dados de resumo com outras dimensões para relatórios."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
+>title="Ocultar nos relatórios"
+>abstract="Selecionar essa opção habilitará o **[!UICONTROL componente Ocultar nos relatórios]** para essa dimensão e impedirá que o componente seja exibido no Analysis Workspace e em outras ferramentas de relatório do Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
 
-Um grupo de dados de resumo cria uma associação entre todas as dimensões no agrupamento e é usado para combinar dimensões de conjuntos de dados de resumo com outras dimensões para gerar relatórios.
+
+Um grupo de dados de resumo cria uma associação entre todas as dimensões no agrupamento e é usado para combinar dimensões de conjuntos de dados de resumo com outras dimensões para relatórios.
 
 ![Configurações do componente do grupo de dados de resumo](/help/data-views/assets/summary-data-group.png)
 

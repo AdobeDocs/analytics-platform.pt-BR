@@ -5,14 +5,23 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 2%
+source-wordcount: '670'
+ht-degree: 3%
 
 ---
 
-# Análise de [!UICONTROL Funil]
+# Análise de [!UICONTROL Funil] {#funnel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_funnel_button"
+>title="Funil"
+>abstract="Compare taxas de conversão entre etapas."
+
+<!-- markdownlint-enable MD034 -->
 
 A análise de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL Funil ]**fornece uma representação visual de uma jornada de usuário crítica em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa o percentual de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
 

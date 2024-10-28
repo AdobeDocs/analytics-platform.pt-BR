@@ -5,14 +5,24 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 5%
+source-wordcount: '748'
+ht-degree: 6%
 
 ---
 
-# Análise de [!UICONTROL Compromisso]
+# Análise de [!UICONTROL Compromisso] {#engagement}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_engagement_button"
+>title="Envolvimento"
+>abstract="Entenda a amplitude e a profundidade do engajamento de recursos."
+
+<!-- markdownlint-enable MD034 -->
+
 
 A análise ![EngagementGraph](/help/assets/icons/EngagementGraph.svg) **[!UICONTROL Engagement]** fornece informações sobre a frequência com que um recurso é usado, em comparação com o número de pessoas que o usam. Essa análise funciona melhor ao comparar vários recursos entre si. Ele ajuda a alimentar as decisões de investimento, entendendo o que são seus recursos principais, avançados, únicos e questionáveis.
 

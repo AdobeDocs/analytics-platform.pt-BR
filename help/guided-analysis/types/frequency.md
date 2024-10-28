@@ -5,14 +5,23 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 7ccc9f28acf08fb49d86005abb7fbb648a1564ce
+source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 5%
+source-wordcount: '657'
+ht-degree: 7%
 
 ---
 
-# Análise de [!UICONTROL Frequência]
+# Análise de [!UICONTROL Frequência] {#frequency}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_workspace_guidedanalysis_frequency_button"
+>title="Frequência"
+>abstract="Exiba a distribuição de atividades repetidas dos usuários para eventos específicos."
+
+<!-- markdownlint-enable MD034 -->
 
 A análise de ![Frequência](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequência]** agrupa os dados do evento de acordo com a frequência com que os eventos ocorrem em seu produto. O eixo vertical dessa análise contém intervalos que representam a frequência do evento. O eixo horizontal mede o número de usuários ou sessões para cada bucket.
 
