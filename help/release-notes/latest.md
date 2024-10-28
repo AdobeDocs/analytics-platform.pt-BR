@@ -3,9 +3,9 @@ title: Exibir as notas de versão atuais do Customer Journey Analytics
 description: Notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: da5c47f6572664f22cf2aa30d4551ab47326115a
+source-git-commit: 1fffde84a332a7ae2911b8d8e8bb62717e5f2043
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '375'
 ht-degree: 50%
 
 ---
@@ -22,7 +22,7 @@ Essas notas de versão abrangem o período de lançamento de 15 de outubro de 20
 | ----------- | ---------- | ------- | ---- |
 | **Transferência de ativos** | Permite transferir a propriedade de componentes como projetos, filtros e métricas calculadas para outros usuários, garantindo a continuidade e o acesso apropriado. [Saiba mais](/help/tools/asset-transfer/transfer-assets.md) |  | Outubro de 15 |
 | **Análise guiada: incorporada no Workspace** | [A análise guiada](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/guided-analysis/overview) agora está disponível diretamente no Analysis Workspace, permitindo que os usuários criem painéis com insights abrangentes a partir de painéis, visualizações e análises guiadas. Em uma nova seção do painel esquerdo, você pode criar novas análises guiadas para adicionar aos seus projetos. Você também pode acessar análises guiadas salvas que podem ser reutilizadas como blocos de construção em muitos projetos. | 2 de outubro de 2024 | quinta-feira, 23 de outubro de 2024 |
-| **Uso do produto** | Veja como sua organização usa o Customer Journey Analytics. Habilitar esse recurso cria um conjunto de dados na Adobe Experience Platform que coleta dados quando qualquer pessoa na organização usa o Analysis Workspace. Uma conexão e uma exibição de dados também são criadas automaticamente, fornecendo acesso a dimensões como os principais tipos de projeto, usuários mais ativos e componentes mais populares usados em projetos. [Link da documentação em breve] | quinta-feira, 23 de outubro de 2024 | Janeiro de 2025 |
+| **Uso do produto** | Veja como sua organização usa o Customer Journey Analytics. Habilitar esse recurso cria um conjunto de dados na Adobe Experience Platform que coleta dados quando qualquer pessoa na organização usa o Analysis Workspace. Uma conexão e uma exibição de dados também são criadas automaticamente, fornecendo acesso a dimensões como os principais tipos de projeto, usuários mais ativos e componentes mais populares usados em projetos. [Saiba mais](/help/tools/product-usage/usage-overview.md) | quinta-feira, 23 de outubro de 2024 | Janeiro de 2025 |
 | **Novas informações sobre fatores de Solicitação no Desempenho do Analysis Workspace** | Uma nova seção &quot;Fatores de solicitação&quot; agora está disponível ao analisar o desempenho no Analysis Workspace. Para saber mais sobre como as solicitações são processadas e os vários fatores que influenciam os tempos de processamento, consulte &quot;Fatores de solicitação&quot; em [Otimizar o desempenho do Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/optimizing-performance#request-factors). |  | quarta-feira, 1 de outubro de 2024 |
 
 
