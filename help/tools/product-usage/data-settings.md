@@ -1,9 +1,7 @@
 ---
 title: Configurações dos dados de uso do produto
 description: Ativar, desativar ou definir as configurações de uso do produto.
-hide: true
-hidefromtoc: true
-source-git-commit: b3d33561cc29aa1d37efa9f943bc145c16be814c
+source-git-commit: 7d22c512e8e96963b288567704d2245e64411b10
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 14%
