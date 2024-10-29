@@ -5,7 +5,7 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: bd89162aa81648133cbf05357fb7f8911ba91002
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 22%
@@ -22,16 +22,6 @@ ht-degree: 22%
 >abstract="Determine como um componente é exibido quando usado em relatórios."
 
 <!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_dataview_component_metric_format_currencyconversion"
->title="Conversão de moeda"
->abstract="Selecione uma dimensão de código de moeda para configurar e exibir a moeda no tipo de moeda selecionado."
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 O Formato permite determinar como uma determinada métrica é exibida quando usada em relatórios.
@@ -64,7 +54,16 @@ Você pode determinar como uma determinada métrica é exibida ajustando suas co
 
    {style="table-layout:auto"}
 
-## Usar conversão de moeda
+## Usar conversão de moeda {#use-currency-conversion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_component_metric_format_currencyconversion"
+>title="Conversão de moeda"
+>abstract="Selecione uma dimensão de código de moeda para configurar e exibir a moeda no tipo de moeda selecionado."
+
+<!-- markdownlint-enable MD034 -->
 
 A conversão de moeda em Customer Journey Analytics pode ser extremamente valiosa para empresas que operam internacionalmente. Ao eliminar as complexidades da conversão manual de moeda, a conversão de moeda no Customer Journey Analytics traz uniformidade e clareza aos dados financeiros. A conversão de moeda acompanha as taxas de câmbio históricas diárias e mantém essas taxas diárias por um período de 4 anos.
 

@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 81%
+source-wordcount: '913'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 81%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="Persistência"
->abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação é aplicada antes dos filtros nos relatórios."
+>abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação se aplica antes dos filtros nos relatórios. Consulte para obter mais informações sobre [configurações de alocação](/help/data-views/component-settings/persistence.md#allocation-settings), [configurações de expiração](/help/data-views/component-settings/persistence.md#expiration-settings), [dimensão de ligação](/help/data-views/component-settings/persistence.md#binding-dimension) e métricas de ligação."
 
 <!-- markdownlint-enable MD034 -->
 
