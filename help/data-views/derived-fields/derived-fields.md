@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: a236b2126c4b998b4d97caab014556e3ee3a9e83
+source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '8842'
 ht-degree: 17%
@@ -1701,7 +1701,7 @@ Use a função Resumir para cálculos baseados em evento, sessão ou escopo de p
 
 <!-- TRIM -->
 
-### Aparar
+### Aparar {#trim}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -1823,7 +1823,7 @@ Você cria um campo derivado `Store Identifier`. Use a função [!UICONTROL TRIM
 
 <!-- URL PARSE -->
 
-### Análise de URL
+### Análise de URL {#urlparse}
 
 <!-- markdownlint-disable MD034 -->
 
