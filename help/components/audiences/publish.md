@@ -4,9 +4,9 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: 126d2213b97b71ff3116ff53e56217b8b6e7a479
 workflow-type: tm+mt
-source-wordcount: '1948'
+source-wordcount: '1973'
 ht-degree: 18%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 18%
 
 
 
-Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) no Adobe Experience Platform para direcionamento e personalização de clientes.
+Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/home) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
 Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para familiarizar-se com o conceito de públicos-alvo do Customer Journey Analytics.
 
@@ -126,7 +126,7 @@ Depois de criar e publicar um público-alvo no Customer Journey Analytics, o pú
 
 * O público-alvo na Platform compartilha o mesmo nome e descrição do público-alvo do Customer Journey Analytics. O nome é anexado à ID de público-alvo do Customer Journey Analytics para garantir que o público-alvo seja exclusivo.
 * Quaisquer alterações feitas no nome ou na descrição do público-alvo no Customer Journey Analytics são refletidas no Experience Platform.
-* Se um público-alvo for excluído no Customer Journey Analytics, o público-alvo continuará disponível no Experience Platform.
+* Se um público-alvo for excluído no Customer Journey Analytics, o público-alvo continuará disponível no Experience Platform até que a associação de perfil do público-alvo expire. A associação de perfil expira após 420 dias para públicos-alvo únicos e após 16 dias para públicos-alvo recorrentes.
 
 ## Considerações sobre latência {#latency}
 
