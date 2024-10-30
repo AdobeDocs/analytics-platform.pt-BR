@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
 workflow-type: tm+mt
 source-wordcount: '3747'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -200,7 +200,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Chave correspondente"
->abstract="Selecione como unir: com base em uma chave correspondente ou em um container correspondente.<br/><br/>**[!UICONTROL Chave correspondente ]**: selecione um campo para associar a um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Contêiner correspondente]**: selecione um contêiner a ser usado para unir com um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não configurou um ou mais contêineres."
+>abstract="Selecione como fazer a associação: com base em uma chave correspondente ou em um container correspondente.<br/><br/>**[!UICONTROL Chave correspondente ]**: selecione um campo para associar com um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Container correspondente]**: selecione um container para associar com um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não configurou um ou mais containers."
 
 <!-- markdownlint-enable MD034 -->
 
