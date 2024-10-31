@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 8ff3a1c874a0eb67e4b7a6edda6156c4d07edc9f
+source-git-commit: ad51c3cab669121e270603e133d53b6c97be8846
 workflow-type: tm+mt
-source-wordcount: '4173'
-ht-degree: 70%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Outubro de 2024** | |
-| Dispositivos compartilhados | Foi adicionado um artigo de caso de uso que fornece contexto sobre dispositivos compartilhados, como lidar e mitigar dados de dispositivos compartilhados usando a compilação e entender a exposição de dispositivos compartilhados em seus dados usando o Serviço de consulta. |
+| Dispositivos compartilhados | Adição de um [artigo de caso de uso](/help/use-cases/stitching/shared-devices.md) que fornece contexto sobre dispositivos compartilhados, como manipular e mitigar dados de dispositivos compartilhados usando a compilação e entender a exposição de dispositivos compartilhados em seus dados usando o Serviço de Consulta. |
 | Novas informações sobre fatores de solicitação no desempenho do Analysis Workspace | Uma nova seção de [Fatores de solicitação](/help/technotes/optimizing-performance.md#request-factors) no artigo [Otimizar o desempenho do Analysis Workspace](/help/technotes/optimizing-performance.md) explica como as solicitações são processadas e os vários fatores que influenciam os tempos de processamento. |
 | Workspace e componentes | Atualização da documentação sobre projetos (projetos, visualizações e painéis) e componentes do Analysis Workspace (anotações, dimensões, métricas (calculadas), filtros, intervalos de datas, alertas, projetos e públicos-alvo agendados). |
 | Análise guiada | Atualizada a documentação com a disponibilidade da [Análise Guiada](/help/guided-analysis/overview.md) no Analysis Workspace. |
