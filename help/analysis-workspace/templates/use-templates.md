@@ -5,10 +5,10 @@ feature: Workspace Basics
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: fc82690c63e7ab46746569a995578951809b43bc
+source-git-commit: 4927fbcaa8d0d0ea251c2827fd6c17c2d55c9f11
 workflow-type: tm+mt
-source-wordcount: '8295'
-ht-degree: 5%
+source-wordcount: '10210'
+ht-degree: 4%
 
 ---
 
@@ -140,8 +140,8 @@ Para acessar todos os modelos pré-criados disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_pages"
->title="Modelo de páginas"
->abstract="Identifique as páginas mais populares e menos populares. <br/>**Isso pode ajudá-lo** a entender melhor seu público-alvo e o tipo de informação em que ele está mais interessado.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como ajustar os metadados da página para aumentar a visibilidade em páginas menos visualizadas, ou gastar tempo melhorando o conteúdo de suas páginas mais visualizadas.<br/>Este modelo usa a dimensão Página e a métrica Exibições da página."
+>title="Identifique as páginas mais populares e menos populares."
+>abstract="**Isso pode ajudá-lo** a entender melhor seu público-alvo e o tipo de informação em que ele está mais interessado.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como ajustar os metadados da página para aumentar a visibilidade em páginas menos visualizadas, ou gastar tempo melhorando o conteúdo de suas páginas mais visualizadas.<br/>Este modelo usa a dimensão Página e a métrica Exibições da página."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -149,8 +149,8 @@ Para acessar todos os modelos pré-criados disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_page_views"
->title="Modelo Exibições de página"
->abstract="Visualize o número total de visualizações de página. Os dados são mostrados durante um período e comparados com períodos anteriores. <br/>**Isso pode ajudá-lo** a entender melhor como o tráfego no site pode estar aumentando ou diminuindo com o tempo.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como avaliar a eficácia de uma campanha de marketing iniciada recentemente comparando o tráfego do site antes e depois do início da campanha. Ou você pode comparar o tráfego de feriados ano a ano.<br/>Este modelo usa a dimensão Dia e a métrica Exibições da página."
+>title="Visualize o número total de visualizações de página. Os dados são mostrados durante um período e comparados com períodos anteriores. "
+>abstract="**Isso pode ajudá-lo** a entender melhor como o tráfego no site pode estar aumentando ou diminuindo com o tempo.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como avaliar a eficácia de uma campanha de marketing iniciada recentemente comparando o tráfego do site antes e depois do início da campanha. Ou você pode comparar o tráfego de feriados ano a ano.<br/>Este modelo usa a dimensão Dia e a métrica Exibições da página."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -158,8 +158,8 @@ Para acessar todos os modelos pré-criados disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_web_visits"
->title="Modelo Visitas da Web"
->abstract="Visualize o número total de visitas. Os dados são mostrados durante um período e comparados com períodos anteriores. <br/>**Isso pode ajudá-lo** a entender melhor como o tráfego no site pode estar aumentando ou diminuindo com o tempo.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como avaliar a eficácia de uma campanha de marketing iniciada recentemente comparando o tráfego do site antes e depois do início da campanha. Ou você pode comparar o tráfego de feriados ano a ano.<br/>Este modelo usa a dimensão Dia e a métrica Visitas."
+>title="Visualize o número total de visitas. Os dados são mostrados durante um período e comparados com períodos anteriores."
+>abstract="**Isso pode ajudá-lo** a entender melhor como o tráfego no site pode estar aumentando ou diminuindo com o tempo.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como avaliar a eficácia de uma campanha de marketing iniciada recentemente comparando o tráfego do site antes e depois do início da campanha. Ou você pode comparar o tráfego de feriados ano a ano.<br/>Este modelo usa a dimensão Dia e a métrica Visitas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -185,12 +185,82 @@ Para acessar todos os modelos pré-criados disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="cja_template_desc_key_metrics"
->title="Modelo Métricas principais"
->abstract="Visualize um relatório que mostra as métricas de exibições de página, visitas e visitantes únicos lado a lado. Os dados são mostrados durante um período e comparados com períodos anteriores. <br/>**Isso pode ajudá-lo** a comparar essas métricas importantes para obter uma imagem mais completa do número de pessoas únicas que visitam o site, o número de vezes que as páginas foram visitadas e o número de sessões.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar o número médio de páginas que cada pessoa visualizou ao visitar o site em uma determinada semana ou mês e como isso mudou durante certos períodos do ano ou antes e depois que as campanhas de marketing foram executadas. <br/>Este modelo usa a dimensão Dia, a métrica Exibições da página, a métrica Visitas e a métrica Visitantes únicos."
+>title="Visualize um relatório que mostra as métricas de exibições de página, visitas e visitantes únicos lado a lado. Os dados são mostrados durante um período e comparados com períodos anteriores."
+>abstract="**Isso pode ajudá-lo** a comparar essas métricas importantes para obter uma imagem mais completa do número de pessoas únicas que visitam o site, o número de vezes que as páginas foram visitadas e o número de sessões.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar o número médio de páginas que cada pessoa visualizou ao visitar o site em uma determinada semana ou mês e como isso mudou durante certos períodos do ano ou antes e depois que as campanhas de marketing foram executadas. <br/>Este modelo usa a dimensão Dia, a métrica Exibições da página, a métrica Visitas e a métrica Visitantes únicos."
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_site_sections"
+>title="Exibir as seções mais populares ou de maior desempenho do site."
+>abstract="**Isso pode ajudá-lo** a entender melhor quais seções do site são as mais visitadas.<br>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais produtos ou serviços você fornece geram mais interesse.<br/>Este modelo usa a dimensão Seção do Site e a métrica Visitas."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_next_previous_page"
+>title="Veja os lugares mais comuns que as pessoas vão imediatamente depois de visitar ou imediatamente antes de visitar um determinado lugar."
+>abstract="**Isso pode ajudá-lo** a entender como o tráfego se move de uma determinada página para outras partes do site e a entender os caminhos que as pessoas tomam para chegar a uma determinada página.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar se o design ou layout da página pode ser otimizado para direcionar as pessoas para páginas mais desejáveis, como uma página para fazer uma compra ou deixar uma revisão. Ou avalie se as informações na página atual provavelmente fornecerão a direção ou as ações que as pessoas estão procurando à medida que chegam das páginas anteriores. Ou você pode avaliar se as páginas que não aparecem como páginas anteriores precisam de links mais proeminentes para a página atual.<br/>Este modelo usa o painel Item seguinte ou anterior."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_campaigns"
+>title="Veja os links que tiveram mais sucesso em direcionar tráfego para seu site."
+>abstract="**Isso pode ajudá-lo** a entender melhor quais códigos de rastreamento (e os links aos quais estão associados) foram os mais usados no acesso ao site.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como ajustar sua estratégia para adicionar links ao seu site.<br/>Este modelo usa a dimensão Código de Acompanhamento e a métrica Visitas."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_products"
+>title="Exiba o número de pedidos por produto. Os dados são mostrados durante um período."
+>abstract="**Isso pode ajudá-lo** a entender quais produtos têm a maior ou menor demanda.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como ajustar as estratégias de marketing para promover produtos de alto desempenho ou para melhorar ou descontinuar esses produtos. Você também pode ajustar o inventário de produtos com base na análise dos dados.<br/>Este modelo usa a dimensão Produto e a métrica Pedidos."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_last_touch"
+>title="Visualize os canais de marketing mais recentes com os quais os visitantes correspondem durante o período de envolvimento (30 dias por padrão)."
+>abstract="**Isso pode ajudá-lo** a entender quais canais de marketing foram mais eficazes para trazer pessoas para o seu site que resultaram em conversões.<br/>**Com base no que você aprende, é possível** executar várias ações, como alocar mais recursos a canais de alto desempenho ou alocar menos recursos a canais com baixo desempenho.<br/>Este modelo usa a dimensão Canal de último contato e a métrica Visitantes únicos."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_last_touch_detail"
+>title="Visualize detalhes sobre os canais de marketing mais recentes com os quais os visitantes correspondem durante o período de engajamento (30 dias por padrão)."
+>abstract="**Isso pode ajudá-lo** a entender não apenas quais canais de marketing foram mais eficazes para trazer pessoas para o seu site que resultaram em conversões, mas também os detalhes sobre esses canais de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga&quot;, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.<br/>**Com base no que você aprende, é possível** executar várias ações, como alocar mais recursos a canais de alto desempenho ou alocar menos recursos a canais com baixo desempenho.<br/>Este modelo usa a dimensão Detalhe do canal de último contato e a métrica Visitantes únicos. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_revenue"
+>title="Exibir a quantidade monetária de produtos comprados em todos os pedidos. Os dados são mostrados durante um período e comparados com períodos anteriores."
+>abstract="**Isso pode ajudá-lo** a entender como a receita está aumentando ou diminuindo com o tempo. É possível combinar essa métrica com qualquer dimensão para saber quais itens de dimensão contribuíram para a receita.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como projetar a receita futura com base nas tendências anteriores. Você também pode adicionar outra dimensão, como a dimensão Código de rastreamento, para saber quais campanhas estão gerando mais receita.<br/>Este modelo usa a dimensão Dia e a métrica Receita."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_desc_orders"
+>title="Visualize o número total de eventos de compra. Os dados são mostrados durante um período e comparados com períodos anteriores."
+>abstract="**Isso pode ajudá-lo** a entender melhor como o interesse pelos seus produtos e serviços está aumentando ou diminuindo com o tempo. Você pode aplicar um segmento para saber quais clientes ou regiões geográficas estão fazendo mais pedidos e como esses pedidos estão em tendência ao longo do tempo.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como avaliar a eficácia de uma campanha de marketing iniciada recentemente comparando os pedidos antes e depois do lançamento da campanha. Ou você pode comparar as encomendas de feriados de ano para ano.<br/>Este modelo usa a dimensão Dia e a métrica Pedidos."
+
+<!-- markdownlint-enable MD034 -->
 
 Os seguintes modelos estão disponíveis:
 
@@ -205,15 +275,69 @@ Os seguintes modelos estão disponíveis:
 | **[!UICONTROL Comparação entre canais]** |  |
 | [!UICONTROL **Métricas principais**] | <!--duplicated in Engagement section--> Visualize um relatório que mostra as métricas de exibições de página, visitas e visitantes únicos lado a lado. Os dados são mostrados durante um período e comparados com períodos anteriores. <p>**Isso pode ajudá-lo** a comparar essas métricas importantes para obter uma imagem mais completa do número de pessoas únicas que visitam o site, o número de vezes que as páginas foram visitadas e o número de sessões.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar o número médio de páginas que cada pessoa visualizou ao visitar o site em uma determinada semana ou mês e como isso mudou durante certos períodos do ano ou antes e depois que as campanhas de marketing foram executadas. </p><p>Esse modelo usa a dimensão Dia, a métrica Exibições da página, a métrica Visitas e a métrica Visitantes únicos.</p> |
 | [!UICONTROL **Seções do site**] | Exibir as seções mais populares ou de maior desempenho do site. <p>**Isso pode ajudá-lo** a entender melhor quais seções do site são as mais visitadas.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais produtos ou serviços você fornece geram mais interesse.</p> <p>Esse modelo usa a dimensão Seção do site e a métrica Visitas.</p> |
-| [!UICONTROL **Próxima página e página anterior**] | Veja os lugares mais comuns que as pessoas vão imediatamente depois de visitar ou imediatamente antes de visitar um determinado lugar. <p>**Isso pode ajudá-lo** a entender como o tráfego se move de uma determinada página para outras partes do site e a entender os caminhos que as pessoas tomam para chegar a uma determinada página.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar se o design ou layout da página pode ser otimizado para direcionar as pessoas para páginas mais desejáveis, como uma página para fazer uma compra ou deixar uma revisão. Ou avalie se as informações na página atual provavelmente fornecerão a direção ou as ações que as pessoas estão procurando à medida que chegam das páginas anteriores. Ou você pode avaliar se as páginas que não aparecem como páginas anteriores precisam de links mais proeminentes para a página atual.</p><p>Esse modelo usa o painel Item seguinte ou anterior.</p> |
+| [!UICONTROL **Próxima Página e Página Anterior**] | Veja os lugares mais comuns que as pessoas vão imediatamente depois de visitar ou imediatamente antes de visitar um determinado lugar. <p>**Isso pode ajudá-lo** a entender como o tráfego se move de uma determinada página para outras partes do site e a entender os caminhos que as pessoas tomam para chegar a uma determinada página.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar se o design ou layout da página pode ser otimizado para direcionar as pessoas para páginas mais desejáveis, como uma página para fazer uma compra ou deixar uma revisão. Ou avalie se as informações na página atual provavelmente fornecerão a direção ou as ações que as pessoas estão procurando à medida que chegam das páginas anteriores. Ou você pode avaliar se as páginas que não aparecem como páginas anteriores precisam de links mais proeminentes para a página atual.</p><p>Esse modelo usa o painel Item seguinte ou anterior.</p> |
 | [!UICONTROL **Campanhas (Código de rastreamento)**] | Veja os links que tiveram mais sucesso em direcionar tráfego para seu site. <p>**Isso pode ajudá-lo** a entender melhor quais códigos de rastreamento (e os links aos quais estão associados) foram os mais usados no acesso ao site.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como ajustar sua estratégia para adicionar links ao seu site.</p><p>Esse modelo usa a dimensão Código de rastreamento e a métrica Visitas.</p> |
 | [!UICONTROL **Produtos**] | Exiba o número de pedidos por produto. Os dados são mostrados durante um período. <p>**Isso pode ajudá-lo** a entender quais produtos têm a maior ou menor demanda.</p><p>**Com base no que você aprendeu, é possível** executar várias ações, como ajustar as estratégias de marketing para promover produtos de alto desempenho ou para melhorar ou descontinuar esses produtos. Você também pode ajustar o inventário de produtos com base na análise dos dados.</p><p>Esse modelo usa as dimensões Produto e Pedidos.</p> |
 | [!UICONTROL **Canal de marketing de último contato**] | Visualize os canais de marketing mais recentes com os quais os visitantes correspondem durante o período de envolvimento (30 dias por padrão).<p>**Isso pode ajudá-lo** a entender quais canais de marketing foram mais eficazes para trazer pessoas para o seu site que resultaram em conversões.</p><p>**Com base no que você aprende, é possível** executar várias ações, como alocar mais recursos a canais de alto desempenho ou alocar menos recursos a canais com baixo desempenho.</p><p>Esse modelo usa a dimensão Canal de último contato e a métrica Visitantes únicos.</p> |
 | [!UICONTROL **Detalhes do canal de marketing de último contato**] | Visualize detalhes sobre os canais de marketing mais recentes com os quais os visitantes correspondem durante o período de engajamento (30 dias por padrão).<p>**Isso pode ajudá-lo** a entender não apenas quais canais de marketing foram mais eficazes para trazer pessoas para o seu site que resultaram em conversões, mas também os detalhes sobre esses canais de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga&quot;, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.</p><p>**Com base no que você aprende, é possível** executar várias ações, como alocar mais recursos a canais de alto desempenho ou alocar menos recursos a canais com baixo desempenho.</p><p>Esse modelo usa a dimensão Detalhe do canal de último contato e a métrica Visitantes únicos.</p> |
-| [!UICONTROL **Receita**] | Exibir a quantidade monetária de produtos comprados em todos os pedidos. Os dados são mostrados durante um período e comparados com períodos anteriores.<p>**Isso pode ajudá-lo** a entender como a receita está aumentando ou diminuindo com o tempo. É possível combinar essa métrica com qualquer dimensão para saber quais itens de dimensão contribuíram para a receita.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como projetar a receita futura com base nas tendências anteriores. Você também pode adicionar outra dimensão, como a dimensão Código de rastreamento, para saber quais campanhas estão gerando mais receita.</p><p>Esse modelo usa a dimensão Dia e a métrica Receita.</p> |
-| [!UICONTROL **Pedidos**] | Visualize o número total de eventos de compra. Os dados são mostrados durante um período e comparados com períodos anteriores. <p>**Isso pode ajudá-lo** a entender melhor como o interesse pelos seus produtos e serviços está aumentando ou diminuindo com o tempo. Você pode aplicar um segmento para saber quais clientes ou regiões geográficas estão fazendo mais pedidos e como esses pedidos estão em tendência ao longo do tempo.</p><p>**Com base no que você aprendeu, é possível** executar várias ações, como avaliar a eficácia de uma campanha de marketing iniciada recentemente comparando os pedidos antes e depois do lançamento da campanha. Ou você pode comparar as encomendas de feriados de ano para ano.</p><p>Esse modelo usa as dimensões Dia e Pedidos.</p> |
+| [!UICONTROL **Receita**] | <!--duplicated in Web Conversion section-->Exibir a quantidade monetária de produtos comprados em todos os pedidos. Os dados são mostrados durante um período e comparados com períodos anteriores.<p>**Isso pode ajudá-lo** a entender como a receita está aumentando ou diminuindo com o tempo. É possível combinar essa métrica com qualquer dimensão para saber quais itens de dimensão contribuíram para a receita.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como projetar a receita futura com base nas tendências anteriores. Você também pode adicionar outra dimensão, como a dimensão Código de rastreamento, para saber quais campanhas estão gerando mais receita.</p><p>Esse modelo usa a dimensão Dia e a métrica Receita.</p> |
+| [!UICONTROL **Pedidos**] | <!--duplicated in Web Conversion section-->Visualize o número total de eventos de compra. Os dados são mostrados durante um período e comparados com períodos anteriores. <p>**Isso pode ajudá-lo** a entender melhor como o interesse pelos seus produtos e serviços está aumentando ou diminuindo com o tempo. Você pode aplicar um segmento para saber quais clientes ou regiões geográficas estão fazendo mais pedidos e como esses pedidos estão em tendência ao longo do tempo.</p><p>**Com base no que você aprendeu, é possível** executar várias ações, como avaliar a eficácia de uma campanha de marketing iniciada recentemente comparando os pedidos antes e depois do lançamento da campanha. Ou você pode comparar as encomendas de feriados de ano para ano.</p><p>Esse modelo usa as dimensões Dia e Pedidos.</p> |
 
-### Web: engajamento
+### Web: engajamento {#web-engagement}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_time_spent"
+>title="Visualize o tempo médio que os visitantes gastam no site durante cada visita, bem como o tempo médio que os usuários gastam antes de um evento bem-sucedido. Os dados são mostrados durante um período e comparados com períodos anteriores."
+>abstract="**Isso pode ajudá-lo** a entender melhor os níveis de envolvimento do visitante e quanto tempo os visitantes levam para executar a ação desejada, como fazer uma compra.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como avaliar se as alterações no site melhoram a capacidade dos visitantes de chegar rapidamente a um evento bem-sucedido.<br/>Este modelo usa a dimensão Dia e a métrica Tempo gasto por visita (segundos), a dimensão Dia e a métrica Tempo gasto por visita (segundos)."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_web_content_consumption"
+>title="Visualize qual conteúdo da Web é mais consumido e envolve os usuários."
+>abstract="**Isso pode ajudá-lo** a entender melhor onde as pessoas entram pela primeira vez no site, quais seções das pessoas estão mais visitando e quais páginas provavelmente afastarão as pessoas do site.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas para as páginas mais importantes e quais páginas têm maior probabilidade de afastar as pessoas do site.<br/>Este modelo usa a dimensão Página e a métrica Exibições da página, a métrica Visitas, a métrica Visitantes únicos, a métrica Taxa de entrada, a métrica Taxa de rejeição, a métrica Taxa de saída e a métrica Velocidade do conteúdo. Ele também usa visualizações de Fluxo para seções de entrada, saída e superior."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_media_content_consumption"
+>title="Visualize qual conteúdo de mídia é mais consumido e envolve os usuários."
+>abstract="**Isso pode ajudá-lo** a entender melhor onde as pessoas entram pela primeira vez no site, quais seções das pessoas estão mais visitando e quais páginas provavelmente afastarão as pessoas do site.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas para as páginas mais importantes e quais páginas têm maior probabilidade de afastar as pessoas do site.<br/>Este modelo usa a dimensão Página e a métrica Exibições da página, a métrica Visitas, a métrica Visitantes únicos, a métrica Taxa de entrada, a métrica Taxa de rejeição, a métrica Taxa de saída e a métrica Velocidade do conteúdo. Ele também usa visualizações de Fluxo para seções de entrada, saída e superior; uma visualização Gráfico de características que mostra exibições de página para as páginas mais comuns; uma visualização Barra que mostra exibições de página por tempo classificado; e uma visualização Linha que mostra uma exibição de tendência do tempo médio gasto no site."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_page_summary"
+>title="Visualize as principais informações sobre qualquer página nas suas propriedades. Mostra exibições de página, uma linha de tendência, uma visualização de fluxo e muito mais."
+>abstract="**Isso pode ajudá-lo** a entender melhor como as pessoas interagem com determinada página.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como analisar o desempenho da página durante um período ou entender melhor o que direciona o tráfego para a página.<br/>Este modelo usa a métrica Exibições de página. Ele também usa as visualizações Linha e Fluxo."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_entry_pages"
+>title="Visualize as principais páginas que as pessoas acessam quando visitam o site pela primeira vez."
+>abstract="**Isso pode ajudá-lo** a entender melhor quais páginas estão direcionando mais tráfego para o site ou a entender mais sobre as primeiras impressões que os visitantes têm no site.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como otimizar a experiência inicial que as pessoas têm no site, ou garantir que as páginas que as pessoas veem ao entrarem no site sejam bem-vindas e forneçam os links necessários para outras áreas do site.<br/>Este modelo usa a métrica Sessões. Também usa a visualização Barra e a visualização Tabela de forma livre."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_exit_pages"
+>title="Visualize as principais páginas que as pessoas acessam imediatamente antes de sair do site."
+>abstract="**Isso pode ajudá-lo** a entender melhor quais páginas estão afastando as pessoas do site. <br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como atualizar páginas de saída comuns para otimizar a experiência que as pessoas têm antes de sair, ou incluir conteúdo ou links para incentivar as pessoas a permanecer no site.<br/>Este modelo usa a métrica Sessões. Também usa a visualização Barra e a visualização Tabela de forma livre."
+
+<!-- markdownlint-enable MD034 -->
 
 Os seguintes modelos estão disponíveis:
 
@@ -228,12 +352,84 @@ Os seguintes modelos estão disponíveis:
 | [!UICONTROL **Seções do site**] | <!--duplicated in Most popular section-->Exibir as seções mais populares ou de maior desempenho do site. <p>**Isso pode ajudá-lo** a entender melhor quais seções do site são as mais visitadas.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais produtos ou serviços você fornece geram mais interesse.</p> <p>Esse modelo usa a dimensão Seção do site e a métrica Visitas.</p> |
 | [!UICONTROL **Consumo de conteúdo da Web**] | Visualize qual conteúdo da Web é mais consumido e envolve os usuários.<p>**Isso pode ajudá-lo** a entender melhor onde as pessoas entram pela primeira vez no site, quais seções das pessoas estão mais visitando e quais páginas provavelmente afastarão as pessoas do site.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas para as páginas mais importantes e quais páginas têm maior probabilidade de afastar as pessoas do site <!-- not sure about these takeaways... -->.</p> <p>Esse modelo usa a dimensão Página e a métrica Exibições da página, a métrica Visitas, a métrica Visitantes únicos, a métrica Taxa de entrada, a métrica Taxa de rejeição, a métrica Taxa de saída e a métrica Velocidade do conteúdo. Ele também usa visualizações de Fluxo para seções de entrada, saída e superior.</p> |
 | [!UICONTROL **Consumo de conteúdo de mídia**] | Visualize qual conteúdo de mídia é mais consumido e envolve os usuários.<p>**Isso pode ajudá-lo** a entender melhor onde as pessoas entram pela primeira vez no site, quais seções das pessoas estão mais visitando e quais páginas provavelmente afastarão as pessoas do site.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas para as páginas mais importantes e quais páginas têm maior probabilidade de afastar as pessoas do site <!-- not sure about these takeaways... -->.</p> <p>Esse modelo usa a dimensão Página e a métrica Exibições da página, a métrica Visitas, a métrica Visitantes únicos, a métrica Taxa de entrada, a métrica Taxa de rejeição, a métrica Taxa de saída e a métrica Velocidade do conteúdo. Ele também usa visualizações de Fluxo para seções de entrada, saída e superior; uma visualização Gráfico de características que mostra exibições de página para as páginas mais comuns; uma visualização Barra que mostra exibições de página por tempo classificado; e uma visualização Linha que mostra uma exibição de tendência do tempo médio gasto no site.</p> |
-| [!UICONTROL **Próxima página e página anterior**] | Veja os lugares mais comuns que as pessoas visitam antes ou depois de visitar um determinado lugar.<p>**Isso pode ajudá-lo** a entender melhor onde as pessoas entram pela primeira vez no site, quais seções das pessoas estão mais visitando e quais páginas provavelmente serão visitadas antes de sair do site.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas para as páginas mais importantes e quais páginas têm maior probabilidade de afastar as pessoas do site<!-- not sure about these takeaways... -->.</p> <p>Esse modelo usa a dimensão Página, a métrica Exibições da página, a métrica Visitas, a métrica Visitantes únicos, a métrica Taxa de entrada, a métrica Taxa de rejeição, a métrica Taxa de saída e a métrica Velocidade do conteúdo. Ele também usa visualizações de Fluxo para seções de entrada, saída e superior; uma visualização Gráfico de dispersão que mostra exibições de página para as páginas mais comuns; uma visualização Barra que mostra exibições de página por tempo classificado; e uma visualização Linha que mostra uma exibição de tendência do tempo médio gasto no site.</p> |
+| [!UICONTROL **Próxima página e página anterior**] | <!--duplicated in Most popular section-->Veja os lugares mais comuns que as pessoas visitam antes ou depois de visitar um determinado lugar.<p>**Isso pode ajudá-lo** a entender melhor onde as pessoas entram pela primeira vez no site, quais seções das pessoas estão mais visitando e quais páginas provavelmente serão visitadas antes de sair do site.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas para as páginas mais importantes e quais páginas têm maior probabilidade de afastar as pessoas do site<!-- not sure about these takeaways... -->.</p> <p>Esse modelo usa a dimensão Página, a métrica Exibições da página, a métrica Visitas, a métrica Visitantes únicos, a métrica Taxa de entrada, a métrica Taxa de rejeição, a métrica Taxa de saída e a métrica Velocidade do conteúdo. Ele também usa visualizações de Fluxo para seções de entrada, saída e superior; uma visualização Gráfico de dispersão que mostra exibições de página para as páginas mais comuns; uma visualização Barra que mostra exibições de página por tempo classificado; e uma visualização Linha que mostra uma exibição de tendência do tempo médio gasto no site.</p> |
 | **Resumo da página** | Visualize as principais informações sobre qualquer página nas suas propriedades. Mostra exibições de página, uma linha de tendência, uma visualização de fluxo e muito mais.  <p>**Isso pode ajudá-lo** a entender melhor como as pessoas interagem com determinada página.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como analisar o desempenho da página durante um período ou entender melhor o que direciona o tráfego para a página.</p><p>Esse modelo usa a métrica Visualizações de página. Ele também usa as visualizações Linha e Fluxo.</p> |
 | **Páginas de entrada** | Visualize as principais páginas que as pessoas acessam quando visitam o site pela primeira vez. <p>**Isso pode ajudá-lo** a entender melhor quais páginas estão direcionando mais tráfego para o site ou a entender mais sobre as primeiras impressões que os visitantes têm no site.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como otimizar a experiência inicial que as pessoas têm no site, ou garantir que as páginas que as pessoas veem ao entrarem no site sejam bem-vindas e forneçam os links necessários para outras áreas do site.</p><p>Este modelo usa a métrica Sessões. Também usa a visualização Barra e a visualização Tabela de forma livre.</p> |
 | **Páginas de saída** | Visualize as principais páginas que as pessoas acessam imediatamente antes de sair do site.<p>**Isso pode ajudá-lo** a entender melhor quais páginas estão afastando as pessoas do site. </p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como atualizar páginas de saída comuns para otimizar a experiência que as pessoas têm antes de sair, ou incluir conteúdo ou links para incentivar as pessoas a permanecer no site.</p><p>Este modelo usa a métrica Sessões. Também usa a visualização Barra e a visualização Tabela de forma livre.</p> |
 
-### Web: Conversão
+### Web: Conversão {#web-conversion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_product_conversion_funnel"
+>title="Modelo Funil de conversão de produto"
+>abstract=""
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_product_performance"
+>title="Veja quais produtos têm o melhor desempenho."
+>abstract="**Isso pode ajudá-lo** a entender melhor quais produtos são mais bem-sucedidos.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como aumentar o financiamento para produtos bem-sucedidos e diminuir o financiamento para produtos menos bem-sucedidos.<br/>Este modelo usa as métricas Exibições do Produto, Adições ao Carrinho, Pedidos, Receita e Unidades. Também usa a dimensão Produto."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_conversion_funnels"
+>title="Exiba o número de vezes que as pessoas executaram eventos importantes de check-out, como adicionar itens ao carrinho, exibir o carrinho, remover itens do carrinho e fazer check-out."
+>abstract="**Isso pode ajudá-lo** a entender melhor quais partes do funil do processo de check-out levam à conversão e quais são mais propensas ao abandono do carrinho.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como reduzir o atrito em determinadas etapas do processo de finalização.<br/>Este modelo usa o"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_carts"
+>title="Visualize o número de pessoas que adicionaram um produto ao carrinho."
+>abstract="**Isso pode ajudá-lo** a entender melhor o número de pessoas que adicionam um produto ao carrinho, em vez do número geral de produtos adicionados a um carrinho.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como medir a eficácia das páginas dos seus produtos.<br/>Este modelo usa a métrica Carrinhos."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_views"
+>title="Exiba o número de vezes que as pessoas visualizaram seus carrinhos de compras."
+>abstract="**Isso pode ajudá-lo** a entender melhor a experiência de check-out, em um esforço para reduzir as taxas de abandono do carrinho ou analisar o tempo entre as adições ao carrinho e os check-outs de diferentes produtos.<br/>**Com base no que você aprendeu, é possível** realizar várias ações, como promoções de ofertas para produtos que permanecem mais tempo em carrinhos e têm maior risco de abandono.<br/>Este modelo usa a métrica Exibições do carrinho."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_additions"
+>title="Visualize o número de vezes que as pessoas adicionaram algo ao carrinho."
+>abstract="**Isso pode ajudá-lo** a entender melhor a parte do funil de conversão em que o interesse do cliente em um produto é alto o suficiente para que ele o adicione ao carrinho.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como melhorar as recomendações do produto para todos os clientes. Isso pode ser feito analisando quais produtos são adicionados com frequência aos mesmos carrinhos e sugerindo produtos relacionados com base em itens já presentes no carrinho."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_cart_removals"
+>title="Visualize o número de vezes que as pessoas removeram algo do carrinho."
+>abstract="**Isso pode ajudá-lo** a entender melhor a parte do funil de conversão em que os clientes não estão mais interessados em um produto ou pode ajudá-lo a entender onde podem existir problemas no processo de finalização.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como remover possíveis barreiras que possam existir no processo de finalização, como uma experiência de usuário complicada.<br/>Este modelo usa a métrica Remoções do carrinho."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_template_purchase_conversion_funnel"
+>title="Modelo Funil de conversão de compra"
+>abstract=""
+
+<!-- markdownlint-enable MD034 -->
 
 Os seguintes modelos estão disponíveis:
 
@@ -248,8 +444,8 @@ Os seguintes modelos estão disponíveis:
 | **Adições ao carrinho** | Visualize o número de vezes que as pessoas adicionaram algo ao carrinho. <p>**Isso pode ajudá-lo** a entender melhor a parte do funil de conversão em que o interesse do cliente em um produto é alto o suficiente para que ele o adicione ao carrinho.</p><p>**Com base no que você aprendeu, é possível** executar várias ações, como melhorar as recomendações do produto para todos os clientes. Isso pode ser feito analisando quais produtos são adicionados com frequência aos mesmos carrinhos e sugerindo produtos relacionados com base em itens já presentes no carrinho. |
 | **Remoções do carrinho** | Visualize o número de vezes que as pessoas removeram algo do carrinho.<p>**Isso pode ajudá-lo** a entender melhor a parte do funil de conversão em que os clientes não estão mais interessados em um produto ou pode ajudá-lo a entender onde podem existir problemas no processo de finalização.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como remover possíveis barreiras que possam existir no processo de finalização, como uma experiência de usuário complicada.</p><p>Este modelo usa a métrica Remoções do carrinho. |
 | **Funil de Conversão de Compra** | <p>**Isso pode ajudá-lo** a entender melhor</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como </p><p>Este modelo usa o |
-| **Receita** | Exibir a quantidade monetária de produtos comprados em todos os pedidos.<p>**Isso pode ajudá-lo** a entender melhor quais itens de dimensão contribuíram para a receita, combinando a métrica Receita com qualquer dimensão. Por exemplo, você pode ver as campanhas principais (usando a dimensão Código de rastreamento ) que contribuíram para a receita. </p><p>**Com base no que você aprendeu, é possível** executar várias ações, como ajustar campanhas que não estão atingindo as metas de receita que você esperaria.</p><p>Este modelo usa a métrica Receita. |
-| **Pedidos** | Visualize o número total de eventos de compra feitos em seu site. <p>**Isso pode ajudá-lo** a entender melhor quais itens de dimensão contribuíram para um pedido, combinando a métrica Pedidos com qualquer dimensão. Por exemplo, você pode ver as campanhas principais (usando a dimensão Código de rastreamento ) que contribuíram com as compras.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como ajustar campanhas que não estão atingindo os objetivos de compra esperados. </p><p>Esse modelo usa a métrica Pedidos. |
+| **Receita** | <!--duplicated in Most popular section-->Exibir a quantidade monetária de produtos comprados em todos os pedidos.<p>**Isso pode ajudá-lo** a entender melhor quais itens de dimensão contribuíram para a receita, combinando a métrica Receita com qualquer dimensão. Por exemplo, você pode ver as campanhas principais (usando a dimensão Código de rastreamento ) que contribuíram para a receita. </p><p>**Com base no que você aprendeu, é possível** executar várias ações, como ajustar campanhas que não estão atingindo as metas de receita que você esperaria.</p><p>Este modelo usa a métrica Receita. |
+| **Pedidos** | <!--duplicated in Most popular section-->Visualize o número total de eventos de compra feitos em seu site. <p>**Isso pode ajudá-lo** a entender melhor quais itens de dimensão contribuíram para um pedido, combinando a métrica Pedidos com qualquer dimensão. Por exemplo, você pode ver as campanhas principais (usando a dimensão Código de rastreamento ) que contribuíram com as compras.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como ajustar campanhas que não estão atingindo os objetivos de compra esperados. </p><p>Esse modelo usa a métrica Pedidos. |
 
 ### Web: Audience
 
