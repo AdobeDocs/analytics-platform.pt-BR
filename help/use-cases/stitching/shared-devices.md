@@ -3,13 +3,11 @@ title: Dispositivos compartilhados
 description: Explicação de como lidar com dispositivos compartilhados usando compilação e outras técnicas.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-hide: true
-hidefromtoc: true
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: c0dae5f1255a986df5ab2551aabdf1bd0727e949
+source-git-commit: 81d1c6abbda63c4ac8cdcc96d1b730974b137ad9
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '659'
 ht-degree: 6%
 
 ---
@@ -67,7 +65,7 @@ Quando a atribuição de última autenticação é usada na compilação, as IDs
 
 ### Divisão de dispositivo
 
-A divisão de dispositivo atribui uma atividade anônima de um dispositivo compartilhado ao usuário que está mais próximo da atividade anônima. A divisão de dispositivos é a abordagem preferida para casos de uso analítico, pois a divisão de dispositivos dá crédito por atividades não autenticadas e autenticadas à pessoa mais próxima conhecida. A divisão de dispositivo é usada atualmente na compilação em campo.
+A divisão de dispositivo atribui uma atividade anônima de um dispositivo compartilhado ao usuário que está mais próximo da atividade anônima. A divisão de dispositivo é usada atualmente na compilação em campo.
 
 Quando a atribuição dividida por dispositivo é usada na compilação, as IDs com título são resolvidas conforme mostrado na tabela abaixo.
 
