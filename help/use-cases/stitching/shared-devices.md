@@ -6,17 +6,17 @@ feature: Stitching, Cross-Channel Analysis
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: 1a5646700dba6362a35158890f2917fc472fbddd
+exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
+source-git-commit: c0dae5f1255a986df5ab2551aabdf1bd0727e949
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 4%
+source-wordcount: '683'
+ht-degree: 6%
 
 ---
 
-
 # Dispositivos compartilhados
 
-Este artigo fornece contexto sobre dispositivos compartilhados, como lidar e mitigar dados de dispositivos compartilhados usando a compilação e entender a exposição de dispositivos compartilhados em seus dados usando o Serviço de consulta.
+Este artigo fornece contexto sobre dispositivos compartilhados, como manipular e mitigar dados de dispositivos compartilhados usando a [compilação](/help/stitching/overview.md), e compreender a exposição de dispositivos compartilhados em seus dados usando o Serviço de consulta.
 
 ## O que é um dispositivo compartilhado?
 
@@ -24,35 +24,36 @@ Um dispositivo compartilhado é um dispositivo usado por mais de uma pessoa. Cen
 
 Quando duas pessoas usam o mesmo dispositivo e fazem uma compra, os dados de exemplo do evento podem ser como:
 
-| Carimbo de data e hora | Nome da página | ID do dispositivo | Email |
-|---|---|---|---|
-| 2023-05-12 12:01 | Página inicial | `1234` | |
-| 2023-05-12 12:02 | Página do produto | `1234` | |
-| 2023-05-12 12:03 | Êxito do pedido | `1234` | `ryan@a.com` |
-| 2023-05-12 12:07 | Página do produto | `1234` | |
-| 2023-05-12 12:08 | Êxito do pedido | `1234` | `cassidy@a.com` |
+| Evento | Carimbo de data e hora | Nome da página | ID do dispositivo | Email |
+|--:|---|---|---|---|
+| 1 | 2023-05-12 12:01 | Página inicial | `1234` | |
+| 2 | 2023-05-12 12:02 | Página do produto | `1234` | |
+| 3 | 2023-05-12 12:03 | Êxito do pedido | `1234` | `ryan@a.com` |
+| 4 | 2023-05-12 12:07 | Página do produto | `1234` | |
+| 5 | 2023-05-12 12:08 | Êxito do pedido | `1234` | `cassidy@a.com` |
 
-Os eventos de sucesso (compra) do pedido atribuem os dados precisamente ao email correto. A forma como essa atribuição afeta sua análise depende de como você realiza a análise:
+Como você pode ver nessa tabela, uma vez que a autenticação ocorra nos eventos 3 e 5, um link começa a se formar entre uma ID de dispositivo e uma ID de pessoa. Para entender o impacto de quaisquer esforços de marketing no nível da pessoa, esses eventos não autenticados precisam ser atribuídos à pessoa certa.
 
-- Abordagem centrada no dispositivo: análise executada usando a ID do dispositivo. Com essa abordagem, dados autenticados e não autenticados são incluídos na análise. No entanto, essa abordagem não permite uma análise mais baseada em pessoas.
-- Abordagem centrada em pessoas: análise realizada usando o endereço de email ou outro identificador de pessoa. Com essa abordagem, somente eventos autenticados são incluídos na análise. Essa abordagem não fornece uma imagem completa da jornada do cliente, incluindo a aquisição
+<!--
+The order success (purchase) events assign the data accurately to the correct email. How this assignment impacts your analysis depends on how you perform analysis:
+
+- Device centric approach: analysis performed using the Device ID. With this approach, both authenticated and unauthenticated data are included in analysis. However, this approach does not allow for a more person based analysis. 
+- Person centric approach: analysis performed using the email address or other person identifier. With this approach, only authenticated events are included in the analysis. This approach doesn't provide a complete picture of the customer journey, including acquisition
+
+-->
 
 ## Melhorar a análise centrada em pessoas
 
-Os dados de exemplo são uma combinação de atividades autenticadas e não autenticadas para o mesmo dispositivo. O desafio é atribuir uma pessoa ao tráfego não autenticado, para que você possa executar uma análise centrada em pessoas e impedir que o Customer Jornada Analytics descarte as atividades que não têm um valor de ID de pessoa. Para resolver esse desafio, você tem duas opções: pode usar a compilação ou implementar a funcionalidade de redefinição da ECID. Ambas as opções são discutidas em mais detalhes nas seções abaixo.
+O processo de compilação resolve esse problema de atribuição adicionando o identificador de pessoa selecionado (nos dados de exemplo, o email) a eventos em que esse identificador não existe. A compilação utiliza um mapeamento entre IDs de dispositivo e IDs de pessoa para garantir que o tráfego autenticado e não autenticado possa ser usado na análise, mantendo-o centrado em pessoas. Consulte [Costura](/help/stitching/overview.md) para obter mais informações.
 
-### Compilação
-
-O processo de compilação aborda a deficiência da abordagem centrada na pessoa. A compilação adiciona o identificador de pessoa selecionado (nos dados de exemplo, o email) a eventos em que esse identificador não existe. A compilação utiliza um mapeamento entre IDs de dispositivo e IDs de pessoa para garantir que o tráfego autenticado e não autenticado possa ser usado na análise, mantendo-o centrado em pessoas. Consulte [Costura](/help/stitching/overview.md) para obter mais informações.
-
-A compilação pode atribuir dados de dispositivo compartilhado usando atribuição de última autenticação ou atribuição de divisão de dispositivo. No entanto, as alterações de implementação por meio da redefinição da ECID também podem endereçar dispositivos compartilhados.
+A compilação pode atribuir dados de dispositivo compartilhado usando atribuição de última autenticação ou atribuição de divisão de dispositivo. Todas as tentativas de compilar eventos não autenticados em um usuário conhecido são não determinísticas.
 
 
-#### Atribuição de última autenticação
+### Atribuição de última autenticação
 
-A última autenticação atribui toda a atividade desconhecida de um dispositivo compartilhado ao usuário que fez a última autenticação. A última autenticação é usada no Audience Manager e é a abordagem preferida para casos de uso do Perfil de dados do cliente em tempo real. O Serviço de identidade do Experience Platform cria o gráfico com base na atribuição de última autenticação e, como tal, é usado na compilação baseada em gráficos. Consulte [Visão geral das regras de vinculação do gráfico de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) para obter mais informações.
+A última autenticação atribui toda a atividade desconhecida de um dispositivo compartilhado ao usuário que fez a última autenticação. O Serviço de identidade do Experience Platform cria o gráfico com base na atribuição de última autenticação e, como tal, é usado na compilação baseada em gráficos. Consulte [Visão geral das regras de vinculação do gráfico de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview) para obter mais informações.
 
-Ao usar a atribuição de última autenticação na compilação, as IDs compiladas são resolvidas conforme mostrado na tabela abaixo.
+Quando a atribuição de última autenticação é usada na compilação, as IDs compiladas são resolvidas conforme mostrado na tabela abaixo.
 
 | Carimbo de data e hora | Nome da página | ID do dispositivo | Email | ID com título |
 |---|---|---|---|---|
@@ -64,11 +65,11 @@ Ao usar a atribuição de última autenticação na compilação, as IDs compila
 | 2023-05-13 11:08 | Página inicial | `1234` | | `cassidy@a.com` |
 
 
-#### Divisão de dispositivo
+### Divisão de dispositivo
 
-A divisão de dispositivo atribui uma atividade anônima de um dispositivo compartilhado ao usuário que está mais próximo da atividade anônima. A divisão de dispositivo é usada atualmente na compilação em campo. A divisão de dispositivos é a abordagem preferida para casos de uso analítico, pois a divisão de dispositivos dá crédito por atividades não autenticadas e autenticadas à pessoa mais próxima conhecida. A divisão de dispositivo é usada atualmente na compilação em campo.
+A divisão de dispositivo atribui uma atividade anônima de um dispositivo compartilhado ao usuário que está mais próximo da atividade anônima. A divisão de dispositivos é a abordagem preferida para casos de uso analítico, pois a divisão de dispositivos dá crédito por atividades não autenticadas e autenticadas à pessoa mais próxima conhecida. A divisão de dispositivo é usada atualmente na compilação em campo.
 
-Ao usar a atribuição dividida por dispositivo na compilação, as IDs com título resolvem como mostrado na tabela abaixo.
+Quando a atribuição dividida por dispositivo é usada na compilação, as IDs com título são resolvidas conforme mostrado na tabela abaixo.
 
 | Carimbo de data e hora | Nome da página | ID do dispositivo | Email | ID com título |
 |---|---|---|---|---|
@@ -80,21 +81,25 @@ Ao usar a atribuição dividida por dispositivo na compilação, as IDs com tít
 | 2023-05-13 11:08 | Página inicial | `1234` | | `cassidy@a.com` |
 
 
-### Redefinição de ECID
+<!--
 
-Como o nome indica, a redefinição da ECID implementa uma funcionalidade que redefine a ECID em um acionador predeterminado, na maioria dos casos um evento de logon ou logout. Com essa implementação, um único dispositivo obtém uma nova ECID sempre que o acionador predeterminado é acionado. Essencialmente, essa redefinição força o dispositivo a se tornar um *novo dispositivo* repetidamente da perspectiva dos dados. A redefinição da ECID também ajuda a impedir que dispositivos compartilhados sejam exibidos nos dados. Nenhum algoritmo adicional é necessário, mas você tem a responsabilidade de implementar o sinal de redefinição ECID como parte de sua implementação de coleta de dados Adobe.
+### ECID reset 
+
+As the name implies, ECID reset implements functionality that resets the ECID on a predetermined trigger, in most cases a login or logout event. With this implementation, a single device gets a new ECID every time the predetermined trigger fires. Essentially, this reset forces the device to become a *new device* over and again from a data perspective. The ECID reset also helps to prevent shared devices from even showing up in the data. No additional algorithms are required, but you have the responsibility to implement the ECID reset signal as part of your Adobe data collection implementation.
 
 
-Ao usar a redefinição da ECID, as IDs compiladas resolvem como mostrado na tabela abaixo.
+When using ECID reset, Stitched IDs resolve as shown in the table below. 
 
-| Carimbo de data e hora | Nome da página | ID do dispositivo | Email | ID com título |
+| Timestamp | Page name | Device ID | Email | Stitched ID |
 |---|---|---|---|---|
-| 2023-05-12 12:01 | Página inicial | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:02 | Página do produto | `1234` | | `ryan@a.com` |
-| 2023-05-12 12:03 | Êxito do pedido | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 12:07 | Página do produto | 5678 | | `cassidy@a.com` |
-| 2023-05-12 12:08 | Êxito do pedido | 5678 | `cassidy@a.com` | `cassidy@a.com` |
-| 2023-05-13 11:08 | Página inicial | 5678 | | `cassidy@a.com` |
+| 2023-05-12 12:01 | Home page | `1234` | | `ryan@a.com`| 
+| 2023-05-12 12:02 | Product page  | `1234` | |`ryan@a.com` | 
+| 2023-05-12 12:03 | Order success | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Product page  | 5678  | | `cassidy@a.com` | 
+| 2023-05-12 12:08 | Order success | 5678 |  `cassidy@a.com` | `cassidy@a.com` |
+| 2023-05-13 11:08 | Home page | 5678 | | `cassidy@a.com` |
+
+-->
 
 ## Exposição do dispositivo compartilhado
 
@@ -120,7 +125,7 @@ Para entender a exposição do dispositivo compartilhado, você pode pensar em e
 
 2. **Atribuição de eventos a dispositivos compartilhados**
 
-   Para os dispositivos compartilhados identificados, determine quantos eventos do total podem ser atribuídos a esses dispositivos. Isso fornece informações sobre o impacto que os dispositivos compartilhados têm nos seus dados e as implicações para a análise.
+   Para os dispositivos compartilhados identificados, determine quantos eventos do total podem ser atribuídos a esses dispositivos. Essa atribuição fornece informações sobre o impacto que os dispositivos compartilhados têm nos seus dados e as implicações para a análise.
 
    ```sql
    SELECT COUNT(*) AS total_events,
@@ -147,7 +152,7 @@ Para entender a exposição do dispositivo compartilhado, você pode pensar em e
 
 3. **Identificar eventos anônimos em dispositivos compartilhados**
 
-   Entre os eventos atribuídos a dispositivos compartilhados, identifique quantos carecem de uma ID de pessoa, indicando eventos anônimos. O algoritmo escolhido (por exemplo, last-auth, device-split ou ECID-reset) para aprimorar a qualidade dos dados afetará esses eventos anônimos.
+   Entre os eventos atribuídos a dispositivos compartilhados, identifique quantos carecem de uma ID de pessoa, indicando eventos anônimos. O algoritmo escolhido (por exemplo, last-auth, device-split ou ECID-reset) para aprimorar a qualidade dos dados afeta esses eventos anônimos.
 
    ```sql
    SELECT COUNT(IF(shared_persistent_ids.persistent_id IS NOT NULL, 1, null)) shared_persistent_ids_events,
@@ -198,5 +203,3 @@ Para entender a exposição do dispositivo compartilhado, você pode pensar em e
    ) shared_persistent_ids 
    ON events.persistent_id = shared_persistent_ids.persistent_id; 
    ```
-
-
