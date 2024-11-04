@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
+source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
 workflow-type: tm+mt
-source-wordcount: '8842'
+source-wordcount: '8841'
 ht-degree: 17%
 
 ---
@@ -43,7 +43,6 @@ Ao criar ou editar um campo derivado, você usa a interface de campo derivado.
 ![Captura de tela da caixa de diálogo Campo derivado](assets/derived-field-dialog.png)
 
 
-![Visão geral do programa](/help/assets/icons/ProgramOverview.svg)
 
 |  | Nome | Descrição |
 |---------|----------|--------|
@@ -188,6 +187,8 @@ Este modelo de função usa um conjunto de regras para identificar rejeições d
 
 +++ Detalhes
 
+{{select-package}}
+
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
 ![Captura de tela do construtor de regras de rejeições](assets/function-template-bounces.png)
@@ -199,6 +200,8 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 Este modelo de função combina dois valores em um.
 
 +++ Detalhes
+
+{{select-package}}
 
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
@@ -212,6 +215,8 @@ Esse modelo de função fornece um nome de conjunto de dados legível.
 
 +++ Detalhes
 
+{{select-package}}
+
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
 ![Captura de tela do construtor de regras do Nome Amigável do Conjunto de Dados](assets/function-template-friendly-dataset-name.png)
@@ -223,6 +228,8 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 Este modelo de função cria um nome de página simples.
 
 +++ Detalhes
+
+{{select-package}}
 
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
@@ -236,6 +243,8 @@ Esse modelo de função classifica os principais momentos do ano.
 
 +++ Detalhes
 
+{{select-package}}
+
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
 ![Captura de tela do construtor de regras da Temporada de Feriados](assets/function-template-holiday-season.png)
@@ -247,6 +256,8 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 Esse modelo de função define metas mensais personalizadas.
 
 +++ Detalhes
+
+{{select-package}}
 
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
@@ -260,6 +271,8 @@ Este modelo de função converte uma lista limitada em uma matriz.
 
 +++ Detalhes
 
+{{select-package}}
+
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
 ![Captura de tela do construtor de regras de lista Delimitada Obter Todos os Valores](assets/function-template-get-all-values-in-delimited-list.png)
@@ -271,6 +284,8 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 Este modelo de função obtém o primeiro valor em uma lista delimitada.
 
 +++ Detalhes
+
+{{select-package}}
 
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
@@ -284,6 +299,8 @@ Este modelo de função obtém o último valor em uma lista delimitada.
 
 +++ Detalhes
 
+{{select-package}}
+
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
 ![Captura de tela do Construtor de Regras de Obter Último Valor na Lista Delimitada](assets/function-template-get-last-value-in-delimited-list.png)
@@ -295,6 +312,8 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 Este modelo de função extrai o nome de domínio usando uma expressão regular.
 
 +++ Detalhes
+
+{{select-package}}
 
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
@@ -308,6 +327,8 @@ Este modelo de função extrai valores da sequência de consulta.
 
 +++ Detalhes
 
+{{select-package}}
+
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
 ![Captura de tela do construtor de regras Obter Parâmetro da Cadeia de Caracteres de Consulta](assets/function-template-get-query-string-parameter.png)
@@ -319,6 +340,8 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 Esse modelo de função faz a transição dos relatórios de um campo para outro.
 
 +++ Detalhes
+
+{{select-package}}
 
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
@@ -332,6 +355,8 @@ Este modelo de função implementa a identificação de bots de luz.
 
 +++ Detalhes
 
+{{select-package}}
+
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
 ![Captura de tela do construtor de regras de Detecção de bot simples](assets/function-template-simple-bot-detection.png)
@@ -344,6 +369,8 @@ Este modelo de função identifica o último link clicado em uma sessão.
 
 +++ Detalhes
 
+{{select-package}}
+
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
 ![Captura de tela do construtor de regras do Link de Saída](assets/function-template-exit-link.png)
@@ -355,6 +382,8 @@ Para usar o template, você deve especificar os parâmetros corretos para cada f
 Esse modelo de função sinaliza links de download comuns.
 
 +++ Detalhes
+
+{{select-package}}
 
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
