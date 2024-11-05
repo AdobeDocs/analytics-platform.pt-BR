@@ -5,19 +5,19 @@ role: User, Admin
 solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
-source-git-commit: 37be5b159b756db2c8b523db6602f274541e2a81
+source-git-commit: 376ad62c3883eef675f9b1df639e8c46ee259229
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 4%
+source-wordcount: '1596'
+ht-degree: 3%
 
 ---
 
 
 # Assistente de IA de análise de dados em Customer Journey Analytics - Alpha
 
-O Assistente de IA de análise de dados é um agente de conversação inteligente e sensível ao contexto que pode ajudá-lo a responder com mais rapidez e eficiência às perguntas que você possa ter sobre seus dados do Analysis Workspace no Customer Journey Analytics.
+O Assistente de IA de análise de dados é um agente de conversação de IA gerativa que pode ajudá-lo a responder de forma mais rápida e eficiente às perguntas que você possa ter sobre seus dados do Analysis Workspace no Customer Journey Analytics.
 
-O Assistente verifica todos os dados em uma visualização de dados, incluindo os diferentes tipos de métricas e componentes, e traduz o prompt para a dimensão, a métrica e o intervalo de datas corretos para a análise. Em vez de precisar se familiarizar com os componentes da visualização de dados e, em seguida, arrastar e soltar esses componentes na melhor combinação para responder à sua pergunta, você pode simplesmente digitar a pergunta no Assistente de IA.
+Quando você faz uma pergunta no Assistente de IA, ele verifica todos os componentes na visualização de dados, incluindo os diferentes tipos de métricas e componentes, e traduz o prompt para a dimensão, a métrica e o intervalo de datas corretos para a análise. Em vez de precisar se familiarizar com os componentes da visualização de dados e, em seguida, arrastar e soltar esses componentes na melhor combinação para responder à sua pergunta, você pode simplesmente digitar a pergunta no Assistente de IA.
 
 ![Assistente de IA de análise de dados](assets/cja-ai-asst-da.gif)
 
@@ -32,6 +32,7 @@ O Assistente verifica todos os dados em uma visualização de dados, incluindo o
 | **Detecção de prompt fora do escopo** | Se você enviar um prompt que está fora do escopo, como &quot;exportar este projeto&quot;, o Assistente responderá informando que a pergunta está fora do escopo. |
 | **Esclarecimento de questões** | Se você fizer uma pergunta que não tenha contexto suficiente para o Assistente de IA responder, ou que seja muito genérica, o Assistente de IA responderá com uma pergunta esclarecedora e/ou com opções sugeridas. Exemplos: <p>**Componentes**<ul><li>Métrica: *Qual métrica de &quot;receita&quot; você quis dizer?*</li><li>Dimension: *Em qual das &quot;regiões&quot; abaixo você deseja se concentrar?*</li><li>Filtro: *Qual filtro de &quot;Conta&quot; você deseja aplicar?*</li><li>Intervalo de datas: *Por &quot;último mês&quot;, você quis dizer o último mês completo ou os últimos 30 dias?*</li></ul>**itens de Dimension**: qual &quot;nome da loja&quot; você quis dizer? (por exemplo, Armazenamento #5274, Armazenamento #2949 etc.) |
 | **Voltas múltiplas** | O Assistente de IA responde a um prompt com o contexto do(s) prompt(s) anterior(es), permitindo que os usuários atualizem as visualizações e façam perguntas de acompanhamento. Exemplo: <ul><li>Prompt 1: *Eventos de tendência de março.*</li><li>Prompt 2: *Mostrar os dados de março a abril*</li></ul> |
+| **Verificabilidade** | A verificabilidade e a correção dos dados podem ser confirmadas por meio da tabela de forma livre gerada e da visualização de dados. Por exemplo, se um usuário solicitar *Pedidos de tendência no último mês*, você poderá confirmar se a métrica correta (&quot;pedidos&quot;) e o intervalo de datas (&quot;último mês&quot;) foram selecionados no painel recém-gerado, na visualização de dados e na tabela de forma livre. |
 | **Feedback** | <ul><li>Polegar para cima</li><li>Polegar para baixo</li><li>Sinalizador</li></ul> |
 
 ### Recursos de Alpha fora do escopo
@@ -42,7 +43,6 @@ O Assistente verifica todos os dados em uma visualização de dados, incluindo o
 | **Esclarecimento de questões** | As perguntas de esclarecimento estão limitadas a componentes e itens de dimensão. O Assistente de IA não pode esclarecer visualizações de dados, visualizações, granularidade de dados, comparação, escopo etc. Sem esclarecer dúvidas, o Assistente assume como padrão o que você provavelmente está solicitando. Se retornar uma visualização ou granularidade de dados inesperada, você poderá usar o recurso de várias rodadas/atualização para ajustar a visualização e os dados. |
 | **Ações/Recursos do Workspace** | O Assistente de IA não pode realizar ações para um usuário no Workspace além de criar e atualizar visualizações. Por exemplo, ela não pode executar nenhum dos seguintes procedimentos:<ul><li>Botões da interface de ação contextual (adicionar ao gráfico, novo painel, nova tabela)</li><li>Compartilhar</li><li>Exportar</li><li>Baixar</li><li>Gerenciar preferências do usuário</li><li>Preparar</li><li>Gerenciar visualização de dados</li><li>aplicativo Painéis do Analytics</li><li>Atribuição</li></ul> |
 | **Tipos de visualização sem suporte** | <ul><li>Fluxo</li><li>Fallout</li><li>Tabela de coorte</li><li>Área, Área empilhada</li><li>Barra empilhada</li><li>Marcador</li><li>Combo</li><li>Histograma</li><li>Barra horizontal, Barra horizontal empilhada</li><li>Resumo da métrica principal</li><li>Dispersão</li><li>Mudança de resumo</li><li>Texto</li><li>Mapas de árvore</li><li>Venn</li></ul> |
-| **Explicabilidade e Verificabilidade** | Descrição ou citação transparente sobre como o Assistente de IA gerou uma resposta e fornece uma maneira de confirmar se a resposta está correta. |
 
 <!---## Feature access in the Customer Journey Analytics UI
 
@@ -77,7 +77,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. Clique em **[!UICONTROL Projeto em branco]** no banner na parte superior da página de projetos para abrir um novo projeto em branco.
 
-4. Certifique-se de que a visualização de dados selecionada para o painel é a visualização de dados que foi ativada para o uso do Assistente do AI para o teste de Alpha (acesse taylorb@adobe.com ou no canal do Alpha Slack, se não tiver certeza)
+4. Certifique-se de que a visualização de dados selecionada para o painel é a visualização de dados que foi ativada para o uso do Assistente do AI para o teste de Alpha (acesse o canal do Alpha Slack se não tiver certeza)
 
 5. Clique no ícone de bate-papo do Assistente do AI na parte superior direita.
 
@@ -111,23 +111,23 @@ Em seguida, você deseja ver a comparação de receita por região.
 
 ### Exemplo 3
 
-Agora, vamos analisar a receita por categoria de produto.
+Em seguida, além de entender a receita por região, você também deseja ver os dados para lucro por região. Em vez de ter que digitar novamente o último prompt, você pode solicitar que o Assistente de IA atualize a visualização e a tabela de forma livre mais recentes.
+
+1. Na janela do prompt, digite *&quot;Adicionar lucro.&quot;*
+
+2. O gráfico de **[!UICONTROL Barra]** ainda fornece a resposta mais concisa, mas a métrica de lucro foi adicionada como uma coluna na tabela de forma livre:
+
+   ![Gráfico de barras](/help/assets/ai-asst-result4.png)
+
+### Exemplo 4
+
+Por fim, vamos analisar a receita por categoria de produto.
 
 1. Na janela do prompt, digite *&quot;Proporção da receita por categoria do produto&quot;.*
 
 2. Novamente, o Assistente de IA de análise de dados escolhe a visualização mais apropriada, neste caso a visualização **[!UICONTROL Rosca]**, para responder à pergunta.
 
    ![Rosca](/help/assets/ai-asst-result3.png)
-
-### Exemplo 4
-
-Por fim, você quer saber qual SKU é a mais lucrativa e onde deve investir recursos de marketing.
-
-1. Na janela do prompt, pergunte a *&quot;Qual é o lucro nas SKUs de fevereiro a maio.&quot;*
-
-2. Um gráfico simples de **[!UICONTROL Barra]** fornece a resposta mais concisa:
-
-   ![Gráfico de barras](/help/assets/ai-asst-result4.png)
 
 ## Exemplo de prompts de análise de dados
 
@@ -180,7 +180,6 @@ Após a seleção de miniaturas para cima/para baixo, faça uma seleção para a
 
 ## Perguntas e contato
 
-* Email `taylorb@adobe.com` (PM)
 * Enviar perguntas e comentários no canal do Alpha Slack: #aep-cja-ai-assistant-testers ???
 
 
