@@ -12,14 +12,14 @@ ht-degree: 3%
 
 ---
 
-# Análise de [!UICONTROL Linha do tempo] {#timeline}
+# Análise de [!UICONTROL linha do tempo] {#timeline}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_guidedanalysis_timeline_button"
 >title="Linha do tempo"
->abstract="Observe eventos da sessão no nível dos usuários ao longo do tempo."
+>abstract="Observe eventos de sessão no nível de usuário ao longo do tempo."
 
 <!-- markdownlint-enable MD034 -->
 

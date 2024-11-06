@@ -1,6 +1,6 @@
 ---
 title: Análise de retenção
-description: Meça quantos usuários continuam usando o seu produto.
+description: Meça quantos usuários continuam usando seu produto.
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
@@ -19,7 +19,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="cja_workspace_guidedanalysis_retention_button"
 >title="Retenção"
->abstract="Meça quantos usuários continuam usando o seu produto."
+>abstract="Meça quantos usuários continuam usando seu produto."
 
 <!-- markdownlint-enable MD034 -->
 

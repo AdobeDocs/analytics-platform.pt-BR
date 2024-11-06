@@ -12,13 +12,13 @@ ht-degree: 6%
 
 ---
 
-# Análise de [!UICONTROL Compromisso] {#engagement}
+# Análise de [!UICONTROL engajamento] {#engagement}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_guidedanalysis_engagement_button"
->title="Envolvimento"
+>title="Engajamento"
 >abstract="Entenda a amplitude e a profundidade do engajamento de recursos."
 
 <!-- markdownlint-enable MD034 -->

@@ -12,7 +12,7 @@ ht-degree: 6%
 
 ---
 
-# [!UICONTROL Análise do impacto de primeiro uso] {#first-use-impact}
+# Análise de [!UICONTROL impacto do primeiro uso] {#first-use-impact}
 
 <!-- markdownlint-disable MD034 -->
 

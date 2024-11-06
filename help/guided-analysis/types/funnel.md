@@ -12,7 +12,7 @@ ht-degree: 3%
 
 ---
 
-# Análise de [!UICONTROL Funil] {#funnel}
+# Análise de [!UICONTROL funil] {#funnel}
 
 <!-- markdownlint-disable MD034 -->
 

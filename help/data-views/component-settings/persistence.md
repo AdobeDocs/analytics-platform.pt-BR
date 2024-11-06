@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_persistence"
 >title="Persistência"
->abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação se aplica antes dos filtros nos relatórios. Consulte para obter mais informações sobre [configurações de alocação](/help/data-views/component-settings/persistence.md#allocation-settings), [configurações de expiração](/help/data-views/component-settings/persistence.md#expiration-settings), [dimensão de ligação](/help/data-views/component-settings/persistence.md#binding-dimension) e métricas de ligação."
+>abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação é aplicada antes dos filtros nos relatórios. Para obter mais informações, consulte [configurações de alocação](/help/data-views/component-settings/persistence.md#allocation-settings), [configurações de expiração](/help/data-views/component-settings/persistence.md#expiration-settings), [dimensão de vinculação](/help/data-views/component-settings/persistence.md#binding-dimension) e métricas de vinculação."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -8,11 +8,11 @@ role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# Análise de [!UICONTROL Crescimento ativo] {#active-growth}
+# Análise de [!UICONTROL crescimento ativo] {#active-growth}
 
 <!-- markdownlint-disable MD034 -->
 

@@ -8,7 +8,7 @@ role: User
 source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_guidedanalysis_releaseimpact_button"
->title="Impacto do lançamento"
+>title="Impacto da versão"
 >abstract="Compare o desempenho em períodos iguais antes e depois do lançamento."
 
 <!-- markdownlint-enable MD034 -->

@@ -7,7 +7,7 @@ role: User
 source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
 workflow-type: tm+mt
 source-wordcount: '467'
-ht-degree: 49%
+ht-degree: 51%
 
 ---
 
@@ -47,7 +47,7 @@ Como parte das configurações de visualização, opções específicas de Núme
 >[!CONTEXTUALHELP]
 >id="cja_workspace_summarychange_button"
 >title="Alteração de resumo"
->abstract="Criar uma visualização que mostre o delta (alteração) entre dois números"
+>abstract="Crie uma visualização que mostre o delta (alteração) entre dois números"
 
 <!-- markdownlint-enable MD034 -->
 

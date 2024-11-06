@@ -8,7 +8,7 @@ exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
 source-git-commit: ad446f55855696cf7721f34f779883792b7958fa
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 17%
+ht-degree: 25%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_component_dimension_summarydatagroup_hideinreporting"
 >title="Ocultar nos relatórios"
->abstract="Selecionar essa opção habilitará o **[!UICONTROL componente Ocultar nos relatórios]** para essa dimensão e impedirá que o componente seja exibido no Analysis Workspace e em outras ferramentas de relatório do Customer Journey Analytics."
+>abstract="Esta seleção habilitará a opção **[!UICONTROL Ocultar componente nos relatórios]** para essa dimensão e impedirá que o componente seja exibido no Analysis Workspace e em outras ferramentas de relatórios do Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

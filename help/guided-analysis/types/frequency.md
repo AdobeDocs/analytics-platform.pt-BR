@@ -12,14 +12,14 @@ ht-degree: 7%
 
 ---
 
-# Análise de [!UICONTROL Frequência] {#frequency}
+# Análise de [!UICONTROL frequência] {#frequency}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_workspace_guidedanalysis_frequency_button"
 >title="Frequência"
->abstract="Exiba a distribuição de atividades repetidas dos usuários para eventos específicos."
+>abstract="Exiba a distribuição da atividade repetida do usuário para eventos específicos."
 
 <!-- markdownlint-enable MD034 -->
 
