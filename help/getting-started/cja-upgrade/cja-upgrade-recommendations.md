@@ -6,24 +6,26 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: ea16705e96047cbcf41e428d2018ea7c72b2afac
+source-git-commit: 6fe081690782272f550c8f9c33dfd9ae6b227d13
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 8%
+source-wordcount: '1471'
+ht-degree: 7%
 
 ---
 
 # Atualização do Adobe Analytics para o Customer Journey Analytics
 
-Antes de começar o processo de atualização do Adobe Analytics para o Customer Journey Analytics, compreenda primeiro as etapas de atualização recomendadas.
+Ao atualizar do Adobe Analytics para o Customer Journey Analytics, o Adobe recomenda uma nova implementação do SDK da Web do Experience Platform, juntamente com o conector de origem do Analytics, conforme descrito em [Etapas de atualização recomendadas para a maioria das organizações](#recommended-upgrade-steps-for-most-organizations).
+
+Dependendo de vários fatores, como linha do tempo e restrições de recursos, as etapas de atualização recomendadas podem não ser práticas para sua organização. Nesse caso, use o [questionário de atualização do Adobe Analytics para Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/) para gerar dinamicamente etapas de atualização personalizadas para as circunstâncias exclusivas de sua organização.
+
+## Etapas de atualização recomendadas para a maioria das organizações
 
 >[!NOTE]
 >
 >As etapas de atualização descritas nesta seção são as etapas de atualização recomendadas que qualquer organização pode usar para atualizar com êxito do Adobe Analytics para o Customer Journey Analytics.
 >
 >No entanto, dependendo de vários fatores, como linha do tempo e restrições de recursos, as etapas de atualização recomendadas podem não ser práticas para sua organização. Nesse caso, use o [questionário de atualização do Adobe Analytics para Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/) para gerar dinamicamente etapas de atualização personalizadas para as circunstâncias exclusivas de sua organização.
-
-## Etapas de atualização recomendadas para a maioria das organizações
 
 As etapas recomendadas ao atualizar do Adobe Analytics para o Customer Journey Analytics são uma nova implementação do SDK da Web do Experience Platform, que é o método de coleta de dados preferido para o Customer Journey Analytics. Juntamente com o SDK da Web, a Adobe também recomenda usar o conector de origem do Analytics para reter dados históricos do Adobe Analytics e executar uma comparação de dados lado a lado.
 
@@ -59,60 +61,37 @@ Após a transição completa para o Customer Journey Analytics, o conector de or
 
 ### Etapas de atualização detalhadas recomendadas
 
-As etapas a seguir mostram o processo recomendado para atualizar do Adobe Analytics para o Customer Journey Analytics.
+As etapas a seguir descrevem o processo recomendado para atualizar do Adobe Analytics para o Customer Journey Analytics.
 
-Dependendo do ambiente e dos requisitos exclusivos de sua organização, essas etapas recomendadas podem não ser adequadas para sua organização. Nesse caso, use o [questionário de atualização do Adobe Analytics para Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/) para gerar dinamicamente etapas de atualização personalizadas para as circunstâncias exclusivas de sua organização.
+Cada etapa fornece uma explicação de alto nível de um processo mais detalhado. Siga o link para cada etapa e conclua suas tarefas associadas, retorne a essa página e continue para a próxima etapa do processo.
 
 1. [Planeje sua arquitetura de esquema XDM](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
 1. [Crie o esquema personalizado desejado no Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
 
+   Considere as seguintes opções ao criar seu esquema:
+
+   * Se quiser integrar o Customer Journey Analytics com RTCDP, habilite a opção **[!UICONTROL Perfil]** no esquema, conforme descrito em [Criar um esquema XDM para usar com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md). Com essa opção ativada, quando os dados forem assimilados em conjuntos de dados com base nesse esquema, esses dados serão mesclados no Perfil do cliente em tempo real.
+
+   * Se quiser incluir dados de streaming de mídia, você deve [configurar seu esquema para assimilar e usar dados de streaming](/help/data-ingestion/streaming.md).
+
 1. [Criar um conjunto de dados no Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md).
 
-1. Expanda a seção que descreve sua implementação atual do Adobe Analytics e conclua as etapas associadas:
+1. (Opcional) Se você usar dados de classificação no Adobe Analytics, poderá adicionar dados de classificação ao seu conjunto de dados no Customer Journey Analytics.
 
-   +++Para implementações do Adobe Analytics usando o AppMeasurement
+   Crie um conjunto de dados de pesquisa para cada dimensão que contenha dados de classificação.
 
-   1. [Criar uma sequência de dados no Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
+1. Para implementações do Adobe Analytics que usam o AppMeasurement ou a extensão (marcas) do Analytics, [crie uma sequência de dados no Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
-+++
-
-   +++Para implementações do Adobe Analytics que usam a extensão do Analytics (tags)
-
-   1. [Criar uma sequência de dados no Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
-
-+++
-
-+++ Para implementações do Adobe Analytics usando o SDK da Web
-
-   Nenhuma etapa adicional é necessária.
-
-+++
+   Para implementações do Adobe Analytics que usam o SDK da Web, já existe um fluxo de dados.
 
 1. [Adicionar o Adobe Experience Platform como um serviço à sua sequência de dados](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md).
 
-1. Use a tabela a seguir para identificar quaisquer recursos do Adobe Analytics que você deseja continuar usando no Customer Journey Analytics e, em seguida, use as informações fornecidas para saber como configurar esses recursos como parte da atualização para o Customer Journey Analytics:
-
-   | Recurso do Adobe Analytics | Requisitos de implementação para o Customer Journey Analytics | Informações adicionais |
-   |---------|----------|---------|
-   | Dados de classificação | Crie um conjunto de dados de pesquisa para cada dimensão que contenha dados de classificação. |  |
-   | Canais de marketing | Criar um campo derivado de canal de marketing. |  |
-   | Sobreposição do Activity Map e rastreamento de link | N/D | No momento, o Adobe está trabalhando no suporte de sobreposição de Activity Map para o Customer Journey Analytics. |
-   | Feeds de dados | Nenhuma configuração é necessária durante a implementação.<br/>[Saiba mais sobre as várias opções de exportação do Customer Journey Analytics](/help/analysis-workspace/export/export-project-overview.md). | Embora uma substituição direta dos Feeds de dados ainda não esteja disponível no Customer Journey Analytics, você pode exportar relatórios de Customer Journey Analytics do Analysis Workspace para uso em ferramentas de terceiros ou para combinar com dados externos. |
-   | Data Warehouse | Nenhuma configuração é necessária durante a implementação.<br/>[Saiba mais sobre a Exportação de Tabela Completa no Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md). | Exportação de tabela completa do Customer Journey Analytics é a evolução dos relatórios do Data Warehouse no Adobe Analytics, com muitos recursos novos e frequentemente solicitados que não estão disponíveis no Data Warehouse hoje. |
-   | Dados de mídia de transmissão |  |  |
+1. (Opcional) Se quiser integrar o Customer Journey Analytics ao Adobe Journey Optimizer, use o objeto de personalização na implementação para usar no Adobe Journey Optimizer.
 
 1. (Opcional) Traga dados históricos do Adobe Analytics usando o conector de origem do Analytics.
 
    Para obter mais informações, consulte [Usar um conector de origem](/help/data-ingestion/sources.md#use-a-source-connector) em [Assimilar e usar dados usando conectores de origem](/help/data-ingestion/sources.md).
-
-1. Use a tabela a seguir para identificar os recursos de Customer Journey Analytics desejados e, em seguida, use as informações fornecidas para saber como configurar esses recursos como parte da atualização para o Customer Journey Analytics:
-
-   | Recursos do Customer Journey Analytics que você deseja | Requisitos de implementação para o Customer Journey Analytics | Informações adicionais |
-   |---------|----------|---------|
-   | Vincular dados da Web a dados de outros canais, como dados da central de atendimento | Após criar uma conexão (conforme descrito em uma etapa posterior), adicione conjuntos de dados adicionais à sua conexão no Customer Journey Analytics. |  |
-   | Integrar à RTCDP | Ative o perfil no esquema e crie um conjunto de dados de perfil para uso no RTCDP | Isso deve ser feito ao criar o esquema XDM. |
-   | Integrar ao Adobe Journey Optimizer | Use o objeto de personalização em sua implementação para usar no Adobe Journey Optimizer |  |
 
 1. Expanda a seção que descreve a implementação do Customer Journey Analytics desejado e conclua as etapas associadas:
 
@@ -120,11 +99,19 @@ Dependendo do ambiente e dos requisitos exclusivos de sua organização, essas e
 
    1. [Adicionar alloy.js ao seu site](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version%22).
 
+   1. Preencha um objeto XDM e envie-o para o fluxo de dados.
+
 +++
 
    +++Marcas
 
    1. [Crie uma propriedade de marca na coleção de dados da Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/quick-start#create-a-property).
+
+   1. Adicione a extensão SDK da Web da Adobe Experience Platform.
+
+   1. Implemente a tag de carregamento no site.
+
+   1. Adicione a lógica da coleção de dados XDM à tag.
 
 +++
 
@@ -134,7 +121,13 @@ Dependendo do ambiente e dos requisitos exclusivos de sua organização, essas e
 
 +++
 
+1. Valide se a implementação do SDK da Web está enviando dados para um conjunto de dados.
+
 1. [Criar uma conexão no Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
+
+1. (Opcional) Vincule dados da Web a dados de outros canais, como dados da central de atendimento.
+
+   Você consegue isso adicionando conjuntos de dados à conexão Customer Journey Analytics.
 
 1. [Criar uma exibição de dados no Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
 
@@ -142,7 +135,17 @@ Dependendo do ambiente e dos requisitos exclusivos de sua organização, essas e
 
 1. [Migrar projetos e componentes](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
 
+1. (Opcional) Se você usa canais de marketing na Adobe Analytics, é possível [criar um campo derivado de canal de marketing no Customer Journey Analytics](/help/data-views/derived-fields/derived-fields.md#marketing-channels).
+
+   Os campos derivados são um aspecto importante do relatório em tempo real no Customer Journey Analytics. Um campo derivado permite definir manipulações de dados (geralmente complexas) dinamicamente, por meio de um construtor de regras personalizável.
+
+   Um uso para campos derivados é definir um campo derivado de Canal de marketing que determina o canal de marketing adequado com base em uma ou mais condições (por exemplo, parâmetro de URL, URL da página, nome da página).
+
+   Use [o modelo de função de canais de marketing](/help/data-views/derived-fields/derived-fields.md#marketing-channels) em campos derivados para criar rapidamente um campo derivado para canais de marketing.
+
 1. Compare os dados da implementação antiga com os da nova implementação e verifique se você compreende as diferenças e por que elas existem.
+
+1. Saiba mais sobre o suporte a recursos [no Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). A maioria dos recursos do Adobe Analytics é suportada no Customer Journey Analytics e muitos recursos adicionais estão disponíveis no Customer Journey Analytics.
 
 1. Planejar a integração do usuário.
 

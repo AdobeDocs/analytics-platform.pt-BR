@@ -8,12 +8,12 @@ hide: true
 hidefromtoc: true
 source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 27%
+source-wordcount: '240'
+ht-degree: 0%
 
 ---
 
-# Criar um fluxo de dados para usar com o Customer Journey Analytics
+# Criar conjuntos de dados de pesquisa para classificar dados no Customer Journey Analytics
 
 >[!NOTE]
 > 
@@ -21,23 +21,18 @@ ht-degree: 27%
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
-<!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
+Semelhante aos dados de classificações no Adobe Analytics, os conjuntos de dados de pesquisa são o método para classificar dados no Customer Journey Analytics.
 
-Uma sequência de dados representa a configuração do lado do servidor ao implementar os SDKs móveis e da Web da Adobe Experience Platform. Ao coletar dados com os SDKs da Adobe Experience Platform, os dados são enviados para a Rede de borda da Adobe Experience Platform. É o fluxo de dados que determina para quais serviços esses dados são encaminhados.
+Ao usar o conector de origem do Analytics, alguns conjuntos de dados de pesquisa padrão são aplicados automaticamente no momento do relatório. Para obter mais informações, consulte [Adicionar pesquisas padrão aos seus conjuntos de dados](/help/connections/standard-lookups.md).
 
-Na configuração, você deseja configurar a sequência de dados para enviar os dados coletados para seu conjunto de dados no Adobe Experience Platform.
+Para classificar os dados com uma nova implementação do SDK da Web do Experience Platform, é necessário criar um conjunto de dados de pesquisa para cada dimensão que contenha os dados que você deseja classificar.
 
-Para configurar seu armazenamento de dados:
+Para criar conjuntos de dados de pesquisa para uso no Customer Journey Analytics:
 
-1. No Adobe Experience Platform, selecione **[!UICONTROL Datastreams]** de [!UICONTROL DATA COLLECTION] no painel esquerdo.
+1. Na AEP, crie um novo esquema. Este é um novo esquema específico para conjuntos de dados de pesquisa. Não é possível usar um esquema existente.
 
-1. Selecione **[!UICONTROL Novo fluxo de dados]**.
+1. Você precisa criar uma nova classe de esquema que seja para pesquisas.
 
-1. Nomeie e descreva o armazenamento de dados. Selecione o esquema na lista [!UICONTROL Esquema do evento].
-
-   ![Novo fluxo de dados](assets/new-datastream.png)
-
-1. Selecione **[!UICONTROL Salvar]**.
+1. Crie um conjunto de dados de pesquisa fora disso.
 
 1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
-

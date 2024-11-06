@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 64662195842ae799d2020c226ca34293905d13ae
+source-git-commit: dcb01aa4ca885e00c5fe8b4c3373f0b57bace1e4
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 89%
+source-wordcount: '1003'
+ht-degree: 88%
 
 ---
 
@@ -47,6 +47,9 @@ ht-degree: 89%
       + [Enviar dados para a Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Reter dados históricos](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [Processo recomendado](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [Entender a implementação do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+      + [Criar conjuntos de dados de pesquisa para classificações](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+      + [Usar tags para atualizar](/help/getting-started/cja-upgrade/cja-upgrade-websdk-tags.md)
       + [Projetar o esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Criar seu esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [Usar seu esquema existente](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
@@ -238,7 +241,7 @@ ht-degree: 89%
    + [Frequência](../guided-analysis/types/frequency.md)
    + [Funil](../guided-analysis/types/funnel.md)
    + [Crescimento líquido](../guided-analysis/types/net-growth.md)
-   + [Impacto do lançamento](../guided-analysis/types/release-impact.md)
+   + [Impacto da versão](../guided-analysis/types/release-impact.md)
    + [Retenção](../guided-analysis/types/retention.md)
    + [Linha do tempo](../guided-analysis/types/timeline.md)
    + [Tendências](../guided-analysis/types/trends.md)

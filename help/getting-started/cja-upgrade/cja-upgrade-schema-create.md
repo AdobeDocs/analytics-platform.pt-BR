@@ -6,22 +6,20 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 711e92db7084592dc562eda3d0dcf33bcb4a62d4
+source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 56%
+source-wordcount: '987'
+ht-degree: 52%
 
 ---
 
 # Criar um esquema XDM para usar com o Customer Journey Analytics
 
 >[!NOTE]
->
->Esta documentação deve ser usada após o preenchimento do [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 > 
->Siga as etapas desta página somente após concluir todas as etapas anteriores que foram geradas dinamicamente para sua organização.
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
->Após concluir as etapas desta página, continue seguindo as etapas de atualização que foram geradas dinamicamente para sua organização no [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
 >[!IMPORTANT]
 >
@@ -62,13 +60,13 @@ Para criar um esquema:
 
    1. Selecione **[!UICONTROL Concluir]**.
 
-1. Na guia Estrutura de Esquema de Exemplo:
+1. Na guia [!UICONTROL **Estrutura**] do esquema:
 
-   1. Selecione **[!UICONTROL + Adicionar]** em [!UICONTROL Grupos de campos].
-
-      ![Adicione um grupo de campos](assets/add-field-group-button.png)
+   1. Na seção **[!UICONTROL Grupos de campos]**, selecione **[!UICONTROL + Adicionar]**.
 
       Grupos de campos são coleções reutilizáveis de objetos e atributos que permitem estender facilmente o esquema.
+
+      ![Adicione um grupo de campos](assets/add-field-group-button.png)
 
    1. Na caixa de diálogo [!UICONTROL Adicionar grupos de campos], selecione o grupo de campos **[!UICONTROL SDK da Web ExperienceEvent da AEP]** na lista.
 
@@ -116,7 +114,7 @@ Para criar um esquema:
 
    Selecione **[!UICONTROL Salvar]**.
 
-1. Selecione o elemento raiz do esquema que exibe o nome dele e selecione a opção **[!UICONTROL Perfil]**.
+1. (Opcional) Se quiser integrar o Customer Journey Analytics com a RTCDP, selecione o elemento raiz do esquema que exibe o nome do esquema e selecione a opção **[!UICONTROL Perfil]**.
 
    Você deve habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
@@ -124,7 +122,7 @@ Para criar um esquema:
 
    >[!IMPORTANT]
    >
-   >    Depois de salvar um esquema ativado para perfil, ele não pode mais ser desativado para perfil.
+   >Depois que você ativa um esquema para perfil, ele não pode ser desativado para perfil.
 
    ![Habilitar esquema para perfil](./assets/enable-for-profile.png)
 
@@ -148,5 +146,5 @@ Para criar um esquema:
 
    Consulte [Criar e editar esquemas na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR) para obter mais informações sobre a adição e remoção de grupos de campos e campos individuais a um esquema.
 
-1. Continue seguindo as etapas de atualização que foram geradas dinamicamente para sua organização do [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
 
