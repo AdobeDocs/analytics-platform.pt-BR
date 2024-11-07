@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ad51c3cab669121e270603e133d53b6c97be8846
+source-git-commit: b9fd070c03df2947947227feb2de9cc7a5baf2c7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4173'
+ht-degree: 70%
 
 ---
 
@@ -115,7 +115,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | **Junho de 2023** | |
 | Análise de vários canais e compilação | Em antecipação às próximas alterações que habilitarão a compilação e para esclarecer ainda mais como a análise de vários canais pode ser elevada usando a compilação, a documentação relacionada a esta funcionalidade foi editada para se referir à [análise de vários canais](../use-cases/cross-channel/cross-channel.md) como um recurso e caso de uso do Customer Journey Analytics e à [compilação](../stitching/overview.md) como uma funcionalidade importante para alcançar esse objetivo. |
 | Acesso do Power BI e do Tableau às visualizações de dados do Customer Journey Analytics | A extensão Customer Journey Analytics BI permite o acesso SQL a visualizações de dados definidas no Customer Journey Analytics. [Saiba mais](/help/data-views/bi-extension.md) |
-| Visualizações de dados do Adobe Journey Optimizer | Admins do Customer Journey Analytics têm acesso a algumas visualizações de dados adicionais, chamadas de “Visualização de dados do AJO (nome da sandbox)”. [Saiba mais](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/reporting-configuration). |
+| Visualizações de dados do Adobe Journey Optimizer | Admins do Customer Journey Analytics têm acesso a algumas visualizações de dados adicionais, chamadas de “Visualização de dados do AJO (nome da sandbox)”. [Saiba mais](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration). |
 | Conversão de moeda | Atualização da documentação sobre compatibilidade com [conversão de moeda](../data-views/component-settings/format.md#currency). |
 | Atualizações de métricas calculadas | As seguintes atualizações foram feitas na documentação das métricas calculadas para alinhá-la à funcionalidade atual do Customer Journey Analytics: <ul><li>Atualização da lista de [métricas calculadas padrão](/help/components/calc-metrics/default-calcmetrics.md) disponível no Customer Journey Analytics</li><li>Atualização dos procedimentos e capturas de tela em vários artigos de métricas calculadas </li></ul> |
 | **Maio de 2023** | |
