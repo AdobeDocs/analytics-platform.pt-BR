@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: dcb01aa4ca885e00c5fe8b4c3373f0b57bace1e4
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 88%
    + [Visão geral da assimilação de dados](../data-ingestion/data-ingestion.md)
    + Assimilar e usar guias de início rápido{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
-      + Edge Network Experience Platform {#edge-network}
+      + Experience Platform Edge Network {#edge-network}
          + [SDK da Web](../data-ingestion/aepwebsdk.md)
          + [SDK móvel](../data-ingestion/aepmobilesdk.md)
          + [API do servidor](../data-ingestion/serverapi.md)
@@ -217,7 +217,7 @@ ht-degree: 88%
       + [Técnicas estatísticas](../analysis-workspace/c-forecast/statistics-forecasting.md)
    + [Índice ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Preferências do usuário](../analysis-workspace/user-preferences.md)
-   + Perguntas frequentes sobre o Workspace e muito mais {#workspace-faq}
+   + Perguntas frequentes sobre o Workspace e mais {#workspace-faq}
       + [Perguntas frequentes](../analysis-workspace/workspace-faq/faq.md)
       + [Mensagens de erro](../analysis-workspace/workspace-faq/error-messages.md)
       + [Limitações](../analysis-workspace/workspace-faq/aw-limitations.md)
@@ -241,7 +241,7 @@ ht-degree: 88%
    + [Frequência](../guided-analysis/types/frequency.md)
    + [Funil](../guided-analysis/types/funnel.md)
    + [Crescimento líquido](../guided-analysis/types/net-growth.md)
-   + [Impacto da versão](../guided-analysis/types/release-impact.md)
+   + [Impacto do lançamento](../guided-analysis/types/release-impact.md)
    + [Retenção](../guided-analysis/types/retention.md)
    + [Linha do tempo](../guided-analysis/types/timeline.md)
    + [Tendências](../guided-analysis/types/trends.md)
@@ -372,9 +372,9 @@ ht-degree: 88%
    + [Casos de uso do Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Dados do Google Analytics {#ga}
       + [Migrar dados do Google Analytics](../use-cases/ga/overview.md)
-      + [Assimilar dados históricos de Google Analytics](../use-cases/ga/backfill.md)
-      + [Configurar transmissão de dados do Google Analytics](../use-cases/ga/streaming.md)
-      + [Relatório sobre dados do Google Analytics](../use-cases/ga/report.md)
+      + [Assimilar dados históricos do Google Analytics](../use-cases/ga/backfill.md)
+      + [Configurar dados de transmissão do Google Analytics ](../use-cases/ga/streaming.md)
+      + [Relatório de dados do Google Analytics](../use-cases/ga/report.md)
    + Ingestão de dados {#data-ingestion}
       + [Assimilar e usar dados do Marketo Engage](../use-cases/data-ingestion/marketo.md)
       + [Assimilar e use públicos-alvo da Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
@@ -382,7 +382,7 @@ ht-degree: 88%
       + [Casos de uso de visualizações de dados](/help/use-cases/data-views/data-views-usecases.md)
       + [Uso de dimensões e métricas de ligação](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [Usar dados de resumo](/help/use-cases/data-views/summary-data.md)
-      + [Casos de uso de extensão do BI](/help/use-cases/data-views/bi-extension-usecases.md)
+      + [Casos de uso da extensão do BI](/help/use-cases/data-views/bi-extension-usecases.md)
    + Exportação de dados {#data-export}
       + [Visão geral](../use-cases/data-export/overview.md)
       + [Extensão BI](../use-cases/data-export/bi-extension.md)
@@ -409,7 +409,7 @@ ht-degree: 88%
 
 + Solução de problemas {#troubleshooting}
    + [Comparar dados](../troubleshooting/compare.md)
-   + [Consistência de métricas e públicos](../troubleshooting/consistency-rcdp-cja.md)
+   + [Consistência de métricas e públicos-alvo](../troubleshooting/consistency-rcdp-cja.md)
    + [Falta de permissões](../troubleshooting/lack-of-permissions.md)
 
 + Notas técnicas {#technotes}
