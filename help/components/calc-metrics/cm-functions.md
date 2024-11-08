@@ -5,16 +5,16 @@ feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: 1a84fc71eb29ceabf3a3c5c3e333b78b882ea966
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1185'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
 # Funções básicas
 
 
-O [Construtor de métricas calculadas](cm-workflow/cm-build-metrics.md) permite aplicar funções matemáticas e estatísticas. Este artigo documenta a lista alfabética das funções e suas definições.
+O [Construtor de métricas calculadas](cm-workflow/cm-build-metrics.md) permite aplicar funções matemáticas e estatísticas. Este artigo documenta uma lista em ordem alfabética das funções e suas definições.
 
 >[!NOTE]
 >
@@ -26,84 +26,84 @@ O [Construtor de métricas calculadas](cm-workflow/cm-build-metrics.md) permite 
 
 Uma função de tabela exibe um resultado igual para cada linha da tabela. Uma função de linha exibe um resultado diferente para cada linha da tabela.
 
-Quando aplicável e relevante, uma função é anotada com o tipo de função: [!BADGE Tabela]{type="Neutral"}[!BADGE Linha]{type="Neutral"}
+Onde aplicável e relevante, uma função é anotada com o tipo de função: [!BADGE Tabela]{type="Neutral"}[!BADGE Linha]{type="Neutral"}
 
-## O que significa o parâmetro include-zeros?
+## O que significa o parâmetro “incluir zeros”?
 
-Informa se os zeros devem ou não ser incluídos no cálculo. Às vezes zero significa *nada*, mas às vezes é importante.
+Informa se os zeros devem ou não ser incluídos no cálculo. Às vezes, zero significa *nada*, mas em alguns casos, pode ser importante.
 
-Por exemplo, se você tiver uma métrica Receita e, em seguida, adicionar uma métrica Exibições de página ao relatório, haverá de repente mais linhas para a sua receita, que são todas zero. Você provavelmente não quer que essa métrica adicional afete qualquer **[MEAN](cm-functions.md#mean)**, **[ROW MINIMUM](cm-functions.md#row-min)**, **[QUARTILE](cm-functions.md#quartile)** e mais cálculos que você tenha na coluna de receita. Nesse caso, você verificaria o parâmetro `include-zeros`.
+Por exemplo, se você possuir uma métrica Receita e adicionar a métrica Visualizações de página ao relatório, aparecerão mais linhas com valores iguais a zero na sua receita. Você provavelmente não vai querer que essa métrica adicional afete qualquer **[MÉDIA](cm-functions.md#mean)**, **[MÍNIMO DA LINHA](cm-functions.md#row-min)**, **[QUARTIL](cm-functions.md#quartile)** e outros cálculos que você tenha na coluna receita. Neste caso, você deverá marcar o parâmetro `include-zeros`.
 
-Um cenário alternativo é que você tem duas métricas de interesse e uma tem uma média ou um mínimo mais alto porque algumas linhas são zeros.  Nesse caso, você pode optar por não marcar o parâmetro para incluir zeros
+Um cenário alternativo é o que você tem duas métricas de interesse e uma tem uma média ou um mínimo mais alto porque algumas das linhas são zeros.  Nesse caso, você pode optar por não marcar o parâmetro para incluir zeros
 
 
 
 ## Valor absoluto
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VALOR ABSOLUTO(métrica)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
 [!BADGE Linha]{type="Neutral"}
 
 | Argumento | Descrição |
 |---|---|
-| métrica | A métrica para a qual você deseja calcular o valor absoluto. |
+| métrica | A métrica para a qual você deseja obter o valor absoluto. |
 
 
 ## Máximo da coluna
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COLUNA MÁXIMA(métrica, include_zeros)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
 Retorna o maior valor em um conjunto de elementos de dimensão para uma coluna de métrica. MAXV avalia verticalmente em uma única coluna (métrica) nos elementos da dimensão.
 
 | Argumento | Descrição |
 |---|---|
-| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+| métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
 ## Mínimo da coluna
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COLUNA MÍNIMA(métrica, include_zeros)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
 Retorna o menor valor em um conjunto de elementos de dimensão para uma coluna de métrica. MINV avalia verticalmente em uma única coluna (métrica) nos elementos da dimensão.
 
 | Argumento | Descrição |
 |---|---|
-| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+| métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
 ## Soma da coluna
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL SOMA(métrica) DA COLUNA]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
-Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elementos de uma dimensão).
+Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elementos de uma dimensão)
 
 | Argumento | Descrição |
 |---|---|
-| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+| métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 
 
 ## Contagem
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL CONTAGEM(métrica)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
 [!BADGE Tabela]{type="Neutral"}
 
 | Argumento | Descrição |
 |---|---|
-| métrica | A métrica que você deseja contar. |
+| métrica | A métrica que deseja contar. |
 
 
 ## Expoente
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTE(métrica)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
 [!BADGE Linha]{type="Neutral"}
 
 | Argumento | Descrição |
 |---|---|
-| métrica | O expoente aplicado à base e. |
+| métrica | O exponente aplicado à base e. |
 
 
 ## Média
@@ -114,11 +114,11 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 
 | Argumento | Descrição |
 |---|---|
-| métrica | A métrica para a qual você deseja calcular a média. |
+| métrica | A métrica para a qual você deseja obter a média. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
-## Medianiz
+## Mediana
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
@@ -126,7 +126,7 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 
 | Argumento | Descrição |
 |---|---|
-| métrica | A métrica para a qual você deseja calcular a mediana. |
+| métrica | A métrica para a qual você deseja obter a mediana. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
@@ -134,7 +134,7 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MODULO(metric_X, metric_Y)]**
 
-Retorna o restante após a divisão de x por y usando a divisão euclidiana.
+Retorna o resto após dividir x por y usando a divisão euclidiana.
 
 | Argumento | Descrição |
 |---|---|
@@ -151,7 +151,7 @@ MODULO(-4,3) = -1
 MODULO(-3,3) = 0
 ```
 
-Para garantir que você sempre obtenha um número positivo, use
+Para obter sempre um número positivo, use
 
 ```
 MODULO(MODULO(x,y)+y,y)
@@ -173,39 +173,39 @@ MODULO(MODULO(x,y)+y,y)
 
 ## Operador de potência
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL OPERADOR DE ENERGIA(metric_X, metrix_Y)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL POWER OPERATOR(metric_X, metrix_Y)]**
 
 Retorna x elevado à potência y.
 
 | Argumento | Descrição |
 |---|---|
-| metric_X | A métrica que você gostaria de elevar para a potência metric_Y. |
-| metric_Y | A potência para a qual você gostaria de elevar metric_X. |
+| metric_X | A métrica que você deseja elevar à potência metric_Y. |
+| metric_Y | A potência à qual você deseja elevar a metric_X. |
 
 
 ## Quartil
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTIL(métrica, quartil, include_zeros)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"}[COLUMN MINIMUM](#column-minimum), [MEDIAN](#median) e [COLUMN MAXIMUM](#column-maximum) retornam o mesmo valor que [QUARTILE](#quartile) quando o quartil é igual a `0` (zero), `2` e `4`, respectivamente.
+[!BADGE Tabela]{type="Neutral"}[MÍNIMO DA COLUNA](#column-minimum), [MEDIANA](#median) e [MÁXIMO DA COLUNA](#column-maximum) retornam o mesmo valor que [QUARTIL](#quartile) quando o quartil é igual a `0` (zero), `2` e `4`, respectivamente.
 
 | Argumento | Descrição |
 |---|---|
-| métrica | A métrica para a qual você deseja calcular o valor do quartil. |
-| quartil | Indica qual valor do quartil retornar. |
+| métrica | A métrica para a qual você deseja obter o valor do quartil. |
+| quartil | Indica qual valor de quartil retornar. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
 ## Arredondar
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(métrica, número)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL ROUND(metric, number)]**
 
-Arredondar sem um parâmetro *number* é o mesmo que arredondar com um parâmetro *number* de 0, ou seja, arredondar para o número inteiro mais próximo.  Com um parâmetro *number*, ROUND retorna os dígitos *number* à direita do decimal.  Se *number* for negativo, ele retornará 0 à esquerda do decimal.
+Arredondar sem um parâmetro *numérico* é igual a arredondar com um parâmetro *numérico* de 0, ou seja, arredondar para o número inteiro mais próximo. Com um parâmetro *numérico*, ARREDONDAR retorna os dígitos *numéricos* à direita do separador decimal.  Se o *número* for negativo, retornará zeros à esquerda do separador decimal.
 
 | Argumento | Descrição |
 |---|---|
 | métrica | A métrica que deseja arredondar. |
-| number | Quantos dígitos à direita do decimal devem ser retornados. (Se negativo, retorna zeros à esquerda do decimal). |
+| número | Quantos dígitos à direita do separador decimal devem retornar. (Se negativo, retorna zeros à esquerda do separador decimal). |
 
 ### Exemplos
 
@@ -219,66 +219,66 @@ ROUND( 314.15, -2) = 300
 
 ## Contagem de linhas
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL CONTAGEM DE LINHAS()]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL ROW COUNT()]**
 
-Retorna a contagem de linhas referente a uma determinada coluna (o número de elementos únicos reportados em uma dimensão). *Únicos excedidos* são contados como 1.
+Retorna a contagem de linhas referente a uma determinada coluna (o número de elementos únicos relatados em uma dimensão). *Únicos excedidos* é contado como 1.
 
 
 ## Máx. da linha
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MAX(metric, include_zeros) de LINHA]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MAX(metric, include_zeros)]**
 
-Máximo de colunas de cada linha.
+O máximo de colunas de cada linha.
 
 | Argumento | Descrição |
 |---|---|
-| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+| métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 ## Mín. da linha
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MÍN. LINHA(métrica, include_zeros)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL ROW MIN(metric, include_zeros)]**
 
-Mínimo de colunas de cada linha.
+O mínimo de colunas de cada linha.
 
 | Argumento | Descrição |
 |---|---|
-| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+| métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
 
 ## Soma da linha
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL SOMA DA LINHA(métrica, include_zeros)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL ROW SUM(metric, include_zeros)]**
 
-Soma das colunas de cada linha.
+A soma das colunas em cada linha.
 
 | Argumento | Descrição |
 |---|---|
-| métrica | Exige pelo menos uma métrica, mas pode usar qualquer número de métricas como parâmetros. |
+| métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 
 
 ## Raiz quadrada
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL RAIZ QUADRADA(métrica, include_zeros)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
 [!BADGE Linha]{type="Neutral"}
 
 | Argumento | Descrição |
 |---|---|
-| métrica | A métrica para a qual você deseja calcular a raiz quadrada. |
+| métrica | A métrica para a qual você deseja obter a raiz quadrada. |
 
 
 ## Desvio padrão
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL DESVIO PADRÃO(métrica, include_zeros)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
 [!BADGE Tabela]{type="Neutral"}
 
 | Argumento | Descrição |
 |---|---|
-| | A métrica para a qual você deseja calcular o desvio padrão. |
+| | A métrica para a qual você deseja obter o desvio padrão. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
@@ -290,18 +290,18 @@ Soma das colunas de cada linha.
 
 | Argumento | Descrição |
 |---|---|
-| métrica | A métrica para a qual você deseja calcular a variação. |
+| métrica | A métrica para a qual você deseja obter a variação. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
-A equação de VARIANCE é:
+A equação de VARIAÇÃO é:
 
 ![](assets/variance_eq.png){width="100"}
 
-Onde *x* é a média da amostra, [MEAN(*metric*)](#mean) e *n* é o tamanho da amostra.
+Onde *x* é a média da amostra, [MEAN(*metric*)](#mean), e *n* é o tamanho da amostra.
 
 
-Para calcular uma variação, você observa uma coluna inteira de números. Nessa lista de números, calcule primeiro a média. Depois de obter a média, você percorre cada entrada e faz o seguinte:
+Para calcular uma variação, considere uma coluna inteira de números. Nessa lista de números, calcule primeiro a média. Após obter a média, analise cada entrada e faça o seguinte:
 
 1. Subtraia a média do número.
 
@@ -309,7 +309,7 @@ Para calcular uma variação, você observa uma coluna inteira de números. Ness
 
 1. Adicione-o ao total.
 
-Depois de iterar em toda a coluna, você tem um único total. Depois, divida o total pelo número de itens na coluna. Esse número é a variação da coluna. É um número único. No entanto, é exibido como uma coluna de números.
+Quando você iterar por toda a coluna, terá um total único. Depois, divida o total pelo número de itens na coluna. Esse número é a variação da coluna. É um número único. No entanto, é exibido como uma coluna de números.
 
 No exemplo da seguinte coluna de três itens:
 
@@ -319,7 +319,7 @@ No exemplo da seguinte coluna de três itens:
 | 2 |
 | 3 |
 
-A média dessa coluna é 2. A variação da coluna é ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3.
+A média dessa coluna é 2. A variação da coluna será ((1 - 2)<sup>2</sup> + (2 - 2)<sup>2</sup> + (3 - 2)<sup>2</sup>/3) = 2/3.
 
 
 

@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3747'
 ht-degree: 100%
 
@@ -154,7 +154,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_personID"
->title="ID de pessoa"
+>title="ID da pessoa"
 >abstract="Selecione uma ID de pessoa entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
@@ -200,7 +200,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Chave correspondente"
->abstract="Selecione como fazer a associação: com base em uma chave correspondente ou em um container correspondente.<br/><br/>**[!UICONTROL Chave correspondente ]**: selecione um campo para associar com um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Container correspondente]**: selecione um container para associar com um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não configurou um ou mais containers."
+>abstract="Selecione como associar: com base em uma chave correspondente ou em um container correspondente.<br/><br/>**[!UICONTROL Chave correspondente ]**: selecione o campo a ser associado a um dos conjuntos de dados de evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Container correspondente]**: selecione um container a ser usado para associar a um dos conjuntos de dados do evento. Se a lista estiver vazia, você provavelmente não configurou um ou mais containers."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -307,7 +307,7 @@ Para cada conjunto de dados adicionado a essa conexão, o [!UICONTROL Customer J
 
 Existem diferentes tipos de conjunto de dados: dados de [!UICONTROL Evento], [!UICONTROL Perfil], [!UICONTROL Pesquisa] e [!UICONTROL Resumo].
 
-| Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID de pessoa |
+| Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID da pessoa |
 |---|---|---|---|---|
 | **[!UICONTROL Evento]** | Dados que representam eventos no tempo. Por exemplo, visitas à web, interações, transações, dados de POS, dados de pesquisa, dados de impressão publicitária e assim por diante. Esses dados podem ser dados típicos de fluxo de cliques, com uma ID de cliente ou uma ID de cookie e um registro de data e hora. Os dados do evento fornecem flexibilidade em relação a qual ID é usada como a ID da pessoa. | Isso é automaticamente definido para o campo de carimbo de data/hora padrão em esquemas baseados em eventos na [!UICONTROL Experience Platform]. | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Série de tempo”. Exemplos incluem “Evento de experiência XDM” ou “Evento de decisão XDM”. | Você pode escolher a ID de pessoa que deseja incluir. Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas identidades pode ser usada como a ID de pessoa. Os exemplos incluem: ID de cookie, ID compilada, ID de usuário, código de rastreamento etc. |
 | **[!UICONTROL Pesquisa]** | Você pode adicionar conjuntos de dados como pesquisas de campos em todos os tipos de conjuntos de dados: conjuntos de dados de perfil, pesquisa e evento (este último sempre foi compatível). Esse recurso adicional expande a capacidade de o Customer Journey Analytics aceitar modelos de dados complexos, incluindo B2B. Esses dados são usados para procurar valores ou chaves encontrados nos dados de evento, perfil ou pesquisa. Você pode adicionar até dois níveis de pesquisas. (Observe que [campos derivados](/help/data-views/derived-fields/derived-fields.md) não podem ser usados como chaves correspondentes para pesquisas em conexões.) Por exemplo, você pode fazer o upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte o [Exemplo de B2B](/help/use-cases/b2b/example.md). | N/D | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Gravar”, exceto a classe “Perfil individual XDM”. | N/D |

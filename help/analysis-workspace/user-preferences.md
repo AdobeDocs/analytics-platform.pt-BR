@@ -6,9 +6,9 @@ exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
 source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3466'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -229,7 +229,7 @@ Selecione os títulos da seção vinculada para obter mais informações e conte
 | **Gráficos empilhados** | | |
 | | 100% empilhada | Essa configuração de visualizações de área empilhada, barra empilhada ou barra horizontal empilhada transforma o gráfico em uma visualização “100% empilhada”.  <p>Para obter mais informações, consulte [Barra e Barra empilhada](/help/analysis-workspace/visualizations/bar.md).</p> |
 | **[Histograma](/help/analysis-workspace/visualizations/histogram.md)** | | |
-| | Número de grupos | Escolha o número de intervalos de datas (intervalos) na visualização. O número máximo de grupos é 50. <p>Para obter mais informações, consulte [Histograma](/help/analysis-workspace/visualizations/histogram.md).</p> |
+| | Número de grupos | Escolha o número de intervalos de datas (compartimentos) na visualização. O número máximo de grupos é 50. <p>Para obter mais informações, consulte [Histograma](/help/analysis-workspace/visualizations/histogram.md).</p> |
 | | Método de contagem | Escolha entre as seguintes opções: <ul><li>Ocorrência</li><li>Sessão</li><li>Pessoa</li></ul> <p>Por exemplo, quando usado em conjunto com visualizações de página, você pode escolher visualizações de página por visitante, por visita ou por evento. Para ocorrências, “Ocorrências” é usada como a métrica do eixo “y” na tabela de forma livre.</p> |
 | **[Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md)** | | |
 | | Valor | <!-- Seem to be basically the same options as in "Number value options" --> <ul><li>Mudança percentual</li><li>Diferença bruta</li></ul> |
