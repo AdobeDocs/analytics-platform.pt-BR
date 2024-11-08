@@ -7,14 +7,14 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 1fda8abfe4c4b5d9d4a2ddf99b0bb83db45539e3
+source-git-commit: adc9e888eece72031ed234e634b206475d1539d7
 workflow-type: tm+mt
-source-wordcount: '8807'
+source-wordcount: '9056'
 ht-degree: 1%
 
 ---
 
-# Casos de uso de extensão do BI
+# Casos de uso da extensão do BI
 
 Este artigo documenta como realizar vários casos de uso usando a extensão Customer Journey Analytics BI. Para cada caso de uso, explica a funcionalidade Customer Journey Analytics, seguida pelos detalhes de cada uma das ferramentas de BI compatíveis:
 
@@ -1478,6 +1478,60 @@ As métricas calculadas definidas no Customer Journey Analytics são identificad
 **Intervalos de datas**
 Intervalos de datas definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL dataterangeName]**. Ao usar um campo **[!UICONTROL dataterangeName]**, você pode especificar qual intervalo de datas usar.
 
+**Transformações personalizadas**
+A Área de Trabalho do Power BI fornece funcionalidade de transformação personalizada usando [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Como exemplo, você deseja executar o caso de uso classificado Dimensão única com nomes de produtos em minúsculas. Para fazer isso:
+
+1. Na exibição de relatório, selecione a visualização de barra.
+1. Selecione product_name no painel Dados.
+1. Selecione Nova coluna na barra de ferramentas.
+1. No editor de fórmulas, defina uma nova coluna chamada `product_name_lower`, como `product_name_lower = LOWER('public.cc_data_view[product_name])`.
+   ![Transformação da Área de Trabalho do Power BI para Inferior](assets/uc14-powerbi-transformation.png)
+1. Selecione a nova coluna product_name_lower no painel Dados em vez da coluna product_name.
+1. Selecione Relatório como Tabela de ![Mais](/help/assets/icons/More.svg) na visualização da tabela.
+
+   A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
+   ![Final de Transformação do Power BI Desktop](assets/uc14-powerbi-final.png)
+
+A transformação personalizada resulta em atualizações nas consultas SQL. Consulte o uso da função `lower` no exemplo SQL abaixo:
+
+```sql
+select "_"."product_name_lower",
+    "_"."a0",
+    "_"."a1"
+from 
+(
+    select "rows"."product_name_lower" as "product_name_lower",
+        sum("rows"."purchases") as "a0",
+        sum("rows"."purchase_revenue") as "a1"
+    from 
+    (
+        select "_"."daterange" as "daterange",
+            "_"."product_name" as "product_name",
+            "_"."purchase_revenue" as "purchase_revenue",
+            "_"."purchases" as "purchases",
+            lower("_"."product_name") as "product_name_lower"
+        from 
+        (
+            select "_"."daterange",
+                "_"."product_name",
+                "_"."purchase_revenue",
+                "_"."purchases"
+            from 
+            (
+                select "daterange",
+                    "product_name",
+                    "purchase_revenue",
+                    "purchases"
+                from "public"."cc_data_view" "$Table"
+            ) "_"
+            where ("_"."daterange" < date '2024-01-01' and "_"."daterange" >= date '2023-01-01') and ("_"."product_name" in ('4G Cellular Trail Camera', '4K Wildlife Trail Camera', 'Wireless Trail Camera', '8-Person Cabin Tent', '20MP No-Glow Trail Camera', 'HD Wildlife Camera', '4-Season Mountaineering Tent', 'Trail Camera', '16MP Trail Camera with Solar Panel', '10-Person Family Tent'))
+        ) "_"
+    ) "rows"
+    group by "product_name_lower"
+) "_"
+where not "_"."a0" is null or not "_"."a1" is null
+limit 1000001
+```
 
 >[!TAB Tableau Desktop]
 
@@ -1498,6 +1552,34 @@ As métricas calculadas definidas no Customer Journey Analytics são identificad
 
 **Intervalos de datas**
 Intervalos de datas definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL Nome do intervalo de datas]**. Ao usar um campo **[!UICONTROL Nome do intervalo de datas]**, você pode especificar qual intervalo de datas usar.
+
+**Transformações personalizadas**
+O Tableau Desktop fornece funcionalidade de transformação personalizada usando [Campos Calculados](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Como exemplo, você deseja executar o caso de uso classificado Dimensão única com nomes de produtos em minúsculas. Para fazer isso:
+
+1. Selecione **[!UICONTROL Análise]** > **[!UICONTROL Criar campo calculado]** no menu principal.
+   1. Defina o **[!UICONTROL Nome do Produto em Minúsculas]** usando a função `LOWER([Product Name])`.
+      ![Campo Calculado do Tableau](assets/uc14-tableau-calculated-field.png)
+   1. Selecione **[!UICONTROL OK]**.
+1. Selecione a planilha de **[!UICONTROL Dados]**.
+   1. Arraste **[!UICONTROL Nome do Produto em Minúsculas]** de **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
+   1. Remover **[!UICONTROL Nome do Produto]** de **[!UICONTROL Linhas]**.
+1. Selecione a exibição **[!UICONTROL Painel 1]**.
+
+A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+
+![Tableau Desktop após transformação](assets/uc14-tableau-final.png)
+
+A transformação personalizada resulta em atualizações nas consultas SQL. Consulte o uso da função `LOWER` no exemplo SQL abaixo:
+
+```sql
+SELECT LOWER(CAST(CAST("cc_data_view"."product_name" AS TEXT) AS TEXT)) AS "Calculation_1562467608097775616",
+  SUM("cc_data_view"."purchase_revenue") AS "sum:purchase_revenue:ok",
+  SUM("cc_data_view"."purchases") AS "sum:purchases:ok"
+FROM "public"."cc_data_view" "cc_data_view"
+WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."daterange" <= (DATE '2023-12-31')))
+GROUP BY 1
+HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM("cc_data_view"."purchase_revenue") <= 2000000.00000002))
+```
 
 >[!ENDTABS]
 
@@ -1540,7 +1622,7 @@ As seguintes visualizações de Customer Journey Analytics estão em uma experi�
 | ![BarraDeGráficosHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barra horizontal empilhada](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Gráfico de barras empilhadas e gráfico de barras 100% empilhadas](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
 | ![Ramificação3](/help/assets/icons/Branch3.svg) | [tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [Árvore de decomposição](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
 | ![MétricasChave](/help/assets/icons/KeyMetrics.svg) | [Resumo da métrica principal](/help/analysis-workspace/visualizations/key-metric.md) |  |
-| ![TendênciaGráfica](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | [Gráfico de linhas](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#line-charts) |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | [Gráfico de linhas](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#line-charts) |
 | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | [Gráfico de dispersão](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#scatter) |
 | ![RegraDePágina](/help/assets/icons/PageRule.svg) | [Cabeçalho da seção](/help/analysis-workspace/visualizations/section-header.md) | [Caixa de texto](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
 | ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Cartão [1}](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards) |
@@ -1548,7 +1630,6 @@ As seguintes visualizações de Customer Journey Analytics estão em uma experi�
 | ![Texto](/help/assets/icons/Text.svg) | [Texto](/help/analysis-workspace/visualizations/text.md) | [Caixa de texto](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p> | [Mapas de árvore](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#treemaps) |
 | ![Tipo](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
-
 
 >[!TAB Tableau Desktop]
 
@@ -1572,7 +1653,7 @@ As seguintes visualizações de Customer Journey Analytics estão em uma experi�
 | ![BarraDeGráficosHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barra horizontal empilhada](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Gráfico de Barras](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
 | ![Ramificação3](/help/assets/icons/Branch3.svg) | [tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | |
 | ![MétricasChave](/help/assets/icons/KeyMetrics.svg) | [Resumo da métrica principal](/help/analysis-workspace/visualizations/key-metric.md) |  |
-| ![TendênciaGráfica](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | [Gráfico de Linhas](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_line.htm) |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | [Gráfico de Linhas](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_line.htm) |
 | ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | [Gráfico de dispersão](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_scatter.htm) |
 | ![RegraDePágina](/help/assets/icons/PageRule.svg) | [Cabeçalho da seção](/help/analysis-workspace/visualizations/section-header.md) |  |
 | ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | |
