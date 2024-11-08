@@ -7,16 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: adc9e888eece72031ed234e634b206475d1539d7
+source-git-commit: 7fc625fcca51deebf860829ac67ca1b88b64cd1a
 workflow-type: tm+mt
-source-wordcount: '9056'
+source-wordcount: '9048'
 ht-degree: 1%
 
 ---
 
 # Casos de uso da extensão do BI
 
-Este artigo documenta como realizar vários casos de uso usando a extensão Customer Journey Analytics BI. Para cada caso de uso, explica a funcionalidade Customer Journey Analytics, seguida pelos detalhes de cada uma das ferramentas de BI compatíveis:
+Este artigo documenta como realizar vários casos de uso usando a extensão Customer Journey Analytics BI. Cada caso de uso explica a funcionalidade Customer Journey Analytics, seguida de detalhes para cada uma das ferramentas de BI compatíveis:
 
 * Power BI **Área de Trabalho**. A versão usada é 2.137.1102.0 de 64 bits (outubro de 2024).
 * **Tableau Desktop**. A versão usada é 2024.1.5 (20241.24.0705.0334) de 64 bits.
@@ -1479,7 +1479,7 @@ As métricas calculadas definidas no Customer Journey Analytics são identificad
 Intervalos de datas definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL dataterangeName]**. Ao usar um campo **[!UICONTROL dataterangeName]**, você pode especificar qual intervalo de datas usar.
 
 **Transformações personalizadas**
-A Área de Trabalho do Power BI fornece funcionalidade de transformação personalizada usando [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Como exemplo, você deseja executar o caso de uso classificado Dimensão única com nomes de produtos em minúsculas. Para fazer isso:
+A Área de Trabalho do Power BI fornece funcionalidade de transformação personalizada usando [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Como exemplo, você deseja executar o caso de uso classificado Dimensão única com nomes de produtos em minúsculas.
 
 1. Na exibição de relatório, selecione a visualização de barra.
 1. Selecione product_name no painel Dados.
@@ -1554,7 +1554,7 @@ As métricas calculadas definidas no Customer Journey Analytics são identificad
 Intervalos de datas definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL Nome do intervalo de datas]**. Ao usar um campo **[!UICONTROL Nome do intervalo de datas]**, você pode especificar qual intervalo de datas usar.
 
 **Transformações personalizadas**
-O Tableau Desktop fornece funcionalidade de transformação personalizada usando [Campos Calculados](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Como exemplo, você deseja executar o caso de uso classificado Dimensão única com nomes de produtos em minúsculas. Para fazer isso:
+O Tableau Desktop fornece funcionalidade de transformação personalizada usando [Campos Calculados](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Como exemplo, você deseja executar o caso de uso classificado Dimensão única com nomes de produtos em minúsculas.
 
 1. Selecione **[!UICONTROL Análise]** > **[!UICONTROL Criar campo calculado]** no menu principal.
    1. Defina o **[!UICONTROL Nome do Produto em Minúsculas]** usando a função `LOWER([Product Name])`.
