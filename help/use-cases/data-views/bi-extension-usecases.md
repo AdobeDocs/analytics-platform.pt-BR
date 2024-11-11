@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 7fc625fcca51deebf860829ac67ca1b88b64cd1a
+source-git-commit: ae07aa8a275a37f88d7626bac2f59e21d4c40e5a
 workflow-type: tm+mt
-source-wordcount: '9048'
+source-wordcount: '9752'
 ht-degree: 1%
 
 ---
@@ -23,31 +23,38 @@ Este artigo documenta como realizar vários casos de uso usando a extensão Cust
 
 Os seguintes casos de uso estão documentados:
 
-* [Conectar e listar visualizações de dados](#connect-and-validate)
-* [Tendência diária](#daily-trend)
-* [Tendência horária](#hourly-trend)
-* [Tendência mensal](#monthly-trend)
-* [Dimensão única classificada](#single-dimension-ranked)
-* [Várias dimensões classificadas](#multiple-dimension-ranked)
-* [Contar valores de dimensão distintos](#count-distinct-dimension-values)
-* [Usar nomes de intervalo de datas para filtrar](#use-date-range-names-to-filter)
-* [Usar nomes de filtro para filtrar](#use-filter-names-to-filter)
-* [Usar valores de dimensão para filtrar](#use-dimension-values-to-filter)
-* [Classificar](#sort)
-* [Limites](#limits)
-* [Para NIVELAR ou não](#to-flatten-or-not)
-* [Transformações](#transformations)
-* [Visualizações](#visualizations)
+* **Conectar**
+   * [Conectar e listar visualizações de dados](#connect-and-validate)
+   * [Para NIVELAR ou não](#to-flatten-or-not)
 
-O primeiro caso de uso se concentra em como conectar ferramentas de BI usando a extensão Customer Journey Analytics BI.
+* **Relatório e análise**
+   * [Tendência diária](#daily-trend)
+   * [Tendência horária](#hourly-trend)
+   * [Tendência mensal](#monthly-trend)
+   * [Dimensão única classificada](#single-dimension-ranked)
+   * [Várias dimensões classificadas](#multiple-dimension-ranked)
+   * [Contar valores de dimensão distintos](#count-distinct-dimension-values)
+   * [Usar nomes de intervalo de datas para filtrar](#use-date-range-names-to-filter)
+   * [Usar nomes de filtro para filtrar](#use-filter-names-to-filter)
+   * [Usar valores de dimensão para filtrar](#use-dimension-values-to-filter)
+   * [Classificar](#sort)
+   * [Limites](#limits)
 
-Nos casos de uso de 2 a 12, as instruções sobre como realizar visualizações de Customer Journey Analytics semelhantes nas ferramentas de BI atualmente compatíveis estão disponíveis.
+* **Entender**
 
-Os casos de uso 13 a 15 fornecem mais detalhes sobre:
+   * [Transformações](#transformations)
+   * [Visualizações](#visualizations)
+   * [Avisos](#caveats)
 
-* Diferentes maneiras de se conectar às ferramentas de BI.
+O caso de uso **connect** foca em como conectar ferramentas de BI usando a extensão Customer Journey Analytics BI.
+
+Os casos de uso do **relatório e análise** instruem como realizar visualizações de Customer Journey Analytics semelhantes nas ferramentas de BI atualmente suportadas.
+
+Os casos de uso **entender** fornecem mais detalhes sobre:
+
 * Transformações que ocorrem quando você usa uma ferramenta de BI para relatar e analisar.
 * Semelhanças e diferenças de visualização entre as ferramentas Customer Journey Analytics e BI.
+* Avisos sobre cada uma das ferramentas de BI que você deve estar ciente.
 
 
 ## Conectar e validar
@@ -147,6 +154,57 @@ Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apro
       1. Arraste a entrada **[!UICONTROL cc_data_view]** e solte a entrada na exibição principal onde se lê **[!UICONTROL Arraste tabelas]** aqui.
    1. A janela principal exibe detalhes da exibição de dados do **[!UICONTROL cc_data_view]**.
       ![Tableau Conectado](assets/tableau-validation.png)
+
+>[!ENDTABS]
+
++++
+
+## Para NIVELAR ou não
+
+Nesse caso de uso, você quer entender se deve usar um parâmetro `FLATTEN` adicional para o banco de dados quando se conectar ao Customer Journey Analytics usando a extensão BI.
+
++++ Customer Journey Analytics
+
+Customer Journey Analytics fornece informações sobre como se conectar na interface Experience Platform.
+
+1. Navegue até a sandbox do Experience Platform.
+1. Selecione ![Consultas](/help/assets/icons/DataSearch.svg) **[!UICONTROL Consultas]** no painel esquerdo.
+1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
+1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
+
+![Consultar credenciais de serviço](assets/queryservice-credentials.png)
+
+
++++
+
++++ Ferramentas de BI
+
+>[!PREREQUISITES]
+>
+>Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso. Consulte a seção de ferramentas de BI para saber quais opções de parâmetro `FLATTEN` explícitas são necessárias para uma conexão adequada.
+>
+
+>[!BEGINTABS]
+
+>Power BI [!TAB Área de Trabalho]
+
+A Área de Trabalho do Power BI oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`.
+
+| parâmetro FLATTEN | Exemplo | Suportado | Observações |
+|---|---|:---:|---|
+| Nenhum | `prod:cja` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![FecharCírculo](/help/assets/icons/CloseCircle.svg) | O Power BI Desktop exibe um erro: **[!UICONTROL Não foi possível autenticar com as credenciais fornecidas. Tente novamente.]** |
+
+>[!TAB Tableau Desktop]
+
+O Tableau Desktop oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`.
+
+| parâmetro FLATTEN | Exemplo | Suportado | Observações |
+|---|---|:---:|---|
+| Nenhum | `prod:cja` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
 
 >[!ENDTABS]
 
@@ -862,8 +920,8 @@ Observe como o intervalo de datas definido na visualização da tabela de forma 
 1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
    1. Arraste a entrada **[!UICONTROL Nome do Intervalo de Datas]** da lista **[!UICONTROL Tabelas]** na prateleira **[!UICONTROL Filtros]**.
    1. Na caixa de diálogo **[!UICONTROL Filtrar \[Nome do Intervalo de Datas\]]**, certifique-se de que **[!UICONTROL Selecionar da lista]** esteja selecionado e selecione **[!UICONTROL Ano Passado 2023]** na lista. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste a entrada **[!UICONTROL Daterangemonth]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Linhas]**. Selecione **[!UICONTROL Daterangemonth]** e selecione **[!UICONTROL Month]**. O valor muda para **[!UICONTROL MONTH(Daterangemonth)]**.
-   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
+   1. Arraste a entrada **[!UICONTROL Daterangemonth]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**. Selecione **[!UICONTROL Daterangemonth]** e selecione **[!UICONTROL Month]**. O valor muda para **[!UICONTROL MONTH(Daterangemonth)]**.
+   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
    1. Selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
    1. Selecione **[!UICONTROL Trocar Linhas e Colunas]** na barra de ferramentas.
    1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
@@ -938,7 +996,7 @@ Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para es
    1. Na caixa de diálogo **[!UICONTROL Filtrar Campo \[Intervalo de Datas\]]**, selecione **[!UICONTROL Intervalo de Datas]** e selecione **[!UICONTROL Avançar >]**.
    1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione `01/01/2023` - `01/02/2023`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
    1. Arraste **[!UICONTROL Nome do Produto]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Linhas]**.
-   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
+   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
    1. Selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
    1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
 
@@ -1014,7 +1072,7 @@ Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para es
    1. Na caixa de diálogo **[!UICONTROL Filtrar Campo \[Intervalo de Datas\]]**, selecione **[!UICONTROL Intervalo de Datas]** e selecione **[!UICONTROL Avançar >]**.
    1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione `01/01/2023` - `1/2/2023`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
    1. Arraste **[!UICONTROL Nome do Produto]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Linhas]**.
-   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
+   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
    1. Selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
    1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
 
@@ -1168,7 +1226,7 @@ limit 1000001
    1. Na caixa de diálogo **[!UICONTROL Filtrar Campo \[Intervalo de Datas\]]**, selecione **[!UICONTROL Intervalo de Datas]** e selecione **[!UICONTROL Avançar >]**.
    1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione `01/01/2023` - `1/2/2023`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
    1. Arraste **[!UICONTROL Nome do Produto]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
-   1. Arraste a entrada **[!UICONTROL Compras]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Colunas]**. O valor muda para **[!UICONTROL SUM(Purchases)]**.
+   1. Arraste a entrada **[!UICONTROL Compras]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**. O valor muda para **[!UICONTROL SUM(Purchases)]**.
    1. Arraste a entrada **[!UICONTROL Receita de Compra]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**, ao lado de **[!UICONTROL SOMA(Compras)]**. O valor muda para **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
    1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
@@ -1333,7 +1391,7 @@ limit 1000001
    1. Na caixa de diálogo **[!UICONTROL Filtrar Campo \[Intervalo de Datas\]]**, selecione **[!UICONTROL Intervalo de Datas]** e selecione **[!UICONTROL Avançar >]**.
    1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas]]**, selecione **[!UICONTROL Datas relativas]**, selecione **[!UICONTROL Anos]** e selecione **[!UICONTROL Anos anteriores]**. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
    1. Arraste **[!UICONTROL Nome do Produto]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Linhas]**.
-   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
+   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
    1. Selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
    1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
    1. Selecione o **[!UICONTROL Nome do Produto]** em **[!UICONTROL Linhas]**. Selecione **[!UICONTROL Filtro]** no menu suspenso.
@@ -1383,60 +1441,6 @@ GROUP BY 1
 >[!ENDTABS]
 
 +++
-
-
-## Para NIVELAR ou não
-
-Você quer entender se precisa usar um parâmetro `FLATTEN` adicional para o banco de dados quando se conectar ao Customer Journey Analytics usando a extensão BI.
-
-+++ Customer Journey Analytics
-
-Customer Journey Analytics fornece informações sobre como se conectar na interface Experience Platform.
-
-1. Navegue até a sandbox do Experience Platform.
-1. Selecione ![Consultas](/help/assets/icons/DataSearch.svg) **[!UICONTROL Consultas]** no painel esquerdo.
-1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
-1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
-
-![Consultar credenciais de serviço](assets/queryservice-credentials.png)
-
-
-+++
-
-+++ Ferramentas de BI
-
->[!PREREQUISITES]
->
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso. Consulte a seção de ferramentas de BI para saber quais opções de parâmetro `FLATTEN` explícitas são necessárias para uma conexão adequada.
->
-
->[!BEGINTABS]
-
->Power BI [!TAB Área de Trabalho]
-
-A Área de Trabalho do Power BI oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`.
-
-| parâmetro FLATTEN | Exemplo | Suportado | Observações |
-|---|---|:---:|---|
-| Nenhum | `prod:cja` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![FecharCírculo](/help/assets/icons/CloseCircle.svg) | O Power BI Desktop exibe um erro: **[!UICONTROL Não foi possível autenticar com as credenciais fornecidas. Tente novamente.]** |
-
->[!TAB Tableau Desktop]
-
-O Tableau Desktop oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`.
-
-| parâmetro FLATTEN | Exemplo | Suportado | Observações |
-|---|---|:---:|---|
-| Nenhum | `prod:cja` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
-
->[!ENDTABS]
-
-+++
-
-
 
 ## Transformações
 
@@ -1603,7 +1607,9 @@ O Customer Journey Analytics tem várias visualizações. Consulte [Visualizaç�
 
 >Power BI [!TAB Área de Trabalho]
 
-As seguintes visualizações de Customer Journey Analytics estão em uma experiência semelhante disponível no Power BI Desktop.
+### Comparação
+
+Para a maioria das visualizações de Customer Journey Analytics, o Power BI Desktop oferece experiências equivalentes. Consulte a tabela abaixo.
 
 | Ícone | Visualização de Customer Journey Analytics | Visualização do Power BI Desktop |
 | :---: | --- | ---| 
@@ -1631,10 +1637,62 @@ As seguintes visualizações de Customer Journey Analytics estão em uma experi�
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p> | [Mapas de árvore](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#treemaps) |
 | ![Tipo](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
 
+
+### Detalhar
+
+O Power BI oferece suporte ao [modo de análise](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) para explorar detalhes detalhados sobre determinadas visualizações. No exemplo abaixo, você analisa a receita de compra para categorias de produto. No menu de contexto de uma barra que representa uma categoria de produto, você pode selecionar **[!UICONTROL Detalhar]**.
+
+![detalhamento do Power BI](assets/uc15-powerbi-drilldown.png)
+
+O detalhamento atualizará a visualização com receita de compra para produtos dentro da categoria de produto selecionada.
+
+![Power BI](assets/uc15-powerbi-drillup.png)
+
+O detalhamento resulta na seguinte consulta SQL que usa uma cláusula `WHERE`:
+
+```sql
+select "_"."product_category" as "c25",
+    "_"."product_name" as "c26",
+    "_"."a0" as "a0"
+from 
+(
+    select "_"."product_category",
+        "_"."product_name",
+        "_"."a0"
+    from 
+    (
+        select "_"."product_category",
+            "_"."product_name",
+            "_"."a0"
+        from 
+        (
+            select "rows"."product_category" as "product_category",
+                "rows"."product_name" as "product_name",
+                sum("rows"."purchase_revenue") as "a0"
+            from 
+            (
+                select "_"."product_category",
+                    "_"."product_name",
+                    "_"."purchase_revenue"
+                from "public"."cc_data_view" "_"
+                where ("_"."daterange" >= date '2023-01-01' and "_"."product_category" = 'Fishing') and "_"."daterange" < date '2024-01-01'
+            ) "rows"
+            group by "product_category",
+                "product_name"
+        ) "_"
+        where not "_"."a0" is null
+    ) "_"
+) "_"
+order by "_"."product_category",
+        "_"."product_name"
+limit 1001
+```
+
 >[!TAB Tableau Desktop]
 
+### Comparação
 
-As seguintes visualizações de Customer Journey Analytics estão em uma experiência semelhante disponível no Tableau.
+Para a maioria das visualizações de Customer Journey Analytics, o Tableau oferece experiências equivalentes. Consulte a tabela abaixo.
 
 | Ícone | Visualização de Customer Journey Analytics | Visualização do Power BI Desktop |
 | :---: | --- | ---| 
@@ -1661,6 +1719,67 @@ As seguintes visualizações de Customer Journey Analytics estão em uma experi�
 | ![Texto](/help/assets/icons/Text.svg) | [Texto](/help/analysis-workspace/visualizations/text.md) | |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p> | [Mapas de árvore](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_treemap.htm) |
 | ![Tipo](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
+
+
+### Detalhar
+
+Tableau dá suporte ao [modo de análise](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) por meio de [hierarquias](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). No exemplo abaixo, você cria uma hierarquia ao selecionar o campo Nome do Produto em Tabelas e arrastá-lo para cima de Categoria do Produto. Em seguida, no menu de contexto de uma barra que representa uma categoria de produto, você pode selecionar **[!UICONTROL + Detalhar]**.
+
+![Detalhamento do Tableau](assets/uc15-tableau-drilldown.png)
+
+O detalhamento atualizará a visualização com receita de compra para produtos dentro da categoria de produto selecionada.
+
+![Avaliação minuciosa do Tableau](assets/uc15-tableau-drillup.png)
+
+O drill-down resulta na seguinte consulta SQL que está usando uma cláusula GROUP BY:
+
+```sql
+SELECT CAST("cc_data_view"."product_category" AS TEXT) AS "product_category",
+  CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
+  SUM("cc_data_view"."purchase_revenue") AS "sum:purchase_revenue:ok"
+FROM "public"."cc_data_view" "cc_data_view"
+WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND ("cc_data_view"."daterange" < (TIMESTAMP '2024-01-01 00:00:00.000')))
+GROUP BY 1,
+  2
+```
+
+A consulta **não** limita os resultados à categoria de produto selecionada; somente a visualização mostra a categoria de produto selecionada.
+
+![Avaliação minuciosa do Tableau](assets/uc15-tableau-drillup2.png)
+
+Como alternativa, você pode criar um painel detalhado no qual um visual é o resultado da seleção em outro visual. No exemplo abaixo, a visualização **[!UICONTROL Categorias de produto]** é usada como filtro para atualizar a tabela **[!UICONTROL Nomes de produto]**. Este filtro de visualização é somente para cliente e não resulta em uma consulta SQL adicional.
+
+![Filtro de visualização do Tableau](assets/uc15-tableau-visualizationfilter.png)
+
+
+>[!ENDTABS]
+
++++
+
+
+## Avisos
+
+Cada uma das ferramentas de BI compatíveis tem algumas limitações ao trabalhar com a extensão de BI Customer Journey Analytics.
+
++++ Ferramentas de BI
+
+>[!BEGINTABS]
+
+>Power BI [!TAB Área de Trabalho]
+
+* A filtragem avançada de intervalo de datas do Power BI Desktop é exclusiva.  Para a data de término, é necessário selecionar um após o dia em que deseja criar o relatório. Por exemplo, **[!UICONTROL está em ou depois de]** `1/1/2023` **[!UICONTROL e antes de]** `1/2/2023`.
+* O padrão da Área de Trabalho do Power BI é **[!UICONTROL Importar]** quando você cria uma conexão. Use a **[!UICONTROL Consulta Direta]**.
+* O Power BI Desktop expõe as transformações de dados por meio do Power Query.  O Power Query funciona principalmente com conexões do tipo Importar, de modo que muitas transformações aplicadas, como funções de data ou sequência de caracteres, gerarão um erro informando que você precisa alternar para uma conexão do tipo Importar.  Se for necessário transformar dados no momento da consulta, você deverá usar dimensões e métricas derivadas para que o Power BI não precise fazer as transformações em si.
+* A Área de Trabalho do Power BI não entende como lidar com colunas do tipo date-time, portanto, as dimensões **[!UICONTROL daterange *X *]**, como**[!UICONTROL daterangehour ]**e**[!UICONTROL daterangeminute ]**, não são suportadas.
+* O Power BI Desktop, por padrão, tenta fazer várias conexões usando mais sessões do Serviço de consulta.  Você deve acessar as configurações do Power BI para o seu projeto e desativar consultas paralelas.
+* O Power BI Desktop faz toda a classificação e limitação no lado do cliente e também tem diferentes semânticas para a filtragem *X* superior, que inclui valores vinculados, de modo que você não pode criar exatamente a mesma classificação e limitação que pode fazer no Analysis Workspace.
+* Versões anteriores do Power BI Desktop quebram as fontes de dados PostgreSQL de outubro de 2024. Certifique-se de usar a versão mencionada neste artigo.
+
+>[!TAB Tableau Desktop]
+
+* A filtragem de Intervalo de Datas do Tableau Desktop é exclusiva. Para a data de término, é necessário selecionar um após o dia em que deseja criar o relatório.
+* Por padrão, quando você adiciona uma dimensão de data ou hora como **[!UICONTROL Daterangemonth]** às linhas de uma planilha, o Tableau Desktop ajustará o campo em uma função **[!UICONTROL YEAR()]**.  Para obter o que deseja, selecione essa dimensão e, no menu suspenso, selecione a função de data que deseja usar.  Por exemplo, altere **[!UICONTROL Year]** para **[!UICONTROL Month]** quando estiver tentando usar **[!UICONTROL Daterangemonth]**.
+* Limitar os resultados ao *X* Superior não é óbvio no Tableau Desktop. É possível limitar os resultados explicitamente ou usando um campo calculado e a função **[!UICONTROL INDEX()]**.  Adicionar um filtro *X* Superior a uma dimensão gera um SQL complexo usando uma junção interna que não tem suporte.
 
 >[!ENDTABS]
 
