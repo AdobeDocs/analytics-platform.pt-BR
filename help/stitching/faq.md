@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 80d5a864e063911b46ff248f2ea89c1ed0d14e32
+source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 29%
+source-wordcount: '1871'
+ht-degree: 26%
 
 ---
 
@@ -70,6 +70,80 @@ A análise entre canais é um caso de uso específico do Customer Journey Analyt
 +++**Como a compilação lida com solicitações de privacidade?**
 
 O Adobe lida com solicitações de privacidade de acordo com as leis locais e internacionais. A Adobe oferece o [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e rechaveados.
+
+>[!IMPORTANT]
+>
+>O processo de descompilação, como parte das solicitações de privacidade, muda no início de 2025. O processo de descompilação atual recompila os eventos usando a versão mais recente de identidades conhecidas. Essa reatribuição de eventos para outra identidade pode ter consequências legais indesejáveis. Para solucionar essas preocupações, a partir de 2025, o novo processo de descompilação atualiza os eventos que são objeto da solicitação de privacidade com a ID persistente.
+> 
+
+Para ilustrar, imagine os seguintes dados para identidades, eventos antes e depois da compilação.
+
+| Mapa de identidade | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+|---|---|---|---|---|---|---|
+|  | 1 | ts1 | 123 | ecid | Bob | CustId |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Conjunto de dados de eventos | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| | 2 | ts1 | 123 | ecid | Bob | CustId |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Conjunto de dados compilados | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório | ID com título | Namespace compilado |
+|---|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | Bob | CustId |
+| | 2 | ts1 | 123 | ecid | Bob | CustId | Bob | CustId |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
+
+
+**Processo atual para solicitação de privacidade**
+
+Quando uma solicitação de privacidade é recebida para o cliente com CustID Bob, as linhas com entradas tachadas são excluídas. Outros eventos são corrigidos usando o mapa de identidade. Por exemplo, a primeira ID compilada no conjunto de dados compilado é atualizada para **Alex**.
+
+| Mapa de identidade | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+|:---:|---|---|---|---|---|---|
+| ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Conjunto de dados de eventos | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Conjunto de dados compilados | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório | ID com título | Namespace compilado |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **Alex** | CustId |
+| ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
+
+
+**Novo processo para solicitação de privacidade**
+
+Quando uma solicitação de privacidade é recebida para o cliente com CustID Bob, as linhas com entradas tachadas são excluídas. Outros eventos são corrigidos usando a ID persistente. Por exemplo, a primeira ID compilada no conjunto de dados compilado é atualizada para **123**.
+
+| Mapa de identidade | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+|:---:|---|---|---|---|---|---|
+| ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+|  | 2 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Conjunto de dados de eventos | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+|:---:|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | |
+| ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId |
+
+
+| Conjunto de dados compilados | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório | ID com título | Namespace compilado |
+|:---:|---|---|---|---|---|---|---|---|
+| | 1 | ts0 | 123 | ecid | | | **123** | ecid |
+| ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
+| | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
 
 +++
 
