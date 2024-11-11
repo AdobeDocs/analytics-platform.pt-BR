@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 7a5fa07e3bafa3da5b044ce37299196a006f1d64
+source-git-commit: 2f78905c2a1e94174a52269becc15474baf59f71
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 100%
+source-wordcount: '224'
+ht-degree: 69%
 
 ---
 
@@ -24,18 +24,20 @@ Veja um vídeo com uma visão geral:
 
 ## Permissões necessárias
 
-Para criar uma conexão do Customer Journey Analytics, você precisa das seguintes permissões no [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html):
+Para criar uma conexão Customer Journey Analytics, você precisa das seguintes permissões. Para obter detalhes adicionais sobre permissões, consulte a documentação do [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/manage-permissions-and-roles.ug.html) e das [Permissões do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
-Adobe Experience Platform:
+### No Adobe Admin Console:
+
+* Customer Journey Analytics: Administrador de produto
+* Adobe Experience Platform: adicionado ao Perfil de produto chamado *AEP-Padrão-Todos-Usuários*
+
+### Nas Permissões Do Adobe Experience Platform:
 
 * Modelagem de dados: Exibir esquemas, Gerenciar esquemas
 * Gerenciamento de dados: exibir conjuntos de dados, gerenciar conjuntos de dados
 * Assimilação de dados: Gerenciar fontes
-* Exibir namespaces de identidade
-
-Customer Journey Analytics
-
-* Acesso do administrador do produto
+* Identity Management: Exibir namespaces de identidade
+* Sandboxes: sandboxes usadas em conexões Customer Journey Analytics relacionadas
 
 >[!IMPORTANT]
 >
