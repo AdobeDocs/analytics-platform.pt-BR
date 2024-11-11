@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 6fe081690782272f550c8f9c33dfd9ae6b227d13
+exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
+source-git-commit: ae2f9220829c897c8f1e0425ec192035dcf0097d
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1490'
 ht-degree: 7%
 
 ---
@@ -27,7 +28,7 @@ Dependendo de vários fatores, como linha do tempo e restrições de recursos, a
 >
 >No entanto, dependendo de vários fatores, como linha do tempo e restrições de recursos, as etapas de atualização recomendadas podem não ser práticas para sua organização. Nesse caso, use o [questionário de atualização do Adobe Analytics para Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/) para gerar dinamicamente etapas de atualização personalizadas para as circunstâncias exclusivas de sua organização.
 
-As etapas recomendadas ao atualizar do Adobe Analytics para o Customer Journey Analytics são uma nova implementação do SDK da Web do Experience Platform, que é o método de coleta de dados preferido para o Customer Journey Analytics. Juntamente com o SDK da Web, a Adobe também recomenda usar o conector de origem do Analytics para reter dados históricos do Adobe Analytics e executar uma comparação de dados lado a lado.
+O processo recomendado para atualizar do Adobe Analytics para o Customer Journey Analytics é uma nova implementação do SDK da Web do Experience Platform, que é o método de coleta de dados preferido para o Customer Journey Analytics. Juntamente com o SDK da Web, o Adobe também recomenda o uso do conector de origem do Analytics para ajudar na transição para o Customer Journey Analytics. Use o conector de origem do Analytics para reter dados históricos do Adobe Analytics e executar uma comparação de dados lado a lado.
 
 Após a transição completa para o Customer Journey Analytics, o conector de origem do Analytics pode ser desativado e o SDK da Web do Experience Platform pode ser usado exclusivamente.
 
@@ -79,7 +80,7 @@ Cada etapa fornece uma explicação de alto nível de um processo mais detalhado
 
 1. (Opcional) Se você usar dados de classificação no Adobe Analytics, poderá adicionar dados de classificação ao seu conjunto de dados no Customer Journey Analytics.
 
-   Crie um conjunto de dados de pesquisa para cada dimensão que contenha dados de classificação.
+   Para fazer isso, [crie um conjunto de dados de pesquisa para cada dimensão que contenha os dados de classificação](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
 
 1. Para implementações do Adobe Analytics que usam o AppMeasurement ou a extensão (marcas) do Analytics, [crie uma sequência de dados no Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
@@ -93,7 +94,7 @@ Cada etapa fornece uma explicação de alto nível de um processo mais detalhado
 
    Para obter mais informações, consulte [Usar um conector de origem](/help/data-ingestion/sources.md#use-a-source-connector) em [Assimilar e usar dados usando conectores de origem](/help/data-ingestion/sources.md).
 
-1. Expanda a seção que descreve a implementação do Customer Journey Analytics desejado e conclua as etapas associadas:
+1. Expanda a seção que descreve como você deseja implementar o SDK da Web do Experience Platform para sua implementação de Customer Journey Analytics e, em seguida, conclua as etapas associadas:
 
    +++Implementação manual (arquivo JS)
 
@@ -105,13 +106,11 @@ Cada etapa fornece uma explicação de alto nível de um processo mais detalhado
 
    +++Marcas
 
-   1. [Crie uma propriedade de marca na coleção de dados da Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/quick-start#create-a-property).
+   1. [Implemente a marca do carregador em seu site](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md).
 
-   1. Adicione a extensão SDK da Web da Adobe Experience Platform.
+   1. [Crie uma propriedade de marca e adicione a extensão SDK da Web da Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md).
 
-   1. Implemente a tag de carregamento no site.
-
-   1. Adicione a lógica da coleção de dados XDM à tag.
+   1. [Adicionar lógica de coleta de dados XDM à sua marca](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md).
 
 +++
 
@@ -220,12 +219,3 @@ Generic upgrade steps are also available.
    The Analytics source connector as a stand-alone implementation is not a recommended long-term method for using Customer Journey Analytics. This is because of high latency, cluttered and complex schemas, reliance on Adobe Analytics nomenclature (prop, eVar, and so forth), and difficulty in eventually moving from the source connector to the recommended Web SDK implementation. 
    
 -->
-
-
-
-
-
-
-
-
-
