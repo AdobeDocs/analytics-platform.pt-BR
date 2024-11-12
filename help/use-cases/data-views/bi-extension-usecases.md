@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 552b7fe20759036a0919fa622019e87b2722bb31
+source-git-commit: 749fbd5ae370995d772b6880c9949cf14042ed8c
 workflow-type: tm+mt
 source-wordcount: '9752'
 ht-degree: 1%
@@ -89,35 +89,35 @@ Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apro
    1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
    1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
 
-      ![Consultar credenciais de serviço](assets/queryservice-credentials.png){width="100" zoomable="yes"}
+      ![Consultar credenciais de serviço](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Inicie o Power BI Desktop.
    1. Na interface principal, selecione **[!UICONTROL Obter dados de outras fontes]**.
    1. Na caixa de diálogo **[!UICONTROL Obter Dados]**:
-      ![Banco de dados PowerBI PostgreSQL](assets/powerbi-postgresql.png)
+      ![Banco de dados PowerBI PostgreSQL](assets/powerbi-postgresql.png){zoomable="yes"}
       1. Procure e selecione **[!UICONTROL banco de dados PostgreSQL]**.
       1. Selecione **[!UICONTROL Conectar]**.
    1. Na caixa de diálogo **[!UICONTROL Banco de dados PostgreSQL]**:
-      ![Configurações do Servidor e do Banco de Dados do Power BI Desktop](assets/powerbi-serverdatabase.png)
+      ![Configurações do Servidor e do Banco de Dados do Power BI Desktop](assets/powerbi-serverdatabase.png){zoomable="yes"}
       1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar os valores de **[!UICONTROL Host]** e **[!UICONTROL Porta]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform, separadas por `:` como o valor do **[!UICONTROL Servidor]**. Por exemplo: `examplecompany.platform-query.adobe.io:80`.
       1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o valor de **[!UICONTROL Banco de Dados]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform. Adicione `?FLATTEN` ao valor que você colar. Por exemplo, `prod:cja?FLATTEN`.
       1. Selecione **[!UICONTROL DirectQuery]** como o **[!UICONTROL modo de conectividade de dados]**.
       1. Selecione **[!UICONTROL OK]**.
    1. Na caixa de diálogo **[!UICONTROL Banco de dados PostgreSQL]** - **[!UICONTROL Banco de Dados]**:
-      ![Usuário e Senha do Power BI Desktop](assets/powerbi-userpassword.png)
+      ![Usuário e Senha do Power BI Desktop](assets/powerbi-userpassword.png){zoomable="yes"}
       1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar os valores de **[!UICONTROL Nome de Usuário]** e **[!UICONTROL Senha]** do painel **[!UICONTROL Credenciais em Expiração]** do Experience Platform no campo **[!UICONTROL Nome de usuário]** e **[!UICONTROL Senha]**. **** Se você estiver usando uma [credencial sem expiração](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use a senha da sua credencial sem expiração.
       1. Verifique se o menu suspenso de **[!UICONTROL Selecione a qual nível aplicar essas configurações]** está definido como o **[!UICONTROL Servidor]** definido anteriormente.
       1. Selecione **[!UICONTROL Conectar]**.
    1. Na caixa de diálogo **[!UICONTROL Navegador]**, as visualizações de dados são recuperadas. Essa recuperação pode levar algum tempo. Depois de recuperado, você verá o seguinte no Power BI Desktop.
-      ![Dados de Carregamento do Power BI](assets/powerbi-navigator-load.png)
+      ![Dados de Carregamento do Power BI](assets/powerbi-navigator-load.png){zoomable="yes"}
       1. Selecione **[!UICONTROL public.cc_data_view]** na lista do painel esquerdo.
       1. Existem duas opções:
          1. Selecione **[!UICONTROL Carregar]** para continuar e concluir a instalação.
          1. Selecione **[!UICONTROL Transformar Dados]**. Você verá uma caixa de diálogo em que poderá aplicar transformações opcionalmente como parte da configuração.
-            ![Dados de transformação da área de trabalho do Power BI](assets/powerbi-transform-data.png)
+            ![Dados de transformação da área de trabalho do Power BI](assets/powerbi-transform-data.png){zoomable="yes"}
             * Selecione **[!UICONTROL Fechar e Aplicar]**.
    1. Após alguns instantes, **[!UICONTROL public.cc_data_view]** será exibido no painel **[!UICONTROL Dados]**. Selecione ![ChevronRight](/help/assets/icons/ChevronRight.svg) para mostrar dimensões e métricas.
-      Power BI ![Dados do Servidor de Desktop Carregados](assets/powerbi-navigator-loaded.png)
+      Power BI ![Dados do Servidor de Desktop Carregados](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop]
@@ -133,9 +133,9 @@ Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apro
 
 1. Inicie o Tableau.
    1. Selecione **[!UICONTROL PostgreSQL]** no painel esquerdo abaixo de **[!UICONTROL Para um Servidor]**. Se não estiver disponível, selecione **[!UICONTROL Mais...]** e selecione **[!UICONTROL PostgreSQL]** nos **[!UICONTROL Conectores Instalados]**.
-      ![Conectores do Tableau](assets/tableau-connectors.png)
+      ![Conectores do Tableau](assets/tableau-connectors.png){zoomable="yes"}
    1. Na caixa de diálogo **[!UICONTROL PostgreSQL]**, na guia **[!UICONTROL General]**:
-      ![Caixa de diálogo Entrar do Tableau](assets/tableau-signin.png)
+      ![Caixa de diálogo Entrar do Tableau](assets/tableau-signin.png){zoomable="yes"}
       1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o **[!UICONTROL Host]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais de Expiração]** do Experience Platform para o **[!UICONTROL Servidor]**.
       1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar a **[!UICONTROL Porta]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais de Expiração]** do Experience Platform para a **[!UICONTROL Porta]**.
       1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o **[!UICONTROL Banco de Dados]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform para o **[!UICONTROL Banco de Dados]**. Adicione `%3FFLATTEN` ao valor que você colar. Por exemplo: `prod:cja%3FFLATTEN`.
@@ -150,10 +150,10 @@ Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apro
       * O nome da conexão, abaixo de **[!UICONTROL Conexões]**.
       * O nome do banco de dados, abaixo de **[!UICONTROL Banco de Dados]**.
       * Uma lista de tabelas, abaixo de **[!UICONTROL Tabela]**.
-        ![Tableau Conectado](assets/tableau-connected.png)
+        ![Tableau Conectado](assets/tableau-connected.png){zoomable="yes"}
       1. Arraste a entrada **[!UICONTROL cc_data_view]** e solte a entrada na exibição principal onde se lê **[!UICONTROL Arraste tabelas]** aqui.
    1. A janela principal exibe detalhes da exibição de dados do **[!UICONTROL cc_data_view]**.
-      ![Tableau Conectado](assets/tableau-validation.png)
+      ![Tableau Conectado](assets/tableau-validation.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -172,7 +172,7 @@ Customer Journey Analytics fornece informações sobre como se conectar na inter
 1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
 1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
 
-![Consultar credenciais de serviço](assets/queryservice-credentials.png)
+![Consultar credenciais de serviço](assets/queryservice-credentials.png){zoomable="yes"}
 
 
 +++
@@ -219,7 +219,7 @@ Nesse caso de uso, é necessário exibir uma tabela e uma visualização de linh
 
 Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
 
-![Painel Tendência diária do Customer Journey Analytics](assets/cja_daily_trend.png)
+![Painel Tendência diária do Customer Journey Analytics](assets/cja_daily_trend.png){zoomable="yes"}
 
 +++
 
@@ -253,7 +253,7 @@ Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
 
    Uma visualização de gráfico de linhas substitui a tabela enquanto usa os mesmos dados que a tabela. A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Filtro de intervalo de datas do Caso de Uso de Área de Trabalho do Power BI 2](assets/uc2-pbi-daterange.png)
+   ![Filtro de intervalo de datas do Caso de Uso de Área de Trabalho do Power BI 2](assets/uc2-pbi-daterange.png){zoomable="yes"}
 
 1. Na visualização do Gráfico de linha:
 
@@ -262,7 +262,7 @@ Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
 
    A visualização principal é atualizada para mostrar uma visualização de linha e uma tabela. A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Visualização da Tendência Diária Final do Caso de Uso do Power BI 2](assets/uc2-pbi-final.png)
+   ![Visualização da Tendência Diária Final do Caso de Uso do Power BI 2](assets/uc2-pbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -271,7 +271,7 @@ Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
    1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
    1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas]]**, selecione **[!UICONTROL Intervalo de datas]** e especifique um período de `01/01/2023` a `01/02/2023`.
 
-      ![Filtro do Tableau Desktop](assets/uc2-tableau-filter.png)
+      ![Filtro do Tableau Desktop](assets/uc2-tableau-filter.png){zoomable="yes"}
 
    1. Arraste e solte **[!UICONTROL Daterangeday]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**.
       * Selecione **[!UICONTROL Dia]** no menu suspenso **[!UICONTROL Dia_da_Data]**, para que o valor seja atualizado para **[!UICONTROL Dia(Dia_da_Data)]**.
@@ -281,7 +281,7 @@ Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Gráfico do Tableau Desktop](assets/uc2-tableau-graph.png)
+      ![Gráfico do Tableau Desktop](assets/uc2-tableau-graph.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Duplicar]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para criar uma segunda planilha.
 1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para renomear a planilha como `Graph`.
@@ -293,7 +293,7 @@ Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Dados do Tableau Desktop](assets/uc2-tableau-data.png)
+      ![Dados do Tableau Desktop](assets/uc2-tableau-data.png){zoomable="yes"}
 
 1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
    1. Arraste e solte a planilha **[!UICONTROL Gráfico]** da prateleira **[!UICONTROL Folhas]** no modo de exibição **[!UICONTROL Painel 1]** que lê *Folhas de soltar aqui*.
@@ -302,7 +302,7 @@ Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Tableau Desktop Dashboard 1](assets/uc2-tableau-dashboard.png)
+      ![Tableau Desktop Dashboard 1](assets/uc2-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -317,7 +317,7 @@ Nesse caso de uso, é desejável exibir uma tabela e uma visualização de linha
 
 Um exemplo de painel **[!UICONTROL Tendência por hora]** para o caso de uso:
 
-Customer Journey Analytics ![Visualizações de tendências por hora](assets/cja_hourly_trend.png)
+Customer Journey Analytics ![Visualizações de tendências por hora](assets/cja_hourly_trend.png){zoomable="yes"}
 
 +++
 
@@ -341,7 +341,7 @@ O ![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **não** entende como li
    1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
    1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas]]**, selecione **[!UICONTROL Intervalo de datas]** e especifique um período de `01/01/2023` a `02/01/2023`.
 
-      ![Filtro do Tableau Desktop](assets/uc3-tableau-filter.png)
+      ![Filtro do Tableau Desktop](assets/uc3-tableau-filter.png){zoomable="yes"}
 
    1. Arraste e solte **[!UICONTROL Daterangehour]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**.
       * Selecione **[!UICONTROL Mais]** > **[!UICONTROL Horas]** no menu suspenso **[!UICONTROL Daterangeday]**, para atualizar o valor para **[!UICONTROL HOUR(Daterangeday)]**.
@@ -351,7 +351,7 @@ O ![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **não** entende como li
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Gráfico do Tableau Desktop](assets/uc3-tableau-graph.png)
+      ![Gráfico do Tableau Desktop](assets/uc3-tableau-graph.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Duplicar]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para criar uma segunda planilha.
 1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para renomear a planilha como `Graph`.
@@ -363,7 +363,7 @@ O ![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **não** entende como li
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Dados do Tableau Desktop](assets/uc3-tableau-data.png)
+      ![Dados do Tableau Desktop](assets/uc3-tableau-data.png){zoomable="yes"}
 
 1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
    1. Arraste e solte a planilha **[!UICONTROL Gráfico]** da prateleira **[!UICONTROL Folhas]** no modo de exibição **[!UICONTROL Painel 1]** que lê *Folhas de soltar aqui*.
@@ -372,7 +372,7 @@ O ![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **não** entende como li
 
       A exibição do **[!UICONTROL Painel 1]** deve ser semelhante à mostrada abaixo.
 
-      ![Tableau Desktop Dashboard 1](assets/uc3-tableau-dashboard.png)
+      ![Tableau Desktop Dashboard 1](assets/uc3-tableau-dashboard.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -388,7 +388,7 @@ Nesse caso de uso, é necessário exibir uma tabela e uma visualização de linh
 
 Um exemplo de painel **[!UICONTROL Tendência mensal]** para o caso de uso:
 
-Customer Journey Analytics ![Visualização mensal da tendência](assets/cja_monthly_trend.png)
+Customer Journey Analytics ![Visualização mensal da tendência](assets/cja_monthly_trend.png){zoomable="yes"}
 
 +++
 
@@ -424,7 +424,7 @@ Customer Journey Analytics ![Visualização mensal da tendência](assets/cja_mon
 
    Uma visualização de gráfico de linhas substitui a tabela enquanto usa os mesmos dados que a tabela. A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Filtro de intervalo de datas do Caso de Uso de Área de Trabalho do Power BI 2](assets/uc4-pbi-filter-daterange.png)
+   ![Filtro de intervalo de datas do Caso de Uso de Área de Trabalho do Power BI 2](assets/uc4-pbi-filter-daterange.png){zoomable="yes"}
 
 1. Na visualização do Gráfico de linha:
 
@@ -433,7 +433,7 @@ Customer Journey Analytics ![Visualização mensal da tendência](assets/cja_mon
 
    A visualização principal é atualizada para mostrar uma visualização de linha e uma tabela. A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Visualização da Tendência Diária Final do Caso de Uso do Power BI 2](assets/uc4-pbi-filter-final.png)
+   ![Visualização da Tendência Diária Final do Caso de Uso do Power BI 2](assets/uc4-pbi-filter-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -442,7 +442,7 @@ Customer Journey Analytics ![Visualização mensal da tendência](assets/cja_mon
    1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
    1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas]]**, selecione **[!UICONTROL Intervalo de datas]** e especifique um período de `01/01/2023` a `01/01/2024`.
 
-      ![Filtro do Tableau Desktop](assets/uc4-tableau-filter.png)
+      ![Filtro do Tableau Desktop](assets/uc4-tableau-filter.png){zoomable="yes"}
 
    1. Arraste e solte **[!UICONTROL Daterangeday]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**.
       * Selecione **[!UICONTROL MÊS]** no menu suspenso **[!UICONTROL Dia_da_data]**, para que o valor seja atualizado para **[!UICONTROL MÊS(Dia_da_data)]**.
@@ -452,7 +452,7 @@ Customer Journey Analytics ![Visualização mensal da tendência](assets/cja_mon
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Gráfico do Tableau Desktop](assets/uc4-tableau-graph.png)
+      ![Gráfico do Tableau Desktop](assets/uc4-tableau-graph.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Duplicar]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para criar uma segunda planilha.
 1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para renomear a planilha como `Graph`.
@@ -464,7 +464,7 @@ Customer Journey Analytics ![Visualização mensal da tendência](assets/cja_mon
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Dados do Tableau Desktop](assets/uc4-tableau-data.png)
+      ![Dados do Tableau Desktop](assets/uc4-tableau-data.png){zoomable="yes"}
 
 1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
    1. Arraste e solte a planilha **[!UICONTROL Gráfico]** da prateleira **[!UICONTROL Folhas]** no modo de exibição **[!UICONTROL Painel 1]** que lê *Folhas de soltar aqui*.
@@ -473,7 +473,7 @@ Customer Journey Analytics ![Visualização mensal da tendência](assets/cja_mon
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Tableau Desktop Dashboard 1](assets/uc4-tableau-dashboard.png)
+      ![Tableau Desktop Dashboard 1](assets/uc4-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -488,7 +488,7 @@ Nesse caso de uso, é desejável exibir uma tabela e uma visualização de barra
 
 Um exemplo de painel **[!UICONTROL Dimension único classificado]** para o caso de uso:
 
-Customer Journey Analytics ![Visualização classificada de dimensão única](assets/cja-single-dimension-ranked.png)
+Customer Journey Analytics ![Visualização classificada de dimensão única](assets/cja-single-dimension-ranked.png){zoomable="yes"}
 +++
 
 +++ Ferramentas de BI
@@ -528,7 +528,7 @@ Customer Journey Analytics ![Visualização classificada de dimensão única](as
 
    1. Selecione **[!UICONTROL Sum of purchase_revenue]** para classificar os nomes de produtos em ordem de receita de compra decrescente. A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   Power BI ![Status da tabela do caso de uso da área de trabalho 5](assets/uc5-pbi-table.png)
+   Power BI ![Status da tabela do caso de uso da área de trabalho 5](assets/uc5-pbi-table.png){zoomable="yes"}
 
 1. No painel **[!UICONTROL Filtros]**:
 
@@ -550,7 +550,7 @@ Customer Journey Analytics ![Visualização classificada de dimensão única](as
 
    O gráfico de linhas e colunas empilhadas é atualizado. A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   Gráfico ![Caso de uso de desktop do Power BI 5](assets/uc5-pbi-chart.png)
+   Gráfico ![Caso de uso de desktop do Power BI 5](assets/uc5-pbi-chart.png){zoomable="yes"}
 
 1. Na visualização do gráfico de linhas e colunas empilhadas:
 
@@ -559,7 +559,7 @@ Customer Journey Analytics ![Visualização classificada de dimensão única](as
 
    A visualização principal é atualizada para mostrar uma visualização de linha e uma tabela.
 
-   ![Visualização da Tendência Diária Final do Caso de Uso do Power BI 2](assets/uc5-pbi-final.png)
+   ![Visualização da Tendência Diária Final do Caso de Uso do Power BI 2](assets/uc5-pbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -568,7 +568,7 @@ Customer Journey Analytics ![Visualização classificada de dimensão única](as
    1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
    1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas]]**, selecione **[!UICONTROL Intervalo de datas]** e especifique um período de `01/01/2023` a `31/12/2024`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
 
-      ![Filtro do Tableau Desktop](assets/uc5-tableau-filter.png)
+      ![Filtro do Tableau Desktop](assets/uc5-tableau-filter.png){zoomable="yes"}
 
    1. Arraste e solte o **[!UICONTROL Nome do Produto]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
    1. Arraste e solte **[!UICONTROL Compras]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
@@ -585,7 +585,7 @@ Customer Journey Analytics ![Visualização classificada de dimensão única](as
 
    A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-   ![Gráfico do Tableau Desktop](assets/uc5-tableau-graph.png)
+   ![Gráfico do Tableau Desktop](assets/uc5-tableau-graph.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Duplicar]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para criar uma segunda planilha.
 1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para renomear a planilha como `Data`.
@@ -597,7 +597,7 @@ Customer Journey Analytics ![Visualização classificada de dimensão única](as
 
    A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-   ![Dados do Tableau Desktop](assets/uc5-tableau-data.png)
+   ![Dados do Tableau Desktop](assets/uc5-tableau-data.png){zoomable="yes"}
 
 1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
    1. Arraste e solte a planilha **[!UICONTROL Gráfico]** da prateleira **[!UICONTROL Folhas]** no modo de exibição **[!UICONTROL Painel 1]** que lê *Folhas de soltar aqui*.
@@ -606,7 +606,7 @@ Customer Journey Analytics ![Visualização classificada de dimensão única](as
 
    A exibição do **[!UICONTROL Painel 1]** deve ser semelhante à mostrada abaixo.
 
-   ![Tableau Desktop Dashboard 1](assets/uc5-tableau-dashboard.png)
+   ![Tableau Desktop Dashboard 1](assets/uc5-tableau-dashboard.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -621,7 +621,7 @@ Nesse caso de uso, você deseja exibir uma tabela que detalha a receita de compr
 
 Um exemplo de painel **[!UICONTROL Vários Dimension Classificados]** para o caso de uso:
 
-Customer Journey Analytics ![Painel de Dimension múltiplos classificados](assets/cja-multiple-dimension-ranked.png)
+Customer Journey Analytics ![Painel de Dimension múltiplos classificados](assets/cja-multiple-dimension-ranked.png){zoomable="yes"}
 
 +++
 
@@ -663,7 +663,7 @@ Customer Journey Analytics ![Painel de Dimension múltiplos classificados](asset
 
 1. Para detalhar cada categoria na tabela, selecione **[!UICONTROL +]** no nível da categoria do produto. A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Tabela de matriz classificada de vários Dimension da área de trabalho do Power BI](assets/uc6-powerbi-data.png)
+   ![Tabela de matriz classificada de vários Dimension da área de trabalho do Power BI](assets/uc6-powerbi-data.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Página Inicial]** no menu superior e selecione **[!UICONTROL Novo visual]**. Um novo visual é adicionado ao relatório.
 
@@ -677,7 +677,7 @@ Customer Journey Analytics ![Painel de Dimension múltiplos classificados](asset
 
    A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Mapa de árvore classificado de vários Dimension do Power BI](assets/uc6-powerbi-treemap.png)
+   ![Mapa de árvore classificado de vários Dimension do Power BI](assets/uc6-powerbi-treemap.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Página Inicial]** no menu superior e selecione **[!UICONTROL Novo visual]**. Um novo visual é adicionado ao relatório.
 
@@ -694,7 +694,7 @@ Customer Journey Analytics ![Painel de Dimension múltiplos classificados](asset
 
    A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Vários Dimension de Área de Trabalho do Power BI classificados como finais](assets/uc6-powerbi-final.png)
+   ![Vários Dimension de Área de Trabalho do Power BI classificados como finais](assets/uc6-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop]
@@ -706,7 +706,7 @@ Customer Journey Analytics ![Painel de Dimension múltiplos classificados](asset
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc6-tableau-filter.png)
+      ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc6-tableau-filter.png){zoomable="yes"}
 
    1. Arraste **[!UICONTROL Categoria do Produto]** e solte ao lado de **[!UICONTROL Colunas]**.
    1. Arraste **[!UICONTROL Receita de Compra]** e solte ao lado de **[!UICONTROL Linhas]**. O valor muda para **[!UICONTROL SUM(Purchase Revenue)]**.
@@ -719,7 +719,7 @@ Customer Journey Analytics ![Painel de Dimension múltiplos classificados](asset
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Categoria Classificada de Vários Dimension do Tableau Desktop](assets/uc6-tableau-category.png)
+      ![Categoria Classificada de Vários Dimension do Tableau Desktop](assets/uc6-tableau-category.png){zoomable="yes"}
 
 1. Renomeie a **[!UICONTROL Planilha 1]** atual para `Category`.
 1. Selecione **[!UICONTROL Nova Planilha]** para criar uma nova planilha e renomeá-la para `Data`.
@@ -738,7 +738,7 @@ Customer Journey Analytics ![Painel de Dimension múltiplos classificados](asset
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Dados Classificados de Vários Dimension do Tableau Desktop](assets/uc6-tableau-data.png)
+      ![Dados Classificados de Vários Dimension do Tableau Desktop](assets/uc6-tableau-data.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Nova planilha]** para criar uma nova planilha e renomeá-la como **[!UICONTROL Treemap]**.
    1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada na prateleira **[!UICONTROL Filtros]**.
@@ -755,7 +755,7 @@ Customer Journey Analytics ![Painel de Dimension múltiplos classificados](asset
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Dados Classificados de Vários Dimension do Tableau Desktop](assets/uc6-tableau-treemap.png)
+      ![Dados Classificados de Vários Dimension do Tableau Desktop](assets/uc6-tableau-treemap.png){zoomable="yes"}
 
 1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
    1. Arraste e solte a folha **[!UICONTROL Categoria]** da prateleira **[!UICONTROL Folhas]** na exibição **[!UICONTROL Painel 1]** onde se lê *Folhas de soltar aqui*.
@@ -765,7 +765,7 @@ Customer Journey Analytics ![Painel de Dimension múltiplos classificados](asset
 
    A exibição do **[!UICONTROL Painel 1]** deve ser semelhante à mostrada abaixo.
 
-   ![Tableau Desktop Dashboard 1](assets/uc6-tableau-final.png)
+   ![Tableau Desktop Dashboard 1](assets/uc6-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -780,11 +780,11 @@ Você deseja obter o número distinto de nomes de produtos reportados em durante
 
 Para criar relatórios sobre uma contagem distinta de nomes de produtos, você configura uma métrica calculada em Customer Journey Analytics, com **[!UICONTROL Título]** `Product Name (Count Distinct)` e **[!UICONTROL Id Externa]** `product_name_count_distinct`.
 
-![métrica calculada do Nome do Produto (Contagem Distinta) do Customer Journey Analytics](assets/cja-calc-metric-distinct-count-product-names.png)
+![métrica calculada do Nome do Produto (Contagem Distinta) do Customer Journey Analytics](assets/cja-calc-metric-distinct-count-product-names.png){zoomable="yes"}
 
 Você pode usar essa métrica em um exemplo de **[!UICONTROL painel Contar valores de Dimension distintos]** para o caso de uso:
 
-![Valores de Contagem Distintos de Customer Journey Analytics](assets/cja-count-distinct-dimension-values.png)
+![Valores de Contagem Distintos de Customer Journey Analytics](assets/cja-count-distinct-dimension-values.png){zoomable="yes"}
 
 +++
 
@@ -813,7 +813,7 @@ Você pode usar essa métrica em um exemplo de **[!UICONTROL painel Contar valor
 
    A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Tabela de Contagem Distinta Múltipla da Área de Trabalho do Power BI](assets/uc7-powerbi-table.png)
+   ![Tabela de Contagem Distinta Múltipla da Área de Trabalho do Power BI](assets/uc7-powerbi-table.png){zoomable="yes"}
 
 1. Selecione a visualização de tabela. No menu de contexto, selecione **[!UICONTROL Cópia]** > **[!UICONTROL Cópia visual]**.
 1. Cole a visualização usando **[!UICONTROL ctrl-v]**. A cópia exata da visualização se sobrepõe à original. Mova-o para a direita na área de relatório.
@@ -821,7 +821,7 @@ Você pode usar essa métrica em um exemplo de **[!UICONTROL painel Contar valor
 
    A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Tabela de Contagem Distinta Múltipla da Área de Trabalho do Power BI](assets/uc7-powerbi-final.png)
+   ![Tabela de Contagem Distinta Múltipla da Área de Trabalho do Power BI](assets/uc7-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -837,7 +837,7 @@ Você pode usar essa métrica em um exemplo de **[!UICONTROL painel Contar valor
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc7-tableau-data.png)
+      ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc7-tableau-data.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Duplicar]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para criar uma segunda planilha.
 1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para renomear a planilha como `Data`.
@@ -852,7 +852,7 @@ Você pode usar essa métrica em um exemplo de **[!UICONTROL painel Contar valor
 
    A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-   ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc7-tableau-card.png)
+   ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc7-tableau-card.png){zoomable="yes"}
 
 1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
    1. Arraste e solte a folha **[!UICONTROL Cartão]** da prateleira **[!UICONTROL Folhas]** no modo de exibição **[!UICONTROL Painel 1]** onde se lê *Folhas de soltar aqui*.
@@ -860,7 +860,7 @@ Você pode usar essa métrica em um exemplo de **[!UICONTROL painel Contar valor
 
    A exibição do **[!UICONTROL Painel 1]** deve ser semelhante à mostrada abaixo.
 
-   ![Tableau Desktop Dashboard 1](assets/uc7-tableau-final.png)
+   ![Tableau Desktop Dashboard 1](assets/uc7-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -876,11 +876,11 @@ Você deseja usar um intervalo de datas definido no Customer Journey Analytics p
 
 Para criar relatórios usando um intervalo de datas, você configurou um intervalo de datas em Customer Journey Analytics, com **[!UICONTROL Título]** `Last Year 2023`.
 
-![Customer Journey Analytics Use nomes de intervalo de datas para filtrar](assets/cja-daterange.png)
+![Customer Journey Analytics Use nomes de intervalo de datas para filtrar](assets/cja-daterange.png){zoomable="yes"}
 
 Você pode usar esse intervalo de datas em um exemplo **[!UICONTROL Usando nomes de intervalo de datas para filtrar]** painel para o caso de uso:
 
-![Valores de Contagem Distintos de Customer Journey Analytics](assets/cja-using-date-range-filter-names-to-filter.png)
+![Valores de Contagem Distintos de Customer Journey Analytics](assets/cja-using-date-range-filter-names-to-filter.png){zoomable="yes"}
 
 Observe como o intervalo de datas definido na visualização da tabela de forma livre substitui o intervalo de datas aplicado ao painel.
 
@@ -913,7 +913,7 @@ Observe como o intervalo de datas definido na visualização da tabela de forma 
 
    Você vê a tabela atualizada com o filtro **[!UICONTROL daterangeName]** aplicado. A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Área De Trabalho Do Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc8-powerbi-final.png)
+   ![Área De Trabalho Do Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc8-powerbi-final.png){zoomable="yes"}
 
 >[!TAB Tableau Desktop]
 
@@ -928,7 +928,7 @@ Observe como o intervalo de datas definido na visualização da tabela de forma 
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc8-tableau-final.png)
+      ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc8-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -944,11 +944,11 @@ Você deseja usar um filtro existente para a categoria Produtos de pesca, que vo
 
 Inspect o filtro que deseja usar no Customer Journey Analytics.
 
-![Customer Journey Analytics Use Nomes De Filtro Para Filtrar](assets/cja-fishing-products.png)
+![Customer Journey Analytics Use Nomes De Filtro Para Filtrar](assets/cja-fishing-products.png){zoomable="yes"}
 
 Você pode usar esse filtro em um exemplo **[!UICONTROL Usando o painel Nomes de intervalo de datas para filtrar]** para o caso de uso:
 
-![Valores de Contagem Distintos de Customer Journey Analytics](assets/cja-using-filter-names-to-filter.png)
+![Valores de Contagem Distintos de Customer Journey Analytics](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -984,7 +984,7 @@ Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para es
 
    Você vê a tabela atualizada com o filtro **[!UICONTROL filterName]** aplicado. A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Área De Trabalho Do Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc9-powerbi-final.png)
+   ![Área De Trabalho Do Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc9-powerbi-final.png){zoomable="yes"}
 
 
 >[!TAB Tableau Desktop]
@@ -1002,7 +1002,7 @@ Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para es
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc9-tableau-final.png)
+      ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc9-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1017,11 +1017,11 @@ Você cria um novo filtro no Customer Journey Analytics que filtra os produtos d
 
 Crie um novo filtro com **[!UICONTROL Título]** `Hunting Products` em Customer Journey Analytics.
 
-![Customer Journey Analytics Use Valores De Dimension Para Filtrar](assets/cja-hunting-products.png)
+![Customer Journey Analytics Use Valores De Dimension Para Filtrar](assets/cja-hunting-products.png){zoomable="yes"}
 
 Você pode usar esse filtro em um exemplo **[!UICONTROL usando o painel Valores de Dimension para Filtrar]** para o caso de uso:
 
-![Valores de Contagem Distintos de Customer Journey Analytics](assets/cja-using-dimension-values-to-filter.png)
+![Valores de Contagem Distintos de Customer Journey Analytics](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 
 +++
 
@@ -1058,7 +1058,7 @@ Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para es
 
    Você vê a tabela atualizada com o filtro **[!UICONTROL filterName]** aplicado. A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Área De Trabalho Do Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc10-powerbi-final.png)
+   ![Área De Trabalho Do Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc10-powerbi-final.png){zoomable="yes"}
 
 
 
@@ -1078,7 +1078,7 @@ Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para es
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc10-tableau-final.png)
+      ![Filtro Classificado por Vários Dimension do Tableau Desktop](assets/uc10-tableau-final.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1094,7 +1094,7 @@ Você deseja relatar a receita de compra e as compras para nomes de produtos dur
 
 Um exemplo de painel **[!UICONTROL Sort]** para o caso de uso:
 
-![Painel de classificação do Customer Journey Analytics](assets/cja-sort.png)
+![Painel de classificação do Customer Journey Analytics](assets/cja-sort.png){zoomable="yes"}
 
 +++
 
@@ -1128,7 +1128,7 @@ Um exemplo de painel **[!UICONTROL Sort]** para o caso de uso:
 
    A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Área De Trabalho Do Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc11-powerbi-final.png)
+   ![Área De Trabalho Do Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc11-powerbi-final.png){zoomable="yes"}
 
 A consulta executada pelo Power BI Desktop usando a extensão BI não inclui uma instrução `sort`. A falta de uma instrução `sort` implica que a classificação é executada no lado do cliente.
 
@@ -1234,7 +1234,7 @@ limit 1000001
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-      ![Classificação do Tableau Desktop](assets/uc11-tableau-final.png)
+      ![Classificação do Tableau Desktop](assets/uc11-tableau-final.png){zoomable="yes"}
 
 A consulta executada pelo Tableau Desktop usando a extensão BI não inclui uma instrução `sort`. A falta dessa instrução `sort` implica que a classificação é executada no lado do cliente.
 
@@ -1260,7 +1260,7 @@ Você deseja relatar as 5 principais ocorrências de nomes de produtos durante 2
 
 Um exemplo de painel **[!UICONTROL Limite]** para o caso de uso:
 
-![Painel Limite de Customer Journey Analytics](assets/cja-limit.png)
+![Painel Limite de Customer Journey Analytics](assets/cja-limit.png){zoomable="yes"}
 
 +++
 
@@ -1296,7 +1296,7 @@ Um exemplo de painel **[!UICONTROL Limite]** para o caso de uso:
 
    A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
 
-   ![Área De Trabalho Do Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc12-powerbi-final.png)
+   ![Área De Trabalho Do Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc12-powerbi-final.png){zoomable="yes"}
 
 A consulta executada pelo Power BI Desktop usando a extensão BI inclui uma instrução `limit`, mas não a esperada. O limite para as 5 principais ocorrências é aplicado pelo Power BI Desktop usando resultados explícitos de nome de produto.
 
@@ -1407,7 +1407,7 @@ limit 1000001
 
          A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-         ![Limites do Tableau Desktop](assets/uc12-tableau-final.png)
+         ![Limites do Tableau Desktop](assets/uc12-tableau-final.png){zoomable="yes"}
 
 Como mostrado acima, essa consulta executada pelo Tableau Desktop, ao definir um filtro Cinco principais ocorrências em nomes de produtos, falha.
 
@@ -1489,12 +1489,12 @@ A Área de Trabalho do Power BI fornece funcionalidade de transformação person
 1. Selecione product_name no painel Dados.
 1. Selecione Nova coluna na barra de ferramentas.
 1. No editor de fórmulas, defina uma nova coluna chamada `product_name_lower`, como `product_name_lower = LOWER('public.cc_data_view[product_name])`.
-   ![Transformação da Área de Trabalho do Power BI para Inferior](assets/uc14-powerbi-transformation.png)
+   ![Transformação da Área de Trabalho do Power BI para Inferior](assets/uc14-powerbi-transformation.png){zoomable="yes"}
 1. Selecione a nova coluna product_name_lower no painel Dados em vez da coluna product_name.
 1. Selecione Relatório como Tabela de ![Mais](/help/assets/icons/More.svg) na visualização da tabela.
 
    A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
-   ![Final de Transformação do Power BI Desktop](assets/uc14-powerbi-final.png)
+   ![Final de Transformação do Power BI Desktop](assets/uc14-powerbi-final.png){zoomable="yes"}
 
 A transformação personalizada resulta em atualizações nas consultas SQL. Consulte o uso da função `lower` no exemplo SQL abaixo:
 
@@ -1562,7 +1562,7 @@ O Tableau Desktop fornece funcionalidade de transformação personalizada usando
 
 1. Selecione **[!UICONTROL Análise]** > **[!UICONTROL Criar campo calculado]** no menu principal.
    1. Defina o **[!UICONTROL Nome do Produto em Minúsculas]** usando a função `LOWER([Product Name])`.
-      ![Campo Calculado do Tableau](assets/uc14-tableau-calculated-field.png)
+      ![Campo Calculado do Tableau](assets/uc14-tableau-calculated-field.png){zoomable="yes"}
    1. Selecione **[!UICONTROL OK]**.
 1. Selecione a planilha de **[!UICONTROL Dados]**.
    1. Arraste **[!UICONTROL Nome do Produto em Minúsculas]** de **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
@@ -1571,7 +1571,7 @@ O Tableau Desktop fornece funcionalidade de transformação personalizada usando
 
 A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
-![Tableau Desktop após transformação](assets/uc14-tableau-final.png)
+![Tableau Desktop após transformação](assets/uc14-tableau-final.png){zoomable="yes"}
 
 A transformação personalizada resulta em atualizações nas consultas SQL. Consulte o uso da função `LOWER` no exemplo SQL abaixo:
 
@@ -1642,11 +1642,11 @@ Para a maioria das visualizações de Customer Journey Analytics, o Power BI Des
 
 O Power BI oferece suporte ao [modo de análise](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) para explorar detalhes detalhados sobre determinadas visualizações. No exemplo abaixo, você analisa a receita de compra para categorias de produto. No menu de contexto de uma barra que representa uma categoria de produto, você pode selecionar **[!UICONTROL Detalhar]**.
 
-![detalhamento do Power BI](assets/uc15-powerbi-drilldown.png)
+![detalhamento do Power BI](assets/uc15-powerbi-drilldown.png){zoomable="yes"}
 
 O detalhamento atualizará a visualização com receita de compra para produtos dentro da categoria de produto selecionada.
 
-![Power BI](assets/uc15-powerbi-drillup.png)
+![Power BI](assets/uc15-powerbi-drillup.png){zoomable="yes"}
 
 O detalhamento resulta na seguinte consulta SQL que usa uma cláusula `WHERE`:
 
@@ -1725,11 +1725,11 @@ Para a maioria das visualizações de Customer Journey Analytics, o Tableau ofer
 
 Tableau dá suporte ao [modo de análise](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) por meio de [hierarquias](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). No exemplo abaixo, você cria uma hierarquia ao selecionar o campo Nome do Produto em Tabelas e arrastá-lo para cima de Categoria do Produto. Em seguida, no menu de contexto de uma barra que representa uma categoria de produto, você pode selecionar **[!UICONTROL + Detalhar]**.
 
-![Detalhamento do Tableau](assets/uc15-tableau-drilldown.png)
+![Detalhamento do Tableau](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
 O detalhamento atualizará a visualização com receita de compra para produtos dentro da categoria de produto selecionada.
 
-![Avaliação minuciosa do Tableau](assets/uc15-tableau-drillup.png)
+![Avaliação minuciosa do Tableau](assets/uc15-tableau-drillup.png){zoomable="yes"}
 
 O drill-down resulta na seguinte consulta SQL que está usando uma cláusula GROUP BY:
 
@@ -1745,11 +1745,11 @@ GROUP BY 1,
 
 A consulta **não** limita os resultados à categoria de produto selecionada; somente a visualização mostra a categoria de produto selecionada.
 
-![Avaliação minuciosa do Tableau](assets/uc15-tableau-drillup2.png)
+![Avaliação minuciosa do Tableau](assets/uc15-tableau-drillup2.png){zoomable="yes"}
 
 Como alternativa, você pode criar um painel detalhado no qual um visual é o resultado da seleção em outro visual. No exemplo abaixo, a visualização **[!UICONTROL Categorias de produto]** é usada como filtro para atualizar a tabela **[!UICONTROL Nomes de produto]**. Este filtro de visualização é somente para cliente e não resulta em uma consulta SQL adicional.
 
-![Filtro de visualização do Tableau](assets/uc15-tableau-visualizationfilter.png)
+![Filtro de visualização do Tableau](assets/uc15-tableau-visualizationfilter.png){zoomable="yes"}
 
 
 >[!ENDTABS]
