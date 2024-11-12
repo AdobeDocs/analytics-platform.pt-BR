@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: ae07aa8a275a37f88d7626bac2f59e21d4c40e5a
+source-git-commit: 552b7fe20759036a0919fa622019e87b2722bb31
 workflow-type: tm+mt
 source-wordcount: '9752'
 ht-degree: 1%
@@ -70,7 +70,7 @@ As instruções se referem a um ambiente de exemplo com os seguintes objetos:
 * Métricas: **[!UICONTROL Receita de Compra]** ?? e **[!UICONTROL Compras]** ??.
 * Filtro: **[!UICONTROL Produtos de Pesca]** ??.
 
-![Configuração base do Customer Journey Analytics](assets/cja-base.png)
+![Configuração base do Customer Journey Analytics](assets/cja-base.png){zoomable="yes"}
 
 Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apropriados para seu ambiente específico.
 
@@ -89,7 +89,7 @@ Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apro
    1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
    1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
 
-      ![Consultar credenciais de serviço](assets/queryservice-credentials.png)
+      ![Consultar credenciais de serviço](assets/queryservice-credentials.png){width="100" zoomable="yes"}
 
 1. Inicie o Power BI Desktop.
    1. Na interface principal, selecione **[!UICONTROL Obter dados de outras fontes]**.
@@ -129,7 +129,7 @@ Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apro
    1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
    1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
 
-      ![Consultar credenciais de serviço](assets/queryservice-credentials.png)
+      ![Consultar credenciais de serviço](assets/queryservice-credentials.png){zoomable="yes"}
 
 1. Inicie o Tableau.
    1. Selecione **[!UICONTROL PostgreSQL]** no painel esquerdo abaixo de **[!UICONTROL Para um Servidor]**. Se não estiver disponível, selecione **[!UICONTROL Mais...]** e selecione **[!UICONTROL PostgreSQL]** nos **[!UICONTROL Conectores Instalados]**.
