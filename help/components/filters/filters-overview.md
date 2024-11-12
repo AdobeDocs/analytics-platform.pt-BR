@@ -4,9 +4,9 @@ description: Entenda para que os filtros são usados e como criar um filtro simp
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 5fbb228fc02304be2246f0b49cb49de7f160b227
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1423'
 ht-degree: 8%
 
 ---
@@ -174,9 +174,13 @@ Ao criar containers em outros containers, você está criando um filtro em um fi
 2. Aplique a definição de filtro aninhada aos dados restantes. A definição de filtro aninhada NÃO se aplica a dados descartados pela primeira definição.
 3. Repita até que todas as definições de filtro de contêiner aninhado tenham sido calculadas. Os dados restantes são então incluídos no resultado e usados para o relatório.
 
+>[!NOTE]
+>
+>Ao aninhar um filtro em um filtro (por exemplo, você arrasta um filtro do painel Componentes para a definição do filtro), um container é criado com uma cópia (não uma referência) da definição de filtro arrastada.
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
+
 
 | Container | What container you can nest inside |
 | Event | Only event conditions |
