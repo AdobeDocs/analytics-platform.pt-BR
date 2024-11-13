@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: d0507dab387b9174aa3a119bdb22139edd0e8ca4
+source-git-commit: 6f264ffd30bb1308f95a913a16fb587f36d95a04
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1637'
 ht-degree: 3%
 
 ---
@@ -79,7 +79,7 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 4. Certifique-se de que a visualização de dados selecionada para o painel é a visualização de dados que foi ativada para o uso do Assistente do AI para o teste de Alpha (acesse o canal do Alpha Slack se não tiver certeza)
 
-5. Clique no ícone de bate-papo do Assistente do AI na parte superior direita.
+5. Clique no ícone de bate-papo do Assistente do AI na parte superior direita. Observação: se você não vir o ícone de bate-papo no canto superior direito, entre em contato com o Administrador e solicite que ele siga [estas instruções](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access) para habilitar o &quot;Assistente de IA: Conhecimento do Produto&quot; e o &quot;Assistente de IA: Análise de Dados&quot; no Admin Console.
 
    ![Ícone do Assistente de IA](/help/assets/ai-asst-icon.png)
 
