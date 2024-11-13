@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 07db28b8-b688-4a0c-8fb3-28a124342d25
-source-git-commit: 749fbd5ae370995d772b6880c9949cf14042ed8c
+source-git-commit: d6d6777f3d40a979eefecea6ab6d4bd818be2401
 workflow-type: tm+mt
-source-wordcount: '9752'
+source-wordcount: '9736'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,6 @@ Os seguintes casos de uso estão documentados:
 
 * **Conectar**
    * [Conectar e listar visualizações de dados](#connect-and-validate)
-   * [Para NIVELAR ou não](#to-flatten-or-not)
 
 * **Relatório e análise**
    * [Tendência diária](#daily-trend)
@@ -120,6 +119,25 @@ Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apro
       Power BI ![Dados do Servidor de Desktop Carregados](assets/powerbi-navigator-loaded.png){zoomable="yes"}
 
 
+### Para NIVELAR ou não
+
+A Área de Trabalho do Power BI oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`. Consulte [Nivelar dados aninhados](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) para obter mais informações.
+
+| parâmetro FLATTEN | Exemplo | Suportado | Observações |
+|---|---|:---:|---|
+| Nenhum | `prod:cja` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **Opção recomendada para usar!** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![FecharCírculo](/help/assets/icons/CloseCircle.svg) | O Power BI Desktop exibe um erro: **[!UICONTROL Não foi possível autenticar com as credenciais fornecidas. Tente novamente.]** |
+
+### Mais informações
+
+* [Pré-requisitos](/help/data-views/bi-extension.md#prerequisites)
+* [Guia de credenciais](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Conectar o Power BI ao Serviço de Consulta](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
+
+
+
+
 >[!TAB Tableau Desktop]
 
 1. Acesse as credenciais e os parâmetros necessários da interface do usuário do serviço de consulta do Experience Platform.
@@ -155,56 +173,23 @@ Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apro
    1. A janela principal exibe detalhes da exibição de dados do **[!UICONTROL cc_data_view]**.
       ![Tableau Conectado](assets/tableau-validation.png){zoomable="yes"}
 
->[!ENDTABS]
+### Para NIVELAR ou não
 
-+++
-
-## Para NIVELAR ou não
-
-Nesse caso de uso, você quer entender se deve usar um parâmetro `FLATTEN` adicional para o banco de dados quando se conectar ao Customer Journey Analytics usando a extensão BI.
-
-+++ Customer Journey Analytics
-
-Customer Journey Analytics fornece informações sobre como se conectar na interface Experience Platform.
-
-1. Navegue até a sandbox do Experience Platform.
-1. Selecione ![Consultas](/help/assets/icons/DataSearch.svg) **[!UICONTROL Consultas]** no painel esquerdo.
-1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
-1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
-
-![Consultar credenciais de serviço](assets/queryservice-credentials.png){zoomable="yes"}
-
-
-+++
-
-+++ Ferramentas de BI
-
->[!PREREQUISITES]
->
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso. Consulte a seção de ferramentas de BI para saber quais opções de parâmetro `FLATTEN` explícitas são necessárias para uma conexão adequada.
->
-
->[!BEGINTABS]
-
->Power BI [!TAB Área de Trabalho]
-
-A Área de Trabalho do Power BI oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`.
+O Tableau Desktop oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`. Consulte [Nivelar dados aninhados](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) para obter mais informações.
 
 | parâmetro FLATTEN | Exemplo | Suportado | Observações |
 |---|---|:---:|---|
 | Nenhum | `prod:cja` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
 | `?FLATTEN` | `prod:cja?FLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![FecharCírculo](/help/assets/icons/CloseCircle.svg) | O Power BI Desktop exibe um erro: **[!UICONTROL Não foi possível autenticar com as credenciais fornecidas. Tente novamente.]** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **Opção recomendada para usar**. Observe que `%3FFLATTEN` é a versão de `?FLATTEN` codificada em URL. |
 
->[!TAB Tableau Desktop]
+### Mais informações
 
-O Tableau Desktop oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`.
+* [Pré-requisitos](/help/data-views/bi-extension.md#prerequisites)
+* [Guia de credenciais](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Conecte o Tableau Desktop ao Serviço de Consulta](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
 
-| parâmetro FLATTEN | Exemplo | Suportado | Observações |
-|---|---|:---:|---|
-| Nenhum | `prod:cja` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
+
 
 >[!ENDTABS]
 
@@ -277,7 +262,7 @@ Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
       * Selecione **[!UICONTROL Dia]** no menu suspenso **[!UICONTROL Dia_da_Data]**, para que o valor seja atualizado para **[!UICONTROL Dia(Dia_da_Data)]**.
    1. Arraste e solte **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
       * Os valores são convertidos automaticamente em **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[Ajuste de IUICONTROL]** na barra de ferramentas.
+   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -289,7 +274,7 @@ Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
 1. Verifique se a folha de **[!UICONTROL Dados]** está selecionada. Na exibição **[!UICONTROL Dados]**:
    1. Selecione **[!UICONTROL Mostrar-me]** no canto superior direito e selecione **[!UICONTROL Tabela de texto]** (visualização superior esquerdo) para modificar o conteúdo do modo de exibição de Dados para uma tabela.
    1. Selecione **[!UICONTROL Trocar Linhas e Colunas]** na barra de ferramentas.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[Ajuste de IUICONTROL]** na barra de ferramentas.
+   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -347,7 +332,7 @@ O ![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **não** entende como li
       * Selecione **[!UICONTROL Mais]** > **[!UICONTROL Horas]** no menu suspenso **[!UICONTROL Daterangeday]**, para atualizar o valor para **[!UICONTROL HOUR(Daterangeday)]**.
    1. Arraste e solte **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
       * Os valores são convertidos automaticamente em **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[Ajuste de IUICONTROL]** na barra de ferramentas.
+   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -359,7 +344,7 @@ O ![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **não** entende como li
 1. Verifique se a folha de **[!UICONTROL Dados]** está selecionada. Na exibição **[!UICONTROL Dados]**:
    1. Selecione **[!UICONTROL Mostrar-me]** no canto superior direito e selecione **[!UICONTROL Tabela de texto]** (visualização superior esquerdo) para modificar o conteúdo do modo de exibição de Dados para uma tabela.
    1. Arraste **[!UICONTROL HOUR(Daterangeday)]** de **[!UICONTROL Colunas]** para **[!UICONTROL Linhas]**.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[Ajuste de IUICONTROL]** na barra de ferramentas.
+   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -448,7 +433,7 @@ Customer Journey Analytics ![Visualização mensal da tendência](assets/cja_mon
       * Selecione **[!UICONTROL MÊS]** no menu suspenso **[!UICONTROL Dia_da_data]**, para que o valor seja atualizado para **[!UICONTROL MÊS(Dia_da_data)]**.
    1. Arraste e solte **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
       * Os valores são convertidos automaticamente em **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[Ajuste de IUICONTROL]** na barra de ferramentas.
+   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -460,7 +445,7 @@ Customer Journey Analytics ![Visualização mensal da tendência](assets/cja_mon
 1. Verifique se a folha de **[!UICONTROL Dados]** está selecionada. Na visualização de dados:
    1. Selecione **[!UICONTROL Mostrar-me]** no canto superior direito e selecione **[!UICONTROL Tabela de texto]** (visualização superior esquerdo) para modificar o conteúdo do modo de exibição de Dados para uma tabela.
    1. Arraste **[!UICONTROL MONTH(Daterangeday)]** de **[!UICONTROL Colunas]** para **[!UICONTROL Linhas]**.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[Ajuste de IUICONTROL]** na barra de ferramentas.
+   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -823,6 +808,15 @@ Você pode usar essa métrica em um exemplo de **[!UICONTROL painel Contar valor
 
    ![Tabela de Contagem Distinta Múltipla da Área de Trabalho do Power BI](assets/uc7-powerbi-final.png){zoomable="yes"}
 
+Como alternativa, você pode usar a funcionalidade de contagem distinta do Power BI.
+
+1. Selecione a dimensão **[!UICONTROL product_name]**.
+1. Aplique a função **[!UICONTROL Contagem (Distinta)]** na dimensão **[!UICONTROL product_name]** em **[!UICONTROL Colunas]**.
+
+   Power BI ![Contagem distinta](assets/uc7-powerbi-alternative.png){zoomable="yes"}
+
+
+
 >[!TAB Tableau Desktop]
 
 1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
@@ -861,6 +855,14 @@ Você pode usar essa métrica em um exemplo de **[!UICONTROL painel Contar valor
    A exibição do **[!UICONTROL Painel 1]** deve ser semelhante à mostrada abaixo.
 
    ![Tableau Desktop Dashboard 1](assets/uc7-tableau-final.png){zoomable="yes"}
+
+
+Como alternativa, você pode usar a funcionalidade de contagem distinta do Tableau Desktop.
+
+1. Use **[!UICONTROL Nome Do Produto]** Em Vez De **[!UICONTROL Contagem Distinta De Nome De Produto De Cm]**.
+1. Aplicar **[!UICONTROL Medida]** > **[!UICONTROL Contagem (Distinta)]** no **[!UICONTROL Nome do Produto]** em **[!UICONTROL Marcas]**.
+
+   Power BI ![Contagem distinta](assets/uc7-tableau-alternative.png){zoomable="yes"}
 
 >[!ENDTABS]
 
