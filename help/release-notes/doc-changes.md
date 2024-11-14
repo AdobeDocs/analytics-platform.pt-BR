@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a8d983255e3922bd619b614acedd21f66cc563b9
+source-git-commit: 5f02b6eff63f7efcfbec586186506f2c50ec52d7
 workflow-type: tm+mt
-source-wordcount: '4195'
-ht-degree: 70%
+source-wordcount: '4216'
+ht-degree: 69%
 
 ---
 
@@ -20,6 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Novembro de 2024** | |
+| Casos de uso da extensão do BI | Documentação de vários [casos de uso de extensão de BI](/help/use-cases/data-views/bi-extension-usecases.md) para ferramentas de BI, como o Power BI Desktop e o Tableau Desktop. |
 | Solicitações de configuração e privacidade | Adição de aviso sobre [alterações futuras no processo de descompilação](/help/stitching/faq.md#frequently-asked-questions) que são o resultado de solicitações de privacidade. |
 | **Outubro de 2024** | |
 | Dispositivos compartilhados | Adição de um [artigo de caso de uso](/help/use-cases/stitching/shared-devices.md) que fornece contexto sobre dispositivos compartilhados, como manipular e mitigar dados de dispositivos compartilhados usando a compilação e entender a exposição de dispositivos compartilhados em seus dados usando o Serviço de Consulta. |

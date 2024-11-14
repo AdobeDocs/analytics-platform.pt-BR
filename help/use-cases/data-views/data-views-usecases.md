@@ -5,10 +5,10 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 62779154e889158c62e4713a951fb3633c16d5e1
+source-git-commit: 629935d66b0f2c5731806a68cc2fcda5fb11fc9a
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 35%
+source-wordcount: '1372'
+ht-degree: 33%
 
 ---
 
@@ -18,11 +18,15 @@ Esses casos de uso ilustram a flexibilidade e o potencial das visualizações de
 
 ## Uso de métricas de dimensões de ligação
 
-Consulte o caso de uso das [métricas](binding-dimensions-metrics.md) de dimensões de vínculo para obter mais detalhes.
+Consulte o caso de uso [Usar métricas de dimensões de ligação](binding-dimensions-metrics.md) para obter mais detalhes.
 
 ## Usar dados de resumo
 
 Consulte o caso de uso [Usar dados de resumo](summary-data.md) para obter mais detalhes.
+
+## Casos de uso da extensão do BI
+
+Consulte os [casos de uso de extensão de BI](bi-extension-usecases.md) para saber como realizar vários casos de uso usando a extensão de BI do Customer Journey Analytics.
 
 ## Criar uma métrica com base em um campo de esquema de sequência {#string}
 
@@ -31,15 +35,15 @@ Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica
 
 
 1. Na guia **[!UICONTROL Componentes]**, arraste o **[!UICONTROL Título da Página]** para a seção **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
-1. Destaque o métrica que acabou de arrastá-lo e renomeá-lo `Orders` na **[!UICONTROL Componente Configurações]** em
-1. Abra a **[!UICONTROL seção Incluir/Excluir valores e especifique]** o seguinte:
-   1. Ativar **[!UICONTROL Definir incluir valores]** de exclusão.
-   1. Selecione **[!UICONTROL se todos os critérios forem atendidos a]** partir da **[!UICONTROL Correspondência]**.
-   1. Especifique `confirmation`. Este texto para o página_title indica que esta página está relacionada à colocação de uma solicitar. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores de inclusão/exclusão pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, filtros e em qualquer lugar que você puder usar as métricas padrão.
+1. Destaque a métrica que você acabou de arrastar e renomeie-a para `Orders` nas **[!UICONTROL Configurações de componente]** em
+1. Abra a seção **[!UICONTROL Incluir/Excluir Valores]** e especifique o seguinte:
+   1. Habilitar **[!UICONTROL Definir inclusão/exclusão de valores]**.
+   1. Selecione **[!UICONTROL Se todos os critérios forem atendidos]** de **[!UICONTROL Corresponder]**.
+   1. Especifique `confirmation`. Esse texto para page_title indica que essa página está relacionada à inserção de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores incluídos/excluídos pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, filtros e em qualquer lugar que você puder usar as métricas padrão.
 
    ![Dimension para métrica](../assets/string-to-metric.gif){width=100%}
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
-Você também pode criar outra métrica [!UICONTROL Pedidos] do mesmo campo e especificar um modelo de atribuição diferente. [!UICONTROL Como o Primeiro Contato] e uma janela] de Lookback diferente[!UICONTROL , como [!UICONTROL 30 dias].
+Você também pode criar outra métrica [!UICONTROL Pedidos] do mesmo campo e especificar um modelo de atribuição diferente. Como [!UICONTROL Primeiro contato] e uma [!UICONTROL Janela de pesquisa] diferente, como [!UICONTROL 30 dias].
 
 Outro exemplo seria usar a ID de pessoa, uma dimensão, como uma métrica para determinar quantas IDs de pessoa sua empresa tem.
 
@@ -50,7 +54,7 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
 
 1. Arraste o inteiro **[!UICONTROL Duração]** para a seção **[!UICONTROL Dimension]** em [!UICONTROL Componentes incluídos]:
-1. Agora você pode adicionar **[!UICONTROL Classificação de valores]** para apresentar essa dimensão de forma segmentada nos relatórios. Sem bucketing, cada instância desse dimensão apareceria como uma item da linha em Área de trabalho relatórios.
+1. Agora você pode adicionar **[!UICONTROL Classificação de valores]** para apresentar essa dimensão de forma segmentada nos relatórios. Sem a classificação, cada instância dessa dimensão seria exibida como um item da linha nos relatórios do Workspace.
    ![Inteiro para dimensão](../assets/integer-to-dimension.gif){width=100%}
 
 
@@ -61,13 +65,13 @@ Você pode usar uma dimensão numérica para inserir métricas na visualização
 1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Espaço de trabalho, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
 
-![Fluxo de canal de marketing de emails para Sair/pedidos.](../assets/flow.png)
+![Fluxo do Canal de marketing dos emails para Saída/pedidos.](../assets/flow.png)
 
-## Fazer filtragem evento sub-evento {#sub-event}
+## Fazer filtragem de subeventos {#sub-event}
 
-Esse recurso é especificamente aplicável a campos com base em matriz. A funcionalidade de inclusão/exclusão permite filtrar no nível da evento, enquanto filtros (segmentos) construídos no construtor de filtros só lhe dão filtragem no nível evento. Dessa forma, é possível fazer filtragem sub-evento usando incluir/excluir em exibições de Dados e, em seguida, fazer referência a essa nova métrica/dimensão em um filtro no nível evento.
+Esse recurso é especificamente aplicável a campos com base em matriz. A funcionalidade de inclusão/exclusão permite filtrar no nível do subevento, enquanto os filtros (segmentos) criados no construtor de filtros fornecem apenas a filtragem no nível do evento. Assim, você pode fazer a filtragem de subeventos usando incluir/excluir em Visualizações de dados e, em seguida, fazer referência a essa nova métrica/dimensão em um filtro no nível do evento.
 
-Por exemplo, use a funcionalidade incluir/excluir nas exibições de Dados para focalizar apenas em produtos que geraram vendas de mais de US$ 50. Então, se você tem um solicitar que inclui uma compra de produto de US$ 50 e uma compra de produto de US$ 25, a funcionalidade de inclusão/exclusão remove a compra de um produto de US$ 25, não todo o solicitar.
+Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de dados para focalizar produtos que geraram vendas superiores a US$ 50. Portanto, se você tiver um pedido que inclua uma compra de produto de US$ 50 e uma compra de produto de US$ 25, a funcionalidade de inclusão/exclusão removerá a compra de produto de US$ 25, não o pedido inteiro.
 
 1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema **[!UICONTROL Receita]** para a área **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
 1. Selecione a métrica e configure o seguinte no lado direito:
@@ -80,7 +84,7 @@ f. Especifique `50` como o valor.
 
 Essas novas configurações permitem que você visualize somente a receita de alto valor e filtre qualquer valor abaixo de US$ 50.
 
-## Usar a configuração de [!UICONTROL opções] Sem valor {#no-value}
+## Usar a configuração [!UICONTROL Nenhuma opção de valor] {#no-value}
 
 Sua empresa pode ter passado tempo treinando os usuários para esperar &quot;Não especificado&quot; para dimensões em relatórios. O padrão para dimensões em Visualizações de dados é &quot;Sem valor&quot;. No entanto, é possível especificar por dimensão como Nenhum valor deve ser relatado. Consulte as opções Nenhum valor para um componente de dimensão.
 
@@ -89,16 +93,16 @@ Sua empresa pode ter passado tempo treinando os usuários para esperar &quot;Nã
 
 ## Criar várias métricas com diferentes configurações de atribuição {#attribution}
 
-Utilização do **[!UICONTROL recurso Duplicar]** no canto superior direito, para criar diversas métricas de Receita Total com configurações atribuição diferentes curtir **[!UICONTROL Primeiro Contato]**, **[!UICONTROL Último Contato]** e **[!UICONTROL Algorítmico]**.
+Usando o recurso **[!UICONTROL Duplicar]** no canto superior direito, para criar várias métricas de Receita Total com diferentes configurações de atribuição, como **[!UICONTROL Primeiro Contato]**, **[!UICONTROL Último Contato]** e **[!UICONTROL Algorítmico]**.
 
 Não se esqueça de renomear cada métrica para refletir as diferenças, como `Total Revenue (Algorithmic)`
 
-![métrica duplicados para diferentes configurações](../assets/duplicate-metric-for-attribution.gif) de atribuição{width=100%}
+![Métrica duplicada para diferentes configurações de atribuição](../assets/duplicate-metric-for-attribution.gif){width=100%}
 
 Para obter mais informações sobre outras configurações de visualizações de dados, consulte [Criar visualizações de dados](/help/data-views/create-dataview.md).
 Para obter uma visão geral conceitual das visualizações de dados, consulte [Visão geral das visualizações de dados](/help/data-views/data-views.md).
 
-## Novo de sessão e de retorno relatórios {#new-repeat}
+## Relatórios de nova sessão e sessão de retorno {#new-repeat}
 
 Você pode determinar se uma sessão é realmente a primeira sessão de um usuário ou uma sessão de retorno. Com base na janela de relatório que você definiu para essa visualização de dados e uma janela de retrospectiva de 13 meses. Esses relatórios permitem determinar, por exemplo:
 
@@ -122,9 +126,9 @@ Para acessar os componentes:
 
 As novas sessões são relatadas com precisão quase sempre. As únicas exceções são:
 
-* Quando uma primeira sessão ocorreu antes da janela de retrospectiva de 13 meses. <br/>Esta sessão é ignorada.
+* Quando uma primeira sessão ocorreu antes da janela de retrospectiva de 13 meses. <br/>Esta sessão foi ignorada.
 
-* Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. <br/>Por exemplo, você executa um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva se estenderia de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão começar em 30 de maio de 2022 e terminar em 1º de junho de 2022, a sessão será incluída na janela de retrospectiva. E todas as sessões na janela relatórios são contadas como sessões de retorno.
+* Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. <br/>Por exemplo, você executa um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva se estenderia de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1º de junho de 2022, ela será incluída na janela de retrospectiva. E todas as sessões na janela de relatórios são contadas como sessões de retorno.
 
 ## Usar as funcionalidades de Data e Data e hora {#date}
 
