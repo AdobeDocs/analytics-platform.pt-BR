@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: ae2f9220829c897c8f1e0425ec192035dcf0097d
+source-git-commit: dbeb3cabeaa7586e8a024a46e7ae42984e9c1c09
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1499'
 ht-degree: 7%
 
 ---
@@ -90,9 +90,13 @@ Cada etapa fornece uma explicação de alto nível de um processo mais detalhado
 
 1. (Opcional) Se quiser integrar o Customer Journey Analytics ao Adobe Journey Optimizer, use o objeto de personalização na implementação para usar no Adobe Journey Optimizer.
 
-1. (Opcional) Traga dados históricos do Adobe Analytics usando o conector de origem do Analytics.
+1. (Opcional) Traga dados históricos do Adobe Analytics usando o conector de origem do Analytics:
 
-   Para obter mais informações, consulte [Usar um conector de origem](/help/data-ingestion/sources.md#use-a-source-connector) em [Assimilar e usar dados usando conectores de origem](/help/data-ingestion/sources.md).
+   1. [Crie um esquema para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+
+   1. [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   1. [Adicione o conjunto de dados do conector de origem do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 
 1. Expanda a seção que descreve como você deseja implementar o SDK da Web do Experience Platform para sua implementação de Customer Journey Analytics e, em seguida, conclua as etapas associadas:
 
@@ -106,7 +110,7 @@ Cada etapa fornece uma explicação de alto nível de um processo mais detalhado
 
    +++Marcas
 
-   1. [Implemente a marca do carregador em seu site](/help/getting-started/cja-upgrade/cja-upgrage-tag-loader.md).
+   1. [Implemente a marca do carregador em seu site](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
 
    1. [Crie uma propriedade de marca e adicione a extensão SDK da Web da Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md).
 
