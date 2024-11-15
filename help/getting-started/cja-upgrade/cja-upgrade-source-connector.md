@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8e51e97b0616a5406c5c3a29431fde87a551ab9f
+exl-id: f96565a2-f556-4b45-b88e-984613614d2e
+source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 3%
+source-wordcount: '636'
+ht-degree: 2%
 
 ---
 
@@ -21,13 +22,23 @@ ht-degree: 3%
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
+## Entenda como o conector de origem do Analytics pode trazer dados históricos para o Customer Journey Analytics
+
 Você pode usar o conector de origem do Analytics para trazer dados do conjunto de relatórios do Adobe Analytics para a Adobe Experience Platform. Esses dados podem ser usados como dados históricos no Customer Journey Analytics.
 
-As etapas a seguir pressupõem que você deseja [criar um esquema XDM ao atualizar para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), pois deseja um esquema simplificado adaptado às necessidades da sua organização e dos aplicativos específicos da Platform que você usa.
+Esse processo pressupõe que você deseja [criar um esquema XDM ao atualizar para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), pois deseja um esquema simplificado adaptado às necessidades da sua organização e dos aplicativos específicos da Platform que você usa.
 
-Com o esquema XDM criado, é necessário criar o conector de origem do Adobe Analytics para usar em dados históricos.
+Para usar o conector de origem do Analytics para trazer dados históricos para o Customer Journey Analytics, é necessário:
 
-Para obter diretrizes gerais mais abrangentes sobre como criar um conector de origem, consulte [Criar uma conexão de origem do Adobe Analytics na interface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR).
+1. [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+1. Crie o conector de origem do Analytics e mapeie os campos, conforme descrito abaixo.
+
+1. [Adicionar o conjunto de dados do conector de origem do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+
+## Criar o conector de origem do Analytics e mapear campos
+
+Com o esquema XDM criado, é necessário criar o conector de origem do Adobe Analytics para usar em dados históricos. (Para obter diretrizes gerais mais abrangentes sobre como criar um conector de origem, consulte [Criar uma conexão de origem do Adobe Analytics na interface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR).)
 
 Para criar um conector de origem do Adobe Analytics a ser usado para dados históricos:
 
@@ -78,7 +89,3 @@ Para criar um conector de origem do Adobe Analytics a ser usado para dados hist�
    Se você estiver usando o conector de origem do Analytics para trazer dados históricos para a implementação do SDK da Web do Customer Journey Analytics, será necessário adicionar esse conjunto de dados criado automaticamente à conexão criada para a implementação do SDK da Web.
 
 1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
-
-
-
-

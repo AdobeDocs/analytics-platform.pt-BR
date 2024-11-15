@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: d30a1a7cbe441529f5b094215c0ea1131c1f67fc
+exl-id: 424485a3-a076-4656-83b6-733f16cc2326
+source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
 workflow-type: tm+mt
-source-wordcount: '631'
-ht-degree: 37%
+source-wordcount: '818'
+ht-degree: 25%
 
 ---
 
@@ -20,6 +21,30 @@ ht-degree: 37%
 >Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
+
+>[!NOTE]
+>
+>As informações nesta página pressupõem o seguinte:
+>
+>* Você está atualizando do Adobe Analytics para o Customer Journey Analytics.
+>* Você está usando o SDK da Web para a sua futura coleção de dados de Customer Journey Analytics.
+>* Você deseja usar o conector de origem do Analytics para trazer seus dados históricos do Adobe Analytics para o Customer Journey Analytics.
+
+## Entenda como o conector de origem do Analytics pode trazer dados históricos para o Customer Journey Analytics
+
+Você pode usar o conector de origem do Analytics para trazer dados do conjunto de relatórios do Adobe Analytics para a Adobe Experience Platform. Esses dados podem ser usados como dados históricos no Customer Journey Analytics.
+
+Esse processo pressupõe que você deseja [criar um esquema XDM ao atualizar para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md), pois deseja um esquema simplificado adaptado às necessidades da sua organização e dos aplicativos específicos da Platform que você usa.
+
+Para usar o conector de origem do Analytics para trazer dados históricos para o Customer Journey Analytics, é necessário:
+
+1. [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+
+1. [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+
+1. Adicione o conjunto de dados do conector de origem do Analytics à conexão, conforme descrito abaixo.
+
+## Adicionar o conjunto de dados do conector de origem do Analytics à conexão
 
 Depois de [criar um conector de origem do Analytics para dados históricos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md), um conjunto de dados é criado automaticamente para os dados do Analytics.
 
@@ -68,7 +93,7 @@ Para adicionar o conjunto de dados criado automaticamente à mesma conexão cria
 
 1. Defina o período que deseja incluir no preenchimento retroativo inserindo as datas de início e término ou selecionando o ícone de calendário ![Calendário](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
 
-   O conector de origem do Analytics importa até 13 meses de dados (independentemente do tamanho) para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é limitado a 3 meses.
+   O conector de origem do Analytics importa 13 meses de dados (independentemente do tamanho) para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é de 3 meses.
 
    >[!IMPORTANT]
    >
@@ -83,4 +108,3 @@ Para adicionar o conjunto de dados criado automaticamente à mesma conexão cria
 1. Selecione **[!UICONTROL Adicionar conjuntos de dados]** e **[!UICONTROL Salvar]** para salvar a conexão.
 
 1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
-
