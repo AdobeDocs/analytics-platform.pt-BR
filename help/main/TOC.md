@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 3d75dcc61d76a02f6cd77a62417fb775db959265
 workflow-type: tm+mt
 source-wordcount: '1062'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 89%
 
 + [Guia do Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
 + [Assistente de IA para o Adobe Customer Journey Analytics](../ai-assistant.md)
-+ [Assistente de IA de análise de dados para Customer Journey Analytics](../data-analysis-ai.md)
++ [Assistente de IA de análise de dados para o Customer Journey Analytics](../data-analysis-ai.md)
 
 + Notas de versão {#releases}
    + [Versão mais recente](../release-notes/latest.md)
@@ -47,23 +47,23 @@ ht-degree: 89%
       + [Enviar dados para a Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Reter dados históricos](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [Processo recomendado](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + [Entender a implementação do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+      + [Compreensão da implementação do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Criar conjuntos de dados de pesquisa para classificações](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [Criar um campo derivado de canal de marketing](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Implementar a tag de carregamento para a extensão SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Criar uma tag para sua propriedade](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
       + [Adicionar a extensão SDK da Web à sua tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
       + [Adicionar a lógica da coleção de dados XDM à sua tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-      + [Projetar o esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+      + [Arquitetar seu esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Criar seu esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
-      + [Usar seu esquema existente](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + [Usar seu esquema já existente](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
       + [Criar um conjunto de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
       + [Criar um fluxo de dados](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-      + [Adicionar a Platform como um serviço](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Adicionar a Platform como serviço](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
       + [Criar uma conexão](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Criar uma visualização de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Validar fluxo de dados](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [Atalho de atualização: Migrar para o SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
+      + [Atalho de atualização: migrar para o SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
       + [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
       + [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
       + [Adicionar o conjunto de dados do conector de origem do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
