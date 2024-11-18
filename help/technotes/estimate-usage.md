@@ -4,10 +4,10 @@ description: Mostra dois métodos de estimativa de uso e um método de gerenciam
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 400dc032be5d491cade84b0e98d88ff8a5949a2f
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 71%
+source-wordcount: '875'
+ht-degree: 69%
 
 ---
 
@@ -46,7 +46,7 @@ Talvez seja necessário saber quantas linhas de dados do evento você tem atualm
 
    >[!CAUTION]
    >
-   >   Essa contagem se aplica somente aos dados do evento, não aos dados do perfil ou da pesquisa. Se você tiver dados de perfil e pesquisa, a contagem será um pouco maior. No entanto, atualmente não há como criar relatórios sobre o uso de dados de perfil e pesquisa na interface do usuário. Essa funcionalidade está programada para 2023.
+   >   Essa contagem se aplica somente aos dados do evento, não aos dados do perfil ou da pesquisa. Se você tiver dados de perfil e pesquisa, a contagem será um pouco maior. No entanto, não há como relatar o uso de dados de perfil e pesquisa na interface do usuário no momento.
 
 1. Depois de ter uma soma de todas as linhas de dados do evento, procure o direito de “Linhas de dados” no contrato do Customer Journey Analytics que sua empresa assinou com a Adobe.
 
