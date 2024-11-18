@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 3d75dcc61d76a02f6cd77a62417fb775db959265
+source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 94%
+source-wordcount: '1078'
+ht-degree: 92%
 
 ---
 
@@ -67,6 +67,8 @@ ht-degree: 94%
       + [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
       + [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
       + [Adicionar o conjunto de dados do conector de origem do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+      + [Usar o conector de origem do Analytics exclusivamente](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
+      + [Mover do conector de origem do Analytics para o SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
    + Comparação com o Adobe Analytics {#cja-aa-comparison}
       + [Visão geral](../getting-started/aa-vs-cja/overview.md)
       + [Usar dados do Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
