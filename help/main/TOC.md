@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: a5425eccff643cd45fd630172b0113e646b2a9cc
 workflow-type: tm+mt
 source-wordcount: '1081'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -50,11 +50,11 @@ ht-degree: 92%
       + [Compreensão da implementação do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Criar conjuntos de dados de pesquisa para classificações](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
       + [Monitorar assimilação do conjunto de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + [Criar um campo derivado de canal de marketing](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-      + [Implementar a tag de carregamento para a extensão SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+      + [Criar um canal de marketing de campo derivado](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
+      + [Implementar a tag de carregamento para a extensão do SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Criar uma tag para sua propriedade](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-      + [Adicionar a extensão SDK da Web à sua tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-      + [Adicionar a lógica da coleção de dados XDM à sua tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+      + [Adicionar a extensão do SDK da Web à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+      + [Adicionar a lógica da coleção de dados XDM à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [Arquitetar seu esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
       + [Criar seu esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
       + [Usar seu esquema já existente](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
