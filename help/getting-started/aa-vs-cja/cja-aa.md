@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User
 source-git-commit: 221b73ef8dc0f7d28d13b8571955792367519849
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2320'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 
 | Recurso | Notas |
 | --- | --- |
-| **Advertising Cloud** | Você pode [coletar dados históricos para IDs AMO e IDs EF para uso no Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/advertising/integrations/analytics/planning/rvars-to-evars). |
+| **Advertising Cloud** | Você pode [coletar dados históricos de IDs AMO e IDs EF para uso no Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/advertising/integrations/analytics/planning/rvars-to-evars). |
 | **Alertas** | O processo de [uso de alertas no Customer Journey Analytics](/help/components/c-intelligent-alerts/alerts-feature-comparison.md) é quase idêntico ao uso de alertas no Adobe Analytics. <p>No entanto, devido ao tempo de coleção de dados no Customer Journey Analytics, os alertas por hora não estão disponíveis. No Customer Journey Analytics, os alertas podem ser configurados com frequência diária, semanal ou mensal.</p> |
 | **Analytics for Target (A4T)** | A [integração entre o Adobe Customer Journey Analytics e o Target](https://experienceleague.adobe.com/pt-br/docs/target/using/integrate/cja/target-reporting-in-cja) fornece análises eficientes e ferramentas que economizam tempo para seu programa de otimização. |
 | **Publicação de público-alvo** | Compatível se licenciado com produtos do Customer Data Platform ou Journey Optimizer da Adobe. A [Publicação de público-alvo](/help/components/audiences/audiences-overview.md) envia públicos-alvo para o Perfil do cliente em tempo real na Experience Platform. |
