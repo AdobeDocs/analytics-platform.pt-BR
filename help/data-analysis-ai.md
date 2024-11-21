@@ -3,10 +3,11 @@ description: Como fazer perguntas sobre a análise de dados da documentação do
 title: Assistente de IA de análise de dados no Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
+feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: cc743d74a98dae9029654add65d3e685320fe9f3
+source-git-commit: 20b578a6269aeaf54f6296b1f4337937887ecf05
 workflow-type: tm+mt
 source-wordcount: '1637'
 ht-degree: 3%
@@ -150,7 +151,7 @@ Estes são alguns exemplos de prompts comuns e quais visualizações o Assistent
 
 ## Solicitação de práticas recomendadas
 
-O Assistente de IA processa o contexto fornecido por cada prompt do usuário e tenta responder de forma inteligente com a visualização mais apropriada, bem como com os componentes em uma tabela de forma livre. No entanto, a resposta do Assistente de IA pode variar com base nas palavras e frases específicas usadas em um prompt, portanto, pequenas alterações de idioma podem levar a resultados diferentes. Veja como aproveitar ao máximo: <ul><li>Seja específico: inclua termos exatos (como &quot;vendas do mês passado na Califórnia&quot;) para restringir a resposta.</li><li>Usar métricas e filtros claros: adicionar métricas específicas (como &quot;Receita&quot;), dimensões (por exemplo, &quot;nome do site&quot;), filtros (como &quot;usuários do iPhone&quot;) e intervalos de datas (como &quot;últimos três meses&quot;) ajuda o Assistente do AI a se concentrar nos dados corretos.</li><li>Faça perguntas diretas: escreva perguntas diretamente, como &quot;Qual é a receita média por categoria de produto este ano?&quot; O facilita o fornecimento de insights claros e relevantes pelo Assistente de IA.</li></ul>
+O Assistente de IA processa o contexto fornecido por cada prompt do usuário e tenta responder de forma inteligente com a visualização mais apropriada, bem como com os componentes em uma tabela de forma livre. No entanto, a resposta do Assistente de IA pode variar com base nas palavras e frases específicas usadas em um prompt, portanto, pequenas alterações de idioma podem levar a resultados diferentes. Veja como aproveitar ao máximo: <ul><li>Ser específico: inclua termos exatos (como &quot;vendas do mês passado na Califórnia&quot;) para restringir a resposta.</li><li>Usar métricas e filtros claros: adicionar métricas específicas (como &quot;Receita&quot;), dimensões (por exemplo, &quot;nome do site&quot;), filtros (como &quot;usuários do iPhone&quot;) e intervalos de datas (como &quot;últimos três meses&quot;) ajuda o Assistente do AI a se concentrar nos dados corretos.</li><li>Faça perguntas diretas: escreva perguntas diretamente, como &quot;Qual é a receita média por categoria de produto este ano?&quot; O facilita o fornecimento de insights claros e relevantes pelo Assistente de IA.</li></ul>
 
 Consulte a tabela abaixo de termos de exemplo e frases que você pode usar em prompts com a visualização de dados no AI Assistant, juntamente com os tipos de respostas que você pode esperar. Esses exemplos são projetados para ajudá-lo a se familiarizar com a forma como palavras ou estruturas específicas podem influenciar a saída do Assistente de IA, garantindo insights mais precisos e valiosos. Observe que o Assistente de IA usa IA gerativa, portanto, as visualizações ou os dados selecionados podem variar um pouco entre prompts semelhantes.
 
