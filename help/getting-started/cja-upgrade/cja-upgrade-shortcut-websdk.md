@@ -6,14 +6,15 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8ef60cc3918b79919674e3c0478a2c1b1bd21d27
+exl-id: 83927cf0-b3b4-42b4-9ca5-0c81c091383f
+source-git-commit: daa07b603caa613ca49b61c2e8e461d558459f57
 workflow-type: tm+mt
 source-wordcount: '645'
-ht-degree: 46%
+ht-degree: 56%
 
 ---
 
-# Atalho de atualização: migrar uma implementação de extensão do AppMeasurement ou do Analytics para usar o SDK da Web {#shortcut-migrate-websdk}
+# Atalho de atualização: migrar uma implementação de extensão do AppMeasurement ou do Analytics para usar o SDK da web {#shortcut-migrate-websdk}
 
 >[!NOTE]
 >
@@ -23,8 +24,8 @@ ht-degree: 46%
 
 >[!CONTEXTUALHELP]
 >id="cja_migrate_aa_to_websdk"
->title="Migrar a implementação do Analytics para usar o SDK da Web"
->abstract="Em vez de enviar dados por meio de um objeto XDM, você pode enviar todas as variáveis no formato de AppMeasurement por meio do objeto de dados. Esse atalho permite que você continue usando a lógica do AppMeasurement para enviar dados para a Platform."
+>title="Migrar a sua implementação do Analytics para usar o SDK da web"
+>abstract="Em vez de enviar dados por meio de um objeto XDM, você pode enviar todas as variáveis no formato do AppMeasurement por meio do objeto de dados. Este atalho permite que você continue usando a lógica do AppMeasurement para enviar dados à Platform."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,4 +56,3 @@ As etapas básicas para migrar uma implementação de extensão do AppMeasuremen
 1. (Opcional) Crie um esquema XDM para sua organização assim que possível.
 
 1. (Condicional) Se você criou um esquema XDM, use o mapeamento de sequência de dados para mapear todos os campos no objeto de dados para o esquema XDM.
-
