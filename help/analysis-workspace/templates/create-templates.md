@@ -1,0 +1,84 @@
+---
+description: Uma visão geral de como usar modelos padrão no Analysis Workspace.
+title: Usar modelos
+feature: Workspace Basics
+role: User, Admin
+hide: true
+hidefromtoc: true
+source-git-commit: 96844fae07734e979e9dd4689d5eded6a7a3b926
+workflow-type: tm+mt
+source-wordcount: '458'
+ht-degree: 4%
+
+---
+
+# Criar e gerenciar modelos
+
+Os administradores podem criar modelos e salvá-los para que outras pessoas possam usá-los na empresa de logon.
+
+As pessoas na empresa de logon podem usar esses modelos de empresa conforme descrito em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).
+
+## Criar um modelo
+
+<!-- is this only admins? -->
+
+Para criar um novo modelo que pode ser usado por pessoas na empresa de logon:
+
+1. No Analysis Workspace, crie um projeto para o estado desejado.
+
+1. Selecione [!UICONTROL **Projeto**] > **[!UICONTROL Salvar como modelo...]**.
+
+   ![Relatório da empresa](assets/company-template-save.png)
+
+1. Especifique as seguintes informações na caixa de diálogo [!UICONTROL Salvar como modelo]:
+
+   | Campo | Descrição |
+   |---------|----------|
+   | **[!UICONTROL Nome]** | Forneça um nome descritivo para o modelo. |
+   | **[!UICONTROL Descrição]** | Forneça uma breve descrição do modelo que descreva suas finalidades. |
+   | **[!UICONTROL Por que usar este modelo]** | Forneça uma breve explicação para informar as pessoas na organização sobre como esse modelo pode ser usado. |
+   | **[!UICONTROL Canais]** | Escolha qualquer canal aplicável que se aplique a este modelo. Você pode selecionar vários canais: **[!UICONTROL Web]**, **[!UICONTROL Celular]**, **[!UICONTROL Entre canais]**, **[!UICONTROL Central de atendimento]** e **[!UICONTROL Na loja]**.<p>As seleções escolhidas determinam onde o modelo é exibido e quais filtros são aplicados aos usuários que o acessam na página Modelos da organização.</p> |
+   | **[!UICONTROL Casos de uso]** | Escolha qualquer caso de uso que se aplique a este modelo. Você pode selecionar vários casos de uso: **[!UICONTROL Envolvimento]**, **[!UICONTROL Conversão]**, **[!UICONTROL Público-alvo]** e **[!UICONTROL Aquisição]**. <p>As seleções escolhidas determinam onde o modelo é exibido e quais filtros são aplicados aos usuários que o acessam na página Modelos da organização.</p> |
+   | **[!UICONTROL Tags]** | Especifique as tags que deseja aplicar ao modelo. As pessoas podem filtrar a lista de modelos pelas tags adicionadas. |
+
+1. Selecione [!UICONTROL **Salvar como modelo**].
+
+Para obter informações sobre como os usuários podem criar um projeto com base em um modelo, consulte [Criar um projeto com base em um modelo](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).
+
+## Gerenciar modelos de empresa
+
+Os administradores podem excluir, renomear, marcar e aprovar modelos de empresa.
+
+Para exibir e gerenciar modelos de empresa:
+
+1. No Analysis Workspace, selecione a guia [!UICONTROL **Workspace**] e selecione a **[!UICONTROL guia Projetos]** no painel esquerdo.
+
+1. Selecione o ícone de filtro para filtrar a lista de projetos.
+
+1. No painel de filtros, selecione **OUTROS FILTROS** e **Modelos de empresa**.
+
+   Uma lista dos modelos de empresa é exibida. Nenhum projeto comum é exibido, a menos que esteja fixado.
+
+   Os modelos de empresa podem ser identificados pelo ![ícone de modelos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) que precede o nome do modelo.
+
+   <!-- Update screenshot -->
+
+   ![Exibir filtros de modelos de empresa](assets/company-reports-filter.png)
+
+1. Na lista de modelos, selecione um ou mais modelos de empresa.
+
+1. Clique no ícone de reticências **...** ao lado de um modelo para exibir as opções disponíveis.
+
+   <!-- Update screenshot -->
+
+   ![Ações do modelo de empresa](assets/company-reports-actions.png)
+
+1. Selecione **[!UICONTROL Excluir]**, **[!UICONTROL Renomear]**, **[!UICONTROL Marca]** ou **[!UICONTROL Aprovar]**).
+
+1. (Opcional) Para retornar à exibição normal, no painel de filtros, desmarque **[!UICONTROL Modelos de empresa]**.
+
+## Acessar um modelo de empresa
+
+Assim como com os modelos fornecidos pelo Adobe, você pode acessar os modelos criados pelas pessoas da sua organização.
+
+Para obter informações sobre como acessar um modelo de empresa, consulte [Acessar e executar um modelo](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).

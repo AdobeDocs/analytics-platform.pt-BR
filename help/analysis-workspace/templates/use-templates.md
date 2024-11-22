@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1345981ac78272935ffa8bfc50de8c41223a132f
+source-git-commit: 658fce422d8d5b59d113b5aa512eedee987afd06
 workflow-type: tm+mt
-source-wordcount: '15295'
+source-wordcount: '15373'
 ht-degree: 58%
 
 ---
@@ -33,9 +33,17 @@ As informações a seguir descrevem como acessar e usar modelos na guia [!UICONT
 
 1. No Adobe Analytics, selecione a guia [!UICONTROL **Espaço de trabalho**].
 
-1. Selecione [!UICONTROL **Modelos**].
+   ![Guias de modelos](assets/view-prebuilt-templates.png)
 
-   ![Guia Relatórios](assets/view-prebuilt-reports.png)
+1. Na seção [!UICONTROL **Modelos**], selecione uma das guias a seguir:
+
+   * **[!UICONTROL modelos de Adobe]**: mostra todos os modelos fornecidos pelo Adobe.
+
+   * **[!UICONTROL _login_company_name _modelos]**: mostra todos os modelos de empresa que foram criados para a em sua organização.
+
+     Os modelos de empresa só podem ser criados por um administrador.
+
+1. Escolha se deseja exibir modelos em uma exibição de coluna ou em uma exibição de cartão selecionando o ícone exibição de coluna ![ícone de exibição de coluna](assets/column-view-icon.png) ou um ícone de exibição de cartão ![ícone de exibição de cartão](assets/card-view-icon.png).
 
 1. No campo de pesquisa, comece digitando o nome do template que deseja localizar, em seguida, selecione-o na lista de templates.
 
@@ -61,19 +69,19 @@ As informações a seguir descrevem como acessar e usar modelos na guia [!UICONT
 
 1. Selecione o modelo para criar um relatório com base no modelo escolhido.
 
-## Personalizar e salvar um modelo {#use-reports}
+## Criar um projeto com base em um modelo {#use-reports}
 
-Um modelo pode não atender exatamente às suas necessidades, mas pode fazê-lo se aproximar. Nesses casos, você pode usar o modelo como ponto de partida e personalizá-lo para atender melhor às suas finalidades específicas.
+Um modelo pode não atender exatamente às suas necessidades, mas pode fazê-lo se aproximar. Nesses casos, você pode usar o modelo como ponto de partida para o seu projeto e personalizá-lo para atender melhor às suas finalidades específicas.
 
 Se você sair de um modelo depois de fazer alterações, será solicitado a salvar ou descartar as alterações. Salvar as alterações em um modelo salva o modelo como um novo projeto.
 
-Para personalizar e salvar um modelo:
+Para personalizar um modelo e salvá-lo como um projeto:
 
 1. No Adobe Analytics, selecione a guia [!UICONTROL **Espaço de Trabalho**].
 
 1. Selecione a guia [!UICONTROL **Modelos**].
 
-1. Selecione o modelo que deseja exibir. Por exemplo, em [!UICONTROL **Mais popular**], selecione o relatório [!UICONTROL **Páginas**].
+1. Selecione o modelo que deseja exibir. Por exemplo, em [!UICONTROL **Mais popular**], selecione o modelo [!UICONTROL **Páginas**].
 
    O modelo Páginas, conforme exibido no Analysis Workspace, mostra duas [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) ([Gráfico de barras](/help/analysis-workspace/visualizations/bar.md) e [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md)) e uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md). A métrica usada é Ocorrências.
 
@@ -82,7 +90,7 @@ Para personalizar e salvar um modelo:
 1. Siga um destes procedimentos:
 
    * Visualize o modelo.
-   * Arraste um ou mais segmentos para a zona de destino Segmentos na parte superior. Por exemplo, arraste o segmento [!UICONTROL **Clientes móveis**] e veja os resultados.
+   * Arraste um ou mais filtros para a área de Filtro na parte superior. Por exemplo, arraste o filtro [!UICONTROL **Clientes de dispositivos móveis**] e exiba os resultados.
    * Altere o intervalo de datas acessando o calendário no canto superior direito.
    * Adicione detalhamentos de dimensão, arraste outras métricas e, em geral, personalize o modelo para atender às suas necessidades.
 
