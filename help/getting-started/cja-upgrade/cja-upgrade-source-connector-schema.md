@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: fad62c04-b435-466a-ab3c-cf2d174ddbfb
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 1%
+source-wordcount: '537'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,11 @@ Para usar o conector de origem do Analytics para trazer dados históricos para o
 
 1. Crie um esquema XDM para o conector de origem do Analytics, conforme descrito abaixo.
 
-1. [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. Se você ainda não tiver um conector de origem do Analytics, [crie o conector de origem do Analytics e mapeie os campos para o esquema XDM](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   Ou
+
+   Se você já tiver um conector de origem do Analytics, [mapeie os campos do conector de origem para o esquema XDM](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. [Adicionar o conjunto de dados do conector de origem do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
@@ -40,11 +44,11 @@ Para usar o conector de origem do Analytics para trazer dados históricos para o
 
 Você já deve [ter criado um novo esquema XDM](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md) para a implementação do SDK da Web do Experience Platform para usar com o Customer Journey Analytics. Este esquema deve conter todos os grupos de campos para os quais você planeja coletar dados.
 
-Além do esquema XDM já criado para a implementação do SDK da Web, agora é necessário criar um segundo esquema XDM para usar com o conector de origem do Analytics para trazer dados históricos para o Customer Journey Analytics.
+Agora é necessário usar esses mesmos grupos de campos do esquema do SDK da Web e adicioná-los a um novo esquema que pode ser usado com o conector de origem do Analytics.
 
-Este segundo schema precisa conter:
+Este esquema do conector de origem do Analytics precisa conter:
 
-* Todos os grupos de campos (incluindo quaisquer grupos de campos personalizados) incluídos no esquema criado para a implementação do SDK da Web. (Todos os campos personalizados que não fazem parte de um grupo de campos padrão devem ter sido adicionados ao esquema do SDK da Web como parte de um grupo de campos personalizado.)
+* Todos os grupos de campos (incluindo quaisquer grupos de campos personalizados criados) incluídos no esquema personalizado criado para a implementação do SDK da Web. (Todos os campos personalizados que não fazem parte de um grupo de campos padrão devem ter sido adicionados ao esquema do SDK da Web como parte de um grupo de campos personalizado.)
 
 * O grupo de campos Modelo de evento de experiência do Adobe Analytics
 

@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 5ce69400a01566728f374d68ac08a981adfd8b6e
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '889'
 ht-degree: 27%
 
 ---
@@ -32,7 +32,11 @@ Para usar o conector de origem do Analytics para trazer dados históricos para o
 
 1. [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+1. Se você ainda não tiver um conector de origem do Analytics, [crie o conector de origem do Analytics e mapeie os campos para o esquema XDM](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+
+   Ou
+
+   Se você já tiver um conector de origem do Analytics, [mapeie os campos do conector de origem para o esquema XDM](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. Adicione o conjunto de dados do conector de origem do Analytics à conexão, conforme descrito abaixo.
 
@@ -83,20 +87,26 @@ Para adicionar o conjunto de dados criado automaticamente à mesma conexão cria
 
 1. Na seção **[!UICONTROL Preenchimento retroativo de conjunto de dados]**, selecione **[!UICONTROL Solicitar preenchimento retroativo]**.
 
-1. Defina o período que deseja incluir no preenchimento retroativo inserindo as datas de início e término ou selecionando o ícone de calendário ![Calendário](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
+1. Defina o período que você deseja que o preenchimento retroativo de conexão no Customer Journey Analytics inclua inserindo as datas de início e término ou selecionando o ícone de calendário ![Calendário](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
 
-   O conector de origem do Analytics importa 13 meses de dados (independentemente do tamanho) para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é de 3 meses.
+   Seja explícito ao especificar as datas solicitadas para preenchimento retroativo. Dependendo de vários fatores, você pode querer executar um dos seguintes procedimentos:
 
-   >[!IMPORTANT]
-   >
-   >Seja explícito ao especificar as datas solicitadas para preenchimento retroativo. A data de término deve ser a data quando você começou a coletar dados pela primeira vez com a implementação do SDK da Web.
-   >
-   >Como alternativa, você pode escolher uma data logo após a data em que começou a coletar dados com a implementação do SDK da Web e, em seguida, usar segmentos para filtrar os dados sobrepostos.
+   * Escolha uma data de término que seja a mesma data de quando você começou a coletar dados com a implementação do SDK da Web.
+
+   * Escolha uma data de término que seja logo após a data em que você começou a coletar dados com a implementação do SDK da Web e, em seguida, use segmentos de visualização de dados para filtrar os dados sobrepostos.
+
+   * Escolha uma data de término que resulte em uma maior sobreposição de dados e, em seguida, use segmentos de visualização de dados para filtrar os dados sobrepostos.
+
+     **Observação:** essa opção resultaria em aumento de custos porque haveria mais linhas na conexão.
 
    <!-- Include any of the following?  Make sure you're explicit as to the dates you request backfill to. You want to request it to the date that you start gathering data with your Web SDK implementation. Also possibly include segments for any overlapping date. So you could request everything and then use a segment to exclude data that you don't want. That way if you need to move up the date, then you could change the date in the filter. Downside would be that you might pay for double rows.  When they do that, they're going to see all schema fields from both their custom schema and their Analytics schema. So they'll need to be cognizant to select the right fields, and never select any Analytics fields, because they will be mapped as part of the source connector. Never select any Analytics field group fields because they'll be mapped.  -->
 
 1. Selecione **[!UICONTROL Preenchimento retroativo de fila]**.
 
 1. Selecione **[!UICONTROL Adicionar conjuntos de dados]** e **[!UICONTROL Salvar]** para salvar a conexão.
+
+1. (Condicional) Se estiver usando conjuntos de dados de pesquisa, você deverá criar o conjunto de dados de pesquisa e adicioná-lo à sua conexão. Para obter mais informações, consulte [Criar conjuntos de dados de pesquisa para classificar dados no Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
+
+   Isso é necessário somente se você ainda não tiver feito isso ao configurar a implementação do SDK da Web.
 
 1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).

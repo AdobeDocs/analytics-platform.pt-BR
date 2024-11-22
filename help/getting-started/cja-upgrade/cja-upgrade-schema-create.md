@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: ce19cf00d70220b6d7dcdfaeb1d4c9ec5c14e5dd
+source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1073'
 ht-degree: 48%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 48%
 >
 >Antes de começar a criar seu esquema XDM, trabalhe com sua equipe de dados e outras partes interessadas em toda a organização para identificar o design de esquema ideal para o Customer Journey Analytics e outros aplicativos da Adobe Experience Platform que você usa. Para obter mais informações, consulte [Criar o esquema para uso com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-O Adobe recomenda criar um esquema do Experience Data Model (XDM) ao atualizar para o Customer Journey Analytics. Um esquema XDM permite um esquema simplificado adaptado às necessidades da sua organização e dos aplicativos específicos da Platform que você usa. Quando é preciso realizar alterações no esquema, não é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.
+O Adobe recomenda criar um esquema personalizado do Experience Data Model (XDM) ao atualizar para o Customer Journey Analytics. Um esquema personalizado permite um esquema simplificado adaptado às necessidades da sua organização e dos aplicativos específicos da Platform que você usa. Quando é preciso realizar alterações no esquema, não é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.
 
 ## Criar o esquema
 
 O esquema XDM definido representa o modelo dos dados coletados na Adobe Experience Platform.
 
-Para criar um esquema:
+Para criar um schema personalizado:
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 

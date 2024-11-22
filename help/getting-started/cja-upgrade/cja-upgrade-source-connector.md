@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: aedf7a2ad41b09521938b789dbaf1c193cdb661f
+source-git-commit: 0a47796a8b673ef7074a4f9fe865ff59fcf50aab
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 2%
+source-wordcount: '689'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,11 @@ Para usar o conector de origem do Analytics para trazer dados históricos para o
 
 1. [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
 
-1. Crie o conector de origem do Analytics e mapeie os campos, conforme descrito abaixo.
+1. Se ainda não tiver um conector de origem do Analytics, crie o conector de origem do Analytics e mapeie os campos para o esquema XDM, conforme descrito abaixo.
+
+   Ou
+
+   Se você já tiver um conector de origem do Analytics, [mapeie os campos do conector de origem para o esquema XDM](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
 
 1. [Adicionar o conjunto de dados do conector de origem do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
 
@@ -69,6 +73,8 @@ Para criar um conector de origem do Adobe Analytics a ser usado para dados hist�
    ![mapear campos de esquema](assets/schema-mapping.png)
 
    1. No **[!UICONTROL campo Source]**, selecione um campo Adobe Analytics do grupo de campos Modelo de evento de experiência do Adobe Analytics. Em seguida, no **[!UICONTROL Campo de destino]**, selecione o campo XDM para o qual você deseja mapeá-lo.
+
+      Nem todos os campos do Adobe Analytics têm um campo correspondente no XDM devido às diferenças de arquitetura inerentes entre o AppMeasurement e o XDM.
 
    1. Repita esse processo para cada campo no grupo de campos Modelo de evento de experiência do Adobe Analytics que você está usando para coletar dados no Adobe Analytics.
 
