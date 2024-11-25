@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 658fce422d8d5b59d113b5aa512eedee987afd06
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 97%
       + [Processo recomendado](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
       + [Compreensão da implementação do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
       + [Criar conjuntos de dados de pesquisa para classificações](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
-      + [Monitorar assimilação do conjunto de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
+      + [Monitoramento da ingestão de conjuntos de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
       + [Criar um canal de marketing de campo derivado](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Implementar a tag de carregamento para a extensão do SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Criar uma tag para sua propriedade](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
