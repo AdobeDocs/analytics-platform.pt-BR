@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 8bcc6b3b2a1e6f75bd0c868f77a375913412f988
+source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 1%
@@ -26,11 +26,11 @@ Semelhante aos dados de classificações no Adobe Analytics, os conjuntos de dad
 
 Ao usar o conector de origem do Analytics, alguns conjuntos de dados de pesquisa padrão são aplicados automaticamente no momento do relatório. Para obter mais informações, consulte [Adicionar pesquisas padrão aos seus conjuntos de dados](/help/connections/standard-lookups.md).
 
-Para classificar dados no Customer Journey Analytics ao usar o SDK da Web do Experience Platform, é necessário criar um esquema XDM e um conjunto de dados de pesquisa para cada dimensão que contenha dados que você deseja classificar.
+Para classificar dados no Customer Journey Analytics ao usar o SDK da Web do Experience Platform, é necessário criar um esquema personalizado e um conjunto de dados de pesquisa para cada dimensão que contenha dados que você deseja classificar.
 
-## Criar um esquema XDM para usar com o conjunto de dados de pesquisa
+## Criar um esquema personalizado para usar com o conjunto de dados de pesquisa
 
-Crie um novo esquema XDM para cada dimensão que contenha dados que você deseja classificar no Customer Journey Analytics. Ao criar o conjunto de dados de pesquisa em uma etapa posterior, ele fará referência a esse esquema.
+Crie um novo esquema personalizado para cada dimensão que contenha dados que você deseja classificar no Customer Journey Analytics. Ao criar o conjunto de dados de pesquisa em uma etapa posterior, ele fará referência a esse esquema.
 
 Repita esse processo para cada dimensão que contenha dados que você deseja classificar.
 
@@ -58,7 +58,7 @@ Para criar um esquema para usar com um conjunto de dados de pesquisa no Customer
 
 ## Criar um conjunto de dados de pesquisa
 
-Depois de [criar um esquema XDM](#create-an-xdm-schema-for-lookup-datasets) para usar em um conjunto de dados de pesquisa, você precisa criar o conjunto de dados de pesquisa e mapeá-lo para o esquema.
+Depois de [criar um esquema personalizado](#create-a-custom-schema-to-use-with-the-lookup-dataset) para usar em um conjunto de dados de pesquisa, você precisa criar o conjunto de dados de pesquisa e mapeá-lo para o esquema.
 
 Repita esse processo para cada dimensão que contenha dados que você deseja classificar.
 
@@ -100,7 +100,7 @@ Para criar um conjunto de dados de pesquisa para uso com um esquema no Customer 
 
 ## Adicionar o conjunto de dados de pesquisa à sua conexão no Customer Journey Analytics
 
-Depois de [criar um esquema XDM](#create-an-xdm-schema-for-lookup-datasets) e [criar um conjunto de dados de pesquisa](#create-a-lookup-dataset), é necessário adicionar o conjunto de dados de pesquisa à sua conexão no Customer Journey Analytics.
+Depois de [criar um esquema personalizado](#create-a-custom-schema-to-use-with-the-lookup-dataset) e [criar um conjunto de dados de pesquisa](#create-a-lookup-dataset), é necessário adicionar o conjunto de dados de pesquisa à sua conexão no Customer Journey Analytics.
 
 Repita esse processo para cada dimensão que contenha dados que você deseja classificar.
 
