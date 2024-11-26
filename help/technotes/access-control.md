@@ -6,10 +6,10 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 8676497c9341e3ff74d1b82ca79bc1e73caf514f
+source-git-commit: 354bdb440e36dc990f54d887908f9fb9c0a50110
 workflow-type: tm+mt
-source-wordcount: '1469'
-ht-degree: 15%
+source-wordcount: '1549'
+ht-degree: 14%
 
 ---
 
@@ -65,6 +65,16 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
   | [!UICONTROL Identity Management] | [!UICONTROL Exibir Namespaces De Identidade] | Acesso somente leitura para namespaces de identidade. |
 
   Para obter mais informações sobre permissões de Experience Platform, consulte [Gerenciar permissões para um perfil de produto](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+
+
+* Se o Adobe Journey Optimizer foi integrado ao CJA, onde existem Conexões do AJO, as permissões do Jornada também devem ser adicionadas para acessar Conexões:
+
+  | Categoria | Permissão | Descrição |
+  |---|---|---|
+  | [!UICONTROL Jornadas] | [!UICONTROL Exibir Eventos, Fontes de Dados e Ações do Jornada] | Acesso somente leitura a eventos do jornada, ações personalizadas do jornada e fontes de dados do jornada. |
+  | [!UICONTROL Jornadas] | [!UICONTROL Gerenciar Eventos, Fontes de Dados e Ações do Jornada] | Ler, criar, editar e excluir eventos, fontes ou ações. |
+  | [!UICONTROL Jornadas] | [!UICONTROL Exibir Jornadas] | Acesso somente leitura a jornadas. |
+  | [!UICONTROL Jornadas] | [!UICONTROL Gerenciar Jornadas] | Ler, criar, editar e excluir jornadas. |
 
 * Exportar conjuntos de dados para [destinos](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
 
