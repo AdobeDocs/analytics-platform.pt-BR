@@ -5,9 +5,10 @@ feature: Workspace Basics
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 96844fae07734e979e9dd4689d5eded6a7a3b926
+exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
+source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '573'
 ht-degree: 4%
 
 ---
@@ -20,15 +21,13 @@ As pessoas na empresa de logon podem usar esses modelos de empresa conforme desc
 
 ## Criar um modelo
 
-<!-- is this only admins? -->
-
 Para criar um novo modelo que pode ser usado por pessoas na empresa de logon:
 
 1. No Analysis Workspace, crie um projeto para o estado desejado.
 
 1. Selecione [!UICONTROL **Projeto**] > **[!UICONTROL Salvar como modelo...]**.
 
-   ![Relatório da empresa](assets/company-template-save.png)
+   ![Modelo de empresa](assets/company-template-save.png)
 
 1. Especifique as seguintes informações na caixa de diálogo [!UICONTROL Salvar como modelo]:
 
@@ -45,11 +44,37 @@ Para criar um novo modelo que pode ser usado por pessoas na empresa de logon:
 
 Para obter informações sobre como os usuários podem criar um projeto com base em um modelo, consulte [Criar um projeto com base em um modelo](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).
 
-## Gerenciar modelos de empresa
+## Editar ou excluir modelos
 
-Os administradores podem excluir, renomear, marcar e aprovar modelos de empresa.
+Os administradores podem editar ou excluir modelos de empresa.
 
-Para exibir e gerenciar modelos de empresa:
+1. No Analysis Workspace, selecione a guia [!UICONTROL **Workspace**] e selecione **[!UICONTROL _login_company_name _templates]**.
+
+1. Se você estiver exibindo modelos em um modo de exibição de coluna ![ícone de modo de exibição de coluna](assets/column-view-icon.png):
+
+   1. Vá para o modelo que deseja editar ou excluir e selecione o ícone de informações ao lado do nome do modelo.
+
+      ![Informações do modelo de empresa](assets/company-template-info.png)
+
+   1. Selecione **[!UICONTROL Visualizar]**.
+
+   1. Selecione o ícone Mais e selecione **[!UICONTROL Editar]** ou **[!UICONTROL Excluir]**.
+
+      ![Editar ou excluir modelo](assets/company-template-edit-delete.png)
+
+1. Se você estiver visualizando modelos em um modo de exibição de cartão ![ícone de modo de exibição de cartão](assets/card-view-icon.png):
+
+   1. Localize o modelo que deseja editar ou excluir.
+
+      ![Exibição de cartão de modelo de empresa](assets/company-template-cards.png)
+
+   1. Selecione o ícone Mais e selecione **[!UICONTROL Editar]** ou **[!UICONTROL Excluir]**.
+
+      ![Edição ou exclusão do cartão de modelo de empresa](assets/company-template-card-edit-delete.png)
+
+## Renomear, marcar ou aprovar modelos
+
+Os administradores podem renomear, marcar e aprovar modelos de empresa.
 
 1. No Analysis Workspace, selecione a guia [!UICONTROL **Workspace**] e selecione a **[!UICONTROL guia Projetos]** no painel esquerdo.
 
@@ -61,24 +86,20 @@ Para exibir e gerenciar modelos de empresa:
 
    Os modelos de empresa podem ser identificados pelo ![ícone de modelos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileTemplate_18_N.svg) que precede o nome do modelo.
 
-   <!-- Update screenshot -->
-
-   ![Exibir filtros de modelos de empresa](assets/company-reports-filter.png)
-
-1. Na lista de modelos, selecione um ou mais modelos de empresa.
+   ![Exibir filtros de modelos de empresa](assets/company-templates-filter.png)
 
 1. Clique no ícone de reticências **...** ao lado de um modelo para exibir as opções disponíveis.
 
-   <!-- Update screenshot -->
+   ![Ações do modelo de empresa](assets/company-templates-actions.png)
 
-   ![Ações do modelo de empresa](assets/company-reports-actions.png)
+1. Selecione **[!UICONTROL Renomear]**, **[!UICONTROL Marca]** ou **[!UICONTROL Aprovar]**.
 
-1. Selecione **[!UICONTROL Excluir]**, **[!UICONTROL Renomear]**, **[!UICONTROL Marca]** ou **[!UICONTROL Aprovar]**).
+   Você também pode excluir um modelo ou pode excluir um modelo conforme descrito em [Editar ou excluir modelos](#edit-or-delete-templates).
 
 1. (Opcional) Para retornar à exibição normal, no painel de filtros, desmarque **[!UICONTROL Modelos de empresa]**.
 
 ## Acessar um modelo de empresa
 
-Assim como com os modelos fornecidos pelo Adobe, você pode acessar os modelos criados pelas pessoas da sua organização.
+Assim como nos modelos fornecidos pelo Adobe, os usuários na organização podem acessar os modelos criados pelos administradores.
 
 Para obter informações sobre como acessar um modelo de empresa, consulte [Acessar e executar um modelo](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).
