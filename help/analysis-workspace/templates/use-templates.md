@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
+source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
 workflow-type: tm+mt
-source-wordcount: '15383'
-ht-degree: 79%
+source-wordcount: '15449'
+ht-degree: 78%
 
 ---
 
@@ -43,7 +43,11 @@ As informações a seguir descrevem como acessar e usar modelos na guia [!UICONT
 
      Os modelos de empresa só podem ser criados por um administrador. Para obter informações sobre como criar um modelo de empresa, consulte [Criar e gerenciar modelos](/help/analysis-workspace/templates/create-templates.md).
 
-1. Escolha se deseja exibir modelos em uma exibição de coluna ou em uma exibição de cartão selecionando o ícone exibição de coluna ![ícone de exibição de coluna](assets/column-view-icon.png) ou o ícone de exibição de cartão ![ícone de exibição de cartão](assets/card-view-icon.png).
+1. Use uma das opções a seguir para alterar a exibição dos modelos disponíveis:
+
+   * Escolha se deseja exibir modelos em uma exibição de coluna ou em uma exibição de cartão selecionando o ícone exibição de coluna ![ícone de exibição de coluna](assets/column-view-icon.png) ou o ícone de exibição de cartão ![ícone de exibição de cartão](assets/card-view-icon.png).
+
+   * Ao usar o ![ícone de exibição de cartão](assets/card-view-icon.png), escolha entre as seguintes ordens de classificação: **[!UICONTROL Mais usadas recentemente]**, **[!UICONTROL Mais populares]**, **[!UICONTROL Alfabética]**, **[!UICONTROL Categórica]**.
 
 1. No campo de pesquisa, comece digitando o nome do template que deseja localizar, em seguida, selecione-o na lista de templates.
 
@@ -57,17 +61,23 @@ As informações a seguir descrevem como acessar e usar modelos na guia [!UICONT
 
    Para obter uma lista de modelos disponíveis, consulte a seção [Modelos disponíveis](#available-templates) abaixo.
 
-1. (Opcional) Visualize e use modelos que contêm componentes que não estão disponíveis na sua visualização de dados. (Por padrão, os únicos modelos mostrados são aqueles que usam componentes disponíveis na visualização de dados.)
+1. (Opcional) Visualize e use modelos que contêm componentes que não estão disponíveis na sua visualização de dados. (Por padrão, os modelos são exibidos somente se usarem componentes disponíveis na visualização de dados.)
 
-   1. Selecionar (nome da opção de filtro?) para mostrar modelos que exigem componentes adicionais.
+   1. Selecione o ícone de filtro.
 
-      <!-- add screenshot -->
+   1. Selecione **[!UICONTROL Não está pronto para uso]** para mostrar modelos que exigem componentes adicionais.
 
-   1. Selecione o template que deseja usar.
-
-   1. Se o modelo contiver componentes que não estão disponíveis na visualização de dados, uma mensagem será exibida indicando quais componentes estão ausentes. Clique em (botão?) para ir para a visualização de dados, onde é possível criá-los automaticamente. <!--how do you do this? Walk through the process -->
+      ![Usar um modelo sem componentes](assets/template-not-ready.png)
 
 1. Selecione o modelo para criar um relatório com base no modelo escolhido.
+
+1. (Condicional) Se o modelo contiver componentes que não estão disponíveis na visualização de dados, a caixa de diálogo Visualização de dados incompatível será exibida, declarando que a visualização de dados é incompatível com o modelo e mostrando quais componentes estão ausentes.
+
+   Siga um destes procedimentos:
+
+   * Escolha uma exibição de dados diferente no menu suspenso **[!UICONTROL Alterar exibição de dados]**.
+
+   * Selecione **[!UICONTROL Continuar mesmo assim]** para exibir o modelo com os componentes ausentes.
 
 ## Criar um projeto com base em um modelo {#use-reports}
 

@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: b9ab9a7cb07759f4be8eae0f1d29eba4d5fa1be3
+source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '581'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Para criar um novo modelo que pode ser usado por pessoas na empresa de logon:
    |---------|----------|
    | **[!UICONTROL Nome]** | Forneça um nome descritivo para o modelo. |
    | **[!UICONTROL Descrição]** | Forneça uma breve descrição do modelo que descreva suas finalidades. |
-   | **[!UICONTROL Por que usar este modelo]** | Forneça uma breve explicação para informar as pessoas na organização sobre como esse modelo pode ser usado. |
+   | **[!UICONTROL Por que usar este modelo]** | Forneça uma breve explicação para informar as pessoas na organização sobre como esse modelo pode ser usado. Essa explicação é exibida na página Visualização do modelo. |
    | **[!UICONTROL Canais]** | Escolha qualquer canal aplicável que se aplique a este modelo. Você pode selecionar vários canais: **[!UICONTROL Web]**, **[!UICONTROL Celular]**, **[!UICONTROL Entre canais]**, **[!UICONTROL Central de atendimento]** e **[!UICONTROL Na loja]**.<p>As seleções escolhidas determinam onde o modelo é exibido e quais filtros são aplicados aos usuários que o acessam na página Modelos da organização.</p> |
    | **[!UICONTROL Casos de uso]** | Escolha qualquer caso de uso que se aplique a este modelo. Você pode selecionar vários casos de uso: **[!UICONTROL Envolvimento]**, **[!UICONTROL Conversão]**, **[!UICONTROL Público-alvo]** e **[!UICONTROL Aquisição]**. <p>As seleções escolhidas determinam onde o modelo é exibido e quais filtros são aplicados aos usuários que o acessam na página Modelos da organização.</p> |
    | **[!UICONTROL Tags]** | Especifique as tags que deseja aplicar ao modelo. As pessoas podem filtrar a lista de modelos pelas tags adicionadas. |
