@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
-workflow-type: ht
+source-git-commit: 1158064d46e09435ec2507c47e6e484306ac5a53
+workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -43,7 +43,7 @@ As informações a seguir descrevem as configurações que um componente de visu
 | [!UICONTROL Nome do componente] | Obrigatório. Permite especificar o nome amigável que aparecerá no Analysis Workspace. É possível renomear um componente, dando a ele um nome específico para a visualização de dados. |
 | [!UICONTROL Descrição] | Opcional, mas recomendado. Fornece informações sobre o componente para outros usuários. |
 | [!UICONTROL Tags] | Opcional. Permite marcar o componente com tags personalizadas ou prontas para uso para facilitar a pesquisa/filtragem na interface do Analysis Workspace. |
-| [!UICONTROL Rótulos de contexto] | Opcional. Uma lista suspensa de rótulos definidos pelo sistema que podem ser aplicados a um componente. Estes rótulos podem ser necessários para definir um conjunto de componentes que você pode usar nos relatórios de experimentação por meio do [painel Experimentação](/help/analysis-workspace/c-panels/experimentation.md) em projetos do Analysis Workspace. Consulte [Integrar ao Journey Optimizer](/help/integrations/ajo.md#data-view) e [Relatórios de metas](/help/integrations/at.md) para mais informações. |
+| [!UICONTROL Rótulos de contexto] | Opcional. Uma lista suspensa de rótulos definidos pelo sistema que podem ser aplicados a um componente. Esses rótulos podem ser necessários para definir um conjunto de componentes que você pode usar nos relatórios de experimentação usando o [painel de Experimentação](/help/analysis-workspace/c-panels/experimentation.md) em projetos Analysis Workspace. Consulte [Integrar ao Journey Optimizer](/help/integrations/ajo.md#data-view) e [Relatórios de metas](/help/integrations/at.md) para mais informações. |
 | [!UICONTROL Nome do campo de esquema] | O nome do campo de esquema. |
 | [!UICONTROL Tipo de conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de conjunto de dados (evento, pesquisa ou perfil) o componente veio. |
 | [!UICONTROL Conjunto de dados] | Um campo não editável que mostra de qual conjunto de dados o componente se originou. Este campo pode conter vários conjuntos de dados. |
