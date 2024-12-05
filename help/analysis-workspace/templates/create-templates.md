@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
+source-git-commit: d1aee7ccdcea2794efd9db5d6dbf46cba4087030
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 4%
+source-wordcount: '1041'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ Para obter informações sobre como os usuários podem criar um projeto com base
 
 Os administradores podem editar ou excluir modelos de empresa.
 
-1. No Analysis Workspace, selecione a guia [!UICONTROL **Workspace**] e selecione **[!UICONTROL _login_company_name _templates]**.
+1. No Analysis Workspace, selecione a guia [!UICONTROL **Workspace**] e, em **[!UICONTROL Modelos]** no painel esquerdo, selecione **[!UICONTROL _login_company_name _modelos]**.
 
 1. Se você estiver exibindo modelos em um modo de exibição de coluna ![ícone de modo de exibição de coluna](assets/column-view-icon.png):
 
@@ -67,6 +67,8 @@ Os administradores podem editar ou excluir modelos de empresa.
    1. Localize o modelo que deseja editar ou excluir.
 
       ![Exibição de cartão de modelo de empresa](assets/company-template-cards.png)
+
+   1. Passe o mouse sobre o modelo e selecione **[!UICONTROL Visualizar]**.
 
    1. Selecione o ícone Mais e selecione **[!UICONTROL Editar]** ou **[!UICONTROL Excluir]**.
 
@@ -97,6 +99,73 @@ Os administradores podem renomear, marcar e aprovar modelos de empresa.
    Você também pode excluir um modelo ou pode excluir um modelo conforme descrito em [Editar ou excluir modelos](#edit-or-delete-templates).
 
 1. (Opcional) Para retornar à exibição normal, no painel de filtros, desmarque **[!UICONTROL Modelos de empresa]**.
+
+## Adicionar componentes ausentes à visualização de dados de um determinado modelo
+
+Por padrão, alguns modelos fornecidos pelo Adobe não funcionarão porque contêm componentes que não estão na visualização de dados.
+
+Para cada componente ausente, um rótulo de contexto correspondente está disponível na visualização de dados. Você precisa adicionar o rótulo de contexto correspondente a um componente que já está em sua visualização de dados ou adicionar um novo componente à visualização de dados e adicionar o rótulo de contexto a ela.
+
+Para adicionar componentes ausentes a um modelo:
+
+1. No Analysis Workspace, selecione a guia [!UICONTROL **Workspace**] e, em **[!UICONTROL Modelos]** no painel esquerdo, selecione **[!UICONTROL modelos de Adobe]**.
+
+1. Selecione o ícone de filtro para filtrar a lista de modelos.
+
+1. Selecione **[!UICONTROL Não está pronto para uso]** para mostrar modelos que exigem componentes que não estão na sua visualização de dados.
+
+   ![Usar um modelo sem componentes](assets/template-not-ready.png)
+
+1. Localize um modelo que ainda não esteja pronto para uso com sua visualização de dados.
+
+1. Siga um destes procedimentos:
+
+   * **Se você estiver exibindo modelos em uma exibição de coluna** ![ícone de exibição de coluna](assets/column-view-icon.png):
+
+      1. Vá para o modelo que ainda não está pronto para uso com a visualização de dados e selecione o ícone de informações ao lado do nome do modelo.
+
+         ![Informações do modelo de empresa](assets/company-template-info.png)
+
+      1. Selecione **[!UICONTROL Visualizar]**.
+
+         ![Página de visualização do modelo](assets/template-preview.png)
+
+   * **Se você estiver exibindo modelos em um modo de exibição de cartão** ![ícone de modo de exibição de cartão](assets/card-view-icon.png):
+
+      1. Localize o modelo que ainda não está pronto para uso com sua visualização de dados.
+
+         ![Exibição de cartão de modelo de empresa](assets/company-template-cards.png)
+
+      1. Passe o mouse sobre o modelo e selecione **[!UICONTROL Visualizar]**.
+
+         ![Página de visualização do modelo](assets/template-preview.png)
+
+1. Na seção **[!UICONTROL Componentes ausentes]**, é exibida uma lista de componentes ausentes da visualização de dados. Selecione **[!UICONTROL Adicionar estes componentes à visualização de dados]**.
+
+   A página de configuração da visualização de dados é exibida em uma nova guia.
+
+1. Selecione a guia **[!UICONTROL Componentes]** para a exibição de dados.
+
+   ![Guia Componentes de visualização de dados](assets/template-dataview.png)
+
+1. Para cada componente listado como ausente do modelo, siga um destes procedimentos na guia **[!UICONTROL Componentes]**:
+
+   * Na seção **[!UICONTROL Componentes incluídos]**, selecione um componente que já esteja incluído na visualização de dados que você deseja usar para o componente ausente.
+
+   * Adicione um novo componente à visualização de dados que você deseja usar para o componente ausente e selecione o componente.
+
+     Para adicionar um novo componente à visualização de dados, pesquise a lista de campos de esquema e arraste-o para a seção **[!UICONTROL Componentes incluídos]**.
+
+1. Com o componente selecionado, localize o menu suspenso **[!UICONTROL Rótulos de contexto]** na coluna direita.
+
+   ![Guia Componentes de visualização de dados](assets/template-dataview-context-label.png)
+
+1. No menu suspenso **[!UICONTROL Rótulos de contexto]**, selecione o rótulo de contexto com o mesmo nome do componente ausente.
+
+1. Selecione **[!UICONTROL Salvar e continuar]**.
+
+1. Para cada componente ausente, repita o processo de adicionar o rótulo de contexto correspondente a um componente na visualização de dados.
+
 
 ## Acessar um modelo de empresa
 

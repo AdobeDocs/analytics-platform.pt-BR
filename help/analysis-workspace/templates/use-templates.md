@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 8561f14d5b428e55614fe1465f75d2be6660468d
+source-git-commit: bf3eb96ac3c764c73f4131b8ddd05809994f08df
 workflow-type: tm+mt
-source-wordcount: '15449'
+source-wordcount: '15490'
 ht-degree: 78%
 
 ---
@@ -61,7 +61,11 @@ As informações a seguir descrevem como acessar e usar modelos na guia [!UICONT
 
    Para obter uma lista de modelos disponíveis, consulte a seção [Modelos disponíveis](#available-templates) abaixo.
 
-1. (Opcional) Visualize e use modelos que contêm componentes que não estão disponíveis na sua visualização de dados. (Por padrão, os modelos são exibidos somente se usarem componentes disponíveis na visualização de dados.)
+1. (Opcional) É possível visualizar modelos que contêm componentes que não estão disponíveis na visualização de dados. (Por padrão, os modelos são exibidos somente se usarem componentes disponíveis na visualização de dados.)
+
+   >[!NOTE]
+   >
+   >   Antes de usar esses modelos, um administrador deve primeiro adicionar os rótulos de contexto necessários para esses componentes ausentes à visualização de dados. Para obter mais informações, consulte [Adicionar componentes ausentes à exibição de dados para um determinado modelo](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) em [Usar modelos](/help/analysis-workspace/templates/create-templates.md).
 
    1. Selecione o ícone de filtro.
 
