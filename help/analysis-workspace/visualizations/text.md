@@ -4,10 +4,10 @@ title: Texto
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 25%
+source-wordcount: '242'
+ht-degree: 29%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 25%
 
 Para adicionar rich text definido pelo usuário ao seu projeto do Workspace, você pode usar uma visualização de ![Texto](/help/assets/icons/Text.svg) **[!UICONTROL Texto]** ou usar descrições para uma visualização e um painel.
 
-## Use 
+## Usar
 
 Você pode usar a visualização de Texto das seguintes maneiras:
 
@@ -45,7 +45,7 @@ Ao editar sua caixa de texto ou descrição, você pode ajustar o tamanho da fon
 
 ## Adicionar hyperlinks {#hyperlinks}
 
-Para adicionar um hiperlink, realce o texto e selecione ![Link](/help/assets/icons/Link.svg) no menu. Você pode usar hiperlinks para fornecer assistência adicional aos recipients do projeto. Hiperlinks podem ser vinculados a sites externos, páginas de documentação, [projetos, painéis ou visualizações do Workspace](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/curate-share/shareable-links) e muito mais.
+Para adicionar um hiperlink, realce o texto e selecione ![Link](/help/assets/icons/Link.svg) no menu. Você pode usar hiperlinks para fornecer assistência adicional aos recipients do projeto. Hiperlinks podem ser vinculados a sites externos, páginas de documentação, [projetos, painéis ou visualizações do Workspace](/help/analysis-workspace/curate-share/shareable-links.md) e muito mais.
 
 ![Opções de texto com o ícone de link realçado.](assets/hyperlink.png)
 

@@ -1,17 +1,17 @@
 ---
-title: 'Visão geral da tabela de forma livre:'
+title: Visão geral da tabela de forma livre
 description: As tabelas de forma livre são a base para a análise de dados no Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '754'
 ht-degree: 26%
 
 ---
 
-# Visão geral da tabela de forma livre: {#freeform-table-overview}
+# Visão geral da tabela de forma livre {#freeform-table-overview}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -23,7 +23,7 @@ ht-degree: 26%
 <!-- markdownlint-enable MD034 -->
 
 
-No Analysis Workspace, uma visualização de ![Tabela](/help/assets/icons/Table.svg) **[!UICONTROL Tabela de forma livre]** é a base para a análise interativa de dados. Você pode arrastar e soltar uma combinação de [componentes](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/analysis-workspace-components) em linhas e colunas para criar uma tabela personalizada para sua análise. À medida que cada componente é solto, a tabela é atualizada imediatamente para que você possa analisar e pesquisar com mais detalhes rapidamente.
+No Analysis Workspace, uma visualização de ![Tabela](/help/assets/icons/Table.svg) **[!UICONTROL Tabela de forma livre]** é a base para a análise interativa de dados. Você pode arrastar e soltar uma combinação de [componentes](/help/components/overview.md) em linhas e colunas para criar uma tabela personalizada para sua análise. À medida que cada componente é solto, a tabela é atualizada imediatamente para que você possa analisar e pesquisar com mais detalhes rapidamente.
 
 ![Tabela de forma livre mostrando componentes em linhas e colunas, incluindo visitas e pedidos online de várias páginas da Web.](assets/opening-section.png)
 
@@ -54,16 +54,16 @@ Se preferir adicionar primeiro vários componentes à tabela e, em seguida, rend
 ### Linhas
 
 * Você pode [criar rapidamente uma nova visualização](../freeform-analysis-visualizations.md#visualize) de uma ou mais linhas usando ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg).
-* Você pode ajustar mais linhas em uma única tela ajustando a [densidade de visualização](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/build-workspace-project/view-density) do projeto.
+* Você pode ajustar mais linhas em uma única tela ajustando a [densidade de visualização](/help/analysis-workspace/build-workspace-project/view-density.md) do projeto.
 * Cada linha da dimensão pode exibir até 400 linhas antes que ocorra paginação. Selecione o número ao lado de **[!UICONTROL Linhas]** no cabeçalho da primeira coluna, para mostrar mais linhas em uma página. Navegue até uma página diferente usando ![ChevronRight](/help/assets/icons/ChevronRight.svg) no cabeçalho da primeira coluna.
-* Você pode detalhar linhas por componentes adicionais. Para detalhar várias linhas ao mesmo tempo, selecione várias linhas e arraste o próximo componente na parte superior das linhas selecionadas. Saiba mais sobre [detalhamentos](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/components/dimensions/t-breakdown-fa).
-* As linhas podem ser [filtradas](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/filter-and-sort) para mostrar um conjunto reduzido de itens. Configurações adicionais estão disponíveis em [Configurações de linha](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings).
+* Você pode detalhar linhas por componentes adicionais. Para detalhar várias linhas ao mesmo tempo, selecione várias linhas e arraste o próximo componente na parte superior das linhas selecionadas. Saiba mais sobre [detalhamentos](/help/components/dimensions/t-breakdown-fa.md).
+* As linhas podem ser [filtradas](/help/components/filters/filters-overview.md) para mostrar um conjunto reduzido de itens. Configurações adicionais estão disponíveis em [Configurações de linha](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
 
 ### Colunas
 
 * Os componentes podem ser empilhados dentro de colunas para criar métricas filtradas, análise entre guias e muito mais.
-* A exibição de cada coluna pode ser ajustada nas [configurações de coluna](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/freeform-table/column-row-settings/column-settings).
-* Várias ações estão disponíveis no [menu de contexto](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/right-click-for-workspace-efficiency). O menu fornece ações diferentes dependendo se você selecionar o cabeçalho da tabela, linhas ou colunas.
+* A exibição de cada coluna pode ser ajustada nas [configurações de coluna](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md).
+* Várias ações estão disponíveis no [menu de contexto](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu). O menu fornece ações diferentes dependendo se você selecionar o cabeçalho da tabela, linhas ou colunas.
 
 
 ## Configurações 

@@ -5,10 +5,10 @@ title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 65%
+source-wordcount: '2042'
+ht-degree: 64%
 
 ---
 
@@ -109,7 +109,7 @@ Se houver alterações não salvas, será solicitado que salve o projeto primeir
 
    Ou
 
-   Clique em **[!UICONTROL Preparar e compartilhar]** para fazer a preparação do projeto automaticamente. (Se o projeto já foi compartilhado, selecione **[!UICONTROL Preparar e atualizar]**.) Saiba mais sobre [Preparação de projeto](curate.md).
+   Clique em **[!UICONTROL Preparar e compartilhar]** para fazer a preparação do projeto automaticamente. (Se o projeto já tiver sido compartilhado, selecione **[!UICONTROL Preparar e atualizar]**.) Saiba mais sobre [preparação de projeto](curate.md).
 
 ## Compartilhar um link de um projeto
 
@@ -171,7 +171,7 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
    Selecionar essa opção cria um link para o projeto que pode ser compartilhado com qualquer pessoa. Você pode desabilitar o acesso ao projeto a qualquer momento desativando essa opção.
 
-   O proprietário do projeto também é o proprietário deste link. A propriedade do link pode ser transferida para outro usuário somente quando a propriedade do projeto é transferida, conforme descrito em [Transferir ativos do usuário ou definir expirações da conta](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/user-product-management/users-assets) no Guia de administração do Analytics.
+   O proprietário do projeto também é o proprietário deste link. A propriedade do link pode ser transferida para outro usuário somente quando a propriedade do projeto é transferida, conforme descrito em [Transferir ativos do usuário](/help/tools/asset-transfer/transfer-assets.md) no Guia de administração do Analytics.
 
 1. Escolha se deseja habilitar a seguinte opção de segurança (esta opção pode ser controlada pelo administrador de Customer Journey Analytics):
 

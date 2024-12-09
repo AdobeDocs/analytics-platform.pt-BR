@@ -5,10 +5,10 @@ title: Visão geral dos Projetos
 feature: Workspace Basics
 exl-id: 2eeb615c-57a1-4469-8d4a-8a61956bd6e6
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 7%
+source-wordcount: '1627'
+ht-degree: 8%
 
 ---
 
@@ -51,9 +51,9 @@ O ➋ da lista de projetos exibe todos os projetos que você possui e que foram 
 | Coluna | Descrição |
 | --- | --- | 
 | ![SelectBox](/help/assets/icons/SelectBox.svg) | Quando um ou mais projetos são selecionados, uma barra de ação azul é exibida na parte inferior da interface Projeto. Consulte [Ações](#actions) para obter mais detalhes. |
-| ![EstruturaEstrela](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um projeto. |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um projeto. |
 | **[!UICONTROL Título e descrição]** | Para editar o projeto, selecione o link de título, que abrirá o [projeto do Workspace](/help/analysis-workspace/home.md). Projetos compartilhados com você são indicados com ![Compartilhar](/help/assets/icons/ShareAlt.svg). Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para exibir um menu pop-up com mais detalhes sobre o projeto. Selecione ![Mais](/help/assets/icons/More.svg) para abrir um menu de contexto com ações. Consulte [Ações](#actions) para obter mais detalhes. |
-| **[!UICONTROL Tipo]** | Um projeto do Workspace, uma pasta ![FolderUser](/help/assets/icons/FolderUser.svg) ou um [Scorecard Móvel](https://experienceleague.adobe.com/en/docs/analytics/analyze/mobapp/home). |
+| **[!UICONTROL Tipo]** | Um projeto do Workspace, uma pasta ![FolderUser](/help/assets/icons/FolderUser.svg) ou um [Scorecard Móvel](/help/mobile-app/home.md). |
 | **[!UICONTROL Tags]** | As tags aplicadas ao projeto. |
 | Programado | Se um projeto está agendado para ser enviado por email para os recipients. As opções são ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL On]** ou ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Off]**. Consulte [Enviar dados do projeto para outras pessoas](/help/analysis-workspace/export/t-schedule-report.md). |
 | **[!UICONTROL Link compartilhado (qualquer um)]** | Se um projeto é compartilhado com qualquer pessoa, mesmo com pessoas que não têm acesso ao Analysis Workspace. As opções são ![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Ative]** ou ![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Inative]**. Consulte [Compartilhar um projeto com qualquer pessoa (sem necessidade de logon)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) em [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md) para obter mais informações. |
@@ -90,7 +90,7 @@ Passe o mouse sobre qualquer cabeçalho de coluna para exibir ![Divisa para baix
 | ![Seta para baixo](/help/assets/icons/ArrowDown.svg) | **[!UICONTROL Mover para baixo]** | Mova um projeto ou uma pasta fixada para baixo na lista de projetos. |
 | ![Rótulo](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Adicione tags a um ou mais projetos ou pastas. A caixa de diálogo **[!UICONTROL Componentes da Marca]** é exibida para selecionar uma ou mais marcas. Selecione **[!UICONTROL Salvar]** para salvar as marcas dos projetos ou pastas selecionados. |
 | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aprovar]** ou **[!UICONTROL Cancelar aprovação]** | Aprovar ou cancelar a aprovação de um projeto. Somente administradores podem aprovar projetos. |
-| ![ArquivoCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar CSV]** | Exportar os projetos selecionados para um arquivo CSV de nome `Project List.csv`. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar CSV]** | Exportar os projetos selecionados para um arquivo CSV de nome `Project List.csv`. |
 | ![AdiçãodeProjeto](/help/assets/icons/ProjectAdd.svg) | **[!UICONTROL Adicionar Projetos]** | Adicionar um ou mais projetos a uma pasta selecionada. Em **[!UICONTROL Adicionar projetos]**, você pode selecionar um ou mais projetos. Selecione **[!UICONTROL Adicionar]** para adicionar os projetos à pasta. Consulte [Adicionar projetos a pastas](workspace-folders/add-projects.md#from-inside-a-folder) para obter mais informações. |
 | ![AdicionarPasta](/help/assets/icons/FolderAddTo.svg) | **[!UICONTROL Mover para]** | Mova um ou mais projetos selecionados para uma pasta. Em **[!UICONTROL Selecionar pasta]**, selecione a pasta para onde mover o projeto selecionado e selecione **[!UICONTROL Mover]**. Consulte [Adicionar projetos a pastas](workspace-folders/add-projects.md#from-the-project-list) para obter mais informações. |
 

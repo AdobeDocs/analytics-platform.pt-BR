@@ -4,10 +4,10 @@ description: Como interagir com itens de dimensão dinâmicos e estáticos em ta
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 49%
+source-wordcount: '542'
+ht-degree: 44%
 
 ---
 
@@ -53,4 +53,4 @@ Itens de dimensão de diferentes dimensões podem ser adicionados à mesma tabel
 As linhas dinâmicas e estáticas se comportam de maneira diferente na linha total de forma livre. Por padrão:
 
 * As linhas dinâmicas são somadas no lado do servidor e deduplicam métricas como sessões ou pessoas.
-* As linhas estáticas são somadas no lado do cliente e **não** deduplicam as métricas. Para calcular o total de linhas do lado do servidor, altere a configuração de linha para **Mostrar total geral**. [Saiba mais](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/workspace-totals.html?lang=pt-BR)
+* As linhas estáticas são somadas no lado do cliente e **não** deduplicam as métricas. Para calcular o total de linhas do lado do servidor, altere a configuração de linha para **Mostrar total geral**. [Saiba mais](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md)

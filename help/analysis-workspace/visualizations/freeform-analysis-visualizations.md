@@ -5,16 +5,16 @@ title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: b85ad91a80f277aaf35f1e3aa3366a46f6478215
+source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 15%
+source-wordcount: '1616'
+ht-degree: 17%
 
 ---
 
 # Visão geral das visualizações
 
-O Workspace oferece várias visualizações que permitem gerar representações visuais de seus dados. Como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão e outros.
+O Workspace oferece várias visualizações que permitem gerar representações visuais de seus dados. Como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão, entre outros.
 
 ## Tipos
 
@@ -23,13 +23,13 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 | Ícone | Nome | Descrição |
 | :---: | --- | ---| 
 | ![GraphArea](/help/assets/icons/GraphArea.svg) | [Área](/help/analysis-workspace/visualizations/area.md) | Uma visualização de gráfico de área. Semelhante a um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Use um gráfico de área quando você tiver diversas métricas e desejar visualizar a área expressa pela interseção de duas ou mais métricas. |
-| ![BarraDeGráficosVertical](/help/assets/icons/GraphBarVertical.svg) | [Barra](/help/analysis-workspace/visualizations/bar.md) | Uma visualização de gráfico de barras com barras verticais representando vários valores de uma ou mais métricas. |
-| ![BarraDeGráficosVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barra empilhada](/help/analysis-workspace/visualizations/bar.md) | Uma visualização de gráfico de barras empilhadas com barras verticais representando vários valores em uma ou mais métricas. |
-| ![MarcadorGráfico](/help/assets/icons/GraphBullet.svg)</p> | [Marcador](/help/analysis-workspace/visualizations/bullet-graph.md) | Uma visualização de gráfico de marcadores, que mostra a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas). |
-| ![TextoNumerado](/help/assets/icons/TextNumbered.svg) | [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Uma visualização de coorte é um grupo de pessoas que compartilham características comuns em um período especificado. Uma tabela de coorte é útil para análise de retenção, churn ou latência. |
-| ![Combinação](/help/assets/icons/ComboChart.svg) | [Combinação](combo-charts.md) | Um gráfico de combinação permite criar rapidamente uma visualização de comparação sem precisar criar uma tabela primeiro. |
-| ![RoscaGráfica](/help/assets/icons/GraphDonut.svg) | [Rosca](/help/analysis-workspace/visualizations/donut.md) | Semelhante ao gráfico de pizza, uma visualização de rosca mostra os dados como partes ou filtros de um todo. |
-| ![FunilConversão](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Uma visualização de fallout mostra onde as pessoas saíram e continuaram em uma sequência predefinida de páginas. |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Barra](/help/analysis-workspace/visualizations/bar.md) | Uma visualização de gráfico de barras com barras verticais representando vários valores de uma ou mais métricas. |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barra empilhada](/help/analysis-workspace/visualizations/bar.md) | Uma visualização de gráfico de barras empilhadas com barras verticais representando vários valores em uma ou mais métricas. |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Marcador](/help/analysis-workspace/visualizations/bullet-graph.md) | Uma visualização de gráfico de marcadores, que mostra a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas). |
+| ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Uma visualização de coorte é um grupo de pessoas que compartilham características comuns em um período especificado. Uma tabela de coorte é útil para análise de retenção, churn ou latência. |
+| ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](combo-charts.md) | Um gráfico de combinação permite criar rapidamente uma visualização de comparação sem precisar criar uma tabela primeiro. |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Rosca](/help/analysis-workspace/visualizations/donut.md) | Semelhante ao gráfico de pizza, uma visualização de rosca mostra os dados como partes ou filtros de um todo. |
+| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Uma visualização de fallout mostra onde as pessoas saíram e continuaram em uma sequência predefinida de páginas. |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) | Uma visualização de fluxo mostra os caminhos exatos do cliente pelos seus sites e aplicativos. |
 | ![ExibirTabela](/help/assets/icons/ViewTable.svg)</p> | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Uma visualização de tabela de forma livre é uma visualização interativa. A visualização de tabela de forma livre é a base para a análise de dados no Workspace. |
 | ![HistogramaGráfico](/help/assets/icons/Histogram.svg) | [Histograma](/help/analysis-workspace/visualizations/histogram.md) | Uma visualização de histograma agrupa pessoas, visitas ou eventos em compartimentos com base em um volume de métrica. |
@@ -37,10 +37,10 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 | ![BarraDeGráficosHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barra horizontal empilhada](/help/analysis-workspace/visualizations/horizontal-bar.md) | Uma visualização de barra horizontal empilhada mostra barras horizontais que representam vários valores de uma ou mais métricas. |
 | ![Ramificação3](/help/assets/icons/Branch3.svg) | [tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Uma visualização da tela de jornada ajuda a analisar e obter insights sobre as jornadas que você fornece aos usuários e clientes. |
 | ![MétricasChave](/help/assets/icons/KeyMetrics.svg) | [Resumo da métrica principal](/help/analysis-workspace/visualizations/key-metric.md) | Uma visualização de resumo das Métricas principais combina as visualizações de linha, alteração de resumo e número de resumo. |
-| ![TendênciaGráfica](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | Uma visualização de linha representa as métricas usando uma linha para mostrar como os valores são alterados em um período. Um gráfico de linhas usa o tempo no eixo x. |
-| ![DispersãoDeGráfico](/help/assets/icons/GraphScatter.svg) | [Dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | Uma visualização do gráfico de dispersão mostra a relação entre itens de dimensão e até três métricas. |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | Uma visualização de linha representa as métricas usando uma linha para mostrar como os valores são alterados em um período. Um gráfico de linhas usa o tempo no eixo x. |
+| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | Uma visualização do gráfico de dispersão mostra a relação entre itens de dimensão e até três métricas. |
 | ![RegraDePágina](/help/assets/icons/PageRule.svg) | [Cabeçalho da seção](section-header.md) | Para identificar e articular seções em um painel. |
-| ![Mover para Cima](/help/assets/icons/MoveUpDown.svg) | [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Uma visualização de alteração de resumo mostra a alteração entre as células selecionadas como um número grande ou porcentagem. |
+| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Uma visualização de alteração de resumo mostra a alteração entre as células selecionadas como um número grande ou porcentagem. |
 | ![123](/help/assets/icons/123.svg)</p> | [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Uma visualização do número de resumo mostra a célula selecionada como um número grande. |
 | ![Texto](/help/assets/icons/Text.svg) | [Texto](/help/analysis-workspace/visualizations/text.md) | Uma visualização de texto permite adicionar texto definido pelo usuário à Workspace. Útil para adicionar contexto à análise e aos insights, além de aproveitar as descrições do painel/da visualização |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p> | Uma visualização de mapa de árvore exibe dados hierárquicos (estruturados em árvore) como um conjunto de retângulos aninhados. |
@@ -60,7 +60,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
    * No painel em que você deseja adicionar a visualização, selecione ![AddCircle](/help/assets/icons/AddCircle.svg) e escolha o ícone que representa a visualização que você deseja adicionar. Passe o mouse sobre o ícone de cada visualização para ver o nome.
 
-   * Adicione um [painel em branco](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) e selecione a visualização que deseja adicionar.
+   * Adicione um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) e selecione a visualização que deseja adicionar.
 
    * No menu de contexto de uma visualização existente no seu projeto do Analysis Workspace, selecione **[!UICONTROL Duplicar visualização]** ou **[!UICONTROL Copiar visualização]**.
 
