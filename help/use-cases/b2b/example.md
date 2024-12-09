@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: aa1615be6eaeb5c098659ec6b58829ca8efe64a4
+source-git-commit: 912e6a3200cdc8463667266f9cae75e4f6278337
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 7%
+source-wordcount: '1262'
+ht-degree: 6%
 
 ---
 
 # Um exemplo de projeto B2B
 
-Este artigo explica como definir, configurar e relatar dados B2B baseados em nível de perfil (pessoa) no Customer Journey Analytics.
+Este artigo ilustra um caso de uso em que você deseja relatar corretamente no Customer Journey Analytics sobre dados pessoais no contexto de uma configuração B2B típica. Essa configuração faz parte da [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  O caso de uso explica como definir, configurar e relatar dados B2B baseados em nível de perfil (pessoa) no Customer Journey Analytics.
 
 ## Conexão
 
@@ -41,7 +41,7 @@ Defina sua conexão para incluir todos os conjuntos de dados B2B relevantes do E
 -->
 
 
-A relação entre os esquemas de pesquisa B2B, o esquema de perfil e o esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas no [Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) e [Definir uma relação muitos para um entre dois esquemas no Real-time Customer Data Platform B2B Edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
+A relação entre os esquemas de pesquisa B2B, o esquema de perfil e o esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas no [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) e [Definir uma relação muitos para um entre dois esquemas no Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Para garantir uma configuração adequada de uma conexão que suporte pesquisas baseadas em pessoas de seus dados B2B, use a seguinte ilustração para obter uma visão geral e siga estas etapas:
@@ -56,7 +56,7 @@ Para garantir uma configuração adequada de uma conexão que suporte pesquisas 
 
    A tabela abaixo fornece um exemplo de visão geral dos valores de [!UICONTROL ID de pessoa], [!UICONTROL Chave] e [!UICONTROL Chave correspondente] para cada um dos conjuntos de dados.
 
-   | Conjunto de dados | ID de pessoa | Chave | Chave correspondente<br/>(no conjunto de dados do evento) |
+   | Conjunto de dados | ID da pessoa | Chave | Chave correspondente<br/>(no conjunto de dados do evento) |
    |---|---|---|---| 
    | Conjunto de dados da atividade B2B | SourceKey <br/>**personKey.sourceKey** | | |
    | Conjunto de dados de pessoa B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
