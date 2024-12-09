@@ -5,10 +5,10 @@ exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 928c79f9ccf30cc33e0f334f715bf3190a257019
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 71%
+source-wordcount: '418'
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ Considere isso antes de excluir conexões, conjuntos de dados ou lotes no Custom
 
 | Quando você... | Isso acontece... |
 | --- | --- |
-| Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Espaço de trabalho que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul>Observe que não é possível excluir conexões Customer Journey Analytics vinculadas às sandboxes do Adobe Experience Platform para as quais você não tem permissões. Mesmo que você tenha permissões para as visualizações de dados criadas nessas conexões, não poderá excluir as conexões até que receba permissões para as sandboxes subjacentes do Adobe Experience Platform. |
+| Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Espaço de trabalho que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul>Observe que não é possível excluir conexões Customer Journey Analytics que: <ul><li>Estão vinculados às sandboxes da Adobe Experience Platform para as quais você não tem permissões. Mesmo que você tenha permissões para as visualizações de dados criadas nessas conexões, não poderá excluir as conexões até que receba permissões para as sandboxes subjacentes do Adobe Experience Platform.</li><li>Selecione a seguinte opção de compatibilidade para uma exibição de dados associada à conexão: **[!UICONTROL Definir como exibição de dados padrão no Adobe Journey Optimizer]**<p>Para obter mais informações sobre esta opção de configuração, consulte [Compatibilidade](/help/data-views/create-dataview.md#compatibility) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md)</p></li></ul> |
 | Excluir um conjunto de dados no [!UICONTROL Adobe Experience Platform] | A exclusão de um conjunto de dados na AEP parará o fluxo de dados dele para qualquer conexão que inclua esse conjunto de dados. Quaisquer dados desse conjunto de dados são excluídos automaticamente das conexões Customer Journey Analytics associadas. |
 | Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Ao excluir um conjunto de dados de uma conexão no Customer Journey Analytics, qualquer visualização de dados e projeto que dependia desse conjunto de dados não funcionará mais. |
 | Excluir um lote de um conjunto de dados (na [!UICONTROL Adobe Experience Platform]) | Se um lote for excluído de um conjunto de dados da [!UICONTROL Adobe Experience Platform], o mesmo lote será removido de qualquer conexão do [!UICONTROL Customer Journey Analytics] que contenha esse lote específico. [!UICONTROL O Customer Journey Analytics] é notificado de lotes que foram excluídos na [!UICONTROL Adobe Experience Platform]. |
