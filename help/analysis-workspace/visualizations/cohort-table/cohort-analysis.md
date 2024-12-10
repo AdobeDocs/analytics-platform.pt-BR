@@ -4,10 +4,10 @@ description: Saiba como usar uma tabela de coorte para análise de coorte no Ana
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: c16ad9f490abed1e15e1012a5a9347e2628b7642
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 37%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,6 +56,8 @@ A [!UICONTROL Tabela de coorte] está disponível para todos os clientes do Cust
 >[!IMPORTANT]
 >
 >A [!UICONTROL Análise de coorte] não dá suporte a métricas não filtráveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em filtros podem ser usadas na [!UICONTROL Análise de coorte], e só podem ser aumentadas 1 de cada vez.
+
+As tabelas de coorte no Customer Journey Analytics são compatíveis com métricas com base dupla (ou com base numérica). Por exemplo, Purchase.Value (um duplo) pode ser usado como uma Métrica de inclusão/retorno. Além disso, todas as métricas passadas para o Adobe Experience Platform por meio do Analytics Source Connector também são duplicadas.
 
 ## Recursos da tabela de coorte
 

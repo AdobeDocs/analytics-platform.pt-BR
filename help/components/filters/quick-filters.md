@@ -4,10 +4,10 @@ title: Filtros rápidos
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -94,7 +94,7 @@ A área de condição especifica as condições (até um máximo de três). Para
 | Botão | Descrição |
 |---|---|
 | **[!UICONTROL E]**<br/>**[!UICONTROL OU]** | Disponível somente quando você define mais de uma condição. Selecione na lista suspensa ![Divisa](/help/assets/icons/ChevronDown.svg) entre as condições. A seleção determina a lógica booleana do filtro rápido. Não é possível misturar lógica ao ter três condições. A lógica booleana é **[!UICONTROL AND]** ou **[!UICONTROL OR]**. |
-| ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) | Adiciona outra condição ao filtro rápido. Esse botão só estará disponível quando você tiver definido uma ou duas condições para o filtro rápido. |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | Adiciona outra condição ao filtro rápido. Esse botão só estará disponível quando você tiver definido uma ou duas condições para o filtro rápido. |
 | **[!UICONTROL Aplicar]** | Aplique as alterações ao filtro rápido. |
 | **[!UICONTROL Abrir o construtor]** | É solicitada sua confirmação com um **[!UICONTROL Tem certeza?Caixa de diálogo]**. Se você selecionar **[!UICONTROL OK]**, não será mais possível modificar seu filtro no [Construtor de filtros rápidos](#quick-filter-builder). Seu filtro rápido foi renomeado para **[!UICONTROL Filtro]** e agora tem uma barra azul mais escura à esquerda.<br/>O [Construtor de filtros](filter-builder.md) comum é aberto com a opção de **[!UICONTROL Disponibilizar este filtro para todos os seus projetos e adicioná-lo à sua lista de componentes]**. <ul><li>Se você selecionar esta opção e selecionar **[!UICONTROL Aplicar]**, o filtro será adicionado à lista de componentes ![Filtro](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtros]** no painel de componentes.</li><li>Se você não selecionar essa opção e selecionar **[!UICONTROL Aplicar]**, o filtro permanecerá um filtro somente de projeto do Workspace.</li></ul> |
 | **[!UICONTROL Cancelar]** | Selecione para cancelar a criação ou edição de um filtro rápido. |
