@@ -1,18 +1,18 @@
 ---
-title: Casos de uso da exportação de dados
+title: Casos de uso de exportação de dados
 description: Entenda vários casos de uso de exportação de dados para o Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
-source-git-commit: 40e4c3bd8f3c37e9a6143200b85ffe0ac4bcb2ca
+source-git-commit: ae0e7a906700522d7babc1d573a0b4cdbf1be6fc
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 0%
+source-wordcount: '766'
+ht-degree: 1%
 
 ---
 
-# Casos de uso da exportação de dados
+# Casos de uso de exportação de dados
 
 Esta seção fornece casos de uso de exportação de dados e como implementá-los com uma ou mais funcionalidades de Customer Journey Analytics ou Experience Platform. Cada funcionalidade é detalhada em um artigo separado.
 
@@ -71,9 +71,9 @@ Para garantir a consistência da métrica, é preferível usar os novos recursos
 
 Em geral, a exportação de dados suporta vários casos de uso. Cada caso de uso é diferente em termos dos dados necessários e como acessá-los e exportá-los. Experience Platform e Customer Journey Analytics fornecem várias funcionalidades que, independentemente ou combinadas, podem resolver os vários casos de uso. A tabela abaixo fornece uma visão geral dos casos de uso da exportação de dados identificados e as funcionalidades de Experience Platform e Customer Journey Analytics para implementar esses casos de uso.
 
-| Casos de uso da exportação de dados | Funcionalidades de Experience Platform e Customer Journey Analytics |
+| Casos de uso de exportação de dados | Funcionalidades de Experience Platform e Customer Journey Analytics |
 |---|---|
-| **Backup de dados**<br/> Mantenha uma cópia completa de seus dados digitais para fins de conformidade ou regulamentação. | **Experience Platform**: [**Exportar conjuntos de dados**](export-datasets.md)<br/> Exportar dados coletados no Experience Platform diretamente para destinos em nuvem de acordo com um agendamento ou ad-hoc.<br/>*Lançamento limitado no momento. O lançamento completo para clientes do Customer Journey Analytics está previsto para junho de 2024.* |
+| **Backup de dados**<br/> Mantenha uma cópia completa de seus dados digitais para fins de conformidade ou regulamentação. | **Experience Platform**: [**Exportar conjuntos de dados**](export-datasets.md)<br/> Exportar dados coletados no Experience Platform diretamente para destinos em nuvem de acordo com um agendamento ou ad-hoc. |
 | **Validação de Dados**<br/> Avalie os dados de sequência de cliques quanto à precisão da coleta de dados. | **Experience Platform**: [**Query Service (Data Distiller) e Exportar conjuntos de dados**](queryservice-export-datasets.md)<br/> Interface PostgreSQL interativa para executar consultas SQL ad-hoc usando sua ferramenta SQL favorita para validar os dados em seus conjuntos de dados.<br/><br/>**Customer Journey Analytics**: [**Exportar tabela completa**](export-full-table.md)<br/> Validar dados processados do CJA com atribuição e sessão aplicadas. |
 | **Ferramentas do Data Lake, Data Warehouse ou BI**<br/> Traga dados digitais para suas próprias ferramentas de BI ou Data Lake para usar com conjuntos de dados adicionais. | **Customer Journey Analytics**: [**Extensão de BI**](bi-extension.md)<br/> Adicione métricas processadas Customer Journey Analytics às ferramentas de visualização de dados, como Power BI, e combine com dados adicionais para relatórios personalizados <br/><br/>**Experience Platform**: [**Serviço de consulta (Data Distiller) e conjuntos de dados de exportação**](queryservice-export-datasets.md)<br> Gere dados de sequência de cliques personalizados usando SQL para serem entregues aos destinos da nuvem. |
 | **Disponibilidade para IA/ML**<br/> Aprimore a inteligência artificial/modelos de aprendizado de máquina e tarefas com dados de Customer Journey Analytics. | **Customer Journey Analytics**: [**Exportar tabela completa**](export-full-table.md)<br/> Exportar dimensões e métricas processadas Customer Journey Analytics para destinos de nuvem uma vez ou recorrentes, incluindo métricas calculadas e segmentação.<br/><br/>**Experience Platform**: [**Serviço de consulta (Data Distiller) e conjuntos de dados de exportação**](queryservice-export-datasets.md)<br/> Gere dados de sequência de cliques personalizados usando SQL para enriquecer modelos de IA/ML. |

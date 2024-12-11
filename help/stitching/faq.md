@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 059a091fb41efee6f508b4260b1d943f881f5087
+source-git-commit: ae0e7a906700522d7babc1d573a0b4cdbf1be6fc
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 26%
+source-wordcount: '1910'
+ht-degree: 28%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 26%
 
 Aqui estão algumas perguntas frequentes sobre a compilação:
 
-+++**Como posso usar a compilação para ver como as pessoas mudam de um canal para outro?**
+## Mover entre canais
+
++++ Como posso usar a compilação para ver como as pessoas mudam de um canal para outro?
 
 Você pode usar uma visualização de Fluxo com a dimensão ID de conjunto de dados.
 
@@ -29,13 +31,17 @@ Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá 
 
 +++
 
-+++**Até que ponto a compilação repete os visitantes?**
+### Reproduzir novamente
+
++++ Até que ponto a compilação repete os visitantes?
 
 A janela de pesquisa para rechaveamento depende da frequência desejada de repetição de dados. Por exemplo, se você configurar a compilação para repetir os dados uma vez por semana, a janela de pesquisa para rechaveamento será de sete dias. Se você configurar a compilação para repetir dados todos os dias, a janela de pesquisa para rechaveamento será de um dia.
 
 +++
 
-+++**Como os dispositivos compartilhados são tratados?**
+## Dispositivos compartilhados
+
++++ Como os dispositivos compartilhados são manipulados?
 
 Em algumas situações, é possível que várias pessoas façam logon no mesmo dispositivo. Os exemplos incluem um dispositivo compartilhado em casa, PCs compartilhados em uma biblioteca ou um quiosque em uma loja de varejo.
 
@@ -43,7 +49,9 @@ A ID transitória substitui a ID persistente; portanto, os dispositivos comparti
 
 +++
 
-+++**Como a compilação lida com situações em que uma única pessoa tem muitas IDs persistentes?**
+## Muitas IDs persistentes
+
++++ Como a compilação lida com situações em que uma única pessoa tem muitas IDs persistentes?
 
 Em algumas situações, um usuário individual pode ser associado a muitas IDs persistentes. Um exemplo é a limpeza frequente de cookies do navegador ou o uso do modo privado/anônimo do navegador.
 
@@ -53,13 +61,17 @@ Para a compilação baseada em gráficos, uma única pessoa pode ter muitas ID p
 
 +++
 
-+++**Quando eu entrar em contato com minha equipe de conta do Adobe com as informações desejadas, quanto tempo levará para o conjunto de dados rechaveado ficar disponível?**
+## Processo de compilação
+
++++ Após entrar em contato com minha equipe de contas da Adobe e fornecer as informações desejadas, quanto tempo levará para o conjunto de dados rechaveado ser disponibilizado?
 
 A compilação em tempo real está disponível aproximadamente uma semana depois de o Adobe ativar a compilação. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de um milhão de eventos por dia) normalmente levam alguns dias, enquanto grandes conjuntos de dados (um bilhão de eventos por dia) podem levar uma semana ou mais.
 
 +++
 
-+++**Qual é a diferença entre a análise entre dispositivos (um recurso no Analytics tradicional) e a análise entre canais?**
+## Análise entre dispositivos e canais
+
++++ Qual é a diferença entre a análise entre dispositivos (um recurso no Analytics tradicional) e a análise entre canais?
 
 A [Análise entre dispositivos](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=pt-BR) é um recurso específico do Adobe Analytics tradicional que permite compreender como as pessoas operam entre dispositivos. Ela oferece dois workflows para vincular dados do dispositivo: compilação em campo e gráfico do dispositivo.
 
@@ -67,7 +79,9 @@ A análise entre canais é um caso de uso específico do Customer Journey Analyt
 
 +++
 
-+++**Como a compilação lida com solicitações de privacidade?**
+## Privacidade
+
++++ Como a compilação lida com solicitações de privacidade?
 
 O Adobe lida com solicitações de privacidade de acordo com as leis locais e internacionais. A Adobe oferece o [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e rechaveados.
 
@@ -147,7 +161,9 @@ Quando uma solicitação de privacidade é recebida para o cliente com CustID Bo
 
 +++
 
-+++**O que acontece se o campo de ID Persistente em um ou mais eventos estiver em branco?**
+## Valores de ID persistentes em branco
+
++++ O que acontece se o campo ID persistente em um ou mais eventos estiver em branco?
 
 Se o campo ID persistente estiver em branco em um evento em um conjunto de dados que está sendo compilado, a ID compilada para esse evento será determinada de uma das duas formas a seguir:
 
@@ -157,7 +173,9 @@ Se o campo ID persistente estiver em branco em um evento em um conjunto de dados
 +++
 
 
-+++**O que acontece se o campo ID Transitória em um ou mais eventos tiver valores de espaço reservado, como &#39;Indefinido&#39;?**
+## Valores de ID transitórios indefinidos
+
++++ O que acontece se o campo ID Transitória em um ou mais eventos tiver valores de espaço reservado, como `Undefined`?
 
 Tenha cuidado com o &quot;recolhimento de pessoas&quot;, que ocorre quando a compilação é aplicada a dados que usam valores de espaço reservado para IDs transitórias. Na tabela de exemplo abaixo, IDs de pessoa indefinidas originárias de um conjunto de dados proveniente de um sistema CRM são preenchidas com o valor &quot;Indefinido&quot;, resultando na representação incorreta de pessoas.
 
@@ -177,7 +195,9 @@ Tenha cuidado com o &quot;recolhimento de pessoas&quot;, que ocorre quando a com
 
 +++
 
-+++**Como as métricas nos conjuntos de dados compilados em Customer Journey Analytics se comparam com métricas semelhantes nos conjuntos de dados não compilados em Customer Journey Analytics e com o Adobe Analytics?**
+## Comparação de métricas
+
++++ Como as métricas nos conjuntos de dados compilados em Customer Journey Analytics se comparam com métricas semelhantes nos conjuntos de dados não compilados em Customer Journey Analytics e com o Adobe Analytics?
 
 Determinadas métricas no Customer Journey Analytics são semelhantes às métricas no Analytics tradicional, mas outras são diferentes, dependendo do que você está comparando. A tabela abaixo compara várias métricas comuns:
 
@@ -191,13 +211,18 @@ Outras métricas podem ser semelhantes no Customer Journey Analytics e no Adobe 
 
 +++
 
-+++**O Customer Journey Analytics pode usar campos do Mapa de Identidade?**
+## Mapa de identidade
+
++++ O Customer Journey Analytics pode usar campos do Mapa de identidade?
 
 Não, o Customer Journey Analytics não pode usar campos do Mapa de identidade para compilação no momento.
 
 +++
 
-+++**Os dados precisarão ser assimilados novamente para alternar da compilação em campo para a compilação em gráfico?**
+## Alternar para a compilação baseada em gráfico
+
++++ Os dados precisarão ser assimilados novamente para alternar da compilação em campo para a compilação em gráfico?
+
 Os dados não precisam ser assimilados novamente no Experience Platform, no entanto, eles precisarão ser reconfigurados no Customer Journey Analytics. Siga estas etapas:
 
 1. Configure o novo conjunto de dados compilado com base em gráfico.
@@ -207,7 +232,9 @@ Os dados não precisam ser assimilados novamente no Experience Platform, no enta
 
 +++
 
-+++**Haveria alguma interrupção nos relatórios existentes?**
+## Interrupção de relatórios
+
++++ Haveria alguma interrupção nos relatórios existentes?
 
 Não se seguir as etapas descritas acima. Caso contrário, solicite suporte adicional à Adobe Consulting.
 
