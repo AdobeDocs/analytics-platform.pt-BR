@@ -1,19 +1,20 @@
 ---
-title: Adicionar a lógica da coleção de dados XDM à sua tag
+title: Adicionar a lógica da coleção de dados XDM à tag
 description: Saiba como adicionar a lógica da coleção de dados XDM à sua tag
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: ccc6df56771cd9f83bbd7a8570e32d7ed63a0ced
+exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
-# Adicionar a lógica da coleção de dados XDM à sua tag
+# Adicionar a lógica da coleção de dados XDM à tag
 
 >[!NOTE]
 > 
@@ -21,7 +22,7 @@ ht-degree: 48%
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
-Depois de [criar a marca e adicionar a extensão SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), você deve configurá-la com elementos de dados e regras, de acordo com como deseja rastrear seu site e enviar dados para a Adobe Experience Platform. Depois de configurar elementos de dados e regras para a tag, você pode criá-la e publicá-la.
+Depois de [criar a marca e adicionar a extensão Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), você deve configurá-la com elementos de dados e regras, de acordo com a maneira como deseja rastrear o site e enviar dados para a Adobe Experience Platform. Depois de configurar elementos de dados e regras para a tag, você pode criá-la e publicá-la.
 
 ## Configurar elementos de dados
 
@@ -194,7 +195,7 @@ Para definir uma regra:
 
 Depois de definir elementos de dados e regras, você deve criar e publicar sua tag. Ao criar um build de biblioteca, você deve atribuí-lo a um ambiente. As extensões, regras e elementos de dados da build são compilados e colocados no ambiente atribuído. Cada ambiente fornece um código integrado exclusivo que permite integrar a build atribuída ao site.
 
-As tags do Adobe Experience Platform são compatíveis com fluxos de trabalho de publicação simples a complexos que devem acomodar a implantação do SDK da Web da Adobe Experience Platform. Consulte [Visão geral de publicação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=pt-BR) para obter mais informações.
+As tags do Adobe Experience Platform são compatíveis com fluxos de trabalho de publicação simples a complexos que devem acomodar a implantação do Adobe Experience Platform Web SDK. Consulte [Visão geral de publicação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=pt-BR) para obter mais informações.
 
 Para criar e publicar a tag:
 
@@ -220,9 +221,8 @@ Para criar e publicar a tag:
 
 1. Selecione **[!UICONTROL Salvar e criar no desenvolvimento]**.
 
-   A tag é salva e é criada para o ambiente de desenvolvimento. Um ponto verde indica uma criação bem-sucedida da tag no ambiente de desenvolvimento.
+   Sua tag é salva e é criada para o ambiente de desenvolvimento. Um ponto verde indica uma criação bem-sucedida da tag no ambiente de desenvolvimento.
 
 1. Você pode selecionar **[!UICONTROL ...]** para recriar a biblioteca ou mover a biblioteca para um ambiente de preparo ou produção.
 
    ![Publicar - Criar biblioteca](assets/build-library.png)
-

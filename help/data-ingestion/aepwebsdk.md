@@ -1,18 +1,18 @@
 ---
-title: Assimilar dados por meio do SDK da Web da Adobe Experience Platform
+title: Assimilar dados por meio do Adobe Experience Platform Web SDK
 description: Explique como assimilar dados no Customer Journey Analytics por meio do SDK da Web da Adobe Experience Platform e da Rede de borda
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '3543'
 ht-degree: 83%
 
 ---
 
-# Assimilar dados por meio do SDK da Web
+# Assimilar dados por meio do Web SDK
 
 Este guia de início rápido explica como você pode assimilar dados de rastreamento de site diretamente na Adobe Experience Platform usando o SDK da Web da Adobe Experience Platform e a Rede de borda e, em seguida, usar esses dados no Customer Journey Analytics.
 
@@ -260,7 +260,7 @@ Selecione a tag criada recentemente na lista de [!UICONTROL Propriedades da tag]
 
 #### **Extensões**
 
-Para garantir que você possa enviar dados para a Adobe Experience Platform (por meio de sua sequência de dados), adicione a extensão SDK da Web da Plataforma Adobe à sua tag.
+Para garantir que você possa enviar dados para a Adobe Experience Platform (por meio de sua sequência de dados), adicione a extensão Adobe Platform Web SDK à sua tag.
 
 Para criar e configurar a extensão do SDK da Web da Adobe Experience Platform:
 
@@ -280,7 +280,7 @@ Para criar e configurar a extensão do SDK da Web da Adobe Experience Platform:
 
 Consulte [Configurar a extensão do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) para obter mais informações.
 
-O SDK da Web inclui o [!UICONTROL Serviço da Adobe Experience Cloud ID] nativamente, portanto, não é necessário adicionar a extensão do serviço de ID à sua marca.
+O Web SDK inclui o [!UICONTROL Serviço da Adobe Experience Cloud ID] nativamente, portanto, não é necessário adicionar a extensão do serviço de ID à sua marca.
 
 #### **Elementos de dados**
 
@@ -444,7 +444,7 @@ Para criar e publicar a tag:
 
    - Selecione **[!UICONTROL Salvar e criar no desenvolvimento]**.
 
-   A tag é salva e é criada para o ambiente de desenvolvimento. Um ponto verde indica uma criação bem-sucedida da tag no ambiente de desenvolvimento.
+   Sua tag é salva e é criada para o ambiente de desenvolvimento. Um ponto verde indica uma criação bem-sucedida da tag no ambiente de desenvolvimento.
 
 4. Você pode selecionar **[!UICONTROL ...]** para recriar a biblioteca ou mover a biblioteca para um ambiente de preparo ou produção.
 

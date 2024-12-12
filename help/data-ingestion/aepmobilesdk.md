@@ -1,20 +1,20 @@
 ---
-title: Assimilar dados por meio do SDK móvel do Adobe Experience Platform
-description: Explicar como assimilar dados no Customer Journey Analytics por meio do SDK do Adobe Experience Platform Mobile e do Edge Network
+title: Assimilar dados por meio do Adobe Experience Platform Mobile SDK
+description: Explicar como assimilar dados no Customer Journey Analytics por meio do Adobe Experience Platform Mobile SDK e do Edge Network
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
 workflow-type: tm+mt
 source-wordcount: '3382'
 ht-degree: 60%
 
 ---
 
-# Assimilar dados por meio do SDK móvel
+# Assimilar dados por meio do Mobile SDK
 
-Este guia de início rápido explica como você pode assimilar dados de rastreamento de aplicativos móveis diretamente na Adobe Experience Platform usando o SDK e o Edge Network do Adobe Experience Platform Mobile. Em seguida, use esses dados no Customer Journey Analytics.
+Este guia de início rápido explica como você pode assimilar dados de rastreamento de aplicativos móveis diretamente no Adobe Experience Platform usando o Adobe Experience Platform Mobile SDK e o Edge Network. Em seguida, use esses dados no Customer Journey Analytics.
 
 Para isso, é necessário:
 
@@ -85,7 +85,7 @@ Para configurar o esquema:
 
       Grupos de campos são coleções reutilizáveis de objetos e atributos que permitem estender facilmente o esquema.
 
-   1. Na caixa de diálogo [!UICONTROL Adicionar grupos de campos], selecione o grupo de campos **[!UICONTROL ExperienceEvent do SDK do AEP Mobile]** na lista.
+   1. Na caixa de diálogo [!UICONTROL Adicionar grupos de campos], selecione o grupo de campos **[!UICONTROL AEP Mobile SDK ExperienceEvent]** na lista.
 
       ![grupo de campos Detalhes do ciclo de vida móvel da AEP](./assets/select-aepmobilesdk-experienceevent.png)
 
@@ -239,7 +239,7 @@ Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.co
 
 ## Usar tags
 
-Para implementar o código em seu site para realmente coletar dados, use o recurso Tags no Adobe Experience Platform. Esta solução de gerenciamento de tags permite implantar o código do junto com outros requisitos de marcação. As tags oferecem integração perfeita com o Adobe Experience Platform usando a extensão SDK móvel da Adobe Experience Platform.
+Para implementar o código em seu site para realmente coletar dados, use o recurso Tags no Adobe Experience Platform. Esta solução de gerenciamento de tags permite implantar o código do junto com outros requisitos de marcação. As tags oferecem integração perfeita com o Adobe Experience Platform usando a extensão Adobe Experience Platform Mobile SDK.
 
 ### Criar sua tag
 
@@ -262,7 +262,7 @@ Para configurar, selecione a tag recém-criada na lista de [!UICONTROL Proprieda
 
 Adicione a extensão Adobe Platform Edge Network à tag para garantir que você possa enviar dados para a Adobe Experience Platform (por meio da sequência de dados).
 
-Para criar e configurar a extensão SDK do Adobe Experience Platform Mobile:
+Para criar e configurar a extensão do Adobe Experience Platform Mobile SDK:
 
 1. Selecione **[!UICONTROL Extensões]** no painel esquerdo. As extensões Mobile Core e Perfil já estão disponíveis.
 
@@ -272,7 +272,7 @@ Para criar e configurar a extensão SDK do Adobe Experience Platform Mobile:
 
 1. Selecione a sandbox e a sequência de dados criadas anteriormente para o [!UICONTROL Ambiente de produção], o [!UICONTROL Ambiente de preparo] (opcional) e o [!UICONTROL Ambiente de desenvolvimento].
 
-   ![Configuração da extensão SDK do AEP Mobile](./assets/aepmobilesdk-extension-datastream.png)
+   ![Configuração de extensão do AEP Mobile SDK](./assets/aepmobilesdk-extension-datastream.png)
 
 1. Insira seu **[!UICONTROL domínio Edge Network]** abaixo de [!UICONTROL Configuração de domínio]. Normalmente, use `<organizationName>.data.adobedc.net`.
 
@@ -392,7 +392,7 @@ Para criar e publicar a tag:
 
    - Selecione **[!UICONTROL Salvar e criar no desenvolvimento]**.
 
-   A tag é salva e é criada para o ambiente de desenvolvimento. Um ponto verde indica uma criação bem-sucedida da tag no ambiente de desenvolvimento.
+   Sua tag é salva e é criada para o ambiente de desenvolvimento. Um ponto verde indica uma criação bem-sucedida da tag no ambiente de desenvolvimento.
 
 4. Você pode selecionar **[!UICONTROL ...]** para recriar a biblioteca ou mover a biblioteca para um ambiente de preparo ou produção.
 
@@ -417,7 +417,7 @@ Para obter instruções de código que explicam como configurar seu aplicativo m
 
 3. Selecione **[!UICONTROL Fechar]**.
 
-Em vez do código do ambiente de desenvolvimento, você poderia ter selecionado outro ambiente (preparo, produção) com base no local em que está implantando o SDK do Adobe Experience Platform Mobile.
+Em vez do código do ambiente de desenvolvimento, você poderia ter selecionado outro ambiente (preparo, produção) com base no local em que está no processo de implantação do Adobe Experience Platform Mobile SDK.
 
 Consulte [Ambientes](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) para obter mais informações.
 
