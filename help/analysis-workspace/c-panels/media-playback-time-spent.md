@@ -4,9 +4,9 @@ description: Como usar e interpretar o painel Tempo gasto com a reprodução de 
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1127'
 ht-degree: 56%
 
 ---
@@ -63,7 +63,7 @@ Para usar um painel **[!UICONTROL Tempo gasto com a reprodução da mídia]**:
 
 1. Crie um painel **[!UICONTROL Tempo gasto com a reprodução da mídia]**. Para obter informações sobre como criar um painel, consulte [Criar um painel](panels.md#create-a-panel).
 
-1. Selecione uma visualização de dados para o painel que tem componentes configurados no complemento Coleção de mídia de transmissão.
+1. Selecione uma visualização de dados para o painel que tem componentes configurados na coleção de mídia de transmissão.
 
 1. Especifique a [entrada](#panel-input) do painel.
 

@@ -4,9 +4,9 @@ description: Como usar e interpretar o painel Visualizadores simultâneos de mí
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1207'
 ht-degree: 47%
 
 ---
@@ -61,7 +61,7 @@ Para usar um painel **[!UICONTROL Visualizadores simultâneos de mídia]**:
 
 1. Crie um painel **[!UICONTROL Visualizadores simultâneos de mídia]**. Para obter informações sobre como criar um painel, consulte [Criar um painel](panels.md#create-a-panel).
 
-1. Selecione uma visualização de dados para o painel que tem componentes configurados no complemento Coleção de mídia de transmissão.
+1. Selecione uma visualização de dados para o painel que tem componentes configurados na coleção de mídia de transmissão.
 
 1. Especifique a [entrada](#panel-input) do painel.
 

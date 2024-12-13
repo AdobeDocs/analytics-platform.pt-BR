@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 221b73ef8dc0f7d28d13b8571955792367519849
-workflow-type: ht
-source-wordcount: '2320'
-ht-degree: 100%
+source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
+workflow-type: tm+mt
+source-wordcount: '2319'
+ht-degree: 99%
 
 ---
 
@@ -68,7 +68,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | **Acesso à API de relatórios** | Suporte completo: disponível por meio da [API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | **Relatórios/projetos agendados** | Suporte completo |
 | **Segmentos** | Suporte completo. Chamados agora de “Filtros”: observe que nenhum segmento existente no Analysis Workspace tradicional será transferido para o Customer Journey Analytics. |
-| **Complemento Coleção de mídia de streaming** | Os dados de mídia de streaming estão disponíveis ao usar o conector de origem do Analytics como parte do painel Visualizadores simultâneos de mídia e do painel Tempo gasto com a reprodução de mídia do Workspace. |
+| **Coleção de mídia de streaming** | Os dados de mídia de streaming estão disponíveis ao usar o conector de origem do Analytics como parte do painel Visualizadores simultâneos de mídia e do painel Tempo gasto com a reprodução de mídia do Workspace. |
 | **Fontes de dados em nível de resumo** | Suporte completo |
 | **Conjuntos de relatórios virtuais** | Suporte completo. Agora chamado de [Visualizações de dados](/help/data-views/create-dataview.md). |
 | **Curadoria de componentes do conjunto de relatórios virtual** | Suporte completo. Agora parte das Visualizações de dados. |

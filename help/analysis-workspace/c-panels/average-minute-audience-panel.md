@@ -4,9 +4,9 @@ description: Como usar e interpretar o painel Público-alvo médio por minuto de
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 5121f0d395674ca3b9fed19278c5c0253354e9cc
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1787'
 ht-degree: 30%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->O painel **[!UICONTROL Público-alvo médio por minuto da mídia]** está disponível somente para clientes que compraram o Complemento de coleção de mídia de streaming para o Customer Journey Analytics.
+>O painel **[!UICONTROL Público-alvo médio por minuto da mídia]** está disponível somente para clientes que compraram a Coleção de mídia de streaming para o Customer Journey Analytics.
 >
 >Entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para obter mais informações.
 >
@@ -62,8 +62,7 @@ Para usar um painel **[!UICONTROL Audiência média por minuto da mídia]**:
 
 1. Crie um painel **[!UICONTROL Audiência média por minuto da mídia]**. Para obter informações sobre como criar um painel, consulte [Criar um painel](panels.md#create-a-panel).
 
-1. Selecione uma visualização de dados para o painel que tem componentes configurados no complemento Coleção de mídia de transmissão.
-
+1. Selecione uma visualização de dados para o painel que tem componentes configurados na coleção de mídia de transmissão.
 
 1. Especifique a [entrada](#panel-input) do painel.
 

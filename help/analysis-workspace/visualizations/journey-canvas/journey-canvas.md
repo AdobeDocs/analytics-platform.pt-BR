@@ -4,9 +4,9 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
+source-git-commit: 25969de61f23cf0690a130127fcc1442b9806a35
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1657'
 ht-degree: 1%
 
 ---
@@ -120,7 +120,7 @@ Use [a tabela acima](#understand-the-differences) para entender as diferenças e
 
 A análise de jornadas do Journey Optimizer na tela do Jornada fornece insights profundos e acionáveis sobre como as pessoas interagem com uma jornada.
 
-Ao analisar uma jornada do Journey Optimizer na tela do Jornada, a jornada é exibida com a mesma ordem, sequência e estrutura que teve no Journey Optimizer. Se você puder fazer alterações em uma jornada na tela de Jornada, [as alterações não serão mais sincronizadas do Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
+Ao analisar uma jornada do Journey Optimizer na tela do Jornada, a jornada é exibida com a mesma ordem, sequência e estrutura que teve no Journey Optimizer. Se você fizer alterações significativas em uma jornada na tela do Jornada, [as alterações não serão mais sincronizadas do Journey Optimizer](#synchronization-between-journey-optimizer-and-journey-canvas).
 
 ### Benefícios da análise de jornadas do Journey Optimizer com a tela do Jornada
 
@@ -152,7 +152,7 @@ Usar a tela do Jornada para analisar jornadas que foram criadas no Journey Optim
 
 Depois de criar uma análise de uma jornada do Journey Optimizer na tela do Jornada, os dados são sincronizados em apenas uma direção, do Journey Optimizer para a tela do Jornada. Isso significa que as alterações feitas em uma jornada na tela do Jornada nunca são refletidas no Journey Optimizer.
 
-Além disso, as alterações feitas em uma jornada no Journey Optimizer serão sincronizadas com a tela de Jornada somente se a jornada Jornada permanecer inalterada nessa tela. Depois de modificar uma jornada na tela de Jornada, as alterações feitas na jornada no Journey Optimizer não são refletidas na tela de Jornada. Para ver as alterações refletidas na tela de Jornada, você pode excluir e [recriar a jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Além disso, as alterações feitas em uma jornada no Journey Optimizer serão sincronizadas com a tela de Jornada [somente se a jornada não tiver sido modificada significativamente na tela de Jornada](#differences-after-modifying-a-journey-in-journey-canvas). Depois de modificar uma jornada na tela de Jornada, as alterações feitas na jornada no Journey Optimizer não são refletidas na tela de Jornada. Para ver as alterações refletidas na tela de Jornada, você pode excluir e [recriar a jornada na tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 ### Diferenças após modificar uma jornada na tela de Jornada {#differences-after-modifying}
 
