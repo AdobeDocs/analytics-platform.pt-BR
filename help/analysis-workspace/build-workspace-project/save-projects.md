@@ -4,7 +4,7 @@ title: Salvar projetos
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 20%
@@ -16,7 +16,7 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_project_addnotes"
+>id="workspace_project_addnotes"
 >title="Adicionar observações"
 >abstract="Adicione observações sobre a versão do projeto que está sendo salva. Essas notas serão armazenadas com a versão e poderão ser acessadas no menu **[!UICONTROL Projeto]** > **[!UICONTROL Abrir versão anterior]**."
 
@@ -129,7 +129,7 @@ Alguns cenários comuns:
 
 Se você abrir outro projeto ao trabalhar em um projeto que contém alterações que ainda não foram salvas automaticamente, o Analysis Workspace solicitará que você salve o projeto atual.
 
-As opções disponíveis são as seguintes:
+Estas são as opções disponíveis:
 
 * **[!UICONTROL Salvar]**: substitui a cópia local salva automaticamente mais recente do projeto pelas alterações mais recentes.
 * **[!UICONTROL Descartar Alterações]**: Descarta as alterações mais recentes. O projeto retém a cópia local salva automaticamente mais recente.

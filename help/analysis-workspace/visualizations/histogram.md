@@ -4,10 +4,10 @@ title: Histograma
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 42%
+ht-degree: 37%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 42%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_histogram_button"
+>id="workspace_histogram_button"
 >title="Histograma"
 >abstract="Crie uma visualização de histograma para representar a distribuição de dados numéricos em grupos de intervalos."
 
@@ -25,7 +25,7 @@ ht-degree: 42%
 
 A visualização do ![Histograma](/help/assets/icons/Histogram.svg) **[!UICONTROL Histograma]** é semelhante a uma visualização de [!UICONTROL Barra], mas agrupa números em intervalos (compartimentos). O Analytics automatiza o agrupamento de números em intervalos, mas você pode alterar as configurações em [Configurações avançadas](#advanced-settings).
 
-## Use 
+## Usar
 
 Para criar um histograma:
 
@@ -49,7 +49,7 @@ Como parte da visualização, configurações específicas do histograma estão 
 | Configurações do histograma | Descrição |
 |---|---|
 | **[!UICONTROL Compartimento inicial]** | Determina o grupo inicial do histograma. O valor padrão é “1”. Você pode definir números iniciais de 0 a infinito (nenhum número negativo). |
-| **[!UICONTROL Compartimentos de métrica]** | Permite aumentar/diminuir o número de intervalos de dados (grupos). O número máximo de grupos é 50. |
+| **[!UICONTROL Compartimentos de métrica]** | Permite aumentar/diminuir o número de intervalos de dados (compartimentos). O número máximo de compartimentos é 50. |
 | **[!UICONTROL Tamanho do bucket de métrica]** | Permite definir o tamanho de cada grupo. Por exemplo, você pode alterar o tamanho do grupo de uma exibição de página para duas exibições de página. |
 | **[!UICONTROL Método de contagem]** | Selecione de **[!UICONTROL Pessoa]**, **[!UICONTROL Sessão]** ou **[!UICONTROL Evento]**. Por exemplo, exibições de página por sessão, por pessoa ou por evento. |
 

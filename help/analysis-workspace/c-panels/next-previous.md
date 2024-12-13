@@ -3,10 +3,11 @@ description: Um painel que mostra os itens de dimensão anteriores ou seguintes 
 title: Painel Item anterior ou seguinte
 feature: Panels
 role: User, Admin
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
+exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 31%
+ht-degree: 38%
 
 ---
 
@@ -15,8 +16,8 @@ ht-degree: 31%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_nextorpreviousitem_button"
->title="Item anterior ou seguinte"
+>id="workspace_nextorpreviousitem_button"
+>title="Próximo item ou anterior"
 >abstract="Crie um painel para entender as dimensões anteriores de onde as pessoas vêm ou a próxima dimensão que as pessoas acessam."
 
 <!-- markdownlint-disable MD034 -->
@@ -24,7 +25,7 @@ ht-degree: 31%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_nextorpreviousitem_panel"
+>id="workspace_nextorpreviousitem_panel"
 >title="Item anterior ou seguinte"
 >abstract="Analise quais são os lugares mais comuns de onde os visitantes vieram ou para onde irão em seguida.<br/><br/>**Dimensão**: selecione uma dimensão. Por exemplo, **Página**.<br/>**item de dimensão**: selecione um item de dimensão específico. Por exemplo, **Página inicial**.<br/>**Direção**: selecione **Próximo** para ver os itens de dimensão imediatamente a seguir ao item de dimensão selecionado. Selecione **Anterior** para ver os itens de dimensão que antecedem o item de dimensão selecionado.<br/>**Contêiner**: selecione **Sessão** para ver os itens de dimensão anteriores/seguintes na mesma sessão ou selecione **Pessoa** para ver o item de dimensão anterior/seguinte para a mesma pessoa."
 
@@ -34,13 +35,13 @@ ht-degree: 31%
 
 O painel **[!UICONTROL Item seguinte ou anterior]** contém várias tabelas e visualizações para identificar o item de dimensão seguinte ou anterior de uma dimensão específica. Por exemplo, você pode querer explorar quais páginas os clientes acessaram com mais frequência depois de visitarem a Página inicial.
 
-## Use 
+## Usar
 
 Para usar um painel **[!UICONTROL Item seguinte ou anterior]**:
 
 1. Criar um painel **[!UICONTROL Próximo item ou anterior]**. Para obter informações sobre como criar um painel, consulte [Criar um painel](panels.md#create-a-panel).
 
-1. Especifique a [entrada](#panel-input) para o painel.
+1. Especifique a [entrada](#panel-input) do painel.
 
 1. Observe a [saída](#panel-output) do painel.
 

@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel de atribuição no Analysis Worksp
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 44%
+ht-degree: 49%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 44%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_button"
+>id="workspace_attribution_button"
 >title="Atribuição"
 >abstract="Compare e visualize rapidamente quantos modelos de atribuição quiser usando qualquer dimensão e métrica de conversão"
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Painel do Attribution IQ"
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_attribution_panel"
+>id="workspace_attribution_panel"
 >title="Painel de atribuição"
 >abstract="Compare e visualize modelos de atribuição rapidamente usando qualquer dimensão e métrica de conversão.<br/><br/>**Parâmetros **<br/>**Canal**<br/> A dimensão à qual atribuir. Essa dimensão pode ser canais de marketing, campanhas ou qualquer outra dimensão.<br/>**Modelos**<br/> O modelo determina como o crédito é atribuído aos pontos de contato.<br/>**Janela de pesquisa**<br/> Essa configuração determina a janela de atribuição de dados que será aplicada a cada conversão."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Painel do Attribution IQ"
@@ -43,13 +43,13 @@ O Customer Journey Analytics aprimora a atribuição ao permitir:
 * Analisar visualmente as principais sequências de marketing: explore visualmente caminhos que levaram à conversão usando as visualizações de fluxo de múltiplos nós e de fallout.
 * Criar métricas calculadas: use a quantidade de métodos de alocação de atribuição que desejar.
 
-## Use 
+## Usar
 
 Para usar um painel **[!UICONTROL Atribuição]**:
 
 1. Crie um painel **[!UICONTROL Atribuição]**. Para obter informações sobre como criar um painel, consulte [Criar um painel](panels.md#create-a-panel).
 
-1. Especifique a [entrada](#panel-input) para o painel.
+1. Especifique a [entrada](#panel-input) do painel.
 
 1. Observe a [saída](#panel-output) do painel.
 

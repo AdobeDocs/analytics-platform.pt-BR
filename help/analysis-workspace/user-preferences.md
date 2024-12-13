@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '3461'
 ht-degree: 100%
@@ -43,7 +43,7 @@ As preferências gerais se aplicam à experiência do Customer Journey Analytics
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_shareonlyworkspace"
+>id="workspace_prefs_shareonlyworkspace"
 >title="Permitir compartilhamento apenas com usuários do espaço de trabalho"
 >abstract="Quando habilitada, a opção **[!UICONTROL Compartilhar com qualquer pessoa]** não fica mais disponível para usuários que compartilham um projeto do Analysis Workspace. As pessoas que anteriormente receberam acesso a um projeto por meio dessa opção de compartilhamento não podem mais acessar o projeto."
 
@@ -52,7 +52,7 @@ As preferências gerais se aplicam à experiência do Customer Journey Analytics
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_requireexperiencecloudauth"
+>id="workspace_prefs_requireexperiencecloudauth"
 >title="Exigir autenticação da Experience Cloud"
 >abstract="Quando habilitada, as pessoas que recebem acesso a um projeto pela opção “Compartilhar com qualquer pessoa” no Analysis Workspace devem se autenticar usando suas credenciais da Experience Cloud."
 
@@ -75,7 +75,7 @@ Você pode atualizar as preferências da empresa que se aplicam a todos os usuá
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_categoricalpalette"
+>id="workspace_prefs_categoricalpalette"
 >title="Paleta categórica"
 >abstract="Aplicado a muitas visualizações no Analysis Workspace e em análises guiadas. Cada cor representa um valor categórico diferente."
 
@@ -84,7 +84,7 @@ Você pode atualizar as preferências da empresa que se aplicam a todos os usuá
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_divergingpalette"
+>id="workspace_prefs_divergingpalette"
 >title="Paleta divergente"
 >abstract="Aplicado à tabela de coorte no Analysis Workspace e em análises guiadas de crescimento de usuários. Esta paleta possui um significado numérico com dois extremos e uma linha de base no meio."
 
@@ -93,7 +93,7 @@ Você pode atualizar as preferências da empresa que se aplicam a todos os usuá
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_sequentialpalette"
+>id="workspace_prefs_sequentialpalette"
 >title="Paleta sequencial"
 >abstract="Aplicado à análise guiada de tendências de frequência (barras empilhadas). Esta paleta possui um significado numérico que vai do claro ao escuro."
 
@@ -124,7 +124,7 @@ Algumas dessas mesmas preferências também podem ser personalizadas para projet
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showanomalies"
+>id="workspace_prefs_showanomalies"
 >title="Mostrar anomalias"
 >abstract="Selecionar a opção **[!UICONTROL Mostrar anomalias]** executará automaticamente a detecção de anomalias na primeira coluna de métrica adicionada a uma visualização de tabela de forma livre de série temporal."
 
@@ -133,7 +133,7 @@ Algumas dessas mesmas preferências também podem ser personalizadas para projet
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_prefs_showforecast"
+>id="workspace_prefs_showforecast"
 >title="Mostrar previsão"
 >abstract="Selecionar **[!UICONTROL Mostrar previsão]** preverá automaticamente a primeira coluna de métrica adicionada a uma visualização de tabela de forma livre de série temporal."
 

@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel Visualizadores simultâneos de mí
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '1208'
-ht-degree: 44%
+ht-degree: 47%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 44%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_button"
+>id="workspace_mediaconcurrentviewers_button"
 >title="Visualizadores simultâneos de mídia"
 >abstract="Crie um painel para analisar a audiência média por minuto de um conteúdo específico ou ao longo de um período específico."
 
@@ -25,7 +25,7 @@ ht-degree: 44%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaconcurrentviewers_panel"
+>id="workspace_mediaconcurrentviewers_panel"
 >title="Visualizadores simultâneos de mídia"
 >abstract="Analise visualizadores simultâneos ao longo do tempo, visualize o pico de simultaneidade ou faça o detalhamento e compare.<br/><br>**Granularidade**: selecione o período pelo qual exibir visualizadores simultâneos.<br/>**Números de resumo do painel**:<br/>opção para mostrar números de resumo com detalhes de data ou hora para cada linha. O máximo mostra detalhes para a simultaneidade de pico. O mínimo mostra detalhes para o vale.  <br/>**Detalhamento de série (opcional)**: divide a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas. Visualize até 10 linhas por vez. Os detalhamentos são limitados a um único nível."
 
@@ -55,7 +55,7 @@ No Analysis Workspace, a métrica Visualizadores simultâneos é o número de pe
 
 +++
 
-## Use 
+## Usar
 
 Para usar um painel **[!UICONTROL Visualizadores simultâneos de mídia]**:
 
@@ -63,7 +63,7 @@ Para usar um painel **[!UICONTROL Visualizadores simultâneos de mídia]**:
 
 1. Selecione uma visualização de dados para o painel que tem componentes configurados no complemento Coleção de mídia de transmissão.
 
-1. Especifique a [entrada](#panel-input) para o painel.
+1. Especifique a [entrada](#panel-input) do painel.
 
 1. Observe a [saída](#panel-output) do painel.
 

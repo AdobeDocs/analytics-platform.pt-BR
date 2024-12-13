@@ -4,7 +4,7 @@ title: Configurações de coluna
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 21%
@@ -65,7 +65,7 @@ A formatação condicional aplica formatação a limites superiores, intermediá
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_column_usenondefaultattributionmodel"
+>id="workspace_freeformtable_column_usenondefaultattributionmodel"
 >title="Usar modelo de atribuição não-padrão"
 >abstract="Habilite um modelo de atribuição não padrão para as colunas selecionadas."
 
@@ -74,7 +74,7 @@ A formatação condicional aplica formatação a limites superiores, intermediá
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
+>id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="Usar modelo de atribuição não-padrão"
 >abstract="O modo de atribuição não padrão não está disponível para esta métrica."
 

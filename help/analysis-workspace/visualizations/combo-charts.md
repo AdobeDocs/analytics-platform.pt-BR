@@ -4,10 +4,10 @@ title: Visualização de gráficos de combinação
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 41%
+ht-degree: 44%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 41%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_combo_button"
+>id="workspace_combo_button"
 >title="Combo"
 >abstract="Crie uma visualização de gráfico de combinação rapidamente, sem precisar criar uma tabela de forma livre primeiro."
 
@@ -39,7 +39,7 @@ Lembre-se:
 * É possível aplicar até 3 filtros a uma métrica.
 * Métricas calculadas não são compatíveis com gráficos de combinação.
 
-## Use 
+## Usar
 
 1. Adicione uma visualização de ![Comentário](/help/assets/icons/ComboChart.svg) [!UICONTROL Combinação]. Consulte [Adicionar uma visualização a um painel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 

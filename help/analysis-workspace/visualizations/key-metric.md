@@ -4,10 +4,10 @@ title: Resumo da métrica principal
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 35%
+ht-degree: 41%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 35%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_keymetricsummary_button"
+>id="workspace_keymetricsummary_button"
 >title="Resumo da métrica principal"
 >abstract="Crie uma visualização que seja uma combinação dos gráficos de linha, alteração de resumo e número de resumo. Use essa visualização para comparar a tendência das métricas importantes entre dois períodos."
 
@@ -39,7 +39,7 @@ Essa visualização aborda uma variedade de casos de uso comuns, incluindo:
 
 * Um executivo querendo entender como novas reservas mudaram este trimestre em comparação com o trimestre anterior.
 
-## Use 
+## Usar
 
 1. Adicionar uma visualização de ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Key metric]**. Consulte [Adicionar uma visualização a um painel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 

@@ -4,7 +4,7 @@ title: Número do resumo e alteração do resumo
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: d65171873f68835de0628b95158f01713eaacb6b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 51%
@@ -18,7 +18,7 @@ ht-degree: 51%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_summarynumber_button"
+>id="workspace_summarynumber_button"
 >title="Número do resumo"
 >abstract="Crie uma visualização que mostre totais e subtotais."
 
@@ -45,7 +45,7 @@ Como parte das configurações de visualização, opções específicas de Núme
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_summarychange_button"
+>id="workspace_summarychange_button"
 >title="Alteração de resumo"
 >abstract="Crie uma visualização que mostre o delta (alteração) entre dois números"
 

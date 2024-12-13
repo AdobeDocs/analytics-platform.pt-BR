@@ -4,7 +4,7 @@ title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 3e2d92003f8b89a20edfcfb8358854c7fbd15577
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '2144'
 ht-degree: 20%
@@ -16,7 +16,7 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_button"
+>id="workspace_experimentation_button"
 >title="Experimentação"
 >abstract="Crie um painel para comparar diferentes variações de experiências de usuário, marketing ou mensagens. E para determinar qual variação é a melhor para gerar um resultado específico."
 
@@ -25,9 +25,9 @@ ht-degree: 20%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_experimentation_panel"
+>id="workspace_experimentation_panel"
 >title="Experimentação"
->abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é melhor para gerar um resultado específico.<br/><br/>**Parâmetros **<br/>**Experimento**: o experimento que será analisado.<br>**Variante de controle**: a variante de controle do experimento selecionado.<br/>**Métrica de sucesso**: até 5 métricas de sucesso padrão (não calculadas) para analisar o experimento.<br/>**Métrica de normalização**: pessoas, sessões ou eventos. Essa métrica (também chamada de metodologia de contagem) torna-se o denominador do cálculo do incentivo. Essa métrica também afeta a maneira como os dados são agregados antes da aplicação do cálculo de confiança."
+>abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar a opção ideal para gerar um resultado específico.<br/><br/>**Parâmetros **<br/>**Experimento**: o experimento que será analisado.<br>**Variante de controle**: a variante de controle do experimento selecionado.<br/>**Métrica de sucesso**: até 5 métricas de sucesso padrão (não calculadas) para analisar o experimento.<br/>**Métrica de normalização**: pessoas, sessões ou eventos. Essa métrica (também chamada de metodologia de contagem) torna-se o denominador do cálculo do incentivo. Essa métrica também afeta a maneira como os dados são agregados antes da aplicação do cálculo de confiança."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -69,14 +69,14 @@ Na visualização de dados que contém dados de experimentação, escolha duas d
 
 Sem a presença desses rótulos, o painel Experimento não funciona, pois não haverá experimentos com os quais trabalhar.
 
-## Use 
+## Usar
 
 Para usar um painel **[!UICONTROL Experimentação]**:
 
 1. Criar um painel **[!UICONTROL Experimentação]**. Para obter informações sobre como criar um painel, consulte [Criar um painel](panels.md#create-a-panel).
 
 
-1. Especifique a [entrada](#panel-input) para o painel.
+1. Especifique a [entrada](#panel-input) do painel.
 
 1. Observe a [saída](#panel-output) do painel.
 
@@ -109,7 +109,7 @@ Para usar o painel Experimentação:
 
 O painel Experimentação retorna um conjunto avançado de dados e visualizações para ajudá-lo a entender melhor o desempenho de seus experimentos. Na parte superior do painel, são fornecidas visualizações de [alteração de resumo](../visualizations/summary-number-change.md) para lembrá-lo das configurações do painel selecionadas. A qualquer momento, você pode editar o painel selecionando o lápis de edição na parte superior direita.
 
-Você também recebe um resumo de texto que indica se o experimento é conclusivo ou não e resume o resultado. A conclusão se baseia na significância estatística (consulte [Metodologia estatística](#adobes-statistical-methodology).) Você pode ver números de resumo para a variante de melhor desempenho, com o maior aumento e confiança.
+Você também recebe um resumo de texto que indica se o experimento é conclusivo ou não e resume o resultado. A conclusão se baseia na significância estatística (consulte [Metodologia estatística](#adobes-statistical-methodology).) Você pode ver números de resumo para a variante com melhor desempenho, com o maior aumento e confiança.
 
 Para cada métrica de sucesso selecionada, são mostradas uma visualização da [tabela de forma livre](../visualizations/freeform-table/freeform-table.md) e uma visualização da taxa de conversão [linha](../visualizations/line.md).
 

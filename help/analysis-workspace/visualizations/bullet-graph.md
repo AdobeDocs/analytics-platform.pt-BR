@@ -4,10 +4,10 @@ title: Gráfico em marcadores
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 1dff53e244e5d231e7075ce087705e33e0978096
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 23%
+ht-degree: 64%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 23%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bullet_goalvalue"
+>id="workspace_bullet_goalvalue"
 >title="Valor da meta"
 >abstract="**[!UICONTROL Meta alta]** é a meta principal que você está almejando. **[!UICONTROL Meta baixa]** e **[!UICONTROL Meta intermediária]** criam intervalos abaixo da [!UICONTROL Meta alta]. Observação: quando a opção **[!UICONTROL Porcentagens]** estiver marcada, insira metas como números inteiros. Por exemplo: `20` se a sua meta for vinte por cento."
 
@@ -25,7 +25,7 @@ ht-degree: 23%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bullet_button"
+>id="workspace_bullet_button"
 >title="Marcador"
 >abstract="Crie uma visualização de gráfico de marcadores para mostrar como uma métrica se compara a, ou se mede em relação a, intervalos de desempenho (metas)."
 

@@ -4,10 +4,10 @@ title: Visão geral do Fluxo
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 3abe8fd0e43d9ab8810e7166cbdb463bc9244223
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 21%
+ht-degree: 53%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 21%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_button"
+>id="workspace_flow_button"
 >title="Fluxo"
 >abstract="Crie uma visualização para exibir o fluxo de pessoas de um ponto de verificação para o próximo."
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_flow_panel"
+>id="workspace_flow_panel"
 >title="Fluxo"
 >abstract="Analise o fluxo de visitas ou visitantes de um ponto de contato para o próximo.<br/><br/>**Parâmetros **<br/>**Começa com**: adicione uma dimensão, item de dimensão ou métrica para ver os principais pontos de contato após a ocorrência do componente selecionado.<br/>**Contém**: adicione uma dimensão ou item de dimensão para ver os principais pontos de contato antes e depois da ocorrência do componente selecionado.<br/>**Termina com**: adicione uma dimensão, item de dimensão ou métrica para ver os principais pontos de contato antes da ocorrência do componente selecionado.<br/>**Dimensão de definição de caminho**: adicione uma dimensão para usar como caminho conduzindo ou saindo do componente selecionado."
 

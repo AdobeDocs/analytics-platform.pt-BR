@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 4%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_conversiontrends_button"
+>id="workspace_guidedanalysis_conversiontrends_button"
 >title="Tendências de conversão"
 >abstract="Acompanhe as alterações nas taxas de conversão ao longo do tempo."
 

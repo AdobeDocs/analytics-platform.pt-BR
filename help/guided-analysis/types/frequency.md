@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: d492220eaf12242a870f3826b31edd3d1ea99a3b
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 7%
+ht-degree: 9%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 7%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_guidedanalysis_frequency_button"
+>id="workspace_guidedanalysis_frequency_button"
 >title="Frequência"
 >abstract="Exiba a distribuição da atividade repetida do usuário para eventos específicos."
 

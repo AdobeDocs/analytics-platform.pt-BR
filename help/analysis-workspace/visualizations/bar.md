@@ -4,10 +4,10 @@ title: Barra e barra empilhada
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: e8d9132ec9920d649f6694f02f987deadb93b77d
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 13%
+ht-degree: 30%
 
 ---
 
@@ -20,7 +20,7 @@ A visualização de barra tem uma opção padrão e empilhada.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_bar_button"
+>id="workspace_bar_button"
 >title="Barra"
 >abstract="Crie uma visualização de barra para representar vários valores em uma ou mais métricas."
 
@@ -38,7 +38,7 @@ Uma opção suspensa de granularidade nas configurações de visualização perm
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_barstacked_button"
+>id="workspace_barstacked_button"
 >title="Barra empilhada"
 >abstract="Crie uma visualização de barra para representar vários valores em uma ou mais métricas empilhadas."
 

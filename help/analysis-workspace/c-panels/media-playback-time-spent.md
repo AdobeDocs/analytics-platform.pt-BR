@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel Tempo gasto com a reprodução de 
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 519e7d583edc1eab9b6dd10fec024ac4bb2b93cf
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 54%
+ht-degree: 56%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 54%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaplaybacktimespent_button"
+>id="workspace_mediaplaybacktimespent_button"
 >title="Tempo gasto com a reprodução da mídia"
 >abstract="Crie um painel para analisar o consumo de vídeo ao longo do tempo, com vários níveis de granularidade e a capacidade de detalhar e comparar."
 
@@ -25,7 +25,7 @@ ht-degree: 54%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_mediaplaybacktimespent_panel"
+>id="workspace_mediaplaybacktimespent_panel"
 >title="Tempo gasto com a reprodução da mídia"
 >abstract="Analise o consumo de vídeo ao longo do tempo, selecione várias granularidades, faça o detalhamento e compare.<br/><br/>**Granularidade**: selecione o período pelo qual exibir visualizadores simultâneos.<br/>**Números de resumo do painel (opcional)**: opção para mostrar números de resumo com detalhes de data ou hora para cada linha. O máximo mostra detalhes do tempo de pico de reprodução gasto. O mínimo mostra detalhes para o vale. A soma mostra detalhes sobre a soma total do tempo gasto com a reprodução.<br/>**Detalhamento de série (opcional)**: divide a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas. Visualize até 10 linhas por vez. Os detalhamentos são limitados a um único nível.<br/>**Formato de hora**: opção para mostrar o formato de hora das visualizações em horas ou minutos."
 
@@ -57,7 +57,7 @@ O tempo gasto com a reprodução pode ajudá-lo a entender:
 
 +++
 
-## Use 
+## Usar
 
 Para usar um painel **[!UICONTROL Tempo gasto com a reprodução da mídia]**:
 
@@ -65,7 +65,7 @@ Para usar um painel **[!UICONTROL Tempo gasto com a reprodução da mídia]**:
 
 1. Selecione uma visualização de dados para o painel que tem componentes configurados no complemento Coleção de mídia de transmissão.
 
-1. Especifique a [entrada](#panel-input) para o painel.
+1. Especifique a [entrada](#panel-input) do painel.
 
 1. Observe a [saída](#panel-output) do painel.
 

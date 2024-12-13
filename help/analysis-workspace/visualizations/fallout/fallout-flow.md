@@ -4,10 +4,10 @@ title: Sobre relatórios e visualizações de fallout
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 3abe8fd0e43d9ab8810e7166cbdb463bc9244223
+source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 29%
+ht-degree: 32%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 29%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_workspace_fallout_button"
+>id="workspace_fallout_button"
 >title="Fallout"
 >abstract="Cria uma visualização para ver como as pessoas avançam com êxito para os pontos de verificação desejados."
 
