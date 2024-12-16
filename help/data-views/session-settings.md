@@ -5,14 +5,26 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 8a56f6182b0679d64b9e4ad82402f414eeb88055
+source-git-commit: edd49ea60901acc0bb4ba603bbb9377aeee423fd
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 100%
+source-wordcount: '453'
+ht-degree: 91%
 
 ---
 
-# Configurações da sessão
+# Configurações da sessão {#session-settings}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_dataview_settings_datapreview"
+>title="Visualização de dados"
+>abstract="Compara os dados desse filtro com os dados da conexão. A porcentagem de visualização é baseada no número total na conexão dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda poderá estar sendo preenchida."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-enable MD034 -->
+
 
 No Customer Journey Analytics, é possível definir uma sessão de qualquer maneira para corresponder a como as pessoas interagem com suas experiências digitais. Defina as configurações de sessão em uma visualização de dados.
 

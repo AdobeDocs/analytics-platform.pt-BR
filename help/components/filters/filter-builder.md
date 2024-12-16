@@ -4,10 +4,10 @@ title: Criar filtros
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 8772f2dcd5f9c20ca9d366b8c172218f45e4713c
 workflow-type: tm+mt
-source-wordcount: '1450'
-ht-degree: 6%
+source-wordcount: '1494'
+ht-degree: 7%
 
 ---
 
@@ -21,6 +21,16 @@ ht-degree: 6%
 >abstract="Os públicos-alvo podem ser criados a partir de um filtro e compartilhados com a Adobe Experience Platform para ativação."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_components_filter_datapreview"
+>title="Visualização de dados"
+>abstract="Compara os dados desse filtro com os da visualização de dados. A porcentagem de visualização é baseada no número total na exibição de dados dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda poderá estar sendo preenchida."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 A caixa de diálogo **[!UICONTROL Construtor de filtros]** é usada para criar filtros novos ou editar filtros existentes. A caixa de diálogo é denominada **[!UICONTROL Novo filtro]** ou **[!UICONTROL Editar filtro]** para filtros que você cria ou gerencia no gerenciador [[!UICONTROL Filtros]](/help/components/filters/manage-filters.md).
@@ -45,7 +55,7 @@ A caixa de diálogo **[!UICONTROL Construtor de filtros]** é usada para criar f
    | **[!UICONTROL Filtro somente de projeto]** | Uma caixa de informações para explicar que o filtro só está visível no projeto em que foi criado e que o filtro não será adicionado à lista de componentes. Habilitar **[!UICONTROL Disponibilize este filtro para todos os projetos e adicione-o à lista de componentes]** para alterar essa configuração. Esta caixa de informações só é visível quando você cria um [filtro rápido](quick-filters.md) e transforma as informações do filtro rápido em um filtro regular usando o **[!UICONTROL Abrir construtor]** da interface do [!UICONTROL filtro rápido]. |
    | **[!UICONTROL Título]** ![Obrigatório](/help/assets/icons/Required.svg) | Nomeie o filtro, por exemplo, `Last month mobile customers`. |
    | **[!UICONTROL Descrição]** | Forneça uma descrição para o filtro, por exemplo, `Filter to define the mobile customers for the last month`. |
-   | **[!UICONTROL Tags]** | Organize o filtro criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova marca. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma marca. |
+   | **[!UICONTROL Tags]** | Organize o filtro criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova marca. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
    | **[!UICONTROL Definição]** ![Necessária](/help/assets/icons/Required.svg) | Defina seu filtro usando o [Criador de definições](#definition-builder). |
 
    {style="table-layout:auto"}
