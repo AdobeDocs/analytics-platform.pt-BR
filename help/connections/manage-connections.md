@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3364'
 ht-degree: 14%
 
 ---
@@ -205,6 +205,46 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 
 
 ## Uso
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_keyusagemetrics"
+>title="Principais métricas de uso"
+>abstract="Forneça dados mensais e totais para linhas reportáveis principais e históricas."
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_monthlyingestedrows"
+>title="Linhas assimiladas mensalmente"
+>abstract="Mede o número total de registros adicionados ao sistema a cada mês para fornecer insights sobre o crescimento dos dados e as taxas de assimilação."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_monthlyreportablerows"
+>title="Linhas relatáveis mensalmente"
+>abstract="Rastreia o número de linhas disponíveis para relatórios. Linhas relatáveis são as linhas assimiladas menos as linhas que são ignoradas e excluídas durante a assimilação. As linhas relatáveis servem como uma métrica principal para cobrança e uso de dados."
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_detailbreakdown"
+>title="Detalhamento detalhado."
+>abstract="Você pode visualizar métricas detalhadas por conexão, conjunto de dados, sandbox e tags, com a opção de baixar um arquivo CSV dos dados."
+
+<!-- markdownlint-enable MD034 -->
+
+
 
 A interface [!UICONTROL Uso] mostra o uso de linhas assimiladas e reportáveis em todas as conexões. Essa interface permite determinar se o uso de Customer Journey Analytics está em conformidade com o que foi concordado contratualmente. Além dos propósitos de monitoramento, você pode usar a interface do usuário de Uso para planejar a renovação da licença de Customer Journey Analytics.
 

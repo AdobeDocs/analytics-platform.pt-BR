@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 7b51f9c0699a07051936e6e6ca493688d59e624e
-workflow-type: ht
-source-wordcount: '3747'
-ht-degree: 100%
+source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
+workflow-type: tm+mt
+source-wordcount: '3769'
+ht-degree: 97%
 
 ---
 
@@ -204,8 +204,6 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 
 <!-- markdownlint-enable MD034 -->
 
-
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -232,6 +230,16 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >abstract="Esta opção transformará o conjunto de dados, para que ele possa ser usado em pesquisas baseadas em pessoas nos cenários B2B. Uma vez ativada, a transformação do conjunto de dados é irreversível."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_connectionmap"
+>title="Mapa de conexões"
+>abstract="O Mapa de conexão visualiza os relacionamentos entre evento, pessoa, conta e conjuntos de dados de pesquisa relevantes (como oportunidades, membros de campanha e muito mais)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 O novo fluxo de trabalho permite adicionar um conjunto de dados da Experience Platform ao criar uma conexão.
 
@@ -310,7 +318,7 @@ Existem diferentes tipos de conjunto de dados: dados de [!UICONTROL Evento], [
 | Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID da pessoa |
 |---|---|---|---|---|
 | **[!UICONTROL Evento]** | Dados que representam eventos no tempo. Por exemplo, visitas à web, interações, transações, dados de POS, dados de pesquisa, dados de impressão publicitária e assim por diante. Esses dados podem ser dados típicos de fluxo de cliques, com uma ID de cliente ou uma ID de cookie e um registro de data e hora. Os dados do evento fornecem flexibilidade em relação a qual ID é usada como a ID da pessoa. | Isso é automaticamente definido para o campo de carimbo de data/hora padrão em esquemas baseados em eventos na [!UICONTROL Experience Platform]. | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Série de tempo”. Exemplos incluem “Evento de experiência XDM” ou “Evento de decisão XDM”. | Você pode escolher a ID de pessoa que deseja incluir. Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas identidades pode ser usada como a ID de pessoa. Os exemplos incluem: ID de cookie, ID compilada, ID de usuário, código de rastreamento etc. |
-| **[!UICONTROL Pesquisa]** | Você pode adicionar conjuntos de dados como pesquisas de campos em todos os tipos de conjuntos de dados: conjuntos de dados de perfil, pesquisa e evento (este último sempre foi compatível). Esse recurso adicional expande a capacidade de o Customer Journey Analytics aceitar modelos de dados complexos, incluindo B2B. Esses dados são usados para procurar valores ou chaves encontrados nos dados de evento, perfil ou pesquisa. Você pode adicionar até dois níveis de pesquisas. (Observe que [campos derivados](/help/data-views/derived-fields/derived-fields.md) não podem ser usados como chaves correspondentes para pesquisas em conexões.) Por exemplo, você pode fazer o upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte o [Exemplo de B2B](/help/use-cases/b2b/example.md). | N/D | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Gravar”, exceto a classe “Perfil individual XDM”. | N/D |
+| **[!UICONTROL Pesquisa]** | Você pode adicionar conjuntos de dados como pesquisas de campos em todos os tipos de conjuntos de dados: conjuntos de dados de perfil, pesquisa e evento (este último sempre foi compatível). Esse recurso adicional expande a capacidade de o Customer Journey Analytics aceitar modelos de dados complexos, incluindo B2B. Esses dados são usados para procurar valores ou chaves encontrados nos dados de evento, perfil ou pesquisa. Você pode adicionar até dois níveis de pesquisas. (Observe que [Campos Derivados](/help/data-views/derived-fields/derived-fields.md) não podem ser usados como chaves correspondentes para pesquisas em Conexões.) Por exemplo, você pode carregar dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte o [Exemplo de B2B](/help/use-cases/b2b/example.md). | N/D | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento “Gravar”, exceto a classe “Perfil individual XDM”. | N/D |
 | **[!UICONTROL Perfil]** | Dados que são aplicados às pessoas, usuários ou clientes nos dados de [!UICONTROL evento]. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe “Perfil individual XDM”. | Você pode escolher a ID de pessoa que deseja incluir. Cada conjunto de dados (exceto conjuntos de dados de resumo), definido na [!DNL Experience Platform], tem seu próprio conjunto de uma ou mais IDs de pessoa definidas. Por exemplo, ID de cookie, ID compilada, ID de usuário, código de rastreamento etc.<br>![ID de pessoa ](assets/person-id.png)**Observação**: se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatório refletirá isso. Para mesclar conjuntos de dados, use a mesma ID de pessoa. |
 | **Resumo** | Dados de série temporal que não estão ligados a uma ID de pessoa individual. Os dados de resumo representam dados agregados em um nível diferente de agregação, por exemplo, campanhas. Você pode usar esses dados no Customer Journey Analytics para oferecer suporte a vários casos de uso. Veja [Dados resumidos](/help/data-views/summary-data.md) para obter mais informações. | É automaticamente definido para o campo de carimbo de data e hora padrão de esquemas de métricas de resumo baseados em eventos na Experience Platform. Somente a granularidade por hora ou por dia é aceita. | Qualquer esquema integrado ou personalizado baseado na classe “Métrica de resumo do XDM”. | N/D |
 
@@ -341,7 +349,7 @@ Ao selecionar o Mapa de identidade, você terá duas opções adicionais de conf
 | Opção | Descrição |
 |---|---|
 | **[!UICONTROL Usar namespace da ID primária]** | Esta opção instrui o Customer Journey Analytics a encontrar a identidade no Mapa de Identidade que está marcada com um atributo `primary=true` e usar essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. Além disso, essa identidade também é a principal candidata a ser usada como a ID de pessoa do Customer Journey Analytics (dependendo de como o conjunto de dados está configurado na conexão do Customer Journey Analytics). |
-| **[!UICONTROL Namespace]** | (Essa opção só estará disponível se você não usar a Namespace de ID primária.) Os namespaces de identidade são um componente do [Serviço de identidade da Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces). Os namespaces servem como indicadores do contexto ao qual uma identidade está relacionada. Se você especificar um namespace, o Customer Journey Analytics pesquisará cada linha do mapa de identidade para encontrar a chave desse namespace e usará a identidade desse namespace como a ID de pessoa dessa linha. Visto que o Customer Journey Analytics não pode fazer uma verificação completa de todas as linhas do conjunto de dados para determinar quais namespaces estão presentes, todos os namespaces possíveis são exibidos na lista suspensa. Você deve saber quais namespaces estão especificados nos dados, pois eles não são detectados automaticamente. |
+| **[!UICONTROL Namespace]** | (Essa opção só estará disponível se você não usar o Namespace de ID primária.) Os namespaces de identidade são um componente do [Experience Platform Identity Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces). Os namespaces servem como indicadores do contexto ao qual uma identidade está relacionada. Se você especificar um namespace, o Customer Journey Analytics pesquisará cada linha do mapa de identidade para encontrar a chave desse namespace e usará a identidade desse namespace como a ID de pessoa dessa linha. Visto que o Customer Journey Analytics não pode fazer uma verificação completa de todas as linhas do conjunto de dados para determinar quais namespaces estão presentes, todos os namespaces possíveis são exibidos na lista suspensa. Você deve saber quais namespaces estão especificados nos dados, pois eles não são detectados automaticamente. |
 
 {style="table-layout:auto"}
 
