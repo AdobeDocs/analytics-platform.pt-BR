@@ -4,9 +4,9 @@ description: Para acessar essas funções, selecione Mostrar avançadas na lista
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 2b6d7ba695390bd084fb3af7b5fa365f0bd90185
+source-git-commit: 1804f3dc4126007c1ff553f844d691c80623bb90
 workflow-type: tm+mt
-source-wordcount: '4428'
+source-wordcount: '4438'
 ht-degree: 27%
 
 ---
@@ -874,7 +874,7 @@ Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 >[!CONTEXTUALHELP]
 >id="calcmetrics_function_log_regression_coefficient"
 >title="Regressão logarítmica: coeficiente de correlação"
->abstract="abstract"
+>abstract="Regressão logarítmica: Y = a ln(X) + b. Retorna o coeficiente de correlação."
 
 <!-- markdownlint-enable MD034 -->
 
