@@ -6,9 +6,9 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
+source-git-commit: 94d3c5352d00269b760e8b7bdf5059eaaa9b0bd3
 workflow-type: tm+mt
-source-wordcount: '3364'
+source-wordcount: '3418'
 ht-degree: 14%
 
 ---
@@ -243,6 +243,25 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >abstract="Você pode visualizar métricas detalhadas por conexão, conjunto de dados, sandbox e tags, com a opção de baixar um arquivo CSV dos dados."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_otherdatasets"
+>title="Outros conjuntos de dados"
+>abstract="Para meses antes de setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e *Outros conjuntos de dados* não serão mais exibidos."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connections_usage_unknowndatasetsorconnections"
+>title="Conjuntos de dados ou conexões desconhecidos"
+>abstract="Conjuntos de dados ou conexões desconhecidos são exibidos usando suas IDs."
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 
