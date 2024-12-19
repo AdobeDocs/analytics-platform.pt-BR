@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3ae10f81cb38500c035811542bc761f06688a130
+source-git-commit: 34b94eeeeb501f6c0deb982351b7c65e0a97bc68
 workflow-type: tm+mt
-source-wordcount: '17969'
+source-wordcount: '18106'
 ht-degree: 81%
 
 ---
@@ -1347,6 +1347,24 @@ Os seguintes modelos estão disponíveis:
 | **Online/Offline** | Visualize o tráfego online e offline em conjunto.<p>**Isso pode ajudar** a entender melhor sobre a distribuição do tráfego online e offline para o site.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como dedicar mais recursos à sua experiência online quando ela atingir um determinado nível de tráfego.</p><!-- This template uses the ... --> |
 
 ### Outros canais {#other-channels}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--pointOfSale"
+>title="Exibir dados de transação de ponto de venda (POS), incluindo receita realizada, pedidos feitos e unidades vendidas. Esse modelo também inclui visualizações que exibem informações sobre as principais lojas, os principais produtos e as principais categorias de produtos, bem como vendas online e offline."
+>abstract="**Isso pode ajudá-lo** a entender melhor quais são os seus produtos mais vendidos nas lojas e online.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como atribuir mais recursos de marketing a seus produtos e canais de maior desempenho."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--survey"
+>title="Exibir o engajamento do usuário para suas pesquisas. Exiba o número de inícios e conclusões, as principais perguntas e respostas e o número de participantes iniciais vs. repetidos."
+>abstract="**Isso pode ajudá-lo** a entender melhor os níveis de envolvimento e a taxa de sucesso de suas pesquisas.<br/>**Com base no que você aprende, é possível** realizar várias ações, como ajustar pesquisas futuras para gerar uma melhor participação."
+
+<!-- markdownlint-enable MD034 -->
 
 Os seguintes modelos estão disponíveis:
 
