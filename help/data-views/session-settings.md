@@ -6,9 +6,9 @@ feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
 source-git-commit: edd49ea60901acc0bb4ba603bbb9377aeee423fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '453'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_settings_datapreview"
 >title="Visualização de dados"
->abstract="Compara os dados desse filtro com os dados da conexão. A porcentagem de visualização é baseada no número total na conexão dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda poderá estar sendo preenchida."
+>abstract="Compara os dados desse filtro com os dados da conexão. A porcentagem de visualização é baseada no número total na conexão dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda pode estar preenchendo os dados."
 
 <!-- markdownlint-enable MD034 -->
 

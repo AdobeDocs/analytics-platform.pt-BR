@@ -6,9 +6,9 @@ title: Como usar as teclas de atalho do Workspace
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
 source-git-commit: a757ea4fc9bf8b13a8ce3001cf8639245d213e1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '402'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -28,57 +28,57 @@ Observe que é possível usar os seguintes símbolos do teclado:
 
 | Ação | Atalho do Mac | Atalho do Windows |
 | --- | --- | --- | 
-| Criar novo projeto | **[!UICONTROL *cmd + shift + p *]** | **[!UICONTROL *ctrl+shift+p *]** |
-| Abrir projeto existente | **[!UICONTROL *cmd+o *]** | **[!UICONTROL *ctr + o *]** |
-| Ir para a tela Painéis | **[!UICONTROL *opt + shift + 1 *]** | **[!UICONTROL *alt + shift + 1 *]** |
-| Ir para o painel Visualizações | **[!UICONTROL *opt + shift + 2 *]** | **[!UICONTROL *alt + shift + 2 *]** |
-| Ir para o painel Componentes | **[!UICONTROL *opt + shift + 3 *]** | **[!UICONTROL *alt + shift + 3 *]** |
-| Recolher/expandir todos os painéis | **[!UICONTROL *opt + m *]** | **[!UICONTROL *alt + m *]** |
-| Recolher/expandir painel ativo | **[!UICONTROL *opt + cmd + m *]** | **[!UICONTROL *alt + ctrl + m *]** |
-| Mover para o próximo painel | **[!UICONTROL *opção *+ ▶︎]** | **[!UICONTROL *alt *+ ▶︎]** |
-| Mover para o painel anterior | **[!UICONTROL *opção *+ ◀︎]** | **[!UICONTROL *alt *+ ◀︎]** |
+| Criar novo projeto | **[!UICONTROL *Cmd + Shift + P *]** | **[!UICONTROL *Ctrl + Shift + P *]** |
+| Abrir projeto existente | **[!UICONTROL *Cmd + O *]** | **[!UICONTROL *Ctrl + O *]** |
+| Ir para a tela Painéis | **[!UICONTROL *Opt + Shift + 1 *]** | **[!UICONTROL *Alt + Shift + 1 *]** |
+| Ir para o painel Visualizações | **[!UICONTROL *Opt + Shift + 2 *]** | **[!UICONTROL *Alt + Shift + 2 *]** |
+| Ir para o painel Componentes | **[!UICONTROL *Opt + Shift + 3 *]** | **[!UICONTROL *Alt + Shift + 3 *]** |
+| Recolher/expandir todos os painéis | **[!UICONTROL *Opt + M *]** | **[!UICONTROL *Alt + M *]** |
+| Recolher/expandir painel ativo | **[!UICONTROL *Opt + Cmd + M *]** | **[!UICONTROL *Alt + Ctrl + M *]** |
+| Mover para o próximo painel | **[!UICONTROL *Opt * + ▶︎]** | **[!UICONTROL *Alt * + ▶︎]** |
+| Mover para o painel anterior | **[!UICONTROL *Opt * + ◀︎]** | **[!UICONTROL *Alt * + ◀︎]** |
 
 ## Ações de análise
 
 | Ação | Atalho do Mac | Atalho do Windows |
 | --- | --- | --- | 
-| Pesquisar no painel esquerdo | **[!UICONTROL *cmd + /*]** | **[!UICONTROL *ctrl+1 *]** |
-| Criar um alerta | **[!UICONTROL *cmd + shift + a *]** | **[!UICONTROL *ctrl+shift+a *]** |
-| Criar métrica calculada | **[!UICONTROL *cmd + shift + c *]** | **[!UICONTROL *ctrl+shift+c *]** |
-| Criar um intervalo de datas | **[!UICONTROL *cmd + shift + d *]** | **[!UICONTROL *ctrl+shift+d *]** |
-| Criar um filtro | **[!UICONTROL *cmd + shift + e *]** | **[!UICONTROL *ctrl+shift+e *]** |
-| Limpar tudo | **[!UICONTROL *alt + w *]** | **[!UICONTROL *opt + w *]** |
-| Copiar | **[!UICONTROL *cmd+c *]** | **[!UICONTROL *ctrl+c *]** |
-| Refazer | **[!UICONTROL *cmd + shift + z *]** | **[!UICONTROL *ctrl+shift+z *]** |
-| Desfazer | **[!UICONTROL *cmd+z *]** | **[!UICONTROL *ctrl+z *]** |
-| Atualizar componentes | **[!UICONTROL *opt + shift + r *]** | **[!UICONTROL *alt + shift + r *]** |
-| Atualizar projeto | **[!UICONTROL *opção + r *]** | **[!UICONTROL *alt + r *]** |
-| Definir como página inicial | **[!UICONTROL *cmd + shift + l *]** | **[!UICONTROL *ctrl+shift+l *]** |
+| Pesquisar no painel esquerdo | **[!UICONTROL *Cmd + /*]** | **[!UICONTROL *Ctrl + /*]** |
+| Criar um alerta | **[!UICONTROL *Cmd + Shift + A *]** | **[!UICONTROL *Ctrl + Shift + A *]** |
+| Criar métrica calculada | **[!UICONTROL *Cmd + Shift + C *]** | **[!UICONTROL *Ctrl + Shift + C *]** |
+| Criar um intervalo de datas | **[!UICONTROL *Cmd + Shift + D *]** | **[!UICONTROL *Ctrl + Shift + D *]** |
+| Criar um filtro | **[!UICONTROL *Cmd + Shift + E *]** | **[!UICONTROL *Ctrl + Shift + E *]** |
+| Limpar tudo | **[!UICONTROL *Alt + W *]** | **[!UICONTROL *Opt + W *]** |
+| Copiar | **[!UICONTROL *Cmd + C *]** | **[!UICONTROL *Ctrl + C *]** |
+| Refazer | **[!UICONTROL *Cmd + Shift + Z *]** | **[!UICONTROL *Ctrl + Shift + Z *]** |
+| Desfazer | **[!UICONTROL *Cmd + Z *]** | **[!UICONTROL *Ctrl + Z *]** |
+| Atualizar componentes | **[!UICONTROL *Opt + Shift + R *]** | **[!UICONTROL *Alt + Shift + R *]** |
+| Atualizar projeto | **[!UICONTROL *Opt + R *]** | **[!UICONTROL *Alt + R *]** |
+| Definir como página destino | **[!UICONTROL *Cmd + Shift + L *]** | **[!UICONTROL *Ctrl + Shift + L *]** |
 
 ## Adicionar painéis e ações de visualização
 
 | Ação | Atalho do Mac | Atalho do Windows |
 | --- | --- | --- | 
-| Novo painel de atribuição | **[!UICONTROL *opção + e *]** | **[!UICONTROL *alt + e *]** |
-| Novo painel em branco | **[!UICONTROL *opção + b *]** | **[!UICONTROL *alt + b *]** |
-| Novo painel de forma livre | **[!UICONTROL *opção + a *]** | **[!UICONTROL *alt + a *]** |
-| Novo painel de insights rápidos | **[!UICONTROL *opção + f *]** | **[!UICONTROL *alt + f *]** |
-| Nova tabela de forma livre | **[!UICONTROL *opção + 1 *]** | **[!UICONTROL *alt + 1 *]** |
-| Novo gráfico de linha | **[!UICONTROL *opção + 2 *]** | **[!UICONTROL *alt + 2 *]** |
-| Novo gráfico de barras | **[!UICONTROL *opção + 3 *]** | **[!UICONTROL *alt + 3 *]** |
-| Novo gráfico de combinação | **[!UICONTROL *opção + 4 *]** | **[!UICONTROL *alt + 4 *]** |
+| Novo painel de atribuição | **[!UICONTROL *Opt + E *]** | **[!UICONTROL *Alt + E *]** |
+| Novo painel em branco | **[!UICONTROL *Opt + B *]** | **[!UICONTROL *Alt + B *]** |
+| Novo painel de forma livre | **[!UICONTROL *Opt + A *]** | **[!UICONTROL *Alt + A *]** |
+| Novo painel de insights rápidos | **[!UICONTROL *Opt + F *]** | **[!UICONTROL *Alt + F *]** |
+| Nova tabela de forma livre | **[!UICONTROL *Opt + 1 *]** | **[!UICONTROL *Alt + 1 *]** |
+| Novo gráfico de linha | **[!UICONTROL *Opt + 2 *]** | **[!UICONTROL *Alt + 2 *]** |
+| Novo gráfico de barras | **[!UICONTROL *Opt + 3 *]** | **[!UICONTROL *Alt + 3 *]** |
+| Novo gráfico de combinação | **[!UICONTROL *Opt + 4 *]** | **[!UICONTROL *Alt + 4 *]** |
 
 ## Ações de democratização
 
 | Ação | Atalho do Mac | Atalho do Windows |
 | --- | --- | --- | 
-| Salvar projeto | **[!UICONTROL *cmd+s *]** | **[!UICONTROL *ctrl+s *]** |
-| Salvar projeto como | **[!UICONTROL *cmd + shift + s *]** | **[!UICONTROL *ctrl+shift+s *]** |
-| Salvar como modelo | **[!UICONTROL *opt + t *]** | **[!UICONTROL *alt + t *]** |
-| Baixar como CSV | **[!UICONTROL *cmd + shift + v *]** | **[!UICONTROL *ctrl + shift + v *]** |
-| Baixar como PDF | **[!UICONTROL *cmd + shift + b *]** | **[!UICONTROL *ctrl+shift+b *]** |
-| Preparar dados do projeto | **[!UICONTROL *cmd + shift + g *]** | **[!UICONTROL *ctrl+shift+g *]** |
-| Compartilhar projeto | **[!UICONTROL *cmd+g *]** | **[!UICONTROL *ctrl+g *]** |
-| Obter link do projeto | **[!UICONTROL *alt + l *]** | **[!UICONTROL *alt + l *]** |
-| Enviar arquivo agora | **[!UICONTROL *alt + s *]** | **[!UICONTROL *alt + s *]** |
-| Enviar arquivo agendado | **[!UICONTROL *shift + alt + s *]** | **[!UICONTROL *shift + alt + s *]** |
+| Salvar projeto | **[!UICONTROL *Cmd + S *]** | **[!UICONTROL *Ctrl + S *]** |
+| Salvar projeto como | **[!UICONTROL *Cmd + Shift + S *]** | **[!UICONTROL *Ctrl + Shift + S *]** |
+| Salvar como modelo | **[!UICONTROL *Opt + T *]** | **[!UICONTROL *Alt + T *]** |
+| Baixar como CSV | **[!UICONTROL *Cmd + Shift + V *]** | **[!UICONTROL *Ctrl + Shift + V *]** |
+| Baixar como PDF | **[!UICONTROL *Cmd + Shift + B *]** | **[!UICONTROL *Ctrl + Shift + B *]** |
+| Preparar dados do projeto | **[!UICONTROL *Cmd + Shift + G *]** | **[!UICONTROL *Ctrl + Shift + G *]** |
+| Compartilhar projeto | **[!UICONTROL *Cmd + G *]** | **[!UICONTROL *Ctrl + G *]** |
+| Obter link do projeto | **[!UICONTROL *Alt + L *]** | **[!UICONTROL *Alt + L *]** |
+| Enviar arquivo agora | **[!UICONTROL *Alt + S *]** | **[!UICONTROL *Alt + S *]** |
+| Enviar arquivo agendado | **[!UICONTROL *Shift + Alt + S *]** | **[!UICONTROL *Shift + Alt + S *]** |

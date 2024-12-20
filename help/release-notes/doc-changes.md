@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4219'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Função de desduplicação de campo derivado | Adição de documentação sobre a função [desduplicar](/help/data-views/derived-fields/derived-fields.md#deduplicate) campo derivado. |
 | Mensagens de erro comuns atualizadas | Atualizações secundárias feitas nas [mensagens de erro comuns](/help/analysis-workspace/workspace-faq/error-messages.md). |
 | **Junho de 2024** | |
-| Atualização do nome do produto que se refere aos recursos de mídia de streaming | As instâncias de &quot;Media Analytics&quot; e &quot;Mídia de streaming&quot; foram substituídas pelos nomes &quot;Complemento de coleção de mídia de streaming&quot; e &quot;Coleção de mídia de streaming&quot; ao se referirem ao conjunto de recursos de mídia de streaming que coletam dados de mídia de streaming e os exibem no Analysis Workspace. <p>Essas atualizações estão disponíveis em toda a documentação do Customer Journey Analytics, bem como na [documentação da Coleção de mídia de streaming](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/media-overview).</p> |
+| Atualização do nome do produto que se refere aos recursos de mídia de streaming | As instâncias do “Media Analytics” e da “Mídia de streaming” foram substituídas pelo nome “Complemento da Coleção de mídia de streaming” e “Coleção da mídia de streaming” ao se referirem ao conjunto de recursos de mídia de streaming que coletam dados de mídia de streaming e os exibem no Analysis Workspace. <p>Essas atualizações estão disponíveis na documentação do Customer Journey Analytics, bem como na documentação da [Coleção de mídia de streaming](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/media-overview).</p> |
 | Compilação baseada em gráfico | Atualização e reestruturação da [documentação de compilação](/help/stitching/overview.md) com a introdução da compilação baseada em gráfico. |
 | Assistente de IA | Adição de [documentação](../ai-assistant.md) sobre o Assistente de IA para o Customer Journey Analytics. |
 | Transformar conjunto de dados para pesquisas B2B | Adição de documentação sobre como oferecer suporte a [pesquisas com base em pessoas em dados B2B](/help/connections//transform-datasets-b2b-lookups.md) (incluindo contas, oportunidades, listas de marketing e campanhas) usando a transformação de conjuntos de dados de pesquisa B2B. |
