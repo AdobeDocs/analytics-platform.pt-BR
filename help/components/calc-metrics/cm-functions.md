@@ -7,7 +7,7 @@ role: User
 source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -109,14 +109,14 @@ Retorna o menor valor em um conjunto de elementos de dimensão para uma coluna d
 >[!CONTEXTUALHELP]
 >id="functions-col-sum"
 >title="Soma da coluna"
->abstract="Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elementos de uma dimensão)"
+>abstract="Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elementos de uma dimensão)."
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN SUM(metric)]**
 
-Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elementos de uma dimensão)
+Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elementos de uma dimensão).
 
 | Argumento | Descrição |
 |---|---|
@@ -151,7 +151,7 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 >[!CONTEXTUALHELP]
 >id="functions-exp"
 >title="Expoente"
->abstract="Retorna e elevado à potência de um número especificado. A constante e é igual a 2,71828182845904, a base do logaritmo natural. EXPOENTE é o inverso de LN, o logaritmo natural de um número."
+>abstract="Retorna e elevado à potência de um número especificado. A constante e é igual a 2,71828182845904, a base do logaritmo natural. EXPONENT é o inverso de LN, o logaritmo natural de um número."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -171,7 +171,7 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 >[!CONTEXTUALHELP]
 >id="functions-mean"
 >title="Média"
->abstract="Retorna a média aritmética de uma métrica em uma coluna"
+>abstract="Retorna a média aritmética, ou média, de uma métrica em uma coluna"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -297,7 +297,7 @@ Retorna x elevado à potência y.
 >[!CONTEXTUALHELP]
 >id="functions-quartile"
 >title="Quartil"
->abstract="Retorna o quartil de valores de uma métrica. Por exemplo, quartis podem ser usados para encontrar os 25% de produtos que geram mais receita."
+>abstract="Retorna o quartil de valores de uma métrica. Por exemplo, os quartis podem ser usados para encontrar a porcentagem de 25% dos produtos com maior receita. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -358,13 +358,13 @@ ROUND( 314.15, -2) = 300
 Retorna a contagem de linhas referente a uma determinada coluna (o número de elementos únicos relatados em uma dimensão). *Únicos excedidos* é contado como 1.
 
 
-## Máx. da linha {#row-max}
+## Máx. de linhas {#row-max}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-row-max"
->title="Máx. da linha"
+>title="Máx. de linhas"
 >abstract="O máximo de colunas de cada linha."
 
 <!-- markdownlint-enable MD034 -->
@@ -379,13 +379,13 @@ O máximo de colunas de cada linha.
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
-## Mín. da linha {#row-min}
+## Mín. de linhas {#row-min}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-row-min"
->title="Mín. da linha"
+>title="Mín. de linhas"
 >abstract="O mínimo de colunas de cada linha."
 
 <!-- markdownlint-enable MD034 -->
@@ -463,14 +463,14 @@ A soma das colunas em cada linha.
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
 
-## Variação {#variance}
+## Variância {#variance}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-variance"
->title="Variação"
->abstract="Retorna a variação baseada em uma amostra da população de dados."
+>title="Variância"
+>abstract="Retorna a variância baseada em uma amostra da população de dados."
 
 <!-- markdownlint-enable MD034 -->
 
