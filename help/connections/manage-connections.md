@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
 workflow-type: tm+mt
 source-wordcount: '3536'
-ht-degree: 13%
+ht-degree: 21%
 
 ---
 
@@ -211,7 +211,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_keyusagemetrics"
 >title="Principais métricas de uso"
->abstract="Forneça dados mensais e totais para linhas reportáveis principais e históricas."
+>abstract="Forneça dados mensais e totais para linhas principais e históricas relatáveis."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -220,7 +220,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_monthlyingestedrows"
->title="Linhas assimiladas mensalmente"
+>title="Linhas assimiladas mensais"
 >abstract="Mede o número total de registros adicionados ao sistema a cada mês para fornecer insights sobre o crescimento dos dados e as taxas de assimilação."
 
 <!-- markdownlint-enable MD034 -->
@@ -229,7 +229,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_monthlyreportablerows"
->title="Linhas relatáveis mensalmente"
+>title="Linhas relatáveis mensais"
 >abstract="Rastreia o número de linhas disponíveis para relatórios. Linhas relatáveis são as linhas assimiladas menos as linhas que são ignoradas e excluídas durante a assimilação. As linhas relatáveis servem como uma métrica principal para cobrança e uso de dados."
 
 <!-- markdownlint-enable MD034 -->
@@ -239,8 +239,8 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_detailbreakdown"
->title="Detalhamento detalhado."
->abstract="Você pode visualizar métricas detalhadas por conexão, conjunto de dados, sandbox e tags, com a opção de baixar um arquivo CSV dos dados."
+>title="Detalhamento."
+>abstract="Você pode visualizar métricas detalhadas por conexão, conjunto de dados, sandbox e tags, com a opção de baixar um arquivo CSV desses dados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -249,7 +249,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="Outros conjuntos de dados"
->abstract="Para meses antes de setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e *Outros conjuntos de dados* não serão mais exibidos."
+>abstract="Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e *outros conjuntos de dados* não serão mais exibidos."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -266,8 +266,8 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_datanotavailable"
->title="Dados não disponíveis"
->abstract="Os dados históricos anteriores a setembro de 2024 não estão disponíveis devido a limitações do sistema. As métricas são coletadas e exibidas a partir de setembro de 2024. O gráfico mostra os últimos 18 meses na linha do tempo e dados futuros serão exibidos à medida que os dados forem disponibilizados."
+>title="Dados indisponíveis"
+>abstract="Os dados históricos anteriores a setembro de 2024 não estão disponíveis devido a limitações do sistema. As métricas são coletadas e exibidas a partir de setembro de 2024. O gráfico mostra os últimos 18 meses na linha do tempo e dados futuros serão exibidos à medida que forem disponibilizados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -275,7 +275,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_corereportablerows"
->title="Linhas relatáveis de dados principais"
+>title="Linhas principais relatáveis"
 >abstract="Exibe o número total de linhas disponíveis nos últimos 13 meses. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024."
 
 <!-- markdownlint-enable MD034 -->
@@ -284,7 +284,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 
 >[!CONTEXTUALHELP]
 >id="cja_connections_historicalreportablerows"
->title="Linhas relatáveis de dados históricos"
+>title="Linhas históricas relatáveis"
 >abstract="Exibe o número total de linhas disponíveis para o período com mais de 13 meses. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023."
 
 <!-- markdownlint-enable MD034 -->

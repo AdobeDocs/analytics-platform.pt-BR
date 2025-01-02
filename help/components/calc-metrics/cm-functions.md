@@ -5,7 +5,7 @@ feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 100%
 
@@ -66,13 +66,13 @@ Um cenário alternativo é o que você tem duas métricas de interesse e uma tem
 >[!CONTEXTUALHELP]
 >id="functions-col-max"
 >title="Máximo da coluna"
->abstract="Retorna o maior valor em um conjunto de elementos de dimensão para uma coluna de métrica. MAXV avalia verticalmente em uma única coluna (métrica) nos elementos da dimensão."
+>abstract="Retorna o maior valor em um conjunto de elementos de dimensão para uma coluna de métrica. O MAXV é avaliado verticalmente em uma única coluna (métrica) nos elementos de dimensão."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MAXIMUM(metric, include_zeros)]**
 
-Retorna o maior valor em um conjunto de elementos de dimensão para uma coluna de métrica. MAXV avalia verticalmente em uma única coluna (métrica) nos elementos da dimensão.
+Retorna o maior valor em um conjunto de elementos de dimensão para uma coluna de métrica. O MAXV é avaliado verticalmente em uma única coluna (métrica) nos elementos de dimensão.
 
 | Argumento | Descrição |
 |---|---|
@@ -87,14 +87,14 @@ Retorna o maior valor em um conjunto de elementos de dimensão para uma coluna d
 >[!CONTEXTUALHELP]
 >id="functions-col-min"
 >title="Mínimo da coluna"
->abstract="Retorna o menor valor em um conjunto de elementos de dimensão para uma coluna de métrica. MINV avalia verticalmente em uma única coluna (métrica) nos elementos da dimensão."
+>abstract="Retorna o menor valor em um conjunto de elementos de dimensão para uma coluna de métrica. O MINV é avaliado verticalmente em uma única coluna (métrica) nos elementos de dimensão."
 
 <!-- markdownlint-enable MD034 -->
 
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COLUMN MINIMUM(metric, include_zeros)]**
 
-Retorna o menor valor em um conjunto de elementos de dimensão para uma coluna de métrica. MINV avalia verticalmente em uma única coluna (métrica) nos elementos da dimensão.
+Retorna o menor valor em um conjunto de elementos de dimensão para uma coluna de métrica. O MINV é avaliado verticalmente em uma única coluna (métrica) nos elementos de dimensão.
 
 | Argumento | Descrição |
 |---|---|
@@ -151,7 +151,7 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 >[!CONTEXTUALHELP]
 >id="functions-exp"
 >title="Expoente"
->abstract="Retorna e elevado à potência de um número especificado. A constante e é igual a 2,71828182845904, a base do logaritmo natural. EXPONENT é o inverso de LN, o logaritmo natural de um número."
+>abstract="Retorna e elevado à potência de um determinado número. A constante e é igual a 2,71828182845904, a base do logaritmo natural. EXPONENT é o inverso de LN, o logaritmo natural de um número."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -428,7 +428,7 @@ A soma das colunas em cada linha.
 >[!CONTEXTUALHELP]
 >id="functions-sqrt"
 >title="Raiz quadrada"
->abstract="Retorna a raiz quadrada positiva de um número. A raiz quadrada de um número é o valor do número elevado à potência de 1/2."
+>abstract="Retorna a raiz quadrada positiva de um número. A raiz quadrada de um número é o valor desse número elevado à potência de 1/2."
 
 <!-- markdownlint-enable MD034 -->
 

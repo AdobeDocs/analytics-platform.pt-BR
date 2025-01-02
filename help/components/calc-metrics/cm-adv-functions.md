@@ -7,7 +7,7 @@ role: User
 source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
 workflow-type: tm+mt
 source-wordcount: '4438'
-ht-degree: 27%
+ht-degree: 56%
 
 ---
 
@@ -86,7 +86,7 @@ Um caso de uso comum para essa função é quando você deseja obter um número 
 >[!CONTEXTUALHELP]
 >id="functions-acos"
 >title="Arco cosseno"
->abstract="Retorna o arco cosseno, ou o cosseno inverso, de uma métrica. O arco seno é o ângulo cujo cosseno é um número. O ângulo retornado é fornecido em radianos, no intervalo de 0 (zero) a pi. Se quiser converter o resultado de radianos em graus, multiplique-o por 180/PI()."
+>abstract="Retorna o arco cosseno ou o inverso do cosseno de uma métrica. O arco cosseno é o ângulo cujo cosseno é número. O ângulo retornado é dado em radianos no intervalo de 0 (zero) a pi. Se quiser converter o resultado de radianos em graus, multiplique-o por 180/PI()."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -109,7 +109,7 @@ Um caso de uso comum para essa função é quando você deseja obter um número 
 >[!CONTEXTUALHELP]
 >id="functions-asin"
 >title="Arco seno"
->abstract="Retorna o arco seno, ou seno inverso, de um número. O arco seno é o ângulo cujo seno é um número. O ângulo é fornecido em radianos, no intervalo de -pi/2 a pi/2. Para expressar o arco seno em graus, multiplique o resultado por 180/PI()"
+>abstract="Retorna o arco seno ou o seno inverso de um número. O arco seno é o ângulo cujo seno é um número. O ângulo retornado é dado em radianos no intervalo -pi/2 a pi/2. Para expressar o arco seno em graus, multiplique o resultado por 180/PI()"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -132,7 +132,7 @@ Um caso de uso comum para essa função é quando você deseja obter um número 
 >[!CONTEXTUALHELP]
 >id="functions-atan"
 >title="Arco tangente"
->abstract="Retorna o arco tangente, ou a tangente inversa, de um número. O arco tangente é o ângulo cuja tangente é um número. O ângulo é fornecido em radianos, no intervalo de -pi/2 a pi/2. Para expressar o arco tangente em graus, multiplique o resultado por 180/PI()."
+>abstract="Retorna o arco tangente ou tangente inversa de um número. O arco tangente é o ângulo cuja tangente é um número. O ângulo retornado é dado em radianos no intervalo -pi/2 a pi/2. Para expressar o arco tangente em graus, multiplique o resultado por 180/PI()."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -155,13 +155,13 @@ Um caso de uso comum para essa função é quando você deseja obter um número 
 >[!CONTEXTUALHELP]
 >id="functions-cdf-t"
 >title="Cdf-T"
->abstract="Retorna a probabilidade de uma variável aleatória com distribuição student-t com n graus de liberdade ter uma pontuação Z menor que col."
+>abstract="Retorna a probabilidade de uma variável aleatória com distribuição t de Student de n graus de liberdade ter uma pontuação z menor que col."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-T(métrica, número)]**
 
-Retorna a probabilidade de uma variável aleatória com distribuição student-t com n graus de liberdade ter uma pontuação Z menor que col.
+Retorna a probabilidade de uma variável aleatória com distribuição t de Student de n graus de liberdade ter uma pontuação z menor que col.
 
 | Argumento | Descrição |
 |---|---|
@@ -186,13 +186,13 @@ CDF-T(x, ∞) ? cdf_z(x)
 >[!CONTEXTUALHELP]
 >id="functions-cdf-z"
 >title="Cdf-Z"
->abstract="Retorna a probabilidade de uma variável aleatória com uma distribuição normal ter uma pontuação Z menor que col."
+>abstract="Retorna a probabilidade de uma variável aleatória com uma distribuição normal ter uma pontuação z menor que col."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(métrica, número)]**
 
-Retorna a probabilidade de uma variável aleatória com uma distribuição normal ter uma pontuação Z menor que col.
+Retorna a probabilidade de uma variável aleatória com uma distribuição normal ter uma pontuação z menor que col.
 
 | Argumento | Descrição |
 |---|---|
@@ -215,7 +215,7 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ceil"
 >title="Teto"
->abstract="Retorna o menor número inteiro não inferior a um valor especificado. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula LIMITE MÁXIMO(Receita) para arredondar a receita para cima; neste caso, US$570."
+>abstract="Retorna o menor número inteiro não inferior a um valor especificado. Por exemplo, se deseja evitar inserir os decimais de moeda na receita e um produto apresenta um valor de US$ 569,34, use a fórmula CEILING(Receita) para arredondar a receita para cima, neste caso, US$ 570."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -235,13 +235,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence"
 >title="Confiança"
->abstract="Calcule a confiança válida a qualquer momento usando o método WASKR, conforme descrito em [Teoria de limite central uniforme de tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476)."
+>abstract="Calcule a confiança válida a qualquer momento usando o método WASKR, conforme descrito em [Teorema central do limite uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANÇA(contêiner de normalização, métrica de sucesso, controle, limite de significância)]**
 
-Calcule a confiança válida a qualquer momento usando o método WASKR, conforme descrito em [Teoria de limite central uniforme de tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476).
+Calcule a confiança válida a qualquer momento usando o método WASKR, conforme descrito em [Teorema central do limite uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476).
 
 Confiança é uma medida probabilística sobre quanta evidência existe de que determinada variante é a mesma que a variante de controle. Uma confiança maior indica menos evidência para o pressuposto de que as variantes de controle e de não controle têm desempenho igual.
 
@@ -253,20 +253,20 @@ Confiança é uma medida probabilística sobre quanta evidência existe de que d
 | limite de significância | O limite nesta função é definido como um padrão de 95%. |
 
 
-## Confiança (inferior) {#confidence-lower}
+## Confiança (Inferior) {#confidence-lower}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-lower"
->title="Confiança (inferior)"
->abstract="Calcule a confiança válida a qualquer momento **lower** usando o método WASKR conforme descrito em [Teoria de limite central uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476)."
+>title="Confiança (Inferior)"
+>abstract="Calcule a confiança **inferior** válida a qualquer momento usando o método WASKR conforme descrito em [Teorema central do limite uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANÇA(contêiner de normalização, métrica de sucesso, controle, limite de significância)]**
 
-Calcule a confiança válida a qualquer momento **lower** usando o método WASKR conforme descrito em [Teoria de limite central uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476).
+Calcule a confiança **inferior** válida a qualquer momento usando o método WASKR conforme descrito em [Teorema central do limite uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476).
 
 Confiança é uma medida probabilística sobre quanta evidência existe de que determinada variante é a mesma que a variante de controle. Uma confiança maior indica menos evidência para o pressuposto de que as variantes de controle e de não controle têm desempenho igual.
 
@@ -277,20 +277,20 @@ Confiança é uma medida probabilística sobre quanta evidência existe de que d
 | controle | A variante com a qual todas as outras variantes do experimento estão sendo comparadas. Insira o nome do item de dimensão da variante de controle. |
 | limite de significância | O limite nesta função é definido como um padrão de 95%. |
 
-## Confiança (superior) {#confidence-upper}
+## Confiança (Superior) {#confidence-upper}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-upper"
->title="Confiança (superior)"
->abstract="Calcule a confiança válida a qualquer momento **upper** usando o método WASKR conforme descrito em [Teoria de limite central uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476)."
+>title="Confiança (Superior)"
+>abstract="Calcule a confiança **superior** válida a qualquer momento usando o método WASKR conforme descrito em [Teorema central do limite uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL CONFIANÇA(contêiner de normalização, métrica de sucesso, controle, limite de significância)]**
 
-Calcule a confiança válida a qualquer momento **upper** usando o método WASKR conforme descrito em [Teoria de limite central uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476).
+Calcule a confiança **superior** válida a qualquer momento usando o método WASKR conforme descrito em [Teorema central do limite uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476).
 
 Confiança é uma medida probabilística sobre quanta evidência existe de que determinada variante é a mesma que a variante de controle. Uma confiança maior indica menos evidência para o pressuposto de que as variantes de controle e de não controle têm desempenho igual.
 
@@ -309,7 +309,7 @@ Confiança é uma medida probabilística sobre quanta evidência existe de que d
 >[!CONTEXTUALHELP]
 >id="functions-cos"
 >title="Cosseno"
->abstract="Retorna o cosseno do ângulo especificado. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180."
+>abstract="Retorna o cosseno do ângulo fornecido. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -329,14 +329,14 @@ Confiança é uma medida probabilística sobre quanta evidência existe de que d
 >[!CONTEXTUALHELP]
 >id="functions-cube-root"
 >title="Raiz cúbica"
->abstract="Retorna a raiz cúbica positiva de um número. A raiz cúbica de um número é o valor dele elevado à potência de 1/3."
+>abstract="Retorna a raiz de cúbica positiva de um número. A raiz cúbica de um número é o valor desse número elevado à potência de 1/3."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL RAIZ DO CUBO(métrica)]**
 
 
-Retorna a raiz cúbica positiva de um número. A raiz cúbica de um número é o valor dele elevado à potência de 1/3.
+Retorna a raiz de cúbica positiva de um número. A raiz cúbica de um número é o valor desse número elevado à potência de 1/3.
 
 
 | Argumento | Descrição |
@@ -374,13 +374,13 @@ Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos 
 | Julho | $400 | $ 1.100 | $600 |
 
 
-## Cumulativo (Médio) {#cumulative-average}
+## Cumulativo (Média) {#cumulative-average}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-cumul-avg"
->title="Cumulativo (Médio)"
+>title="Cumulativo (Média)"
 >abstract="Retorna a média dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos ou x. Se n &lt; 0, soma os elementos anteriores."
 
 <!-- markdownlint-enable MD034 -->
@@ -449,13 +449,13 @@ Igual. A saída é 0 (falso) ou 1 (verdadeiro).
 | metric_Y | Uma métrica que você gostaria de correlacionar com metric_X |
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
-## Regressão exponencial: valor previsto de Y {#exponential-regression-predicted-y}
+## Regressão exponencial: previsão de Y {#exponential-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-exp"
->title="Regressão exponencial: valor previsto de Y"
+>title="Regressão exponencial: previsão de Y"
 >abstract="Regressão exponencial: Y = a exp(X) + b. Retorna Y."
 
 <!-- markdownlint-enable MD034 -->
@@ -520,14 +520,14 @@ Igual. A saída é 0 (falso) ou 1 (verdadeiro).
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Floor {#floor}
+## Piso {#floor}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-floor"
->title="Floor"
->abstract="Retorna o maior número inteiro não superior a um valor especificado. Por exemplo, caso você não queira relatar os decimais na receita e um produto apresentar um valor de US$569,34, use a fórmula LIMITE MÍNIMO(Receita) para arredondar a receita para baixo; neste caso, US$569."
+>title="Piso"
+>abstract="Retorna o maior número inteiro não superior a um valor especificado. Por exemplo, se deseja evitar inserir os decimais de moeda na receita e um produto apresenta um valor de US$ 569,34, use a fórmula FLOOR(Receita) para arredondar a receita para baixo, neste caso, US$ 569."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -572,13 +572,13 @@ A saída é 0 (falso) ou 1 (verdadeiro).
 >[!CONTEXTUALHELP]
 >id="functions-ge"
 >title="Maior que ou igual"
->abstract="Maior que ou igual. A saída é 0 (falso) ou 1 (verdadeiro)."
+>abstract="Maior ou igual a. A saída é 0 (falso) ou 1 (verdadeiro)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MAIOR QUE OU IGUAL()]**
 
-Maior que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
+Maior ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
@@ -661,7 +661,7 @@ Maior que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 >[!CONTEXTUALHELP]
 >id="functions-if"
 >title="Se"
->abstract="Se o valor do parâmetro de condição for diferente de zero (true), o resultado será o valor do parâmetro value_if_true. Caso contrário, será o valor do parâmetro value_if_false."
+>abstract="Se o valor do parâmetro de condição for diferente de zero (verdadeiro), o resultado será o valor do parâmetro value_if_true. Caso contrário, será o valor do parâmetro value_if_false."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -710,13 +710,13 @@ A saída é 0 (falso) ou 1 (verdadeiro).
 >[!CONTEXTUALHELP]
 >id="functions-le"
 >title="Menor que ou igual"
->abstract="Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro)."
+>abstract="Menor ou igual a. A saída é 0 (falso) ou 1 (verdadeiro)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MENOR QUE OU IGUAL()]**
 
-Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
+Menor ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
@@ -729,14 +729,14 @@ Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 
 
 
-## Lift (#lift)
+## Elevação (#lift)
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-lift"
 >title="Aumento"
->abstract="O aumento da proporção em comparação ao valor de controle."
+>abstract="A elevação da proporção em comparação ao valor de controle."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -748,13 +748,13 @@ Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 
 
 
-## Regressão Linear: coeficiente de correlação {#linear-regression-correlation-coefficient}
+## Regressão linear: coeficiente de correlação {#linear-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-linear"
->title="Regressão Linear: coeficiente de correlação"
+>title="Regressão linear: coeficiente de correlação"
 >abstract="Regressão linear: Y = a X + b. Retorna o coeficiente de correlação."
 
 <!-- markdownlint-enable MD034 -->
@@ -773,13 +773,13 @@ Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 
 
 
-## Regressão Linear: Interceptação {#linear-regression-intercept}
+## Regressão linear: intercepto {#linear-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-linear"
->title="Regressão Linear: Interceptação"
+>title="Regressão linear: intercepto"
 >abstract="Regressão linear: Y = a X + b. Retorna b."
 
 <!-- markdownlint-enable MD034 -->
@@ -798,13 +798,13 @@ Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 
 
 
-## Regressão Linear: valor previsto de Y {#linear-regression-predicted-y}
+## Regressão linear: previsão de Y {#linear-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-linear"
->title="Regressão Linear: valor previsto de Y"
+>title="Regressão linear: previsão de Y"
 >abstract="Regressão linear: Y = a X + b. Retorna Y."
 
 <!-- markdownlint-enable MD034 -->
@@ -823,13 +823,13 @@ Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 
 
 
-## Regressão Linear: Inclinação {#linear-regression-slope}
+## Regressão linear: inclinação {#linear-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-linear"
->title="Regressão Linear: Inclinação"
+>title="Regressão linear: inclinação"
 >abstract="Regressão linear: Y = a X + b. Retorna a."
 
 <!-- markdownlint-enable MD034 -->
@@ -867,13 +867,13 @@ Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 | métrica | O número real positivo cujo logaritmo de base 10 você deseja |
 
 
-## Regressão logarítmica: coeficiente de correlação {#log-regression-correlation-coefficient}
+## Regressão logarítmica: coeficiente de correlação  {#log-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-log"
->title="Regressão logarítmica: coeficiente de correlação"
+>title="Regressão logarítmica: coeficiente de correlação "
 >abstract="Regressão logarítmica: Y = a ln(X) + b. Retorna o coeficiente de correlação."
 
 <!-- markdownlint-enable MD034 -->
@@ -889,13 +889,13 @@ Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão logarítmica: intercepto {#log-regression-intercept}
+## Regressão logarítmica: intercepto  {#log-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-log"
->title="Regressão logarítmica: intercepto"
+>title="Regressão logarítmica: intercepto "
 >abstract="Regressão logarítmica: Y = a ln(X) + b. Retorna b."
 
 <!-- markdownlint-enable MD034 -->
@@ -912,13 +912,13 @@ Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 
 
 
-## Regressão logarítmica: valor previsto de Y {#log-regression-predicted-y}
+## Regressão logarítmica: Y previsto {#log-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-log"
->title="Regressão logarítmica: valor previsto de Y"
+>title="Regressão logarítmica: Y previsto"
 >abstract="Regressão logarítmica: Y = a ln(X) + b. Retorna Y."
 
 <!-- markdownlint-enable MD034 -->
@@ -965,13 +965,13 @@ Menor que ou igual. A saída é 0 (falso) ou 1 (verdadeiro).
 >[!CONTEXTUALHELP]
 >id="functions-log"
 >title="Logaritmo natural"
->abstract="Retorna o logaritmo natural de um número. Logaritmos naturais se baseiam na constante e (2,71828182845904). LN é o inverso da função EXP."
+>abstract="Retorna o logaritmo natural de um número. Os logaritmos naturais são baseados na constante e (2,71828182845904). LN é o inverso da função EXP."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL LOG(métrica) NATURAL]**
 
-Retorna o logaritmo natural de um número. Logaritmos naturais se baseiam na constante e (2,71828182845904). LN é o inverso da função EXP.
+Retorna o logaritmo natural de um número. Os logaritmos naturais são baseados na constante e (2,71828182845904). LN é o inverso da função EXP.
 
 | Argumento | Descrição |
 |---|---|
@@ -986,13 +986,13 @@ Retorna o logaritmo natural de um número. Logaritmos naturais se baseiam na con
 >[!CONTEXTUALHELP]
 >id="functions-not"
 >title="Não"
->abstract="Negação como booleano. A saída é 0 (falso) ou 1 (verdadeiro)."
+>abstract="Negação como booleano. A saída é ou 0 (falso) ou 1 (verdadeiro)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL NÃO(lógico)]**
 
-Negação como booleano. A saída é 0 (falso) ou 1 (verdadeiro).
+Negação como booleano. A saída é ou 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
@@ -1000,21 +1000,21 @@ Negação como booleano. A saída é 0 (falso) ou 1 (verdadeiro).
 
 
 
-## Não Igual {#not-equal}
+## Não igual {#not-equal}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ne"
->title="Não Igual"
->abstract="Não Igual. A saída é 0 (falso) ou 1 (verdadeiro)."
+>title="Não igual"
+>abstract="Não igual. A saída é 0 (falso) ou 1 (verdadeiro)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL NÃO IGUAL()]**
 
 
-Não Igual. A saída é 0 (falso) ou 1 (verdadeiro).
+Não igual. A saída é 0 (falso) ou 1 (verdadeiro).
 
 
 | Argumento | Descrição |
@@ -1070,13 +1070,13 @@ Não Igual. A saída é 0 (falso) ou 1 (verdadeiro).
 Retorna Pi: 3,14159...
 
 
-## Regressão de potência: coeficiente de correlação {#power-regression-correlation-coefficient}
+## Regressão de potência: coeficiente de correlação  {#power-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-power"
->title="Regressão de potência: coeficiente de correlação"
+>title="Regressão de potência: coeficiente de correlação "
 >abstract="Regressão de potência: Y = b X ^ a. Retorna o coeficiente de correlação."
 
 <!-- markdownlint-enable MD034 -->
@@ -1093,13 +1093,13 @@ Retorna Pi: 3,14159...
 
 
 
-## Regressão de potência: intercepto {#power-regression-intercept}
+## Regressão de potência: intercepto  {#power-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-power"
->title="Regressão de potência: intercepto"
+>title="Regressão de potência: intercepto "
 >abstract="Regressão de potência: Y = b X ^ a. Retorna b."
 
 <!-- markdownlint-enable MD034 -->
@@ -1117,13 +1117,13 @@ Retorna Pi: 3,14159...
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão de potência: valor previsto de Y {#power-regression-predicted-y}
+## Regressão de potência: previsão de Y {#power-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-power"
->title="Regressão de potência: valor previsto de Y"
+>title="Regressão de potência: previsão de Y"
 >abstract="Regressão de potência: Y = b X ^ a. Retorna Y."
 
 <!-- markdownlint-enable MD034 -->
@@ -1140,13 +1140,13 @@ Retorna Pi: 3,14159...
 
 
 
-## Regressão de potência: inclinação {#power-regression-slope}
+## Regressão de potência: inclinação  {#power-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-power"
->title="Regressão de potência: inclinação"
+>title="Regressão de potência: inclinação "
 >abstract="Regressão de potência: Y = b X ^ a. Retorna a."
 
 <!-- markdownlint-enable MD034 -->
@@ -1170,7 +1170,7 @@ Retorna Pi: 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-quadratic"
 >title="Regressão quadrática: coeficiente de correlação"
->abstract="Regressão quadrática: Y = (a + bX) ^ 2, Retorna o coeficiente de correlação."
+>abstract="Regressão quadrática: Y = (a + bX) ^ 2, retorna o coeficiente de correlação."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1184,14 +1184,14 @@ Retorna Pi: 3,14159...
 | metric_Y | Uma métrica que você gostaria de correlacionar com metric_X |
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
-## Regressão Quadrática: intercepto {#quadratic-regression-intercept}
+## Regressão quadrática: intercepto  {#quadratic-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-quadratic"
->title="Regressão Quadrática: intercepto"
->abstract="Regressão quadrática: Y = (a + bX) ^ 2, Retorna a."
+>title="Regressão quadrática: intercepto "
+>abstract="Regressão quadrática: Y = (a + bX) ^ 2, retorna a."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1206,14 +1206,14 @@ Retorna Pi: 3,14159...
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão Quadrática: valor previsto de Y {#quadratic-regression-predicted-y}
+## Regressão quadrática: previsão de Y {#quadratic-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-quadratic"
->title="Regressão Quadrática: valor previsto de Y"
->abstract="Regressão quadrática: Y = (a + bX) ^ 2, Retorna Y."
+>title="Regressão quadrática: previsão de Y"
+>abstract="Regressão quadrática: Y = (a + bX) ^ 2, retorna Y."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1228,14 +1228,14 @@ Retorna Pi: 3,14159...
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão Quadrática: Inclinação {#quadratic-regression-slope}
+## Regressão quadrática: inclinação  {#quadratic-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-quadratic"
->title="Regressão Quadrática: Inclinação"
->abstract="Regressão quadrática: Y = (a + bX) ^ 2, Retorna b."
+>title="Regressão quadrática: inclinação "
+>abstract="Regressão quadrática: Y = (a + bX) ^ 2, retorna b."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1251,13 +1251,13 @@ Retorna Pi: 3,14159...
 
 
 
-## Regressão recíproca: coeficiente de correlação {#reciprocal-regression-correlation-coefficient}
+## Regressão recíproca: coeficiente de correlação  {#reciprocal-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-reciprocal"
->title="Regressão recíproca: coeficiente de correlação"
+>title="Regressão recíproca: coeficiente de correlação "
 >abstract="Regressão recíproca: Y = a + b X ^ -1. Retorna o coeficiente de correlação."
 
 <!-- markdownlint-enable MD034 -->
@@ -1273,14 +1273,14 @@ Retorna Pi: 3,14159...
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão Recíproca: Intercepto {#reciprocal-regression-intercept}
+## Regressão recíproca: intercepto {#reciprocal-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-reciprocal"
->title="Regressão Recíproca: Intercepto"
->abstract="Regressão recíproca: Y = a + b X ^ -1. Retorna um."
+>title="Regressão recíproca: intercepto"
+>abstract="Regressão recíproca: Y = a + b X ^ -1. Retorna a."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1295,13 +1295,13 @@ Retorna Pi: 3,14159...
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão Recíproca: valor previsto de Y {#reciprocal-regression-predicted-y}
+## Regressão recíproca: previsão de Y  {#reciprocal-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-reciprocal"
->title="Regressão Recíproca: valor previsto de Y"
+>title="Regressão recíproca: previsão de Y "
 >abstract="Regressão recíproca: Y = a + b X ^ -1. Retorna Y."
 
 <!-- markdownlint-enable MD034 -->
@@ -1317,13 +1317,13 @@ Retorna Pi: 3,14159...
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão Recíproca: Inclinação {#reciprocal-regression-slope}
+## Regressão recíproca: inclinação  {#reciprocal-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-reciprocal"
->title="Regressão Recíproca: Inclinação"
+>title="Regressão recíproca: inclinação"
 >abstract="Regressão recíproca: Y = a + b X ^ -1. Retorna b."
 
 <!-- markdownlint-enable MD034 -->
@@ -1348,7 +1348,7 @@ Retorna Pi: 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-sin"
 >title="Seno"
->abstract="Retorna o seno do ângulo especificado. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180."
+>abstract="Retorna o seno do ângulo fornecido. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1372,13 +1372,13 @@ Retorna Pi: 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-t-score"
 >title="Pontuação T"
->abstract="O desvio de [MEAN](cm-functions.md#mean), dividido pelo desvio padrão. Alias da [Pontuação Z](#z-score)."
+>abstract="O desvio da [MÉDIA](cm-functions.md#mean), dividido pelo desvio padrão. Alias da [Pontuação Z](#z-score)."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL T-SCORE(metric, include_zeros)]**
 
-O desvio de [MEAN](cm-functions.md#mean), dividido pelo desvio padrão. Alias da [Pontuação Z](#z-score).
+O desvio da [MÉDIA](cm-functions.md#mean), dividido pelo desvio padrão. Alias da [Pontuação Z](#z-score).
 
 | Argumento | Descrição |
 |---|---|
@@ -1393,13 +1393,13 @@ O desvio de [MEAN](cm-functions.md#mean), dividido pelo desvio padrão. Alias da
 >[!CONTEXTUALHELP]
 >id="functions-t-test"
 >title="Teste t"
->abstract="Executa um teste t m-caudal com pontuação t de x e n graus de liberdade."
+>abstract="Realiza um teste t caudal m com pontuação t de x e n graus de liberdade."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL T-TESTE(métrica, graus, caudas)]**
 
-Executa um teste t m-caudal com pontuação t de x e n graus de liberdade.
+Realiza um teste t caudal m com pontuação t de x e n graus de liberdade.
 
 | Argumento | Descrição |
 |---|---|
@@ -1495,13 +1495,13 @@ Onde ***[!DNL x]*** é a pontuação bruta, ***[!DNL μ]*** é a média da popul
 >[!CONTEXTUALHELP]
 >id="functions-z-test"
 >title="Teste z"
->abstract="Executa um teste z sem caudas com uma pontuação z de x."
+>abstract="Realiza um teste z caudal n com uma pontuação z de x."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL Z-TEST(metric_tails)]**
 
-Executa um teste z sem caudas com uma pontuação z de x.
+Realiza um teste z caudal n com uma pontuação z de x.
 
 | Argumento | Descrição |
 |---|---|
