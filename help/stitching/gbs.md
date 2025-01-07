@@ -4,9 +4,10 @@ description: Explicação da compilação baseada em gráfico
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
+source-git-commit: 9118a3c20158b1a0373fab1b41595aa7b07075f6
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1385'
 ht-degree: 7%
 
 ---
@@ -146,7 +147,7 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação baseada 
 As seguintes limitações se aplicam especificamente à compilação baseada em gráfico:
 
 - Os carimbos de data e hora não são considerados ao consultar a ID transitória usando o namespace especificado. Portanto, é possível que uma ID persistente seja compilada com uma ID transitória de um registro que tenha um carimbo de data e hora anterior.
-- Sem suporte a dispositivo compartilhado. Quando várias identidades são retornadas, ao consultar o gráfico de identidade usando um namespace, a primeira identidade lexicográfica é usada.
+- Em cenários de dispositivos compartilhados, em que o namespace no gráfico contém várias identidades, a primeira identidade lexicográfica é usada. Se as prioridades e os limites de namespace forem configurados como parte do lançamento das regras de vinculação de gráficos, a identidade do último usuário autenticado será usada. Consulte [Dispositivos compartilhados](/help/use-cases/stitching/shared-devices.md) para obter mais informações.
 - Há um limite rígido de três meses de preenchimento retroativo de identidades no gráfico de identidade. Caso não esteja usando um aplicativo Experience Platform, como o Real-time Customer Data Platform, para preencher o gráfico de identidade, você usaria identidades de preenchimento retroativo.
 - As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Número máximo de identidades em um gráfico: 50.
