@@ -4,10 +4,10 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: acbe705647e508bbc85f596c3165b1acd8cb15bb
+source-git-commit: 05e1b5e26d5a1dc1e46a675131185f0927c65f22
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 3%
+source-wordcount: '1759'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Tela da jornada"
->abstract="Semelhante ao fallout, esta visualização mostra como as pessoas procedem ou abandonam uma série de pontos de contato. Use a tela da jornada para jornadas com vários pontos de entrada e caminhos, ou para analisar jornadas criadas no Journey Optimizer."
+>abstract="Mostra como as pessoas procedem ou saem de uma série de pontos de contato. Use para jornadas com vários pontos de entrada e caminhos ou para analisar jornadas criadas no Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
