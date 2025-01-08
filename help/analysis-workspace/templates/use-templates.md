@@ -9,7 +9,7 @@ exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: 34b94eeeeb501f6c0deb982351b7c65e0a97bc68
 workflow-type: tm+mt
 source-wordcount: '18106'
-ht-degree: 81%
+ht-degree: 82%
 
 ---
 
@@ -1352,8 +1352,8 @@ Os seguintes modelos estão disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--pointOfSale"
->title="Exibir dados de transação de ponto de venda (POS), incluindo receita realizada, pedidos feitos e unidades vendidas. Esse modelo também inclui visualizações que exibem informações sobre as principais lojas, os principais produtos e as principais categorias de produtos, bem como vendas online e offline."
->abstract="**Isso pode ajudá-lo** a entender melhor quais são os seus produtos mais vendidos nas lojas e online.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como atribuir mais recursos de marketing a seus produtos e canais de maior desempenho."
+>title="Exibir dados de transações do ponto de venda (POS), incluindo receita obtida, pedidos feitos e unidades vendidas. Este modelo também inclui visualizações que exibem informações sobre as principais lojas, os principais produtos e as principais categorias de produtos, bem como vendas online em comparação com as offline."
+>abstract="**Isso pode ajudar** a entender melhor quais são os seus produtos mais vendidos nas lojas físicas e online.<br/>**Com base nessas informações, você pode** fazer várias coisas, como atribuir mais recursos de marketing aos seus produtos e canais de melhor desempenho."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1361,8 +1361,8 @@ Os seguintes modelos estão disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--survey"
->title="Exibir o engajamento do usuário para suas pesquisas. Exiba o número de inícios e conclusões, as principais perguntas e respostas e o número de participantes iniciais vs. repetidos."
->abstract="**Isso pode ajudá-lo** a entender melhor os níveis de envolvimento e a taxa de sucesso de suas pesquisas.<br/>**Com base no que você aprende, é possível** realizar várias ações, como ajustar pesquisas futuras para gerar uma melhor participação."
+>title="Visualize o engajamento dos usuários referente às suas pesquisas. Visualize a quantidade de inícios e conclusões, as principais perguntas e respostas, e a quantidade de participantes novatos em comparação com os recorrentes."
+>abstract="**Isso pode ajudar** a entender melhor os níveis de engajamento e a taxa de sucesso das suas pesquisas.<br/>**Com base nessas informações, você pode** fazer várias coisas, como ajustar as pesquisas futuras para obter uma participação maior."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1371,9 +1371,9 @@ Os seguintes modelos estão disponíveis:
 | Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
 | [!UICONTROL **Painel da Central de Atendimento**] | <p>**Isso pode ajudá-lo** a entender melhor</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como </p><p>Este modelo usa o |
-| **PDV/Offline** | Exibir dados de transação de ponto de venda (POS), incluindo receita realizada, pedidos feitos e unidades vendidas. Esse modelo também inclui visualizações que exibem informações sobre as principais lojas, os principais produtos e as principais categorias de produtos, bem como vendas online e offline. <p>**Isso pode ajudá-lo** a entender melhor quais são os seus produtos mais vendidos nas lojas e online.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como atribuir mais recursos de marketing a seus produtos e canais de maior desempenho.</p><p>Esse modelo usa as métricas Usuários, Receita e Pedidos.</p> |
+| **PDV/Offline** | Exibir dados de transações do ponto de venda (POS), incluindo receita obtida, pedidos feitos e unidades vendidas. Este modelo também inclui visualizações que exibem informações sobre as principais lojas, os principais produtos e as principais categorias de produtos, bem como vendas online em comparação com as offline. <p>**Isso pode ajudar** a entender melhor quais são os seus produtos mais vendidos nas lojas físicas e online.</p><p>**Com base nessas informações, você pode** fazer várias coisas, como atribuir mais recursos de marketing aos seus produtos e canais de melhor desempenho.</p><p>Esse modelo usa as métricas Usuários, Receita e Pedidos.</p> |
 | **Email/AJO** | <p>**Isso pode ajudá-lo** a entender melhor</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como </p><p>Este modelo usa o |
-| **Pesquisa** | Exibir o engajamento do usuário para suas pesquisas. Exiba o número de inícios e conclusões, as principais perguntas e respostas e o número de participantes iniciais vs. repetidos.<p>**Isso pode ajudá-lo** a entender melhor os níveis de envolvimento e a taxa de sucesso de suas pesquisas.</p><p>**Com base no que você aprende, é possível** realizar várias ações, como ajustar pesquisas futuras para gerar uma melhor participação.</p><p>Esse modelo usa as métricas Usuários, Eventos, Inícios de pesquisa, Conclusões de pesquisa e Taxa de conclusão de pesquisa.</p> |
+| **Pesquisa** | Visualize o engajamento dos usuários referente às suas pesquisas. Visualize a quantidade de inícios e conclusões, as principais perguntas e respostas, e a quantidade de participantes novatos em comparação com os recorrentes.<p>**Isso pode ajudar** a entender melhor os níveis de engajamento e a taxa de sucesso das suas pesquisas.</p><p>**Com base nessas informações, você pode** fazer várias coisas, como ajustar as pesquisas futuras para obter uma participação maior.</p><p>Esse modelo usa as métricas Usuários, Eventos, Inícios de pesquisa, Conclusões de pesquisa e Taxa de conclusão de pesquisa.</p> |
 
 ### AJO {#AJO-templates}
 
