@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 78803a2062b38b0f4a80837d18dbf3e9cc609cc8
+source-git-commit: 02026709480872216ee76e842045517822c59bff
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 28%
+source-wordcount: '1919'
+ht-degree: 27%
 
 ---
 
@@ -46,6 +46,8 @@ A janela de pesquisa para rechaveamento depende da frequência desejada de repet
 Em algumas situações, é possível que várias pessoas façam logon no mesmo dispositivo. Os exemplos incluem um dispositivo compartilhado em casa, PCs compartilhados em uma biblioteca ou um quiosque em uma loja de varejo.
 
 A ID transitória substitui a ID persistente; portanto, os dispositivos compartilhados são considerados pessoas separadas (mesmo que sejam originários do mesmo dispositivo).
+
+Consulte o caso de uso [Dispositivos compartilhados](/help/use-cases/stitching/shared-devices.md) para obter mais detalhes.
 
 +++
 
