@@ -5,9 +5,9 @@ title: Exportar relatórios de Customer Journey Analytics para a nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 18a1cfcddfc8b2d1c70af57518c0b8d848b4ca5d
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2226'
 ht-degree: 3%
 
 ---
@@ -178,6 +178,7 @@ Os seguintes componentes não são suportados, e o Analysis Workspace solicita q
    * Foi criado a partir de um campo que faz parte de uma [matriz de objetos](/help/use-cases/object-arrays.md) (semelhante às variáveis de vários valores no Adobe Analytics)
    * Tem [persistência habilitada](/help/data-views/component-settings/persistence.md)
    * Não está usando uma [dimensão de associação](/help/use-cases/data-views/binding-dimensions-metrics.md)
+* Várias dimensões que são de campos que fazem referência a diferentes [matrizes de objetos](/help/use-cases/object-arrays.md). (Várias dimensões que fazem referência à mesma matriz de objetos são permitidas.)
 * Mais de 5 dimensões e 5 métricas por relatório (até 5 dimensões e 5 métricas são compatíveis)
 * Nas colunas da tabela:
    * Intervalos de datas
