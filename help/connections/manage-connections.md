@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 0b6a84820dc42b5e5009eaa254e5554712a952aa
+source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
 workflow-type: tm+mt
-source-wordcount: '3536'
-ht-degree: 21%
+source-wordcount: '3749'
+ht-degree: 19%
 
 ---
 
@@ -135,7 +135,7 @@ A interface de detalhes de Conexões fornece uma exibição detalhada do status 
 | [!UICONTROL Registros de dados do evento disponíveis] | O número total de linhas de conjunto de dados de evento disponíveis para relatórios, **para toda a conexão**. Essa contagem independe de qualquer configuração de calendário. A contagem é alterada se você selecionar um conjunto de dados por meio do seletor de conjunto de dados ou na tabela. Depois que os dados são adicionados, há uma latência de 1 a 2 horas para que eles apareçam nos relatórios. |
 | [!UICONTROL Métricas] | Resuma os registros de evento, pesquisa, perfil e conjunto de dados de resumo que são adicionados, ignorados e excluídos, e o número de lotes adicionados. Essas métricas são baseadas em **o conjunto de dados e o intervalo de datas selecionados**.<p>Selecione **[!UICONTROL Verificar detalhes]** para mostrar o pop-up **[!UICONTROL Verificar detalhes ignorados]**. O pop-up lista o número de registros ignorados e o motivo para todos os conjuntos de dados de evento ou conjuntos de dados selecionados.<p><img src="./assets/skipped-records.png" width="500"/><p>Selecione o pop-up ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) com mais informações. Por alguns motivos ignorados, como [!UICONTROL ID de visitante vazia], o pop-up exibe um PSQL de Exemplo para EQS (Experience Platform para o Serviço de Consulta) que você pode usar no [Serviço de Consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home) para consultar os registros ignorados no conjunto de dados. Selecione ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copiar PSQL de amostra para EQS]** para copiar o SQL. |
 | [!UICONTROL Registros adicionados] | Indica quantas linhas foram adicionadas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Atualizado a cada dez minutos. |
-| [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Os motivos para os registros serem ignorados são: carimbos de data e hora ausentes, ID de pessoa ausente ou inválida e assim por diante. Atualizado a cada dez minutos. <p>IDs de pessoa inválidas (como `undefined` ou `00000000`, ou qualquer combinação de números e letras em uma [!UICONTROL ID de pessoa] que aparece em um evento mais de 1 milhão de vezes em um determinado mês) são IDs que não podem ser atribuídas a nenhum usuário ou pessoa específica. Essas linhas não podem ser assimiladas no sistema e resultam em assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa inválidas, você tem 3 opções:<ul><li>Use a [compilação](/help/stitching/overview.md) para preencher as IDs de usuário indefinidas ou nulas com IDs de usuário válidas.</li><li>Apagar a ID de usuário, que é ignorada durante a assimilação (preferível a IDs de usuário inválidas ou totalmente nulas).</li><li>Corrigir IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul> |
+| [!UICONTROL Registros ignorados] | Indica quantas linhas foram ignoradas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Os motivos para os registros serem ignorados são: carimbos de data e hora ausentes, ID de pessoa ausente ou inválida e assim por diante. Atualizado a cada dez minutos. <p>IDs de pessoa inválidas (como `undefined` ou `00000000`, ou qualquer combinação de números e letras em uma [!UICONTROL ID de pessoa] que aparecem em um evento mais de 1 milhão de vezes em um determinado mês) são IDs que não podem ser atribuídas a nenhum usuário ou pessoa específica. Essas linhas não podem ser assimiladas no sistema e resultam em assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa inválidas, você tem 3 opções:<ul><li>Use a [compilação](/help/stitching/overview.md) para preencher as IDs de usuário indefinidas ou nulas com IDs de usuário válidas.</li><li>Apagar a ID de usuário, que é ignorada durante a assimilação (preferível a IDs de usuário inválidas ou totalmente nulas).</li><li>Corrigir IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul> |
 | [!UICONTROL Registros] excluídos | Indica quantas linhas foram excluídas no período selecionado **para o conjunto de dados e o intervalo de datas selecionados**. Alguém pode ter excluído um conjunto de dados em [!DNL Experience Platform], por exemplo. Atualizado a cada dez minutos.<p>Em alguns cenários, esse valor também pode incluir registros substituídos, como na compilação ou em algumas atualizações de conjunto de dados de pesquisa. Considere este exemplo:</p><ul><li>Você faz upload de um registro para um conjunto de dados de Perfil individual XDM, que o Customer Journey Analytics está configurado para assimilar como dados de pesquisa de perfil. Nos detalhes da conexão, esse conjunto de dados exibiria 1 registro adicionado.</li><li>Você faz upload de uma duplicata do registro original no mesmo conjunto de dados da AEP, que agora contém dois registros. O Customer Journey Analytics assimila o registro adicional do conjunto de dados de pesquisa de perfil. Ao ver que já assimilou um registro de perfil na conexão para essa ID de pessoa, o Customer Journey Analytics exclui sua versão anterior e adiciona os novos dados de perfil. Nos detalhes da conexão, essa ação representaria 1 registro adicionado e 1 registro excluído, pois o Customer Journey Analytics retém apenas os dados de pesquisa de perfil mais recentes para qualquer ID de pessoa assimilada.</li><li>No total, o conjunto de dados da AEP contém dois registros que são idênticos. Separadamente, os detalhes da conexão Customer Journey Analytics exibem o status dos dados assimilados: 2 registros adicionados e 1 registro excluído para esse conjunto de dados de perfil. </li></ul> |
 | ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) _Pesquisar nome ou ID do conjunto de dados_ | Campo de pesquisa do conjunto de dados. Você pode pesquisar a tabela de conjuntos de dados por nome de conjunto de dados ou [!UICONTROL ID de conjunto de dados]. |
 | [!UICONTROL Tabela de conjuntos de dados] | Os conjuntos de dados que fazem parte da conexão. |
@@ -195,7 +195,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 | [!UICONTROL Registros excluídos] | Quantos registros foram excluídos durante o período selecionado. |
 | [!UICONTROL Lotes adicionados] | Quantos lotes de dados foram adicionados a esse conjunto de dados. |
 | [!UICONTROL Registros ignorados] | Quantas linhas foram ignoradas durante a assimilação no período selecionado.<p>Os motivos para os registros serem ignorados são: carimbos de data e hora ausentes, ID de pessoa ausente ou inválida e assim por diante. Atualizado a cada dez minutos.<p>IDs de pessoa inválidas (como `undefined` ou `00000000`, ou qualquer combinação de números e letras em uma [!UICONTROL ID de pessoa] que aparece em um evento mais de 1 milhão de vezes em um determinado mês) são IDs que não podem ser atribuídas a nenhum usuário ou pessoa específica. Essas linhas não podem ser assimiladas no sistema e resultam em assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa inválidas, você tem 3 opções:<ul><li>Use a [compilação](/help/stitching/overview.md) para preencher as IDs de usuário indefinidas ou nulas com IDs de usuário válidas.</li><li>Apagar a ID de usuário, que é ignorada durante a assimilação (preferível a IDs de usuário inválidas ou totalmente nulas).</li><li>Corrigir IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul> |
-| [!UICONTROL Última adição] | Quando o último lote foi adicionado. |
+| [!UICONTROL Última adição] | O carimbo de data e hora em que o último lote foi adicionado. |
 | [!UICONTROL Importar novos dados] | O status da importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Em]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
 | [!UICONTROL Dados de preenchimento retroativo] | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _preenchimentos retroativos em processamento]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado.<p>Para mostrar uma caixa de diálogo com uma visão geral dos preenchimentos retroativos anteriores do conjunto de dados, selecione <img src="./assets/pastbackfill.svg" alt="Preenchimentos retroativos anteriores" width="15"/> **[!UICONTROL Preenchimentos retroativos anteriores]**. |
 | [!UICONTROL Tipo de fonte de dados] | Tipo de fonte de dados conforme definido ao adicionar o conjunto de dados à conexão. |
@@ -204,7 +204,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 | [!UICONTROL ID do conjunto de dados] | Essa ID do conjunto de dados é gerada no Experience Platform. |
 
 
-## Uso
+## Uso {#connections-usage}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -212,7 +212,6 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >id="cja_connections_usage_keyusagemetrics"
 >title="Principais métricas de uso"
 >abstract="Forneça dados mensais e totais para linhas principais e históricas relatáveis."
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -222,7 +221,6 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >id="cja_connections_usage_monthlyingestedrows"
 >title="Linhas assimiladas mensais"
 >abstract="Mede o número total de registros adicionados ao sistema a cada mês para fornecer insights sobre o crescimento dos dados e as taxas de assimilação."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -231,7 +229,6 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >id="cja_connections_usage_monthlyreportablerows"
 >title="Linhas relatáveis mensais"
 >abstract="Rastreia o número de linhas disponíveis para relatórios. Linhas relatáveis são as linhas assimiladas menos as linhas que são ignoradas e excluídas durante a assimilação. As linhas relatáveis servem como uma métrica principal para cobrança e uso de dados."
-
 <!-- markdownlint-enable MD034 -->
 
 
@@ -241,7 +238,6 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >id="cja_connections_usage_detailbreakdown"
 >title="Detalhamento."
 >abstract="Você pode visualizar métricas detalhadas por conexão, conjunto de dados, sandbox e tags, com a opção de baixar um arquivo CSV desses dados."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -249,8 +245,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="Outros conjuntos de dados"
->abstract="Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e *outros conjuntos de dados* não serão mais exibidos."
-
+>abstract="Para os meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e *outros conjuntos de dados* não serão mais exibidos."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -259,7 +254,6 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >id="cja_connections_usage_unknowndatasetsorconnections"
 >title="Conjuntos de dados ou conexões desconhecidos"
 >abstract="Conjuntos de dados ou conexões desconhecidos são exibidos usando suas IDs."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -268,7 +262,6 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >id="cja_connections_usage_datanotavailable"
 >title="Dados indisponíveis"
 >abstract="Os dados históricos anteriores a setembro de 2024 não estão disponíveis devido a limitações do sistema. As métricas são coletadas e exibidas a partir de setembro de 2024. O gráfico mostra os últimos 18 meses na linha do tempo e dados futuros serão exibidos à medida que forem disponibilizados."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -277,7 +270,6 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >id="cja_connections_corereportablerows"
 >title="Linhas principais relatáveis"
 >abstract="Exibe o número total de linhas disponíveis nos últimos 13 meses. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024."
-
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -286,41 +278,94 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >id="cja_connections_historicalreportablerows"
 >title="Linhas históricas relatáveis"
 >abstract="Exibe o número total de linhas disponíveis para o período com mais de 13 meses. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023."
-
 <!-- markdownlint-enable MD034 -->
 
 
-A interface [!UICONTROL Uso] mostra o uso de linhas assimiladas e reportáveis em todas as conexões. Essa interface permite determinar se o uso de Customer Journey Analytics está em conformidade com o que foi concordado contratualmente. Além dos propósitos de monitoramento, você pode usar a interface do usuário de Uso para planejar a renovação da licença de Customer Journey Analytics.
+A interface [!UICONTROL Uso] mostra o uso de linhas assimiladas e reportáveis em todas as conexões. Se não for selecionada, selecione a guia **[!UICONTROL Uso]** para acessar a interface.
 
-Você pode selecionar um intervalo de tempo (entre os últimos 6 meses, acumulado no ano ou os últimos 2 anos) e um intervalo (entre mensal ou trimestral) para monitorar o uso do Customer Journey Analytics. A interface do é dividida em duas seções:
+Essa interface permite determinar se o uso de Customer Journey Analytics está em conformidade com o que foi concordado contratualmente. Além dos propósitos de monitoramento, você pode usar a interface de Uso para planejar a renovação da licença do Customer Journey Analytics.
 
-* Linhas assimiladas: total de linhas assimiladas/enviadas de conjuntos de dados de evento em todas as Conexões Customer Journey Analytics, incluindo registros ignorados durante a assimilação
-* Linhas relatáveis: total de linhas relatáveis que incluem todos os dados de eventos em todas as Conexões Customer Journey Analytics
+A interface de Uso do usa as seguintes métricas
 
-![visualização-uso](assets/usage-view.png)
+| Nome da métrica | Descrição |
+|---|---|
+| Linhas históricas relatáveis | Contagem de linhas para o período com mais de 13 meses. |
+| Linhas principais relatáveis | Contagem de linhas nos últimos 13 meses. |
+| Linhas assimiladas | Quantas linhas são assimiladas para o período específico. |
+| Linhas relatáveis | Quantas linhas de dados você tem como parte da conexão para o período específico. |
+| Linhas cumulativas | Quantas linhas são assimiladas até o mês específico. |
 
-Selecione a guia **[!UICONTROL Uso]** para acessar a interface.
-
-### Relatório de uso
-
-1. Selecione um **[!UICONTROL intervalo de tempo]**. Você pode selecionar entre **[!UICONTROL Últimos 6 meses]**, **[!UICONTROL Ano até a data]** ou **[!UICONTROL Últimos 2 Anos]**.
-1. Selecione um **[!UICONTROL intervalo]**. Você pode selecionar entre **[!UICONTROL Mensal]** ou **[!UICONTROL Trimestral]**.
-
-Para [!UICONTROL linhas assimiladas]:
-
-* Um painel exibe o total de linhas assimiladas que incluem todos os dados de eventos em todas as conexões atualizadas a cada 2º dia de um mês. No painel:
-   * uma caixa exibe o número de linhas assimiladas do último mês e a alteração em % (indicada por ▲ ou _) em relação ao mês anterior.
-   * um gráfico de linhas exibe as ◼︎ [!UICONTROL linhas assimiladas mensalmente].<br/>Para ver um pop-up que exibe o número de linhas assimiladas mensalmente para um mês, passe o mouse sobre qualquer ponto de dados no gráfico de linhas.
+>[!NOTE]
+>
+>Os dados são coletados, a partir de julho de 2024, para os registros principal, histórico e total. Entre em contato com o gerente da conta para obter dados históricos anteriores.
+>
 
 
-Para [!UICONTROL linhas relatáveis]:
 
-* Um painel exibe o total de linhas reportáveis que incluem todos os dados de eventos em todas as conexões atualizadas a cada 2 dias de um mês. No painel:
-   * uma caixa exibe o número total cumulativo de linhas reportáveis.
-   * uma caixa exibe o número total de linhas reportáveis do último mês e a alteração em % (indicada por ▲ ou _) em relação ao mês anterior.
-   * um gráfico de linhas exibe as ◼︎ [!UICONTROL linhas reportáveis mensais].<br/>Para ver um pop-up que exibe o número de linhas reportáveis cumulativas para um mês específico, passe o mouse sobre qualquer ponto de dados no gráfico de linhas.
-   * um gráfico de linhas exibe as [!UICONTROL ◼︎ linhas reportáveis cumulativas].<br/>Para ver um pop-up que exibe o número de linhas mensais reportáveis para um mês, passe o mouse sobre qualquer ponto de dados no gráfico de linhas.
+A interface de uso do consiste em dois painéis:
 
+* O painel **[!UICONTROL Métricas de uso principais]**: fornece linhas reportáveis de dados principais e históricos. O painel também rastreia as alterações percentuais em relação ao mês anterior para linhas de dados principais e históricos.
+
+  O painel é exibido em uma visualização:
+
+   * **[!UICONTROL Linhas relatáveis de dados principais]**.
+
+     Quantas linhas reportáveis você tem nos últimos 13 meses. O número do resumo é o número de linhas reportáveis principais (por exemplo, 741M) do último mês (por exemplo, dezembro de 2024).
+
+   * **[!UICONTROL Linhas reportáveis de dados históricos]**.
+
+     Quantas linhas relatáveis você tem para o período com mais de 13 meses. O número do resumo é o número de linhas históricas reportáveis (por exemplo, 127M) do último mês (por exemplo, dezembro de 2024).
+
+  Quando você passa o mouse sobre qualquer barra empilhada na visualização, um pop-up mostra o número de linhas dessa parte específica da barra (por exemplo).
+
+
+  ![Métricas de uso de chaves](assets/usage-key-usage-metrics.png)
+
+* Um painel combinado, mostrando três subpainéis para:
+
++++ Linhas assimiladas
+
+  O subpainel **[!UICONTROL Linhas assimiladas]** mede o número total de registros adicionados ao sistema a cada mês, fornecendo informações sobre o crescimento de dados e as taxas de assimilação. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a alteração em relação ao mês anterior.
+
+  ![Linhas assimiladas](assets/usage-ingested-rows.png)
+
+  Você pode passar o mouse sobre pontos de dados na visualização para exibir um pop-up com mais detalhes.
+
++++
+
++++ Linhas relatáveis
+
+  A visualização de **[!UICONTROL linhas reportáveis]** rastreia o número de linhas disponíveis para relatórios ao subtrair linhas ignoradas e excluídas de linhas assimiladas, servindo como uma métrica principal para cobrança e uso de dados. O subpainel fornece dois resumos:
+
+   * **[!UICONTROL Total do último mês]**: um resumo do total de linhas reportáveis até este mês.
+   * **[!UICONTROL Este mês]**: um resumo do total de linhas reportáveis deste mês e a alteração em relação ao mês anterior.
+
+  ![Linhas relatáveis](assets/usage-reportable-rows.png)
+
+  Você pode passar o mouse sobre pontos de dados nas visualizações para exibir um pop-up com mais detalhes.
+
++++
+
++++ Detalhamento
+
+  Você pode usar a tabela **[!UICONTROL Detalhamento de detalhes]** para exibir métricas detalhadas por conexão, conjunto de dados, sandbox e tags. Os conjuntos de dados são relatados usando IDs em vez de nomes, pois os nomes dos conjuntos de dados podem ser modificados durante um período de relatório. Conjuntos de dados ou conexões desconhecidos são relatados usando IDs.
+
+  Para os meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e [!UICONTROL Outros conjuntos de dados] não serão mais exibidos.
+
+   * Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhamento por]**.
+
+     | Opções de **[!UICONTROL Exibir por]** | **[!UICONTROL Detalhamento por]** opções |
+     |---|---|
+     | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
+     | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
+     | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
+     | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
+
+  ![Detalhamento de detalhes](assets/usage-detail-breakdown.png)
+
++++
+
+  Você pode definir um **[!UICONTROL Intervalo de tempo]** em meses para relatar. Use ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
 
 >[!MORELIKETHIS]
 >
