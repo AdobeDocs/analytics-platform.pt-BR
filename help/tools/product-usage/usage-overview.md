@@ -1,9 +1,10 @@
 ---
 title: Visão geral do uso do produto
 description: Visualize insights e relatórios sobre como sua organização usa o Customer Journey Analytics.
-source-git-commit: 7d22c512e8e96963b288567704d2245e64411b10
+exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
+source-git-commit: 9e29a16fc8d2cfe9a7a2e926b5f592280b2c1c7a
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '367'
 ht-degree: 6%
 
 ---
@@ -24,6 +25,12 @@ Toda a coleta e configuração de dados é configurada automaticamente para voc�
 >[!IMPORTANT]
 >
 >Esse recurso conta para os limites de linha contratuais no Adobe Experience Platform. Certifique-se de que sua organização possa acomodar os dados gerados por esse recurso antes de habilitá-lo.
+
+## Habilitar uso do produto
+
+**[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Uso do Produto]**
+
+Navegar até esta seção da interface no Customer Journey Analytics leva você às [Configurações de dados](data-settings.md), onde é possível habilitar este recurso.
 
 ## Dimensões disponíveis
 
