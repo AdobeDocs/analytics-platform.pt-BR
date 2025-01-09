@@ -4,20 +4,15 @@ title: Gráfico em marcadores
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 7980286bed4f08b2ca23c0930538adb6c694344e
+badgePremium: label="Versão do Adobe Analytics" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Versão do Adobe Analytics deste artigo"
+source-git-commit: f13f5be06cfadc9ff875c378a0505b4f1f4469dd
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 62%
+source-wordcount: '242'
+ht-degree: 61%
 
 ---
 
 # Marcador {#bullet}
-
-<!-- markdownlint-disable MD034 -->
-
-[!BADGE Versão do Adobe Analytics]{type=Informative url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html"}
-
-<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -37,7 +32,6 @@ ht-degree: 62%
 >abstract="Crie uma visualização de gráfico de marcadores para mostrar como uma métrica se compara a, ou se mede em relação a, intervalos de desempenho (metas)."
 
 <!-- markdownlint-enable MD034 -->
-
 
 A visualização do ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** mostra como uma métrica se compara a, ou se mede em relação a, intervalos de desempenho (metas).
 
