@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: d1aee7ccdcea2794efd9db5d6dbf46cba4087030
+source-git-commit: 27ce8f565688dc23a3f069a10078de55cd6da395
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1576'
 ht-degree: 2%
 
 ---
@@ -37,14 +37,16 @@ Para criar um novo modelo que pode ser usado por pessoas na empresa de logon:
    | **[!UICONTROL Descrição]** | Forneça uma breve descrição do modelo que descreva suas finalidades. |
    | **[!UICONTROL Por que usar este modelo]** | Forneça uma breve explicação para informar as pessoas na organização sobre como esse modelo pode ser usado. Essa explicação é exibida na página Visualização do modelo. |
    | **[!UICONTROL Canais]** | Escolha qualquer canal aplicável que se aplique a este modelo. Você pode selecionar vários canais: **[!UICONTROL Web]**, **[!UICONTROL Celular]**, **[!UICONTROL Entre canais]**, **[!UICONTROL Central de atendimento]** e **[!UICONTROL Na loja]**.<p>As seleções escolhidas determinam onde o modelo é exibido e quais filtros são aplicados aos usuários que o acessam na página Modelos da organização.</p> |
-   | **[!UICONTROL Casos de uso]** | Escolha qualquer caso de uso que se aplique a este modelo. Você pode selecionar vários casos de uso: **[!UICONTROL Envolvimento]**, **[!UICONTROL Conversão]**, **[!UICONTROL Público-alvo]** e **[!UICONTROL Aquisição]**. <p>As seleções escolhidas determinam onde o modelo é exibido e quais filtros são aplicados aos usuários que o acessam na página Modelos da organização.</p> |
+   | **[!UICONTROL Casos de uso]** | Escolha qualquer caso de uso que se aplique a este modelo. Você pode selecionar vários casos de uso: **[!UICONTROL Envolvimento]**, **[!UICONTROL Conversão]**, **[!UICONTROL Público]**, **[!UICONTROL Aquisição]** e **[!UICONTROL Journey Optimizer]**. <p>As seleções escolhidas determinam o local do modelo na página Modelos da Organização. Os usuários podem navegar até o modelo ou filtrar a lista por caso de uso. </p><p>**Observação:** escolher **[!UICONTROL Journey Optimizer]** também torna o modelo disponível no Adobe Journey Optimizer. No Journey Optimizer, um menu suspenso está disponível na página **[!UICONTROL Relatórios]**, permitindo que os usuários selecionem esse modelo ou o modelo padrão. Para obter mais informações, consulte [Introdução à experiência de relatório atualizada](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) na documentação do Journey Optimizer. |
+   | **[!UICONTROL Tipo de atividade do Journey Optimizer]** | Escolha o tipo de atividade do Journey Optimizer a ser associado a este modelo: **[!UICONTROL Campanhas]**, **[!UICONTROL Jornadas]**, **[!UICONTROL Landing pages]**, **[!UICONTROL Relatórios]** ou **[!UICONTROL Assinaturas]**. <p>Deixe esse campo em branco se quiser que esse template seja associado a todos os tipos de atividade.</p><p>Este campo é exibido apenas se **[!UICONTROL Journey Optimizer]** estiver selecionado no campo **[!UICONTROL Casos de uso]**.</p> |
+   | **[!UICONTROL Atividade do Journey Optimizer]** | Escolha a atividade do Journey Optimizer para associar a este modelo. <p>Deixe esse campo em branco se quiser que esse template seja associado a todas as atividades do tipo de atividade selecionado.</p><p>Este campo é exibido apenas se **[!UICONTROL Journey Optimizer]** estiver selecionado no campo **[!UICONTROL Casos de uso]**.</p> |
    | **[!UICONTROL Tags]** | Especifique as tags que deseja aplicar ao modelo. As pessoas podem filtrar a lista de modelos pelas tags adicionadas. |
 
 1. Selecione [!UICONTROL **Salvar como modelo**].
 
 Para obter informações sobre como os usuários podem criar um projeto com base em um modelo, consulte [Criar um projeto com base em um modelo](/help/analysis-workspace/templates/use-templates.md#create-a-project-based-on-a-template) em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).
 
-## Editar ou excluir modelos
+## Editar ou excluir um modelo
 
 Os administradores podem editar ou excluir modelos de empresa.
 
@@ -73,6 +75,25 @@ Os administradores podem editar ou excluir modelos de empresa.
    1. Selecione o ícone Mais e selecione **[!UICONTROL Editar]** ou **[!UICONTROL Excluir]**.
 
       ![Edição ou exclusão do cartão de modelo de empresa](assets/company-template-card-edit-delete.png)
+
+1. Se você estiver editando um modelo, faça as edições desejadas e selecione [!UICONTROL **Projeto**] > **[!UICONTROL Salvar como modelo...]**.
+
+   ![Modelo de empresa](assets/company-template-save.png)
+
+1. Especifique as seguintes informações na caixa de diálogo [!UICONTROL Salvar como modelo]:
+
+   | Campo | Descrição |
+   |---------|----------|
+   | **[!UICONTROL Nome]** | Forneça um nome descritivo para o modelo. |
+   | **[!UICONTROL Descrição]** | Forneça uma breve descrição do modelo que descreva suas finalidades. |
+   | **[!UICONTROL Por que usar este modelo]** | Forneça uma breve explicação para informar as pessoas na organização sobre como esse modelo pode ser usado. Essa explicação é exibida na página Visualização do modelo. |
+   | **[!UICONTROL Canais]** | Escolha qualquer canal aplicável que se aplique a este modelo. Você pode selecionar vários canais: **[!UICONTROL Web]**, **[!UICONTROL Celular]**, **[!UICONTROL Entre canais]**, **[!UICONTROL Central de atendimento]** e **[!UICONTROL Na loja]**. Se nenhum canal for selecionado, o modelo será incluído em todos os canais.<p>As seleções escolhidas determinam onde o modelo é exibido e quais filtros são aplicados aos usuários que o acessam na página Modelos da organização.</p> |
+   | **[!UICONTROL Casos de uso]** | Escolha qualquer caso de uso que se aplique a este modelo. Você pode selecionar vários casos de uso: **[!UICONTROL Envolvimento]**, **[!UICONTROL Conversão]**, **[!UICONTROL Público]**, **[!UICONTROL Aquisição]** e **[!UICONTROL Journey Optimizer]**. <p>As seleções escolhidas determinam o local do modelo na página Modelos da Organização. Os usuários podem navegar até o modelo ou filtrar a lista por caso de uso. </p><p>**Observação:** escolher **[!UICONTROL Journey Optimizer]** também torna o modelo disponível no Adobe Journey Optimizer. No Journey Optimizer, um menu suspenso está disponível na página **[!UICONTROL Relatórios]**, permitindo que os usuários selecionem esse modelo ou o modelo padrão. Para obter mais informações, consulte [Introdução à experiência de relatório atualizada](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) na documentação do Journey Optimizer. |
+   | **[!UICONTROL Tipo de atividade do Journey Optimizer]** | Escolha o tipo de atividade do Journey Optimizer a ser associado a este modelo: **[!UICONTROL Campanhas]**, **[!UICONTROL Jornadas]**, **[!UICONTROL Landing pages]**, **[!UICONTROL Relatórios]** ou **[!UICONTROL Assinaturas]**. <p>Deixe esse campo em branco se quiser que esse template seja associado a todos os tipos de atividade.</p><p>Este campo é exibido apenas se **[!UICONTROL Journey Optimizer]** estiver selecionado no campo **[!UICONTROL Casos de uso]**.</p> |
+   | **[!UICONTROL Atividade do Journey Optimizer]** | Escolha a atividade do Journey Optimizer para associar a este modelo. <p>Deixe esse campo em branco se quiser que esse template seja associado a todas as atividades do tipo de atividade selecionado.</p><p>Este campo é exibido apenas se **[!UICONTROL Journey Optimizer]** estiver selecionado no campo **[!UICONTROL Casos de uso]**.</p> |
+   | **[!UICONTROL Tags]** | Especifique as tags que deseja aplicar ao modelo. As pessoas podem filtrar a lista de modelos pelas tags adicionadas. |
+
+1. Selecione [!UICONTROL **Salvar como modelo**].
 
 ## Renomear, marcar ou aprovar modelos
 
