@@ -6,7 +6,7 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 27ce8f565688dc23a3f069a10078de55cd6da395
+source-git-commit: 15b278261cc24da46b209d1ce23f38745c06030b
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 2%
@@ -123,7 +123,7 @@ Os administradores podem renomear, marcar e aprovar modelos de empresa.
 
 ## Adicionar componentes ausentes à visualização de dados de um determinado modelo
 
-Por padrão, alguns modelos fornecidos pelo Adobe não funcionarão porque contêm componentes que não estão na visualização de dados.
+Por padrão, alguns modelos fornecidos pelo Adobe não podem ser usados porque contêm componentes que não estão na visualização de dados.
 
 Para cada componente ausente, um rótulo de contexto correspondente está disponível na visualização de dados. Você precisa adicionar o rótulo de contexto correspondente a um componente que já está em sua visualização de dados ou adicionar um novo componente à visualização de dados e adicionar o rótulo de contexto a ela.
 

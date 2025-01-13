@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 065230672137c98015680e4a033a2f5ac3a1bc24
+source-git-commit: 15b278261cc24da46b209d1ce23f38745c06030b
 workflow-type: tm+mt
-source-wordcount: '19302'
-ht-degree: 77%
+source-wordcount: '19285'
+ht-degree: 73%
 
 ---
 
@@ -41,7 +41,7 @@ As informações a seguir descrevem como acessar e usar modelos na guia [!UICONT
 
    * **[!UICONTROL _login_company_name _modelos]**: mostra todos os modelos de empresa que foram criados para sua organização.
 
-     Os modelos de empresa só podem ser criados por um administrador. Para obter informações sobre como criar um modelo de empresa, consulte [Criar e gerenciar modelos](/help/analysis-workspace/templates/create-templates.md).
+     Somente administradores podem criar modelos de empresa. Para obter informações sobre como criar um modelo de empresa, consulte [Criar e gerenciar modelos](/help/analysis-workspace/templates/create-templates.md).
 
 1. Use uma das opções a seguir para alterar a exibição dos modelos disponíveis:
 
@@ -286,7 +286,7 @@ Para acessar todos os modelos pré-criados disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="template--revenueOvertimeReport"
->title="Veja o valor monetário dos produtos comprados em todos os pedidos. Os dados são mostrados durante um período e comparados com períodos anteriores."
+>title="Exibir o valor monetário de todos os produtos comprados em todos os pedidos. Os dados são mostrados durante um período e comparados com períodos anteriores."
 >abstract="**Isso pode ajudar** a entender como a receita está aumentando ou diminuindo com o tempo. É possível combinar essa métrica com qualquer dimensão para saber quais itens de dimensão contribuíram para a receita.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como projetar a receita futura com base nas tendências anteriores. Também é possível adicionar outra dimensão, como a dimensão “Código de rastreamento”, para saber quais campanhas estão gerando mais receita.<br/>Este modelo usa a dimensão “Dia” e a métrica “Receita”."
 
 <!-- markdownlint-enable MD034 -->
@@ -296,7 +296,7 @@ Para acessar todos os modelos pré-criados disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--ordersOvertimeReport"
 >title="Veja o número total de eventos de compra. Os dados são mostrados durante um período e comparados com períodos anteriores."
->abstract="**Isso pode ajudar** a entender melhor como o interesse pelos seus produtos e serviços está aumentando ou diminuindo com o tempo. Você pode aplicar um segmento para saber quais clientes ou regiões geográficas estão fazendo mais pedidos, e quais são as tendências desses pedidos ao longo do tempo.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar a eficácia de uma campanha de marketing iniciada recentemente por comparar os pedidos antes e depois do início da campanha. Ou você pode comparar os pedidos feitos durante feriados a cada ano.<br/>Este modelo usa a dimensão “Dia” e a métrica “Pedidos”."
+>abstract="**Isso pode ajudá-lo** a entender melhor como o interesse pelos seus produtos e serviços está aumentando ou diminuindo com o tempo. Você pode aplicar um segmento para saber quais clientes ou regiões geográficas estão fazendo mais pedidos, e quais são as tendências desses pedidos ao longo do tempo.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar a eficácia de uma campanha de marketing iniciada recentemente por comparar os pedidos antes e depois do início da campanha. Ou você pode comparar os pedidos feitos durante feriados a cada ano.<br/>Este modelo usa a dimensão “Dia” e a métrica “Pedidos”."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -318,7 +318,7 @@ Os seguintes modelos estão disponíveis:
 | [!UICONTROL **Canal de último contato**] | Veja os canais de marketing mais recentes utilizados por visitantes durante o período de engajamento (30 dias por padrão).<p>**Isso pode ajudar** a entender quais canais de marketing foram mais eficazes para trazer pessoas ao site que resultou em conversões.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como alocar mais recursos a canais de alto desempenho ou reduzir a alocação de recursos para canais de baixo desempenho.</p><p>Esse modelo usa a dimensão Canal de último contato e a métrica Visitantes únicos.</p> |
 | [!UICONTROL **Detalhes do canal de último contato**] | Veja os detalhes dos canais de marketing mais recentes utilizados por visitantes durante o período de engajamento (30 dias por padrão).<p>**Isso pode ajudar** a entender quais canais de marketing foram mais eficazes para trazer pessoas ao site que resultou em conversões, bem como os detalhes desses canais de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga&quot;, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como alocar mais recursos a canais de alto desempenho ou reduzir a alocação de recursos para canais de baixo desempenho.</p><p>Esse modelo usa a dimensão Detalhe do canal de último contato e a métrica Visitantes únicos.</p> |
 | [!UICONTROL **Receita**] | <!--duplicated in Web Conversion section-->Veja o valor monetário dos produtos comprados em todos os pedidos. Os dados são mostrados durante um período e comparados com períodos anteriores.<p>**Isso pode ajudar** a entender como a receita está aumentando ou diminuindo com o tempo. É possível combinar essa métrica com qualquer dimensão para saber quais itens de dimensão contribuíram para a receita.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como projetar a receita futura com base nas tendências anteriores. Também é possível adicionar outra dimensão, como a dimensão “Código de rastreamento”, para saber quais campanhas estão gerando mais receita.</p><p>Esse modelo usa a dimensão Dia e a métrica Receita.</p> |
-| [!UICONTROL **Pedidos**] | <!--duplicated in Web Conversion section-->Veja o número total de eventos de compra. Os dados são mostrados durante um período e comparados com períodos anteriores. <p>**Isso pode ajudar** a entender melhor como o interesse pelos seus produtos e serviços está aumentando ou diminuindo com o tempo. Você pode aplicar um segmento para saber quais clientes ou regiões geográficas estão fazendo mais pedidos, e quais são as tendências desses pedidos ao longo do tempo.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar a eficácia de uma campanha de marketing iniciada recentemente por comparar os pedidos antes e depois do início da campanha. Ou você pode comparar os pedidos feitos durante feriados a cada ano.</p><p>Esse modelo usa as dimensões Dia e Pedidos.</p> |
+| [!UICONTROL **Pedidos**] | <!--duplicated in Web Conversion section-->Veja o número total de eventos de compra. Os dados são mostrados durante um período e comparados com períodos anteriores. <p>**Isso pode ajudá-lo** a entender melhor como o interesse pelos seus produtos e serviços está aumentando ou diminuindo com o tempo. Você pode aplicar um segmento para saber quais clientes ou regiões geográficas estão fazendo mais pedidos, e quais são as tendências desses pedidos ao longo do tempo.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar a eficácia de uma campanha de marketing iniciada recentemente por comparar os pedidos antes e depois do início da campanha. Ou você pode comparar os pedidos feitos durante feriados a cada ano.</p><p>Esse modelo usa as dimensões Dia e Pedidos.</p> |
 
 ### Web: engajamento {#web-engagement}
 
@@ -382,7 +382,7 @@ Os seguintes modelos estão disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--audio-consumption-template"
->title="Veja as tendências e as principais métricas de consumo de áudio em mídia em todos os dispositivos digitais."
+>title="Veja as tendências e as principais métricas de consumo de áudio de mídia em todos os dispositivos digitais."
 >abstract="**Isso pode ajudar** a entender melhor como visitantes estão consumindo conteúdo de áudio no site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar qual conteúdo é mais consumido.<br/>Este modelo usa a métrica &quot;Visitas&quot; e a métrica &quot;Visitantes únicos&quot;."
 
 <!-- markdownlint-enable MD034 -->
@@ -391,7 +391,7 @@ Os seguintes modelos estão disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--media-recency-frequency-loyalty"
->title="Visualize tendências e as principais métricas de consumo de mídia em todos os dispositivos digitais."
+>title="Veja as tendências e as principais métricas de consumo de mídia em todos os dispositivos digitais."
 >abstract="**Isso pode ajudar** a entender melhor a quantidade de vezes que a pessoa média visita o site, a frequência com que retorna e o número de dias entre visitas recorrentes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar qual conteúdo é mais eficaz em trazer pessoas de volta ao site.<br/>Este modelo usa a métrica &quot;Visitas&quot; e a métrica &quot;Visitantes únicos&quot;."
 
 <!-- markdownlint-enable MD034 -->
@@ -401,7 +401,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="aa-template--reloadsRankedReport"
 >title="Visualize o número de vezes que um item de dimensão estava presente durante um recarregamento. A atualização do navegador por um visitante é a maneira mais comum de acionar um recarregamento."
->abstract="**Isso pode ajudar** a identificar quando estão ocorrendo problemas em uma determinada página que podem resultar no recarregamento desta por visitantes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar quais páginas têm problemas que precisam ser resolvidos.<br/>Este modelo usa a métrica “Recarregamentos”."
+>abstract="**Isso pode ajudá-lo** a identificar quando podem estar ocorrendo problemas em uma determinada página que poderia solicitar que um visitante recarregasse a página.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar quais páginas têm problemas que precisam ser resolvidos.<br/>Este modelo usa a métrica “Recarregamentos”."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -445,7 +445,7 @@ Os seguintes modelos estão disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--formsPerformanceOverview"
->title="Visualize dados de desempenho para seus formulários do Adobe Experience Manager."
+>title="Exibir dados de desempenho do seu Adobe Experience Manager Forms."
 >abstract="**Isso pode ajudar** a entender melhor a realização de valores do Adobe Experience Manager.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar as configurações do Experience Manager."
 
 <!-- markdownlint-enable MD034 -->
@@ -502,7 +502,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--page-summary-report"
 >title="Veja as principais informações sobre qualquer página nas suas propriedades. Mostra as exibições da página, uma linha de tendências, uma visualização de fluxo e muito mais."
->abstract="**Isso pode ajudar** a entender melhor como as pessoas interagem com uma determinada página.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar o desempenho da página durante um período ou entender melhor o que gera tráfego para a página.<br/>Este modelo usa a métrica “Exibições da página”. Ele também usa as visualizações de linhas e fluxo."
+>abstract="**Isso pode ajudar** a entender melhor como as pessoas interagem com uma determinada página.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar o desempenho da página durante um período ou entender melhor o que gera tráfego para a página.<br/>Este modelo usa a métrica Exibições de página. Ele também usa as visualizações de linhas e fluxo."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -535,10 +535,10 @@ Os seguintes modelos estão disponíveis:
 | [!UICONTROL **Visitantes**] | <!--duplicated in Most popular section-->Veja o número total de visitantes únicos. Os dados são mostrados durante um período e comparados com períodos anteriores. <p>**Isso pode ajudar** a entender melhor como o alcance e o tamanho do público-alvo do seu site estão aumentando ou diminuindo com o tempo ou em comparação com um período anterior.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se uma campanha de marketing iniciada recentemente teve êxito ao atrair novas pessoas para o site, comparando o número de visitantes únicos antes e depois do início da campanha. Ou você pode comparar o número de pessoas que visitam o site durante os feriados a cada ano.</p><p>Esse modelo usa a dimensão Dia e a métrica Visitantes únicos.</p> |
 | [!UICONTROL **Tempo gasto**] | Veja o tempo médio que os visitantes gastam no site durante cada visita, bem como o tempo médio que os usuários gastam na visita até gerar um evento bem-sucedido. Os dados são mostrados durante um período e comparados com períodos anteriores. <p>**Isso pode ajudar** a entender melhor os níveis de engajamento dos visitantes e quanto tempo levam para executar a ação desejada, como fazer uma compra.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se as alterações no site melhoram a possibilidade dos visitantes gerarem rapidamente um evento bem-sucedido.</p><p>Esse modelo usa a dimensão Dia e a métrica Tempo gasto por visita (segundos), a dimensão Dia e a métrica Tempo gasto por visita (segundos).</p> |
 | [!UICONTROL **Seções do site**] | <!--duplicated in Most popular section-->Veja as seções mais populares ou de maior desempenho do seu site. <p>**Isso pode ajudar** a entender melhor quais seções do site são mais visitadas.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar quais produtos ou serviços fornecidos geram mais interesse.</p> <p>Esse modelo usa a dimensão Seção do site e a métrica Visitas.</p> |
-| [!UICONTROL **Consumo de conteúdo da Web**] | Veja qual conteúdo da web é mais consumido e gera mais engajamento pelos usuários.<p>**Isso pode ajudar** a entender melhor o que as pessoas acessam ao entrar pela primeira vez no site, quais seções do site são mais visitadas e quais páginas tendem a afastar as pessoas do site.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas para as páginas mais importantes e quais páginas têm maior probabilidade de afastar as pessoas do site <!-- not sure about these takeaways... -->.</p> <p>Esse modelo usa a dimensão Página e a métrica Exibições da página, a métrica Visitas, a métrica Visitantes únicos, a métrica Taxa de entrada, a métrica Taxa de rejeição, a métrica Taxa de saída e a métrica Velocidade do conteúdo. Ele também usa visualizações de fluxo para as seções de entrada, saída e a seção superior.</p> |
+| [!UICONTROL **Consumo de conteúdo da Web**] | Veja qual conteúdo da web é mais consumido e gera mais engajamento pelos usuários.<p>**Isso pode ajudar** a entender melhor o que as pessoas acessam ao entrar pela primeira vez no site, quais seções do site são mais visitadas e quais páginas tendem a afastar as pessoas do site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas às páginas mais importantes e quais páginas têm a maior probabilidade de afastá-las do site.</p> <p>Esse modelo usa a dimensão Página e a métrica Exibições da página, a métrica Visitas, a métrica Visitantes únicos, a métrica Taxa de entrada, a métrica Taxa de rejeição, a métrica Taxa de saída e a métrica Velocidade do conteúdo. Ele também usa visualizações de fluxo para as seções de entrada, saída e a seção superior.</p> |
 | [!UICONTROL **Consumo de conteúdo de mídia**] | Veja qual conteúdo de mídia é mais consumido e gera mais engajamento pelos usuários.<p>**Isso pode ajudar** a entender melhor o que as pessoas acessam ao entrar pela primeira vez no site, quais seções do site são mais visitadas e quais páginas tendem a afastar as pessoas do site.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas para as páginas mais importantes e quais páginas têm maior probabilidade de afastar as pessoas do site <!-- not sure about these takeaways... -->.</p> <p>Esse modelo usa a dimensão Página e a métrica Exibições da página, a métrica Visitas, a métrica Visitantes únicos, a métrica Taxa de entrada, a métrica Taxa de rejeição, a métrica Taxa de saída e a métrica Velocidade do conteúdo. Ele também usa visualizações de fluxo para as seções de entrada, saída e a seção superior; uma visualização do gráfico de dispersão, que mostra as exibições das páginas mais comuns; uma visualização de barras, que mostra as exibições da página por tempo classificado; e uma visualização de linhas, que mostra uma exibição das tendências do tempo médio no site.</p> |
 | [!UICONTROL **Fluxo da página seguinte e anterior**] | Visualize um fluxo dos locais mais comuns que as pessoas acessam imediatamente após visitar e imediatamente antes de visitar uma determinada página. <p>**Isso pode ajudar** a entender como o tráfego passa de uma determinada página para outras partes do site e entender os caminhos que as pessoas percorrem para chegar a uma determinada página.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se o design ou layout da página pode ser otimizado para direcionar as pessoas a páginas mais desejáveis, como uma página para fazer uma compra ou deixar uma avaliação. Ou avaliar se as informações na página atual fornecem a orientação ou as ações que as pessoas necessitam após acessarem as páginas anteriores. Ou você pode avaliar se as páginas que não aparecem como páginas anteriores precisam de links mais evidentes para a página atual.</p><p>Esse modelo usa o painel Item seguinte ou anterior.</p> |
-| **Resumo da página** | Veja as principais informações sobre qualquer página nas suas propriedades. Mostra as exibições da página, uma linha de tendências, uma visualização de fluxo e muito mais.  <p>**Isso pode ajudar** a entender melhor como as pessoas interagem com uma determinada página.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como analisar o desempenho da página durante um período ou entender melhor o que gera tráfego para a página.</p><p>Esse modelo usa a métrica Visualizações de página. Ele também usa as visualizações de linhas e fluxo.</p> |
+| **Resumo da página** | Veja as principais informações sobre qualquer página nas suas propriedades. Mostra as exibições da página, uma linha de tendências, uma visualização de fluxo e muito mais.  <p>**Isso pode ajudar** a entender melhor como as pessoas interagem com uma determinada página.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como analisar o desempenho da página durante um período ou entender melhor o que gera tráfego para a página.</p><p>Esse modelo usa a métrica Exibições de página. Ele também usa as visualizações de linhas e fluxo.</p> |
 | **Páginas de entrada** | Veja as principais páginas que as pessoas acessam quando visitam o site pela primeira vez. <p>**Isso pode ajudar** a saber quais páginas estão gerando mais tráfego para o site ou entender melhor as primeiras impressões que visitantes têm sobre o site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar a experiência inicial que as pessoas têm no site ou garantir que as páginas que as pessoas veem ao entrar no site sejam acolhedoras e forneçam os links necessários para outras áreas do site.</p><p>Este modelo usa a métrica Sessões. Ele também usa a visualização de barras e a visualização de tabela de forma livre.</p> |
 | **Páginas de saída** | Veja as principais páginas que as pessoas acessam imediatamente antes de sair do site.<p>**Isso pode ajudá-lo** a entender melhor quais páginas estão afastando as pessoas do site. </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como atualizar as páginas de saída comuns para otimizar a experiência que as pessoas têm antes de sair ou incluir conteúdo ou links para incentivar as pessoas a permanecerem no site.</p><p>Este modelo usa a métrica Sessões. Ele também usa a visualização de barras e a visualização de tabela de forma livre.</p> |
 
@@ -559,8 +559,8 @@ Os seguintes modelos estão disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="aa-template--commerce-and-marketing-management"
->title="Visualize insights pré-criados para varejistas em suas atividades comerciais para ajudar a melhorar as vendas. Isto é direcionado para usuários do Magento, mas pode ser aproveitado por qualquer varejista online. "
->abstract="**Isso pode ajudar** a entender melhor como suas atividades comerciais estão contribuindo para os números de vendas.<br/>**Com base no que aprender, é possível** fazer várias coisas, como ajustar orçamentos para atividades que estão obtendo o maior ROI."
+>title="Visualize insights pré-criados para varejistas em suas atividades comerciais para ajudar a melhorar as vendas. Ele é direcionado para usuários do Adobe Commerce, mas pode ser aproveitado por qualquer varejista online."
+>abstract="**Isso pode ajudá-lo** a entender melhor como suas atividades comerciais estão contribuindo para os números de vendas.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como ajustar orçamentos para atividades que estão tendo o maior ROI."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -616,7 +616,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--cartAdditionsOvertimeReport"
 >title="Veja o número de vezes que as pessoas adicionaram algo ao carrinho."
->abstract="**Isso pode ajudar** a entender melhor a parte do funil de conversão na qual o interesse de clientes em um produto é alto o suficiente para que o adicionem ao carrinho.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar as recomendações de produto para clientes. Para isso, é possível analisar quais produtos são adicionados com frequência aos mesmos carrinhos e sugerir produtos relacionados com base em itens já presentes no carrinho."
+>abstract="**Isso pode ajudar** a entender melhor a parte do funil de conversão na qual o interesse de clientes em um produto é alto o suficiente para que o adicionem ao carrinho.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar as recomendações de produto para clientes. Isso pode ser feito analisando quais produtos são adicionados com frequência aos mesmos carrinhos e sugerindo produtos relacionados com base em itens já presentes no carrinho."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -699,7 +699,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="aa-template--timeZoneRankedReport"
 >title="Visualize os principais fusos horários dos visitantes que acessam o site."
->abstract="**Isso pode ajudar** a entender melhor em quais fusos horários estão os seus visitantes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar a manutenção do site em momentos que afetarão o menor número possível de pessoas."
+>abstract="**Isso pode ajudar** a entender melhor em quais fusos horários estão os seus visitantes.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como ajustar a manutenção do site em momentos que afetem o menor número possível de pessoas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -798,7 +798,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="aa-template--customerLoyaltyRankedReport"
 >title="Visualize o número de visitantes do site que fizeram 0 compras anteriores, 1 compra anterior, 2 compras anteriores ou 3+ compras anteriores."
->abstract="**Isso pode ajudar** a entender melhor como o site afeta o comportamento de compra.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como concentrar-se nos visitantes que retornam para fazer uma compra, para que possa incentivar comportamentos semelhantes em novos visitantes.<br/>Este modelo usa a dimensão &quot;Fidelização do cliente&quot;."
+>abstract="**Isso pode ajudá-lo** a entender melhor como seu site afeta o comportamento de compra.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como concentrar-se nos visitantes que retornam para fazer uma compra, para que possa incentivar comportamentos semelhantes em novos visitantes.<br/>Este modelo usa a dimensão &quot;Fidelização do cliente&quot;."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -966,7 +966,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="aa-template--advertisingAnalyticsPaidSearch"
 >title="Visualize todos os dados de pesquisa paga do Google e do Bing lado a lado."
->abstract="**Isso pode ajudar** a entender melhor a quantidade de tráfego que está sendo enviada para o site e se os clientes estão convertendo.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como estimar a relação custo/benefício de uma campanha publicitária."
+>abstract="**Isso pode ajudar** a entender melhor a quantidade de tráfego que está sendo enviada para o site e se os clientes estão convertendo.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como estimar a relação custo/benefício de uma campanha publicitária."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -975,7 +975,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="aa-template--searchEngineRankRankedReport"
 >title="Visualize em qual página dos resultados de pesquisa um visitante clicou para chegar ao seu site. Por exemplo, se o site for exibido na segunda página dos resultados de pesquisa de um mecanismo de pesquisa, o item de dimensão para essa variável será Página de pesquisa 2."
->abstract="**Isso pode ajudar** a entender melhor o nível de classificação das suas páginas nos resultados da pesquisa.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar sua estratégia de SEO para garantir que seu conteúdo apareça na primeira página dos resultados de pesquisa."
+>abstract="**Isso pode ajudá-lo** a entender melhor o nível de classificação das suas páginas nos resultados da pesquisa.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como melhorar sua estratégia de SEO para garantir que o conteúdo seja exibido na primeira página dos resultados da pesquisa."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -994,8 +994,8 @@ Os seguintes modelos estão disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="template--firstouchChannelRankedReport"
->title="Veja o primeiro canal de marketing que um(a) visitante utiliza durante seu período de engajamento (30 dias por padrão). "
->abstract="**Isso pode ajudar** a entender melhor quais canais de marketing geram o tráfego inicial para o seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.<br/>Este modelo usa a dimensão “Canal de primeiro contato”."
+>title="Visualize o primeiro canal de marketing com o qual um visitante corresponde durante o período de envolvimento do visitante (30 dias por padrão)."
+>abstract="**Isso pode ajudar** a entender melhor quais canais de marketing geram o tráfego inicial para o seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.<br/>Este modelo usa a dimensão Canal de primeiro contato."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1040,7 +1040,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--searchKeywordRankedReport"
 >title="Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site, sejam elas pagas ou naturais."
->abstract="**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que resultam no tráfego do site. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave usadas e as que estão gerando tráfego para o site.<br/>Este modelo usa a dimensão “Palavra-chave de pesquisa”."
+>abstract="**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que resultam no tráfego do site. <br/>**Com base no que você aprende, é possível** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave que estão sendo usadas e as que direcionam o tráfego do site.<br/>Este modelo usa a dimensão “Palavra-chave de pesquisa”."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1049,7 +1049,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--searchPaidKeywordRankedReport"
 >title="Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site que correspondem à detecção de pesquisa paga."
->abstract="**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave usadas e as que estão gerando tráfego para o site. <br/>Este modelo usa a dimensão “Palavra-chave de pesquisa paga”. "
+>abstract="**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave que estão sendo usadas e as que direcionam o tráfego do site. <br/>Este modelo usa a dimensão “Palavra-chave de pesquisa paga”. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1058,7 +1058,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--searchNaturalKeywordRankedReport"
 >title="Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site e que não correspondem à detecção de pesquisa paga."
->abstract="**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave usadas e as que estão gerando tráfego para o site.<br/>Este modelo usa a dimensão “Palavra-chave de pesquisa natural”. "
+>abstract="**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave que estão sendo usadas e as que direcionam o tráfego do site.<br/>Este modelo usa a dimensão “Palavra-chave de pesquisa natural”. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1094,7 +1094,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--referringDomainRankedReport"
 >title="Veja em quais domínios as pessoas clicam para acessar o seu site."
->abstract="**Isso pode ajudar** a entender quais sites de terceiros geram mais tráfego para o seu site. (Deve haver um link no site externo e o(a) visitante precisa clicar nele para que o item de dimensão seja exibido.)<br/>**Com base no que aprender, você poderá** fazer várias coisas, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses de visitantes provenientes dos principais domínios referenciadores. <br/>Este modelo usa a dimensão “Domínio referenciador”."
+>abstract="**Isso pode ajudar** a entender quais sites de terceiros geram mais tráfego para o seu site. (Um link deve existir no site externo e um visitante deve clicar nele para que o item de dimensão seja exibido.)<br/>**Com base no que você aprende, é possível** fazer várias coisas, como criar ou ajustar o conteúdo para alinhar-se mais aos interesses dos visitantes provenientes dos principais domínios de referência. <br/>Este modelo usa a dimensão “Domínio referenciador”."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1111,7 +1111,7 @@ Os seguintes modelos estão disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="template--referrerRankedReport"
->title="Veja em quais URLs os(as) visitantes estavam quando clicaram para acessar o seu site. (Deve haver um link no URL externo e o(a) visitante precisa clicar nele para que o item de dimensão seja exibido.)"
+>title="Veja em quais URLs os(as) visitantes estavam quando clicaram para acessar o seu site. (Um link deve existir no URL externo e um visitante deve clicar nele para que o item de dimensão seja exibido.)"
 >abstract="**Isso pode ajudar** a entender quais URLs específicos geram mais tráfego para o seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses de visitantes provenientes dos principais URLs. <br/>Este modelo usa a dimensão “Domínio referenciador”.</p>"
 
 <!-- markdownlint-enable MD034 -->
@@ -1130,7 +1130,7 @@ Os seguintes modelos estão disponíveis:
 | Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
 | [!UICONTROL **Canais de marketing**] > [!UICONTROL **Relatório de visão geral do canal**] | Por meio da atribuição personalizada, este modelo mostra como visitantes chegam ao seu site.<p>**Isso pode ajudar** a entender melhor quais dos seus canais de marketing são mais eficazes.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o investimento em canais de marketing eficazes e livrar-se de canais de marketing menos eficazes.</p><p>Esse modelo usa a dimensão ID(variables/marketingchannel) e a métrica Receita.</p> |
-| [!UICONTROL **Canais de marketing**] > [!UICONTROL **Canal de primeiro contato**] | Veja o primeiro canal de marketing que um(a) visitante utiliza durante seu período de engajamento (30 dias por padrão).  <p>**Isso pode ajudar** a entender melhor quais canais de marketing geram o tráfego inicial para o seu site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.</p><p>Esse modelo usa a dimensão Canal de primeiro contato.</p> |
+| [!UICONTROL **Canais de marketing**] > [!UICONTROL **Canal de primeiro contato**] | Visualize o primeiro canal de marketing com o qual um visitante corresponde durante o período de envolvimento do visitante (30 dias por padrão). <p>**Isso pode ajudar** a entender melhor quais canais de marketing geram o tráfego inicial para o seu site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.</p><p>Esse modelo usa a dimensão Canal de primeiro contato.</p> |
 | [!UICONTROL **Canais de marketing**] > [!UICONTROL **Detalhes do canal de primeiro contato**] | Veja os detalhes do primeiro canal de marketing que um(a) visitante utiliza durante o seu período de engajamento (30 dias por padrão). <p>**Isso pode ajudar** a entender melhor o que contribuiu para que a visita ocorresse por meio daquele canal de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga&quot;, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.</p><p>Esse modelo usa a dimensão Detalhes do canal de primeiro contato.</p> |
 | [!UICONTROL **Canais de marketing**] > [!UICONTROL **Canal de último contato**] | Visualize o canal de marketing mais recente com o qual um visitante corresponde durante o período de envolvimento do visitante (30 dias por padrão).<p>**Isso pode ajudá-lo** a entender melhor quais canais de marketing direcionam o tráfego para o seu site que resulta em conversões.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.</p><p>Esse modelo usa a dimensão Canal de último contato.  </p> |
 | [!UICONTROL **Canais de marketing**] > [!UICONTROL **Detalhes do canal de último contato**] | Exibir detalhes sobre o canal de marketing mais recente com o qual um visitante corresponde durante o período de engajamento do visitante (30 dias por padrão)<p>**Isso pode ajudar** a entender melhor o que contribuiu para que a visita ocorresse por meio daquele canal de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga&quot;, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes. </p><p>Esse modelo usa a dimensão Detalhe do canal de último contato. </p> |
@@ -1138,15 +1138,15 @@ Os seguintes modelos estão disponíveis:
 | [!UICONTROL **Campanhas**] > [!UICONTROL **Funil de conversão de campanha**] | Visualize o número de cliques e check-outs para suas campanhas. <p>**Isso pode ajudá-lo** a entender melhor como as campanhas de marketing estão impulsionando a conversão.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como determinar quais campanhas de marketing estão gerando mais ROI.</p> |
 | [!UICONTROL **Campanhas**] > [!UICONTROL **Desempenho da campanha**] | Veja os detalhes do desempenho das suas campanhas de marketing.<p>**Isso pode ajudar** a entender melhor os vários indicadores de sucesso associados às campanhas, como receita, exibições de produtos, pedidos e assim por diante.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como concentrar esforços de marketing nas campanhas que geram mais receita. </p><p>Esse modelo usa a métrica Receita, Exibições do produto, Adições ao carrinho, Pedidos e Unidades. Ele também usa as dimensões “Código de rastreamento” e “Domínio de referência”. </p> |
 | **Aquisição na web** | Veja como o seu site obtém visitantes.<p>**Isso pode ajudar** a entender melhor os vários fatores que levam à aquisição, como palavras-chave de pesquisa, domínio de referência e assim por diante.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing nos canais mais eficientes.</p><p>Esse modelo usa as métricas Taxa de rejeição e Rejeições. Ele também usa as dimensões “Mecanismo de pesquisa”, “Palavra-chave de pesquisa”, “Página de entrada”, “Domínio de referência”, “Código de rastreamento” e “Referenciador”.  </p> |
-| **Pesquisar palavras-chave - todas** | Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site, sejam elas pagas ou naturais. <p>**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site. </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave usadas e as que estão gerando tráfego para o site.</p><p>Esse modelo usa a dimensão Palavra-chave de pesquisa. </p> |
-| **Palavras-chave de pesquisa - pagas** | Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site que correspondem à detecção de pesquisa paga.<p>**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave usadas e as que estão gerando tráfego para o site. </p><p>Esse modelo usa a dimensão Palavra-chave de pesquisa - Paga. </p> |
-| **Palavras-chave de pesquisa - naturais** | Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site e que não correspondem à detecção de pesquisa paga.<p>**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave usadas e as que estão gerando tráfego para o site.</p><p>Esse modelo usa a dimensão Palavra-chave de pesquisa - Natural. </p> |
+| **Palavras-chave de pesquisa - todas** | Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site, sejam elas pagas ou naturais. <p>**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site. </p><p>**Com base no que você aprende, é possível** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave que estão sendo usadas e as que direcionam o tráfego do site.</p><p>Esse modelo usa a dimensão Palavra-chave de pesquisa. </p> |
+| **Palavras-chave de pesquisa - pagas** | Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site que correspondem à detecção de pesquisa paga.<p>**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave que estão sendo usadas e as que direcionam o tráfego do site. </p><p>Esse modelo usa a dimensão Palavra-chave de pesquisa - Paga. </p> |
+| **Palavras-chave de pesquisa - naturais** | Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site e que não correspondem à detecção de pesquisa paga.<p>**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave que estão sendo usadas e as que direcionam o tráfego do site.</p><p>Esse modelo usa a dimensão Palavra-chave de pesquisa - Natural. </p> |
 | **Mecanismos de pesquisa - todos** | Veja os mecanismos de pesquisa que visitantes usam para acessar o seu site, sejam elas pagas ou naturais. <p>**Isso pode ajudar** a entender melhor os mecanismos de pesquisa usados pelas pessoas que resultam em tráfego para o site. </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco de SEO nos mecanismos de pesquisa que geram mais tráfego para o site.</p><p>Esse modelo usa a dimensão Mecanismo de pesquisa. </p> |
 | **Mecanismos de pesquisa - pagos** | Veja os mecanismos de pesquisa que visitantes usam para acessar o seu site e que correspondem à detecção de pesquisa paga.<p>**Isso pode ajudar** a entender melhor os mecanismos de pesquisa usados pelas pessoas que resultam em tráfego para o site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco de SEO nos mecanismos de pesquisa que geram mais tráfego para o site. </p><p>Esse modelo usa a dimensão Mecanismo de pesquisa - Pago. </p> |
 | **Mecanismos de pesquisa - naturais** | Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site e que não correspondem à detecção de pesquisa paga.<p>**Isso pode ajudar** a entender melhor os mecanismos de pesquisa usados pelas pessoas que resultam em tráfego para o site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco de SEO nos mecanismos de pesquisa que geram mais tráfego para o site.</p><p>Esse modelo usa a dimensão Mecanismo de pesquisa - Natural. </p> |
-| **Domínios de referência** | Veja em quais domínios as pessoas clicam para acessar o seu site.<p>**Isso pode ajudar** a entender quais sites de terceiros geram mais tráfego para o seu site. (Deve haver um link no site externo e o(a) visitante precisa clicar nele para que o item de dimensão seja exibido.)</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses dos visitantes provenientes dos principais domínios de referência. </p><p>Esse modelo usa a dimensão Domínio de referência. </p> |
+| **Domínios de referência** | Veja em quais domínios as pessoas clicam para acessar o seu site.<p>**Isso pode ajudar** a entender quais sites de terceiros geram mais tráfego para o seu site. (Um link deve existir no site externo e um visitante deve clicar nele para que o item de dimensão seja exibido.)</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses dos visitantes provenientes dos principais domínios de referência. </p><p>Esse modelo usa a dimensão Domínio de referência. </p> |
 | **Domínios de referência originais** | Veja o primeiro domínio referenciador no qual as pessoas clicam para acessar o seu site. (Depois de definido, ele mantém o mesmo valor por toda a vida útil da ID do(a) visitante em questão.)<p>**Isso pode ajudar** a entender melhor quais sites de terceiros originalmente geram tráfego para o seu site.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses dos visitantes provenientes dos principais domínios de referência originais. </p><p>Esse modelo usa a dimensão Domínio de referência original. </p> |
-| **Referenciadores** | Veja em quais URLs os(as) visitantes estavam quando clicaram para acessar o seu site. (Deve haver um link no URL externo e o(a) visitante precisa clicar nele para que o item de dimensão seja exibido.)  <p>**Isso pode ajudar** a entender quais URLs específicos geram mais tráfego para o seu site.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como criar ou ajustar o conteúdo para alinhar melhor os interesses dos visitantes que vêm das principais URLs. </p><p>Este modelo usa a dimensão Domínio de referência </p><p>Esse modelo usa a dimensão Referenciador. </p> |
+| **Referenciadores** | Veja em quais URLs os(as) visitantes estavam quando clicaram para acessar o seu site. (Um link deve existir no URL externo e um visitante deve clicar nele para que o item de dimensão seja exibido.)  <p>**Isso pode ajudar** a entender quais URLs específicos geram mais tráfego para o seu site.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como criar ou ajustar o conteúdo para alinhar melhor os interesses dos visitantes que vêm das principais URLs. </p><p>Este modelo usa a dimensão Domínio de referência </p><p>Esse modelo usa a dimensão Referenciador. </p> |
 | **Tipos de referenciador** | Veja em quais canais genéricos os(as) visitantes clicaram para acessar o seu site. A Adobe mantém as regras de cada canal. Os possíveis canais incluem mecanismos de pesquisa, redes sociais, outros sites, disco rígido ou email.<p>**Isso pode ajudar** a entender melhor qual tipo de referenciador gera mais tráfego para o site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses de visitantes provenientes de um determinado canal.</p><p>Esse modelo usa a dimensão Tipo de referenciador.</p> |
 
 ### Dispositivos móveis: aplicativo móvel {#mobile-app}
@@ -1165,7 +1165,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--mobileappactions"
 >title="Exibir as ações que as pessoas estão realizando no aplicativo móvel."
->abstract="**Isso pode ajudá-lo** a entender melhor como as pessoas estão usando seu aplicativo e o valor que estão obtendo com ele.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como melhorar os recursos de desenvolvimento que complementam ou aprimoram os mais populares."
+>abstract="**Isso pode ajudá-lo** a entender melhor como as pessoas estão usando seu aplicativo e o valor que estão obtendo com ele.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como desenvolver recursos que complementem ou melhorem os mais populares."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1194,7 +1194,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-key-metrics"
 >title="Visualize algumas das métricas mais comuns do aplicativo móvel."
->abstract="**Isso pode ajudar** a entender melhor o desempenho básico do aplicativo móvel.<br/>**Com base no que aprender, poderá** fazer várias coisas, como avaliar a integridade e o desempenho geral do aplicativo."
+>abstract="**Isso pode ajudá-lo** a entender melhor o desempenho básico do seu aplicativo móvel.<br/>**Com base no que você aprendeu, você pode** fazer várias coisas, como avaliar a integridade e o desempenho geral do seu aplicativo."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1233,7 +1233,7 @@ Os seguintes modelos estão disponíveis:
 | **Ações do aplicativo móvel** | Exibir as ações que as pessoas estão realizando no aplicativo móvel. <p>**Isso pode ajudá-lo** a entender melhor como as pessoas estão usando seu aplicativo e o valor que estão obtendo com ele.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como melhorar os recursos de desenvolvimento que complementam ou aprimoram os mais populares.</p><p>Esse modelo usa as métricas Eventos, Sessões, Pessoas e Alteração percentual. |
 | **Uso do aplicativo móvel** | Visualize o número de usuários, inicializações e primeiras inicializações no aplicativo, bem como a duração média das sessões.<p>**Isso pode ajudá-lo** a entender melhor quanto seu aplicativo está sendo usado. </p><p>**Com base no que aprender, poderá** fazer várias coisas, como melhorar o desempenho do aplicativo para que possa haver o dimensionamento de acordo com a quantidade de uso.</p><!-- This template uses the --> |
 | **jornadas do aplicativo móvel** | Visualize os principais padrões de uso do seu aplicativo móvel. <p>**Isso pode ajudá-lo** a entender melhor como as pessoas estão usando seu aplicativo. </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a forma como as pessoas podem passar de uma tela à outra para direcionar os fluxos de trabalho mais comuns. </p><!-- This template uses the --> |
-| **Métricas do aplicativo móvel** | Visualize algumas das métricas mais comuns do aplicativo móvel. <p>**Isso pode ajudar** a entender melhor o desempenho básico do aplicativo móvel.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como avaliar a integridade e o desempenho geral do aplicativo.</p><!-- This template uses the --> |
+| **Métricas do aplicativo móvel** | Visualize algumas das métricas mais comuns do aplicativo móvel. <p>**Isso pode ajudá-lo** a entender melhor o desempenho básico do seu aplicativo móvel.</p><p>**Com base no que você aprendeu, você pode** fazer várias coisas, como avaliar a integridade e o desempenho geral do seu aplicativo.</p><!-- This template uses the --> |
 | **Mensagens de aplicativo móvel** | Visualize dados de desempenho de mensagens no aplicativo e por push.<p>**Isso pode ajudar** a entender melhor como as pessoas estão usando os recursos de mensagens no aplicativo, bem como a eficiência com que as notificações por push estão direcionando o tráfego para o aplicativo.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como melhorar a experiência de notificações por push e mensagens no aplicativo.</p><!-- This template uses the --> |
 | **Desempenho do aplicativo móvel** | Visualize o desempenho do aplicativo e onde os usuários estão com problemas. <p>**Isso pode ajudá-lo** a entender melhor se as pessoas que usam seu aplicativo estão encontrando lentidão ou desempenho degradado. </p><p>**Com base no que aprender, poderá** fazer várias coisas, como corrigir problemas existentes ou melhorar o desempenho do aplicativo antes que eles ocorram.</p><!-- This template uses the --> |
 | **Retenção de aplicativo móvel** | Veja quais são os usuários mais fiéis do aplicativo e o que fazem nele. <p>**Isso pode ajudar** a entender melhor como os usuários mais fiéis estão usando o aplicativo.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como melhorar os esforços de marketing para os recursos que seus usuários mais fiéis estão usando.</p><!-- This template uses the --> |
@@ -1302,8 +1302,8 @@ Os seguintes modelos estão disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--hourOfDay"
->title="Visualize eventos, sessões e pessoas no site, divididos por hora do dia. Por exemplo, se você tiver um relatório que abrange de 1º de janeiro a 7 de janeiro, a primeira hora de cada dia será agrupada no mesmo item de dimensão. "
->abstract="**Isso pode ajudar** a entender melhor os momentos do dia em que o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como atribuir mais recursos de computação ao site durante horas de alto tráfego.<br/>Este modelo usa a dimensão &quot;Hora do dia&quot;."
+>title="Exibir eventos, sessões e pessoas no site, divididos por hora do dia. Por exemplo, se você tiver um relatório que abrange de 1º de janeiro a 7 de janeiro, a primeira hora de cada dia será agrupada no mesmo item de dimensão. "
+>abstract="**Isso pode ajudá-lo** a entender melhor a hora do dia em que seu site é visitado com mais frequência e com menos frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como atribuir mais recursos de computação ao site durante horas de alto tráfego.<br/>Este modelo usa a dimensão &quot;Hora do dia&quot;."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1312,7 +1312,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="cja-template--am-pm"
 >title="Visualize eventos, sessões e pessoas no site, divididos por AM e PM. Por exemplo, se você tiver um relatório que abrange de 1º de janeiro a 7 de janeiro, as horas AM de cada dia serão agrupadas no mesmo item de dimensão. "
->abstract="***Isso pode ajudar** a entender melhor os momentos do dia em que o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como atribuir mais recursos de computação ao site durante horas de alto tráfego.<br/>Este modelo usa a dimensão &quot;AM/PM&quot;."
+>abstract="***Isso pode ajudá-lo** a entender melhor a hora do dia em que seu site é visitado com mais frequência e com menos frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como atribuir mais recursos de computação ao site durante horas de alto tráfego.<br/>Este modelo usa a dimensão &quot;AM/PM&quot;."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1320,7 +1320,7 @@ Os seguintes modelos estão disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--dayOfWeek"
->title="Visualize eventos, sessões e pessoas no site, divididos por dia da semana. Por exemplo, se você tiver um relatório que abrange o mês de janeiro, cada dia da semana será agrupado no mesmo item de dimensão."
+>title="Exibir eventos, sessões e pessoas no site, divididos por dia da semana. Por exemplo, se você tiver um relatório que abrange o mês de janeiro, cada dia da semana será agrupado no mesmo item de dimensão."
 >abstract="**Isso pode ajudar** a entender melhor quais os dias da semana em que o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como preparar a equipe da sua central de atendimento de forma mais adequada para dias de alto tráfego.<br/>Este modelo usa a dimensão &quot;Dia da semana&quot;."
 
 <!-- markdownlint-enable MD034 -->
@@ -1384,7 +1384,7 @@ Os seguintes modelos estão disponíveis:
 | Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
 | [!UICONTROL **Minuto da hora**] | Visualize o número de eventos, sessões e pessoas no site, com detalhamento por minuto. Por exemplo, se você tiver um relatório com um período de relatório de um único dia, o primeiro minuto de cada hora do dia será agrupado no mesmo item de dimensão.<p>**Isso pode ajudar** a entender melhor as tendências em um nível detalhado.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como otimizar recursos para horários de pico, a cada minuto.</p><p>Esse modelo usa a dimensão Minuto da hora.</p> |
-| **Hora do dia** | Visualize eventos, sessões e pessoas no site, divididos por hora do dia. Por exemplo, se você tiver um relatório que abrange de 1º de janeiro a 7 de janeiro, a primeira hora de cada dia será agrupada no mesmo item de dimensão. <p>**Isso pode ajudar** a entender melhor os momentos do dia em que o site é visitado com maior e com menor frequência.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como atribuir mais recursos de computação ao site durante horas de alto tráfego.</p><p>Esse modelo usa a dimensão Hora do dia.</p> |
+| **Hora do dia** | Visualize eventos, sessões e pessoas no site, divididos por hora do dia. Por exemplo, se você tiver um relatório que abrange de 1º de janeiro a 7 de janeiro, a primeira hora de cada dia será agrupada no mesmo item de dimensão. <p>**Isso pode ajudá-lo** a entender melhor a hora do dia em que seu site é visitado com mais frequência e com menos frequência.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como atribuir mais recursos de computação ao site durante horas de alto tráfego.</p><p>Esse modelo usa a dimensão Hora do dia.</p> |
 | **AM/PM** | Visualize eventos, sessões e pessoas no site, divididos por AM e PM. Por exemplo, se você tiver um relatório que abrange de 1º de janeiro a 7 de janeiro, as horas AM de cada dia serão agrupadas no mesmo item de dimensão. <p>**Isso pode ajudá-lo** a entender melhor a hora do dia em que seu site é visitado com mais frequência e com menos frequência.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como atribuir mais recursos de computação ao site durante horas de alto tráfego.</p><p>Esse modelo usa a dimensão AM/PM.</p> |
 | **Dia da semana** | Visualize eventos, sessões e pessoas no site, divididos por dia da semana. Por exemplo, se você tiver um relatório que abrange o mês de janeiro, cada dia da semana será agrupado no mesmo item de dimensão. <p>**Isso pode ajudar** a entender melhor quais os dias da semana em que o site é visitado com maior e com menor frequência.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como preparar a equipe da sua central de atendimento de forma mais adequada para dias de alto tráfego.</p><p>Esse modelo usa a dimensão Dia da semana.</p> |
 | **Dia do mês** | Exibir eventos, sessões e pessoas no site, divididos por dia do mês. Por exemplo, se você tiver um relatório que abrange um ano inteiro, cada dia do mês será agrupado no mesmo item de dimensão. <p>**Isso pode ajudar** a entender melhor quais dias de cada mês em que o site é visitado com maior e com menor frequência.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como preparar a equipe da sua central de atendimento de forma mais adequada para dias de alto tráfego.</p><p>Esse modelo usa a dimensão Dia do mês.</p> |
@@ -1403,7 +1403,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="cja-template--multiChannelOverview"
 >title="Visualize a distribuição do tráfego entre vários canais."
->abstract="**Isso pode ajudar** a entender melhor quais canais estão direcionando o tráfego e o engajamento com mais êxito. <br/>**Com base no que aprender, poderá** fazer várias coisas, como aumentar o foco nas campanhas de marketing de canais que estão gerando o maior retorno do investimento.<br/>Este modelo usa as métricas &quot;usuário&quot;, &quot;sessão&quot; e &quot;evento&quot;."
+>abstract="**Isso pode ajudar** a entender melhor quais canais estão direcionando o tráfego e o engajamento com mais êxito. <br/>**Com base no que você aprende, é possível** realizar várias ações, como concentrar esforços de marketing nos canais que estão obtendo o maior retorno sobre o investimento.<br/>Este modelo usa as métricas &quot;usuário&quot;, &quot;sessão&quot; e &quot;evento&quot;."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -1438,7 +1438,7 @@ Os seguintes modelos estão disponíveis:
 
 | Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **Visão geral de vários canais**] | Visualize a distribuição do tráfego entre vários canais. <p>**Isso pode ajudá-lo** a entender melhor quais canais estão direcionando o tráfego e o engajamento com mais êxito. </p><p>**Com base no que aprender, poderá** fazer várias coisas, como aumentar o foco nas campanhas de marketing de canais que estão gerando o maior retorno do investimento.</p><p>Esse modelo usa as métricas de usuário, sessão e evento.</p> |
+| [!UICONTROL **Visão geral de vários canais**] | Visualize a distribuição do tráfego entre vários canais. <p>**Isso pode ajudá-lo** a entender melhor quais canais estão direcionando o tráfego e o engajamento com mais êxito. </p><p>**Com base no que você aprende, é possível** realizar várias ações, como concentrar esforços de marketing nos canais que estão obtendo o maior retorno sobre o investimento.</p><p>Esse modelo usa as métricas de usuário, sessão e evento.</p> |
 | **Web+Aplicativo** | Visualize o tráfego da web e o tráfego móvel juntos.<p>**Isso pode ajudar** a entender melhor a distribuição do tráfego da web e do tráfego móvel no site.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como dedicar mais recursos à experiência de aplicativo móvel quando ela atingir um determinado nível de tráfego.</p><p>Esse modelo usa as métricas de Sessões da Web, Sessões de aplicativos móveis e Sessões entre canais da Web+aplicativo.</p> |
 | **Online/Offline** | Visualize o tráfego online e offline em conjunto.<p>**Isso pode ajudar** a entender melhor sobre a distribuição do tráfego online e offline para o site.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como dedicar mais recursos à sua experiência online quando ela atingir um determinado nível de tráfego.</p><!-- This template uses the ... --> |
 | **Desvio da central de atendimento** | Visualize como o tráfego da web afeta o tráfego da central de atendimento.<p>**Isso pode ajudar** a entender melhor com que êxito o conteúdo de autoatendimento do site está desviando o tráfego da central de atendimento.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como aprimorar o conteúdo de autoatendimento para diminuir o tráfego da central de atendimento, ou medir o ROI do conteúdo de autoatendimento calculando a quantia economizada com menos chamadas de suporte.</p><p>Esse modelo usa as métricas de Sessões da Web, Sessões de aplicativos móveis e Sessões entre canais da Web+aplicativo.</p> |
@@ -1459,7 +1459,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="cja-template--pointOfSale"
 >title="Exibir dados de transações do ponto de venda (POS), incluindo receita obtida, pedidos feitos e unidades vendidas. Este modelo também inclui visualizações que exibem informações sobre as principais lojas, os principais produtos e as principais categorias de produtos, bem como vendas online em comparação com as offline."
->abstract="**Isso pode ajudar** a entender melhor quais são os seus produtos mais vendidos nas lojas físicas e online.<br/>**Com base nessas informações, você pode** fazer várias coisas, como atribuir mais recursos de marketing aos seus produtos e canais de melhor desempenho."
+>abstract="**Isso pode ajudá-lo** a entender melhor quais são seus produtos mais vendidos em locais de loja e online.<br/>**Com base nessas informações, você pode** fazer várias coisas, como atribuir mais recursos de marketing aos seus produtos e canais de melhor desempenho."
 
 <!-- markdownlint-enable MD034 -->
 
