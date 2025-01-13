@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 614e15a492b247d98e4e32c0f06d8ae438ca6d45
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="cja_dataview_settings_datapreview"
 >title="Visualização de dados"
->abstract="Compara os dados dessa visualização de dados com os dados da conexão. A porcentagem de visualização é baseada no número total na conexão dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda pode estar preenchendo os dados."
+>abstract="Compara os dados dessa exibição de dados com os dados da conexão. A porcentagem de visualização é baseada no número total na conexão dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda pode estar preenchendo os dados."
 
 <!-- markdownlint-enable MD034 -->
 
