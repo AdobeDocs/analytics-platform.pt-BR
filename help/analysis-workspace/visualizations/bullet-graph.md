@@ -4,11 +4,10 @@ title: Gráfico em marcadores
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-badgePremium: label="Versão do Adobe Analytics" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" tooltip="Selecione para ver a versão do Adobe Analytics deste artigo."
-source-git-commit: 896c7be6f1cfa4b0b714eb08ac47c1b89edecb79
+source-git-commit: 9494d13d0f2d0205d2929796f5f0d8299fdefbc5
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 60%
+source-wordcount: '249'
+ht-degree: 59%
 
 ---
 
@@ -20,7 +19,6 @@ ht-degree: 60%
 >id="workspace_bullet_goalvalue"
 >title="Valor da meta"
 >abstract="**[!UICONTROL Meta alta]** é a meta principal que você está almejando. **[!UICONTROL Meta baixa]** e **[!UICONTROL Meta intermediária]** criam intervalos abaixo da [!UICONTROL Meta alta]. Observação: quando a opção **[!UICONTROL Porcentagens]** estiver marcada, insira metas como números inteiros. Por exemplo: `20` se a sua meta for vinte por cento."
->additional-url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph.html" text="Marcador (Adobe Analytics)"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -32,6 +30,8 @@ ht-degree: 60%
 >abstract="Crie uma visualização de gráfico de marcadores para mostrar como uma métrica se compara a, ou se mede em relação a, intervalos de desempenho (metas)."
 
 <!-- markdownlint-enable MD034 -->
+
+*Este artigo documenta a visualização de Marcador em **Customer Journey Analytics**. Consulte o [Marcador](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) da versão **Adobe Analytics**deste artigo.*
 
 A visualização do ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** mostra como uma métrica se compara a, ou se mede em relação a, intervalos de desempenho (metas).
 
