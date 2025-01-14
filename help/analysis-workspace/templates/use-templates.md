@@ -3,12 +3,10 @@ description: Uma visão geral de como usar modelos padrão no Analysis Workspace
 title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
-hide: true
-hidefromtoc: true
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
 workflow-type: tm+mt
-source-wordcount: '19285'
+source-wordcount: '19294'
 ht-degree: 73%
 
 ---
@@ -65,7 +63,9 @@ As informações a seguir descrevem como acessar e usar modelos na guia [!UICONT
 
    >[!NOTE]
    >
-   >   Antes de usar esses modelos, um administrador deve primeiro adicionar os rótulos de contexto necessários para esses componentes ausentes à visualização de dados. Para obter mais informações, consulte [Adicionar componentes ausentes à exibição de dados para um determinado modelo](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) em [Usar modelos](/help/analysis-workspace/templates/create-templates.md).
+   >Antes de usar esses modelos, um administrador deve primeiro adicionar os rótulos de contexto necessários para esses componentes ausentes à visualização de dados. Para obter mais informações, consulte [Adicionar componentes ausentes à exibição de dados para um determinado modelo](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) em [Usar modelos](/help/analysis-workspace/templates/create-templates.md).
+   >
+   >Para obter mais informações sobre rótulos de contexto, consulte [Configurações de componente](/help/data-views/component-settings/overview.md).
 
    1. Selecione o ícone de filtro.
 
