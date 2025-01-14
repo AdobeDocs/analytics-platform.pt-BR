@@ -7,7 +7,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: ca76f5ff27f11ccd1963709b57cc1bdf5fa7dbbe
 workflow-type: tm+mt
 source-wordcount: '1861'
-ht-degree: 1%
+ht-degree: 12%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_button"
 >title="Tela da jornada"
->abstract="Mostra como as pessoas procedem ou saem de uma série de pontos de contato. Use para jornadas com vários pontos de entrada e caminhos ou para analisar jornadas criadas no Journey Optimizer."
+>abstract="Mostra como as pessoas avançam ou abandonam uma série de pontos de contato. Use para jornadas com vários pontos de entrada e caminhos ou para analisar jornadas criadas no Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Tela da jornada"
->abstract="Analisar como as pessoas passam ou saem de uma jornada definida. Crie análises de jornadas de usuários criando um gráfico flexível de nós e setas que representa qualquer combinação de eventos, itens de dimensão e filtros. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Os clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer"
+>abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas do usuário criando um gráfico flexível de nós e setas representando qualquer combinação de eventos, itens de dimensão e filtros. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Os clientes com acesso ao Adobe Journey Optimizer podem analisar as jornadas do Journey Optimizer existentes"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_button"
 >title="Tela da jornada"
->abstract="Mostra como as pessoas procedem ou saem de uma série de pontos de contato. Use para jornadas com vários pontos de entrada e caminhos ou para analisar jornadas criadas no Journey Optimizer."
+>abstract="Mostra como as pessoas avançam ou abandonam uma série de pontos de contato. Use para jornadas com vários pontos de entrada e caminhos ou para analisar jornadas criadas no Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Tela da jornada"
->abstract="Analisar como as pessoas passam ou saem de uma jornada definida. Crie análises de jornadas de usuários criando um gráfico flexível de nós e setas que representa qualquer combinação de eventos, itens de dimensão e filtros. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Os clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer"
+>abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas do usuário criando um gráfico flexível de nós e setas representando qualquer combinação de eventos, itens de dimensão e filtros. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Os clientes com acesso ao Adobe Journey Optimizer podem analisar as jornadas do Journey Optimizer existentes"
 
 <!-- markdownlint-enable MD034 -->
 
