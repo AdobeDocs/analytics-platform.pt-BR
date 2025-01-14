@@ -4,9 +4,9 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: c5c05e17ad3b3e2bbf643d47bd58cde5ac2de0cb
+source-git-commit: 198d2670b2008cb669433753d5bfedd90f71c220
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1630'
 ht-degree: 2%
 
 ---
@@ -191,3 +191,10 @@ Para adicionar componentes ausentes a um modelo:
 Assim como nos modelos fornecidos pelo Adobe, os usuários na organização podem acessar os modelos criados pelos administradores.
 
 Para obter informações sobre como acessar um modelo de empresa, consulte [Acessar e executar um modelo](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).
+
+## Ocultar a guia Modelos
+
+Os administradores podem ocultar a guia Modelos para todos os usuários em sua organização.
+
+1. Vá para **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Componentes]** > **[!UICONTROL Preferências]** > **[!UICONTROL Empresa]**.
+1. Selecione a opção para **[!UICONTROL Ocultar guia Modelos]**.
