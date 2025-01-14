@@ -5,8 +5,8 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 1158064d46e09435ec2507c47e6e484306ac5a53
-workflow-type: ht
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_settings"
+>id="dataview_component_settings"
 >title="Configurações de componente"
 >abstract="Visualize e defina o nome, a descrição e outras configurações relacionadas a um componente.<br/><br/>**Parâmetros **<br/>**Ocultar componente nos relatórios**: marcar esta caixa ocultará este componente de usuários não admins nos relatórios. Admins ainda podem acessá-lo clicando em **[!UICONTROL Mostrar todos os componentes]** em um projeto do espaço de trabalho."
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_component_contextlabels"
+>id="dataview_component_contextlabels"
 >title="Rótulos de contexto"
 >abstract="A remoção de um rótulo de contexto pode afetar painéis ou relatórios específicos que utilizam o componente."
 

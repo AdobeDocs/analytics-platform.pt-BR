@@ -3,10 +3,10 @@ description: O Criador de métricas calculadas oferece uma tela para arrastar e 
 title: Criar métricas calculadas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 37209097327ffb142068b5df184c07c7c8021442
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '1526'
-ht-degree: 9%
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_productcompatibility"
+>id="components_calculatedmetrics_productcompatibility"
 >title="Compatibilidade do produto"
 >abstract="Indica onde é possível usar essa métrica calculada no Customer Journey Analytics, seja no Analysis Workspace, Report Builder e assim por diante. Algumas métricas calculadas não podem ser usadas com experimentação. "
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Usar métricas calculadas na experimentação"
@@ -25,7 +25,7 @@ ht-degree: 9%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_calculatedmetrics_externalid"
+>id="components_calculatedmetrics_externalid"
 >title="ID externa"
 >abstract="Alterar o ID externo pode afetar como a métrica calculada aparece em fontes externas, como em ferramentas de business intelligence"
 
@@ -59,7 +59,7 @@ A caixa de diálogo **[!UICONTROL Construtor de métrica calculada]** é usada p
    | **[!UICONTROL Casas decimais]** | Especifique o número de casas decimais para o formato selecionado. Habilitado somente quando o formato selecionado é Decimal, Moeda e Porcentagem. |
    | **[!UICONTROL Exibir tendência ascendente como]** | Especifique se uma tendência de alta da métrica calculada será exibida como ▲ **[!UICONTROL Bom (Verde)]** ou como _ **[!UICONTROL Ruim (Vermelho)]**. |
    | **[!UICONTROL Moeda]** | Especifique a moeda da métrica calculada. Habilitado somente quando o formato selecionado é Moeda. |
-   | **[!UICONTROL Tags]** | Organize a métrica calculada criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova marca. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma marca. |
+   | **[!UICONTROL Tags]** | Organize a métrica calculada criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova marca. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
    | **[!UICONTROL Pré-visualizar]** | A visualização abrange os últimos 90 dias e é uma maneira de medir se você definiu sua métrica corretamente. |
    | **[!UICONTROL Resumo]** | Exibe um resumo da definição da métrica calculada. <br/>Por exemplo: ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Total de Pedidos]** ![Divisão](/help/assets/icons/Divide.svg) ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Sessões]**. |
    | **[!UICONTROL Definição]** ![Necessária](/help/assets/icons/Required.svg) | Defina seu filtro usando o [Criador de definições](#definition-builder). |

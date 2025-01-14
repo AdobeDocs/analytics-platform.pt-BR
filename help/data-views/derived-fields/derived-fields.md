@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 64df8670418524be8879aa6362bb8b7c229025b6
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '8841'
 ht-degree: 17%
@@ -17,7 +17,7 @@ ht-degree: 17%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields"
+>id="dataview_derivedfields"
 >title="Campos derivados"
 >abstract="Um campo derivado permite definir manipulações de dados a qualquer momento por meio de um criador de regras personalizável. Em seguida, você pode usar esse campo derivado como um componente (métrica ou dimensão) no Workspace ou até mesmo definir como um componente na visualização de dados."
 
@@ -46,7 +46,7 @@ Ao criar ou editar um campo derivado, você usa a interface de campo derivado.
 
 |  | Nome | Descrição |
 |---------|----------|--------|
-| 1 | **Seletor** | Use a área do seletor para selecionar e arrastar e soltar sua função, modelo de função, campo de esquema ou campo padrão no construtor de regras. <br/>Use o menu suspenso para selecionar entre: <br/>![Função](assets/Smock_Function_18_N.svg) [!UICONTROL Funções] - listas disponíveis [Funções](#function-reference), </br>![Ícone de modelo de função](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Modelos de função] - listas disponíveis [Modelos de função](#function-templates), <br/>![Ícone de campo de esquema](assets/Smock_Folder_18_N.svg) [!UICONTROL Campos de esquema] - lista campos disponíveis de categorias de conjunto de dados (evento, perfil, pesquisa) e campos derivados definidos anteriormente, e <br/>![Ícone de campo padrão](assets/Smock_DragHandle_18_N.svg) [!UICONTROL 9}Campos padrão] - campos padrão disponíveis (como ID do conjunto de dados da plataforma). Somente os campos padrão de sequência e numérico são exibidos no seletor. Se a função suportar outros tipos de dados, os campos padrão com esses outros tipos de dados poderão ser selecionados para valores ou campos na interface de regras.<br/>Você pode pesquisar por função, modelos de função, esquema e campos padrão usando a caixa de pesquisa ![Ícone de pesquisa](assets/Smock_Search_18_N.svg). <br/>Você pode filtrar a lista de objetos selecionados selecionando ![Ícone de Filtro](assets/Smock_Filter_18_N.svg) Filtrar e especificar filtros na caixa de diálogo [!UICONTROL Filtrar campos por]. Você pode remover filtros facilmente usando o ![ícone Fechar](assets/CrossSize75.svg) para cada filtro. |
+| 1 | **Seletor** | Use a área do seletor para selecionar e arrastar e soltar sua função, modelo de função, campo de esquema ou campo padrão no construtor de regras. <br/>Use o menu suspenso para selecionar entre: <br/>![Função](assets/Smock_Function_18_N.svg) [!UICONTROL Funções] - listas disponíveis [Funções](#function-reference), </br>![Ícone de modelo de função](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Modelos de função] - listas disponíveis [Modelos de função](#function-templates), <br/>![Ícone de campo de esquema](assets/Smock_Folder_18_N.svg) [!UICONTROL Campos de esquema] - lista campos disponíveis de categorias de conjunto de dados (evento, perfil, pesquisa) e campos derivados definidos anteriormente, e <br/>![Ícone de campo Padrão](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Campos padrão] - campos padrão disponíveis (como ID do conjunto de dados da plataforma). Somente os campos padrão de sequência e numérico são exibidos no seletor. Se a função suportar outros tipos de dados, os campos padrão com esses outros tipos de dados poderão ser selecionados para valores ou campos na interface de regras.<br/>Você pode pesquisar por função, modelos de função, esquema e campos padrão usando a caixa de pesquisa ![Ícone de pesquisa](assets/Smock_Search_18_N.svg). <br/>Você pode filtrar a lista de objetos selecionados selecionando ![Ícone de Filtro](assets/Smock_Filter_18_N.svg) Filtrar e especificar filtros na caixa de diálogo [!UICONTROL Filtrar campos por]. Você pode remover filtros facilmente usando o ![ícone Fechar](assets/CrossSize75.svg) para cada filtro. |
 | 2 | **Construtor de regras** | Você cria o campo derivado sequencialmente usando uma ou mais regras. Uma regra é uma implementação específica de uma função e, portanto, sempre está associada a apenas uma função. Crie uma regra arrastando e soltando uma função no construtor de regras. O tipo de função determina a interface da regra.<br/>Consulte a [Interface de regra](#rule-interface) para obter mais informações. <br/>Você pode inserir uma função no início, fim ou entre regras já disponíveis no construtor de regras. A última regra no construtor de regras determina a saída final do campo derivado. |
 | 3 | **[!UICONTROL ** Configurações do campo **]** | É possível nomear e descrever o campo derivado e inspecionar seu tipo de campo. |
 | 4 | **[!UICONTROL ** Saída Final **]** | Essa área mostra uma visualização atualizada dinamicamente dos valores de saída, com base nos dados dos últimos 30 dias e nas alterações feitas no campo derivado no construtor de regras. |
@@ -430,7 +430,7 @@ Para cada função compatível, encontre os detalhes abaixo sobre:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_casewhen"
+>id="dataview_derivedfields_casewhen"
 >title="Caso Quando"
 >abstract="Esta função oferece a capacidade de aplicar condicionais com base em critérios definidos a partir de um ou mais campos. Esses critérios são usados para definir os valores no novo campo derivado com base na sequência das condições."
 
@@ -670,7 +670,7 @@ As restrições a seguir se aplicam e são aplicadas quando os valores *selecion
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_classify"
+>id="dataview_derivedfields_classify"
 >title="Classificar"
 >abstract="Esta função permite definir um conjunto de valores que são substituídos por valores correspondentes via inserção de texto."
 
@@ -815,7 +815,7 @@ A seguinte funcionalidade adicional está disponível na interface Classificar r
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_concatenate"
+>id="dataview_derivedfields_concatenate"
 >title="Concatenar"
 >abstract="Esta função fornece a capacidade de combinar dois ou mais campos, campos derivados ou valores de string inseridos pelo usuário em um mesmo campo com delimitadores definidos"
 
@@ -902,7 +902,7 @@ Você define um campo derivado de `Origin - Destination`. Use a função [!UICON
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_deduplicate"
+>id="dataview_derivedfields_deduplicate"
 >title="Desduplicar"
 >abstract="Esta função permite configurar um campo para contar apenas valores de forma não repetitiva na camada da sessão ou das pessoas. Além disso, uma ID de desduplicação pode ser usada para garantir que, com base em uma determinada ID (como uma ID de compra), apenas um valor seja usado (seja a primeira ou a última instância)."
 
@@ -997,7 +997,7 @@ Você define um novo campo derivado de `Tracking Code (deduplicated)`. Use a fun
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_findandreplace"
+>id="dataview_derivedfields_findandreplace"
 >title="Localizar e substituir"
 >abstract="Esta função permite localizar todos os valores em um campo selecionado e substituir esses valores por um valor diferente em um novo campo derivado."
 
@@ -1077,7 +1077,7 @@ Você define um campo derivado de `Email Marketing (updated)`. Você usa a funç
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lookup"
+>id="dataview_derivedfields_lookup"
 >title="Pesquisa"
 >abstract="Esta função permite usar campos de um conjunto de dados de pesquisa com uma chave correspondente entre conjuntos de dados."
 
@@ -1138,7 +1138,7 @@ Você pode inserir rapidamente uma função [!UICONTROL Pesquisa] no construtor 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_lowercase"
+>id="dataview_derivedfields_lowercase"
 >title="Minúsculas"
 >abstract="Esta função converte todo o texto da string para valores em minúsculas."
 
@@ -1199,7 +1199,7 @@ Você define um campo derivado de `Product Names`. Use a função [!UICONTROL MI
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_math"
+>id="dataview_derivedfields_math"
 >title="Matemática"
 >abstract="Esta função permite executar operações matemáticas em um campo. A função pode ser usada para executar operações aritméticas básicas, como adição, subtração, multiplicação e divisão."
 
@@ -1290,7 +1290,7 @@ Use a função Math para cálculos baseados em nível de ocorrência. Use a fun�
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_mergefields"
+>id="dataview_derivedfields_mergefields"
 >title="Mesclar campos"
 >abstract="Esta função permite pegar valores de dois campos diferentes e incluir seus respectivos valores em uma mesma dimensão. A regra verifica primeiro se o primeiro valor foi definido. Caso contrário, ela usará o segundo valor, e assim por diante."
 
@@ -1366,7 +1366,7 @@ Você deve selecionar o mesmo tipo de campos em uma regra Mesclar campos. Por ex
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_nextprevious"
+>id="dataview_derivedfields_nextprevious"
 >title="Próximo ou anterior"
 >abstract="Esta função permite observar o valor seguinte ou anterior coletado para um determinado campo."
 
@@ -1448,7 +1448,7 @@ Você só pode selecionar campos que pertençam à tabela Visita ou Evento.
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_regexreplace"
+>id="dataview_derivedfields_regexreplace"
 >title="Substituir Regex"
 >abstract="Esta função permite extrair partes de uma string com base em expressões regulares."
 
@@ -1555,7 +1555,7 @@ O Customer Journey Analytics usa um subconjunto da sintaxe de regex Perl. As seg
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_split"
+>id="dataview_derivedfields_split"
 >title="Dividir"
 >abstract="Esta função permite dividir um campo em vários campos com base em um delimitador."
 
@@ -1657,7 +1657,7 @@ Você cria um campo derivado `Second Response` para pegar o último valor do cam
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_summarize"
+>id="dataview_derivedfields_summarize"
 >title="Resumir"
 >abstract="Esta função permite agregar valores nos níveis de eventos, sessões ou pessoas. Dependendo do tipo do campo selecionado, opções diferentes estarão disponíveis."
 
@@ -1735,7 +1735,7 @@ Use a função Resumir para cálculos baseados em evento, sessão ou escopo de p
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_trim"
+>id="dataview_derivedfields_trim"
 >title="Aparar"
 >abstract="Esta função permite aparar espaços em branco ou caracteres especiais do início ou do fim de uma string. Também é possível especificar o número de caracteres a serem usados para o valor retornado, seja do início ou do fim da string."
 
@@ -1857,7 +1857,7 @@ Você cria um campo derivado `Store Identifier`. Use a função [!UICONTROL TRIM
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_dataview_derivedfields_urlparse"
+>id="dataview_derivedfields_urlparse"
 >title="Análise de URL"
 >abstract="Esta função permite analisar diferentes partes de um URL, incluindo os parâmetros de host, caminho ou consulta."
 

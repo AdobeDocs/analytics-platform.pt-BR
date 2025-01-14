@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3a0c6c22422ca7f8d4f954f3d9711c5c3501cc03
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
-source-wordcount: '3769'
-ht-degree: 100%
+source-wordcount: '4260'
+ht-degree: 99%
 
 ---
 
@@ -68,6 +68,59 @@ ht-degree: 100%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_recordsadded"
+>title="Registros adicionados"
+>abstract="O número de registros (linhas) adicionados a uma conexão durante o intervalo de tempo selecionado para os conjuntos de dados escolhidos."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_recordsskipped"
+>title="Registros ignorados"
+>abstract="O número de registros (linhas) ignorados durante a transferência de dados para uma conexão durante o intervalo de tempo selecionado para os conjuntos de dados escolhidos."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connections_recordsdeleted"
+>title="Registros excluídos"
+>abstract="O número de registros (linhas) removidos de uma conexão durante o intervalo de tempo selecionado para os conjuntos de dados escolhidos"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_lastadded"
+>title="Última adição"
+>abstract="O carimbo de data e hora do lote mais recente de qualquer conjunto de dados transferido para uma conexão."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_enablerollingdatawindow"
+>title="Habilitar janela de dados contínuos"
+>abstract="Defina a retenção de dados como uma janela contínua em meses no nível da conexão."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_averagenumberofdailyuses"
+>title="Número médio de usos diários"
+>abstract="Selecione um intervalo para o número de eventos diários esperados para toda a conexão."
+
+<!-- markdownlint-enable MD034 -->
 
 
 A experiência de criação e edição de conexão reúne todos os conjuntos de dados e configurações de conexão no centro da tela com um fluxo de trabalho auxiliar. Ele fornece uma experiência detalhada de seleção, configuração e revisão de conjunto de dados. Também é possível especificar informações vitais como o tipo de conjunto de dados, tamanho, esquema, ID do conjunto de dados, status do lote, status de preenchimento, IDs de pessoa e muito mais, para reduzir o risco de configuração incorreta da conexão. Esta é uma visão geral dos recursos:
@@ -140,7 +193,6 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 
 <!-- markdownlint-enable MD034 -->
 
-
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
@@ -167,6 +219,16 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >abstract="Selecione uma ID de conta (o identificador exclusivo de uma conta) entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_connection_accountField"
+>title="Campo Conta"
+>abstract="Selecione um campo que represente a ID da conta (o identificador exclusivo de uma conta)."
+
+<!-- markdownlint-enable MD034 -->
+
 
 <!-- markdownlint-disable MD034 -->
 
@@ -235,6 +297,121 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_connectionmap"
+>title="Mapa de conexão"
+>abstract="O Mapa de conexão visualiza as relações entre evento, pessoa, conta e conjuntos de dados de pesquisa relevantes (como oportunidades, membros da campanha e muito mais)."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_primaryID"
+>title="ID primária"
+>abstract="Selecione a ID principal adequada para a sua conexão: pessoa para um cenário B2C. Conta para um cenário B2B."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_optionalContainers"
+>title="Contêineres opcionais"
+>abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global ]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras ]**: habilita a configuração de grupos de compras em uma conexão."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_personID"
+>title="ID da pessoa"
+>abstract="Selecione uma ID de pessoa entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_accountID"
+>title="ID da Conta"
+>abstract="Selecione uma ID de conta (o identificador exclusivo de uma conta) entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_accountField"
+>title="Campo Conta"
+>abstract="Selecione um campo que represente a ID da conta (o identificador exclusivo de uma conta)."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_globalAccountID"
+>title="ID da conta global"
+>abstract="Selecione uma ID de conta global (o identificador exclusivo de uma conta global) entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_opportunityID"
+>title="ID da oportunidade"
+>abstract="Selecione uma ID de oportunidade (o identificador exclusivo de uma oportunidade) entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_buyingGroupID"
+>title="ID de grupo de compras"
+>abstract="Selecione uma ID de grupo de compras (o identificador exclusivo de um grupo de compras) entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_matchingkey"
+>title="Chave correspondente"
+>abstract="Selecione como associar: com base em uma chave correspondente ou em um container correspondente.<br/><br/>**[!UICONTROL Chave correspondente ]**: selecione o campo a ser associado a um dos conjuntos de dados de evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Container correspondente]**: selecione um container a ser usado para associar a um dos conjuntos de dados do evento. Se a lista estiver vazia, você provavelmente não configurou um ou mais containers."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_importnewdata"
+>title="Importar novos dados"
+>abstract="Todos os novos lotes adicionados ao conjunto de dados da Experience Platform serão automaticamente adicionados nessa conexão e disponibilizados para análise."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_datasetbackfill"
+>title="Preenchimento retroativo do conjunto de dados"
+>abstract="Esta opção preencherá retroativamente os dados existentes (históricos) da Experience Platform para este conjunto de dados na conexão."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_transformdataset"
+>title="Transformar conjunto de dados"
+>abstract="Esta opção transformará o conjunto de dados, para que ele possa ser usado em pesquisas baseadas em pessoas nos cenários B2B. Uma vez ativada, a transformação do conjunto de dados é irreversível."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="connection_connectionmap"
 >title="Mapa de conexão"
 >abstract="O Mapa de conexão visualiza as relações entre evento, pessoa, conta e conjuntos de dados de pesquisa relevantes (como oportunidades, membros da campanha e muito mais)."
 

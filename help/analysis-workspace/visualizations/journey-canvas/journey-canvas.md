@@ -4,9 +4,9 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 05e1b5e26d5a1dc1e46a675131185f0927c65f22
+source-git-commit: ca76f5ff27f11ccd1963709b57cc1bdf5fa7dbbe
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1861'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,23 @@ ht-degree: 1%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
 
+>[!CONTEXTUALHELP]
+>id="journeycanvas_button"
+>title="Tela da jornada"
+>abstract="Mostra como as pessoas procedem ou saem de uma série de pontos de contato. Use para jornadas com vários pontos de entrada e caminhos ou para analisar jornadas criadas no Journey Optimizer."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="journeycanvas_panel"
+>title="Tela da jornada"
+>abstract="Analisar como as pessoas passam ou saem de uma jornada definida. Crie análises de jornadas de usuários criando um gráfico flexível de nós e setas que representa qualquer combinação de eventos, itens de dimensão e filtros. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Os clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer"
+
+<!-- markdownlint-enable MD034 -->
 
 A visualização da tela de Jornada permite analisar e obter insights profundos sobre as jornadas fornecidas aos usuários e clientes. Ele permite definir uma jornada do zero ou visualizá-la no Journey Optimizer e, em seguida, ver como as pessoas saíram (abandonaram) ou continuaram (atravessaram) a jornada.
 

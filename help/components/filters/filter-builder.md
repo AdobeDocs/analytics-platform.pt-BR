@@ -4,7 +4,7 @@ title: Criar filtros
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 388708526204f0854b486643fa58d1f8504575aa
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '1494'
 ht-degree: 10%
@@ -16,7 +16,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_createaudience"
+>id="components_filters_createaudience"
 >title="Criar público-alvo"
 >abstract="Os públicos-alvo podem ser criados a partir de um filtro e compartilhados com a Adobe Experience Platform para ativação."
 
@@ -25,7 +25,7 @@ ht-degree: 10%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_datapreview"
+>id="components_filters_datapreview"
 >title="Visualização de dados"
 >abstract="Compara os dados desse filtro com os da visualização de dados. A porcentagem de visualização é baseada no número total na visualização de dados dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda pode estar preenchendo os dados."
 
@@ -158,7 +158,7 @@ Ou você poderia definir 52 filtros: 50 filtros para os estados dos EUA, um para
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_repeating"
+>id="components_filters_attribution_repeating"
 >title="Repetição"
 >abstract="Inclui instâncias e valores persistentes da dimensão."
 
@@ -167,7 +167,7 @@ Ou você poderia definir 52 filtros: 50 filtros para os estados dos EUA, um para
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_instance"
+>id="components_filters_attribution_instance"
 >title="Instância"
 >abstract="Inclui instâncias e valores persistentes da dimensão."
 
@@ -176,7 +176,7 @@ Ou você poderia definir 52 filtros: 50 filtros para os estados dos EUA, um para
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_filters_attribution_nonrepeatinginstance"
+>id="components_filters_attribution_nonrepeatinginstance"
 >title="Instância de não repetição"
 >abstract="Inclui as instâncias exclusivas (não repetidas) da dimensão."
 

@@ -4,8 +4,8 @@ description: Como criar anotações no Espaço de trabalho.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: ht
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Para definir a anotação, use o [[!UICONTROL Criador de anotações]](#annotati
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_details"
+>id="components_annotations_details"
 >title="Detalhes da anotação"
 >abstract="As anotações permitem comunicar com eficácia nuances de dados contextuais e insights à sua organização. Elas permitem vincular eventos de calendário a dimensões ou métricas específicas. "
 
@@ -48,7 +48,7 @@ Para definir a anotação, use o [[!UICONTROL Criador de anotações]](#annotati
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_annotations_scope"
+>id="components_annotations_scope"
 >title="Escopo"
 >abstract="O escopo permite personalizar em quais dados as anotações serão adicionadas. As métricas calculadas e os segmentos não herdarão automaticamente as anotações aplicadas aos componentes usados nas definições. É possível adicionar novas métricas calculadas à seção de escopo de uma anotação existente. Novos segmentos exigem uma nova anotação."
 

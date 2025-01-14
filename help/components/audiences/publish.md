@@ -4,7 +4,7 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 126d2213b97b71ff3116ff53e56217b8b6e7a479
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 18%
@@ -16,7 +16,7 @@ ht-degree: 18%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_audiences_refreshfrequency"
+>id="components_audiences_refreshfrequency"
 >title="Frequência de atualização"
 >abstract="Veja a frequência com que a associação de um público-alvo é reavaliada.<br/>Públicos-alvo únicos são avaliados apenas uma vez."
 
@@ -25,7 +25,7 @@ ht-degree: 18%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_audiences_audiencelimit"
+>id="components_audiences_audiencelimit"
 >title="Limite de público-alvo"
 >abstract="As atualizações de públicos-alvo são limitadas com base na frequência com que são atualizadas."
 
@@ -34,7 +34,7 @@ ht-degree: 18%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_audiences_refreshlookbackwindow"
+>id="component_audiences_refreshlookbackwindow"
 >title="Atualizar janela de retrospectiva"
 >abstract="Defina o número de dias da retrospectiva, a partir de hoje, com base na qual o público-alvo será avaliado."
 
@@ -43,7 +43,7 @@ ht-degree: 18%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_audiences_audiencesizelimit"
+>id="component_audiences_audiencesizelimit"
 >title="Limite de tamanho do público-alvo"
 >abstract="O público-alvo não pode exceder um tamanho de 20 milhões de membros."
 
@@ -52,7 +52,7 @@ ht-degree: 18%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_component_audiences_namespacesincluded"
+>id="component_audiences_namespacesincluded"
 >title="Namespaces incluídos"
 >abstract="As identidades nesse público-alvo são compostas pelos namespaces abaixo."
 

@@ -1,17 +1,17 @@
 ---
-title: Criar intervalos de datas
+title: 'Criar intervalos de datas '
 description: Criar um intervalo de datas para uso em relatórios.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: df0fd0af8a22c84705c3dea11065132359dd80ff
+source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '513'
-ht-degree: 7%
+ht-degree: 39%
 
 ---
 
-# Criar intervalos de datas
+# Criar intervalos de datas 
 
 
 Qualquer pessoa pode criar um intervalo de datas personalizado. Você cria um intervalo de datas das seguintes maneiras:
@@ -36,7 +36,7 @@ Para definir a anotação, use o [[!UICONTROL Criador de intervalo de datas]](#a
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_components_dateranges_endtime"
+>id="components_dateranges_endtime"
 >title="Horário de término"
 >abstract="Os horários de término sempre incluem 59 segundos."
 
@@ -54,25 +54,25 @@ A caixa de diálogo **[!UICONTROL Novo intervalo de datas]** ou **[!UICONTROL Ed
 1. Opcionalmente, especifique uma **[!UICONTROL Descrição]**.
 1. Organize o filtro criando ou aplicando uma ou mais **[!UICONTROL Marcas]**. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova marca. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma marca. |
 1. Selecione um **[!UICONTROL Intervalo de datas]** selecionando primeiro a data inicial e depois a data final.
-Como alternativa, selecione uma **[!UICONTROL Predefinição]** no menu suspenso [!UICONTROL *Selecionar uma predefinição*].
+Também é possível selecionar uma **[!UICONTROL predefinição]** no menu suspenso [!UICONTROL *Selecionar uma predefinição*].
 
-1. Opcionalmente, selecione **[!UICONTROL Mostrar configurações avançadas]** para:
+1. Ou selecione **[!UICONTROL Mostrar configurações avançadas]** para:
 
-   * Especifique a **[!UICONTROL Hora de início]** e a **[!UICONTROL Hora de término]** diferentes das `12:00 AM` (`0:00`) e `11:59 PM` (`23:59`) padrão. Os horários de término sempre incluem 59 segundos. Para um intervalo de datas que abrange muitos dias, a hora inicial se aplica ao primeiro dia do intervalo de datas, e a hora final se aplica ao último dia do intervalo de datas. Use **[!UICONTROL (Redefinir valores de tempo)]** para redefinir os valores padrão de hora inicial e final.
-   * **[!UICONTROL Usar datas do acumulado]**. Se habilitado, intervalos de datas predefinidos como **[!UICONTROL Últimos 7 dias completos]** são atualizados dinamicamente como a data e a hora atuais de progresso. Se desativadas, essas predefinições não são atualizadas depois de aplicadas.
+   * Especificar uma **[!UICONTROL Hora de início]** e **[!UICONTROL Hora de término]** diferentes das opções padrão `12:00 AM` (`0:00`) e `11:59 PM` (`23:59`). Os horários de término sempre incluem 59 segundos. No caso de um intervalo de datas que abrange muitos dias, a hora inicial se aplica ao primeiro dia do intervalo de datas, e a hora final se aplica ao último dia do intervalo de datas. Use **[!UICONTROL (Redefinir valores de tempo)]** para redefinir os valores padrão de hora inicial e final.
+   * **[!UICONTROL Usar datas contínuas]**. Se habilitado, intervalos de datas predefinidos como **[!UICONTROL Últimos 7 dias completos]** são atualizados dinamicamente como a data e a hora atuais de progresso. Se desabilitada, essas predefinições não são atualizadas depois de aplicadas.
 
      É possível selecionar o texto entre parênteses (por exemplo, **[!UICONTROL início fixo - rolagem trimestral]**) para estender o painel e especificar detalhes para **[!UICONTROL Início]** e **[!UICONTROL Fim]**.
 
      ![Datas de Rollinf](assets/rolliing-dates.png)
 
       1. Selecione **[!UICONTROL Início de]**, **[!UICONTROL Fim de]** ou **[!UICONTROL Dia fixo]**.
-      1. Ao selecionar **[!UICONTROL Início de]** ou **[!UICONTROL Fim de]**, você poderá criar uma expressão completa. Por exemplo: **[!UICONTROL Fim de]** **[!UICONTROL trimestre atual]** **[!UICONTROL menos]** `20` **[!UICONTROL dias]**. Escolha o valor apropriado para cada parte individual da expressão.
+      1. Ao selecionar **[!UICONTROL Início de]** ou **[!UICONTROL Fim de]**, você pode criar uma expressão completa. Por exemplo: **[!UICONTROL Fim de]** **[!UICONTROL trimestre atual]** **[!UICONTROL menos]** `20` **[!UICONTROL dias]**. Escolha o valor apropriado para cada parte individual da expressão.
          * Selecione um valor para o atual. Por exemplo, **[!UICONTROL trimestre atual]**.
-         * Selecione um valor para cálculo adicional. Por exemplo, **[!UICONTROL menos]**.
+         * Selecione um valor para o cálculo adicional. Por exemplo, **[!UICONTROL menos]**.
          * Quando tiver especificado um cálculo adicional, especifique um valor. Por exemplo, `20`.
          * Quando tiver especificado um cálculo adicional, selecione o período de tempo a ser usado para o cálculo. Por exemplo, **[!UICONTROL dias]**.
 
-     Selecione **[!UICONTROL Ocultar detalhes]** para ocultar os detalhes do cálculo das datas do acumulado.
+     Selecione **[!UICONTROL Ocultar detalhes]** para ocultar os detalhes do cálculo de datas contínuas.
 
 1. Selecionar:
    * **[!UICONTROL Salvar]** para salvar o intervalo de datas.
