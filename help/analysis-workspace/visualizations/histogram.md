@@ -4,10 +4,10 @@ title: Histograma
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 37%
+source-wordcount: '351'
+ht-degree: 35%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 37%
 >abstract="Crie uma visualização de histograma para representar a distribuição de dados numéricos em grupos de intervalos."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta a visualização do Histograma em **Customer Journey Analytics**. Consulte o [Histograma](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) da versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 A visualização do ![Histograma](/help/assets/icons/Histogram.svg) **[!UICONTROL Histograma]** é semelhante a uma visualização de [!UICONTROL Barra], mas agrupa números em intervalos (compartimentos). O Analytics automatiza o agrupamento de números em intervalos, mas você pode alterar as configurações em [Configurações avançadas](#advanced-settings).

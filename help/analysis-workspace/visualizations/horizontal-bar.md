@@ -4,10 +4,10 @@ title: Barra horizontal e Barra horizontal empilhada
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 38%
+source-wordcount: '191'
+ht-degree: 31%
 
 ---
 
@@ -25,6 +25,13 @@ A visualização de barra horizontal tem uma opção padrão e empilhada.
 >abstract="Crie uma visualização de barra horizontal para representar vários valores em uma ou mais métricas."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta a barra horizontal e as visualizações empilhadas de barra horizontal em **Customer Journey Analytics**. Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 A visualização da ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Barra horizontal]** mostra barras horizontais que representam vários valores de uma ou mais métricas.

@@ -4,10 +4,10 @@ title: Painel em branco
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,13 @@ ht-degree: 100%
 >additional-url="https://www.youtube.com/watch?v=SYaioiwBTrk" text="Painéis no Analysis Workspace"
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta o Painel em branco em **Customer Journey Analytics**. Consulte o [Painel em branco](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) para ver a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 O **[!UICONTROL Painel em branco]** mostra uma seleção de painéis (indicados por ![página da web](/help/assets/icons/WebPage.svg)) ou visualizações que você pode usar para criar uma análise completamente personalizada.

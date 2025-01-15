@@ -4,10 +4,10 @@ title: Linha
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 23%
+source-wordcount: '529'
+ht-degree: 22%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 23%
 >abstract="Crie uma visualização de linha que mostre como os valores são alterados durante um período. Uma visualização de linha só pode ser usada quando o tempo é usado como uma dimensão."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta a visualização de linha em **Customer Journey Analytics**. Consulte [Linha](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/line) para a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 A visualização ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Line]** representa as métricas usando uma linha para mostrar como os valores são alterados em um período. Uma visualização de linha pode ser usada somente quando o horário é usado como uma dimensão.

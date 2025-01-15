@@ -4,10 +4,10 @@ title: Painel do Insights rápidos
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '1127'
-ht-degree: 100%
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+workflow-type: tm+mt
+source-wordcount: '1151'
+ht-degree: 97%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 100%
 >abstract="Crie um painel para gerar rapidamente uma tabela de forma livre e uma visualização correspondente para analisar e descobrir insights mais rapidamente."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta o painel Quick Insights em **Customer Journey Analytics**. Consulte o [Painel do Quick Insights](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight) para a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 O painel do [!UICONTROL Insights rápidos] fornece orientação para não analistas e novos usuários do [!UICONTROL Analysis Workspace] para saber como responder a perguntas comerciais de forma rápida e fácil. É também uma excelente ferramenta para usuários avançados que desejam responder rapidamente a uma pergunta simples sem precisar criar uma tabela.

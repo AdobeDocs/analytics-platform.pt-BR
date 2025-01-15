@@ -4,18 +4,26 @@ title: Painel de forma livre
 feature: Panels
 exl-id: 4e1d5d72-da59-419a-835e-a3c90f1362b4
 role: User
-source-git-commit: 44e703ca66f8cbb7cf98472d92b3c294542a2db2
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 13%
+source-wordcount: '112'
+ht-degree: 24%
 
 ---
 
 # Painel de forma livre
 
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta o Painel de forma livre em **Customer Journey Analytics**. Consulte o [Painel de forma livre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) para a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
+
+
 Um **[!UICONTROL Painel de forma livre]** é um painel em branco com uma visualização de [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) como o estado inicial padrão.
 
-## Use 
+## Usar
 
 Para usar um **[!UICONTROL Painel de forma livre]**:
 

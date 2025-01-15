@@ -4,9 +4,9 @@ title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2174'
 ht-degree: 20%
 
 ---
@@ -31,6 +31,12 @@ ht-degree: 20%
 
 <!-- markdownlint-enable MD034 -->
 
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta o painel Experimentação em **Customer Journey Analytics**. Consulte o [Painel do Analytics for Target](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) para obter informações sobre como analisar atividades e experiências do Adobe Target no **Adobe Analytics**.*
+
+>[!ENDSHADEBOX]
 
 
 O painel **[!UICONTROL Experimentação]** permite que os analistas comparem diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é a melhor para gerar um resultado específico. Você pode avaliar o aumento e a confiança de qualquer experimento A/B de qualquer plataforma de experimentação: online, offline, de soluções de Adobe como Target ou Journey Optimizer e até mesmo dados BYO (traga os seus próprios).

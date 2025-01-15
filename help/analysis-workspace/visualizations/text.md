@@ -4,10 +4,10 @@ title: Texto
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 29%
+source-wordcount: '263'
+ht-degree: 27%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 29%
 >abstract="Adicione uma visualização de rich text definida pelo usuário ao projeto."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta a visualização de texto em **Customer Journey Analytics**. Consulte [Texto](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text) para a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 Para adicionar rich text definido pelo usuário ao seu projeto do Workspace, você pode usar uma visualização de ![Texto](/help/assets/icons/Text.svg) **[!UICONTROL Texto]** ou usar descrições para uma visualização e um painel.

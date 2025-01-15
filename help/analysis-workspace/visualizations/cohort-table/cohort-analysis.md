@@ -4,10 +4,10 @@ description: Saiba como usar uma tabela de coorte para análise de coorte no Ana
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 4fac7b05f8972028df5c06a40394dc0527b22208
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 34%
+source-wordcount: '663'
+ht-degree: 33%
 
 ---
 
@@ -30,6 +30,13 @@ ht-degree: 34%
 >abstract="Agrupe os usuários com base na conclusão de um evento e, em seguida, analise o engajamento contínuo e o churn ao longo do tempo.<br/><br/>**Parâmetros **<br/>**Critérios de inclusão**: os componentes usados para definir seus coortes de visitantes iniciais.<br/>**Critérios de retorno**: os componentes usados para determinar se um visitante retornou."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta a tabela de Coorte em **Customer Journey Analytics**. Consulte a [Tabela de coorte](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) da versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 *coorte* é um grupo de pessoas que compartilham características comuns em um período especificado. Uma visualização de ![TabelaDeTexto](/help/assets/icons/TextNumbered.svg) **[!UICONTROL TabelaDeCoorte]** é útil, por exemplo, quando você deseja saber como uma coorte interage com uma marca. Você pode detectar facilmente as mudanças nas tendências e atuar de acordo com elas. (Há explicações sobre a [!UICONTROL análise de coorte] disponíveis na Web, por exemplo, em [Análise de coorte 101](https://pt.wikipedia.org/wiki/Cohort_analysis).)

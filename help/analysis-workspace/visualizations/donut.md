@@ -4,10 +4,10 @@ title: Rosca
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 32%
+source-wordcount: '117'
+ht-degree: 26%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 32%
 >abstract="Crie uma visualização de donut para comparar porcentagens de um total, normalmente com um pequeno número de itens."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta a visualização de Rosca em **Customer Journey Analytics**. Consulte [Rosca](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut) para ver a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 Semelhante ao gráfico de pizza, a visualização ![RoscaGráfico](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Rosca]** mostra os dados como partes ou filtros de um todo. Use uma visualização de rosca ao comparar porcentagens de um total, normalmente com um pequeno número de itens.

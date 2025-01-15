@@ -4,10 +4,10 @@ title: Barra e barra empilhada
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 30%
+source-wordcount: '201'
+ht-degree: 26%
 
 ---
 
@@ -25,6 +25,13 @@ A visualização de barra tem uma opção padrão e empilhada.
 >abstract="Crie uma visualização de barra para representar vários valores em uma ou mais métricas."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta as visualizações de Barra e Barra empilhadas em **Customer Journey Analytics**. Consulte [Barra e barra empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) para a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 A visualização ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Bar]** mostra barras verticais que representam vários valores de uma ou mais métricas.

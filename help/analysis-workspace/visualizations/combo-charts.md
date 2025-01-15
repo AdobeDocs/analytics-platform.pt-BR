@@ -4,10 +4,10 @@ title: Visualização de gráficos de combinação
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 44%
+source-wordcount: '600'
+ht-degree: 45%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 44%
 >abstract="Crie uma visualização de gráfico de combinação rapidamente, sem precisar criar uma tabela de forma livre primeiro."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta a Visualização de combinação em **Customer Journey Analytics**. Consulte [Combinação](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) para a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 A visualização ![Comment](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** facilita a criação rápida de uma visualização de comparação sem precisar criar uma tabela primeiro. Você pode visualizar facilmente as tendências em seus dados em uma combinação de linha/barra.

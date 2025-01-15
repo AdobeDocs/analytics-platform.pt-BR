@@ -4,10 +4,10 @@ title: Painel Item anterior ou seguinte
 feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 38%
+source-wordcount: '467'
+ht-degree: 36%
 
 ---
 
@@ -31,7 +31,11 @@ ht-degree: 38%
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
 
+*Este artigo documenta o painel Item seguinte ou anterior em **Customer Journey Analytics**. Consulte [Painel do item seguinte ou anterior](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) para a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 O painel **[!UICONTROL Item seguinte ou anterior]** contém várias tabelas e visualizações para identificar o item de dimensão seguinte ou anterior de uma dimensão específica. Por exemplo, você pode querer explorar quais páginas os clientes acessaram com mais frequência depois de visitarem a Página inicial.
 

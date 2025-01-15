@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel de atribuição no Analysis Worksp
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 49%
+source-wordcount: '691'
+ht-degree: 47%
 
 ---
 
@@ -29,6 +29,11 @@ ht-degree: 49%
 
 <!-- markdownlint-enable MD034 -->
 
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta o painel Atribuição em **Customer Journey Analytics**. Consulte o [Painel de atribuição](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) para a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 O painel **[!UICONTROL Atribuição]** é uma maneira fácil de criar uma análise comparando vários modelos de atribuição. O painel fornece um espaço de trabalho dedicado para usar e comparar modelos de atribuição.
 

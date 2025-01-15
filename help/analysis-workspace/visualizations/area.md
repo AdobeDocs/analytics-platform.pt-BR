@@ -4,14 +4,14 @@ title: Área e área empilhada
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 32%
+source-wordcount: '193'
+ht-degree: 27%
 
 ---
 
-# Área e área empilhada
+# Área (empilhada)
 
 ## Área {#area}
 
@@ -23,6 +23,13 @@ ht-degree: 32%
 >abstract="Crie uma visualização de gráfico de área para representar a interseção de várias métricas."
 
 <!-- markdownlint-enable MD034 -->
+
+
+>[!BEGINSHADEBOX]
+
+*Este artigo documenta as visualizações de Área e Área empilhada em **Customer Journey Analytics**. Consulte [Área e área empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) para a versão **Adobe Analytics**deste artigo.*
+
+>[!ENDSHADEBOX]
 
 
 A visualização de ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** é como um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Adicione um gráfico de área quando tiver várias métricas e quiser visualizar a área expressa pela interseção de duas ou mais métricas.
