@@ -4,9 +4,9 @@ description: As tabelas de forma livre são a base para a análise de dados no W
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '779'
 ht-degree: 25%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 25%
 
 >[!BEGINSHADEBOX]
 
-*Este artigo documenta a visualização da tabela de forma livre em **Customer Journey Analytics**. Consulte a [Tabela de forma livre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) para a versão **Adobe Analytics**deste artigo.*
+*Este artigo documenta a visualização da tabela de forma livre em ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Consulte a [Tabela de forma livre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) para a versão ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**deste artigo.*
 
 >[!ENDSHADEBOX]
 

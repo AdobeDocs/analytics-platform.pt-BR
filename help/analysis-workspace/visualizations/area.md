@@ -4,9 +4,9 @@ title: Área e área empilhada
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '195'
 ht-degree: 27%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 27%
 
 >[!BEGINSHADEBOX]
 
-*Este artigo documenta as visualizações de Área e Área empilhada em **Customer Journey Analytics**. Consulte [Área e área empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) para a versão **Adobe Analytics**deste artigo.*
+*Este artigo documenta as visualizações de Área e Área empilhada em ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Consulte [Área e área empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) para a versão ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**deste artigo.*
 
 >[!ENDSHADEBOX]
 

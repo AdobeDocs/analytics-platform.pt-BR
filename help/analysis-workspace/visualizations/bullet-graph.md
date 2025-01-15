@@ -4,10 +4,10 @@ title: Gráfico em marcadores
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 59%
+source-wordcount: '251'
+ht-degree: 58%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 59%
 
 >[!BEGINSHADEBOX]
 
-*Este artigo documenta a visualização de Marcador em **Customer Journey Analytics**. Consulte o [Marcador](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) da versão **Adobe Analytics**deste artigo.*
+*Este artigo documenta a visualização de Marcador em ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Consulte o [Marcador](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) da versão ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**deste artigo.*
 
 >[!ENDSHADEBOX]
 

@@ -4,10 +4,10 @@ description: Uma visualização que mostra a relação entre até três métrica
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 68%
+source-wordcount: '168'
+ht-degree: 67%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 68%
 
 >[!BEGINSHADEBOX]
 
-*Este artigo documenta a visualização Dispersão em **Customer Journey Analytics**. Consulte [Dispersão](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) para a versão **Adobe Analytics**deste artigo.*
+*Este artigo documenta a visualização de Dispersão em ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Consulte [Dispersão](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) para a versão ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**deste artigo.*
 
 >[!ENDSHADEBOX]
 

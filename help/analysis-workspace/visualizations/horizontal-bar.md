@@ -4,9 +4,9 @@ title: Barra horizontal e Barra horizontal empilhada
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 31%
 
 ---
@@ -29,7 +29,7 @@ A visualização de barra horizontal tem uma opção padrão e empilhada.
 
 >[!BEGINSHADEBOX]
 
-*Este artigo documenta a barra horizontal e as visualizações empilhadas de barra horizontal em **Customer Journey Analytics**. Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a versão **Adobe Analytics**deste artigo.*
+*Este artigo documenta a barra horizontal e as visualizações empilhadas de barra horizontal em ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a versão ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**deste artigo.*
 
 >[!ENDSHADEBOX]
 

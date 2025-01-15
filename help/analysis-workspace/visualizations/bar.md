@@ -4,9 +4,9 @@ title: Barra e barra empilhada
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: c7cdeb29729af35d7554b19e395047b364f0b547
+source-git-commit: f8abf388e0cb1e2e2eb9ff69fed2c542a26dcd66
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '203'
 ht-degree: 26%
 
 ---
@@ -29,7 +29,7 @@ A visualização de barra tem uma opção padrão e empilhada.
 
 >[!BEGINSHADEBOX]
 
-*Este artigo documenta as visualizações de Barra e Barra empilhadas em **Customer Journey Analytics**. Consulte [Barra e barra empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) para a versão **Adobe Analytics**deste artigo.*
+*Este artigo documenta as visualizações de Barra e Barra empilhadas em ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg)**Customer Journey Analytics**.<br/>Consulte [Barra e barra empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) para a versão ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg)**Adobe Analytics**deste artigo.*
 
 >[!ENDSHADEBOX]
 
