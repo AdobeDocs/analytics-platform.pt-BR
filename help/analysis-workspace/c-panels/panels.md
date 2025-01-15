@@ -4,10 +4,10 @@ title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
+source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
 workflow-type: tm+mt
-source-wordcount: '2126'
-ht-degree: 100%
+source-wordcount: '2159'
+ht-degree: 98%
 
 ---
 
@@ -149,17 +149,21 @@ Também é possível arrastar outros componentes além de filtros diretamente pa
 
 Para obter mais informações, consulte [Filtros rápidos](/help/components/filters/quick-filters.md).
 
-![Filtros ad hoc que são tornados públicos e soltos na zona de destino.](assets/adhoc-segment-filter.png)
+![Filtros ad hoc tornados públicos e colocados na zona de soltar](assets/adhoc-segment-filter.png)
 
 ### Filtros suspensos
 
-+++ Assista a um vídeo que explica sobre os filtros suspensos.
-
 >[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
 
-{{videoaa}}
+Este vídeo demonstra a funcionalidade usando o Adobe Analytics. No entanto, a funcionalidade está disponível de forma semelhante no Customer Journey Analytics. Esteja ciente das seguintes diferenças na terminologia.
 
-+++
+| Adobe Analytics | Customer Jornada Analytics |
+| --- | --- |
+| Segmentos | Filtros |
+| Visitante | Pessoa |
+| Visita | Sessão |
+| Ocorrência | Evento |
+
 
 #### Filtros suspensos estáticos
 
