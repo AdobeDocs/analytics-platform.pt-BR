@@ -6,10 +6,11 @@ role: User, Admin
 badgePremium: label="Versão do Adobe Analytics" url="https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization.html" tooltip="Selecione para ver a versão do Adobe Analytics deste artigo."
 hide: true
 hidefromtoc: true
-source-git-commit: 3c3ef1c79e5863b74a3b7458c87d1f83f7188e5a
+exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
+source-git-commit: d556740383075b2ee4652a78d3d37d5bbc5f2225
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 13%
+source-wordcount: '79'
+ht-degree: 16%
 
 ---
 
@@ -43,11 +44,9 @@ ht-degree: 13%
 <!-- markdownlint-enable MD034 -->
 
 
->[!NOTE]
->
->A visualização de mapa não é compatível com o Analysis Workspace for Customer Journey Analytics. Para obter detalhes sobre como usar a Visualização de mapa no Analysis Workspace no Adobe Analytics, selecione **Adobe Analytics versão** na parte superior deste artigo.
->
+>[!BEGINSHADEBOX]
 
+*Atualmente, não há visualização de mapa disponível em **Customer Journey Analytics**.
+Consulte [Mapa](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) para obter a documentação de visualização de mapa no Adobe Analytics.*
 
-
-
+>[!ENDSHADEBOX]
