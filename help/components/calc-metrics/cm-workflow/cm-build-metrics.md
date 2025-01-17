@@ -17,7 +17,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_productcompatibility"
 >title="Compatibilidade do produto"
->abstract="Indica onde é possível usar essa métrica calculada no Customer Journey Analytics, seja no Analysis Workspace, Report Builder e assim por diante. Algumas métricas calculadas não podem ser usadas com experimentação. "
+>abstract="Indica onde é possível usar essa métrica calculada no Customer Journey Analytics, seja no Analysis Workspace, Report Builder e assim por diante. Algumas métricas calculadas não podem ser usadas com experimentação."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Usar métricas calculadas na experimentação"
 
 <!-- markdownlint-enable MD034 -->

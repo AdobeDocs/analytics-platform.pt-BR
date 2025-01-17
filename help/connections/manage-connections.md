@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
 workflow-type: tm+mt
 source-wordcount: '4023'
-ht-degree: 24%
+ht-degree: 26%
 
 ---
 
@@ -245,7 +245,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >[!CONTEXTUALHELP]
 >id="cja_connections_usage_otherdatasets"
 >title="Outros conjuntos de dados"
->abstract="Para os meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e *outros conjuntos de dados* não serão mais exibidos."
+>abstract="Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e *outros conjuntos de dados* não serão mais exibidos."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -320,7 +320,7 @@ Quando um conjunto de dados é selecionado na tabela de conjuntos de dados, um p
 >[!CONTEXTUALHELP]
 >id="connections_usage_otherdatasets"
 >title="Outros conjuntos de dados"
->abstract="Para os meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e *outros conjuntos de dados* não serão mais exibidos."
+>abstract="Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e *outros conjuntos de dados* não serão mais exibidos."
 <!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
@@ -426,7 +426,7 @@ A interface de uso do consiste em dois painéis:
 
   Você pode usar a tabela **[!UICONTROL Detalhamento de detalhes]** para exibir métricas detalhadas por conexão, conjunto de dados, sandbox e tags. Os conjuntos de dados são relatados usando IDs em vez de nomes, pois os nomes dos conjuntos de dados podem ser modificados durante um período de relatório. Conjuntos de dados ou conexões desconhecidos são relatados usando IDs.
 
-  Para os meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e [!UICONTROL Outros conjuntos de dados] não serão mais exibidos.
+  Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular, e [!UICONTROL Outros conjuntos de dados] não serão mais exibidos.
 
    * Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhamento por]**.
 

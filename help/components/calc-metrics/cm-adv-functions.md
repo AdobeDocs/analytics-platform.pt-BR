@@ -867,13 +867,13 @@ Menor ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 | métrica | O número real positivo cujo logaritmo de base 10 você deseja |
 
 
-## Regressão logarítmica: coeficiente de correlação  {#log-regression-correlation-coefficient}
+## Regressão logarítmica: coeficiente de correlação {#log-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-log"
->title="Regressão logarítmica: coeficiente de correlação "
+>title="Regressão logarítmica: coeficiente de correlação"
 >abstract="Regressão logarítmica: Y = a ln(X) + b. Retorna o coeficiente de correlação."
 
 <!-- markdownlint-enable MD034 -->
@@ -889,13 +889,13 @@ Menor ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão logarítmica: intercepto  {#log-regression-intercept}
+## Regressão logarítmica: intercepto {#log-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-log"
->title="Regressão logarítmica: intercepto "
+>title="Regressão logarítmica: intercepto"
 >abstract="Regressão logarítmica: Y = a ln(X) + b. Retorna b."
 
 <!-- markdownlint-enable MD034 -->
@@ -1070,13 +1070,13 @@ Não igual. A saída é 0 (falso) ou 1 (verdadeiro).
 Retorna Pi: 3,14159...
 
 
-## Regressão de potência: coeficiente de correlação  {#power-regression-correlation-coefficient}
+## Regressão de potência: coeficiente de correlação {#power-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-power"
->title="Regressão de potência: coeficiente de correlação "
+>title="Regressão de potência: coeficiente de correlação"
 >abstract="Regressão de potência: Y = b X ^ a. Retorna o coeficiente de correlação."
 
 <!-- markdownlint-enable MD034 -->
@@ -1093,13 +1093,13 @@ Retorna Pi: 3,14159...
 
 
 
-## Regressão de potência: intercepto  {#power-regression-intercept}
+## Regressão de potência: intercepto {#power-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-power"
->title="Regressão de potência: intercepto "
+>title="Regressão de potência: intercepto"
 >abstract="Regressão de potência: Y = b X ^ a. Retorna b."
 
 <!-- markdownlint-enable MD034 -->
@@ -1140,13 +1140,13 @@ Retorna Pi: 3,14159...
 
 
 
-## Regressão de potência: inclinação  {#power-regression-slope}
+## Regressão de potência: inclinação {#power-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-power"
->title="Regressão de potência: inclinação "
+>title="Regressão de potência: inclinação"
 >abstract="Regressão de potência: Y = b X ^ a. Retorna a."
 
 <!-- markdownlint-enable MD034 -->
@@ -1184,13 +1184,13 @@ Retorna Pi: 3,14159...
 | metric_Y | Uma métrica que você gostaria de correlacionar com metric_X |
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
-## Regressão quadrática: intercepto  {#quadratic-regression-intercept}
+## Regressão quadrática: intercepto {#quadratic-regression-intercept}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-quadratic"
->title="Regressão quadrática: intercepto "
+>title="Regressão quadrática: intercepto"
 >abstract="Regressão quadrática: Y = (a + bX) ^ 2, retorna a."
 
 <!-- markdownlint-enable MD034 -->
@@ -1228,13 +1228,13 @@ Retorna Pi: 3,14159...
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão quadrática: inclinação  {#quadratic-regression-slope}
+## Regressão quadrática: inclinação {#quadratic-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-quadratic"
->title="Regressão quadrática: inclinação "
+>title="Regressão quadrática: inclinação"
 >abstract="Regressão quadrática: Y = (a + bX) ^ 2, retorna b."
 
 <!-- markdownlint-enable MD034 -->
@@ -1251,13 +1251,13 @@ Retorna Pi: 3,14159...
 
 
 
-## Regressão recíproca: coeficiente de correlação  {#reciprocal-regression-correlation-coefficient}
+## Regressão recíproca: coeficiente de correlação {#reciprocal-regression-correlation-coefficient}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-reciprocal"
->title="Regressão recíproca: coeficiente de correlação "
+>title="Regressão recíproca: coeficiente de correlação"
 >abstract="Regressão recíproca: Y = a + b X ^ -1. Retorna o coeficiente de correlação."
 
 <!-- markdownlint-enable MD034 -->
@@ -1295,13 +1295,13 @@ Retorna Pi: 3,14159...
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão recíproca: previsão de Y  {#reciprocal-regression-predicted-y}
+## Regressão recíproca: previsão de Y {#reciprocal-regression-predicted-y}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-reciprocal"
->title="Regressão recíproca: previsão de Y "
+>title="Regressão recíproca: previsão de Y"
 >abstract="Regressão recíproca: Y = a + b X ^ -1. Retorna Y."
 
 <!-- markdownlint-enable MD034 -->
@@ -1317,7 +1317,7 @@ Retorna Pi: 3,14159...
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
 
-## Regressão recíproca: inclinação  {#reciprocal-regression-slope}
+## Regressão recíproca: inclinação {#reciprocal-regression-slope}
 
 <!-- markdownlint-disable MD034 -->
 

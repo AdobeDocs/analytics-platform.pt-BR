@@ -18,7 +18,7 @@ ht-degree: 68%
 >[!CONTEXTUALHELP]
 >id="workspace_scatter_button"
 >title="Dispersão"
->abstract="Crie uma visualização de dispersão que mostre a relação entre itens de dimensão e até três métricas. "
+>abstract="Crie uma visualização de dispersão que mostre a relação entre itens de dimensão e até três métricas."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -18,7 +18,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="Total geral"
->abstract="O total geral não é compatível com tabelas e detalhamentos com linhas estáticas."
+>abstract="O total geral não é compatível com tabelas e detalhamentos com linhas estáticas"
 
 <!-- markdownlint-enable MD034 -->
 

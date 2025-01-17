@@ -27,7 +27,7 @@ ht-degree: 46%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="Visualizadores simultâneos de mídia"
->abstract="Analise visualizadores simultâneos ao longo do tempo, visualize o pico de simultaneidade ou faça o detalhamento e compare.<br/><br>**Granularidade**: selecione o período pelo qual exibir visualizadores simultâneos.<br/>**Números de resumo do painel**:<br/>opção para mostrar números de resumo com detalhes de data ou hora para cada linha. O máximo mostra detalhes para a simultaneidade de pico. O mínimo mostra detalhes para o vale.  <br/>**Detalhamento de série (opcional)**: divide a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas. Visualize até 10 linhas por vez. Os detalhamentos são limitados a um único nível."
+>abstract="Analise visualizadores simultâneos ao longo do tempo, visualize o pico de simultaneidade ou faça o detalhamento e compare.<br/><br>**Granularidade**: selecione o período pelo qual exibir visualizadores simultâneos.<br/>**Números de resumo do painel**:<br/>opção para mostrar números de resumo com detalhes de data ou hora para cada linha. O máximo mostra detalhes para a simultaneidade de pico. O mínimo mostra detalhes para o vale.<br/>**Detalhamento de série (opcional)**: divide a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas. Visualize até 10 linhas por vez. Os detalhamentos são limitados a um único nível."
 
 <!-- markdownlint-enable MD034 -->
 
