@@ -4,10 +4,10 @@ description: Saiba como usar uma tabela de coorte para análise de coorte no Ana
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 353993c14103906553d87738ed3f7fc0926e123c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 33%
+source-wordcount: '687'
+ht-degree: 30%
 
 ---
 
@@ -68,7 +68,9 @@ As tabelas de coorte no Customer Journey Analytics são compatíveis com métric
 
 ## Recursos da tabela de coorte
 
-Os seguintes recursos permitem o controle ajustado dos coortes que você está criando:
+As seções a seguir descrevem os recursos da Análise de coorte, que permitem o controle ajustado das coortes que você está criando.
+
+Para obter informações mais detalhadas sobre como criar uma coorte e executar um relatório de [!UICONTROL Análise de coorte], consulte [Configurar uma tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
 ### Tabela [!UICONTROL Retenção]
 
