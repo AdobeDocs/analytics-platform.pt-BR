@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
+source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 31%
 
 ---
@@ -25,7 +26,7 @@ ht-degree: 31%
 
 Uma sequência de dados já deve existir antes que você conclua as etapas desta seção. Quando e como o fluxo de dados foi criado depende da implementação do Adobe Analytics, da seguinte maneira:
 
-* Se sua implementação do Adobe Analytics estiver usando o SDK da Web ou a extensão SDK da Web, a sequência de dados estará disponível para seu ambiente do Adobe Analytics, antes do processo de atualização.
+* Se sua implementação do Adobe Analytics usa a extensão Web SDK ou Web SDK, a sequência de dados estava disponível para seu ambiente do Adobe Analytics, antes do processo de atualização.
 
 * Para outras implementações do Adobe Analytics, criar uma sequência de dados faz parte do processo de atualização, conforme descrito em [Criar uma sequência de dados para usar com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md).
 

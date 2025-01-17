@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: f76d098d-d223-40e4-be81-d28e7581396b
+source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 27%
+source-wordcount: '256'
+ht-degree: 23%
 
 ---
 
@@ -27,6 +28,12 @@ Uma sequência de dados representa a configuração do lado do servidor ao imple
 
 Na configuração, você deseja configurar a sequência de dados para enviar os dados coletados para seu conjunto de dados no Adobe Experience Platform.
 
+>[!NOTE]
+>
+>As etapas a seguir são necessárias somente para implementações do Adobe Analytics que usam o AppMeasurement ou a extensão do Analytics (tags).
+>
+>Se sua implementação do Adobe Analytics usar a extensão Web SDK ou Web SDK, a sequência de dados já existe em seu ambiente do Adobe Analytics.
+
 Para configurar seu armazenamento de dados:
 
 1. No Adobe Experience Platform, selecione **[!UICONTROL Datastreams]** de [!UICONTROL DATA COLLECTION] no painel esquerdo.
@@ -40,4 +47,3 @@ Para configurar seu armazenamento de dados:
 1. Selecione **[!UICONTROL Salvar]**.
 
 1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
-

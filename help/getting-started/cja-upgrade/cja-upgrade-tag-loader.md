@@ -1,20 +1,20 @@
 ---
-title: Implementar a tag de carregamento para a extensão SDK da Web
-description: Saiba como implementar a tag de carregamento para a extensão SDK da Web
+title: Implementar a tag de carregamento para a extensão do SDK da Web
+description: Saiba como implementar a tag de carregamento para a extensão Web SDK
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: 937a7f31361027438929194f8ccc5aee83c33bc0
+source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 34%
+source-wordcount: '285'
+ht-degree: 36%
 
 ---
 
-# Implementar a tag de carregamento para a extensão SDK da Web
+# Implementar a tag de carregamento para a extensão do SDK da Web
 
 >[!NOTE]
 > 
@@ -27,6 +27,12 @@ Você deve instalar a tag no site que deseja rastrear, o que implica colocar o c
 O processo a seguir descreve como obter o código que faz referência à sua tag. Para obter informações complementares, consulte os [Guias de implementação para tags e encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) na documentação do Experience Platform.
 
 Para obter o código que faz referência à sua tag:
+
+1. Faça logon em experience.adobe.com usando suas credenciais da Adobe ID.
+
+1. No Adobe Experience Platform, vá para **[!UICONTROL Coleção de Dados]** > **[!UICONTROL Marcas]**.
+
+1. Na página **[!UICONTROL Propriedades da Marca]**, selecione a marca recém-criada na lista de propriedades para abri-la.
 
 1. Selecione **[!UICONTROL Ambientes]** no painel esquerdo.
 
