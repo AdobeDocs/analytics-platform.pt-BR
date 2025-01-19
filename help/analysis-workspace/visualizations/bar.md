@@ -4,7 +4,7 @@ title: Barra e barra empilhada
 feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
-source-git-commit: c0c02b8ae1a614f3e623642a8671bb25d8a26f4f
+source-git-commit: 834296485a1e21cf15fb5d8162e421d28e2fcd21
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 26%
@@ -16,6 +16,7 @@ ht-degree: 26%
 >[!BEGINSHADEBOX]
 
 *Este artigo documenta as visualizações de Barra e Barra empilhadas em **Customer Journey Analytics**.<br/>Consulte [Barra e barra empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bar) para a versão **Adobe Analytics**deste artigo.*
+
 
 >[!ENDSHADEBOX]
 
