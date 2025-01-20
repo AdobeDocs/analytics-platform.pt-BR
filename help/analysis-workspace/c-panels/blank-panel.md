@@ -4,10 +4,10 @@ title: Painel em branco
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: bf5853a1d23d6e648024016a64dc67d09da3fbb4
+source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 91%
+source-wordcount: '248'
+ht-degree: 90%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-*Este artigo documenta o Painel em branco em **Customer Journey Analytics**.<br/>Consulte o [Painel em branco](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) para a versão **Adobe Analytics**deste artigo.*
+_Este artigo documenta o painel em branco no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [Painel em branco](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/blank-panel) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
