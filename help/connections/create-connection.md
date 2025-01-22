@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4260'
 ht-degree: 100%
 
@@ -225,7 +225,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountfield"
 >title="Campo conta"
->abstract="Selecione um campo que represente o ID da conta (o identificador exclusivo de uma conta)."
+>abstract="Selecione um campo que representa a ID da conta (o identificador exclusivo de uma conta)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -341,7 +341,7 @@ Entre em contato com sua administração se não tiver certeza de qual pacote do
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
 >title="Campo conta"
->abstract="Selecione um campo que represente o ID da conta (o identificador exclusivo de uma conta)."
+>abstract="Selecione um campo que representa a ID da conta (o identificador exclusivo de uma conta)."
 
 <!-- markdownlint-enable MD034 -->
 

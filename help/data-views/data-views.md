@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1078'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Os projetos do Espaço de trabalho no Customer Journey Analytics são baseados e
 As visualizações de dados permitem que você altere espontaneamente as configurações dos elementos do esquema, sem ter que alterar o esquema na Adobe Experience Platform ou reimplementar o ambiente do Customer Journey Analytics.
 
 * É possível alterar um componente de uma métrica para uma dimensão e vice-versa. Você pode criar métricas a partir de campos de string ou criar dimensões a partir de campos numéricos. Essa funcionalidade facilita a sua vida, pois não é necessário criar um campo numérico no esquema XDM para cada métrica desejada. Em vez disso, você pode criá-lo espontaneamente na caixa de diálogo Visualizações de dados. Veja alguns exemplos:
-   * **Crie uma ou mais métricas e/ou dimensões de um único campo de esquema**. É uma relação um para muitos. Por exemplo, é possível criar uma ou mais métricas de receita e/ou uma ou mais dimensões de receita de um único campo de esquema.
+   * **Crie uma ou mais métricas e/ou dimensões a partir de um único campo de esquema**. É uma relação um para muitos. Por exemplo, é possível criar uma ou mais métricas de receita e/ou uma ou mais dimensões de receita de um único campo de esquema.
    * **Use um campo de sequência como métrica**: ao preencher um esquema na Experience Platform com um conjunto de dados, você pode não saber antecipadamente quais elementos do esquema são necessários. Por exemplo, talvez você não tenha percebido que precisava de uma métrica para *Erros em uma página*. Como resultado, você não criou um elemento de esquema numérico para esse efeito. Ao usar um elemento de string como métrica, agora é possível usar as configurações de exibições de dados para especificar que, sempre que uma string tiver a palavra `error`, ela poderá ser usada como métrica.
    * **Use um campo numérico como dimensão**: por exemplo, se você quiser obter a métrica Receita a partir da dimensão Receita, ela mostrará cada valor como um item de dimensão. E o número de instâncias para cada item de dimensão como uma métrica.
 
@@ -46,7 +46,7 @@ As visualizações de dados permitem que você altere espontaneamente as configu
 * Você pode exibir mais informações relacionadas ao esquema sobre componentes. Como:
 
    * o tipo de conjunto de dados (evento, perfil, pesquisa, resumo) do qual o componente se origina,
-   * de que tipo de esquema (sequência, número inteiro etc.) ele se origina e
+   * de que tipo de esquema (string, número inteiro, etc.) ele se origina e
    * o caminho do esquema (o campo XDM no qual ele se baseia).
 
 * Você pode marcar um componente para facilitar a pesquisa no Workspace.
