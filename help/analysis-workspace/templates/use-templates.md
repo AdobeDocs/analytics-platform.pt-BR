@@ -4,7 +4,7 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
+source-git-commit: 75a6db5fde167235a86241cb6065602d7157c390
 workflow-type: tm+mt
 source-wordcount: '19288'
 ht-degree: 86%
@@ -1548,4 +1548,3 @@ Os seguintes modelos estão disponíveis:
 | **Páginas de aterrissagem do Journey Optimizer** | Visualize o comportamento do usuário, os padrões de engajamento, as taxas de conversão e outras métricas principais.<p>**Isso pode ajudá-lo** a entender melhor a eficácia da sua landing page. </p><p>**Com base no que aprender, poderá** fazer várias coisas, como otimizar o desempenho da página de aterrisagem.</p> |
 | **relatório de visão geral do Journey Optimizer** | Visualize um resumo completo das métricas de tráfego e engajamento para todas as campanhas e jornadas no ambiente.<p>**Isso pode ajudá-lo** a entender melhor a eficácia de alto nível de suas campanhas e jornadas. </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas e jornadas com base nos níveis de engajamento do público-alvo.</p> |
 | **Assinaturas do Journey Optimizer** | Visualize assinaturas e cancelamentos de assinaturas de perfis associados a listas específicas.<p>**Isso pode ajudar** a entender melhor a eficácia de diferentes campanhas de assinatura e iniciativas na promoção do engajamento e das conversões.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas de assinatura com base nos níveis de engajamento do público-alvo.</p> |
-

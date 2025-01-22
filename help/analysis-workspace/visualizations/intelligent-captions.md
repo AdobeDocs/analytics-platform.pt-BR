@@ -4,10 +4,10 @@ title: Legendas inteligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: de0eca21fa1b4ac71a8273676e851b596cf911a8
+source-git-commit: 7d103e9d709ec076519360a4b43af44f061171e9
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 20%
+source-wordcount: '868'
+ht-degree: 16%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 20%
 
 <!-- markdownlint-enable MD034 -->
 
-As legendas inteligentes usam aprendizado de máquina avançado e IA generativa para fornecer insights valiosos de linguagem natural para visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para a visualização de [Linha](line.md). Outras visualizações se seguirão.
+A funcionalidade de Legendas inteligentes usa IA gerativa avançada para fornecer insights essenciais para as visualizações do Workspace usadas com mais frequência em linguagem natural.
 
 As legendas inteligentes são voltadas para:
 
@@ -85,11 +85,10 @@ As legendas inteligentes são voltadas para:
 
 ## Iniciar legendas inteligentes {#launch}
 
-Para iniciar legendas geradas automaticamente para uma visualização de linha, selecione ![AEMScreen](/help/assets/icons/AI.svg) **[!UICONTROL Legendas inteligentes]** na parte superior direita da visualização.
+Para iniciar legendas inteligentes geradas automaticamente em uma visualização, selecione ![Legendas inteligentes](/help/assets/icons/AI.svg) na parte superior direita da visualização. Essa seleção gera insights de linguagem natural.
 
-![Janela Análise do Launch mostrando as legendas inteligentes para a tendência de Exibições de produtos. ](assets/intell-caps-1.png)
+![Janela Análise do Launch mostrando as legendas inteligentes para a tendência de Exibições de produtos. ](assets/intelligent-captions.gif)
 
-Os insights de linguagem natural estão sendo gerados agora.
 
 Lembre-se:
 
@@ -97,13 +96,28 @@ Lembre-se:
 
 * As legendas são geradas sempre que os dados subjacentes selecionados são alterados na tabela que habilita a visualização.
 
-* Se houver várias métricas na tabela, as legendas serão geradas apenas para a primeira métrica ou para a métrica selecionada no momento pelo usuário.
+* Se houver várias métricas em uma tabela de forma livre associada, as legendas serão geradas apenas para a primeira métrica ou para a métrica selecionada no momento pelo usuário. No entanto, as legendas podem ser geradas para várias métricas para as visualizações de linha e área.
 
 * Se você salvar o projeto em um ponto específico e recarregá-lo posteriormente, as legendas serão atualizadas automaticamente com novos dados. O mesmo se aplica a projetos agendados e arquivos de PDF exportados de um projeto.
 
-Este é um exemplo de como as legendas inteligentes podem ser:
 
-![Legendas inteligentes para visualização de Linha, incluindo Sazonalidade, Mín, Máx, Pico e Recusar.](assets/captions.png)
+## Visualizações {#visualizations}
+
+As legendas inteligentes são compatíveis com as seguintes visualizações:
+
+* [Linha](line.md) (incluindo várias linhas)
+* [Barra](bar.md)
+* [Barra horizontal](horizontal-bar.md)
+* [Área](area.md) (incluindo várias linhas de Área)
+* [Rosca](donut.md)
+* [Fallout](fallout/fallout-flow.md)
+* [Fluxo](c-flow/flow.md)
+
+<!--
+Here is an example of what intelligent captions could look like:
+
+![Intelligent captions for Line visualization including Seasonality, Min, Max, Spike, and Decline.](assets/captions.png)
+-->
 
 ## Ações
 
@@ -111,15 +125,24 @@ Você pode executar as seguintes ações em legendas inteligentes:
 
 ### Copiar para área de transferência {#copy}
 
-Você pode copiar as legendas para uma área de transferência e colá-las em um PowerPoint ou outras ferramentas. Selecione ![Copiar legendas para a área de transferência](/help/assets/icons/Copy.svg) na parte superior direita da caixa de diálogo de legendas.
+Você pode copiar as legendas para uma área de transferência e colá-las em um PowerPoint ou outras ferramentas. É possível copiar legendas individuais na exibição uma por uma ou copiar todas as legendas de uma só vez na exibição de legenda expandida.
+
+* Para copiar as legendas, selecione ![Copiar legendas para a área de transferência](/help/assets/icons/Copy.svg) na parte superior direita da caixa de diálogo de legendas.
+
+### Mostrar todas as legendas ou legendas inteligentes individuais  {#show-all-or-individual}
+
+É possível mostrar todas as legendas inteligentes de uma só vez em uma exibição expandida, ou mostrar legendas inteligentes individuais em uma exibição individual.
+
+* Para mostrar todas as legendas inteligentes, selecione ![Mostrar todas as legendas inteligentes](/help/assets/icons/Maximize.svg).
+* Para mostrar legendas inteligentes individuais, uma por uma, selecione ![Mostrar legendas inteligentes individuais](/help/assets/icons/Minimize.svg).
 
 ### Editar exibição {#edit}
 
 É possível editar a exibição de legendas, como ocultar ou reexibir uma categoria específica de insights.
 
-1. Selecione ![Editar exibição de legendas inteligentes](/help/assets/icons/EditInLight.svg) na caixa de diálogo Legendas inteligentes.
+1. Selecione ![Editar visibilidade das legendas inteligentes](/help/assets/icons/EditInLight.svg) na caixa de diálogo Legendas inteligentes.
 
-1. Alterne entre ![Visibility](/help/assets/icons/Visibility.svg) para exibir um insight específico (como **[!UICONTROL Min]**) ou ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) para ocultar um insight específico (como **[!UICONTROL Spike]**).
+1. Alterne entre ![Alternar visibilidade](/help/assets/icons/Visibility.svg) para exibir um insight específico (como **[!UICONTROL Min]**) ou ![Alternar visibilidade](/help/assets/icons/VisibilityOff.svg) para ocultar um insight específico (como **[!UICONTROL Spike]**).
 
    ![Editar legendas inteligentes](assets/edit-intelligent-captions.png)
 
@@ -128,7 +151,7 @@ Você pode copiar as legendas para uma área de transferência e colá-las em um
 
 ### Fornecer feedback
 
-Você pode fornecer feedback sobre as legendas inteligentes geradas.
+Você pode fornecer feedback sobre as legendas inteligentes geradas (feedback só pode ser fornecido na exibição de legenda expandida).
 
 1. Selecione ![Mais ações](/help/assets/icons/More.svg) na caixa de diálogo Legendas inteligentes.
 
@@ -162,7 +185,7 @@ Os parâmetros a seguir controlam o acesso a legendas inteligentes:
 
 * **Acesso à solução**: o recurso Legendas inteligentes está disponível no Customer Journey Analytics, mas não no Adobe Analytics.
 
-* **Acesso contratual**: se você não puder usar as legendas inteligentes, entre em contato com o administrador da sua organização ou com o representante de conta do Adobe. Antes de usar legendas inteligentes em sua organização, você deve concordar com determinados termos legais relacionados à GenAI.
+* **Acesso contratual**: se você não puder usar as legendas inteligentes, entre em contato com o administrador da sua organização ou com o representante de conta do Adobe (Admin). Antes de usar legendas inteligentes em sua organização, você deve concordar com determinados termos legais relacionados à IA gerativa.
 
 * **Permissões**: no [!UICONTROL Adobe Admin Console], a permissão [!UICONTROL Ferramentas de Relatório] **[!UICONTROL Legendas inteligentes]** determina o acesso. Um [administrador de perfil de produto](https://helpx.adobe.com/br/enterprise/using/manage-product-profiles.html) precisa seguir estas etapas no [!UICONTROL Admin Console]:
    1. Navegue até **[!UICONTROL Admin Console]** > **[!UICONTROL Produtos e serviços]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Perfis de Produtos]**.
