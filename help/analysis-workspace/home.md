@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
-workflow-type: ht
-source-wordcount: '1479'
-ht-degree: 100%
+source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
+workflow-type: tm+mt
+source-wordcount: '1473'
+ht-degree: 99%
 
 ---
 
@@ -17,14 +17,13 @@ ht-degree: 100%
 
 O Analysis Workspace permite criar análises rapidamente para coletar insights e compartilhá-los com outras pessoas. Usando a interface de arrastar e soltar do navegador, você pode criar a análise, adicionar visualizações para dar vida aos dados, preparar um conjunto de dados e compartilhar e agendar [projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md) com quem você escolher.
 
+>[!BEGINSHADEBOX]
 
-+++ Assista a um vídeo que mostra as possibilidades do Analytics Workspace.
+![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Espaço de trabalho de análise](https://video.tv.adobe.com/v/26266/?quality=12){target="_blank"}
 
->[!VIDEO](https://video.tv.adobe.com/v/26266/?quality=12)
+>[!ENDSHADEBOX]
 
-{{videoaa}}
 
-+++
 
 ## Interface
 

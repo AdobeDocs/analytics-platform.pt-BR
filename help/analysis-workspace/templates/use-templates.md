@@ -4,9 +4,9 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 50d46d5b2d663e6f0b3951006db34bff0193417e
+source-git-commit: 91c982ac3a8b2286e3da78d50bdf1f378f75e7ec
 workflow-type: tm+mt
-source-wordcount: '19294'
+source-wordcount: '19288'
 ht-degree: 86%
 
 ---
@@ -31,7 +31,7 @@ As informações a seguir descrevem como acessar e usar modelos na guia [!UICONT
 
 1. No Adobe Analytics, selecione a guia [!UICONTROL **Espaço de trabalho**].
 
-   ![Guias de modelos](assets/view-prebuilt-templates.png)
+   ![Guias de modelos](assets/view-prebuilt-templates-full.png)
 
 1. Na seção [!UICONTROL **Modelos**], selecione uma das guias a seguir:
 
@@ -43,9 +43,9 @@ As informações a seguir descrevem como acessar e usar modelos na guia [!UICONT
 
 1. Use uma das opções a seguir para alterar a exibição dos modelos disponíveis:
 
-   * Escolha se deseja exibir modelos em uma exibição de coluna ou em uma exibição de cartão selecionando o ícone exibição de coluna ![ícone de exibição de coluna](assets/column-view-icon.png) ou o ícone de exibição de cartão ![ícone de exibição de cartão](assets/card-view-icon.png).
+   * Escolha se deseja exibir modelos em uma exibição de coluna ou em uma exibição de cartão selecionando o ícone de exibição de coluna ![ViewColumn](/help/assets/icons/ViewColumn.svg) ou exibição de cartão ![Card](/help/assets/icons/Card.svg).
 
-   * Ao usar o ![ícone de exibição de cartão](assets/card-view-icon.png), escolha entre as seguintes ordens de classificação: **[!UICONTROL Mais usadas recentemente]**, **[!UICONTROL Mais populares]**, **[!UICONTROL Alfabética]**, **[!UICONTROL Categórica]**.
+   * Ao usar a exibição de cartão ![Cartão](/help/assets/icons/Card.svg), escolha entre as seguintes ordens de classificação: **[!UICONTROL Usado mais recentemente]**, **[!UICONTROL Mais popular]**, **[!UICONTROL Alfabético]**, **[!UICONTROL Categórico]**.
 
 1. No campo de pesquisa, comece digitando o nome do template que deseja localizar, em seguida, selecione-o na lista de templates.
 
