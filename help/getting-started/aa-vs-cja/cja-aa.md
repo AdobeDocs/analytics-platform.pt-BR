@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 8c4b42c0046068ba45a47ecd9c7eab2ed89028e5
+source-git-commit: 55da4faa73d708a450274c2b4d44c246ef5feb49
 workflow-type: tm+mt
-source-wordcount: '2386'
-ht-degree: 95%
+source-wordcount: '2417'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,8 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | **Previsão** | A [previsão](/help/analysis-workspace/c-forecast/forecasting.md) é um recurso de IA/ML que inclui uma previsão estatística para dados relacionados a séries temporais com base em dados históricos já existentes no Customer Journey Analytics. As previsões podem aparecer em tabelas de forma livre e visualizações de gráficos de linhas. |
 | **Análise guiada** | A [análise guiada](/help/guided-analysis/overview.md) permite que usuários obtenham dados e insights de alta qualidade sobre a jornada do cliente por meio de fluxos de trabalho guiados, criados com base nos dados entre canais do Customer Journey Analytics. |
 | **Legendas inteligentes** | [As legendas inteligentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) usam o Aprendizado de Máquina avançado e a IA gerativa para fornecer insights valiosos de linguagem natural para visualizações do Workspace. As legendas inteligentes são compatíveis com as seguintes visualizações: Linha, Várias linhas, Barra, Barra horizontal, Rosca, Área, Fluxo e Fallout. |
-| **Uso do produto** | [Uso do produto]https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview() mostra como sua organização utiliza o Customer Journey Analytics. |
+| **Tela de Jornada** | A [tela de Jornada](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) é uma visualização no Analysis Workspace que permite analisar como as pessoas avançam ou saem de uma jornada definida. |
+| **Uso do produto** | [Uso do produto](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview() mostra como sua organização utiliza o Customer Journey Analytics. |
 | **Transformações em tempo do relatório** | As [visualizações de dados](/help/data-views/data-views.md) no Customer Journey Analytics permitem interpretar ainda mais os dados de uma conexão. É possível alterar ou remover dados sem alterar a implementação, usar substrings para manipular dimensões, criar métricas de qualquer valor ou filtrar subeventos. Todas essas transformações são feitas de modo não destrutivo. O Adobe Analytics fornece recursos limitados por meio de conjuntos de relatórios virtuais e duração da sessão personalizada. |
 | **Acesso SQL** | Usando a opção Data Distiller, o Customer Journey Analytics pode remover as limitações de dados coletados no processamento de back-end da Adobe. Você pode modificar seus dados com a SQL, criar valores e conjuntos de dados únicos para sua empresa e continuar a explorar. O Analytics não permite qualquer tipo de acesso SQL a seus dados. |
 | **Compilação** | [Compilação](/help/stitching/overview.md) é um recurso eficiente que eleva a adequação de um conjunto de dados de evento para análise entre canais. A análise entre canais é um dos casos de uso principais que o Customer Journey Analytics pode lidar, permitindo combinar e executar relatórios em vários conjuntos de dados de diferentes canais com base em um identificador comum (ID de pessoa). |
@@ -46,6 +47,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | Recurso do Adobe Analytics | Observações sobre o suporte ao CJA |
 | --- | --- |
 | **Detecção de anomalias** | Suporte completo |
+| **Transferência de ativos** | Suporte completo |
 | **Attribution IQ** | Suporte completo |
 | **Detecção de bots** | [Suporte completo](https://experienceleague.adobe.com/docs/experience-platform/datastreams/bot-detection.html?lang=pt-BR) |
 | **Métricas calculadas** | Suporte completo. Nenhuma métrica calculada existente no Analysis Workspace tradicional é transferida para o Customer Journey Analytics. |
