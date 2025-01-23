@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 532f3a30e65d715f5b5b4caea85885a13d82641c
-workflow-type: ht
-source-wordcount: '2319'
-ht-degree: 100%
+source-git-commit: 8c4b42c0046068ba45a47ecd9c7eab2ed89028e5
+workflow-type: tm+mt
+source-wordcount: '2386'
+ht-degree: 95%
 
 ---
 
@@ -24,6 +24,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | --- | --- |
 | **Capacidade de combinar conjuntos de dados (como conjuntos de relatórios do Adobe Analytics)** | O Customer Journey Analytics permite [combinar dados](/help/connections/combined-dataset.md) de vários conjuntos de relatórios como se fossem um único conjunto de relatórios no Adobe Analytics. |
 | **Acomodação de qualquer tipo de dados** | O Customer Journey Analytics possui a habilidade da Experience Platform de armazenar toda espécie de esquemas de dados e tipos. Com o [Modelo de dados de experiência (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR), os dados podem ser representados e organizados uniformemente, para que estejam prontos para combinação e exploração. O Adobe Analytics foca predominantemente em dados de análise móveis e da Web com alguns recursos de [importação de dados](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=pt-BR). |
+| **Extensão BI** | A [Extensão BI](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) permite conectar o CJA diretamente às ferramentas de visualização BI populares, como o PowerBI ou o Tableau. Ao usar essa extensão, você pode fazer com que seus relatórios BI correspondam exatamente ao que você vê no Analysis Workspace e em outras interfaces de relatórios do CJA. Essa é uma maneira muito mais fácil de obter relatórios BI para o CJA sem a necessidade de recriar relatórios/métricas de dados brutos. |
 | **Análise entre dispositivos** | O Customer Journey Analytics permite a combinação contínua de conjuntos de dados específicos de dispositivos a partir de sessões autenticadas e não autenticadas. O Customer Journey Analytics oferece o preenchimento retroativo de dados históricos para dispositivos conhecidos. No Adobe Analytics, esse recurso é limitado a um único conjunto de relatórios e ao uso de um gráfico de dispositivo. |
 | **Aprimoramentos de dimensão** | O Customer Journey Analytics oferece maior flexibilidade ao usar dimensões: <ul><li>**Dimensões personalizadas baseadas em números**: [crie suas próprias dimensões baseadas em números em uma visualização de dados](/help/data-views/create-dataview.md#components).</li><li>**Classificar dimensões com base em strings**: [classifique as dimensões baseadas em strings em ordem alfabética em uma tabela de forma livre.](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#sort-tables) </li></ul><p>No Adobe Analytics, apenas algumas dimensões numéricas integradas estavam disponíveis e não era possível classificar por dimensões com base em string.</p> |
 | **Campos derivados** | [Campos derivados](/help/data-views/derived-fields/derived-fields.md) permitem transformações dos seus dados no momento do relatório. Os dados podem ser combinados, corrigidos ou criados em um instante e essas transformações se aplicam retroativamente a todos os relatórios. |
@@ -31,11 +32,12 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | **Análise de experimentação** | O Customer Journey Analytics pode [avaliar o aumento e a confiança de qualquer experimento](/help/analysis-workspace/c-panels/experimentation.md) de qualquer fonte de dados definida como parte de uma conexão. Essa avaliação permite compreender as relações de causa e efeito entre as interações do cliente em qualquer canal. O Analytics está limitado à análise de experimentação por meio do A4T. |
 | **Previsão** | A [previsão](/help/analysis-workspace/c-forecast/forecasting.md) é um recurso de IA/ML que inclui uma previsão estatística para dados relacionados a séries temporais com base em dados históricos já existentes no Customer Journey Analytics. As previsões podem aparecer em tabelas de forma livre e visualizações de gráficos de linhas. |
 | **Análise guiada** | A [análise guiada](/help/guided-analysis/overview.md) permite que usuários obtenham dados e insights de alta qualidade sobre a jornada do cliente por meio de fluxos de trabalho guiados, criados com base nos dados entre canais do Customer Journey Analytics. |
-| **Legendas inteligentes** | As legendas inteligentes usam aprendizado de máquina avançado e IA generativa para fornecer insights valiosos de linguagem natural para visualizações do Workspace. A versão inicial fornece insights gerados automaticamente para a visualização de [Linha](/help/analysis-workspace/visualizations/line.md). |
+| **Legendas inteligentes** | [As legendas inteligentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions) usam o Aprendizado de Máquina avançado e a IA gerativa para fornecer insights valiosos de linguagem natural para visualizações do Workspace. As legendas inteligentes são compatíveis com as seguintes visualizações: Linha, Várias linhas, Barra, Barra horizontal, Rosca, Área, Fluxo e Fallout. |
+| **Uso do produto** | [Uso do produto]https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview() mostra como sua organização utiliza o Customer Journey Analytics. |
 | **Transformações em tempo do relatório** | As [visualizações de dados](/help/data-views/data-views.md) no Customer Journey Analytics permitem interpretar ainda mais os dados de uma conexão. É possível alterar ou remover dados sem alterar a implementação, usar substrings para manipular dimensões, criar métricas de qualquer valor ou filtrar subeventos. Todas essas transformações são feitas de modo não destrutivo. O Adobe Analytics fornece recursos limitados por meio de conjuntos de relatórios virtuais e duração da sessão personalizada. |
-| **Extensão BI** | A [Extensão BI](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) permite conectar o CJA diretamente às ferramentas de visualização BI populares, como o PowerBI ou o Tableau. Ao usar essa extensão, você pode fazer com que seus relatórios BI correspondam exatamente ao que você vê no Analysis Workspace e em outras interfaces de relatórios do CJA. Essa é uma maneira muito mais fácil de obter relatórios BI para o CJA sem a necessidade de recriar relatórios/métricas de dados brutos. |
 | **Acesso SQL** | Usando a opção Data Distiller, o Customer Journey Analytics pode remover as limitações de dados coletados no processamento de back-end da Adobe. Você pode modificar seus dados com a SQL, criar valores e conjuntos de dados únicos para sua empresa e continuar a explorar. O Analytics não permite qualquer tipo de acesso SQL a seus dados. |
 | **Compilação** | [Compilação](/help/stitching/overview.md) é um recurso eficiente que eleva a adequação de um conjunto de dados de evento para análise entre canais. A análise entre canais é um dos casos de uso principais que o Customer Journey Analytics pode lidar, permitindo combinar e executar relatórios em vários conjuntos de dados de diferentes canais com base em um identificador comum (ID de pessoa). |
+| **Modelos no Adobe Journey Optimizer** | Personalize a nova interface de relatórios no Adobe Journey Optimizer criando ou editando um [modelo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en) no Customer Journey Analytics e salvando o modelo a ser usado na página Relatórios no Journey Optimizer. |
 | **Dimensões e métricas ilimitadas de cliente** | As dimensões do Customer Journey Analytics são ilimitadas; os valores podem ser números, textos, objetos, listas ou uma combinação desses elementos. As dimensões podem ser aninhadas ou hierárquicas. <br/>Em comparação, o Adobe Analytics permite até 75 props e 250 eVars, no máximo. |
 | **Valores únicos ilimitados** | O Customer Journey Analytics oferece suporte a valores únicos ilimitados ou itens de dimensão que podem ser relatados em uma única dimensão.<p>Não há [limites de cardinalidade em uma dimensão](/help/components/dimensions/high-cardinality.md), permitindo que qualquer valor único seja exibido e contado.</p><p>Essa abordagem remove limitações de relatórios e análises que podem existir com implementações do Adobe Analytics em larga escala, resultando em rótulos de [!UICONTROL Tráfego baixo].</p><p>No Customer Journey Analytics, é possível ver um rótulo [!UICONTROL Únicos excedidos], mas ocorre com muito menos frequência e pode ser mitigado aplicando um filtro ou segmento aos dados.</p> |
 
@@ -64,6 +66,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | **Exportação de PDF** | Suporte completo |
 | **Curadoria de projeto** | Suporte completo |
 | **Vinculação de projetos** | Suporte completo |
+| **Modelos de produto** | Inclui [modelos pré-criados](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates) e [modelos de empresa](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates#access-a-company-template). |
 | **Processamento de tempo do relatório** | Suporte completo: o Customer Journey Analytics depende exclusivamente do processamento de tempo do relatório. |
 | **Acesso à API de relatórios** | Suporte completo: disponível por meio da [API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | **Relatórios/projetos agendados** | Suporte completo |
@@ -118,7 +121,6 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | Recurso | Notas |
 | --- | --- |
 | **Análise de contribuição** | Suporte planejado. |
-| **Modelos de projeto** | Suporte planejado. |
 | **Relatório em tempo real** | Suporte planejado. |
 | **Segment IQ** | Suporte planejado. |
 | **Fontes de dados de IDs de transação** | Suporte planejado. |
