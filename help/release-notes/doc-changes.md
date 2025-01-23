@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c5e5963e6dc4d97de012f825bbea4445cc72d622
-workflow-type: ht
-source-wordcount: '4256'
-ht-degree: 100%
+source-git-commit: c2e7b0595a719faa751e3cb39668006db0d89d48
+workflow-type: tm+mt
+source-wordcount: '4402'
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | --- | --- |
 | **Janeiro de 2025** |  |
 | Métricas de uso | Atualização da documentação sobre a interface de [métricas de uso](/help/connections/manage-connections.md#usage) aprimorada. |
-
+| Uso do produto | [Uso do produto](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/tools/product-usage/usage-overview) mostra como sua organização utiliza o Customer Journey Analytics. |
+| Análise guiada | Atualizada a documentação com a disponibilidade da [Análise Guiada](/help/guided-analysis/overview.md) a partir da Análise Guiada. |
 
 ## 2024
 
@@ -31,15 +32,19 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Casos de uso da extensão do BI | Documentação de vários [casos de uso da extensão do BI](/help/use-cases/data-views/bi-extension-usecases.md) para ferramentas do BI, como o Power BI Desktop e o Tableau Desktop. |
 | Solicitações de compilação e privacidade | Adicionado aviso sobre [alterações futuras no processo de descompilação](/help/stitching/faq.md#frequently-asked-questions) que são resultado de solicitações de privacidade. |
 | **Outubro de 2024** | |
+| Jornada visualização da tela | A [tela de Jornada](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) é uma visualização no Analysis Workspace que permite analisar como as pessoas avançam ou saem de uma jornada definida. |
+| Transferência de ativos | Permite [transferir a propriedade](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/asset-transfer/transfer-assets) de componentes como projetos, filtros e métricas calculadas para outros usuários, a fim de garantir a continuidade e o acesso apropriado. |
 | Interface de uso aprimorada | Atualização do artigo sobre a interface aprimorada para mostrar o [uso de linhas assimiladas e relatáveis em todas as conexões](/help/connections/manage-connections.md#usage) |
 | Dispositivos compartilhados | Adição de um [artigo de caso de uso](/help/use-cases/stitching/shared-devices.md) que fornece contexto sobre dispositivos compartilhados, sobre como manipular e mitigar dados de dispositivos compartilhados usando a compilação e sobre como entender a exposição de dispositivos compartilhados em seus dados usando o Serviço de consulta. |
 | Novas informações sobre fatores de solicitação no desempenho do Analysis Workspace | Uma nova seção de [Fatores de solicitação](/help/technotes/optimizing-performance.md#request-factors) no artigo [Otimizar o desempenho do Analysis Workspace](/help/technotes/optimizing-performance.md) explica como as solicitações são processadas e os vários fatores que influenciam os tempos de processamento. |
 | Espaço de trabalho e componentes | Atualização da documentação sobre projetos do Analysis Workspace (projetos, visualizações e painéis) e componentes (anotações, dimensões, métricas (calculadas), filtros, intervalos de datas, alertas, projetos e públicos-alvo agendados). |
 | Análise guiada | Atualização da documentação com a disponibilidade da [Análise guiada](/help/guided-analysis/overview.md) no Analysis Workspace. |
+| Atualização da documentação do Audience | Ao [criar um público-alvo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish?lang=en) a partir de uma visualização no Analysis Workspace, os filtros de painel e de coluna agora são incluídos como critérios adicionais. |
 | **Setembro de 2024** | |
 | Atualização de dados de resumo | Atualização de artigos de dados de resumo com informações sobre como usar corretamente [dados de pesquisa](/help/data-views/summary-data.md#lookup-data) ao gerar relatórios sobre dados de resumo. |
 | Atualização de extensão do BI | Adição da seção [padrões e limitações](/help/data-views/bi-extension.md#defaults-and-limitations) à documentação de extensão do BI. |
 | Alertas | Adição de documentação para a funcionalidade [Alertas](/help/components/c-intelligent-alerts/intelligent-alerts.md), agora disponível no Customer Journey Analytics. |
+| Informações adicionais na coluna &quot;Usado em&quot; no gerenciador de métricas calculadas e no gerenciador de filtros | A coluna &quot;Usado em&quot; no [gerenciador de métrica calculada](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-workflow/cm-manager?lang=en) e no [gerenciador de filtros](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-filters/manage-filters?lang=en) contém as seguintes novas áreas de relatório: componentes Report Builder e Ad-hoc |
 | **Agosto de 2024** | |
 | Um exemplo de projeto B2B | Adição de um [caso de uso](/help/use-cases/b2b/example.md) documentando como definir, configurar e relatar dados B2B baseados em nível de perfil (pessoa) no Customer Journey Analytics usando a nova funcionalidade [Transformar conjuntos de dados para pesquisas B2B](/help/connections/transform-datasets-b2b-lookups.md). |
 | Casos de uso de exportação de dados atualizados | Adição de exemplos de consulta mais detalhados ao [Serviço de consulta (Destilador de dados) e Conjuntos de dados de exportação](/help/use-cases/data-export/queryservice-export-datasets.md) para ilustrar como aplicar corretamente a atribuição entre sessões usando uma janela de retrospectiva. |
