@@ -4,10 +4,10 @@ description: Saiba como visualizar e gerenciar logs de auditoria de Customer Jou
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 66%
+source-wordcount: '932'
+ht-degree: 60%
 
 ---
 
@@ -63,22 +63,22 @@ Clique duas vezes no botão info (i) ao lado de uma descrição.
 Os seguintes itens são mostrados:
 
 * **[!UICONTROL Nome da Ação]**: a ação foi executada. Os valores possíveis incluem:
-   * API_REQUEST
-   * APROVAR
-   * CRIAR
-   * DELETE
-   * EDITAR
-   * EMBARGO
-   * EXPORTAR
-   * ORG_CHANGE
-   * ATUALIZAR
-   * SHARE
-   * TRANSFERIR
-   * CANCELAR APROVAÇÃO
-   * CANCELAR COMPARTILHAMENTO
+   * API_REQUEST: qualquer ação aciona uma solicitação de API de back-end. Detalhes são exibidos sobre a solicitação da API.
+   * APPROVE: uma ação &quot;approval&quot; foi executada.
+   * CRIAR: uma ação &quot;criar&quot; foi executada.
+   * DELETE: Uma ação de &quot;exclusão&quot; foi executada.
+   * EDIT: uma ação de &quot;edição&quot; foi executada.
+   * EMBARGO:
+   * EXPORTAÇÃO: uma ação &quot;exportar&quot; foi executada.
+   * ORG_CHANGE: Uma ação de alteração da organização foi executada.
+   * ATUALIZAR: uma ação de &quot;atualização&quot; foi executada.
+   * COMPARTILHAR: uma ação de &quot;compartilhamento&quot; foi executada.
+   * TRANSFERÊNCIA: uma ação de transferência foi executada.
+   * UNAPPROVE: uma ação &quot;unapprove&quot; foi executada.
+   * UNSHARE: Uma ação de &quot;cancelar compartilhamento&quot; foi executada.
 * **[!UICONTROL Data de criação]**: a data e a hora em que a ação foi executada.
 * **[!UICONTROL Descrição]**: um resumo da ação.
-* **[!UICONTROL Nome do Usuário]**: o usuário que executou a ação.
+* **[!UICONTROL Nome do Usuário]**: o usuário que executou a ação. Às vezes, o nome de usuário pode estar ausente. Considere usar o recurso [Uso do produto](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/tools/product-usage/usage-overview), pois ele sempre inclui o nome de usuário de logon.
 * **[!UICONTROL Email]**: o endereço de email do usuário que executou a ação.
 * **[!UICONTROL Nome do Componente]**: o componente no qual o usuário executou uma ação.
 * **[!UICONTROL Tipo de componente]**: o tipo de componente. Os valores possíveis incluem:
@@ -94,7 +94,7 @@ Os seguintes itens são mostrados:
    * FILTRO
    * IMS_ORG
    * DISPOSITIVO MÓVEL
-   * PROJETO
+   * PROJETO (Workspace)
    * RELATÓRIO
    * SCHEDULED_PROJECT
    * USUÁRIO
