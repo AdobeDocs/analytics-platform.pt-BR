@@ -7,7 +7,7 @@ role: User
 source-git-commit: 763f2849afee98e704a9f231ed7e203dd3be73f6
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_area"
->title="Legendas inteligentes: Área"
->abstract="Gere insights de linguagem natural para entender e interpretar mais facilmente os dados dessa visualização."
+>title="Legendas inteligentes: área"
+>abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_bar"
 >title="Legendas inteligentes: barra"
->abstract="Gere insights de linguagem natural para entender e interpretar mais facilmente os dados dessa visualização."
+>abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -35,8 +35,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_donut"
->title="Legendas inteligentes: Rosca"
->abstract="Gere insights de linguagem natural para entender e interpretar mais facilmente os dados dessa visualização."
+>title="Legendas inteligentes: rosquinha"
+>abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_horizontalbar"
 >title="Legendas inteligentes: barra horizontal"
->abstract="Gere insights de linguagem natural para entender e interpretar mais facilmente os dados dessa visualização."
+>abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -54,7 +54,7 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_line"
 >title="Legendas inteligentes: linha"
->abstract="Gere insights de linguagem natural para entender e interpretar mais facilmente os dados dessa visualização."
+>abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -62,8 +62,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_fallout"
->title="Legendas inteligentes: Fallout"
->abstract="Gere insights de linguagem natural para entender e interpretar mais facilmente os dados dessa visualização."
+>title="Legendas inteligentes: fallout"
+>abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,8 +71,8 @@ ht-degree: 16%
 
 >[!CONTEXTUALHELP]
 >id="workspace_intelligentcaptions_flow"
->title="Legendas inteligentes: Fluxo"
->abstract="Gere insights de linguagem natural para entender e interpretar mais facilmente os dados dessa visualização."
+>title="Legendas inteligentes: fluxo"
+>abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
 
 <!-- markdownlint-enable MD034 -->
 
