@@ -2,7 +2,7 @@
 title: Configurações dos dados de uso do produto
 description: Ativar, desativar ou definir as configurações de uso do produto.
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 23%
@@ -10,8 +10,6 @@ ht-degree: 23%
 ---
 
 # Configurações dos dados de uso do produto {#product-usage-data-settings}
-
-{{release-limited-testing}}
 
 A página _Configurações de dados_ lida com a configuração de uso do seu produto. Você pode usar esta página para ativar ou desativar o uso do produto para sua organização. Você também pode configurar em qual sandbox da Adobe Experience Platform o conjunto de dados será criado e substituir a janela de retenção de dados, se desejado. Ela só é visível para administradores de produtos.
 

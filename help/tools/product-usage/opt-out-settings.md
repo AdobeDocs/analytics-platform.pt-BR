@@ -2,7 +2,7 @@
 title: Configurações de recusa de uso do produto
 description: Gerencie configurações de recusa para usuários individuais na organização.
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 11%
@@ -10,8 +10,6 @@ ht-degree: 11%
 ---
 
 # Configurações de recusa de uso do produto {#product-usage-opt-out-settings}
-
-{{release-limited-testing}}
 
 A página _Configurações de recusa_ permite excluir ou incluir novamente os usuários em sua organização do rastreamento de uso do produto. Ela só é visível para administradores de produtos.
 
