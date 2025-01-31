@@ -4,22 +4,21 @@ title: Configurações de linha
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 347ab5b400fb8a5fddc02878f779be7112d693ab
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 15%
+source-wordcount: '1026'
+ht-degree: 14%
 
 ---
 
 # Configurações de linha
 
-+++ Assista a uma demonstração em vídeo dessa funcionalidade.
 
->[!VIDEO](https://video.tv.adobe.com/v/40382/?quality=12)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de Forma livre](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
-+++
+>[!ENDSHADEBOX]
 
 As configurações de linha variam de acordo com qual componente foi arrastado para a tabela. Para acessar as configurações de linha da tabela, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]** próximo a uma dimensão, um filtro, uma métrica, um período ou um detalhamento em cada um desses objetos.
 

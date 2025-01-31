@@ -4,9 +4,9 @@ title: Visualização de gráficos de combinação
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '603'
 ht-degree: 44%
 
 ---
@@ -30,7 +30,7 @@ _Este artigo documenta a Visualização de combinação em_ ![CustomerJourneyAna
 >[!ENDSHADEBOX]
 
 
-A visualização ![Comment](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** facilita a criação rápida de uma visualização de comparação sem precisar criar uma tabela primeiro. Você pode visualizar facilmente as tendências em seus dados em uma combinação de linha/barra.
+A visualização ![Combo chart](/help/assets/icons/ComboChart.svg) **[!UICONTROL Combo]** facilita a criação rápida de uma visualização de comparação sem precisar criar uma tabela primeiro. Você pode visualizar facilmente as tendências em seus dados em uma combinação de linha/barra.
 
 Use uma [!UICONTROL Combinação] para:
 

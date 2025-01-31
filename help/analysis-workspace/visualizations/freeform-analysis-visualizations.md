@@ -5,7 +5,7 @@ title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '1616'
 ht-degree: 17%
@@ -126,8 +126,6 @@ As configurações de visualização disponíveis dependem do tipo de visualiza�
 | **[!UICONTROL Mostrar mín]** | Mostrar o valor mínimo na visualização. |
 | **[!UICONTROL Mostrar máximo]** | Mostrar o valor máximo na visualização. |
 | **[!UICONTROL Mostrar linha de tendência]** | Mostrar uma linha de tendência na visualização. Quando selecionada, você pode selecionar o tipo de linha de tendência no menu suspenso. |
-
-
 
 É possível personalizar as configurações de todas as visualizações criadas. Para obter mais informações, consulte [Preferências do usuário](/help/analysis-workspace/user-preferences.md).
 

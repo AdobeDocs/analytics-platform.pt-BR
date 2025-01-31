@@ -4,14 +4,26 @@ title: Número do resumo e alteração do resumo
 feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 48%
+source-wordcount: '510'
+ht-degree: 47%
 
 ---
 
 # Número do resumo e alteração do resumo
+
+>[!BEGINSHADEBOX]
+
+_Este artigo documenta as visualizações Número do resumo e Alteração do resumo em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Número do resumo e alteração do resumo](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Número do resumo e visualização de alteração do resumo](https://video.tv.adobe.com/v/335564/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
 
 ## Número do resumo {#summary-number}
 
@@ -23,14 +35,6 @@ ht-degree: 48%
 >abstract="Crie uma visualização que mostre totais e subtotais."
 
 <!-- markdownlint-enable MD034 -->
-
-
->[!BEGINSHADEBOX]
-
-_Este artigo documenta as visualizações Número do resumo e Alteração do resumo em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Número do resumo e alteração do resumo](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
-
->[!ENDSHADEBOX]
-
 
 Use a visualização ![Resumir](/help/assets/icons/123.svg) **[!UICONTROL Número do resumo]** para realçar um número grande que seja importante em um projeto. Essa visualização se comporta das seguintes maneiras, usando a fonte de dados associada:
 

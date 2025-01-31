@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: 6149d2cf23eb31f0aaa37546d3150017e155053c
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '1792'
-ht-degree: 66%
+source-wordcount: '1813'
+ht-degree: 65%
 
 ---
 
@@ -40,7 +40,12 @@ Cada dimensão adicionada ao bloco será mostrada em uma lista suspensa na exibi
 
 Os slides de detalhes personalizados permitem ter ainda mais controle sobre quais informações você compartilha com seu público.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410002)
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Exibições de detalhes personalizadas](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
+
 
 Você pode modificar o layout de cada slide de detalhes e adicionar texto para explicar melhor o que o usuário final pode ver nos dados. Também é possível alterar o tipo de gráfico usando o menu suspenso.
 
@@ -78,7 +83,13 @@ Por exemplo, se você se concentrar no tráfego da Web, sua métrica mais import
 
 Assista ao vídeo para saber mais sobre como criar histórias de dados em projetos de cartões de pontuação móveis no Analysis Workspace.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on)
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histórias de dados para projetos de cartão de pontuação para dispositivos móveis](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
+
 
 **Para criar uma história de dados** {#data-story-create}
 

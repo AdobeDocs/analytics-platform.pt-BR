@@ -4,9 +4,9 @@ description: Como usar e interpretar o painel Tempo gasto com a reprodução de 
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1160'
 ht-degree: 55%
 
 ---
@@ -57,11 +57,15 @@ O tempo gasto com a reprodução pode ajudá-lo a entender:
 
 * Onde ocorreram quedas.
 
-+++ Assista a uma demonstração em vídeo dessa funcionalidade.
 
->[!VIDEO](https://video.tv.adobe.com/v/338699)
+>[!BEGINSHADEBOX]
 
-+++
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Tempo gasto com a reprodução da mídia](https://video.tv.adobe.com/v/338699){target="_blank"} para ver um vídeo de demonstração.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Usar
 

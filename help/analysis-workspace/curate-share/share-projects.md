@@ -5,10 +5,10 @@ title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '2042'
-ht-degree: 64%
+source-wordcount: '2053'
+ht-degree: 62%
 
 ---
 
@@ -40,13 +40,15 @@ ht-degree: 64%
 
 Qualquer [preparação](curate.md) feita antes do compartilhamento será refletida quando os destinatários abrirem o projeto.
 
-+++ Assista a um vídeo sobre como usar o compartilhamento de projetos.
 
->[!VIDEO](https://video.tv.adobe.com/v/36207/?quality=12)
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhamento de projetos no Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Compartilhar com usuários e grupos do Customer Journey Analytics em sua organização {#Add}
 
@@ -153,9 +155,13 @@ Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-sha
 >
 >* O recurso [!UICONTROL Compartilhar com qualquer pessoa] está bloqueado para licenças do Healthcare Shield e do Privacy &amp; Security Shield.
 
-A demonstração em vídeo a seguir e a documentação que a acompanha descrevem as opções associadas ao compartilhamento de um link com qualquer pessoa:
 
->[!VIDEO](https://video.tv.adobe.com/v/3420093/?learn=on)
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar com qualquer pessoa](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
+
 
 Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
@@ -203,9 +209,16 @@ Quando alguém compartilha um projeto com você compartilhando um link (da [guia
 
 ## Compartilhar componentes integrados
 
-Veja um vídeo sobre este tópico:
+Você pode compartilhar os componentes integrados que fazem parte do seu projeto.
 
->[!VIDEO](https://video.tv.adobe.com/v/24713/?quality=12)
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar componentes inseridos no Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Perguntas frequentes {#FAQs}
 

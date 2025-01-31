@@ -4,10 +4,10 @@ title: Filtros rápidos
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 4ce1b22cce3416b8a82e5c56e605475ae6c27d88
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1170'
+ht-degree: 2%
 
 ---
 
@@ -16,12 +16,13 @@ ht-degree: 0%
 Filtros rápidos permitem explorar dados em um projeto do Workspace rapidamente, sem a necessidade de criar um filtro no [Construtor de filtros](/help/components/filters/create-filters.md).
 
 
-+++ O vídeo a seguir demonstra como usar filtros rápidos.
 
->[!VIDEO](https://video.tv.adobe.com/v/341466/?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos rápidos no Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
-+++
+>[!ENDSHADEBOX]
+
 
 Quando quiser usar filtros rápidos, observe que:
 

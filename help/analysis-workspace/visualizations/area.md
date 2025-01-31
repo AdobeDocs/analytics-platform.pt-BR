@@ -4,7 +4,7 @@ title: Área e área empilhada
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 5655c951422c4abbd7bd12686027968efea5c6ea
+source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 25%
@@ -51,8 +51,6 @@ A visualização de ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL
 >abstract="Crie uma visualização de gráfico de área para representar o empilhamento de várias métricas."
 
 <!-- markdownlint-enable MD034 -->
-
-
 
 
 A visualização ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Area stacked]** é como uma Área, mas cada série começa no topo da série anterior.

@@ -4,10 +4,10 @@ title: Gráfico em marcadores
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 58%
+source-wordcount: '263'
+ht-degree: 56%
 
 ---
 
@@ -39,9 +39,18 @@ _Este artigo documenta a visualização de Marcador em_ ![CustomerJourneyAnalyti
 
 A visualização do ![GraphBullet](/help/assets/icons/GraphBullet.svg) **[!UICONTROL Bullet]** mostra como uma métrica se compara a, ou se mede em relação a, intervalos de desempenho (metas).
 
-![](assets/bullet.png)
+![Visualização de gráfico de marcadores](assets/bullet.png)
 
 O gráfico de marcadores apresenta uma só medida principal (por exemplo, receita acumulada no ano atual) e permite que você informe intervalos qualitativos de desempenho (por exemplo, em comparação com uma receita alvo). Você pode especificar intervalos de meta altos, médios e baixos. Você pode especificar intervalos de meta em ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]**.
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de gráfico de marcadores](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
 
 ## Configurações 
 

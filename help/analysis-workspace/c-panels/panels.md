@@ -4,10 +4,10 @@ title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: e61368765dde35e6d9beed7713a7a28db0c2af98
-workflow-type: ht
-source-wordcount: '2159'
-ht-degree: 100%
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+workflow-type: tm+mt
+source-wordcount: '2129'
+ht-degree: 99%
 
 ---
 
@@ -153,16 +153,13 @@ Para obter mais informações, consulte [Filtros rápidos](/help/components/filt
 
 ### Filtros suspensos
 
->[!VIDEO](https://video.tv.adobe.com/v/23877?quality=12&learn=on)
+>[!BEGINSHADEBOX]
 
-Este vídeo demonstra a funcionalidade usando o Adobe Analytics. No entanto, essa funcionalidade está disponível de forma semelhante no Customer Journey Analytics. Esteja ciente das seguintes diferenças na terminologia.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtros suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
-| Adobe Analytics | Customer Journey Analytics |
-| --- | --- |
-| Segmentos | Filtros |
-| Visitante | Pessoa |
-| Visita | Sessão |
-| Ocorrência | Evento |
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 
 #### Filtros suspensos estáticos

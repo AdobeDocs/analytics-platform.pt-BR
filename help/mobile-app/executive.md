@@ -5,18 +5,23 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 75%
+source-wordcount: '1299'
+ht-degree: 73%
 
 ---
 
 # Guia de início rápido do usuário executivo
 
-As informações a seguir fornecem aos usuários executivos informações sobre as práticas recomendadas para usar e exibir painéis do Analytics. Assista a um vídeo demonstrando essas informações:
+As informações a seguir fornecem aos usuários executivos informações sobre as práticas recomendadas para usar e exibir painéis do Analytics.
 
->[!VIDEO](https://video.tv.adobe.com/v/343460/)
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Auxiliar executivos a acessar cartões de pontuação móveis](https://video.tv.adobe.com/v/343460/){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
 
 Este manual tem como objetivo ajudar usuários executivos a ler e interpretar cartões de pontuação nos painéis do Analytics. O aplicativo permite que os usuários executivos visualizem uma ampla renderização de importantes dados resumidos de maneira rápida e fácil em seus próprios dispositivos móveis.
 

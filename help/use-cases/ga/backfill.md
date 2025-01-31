@@ -1,19 +1,19 @@
 ---
-title: Assimilar dados históricos de Google Analytics
+title: Assimilar dados históricos do Google Analytics
 description: Explica como usar o Adobe Customer Journey Analytics para assimilar dados do Google Analytics na Adobe Experience Platform.
 exl-id: 314378c5-b1d7-4c74-a241-786198fa0218
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 88%
+source-wordcount: '646'
+ht-degree: 86%
 
 ---
 
 
-# Assimilar dados históricos de Google Analytics
+# Assimilar dados históricos do Google Analytics
 
 Esta página foca em como assimilar seus dados históricos do Google Analytics na Adobe Experience Platform como um conjunto de dados, permitindo referenciar esse conjunto de dados em uma visualização de dados no Customer Journey Analytics. Você pode combinar as etapas desta página com a [Configuração de uma implementação em tempo real do Google Analytics](streaming.md), que gera um conjunto de dados recorrente. Combine esse conjunto de dados histórico com o seu conjunto de dados da implementação atual para obter uma visualização contínua dos dados no Customer Journey Analytics com dados atuais e preenchidos retroativamente.
 
@@ -40,7 +40,13 @@ A estrutura de dados nas propriedades do Universal Analytics é diferente da est
 
 As propriedades do Universal Analytics armazenam cada registro em seus dados como uma sessão de usuário, em vez de eventos individuais. É necessária uma consulta SQL para converter os dados do Universal Analytics em um formato compatível com a Adobe Experience Platform. Aplique a função `UNNEST` ao campo `hits` no esquema do GA, e salve-o como uma tabela do BigQuery.
 
->[!VIDEO](https://video.tv.adobe.com/v/332634)
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [De Google Analytics para Customer Journey Analytics - BigQuery](https://video.tv.adobe.com/v/332634?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
+
 
 ```sql
 SELECT
@@ -74,7 +80,13 @@ Na Google Cloud Platform, navegue até **Exportar > Exportar para o GCS**. Quand
 1. Na Adobe Experience Platform, selecione **[!UICONTROL Fontes]** à esquerda.
 1. No Catálogo, localize a opção **[!UICONTROL Google Cloud Storage]**. Clique em **[!UICONTROL Adicionar dados]**.
 
->[!VIDEO](https://video.tv.adobe.com/v/332676)
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Importar dados de Google Analytics para o Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >

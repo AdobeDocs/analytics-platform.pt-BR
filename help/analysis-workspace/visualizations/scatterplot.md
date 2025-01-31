@@ -4,10 +4,10 @@ description: Uma visualização que mostra a relação entre até três métrica
 feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 67%
+source-wordcount: '177'
+ht-degree: 57%
 
 ---
 
@@ -30,7 +30,7 @@ _Este artigo documenta a visualização de Dispersão em_ ![CustomerJourneyAnaly
 >[!ENDSHADEBOX]
 
 
-A visualização ![DispersãoGráfico](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Dispersão]** mostra a relação entre itens de dimensão e até três métricas. Ela requer três componentes e aceita a visualização de até quatro componentes.
+A visualização ![DispersãoGráfico](/help/assets/icons/GraphScatter.svg) **[!UICONTROL Dispersão]** mostra a relação entre itens de dimensão e até três métricas. A visualização requer três componentes e é compatível com a visualização de até quatro componentes.
 
 * O componente de linha (geralmente uma dimensão) representa cada ponto no gráfico. Linhas diferentes são exibidas como pontos coloridos distintos.
 * A coluna mais à esquerda (geralmente uma métrica) representa a posição do ponto no eixo Y (vertical).
@@ -39,6 +39,14 @@ A visualização ![DispersãoGráfico](/help/assets/icons/GraphScatter.svg) **[!
 * Todas as colunas subsequentes em uma tabela de forma livre são ignoradas pela visualização do gráfico de dispersão.
 
 ![Exemplo de gráfico de dispersão mostrando vários itens de dimensão ](assets/scatter.png)
+
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Scatterplot visualization](https://video.tv.adobe.com/v/334459/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
+
 
 >[!MORELIKETHIS]
 >

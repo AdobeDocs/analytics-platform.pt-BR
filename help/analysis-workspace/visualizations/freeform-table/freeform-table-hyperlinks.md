@@ -4,9 +4,9 @@ description: Saiba como criar hiperlinks para itens de dimensão em uma tabela d
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1607'
 ht-degree: 1%
 
 ---
@@ -17,19 +17,19 @@ Você pode criar hiperlinks para itens de dimensão para torná-los clicáveis e
 
 Essa funcionalidade é particularmente útil ao criar hiperlinks para os seguintes tipos de itens de dimensão:
 
-* Itens Dimension que têm valores de URL (por exemplo, uma dimensão URL de página)
+* Itens Dimension que têm valores de URL (por exemplo, uma dimensão URL de página).
 
-* Itens Dimension que contêm detalhamentos que têm valores de URL (por exemplo, uma dimensão Nome da página que tem um detalhamento de uma dimensão URL da página)
+* Itens Dimension que contêm detalhamentos que têm valores de URL (por exemplo, uma dimensão Nome da página que tem um detalhamento de uma dimensão URL da página).
 
-* Itens de Dimension ou detalhamentos que têm valores que são parte de um URL (por exemplo, uma dimensão Nome de página que é parte de um URL)
+* Itens de Dimension ou detalhamentos que têm valores que são parte de um URL (por exemplo, uma dimensão Nome de página que é parte de um URL).
 
-+++ Assista a uma demonstração em vídeo dessa funcionalidade.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430411/?learn=on)
+>[!BEGINSHADEBOX]
 
-{{videoaa}}
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar hiperlinks em uma tabela de forma livre](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Criar hiperlinks
 

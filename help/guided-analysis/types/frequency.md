@@ -5,7 +5,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 9%
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 A análise de ![Frequência](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequência]** agrupa os dados do evento de acordo com a frequência com que os eventos ocorrem em seu produto. O eixo vertical dessa análise contém intervalos que representam a frequência do evento. O eixo horizontal mede o número de usuários ou sessões para cada bucket.
 
->[!VIDEO](https://video.tv.adobe.com/v/3428089/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428089/?quality=12&learn=on)
 
 ## Casos de uso
 

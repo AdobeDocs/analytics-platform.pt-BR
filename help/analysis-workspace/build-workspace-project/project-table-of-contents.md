@@ -1,13 +1,13 @@
 ---
 description: Informações sobre a funcionalidade de índice em um projeto do Workspace
 keywords: Analysis Workspace
-title: Índice
+title: 'Índice '
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: 9d32100f28e8806cc30aaf52e30216cbce1a38b0
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '186'
 ht-degree: 4%
 
 ---
@@ -16,11 +16,12 @@ ht-degree: 4%
 
 Você pode exibir um índice para um projeto no Analysis Workspace, o que permite mover-se rapidamente entre quaisquer painéis e visualizações existentes no projeto. O índice é especialmente útil ao visualizar projetos maiores que contêm muitos painéis e visualizações.
 
-+++ Assista a uma demonstração em vídeo dessa funcionalidade.
+>[!BEGINSHADEBOX]
 
->[!VIDEO](https://video.tv.adobe.com/v/26990/?learn=on)
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um sumário](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
-+++
+>[!ENDSHADEBOX]
+
 
 >[!TIP]
 >

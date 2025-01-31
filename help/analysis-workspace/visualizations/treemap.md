@@ -4,10 +4,10 @@ title: Mapas de árvore
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 27%
+source-wordcount: '164'
+ht-degree: 26%
 
 ---
 
@@ -37,6 +37,13 @@ Cada galho da árvore recebe um retângulo, que é empilhado com retângulos men
 ![Exemplo de Mapa de árvore mostrando blocos de retângulos menores que representam sub-ramificações.](assets/treemap.png)
 
 Com um mapa de árvore, você pode ver padrões que seriam difíceis de detectar de outras maneiras. Usando a cor e o tamanho das dimensões, é possível descobrir como as dimensões são correlacionadas e se uma determinada dimensão é particularmente relevante. Uma segunda vantagem dos mapas de árvore é que, por construção, eles fazem uso eficiente do espaço.
+
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de Mapa de Árvore](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
 
 
 >[!MORELIKETHIS]

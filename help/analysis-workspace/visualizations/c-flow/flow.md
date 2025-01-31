@@ -4,10 +4,10 @@ title: Visão geral do Fluxo
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 49%
+source-wordcount: '387'
+ht-degree: 46%
 
 ---
 
@@ -41,15 +41,17 @@ Com a visualização, é possível:
 
 * Visualize a jornada do cliente em seu site ou aplicativo.
 * Analise onde os clientes vão antes e depois de pontos de verificação especificados, como entrada, uma dimensão específica ou saída.
-* Crie filtros ao designar um ponto específico em um determinado caminho
+* Crie filtros ao designar um ponto específico em um determinado caminho.
 
-+++ Assista a uma demonstração em vídeo da visualização de Fluxo.
 
->[!VIDEO](https://video.tv.adobe.com/v/346063/?quality=12)
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar uma visualização de fluxo](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
 
 ## Fluxos interdimensionais
 

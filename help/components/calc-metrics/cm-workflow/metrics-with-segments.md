@@ -3,9 +3,9 @@ description: A filtragem de métricas individuais permite fazer comparações de
 title: Métricas filtradas
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
+source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
@@ -87,10 +87,12 @@ Repita as etapas acima para a versão internacional da sua métrica calculada.
    ![Visualização da tabela de forma livre do Workspace mostrando o total de pessoas do alemão vs. internacional](assets/workspace-german-vs-international-totals-percentage.png)
 
 
-+++ Este é um vídeo que ilustra como usar uma métrica calculada filtrada como uma métrica sem implementação.
 
->[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12)
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usar uma métrica calculada filtrada como uma métrica sem implementação](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+

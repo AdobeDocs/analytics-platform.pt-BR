@@ -6,10 +6,10 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: f9b9dcf87d781e0702b51e536b7edb4644720fa5
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 58%
+source-wordcount: '540'
+ht-degree: 52%
 
 ---
 
@@ -51,28 +51,49 @@ Este é o comportamento esperado ao aplicar modelos de atribuição a detalhamen
 
 * Se já houver atribuições na árvore de colunas, alterar a atribuição afetará somente a que você estiver editando.
 
-+++ Assista a vídeos que ilustram dimensões e detalhamentos de dimensão
+>[!BEGINSHADEBOX]
 
-Dimension no Analysis Workspace
-
->[!VIDEO](https://video.tv.adobe.com/v/23971)
-
-Detalhamentos de Dimension
-
->[!VIDEO](https://video.tv.adobe.com/v/23969)
-
-Adicionar dimensões e métricas ao seu projeto no Analysis Workspace:
-
->[!VIDEO](https://video.tv.adobe.com/v/30606)
-
-Trabalhar com dimensões em uma Tabela de forma livre:
-
->[!VIDEO](https://video.tv.adobe.com/v/40179)
-
-Detalhamentos de dimensão por posição:
-
->[!VIDEO](https://video.tv.adobe.com/v/24033)
+Assista a ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension no Analysis Workspace](https://video.tv.adobe.com/v/23971?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
-+++
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [detalhamentos de Dimension](https://video.tv.adobe.com/v/23969?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionando dimensões e métricas](https://video.tv.adobe.com/v/30606?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Trabalhando com dimensões em uma Tabela de Forma Livre](https://video.tv.adobe.com/v/40179?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [detalhamento de Dimension por posição](https://video.tv.adobe.com/v/24033){target="_blank"} para ver um vídeo de demonstração.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
+
+
+
