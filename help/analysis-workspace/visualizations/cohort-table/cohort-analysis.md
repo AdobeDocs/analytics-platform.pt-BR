@@ -4,7 +4,7 @@ description: Saiba como usar uma tabela de coorte para análise de coorte no Ana
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 30%
