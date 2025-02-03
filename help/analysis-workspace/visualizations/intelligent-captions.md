@@ -4,7 +4,7 @@ title: Legendas inteligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 5d391a73fb30ebc8f443f5a88357c866df03ce96
 workflow-type: tm+mt
 source-wordcount: '876'
 ht-degree: 19%
