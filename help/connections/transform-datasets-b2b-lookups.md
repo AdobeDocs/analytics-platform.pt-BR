@@ -1,18 +1,18 @@
 ---
-title: Transformar conjuntos de dados para pesquisas B2B
+title: Transformar conjunto de dados para pesquisas B2B
 description: Descreve como transformar dados em conjuntos de dados de esquemas de pesquisa B2B específicos
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: eef9b420f1016254dece0a916b82bc99e2ca866e
+source-git-commit: 32678fdedf1b384afce1998880af04f1af077943
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 0%
+source-wordcount: '413'
+ht-degree: 2%
 
 ---
 
-# Transformar conjuntos de dados para pesquisas B2B
+# Transformar conjunto de dados para pesquisas B2B
 
 Para oferecer suporte a pesquisas com base em pessoas em dados B2B (incluindo contas, oportunidades, listas de marketing e campanhas), é necessária a transformação de conjuntos de dados de pesquisa B2B.
 
@@ -30,9 +30,12 @@ Essa transformação só está disponível para conjuntos de dados com dados par
 
 Para ativar a transformação desse conjunto de dados:
 
-![Habilitar conjunto de dados de transformação](assets/transform-dataset.gif)
+![Habilitar conjunto de dados de transformação](/help/connections/assets/transform.gif)
 
-* Selecione o identificador apropriado para **[!UICONTROL Chave]** e **[!UICONTROL Chave correspondente]**, por exemplo `personKey.sourceKey`.
+* Verifique, para cada conjunto de dados, os valores sugeridos para **[!UICONTROL Chave]** e **[!UICONTROL Chave correspondente]**. Se alterar os valores dos valores sugeridos, você verá um aviso solicitando que continue. Você deve ter certeza de que:
+
+   * O valor selecionado para **Chave** é baseado no tipo de dados da ID de pessoa.
+   * O valor selecionado para **Chave Correspondente** é definido como o campo de identidade principal para o conjunto de dados do evento.
 
 * Selecione as opções para importar novos dados e preenchimento retroativo de conjunto de dados.
 
@@ -43,7 +46,7 @@ Para ativar a transformação desse conjunto de dados:
 
   >[!IMPORTANT]
   >
-  >Uma vez ativada e quando a conexão é salva, a transformação é irreversível. Não é possível modificar a configuração de transformação de um conjunto de dados depois que uma conexão é salva, a não ser removendo e adicionando o conjunto de dados mais uma vez à conexão.
+  >Uma vez ativada e quando a conexão é salva, a transformação é irreversível. Não é possível modificar a configuração das chaves Chave, Chave correspondente e Conjunto de dados Transformar. Você só pode remover, adicionar e reconfigurar o conjunto de dados.
 
 Para habilitar a transformação para um ou mais conjuntos de dados que já fazem parte de uma conexão existente:
 
