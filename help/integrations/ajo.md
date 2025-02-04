@@ -4,10 +4,10 @@ description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usand
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: d5e8c75f1e3a207b625421a13219674f8da6c3f5
-workflow-type: ht
-source-wordcount: '3020'
-ht-degree: 100%
+source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
+workflow-type: tm+mt
+source-wordcount: '3514'
+ht-degree: 94%
 
 ---
 
@@ -169,6 +169,31 @@ Você pode criar as seguintes dimensões em uma visualização de dados para obt
 | ID da página de destino (AJO) | Identificador exclusivo da página de destino. | Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.landingpage.landingPageID` | Tipo de componente: dimensão |
 | Origem da página de destino (AJO) | A origem da página de destino. | Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: dimensão (campo derivado) |
 | URL do link (AJO) | O URL em que o usuário clicou. | Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Tipo de componente: dimensão |
+| Motivo da exclusão da mensagem (AJO) | Motivo da exclusão | Conjunto de dados de evento de feedback de mensagem do AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageExclusion.reason` | Tipo de componente: dimensão |
+| Categoria de falha da mensagem (AJO) | Categoria da falha | Conjunto de dados de evento de feedback de mensagem do AJO | ` _experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.category` | Tipo de componente: dimensão |
+| Motivo da falha da mensagem (AJO) | Motivo da falha | Conjunto de dados de evento de feedback de mensagem do AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.reason` | Tipo de componente: dimensão |
+| Tipo de falha da mensagem (AJO) | Tipo de falha | Conjunto de dados de evento de feedback de mensagem do AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.type` | Tipo de componente: dimensão |
+| Status de falha da mensagem (AJO) | Status de falha | Conjunto de dados de evento de feedback de mensagem do AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.`<br/>`messageFailure.status` | Tipo de componente: dimensão |
+| ID da mensagem (AJO) | A ID da mensagem ao qual esses dados devem ser correlacionados. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.messageID` | Tipo de componente: dimensão |
+| Nova tentativa de mensagem (AJO) | Contagem de novas tentativas | Conjunto de dados de evento de feedback de mensagem do AJO | `_experience.customerJourneyManagement.`<br/>`messageDeliveryfeedback.retryCount` | Tipo de componente: dimensão |
+| ID do nó (AJO) | A ID do nó da jornada. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | Tipo de componente: dimensão |
+| Nome do nó (AJO) | O nome do nó da jornada. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeName` | Tipo de componente: dimensão |
+| Tipo de nó (AJO) | O tipo de nó da jornada. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.journey.journeyNodeID` | Tipo de componente: dimensão |
+| SO (AJO) | O nome do sistema operacional. | Conjunto de dados de evento de experiência de rastreamento por push do AJO | `environment.operatingSystem` | Tipo de componente: dimensão |
+| Versão do sistema operacional (AJO) | A versão do sistema operacional. | Conjunto de dados de evento de experiência de rastreamento por push do AJO | environment.operatingSystemVersion | Tipo de componente: dimensão |
+| Plataforma de push (AJO) | Serviço de provedor de push, por exemplo apns ou fcm. | Conjunto de dados de evento de experiência de rastreamento de email do AJO, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de push do AJO | `_experience.customerJourneyManagement.`<br/>`pushChannelContext.platform` | Tipo de componente: dimensão |
+| Título por push (AJO) | Título de push, não personalizado. | Conjunto de dados da entidade AJO, Conjunto de dados do evento de feedback de mensagem AJO, Conjunto de dados do evento de experiência de rastreamento de push do AJO | `_experience.customerJourneyManagement.`<br/>`entities.channelDetails.push.title | Component type: Dimension` |
+| Política de consentimento rejeitado (AJO) | Nome da política de consentimento rejeitada correspondente. | Eventos de etapa da jornada | `_experience.journeyOrchestration.`<br/>`stepEvents.consent.rejectedPolicies.name` | Tipo de componente: dimensão |
+| Mensagem SMS de entrada (AJO) | Resposta de entrada de SMS, por exemplo: parar, iniciar, assinar etc. | Conjunto de dados de evento de experiência de rastreamento de email do AJO, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de push do AJO | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.inboundMessage` | Tipo de componente: dimensão |
+| Tipo de mensagem SMS (AJO) | Provedor de SMS, como entrada, inboundReply ou enviar. | Conjunto de dados de evento de experiência de rastreamento de email do AJO, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de push do AJO | ` _experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | Tipo de componente: dimensão |
+| Provedor de SMS (AJO) | Provedor de SMS, como sinch ou twilio. | Conjunto de dados de evento de experiência de rastreamento de email do AJO, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de push do AJO | `_experience.customerJourneyManagement.`<br/>`smsChannelContext.messageType` | Tipo de componente: dimensão |
+| Tipo de seleção (AJO) | A superfície do canal na qual a mensagem foi exibida. | Eventos De Etapa De Jornada, Conjunto De Dados De Evento De Experiência De Rastreamento De Email Do AJO, Conjunto De Dados De Evento De Feedback De Mensagens Do AJO, Conjunto De Dados De Evento De Experiência De Rastreamento De Push Do AJO | `_experience.decisioning.propositions.`<br/>`items.itemSelection.`<br/>`selectionDetail.selectionType` | Tipo de componente: dimensão |
+| ID da lista de assinaturas (AJO) | Identificador exclusivo da lista de assinaturas. | Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.subscription.`<br/>` subscriptionListID` | Tipo de componente: dimensão |
+| Superfície (AJO) |  | Eventos De Etapa De Jornada, Conjunto De Dados De Evento De Experiência De Rastreamento De Email Do AJO, Conjunto De Dados De Evento De Feedback De Mensagens Do AJO, Conjunto De Dados De Evento De Experiência De Rastreamento De Push Do AJO | `_experience.decisioning.`<br/>`propositions.scope` | Tipo de componente: dimensão |
+| ID do tratamento (AJO) | A ID do tratamento selecionado para o experimento. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentID` | Tipo de componente: dimensão |
+| Nome do tratamento (AJO) | O nome do tratamento selecionado para o experimento. | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.experiment.treatmentName` | Tipo de componente: dimensão |
+| ID do URL (AJO) | Identificador exclusivo do URL clicado pelo usuário. | Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.urlID` | Tipo de componente: dimensão |
+| Rótulo do URL (AJO) | Rótulo amigável para o URL. | Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.label` | Tipo de componente: dimensão |
 
 {style="table-layout:auto"}
 
