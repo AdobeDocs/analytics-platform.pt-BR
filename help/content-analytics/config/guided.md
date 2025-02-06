@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
+source-git-commit: 171520c961fe1c77b4fa8466523e10a810074910
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1696'
 ht-degree: 2%
 
 ---
@@ -92,7 +92,7 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Visualização de dados"
->abstract="Selecione uma visualização de dados existente do Customer Journey Analytics com a qual você deseja mesclar seus dados de análise de conteúdo.<br/>[Saiba mais](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target=\"_blank\"}"
+>abstract="Selecione uma visualização de dados existente do Customer Journey Analytics com a qual você deseja mesclar seus dados de análise de conteúdo."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -119,7 +119,7 @@ Se você editar uma configuração existente, a lista mostrará apenas as Visual
 Uma Exibição de dados está vinculada a uma Customer Journey Analytics [Conexão](/help/connections/overview.md). E uma conexão é baseada em uma sandbox na sua organização. Depois de salvar a configuração, a **[!UICONTROL Sandbox]** será preenchida automaticamente com o nome adequado da sandbox, com base na exibição de Dados selecionada.
 
 
-### Captura e definição de experiência
+### Captura e definição de experiência {#onboarding-experiences}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -203,12 +203,12 @@ Para editar experiências existentes ou incluir novas Experiências em uma confi
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
->title="Coleta de dados"
+>title="Coleção de dados"
 >abstract="Você pode editar as configurações de páginas na extensão Adobe Content Analytics na propriedade Tag, associada à configuração selecionada."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
->title="Coleta de dados"
+>title="Coleção de dados"
 >abstract="Você pode editar as configurações de ativos na extensão Adobe Content Analytics na propriedade Tag, associada à configuração selecionada."
 
 <!-- markdownlint-enable MD034 -->
