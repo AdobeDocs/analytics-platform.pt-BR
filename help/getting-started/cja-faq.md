@@ -5,7 +5,7 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 408773de0fd157edf0cd7b8edc8a8873eff00eb0
+source-git-commit: 1c02405994deec1950aca7601658017d9cf8c74c
 workflow-type: tm+mt
 source-wordcount: '2582'
 ht-degree: 98%
@@ -122,7 +122,8 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 
 +++**Quais são os limites para assimilação de datas/carimbos de data e hora passados ou futuros em conjuntos de dados de evento do Customer Journey Analytics?**
 
-<ul><li>Em relação a datas/carimbos de data e hora anteriores: dados de eventos de até 10 anos.</li><li>Em relação a datas/carimbos de data e hora futuros: dados de eventos (preditivo) de até um mês no futuro.</li></ul>
+* Em relação a datas/carimbos de data e hora anteriores: dados de eventos de até 10 anos.
+* Em relação a datas/carimbos de data e hora futuros: dados de eventos (preditivo) de até um mês no futuro.
 
 +++
 
@@ -130,13 +131,17 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 ## 4. Considerações sobre latência {#latency}
 
 >[!NOTE]
+>
 >Não há um tamanho de dados fixo no Customer Journey Analytics e, portanto, a Adobe não pode definir um tempo de assimilação padrão. A Adobe está trabalhando ativamente para reduzir essas latências por meio de novas atualizações e otimizações de assimilação.
 
-<ul><li>Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estão disponíveis na Adobe Experience Platform. (Tamanho do lote &gt; 50 milhões de linhas: superior a 90 minutos.) Se a compilação estiver ativada, a assimilação pode levar até 3,25 horas.<p>Consulte [guardrails](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) para obter mais detalhes.</li><li>Preenchimentos retroativos pequenos: dentro de sete dias<li>Preenchimentos retroativos grandes: dentro de 30 dias</li></ul>
+* Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estão disponíveis na Adobe Experience Platform. (Tamanho do lote > 50 milhões de linhas: superior a 90 minutos.) Se a compilação estiver ativada, a assimilação pode levar até 3,25 horas. Consulte [medidas de proteção](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) para obter mais detalhes.
+* Preenchimentos retroativos pequenos: dentro de sete dias
+* Preenchimentos retroativos grandes: dentro de 30 dias
 
 A Adobe alterou recentemente a forma do processamento de dados no Customer Journey Analytics:
 
-<ul><li>Os dados do evento do dia “atual” são transmitidos como dados em tempo real. Dados com uma hora de evento anterior a 11:59:59 PM (23:59:59) no dia anterior são tratados como preenchimento retroativo.</li><li>Quaisquer dados de evento com um carimbo de data e hora superior a 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados de preenchimento retroativo e serão assimilados com uma prioridade mais baixa.</li></ul>
+* Os dados do evento do dia “atual” são transmitidos como dados em tempo real. Dados com uma hora de evento anterior a 11:59:59 PM (23:59:59) no dia anterior são tratados como preenchimento retroativo.
+* Quaisquer dados de evento com um carimbo de data e hora superior a 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados de preenchimento retroativo e serão assimilados com uma prioridade mais baixa.
 
 ## 5. Definir janela contínua para retenção de dados de [!UICONTROL conexão] {#data-retention}
 
