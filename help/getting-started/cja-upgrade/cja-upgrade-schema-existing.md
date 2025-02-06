@@ -7,14 +7,32 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 49%
+source-wordcount: '493'
+ht-degree: 38%
 
 ---
 
-# Escolha seu esquema para o Customer Journey Analytics
+# Escolha seu esquema para o Customer Journey Analytics {#choose-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-tailored"
+>title="Usar um esquema personalizado"
+>abstract="(Recomendado) A personalização do esquema permite que sua organização rastreie somente o que é necessário e evite a sobrecarga vinculada a campos desnecessários e confusos. Essa opção inclui grupos de campos adicionados pelo Web SDK e grupos de campos personalizados para sua organização."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-default"
+>title="Usar o esquema padrão"
+>abstract="(Não recomendado) O esquema do Adobe Analytics contém mais de mil campos, o que pode resultar em esquema desordenado e complexo. Sua organização seria forçada a continuar aderindo ao conceito de props e eVars, que é um conceito herdado não usado no Customer Journey Analytics. A integração com outros serviços da Adobe Experience Platform é mais difícil."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
@@ -36,7 +54,7 @@ O Adobe recomenda criar um esquema personalizado ao atualizar para o Customer Jo
 
 ## Usar seu esquema existente do Adobe Analytics
 
-A opção para usar seu esquema do Adobe Analytics existente com o Customer Journey Analytics só estará disponível se a implementação do Adobe Analytics estiver configurada com o SDK da Web da Adobe Experience Platform. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
+A opção para usar o esquema existente do Adobe Analytics com o Customer Journey Analytics só estará disponível se a implementação do Adobe Analytics estiver configurada com o Adobe Experience Platform Web SDK. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | Vantagens | Desvantagens |
 |----------|---------|

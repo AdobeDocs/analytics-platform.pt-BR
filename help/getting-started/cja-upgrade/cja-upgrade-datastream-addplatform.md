@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
-source-git-commit: 41965bcd5ae8252fbf2ceda0d2b633ec6dc0e9a3
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 31%
+source-wordcount: '353'
+ht-degree: 26%
 
 ---
 
-# Adicionar a Platform como um serviço à sua sequência de dados
+# Adicionar a Platform como um serviço à sua sequência de dados {#upgrade-addplatform-datastream}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-addplatform-datastream"
+>title="Adicionar o Adobe Experience Platform como um serviço à sequência de dados"
+>abstract="Uma sequência de dados precisa de um ou mais serviços para enviar dados. Configure o Adobe Experience Platform como um serviço na sua sequência de dados.<br><br>Adicionar serviços a uma sequência de dados é um processo simples, que demora apenas alguns minutos para ser concluído."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

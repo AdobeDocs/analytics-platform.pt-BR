@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1460cbd05cce793b25d026c413744508ab951147
+source-git-commit: 8d14bb23283107402332106df36e8f7898ea5d30
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 29%
+source-wordcount: '437'
+ht-degree: 31%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 29%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-activity-map"
->title="Sobreposição do Activity Map e rastreamento de link"
+>title="Sobreposição do Activity Map e rastreamento de links"
 >abstract="Uma extensão do navegador que permite ver os dados de rastreamento de link como uma sobreposição no site."
 
 <!-- markdownlint-enable MD034 -->
@@ -82,7 +82,7 @@ ht-degree: 29%
 > 
 >Use as informações desta página ao responder perguntas da [lista de verificação de atualização de Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
-A lista a seguir mostra apenas os recursos incluídos na [lista de verificação de atualização de Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/). Para obter uma lista abrangente que mostra quais recursos do Adobe Analytics são suportados, parcialmente suportados ou não suportados no Customer Journey Analytics, consulte [suporte ao recurso Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
+A lista a seguir mostra apenas os recursos do Adobe Analytics que exigem consideração durante o processo de atualização para o Customer Journey Analytics. Para obter uma lista abrangente que mostra quais recursos do Adobe Analytics são totalmente compatíveis, parcialmente compatíveis ou não com o Customer Journey Analytics, consulte [suporte ao recurso Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).
 
 Considere quais dos seguintes recursos do Adobe Analytics você deseja continuar usando ao atualizar para o Customer Journey Analytics:
 

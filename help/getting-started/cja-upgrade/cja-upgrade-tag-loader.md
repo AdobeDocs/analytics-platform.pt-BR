@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 36%
+source-wordcount: '362'
+ht-degree: 28%
 
 ---
 
-# Implementar a tag de carregamento para a extensão do SDK da Web
+# Implementar a tag de carregamento para a extensão do SDK da Web {#upgrade-tag-loader}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-loader"
+>title="Implementar a tag de carregamento no site"
+>abstract="Trabalhe com a equipe de desenvolvimento do site para instalar a tag de carregamento em cada página do site.<br><br>O tempo de conclusão desta tarefa depende muito do tempo de resposta da equipe de engenharia com a qual você trabalha para implantar o código. Algumas organizações que têm equipes de engenharia altamente adaptáveis podem concluir essa etapa em dias, enquanto as equipes de engenharia com um extenso backlog de tarefas podem levar um mês ou mais."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

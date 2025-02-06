@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
-source-git-commit: f71f5b863a024d882a116a5fd3bf0fc433e5fe99
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
 
-# Monitorar a assimilação do conjunto de dados ao atualizar para o Customer Journey Analytics
+# Monitorar a assimilação do conjunto de dados ao atualizar para o Customer Journey Analytics {#monitor-ingestion}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataset-validate"
+>title="Validar dados no conjunto de dados"
+>abstract="Agora que você configurou a implementação do Web SDK, é possível usar o gerenciador de atividades do conjunto de dados para ver lotes assimilados e com falha. Se você vir principalmente lotes assimilados, esta etapa está concluída. Se você vir principalmente lotes com falha ou sem lotes, verifique a implementação do Web SDK para garantir que esteja enviando dados corretamente para o Adobe.<br><br>Se tudo tiver sido feito corretamente e sem falhas, esta etapa poderá ser realizada em menos de um dia. Se houver vários problemas de coleta de dados, a solução de problemas poderá demorar muito mais."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

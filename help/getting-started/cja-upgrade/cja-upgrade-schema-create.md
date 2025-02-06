@@ -7,14 +7,41 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 45f2097d2f0657f623b825acb8d06ec6972f757f
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 48%
+source-wordcount: '1335'
+ht-degree: 37%
 
 ---
 
-# Criar um esquema personalizado para usar com a implementação do SDK da Web do Customer Journey Analytics
+# Criar um esquema personalizado para usar com a implementação do Customer Journey Analytics Web SDK {#create-custom-schema}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-create"
+>title="Crie o esquema personalizado desejado no Adobe Experience Platform"
+>abstract="Use a interface do usuário do Adobe Experience Platform para criar um esquema para que o Adobe saiba o formato correto para armazenar seus dados.<br><br>Esta etapa envolve a criação real do esquema aceito pela sua organização. O tempo estimado para criar seu esquema na interface do Adobe Experience Platform é de aproximadamente uma semana, dependendo do número de dimensões e métricas que precisam ser criadas."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-create-default-aa"
+>title="Criar um esquema usando o grupo de campos Adobe Analytics ExperienceEvent"
+>abstract="Use o grupo de campos &quot;Adobe Analytics ExperienceEvent&quot; para criar um esquema no Adobe Experience Platform contendo todos os campos usados pelo Adobe Analytics.<br><br>Criar um esquema com base no grupo de campos Adobe Analytics ExperienceEvent é simples, demorando apenas alguns minutos para ser concluído."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-schema-profile"
+>title="Ativar o esquema para o perfil"
+>abstract="Ative o perfil no esquema para uso na CDP em tempo real do Adobe. Essa etapa aparece porque você selecionou o desejo de integração com a CDP em tempo real do Adobe.<br><br>Como esta etapa envolve clicar em uma única caixa, esta etapa leva apenas alguns minutos."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -26,11 +53,17 @@ ht-degree: 48%
 >
 >Antes de começar a criar seu esquema personalizado, trabalhe com sua equipe de dados e outras partes interessadas em toda a organização para identificar o design de esquema ideal para o Customer Journey Analytics e outros aplicativos da Adobe Experience Platform que você usa. Para obter mais informações, consulte [Criar o esquema para uso com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-O Adobe recomenda criar um esquema personalizado do Experience Data Model (XDM) para usar com o SDK da Web ao atualizar para o Customer Journey Analytics. Um esquema personalizado permite um esquema simplificado adaptado às necessidades da sua organização e dos aplicativos específicos da Platform que você usa. Quando é preciso realizar alterações no esquema, não é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.
+As seções a seguir descrevem como criar um esquema que pode ser usado com o Customer Journey Analytics. As seguintes opções de schema estão disponíveis:
+
+* **Esquema XDM personalizado:** (recomendado) permite um esquema simplificado adaptado às necessidades da sua organização e dos aplicativos específicos da Platform que você usa. Quaisquer mudanças futuras necessárias são diretas.
+
+* **O esquema do Adobe Analytics que usa o grupo de campos Adobe Analytics ExperienceEvent:** requer a adição de milhares de campos desnecessários. Quaisquer mudanças futuras necessárias são mais difíceis.
+
+Para obter mais informações sobre essas opções de esquema, consulte [Escolher o esquema para Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 ## Criar o esquema
 
-O esquema personalizado definido para a implementação do SDK da Web representa o modelo dos dados coletados na Adobe Experience Platform.
+O esquema personalizado definido para a implementação do Web SDK representa o modelo dos dados coletados no Adobe Experience Platform.
 
 Para criar um esquema personalizado:
 
@@ -80,6 +113,10 @@ Para criar um esquema personalizado:
       Selecione **[!UICONTROL Voltar]** para fechar a visualização.
 
    1. (Opcional) Selecione quaisquer grupos de campos adicionais que deseja incluir.
+
+      Se você optar por usar o esquema padrão do Adobe Analytics em vez de criar um esquema XDM personalizado, poderá adicionar o grupo de campos Adobe Analytics ExperienceEvent agora. No entanto, o Adobe recomenda criar um esquema XDM personalizado em vez de adicionar esse grupo de campos.
+
+      Para obter mais informações sobre essas opções de esquema, consulte [Escolher o esquema para Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
    1. Selecione **[!UICONTROL Adicionar grupos de campos]**.
 

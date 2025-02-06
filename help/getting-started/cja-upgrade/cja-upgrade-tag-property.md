@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 156df830-541d-4c92-9c49-98f346e040a7
-source-git-commit: cb6a439def7bf0fab1768fdd1c7d909b76b995d6
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 24%
+source-wordcount: '371'
+ht-degree: 20%
 
 ---
 
-# Criar uma tag para sua propriedade
+# Criar uma tag para sua propriedade {#upgrade-tag-property}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-property"
+>title="Criar uma propriedade de tag na Coleção de dados da Adobe Experience Platform"
+>abstract="O uso de tags é o padrão típico para a coleta de dados do. Crie uma tag na interface do Adobe Experience Platform para poder atualizar as variáveis de coleta de dados a qualquer momento.<br><br>A criação de uma propriedade de marca pode ser concluída em vários cliques, levando apenas alguns minutos."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 

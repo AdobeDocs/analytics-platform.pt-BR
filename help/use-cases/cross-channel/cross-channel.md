@@ -5,14 +5,23 @@ exl-id: 285532b1-eb37-4984-9559-054a18515ddf
 solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 668f17531b4b8a01acffdbb0edef07092859d100
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 61%
+source-wordcount: '582'
+ht-degree: 51%
 
 ---
 
-# Análise entre canais
+# Análise entre canais {#cross-channel}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-additional-datasets"
+>title="Adicionar outros conjuntos de dados à conexão"
+>abstract="Depois de adicionar dados a um conjunto de dados na Adobe Experience Platform, você pode adicionar esse conjunto de dados à conexão no Customer Journey Analytics. Ao adicionar dados de outros canais, certifique-se de que eles adiram ao esquema que sua organização usa.<br><br>Cada conjunto de dados adicionado requer muito trabalho, principalmente para garantir que o identificador exclusivo exista para cada evento e que a estrutura de dados abrangente esteja em conformidade com o esquema personalizado de sua organização. O estabelecimento desse fluxo de trabalho pode levar a coordenação entre várias equipes na organização, distribuídas por vários meses."
+
+<!-- markdownlint-enable MD034 -->
 
 A análise entre canais possibilita uma única visualização consolidada do comportamento do cliente em vários canais, unificando dados de várias propriedades da Web, móveis e offline. Por exemplo, é possível usar a visualização consolidada para analisar as interações dos clientes no desktop e nos dispositivos móveis e entender seus comportamentos, extraindo insights para otimizar suas experiências digitais. Também é possível analisar as interações do cliente entre canais, incluindo canais digitais e offline, como interações de suporte e compras na loja, a fim de melhor entender e otimizar a jornada do cliente.
 

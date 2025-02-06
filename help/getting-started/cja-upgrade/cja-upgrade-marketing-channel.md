@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: ef6afb2872b88c82801ceb279dd757e6e1f5e78c
+source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 5%
+source-wordcount: '368'
+ht-degree: 4%
 
 ---
 
-# Criar um campo derivado de canal de marketing para o Customer Journey Analytics
+# Criar um campo derivado de canal de marketing para o Customer Journey Analytics {#create-marketing-channel-derived-field}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-marketing-channel"
+>title="Criar um campo derivado de canal de marketing"
+>abstract="Campos derivados são criados em uma visualização de dados.<br><br>O uso de uma configuração de canal de marketing padrão leva apenas alguns minutos; a criação de uma configuração de canal de marketing altamente personalizada pode levar várias horas."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -24,7 +33,7 @@ ht-degree: 5%
 
 Ao usar o conector de origem do Analytics, os dados de canais de marketing fluem para o Customer Journey Analytics por meio desse conector. As regras do canal de marketing são configuradas no Adobe Analytics tradicional e algumas regras não são compatíveis. Para obter mais informações, consulte [Usar dimensões do canal de marketing](/help/use-cases/aa-data/marketing-channels.md).
 
-Para usar canais de marketing no Customer Journey Analytics ao usar o SDK da Web do Experience Platform, você pode usar campos derivados em uma visualização de dados para recriar os mesmos canais de marketing e regras de processamento para o Customer Journey Analytics.
+Para usar canais de marketing no Customer Journey Analytics ao usar o Experience Platform Web SDK, é possível usar campos derivados em uma visualização de dados para recriar os mesmos canais de marketing e regras de processamento para o Customer Journey Analytics.
 
 1. No Customer Journey Analytics, selecione a visualização de dados à qual deseja adicionar canais de marketing.
 

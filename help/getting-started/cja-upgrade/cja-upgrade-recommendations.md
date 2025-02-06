@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 2d9475c4aa3ca9ba92856182e8c93f59180d833a
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 7%
+source-wordcount: '1568'
+ht-degree: 8%
 
 ---
 
@@ -177,13 +177,11 @@ Cada etapa fornece uma explicação de alto nível de um processo mais detalhado
 
 1. Saiba mais sobre o suporte a recursos [no Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). A maioria dos recursos do Adobe Analytics é suportada no Customer Journey Analytics e muitos recursos adicionais estão disponíveis no Customer Journey Analytics.
 
-1. [Desabilite a coleta de dados do AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md) quando a implementação do Web SDK estiver concluída e você estiver familiarizado com os dados que está coletando.
+1. Desative o Adobe Analytics quando a implementação do Customer Journey Analytics Web SDK estiver concluída e você estiver familiarizado com os dados coletados.
 
-1. Desative o conector de origem do Analytics depois que todos os dados do conector de origem do Analytics saírem do período de retenção de dados.
+   A Adobe recomenda que você mantenha seu ambiente Adobe Analytics em execução por um período após implementar o Customer Journey Analytics.
 
-   Com a implementação do Experience Platform Web SDK, o conector de origem do Analytics é necessário apenas para dados históricos do Adobe Analytics e para comparar os dados da implementação original com os da nova implementação.
-
-   Quando tiver dados históricos suficientes da nova implementação e estiver familiarizado com as diferenças de relatório no Customer Journey Analytics, desative o conector de origem do Analytics.
+   Para obter mais informações sobre os usos do Adobe Analytics durante e após uma atualização, bem como o tempo sugerido para desabilitar o Adobe Analytics, consulte [Avaliar por quanto tempo você precisa do Adobe Analytics após atualizar para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
 
 ## Gerar dinamicamente etapas de atualização para sua organização
 

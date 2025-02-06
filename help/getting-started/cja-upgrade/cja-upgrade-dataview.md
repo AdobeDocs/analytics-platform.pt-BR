@@ -6,14 +6,24 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 33cfff3f675fc03c3444531e8426cb806cdf8559
+exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 23%
+source-wordcount: '475'
+ht-degree: 20%
 
 ---
 
-# Criar uma visualização de dados no Customer Journey Analytics
+# Criar uma visualização de dados no Customer Journey Analytics {#upgrade-create-dataview}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-dataview"
+>title="Criar uma visualização de dados no Customer Journey Analytics"
+>abstract="Uma visualização de dados é um container específico do Customer Journey Analytics que permite determinar como interpretar dados de uma conexão.<br><br>Enquanto a criação inicial da visualização de dados leva alguns minutos, a configuração de cada dimensão e métrica com as configurações de componente desejadas pode levar vários dias. Ajustar essas configurações se aplica retroativamente, para que sua organização possa refiná-las ao longo do tempo."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
@@ -56,4 +66,3 @@ Para criar uma visualização de dados:
 1. Após especificar todas as configurações desejadas, selecione **[!UICONTROL Salvar e concluir]**.
 
 1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
-

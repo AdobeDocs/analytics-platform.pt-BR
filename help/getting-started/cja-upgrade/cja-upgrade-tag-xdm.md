@@ -7,14 +7,23 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 5b440a8029aab392739e573a680123d0bd8a1318
+source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 32%
+source-wordcount: '1697'
+ht-degree: 31%
 
 ---
 
-# Adicionar a lógica da coleção de dados XDM à tag
+# Adicionar a lógica da coleção de dados XDM à tag {#upgrade-tag-xdm}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-tag-xdm"
+>title="Adicionar a lógica da coleção de dados XDM à tag"
+>abstract="Com a tag loader instalada no site, é possível adicionar regras e elementos de dados para preencher um objeto XDM a ser enviado para o Adobe. A Adobe recomenda manter um documento de design da solução para rastrear como as tags são configuradas.<br><br>Esta etapa requer muito trabalho, pois envolve a configuração de toda a lógica do Analytics para sua propriedade. Espere dedicar um mês ou mais para estabelecer as regras de tags corretas, testá-las e implantá-las no site."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
