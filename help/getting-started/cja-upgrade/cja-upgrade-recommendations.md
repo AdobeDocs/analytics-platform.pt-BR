@@ -10,7 +10,7 @@ exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '1568'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -28,14 +28,14 @@ Depois de ter dados históricos suficientes usando o Experience Platform Web SDK
 >
 >Se as etapas de atualização descritas nesta seção não forem práticas para sua organização, use o [Questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/) para gerar dinamicamente etapas de atualização personalizadas para as circunstâncias exclusivas de sua organização.
 
-### Processo de atualização recomendado de alto nível {#high-level-upgade-process}
+### Processo de atualização de alto nível recomendado {#high-level-upgade-process}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-historical-data"
 >title="Dados históricos do Adobe Analytics"
->abstract="Traga seus dados históricos do conjunto de relatórios do Adobe Analytics para a Adobe Experience Platform e o Customer Journey Analytics."
+>abstract="Traga seus dados históricos do conjunto de relatórios do Adobe Analytics para a Adobe Experience Platform e para o Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -55,7 +55,7 @@ Depois de ter dados históricos suficientes usando o Experience Platform Web SDK
 
    O conector de origem do Analytics permite:
 
-   * Traga seus dados históricos do conjunto de relatórios do Adobe Analytics para a Adobe Experience Platform e o Customer Journey Analytics.
+   * Traga seus dados históricos do conjunto de relatórios do Adobe Analytics para a Adobe Experience Platform e para o Customer Journey Analytics.
 
      Você pode manter o conector de origem do Analytics em execução por tanto tempo quanto for necessário manter os dados históricos do Adobe Analytics.
 

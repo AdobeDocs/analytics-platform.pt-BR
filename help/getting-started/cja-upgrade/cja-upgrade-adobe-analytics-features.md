@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 8d14bb23283107402332106df36e8f7898ea5d30
+exl-id: 92053109-f80d-47ab-b011-c28a5411149c
+source-git-commit: 9d4d2419715308240d6e6c22751d8859eb34d474
 workflow-type: tm+mt
 source-wordcount: '437'
-ht-degree: 31%
+ht-degree: 59%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-migrate-projects"
 >title="Componentes e projetos"
->abstract="Os componentes do Adobe Analytics incluem: Projetos (com suas tabelas e visualizações de forma livre associadas), segmentos e métricas calculadas."
+>abstract="Os componentes do Adobe Analytics incluem: projetos (com suas tabelas e visualizações de forma livre associadas), segmentos e métricas calculadas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +29,7 @@ ht-degree: 31%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-activity-map"
->title="Sobreposição do Activity Map e rastreamento de links"
+>title="Sobreposição do Activity Map e rastreamento de link"
 >abstract="Uma extensão do navegador que permite ver os dados de rastreamento de link como uma sobreposição no site."
 
 <!-- markdownlint-enable MD034 -->
@@ -47,7 +48,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channels"
 >title="Canais de marketing"
->abstract="Crie regras que categorizem como os clientes chegam ao seu site."
+>abstract="Crie regras que categorizem como os clientes chegam ao site."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,8 +74,8 @@ ht-degree: 31%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-streaming-media"
->title="Dados de mídia de transmissão"
->abstract="Um complemento do Adobe Analytics especializado na coleta de dados de mídia, como áudio, vídeo ou conteúdo transmitido."
+>title="Dados de mídia de streaming"
+>abstract="Um complemento do Adobe Analytics especializado na coleção de dados de mídia, como áudio, vídeo ou conteúdo transmitido."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,4 +96,3 @@ Considere quais dos seguintes recursos do Adobe Analytics você deseja continuar
 | [Feeds de dados](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | A exportação de dados de conjuntos de dados de primeira geração está disponível por meio da [API de acesso a dados da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=pt-BR) e por meio dos [destinos da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=pt-BR). Essas opções fornecem exportação em nível de evento/linha de todos os dados coletados ou assimilados no Data Lake da Experience Platform. Colunas de dados de pós-processamento não estão disponíveis, visto que são computadas no momento da consulta. A exportação de colunas de pós-processamento está disponível por meio dos relatórios. |
 | [Data Warehouse](https://experienceleague.adobe.com/en/docs/analytics/export/data-warehouse/data-warehouse) | A [Exportação da tabela completa do Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) é a evolução dos relatórios do Data Warehouse no Adobe Analytics, com muitos recursos novos solicitados com frequência que não estão disponíveis no Data Warehouse atualmente. |
 | [Dados de streaming de mídia](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/media-overview) | Os dados de mídia de streaming estão disponíveis ao usar o conector de origem do Analytics como parte do painel Visualizadores simultâneos de mídia e do painel Tempo gasto com a reprodução de mídia do Workspace. |
-

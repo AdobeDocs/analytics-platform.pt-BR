@@ -7,7 +7,7 @@ exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: 4c0a18bcaef0b9d6a4d2289fc0be20cfcfefff7d
 workflow-type: tm+mt
 source-wordcount: '19477'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -529,7 +529,7 @@ Os seguintes modelos estão disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--productUsageOverviewReport"
 >title="Visualize como o produto Customer Journey Analytics é usado em sua organização."
->abstract="**Isso pode ajudá-lo** a entender melhor quantas pessoas estão usando o Customer Journey Analytics, com que frequência eles o usam e as tendências de uso ao longo do tempo. Você também pode ver o número de projetos que estão sendo criados e detalhes sobre esses projetos (como quais componentes, visualizações e painéis são usados com mais frequência) e muitas outras estatísticas de uso.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como excluir projetos ou componentes não utilizados ou fornecer treinamento de usuário para recursos populares."
+>abstract="**Isso pode ajudar** a entender melhor quantas pessoas estão usando o Customer Journey Analytics, com que frequência o usam e as tendências de uso ao longo do tempo. Você também pode ver o número de projetos que estão sendo criados, detalhes sobre esses projetos (como quais componentes, visualizações e painéis são usados com mais frequência) e muitas outras estatísticas de uso.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como excluir projetos ou componentes não utilizados ou fornecer treinamento a usuários para recursos populares."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -550,7 +550,7 @@ Os seguintes modelos estão disponíveis:
 | **Resumo da página** | Veja as principais informações sobre qualquer página nas suas propriedades. Mostra as exibições da página, uma linha de tendências, uma visualização de fluxo e muito mais.  <p>**Isso pode ajudar** a entender melhor como as pessoas interagem com uma determinada página.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como analisar o desempenho da página durante um período ou entender melhor o que gera tráfego para a página.</p><p>Esse modelo usa a métrica Exibições de página. Ele também usa as visualizações de linhas e fluxo.</p> |
 | **Páginas de entrada** | Veja as principais páginas que as pessoas acessam quando visitam o site pela primeira vez. <p>**Isso pode ajudar** a saber quais páginas estão gerando mais tráfego para o site ou entender melhor as primeiras impressões que visitantes têm sobre o site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar a experiência inicial que as pessoas têm no site ou garantir que as páginas que as pessoas veem ao entrar no site sejam acolhedoras e forneçam os links necessários para outras áreas do site.</p><p>Este modelo usa a métrica Sessões. Ele também usa a visualização de barras e a visualização de tabela de forma livre.</p> |
 | **Páginas de saída** | Veja as principais páginas que as pessoas acessam imediatamente antes de sair do site.<p>**Isso pode ajudá-lo** a entender melhor quais páginas estão afastando as pessoas do site. </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como atualizar as páginas de saída comuns para otimizar a experiência que as pessoas têm antes de sair ou incluir conteúdo ou links para incentivar as pessoas a permanecerem no site.</p><p>Este modelo usa a métrica Sessões. Ele também usa a visualização de barras e a visualização de tabela de forma livre.</p> |
-| **Visão geral do uso do produto** (em breve) | Visualize como o produto Customer Journey Analytics é usado em sua organização. <p>**Isso pode ajudá-lo** a entender melhor quantas pessoas estão usando o Customer Journey Analytics, com que frequência eles o usam e as tendências de uso ao longo do tempo. Você também pode ver o número de projetos que estão sendo criados e detalhes sobre esses projetos (como quais componentes, visualizações e painéis são usados com mais frequência) e muitas outras estatísticas de uso.</p><p>**Com base no que você aprendeu, é possível** executar várias ações, como excluir projetos ou componentes não utilizados ou fornecer treinamento de usuário para recursos populares.</p> |
+| **Visão geral do uso do produto** (em breve) | Visualize como o produto Customer Journey Analytics é usado em sua organização. <p>**Isso pode ajudar** a entender melhor quantas pessoas estão usando o Customer Journey Analytics, com que frequência o usam e as tendências de uso ao longo do tempo. Você também pode ver o número de projetos que estão sendo criados, detalhes sobre esses projetos (como quais componentes, visualizações e painéis são usados com mais frequência) e muitas outras estatísticas de uso.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como excluir projetos ou componentes não utilizados ou fornecer treinamento a usuários para recursos populares.</p> |
 
 ### Web: conversão {#web-conversion}
 

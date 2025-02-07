@@ -1,5 +1,5 @@
 ---
-title: Entenda sua implementação do Adobe Analytics e como ela afeta sua atualização para o Customer Journey Analytics
+title: Entenda sua implementação do Adobe Analytics e como ela afeta a atualização para o Customer Journey Analytics
 description: Saiba mais sobre o caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
 workflow-type: tm+mt
 source-wordcount: '876'
-ht-degree: 11%
+ht-degree: 31%
 
 ---
 
-# Entenda sua implementação do Adobe Analytics e como ela afeta sua atualização para o Customer Journey Analytics {#implementation-affects-upgrade}
+# Entenda sua implementação do Adobe Analytics e como ela afeta a atualização para o Customer Journey Analytics {#implementation-affects-upgrade}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement"
 >title="AppMeasurement (arquivo JS manual)"
->abstract="Uma implementação do JavaScript que carrega o AppMeasurement.js em uma página e envia dados para o Adobe usando o objeto s (por exemplo, s.eVar1)."
+>abstract="Uma implementação do JavaScript que carrega o AppMeasurement.js em uma página e envia dados para a Adobe usando o objeto s (por exemplo, s.eVar1)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,7 +29,7 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-analyticsextension"
->title="Extensão do Adobe Analytics (tags)"
+>title="Extensão do Adobe Analytics (Tags)"
 >abstract="Uma implementação de tags que carrega a Coleção de dados da Adobe Experience Platform (conhecida anteriormente como Launch). A tag tem a extensão Adobe Analytics instalada."
 
 <!-- markdownlint-enable MD034 -->
@@ -38,8 +38,8 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk"
->title="Web SDK (alloy.js)"
->abstract="Uma implementação do JavaScript que carrega a biblioteca de SDK da Web (alloy.js) em uma página e envia dados para o Adobe usando uma carga JSON."
+>title="SDK da web (alloy.js)"
+>abstract="Uma implementação do JavaScript que carrega a biblioteca do SDK da web (alloy.js) em uma página e envia dados para a Adobe usando um conteúdo JSON."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,8 +47,8 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdkextension"
->title="Extensão do Web SDK (Tags)"
->abstract="Uma implementação de tags que carrega a Coleção de dados da Adobe Experience Platform (conhecida anteriormente como Launch). A tag tem a extensão Web SDK instalada."
+>title="Extensão do SDK da Web (Tags)"
+>abstract="Uma implementação de tags que carrega a Coleção de dados da Adobe Experience Platform (conhecida anteriormente como Launch). A tag tem a extensão do SDK da web instalada."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -66,7 +66,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-mobilesdk"
 >title="SDK móvel"
->abstract="Uma implementação que usa o Adobe Experience Platform Mobile SDK."
+>abstract="Uma implementação que usa o SDK da Adobe Experience Platform para dispositivos móveis."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -75,7 +75,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-unknown"
 >title="Implementação desconhecida"
->abstract="Se você não for a pessoa que gerencia a implementação, poderá selecionar essa opção temporariamente."
+>abstract="Se não for a pessoa que gerencia a implementação, poderá selecionar essa opção temporariamente."
 
 <!-- markdownlint-enable MD034 -->
 

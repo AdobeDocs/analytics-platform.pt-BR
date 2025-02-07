@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
+exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
+source-git-commit: 87df2fb92f238ce051ac5f6cc90e218737279471
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 12%
+ht-degree: 20%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="Um produto de análise de terceiros"
->abstract="Uma implementação que coleta dados para um produto de análise de terceiros, como Google Analytics. Selecionar essa opção desativa várias opções no questionário que não se aplicam ao atualizar para o Customer Journey Analytics de um produto de análise de terceiros."
+>abstract="Uma implementação que coleta dados para um produto de análise de terceiros, como Google Analytics. Selecionar essa opção desabilita várias opções no questionário que não se aplicam ao atualizar para o Customer Journey Analytics a partir de um produto de análise de terceiros."
 
 <!-- markdownlint-enable MD034 -->
 
