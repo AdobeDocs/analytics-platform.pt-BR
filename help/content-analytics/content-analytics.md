@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: c63fa8f776fcf3390d312fb44ae6c422e7fa7222
+source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -68,5 +68,5 @@ O Content Analytics usa dados de exibição de imagem da Web coletados em conjun
 
 >[!MORELIKETHIS]
 >
->[Usar análise de conteúdo (t.b.d.)](#value)
+>[Relatórios de análise de conteúdo](#report/report.md)
 >[Configurar o Content Analytics](config/configuration.md)

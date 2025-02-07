@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
+source-git-commit: 501a9fbd7c8abd8a63348c2c8d11b88b31a0f6df
 workflow-type: tm+mt
-source-wordcount: '3498'
-ht-degree: 99%
+source-wordcount: '3562'
+ht-degree: 97%
 
 ---
 
@@ -144,7 +144,7 @@ Algumas dessas mesmas preferências também podem ser personalizadas para projet
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulttablemetric"
 >title="Métrica de tabela padrão"
->abstract="Selecione a métrica padrão ou o container para usar em tabelas de forma livre. Se a visualização de dados selecionada não contiver a métrica padrão ou o container selecionado, a tabela alternará automaticamente para outra métrica primária."
+>abstract="Selecione a métrica padrão a ser usada para tabelas de forma livre. Se a visualização de dados selecionada não contiver a métrica padrão selecionada, a tabela alternará automaticamente para outra métrica primária."
 
 
 <!-- markdownlint-enable MD034 -->
@@ -181,7 +181,17 @@ Selecione os títulos da seção vinculada para obter mais informações e conte
 | | Cálculo percentual | <ul><li>Coluna</li><li>Linha</li></ul> |
 | | Totais de coluna (somente linhas estáticas) | <ul><li>Exibir soma das linhas: mostra a soma dos itens de linha individuais </li><li>Exibir total geral: mostra a soma de linhas desduplicadas.</li></ul> |
 
-### Preferências de visualizações
+### Preferências de visualizações {#visalization-preferences}
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultflowcontainer"
+>title="Métrica de tabela padrão"
+>abstract="Selecione o container padrão a ser usado para visualizações de Fluxo. Se a visualização de dados selecionada não contiver o contêiner padrão selecionado, a visualização de Fluxo alternará automaticamente para outro contêiner principal."
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaultfalloutcontainer"
+>title="Métrica de tabela padrão"
+>abstract="Selecione o container padrão a ser usado para visualizações de Fallout. Se a visualização de dados selecionada não contiver o container padrão selecionado, a visualização Fallout mudará automaticamente para outro container principal."
 
 Você pode atualizar as preferências de visualização para todos os novos projetos criados no Analysis Workspace. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
 
