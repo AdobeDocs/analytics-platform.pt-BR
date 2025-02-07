@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 2dd215b0fe689c9370e9f5867fd1bd5fdee83d42
+source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 7%
@@ -236,7 +236,7 @@ Consulte também Experience Platform [Medidas de proteção de exportação do c
 | Assimilação de dados no Data Lake a partir da assimilação de Edge Network ou Streaming | &lt; 60 minutos |
 | Assimilação de dados no Data Lake pelo Adobe Analytics Source Connector | &lt; 2,25 horas |
 | Assimilação de dados no Customer Journey Analytics a partir do Data Lake | &lt; 90 minutos |
-| Costura (recurso opcional; consulte [Visão geral da compilação](../stitching/overview.md) para obter mais informações) | 4 horas |
+| Costura (recurso opcional; consulte [Visão geral da compilação](../stitching/overview.md) para obter mais informações) | &lt; 4 horas |
 | Preenchimento retroativo do Adobe Analytics Source Connector de menos de 10 bilhões de eventos (máximo de 13 meses de dados históricos) | &lt; 4 semanas |
 | Publicação de público-alvo no perfil do cliente em tempo real, incluindo a criação automática do segmento de transmissão e permitindo que o segmento esteja pronto para receber os dados. | aprox. 60 minutos |
 | Frequência de atualização para públicos | Atualização única: latência inferior a 5 minutos.<br/>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência é indissociável da taxa de atualização). |
