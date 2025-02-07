@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '3461'
-ht-degree: 100%
+source-git-commit: f75d2ed5130889f648628d0eec34556a47f1479b
+workflow-type: tm+mt
+source-wordcount: '3498'
+ht-degree: 99%
 
 ---
 
@@ -138,6 +138,17 @@ Algumas dessas mesmas preferências também podem ser personalizadas para projet
 >abstract="Selecionar **[!UICONTROL Mostrar previsão]** preverá automaticamente a primeira coluna de métrica adicionada a uma visualização de tabela de forma livre de série temporal."
 
 <!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_prefs_defaulttablemetric"
+>title="Métrica de tabela padrão"
+>abstract="Selecione a métrica padrão ou o container para usar em tabelas de forma livre. Se a visualização de dados selecionada não contiver a métrica padrão ou o container selecionado, a tabela alternará automaticamente para outra métrica primária."
+
+
+<!-- markdownlint-enable MD034 -->
+
 
 
 Você pode personalizar as preferências da tabela de forma livre para todos os novos projetos criados no Analysis Workspace. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
