@@ -6,9 +6,10 @@ feature: Data Views
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: f8b984d2b429c731608b9774b44acea75ff1dfc7
+exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
+source-git-commit: 676f6c83bcf35f8da1a07841c043e1b56c57baf6
 workflow-type: tm+mt
-source-wordcount: '12450'
+source-wordcount: '13066'
 ht-degree: 1%
 
 ---
@@ -228,13 +229,13 @@ O Tableau Desktop oferece suporte aos seguintes cenários para o parâmetro `FLA
    1. Selecione **[!UICONTROL Projetos]**.
    1. Selecione **[!UICONTROL Novo Modelo]** em Projetos LookML.
    1. Para garantir que você não afete outros usuários. selecione Enter Development Mode (Entrar no modo de desenvolvimento) quando solicitado.
-   1. Na experiência Criar modelo:
+   1. Na experiência **[!UICONTROL Criar Modelo]**:
       1. Em **[!UICONTROL ➊ Selecione a Conexão de Banco de Dados]**:
          1. Selecione sua conexão de banco de dados em **[!UICONTROL Selecionar conexão de banco de dados]**. Por exemplo: **[!UICONTROL example_looker_connection]**.
          1. Nomeie seu projeto em **[!UICONTROL Crie um novo Projeto LookML para este modelo]**. Para `example: example_looker_project`.
          1. Selecione **[!UICONTROL Próximo]**.
       1. Em **[!UICONTROL ➋ Selecionar Tabelas]**:
-         1. Selecione **[!UICONTROL público]** e certifique-se de que sua visualização de dados de Customer Journey Analytics esteja selecionada. Por exemplo: ![Marca de seleção](/help/assets/icons/Checkmark.svg) **[!UICONTROL cc_data_view]**.
+         1. Selecione **[!UICONTROL public]** e certifique-se de que sua visualização de dados de Customer Journey Analytics está selecionada. Por exemplo: ![Marca de seleção](/help/assets/icons/Checkmark.svg) **[!UICONTROL cc_data_view]**.
          1. Selecione **[!UICONTROL Próximo]**.
       1. Em **[!UICONTROL ➌ Selecione Chaves Primárias]**:
          1. Selecione **[!UICONTROL Próximo]**.
@@ -729,16 +730,16 @@ Customer Journey Analytics ![Visualização classificada de dimensão única](as
 1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
 1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
    1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Ano do Intervalo de Datas]**.
+   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
       ![Filtro de pesquisa](assets/uc2-looker-filter.png)
 1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2024/01/01]**.
-1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Nome do Produto]**.
+1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo, selecione **[!UICONTROL Nome do Produto]**.
 1. Na seção **[!UICONTROL ‣ Campos Personalizados]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Medida Personalizada]** no menu suspenso **[!UICONTROL + Adicionar]**. No diálogo **[!UICONTROL Criar medida personalizada]**:
+   1. Selecione **[!UICONTROL Medida Personalizada]** no menu suspenso **[!UICONTROL + Adicionar]**.
+   1. No diálogo **[!UICONTROL Criar medida personalizada]**:
       1. Selecione **[!UICONTROL Receita de compra]** no menu suspenso **[!UICONTROL Campo a medir]**.
       1. Selecione **[!UICONTROL Soma]** no menu suspenso **[!UICONTROL Tipo de medida]**.
-      1. Insira um nome de campo personalizado para **[!UICONTROL Nome]**. Por exemplo: `Sum of Purchase Revenue`.
+      1. Insira um nome de campo personalizado para **[!UICONTROL Nome]**. Por exemplo: `Purchase Revenue`.
       1. Selecione a guia **[!UICONTROL Detalhes do campo]**.
       1. Selecione **[!UICONTROL Decimais]** no menu suspenso **[!UICONTROL Formatar]** e verifique se `0` está inserido em **[!UICONTROL Decimais]**.
          ![Campo de métrica personalizado do pesquisador](assets/uc5-looker-customfield.png)
@@ -751,8 +752,18 @@ Customer Journey Analytics ![Visualização classificada de dimensão única](as
       1. Selecione **[!UICONTROL Decimais]** no menu suspenso **[!UICONTROL Formatar]** e verifique se `0` está inserido em **[!UICONTROL Decimais]**.
       1. Selecione **[!UICONTROL Salvar]**.
    1. Ambos os campos são adicionados automaticamente à visualização de dados.
+1. Selecione **[!UICONTROL + Filtro]** para adicionar outros **[!UICONTROL Filtros]** e limitar os dados.
+1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**, selecione **[!UICONTROL ‣ Campos Personalizados]** e **[!UICONTROL Comprar Receita]**.
+1. Faça as seleções apropriadas e insira os valores propostos, assim, o filtro lê **[!UICONTROL está entre inclusivo]** `1000000` **[!UICONTROL E]** `2000000`.
 1. Selecione **[!UICONTROL Executar]**.
 1. Selecione **[!UICONTROL ‣ Visualização]** para exibir a visualização de linha.
+1. Selecione **[!UICONTROL Editar]** em **[!UICONTROL Visualização]** para atualizar a visualização. No diálogo pop-up:
+   1. Selecione a guia **[!UICONTROL Série]**.
+   1. Role para baixo para ver **[!UICONTROL Compras]** e altere o **[!UICONTROL Tipo]** para **[!UICONTROL Linha]**.
+   1. Selecione a guia **[!UICONTROL A]**.
+   1. Arraste **[!UICONTROL Compras]** do contêiner **[!UICONTROL Esquerda]** para onde lê **[!UICONTROL *Arraste a série para criar um novo eixo esquerdo *]**. Esta ação cria um contêiner**[!UICONTROL  Left 2 ]**.
+      ![Configuração de visualização do Looker](assets/uc5-looker-visualization.png)
+   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) ao lado de **[!UICONTROL Edit]** para ocultar a caixa de diálogo pop-up
 
 Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
@@ -924,14 +935,15 @@ Customer Journey Analytics ![Painel de Dimension múltiplos classificados](asset
 1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
 1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
    1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Ano do Intervalo de Datas]**.
+   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
       ![Filtro de pesquisa](assets/uc2-looker-filter.png)
 1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2024/01/01]**.
 1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
    1. Selecione a **[!UICONTROL Categoria do produto]**.
    1. Selecione **[!UICONTROL Nome do Produto]**.
 1. Na seção **[!UICONTROL ‣ Campos Personalizados]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Medida Personalizada]** no menu suspenso **[!UICONTROL + Adicionar]**. No diálogo **[!UICONTROL Criar medida personalizada]**:
+   1. Selecione **[!UICONTROL Medida Personalizada]** no menu suspenso **[!UICONTROL + Adicionar]**.
+   1. No diálogo **[!UICONTROL Criar medida personalizada]**:
       1. Selecione **[!UICONTROL Receita de compra]** no menu suspenso **[!UICONTROL Campo a medir]**.
       1. Selecione **[!UICONTROL Soma]** no menu suspenso **[!UICONTROL Tipo de medida]**.
       1. Insira um nome de campo personalizado para **[!UICONTROL Nome]**. Por exemplo: `Sum of Purchase Revenue`.
@@ -947,11 +959,19 @@ Customer Journey Analytics ![Painel de Dimension múltiplos classificados](asset
       1. Selecione **[!UICONTROL Decimais]** no menu suspenso **[!UICONTROL Formatar]** e verifique se `0` está inserido em **[!UICONTROL Decimais]**.
       1. Selecione **[!UICONTROL Salvar]**.
    1. Ambos os campos são adicionados automaticamente à visualização de dados.
-1. Na seção Filtros, selecione + Filtro. Na caixa de diálogo Adicionar filtro
-   1. Selecione⌘ Campos personalizados e, em seguida, Comprar receita.
+1. Na seção **[!UICONTROL Filtros]**, selecione **[!UICONTROL + Filtro]**. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**. Selecione **[!UICONTROL ‣ Campos Personalizados]** e depois **[!UICONTROL Receita de Compra]**.
 1. Selecione **[!UICONTROL é >]** e digite `800000` para limitar os resultados.
 1. Selecione **[!UICONTROL Executar]**.
 1. Selecione **[!UICONTROL ‣ Visualização]** para exibir a visualização de linha.
+1. Selecione **[!UICONTROL Editar]** em **[!UICONTROL Visualização]** para atualizar a visualização. No diálogo pop-up:
+   1. Selecione a guia **[!UICONTROL Plot]**.
+   1. Role para baixo e selecione **[!UICONTROL Editar configuração do gráfico]**.
+   1. Modifique o JSON na **[!UICONTROL Configuração do Gráfico (Substituir)]** como na captura de tela abaixo e selecione **[!UICONTROL Visualizar]**.
+
+      ![Configuração de visualização do pesquisador](assets/uc6-looker-visualization.png)
+
+   1. Selecione **[!UICONTROL Aplicar]**.
+   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) ao lado de **[!UICONTROL Edit]** para ocultar a caixa de diálogo pop-up
 
 Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
@@ -1076,15 +1096,15 @@ Como alternativa, você pode usar a funcionalidade de contagem distinta do Table
 1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
 1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
    1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Ano do Intervalo de Datas]**.
+   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
       ![Filtro de pesquisa](assets/uc2-looker-filter.png)
 1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2023/02/01]**.
 1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
    1. Selecione **[!UICONTROL Data do Intervalo de Datas]**, depois **[!UICONTROL Data]**.
-   1. Selecione Contagem Distinta no menu de contexto **Mais** no **[!UICONTROL Nome do produto]**.
+   1. Selecione **[!UICONTROL Agregar Contagem distinta]** no menu de contexto **Mais** no **[!UICONTROL Nome do produto]**.
       ![Menu de Contexto de Nome de Produto do Looker](assets/uc7-looker-count-distinct.png)
 1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]** e selecione 6︎⃣ para exibir uma visualização de número.
+1. Selecione **[!UICONTROL ‣ Visualização]** e selecione 6︎⃣ na barra de ferramentas para exibir uma visualização de Valor único.
 
 Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
@@ -1093,7 +1113,6 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 >[!ENDTABS]
 
 +++
-
 
 
 ## Usar nomes de intervalo de datas para filtrar
@@ -1184,7 +1203,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 ## Usar nomes de filtro para filtrar
 
-Nesse caso de uso, é desejável usar um filtro existente para a categoria de Produtos de pesca, que você definiu em Customer Journey Analytics, para filtrar e relatar os nomes dos produtos e as ocorrências (eventos) durante janeiro de 2023.
+Nesse caso de uso, é possível usar um filtro existente para a categoria Produtos de pesca, que você definiu em Customer Journey Analytics. Para filtrar e relatar nomes de produtos e ocorrências (eventos) durante janeiro de 2023.
 
 +++ Customer Journey Analytics
 
@@ -1256,14 +1275,14 @@ Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para es
 1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
 1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
    1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Ano do Intervalo de Datas]**.
+   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
       ![Filtro de pesquisa](assets/uc2-looker-filter.png)
 1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2023/02/01]**.
 1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]** para adicionar outro filtro.
 1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
    1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
    1. Na lista de campos, selecione **[!UICONTROL ‣ Nome do filtro]**.
-1. Verifique se **[!UICONTROL é]** como a seleção do filtro.
+1. Verifique se **[!UICONTROL é]** a seleção do filtro.
 1. Selecione **[!UICONTROL Produtos de pesca]** na lista de valores possíveis.
 1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
    1. Selecione **[!UICONTROL Nome do Produto]**.
@@ -1358,7 +1377,7 @@ Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para es
 1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
 1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
    1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Ano do Intervalo de Datas]**.
+   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
       ![Filtro de pesquisa](assets/uc2-looker-filter.png)
 1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2023/02/01]**.
 1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]** para adicionar outro filtro.
@@ -1371,9 +1390,8 @@ Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para es
    1. Selecione **[!UICONTROL Nome do Produto]**.
    1. Selecione **[!UICONTROL Contagem]** abaixo de **[!UICONTROL MEDIDAS]** no painel esquerdo (na parte inferior).
 1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]**.
 
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
+Você deve ver uma tabela semelhante como mostrado abaixo.
 
 ![Contagem distinta do pesquisador](assets/uc10-looker-result.png)
 
@@ -1552,13 +1570,13 @@ GROUP BY 1
 1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
 1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
    1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Ano do Intervalo de Datas]**.
+   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
       ![Filtro de pesquisa](assets/uc2-looker-filter.png)
 1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2023/02/01]**.
-1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Nome do Produto]**.
-Na seção **[!UICONTROL ‣ Campos Personalizados]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Medida Personalizada]** no menu suspenso **[!UICONTROL + Adicionar]**. No diálogo **[!UICONTROL Criar medida personalizada]**:
+1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo, selecione **[!UICONTROL Nome do Produto]**.
+1. Na seção **[!UICONTROL ‣ Campos Personalizados]** no painel esquerdo:
+   1. Selecione **[!UICONTROL Medida Personalizada]** no menu suspenso **[!UICONTROL + Adicionar]**.
+   1. No diálogo **[!UICONTROL Criar medida personalizada]**:
       1. Selecione **[!UICONTROL Receita de compra]** no menu suspenso **[!UICONTROL Campo a medir]**.
       1. Selecione **[!UICONTROL Soma]** no menu suspenso **[!UICONTROL Tipo de medida]**.
       1. Insira um nome de campo personalizado para **[!UICONTROL Nome]**. Por exemplo: `Sum of Purchase Revenue`.
@@ -1789,7 +1807,7 @@ GROUP BY 1
 1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
 1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
    1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Ano do Intervalo de Datas]**.
+   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
       ![Filtro de pesquisa](assets/uc2-looker-filter.png)
 1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2024/01/01]**.
 1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
@@ -1866,20 +1884,20 @@ As métricas calculadas definidas no Customer Journey Analytics são identificad
 Intervalos de datas definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL dataterangeName]**. Ao usar um campo **[!UICONTROL dataterangeName]**, você pode especificar qual intervalo de datas usar.
 
 **Transformações personalizadas**
-A Área de Trabalho do Power BI fornece funcionalidade de transformação personalizada usando [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Como exemplo, você deseja executar o caso de uso classificado Dimensão única com nomes de produtos em minúsculas.
+A Área de Trabalho do Power BI fornece funcionalidade de transformação personalizada usando [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Como exemplo, você deseja executar a [Dimensão única classificada](#single-dimension-ranked) caso de uso com nomes de produtos em minúsculas.
 
 1. Na exibição de relatório, selecione a visualização de barra.
-1. Selecione product_name no painel Dados.
-1. Selecione Nova coluna na barra de ferramentas.
+1. Selecione **[!UICONTROL product_name]** no painel Dados.
+1. Selecione **[!UICONTROL Nova coluna]** na barra de ferramentas.
 1. No editor de fórmulas, defina uma nova coluna chamada `product_name_lower`, como `product_name_lower = LOWER('public.cc_data_view[product_name])`.
    ![Transformação da Área de Trabalho do Power BI para Inferior](assets/uc14-powerbi-transformation.png){zoomable="yes"}
-1. Selecione a nova coluna product_name_lower no painel Dados em vez da coluna product_name.
-1. Selecione Relatório como Tabela de ![Mais](/help/assets/icons/More.svg) na visualização da tabela.
+1. Selecione a nova coluna **[!UICONTROL product_name_lower]** no painel **[!UICONTROL Dados]** em vez da coluna **[!UICONTROL product_name]**.
+1. Selecione **[!UICONTROL Relatório como Tabela]** de ![Mais](/help/assets/icons/More.svg) na visualização da tabela.
 
    A área de trabalho do Power BI deve ficar parecida com a exibida abaixo.
    ![Final de Transformação do Power BI Desktop](assets/uc14-powerbi-final.png){zoomable="yes"}
 
-A transformação personalizada resulta em atualizações nas consultas SQL. Consulte o uso da função `lower` no exemplo SQL abaixo:
+A transformação personalizada resulta em uma atualização das consultas SQL. Consulte o uso da função `lower` no exemplo SQL abaixo:
 
 ```sql
 select "_"."product_name_lower",
@@ -1941,7 +1959,7 @@ As métricas calculadas definidas no Customer Journey Analytics são identificad
 Intervalos de datas definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL Nome do intervalo de datas]**. Ao usar um campo **[!UICONTROL Nome do intervalo de datas]**, você pode especificar qual intervalo de datas usar.
 
 **Transformações personalizadas**
-O Tableau Desktop fornece funcionalidade de transformação personalizada usando [Campos Calculados](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Como exemplo, você deseja executar o caso de uso classificado Dimensão única com nomes de produtos em minúsculas.
+O Tableau Desktop fornece funcionalidade de transformação personalizada usando [Campos Calculados](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Como exemplo, você deseja executar a [Dimensão única classificada](#single-dimension-ranked) caso de uso com nomes de produtos em minúsculas.
 
 1. Selecione **[!UICONTROL Análise]** > **[!UICONTROL Criar campo calculado]** no menu principal.
    1. Defina o **[!UICONTROL Nome do Produto em Minúsculas]** usando a função `LOWER([Product Name])`.
@@ -1966,6 +1984,57 @@ FROM "public"."cc_data_view" "cc_data_view"
 WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."daterange" <= (DATE '2023-12-31')))
 GROUP BY 1
 HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM("cc_data_view"."purchase_revenue") <= 2000000.00000002))
+```
+
+>[!TAB Pesquisador]
+
+Os objetos Customer Journey Analytics estão disponíveis c na interface **[!UICONTROL Explorar]**. E são recuperados como parte da configuração da conexão, do projeto e do modelo no Looker. Por exemplo, **[!UICONTROL cc_data_view]**. O nome da exibição é igual à ID externa que você definiu para a exibição de dados no Customer Journey Analytics. Por exemplo, visualização de dados com **[!UICONTROL Título]** `C&C - Data View` e **[!UICONTROL ID Externa]** `cc_data_view`.
+
+**Dimension**
+Os Dimension do Customer Journey Analytics estão listados como **[!UICONTROL DIMENSION]** no painel esquerdo da **[!UICONTROL Visualização de dados da Cc]**. A dimensão é definida na visualização de dados Customer Journey Analytics. Por exemplo, a dimensão **[!UICONTROL Nome do Produto]** no Customer Journey Analytics tem um **[!UICONTROL DIMENSION]** **[!UICONTROL Nome do Produto]**, que é o nome da dimensão no Looker.
+Dimensões de intervalo de datas de Customer Journey Analytics, como **[!UICONTROL Dia]**, **[!UICONTROL Semana]**, **[!UICONTROL Mês]** e mais estão disponíveis como **[!UICONTROL Data Daterangeday]**, **[!UICONTROL Data Daterangeweek]**, **[!UICONTROL Data Daterangeweek]** e muito mais.  Ao usar uma dimensão de intervalo de datas, é necessário selecionar uma definição apropriada de data ou hora. Por exemplo, **[!UICONTROL Ano]**, **[!UICONTROL Trimestre]**, **[!UICONTROL Mês]**, **[!UICONTROL Data]**.
+
+**Métricas**
+As métricas do Customer Journey Analytics estão listadas como **[!UICONTROL DIMENSION]** no painel esquerdo da **[!UICONTROL Visualização de dados da Cc]**. Por exemplo, a métrica **[!UICONTROL Receita de compra]** no Customer Journey Analytics tem um **[!UICONTROL DIMENSION]** **[!UICONTROL Receita de compra]**. Para usar como uma métrica, crie um campo de medida personalizado conforme mostrado nos exemplos acima ou use o atalho em uma dimensão. Por exemplo, ****, selecione **[!UICONTROL Agregado]** e **[!UICONTROL Soma]**.
+
+**Filtros**
+Os filtros definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL Nome do filtro]**. Ao usar um campo **[!UICONTROL Nome do Filtro]** no Looker, você pode especificar qual filtro usar.
+
+**Métricas calculadas**
+As métricas calculadas definidas no Customer Journey Analytics são identificadas pelo [!UICONTROL Título] definido para a métrica calculada. Por exemplo, a métrica calculada **[!UICONTROL Nome do Produto (Contagem Distinta)]** tem [!UICONTROL Título] **[!UICONTROL Nome do Produto (Contagem Distinta)]** e é exibida como **[!UICONTROL Cm Nome do Produto Contagem Distinta]** no Pesquisador.
+
+**Intervalos de datas**
+Intervalos de datas definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL Nome do intervalo de datas]**. Ao usar um campo **[!UICONTROL Nome do intervalo de datas]**, você pode especificar qual intervalo de datas usar.
+
+**Transformações personalizadas**
+O Looker fornece a funcionalidade de transformação personalizada usando construtores de campo personalizados, conforme mostrado acima. Como exemplo, você deseja executar a [Dimensão única classificada](#single-dimension-ranked) caso de uso com nomes de produtos em minúsculas.
+
+1. Na seção **[!UICONTROL ‣ Campos Personalizados]** no painel esquerdo:
+   1. Selecione **[!UICONTROL Dimension personalizado]** no menu suspenso **[!UICONTROL + Adicionar]**.
+   1. Digite `lower(${cc_data_view.product_name})` na área de texto **[!UICONTROL Expressão]**. Você é auxiliado com a sintaxe correta quando começa a digitar `Product Name`.
+      ![Exemplo de transformação de Looker](assets/uc14-looker-transformation.png)
+   1. Digite `product name` como **[!UICONTROL Nome]**.
+   1. Selecione **[!UICONTROL Salvar]**.
+
+Você deve ver uma tabela semelhante como mostrado abaixo.
+
+![Resultado da transformação do pesquisador](assets/uc14-looker-result.png)
+
+
+A transformação personalizada resulta em atualizações nas consultas SQL. Consulte o uso da função `LOWER` no exemplo SQL abaixo:
+
+```sql
+SELECT
+    LOWER((cc_data_view."product_name")) AS "product_name",
+    COALESCE(SUM(CAST(( cc_data_view."purchase_revenue"  ) AS DOUBLE PRECISION)), 0) AS "sum_of_purchase_revenue",
+    COALESCE(SUM(CAST(( cc_data_view."purchases"  ) AS DOUBLE PRECISION)), 0) AS "sum_of_purchases"
+FROM public.cc_data_view  AS cc_data_view
+WHERE ((( cc_data_view."daterange"  ) >= (DATE_TRUNC('day', DATE '2023-01-01')) AND ( cc_data_view."daterange"  ) < (DATE_TRUNC('day', DATE '2024-01-01'))))
+GROUP BY
+    1
+ORDER BY
+    2 DESC
+FETCH NEXT 500 ROWS ONLY
 ```
 
 >[!ENDTABS]
@@ -2110,7 +2179,7 @@ Tableau dá suporte ao [modo de análise](https://learn.microsoft.com/en-us/powe
 
 ![Detalhamento do Tableau](assets/uc15-tableau-drilldown.png){zoomable="yes"}
 
-O detalhamento atualizará a visualização com receita de compra para produtos dentro da categoria de produto selecionada.
+O detalhamento atualiza a visualização com receita de compra para produtos na categoria de produto selecionada.
 
 ![Avaliação minuciosa do Tableau](assets/uc15-tableau-drillup.png){zoomable="yes"}
 
@@ -2182,7 +2251,7 @@ Cada uma das ferramentas de BI compatíveis tem algumas limitações ao trabalha
 
 >Power BI [!TAB Área de Trabalho]
 
-* A filtragem avançada de intervalo de datas do Power BI Desktop é exclusiva.  Para a data final, é necessário selecionar um após o dia em que deseja criar o relatório. Por exemplo, **[!UICONTROL está em ou depois de]** `1/1/2023` **[!UICONTROL e antes de]** `1/2/2023`.
+* A filtragem avançada de intervalo de datas do Power BI Desktop é exclusiva.  Para a data final, é necessário selecionar um após o dia em que deseja criar o relatório. Por exemplo, **[!UICONTROL está em ou após]** `1/1/2023` **[!UICONTROL e antes]** `1/2/2023`.
 * O padrão da Área de Trabalho do Power BI é **[!UICONTROL Importar]** quando você cria uma conexão. Use a **[!UICONTROL Consulta Direta]**.
 * O Power BI Desktop expõe as transformações de dados por meio do Power Query.  O Power Query funciona principalmente com conexões do tipo Importar, de modo que muitas transformações aplicadas, como funções de data ou sequência, exibem um erro informando que é necessário alternar para uma conexão do tipo Importar.  Se for necessário transformar dados no momento da consulta, você deverá usar dimensões e métricas derivadas para que o Power BI não precise fazer as transformações em si.
 * A Área de Trabalho do Power BI não entende como lidar com colunas do tipo date-time, portanto, as dimensões **[!UICONTROL daterange *X *]**, como**[!UICONTROL daterangehour ]**e**[!UICONTROL daterangeminute ]**, não são suportadas.
@@ -2198,11 +2267,11 @@ Cada uma das ferramentas de BI compatíveis tem algumas limitações ao trabalha
 
 >[!TAB Pesquisador]
 
-* O Looker tem um número máximo de conexões por configuração de nó que deve estar entre 5 e 100.  Não é possível definir isso como 1.  Isso implica que uma conexão do Looker sempre use no mínimo 5 das sessões de Serviço de consulta disponíveis.
-* O Looker permite criar um projeto com uma visualização baseada em uma visualização de Dados de Customer Journey Analytics. Em seguida, o Looker cria um modelo com base nas dimensões e métricas, disponíveis na visualização de dados, usando o LookerML.  Esta Visualização de projeto não é atualizada automaticamente para corresponder à origem.  Se você fizer alterações ou adições às dimensões, métricas, métricas calculadas ou filtros da Visualização de dados do CJA, essas alterações não serão exibidas automaticamente no Looker.  Você terá que atualizar manualmente a Visão do Projeto ou criar um novo Projeto.
+* O Looker tem um número máximo de conexões por configuração de nó que deve estar entre 5 e 100.  Não é possível definir esse valor como 1.  Essa configuração implica que uma conexão de Pesquisador sempre use no mínimo 5 das sessões de Serviço de consulta disponíveis.
+* O Looker permite criar um projeto com uma visualização baseada em uma visualização de Dados de Customer Journey Analytics. Em seguida, o Looker cria um modelo com base nas dimensões e métricas, disponíveis na visualização de dados, usando o LookerML.  Esta Visualização de projeto não é atualizada automaticamente para corresponder à origem.  Se você fizer alterações ou adições às dimensões, métricas, métricas calculadas ou filtros da Visualização de dados do CJA, essas alterações não serão exibidas automaticamente no Looker.  Você precisa atualizar manualmente a Visão do Projeto ou criar um novo Projeto.
 * A experiência do usuário do pesquisador em campos de data ou hora como **[!UICONTROL Data do intervalo de datas]** ou **[!UICONTROL Data do intervalo de datas]** é confusa.
 * O intervalo de datas do observador é exclusivo em vez de inclusivo.  O **[!UICONTROL até (antes)]** está em cinza, portanto, você pode perder esse aspecto.  Para o dia final, é necessário selecionar um após o dia em que deseja criar o relatório.
-* O Looker não trata automaticamente suas métricas como métricas.  Ao selecionar uma métrica, por padrão, o Looker tentará tratar a métrica como uma dimensão na consulta.  Para tratar uma métrica como uma métrica, é necessário criar um campo personalizado conforme ilustrado acima. Como atalho, você pode selecionar ****, selecionar **[!UICONTROL Agregação]** e depois selecionar **[!UICONTROL Soma]**.
+* O Looker não trata automaticamente suas métricas como métricas.  Quando você seleciona uma métrica, por padrão, o Looker tenta tratar a métrica como uma dimensão na consulta.  Para tratar uma métrica como uma métrica, é necessário criar um campo personalizado conforme ilustrado acima. Como atalho, você pode selecionar ****, selecionar **[!UICONTROL Agregação]** e depois selecionar **[!UICONTROL Soma]**.
 
 >[!ENDTABS]
 
