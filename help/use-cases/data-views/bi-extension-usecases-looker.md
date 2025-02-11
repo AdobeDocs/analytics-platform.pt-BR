@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 3930b3dd1ba4e058f1a89308dbd0ccec57208359
+source-git-commit: 739d92a3e9b623e3f04bf28de8213f1c76d5036b
 workflow-type: tm+mt
-source-wordcount: '13075'
+source-wordcount: '13066'
 ht-degree: 1%
 
 ---
@@ -236,7 +236,7 @@ O Tableau Desktop oferece suporte aos seguintes cenários para o parâmetro `FLA
          1. Nomeie seu projeto em **[!UICONTROL Crie um novo Projeto LookML para este modelo]**. Para `example: example_looker_project`.
          1. Selecione **[!UICONTROL Próximo]**.
       1. Em **[!UICONTROL ➋ Selecionar Tabelas]**:
-         1. Selecione **[!UICONTROL público]** e certifique-se de que sua visualização de dados do Customer Journey Analytics está selecionada. Por exemplo: ![Marca de seleção](/help/assets/icons/Checkmark.svg) **[!UICONTROL cc_data_view]**.
+         1. Selecione **[!UICONTROL público]** e certifique-se de que sua visualização de dados do Customer Journey Analytics está selecionada. Por exemplo: ![SelectBox](/help/assets/icons/SelectBox.svg) **[!UICONTROL cc_data_view]**.
          1. Selecione **[!UICONTROL Próximo]**.
       1. Em **[!UICONTROL ➌ Selecione Chaves Primárias]**:
          1. Selecione **[!UICONTROL Próximo]**.
@@ -244,7 +244,7 @@ O Tableau Desktop oferece suporte aos seguintes cenários para o parâmetro `FLA
          1. Certifique-se de selecionar a exibição. Por exemplo: **[!UICONTROL cc_data_view.view]**.
          1. Selecione **[!UICONTROL Próximo]**.
       1. Em **[!UICONTROL ➎ Digite O Nome Do Modelo]**:
-         1. Dê um nome ao seu modelo. Por exemplo: `example_looker_mode`l.
+         1. Dê um nome ao seu modelo. Por exemplo: `example_looker_model`.
       1. Selecione **[!UICONTROL Concluir e Explorar Dados]**.
 
    Você foi redirecionado para a interface do Looker **[!UICONTROL Explorar]**, pronta para explorar os dados.
@@ -258,8 +258,8 @@ O pesquisador dá suporte aos seguintes cenários para o parâmetro `FLATTEN`. C
 | parâmetro FLATTEN | Exemplo | Suportado | Observações |
 |---|---|:---:|---|
 | Nenhum | `prod:cja` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **Opção recomendada para usar!** |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![FecharCírculo](/help/assets/icons/CloseCircle.svg) | O localizador exibe um erro: **[!UICONTROL Não foi possível autenticar com as credenciais fornecidas. Tente novamente.]** |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **Opção recomendada para usar**. Observe que `%3FFLATTEN` é a versão de `?FLATTEN` codificada em URL. |
 
 ### Mais informações
 
