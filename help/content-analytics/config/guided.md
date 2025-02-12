@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
+source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 10%
@@ -256,7 +256,7 @@ Para uma configuração existente, não é possível editar a propriedade Tag. N
 
 * Para editar quais ativos devem ser incluídos ou excluídos ao coletar dados para a Análise de conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Ativo]**.
 
-### Resumo
+### Resumo {#summary}
 
 Depois de fornecer todos os detalhes necessários, um resumo fornecerá detalhes sobre os artefatos criados ou modificados.
 
@@ -266,7 +266,7 @@ Depois de fornecer todos os detalhes necessários, um resumo fornecerá detalhes
 
 ![Resumo da configuração de análise de conteúdo](../assets/aca-configuration-summary.png)
 
-### Ações
+### Ações {#actions}
 
 <!-- markdownlint-disable MD034 -->
 
