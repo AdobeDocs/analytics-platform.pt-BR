@@ -6,14 +6,22 @@ feature: Content Analytics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
 # Visão geral dos relatórios do Content Analytics
+
+>[!WARNING]
+>
+>Este artigo é um rascunho não oficial preliminar de uma versão final futura e faz parte da documentação do Content Analytics. Todo o conteúdo está sujeito a alterações e nenhuma obrigação legal pode ser derivada da versão atual deste artigo.
+>
+
+{{release-limited-testing}}
 
 Os relatórios do Content Analytics são feitos no Analysis Workspace. Um [modelo](#template) específico do Workspace está disponível, portanto, você pode acessar imediatamente um projeto do Workspace pré-preenchido com insights de conteúdo relevantes.
 

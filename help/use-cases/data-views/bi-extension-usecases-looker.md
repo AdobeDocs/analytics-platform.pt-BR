@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 739d92a3e9b623e3f04bf28de8213f1c76d5036b
+source-git-commit: 007674fd9da69a4a333d5300c4f4d30640c4b366
 workflow-type: tm+mt
-source-wordcount: '13066'
+source-wordcount: '13056'
 ht-degree: 1%
 
 ---
@@ -222,7 +222,7 @@ O Tableau Desktop oferece suporte aos seguintes cenários para o parâmetro `FLA
       1. Selecione **[!UICONTROL Expandir tudo]** em **[!UICONTROL Configurações Opcionais]**.
       1. Defina **[!UICONTROL Máximo de conexões]** por nó como `5`.
       1. Verifique se **[!UICONTROL SSL]** está habilitado.
-      1. Selecione **[!UICONTROL Testar]** para testar a conexão. Você deve ver um banner aparecer na parte superior da tela com uma mensagem como **[!UICONTROL Sucesso, pode conectar uma sequência de caracteres JDBC: jdbc:postgresql://examplecompany.platform-query-stage.adobe.io:80/prod:cja?FLATTEN?tcpKeepAlive=true&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory&amp;sslmode=prefer]**.
+      1. Selecione **[!UICONTROL Testar]** para testar a conexão. Você deve ver um banner aparecer na parte superior da tela com uma mensagem como **[!UICONTROL Sucesso, pode conectar JDBC ....]**.
       1. Selecione **[!UICONTROL Conectar]** para estabelecer e salvar a conexão.
    1. Você vê a nova conexão na interface **[!UICONTROL Conexões]**.
    1. Selecione **Esquerda** de **[!UICONTROL Administrador]** para ir para a navegação principal no painel esquerdo.

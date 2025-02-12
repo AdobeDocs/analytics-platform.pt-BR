@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: a2292c0c24aa86baedae0fe1835e552992eb0cae
+source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 11%
+source-wordcount: '1856'
+ht-degree: 10%
 
 ---
 
@@ -21,9 +21,14 @@ ht-degree: 11%
 >Este artigo é um rascunho não oficial preliminar de uma versão final futura e faz parte da documentação do Content Analytics. Todo o conteúdo está sujeito a alterações e nenhuma obrigação legal pode ser derivada da versão atual deste artigo.
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 A configuração guiada ajuda a configurar o Content Analytics de forma rápida e fácil. A configuração guiada usa um assistente para definir os requisitos para configurar o Content Analytics automaticamente para sua organização. Na tela **[!UICONTROL Configuração]**, você pode criar uma nova configuração ou editar uma configuração existente.
+
+>[!IMPORTANT]
+>
+>Você pode ter somente uma configuração do Content Analytics por sandbox em sua organização.
+
 
 Para acessar a configuração do Content Analytics
 
@@ -97,7 +102,7 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Visualização de dados"
->abstract="Selecione uma visualização de dados existente do Customer Journey Analytics com a qual você deseja mesclar seus dados de análise de conteúdo.<br/>"
+>abstract="Selecione uma visualização de dados existente do Customer Journey Analytics com a qual você gostaria de mesclar seus dados de análise de conteúdo.<br/>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -116,7 +121,7 @@ Se você editar uma configuração existente, a lista mostrará apenas as Visual
    * Para definir quais colunas serão exibidas na tabela, selecione ![Configurações de Coluna](/help/assets/icons/ColumnSetting.svg). Selecione quais colunas serão exibidas na caixa de diálogo **[!UICONTROL Personalizar tabela]** e selecione **[!UICONTROL Aplicar]** para aplicar as alterações.
 1. Selecione **[!UICONTROL Salvar]** para confirmar a visualização de dados selecionada. Selecione **[!UICONTROL Cancelar]** para cancelar.
 
-Uma Exibição de dados está vinculada a uma Customer Journey Analytics [Conexão](/help/connections/overview.md). E uma conexão é baseada em uma sandbox na sua organização. Depois de salvar a configuração, a **[!UICONTROL Sandbox]** será preenchida automaticamente com o nome adequado da sandbox, com base na exibição de Dados selecionada.
+Uma Exibição de dados está vinculada a uma Customer Journey Analytics [Connection](/help/connections/overview.md). E uma conexão é baseada em uma sandbox na sua organização. Depois de salvar a configuração, a **[!UICONTROL Sandbox]** será preenchida automaticamente com o nome adequado da sandbox, com base na exibição de Dados selecionada.
 
 
 ### Captura e definição de experiência {#onboarding-experiences}
@@ -141,13 +146,15 @@ Uma Exibição de dados está vinculada a uma Customer Journey Analytics [Conex�
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_edit_button"
 >title="Captura e definição de experiência"
->abstract="Você pode editar as configurações na extensão Adobe Content Analytics na propriedade Tag, associada à configuração selecionada."
+>abstract="Você pode editar as configurações na extensão do Adobe Content Analytics na propriedade Tag, associada à configuração selecionada."
 
 
 
 <!-- markdownlint-enable MD034 -->
 
-Nesta seção, você pode optar por incluir Experiências nos dados coletados com o Content Analytics. Uma experiência é todo o texto em uma página da Web que pode ser reproduzido usando o URL usado pelo usuário inicial que visita essa página da Web. Quando selecionada, você deve definir para quais URLs deseja incluir experiências.
+Nesta seção, você pode optar por incluir Experiências nos dados coletados com o Content Analytics.  Uma experiência é todo o texto em uma página da Web que pode ser reproduzido usando o URL usado pelo usuário inicial que visita essa página da Web.
+
+Por padrão, **[!UICONTROL Incluir experiências]** está desativado. Quando selecionada, você deve definir para quais URLs deseja incluir experiências.
 
 Para incluir Experiências em uma configuração nova ou não implementada:
 
@@ -157,8 +164,8 @@ Para incluir Experiências em uma configuração nova ou não implementada:
 1. Especifique os parâmetros que determinam como o conteúdo é renderizado no site. Os parâmetros são zero ou mais combinações de uma **[!UICONTROL expressão regular de domínio]** e **[!UICONTROL parâmetros de consulta]**.
    1. Insira uma **[!UICONTROL Expressão regular de domínio]**, por exemplo `(?!.*\b(store|help|admin)\b)`.
    1. Especifique uma lista separada por vírgulas de **[!UICONTROL Parâmetros de consulta]**, por exemplo `outdoors, patio, kitchen`.
-   1. Selecione **[!UICONTROL Remover]** se desejar remover uma combinação.
-   1. Selecione **[!UICONTROL Adicionar outro]** se quiser adicionar outra combinação.
+1. Selecione **[!UICONTROL Remover]** se desejar remover uma combinação de expressão regular de domínio e parâmetros de consulta.
+1. Selecione **[!UICONTROL Adicionar outro]** se quiser adicionar outra combinação de uma expressão regular e parâmetros de consulta.
 
 Para editar experiências existentes ou incluir novas Experiências em uma configuração implementada:
 
@@ -204,7 +211,7 @@ Para editar experiências existentes ou incluir novas Experiências em uma confi
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Coleção de dados"
->abstract="Você pode editar as configurações de páginas na extensão Adobe Content Analytics na propriedade Tag, associada à configuração selecionada."
+>abstract="Você pode editar as configurações de páginas na extensão do Adobe Content Analytics na propriedade Tag, associada à configuração selecionada."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
@@ -230,10 +237,7 @@ Em uma nova configuração, é necessário definir qual propriedade de tag desej
 
    1. Selecione **[!UICONTROL Criar novo]**.
    2. Especifique um **[!UICONTROL Nome da marca]**, por exemplo `ACA Test`.
-   3. Especifique um ou mais **[!UICONTROL Domínios]**, por exemplo, `example.com`.
-
-   * Para adicionar mais domínios, selecione **[!UICONTROL Adicionar outro]**.
-   * Para remover um domínio, selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg).
+   3. Especifique **[!UICONTROL Domínios]**, por exemplo, `example.com`.
 
 * Caso tenha selecionado incluir experiências, indique quais páginas devem ser incluídas ou excluídas ao coletar dados para o Content Analytics.
 
@@ -254,13 +258,25 @@ Para uma configuração existente, não é possível editar a propriedade Tag. N
 
 ### Resumo
 
-Depois de fornecer todos os detalhes necessários, você verá um **[!UICONTROL Você está quase pronto para implementar o _nome da configuração_ para o resumo da Análise de Conteúdo]**.
+Depois de fornecer todos os detalhes necessários, um resumo fornecerá detalhes sobre os artefatos criados ou modificados.
 
-Para configurações implementadas existentes, você verá um **[!UICONTROL Nome da _configuração_ implementado para o resumo do Content Analytics]**.
+* Você vê um **[!UICONTROL Você está quase pronto para implementar o _nome da configuração_ para o resumo do Content Analytics]** ao implementar uma nova configuração.
+
+* Para configurações implementadas existentes, você verá um **[!UICONTROL Nome da _configuração_ implementado para o resumo do Content Analytics]**.
 
 ![Resumo da configuração de análise de conteúdo](../assets/aca-configuration-summary.png)
 
 ### Ações
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_implementation_warning"
+>title="Aviso de implementação de integração"
+>abstract="Isso configurará o Content Analytics com base parcialmente na entrada fornecida neste fluxo de trabalho. Várias outras configurações são escolhidas automaticamente com base no que geralmente é útil para o Content Analytics. É recomendável revisar as configurações de cada artefato para confirmar se atendem aos seus requisitos e diretrizes. <br/>Observe que nenhum dado será coletado até que a biblioteca de marcas associada a esta configuração seja publicada manualmente.<br/>Observe também que para derivar atributos de imagens e texto, o Adobe recuperará esses atributos usando a URL capturada no momento da visita dos usuários de acordo com as configurações de coleta de dados implementadas."
+
+<!-- markdownlint-enable MD034 -->
+
 
 Quando você tiver criado ou editado uma configuração, as seguintes ações estarão disponíveis.
 
@@ -272,14 +288,14 @@ Quando você tiver criado ou editado uma configuração, as seguintes ações es
       1. A criação de conjuntos de dados para coletar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
    * Configuração do **[!UICONTROL Content Analytics]**:
       * Configuração de um processo de montagem de recurso com base na configuração.
-   * Configuração de **[!UICONTROL Customer Journey Analytics]**:
+   * Configuração do **[!UICONTROL Customer Journey Analytics]**:
       1. A visualização de dados selecionada é atualizada para incluir a dimensão e as métricas do Content Analytics.
       1. A conexão vinculada à visualização de dados selecionada é modificada para incluir o evento da Análise de conteúdo e os conjuntos de dados de atributo.
       1. Os modelos de relatórios do Content Analytics são adicionados ao Workspace.
    * Configuração de **[!UICONTROL coleção de dados]**:
       1. A propriedade Tag nova ou existente está configurada para ser compatível com a coleta de dados do Content Analytics. Essa configuração implica a inclusão da extensão Adobe Content Analytics para Tags.
       1. Um fluxo de dados é criado para eventos do Content Analytics.
-      1. A extensão Adobe Content Analytics é configurada para garantir que os eventos do Content Analytics sejam enviados para a sequência de dados do Content Analytics.
+      1. A extensão do Adobe Content Analytics é configurada para garantir que os eventos do Content Analytics sejam enviados para a sequência de dados do Content Analytics.
       1. Se o Web SDK não estiver configurado para a propriedade Tags, uma nova configuração do Web SDK será criada para enviar somente eventos do Content Analytics.
       1. Se o Web SDK estiver configurado para essa propriedade de tag, nenhuma alteração será feita na configuração existente do Web SDK.
 * **[!UICONTROL Salvar]**: as alterações feitas em uma configuração implementada são salvas e a implementação é atualizada.
