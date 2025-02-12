@@ -1,5 +1,5 @@
 ---
-title: Projete seu esquema para uso com o Customer Journey Analytics
+title: Projetar o esquema para uso com o Customer Journey Analytics
 description: Saiba mais sobre o caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ---
 
-# Projete seu esquema para uso com o Customer Journey Analytics {#upgrade-schema-architect}
+# Projetar o esquema para uso com o Customer Journey Analytics {#upgrade-schema-architect}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
@@ -35,7 +35,7 @@ A Adobe recomenda criar um esquema personalizado do Experience Data Model (XDM) 
 
 Um esquema XDM personalizado permite um esquema simplificado adaptado às necessidades da sua organização e dos aplicativos específicos da Platform que você usa. Diferentemente do esquema padrão do Adobe Analytics que usa o grupo de campos Adobe Analytics ExperienceEvent, quando são necessárias alterações em um esquema XDM personalizado, não é necessário percorrer milhares de campos não usados para localizar o campo que requer atualização.
 
-Para obter mais informações sobre essas opções de esquema, consulte [Escolher o esquema para Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+Para obter mais informações sobre essas opções de esquema, consulte [Escolher seu esquema para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 Revise as seções a seguir ao começar a projetar o esquema XDM.
 
@@ -45,7 +45,7 @@ A arquitetura subjacente do Customer Journey Analytics oferece muito mais flexib
 
 | Arquitetura de dados do Adobe Analytics | Arquitetura de esquema XDM |
 |---------|----------|
-| Métricas individuais são adicionadas à arquitetura de dados do Analytics.<br/>Por exemplo, no Adobe Analytics, você tem um eVar diferente para cada evento. | Crie métricas individuais na visualização de dados em vez de no esquema XDM. Isso proporciona mais flexibilidade no se você precisar fazer alterações posteriormente.<br/>Por exemplo, no Customer Journey Analytics, você tem um único evento no esquema e usa criar eventos na visualização de dados. |
+| Métricas individuais são adicionadas à arquitetura de dados do Analytics.<br/>Por exemplo, no Adobe Analytics, você tem uma eVar diferente para cada evento. | Crie métricas individuais na visualização de dados em vez de no esquema XDM. Isso proporciona mais flexibilidade no se você precisar fazer alterações posteriormente.<br/>Por exemplo, no Customer Journey Analytics, você tem um único evento no esquema e usa criar eventos na visualização de dados. |
 | Props e eVars são necessários para criar variáveis personalizadas. | B2 |
 | A3 | B3 |
 

@@ -39,19 +39,19 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
 >title="Ativar o esquema para o perfil"
->abstract="Ative o perfil no esquema para uso na CDP em tempo real do Adobe. Essa etapa aparece porque você selecionou o desejo de integração com a CDP em tempo real do Adobe.<br><br>Como esta etapa envolve clicar em uma única caixa, esta etapa leva apenas alguns minutos."
+>abstract="Ative o perfil no esquema para uso na Adobe Real-time CDP. Essa etapa aparece porque você selecionou o desejo de integrar com a Adobe Real-time CDP.<br><br>Como esta etapa envolve clicar em uma única caixa, esta etapa leva apenas alguns minutos."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
 >[!IMPORTANT]
 >
->Antes de começar a criar seu esquema personalizado, trabalhe com sua equipe de dados e outras partes interessadas em toda a organização para identificar o design de esquema ideal para o Customer Journey Analytics e outros aplicativos da Adobe Experience Platform que você usa. Para obter mais informações, consulte [Criar o esquema para uso com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Antes de começar a criar seu esquema personalizado, trabalhe com sua equipe de dados e outras partes interessadas em toda a organização para identificar o design de esquema ideal para a Customer Journey Analytics e outros aplicativos da Adobe Experience Platform que você usa. Para obter mais informações, consulte [Criar um esquema para usar com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
 As seções a seguir descrevem como criar um esquema que pode ser usado com o Customer Journey Analytics. As seguintes opções de schema estão disponíveis:
 
@@ -59,7 +59,7 @@ As seções a seguir descrevem como criar um esquema que pode ser usado com o Cu
 
 * **O esquema do Adobe Analytics que usa o grupo de campos Adobe Analytics ExperienceEvent:** requer a adição de milhares de campos desnecessários. Quaisquer mudanças futuras necessárias são mais difíceis.
 
-Para obter mais informações sobre essas opções de esquema, consulte [Escolher o esquema para Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+Para obter mais informações sobre essas opções de esquema, consulte [Escolher seu esquema para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 ## Criar o esquema
 
@@ -114,9 +114,9 @@ Para criar um esquema personalizado:
 
    1. (Opcional) Selecione quaisquer grupos de campos adicionais que deseja incluir.
 
-      Se você optar por usar o esquema padrão do Adobe Analytics em vez de criar um esquema XDM personalizado, poderá adicionar o grupo de campos Adobe Analytics ExperienceEvent agora. No entanto, o Adobe recomenda criar um esquema XDM personalizado em vez de adicionar esse grupo de campos.
+      Se você optar por usar o esquema padrão do Adobe Analytics em vez de criar um esquema XDM personalizado, poderá adicionar o grupo de campos Adobe Analytics ExperienceEvent agora. No entanto, a Adobe recomenda criar um esquema XDM personalizado em vez de adicionar esse grupo de campos.
 
-      Para obter mais informações sobre essas opções de esquema, consulte [Escolher o esquema para Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+      Para obter mais informações sobre essas opções de esquema, consulte [Escolher seu esquema para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
    1. Selecione **[!UICONTROL Adicionar grupos de campos]**.
 
@@ -142,7 +142,7 @@ Para criar um esquema personalizado:
 
    ![Objeto de identificação](assets/identification-field.png)
 
-   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a ID do Experience Cloud e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
+   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a Experience Cloud ID e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
 
    Selecione **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -164,7 +164,7 @@ Para criar um esquema personalizado:
 
    Selecione **[!UICONTROL Salvar]**.
 
-1. (Opcional) Se quiser integrar o Customer Journey Analytics com a RTCDP, selecione o elemento raiz do esquema que exibe o nome do esquema e selecione a opção **[!UICONTROL Perfil]**.
+1. (Opcional) Se quiser integrar o Customer Journey Analytics ao RTCDP, selecione o elemento raiz do esquema que exibe o nome do esquema e selecione a opção **[!UICONTROL Perfil]**.
 
    Você deve habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
@@ -190,7 +190,7 @@ Para criar um esquema personalizado:
 
    * Adicionar um objeto de identificação com base no grupo de campos Profile Core v2.
 
-   * Defina a ID do Experience Cloud como identificador principal e o email como identificador.
+   * Defina a Experience Cloud ID como identificador principal e o email como identificador.
 
    * Ativar o esquema do perfil
 

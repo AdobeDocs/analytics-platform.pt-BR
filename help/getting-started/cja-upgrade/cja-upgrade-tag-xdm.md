@@ -21,13 +21,13 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-xdm"
 >title="Adicionar a lógica da coleção de dados XDM à tag"
->abstract="Com a tag loader instalada no site, é possível adicionar regras e elementos de dados para preencher um objeto XDM a ser enviado para o Adobe. A Adobe recomenda manter um documento de design da solução para rastrear como as tags são configuradas.<br><br>Esta etapa requer muito trabalho, pois envolve a configuração de toda a lógica do Analytics para sua propriedade. Espere dedicar um mês ou mais para estabelecer as regras de tags corretas, testá-las e implantá-las no site."
+>abstract="Com a tag de carregamento instalada no site, é possível adicionar regras e elementos de dados para preencher um objeto XDM a ser enviado para o Adobe. A Adobe recomenda manter um documento de design da solução para rastrear como as tags são configuradas.<br><br>Esta etapa requer muito trabalho, pois envolve a configuração de toda a lógica do Analytics para sua propriedade. Espere dedicar um mês ou mais para estabelecer as regras de tags corretas, testá-las e implantá-las no site."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
@@ -39,7 +39,7 @@ Os elementos de dados são os blocos fundamentais do seu dicionário de dados (o
 
 As seções a seguir descrevem elementos de dados sugeridos e outros elementos de dados comuns que você pode configurar.
 
-Há vários tipos de elementos de dados. Dois elementos de dados comuns que você pode querer configurar são: um que captura o nome da página que as pessoas estão visualizando no site e outro que captura a ID de Experience Cloud de cada pessoa que visita seu site.
+Há vários tipos de elementos de dados. Dois elementos de dados comuns que você pode querer configurar são: um que captura o nome da página que as pessoas estão visualizando no site e outro que captura a Experience Cloud ID de cada pessoa que visita o site.
 
 Após configurar esses dois elementos de dados, você pode configurar elementos de dados adicionais para os dados específicos que deseja capturar.
 
@@ -91,7 +91,7 @@ Para criar um elemento de dados de nome de página:
 
 #### Elemento de dados ECID
 
-Um elemento de dados comum que se aplica à maioria das organizações é um elemento de dados que captura a ID de Experience Cloud de cada pessoa que visita seu site.
+Um elemento de dados comum que se aplica à maioria das organizações é um elemento de dados que captura a Experience Cloud ID de cada pessoa que visita seu site.
 
 Para criar um elemento de dados ECID:
 
@@ -101,15 +101,15 @@ Para criar um elemento de dados ECID:
 
 1. Selecione a tag criada recentemente na lista de [!UICONTROL Propriedades da tag] para abri-la.
 
-1. (Condicional) Instale a extensão do Serviço de ID de Experience Cloud se ainda não estiver instalada:
+1. (Condicional) Instale a extensão do Serviço da Experience Cloud ID se ela ainda não estiver instalada:
 
    1. Selecione **[!UICONTROL Extensões]** no painel esquerdo.
 
-   1. A guia **[!UICONTROL Instalado]** é selecionada por padrão. Se o bloco **[!UICONTROL Serviço de ID do Experience Cloud]** estiver listado, pule para a Etapa 5.
+   1. A guia **[!UICONTROL Instalado]** é selecionada por padrão. Se o bloco **[!UICONTROL Serviço da Experience Cloud ID]** estiver listado, pule para a Etapa 5.
 
-   1. Se o bloco **[!UICONTROL Serviço de ID do Experience Cloud]** não estiver listado, selecione a guia **[!UICONTROL Catálogo]**.
+   1. Se o bloco **[!UICONTROL Serviço da Experience Cloud ID]** não estiver listado, selecione a guia **[!UICONTROL Catálogo]**.
 
-   1. No campo de pesquisa, pesquise por **[!UICONTROL Experience Cloud ID Service]** e selecione o bloco quando ele aparecer
+   1. No campo de pesquisa, pesquise por **[!UICONTROL Serviço da Experience Cloud ID]** e selecione o bloco quando ele aparecer
 
    1. Selecione **[!UICONTROL Instalar]** > **[!UICONTROL Salvar]**.
 
@@ -121,7 +121,7 @@ Para criar um elemento de dados ECID:
 
    * **[!UICONTROL Nome]**: o nome do seu elemento de dados. Por exemplo, `ECID`.
 
-   * **[!UICONTROL Extensão]**: selecione **[!UICONTROL Serviço de ID de Experience Cloud]** na lista.
+   * **[!UICONTROL Extensão]**: selecione **[!UICONTROL Serviço da Experience Cloud ID]** na lista.
 
    * **[!UICONTROL Tipo de Elemento de Dados]**: Selecione **[!UICONTROL ECID]** na lista.
 

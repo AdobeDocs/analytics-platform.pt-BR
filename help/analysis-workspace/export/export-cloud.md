@@ -1,7 +1,7 @@
 ---
 description: Saiba como exportar um projeto do Analysis Workspace para um local na nuvem.
 keywords: Analysis Workspace
-title: Exportar relatórios de Customer Journey Analytics para a nuvem
+title: Exportar relatórios do Customer Journey Analytics para a nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 ---
 
-# Exportar relatórios de Customer Journey Analytics para a nuvem {#full-table-export}
+# Exportar relatórios do Customer Journey Analytics para a nuvem {#full-table-export}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 Você pode exportar tabelas completas do Workspace do Customer Journey Analytics e enviar exportações para destinos de nuvem designados.
 
-Outros métodos de exportação de relatórios de Customer Journey Analytics também estão disponíveis, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
+Outros métodos de exportação de relatórios do Customer Journey Analytics também estão disponíveis, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Entender a exportação de tabela completa
 
@@ -47,7 +47,7 @@ Use o processo a seguir ao exportar tabelas completas para a nuvem:
 
 1. [Exportar uma tabela completa do Workspace](#export-full-tables-from-analysis-workspace)
 
-1. [Acessar dados na nuvem](#view-exported-data-and-manifest-file) e [Gerenciar exportações no Adobe](/help/components/exports/manage-exports.md)
+1. [Acessar dados na nuvem](#view-exported-data-and-manifest-file) e [Gerenciar exportações na Adobe](/help/components/exports/manage-exports.md)
 
 ![O processo completo de exportação de tabela descrito nas etapas 1 a 4.](assets/export-full-table-process.png)
 
@@ -135,7 +135,7 @@ A exportação de dados do Customer Journey Analytics para a nuvem permite:
 
 * Exporte tabelas completas que contenham milhares ou milhões de linhas (3 milhões, 30 milhões, 150 milhões ou 300 milhões de linhas, dependendo do tipo de licença). Outros métodos de exportação permitem no máximo 50.000 linhas.
 
-* Incluir métricas calculadas nos dados de Customer Journey Analytics exportados.
+* Incluir métricas calculadas nos dados exportados do Customer Journey Analytics.
 
 * Saída de dados de estrutura como valores concatenados.
 
@@ -153,9 +153,9 @@ Verifique se as tabelas, o ambiente e as permissões atendem aos seguintes requi
 
 * **Tabelas:** Todas as tabelas devem incluir pelo menos uma dimensão na linha e uma métrica em cada coluna para serem suportadas com uma exportação de tabela completa.
 
-* **Ambiente:** Verifique se os [Endereços IP](/help/technotes/ip-addresses.md) e [Domínios](/help/technotes/domains.md) usados pelo Customer Journey Analytics são permitidos por meio do firewall da organização.
+* **Ambiente:** verifique se os [Endereços IP](/help/technotes/ip-addresses.md) e [Domínios](/help/technotes/domains.md) usados pela Customer Journey Analytics são permitidos por meio do firewall da organização.
 
-* **Permissões:** no Adobe Admin Console, os usuários devem receber um perfil de produto que tenha a permissão [!UICONTROL **Exportação de Tabela Completa**] atribuída a eles para que possam exportar tabelas completas. Para obter informações sobre como atribuir uma permissão a um perfil de produto no Admin Console, consulte [Permissão de Customer Journey Analytics no Admin Console](/help/technotes/access-control.md).
+* **Permissões:** no Adobe Admin Console, os usuários devem receber um perfil de produto que tenha a permissão [!UICONTROL **Exportação de Tabela Completa**] atribuída a eles para que possam exportar tabelas completas. Para obter informações sobre como atribuir uma permissão a um perfil de produto no Admin Console, consulte [Permissão do Customer Journey Analytics no Admin Console](/help/technotes/access-control.md).
 
   >[!NOTE]
   >
@@ -174,7 +174,7 @@ Os seguintes recursos não são compatíveis e são removidos automaticamente da
 * Dimensões dinâmicas
 
   Para obter mais informações, consulte [Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
-* os Dimension na primeira divisão são convertidos e adicionados como uma dimensão secundária na linha da tabela exportada; quaisquer outros detalhamentos não são incluídos na tabela
+* As dimensões na primeira divisão são convertidas e adicionadas como uma dimensão secundária na linha da tabela exportada; qualquer outra divisão não é incluída na tabela
 * A classificação não é suportada para a maioria dos conjuntos de dados; os dados podem ser classificados para pequenos conjuntos de dados
 
 ### Componentes incompatíveis
@@ -216,7 +216,7 @@ Se um modelo de atribuição não padrão estiver sendo usado em um relatório, 
   >
   >Relatórios multidimensionais são suportados somente ao exportar dados para a nuvem, conforme descrito neste artigo.
 
-## Comparação da exportação completa da tabela (em Customer Journey Analytics) para o Data Warehouse (no Adobe Analytics)
+## Comparação da exportação completa da tabela (no Customer Journey Analytics) para o Data Warehouse (no Adobe Analytics)
 
 Se você tiver usado o Data Warehouse anteriormente para exportar dados do Adobe Analytics, a tabela a seguir poderá ajudá-lo a entender as diferenças entre exportar tabelas completas no Customer Journey Analytics e exportar dados com o Data Warehouse no Adobe Analytics.
 

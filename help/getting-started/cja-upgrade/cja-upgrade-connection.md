@@ -21,19 +21,19 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Criar uma conexão no Customer Journey Analytics"
->abstract="Uma conexão permite converter dados do Adobe Experience Platform em um formato otimizado para relatórios Customer Journey Analytics. Criar uma conexão no Customer Journey Analytics é simples, demorando apenas alguns minutos para terminar."
+>abstract="Uma conexão permite converter dados do Adobe Experience Platform em um formato otimizado para relatórios do Customer Journey Analytics. Criar uma conexão no Customer Journey Analytics é simples, leva apenas alguns minutos para ser concluído."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-As informações a seguir explicam como criar e configurar uma conexão, bem como adicionar conjuntos de dados de Experience Platform à conexão criada. Para obter informações adicionais sobre como criar e configurar uma conexão, consulte [Criar ou editar uma conexão](/help/connections/create-connection.md).
+As informações a seguir explicam como criar e configurar uma conexão, bem como adicionar conjuntos de dados do Experience Platform à conexão criada. Para obter informações adicionais sobre como criar e configurar uma conexão, consulte [Criar ou editar uma conexão](/help/connections/create-connection.md).
 
 ## Criar e configurar a conexão {#create-connection}
 
@@ -69,7 +69,7 @@ As informações a seguir explicam como criar e configurar uma conexão, bem com
 
 ## Adicionar e configurar conjuntos de dados {#add-dataset}
 
-Você pode adicionar um conjunto de dados Experience Platform ao criar uma conexão.
+É possível adicionar um conjunto de dados do Experience Platform ao criar uma conexão.
 
 1. Na caixa de diálogo Configurações de conexão, clique em **[!UICONTROL Adicionar conjuntos de dados]**.
 
