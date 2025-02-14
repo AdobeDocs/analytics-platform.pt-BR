@@ -1,48 +1,48 @@
 ---
 description: Como fazer perguntas sobre a análise de dados da documentação do Customer Journey Analytics
-title: Assistente de IA de análise de dados no Customer Journey Analytics
+title: Assistente de IA de análise de dados na Customer Journey Analytics
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 20b578a6269aeaf54f6296b1f4337937887ecf05
+source-git-commit: 3814e3241a202fda802934685b4472b4c11c4245
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1650'
 ht-degree: 3%
 
 ---
 
-# A visualização de dados agora está disponível no Assistente de IA no CJA
+# Visualizar dados com o Assistente de IA no Customer Journey Analytics
 
-O Assistente de IA no Customer Journey Analytics (CJA) é um agente de conversa de IA gerativa que pode ajudá-lo a responder de forma mais rápida e eficiente às perguntas que você possa ter sobre seus dados do Analysis Workspace no CJA.
+O Assistente de IA no Customer Journey Analytics é um agente de conversação de IA generativo que responde de forma rápida e eficiente a perguntas sobre seus dados. Ele cria visualizações relevantes no Analysis Workspace usando componentes da visualização de dados e usando seus dados reais.
 
-Quando você faz uma pergunta de Visualização de dados, o Assistente de IA verifica todos os componentes na visualização de dados, incluindo os diferentes tipos de métricas e componentes, e traduz seu prompt para a dimensão, a métrica e o intervalo de datas corretos para a análise. Em vez de precisar se familiarizar com os componentes da visualização de dados e, em seguida, arrastar e soltar esses componentes na melhor combinação para responder à sua pergunta, você pode simplesmente digitar a pergunta no Assistente de IA.
+Usar o Assistente de IA para responder perguntas centradas em dados no Analysis Workspace pode economizar inúmeras horas que, de outra forma, você poderia gastar criando visualizações manualmente no Analysis Workspace e se familiarizando com seus componentes de visualização de dados.
 
-![Assistente de IA de análise de dados](assets/cja-ai-asst-da.gif)
+![Assistente de IA de Análise de Dados](assets/cja-ai-asst-da.gif)
 
 ## Recursos dentro e fora do escopo da versão do Alpha
 
-### Recursos de Alpha dentro do escopo
+### Recursos do Alpha dentro do escopo
 
-| Recurso suportado | Descrição |
+| Recurso compatível | Descrição |
 | --- | --- |
-| **Criar e atualizar visualizações** | Gera uma tabela de forma livre e uma visualização associada (por exemplo, linha, barra, rosca etc.).<p>Exemplo: *Qual é o lucro entre SKUs de fevereiro a maio?* |
-| **Tipos de visualização com suporte** | <ul><li>Linha</li><li>Várias linhas</li><li>Forma livre</li><li>Barra</li><li>Rosca</li><li>Número do resumo</li></ul> |
+| **Criar e atualizar visualizações** | Gera uma tabela de forma livre e uma visualização associada (como uma linha, barra, rosca e assim por diante).<p>Exemplo: *Qual é o lucro entre SKUs de fevereiro a maio?* |
+| **Tipos de visualização com suporte** | <ul><li>Linha</li><li>Várias linhas</li><li>Tabela de forma livre</li><li>Barra</li><li>Rosca</li><li>Número do resumo</li></ul> |
 | **Detecção de prompt fora do escopo** | Se você enviar um prompt que está fora do escopo, como &quot;exportar este projeto&quot;, o Assistente responderá informando que a pergunta está fora do escopo. |
-| **Esclarecimento de questões** | Se você fizer uma pergunta que não tenha contexto suficiente para o Assistente de IA responder, ou que seja muito genérica, o Assistente de IA responderá com uma pergunta esclarecedora e/ou com opções sugeridas. Exemplos: <p>**Componentes**<ul><li>Métrica: *Qual métrica de &quot;receita&quot; você quis dizer?*</li><li>Dimension: *Em qual das &quot;regiões&quot; abaixo você deseja se concentrar?*</li><li>Filtro: *Qual filtro de &quot;Conta&quot; você deseja aplicar?*</li><li>Intervalo de datas: *Por &quot;último mês&quot;, você quis dizer o último mês completo ou os últimos 30 dias?*</li></ul>**itens de Dimension**: qual &quot;nome da loja&quot; você quis dizer? (por exemplo, Armazenamento #5274, Armazenamento #2949 etc.) |
-| **Voltas múltiplas** | O Assistente de IA responde a um prompt com o contexto do(s) prompt(s) anterior(es), permitindo que os usuários atualizem as visualizações e façam perguntas de acompanhamento. Exemplo: <ul><li>Prompt 1: *Eventos de tendência de março.*</li><li>Prompt 2: *Mostrar os dados de março a abril*</li></ul> |
-| **Verificabilidade** | A verificabilidade e a correção dos dados podem ser confirmadas por meio da tabela de forma livre gerada e da visualização de dados. Por exemplo, se um usuário solicitar *Pedidos de tendência no último mês*, você poderá confirmar se a métrica correta (&quot;pedidos&quot;) e o intervalo de datas (&quot;último mês&quot;) foram selecionados no painel recém-gerado, na visualização de dados e na tabela de forma livre. |
+| **Esclarecimento de questões** | Se você fizer uma pergunta que não tenha contexto suficiente para o Assistente de IA responder, ou que seja muito genérica, o Assistente de IA responderá com uma pergunta esclarecedora ou com opções sugeridas. Exemplos: <p>**Componentes**<ul><li>Métrica: *Qual métrica de &quot;receita&quot; você quis dizer?*</li><li>Dimension: *Em qual das &quot;regiões&quot; abaixo você deseja se concentrar?*</li><li>Filtro: *Qual filtro de &quot;Conta&quot; você deseja aplicar?*</li><li>Intervalo de datas: *Por &quot;último mês&quot;, você quis dizer o último mês completo ou os últimos 30 dias?*</li></ul>**Itens do Dimension**: qual &quot;nome da loja&quot; você quis dizer? (Por exemplo, Armazenar #5274, Armazenar #2949 e assim por diante.) |
+| **Voltas múltiplas** | O Assistente de IA responde a um prompt com o contexto de qualquer prompt anterior, permitindo que os usuários atualizem as visualizações e façam perguntas de acompanhamento. Exemplo: <ul><li>Prompt 1: *Eventos de tendência de março.*</li><li>Prompt 2: *Mostrar os dados de março a abril*</li></ul> |
+| **Verificabilidade** | A verificabilidade e a correção dos dados podem ser confirmadas por meio da tabela de forma livre gerada e da visualização de dados. Por exemplo, se um usuário solicitar *Pedidos de tendência no último mês*, você poderá confirmar se a métrica (&quot;pedidos&quot;) e o intervalo de datas (&quot;último mês&quot;) corretos foram selecionados no painel recém-gerado, na visualização de dados e na tabela de forma livre. |
 | **Feedback** | <ul><li>Polegar para cima</li><li>Polegar para baixo</li><li>Sinalizador</li></ul> |
 
-### Recursos de Alpha fora do escopo
+### Recursos do Alpha fora do escopo
 
-| Recurso não suportado | Descrição |
+| Recurso incompatível | Descrição |
 | --- | --- |
-| **Resumo ou resposta embutida** | O Assistente de IA não pode responder em linha no painel de chat com uma resposta resumida de um prompt do usuário.Exemplo de prompts fora do escopo:<ul><li>*Forneça um resumo dos insights do meu último prompt.*</li><li>*Resuma os destaques da visualização de linha.*</li></ul> |
-| **Esclarecimento de questões** | As perguntas de esclarecimento estão limitadas a componentes e itens de dimensão. O Assistente de IA não pode esclarecer visualizações de dados, visualizações, granularidade de dados, comparação, escopo etc. Sem esclarecer dúvidas, o Assistente assume como padrão o que você provavelmente está solicitando. Se retornar uma visualização ou granularidade de dados inesperada, você poderá usar o recurso de várias rodadas/atualização para ajustar a visualização e os dados. |
-| **Ações/Recursos do Workspace** | O Assistente de IA não pode realizar ações para um usuário no Workspace além de criar e atualizar visualizações. Por exemplo, ela não pode executar nenhum dos seguintes procedimentos:<ul><li>Botões da interface de ação contextual (adicionar ao gráfico, novo painel, nova tabela)</li><li>Compartilhar</li><li>Exportar</li><li>Baixar</li><li>Gerenciar preferências do usuário</li><li>Preparar</li><li>Gerenciar visualização de dados</li><li>aplicativo Painéis do Analytics</li><li>Atribuição</li></ul> |
+| **Resumo ou resposta embutida** | O Assistente de IA não pode responder em linha no painel de chat com uma resposta resumida de um prompt do usuário. Exemplo de prompts fora do escopo:<ul><li>*Forneça um resumo dos insights do meu último prompt.*</li><li>*Resuma os destaques da visualização de linha.*</li></ul> |
+| **Esclarecimento de questões** | As perguntas de esclarecimento estão limitadas a componentes e itens de dimensão. O Assistente de IA não pode esclarecer aspectos como visualizações de dados, visualizações, granularidade, comparação e escopo dos dados. Quando não é possível esclarecer perguntas, o Assistente assume como padrão o que você provavelmente está solicitando. Se retornar uma visualização ou granularidade de dados inesperada, você poderá usar o recurso de atualização em várias voltas para ajustar a visualização e os dados. |
+| **Ações/Recursos do Workspace** | O Assistente de IA não pode realizar ações para um usuário no Workspace além de criar e atualizar visualizações. Por exemplo, ela não pode executar um dos seguintes procedimentos:<ul><li>Botões da interface de ação contextual (adicionar ao gráfico, novo painel, nova tabela)</li><li>Compartilhar</li><li>Exportar</li><li>Baixar</li><li>Gerenciar preferências do usuário</li><li>Preparar</li><li>Gerenciar visualização de dados</li><li>aplicativo Painéis do Analytics</li><li>Atribuição</li></ul> |
 | **Tipos de visualização sem suporte** | <ul><li>Fluxo</li><li>Fallout</li><li>Tabela de coorte</li><li>Área, Área empilhada</li><li>Barra empilhada</li><li>Marcador</li><li>Combo</li><li>Histograma</li><li>Barra horizontal, Barra horizontal empilhada</li><li>Resumo da métrica principal</li><li>Dispersão</li><li>Mudança de resumo</li><li>Texto</li><li>Mapas de árvore</li><li>Venn</li></ul> |
 
 <!---## Feature access in the Customer Journey Analytics UI
@@ -70,69 +70,81 @@ It is also available in Adobe Experience Platform, Adobe Journey Optimizer, Adob
 
 See [Access control](/help/technotes/access-control.md#access-control) for more information.--->
 
-## Acessar e usar a Visualização de dados no Assistente de IA
+## Acessar e usar a visualização de dados no Assistente de IA
 
 1. Acesse [experience.adobe.com](https://experience.adobe.com/) e faça logon com sua Adobe ID.
 
-2. Selecione **Customer Journey Analytics** na página inicial do Experience Cloud
+2. Selecione **Customer Journey Analytics** na página inicial da Experience Cloud.
 
-3. Clique em **[!UICONTROL Projeto em branco]** no banner na parte superior da página de projetos para abrir um novo projeto em branco.
+3. Selecione **[!UICONTROL Projeto em branco]** no banner na parte superior da página de projetos para abrir um novo projeto em branco.
 
-4. Certifique-se de que a visualização de dados selecionada para o painel é a visualização de dados que foi ativada para o uso do Assistente do AI para o teste de Alpha (acesse o canal do Alpha Slack se não tiver certeza)
+4. Certifique-se de que a visualização de dados selecionada para o painel é a mesma visualização de dados que foi ativada para uso com o Assistente de IA para testes do Alpha.
 
-5. Clique no ícone de bate-papo do Assistente do AI na parte superior direita. Observação: se você não vir o ícone de bate-papo no canto superior direito, entre em contato com o Administrador e solicite que ele siga [estas instruções](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access) para habilitar o &quot;Assistente de IA: Conhecimento do Produto&quot; e o &quot;Assistente de IA: Análise de Dados&quot; no Admin Console.
+   Se não tiver certeza, entre em contato com o canal do Alpha Slack.
+
+5. Selecione o ícone de chat do Assistente do AI na área superior direita da página.
+
+   Se você não vir o ícone de bate-papo, entre em contato com o administrador para que ele possa habilitar os seguintes recursos no Admin Console:
+
+   * **[!UICONTROL Assistente de IA: Conhecimento do Produto]**
+
+   * **[!UICONTROL Assistente de IA: Análise de Dados]**
+
+   Para obter detalhes adicionais, os administradores podem ver [estas instruções](https://experienceleague.adobe.com/en/docs/analytics-platform/using/ai-assistant#feature-access).
 
    ![Ícone do Assistente de IA](/help/assets/ai-asst-icon.png)
 
-6. Na caixa de diálogo **[!UICONTROL Pergunte sobre o Customer Journey Analytics]** na parte inferior, faça uma pergunta sobre visualização de dados no Assistente de IA.
+6. Na caixa de diálogo **[!UICONTROL Perguntar sobre o Customer Journey Analytics]**, na parte inferior da página, faça uma pergunta sobre visualização de dados no Assistente de IA.
+
+   Para obter mais informações, consulte os exemplos a seguir.
 
 ### Exemplo 1
 
 Por exemplo, digamos que você esteja interessado nos pedidos que sua empresa recebeu em julho.
 
-1. Insira *&quot;Pedidos de tendência em julho.&quot;*
+**Aviso:** Insira *&quot;Pedidos de tendência em julho.&quot;*
 
-   ![Solicitação de IA](/help/assets/ai-asst-prompt1.png)
+![Solicitação de IA](/help/assets/ai-asst-prompt1.png)
 
-2. O Assistente de IA agora reúne insights observando os dados na visualização de dados, incluindo as métricas e os componentes. Ele traduz o prompt para a(s) dimensão(ões), métrica(s) e intervalo de dados corretos.
+**Resposta:** O Assistente de IA coleta informações verificando os dados na exibição de dados, incluindo as métricas e os componentes. Ele traduz o prompt para as dimensões e métricas certas no intervalo de dados.
 
-   Como você pode ver, ele gerou automaticamente um gráfico de linha e uma tabela de forma livre mostrando pedidos para julho.
+Como você pode ver, ele gerou automaticamente um gráfico de linhas e uma tabela de forma livre para mostrar os pedidos de julho.
 
-   ![Responder ao prompt - gráfico de linhas e tabela de forma livre](/help/assets/ai-asst-result.png)
+![Responder ao prompt - gráfico de linhas e tabela de forma livre](/help/assets/ai-asst-result.png)
 
 ### Exemplo 2
 
 Em seguida, você deseja ver a comparação de receita por região.
 
-1. Na janela do prompt, digite *&quot;Mostrar receita por região.&quot;*
+**Prompt:** Na janela de prompt, digite *&quot;Mostrar receita por região.&quot;*
 
-2. O Assistente de IA entende de forma inteligente que, por &quot;região&quot;, você significa &quot;região do cliente&quot;. Ele produz um gráfico de barras que melhor mostra a receita por região:
+**Resposta:** O Assistente de IA entende de forma inteligente que, por &quot;região&quot;, você quer dizer &quot;região do cliente&quot;. Ele produz um gráfico de barras que melhor mostra a receita por região:
 
-   ![Gráfico de barras](/help/assets/ai-asst-result2.png)
+![Gráfico de barras](/help/assets/ai-asst-result2.png)
 
 ### Exemplo 3
 
-Em seguida, além de entender a receita por região, você também deseja ver os dados para lucro por região. Em vez de ter que digitar novamente o último prompt, você pode solicitar que o Assistente de IA atualize a visualização e a tabela de forma livre mais recentes.
+Em seguida, além de entender a receita por região, você também deseja ver os dados para lucro por região. Em vez de repetir o prompt anterior, você pode solicitar que o Assistente de IA atualize a visualização e a tabela de forma livre mais recentes.
 
-1. Na janela do prompt, digite *&quot;Adicionar lucro.&quot;*
+**Prompt:** Na janela de prompt, digite *&quot;Adicionar lucro.&quot;*
 
-2. O gráfico de **[!UICONTROL Barra]** ainda fornece a resposta mais concisa, mas a métrica de lucro foi adicionada como uma coluna na tabela de forma livre:
+**Resposta:** O gráfico de **[!UICONTROL Barra]** ainda fornece a resposta mais concisa, mas a métrica de lucro foi adicionada como uma coluna na tabela de forma livre:
 
-   ![Gráfico de barras](/help/assets/ai-asst-result4.png)
+![Gráfico de barras](/help/assets/ai-asst-result4.png)
 
 ### Exemplo 4
 
 Por fim, vamos analisar a receita por categoria de produto.
 
-1. Na janela do prompt, digite *&quot;Proporção da receita por categoria do produto&quot;.*
+**Prompt:** Na janela do prompt, digite *&quot;Proporção da receita por categoria do produto.&quot;*
 
-2. Novamente, a Visualização de dados no Assistente de IA escolhe a visualização mais apropriada, neste caso a visualização **[!UICONTROL Rosca]**, para responder à pergunta.
+**Resposta:** Novamente, a visualização de dados no Assistente de IA escolhe a visualização mais apropriada, neste caso a visualização **[!UICONTROL Rosca]**, para responder à pergunta.
 
-   ![Rosca](/help/assets/ai-asst-result3.png)
+![Rosca](/help/assets/ai-asst-result3.png)
 
 ## Exemplo de prompts de visualização de dados
 
-Estes são alguns exemplos de prompts comuns e quais visualizações o Assistente de IA usa para responder a esses prompts.
+A seguir estão alguns exemplos de prompts comuns e as visualizações usadas pelo Assistente do AI para responder a esses prompts.
 
 | Exemplo de prompt | Visualização esperada |
 | --- | --- |
@@ -151,9 +163,21 @@ Estes são alguns exemplos de prompts comuns e quais visualizações o Assistent
 
 ## Solicitação de práticas recomendadas
 
-O Assistente de IA processa o contexto fornecido por cada prompt do usuário e tenta responder de forma inteligente com a visualização mais apropriada, bem como com os componentes em uma tabela de forma livre. No entanto, a resposta do Assistente de IA pode variar com base nas palavras e frases específicas usadas em um prompt, portanto, pequenas alterações de idioma podem levar a resultados diferentes. Veja como aproveitar ao máximo: <ul><li>Ser específico: inclua termos exatos (como &quot;vendas do mês passado na Califórnia&quot;) para restringir a resposta.</li><li>Usar métricas e filtros claros: adicionar métricas específicas (como &quot;Receita&quot;), dimensões (por exemplo, &quot;nome do site&quot;), filtros (como &quot;usuários do iPhone&quot;) e intervalos de datas (como &quot;últimos três meses&quot;) ajuda o Assistente do AI a se concentrar nos dados corretos.</li><li>Faça perguntas diretas: escreva perguntas diretamente, como &quot;Qual é a receita média por categoria de produto este ano?&quot; O facilita o fornecimento de insights claros e relevantes pelo Assistente de IA.</li></ul>
+O Assistente de IA processa o contexto fornecido por cada prompt do usuário e tenta responder de forma inteligente com a visualização e os componentes mais apropriados em uma tabela de forma livre.
 
-Consulte a tabela abaixo de termos de exemplo e frases que você pode usar em prompts com a visualização de dados no AI Assistant, juntamente com os tipos de respostas que você pode esperar. Esses exemplos são projetados para ajudá-lo a se familiarizar com a forma como palavras ou estruturas específicas podem influenciar a saída do Assistente de IA, garantindo insights mais precisos e valiosos. Observe que o Assistente de IA usa IA gerativa, portanto, as visualizações ou os dados selecionados podem variar um pouco entre prompts semelhantes.
+As respostas podem variar com base nas palavras e frases específicas usadas no prompt, e pequenas alterações no idioma podem levar a resultados diferentes.
+
+Para obter os melhores resultados, considere as seguintes diretrizes:
+
+* Seja específico: inclua termos exatos para restringir a resposta. Veja a seguir um exemplo de um prompt específico: &quot;Vendas do mês passado na Califórnia&quot;
+
+* Usar métricas e filtros simples: adicionar métricas específicas (como &quot;Receita&quot;), dimensões (como &quot;nome do site&quot;), filtros (como &quot;usuários do iPhone&quot;) e intervalos de datas (como &quot;últimos três meses&quot;) ajuda o Assistente do AI a se concentrar nos dados corretos.
+
+* Fazer perguntas diretas: a formulação direta de perguntas facilita que o Assistente de IA forneça insights claros e relevantes. Veja a seguir um exemplo de como fazer uma pergunta direta em um prompt: &quot;Qual é a receita média por categoria de produto este ano?&quot;
+
+Revise a tabela a seguir de termos de exemplo e frases que você pode usar em prompts com visualização de dados no AI Assistant, juntamente com os tipos de respostas que você pode esperar.
+
+Esses exemplos são projetados para ajudá-lo a se familiarizar com a forma como palavras ou estruturas específicas podem influenciar a saída do Assistente de IA, garantindo insights mais precisos e valiosos. O Assistente de IA usa IA generativa, de modo que as visualizações ou os dados selecionados podem variar um pouco entre prompts semelhantes.
 
 | Resultado desejado | Exemplo de termos e frases |
 | --- | --- |
@@ -161,23 +185,25 @@ Consulte a tabela abaixo de termos de exemplo e frases que você pode usar em pr
 | Comparar componentes | <ul><li>Comparar</li><li>VS</li><li>Contraste</li><li>Semana a semana</li><li>Mês a mês</li><li>Trimestre a trimestre</li><li>Ano por ano</li></ul> |
 | Visualização de rosca | <ul><li>Proporção</li><li>Compartilhamento de</li><li>Distribuição</li><li>Porcentagem</li><li>Contribuição</li><li>Parte</li><li>Partes</li></ul> |
 | Visualização de linha | <ul><li>Tendência</li><li>[Métrica] em [Intervalo de tempo]</li></ul> |
-| Visualização de barra | <ul><li>[Métrica] por [dimensão]</li></ul> |
+| Visualização de barra | <ul><li>[Métrica] de [Dimension]</li></ul> |
 
-## Expectativas de teste de Alpha e feedback solicitado
+## Expectativas de teste do Alpha e feedback solicitado
 
-Depois de fazer cada pergunta, analise cuidadosamente a resposta fornecida pelo assistente. É crucial avaliar as visualizações geradas de forma abrangente antes de fornecer feedback. Pense no seguinte ao avaliar a resposta do Assistente de IA:
+Depois de fazer cada pergunta, analise cuidadosamente a resposta fornecida pelo assistente. É crucial avaliar as visualizações geradas de forma abrangente antes de fornecer feedback.
 
-* Resposta do painel de chat ou modelo: avalie a resposta textual fornecida pelo Assistente. A resposta é apropriada dado o contexto de seu(s) prompt(s)?
+Considere o seguinte ao avaliar uma resposta do Assistente de IA:
 
-* Visualização/gráfico: avalie a visualização. Essa é a visualização apropriada/esperada para sua pergunta ou você esperaria uma visualização diferente?
+* Resposta do painel de chat ou modelo: avalie a resposta textual fornecida pelo Assistente. A resposta é apropriada de acordo com o contexto do seu prompt?
+
+* Visualização/gráfico: avalie a visualização. Essa é a visualização apropriada ou esperada para sua pergunta, ou você esperaria uma visualização diferente?
 
 * Tabela de forma livre: avalie a tabela de forma livre. Os dados da tabela de forma livre estão corretos? Ele está detalhando os dados quando solicitado? Os filtros aplicados são os que você solicitou ou espera?
 
-* Mensagem de erro / Fora de escopo: se uma mensagem de erro genérica for fornecida dizendo que a pergunta está fora de escopo, forneça feedback sobre se você acha que a mensagem fora de escopo é apropriada, dado o seu prompt. Seu prompt estava realmente no escopo?
+* Mensagem de erro / Fora de escopo: se uma mensagem de erro genérica for fornecida declarando que a pergunta está fora do escopo, forneça feedback sobre se você acha que a mensagem fora do escopo é apropriada, dado o seu prompt. O seu prompt estava realmente no escopo?
 
-**Para cada resposta, aplique uma miniatura para cima ou para baixo, com base na resposta**
+**Para cada resposta, aplique uma miniatura para cima ou para baixo, com base na resposta.**
 
-Após a seleção de miniaturas para cima/para baixo, faça uma seleção para as caixas de comentários de multisseleção relevantes. Se quiser fornecer feedback adicional, adicione observações na caixa de texto aberta.
+Após a seleção de miniaturas para cima ou miniaturas para baixo, faça uma seleção para as caixas de comentários de multisseleção relevantes. Se quiser fornecer feedback adicional, adicione observações na caixa de texto aberta.
 
 ## Perguntas e contato
 
