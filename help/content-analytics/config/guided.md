@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 3bf62bebebfe2ef52abbd29245ef6e8e65807491
+source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 10%
@@ -273,7 +273,7 @@ Depois de fornecer todos os detalhes necessários, um resumo fornecerá detalhes
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Aviso de implementação de integração"
->abstract="Isso configurará o Content Analytics com base parcialmente na entrada fornecida neste fluxo de trabalho. Várias outras configurações são escolhidas automaticamente com base no que geralmente é útil para o Content Analytics. É recomendável revisar as configurações de cada artefato para confirmar se atendem aos seus requisitos e diretrizes. <br/>Observe que nenhum dado será coletado até que a biblioteca de marcas associada a esta configuração seja publicada manualmente.<br/>Observe também que para derivar atributos de imagens e texto, o Adobe recuperará esses atributos usando a URL capturada no momento da visita dos usuários de acordo com as configurações de coleta de dados implementadas."
+>abstract="Isso configurará o Content Analytics com base parcialmente na entrada fornecida neste fluxo de trabalho. Várias outras configurações são escolhidas automaticamente com base no que geralmente é útil para o Content Analytics. É recomendável revisar as configurações de cada artefato para confirmar se atendem aos seus requisitos e diretrizes. <br/><br/>Observe que nenhum dado será coletado até que a biblioteca de marcas associada a esta configuração seja publicada manualmente.<br/><br/>Observe também que para derivar atributos de imagens e texto, o Adobe recuperará esses atributos usando a URL capturada no momento da visita dos usuários de acordo com as configurações de coleta de dados implementadas."
 
 <!-- markdownlint-enable MD034 -->
 
