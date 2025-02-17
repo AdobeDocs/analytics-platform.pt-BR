@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 30e3df15aecec0bab180cd06e0ae7c79f58cdf44
+source-git-commit: 5fa4d47bcd42e4e392a7075076895826cf7061b1
 workflow-type: tm+mt
-source-wordcount: '3620'
+source-wordcount: '3618'
 ht-degree: 53%
 
 ---
@@ -100,7 +100,7 @@ Consulte o [Guia da Interface do Usuário do Editor de Consultas](https://experi
 
 ### Ferramentas de BI
 
-Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e testado apenas para Power BI e Tableau Desktop. Outras ferramentas de BI que usam a interface PSQL também podem funcionar, mas ainda não são oficialmente compatíveis.
+Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e testado para as ferramentas listadas abaixo. Outras ferramentas de BI que usam a interface PSQL também podem funcionar, mas ainda não são oficialmente compatíveis.
 
 +++ Power BI
 
