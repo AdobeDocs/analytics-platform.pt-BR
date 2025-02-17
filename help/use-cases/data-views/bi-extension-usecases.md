@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: e2063ee571f78558c487f80041f9d28616138c61
+source-git-commit: 220d48cd35d065b38dac441ce4155fa162a07533
 workflow-type: tm+mt
 source-wordcount: '14697'
 ht-degree: 1%
@@ -318,7 +318,7 @@ O pesquisador dá suporte aos seguintes cenários para o parâmetro `FLATTEN`. C
 1. Execute a célula.
 1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar a senha do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform no campo **[!UICONTROL Senha]** do Jupyter Notebook.
 
-   ![Etapa 1](assets/jupyter-config-step1.png) da Configuração do Jupter Notebook
+   ![Etapa 1](assets/jupyter-config-step1.png){zoomable="yes"} da Configuração do Jupter Notebook
 
 1. Em uma nova célula, insira as instruções para carregar a extensão SQL, a biblioteca necessária e conectar-se ao Customer Journey Analytics.
 
@@ -330,7 +330,7 @@ O pesquisador dá suporte aos seguintes cenários para o parâmetro `FLATTEN`. C
 
    Execute o shell. Você não deve ver nenhuma saída, mas a célula deve ser executada sem nenhum aviso.
 
-   ![Etapa 4](assets/jupyter-config-step2.png) da Configuração do Jupyer Notebook
+   ![Etapa 4](assets/jupyter-config-step2.png){zoomable="yes"} da Configuração do Jupyer Notebook
 
 1. Em uma nova chamada, insira as instruções para obter uma lista de visualizações de dados disponíveis com base na conexão.
 
@@ -354,7 +354,7 @@ O pesquisador dá suporte aos seguintes cenários para o parâmetro `FLATTEN`. C
 
    Execute o shell. Você deve ver a saída simular na captura de tela abaixo.
 
-   ![Etapa 5](assets/jupyter-config-step3.png) da Configuração do Jupyter Notebook
+   ![Etapa 5](assets/jupyter-config-step3.png){zoomable="yes"} da Configuração do Jupyter Notebook
 
    Você deve ver o **[!UICONTROL cc_data_view]** na lista de visualizações de dados.
 
@@ -405,7 +405,7 @@ O Jupyter Notebook dá suporte aos seguintes cenários para o parâmetro `FLATTE
 1. Execute o pedaço. Você é solicitado a fornecer **[!UICONTROL Host]**, **[!UICONTROL Banco de Dados]** e **[!UICONTROL Usuário]**. Basta aceitar os valores fornecidos como parte da etapa anterior.
 1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar a senha do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform no prompt da caixa de diálogo **[!UICONTROL Senha]** do RStudio.
 
-   ![Etapa de configuração do Studio 1](assets/rstudio-config-step1.png)
+   ![Etapa de configuração do Studio 1](assets/rstudio-config-step1.png){zoomable="yes"}
 
 1. Crie uma nova parte e insira as seguintes instruções entre ` ``` {r} ` e ` ``` `.
 
@@ -442,7 +442,7 @@ O Jupyter Notebook dá suporte aos seguintes cenários para o parâmetro `FLATTE
 
 1. Execute o pedaço. Você deve ver a saída simular na captura de tela abaixo.
 
-   ![Etapa 2](assets/rstudio-config-step2.png) da configuração do Studio
+   ![Etapa 2](assets/rstudio-config-step2.png){zoomable="yes"} da configuração do Studio
 
 ### Para NIVELAR ou não
 
@@ -599,7 +599,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc2-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc2-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -622,7 +622,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc2-rstudio-results.png)
+   ![RSudio Results](assets/uc2-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -737,7 +737,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc3-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc3-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -760,7 +760,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc3-rstudio-results.png)
+   ![RSudio Results](assets/uc3-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -904,7 +904,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc4-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc4-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -927,7 +927,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc4-rstudio-results.png)
+   ![RSudio Results](assets/uc4-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1130,7 +1130,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc5-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc5-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1156,7 +1156,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc5-rstudio-results.png)
+   ![RSudio Results](assets/uc5-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1390,7 +1390,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc6-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc6-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1409,7 +1409,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc6-rstudio-results.png)
+   ![RSudio Results](assets/uc6-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1559,7 +1559,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc7-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc7-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1576,7 +1576,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc7-rstudio-results.png)
+   ![RSudio Results](assets/uc7-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -1682,7 +1682,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc8-jupyter-input.png)
+   ![Resultados do Jupyter Notebook](assets/uc8-jupyter-input.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Produtos de pesca]** no menu suspenso.
 
@@ -1706,7 +1706,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc8-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc8-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1729,7 +1729,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc8-rstudio-results.png)
+   ![RSudio Results](assets/uc8-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -1849,7 +1849,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc9-jupyter-input.png)
+   ![Resultados do Jupyter Notebook](assets/uc9-jupyter-input.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Produtos de pesca]** no menu suspenso.
 
@@ -1874,7 +1874,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc9-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc9-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -1893,7 +1893,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc9-rstudio-results.png)
+   ![RSudio Results](assets/uc9-rstudio-results.png){zoomable="yes"}
 
 
 >[!ENDTABS]
@@ -2013,7 +2013,7 @@ As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a list
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc10-jupyter-input.png)
+   ![Resultados do Jupyter Notebook](assets/uc10-jupyter-input.png){zoomable="yes"}
 
 1. Selecione **[!UICONTROL Caça]** no menu suspenso.
 
@@ -2039,7 +2039,7 @@ As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a list
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc10-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc10-jupyter-results.png){zoomable="yes"}
 
 
 >[!TAB RStudio]
@@ -2058,7 +2058,7 @@ As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a list
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc10-rstudio-results.png)
+   ![RSudio Results](assets/uc10-rstudio-results.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -2292,7 +2292,7 @@ FETCH NEXT 500 ROWS ONLY
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc11-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc11-jupyter-results.png){zoomable="yes"}
 
 A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook.
 
@@ -2313,7 +2313,7 @@ A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc11-rstudio-results.png)
+   ![RSudio Results](assets/uc11-rstudio-results.png){zoomable="yes"}
 
 A consulta gerada pelo RStudio usando a extensão de BI inclui `ORDER BY`, o que implica que a ordem é aplicada por meio do RStudio e da extensão de BI.
 
@@ -2578,7 +2578,7 @@ FETCH NEXT 5 ROWS ONLY
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc12-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc12-jupyter-results.png){zoomable="yes"}
 
 A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook.
 
@@ -2599,7 +2599,7 @@ A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc12-rstudio-results.png)
+   ![RSudio Results](assets/uc12-rstudio-results.png){zoomable="yes"}
 
 A consulta gerada pelo RStudio usando a extensão de BI inclui `LIMIT 5`, o que implica que o limite é aplicado por meio do RStudio e da extensão de BI.
 
@@ -2833,7 +2833,7 @@ Os objetos do Customer Journey Analytics (dimensões, métricas, filtros, métri
 
 1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![Resultados do Jupyter Notebook](assets/uc13-jupyter-results.png)
+   ![Resultados do Jupyter Notebook](assets/uc13-jupyter-results.png){zoomable="yes"}
 
 A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook.
 
@@ -2857,7 +2857,7 @@ Os componentes do Customer Journey Analytics (dimensões, métricas, filtros, m�
 
 1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
-   ![RSudio Results](assets/uc13-rstudio-results.png)
+   ![RSudio Results](assets/uc13-rstudio-results.png){zoomable="yes"}
 
 A consulta gerada pelo RStudio usando a extensão de BI inclui `lower`, o que implica que a transformação personalizada é executada pelo RStudio e a extensão de BI.
 
