@@ -10,7 +10,7 @@ exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '1697'
-ht-degree: 31%
+ht-degree: 35%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-xdm"
 >title="Adicionar a lógica da coleção de dados XDM à tag"
->abstract="Com a tag de carregamento instalada no site, é possível adicionar regras e elementos de dados para preencher um objeto XDM a ser enviado para o Adobe. A Adobe recomenda manter um documento de design da solução para rastrear como as tags são configuradas.<br><br>Esta etapa requer muito trabalho, pois envolve a configuração de toda a lógica do Analytics para sua propriedade. Espere dedicar um mês ou mais para estabelecer as regras de tags corretas, testá-las e implantá-las no site."
+>abstract="Com a tag de carregamento instalada no site, é possível adicionar regras e elementos de dados para preencher um objeto XDM que será enviado para a Adobe. A Adobe recomenda manter um documento de design da solução para monitorar como as tags são configuradas.<br><br>Esta etapa exige muito trabalho, pois é necessário configurar toda a lógica de análise para sua propriedade. Estabelecer as regras de tags corretas, testá-las e implantá-las no site pode levar um mês ou mais."
 
 <!-- markdownlint-enable MD034 -->
 

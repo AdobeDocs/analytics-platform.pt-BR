@@ -10,7 +10,7 @@ exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
 source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 0%
+ht-degree: 26%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-validate"
->title="Validar o fluxo de dados"
->abstract="Use os detalhes da conexão para validar se os dados estão fluindo para o Customer Journey Analytics.<br><br>Se tudo tiver sido feito corretamente e sem falhas, esta etapa poderá ser realizada em menos de um dia. Se houver vários problemas de coleta de dados, a solução de problemas poderá demorar muito mais."
+>title="Validar se os dados estão fluindo"
+>abstract="Use os detalhes da conexão para validar se os dados estão fluindo para o Customer Journey Analytics.<br><br>Se tudo tiver sido feito corretamente e sem falhas, esta etapa poderá ser realizada em menos de um dia. Se houver vários problemas durante a coleta de dados, a solução de problemas poderá demorar muito mais."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 

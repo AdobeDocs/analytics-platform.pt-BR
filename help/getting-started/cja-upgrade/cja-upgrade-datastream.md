@@ -10,24 +10,24 @@ exl-id: f76d098d-d223-40e4-be81-d28e7581396b
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 20%
+ht-degree: 37%
 
 ---
 
-# Criar um fluxo de dados para usar com o Customer Journey Analytics {#upgrade-create-datastream}
+# Criar uma sequência de dados para usar com o Customer Journey Analytics {#upgrade-create-datastream}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-datastream-create"
->title="Criar um fluxo de dados na Adobe Experience Platform"
->abstract="Um fluxo de dados é um local intermediário que transmite seus dados para todos os serviços configurados. Crie esse local no Adobe Experience Platform.<br><br>A criação inicial de uma sequência de dados na interface da Platform leva apenas alguns minutos."
+>title="Criar uma sequência de dados na Adobe Experience Platform"
+>abstract="Uma sequência de dados é um local intermediário que transmite seus dados para todos os serviços configurados. Crie esse local na Adobe Experience Platform.<br><br>A criação inicial de uma sequência de dados na interface da Platform leva apenas alguns minutos."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
@@ -39,7 +39,7 @@ Na configuração, você deseja configurar a sequência de dados para enviar os 
 
 >[!NOTE]
 >
->As etapas a seguir são necessárias somente para implementações do Adobe Analytics que usam o AppMeasurement ou a extensão do Analytics (tags).
+>As etapas a seguir são necessárias somente para implementações do Adobe Analytics que usam AppMeasurement ou a extensão do Analytics (tags).
 >
 >Se sua implementação do Adobe Analytics usar a extensão Web SDK ou Web SDK, a sequência de dados já existe em seu ambiente do Adobe Analytics.
 

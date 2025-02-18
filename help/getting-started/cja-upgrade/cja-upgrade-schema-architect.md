@@ -1,5 +1,5 @@
 ---
-title: Projetar o esquema para uso com o Customer Journey Analytics
+title: Projete seu esquema para uso com o Customer Journey Analytics
 description: Saiba mais sobre o caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -10,18 +10,18 @@ exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 source-git-commit: 971600fcc7d8a5aac4ad39812ab4a7af69d45ccc
 workflow-type: tm+mt
 source-wordcount: '526'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
 
-# Projetar o esquema para uso com o Customer Journey Analytics {#upgrade-schema-architect}
+# Projete seu esquema para uso com o Customer Journey Analytics {#upgrade-schema-architect}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-architect"
->title="Criar um esquema"
->abstract="Discuta em sua organização os requisitos da coleta de dados e determine como você deseja criar um esquema para uso no Adobe Experience Platform. Essa etapa aparece porque você deseja usar o processo recomendado de usar um esquema personalizado para sua organização. A execução correta dessa etapa é essencial, pois um esquema ao qual todas as equipes em sua organização se alinham facilita significativamente a assimilação de dados.<br><br>O tempo estimado para reunir todas as partes relevantes em sua organização para alinhar-se a um esquema unificado é de 1 a 2 meses. Esse intervalo de tempo depende muito do número de equipes necessárias para coordenar e do número de dimensões e métricas nas quais se alinhar."
+>title="Projetar um esquema"
+>abstract="Discuta sobre os requisitos da coleção de dados em sua organização e determine como deseja criar um esquema para uso na Adobe Experience Platform. Essa etapa aparece porque você deseja usar o processo recomendado de utilização de um esquema personalizado para sua organização. Executar corretamente essa etapa é essencial, pois ter um esquema ao qual todas as equipes em sua organização se alinham facilita muito a assimilação de dados.<br><br>O tempo estimado para alinhar todas as partes relevantes em sua organização a um esquema unificado é de 1 a 2 meses. Esse intervalo de tempo depende muito do número de equipes que é necessário coordenar e do número de dimensões e métricas às quais elas devem se alinhar."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -10,7 +10,7 @@ exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '1708'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-connection"
 >title="Criar uma conexão no Customer Journey Analytics"
->abstract="Uma conexão permite converter dados do Adobe Experience Platform em um formato otimizado para relatórios do Customer Journey Analytics. Criar uma conexão no Customer Journey Analytics é simples, leva apenas alguns minutos para ser concluído."
+>abstract="Uma conexão permite converter dados da Adobe Experience Platform para um formato otimizado para relatórios do Customer Journey Analytics. Criar uma conexão no Customer Journey Analytics é simples e leva apenas alguns minutos."
 
 <!-- markdownlint-enable MD034 -->
 

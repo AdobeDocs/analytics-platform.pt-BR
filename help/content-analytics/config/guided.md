@@ -10,7 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
 workflow-type: tm+mt
 source-wordcount: '1856'
-ht-degree: 10%
+ht-degree: 19%
 
 ---
 
@@ -71,7 +71,7 @@ O assistente de configuração guiado consiste em quatro seções ([Detalhes](#d
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Detalhes"
->abstract="Insira um nome para a conexão. Nas seções **[!UICONTROL Visualização de dados]**, **[!UICONTROL Captura e definição de experiência]** e **[!UICONTROL Coleta de dados]**, você fornece mais detalhes para garantir que a Análise de conteúdo possa ser configurada corretamente."
+>abstract="Insira um nome para a conexão. Nas seções **[!UICONTROL Exibição de dados]**, **[!UICONTROL Captura e definição de experiência]** e **[!UICONTROL Coleção de dados]**, é possível fornecer mais detalhes para garantir que a análise de conteúdo seja configurada corretamente."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
@@ -92,17 +92,17 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Visualização de dados"
->abstract="Para a configuração do Content Analytics, é necessário selecionar uma visualização de dados existente. Assim, você pode mesclar seus dados de análise de conteúdo com outros dados."
+>abstract="Para a configuração da análise de conteúdo, é necessário selecionar uma exibição de dados existente. Assim, você pode mesclar seus dados de análise de conteúdo com outros dados."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Visualização de dados"
->abstract="Selecione uma visualização de dados existente do Customer Journey Analytics com a qual você deseja mesclar seus dados de análise de conteúdo."
+>abstract="Selecione uma exibição de dados existente do Customer Journey Analytics com a qual você gostaria de mesclar os dados da análise de conteúdo."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Visualização de dados"
->abstract="Selecione uma visualização de dados existente do Customer Journey Analytics com a qual você gostaria de mesclar seus dados de análise de conteúdo.<br/>"
+>abstract="Selecione uma exibição de dados existente do Customer Journey Analytics com a qual você gostaria de mesclar os dados da análise de conteúdo.<br/>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -146,7 +146,7 @@ Uma Exibição de dados está vinculada a uma Customer Journey Analytics [Connec
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_edit_button"
 >title="Captura e definição de experiência"
->abstract="Você pode editar as configurações na extensão do Adobe Content Analytics na propriedade Tag, associada à configuração selecionada."
+>abstract="É possível editar as configurações na extensão de análise de conteúdo da Adobe referente à propriedade Tag associada à configuração selecionada."
 
 
 
@@ -181,7 +181,7 @@ Para editar experiências existentes ou incluir novas Experiências em uma confi
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Coleção de dados"
->abstract="Defina qual propriedade de tag deseja usar ou crie uma nova. E defina as páginas e os ativos que deseja incluir ou excluir usando expressões regulares."
+>abstract="Defina qual propriedade de tag deseja usar ou crie uma nova. Defina também as páginas e os ativos que deseja incluir ou excluir usando expressões regulares."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
@@ -211,12 +211,12 @@ Para editar experiências existentes ou incluir novas Experiências em uma confi
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Coleção de dados"
->abstract="Você pode editar as configurações de páginas na extensão do Adobe Content Analytics na propriedade Tag, associada à configuração selecionada."
+>abstract="Você pode editar as configurações das páginas na extensão de análise de conteúdo da Adobe referente à propriedade Tag associada à configuração selecionada."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Coleção de dados"
->abstract="Você pode editar as configurações de ativos na extensão Adobe Content Analytics na propriedade Tag, associada à configuração selecionada."
+>abstract="Você pode editar as configurações de ativos na extensão de análise de conteúdo da Adobe referente à propriedade Tag associada à configuração selecionada."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -10,7 +10,7 @@ exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 23%
+ht-degree: 33%
 
 ---
 
@@ -20,20 +20,20 @@ ht-degree: 23%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-extension"
->title="Adicionar a extensão Platform Web SDK à propriedade da tag"
->abstract="Adicione a extensão Adobe Experience Platform Web SDK à propriedade da tag. A adição da extensão Web SDK à propriedade de tag é simplificada, levando apenas alguns minutos para ser concluída."
+>title="Adicionar a extensão do SDK da web da Platform à sua propriedade de tag"
+>abstract="Adicione a extensão do SDK da web da Adobe Experience Platform à propriedade da tag. Adicionar a extensão do SDK da web à propriedade de tag é simples e leva apenas alguns minutos."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
 Você pode usar o recurso Tags na Adobe Experience Platform para implementar o código em seu site para coletar dados. Esta solução de gerenciamento de tags permite implantar o código do junto com outros requisitos de marcação. As tags oferecem integração perfeita com a Adobe Experience Platform usando a extensão do SDK da Web da Adobe Experience Platform.
 
-As informações a seguir descrevem como adicionar a extensão Web SDK à sua tag. Para obter informações complementares, consulte a [Configurar a extensão de tag do Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) na documentação do Experience Platform. O Web SDK inclui o [!UICONTROL Serviço da Adobe Experience Cloud ID] nativamente, portanto, não é necessário adicionar a extensão do serviço de ID à sua marca.
+As informações a seguir descrevem como adicionar a extensão Web SDK à sua tag. Para obter informações adicionais, consulte a [Configuração da extensão de tag do Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) na documentação do Experience Platform. O Web SDK inclui o [!UICONTROL Serviço da Adobe Experience Cloud ID] nativamente, portanto, não é necessário adicionar a extensão do serviço de ID à sua marca.
 
 Depois de [criar uma tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), você deve configurá-la com a extensão Adobe Experience Platform Web SDK. Isso garante que você possa enviar dados para a Adobe Experience Platform (por meio da sequência de dados).
 

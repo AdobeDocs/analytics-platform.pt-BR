@@ -9,7 +9,7 @@ hidefromtoc: true
 source-git-commit: f4440148d26e81938d029d4a077cd787c868f1be
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 27%
+ht-degree: 54%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 27%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tie-data"
 >title="Unir dados de origens variadas"
->abstract="(Recomendado) A capacidade de combinar dados de análise de outros canais é o principal caso de uso do Customer Journey Analytics."
+>abstract="(Recomendado) A capacidade de combinar dados de análise de outros canais é o principal recurso do Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,7 +29,7 @@ ht-degree: 27%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
 >title="Compilar ocorrências de vários conjuntos de dados"
->abstract="Se qualquer um dos seus conjuntos de dados não compartilhar um identificador principal (como uma Experience Cloud ID), você ainda poderá compilar esses dados usando outra dimensão, como nome de usuário de logon ou endereço de email."
+>abstract="Se um dos seus conjuntos de dados não compartilhar um identificador principal (como uma ID da Experience Cloud), você ainda poderá compilar esses dados usando outra dimensão, como o nome de usuário de logon ou endereço de email."
 
 <!-- markdownlint-enable MD034 -->
 

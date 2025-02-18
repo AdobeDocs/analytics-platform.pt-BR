@@ -10,7 +10,7 @@ exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 28%
+ht-degree: 49%
 
 ---
 
@@ -20,20 +20,20 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-tag-loader"
->title="Implementar a tag de carregamento no site"
->abstract="Trabalhe com a equipe de desenvolvimento do site para instalar a tag de carregamento em cada página do site.<br><br>O tempo de conclusão desta tarefa depende muito do tempo de resposta da equipe de engenharia com a qual você trabalha para implantar o código. Algumas organizações que têm equipes de engenharia altamente adaptáveis podem concluir essa etapa em dias, enquanto as equipes de engenharia com um extenso backlog de tarefas podem levar um mês ou mais."
+>title="Implementar a tag de carregamento em seu site"
+>abstract="Trabalhe com a equipe de desenvolvimento do site para instalar a tag de carregamento em cada página do site.<br><br>O tempo de conclusão desta tarefa depende muito do tempo de resposta da equipe de engenharia que implantará o código. Algumas organizações que têm equipes de engenharia altamente adaptáveis podem concluir essa etapa em dias, enquanto outras que possuem uma extensa lista de pendências podem levar um mês ou mais."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
 Você deve instalar a tag no site que deseja rastrear, o que implica colocar o código na tag de cabeçalho do modelo do site.
 
-O processo a seguir descreve como obter o código que faz referência à sua tag. Para obter informações complementares, consulte os [Guias de implementação para tags e encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) na documentação do Experience Platform.
+O processo a seguir descreve como obter o código que faz referência à sua tag. Para obter informações complementares, consulte os [Guias de implementação para tags e encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) na documentação da Experience Platform.
 
 Para obter o código que faz referência à sua tag:
 

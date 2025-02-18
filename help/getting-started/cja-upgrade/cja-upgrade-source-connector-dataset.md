@@ -10,7 +10,7 @@ exl-id: 424485a3-a076-4656-83b6-733f16cc2326
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '960'
-ht-degree: 25%
+ht-degree: 33%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-dataset"
 >title="Adicionar o conjunto de dados do conector de origem do Analytics à conexão"
->abstract="Agora que os dados históricos do conjunto de relatórios do Analytics estão na Adobe Experience Platform, adicione esse conjunto de dados à conexão existente que você criou ao configurar inicialmente o Customer Journey Analytics. Quando essa etapa for concluída, os dados históricos no Customer Journey Analytics estarão disponíveis.<br><br>Adicionar um conjunto de dados a uma conexão no Customer Journey Analytics é simples, leva apenas alguns minutos para ser concluído."
+>abstract="Agora que os dados históricos do conjunto de relatórios do Analytics estão na Adobe Experience Platform, adicione esse conjunto de dados à conexão existente que você criou ao configurar inicialmente o Customer Journey Analytics. Após concluir esta etapa, os dados históricos estarão disponíveis no Customer Journey Analytics.<br><br>Adicionar um conjunto de dados a uma conexão no Customer Journey Analytics é simples e leva apenas alguns minutos."
 
 <!-- markdownlint-enable MD034 -->
 

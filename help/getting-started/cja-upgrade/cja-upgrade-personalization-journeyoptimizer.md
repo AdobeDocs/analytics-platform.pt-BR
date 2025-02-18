@@ -1,5 +1,5 @@
 ---
-title: Usar o objeto de personalização para usar com o Adobe Journey Optimizer
+title: Usar o objeto de personalização no Adobe Journey Optimizer
 description: Saiba como usar o objeto de personalização para usar com o Adobe Journey Optimizer
 role: Admin
 solution: Customer Journey Analytics
@@ -9,18 +9,18 @@ hidefromtoc: true
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
-# Usar o objeto de personalização para usar com o Adobe Journey Optimizer {#upgrade-personalization}
+# Usar o objeto de personalização no Adobe Journey Optimizer {#upgrade-personalization}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
->title="Usar o objeto de personalização para o Adobe Journey Optimizer"
->abstract="Use o objeto de personalização em sua implementação para usar no Adobe Journey Optimizer."
+>title="Usar o objeto de personalização no Adobe Journey Optimizer"
+>abstract="Utilize o objeto de personalização em sua implementação do Adobe Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 

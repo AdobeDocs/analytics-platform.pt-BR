@@ -10,7 +10,7 @@ exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
 source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 29%
+ht-degree: 44%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 29%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-create"
 >title="Criar um conjunto de dados na Adobe Experience Platform"
->abstract="Um conjunto de dados é um local onde os dados coletados residem. Crie esse local no Adobe Experience Platform.<br><br>A criação de um conjunto de dados com um esquema em mente leva apenas alguns minutos."
+>abstract="Um conjunto de dados é um local onde residem os dados coletados. Crie esse local na Adobe Experience Platform.<br><br>Se você já tiver um esquema em mente, criar um conjunto de dados levará apenas alguns minutos."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 

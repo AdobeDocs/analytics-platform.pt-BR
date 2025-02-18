@@ -10,7 +10,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 9d4d2419715308240d6e6c22751d8859eb34d474
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 0%
+ht-degree: 19%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-fully-move"
 >title="Migrar totalmente para o Customer Journey Analytics"
->abstract="(Recomendado) O Customer Journey Analytics pretende ser a principal ferramenta do Analytics para sua organização. No entanto, sua organização ainda pode exigir o Adobe Analytics se depender muito de recursos exclusivos da ferramenta e esses workflows não puderem ser alterados."
+>abstract="(Recomendado) O objetivo é que o Customer Journey Analytics seja a principal ferramenta de análise da sua organização. No entanto, a organização ainda pode precisar do Adobe Analytics se ela depende muito de recursos exclusivos da ferramenta e não for possível alterar esses fluxos de trabalho."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-keep-aa"
->title="Manter ambos os produtos de análise"
->abstract="(Não recomendado) Se você selecionar essa opção, seu contrato com a Adobe incluirá a Adobe Analytics e a Customer Journey Analytics, o que pode ser mais caro para a sua organização ao longo do tempo."
+>title="Manter os dois produtos de análise"
+>abstract="(Não recomendado) Se você selecionar essa opção, seu contrato com a Adobe incluirá o Adobe Analytics e o Customer Journey Analytics, o que pode ser mais caro para a sua organização ao longo do tempo."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -52,14 +52,14 @@ Ao decidir se e quando sua organização deve desativar o Adobe Analytics, consi
 | Reter dados históricos do Adobe Analytics | A Adobe recomenda que você mantenha seu ambiente do Adobe Analytics em vigor com o conector de origem do Analytics por um período depois que o novo ambiente do Customer Journey Analytics estiver em execução e coletando dados. Essa é a melhor maneira de trazer dados históricos do Adobe Analytics para o Customer Journey Analytics.<p>Depois de coletar dados históricos suficientes no Customer Journey Analytics com a nova implementação do Web SDK, é possível remover totalmente o conector de origem do Analytics. Faça isso quando puder depender exclusivamente dos dados históricos coletados com a nova implementação do Customer Journey Analytics Web SDK.</p><p>**Observação:** a Adobe recomenda uma nova implementação do Web SDK para seu ambiente Customer Journey Analytics, juntamente com o conector de origem do Analytics para dados históricos. [Saiba mais](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)</p> |
 | Usar Feeds de dados ou outros recursos do Adobe Analytics | Um pequeno conjunto de recursos ainda não está totalmente disponível no Customer Journey Analytics. Se você precisar acessar esses recursos, talvez seja necessário usar o Adobe Analytics em conjunto com o Customer Journey Analytics até que eles estejam disponíveis. <p>Os recursos não totalmente disponíveis no Customer Journey Analytics incluem Feeds de dados e Análise de contribuição. Para obter uma lista completa de recursos que ainda não estão disponíveis, consulte [suporte aos recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md).</p> |
 
-## Processo e linha do tempo de desativação do Adobe Analytics {#disable-adobe-analytics}
+## Processo e linha do tempo de desabilitação do Adobe Analytics {#disable-adobe-analytics}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-appmeasurement-third-pary"
->title="Desativar um sistema de gerenciamento de tags de terceiros"
->abstract="Com os dados do Web SDK totalmente funcionais, trabalhe com seu administrador de tags para remover a biblioteca do AppMeasurement de seu sistema de gerenciamento de tags de terceiros.<br><br>O tempo estimado para executar esta etapa depende da facilidade de desabilitar o AppMeasurement em seu produto de gerenciamento de tags, bem como do ciclo de lançamento que sua organização utiliza para implantar e gerenciar o código de tags."
+>title="Desabilitar um sistema de gerenciamento de tags de terceiros"
+>abstract="Com os dados do SDK da web totalmente funcionais, trabalhe com o(a) admin de tags para remover a biblioteca do AppMeasurement de seu sistema de gerenciamento de tags de terceiros.<br><br>O tempo estimado para executar esta etapa depende da facilidade de desabilitar o AppMeasurement no produto de gerenciamento de tags, bem como do ciclo de lançamento que sua organização utiliza para implantar e gerenciar o código de tags."
 
 <!-- markdownlint-enable MD034 -->
 
