@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b52f1bc824c9edd958699d57ccbd950bc36abe5c
+source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1911'
 ht-degree: 19%
 
 ---
@@ -148,13 +148,16 @@ Uma Exibição de dados está vinculada a uma Customer Journey Analytics [Connec
 >title="Captura e definição de experiência"
 >abstract="É possível editar as configurações na extensão de análise de conteúdo da Adobe referente à propriedade Tag associada à configuração selecionada."
 
-
-
 <!-- markdownlint-enable MD034 -->
 
 Nesta seção, você pode optar por incluir Experiências nos dados coletados com o Content Analytics.  Uma experiência é todo o texto em uma página da Web que pode ser reproduzido usando o URL usado pelo usuário inicial que visita essa página da Web.
 
 Por padrão, **[!UICONTROL Incluir experiências]** está desativado. Quando selecionada, você deve definir para quais URLs deseja incluir experiências.
+
+Você só deve considerar incluir experiências quando o seguinte for aplicável:
+
+* O conteúdo do site é direcionado somente por um URL.
+* As páginas do site devem ser reprodutíveis usando o URL da página.
 
 Para incluir Experiências em uma configuração nova ou não implementada:
 
@@ -286,6 +289,7 @@ Quando você tiver criado ou editado uma configuração, as seguintes ações es
    * Configuração do **[!UICONTROL Adobe Experience Platform]**:
       1. A criação de esquemas para modelar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
       1. A criação de conjuntos de dados para coletar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
+      1. A criação de um fluxo de dados que usa o serviço de recursos para gerar e atualizar atributos de conteúdo de eventos do Content Analytics.
    * Configuração do **[!UICONTROL Content Analytics]**:
       * Configuração de um processo de montagem de recurso com base na configuração.
    * Configuração do **[!UICONTROL Customer Journey Analytics]**:
