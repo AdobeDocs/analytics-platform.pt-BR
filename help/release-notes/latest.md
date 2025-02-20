@@ -3,16 +3,16 @@ title: Notas de versão atuais do Customer Journey Analytics
 description: Exibir as notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 419676a446bd04a1d0f7a96ffc564e439db48f54
+source-git-commit: e6f86bf3dee81d70300cb26a1593d0e40966a63b
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 65%
+source-wordcount: '255'
+ht-degree: 67%
 
 ---
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (fevereiro de 2025)
 
-**Última atualização**: quinta-feira, 19 de fevereiro de 2025
+**Última atualização**: sexta-feira, 20 de fevereiro de 2025
 
 Essas notas de versão abrangem o período de lançamento de sábado, 24 de janeiro de 2025 a quarta-feira, 18 de março de 2025. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -20,7 +20,9 @@ Essas notas de versão abrangem o período de lançamento de sábado, 24 de jane
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
-| **Extensão de BI - Suporte de pesquisa** | A extensão Customer Journey Analytics BI agora oferece suporte ao [Looker, Jupyter Notebook e R Studio](/help/data-views/bi-extension.md). Os [casos de uso de extensão de BI](/help/use-cases/data-views/bi-extension-usecases.md) foram atualizados para refletir as ferramentas adicionais suportadas. |   | sábado, 24 de janeiro de 2025 |
+| **Extensão BI - suporte expandido** | A extensão do Customer Journey Analytics BI agora [oferece suporte ao Looker, Jupyter Notebook e R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |   | sábado, 24 de janeiro de 2025 |
+| **Coleção de mídia: atualizações do Conector de origem da Adobe para o novo Relatório de mídia XDM** | O Conector de origem do Analytics mapeará automaticamente os dados de transmissão de mídia no Adobe Analytics para os mesmos campos usados pelo SDK da Web. Anteriormente, os dados eram mapeados para os locais antigo e novo, mas somente o novo local seria usado no futuro. [Saiba mais](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) |  | 30 de janeiro de 2025 |
+
 
 ## Correções no Customer Journey Analytics
 
