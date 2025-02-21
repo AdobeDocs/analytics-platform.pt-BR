@@ -55,12 +55,11 @@ Antes de configurar o Content Analytics, verifique se os seguintes pré-requisit
    * Você tem uma compreensão clara sobre quais (tipos de) ativos deseja capturar a análise e os insights do envolvimento de conteúdo.
 
 
->>
-[!MORELIKETHIS]
->>
-* [Configuração guiada](guided.md)
-* [Configuração manual](manual.md)
-* [Controle de acesso](/help/technotes/access-control.md)
+>[!MORELIKETHIS]
+>
+>* [Configuração guiada](guided.md)
+>* [Configuração manual](manual.md)
+>* [Controle de acesso](/help/technotes/access-control.md)
 >
 
 
