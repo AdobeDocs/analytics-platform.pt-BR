@@ -4,10 +4,10 @@ title: Métricas
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 17d3e8ed5986348bb4ba50822dfd9bb43d5a7570
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 14%
+source-wordcount: '858'
+ht-degree: 8%
 
 ---
 
@@ -37,62 +37,9 @@ A Adobe oferece vários tipos de métricas para uso no Analysis Workspace:
 
 * **Métricas calculadas** ![Calculadora](/help/assets/icons/Calculator.svg): métricas definidas pelo usuário baseadas em métricas padrão, números estáticos ou funções algorítmicas.
 
-* **Modelos de métrica calculada** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : métricas definidas por Adobe que se comportam de forma semelhante às métricas calculadas. Você pode usá-los como estão nos projetos do Workspace ou salvar uma cópia para personalizar a lógica. Consulte [Métricas calculadas padrão](calc-metrics/cm-workflow/../default-calcmetrics.md).
+* **Modelos de métrica calculada** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : métricas definidas pela Adobe que se comportam de forma semelhante às métricas calculadas. Você pode usá-los como estão nos projetos do Workspace ou salvar uma cópia para personalizar a lógica. Consulte [Métricas calculadas padrão](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 Você pode ver se uma métrica foi aprovada ![ícone Aprovado](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) ou não. Para obter mais detalhes sobre uma métrica, passe o mouse sobre a métrica e selecione ![Ícone de informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). Consulte [Informações do componente](use-components-in-workspace.md#component-info) para obter mais informações.
-
-
-
-## Métricas calculadas
-
-Métricas calculadas permitem configurar facilmente como as métricas se relacionam entre si usando operadores simples ou funções estatísticas. Consulte [Visão geral das métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md) para obter mais informações.
-
-<!--
-
-There are several ways to create calculated metrics. See [Create calculated metrics]()
-
-### Create calculated metrics for all projects
-
-You can use the calculated metric builder to create calculated metrics. When created in this way, calculated metrics are available in the component list and can then be used in projects throughout your organization. 
-
-For information about how to access the calculated metrics builder, see [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
-
-### Create calculated metrics for a single project
-
-You can create quick calculated metrics that are available only for the project where they were created.
-
-To create a calculated metric for a single project:
-
-1. In Analysis Workspace, open the project where you want to create the calculated metric.
-
-1. In a freeform table, select **[!UICONTROL Create metric from selection]** from the context menu in a column header.
-
-   ![Workspace panel highlighting Create from selection](assets/create-metric-from-selection.png)
-
-1. To create a calculated metric for this project only, choose from the following options:
-
-   * [!UICONTROL **Divide**]
-   
-   * [!UICONTROL **Subtract**]
-
-   * [!UICONTROL **Add**]
-
-   * [!UICONTROL **Multiply**]
-
-   Or, to open the calculated metric builder and create the calculated metric for all projects, select [!UICONTROL **Open in Calculated Metric Builder**], then continue with [Build metrics](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
-
-
-<!-- This video really shows an AA example using hits, etc.  Not suitable for CJA... >
-+++ See the following video on how to create an implementation-less calculated metric from within Analysis Workspace.
-
-[Calculated Metrics: Implementation-less metrics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html) (3:42)
-
-
->[!VIDEO](https://video.tv.adobe.com/v/25407/?quality=12&learn=on)
-
-+++
-
--->
 
 ## Comparar métricas com diferentes modelos de atribuição
 
@@ -101,3 +48,63 @@ Se você deseja comparar um modelo com outro de maneira fácil e rápida para um
 ![realce do painel do Workspace Comparar modelos de atribuição](assets/compare-attribution.png)
 
 Esse atalho permite comparar modelos de atribuição de maneira rápida e fácil.
+
+## Criar métricas calculadas
+
+Métricas calculadas permitem configurar facilmente como as métricas se relacionam entre si, usando operadores simples ou funções estatísticas. Consulte [Visão geral das métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md) para obter mais informações.
+
+Há várias maneiras de criar métricas calculadas. O método escolhido determina se a métrica calculada estará disponível na lista de componentes em todos os projetos ou somente no projeto em que foi criada.
+
+### Criar métricas calculadas para todos os projetos
+
+Você pode usar o construtor de métrica calculada para criar métricas calculadas. Quando criadas dessa forma, as métricas calculadas ficam disponíveis na lista de componentes e podem ser usadas em projetos em toda a organização.
+
+Para obter informações sobre como acessar o construtor de métricas calculadas, consulte [Criar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-workflow.md).
+
+### Criar métricas calculadas para um único projeto
+
+Você pode criar métricas calculadas rápidas que só estão disponíveis para o projeto em que foram criadas.
+
+Para criar uma métrica calculada para um único projeto:
+
+1. No Analysis Workspace, abra o projeto em que deseja criar a métrica calculada.
+
+1. Em uma tabela de forma livre, clique com o botão direito do mouse no cabeçalho da coluna de uma única coluna.
+
+   Ou
+
+   Selecione duas colunas enquanto mantém pressionada a tecla Shift e clique com o botão direito do mouse em uma das colunas selecionadas.
+
+1. Selecione **[!UICONTROL Criar métrica a partir da seleção]**
+
+   ![Destaque do painel do Workspace Criar a partir da seleção](assets/create-metric-from-selection.png)
+
+1. Para criar uma métrica calculada somente para este projeto, escolha entre as opções disponíveis.
+
+   Quando uma única coluna é selecionada, as seguintes opções estão disponíveis:
+
+   * [!UICONTROL **Média**]: cria uma nova coluna que mostra o valor médio no conjunto de elementos de dimensão para a coluna. Isto usa a função [Média](/help/components/calc-metrics/cm-functions.md#mean).
+
+   * [!UICONTROL **Mediana**]: cria uma nova coluna que mostra o valor mediano no conjunto de elementos de dimensão para a coluna. Isto usa a função [Mediana](/help/components/calc-metrics/cm-functions.md#median).
+
+   * [!UICONTROL **Coluna máx**]: cria uma nova coluna que mostra o maior valor no conjunto de elementos de dimensão para a coluna. Isto usa a função [Máximo da Coluna](/help/components/calc-metrics/cm-functions.md#column-maximum).
+
+   * [!UICONTROL **Coluna mín**]: cria uma nova coluna que mostra o menor valor no conjunto de elementos de dimensão para a coluna. Isto usa a função [Mínimo da Coluna](/help/components/calc-metrics/cm-functions.md#column-minimum).
+
+   * [!UICONTROL **Soma da coluna**]:Cria uma nova coluna que adiciona todos os valores numéricos de uma métrica em uma coluna (nos elementos de uma dimensão). Isto usa a função [Soma da Coluna](/help/components/calc-metrics/cm-functions.md#column-sum).
+
+   Quando duas colunas são selecionadas, as seguintes opções estão disponíveis:
+
+   * [!UICONTROL **Dividir**]: cria uma nova coluna que divide os valores das duas colunas selecionadas.
+
+   * [!UICONTROL **Subtrair**]: cria uma nova coluna que subtrai os valores das duas colunas selecionadas.
+
+   * [!UICONTROL **Adicionar**]: cria uma nova coluna que adiciona os valores das duas colunas selecionadas.
+
+   * [!UICONTROL **Multiplicar**]: cria uma nova coluna que multiplica os valores das duas colunas selecionadas.
+
+   * [!UICONTROL **Alteração de porcentagem**]: cria uma nova coluna que mostra a alteração de porcentagem das duas colunas selecionadas.
+
+[Métricas calculadas: métricas sem implementação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=pt-BR) (3:42)
+
+

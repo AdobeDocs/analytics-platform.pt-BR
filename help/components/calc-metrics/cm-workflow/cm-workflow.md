@@ -3,10 +3,10 @@ description: Saiba como criar métricas calculadas.
 title: Criar métricas calculadas
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 17d3e8ed5986348bb4ba50822dfd9bb43d5a7570
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ Você pode criar uma métrica calculada das seguintes maneiras:
 
 * ?? Na interface principal, selecione **[!UICONTROL Componentes]** e selecione **[!UICONTROL Métricas calculadas]**. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] no gerenciador [[!UICONTROL Métricas calculadas]](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 * ?? Em um projeto do Workspace, no painel esquerdo Componentes, selecione ![Adicionar](/help/assets/icons/Add.svg) em ![Evento](/help/assets/icons/Event.svg) **Métricas**.
-* ?? Em um projeto do Workspace, no menu de contexto no cabeçalho da coluna de métricas, selecione **[!UICONTROL Criar métrica a partir da seleção]**. No submenu, você pode selecionar uma função ou selecionar **[!UICONTROL Abrir no construtor de métrica calculada]**. <br/>Se você selecionar uma função, a métrica calculada será definida como uma métrica somente de projeto. Posteriormente, ao editar essa métrica, por meio do pop-up [Informações do componente](/help/components/use-components-in-workspace.md#component-info), você recebe uma notificação no [Construtor de métrica calculada](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+* ?? Em um projeto do Workspace, no menu de contexto no cabeçalho da coluna de métricas, selecione **[!UICONTROL Criar métrica a partir da seleção]**. No submenu, você pode selecionar uma função ou selecionar **[!UICONTROL Abrir no construtor de métrica calculada]**. <br/>Se você selecionar uma função, a métrica calculada será definida como uma métrica somente de projeto. Ao editar posteriormente esta métrica, por meio do pop-up [Informações do componente](/help/components/use-components-in-workspace.md#component-info), você verá uma notificação no [Construtor de métrica calculada](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 * ?? Em um projeto do Workspace, selecione **[!UICONTROL Componentes]** no menu e selecione **[!UICONTROL Criar métrica]**.
 * ?? Em um projeto do Workspace, use o atalho **[!UICONTROL shift+cmd+c]** (macOS) ou **[!UICONTROL shift+ctrl+c]** (Windows).
 
