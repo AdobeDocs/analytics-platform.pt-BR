@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: cea253d3b1da080e6735989d59cc6eda44afc203
+source-git-commit: ec0ea74df83bbd07b7e026d7b9d7114c7dc595ab
 workflow-type: tm+mt
-source-wordcount: '1911'
-ht-degree: 19%
+source-wordcount: '1991'
+ht-degree: 18%
 
 ---
 
@@ -103,6 +103,11 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 >id="aca_onboarding_dataview_header_alt"
 >title="Visualização de dados"
 >abstract="Selecione uma exibição de dados existente do Customer Journey Analytics com a qual você gostaria de mesclar os dados da análise de conteúdo.<br/>"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_dataview_change"
+>title="Selecionar visualização de dados"
+>abstract="A seleção de uma nova visualização de dados resultará em uma atualização dessa visualização de dados para incluir métricas e dimensões do Content Analytics. Se necessário, a conexão associada também é atualizada para incluir conjuntos de dados do Content Analytics. A conexão e a visualização de dados configuradas atualmente para o Content Analytics não são modificadas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -276,7 +281,7 @@ Depois de fornecer todos os detalhes necessários, um resumo fornecerá detalhes
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning"
 >title="Aviso de implementação de integração"
->abstract="Isso configurará o Content Analytics com base parcialmente na entrada fornecida neste fluxo de trabalho. Várias outras configurações são escolhidas automaticamente com base no que geralmente é útil para o Content Analytics. É recomendável revisar as configurações de cada artefato para confirmar se atendem aos seus requisitos e diretrizes. <br/><br/>Observe que nenhum dado será coletado até que a biblioteca de marcas associada a esta configuração seja publicada manualmente.<br/><br/>Observe também que para derivar atributos de imagens e texto, o Adobe recuperará esses atributos usando a URL capturada no momento da visita dos usuários de acordo com as configurações de coleta de dados implementadas."
+>abstract="Se você selecionar **[!UICONTROL Implementar]**, configurará o Content Analytics com base na entrada fornecida neste fluxo de trabalho. Várias configurações são escolhidas por padrão com base no que geralmente é útil para o Content Analytics, mas você (como controlador de dados) deve revisar as configurações de cada artefato para confirmar se as configurações são implementadas de acordo com a política de privacidade, os direitos e obrigações contratuais e os requisitos de consentimento conforme a legislação aplicável.<br/><br/>Observe que nenhum dado será coletado até que a biblioteca de marcas associada a esta configuração seja publicada manualmente.<br/><br/>Para derivar atributos de imagens e texto, o Adobe recuperará os atributos usando:<ol><li>O URL capturado no momento da visita do site dos usuários, de acordo com as configurações de coleta de dados definidas por você e</li><li>O URL no qual a imagem está hospedada.</li></ol>Você não deve marcar imagens que estão hospedadas em sites de terceiros."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -285,27 +290,25 @@ Quando você tiver criado ou editado uma configuração, as seguintes ações es
 
 * **[!UICONTROL Descartar]**: todas as alterações feitas como parte da criação de uma nova configuração ou da edição de uma configuração existente são descartadas.
 * **[!UICONTROL Salvar para mais tarde]**: as alterações feitas em uma nova configuração ou em uma configuração existente ainda não implementada são salvas. Você pode rever a configuração em um estágio posterior para fazer mais alterações ou implementar a configuração.
-* **[!UICONTROL Implementar]**: as alterações feitas em uma nova configuração ou em uma configuração existente ainda não implementada são salvas e implementadas. A implementação consiste em:
+* **[!UICONTROL Implementar]**: as configurações ou alterações feitas em uma nova configuração ou em uma configuração existente ainda não implementada são salvas e implementadas. A implementação consiste em:
    * Configuração do **[!UICONTROL Adobe Experience Platform]**:
-      1. A criação de esquemas para modelar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
-      1. A criação de conjuntos de dados para coletar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
-      1. A criação de um fluxo de dados que usa o serviço de recursos para gerar e atualizar atributos de conteúdo de eventos do Content Analytics.
-   * Configuração do **[!UICONTROL Content Analytics]**:
-      * Configuração de um processo de montagem de recurso com base na configuração.
-   * Configuração do **[!UICONTROL Customer Journey Analytics]**:
-      1. A visualização de dados selecionada é atualizada para incluir a dimensão e as métricas do Content Analytics.
-      1. A conexão vinculada à visualização de dados selecionada é modificada para incluir o evento da Análise de conteúdo e os conjuntos de dados de atributo.
-      1. Os modelos de relatórios do Content Analytics são adicionados ao Workspace.
+      * A criação de esquemas para modelar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
+      * A criação de conjuntos de dados para coletar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
+      * A criação de um fluxo de dados que usa o serviço de recursos para gerar e atualizar atributos de conteúdo de eventos do Content Analytics.
    * Configuração de **[!UICONTROL coleção de dados]**:
-      1. A propriedade Tag nova ou existente está configurada para ser compatível com a coleta de dados do Content Analytics. Essa configuração implica a inclusão da extensão Adobe Content Analytics para Tags.
-      1. Um fluxo de dados é criado para eventos do Content Analytics.
-      1. A extensão do Adobe Content Analytics é configurada para garantir que os eventos do Content Analytics sejam enviados para a sequência de dados do Content Analytics.
-      1. Se o Web SDK não estiver configurado para a propriedade Tags, uma nova configuração do Web SDK será criada para enviar somente eventos do Content Analytics.
-      1. Se o Web SDK estiver configurado para essa propriedade de tag, nenhuma alteração será feita na configuração existente do Web SDK.
+      * A propriedade Tag nova ou existente está configurada para ser compatível com a coleta de dados do Content Analytics. Essa configuração implica a inclusão da extensão Adobe Content Analytics para Tags.
+      * Um fluxo de dados é criado para eventos do Content Analytics.
+      * A extensão do Adobe Content Analytics é configurada para garantir que os eventos do Content Analytics sejam enviados para a sequência de dados do Content Analytics.
+      * Se o Web SDK não estiver configurado para a propriedade Tags, uma nova configuração do Web SDK será criada para enviar somente eventos do Content Analytics.
+      * Se o Web SDK estiver configurado para essa propriedade de tag, nenhuma alteração será feita na configuração existente do Web SDK.
+   * Configuração do **[!UICONTROL Customer Journey Analytics]**:
+      * A visualização de dados selecionada é atualizada para incluir a dimensão e as métricas do Content Analytics.
+      * A conexão vinculada à visualização de dados selecionada é modificada para incluir o evento da Análise de conteúdo e os conjuntos de dados de atributo.
+      * Um modelo de relatório de Análise de conteúdo é adicionado ao Workspace.
 * **[!UICONTROL Salvar]**: as alterações feitas em uma configuração implementada são salvas e a implementação é atualizada.
 * **[!UICONTROL Saída]**. Sai da configuração guiada. Todas as alterações feitas em uma configuração implementada são descartadas.
 
 >[!MORELIKETHIS]
 >
->[Configuração manual do Content Analytics](manual.md)
+>[Configuração manual](manual.md)
 >
