@@ -4,9 +4,9 @@ title: Métricas
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 84ab8434671ccbce12dce95e1164b9a25c7b8439
+source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '860'
 ht-degree: 8%
 
 ---
@@ -63,7 +63,7 @@ Para obter informações sobre como acessar o construtor de métricas calculadas
 
 ### Criar métricas calculadas para um único projeto
 
-Você pode criar métricas calculadas rápidas que só estão disponíveis para o projeto em que foram criadas.
+Você pode criar rapidamente uma métrica calculada que esteja disponível somente para o projeto em que foi criada.
 
 Para criar uma métrica calculada para um único projeto:
 
