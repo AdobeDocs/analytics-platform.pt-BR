@@ -3,9 +3,9 @@ description: O Criador de métricas calculadas oferece uma tela para arrastar e 
 title: Criar métricas calculadas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
+source-git-commit: 3c11f204b73ec1cc5c4c359b6cc5c88023c93e43
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1705'
 ht-degree: 11%
 
 ---
@@ -31,6 +31,23 @@ ht-degree: 11%
 
 <!-- markdownlint-enable MD034 -->
 
+O Customer Journey Analytics fornece uma tela para arrastar e soltar dimensões, métricas, filtros e funções a fim de criar métricas personalizadas com base na lógica, nas regras e nos operadores da hierarquia do container. Esta ferramenta de desenvolvimento integrado permite criar e salvar métricas calculadas simples e complexas.
+
+## Começar a criar uma métrica calculada
+
+Você pode usar o construtor de métrica calculada para criar ou editar métricas calculadas. Quando criadas dessa forma, as métricas calculadas ficam disponíveis na lista de componentes e podem ser usadas em projetos em toda a organização. Como alternativa, você pode criar rapidamente uma métrica calculada que esteja disponível somente para o projeto em que foi criada, conforme descrito em [Criar métricas calculadas para um único projeto](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) em [Métricas](/help/components/apply-create-metrics.md).
+
+Acesse o construtor de métricas calculadas para começar a criar uma métrica calculada que esteja disponível na lista de componentes.
+
+1. Acesse o construtor de métricas calculadas de qualquer uma das seguintes maneiras:
+
+   * No Analysis Workspace, abra um projeto e selecione **[!UICONTROL Componentes]** > **[!UICONTROL Criar métrica]**.
+   * No Analysis Workspace, abra um projeto e selecione o ícone **De adição** ao lado da seção [!UICONTROL **Métricas**] no painel esquerdo.
+   * Em [!DNL Customer Journey Analytics], vá para **[!UICONTROL Componentes]** > **[!UICONTROL Métricas calculadas]** e selecione **[!UICONTROL + Adicionar]** na parte superior da página Métricas calculadas.
+
+1. Continue com [Áreas do construtor de métrica calculada](#areas-of-the-calculated-metrics-builder).
+
+## Áreas do construtor de métricas calculadas
 
 A caixa de diálogo **[!UICONTROL Construtor de métrica calculada]** é usada para criar métricas calculadas novas ou editar métricas calculadas existentes. A caixa de diálogo é denominada **[!UICONTROL Nova métrica calculada]** ou **[!UICONTROL Editar métrica calculada]** para métricas que você cria ou gerencia a partir do gerenciador [[!UICONTROL Métricas calculadas]](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
