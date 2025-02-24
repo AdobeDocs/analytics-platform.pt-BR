@@ -4,10 +4,10 @@ description: As tabelas de forma livre são a base para a análise de dados no W
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 25%
+ht-degree: 27%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 25%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização da tabela de forma livre em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte a [Tabela de forma livre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) para a_ versão ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização da tabela de forma livre no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte a [Tabela de forma livre](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) para a_ versão ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -103,7 +103,7 @@ As opções do [menu de contexto](../freeform-analysis-visualizations.md#context
 | **[!UICONTROL Baixar itens como CSV (*nome da dimensão*)]** | Baixe imediatamente os itens de dimensão (até um máximo de 50.000) da visualização no dispositivo local. Um máximo de 50.000 itens de dimensão para a dimensão selecionada. |
 | **[!UICONTROL Copiar visualização]** | Copie a visualização para que possa inseri-la em outro lugar no projeto ou em um projeto completamente diferente. |
 | **[!UICONTROL Baixar dados CSV]** | Baixe imediatamente os dados exibidos da visualização no dispositivo local. |
-| **[!UICONTROL Exportar tabela completa...]** | Exportar a tabela completa para locais de nuvem designados. Consulte [Exporta relatórios de Customer Journey Analytics para a nuvem](../../export/export-cloud.md) |
+| **[!UICONTROL Exportar tabela completa...]** | Exportar a tabela completa para locais de nuvem designados. Consulte [Exporta relatórios do Customer Journey Analytics para a nuvem](../../export/export-cloud.md) |
 | **[!UICONTROL Duplicar visualização]** | Faça uma duplicata exata da visualização. |
 | **[!UICONTROL Editar descrição]** | Adicione (ou edite) uma descrição de texto para a visualização. Consulte [Texto](../text.md). |
 | **[!UICONTROL Obter link de visualização]** | Copie e compartilhe um link diretamente na visualização. Uma caixa de diálogo Compartilhar link exibe o link. Selecione Copiar para copiar o link para a área de transferência. |

@@ -4,7 +4,7 @@ title: Configurações de coluna
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 21%
@@ -41,7 +41,7 @@ Para acessar [!UICONTROL Configurações de coluna], selecione ![Configurações
 | **[!UICONTROL Porcentagem]** | Determine se uma célula mostra/oculta o valor percentual para a métrica. Por exemplo, se a métrica for Exibições de página, o valor percentual será o número de exibições de página para o item da linha, dividido pelo total de exibições de página para a coluna.  Observação: Porcentagens maiores que 100% são possíveis para garantir a precisão. O limite superior pode ser movido para 1.000% para evitar que a largura das colunas fique muito grande. |
 | **[!UICONTROL Mostrar anomalias]** | Determine se a detecção de anomalias é executada nos valores desta coluna. |
 | **[!UICONTROL Mostrar previsão]** | Determine se os valores de previsão são mostrados nessa coluna. |
-| **[!UICONTROL Quebrar linha do texto do cabeçalho]** | Quebre o texto de cabeçalho em tabelas de forma livre para tornar os cabeçalhos mais legíveis e as tabelas mais compartilháveis. A quebra é útil para renderização de PDF e para métricas com nomes compridos. Ativado por padrão. |
+| **[!UICONTROL Quebrar linha do texto do cabeçalho]** | Quebre o texto de cabeçalho em tabelas de forma livre para tornar os cabeçalhos mais legíveis e as tabelas mais compartilháveis. A quebra é útil para renderização PDF e para métricas com nomes compridos. Ativado por padrão. |
 | **[!UICONTROL Interpretar zero como nenhum valor]** | Determine, para células com um valor 0, se deseja mostrar um 0 ou uma célula em branco. Essa interpretação é útil quando você observa dados de cada dia de um mês e alguns dias estão no futuro.  Em vez de mostrar 0 para datas futuras, células em branco são exibidas. Os gráficos também respeitam essa configuração (ou seja, os gráficos não mostram uma linha ou barra com valores 0). |
 | **[!UICONTROL Histórico]** | Determine se uma célula exibe ou oculta toda a formatação de célula, incluindo o gráfico de barras e a formatação condicional. |
 | **[!UICONTROL Gráfico de barras]** | Mostrar um gráfico de barras horizontal que representa o valor da célula relativo ao total da coluna. |
@@ -57,7 +57,7 @@ A formatação condicional aplica formatação a limites superiores, intermediá
 
 | Opções de formatação condicional | Descrição |
 | --- | --- |
-| **[!UICONTROL Limites de porcentagem de uso]** | Alterar para que o intervalo limite se baseie em percentagens em vez de valores absolutos. O intervalo de limite de porcentagem funciona para métricas exclusivamente baseadas em porcentagem (como a Taxa de rejeição) e para métricas que têm uma contagem e uma porcentagem (como Exibições de página). |
+| **[!UICONTROL Usar limites de porcentagem]** | Alterar para que o intervalo limite se baseie em percentagens em vez de valores absolutos. O intervalo de limite de porcentagem funciona para métricas exclusivamente baseadas em porcentagem (como a Taxa de rejeição) e para métricas que têm uma contagem e uma porcentagem (como Exibições de página). |
 | **[!UICONTROL Gerado automaticamente]** | Calcular limites superior/médio/inferior automaticamente de acordo com os dados. O limite superior é o valor mais alto na coluna. O limite inferior é o menor valor e o ponto intermediário é a média entre os limites superior e inferior. |
 | **[!UICONTROL Personalizado]** | Atribuir manualmente **[!UICONTROL Limite superior]**, **[!UICONTROL Ponto médio]** e **[!UICONTROL Limite inferior]**. Os limites fornecem a flexibilidade para determinar quando um valor de coluna se torna bom, médio ou ruim. |
 | **[!UICONTROL Paleta de formatação condicional]** | Aplique um conjunto de cores pré-configurado às células. Dependendo de qual dos quatro esquemas de cores disponíveis você selecionar, cores diferentes serão atribuídas a valores altos, valores de ponto médio e valores baixos. <br> Substituir uma dimensão na tabela redefine os limites da formatação condicional. Substituir uma métrica recalcula os limites da coluna (na qual haja uma métrica no eixo X e uma dimensão no eixo Y). |
