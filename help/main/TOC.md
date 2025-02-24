@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 4bbd661ce2cac94a2d532c13320e98eb0015e358
+source-git-commit: 0dd3dcc819b6e4a7b13fb4601322d94fd5db179a
 workflow-type: tm+mt
-source-wordcount: '1131'
-ht-degree: 99%
+source-wordcount: '1160'
+ht-degree: 94%
 
 ---
 
@@ -47,34 +47,44 @@ ht-degree: 99%
       + [Escolha seu caminho de atualização](/help/getting-started/cja-upgrade/cja-upgrade-path.md)
       + [Enviar dados para a Platform](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Reter dados históricos](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
-      + [Processo recomendado](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
-      + [Compreensão da implementação do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
-      + [Criar conjuntos de dados de pesquisa para classificações](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
-      + [Monitoramento da ingestão de conjuntos de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
-      + [Criar um canal de marketing de campo derivado](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
-      + [Implementar a tag de carregamento para a extensão do SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
-      + [Criar uma tag para sua propriedade](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-      + [Adicionar a extensão do SDK da Web à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-      + [Adicionar a lógica da coleção de dados XDM à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
-      + [Arquitetar seu esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
-      + [Criar seu esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
-      + [Usar seu esquema já existente](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
-      + [Criar um conjunto de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
-      + [Criar um fluxo de dados](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
-      + [Adicionar a Platform como serviço](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + [Processo de atualização recomendado](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + Arquitete e crie um esquema {#schema}
+         + [Arquitetar seu esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
+         + [Criar seu esquema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
+         + [Usar seu esquema já existente](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md)
+      + Criar uma sequência de dados {#create-datastream}
+         + [Criar um fluxo de dados](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md)
+         + [Adicionar a Platform como serviço](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md)
+      + Criar conjuntos de dados {#create-datasets}
+         + [Criar um conjunto de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md)
+         + [Criar conjuntos de dados de pesquisa para classificações](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)
+         + [Monitoramento da ingestão de conjuntos de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
+      + Criar marcas {#create-tags}
+         + [Criar uma tag para sua propriedade](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
+         + [Adicionar a extensão do SDK da Web à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+         + [Implementar a tag de carregamento para a extensão do SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+         + [Adicionar a lógica da coleção de dados XDM à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [Criar uma conexão](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Criar uma visualização de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
+      + [Criar um canal de marketing de campo derivado](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Validar fluxo de dados](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
-      + [Atalho de atualização: migrar para o SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-shortcut-websdk.md)
-      + [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
-      + [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
-      + [Adicionar o conjunto de dados do conector de origem do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
-      + [Usar o conector de origem do Analytics exclusivamente](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md)
-      + [Mover do conector de origem do Analytics para o SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
-      + [Desabilitar a coleção de dados do AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
-      + [Atualização de uma solução de análise de terceiros](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
-      + [Suporte a recursos do Adobe Analytics ao atualizar](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
-      + [Adobe Analytics durante e após uma atualização](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + Reter dados históricos com o conector de origem do Analytics {#historical-data-source-connector}
+         + [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+         + [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
+         + [Adicionar o conjunto de dados do conector de origem do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
+      + [Avaliar quando desativar o Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
+      + [Desativar Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
+      + Métodos de atualização alternativos {#alternative-upgrade-methods}
+         + [Usar a coleção de dados do AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
+         + [Enviar camada de dados](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
+         + [Conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md)
+      + Outros cenários de atualização {#other-upgrade-scenarios}
+         + [Mover do conector de origem do Analytics para o SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)
+         + [Atualizar de uma solução que não seja da Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-third-party-solution.md)
+      + Informações adicionais {#additional-information}
+         + [Compreensão da implementação do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md)
+         + [Suporte a recursos do Adobe Analytics ao atualizar](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)
+         + [Recursos do Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md)
    + Comparação com o Adobe Analytics {#cja-aa-comparison}
       + [Visão geral](../getting-started/aa-vs-cja/overview.md)
       + [Usar dados do Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
@@ -87,7 +97,7 @@ ht-degree: 99%
    + [Evolução a partir do Adobe Analytics](../getting-started/aa-to-cja.md)
    + [Guia do usuário para usuários do Adobe Analytics](../getting-started/aa-to-cja-user.md)
 
-+ Assimilação de dados {#cja-data-ingestion}
++ Ingestão de dados {#cja-data-ingestion}
    + [Visão geral da assimilação de dados](../data-ingestion/data-ingestion.md)
    + Assimilar e usar guias de início rápido{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)

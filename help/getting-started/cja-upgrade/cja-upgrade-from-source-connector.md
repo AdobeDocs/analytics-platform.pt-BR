@@ -7,7 +7,7 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: a462bdbff59e8d83d6948ef882e66690624c4847
+source-git-commit: 892dffd831abd46c44c12bd6743a358e3cbd741d
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 15%
@@ -27,21 +27,21 @@ ht-degree: 15%
 
 >[!NOTE]
 > 
->Use as informações desta página ao responder perguntas da [lista de verificação de atualização de Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Use as informações desta página ao responder perguntas da [lista de verificação de atualização do Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
 
-Há desvantagens inerentes ao uso do conector de origem do Analytics como sua única implementação para o Customer Journey Analytics.
+Há desvantagens inerentes ao uso do conector de origem do Analytics como sua única implementação do Customer Journey Analytics.
 
-Se sua organização já tiver atualizado para Customer Journey Analytics usando somente a implementação do conector de origem do Analytics, o Adobe recomenda a transição para uma implementação que use o conector de origem do Analytics (para dados históricos), juntamente com uma nova implementação do Web SDK (para coleta de dados contínua).
+Se sua organização já tiver atualizado para o Customer Journey Analytics usando somente a implementação do conector de origem do Analytics, a Adobe recomenda a transição para uma implementação que use o conector de origem do Analytics (para dados históricos), juntamente com uma nova implementação do Web SDK (para coleta de dados contínua).
 
 ## Entenda as vantagens e desvantagens de usar exclusivamente o conector de origem do Analytics
 
-Para obter informações sobre as vantagens e desvantagens de usar o conector de origem do Analytics, consulte [Usar o conector de origem do Analytics exclusivamente para atualizar para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-exclusively.md).
+Para obter informações sobre as vantagens e desvantagens de usar o conector de origem do Analytics, consulte [Usar o conector de origem do Analytics exclusivamente para atualizar para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-source-connector.md).
 
 ## Transição do conector de origem do Analytics para o Web SDK
 
 A seguir está o processo de alto nível para transição do uso exclusivo do conector de origem do Analytics para uma implementação composta pelo conector de origem do Analytics e uma implementação do Web SDK:
 
-1. Crie uma implementação do Web SDK, conforme descrito em [Etapas de atualização detalhadas recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) no artigo, [Atualizar do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).
+1. Crie uma implementação do Web SDK, conforme descrito em [Etapas de atualização detalhadas recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#detailed-recommended-upgrade-steps) no artigo [Atualização do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).
 
    Após configurar a implementação do Web SDK, continue com as etapas a seguir.
 
@@ -62,7 +62,7 @@ A seguir está o processo de alto nível para transição do uso exclusivo do co
 
    1. Repita esse processo para cada campo no grupo de campos Modelo de evento de experiência do Adobe Analytics que você está usando para coletar dados no Adobe Analytics.
 
-1. Adicione o conjunto de dados criado automaticamente com seu conector de origem original do Analytics à conexão Customer Journey Analytics.
+1. Adicione o conjunto de dados criado automaticamente com seu conector de origem original do Analytics à conexão do Customer Journey Analytics.
 
    Para obter mais informações, consulte [Adicionar o conjunto de dados do conector de origem atual do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
 

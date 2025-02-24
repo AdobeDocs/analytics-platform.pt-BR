@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: f4440148d26e81938d029d4a077cd787c868f1be
+source-git-commit: 74719504960f00f4593633bb62f29d8655cdadd9
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 54%
+source-wordcount: '482'
+ht-degree: 34%
 
 ---
 
@@ -33,6 +33,51 @@ ht-degree: 54%
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-stitch-customer-care"
+>title="Entre em contato com o Atendimento ao cliente da Adobe para gerar um conjunto de dados compilado"
+>abstract="Se você tiver um campo que contém um identificador que existe em vários conjuntos de dados, mas não é o identificador principal, poderá usá-lo para gerar um novo conjunto de dados com um identificador consistente."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-integrate-rtcdp"
+>title="Integrar à Real-time CDP"
+>abstract="Combine dados de perfil de várias fontes para gerar públicos e segmentos com base nas características do usuário."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-integrate-target"
+>title="Integração temporária com o Adobe Target"
+>abstract="A Adobe recomenda a integração com o Adobe Journey Optimizer para casos de uso de personalização. A integração com o Adobe Target é possível, mas uma solução temporária."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-integrate-ajo"
+>title="Integrar ao Journey Optimizer"
+>abstract="Fornecer experiências conectadas, contextuais e personalizadas aos clientes."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-integrate-aam"
+>title="Integrar temporariamente ao Adobe Audience Manager"
+>abstract="A Adobe recomenda a integração com a Adobe Real-time CDP para casos de uso baseados em público-alvo. A integração com o Audience Manager é possível, mas uma solução temporária."
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 > 
 >Use as informações desta página ao responder perguntas da [lista de verificação de atualização do Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
@@ -45,7 +90,9 @@ Considere quais dos seguintes recursos do Customer Journey Analytics você desej
 |---------|----------|
 | [Vincular dados da Web a dados de outros canais, como dados da central de atendimento](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | O Customer Journey Analytics possui a habilidade da Experience Platform de armazenar toda espécie de esquemas de dados e tipos. Com o [Modelo de dados de experiência (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR), os dados podem ser representados e organizados uniformemente, para que estejam prontos para combinação e exploração. O Adobe Analytics foca predominantemente em dados de análise móveis e da Web com alguns recursos de [importação de dados](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=pt-BR). |
 | [Compilar ocorrências de outros conjuntos de dados usando uma dimensão personalizada](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview) | O Customer Journey Analytics permite [combinar dados](/help/connections/combined-dataset.md) de vários conjuntos de relatórios como se fossem um único conjunto de relatórios no Adobe Analytics. |
-| Integração com a CDP em tempo real da Adobe |  |
-| [Integrar ao Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) |  |
+| [Integrar à CDP em tempo real do Adobe](/help/components/audiences/audiences-overview.md) | Você pode [criar e publicar públicos-alvo](/help/components/audiences/audiences-overview.md) descobertos no Customer Journey Analytics no Perfil do cliente em tempo real na Adobe Experience Platform para direcionamento e personalização de clientes. |
+| [Integrar temporariamente com o Adobe Target (A4T)](/help/integrations/at.md) | Os Relatórios do Target no Customer Journey Analytics permitem [medir e relatar atividades do Adobe Target](/help/integrations/at.md) diretamente no Customer Journey Analytics. |
+| [Integrar ao Adobe Journey Optimizer](/help/integrations/ajo.md) | Você pode configurar os dados gerados pelo Journey Optimizer para [executar análise avançada no Customer Journey Analytics](/help/integrations/ajo.md). |
+| Integrar temporariamente ao Adobe Audience Manager |  |
 
 

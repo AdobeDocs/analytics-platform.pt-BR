@@ -4,9 +4,9 @@ title: Métricas
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 1ffe01609b3ab0d96b79cc9297dda9ccf25bcbb6
+source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '864'
 ht-degree: 8%
 
 ---
@@ -43,11 +43,11 @@ Você pode ver se uma métrica foi aprovada ![ícone Aprovado](https://spectrum.
 
 ## Comparar métricas com diferentes modelos de atribuição
 
-Se você deseja comparar um modelo com outro de maneira fácil e rápida para uma métrica, selecione **[!UICONTROL Comparar modelos de atribuição]** no menu de contexto para uma métrica.
+Para comparar rapidamente um modelo de atribuição com outro para uma métrica, selecione **[!UICONTROL Comparar modelos de atribuição]** no menu de contexto para uma métrica.
 
 ![realce do painel do Workspace Comparar modelos de atribuição](assets/compare-attribution.png)
 
-Esse atalho permite comparar modelos de atribuição de maneira rápida e fácil.
+Esse atalho permite comparar um modelo de atribuição a outro sem arrastar uma métrica e configurá-la duas vezes.
 
 ## Criar métricas calculadas
 

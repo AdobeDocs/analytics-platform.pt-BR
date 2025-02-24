@@ -7,14 +7,14 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 3b1012a302200192fd31fd6a9ed94f96323eb595
+source-git-commit: 9cfe89aef069d777424eb8a5d9ef8ae03a9d0486
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 50%
+source-wordcount: '201'
+ht-degree: 43%
 
 ---
 
-# Desabilitar a coleção de dados do AppMeasurement {#disable-appmeasurement}
+# Desativar Adobe Analytics {#disable-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,7 +31,7 @@ ht-degree: 50%
 >
 >Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
 
-<!-- need to work on this -->
+Antes de desabilitar o Adobe Analytics, reveja as informações em [Avalie quando desabilitar o Adobe Analytics depois de atualizar para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
 
 * **Marcas:** Desabilitar a extensão do Adobe Analytics
 
