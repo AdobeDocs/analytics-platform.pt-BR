@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: FAQ
 role: User
 source-git-commit: 1bea6a1bc7d2070f01a60ef859675a0f9d03c86d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2582'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -134,7 +134,7 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 >
 >Não há um tamanho de dados fixo no Customer Journey Analytics e, portanto, a Adobe não pode definir um tempo de assimilação padrão. A Adobe está trabalhando ativamente para reduzir essas latências por meio de novas atualizações e otimizações de assimilação.
 
-* Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estão disponíveis na Adobe Experience Platform. (Tamanho do lote > 50 milhões de linhas: superior a 90 minutos.) Se a compilação estiver ativada, a assimilação pode levar até 4 horas. Consulte [medidas de proteção](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails) para obter mais detalhes.
+* Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estão disponíveis na Adobe Experience Platform. (Tamanho do lote > 50 milhões de linhas: superior a 90 minutos.) Se a compilação estiver habilitada, a assimilação pode levar até 4 horas. Consulte [Medidas de proteção](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/technotes/guardrails) para obter mais detalhes.
 * Preenchimentos retroativos pequenos: dentro de sete dias
 * Preenchimentos retroativos grandes: dentro de 30 dias
 
