@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 82dacd2581450303b1b87d2a72f6f6ede987d367
+source-git-commit: 023e7dda53cc60096076599d30a8dd78db1bfbd7
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2024'
 ht-degree: 17%
 
 ---
@@ -105,14 +105,9 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 >abstract="Selecione uma exibição de dados existente do Customer Journey Analytics com a qual você gostaria de mesclar os dados da análise de conteúdo.<br/>"
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change_content"
+>id="aca_onboarding_dataview_change_dialog"
 >title="Nova visualização de dados"
 >abstract="A seleção de uma nova visualização de dados resultará em uma atualização dessa visualização de dados para incluir métricas e dimensões do Content Analytics. Se necessário, a conexão associada também é atualizada para incluir conjuntos de dados do Content Analytics. A conexão e a visualização de dados configuradas atualmente para o Content Analytics não são modificadas."
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_dataview_change_title"
->title="Nova visualização de dados"
->abstract="Nova visualização de dados"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -284,19 +279,9 @@ Depois de fornecer todos os detalhes necessários, um resumo fornecerá detalhes
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning_content"
->title="Aviso de implementação de integração"
->abstract="Se você selecionar **[!UICONTROL Implementar]**, configurará o Content Analytics com base na entrada fornecida neste fluxo de trabalho. Várias configurações são escolhidas por padrão com base no que geralmente é útil para o Content Analytics, mas você (como controlador de dados) deve revisar as configurações de cada artefato para confirmar se as configurações são implementadas de acordo com a política de privacidade, os direitos e obrigações contratuais e os requisitos de consentimento conforme a legislação aplicável.<br/><br/>Observe que nenhum dado será coletado até que a biblioteca de marcas associada a esta configuração seja publicada manualmente.<br/><br/>Para derivar atributos de imagens e texto, o Adobe recuperará os atributos usando:<ol><li>O URL capturado no momento da visita do site dos usuários, de acordo com as configurações de coleta de dados definidas por você e</li><li>O URL no qual a imagem está hospedada.</li></ol>Você não deve marcar imagens que estão hospedadas em sites de terceiros."
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="aca_onboarding_implementation_warning_title"
+>id="aca_onboarding_implementation_warning_dialog"
 >title="Confirmação da implementação"
->abstract="Confirmação da implementação"
-
-<!-- markdownlint-enable MD034 -->
-
+>abstract="Se você selecionar **[!UICONTROL Implementar]**, configurará o Content Analytics com base na entrada fornecida neste fluxo de trabalho. Várias configurações são escolhidas por padrão com base no que geralmente é útil para o Content Analytics, mas você (como controlador de dados) deve revisar as configurações de cada artefato para confirmar se as configurações são implementadas de acordo com a política de privacidade, os direitos e obrigações contratuais e os requisitos de consentimento conforme a legislação aplicável.<br/><br/>Observe que nenhum dado será coletado até que a biblioteca de marcas associada a esta configuração seja publicada manualmente.<br/><br/>Para derivar atributos de imagens e texto, o Adobe recuperará os atributos usando:<ol><li>O URL capturado no momento da visita do site dos usuários, de acordo com as configurações de coleta de dados definidas por você e</li><li>O URL no qual a imagem está hospedada.</li></ol>Você não deve marcar imagens que estão hospedadas em sites de terceiros."
 
 <!-- markdownlint-enable MD034 -->
 
