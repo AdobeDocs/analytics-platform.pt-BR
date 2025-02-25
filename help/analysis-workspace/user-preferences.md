@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: ef93e386e3c3e64a022805dcf8674b7fddf361a5
+source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
 workflow-type: tm+mt
-source-wordcount: '3635'
+source-wordcount: '3632'
 ht-degree: 96%
 
 ---
@@ -185,22 +185,22 @@ Selecione os títulos da seção vinculada para obter mais informações e conte
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
->title="Métrica de tabela padrão"
+>title="Contêiner padrão"
 >abstract="Selecione o contêiner padrão a ser usado para visualizações de [!UICONTROL Fluxo]. Se a visualização de dados selecionada não contiver o contêiner padrão selecionado, a visualização [!UICONTROL Fluxo] alternará automaticamente para outro contêiner primário."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
->title="Métrica de tabela padrão"
+>title="Contêiner padrão"
 >abstract="Selecione o contêiner padrão a ser usado para visualizações de [!UICONTROL Fallout]. Se a visualização de dados selecionada não contiver o contêiner padrão selecionado, a visualização [!UICONTROL Fallout] mudará automaticamente para outro contêiner primário."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
->title="Métrica de tabela padrão"
+>title="Método de contagem padrão"
 >abstract="Selecione o método de contagem padrão a ser usado para visualizações de [!UICONTROL Histograma]. Se a visualização de dados selecionada não contiver o método de contagem padrão selecionado, a visualização do [!UICONTROL Histograma] mudará automaticamente para outro método de contagem principal."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
->title="Métrica de tabela padrão"
+>title="Contêiner padrão"
 >abstract="Selecione o contêiner padrão a ser usado para visualizações de [!UICONTROL tela de Jornada]. Se a visualização de dados selecionada não contiver o contêiner padrão selecionado, a visualização [!UICONTROL tela de Jornada] será alternada automaticamente para outro contêiner primário."
 
 
