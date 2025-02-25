@@ -4,10 +4,10 @@ title: Consistência das métricas e associação do público-alvo
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
-workflow-type: ht
-source-wordcount: '592'
-ht-degree: 100%
+source-git-commit: 7c906e30d54362713f5013c8661ee523938d4b0f
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,8 @@ Ao comparar as contagens de associação de público-alvo na Real-time CDP e no 
 
 Atualmente, a Real-time CDP e o Customer Journey Analytics não compartilham a mesma definição de pessoa. A Real-time CDP depende totalmente das informações contidas no [Gráfico de identidade](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) para criar um perfil mesclado.
 
-O Customer Journey Analytics pode ser configurado para usar a [Compilação](../stitching/overview.md), que extrai identificadores de conjuntos de dados no data lake e aplica uma lógica personalizada para vinculá-los.
+O Customer Journey Analytics pode ser configurado para usar [Costura](../stitching/overview.md). Se você usar a [Compilação em campo](/help/stitching/fbs.md) como o mecanismo de compilação, especifique um identificador de um conjunto de dados no data lake para compilar os dados nesse conjunto de dados com a finalidade de elevar o conjunto de dados com perfis mesclados aprimorados. Se você usar a [Compilação com base em gráfico](/help/stitching/gbs.md) como o mecanismo de compilação, um processo semelhante estará usando o gráfico de identidade, com base em um namespace de identidade especificado.
 
-No futuro, o Customer Journey Analytics poderá usar o Gráfico de identidade.
 
 ## Diferenças na configuração do conjunto de dados
 
