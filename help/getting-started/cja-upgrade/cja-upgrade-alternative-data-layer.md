@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
+exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '684'
 ht-degree: 9%
 
 ---
@@ -42,9 +43,7 @@ ht-degree: 9%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Use as informações desta página ao responder perguntas da [lista de verificação de atualização do Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-note}}
 
 Ao atualizar para o Customer Journey Analytics, o Adobe [recomenda uma nova implementação do Experience Platform Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md). No entanto, dependendo de vários fatores, como linha do tempo e restrições de recursos, as etapas de atualização recomendadas podem não ser práticas para sua organização.
 
@@ -71,6 +70,3 @@ As etapas básicas para enviar toda a camada de dados para o Customer Journey An
 1. Mapeie cada elemento da camada de dados para o campo XDM desejado.
 
    Quaisquer elementos da camada de dados que não estão mapeados para um campo XDM são permanentemente descartados, já que a Adobe não sabe onde ou como armazenar esses dados.
-
-
-

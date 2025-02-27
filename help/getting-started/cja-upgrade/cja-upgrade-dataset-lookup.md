@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: bb87226ee4b9acc433031f41997d403d49f48db3
+source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 1%
+source-wordcount: '810'
+ht-degree: 10%
 
 ---
 
@@ -25,11 +25,7 @@ ht-degree: 1%
 
 <!-- markdownlint-enable MD034 -->
 
->[!NOTE]
-> 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para a sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
+{{upgrade-note-step}}
 
 Semelhante aos dados de classificações no Adobe Analytics, os conjuntos de dados de pesquisa são o método para classificar dados no Customer Journey Analytics.
 
@@ -43,7 +39,7 @@ Crie um novo esquema personalizado para cada dimensão que contenha dados que vo
 
 Repita esse processo para cada dimensão que contenha dados que você deseja classificar.
 
-Para criar um esquema para usar com um conjunto de dados de pesquisa no Customer Journey Analytics:
+Para criar um esquema para usar com um conjunto de dados de pesquisa na Customer Journey Analytics:
 
 1. No Adobe Experience Platform, selecione **[!UICONTROL Esquemas]** na seção **[!UICONTROL Gerenciamento de dados]** no painel esquerdo.
 
@@ -71,7 +67,7 @@ Depois de [criar um esquema personalizado](#create-a-custom-schema-to-use-with-t
 
 Repita esse processo para cada dimensão que contenha dados que você deseja classificar.
 
-Para criar um conjunto de dados de pesquisa para uso com um esquema no Customer Journey Analytics:
+Para criar um conjunto de dados de pesquisa para uso com um esquema na Customer Journey Analytics:
 
 >[!NOTE]
 >

@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 0dd3dcc819b6e4a7b13fb4601322d94fd5db179a
+source-git-commit: 68ce73ddf805ec377fdb2c539683507f191c9249
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 94%
+source-wordcount: '1165'
+ht-degree: 93%
 
 ---
 
@@ -68,6 +68,7 @@ ht-degree: 94%
       + [Criar uma visualização de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Criar um canal de marketing de campo derivado](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
       + [Validar fluxo de dados](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
+      + [Configurar coleção de streaming de mídia](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
       + Reter dados históricos com o conector de origem do Analytics {#historical-data-source-connector}
          + [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
@@ -438,7 +439,7 @@ ht-degree: 94%
       + [Usar dimensões do canal de marketing](../use-cases/aa-data/marketing-channels.md)
       + [Combinar conjuntos de relatórios com esquemas diferentes](../use-cases/aa-data/combine-report-suites.md)
    + Dados complexos {#complex-data}
-      + [Uso de arrays de objetos](../use-cases/object-arrays.md)
+      + [Uso de matrizes de objetos](../use-cases/object-arrays.md)
    + Compilação {#stitching}
       + [Dispositivos compartilhados](/help/use-cases/stitching/shared-devices.md)
    + Campos derivados {#derived-fields}
