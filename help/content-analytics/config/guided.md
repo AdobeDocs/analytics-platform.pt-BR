@@ -7,10 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 4650718a067f68d4edfad3db71e822898f661648
+source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
-source-wordcount: '2024'
-ht-degree: 18%
+source-wordcount: '2097'
+ht-degree: 17%
 
 ---
 
@@ -179,7 +179,7 @@ Para editar experiências existentes ou incluir novas Experiências em uma confi
 
 ![Captura e definição de experiência da configuração do Content Analytics](../assets/aca-configuration-experience-edit.png)
 
-* Selecione ![Editar](/help/assets/icons/Edit.svg) Editar para editar os parâmetros na extensão do Adobe Content Analytics na propriedade Tag, associada à configuração selecionada.
+* Selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** para editar os parâmetros na [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) na propriedade Tag, associada à configuração selecionada.
 
 
 ### Coleção de dados {#onboarding-data-collection}
@@ -260,9 +260,9 @@ Em uma nova configuração, é necessário definir qual propriedade de tag desej
 
 Para uma configuração existente, não é possível editar a propriedade Tag. No entanto, é possível editar as páginas e os ativos para incluir ou excluir.
 
-* Para editar quais páginas devem ser incluídas ou excluídas ao coletar dados para a Análise de Conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Experiência]**.
+* Para editar quais páginas devem ser incluídas ou excluídas ao coletar dados para a Análise de Conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Experiência]**. Você é redirecionado para a [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) associada à propriedade Tag da sua configuração do Content Analytics. É possível editar a expressão regular para incluir ou excluir páginas. Certifique-se de [publicar](manual.md#publish) suas alterações.
 
-* Para editar quais ativos devem ser incluídos ou excluídos ao coletar dados para a Análise de conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Ativo]**.
+* Para editar quais ativos devem ser incluídos ou excluídos ao coletar dados para a Análise de conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Ativo]**. Você é redirecionado para a [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) associada à propriedade Tag da sua configuração do Content Analytics. É possível editar a expressão regular para incluir ou excluir ativos. Certifique-se de [publicar](manual.md#publish) suas alterações.
 
 ### Resumo {#summary}
 

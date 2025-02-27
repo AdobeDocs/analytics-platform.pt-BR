@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 20214cbebd9867a269c96f25f1a2c8b3bfa26a35
+source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ As seguintes ações de configuração manual estão disponíveis:
 
 ## Publicar
 
-Para ativar uma configuração do Content Analytics, você precisa publicar a propriedade de tag associada.
+Para ativar uma configuração do Content Analytics, você precisa [publicar](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} a propriedade de Marca associada. Somente quando você publica a propriedade Tag do Content Analytics, os dados do Content Analytics são coletados para os domínios, a experiência e os ativos configurados
 
 
 ## Modificar
@@ -37,4 +37,5 @@ Para ativar uma configuração do Content Analytics, você precisa publicar a pr
 >[!MORELIKETHIS]
 >
 >[Configuração guiada](guided.md)
+>[Visão geral da publicação de Marcas de coleção de dados](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
 >

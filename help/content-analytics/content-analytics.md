@@ -7,25 +7,21 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
+source-git-commit: 8c257279353112df583b46d87ea17749a75867e2
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
 
 # Visão geral do Content Analytics
 
-<!-- 
-This is a placeholder article for upcoming Content Analytics documentation. Currently used to set up contextual help entries for developer working on onboarding UI and workspace UI 
--->
-
 >[!WARNING]
 >
 >Este artigo é um rascunho não oficial preliminar de uma versão final futura e faz parte da documentação do Content Analytics. Todo o conteúdo está sujeito a alterações e nenhuma obrigação legal pode ser derivada da versão atual deste artigo.
 >
 
-{#release-limited-testing}
+{{release-limited-testing}}
 
 O Content Analytics ajuda os profissionais de marketing a entender como o conteúdo afeta os principais indicadores de desempenho definidos por uma empresa. Além dos dados comportamentais, o Content Analytics coleta dados sobre como o conteúdo é consumido e como as unidades de conteúdo afetam. Por exemplo, os clientes respondem melhor a um tom de voz específico, a uma paleta de cores específica ou a temas específicos? Essas informações, juntamente com fluxos de trabalho e modelos de relatórios projetados especificamente, podem ajudar você a executar análises ainda melhores e obter insights mais profundos sobre os dados de jornada do cliente no Customer Journey Analytics.
 
@@ -63,6 +59,12 @@ O Content Analytics usa dados de exibição de imagem da Web coletados em conjun
 1. O serviço do montador de recursos e o serviço de identidade processam os dados revisitados.
 1. Os resultados desses serviços (componentes, atributos e identidades) são usados para atualizar os conjuntos de dados de análise de conteúdo específicos relevantes no Experience Platform.
 1. Os dados de análise de conteúdo, juntamente com dados comportamentais e outros conjuntos de dados de pesquisa, podem ser usados em uma configuração do Customer Journey Analytics (Conexão, Visualização de dados e Workspace). Essa configuração fornece a base para os insights exclusivos de nível macro sobre o seu conteúdo.
+
+>[!NOTE]
+>
+>O Content Analytics aproveita a IA/ML. Os resultados (para a caracterização de experiências e ativos) podem ser imprecisos.
+>
+
 
 >[!MORELIKETHIS]
 >

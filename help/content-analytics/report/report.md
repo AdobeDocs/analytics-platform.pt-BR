@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 7542e7a402c8e2f8d6e4c1e624f04ceb752cc27e
+source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Para começar a criar relatórios sobre o Content Analytics do zero:
 
 1. [Criar um novo](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [abrir um projeto](/help/analysis-workspace/build-workspace-project/open-projects.md) existente no Workspace.
 1. Arraste uma visualização de ![Tabela](/help/assets/icons/Table.svg) [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) na tela.
-1. Use dimensões e métricas específicas do Content Analytics e outros [componentes](/help/components/overview.md) genéricos (como filtros, intervalos de datas, anotações) para criar seus insights de análise de conteúdo.
+1. Use [componentes específicos do Content Analytics](components.md) e outros [componentes](/help/components/overview.md) genéricos (como filtros, intervalos de datas, anotações) para criar seus insights de análise de conteúdo.
 
 ## Miniaturas
 
@@ -49,7 +49,7 @@ Para abrir a visualização com os seguintes detalhes:
   |---|---|
   | ![Visualização da experiência do Content Analytics](../assets/aca-experience-preview.png) | ![Visualização do ativo de análise de conteúdo](../assets/aca-asset-preview.png) |
   | **[!UICONTROL Nome da experiência]** | **[!UICONTROL Nome do ativo]** |
-  | **[!UICONTROL Impressões (todas as vezes)]**: Número de impressões da experiência. | **[!UICONTROL Impressões (todas as vezes)]**: número de impressões do ativo. |
+  | **[!UICONTROL Impressões (todas as vezes)]**: Número de impressões da experiência. | **[!UICONTROL Impressões (todos os mes)]**: número de impressões do ativo. |
   | **[!UICONTROL Assets]**: Número de ativos que esta experiência contém. Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) para inspecionar os ativos. | **[!UICONTROL Experiências]**: número de experiências em que este ativo é exibido. [Detalhamento](/help/assets/icons/Breakdown.svg) Detalhamento para inspecionar os ativos. |
   | **[!UICONTROL Primeira impressão]**: data da primeira impressão da experiência. | **[!UICONTROL Primeira impressão]**: data da primeira impressão do ativo. |
   | **[!UICONTROL Impressão mais recente]**: data da impressão mais recente da experiência. | **[!UICONTROL Impressão mais recente]**: data da impressão mais recente do ativo. |
