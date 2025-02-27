@@ -4,9 +4,9 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1893'
 ht-degree: 11%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização da tela de Jornada em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Não há visualização equivalente em **Adobe Analytics**._
+_Este artigo documenta a visualização da tela de Jornada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Não há visualização equivalente em **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -170,11 +170,11 @@ A tela de Jornada fornece uma análise profunda e completa que não é possível
 
 Usar a tela do Jornada para analisar jornadas que foram criadas no Journey Optimizer oferece vários benefícios:
 
-* Crie eventos usando qualquer dimensão de Customer Journey Analytics, métrica, filtro ou intervalo de datas.
+* Crie eventos usando qualquer dimensão, métrica, filtro ou intervalo de datas do Customer Journey Analytics.
 
   No Journey Optimizer, um usuário técnico deve criar um evento antes que ele possa ser adicionado a uma jornada.
 
-* Criar públicos-alvo com base em um nó personalizado criado por você (inicia o construtor de público-alvo do Customer Journey Analytics).
+* Criar públicos-alvo com base em um nó personalizado criado por você (inicia o construtor de públicos-alvo da Customer Journey Analytics).
 
   No Journey Optimizer, você pode criar públicos-alvo somente para atividades predefinidas.
 
@@ -234,7 +234,7 @@ Depois de modificar uma jornada do Journey Optimizer na tela de Jornada, as alte
 
 ### Diferenças de terminologia entre o Journey Optimizer e o Customer Journey Analytics
 
-Certos termos que significam uma coisa no Journey Optimizer significam outra coisa no Customer Journey Analytics. Ao usar a tela de Jornada, os termos Customer Journey Analytics são usados.
+Certos termos que significam uma coisa no Journey Optimizer significam outra coisa no Customer Journey Analytics. Ao usar a tela de Jornada, os termos do Customer Journey Analytics são usados.
 
 | Termo | Tela da jornada | Journey Optimizer |
 |---------|----------|---------|
@@ -247,3 +247,9 @@ Para obter informações sobre como analisar uma jornada do Journey Optimizer na
 ## Criar análises na tela de Jornada
 
 Você pode criar análises na tela do Jornada com base em qualquer dimensão ou métrica disponível no Analysis Workspace. Ou você pode analisar jornadas que foram criadas no Journey Optimizer. Para obter mais informações, consulte [Configurar uma visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+
+
+>[!MORELIKETHIS]
+>
+> * [Guia para Visualização da Tela de Jornada no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
+

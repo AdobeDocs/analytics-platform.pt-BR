@@ -5,10 +5,10 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 93%
+source-wordcount: '991'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ A arquitetura de alto nível do Customer Journey Analytics pode ser vista aqui:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de Jornada do cliente: Analytics para o Experience Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} para obter um vídeo de introdução ao Customer Journey Analytics.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise da jornada do cliente: Analytics para empresas baseadas em experiências](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de introdução ao Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
@@ -92,17 +92,20 @@ Desde a assimilação de dados até o acesso direto ao SQL, vários componentes 
 
 ## Vídeos
 
-
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Work with data in Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} para ver um vídeo de introdução sobre como trabalhar com dados no Customer Journey Analytics.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Trabalhar com dados no Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de introdução sobre como trabalhar com dados no Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Architecture and integration](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} para obter um vídeo de introdução sobre a arquitetura e a integração do Customer Journey Analytics.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arquitetura e integração](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} para assistir a um video de introdução sobre a arquitetura e a integração do Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
+* [Curso de falha do Adobe Customer Journey Analytics para analistas](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
 
+* [Otimizando sua mentalidade e o fluxo de trabalho do Adobe Customer Journey Analytics: Modelos de equipe para organizações de todos os tamanhos](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
+
+* [Criando Disponibilidade Organizacional: Um Guia do Primeiro Usuário para Dimensionar o Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)
