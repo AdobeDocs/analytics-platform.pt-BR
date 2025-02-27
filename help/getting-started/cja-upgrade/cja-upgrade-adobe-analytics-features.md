@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 92053109-f80d-47ab-b011-c28a5411149c
-source-git-commit: 4f6b5531578fbc4ae0eef5dc4fb46c3c1b548417
+source-git-commit: 7a5414745f065ec29b59172dee4f723c0ce72e68
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 52%
+source-wordcount: '464'
+ht-degree: 40%
 
 ---
 
@@ -109,6 +109,6 @@ Considere quais dos seguintes recursos do Adobe Analytics você deseja continuar
 | [Sobreposição do Activity Map e rastreamento de link](https://experienceleague.adobe.com/en/docs/analytics/analyze/activity-map/overview) | Ainda não disponível |
 | [Dados de classificação](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/c-classifications) | Os conjuntos de dados de pesquisa são o método para classificar dados no Customer Journey Analytics.<p>[Crie um conjunto de dados de pesquisa para cada dimensão que contenha dados de classificação.](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md)</p> |
 | [Canais de marketing](https://experienceleague.adobe.com/en/docs/analytics/components/marketing-channels/c-getting-started-mchannel) | Campos derivados são criados em uma exibição de dados. <p>[Criar um campo derivado de canal de marketing.](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)</p> |
-| [Feeds de dados](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | A exportação de dados de conjuntos de dados de primeira geração está disponível por meio da [API de acesso a dados da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=pt-BR) e por meio dos [destinos da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=pt-BR). Essas opções fornecem exportação em nível de evento/linha de todos os dados coletados ou assimilados no Data Lake da Experience Platform. Colunas de dados de pós-processamento não estão disponíveis, visto que são computadas no momento da consulta. A exportação de colunas de pós-processamento está disponível por meio dos relatórios. |
+| [Feeds de dados](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-overview) | O Experience Platform e o Customer Journey Analytics fornecem várias funcionalidades que, independentemente ou combinadas, podem resolver os vários requisitos de exportação. Essas funcionalidades incluem [API de Acesso a Dados do Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-access/api.html?lang=pt-BR), [Destinos do Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html?lang=pt-BR), [Exportação de Tabela Completa do Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) e [integração com a ferramenta de BI](/help/data-views/bi-extension.md).<p>Para obter mais informações sobre opções de exportação, consulte [Casos de uso de exportação de dados](/help/use-cases/data-export/overview.md).</p> |
 | [Data Warehouse](https://experienceleague.adobe.com/en/docs/analytics/export/data-warehouse/data-warehouse) | A [Exportação da tabela completa do Customer Journey Analytics](/help/analysis-workspace/export/export-cloud.md) é a evolução dos relatórios do Data Warehouse no Adobe Analytics, com muitos recursos novos solicitados com frequência que não estão disponíveis no Data Warehouse atualmente. |
 | [Dados de streaming de mídia](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/media-overview) | Os dados de mídia de streaming estão disponíveis ao usar o conector de origem do Analytics como parte do painel Visualizadores simultâneos de mídia e do painel Tempo gasto com a reprodução de mídia do Workspace. |
