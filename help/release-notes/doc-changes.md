@@ -5,9 +5,9 @@ exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
 source-git-commit: 1283b285ff49225835abb8e7d8103f34aad686b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4649'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,16 +20,16 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Fevereiro de 2025** |  |
-| Coleção de mídia: atualizações do Adobe Source Connector para o novo Media Reporting XDM | O Analytics Source Connector [mapeia automaticamente os dados de mídia de streaming no Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=en) para os mesmos campos usados pelo Web SDK. Anteriormente, os dados eram mapeados para os locais antigo e novo, mas somente o novo local seria usado no futuro. |
-| Extensão de BI - suporte expandido | A extensão Customer Journey Analytics BI agora oferece suporte ao [Looker, Jupyter Notebook e R Studio](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=en). |
+| Coleção de mídia: atualizações do conector de origem da Adobe para o novo relatório de mídia XDM | O conector de origem do Analytics [mapeia dados de mídia de transmissão no Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=pt-br) automaticamente com os mesmos campos usados pelo SDK da Web. Anteriormente, os dados eram mapeados com os locais antigos e novos, mas somente o novo local será usado no futuro. |
+| Extensão de BI - suporte expandido | A extensão de BI do Customer Journey Analytics agora é compatível com [Looker, Jupyter Notebook e R Studio](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=pt-br). |
 | **Janeiro de 2025** |  |
-| Experiência de uso de conexões atualizada | A guia [Uso](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage) em Conexão agora fornece visualizações aprimoradas para estes tipos de linhas reportáveis: dados históricos, assimilados e principais. Você também pode visualizar e analisar os dados de uso por conexão, conjunto de dados, sandbox ou tag. |
+| Atualização da experiência de uso de conexões | A guia [Uso](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-connections/manage-connections?lang=pt-br#connections-usage) em Conexão agora fornece visualizações aprimoradas para estes tipos de linhas reportáveis: dados históricos, assimilados e principais. Também é possível exibir e detalhar os dados de uso por conexão, conjunto de dados, sandbox ou tag.  |
 | Métricas de uso | Atualização da documentação sobre a interface de [métricas de uso](/help/connections/manage-connections.md#usage) aprimorada. |
 | Uso do produto | [Uso do produto](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/tools/product-usage/usage-overview) mostra como sua organização utiliza o Customer Journey Analytics. |
 | Análise guiada | Atualização da documentação com a disponibilidade da [Análise guiada](/help/guided-analysis/overview.md) na Análise guiada. |
-| Documentação sobre o uso de modelos personalizados do Customer Journey Analytics na página Relatórios no Journey Optimizer | Agora você pode personalizar a nova interface de relatórios no Adobe Journey Optimizer [criando ou editando um modelo no Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/templates/create-templates) e salvando o modelo a ser usado na página Relatórios no Journey Optimizer. Anteriormente, não era possível personalizar a nova interface de relatórios no Adobe Journey Optimizer. |
+| Documentação sobre o uso de modelos personalizados do Customer Journey Analytics na página Relatórios do Journey Optimizer | Agora é possível personalizar a nova interface de relatórios no Adobe Journey Optimizer [criando ou editando um modelo no Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/templates/create-templates) e salvando esse modelo para uso na página Relatórios do Journey Optimizer. Anteriormente, não era possível personalizar a nova interface de relatórios no Adobe Journey Optimizer. |
 | Modelos no Analysis Workspace | [Modelos pré-criados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/templates/use-templates) e [modelos de empresa](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/templates/create-templates) agora estão disponíveis no Customer Journey Analytics. |
-| Legendas inteligentes v2 | [As legendas inteligentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=en) agora são compatíveis com as seguintes visualizações: Várias linhas, Barra, Barra horizontal, Rosca, Área, Fluxo e Fallout. É possível optar por mostrar todas as legendas inteligentes de uma só vez em uma exibição expandida ou mostrar legendas inteligentes individuais em uma exibição individual. |
+| Legendas inteligentes v2 | [As legendas inteligentes](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/visualizations/intelligent-captions?lang=pt-br) agora são compatíveis com as seguintes visualizações: Multilinha, Barra, Barra horizontal, Rosquinha, Área, Fluxo e Fallout. É possível optar por mostrar todas as legendas inteligentes de uma só vez em uma exibição expandida ou mostrar legendas inteligentes individualmente em uma exibição. |
 
 ## 2024
 
