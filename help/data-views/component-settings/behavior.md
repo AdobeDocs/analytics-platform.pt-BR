@@ -5,10 +5,10 @@ exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 90%
+source-wordcount: '334'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="Comportamento"
->abstract="Determine como os itens de linha nesta dimensão são agregados.<br/><br/>**Parâmetros **<br/>**Minúsculas**: permite especificar se os valores da string no campo devem estar em minúsculas."
+>abstract="Determine como os itens de linha são agregados nessa dimensão. Especifique se os valores da cadeia de caracteres no campo devem ser minúsculos."
 
 <!-- markdownlint-enable MD034 -->
 

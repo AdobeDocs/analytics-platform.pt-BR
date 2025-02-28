@@ -4,14 +4,15 @@ title: Configurar uma visualização de fallout
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 36%
+source-wordcount: '734'
+ht-degree: 38%
 
 ---
 
-# Configurar uma visualização de fallout
+# Configurar uma visualização de fallout {#configure-fallout-visualization}
+
 
 Você pode especificar os pontos de contato para criar uma sequência de fallout multidimensional. Geralmente, um ponto de contato é uma página no seu site. Contudo, pontos de contato não estão limitados a páginas. Por exemplo, você pode adicionar eventos, como unidades, bem como pessoas únicas e visitas de retorno. Você também pode adicionar dimensões, como uma categoria, tipo de navegador ou termo de pesquisa interno.
 
@@ -21,7 +22,7 @@ Não há limitação no número de etapas que podem ser adicionadas ou no númer
 
 Você pode definir a definição de caminho em dimensões, métricas e filtros. Por exemplo, suponha que alguém esteja pesquisando sapatos e camisetas em uma página e camisetas e meias em outra. O próximo relatório de fluxo do produto para sapatos será camisetas e meias, e NÃO camisetas.
 
-## Use 
+## Usar
 
 1. Adicione uma visualização de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]**. Consulte [Adicionar uma visualização a um painel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 1. Arraste uma página, por exemplo, página inicial, da dimensão Página para o menu suspenso *Adicionar ponto de contato*.
@@ -54,7 +55,12 @@ Você pode definir a definição de caminho em dimensões, métricas e filtros. 
    | **[!UICONTROL Próximo evento]** | São contados os que serão direcionados para a próxima página no caminho no próximo evento. |
 
 
-## Configurações 
+## Configurações  {#settings}
+
+>[!CONTEXTUALHELP]
+>id="workspace_fallout_container"
+>title="Contêiner de fallout"
+>abstract="Selecione um container para analisar a definição de caminho. Essa seleção ajuda você a entender o engajamento e restringe a análise ao contêiner selecionado."
 
 Como parte da visualização, configurações específicas estão disponíveis.
 

@@ -1,13 +1,13 @@
 ---
-description: Saiba como analisar os resultados de testes A/B no painel Experimentação de Customer Journey Analytics.
+description: Saiba como analisar os resultados de testes A/B no painel Experimentação do Customer Journey Analytics.
 title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: dbf0ef92069778f6c805fa4315864b2c2c4a6622
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 20%
+source-wordcount: '2141'
+ht-degree: 16%
 
 ---
 
@@ -27,19 +27,19 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="Experimentação"
->abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar a opção ideal para gerar um resultado específico.<br/><br/>**Parâmetros **<br/>**Experimento**: o experimento que será analisado.<br>**Variante de controle**: a variante de controle do experimento selecionado.<br/>**Métrica de sucesso**: até 5 métricas de sucesso padrão (não calculadas) para analisar o experimento.<br/>**Métrica de normalização**: pessoas, sessões ou eventos. Essa métrica (também chamada de metodologia de contagem) torna-se o denominador do cálculo do incentivo. Essa métrica também afeta a maneira como os dados são agregados antes da aplicação do cálculo de confiança."
+>abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é o melhor para gerar um resultado específico. Especifique o experimento, a variante de controle para comparação, a métrica de sucesso e a métrica de normalização. Como opção, defina limites superior e inferior para obter confiança."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Experimentação em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Painel do Analytics for Target](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) para obter informações sobre como analisar atividades e experiências do Adobe Target no_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_Este artigo documenta o painel Experimentação no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Painel do Analytics for Target](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) para obter informações sobre como analisar atividades e experiências do Adobe Target no_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 
-O painel **[!UICONTROL Experimentação]** permite que os analistas comparem diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é a melhor para gerar um resultado específico. Você pode avaliar o aumento e a confiança de qualquer experimento A/B de qualquer plataforma de experimentação: online, offline, de soluções de Adobe como Target ou Journey Optimizer e até mesmo dados BYO (traga os seus próprios).
+O painel **[!UICONTROL Experimentação]** permite que os analistas comparem diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é a melhor para gerar um resultado específico. Você pode avaliar o aumento e a confiança de qualquer experimento A/B de qualquer plataforma de experimentação: online, offline, de soluções da Adobe, como Target ou Journey Optimizer, e até mesmo dados BYO (traga os seus próprios).
 
 Leia mais sobre a [integração entre o Adobe Customer Journey Analytics e o Adobe Target](https://experienceleague.adobe.com/pt-br/docs/target/using/integrate/cja/target-reporting-in-cja).
 
@@ -60,11 +60,11 @@ Para usar o painel de experimentação, siga estes pré-requisitos:
 O esquema de dados recomendado é um no qual os dados de experimentação estejam em uma [Matriz de objetos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) que contém os dados de experimento e variante em duas dimensões separadas. Ambas as dimensões precisam estar em uma matriz de objetos **single**. Se você tiver seus dados de experimentação em uma única dimensão (com os dados de experimento e variante em uma cadeia de caracteres delimitada), poderá usar a configuração [subcadeia de caracteres](/help/data-views/component-settings/substring.md) nas visualizações de dados para dividir a dimensão em duas partes para uso no painel.
 
 
-Depois que seus dados de experimentação tiverem sido [assimilados](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) na Adobe Experience Platform, [crie uma conexão em Customer Journey Analytics](/help/connections/create-connection.md) para um ou mais conjuntos de dados de experimento.
+Depois que seus dados de experimentação tiverem sido [assimilados](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) na Adobe Experience Platform, [crie uma conexão no Customer Journey Analytics](/help/connections/create-connection.md) para um ou mais conjuntos de dados de experimento.
 
 ### Adicionar rótulos de contexto em visualizações de dados
 
-Nas configurações de visualizações de dados do Customer Journey Analytics, os administradores podem adicionar [rótulos de contexto](/help/data-views/component-settings/overview.md) a uma dimensão ou métrica, e serviços de Customer Journey Analytics como o painel [!UICONTROL Experimentação] podem usar esses rótulos para suas finalidades. Dois rótulos predefinidos são usados para o painel Experimentação:
+Nas configurações de visualizações de dados do Customer Journey Analytics, os administradores podem adicionar [rótulos de contexto](/help/data-views/component-settings/overview.md) a uma dimensão ou métrica, e serviços do Customer Journey Analytics, como o painel [!UICONTROL Experimentação], podem usar esses rótulos para suas finalidades. Dois rótulos predefinidos são usados para o painel Experimentação:
 
 * [!UICONTROL Experimento de experimentação]
 * [!UICONTROL Variante de experimentação]
@@ -88,7 +88,7 @@ Para usar um painel **[!UICONTROL Experimentação]**:
 
    >[!IMPORTANT]
    >
-   >Se a configuração necessária nas visualizações de dados de Customer Journey Analytics não tiver sido concluída, esta mensagem será exibida antes que você possa continuar: [!UICONTROL Configure as dimensões de experimento e variante nas visualizações de dados].
+   >Se a configuração necessária nas visualizações de dados do Customer Journey Analytics não tiver sido concluída, você receberá esta mensagem antes de continuar: [!UICONTROL Configure as dimensões de experimento e variante nas visualizações de dados].
    >
 
 ### Entrada do painel
@@ -101,7 +101,7 @@ Para usar o painel Experimentação:
 
    | Configuração | Definição |
    | --- | --- |
-   | **[!UICONTROL Intervalo de datas]** | O intervalo de datas do painel Experimentação é definido automaticamente com base no primeiro evento recebido em Customer Journey Analytics para o experimento selecionado. Você pode restringir ou expandir o intervalo de datas para um período mais específico, se necessário. |
+   | **[!UICONTROL Intervalo de datas]** | O intervalo de datas do painel Experimentação é definido automaticamente com base no primeiro evento recebido no Customer Journey Analytics para o experimento selecionado. Você pode restringir ou expandir o intervalo de datas para um período mais específico, se necessário. |
    | **[!UICONTROL Experimento]** | Um conjunto de variações em uma experiência que foi exposto aos usuários finais para determinar qual é a melhor opção a ser mantida como permanente. Um experimento é composto por duas ou mais variantes, sendo uma delas considerada a variante de controle. Esta configuração é pré-preenchida com as dimensões que foram rotuladas com o rótulo **[!UICONTROL Experimento]** nas visualizações de dados e com os últimos 3 meses de dados de experimentação. |
    | **[!UICONTROL Variante de controle]** | Uma de duas ou mais alterações na experiência de um usuário final que estão sendo comparadas com o objetivo de identificar a melhor alternativa. Uma variante deve ser selecionada como controle, e somente uma variante pode ser considerada como a variante de controle. Esta configuração é pré-preenchida com as dimensões que foram rotuladas com o rótulo **[!UICONTROL Variante]** nas visualizações de dados. Essa configuração extrai os dados de variantes associados a esse experimento. |
    | **[!UICONTROL Métricas de sucesso]** ➊ | A métrica, ou as métricas, com as quais um usuário está comparando variantes. A variante com o resultado mais desejável para a métrica de conversão (seja maior ou menor) é declarada a *variante com melhor desempenho* de um experimento. Você pode adicionar até 5 métricas. |
@@ -160,7 +160,7 @@ O teste A/B é o padrão ouro no setor para medir objetivamente os efeitos de ta
 
 Agora, considere uma dimensão que não é alcançada por aleatoriedade, por exemplo, o estado da pessoa nos EUA. As pessoas vêm principalmente de dois estados, Nova York e Califórnia. A receita média das vendas de uma marca de roupas de inverno pode ser diferente nos dois estados devido às diferenças no clima regional. Em tal situação, o clima pode ser o verdadeiro fator causal por trás das vendas de roupas de inverno, e não o fato de os estados geográficos das pessoas serem diferentes.
 
-O painel de experimentação em Customer Journey Analytics permite analisar dados como a diferença média de receita por estados das pessoas. Em tal situação, o resultado não tem uma interpretação causal. No entanto, essa análise pode ainda ser de interesse. Fornece uma estimativa (juntamente com medidas de incerteza) da diferença na receita média por estados das pessoas.  Este valor também é chamado de *Teste de Hipótese Estatística*. O resultado dessa análise pode ser interessante, mas não necessariamente acionável. Simplesmente porque você não aleatorizou e, às vezes, não pode aleatoriamente pessoas para um dos valores possíveis da dimensão.
+O painel de experimentação no Customer Journey Analytics permite analisar dados como a diferença média de receita por estados das pessoas. Em tal situação, o resultado não tem uma interpretação causal. No entanto, essa análise pode ainda ser de interesse. Fornece uma estimativa (juntamente com medidas de incerteza) da diferença na receita média por estados das pessoas.  Este valor também é chamado de *Teste de Hipótese Estatística*. O resultado dessa análise pode ser interessante, mas não necessariamente acionável. Simplesmente porque você não aleatorizou e, às vezes, não pode aleatoriamente pessoas para um dos valores possíveis da dimensão.
 
 A ilustração a seguir contrasta essas situações:
 
@@ -184,7 +184,7 @@ As métricas calculadas que incluem qualquer uma das seguintes métricas ou cons
 * Qualquer uma das seguintes métricas básicas:
    * Pessoas
 
-As métricas calculadas que não são compatíveis com o painel Experimentação têm o valor [!UICONTROL **Em todos os lugares na Customer Journey Analytics (excluindo a experimentação)**] no campo [!UICONTROL **Compatibilidade de produto**] ao criar a métrica calculada. Para obter informações sobre como criar uma métrica calculada, consulte [Criar métricas](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
+As métricas calculadas que não são compatíveis com o painel Experimentação têm o valor [!UICONTROL **Em qualquer lugar do Customer Journey Analytics (excluindo a experimentação)**] no campo [!UICONTROL **Compatibilidade de produto**] ao criar a métrica calculada. Para obter informações sobre como criar uma métrica calculada, consulte [Criar métricas](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
 ## Usar métricas calculadas no painel Experimentação
 

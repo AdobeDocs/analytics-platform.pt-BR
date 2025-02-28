@@ -4,14 +4,20 @@ title: Como configurar uma visualização de fluxo
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1446'
 ht-degree: 37%
 
 ---
 
-# Configurar uma visualização de fluxo
+# Configurar uma visualização de fluxo {#configure-a-flow-visualization}
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_container"
+>title="Container de fluxo"
+>abstract="Selecione o container a ser usado para exibir (números para) o caminho."
+
 
 As visualizações de fluxo ajudam você a entender a jornada originada de um evento de conversão específico em seu site ou aplicativo. Ou que leva a um evento de conversão específico. A visualização rastreia um caminho pelas suas dimensões (e itens de dimensão) ou métricas.
 
@@ -19,7 +25,7 @@ Você pode configurar o início ou o fim do caminho em que está interessado. Ou
 
 ![A tela de configuração do Fluxo mostrando os campos Começa com, Contém e Termina com.](assets/new-flow.png)
 
-## Use 
+## Usar
 
 1. Adicione uma visualização de ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Flow]**. Consulte [Adicionar uma visualização a um painel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
@@ -39,7 +45,7 @@ Você pode configurar o início ou o fim do caminho em que está interessado. Ou
    >
    >Métricas calculadas não podem ser usadas nos campos **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]**.
 
-1. Se você escolher uma métrica, também precisará fornecer um [!UICONTROL **Dimension de definição de caminho**] para usar como caminho conduzindo ou vindo do componente selecionado, como mostrado aqui. O padrão é [!UICONTROL **Página**].
+1. Se você escolher uma métrica, também precisará fornecer uma [!UICONTROL **Dimension de definição de caminho**] para usar como caminho conduzindo ou vindo do componente selecionado, como mostrado aqui. O padrão é [!UICONTROL **Página**].
 
    ![Configuração de fluxo](assets/flow-configure.png)
 
@@ -141,7 +147,7 @@ No exemplo abaixo, **todas** as ocorrências de *Categoria principal do produto*
   No exemplo abaixo, apenas as **últimas** ocorrências da *categoria principal do produto* e da *Adicionar ao carrinho* em cada etapa do fluxo são incluídas.
   ![Lint, start](assets/limitonlast.png)
 * As séries utilizadas diferem de acordo com o container. Se estiver usando o contêiner **[!UICONTROL Pessoa]**, a série de eventos será a sessão. Se estiver usando o contêiner **[!UICONTROL Sessão]**, a série de eventos será todos os eventos de um determinado usuário no intervalo de datas fornecido.
-* A opção **[!UICONTROL Limitar à primeira/última ocorrência]** pode ser definida nas configurações avançadas ao usar uma Métrica ou Item Dimension nos campos **[!UICONTROL Inicia com]** ou **[!UICONTROL Termina com]**.
+* A opção **[!UICONTROL Limitar à primeira/última ocorrência]** pode ser definida nas configurações avançadas ao usar uma Métrica ou Item do Dimension nos campos **[!UICONTROL Inicia com]** ou **[!UICONTROL Termina com]**.
 
 
 >[!MORELIKETHIS]

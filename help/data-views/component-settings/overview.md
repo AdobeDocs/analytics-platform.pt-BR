@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 98%
+source-wordcount: '669'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Configurações de componente"
->abstract="Visualize e defina o nome, a descrição e outras configurações relacionadas a um componente.<br/><br/>**Parâmetros **<br/>**Ocultar componente nos relatórios**: marcar esta caixa ocultará este componente de usuários não admins nos relatórios. Admins ainda podem acessá-lo clicando em **[!UICONTROL Mostrar todos os componentes]** em um projeto do espaço de trabalho."
+>abstract="Visualize e configure o nome, a descrição e outras configurações relacionadas a um componente. Marque esta caixa para ocultar este componente de usuários não administradores nos relatórios. Os administradores ainda podem acessar o componente selecionando **[!UICONTROL Mostrar todos os componentes]** em um projeto do Workspace."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +59,7 @@ As informações a seguir descrevem as configurações que um componente de visu
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de tipo de componente](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações do tipo de componente](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
