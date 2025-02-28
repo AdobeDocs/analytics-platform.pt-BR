@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
 workflow-type: tm+mt
-source-wordcount: '8841'
+source-wordcount: '8844'
 ht-degree: 17%
 
 ---
@@ -205,7 +205,7 @@ Este modelo de função combina dois valores em um.
 
 Para usar o template, você deve especificar os parâmetros corretos para cada função listada como parte das regras no template. Consulte [Referência de função](#function-reference) para obter mais informações.
 
-![Captura de tela do construtor de regras de Combinação de Vários Dimension](assets/function-template-multi-dimension-combine.png)
+![Captura de tela do construtor de regras de Combinação de Várias Dimension](assets/function-template-multi-dimension-combine.png)
 
 +++
 
@@ -1118,7 +1118,7 @@ Você define um campo derivado de `Activity Name`. Use a função [!UICONTROL PE
 
 ## Mais informações {#lookup-more-info}
 
-A função Pesquisa é aplicada no momento do relatório aos dados recuperados pelo Customer Journey Analytics do conjunto de dados de pesquisa configurado como parte da conexão.
+A função Pesquisa é aplicada no momento do relatório aos dados recuperados pelo Customer Journey Analytics a partir do conjunto de dados de pesquisa configurado como parte da conexão.
 
 Você pode inserir rapidamente uma função [!UICONTROL Pesquisa] no construtor de regras, que já contém uma ou mais funções.
 
@@ -1994,8 +1994,9 @@ Como exemplo, a regra Classify abaixo usa três operadores.
 
 O suporte para campos de pesquisa e perfil em Campos derivados permite transformar dados com base em pesquisas de evento e atributos de perfil. Isso pode ser especialmente útil em cenários B2B com dados a nível de conta em pesquisas ou conjuntos de dados de perfil. Além disso, esse suporte é útil para manipular dados em campos comuns a partir de dados de pesquisa (como informações da campanha e tipo de oferta) ou de dados de perfil (como nível de membro e tipo de conta).
 
-Consulte para obter mais informações de fundo sobre Campos derivados:
+>[!MORELIKETHIS]
+>
+>- [Blog: Aproveitando ao máximo seus dados: uma estrutura para usar campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
+>- [Blog: casos de uso de campos derivados do Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [Blog: Aprimoramentos de Campos Derivados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
-- [Aproveitando ao máximo seus dados: uma estrutura para usar campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670)
-
-- [Casos de uso de campos derivados para Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)

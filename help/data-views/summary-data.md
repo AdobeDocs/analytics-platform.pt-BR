@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: 6cd4fadc28117ed88b68d17274ab8de2b0edff10
+source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1146'
 ht-degree: 7%
 
 ---
@@ -87,7 +87,7 @@ Se quiser criar um relatório usando uma dimensão definida em um conjunto de da
 Consulte o caso de uso [Assimilar e relatar dados de resumo](/help/use-cases/data-views/summary-data.md) para obter um artigo detalhado sobre como usar, relatar e analisar dados de resumo no Customer Journey Analytics.
 
 
-## Pré-requisitos 
+## Pré-requisitos
 
 Para usar os dados de resumo corretamente em seus relatórios e análises, vários pré-requisitos se aplicam. As seções a seguir detalham esses pré-requisitos.
 
@@ -103,7 +103,7 @@ Não é possível misturar e corresponder a granularidade horária e diária dos
 
 O fuso horário de seus dados de resumo é definido no nível do esquema de resumo no Experience Platform. O fuso horário se aplica somente aos dados granulares por hora.
 
-- Para a granularidade diária, o Experience Platform assume o UTC, a menos que um deslocamento de fuso horário esteja incluído no carimbo de data e hora. Ao adicionar o conjunto de dados de resumo que contém os dados de resumo diários, o Customer Journey Analytics ignora o conjunto de definições de fuso horário no esquema e respeita o dia associado ao carimbo de data e hora nos dados do conjunto de dados.
+- Para a granularidade diária, o Experience Platform presume o UTC, a menos que um deslocamento de fuso horário esteja incluído no carimbo de data e hora. Ao adicionar o conjunto de dados de resumo que contém os dados de resumo diários, o Customer Journey Analytics ignora o conjunto de definições de fuso horário no esquema e respeita o dia associado ao carimbo de data e hora nos dados do conjunto de dados.
 - Para granularidade por hora, o Customer Journey Analytics respeita o fuso horário configurado no esquema de dados de resumo no Experience Platform ao interpretar o carimbo de data e hora. A tabela abaixo fornece alguns exemplos dessa interpretação.
 
   | Dados de origem do carimbo de data/hora <br/> | Esquema <br/> de fuso horário | Carimbo de data/hora<br/>Experiência<br/>Plataforma | Fuso horário<br/> dados<br/>exibir | Carimbo de data e hora<br/>Cliente<br/>Jornada<br>Analytics |
@@ -142,7 +142,7 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 
 | Variável | Valor |
 |---|---|
-| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Consulte [Autenticar e acessar APIs de Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication) para obter mais informações sobre como especificar valores para essas variáveis. |
+| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Consulte [Autenticar e acessar APIs do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication) para obter mais informações sobre como especificar valores para essas variáveis. |
 | `$SCHEMA_ID` | Você pode encontrar a ID do esquema na interface do usuário do Experience Platform. Selecione o esquema de resumo na lista de esquemas e localize o **[!UICONTROL Uso da API]** > **[!UICONTROL ID do esquema]** no painel direito. Use essa id como o valor. |
 | `$GRANULARITY` | Especifique `hour` ou `day` como o valor. |
 | `$TIMEZONE` | Especifique o valor do identificador de fuso horário apropriado da coluna de identificador TZ na [Lista de fusos horários do banco de dados tz](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). Por exemplo: `America/Los_Angeles`. |
@@ -153,4 +153,6 @@ Verifique se as configurações de componente de um grupo de dados de resumo sã
 
 >[!MORELIKETHIS]
 >
->Consulte o artigo [Usar dados de resumo](/help/use-cases/data-views/summary-data.md) para obter um exemplo detalhado de caso de uso sobre como usar e relatar dados de resumo.
+>- Consulte o artigo [Usar dados de resumo](/help/use-cases/data-views/summary-data.md) para obter um exemplo detalhado de caso de uso sobre como usar e relatar dados de resumo.
+>- Blog: [Como os Dados de Resumo Aprimoram os Conjuntos de Dados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+
