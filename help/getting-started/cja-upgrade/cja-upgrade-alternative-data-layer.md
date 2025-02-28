@@ -10,18 +10,18 @@ exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 9%
+ht-degree: 44%
 
 ---
 
-# Alternativa de atualização: enviar sua camada de dados para o Customer Journey Analytics {#data-collection-data-layer}
+# Alternativa de atualização: enviar a camada de dados para o Customer Journey Analytics {#data-collection-data-layer}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer"
->title="Enviar camada de dados para o Adobe"
->abstract="Em vez de enviar dados por meio de um objeto XDM, você pode enviar toda a camada de dados para a Adobe por meio do objeto de dados.<br><br>Essa opção economiza tempo de implementação, permitindo mapear a camada de dados para o XDM, em vez de preencher um objeto XDM do zero. No entanto, esse mapeamento é uma grande quantidade de trabalho porque haverá uma quantidade significativa de dados que o Adobe não pode interpretar prontamente. Essa opção também apresenta complexidade adicional com o tempo, pois qualquer campo adicionado aos dados posteriormente deve ser mapeado para o XDM no fluxo de dados."
+>title="Enviar camada de dados para a Adobe"
+>abstract="Em vez de enviar dados por meio de um objeto XDM, é possível enviar toda a camada de dados para a Adobe por meio do objeto de dados.<br><br>Essa opção economiza tempo de implementação, permitindo mapear a camada de dados para o XDM, em vez de preencher um objeto XDM do zero. No entanto, esse mapeamento é bastante trabalhoso devido à grande quantidade de dados que a Adobe não conseguirá interpretar prontamente. Essa opção também se torna mais complexa com o tempo, pois qualquer campo adicionado aos dados posteriormente deverá ser mapeado para o XDM no fluxo de dados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -29,8 +29,8 @@ ht-degree: 9%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-send-data-layer"
->title="Enviar sua camada de dados para o Adobe"
->abstract="Configure sua implementação para enviar dados para o Adobe no momento desejado e configure o conteúdo JSON para ser sua camada de dados em sua totalidade."
+>title="Enviar camada de dados para a Adobe"
+>abstract="Configure a implementação para enviar dados para a Adobe no momento desejado e configure todo o conteúdo JSON como uma camada de dados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -38,8 +38,8 @@ ht-degree: 9%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-layer-map"
->title="Atribuir cada elemento de camada de dados ao XDM"
->abstract="Mapeie cada elemento da camada de dados para o campo XDM desejado. Quaisquer elementos da camada de dados que não estão mapeados para um campo XDM são permanentemente descartados, já que a Adobe não sabe onde ou como armazenar esses dados."
+>title="Atribuir cada elemento da camada de dados ao XDM"
+>abstract="Mapeie cada elemento da camada de dados para o campo XDM desejado. Quaisquer elementos da camada de dados que não estão mapeados para um campo XDM são descartados permanentemente, já que a Adobe não sabe onde ou como armazenar esses dados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,8 +65,8 @@ Veja a seguir as vantagens e desvantagens de usar essa alternativa de atualizaç
 
 As etapas básicas para enviar toda a camada de dados para o Customer Journey Analytics são:
 
-1. Configure sua implementação para enviar dados para o Adobe no momento desejado e configure o conteúdo JSON para ser sua camada de dados em sua totalidade.
+1. Configure a implementação para enviar dados para a Adobe no momento desejado e configure todo o conteúdo JSON como uma camada de dados.
 
 1. Mapeie cada elemento da camada de dados para o campo XDM desejado.
 
-   Quaisquer elementos da camada de dados que não estão mapeados para um campo XDM são permanentemente descartados, já que a Adobe não sabe onde ou como armazenar esses dados.
+   Quaisquer elementos da camada de dados que não estão mapeados para um campo XDM são descartados permanentemente, já que a Adobe não sabe onde ou como armazenar esses dados.

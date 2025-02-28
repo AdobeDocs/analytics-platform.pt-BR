@@ -10,18 +10,18 @@ exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 19%
+ht-degree: 30%
 
 ---
 
-# Alternativa de atualização: use a coleta de dados do AppMeasurement com o Experience Platform Web SDK e o Customer Journey Analytics {#data-collection-appmeasurement}
+# Alternativa de atualização: use a coleção de dados do AppMeasurement com o SDK da web da Experience Platform e o Customer Journey Analytics {#data-collection-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic"
->title="Usar a lógica do AppMeasurement com o Web SDK"
->abstract="Em vez de enviar dados por meio de um objeto XDM, envie todas as variáveis no formato AppMeasurement por meio do objeto de dados.<br><br>Essa opção economiza tempo de implementação, permitindo mapear a lógica do AppMeasurement para o XDM, em vez de preencher um objeto XDM do zero. No entanto, apresenta complexidade adicional com o tempo, pois qualquer campo adicionado no futuro deve ser mapeado para XDM no fluxo de dados."
+>title="Usar a lógica do AppMeasurement com o SDK da web"
+>abstract="Em vez de enviar dados por meio de um objeto XDM, é possível enviar todas as variáveis no formato do AppMeasurement por meio do objeto de dados. <br><br>Essa opção economiza tempo de implementação, permitindo mapear a lógica do AppMeasurement para o XDM, em vez de preencher um objeto XDM do zero. No entanto, ela se torna mais complexa com o tempo, pois qualquer campo adicionado no futuro deve ser mapeado para o XDM no fluxo de dados."
 
 <!-- markdownlint-enable MD034 -->
 

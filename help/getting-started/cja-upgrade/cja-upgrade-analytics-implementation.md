@@ -10,7 +10,7 @@ exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 30%
+ht-degree: 36%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 30%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"
 >title="Determinar o tipo de implementação existente"
->abstract="Trabalhe internamente em sua organização para determinar que tipo de implementação você usa atualmente para enviar dados para a Adobe Analytics. Parceria com a pessoa ou equipe que sabe que essas informações são prováveis, quando você estiver pronto para migrar para o Customer Journey Analytics.<br><br>Depois de determinar o tipo de implementação que sua organização usa, modifique sua resposta no questionário."
+>abstract="Trabalhe internamente em sua organização para determinar que tipo de implementação você usa atualmente para enviar dados para o Adobe Analytics. É provável que você faça uma parceria com um indivíduo ou equipe que conhece essas informações quando estiver tudo pronto para migrar para o Customer Journey Analytics.<br><br>Depois de determinar o tipo de implementação que sua organização usa, modifique sua resposta no questionário."
 
 <!-- markdownlint-enable MD034 -->
 

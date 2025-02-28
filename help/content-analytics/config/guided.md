@@ -10,7 +10,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
 workflow-type: tm+mt
 source-wordcount: '2097'
-ht-degree: 17%
+ht-degree: 27%
 
 ---
 
@@ -106,8 +106,8 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
->title="Nova visualização de dados"
->abstract="A seleção de uma nova visualização de dados resultará em uma atualização dessa visualização de dados para incluir métricas e dimensões do Content Analytics. Se necessário, a conexão associada também é atualizada para incluir conjuntos de dados do Content Analytics. A conexão e a visualização de dados configuradas atualmente para o Content Analytics não são modificadas."
+>title="Nova exibição de dados"
+>abstract="Selecionar uma nova exibição de dados resultará em uma atualização dessa exibição de dados para incluir métricas e dimensões de análise de conteúdo. Se necessário, a conexão associada também é atualizada para incluir conjuntos de dados de análise de conteúdo. A conexão e a exibição de dados configuradas atualmente para a análise de conteúdo não são modificadas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -146,7 +146,7 @@ Uma Exibição de dados está vinculada a uma Customer Journey Analytics [Connec
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
 >title="Captura e definição de experiência"
->abstract="Especifique os parâmetros que determinam como o conteúdo é renderizado no site."
+>abstract="Especifique os parâmetros que determinam como renderizar o conteúdo no site."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
@@ -194,7 +194,7 @@ Para editar experiências existentes ou incluir novas Experiências em uma confi
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Coleção de dados"
->abstract="**Forneça uma propriedade de Marca**"
+>abstract="**Fornecer uma propriedade de tag**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -281,7 +281,7 @@ Depois de fornecer todos os detalhes necessários, um resumo fornecerá detalhes
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Confirmação da implementação"
->abstract="Se você selecionar **[!UICONTROL Implementar]**, configurará o Content Analytics com base na entrada fornecida neste fluxo de trabalho. Várias configurações são escolhidas por padrão com base no que geralmente é útil para o Content Analytics, mas você (como controlador de dados) deve revisar as configurações de cada artefato para confirmar se as configurações são implementadas de acordo com a política de privacidade, os direitos e obrigações contratuais e os requisitos de consentimento conforme a legislação aplicável.<br/><br/>Observe que nenhum dado será coletado até que a biblioteca de Tags associada a esta configuração seja publicada manualmente.<br/><br/>Para derivar atributos de imagens e texto, o Adobe recuperará os atributos usando:<ol><li>O URL capturado no momento da visita do site dos usuários, de acordo com as configurações de coleta de dados definidas por você e</li><li>O URL no qual a imagem está hospedada.</li></ol>Você não deve marcar imagens que estão hospedadas em sites de terceiros."
+>abstract="Selecionar **[!UICONTROL Implementar]** configurará a análise de conteúdo com base nas informações fornecidas neste fluxo de trabalho. Há várias configurações definidas por padrão com base no que geralmente é útil para a análise de conteúdo, mas você (como controlador(a) de dados) deve revisar as configurações de cada artefato para confirmar se as configurações são implementadas de acordo com a política de privacidade, os direitos e obrigações contratuais e os requisitos de consentimento da legislação aplicável.<br/><br/>Observe que nenhum dado será coletado até que a biblioteca de tags associada a esta configuração seja publicada manualmente.<br/><br/>Para derivar atributos de imagens e texto, a Adobe recuperará os atributos usando:<ol><li>O URL capturado no momento da visita do usuário ao site, de acordo com as configurações de coleta de dados que você configurou e</li><li>O URL no qual a imagem está hospedada.</li></ol>Não utilize tags em imagens que estão hospedadas em sites de terceiros."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -308,7 +308,7 @@ Quando você tiver criado ou editado uma configuração, as seguintes ações es
 * **[!UICONTROL Saída]**. Sai da configuração guiada. Todas as alterações feitas em uma configuração implementada são descartadas.
 
 
-## Publicar {#publish}
+## Publicação {#publish}
 
 Para ativar a configuração do Content Analytics, você precisa [publicar manualmente](manual.md) a propriedade Tag criada após selecionar **[!UICONTROL Implementar]**, como parte do assistente de configuração guiado.
 

@@ -10,7 +10,7 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 35%
+ht-degree: 61%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
 >title="Entre em contato com o Atendimento ao cliente da Adobe para gerar um conjunto de dados compilado"
->abstract="Se você tiver um campo que contém um identificador que existe em vários conjuntos de dados, mas não é o identificador principal, poderá usá-lo para gerar um novo conjunto de dados com um identificador consistente."
+>abstract="Se você tiver um campo que contém um identificador que existe em vários conjuntos de dados, mas esse não for o identificador principal, poderá usá-lo para gerar um novo conjunto de dados com um identificador consistente."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -47,8 +47,8 @@ ht-degree: 35%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-rtcdp"
->title="Integrar à Real-time CDP"
->abstract="Combine dados de perfil de várias fontes para gerar públicos e segmentos com base nas características do usuário."
+>title="Integração com a Real-time CDP"
+>abstract="Combine dados de perfil de várias fontes para gerar públicos-alvo e segmentos com base nas características do usuário."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-target"
 >title="Integração temporária com o Adobe Target"
->abstract="A Adobe recomenda a integração com o Adobe Journey Optimizer para casos de uso de personalização. A integração com o Adobe Target é possível, mas uma solução temporária."
+>abstract="A Adobe recomenda a integração com o Adobe Journey Optimizer para casos de uso de personalização. A integração com o Adobe Target é possível, mas é uma solução temporária."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -65,8 +65,8 @@ ht-degree: 35%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-ajo"
->title="Integrar ao Journey Optimizer"
->abstract="Fornecer experiências conectadas, contextuais e personalizadas aos clientes."
+>title="Integração com o Journey Optimizer"
+>abstract="Ofereça experiências conectadas, contextuais e personalizadas aos clientes."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -74,8 +74,8 @@ ht-degree: 35%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-integrate-aam"
->title="Integrar temporariamente ao Adobe Audience Manager"
->abstract="A Adobe recomenda a integração com a Adobe Real-time CDP para casos de uso baseados em público-alvo. A integração com o Audience Manager é possível, mas uma solução temporária."
+>title="Integração temporária com o Adobe Audience Manager"
+>abstract="A Adobe recomenda a integração com a Adobe Real-time CDP para casos de uso baseados em público-alvo. A integração com o Audience Manager é possível, mas é uma solução temporária."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -92,4 +92,4 @@ Considere quais dos seguintes recursos do Customer Journey Analytics você desej
 | [Integrar à CDP em tempo real do Adobe](/help/components/audiences/audiences-overview.md) | Você pode [criar e publicar públicos-alvo](/help/components/audiences/audiences-overview.md) descobertos no Customer Journey Analytics no Perfil do cliente em tempo real na Adobe Experience Platform para direcionamento e personalização de clientes. |
 | [Integrar temporariamente com o Adobe Target (A4T)](/help/integrations/at.md) | Os Relatórios do Target no Customer Journey Analytics permitem [medir e relatar atividades do Adobe Target](/help/integrations/at.md) diretamente no Customer Journey Analytics. |
 | [Integrar ao Adobe Journey Optimizer](/help/integrations/ajo.md) | Você pode configurar os dados gerados pelo Journey Optimizer para [executar análise avançada no Customer Journey Analytics](/help/integrations/ajo.md). |
-| Integrar temporariamente ao Adobe Audience Manager |  |
+| Integração temporária com o Adobe Audience Manager |  |

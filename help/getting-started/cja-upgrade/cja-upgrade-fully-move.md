@@ -10,18 +10,18 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 14%
+ht-degree: 20%
 
 ---
 
-# Avaliar quando desativar o Adobe Analytics após a atualização para o Customer Journey Analytics {#evaluate-aa-needs}
+# Avalie quando desabilitar o Adobe Analytics após atualizar para o Customer Journey Analytics {#evaluate-aa-needs}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-fully-move"
 >title="Migrar totalmente para o Customer Journey Analytics"
->abstract="(Recomendado) A Adobe recomenda que você faça a transição completa do Adobe Analytics para o Customer Journey Analytics. Durante o período de transição, você deve planejar executar o Adobe Analytics juntamente com o Customer Journey Analytics para fazer comparações de dados lado a lado. Quando estiver confortável com os dados, você pode desativar o Adobe Analytics."
+>abstract="(Recomendado) A Adobe recomenda realizar a transição completa do Adobe Analytics para o Customer Journey Analytics. Durante o período de transição, você deve planejar a execução do Adobe Analytics junto com o Customer Journey Analytics para realizar comparações de dados lado a lado. Após se acostumar com os dados, desabilite o Adobe Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

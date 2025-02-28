@@ -10,11 +10,11 @@ exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
 source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
-# Desativar Adobe Analytics {#disable-appmeasurement}
+# Desabilitar o Adobe Analytics {#disable-appmeasurement}
 
 <!-- markdownlint-disable MD034 -->
 

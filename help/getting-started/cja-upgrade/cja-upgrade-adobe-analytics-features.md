@@ -10,7 +10,7 @@ exl-id: 92053109-f80d-47ab-b011-c28a5411149c
 source-git-commit: 7a5414745f065ec29b59172dee4f723c0ce72e68
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 40%
+ht-degree: 50%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-activity-map-support"
 >title="O suporte à sobreposição do Activity Map ainda não está disponível"
->abstract="O suporte à sobreposição do Activity Map ainda não está disponível no Customer Journey Analytics. Ela está planejada para estar disponível no futuro."
+>abstract="O suporte à sobreposição do Activity Map ainda não está disponível no Customer Journey Analytics. Esse recurso será disponbilizado futuramente."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -93,7 +93,7 @@ ht-degree: 40%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-component-migration"
 >title="Migrar projetos e componentes"
->abstract="Traga projetos da Adobe Analytics e seus componentes associados para a Customer Journey Analytics."
+>abstract="Leve os projetos do Adobe Analytics e seus componentes associados para o Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
