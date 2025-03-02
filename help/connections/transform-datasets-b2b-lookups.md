@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 32678fdedf1b384afce1998880af04f1af077943
+source-git-commit: 4ce2eb397e15dcb081f7b9695ba2332a3eb17659
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 2%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
@@ -27,8 +27,19 @@ Essa transformação só está disponível para conjuntos de dados com dados par
 >
 >Há um limite máximo de 10.000 itens para cada ID. Essa limitação implica que para qualquer ID de pessoa específica você pode ter apenas 10.000 contas, 10.000 oportunidades ou 10.000 listas de marketing ou 10.000 campanhas.
 
+>[!PREREQUISITES]
+>
+>Para que a assimilação funcione corretamente, você deve validar se os conjuntos de dados de pesquisa B2B têm dados preenchidos para os seguintes campos (conforme definido nos esquemas de pesquisa B2B):
+>
+>| Conjunto de dados que contém dados em conformidade com o esquema | Campo preenchido com dados |
+>|---|---|
+>| Relação pessoal da conta de negócios XDM | `accountPersonID` |
+>| Pessoa de oportunidade de negócios XDM | `opportunityPersonID` |
+>| Lista de marketing de negócios XDM | `marketingListMemberID` |
+>| Membros da campanha de negócios XDM | `campaign.sourceKey` |
+>
 
-Para ativar a transformação desse conjunto de dados:
+Para ativar a transformação para um conjunto de dados de pesquisa B2B:
 
 ![Habilitar conjunto de dados de transformação](/help/connections/assets/transform.gif)
 
