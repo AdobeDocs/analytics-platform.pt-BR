@@ -4,10 +4,10 @@ description: Para acessar essas funções, selecione Mostrar avançadas na lista
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 30fd026a948eab62b034033b4163d3e2b27c47c3
+source-git-commit: 180129837fa326f600ebc3dc5a2a54fd6c3372cb
 workflow-type: tm+mt
-source-wordcount: '4438'
-ht-degree: 56%
+source-wordcount: '4542'
+ht-degree: 54%
 
 ---
 
@@ -418,8 +418,8 @@ Igual. A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | A métrica que você deseja usar para comparar. |
+| metric_Y | A métrica que você deseja usar para comparação. |
 
 ### Exemplo
 
@@ -557,8 +557,8 @@ A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | A métrica básica que você deseja usar para comparar. |
+| metric_Y | A métrica que você deseja usar para comparação. |
 
 ### Exemplo
 
@@ -582,8 +582,8 @@ Maior ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
-| metric_X |  |
-| metric_Y |  |
+| metric_X | A métrica básica que você deseja usar para comparar. |
+| metric_Y | A métrica que você deseja usar para comparação. |
 
 ### Exemplo
 
@@ -695,8 +695,8 @@ A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | A métrica que você deseja usar para comparar. |
+| metric_Y | A métrica que você deseja usar para comparação. |
 
 ### Exemplo
 
@@ -720,8 +720,8 @@ Menor ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | A métrica que você deseja usar para comparar. |
+| metric_Y | A métrica que você deseja usar para comparação. |
 
 ### Exemplo
 
@@ -1019,8 +1019,8 @@ Não igual. A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
-| metric_X | |
-| metric_Y | |
+| metric_X | A métrica que você deseja usar para comparar. |
+| metric_Y | A métrica que você deseja usar para comparação. |
 
 ### Exemplo
 
