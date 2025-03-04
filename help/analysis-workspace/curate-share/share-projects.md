@@ -5,9 +5,9 @@ title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: d47fabb35e6674b8accb6ce3b56cb13c334f4d96
+source-git-commit: 100fe0c9bf5dd1db78ae8188e8de1f8ea53123dc
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2069'
 ht-degree: 62%
 
 ---
@@ -153,7 +153,7 @@ Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-sha
 >
 >* Um projeto pode se tornar inacessível se muitos usuários tentarem acessar um determinado link ao mesmo tempo. Por padrão, mais de 190 pessoas podem acessar um único link a cada 5 minutos. Se sua organização atingir esse limite, aguarde 5 minutos e tente acessar o link novamente.
 >
->* Para as licenças [!DNL Healthcare Shield] e [!DNL Privacy & Security Shield], o recurso [!UICONTROL Compartilhar com qualquer pessoa] requer autenticação da Experience Cloud. Para [!DNL Healthcare Shield] clientes, um aviso de &quot;Conformidade com a HIPAA&quot; é exibido, mas você ainda pode usar esse recurso após a autenticação no Experience Cloud.
+>* Para as licenças [!DNL Healthcare Shield] e [!DNL Privacy & Security Shield], o recurso [!UICONTROL Compartilhar com qualquer pessoa] requer autenticação do Experience Cloud. Para [!DNL Healthcare Shield] clientes, um aviso de &quot;Conformidade com a HIPAA&quot; é exibido, mas você ainda pode usar esse recurso após a autenticação no Experience Cloud.
 
 >[!BEGINSHADEBOX]
 
