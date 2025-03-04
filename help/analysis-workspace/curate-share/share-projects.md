@@ -5,9 +5,9 @@ title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d47fabb35e6674b8accb6ce3b56cb13c334f4d96
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2070'
 ht-degree: 62%
 
 ---
@@ -50,9 +50,9 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilha
 >[!ENDSHADEBOX]
 
 
-## Compartilhar com usuários e grupos do Customer Journey Analytics em sua organização {#Add}
+## Compartilhar com usuários e grupos da Customer Journey Analytics em sua organização {#Add}
 
-Você pode compartilhar um projeto com usuários ou grupos de Customer Journey Analytics existentes em sua organização. Ao compartilhar um projeto conforme descrito nesta seção, os usuários com os quais você compartilha já devem ter uma conta Customer Journey Analytics.
+Você pode compartilhar um projeto com usuários ou grupos existentes da Customer Journey Analytics em sua organização. Ao compartilhar um projeto conforme descrito nesta seção, os usuários com os quais você compartilha já devem ter uma conta da Customer Journey Analytics.
 
 Você pode compartilhar uma função específica com usuários ou grupos ou compartilhar um link.
 
@@ -99,7 +99,7 @@ Se houver alterações não salvas, será solicitado que salve o projeto primeir
 
    **Editar cópia:** os destinatários podem **[!UICONTROL Salvar como]** e ter acesso ao painel esquerdo. As interações entre projetos não são limitadas nesta função. Essa função é útil se você desejar compartilhar um projeto com usuários que entendem os dados de sua organização e como usar o Analysis Workspace, mas não quiser alterar o projeto.
 
-   **Somente leitura:** Destinatários não podem **[!UICONTROL Salvar]** ou **[!UICONTROL Salvar como]** e não têm acesso ao painel esquerdo. As interações do projeto também são limitadas. Essa função é útil se você quiser compartilhar um projeto com usuários menos familiarizados com a estrutura de dados de sua organização, o Analysis Workspace ou o Customer Journey Analytics em geral. No entanto, você ainda deseja que eles consumam dados e insights em um ambiente seguro. Saiba mais sobre a [experiência de projeto de somente leitura](/help/analysis-workspace/curate-share/view-only-projects.md).
+   **Somente leitura:** Destinatários não podem **[!UICONTROL Salvar]** ou **[!UICONTROL Salvar como]** e não têm acesso ao painel esquerdo. As interações do projeto também são limitadas. Essa função é útil se você quiser compartilhar um projeto com usuários menos familiarizados com a estrutura de dados da sua organização, o Analysis Workspace ou o Customer Journey Analytics em geral. No entanto, você ainda deseja que eles consumam dados e insights em um ambiente seguro. Saiba mais sobre a [experiência de projeto de somente leitura](/help/analysis-workspace/curate-share/view-only-projects.md).
 
 1. (Condicional) Se você estiver compartilhando um único projeto, escolha se deseja ativar as seguintes opções ao compartilhar o projeto:
 
@@ -133,17 +133,17 @@ Para compartilhar o link do projeto com os usuários em sua organização:
 
 ## Compartilhar um projeto com qualquer pessoa (sem necessidade de fazer logon) {#share-public-link}
 
-Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-share/view-only-projects.md) aos projetos da Analysis Workspace para pessoas que não têm acesso ao Customer Journey Analytics. Isso pode incluir:
+Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-share/view-only-projects.md) aos projetos do Analysis Workspace a pessoas que não têm acesso ao Customer Journey Analytics. Isso pode incluir:
 
 * Pessoas de fora da organização
 
-* Pessoas da sua organização que não têm acesso ao Customer Journey Analytics
+* Pessoas da organização que não têm acesso ao Customer Journey Analytics
 
 >[!NOTE]
 >
 >Considere o seguinte ao compartilhar um projeto do Analysis Workspace com pessoas que não têm acesso ao Customer Journey Analytics:
 >
->* A capacidade de compartilhar um projeto dessa maneira pode ser desabilitada pelo administrador de Customer Journey Analytics, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md). Se você não puder compartilhar um projeto conforme descrito nesta seção, o administrador de Customer Journey Analytics desativou essa capacidade.
+>* A capacidade de compartilhar um projeto dessa maneira pode ser desabilitada pelo administrador do Customer Journey Analytics, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md). Se você não puder compartilhar um projeto conforme descrito nesta seção, o administrador do Customer Journey Analytics desativou essa capacidade.
 >
 >* Projetos com mais de 50 visualizações expandidas não podem ser compartilhados com pessoas que não têm acesso ao Customer Journey Analytics.
 >
@@ -153,8 +153,7 @@ Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-sha
 >
 >* Um projeto pode se tornar inacessível se muitos usuários tentarem acessar um determinado link ao mesmo tempo. Por padrão, mais de 190 pessoas podem acessar um único link a cada 5 minutos. Se sua organização atingir esse limite, aguarde 5 minutos e tente acessar o link novamente.
 >
->* O recurso [!UICONTROL Compartilhar com qualquer pessoa] está bloqueado para licenças do Healthcare Shield e do Privacy &amp; Security Shield.
-
+>* Para as licenças [!DNL Healthcare Shield] e [!DNL Privacy & Security Shield], o recurso [!UICONTROL Compartilhar com qualquer pessoa] requer autenticação da Experience Cloud. Para [!DNL Healthcare Shield] clientes, um aviso de &quot;Conformidade com a HIPAA&quot; é exibido, mas você ainda pode usar esse recurso após a autenticação no Experience Cloud.
 
 >[!BEGINSHADEBOX]
 
@@ -179,7 +178,7 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
    O proprietário do projeto também é o proprietário deste link. A propriedade do link pode ser transferida para outro usuário somente quando a propriedade do projeto é transferida, conforme descrito em [Transferir ativos do usuário](/help/tools/asset-transfer/transfer-assets.md) no Guia de administração do Analytics.
 
-1. Escolha se deseja habilitar a seguinte opção de segurança (esta opção pode ser controlada pelo administrador de Customer Journey Analytics):
+1. Escolha se deseja ativar a seguinte opção de segurança (esta opção pode ser controlada pelo administrador do Customer Journey Analytics):
 
    * **[!UICONTROL Exigir autenticação da Experience Cloud]:**
 
@@ -187,9 +186,9 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
      Os administradores do Customer Journey Analytics podem configurar esta preferência para a empresa, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md). É possível encontrar os seguintes cenários, dependendo de como a administração configurou essa opção:
 
-      * Se essa opção não estiver visível, o administrador de Customer Journey Analytics não ativou esse recurso.
+      * Se essa opção não estiver visível, o administrador do Customer Journey Analytics não ativou esse recurso.
 
-      * Se essa opção estiver ativada e você não puder desativá-la, significa que o administrador de Customer Journey Analytics exige autenticação de Experience Cloud para qualquer pessoa que acesse os projetos do Analysis Workspace. Esse é sempre o caso para organizações que licenciam o Healthcare Shield.
+      * Se essa opção estiver ativada e você não puder desativá-la, significa que o administrador do Customer Journey Analytics exige autenticação do Experience Cloud para qualquer pessoa que acesse os projetos do Analysis Workspace. Esse é sempre o caso para organizações que licenciam o Healthcare Shield.
 
 1. Ao lado do campo **[!UICONTROL Compartilhar com qualquer pessoa (sem necessidade de logon)]**, selecione ![Link](/help/assets/icons/Link.svg) para copiar o link para a área de transferência do sistema.
 
