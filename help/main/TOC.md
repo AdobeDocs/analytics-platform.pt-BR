@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: a8d161e53a0dba7b33a1365ba16643361dbdbb65
+source-git-commit: 87b2927735834d253fa8a35ba106c1ed720a4ced
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1178'
 ht-degree: 93%
 
 ---
@@ -64,6 +64,8 @@ ht-degree: 93%
          + [Adicionar a extensão do SDK da Web à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
          + [Implementar a tag de carregamento para a extensão do SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
          + [Adicionar a lógica da coleção de dados XDM à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+      + [Implementação manual do Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
+      + [Implementar o Web SDK com a API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
       + [Criar uma conexão](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
       + [Criar uma visualização de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
       + [Criar um canal de marketing de campo derivado](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
@@ -74,7 +76,7 @@ ht-degree: 93%
          + [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
          + [Adicionar o conjunto de dados do conector de origem do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
       + [Avaliar quando desativar o Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
-      + [Desativar Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
+      + [Desabilitar o Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md)
       + Métodos de atualização alternativos {#alternative-upgrade-methods}
          + [Usar a coleção de dados do AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md)
          + [Enviar camada de dados](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md)
