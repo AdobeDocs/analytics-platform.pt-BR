@@ -4,7 +4,7 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: e444474d9f859f59613caa8fad06998372cdf742
+source-git-commit: baf0a1f1d0bdc0d3c60d9375e20c1de3f39f1702
 workflow-type: tm+mt
 source-wordcount: '1973'
 ht-degree: 18%
@@ -71,7 +71,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
 
    | Método de criação | Detalhes |
    | --- | --- |
-   | A partir da interface **[!UICONTROL Públicos-alvo]**. | Selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]** no menu principal do Customer Journey Analytics. A interface Públicos-alvo é exibida. Selecione **[!UICONTROL Criar público-alvo]** e o [!UICONTROL Construtor de público-alvo] será aberto. |
+   | Na interface de **[!UICONTROL Públicos-alvo]** | Selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]** no menu principal do Customer Journey Analytics. A interface Públicos-alvo é exibida. Selecione **[!UICONTROL Criar público-alvo]** e o [!UICONTROL Construtor de público-alvo] será aberto. |
    | De uma visualização no Analysis Workspace | Muitas visualizações no Analysis Workspace permitem criar um público usando o menu de contexto. Por exemplo, você pode selecionar **[!UICONTROL Criar público-alvo]** no menu de contexto de um item em uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou em um nó na [Tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>O uso desse método preenche o filtro previamente no Construtor de público-alvo com a dimensão ou o item de dimensão selecionado.</p><p>As visualizações a seguir permitem criar um público-alvo usando o menu do botão direito do mouse:</p><ul><li>[Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Observação:** públicos-alvo não podem incluir métricas calculadas. Se você tentar criar um público-alvo que contenha uma métrica calculada, a métrica calculada não será incluída na definição do público-alvo.</p> |
    | Na interface de criação/edição do filtro | Marque a caixa que diz **[!UICONTROL Criar um público-alvo com base neste filtro]**. O uso desse método preenche o filtro previamente. Consulte [Criar filtros](/help/components/filters/create-filters.md) para obter mais informações. |
 
@@ -147,7 +147,7 @@ Em vários pontos antes, durante e depois da publicação do público-alvo, pode
 
 ## Usar públicos-alvo da Customer Journey Analytics no Experience Platform {#audiences-aep}
 
-O Customer Journey Analytics pega todas as combinações de namespace e ID de seu público-alvo publicado e as transmite para o Real-Time Customer Data Platform. O Customer Journey Analytics envia o público-alvo para o Experience Platform com a identidade principal definida, de acordo com o que foi selecionado como a [!UICONTROL ID de pessoa] quando a conexão foi configurada.
+A Customer Journey Analytics pega todas as combinações de namespace e ID de seu público-alvo publicado e as transmite para o Real-Time Customer Data Platform. O Customer Journey Analytics envia o público-alvo para o Experience Platform com a identidade principal definida, de acordo com o que foi selecionado como a [!UICONTROL ID de pessoa] quando a conexão foi configurada.
 
 Em seguida, o Real-Time Customer Data Platform examina cada combinação de namespace/ID e procura por um perfil do qual possa fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ele adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Por exemplo, <user@adobe.com> pode ser direcionado em todos os seus dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 

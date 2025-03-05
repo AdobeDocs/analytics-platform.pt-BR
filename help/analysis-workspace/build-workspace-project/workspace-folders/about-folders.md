@@ -5,9 +5,9 @@ title: Visão geral das pastas
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
-workflow-type: ht
-source-wordcount: '435'
+source-git-commit: 8571fbcfddd18658306e264cef88a3f10861e069
+workflow-type: tm+mt
+source-wordcount: '416'
 ht-degree: 100%
 
 ---
@@ -49,12 +49,7 @@ Non-Admins have limited options.
 Veja abaixo algumas diretrizes para trabalhar com a pasta da empresa:
 
 - Admins podem adicionar projetos à pasta da empresa ou criar um novo projeto e salvá-lo nessa pasta. Usuários não admins podem visualizar o conteúdo da pasta da empresa.
-
 - Admins podem criar subpastas dentro da pasta da empresa.
-
 - Admins podem excluir uma pasta criada por outro(a) admin de dentro da pasta da empresa. Talvez seja necessário a coordenação entre admins para manter a consistência do acesso às pastas e aos projetos.
-
 - Quando um(a) admin move um projeto para a pasta da empresa, a pasta é compartilhada com todos, mesmo que os privilégios compartilhados originais tenham sido restritos.
-- Quando um(a) admin move um projeto para fora da pasta da empresa, os privilégios de compartilhamento originais ou anteriores são respeitados.
-
 - Quando um(a) admin move um projeto para fora da pasta da empresa, os privilégios de compartilhamento originais ou anteriores são respeitados.
