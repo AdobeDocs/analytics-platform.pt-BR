@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 1ac7059e76797b14c00993a2a46aa51b1ebfe6a2
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 43%
+source-wordcount: '349'
+ht-degree: 38%
 
 ---
 
@@ -39,6 +39,24 @@ ht-degree: 43%
 >id="cja-upgrade-websdk-api"
 >title="Pacote NPM"
 >abstract="Use a API de coleção de dados para enviar dados diretamente para uma sequência de dados. Há suporte para os tipos não autenticados (cliente para servidor) e autenticados (servidor para servidor)."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-no-selection"
+>title="Implementar o SDK da web para a propriedade fornecida"
+>abstract="Selecione o tipo de implementação desejado no questionário para obter instruções mais detalhadas."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-websdk-third-party"
+>title="Adicionar a biblioteca de SDKs da web ao seu sistema de gerenciamento de tags de terceiros"
+>abstract="Trabalhe com o administrador no sistema de gerenciamento de tags para adicionar a biblioteca de SDK da Web ao seu site.<br><br>O tempo de conclusão desta tarefa depende muito da capacidade de resposta do indivíduo responsável pelo sistema de gerenciamento de tags. A adição da biblioteca Web SDK pode ser fornecida com a lógica de implementação associada e implantada durante os ciclos de lançamento padrão de sua organização."
 
 <!-- markdownlint-enable MD034 -->
 

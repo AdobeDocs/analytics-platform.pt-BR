@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 30%
+source-wordcount: '1315'
+ht-degree: 47%
 
 ---
 
@@ -22,6 +22,15 @@ ht-degree: 30%
 >id="cja-upgrade-appmeasurement-logic"
 >title="Usar a lógica do AppMeasurement com o SDK da web"
 >abstract="Em vez de enviar dados por meio de um objeto XDM, é possível enviar todas as variáveis no formato do AppMeasurement por meio do objeto de dados. <br><br>Essa opção economiza tempo de implementação, permitindo mapear a lógica do AppMeasurement para o XDM, em vez de preencher um objeto XDM do zero. No entanto, ela se torna mais complexa com o tempo, pois qualquer campo adicionado no futuro deve ser mapeado para o XDM no fluxo de dados."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-upgrade-appmeasurement-logic-step"
+>title="Alterar a lógica de AppMeasurement para apontar para o SDK da web"
+>abstract="Esta etapa é exibida porque você optou por usar um atalho de implementação. Copie ou altere a lógica do AppMeasurement para preencher o objeto de dados em vez do objeto s. Por exemplo, altere a atribuição de s.eVar1 para data.__adobe.analytics.eVar1 e repita para todas as variáveis do Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -39,7 +48,7 @@ Considere as seguintes vantagens e desvantagens de usar essa alternativa de atua
 
 | Vantagens | Desvantagens |
 |----------|---------|
-| <ul><li>**Mostra todas as vantagens de hospedar dados na Experience Edge Network**: <p>As vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados devido à capacidade da Adobe Experience Platform de potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/br/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Consolidar a implementação da coleção de dados da Adobe Experience Cloud entre outros produtos da Experience Cloud (AJO, RTCDP e assim por diante)</li><li>Não limitado à nomenclatura do Adobe Analytics (prop, eVar, evento e assim por diante)</li></ul><li>**Uso da implementação existente**: embora sejam necessárias algumas alterações de implementação, essa abordagem não exige uma implementação totalmente nova. Ela permite mapear a lógica do AppMeasurement para o XDM, em vez de preencher um objeto XDM do zero.</li></ul> | <ul><li>**Requisito de mapeamento para envio de dados para a Platform**: quando sua organização estiver pronta para usar o Customer Journey Analytics, envie dados para um conjunto de dados na Adobe Experience Platform. Essa ação exige que cada campo no objeto de dados seja uma entrada na ferramenta de mapeamento de sequência de dados que o atribui a um campo de esquema XDM. O mapeamento só precisa ser feito uma vez para esse fluxo de trabalho e não é necessário fazer alterações de implementação. No entanto, essa é uma etapa extra que não é necessária ao enviar dados em um objeto XDM.</li><li>**Apresenta complexidade adicional ao longo do tempo**: qualquer campo adicionado no futuro deve ser mapeado para XDM na sequência de dados.<p>Sempre que um novo campo for adicionado à implementação, você poderá executar um dos seguintes procedimentos:</p><ul><li>**Opção 1:** Preencha uma nova evar arbitrária ou uma nova prop no objeto de dados e mapeie-a para o campo XDM desejado.<p>Esse processo aumenta a consistência para a implementação no lado do cliente, mas requer mapeamento.</p></li><li>**Opção 2:** Deixe o objeto de dados como uma implementação herdada e comece a preencher somente o objeto XDM para todos os novos campos.<p>Esse processo não requer mapeamento, mas significa que algumas de suas variáveis estão localizadas apenas em um objeto de dados, enquanto outras variáveis estão localizadas apenas em um objeto XDM. Sempre que precisar solucionar problemas de implementação, você precisará ir para dois lugares. Verifique se os workflows internos acomodam isso.</p></li></ul> </li></ul> |
+| Esse é o caminho de atualização preferencial se a implementação do Adobe Analytics já estiver usando a Web SDK.<ul><li>**Mostra todas as vantagens de hospedar dados na Experience Edge Network**: <p>As vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados devido à capacidade da Adobe Experience Platform de potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/br/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)</li><li>Consolidar a implementação da coleção de dados da Adobe Experience Cloud entre outros produtos da Experience Cloud (AJO, RTCDP e assim por diante)</li><li>Não dependente da nomenclatura do Adobe Analytics (prop, eVar, evento etc.)</li></ul><li>**Uso da implementação existente**: embora sejam necessárias algumas alterações de implementação, essa abordagem não exige uma implementação totalmente nova. Você pode usar sua camada de dados e código existentes com alterações mínimas na lógica de implementação sem afetar os relatórios existentes do Adobe Analytics.</li><li>**Fornece uma opção para usar um esquema XDM**: é possível optar por usar seu esquema do Adobe Analytics existente ou criar um esquema XDM e mapear campos no objeto de dados desse esquema. [Esquemas XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home#xdm-schemas) são flexíveis e permitem definir quaisquer campos necessários e relevantes. <p>Consulte “Usar seu próprio esquema XDM” abaixo para obter mais informações sobre as vantagens de usar seu próprio esquema XDM.</p></li><li>**Mantém regras e elementos de dados**: embora sejam necessárias novas ações de regra, é possível reutilizar elementos de dados e condições de regra existentes com alterações mínimas.</li><li>**À prova de obsolescência**: se você optar por usar seu próprio esquema XDM, isso facilitará as atualizações de implementação futuras.</li></ul> | <ul><li>**Requisito de mapeamento para envio de dados para a Platform**: quando sua organização estiver pronta para usar o Customer Journey Analytics, envie dados para um conjunto de dados na Adobe Experience Platform. Essa ação exige que cada campo no objeto de dados seja uma entrada na ferramenta de mapeamento de sequência de dados que o atribui a um campo de esquema XDM. O mapeamento só precisa ser feito uma vez para esse fluxo de trabalho e não é necessário fazer alterações de implementação. No entanto, essa é uma etapa extra que não é necessária ao enviar dados em um objeto XDM.</li><li>**Apresenta complexidade adicional ao longo do tempo**: qualquer campo adicionado no futuro deve ser mapeado para XDM na sequência de dados.<p>Sempre que um novo campo for adicionado à implementação, você poderá executar um dos seguintes procedimentos:</p><ul><li>**Opção 1:** Preencha uma nova evar arbitrária ou uma nova prop no objeto de dados e mapeie-a para o campo XDM desejado.<p>Esse processo aumenta a consistência para a implementação no lado do cliente, mas requer mapeamento.</p></li><li>**Opção 2:** Deixe o objeto de dados como uma implementação herdada e comece a preencher somente o objeto XDM para todos os novos campos.<p>Esse processo não requer mapeamento, mas significa que algumas de suas variáveis estão localizadas apenas em um objeto de dados, enquanto outras variáveis estão localizadas apenas em um objeto XDM. Sempre que precisar solucionar problemas de implementação, você precisará ir para dois lugares. Verifique se os workflows internos acomodam isso.</p></li></ul> |
 
 {style="table-layout:auto"}
 
@@ -47,9 +56,9 @@ Considere as seguintes vantagens e desvantagens de usar essa alternativa de atua
 
 As etapas básicas para migrar uma implementação do Adobe Analytics (AppMeasurement ou a extensão do Analytics) para usar o Web SDK para enviar dados para o Customer Journey Analytics são:
 
-1. (Opcional) Migre sua implementação do Adobe Analytics para usar o Adobe Experience Platform Web SDK e comece a enviar dados para o Edge Network.
+1. Migre sua implementação do Adobe Analytics para usar o Adobe Experience Platform Web SDK e comece a enviar dados para o Edge Network.
 
-   Esta é uma etapa opcional que permite migrar sua implementação existente do Adobe Analytics para usar o Web SDK e validar se tudo está funcionando no Adobe Analytics. Depois que isso for configurado e os dados no Adobe Analytics forem satisfatórios, você poderá enviar dados do Edge Network para o Customer Journey Analytics.
+   Esta etapa permite migrar a implementação existente do Adobe Analytics para usar o Web SDK. Opcionalmente, é possível enviar dados para o Adobe Analytics para validar se tudo está funcionando no Adobe Analytics antes de enviar os dados para o Customer Journey Analytics. Depois que isso for configurado e os dados no Adobe Analytics forem satisfatórios, você poderá enviar dados do Edge Network para o Customer Journey Analytics.
 
    Essa flexibilidade permite uma atualização mais metódica e ponderada para o Customer Journey Analytics.
 
@@ -59,16 +68,40 @@ As etapas básicas para migrar uma implementação do Adobe Analytics (AppMeasur
 
    * [Migrar para o Web SDK usando o JavaScript](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)
 
-1. Enviar dados do Edge Network para o Customer Journey Analytics.
+1. Comece a enviar dados do Edge Network para a Platform.
 
    1. Envie todas as variáveis no formato AppMeasurement por meio do objeto de dados.
 
       Para obter mais informações, consulte [Mapeamento de variável de objeto de dados para Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
 
-   1. Caso ainda não o tenha feito, crie um esquema XDM para sua organização.
+   1. Escolha seu esquema.
 
-      Para obter mais informações, consulte [Criar um esquema personalizado para usar com a implementação do Customer Journey Analytics Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+      Você pode escolher se deseja usar seu esquema existente do Adobe Analytics ou criar um esquema XDM para se alinhar melhor às necessidades da organização à medida que começa a usar outros serviços da plataforma.
+
+      A Adobe recomenda criar um esquema XDM. Para obter mais informações, consulte [Criar um esquema personalizado para usar com a implementação do Customer Journey Analytics Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+
+      +++Usar o esquema do Adobe Analytics
+
+      | Vantagens | Desvantagens |
+      |----------|---------|
+      | <p>As vantagens de usar o esquema do Adobe Analytics incluem:</p><ul><li>Facilidade de atualização<p>Se você já estiver enviando dados para o Adobe Analytics com o SDK da web da Adobe Experience Platform, é possível adicionar um serviço extra à sequência de dados para enviar dados para a Adobe Experience Platform (que também pode ser usado na configuração do Customer Journey Analytics).</p></li></ul> | <p>As desvantagens de usar o esquema do Adobe Analytics incluem:</p><ul><li>Embora o uso do esquema do Adobe Analytics não limite a maneira como você utiliza outros aplicativos da Platform, ele é um esquema um pouco mais complexo. Isso ocorre porque o esquema do Adobe Analytics contém muitos objetos específicos do Adobe Analytics que provavelmente não serão usados pela organização.<p>Quando é preciso realizar alterações no esquema, é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.</p></li></ul> |
+
++++
+
+      +++Criar um esquema XDM
+
+      | Vantagens | Desvantagens |
+      |----------|---------|
+      | <ul><p>As vantagens de utilizar seu próprio esquema XDM incluem:</p><ul><li>Um esquema simplificado e adaptado às necessidades da organização e aos aplicativos específicos da Platform que você usa.</li><p>Quando é preciso realizar alterações no esquema, não é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.</p></ul> | <p>As desvantagens de utilizar seu próprio esquema XDM incluem:</p><ul><li>A atualização do esquema é um processo demorado e necessário antes de você começar a enviar dados para a Platform.</li></ul> |
+
++++
 
    1. Use o mapeamento do fluxo de dados para mapear todos os campos no objeto de dados para o esquema XDM.
 
       Para obter mais informações, consulte [Mapeamento](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) em [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) na documentação do Experience Platform.
+
+   1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
+
+
+
+

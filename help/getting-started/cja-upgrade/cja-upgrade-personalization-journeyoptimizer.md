@@ -6,10 +6,10 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 16%
+source-wordcount: '132'
+ht-degree: 21%
 
 ---
 
@@ -20,40 +20,48 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Usar o objeto de personalização no Adobe Journey Optimizer"
->abstract="Utilize o objeto de personalização em sua implementação do Adobe Journey Optimizer."
+>abstract="Ao aproveitar as tecnologias de ponta em aprendizagem de máquina e aprendizagem profunda supervisionadas, a otimização personalizada permite que um usuário empresarial (profissional de marketing) defina objetivos de negócios e utilize os dados de clientes para treinar modelos orientados a negócios a fim de fornecer ofertas personalizadas e maximizar KPIs."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-O resultado do objeto de personalização termina em um conjunto de dados. O resultado da experimentação. Quando um cliente usa o AA com o Target, ele fica em um espaço totalmente diferente do que ao migrar para o CJA e usa o CJA com o Adobe Target.
+Ao aproveitar as tecnologias de ponta em aprendizagem de máquina e aprendizagem profunda supervisionadas, a otimização personalizada permite que um usuário empresarial (profissional de marketing) defina objetivos de negócios e utilize os dados de clientes para treinar modelos orientados a negócios a fim de fornecer ofertas personalizadas e maximizar KPIs.
 
-O Target era a maneira antiga de configurar um teste A/B ou experimentação. Em seguida, garantir os resultados desses testes no Target acabou em AA para os relatórios. Agora, se estiver usando o Target, em vez de dizer que deseja os dados no Target, você pode selecionar o CJA como fonte de relatórios para uma atividade do Adobe Target. Portanto, se um cliente estiver fazendo isso no AA e quiser migrar para o CJA, ...
+Para obter mais informações, consulte [Modelo de otimização personalizado](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) no Guia do Journey Optimizer.
 
-Se um cliente tiver o AJO e estiver usando Ofertas na AJO, ele poderá configurar ofertas, e isso também criará conjuntos de dados na Platform... Mas isso não é relevante com a atualização, exatamente.
+<!--
 
+The result of the personalization object ends up in a dataset. The result of experimentation. When a customer has used AA with Target, that ends up in a complete different space than when they're migrating to CJA and they're going to use CJA with Adobe Target. 
 
+Target was the old way of setting up an A/B test or experimentation. Then ensuring the results of those tests in Target ended up in AA for reporting. Now if you're using Target, instead of saying that you want the data in Target, you can now select CJA as your reporting source for an Adobe Target activity. So if a customer is doing this in AA and they want to move to CJA, ...
 
-Perguntas que precisamos responder:
-
-1. Como determinamos os critérios de personalização (vermelho para o usuário A e azul para o usuário B)
-
-1. O que implementamos no site para determinar o objeto vermelho/azul?
+If a customer has AJO, and is using Offers in AJO, then they can set up offers, and that also creates datasets in Platform... But that's not relevant with upgrade, exactly.
 
 
-Duas maneiras de fazer isso:
 
-Renderizar conteúdo manualmente ou Renderizar conteúdo automaticamente.
+Questions we need to answer:
+
+1. How do we determine the personalization criteria (Red for user A and blue for User B)
+
+1. What do we implement on the site to determine the red / blue object?
 
 
-## Implementação manual do Web SDK
+2 ways we can do it:
+
+Manually rendering content or Automatically rendering content. 
 
 
-## Implementação do Mobile SDK
+## Manual implementation of the Web SDK
+
+
+## Mobile SDK implementation 
 
 
 
 
 
 ## Tags
+
+-->
 
