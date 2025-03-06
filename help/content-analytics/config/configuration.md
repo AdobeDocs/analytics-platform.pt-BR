@@ -7,7 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 596e54a559bac69214e1de3ea37da6177f110b7a
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 2%
@@ -39,10 +39,11 @@ A configuração do Content Analytics consiste nas seguintes etapas:
    * Coleta de dados
       * Uma sequência de dados é criada e um serviço do Experience Platform é configurado na sequência de dados para transmitir dados para o conjunto de dados do evento de experiência do Content Analytics.
       * Uma propriedade Tag é criada com a extensão Adobe Content Analytics configurada para a sandbox correta, a sequência de dados e outras opções de configuração no assistente de configuração.
-1. Somente quando você publica manualmente a propriedade Tag, o Content Analytics é efetivamente implantado e ativado.
+1. Somente quando você [publica manualmente](manual.md) a propriedade Tag, o Content Analytics é efetivamente implantado e ativado.
+
 1. Você só pode fazer algumas alterações limitadas em uma configuração implementada usando o assistente de [configuração guiada](guided.md). Por exemplo, altere a [visualização de dados](/help/data-views/data-views.md).
 1. Você pode fazer outras alterações em uma configuração implementada por meio da [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) na propriedade de Marca associada.
-1. Somente quando você republica manualmente a propriedade Tag, as modificações de configuração das etapas 4 e 5 são efetivamente implantadas e ativadas.
+1. Somente quando você [republica manualmente](manual.md) a propriedade Tag, as modificações de configuração das etapas 4 e 5 são efetivamente implantadas e ativadas.
 
 
 Antes de configurar o Content Analytics, verifique se os seguintes pré-requisitos foram atendidos:

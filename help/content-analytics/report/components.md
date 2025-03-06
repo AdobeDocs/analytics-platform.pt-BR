@@ -6,7 +6,8 @@ feature: Content Analytics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 2958efb16ed2f5dbd754b407ddb3b6bc2f7c1ee1
+exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
+source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 17%
@@ -49,6 +50,9 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gera
 | Profundidade dos pixels horizontais da experiência | Valor quantificável da profundidade horizontal do pixel da experiência. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Profundidade dos pixels verticais da experiência | Valor quantificável da profundidade vertical de pixel da experiência. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 
+{style="table-layout:fixed"}
+
+
 
 ## Atributos da experiência
 
@@ -68,6 +72,8 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gera
 | Contagem de palavras da experiência | ![IA gerada](/help/assets/icons/AI.svg) Número de palavras para a experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
 | Contagem de palavras por frase da experiência | ![IA gerada](/help/assets/icons/AI.svg) Número de palavras por frase para a experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
 
+{style="table-layout:fixed"}
+
 
 ## Eventos de experiência
 
@@ -75,6 +81,8 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gera
 |---|---|---|---|
 | Visualizações de experiência | Medida quantificável do número de visualizações da experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
 | Cliques de experiência | Medida quantificável do número de cliques da experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
+
+{style="table-layout:fixed"}
 
 
 ## Metadados do ativo
@@ -96,6 +104,8 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gera
 | Data de criação do ativo | Data de criação do ativo. | Dimensão | Mais recente \| Session |
 | Ativo atualizado pela última vez por | Identificador para atualização de ativo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Data da última atualização do ativo | Data de atualização do ativo. | Dimensão | Mais recente \| Session |
+
+{style="table-layout:fixed"}
 
 
 ## Atributos do ativo
@@ -119,6 +129,8 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gera
 | Condição de iluminação do ativo | ![IA gerada](/help/assets/icons/AI.svg) Condição de iluminação do ativo. Os valores possíveis são: hora de ouro, hora azul, meio-dia, nublado, noite, tecla alta, tecla baixa, luz do dia, incandescente, fluorescente, colorido e estúdio. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Configurações da câmera do ativo | ![IA gerada](/help/assets/icons/AI.svg) configuração de câmera do ativo. Os valores possíveis são: velocidade do obturador rápida, longa exposição. desfoque de bokeh, desfoque de movimento, desfoque de inclinação/deslocamento, flash, ângulo largo, preto e branco, surreal, dupla exposição, macro e modo normal. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 
+{style="table-layout:fixed"}
+
 
 ## Eventos de ativos
 
@@ -126,6 +138,8 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gera
 |---|---|---|---|
 | Exibições de ativos | Medida quantificável do número de exibições do ativo. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
 | Cliques no ativo | Medida quantificável do número de cliques do ativo. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
+
+{style="table-layout:fixed"}
 
 
 <!--
@@ -137,6 +151,8 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gera
 | Experience Path Root | Root path to the experience. | Derived Field | |
 | Asset Location | Location of the asset. | Derived Field | |
 | Asset Percenption ID + Asset ID | Combiination of asset perception identifier and asset identifier | Derived Field | |
+
+{style="table-layout:fixed"}
 -->
 
 ## Métricas calculadas
@@ -145,3 +161,5 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gera
 |---|---|---|---|
 | Taxa de click-through do ativo | Cliques no ativo / Exibições do ativo | Métrica calculada | |
 | Índice de click-through da experiência | Cliques de experiência / Visualizações de experiência | Métrica calculada | |
+
+{style="table-layout:fixed"}

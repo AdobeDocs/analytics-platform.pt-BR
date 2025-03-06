@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
 workflow-type: tm+mt
 source-wordcount: '5188'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 Esse caso de uso ajuda você a entender como usar os dados de resumo em seus relatórios e análises. O caso de uso detalha todas as etapas necessárias para usar dados de resumo no Customer Journey Analytics:
 
-- [Assimilar](#ingest) dados de resumo e outras fontes de dados no Experience Platform.
+- [Assimilar](#ingest) dados de resumo e outras fontes de dados na Experience Platform.
 - Configure sua [Conexão](#connection) para os dados de resumo e outras fontes de dados.
 - Configure sua [Visualização de dados](#data-view) para combinar suas fontes de dados.
 - Relate e analise no [Workspace](#workspace) seus dados combinados.
@@ -25,7 +25,7 @@ O caso de uso fornece dados de exemplo para dados de resumo, dados de evento e d
 
 ## Assimilar
 
-Você usa os seguintes dados de resumo de amostra para este caso de uso, mostrando dados de resumo para executar campanhas no Facebook.
+Você usa os seguintes exemplos de dados de resumo para este caso de uso, mostrando os dados de resumo para executar campanhas no Facebook.
 
 +++Dados de resumo
 
@@ -291,7 +291,7 @@ Os dados de pesquisa estão disponíveis no Conjunto de dados de pesquisa de exe
 
 Os dados de resumo precisam de um esquema de resumo no Experience Platform. Um esquema de resumo é um esquema que está usando as Métricas de resumo XDM como sua classe base.
 
-Para criar um schema de resumo no Experience Platform:
+Para criar um esquema de resumo no Experience Platform:
 
 1. Selecione **[!UICONTROL Experience Platform]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
 1. Selecione **[!UICONTROL Esquemas]** no painel esquerdo.
@@ -338,7 +338,7 @@ Agora você definiu um esquema, detalhando o modelo para seus dados de resumo. S
 
 ### Conjunto de dados de resumo
 
-Para armazenar os dados de resumo no Experience Platform, primeiro é necessário criar um conjunto de dados e, em seguida, carregar os dados de resumo no conjunto de dados.
+Para armazenar os dados de resumo na Experience Platform, primeiro é necessário criar um conjunto de dados e, em seguida, fazer upload dos dados de resumo no conjunto de dados.
 
 Para criar um conjunto de dados:
 
@@ -376,14 +376,14 @@ Para fazer upload dos dados de amostra neste conjunto de dados:
    1. Opcionalmente, você pode selecionar ![Visualizar](/help/assets/icons/Preview.svg) **[!UICONTROL Visualizar dados]** para abrir uma caixa de diálogo com uma visualização dos dados depois de carregados no conjunto de dados.
    1. Selecione **[!UICONTROL Concluir]**.
 
-Em **[!UICONTROL Fontes]** > **[!UICONTROL Fluxo de dados - XX/XX/XXXX, XX:XX]**, o status do carregamento é exibido. Atualize para ver as atualizações do upload. Quando bem-sucedido, os dados de amostra são carregados no Experience Platform.
+Em **[!UICONTROL Fontes]** > **[!UICONTROL Fluxo de dados - XX/XX/XXXX, XX:XX]**, o status do carregamento é exibido. Atualize para ver as atualizações do upload. Quando bem-sucedido, seus dados de amostra são carregados no Experience Platform.
 
 
 
 
 ## Conexão
 
-Para usar seus dados de amostra no Customer Journey Analytics, você cria uma conexão que inclui o Conjunto de dados de resumo de exemplo do Experience Platform.
+Para usar seus dados de exemplo no Customer Journey Analytics, você cria uma conexão que inclui o Conjunto de dados de resumo de exemplo da Experience Platform.
 
 
 1. Selecione **[!UICONTROL Customer Journey Analytics]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
@@ -425,7 +425,7 @@ Para usar seus dados de amostra no Customer Journey Analytics, você cria uma co
 
 Os dados dos conjuntos de dados são adicionados ao Customer Journey Analytics, o que pode levar algumas horas. Por favor, seja paciente antes de continuar.
 
-Após algum tempo, verifique se os dados dos conjuntos de dados estão carregados corretamente no Customer Journey Analytics.
+Após algum tempo, verifique se os dados dos conjuntos de dados foram carregados corretamente na Customer Journey Analytics.
 
 1. Selecione **[!UICONTROL Customer Journey Analytics]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
 1. Selecione **[!UICONTROL Conexões]** no menu superior.
@@ -434,7 +434,7 @@ Após algum tempo, verifique se os dados dos conjuntos de dados estão carregado
    1. Selecione ![Calendário](/help/assets/icons/Calendar.svg) e **[!UICONTROL Últimos 7 dias]**.
    1. Selecione **[!UICONTROL Aplicar]**.
 
-Na lista de **[!UICONTROL Conjuntos de dados]**, os valores na coluna **[!UICONTROL Registros adicionados]** devem confirmar se os dados dos seus conjuntos de dados agora fazem parte do Customer Journey Analytics.
+Na lista de **[!UICONTROL Conjuntos de dados]**, os valores na coluna **[!UICONTROL Registros adicionados]** devem confirmar se os dados dos seus conjuntos de dados agora fazem parte da Customer Journey Analytics.
 
 ![Exemplo de conexão para dados de resumo](../assets/example-connection-summary-data.png)
 
@@ -452,7 +452,7 @@ Para garantir que você possa relatar os dados corretos no Workspace, é necess�
       1. Deixe todas as outras configurações.
       1. Selecione **[!UICONTROL Salvar e continuar]**.
    1. Na etapa **[!UICONTROL Componentes]** de **[!UICONTROL Visualizações de dados]** > **[!UICONTROL Exemplo de Visualização de Dados Usando Dados de Resumo]**:
-      1. Adicione os seguintes componentes à lista Dimension e Métricas. Observe que, para maior clareza, os nomes dos componentes são modificados a partir do nome padrão, usando **[!UICONTROL Nome do componente]** em **[!UICONTROL Configurações do componente]** no painel do componente (à direita).
+      1. Adicione os seguintes componentes à lista Dimensões e Métricas. Observe que, para maior clareza, os nomes dos componentes são modificados a partir do nome padrão, usando **[!UICONTROL Nome do componente]** em **[!UICONTROL Configurações do componente]** no painel do componente (à direita).
 
          **Métricas**
 
@@ -478,14 +478,14 @@ Para garantir que você possa relatar os dados corretos no Workspace, é necess�
          | Código de rastreamento (evento) | Exemplo de conjunto de dados de evento | Sequência de caracteres | *_locatário*.tracking_code |
          | Código de rastreamento (pesquisa) | Exemplo de conjunto de dados de pesquisa | Sequência de caracteres | *_locatário*.tracking_code |
 
-      1. Selecione a dimensão **[!UICONTROL Código de Rastreamento (Evento)]** na lista **[!UICONTROL Dimension]**. No painel do componente:
+      1. Selecione a dimensão **[!UICONTROL Código de rastreamento (Evento)]** na lista **[!UICONTROL Dimensões]**. No painel do componente:
 
          ![Dados de resumo do código de rastreamento](../assets/tracking-code-summary-data.png)
          1. Expandir ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Grupo de Dados de Resumo]**.
          1. Habilitar **[!UICONTROL Criar agrupamento]**.
-         1. Selecione **[!UICONTROL ID da campanha]** na lista suspensa **[!UICONTROL Dimension]**. Essa etapa garante que os dados do evento e os dados de resumo sejam combinados corretamente para os relatórios.
+         1. Selecione **[!UICONTROL ID da Campanha]** na lista suspensa **[!UICONTROL Dimension]**. Essa etapa garante que os dados do evento e os dados de resumo sejam combinados corretamente para os relatórios.
          1. Você pode, opcionalmente, habilitar **[!UICONTROL Ocultar nos relatórios]**. [!UICONTROL Ocultar nos relatórios] garante que a dimensão selecionada ([!UICONTROL ID da campanha]) fique oculta no Analysis Workspace e em outras ferramentas de relatório do Customer Journey Analytics. Se você ativou essa opção, é possível verificar a opção:
-            1. Selecione a dimensão **[!UICONTROL ID da Campanha]** na lista **[!UICONTROL Dimension]**.
+            1. Selecione a dimensão **[!UICONTROL ID da Campanha]** na lista **[!UICONTROL Dimensões]**.
             1. Você percebe que **[!UICONTROL Ocultar componente nos relatórios]** em **[!UICONTROL Configurações de componente]** agora é habilitado automaticamente.
 
       1. Crie um novo campo derivado, por exemplo `Campaign Name (Lookup Derived Field)`, para garantir que você possa relatar no Workspace usando a dimensão Nome da campanha (Pesquisa) do conjunto de dados Exemplo de dados de Pesquisa.
@@ -498,15 +498,15 @@ Para garantir que você possa relatar os dados corretos no Workspace, é necess�
          1. Selecione **[!UICONTROL campaign_name]** no menu suspenso **[!UICONTROL Valores para retornar]**.
          1. Selecione **[!UICONTROL Salvar]**.
 
-      1. Adicione o campo derivado recém-criado, **[!UICONTROL Nome da Campanha (Campo Derivado de Pesquisa)]**, à lista de componentes **[!UICONTROL Dimension]**.
+      1. Adicione o campo derivado recém-criado, **[!UICONTROL Nome da Campanha (Campo Derivado de Pesquisa)]**, à lista de componentes **[!UICONTROL Dimensões]**.
 
-      1. Selecione a dimensão **[!UICONTROL Nome da campanha (Pesquisa)]** na lista **[!UICONTROL Dimension]**. No painel do componente:
+      1. Selecione a dimensão **[!UICONTROL Nome da campanha (Pesquisa)]** na lista **[!UICONTROL Dimensões]**. No painel do componente:
 
          ![Grupo de Dados de Resumo de Campo Derivado](../assets/derived-field-summary-data-group.png)
 
          1. Expandir ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Grupo de Dados de Resumo]**.
          1. Habilitar **[!UICONTROL Criar agrupamento]**.
-         1. Selecione **[!UICONTROL Nome da campanha (campo derivado de pesquisa)]** na lista suspensa **[!UICONTROL Dimension]**. Esta etapa garante que o Nome da Campanha (Pesquisa) do Conjunto de Dados de Pesquisa de Exemplo possa ser usado com segurança nos relatórios (consulte [Workspace](#workspace)).
+         1. Selecione **[!UICONTROL Nome da Campanha (Campo Derivado da Pesquisa)]** na lista suspensa **[!UICONTROL Dimension]**. Esta etapa garante que o Nome da Campanha (Pesquisa) do Conjunto de Dados de Pesquisa de Exemplo possa ser usado com segurança nos relatórios (consulte [Workspace](#workspace)).
 
       1. Selecione a métrica **[!UICONTROL Receita]** na lista **[!UICONTROL Métricas]**. No painel do componente:
 
@@ -551,7 +551,7 @@ Você vê uma tela vazia com um painel [!UICONTROL Forma livre], que consiste em
 
 1. Verifique se a visualização de dados, selecionada para o painel, refere-se à visualização de dados que contém a configuração dos dados de resumo. Por exemplo, **[!UICONTROL Exemplo de Visualização de Dados Usando Dados de Resumo.]**
 1. Verifique se o intervalo de datas é válido para os dados que você deseja relatar. Por exemplo: **[!UICONTROL Últimos 2 meses completos]**.
-1. Arraste **[!UICONTROL Código de Rastreamento (Evento)]** de **[!UICONTROL Dimension]** e solte a dimensão na tabela de Forma livre vazia.
+1. Arraste **[!UICONTROL Código de Rastreamento (Evento)]** de **[!UICONTROL Dimensões]** e solte a dimensão na tabela de Forma livre vazia.
 1. Arraste **[!UICONTROL Pedidos]** de **[!UICONTROL Métricas]** e solte a métrica na coluna **[!UICONTROL Eventos]** para substituir essa coluna na tabela de Forma livre.
 1. Arraste **[!UICONTROL Receita]** de **[!UICONTROL Métricas]** e solte a métrica para adicionar como uma coluna adicional à tabela de Forma livre.
 1. Arraste **[!UICONTROL Impressões (Resumo)]** de **[!UICONTROL Métricas]** e solte a métrica para adicioná-la como uma coluna adicional à tabela de Forma livre.
