@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 99f82353e41180a0090e84e58593d63fc5cbe803
+source-git-commit: ac3ec479938acf509bbd26be282b75e75dd49c33
 workflow-type: tm+mt
 source-wordcount: '1650'
 ht-degree: 3%
@@ -36,7 +36,7 @@ Usar o Assistente de IA para responder perguntas centradas em dados no Analysis 
 | **Verificabilidade** | A verificabilidade e a correção dos dados podem ser confirmadas por meio da tabela de forma livre gerada e da visualização de dados. Por exemplo, se um usuário solicitar *Pedidos de tendência no último mês*, você poderá confirmar se a métrica (&quot;pedidos&quot;) e o intervalo de datas (&quot;último mês&quot;) corretos foram selecionados no painel recém-gerado, na visualização de dados e na tabela de forma livre. |
 | **Feedback** | <ul><li>Polegar para cima</li><li>Polegar para baixo</li><li>Sinalizador</li></ul> |
 
-### Recursos do Alpha fora do escopo
+### Recursos do Beta fora do escopo
 
 | Recurso incompatível | Descrição |
 | --- | --- |
@@ -78,9 +78,9 @@ See [Access control](/help/technotes/access-control.md#access-control) for more 
 
 3. Selecione **[!UICONTROL Projeto em branco]** no banner na parte superior da página de projetos para abrir um novo projeto em branco.
 
-4. Certifique-se de que a visualização de dados selecionada para o painel é a mesma visualização de dados que foi ativada para uso com o Assistente de IA para testes do Alpha.
+4. Certifique-se de que a visualização de dados selecionada para o painel é a mesma visualização de dados que foi ativada para uso com o Assistente de IA para testes do Beta.
 
-   Se não tiver certeza, entre em contato com o canal do Alpha Slack.
+   Se não tiver certeza, entre em contato com o canal do Beta Slack.
 
 5. Selecione o ícone de chat do Assistente do AI na área superior direita da página.
 
@@ -187,7 +187,7 @@ Esses exemplos são projetados para ajudá-lo a se familiarizar com a forma como
 | Visualização de linha | <ul><li>Tendência</li><li>[Métrica] em [Intervalo de tempo]</li></ul> |
 | Visualização de barra | <ul><li>[Métrica] de [Dimension]</li></ul> |
 
-## Expectativas de teste do Alpha e feedback solicitado
+## Expectativas de teste do Beta e feedback solicitado
 
 Depois de fazer cada pergunta, analise cuidadosamente a resposta fornecida pelo assistente. É crucial avaliar as visualizações geradas de forma abrangente antes de fornecer feedback.
 
