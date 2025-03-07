@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 1283b285ff49225835abb8e7d8103f34aad686b1
-workflow-type: ht
-source-wordcount: '4649'
-ht-degree: 100%
+source-git-commit: 40bbcb2868de509555faab8384f1cab45fd738a0
+workflow-type: tm+mt
+source-wordcount: '4664'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 | --- | --- |
+| **Março de 2025** | |
+| Casos de uso da métrica Quantum | Casos de uso adicionados para coletar dados de [Métrica do Quantum](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
 | **Fevereiro de 2025** |  |
 | Coleção de mídia: atualizações do conector de origem da Adobe para o novo relatório de mídia XDM | O conector de origem do Analytics [mapeia dados de mídia de transmissão no Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping?lang=pt-br) automaticamente com os mesmos campos usados pelo SDK da Web. Anteriormente, os dados eram mapeados com os locais antigos e novos, mas somente o novo local será usado no futuro. |
 | Extensão de BI - suporte expandido | A extensão de BI do Customer Journey Analytics agora é compatível com [Looker, Jupyter Notebook e R Studio](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases?lang=pt-br). |
@@ -180,7 +182,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Salvar automaticamente projetos do espaço de trabalho | Conteúdo atualizado para incluir a funcionalidade de salvamento automático em [Salvar projetos](/help/analysis-workspace/build-workspace-project/save-projects.md). |
 | Página de destino | Novas atualizações da [página de destino](/help/getting-started/landing.md). |
 | Programar pastas de trabalho | Página dedicada para descrever como [Programar pastas de trabalho](/help/report-builder/schedule-reportbuilder.md) no Report Builder. |
-| Compatibilidade da array de objetos com conjuntos de dados de perfil e pesquisa | Atualização do [Uso de arrays de objetos](/help/use-cases/object-arrays.md) e da [Assimilação de públicos-alvo da Adobe Experience Platform](/help/use-cases/data-ingestion/ingest-aep-segments.md) para refletir a compatibilidade de arrays de objetos com conjuntos de dados de perfil e pesquisa. |
+| Compatibilidade da matriz de objetos com conjuntos de dados de perfil e pesquisa | Atualização do [Uso de matrizes de objetos](/help/use-cases/object-arrays.md) e da [Assimilação de públicos-alvo da Adobe Experience Platform](/help/use-cases/data-ingestion/ingest-aep-segments.md) para refletir a compatibilidade de matrizes de objetos com conjuntos de dados de perfil e pesquisa. |
 
 {style="table-layout:auto"}
 
@@ -199,7 +201,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Outubro de 2022 | Aplicativo móvel: Novo tópico sobre [exibições de detalhes personalizados](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/mobapp/create-scorecard#view-detail-slides). |
 | Outubro de 2022 | Atualizações do tópico [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |
 | **Setembro de 2022** | |
-| Setembro de 2022 | Novo caso de uso sobre a [migração de dados do Google Analytics para o Customer Journey Analytics](/help/use-cases/ga/overview.md). |
+| Setembro de 2022 | Novo caso de uso sobre a [migração de dados do Google Analytics para o Customer Journey Analytics](/help/use-cases/third-party/ga/overview.md). |
 | Setembro de 2022 | Novo tópico sobre [Gráficos de combinação](/help/analysis-workspace/visualizations/combo-charts.md) no espaço de trabalho. |
 | Setembro de 2022 | Novo tópico sobre o [Painel de experimentação](/help/analysis-workspace/c-panels/experimentation.md) no espaço de trabalho. |
 | **Agosto de 2022** | |
@@ -269,7 +271,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Abril de 2021 | Novo tópico sobre [persistência](/help/data-views/component-settings/persistence.md). |
 | Abril de 2021 | Nova documentação sobre suporte a projetos agendados no Espaço de trabalho. |
 | Abril de 2021 | Novos tópicos sobre a [experiência aprimorada das Visualizações de dados](/help/data-views/data-views.md). |
-| Abril de 2021 | Novos tópicos sobre [Assimilação de dados do Google Analytics](/help/use-cases/ga/overview.md) e [análise desses dados](/help/use-cases/ga/report.md). |
+| Abril de 2021 | Novos tópicos sobre [Assimilação de dados do Google Analytics](/help/use-cases/third-party/ga/overview.md) e [análise desses dados](/help/use-cases/third-party/ga/report.md). |
 | Abril de 2021 | Adição de tópico sobre [relatórios agendados](/help/analysis-workspace/export/t-schedule-report.md) no Espaço de trabalho. |
 | Abril de 2021 | Novo tópico sobre [dimensões de alta cardinalidade no Customer Journey Analytics](/help/components/dimensions/high-cardinality.md). |
 | **Março de 2021** | |
@@ -296,7 +298,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | 15 de setembro de 2020 | Adição de um tópico sobre [assimilação de dados](/help/data-ingestion/data-ingestion.md). |
 | 2 de setembro de 2020 | Atualização da seção sobre [permissões do usuário](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR). |
 | Julho de 2020 | Adição de informações sobre a opção [Mapa de identidade para ID de pessoa](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR). |
-| Julho de 2020 | Adição de um novo tópico sobre [arrays de objetos](/help/use-cases/object-arrays.md) ou “hierarquias de dados”. |
+| Julho de 2020 | Adição de um novo tópico sobre [matrizes de objetos](/help/use-cases/object-arrays.md) ou “hierarquias de dados”. |
 | 14 de abril de 2020 | Atualizações na interface de usuário mais recente no tópico [Criar conexões](/help/connections/create-connection.md). |
 | 27 de fevereiro de 2020 | Atualizações no [suporte de recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md) |
 | Dezembro de 2019 | Primeiro rascunho da documentação do Customer Journey Analytics |

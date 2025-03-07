@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 439bc00f2a7e08c8b73a4caa3a3c7269a3a7f895
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 91%
+source-wordcount: '1210'
+ht-degree: 90%
 
 ---
 
@@ -416,11 +416,19 @@ ht-degree: 91%
 
 + Casos de uso {#cja-usecases}
    + [Casos de uso do Customer Journey Analytics](../use-cases/cja-usecases.md)
-   + Dados do Google Analytics {#ga}
-      + [Migrar dados do Google Analytics](../use-cases/ga/overview.md)
-      + [Assimilar dados históricos do Google Analytics](../use-cases/ga/backfill.md)
-      + [Configurar dados de transmissão do Google Analytics ](../use-cases/ga/streaming.md)
-      + [Relatório de dados do Google Analytics](../use-cases/ga/report.md)
+   + Dados de terceiros {#third-party}
+      + [Visão geral](/help/use-cases/third-party/overview.md)
+      + Google Analytics {#ga}
+         + [Migrar dados do Google Analytics](/help/use-cases/third-party/ga/overview.md)
+         + [Assimilar dados históricos do Google Analytics](/help/use-cases/third-party/ga/backfill.md)
+         + [Configurar dados de transmissão do Google Analytics ](/help/use-cases/third-party/ga/streaming.md)
+         + [Relatório de dados do Google Analytics](/help/use-cases/third-party/ga/report.md)
+      + Métrica Quantum {#qm}
+         + [Coletar ID da sessão](/help/use-cases/third-party/quantum-metric/collect-session-id.md)
+         + [Repetições de sessão de tempo](/help/use-cases/third-party/quantum-metric/tie-session-replays.md)
+         + [Usar Heatmaps](/help/use-cases/third-party/quantum-metric/heatmap.md)
+         + [Adicionar eventos de atrito](/help/use-cases/third-party/quantum-metric/friction-events.md)
+         + [Connector de origem](/help/use-cases/third-party/quantum-metric/source-connector.md)
    + Ingestão de dados {#data-ingestion}
       + [Assimilar e usar dados do Marketo Engage](../use-cases/data-ingestion/marketo.md)
       + [Assimilar e use públicos-alvo da Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
