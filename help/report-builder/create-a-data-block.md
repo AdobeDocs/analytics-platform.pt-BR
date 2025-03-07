@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 68%
+ht-degree: 61%
 
 ---
 
@@ -43,13 +43,13 @@ Configure os parâmetros do bloco de dados inicial para o Local do bloco de dado
 
    ![Captura de tela mostrando a opção de intervalo de datas e o botão Próximo ativo.](./assets/choose_date_data_view3.png)
 
-   Após configurar o bloco de dados, é possível selecionar dimensões, métricas e filtros para criar seu bloco de dados. As guias Dimensões, Métricas e Filtros são exibidas acima do painel do Criador de tabela.
+   Após configurar o bloco de dados, é possível selecionar dimensões, métricas e segmentos para criar seu bloco de dados. As guias Dimensões, Métricas e Segmentos são exibidas acima do painel do Criador de tabela.
 
 ## Criar o bloco de dados
 
 Para criar o bloco de dados, selecione componentes do relatório e personalize o layout.
 
-1. Adicionar Dimensões, Métricas e Filtros.
+1. Adicionar dimensões, métricas e segmentos.
 
    Rolar as listas de componentes ou usar o campo de **pesquisa** para localizar os componentes. Arraste e solte componentes no painel Tabela ou clique duas vezes em um nome de componente na lista para adicionar automaticamente o componente ao painel Tabela.
 
@@ -57,9 +57,9 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
 
    - Os componentes de Dimensão são adicionados à seção Linha ou à seção Coluna se você já tiver uma dimensão nas colunas.
    - Os componentes Data são adicionados à seção Coluna.
-   - Os componentes de Filtro são adicionados à seção Filtros.
+   - Os componentes de Segmento são adicionados à seção Segmentos.
 
-   **Data inicial como Dimension**
+   **Data de início como Dimension**
 
    Defina a Data de início como uma dimensão para identificar claramente a data de início do bloco de dados. Isso é útil se você tiver um relatório agendado regularmente com um intervalo de datas em andamento ou se tiver um intervalo de datas não convencional e precisar estar livre da data de início.
 

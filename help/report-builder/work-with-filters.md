@@ -1,21 +1,21 @@
 ---
-title: Como usar filtros no Report Builder no Customer Journey Analytics
-description: Descreve como usar filtros no Report Builder para Customer Journey Analytics
+title: Como usar segmentos no Report Builder no Customer Journey Analytics
+description: Descreve como usar segmentos no Report Builder para Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 60%
+ht-degree: 56%
 
 ---
 
-# Trabalhar com filtros no Report Builder
+# Trabalhar com segmentos no Report Builder
 
-É possível aplicar Filtros ao criar um novo bloco de dados ou ao selecionar a opção **Editar bloco de dados** no painel COMANDOS.
+É possível aplicar Segmentos ao criar um novo bloco de dados ou ao selecionar a opção **Editar bloco de dados** no painel COMANDOS.
 
 ## Aplicar filtros a um bloco de dados
 

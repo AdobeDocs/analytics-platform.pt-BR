@@ -1,12 +1,12 @@
 ---
 title: Como filtrar dimensões no Report Builder
-description: Descreve como usar dimensões de filtro em Report Builder para Customer Journey Analytics
+description: Descreve como usar dimensões de filtro no Report Builder para Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: cbb48623212c2f3d8968dc6daca491761e2f4a9e
+source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 88%
@@ -21,7 +21,7 @@ Para alterar os itens de dimensão retornados para cada dimensão
 
 1. Selecione um bloco de dados e clique em Editar bloco de dados no painel COMANDOS.
 
-1. Clique em Próximo para exibir a guia Dimensão.
+1. Clique em **[!UICONTROL Avançar]** para exibir a guia Dimensões.
 
 1. Clique no ícone **...** ao lado do nome de um componente na tabela.
 
@@ -175,6 +175,6 @@ Sua seleção pode conter células vazias ou células com valores que não corre
 
 Na guia **Dimensões**, clique no ícone de divisa ao lado do nome de uma dimensão para exibir a lista de itens de dimensão.
 
-![A guia Dimension e a lista de dimensões.](./assets/dimensions_chevron.png)
+![A guia Dimensões e a lista de dimensões.](./assets/dimensions_chevron.png)
 
 Você pode arrastar e soltar itens na **Tabela** ou clicar duas vezes em um nome de item para adicioná-lo ao construtor de **Tabelas**.
