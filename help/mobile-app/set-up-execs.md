@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 647f192a-e317-4011-92bc-a8bb8494a3c7
 solution: Customer Journey Analytics
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 74%
+source-wordcount: '711'
+ht-degree: 69%
 
 ---
 
@@ -20,7 +20,7 @@ Em alguns casos, os usuários executivos podem precisar de assistência adiciona
 
 1. Configure novos usuários no [Admin Console da Experience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=pt-BR).
 
-1. Para compartilhar cartões de pontuação, você deve conceder permissões aos usuários do aplicativo para que acessem componentes do cartão de pontuação, como o Analysis Workspace, as visualizações de dados nas quais esses cartões são baseados, bem como filtros, métricas e dimensões.
+1. Para compartilhar cartões de pontuação, você deve conceder permissões aos usuários do aplicativo para que acessem componentes do cartão de pontuação, como o Analysis Workspace, as visualizações de dados nas quais os cartões de pontuação são baseados, bem como segmentos, métricas e dimensões.
 
 ## Pré-requisitos do sistema dos usuários do aplicativo
 
@@ -35,7 +35,7 @@ Para garantir que os usuários executivos tenham acesso aos seus cartões de pon
 
 >[!NOTE]
 >
->Embora o aplicativo móvel seja chamado de painel do Adobe Analytics na loja de aplicativos, ele pode ser usado igualmente com cartões de pontuação móveis Customer Journey Analytics.
+>Embora o aplicativo móvel seja nomeado como painel do Adobe Analytics na loja de aplicativos, ele pode ser usado da mesma forma com os cartões de pontuação móveis do Customer Journey Analytics.
 
 **Para usuários executivos no iOS:**
 
@@ -49,7 +49,7 @@ Clique no link a seguir (ele também está disponível no Customer Journey Analy
 
 `[Android link](https://bit.ly/2LM38Oo)`
 
-Após o download e a instalação, os usuários executivos podem fazer logon no aplicativo usando suas credenciais de Customer Journey Analytics existentes. Oferecemos suporte para Adobe e Enterprise/Federated ID.
+Após o download e a instalação, os usuários executivos podem fazer logon no aplicativo usando suas credenciais atuais do Customer Journey Analytics. Oferecemos suporte para Adobe ID e Enterprise/Federated ID.
 
 ![tela de boas-vindas dos painéis do Adobe Analytics](assets/welcome.png)
 
@@ -74,7 +74,7 @@ Após o download e a instalação, os usuários executivos podem fazer logon no 
 
 Explique ao usuário executivo como os blocos são exibidos nos cartões de pontuação que você compartilha.
 
-![Explique os blocos, incluindo o intervalo de datas, o filtro de segmento e as métricas e dimensões selecionadas](assets/newexplain.png)
+![Explique os blocos, incluindo o intervalo de datas, o segmento e as métricas e dimensões selecionadas](assets/newexplain.png)
 
 ![Exemplo de scorecard](assets/intro_scorecard.png)
 
@@ -112,7 +112,7 @@ Se o usuário executivo fizer logon e vir uma mensagem dizendo que nada foi comp
 
 ![Nada compartilhado](assets/nothing.png)
 
-* O usuário executivo pode ter selecionado a sandbox de Customer Journey Analytics incorreta ou
+* O usuário executivo pode ter selecionado a sandbox incorreta do Customer Journey Analytics ou
 * O cartão de pontuação pode não ter sido compartilhado com o usuário executivo.
 
-Verifique se o usuário executivo pode fazer logon na sandbox de Customer Journey Analytics direita e se o cartão de pontuação foi compartilhado.
+Verifique se o usuário executivo pode fazer logon na sandbox correta do Customer Journey Analytics e se o cartão de pontuação foi compartilhado.

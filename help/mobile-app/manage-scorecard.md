@@ -5,20 +5,20 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '1813'
-ht-degree: 65%
+source-wordcount: '1806'
+ht-degree: 64%
 
 ---
 
 # Gerenciar cartões de pontuação
 
-Este tópico instrui os curadores de dados do Customer Journey Analytics sobre como exibir e gerenciar elementos do cartão de pontuação.
+Este tópico instrui os curadores de dados do Customer Journey Analytics sobre como exibir e gerenciar elementos de scorecard.
 
 ## Exibir e configurar propriedades de blocos {#tiles}
 
-Ao clicar em um bloco no construtor de cartões de pontuação, o painel direito exibe as propriedades e características associadas a esse bloco e seu slide de detalhes. Nesse painel, você pode fornecer um novo **Título** para o bloco e, como alternativa, configurar o bloco aplicando filtros. Segmentos são filtros em Customer Journey Analytics.
+Ao clicar em um bloco no construtor de cartões de pontuação, o painel direito exibe as propriedades e características associadas a esse bloco e seu slide de detalhes. Nesse painel, você pode fornecer um novo **Título** para o bloco e, como alternativa, configurá-lo aplicando segmentos.
 
 ![Bloco de propriedades](assets/properties-tile-new.png)
 
@@ -109,7 +109,7 @@ Para excluir um slide, toque no ícone de lixeira.
 
 ### Personalizar uma história de dados {#customize-data-story}
 
-As histórias de dados permitem personalizar tudo. Assim você pode compartilhar as informações que deseja e excluir tudo que não precisa. Você pode personalizar blocos e slides individuais para adicionar filtros, mostrar detalhamentos, alterar o layout e as visualizações.
+As histórias de dados permitem personalizar tudo. Assim você pode compartilhar as informações que deseja e excluir tudo que não precisa. É possível personalizar blocos e slides individuais para adicionar segmentos, mostrar detalhamentos, alterar o layout e alterar as visualizações.
 
 **Para personalizar blocos**
 

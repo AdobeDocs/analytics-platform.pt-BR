@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
 workflow-type: tm+mt
-source-wordcount: '2703'
+source-wordcount: '2689'
 ht-degree: 67%
 
 ---
@@ -91,13 +91,13 @@ Por exemplo, é possível adicionar dimensões apropriadas (como **[!DNL Marketi
 
 ![Nova janela de cartão de pontuação móvel com uma seta apontando da lista de dimensões para o painel de cartão de pontuação.](assets/layer_dimensions.png)
 
-## Aplicar filtros {#filters}
+## Aplicar segmentos {#segments}
 
-Para aplicar filtros a blocos individuais, arraste um filtro (segmentos são filtros em Customer Journey Analytics) do painel esquerdo e solte-o diretamente em cima do bloco.
+Para aplicar segmentos a blocos individuais, arraste um segmento do painel esquerdo e solte-o diretamente na parte superior do bloco.
 
-Se quiser aplicar o filtro a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão de pontuação. Ou você também pode aplicar filtros selecionando filtros no menu de filtro abaixo dos intervalos de datas. Você [configura e aplica filtros para seus cartões de pontuação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que faria no Customer Journey Analytics Workspace.
+Se você quiser aplicar o segmento a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão de pontuação. Ou você também pode aplicar segmentos selecionando-os no menu de segmentos abaixo dos intervalos de datas. Você [configura e aplica segmentos para seus cartões de pontuação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que faria no Customer Journey Analytics Workspace.
 
-![Seletor da lista suspensa de filtros destacando os filtros de compilação](assets/segment_ui.png)
+![Seletor suspenso de segmentos que destaca os segmentos de compilação](assets/segment_ui.png)
 
 ## Adicionar intervalos de datas {#dates}
 
@@ -186,7 +186,7 @@ Caso queira remover itens de dimensões [!UICONTROL Não especificados] dos seus
 
 ## Exibir e configurar propriedades de blocos {#tiles}
 
-Ao clicar em um bloco no construtor de cartões de pontuação, o painel direito exibe as propriedades e características associadas a esse bloco e seu slide de detalhes. Nesse painel, você pode fornecer um novo **Título** para o bloco e, como alternativa, configurar o bloco aplicando filtros. Segmentos são filtros em Customer Journey Analytics.
+Ao clicar em um bloco no construtor de cartões de pontuação, o painel direito exibe as propriedades e características associadas a esse bloco e seu slide de detalhes. Nesse painel, você pode fornecer um novo **Título** para o bloco e, como alternativa, configurá-lo aplicando segmentos.
 
 ![Bloco de propriedades](assets/properties-tile-new.png)
 
@@ -281,7 +281,7 @@ Para excluir um slide, toque no ícone de lixeira.
 
 ### Personalizar uma história de dados {#customize-data-story}
 
-As histórias de dados permitem personalizar tudo. Assim você pode compartilhar as informações que deseja e excluir tudo que não precisa. Você pode personalizar blocos e slides individuais para adicionar filtros, mostrar detalhamentos, alterar o layout e as visualizações.
+As histórias de dados permitem personalizar tudo. Assim você pode compartilhar as informações que deseja e excluir tudo que não precisa. É possível personalizar blocos e slides individuais para adicionar segmentos, mostrar detalhamentos, alterar o layout e alterar as visualizações.
 
 **Para personalizar blocos**
 
