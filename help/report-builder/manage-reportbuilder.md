@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
 workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 71%
+ht-degree: 57%
 
 ---
 
@@ -32,7 +32,7 @@ O Gerenciador de bloco de dados lista todos os blocos de dados presentes em uma 
 
 ## Classificar a lista de Blocos de dados
 
-Você pode classificar a lista de blocos de dados por uma coluna exibida. Por exemplo, você pode classificar a lista de bloqueios de dados por visualizações de dados, Filtros, Intervalo de datas e outras variáveis.
+Você pode classificar a lista de blocos de dados por uma coluna exibida. Por exemplo, você pode classificar a lista de bloqueios de dados por visualizações de dados, segmentos, intervalo de datas e outras variáveis.
 
 Para classificar a lista de blocos de dados, clique em um cabeçalho de coluna.
 
@@ -46,9 +46,9 @@ Use o campo Procurar para localizar qualquer item na tabela de blocos de dados. 
 
 ## Editar blocos de dados
 
-É possível editar a visualização de dados, o intervalo de datas ou os filtros aplicados a um ou mais blocos de dados.
+É possível editar a visualização de dados, o intervalo de datas ou os segmentos aplicados a um ou mais blocos de dados.
 
-Por exemplo, você pode substituir um filtro existente por um novo filtro em um ou mais blocos de dados.
+Por exemplo, você pode substituir um segmento existente por um novo segmento em um ou mais blocos de dados.
 
 1. Selecione os blocos de dados que deseja atualizar. Você pode marcar a caixa de seleção de nível superior para selecionar todos os blocos de dados ou selecionar blocos de dados individuais.
 
@@ -58,7 +58,7 @@ Por exemplo, você pode substituir um filtro existente por um novo filtro em um 
 
    ![A janela de Edição Rápida](./assets/image58.png)
 
-1. Selecione um link de filtro para atualizar visualizações de dados, intervalos de datas ou filtros.
+1. Selecione um link de segmento para atualizar visualizações de dados, intervalos de datas ou segmentos.
 
    ![O campo Adicionar segmento na janela de edição rápida](./assets/image59.png)
 
@@ -83,7 +83,7 @@ Clique no ícone de lixeira para excluir um bloco de dados selecionado.
 
 ## Blocos de dados do grupo
 
-Você pode agrupar blocos de dados usando o menu suspenso **Agrupar por** ou você pode clicar em um título de coluna. Para classificar blocos de dados por coluna, clique no título da coluna. Para agrupar blocos de dados por grupos, selecione um nome de grupo no menu suspenso **Agrupar por**. Por exemplo, a captura de tela abaixo mostra blocos de dados agrupados por Folha. Ela mostra blocos de dados agrupados por Folha1 e Folha2.  Isso é útil, por exemplo, no caso de uso de substituição de filtro. Se tiver vários filtros aplicados a cada bloco de dados, é útil criar um grupo contendo todos os blocos de dados que você deseja substituir. Em seguida, é possível selecionar e editar facilmente todos ao mesmo tempo.
+Você pode agrupar blocos de dados usando o menu suspenso **Agrupar por** ou você pode clicar em um título de coluna. Para classificar blocos de dados por coluna, clique no título da coluna. Para agrupar blocos de dados por grupos, selecione um nome de grupo no menu suspenso **Agrupar por**. Por exemplo, a captura de tela abaixo mostra blocos de dados agrupados por Folha. Ela mostra blocos de dados agrupados por Folha1 e Folha2.  Isso é útil, por exemplo, no caso de uso de substituição de segmento. Se você tiver vários segmentos aplicados a cada bloco de dados, é útil criar um grupo contendo todos os blocos de dados que você deseja substituir. Em seguida, é possível selecionar e editar facilmente todos ao mesmo tempo.
 
 ![Gerenciador de bloco de dados mostrando a lista Agrupar por Planilha.](./assets/group-data-blocks.png)
 

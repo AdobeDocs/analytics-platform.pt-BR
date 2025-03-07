@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: 19771d5cd2d2a38919c42e7f76bd700016020912
+source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ O Report Builder para o Customer Journey Analytics permite criar, editar e atual
 
 Com o Report Builder para o Customer Journey Analytics, você pode:
 
-- Referenciar células de planilhas existentes para obter a ordem perfeita de linhas, intervalo de datas ou filtro
+- Referenciar células de planilhas existentes para obter a ordem perfeita de linhas, intervalo de datas ou segmento
 - Criar datas personalizadas usando calendário, referências de células ou matemática de data
 - Criar tabelas e visualizações com as ferramentas de formatação conhecidas do Excel
 

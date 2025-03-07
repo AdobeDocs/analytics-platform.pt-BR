@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 95%
+ht-degree: 88%
 
 ---
 
@@ -47,7 +47,7 @@ Use o painel COMANDOS para acessar comandos compatíveis com as células selecio
 
 Ao selecionar um ou mais blocos de dados em uma planilha, o Report Builder exibe o painel EDIÇÃO RÁPIDA. Você pode usar o painel EDIÇÃO RÁPIDA para alterar parâmetros em um único bloco de dados ou alterar parâmetros em vários blocos de dados ao mesmo tempo.
 
-![O painel Edição Rápida no Report Builder](./assets/hub2.png)
+![Painel Edição Rápida no Report Builder](./assets/hub2.png)
 
 As alterações feitas usando as seções Edição rápida se aplicam a todos os blocos de dados selecionados.
 
@@ -59,12 +59,12 @@ Quando você altera a visualização de dados, todos os blocos de dados na sele�
 
 Para alterar a visualização de dados, selecione uma nova visualização de dados no menu suspenso.
 
-![O Hub Report Builder mostrando o menu suspenso da exibição de dados.](./assets/image16.png)
+![O Hub do Report Builder mostrando o menu suspenso da exibição de dados.](./assets/image16.png)
 
 ### Intervalo de datas
 
 **Intervalo de datas** mostra o intervalo de datas dos blocos de dados selecionados. Se vários blocos de dados forem selecionados com vários intervalos de datas, o link de **Intervalo de datas** exibe *Vários*.
 
-### Filtros
+### Segmentos
 
-O link dos **Filtros** exibe uma lista de resumo dos filtros usados pelos blocos de dados selecionados. Se vários blocos de dados forem selecionados com vários filtros aplicados, o link de **Filtros** exibe *Vários*.
+O link **Segmentos** exibe uma lista de resumo dos segmentos usados pelos blocos de dados selecionados. Se vários blocos de dados forem selecionados com vários segmentos aplicados, o link **Segmentos** exibirá *Vários*.
