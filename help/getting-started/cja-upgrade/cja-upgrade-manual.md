@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
-source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '184'
 ht-degree: 8%
 
 ---
@@ -38,4 +38,7 @@ ht-degree: 8%
 
 Você pode instalar manualmente o Platform Web SDK adicionando o código base diretamente a cada página em sua implementação.
 
-Para obter mais informações, consulte [Opção 2: instalar a versão independente pré-criada](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) em [Instalar Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) no Guia do Web SDK.
+1. Siga as etapas da seção [Opção 2: Instalação da versão independente pré-criada](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) em [Instalar o Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) no Guia do Web SDK.
+
+{{upgrade-final-step}}
+

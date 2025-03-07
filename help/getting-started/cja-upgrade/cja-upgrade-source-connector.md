@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '745'
 ht-degree: 24%
 
 ---
@@ -108,4 +108,4 @@ Para criar um conector de origem do Adobe Analytics a ser usado para dados hist�
 
    Se você estiver usando o conector de origem do Analytics para trazer dados históricos para a implementação do Customer Journey Analytics Web SDK, será necessário adicionar esse conjunto de dados criado automaticamente à conexão criada para a implementação do Web SDK.
 
-1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

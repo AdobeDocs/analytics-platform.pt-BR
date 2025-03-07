@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 24%
+source-wordcount: '289'
+ht-degree: 25%
 
 ---
 
@@ -53,4 +53,4 @@ Para usar canais de marketing no Customer Journey Analytics ao usar o Experience
 
    O novo campo derivado é adicionado ao container Campos derivados > como parte dos Campos de esquema no painel esquerdo da visualização de dados.
 
-1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}

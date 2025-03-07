@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
-source-git-commit: 773c03dfec99abcabdc667c549cce0dc1b1aabc4
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 45%
+source-wordcount: '673'
+ht-degree: 39%
 
 ---
 
@@ -31,6 +31,10 @@ As informações nesta página abordam a Etapa 4 do processo de atualização, c
 {style="table-layout:auto"}
 
 +++
+
+>[!AVAILABILITY]
+>
+>As informações nesta página estão sendo substituídas pelas seguintes informações de atualização mais abrangentes: <ul><li>**Etapas de atualização recomendadas**<p>Para obter informações detalhadas, consulte [Caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guia de Atualização do Customer Journey Analytics**<p>Um novo guia de atualização está disponível e gera dinamicamente etapas de atualização personalizadas para sua organização e suas circunstâncias exclusivas.</p><p>Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.</p></li></ul>
 
 Escolha uma das seguintes opções para reter dados históricos ao migrar do Adobe Analytics para o Customer Journey Analytics:
 

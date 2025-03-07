@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 28%
+source-wordcount: '487'
+ht-degree: 26%
 
 ---
 
@@ -39,17 +39,23 @@ Revise as seções a seguir ao começar a projetar o esquema XDM.
 
 A arquitetura subjacente do Customer Journey Analytics oferece muito mais flexibilidade do que o Adobe Analytics. A criação de um novo esquema XDM é uma maneira essencial de desbloquear essa flexibilidade. Ao atualizar para o Customer Journey Analytics, evite transportar restrições desnecessárias do Adobe Analytics para o esquema.
 
+>[!NOTE]
+>
+>As informações a seguir ainda não estão completas. Estará completo num futuro próximo.
+
 | Arquitetura de dados do Adobe Analytics | Arquitetura de esquema XDM |
 |---------|----------|
 | Métricas individuais são adicionadas à arquitetura de dados do Analytics.<br/>Por exemplo, no Adobe Analytics, você tem uma eVar diferente para cada evento. | Crie métricas individuais na visualização de dados em vez de no esquema XDM. Isso proporciona mais flexibilidade no se você precisar fazer alterações posteriormente.<br/>Por exemplo, no Customer Journey Analytics, você tem um único evento no esquema e usa criar eventos na visualização de dados. |
-| Props e eVars são necessários para criar variáveis personalizadas. | B2 |
-| A3 | B3 |
+| Props e eVars são necessários para criar variáveis personalizadas. |  |
 
 ## Identifique a equipe de dados e outras partes interessadas em toda a organização
 
+>[!NOTE]
+>
+>Essas informações ainda não estão disponíveis. Ele estará disponível em breve.
 
 ## Considere outros aplicativos da Adobe Experience Platform usados em sua organização
 
-
-
-1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
+>[!NOTE]
+>
+>Essas informações ainda não estão disponíveis. Ele estará disponível em breve.

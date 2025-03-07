@@ -1,8 +1,8 @@
 ---
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '3184'
-ht-degree: 23%
+source-wordcount: '3333'
+ht-degree: 22%
 
 ---
 # Trechos
@@ -206,12 +206,14 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 
 >[!NOTE]
 > 
->Use as informações desta página ao responder perguntas da [lista de verificação de atualização do Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+>Use as informações nesta página ao responder perguntas no Guia de atualização do Customer Journey Analytics. <br><br>Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.
 
 ## Etapa subsequente da observação da lista de verificação de atualização {#upgrade-note-step}
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou seguir as etapas de atualização que foram geradas dinamicamente para sua organização com o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
->
->Após concluir as etapas desta página, continue seguindo as etapas de atualização recomendadas ou as etapas de atualização geradas dinamicamente.
+>Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as etapas de atualização recomendadas (recomendadas para a maioria das organizações) ou seguir as etapas geradas dinamicamente para sua organização com o Guia de atualização do Customer Journey Analytics. <ul><li>**Etapas de atualização recomendadas** (recomendado para a maioria das organizações)<p>Um conjunto de etapas que levam a uma implementação ideal do Customer Journey Analytics.</p><p>Para obter informações detalhadas, consulte [Atualizar do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guia de Atualização do Customer Journey Analytics** (Etapas personalizadas adaptadas às necessidades específicas da sua organização)<p>Um novo guia de atualização está disponível e gera dinamicamente etapas de atualização personalizadas para sua organização e suas circunstâncias exclusivas.</p><p>Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.</p></li></ul>
+
+## Etapa final da lista de verificação de atualização {#upgrade-final-step}
+
+1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as etapas de atualização geradas dinamicamente no Guia de Atualização do Customer Journey Analytics. Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.

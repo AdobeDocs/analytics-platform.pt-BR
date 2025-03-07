@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: 71b9da74-3597-4536-9e47-f18097dd917b
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 66%
+source-wordcount: '149'
+ht-degree: 60%
 
 ---
 
@@ -32,3 +32,8 @@ Antes de desabilitar o Adobe Analytics, reveja as informações em [Avalie quand
 * **Marcas:** Desabilitar a extensão do Adobe Analytics
 
 * **AppMeasurement:** substitua a biblioteca AppMeasurement.js s=newobject
+
+>[!NOTE]
+>
+>Essas informações ainda não estão disponíveis. Ele estará disponível em breve.
+

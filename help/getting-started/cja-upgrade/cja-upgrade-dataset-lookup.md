@@ -7,9 +7,9 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '800'
 ht-degree: 10%
 
 ---
@@ -129,5 +129,7 @@ Para adicionar o conjunto de dados de pesquisa à sua conexão no Customer Journ
 
 1. Usando o campo **[!UICONTROL Chave]** e o campo **[!UICONTROL Chave correspondente]**, crie uma correlação entre o campo no conjunto de dados de pesquisa e o campo no conjunto de dados de evento ou resumo.
 
-1. Depois que todos os conjuntos de dados de pesquisa forem adicionados à sua conexão no Customer Journey Analytics, continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
+1. Repita esse processo até que todos os conjuntos de dados de pesquisa sejam adicionados à sua conexão no Customer Journey Analytics.
+
+{{upgrade-final-step}}
 

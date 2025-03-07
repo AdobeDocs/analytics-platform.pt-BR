@@ -1,16 +1,16 @@
 ---
-title: Caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics
-description: Saiba mais sobre o caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics
+title: Atualização do Adobe Analytics para o Customer Journey Analytics
+description: Saiba mais sobre as etapas recomendadas ao atualizar do Adobe Analytics para o Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 967d8a957e722a080cd712ea7cf77f26660289da
+source-git-commit: 765b6863cdafa06b54b76fbf0983afb4c14c21d4
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 11%
+source-wordcount: '1629'
+ht-degree: 10%
 
 ---
 
@@ -26,7 +26,7 @@ Depois de ter dados históricos suficientes usando o Experience Platform Web SDK
 
 >[!NOTE]
 >
->Se as etapas de atualização descritas nesta seção não forem práticas para sua organização, use o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/) para gerar dinamicamente etapas de atualização adaptadas às circunstâncias exclusivas de sua organização.
+>Se as etapas de atualização descritas nesta seção não forem práticas para sua organização, use o Guia de atualização do Customer Journey Analytics para gerar dinamicamente etapas de atualização personalizadas para as circunstâncias exclusivas de sua organização. (Para acessar o guia no Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.)
 
 ### Processo de atualização de alto nível recomendado {#high-level-upgade-process}
 
@@ -189,9 +189,11 @@ Dependendo de vários fatores, como restrições de linha do tempo e recursos, a
 
 Para gerar dinamicamente etapas de atualização para as circunstâncias exclusivas de sua organização:
 
-1. Conclua o [questionário de atualização do Adobe Analytics para o Customer Journey Analytics](https://gigazelle.github.io/cja-ttv/).
+1. Complete o Guia de atualização do Customer Journey Analytics.
 
-   Depois de preencher este questionário, você receberá instruções passo a passo, descrevendo as etapas de atualização ideais exclusivas dos requisitos de sua organização. Estas são as etapas de atualização que melhor se alinham ao seu ambiente existente do Adobe Analytics e às suas metas do Customer Journey Analytics.
+   Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.
+
+   Após a conclusão deste guia de atualização, são fornecidas instruções passo a passo, descrevendo as etapas de atualização ideais exclusivas para os requisitos de sua organização. Estas são as etapas de atualização que melhor se alinham ao seu ambiente existente do Adobe Analytics e às suas metas do Customer Journey Analytics.
 
 1. Siga as instruções passo a passo geradas para atualizar para o Customer Journey Analytics.
 

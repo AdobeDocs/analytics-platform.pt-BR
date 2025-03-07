@@ -7,10 +7,10 @@ feature: Basics
 hide: true
 hidefromtoc: true
 exl-id: f76d098d-d223-40e4-be81-d28e7581396b
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 4ba493ae40d417499a4ab584898ff533f17be755
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 48%
+source-wordcount: '221'
+ht-degree: 51%
 
 ---
 
@@ -51,4 +51,4 @@ Para configurar seu armazenamento de dados:
 
 1. Selecione **[!UICONTROL Salvar]**.
 
-1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as [etapas de atualização geradas dinamicamente](https://gigazelle.github.io/cja-ttv/).
+{{upgrade-final-step}}
