@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
+source-git-commit: 2d6c5d5b546ef8ba952d4ba4397d897ed4566283
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 1%
+source-wordcount: '422'
+ht-degree: 0%
 
 ---
 
@@ -51,23 +52,4 @@ Edite sua visualização de dados existente para adicionar a ID da sessão como 
 1. No painel direito, defina a configuração [persistence](/help/data-views/component-settings/persistence.md) como &#39;Session&#39;.
 1. Clique em **[!UICONTROL Salvar]**.
 
-## Etapa 4: configurar o Workspace para acomodar a dimensão de ID de sessão
 
-Crie uma tabela de forma livre no Workspace e a configure para que os valores de ID da sessão sejam vinculados diretamente à Métrica quântica.
-
-1. Faça logon em [experience.adobe.com](https://experience.adobe.com).
-1. Navegue até Customer Journey Analytics e selecione **[!UICONTROL Workspace]** no menu superior.
-1. Selecione um projeto existente ou crie um projeto.
-1. Crie uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
-1. Arraste a dimensão da ID de sessão para a tela do Workspace.
-1. Clique com o botão direito do mouse no cabeçalho da coluna de dimensão e selecione **[!UICONTROL Criar hiperlinks para todos os itens de dimensão]**.
-1. Selecione **[!UICONTROL Criar uma URL personalizada]**.
-1. Cole a seguinte estrutura de URL:
-
-   ```
-   https://adobe.quantummetric.com/#/replay/cookie:$value
-   ```
-
-1. Clique em **[!UICONTROL Criar]**.
-
-Cada ID de sessão agora é um link clicável. Esses links o direcionam para a Métrica quântica em uma nova guia, permitindo analisar essa sessão específica com mais detalhes. Consulte [Criar hiperlinks em uma tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) para obter mais informações sobre como adicionar hiperlinks a itens de dimensão do Analysis Workspace.
