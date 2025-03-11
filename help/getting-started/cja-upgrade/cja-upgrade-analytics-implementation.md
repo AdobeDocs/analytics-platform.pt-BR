@@ -4,13 +4,11 @@ description: Saiba mais sobre o caminho recomendado ao atualizar do Adobe Analyt
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: b9cff809-6df7-4d75-9bc1-0cc12074d355
-source-git-commit: ff951b6ca03fc5be4d24651b8b8e4bdd06216274
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 35%
+ht-degree: 31%
 
 ---
 
@@ -93,7 +91,7 @@ ht-degree: 35%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-determine-implementation"
 >title="Determinar o tipo de implementação existente"
->abstract="Trabalhe internamente em sua organização para determinar que tipo de implementação você usa atualmente para enviar dados para o Adobe Analytics. É provável que você faça uma parceria com um indivíduo ou equipe que conhece essas informações quando estiver tudo pronto para migrar para o Customer Journey Analytics.<br><br>Depois de determinar o tipo de implementação que sua organização usa, modifique sua resposta no questionário."
+>abstract="Trabalhe internamente em sua organização para determinar que tipo de implementação você usa atualmente para enviar dados para o Adobe Analytics. À medida que você atualiza para o Customer Journey Analytics, faça uma parceria com o indivíduo ou a equipe que conhece essas informações.<br><br>Depois de determinar o tipo de implementação que sua organização usa, modifique sua resposta no Guia de Atualização do Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

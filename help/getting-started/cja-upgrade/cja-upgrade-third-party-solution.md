@@ -4,13 +4,11 @@ description: Saiba como atualizar de uma solução de análise de terceiros para
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-hide: true
-hidefromtoc: true
 exl-id: bc79ba1a-1153-4fe8-b265-9703a323c977
-source-git-commit: 1ae4be09a07bd4991342daa43cc23fb966b68aaf
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 32%
+source-wordcount: '238'
+ht-degree: 22%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 32%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-third-party"
 >title="Um produto diferente do Adobe Analytics"
->abstract="Uma implementação que coleta dados para um produto diferente do Adobe Analytics, como o Google Analytics. Selecionar essa opção desabilita várias opções no questionário que não se aplicam ao atualizar para o Customer Journey Analytics de um produto diferente do Adobe Analytics."
+>abstract="Uma implementação que coleta dados para um produto diferente do Adobe Analytics, como o Google Analytics. Selecionar essa opção desativa várias opções no guia de atualização que não se aplicam ao atualizar para o Customer Journey Analytics de um produto que não seja da Adobe Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
