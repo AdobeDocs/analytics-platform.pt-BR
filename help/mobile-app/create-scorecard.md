@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
+source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
 workflow-type: tm+mt
-source-wordcount: '2689'
-ht-degree: 67%
+source-wordcount: '2698'
+ht-degree: 66%
 
 ---
 
@@ -48,7 +48,7 @@ Como curador deste cartão de pontuação, você pode usar o construtor de cart�
 
 Para criar o cartão de pontuação, é necessário fazer o seguinte:
 
-1. Acesse o modelo de [!UICONTROL Scorecard para dispositivos móveis em branco].
+1. Acesse o modelo de [!UICONTROL Scorecard para dispositivos móveis em branco] no Workspace.
 2. Configure o cartão de pontuação com os dados e salve-o.
 
 ## Acesse o modelo de [!UICONTROL Scorecard para dispositivos móveis em branco] {#template}
@@ -58,6 +58,7 @@ Você pode acessar o modelo [!UICONTROL Cartão de pontuação para dispositivos
 ### Criar um novo projeto {#create}
 
 1. Abra o Customer Journey Analytics e clique na guia **[!UICONTROL Workspace]**.
+1. No painel à esquerda, clique em **[!UICONTROL Projetos]**.
 1. Clique em **[!UICONTROL Criar projeto]** e selecione o modelo de projeto **[!UICONTROL Cartão de pontuação para dispositivos móveis em branco]**.
 1. Clique em **[!UICONTROL Criar]**.
 
@@ -72,7 +73,7 @@ Você pode acessar o modelo [!UICONTROL Cartão de pontuação para dispositivos
 
 Para implementar o modelo de scorecard:
 
-1. Em **[!UICONTROL Propriedades]** (no painel direito), especifique uma **[!UICONTROL Visualização de dados do projeto]** da qual você quer usar dados.
+1. Em **[!UICONTROL Propriedades do scorecard]** (no painel direito), especifique uma **[!UICONTROL Exibição de dados do projeto]** cujos dados você deseja usar.
 
    ![Nova janela de cartão de pontuação móvel que destaca a seleção da visualização de dados](assets/properties_save.png)
 
