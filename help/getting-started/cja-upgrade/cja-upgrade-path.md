@@ -4,11 +4,13 @@ description: Saiba mais sobre as vantagens e desvantagens dos possíveis caminho
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
+hide: true
+hidefromtoc: true
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
-source-git-commit: 97d48d88af969705f2664781e7a972f20c1b4239
+source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
-source-wordcount: '2895'
-ht-degree: 53%
+source-wordcount: '2981'
+ht-degree: 51%
 
 ---
 
@@ -32,13 +34,9 @@ As informações nesta página abordam a Etapa 2 do processo de atualização, c
 
 +++
 
-<!--
-
 >[!AVAILABILITY]
 >
->The information on this page is being replaced with the following more comprehensive upgrade information: <ul><li>**Recommended upgrade steps**<p>For detailed information, see [Recommended path when upgrading from Adobe Analytics to Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Customer Journey Analytics Upgrade Guide**<p>A new upgrade guide is available that dynamically generates upgrade steps that are tailored for your organization and your unique circumstances.</p><p>To access the guide from Customer Journey Analytics, select the **[!UICONTROL Workspace]** tab, then select **[!UICONTROL Upgrade to Customer Journey Analytics]** in the left panel. Follow the on-screen instructions.</p></li></ul>
-
--->
+>As informações nesta página estão sendo substituídas pelas seguintes informações de atualização mais abrangentes: <ul><li>**Etapas de atualização recomendadas**<p>Para obter informações detalhadas, consulte [Caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guia de Atualização do Customer Journey Analytics**<p>Um novo guia de atualização está disponível e gera dinamicamente etapas de atualização personalizadas para sua organização e suas circunstâncias exclusivas.</p><p>Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.</p></li></ul>
 
 
 Depois de decidir atualizar para o Customer Journey Analytics, é necessário determinar o caminho de atualização ideal para sua organização.
