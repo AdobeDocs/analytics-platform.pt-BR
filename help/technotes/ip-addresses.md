@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
-source-git-commit: 39e4c17336d3648cbf20cace535668d14510186f
+source-git-commit: 0e4ea634a604a65484a57f5af8021badb86a865a
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 31%
+source-wordcount: '188'
+ht-degree: 34%
 
 ---
 
@@ -20,9 +20,9 @@ Incluir na lista de permissões Esta página inclui endereços ip que você prec
 
 >[!IMPORTANT]
 >
->Embora o Adobe faça o possível para manter esse documento atualizado, não é possível garantir que a lista de intervalos IP permaneça a mesma. As possíveis alterações incluem o crescimento e a expansão dos negócios, um registro da Internet exige alterações no espaço de endereço IP do Adobe ou um provedor de serviços de Internet deixa de funcionar.
+>Embora a Adobe faça o possível para manter esse documento atualizado, não é possível garantir que a lista de intervalos IP permanecerá a mesma. As possíveis alterações incluem o crescimento e a expansão dos negócios, um registro da Internet exige alterações no espaço de endereço IP da Adobe ou um provedor de serviços de Internet deixa de funcionar.
 
-## VA7: clientes dos EUA e das Américas
+## Clientes dos EUA e das Américas
 
 | Bloco IP (notação CIDR) |
 | --- |
@@ -47,8 +47,9 @@ Incluir na lista de permissões Esta página inclui endereços ip que você prec
 | `52.254.106.208/28` |
 | `20.186.185.227` |
 | `52.254.107.0/28` |
+| `66.117.18.0/24` |
 
-## NLD2: Europa
+## Europa
 
 | Bloco IP (notação CIDR) |
 | --- |
@@ -76,7 +77,7 @@ Incluir na lista de permissões Esta página inclui endereços ip que você prec
 | `40.74.7.208/28` |
 | `40.74.6.112/28` |
 
-## AUS5: Austrália
+## Austrália
 
 | Bloco IP (notação CIDR) |
 | --- |
@@ -108,7 +109,7 @@ Incluir na lista de permissões Esta página inclui endereços ip que você prec
 | `20.193.56.128/28` |
 | `20.227.32.175` |
 
-## CAN2: Canadá
+## Canadá
 
 | Bloco IP (notação CIDR) |
 | --- |
