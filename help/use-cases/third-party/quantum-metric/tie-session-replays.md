@@ -6,10 +6,11 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
+source-git-commit: d722e88d163dd99aa7b98c6fa6cd75028d7d9e6f
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 0%
+source-wordcount: '341'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +22,29 @@ Ao vincular repetições de sessão de métrica quântica aos dados do CJA, os c
 
 Esse caso de uso exige que você colete a ID de sessão da Métrica Quantum ao lado do restante da implementação. Consulte [Coletar IDs de sessão de Métrica Quântica no Customer Journey Analytics](collect-session-id.md) para saber como modificar sua implementação.
 
-## Exibição de sessões do Customer Journey Analytics
+## Etapa 1: configurar o Workspace para acomodar a dimensão de ID de sessão
+
+Crie uma tabela de forma livre no Workspace e a configure para que os valores de ID da sessão sejam vinculados diretamente à Métrica quântica.
+
+1. Faça logon em [experience.adobe.com](https://experience.adobe.com).
+1. Navegue até Customer Journey Analytics e selecione **[!UICONTROL Workspace]** no menu superior.
+1. Selecione um projeto existente ou crie um projeto.
+1. Crie uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
+1. Arraste a dimensão da ID de sessão para a tela do Workspace.
+1. Clique com o botão direito do mouse no cabeçalho da coluna de dimensão e selecione **[!UICONTROL Criar hiperlinks para todos os itens de dimensão]**.
+1. Selecione **[!UICONTROL Criar uma URL personalizada]**.
+1. Cole a seguinte estrutura de URL:
+
+   ```
+   https://adobe.quantummetric.com/#/replay/cookie:$value
+   ```
+
+1. Clique em **[!UICONTROL Criar]**.
+
+Cada ID de sessão agora é um link clicável. Esses links o direcionam para a Métrica quântica em uma nova guia, permitindo analisar essa sessão específica com mais detalhes. Consulte [Criar hiperlinks em uma tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) para obter mais informações sobre como adicionar hiperlinks a itens de dimensão do Analysis Workspace.
+
+## Etapa 2 Exibição de sessões do Customer Journey Analytics
 
 Depois de criar o relatório do Workspace com links clicáveis, você pode usar Filtros no Customer Journey Analytics para identificar sessões interessantes que podem ser analisadas melhor na Métrica quântica.
+A tabela retornará todas as sessões nesse segmento, e você pode clicar em qualquer uma delas para explorar mais em QM.  Saiba mais sobre a repetição de sessão de Métrica quântica em https://www.quantummetric.com/platform/session-replay
+
