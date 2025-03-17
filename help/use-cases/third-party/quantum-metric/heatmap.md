@@ -7,16 +7,16 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: a0f82948895f3eac86cf00df1dec8abc2f723fc2
+source-git-commit: 48c2b2eaa191948eda303f9ee236038484e4f2eb
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
 
 # Usar mapas de calor de métrica quântica com o Customer Journey Analytics
 
-Vincular o mapeamento de calor da métrica quântica aos dados do CJA permite entender melhor o envolvimento no nível da página e otimizar as páginas com base no comportamento do consumidor. O Workspace pode ser usado para entender os fluxos de usuários consumidores e ver quais caminhos os consumidores seguem de uma página para outra. Em seguida, clique em URLs de página com hiperlink para visualizar o mapa de calor de como os usuários se envolvem com o conteúdo.
+Vincular o mapeamento de calor da métrica quântica aos dados do CJA permite entender melhor o envolvimento no nível da página e otimizar as páginas com base no comportamento do consumidor. O Workspace pode ser usado para entender os fluxos de usuários consumidores e ver quais caminhos os consumidores seguem de uma página para outra. Em seguida, clique em URLs de página com hiperlink para visualizar o mapa de calor de como os usuários se envolvem com o conteúdo.  Ao vincular o mapeamento de calor de métrica quântica ao CJA, agora é possível associar interações no nível da página aos resultados de negócios, elevando sua análise ao próximo nível.
 
 A tabela retornará todas as sessões nesse segmento, e você pode clicar em qualquer uma delas para explorar mais em QM.  Saiba mais sobre a repetição de sessão de Métrica quântica em https://www.quantummetric.com/platform/session-replay
 
@@ -48,6 +48,6 @@ Você deve ter direito ao pacote **UX Ops** da Métrica Quantum para acessar os 
 
 ## Visualização de mapas de calor clicando nos links dentro do Customer Journey Analytics
 
-Depois de encontrar uma página para a qual deseja explorar o mapeamento de calor, você pode aplicá-la ao painel no qual o URL está. A tabela retornará um URL que permitirá explorar os mapas de calor da página em questão, a profundidade de rolagem e as zonas principais para interação.  Saiba mais sobre os Heatmaps de métrica quântica em https://www.quantummetric.com/platform/interaction-heatmaps
+Depois de encontrar uma página para a qual deseja explorar o mapeamento de calor, você pode aplicá-la ao painel no qual o URL está. A tabela retornará um URL que permitirá explorar os mapas de calor da página em questão, a profundidade de rolagem e as zonas principais para interação.  Saiba mais sobre os Heatmaps da métrica Quantum em [https://www.quantummetric.com/platform/interaction-heatmaps](https://www.quantummetric.com/platform/interaction-heatmaps)
 
 
