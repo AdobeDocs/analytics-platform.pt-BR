@@ -7,16 +7,16 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: d722e88d163dd99aa7b98c6fa6cd75028d7d9e6f
+source-git-commit: 94dad68426a08ffa34ded7905567fbea307b1de4
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
 
 # Vincular repetições de sessão de métrica quântica aos dados no Customer Journey Analytics
 
-Ao vincular repetições de sessão de métrica quântica aos dados do CJA, os clientes podem entender melhor &quot;o porquê&quot; por trás de &quot;o quê&quot;.  O Workspace pode ser usado para descobrir sessões com atrito e, em seguida, clicar em IDs de sessão com hiperlink para explorar a repetição da sessão na Métrica quântica.  Esses dados permitem visualizar o comportamento em uma sessão e compreender melhor o que gera o atrito do consumidor.
+Ao vincular repetições de sessão de métrica quântica aos dados do CJA, os clientes podem entender melhor &quot;o porquê&quot; por trás de &quot;o quê&quot;.  O Workspace pode ser usado para descobrir sessões com atrito e, em seguida, clicar em IDs de sessão com hiperlink para explorar a repetição da sessão na Métrica quântica.  Esses dados permitem visualizar o comportamento em uma sessão e compreender melhor o que gera o atrito do consumidor.  Por meio de repetições de sessão vinculadas ao CJA, você pode capturar o contexto crítico em torno do comportamento do cliente em sua experiência.
 
 ## Pré-requisitos
 
@@ -46,5 +46,5 @@ Cada ID de sessão agora é um link clicável. Esses links o direcionam para a M
 ## Etapa 2 Exibição de sessões do Customer Journey Analytics
 
 Depois de criar o relatório do Workspace com links clicáveis, você pode usar Filtros no Customer Journey Analytics para identificar sessões interessantes que podem ser analisadas melhor na Métrica quântica.
-A tabela retornará todas as sessões nesse segmento, e você pode clicar em qualquer uma delas para explorar mais em QM.  Saiba mais sobre a repetição de sessão de Métrica quântica em https://www.quantummetric.com/platform/session-replay
+A tabela retornará todas as sessões nesse segmento, e você pode clicar em qualquer uma delas para explorar mais em QM.  Saiba mais sobre a repetição de sessão da Métrica Quantum em [https://www.quantummetric.com/platform/session-replay](https://www.quantummetric.com/platform/session-replay)
 
