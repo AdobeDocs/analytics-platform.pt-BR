@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,9 @@ Os relatórios do Content Analytics são feitos no Analysis Workspace. Um [model
 Para começar a criar relatórios sobre o Content Analytics do zero:
 
 1. [Criar um novo](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [abrir um projeto](/help/analysis-workspace/build-workspace-project/open-projects.md) existente no Workspace.
+1. Certifique-se de [selecionar uma visualização de dados](/help/analysis-workspace/c-panels/panels.md#data-view) para os relatórios do Content Analytics. Os relatórios do Content Analytics só estão disponíveis para visualizações de dados [configuradas](/help/content-analytics/config/configuration.md) para o Content Analytics.
 1. Arraste uma visualização de ![Tabela](/help/assets/icons/Table.svg) [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) na tela.
-1. Use [componentes específicos do Content Analytics](components.md) e outros [componentes](/help/components/overview.md) genéricos (como filtros, intervalos de datas, anotações) para criar seus insights de análise de conteúdo.
+1. Use [componentes específicos do Content Analytics](components.md) e outros [componentes](/help/components/overview.md) genéricos (como filtros, intervalos de datas, anotações) para criar seus insights de análise de conteúdo. Como alternativa, use o modelo do Content Analytics.
 
 ## Miniaturas
 
@@ -49,7 +50,7 @@ Para abrir a visualização com os seguintes detalhes:
   |---|---|
   | ![Visualização da experiência do Content Analytics](../assets/aca-experience-preview.png) | ![Visualização do ativo de análise de conteúdo](../assets/aca-asset-preview.png) |
   | **[!UICONTROL Nome da experiência]** | **[!UICONTROL Nome do ativo]** |
-  | **[!UICONTROL Impressões (todas as vezes)]**: Número de impressões da experiência. | **[!UICONTROL Impressões (todos os mes)]**: número de impressões do ativo. |
+  | **[!UICONTROL Impressões (todas as vezes)]**: Número de impressões da experiência. | **[!UICONTROL Impressões (todas as vezes)]**: número de impressões do ativo. |
   | **[!UICONTROL Assets]**: Número de ativos que esta experiência contém. Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) para inspecionar os ativos. | **[!UICONTROL Experiências]**: número de experiências em que este ativo é exibido. [Detalhamento](/help/assets/icons/Breakdown.svg) Detalhamento para inspecionar os ativos. |
   | **[!UICONTROL Primeira impressão]**: data da primeira impressão da experiência. | **[!UICONTROL Primeira impressão]**: data da primeira impressão do ativo. |
   | **[!UICONTROL Impressão mais recente]**: data da impressão mais recente da experiência. | **[!UICONTROL Impressão mais recente]**: data da impressão mais recente do ativo. |

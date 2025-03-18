@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 8c257279353112df583b46d87ea17749a75867e2
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ O Content Analytics ajuda os profissionais de marketing a entender como o conte�
 
 O Content Analytics usa um **serviço de recursos** baseado em IA e aprendizado de máquina para dividir o conteúdo em componentes e atributos. Ao criar um perfil de metadados estruturado em todo o seu conteúdo, você pode analisar qual conteúdo e quais atributos desse conteúdo direcionam os resultados dos negócios.
 
-Além da criação desse perfil de metadados estruturados, o Content Analytics fornece um **serviço de identidade** que identifica ativos e experiências usando um único identificador. O serviço de identidade pode reconhecer quando exatamente o mesmo ativo aparece em mais de um local. Quando isso acontecer, as duas instâncias de ativos serão tratadas da mesma forma, permitindo uma visão mais holística do uso e do consumo de conteúdo.
+Além da criação desse perfil de metadados estruturados, o Content Analytics fornece um **serviço de identidade** que identifica ativos e experiências usando um único identificador. O serviço de identidade pode reconhecer quando um mesmo ativo aparece em mais de um lugar. Quando isso acontece, as duas instâncias de ativos são tratadas da mesma forma, permitindo uma visão mais holística do uso e do consumo de conteúdo.
 
 ## Valor
 
@@ -52,21 +52,29 @@ O Content Analytics usa os seguintes termos principais:
 
 O Content Analytics usa dados de exibição de imagem da Web coletados em conjuntos de dados de eventos no Experience Platform. Esses dados podem ser coletados por meio dos vários métodos disponíveis: Experience Platform Edge Network (Web SDK, API do servidor) ou Conector de origem do Analytics.
 
-![Análise de conteúdo - Como funciona](assets/how-it-works.png)
+![Análise de conteúdo - Como funciona](assets/aca-overview.gif)
 
 
-1. Quando um usuário visita um site, o Experience Platform Web SDK, configurado para o Content Analytics, registra interações com o conteúdo.
-1. O serviço do montador de recursos e o serviço de identidade processam os dados revisitados.
+1. Quando um usuário visita um site, configurado para o Content Analytics, o Experience Platform Web SDK registra interações com o conteúdo.
+1. O serviço do montador de recursos e o serviço de identidade processam os dados revisitados. Esse processo consiste em um crawler que revisa as versões públicas dos URLs configurados e aplica os serviços de IA/ML.
 1. Os resultados desses serviços (componentes, atributos e identidades) são usados para atualizar os conjuntos de dados de análise de conteúdo específicos relevantes no Experience Platform.
-1. Os dados de análise de conteúdo, juntamente com dados comportamentais e outros conjuntos de dados de pesquisa, podem ser usados em uma configuração do Customer Journey Analytics (Conexão, Visualização de dados e Workspace). Essa configuração fornece a base para os insights exclusivos de nível macro sobre o seu conteúdo.
+1. Os dados de análise de conteúdo, juntamente com dados comportamentais e outros conjuntos de dados de pesquisa, que você usa na configuração do Customer Journey Analytics (combinação de Connection, Visualização de dados e Workspace). Essa configuração fornece a base para os insights exclusivos de nível macro sobre o seu conteúdo.
 
 >[!NOTE]
 >
->O Content Analytics aproveita a IA/ML. Os resultados (para a caracterização de experiências e ativos) podem ser imprecisos.
+>O Content Analytics aproveita os serviços de IA/ML que podem produzir resultados imprecisos ou enganosos. Como resultado, use sua decisão para revisar e validar as saídas geradas pela IA/ML.
+>
+>Você pode usar a guia **[!UICONTROL Feedback]**, disponível em ![InfoOutline](/help/assets/icons/InfoOutline.svg) na interface principal, para fornecer feedback sobre as saídas geradas de IA/ML.
+>
+
+>[!NOTE]
+>
+>Se você licenciou o complemento Privacy and Security Shield, saiba que (quaisquer dados gerados a partir de) experiências e ativos, sujeitos ao Content Analytics, não são cobertos pela rotulagem DULE ou pelas Chaves gerenciadas pelo cliente.
 >
 
 
 >[!MORELIKETHIS]
 >
 >[Relatórios de análise de conteúdo](report/report.md)
->[Configurar o Content Analytics](config/configuration.md)
+>[Configurar Content Analytics](config/configuration.md)
+>

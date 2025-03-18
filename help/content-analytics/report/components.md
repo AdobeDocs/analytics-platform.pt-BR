@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: cd31712c1dde1fc39f4d0dc81555c19b7690bcab
+source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1390'
 ht-degree: 17%
 
 ---
@@ -33,7 +33,7 @@ O Content Analytics adiciona as seguintes categorias de componentes (dimensões,
 * [Eventos do Assets](#asset-events)
 * [Métricas calculadas](#calculated-metrics)
 
-Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gerado de AI/ML.
+Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gerado por AI/ML.
 
 ## Metadados de experiência
 
@@ -63,7 +63,7 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gera
 | Estratégias de persuasão da experiência | ![IA gerada](/help/assets/icons/AI.svg) estratégias de persuasão que estão presentes na experiência fornecida. Os valores possíveis são: Identidade social, Prova social, Autoridade, Concretização, Pé na porta, Superação da Reatância, Reciprocidade, Ancoragem e Comparação, Impacto social, Escassez e Antropomorfismo. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Narrativas da experiência | ![A IA gerou](/help/assets/icons/AI.svg) narrativas que a experiência está criando com base na relevância do ponto de vista de um profissional de marketing. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Tons da experiência | ![IA gerada](/help/assets/icons/AI.svg) Tons que a experiência está criando com base na relevância do ponto de vista de um profissional de marketing | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
-| Emoções de marketing da experiência | ![A IA gerou](/help/assets/icons/AI.svg) a emoção invocada no leitor ao ler a experiência: Urgência, Exclusividade, Incentivo, Desafio, Curiosidade, Conquista, Confiança, Simplicidade e Fascínio. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
+| Emoções de marketing da experiência | ![IA gerada](/help/assets/icons/AI.svg) A emoção invocada no leitor ao ler o texto usado como parte da experiência: Urgência, Exclusividade, Incentivo, Desafio, Curiosidade, Conquista, Confiança, Simplicidade e Fascínio. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Contagem de emojis da experiência | ![IA gerada](/help/assets/icons/AI.svg) Número de emojis para a experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
 | Contagem de hashtags de experiência | ![IA gerada](/help/assets/icons/AI.svg) Número de hashtags para a experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
 | Contagem de frases da experiência | ![IA gerada](/help/assets/icons/AI.svg) Número de frases para a experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
@@ -163,3 +163,4 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gera
 | Índice de click-through da experiência | Cliques de experiência / Visualizações de experiência | Métrica calculada | |
 
 {style="table-layout:fixed"}
+
