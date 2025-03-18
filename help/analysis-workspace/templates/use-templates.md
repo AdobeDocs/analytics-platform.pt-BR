@@ -4,10 +4,10 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: a3817114534ddea434ee0c5b8147ba90e1d144dc
+source-git-commit: 6480eb4cd5210cd9318614a507516bd3736da40a
 workflow-type: tm+mt
-source-wordcount: '19475'
-ht-degree: 86%
+source-wordcount: '19661'
+ht-degree: 85%
 
 ---
 
@@ -533,6 +533,16 @@ Os seguintes modelos estão disponíveis:
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="template--content-analytics"
+>title="Saiba qual conteúdo e atributos de conteúdo estão tendo o melhor desempenho."
+>abstract="**Isso pode ajudá-lo** a saber mais sobre o desempenho do seu conteúdo em nível detalhado. Você pode observar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. [Saiba mais](/help/content-analytics/content-analytics.md).<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como promover ativos de alto desempenho na sua página inicial, personalizar o conteúdo de segmentos específicos para incluir atributos de alto desempenho ou sair do conteúdo que começou a ficar obsoleto."
+
+<!-- markdownlint-enable MD034 -->
+
+
 Os seguintes modelos estão disponíveis:
 
 | Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
@@ -551,6 +561,7 @@ Os seguintes modelos estão disponíveis:
 | **Páginas de entrada** | Veja as principais páginas que as pessoas acessam quando visitam o site pela primeira vez. <p>**Isso pode ajudar** a saber quais páginas estão gerando mais tráfego para o site ou entender melhor as primeiras impressões que visitantes têm sobre o site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar a experiência inicial que as pessoas têm no site ou garantir que as páginas que as pessoas veem ao entrar no site sejam acolhedoras e forneçam os links necessários para outras áreas do site.</p><p>Este modelo usa a métrica Sessões. Ele também usa a visualização de barras e a visualização de tabela de forma livre.</p> |
 | **Páginas de saída** | Veja as principais páginas que as pessoas acessam imediatamente antes de sair do site.<p>**Isso pode ajudá-lo** a entender melhor quais páginas estão afastando as pessoas do site. </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como atualizar as páginas de saída comuns para otimizar a experiência que as pessoas têm antes de sair ou incluir conteúdo ou links para incentivar as pessoas a permanecerem no site.</p><p>Este modelo usa a métrica Sessões. Ele também usa a visualização de barras e a visualização de tabela de forma livre.</p> |
 | **Visão geral do uso do produto** | Visualize como o produto Customer Journey Analytics é usado em sua organização. <p>**Isso pode ajudar** a entender melhor quantas pessoas estão usando o Customer Journey Analytics, com que frequência o usam e as tendências de uso ao longo do tempo. Você também pode ver o número de projetos que estão sendo criados, detalhes sobre esses projetos (como quais componentes, visualizações e painéis são usados com mais frequência) e muitas outras estatísticas de uso.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como excluir projetos ou componentes não utilizados ou fornecer treinamento a usuários para recursos populares.</p> |
+| **Análise de conteúdo** | Saiba qual conteúdo e atributos de conteúdo estão tendo o melhor desempenho.<p>**Isso pode ajudá-lo** a saber mais sobre o desempenho do seu conteúdo em nível detalhado. Você pode observar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. [Saiba mais](/help/content-analytics/content-analytics.md).</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como promover ativos de alto desempenho na sua página inicial, personalizar o conteúdo de segmentos específicos para incluir atributos de alto desempenho ou sair do conteúdo que começou a ficar obsoleto.</p> |
 
 ### Web: conversão {#web-conversion}
 
