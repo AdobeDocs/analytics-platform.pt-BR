@@ -7,30 +7,27 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: df3a877feed82f6cbd181561da68837373bdafb8
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
 # Visão geral dos relatórios do Content Analytics
 
->[!WARNING]
->
->Este artigo é um rascunho não oficial preliminar de uma versão final futura e faz parte da documentação do Content Analytics. Todo o conteúdo está sujeito a alterações e nenhuma obrigação legal pode ser derivada da versão atual deste artigo.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
-Os relatórios do Content Analytics são feitos no Analysis Workspace. Um [modelo](#template) específico do Workspace está disponível, portanto, você pode acessar imediatamente um projeto do Workspace pré-preenchido com insights de conteúdo relevantes.
+Você relata, faz análises e obtém insights sobre o Content Analytics no [Analysis Workspace](/help/analysis-workspace/home.md). Um [modelo](#template) específico do Workspace está disponível, portanto, você pode acessar imediatamente um projeto do Workspace pré-preenchido com insights de conteúdo relevantes.
 
 Para começar a criar relatórios sobre o Content Analytics do zero:
 
 1. [Criar um novo](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [abrir um projeto](/help/analysis-workspace/build-workspace-project/open-projects.md) existente no Workspace.
 1. Certifique-se de [selecionar uma visualização de dados](/help/analysis-workspace/c-panels/panels.md#data-view) para os relatórios do Content Analytics. Os relatórios do Content Analytics só estão disponíveis para visualizações de dados [configuradas](/help/content-analytics/config/configuration.md) para o Content Analytics.
 1. Arraste uma visualização de ![Tabela](/help/assets/icons/Table.svg) [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) na tela.
-1. Use [componentes específicos do Content Analytics](components.md) e outros [componentes](/help/components/overview.md) genéricos (como filtros, intervalos de datas, anotações) para criar seus insights de análise de conteúdo. Como alternativa, use o [Modelo de análise de conteúdo](#template).
+1. Use [componentes específicos do Content Analytics](components.md) e outros [componentes](/help/components/overview.md) genéricos (como filtros, intervalos de datas, anotações) para criar seus insights de análise de conteúdo.
 
 ## Miniaturas
 
@@ -38,9 +35,16 @@ Com base nas dimensões específicas da Análise de conteúdo que você usa no p
 
 ![Miniaturas do Content Analytics](../assets/aca-thumbnails.png)
 
+Para configurar a exibição de miniaturas de uma dimensão do Content Analytics:
+
+* Passe o mouse sobre uma linha de cabeçalho para uma dimensão Content Analytics. Por exemplo, **[!UICONTROL Nome do ativo]** ou **[!UICONTROL IDs de experiência]**.
+* Selecione ![Configuração](/help/assets/icons/Setting.svg).
+* Na janela pop-up **[!UICONTROL Configuração de linha]**, abaixo de **[!UICONTROL Configurações]**, marque ou desmarque **[!UICONTROL Mostrar Miniaturas]**.
+
+
 ## Visualizações
 
-Para dimensões com miniaturas (como Nome do ativo, Nome da experiência e outras), é possível abrir uma janela pop-up de visualização.
+Para linhas de uma dimensão Content Analytics que mostram miniaturas, é possível abrir uma janela pop-up de visualização.
 
 Para abrir a visualização com os seguintes detalhes:
 
@@ -50,11 +54,11 @@ Para abrir a visualização com os seguintes detalhes:
   |---|---|
   | ![Visualização da experiência do Content Analytics](../assets/aca-experience-preview.png) | ![Visualização do ativo de análise de conteúdo](../assets/aca-asset-preview.png) |
   | **[!UICONTROL Nome da experiência]** | **[!UICONTROL Nome do ativo]** |
-  | **[!UICONTROL Impressões (todas as vezes)]**: Número de impressões da experiência. | **[!UICONTROL Impressões (todas as vezes)]**: número de impressões do ativo. |
-  | **[!UICONTROL Assets]**: Número de ativos que esta experiência contém. Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** para inspecionar os ativos. | **[!UICONTROL Experiências]**: número de experiências em que este ativo é exibido. ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** para inspecionar os ativos. |
+  | **[!UICONTROL Impressões (sempre)]**: número de impressões para a experiência. | **[!UICONTROL Impressões (todas as vezes)]**: número de impressões do ativo. |
+  | **[!UICONTROL Assets]**: Número de ativos que esta experiência contém. <br/>Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** para inspecionar os ativos. | **[!UICONTROL Experiências]**: número de experiências em que este ativo é exibido. <br/>Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** para inspecionar os ativos. |
   | **[!UICONTROL Primeira impressão]**: data da primeira impressão da experiência. | **[!UICONTROL Primeira impressão]**: data da primeira impressão do ativo. |
   | **[!UICONTROL Impressão mais recente]**: data da impressão mais recente da experiência. | **[!UICONTROL Impressão mais recente]**: data da impressão mais recente do ativo. |
-  | **[!UICONTROL Atributos da experiência]**: os atributos da experiência. | **[!UICONTROL Atributos do ativo]**: os atributos do ativo. |
+  | **[!UICONTROL Atributos da experiência]**: os [atributos](/help/content-analytics/report/components.md#experience-attributes) da experiência. | **[!UICONTROL Atributos do ativo]**: os [atributos](/help/content-analytics/report/components.md#asset-attributes) do ativo. |
 
 
 ## Modelo
@@ -72,7 +76,7 @@ Para usar o modelo:
 1. Na caixa de diálogo **[!UICONTROL Configurar seu modelo]**, selecione uma métrica na caixa de diálogo **[!UICONTROL Selecionar uma métrica de conversão]**. Por exemplo, **[!UICONTROL CTR do ativo]**.
 1. Selecione **[!UICONTROL Continuar]**.
 
-Um projeto **[!UICONTROL Visão geral do Content Analytics]** é aberto no Workspace. O projeto consiste em quatro painéis, cada um respondendo a perguntas específicas:
+Um projeto **[!UICONTROL Visão geral do Content Analytics]** é aberto no Workspace. O projeto consiste em quatro painéis, em que cada painel fornece tabelas e visualizações de forma livre para responder a uma pergunta específica:
 
 * **Que conteúdo tem o melhor desempenho?**
 Esse painel ajuda você a entender quais experiências e quais ativos nessas experiências estão gerando engajamento e conversão. As experiências são uma página da Web completa, capturada em um momento específico. Uma experiência pode conter texto e vários ativos de imagem individuais. Um ativo é uma imagem individual.
@@ -129,18 +133,18 @@ Uma visualização de [linha](/help/analysis-workspace/visualizations/line.md) q
 Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) mostrando as principais palavras-chave de experiência com base na métrica de conversão selecionada.
 
 * **Onde os ativos aparecem no meu site?**
-Um painel que consiste em uma tabela de forma livre que detalha onde a maioria dos ativos de visualização aparece no site.
+Um painel que consiste em uma tabela de forma livre que detalha onde os ativos mais visualizados aparecem em seu site.
 
   O painel consiste em uma visualização:
 
    * **Onde aparecem os ativos mais exibidos?**
-Você pode detalhar qualquer ID de ativo por dimensões que ajudam a entender melhor onde essa imagem aparece.
+É possível detalhar qualquer ativo por dimensões para ajudá-lo a entender melhor onde essa imagem aparece.
 
-     Neste exemplo [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)), a [!UICONTROL *ID de Percepção do Ativo*] é usada em vez da [!UICONTROL *ID do Ativo*]. Às vezes, a mesma imagem pode ser duplicada em seu site com um URL de imagem diferente. O atributo [!UICONTROL _Percepção do ativo_] ajuda a agrupar essas duplicatas em uma única ID. Como os ativos podem mudar em uma página, cada ativo é detalhado por [!UICONTROL _ID da experiência_] para identificar em qual versão dessa página esse ativo apareceu.
+     No exemplo [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)), a **[!UICONTROL ID de Percepção do Ativo]** é usada em vez da [!UICONTROL ID do Ativo]. Às vezes, a mesma imagem pode ser duplicada em seu site com um URL de imagem diferente. O atributo [!UICONTROL ID de Percepção do Ativo] ajuda a agrupar essas duplicatas em uma única ID.
 
-     Você pode substituir a [!UICONTROL _Experience ID_] por outras dimensões que ajudam você a entender a localização de um ativo no seu site. Por exemplo, [!UICONTROL _Nome da página_], [!UICONTROL _URL da página_] ou [!UICONTROL _Seção do site_].
+     Como os ativos podem mudar em uma página, cada ativo é detalhado por **[!UICONTROL ID da experiência]** para identificar em qual versão dessa página o ativo apareceu. Você pode substituir a [!UICONTROL ID da experiência] por outras dimensões que ajudam você a entender a localização de um ativo no seu site. Por exemplo, [!UICONTROL Nome da página], [!UICONTROL URL da página] ou [!UICONTROL Seção do site].
 
-     Você também pode trocar a [!UICONTROL _ID de Percepção_] pela [!UICONTROL _ID de Ativo_] para obter um registro de onde as URLs de imagem específicas estão sendo referenciadas.
+     Você também pode trocar a [!UICONTROL ID de Percepção do Ativo] pela [!UICONTROL ID do Ativo] para obter um registro de onde as URLs de imagem específicas estão sendo referenciadas.
 
 
 >[!MORELIKETHIS]

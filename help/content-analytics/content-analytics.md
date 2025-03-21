@@ -7,19 +7,16 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
 
 # Visão geral do Content Analytics
 
->[!WARNING]
->
->Este artigo é um rascunho não oficial preliminar de uma versão final futura e faz parte da documentação do Content Analytics. Todo o conteúdo está sujeito a alterações e nenhuma obrigação legal pode ser derivada da versão atual deste artigo.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -27,7 +24,7 @@ O Content Analytics ajuda os profissionais de marketing a entender como o conte�
 
 O Content Analytics usa um **serviço de recursos** baseado em IA e aprendizado de máquina para dividir o conteúdo em componentes e atributos. Ao criar um perfil de metadados estruturado em todo o seu conteúdo, você pode analisar qual conteúdo e quais atributos desse conteúdo direcionam os resultados dos negócios.
 
-Além da criação desse perfil de metadados estruturados, o Content Analytics fornece um **serviço de identidade** que identifica ativos e experiências usando um único identificador. O serviço de identidade pode reconhecer quando um mesmo ativo aparece em mais de um lugar. Quando isso acontece, as duas instâncias de ativos são tratadas da mesma forma, permitindo uma visão mais holística do uso e do consumo de conteúdo.
+Além da criação desse perfil de metadados estruturados, o Content Analytics fornece um **serviço de identidade** que identifica ativos e experiências usando um único identificador. O serviço de identidade pode reconhecer quando exatamente o mesmo ativo aparece em mais de um local. Quando isso acontece, as instâncias desse ativo são tratadas como o mesmo ativo, permitindo uma visualização mais holística do uso e do consumo de conteúdo.
 
 ## Valor
 
@@ -44,7 +41,7 @@ O Content Analytics usa os seguintes termos principais:
 
 ![Assets e experiências](/help/content-analytics/assets//content-analytics-experience-asset.png)
 
-* **Experiência**: uma experiência é todo o texto em uma página da Web que pode ser reproduzido usando a URL usada pelo usuário que visitou essa página da Web. Cada experiência recebe um identificador exclusivo.
+* **Experiência**: uma experiência é todo o texto em uma página da Web que pode ser reproduzido usando a URL usada pelo usuário inicial que visitou a página da Web. Cada experiência recebe um identificador exclusivo.
 * **Ativo**: um ativo é um conteúdo individual e exclusivo, como uma imagem. Cada ativo também recebe um identificador exclusivo.
 * **Atributo**: um atributo é um elemento de metadados descritivo associado a uma experiência ou ativo. Exemplos de um atributo são: estilo de fotografia, legibilidade, estratégia de persuasão, cor do objeto, cor do plano de fundo.
 
@@ -55,10 +52,10 @@ O Content Analytics usa dados de exibição de imagem da Web coletados em conjun
 ![Análise de conteúdo - Como funciona](assets/aca-overview.gif)
 
 
-1. Quando um usuário visita um site, configurado para o Content Analytics, o Experience Platform Web SDK registra interações com o conteúdo.
-1. O serviço do montador de recursos e o serviço de identidade processam os dados revisitados. Esse processo consiste em um crawler que revisa as versões públicas dos URLs configurados e aplica os serviços de IA/ML.
-1. Os resultados desses serviços (componentes, atributos e identidades) são usados para atualizar os conjuntos de dados de análise de conteúdo específicos relevantes no Experience Platform.
-1. Os dados de análise de conteúdo, juntamente com dados comportamentais e outros conjuntos de dados de pesquisa, que você usa na configuração do Customer Journey Analytics (combinação de Connection, Visualização de dados e Workspace). Essa configuração fornece a base para os insights exclusivos de nível macro sobre o seu conteúdo.
+1. Quando um usuário visita um site, [configurado para o Content Analytics](config/configuration.md), o Experience Platform Web SDK registra interações com o conteúdo.
+1. O serviço de identidade e caracterização processa essas interações. Esse processo consiste em um crawler que revisa as versões voltadas para o público dos URLs configurados que definem as interações. Para todos esses URLs rastreados, o serviço de identidade identifica exclusivamente as experiências e os ativos. E o serviço de recursos aplica serviços de IA/ML para descobrir experiências e ativos, metadados e atributos.
+1. Os resultados desses serviços ([componentes, atributos e identidades](/help/content-analytics/report/components.md)) são usados para atualizar os conjuntos de dados de análise de conteúdo específicos relevantes no Experience Platform.
+1. Os dados de análise de conteúdo, juntamente com os dados comportamentais e outros dados de pesquisa, podem ser usados em uma configuração do Customer Journey Analytics ([Conexão](/help/connections/overview.md), [Visualização de dados](/help/data-views/data-views.md) e [Workspace](/help/analysis-workspace/home.md)). Essa configuração fornece a base para os insights exclusivos de nível macro sobre o seu conteúdo. <br/>Você pode começar rapidamente seus relatórios e análises do Content Analytics usando o [modelo do Content Analytics](/help/content-analytics/report/report.md#template).
 
 >[!NOTE]
 >

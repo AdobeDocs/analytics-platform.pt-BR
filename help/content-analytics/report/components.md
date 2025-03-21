@@ -7,19 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 62491fcbf37961d33be92d209e5710bf9696c223
+source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 17%
+source-wordcount: '1350'
+ht-degree: 18%
 
 ---
 
 # Componentes do Content Analytics
 
->[!WARNING]
->
->Este artigo é um rascunho não oficial preliminar de uma versão final futura e faz parte da documentação do Content Analytics. Todo o conteúdo está sujeito a alterações e nenhuma obrigação legal pode ser derivada da versão atual deste artigo.
->
+{{draft-aca}}
 
 {{release-limited-testing}}
 
@@ -33,7 +30,7 @@ O Content Analytics adiciona as seguintes categorias de componentes (dimensões,
 * [Eventos do Assets](#asset-events)
 * [Métricas calculadas](#calculated-metrics)
 
-Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um valor gerado por AI/ML.
+Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um par de atributo/valor gerado por AI/ML.
 
 ## Metadados de experiência
 
