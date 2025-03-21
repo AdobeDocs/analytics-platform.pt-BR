@@ -4,9 +4,9 @@ description: Para acessar essas funções, selecione Mostrar avançadas na lista
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 180129837fa326f600ebc3dc5a2a54fd6c3372cb
+source-git-commit: 6788275ba4bfcfbe385e45e6a20de996d8103393
 workflow-type: tm+mt
-source-wordcount: '4542'
+source-wordcount: '4659'
 ht-degree: 54%
 
 ---
@@ -729,7 +729,7 @@ Menor ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 
 
 
-## Elevação (#lift)
+## Aumento {#lift}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -739,6 +739,10 @@ Menor ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 >abstract="A elevação da proporção em comparação ao valor de controle."
 
 <!-- markdownlint-enable MD034 -->
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL LIFT(normalizing-container, success-metric, control)]**
+
+A elevação da proporção em comparação ao valor de controle.
 
 | Argumento | Descrição |
 | --- | --- |
@@ -1338,6 +1342,27 @@ Retorna Pi: 3,14159...
 | metric_Y | Uma métrica que você gostaria de designar como um dado independente |
 | include_zeros | Se os valores zero devem ser incluídos ou não nos cálculos |
 
+
+
+## Variação da amostra
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="functions-waskr-variance-estimate"
+>title="Variação da amostra"
+>abstract="Calcula uma estimativa da variação da amostra usando a fórmula (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). onde N é a contagem do contêiner de normalização. <br/>Isso é usado como parte dos cálculos de confiança de *qualquer tempo válido*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*."
+
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VARIAÇÃO DE AMOSTRA(contêiner de normalização, métrica de sucesso)]**
+
+Calcula uma estimativa da variação da amostra.
+
+| Argumento | Descrição |
+| --- | --- |
+| normalizing-container | A base (Pessoas, Sessões ou Eventos) em que um teste é executado. |
+| métrica de sucesso | A métrica, ou as métricas, com as quais um usuário está comparando variantes. |
+
+<!-- markdownlint-enable MD034 -->
 
 
 
