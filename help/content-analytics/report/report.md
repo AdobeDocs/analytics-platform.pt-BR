@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 07487061881cacd6e4f79bd46581d179aca99347
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Com base nas dimensões específicas da Análise de conteúdo que você usa no p
 
 ![Miniaturas do Content Analytics](../assets/aca-thumbnails.png)
 
-Para configurar a exibição de miniaturas de uma dimensão do Content Analytics:
+Por padrão, as miniaturas são exibidas para dimensões relevantes do Content Analytics. Para configurar a exibição de miniaturas de uma dimensão do Content Analytics:
 
 * Passe o mouse sobre uma linha de cabeçalho para uma dimensão Content Analytics. Por exemplo, **[!UICONTROL Nome do ativo]** ou **[!UICONTROL IDs de experiência]**.
 * Selecione ![Configuração](/help/assets/icons/Setting.svg).
