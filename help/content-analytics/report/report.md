@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 07487061881cacd6e4f79bd46581d179aca99347
+source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Para usar o modelo:
 1. Na caixa de diálogo **[!UICONTROL Configurar seu modelo]**, selecione uma métrica na caixa de diálogo **[!UICONTROL Selecionar uma métrica de conversão]**. Por exemplo, **[!UICONTROL CTR do ativo]**.
 1. Selecione **[!UICONTROL Continuar]**.
 
-Um projeto **[!UICONTROL Visão geral do Content Analytics]** é aberto no Workspace. O projeto consiste em quatro painéis, em que cada painel fornece tabelas e visualizações de forma livre para responder a uma pergunta específica:
+Um projeto da **[!UICONTROL Visão Geral do Content Analytics]** é aberto no [Analysis Workspace](/help/analysis-workspace/home.md). O projeto consiste em quatro [painéis](/help/analysis-workspace/c-panels/panels.md), onde cada painel fornece [tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) e [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para responder a uma pergunta específica:
 
 * **Que conteúdo tem o melhor desempenho?**
 Esse painel ajuda você a entender quais experiências e quais ativos nessas experiências estão gerando engajamento e conversão. As experiências são uma página da Web completa, capturada em um momento específico. Uma experiência pode conter texto e vários ativos de imagem individuais. Um ativo é uma imagem individual.
@@ -85,9 +85,9 @@ Esse painel ajuda você a entender quais experiências e quais ativos nessas exp
 
    * **Experiências**
 
-      * **CTR de experiência**: uma visualização de alteração de resumo, mostrando o CTR de experiência.
-      * **Principais experiências de conversão**: uma visualização de gráfico de barras horizontal que mostra as principais experiências de conversão com base na métrica de conversão selecionada.
-      * **Experiências com melhor desempenho**: uma tabela de forma livre (incluindo miniaturas e visualizações) para as experiências com melhor desempenho.
+      * **CTR de experiência**: uma visualização de [alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md), mostrando o CTR de experiência.
+      * **Principais experiências de conversão**: uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) mostrando as principais experiências de conversão com base na métrica de conversão selecionada.
+      * **Experiências com melhor desempenho**: uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)(incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) para as experiências com melhor desempenho.
 
    * **Ativos**
 
