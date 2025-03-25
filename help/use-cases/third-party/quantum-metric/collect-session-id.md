@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: cfe4bafd-afe6-4738-94f1-30882893b3b6
-source-git-commit: 2d6c5d5b546ef8ba952d4ba4397d897ed4566283
+source-git-commit: 255f06ba504a0fa189a02966c5d3c63e1a4fadfd
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,11 @@ ht-degree: 0%
 
 Alguns casos de uso, como [repetições de sessão de Métrica Quântica de divisão](tie-session-replays.md) ou [uso de Heatmaps de Métrica Quântica](heatmap.md), exigem que você modifique sua implementação para coletar a ID de sessão de Métrica Quântica. Esta página descreve esse processo para trazer com êxito esses dados para a implementação existente.
 
+## Pré-requisitos
+
 Essas etapas pressupõem que você use tags na Coleção de dados da Adobe Experience Platform. Você pode adaptar esses métodos de coleta de dados em direção a uma implementação manual do Web SDK se a sua organização não usar tags.
 
-## Etapa 1: Capturar a ID de sessão da Métrica quântica usando a extensão de tags da Métrica quântica
+### Etapa 1: Capturar a ID de sessão da Métrica quântica usando a extensão de tags da Métrica quântica
 
 Siga estas etapas para anexar a ID da sessão de Métrica quântica aos dados enviados para o Adobe Experience Platform.
 
@@ -37,11 +39,11 @@ Siga estas etapas para anexar a ID da sessão de Métrica quântica aos dados en
 
 Consulte a documentação da [Extensão de tag de métrica Quantum](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) para obter mais informações.
 
-## Etapa 2: Confirmar campos incluídos do conjunto de dados
+### Etapa 2: Confirmar campos incluídos do conjunto de dados
 
 Confirme se os conjuntos de dados na sua conexão agora têm a ID de sessão de Métrica quântica no conjunto de dados desejado.
 
-## Etapa 3: adicionar a ID da sessão de Métrica quântica como uma dimensão disponível
+### Etapa 3: adicionar a ID da sessão de Métrica quântica como uma dimensão disponível
 
 Edite sua visualização de dados existente para adicionar a ID da sessão como uma dimensão disponível no Customer Journey Analytics.
 
