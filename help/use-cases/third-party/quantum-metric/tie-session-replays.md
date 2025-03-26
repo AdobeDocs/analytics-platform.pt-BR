@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: 752e8564c341cf02b5378a12a820f52ca6164a3d
+source-git-commit: 9563b13da52963eaf7b17050fb9a7cb3a47ef1ed
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Ao vincular repetições de sessão de métrica quântica aos dados do CJA, os clientes podem entender melhor &quot;o porquê&quot; por trás de &quot;o quê&quot;.  O Workspace pode ser usado para descobrir sessões com atrito e, em seguida, clicar em IDs de sessão com hiperlink para explorar a repetição da sessão na Métrica quântica.  Esses dados permitem visualizar o comportamento em uma sessão e compreender melhor o que gera o atrito do consumidor.  Por meio de repetições de sessão vinculadas ao CJA, você pode capturar o contexto crítico em torno do comportamento do cliente em sua experiência.
 
-## Pré-requisitos
+## Pré-requisitos:
 
 Esse caso de uso exige que você colete a ID de sessão da Métrica Quantum ao lado do restante da implementação. Consulte [Coletar IDs de sessão de Métrica Quântica no Customer Journey Analytics](collect-session-id.md) para saber como modificar sua implementação.
 
