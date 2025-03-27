@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '1350'
-ht-degree: 18%
+source-wordcount: '1194'
+ht-degree: 17%
 
 ---
 
@@ -44,8 +44,6 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um par de atr
 | URL da miniatura da experiência | URL da miniatura da experiência. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Profundidade da porcentagem horizontal da experiência | Valor quantificável da profundidade percentual horizontal da experiência. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Profundidade da porcentagem vertical da experiência | Valor quantificável da profundidade percentual vertical da experiência. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
-| Profundidade dos pixels horizontais da experiência | Valor quantificável da profundidade horizontal do pixel da experiência. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
-| Profundidade dos pixels verticais da experiência | Valor quantificável da profundidade vertical de pixel da experiência. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 
 {style="table-layout:fixed"}
 
@@ -55,7 +53,6 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um par de atr
 
 | Título | Descrição | Tipo | Configurações  |
 |---|---|---|---|
-| Pontuação de legibilidade da experiência | ![A IA gerou](/help/assets/icons/AI.svg) pontuação de legibilidade para a experiência. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Palavras-chave da experiência | ![A IA gerou](/help/assets/icons/AI.svg) palavras-chave para a experiência. | Campo Derivado do Dimension<br> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Estratégias de persuasão da experiência | ![IA gerada](/help/assets/icons/AI.svg) estratégias de persuasão que estão presentes na experiência fornecida. Os valores possíveis são: Identidade social, Prova social, Autoridade, Concretização, Pé na porta, Superação da Reatância, Reciprocidade, Ancoragem e Comparação, Impacto social, Escassez e Antropomorfismo. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Narrativas da experiência | ![A IA gerou](/help/assets/icons/AI.svg) narrativas que a experiência está criando com base na relevância do ponto de vista de um profissional de marketing. | Campo Derivado do Dimension<br/> | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
@@ -76,8 +73,8 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um par de atr
 
 | Título | Descrição | Tipo | Configurações  |
 |---|---|---|---|
-| Visualizações de experiência | Medida quantificável do número de visualizações da experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
-| Cliques de experiência | Medida quantificável do número de cliques da experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
+| Visualizações da experiência | Medida quantificável do número de visualizações da experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
+| Cliques da experiência | Medida quantificável do número de cliques da experiência. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
 
 {style="table-layout:fixed"}
 
@@ -88,19 +85,12 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um par de atr
 |---|---|---|---|
 | Origem do ativo | URL de origem acessível ao público para o ativo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | ID do ativo | Identificador exclusivo do ativo. O binário do ativo determina a exclusividade. Se o binário do ativo mudar, a ID será alterada. O identificador exclusivo pode ser o URL, mas também pode ser um hash criado. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
-| Nome do ativo | Nome do ativo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
-| Tipo de ativo | Tipo do ativo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
-| URL da miniatura do ativo | URL da miniatura do ativo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Caminho HTML do ativo | Caminho HTML concatenado para o ativo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | URL do link do ativo | Âncora de página mais próxima do ativo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Largura de exibição do ativo | Largura de exibição do ativo de conteúdo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Altura de exibição do ativo | Altura de exibição do ativo de conteúdo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Esquerda absoluta do ativo | Limite esquerdo absoluto do ativo de conteúdo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
 | Topo absoluto do ativo | Limite superior absoluto do ativo de conteúdo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
-| Ativo criado por | Identificador para criação de ativo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
-| Data de criação do ativo | Data de criação do ativo. | Dimensão | Mais recente \| Session |
-| Ativo atualizado pela última vez por | Identificador para atualização de ativo. | Dimensão | Mostrar \| Nenhum valor<br/>Mais recentes \| Session |
-| Data da última atualização do ativo | Data de atualização do ativo. | Dimensão | Mais recente \| Session |
 
 {style="table-layout:fixed"}
 
@@ -133,7 +123,7 @@ Nas tabelas abaixo, ![IA gerada](/help/assets/icons/AI.svg) indica um par de atr
 
 | Título | Descrição | Tipo | Configurações  |
 |---|---|---|---|
-| Exibições de ativos | Medida quantificável do número de exibições do ativo. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
+| Visualizações do ativo | Medida quantificável do número de exibições do ativo. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
 | Cliques no ativo | Medida quantificável do número de cliques do ativo. | Métrica | Contar valores<br/>Decimais \| Casas decimais: 0 |
 
 {style="table-layout:fixed"}

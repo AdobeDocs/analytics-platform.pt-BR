@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -39,10 +39,10 @@ O Content Analytics agrega valor cada vez mais:
 
 O Content Analytics usa os seguintes termos principais:
 
-![Assets e experiências](/help/content-analytics/assets//content-analytics-experience-asset.png)
+![Assets e experiências](/help/content-analytics/assets/content-analytics-experience-asset.png)
 
-* **Experiência**: uma experiência é todo o texto em uma página da Web que pode ser reproduzido usando a URL usada pelo usuário inicial que visitou a página da Web. Cada experiência recebe um identificador exclusivo.
-* **Ativo**: um ativo é um conteúdo individual e exclusivo, como uma imagem. Cada ativo também recebe um identificador exclusivo.
+* **Experiência**: uma experiência é todo o texto em uma página da Web que pode ser reproduzido usando a URL usada pelo usuário inicial que visitou a página da Web. Cada experiência recebe um identificador exclusivo. As alterações na página que resultam em alterações na HTML da página resultam em uma nova experiência.
+* **Ativo**: um ativo é um conteúdo individual e exclusivo, como uma imagem. Cada ativo também recebe um identificador exclusivo e uma ID de percepção. Uma ID de percepção é um identificador compartilhado com ativos visualmente idênticos. As IDs de percepção ajudam a desduplicar ativos que podem ter um URL de ativo diferente e, portanto, uma ID de ativo diferente, mas são perceptivelmente idênticas.
 * **Atributo**: um atributo é um elemento de metadados descritivo associado a uma experiência ou ativo. Exemplos de um atributo são: estilo de fotografia, legibilidade, estratégia de persuasão, cor do objeto, cor do plano de fundo.
 
 ## Como funciona
@@ -52,7 +52,7 @@ O Content Analytics usa dados de exibição de imagem da Web coletados em conjun
 ![Análise de conteúdo - Como funciona](assets/aca-overview.gif)
 
 
-1. Quando um usuário visita um site, [configurado para o Content Analytics](config/configuration.md), o Experience Platform Web SDK registra interações com o conteúdo.
+1. Quando um usuário visita um site, [configurado para o Content Analytics](config/configuration.md), o Experience Platform Web SDK registra impressões e interações com conteúdo.
 1. O serviço de identidade e caracterização processa essas interações. Esse processo consiste em um crawler que revisa as versões voltadas para o público dos URLs configurados que definem as interações. Para todos esses URLs rastreados, o serviço de identidade identifica exclusivamente as experiências e os ativos. E o serviço de recursos aplica serviços de IA/ML para descobrir experiências e ativos, metadados e atributos.
 1. Os resultados desses serviços ([componentes, atributos e identidades](/help/content-analytics/report/components.md)) são usados para atualizar os conjuntos de dados de análise de conteúdo específicos relevantes no Experience Platform.
 1. Os dados de análise de conteúdo, juntamente com os dados comportamentais e outros dados de pesquisa, podem ser usados em uma configuração do Customer Journey Analytics ([Conexão](/help/connections/overview.md), [Visualização de dados](/help/data-views/data-views.md) e [Workspace](/help/analysis-workspace/home.md)). Essa configuração fornece a base para os insights exclusivos de nível macro sobre o seu conteúdo. <br/>Você pode começar rapidamente seus relatórios e análises do Content Analytics usando o [modelo do Content Analytics](/help/content-analytics/report/report.md#template).

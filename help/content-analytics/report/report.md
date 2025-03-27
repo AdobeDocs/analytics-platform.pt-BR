@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: dbbdfac312b1b7cbb6d8b6ce38a63f6d2bc18420
+source-git-commit: 20767a4672319602d35435aeedb76749a245e691
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Para abrir a visualização com os seguintes detalhes:
   | Visualização da experiência | Visualização do ativo |
   |---|---|
   | ![Visualização da experiência do Content Analytics](../assets/aca-experience-preview.png) | ![Visualização do ativo de análise de conteúdo](../assets/aca-asset-preview.png) |
-  | **[!UICONTROL Nome da experiência]** | **[!UICONTROL Nome do ativo]** |
+  | Nome da dimensão (por exemplo, **[!UICONTROL ID da experiência])** | Nome da dimensão do ativo (por exemplo, **[!UICONTROL ID do ativo])** |
   | **[!UICONTROL Impressões (sempre)]**: número de impressões para a experiência. | **[!UICONTROL Impressões (todas as vezes)]**: número de impressões do ativo. |
   | **[!UICONTROL Assets]**: Número de ativos que esta experiência contém. <br/>Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** para inspecionar os ativos. | **[!UICONTROL Experiências]**: número de experiências em que este ativo é exibido. <br/>Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** para inspecionar os ativos. |
   | **[!UICONTROL Primeira impressão]**: data da primeira impressão da experiência. | **[!UICONTROL Primeira impressão]**: data da primeira impressão do ativo. |
@@ -83,7 +83,12 @@ Esse painel ajuda você a entender quais experiências e quais ativos nessas exp
 
   O painel consiste nas seguintes visualizações:
 
-   * **Experiências**
+   * **Experiências**.
+
+     >[!NOTE]
+     >
+     >Essas visualizações só são exibidas quando você [inclui experiências](/help/content-analytics/config/guided.md#experience-capture-and-definition) na sua configuração do Content Analytics.
+     > 
 
       * **CTR de experiência**: uma visualização de [alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md), mostrando o CTR de experiência.
       * **Principais experiências de conversão**: uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) mostrando as principais experiências de conversão com base na métrica de conversão selecionada.
@@ -117,7 +122,13 @@ Uma visualização de [linha](/help/analysis-workspace/visualizations/line.md) q
 Um exemplo [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que compara o desempenho de itens de uma única categoria de atributo de ativo: Cores de Primeiro Plano. É possível substituir esse atributo de ativo por outras dimensões de categoria de atributo de ativo.
 
 * **Quais atributos de experiência contribuem para as conversões?**
-Enquanto os atributos de ativos se concentram nas qualidades visuais das imagens, os atributos de experiência se concentram no texto da página. As visualizações abaixo permitem explorar quais atributos de experiência contribuem para a conversão. Esses atributos também são atribuídos automaticamente usando modelos de IA e GenAI.
+
+  >[!NOTE]
+  >
+  >Este painel só é exibido quando você tem [experiências incluídas](/help/content-analytics/config/guided.md#experience-capture-and-definition) na sua configuração do Content Analytics.
+  > 
+
+  Enquanto os atributos de ativos se concentram nas qualidades visuais das imagens, os atributos de experiência se concentram no texto da página. As visualizações abaixo permitem explorar quais atributos de experiência contribuem para a conversão. Esses atributos também são atribuídos automaticamente usando modelos de IA e GenAI.
 
   O painel consiste nas seguintes visualizações:
 
