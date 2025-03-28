@@ -1,13 +1,13 @@
 ---
 title: Logs de auditoria
-description: Saiba como visualizar e gerenciar logs de auditoria de Customer Journey Analytics.
+description: Saiba como visualizar e gerenciar logs de auditoria do Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: f3c95e57144037323bcc1dd212512b2dddeb833f
+source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 60%
+source-wordcount: '953'
+ht-degree: 58%
 
 ---
 
@@ -36,13 +36,13 @@ Para aumentar a transparência e a visibilidade das atividades realizadas no sis
 
 Basicamente, um log de auditoria informa **quem** executou **qual** ação e **quando**. Cada ação registrada em um log contém metadados que indicam o tipo de ação, a data e a hora, a ID do email do usuário que executou a ação e atributos adicionais relevantes ao tipo de ação.
 
-Este tópico aborda logs de auditoria no Customer Journey Analytics, incluindo como visualizá-los e gerenciá-los na interface do usuário.
+Este tópico aborda logs de auditoria no Customer Journey Analytics, incluindo como visualizá-los e gerenciá-los na interface.
 
 ## Acesso a logs de auditoria
 
 Quando o recurso é ativado para sua organização, os logs de auditoria são coletados automaticamente conforme a atividade ocorre. Não é necessário ativar manualmente a coleção de log.
 
-Para visualizar e exportar logs de auditoria, você deve ter recebido a permissão de controle **[!UICONTROL Acesso aos logs de auditoria]** no console da Adobe. Para saber como gerenciar permissões individuais para recursos do Customer Journey Analytics, consulte a [documentação sobre controle de acesso](../technotes/access-control.md).
+Para visualizar e exportar logs de auditoria, você deve ter recebido a permissão de controle **[!UICONTROL Acesso aos logs de auditoria]** no console da Adobe. Para saber como gerenciar permissões individuais para recursos do Customer Journey Analytics, consulte a [documentação de controle de acesso](../technotes/access-control.md).
 
 ## Exibir o log de auditoria na interface
 
@@ -66,9 +66,9 @@ Os seguintes itens são mostrados:
    * API_REQUEST: qualquer ação aciona uma solicitação de API de back-end. Detalhes são exibidos sobre a solicitação da API.
    * APPROVE: uma ação &quot;approval&quot; foi executada.
    * CRIAR: uma ação &quot;criar&quot; foi executada.
-   * DELETE: Uma ação de &quot;exclusão&quot; foi executada.
+   * DELETE: uma ação &quot;excluir&quot; foi executada.
    * EDIT: uma ação de &quot;edição&quot; foi executada.
-   * EMBARGO:
+   * EMBARGO: Quando você restringe uma solicitação no [Gerente de Atividades de Relatórios](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), a ação é registrada no Log de Auditoria em EMBARGO.
    * EXPORTAÇÃO: uma ação &quot;exportar&quot; foi executada.
    * ORG_CHANGE: Uma ação de alteração da organização foi executada.
    * ATUALIZAR: uma ação de &quot;atualização&quot; foi executada.
@@ -158,4 +158,4 @@ Você pode baixar logs de auditoria em formatos CSV ou JSON. Todos os filtros ap
 
 ## Gerenciar logs de auditoria na API
 
-Todas as ações que você pode executar na interface do usuário também podem ser realizadas usando chamadas de API. Consulte o [documento de referência da API Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) para obter mais informações.
+Todas as ações que você pode executar na interface do usuário também podem ser realizadas usando chamadas de API. Consulte o [documento de referência da API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) para obter mais informações.
