@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 177def4edce1908a099627e96ed159b0154c3715
+source-git-commit: 1acb6ee56ec3d1c5ae21bb857205a0b9cc66cea0
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
@@ -71,3 +71,4 @@ O Content Analytics usa dados de exibição de imagem da Web coletados em conjun
 >[Relatórios de análise de conteúdo](report/report.md)
 >[Configurar Content Analytics](config/configuration.md)
 >
+
