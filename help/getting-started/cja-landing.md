@@ -4,10 +4,10 @@ description: Página inicial do Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: c29b1b8678579b58c42fce2fc02fffd81c1a633f
+source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 92%
+source-wordcount: '836'
+ht-degree: 91%
 
 ---
 
@@ -22,6 +22,12 @@ O Customer Journey Analytics permite controlar como você conecta os dados onlin
 Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Customer Journey Analytics. Para obter uma lista de todos os recursos, melhorias e correções, confira as [Notas de versão](../release-notes/latest.md) detalhadas. Acesse a [página de atualizações da documentação](../release-notes/doc-changes.md) para ver as alterações mais recentes.
 
 >[!BEGINTABS]
+
+>[!TAB Content Analytics]
+
+A análise de conteúdo da Adobe permite investigar de maneira rápida e fácil grandes volumes de dados de conteúdo para descobrir tendências, detectar anomalias, identificar a fadiga do conteúdo e obter insights sobre a exposição do conteúdo.
+
+[![imagem](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
 >[!TAB Assistente de IA]
 
@@ -65,18 +71,6 @@ Por meio da compilação baseada em gráfico, é possível usar o gráfico de id
 [![imagem](assets/learn-more-button.svg)](/help/stitching/overview.md#graph-based-stitching)
 
 *_Você precisa ter o pacote Prime para a compilação baseada em gráfico._*
-
->[!TAB Pesquisas B2B]
-
-Como parte da configuração de uma conexão, você pode transformar conjuntos de dados para esquemas de pesquisa B2B específicos para oferecer um melhor suporte a pesquisas baseadas em pessoas em dados B2B.
-
-[![imagem](assets/learn-more-button.svg)](/help/connections/transform-datasets-b2b-lookups.md)
-
->[!TAB Campos derivados]
-
-Há novas funções de campos derivados (Matemática, Próximo ou Anterior, Resumo, Desduplicar) e modelos de função adicionais (como Rejeições, Nome amigável do conjunto de dados, Temporada de festas, Metas mensais, Detecção de bots simples e outros) disponíveis.
-
-[![imagem](assets/learn-more-button.svg)](/help/data-views/derived-fields/derived-fields.md)
 
 >[!TAB Extensão BI*]
 
