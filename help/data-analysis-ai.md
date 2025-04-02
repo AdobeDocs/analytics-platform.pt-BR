@@ -7,9 +7,9 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 380ed5c9ee0c21ea9855a41728afec040637ce65
+source-git-commit: dff6355714f4e58917ccd995662e4fbae34ec69c
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1873'
 ht-degree: 3%
 
 ---
@@ -22,15 +22,15 @@ Usar o Agente de insights de dados para responder perguntas centradas em dados n
 
 ![Agente do Data Insights no Assistente de IA](assets/cja-ai-asst-da.gif)
 
-## Recursos dentro e fora do escopo da versão do Alpha
+## Recursos dentro e fora do escopo do Beta
 
-### Recursos do Alpha dentro do escopo
+### Recursos do Beta dentro do escopo
 
 | Recurso compatível | Descrição |
 | --- | --- |
 | **Criar e atualizar visualizações** | Gera uma tabela de forma livre e uma visualização associada (como uma linha, barra, rosca e assim por diante).<p>Exemplo: *Qual é o lucro entre SKUs de fevereiro a maio?* |
 | **Tipos de visualização com suporte** | <ul><li>Linha</li><li>Várias linhas</li><li>Tabela de forma livre</li><li>Barra</li><li>Rosca</li><li>Número do resumo</li></ul> |
-| **Detecção de prompt fora do escopo** | Se você enviar um prompt que está fora do escopo, como &quot;exportar este projeto&quot;, o Assistente responderá informando que a pergunta está fora do escopo. |
+| **Detecção de prompt fora do escopo** | Se você enviar um prompt que está fora do escopo, como &quot;exportar este projeto&quot;, o Agente de Insights de Dados responderá informando que a pergunta está fora do escopo. |
 | **Esclarecimento de questões** | Se você fizer uma pergunta que não tenha contexto suficiente para o Agente de insights de dados responder, ou que seja muito genérica, o Agente de insights de dados responderá com uma pergunta esclarecedora ou com opções sugeridas. Exemplos: <p>**Componentes**<ul><li>Métrica: *Qual métrica de &quot;receita&quot; você quis dizer?*</li><li>Dimension: *Em qual das &quot;regiões&quot; abaixo você deseja se concentrar?*</li><li>Filtro: *Qual filtro de &quot;Conta&quot; você deseja aplicar?*</li><li>Intervalo de datas: *Por &quot;último mês&quot;, você quis dizer o último mês completo ou os últimos 30 dias?*</li></ul>**Itens do Dimension**: qual &quot;nome da loja&quot; você quis dizer? (Por exemplo, Armazenar #5274, Armazenar #2949 e assim por diante.) |
 | **Voltas múltiplas** | O Agente de insights de dados responde a um prompt com o contexto de qualquer prompt anterior, permitindo que os usuários atualizem as visualizações e façam perguntas de acompanhamento. Exemplo: <ul><li>Prompt 1: *Eventos de tendência de março.*</li><li>Prompt 2: *Mostrar os dados de março a abril*</li></ul> |
 | **Verificabilidade** | A verificabilidade e a correção dos dados podem ser confirmadas por meio da tabela de forma livre gerada e da visualização de dados. Por exemplo, se um usuário solicitar *Pedidos de tendência no último mês*, você poderá confirmar se a métrica (&quot;pedidos&quot;) e o intervalo de datas (&quot;último mês&quot;) corretos foram selecionados no painel recém-gerado, na visualização de dados e na tabela de forma livre. |
@@ -41,7 +41,7 @@ Usar o Agente de insights de dados para responder perguntas centradas em dados n
 | Recurso incompatível | Descrição |
 | --- | --- |
 | **Resumo ou resposta embutida** | O agente do Data Insights não pode responder em linha no painel de chat com uma resposta resumida de um prompt do usuário. Exemplo de prompts fora do escopo:<ul><li>*Forneça um resumo dos insights do meu último prompt.*</li><li>*Resuma os destaques da visualização de linha.*</li></ul> |
-| **Esclarecimento de questões** | As perguntas de esclarecimento estão limitadas a componentes e itens de dimensão. O Agente de insights de dados não pode esclarecer aspectos como visualizações de dados, visualizações, granularidade de dados, comparação e escopo. Quando não é possível esclarecer perguntas, o Assistente assume como padrão o que você provavelmente está solicitando. Se retornar uma visualização ou granularidade de dados inesperada, você poderá usar o recurso de atualização em várias voltas para ajustar a visualização e os dados. |
+| **Esclarecimento de questões** | As perguntas de esclarecimento estão limitadas a componentes e itens de dimensão. O Agente de insights de dados não pode esclarecer aspectos como visualizações de dados, visualizações, granularidade de dados, comparação e escopo. Quando o esclarecimento de questões não puder ser usado, o Agente assumirá como padrão o que você provavelmente está solicitando. Se retornar uma visualização ou granularidade de dados inesperada, você poderá usar o recurso de atualização em várias voltas para ajustar a visualização e os dados. |
 | **Ações/Recursos do Workspace** | O Agente de insights de dados não pode realizar ações para um usuário no Workspace além de criar e atualizar visualizações. Por exemplo, ela não pode executar um dos seguintes procedimentos:<ul><li>Botões da interface de ação contextual (adicionar ao gráfico, novo painel, nova tabela)</li><li>Compartilhar</li><li>Exportar</li><li>Baixar</li><li>Gerenciar preferências do usuário</li><li>Preparar</li><li>Gerenciar visualização de dados</li><li>aplicativo Painéis do Analytics</li><li>Atribuição</li></ul> |
 | **Tipos de visualização sem suporte** | <ul><li>Fluxo</li><li>Fallout</li><li>Tabela de coorte</li><li>Área, Área empilhada</li><li>Barra empilhada</li><li>Marcador</li><li>Combo</li><li>Histograma</li><li>Barra horizontal, Barra horizontal empilhada</li><li>Resumo da métrica principal</li><li>Dispersão</li><li>Mudança de resumo</li><li>Texto</li><li>Mapa de árvore</li><li>Venn</li></ul> |
 
@@ -51,7 +51,7 @@ Os parâmetros a seguir controlam o acesso ao Agente de insights de dados na Cus
 
 * **Acesso à solução**: o Agente de Insights de Dados está disponível para clientes da Customer Journey Analytics Prime e da Ultimate. Não está disponível no Adobe Analytics.
 
-* **Acesso contratual**: se você não conseguir usar o Agente de Insights de Dados no Assistente de IA, entre em contato com o administrador da sua organização ou com o Representante de Conta da Adobe. Para que sua organização possa usar o Agente de insights de dados no Assistente de IA, você deve concordar com determinados termos legais relacionados à GenAI.
+* **Acesso contratual**: se você não conseguir usar o Agente de Insights de Dados no Assistente de IA, entre em contato com o administrador da sua organização ou com o Representante de Conta da Adobe. Antes de sua organização poder usar o Agente de insights de dados, você deve concordar com determinados termos legais relacionados à GenAI.
 
 * **Permissões**: no [!UICONTROL Adobe Admin Console], a permissão [!UICONTROL Ferramentas de Relatório] **[!UICONTROL Assistente de IA: Visualização de dados]** determina o acesso a esta ferramenta. Um [administrador do perfil de produto](https://helpx.adobe.com/br/enterprise/using/manage-product-profiles.html) precisa seguir estas etapas no [!UICONTROL Admin Console]:
    1. Navegue até **[!UICONTROL Admin Console]** > **[!UICONTROL Produtos e serviços]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Perfis de Produtos]**
@@ -90,7 +90,7 @@ Consulte [Controle de acesso](/help/technotes/access-control.md#access-control) 
 
    ![Ícone do Assistente de IA](/help/assets/ai-asst-icon.png)
 
-6. Na caixa de diálogo **[!UICONTROL Perguntar sobre o Customer Journey Analytics]**, na parte inferior da página, faça uma pergunta sobre visualização de dados no Assistente de IA.
+6. Na caixa de diálogo **[!UICONTROL Perguntar sobre o Customer Journey Analytics]**, na parte inferior da página, faça uma pergunta sobre visualização de dados usando o Agente de Insights de Dados.
 
    Para obter mais informações, consulte os exemplos a seguir.
 
@@ -102,7 +102,7 @@ Por exemplo, digamos que você esteja interessado nos pedidos que sua empresa re
 
 ![Solicitação de IA](/help/assets/ai-asst-prompt1.png)
 
-**Resposta:** o Agente de Insights de Dados no Assistente de IA coleta insights verificando os dados na visualização de dados, incluindo as métricas e os componentes. Ele traduz o prompt para as dimensões e métricas certas no intervalo de dados.
+**Resposta:** o Agente de Insights de Dados coleta insights verificando os dados na visualização de dados, incluindo as métricas e os componentes. Ele traduz o prompt para as dimensões e métricas certas no intervalo de dados.
 
 Como você pode ver, ele gerou automaticamente um gráfico de linhas e uma tabela de forma livre para mostrar os pedidos de julho.
 
@@ -114,13 +114,13 @@ Em seguida, você deseja ver a comparação de receita por região.
 
 **Prompt:** Na janela de prompt, digite *&quot;Mostrar receita por região.&quot;*
 
-**Resposta:** O Agente de Insights de Dados no Assistente de IA entende de forma inteligente que, por &quot;região&quot;, você quer dizer &quot;região do cliente&quot;. Ele produz um gráfico de barras que melhor mostra a receita por região:
+**Resposta:** O Agente do Data Insights entende de forma inteligente que por &quot;região&quot;, você quer dizer &quot;região do cliente&quot;. Ele produz um gráfico de barras que melhor mostra a receita por região:
 
 ![Gráfico de barras](/help/assets/ai-asst-result2.png)
 
 ### Exemplo 3
 
-Em seguida, além de entender a receita por região, você também deseja ver os dados para lucro por região. Em vez de repetir o prompt anterior, você pode solicitar que o Assistente de IA atualize a visualização e a tabela de forma livre mais recentes.
+Em seguida, além de entender a receita por região, você também deseja ver os dados para lucro por região. Em vez de repetir o prompt anterior, você pode solicitar que o Agente de insights de dados atualize a visualização e a tabela de forma livre mais recentes.
 
 **Prompt:** Na janela de prompt, digite *&quot;Adicionar lucro.&quot;*
 
@@ -134,7 +134,7 @@ Por fim, vamos analisar a receita por categoria de produto.
 
 **Prompt:** Na janela do prompt, digite *&quot;Proporção da receita por categoria do produto.&quot;*
 
-**Resposta:** Novamente, o Agente de Insights de Dados no Assistente de IA escolhe a visualização mais apropriada, neste caso a visualização **[!UICONTROL Rosca]**, para responder à pergunta.
+**Resposta:** Novamente, o Agente de Insights de Dados escolhe a visualização mais apropriada, neste caso a visualização **[!UICONTROL Rosca]**, para responder à pergunta.
 
 ![Rosca](/help/assets/ai-asst-result3.png)
 
@@ -171,9 +171,9 @@ Para obter os melhores resultados, considere as seguintes diretrizes:
 
 * Fazer perguntas diretas: a formulação direta de perguntas facilita que o Agente de insights de dados forneça insights claros e relevantes. Veja a seguir um exemplo de como fazer uma pergunta direta em um prompt: &quot;Qual é a receita média por categoria de produto este ano?&quot;
 
-Analise a tabela a seguir de termos de exemplo e frases que você pode usar em prompts com o Agente de Insights de Dados no Assistente de IA, juntamente com os tipos de respostas que você pode esperar.
+Analise a tabela a seguir de termos de exemplo e frases que você pode usar em prompts com o Agente de Insights de Dados, juntamente com os tipos de respostas que você pode esperar.
 
-Esses exemplos são projetados para ajudá-lo a se familiarizar com a forma como palavras ou estruturas específicas podem influenciar a saída do Assistente de IA, garantindo insights mais precisos e valiosos. O Agente de insights de dados no Assistente de IA usa IA generativa, de modo que as visualizações ou os dados selecionados podem variar um pouco entre prompts semelhantes.
+Esses exemplos foram projetados para ajudar você a se familiarizar com a forma como palavras ou estruturas específicas podem influenciar a saída do Agente de insights de dados, garantindo insights mais precisos e valiosos. O Agente de insights de dados usa IA generativa, de modo que as visualizações ou os dados selecionados podem variar um pouco entre prompts semelhantes.
 
 | Resultado desejado | Exemplo de termos e frases |
 | --- | --- |
@@ -187,9 +187,9 @@ Esses exemplos são projetados para ajudá-lo a se familiarizar com a forma como
 
 Depois de fazer cada pergunta, analise cuidadosamente a resposta fornecida pelo assistente. É crucial avaliar as visualizações geradas de forma abrangente antes de fornecer feedback.
 
-Considere o seguinte ao avaliar uma resposta do Agente de insights de dados no Assistente de IA:
+Considere o seguinte ao avaliar uma resposta do Agente de insights de dados:
 
-* Resposta do painel de chat ou modelo: avalie a resposta textual fornecida pelo Assistente. A resposta é apropriada de acordo com o contexto do seu prompt?
+* Resposta do painel de chat ou modelo: avalie a resposta textual fornecida. A resposta é apropriada de acordo com o contexto do seu prompt?
 
 * Visualização/gráfico: avalie a visualização. Essa é a visualização apropriada ou esperada para sua pergunta, ou você esperaria uma visualização diferente?
 
@@ -203,4 +203,4 @@ Após a seleção de miniaturas para cima ou miniaturas para baixo, faça uma se
 
 ## Perguntas e contato
 
-* Envie perguntas e comentários no canal do Alpha Slack: #cja-assistant-data-alpha
+* Envie perguntas e comentários no canal do Beta Slack: #data-insights-agent-in-cja-beta
