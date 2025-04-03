@@ -6,13 +6,13 @@ feature: Content Analytics
 hide: true
 hidefromtoc: true
 role: Admin
-source-git-commit: d835411beba3d40f67d2f93ee76aa5eda6f45041
+exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
+source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
-
 
 # Coleção de dados do Content Analytics
 
@@ -24,11 +24,13 @@ Este artigo explica em detalhes como o Analytics de conteúdo coleta dados
 As seguintes definições são usadas no contexto deste artigo:
 
 * **Experiência**: uma experiência é definida como o conteúdo de texto em uma página da Web inteira. Para a coleta de dados, o Content Analytics registra a Experience ID. O Content Analytics não registra o texto na página.
-* **Ativo**: uma imagem. O Content Analytics registra o URL do ativo.
-* **URL relevante**: a URL base mais quaisquer parâmetros que direcionem o conteúdo na página.
 * **Experience ID**: uma combinação exclusiva de URL relevante e versão de experiência.
    * Você especifica, como parte da [configuração](configuration.md), quais parâmetros são relevantes para qualquer URL completa.
-   * Você pode definir o [identificador de versão](manual.md#versioning) que é usado. Para a coleta de dados, a versão não é considerada. Somente o url relevante é coletado.
+   * Você pode definir o [identificador de versão](manual.md#versioning) que é usado.
+* **Ativo**: uma imagem. O Content Analytics registra o URL do ativo.
+* **ID do ativo**: a URL do ativo.
+* **URL relevante**: a URL base mais quaisquer parâmetros que direcionem o conteúdo na página.
+
 
 ## Funcionalidade
 
@@ -38,7 +40,7 @@ A biblioteca do Content Analytics coleta dados quando:
 * A URL da página está configurada na [extensão do Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, parte da biblioteca de marcas incluída.
 
 
-### Evento do Content Analytics
+## Evento do Content Analytics
 
 Um evento do Content Analytics consiste em:
 
@@ -50,7 +52,15 @@ Um evento do Content Analytics consiste em:
 * Exibições de ativos (se houver e se configurado)
 * Cliques no ativo (se houver e se estiver configurado)
 
-#### Exibições ou cliques registrados
+
+Os eventos do Content Analytics são coletados como uma sequência de:
+
+1. [Uma exibição gravada ou clique](#recorded-view-or-click).
+1. [Um evento (comportamental) regular ou específico](#regular-or-specific-behaviorial-event).
+
+A Content Analytics coleta dados dessa maneira para refletir essa sequência, em vez de coletar uma exibição ou clicar separadamente da coleta do evento imediatamente após essa exibição ou clique. Essa maneira de coletar dados de análise de conteúdo também reduz a quantidade de dados coletados. coleção de dados.
+
+### Exibição gravada ou clique
 
 Uma exibição de ativo é registrada quando:
 
@@ -73,26 +83,19 @@ Um clique de experiência é registrado quando:
 * Qualquer clique ocorre em um link na página para a qual as experiências estão habilitadas.
 
 
-#### Eventos enviados
+### Evento regular ou específico (comportamental)
 
-Os eventos Content Analytics são enviados quando as duas condições a seguir ocorrem:
+Os acionadores para acionar um evento regular ou específico (comportamental) no contexto do Content Analytics são:
 
-* O conteúdo é enviado, o que ocorre quando:
-
-   * Uma exibição ou um clique de ativo é registrado.
-   * Uma visualização de experiência ou clique é gravado.
-
-* Um acionador para enviar um evento é acionado, o que ocorre quando:
-
-   * O Web SDK ou o AppMeasurement envia um evento.
-   * A visibilidade muda para oculta, por exemplo:
-      * Descarregamentos de página
-      * Alternar guia
-      * Minimizar navegador
-      * Fechar navegador
-      * Tela de bloqueio
-   * O URL muda, o que resulta em um URL relevante modificado.
-   * Uma exibição de ativo excede o limite de lote de 32.
+* O Web SDK ou o AppMeasurement envia um evento.
+* A visibilidade muda para oculta, por exemplo:
+   * Descarregamentos de página
+   * Alternar guia
+   * Minimizar navegador
+   * Fechar navegador
+   * Tela de bloqueio
+* O URL muda, o que resulta em um URL relevante modificado.
+* Uma exibição de ativo excede o limite de lote de 32.
 
 
 ## Esquemas

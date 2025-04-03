@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: ceb6ac97686165c2883ad8057730bb09e4d7ad16
+source-git-commit: 411cd199e758da57d94faa9efb7f488d05163750
 workflow-type: tm+mt
-source-wordcount: '2428'
+source-wordcount: '2469'
 ht-degree: 14%
 
 ---
@@ -249,6 +249,11 @@ Nesta seção, você configura como coletar os dados de análise de conteúdo.
 >title="Coleção de dados"
 >abstract="Você pode editar as configurações para ativos na extensão Adobe Content Analytics na propriedade Tags associada à configuração atual."
 
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_tags_disabled_description "
+>title="Propriedade de tags desabilitada"
+>abstract="A extensão do Content Analytics já está ativa."
+
 <!-- markdownlint-enable MD034 -->
 
 #### Nova configuração {#new-configuration}
@@ -277,6 +282,11 @@ Em uma nova configuração, é necessário definir se você deseja usar uma prop
 * Indique quais ativos devem ser incluídos ou excluídos ao coletar dados para o Content Analytics.
 
    * Especifique uma cadeia de caracteres de expressão regular para **[!UICONTROL Assets a ser incluída/excluída]**. Por exemplo: `/^(?!.*(logo\.jpg|\.svg)).*$/` para excluir todas as imagens de logotipo do JPEG e do SVG do Content Analytics. Esvazie as expressões regulares usando `/`.
+
+>[!IMPORTANT]
+>
+>Caso já tenha uma implementação do Web SDK usando JavaScript e não usando tags, é necessário remover manualmente a extensão automática incluída do Web SDK da propriedade de tags recém-criada.
+
 
 
 #### Configuração existente {#existing-configuration}
