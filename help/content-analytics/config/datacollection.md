@@ -7,14 +7,16 @@ hide: true
 hidefromtoc: true
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 795116d41e40bf89ebf31572fb718e2bcb58a6c8
+source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '510'
 ht-degree: 1%
 
 ---
 
 # Coleção de dados do Content Analytics
+
+{{release-limited-testing}}
 
 Este artigo explica em detalhes como o Analytics de conteúdo coleta dados
 
@@ -23,8 +25,8 @@ Este artigo explica em detalhes como o Analytics de conteúdo coleta dados
 
 As seguintes definições são usadas no contexto deste artigo:
 
-* **Experiência**: uma experiência é definida como o conteúdo de texto em uma página da Web inteira. Para a coleta de dados, o Content Analytics registra a Experience ID. O Content Analytics não registra o texto na página.
-* **Experience ID**: uma combinação exclusiva de URL relevante e versão de experiência.
+* **Experiência**: uma experiência é definida como o conteúdo de texto em uma página da Web inteira. Para a coleta de dados, o Content Analytics registra a Experience ID, que se baseia no url da página. Posteriormente, o texto na página é capturado por meio do serviço de recuperação.
+* **Experience ID**: uma combinação exclusiva de URL relevante (URL base mais quaisquer parâmetros que direcionem o conteúdo da página) e [versão da experiência](manual.md#versioning).
    * Você especifica, como parte da [configuração](configuration.md), quais parâmetros são relevantes para qualquer URL completa.
    * Você pode definir o [identificador de versão](manual.md#versioning) que é usado.
 * **Ativo**: uma imagem. O Content Analytics registra o URL do ativo.
@@ -64,7 +66,7 @@ A Content Analytics coleta dados dessa maneira para refletir essa sequência, em
 
 Uma exibição de ativo é registrada quando:
 
-* O ativo não foi excluído de acordo com a configuração de extensão do ACA.
+* O ativo não foi excluído de acordo com a configuração de extensão do Content Analytics.
 * O ativo é de 75% na visualização.
 * Esse ativo ainda não foi registrado para esta página.
 
@@ -100,7 +102,7 @@ Os acionadores para acionar um evento regular ou específico (comportamental) no
 
 ## Esquemas
 
-Os dados do Content Analytics são coletados em conjuntos de dados no Experience Platform, com base em esquemas específicos do Content Analytics. Os esquemas de referência estão disponíveis publicamente e são usados em uma implementação padrão do Content Analytics.
+Os dados do Content Analytics são coletados em conjuntos de dados no Experience Platform, com base em esquemas específicos do Content Analytics. Os esquemas de referência estão disponíveis publicamente:
 
 * [Esquema de ativo digital](https://github.com/adobe/xdm/blob/master/components/classes/digital-asset.schema.json)
 * [Esquema de experiência digital](https://github.com/adobe/xdm/blob/master/components/classes/digital-experience.schema.json)
