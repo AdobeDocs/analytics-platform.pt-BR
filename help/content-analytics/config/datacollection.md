@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 89f7d8b388ab8c742712d748813520a51c736003
+source-git-commit: 02d24416bd1f56417005dfa1b693964073fb8a59
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '512'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Os eventos do Content Analytics são coletados como uma sequência de:
 1. [Uma exibição gravada ou clique](#recorded-view-or-click).
 1. [Um evento (comportamental) regular ou específico](#regular-or-specific-behaviorial-event).
 
-A Content Analytics coleta dados dessa maneira para refletir essa sequência, em vez de coletar uma exibição ou clicar separadamente da coleta do evento imediatamente após essa exibição ou clique. Essa maneira de coletar dados de análise de conteúdo também reduz a quantidade de dados coletados. coleção de dados.
+A Content Analytics coleta dados dessa maneira para refletir essa sequência, em vez de coletar uma exibição ou clicar separadamente da coleta do evento imediatamente após essa exibição ou clique. Essa maneira de coletar dados de análise de conteúdo também reduz a quantidade de dados coletados.
 
 ### Exibição gravada ou clique
 
@@ -71,7 +71,7 @@ Uma exibição de ativo é registrada quando:
 Um clique de ativo é registrado quando:
 
 * O ativo foi visualizado.
-* O ativo não foi excluído de acordo com a configuração de extensão do ACA.
+* O ativo não foi excluído de acordo com a configuração de extensão do Content Analytics.
 * Um clique diretamente no ativo, que é um link, que leva a outra página.
 
 Uma visualização de experiência é registrada quando:
@@ -95,7 +95,7 @@ Os acionadores para acionar um evento regular ou específico (comportamental) no
    * Fechar navegador
    * Tela de bloqueio
 * O URL muda, o que resulta em um URL relevante modificado.
-* Uma exibição de ativo excede o limite de lote de 32.
+* As exibições de ativos registradas e prontas para serem enviadas excedem o número de 32.
 
 
 ## Esquemas
