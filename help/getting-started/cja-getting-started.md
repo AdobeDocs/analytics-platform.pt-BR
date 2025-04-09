@@ -1,18 +1,18 @@
 ---
-title: Introdução ao Customer Journey Analytics
+title: Guia de início rápido do Customer Journey Analytics
 description: Entenda os pré-requisitos e o fluxo de trabalho necessários para implementar o Customer Journey Analytics.
 exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 01df8b8b55ff8e8c0826bf98adfbd85d3412e6bb
-workflow-type: ht
-source-wordcount: '787'
-ht-degree: 100%
+source-git-commit: 7b824c914187854e9779ebdc51c5f5d6e77f6b16
+workflow-type: tm+mt
+source-wordcount: '786'
+ht-degree: 99%
 
 ---
 
-# Introdução ao Customer Journey Analytics
+# Guia de início rápido
 
 Para implementar o Customer Journey Analytics, é necessário seguir esse fluxo de trabalho. Algumas tarefas iniciais são executadas na Adobe Experience Platform e outras no Customer Journey Analytics.
 
