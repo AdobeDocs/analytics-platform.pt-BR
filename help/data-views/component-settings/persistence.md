@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 80%
+source-wordcount: '1001'
+ht-degree: 73%
 
 ---
 
@@ -84,14 +84,20 @@ Detalhes sobre as configurações de alocação disponíveis.
   | Primeiro conhecimento | C | C | C | C | C |
   | Último conhecimento | A | A | A | A | A |
 
+
 ## Configurações de [!UICONTROL Expiração]
 
 Detalhes sobre as configurações de expiração disponíveis.
 
 * **Sessão**: expira após uma determinada sessão. Janela de expiração padrão.
-* **Pessoa**: expira ao final da janela de relatório.
+* **Janela de relatório da pessoa**: expira ao final da janela de relatório.
+* **Janela de Relatórios de Conta Global** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao final da janela de relatórios.
+* **Janela de relatório de conta** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao final da janela de relatório.
+* **Janela de relatório de oportunidade** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao final da janela de relatório.
+* **Janela de Relatório do Grupo de Compras** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao final da janela de relatório.
 * **Hora personalizada**: expira após um período específico (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente. Ao usar a expiração com base em tempo, os valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
 * **Métrica**: quando essa métrica é vista em um evento, expire imediatamente o valor persistente na dimensão. Você pode usar qualquer métrica como o fim da expiração dessa dimensão. Essa opção de expiração só está disponível para as configurações de alocação Original e Mais recente.
+
 
 ## [!UICONTROL Dimensão de ligação]
 
@@ -111,6 +117,6 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões 
 
 Uma lista suspensa que permite escolher uma métrica que atue como um acionador de ligação. As opções válidas incluem métricas incluídas na visualização de dados.
 
-Essa configuração só aparece quando a Dimensão de ligação está mais abaixo no array de objetos do que no componente. Quando a métrica de ligação está presente em um evento, os valores de dimensão são copiados da dimensão de nível de evento para o nível de esquema inferior da dimensão de ligação.
+Essa configuração só aparece quando a Dimensão de ligação está mais abaixo na matriz de objetos do que no componente. Quando a métrica de ligação está presente em um evento, os valores de dimensão são copiados da dimensão de nível de evento para o nível de esquema inferior da dimensão de ligação.
 
 Veja o segundo exemplo em [Uso de dimensões e métricas de ligação no Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) para obter mais informações sobre como usar métricas de ligação de maneira eficaz.

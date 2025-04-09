@@ -1,12 +1,12 @@
 ---
-description: O Construtor de filtros fornece uma tela para arrastar e soltar Dimension, Filtros e Eventos métricos para filtrar pessoas com base na lógica, nas regras e nos operadores da hierarquia do contêiner. Essa ferramenta de desenvolvimento integrada permite criar e salvar filtros simples ou complexos que identificam os atributos e as ações da pessoa nas visitas e eventos.
+description: O construtor de filtros fornece uma tela para arrastar e soltar Dimensões de métricas, Filtros e Eventos para filtrar pessoas com base na lógica, nas regras e nos operadores da hierarquia do contêiner. Essa ferramenta de desenvolvimento integrada permite criar e salvar filtros simples ou complexos que identificam os atributos e as ações da pessoa nas visitas e eventos.
 title: Criar filtros
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1570'
 ht-degree: 10%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Visualização de dados"
->abstract="Compara os dados desse filtro com os da visualização de dados. A porcentagem de visualização é baseada no número total na visualização de dados dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda pode estar preenchendo os dados."
+>abstract="Compara os dados desse filtro com os da visualização de dados. A porcentagem de visualização é baseada no número total na visualização de dados dos **últimos 90 dias**.<br><br/>Se a visualização não carregar, a conexão ainda pode estar preenchendo os dados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -61,7 +61,7 @@ A caixa de diálogo **[!UICONTROL Construtor de filtros]** é usada para criar f
    {style="table-layout:auto"}
 
 1. Para verificar se a definição do filtro está correta, use a visualização constantemente atualizada dos resultados do filtro na parte superior direita.
-1. Para criar um público-alvo a partir do filtro e compartilhá-lo com o Experience Platform, selecione **[!UICONTROL Criar público-alvo a partir do filtro]**. Consulte [Criar e publicar públicos-alvo](/help/components/audiences/publish.md) para obter mais informações.
+1. Para criar um público-alvo a partir do filtro e compartilhá-lo com a Experience Platform, selecione **[!UICONTROL Criar público-alvo a partir do filtro]**. Consulte [Criar e publicar públicos-alvo](/help/components/audiences/publish.md) para obter mais informações.
 1. Selecionar:
    * **[!UICONTROL Salvar]** para salvar o filtro.
    * **[!UICONTROL Salvar como]** para salvar uma cópia do filtro.
@@ -76,7 +76,7 @@ Use o Criador de definições para criar sua definição de filtro. Nessa constr
 Você pode configurar o tipo e o escopo de sua definição:
 
 1. Para especificar o tipo da definição, especifique se deseja que o build inclua ou exclua a definição. Selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Opções]** e, na lista suspensa, selecione **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]**.
-1. Para especificar o escopo da definição, selecione na lista suspensa **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]** se deseja que o escopo da definição seja **[!UICONTROL Evento]**, **[!UICONTROL Sessão]** ou **[!UICONTROL Pessoa]**.
+1. Para especificar o escopo da definição, selecione na lista suspensa **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]** se deseja que o escopo da definição seja **[!UICONTROL Evento]**, **[!UICONTROL Sessão]**, **[!UICONTROL Pessoa]**, **[!UICONTROL Conta Global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} ou **[!UICONTROL Grupo de compras]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Você sempre pode alterar essas configurações mais tarde.
 
@@ -84,11 +84,11 @@ Você sempre pode alterar essas configurações mais tarde.
 
 Uma parte essencial da construção da definição de filtro é usar dimensões, métricas, filtros existentes e intervalos de datas. Todos esses componentes estão disponíveis no painel de componentes no Construtor de filtros.
 
-![Comece a criar uma definição](assets/start-building-filter.gif){width=100%}
+![Iniciar a criação de uma definição](assets/start-building-filter.gif){width=100%}
 
 Para adicionar um componente:
 
-1. Arraste e solte um componente do painel componentes em **[!UICONTROL Arraste e solte Métricas, Filtros e/ou Dimension aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
+1. Arraste e solte um componente do painel componentes em **[!UICONTROL Arraste e solte Métricas, Filtros e/ou Dimensões aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
 1. Especifique os detalhes do componente. Por exemplo, selecione um valor de **[!UICONTROL Selecionar valor]**. Ou insira um valor. O que e como você pode especificar um ou mais valores dependem do componente e do operador.
 1. Opcionalmente, modifique o operador padrão. Por exemplo, de **[!UICONTROL é igual a]** a **[!UICONTROL é igual a qualquer um de]**. Consulte [Operadores](operators.md) para obter uma visão geral detalhada dos operadores disponíveis.
 
@@ -113,7 +113,7 @@ Para excluir um componente:
 * Para adicionar outro componente ao contêiner, arraste e solte um componente do painel do componente no contêiner. Use a linha de inserção azul como guia.
 * Para adicionar outro componente fora do contêiner, arraste e solte um componente do painel do componente fora do contêiner, mas dentro do contêiner de definição principal. Use a linha de inserção azul como guia.
 * Para modificar a lógica entre componentes em um contêiner, entre contêineres ou entre um contêiner e um componente, selecione o **[!UICONTROL And]**, **[!UICONTROL Or]**, **[!UICONTROL Then]** apropriado. Ao selecionar Then, você transforma o filtro em um filtro sequencial. Consulte [Criar filtro sequencial](seg-sequential-build.md) para obter mais informações.
-* Para alternar o nível de contêiner, selecione ![PáginaWeb](/help/assets/icons/WebPage.svg) **[!UICONTROL Evento]**, ![Visita](/help/assets/icons/Visit.svg) **[!UICONTROL Sessão]** ou ![Usuário](/help/assets/icons/User.svg) **[!UICONTROL Pessoa]**.
+* Para alternar o nível de contêiner, selecione ![Globo](/help/assets/icons/Globe.svg) **[!UICONTROL Conta Global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Conta](/help/assets/icons/Account.svg) **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Oportunidade](/help/assets/icons/Opportunity.svg) **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Grupo de Compras](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL Grupo de Compras]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Página da Web](/help/assets/icons/WebPage.svg) **[!UICONTROL Evento]**, ![Visita](/help/assets/icons/Visit.svg) **[!UICONTROL Sessão]** ou ![Usuário](/help/assets/icons/User.svg) **[!UICONTROL Pessoa]**.
 
 Você pode usar a ![Configuração](/help/assets/icons/Setting.svg) em um contêiner para as seguintes ações:
 
@@ -135,7 +135,7 @@ Você pode criar filtros que contêm intervalos de datas contínuas. Assim, voc�
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intervalos de datas contínuos em segmentos](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intervalos de datas contínuos em segmentos](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

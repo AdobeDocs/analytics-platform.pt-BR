@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '1900'
-ht-degree: 99%
+source-wordcount: '2120'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ A criação de uma visualização de dados envolve criar métricas e dimensões 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -34,9 +34,22 @@ Criar ou editar uma visualização de dados:
 
 Para configurar uma visualização de dados nova ou existente:
 
+>[!BEGINTABS]
+
+>[!TAB Padrão ]
+
+![Configurar visualização de dados](assets/dataview-configure.png)
+
+>[!TAB B2B edition]
+
+![Configurar visualização de dados B2B](assets/dataview-configure-b2b.png)
+
+>[!ENDTABS]
+
+
 1. Selecione a guia **[!UICONTROL Configurar]** (se ainda não estiver ativa).
 
-   ![Configurar visualização de dados](assets/dataview-configure.png)
+
 1. Especifique os detalhes de [!UICONTROL configurações], [!UICONTROL container] e [!UICONTROL calendário] (veja abaixo).
 1. Selecione **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
@@ -56,10 +69,10 @@ Fornece configurações abrangentes para a visualização de dados.
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL **Conexão**] | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém um ou mais conjuntos de dados da Adobe Experience Platform. |
-| [!UICONTROL **Nome**] | Obrigatório. O nome da visualização de dados. Esse valor aparece na lista suspensa no canto superior direito do Analysis Workspace. |
-| [!UICONTROL **ID externa**] | Obrigatório. O nome da visualização de dados que você pode usar em fontes externas, como ferramentas de business intelligence. O padrão é `unspecified`. Se você não especificar uma ID externa, o nome será gerado a partir do Nome da visualização de dados, substituindo espaços por sublinhados. |
-| [!UICONTROL **Descrição**] | Opcional. A Adobe recomenda uma descrição detalhada para que os usuários entendam por que a visualização de dados existe e para quem ela foi projetada. |
+| **[!UICONTROL Conexão]** | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém um ou mais conjuntos de dados da Adobe Experience Platform. |
+| **[!UICONTROL Nome]** | Obrigatório. O nome da visualização de dados. Esse valor aparece na lista suspensa no canto superior direito do Analysis Workspace. |
+| **[!UICONTROL ID externa]** | Obrigatório. O nome da visualização de dados que você pode usar em fontes externas, como ferramentas de business intelligence. O padrão é `unspecified`. Se você não especificar uma ID externa, o nome será gerado a partir do Nome da visualização de dados, substituindo espaços por sublinhados. |
+| **[!UICONTROL Descrição]** | Opcional. A Adobe recomenda uma descrição detalhada para que os usuários entendam por que a visualização de dados existe e para quem ela foi projetada. |
 
 {style="table-layout:auto"}
 
@@ -92,9 +105,13 @@ Determina o nome dos containers para a visualização de dados. Os nomes dos con
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL **Nome do container de pessoas**] | [!UICONTROL Pessoa] (padrão). O container [!UICONTROL Pessoa] inclui todas as sessões e eventos de pessoas dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente (por exemplo, &quot;Visitante&quot; ou &quot;Usuário&quot;), você poderá renomear o container aqui. |
-| [!UICONTROL **Nome do container da sessão**] | [!UICONTROL Sessão] (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
-| [!UICONTROL **Nome do container do evento**] | [!UICONTROL Evento] (padrão). O container [!UICONTROL Evento] define eventos individuais em um conjunto de dados. Se sua organização usar um termo diferente (por exemplo, &quot;Ocorrências&quot; ou &quot;Exibições de página&quot;), você poderá renomear o container aqui. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do contêiner de Conta Global ]** | `Global Account` (padrão). O contêiner [!UICONTROL Conta Global] inclui todas as sessões e eventos para contas globais dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente, você poderá renomear o container aqui. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do contêiner de conta ]** | `Account` (padrão). O contêiner [!UICONTROL Conta] inclui todas as sessões e eventos para contas dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente, você poderá renomear o container aqui. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do contêiner de oportunidade ]** | `Opportunity` (padrão). O contêiner [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente, você poderá renomear o container aqui. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do contêiner do grupo de compra ]** | `Buying Group` (padrão). O contêiner [!UICONTROL Grupo de compras] inclui todas as sessões e eventos para grupos de compras dentro do período especificado. Se sua organização usar um termo diferente, você poderá renomear o container aqui. |
+| **[!UICONTROL Nome do container de pessoas]** | `Person` (padrão). O container [!UICONTROL Pessoa] inclui todas as sessões e eventos de pessoas dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente (por exemplo, &quot;Visitante&quot; ou &quot;Usuário&quot;), você poderá renomear o container aqui. |
+| **[!UICONTROL Nome do container da sessão]** | `Session` (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
+| **[!UICONTROL Nome do container do evento]** | `Event` (padrão). O container [!UICONTROL Evento] define eventos individuais em um conjunto de dados. Se sua organização usar um termo diferente (por exemplo, &quot;Ocorrências&quot; ou &quot;Exibições de página&quot;), você poderá renomear o container aqui. |
 
 {style="table-layout:auto"}
 
@@ -179,5 +196,11 @@ Você pode filtrar ![Ícone de filtro](https://spectrum.adobe.com/static/icons/w
 ### Configurações da sessão
 
 Determine o período de inatividade entre eventos antes de uma sessão expirar e um novo ser iniciado. É necessário um período. Ou também é possível forçar o início de uma nova sessão quando um evento contém uma determinada métrica. Consulte [Configurações de sessão](session-settings.md) para obter mais detalhes.
+
+### Visualização de dados
+
+A visualização de dados compara (para os vários containers) os dados dessa visualização de dados com os dados da conexão. A porcentagem de visualização se baseia no número total na conexão dos últimos 90 dias.
+
+Se a visualização não estiver carregando, a conexão ainda poderá ser de preenchimento retroativo.
 
 Depois que todas as configurações desejadas forem especificadas, clique em **[!UICONTROL Salvar e concluir]**.

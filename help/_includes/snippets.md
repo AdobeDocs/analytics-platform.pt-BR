@@ -1,8 +1,8 @@
 ---
-source-git-commit: 01459765d84a46d170c1619ffeae184957bbf839
+source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
-source-wordcount: '3384'
-ht-degree: 21%
+source-wordcount: '3782'
+ht-degree: 19%
 
 ---
 # Trechos
@@ -138,8 +138,13 @@ As janelas de retrospectiva representam quanto tempo uma conversão deve retroce
 * **30 Dias**: retroage até 30 dias a partir do momento em que a conversão ocorreu.
 * **60 Dias**: retroage até 60 dias a partir do momento da conversão.
 * **90 Dias**: retroage até 90 dias a partir do momento da conversão.
+* **13 Meses** [!BADGE B2B edition]{type=Informative}: retroage até 13 meses a partir do momento da conversão.
 * **Sessão**: retroage até o início da sessão em que ocorreu uma conversão. As janelas de retrospectiva de sessão respeitam o [tempo limite de sessão](/help/data-views/create-dataview.md#session-settings) modificado em uma visualização de dados.
 * **Pessoa (Janela de Relatório)**: verifica todas as visitas até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da pessoa será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
+* **Conta Global (Janela de Relatórios)** [!BADGE B2B edition]{type=Informative}: verifica todas as contas globais até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da conta global será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
+* **Contas (Janela de Relatório)** [!BADGE B2B edition]{type=Informative}: verifica todas as contas até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da conta será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
+* **Oportunidade (Janela de Relatório)** [!BADGE B2B edition]{type=Informative}: verifica todas as oportunidades até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da oportunidade será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
+* **Grupo de compras (Janela de Relatório)** [!BADGE B2B edition]{type=Informative}: verifica todos os grupos de compras até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas do relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva do grupo de compras será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
 * **Tempo personalizado:** permite que você defina uma janela de pesquisa personalizada a partir de quando ocorreu uma conversão. Você pode especificar o número de minutos, horas, dias, semanas, meses ou trimestres. Por exemplo, se uma conversão ocorresse em 20 de fevereiro, uma janela de pesquisa de cinco dias avaliaria todos os pontos de contato de dimensão de 15 a 20 de fevereiro no modelo de atribuição.
 
 ## Exemplo de atribuição {#attribution-example}
@@ -225,3 +230,18 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 >
 >Este artigo faz parte do rascunho da documentação do Content Analytics. Todos os rascunhos de documentação do Content Analytics ainda estão sujeitos a alterações e nenhuma obrigação legal pode ser derivada da versão atual deste artigo ou de qualquer outro artigo que faça parte da documentação do Content Analytics.
 >
+
+
+## Rascunho da documentação do Customer Journey Analytics B2B edition {#draft-b2b}
+
+>[!AVAILABILITY]
+>
+>A funcionalidade descrita neste artigo e qualquer outro artigo ou funcionalidade marcado com o [!BADGE B2B edition]{type=Informative}.  O está na fase de Teste limitado da versão do e pode ainda não estar disponível em seu ambiente. <br/>Além disso, as funcionalidades e a documentação do [!BADGE B2B edition]{type=Informative} das funcionalidades do [!BADGE B2B edition]{type=Informative} estão sujeitas a alterações e não podem ser derivadas de obrigações legais.<br/>Esta observação será removida quando a funcionalidade estiver disponível. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
+>
+
+
+## B2B edition {#b2b-edition}
+
+>[!INFO]
+>
+>Nesta documentação, artigos ou funcionalidades B2B específicos, disponíveis apenas com o Customer Journey Analytics B2B edition, são marcados com [!BADGE B2B edition]{type=Informative}.
