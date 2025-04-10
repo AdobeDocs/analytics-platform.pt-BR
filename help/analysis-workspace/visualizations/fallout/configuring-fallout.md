@@ -4,10 +4,10 @@ title: Configurar uma visualização de fallout
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 91%
+source-wordcount: '735'
+ht-degree: 88%
 
 ---
 
@@ -52,7 +52,7 @@ Você pode definir a definição de caminho em dimensões, métricas e filtros. 
    | Opção | Descrição |
    |---|---|
    | **[!UICONTROL Caminho eventual]** (padrão) | Contagem de pessoas que *eventualmente* chegarão na próxima página do caminho, mas não necessariamente no próximo evento. |
-   | **[!UICONTROL Próximo evento]** | Contagem de pessoas que chegarão na próxima página do caminho no próximo evento. |
+   | **[!UICONTROL Próximo evento]** | São contadas as pessoas que chegarão à próxima página do caminho no próximo evento. |
 
 
 ## Configurações  {#settings}

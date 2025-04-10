@@ -4,7 +4,7 @@ description: Entenda para que os filtros são usados e como criar um filtro simp
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 5fbb228fc02304be2246f0b49cb49de7f160b227
+source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 8%
@@ -20,11 +20,11 @@ Os filtros podem ser baseados em:
 
 - atributos (tipo de navegador, dispositivo, número de visitas, país, gênero),
 - interações (campanhas, pesquisa por palavra-chave, mecanismo de pesquisa),
-- saídas e entradas (pessoas do Facebook, uma página inicial definida, domínio de referência, evento de geofence),
+- saídas e entradas (pessoas do Facebook, uma página de aterrissagem definida, domínio de referência, evento de geofence),
 - variáveis personalizadas (campo de formulário, categorias definidas, ID do cliente),
 - e outros critérios.
 
-Consulte [Criar filtros](/help/components/filters/create-filters.md) para obter as várias opções disponíveis para criar filtros. Em seguida, você compila, modifica e salva a definição de um filtro no [Construtor de filtros](filter-builder.md). Como alternativa, você pode criar filtros rápidos usando o [Construtor de filtros rápidos](quick-filters.md). E você também pode gerar filtros de visualizações no Workspace, por exemplo, usando a visualização [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu).
+Consulte [Criar filtros](/help/components/filters/create-filters.md) para obter as várias opções disponíveis para criar filtros. Em seguida, você compila, modifica e salva a definição de um filtro no [Construtor de filtros](filter-builder.md). Como alternativa, crie filtros rápidos usando o [Construtor de filtros rápidos](quick-filters.md). E você também pode gerar filtros de visualizações no Workspace, por exemplo, usando a visualização [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu).
 
 Você usa o [Gerenciador de filtros](manage-filters.md) para gerenciar filtros.
 
@@ -62,7 +62,7 @@ Filtros regulares permitem identificar dados (pessoas, sessões, eventos) com ba
 
 >[!IMPORTANT]
 >
->Você deve ter o pacote **Select** para criar filtros sequenciais entre canais. Entre em contato com o administrador se não tiver certeza do pacote de Customer Journey Analytics que possui.
+>Você deve ter o pacote **Select** para criar filtros sequenciais entre canais. Entre em contato com o administrador se não tiver certeza do pacote do Customer Journey Analytics que possui.
 
 Os filtros sequenciais permitem identificar dados (pessoas, sessões, eventos) com base na navegação (exibições de página no site, interações com cenas no aplicativo móvel ou uso de um menu em um decodificador de sinais). Os filtros sequenciais ajudam você a identificar, por exemplo, o que uma pessoa gosta e o que ela evita. Use o operador lógico Then para definir um filtro sequencial. Consulte [Filtros sequenciais](seg-sequential-build.md) para obter mais informações.
 
