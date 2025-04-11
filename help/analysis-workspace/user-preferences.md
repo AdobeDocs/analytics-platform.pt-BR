@@ -8,7 +8,7 @@ role: User
 source-git-commit: 827ab36b27eee1b0af46ff1c653f13b1accfe105
 workflow-type: tm+mt
 source-wordcount: '3632'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -185,23 +185,23 @@ Selecione os títulos da seção vinculada para obter mais informações e conte
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultflowcontainer"
->title="Contêiner padrão"
->abstract="Selecione o contêiner padrão a ser usado para visualizações de [!UICONTROL Fluxo]. Se a visualização de dados selecionada não contiver o contêiner padrão selecionado, a visualização [!UICONTROL Fluxo] alternará automaticamente para outro contêiner primário."
+>title="Container padrão"
+>abstract="Selecione o container padrão a ser usado para visualizações de [!UICONTROL fluxo]. Se a visualização de dados selecionada não contiver o container padrão escolhido, a visualização de [!UICONTROL fluxo] utilizará automaticamente outro container principal."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultfalloutcontainer"
->title="Contêiner padrão"
->abstract="Selecione o contêiner padrão a ser usado para visualizações de [!UICONTROL Fallout]. Se a visualização de dados selecionada não contiver o contêiner padrão selecionado, a visualização [!UICONTROL Fallout] mudará automaticamente para outro contêiner primário."
+>title="Container padrão"
+>abstract="Selecione o container padrão a ser usado para as visualizações de [!UICONTROL fallout]. Se a visualização de dados selecionada não contiver o container padrão escolhido, a visualização de [!UICONTROL fallout] utilizará automaticamente outro container principal."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaulthistogramcountingmethod"
 >title="Método de contagem padrão"
->abstract="Selecione o método de contagem padrão a ser usado para visualizações de [!UICONTROL Histograma]. Se a visualização de dados selecionada não contiver o método de contagem padrão selecionado, a visualização do [!UICONTROL Histograma] mudará automaticamente para outro método de contagem principal."
+>abstract="Selecione o método de contagem padrão a ser usado para visualizações de [!UICONTROL histograma]. Se a visualização de dados selecionada não contiver o método de contagem padrão escolhido, a visualização de [!UICONTROL histograma] utilizará automaticamente outro método de contagem principal."
 
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_defaultjourneycanvascontainer"
->title="Contêiner padrão"
->abstract="Selecione o contêiner padrão a ser usado para visualizações de [!UICONTROL tela de Jornada]. Se a visualização de dados selecionada não contiver o contêiner padrão selecionado, a visualização [!UICONTROL tela de Jornada] será alternada automaticamente para outro contêiner primário."
+>title="Container padrão"
+>abstract="Selecione o container padrão a ser usado para visualizações de [!UICONTROL tela da jornada]. Se a visualização de dados selecionada não contiver o container padrão escolhido, a visualização de [!UICONTROL tela da jornada] utilizará automaticamente outro container principal."
 
 
 Você pode atualizar as preferências de visualização para todos os novos projetos criados no Analysis Workspace. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).

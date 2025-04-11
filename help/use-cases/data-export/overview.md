@@ -8,7 +8,7 @@ exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 source-git-commit: efb961c571ddcde1017e6bf2080fc2a97c28bb13
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 1%
+ht-degree: 7%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 1%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-data-feeds-step"
->title="Usar recursos de exportação semelhantes aos Feeds de dados"
->abstract="Uma substituição exata para Feeds de dados ainda não está disponível no Customer Journey Analytics. No entanto, uma funcionalidade semelhante pode ser alcançada com recursos como exportação completa de tabela, exportação de conjunto de dados da plataforma, integração de ferramentas de BI e a API de relatórios."
+>title="Usar recursos de exportação semelhantes aos feeds de dados"
+>abstract="Ainda não há um recurso exato disponível para substituir os feeds de dados no Customer Journey Analytics. No entanto, uma funcionalidade semelhante pode ser obtida por meio da exportação de tabelas completas, da exportação de conjunto de dados da Platform, da integração de ferramentas de BI e da API de relatórios."
 
 <!-- markdownlint-enable MD034 -->
 
