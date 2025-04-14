@@ -7,9 +7,9 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: dff6355714f4e58917ccd995662e4fbae34ec69c
+source-git-commit: a9ad08ea053b1213ac98d3e77be3d4816c0999bf
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1878'
 ht-degree: 3%
 
 ---
@@ -58,7 +58,7 @@ Os parâmetros a seguir controlam o acesso ao Agente de insights de dados na Cus
    1. Selecione o título do perfil de produto para o qual você deseja fornecer acesso ao [!UICONTROL Assistente de IA: Conhecimento do Produto].
    1. No perfil de produto específico, selecione **[!UICONTROL Permissões]**.
    1. Selecione ![Editar](/help/assets/icons/Edit.svg) para editar as **[!UICONTROL Ferramentas de Relatório]**.
-   1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) para adicionar o **Assistente de IA: Visualização de dados** a **[!UICONTROL Itens de permissão incluídos]**.
+   1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) para adicionar **Assistente de IA: Conhecimento do Produto** e **Assistente de IA: Análise de Dados** a **[!UICONTROL Itens de permissão incluídos]**.
 
       ![Adicionar permissão](assets/ai-assistant-permissions.png).
 
