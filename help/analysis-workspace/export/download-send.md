@@ -1,21 +1,21 @@
 ---
 description: É possível baixar dados do Analysis Workspace copiando-os ou em formatos PDF e CSV.
-title: Baixar dados de Customer Journey Analytics
+title: Baixar dados do Customer Journey Analytics
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: cd4722cc2eb95d7d5e4000361c8f96a30a3589e9
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '1194'
-ht-degree: 64%
+ht-degree: 63%
 
 ---
 
-# Baixar dados de Customer Journey Analytics
+# Baixar dados do Customer Journey Analytics
 
-Você pode fazer download dos dados do Customer Journey Analytics na sua estação de trabalho pessoal. Isso pode estar no formato de dados copiados, CSV ou PDF. Um PDF geralmente é melhor se você quiser que as visualizações sejam incluídas no arquivo baixado. CSV e dados copiados são melhores se você simplesmente quiser dados de texto simples.
+Você pode baixar dados do Customer Journey Analytics na sua estação de trabalho pessoal. Isso pode estar no formato de dados copiados, CSV ou PDF. Normalmente, uma PDF é preferida se você quiser que visualizações sejam incluídas no arquivo baixado. CSV e dados copiados são melhores se você simplesmente quiser dados de texto simples.
 
-Outros métodos de exportação de dados de Customer Journey Analytics também estão disponíveis, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
+Outros métodos de exportação de dados do Customer Journey Analytics também estão disponíveis, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
 
 ## Baixar como CSV ou PDF {#download-project}
 
@@ -23,10 +23,10 @@ Considere o seguinte ao baixar projetos:
 
 * Ao baixar projetos como CSV ou PDF, o projeto pode ser salvo ou não ao solicitar um download do projeto. No entanto, somente os projetos salvos podem ser [agendados](/help/analysis-workspace/export/t-schedule-report.md).
 
-* Ao baixar projetos como um PDF:
+* Ao baixar projetos como uma PDF:
    * Os downloads podem levar vários minutos para serem exportados porque o projeto é executado novamente em servidores Adobe antes da renderização no formato PDF. Recomendamos não sair do projeto até que o PDF seja baixado no navegador. No entanto, você pode continuar fazendo alterações no projeto enquanto espera. Se um PDF demorar mais de 5 minutos para ser renderizado, você será solicitado a enviá-lo por email.
    * Os downloads são renderizados como uma única página sem paginação aplicada.
-   * As renderizações de PDF contêm o que está na página no Workspace. Se um projeto tiver visualizações e painéis com tamanhos personalizados, é necessário alterá-los para terem tamanhos automáticos (botão no canto superior direito) para que não haja truncamento de conteúdo.
+   * As renderizações do PDF contêm o que está na página no Workspace. Se um projeto tiver visualizações e painéis com tamanhos personalizados, é necessário alterá-los para terem tamanhos automáticos (botão no canto superior direito) para que não haja truncamento de conteúdo.
    * Quaisquer [hiperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) existentes nas tabelas de forma livre não são funcionais no PDF baixado.
 
 Para baixar um projeto como um arquivo CSV ou PDF:
@@ -47,7 +47,7 @@ Para baixar um projeto como um arquivo CSV ou PDF:
 
 ## Copiar para a área de transferência (tecla de atalho: Ctrl+C) {#copy-data}
 
-A opção de clicar com o botão direito **[!UICONTROL Copiar para a área de transferência]** permite copiar dados de Customer Journey Analytics rapidamente do Workspace e colá-los em uma ferramenta de terceiros.
+A opção de clicar com o botão direito **[!UICONTROL Copiar para a área de transferência]** permite copiar dados do Customer Journey Analytics rapidamente do Workspace e colá-los em uma ferramenta de terceiros.
 
 * Se desejar que a tabela exibida seja copiada, clique com o botão direito do mouse no cabeçalho da tabela e escolha **Copiar dados para a área de transferência**.
 * Se quiser que um subconjunto de dados seja copiado, faça uma seleção na tabela, clique com o botão direito do mouse e, em seguida, em **Copiar seleção para a área de transferência**.
@@ -61,9 +61,9 @@ A opção de clicar com o botão direito **[!UICONTROL Copiar para a área de tr
 
 ## Baixar como CSV {#download-data}
 
-A opção de clique com o botão direito **[!UICONTROL Baixar dados como CSV]** permite baixar uma tabela de dados de Customer Journey Analytics ou a fonte de dados de qualquer visualização como CSV.
+A opção de clique com o botão direito **[!UICONTROL Baixar dados como CSV]** permite baixar uma tabela de dados do Customer Journey Analytics ou a fonte de dados de qualquer visualização como CSV.
 
-* No cabeçalho de qualquer tabela ou visualização, clique com o botão direito do mouse e escolha **[!UICONTROL Baixar dados como CSV]**.  Isso baixa os dados de Customer Journey Analytics exibidos na tabela ou na fonte de dados subjacente de uma visualização como CSV.
+* No cabeçalho de qualquer tabela ou visualização, clique com o botão direito do mouse e escolha **[!UICONTROL Baixar dados como CSV]**.  Isso baixa os dados do Customer Journey Analytics exibidos na tabela ou na fonte de dados subjacente de uma visualização como CSV.
 
   >[!NOTE]
   >
@@ -80,7 +80,7 @@ Se quiser analisar mais do que as 400 linhas de dados visíveis em uma tabela, c
 
 >[!TIP]
 >
-> Se sua dimensão exceder 50.000 itens, baixe o arquivo com métricas de classificação diferentes aplicadas ou use um filtro. Por exemplo, classifique em ordem decrescente por Visitas em um download e em ordem crescente por Visitas em um segundo download. Esta dica pode ajudar você a recuperar itens mais longos.
+> Se sua dimensão exceder 50.000 itens, baixe o arquivo com métricas de classificação diferentes aplicadas ou aplique um segmento. Por exemplo, classifique em ordem decrescente por Visitas em um download e em ordem crescente por Visitas em um segundo download. Esta dica pode ajudar você a recuperar itens mais longos.
 
 É possível executar várias tarefas no projeto e até mesmo navegar para um novo projeto do Workspace na mesma guia enquanto o download está em andamento. O download será pausado se você abrir uma nova guia do navegador. O download será cancelado se você sair do Workspace completamente ou fechar a guia do navegador.
 
@@ -90,7 +90,7 @@ Se quiser analisar mais do que as 400 linhas de dados visíveis em uma tabela, c
 
 Os recursos da tabela serão aplicados ao arquivo baixado da seguinte maneira:
 
-* Todos os filtros do painel são aplicados como filtros.
+* Todos os segmentos do painel são aplicados como filtros.
 * Os detalhamentos **acima** da dimensão selecionada na tabela são aplicados como filtros acima de cada coluna.
 * Detalhamentos **abaixo** da dimensão selecionada na tabela são removidos.
 
@@ -110,7 +110,7 @@ Se solicitar mais de um download por vez, você receberá uma notificação de q
 
 ## Baixar dados sigilosos {#sensitive}
 
-Se a **[!UICONTROL Política de governança de dados](/help/data-views/data-governance.md) da [Impor download]** estiver ativada na visualização de dados para a qual você está relatando, qualquer download (como envio por email ou compartilhamento de arquivos de PDF) dos projetos Workspace aplicará uma função de hash nos campos de dados rotulados como sigilosos. Ainda é possível fazer a análise desses campos no espaço de trabalho, mas se você tentar enviar um email ou compartilhar um projeto de outra forma, os campos bloqueados aparecerão vazios no arquivo PDF ou CSV.
+Se a **[!UICONTROL Política de governança de dados](/help/data-views/data-governance.md) da [Impor download]** estiver ativada na visualização de dados para a qual você está relatando, qualquer download (como envio por email ou compartilhamento de arquivos PDF) de projetos Workspace aplicará uma função de hash nos campos de dados rotulados como sigilosos. Ainda é possível fazer a análise desses campos no espaço de trabalho, mas se você tentar enviar um email ou compartilhar um projeto de outra forma, os campos bloqueados aparecerão vazios no arquivo PDF ou CSV.
 
 Se algum campo de dados rotulado como confidencial for incluído na [!UICONTROL Visualização de Dados], a opção para selecionar e copiar dados da tela será restrita para todos os dados na [!UICONTROL Visualização de Dados].
 

@@ -5,8 +5,8 @@ feature: Workspace Basics
 title: Como usar as teclas de atalho do Workspace
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: a757ea4fc9bf8b13a8ce3001cf8639245d213e1c
-workflow-type: ht
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Observe que é possível usar os seguintes símbolos do teclado:
 | Criar um alerta | **[!UICONTROL *Cmd + Shift + A *]** | **[!UICONTROL *Ctrl + Shift + A *]** |
 | Criar métrica calculada | **[!UICONTROL *Cmd + Shift + C *]** | **[!UICONTROL *Ctrl + Shift + C *]** |
 | Criar um intervalo de datas | **[!UICONTROL *Cmd + Shift + D *]** | **[!UICONTROL *Ctrl + Shift + D *]** |
-| Criar um filtro | **[!UICONTROL *Cmd + Shift + E *]** | **[!UICONTROL *Ctrl + Shift + E *]** |
+| Criar um segmento | **[!UICONTROL *Cmd + Shift + E *]** | **[!UICONTROL *Ctrl + Shift + E *]** |
 | Limpar tudo | **[!UICONTROL *Alt + W *]** | **[!UICONTROL *Opt + W *]** |
 | Copiar | **[!UICONTROL *Cmd + C *]** | **[!UICONTROL *Ctrl + C *]** |
 | Refazer | **[!UICONTROL *Cmd + Shift + Z *]** | **[!UICONTROL *Ctrl + Shift + Z *]** |

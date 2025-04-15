@@ -1,13 +1,13 @@
 ---
-description: A visualização de rosca mostra os dados como partes ou filtros de um todo.
+description: A visualização de rosca mostra os dados como partes ou segmentos de um todo.
 title: Rosca
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 25%
+ht-degree: 47%
 
 ---
 
@@ -25,19 +25,19 @@ ht-degree: 25%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de Rosca em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Rosca](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut) para a_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** versão deste artigo._
+_Este artigo documenta a visualização de Rosca no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Rosca](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut) para a_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** versão deste artigo._
 
 >[!ENDSHADEBOX]
 
 
-Semelhante ao gráfico de pizza, a visualização ![RoscaGráfico](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Rosca]** mostra os dados como partes ou filtros de um todo. Use uma visualização de rosca ao comparar porcentagens de um total, normalmente com um pequeno número de itens.
+Semelhante ao gráfico de pizza, a visualização ![RoscaGráfico](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Rosca]** mostra os dados como partes ou segmentos de um todo. Use a visualização de rosca ao comparar porcentagens de um total, normalmente em um pequeno número de itens.
 
-![Um gráfico de Rosca mostrando dados como partes ou filtros de um todo.](assets/donut.png)
+![Um gráfico de Rosca que mostra dados como partes ou segmentos de um todo.](assets/donut.png)
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionar uma visualização de rosca](https://video.tv.adobe.com/v/334309/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionar uma visualização de rosca](https://video.tv.adobe.com/v/334309/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -48,6 +48,6 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionar u
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Menu de contexto de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

@@ -5,7 +5,7 @@ title: Casos de uso da análise de coorte
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
-source-git-commit: 388042e24a7b9d33ac88e05a68689308e6258339
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '973'
 ht-degree: 52%
@@ -40,15 +40,15 @@ Você trabalha na Adobe.com e oferece uma assinatura gratuita da Creative Cloud.
 
 **Métrica de retorno**: compra paga da Creative Cloud
 
-Com a [!UICONTROL Análise de coorte], você pode observar, por exemplo, que entre 8% e 10% dos usuários de Creative Cloud livre atualizam no primeiro mês após a instalação. Independentemente de quando os usuários instalaram o. De 12 a 15% atualizam no segundo mês de uso. Depois disso, a atualização diminui significativamente: de 4 a 5% no terceiro mês, de 3 a 4% no quatro mês e de 1 a 2% no quinto mês.
+Com a [!UICONTROL Análise de coorte], você pode observar, por exemplo, que entre 8% e 10% dos usuários gratuitos do Creative Cloud atualizam no primeiro mês após a instalação. Independentemente de quando os usuários instalaram o. De 12 a 15% atualizam no segundo mês de uso. Depois disso, a atualização diminui significativamente: de 4 a 5% no terceiro mês, de 3 a 4% no quatro mês e de 1 a 2% no quinto mês.
 
 Você não deseja perder clientes em potencial no terceiro mês. Assim, você configurou uma campanha de email projetada para sair no meio do terceiro mês para uma amostra de usuários. Oferecer um cupom de US$ 50 para usuários que ainda não atualizaram.
 
-Verifique com seus relatórios de análise de coorte alguns meses depois. Para os coortes formados após o lançamento da campanha, a conversão para assinaturas de Creative Cloud pagas no terceiro mês aumentou de 4-5% para 13-14%. Esse aumento na conversão resulta em centenas de milhares de dólares por coorte para cada coorte mensal que chega ao terceiro mês a partir desse ponto.
+Verifique com seus relatórios de análise de coorte alguns meses depois. Para coortes formados após o lançamento da campanha, a conversão para assinaturas pagas do Creative Cloud no terceiro mês aumentou de 4-5% para 13-14%. Esse aumento na conversão resulta em centenas de milhares de dólares por coorte para cada coorte mensal que chega ao terceiro mês a partir desse ponto.
 
-## Caso de uso de filtros de coorte complexos
+## Caso de uso de segmentos de coorte complexos
 
-Uma grande cadeia de hotéis tem como alvo vários grupos de clientes para promoções e os monitora em relação ao desempenho. Para identificar os melhores grupos de coortes de usuários a serem direcionados, é necessário criar grupos de coorte muito específicos. Usando os critérios aumentados de [!UICONTROL Inclusão] e [!UICONTROL Retorno] nas Tabelas de [!UICONTROL Coorte], a cadeia de hotéis pode definir os grupos de coorte ideais com várias métricas e filtros. Assim, a cadeia de hotéis pode identificar grupos de clientes com baixo desempenho para direcionar clientes com promoções e ofertas para aumentar as reservas.
+Uma grande cadeia de hotéis tem como alvo vários grupos de clientes para promoções e os monitora em relação ao desempenho. Para identificar os melhores grupos de coortes de usuários a serem direcionados, é necessário criar grupos de coorte muito específicos. Usando os critérios aumentados de [!UICONTROL Inclusão] e [!UICONTROL Retorno] nas Tabelas de [!UICONTROL Coorte], a cadeia de hotéis pode definir os grupos de coorte ideais com várias métricas e segmentos. Assim, a cadeia de hotéis pode identificar grupos de clientes com baixo desempenho para direcionar clientes com promoções e ofertas para aumentar as reservas.
 
 ## Caso de uso de preferência de versão do aplicativo
 
@@ -56,12 +56,12 @@ Uma grande empresa de seguros promove o engajamento do cliente por meio do uso d
 
 ## Caso de uso de adesão de campanha
 
-Uma empresa de mídia multinacional usa campanhas direcionadas para direcionar usuários a suas várias plataformas para gerar engajamento. O gasto com anúncios por plataforma baseia-se no engajamento e na retenção do cliente. Portanto, campanhas bem-sucedidas são essenciais para o sucesso dos negócios. Eles usam o novo recurso de Coorte [!UICONTROL Dimension personalizado] nas Tabelas [!UICONTROL Coorte] para comparar várias campanhas lado a lado, para identificar quais campanhas são mais eficazes para conquistar e reter usuários para aumentar o engajamento. Podem identificar quais aspectos tornam uma campanha bem-sucedida e aplicá-los a outras campanhas para aumentar o engajamento nas várias plataformas.
+Uma empresa de mídia multinacional usa campanhas direcionadas para direcionar usuários a suas várias plataformas para gerar engajamento. O gasto com anúncios por plataforma baseia-se no engajamento e na retenção do cliente. Portanto, campanhas bem-sucedidas são essenciais para o sucesso dos negócios. Eles usam o novo recurso de Coorte do [!UICONTROL Dimension] personalizado em Tabelas de [!UICONTROL Coorte] para comparar várias campanhas lado a lado, para identificar quais campanhas são mais eficazes para conquistar e reter usuários para aumentar o engajamento. Podem identificar quais aspectos tornam uma campanha bem-sucedida e aplicá-los a outras campanhas para aumentar o engajamento nas várias plataformas.
 
 ## Caso de uso de lançamento de produto
 
-Uma grande varejista de vestuário tem muitos filtros de clientes específicos que geram grandes parcelas de receita para seus negócios. Cada filtro tem produtos específicos projetados e criados com o filtro em mente. A cada lançamento de produto, a empresa quer saber como o novo produto impulsionou as vendas para vários coortes ao longo do tempo. Usando a nova configuração de [!UICONTROL Tabela de latência] na [!UICONTROL Análise de coorte], é possível analisar o comportamento e a receita de pré-lançamento e pós-lançamento de um determinado filtro de cliente. Usando essas informações, pode-se identificar quais produtos estão gerando novas receitas e quais não estão ganhando força com os clientes.
+Uma grande varejista de vestuário tem muitos segmentos de clientes específicos que geram grandes parcelas de receita para seus negócios. Cada segmento tem produtos específicos projetados e criados com o segmento em mente. A cada lançamento de produto, a empresa quer saber como o novo produto impulsionou as vendas para vários coortes ao longo do tempo. Usando a nova configuração de [!UICONTROL Tabela de latência] na [!UICONTROL Análise de coorte], é possível analisar o comportamento e a receita de pré-lançamento e pós-lançamento de um determinado segmento de cliente. Usando essas informações, pode-se identificar quais produtos estão gerando novas receitas e quais não estão ganhando força com os clientes.
 
 ## Caso de uso de adesão individual: usuários mais fiéis
 
-Uma grande companhia aérea obtém a maior parte de seu sucesso e receita por meio de clientes repetidos e fiéis. Em muitos casos, seus viajantes fiéis compõem a maior parte de sua receita e manter esses clientes é fundamental para o sucesso a longo prazo. Identificar os clientes mais leais e consistentes pode ser difícil. Entretanto, usando a nova configuração [!UICONTROL Cálculo contínuo] em [!UICONTROL Análise de coorte], a companhia aérea pode analisar filtros de clientes fiéis e descobrir quais viajantes eram compradores recorrentes mês a mês. A companhia aérea também é capaz de direcionar a esses viajantes recompensas e benefícios por sua fidelidade. Além disso, ao alternar o tipo de coorte de retenção para churn, a companhia aérea pode identificar quais clientes não são compradores recorrentes mês a mês e direcionar esses clientes com promoções. Assim, a companhia aérea pode reengajar-se com esses clientes e garantir que eles permaneçam fiéis no futuro.
+Uma grande companhia aérea obtém a maior parte de seu sucesso e receita por meio de clientes repetidos e fiéis. Em muitos casos, seus viajantes fiéis compõem a maior parte de sua receita e manter esses clientes é fundamental para o sucesso a longo prazo. Identificar os clientes mais leais e consistentes pode ser difícil. Entretanto, usando a nova configuração [!UICONTROL Cálculo contínuo] em [!UICONTROL Análise de coorte], a companhia aérea pode analisar segmentos de clientes fiéis e descobrir quais viajantes eram compradores recorrentes mês a mês. A companhia aérea também é capaz de direcionar a esses viajantes recompensas e benefícios por sua fidelidade. Além disso, ao alternar o tipo de coorte de retenção para churn, a companhia aérea pode identificar quais clientes não são compradores recorrentes mês a mês e direcionar esses clientes com promoções. Assim, a companhia aérea pode reengajar-se com esses clientes e garantir que eles permaneçam fiéis no futuro.

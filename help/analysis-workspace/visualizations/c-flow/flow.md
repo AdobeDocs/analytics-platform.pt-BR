@@ -4,10 +4,10 @@ title: Visão geral do Fluxo
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 25%
+ht-degree: 26%
 
 ---
 
@@ -41,7 +41,7 @@ Com a visualização, é possível:
 
 * Visualize a jornada do cliente em seu site ou aplicativo.
 * Analise onde os clientes vão antes e depois de pontos de verificação especificados, como entrada, uma dimensão específica ou saída.
-* Crie filtros ao designar um ponto específico em um determinado caminho.
+* Crie segmentos designando um ponto específico em um determinado caminho.
 
 
 >[!BEGINSHADEBOX]

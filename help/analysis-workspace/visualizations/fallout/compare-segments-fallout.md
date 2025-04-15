@@ -1,20 +1,20 @@
 ---
-description: É possível criar filtros desde de um ponto de contato, adicionar filtros como ponto de contato e comparar fluxos de trabalho principais em vários filtros no Analysis Workspace.
-keywords: fallout e filtros; filtros na análise de fallout; comparar filtros no fallout
-title: Aplicar filtros na análise de fallout
+description: Você pode criar segmentos a partir de um ponto de contato, adicionar segmentos como ponto de contato e comparar fluxos de trabalho principais em vários segmentos no Analysis Workspace.
+keywords: fallout e segmentos;segmentos na análise de fallout;comparar segmentos no fallout
+title: Aplicar segmentos na análise de fallout
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 43%
+ht-degree: 36%
 
 ---
 
-# Aplicar filtros na análise de fallout
+# Aplicar segmentos na análise de fallout
 
-É possível criar filtros desde de um ponto de contato, adicionar filtros como ponto de contato e comparar fluxos de trabalho principais em vários filtros no Analysis Workspace.
+Você pode criar segmentos a partir de um ponto de contato, adicionar filtros como ponto de contato e comparar fluxos de trabalho principais em vários filtros no Analysis Workspace.
 
 >[!IMPORTANT]
 >

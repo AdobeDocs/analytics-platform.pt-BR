@@ -7,7 +7,7 @@ feature: AI Tools
 hidefromtoc: true
 hide: true
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: a9ad08ea053b1213ac98d3e77be3d4816c0999bf
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Usar o Agente de insights de dados para responder perguntas centradas em dados n
 | **Criar e atualizar visualizações** | Gera uma tabela de forma livre e uma visualização associada (como uma linha, barra, rosca e assim por diante).<p>Exemplo: *Qual é o lucro entre SKUs de fevereiro a maio?* |
 | **Tipos de visualização com suporte** | <ul><li>Linha</li><li>Várias linhas</li><li>Tabela de forma livre</li><li>Barra</li><li>Rosca</li><li>Número do resumo</li></ul> |
 | **Detecção de prompt fora do escopo** | Se você enviar um prompt que está fora do escopo, como &quot;exportar este projeto&quot;, o Agente de Insights de Dados responderá informando que a pergunta está fora do escopo. |
-| **Esclarecimento de questões** | Se você fizer uma pergunta que não tenha contexto suficiente para o Agente de insights de dados responder, ou que seja muito genérica, o Agente de insights de dados responderá com uma pergunta esclarecedora ou com opções sugeridas. Exemplos: <p>**Componentes**<ul><li>Métrica: *Qual métrica de &quot;receita&quot; você quis dizer?*</li><li>Dimension: *Em qual das &quot;regiões&quot; abaixo você deseja se concentrar?*</li><li>Filtro: *Qual filtro de &quot;Conta&quot; você deseja aplicar?*</li><li>Intervalo de datas: *Por &quot;último mês&quot;, você quis dizer o último mês completo ou os últimos 30 dias?*</li></ul>**Itens do Dimension**: qual &quot;nome da loja&quot; você quis dizer? (Por exemplo, Armazenar #5274, Armazenar #2949 e assim por diante.) |
+| **Esclarecimento de questões** | Se você fizer uma pergunta que não tenha contexto suficiente para o Agente de insights de dados responder, ou que seja muito genérica, o Agente de insights de dados responderá com uma pergunta esclarecedora ou com opções sugeridas. Exemplos: <p>**Componentes**<ul><li>Métrica: *Qual métrica de &quot;receita&quot; você quis dizer?*</li><li>Dimension: *Em qual das &quot;regiões&quot; abaixo você deseja se concentrar?*</li><li>Filtro: *Que segmento de &quot;Conta&quot; você deseja aplicar?*</li><li>Intervalo de datas: *Por &quot;último mês&quot;, você quis dizer o último mês completo ou os últimos 30 dias?*</li></ul>**Itens do Dimension**: qual &quot;nome da loja&quot; você quis dizer? (Por exemplo, Armazenar #5274, Armazenar #2949 e assim por diante.) |
 | **Voltas múltiplas** | O Agente de insights de dados responde a um prompt com o contexto de qualquer prompt anterior, permitindo que os usuários atualizem as visualizações e façam perguntas de acompanhamento. Exemplo: <ul><li>Prompt 1: *Eventos de tendência de março.*</li><li>Prompt 2: *Mostrar os dados de março a abril*</li></ul> |
 | **Verificabilidade** | A verificabilidade e a correção dos dados podem ser confirmadas por meio da tabela de forma livre gerada e da visualização de dados. Por exemplo, se um usuário solicitar *Pedidos de tendência no último mês*, você poderá confirmar se a métrica (&quot;pedidos&quot;) e o intervalo de datas (&quot;último mês&quot;) corretos foram selecionados no painel recém-gerado, na visualização de dados e na tabela de forma livre. |
 | **Feedback** | <ul><li>Polegar para cima</li><li>Polegar para baixo</li><li>Sinalizador</li></ul> |
@@ -167,7 +167,7 @@ Para obter os melhores resultados, considere as seguintes diretrizes:
 
 * Seja específico: inclua termos exatos para restringir a resposta. Veja a seguir um exemplo de um prompt específico: &quot;Vendas do mês passado na Califórnia&quot;
 
-* Usar métricas e filtros simples: adicionar métricas específicas (como &quot;Receita&quot;), dimensões (como &quot;nome do site&quot;), filtros (como &quot;usuários do iPhone&quot;) e intervalos de datas (como &quot;últimos três meses&quot;) ajuda o Agente de insights de dados a se concentrar nos dados corretos.
+* Usar métricas e segmentos claros: adicionar métricas específicas (como &quot;Receita&quot;), dimensões (como &quot;nome do site&quot;), segmentos (como &quot;usuários do iPhone&quot;) e intervalos de datas (como &quot;últimos três meses&quot;) ajuda a Data Insights Agent a se concentrar nos dados corretos.
 
 * Fazer perguntas diretas: a formulação direta de perguntas facilita que o Agente de insights de dados forneça insights claros e relevantes. Veja a seguir um exemplo de como fazer uma pergunta direta em um prompt: &quot;Qual é a receita média por categoria de produto este ano?&quot;
 
@@ -193,7 +193,7 @@ Considere o seguinte ao avaliar uma resposta do Agente de insights de dados:
 
 * Visualização/gráfico: avalie a visualização. Essa é a visualização apropriada ou esperada para sua pergunta, ou você esperaria uma visualização diferente?
 
-* Tabela de forma livre: avalie a tabela de forma livre. Os dados da tabela de forma livre estão corretos? Ele está detalhando os dados quando solicitado? Os filtros aplicados são os que você solicitou ou espera?
+* Tabela de forma livre: avalie a tabela de forma livre. Os dados da tabela de forma livre estão corretos? Ele está detalhando os dados quando solicitado? Os segmentos aplicados são os que você solicitou ou espera?
 
 * Mensagem de erro / Fora de escopo: se uma mensagem de erro genérica for fornecida declarando que a pergunta está fora do escopo, forneça feedback sobre se você acha que a mensagem fora do escopo é apropriada, dado o seu prompt. O seu prompt estava realmente no escopo?
 

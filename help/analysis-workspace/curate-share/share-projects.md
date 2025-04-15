@@ -5,7 +5,7 @@ title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 100fe0c9bf5dd1db78ae8188e8de1f8ea53123dc
+source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '2069'
 ht-degree: 62%
@@ -103,7 +103,7 @@ Se houver alterações não salvas, será solicitado que salve o projeto primeir
 
 1. (Condicional) Se você estiver compartilhando um único projeto, escolha se deseja ativar as seguintes opções ao compartilhar o projeto:
 
-   * **Compartilhar componentes de projeto inseridos:** compartilha filtros, métricas calculadas e intervalos de datas com todos os destinatários. Após compartilhados, esses componentes aparecem no menu suspenso de componentes do espaço de trabalho do destinatário. Essa configuração não é persistente: é uma ação única para a ocasião do compartilhamento.
+   * **Compartilhar componentes de projeto incorporados:** compartilha segmentos, métricas calculadas e intervalos de data com todos os destinatários. Após compartilhados, esses componentes aparecem no menu suspenso de componentes do espaço de trabalho do destinatário. Essa configuração não é persistente: é uma ação única para a ocasião do compartilhamento.
 
    * **Definir como página de destino para os destinatários:** define esta página como a página de destino dos destinatários. Essa configuração não é persistente: é uma ação única para a ocasião do compartilhamento.
 
@@ -147,7 +147,7 @@ Você pode conceder [acesso somente leitura](/help/analysis-workspace/curate-sha
 >
 >* Projetos com mais de 50 visualizações expandidas não podem ser compartilhados com pessoas que não têm acesso ao Customer Journey Analytics.
 >
->* Os usuários com os quais você compartilha podem exibir quaisquer filtros que foram aplicados ao projeto durante a [preparação](curate.md).
+>* Os usuários com os quais você compartilha podem visualizar qualquer segmento que foi aplicado ao projeto durante a [preparação](curate.md).
 > 
 >* Usuários com os quais você compartilha podem alterar o intervalo de datas do projeto. O intervalo de datas definido para o projeto é mostrado por padrão.
 >

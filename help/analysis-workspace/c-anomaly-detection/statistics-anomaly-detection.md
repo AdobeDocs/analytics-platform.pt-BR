@@ -4,10 +4,10 @@ title: Técnicas estatísticas usadas na Detecção de anomalias
 feature: Anomaly Detection
 exl-id: 7165e7a1-a04f-450e-bffd-e329adac6903
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
 workflow-type: tm+mt
 source-wordcount: '816'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -19,7 +19,7 @@ Dependendo da granularidade de data usada no relatório, três diferentes técni
 
 ## Detecção de anomalias para granularidade diária
 
-Para os relatórios de granularidade diária, o algoritmo considera vários fatores importantes para fornecer os resultados mais precisos possíveis. Primeiro, o algoritmo determina o tipo de modelo a aplicar com base nos dados disponíveis, dos quais selecionamos uma de duas classes: um modelo baseado em séries de tempo ou um modelo de detecção de valores anômalos (chamado de filtragem funcional).
+Para os relatórios de granularidade diária, o algoritmo considera vários fatores importantes para fornecer os resultados mais precisos possíveis. Primeiro, o algoritmo determina o tipo de modelo a ser aplicado com base nos dados disponíveis, dos quais selecionamos uma de duas classes: um modelo baseado em séries de tempo ou um modelo de detecção de valores anômalos (chamado de segmentação funcional).
 
 A seleção do modelo da série de tempo se baseia nas seguintes combinações para tipo de erro, tendência e sazonalidade (ETS), conforme descrito por [Hyndman et al. (2008)](https://www.springer.com/us/book/9783540719168). Especificamente, o algoritmo tenta as seguintes combinações:
 
@@ -29,7 +29,7 @@ A seleção do modelo da série de tempo se baseia nas seguintes combinações p
 1. MNA (erro multiplicativo, nenhuma tendência, sazonalidade aditiva)
 1. AAN (erro aditivo, tendência aditiva, nenhuma sazonalidade)
 
-O algoritmo testa a adequação de cada uma dessas combinações, selecionando aquela com o melhor erro percentual médio absoluto (MAPE). Contudo, se o MAPE do modelo de série de tempo for maior que 15%, a filtragem funcional é aplicada. Geralmente, os dados com um grau maior de repetição (por exemplo, semana após semana ou mês após mês) são mais adequados para um modelo de série de tempo.
+O algoritmo testa a adequação de cada uma dessas combinações, selecionando aquela com o melhor erro percentual médio absoluto (MAPE). Se o MAPE do melhor modelo de série temporal for maior que 15% no entanto, a segmentação funcional é aplicada. Geralmente, os dados com um grau maior de repetição (por exemplo, semana após semana ou mês após mês) são mais adequados para um modelo de série de tempo.
 
 Após a seleção do modelo, o algoritmo ajusta os resultados com base em feriados e sazonalidade ano a ano. Para feriados, o algoritmo verifica se os seguintes feriados estão presentes no intervalo de datas do relatório:
 

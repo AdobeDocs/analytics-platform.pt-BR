@@ -4,10 +4,10 @@ title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: a2262e446a15ee58be2f3f674c77223368fc8f76
+source-git-commit: 305ae20c48ddf0f2032b8f92a016eb92427016ed
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -85,7 +85,7 @@ Ao criar um novo painel, a visualização de dados padrão se baseia na visualiz
 
 >[!IMPORTANT]
 >
->A visualização de dados selecionada determina quais dimensões, métricas e filtros estão disponíveis para criar visualizações em um painel.
+>A visualização de dados selecionada determina quais dimensões, métricas e segmentos estão disponíveis para criar visualizações em um painel.
 >
 >
 >Ao alternar a visualização de dados de um painel, alguns dos componentes podem não estar disponíveis nessa nova visualização de dados. Essa alteração pode fazer com que a visualização não seja renderizada corretamente. Você poderá ver avisos como:
@@ -100,7 +100,7 @@ O calendário do painel controla o intervalo de datas de relatórios para tabela
 
 >[!NOTE]
 >
->Se um componente de intervalo de datas ![Calendário](/help/assets/icons/Calendar.svg) for usado em uma visualização ou painel (por exemplo, como um filtro), o componente de intervalo de datas substituirá o calendário do painel.
+>Se um componente de intervalo de datas ![Calendário](/help/assets/icons/Calendar.svg) for usado em uma visualização ou painel (por exemplo, como um segmento), esse componente substituirá o calendário do painel.
 >
 
 
@@ -134,85 +134,85 @@ Selecione **[!UICONTROL Aplicar a todos os painéis]** para aplicar o intervalo 
 
 ## Área de arrastar e soltar {#dropzone}
 
-A área de arrastar e soltar do painel permite aplicar filtros de segmento e de lista suspensa a todas as tabelas e visualizações em um painel. Você pode aplicar um ou vários filtros a um painel. 
+A área de destino do painel permite aplicar segmentos e segmentos suspensos a todas as tabelas e visualizações em um painel. É possível aplicar um ou mais segmentos a um painel.
 
 ### Filtros
 
-Arraste e solte um filtro da tela esquerda para a área de destino do painel para começar a filtrá-lo. Repita esse processo para adicionar mais filtros ao painel. Os filtros aparecem lado a lado na parte superior do painel.
+Arraste e solte os segmentos do painel à esquerda na área de destino do painel para começar a segmentá-lo. Repita esse processo para adicionar mais segmentos ao painel. Os filtros aparecem lado a lado na parte superior do painel.
 
 ![O painel esquerdo mostra as métricas disponíveis e a métrica Cliente de dispositivo móvel arrastada para a área de destino do painel.](assets/segment-filter.png)
 
-#### Filtros rápidos
+#### Segmentos rápidos
 
-Também é possível arrastar outros componentes além de filtros diretamente para a área de destino para criar filtros rápidos, poupando o tempo e esforço de acessar o [Criador de filtros](/help/components/filters/filter-builder.md). Os filtros criados desta forma são definidos automaticamente como filtros em nível de evento. Essa definição pode ser modificada rapidamente selecionando ![Editar](/help/assets/icons/Edit.svg) ao lado do nome do filtro.
+Além dos segmentos, também é possível arrastar outros tipos de componentes diretamente para a zona de destino para criar segmentos rápidos, economizando o tempo e esforço de usar o [Construtor de segmentos](/help/components/filters/filter-builder.md). Os filtros criados dessa maneira são definidos automaticamente como segmentos de nível de evento. Para modificar rapidamente essa definição, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado do nome do segmento.
 
 
-Para obter mais informações, consulte [Filtros rápidos](/help/components/filters/quick-filters.md).
+Para obter mais informações consulte [Segmentos rápidos](/help/components/filters/quick-filters.md).
 
-![Filtros ad hoc que são tornados públicos e soltos na área de destino](assets/adhoc-segment-filter.png)
+![Segmentos ad hoc tornados públicos e colocados na zona de soltar](assets/adhoc-segment-filter.png)
 
 ### Filtros suspensos
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtros suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtros suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-#### Filtros suspensos estáticos
+#### Segmentos suspensos estáticos
 
-Os filtros suspensos estáticos permitem interagir com os dados de maneira controlada. Por exemplo, é possível adicionar um filtro suspenso de Tipos de dispositivo móvel para que você possa filtrar o painel por Tablet, Celular ou Desktop.
+Os segmentos suspensos estáticos permitem interagir com os dados de forma controlada. Por exemplo, é possível adicionar um segmento suspenso para Tipos de dispositivo móvel para segmentar o painel por Tablet, Celular ou Desktop.
 
-Filtros suspensos estáticos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes filtros de País aplicados, é possível consolidar todas as versões em um único projeto e adicionar um filtro suspenso de País.
+Segmentos suspensos estáticos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes segmentos de País aplicados, é possível consolidar todas as versões em um único projeto e adicionar um segmento suspenso de País.
 
-![Filtros suspensos estáticos destacando o filtro “Direto” do canal de mercado. ](assets/dropdown-filter-intro.png)
+![Segmentos suspensos estáticos mostrando o segmento &quot;Direto&quot; do Canal de mercado destacado. ](assets/dropdown-filter-intro.png)
 
-##### Criar filtros suspensos estáticos
+##### Criar segmentos suspensos estáticos
 
-* Para filtros suspensos que usam itens de dimensão, selecione uma única dimensão no painel esquerdo e solte-a na área de destino do painel enquanto mantém pressionada a tecla ⇧ (*Shift*). Isso cria um filtro suspenso com todos os itens de dimensão associados a essa dimensão.
+* Para segmentos suspensos que usam itens de dimensão, selecione uma única dimensão no painel esquerdo e solte-a na área de destino do painel enquanto mantém pressionada a tecla ⇧ (*Shift*). Essa ação cria um segmento suspenso com todos os itens de dimensão que estão associados a essa dimensão.
 
-  Ou, se quiser que o filtro suspenso inclua apenas itens de dimensão específicos associados a uma dimensão, clique no ícone de seta para a direita ao lado da dimensão desejada no painel esquerdo. Essa ação expõe todos os itens de dimensão disponíveis. Selecione vários itens de dimensão desta lista usando ⇧+![Selecionar](/help/assets/icons/Select.svg) (*shift* + *selecionar*) ou ^+![Selecionar](/help/assets/icons/Select.svg) (*control* + *selecionar*), depois solte-os na área de destino do painel **enquanto mantém pressionada a tecla** ⇧. 
+  Ou, se quiser que o segmento suspenso inclua apenas itens de dimensão específicos associados a uma dimensão, clique no ícone de seta para a direita ao lado da dimensão desejada no painel esquerdo. Essa ação expõe todos os itens de dimensão disponíveis. Selecione vários itens de dimensão desta lista usando ⇧+![Selecionar](/help/assets/icons/Select.svg) (*shift* + *selecionar*) ou ^+![Selecionar](/help/assets/icons/Select.svg) (*control* + *selecionar*), depois solte-os na área de destino do painel **enquanto mantém pressionada a tecla** ⇧. 
 
-* Para filtros suspensos que usam um único tipo de componente (por exemplo, somente dimensões, somente filtros ou somente métricas), selecione vários itens do mesmo tipo no painel esquerdo usando ⇧+![Selecionar](/help/assets/icons/Select.svg) ou ^+![Selecionar](/help/assets/icons/Select.svg). Em seguida, solte os itens na área de destino do painel **enquanto mantém pressionada a tecla** ⇧.
+* Para segmentos suspensos que usam um único tipo de componente (por exemplo, somente dimensões, somente segmentos ou somente métricas), selecione vários itens do mesmo tipo no painel esquerdo usando ⇧+![Selecionar](/help/assets/icons/Select.svg) ou ^+![Selecionar](/help/assets/icons/Select.svg). Em seguida, solte os itens na área de destino do painel **enquanto mantém pressionada a tecla** ⇧.
 
-  Um único filtro suspenso é criado com os componentes selecionados.
+  Um único segmento suspenso será criado com os componentes selecionados.
 
-* Para filtros suspensos que usam uma mistura de tipos de componentes (como 2 métricas e 3 filtros), selecione vários componentes usando ⇧+![Selecionar](/help/assets/icons/Select.svg) ou ^+![Selecionar](/help/assets/icons/Select.svg). Solte a seleção na área de destino do painel **enquanto mantém pressionada a tecla** ⇧. Nesse contexto, todos os tipos de componentes são tratados como filtros suspensos separados. Por exemplo, se você incluir métricas e itens de dimensão na seleção, dois filtros suspensos separados serão criados: um filtro suspenso que inclui itens de dimensão e outro que inclui métricas.
+* Para segmentos suspensos que usam uma mistura de tipos de componentes (como 2 métricas e 3 segmentos), selecione vários componentes usando ⇧+![Selecionar](/help/assets/icons/Select.svg) ou ^+![Selecionar](/help/assets/icons/Select.svg). Solte a seleção na área de destino do painel **enquanto mantém pressionada a tecla** ⇧. Nesse contexto, todos os tipos de componentes são tratados como segmentos suspensos separados. Por exemplo, se você incluir métricas e itens de dimensão na seleção, dois segmentos suspensos separados serão criados: um segmento suspenso que inclui itens de dimensão e outro que inclui métricas.
 
-Um filtro suspenso fornece as seguintes opções no menu de contexto:
+Um segmento suspenso fornece as seguintes opções no menu de contexto:
 
-* **[!UICONTROL Excluir item suspenso]**: remove o filtro suspenso do painel.
-* **[!UICONTROL Excluir rótulo]**: remove o texto exibido acima de um filtro suspenso. Para modificar o rótulo, passe o mouse sobre o rótulo e selecione ![Editar rótulo do filtro suspenso](/help/assets/icons/Edit.svg).
-* **[!UICONTROL Adicionar rótulo]**: ao adicionar um filtro suspenso a um projeto, um rótulo é automaticamente definido para o nome do componente. Se você excluir o rótulo, poderá adicioná-lo novamente com essa opção.
-* **[!UICONTROL Exigir seleção]**: requer a definição de um filtro no painel.
+* **[!UICONTROL Excluir item suspenso]**: remove o segmento suspenso do painel.
+* **[!UICONTROL Excluir rótulo]**: remove o texto exibido acima de um segmento suspenso. Para modificar o rótulo, passe o mouse sobre ele e selecione ![Editar rótulo do segmento suspenso](/help/assets/icons/Edit.svg).
+* **[!UICONTROL Adicionar rótulo]**: ao adicionar um segmento suspenso a um projeto, um rótulo é definido automaticamente para o nome do componente. Se você excluir o rótulo, poderá adicioná-lo novamente com essa opção.
+* **[!UICONTROL Exigir seleção]**: torna obrigatória a definição de um segmento no painel.
 
-##### Usar filtros suspensos estáticos
+##### Usar segmentos suspensos estáticos
 
-É possível usar o menu suspenso de filtro de qualquer uma das seguintes maneiras para filtrar o painel:
+É possível usar o menu suspenso de segmento de qualquer uma das seguintes maneiras para segmentar o painel:
 
-* Aplique um único filtro ao painel selecionando o filtro na lista suspensa.
+* Aplicar um único segmento ao painel selecionando o segmento na lista de segmentos suspensos.
 
-* Aplique vários filtros ao painel selecionando mais de um filtro na lista suspensa. O painel é filtrado para incluir qualquer um dos filtros selecionados.
+* Aplicar vários segmentos ao painel selecionando mais de um segmento na lista de segmentos suspensos. O painel é segmentado para incluir qualquer um dos segmentos selecionados.
 
 
-#### Filtros suspensos dinâmicos
+#### Segmentos suspensos dinâmicos
 
-Os filtros suspensos dinâmicos permitem determinar os valores disponíveis com base nos dados dentro do intervalo de relatórios do painel e nos valores de outros filtros suspensos. Por exemplo, você pode criar dois menus suspensos dinâmicos usando uma dimensão Países e uma dimensão Cidades. Ao selecionar um país na lista suspensa **[!UICONTROL Países]**, a lista suspensa **[!UICONTROL Cidades]** se ajusta dinamicamente para mostrar apenas cidades desse país.
+Os segmentos suspensos dinâmicos permitem determinar os valores disponíveis com base nos dados dentro do intervalo de relatórios do painel e nos valores de outros segmentos suspensos. Por exemplo, você pode criar dois menus suspensos dinâmicos usando uma dimensão Países e uma dimensão Cidades. Ao selecionar um país na lista suspensa **[!UICONTROL Países]**, a lista suspensa **[!UICONTROL Cidades]** se ajusta dinamicamente para mostrar apenas cidades desse país.
 
-Esse mesmo conceito se aplica a todas as dimensões; somente os itens de dimensão que aparecem dentro do intervalo de datas do painel e dos filtros selecionados são visíveis. Os itens de dimensão selecionados nos filtros suspensos estáticos afetam os valores disponíveis nos filtros suspensos dinâmicos. No entanto, o inverso não é verdadeiro; os itens de dimensão selecionados em filtros suspensos dinâmicos não afetam os valores disponíveis em filtros suspensos estáticos.
+Esse mesmo conceito se aplica a todas as dimensões: somente os itens de dimensão que aparecem dentro do intervalo de datas do painel e dos segmentos selecionados são visíveis. Os itens de dimensão selecionados em segmentos suspensos estáticos afetam os valores disponíveis nos segmentos suspensos dinâmicos. No entanto, o inverso não é verdadeiro: os itens de dimensão selecionados em segmentos suspensos dinâmicos não afetam os valores disponíveis nos segmentos suspensos estáticos.
 
-A seleção manual de itens de dimensão estará disponível se você antecipar que um determinado item de dimensão será coletado no futuro. Também é possível limpar um filtro suspenso dinâmico para que ele não contenha um valor, permitindo que outros filtros suspensos dinâmicos contenham mais valores. Selecione **[!UICONTROL Redefinir tudo]** para limpar a seleção de todos os filtros suspensos desse painel.
+A seleção manual de itens de dimensão estará disponível se você antecipar que um determinado item de dimensão será coletado no futuro. Também é possível limpar um segmento suspenso dinâmico para que ele não contenha um valor, permitindo que outros segmentos suspensos dinâmicos contenham mais valores. Selecione **[!UICONTROL Redefinir tudo]** para limpar a seleção de todos os segmentos suspensos desse painel.
 
-Para criar um filtro suspenso dinâmico:
+Para criar um segmento suspenso dinâmico:
 
 * Arraste e solte uma única dimensão na área de destino do painel **enquanto mantém pressionada a tecla** ⇧.
 
-Observe que os filtros suspensos dinâmicos não estão disponíveis para métricas, filtros ou intervalos de datas.
+Observe que os segmentos suspensos dinâmicos não estão disponíveis para métricas, segmentos ou intervalos de datas.
 
-Um filtro suspenso dinâmico fornece as mesmas opções no menu de contexto que os filtros suspensos estáticos.
+Um segmento suspenso dinâmico fornece as mesmas opções de menu de contexto que os segmentos suspensos estáticos.
 
 
 ## Menu de contexto
