@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
+source-git-commit: 320b1cb94f63d0e6813999c1dc293b7e78ac7845
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 0%
@@ -25,7 +25,7 @@ A configuração do Content Analytics consiste nas seguintes etapas:
 1. Quando estiver familiarizado com os valores de configuração, você poderá implementá-los. Essa implementação cria todos os artefatos necessários com base no que você configurou no assistente.
 1. Somente quando você [publica manualmente](manual.md) a propriedade Tags, sua configuração do Content Analytics é efetivamente implantada e a coleta de dados é iniciada.
 
-1. Você só pode fazer pequenas alterações em uma configuração implementada usando o assistente de [configuração guiada](guided.md). Por exemplo, altere a [Visualização de dados](/help/data-views/data-views.md).
+1. Você só pode fazer pequenas alterações em uma configuração implementada usando o assistente de [configuração guiada](guided.md). Por exemplo, altere a [visualização de dados](/help/data-views/data-views.md).
 1. Você pode fazer outras alterações em uma configuração implementada usando a [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) na propriedade Tags associadas.
 1. Somente quando você [republica manualmente](manual.md) a propriedade Tags, as modificações de configuração são efetivamente implantadas e a coleta de dados, com base em suas alterações, é iniciada.
 
@@ -35,11 +35,11 @@ A configuração do Content Analytics consiste nas seguintes etapas:
 Antes de configurar o Content Analytics, verifique se os seguintes pré-requisitos foram atendidos:
 
 * Você incluiu na lista de permissões o Agente do usuário e o endereço IP do serviço de recursos usado no Content Analytics. A sequência de agente do usuário a ser configurada é: <code>AdobeFeaturization/1.0</code>.
-* Se você implementou o [Web SDK usando Javascript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} para coleta de dados comportamentais regulares, verifique se está usando a liga de nome padrão <code></code> para a biblioteca JavaScript.
+* Se você implementou o [Web SDK usando Javascript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} para a coleta de dados comportamentais regulares, verifique se está usando a liga de nome padrão <code></code> para a biblioteca JavaScript.
 * Você tem uma função de Administrador de produto do Customer Journey Analytics, com as permissões adicionais para gerenciar conexões e visualizações de dados.
 * Você deve ter [permissões para a coleta de dados](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}. Essas permissões consistem em:
    * [Permissões do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
-   * [Permissões da Coleção de Dados do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank" }
+   * [Permissões da Coleção de Dados do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
 * Você considerou cuidadosamente as seguintes opções de configuração importantes:
 
    * Seu site é adequado para relatórios de experiência. O relatório de experiência adequado só é possível quando as seguintes condições são atendidas:
