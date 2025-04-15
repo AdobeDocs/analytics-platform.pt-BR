@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6f077ada9df1604b86fde21aa6b11b12160aeaa7
+source-git-commit: 320b1cb94f63d0e6813999c1dc293b7e78ac7845
 workflow-type: tm+mt
-source-wordcount: '2493'
-ht-degree: 14%
+source-wordcount: '2569'
+ht-degree: 13%
 
 ---
 
@@ -39,7 +39,7 @@ Para cada configuração, os seguintes detalhes estão disponíveis:
 | **[!UICONTROL Criado em]** | O carimbo de data e hora quando a configuração foi criada. |
 | **[!UICONTROL Modificado em]** | O carimbo de data e hora quando a configuração foi modificada pela última vez. |
 | **[!UICONTROL Sandbox]** | A sandbox na organização em que o Content Analytics está (planejada) configurada e implementada. |
-| **[!UICONTROL Status]** | O status da configuração. O status pode ser:<br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Rascunho]**: a configuração é salva para posterior e não é implantada.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Falha]**: falha na configuração. Você pode selecionar **[!UICONTROL Editar]** para obter informações sobre a falha. A Adobe aborda proativamente qualquer implementação com falha. Você pode entrar em contato com o Atendimento ao cliente para obter detalhes.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Complete]**: a configuração foi concluída e implementada com êxito. |
+| **[!UICONTROL Status]** | O status da configuração. O status pode ser:<br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Rascunho]**: a configuração é salva para depois e não é implantada.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Falha]**: falha na configuração. Você pode selecionar **[!UICONTROL Editar]** para obter informações sobre a falha. A Adobe aborda proativamente qualquer falha na implementação. Você pode entrar em contato com o Atendimento ao cliente para obter detalhes.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Complete]**: a configuração foi concluída e implementada com êxito. |
 
 Você pode usar ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para personalizar a tabela. Selecione quais colunas serão exibidas na caixa de diálogo **[!UICONTROL Personalizar tabela]** e selecione **[!UICONTROL Aplicar]** para aplicar as alterações.
 
@@ -99,13 +99,13 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
->title="Nova exibição de dados"
+>title="Nova visualização de dados"
 >abstract="A seleção de uma nova visualização de dados resulta em uma atualização dessa visualização de dados para incluir métricas e dimensões do Content Analytics. Se necessário, a conexão associada também é atualizada para incluir conjuntos de dados de análise de conteúdo. A conexão e a exibição de dados configuradas atualmente para a análise de conteúdo não são modificadas."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
 >title="Limpar visualização de dados selecionada"
->abstract="Você selecionou uma Visualização de dados que já está provisionada para o Content Analytics. Essa configuração existente do Content Analytics é removida e a Visualização de dados é provisionada com sua nova configuração."
+>abstract="Você selecionou uma visualização de dados já provisionada para o Content Analytics. Essa configuração existente do Content Analytics é removida e a visualização de dados é provisionada com sua nova configuração."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
@@ -120,20 +120,20 @@ Sua configuração requer a seleção de uma [Visualização de dados](/help/dat
 
    * Para selecionar uma nova visualização de dados para uma configuração, use ![Dados](/help/assets/icons/Data.svg) **[!UICONTROL Selecionar visualização de dados]**.
 
-     ![Configuração de análise de conteúdo de uma visualização de dados](../assets/aca-configuration-dataview.png)
+     ![Configuração Content Analytics de uma visualização de dados](../assets/aca-configuration-dataview.png)
 
-   * Para modificar uma Visualização de dados para uma configuração, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]**.
+   * Para modificar uma exibição de dados para uma configuração, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]**.
 
-     ![Configuração de análise de conteúdo de uma visualização de dados](../assets/aca-configuration-dataview-edit.png)
+     ![Configuração Content Analytics de uma visualização de dados](../assets/aca-configuration-dataview-edit.png)
 
 
-   Em ambos os cenários, você verá uma caixa de diálogo **[!UICONTROL Visualização de dados]**, na qual poderá selecionar uma Visualização de dados para sua configuração.
+   Em ambos os cenários, você verá uma caixa de diálogo **[!UICONTROL Visualização de dados]**, na qual poderá selecionar uma visualização de dados para sua configuração.
 
-   ![Configuração de Content Analytics de uma visualização de dados - Tabela de visualizações de dados](../assets/aca-configuration-dataview-dialog.png)
+   ![Configuração Content Analytics de uma visualização de dados - tabela de visualizações de dados](../assets/aca-configuration-dataview-dialog.png)
 
-   Para uma nova configuração, a lista mostra apenas as Visualizações de dados associadas a sandboxes que não têm uma configuração ativa. Além disso, você só verá visualizações de dados associadas a sandboxes às quais você tem acesso e conexões às quais tem direito de modificar.
+   Para uma nova configuração, a lista mostra apenas as visualizações de dados associadas a sandboxes que não têm uma configuração ativa. Além disso, você só verá visualizações de dados associadas a sandboxes às quais você tem acesso e conexões às quais tem direito de modificar.
 
-   Se você editar uma configuração existente, a lista mostrará apenas as Visualizações de dados disponíveis na sandbox que já estão associadas à configuração existente.
+   Se você editar uma configuração existente, a lista mostrará apenas as visualizações de dados disponíveis na sandbox que já estão associadas à configuração existente.
 
    Você pode executar as seguintes ações:
 
@@ -145,7 +145,7 @@ Sua configuração requer a seleção de uma [Visualização de dados](/help/dat
 1. Selecione **[!UICONTROL Salvar]** para confirmar a visualização de dados selecionada. Selecione **[!UICONTROL Cancelar]** para cancelar.
 
 
-No Customer Journey Analytics, uma Visualização de dados é vinculada a uma Customer Journey Analytics [Connection](/help/connections/overview.md). E uma conexão é baseada em uma sandbox na sua organização. Depois de salvar a configuração, a **[!UICONTROL Sandbox]** será preenchida automaticamente com o nome da sandbox, com base na exibição de Dados selecionada.
+No Customer Journey Analytics, uma [visualização de dados](/help/data-views/data-views.md) está vinculada a uma [conexão](/help/connections/overview.md) do Customer Journey Analytics. E uma conexão é baseada em uma sandbox na sua organização. Depois de salvar a configuração, a **[!UICONTROL Sandbox]** será preenchida automaticamente com o nome da sandbox, com base na exibição de dados selecionada.
 
 
 ### Captura e definição de experiência {#onboarding-experiences}
@@ -155,12 +155,12 @@ No Customer Journey Analytics, uma Visualização de dados é vinculada a uma Cu
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_button"
 >title="Captura e definição de experiência"
->abstract="É possível optar por incluir as Experiências nos dados coletados com a Análise de conteúdo. Quando selecionada, é necessário definir uma ou mais combinações de um regex e parâmetros de consulta para decidir em quais URLs você deseja a inclusão de experiências."
+>abstract="É possível optar por incluir experiências nos dados coletados com o Content Analytics. Quando selecionada, é necessário definir uma ou mais combinações de um regex e parâmetros de consulta para decidir em quais URLs você deseja a inclusão de experiências."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_header"
 >title="Captura e definição de experiência"
->abstract="Coletar experiências na Análise de conteúdo"
+>abstract="Coletar experiências no Content Analytics"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_experiences_parameters_header"
@@ -168,13 +168,23 @@ No Customer Journey Analytics, uma Visualização de dados é vinculada a uma Cu
 >abstract="Especifique os parâmetros que determinam como o conteúdo é renderizado no site."
 
 >[!CONTEXTUALHELP]
+>id="aca_onboarding_experiencecapture_new_include_experiences"
+>title="Captura e definição de experiência"
+>abstract="Quando ativado, os dados da experiência são coletados, os atributos da experiência são gerados e os relatórios da experiência ficam disponíveis."
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_experiencecapture_edit_include_experiences"
+>title="Captura e definição de experiência"
+>abstract="Quando ativado, os dados da experiência são coletados, os atributos da experiência são gerados e os relatórios da experiência ficam disponíveis. Use Editar para modificar a configuração da coleção de dados para experiências na propriedade Tags associada à configuração atual."
+
+>[!CONTEXTUALHELP]
 >id="aca_onboarding_experiencecapture_edit_button"
 >title="Captura e definição de experiência"
->abstract="Você pode editar as configurações na extensão Adobe Content Analytics na propriedade Tags associada à configuração atual."
+>abstract="Você deve editar as configurações da coleção de dados de experiência na extensão do Adobe Content Analytics na propriedade Tags associada à configuração atual."
 
 <!-- markdownlint-enable MD034 -->
 
-Nesta seção, você pode optar por incluir Experiências nos dados coletados com o Content Analytics.  Uma experiência é todo o texto em uma página da Web que pode ser reproduzido usando o URL usado pelo usuário inicial que visita essa página da Web.
+Nesta seção, você pode optar por incluir experiências nos dados coletados com o Content Analytics.  Uma experiência é todo o texto em uma página da Web que pode ser reproduzido usando o URL usado pelo usuário inicial que visita essa página da Web.
 
 Por padrão, **[!UICONTROL Incluir experiências]** está desativado. Quando selecionada, você deve definir para quais URLs deseja incluir experiências.
 
@@ -183,7 +193,7 @@ Considere incluir experiências somente quando o seguinte for aplicável:
 * As páginas do site devem ser reprodutíveis usando o URL da página.
 * O conteúdo do texto visto por qualquer usuário pode ser reproduzido usando o URL da página e não depende de cookies ou outros mecanismos de personalização.
 
-Para incluir Experiências em uma configuração nova ou não implementada:
+Para incluir experiências em uma configuração nova ou não implementada:
 
 ![Captura e definição de experiência da configuração do Content Analytics](../assets/aca-configuration-experience.png)
 
@@ -199,11 +209,14 @@ Para incluir Experiências em uma configuração nova ou não implementada:
 1. Selecione **[!UICONTROL Remover]** se desejar remover uma combinação de expressão regular de domínio e parâmetros de consulta.
 1. Selecione **[!UICONTROL Adicionar Regex]** se quiser adicionar outra combinação de uma expressão regular e parâmetros de consulta.
 
-Para editar experiências existentes ou incluir novas Experiências em uma configuração implementada:
+Para editar experiências existentes ou incluir novas experiências em uma configuração implementada:
 
-![Captura e definição de experiência da configuração do Content Analytics](../assets/aca-configuration-experience-edit.png)
+![Captura e definição da experiência de configuração do Content Analytics](../assets/aca-configuration-experience-edit.png)
 
-* Alterne **[!UICONTROL Incluir experiências]** para habilitar ou desabilitar a disponibilidade de componentes de experiência, visualizações, painéis e modelos no Analysis Workspace.
+* Alternar **[!UICONTROL Incluir experiências]** para habilitar ou desabilitar:
+
+   * O processo que gera atributos de experiência dos dados de evento do Content Analytics
+   * O modelo de relatórios no Customer Journey Analytics.
 
 * Selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** para editar ainda mais a configuração da coleta de dados para experiências no Content Analytics. Você é redirecionado para a [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-filtering) na propriedade Tags associada à configuração atual.
 
@@ -291,7 +304,7 @@ Em uma nova configuração, é necessário definir se você deseja usar uma prop
 
 >[!IMPORTANT]
 >
->Caso já tenha uma implementação do Web SDK usando JavaScript e não usando tags, é necessário remover manualmente a extensão automática incluída do Web SDK da propriedade de tags recém-criada.
+>Caso você tenha uma implementação existente do Web SDK que use a [biblioteca JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) e não use a [extensão de Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration), é necessário remover manualmente a extensão automática incluída do Web SDK da propriedade de Tags recém-criada.
 
 
 
@@ -331,7 +344,7 @@ Ao criar ou editar uma configuração, você tem estas opções:
 * **[!UICONTROL Implementar]**: as configurações ou alterações feitas em uma configuração são salvas e implementadas. Todos os campos marcados como ![Obrigatório](/help/assets/icons/Required.svg) precisam ter valores adequados. A implementação consiste em:
 
    * Configuração do **[!UICONTROL Customer Journey Analytics]**:
-      * A visualização de dados selecionada é atualizada para incluir a dimensão e as métricas do Content Analytics.
+      * A visualização de dados selecionada é atualizada para incluir dimensões e métricas do Content Analytics.
       * A Conexão vinculada à visualização de dados selecionada é modificada para incluir eventos Content Analytics e conjuntos de dados de atributos.
       * Um modelo de relatório de Análise de conteúdo é adicionado ao Workspace.
 
