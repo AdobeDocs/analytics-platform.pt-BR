@@ -1,20 +1,20 @@
 ---
-title: Grades de Proteção do Customer Journey Analytics
-description: Saiba mais sobre as Medidas de proteção para o Customer Journey Analytics
+title: Medidas de proteção do Customer Journey Analytics
+description: Saiba mais sobre as Medidas de proteção do Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 22b95bce42ee9f04b828cf5b765f40008a1534b1
+source-git-commit: fbe351bdf6ce451a5c5b5aac4d7cbc2a4c0ba7e5
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1808'
 ht-degree: 7%
 
 ---
 
-# Grades de Proteção do Customer Journey Analytics
+# Medidas de proteção do Customer Journey Analytics
 
-Este documento fornece limites para vários componentes do Customer Journey Analytics. Para Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) ou a [Descrição do Produto para o Complemento Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
+Este documento fornece limites para vários componentes do Customer Journey Analytics. Para obter Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) ou o [Descrição do Produto para o Complemento do Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html).
 
 ## Tipos de limite
 
@@ -22,12 +22,12 @@ Há dois tipos de limites padrão neste documento:
 
 | Tipo de grade de proteção | Descrição |
 |----------|---------|
-| **Medidas de Proteção de Desempenho (limite flexível)** | As Medidas de proteção de desempenho são limites de uso relacionados ao escopo dos seus casos de uso. Ao exceder as medidas de proteção de desempenho, você pode enfrentar degradação e latência do desempenho. O Adobe não é responsável por essa degradação de desempenho. Os clientes que excederem consistentemente uma Garantia de desempenho podem optar por licenciar capacidade adicional para evitar a degradação do desempenho. |
-| **Medidas de Proteção aplicadas pelo sistema (limite rígido)** | As medidas de proteção aplicadas pelo sistema são aplicadas pela interface do usuário ou API do Customer Journey Analytics. Esses são limites que você não pode exceder, pois a interface do usuário e a API o impedem de fazer isso ou retornam um erro. |
+| **Medidas de Proteção de Desempenho (limite flexível)** | As Medidas de proteção de desempenho são limites de uso relacionados ao escopo dos seus casos de uso. Ao exceder as medidas de proteção de desempenho, você pode enfrentar degradação e latência do desempenho. A Adobe não é responsável por essa degradação de desempenho. Os clientes que excederem consistentemente uma Garantia de desempenho podem optar por licenciar capacidade adicional para evitar a degradação do desempenho. |
+| **Medidas de Proteção aplicadas pelo sistema (limite rígido)** | As Medidas de proteção aplicadas pelo sistema são aplicadas pela interface do usuário ou API do Customer Journey Analytics. Esses são limites que você não pode exceder, pois a interface do usuário e a API o impedem de fazer isso ou retornam um erro. |
 
 {style="table-layout:auto"}
 
-Alguns dos recursos e seu valor associado para o limite dependem do Pacote de Customer Journey Analytics ao qual você está habilitado.
+Alguns dos recursos e seu valor associado para o limite dependem do pacote do Customer Journey Analytics ao qual você está habilitado.
 
 >[!NOTE]
 >
@@ -53,6 +53,10 @@ Alguns dos recursos e seu valor associado para o limite dependem do Pacote de Cu
 | Painéis por projeto | 15 | Proteção imposta pelo sistema | Número máximo de [painéis](../analysis-workspace/home.md#panels) por projeto. |
 | Visualizações por painel | 25 | Proteção imposta pelo sistema | Número máximo de [visualizações](../analysis-workspace/home.md#visualizations) por painel. |
 | Campos derivados por tabela de forma livre | 5 | Proteção imposta pelo sistema | Número máximo de campos derivados diferentes em uma única tabela de forma livre. |
+| Comentários por projeto | 1.000 | Proteção imposta pelo sistema | Número máximo de comentários por projeto. |
+| Respostas por comentário | 100 | Proteção imposta pelo sistema | Número máximo de respostas por comentário. |
+| Imagens por comentário | 5 | Proteção imposta pelo sistema | Número máximo de imagens por comentário. |
+| Tamanho da imagem | 2 | Proteção imposta pelo sistema | Tamanho máximo do upload por imagem em MB |
 
 {style="table-layout:auto"}
 
@@ -77,11 +81,11 @@ Alguns dos recursos e seu valor associado para o limite dependem do Pacote de Cu
 | Frequência de atualização do público-alvo | 4 | Proteção imposta pelo sistema | A frequência máxima em horas que um [público-alvo](../components/audiences/audiences-overview.md) pode ser atualizado. |
 | Janela de pesquisa de atualização de público-alvo | 90 | Proteção imposta pelo sistema | Número máximo de dias para a janela de retrospectiva de atualização. |
 | Atualização da data de expiração do público-alvo | 13 | Proteção imposta pelo sistema | Número máximo de meses em que o público-alvo deixa de ser atualizado a partir da data de criação. Os clientes podem estender isso por mais 13 meses. |
-| Número de públicos-alvo atualizados | 75, 150 | Proteção imposta pelo sistema | Número máximo de públicos-alvo para atualização. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Número de públicos-alvo atualizados | 75, 150 | Proteção imposta pelo sistema | Número máximo de públicos-alvo para atualização. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
 
 {style="table-layout:auto"}
 
-Consulte também Experience Platform [Medidas de proteção do Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=pt-BR).
+Consulte também [Proteções da Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=pt-BR) da Experience Platform.
 
 
 ## Expiração automatizada do conjunto de dados
@@ -100,7 +104,7 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 |---|--:|---|---|
 | Projetos | 50.000 | Proteção imposta pelo sistema | Número máximo de projetos para uma organização. |
 | Visualizações de dados | 2.000 | Proteção imposta pelo sistema | Número máximo de [visualizações de dados](../data-views/data-views.md) para uma organização. |
-| Visualizações de dados | 500-1000 | Proteção imposta pelo sistema | Número máximo de visualizações de dados para uma conexão. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Visualizações de dados | 500-1000 | Proteção imposta pelo sistema | Número máximo de visualizações de dados para uma conexão. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
 | Conjuntos de dados | 100 | Proteção imposta pelo sistema | Número máximo de [conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=pt-BR) por conexão. |
 | Conexões | 1000 | Proteção imposta pelo sistema | Número máximo de [conexões](../connections/overview.md) para uma organização. |
 | Título da conexão | 500 | Proteção imposta pelo sistema | Número máximo de caracteres para um título de conexão. |
@@ -110,7 +114,7 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 | Descrição da anotação | 250 | Proteção imposta pelo sistema | Número máximo de caracteres para uma descrição de anotação. |
 | Campos de esquema | 10 | Proteção imposta pelo sistema | Número máximo de campos de esquema (sem incluir campos padrão) ao definir regras para um [campo derivado](../data-views/derived-fields/derived-fields.md). |
 | Campos de pesquisa/perfil | 3 | Proteção imposta pelo sistema | Número máximo de campos de pesquisa ou de esquema de perfil dentro do número máximo de campos de esquema (sem incluir campos padrão) ao definir regras para um campo derivado. |
-| Campos derivados | 100 - 500 | Proteção imposta pelo sistema | Número máximo de campos derivados por conexão. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Campos derivados | 100 - 500 | Proteção imposta pelo sistema | Número máximo de campos derivados por conexão. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
 
 {style="table-layout:auto"}
 
@@ -122,11 +126,11 @@ Consulte também Experience Platform [Medidas de proteção do Real-time Custome
 | Campos | 10.000 | Proteção imposta pelo sistema | Número máximo de propriedades ou campos por linha em um conjunto de dados. |
 | Cadeias de Caracteres Exclusivas | 10 milhões | Proteção imposta pelo sistema | Número máximo de chaves exclusivas por conjunto de dados de pesquisa. |
 | Linhas | 1 milhão | Proteção imposta pelo sistema | Número máximo de linhas por ID de pessoa única em um determinado mês em uma conexão. |
-| Tamanho da linha | 2 | Proteção de desempenho / Proteção imposta pelo sistema | Tamanho médio em quilobytes por linha de dados assimilados no Customer Journey Analytics (limite flexível). Um limite estático para o tamanho da linha é determinado pelas Medidas de proteção para assimilação de dados no Experience Platform. |
+| Tamanho da linha | 2 | Proteção de desempenho / Proteção imposta pelo sistema | Tamanho médio em quilobytes por linha de dados assimilados na Customer Journey Analytics (limite flexível). Um limite estático para o tamanho da linha é determinado pelas Medidas de proteção para assimilação de dados no Experience Platform. |
 
 {style="table-layout:auto"}
 
-Consulte também Experience Platform [Medidas de proteção para a assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html).
+Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform.
 
 
 ## Exportação de dados de destinos
@@ -134,11 +138,11 @@ Consulte também Experience Platform [Medidas de proteção para a assimilação
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
 | Exportação de dados | Total de armazenamentos autorizados do Data Lake | Proteção de desempenho | O Cliente pode usar a Exportação do conjunto de dados de destino para exportar os Dados do cliente no Data Lake até o Armazenamento total autorizado do Data Lake. |
-| Conjuntos de dados disponíveis | Perfil e evento | Proteção imposta pelo sistema | Conjuntos de dados de Evento, Perfil ou Pesquisa criados na interface do usuário do Experience Platform após assimilar ou coletar dados por meio de Fontes, SDK da Web, SDK móvel, Conector de dados do Analytics e Audience Manager. |
+| Conjuntos de dados disponíveis | Perfil e evento | Proteção imposta pelo sistema | Conjuntos de dados de Evento, Perfil ou Pesquisa criados na interface do usuário do Experience Platform após assimilar ou coletar dados por meio de Fontes, Web SDK, Mobile SDK, Conector de dados do Analytics e Audience Manager. |
 
 {style="table-layout:auto"}
 
-Consulte também Experience Platform [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports)
+Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
 
 
 ## Zona de aterrissagem de dados
@@ -155,9 +159,9 @@ Consulte também Experience Platform [Medidas de proteção de exportação do c
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Conjuntos de dados compilados | 5 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
-| Comprimento do preenchimento retroativo | 6 - 25 | Proteção imposta pelo sistema | Número máximo de meses de dados de preenchimento retroativo. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
-| Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Conjuntos de dados compilados | 5 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
+| Comprimento do preenchimento retroativo | 6 - 25 | Proteção imposta pelo sistema | Número máximo de meses de dados de preenchimento retroativo. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
+| Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
 
 {style="table-layout:auto"}
 
@@ -166,9 +170,9 @@ Consulte também Experience Platform [Medidas de proteção de exportação do c
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Conjuntos de dados compilados | 10 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
-| Comprimento do preenchimento retroativo | 13 - 25 | Proteção imposta pelo sistema | Número máximo de meses de dados de preenchimento retroativo. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
-| Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Conjuntos de dados compilados | 10 - 50 | Proteção imposta pelo sistema | Número máximo de conjuntos de dados compilados por cliente. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
+| Comprimento do preenchimento retroativo | 13 - 25 | Proteção imposta pelo sistema | Número máximo de meses de dados de preenchimento retroativo. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
+| Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
 
 
 ## Filtros e métricas calculadas
@@ -177,10 +181,10 @@ Consulte também Experience Platform [Medidas de proteção de exportação do c
 |---|--:|---|---|
 | Contêineres por filtro | 50 | Proteção imposta pelo sistema | Número máximo de containers por filtro. |
 | Métricas por métrica calculada | 25 | Proteção imposta pelo sistema | Número máximo de métricas por métrica calculada. |
-| Métricas e Dimension por filtro | 25 | Proteção imposta pelo sistema | Número máximo de métricas e dimensões exclusivas por filtro. |
+| Métricas e dimensões por filtro | 25 | Proteção imposta pelo sistema | Número máximo de métricas e dimensões exclusivas por filtro. |
 | Contêineres aninhados por filtro | 10 | Proteção imposta pelo sistema | Número máximo de containers aninhados por filtro. |
 | Regras por filtro | 100 | Proteção imposta pelo sistema | Número máximo de regras por filtro. |
-| Comparações de strings por Dimension por filtro | 100 | Proteção imposta pelo sistema | Número máximo de comparações de cadeias de caracteres por dimensão por filtro. |
+| Comparações de cadeias de caracteres por Dimension por filtro | 100 | Proteção imposta pelo sistema | Número máximo de comparações de cadeias de caracteres por dimensão por filtro. |
 | Métricas calculadas  | 6.000 | Proteção imposta pelo sistema | Número máximo de métricas calculadas para uma organização. |
 | Filtros | 50.000 | Proteção imposta pelo sistema | Número máximo de filtros que você pode definir para uma organização. |
 | Chamadas à APIs | 120 | Proteção imposta pelo sistema | Solicitações de API por minuto (12 solicitações a cada 6 segundos). |
@@ -215,7 +219,7 @@ Consulte também Experience Platform [Medidas de proteção de exportação do c
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Linhas por Relatório | 3 milhões - 300 milhões | Proteção imposta pelo sistema | Número máximo de linhas de relatório por relatório. O valor varia dependendo do pacote Customer Journey Analytics (consulte a Descrição do produto). |
+| Linhas por Relatório | 3 milhões - 300 milhões | Proteção imposta pelo sistema | Número máximo de linhas de relatório por relatório. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
 | Detalhamentos por tabela | 5 | Proteção imposta pelo sistema | Número máximo de detalhamentos por tabela. |
 | Métricas por tabela | 5 | Proteção imposta pelo sistema | Número máximo de métricas por tabela. |
 | Frequência de programação | 1 | Proteção imposta pelo sistema | As exportações podem ser agendadas uma vez (1) por dia ou em um agendamento mais longo (por exemplo: uma vez a cada 2 dias ou semanalmente). |
@@ -226,14 +230,14 @@ Consulte também Experience Platform [Medidas de proteção de exportação do c
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato de Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte Experience Platform [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) para obter mais informações.
+>Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|
 | Adobe Analytics para o Adobe Analytics Source Connector (habilitado para A4T) | &lt; 30 minutos |
 | Conector do Adobe Analytics Source para Perfil do cliente em tempo real (A4T não ativado) | &lt; 2 minutos |
 | Conector do Adobe Analytics Source para Perfil do cliente em tempo real (habilitado para A4T) | &lt; 30 minutos |
-| Assimilação de dados no Data Lake a partir da assimilação de Edge Network ou Streaming | &lt; 60 minutos |
+| Assimilação de dados no Data Lake pela Edge Network ou Assimilação de streaming | &lt; 60 minutos |
 | Assimilação de dados no Data Lake pelo Adobe Analytics Source Connector | &lt; 2,25 horas |
 | Assimilação de dados no Customer Journey Analytics a partir do Data Lake | &lt; 90 minutos |
 | Costura (recurso opcional; consulte [Visão geral da compilação](../stitching/overview.md) para obter mais informações) | &lt; 4 horas |

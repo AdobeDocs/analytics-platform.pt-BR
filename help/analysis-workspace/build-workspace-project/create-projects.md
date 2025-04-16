@@ -4,10 +4,10 @@ title: Criar projetos
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 04586de02765ddeba72aca3132b9eca5d22aced7
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 99%
+source-wordcount: '463'
+ht-degree: 88%
 
 ---
 
@@ -65,6 +65,15 @@ Agora que você criou um projeto do espaço de trabalho em branco, certifique-se
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_project_commenting"
+>title="Permitir comentários"
+>abstract="Quando ativada, uma área de comentários fica disponível no painel direito do projeto no Analysis Workspace."
+
+<!-- markdownlint-enable MD034 -->
+
 
 As configurações do projeto fornecem informações sobre o projeto ativo no momento.
 
@@ -83,6 +92,7 @@ As configurações incluem:
 | Mostrar anotações | Especifica se as anotações do projeto são exibidas ou não. |
 | [Paleta de cores do projeto](/help/analysis-workspace/build-workspace-project/color-palettes.md) | É possível alterar a paleta de cores categórica usada no Espaço de trabalho escolhendo entre paletas predefinidas que foram otimizadas para a cegueira de cores ou especificando a paleta personalizada. Esse recurso afeta muitas coisas no Espaço de trabalho, incluindo a maioria das visualizações. |
 | [Exibir densidade](/help/analysis-workspace/build-workspace-project/view-density.md) | Permite ver mais dados na tela ao reduzir o preenchimento vertical do painel esquerdo, das tabelas de forma livre e das tabelas de coorte. |
+| Permitir comentários | Quando essa opção está ativada, uma área de comentários fica disponível no painel direito do projeto no Analysis Workspace. Para obter mais informações, consulte [Adicionar e gerenciar comentários em projetos](/help/analysis-workspace/build-workspace-project/comment-projects.md). |
 
 
 
