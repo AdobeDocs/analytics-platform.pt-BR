@@ -4,10 +4,10 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 3c9827c4930568edb2022c699585f716a8ca72fe
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1988'
-ht-degree: 8%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Tela da jornada"
->abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas do usuário criando um gráfico flexível de nós e setas representando qualquer combinação de eventos, itens de dimensão e filtros. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Os clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
+>abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas de usuários criando um gráfico flexível de nós e setas que represente qualquer combinação de eventos, itens de dimensão e segmentos. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Os clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,7 +45,7 @@ ht-degree: 8%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Tela da jornada"
->abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas do usuário criando um gráfico flexível de nós e setas representando qualquer combinação de eventos, itens de dimensão e filtros. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Os clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
+>abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas de usuários criando um gráfico flexível de nós e setas que represente qualquer combinação de eventos, itens de dimensão e segmentos. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Os clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ _Este artigo documenta a visualização da tela de Jornada no_ ![CustomerJourney
 
 A visualização da tela de Jornada permite analisar e obter insights profundos sobre as jornadas fornecidas aos usuários e clientes. Ele permite definir uma jornada do zero ou visualizá-la no Journey Optimizer e, em seguida, ver como as pessoas saíram (abandonaram) ou continuaram (atravessaram) a jornada.
 
-Você pode [criar análises de jornadas de usuário](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) usando qualquer combinação de eventos, itens de dimensão, filtros e intervalos de datas para criar nós de jornada. Conecte os nós para criar o fluxo da jornada e incluir vários caminhos e pontos de decisão. Arraste nós na tela para reorganizar os eventos e as condições da jornada. Atualizações de dados em tempo real à medida que você faz alterações.
+Você pode [criar análises de jornadas do usuário](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) usando qualquer combinação de eventos, itens de dimensão, segmentos e intervalos de datas para criar nós de jornada. Conecte os nós para criar o fluxo da jornada e incluir vários caminhos e pontos de decisão. Arraste nós na tela para reorganizar os eventos e as condições da jornada. Atualizações de dados em tempo real à medida que você faz alterações.
 
 [Os nós estão conectados](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) como um &quot;caminho eventual&quot;, o que significa que os visitantes são contados enquanto eventualmente se movem de um nó para outro, independentemente de quaisquer eventos que ocorram entre os dois nós. O tempo alocado para que os usuários percorram o caminho é determinado pela configuração do container.
 
@@ -170,7 +170,7 @@ A tela de Jornada fornece uma análise profunda e completa que não é possível
 
 Usar a tela do Jornada para analisar jornadas que foram criadas no Journey Optimizer oferece vários benefícios:
 
-* Crie eventos usando qualquer dimensão, métrica, filtro ou intervalo de datas do Customer Journey Analytics.
+* Crie eventos usando qualquer dimensão, métrica, segmento ou intervalo de datas do Customer Journey Analytics.
 
   No Journey Optimizer, um usuário técnico deve criar um evento antes que ele possa ser adicionado a uma jornada.
 
