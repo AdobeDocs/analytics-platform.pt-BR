@@ -4,10 +4,10 @@ title: Configurar uma visualização de fallout
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 88%
+ht-degree: 94%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 88%
 
 Você pode especificar os pontos de contato para criar uma sequência de fallout multidimensional. Geralmente, um ponto de contato é uma página no seu site. Contudo, pontos de contato não estão limitados a páginas. Por exemplo, é possível adicionar eventos, como unidades, bem como usuários únicos e visitas de retorno. Você também pode adicionar dimensões, como uma categoria, tipo de navegador ou termo de pesquisa interno.
 
-Você também pode adicionar filtros em um ponto de contato. Por exemplo, talvez você queira comparar filtros, como usuários do iOS e do Android™. Arraste os filtros desejados para o topo do fallout e as informações sobre os filtros são adicionadas ao relatório de fallout. Se quiser mostrar apenas esses filtros, você poderá remover a linha de base Todas as visitas.
+Você também pode adicionar segmentos em um ponto de contato. Por exemplo, você pode querer comparar segmentos, como usuários de iOS e Android™. Arraste os segmentos desejados para o topo do fallout e as informações sobre os segmentos serão adicionadas ao relatório de fallout. Se quiser exibir somente esses segmentos, é possível remover a linha de base Todas as visitas.
 
 Não há limite para o número de etapas que é possível adicionar ou o número de dimensões usadas.
 
-Você pode definir a definição de caminho em dimensões, métricas e filtros. Por exemplo, suponha que alguém esteja pesquisando sapatos e camisetas em uma página e camisetas e meias na página seguinte. O próximo relatório de fluxo do produto para sapatos será camisetas e meias, e NÃO camisetas.
+É possível definir o caminho em dimensões, métricas e segmentos. Por exemplo, suponha que alguém esteja pesquisando sapatos e camisetas em uma página e camisetas e meias na página seguinte. O próximo relatório de fluxo do produto para sapatos será camisetas e meias, e NÃO camisetas.
 
 ## Usar
 
@@ -41,7 +41,7 @@ Você pode definir a definição de caminho em dimensões, métricas e filtros. 
 
    >[!NOTE]
    >
-   >Quando são vários filtros, eles são ligados com AND. No caso de vários itens (como itens de dimensão e métricas), são ligados com OR.
+   >Para unir vários segmentos, utilize o operador AND, mas para unir vários itens, como itens de dimensão e métricas, utilize OR.
 
    ![Os pontos de contato Página: rolo da câmera e Página: câmera destacados. ](assets/fallout-or.png)
 
@@ -82,7 +82,7 @@ Como parte da visualização, há opções específicas do menu de contexto disp
 | **[!UICONTROL Tendência de todos os pontos de contato (%)]** | Exibe a tendência de todas as porcentagens de pontos de contato do fallout (exceto **[!UICONTROL Todas as pessoas]**, se incluso) no mesmo gráfico. |
 | **[!UICONTROL Detalhar o fallthrough neste ponto de contato]** | Visualize o que as pessoas fizeram entre dois pontos de contato (este e o próximo) se continuaram até o próximo ponto de contato. Isso cria uma tabela de forma livre, mostrando suas dimensões. Você pode substituir dimensões e outros elementos da tabela. |
 | **[!UICONTROL Detalhar fallout neste ponto de contato]** | Veja o que as pessoas que não entraram no funil fizeram imediatamente depois da etapa selecionada. |
-| **[!UICONTROL Criar filtro a partir do ponto de contato]** | Criar um novo filtro a partir do ponto de contato selecionado. |
+| **[!UICONTROL Criar segmentos a partir do ponto de contato]** | Crie um novo segmento a partir do ponto de contato selecionado. |
 
 >[!MORELIKETHIS]
 >

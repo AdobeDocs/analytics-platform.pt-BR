@@ -4,10 +4,10 @@ title: Limitações conhecidas do Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: de04792035aa7c235751019ee9f9fe5b74b9b102
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 89%
+ht-degree: 79%
 
 ---
 
@@ -24,27 +24,27 @@ Veja a seguir uma lista de limitações conhecidas do Analysis Workspace e seus 
 
 ## Visualizações
 
-* As visualizações que utilizam filtros, como [!UICONTROL Fallout], [!UICONTROL Fluxo], [!UICONTROL Coorte] e [!UICONTROL Histograma], não podem aceitar métricas calculadas como entradas.
+* As visualizações que usam segmentos, como [!UICONTROL Fallout], [!UICONTROL Fluxo], [!UICONTROL Coorte] e [!UICONTROL Histograma], não podem aceitar métricas calculadas como entradas.
 * [!UICONTROL Fluxo]: as dimensões de entrada/saída, por exemplo, [!UICONTROL Página de entrada], não podem ser usadas em Fluxo.
 * [!UICONTROL Coorte]: não é possível usar números não inteiros como critérios de coorte.
 
 ## Filtros
 
-* Determinadas métricas e dimensões não podem ser filtradas, como [!UICONTROL Eventos], [!UICONTROL Pessoas], etc.
-* Filtros ad hoc criados na [zona de destino do painel](/help/analysis-workspace/c-panels/panels.md) são um tipo de filtro rápido. Eles não aparecem no painel esquerdo do Workspace ou no gerenciador de componentes do filtro, a menos que sejam tornados públicos. Para obter mais informações, consulte [Filtros rápidos](/help/components/filters/quick-filters.md).
+* Determinadas métricas e dimensões não podem ser segmentadas, como [!UICONTROL Eventos], [!UICONTROL Pessoas], etc.
+* Segmentos ad hoc criados na [zona de destino do painel](/help/analysis-workspace/c-panels/panels.md) são um tipo de segmento rápido. Eles não aparecem no painel esquerdo do espaço de trabalho ou no gerenciador de componentes de filtro, a menos que sejam tornados públicos. Para obter mais informações consulte [Segmentos rápidos](/help/components/filters/quick-filters.md).
 
 ## Métricas calculadas 
 
-* As Métricas calculadas não podem ser usadas em determinadas visualizações. Consulte [Visualizações](#visualizations).
+* As métricas calculadas não podem ser usadas em determinadas visualizações. Consulte [Visualizações](#visualizations).
 * Métricas calculadas não podem ser usadas no painel [!UICONTROL Atribuição], já que podem incluir modelos de atribuição separados.
-* Alguns componentes e operadores não estarão disponíveis se uma métrica calculada for criada no Espaço de trabalho (em vez de ser criada a partir de [!UICONTROL Componentes > filtros]). Por exemplo, [!UICONTROL Endereço IP].
+* Determinados componentes e operadores não estarão disponíveis se uma métrica calculada for criada do Workspace (em vez de ser criada a partir de [!UICONTROL Componentes > segmentos]). Por exemplo, [!UICONTROL Endereço IP].
 
 ## Intervalos de datas
 
-* Os intervalos de datas personalizados não são compatíveis com [!UICONTROL Este dia no ano passado], [!UICONTROL Este dia no mês passado], etc.
+* Os intervalos de datas personalizados não são compatíveis com [!UICONTROL Este dia no ano passado], [!UICONTROL Este dia no mês passado] etc.
 
 
-## Configurações do relatório
+## Configurações de relatório
 
 * Algumas das configurações na página [!UICONTROL Configurações do relatório] não se aplicam. O Analysis Workspace usa somente as configurações [!UICONTROL Idioma/Moeda/Codificação] na parte inferior: [!UICONTROL Separador de milhares], [!UICONTROL Codificação do relatório agendado] e [!UICONTROL Caractere separador CSV].
 

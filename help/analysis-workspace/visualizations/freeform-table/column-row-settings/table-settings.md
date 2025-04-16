@@ -4,10 +4,10 @@ title: Configurações de linha
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuraç
 
 >[!ENDSHADEBOX]
 
-As configurações de linha variam de acordo com qual componente foi arrastado para a tabela. Para acessar as configurações de linha da tabela, selecione ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]** ao lado de uma dimensão, filtro, métrica, período ou detalhamento em cada um desses objetos.
+As configurações de linha variam de acordo com qual componente foi arrastado para a tabela. Para acessar as configurações de linha da tabela, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]** próximo a uma dimensão, segmento, métrica, período ou um detalhamento em cada um desses objetos.
 
 ![Tabela de forma livre com destaque para o ícone de Configurações de métricas](assets/row-settings.png)
 
@@ -71,7 +71,7 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 | **[!UICONTROL Seleção de tendências]** | Cria uma visualização de gráfico de linhas de tendência para a seleção. |
 | **[!UICONTROL Exibir somente as linhas selecionadas]** | Exibe somente as linhas selecionadas na visualização. |
 | **[!UICONTROL Exibir todas as linhas]** | Exibe todas as linhas na visualização. |
-| **[!UICONTROL Criar filtro a partir da seleção]** | Abre o **[!UICONTROL Construtor de filtros]** para criar um filtro a partir da seleção. |
+| **[!UICONTROL Criar segmento a partir da seleção]** | Abra o **[!UICONTROL Construtor de filtros]** para criar um segmento a partir da seleção. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Abre a caixa de diálogo **[!UICONTROL Criar público-alvo]** para criar um público-alvo a partir da seleção. |
 
 As opções adicionais de menu de contexto a seguir estão disponíveis ao selecionar um cabeçalho de coluna de métrica.
@@ -85,7 +85,7 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 | **[!UICONTROL Comparar modelo de atribuição]** | Permite especificar um novo modelo de atribuição e compará-lo ao modelo de atribuição da coluna selecionada. Uma nova coluna é adicionada com as métricas do novo modelo de atribuição. Além disso, uma coluna de Variação porcentual é adicionada para comparação. |
 | **[!UICONTROL Redefinir larguras de coluna]** | Redefine as larguras das colunas para a largura padrão. |
 | **[!UICONTROL Criar anotação a partir da seleção]** | Abre os **[!UICONTROL detalhes da anotação]** para adicionar uma anotação. |
-| **[!UICONTROL Criar filtro a partir da seleção]** | Abre o **[!UICONTROL Construtor de filtros]** para criar um filtro a partir da seleção. |
+| **[!UICONTROL Criar segmento a partir da seleção]** | Abra o **[!UICONTROL Construtor de filtros]** para criar um segmento a partir da seleção. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Abre a caixa de diálogo **[!UICONTROL Criar público-alvo]** para criar um público-alvo a partir da seleção. |
 
 ## Alterar altura da linha

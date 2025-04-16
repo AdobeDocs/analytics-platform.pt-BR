@@ -4,7 +4,7 @@ title: Sobre relatórios e visualizações de fallout
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 30%
@@ -25,7 +25,7 @@ ht-degree: 30%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de Fallout em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Fallout](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de Fallout no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Fallout](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -43,7 +43,7 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um re
 
 As visualizações de fallout permitem:
 
-* Fazer comparações lado a lado de dois filtros diferentes no mesmo relatório.
+* Fazer comparações lado a lado de dois segmentos diferentes no mesmo relatório
 * Arraste e solte (e reorganize) as etapas do funil (pontos de contato).
 * Misture e associe valores de diferentes dimensões e métricas.
 * Crie um relatório de fallout multidimensional.
@@ -75,7 +75,7 @@ As visualizações de Fallout são mais adequadas para:
 
 * Análise de fallout envolvendo jornadas com uma sequência predefinida de páginas e um único ponto de entrada e caminho. (Use a tela de Jornada para jornadas com vários pontos de entrada e caminhos.)
 
-* Jornadas nas quais você precisa executar comparações lado a lado de dois filtros diferentes no mesmo relatório.
+* Jornadas nas quais você precisa executar comparações lado a lado de dois segmentos diferentes no mesmo relatório.
 
 Use [a tabela acima](#understand-the-differences) para entender as diferenças entre as visualizações de tela de Jornada, Fallout e Fluxo.
 

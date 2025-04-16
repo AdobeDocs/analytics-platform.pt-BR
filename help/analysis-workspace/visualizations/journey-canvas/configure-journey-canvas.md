@@ -4,7 +4,7 @@ title: Tela da jornada
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: a909804e066339750c2271f6c65c108a6a6199f8
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '6225'
 ht-degree: 1%
@@ -101,7 +101,7 @@ Você cria nós das seguintes maneiras: arrastando componentes do Workspace do p
 
 1. No Analysis Workspace, abra uma visualização existente da tela de Jornada ou [comece a criar uma nova](#begin-building-a-journey-canvas-visualization).
 
-1. Arraste métricas, dimensões, itens de dimensão, filtros ou intervalos de datas do painel esquerdo para a tela. Métricas baseadas em um [campo derivado](/help/data-views/derived-fields/derived-fields.md) têm suporte. No entanto, métricas calculadas, bem como qualquer métrica ou dimensão que seja baseada em um [conjunto de dados de resumo](/help/data-views/summary-data.md), não são suportadas.
+1. Arraste métricas, dimensões, itens de dimensão, segmentos ou intervalos de datas do painel esquerdo para a tela. Métricas baseadas em um [campo derivado](/help/data-views/derived-fields/derived-fields.md) têm suporte. No entanto, métricas calculadas, bem como qualquer métrica ou dimensão que seja baseada em um [conjunto de dados de resumo](/help/data-views/summary-data.md), não são suportadas.
 
    Você pode selecionar vários componentes no painel à esquerda, mantendo pressionada a tecla Shift ou a tecla Command (no Mac) ou Ctrl (no Windows).
 
@@ -118,10 +118,10 @@ Você cria nós das seguintes maneiras: arrastando componentes do Workspace do p
    | Item de dimensão | Área em branco da tela de desenho | O nó exibe onde o componente foi solto, desconectado de todos os nós existentes. |
    | Item de dimensão | Um nó existente | O componente é combinado automaticamente com o nó existente. |
    | Item de dimensão | Uma seta que conecta dois nós existentes | O nó é exibido entre os dois nós existentes onde o componente foi descartado e está conectado a ambos os nós existentes. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p> |
-   | Filtro | Área em branco da tela de desenho | O nó é exibido onde o componente foi solto sem conexão com outros nós.<p>O número e a porcentagem exibidos no nó incluem o total da métrica primária, filtrado pelo filtro selecionado.</p> <p>Por exemplo, se a opção Pessoas estiver selecionada como a métrica principal da jornada, adicionar um filtro Hoje a uma área em branco da tela mostrará todas as pessoas que tiveram um evento hoje.</p> |
-   | Filtro | Um nó existente | Aplica o filtro ao nó existente. |
-   | Filtro | Uma seta que conecta dois nós | O nó é exibido entre os dois nós existentes onde o componente foi descartado e está conectado a ambos os nós existentes. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p><p>Aplica o filtro ao ponto no caminho em que o componente foi solto.</p> |
-   | Intervalo de datas | Área em branco da tela de desenho | O nó exibe onde o componente foi solto, desconectado de quaisquer outros nós.<p>O número e a porcentagem exibidos no nó incluem o total da métrica primária, filtrado pelo intervalo de datas selecionado.</p> <p>Por exemplo, se a opção Pessoas estiver selecionada como a métrica principal da jornada, adicionar um intervalo de datas Este mês a uma área em branco da tela mostrará todas as pessoas que tiveram um evento durante o mês atual.</p> |
+   | Filtro | Área em branco da tela de desenho | O nó é exibido onde o componente foi solto sem conexão com outros nós.<p>O número e a porcentagem exibidos no nó incluem o total da métrica primária, segmentado pelo segmento selecionado.</p> <p>Por exemplo, se a opção Pessoas estiver selecionada como a métrica principal da jornada, adicionar um segmento de Hoje a uma área em branco da tela mostrará todas as pessoas que tiveram um evento hoje.</p> |
+   | Filtro | Um nó existente | Aplica o segmento ao nó existente. |
+   | Filtro | Uma seta que conecta dois nós | O nó é exibido entre os dois nós existentes onde o componente foi descartado e está conectado a ambos os nós existentes. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p><p>Aplica o segmento ao ponto no caminho em que o componente foi solto.</p> |
+   | Intervalo de datas | Área em branco da tela de desenho | O nó exibe onde o componente foi solto, desconectado de quaisquer outros nós.<p>O número e a porcentagem exibidos no nó incluem o total da métrica primária, segmentado pelo intervalo de datas selecionado.</p> <p>Por exemplo, se a opção Pessoas estiver selecionada como a métrica principal da jornada, adicionar um intervalo de datas Este mês a uma área em branco da tela mostrará todas as pessoas que tiveram um evento durante o mês atual.</p> |
    | Intervalo de datas | Um nó existente | Aplica o intervalo de datas ao nó existente. |
    | Intervalo de datas | Uma seta que conecta dois nós | O nó é exibido entre os dois nós existentes onde o componente foi descartado e está conectado a ambos os nós existentes. (Consulte [Nós Connect](#connect-nodes) para obter mais informações.)</p><p>Aplica o intervalo de datas ao ponto no caminho em que o componente foi solto.</p> |
    | Vários componentes | Uma área em branco da tela de desenho | **Se nenhum dos componentes for uma dimensão:**<p>Cada componente é exibido como um nó separado onde os componentes foram descartados, desconectado de qualquer nó existente.</p><p>Mantenha pressionada a tecla Shift ao soltar os componentes na tela para adicioná-los como um nó combinado. </p><p>**Se algum dos componentes que você está adicionando for uma dimensão:**</p><p>Cada componente é exibido como um nó separado onde os componentes foram descartados, desconectado de qualquer nó existente.</p><p>Somente uma dimensão pode ser adicionada de cada vez. Quando a dimensão é adicionada, três nós são criados para os três principais itens de dimensão nos quais o componente foi descartado.</p><p>Mantenha pressionada a tecla Shift ao soltar os componentes na tela para adicioná-los como um nó combinado. Os três principais itens de dimensão são combinados com cada nó. (Consulte [Combinar nós](#combine-nodes) para obter mais informações.)</p> |
@@ -238,7 +238,7 @@ Depois que os nós forem adicionados à tela, você poderá reorganizá-los, com
 
 ### Reorganizar nós
 
-As jornadas na tela de Jornada consistem em um gráfico flexível de nós e setas que representam qualquer combinação de eventos, itens de dimensão e filtros.
+As jornadas na tela de Jornada consistem em um gráfico flexível de nós e setas que representam qualquer combinação de eventos, itens de dimensão e segmentos.
 
 Você pode arrastar nós na tela para reorganizar os eventos e as condições da jornada.
 
@@ -266,7 +266,7 @@ A lógica aplicada aos nós quando eles são combinados difere, dependendo dos t
 
 >[!TIP]
 >
->Você pode exibir a lógica de um nó combinado clicando com o botão direito do mouse no nó e selecionando [!UICONTROL **Criar filtro a partir do nó**]. A lógica é mostrada na seção [!UICONTROL **Definição**].
+>Você pode exibir a lógica de um nó combinado clicando com o botão direito do mouse no nó e selecionando [!UICONTROL **Criar segmento a partir do nó**]. A lógica é mostrada na seção [!UICONTROL **Definição**].
 
 
 | Tipos de componentes a serem combinados | Lógica (operador) usada |
@@ -297,11 +297,11 @@ Os nós são conectados por uma seta. A direção e a largura da seta têm signi
 
 #### Lógica ao conectar nós
 
-Ao conectar nós na tela do Jornada, eles são conectados por meio do operador THEN. Isso também é conhecido como [filtragem sequencial](/help/components/filters/seg-sequential-build.md).
+Ao conectar nós na tela do Jornada, eles são conectados por meio do operador THEN. Isso também é conhecido como [segmentação sequencial](/help/components/filters/seg-sequential-build.md).
 
 Os nós são conectados como um &quot;caminho eventual&quot;, o que significa que os visitantes são contados desde que eventualmente se movam de um nó para outro, independentemente de quaisquer eventos que ocorram entre os dois nós. O tempo alocado para que os usuários percorram o caminho é determinado pela configuração do container. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
-Você pode exibir a lógica dos nós conectados clicando com o botão direito do mouse no nó e selecionando [!UICONTROL **Criar filtro do nó**]. A lógica é mostrada na seção [!UICONTROL **Definição**].
+Você pode exibir a lógica dos nós conectados clicando com o botão direito do mouse no nó e selecionando [!UICONTROL **Criar segmento do nó**]. A lógica é mostrada na seção [!UICONTROL **Definição**].
 
 #### Conectar nós existentes
 
@@ -542,25 +542,25 @@ Para exibir dados de tendência:
 
 1. Selecione [!UICONTROL **Tendência**].
 
-### Criar um filtro com base em um nó ou seta
+### Criar um segmento com base em um nó ou uma seta
 
-Você pode criar um novo filtro com base em um nó ou seta em uma jornada. Depois que o filtro é criado, é possível usá-lo em qualquer lugar do Analysis Workspace.
+Você pode criar um novo segmento com base em um nó ou seta em uma jornada. Depois que o segmento é criado, é possível usá-lo em qualquer lugar do Analysis Workspace.
 
-Os filtros criados a partir da tela de Jornada usam [filtragem sequencial](/help/components/filters/seg-sequential-build.md). Isso significa que o filtro usa o operador THEN para vincular a sequência de eventos (a jornada) pela qual as pessoas fluíram, levando até o nó ou a seta selecionada. Todos os eventos que correspondem ao nó ou à seta selecionada são incluídos no filtro.
+Os filtros criados a partir da tela de Jornada usam a [segmentação sequencial](/help/components/filters/seg-sequential-build.md). Isso significa que o segmento usa o operador THEN para vincular a sequência de eventos (a jornada) pela qual as pessoas fluíram, levando até o nó ou a seta selecionada. Todos os eventos que correspondem ao nó ou à seta selecionada são incluídos no segmento.
 
-Se você criar um filtro com base em um nó que tenha vários caminhos fluindo para ele, todos os caminhos serão incluídos no filtro. Caminhos separados são unidos com o operador OR.
+Se você criar um segmento com base em um nó que tenha vários caminhos fluindo para ele, todos os caminhos serão incluídos no segmento. Caminhos separados são unidos com o operador OR.
 
-Para criar um filtro:
+Para criar um segmento:
 
-1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse no nó ou na seta que deseja usar para criar o filtro.
+1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse no nó ou na seta que deseja usar para criar o segmento.
 
-1. Selecione [!UICONTROL **Criar filtro a partir do nó**] ou [!UICONTROL **Criar filtro a partir da seta**].
+1. Selecione [!UICONTROL **Criar segmento do nó**] ou [!UICONTROL **Criar segmento a partir da seta**].
 
-   O Construtor de filtros é exibido. Na seção [!UICONTROL **Definição**], a definição de filtro é criada com base no nó ou na seta selecionada e seu contexto dentro da jornada.
+   O Construtor de filtros é exibido. Na seção [!UICONTROL **Definição**], a definição de segmento é criada com base no nó ou na seta selecionada e seu contexto dentro da jornada.
 
-1. Especifique um título para o filtro e faça outras alterações. Para obter mais informações sobre como criar um filtro, consulte [Construtor de filtros](/help/components/filters/filter-builder.md).
+1. Especifique um título para o segmento e faça outras alterações. Para obter mais informações sobre como criar um segmento, consulte [Construtor de filtros](/help/components/filters/filter-builder.md).
 
-1. Selecione [!UICONTROL **Salvar**] para salvar o filtro.
+1. Selecione [!UICONTROL **Salvar**] para salvar o segmento.
 
 ### Excluir nós
 

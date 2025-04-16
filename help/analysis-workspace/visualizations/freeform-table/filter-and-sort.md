@@ -4,10 +4,10 @@ title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 590a3ddbe988d27341fe96a3fa866960d1641e24
+source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 42%
+source-wordcount: '844'
+ht-degree: 43%
 
 ---
 
@@ -94,7 +94,7 @@ Para filtrar dados em tabelas de forma livre:
 
 1. Selecione **[!UICONTROL Aplicar]** para filtrar os dados. Selecione **[!UICONTROL Limpar]** para limpar todas as entradas. Selecione **[!UICONTROL Cancelar]** para cancelar e fechar a caixa de diálogo. <br/>Um ícone colorido de ![Filtro](/help/assets/icons/FilterColored.svg) **Filtro** indica e exibe detalhes quando um filtro é aplicado à tabela.
 
-### Usar filtros de público
+### Usar segmentos de público
 
 Consulte [Visão geral dos filtros](/help/components/filters/filters-overview.md) para obter mais detalhes.
 
