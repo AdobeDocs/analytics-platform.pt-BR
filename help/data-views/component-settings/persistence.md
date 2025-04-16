@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 73%
+source-wordcount: '1053'
+ht-degree: 62%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 73%
 
 
 
-[!UICONTROL Persistência] é a capacidade de um determinado valor de dimensão se relacionar a uma métrica além do evento em que está definido. Ela usa uma combinação de alocação e expiração.
+[!UICONTROL Persistência] é a capacidade de um determinado valor de dimensão atribuir a uma métrica além do evento em que está definido. Ela usa uma combinação de alocação e expiração.
 
 ![Janela de visualizações de dados destacando as opções de Persistência](../assets/persistence.png)
 
-* A **Alocação** permite determinar qual valor é mantido quando mais de um item de dimensão pode persistir de cada vez em uma única coluna.
+* **A Alocação** permite determinar qual valor manter quando mais de um item de dimensão puder persistir de cada vez em uma única coluna.
 
   >[!NOTE]
   >
@@ -45,8 +45,8 @@ A [!UICONTROL Persistência] está disponível somente em dimensões e é retroa
 | Configuração | Descrição |
 | --- | --- |
 | [!UICONTROL Definir persistência] | Habilite a persistência para a dimensão. Se a persistência não estiver habilitada, a dimensão se relacionará somente às métricas que existem no mesmo evento. Essa configuração é desativada pelo padrão. |
-| [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são: [!UICONTROL Mais recente], [!UICONTROL Original], [!UICONTROL Instância], [!UICONTROL Tudo]. A partir de 28 de outubro de 2021, uma janela de lookback de até 90 dias será adicionada à configuração de [!UICONTROL Alocação]. |
-| [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: [!UICONTROL Sessão] (padrão), [!UICONTROL Pessoa], [!UICONTROL Tempo personalizado] e [!UICONTROL Métrica]. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). O tempo máximo de expiração que pode ser definido é de 90 dias. Se você selecionar uma alocação de [!UICONTROL Todos], somente a expiração de [!UICONTROL Sessão] ou [!UICONTROL Pessoa] estará disponível. |
+| [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são:<ul><li>**[!UICONTROL Mais recente]**: os valores na dimensão persistem até serem substituídos por valores subsequentes</li><li> **[!UICONTROL Original]**: o primeiro valor desta dimensão persiste e não é substituído por valores subsequentes</li><li>**[!UICONTROL Todos]**: todos os valores desta dimensão persistem simultaneamente</li><li>**[!UICONTROL Primeiro conhecimento]**: o primeiro valor desta dimensão é usado e será aplicado a todos os eventos anteriores e posteriores.</li><li>**[!UICONTROL Último valor conhecido]**: o último valor desta dimensão é usado e será aplicado a todos os eventos anteriores e posteriores.</li></ul> |
+| [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: <ul><li>**[!UICONTROL Sessão]** (padrão)</li><li>**[!UICONTROL Pessoa]**</li><li>**[!UICONTROL Horário personalizado]**</li><li>**[!UICONTROL Métrica]**</li></ul>. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). O tempo máximo de expiração que pode ser definido é de 90 dias. Se você selecionar uma alocação de [!UICONTROL Todos], somente a expiração de [!UICONTROL Sessão] ou [!UICONTROL Pessoa] estará disponível. |
 
 {style="table-layout:auto"}
 
