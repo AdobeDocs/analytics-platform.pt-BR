@@ -3,7 +3,9 @@ description: Saiba como comentar em um projeto no Analysis Workspace
 title: Adicionar e exibir comentários em projetos
 feature: Workspace Basics
 role: User
-source-git-commit: c0fb353973ea7106b3942576b86c5115252548ea
+hide: true
+hidefromtoc: true
+source-git-commit: 11e6d5a2aace4554b48c05c2316061de1e628108
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
