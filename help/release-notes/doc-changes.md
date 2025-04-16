@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: ff9d8cbe25dca2bbf1ab41891c20476909516b66
+source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
 workflow-type: tm+mt
-source-wordcount: '4701'
-ht-degree: 99%
+source-wordcount: '4716'
+ht-degree: 98%
 
 ---
 
@@ -20,6 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Abril de 2025** | |
+| Visualizar e gerenciar o uso | A documentação sobre como [exibir](/help/connections/manage-connections.md#usage) e [gerenciar](/help/technotes/estimate-usage.md) o uso do Customer Journey Analytics foi retrabalhada |
 | Análise de conteúdo | [Documentação](/help/content-analytics/content-analytics.md) do Adobe Content Analytics. O Content Analytics permite investigar de maneira rápida e fácil grandes volumes de dados de conteúdo para descobrir tendências, detectar anomalias, identificar a fadiga do conteúdo e obter insights sobre a exposição do conteúdo. |
 | **Março de 2025** | |
 | Casos de uso do Quantum Metric | Adição de casos de uso para coleta de dados do [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
@@ -193,7 +194,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Data | Atualizar descrição |
 | --- | --- |
 | **Dezembro de 2022** |  |
-| 16 de dezembro de 2022 | Novo tópico sobre como [medir e gerenciar o uso de dados do Customer Journey Analytics](/help/technotes/estimate-usage.md). |
+| 16 de dezembro de 2022 | Novo tópico sobre [gerenciamento do uso de dados do Customer Journey Analytics](/help/technotes/estimate-usage.md). |
 | **Outubro de 2022** | |
 | Outubro de 2022 | Novo tópico sobre [proteção por senha de projetos agendados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=pt-BR#password). Este recurso é compatível com a [preparação para a HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Outubro de 2022 | Novo tópico sobre [Chaves gerenciadas pelo cliente](/help/privacy/cmk.md). Este recurso é compatível com a [preparação para a HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
