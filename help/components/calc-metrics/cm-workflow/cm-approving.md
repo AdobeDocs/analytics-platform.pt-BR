@@ -3,7 +3,7 @@ description: No Gerenciador de métricas calculadas, é possível definir um flu
 title: Aprovar métricas calculadas
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 22%
@@ -12,7 +12,7 @@ ht-degree: 22%
 
 # Aprovar métricas calculadas
 
-No [Gerenciador de métricas calculadas](cm-manager.md), você pode aprovar e cancelar a aprovação de filtros. Somente administradores podem aprovar métricas calculadas.
+No [Gerenciador de métricas calculadas](cm-manager.md), você pode aprovar e cancelar a aprovação de segmentos. Somente administradores podem aprovar métricas calculadas.
 
 Para aprovar métricas calculadas:
 

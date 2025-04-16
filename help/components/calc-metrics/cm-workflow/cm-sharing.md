@@ -3,7 +3,7 @@ description: Dependendo das suas permissões, é possível compartilhar métrica
 title: Compartilhar métricas calculadas
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 97b831d7eee477ee7ef0bf8ae65e6a415d243464
+source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 10%
@@ -39,7 +39,7 @@ Abaixo estão algumas práticas recomendadas para compartilhar métricas calcula
 
 * Como administrador, compartilhe uma métrica calculada com um grupo específico se essa métrica calculada fornecer valor de negócios para a parte dos usuários desse grupo.
 
-* Como administrador ou usuário individual, compartilhe uma métrica calculada com um ou mais indivíduos para validar uma métrica calculada. Se os filtros não forem úteis, você poderá excluir a métrica calculada.
+* Como administrador ou usuário individual, compartilhe uma métrica calculada com um ou mais indivíduos para validar uma métrica calculada. Se os segmentos não forem úteis, você poderá excluir a métrica calculada.
 
 
 <!--
