@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 88%
+ht-degree: 85%
 
 ---
 
@@ -101,7 +101,7 @@ Esta seção é visível somente para admins provisionados com o Journey Optimiz
 
 ### Containers
 
-Determina o nome dos containers para a visualização de dados. Os nomes dos containers são usados com frequência em [filtros](/help/components/filters/filters-overview.md#Filter-containers).
+Determina o nome dos containers para a visualização de dados. Os nomes dos containers são usados com frequência em [segmentos](/help/components/filters/filters-overview.md#Filter-containers).
 
 | Configuração | Descrição |
 | --- | --- |
@@ -185,13 +185,13 @@ Você pode filtrar ![Ícone de filtro](https://spectrum.adobe.com/static/icons/w
 ## Configurações 
 
 1. Selecione a guia **[!UICONTROL Configurações]**.
-1. Configure filtros para aplicar a toda a visualização de dados. Consulte [Configurações (filtros)](#settings-filters) abaixo.
+1. Configure segmentos para aplicar a toda a visualização de dados. Consulte [Configurações (segmentos)](#settings-filters) abaixo.
 1. Configurar o tempo limite e as métricas da sessão. Consulte [Configurações da sessão](#session-settings) abaixo.
 1. Selecione **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
-### Configurações (filtros)
+### Configurações (segmentos)
 
-É possível adicionar filtros que se aplicam a toda a visualização de dados. Esse filtro é aplicado a qualquer relatório executado no Espaço de trabalho. Arraste um filtro da lista no painel à esquerda para o campo [!UICONTROL Adicionar filtros].
+É possível adicionar segmentos que se aplicam a toda a visualização de dados. Esse segmento é aplicado a qualquer relatório executado no Workspace. Arraste um segmento da lista no painel à esquerda para o campo [!UICONTROL Adicionar segmentos].
 
 ### Configurações da sessão
 

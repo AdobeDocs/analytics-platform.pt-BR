@@ -4,10 +4,10 @@ title: Segmentos rápidos
 feature: Workspace Basics
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 59%
+ht-degree: 30%
 
 ---
 
@@ -65,18 +65,18 @@ Consulte abaixo um exemplo do construtor de segmentos rápido. No exemplo, o con
 
 ![Criador de segmentos rápido](assets/quick-filter-builder.png)
 
-O construtor de filtros rápidos consiste nas áreas e botões a seguir.
+O construtor de segmentos rápido consiste nas seguintes áreas e botões.
 
 ### Área do cabeçalho
 
-A área do cabeçalho determina o nome, o tipo e o escopo do filtro rápido. Ela também exibe de forma visual os resultados do filtro rápido.
+A área do cabeçalho determina o nome, o tipo e o escopo do segmento rápido. Ele também exibe um visual para os resultados do segmento rápido.
 
 | Elemento | Descrição |
 |---|---|
-| **[!UICONTROL Nome]** | O nome é derivado automaticamente da definição de filtro rápido. |
-| **[!UICONTROL Pessoas]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alerta](/help/assets/icons/Alert.svg) | Visualização dos dados resultantes do filtro rápido. Uma barra e uma porcentagem fornecem insights sobre a parcela dos dados gerais que fazem parte do resultado do filtro rápido. Um ![Alerta](/help/assets/icons/Alert.svg) vermelho indica que o filtro rápido não retorna dados. |
-| **[!UICONTROL Incluir]**<br/>**[!UICONTROL Excluir]** | Selecione na lista suspensa ![ChevronDown](/help/assets/icons/ChevronDown.svg) se deseja incluir ou excluir os resultados do filtro rápido a partir dos dados no painel. |
-| **[!UICONTROL Evento]**<br/>**[!UICONTROL Sessão]**<br/>**[!UICONTROL Pessoa]** | Selecione o escopo do filtro rápido na lista suspensa ![ChevronDown](/help/assets/icons/ChevronDown.svg). |
+| **[!UICONTROL Nome]** | O nome é derivado automaticamente da definição de segmento rápido. |
+| **[!UICONTROL Pessoas]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alerta](/help/assets/icons/Alert.svg) | Visualização visual dos dados resultantes do segmento rápido. Uma barra e uma porcentagem fornecem um insight sobre quanto dos dados gerais fazem parte do resultado do segmento rápido. Um ![Alerta](/help/assets/icons/Alert.svg) vermelho indica que o segmento rápido não retorna dados. |
+| **[!UICONTROL Incluir]**<br/>**[!UICONTROL Excluir]** | Na lista suspensa ![DivisaAbaixo](/help/assets/icons/ChevronDown.svg), selecione se deseja incluir ou excluir os resultados do segmento rápido dos dados no painel. |
+| **[!UICONTROL Evento]**<br/>**[!UICONTROL Sessão]**<br/>**[!UICONTROL Pessoa]** | Selecione o escopo do segmento rápido na lista suspensa ![Divisa](/help/assets/icons/ChevronDown.svg). |
 
 ### Área de condição
 
@@ -88,25 +88,25 @@ A área de condição especifica as condições (até três, no máximo). Para c
 | **[!UICONTROL *componente *]** | O campo de componente da condição. Você pode [!UICONTROL *Digitar para adicionar*] um componente, selecionar um componente na lista ou arrastar e soltar um componente a partir do painel de componentes. Você só pode soltar componentes semelhantes no campo de componente da condição. Por exemplo, você só pode soltar um componente de dimensão do painel do componentes em uma condição de dimensão. <br/>Você também pode arrastar e soltar para substituir um componente existente.<br/>Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para excluir o componente do campo de componente. |
 | **[!UICONTROL *operador *]** | O operador do componente. Consulte [Operadores](operators.md) para mais informações. Disponível somente para dimensões e métricas. |
 | **[!UICONTROL *value *]** | O valor da condição. Dependendo do operador selecionado, o valor pode ser selecionado em uma lista ou inserido manualmente. |
-| ![CrossSize75](/help/assets/icons/CrossSize75.svg) | Selecione para excluir uma condição do filtro rápido. |
+| ![CrossSize75](/help/assets/icons/CrossSize75.svg) | Selecione para excluir uma condição do segmento rápido. |
 
 ### Botões
 
 | Botão | Descrição |
 |---|---|
-| **[!UICONTROL E]**<br/>**[!UICONTROL OU]** | Disponível somente quando você define mais de uma condição. Selecione na lista suspensa ![ChevronDown](/help/assets/icons/ChevronDown.svg) entre as condições. A seleção determina a lógica booleana do filtro rápido. Não é possível misturar lógicas quando há três condições. A lógica booleana é **[!UICONTROL E]** ou **[!UICONTROL OU]**. |
-| ![AddCircle](/help/assets/icons/AddCircle.svg) | Adiciona outra condição ao filtro rápido. Este botão só estará disponível se você definir uma ou duas condições para o filtro rápido. |
-| **[!UICONTROL Aplicar]** | Aplique as alterações ao filtro rápido. |
-| **[!UICONTROL Abrir o construtor]** | A sua confirmação é solicitada com uma caixa de diálogo **[!UICONTROL Tem certeza?]**. Se você selecionar **[!UICONTROL OK]**, não será mais possível modificar o filtro no [Construtor de filtros rápidos](#quick-filter-builder). O seu filtro rápido foi renomeado para **[!UICONTROL Filtro]** e agora mostra uma barra azul mais escura à esquerda.<br/>O [Construtor de filtros](filter-builder.md) comum é aberto com a opção de **[!UICONTROL Disponibilizar este filtro para todos os seus projetos e adicioná-lo à sua lista de componentes]**. <ul><li>Se você selecionar esta opção e clicar em **[!UICONTROL Aplicar]**, o filtro será adicionado à lista de componentes ![Filter](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtros]** no painel de componentes.</li><li>Se você não selecionar esta opção e clicar em **[!UICONTROL Aplicar]**, o filtro continuará sendo um filtro somente de projeto do Workspace.</li></ul> |
-| **[!UICONTROL Cancelar]** | Selecione para cancelar a criação ou edição de um filtro rápido. |
+| **[!UICONTROL E]**<br/>**[!UICONTROL OU]** | Disponível somente quando você define mais de uma condição. Selecione na lista suspensa ![ChevronDown](/help/assets/icons/ChevronDown.svg) entre as condições. A seleção determina a lógica booleana do segmento rápido. Não é possível misturar lógicas quando há três condições. A lógica booleana é **[!UICONTROL E]** ou **[!UICONTROL OU]**. |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | Adiciona outra condição ao segmento rápido. Esse botão só estará disponível quando você tiver definido uma ou duas condições para o segmento rápido. |
+| **[!UICONTROL Aplicar]** | Aplique as alterações ao segmento rápido. |
+| **[!UICONTROL Abrir o construtor]** | A sua confirmação é solicitada com uma caixa de diálogo **[!UICONTROL Tem certeza?]**. Se você selecionar **[!UICONTROL OK]**, não será mais possível modificar seu segmento no [Construtor de segmentos rápido](#quick-filter-builder). Seu segmento rápido foi renomeado para **[!UICONTROL Segmento]** e agora tem uma barra azul mais escura à esquerda.<br/>O [Construtor de segmentos](filter-builder.md) comum é aberto com a opção de **[!UICONTROL Disponibilizar este segmento para todos os projetos e adicioná-lo à lista de componentes]**. <ul><li>Se você selecionar esta opção e selecionar **[!UICONTROL Aplicar]**, o segmento será adicionado à lista de componentes ![Segmento](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtros]** no painel de componentes.</li><li>Se você não selecionar essa opção e selecionar **[!UICONTROL Aplicar]**, o segmento permanecerá um segmento somente de projeto do Workspace.</li></ul> |
+| **[!UICONTROL Cancelar]** | Selecione para cancelar a criação ou edição de um segmento rápido. |
 
-## Filtros rápidos versus filtros
+## Segmentos rápidos versus segmentos
 
-Filtros rápidos são exatamente o nome indica. É possível criar e editar filtros rápidos em linha rapidamente, e ver os efeitos imediatamente no painel.
+Segmentos rápidos são exatamente o nome que recebem. É possível criar e editar segmentos rápidos em linha rapidamente e ver os efeitos imediatamente no painel.
 
-Os filtros têm as seguintes vantagens em comparação com os filtros rápidos.
+Os segmentos têm as seguintes vantagens em comparação aos segmentos rápidos.
 
-* Os filtros podem ser disponibilizados para todos os projetos do Workspace
-* Os filtros permitem uma maior complexidade, usando containers aninhados e hierárquicos, bem como sequências (usando filtros de sequência).
+* Segmentos podem ser disponibilizados em todos os projetos do Workspace
+* Os segmentos suportam mais complexidade usando contêineres aninhados e hierárquicos e sequências (usando segmentos de sequência).
 
 

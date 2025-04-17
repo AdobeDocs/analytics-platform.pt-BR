@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 2f9cfc3fc7edaa21175d44dfb3f9bface5cf0d81
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 98%
+ht-degree: 92%
 
 ---
 
@@ -519,7 +519,7 @@ Devido à natureza subjacente de como o Customer Journey Analytics funciona, a �
 
 #### Métricas condicionais
 
-É possível incorporar uma claúsula `IF` ou `CASE` nas funções `SUM` ou `COUNT` para adicionar outra filtragem específica a uma métrica selecionada. A adição dessas cláusulas é semelhante à aplicação de um filtro a uma coluna de métrica em uma tabela de relatório do Espaço de trabalho.
+Você pode incorporar uma cláusula `IF` ou `CASE` nas funções `SUM` ou `COUNT` para adicionar segmentação adicional específica a uma métrica selecionada. Adicionar essas cláusulas é semelhante a aplicar um segmento a uma coluna de métrica em uma tabela de relatório do Workspace.
 
 Exemplos:
 
@@ -556,26 +556,26 @@ O `timestamp` é opcional e, se nenhum intervalo completo for fornecido, os padr
 * Se apenas um máximo for fornecido (`timestamp < X` ou `timestamp <= X`), o intervalo será de X menos 30 dias a X.
 * Se nada for fornecido, o intervalo será de 30 dias atrás até agora.
 
-O intervalo de carimbo de data e hora será convertido em um filtro global de intervalo de datas no RankedRequest.
+O intervalo de carimbo de data e hora é convertido em um segmento global de intervalo de datas na RankedRequest.
 O campo carimbo de data e hora também pode ser usado em funções de data/hora para analisar ou truncar o carimbo de data e hora do evento.
 
 #### Intervalo de datas
 
-A coluna especial `daterange` funciona de forma semelhante a `timestamp`, no entanto, a filtragem é limitada a dias completos. O `daterange` também é opcional e tem os mesmos padrões de intervalo que `timestamp`.
+A coluna especial `daterange` funciona de forma semelhante a `timestamp`; no entanto, a segmentação é limitada a dias completos. O `daterange` também é opcional e tem os mesmos padrões de intervalo que `timestamp`.
 O campo `daterange` também pode ser usado em funções de data/hora para analisar ou truncar a data do evento.
 
-A coluna especial `daterangeName` pode ser usada para filtrar a consulta usando um intervalo de datas nomeado, como `Last Quarter`.
+A coluna especial `daterangeName` pode ser usada para segmentar sua consulta usando um intervalo de datas nomeado como `Last Quarter`.
 
 >[!NOTE]
 >
 >O Power BI não oferece suporte a métricas `daterange` com menos de um dia (hora, 30 minutos, 5 minutos etc.).
 >
 
-#### ID do filtro
+#### ID do segmento
 
-A coluna especial `filterId` é opcional e é usada para aplicar um filtro definido externamente à consulta. Aplicar um filtro definido externamente a uma consulta é semelhante a arrastar um filtro em um painel no Espaço de trabalho. Várias IDs de filtro podem ser usadas ao aplicar `AND`.
+A coluna especial `filterId` é opcional e é usada para aplicar um segmento definido externamente à consulta. Aplicar um segmento definido externamente a um query é semelhante a arrastar um segmento em um painel no Workspace. Várias IDs de segmento podem ser usadas por `AND`, utilizando-as.
 
-Junto com `filterId`, é possível usar `filterName` para utilizar um nome de filtro em vez da ID.
+Junto com `filterId`, você pode usar `filterName` para usar o nome de um segmento em vez da ID.
 
 ### Cláusula WHERE
 
@@ -583,11 +583,11 @@ A cláusula `WHERE` é tratada em três etapas:
 
 1. Localizar o intervalo de datas dos campos especiais `timestamp`, `daterange` ou `daterangeName`.
 
-1. Localizar qualquer `filterId` ou `filterName` definidos externamente para incluir na filtragem.
+1. Encontre qualquer `filterId`s ou `filterName`s definido externamente para incluir no segmento.
 
-1. Transformar as expressões restantes em filtros ad-hoc.
+1. Transforme as expressões restantes em segmentos ad-hoc.
 
-O manuseio é feito analisando o primeiro nível dos `AND`s na cláusula `WHERE`. Cada nível superior da expressão `AND` deve corresponder a uma das acima. Qualquer coisa mais profunda do que o primeiro nível dos `AND`s, ou se a cláusula `WHERE` usar `OR`s no nível superior, é tratada como um filtro ad-hoc.
+O manuseio é feito analisando o primeiro nível dos `AND`s na cláusula `WHERE`. Cada nível superior da expressão `AND` deve corresponder a uma das acima. Qualquer coisa mais profunda do que o primeiro nível de `AND`s, ou, se a cláusula `WHERE` usar `OR`s no nível superior, será manipulada como um segmento ad-hoc.
 
 ### Ordem de classificação
 

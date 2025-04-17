@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -54,11 +54,11 @@ Para criar um conector de origem do Adobe Analytics:
 
 3. Selecione **[!UICONTROL Configurar]** ou **[!UICONTROL Adicionar dados]** no bloco Adobe Analytics.
 
-   ![Janela do Adobe Experience Platform com Fontes selecionadas junto com os aplicativos da Adobe e Adicionar dados realçados.](./assets/sources-overview.png)
+   ![Janela da Adobe Experience Platform, com a opção “Origens” selecionada junto com os aplicativos da Adobe e a opção “Adicionar dados” realçada.](./assets/sources-overview.png)
 
 4. Selecione **[!UICONTROL Conjunto de relatórios]**. Na lista de conjuntos de relatórios, selecione aquele que deseja usar.
 
-   ![Janela do Adobe Experience Platform mostrando a lista de conjuntos de relatórios](./assets/report-suites.png)
+   ![Janela da Adobe Experience Platform, mostrando a lista de conjuntos de relatórios](./assets/report-suites.png)
 
    Selecione **[!UICONTROL Próximo]**.
 
@@ -70,20 +70,20 @@ Para criar um conector de origem do Adobe Analytics:
 
 6. Nomeie o fluxo de dados e (opcionalmente) forneça uma descrição.
 
-   ![Janela do Adobe Experience Platform destacando a seção de detalhes do Fluxo de Dados](./assets/dataflow-detail.png)
+   ![Janela da Adobe Experience Platform, realçando a seção de detalhes do fluxo de dados](./assets/dataflow-detail.png)
 
    Selecione **[!UICONTROL Próximo]**.
 
 7. Revise a conexão e selecione **[!UICONTROL Concluir]**.
 
-   ![Janela do Adobe Experience Platform destacando as seções Connect e Data type para revisão](./assets/review.png)
+   ![Janela da Adobe Experience Platform, realçando as seções de conexão e tipo de dado para revisão](./assets/review.png)
 
 
-Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics no conjunto de relatórios. O fluxo de dados assimila até 13 meses de dados históricos para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é limitado a três meses.
+Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics no conjunto de relatórios. O fluxo de dados assimila até 13 meses de dados históricos para sandboxes de produção. O preenchimento retroativo em sandboxes que não são de produção é limitado a três meses.
 
 Quando a assimilação inicial for concluída, os dados do conjunto de relatórios do Adobe Analytics estarão prontos para serem usados pelo Customer Journey Analytics.
 
-Consulte [Criar uma conexão de origem do Adobe Analytics na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) para obter um tutorial muito mais abrangente.
+Consulte [Criar uma conexão de origem do Adobe Analytics na interface do usuário](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) para obter um tutorial muito mais abrangente.
 
 
 ## Configurar uma conexão
@@ -168,7 +168,7 @@ Para criar a visualização de dados:
 
    Deixe as configurações como estão e selecione **[!UICONTROL Salvar e concluir]**.
 
-Consulte [Visão geral das visualizações de dados](../data-views/data-views.md) para obter mais informações sobre como criar e editar uma visualização de dados, quais componentes estão disponíveis para você usar na visualização de dados e como usar configurações de filtro e sessões.
+Consulte [Visão geral das visualizações de dados](../data-views/data-views.md) para obter mais informações sobre como criar e editar uma visualização de dados, quais componentes estão disponíveis para você usar na visualização de dados e como usar as configurações de segmento e sessões.
 
 
 ## Configurar um projeto

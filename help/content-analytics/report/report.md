@@ -1,11 +1,11 @@
 ---
-title: Relatórios de análise de conteúdo
+title: Relatórios do Content Analytics
 description: Como criar relatórios do Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: b4325135ec05737a75027ded70e96f599eb0220c
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 0%
@@ -23,11 +23,11 @@ Para começar a criar relatórios sobre o Content Analytics do zero:
 1. [Criar um novo](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [abrir um projeto](/help/analysis-workspace/build-workspace-project/open-projects.md) existente no Workspace.
 1. Certifique-se de [selecionar uma visualização de dados](/help/analysis-workspace/c-panels/panels.md#data-view) para os relatórios do Content Analytics. Os relatórios do Content Analytics só estão disponíveis para visualizações de dados [configuradas](/help/content-analytics/config/configuration.md) para o Content Analytics.
 1. Arraste uma visualização de ![Tabela](/help/assets/icons/Table.svg) [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) na tela.
-1. Use [componentes específicos do Content Analytics](components.md) e outros [componentes](/help/components/overview.md) genéricos (como filtros, intervalos de datas, anotações) para criar seus insights de análise de conteúdo.
+1. Use [componentes específicos do Content Analytics](components.md) e outros [componentes](/help/components/overview.md) genéricos (como segmentos, intervalos de datas, anotações) para criar seus insights de análise de conteúdo.
 
 ## Miniaturas
 
-Com base nas dimensões específicas da Análise de conteúdo que você usa no projeto, as miniaturas são exibidas para ativos e dimensões.
+Com base nas dimensões específicas do Content Analytics usadas no projeto, as miniaturas são exibidas para ativos e dimensões.
 
 ![Miniaturas do Content Analytics](../assets/aca-thumbnails.png)
 
@@ -48,7 +48,7 @@ Para abrir a visualização com os seguintes detalhes:
 
   | Visualização da experiência | Visualização do ativo |
   |---|---|
-  | ![Visualização da experiência do Content Analytics](../assets/aca-experience-preview.png) | ![Visualização do ativo de análise de conteúdo](../assets/aca-asset-preview.png) |
+  | ![Visualização da Content Analytics Experience](../assets/aca-experience-preview.png) | ![Visualização do ativo de análise de conteúdo](../assets/aca-asset-preview.png) |
   | Nome da dimensão (por exemplo, **[!UICONTROL ID da experiência])** | Nome da dimensão do ativo (por exemplo, **[!UICONTROL ID do ativo])** |
   | **[!UICONTROL Impressões (sempre)]**: número de impressões para a experiência. | **[!UICONTROL Impressões (todas as vezes)]**: número de impressões do ativo. |
   | **[!UICONTROL Assets]**: Número de ativos que esta experiência contém. <br/>Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** para inspecionar os ativos. | **[!UICONTROL Experiências]**: número de experiências em que este ativo é exibido. <br/>Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** para inspecionar os ativos. |
@@ -67,7 +67,7 @@ Para usar o modelo:
 
 1. Selecione **[!UICONTROL Workspace]** no menu principal.
 1. Selecione uma Visualização de dados configurada para o Content Analytics.
-1. Procure ou use filtros (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**s) para localizar e selecionar o modelo **[!UICONTROL Análise de conteúdo]**.
+1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**s) para encontrar e selecionar o modelo **[!UICONTROL Análise de conteúdo]**.
 1. Selecione **[!UICONTROL Usar modelo]**.
 1. Na caixa de diálogo **[!UICONTROL Configurar seu modelo]**, selecione uma métrica na caixa de diálogo **[!UICONTROL Selecionar uma métrica de conversão]**. Por exemplo, **[!UICONTROL CTR do ativo]**.
 1. Selecione **[!UICONTROL Continuar]**.

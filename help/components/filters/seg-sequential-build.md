@@ -1,18 +1,18 @@
 ---
-description: Filtros sequenciais são filtros que usam o operador THEN para definir a sequência de condições do filtro.
-title: Filtros sequenciais
+description: Segmentos sequenciais são segmentos que usam o operador THEN para definir a sequência de condições do segmento.
+title: Segmentos sequenciais
 feature: Filters
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 3%
+source-wordcount: '2459'
+ht-degree: 4%
 
 ---
 
-# Filtros sequenciais
+# Segmentos sequenciais
 
-Você cria filtros sequenciais usando o operador lógico [!UICONTROL Then] entre componentes, contêineres e componentes ou contêineres. O operador lógico [!UICONTROL Then] implica que uma condição de filtro ocorre, seguida de outra.
+Você cria segmentos sequenciais usando o operador lógico [!UICONTROL Then] entre componentes, contêineres e componentes ou contêineres. O operador lógico [!UICONTROL Then] implica que uma condição de segmento ocorre, seguida de outra.
 
 
 
@@ -24,48 +24,48 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentaç�
 
 >[!ENDSHADEBOX]
 
-Um filtro sequencial tem alguma [funcionalidade básica](#basics) e opções adicionais que você pode configurar para adicionar mais complexidade ao filtro sequencial:
+Um segmento sequencial tem alguma [funcionalidade básica](#basics) e opções adicionais que você pode configurar para adicionar mais complexidade ao segmento sequencial:
 
-![Filtro sequencial](assets/sequential-filter.gif)
+![Segmento sequencial](assets/sequential-filter.gif)
 
-* [Restrições After e within](#after-and-within) para a lógica Then na definição de filtro de sequência:
+* [Restrições After e within](#after-and-within) para a lógica Then na definição de segmento de sequência:
 
-* Quais dados [incluir](#include) como parte da sequência geral da definição de filtro. Ou para uma sequência definida como parte de um container. Por padrão, todos os dados correspondentes são considerados. Esses dados são identificados por ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Incluir todos].
+* Quais dados [incluir](#include) como parte da sequência geral para a definição do segmento. Ou para uma sequência definida como parte de um container. Por padrão, todos os dados correspondentes são considerados. Esses dados são identificados por ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Incluir todos].
 
    * Selecione ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** para considerar apenas os dados antes da sequência.
    * Selecione ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** para considerar apenas os dados após a sequência.
 
-* Quais dados [excluir](#exclude) como parte da definição de filtro sequencial.
+* Quais dados [excluir](#exclude) como parte da definição de segmento sequencial.
 
-* Como [agrupar logicamente](#logic-group) condições em sua definição de filtro sequencial.
+* Como [agrupar logicamente](#logic-group) condições na definição do segmento sequencial.
 
 ## Noções básicas
 
 
 
-As noções básicas para criar um filtro sequencial não são diferentes da criação de um filtro comum usando o [Construtor de filtros](filter-builder.md). Você pode usar o [Construtor de definições](filter-builder.md#definition-builder) para criar sua definição de filtro. Nessa construção, você usa componentes, contêineres, operadores e lógica. Um filtro regular se torna um filtro sequencial automaticamente assim que você seleciona o operador **[!UICONTROL Then]** na definição principal ou em qualquer um dos contêineres usados no [Construtor de definições](filter-builder.md#definition-builder).
+As noções básicas para construir um segmento sequencial não são diferentes de construir um segmento regular usando o [Construtor de segmentos](filter-builder.md). Você pode usar o [Criador de definições](filter-builder.md#definition-builder) para criar sua definição de segmento. Nessa construção, você usa componentes, contêineres, operadores e lógica. Um segmento regular se torna um filtro sequencial assim que você seleciona o operador **[!UICONTROL Then]** na definição principal ou em qualquer um dos contêineres usados no [Construtor de definições](filter-builder.md#definition-builder).
 
 ### Exemplos
 
-Os exemplos abaixo ilustram como você usa filtros sequenciais em vários casos de uso.
+Os exemplos abaixo ilustram como você usa segmentos sequenciais em vários casos de uso.
 
 #### Sequência simples
 
-Identifique as pessoas que visualizaram uma página e, em seguida, visualizaram outra página. Os dados no nível do evento são filtrados usando essa sequência. Independentemente de sessões anteriores, passadas ou interinas de pessoas ou do tempo ou número de exibições de página que ocorrem entre as sessões.
+Identifique as pessoas que visualizaram uma página e, em seguida, visualizaram outra página. Os dados no nível do evento são segmentados usando essa sequência. Independentemente de sessões anteriores, passadas ou interinas de pessoas ou do tempo ou número de exibições de página que ocorrem entre as sessões.
 
-![O filtro sequencial inclui todos](assets/sequence-include-everyone.png)
+![Segmento sequencial incluir todos](assets/sequence-include-everyone.png)
 
 #### Sequência entre sessões
 
 Identifique as pessoas que visualizaram uma página em uma sessão e, em seguida, visualizaram outra página em outra sessão. Para diferenciar entre sessões, use contêineres para criar a sequência e definir o nível de ![Visita](/help/assets/icons/Visit.svg) **[!UICONTROL Sessão]** para cada contêiner.
 
-![Filtro de sequência entre sessões](assets/sequence-filter-session.png)
+![Segmento de sequência em sessões](assets/sequence-filter-session.png)
 
 #### Sequência de nível misto
 
 Identifique pessoas que visualizam duas páginas em um número indeterminado de sessões e visualize uma terceira página em uma sessão separada. Novamente, use contêineres para criar a sequência e definir o nível de ![Visita](/help/assets/icons/Visit.svg) **[!UICONTROL Sessão]** no contêiner que define a sessão separada.
 
-![Filtro de sequência com sessão final separada](assets/sequence-filter-final-session.png)
+![Segmento sequencial com sessão final separada](assets/sequence-filter-final-session.png)
 
 #### Sequência agregada
 
@@ -82,7 +82,7 @@ Identifique todas as sessões em que uma pessoa visita uma página antes de outr
 
 ## [!UICONTROL Depois] e [!UICONTROL Dentro]
 
-Você pode usar ![Relógio](/help/assets/icons/Clock.svg) **[!UICONTROL Depois]** e ![Relógio](/help/assets/icons/Clock.svg) **[!UICONTROL Dentro]** o operador **[!UICONTROL Então]** para definir [restrições de tempo](#time-constraints) ou [restrições adicionais para Eventos, Sessões ou Dimension](#event-session-and-dimension-constraints).
+Você pode usar ![Relógio](/help/assets/icons/Clock.svg) **[!UICONTROL Depois]** e ![Relógio](/help/assets/icons/Clock.svg) **[!UICONTROL Dentro]** o operador **[!UICONTROL Então]** para definir [restrições de tempo](#time-constraints) ou [restrições adicionais para Eventos, Sessões ou Dimensões](#event-session-and-dimension-constraints).
 
 ### Restrições de tempo
 
@@ -99,9 +99,9 @@ A tabela abaixo explica com mais detalhes os operadores de restrição de tempo.
 
 | Operadores | Descrição |
 |--- |--- |
-| **[!UICONTROL Depois]** | O operador [!UICONTROL After] é usado para especificar um limite mínimo na quantidade de tempo entre dois pontos de verificação. Ao definir os valores de After, o limite de tempo começa quando o filtro é aplicado. Por exemplo, se o operador [!UICONTROL After] estiver definido em um contêiner para identificar pessoas que visitaram a página A, mas não retornam para visitar a página B depois de um dia, esse dia começará quando o visitante sair da página A.  Para que o visitante seja incluído no filtro, no mínimo 1440 minutos (um dia) devem se passar após sair da página A para visualizar a página B. |
-| **[!UICONTROL Dentro]** | O operador [!UICONTROL Dentro] é usado para especificar um limite máximo na quantidade de tempo entre dois pontos de verificação. Por exemplo, se o operador [!UICONTROL Within] estiver definido em um contêiner para identificar pessoas que visitam a página A e retornam para visitar a página B dentro de um dia, esse dia começará quando a pessoa sair da página A. Para ser incluído no filtro, a pessoa tem um tempo máximo de um dia antes de abrir a página B. Para que a pessoa seja incluída no filtro, a abertura da página B deve ocorrer dentro de no máximo 1440 minutos (um dia) após sair da página A para visualizar a página B. |
-| **[!UICONTROL Depois, mas Dentro]** | Ao usar ambos os operadores [!UICONTROL After] e [!UICONTROL Within], ambos os operadores iniciam e terminam em paralelo, não em sequência. <br/>Por exemplo, você cria um filtro com o contêiner definido como: `After = 1 Week(s) and Within = 2 Week(s)`.<br/>As condições para identificar visitantes neste filtro são atendidas somente entre uma e duas semanas. Ambas as condições são aplicadas a partir da primeira exibição de página. |
+| **[!UICONTROL Depois]** | O operador [!UICONTROL After] é usado para especificar um limite mínimo na quantidade de tempo entre dois pontos de verificação. Ao definir os valores de After, o limite de tempo começa quando o segmento é aplicado. Por exemplo, se o operador [!UICONTROL After] estiver definido em um contêiner para identificar pessoas que visitaram a página A, mas não retornam para visitar a página B depois de um dia, esse dia começará quando o visitante sair da página A.  Para que o visitante seja incluído no segmento, no mínimo, 1440 minutos (um dia) devem se passar após sair da página A para visualizar a página B. |
+| **[!UICONTROL Dentro]** | O operador [!UICONTROL Dentro] é usado para especificar um limite máximo na quantidade de tempo entre dois pontos de verificação. Por exemplo, se o operador [!UICONTROL Within] estiver definido em um contêiner para identificar pessoas que visitam a página A e retornam para visitar a página B dentro de um dia, esse dia começará quando a pessoa sair da página A. Para ser incluído no segmento, a pessoa tem um tempo máximo de um dia antes de abrir a página B. Para que a pessoa seja incluída no segmento, a abertura da página B deve ocorrer em no máximo 1440 minutos (um dia) após sair da página A para visualizar a página B. |
+| **[!UICONTROL Depois, mas Dentro]** | Ao usar ambos os operadores [!UICONTROL After] e [!UICONTROL Within], ambos os operadores iniciam e terminam em paralelo, não em sequência. <br/>Por exemplo, você compila um segmento com o contêiner definido como: `After = 1 Week(s) and Within = 2 Week(s)`.<br/>As condições para identificar visitantes neste segmento são atendidas somente entre uma e duas semanas. Ambas as condições são aplicadas a partir da primeira exibição de página. |
 
 
 #### Exemplos
@@ -135,44 +135,44 @@ Todas as pessoas que acessam a página inicial em 1 de junho de 2024 e que retor
 
 ### Restrições de [!UICONTROL Evento], [!UICONTROL Sessão] e [!UICONTROL Dimension]
 
-As restrições ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** e ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** permitem não apenas especificar uma restrição de tempo, mas também uma restrição de evento, sessão ou dimensão. Selecione **[!UICONTROL Evento(s)]**, **[!UICONTROL Sessão(ões)]** ou **[!UICONTROL Outras dimensões]** ![ChevronRight](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *nome do Dimension *]**. Você pode usar o campo [!UICONTROL *Pesquisa*] para procurar uma dimensão.
+As restrições ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** e ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** permitem não apenas especificar uma restrição de tempo, mas também uma restrição de evento, sessão ou dimensão. Selecione **[!UICONTROL Evento(s)]**, **[!UICONTROL Sessão(ões)]** ou **[!UICONTROL Outras dimensões]** ![ChevronRight](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Nome do Dimension *]**. Você pode usar o campo [!UICONTROL *Pesquisa*] para procurar uma dimensão.
 
 #### Exemplo
 
-Abaixo está um exemplo de um filtro sequencial procurando pessoas que visitaram uma página de categoria de produto (Mulheres | Sapatos), seguido por uma página de check-out (Check-out | Obrigado) em uma página.
+Veja abaixo um exemplo de um segmento sequencial procurando pessoas que visitaram uma página de categoria de produto (Mulheres) | Sapatos), seguido por uma página de check-out (Check-out | Obrigado) em uma página.
 
-![Filtro de sequência em](assets/sequence-filter-within.png)
+![Segmento de sequência em](assets/sequence-filter-within.png)
 
 Os exemplos de sequências a seguir correspondem ou não:
 
 | Sequência | ![AprovarRejeitar](/help/assets/icons/ApproveReject.svg) |
 |--- | :---: |
-| Página `Women \| Shoes` seguida pela página `Checkout \| Thank You` | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) |
+| Página `Women \| Shoes` seguida pela página `Checkout \| Thank You` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 | Página `Women \| Shoes` seguida pela página `Women \| Tops` seguida pela página `Checkout \| Thank You` | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) |
 
 ## [!UICONTROL Incluir]
 
-Você pode especificar quais dados incluir no filtro sequencial ou em um contêiner sequencial que faça parte do filtro sequencial.
+Você pode especificar quais dados incluir no segmento sequencial ou em um contêiner sequencial que faça parte do segmento sequencial.
 
 ### [!UICONTROL Todos] {#include_everyone}
 
-Para criar um filtro sequencial que inclua todos, selecione a opção ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Incluir todos]**.
+Para criar um segmento sequencial que inclua todos, selecione a opção ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Incluir todos]**.
 
-O filtro sequencial identifica dados que correspondem ao padrão como um todo.  Abaixo está um exemplo de um filtro de sequência básico procurando pessoas que visitaram uma página de categoria do produto (Mulheres) | Sapatos), seguido por uma página de check-out (Check-out | Obrigado). O filtro está definido como ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Incluir todos]**.
+O segmento sequencial identifica dados que correspondem ao padrão como um todo.  Veja abaixo um exemplo de um segmento de sequência básica procurando pessoas que visitaram uma página de categoria de produto (Mulheres) | Sapatos), seguido por uma página de check-out (Check-out | Obrigado). O segmento está definido como ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Incluir todos]**.
 
-![O filtro sequencial inclui todos](assets/sequence-include-everyone.png)
+![Segmento sequencial incluir todos](assets/sequence-include-everyone.png)
 
 Os exemplos de sequências a seguir correspondem ou não:
 
 | | Sequência | ![AprovarRejeitar](/help/assets/icons/ApproveReject.svg) |
 |---:|--- | --- |
-| 1 | `Women \| Shoes` então `Checkout \| Thank You` na mesma sessão | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) |
-| 2 | `Women \| Shoes` então `Men \| Shoes` então `Checkout \| Thank You` (em diferentes sessões) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) |
+| 1 | `Women \| Shoes` então `Checkout \| Thank You` na mesma sessão | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| 2 | `Women \| Shoes` então `Men \| Shoes` então `Checkout \| Thank You` (em diferentes sessões) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 | 3 | `Checkout \| Thank You` então `Women \| Shoes` | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) |
 
 ### [!UICONTROL Somente antes da sequência] e [!UICONTROL Somente depois da sequência]
 
-As opções ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Somente Antes de Sequence]** e ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Somente Depois de Sequence]** filtram os dados em um subconjunto antes ou depois da sequência especificada.
+As opções ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Somente Antes de Sequence]** e ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Somente Depois de Sequence]** segmentam os dados para um subconjunto antes ou depois da sequência especificada.
 
 * ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Only Before Sequence**: inclui todos os dados antes de uma sequência e os primeiros dados da própria sequência. Se uma sequência aparece várias vezes como parte dos dados, [!UICONTROL Somente antes da sequência] inclui a primeira ocorrência da última ocorrência da sequência e todas as ocorrências anteriores.
 * ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Only After Sequence**: inclui todas as ocorrências após uma sequência e os últimos dados da própria sequência. Se uma sequência aparece várias vezes como parte dos dados, [!UICONTROL Somente depois da sequência] inclui a última ocorrência da primeira ocorrência da sequência e todas as ocorrências subsequentes.
@@ -182,37 +182,37 @@ Considere uma definição que especifique uma sequência de um componente com cr
 
 | B Então D | A | B | C | D | E | F |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Incluir todos | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) |
-| Somente antes da sequência | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |  |
-| Somente após sequência |  |  |  | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) |
+| Incluir todos | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| Somente antes da sequência | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |  |
+| Somente após sequência |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 
 
 
 | B Então D (ocorre várias vezes) | A | B | C | D | B | C | D | E |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Incluir todos | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) |
-| Somente antes da sequência | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |
-| Somente após sequência |  |  |  | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) |
+| Incluir todos | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
+| Somente antes da sequência | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  |  |  |
+| Somente após sequência |  |  |  | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |
 
 #### Exemplo
 
-Você definiu três versões de um filtro sequencial para seções do site. Um com a opção ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Incluir Todos]**, um com a opção ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Apenas Antes da Sequência]** e um com a opção ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Apenas Após a Sequência]**. Você nomeou os três filtros de acordo.
+Você definiu três versões de um segmento sequencial para seções do site. Um com a opção ![UserGroup](/help/assets/icons/UserGroup.svg) **[!UICONTROL Incluir Todos]**, um com a opção ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Apenas Antes da Sequência]** e um com a opção ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Apenas Após a Sequência]**. Você nomeou os três segmentos de acordo.
 
-![Filtro de sequência](assets/site-section-filters.png)
+![Segmento de sequência](assets/site-section-filters.png)
 
-Ao criar relatórios em seções do site usando esses três filtros, o exemplo de saída em uma tabela de forma livre é semelhante a:
+Ao criar relatórios em seções do site usando esses três segmentos, o exemplo de saída em uma tabela de forma livre é semelhante a:
 
-![Relatório de filtros sequenciais](assets/sequential-filter-freeform-table.png)
+![Relatório de segmentos sequenciais](assets/sequential-filter-freeform-table.png)
 
 ## [!UICONTROL Excluir]
 
-As definições de filtro incluem todos os dados, a menos que você exclua especificamente dados de ![Usuário](/help/assets/icons/User.svg) [!UICONTROL Pessoa], ![Visita](/help/assets/icons/Visit.svg) [!UICONTROL Sessão] ou ![Página da Web](/help/assets/icons/WebPage.svg) [!UICONTROL Evento] usando **[!UICONTROL Excluir]**.
+As definições de segmento incluem todos os dados, a menos que você exclua especificamente dados de ![Usuário](/help/assets/icons/User.svg) [!UICONTROL Pessoa], ![Visita](/help/assets/icons/Visit.svg) [!UICONTROL Sessão] ou ![Página da Web](/help/assets/icons/WebPage.svg) [!UICONTROL Evento] usando **[!UICONTROL Excluir]**.
 
-[!UICONTROL Excluir] permite que você ignore dados comuns e crie filtros com mais foco. Excluir também permite criar filtros que excluem grupos específicos de pessoas. Por exemplo, para definir um filtro que especifica as pessoas que fizeram pedidos e, em seguida, excluir esse grupo de pessoas para identificar *não compradores*. Uma prática recomendada é criar regras que usem uma definição ampla em vez de tentar usar [!UICONTROL Excluir] para direcionar personalidades específicas que correspondam a valores de inclusão específicos.
+[!UICONTROL Excluir] permite que você descarte dados comuns e crie segmentos com mais foco. Excluir também permite criar segmentos, excluindo grupos específicos de pessoas. Por exemplo, para definir um segmento que especifique pessoas que fizeram pedidos e, em seguida, excluir esse grupo de pessoas para identificar *não compradores*. Uma prática recomendada é criar regras que usem uma definição ampla em vez de tentar usar [!UICONTROL Excluir] para direcionar personalidades específicas que correspondam a valores de inclusão específicos.
 
 Exemplo de definições de exclusão:
 
-* **Excluir páginas**. Use uma definição de filtro para retirar uma página específica (como *Página inicial*) de um relatório, criar uma regra de Evento em que a página seja igual a `Home Page` e, em seguida, excluir a regra. Essa definição inclui automaticamente todas as páginas, exceto a *Página inicial*.
+* **Excluir páginas**. Use uma definição de segmento para retirar uma página específica (como a *Página inicial*) de um relatório, criar uma regra de Evento na qual a página seja igual a `Home Page` e excluir a regra. Essa definição inclui automaticamente todas as páginas, exceto a *Página inicial*.
 * **Excluir os domínios de referência**. Use uma definição que inclua apenas domínios de referência de Google.com e exclua todos os outros.
 * **Identificar não compradores**. Identifique quando os pedidos forem maiores que zero e exclua a [!UICONTROL Pessoa].
 
@@ -249,9 +249,9 @@ Identifique as pessoas que visitaram uma página, mas nunca visitaram outras pá
 
 >[!NOTE]
 >
->Um [!UICONTROL Grupo lógico] só pode ser definido em um filtro sequencial, o que significa que o operador [!UICONTROL Then] é usado no contêiner.
+>Um [!UICONTROL Grupo lógico] só pode ser definido em um segmento sequencial, o que significa que o operador [!UICONTROL Then] é usado no contêiner.
 
-O Grupo lógico permite agrupar as condições em um único ponto de verificação de filtro sequencial. Como parte da sequência, a lógica definida no contêiner identificado como Grupo lógico é avaliada após qualquer ponto de verificação sequencial anterior e antes de qualquer ponto de verificação sequencial posterior.
+O Grupo lógico permite agrupar as condições em um único ponto de verificação de segmento sequencial. Como parte da sequência, a lógica definida no contêiner identificado como Grupo lógico é avaliada após qualquer ponto de verificação sequencial anterior e antes de qualquer ponto de verificação sequencial posterior.
 
 As condições no próprio Grupo lógico podem ser cumpridas em qualquer ordem. Por outro lado, os contêineres não sequenciais (evento, sessão, pessoa) não exigem que suas condições sejam atendidas na sequência geral, produzindo possíveis resultados não intuitivos, se usados com um operador Then.
 
@@ -260,7 +260,7 @@ O [!UICONTROL Grupo lógico] foi projetado para tratar *várias condições como
 Algumas práticas recomendadas para usar o Grupo lógico são:
 
 * Para agrupar pontos de verificação sequenciais.
-* Para simplificar a construção de filtros sequenciais.
+* Para simplificar a construção de segmentos sequenciais.
 
 ### Exemplos
 
@@ -270,11 +270,11 @@ Estes são exemplos sobre como usar o contêiner do Grupo lógico.
 
 Identifique as pessoas que visitaram uma página e, em seguida, visualizaram cada página de outro conjunto de páginas em qualquer ordem. Por exemplo, as pessoas que visitaram a Página inicial e, em seguida, visitaram cada uma das páginas Homens, Mulheres e Crianças, independentemente da ordem.
 
-Você pode criar este filtro sem um [!UICONTROL Grupo lógico], mas a construção será complexa e trabalhosa. Especifique cada sequência de páginas que o visitante poderia visualizar. Para maior clareza, apenas o primeiro contêiner é aberto ![ChevronDown](/help/assets/icons/ChevronDown.svg) e os outros contêineres são fechados ![ChevronRight](/help/assets/icons/ChevronRight.svg). Você pode derivar o conteúdo dos outros contêineres pelos títulos.
+Você pode criar este segmento sem um [!UICONTROL Grupo lógico], mas a construção será complexa e trabalhosa. Especifique cada sequência de páginas que o visitante poderia visualizar. Para maior clareza, apenas o primeiro contêiner é aberto ![ChevronDown](/help/assets/icons/ChevronDown.svg) e os outros contêineres são fechados ![ChevronRight](/help/assets/icons/ChevronRight.svg). Você pode derivar o conteúdo dos outros contêineres pelos títulos.
 
 ![Exemplo sem usar um grupo lógico](assets/logicgroup-example-notusing.png)
 
-Você pode usar o [!UICONTROL Grupo lógico] para simplificar a criação desse filtro, conforme mostrado abaixo. Selecione o ![Grupo](/help/assets/icons/Group.svg) **[!UICONTROL Grupo lógico]** para o contêiner.
+Você pode usar o [!UICONTROL Grupo lógico] para simplificar a criação deste segmento, conforme mostrado abaixo. Selecione o ![Grupo](/help/assets/icons/Group.svg) **[!UICONTROL Grupo lógico]** para o contêiner.
 
 ![Exemplo sem usar um grupo lógico](assets/logicgroup-example-using.png)
 
@@ -298,7 +298,7 @@ Identifique as pessoas que visitaram uma página e que explicitamente não visit
 
 
 <!--
-An example of a complex sequential filter if you want to find the persons that 
+An example of a complex sequential segment if you want to find the persons that 
 
 | Session One | Session Two | Session Three |
 | --- | --- | --- |
@@ -311,4 +311,4 @@ An example of a complex sequential filter if you want to find the persons that
 Como exemplo final, você deseja identificar as pessoas que aprenderam sobre uma página de produto específica, sem que essas pessoas tenham sido tocadas pela sua campanha Empower Your Move (Dê força à sua movimentação). E em sua primeira visita à sua loja on-line visualizaram a página inicial, mas não olharam mais para qualquer produto fitness (engrenagem) da categoria Homens. No entanto, na próxima sessão, eles foram a uma página de produto e fizeram um pedido online sem passar pela página inicial primeiro.
 
 
-![Exemplo de filtro sequencial complexo](assets/sequential-complex.png)
+![Exemplo de segmento sequencial complexo](assets/sequential-complex.png)
