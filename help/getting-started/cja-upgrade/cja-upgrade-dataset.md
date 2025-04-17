@@ -8,7 +8,7 @@ exl-id: d686dcdd-08d5-4e8f-8f0d-76c8c7b0427f
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Um conjunto de dados é a construção que armazena e gerencia os dados coletado
 
 Para criar um conjunto de dados:
 
-1. No Adobe Experience Platform, no painel à esquerda, selecione **[!UICONTROL Conjuntos de dados]** em [!UICONTROL GERENCIAMENTO DE DADOS].
+1. Na Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Conjuntos de dados]** em [!UICONTROL GERENCIAMENTO DE DADOS].
 
 1. Selecione **[!UICONTROL Criar conjunto de dados]**.
 
@@ -59,6 +59,6 @@ Para criar um conjunto de dados:
 
    ![Habilitar esquema para perfil](assets/aepwebsdk-dataset-profile.png)
 
-   Consulte o [Guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR) para obter muito mais informações sobre como exibir, visualizar, criar e excluir um conjunto de dados. Você também pode aprender a ativar um conjunto de dados para o Perfil do cliente em tempo real.
+   Consulte [Guia da IU de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR) para obter muito mais informações sobre como visualizar, exibir, criar e excluir um conjunto de dados. Aprenda também a habilitar um conjunto de dados para o perfil do cliente em tempo real.
 
 {{upgrade-final-step}}

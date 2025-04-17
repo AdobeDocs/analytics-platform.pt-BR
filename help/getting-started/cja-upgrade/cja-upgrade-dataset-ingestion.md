@@ -1,6 +1,6 @@
 ---
 title: Monitorar a assimilação do conjunto de dados ao atualizar para o Customer Journey Analytics
-description: Saiba como monitorar a assimilação do conjunto de dados ao atualizar para o Customer Journey Analytics
+description: Aprenda a monitorar a assimilação de conjuntos de dados ao atualizar para o Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 14%
+ht-degree: 50%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 14%
 
 Após configurar a implementação do Web SDK ou da API, é necessário verificar os status de lotes individuais para verificar se os dados estão sendo assimilados no conjunto de dados.
 
-1. Na interface do usuário do Experience Platform, selecione **[!UICONTROL Monitoramento]** no menu de navegação esquerdo.
+1. Na interface da Experience Platform, selecione **[!UICONTROL Monitoramento]** no menu de navegação esquerdo.
 
-   O painel de Monitoramento é exibido. Esse painel permite visualizar os status dos dados de entrada da assimilação em lote ou por transmissão.
+   O painel de Monitoramento é exibido. Esse painel permite exibir os status dos dados de entrada da assimilação em lote ou por transmissão.
 
    <!-- insert screenshot -->
 
@@ -41,7 +41,7 @@ Após configurar a implementação do Web SDK ou da API, é necessário verifica
 
    <!-- insert screenshot -->
 
-1. Selecione a ID do lote para um determinado conjunto de dados e valide se **[!UICONTROL Sucesso]** é mostrado no campo **[!UICONTROL Status]**.
+1. Selecione a ID do lote para um determinado conjunto de dados e valide se **[!UICONTROL Sucesso]** é exibido no campo **[!UICONTROL Status]**.
 
    Se **[!UICONTROL Falha]** for exibido no campo **[!UICONTROL Status]**, verifique sua implementação para garantir que está enviando dados corretamente para a Adobe.
 

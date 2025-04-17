@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 69%
+ht-degree: 94%
 
 ---
 
@@ -34,14 +34,14 @@ ht-degree: 69%
 
 Valores de inclusão e exclusão permitem criar regras que dependem do valor de um item de dimensão. Valores que não atendem aos critérios definidos são tratados no Analysis Workspace como se nunca houvessem existido, embora os dados ainda existam no conjunto de dados subjacente.
 
-![Janela de visualizações de dados destacando os valores de exclusão de Inclusão](../assets/include-exclude.png)
+![Janela de visualizações de dados, realçando os valores de inclusão/exclusão](../assets/include-exclude.png)
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
 | [!UICONTROL Definir a inclusão/exclusão de valores] | Uma caixa de seleção que permite ativar as condições em que dados são incluídos em uma visualização de dados. |
-| [!UICONTROL Diferencia maiúsculas de minúsculas] | Visível nos dados de esquema do tipo String. Definido como ativado por padrão. Essa configuração se aplica somente à lógica dos [!UICONTROL Valores de Inclusão/Exclusão], não ao valor resultante. Permite especificar se a regra diferencia maiúsculas de minúsculas. |
-| [!UICONTROL Corresponder] | Permite especificar quais valores você gostaria de considerar para os relatórios antes da atribuição e filtros (por exemplo, usar apenas valores contendo a frase &quot;erro&quot;). Você pode especificar **[!UICONTROL Se todos os critérios forem atendidos]** ou **[!UICONTROL Se algum critério for atendido]**. Separe cada valor usando um espaço. |
-| [!UICONTROL Critérios] | Permite especificar a lógica de correspondência que deve ser aplicada a uma regra de filtro específica.<ul><li>**Cadeia de caracteres**: [!UICONTROL Contém a frase], [!UICONTROL Contém qualquer termo], [!UICONTROL Contém todos os termos], [!UICONTROL Não contém nenhum termo], [!UICONTROL Não contém a frase], [!UICONTROL É igual a], [!UICONTROL Não é igual a], [!UICONTROL Começa com], [!UICONTROL Termina com]</li><li>**Duplo/Número Inteiro**: [!UICONTROL Igual a], [!UICONTROL Não é igual a], [!UICONTROL É maior que], [!UICONTROL É menor que], [!UICONTROL É maior que ou igual a], [!UICONTROL É menor que ou igual a]</li><li>**Data**: [!UICONTROL Igual], [!UICONTROL Não é igual], [!UICONTROL É posterior a], [!UICONTROL É anterior a], [!UICONTROL Ocorre em]</li></ul> |
+| [!UICONTROL Diferencia maiúsculas de minúsculas] | Visível nos tipos de dados String do esquema. Definido como ativado por padrão. Essa configuração se aplica somente à lógica dos [!UICONTROL Valores de Inclusão/Exclusão], não ao valor resultante. Permite especificar se a regra diferencia maiúsculas de minúsculas. |
+| [!UICONTROL Corresponder] | Permite especificar quais valores você gostaria de considerar para os relatórios antes da atribuição e filtros (por exemplo, usar apenas valores contendo a frase &quot;erro&quot;). Você pode especificar **[!UICONTROL Se todos os critérios forem satisfeitos]** ou **[!UICONTROL Se qualquer critério for satisfeito]**. Separe cada valor com um espaço. |
+| [!UICONTROL Critérios] | Permite especificar a lógica de correspondência que deve ser aplicada a uma regra de filtro específica.<ul><li>**String**: [!UICONTROL Contém a frase], [!UICONTROL Contém qualquer termo], [!UICONTROL Contém todos os termos], [!UICONTROL Não contém nenhum termo], [!UICONTROL Não contém a frase], [!UICONTROL É igual a], [!UICONTROL Não é igual a], [!UICONTROL Começa com], [!UICONTROL Termina com]</li><li>**Número duplo/inteiro**: [!UICONTROL É igual a], [!UICONTROL Não é igual a], [!UICONTROL É maior que], [!UICONTROL É menor que], [!UICONTROL É maior que ou igual a], [!UICONTROL É menor que ou igual a]</li><li>**Data**: [!UICONTROL É igual a], [!UICONTROL Não é igual a], [!UICONTROL É posterior a], [!UICONTROL É anterior a], [!UICONTROL Ocorre dentro de]</li></ul> |
 | [!UICONTROL Corresponder operando] | Permite especificar o operando correspondente ao qual o operador deve ser aplicado.<ul><li>**Sequência**: Campo de texto</li><li>**Duplo/Número inteiro**: Campo de texto com setas para cima/para baixo para valores numéricos</li><li>**Data**: Seletor de granularidade do dia (calendário)</li><li>**Data Hora**: Seletor de granularidade de data e hora</li></ul> |
 | [!UICONTROL Adicionar regra] | Permite especificar um operador e um operando de correspondência adicional. |
 

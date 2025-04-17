@@ -8,7 +8,7 @@ exl-id: 2a74da97-61cb-4c98-949b-3fc428839d70
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 25%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 25%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
 >title="Criar um campo derivado de canal de marketing"
->abstract="Campos derivados são criados em uma exibição de dados.<br><br>O uso de uma configuração de canal de marketing padrão leva apenas alguns minutos, mas criar uma configuração de canal de marketing altamente personalizada pode levar várias horas."
+>abstract="Campos derivados são criados em uma visualização de dados.<br><br>O uso de uma configuração de canal de marketing padrão leva apenas alguns minutos, mas criar uma configuração de canal de marketing altamente personalizada pode levar várias horas."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-Ao usar o conector de origem do Analytics, os dados de canais de marketing fluem para o Customer Journey Analytics por meio desse conector. As regras do canal de marketing são configuradas no Adobe Analytics tradicional e algumas regras não são compatíveis. Para obter mais informações, consulte [Usar dimensões do canal de marketing](/help/use-cases/aa-data/marketing-channels.md).
+Ao usar o conector de origem do Analytics, os dados de canais de marketing são transmitidos para o Customer Journey Analytics por meio desse conector. As regras do canal de marketing são configuradas no Adobe Analytics tradicional e algumas regras não são compatíveis. Para obter mais informações, consulte [Usar dimensões de canal de marketing](/help/use-cases/aa-data/marketing-channels.md).
 
 Para usar canais de marketing no Customer Journey Analytics ao usar o Experience Platform Web SDK, você pode usar campos derivados em uma visualização de dados para recriar os mesmos canais de marketing e regras de processamento para o Customer Journey Analytics.
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 81%
+ht-degree: 86%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 81%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a tabela de Coorte no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte a [Tabela de coorte](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) da_ versão ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta a tabela de coorte no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte a [tabela de coorte](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -48,14 +48,14 @@ Exemplos do que é possível fazer com uma [!UICONTROL tabela de coorte]:
 * Lançar campanhas projetadas para estimular uma ação desejada.
 * Deslocar o orçamento de marketing no momento certo do ciclo de vida do cliente.
 * Reconhecer quando finalizar uma avaliação ou uma oferta para maximizar o valor.
-* Obter ideias para o teste A/B em áreas como o estabelecimento de preços, o caminho de atualização etc.
+* Obter ideias para o teste A/B em áreas como o estabelecimento de preços, o caminho de atualização, etc.
 
-A [!UICONTROL tabela de coorte] está disponível para qualquer cliente do Customer Journey Analytics com direitos de acesso ao [!UICONTROL Analysis Workspace].
+A [!UICONTROL tabela de coorte] está disponível a todos os clientes do Customer Journey Analytics com direitos de acesso ao [!UICONTROL Analysis Workspace].
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de coorte no Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de coorte no Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -66,11 +66,11 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de
 >
 >A [!UICONTROL Análise de coorte] não oferece suporte a métricas não segmentáveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em segmentos podem ser usadas na [!UICONTROL Análise de coorte], e só podem ser aumentadas 1 de cada vez.
 
-As tabelas de coorte do Customer Journey Analytics são compatíveis com métricas de dois fatores (ou baseadas em números). Por exemplo, “Purchase.Value” (um valor duplo) pode ser usado como uma métrica de inclusão/retorno. Além disso, todas as métricas enviadas à Adobe Experience Platform por meio do conector de origem do Analytics também são duplas.
+As tabelas de coorte no Customer Journey Analytics são compatíveis com métricas de dois fatores (ou baseadas em números). Por exemplo, &quot;Purchase.Value&quot; (um valor duplo) pode ser usado como uma métrica de inclusão/retorno. Além disso, todas as métricas enviadas à Adobe Experience Platform por meio do conector de origem do Analytics também possuem valor duplo.
 
 ## Recursos da tabela de coorte
 
-As seções a seguir descrevem os recursos da Análise de coorte que permitem o controle aprimorado sobre as coortes que você está criando.
+As seções a seguir descrevem os recursos da análise de coorte que permitem o controle aprimorado sobre as coortes que você está criando.
 
 Para obter informações mais detalhadas sobre como criar uma coorte e executar um relatório de [!UICONTROL Análise de coorte], consulte [Configurar uma tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
@@ -90,17 +90,17 @@ Uma tabela de coorte de [!UICONTROL churn] é o inverso da tabela de retenção 
 
 É possível calcular a retenção ou churn com base na coluna anterior, não na coluna incluída, o que é chamado de cálculo contínuo.
 
-![Um relatório de retenção de coorte exibindo cálculos com base em uma coluna de dados anterior.](assets/retention-report-rolling.png)
+![Um relatório de retenção de coorte mostrando cálculos com base em uma coluna de dados anterior.](assets/retention-report-rolling.png)
 
 ### Tabela de [!UICONTROL latência]
 
 Uma tabela de latência mede o tempo decorrido antes e depois da ocorrência do evento de inclusão. A medição da latência é uma ferramenta excelente para análise prévia e posterior. Uma coluna **[!UICONTROL Incluída]** encontra-se no centro da tabela e períodos de tempo anteriores e posteriores ao evento de inclusão são exibidos em ambos os lados.
 
-![Um relatório de coorte exibindo o tempo decorrido antes e depois de um evento.](assets/retention-report-latency.png)
+![Um relatório de coorte que mostra o tempo decorrido antes e depois de um evento.](assets/retention-report-latency.png)
 
 ### Coorte de [!UICONTROL dimensão personalizada]
 
-É possível criar coortes com base em uma dimensão selecionada ao invés de coortes baseados em tempo (que são o padrão). Use dimensões como [!UICONTROL cidade geográfica], [!UICONTROL canal de marketing], [!UICONTROL campanha], [!UICONTROL produto], [!UICONTROL página], [!UICONTROL região] ou qualquer outra para mostrar como a retenção é alterada. Com base nos diferentes valores dessas dimensões.
+É possível criar coortes com base em uma dimensão selecionada ao invés de coortes baseadas em tempo (que são o padrão). Use dimensões como [!UICONTROL cidade geográfica], [!UICONTROL canal de marketing], [!UICONTROL campanha], [!UICONTROL produto], [!UICONTROL página], [!UICONTROL região] ou qualquer outra para mostrar como a retenção é alterada. Com base nos diferentes valores dessas dimensões.
 
 ![Um relatório de coorte exibindo um relatório personalizado com dimensões selecionadas ao invés da coorte baseada em tempo padrão.](assets/retention-dimensions.png)
 

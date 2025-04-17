@@ -1,13 +1,13 @@
 ---
 title: Logs de auditoria
-description: Saiba como visualizar e gerenciar logs de auditoria do Customer Journey Analytics.
+description: Saiba como exibir e gerenciar logs de auditoria do Customer Journey Analytics.
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
 source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
 workflow-type: tm+mt
 source-wordcount: '953'
-ht-degree: 58%
+ht-degree: 97%
 
 ---
 
@@ -32,11 +32,11 @@ ht-degree: 58%
 <!-- markdownlint-enable MD034 -->
 
 
-Para aumentar a transparência e a visibilidade das atividades realizadas no sistema, o Adobe Customer Journey Analytics permite auditar a atividade do usuário em vários serviços e recursos na forma de &quot;logs de auditoria&quot;. Esses registros formam uma trilha de auditoria que pode ajudar na solução de problemas e ajudar sua empresa a cumprir com as políticas corporativas de gerenciamento de dados e os requisitos normativos, como a HIPAA (Health Insurance Portability and Accountability Act, Lei de Portabilidade e Responsabilidade do Seguro de Saúde).
+Para aumentar a transparência e a visibilidade das atividades realizadas no sistema, o Customer Journey Analytics permite fazer uma auditoria das atividade do usuário para vários serviços e recursos na forma de “logs de auditoria”. Esses registros formam uma trilha de auditoria que pode ajudar na solução de problemas e ajudar sua empresa a cumprir com as políticas corporativas de gerenciamento de dados e os requisitos normativos, como a HIPAA (Health Insurance Portability and Accountability Act, Lei de Portabilidade e Responsabilidade do Seguro de Saúde).
 
 Basicamente, um log de auditoria informa **quem** executou **qual** ação e **quando**. Cada ação registrada em um log contém metadados que indicam o tipo de ação, a data e a hora, a ID do email do usuário que executou a ação e atributos adicionais relevantes ao tipo de ação.
 
-Este tópico aborda logs de auditoria no Customer Journey Analytics, incluindo como visualizá-los e gerenciá-los na interface.
+Este tópico aborda logs de auditoria no Customer Journey Analytics, incluindo como exibi-los e gerenciá-los na interface.
 
 ## Acesso a logs de auditoria
 
@@ -50,7 +50,7 @@ No Customer Journey Analytics, navegue até **[!UICONTROL Ferramentas]** > **[!U
 
 O log de auditoria de hoje e ontem é mostrado por padrão.
 
-![Realce do log de auditoria hoje e ontem. ](assets/audit_ui.png)
+![Log de auditoria destacando hoje e ontem. ](assets/audit_ui.png)
 
 Você pode selecionar quais colunas ficam visíveis ao acessar o seletor de colunas na parte superior direita.
 
@@ -62,48 +62,48 @@ Clique duas vezes no botão info (i) ao lado de uma descrição.
 
 Os seguintes itens são mostrados:
 
-* **[!UICONTROL Nome da Ação]**: a ação foi executada. Os valores possíveis incluem:
-   * API_REQUEST: qualquer ação aciona uma solicitação de API de back-end. Detalhes são exibidos sobre a solicitação da API.
-   * APPROVE: uma ação &quot;approval&quot; foi executada.
-   * CRIAR: uma ação &quot;criar&quot; foi executada.
-   * DELETE: uma ação &quot;excluir&quot; foi executada.
-   * EDIT: uma ação de &quot;edição&quot; foi executada.
+* **[!UICONTROL Nome da ação]**: a ação executada. Os valores possíveis incluem:
+   * API_REQUEST: qualquer ação aciona uma solicitação de API de back-end. São exibidos detalhes sobre qual foi a solicitação da API.
+   * APPROVE: uma ação de “aprovação” foi executada.
+   * CREATE: uma ação “criar” foi executada.
+   * DELETE: uma ação “excluir” foi executada.
+   * EDIT: uma ação “editar” foi executada.
    * EMBARGO: Quando você restringe uma solicitação no [Gerente de Atividades de Relatórios](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), a ação é registrada no Log de Auditoria em EMBARGO.
-   * EXPORTAÇÃO: uma ação &quot;exportar&quot; foi executada.
-   * ORG_CHANGE: Uma ação de alteração da organização foi executada.
-   * ATUALIZAR: uma ação de &quot;atualização&quot; foi executada.
-   * COMPARTILHAR: uma ação de &quot;compartilhamento&quot; foi executada.
-   * TRANSFERÊNCIA: uma ação de transferência foi executada.
-   * UNAPPROVE: uma ação &quot;unapprove&quot; foi executada.
-   * UNSHARE: Uma ação de &quot;cancelar compartilhamento&quot; foi executada.
+   * EXPORT: uma ação “exportar” foi executada.
+   * ORG_CHANGE: uma ação de alteração da organização foi executada.
+   * REFRESH: uma ação “atualizar” foi executada.
+   * SHARE: uma ação “compartilhar” foi executada.
+   * TRANSFER: uma ação de transferência foi executada.
+   * UNAPPROVE: uma ação “desaprovar” foi executada.
+   * UNSHARE: Uma ação “deixar de compartilhar” foi executada.
 * **[!UICONTROL Data de criação]**: a data e a hora em que a ação foi executada.
 * **[!UICONTROL Descrição]**: um resumo da ação.
-* **[!UICONTROL Nome do Usuário]**: o usuário que executou a ação. Às vezes, o nome de usuário pode estar ausente. Considere usar o recurso [Uso do produto](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/tools/product-usage/usage-overview), pois ele sempre inclui o nome de usuário de logon.
+* **[!UICONTROL Nome do usuário]**: o usuário que executou a ação. Às vezes, o nome de usuário pode estar ausente. Considere usar o recurso [Uso do produto](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/tools/product-usage/usage-overview), pois ele sempre inclui o nome de usuário de logon.
 * **[!UICONTROL Email]**: o endereço de email do usuário que executou a ação.
-* **[!UICONTROL Nome do Componente]**: o componente no qual o usuário executou uma ação.
+* **[!UICONTROL Nome do componente]**: o componente no qual o usuário executou uma ação.
 * **[!UICONTROL Tipo de componente]**: o tipo de componente. Os valores possíveis incluem:
-   * ANOTAÇÃO
-   * PÚBLICO
+   * ANNOTATION
+   * AUDIENCE
    * CALCULATED_METRIC
-   * CONEXÃO
+   * CONNECTION
    * DATA_GROUP
    * DATA_VIEW
-   * CONJUNTO_DE_DADOS
+   * DATASET_STITCHING
    * DATE_RANGE
    * FEATURE_ACCESS
    * FILTRO
    * IMS_ORG
-   * DISPOSITIVO MÓVEL
-   * PROJETO (Workspace)
-   * RELATÓRIO
+   * MOBILE
+   * PROJECT (Workspace)
+   * REPORT
    * SCHEDULED_PROJECT
-   * USUÁRIO
+   * USER
    * USER_GROUP
-* **[!UICONTROL ID do Componente]**: a ID do componente no qual o usuário executou uma ação.
-* **[!UICONTROL ID da Organização IMS]**: a ID IMS da organização, no formato de `ABC123@AdobeOrg`.
-* **[!UICONTROL ID do Log]**: uma ID exclusiva que identifica esta entrada de log.
-* **[!UICONTROL ID de Usuário]**: a ID exclusiva que identifica o usuário que executou a ação.
-* **[!UICONTROL Tipo de Usuário]**: o tipo de autenticação usado. Os valores válidos incluem:
+* **[!UICONTROL ID do componente]**: a ID do componente no qual o usuário executou uma ação.
+* **[!UICONTROL ID da organização IMS]**: a ID da organização IMS, no formato de `ABC123@AdobeOrg`.
+* **[!UICONTROL ID de log]**: um identificador exclusivo que identifica esta entrada de log.
+* **[!UICONTROL ID de usuário]**: o identificador exclusivo que identifica o usuário que executou a ação.
+* **[!UICONTROL Tipo de usuário]**: o tipo de autenticação usado. Os valores válidos incluem:
    * IMS
    * OKTA
 
@@ -111,7 +111,7 @@ Os seguintes itens são mostrados:
 
 Selecione o ícone de funil (![filtro](assets/filter-icon.png)) para exibir uma lista de controles de filtro para ajudar a limitar os resultados. Somente os últimos 1.000 registros são exibidos, independentemente dos vários filtros selecionados.
 
-![Log de auditoria mostrando os filtros exibidos para o Intervalo de Datas.](assets/filters.png)
+![Log de auditoria mostrando os filtros exibidos para o Intervalo de datas.](assets/filters.png)
 
 Os seguintes filtros estão disponíveis para eventos de auditoria na interface do usuário:
 
@@ -158,4 +158,4 @@ Você pode baixar logs de auditoria em formatos CSV ou JSON. Todos os filtros ap
 
 ## Gerenciar logs de auditoria na API
 
-Todas as ações que você pode executar na interface do usuário também podem ser realizadas usando chamadas de API. Consulte o [documento de referência da API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) para obter mais informações.
+Todas as ações que você pode executar na interface do usuário também podem ser realizadas usando chamadas de API. Consulte o [documento de referência da API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/api/#tag/Audit-Logs) para obter mais informações.

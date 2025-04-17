@@ -1,5 +1,5 @@
 ---
-description: Saiba mais sobre o recurso Fluxo que mostra os caminhos do cliente pelos seus sites e aplicativos.
+description: Saiba mais sobre o recurso de fluxo, que mostra os caminhos do cliente pelos seus sites e aplicativos.
 title: Visão geral do Fluxo
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 26%
+ht-degree: 85%
 
 ---
 
@@ -30,23 +30,23 @@ ht-degree: 26%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de fluxo no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Fluxo](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel de fluxo no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Fluxo](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
 
-A visualização de ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Fluxo]** mostra os caminhos do cliente pelos seus sites e aplicativos.
+O recurso ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Fluxo]** mostra os caminhos do cliente pelos seus sites e aplicativos.
 
 Com a visualização, é possível:
 
-* Visualize a jornada do cliente em seu site ou aplicativo.
-* Analise onde os clientes vão antes e depois de pontos de verificação especificados, como entrada, uma dimensão específica ou saída.
+* Visualizar a jornada do cliente pelo seu site ou aplicativo.
+* Analisar aonde os clientes vão antes e depois de pontos de verificação específicos, como a entrada, uma dimensão específica ou a saída.
 * Crie segmentos designando um ponto específico em um determinado caminho.
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar uma visualização de fluxo](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar uma visualização de fluxo](https://video.tv.adobe.com/v/346063/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -64,22 +64,22 @@ Cada coluna pode exibir uma dimensão diferente. Arraste uma dimensão e solte e
 >[Configurar uma visualização de fluxo](/help/analysis-workspace/visualizations/c-flow/create-flow.md).
 >
 
-## Escolha entre as visualizações da tela de Fluxo, Fallout ou Jornada
+## Escolha entre as visualizações de fluxo, fallout ou tela da jornada
 
-A visualização de Fluxo tem semelhanças com a [visualização de Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) e a [visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md), mas com diferenças importantes.
+A visualização de fluxo tem semelhanças com a [visualização de fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) e a [visualização da tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md), mas com diferenças importantes.
 
-### Entender as diferenças
+### Entenda as diferenças
 
 <!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
 {{journey-visualization-comparisons}}
 
-### Quando usar o Fluxo
+### Quando usar o fluxo
 
 As visualizações de fluxo são mais adequadas para:
 
-* Análise ad hoc exploratória para o próximo ponto de contato imediato no caminho. (Use a tela de Jornada para jornadas com uma sequência predefinida de páginas ou aquelas que usam um caminho eventual.)
+* Análise ad hoc exploratória para o próximo ponto de contato imediato no caminho. (Use a tela da jornada no caso de jornadas com uma sequência predefinida de páginas ou que usam um caminho eventual.)
 
-* Jornadas não lineares com vários pontos de entrada e caminhos. (Use a tela de Jornada para jornadas com uma sequência predefinida de páginas.)
+* Jornadas não lineares com vários pontos de entrada e caminhos. (Use a tela da jornada no caso de jornadas com uma sequência predefinida de páginas.)
 
-Use [a tabela acima](#understand-the-differences) para entender as diferenças entre as telas de Fluxo, Fallout e Jornada.
+Use [a tabela acima](#understand-the-differences) para entender as diferenças entre fluxo, fallout e tela da jornada.

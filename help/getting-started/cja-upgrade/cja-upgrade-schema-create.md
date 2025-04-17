@@ -1,5 +1,5 @@
 ---
-title: Criar um esquema personalizado para o Customer Journey Analytics
+title: Criar um esquema personalizado no Customer Journey Analytics
 description: Saiba como criar um esquema personalizado para o Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -8,7 +8,7 @@ exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1252'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -45,44 +45,44 @@ ht-degree: 53%
 
 >[!IMPORTANT]
 >
->Antes de começar a criar seu esquema personalizado, trabalhe com sua equipe de dados e outras partes interessadas em toda a organização para identificar o design de esquema ideal para a Customer Journey Analytics e outros aplicativos da Adobe Experience Platform que você usa. Para obter mais informações, consulte [Criar um esquema para usar com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+>Antes de começar a criar o esquema personalizado, trabalhe com sua equipe de dados e outras partes interessadas em sua organização para identificar o design de esquema ideal do Customer Journey Analytics e de outros aplicativos da Adobe Experience Platform que você usa. Para obter mais informações, consulte [Projete seu esquema para uso com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
 
-As seções a seguir descrevem como criar um esquema que pode ser usado com o Customer Journey Analytics. As seguintes opções de schema estão disponíveis:
+As seções a seguir descrevem como criar um esquema que pode ser usado com o Customer Journey Analytics. As seguintes opções de esquema estão disponíveis:
 
-* **Esquema XDM personalizado:** (recomendado) permite um esquema simplificado adaptado às necessidades da sua organização e dos aplicativos específicos da Platform que você usa. Quaisquer mudanças futuras necessárias são diretas.
+* **Esquema XDM personalizado:** (recomendado) possibilita um esquema simplificado e adaptado às necessidades da organização e aos aplicativos específicos da Platform que você usa. As alterações necessárias no futuro são simplificadas.
 
-* **O esquema do Adobe Analytics que usa o grupo de campos Adobe Analytics ExperienceEvent:** requer a adição de milhares de campos desnecessários. Quaisquer mudanças futuras necessárias são mais difíceis.
+* **O esquema do Adobe Analytics que usa o grupo de campos ExperienceEvent do Adobe Analytics:** requer a adição de milhares de campos desnecessários. As alterações necessárias no futuro são mais difíceis.
 
-Para obter mais informações sobre essas opções de esquema, consulte [Escolher seu esquema para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+Para obter mais informações sobre essas opções de esquema, consulte [Escolha o esquema para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
 ## Criar o esquema
 
-O esquema personalizado definido para a implementação do Web SDK representa o modelo dos dados coletados no Adobe Experience Platform.
+O esquema personalizado definido para a implementação do SDK da web representa o modelo dos dados coletados na Adobe Experience Platform.
 
 Para criar um esquema personalizado:
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-1. No Adobe Experience Platform, no painel à esquerda, selecione **[!UICONTROL Esquemas]** em [!UICONTROL GERENCIAMENTO DE DADOS].
+1. Na Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** em [!UICONTROL GERENCIAMENTO DE DADOS].
 
-1. Selecione **[!UICONTROL Criar esquema]**.
+1. Selecione **[!UICONTROL Criar esquema]**. 
 
 1. Na etapa **[!UICONTROL Selecionar uma classe]** do assistente Criar esquema:
 
    1. Selecione **[!UICONTROL Evento de experiência]**.
 
-      ![Criar um esquema destacando o Evento de Experiência](assets/create-ee-schema-wizard-step-1.png)
+      ![Criar um esquema destacando o evento de experiência](assets/create-ee-schema-wizard-step-1.png)
 
       >[!INFO]
       >
-      >    Um esquema de Evento de Experiência é usado para modelar o _comportamento_ de um perfil (como nome da cena, botão de push para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
+      >    Um esquema de evento de experiência é usado para modelar o _comportamento_ de um perfil (como nome do cenário, pressione o botão para adicionar ao carrinho). Um esquema de Perfil individual é usado para modelar os _atributos_ de perfil (como nome, email, gênero).
 
    1. Selecione **[!UICONTROL Próximo]**.
 
 
-1. No [!UICONTROL Nome e na etapa de revisão] do assistente [!UICONTROL Criar esquema]:
+1. No [!UICONTROL Nome e etapa de revisão] do assistente [!UICONTROL Criar esquema]:
 
-   1. Insira um **[!UICONTROL nome para exibição do esquema]** para seu esquema e (opcional) uma **[!UICONTROL Descrição]**.
+   1. Insira um **[!UICONTROL nome de exibição]** para o esquema e uma **[!UICONTROL descrição]** (opcional).
 
       ![Janela Criar esquema mostrando os campos Nomear seu esquema](assets/create-ee-schema-wizard-step-2.png)
 
@@ -106,11 +106,11 @@ Para criar um esquema personalizado:
 
       Selecione **[!UICONTROL Voltar]** para fechar a visualização.
 
-   1. (Opcional) Selecione quaisquer grupos de campos adicionais que deseja incluir.
+   1. (Opcional) Selecione qualquer grupo de campos adicional que deseja incluir.
 
-      Se você optar por usar o esquema padrão do Adobe Analytics em vez de criar um esquema XDM personalizado, poderá adicionar o grupo de campos Adobe Analytics ExperienceEvent agora. No entanto, a Adobe recomenda criar um esquema XDM personalizado em vez de adicionar esse grupo de campos.
+      Se você optar por usar o esquema padrão do Adobe Analytics em vez de criar um esquema XDM personalizado, é possível adicionar o grupo de campos do ExperienceEvent do Adobe Analytics agora. No entanto, a Adobe recomenda criar um esquema XDM personalizado em vez de adicionar esse grupo de campos.
 
-      Para obter mais informações sobre essas opções de esquema, consulte [Escolher seu esquema para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+      Para obter mais informações sobre essas opções de esquema, consulte [Escolher esquema para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
 
    1. Selecione **[!UICONTROL Adicionar grupos de campos]**.
 
@@ -122,7 +122,7 @@ Para criar um esquema personalizado:
 
    1. Na caixa de diálogo [!UICONTROL Adicionar grupos de campos], selecione **[!UICONTROL Criar novo grupo de campos]**.
 
-   1. Especifique um nome para exibição e uma descrição opcional e selecione **[!UICONTROL Adicionar grupos de campos]**.
+   1. Especifique um nome de exibição e uma descrição opcional e selecione **[!UICONTROL Adicionar grupos de campos]**.
 
 1. Selecione **[!UICONTROL +]** ao lado do nome do esquema no painel [!UICONTROL Estrutura].
 
@@ -132,7 +132,7 @@ Para criar um esquema personalizado:
 
    >[!NOTE]
    >
-   >Se esse grupo de campos não estiver disponível, procure outro grupo de campos que contenha campos de identidade. Ou [crie um novo grupo de campos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) e [adicione novos campos de identidade](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (como `ecid`, `crmId` e outros que você precise) ao grupo de campos e selecione esse novo grupo de campos.
+   >Se esse grupo de campos não estiver disponível, procure outro grupo de campos que contenha campos de identidade. Ou [crie um novo grupo de campos](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=pt-BR) e [adicione novos campos de identidade](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=pt-BR#define-a-identity-field) (como `ecid`, `crmId` e outros que você precise) ao grupo de campos e selecione esse novo grupo de campos.
 
    ![Objeto de identificação](assets/identification-field.png)
 
@@ -158,15 +158,15 @@ Para criar um esquema personalizado:
 
    Selecione **[!UICONTROL Salvar]**.
 
-1. (Opcional) Se quiser integrar o Customer Journey Analytics ao RTCDP, selecione o elemento raiz do esquema que exibe o nome do esquema e selecione a opção **[!UICONTROL Perfil]**.
+1. (Opcional) Se quiser integrar o Customer Journey Analytics à RTCDP, selecione o elemento raiz do esquema que exibe o nome do esquema e selecione a opção **[!UICONTROL Perfil]**.
 
    Você deve habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
-   Consulte [Ativar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile) para obter mais informações.
+   Consulte [Ativar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#profile) para obter mais informações.
 
    >[!IMPORTANT]
    >
-   >Depois que você ativa um esquema para perfil, ele não pode ser desativado para perfil.
+   >Após habilitar um esquema para perfil, ele não pode ser desabilitado para perfil.
 
    ![Habilitar esquema para perfil](./assets/enable-for-profile.png)
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 30%
+ht-degree: 95%
 
 ---
 
@@ -25,16 +25,16 @@ ht-degree: 30%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de Fallout no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Fallout](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de fallout no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Fallout](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
-Uma visualização de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** mostra onde as pessoas saíram e continuaram em uma sequência predefinida de páginas.
+Uma visualização de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]** mostra onde os visitantes saíram e de onde continuaram em uma sequência predefinida de páginas.
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um relatório de visualização de fallout](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um relatório de visualização de fallout](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -44,40 +44,40 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um re
 As visualizações de fallout permitem:
 
 * Fazer comparações lado a lado de dois segmentos diferentes no mesmo relatório
-* Arraste e solte (e reorganize) as etapas do funil (pontos de contato).
-* Misture e associe valores de diferentes dimensões e métricas.
-* Crie um relatório de fallout multidimensional.
-* Identifique para onde os clientes vão imediatamente após sair.
+* Arrastar e soltar (e reorganizar) as etapas do funil (pontos de contato).
+* Combinar valores de diferentes dimensões e métricas.
+* Criar um relatório de fallout multidimensional.
+* Identificar o que os clientes acessam imediatamente depois do fallout.
 
 O Fallout exibe as taxas de conversão e de fallout entre cada etapa ou ponto de contato em uma sequência.
 
-Por exemplo, você pode rastrear os pontos de fallout de uma pessoa durante um processo de compra. Selecione um ponto de contato inicial e um ponto de contato final e adicione pontos de contato intermediários para criar um caminho de navegação no site. Mas você também pode executar fallouts multidimensionais.
+Por exemplo, você pode rastrear os pontos de fallout de um visitante durante um processo de compra. Selecione um ponto de contato inicial e um ponto de contato final e adicione pontos de contato intermediários para criar um caminho de navegação no site. Mas você também pode executar fallouts multidimensionais.
 
-## Escolha entre as visualizações de tela de Fallout, Fluxo e Jornada
+## Escolha entre as visualizações das telas de fallout, fluxo e jornada
 
-A visualização Fallout tem semelhanças com a [Visualização de fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) e a [Visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
+A visualização de fallout tem semelhanças com a [Visualização de fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) e a [Visualização da tela de jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
 
-### Entender as diferenças
+### Entenda as diferenças
 
 <!-- Information in this snippet is shared between Journey canvas, Fallout, and Flow visualization docs -->
 
 {{journey-visualization-comparisons}}
 
-### Quando usar o Fallout
+### Quando usar o fallout
 
-As visualizações Fallout e [tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) são úteis para analisar:
+As visualizações das telas de fallout e de [jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) são úteis para analisar:
 
 * Taxas de conversão por meio de processos específicos no site (como um processo de compra ou registro).
-* Fluxos de tráfego gerais e de escopo mais amplo: das pessoas que visitaram a página inicial, esse fluxo mostra quantas realizaram uma pesquisa. E então quantos deles eventualmente olharam para um item específico.
+* Fluxos de tráfego gerais e de escopo mais amplo: entre as pessoas que visitaram a página inicial, esse fluxo mostra quantas realizaram uma pesquisa. Em seguida, quantas delas chegaram a olhar um item específico.
 * Correlações entre eventos no site. As correlações mostram a porcentagem de pessoas que acessaram sua política de privacidade e que fizeram uma compra.
 
-As visualizações de Fallout são mais adequadas para:
+As visualizações de fallout são mais adequadas para:
 
-* Análise de fallout envolvendo jornadas com uma sequência predefinida de páginas e um único ponto de entrada e caminho. (Use a tela de Jornada para jornadas com vários pontos de entrada e caminhos.)
+* Análise de fallout que envolva jornadas com uma sequência predefinida de páginas, o mesmo ponto de entrada e o mesmo caminho. (Use a tela de jornada para jornadas com vários pontos de entrada e caminhos.)
 
 * Jornadas nas quais você precisa executar comparações lado a lado de dois segmentos diferentes no mesmo relatório.
 
-Use [a tabela acima](#understand-the-differences) para entender as diferenças entre as visualizações de tela de Jornada, Fallout e Fluxo.
+Use [a tabela acima](#understand-the-differences) para entender as diferenças entre as visualizações das telas de jornada, fallout e fluxo.
 
 >[!MORELIKETHIS]
 >

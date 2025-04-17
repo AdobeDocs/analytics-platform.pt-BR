@@ -8,7 +8,7 @@ exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 9%
+ht-degree: 96%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 9%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-lookup-dataset-create"
 >title="Criar um conjunto de dados de pesquisa para cada dimensão que contenha dados de classificação"
->abstract="Semelhante aos dados de classificações no Adobe Analytics, os conjuntos de dados de pesquisa são o método para classificar dados no Customer Journey Analytics."
+>abstract="Semelhantes aos dados de classificações no Adobe Analytics, os conjuntos de dados de pesquisa são o método para classificar dados no Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note-step}}
 
-Semelhante aos dados de classificações no Adobe Analytics, os conjuntos de dados de pesquisa são o método para classificar dados no Customer Journey Analytics.
+Semelhantes aos dados de classificações no Adobe Analytics, os conjuntos de dados de pesquisa são o método para classificar dados no Customer Journey Analytics.
 
 Ao usar o conector de origem do Analytics, alguns conjuntos de dados de pesquisa padrão são aplicados automaticamente no momento do relatório. Para obter mais informações, consulte [Adicionar pesquisas padrão aos seus conjuntos de dados](/help/connections/standard-lookups.md).
 
@@ -37,35 +37,35 @@ Crie um novo esquema personalizado para cada dimensão que contenha dados que vo
 
 Repita esse processo para cada dimensão que contenha dados que você deseja classificar.
 
-Para criar um esquema para usar com um conjunto de dados de pesquisa na Customer Journey Analytics:
+Para criar um esquema para usar com um conjunto de dados de pesquisa no Customer Journey Analytics:
 
 1. No Adobe Experience Platform, selecione **[!UICONTROL Esquemas]** na seção **[!UICONTROL Gerenciamento de dados]** no painel esquerdo.
 
-1. Selecione **[!UICONTROL Criar esquema]**.
+1. Selecione **[!UICONTROL Criar esquema]**. 
 
    ![Botão Criar esquema](assets/schema-create.png)
 
-1. Selecione **[!UICONTROL Manual]**. Isso permite adicionar campos e grupos de campos manualmente ao esquema. Escolha **[!UICONTROL Selecionar]** para prosseguir para a próxima página do assistente de criação.
+1. Selecionar **[!UICONTROL Manual]**. Isso permite adicionar campos e grupos de campos manualmente ao esquema. Escolha **[!UICONTROL Selecionar]** para prosseguir para a próxima página do assistente de criação.
 
 1. Na página **[!UICONTROL Detalhes do esquema]**, selecione **[!UICONTROL Outros]** e **[!UICONTROL Personalizado]**.
 
    ![Criar personalizado](assets/schema-custom.png)
 
-1. Selecione **[!UICONTROL Criar classe]**.
+1. Selecione **[!UICONTROL Criar nova classe]**.
 
    <!-- add screenshot -->
 
-1. Na caixa de diálogo **[!UICONTROL Criar classe]**, especifique um nome e uma descrição para o esquema, selecione **[!UICONTROL Gravar]** e **[!UICONTROL Criar]**.
+1. Na caixa de diálogo **[!UICONTROL Criar classe]**, especifique um nome e uma descrição para o esquema, selecione **[!UICONTROL Registrar]** e **[!UICONTROL Criar]**.
 
 1. Continuar com [Criar um conjunto de dados de pesquisa](#create-a-lookup-dataset).
 
-## Criar um conjunto de dados de pesquisa
+## Criar um conjunto de dados
 
 Depois de [criar um esquema personalizado](#create-a-custom-schema-to-use-with-the-lookup-dataset) para usar em um conjunto de dados de pesquisa, você precisa criar o conjunto de dados de pesquisa e mapeá-lo para o esquema.
 
 Repita esse processo para cada dimensão que contenha dados que você deseja classificar.
 
-Para criar um conjunto de dados de pesquisa para uso com um esquema na Customer Journey Analytics:
+Para criar um conjunto de dados de pesquisa para uso com um esquema no Customer Journey Analytics:
 
 >[!NOTE]
 >
@@ -85,15 +85,15 @@ Para criar um conjunto de dados de pesquisa para uso com um esquema na Customer 
 
 1. Selecione **[!UICONTROL Próximo]**.
 
-1. Na **[!UICONTROL página Mapear CSV para esquema XDM]**, na seção **[!UICONTROL Carregar arquivos]**, selecione **[!UICONTROL Escolher arquivos]** e procure no sistema de arquivos o arquivo que contém as informações de classificação da dimensão à qual você deseja aplicar os dados de classificação. Por exemplo, pode ser uma planilha que lista as IDs de campo e os nomes de campo correspondentes. <!-- correct? How can I better explain what this file is?-->
+1. Na **[!UICONTROL página Mapear CSV para esquema XDM]**, na seção **[!UICONTROL Carregar arquivos]**, selecione **[!UICONTROL Escolher arquivos]** e procure no sistema o arquivo que contém as informações de classificação da dimensão à qual você deseja aplicar os dados de classificação. Por exemplo: pode ser uma planilha que lista as IDs de campo e os nomes de campo correspondentes. <!-- correct? How can I better explain what this file is?-->
 
    ![Mapear arquivo CSV](assets/lookup-map-csv.png)
 
-1. Selecionar **[!UICONTROL Próximo]**
+1. Selecione **[!UICONTROL Próximo]**.
 
-1. Depois que o arquivo for carregado, revise os mapeamentos para verificar se estão precisos. As colunas do arquivo CSV estão listadas em **[!UICONTROL Dados do Source]** e seus campos de esquema XDM correspondentes estão listados em **[!UICONTROL Campo de Destino]**.
+1. Depois que o arquivo for carregado, revise os mapeamentos para verificar se estão precisos. As colunas do arquivo CSV estão listadas em **[!UICONTROL Fonte de dados]** e seus campos de esquema XDM correspondentes estão listados em **[!UICONTROL Campo de Destino]**.
 
-   A Platform fornece recomendações inteligentes automaticamente para campos mapeados automaticamente com base no esquema ou conjunto de dados de destino selecionado. Você pode ajustar manualmente as regras de mapeamento para atender aos seus casos de uso.
+   O Platform fornece recomendações inteligentes automaticamente para campos mapeados automaticamente com base no esquema ou conjunto de dados de destino selecionado. Você pode ajustar manualmente as regras de mapeamento para atender aos seus casos de uso.
 
    Para obter mais informações sobre o processo de mapeamento, consulte [Mapear um arquivo CSV para um esquema XDM existente](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) na documentação do Experience Platform.
 
@@ -107,11 +107,11 @@ Depois de [criar um esquema personalizado](#create-a-custom-schema-to-use-with-t
 
 Repita esse processo para cada dimensão que contenha dados que você deseja classificar.
 
-Para adicionar o conjunto de dados de pesquisa à sua conexão no Customer Journey Analytics:
+Adicionar o conjunto de dados à sua conexão no Customer Journey Analytics
 
 1. No Customer Journey Analytics, selecione **[!UICONTROL Conexões]**, opcionalmente em **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 
-1. Selecione ![Mais ícone](assets/More.svg) ao lado da conexão à qual você deseja adicionar o conjunto de dados de pesquisa e selecione **[!UICONTROL Editar]**.
+1. Selecione o ![ícone Mais](assets/More.svg) ao lado da conexão à qual você deseja adicionar o conjunto de dados de pesquisa e selecione **[!UICONTROL Editar]**.
 
    <!-- add screenshot -->
 

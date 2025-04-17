@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 47%
+ht-degree: 66%
 
 ---
 
@@ -25,19 +25,19 @@ ht-degree: 47%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de Rosca no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Rosca](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/donut) para a_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** versão deste artigo._
+_Este artigo documenta a visualização de rosca no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Rosca](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/donut) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
 
-Semelhante ao gráfico de pizza, a visualização ![RoscaGráfico](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Rosca]** mostra os dados como partes ou segmentos de um todo. Use a visualização de rosca ao comparar porcentagens de um total, normalmente em um pequeno número de itens.
+Semelhante ao gráfico de pizza, a visualização ![RoscaGráfico](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Rosca]** mostra os dados como partes ou segmentos de um todo. Use uma visualização de rosca ao comparar porcentagens de um total, normalmente com um pequeno número de itens.
 
 ![Um gráfico de Rosca que mostra dados como partes ou segmentos de um todo.](assets/donut.png)
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionar uma visualização de rosca](https://video.tv.adobe.com/v/334309/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionar uma visualização de rosca](https://video.tv.adobe.com/v/334309/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 

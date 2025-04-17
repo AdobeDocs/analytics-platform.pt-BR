@@ -1,5 +1,5 @@
 ---
-title: Configurar o Content Analytics
+title: Configure o Content Analytics
 description: Uma visão geral de como configurar o Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
@@ -8,11 +8,11 @@ exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 0%
+ht-degree: 19%
 
 ---
 
-# Configurar o Content Analytics
+# Configure o Content Analytics
 
 {{release-limited-testing}}
 
@@ -35,16 +35,16 @@ A configuração do Content Analytics consiste nas seguintes etapas:
 Antes de configurar o Content Analytics, verifique se os seguintes pré-requisitos foram atendidos:
 
 * Você incluiu na lista de permissões o Agente do usuário e o endereço IP do serviço de recursos usado no Content Analytics. A sequência de agente do usuário a ser configurada é: <code>AdobeFeaturization/1.0</code>.
-* Se você implementou o [Web SDK usando o JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} para coleta de dados comportamentais regulares, verifique se está usando o nome padrão <code>alloy</code> para a biblioteca do JavaScript.
+* Se você implementou o [Web SDK usando o JavaScript](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/install/library){target="_blank"} para coleta de dados comportamentais regulares, verifique se está usando o nome padrão <code>alloy</code> para a biblioteca do JavaScript.
 * Você tem uma função de Administrador de produto do Customer Journey Analytics, com as permissões adicionais para gerenciar conexões e visualizações de dados.
 * Se você considerar coletar experiências do Content Analytics, certifique-se de configurar e atualizar o [controle de versão do Content Analytics](manual.md#versioning) com base nas alterações das suas páginas da Web.
 * Você deve ter [permissões para a coleta de dados](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}:
    * [Permissões do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
    * [Permissões da Coleção de Dados do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
-* Você considerou cuidadosamente as seguintes opções de configuração importantes:
+* Você considerou cuidadosamente as seguintes opções de configuração:
 
    * Seu site é adequado para relatórios de experiência. O relatório de experiência adequado só é possível quando as seguintes condições são atendidas:
-      * As páginas do site devem ser reprodutíveis usando o URL da página.
+      * As páginas do site devem ser reproduzíveis usando o URL da página.
       * O conteúdo de texto visto por qualquer usuário pode ser reproduzido usando o URL da página e não depende de cookies ou outros mecanismos de personalização.
    * Você tem uma compreensão clara de quais páginas deseja capturar a análise e os insights do engajamento de conteúdo.
    * Você tem uma compreensão clara sobre quais (tipos de) ativos deseja capturar a análise e os insights do envolvimento de conteúdo.

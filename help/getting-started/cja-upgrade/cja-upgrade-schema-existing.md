@@ -8,7 +8,7 @@ exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '475'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 65%
 
 Ao atualizar para o Customer Journey Analytics, a Adobe recomenda criar um esquema personalizado do Experience Data Model (XDM) para se alinhar melhor às necessidades da organização à medida que você começa a usar outros serviços da Platform. Como alternativa, você pode optar por usar o esquema existente do Adobe Analytics.
 
-Considere as vantagens e desvantagens de cada uma.
+Considere as vantagens e desvantagens de cada um.
 
 ## Criar um esquema personalizado adaptado à sua organização (Recomendado)
 
@@ -46,15 +46,15 @@ A Adobe recomenda criar um esquema personalizado ao atualizar para o Customer Jo
 
 | Vantagens | Desvantagens |
 |----------|---------|
-| <ul><p>As vantagens de atualizar para seu próprio esquema personalizado incluem:</p><ul><li>Um esquema simplificado e adaptado às necessidades da organização e aos aplicativos específicos da Platform que você usa.</li><p>Quando é preciso realizar alterações no esquema, não é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.</p></ul> | <p>As desvantagens de atualizar para seu próprio esquema personalizado incluem:</p><ul><li>A atualização do esquema é um processo demorado e necessário antes de você começar a enviar dados para a Platform.</li></ul> |
+| <ul><p>As vantagens de atualizar para seu próprio esquema personalizado incluem:</p><ul><li>Um esquema simplificado e adaptado às necessidades da organização e aos aplicativos específicos da Platform que você usa.</li><p>Quando é preciso realizar alterações no esquema, não é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.</p></ul> | <p>As desvantagens de atualizar para seu próprio esquema personalizado incluem:</p><ul><li>A atualização do esquema é um processo demorado e necessário para começar a enviar dados à Platform.</li></ul> |
 
-## Usar seu esquema existente do Adobe Analytics
+## Use o esquema existente do Adobe Analytics
 
-A opção para usar o esquema existente do Adobe Analytics com o Customer Journey Analytics só estará disponível se a implementação do Adobe Analytics estiver configurada com o Adobe Experience Platform Web SDK. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
+A opção de usar o esquema existente do Adobe Analytics com o Customer Journey Analytics estará disponível somente se sua implementação do Adobe Analytics estiver configurada com o SDK da web da Adobe Experience Platform. <!-- correct? Or can you do this with an AppMeasurement implementation?-->
 
 | Vantagens | Desvantagens |
 |----------|---------|
-| <p>As vantagens de usar o esquema do Adobe Analytics incluem:</p><ul><li>Facilidade de atualização<p>Se você já estiver enviando dados para o Adobe Analytics com o SDK da web da Adobe Experience Platform, é possível adicionar um serviço extra à sequência de dados para enviar dados para a Adobe Experience Platform (que também pode ser usado na configuração do Customer Journey Analytics).</p></li></ul> | <p>As desvantagens de usar o esquema do Adobe Analytics incluem:</p><ul><li>Embora o uso do esquema do Adobe Analytics não limite a maneira como você utiliza outros aplicativos da Platform, ele é um esquema um pouco mais complexo. Isso ocorre porque o esquema do Adobe Analytics contém muitos objetos específicos do Adobe Analytics que provavelmente não serão usados pela organização.<p>Quando é preciso realizar alterações no esquema, é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.</p></li></ul> |
+| <p>As vantagens de usar o esquema do Adobe Analytics incluem:</p><ul><li>Facilidade para atualizar<p>Se você já estiver enviando dados para o Adobe Analytics com o SDK da web da Adobe Experience Platform, é possível adicionar um serviço extra à sequência de dados para enviar dados para a Adobe Experience Platform (que também pode ser usado na configuração do Customer Journey Analytics).</p></li></ul> | <p>As desvantagens de usar o esquema do Adobe Analytics incluem:</p><ul><li>Embora o uso do esquema do Adobe Analytics não limite a maneira como você utiliza outros aplicativos da Platform, ele é um esquema um pouco mais complexo. Isso ocorre porque o esquema do Adobe Analytics contém muitos objetos específicos do Adobe Analytics que provavelmente não serão usados pela organização.<p>Quando é preciso realizar alterações no esquema, é necessário analisar milhares de campos não utilizados para localizar o campo que precisa de atualização.</p></li></ul> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Configuração manual do Content Analytics
-description: Como configurar manualmente o Content Analytics
+title: Configuração manual da Análise de conteúdo
+description: Como configurar a Análise de conteúdo manualmente
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
@@ -8,18 +8,18 @@ exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
 source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-# Configuração manual do Content Analytics
+# Configuração manual da Análise de conteúdo
 
 {{release-limited-testing}}
 
 
 Este artigo detalha as ações manuais necessárias para iniciar ou interromper a coleta de dados de uma configuração do Content Analytics ou editar a implementação do Content Analytics.
 
-As seguintes ações de configuração manual estão disponíveis:
+As opções de configuração disponíveis são as seguintes:
 
 ## Iniciar coleta de dados
 

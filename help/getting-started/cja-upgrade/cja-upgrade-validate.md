@@ -8,7 +8,7 @@ exl-id: c0513e4c-51fb-4b4c-8450-8e6bf7dda4e7
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
@@ -25,17 +25,17 @@ ht-degree: 41%
 
 {{upgrade-note-step}}
 
-Você pode validar se a conexão está ativa e se os dados estão fluindo para as visualizações de dados no Customer Journey Analytics.
+Você pode conferir se a conexão está ativa e se os dados estão fluindo para as visualizações de dados no Customer Journey Analytics.
 
 1. No Customer Journey Analytics, selecione a guia Conexões.
 
-   ![exibição de lista](assets/list-view.png)
+   ![visualização de lista](assets/list-view.png)
 
-1. Selecione a [conexão configurada](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
+1. Selecione a [conexão que você configurou](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
 
-   ![Janela de todos os conjuntos de dados mostrando os widgets e as configurações](assets/conn-details.png)
+   ![Janela de todos os conjuntos de dados, mostrando os widgets e configurações](assets/conn-details.png)
 
-1. Consulte [Detalhes da conexão](/help/connections/manage-connections.md#manage-connections) em [Gerenciar conexões](/help/connections/manage-connections.md) para obter informações sobre os detalhes disponíveis sobre cada conexão.
+1. Consulte [Detalhes da conexão](/help/connections/manage-connections.md#manage-connections) em [Gerenciar conexões](/help/connections/manage-connections.md) para mais informações sobre os detalhes disponíveis de cada conexão.
 
 {{upgrade-final-step}}
 

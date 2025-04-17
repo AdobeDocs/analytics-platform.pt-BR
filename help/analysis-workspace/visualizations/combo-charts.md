@@ -1,5 +1,5 @@
 ---
-description: Visualize facilmente os dados de comparação no Analysis Workspace, criando comparações com o mês passado, o ano passado e assim por diante.
+description: Permite visualizar facilmente os dados de comparação no Analysis Workspace, criando comparações com o mês passado, o ano passado e assim por diante.
 title: Visualização de gráficos de combinação
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
@@ -7,17 +7,17 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
-# Combo {#combo}
+# Combinado {#combo}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_combo_button"
->title="Combo"
+>title="Combinado"
 >abstract="Crie uma visualização de gráfico de combinação rapidamente, sem precisar criar uma tabela de forma livre primeiro."
 
 <!-- markdownlint-enable MD034 -->
@@ -25,9 +25,9 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de combinação em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
+_Este artigo documenta a visualização combinada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
-_Consulte [Combinação](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) para a_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** versão deste artigo._
+_Consulte [Combinado](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 

@@ -8,7 +8,7 @@ exl-id: 22d3e7b8-4a4d-48a8-a98d-5172a9876286
 source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
 source-wordcount: '1635'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/connections/create-connection.md -->
 
-As informações a seguir explicam como criar e configurar uma conexão, bem como adicionar conjuntos de dados do Experience Platform à conexão criada. Para obter informações adicionais sobre como criar e configurar uma conexão, consulte [Criar ou editar uma conexão](/help/connections/create-connection.md).
+As informações a seguir explicam como criar e configurar uma conexão, bem como adicionar conjuntos de dados da Experience Platform à conexão criada. Para mais informações sobre como criar e configurar uma conexão, consulte [Criar ou editar uma conexão](/help/connections/create-connection.md).
 
 ## Criar e configurar a conexão {#create-connection}
 
@@ -63,7 +63,7 @@ As informações a seguir explicam como criar e configurar uma conexão, bem com
 
 ## Adicionar e configurar conjuntos de dados {#add-dataset}
 
-É possível adicionar um conjunto de dados do Experience Platform ao criar uma conexão.
+É possível adicionar um conjunto de dados da Experience Platform ao criar uma conexão.
 
 1. Na caixa de diálogo Configurações de conexão, clique em **[!UICONTROL Adicionar conjuntos de dados]**.
 
@@ -107,7 +107,7 @@ As informações a seguir explicam como criar e configurar uma conexão, bem com
    | **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. <br/>Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
    | **[!UICONTROL Importar novos dados]** | Habilite essa opção se quiser estabelecer uma conexão contínua. Com uma conexão contínua, novos lotes de dados adicionados aos conjuntos de dados ficam disponíveis automaticamente no Workspace. |
    | **[!UICONTROL Preenchimento retroativo do conjunto de dados]** | Habilitar a opção **[!UICONTROL Preenchimento retroativo de todos os dados existentes]** para garantir que todos os dados existentes sejam preenchidos retroativamente.<br/><br/>Selecione **[!UICONTROL Solicitar preenchimento retroativo]** para preencher dados históricos retroativamente por um período específico. Você pode definir até 10 períodos de preenchimento retroativo de conjunto de dados.<ol><li>Defina o período inserindo dados de início e término ou selecionando datas usando o ![Calendário](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Selecione **[!UICONTROL Preenchimento retroativo de fila]** para adicionar o preenchimento retroativo à lista, ou **[!UICONTROL Cancelar]** para cancelar.</li></ol>Para cada entrada, selecione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) para editar o período ou ![Excluir](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) para excluir a entrada.<br/><br/>Em preenchimentos retroativos:<ul><li>Você pode preencher cada conjunto de dados individualmente.</li><li>Prioriza-se a adição de novos dados a um conjunto de dados na conexão, de modo que esses dados tenham a latência mais baixa.</li><li>Qualquer dado de preenchimento retroativo (histórico) é importado mais lentamente. A quantidade de dados históricos influencia a latência.</li><li>O conector de origem do Analytics importa até 13 meses de dados (independentemente do tamanho) para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é limitado a 3 meses.</li></ul> |
-   | **[!UICONTROL Transformar conjunto de dados]** | Para conjuntos de dados de pesquisa B2B específicos, é possível habilitar a transformação de um conjunto de dados para cenários de relatório adequados baseados em pessoas B2B. |
+   | **[!UICONTROL Transformar conjunto de dados]** | Para conjuntos de dados de pesquisa B2B específicos, é possível habilitar a transformação de um conjunto de dados para casos de relatórios adequados baseados em pessoas B2B.  |
    | **[!UICONTROL Status de preenchimento retroativo]** | Os possíveis indicadores de status são:<ul><li>Sucesso</li><li>Processamento de X preenchimentos retroativos</li><li>Desligado</li></ul> |
    | **[!UICONTROL ID do conjunto de dados]** | Essa ID é gerada automaticamente. |
    | **[!UICONTROL Descrição]** | A descrição fornecida para esse conjunto de dados quando ele foi criado. |

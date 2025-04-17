@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 84%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 84%
 <!-- markdownlint-enable MD034 -->
 
 
-As configurações de comportamento estão disponíveis em dimensões e métricas. A disponibilidade das configurações depende do tipo de componente e do tipo de dados do esquema.
+As configurações de comportamento estão disponíveis em dimensões e métricas. As configurações disponíveis dependem do tipo de componente e do tipo de dado do esquema.
 
 ![Configurações de comportamento](../assets/behavior-settings.png)
 
@@ -46,9 +46,9 @@ As configurações de comportamento estão disponíveis em dimensões e métrica
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
-| [!UICONTROL Contar valores] | Visível nos dados de esquema do tipo Integer e Double. Aumenta a métrica de acordo com o valor especificado. Por exemplo, aumenta uma métrica em 50, se o valor da coluna for `50`. |
-| [!UICONTROL Contar instâncias] | Visível nos dados de esquema do tipo Integer e Double. Aumenta a métrica em um ponto, independentemente do valor. A presença de qualquer valor aumenta a métrica. Por exemplo, aumenta uma métrica em 1 se o valor da coluna for `50`. |
-| [!UICONTROL Valores para contar] | Visível nos dados de esquema do tipo Booleano. Permite determinar se a métrica aumenta ao contar `true`, `false` ou ambos. |
+| [!UICONTROL Contar valores] | Visível nos tipos de dados Integer e Double do esquema. Aumenta a métrica de acordo com o valor especificado. Por exemplo, aumenta uma métrica em 50, se o valor da coluna for `50`. |
+| [!UICONTROL Contar instâncias] | Visível nos tipos de dados Integer e Double do esquema. Aumenta a métrica em um ponto, independentemente do valor. A presença de qualquer valor aumenta a métrica. Por exemplo, aumenta uma métrica em 1 se o valor da coluna for `50`. |
+| [!UICONTROL Valores para contar] | Visível em tipos de dados Boolean do esquema. Permite determinar se a métrica aumenta ao contar `true`, `false` ou ambos. |
 
 {style="table-layout:auto"}
 

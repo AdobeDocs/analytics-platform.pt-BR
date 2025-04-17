@@ -1,5 +1,5 @@
 ---
-title: Saiba mais sobre a visão geral de publicação do Customer Journey Analytics Audiences
+title: Saiba mais sobre a visão geral da publicação de públicos-alvo do Customer Journey Analytics
 description: Saiba mais sobre o conceito de publicação de público-alvo no Customer Journey Analytics
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
@@ -7,15 +7,15 @@ role: User, Admin
 source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 31%
+ht-degree: 87%
 
 ---
 
-# Visão geral da publicação de público
+# Visão geral da publicação de públicos-alvo
 
-Agora você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
+Agora, você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) na Adobe Experience Platform para direcionamento e personalização de clientes. 
 
-A publicação de públicos-alvo fornece uma maneira clara de ativar e executar ações em insights encontrados no Customer Journey Analytics. Essas ações podem incluir:
+A publicação de públicos-alvo fornece uma maneira clara de ativar e executar ações baseadas nos insights encontrados no Customer Journey Analytics.  Essas ações podem incluir:
 
 * Uso do público-alvo para uma jornada no Adobe Journey Optimizer.
 * Exportação do público-alvo para um terceiro por meio de um destino da Experience Platform.
@@ -23,25 +23,25 @@ A publicação de públicos-alvo fornece uma maneira clara de ativar e executar 
 * Tudo isso é feito com latência mínima após publicar o público. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/audiences/publish#latency)
 * Publicação de públicos-alvo únicos ou públicos-alvo recorrentes.
 
-Os públicos-alvo criados no Customer Journey Analytics não precisam se basear em conjuntos de dados habilitados para o perfil. Você pode assimilar dados históricos na Experience Platform sem ativar conjuntos de dados e esquemas associados para o perfil. Em seguida, use esses conjuntos de dados para descobrir públicos relevantes no Customer Journey Analytics e publicá-los no Perfil do cliente em tempo real no Experience Platform para fins de ativação.
+Os públicos-alvo criados no Customer Journey Analytics não precisam se basear em conjuntos de dados habilitados para o perfil. É possível assimilar dados históricos na Experience Platform sem ativar conjuntos de dados e esquemas associados para o perfil. Em seguida, use esses conjuntos de dados para descobrir públicos-alvo relevantes no Customer Journey Analytics e publicá-los no perfil do cliente em tempo real na Experience Platform para fins de ativação.
 
 ## Terminologia principal
 
-**Público-alvo**: um conjunto ou lista de identidades que têm um namespace e uma ID específica relacionada a esse namespace. Os públicos-alvo são transportáveis da Adobe Experience Platform e dos aplicativos que estão nela (como o Customer Journey Analytics). Os públicos-alvo podem conter namespaces mistos.
+**Público-alvo**: um conjunto ou lista de identidades que têm um namespace e uma ID específica relacionada a esse namespace. Os públicos-alvo podem ser transferidos da Adobe Experience Platform e dos aplicativos contidos nela (como o Customer Journey Analytics).  Os públicos-alvo podem conter namespaces mistos.
 
 **Segmento**: um conjunto de regras que, quando avaliado ao longo de um conjunto de dados por um período, produz um subconjunto de dados. Um segmento pode ser usado no processo de criação de um público-alvo quando combinado a outros serviços de suporte. Os segmentos são definidos e mantidos no Customer Journey Analytics.
 
 ## Permissões
 
-* Os administradores recebem automaticamente a permissão **[!UICONTROL Publicação de público-alvo]** no Adobe Admin Console.
+* Os administradores recebem automaticamente a permissão para **[!UICONTROL Publicação de público-alvo]** no Adobe Admin Console.
 
-* Administradores e administradores de perfil de produto podem conceder a permissão **[!UICONTROL Criação de público-alvo]** e **[!UICONTROL Exibição de público-alvo]** a usuários individuais. Consulte [Controle de acesso de nível de usuário](/help/technotes/access-control.md#user-level-access) para obter mais informações.
+* Administradores e administradores de perfis de produtos podem conceder a permissão para **[!UICONTROL Criação de público-alvo]** e **[!UICONTROL Exibição de público-alvo]** a usuários individuais. Consulte [Controle de acesso de nível de usuário](/help/technotes/access-control.md#user-level-access) para obter mais informações.
 
-* Os administradores também precisam da permissão **[!UICONTROL Gerenciar Perfis]** no Adobe Experience Platform.
+* Os administradores também precisam da permissão para **[!UICONTROL Gerenciar perfis]** na Adobe Experience Platform.
 
-## Governança e consentimento de dados
+## Governança de dados e consentimento
 
-Ao publicar um público-alvo no Customer Journey Analytics, os rótulos e as políticas da Governança de dados anexadas aos campos usados no público-alvo são registrados.  Quando o público é ativado em qualquer aplicativo da Adobe Experience, todos os rótulos e políticas de Governança de dados associados estão disponíveis para esse público e a imposição apropriada pode ser aplicada. [Saiba mais sobre consentimento](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=pt-BR#consent-policy).
+Ao publicar um público-alvo no Customer Journey Analytics, os rótulos e políticas de governança de dados anexados aos campos usados no público-alvo são registrados.  Quando o público é ativado em qualquer aplicativo da Adobe Experience, todos os rótulos e políticas de Governança de dados associados estão disponíveis para esse público e a imposição apropriada pode ser aplicada. [Saiba mais sobre consentimento](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=pt-BR#consent-policy).
 
 ## Próximas etapas
 

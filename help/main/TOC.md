@@ -65,9 +65,9 @@ ht-degree: 85%
          + [Monitoramento da ingestão de conjuntos de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md)
       + Implementar o Web SDK com tags {#create-tags}
          + [Criar uma tag para sua propriedade](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md)
-         + [Adicionar a extensão do SDK da Web à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
-         + [Implementar a tag de carregamento para a extensão do SDK da Web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
-         + [Adicionar a lógica da coleção de dados XDM à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
+         + [Adicionar a extensão do SDK da web à sua tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+         + [Implementar a tag do carregador para a extensão do SDK da web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
+         + [Adicionar lógica de coleção de dados XDM à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
       + [Implementar o Web SDK manualmente](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
       + [Implementar o Web SDK com a API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
       + [Criar uma conexão](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
@@ -76,7 +76,7 @@ ht-degree: 85%
       + [Validar fluxo de dados](/help/getting-started/cja-upgrade/cja-upgrade-validate.md)
       + [Configurar coleta de mídias de transmissão](/help/getting-started/cja-upgrade/cja-upgrade-streaming-media.md)
       + Reter dados históricos com o conector de origem do Analytics {#historical-data-source-connector}
-         + [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+         + [Criar um esquema do XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
          + [Criar o conector de origem do Analytics e mapear campos](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md)
          + [Adicionar o conjunto de dados do conector de origem do Analytics à conexão](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md)
       + [Avaliar quando desativar o Adobe Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md)
@@ -112,7 +112,7 @@ ht-degree: 85%
    + Assimilar e usar guias de início rápido{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
-         + [SDK da Web](../data-ingestion/aepwebsdk.md)
+         + [SDK da web](../data-ingestion/aepwebsdk.md)
          + [SDK móvel](../data-ingestion/aepmobilesdk.md)
          + [API do servidor](../data-ingestion/serverapi.md)
       + [Dados em lote](../data-ingestion/batch.md)
@@ -204,14 +204,14 @@ ht-degree: 85%
          + [Visão geral](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Configurar](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Fluxos interdimensionais](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + Tela da jornada {#journey-canvas}
+      + Tela de jornada {#journey-canvas}
          + [Visão geral](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [Configurar](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
          + [Solução de problemas](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
       + [Área (empilhada)](../analysis-workspace/visualizations/area.md)
       + [Barra (empilhada)](../analysis-workspace/visualizations/bar.md)
       + [Marcador](../analysis-workspace/visualizations/bullet-graph.md)
-      + [Combo](../analysis-workspace/visualizations/combo-charts.md)
+      + [Combinado](../analysis-workspace/visualizations/combo-charts.md)
       + [Rosca](../analysis-workspace/visualizations/donut.md)
       + [Histograma](../analysis-workspace/visualizations/histogram.md)
       + [Barra horizontal (empilhada)](../analysis-workspace/visualizations/horizontal-bar.md)
@@ -230,7 +230,7 @@ ht-degree: 85%
       + [Atribuição](../analysis-workspace/c-panels/attribution.md)
       + [Experimentação](../analysis-workspace/c-panels/experimentation.md)
       + [Forma livre](../analysis-workspace/c-panels/freeform-panel.md)
-      + [Público médio a cada minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
+      + [Média de público-alvo por minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)
       + [Visualizadores simultâneos de mídia](../analysis-workspace/c-panels/media-concurrent-viewers.md)
       + [Tempo gasto com a reprodução da mídia](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Próximo item ou anterior](../analysis-workspace/c-panels/next-previous.md)
@@ -397,8 +397,8 @@ ht-degree: 85%
 
 + Gerenciador de atividades de relatórios {#reporting-activity-manager}
    + [Visão geral](../reporting-activity-manager/reporting-activity-overview.md)
-   + [Exibir atividade de relatórios](../reporting-activity-manager/reporting-activity.md)
-   + [Cancelar solicitações de relatórios](../reporting-activity-manager/reporting-activity-cancel-requests.md)
+   + [Exibir atividade de relatório](../reporting-activity-manager/reporting-activity.md)
+   + [Cancelar solicitações de geração de relatórios](../reporting-activity-manager/reporting-activity-cancel-requests.md)
 
 + Compilação {#stitching}
    + [Visão geral](/help/stitching/overview.md)

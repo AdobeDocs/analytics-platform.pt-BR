@@ -1,6 +1,6 @@
 ---
-title: Implementar a tag de carregamento para a extensão do SDK da Web
-description: Saiba como implementar a tag de carregamento para a extensão Web SDK
+title: Implementar a tag do carregador para a extensão do SDK da web
+description: Saiba como implementar a tag do carregador para a extensão do SDK da web
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,11 +8,11 @@ exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '283'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Implementar a tag de carregamento para a extensão do SDK da Web {#upgrade-tag-loader}
+# Implementar a tag do carregador para a extensão do SDK da web {#upgrade-tag-loader}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -25,17 +25,17 @@ ht-degree: 63%
 
 {{upgrade-note-step}}
 
-Você deve instalar a tag no site que deseja rastrear, o que implica colocar o código na tag de cabeçalho do modelo do site.
+É necessário instalar a tag no site que você deseja rastrear, o que implica colocar o código na tag do cabeçalho do modelo do seu site.
 
-O processo a seguir descreve como obter o código que faz referência à sua tag. Para obter informações complementares, consulte os [Guias de implementação para tags e encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) na documentação da Experience Platform.
+O processo a seguir descreve como obter o código que referencia a tag. Para obter informações complementares, consulte os [Guias de implementação de tags e encaminhamento de eventos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/get-started/implementation-guides) na documentação da Experience Platform.
 
 Para obter o código que faz referência à sua tag:
 
-1. Faça logon em experience.adobe.com usando suas credenciais da Adobe ID.
+1. Faça logon em experiencecloud.adobe.com com as suas credenciais do Adobe ID.
 
-1. No Adobe Experience Platform, vá para **[!UICONTROL Coleção de Dados]** > **[!UICONTROL Marcas]**.
+1. No Adobe Experience Platform, acesse **[!UICONTROL Coleção de dados]** > **[!UICONTROL Tags]**.
 
-1. Na página **[!UICONTROL Propriedades da Marca]**, selecione a marca recém-criada na lista de propriedades para abri-la.
+1. Na página **[!UICONTROL Propriedades da tag]**, selecione a tag recém-criada na lista de propriedades para abri-la.
 
 1. Selecione **[!UICONTROL Ambientes]** no painel esquerdo.
 

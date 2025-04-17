@@ -8,7 +8,7 @@ exl-id: f76d098d-d223-40e4-be81-d28e7581396b
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -27,19 +27,19 @@ ht-degree: 51%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-ingestion/aepwebsdk.md-->
 
-Uma sequência de dados representa a configuração do lado do servidor ao implementar os SDKs móveis e da Web da Adobe Experience Platform. Ao coletar dados com os SDKs da Adobe Experience Platform, os dados são enviados para a Rede de borda da Adobe Experience Platform. É o fluxo de dados que determina para quais serviços esses dados são encaminhados.
+Uma sequência de dados representa a configuração do lado do servidor ao implementar os SDKs móveis e da Web da Adobe Experience Platform. Ao coletar dados com os SDKs da Adobe Experience Platform, os dados são enviados para a Rede de borda da Adobe Experience Platform. É a sequência de dados que determina para quais serviços os dados são encaminhados.
 
-Na configuração, você deseja configurar a sequência de dados para enviar os dados coletados para seu conjunto de dados no Adobe Experience Platform.
+Na configuração, você deseja configurar a sequência de dados para enviar os dados coletados para seu conjunto de dados na Adobe Experience Platform.
 
 >[!NOTE]
 >
 >As etapas a seguir são necessárias somente para implementações do Adobe Analytics que usam AppMeasurement ou a extensão do Analytics (tags).
 >
->Se sua implementação do Adobe Analytics usar a extensão Web SDK ou Web SDK, a sequência de dados já existe em seu ambiente do Adobe Analytics.
+>Se sua implementação do Adobe Analytics usar o SDK da web ou a extensão do SDK da web, a sequência de dados já existe em seu ambiente do Adobe Analytics.
 
 Para configurar seu armazenamento de dados:
 
-1. No Adobe Experience Platform, selecione **[!UICONTROL Datastreams]** de [!UICONTROL DATA COLLECTION] no painel esquerdo.
+1. Na Adobe Experience Platform, selecione **[!UICONTROL Sequências de dados]** em [!UICONTROL COLEÇÃO DE DADOS] no painel esquerdo.
 
 1. Selecione **[!UICONTROL Novo fluxo de dados]**.
 

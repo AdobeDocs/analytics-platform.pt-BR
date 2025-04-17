@@ -8,7 +8,7 @@ exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 41%
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 41%
 
 <!-- Should we single source this instead of duplicate it? The following steps were copied from: /help/data-views/create-dataview.md -->
 
-A criação de uma visualização de dados envolve criar métricas e dimensões com base em elementos de esquema ou utilizar componentes padrão. A maioria dos elementos do esquema pode ser uma dimensão ou uma métrica, dependendo das necessidades da sua empresa. Depois de arrastar um elemento do esquema para uma visualização de dados, algumas opções serão exibidas à direita, onde você poderá ajustar como a dimensão ou métrica opera no Customer Journey Analytics.
+A criação de uma visualização de dados envolve criar métricas e dimensões com base em elementos de esquema ou utilizar componentes padrão. A maioria dos elementos do esquema pode ser uma dimensão ou uma métrica, dependendo dos requisitos da sua empresa. Depois de arrastar um elemento do esquema para uma visualização de dados, algumas opções serão exibidas à direita, onde você poderá ajustar como a dimensão ou métrica opera no Customer Journey Analytics.
 
 Para criar uma visualização de dados:
 
@@ -43,7 +43,7 @@ Para criar uma visualização de dados:
 
 1. Selecione a guia [!UICONTROL **Componentes**].
 
-   A guia [!UICONTROL **Componentes**] é onde você define os componentes de uma visualização de dados, o que significa que é possível criar métricas e dimensões com base em elementos de esquema. Você também pode usar os componentes padrão.
+   Na guia [!UICONTROL **Componentes**], é possível definir os componentes da visualização de dados,  o que significa que você pode criar métricas e dimensões com base em elementos do esquema. Você também pode usar os componentes padrão.
 
    ![Guia Componentes](assets/dataview-components.png)
 
@@ -51,12 +51,12 @@ Para criar uma visualização de dados:
 
    Para obter informações detalhadas sobre as opções disponíveis ao adicionar componentes a uma visualização de dados, consulte [Componentes](/help/data-views/create-dataview.md#components) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md).
 
-1. Selecione a guia [!UICONTROL **Configurações**]. Aqui, você pode configurar filtros para aplicar a toda a sua visualização de dados e configurar o tempo limite da sessão e as métricas.
+1. Selecione a guia [!UICONTROL **Configurações**]. Aqui, você pode configurar filtros para aplicar a toda a visualização de dados e definir o tempo limite e as métricas da sessão.
 
-   Para obter informações detalhadas sobre as opções disponíveis ao definir configurações para uma visualização de dados, consulte [Configurações](/help/data-views/create-dataview.md#settings) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md).
+   Para obter informações detalhadas sobre as opções disponíveis ao definir configurações em uma visualização de dados, consulte [Configurações](/help/data-views/create-dataview.md#settings) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md).
 
-1. Selecione **[!UICONTROL Salvar]** para salvar a configuração da sua visualização de dados.
+1. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
-1. Após especificar todas as configurações desejadas, selecione **[!UICONTROL Salvar e concluir]**.
+1. Depois que todas as configurações desejadas forem especificadas, clique em **[!UICONTROL Salvar e concluir]**.
 
 {{upgrade-final-step}}

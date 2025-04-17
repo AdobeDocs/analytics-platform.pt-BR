@@ -1,6 +1,6 @@
 ---
 title: Entenda as opções de implementação do SDK da web ao atualizar para o Customer Journey Analytics
-description: Saiba mais sobre as opções de implementação do Web SDK ao atualizar para o Customer Journey Analytics
+description: Saiba mais sobre as opções de implementação do SDK da web ao atualizar para o Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -8,7 +8,7 @@ exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 38%
+ht-degree: 80%
 
 ---
 
@@ -61,14 +61,14 @@ ht-degree: 38%
 
 {{upgrade-note}}
 
-O processo recomendado para atualizar do Adobe Analytics para o Customer Journey Analytics é uma nova implementação do Experience Platform Web SDK, que é o método de coleta de dados preferido do Customer Journey Analytics.
+O processo recomendado de atualização do Adobe Analytics para o Customer Journey Analytics é uma nova implementação do SDK da web da Experience Platform, que é o método de coleta de dados preferido para o Customer Journey Analytics.
 
-Há três maneiras compatíveis de usar o Adobe Experience Platform Web SDK:
+Há três maneiras possíveis de usar o SDK da web da Adobe Experience Platform:
 
-* [Extensão de marca do Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/extension): a Adobe recomenda usar esse método. Instale um carregador de tags no site e use a interface da Coleção de dados da Adobe Experience Platform para configurar a implementação.
+* [Extensão de tag do SDK da web](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/install/extension): a Adobe recomenda usar este método. Instale um carregador de tags no site e use a IU de coleta de dados da Adobe Experience Platform para configurar a implementação.
 
-* [Biblioteca JavaScript do Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library): faça referência a um arquivo de biblioteca hospedado em CDN ou hospede o arquivo de biblioteca usando sua própria infraestrutura. Faça chamadas para a biblioteca dentro do código do site.
+* [Biblioteca de JavaScript do SDK da web](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/install/library): referencie um arquivo da biblioteca hospedado em uma CDN ou hospede o arquivo da biblioteca na sua própria infraestrutura. Faça chamadas para a biblioteca dentro do código do seu site.
 
-* [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm): instale o Web SDK no site usando o gerenciador de pacotes NPM.
+* [NPM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/install/npm): instale o SDK da web no site por meio do gerenciador de pacotes NPM.
 
-Para obter mais informações, consulte [visão geral da instalação do Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) no Guia do Experience Platform Web SDK.
+Para mais informações, consulte [Visão geral da instalação do SDK da web](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/install/overview) no Guia do SDK da web da Experience Platform.

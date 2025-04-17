@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 62%
+ht-degree: 79%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 62%
 
 [!UICONTROL Persistência] é a capacidade de um determinado valor de dimensão atribuir a uma métrica além do evento em que está definido. Ela usa uma combinação de alocação e expiração.
 
-![Janela de visualizações de dados destacando as opções de Persistência](../assets/persistence.png)
+![Janela de exibições de dados destacando as opções de Persistência](../assets/persistence.png)
 
 * **A Alocação** permite determinar qual valor manter quando mais de um item de dimensão puder persistir de cada vez em uma única coluna.
 
@@ -96,27 +96,27 @@ Detalhes sobre as configurações de expiração disponíveis.
 * **Janela de relatório de oportunidade** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao final da janela de relatório.
 * **Janela de Relatório do Grupo de Compras** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao final da janela de relatório.
 * **Hora personalizada**: expira após um período específico (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente. Ao usar a expiração com base em tempo, os valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
-* **Métrica**: quando essa métrica é vista em um evento, expire imediatamente o valor persistente na dimensão. Você pode usar qualquer métrica como o fim da expiração dessa dimensão. Essa opção de expiração só está disponível para as configurações de alocação Original e Mais recente.
+* **Métrica**: quando esta métrica é vista em um evento, expira imediatamente o valor persistente na dimensão. Você pode usar qualquer métrica como o fim da expiração dessa dimensão. Essa opção de expiração só está disponível para as configurações de alocação Original e Mais recente.
 
 
 ## [!UICONTROL Dimensão de ligação]
 
-Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de outra dimensão. As opções válidas incluem outras dimensões incluídas na visualização de dados.
+Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de outra dimensão. As opções válidas incluem outras dimensões incluídas na exibição de dados.
 
-Consulte [Uso de dimensões e métricas de ligação no Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) para obter exemplos sobre como usar efetivamente dimensões de ligação.
+Consulte [Uso de dimensões e métricas de vinculação no Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) para obter exemplos sobre como usar dimensões de vinculação de forma eficaz.
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões de ligação](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões de vinculação](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
 
 ## [!UICONTROL Métrica de ligação]
 
-Uma lista suspensa que permite escolher uma métrica que atue como um acionador de ligação. As opções válidas incluem métricas incluídas na visualização de dados.
+Uma lista suspensa que permite escolher uma métrica que atue como um acionador de ligação. As opções válidas incluem métricas da exibição de dados.
 
-Essa configuração só aparece quando a Dimensão de ligação está mais abaixo na matriz de objetos do que no componente. Quando a métrica de ligação está presente em um evento, os valores de dimensão são copiados da dimensão de nível de evento para o nível de esquema inferior da dimensão de ligação.
+Essa configuração só aparece quando a Dimensão de ligação está mais abaixo no array de objetos do que no componente. Quando a métrica de ligação está presente em um evento, os valores de dimensão são copiados da dimensão de nível de evento para o nível de esquema inferior da dimensão de ligação.
 
-Veja o segundo exemplo em [Uso de dimensões e métricas de ligação no Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) para obter mais informações sobre como usar métricas de ligação de maneira eficaz.
+Veja o segundo exemplo em [Uso de dimensões e métricas de vinculação no Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) para obter mais informações sobre como usar métricas de vinculação de forma eficaz.

@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 54%
+ht-degree: 96%
 
 ---
 
@@ -17,11 +17,11 @@ De modo geral, todas as configurações relacionadas à governança de dados no 
 
 ## Governança de dados
 
-A integração entre o Adobe Customer Journey Analytics e a [Governança de dados da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=pt-BR) permite rotular dados sigilosos do Customer Journey Analytics e aplicar políticas de privacidade.
+A integração entre o Adobe Customer Journey Analytics e a [governança de dados da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=pt-BR) permite rotular dados sigilosos do Customer Journey Analytics e aplicar políticas de privacidade.
 
-Os rótulos e políticas de privacidade que foram criados em conjuntos de dados consumidos pela Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do Customer Journey Analytics. Esses rótulos interrompem ou avisam os usuários que criam métricas e/ou dimensões a partir de campos sigilosos.
+Os rótulos e políticas de privacidade criados em conjuntos de dados consumidos pela Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do Customer Journey Analytics. Esses rótulos interrompem ou avisam os usuários que criam métricas e/ou dimensões a partir de campos sigilosos.
 
-Além disso, quando os dados são exportados do Customer Journey Analytics (por meio de relatórios, exportação, API etc.), avisos ou rótulos são adicionados para notificar os usuários que um relatório contém informações confidenciais que precisam ser tratadas de uma maneira específica.
+Além disso, quando dados são exportados do Customer Journey Analytics (por meio de relatórios, exportação, API etc.), avisos ou rótulos são adicionados para informar aos usuários que um relatório contém informações sigilosas que precisam ser tratadas de uma maneira específica.
 
 Essa integração permite gerenciar a conformidade com mais facilidade. Os administradores de dados da sua organização podem definir políticas de restrição de uso. Como resultado, os usuários do Customer Journey Analytics podem usar os dados com mais confiança, sabendo que estão em conformidade com as políticas definidas pelos administradores de dados.
 
@@ -29,7 +29,7 @@ Essa integração permite gerenciar a conformidade com mais facilidade. Os admin
 
 ## GDPR
 
-O Customer Journey Analytics não assinará diretamente o Serviço central do Regulamento Geral sobre a Proteção de Dados (GDPR) e herdará todas as alterações no conjunto de dados feitas na Experience Platform. O Customer Journey Analytics depende do Platform Data Lake para aplicar solicitações de exclusão do GDPR e notificar o Customer Journey Analytics quando as solicitações forem concluídas. Todas as alterações em lotes afetados no Customer Journey Analytics para conjuntos de dados de evento são sincronizadas com os dados da Platform. Os conjuntos de dados de perfil e pesquisa afetados pelas solicitações de exclusão do GDPR são assimilados novamente após cada solicitação de exclusão. As solicitações de exclusão normalmente são concluídas em até 7 dias de um evento de exclusão no Data Lake.
+O Customer Journey Analytics não assinará diretamente o Serviço central do Regulamento Geral sobre a Proteção de Dados (GDPR) e herdará todas as alterações no conjunto de dados feitas na Experience Platform. O Customer Journey Analytics depende do data lake da Platform para aplicar solicitações de exclusão do RGPD e notificar o Customer Journey Analytics quando as solicitações forem concluídas. Todas as alterações em lotes afetados no Customer Journey Analytics para conjuntos de dados de eventos são sincronizadas com os dados da Platform. Os conjuntos de dados de perfis e pesquisas afetados pelas solicitações de exclusão do RGPD são assimilados novamente após cada solicitação de exclusão. As solicitações de exclusão geralmente são concluídas em até sete dias após um evento de exclusão no data lake.
 
 ## CCPA
 
