@@ -4,10 +4,10 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '2320'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -73,7 +73,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    | --- | --- |
    | Na interface de **[!UICONTROL Públicos-alvo]** | Selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]** no menu principal do Customer Journey Analytics. A interface Públicos-alvo é exibida. Selecione **[!UICONTROL Criar público-alvo]** e o [!UICONTROL Construtor de público-alvo] será aberto. |
    | De uma visualização no Analysis Workspace | Muitas visualizações no Analysis Workspace permitem criar um público-alvo usando o menu de contexto. Por exemplo, você pode selecionar **[!UICONTROL Criar público-alvo]** no menu de contexto de um item em uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou em um nó na [Tela de jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>O uso desse método preenche o segmento previamente no Construtor de público-alvo com a dimensão ou o item de dimensão selecionado.</p><p>As visualizações a seguir permitem criar um público-alvo usando o menu do botão direito do mouse:</p><ul><li>[Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Observação:** públicos-alvo não podem incluir métricas calculadas. Se você tentar criar um público-alvo que contenha uma métrica calculada, ela não será incluída na definição do público-alvo.</p> |
-   | Na interface de criação/edição de segmentos | Marque a caixa que diz **[!UICONTROL Criar um público-alvo deste segmento]**. O uso desse método preenche o segmento previamente. Consulte [Criar filtros](/help/components/filters/create-filters.md) para obter mais informações. |
+   | Na interface de criação/edição de segmentos | Marque a caixa que diz **[!UICONTROL Criar um público-alvo deste segmento]**. O uso desse método preenche o segmento previamente. Consulte [Criar segmentos](/help/components/filters/create-filters.md) para obter mais informações. |
 
    {style="table-layout:auto"}
 

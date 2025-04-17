@@ -4,16 +4,16 @@ title: Monitorar a integridade do dicionário de dados
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
-source-git-commit: c343a729de4cb13473a7acc04e837b5e5f69809b
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 87%
+ht-degree: 78%
 
 ---
 
 # Monitorar a integridade do dicionário de dados
 
-Os administradores do Customer Journey Analytics são responsáveis pela manutenção de um dicionário de dados íntegro.
+Os administradores do Customer Journey Analytics são responsáveis por manter um dicionário de dados íntegro.
 
 ## Características de um dicionário de dados íntegro
 
@@ -49,6 +49,6 @@ Para identificar problemas de integridade no dicionário de dados:
 
    * [!UICONTROL **componentes sem dados conectados**]
 
-   Dependendo do que você selecionar, o filtro apropriado é aplicado no dicionário de dados e somente os componentes relevantes são mostrados.
+   Dependendo do que você selecionar, o segmento apropriado é aplicado ao Dicionário de dados e somente os componentes relevantes são mostrados.
 
 1. Edite qualquer um dos componentes para melhorar a integridade do dicionário de dados. Para obter informações sobre como editar um componente no dicionário de dados, consulte [Editar entradas de componente no dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md).

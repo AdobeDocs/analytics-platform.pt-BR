@@ -1,14 +1,14 @@
 ---
-description: Gerenciar o local de exportação da nuvem para onde os dados do Customer Journey Analytics podem ser enviados
+description: Gerenciar o local de exportação da nuvem para o qual os dados do Customer Journey Analytics podem ser enviados
 keywords: Analysis Workspace
 title: Gerenciar locais e contas de exportação da nuvem
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: 8fc8e3e4057663bd4bdf38e41bb3129df442f749
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 1%
+source-wordcount: '1371'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ Para obter informações sobre como criar um novo local, consulte [Configurar lo
 
 ## Filtrar e pesquisar locais
 
-Para encontrar as informações necessárias, você pode filtrar a lista de locais ou pesquisar um local.
+Para encontrar as informações necessárias, você pode filtrar na lista de locais ou pesquisar um local.
 
 ### Filtrar a lista de locais
 
@@ -36,7 +36,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de loca
 
    | Filtro | Descrição |
    |---------|----------|
-   | [!UICONTROL **Tipo de local**]<!--should this be changed to Account type?--> | O tipo de conta ao qual a localização está associada. Os seguintes tipos de conta podem estar disponíveis: <ul><li>[!UICONTROL **Zona de aterrissagem de dados da AEP**]</li><li>[!UICONTROL **Função ARN do Amazon S3**]</li><li>[!UICONTROL **SAS do Azure**]</li><li>[!UICONTROL **RBAC do Azure**]</li><li>[!UICONTROL **Plataforma de nuvem da Google**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
+   | [!UICONTROL **Tipo de local**]<!--should this be changed to Account type?--> | O tipo de conta ao qual a localização está associada. Os seguintes tipos de conta podem estar disponíveis: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul> |
    | [!UICONTROL **Conta**] | O nome da conta à qual a localização está associada. |
    | [!UICONTROL **Criado por**] | O endereço de email do usuário que criou a localização. |
 
@@ -154,7 +154,7 @@ Os administradores do sistema podem impedir que os usuários criem contas e loca
 
 ### Configurar se os usuários podem criar e editar contas
 
-Por padrão, todos os usuários na organização podem criar contas e editar contas que criam no ambiente Customer Journey Analytics, conforme descrito em [configurar contas de exportação na nuvem](/help/components/exports/cloud-export-accounts.md).
+Por padrão, todos os usuários na organização podem criar contas e editar contas que criam no ambiente do Customer Journey Analytics, conforme descrito em [configurar contas de exportação na nuvem](/help/components/exports/cloud-export-accounts.md).
 
 Você pode impedir que usuários criem contas. Quando você faz isso, os usuários ainda podem usar qualquer conta que já tenham criado, mas não podem mais editá-las. Você pode excluir as contas que os usuários criaram, conforme descrito em [Excluir uma conta](#delete-an-account).
 
@@ -221,15 +221,15 @@ Para limitar os tipos de conta disponíveis aos usuários ao criar e usar contas
 
    Os seguintes tipos de conta estão disponíveis para usuários por padrão. Desmarque qualquer um desses tipos de conta que você deseja impedir que os usuários usem.
 
-   * [!UICONTROL **Zona de aterrissagem de dados da AEP**]
+   * [!UICONTROL **AEP Data Landing Zone**]
 
-   * [!UICONTROL **Função ARN do Amazon S3**]
+   * [!UICONTROL **Amazon S3 Role ARN**]
 
-   * [!UICONTROL **Plataforma de nuvem da Google**]
+   * [!UICONTROL **Google Cloud Platform**]
 
-   * [!UICONTROL **SAS do Azure**]
+   * [!UICONTROL **Azure SAS**]
 
-   * [!UICONTROL **RBAC do Azure**]
+   * [!UICONTROL **Azure RBAC**]
 
    * [!UICONTROL **Snowflake**]
 
