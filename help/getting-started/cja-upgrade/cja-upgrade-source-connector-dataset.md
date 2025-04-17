@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 424485a3-a076-4656-83b6-733f16cc2326
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 36%
+source-wordcount: '887'
+ht-degree: 34%
 
 ---
 
@@ -51,7 +51,7 @@ Depois de [criar um conector de origem do Analytics para dados históricos](/hel
 
 Para adicionar o conjunto de dados criado automaticamente à mesma conexão criada para a implementação do Web SDK:
 
-1. No Customer Journey Analytics, selecione a guia **[!UICONTROL Conexões]**.
+1. No Customer Journey Analytics, selecione **[!UICONTROL Conexões]**, opcionalmente em **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 
 1. Selecione a conexão que você [criou para a implementação do Web SDK](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
 

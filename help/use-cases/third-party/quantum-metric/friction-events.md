@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 10a70743d292e50ca5aea3225897e7097fa4fc8a
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Confirme se os conjuntos de dados na sua conexão agora têm a ID de sessão de 
 Edite sua visualização de dados existente para adicionar a ID da sessão como uma dimensão disponível no Customer Journey Analytics.
 
 1. Faça logon em [experience.adobe.com](https://experience.adobe.com).
-1. Navegue até Customer Journey Analytics e selecione **[!UICONTROL Visualizações de dados]** no menu superior.
+1. Navegue até Customer Journey Analytics e selecione **[!UICONTROL Visualizações de dados]**, como opção a partir de **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 1. Selecione a visualização de dados existente desejada.
 1. Localize a lista de campos de evento de atrito Métrica quântica à esquerda e arraste-a para a área de métricas no centro.
 1. No painel direito, defina a configuração [Incluir/Excluir valores](/help/data-views/component-settings/include-exclude-values.md) para os eventos de atrito desejados. É possível adicionar vários eventos de atrito à mesma métrica para combiná-los. Você também pode arrastar outra cópia do campo de eventos de atrito para a área de métricas para rastrear outros eventos de atrito como uma métrica separada.

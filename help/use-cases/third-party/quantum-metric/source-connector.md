@@ -6,9 +6,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
-source-git-commit: d71f39d25c52b0389d0441f238cb5b1809986b2d
+exl-id: ea8795fe-f5aa-458f-9e01-53ff1ffe6372
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -34,7 +35,7 @@ Consulte [conectores de origem do Adobe Experience Platform](https://experiencel
 A criação de um conector de origem para dados de Métrica quântica cria automaticamente um conjunto de dados no Adobe Experience Platform. Adicione este conjunto de dados a uma [conexão](/help/connections/overview.md) nova ou existente no Customer Journey Analytics.
 
 1. Faça logon em [experience.adobe.com](https://experience.adobe.com).
-1. Navegue até Customer Journey Analytics e selecione **[!UICONTROL Conexões]** no menu superior.
+1. Navegue até Customer Journey Analytics e selecione **[!UICONTROL Conexões]**, como opção a partir de **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 1. Dê um nome à conexão e adicione o conjunto de dados Métrica quântica à conexão.
 1. Clique em **[!UICONTROL Salvar]**.
 
@@ -46,7 +47,7 @@ A criação de um conector de origem para dados de Métrica quântica cria autom
 Crie uma [visualização de dados](/help/data-views/data-views.md) para definir configurações de dimensão e métrica.
 
 1. Faça logon em [experience.adobe.com](https://experience.adobe.com).
-1. Navegue até Customer Journey Analytics e selecione **[!UICONTROL Visualizações de dados]** no menu superior.
+1. Navegue até Customer Journey Analytics e selecione **[!UICONTROL Visualizações de dados]**, como opção a partir de **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 1. Selecione a visualização de dados desejada ou crie uma visualização de dados.
 1. Localize as dimensões e métricas da Métrica quântica desejadas na lista de campos de esquema à direita e arraste-as para a área Dimensões e métricas no centro.
 1. Use o painel direito para configurar cada dimensão e métrica desejada.

@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 10%
+source-wordcount: '806'
+ht-degree: 9%
 
 ---
 
@@ -109,7 +109,7 @@ Repita esse processo para cada dimensão que contenha dados que você deseja cla
 
 Para adicionar o conjunto de dados de pesquisa à sua conexão no Customer Journey Analytics:
 
-1. No Customer Journey Analytics, selecione a guia **[!UICONTROL Conexões]**.
+1. No Customer Journey Analytics, selecione **[!UICONTROL Conexões]**, opcionalmente em **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 
 1. Selecione ![Mais ícone](assets/More.svg) ao lado da conexão à qual você deseja adicionar o conjunto de dados de pesquisa e selecione **[!UICONTROL Editar]**.
 

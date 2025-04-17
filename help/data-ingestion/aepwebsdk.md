@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0b595e9e-0dcf-4c70-ac6d-5a2322824328
 role: Admin
-source-git-commit: 9849d686e886426124842ce210b423ac6c74fb89
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '3543'
-ht-degree: 83%
+source-wordcount: '3551'
+ht-degree: 82%
 
 ---
 
@@ -109,7 +109,7 @@ Para configurar o esquema:
 
    ![Objeto de identificação](./assets/identification-field.png)
 
-   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a ID do Experience Cloud e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
+   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a Experience Cloud ID e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
 
    Selecione **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -157,7 +157,7 @@ Para capturar esses dados de perfil, você deve:
 
 - Adicionar um objeto de identificação com base no grupo de campos Profile Core v2.
 
-- Defina a ID do Experience Cloud como identificador principal e o email como identificador.
+- Defina a Experience Cloud ID como identificador principal e o email como identificador.
 
 - Ativar o esquema do perfil
 
@@ -260,7 +260,7 @@ Selecione a tag criada recentemente na lista de [!UICONTROL Propriedades da tag]
 
 #### **Extensões**
 
-Para garantir que você possa enviar dados para a Adobe Experience Platform (por meio de sua sequência de dados), adicione a extensão Adobe Platform Web SDK à sua tag.
+Para garantir que você possa enviar dados para a Adobe Experience Platform (por meio da sequência de dados), adicione a extensão Adobe Platform Web SDK à tag.
 
 Para criar e configurar a extensão do SDK da Web da Adobe Experience Platform:
 
@@ -424,7 +424,7 @@ Consulte [Regras de](https://experienceleague.adobe.com/docs/experience-platform
 
 ### Criar e publicar a tag
 
-Depois de definir elementos de dados e regras, você deve criar e publicar sua tag. Ao criar um build de biblioteca, você deve atribuí-lo a um ambiente. As extensões, regras e elementos de dados da build são compilados e colocados no ambiente atribuído. Cada ambiente fornece um código integrado exclusivo que permite integrar a build atribuída ao site.
+Depois de definir elementos de dados e regras, você deve criar e publicar sua tag. Ao criar um build de biblioteca, você deve atribuí-lo a um ambiente. As extensões, regras e elementos de dados da build são compilados e colocados no ambiente atribuído. Cada ambiente fornece um código incorporado exclusivo que permite integrar a build atribuída ao site.
 
 Para criar e publicar a tag:
 
@@ -493,7 +493,7 @@ Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao
 
 Para criar sua conexão:
 
-1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Conexões]** na navegação superior.
+1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Conexões]**, opcionalmente em **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 
 2. Selecione **[!UICONTROL Criar nova conexão]**.
 
@@ -539,7 +539,7 @@ Uma visualização de dados é um container específico do Customer Journey Anal
 
 Para criar a visualização de dados:
 
-1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Visualizações de dados]** na navegação superior.
+1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Visualizações de dados]**, opcionalmente em **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 
 2. Selecione **[!UICONTROL Criar nova visualização de dados]**.
 
@@ -576,7 +576,7 @@ O Analysis Workspace é uma ferramenta de navegador flexível que permite criar 
 
 Para criar o projeto:
 
-1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Projetos]** na navegação superior.
+1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Projetos]** no menu superior.
 
 2. Selecione **[!UICONTROL Projetos]** no painel de navegação esquerdo.
 
@@ -600,4 +600,4 @@ Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) par
 
 >[!SUCCESS]
 >
->Você concluiu todas as etapas. Começando por definir quais dados você deseja coletar (esquema) e onde armazená-los (conjunto de dados) no Adobe Experience Platform. Em seguida, você configurou um fluxo de dados no Edge Network para garantir que os dados possam ser encaminhados para esse conjunto de dados. Em seguida, você definiu e implantou a tag contendo as extensões (SDK da Web da Adobe Experience Platform, Serviço da Experience Cloud ID), os elementos de dados e as regras para capturar dados do seu site e enviar esses dados para o armazenamento de dados. Você definiu uma conexão no Customer Journey Analytics para usar os dados de rastreamento do site e outros dados. A definição da visualização de dados permite especificar qual dimensão e métricas usar e, por fim, criar seu primeiro projeto visualizando e analisando seus dados.
+>Você concluiu todas as etapas. Começando por definir quais dados você deseja coletar (esquema) e onde armazená-los (conjunto de dados) no Adobe Experience Platform. Em seguida, você configurou um fluxo de dados na Edge Network para garantir que os dados possam ser encaminhados para esse conjunto de dados. Em seguida, você definiu e implantou a tag contendo as extensões (SDK da Web da Adobe Experience Platform, Serviço da Experience Cloud ID), os elementos de dados e as regras para capturar dados do seu site e enviar esses dados para o armazenamento de dados. Você definiu uma conexão no Customer Journey Analytics para usar os dados de rastreamento do site e outros dados. A definição da visualização de dados permite especificar qual dimensão e métricas usar e, por fim, criar seu primeiro projeto visualizando e analisando seus dados.

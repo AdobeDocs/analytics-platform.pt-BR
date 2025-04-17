@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: 35298dd6d18ebb07d104a608aeff06cb864ee1dc
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '5188'
+source-wordcount: '5200'
 ht-degree: 8%
 
 ---
@@ -387,7 +387,7 @@ Para usar seus dados de exemplo no Customer Journey Analytics, você cria uma co
 
 
 1. Selecione **[!UICONTROL Customer Journey Analytics]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
-1. Selecione **[!UICONTROL Conexões]** no menu superior.
+1. Selecione **[!UICONTROL Conexões]**, opcionalmente de **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 1. Selecione **[!UICONTROL Criar nova conexão]**.
 1. Em **[!UICONTROL Conexões]** > **[!UICONTROL Conexão sem título]**:
    1. Insira um **[!UICONTROL Nome da conexão]**, por exemplo `Example Connection Using Summary Data`.
@@ -428,7 +428,7 @@ Os dados dos conjuntos de dados são adicionados ao Customer Journey Analytics, 
 Após algum tempo, verifique se os dados dos conjuntos de dados foram carregados corretamente na Customer Journey Analytics.
 
 1. Selecione **[!UICONTROL Customer Journey Analytics]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
-1. Selecione **[!UICONTROL Conexões]** no menu superior.
+1. Selecione **[!UICONTROL Conexões]**, opcionalmente de **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 1. Selecione sua conexão, por exemplo **[!UICONTROL Exemplo de Conexão Usando Dados de Resumo]**.
 1. Selecione um intervalo de datas apropriado nos detalhes de **[!UICONTROL Conexão]** > **[!UICONTROL Exemplo de Conexão Usando dados de Resumo]**.
    1. Selecione ![Calendário](/help/assets/icons/Calendar.svg) e **[!UICONTROL Últimos 7 dias]**.
@@ -443,7 +443,7 @@ Na lista de **[!UICONTROL Conjuntos de dados]**, os valores na coluna **[!UICONT
 Para garantir que você possa relatar os dados corretos no Workspace, é necessário criar uma visualização de dados contendo as métricas e dimensões relevantes.
 
 1. Selecione **[!UICONTROL Customer Journey Analytics]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
-1. Selecione **[!UICONTROL Visualizações de dados]** no menu superior.
+1. Selecione **[!UICONTROL Visualizações de dados]**, opcionalmente em **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 1. Selecione **[!UICONTROL Criar nova visualização de dados]**.
 1. Em **[!UICONTROL Visualizações de dados]**, passe pelas telas do assistente para configurar sua visualização de dados.
    1. Na etapa **[!UICONTROL Configurar]** de **[!UICONTROL Visualizações de dados]**:

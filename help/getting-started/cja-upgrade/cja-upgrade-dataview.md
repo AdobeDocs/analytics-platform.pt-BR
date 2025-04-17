@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 45%
+source-wordcount: '401'
+ht-degree: 41%
 
 ---
 
@@ -31,7 +31,7 @@ A criação de uma visualização de dados envolve criar métricas e dimensões 
 
 Para criar uma visualização de dados:
 
-1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e acesse a guia **[!UICONTROL Visualizações de dados]**.
+1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e selecione **[!UICONTROL Visualizações de dados]**, como opção a partir de **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 
 1. Selecione **[!UICONTROL Criar nova visualização de dados]**. Como alternativa, selecione uma visualização de dados existente na lista de visualizações de dados para editá-la.
 

@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '2120'
-ht-degree: 89%
+source-wordcount: '2125'
+ht-degree: 88%
 
 ---
 
@@ -26,7 +26,7 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou ed
 
 Criar ou editar uma visualização de dados:
 
-1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e acesse a guia **[!UICONTROL Visualizações de dados]**.
+1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e selecione **[!UICONTROL Visualizações de dados]**, como opção a partir de **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 1. Para criar uma visualização de dados, selecione **[!UICONTROL Criar nova visualização de dados]**. Como alternativa, selecione uma visualização de dados existente na lista de visualizações de dados para editá-la.
 
 

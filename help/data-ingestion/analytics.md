@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
 workflow-type: tm+mt
-source-wordcount: '1173'
-ht-degree: 80%
+source-wordcount: '1181'
+ht-degree: 77%
 
 ---
 
@@ -54,7 +54,7 @@ Para criar um conector de origem do Adobe Analytics:
 
 3. Selecione **[!UICONTROL Configurar]** ou **[!UICONTROL Adicionar dados]** no bloco Adobe Analytics.
 
-   ![Janela do Adobe Experience Platform com Fontes selecionadas junto com aplicativos Adobe e Adicionar dados realçados.](./assets/sources-overview.png)
+   ![Janela do Adobe Experience Platform com Fontes selecionadas junto com os aplicativos da Adobe e Adicionar dados realçados.](./assets/sources-overview.png)
 
 4. Selecione **[!UICONTROL Conjunto de relatórios]**. Na lista de conjuntos de relatórios, selecione aquele que deseja usar.
 
@@ -83,7 +83,7 @@ Depois que a conexão é criada, o fluxo de dados é criado automaticamente para
 
 Quando a assimilação inicial for concluída, os dados do conjunto de relatórios do Adobe Analytics estarão prontos para serem usados pelo Customer Journey Analytics.
 
-Consulte [Criar uma conexão de origem do Adobe Analytics na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) para obter um tutorial muito mais abrangente.
+Consulte [Criar uma conexão de origem do Adobe Analytics na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) para obter um tutorial muito mais abrangente.
 
 
 ## Configurar uma conexão
@@ -94,7 +94,7 @@ Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao
 
 Para criar sua conexão:
 
-1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Conexões]** na navegação superior.
+1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Conexões]**, opcionalmente em **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 
 2. Selecione **[!UICONTROL Criar nova conexão]**.
 
@@ -140,7 +140,7 @@ Uma visualização de dados é um container específico do Customer Journey Anal
 
 Para criar a visualização de dados:
 
-1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Visualizações de dados]** na navegação superior.
+1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Visualizações de dados]**, opcionalmente em **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 
 2. Selecione **[!UICONTROL Criar nova visualização de dados]**.
 
@@ -177,7 +177,7 @@ O Analysis Workspace é uma ferramenta de navegador flexível que permite criar 
 
 Para criar o projeto:
 
-1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Projetos]** na navegação superior.
+1. Na interface do usuário do Customer Journey Analytics, selecione **[!UICONTROL Projetos]** no menu superior.
 
 2. Selecione **[!UICONTROL Projetos]** no painel de navegação esquerdo.
 
