@@ -1,24 +1,24 @@
 ---
-description: O construtor de filtros fornece uma tela para arrastar e soltar dimensões de métricas, filtros e eventos para filtrar pessoas com base na lógica, nas regras e nos operadores da hierarquia do container. Essa ferramenta de desenvolvimento integrada permite construir e salvar filtros simples ou complexos que identificam os atributos e ações das pessoas nas visitas e eventos.
-title: Criar filtros
+description: O Construtor de segmentos fornece uma tela para arrastar e soltar Dimensões de métricas, Segmentos e Eventos para segmentar pessoas com base na lógica, nas regras e nos operadores da hierarquia do contêiner. Essa ferramenta de desenvolvimento integrada permite criar e salvar segmentos simples ou complexos que identificam atributos e ações de pessoas em visitas e eventos.
+title: Construir segmentos
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 91%
+source-wordcount: '1571'
+ht-degree: 46%
 
 ---
 
-# Criar filtros {#build-filters}
+# Construir segmentos {#build-segments}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_createaudience"
 >title="Criar público-alvo"
->abstract="Os públicos-alvo podem ser criados a partir de um filtro e compartilhados com a Adobe Experience Platform para ativação."
+>abstract="Os públicos-alvo podem ser criados a partir de um segmento e compartilhados com a Adobe Experience Platform para ativação."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -27,23 +27,23 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Visualização de dados"
->abstract="Compara os dados desse filtro com os da visualização de dados. A porcentagem de visualização é baseada no número total na visualização de dados dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda pode estar preenchendo os dados."
+>abstract="Compara os dados desse segmento com os dados da visualização de dados. A porcentagem de visualização é baseada no número total na visualização de dados dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda pode estar preenchendo os dados."
 
 <!-- markdownlint-enable MD034 -->
 
 
 
-A caixa de diálogo **[!UICONTROL Criador de filtros]** é usada para criar novos filtros ou editar filtros existentes. A caixa de diálogo é denominada **[!UICONTROL Novo filtro]** ou **[!UICONTROL Editar filtro]** para filtros criados ou gerenciados por meio do gerenciador de [[!UICONTROL filtros]](/help/components/filters/manage-filters.md).
+A caixa de diálogo **[!UICONTROL Construtor de segmentos]** é usada para criar segmentos novos ou editar segmentos existentes. A caixa de diálogo é denominada **[!UICONTROL Novo segmento]** ou **[!UICONTROL Editar segmento]** para segmentos que você cria ou gerencia no gerenciador de [[!UICONTROL Segmento]](/help/components/filters/manage-filters.md).
 
 >[!BEGINTABS]
 
->[!TAB Construtor de filtros]
+>[!TAB Construtor de segmentos]
 
-![Janela de detalhes dos filtros, mostrando os campos e opções descritos na próxima seção.](assets/filter-builder.png)
+![Janela de detalhes do segmento mostrando campos e opções descritos na próxima seção.](assets/filter-builder.png)
 
->[!TAB Criar ou editar filtro]
+>[!TAB Criar ou editar segmento]
 
-![Janela de detalhes dos filtros, mostrando os campos e opções descritos na próxima seção.](assets/create-edit-filter.png)
+![Janela de detalhes do segmento mostrando campos e opções descritos na próxima seção.](assets/create-edit-filter.png)
 
 >[!ENDTABS]
 
@@ -51,27 +51,27 @@ A caixa de diálogo **[!UICONTROL Criador de filtros]** é usada para criar novo
 
    | Elemento | Descrição |
    | --- | --- |
-   | **[!UICONTROL Visualização de dados]** | É possível selecionar a visualização de dados para o filtro. O filtro definido está disponível como um filtro na guia [Configurações](/help/data-views/create-dataview.md#settings-filters) de uma visualização de dados. |
-   | **[!UICONTROL Filtro somente do projeto]** | Uma caixa de informações para explicar que o filtro só fica visível no projeto no qual foi criado e que o filtro não será adicionado à lista de componentes. Habilite **[!UICONTROL Disponibilizar este filtro para todos os projetos e adicioná-lo à lista de componentes]** para alterar esta configuração. Esta caixa de informações só fica visível quando você cria um [filtro rápido](quick-filters.md) e transforma as informações do filtro rápido em um filtro regular, usando a opção **[!UICONTROL Abrir construtor]** na interface [!UICONTROL Filtro rápido]. |
-   | **[!UICONTROL Título]** ![Obrigatório](/help/assets/icons/Required.svg) | Nomeie o filtro, por exemplo, como `Last month mobile customers`. |
-   | **[!UICONTROL Descrição]** | Forneça uma descrição para o filtro, como, por exemplo, `Filter to define the mobile customers for the last month`. |
-   | **[!UICONTROL Tags]** | Organize o filtro, criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
-   | **[!UICONTROL Definição]** ![obrigatória](/help/assets/icons/Required.svg) | Defina o filtro, usando o [Criador de definições](#definition-builder). |
+   | **[!UICONTROL Visualização de dados]** | É possível selecionar a visualização de dados para o segmento.  O segmento que você define está disponível como um segmento na guia [Configurações](/help/data-views/create-dataview.md#settings-filters) de uma visualização de dados. |
+   | **[!UICONTROL Segmento somente de projeto]** | Uma caixa de informações para explicar que o segmento só é visível no projeto em que foi criado e que o segmento não será adicionado à lista de componentes. Habilitar **[!UICONTROL Disponibilize este segmento para todos os projetos e adicione-o à lista de componentes]** para alterar essa configuração. Esta caixa de informações só é visível quando você cria um [segmento rápido](quick-filters.md) e transforma as informações de segmento rápido em um segmento regular usando o **[!UICONTROL Abrir construtor]** na interface do [!UICONTROL Segmento rápido]. |
+   | **[!UICONTROL Título]** ![Obrigatório](/help/assets/icons/Required.svg) | Nomeie o segmento, por exemplo, `Last month mobile customers`. |
+   | **[!UICONTROL Descrição]** | Forneça uma descrição para o segmento, por exemplo, `Filter to define the mobile customers for the last month`. |
+   | **[!UICONTROL Tags]** | Organize o segmento criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
+   | **[!UICONTROL Definição]** ![obrigatória](/help/assets/icons/Required.svg) | Defina seu segmento usando o [Criador de definições](#definition-builder). |
 
    {style="table-layout:auto"}
 
-1. Para verificar se a definição do filtro está correta, use a visualização constantemente atualizada dos resultados do filtro na parte superior direita.
-1. Para criar um público-alvo a partir do filtro e compartilhá-lo com a Experience Platform, selecione **[!UICONTROL Criar público-alvo a partir do filtro]**. Consulte [Criar e publicar públicos-alvo](/help/components/audiences/publish.md) para mais informações.
+1. Para verificar se a definição do segmento está correta, use a visualização constantemente atualizada dos resultados do segmento na parte superior direita.
+1. Para criar um público-alvo do segmento e compartilhá-lo com a Experience Platform, selecione **[!UICONTROL Criar público-alvo do segmento]**. Consulte [Criar e publicar públicos-alvo](/help/components/audiences/publish.md) para mais informações.
 1. Selecione:
-   * Clique em **[!UICONTROL Salvar]** para salvar o filtro.
-   * Clique em **[!UICONTROL Salvar como]** para salvar uma cópia do filtro.
-   * Clique em **[!UICONTROL Excluir]** para excluir o filtro.
-   * Clique em **[!UICONTROL Cancelar]** para cancelar quaisquer alterações feitas em um filtro ou a criação de um novo filtro.
+   * **[!UICONTROL Salvar]** para salvar o segmento.
+   * **[!UICONTROL Salvar como]** para salvar uma cópia do segmento.
+   * **[!UICONTROL Excluir]** para excluir o segmento.
+   * **[!UICONTROL Cancelar]** para cancelar as alterações feitas no segmento ou a criação de um novo segmento.
 
 
 ## Construtor de definições
 
-Use o criador de definições para criar a definição do filtro. Nessa construção, você usa componentes, containers, operadores e lógica.
+Use o Criador de definições para criar a definição de segmento. Nessa construção, você usa componentes, containers, operadores e lógica.
 
 Você pode configurar o tipo e o escopo da sua definição:
 
@@ -82,13 +82,13 @@ Você pode configurar o tipo e o escopo da sua definição:
 
 ### Componentes
 
-Uma parte essencial da construção da definição do filtro é usar dimensões, métricas, filtros existentes e intervalos de datas. Todos esses componentes estão disponíveis no painel de componentes do construtor de filtros.
+Uma parte essencial da construção da definição de segmento é o uso de dimensões, métricas, segmentos existentes e intervalos de datas. Todos esses componentes estão disponíveis no painel de componentes do construtor de filtros.
 
 ![Iniciar a criação de uma definição](assets/start-building-filter.gif){width=100%}
 
 Para adicionar um componente:
 
-1. Arraste e solte um componente do painel de componentes em **[!UICONTROL Arraste e solte métricas, filtros e/ou dimensões aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
+1. Arraste e solte um componente do painel componentes em **[!UICONTROL Arraste e solte Métricas, Segmentos e/ou Dimensões aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
 1. Especifique os detalhes do componente. Por exemplo, selecione um valor em **[!UICONTROL Selecionar valor]**. Ou insira um valor. Como você pode especificar um ou mais valores, bem como quais podem ser selecionados, depende do componente e do operador.
 1. Opcionalmente, modifique o operador padrão. Por exemplo, de **[!UICONTROL é igual a]** para **[!UICONTROL é igual a qualquer um entre]**. Consulte [Operadores](operators.md) para obter uma visão geral detalhada dos operadores disponíveis.
 
@@ -104,7 +104,7 @@ Para excluir um componente:
 
 ### Containers
 
-É possível agrupar vários componentes em um ou mais containers, e definir a lógica dentro e entre containers. Os containers permitem criar definições complexas para o filtro.
+É possível agrupar vários componentes em um ou mais containers, e definir a lógica dentro e entre containers. Os containers permitem criar definições complexas para o segmento.
 
 ![Adicionar um contêiner](assets/add-container.gif){Width=100%}
 
@@ -112,7 +112,7 @@ Para excluir um componente:
 * Para adicionar um componente existente ao container, arraste e solte o componente no container.
 * Para adicionar outro componente ao container, arraste e solte um componente do painel de componentes no container. Use a linha de inserção azul como guia.
 * Para adicionar outro componente fora do container, arraste e solte um componente do painel de componentes fora do container, mas dentro do container da definição principal. Use a linha de inserção azul como guia.
-* Para modificar a lógica entre componentes em um container, entre containers ou entre um container e um componente, selecione a opção  apropriada entre **[!UICONTROL E]**, **[!UICONTROL Ou]** e **[!UICONTROL Então]**. Ao selecionar “Então”, você transforma o filtro em um filtro sequencial. Consulte [Criar um filtro sequencial](seg-sequential-build.md) para mais informações.
+* Para modificar a lógica entre componentes em um container, entre containers ou entre um container e um componente, selecione a opção  apropriada entre **[!UICONTROL E]**, **[!UICONTROL Ou]** e **[!UICONTROL Então]**. Ao selecionar Then, você transforma o segmento em um segmento sequencial. Consulte [Criar segmento sequencial](seg-sequential-build.md) para obter mais informações.
 * Para alternar o nível de contêiner, selecione ![Globo](/help/assets/icons/Globe.svg) **[!UICONTROL Conta Global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Conta](/help/assets/icons/Account.svg) **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Oportunidade](/help/assets/icons/Opportunity.svg) **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Grupo de Compras](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL Grupo de Compras]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Página da Web](/help/assets/icons/WebPage.svg) **[!UICONTROL Evento]**, ![Visita](/help/assets/icons/Visit.svg) **[!UICONTROL Sessão]** ou ![Usuário](/help/assets/icons/User.svg) **[!UICONTROL Pessoa]**.
 
 Você pode usar a ![Configuração](/help/assets/icons/Setting.svg) de um container para realizar as seguintes ações:
@@ -120,15 +120,15 @@ Você pode usar a ![Configuração](/help/assets/icons/Setting.svg) de um contai
 | Ação do container | Descrição |
 |---|---|
 | **[!UICONTROL Adicionar container]** | Adicione um container aninhado ao container. |
-| **[!UICONTROL Excluir]** | Exclua o resultado do container na definição do filtro. Uma barra vermelha fina à esquerda identifica um container de exclusão. |
-| **[!UICONTROL Incluir]** | Inclua o resultado do container na definição do filtro. O padrão é incluir. Uma barra cinza fina à esquerda identifica um container de inclusão. |
+| **[!UICONTROL Excluir]** | Excluir o resultado do contêiner na definição do segmento. Uma barra vermelha fina à esquerda identifica um container de exclusão. |
+| **[!UICONTROL Incluir]** | Inclua o resultado do contêiner na definição do segmento. O padrão é incluir. Uma barra cinza fina à esquerda identifica um container de inclusão. |
 | **[!UICONTROL Container de nome]** | Renomeie o container a partir de sua descrição padrão. Digite um nome no campo de texto. Se você não digitar nada, a descrição padrão será usada. |
 | **[!UICONTROL Excluir container]** | Exclua o contêiner da definição. |
 
 
 ## Intervalos de datas
 
-Você pode criar filtros que contêm intervalos de datas contínuos. Assim, é possível responder a perguntas sobre campanhas ou eventos em andamento. Por exemplo, é possível criar um filtro que inclua *todos os que fizeram uma compra online nos últimos 60 dias*.
+Você pode criar segmentos que contêm intervalos de datas flexíveis. Dessa forma, você pode responder perguntas sobre campanhas ou eventos em andamento. Por exemplo, você pode criar um segmento que inclua *todos que realizaram uma compra online nos últimos 60 dias*.
 
 ![Filtrar com um intervalo de datas contínuo](assets/filter-rolling-date-range.gif)
 
@@ -140,17 +140,17 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intervalos 
 >[!ENDSHADEBOX]
 
 
-## Empilhar filtros {#stack}
+## Empilhar segmentos {#stack}
 
-É possível criar um filtro com base em outros filtros. Ao usar filtros em um filtro, é possível otimizar o filtro e reduzir a complexidade.
+Você pode criar um segmento usando segmentos. Ao usar segmentos em um segmento, você pode otimizá-lo e reduzir a complexidade.
 
-Digamos que você queira filtrar a combinação entre tipo de dispositivo (2) e estados dos EUA (50). Você pode criar 100 filtros, cada um para a combinação exclusiva entre tipo de dispositivo (celular ou tablet) e estado dos EUA. Para obter os usuários de tablets da Califórnia, você usaria um dos 100 filtros:
+Imagine que você deseja segmentar na combinação de dispositivos do tipo (2) e estados dos EUA (50). Você poderia criar 100 segmentos, cada um para a combinação exclusiva de tipo de dispositivo (celular versus tablet) e estado dos EUA. Para obter os usuários do tablet na Califórnia, você usaria um dos 100 segmentos:
 
-![Filtro simples para Califórnia e tablet](assets/filter-ca-tablet-single.png)
+![Segmento simples para Califórnia e tablet](assets/filter-ca-tablet-single.png)
 
-Ou você pode definir 52 filtros: 50 filtros para os estados dos EUA, um para celular e um para tablet. Em seguida, você empilharia os filtros para obter os mesmos resultados. Para obter os usuários de tablets da Califórnia, você empilharia dois filtros:
+Ou você poderia definir 52 segmentos: 50 segmentos para os estados dos EUA, um para celular e um para tablet. E, em seguida, empilhe os segmentos para obter os mesmos resultados. Para obter os usuários do tablet da Califórnia, você empilharia dois segmentos:
 
-![Filtro empilhado para Califórnia e tablet](assets/filter-ca-tablet-stacked.png)
+![Segmento empilhado para CA e tablet](assets/filter-ca-tablet-stacked.png)
 
 
 ## Atribuição {#attribution}
@@ -184,7 +184,7 @@ Ou você pode definir 52 filtros: 50 filtros para os estados dos EUA, um para ce
 
 
 
-Ao usar uma dimensão no construtor de filtros, há opções para especificar o modelo de atribuição dessa dimensão. O modelo de atribuição selecionado determina se os dados se qualificam para a condição especificada para o componente de dimensão.
+Ao usar uma dimensão no Construtor de segmentos, você tem as opções para especificar o modelo de atribuição dessa dimensão. O modelo de atribuição selecionado determina se os dados se qualificam para a condição especificada para o componente de dimensão.
 
 Selecione ![Configuração](/help/assets/icons/Setting.svg) dentro do componente de dimensão e escolha um dos modelos de atribuição na janela pop-up:
 
@@ -195,11 +195,11 @@ Selecione ![Configuração](/help/assets/icons/Setting.svg) dentro do componente
 | **[!UICONTROL Instância não repetida]** | Inclua os valores de instância exclusiva (não repetida) da dimensão para determinar a qualificação. |
 
 
-![Modelo de atribuição na dimensão ao criar um filtro](assets/filter-dimension-attribution.png)
+![Modelo de atribuição na dimensão ao criar um segmento](assets/filter-dimension-attribution.png)
 
 ### Exemplo
 
-Como parte da definição de um filtro, você especificou a seguinte condição: “nome da página igual a mulheres”. Semelhante ao exemplo acima. Repita essa definição de filtro, usando os dois outros modelos de atribuição. Assim, você terá três filtros, cada um com seu próprio modelo de atribuição:
+Como parte de uma definição de segmento, você especificou a seguinte condição: Nome da página é igual a Mulheres. Semelhante ao exemplo acima. Repita essa definição de segmento usando os dois outros modelos de atribuição. Portanto, você tem três segmentos, cada um com seu próprio modelo de atribuição:
 
 * Página - Atribuição - Repetição (padrão) de mulheres
 * Página - Atribuição - Instância de mulheres
@@ -215,6 +215,6 @@ A tabela abaixo explica, para cada modelo de atribuição, quais eventos de entr
 | Instância | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) |
 | Instância não repetida | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![Remover](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Remover](/help/assets/icons/Remove.svg) |
 
-Um exemplo de relatório sobre eventos que usa os três filtros ficaria assim:
+Um exemplo de relatório sobre eventos que usam os três segmentos é semelhante a:
 
-![Filtrar resultados do modelo de atribuição](assets/filter-dimension-attribution-results.png)
+![Resultados do modelo de atribuição de segmento](assets/filter-dimension-attribution-results.png)
