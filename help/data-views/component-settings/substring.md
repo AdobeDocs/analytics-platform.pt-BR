@@ -1,18 +1,18 @@
 ---
-title: Configurações do componente Substring
+title: Configurações do componente de substring
 description: Use um subconjunto de uma string como itens de dimensão.
 solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
 source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Configurações do componente Substring {#substring-component-settings}
+# Configurações do componente de substring {#substring-component-settings}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -32,12 +32,12 @@ As configurações do componente [!UICONTROL Substring] permitem executar métod
 
 ## Da esquerda/direita
 
-Pegue uma parte de uma string com base em sua posição no início ou no fim de uma string. Os métodos **[!UICONTROL Da Esquerda]** e **[!UICONTROL Da Direita]** fornecem duas listas suspensas: **[!UICONTROL De]** (em que a saída começa) e **[!UICONTROL Para]** (em que a saída termina).
+Pegue uma parte de uma string com base em sua posição no início ou no fim de uma string. Os métodos **[!UICONTROL Da esquerda]** e **[!UICONTROL Da direita]** oferecem duas listas suspensas: **[!UICONTROL De]** (onde a saída começa) e **[!UICONTROL Para]** (onde a saída termina).
 
 * **[!UICONTROL Início da string]**: o início da string.
 * **[!UICONTROL Fim da string]**: o fim da string.
 * **[!UICONTROL Posição]**: um número estático de caracteres da esquerda ou direita, dependendo do método.
-* **[!UICONTROL String]**: corresponder a um caractere ou sequência de caracteres para indicar o início ou o fim de uma string. Essa lista suspensa também revela opções adicionais:
+* **[!UICONTROL String]**: corresponder a um caractere ou sequência de caracteres para indicar o início ou o fim de uma string. Esta lista suspensa também revela opções adicionais:
    * **[!UICONTROL Corresponder]**: a string que será correspondida. Se a entrada não tiver correspondência com esse campo, [Nenhuma opção de valor](no-value-options.md) será aplicada.
    * **[!UICONTROL Índice]**: o critério **[!UICONTROL Corresponder]** pode ser apresentado várias vezes em uma string. Esse número inteiro determina qual correspondência deve iniciar ou finalizar a saída, dependendo do método. Por exemplo, um índice de `1` representa a primeira correspondência. Se o índice for superior ao número de correspondências disponíveis, [Nenhuma opção de valor](no-value-options.md) será aplicada.
    * **[!UICONTROL Incluir string]**: uma caixa de seleção que inclui a string **[!UICONTROL Corresponder]** na saída, se ativada.
@@ -66,7 +66,7 @@ Para uso com campos que contêm URLs. Usando o URL de exemplo `https://example.c
 
 Se a entrada não for um URL válido ou se o componente de URL desejado não estiver presente, [Nenhuma opção de valor](no-value-options.md) será aplicada.
 
-## Aparar
+## Cortar
 
 Cortar espaço em branco ou caracteres especiais da string.
 
@@ -81,7 +81,7 @@ Aplique expressões regulares a uma dimensão para recuperar o valor desejado.
 * **[!UICONTROL Formato de saída]**: um campo opcional que permite adicionar texto ou reordenar a saída do subgrupo regex. Se esse campo estiver em branco, a saída da string será a expressão regex avaliada.
 * **[!UICONTROL Diferenciação de maiúsculas e minúsculas]**: uma caixa de seleção que força a expressão regular a diferenciar maiúsculas de minúsculas, se estiver ativada.
 
-O Customer Journey Analytics usa um subconjunto da sintaxe de regex Perl. Se a entrada não corresponder à expressão regular e a variável **[!UICONTROL Formato de saída]** estiver em branco, [Nenhuma opção de valor](no-value-options.md) será aplicada. As seguintes expressões são suportadas:
+O CJA usa um subconjunto da sintaxe de regex Perl. Se a entrada não corresponder à expressão regular e a variável **[!UICONTROL Formato de saída]** estiver em branco, [Nenhuma opção de valor](no-value-options.md) será aplicada. As seguintes expressões são suportadas:
 
 | Expressão | Descrição |
 | --- | --- |
@@ -121,7 +121,7 @@ Espaços reservados de saída também são permitidos. É possível usar essas s
 | --- | --- |
 | `$&` | Gera o que correspondeu à expressão inteira. |
 | `$n` | Gera o que correspondeu à subexpressão nth. Por exemplo, o `$1` gera a primeira subexpressão. |
-| ``$` `` | Gera o texto entre o fim da última correspondência encontrada (ou o início do texto se nenhuma correspondência anterior foi encontrada) e o início da correspondência atual. |
+| ``$` `` | Gera o texto entre o fim da última correspondência encontrada (ou o início do texto, se nenhuma correspondência anterior tiver sido encontrada) e o início da correspondência atual. |
 | `$+` | Gera o que correspondeu à última subexpressão marcada na expressão regular. |
 | `$$` | Gera o caractere de string `"$"`. |
 

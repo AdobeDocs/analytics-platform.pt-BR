@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
 role: User
 source-git-commit: 373d0c9989fb692da23efe371c65344093801140
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '110'
-ht-degree: 17%
+ht-degree: 100%
 
 ---
 
@@ -19,21 +19,21 @@ Ajustar a densidade da exibição permite ver mais dados na tela, ao reduzir o p
 
 >[!TAB Compacto]
 
-Esta é a versão com a exibição mais condensada.
+Compacto: esta é a versão com a visualização mais condensada.
 
-![As densidades de exibição compactas.](assets/view-density-compact.png)
+![As densidades de visualização compactas.](assets/view-density-compact.png)
 
 >[!TAB Confortável]
 
-Esta é a exibição com a qual você está familiarizado no Workspace.
+Esta é a visualização com a qual você lida no Workspace.
 
-![As densidades de exibição expandidas.](assets/view-density-comfortable.png)
+![As densidades da visualização expandidas.](assets/view-density-comfortable.png)
 
 >[!TAB Expandido]
 
-Esta é a exibição com a qual você está familiarizado no Workspace.
+Esta é a visualização com a qual você lida no Workspace.
 
-![As densidades de exibição expandidas.](assets/view-density-expanded.png)
+![As densidades da visualização expandidas.](assets/view-density-expanded.png)
 
 >[!ENDTABS]
 
@@ -42,4 +42,4 @@ Para definir a densidade da exibição:
 
 1. No Workspace, navegue até **[!UICONTROL Projetos]** > **[!UICONTROL Informações e configurações do projeto]**.
 
-1. Selecione uma opção **[!UICONTROL Exibir densidade]** e selecione **[!UICONTROL Salvar]**.
+1. Selecione uma opção em **[!UICONTROL Exibir densidade]** e clique em **[!UICONTROL Salvar]**.

@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
 source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '204'
-ht-degree: 25%
+ht-degree: 100%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 25%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta as visualizações de Área e Área empilhada em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Área e área empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/area) para a_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** versão deste artigo._
+_Este artigo documenta as visualizações de área e área empilhada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Área e área empilhada](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/area) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
 
-A visualização de área tem uma opção padrão e empilhada.
+A visualização de área tem uma opção padrão e uma opção empilhada.
 
 ## Área {#area}
 
@@ -37,9 +37,9 @@ A visualização de área tem uma opção padrão e empilhada.
 
 
 
-A visualização de ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Area]** é como um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Adicione um gráfico de área quando tiver várias métricas e quiser visualizar a área expressa pela interseção de duas ou mais métricas.
+A visualização de ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL Área]** é como um gráfico de linhas, mas apresenta uma área colorida abaixo da linha. Adicione um gráfico de área quando tiver diversas métricas e quiser visualizar a área expressa pela interseção de duas ou mais métricas.
 
-![Visualização de área mostrando várias métricas](assets/area.png)
+![Visualização de área, mostrando várias métricas](assets/area.png)
 
 ## Área empilhada {#area-stacked}
 
@@ -53,13 +53,13 @@ A visualização de ![GraphArea](/help/assets/icons/GraphArea.svg) **[!UICONTROL
 <!-- markdownlint-enable MD034 -->
 
 
-A visualização ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Area stacked]** é como uma Área, mas cada série começa no topo da série anterior.
+A visualização de ![GraphAreaStacked](/help/assets/icons/GraphAreaStacked.svg) **[!UICONTROL Área empilhada]** é como um gráfico de área, mas cada série começa acima da série anterior.
 
-![Área empilhada mostrando cada série no topo da série anterior.](assets/area-stacked.png)
+![Área empilhada, mostrando cada série acima da série anterior.](assets/area-stacked.png)
 
-Use a opção **[!UICONTROL 100% empilhado]** em ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]** para transformar o gráfico em uma visualização 100% empilhada.
+Use a opção **[!UICONTROL 100% empilhada]** em ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]** para transformar o gráfico em uma visualização 100% empilhada.
 
-![Área empilhada mostrando uma visualização 100% empilhada.](assets/area-stacked100.png)
+![Área empilhada, mostrando uma visualização 100% empilhada.](assets/area-stacked100.png)
 
 >[!MORELIKETHIS]
 >

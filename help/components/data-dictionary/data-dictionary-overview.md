@@ -5,9 +5,9 @@ feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Os administradores do Analytics são responsáveis por preparar informações so
 
 >[!BEGINSHADEBOX]
 
-Consulte o ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dicionário de dados do Analytics Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dicionário de dados do Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -66,9 +66,9 @@ Veja a seguir algumas das maneiras como os administradores do Analytics podem us
 
 * Identificar componentes que ainda não foram aprovados.
 
-* Atualizar as descrições dos componentes diretamente no Analysis Workspace. Quaisquer atualizações feitas nas descrições do componente no Dicionário de dados são refletidas na visualização de dados.
+* Atualizar as descrições dos componentes diretamente no Analysis Workspace. Todas as atualizações feitas nas descrições de componentes do dicionário de dados são refletidas na visualização de dados.
 
-  Da mesma forma, todas as atualizações feitas nas descrições do componente na visualização de dados são refletidas no Analysis Workspace.
+  Da mesma forma, todas as atualizações feitas nas descrições de componentes da visualização de dados são refletidas no Analysis Workspace.
 
   Para obter mais informações sobre como adicionar descrições de componentes no Analysis Workspace ou em uma visualização de dados, consulte [Adicionar descrições de componentes](/help/components/add-component-descriptions.md).
 
@@ -76,22 +76,22 @@ Veja a seguir algumas das maneiras como os administradores do Analytics podem us
 
 Você pode acessar o dicionário de dados de qualquer uma das seguintes maneiras no Analysis Workspace:
 
-![Ícone do Dicionário de Dados no painel esquerdo](assets/data-dictionary-access.png)
+![Ícone do dicionário de dados no painel esquerdo](assets/data-dictionary-access.png)
 
-* Do ![Indicador](/help/assets/icons/Bookmark.svg) no painel de botões.
+* Do ![marcador](/help/assets/icons/Bookmark.svg) no painel de botões.
 
 
 
-* Do ![Indicador](/help/assets/icons/Bookmark.svg) dentro do popover de informações de um componente.
+* Do ![marcador](/help/assets/icons/Bookmark.svg) dentro do popover de informações de um componente.
 
 
 Para obter informações detalhadas sobre as várias opções disponíveis no Dicionário de dados, consulte [Exibir informações de componente no Dicionário de dados](/help/components/data-dictionary/view-data-dictionary.md).
 
 ## Atualizar e preparar o Dicionário de dados
 
-Os administradores do Customer Journey Analytics são responsáveis por manter um Dicionário de Dados íntegro para sua organização, conforme descrito em [Monitorar integridade do dicionário de dados](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Os admins do Customer Journey Analytics são responsáveis por manter um dicionário de dados íntegro para sua organização, conforme descrito em [Monitorar a integridade do dicionário de dados](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
-Como parte desse processo, os administradores de Customer Journey Analytics podem editar informações sobre cada componente no dicionário de dados, conforme descrito em [Editar entradas de componentes no Dicionário de Dados](/help/components/data-dictionary/edit-entries-data-dictionary.md).
+Como parte desse processo, admins do Customer Journey Analytics podem editar informações sobre cada componente no dicionário de dados, conforme descrito em [Editar entradas de componentes no dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
 ## Mover, minimizar ou fechar o dicionário de dados
 

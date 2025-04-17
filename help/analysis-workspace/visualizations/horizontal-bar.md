@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
 source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 31%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a barra horizontal e as visualizações empilhadas de barra horizontal em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a_ versão ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta as visualizações de barra horizontal e barra horizontal empilhada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
-A visualização de barra horizontal tem uma opção padrão e empilhada.
+A visualização da barra horizontal tem uma opção padrão e empilhada.
 
 ## Barra horizontal {#horizontal-bar}
 
@@ -33,9 +33,9 @@ A visualização de barra horizontal tem uma opção padrão e empilhada.
 <!-- markdownlint-enable MD034 -->
 
 
-A visualização da ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Barra horizontal]** mostra barras horizontais que representam vários valores de uma ou mais métricas.
+A visualização ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Barra horizontal]** mostra barras horizontais que representam vários valores em uma ou mais métricas.
 
-![Barra horizontal que mostra métricas como Exibições de página, Velocidade da página, Visitas, Entradas e Saídas.](assets/horizontal-bar.png)
+![Barra horizontal mostrando métricas incluindo exibições de página, velocidade de página, visitas, entradas e saídas.](assets/horizontal-bar.png)
 
 ## Barra horizontal empilhada {#horizontal-bar-stacked}
 
@@ -49,13 +49,13 @@ A visualização da ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.
 <!-- markdownlint-enable MD034 -->
 
 
-A visualização ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) **[!UICONTROL Barra horizontal empilhada]** é como a [!UICONTROL Barra horizontal], mas as barras de série aparecem empilhadas.
+A visualização ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) **[!UICONTROL Barra horizontal empilhada]** é como a [!UICONTROL Barra horizontal], mas as barras da série aparecem empilhadas.
 
-![Uma barra horizontal empilhada que mostra Exibições de Página, Visitas, Entradas e Saídas.](assets/horizontal-bar-stacked.png)
+![Uma barra horizontal empilhada mostrando exibições de página, visitas, entradas e saídas.](assets/horizontal-bar-stacked.png)
 
-Use a opção **[!UICONTROL 100% empilhado]** em ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]** para transformar o gráfico em uma visualização 100% empilhada.
+Use a opção **[!UICONTROL 100% empilhado]** em ![Configurações](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]** para transformar o gráfico em uma visualização 100% empilhada.
 
-![Barra horizontal 100% empilhada](assets/horizontal-bar-stacked100.png)
+![Barra horizontal empilhada 100%](assets/horizontal-bar-stacked100.png)
 
 
 >[!MORELIKETHIS]

@@ -5,17 +5,17 @@ feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 21%
+ht-degree: 100%
 
 ---
 
 # Visão geral dos intervalos de data
 
-Em um projeto do Workspace, você geralmente usa o [calendário em um painel](/help/analysis-workspace/c-panels/panels.md#calendar) para especificar o intervalo de datas das visualizações nesse painel.
+Em um projeto do Workspace, você geralmente usa o [calendário de um painel](/help/analysis-workspace/c-panels/panels.md#calendar) para especificar o intervalo de datas das visualizações desse painel.
 
-Os componentes de Intervalo de datas permitem definir e substituir as configurações do calendário do painel.
+Os componentes de intervalo de datas permitem definir e substituir as configurações do calendário do painel.
 
 <!-- Very old video, should we show it?
 
@@ -34,10 +34,10 @@ Você pode usar um componente de intervalo de datas para redefinir o calendário
 
 Ou você pode usar um intervalo de datas em uma tabela de forma livre como uma métrica ou dimensão.
 
-![Uso do intervalo de datas](/help/components/date-ranges/assets/date-ranges-usage.png)
+![Uso de intervalos de datas](/help/components/date-ranges/assets/date-ranges-usage.png)
 
-- **Métrica**. Por exemplo, para comparar uma dimensão para dois meses diferentes para uma métrica específica.
-- **Dimension**. Para comparar uma métrica em diferentes itens de dimensão para a dimensão de intervalo de datas.
+- **Métrica**. Por exemplo, para comparar uma dimensão entre dois meses diferentes em relação a uma métrica específica.
+- **Dimensão**. Para comparar uma métrica entre diferentes itens de dimensão em relação à dimensão de intervalo de datas.
 
 >[!NOTE]
 >
@@ -46,19 +46,19 @@ Ou você pode usar um intervalo de datas em uma tabela de forma livre como uma m
 
 Você usa um intervalo de datas da mesma forma que [usaria qualquer componente](/help/components/overview.md#analysis-workspace-components). Você arrasta o intervalo de datas do painel do componente ![Calendário](/help/assets/icons/Calendar.svg) **[!UICONTROL Intervalos de datas]** e solta o componente em:
 
-- **[!UICONTROL Calendário]**: Você ![Alternar](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** a configuração de calendário atual pelo intervalo de datas.
-- **Cabeçalho da coluna de métrica**: Você ![Alternar](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** a métrica, ![Adicionar](/help/assets/icons/Add.svg)**[!UICONTROL Adicionar ]**o intervalo de datas como uma métrica ou ![Filtrar](/help/assets/icons/Filter.svg)**[!UICONTROL  Filtrar ]**a métrica usando o componente de intervalo de datas.
-- **Cabeçalho da coluna Dimension**: Você ![Alternar](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** as dimensões atuais. A nova dimensão agora é **[!UICONTROL Intervalos de datas]**. Quando a dimensão for Intervalos de datas, você poderá ![Adicionar](/help/assets/icons/Add.svg)**[!UICONTROL Adicionar ]**intervalos de datas adicionais como itens de dimensão.
-- **Item de Dimension**: Você ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** o item de dimensão específico pelo intervalo de datas.
+- **[!UICONTROL Calendário]**: você pode ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** a configuração do calendário atual pelo intervalo de datas.
+- **Cabeçalho da coluna de métrica**: você pode ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** a métrica, ![Add](/help/assets/icons/Add.svg)**[!UICONTROL Adicionar ]**o intervalo de datas como uma métrica ou ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL  Filtrar ]**a métrica, usando o componente de intervalo de datas.
+- **Cabeçalho da coluna de dimensão**: você pode ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** as dimensões atuais. A nova dimensão agora é **[!UICONTROL Intervalos de datas]**. Quando a dimensão é “Intervalos de datas”, você pode ![Add](/help/assets/icons/Add.svg)**[!UICONTROL Adicionar ]**outros intervalos de datas como itens de dimensão.
+- **Item de dimensão**: você pode fazer o ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** do item de dimensão específico segundo o intervalo de datas.
 
-Você também pode adicionar uma coluna de intervalo de datas diretamente em uma visualização de tabela de forma livre:
+Você também pode adicionar uma coluna de intervalo de datas diretamente a uma visualização de tabela de forma livre:
 
 1. Em uma coluna de métrica, selecione no menu de contexto:
 
    - **[!UICONTROL Adicionar coluna de período]**. Você pode selecionar entre as opções sugeridas com base no calendário atual ou criar um [intervalo de datas personalizado](#custom-date-ranges).
    - **[!UICONTROL Comparar períodos]**. Você pode selecionar entre uma opção sugerida com base no calendário atual ou criar um [intervalo de datas personalizado](#custom-date-ranges).
 
-1. Com base na sua seleção, colunas adicionais de intervalo de datas são adicionadas à tabela de Forma livre.
+1. Com base na sua seleção, colunas adicionais de intervalo de datas serão adicionadas à tabela de forma livre.
 
 ## Intervalos de datas padrão
 
@@ -85,6 +85,6 @@ O Analysis Workspace fornece vários intervalos de datas padrão.
 
 ## Intervalos de datas personalizados
 
-Você pode criar seus próprios intervalos de datas personalizados. Consulte [Criar intervalo de datas](/help/components/date-ranges/create.md) para obter as várias opções disponíveis para criar intervalos de datas. Em seguida, você cria, modifica e salva intervalos de datas no [Criador de intervalo de datas](create.md#date-range-builder).
+É possível criar os seus próprios intervalos de datas personalizados. Consulte [Criar intervalo de datas](/help/components/date-ranges/create.md) para ver as várias opções disponíveis para criar intervalos de datas. Em seguida, é possível compilar, modificar e salvar intervalos de datas no [Construtor de intervalos de datas](create.md#date-range-builder).
 
-Você usa o [Gerenciador de intervalo de datas](manage.md) para gerenciar intervalos de datas.
+Use o [Gerenciador de intervalos de datas](manage.md) para gerenciar os intervalos de datas.

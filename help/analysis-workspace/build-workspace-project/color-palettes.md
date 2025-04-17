@@ -5,9 +5,9 @@ feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
 source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 35%
 <!-- markdownlint-enable MD034 -->
 
 
-É possível alterar a paleta de cores da visualização usada no Workspace. Você pode selecionar uma paleta de cores predefinida ou especificar sua própria paleta que corresponda às cores da marca da sua empresa. Esse recurso afeta a maioria das visualizações no Espaço de trabalho, mas **não** afeta o Resumo de alterações, a formatação condicional nas tabelas de Forma livre, nem a visualização de Mapa.
+É possível alterar a paleta de cores da visualização usada no Workspace. Você pode selecionar uma paleta de cores predefinida ou especificar uma própria que corresponda às cores da identidade visual da sua empresa. Esse recurso afeta a maioria das visualizações no Espaço de trabalho, mas **não** afeta o Resumo de alterações, a formatação condicional nas tabelas de Forma livre, nem a visualização de Mapa.
 
 >[!NOTE]
 >
@@ -33,12 +33,12 @@ ht-degree: 35%
 
 Lembre-se:
 
-* Há seis paletas de cores predefinidas para escolher. A paleta padrão e a segunda listada foram otimizadas para o contraste e são mais acessíveis para usuários daltônicos.
-* As outras paletas foram otimizadas para harmonia de cores.
+* Há seis paletas de cores predefinidas para escolher. A paleta padrão e a segunda listada foram otimizadas para obter o melhor contraste e são mais acessíveis para daltônicos.
+* As outras paletas foram otimizadas para aprimorar a harmonia de cores.
 
 ## Para alterar a paleta de cores:
 
 1. Navegue até **[!UICONTROL Workspace]** > **[!UICONTROL Projeto]** > **[!UICONTROL Informações e configurações do projeto]**.
 1. Na lista suspensa **[!UICONTROL Paleta de cores do projeto]**, você pode escolher um dos esquemas de cores predefinidos.
 1. Para especificar sua própria paleta, selecione **[!UICONTROL Paleta personalizada]** abaixo das opções predefinidas.
-1. Especifique até 16 valores hexadecimais delimitados por vírgulas (por exemplo, `#00a4e4`) para criar sua própria paleta de cores. Se você especificar, por exemplo, apenas quatro valores, as cores serão repetidas automaticamente em visualizações que contêm mais cores.
+1. Especifique até 16 valores hexadecimais delimitados por vírgulas (por exemplo, `#00a4e4`) para criar sua própria paleta de cores. Caso especifique, por exemplo, apenas quatro valores, as cores serão repetidas automaticamente em visualizações que contêm mais cores.
