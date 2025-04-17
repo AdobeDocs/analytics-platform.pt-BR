@@ -1,27 +1,27 @@
 ---
-description: É possível marcar filtros para organizá-los.
-title: Marcar filtros
+description: Você pode adicionar tags a segmentos para organizá-los.
+title: Marcar segmentos
 feature: Filters
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 66ec61ea64f1265d887d4941a22e1f9757120daa
 workflow-type: tm+mt
 source-wordcount: '193'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# Marcar filtros
+# Marcar segmentos
 
-No [Gerenciador de filtros](manage-filters.md), você pode usar marcas para organizar filtros. Os administradores podem marcar todos os filtros. Os não administradores podem marcar somente os filtros que criam ou que foram compartilhados com eles.
+No [Gerenciador de segmentos](manage-filters.md), você pode usar marcas para organizar segmentos. Os administradores podem marcar todos os segmentos. Os não administradores podem marcar somente os segmentos que criam ou que foram compartilhados com eles.
 
-Para marcar um ou mais filtros:
+Para marcar um ou mais segmentos:
 
-1. No [Gerenciador de filtros](manage-filters.md), selecione um ou mais filtros que deseja marcar.
+1. No [Gerenciador de segmentos](manage-filters.md), selecione um ou mais segmentos que deseja marcar.
 1. Na barra de ações, selecione ![Rótulos](/help/assets/icons/Labels.svg) **[!UICONTROL Marca]**.
-1. Na caixa de diálogo **[!UICONTROL Filtros de Marca]**:
+1. Na caixa de diálogo **[!UICONTROL Segmentos de Marca]**:
 
-   ![Caixa de diálogo Filtros de Marca](assets/tag-filter-dialog.png)
+   ![Caixa de diálogo Segmentos de Marca](assets/tag-filter-dialog.png)
 
    1. (opcionalmente) use a ![Pesquisa](/help/assets/icons/Search.svg) para pesquisar e limitar a lista de marcas.
 
@@ -30,9 +30,9 @@ Para marcar um ou mais filtros:
       * selecione uma ou mais tags existentes na lista, ou
       * digite uma nova marca e pressione **[!UICONTROL ENTER]**. Repita para adicionar mais de uma nova tag.
 
-1. Selecione **[!UICONTROL Salvar]** para salvar as marcas do filtro. Selecione **[!UICONTROL Cancelar]** para cancelar.
+1. Selecione **[!UICONTROL Salvar]** para salvar as marcas do segmento. Selecione **[!UICONTROL Cancelar]** para cancelar.
 
-Depois de salvas, as marcas são listadas no campo [!UICONTROL Marca] para os filtros selecionados no [Construtor de filtros](filter-builder.md).
+Depois de salvas, as marcas são listadas no campo [!UICONTROL Marca] para os segmentos selecionados no [Construtor de segmentos](filter-builder.md).
 
 
 ## Sugestões

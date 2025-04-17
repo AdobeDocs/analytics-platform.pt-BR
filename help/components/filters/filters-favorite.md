@@ -1,22 +1,22 @@
 ---
-description: Outra maneira de organizá-los para facilitar o uso é marcar os filtros como favoritos.
-title: Marcar filtros como favoritos
+description: Outra maneira de organizá-los para facilitar o uso é marcar os segmentos como favoritos.
+title: Marcar segmentos como favoritos
 feature: Filters
 exl-id: b13457dd-06e5-4316-af7e-edcf4ee46408
 role: User
-source-git-commit: 8f3b30ca6d20d633669d7e9180884c24e0b9a52e
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 18%
 
 ---
 
-# Marcar filtros como favoritos
+# Marcar segmentos como favoritos
 
-Você pode marcar um filtro como favorito. Marcar filtros como favoritos ajuda a organizar seus filtros. Todos os usuários podem favorecer filtros.
+Você pode marcar um segmento como favorito. Marcar segmentos como favoritos ajuda a organizar seus segmentos. Todos os usuários podem favorecer segmentos.
 
-Para favorecer ou desfavorecer um filtro, no [Gerenciador de filtros](/help/components/filters/manage-filters.md):
+Para favorecer ou desfavorecer um segmento, no [Gerenciador de segmentos](/help/components/filters/manage-filters.md):
 
-* Selecione ![StarOutline](/help/assets/icons/StarOutline.svg) a favor ou ![Star](/help/assets/icons/Star.svg) para desfavorecer um filtro.
+* Selecione ![EstrelaEstrutura](/help/assets/icons/StarOutline.svg) para favorecer ou selecione ![Estrela](/help/assets/icons/Star.svg) para desfavorecer um segmento.
 
-Você pode classificar sua lista de filtros por favoritos. Selecione **[!UICONTROL Outros filtros]** no painel ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]** e selecione **[!UICONTROL Favoritos]**. Consulte [Filtrar a lista de filtros](/help/components/filters/filters-filter.md) para obter mais informações.
+Você pode classificar sua lista de segmentos por favoritos. Selecione **[!UICONTROL Outros segmentos]** no painel ![Segmento](/help/assets/icons/Filter.svg) **[!UICONTROL Segmento]** e selecione **[!UICONTROL Favoritos]**. Consulte [Segmentar a lista de segmentos](/help/components/filters/filters-filter.md) para obter mais informações.

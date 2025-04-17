@@ -1,20 +1,20 @@
 ---
-title: Visão geral dos filtros
-description: Entenda para que os filtros são usados e como criar um filtro simples.
+title: Visão geral da segmentação
+description: Entenda para que os segmentos são usados e como criar um segmento simples.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 392ba2b9cfe090901c3dac12459f9bd8d51fdca7
+source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 8%
+source-wordcount: '1428'
+ht-degree: 7%
 
 ---
 
 
-# Visão geral dos filtros
+# Visão geral da segmentação
 
-O Customer Journey Analytics permite criar, gerenciar, compartilhar e aplicar filtros de público-alvo avançados e concentrados nos seus relatórios. Os filtros permitem identificar subconjuntos de pessoas, sessões ou eventos com base em características ou interações. Os filtros são projetados como insights codificados de público-alvo que você pode criar de acordo com suas necessidades específicas e, em seguida, verificar, editar e compartilhar com outros membros da equipe.
+O Customer Journey Analytics permite criar, gerenciar, compartilhar e aplicar segmentos avançados de público-alvo em seus relatórios. Os filtros permitem identificar subconjuntos de pessoas, sessões ou eventos com base em características ou interações. Os filtros são projetados como insights codificados de público-alvo que você pode criar de acordo com suas necessidades específicas e, em seguida, verificar, editar e compartilhar com outros membros da equipe.
 
 Os filtros podem ser baseados em:
 
@@ -24,60 +24,60 @@ Os filtros podem ser baseados em:
 - variáveis personalizadas (campo de formulário, categorias definidas, ID do cliente),
 - e outros critérios.
 
-Consulte [Criar filtros](/help/components/filters/create-filters.md) para obter as várias opções disponíveis para criar filtros. Em seguida, você compila, modifica e salva a definição de um filtro no [Construtor de filtros](filter-builder.md). Como alternativa, crie filtros rápidos usando o [Construtor de filtros rápidos](quick-filters.md). E você também pode gerar filtros de visualizações no Workspace, por exemplo, usando a visualização [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu).
+Consulte [Criar segmentos](/help/components/filters/create-filters.md) para obter as várias opções disponíveis para criar segmentos. Em seguida, você compila, modifica e salva a definição de um segmento no [Construtor de segmentos](filter-builder.md). Como alternativa, você pode criar segmentos rápidos usando o [Construtor de segmentos rápido](quick-filters.md). E você também pode gerar segmentos a partir de visualizações no Workspace, por exemplo, usando a visualização [Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md#context-menu).
 
-Você usa o [Gerenciador de filtros](manage-filters.md) para gerenciar filtros.
+Você usa o [Gerenciador de segmentos](manage-filters.md) para gerenciar segmentos.
 
-## Planejar filtros
+## Planejar segmentos
 
-Especialmente, como administrador, o planejamento adequado de filtros melhora as chances de que os filtros sejam usados. Considere o seguinte ao planejar filtros:
+Especialmente, como administrador, o planejamento adequado de segmentos melhora a probabilidade de eles serem usados. Considere o seguinte ao planejar segmentos:
 
-- **Público-alvo**: quem usará seus filtros? Forneça uma boa descrição do filtro para que o público-alvo entenda:
-   - Para que este filtro serve?
+- **Público-alvo**: quem usará seus segmentos? Forneça uma boa descrição do segmento para que o público-alvo entenda:
+   - Para o que este segmento serve?
 
-   - Quando devo usar este filtro?
+   - Quando devo usar este segmento?
 
-- **Escopo**: qual [Contêiner de filtro](#filter-containers) melhor representa os dados após os quais você está procurando? Use o menor contêiner possível.
+- **Escopo**: qual [Contêiner de segmento](#filter-containers) melhor representa os dados após os quais você está atrás? Use o menor contêiner possível.
 
-- **Componentes**: decida quais componentes devem ser incluídos na definição do filtro e com base em quais valores as condições devem ser validadas.
+- **Componentes**: decida quais componentes incluir na definição de segmento e em relação a quais valores as condições devem ser validadas.
 
-- **Processo**: considere um processo de aprovação para seu filtro. Não há fluxo de trabalho de aprovação no Customer Journey Analytics, mas ainda é possível organizar um processo para determinar se você aprova ou não um filtro.
+- **Processo**: considere um processo de aprovação para seus segmentos. Não há fluxo de trabalho de aprovação no Customer Journey Analytics, mas ainda é possível organizar um processo para determinar se você aprova ou não um segmento.
 
-- **Modularidade**: defina filtros tendo em mente a modularidade. Portanto, os usuários dos filtros podem facilmente [empilhar filtros](filter-builder.md#stack-filters) para criar novos filtros avançados.
+- **Modularidade**: defina segmentos tendo em mente a modularidade. Os usuários dos seus segmentos devem poder [empilhar segmentos](filter-builder.md#stack-filters) facilmente para criar novos segmentos avançados.
 
 
-## Tipos de filtro
+## Tipos de segmento
 
-Você pode criar três tipos de filtros:
+Você pode criar três tipos de segmentos:
 
-### Filtros rápidos
+### Segmentos rápidos
 
-Filtros rápidos permitem explorar dados facilmente em um determinado projeto do Workspace, sem a necessidade de criar um filtro no [Construtor de filtros](/help/components/filters/create-filters.md). O filtro é definido diretamente na interface do Workspace. Consulte [Filtros rápidos](quick-filters.md) para obter mais informações.
+Segmentos rápidos permitem explorar dados facilmente em um determinado projeto do Workspace, sem a necessidade de criar um segmento no [Construtor de segmentos](/help/components/filters/create-filters.md). O segmento é definido diretamente na interface do Workspace. Consulte [Segmentos rápidos](quick-filters.md) para obter mais informações.
 
-### Filtros regulares
+### Segmentos regulares
 
-Filtros regulares permitem identificar dados (pessoas, sessões, eventos) com base em uma ou mais condições. Se houver mais de uma condição, você usará operadores lógicos como And e Or para definir o filtro ainda mais. Você pode usar contêineres para agrupar condições e construir filtros mais complexos. Consulte [Construtor de filtros](filter-builder.md) para obter mais informações.
+Os segmentos regulares permitem identificar dados (pessoas, sessões, eventos) com base em uma ou mais condições. Se você tiver mais de uma condição, usará operadores lógicos como E e Ou para definir o segmento ainda mais. Você pode usar contêineres para agrupar condições e construir segmentos mais complexos. Consulte [Construtor de segmentos](filter-builder.md) para obter mais informações.
 
-### Filtros sequenciais
+### Segmentos sequenciais
 
 >[!IMPORTANT]
 >
->Você deve ter o pacote **Select** para criar filtros sequenciais entre canais. Entre em contato com o administrador se não tiver certeza do pacote do Customer Journey Analytics que possui.
+>Você deve ter o pacote **Select** para criar segmentos sequenciais entre canais. Entre em contato com sua administração se não tiver certeza de qual pacote do Customer Journey Analytics você possui.
 
-Os filtros sequenciais permitem identificar dados (pessoas, sessões, eventos) com base na navegação (exibições de página no site, interações com cenas no aplicativo móvel ou uso de um menu em um decodificador de sinais). Os filtros sequenciais ajudam você a identificar, por exemplo, o que uma pessoa gosta e o que ela evita. Use o operador lógico Then para definir um filtro sequencial. Consulte [Filtros sequenciais](seg-sequential-build.md) para obter mais informações.
+Os segmentos sequenciais permitem identificar dados (pessoas, sessões, eventos) com base na navegação (exibições de página em seu site, interações com cenas no aplicativo móvel ou usando um menu em um decodificador de sinais). Os segmentos sequenciais ajudam você a identificar, por exemplo, o que uma pessoa gosta e o que ela evita. Use o operador lógico Then para definir um segmento sequencial. Consulte [Segmentos sequenciais](seg-sequential-build.md) para obter mais informações.
 
 
 <!--
-An example of a complex sequential filter if you want to find the persons that 
+An example of a complex sequential segment if you want to find the persons that 
 
 | Session One | Session Two | Session Three |
 | --- | --- | --- |
 | The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product on page G. |
 -->
 
-## Filtrar contêineres {#containers}
+## Containers de segmento {#containers}
 
-Os filtros são baseados em uma hierarquia de nível de Pessoa, Sessão e Evento usando um modelo de container aninhado. Os containers aninhados permitem definir condições entre e dentro dos containers.
+Os segmentos são baseados em uma hierarquia de nível de Pessoa, Sessão e Evento usando um modelo de container aninhado. Os containers aninhados permitem definir condições entre e dentro dos containers.
 
 
 <table style="table-layout: fixed; border: none;" width="100%">
@@ -107,13 +107,13 @@ Os filtros são baseados em uma hierarquia de nível de Pessoa, Sessão e Evento
 > - O contêiner **Evento** é conhecido na Adobe Analytics como o contêiner **Ocorrência**.
 >
 
-Um filtro define as condições para filtrar pessoas, sessões ou eventos com base nas condições. Por exemplo, condições para filtrar pessoas com base nas características da pessoa e nas características de navegação. Para detalhar ainda mais os dados, você pode filtrar por sessões específicas, eventos de exibição de página, toques em tela, opções de menu em um decodificador de sinais e muito mais. Mas também filtre os atributos que você assimilou de um CRM ou sistema de fidelidade. O [Construtor de filtros](/help/components/filters/filter-builder.md) fornece uma interface simples para construir esses subconjuntos e aplicar condições em contêineres Pessoa, Sessão ou Evento aninhados e hierárquicos.
+Um segmento define condições para segmentar pessoas, sessões ou eventos com base em condições. Por exemplo, as condições para segmentar pessoas se baseiam nas características da pessoa e nas características de navegação. Para detalhar ainda mais os dados, você pode segmentar em sessões específicas, eventos de exibição de página, toques em tela, opções de menu em um decodificador de sinais e muito mais. Você também pode segmentar em atributos que assimilou de um CRM ou sistema de fidelidade. O [Construtor de segmentos](/help/components/filters/filter-builder.md) fornece uma interface simples para construir esses subconjuntos e aplicar condições em contêineres Pessoa, Sessão ou Evento aninhados e hierárquicos.
 
-A arquitetura de contêiner empregada no [Construtor de filtros](/help/components/filters/filter-builder.md) define Pessoa como o contêiner mais externo. O container contém dados abrangentes específicos para a pessoa em sessões e eventos, como exibições de página, telas de aplicativos móveis ou telas de menu em um decodificador de sinais. Um container Sessão aninhado permite definir regras para detalhar os dados da pessoa com base em sessões. Um container de Evento aninhado permite detalhar as informações pessoais com base em interações individuais. Cada contêiner permite que você informe o histórico de uma pessoa, as interações detalhadas por sessões ou detalhar por eventos individuais.
+A arquitetura de contêiner empregada no [Construtor de segmentos](/help/components/filters/filter-builder.md) define Pessoa como o contêiner mais externo. Esse container contém dados abrangentes específicos para a pessoa em sessões e eventos, como exibições de página, telas de aplicativos móveis ou telas de menu em um decodificador de sinais. Um container Sessão aninhado permite definir regras para detalhar os dados da pessoa com base em sessões. Um container de Evento aninhado permite detalhar as informações pessoais com base em interações individuais. Cada contêiner permite que você informe o histórico de uma pessoa, as interações detalhadas por sessões ou detalhar por eventos individuais.
 
 ### Contêiner pessoa
 
-O container Pessoa inclui todas as sessões e eventos para as pessoas que se qualificam para a condição especificada no container. Ao definir um filtro com uma condição simples como `Page Name equals Checkout`, o contêiner Pessoa resolve:
+O container Pessoa inclui todas as sessões e eventos para as pessoas que se qualificam para a condição especificada no container. Ao definir um segmento com uma condição simples como `Page Name equals Checkout`, o contêiner Pessoa resolve:
 
 - Todas as pessoas que visitaram a página com o nome `Checkout`.
 - Todas as sessões para essas pessoas.
@@ -128,7 +128,7 @@ Os contêineres Pessoa podem incluir valores com base no histórico geral de uma
 
 ### Contêiner sessão
 
-O contêiner Sessão permite identificar as interações de página ou as interações, campanhas ou conversões do aplicativo móvel de uma sessão específica. O contêiner Sessão é o mais usado porque capta comportamentos para a sessão inteira depois que a regra é atendida. O container Sessão também permite definir quais sessões você deseja incluir ou excluir na criação e aplicação de um filtro.  Ao definir um filtro com uma condição simples como `Page Name equals Checkout`, o contêiner Sessão resolve para:
+O contêiner Sessão permite identificar as interações de página ou as interações, campanhas ou conversões do aplicativo móvel de uma sessão específica. O contêiner Sessão é o mais usado porque capta comportamentos para a sessão inteira depois que a regra é atendida. O container Sessão também permite definir quais sessões você deseja incluir ou excluir na criação e aplicação de um segmento.  Ao definir um segmento com uma condição simples como `Page Name equals Checkout`, o contêiner Sessão resolve para:
 
 - Todas as sessões em que uma página com o nome `Checkout` é visitada.
 - Todos os dados de evento dessas sessões.
@@ -150,7 +150,7 @@ As visualizações de dados no Customer Journey Analytics permitem determinar a 
 
 ### Contêiner evento
 
-O container Evento define qual página, aplicativo móvel ou outro tipo de evento você deseja incluir ou excluir de um filtro. É o mais estreito dos contêineres disponíveis para permitir a identificação de cliques específicos, exibição de página, toques no botão em um aplicativo móvel onde uma condição é verdadeira. O container Evento permite visualizar um único código de rastreamento ou isolar o comportamento em uma área específica do aplicativo móvel. Você também pode apontar um valor específico quando uma ação ocorre, como o canal de marketing quando um pedido foi feito. Ao definir um filtro com uma condição simples como `Page Name equals Checkout`, o contêiner Evento resolve para:
+O container Evento define qual página, aplicativo móvel ou outro tipo de evento você deseja incluir ou excluir de um segmento. É o mais estreito dos contêineres disponíveis. Ele permite identificar cliques específicos, exibição de página e toques no botão em um aplicativo móvel no qual uma condição é verdadeira. O container Evento permite visualizar um único código de rastreamento ou isolar o comportamento em uma área específica do aplicativo móvel. Você também pode apontar um valor específico quando uma ação ocorre, como o canal de marketing quando um pedido foi feito. Ao definir um segmento com uma condição simples como `Page Name equals Checkout`, o contêiner Evento resolve para:
 
 - Todos os eventos de exibição de página nos quais o nome da página é igual a `Checkout`.
 
@@ -164,19 +164,19 @@ Os contêineres Evento incluem detalhamentos de página única com base em valor
 
 ### Contêiner do grupo lógico
 
-O Grupo lógico permite agrupar as condições em um único ponto de verificação de filtro sequencial. Como parte da sequência, a lógica definida no contêiner identificado como [!UICONTROL Grupo lógico] é avaliada após qualquer ponto de verificação sequencial anterior e antes de qualquer ponto de verificação sequencial posterior. Consulte [Grupo lógico](seg-sequential-build.md#logic-group) para obter mais informações.
+O Grupo lógico permite agrupar as condições em um único ponto de verificação de segmento sequencial. Como parte da sequência, a lógica definida no contêiner identificado como [!UICONTROL Grupo lógico] é avaliada após qualquer ponto de verificação sequencial anterior e antes de qualquer ponto de verificação sequencial posterior. Consulte [Grupo lógico](seg-sequential-build.md#logic-group) para obter mais informações.
 
 ### Aninhar contêineres
 
-Ao criar containers em outros containers, você está criando um filtro em um filtro. A seguinte lógica é aplicada aos containers aninhados:
+Ao criar contêineres em outros contêineres, você está criando um segmento dentro de um segmento. A seguinte lógica é aplicada aos containers aninhados:
 
 1. Determine quais dados estão incluídos com o contêiner mais externo. Quaisquer dados que não correspondam a essa regra externa serão descartados no relatório.
-2. Aplique a definição de filtro aninhada aos dados restantes. A definição de filtro aninhada NÃO se aplica a dados descartados pela primeira definição.
-3. Repita até que todas as definições de filtro de contêiner aninhado tenham sido calculadas. Os dados restantes são então incluídos no resultado e usados para o relatório.
+2. Aplique a definição de segmento aninhado aos dados restantes. A definição de segmento aninhado NÃO se aplica a dados descartados pela primeira definição.
+3. Repita até que todas as definições de segmento de contêiner aninhado tenham sido calculadas. Os dados restantes são então incluídos no resultado e usados para o relatório.
 
 >[!NOTE]
 >
->Ao aninhar um filtro em um filtro (por exemplo, você arrasta um filtro do painel Componentes para a definição do filtro), um container é criado com uma cópia (não uma referência) da definição de filtro arrastada.
+>Ao aninhar um segmento em um segmento (por exemplo, você arrasta um segmento do painel Componentes para a definição do segmento), um contêiner é criado com uma cópia (não uma referência) da definição do segmento arrastado.
 
 <!--
 You can use nesting between containers and between conditions within a container. Here is what you can nest in each container:
@@ -187,20 +187,20 @@ You can use nesting between containers and between conditions within a container
 | Session | Session
 
 
-## Out-of-the-box filter template {#template}
+## Out-of-the-box segment template {#template}
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
 | Filter Name | Description |
 | --- | --- |
-| All Data | All Data is a required filter that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
+| All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->
 
 >[!MORELIKETHIS]
 >
->[Criar filtros](create-filters.md)
->[Construtor de filtros](filter-builder.md)
->[Filtros rápidos](quick-filters.md)
->[Filtros sequenciais](seg-sequential-build.md)
->[Gerenciar filtros](manage-filters.md)
+>[Criar segmentos](create-filters.md)
+>[Construtor de segmentos ](filter-builder.md)
+>[Segmentos rápidos](quick-filters.md)
+>[Segmentos sequenciais](seg-sequential-build.md)
+>[Gerenciar segmentos](manage-filters.md)
 >
