@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: d4803af9b71ec245f6c4b20e92a4a4c99f235f00
+source-git-commit: 981cd0c01d775acbd71cada7efed4911b4bcb157
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,9 @@ Depois de fazer alterações na extensão do Adobe Content Analytics, use o [flu
 
 ## Controle de versão
 
-Se você precisar de controle de versão das suas experiências do Content Analytics, adicione uma função global `adobe.getContentExperienceVersion` nas páginas que você considera experiências que deseja analisar.
+Se quiser coletar experiências do Content Analytics, considere implementar o controle de versão para garantir que novas experiências (alterações na página da Web) sejam coletadas corretamente.
+
+Para implementar o controle de versão, adicione uma função global `adobe.getContentExperienceVersion` nas páginas que você considera experiências que deseja analisar.
 
 A função `adobe.getContentExperienceVersion` deve retornar uma cadeia de caracteres como valor, que pode ser qualquer item que você escolher, para identificar a versão. A versão está anexada à [URL da Experience ID](/help/content-analytics/report/components.md#experience-metadata).
 
