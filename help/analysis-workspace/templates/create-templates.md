@@ -4,10 +4,10 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 0f4b396bb44612ef52b640ffaeba6aa5aeace423
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 98%
+source-wordcount: '1774'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,16 @@ Administradores podem criar modelos e salvá-los para uso por outras pessoas da 
 
 Pessoas da mesma empresa podem usar esses modelos da empresa conforme descrito em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).
 
-## Criar um modelo
+## Criar um modelo {#create-templates}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="use-case-ajo-template"
+>title="Usar modelo no Journey Optimizer"
+>abstract="Quando você usa esse modelo no Journey Optimizer, a visualização de dados definida como a visualização de dados padrão no Adobe Journey Optimizer é usada, independentemente da visualização de dados selecionada com esse modelo no Customer Journey Analytics."
+
+<!-- markdownlint-enable MD034 -->
 
 Para criar um novo modelo que possa ser usado por pessoas da mesma empresa:
 
@@ -86,7 +95,7 @@ Os administradores podem editar ou excluir os modelos da empresa.
    | **[!UICONTROL Descrição]** | Forneça uma breve descrição do modelo que liste suas finalidades. |
    | **[!UICONTROL Por que usar este modelo]** | Forneça uma breve explicação para informar as pessoas da organização sobre como o modelo pode ser usado. Essa explicação será exibida na página de visualização do modelo. |
    | **[!UICONTROL Canais]** | Escolha qualquer canal que se aplique ao modelo. Você pode selecionar vários canais: **[!UICONTROL Web]**, **[!UICONTROL Dispositivos móveis]**, **[!UICONTROL Vários canais]**, **[!UICONTROL Central de atendimento]** e **[!UICONTROL Na loja]**. Se nenhum canal for selecionado, o modelo será incluído em todos os canais.<p>As seleções escolhidas determinam onde o modelo será exibido e quais filtros serão aplicados aos usuários que o acessarem na página de modelos da organização.</p> |
-   | **[!UICONTROL Casos de uso]** | Escolha qualquer caso de uso que se aplique ao modelo. Você pode selecionar vários casos de uso: **[!UICONTROL Engajamento]**, **[!UICONTROL Conversão]**, **[!UICONTROL Público-alvo]**, **[!UICONTROL Aquisição]** e **[!UICONTROL Journey Optimizer]**. <p>As seleções escolhidas determinam a localização do modelo na página de modelos da organização. Os usuários podem navegar até o modelo ou filtrar a lista por caso de uso. </p><p>**Observação:** escolher **[!UICONTROL Journey Optimizer]** também disponibiliza o modelo no Adobe Journey Optimizer. No Journey Optimizer, um menu suspenso está disponível na página **[!UICONTROL Relatórios]**, permitindo que os usuários selecionem esse modelo ou o modelo padrão. Para mais informações, consulte [Introdução à experiência de relatórios atualizada](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) na documentação do Journey Optimizer. |
+   | **[!UICONTROL Casos de uso]** | Escolha qualquer caso de uso que se aplique ao modelo. Você pode selecionar vários casos de uso: **[!UICONTROL Engajamento]**, **[!UICONTROL Conversão]**, **[!UICONTROL Público-alvo]**, **[!UICONTROL Aquisição]** e **[!UICONTROL Journey Optimizer]**. <p>As seleções escolhidas determinam a localização do modelo na página de modelos da organização. Os usuários podem navegar até o modelo ou filtrar a lista por caso de uso. </p><p>**Observação:** ao selecionar a opção **[!UICONTROL Journey Optimizer]**, o modelo estará disponível para uso no Adobe Journey Optimizer. No Journey Optimizer, um menu suspenso está disponível na página **[!UICONTROL Relatórios]**, permitindo que os usuários selecionem esse modelo ou o modelo padrão. Para mais informações, consulte [Introdução à experiência de relatórios atualizada](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) na documentação do Journey Optimizer.</p><p>Considere o seguinte ao selecionar a opção Journey Optimizer:</p><ul><li>Essa opção só estará disponível se existirem dados do Journey Optimizer na visualização de dados que você está usando no Customer Journey Analytics.</li><li>Quando você usa esse modelo no Journey Optimizer, a visualização de dados definida como a visualização de dados padrão no Adobe Journey Optimizer é usada, independentemente da visualização de dados selecionada com esse modelo no Customer Journey Analytics. <br/>Para obter mais informações sobre como configurar uma exibição de dados como padrão no Journey Optimizer, consulte [Compatibilidade](/help/data-views/create-dataview.md#compatibility) em [Criar ou editar uma exibição de dados](/help/data-views/create-dataview.md).</li></ul> |
    | **[!UICONTROL Tipo de atividade do Journey Optimizer]** | Escolha o tipo de atividade do Journey Optimizer a ser associado ao modelo: **[!UICONTROL Campanhas]**, **[!UICONTROL Jornadas]**, **[!UICONTROL Páginas de destino]**, **[!UICONTROL Relatórios]** ou **[!UICONTROL Assinaturas]**. <p>Deixe este campo em branco se quiser que o modelo seja associado a todos os tipos de atividade.</p><p>Este campo é exibido apenas se **[!UICONTROL Journey Optimizer]** estiver selecionado no campo **[!UICONTROL Casos de uso]**.</p> |
    | **[!UICONTROL Atividade do Journey Optimizer]** | Escolha a atividade do Journey Optimizer à qual o modelo será associado. <p>Deixe este campo em branco se quiser que o modelo seja associado a todas as atividades dentro do tipo de atividade selecionado.</p><p>Este campo é exibido apenas se **[!UICONTROL Journey Optimizer]** estiver selecionado no campo **[!UICONTROL Casos de uso]**.</p> |
    | **[!UICONTROL Tags]** | Especifique as tags que deseja aplicar ao modelo, se for o caso. As pessoas podem filtrar a lista de modelos pelas tags adicionadas. |
