@@ -3,23 +3,23 @@ title: Transferir ativos
 description: Saiba como transferir componentes de um usuário para outro
 role: Admin
 solution: Customer Journey Analytics
-source-git-commit: 9663a24c2430d3822cb83876ea048b6423405215
+exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
 
 ---
 
-
 # Transferir ativos
 
-A ferramenta Transferência de ativos permite transferir a propriedade dos ativos para outros usuários. O Assets pode incluir componentes como projetos, filtros, intervalos de datas, métricas calculadas, anotações, alertas e projetos agendados.
+A ferramenta Transferência de ativos permite transferir a propriedade dos ativos para outros usuários. O Assets pode incluir componentes como projetos, segmentos, intervalos de datas, métricas calculadas, anotações, alertas e projetos agendados.
 
-Muitas vezes, o Assets é vinculado a um proprietário individual e, em alguns casos, como filtros e métricas calculadas, não pode ser editado ou compartilhado nem mesmo pelos administradores. Quando os usuários saem da organização ou sua função muda, pode ser necessário transferir a propriedade desses ativos para outros usuários para garantir a continuidade e o acesso apropriado.
+Muitas vezes, o Assets é vinculado a um proprietário individual e, em alguns casos, como segmentos e métricas calculadas, não pode ser editado ou compartilhado nem mesmo pelos administradores. Quando os usuários saem da organização ou sua função muda, pode ser necessário transferir a propriedade desses ativos para outros usuários para garantir a continuidade e o acesso apropriado.
 
 ## Permissões
 
-A transferência de ativos exige a permissão de Administrador de produto para o Customer Journey Analytics.
+A transferência de ativos exige a permissão de Administrador de produto do Customer Journey Analytics.
 
 ## Transferir ativos
 
@@ -51,7 +51,7 @@ A transferência de ativos exige a permissão de Administrador de produto para o
 
    >[!NOTE]
    >
-   >    Ao transferir ativos que fazem referência a outros componentes (por exemplo, projetos que fazem referência a outros filtros e métricas calculadas), os componentes não pertencentes ao proprietário atual do projeto só serão compartilhados com o recipient. A propriedade de todos os outros componentes será transferida para o recipient.
+   >    Ao transferir ativos que fazem referência a outros componentes (por exemplo, projetos que fazem referência a outros segmentos e métricas calculadas), os componentes não pertencentes ao proprietário atual do projeto só serão compartilhados com o recipient. A propriedade de todos os outros componentes será transferida para o recipient.
 
 1. Para selecionar _todos_ ativos em uma pasta, marque a caixa ao lado de **[!UICONTROL Nome]** na parte superior da tabela.
 

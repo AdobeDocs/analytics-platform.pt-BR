@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 3b4917dade478f327ee3f532c5d72c4ca7656067
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1760'
 ht-degree: 7%
@@ -84,7 +84,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Filtros de público-alvo | 20 | Proteção imposta pelo sistema | Número máximo de [filtros](../components/filters/filters-overview.md) por público-alvo. |
+| Segmentos de público | 20 | Proteção imposta pelo sistema | Número máximo de [segmentos](../components/filters/filters-overview.md) por público-alvo. |
 | Número de identidades de público-alvo | 20 milhões | Proteção imposta pelo sistema | Número máximo de identidades por público-alvo. |
 | Frequência de atualização do público-alvo | 4 | Proteção imposta pelo sistema | A frequência máxima em horas que um [público-alvo](../components/audiences/audiences-overview.md) pode ser atualizado. |
 | Janela de pesquisa de atualização de público-alvo | 90 | Proteção imposta pelo sistema | Número máximo de dias para a janela de retrospectiva de atualização. |
@@ -183,18 +183,18 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 | Janela de pesquisa/Frequência de repetição | 1/1 - 30/7 | Proteção imposta pelo sistema | Janela de pesquisa máxima em dias / Frequência de repetição. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
 
 
-## Filtros e métricas calculadas
+## Segmentos e métricas calculada
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Contêineres por filtro | 50 | Proteção imposta pelo sistema | Número máximo de containers por filtro. |
+| Contêineres por filtro | 50 | Proteção imposta pelo sistema | Número máximo de containers por segmento. |
 | Métricas por métrica calculada | 25 | Proteção imposta pelo sistema | Número máximo de métricas por métrica calculada. |
-| Métricas e dimensões por filtro | 25 | Proteção imposta pelo sistema | Número máximo de métricas e dimensões exclusivas por filtro. |
-| Contêineres aninhados por filtro | 10 | Proteção imposta pelo sistema | Número máximo de containers aninhados por filtro. |
-| Regras por filtro | 100 | Proteção imposta pelo sistema | Número máximo de regras por filtro. |
-| Comparações de cadeias de caracteres por Dimension por filtro | 100 | Proteção imposta pelo sistema | Número máximo de comparações de cadeias de caracteres por dimensão por filtro. |
+| Métricas e dimensões por filtro | 25 | Proteção imposta pelo sistema | Número máximo de métricas e dimensões exclusivas por segmento. |
+| Contêineres aninhados por filtro | 10 | Proteção imposta pelo sistema | Número máximo de containers aninhados por segmento. |
+| Regras por segmento | 100 | Proteção imposta pelo sistema | Número máximo de regras por segmento. |
+| Comparações de strings por Dimension por segmento | 100 | Proteção imposta pelo sistema | Número máximo de comparações de cadeias de caracteres por dimensão por segmento. |
 | Métricas calculadas  | 6.000 | Proteção imposta pelo sistema | Número máximo de métricas calculadas para uma organização. |
-| Filtros | 50.000 | Proteção imposta pelo sistema | Número máximo de filtros que você pode definir para uma organização. |
+| Segmentos | 50.000 | Proteção imposta pelo sistema | Número máximo de segmentos que você pode definir para uma organização. |
 | Chamadas à APIs | 120 | Proteção imposta pelo sistema | Solicitações de API por minuto (12 solicitações a cada 6 segundos). |
 
 {style="table-layout:auto"}
@@ -205,7 +205,7 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
 | Ladrilhos | 16 | Proteção imposta pelo sistema | Número máximo de blocos por cartão de pontuação. |
-| Filtros | 10 | Proteção imposta pelo sistema | Número máximo de filtros por cartão de pontuação. |
+| Segmentos | 10 | Proteção imposta pelo sistema | Número máximo de segmentos por cartão de pontuação. |
 | Dimensões | 10 | Proteção imposta pelo sistema | Número máximo de dimensões por cartão de pontuação. |
 
 {style="table-layout:auto"}

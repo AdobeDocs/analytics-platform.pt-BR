@@ -7,7 +7,7 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 0%
@@ -66,4 +66,4 @@ As possíveis ideias de análise são:
 
 * Dados do evento de atrito de tendência ao longo do tempo
 * Em uma visualização de fallout ou funil, adicione eventos do Customer Journey Analytics como algumas etapas e eventos de atrito de Métrica quântica como outros. Esse relatório permite ver onde os visitantes geralmente encontram problemas.
-* Criar e aplicar um filtro para visitantes que experimentam eventos de atrito para análise mais profunda
+* Crie e aplique um segmento para visitantes que experimentam eventos de atrito para análise mais profunda

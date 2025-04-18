@@ -5,10 +5,10 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1649'
-ht-degree: 95%
+source-wordcount: '1648'
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ O Customer Journey Analytics usa uma avançada arquitetura própria que distribu
 
 O mecanismo de relatórios é fundamental para o Customer Journey Analytics, permitindo que você interaja progressivamente e atue em todos os dados de jornada de cliente desse mecanismo. O Customer Journey Analytics vem com um conjunto extenso de componentes que capacitam você a fazer isso visualmente e por meio de uma interface de arrastar e soltar. As ferramentas de visualização de BI permitem explorar os limites dos dados preparados por SQL (conforme definido pela equipe de TI). O Customer Journey Analytics permite detalhar e destrinchar os dados o quanto quiser, sem precisar recorrer a equipe de TI para criar mais uma visualização de SQL.
 
-A “progressividade” é um conceito-chave aqui. Ao contrário da maioria das visualizações nas ferramentas de BI, a interface de arrastar e soltar no Customer Journey Analytics permite detalhar seus dados continuamente para suas necessidades específicas: você pode criar consultas visuais de forma interativa usando métricas, dimensões, filtros (segmentos), cálculos, linhas do tempo, anotações e outros recursos de análise relevantes.
+&quot;Progressivamente&quot; é um conceito importante aqui: ao contrário da maioria das visualizações em ferramentas de BI, a interface visual de arrastar e soltar no Customer Journey Analytics permite detalhar continuamente seus dados para suas necessidades específicas: você pode criar consultas visuais interativamente usando métricas, dimensões, segmentos, cálculos, linhas de tempo, anotações e outros valores de análise relevantes.
 
 Integrados a esses componentes de visualização, estão recursos inteligentes como:
 

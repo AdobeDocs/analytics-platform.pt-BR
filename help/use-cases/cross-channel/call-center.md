@@ -5,10 +5,10 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 811fce4f056a6280081901e484c3af8209f87c06
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 95%
+ht-degree: 88%
 
 ---
 
@@ -42,7 +42,7 @@ Ao importar dados para a Plataforma, as seguintes dicas podem proporcionar mais 
 
 ## Compilar as IDs de pessoa
 
-Customer Journey Analytics exige um identificador comum para gerar um [conjunto de dados combinado](/help/connections/combined-dataset.md).
+O Customer Journey Analytics requer um identificador comum para gerar um [conjunto de dados combinado](/help/connections/combined-dataset.md).
 
 * Se seus conjuntos de dados já tiverem um identificador comum em cada evento em ambos os conjuntos de dados, você poderá ignorar essa etapa e continuar criando uma conexão.
 * Se um de seus conjuntos de dados tiver um identificador comum em apenas alguns eventos, você poderá compilar os dados usando a [Compilação](/help/stitching/overview.md) para as etapas a fim de habilitar a análise entre canais para esses dois conjuntos de dados.
@@ -69,11 +69,11 @@ As visualizações a seguir podem ser usadas para obter insights do conjunto de 
 
 Essa visualização ajuda você a entender como a AVC compila os dados.
 
-1. Crie dois filtros. A variável usada nesses dois filtros é a mesma variável mencionada acima que reflete a origem de dados de cada evento. Consulte [Criar um filtro](/help/components/filters/create-filters.md) para obter mais informações.
+1. Crie dois segmentos. A variável usada nesses dois segmentos é a mesma variável mencionada acima que reflete a fonte de dados de cada evento. Consulte [Criar um segmento](/help/components/filters/create-filters.md) para obter mais informações.
    * Container de pessoa em que a ID do conjunto de dados é igual aos seus dados da Web
    * Container de pessoa em que a ID do conjunto de dados é igual aos dados da central de atendimento
 2. No Analysis Workspace, arraste uma visualização [Venn](/help/analysis-workspace/visualizations/venn.md) para a tela do espaço de trabalho.
-3. Arraste os dois filtros recém-criados para a área **[!UICONTROL Adicionar filtro]** e a métrica Pessoas para a área **[!UICONTROL Adicionar métrica]**.
+3. Arraste os dois segmentos recém-criados para a área **[!UICONTROL Adicionar filtro]** e a métrica Pessoas para a área **[!UICONTROL Adicionar métrica]**.
 
 A visualização Venn resultante mostra o número de pessoas em seu conjunto de dados que contêm dados da Web e da central de atendimento. Quanto maior a sobreposição, mais pessoas foram compiladas com sucesso. As áreas que não se sobrepõem representam pessoas que residem exclusivamente em um conjunto de dados ou no outro.
 
@@ -93,8 +93,8 @@ O relatório resultante mostra as principais páginas que direcionam chamadas pa
 Você pode aumentar ainda mais o insight com esta tabela dividindo Chamadas por motivo ou categoria.
 
 1. Clique na divisa à direita na dimensão “Motivo da chamada”, na lista de componentes. Essa ação revela valores de dimensão individuais.
-2. Arraste os valores de dimensão desejados para a métrica “Chamadas”, que filtra essa métrica por cada motivo de chamada.
-3. Repita o procedimento para cada motivo de chamada que você deseja detalhar. Use o filtro “Todas as sessões” para exibir o total agregado.
+2. Arraste os valores de dimensão desejados para a métrica &quot;Chamadas&quot;, que segmenta essa métrica por cada motivo de chamada.
+3. Repita o procedimento para cada motivo de chamada que você deseja detalhar. Use o segmento &quot;Todas as sessões&quot; para exibir o total agregado.
 
 <!-- screenshot -->
 
@@ -139,10 +139,10 @@ step 2:
 
 Slide 4
 
-Create a bunch of filters - facets to their business. Filters were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really filters)
+Create a bunch of segments - facets to their business. Segments were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really segments)
 
 wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
-use sequential filters, but you lose the ability to use attribution IQ
+use sequential segments, but you lose the ability to use attribution IQ
 
 ## What to do when you've found insight -->

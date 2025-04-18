@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 1f5b2a42-162e-45a7-9fd4-8c1557f48bb8
 role: Admin
-source-git-commit: a530738bb02888d637e5ff4edaa1aa2535a9034c
-workflow-type: ht
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -51,11 +51,11 @@ Para obter mais informações sobre o Gerenciador de atividades de relatórios, 
 
    ![Atividades de relatórios mostrando a fila de relatórios](assets/reporting-activity-monthly.png)
 
-1. (Opcional) É possível pesquisar ou filtrar a lista de conexões:
+1. (Opcional) É possível pesquisar ou segmentar a lista de conexões:
 
    * Use o campo de pesquisa para procurar uma conexão específica. Comece a digitar o nome ou ID da conexão e a lista de conexões será atualizada conforme você digita.
 
-   * Selecione ![Filtro](/help/assets/icons/Filter.svg) para expandir a lista de opções de filtro. Você pode filtrar por [!UICONTROL **Favoritos**] ou [!UICONTROL **Status**].
+   * Selecione ![Filtro](/help/assets/icons/Filter.svg) para expandir a lista de opções de segmento. Você pode filtrar por [!UICONTROL **Favoritos**] ou [!UICONTROL **Status**].
 
      Para marcar uma conexão como favorita, selecione o ícone de estrela à esquerda do nome da conexão.
 

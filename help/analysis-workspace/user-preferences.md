@@ -5,7 +5,7 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '3873'
 ht-degree: 75%
@@ -36,7 +36,7 @@ As preferências gerais se aplicam à experiência do Customer Journey Analytics
 | --- | --- |
 | **[!UICONTROL Página de destino]** | Escolha qual página será exibida por padrão ao acessar o Customer Journey Analytics: <ul><li>Lista de projetos (padrão)</li><li>Projeto em branco</li><li>Análise guiada de tendências em branco</li><li>Projeto específico selecionado em uma lista</li></ul> |
 | **[!UICONTROL Dicas]** | Exibe dicas em uma caixa azul na área inferior direita do Analysis Workspace. <p>Essa opção está ativada por padrão.</p> |
-| **[!UICONTROL Componentes exibidos em grupos do painel esquerdo]** | Escolha quantos de cada grupo de componentes serão exibidos no menu Componentes no painel esquerdo. <p>Se você escolher 0 para um grupo de componentes, esse grupo não estará mais acessível no painel esquerdo.</p><p>Por padrão, 5 componentes são exibidos para cada um dos seguintes grupos de componentes:</p> <ul><li>Dimensões</li><li>Métricas</li><li>Filtros</li><li>Intervalos de datas</li></ul> <p>Para obter mais informações sobre Componentes no Analysis Workspace, consulte [Visão geral dos componentes](/help/components/overview.md).</p> |
+| **[!UICONTROL Componentes exibidos em grupos do painel esquerdo]** | Escolha quantos de cada grupo de componentes serão exibidos no menu Componentes no painel esquerdo. <p>Se você escolher 0 para um grupo de componentes, esse grupo não estará mais acessível no painel esquerdo.</p><p>Por padrão, 5 componentes são exibidos para cada um dos seguintes grupos de componentes:</p> <ul><li>Dimensões</li><li>Métricas</li><li>Segmentos</li><li>Intervalos de datas</li></ul> <p>Para obter mais informações sobre Componentes no Analysis Workspace, consulte [Visão geral dos componentes](/help/components/overview.md).</p> |
 
 ### Preferências da organização IMS {#ims-organization-preferences}
 

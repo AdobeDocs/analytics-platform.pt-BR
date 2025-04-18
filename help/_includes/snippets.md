@@ -1,8 +1,8 @@
 ---
-source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
 source-wordcount: '3796'
-ht-degree: 19%
+ht-degree: 30%
 
 ---
 # Trechos
@@ -60,7 +60,7 @@ As opções de comparação de tempo disponíveis incluem o período anterior, 1
 *Este vídeo demonstra a funcionalidade usando o Adobe Analytics. No entanto, essa funcionalidade está disponível de forma semelhante no Customer Journey Analytics. Esteja ciente das diferenças na terminologia entre o Adobe Analytics e o Customer Journey Analytics (por exemplo, &quot;visitas&quot; versus &quot;sessões&quot;).*
 
 
-## Painel Filtros {#filterspanel}
+## Painel Segmentos {#filterspanel}
 
 1. Selecione ![Filtro](/help/assets/icons/Filter.svg) para abrir o painel Filtros. Se você precisar de mais espaço para a lista de filtros, selecione ![Filtro](/help/assets/icons/Filter.svg) mais uma vez para fechar o painel.
 1. Selecione filtros de qualquer uma das seções de filtro disponíveis.
@@ -70,14 +70,14 @@ As opções de comparação de tempo disponíveis incluem o período anterior, 1
 
 | Tags | Descrição |
 |---|---|
-| ![Tags](/help/assets/filter-tag.png){width="300"} | A seção **[!UICONTROL Tags]** permite filtrar em tags. <ul><li>Você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar marcas* para procurar marcas que possa usar para filtrar.</li><li>É possível selecionar mais de uma tag. As tags disponíveis dependem das seleções feitas em outras seções no painel de filtro.</li><li>Os números indicam:<ul><li>**(1)**: o número de marcas selecionadas (se uma ou mais marcas forem selecionadas).</li><li>**2︎⃣**: o número de marcas disponíveis para os itens resultantes do filtro atual.</li><li>7︎⃣: o número de itens associados à tag específica.</li></ul></li></ul> |
+| ![Tags](/help/assets/filter-tag.png){width="300"} | A seção **[!UICONTROL Tags]** permite filtrar por tags. <ul><li>Você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar marcas* para procurar marcas que possa usar para filtrar.</li><li>É possível selecionar mais de uma tag. As tags disponíveis dependem das seleções feitas em outras seções no painel de filtro.</li><li>Os números indicam:<ul><li>**(1)**: o número de marcas selecionadas (se uma ou mais marcas forem selecionadas).</li><li>**2︎⃣**: o número de marcas disponíveis para os itens resultantes do filtro atual.</li><li>7︎⃣: o número de itens associados à tag específica.</li></ul></li></ul> |
 
 
 ## Seção de filtro de visualização de dados {#dataviewfiltersection}
 
 | Visualização de dados | Descrição |
 |---|---|
-| ![Visualizações de dados](/help/assets/filter-dataview.png){width="300"} | A seção **[!UICONTROL Visualização de dados]** permite filtrar visualizações de dados. <ul><li>Você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar visualizações de dados* para procurar visualizações de dados que você possa usar para filtrar.</li><li>É possível selecionar mais de uma visualização de dados. As visualizações de dados disponíveis dependem das seleções feitas em outras seções no painel de filtro.</li><li>Os números indicam:<ul><li>**(2)**: O número de visualizações de dados selecionadas (se uma ou mais visualizações de dados forem selecionadas).</li><li>**3︎⃣**: o número de visualizações de dados disponíveis para os itens resultantes do filtro atual.</li><li>4︎⃣: o número de itens associados à visualização de dados específica.</li></ul></li></ul> |
+| ![Visualizações de dados](/help/assets/filter-dataview.png){width="300"} | A seção **[!UICONTROL Visualização de dados]** permite filtrar por visualizações de dados. <ul><li>Você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar visualizações de dados* para procurar visualizações de dados que você possa usar para filtrar.</li><li>É possível selecionar mais de uma visualização de dados. As visualizações de dados disponíveis dependem das seleções feitas em outras seções no painel de filtro.</li><li>Os números indicam:<ul><li>**(2)**: O número de visualizações de dados selecionadas (se uma ou mais visualizações de dados forem selecionadas).</li><li>**3︎⃣**: o número de visualizações de dados disponíveis para os itens resultantes do filtro atual.</li><li>4︎⃣: o número de itens associados à visualização de dados específica.</li></ul></li></ul> |
 
 ## Seção Filtro de status habilitado {#enabledstatusfiltersection}
 
@@ -101,7 +101,7 @@ As opções de comparação de tempo disponíveis incluem o período anterior, 1
 
 | Outros filtros | Descrição |
 |---|---|
-| ![Outros filtros](/help/assets/filter-other.png){width="300"} | A seção **[!UICONTROL Outros filtros]** permite filtrar por outro filtro predefinido.<ul><li>É possível selecionar uma ou mais das seguintes opções:<ul><li> **[!UICONTROL Exibir tudo]**</li><li>**[!UICONTROL Compartilhado(s) comigo]**</li><li>**[!UICONTROL Meus]**</li><li>**[!UICONTROL Aprovado]**</li><li>**[!UICONTROL Favoritos]**</li></ul> O que você pode selecionar depende de sua função e permissões.</li><li>É possível selecionar mais de um filtro. Os outros filtros disponíveis dependem das seleções feitas em outras seções no painel de filtros.</li><li>Os números indicam:<ul><li>**(1)**: o número de outros filtros selecionados (se um ou mais filtros forem selecionados).</li><li>**5︎⃣**: o número de outros filtros disponíveis para os itens resultantes do filtro atual.</li><li>4︎⃣: o número de itens associados ao outro filtro específico.</li></ul></li></ul> |
+| ![Outros filtros](/help/assets/filter-other.png){width="300"} | A seção **[!UICONTROL Outros filtros]** permite filtrar por outros filtros predefinidos.<ul><li>Você pode selecionar uma ou mais das seguintes opções:<ul><li> **[!UICONTROL Exibir tudo]**</li><li>**[!UICONTROL Compartilhado comigo]**</li><li>**[!UICONTROL Meu]**</li><li>**[!UICONTROL Aprovado]**</li><li>**[!UICONTROL Favoritos]**</li></ul> O que você pode selecionar depende da sua função e das suas permissões.</li><li>É possível selecionar vários outros filtros. Os outros filtros disponíveis dependem das seleções feitas em outras seções no painel de filtros.</li><li>Os números indicam:<ul><li>**(1)**: o número de outros filtros selecionados (se um ou mais filtros forem selecionados).</li><li>**5︎⃣**: o número de outros filtros disponíveis para os itens resultantes do filtro atual.</li><li>4︎⃣: o número de itens associados ao outro filtro específico.</li></ul></li></ul> |
 
 ## Seção de filtro de intervalo de datas  {#daterangefiltersection}
 
@@ -151,30 +151,30 @@ As janelas de retrospectiva representam quanto tempo uma conversão deve retroce
 
 Considere o exemplo a seguir:
 
-1. Em 15 de setembro, uma pessoa chega ao seu site através de um anúncio de pesquisa pago e depois sai.
-1. Em 18 de setembro, a pessoa chega ao seu site novamente através de um link de mídia social que recebeu de um amigo. Eles adicionam vários itens ao carrinho, mas não compram nada.
+1. Em 15 de setembro, um visitante chega ao seu site através de um anúncio de pesquisa pago e depois sai.
+1. Em 18 de setembro, a pessoa acessa seu site novamente por meio de um link de redes sociais que recebeu de um amigo. Eles adicionam vários itens ao carrinho, mas não compram nada.
 1. Em 24 de setembro, sua equipe de marketing envia um email com um cupom para alguns dos itens em seu carrinho. Eles aplicam o cupom, mas visitam vários outros sites para ver se existem outros cupons disponíveis. Eles encontram outro cupom por meio de um anúncio de exibição e, em seguida, fazem uma compra de US$ 50.
 
 Dependendo da janela de retrospectiva e do modelo de atribuição, os canais recebem crédito diferente. Veja a seguir alguns exemplos:
 
-* Usando o **primeiro contato** e uma **janela de retrospectiva de sessão**, a atribuição considera somente a terceira visita. Entre email e exibição, o email foi o primeiro, então o email recebe 100% de crédito pela compra de US$ 50.
+* Ao usar o modelo **primeiro contato** e uma **janela de retrospectiva de sessão**, a atribuição considera somente a terceira visita. Entre email e exibição, o email foi o primeiro, portanto, o email recebe 100% de crédito pela compra de US$ 50.
 
-* Usando o **primeiro contato** e uma **janela de retrospectiva de pessoa**, a atribuição considera todas as três visitas. A pesquisa paga foi a primeira, então ela recebe 100% de crédito pela compra de US$ 50.
+* Ao usar o modelo **primeiro contato** e uma **janela de retrospectiva de pessoa**, a atribuição considera todas as três visitas. A pesquisa paga foi a primeira, portanto recebe 100% de crédito pela compra de US$ 50.
 
-* Usando o **linear** e uma **janela de retrospectiva de sessão**, o crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25 dólares.
-Usando o **linear** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 por esta compra.
+* Ao usar o modelo **linear** e uma **janela de retrospectiva de sessão**, o crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25.
+Ao usar o modelo **linear** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 por esta compra.
 
-* Usando o **Forma de J** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição.
+* Ao usar o modelo **Forma de J** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição.
 
    * O crédito será de 60% para a exibição (US$ 30).
    * De 20% para a pesquisa paga (US$ 10).
    * Os 20% restantes são divididos entre redes sociais e email (US$ 5 para cada).
 
-* Usando o **Declínio de Tempo** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Usando a meia-vida padrão de 7 dias:
+* Ao usar o modelo **Decaimento de tempo** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Usando a meia-vida padrão de 7 dias:
 
-   * Espaço de zero dias entre o ponto de contato de exibição e a conversão. `2^(-0/7) = 1`
-   * Intervalo de zero dias entre o ponto de contato do email e a conversão. `2^(-0/7) = 1`
-   * Intervalo de seis dias entre o ponto de contato social e a conversão. `2^(-6/7) = 0.552`
+   * Intervalo de 0 dias entre o ponto de contato de exibição e a conversão. `2^(-0/7) = 1`
+   * Intervalo de 0 dias entre o ponto de contato de email e a conversão. `2^(-0/7) = 1`
+   * Intervalo de seis dias entre o ponto de contato de rede social e a conversão. `2^(-6/7) = 0.552`
    * Intervalo de nove dias entre o ponto de contato de pesquisa paga e a conversão. `2^(-9/7) = 0.41`
    * A normalização desses valores resulta no seguinte:
 
@@ -183,7 +183,7 @@ Usando o **linear** e uma **janela de retrospectiva de pessoa**, o crédito é d
       * Redes sociais: 18,6%, crédito de US$ 9,32
       * Pesquisa paga: 13,8%, crédito de US$ 6,92
 
-Os eventos de conversão que normalmente têm números inteiros são divididos se o crédito pertencer a mais de um canal. Por exemplo, se dois canais contribuem para um pedido usando um modelo de atribuição Linear, ambos os canais obtêm 0,5 desse pedido. Essas métricas parciais são somadas em todas as pessoas e depois arredondadas para o número inteiro mais próximo para o relatório.
+Os eventos de conversão que normalmente têm números inteiros são divididos se o crédito pertencer a mais de um canal. Por exemplo, se dois canais contribuem para um pedido usando um modelo de atribuição linear, ambos os canais recebem 0,5 desse pedido. Essas métricas parciais são somadas para todas as pessoas e depois arredondadas para o número inteiro mais próximo para fins de geração de relatórios.
 
 ## Jornada comparações de visualização {#journey-visualization-comparisons}
 
@@ -191,7 +191,7 @@ Várias visualizações na Análise de Jornada do cliente foram criadas para ana
 
 Use as informações a seguir para escolher a visualização que melhor atende às suas necessidades.
 
-| Função | Tela da jornada | Fallout | Fluxo |
+| Função | Tela de jornada | Fallout | Fluxo |
 |---------|----------|---------|---------|
 | **Sequência predefinida de páginas** | Sim</br>Combina análise predefinida e exploratória. O caminho eventual é usado ao usar nós predefinidos no caminho (os visitantes são contados desde que eventualmente se movam de um nó predefinido para o outro). Os próximos nós imediatos (não eventuais) também podem ser mostrados ao [mostrar os nós principais com base nos nós existentes](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#show-the-top-nodes-based-on-existing-nodes). | Sim</br>O caminho pode ser um caminho eventual ou pode ser restrito ao próximo ponto de contato | Não |
 | **Sequência exploratória de páginas (Ad Hoc Analysis)** | Sim</br>Combina análise predefinida e exploratória. O caminho eventual é usado ao usar nós predefinidos no caminho (os visitantes são contados desde que eventualmente se movam de um nó predefinido para o outro). Os próximos nós imediatos (não eventuais) também podem ser mostrados ao [mostrar os nós principais com base nos nós existentes](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#show-the-top-nodes-based-on-existing-nodes). | Limitado</br>Permite clicar com o botão direito do mouse e exibir o fallout imediato em uma tabela de Forma livre. | Sim</br>Somente análise exploratória. Sempre em uma instância de dimensão entre nós. Isso significa que cada nó mostra o próximo ponto de contato imediato (não eventual) ao longo do caminho. |
@@ -217,7 +217,7 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente após concluir todas as etapas de atualização anteriores. Você pode seguir as etapas de atualização recomendadas (recomendadas para a maioria das organizações) ou seguir as etapas geradas dinamicamente para sua organização com o Guia de atualização do Customer Journey Analytics. <ul><li>**Etapas de atualização recomendadas** (recomendado para a maioria das organizações)<p>Um conjunto de etapas que levam a uma implementação ideal do Customer Journey Analytics.</p><p>Para obter informações detalhadas, consulte [Atualizar do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guia de Atualização do Customer Journey Analytics** (Etapas personalizadas adaptadas às necessidades específicas da sua organização)<p>Um novo guia de atualização está disponível e gera dinamicamente etapas de atualização personalizadas para sua organização e suas circunstâncias exclusivas.</p><p>Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.</p></li></ul>
+>Siga as etapas desta página somente depois de concluir todas as etapas de atualização anteriores. Você pode seguir as etapas de atualização recomendadas (recomendadas para a maioria das organizações) ou seguir as etapas geradas dinamicamente para sua organização com o Guia de atualização do Customer Journey Analytics. <ul><li>**Etapas de atualização recomendadas** (recomendado para a maioria das organizações)<p>Um conjunto de etapas que levam a uma implementação ideal do Customer Journey Analytics.</p><p>Para obter informações detalhadas, consulte [Atualizar do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guia de Atualização do Customer Journey Analytics** (Etapas personalizadas adaptadas às necessidades específicas da sua organização)<p>Um novo guia de atualização está disponível e gera dinamicamente etapas de atualização personalizadas para sua organização e suas circunstâncias exclusivas.</p><p>Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.</p></li></ul>
 
 ## Etapa final da lista de verificação de atualização {#upgrade-final-step}
 

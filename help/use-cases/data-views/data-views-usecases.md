@@ -5,10 +5,10 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 629935d66b0f2c5731806a68cc2fcda5fb11fc9a
+source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 33%
+source-wordcount: '1364'
+ht-degree: 32%
 
 ---
 
@@ -26,7 +26,7 @@ Consulte o caso de uso [Usar dados de resumo](summary-data.md) para obter mais d
 
 ## Casos de uso da extensão do BI
 
-Consulte os [casos de uso de extensão de BI](bi-extension-usecases.md) para saber como realizar vários casos de uso usando a extensão de BI do Customer Journey Analytics.
+Consulte os [casos de uso de extensão do BI](bi-extension-usecases.md) para saber como realizar vários casos de uso usando a extensão do Customer Journey Analytics BI.
 
 ## Criar uma métrica com base em um campo de esquema de sequência {#string}
 
@@ -39,7 +39,7 @@ Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica
 1. Abra a seção **[!UICONTROL Incluir/Excluir Valores]** e especifique o seguinte:
    1. Habilitar **[!UICONTROL Definir inclusão/exclusão de valores]**.
    1. Selecione **[!UICONTROL Se todos os critérios forem atendidos]** de **[!UICONTROL Corresponder]**.
-   1. Especifique `confirmation`. Esse texto para page_title indica que essa página está relacionada à inserção de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores incluídos/excluídos pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, filtros e em qualquer lugar que você puder usar as métricas padrão.
+   1. Especifique `confirmation`. Esse texto para page_title indica que essa página está relacionada à inserção de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores incluídos/excluídos pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, segmentos e em qualquer lugar que você puder usar as métricas padrão.
 
    ![Dimension para métrica](../assets/string-to-metric.gif){width=100%}
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
@@ -53,9 +53,9 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
 
 
-1. Arraste o inteiro **[!UICONTROL Duração]** para a seção **[!UICONTROL Dimension]** em [!UICONTROL Componentes incluídos]:
+1. Arraste o inteiro **[!UICONTROL Duration]** para a seção **[!UICONTROL Dimensions]** em [!UICONTROL Componentes incluídos]:
 1. Agora você pode adicionar **[!UICONTROL Classificação de valores]** para apresentar essa dimensão de forma segmentada nos relatórios. Sem a classificação, cada instância dessa dimensão seria exibida como um item da linha nos relatórios do Workspace.
-   ![Inteiro para dimensão](../assets/integer-to-dimension.gif){width=100%}
+   ![Número inteiro para a dimensão](../assets/integer-to-dimension.gif){width=100%}
 
 
 ## Usar dimensões numéricas como métricas em diagramas de fluxo {#numeric}
@@ -88,7 +88,7 @@ Essas novas configurações permitem que você visualize somente a receita de al
 
 Sua empresa pode ter passado tempo treinando os usuários para esperar &quot;Não especificado&quot; para dimensões em relatórios. O padrão para dimensões em Visualizações de dados é &quot;Sem valor&quot;. No entanto, é possível especificar por dimensão como Nenhum valor deve ser relatado. Consulte as opções Nenhum valor para um componente de dimensão.
 
-![Nenhuma opção de valor](../assets/no-value-options.gif){width=100%}
+![Sem opções de valor](../assets/no-value-options.gif){width=100%}
 
 
 ## Criar várias métricas com diferentes configurações de atribuição {#attribution}
