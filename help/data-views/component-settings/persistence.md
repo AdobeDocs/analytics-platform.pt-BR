@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9c1a8c51aa3e23412e5b04d3ab1571a9d1c7612e
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 79%
+ht-degree: 77%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistência"
->abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação é aplicada antes dos filtros nos relatórios. Para obter mais informações, consulte [configurações de alocação](/help/data-views/component-settings/persistence.md#allocation-settings), [configurações de expiração](/help/data-views/component-settings/persistence.md#expiration-settings), [dimensão de vinculação](/help/data-views/component-settings/persistence.md#binding-dimension) e [métricas de vinculação](/help/data-views/component-settings/persistence.md#binding-metric)."
+>abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação se aplica antes dos segmentos no relatório. Para obter mais informações, consulte [configurações de alocação](/help/data-views/component-settings/persistence.md#allocation-settings), [configurações de expiração](/help/data-views/component-settings/persistence.md#expiration-settings), [dimensão de vinculação](/help/data-views/component-settings/persistence.md#binding-dimension) e [métricas de vinculação](/help/data-views/component-settings/persistence.md#binding-metric)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,7 +40,7 @@ ht-degree: 79%
 
 * A **Expiração** permite determinar por quanto tempo um item de dimensão persiste além do evento em que está definido.
 
-A [!UICONTROL Persistência] está disponível somente em dimensões e é retroativa aos dados aos quais é aplicada. É uma transformação imediata de dados que ocorre antes da aplicação da filtragem ou de outras operações de análise.
+A [!UICONTROL Persistência] está disponível somente em dimensões e é retroativa aos dados aos quais é aplicada. É uma transformação imediata de dados que ocorre antes da aplicação da segmentação ou de outras operações de análise.
 
 | Configuração | Descrição |
 | --- | --- |
