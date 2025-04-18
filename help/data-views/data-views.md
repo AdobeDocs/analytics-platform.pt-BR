@@ -5,10 +5,10 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 450d47a2baa43340f4cb9740f9703fb396b6e3e2
-workflow-type: ht
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+workflow-type: tm+mt
 source-wordcount: '1078'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ As visualizações de dados permitem que você altere espontaneamente as configu
 
 * É possível aplicar formatação a uma métrica, como mostrar decimais, hora, porcentagem ou moeda; especificar casas decimais; apresentar a tendência ascendente como verde ou vermelha; e especificar opções de moeda.
 
-* Você pode criar uma métrica ou dimensão com base em apenas alguns dos valores no campo de esquema. Por exemplo, se você quiser uma métrica de Erros, será possível criar uma métrica a partir do campo de nome da página, mas incluir apenas páginas que contenham a palavra `error`. A métrica de Erros criada dessa maneira é compatível com filtros, pode ser inserida em métricas calculadas e funciona com atribuição, fluxo, fallout etc.
+* Você pode criar uma métrica ou dimensão com base em apenas alguns dos valores no campo de esquema. Por exemplo, se você quiser uma métrica de Erros, será possível criar uma métrica a partir do campo de nome da página, mas incluir apenas páginas que contenham a palavra `error`. A métrica Erros criada dessa forma é compatível com segmentos, pode ser inserida em métricas calculadas e funciona com atribuição, fluxo, fallout etc.
 
 * Para dimensões, você pode incluir ou excluir automaticamente apenas determinados valores em um campo específico. Por exemplo, se um desenvolvedor enviar um valor incorreto de `dev mistake` em um campo, você poderá facilmente excluí-lo dos relatórios usando uma regra de exclusão. A dimensão se comporta como se o valor errado nunca tivesse existido nos dados.
 

@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 3812b10e558c1b8a3ee4fe474405543c68433d8e
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Este artigo explica os conceitos e recursos gerais sobre conjuntos de dados e co
 
 Os conjuntos de dados são as fontes de uma conexão. Como parte da configuração de uma conexão, você define conjuntos de dados como parte dessa conexão.
 
-Os contêineres são usados no Customer Journey Analytics para oferecer suporte e facilitar recursos como filtros, métricas calculadas e recursos de análise avançados.
+Os contêineres são usados no Customer Journey Analytics para oferecer suporte e facilitar recursos como segmentos, métricas calculadas e recursos avançados de análise.
 
 
 

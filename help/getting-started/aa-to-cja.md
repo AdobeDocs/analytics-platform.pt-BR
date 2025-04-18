@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: e93f4875bbb5940d9182aadcefcc7166644434c4
+source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
@@ -70,7 +70,7 @@ Essa mudança resultará em algumas diferenças no modo como os dados são relat
 
 ### Identificar segmentos críticos e métricas calculadas {#segments-calcmetrics}
 
-Os segmentos do Adobe Analytics (chamados de [!UICONTROL filtros] no Customer Journey Analytics) e as métricas calculadas não são compatíveis com o Customer Journey Analytics. Em muitos casos, esses componentes podem ser recriados no Customer Journey Analytics usando os novos esquemas e dados disponíveis.
+Os segmentos e as métricas calculadas do Adobe Analytics não são compatíveis com o Customer Journey Analytics. Em muitos casos, esses componentes podem ser recriados no Customer Journey Analytics usando os novos esquemas e dados disponíveis.
 
 Para tornar a experiência o mais suave possível para os usuários durante a transição entre os sistemas, planeje com antecedência
 
@@ -78,7 +78,7 @@ Para tornar a experiência o mais suave possível para os usuários durante a tr
 
 2. Documentando suas definições, e
 
-3. Identificando quais campos serão necessários nos dados para replicá-los no Customer Journey Analytics como [filtros](/help/components/filters/filters-overview.md) e [métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md).
+3. Identificando quais campos serão necessários nos dados para replicá-los no Customer Journey Analytics como [Segmentos](/help/components/filters/filters-overview.md) e [Métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md).
 
 Estes são alguns vídeos para orientá-lo:
 
