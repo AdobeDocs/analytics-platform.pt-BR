@@ -4,10 +4,10 @@ title: Página inicial do Customer Journey Analytics
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -18,7 +18,7 @@ A página de destino do Customer Journey Analytics destaca o [!DNL Analysis Work
 
 >[!BEGINSHADEBOX]
 
-Consulte a ![Página de aterrissagem do VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [no Analysis Workspace](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Página de destino no Analysis Workspace](https://video.tv.adobe.com/v/334278/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -53,7 +53,7 @@ A guia **[!UICONTROL Aprendizado]** contém tours práticos em vídeo, tutoriais
 
 >[!NOTE]
 >
->Várias das seguintes configurações persistem durante a sessão e entre sessões. Por exemplo, a guia selecionada, os filtros selecionados, as colunas selecionadas e a direção de classificação da coluna. Os resultados da pesquisa não são persistentes.
+>Várias das seguintes configurações persistem durante a sessão e entre sessões. Por exemplo, a guia selecionada, os segmentos selecionados, as colunas selecionadas e a direção de classificação da coluna. Os resultados da pesquisa não são persistentes.
 
 Consulte [Projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md) para obter mais informações.
 

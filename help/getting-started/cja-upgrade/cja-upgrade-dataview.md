@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 95%
+ht-degree: 90%
 
 ---
 
@@ -51,7 +51,7 @@ Para criar uma visualização de dados:
 
    Para obter informações detalhadas sobre as opções disponíveis ao adicionar componentes a uma visualização de dados, consulte [Componentes](/help/data-views/create-dataview.md#components) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md).
 
-1. Selecione a guia [!UICONTROL **Configurações**]. Aqui, você pode configurar filtros para aplicar a toda a visualização de dados e definir o tempo limite e as métricas da sessão.
+1. Selecione a guia [!UICONTROL **Configurações**]. Aqui, você pode configurar segmentos para aplicar a toda a sua visualização de dados e configurar o tempo limite da sessão e as métricas.
 
    Para obter informações detalhadas sobre as opções disponíveis ao definir configurações em uma visualização de dados, consulte [Configurações](/help/data-views/create-dataview.md#settings) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md).
 
