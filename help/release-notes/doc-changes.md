@@ -4,7 +4,7 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 5311106f486a30dbc7f06b3ef60dc7e666d2fe03
+source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
 workflow-type: tm+mt
 source-wordcount: '4716'
 ht-degree: 98%
@@ -23,7 +23,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Visualizar e gerenciar o uso | A documentação sobre como [exibir](/help/connections/manage-connections.md#usage) e [gerenciar](/help/technotes/estimate-usage.md) o uso do Customer Journey Analytics foi retrabalhada |
 | Análise de conteúdo | [Documentação](/help/content-analytics/content-analytics.md) do Adobe Content Analytics. O Content Analytics permite investigar de maneira rápida e fácil grandes volumes de dados de conteúdo para descobrir tendências, detectar anomalias, identificar a fadiga do conteúdo e obter insights sobre a exposição do conteúdo. |
 | **Março de 2025** | |
-| Casos de uso do Quantum Metric | Adição de casos de uso para coleta de dados do [Quantum Metric](/help/use-cases/third-party/quantum-metric/collect-session-id.md). |
+| Casos de uso do Quantum Metric | Adição de casos de uso para coleta de dados do [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
 | **Fevereiro de 2025** |  |
 | Coleção de mídia: atualizações do conector de origem da Adobe para o novo XDM de relatórios de mídia | O conector de origem do Analytics [mapeia os dados de transmissão de mídia no Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) automaticamente para os mesmos campos usados pelo SDK da web. Antes, os dados eram mapeados para os locais antigo e novo, mas somente o novo local será usado no futuro.  |
 | Extensão BI: compatibilidade expandida | A extensão BI do Customer Journey Analytics agora é compatível com [Looker, Jupyter Notebook e R Studio](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |

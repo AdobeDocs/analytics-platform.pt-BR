@@ -1,15 +1,15 @@
 ---
 title: Adicionar eventos de atrito de Métrica quântica ao Customer Journey Analytics
-description: Adicione profundidades aos insights no Customer Journey Analytics usando eventos de atrito coletados na Métrica quântica.
+description: Adicionar eventos de atrito coletados pela Métrica quântica aos dados comportamentais do Customer Journey Analytics para adicionar profundidade aos insights no CJA.
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: 1774ef63e3578f7016a95716fcfa11a0c7c627ce
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,20 @@ Este caso de uso tem dois requisitos:
 
 ## Etapa 1: Capturar eventos de atrito usando a extensão de tag da Métrica Quantum
 
-A equipe de CSM da Métrica Quantum pode ajudar você a determinar os elementos de esquema corretos para adicionar e instruir você a modificar sua implementação para coletar os dados desejados para uso no Customer Journey Analytics. Entre em contato com o gerente de sucesso do cliente da Métrica Quantum para obter mais informações.
+Consulte [Extensão de métrica quântica](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) no guia de destinos do Adobe Experience Platform para obter instruções sobre como configurar suas tags para incluir dados de métrica quântica. O uso dessa extensão passa mais linhas para um conjunto de dados existente.
 
-Por fim, convém começar a rastrear o nome do evento de atrito em um campo.
+Use tags na Coleção de dados da Adobe Experience Platform para definir manualmente o nome do evento de atrito, para que ele possa ser incluído no objeto XDM e analisado. Uma maneira de fazer isso é usando o código personalizado da regra:
 
-## Etapa 2: Confirmar campos incluídos do conjunto de dados
+```js
+_satellite.setVar('qm_error_name','error rage click');
+return true;
+```
 
-Confirme se os conjuntos de dados na sua conexão agora têm a ID de sessão de Métrica quântica no conjunto de dados desejado.
+Em seguida, adicione o elemento de dados definido dinamicamente ao objeto XDM:
 
-## Etapa 3: adicionar uma ou mais dimensões e métricas à visualização de dados no Customer Journey Analytics
+![Captura de tela de nome de erro de Métrica Quântica](assets/error-name.png)
+
+## Etapa 2: adicionar uma ou mais dimensões e métricas à visualização de dados no Customer Journey Analytics
 
 Edite sua visualização de dados existente para adicionar a ID da sessão como uma dimensão disponível no Customer Journey Analytics.
 
@@ -45,8 +50,9 @@ Edite sua visualização de dados existente para adicionar a ID da sessão como 
 1. Localize a lista de campos de evento de atrito Métrica quântica à esquerda e arraste-a para a área de métricas no centro.
 1. No painel direito, defina a configuração [Incluir/Excluir valores](/help/data-views/component-settings/include-exclude-values.md) para os eventos de atrito desejados. É possível adicionar vários eventos de atrito à mesma métrica para combiná-los. Você também pode arrastar outra cópia do campo de eventos de atrito para a área de métricas para rastrear outros eventos de atrito como uma métrica separada.
 1. Depois de criar todas as dimensões e métricas desejadas, clique em **[!UICONTROL Salvar]**.
+1. Para obter uma lista completa de eventos de erro, consulte a documentação da Métrica quântica. Se você tiver dúvidas adicionais, entre em contato com o representante de suporte ao cliente da Quantum Metric ou envie uma solicitação por meio do [Portal de solicitação do cliente da Quantum Metric](https://community.quantummetric.com/s/public-support-page).
 
-## Etapa 4: use a dimensão e as métricas com o restante dos dados no Analysis Workspace
+## Etapa 3: usar a dimensão e as métricas com o restante dos dados no Analysis Workspace
 
 Com os dados do evento de atrito de Métrica quântica coletados junto com o restante dos dados do visitante, é possível usá-los exatamente como faria com qualquer outra dimensão ou métrica no Customer Journey Analytics.
 
