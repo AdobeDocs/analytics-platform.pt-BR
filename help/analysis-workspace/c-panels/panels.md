@@ -4,7 +4,7 @@ title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 305ae20c48ddf0f2032b8f92a016eb92427016ed
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 97%
@@ -136,26 +136,26 @@ Selecione **[!UICONTROL Aplicar a todos os painéis]** para aplicar o intervalo 
 
 A área de destino do painel permite aplicar segmentos e segmentos suspensos a todas as tabelas e visualizações em um painel. É possível aplicar um ou mais segmentos a um painel.
 
-### Filtros
+### Segmentos
 
-Arraste e solte os segmentos do painel à esquerda na área de destino do painel para começar a segmentá-lo. Repita esse processo para adicionar mais segmentos ao painel. Os filtros aparecem lado a lado na parte superior do painel.
+Arraste e solte os segmentos do painel à esquerda na área de destino do painel para começar a segmentá-lo. Repita esse processo para adicionar mais segmentos ao painel. Os segmentos aparecem lado a lado na parte superior do painel.
 
 ![O painel esquerdo mostra as métricas disponíveis e a métrica Cliente de dispositivo móvel arrastada para a área de destino do painel.](assets/segment-filter.png)
 
 #### Segmentos rápidos
 
-Além dos segmentos, também é possível arrastar outros tipos de componentes diretamente para a zona de destino para criar segmentos rápidos, economizando o tempo e esforço de usar o [Construtor de segmentos](/help/components/filters/filter-builder.md). Os filtros criados dessa maneira são definidos automaticamente como segmentos de nível de evento. Para modificar rapidamente essa definição, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado do nome do segmento.
+Além dos segmentos, também é possível arrastar outros tipos de componentes diretamente para a zona de destino para criar segmentos rápidos, economizando o tempo e esforço de usar o [Construtor de segmentos](/help/components/filters/filter-builder.md). Segmentos criados dessa forma são definidos automaticamente como segmentos em nível de evento. Para modificar rapidamente essa definição, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado do nome do segmento.
 
 
 Para obter mais informações consulte [Segmentos rápidos](/help/components/filters/quick-filters.md).
 
 ![Segmentos ad hoc tornados públicos e colocados na zona de soltar](assets/adhoc-segment-filter.png)
 
-### Filtros suspensos
+### Segmentos suspensos
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtros suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 

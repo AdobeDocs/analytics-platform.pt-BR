@@ -4,10 +4,10 @@ title: Resumo da métrica principal
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ Esta visualização aborda vários casos de uso comuns, incluindo:
 
 1. Adicionar uma visualização de  ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTROL Resumo das métricas principais]**. Consulte [Adicionar uma visualização a um painel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
-1. Para configurar a visualização, selecione uma **[!UICONTROL Métrica]**, um **[!UICONTROL Intervalo de datas principal]**, um **[!UICONTROL Intervalo de datas de comparação]** (opcional) e um **[!UICONTROL Filtro]** (opcional):
+1. Configure a visualização selecionando uma **[!UICONTROL Métrica]**, um **[!UICONTROL Intervalo de datas principal]**, um **[!UICONTROL Intervalo de datas de comparação]** (opcional) e um **[!UICONTROL Segmento]** (opcional):
 
    ![Configuração da métrica principal, mostrando as opções de métrica, intervalo de datas principal, intervalo de datas de comparação e segmento.](assets/key-metrics-config.png)
 
@@ -61,7 +61,7 @@ Esta visualização aborda vários casos de uso comuns, incluindo:
    | **[!UICONTROL Métrica]** | Selecione a métrica que deseja examinar. Todas as métricas são compatíveis. |
    | **[!UICONTROL Intervalo de datas principal]** | O intervalo de datas atual da tabela de forma livre.<p>Escolha qualquer intervalo de datas disponível na visualização de dados.</p> <p>Escolha [!UICONTROL **Intervalo de datas do painel**] se quiser usar o mesmo intervalo de datas que está sendo usado no painel onde a visualização está localizada.</p> |
    | **[!UICONTROL Intervalo de datas de comparação]** | O intervalo de datas com o qual você deseja comparar o intervalo de datas principal. |
-   | **[!UICONTROL Filtro (opcional)]** | Qualquer segmento em que você esteja interessado neste resumo. |
+   | **[!UICONTROL Segmento (opcional)]** | Qualquer segmento em que você esteja interessado neste resumo. |
 
    {style="table-layout:auto"}
 

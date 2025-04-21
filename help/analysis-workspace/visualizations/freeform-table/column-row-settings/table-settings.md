@@ -4,10 +4,10 @@ title: Configurações de linha
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
@@ -47,8 +47,8 @@ As opções de menu de contexto a seguir estão disponíveis ao selecionar o cab
 
 | Opção | Descrição |
 | --- | --- |
-| **[!UICONTROL Copiar seleção para a área de transferência]** | Copia a seleção da visualização para a área de transferência. |
-| **[!UICONTROL Baixar itens como CSV (*nome da dimensão*)]** | Baixe imediatamente os itens de dimensão (até um máximo de 50.000) da visualização para o dispositivo local. Há um limite de 50.000 itens de dimensão para a dimensão selecionada. |
+| **[!UICONTROL Copiar seleção para a área de transferência]** | Copiar a seleção da visualização para a área de transferência. |
+| **[!UICONTROL Baixar itens como CSV (*nome da dimensão*)]** | Baixe imediatamente os itens de dimensão (até um máximo de 50.000) da visualização no dispositivo local. Há um limite de 50.000 itens de dimensão para a dimensão selecionada. |
 | **[!UICONTROL Baixar seleção como CSV]** | Baixe imediatamente os itens de dimensão da visualização para o dispositivo local. |
 | **[!UICONTROL Criar hiperlinks para todos os itens de dimensão]** | Cria hiperlinks para todos os itens de dimensão. Consulte [Hiperlinks para dimensões em uma tabela de forma livre](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Editar hiperlinks de todos os itens de dimensão]** | Edita hiperlinks em todos os itens de dimensão. Consulte [Hiperlinks para dimensões em uma tabela de forma livre](../freeform-table-hyperlinks.md) |
@@ -66,12 +66,12 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 | **[!UICONTROL Criar hiperlink]** | Cria um hiperlink para o item. Consulte [Hiperlinks para dimensões em uma tabela de forma livre](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Editar hiperlink]** | Edita um hiperlink do item. Consulte [Hiperlinks para dimensões em uma tabela de forma livre](../freeform-table-hyperlinks.md) |
 | **[!UICONTROL Remover hiperlink]** | Remove um hiperlink do item. Consulte [Hiperlinks para dimensões em uma tabela de forma livre](../freeform-table-hyperlinks.md) |
-| **[!UICONTROL Detalhamento]** | Detalha o item de dimensão. Selecione na lista de **[!UICONTROL Dimensões]**, **[!UICONTROL Métricas]**, **[!UICONTROL Filtros]** ou **[!UICONTROL Intervalos de datas]**. Para realizar uma pesquisa alternativa de um componente, utilize *Pesquisa*. |
+| **[!UICONTROL Detalhamento]** | Detalha o item de dimensão. Selecione na lista de **[!UICONTROL Dimensões]**, **[!UICONTROL Métricas]**, **[!UICONTROL Segmentos]** ou **[!UICONTROL Intervalos de datas]**. Para realizar uma pesquisa alternativa de um componente, utilize *Pesquisa*. |
 | **[!UICONTROL Excluir selecionados]** | Excluir as linhas (itens) selecionadas. |
 | **[!UICONTROL Seleção de tendências]** | Cria uma visualização de gráfico de linhas de tendência para a seleção. |
 | **[!UICONTROL Exibir somente as linhas selecionadas]** | Exibe somente as linhas selecionadas na visualização. |
 | **[!UICONTROL Exibir todas as linhas]** | Exibe todas as linhas na visualização. |
-| **[!UICONTROL Criar segmento a partir da seleção]** | Abra o **[!UICONTROL Construtor de filtros]** para criar um segmento a partir da seleção. |
+| **[!UICONTROL Criar segmento a partir da seleção]** | Abra o **[!UICONTROL Construtor de segmentos]** para criar um segmento a partir da seleção. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Abre a caixa de diálogo **[!UICONTROL Criar público-alvo]** para criar um público-alvo a partir da seleção. |
 
 As opções adicionais de menu de contexto a seguir estão disponíveis ao selecionar um cabeçalho de coluna de métrica.
@@ -85,7 +85,7 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 | **[!UICONTROL Comparar modelo de atribuição]** | Permite especificar um novo modelo de atribuição e compará-lo ao modelo de atribuição da coluna selecionada. Uma nova coluna é adicionada com as métricas do novo modelo de atribuição. Além disso, uma coluna de Variação porcentual é adicionada para comparação. |
 | **[!UICONTROL Redefinir larguras de coluna]** | Redefine as larguras das colunas para a largura padrão. |
 | **[!UICONTROL Criar anotação a partir da seleção]** | Abre os **[!UICONTROL detalhes da anotação]** para adicionar uma anotação. |
-| **[!UICONTROL Criar segmento a partir da seleção]** | Abra o **[!UICONTROL Construtor de filtros]** para criar um segmento a partir da seleção. |
+| **[!UICONTROL Criar segmento a partir da seleção]** | Abra o **[!UICONTROL Construtor de segmentos]** para criar um segmento a partir da seleção. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Abre a caixa de diálogo **[!UICONTROL Criar público-alvo]** para criar um público-alvo a partir da seleção. |
 
 ## Alterar altura da linha

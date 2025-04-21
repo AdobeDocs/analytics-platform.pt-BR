@@ -4,10 +4,10 @@ title: Como configurar uma visualização de fluxo
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -118,7 +118,7 @@ Use um menu de contexto em qualquer nó na visualização de fluxo com as seguin
 |--- |--- |
 | **[!UICONTROL Concentre-se neste nó]** | Altere o foco para o nó selecionado. O nó de foco é exibido no centro do diagrama de fluxo. |
 | **[!UICONTROL Começar de novo]** | Retorna ao criador de diagrama de forma livre, no qual é possível criar um novo diagrama de fluxo. |
-| **[!UICONTROL Criar um filtro para este caminho]** | Criar um filtro. Essa seleção leva ao criador de filtros, onde é possível configurar o novo filtro. |
+| **[!UICONTROL Criar um segmento para este caminho]** | Criar um segmento. Essa seleção leva você ao Construtor de segmentos, onde é possível configurar o novo segmento. |
 | **[!UICONTROL Detalhamento]** | Detalhe o nó por Dimensões, Métricas ou Tempo disponíveis. |
 | **[!UICONTROL Filtrar coluna]** | As mesmas opções de filtro são exibidas conforme disponíveis na tabela de forma livre. Para obter mais informações sobre as opções disponíveis, consulte a seção “Aplicar um filtro simples ou avançado em uma tabela” em [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). |
 | **[!UICONTROL Excluir item]** ou **[!UICONTROL Restaurar itens excluídos]** | Remove um nó específico da coluna e o cria automaticamente como filtro na parte superior da coluna. Para restaurar o item excluído, selecione **[!UICONTROL Restaurar item excluído]** no menu de contexto. você também pode abrir o segmento na parte superior da coluna e remover a caixa de seleção com o item que acabou de excluir. |

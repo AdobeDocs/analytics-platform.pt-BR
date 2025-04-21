@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '985'
 ht-degree: 93%
 
 ---
@@ -70,7 +70,6 @@ Consulte [Controle de acesso](/help/technotes/access-control.md).
 
 Vários recursos do Adobe Analytics tradicional foram renomeados no Customer Journey Analytics para se alinhar aos padrões do setor. Alguns termos atualizados incluem:
 
-* Os segmentos agora são conhecidos como “Filtros”.
 * Os conjuntos de relatórios virtuais agora são conhecidos como “Visualizações de dados”.
 * As classificações agora são conhecidas como “Conjuntos de dados de pesquisa”.
 * Os atributos do cliente agora são conhecidos como “Conjuntos de dados de perfil”.

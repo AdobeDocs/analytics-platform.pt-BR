@@ -5,7 +5,7 @@ title: Aplicar segmentos na análise de fallout
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 38%
@@ -18,7 +18,7 @@ Você pode criar segmentos a partir de um ponto de contato, adicionar segmentos 
 
 >[!IMPORTANT]
 >
->Os filtros usados como pontos de verificação no Fallout devem usar um contêiner que esteja em um nível inferior ao contexto geral da visualização do Fallout. Com um Fallout de contexto de pessoa, os segmentos usados como pontos de verificação devem ser segmentos baseados em sessão ou evento. Com um Fallout de contexto de sessão, os segmentos usados como ponto de verificação devem ser segmentos baseados em eventos. Se você usar uma combinação inválida, o fallout será de 100%. Você vê um aviso para a visualização de Fallout ao adicionar um segmento incompatível como ponto de contato. Determinadas combinações inválidas de contêineres de segmento resultam em diagramas de Fallout inválidos, por exemplo:
+>Os segmentos usados como pontos de verificação no Fallout devem usar um contêiner que esteja em um nível inferior ao contexto geral da visualização do Fallout. Com um Fallout de contexto de pessoa, os segmentos usados como pontos de verificação devem ser segmentos baseados em sessão ou evento. Com um Fallout de contexto de sessão, os segmentos usados como ponto de verificação devem ser segmentos baseados em eventos. Se você usar uma combinação inválida, o fallout será de 100%. Você vê um aviso para a visualização de Fallout ao adicionar um segmento incompatível como ponto de contato. Determinadas combinações inválidas de contêineres de segmento resultam em diagramas de Fallout inválidos, por exemplo:
 >
 >* Usar um segmento com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de pessoas
 >* Usar um segmento com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de sessão
@@ -30,9 +30,9 @@ Você pode criar segmentos a partir de um ponto de contato, adicionar segmentos 
 
    ![O menu suspenso Ponto de Contato com a opção Criar segmento a partir do ponto de contato realçada.](assets/fallout-createfilter.png)
 
-   O [!UICONTROL Construtor de filtros] abre, preenchido previamente com o segmento sequencial pré-construído que corresponde ao ponto de contato selecionado:
+   O [!UICONTROL Construtor de segmentos] é aberto, preenchido previamente com o segmento sequencial pré-construído que corresponde ao ponto de contato selecionado:
 
-   ![O Construtor de Filtros exibe o segmento sequencial pré-preenchido e pré-construído.](assets/fallout-definefilter.png)
+   ![O Construtor de segmentos exibe o segmento sequencial pré-preenchido e pré-construído.](assets/fallout-definefilter.png)
 
 1. Atribua um título e uma descrição ao segmento e salve-o.
 
@@ -50,8 +50,8 @@ Ou, você pode criar um ponto de contato AND, arrastando o segmento de usuários
 
 É possível comparar um número ilimitado de segmentos na visualização de Fallout.
 
-1. Selecione os segmentos que você deseja comparar no painel [!UICONTROL Filtro] à esquerda. No exemplo, três segmentos são selecionados: *Detalhes do voo: Versão da página A*, *Detalhes do voo: Versão da página B* e *Detalhes do voo: Versão da página C*.
-1. Arraste os três segmentos até a área de Filtro na parte superior da visualização.
+1. Selecione os segmentos que você deseja comparar no painel [!UICONTROL Segmento] à esquerda. No exemplo, três segmentos são selecionados: *Detalhes do voo: Versão da página A*, *Detalhes do voo: Versão da página B* e *Detalhes do voo: Versão da página C*.
+1. Arraste os três segmentos até a área de soltar Segmentos na parte superior da visualização.
 
 
 1. Opcional: Você pode manter *Todas as visitas* como o contêiner padrão ou excluir o contêiner.
