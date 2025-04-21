@@ -5,9 +5,10 @@ feature: Workspace Basics
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 11e6d5a2aace4554b48c05c2316061de1e628108
+exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
+source-git-commit: ca619cfd0c4f4329c7069e387b5b4d919a53e9fb
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1683'
 ht-degree: 0%
 
 ---
@@ -24,6 +25,10 @@ Os comentários no Analysis Workspace permitem compartilhar insights e fazer per
 >* **Organização:** o administrador do Customer Journey Analytics pode desabilitar esta funcionalidade para a organização, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md).
 
 ## Exibir comentários
+
+Você pode exibir comentários da área de comentários no painel direito ou do selo de comentários, se existir.
+
+![Exibir comentários no Analysis Workspace](assets/workspace-comments-view.png)
 
 ### Exibir comentários na área de comentários
 
@@ -61,6 +66,12 @@ Para comentar em uma área específica do projeto (como um valor de métrica em 
 
 1. Com o projeto aberto no Analysis Workspace, clique com o botão direito do mouse na área do projeto em que deseja inserir o comentário.
 
+   Todas as visualizações oferecem suporte a selos de comentário no cabeçalho da visualização, mas somente as seguintes visualizações oferecem suporte a selos de comentário em pontos de dados específicos na visualização:
+
+   * Tabela de forma livre
+   * Tabela de coorte
+   * Linha
+
    <!--add screenshot-->
 
 1. Selecione **[!UICONTROL Adicionar comentário]**.
@@ -97,6 +108,8 @@ O recurso de comentário no Analysis Workspace facilita a colaboração com outr
 
 1. Digite o símbolo @ e comece a digitar o nome, sobrenome ou endereço de email da pessoa que deseja incluir.
 
+   ![usuário da tag](assets/comments-tag-user.png)
+
 1. Selecione o nome da pessoa quando ele for exibido no menu suspenso.
 
 Considere o seguinte ao usar o símbolo @ para incluir pessoas em um comentário:
@@ -122,6 +135,38 @@ Considere o seguinte ao usar o símbolo @ para incluir pessoas em um comentário
 1. (Opcional) Notifique outra pessoa sobre seu comentário digitando o símbolo @ seguido pelo nome. Para obter mais informações sobre como usar o símbolo @ para notificar outros, consulte [Incluir outros em um comentário](#include-others-in-a-comment).
 
 1. Selecione **[!UICONTROL Enviar]**.
+
+## Inserir um selo para um comentário existente
+
+Se um comentário estiver disponível na área comentários no painel direito, mas ainda não tiver uma medalha no projeto, você poderá adicionar a medalha.
+
+1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace.
+
+1. Selecione o ícone de mais ![comment-more-icon](assets/comment-more-icon.png) ao lado do comentário para o qual você deseja colocar uma medalha e selecione **[!UICONTROL Colocar medalha]**.
+
+1. Selecione a área do projeto na qual você deseja colocar o selo do comentário existente.
+
+   Uma **medalha de comentário** ![medalha de comentário](assets/comment-indicator.png) é colocada na área do projeto Workspace selecionado. O comentário também aparece na parte superior da área de comentários no painel direito.
+
+   Consulte [Exibir selos de comentário em um projeto](#view-comment-badges-in-a-project) para obter mais informações.
+
+Para remover um selo:
+
+1. Selecione o selo que deseja remover e selecione **[!UICONTROL Remover selo]**.
+
+   O selo é removido, mas o comentário ainda está disponível na área de comentários no painel direito.
+
+## Mover uma medalha para um comentário existente
+
+Você pode mover um selo de comentário que já esteja posicionado para um comentário existente.
+
+1. Com o projeto aberto no Analysis Workspace, localize o selo do comentário que você deseja mover.
+
+1. Clique com o botão direito do mouse no selo e selecione **[!UICONTROL Mover posicionamento]**.
+
+1. Selecione a área do projeto na qual você deseja colocar o selo.
+
+<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
 
 ## Copiar o link para um comentário
 
@@ -182,36 +227,3 @@ Para resolver um comentário:
 Por padrão, os comentários resolvidos ficam ocultos na área de comentários. Para mostrar comentários resolvidos:
 
 1. Selecione o ícone de filtro na área de comentários e desmarque a opção **[!UICONTROL Ocultar comentários resolvidos]**.
-
-## Inserir um selo para um comentário existente
-
-Se um comentário estiver disponível na área comentários no painel direito, mas ainda não tiver uma medalha no projeto, você poderá adicionar a medalha.
-
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace.
-
-1. Selecione o ícone de mais ![comment-more-icon](assets/comment-more-icon.png) ao lado do comentário para o qual você deseja colocar uma medalha e selecione **[!UICONTROL Colocar medalha]**.
-
-1. Selecione a área do projeto na qual você deseja colocar o selo do comentário existente.
-
-   Uma **medalha de comentário** ![medalha de comentário](assets/comment-indicator.png) é colocada na área do projeto Workspace selecionado. O comentário também aparece na parte superior da área de comentários no painel direito.
-
-   Consulte [Exibir selos de comentário em um projeto](#view-comment-badges-in-a-project) para obter mais informações.
-
-Para remover um selo:
-
-1. Selecione o selo que deseja remover e selecione **[!UICONTROL Remover selo]**.
-
-   O selo é removido, mas o comentário ainda está disponível na área de comentários no painel direito.
-
-## Mover uma medalha para um comentário existente
-
-Você pode mover um selo de comentário que já esteja posicionado para um comentário existente.
-
-1. Com o projeto aberto no Analysis Workspace, localize o selo do comentário que você deseja mover.
-
-1. Clique com o botão direito do mouse no selo e selecione **[!UICONTROL Mover posicionamento]**.
-
-1. Selecione a área do projeto na qual você deseja colocar o selo.
-
-<!-- add section about adding images to comments. will be available at GA. Include that "you can have a maximum of 5 images per comment, and each image can be up to 2 MB." -->
-
