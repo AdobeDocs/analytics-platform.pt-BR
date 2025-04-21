@@ -1,12 +1,12 @@
 ---
-description: O Criador de métricas calculadas oferece uma tela para arrastar e soltar dimensões, métricas, filtros e funções a fim de criar métricas personalizadas com base em lógicas de hierarquia de container, regras e operadores. Essa ferramenta de desenvolvimento integrado permite criar e salvar métricas calculadas simples ou métricas calculadas avançadas complexas.
+description: O Criador de métricas calculadas oferece uma tela para arrastar e soltar dimensões, métricas, segmentos e funções a fim de criar métricas personalizadas com base em lógicas de hierarquia de contêiner, regras e operadores. Essa ferramenta de desenvolvimento integrado permite criar e salvar métricas calculadas simples ou avançadas e mais complexas.
 title: Criar métricas calculadas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1705'
-ht-degree: 72%
+ht-degree: 71%
 
 ---
 
@@ -156,7 +156,7 @@ Use o conceito de um contêiner de segmento para criar uma [métrica segmentada]
 * Para adicionar um contêiner de segmento de uma dimensão:
 
    1. Arraste e solte um componente ![Dimensões](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensões]** do painel Componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, segmentos e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
-   1. No pop-up **[!UICONTROL Criar filtro a partir do Dimension]**, defina a condição do segmento. Selecione um valor na lista de operadores ou insira um valor. Por exemplo, **[!UICONTROL Mês]** **[!UICONTROL é igual a]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+   1. No pop-up **[!UICONTROL Criar segmento a partir do Dimension]**, defina a condição do segmento. Selecione um valor na lista de operadores ou insira um valor. Por exemplo, **[!UICONTROL Mês]** **[!UICONTROL é igual a]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
    1. Selecione **[!UICONTROL Concluído]**. Um contêiner de segmento foi adicionado à **[!UICONTROL Definição]**.
 
 
@@ -165,11 +165,11 @@ Use o conceito de um contêiner de segmento para criar uma [métrica segmentada]
    * Arraste e solte um componente ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmentos]** do painel de componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, segmentos e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar segmentos específicos.
 Automaticamente, um contêiner de segmento é adicionado à **[!UICONTROL Definição]**, usando o nome do segmento.
 
-   * Arraste e solte um componente de ![Segmentation](/help/assets/icons/Segmentation.svg) **[!UICONTROL Filtros]** do painel de componentes em um container genérico. O contêiner é modificado em um contêiner de segmento.
+   * Arraste e solte um componente ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmento]** do painel componentes em um contêiner genérico. O contêiner é modificado em um contêiner de segmento.
 
    * Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** de dentro de um container:
 
-      1. Selecione **[!UICONTROL Filtro]**. Um contêiner de segmento foi adicionado à **[!UICONTROL Definição]**.
+      1. Selecione **[!UICONTROL Segmento]**. Um contêiner de segmento foi adicionado à **[!UICONTROL Definição]**.
       1. No novo contêiner de segmento, selecione um segmento no menu suspenso [!UICONTROL *Selecionar...*].
 
   >[!TIP]
@@ -182,7 +182,7 @@ Para remover um segmento de um contêiner:
 
 * Selecione ![Fechar](/help/assets/icons/Close.svg) ao lado do nome do segmento.
 
-Consulte [Métricas filtradas](metrics-with-segments.md) para mais detalhes e exemplos.
+Consulte [Métricas segmentadas](metrics-with-segments.md) para obter mais detalhes e exemplos.
 
 #### Container de função
 
@@ -218,6 +218,6 @@ Para excluir um container, selecione ![Fechar](/help/assets/icons/Close.svg) no 
 >[!MORELIKETHIS]
 >
 >[Usar funções](cm-using-functions.md)
->[Filtros](/help/components/filters/filters-overview.md)
+>[Segmentos ](/help/components/filters/filters-overview.md)
 >
 

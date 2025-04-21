@@ -3,7 +3,7 @@ description: A segmentação de métricas individuais permite fazer comparaçõe
 title: Métricas segmentadas
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 2f87afb9c87b0436ee40cc67a04d99d4f4f10e74
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Consulte as seções abaixo para ilustrar como as métricas segmentadas podem aj
 
    Seu segmento pode se parecer com.
 
-   ![Filtrar Alemanha](assets/filter-germany.png)
+   ![Segmento Alemanha](assets/filter-germany.png)
 
 1. De volta ao Criador de métrica calculada, use o segmento para atualizar a métrica calculada.
 
@@ -52,7 +52,7 @@ Repita as etapas acima para a versão internacional da sua métrica calculada.
 
    Seu segmento deve parecer com.
 
-   ![Filtrar Alemanha](assets/filter-not-germany.png)
+   ![Segmento Alemanha](assets/filter-not-germany.png)
 
 1. De volta ao Criador de métrica calculada, use o segmento para atualizar a métrica calculada.
 

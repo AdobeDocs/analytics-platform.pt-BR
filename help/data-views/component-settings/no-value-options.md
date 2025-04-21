@@ -5,7 +5,7 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 1a696662f10fddd42f3bbdbb79a6e735bf203bdf
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 58%
@@ -43,7 +43,7 @@ Ao usar um valor numérico como uma dimensão, você pode
 
 * Configure a opção &quot;Nenhum valor&quot; em uma visualização de dados. Observe que todas as configurações mostradas acima são suportadas, exceto para **[!UICONTROL Tratar &quot;Nenhum valor&quot; como um valor]**.
 * Use **[!UICONTROL Incluir &quot;Nenhum valor&quot;]** para dimensões numéricas em uma tabela de Forma livre no Workspace.
-* No Construtor de filtros, use os operadores **[!UICONTROL existe]** ou **[!UICONTROL não existe]** com dimensões numéricas.
+* No Construtor de segmentos, use os operadores **[!UICONTROL existe]** ou **[!UICONTROL não existe]** com dimensões numéricas.
 
 
 >[!MORELIKETHIS]

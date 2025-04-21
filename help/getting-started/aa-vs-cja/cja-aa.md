@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 96%
+source-wordcount: '2441'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | Recurso | Mais detalhes |
 | --- | --- |
 | **Capacidade de combinar conjuntos de dados (como conjuntos de relatórios do Adobe Analytics)** | O Customer Journey Analytics permite [combinar dados](/help/connections/combined-dataset.md) de vários conjuntos de relatórios como se fossem um único conjunto de relatórios no Adobe Analytics. |
-| **Acomodação de qualquer tipo de dados** | O Customer Journey Analytics possui a habilidade da Experience Platform de armazenar toda espécie de esquemas de dados e tipos. Com o [Modelo de dados de experiência (XDM)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home), os dados podem ser representados e organizados uniformemente, para que estejam prontos para combinação e exploração. O Adobe Analytics foca predominantemente em dados de análise móveis e da Web com alguns recursos de [importação de dados](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=pt-BR). |
+| **Acomodação de qualquer tipo de dados** | O Customer Journey Analytics possui a habilidade da Experience Platform de armazenar toda espécie de esquemas de dados e tipos. Com o [Experience Data Model (XDM)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home), os dados podem ser representados e organizados uniformemente, para que estejam prontos para combinação e exploração. O Adobe Analytics foca predominantemente em dados de análise móveis e da Web com alguns recursos de [importação de dados](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=pt-BR). |
 | **Extensão BI** | A [Extensão BI](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/data-export/bi-extension) permite conectar o CJA diretamente às ferramentas de visualização BI populares, como o PowerBI ou o Tableau. Ao usar essa extensão, você pode fazer com que seus relatórios BI correspondam exatamente ao que você vê no Analysis Workspace e em outras interfaces de relatórios do CJA. Essa é uma maneira muito mais fácil de obter relatórios BI para o CJA sem a necessidade de recriar relatórios/métricas de dados brutos. |
 | **Content Analytics** | [O Content Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics) ajuda os profissionais de marketing a entender como o conteúdo afeta os indicadores-chave de desempenho definidos por uma empresa. Além dos dados comportamentais, o Content Analytics coleta dados sobre como o conteúdo é consumido e como as unidades de conteúdo afetam. |
 | **Análise entre dispositivos** | O Customer Journey Analytics permite a combinação contínua de conjuntos de dados específicos de dispositivos a partir de sessões autenticadas e não autenticadas. O Customer Journey Analytics oferece o preenchimento retroativo de dados históricos para dispositivos conhecidos. No Adobe Analytics, esse recurso é limitado a um único conjunto de relatórios e ao uso de um gráfico de dispositivo. |
@@ -63,7 +63,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | **Variáveis/propriedades de lista** | Suporte completo. O Customer Journey Analytics usa o XDM e oferece suporte a matrizes de string ilimitadas que podem ser usadas de forma semelhante a listVars. |
 | **eVar de merchandising** | Suporte completo por meio de [dimensões e métricas de vinculação](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/persistence#binding-dimension) |
 | **Métricas** | Suporte completo: o Customer Journey Analytics usa o Experience Data Model (XDM), oferece suporte a métricas ilimitadas e não está vinculado aos eventos de sucesso personalizados do Adobe Analytics. Algumas métricas padrão do Adobe Analytics foram renomeadas: Visitantes = Pessoas, Visitas = Sessões, Ocorrências = Eventos. |
-| **Migração de projetos, filtros e métricas calculadas do Adobe Analytics para o Customer Journey Analytics** | Suporte completo. |
+| **Migrando projetos, segmentos e métricas calculadas do Adobe Analytics para o Customer Journey Analytics** | Suporte completo. |
 | **Painéis/cartões de pontuação móveis** | Suporte completo |
 | **Painéis** | Suporte completo para os seguintes painéis: Painel em branco, Atribuição, Forma livre, Insights rápidos, Próximo item e Item anterior. |
 | **Exportação de PDF** | Suporte completo |
@@ -73,7 +73,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | **Processamento de tempo do relatório** | Suporte completo: o Customer Journey Analytics depende exclusivamente do processamento de tempo do relatório. |
 | **Acesso à API de relatórios** | Suporte completo: disponível por meio da [API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/). |
 | **Relatórios/projetos agendados** | Suporte completo |
-| **Segmentos** | Suporte completo. Chamados agora de “Filtros”: observe que nenhum segmento existente no Analysis Workspace tradicional será transferido para o Customer Journey Analytics. |
+| **Segmentos** | Suporte completo. (Anteriormente chamado de &quot;Filtros&quot;.) |
 | **Coleção de mídia de streaming** | Os dados de mídia de streaming estão disponíveis ao usar o conector de origem do Analytics como parte do painel Visualizadores simultâneos de mídia e do painel Tempo gasto com a reprodução de mídia do Workspace. |
 | **Fontes de dados em nível de resumo** | Suporte completo |
 | **Conjuntos de relatórios virtuais** | Suporte completo. Agora chamado de [Visualizações de dados](/help/data-views/create-dataview.md). |
@@ -109,7 +109,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | **Variável de produtos** | Na Experience Platform, é possível usar uma matriz de objetos dentro de um esquema do conjunto de dados para atender a esse caso de uso. No Customer Journey Analytics, clientes podem usar qualquer número de variáveis de produto e não estão restritos a uma única variável, como no Adobe Analytics. |
 | **Compartilhamento de projeto** | O compartilhamento de projetos só é permitido entre usuários do Customer Journey Analytics. Não é possível compartilhar projetos entre o Customer Journey Analytics e o Analysis Workspace tradicional. |
 | **Report Builder** | Compatível com um novo plug-in do Office 365 para Excel. |
-| **Permissões do usuário/Controles de acesso de dados** | O Customer Journey Analytics distingue entre admins de produto do [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR), admins de perfil de produto e usuários. Somente admins de produtos podem criar, atualizar e excluir conexões, projetos, filtros ou métricas calculadas que foram criadas por outros usuários, enquanto admins de produto e admins de perfil de produto podem editar visualizações de dados. Permissões de usuário adicionais estão disponíveis para tarefas como criar métricas calculadas, segmentos ou anotações. |
+| **Permissões do usuário/Controles de acesso de dados** | O Customer Journey Analytics distingue entre admins de produto do [Adobe Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=pt-BR), admins de perfil de produto e usuários. Somente administradores de produtos podem criar/atualizar/excluir conexões, projetos, segmentos ou métricas calculadas que foram criadas por outros usuários, enquanto administradores de produtos e administradores de perfis de produtos podem editar visualizações de dados. Permissões de usuário adicionais estão disponíveis para tarefas como criar métricas calculadas, segmentos ou anotações. |
 | **Visualizações** | Todas as visualizações do Workspace são compatíveis, exceto a visualização Mapa. |
 | **Compilação entre dispositivos/canais** | Compatível com conjuntos de dados de evento que contêm informações de identidade. Consulte [Compilação](../../stitching/overview.md). |
 

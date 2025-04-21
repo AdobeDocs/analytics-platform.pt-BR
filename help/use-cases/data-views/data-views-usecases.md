@@ -5,10 +5,10 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 32%
+source-wordcount: '1362'
+ht-degree: 33%
 
 ---
 
@@ -69,7 +69,7 @@ Você pode usar uma dimensão numérica para inserir métricas na visualização
 
 ## Fazer filtragem de subeventos {#sub-event}
 
-Esse recurso é especificamente aplicável a campos com base em matriz. A funcionalidade de inclusão/exclusão permite filtrar no nível do subevento, enquanto os filtros (segmentos) criados no construtor de filtros fornecem apenas a filtragem no nível do evento. Assim, você pode fazer a filtragem de subeventos usando incluir/excluir em Visualizações de dados e, em seguida, fazer referência a essa nova métrica/dimensão em um filtro no nível do evento.
+Esse recurso é especificamente aplicável a campos com base em matriz. A funcionalidade de inclusão/exclusão permite filtrar no nível do subevento, enquanto os segmentos criados no Construtor de segmentos fornecem apenas a filtragem no nível do evento. Você pode fazer a filtragem de subeventos usando incluir/excluir em Visualizações de dados e, em seguida, fazer referência a essa nova métrica/dimensão em um segmento no nível do evento.
 
 Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de dados para focalizar produtos que geraram vendas superiores a US$ 50. Portanto, se você tiver um pedido que inclua uma compra de produto de US$ 50 e uma compra de produto de US$ 25, a funcionalidade de inclusão/exclusão removerá a compra de produto de US$ 25, não o pedido inteiro.
 

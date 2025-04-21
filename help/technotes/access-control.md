@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 21%
@@ -124,7 +124,7 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto no [Admi
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso à Analysis Workspace] | Permitir que os usuários acessem o [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso à Análise Guiada] | Permitir que os usuários acessem a [Análise Guiada](/help/guided-analysis/overview.md). |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de métricas calculadas] | Permitir que os usuários criem [métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md). Os usuários podem marcar, compartilhar, excluir, renomear, aprovar ou cancelar a aprovação somente das métricas calculadas que criam ou das métricas calculadas compartilhadas com eles. |
-| [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de filtros] | Permitir que os usuários criem [segmentos](/help/components/filters/filters-overview.md). Os usuários podem marcar, compartilhar, excluir, renomear, aprovar ou cancelar a aprovação somente dos segmentos que criam ou dos segmentos compartilhados com eles. |
+| [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de segmentos] | Permitir que os usuários criem [segmentos](/help/components/filters/filters-overview.md). Os usuários podem marcar, compartilhar, excluir, renomear, aprovar ou cancelar a aprovação somente dos segmentos que criam ou dos segmentos compartilhados com eles. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso ao Labs] | Permitir que os usuários acessem a guia [Labs](/help/labs/labs.md) no Customer Journey Analytics. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de anotação] | Permitir que os usuários criem [anotações](/help/components/annotations/overview.md). Os usuários podem marcar, compartilhar, excluir e renomear apenas as anotações que criam ou as anotações compartilhadas com eles. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Visualização de público] | Permitir que os usuários visualizem [públicos-alvo](/help/components/audiences/audiences-overview.md). |

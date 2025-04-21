@@ -3,10 +3,11 @@ description: Criar, editar ou excluir alertas.
 title: Gerenciar alertas
 feature: Workspace Basics
 role: User, Admin
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 7%
+source-wordcount: '565'
+ht-degree: 21%
 
 ---
 
@@ -17,7 +18,7 @@ Você pode filtrar, marcar, excluir, renomear, copiar, habilitar, desabilitar, r
 
 * Selecione **[!UICONTROL Componentes]** na interface principal e **[!UICONTROL Alertas]**.
 
-O gerenciador de Alertas está estruturado de maneira semelhante ao [gerenciador de Filtros](/help/components/filters/manage-filters.md) e ao [gerenciador de métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+O gerenciador de Alertas está estruturado como o [Gerenciador de segmentos](/help/components/filters/manage-filters.md) e o [Gerenciador de métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 
 ## Gerenciador de alertas
@@ -32,9 +33,9 @@ A lista de alertas ➊ exibe todos os alertas que você possui, os alertas que f
 
 | Coluna | Descrição |
 |---|---|
-| ![EstruturaEstrela](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um alerta. |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um alerta. |
 | **[!UICONTROL Título e descrição]** | Para editar o alerta, selecione o link de título, que abre o [Construtor de alertas](alert-builder.md#alert-builder). |
-| **[!UICONTROL Tipo]** | Mostra se o alerta é um alerta de dados Customer Journey Analytics ou um alerta de uso de chamada do servidor. |
+| **[!UICONTROL Tipo]** | Mostra se o alerta é um alerta de dados do Customer Journey Analytics ou um alerta de uso de chamada do servidor. |
 | **[!UICONTROL Ativado]** | Indica se o alerta está ativado ou desativado. |
 | **[!UICONTROL Visualização de dados]** | As visualizações de dados às quais este alerta se aplica. |
 | **[!UICONTROL Proprietário]** | O proprietário do alerta. Como um usuário não administrador, você só verá os alertas que possui ou que são compartilhados com você. |
@@ -52,23 +53,23 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 
 | Ícone | Ação | Descrição |
 |:---:|---|---|
-| ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Adicionar]** | Adicione outro alerta, usando o [Criador de alertas](alert-builder.md#alert-builder). |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Adicionar]** | Adicione outro alerta, usando o [Criador de alertas](alert-builder.md#alert-builder). |
 | ![Pesquisar](/help/assets/icons/Search.svg) | [!UICONTROL *Pesquisar por título*] | Quando nenhum alerta for selecionado na lista, procure por alertas usando esse campo de pesquisa. |
 | ![Rótulo](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Marcar os alertas selecionados. Na caixa de diálogo **[!UICONTROL Alerta de Marca]**, selecione ou desmarque as marcas dos alertas selecionados. Selecione **[!UICONTROL Salvar]** para salvar as marcas dos alertas selecionados. |
 | ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Excluir os alertas selecionados. Será solicitada uma confirmação. |
 | ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomear um único alerta selecionado. Quando selecionada, você pode renomear o alerta em linha. |
 | ![Copiar](/help/assets/icons/Copy.svg) | **[!UICONTROL Copiar]** | Copiar o alerta selecionado. Novos alertas são criados com o mesmo nome e sufixo `(Copy)`. |
-| ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Habilitar]** ou **[!UICONTROL Desabilitar]** | Ativar ou desativar os alertas selecionados. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Habilitar]** ou **[!UICONTROL Desabilitar]** | Ativar ou desativar os alertas selecionados. |
 | ![Atualizar](/help/assets/icons/Refresh.svg) | **[!UICONTROL Renovar]** | Renova a data de expiração do alerta. A data de expiração se estende por 1 ano a partir do dia em que você selecionar essa opção, independentemente da data de expiração original. |
-| ![ArquivoCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar os alertas para um arquivo `Alerts List.csv`. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar os alertas para um arquivo `Alerts List.csv`. |
 
 
-### Barra de filtros ativa
+### Barra de filtros ativos
 
-O ➌ da barra de filtros mostra os filtros ativos aplicados do painel de filtros à lista de alertas (se houver). Você pode remover um filtro rapidamente usando ![CrossSize75](/help/assets/icons/CrossSize75.svg). Se mais de um filtro for especificado, você poderá remover todos os filtros usando **[!UICONTROL Remover tudo]**.
+O ➌ da barra de filtros mostra os filtros ativos aplicados do painel de filtros à lista de alertas (se houver). É possível remover um filtro rapidamente usando ![CrossSize75](/help/assets/icons/CrossSize75.svg). Se mais de um filtro for especificado, você poderá remover todos os filtros usando **[!UICONTROL Remover tudo]**.
 
 
-### Painel Filtro
+### Painel de filtro
 
 Você pode filtrar a lista de alertas usando a ➍ do painel esquerdo ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]**. O painel de filtros exibe o tipo de filtro e o número de alertas que respeitam o filtro específico.
 
@@ -116,6 +117,6 @@ Você usa o [Criador de alertas](alert-builder.md#alert-builder) para editar o a
 
 ## Solução de problemas de um alerta
 
-Ao solucionar um problema com um alerta, forneça o número da JID (ID de instância de trabalho) para o Suporte Adobe. O número JID está localizado na parte inferior do email de notificação de alerta que você recebe.
+Ao solucionar um problema com um alerta, forneça o número da JID (ID de instância de trabalho) ao suporte da Adobe. O número JID está localizado na parte inferior do email de notificação de alerta que você recebe.
 
 ![Email de alerta](assets/alerts-email.PNG)

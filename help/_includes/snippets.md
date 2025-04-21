@@ -1,8 +1,8 @@
 ---
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: be615a45a68b47f95517992cc4268a887ac1110a
 workflow-type: tm+mt
 source-wordcount: '3796'
-ht-degree: 30%
+ht-degree: 31%
 
 ---
 # Trechos
@@ -200,8 +200,8 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 | **jornadas não lineares com vários pontos de entrada e caminhos** | Sim | Não | Sim |
 | **Métrica primária** | Qualquer métrica, incluindo métricas calculadas. | Somente sessão ou pessoa | Somente ocorrências (visualizações de caminho) |
 | **Métrica secundária** | Sim<p>Qualquer métrica, incluindo métricas calculadas.</p> | Não | Não |
-| **Suporte a componentes em nós ou pontos de contato** | Métricas, itens de dimensão, filtros e intervalos de datas. | Métricas, itens de dimensão, filtros e intervalos de datas. | Somente itens de dimensão (exceto para o ponto de contato inicial e final) |
-| **Comparar filtros** | Não | Sim<p>Fazer comparações lado a lado de dois filtros diferentes no mesmo relatório.</p> | Não |
+| **Suporte a componentes em nós ou pontos de contato** | Métricas, itens de dimensão, segmentos e intervalos de datas. | Métricas, itens de dimensão, segmentos e intervalos de datas. | Somente itens de dimensão (exceto para o ponto de contato inicial e final) |
+| **Comparar segmentos** | Não | Sim<p>Fazer comparações lado a lado de dois segmentos diferentes no mesmo relatório</p> | Não |
 | **Interação de componente arrastar e soltar** | Sim | Sim | Não |
 | **jornadas Adobe Journey Optimizer** | Sim</br>Abra jornadas do Journey Optimizer para análise e personalização mais profundas. | Não | Não |
 

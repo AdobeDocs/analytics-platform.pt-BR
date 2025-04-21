@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 261d4b5e18531f7971a894bc4cd571b764c625f1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '8844'
 ht-degree: 99%
@@ -643,7 +643,7 @@ Você define um campo derivado de `Trip Duration (bucketed)`. Você cria a segui
 
 ## Mais informações {#casewhen-more-info}
 
-O Customer Journey Analytics usa uma estrutura de container aninhado baseada no [XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home) (Experience Data Model) da Adobe Experience Platform. Consulte [Containers](../create-dataview.md#containers) e [Filtrar containers](../../components/filters/filters-overview.md#filter-containers) para mais informações de contexto. Este modelo de contêiner, embora flexível por natureza, impõe algumas restrições ao usar o construtor de regras.
+O Customer Journey Analytics usa uma estrutura de container aninhado baseada no [XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home) (Experience Data Model) da Adobe Experience Platform. Consulte [Contêineres](../create-dataview.md#containers) e [Contêineres de segmentos](../../components/filters/filters-overview.md#filter-containers) para obter mais informações sobre a tela de fundo. Este modelo de contêiner, embora flexível por natureza, impõe algumas restrições ao usar o construtor de regras.
 
 O Customer Journey Analytics usa o seguinte modelo de container padrão:
 

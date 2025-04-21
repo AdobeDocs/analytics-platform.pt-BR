@@ -4,7 +4,7 @@ description: Saiba como gerenciar segmentos no Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 66ec61ea64f1265d887d4941a22e1f9757120daa
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 32%
@@ -21,7 +21,7 @@ Você pode [compartilhar](filters-share.md), [segmentar](filters-filter.md), [ma
 
 >[!NOTE]
 >
->Os segmentos rápidos criados em um projeto específico do Workspace não aparecem no gerenciador de [!UICONTROL Filtros], a menos que você tenha disponibilizado o segmento para todos os seus projetos.
+>Os segmentos rápidos criados em um projeto específico do Workspace não aparecem no gerenciador de [!UICONTROL Segmento], a menos que você tenha disponibilizado o segmento para todos os seus projetos.
 >
 
 ## Gerenciador de segmentos
@@ -37,7 +37,7 @@ A lista de segmentos ➊ exibe todos os segmentos que você possui, os segmentos
 | Coluna | Descrição |
 | --- | --- | 
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um segmento. Ver [Marcar segmento como favorito](/help/components/filters/filters-favorite.md) |
-| **[!UICONTROL Título e descrição]** | Para editar o segmento, selecione o link de título, que abre o [Construtor de filtros](filter-builder.md). Um segmento compartilhado é indicado com ![Compartilhamento](/help/assets/icons/ShareAlt.svg). |
+| **[!UICONTROL Título e descrição]** | Para editar o segmento, selecione o link de título, que abre o [Construtor de segmentos](filter-builder.md). Um segmento compartilhado é indicado com ![Compartilhamento](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Visualização de dados]** | As visualizações de dados às quais esse segmento se aplica. |
 | **[!UICONTROL Proprietário]** | O proprietário do segmento. Como usuário, você só pode ver os segmentos que possui ou as anotações compartilhadas com você. |
 | **[!UICONTROL Tags]** | As tags desse segmento. |
@@ -54,7 +54,7 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 
 | Ação | Descrição |
 |---|---|
-| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** | Adicionar outro segmento, usando o [Construtor de filtros](filter-builder.md). |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** | Adicione outro segmento, usando o [Construtor de segmentos](filter-builder.md). |
 | ![Search](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar por título*] | Quando nenhum segmento for selecionado na lista, pesquise por segmentos usando esse campo de pesquisa. |
 | ![Rótulo](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Marcar os segmentos selecionados. Na caixa de diálogo **[!UICONTROL Segmento de Marca]**, selecione ou desmarque as marcas dos segmentos selecionados. Selecione **[!UICONTROL Salvar]** para salvar as marcas dos segmentos selecionados. Consulte [Marcar segmentos](/help/components/filters/filters-tag.md) para obter mais informações. |
 | ![Compartilhar](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Compartilhar]** | Compartilhar os segmentos selecionados. Na caixa de diálogo **[!UICONTROL Compartilhar Segmento]**, você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar pessoas físicas ou grupos* ou selecionar **[!UICONTROL Organização]** ou **[!UICONTROL Grupos]**. Selecione **[!UICONTROL Salvar]** para salvar os detalhes de compartilhamento dos segmentos selecionados. Consulte [Compartilhar segmentos](filters-share.md) para obter mais informações. |
@@ -62,7 +62,7 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 | ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Renomear]** | Renomeie um único segmento selecionado. Quando selecionada, você pode renomear o segmento em linha. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Aprovar]** | Aprove os segmentos selecionados. Consulte [Aprovar segmentos](filters-approve.md) para obter mais informações. |
 | ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copiar]** | Copie o segmento selecionado. Novos segmentos são criados com o mesmo nome e sufixo `(Copy)`. |
-| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exportar para CSV]** | Exportar os segmentos para um arquivo `Filters List.csv`. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exportar para CSV]** | Exportar os segmentos para um arquivo `Segments List.csv`. |
 
 ### Barra de segmentos ativa
 

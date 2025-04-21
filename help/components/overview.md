@@ -5,10 +5,10 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 9393be88ab7320adb5bd046701667f638673af5e
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 93%
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ Para gerenciar componentes na interface principal do Customer Journey Analytics:
 
 Você pode gerenciar os seguintes componentes:
 
-* [Segmentos](filters/filters-overview.md): crie, gerencie, compartilhe e aplique segmentos avançados de público-alvo em seus relatórios. Os filtros permitem identificar subconjuntos de pessoas com base em características ou interações.
+* [Segmentos](filters/filters-overview.md): crie, gerencie, compartilhe e aplique segmentos avançados de público-alvo em seus relatórios. Os segmentos permitem identificar subconjuntos de pessoas com base em características ou interações.
 * [Métricas calculadas:](calc-metrics/calc-metr-overview.md) use métricas e fórmulas como novos componentes para relatórios
 * [Intervalos de data](date-ranges/create.md): personalize e ajuste os intervalos de data do Analysis Workspace.
 * [Anotações](/help/components/annotations/overview.md): comunique nuances e insights de dados contextuais à sua organização.
@@ -84,7 +84,7 @@ Você pode pesquisar, filtrar e classificar a lista de componentes no painel esq
 
 2. No campo de pesquisa, comece a digitar o nome do componente que deseja usar em seu projeto.
 
-   Uma cor e um ícone identificam o tipo de componente. **Dimensões** ![Ícone de dimensão](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) são laranja, **filtros** ![Ícone de filtro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis, **intervalos de datas** ![Ícone de intervalo de datas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxos e **métricas** ![Ícone de métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) são verdes.<br/>O ícone do Adobe ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) indica um modelo de métrica calculada ou um modelo de segmento. O ícone de calculadora ![Ícone da calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indica uma métrica calculada criada por um(a) admin da organização.
+   Uma cor e um ícone identificam o tipo de componente. **Dimensões** ![Ícone de Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) são laranja, **Segmentos** ![Ícone de segmento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis, **Intervalos de datas** ![Ícone de intervalo de datas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxos e **Métricas** ![Ícone de métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) são verdes.<br/>O ícone do Adobe ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) indica um modelo de métrica calculada ou um modelo de segmento. O ícone de calculadora ![Ícone da calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indica uma métrica calculada criada por um(a) admin da organização.
 
 3. Selecione o componente na lista suspensa.
 

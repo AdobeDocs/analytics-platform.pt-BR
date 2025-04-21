@@ -4,7 +4,7 @@ title: Compartilhar segmentos
 feature: Filters
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -22,9 +22,9 @@ Para compartilhar um ou mais segmentos:
 
 1. No [Gerenciador de segmentos](manage-filters.md), selecione um ou mais segmentos que deseja compartilhar.
 1. Na barra de ações, selecione ![Compartilhar](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Compartilhar]**.
-1. Na caixa de diálogo **[!UICONTROL Compartilhar Filtros]**:
+1. Na caixa de diálogo **[!UICONTROL Compartilhar segmentos]**:
 
-   ![Caixa de diálogo Compartilhar Filtros](assets/share-filter-dialog.png)
+   ![Caixa de diálogo Compartilhar segmento](assets/share-filter-dialog.png)
 
    1. (opcionalmente) use a ![Pesquisa](/help/assets/icons/Search.svg) para *Pesquisar pessoas físicas ou grupos* e limite a lista de grupos ou pessoas físicas com os quais você deseja compartilhar o segmento.
 

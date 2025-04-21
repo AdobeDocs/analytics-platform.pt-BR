@@ -4,10 +4,10 @@ title: Construir segmentos
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1571'
-ht-degree: 46%
+ht-degree: 45%
 
 ---
 
@@ -54,7 +54,7 @@ A caixa de diálogo **[!UICONTROL Construtor de segmentos]** é usada para criar
    | **[!UICONTROL Visualização de dados]** | É possível selecionar a visualização de dados para o segmento.  O segmento que você define está disponível como um segmento na guia [Configurações](/help/data-views/create-dataview.md#settings-filters) de uma visualização de dados. |
    | **[!UICONTROL Segmento somente de projeto]** | Uma caixa de informações para explicar que o segmento só é visível no projeto em que foi criado e que o segmento não será adicionado à lista de componentes. Habilitar **[!UICONTROL Disponibilize este segmento para todos os projetos e adicione-o à lista de componentes]** para alterar essa configuração. Esta caixa de informações só é visível quando você cria um [segmento rápido](quick-filters.md) e transforma as informações de segmento rápido em um segmento regular usando o **[!UICONTROL Abrir construtor]** na interface do [!UICONTROL Segmento rápido]. |
    | **[!UICONTROL Título]** ![Obrigatório](/help/assets/icons/Required.svg) | Nomeie o segmento, por exemplo, `Last month mobile customers`. |
-   | **[!UICONTROL Descrição]** | Forneça uma descrição para o segmento, por exemplo, `Filter to define the mobile customers for the last month`. |
+   | **[!UICONTROL Descrição]** | Forneça uma descrição para o segmento, por exemplo, `Segment to define the mobile customers for the last month`. |
    | **[!UICONTROL Tags]** | Organize o segmento criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
    | **[!UICONTROL Definição]** ![obrigatória](/help/assets/icons/Required.svg) | Defina seu segmento usando o [Criador de definições](#definition-builder). |
 
@@ -82,7 +82,7 @@ Você pode configurar o tipo e o escopo da sua definição:
 
 ### Componentes
 
-Uma parte essencial da construção da definição de segmento é o uso de dimensões, métricas, segmentos existentes e intervalos de datas. Todos esses componentes estão disponíveis no painel de componentes do construtor de filtros.
+Uma parte essencial da construção da definição de segmento é o uso de dimensões, métricas, segmentos existentes e intervalos de datas. Todos esses componentes estão disponíveis no painel de componentes no Construtor de segmentos.
 
 ![Iniciar a criação de uma definição](assets/start-building-filter.gif){width=100%}
 
@@ -130,7 +130,7 @@ Você pode usar a ![Configuração](/help/assets/icons/Setting.svg) de um contai
 
 Você pode criar segmentos que contêm intervalos de datas flexíveis. Dessa forma, você pode responder perguntas sobre campanhas ou eventos em andamento. Por exemplo, você pode criar um segmento que inclua *todos que realizaram uma compra online nos últimos 60 dias*.
 
-![Filtrar com um intervalo de datas contínuo](assets/filter-rolling-date-range.gif)
+![Segmentar usando intervalo de datas em andamento](assets/filter-rolling-date-range.gif)
 
 
 >[!BEGINSHADEBOX]

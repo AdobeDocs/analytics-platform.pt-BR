@@ -4,19 +4,19 @@ description: Entenda para que os segmentos são usados e como criar um segmento 
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters
 role: User
-source-git-commit: 716d6423c0cc8b91aa4951952191e0fd0e627c0f
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1428'
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
 
 # Visão geral da segmentação
 
-O Customer Journey Analytics permite criar, gerenciar, compartilhar e aplicar segmentos avançados de público-alvo em seus relatórios. Os filtros permitem identificar subconjuntos de pessoas, sessões ou eventos com base em características ou interações. Os filtros são projetados como insights codificados de público-alvo que você pode criar de acordo com suas necessidades específicas e, em seguida, verificar, editar e compartilhar com outros membros da equipe.
+O Customer Journey Analytics permite criar, gerenciar, compartilhar e aplicar segmentos avançados de público-alvo em seus relatórios. Os segmentos permitem identificar subconjuntos de pessoas, sessões ou eventos com base em características ou interações. Os segmentos são projetados como insights codificados de público-alvo que você pode criar de acordo com suas necessidades específicas e, em seguida, verificar, editar e compartilhar com outros membros da equipe.
 
-Os filtros podem ser baseados em:
+Os segmentos podem ser baseados em:
 
 - atributos (tipo de navegador, dispositivo, número de visitas, país, gênero),
 - interações (campanhas, pesquisa por palavra-chave, mecanismo de pesquisa),
@@ -119,7 +119,7 @@ O container Pessoa inclui todas as sessões e eventos para as pessoas que se qua
 - Todas as sessões para essas pessoas.
 - Todos os dados de evento dessas pessoas.
 
-Como o contêiner mais amplamente definido, os relatórios gerados no nível do contêiner Pessoa retornam eventos e sessões para todas as pessoas qualificadas para o filtro. O contêiner Pessoa é o mais susceptível às alterações com base em intervalos de datas definidos.
+Como o contêiner mais amplamente definido, os relatórios gerados no nível do contêiner Pessoa retornam eventos e sessões para todas as pessoas qualificadas para o segmento. O contêiner Pessoa é o mais susceptível às alterações com base em intervalos de datas definidos.
 Os contêineres Pessoa podem incluir valores com base no histórico geral de uma pessoa:
 
 - Dias antes da primeira compra.
@@ -191,7 +191,7 @@ You can use nesting between containers and between conditions within a container
 
 Traditional Analytics comes with numerous out-of-the-box templates and calculated metrics. Many of them do not apply in Customer Journey Analytics, or have to be renamed or recreated. Others depend on a solution for context-aware variables in Customer Journey Analytics.
 
-| Filter Name | Description |
+| Segment Name | Description |
 | --- | --- |
 | All Data | All Data is a required segment that gets dynamically added to reporting when a metric is added to the row of a Freeform table. |
 -->

@@ -5,10 +5,10 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: fef935eb7692ffb2dade28cb6a7c3d408bcac1c3
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -56,9 +56,9 @@ Usando uma métrica calculada, você pode aplicar essa atribuição à receita d
 
 ![Métrica calculada](../../assets/calc-metric.png)
 
-O Attribution IQ também permite filtrar os dados. Você pode ver a atribuição em relação apenas a conjuntos específicos de usuários, como aqueles que estão usando mais de um dispositivo.
+O Attribution IQ também permite segmentar seus dados. Você pode ver a atribuição em relação apenas a conjuntos específicos de usuários, como aqueles que estão usando mais de um dispositivo.
 
-![Filtro](../../assets/filter.png)
+![Segmento](../../assets/filter.png)
 
 Você também pode atribuir sua receita da Web e do aplicativo ao seu conteúdo de anúncio do Google. O exemplo desse conjunto de dados obteve mais receita pelo aplicativo móvel orientado por anúncios do Google Ads do que pela Web. Classificando os anúncios por receita da Web e do aplicativo, você obtém uma imagem diferente sobre quais eram seus anúncios do Google Ads com melhor desempenho.
 

@@ -2,8 +2,8 @@
 title: Visão geral de uso do produto
 description: Exiba insights e relatórios sobre como sua organização usa o Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
-workflow-type: ht
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Ao habilitar o Uso do produto, as seguintes dimensões estão disponíveis. Se q
 * **[!UICONTROL Tipo de componente]**: o tipo de componente que foi adicionado, removido ou modificado. Os itens de dimensão incluem:
    * [!UICONTROL Dimensão]
    * [!UICONTROL Métrica]
-   * [!UICONTROL Filtro]
+   * [!UICONTROL Segmento]
    * [!UICONTROL Métrica calculada]
    * [!UICONTROL Intervalo de datas]
    * [!UICONTROL Anotação]

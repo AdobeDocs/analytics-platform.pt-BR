@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -73,7 +73,7 @@ Essa visualização ajuda você a entender como a AVC compila os dados.
    * Container de pessoa em que a ID do conjunto de dados é igual aos seus dados da Web
    * Container de pessoa em que a ID do conjunto de dados é igual aos dados da central de atendimento
 2. No Analysis Workspace, arraste uma visualização [Venn](/help/analysis-workspace/visualizations/venn.md) para a tela do espaço de trabalho.
-3. Arraste os dois segmentos recém-criados para a área **[!UICONTROL Adicionar filtro]** e a métrica Pessoas para a área **[!UICONTROL Adicionar métrica]**.
+3. Arraste os dois segmentos recém-criados para a área **[!UICONTROL Adicionar segmento]** e a métrica Pessoas para a área **[!UICONTROL Adicionar métrica]**.
 
 A visualização Venn resultante mostra o número de pessoas em seu conjunto de dados que contêm dados da Web e da central de atendimento. Quanto maior a sobreposição, mais pessoas foram compiladas com sucesso. As áreas que não se sobrepõem representam pessoas que residem exclusivamente em um conjunto de dados ou no outro.
 
