@@ -4,9 +4,9 @@ title: Gerenciar alertas
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '600'
 ht-degree: 21%
 
 ---
@@ -73,7 +73,9 @@ O ➌ da barra de filtros mostra os filtros ativos aplicados do painel de filtro
 
 Você pode filtrar a lista de alertas usando a ➍ do painel esquerdo ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]**. O painel de filtros exibe o tipo de filtro e o número de alertas que respeitam o filtro específico.
 
-{{filterspanel}}
+
+1. Selecione ![Filtro](/help/assets/icons/Filter.svg) para abrir o painel Filtros. Se precisar de mais espaço para a lista Alertas, você pode selecionar ![Filtro](/help/assets/icons/Filter.svg) mais uma vez para fechar o painel.
+1. Selecione filtros de qualquer uma das seções de filtro disponíveis.
 
 
 #### Seção do filtro de tags

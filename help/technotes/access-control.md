@@ -6,7 +6,7 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 21%
@@ -159,8 +159,8 @@ Você pode fornecer acesso de administração ao perfil de produto a um líder d
 
 Você deseja conceder aos usuários acesso aos dados somente de um dia. Esta é a forma como você limitaria o acesso a essas linhas específicas:
 
-1. Crie um filtro em [!UICONTROL Configurações] de uma exibição de dados específica, em que [!UICONTROL Dia] seja igual à data que você deseja que eles tenham acesso aos dados. Consulte [Criar visualização de dados](/help/data-views/create-dataview.md#settings-filters) para obter mais informações.
-1. Salve a visualização de dados, que aplica o filtro à parte de dados dos conjuntos de dados na conexão subjacente. Qualquer linha que não se ajuste à definição de filtro é excluída automaticamente da visualização de dados e não fica disponível para o Analysis Workspace ao usar esta visualização de dados.
+1. Crie um segmento em [!UICONTROL Configurações] de uma exibição de dados específica, em que [!UICONTROL Dia] seja igual à data que você deseja que eles tenham acesso aos dados. Consulte [Criar visualização de dados](/help/data-views/create-dataview.md#settings-filters) para obter mais informações.
+1. Salve a visualização de dados, que aplica o segmento à parte de dados dos conjuntos de dados na conexão subjacente. Qualquer linha que não se ajuste à definição de segmento é excluída automaticamente da visualização de dados e não fica disponível para o Analysis Workspace ao usar essa visualização de dados.
 1. Crie um novo [Perfil de produto](#product-profile-admin-role) no Admin Console, adicione usuários ao perfil de produto e inclua apenas essa visualização de dados específica ao perfil de produto.
 
 ### Controle de acesso de nível de valor

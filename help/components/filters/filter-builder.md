@@ -4,7 +4,7 @@ title: Construir segmentos
 feature: Filters
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 45%
@@ -20,17 +20,10 @@ ht-degree: 45%
 >title="Criar público-alvo"
 >abstract="Os públicos-alvo podem ser criados a partir de um segmento e compartilhados com a Adobe Experience Platform para ativação."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
 >title="Visualização de dados"
 >abstract="Compara os dados desse segmento com os dados da visualização de dados. A porcentagem de visualização é baseada no número total na visualização de dados dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda pode estar preenchendo os dados."
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 A caixa de diálogo **[!UICONTROL Construtor de segmentos]** é usada para criar segmentos novos ou editar segmentos existentes. A caixa de diálogo é denominada **[!UICONTROL Novo segmento]** ou **[!UICONTROL Editar segmento]** para segmentos que você cria ou gerencia no gerenciador de [[!UICONTROL Segmento]](/help/components/filters/manage-filters.md).
@@ -155,32 +148,23 @@ Ou você poderia definir 52 segmentos: 50 segmentos para os estados dos EUA, um 
 
 ## Atribuição {#attribution}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_repeating"
 >title="Repetição"
 >abstract="Inclui instâncias e valores persistentes da dimensão."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="Instância"
 >abstract="Inclui instâncias e valores persistentes da dimensão."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_nonrepeatinginstance"
 >title="Instância não repetida"
 >abstract="Inclui as instâncias exclusivas (não repetidas) da dimensão."
 
-<!-- markdownlint-enable MD034 -->
 
 
 
@@ -218,3 +202,5 @@ A tabela abaixo explica, para cada modelo de atribuição, quais eventos de entr
 Um exemplo de relatório sobre eventos que usam os três segmentos é semelhante a:
 
 ![Resultados do modelo de atribuição de segmento](assets/filter-dimension-attribution-results.png)
+
+<!-- markdownlint-enable MD034 -->

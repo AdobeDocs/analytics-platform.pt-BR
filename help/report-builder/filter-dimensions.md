@@ -6,12 +6,13 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: 0d87f28aa4f8c1b16f46227abad7d374800dcb66
+source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 88%
+source-wordcount: '1013'
+ht-degree: 71%
 
 ---
+
 
 # Filtrar dimensões
 
@@ -21,47 +22,58 @@ Para alterar os itens de dimensão retornados para cada dimensão
 
 1. Selecione um bloco de dados e clique em Editar bloco de dados no painel COMANDOS.
 
-1. Clique em **[!UICONTROL Avançar]** para exibir a guia Dimensões.
+1. Selecione **[!UICONTROL Avançar]** para exibir a guia Dimensões.
 
-1. Clique no ícone **...** ao lado do nome de um componente na tabela.
+1. Selecione ![MaisPequeno](/help/assets/icons/MoreSmall.svg) ao lado do nome de um componente na tabela.
 
    ![As opções de ícone de reticências.](./assets/image27.png)
 
-1. Selecionar **Filtrar dimensão** no menu pop-up para exibir o painel **Filtrar dimensão**.
+1. Selecione **Filtrar dimensão** no menu pop-up para exibir o painel **Filtrar dimensão**.
 
-1. Selecionar **Mais popular** ou **Específico**.
+1. Selecione **Mais popular** ou **Específico**.
 
    ![A opção específica selecionada no painel de dimensão Filtro.](./assets/image28.png)
 
 1. Selecione as opções apropriadas com base no tipo de filtro escolhido.
 
-1. Clique em **Aplicar** para adicionar o filtro.
+1. Clique em **Aplicar** para adicionar o filtro.
 
    O Report Builder exibe uma notificação para confirmar o filtro adicionado.
 
-Para exibir os filtros aplicados, passe o mouse sobre uma dimensão. Dimensões com filtros aplicados exibem um ícone de filtro à direita do nome da Dimensão.
+Para exibir os filtros aplicados, passe o mouse sobre uma dimensão. Dimensões com filtros aplicados exibem um ícone de filtro ![Filtro](/help/assets/icons/Filter.svg) ao lado do nome do Dimension.
+
+## Alterar o filtro e a ordem de classificação
+
+Uma seta é exibida ao lado da métrica usada para filtrar e classificar o bloco de dados. A direção da seta indica se a métrica é classificada em ordem crescente ou decrescente.
+
+Para alterar a direção da classificação, selecione a seta ao lado da métrica.
+
+Para alterar a métrica usada para filtrar e classificar o bloco de dados,
+
+1. Passe o mouse sobre o componente de métrica desejado no Criador de tabela para exibir opções adicionais.
+
+2. Selecione a seta na métrica preferida.
+
+   ![O construtor de tabela e as métricas.](./assets/image30.png)
+
+
 
 ## Tipo de filtro
 
 Há duas maneiras de filtrar itens de dimensão: Mais popular e Específica.
 
-## Mais popular
+### Mais popular
 
 A opção Mais popular permite filtrar dinamicamente itens de dimensão com base em valores de métrica. A filtragem Mais popular retorna os itens de dimensão com classificação mais alta com base nos valores de métrica. Por padrão, os primeiros 10 itens de dimensão são listados, classificados pela primeira métrica adicionada ao bloco de dados.
 
 ![A opção mais popular.](./assets/image29.png)
 
 
-### Opções de Página e Linhas
+**Opções de Página e Linhas**
 
 Use os campos de **Página** e **Linhas** para dividir os dados em grupos sequenciais ou páginas. Isso permite que você obtenha valores de linhas classificadas diferentes dos valores mais altos em seu relatório. Esse recurso é especialmente útil para obter dados além do limite de 50.000 linhas.
 
-#### Padrões de Página e Linhas
-
-- Página = 1
-- Linhas = 10
-
-As configurações padrão de Página e Linhas identificam que cada página tem 10 linhas de dados. A página 1 retorna os 10 itens principais, a página 2 retorna os 10 itens seguintes e assim por diante.
+O padrão para Página é 1 e para Linhas é 10. Esses padrões implicam que cada página tem 10 linhas de dados. A página 1 retorna os 10 itens principais, a página 2 retorna os 10 itens seguintes e assim por diante.
 
 A tabela abaixo lista exemplos de valores de página e linha e a saída resultante.
 
@@ -73,16 +85,16 @@ A tabela abaixo lista exemplos de valores de página e linha e a saída resultan
 | 2 | 100 | Itens 101-200 |
 | 2 | 50.000 | Itens 50.001-100.000 |
 
-#### Valores mínimo e máximo
+Os valores mínimo e máximo são:
 
 - Página de início: Mín. = 1, Máx.: 50 milhões
 - Número de linhas: Mín = 1, Máx.: 50.000
 
 ### Incluir &quot;Nenhum valor&quot;
 
-No Customer Journey Analytics, algumas dimensões coletam uma entrada &quot;sem valor&quot;. Esse filtro permite excluir esses valores dos relatórios. Por exemplo, é possível criar uma classificação como o Nome do produto com base na chave SKU do produto. Se um SKU de produto específico não tiver sido configurado com sua classificação de Nome de produto específica, seu valor de Nome de produto será definido como &quot;nenhum valor&quot;.
+No Customer Journey Analytics, algumas dimensões coletam uma entrada &quot;Nenhum valor&quot;. Esse filtro permite excluir esses valores dos relatórios. Por exemplo, é possível criar uma classificação como o Nome do produto com base na chave SKU do produto. Se um SKU de produto específico não tiver sido configurado com sua classificação de Nome de produto específica, seu valor de Nome de produto será definido como &quot;nenhum valor&quot;.
 
-Incluir &quot;**Nenhum valor**&quot; é selecionado por padrão. Desmarque essa opção para excluir entradas sem valor.
+**[!UICONTROL Incluir &quot;Nenhum valor&quot;]** está selecionado por padrão. Desmarque essa opção para excluir entradas sem valor.
 
 ### Filtrar por critérios
 
@@ -96,34 +108,19 @@ Definição dos critérios de filtragem
 
 1. Insira um valor no campo de pesquisa.
 
-1. Clique em Adicionar linha para confirmar a seleção e adicionar outro item de critério.
+1. Selecione ![Adicionar](/help/assets/icons/Add.svg) **[!UICONTROL Adicionar linha]** para confirmar a seleção e adicionar outro item de critério.
 
-1. Clique no ícone Excluir para remover um item de critério.
+1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover um item de critério.
 
    É possível incluir até 10 itens de critério.
 
-### Alterar o filtro e a ordem de classificação
-
-Uma seta é exibida ao lado da métrica usada para filtrar e classificar o bloco de dados. A direção da seta indica se a métrica é classificada do maior para o menor ou do menor para o maior.
-
-Para alterar a direção da classificação, clique na seta ao lado da métrica. 
-
-Para alterar a métrica usada para filtrar e classificar o bloco de dados,
-
-1. Passe o mouse sobre o componente de métrica desejado no Criador de tabela para exibir opções adicionais.
-
-2. Clique na seta da métrica preferida. 
-
-   ![O construtor de tabela e as métricas.](./assets/image30.png)
-
-
-## Filtragem específica
+### Filtragem específica
 
 A opção Específico permite criar uma lista fixa de itens de dimensão para cada dimensão. Use o tipo de filtro **Específico** para especificar os itens de dimensão exatos a serem incluídos no filtro. É possível selecionar itens de uma lista ou de um intervalo de células.
 
 ![As opções específicas e os itens selecionados.](./assets/image32.png)
 
-### A partir da lista
+#### A partir da lista
 
 1. Selecione a opção **Da lista** para procurar e selecionar itens de dimensão.
 
@@ -157,7 +154,7 @@ A opção Específico permite criar uma lista fixa de itens de dimensão para ca
 
    O Report Builder atualiza a lista para mostrar a filtragem específica aplicada.
 
-### A partir de intervalo de células
+#### A partir de intervalo de células
 
 Selecione a opção **A partir de intervalo de células** para escolher um intervalo de células que contenha a lista de itens de dimensões a serem correspondidos.
 

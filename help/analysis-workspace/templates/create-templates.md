@@ -4,10 +4,10 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: b98cd4dc73e57f9ae5704a5d9e529ae3b518576c
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -110,7 +110,7 @@ Os administradores podem renomear, marcar e aprovar os modelos da empresa.
 
 1. Selecione o ícone de filtro para filtrar a lista de projetos.
 
-1. No painel de filtros, selecione **OUTROS FILTROS** e clique em **Modelos da empresa**.
+1. No painel de filtros, selecione **[!UICONTROL Outros filtros]** e **[!UICONTROL Modelos de empresa]**.
 
    Uma lista dos modelos da empresa é exibida. Nenhum projeto comum é exibido, a menos que esteja fixado.
 

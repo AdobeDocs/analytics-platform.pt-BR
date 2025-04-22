@@ -4,10 +4,10 @@ description: Saiba como gerenciar segmentos no Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -64,12 +64,12 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 | ![Copy](/help/assets/icons/Copy.svg)  **[!UICONTROL Copiar]** | Copie o segmento selecionado. Novos segmentos são criados com o mesmo nome e sufixo `(Copy)`. |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exportar para CSV]** | Exportar os segmentos para um arquivo `Segments List.csv`. |
 
-### Barra de segmentos ativa
+### Barra de filtros ativos
 
-O ➌ da barra de segmentos mostra os segmentos ativos aplicados do painel de segmentos à lista de segmentos (se houver). Você pode remover um segmento rapidamente usando ![CrossSize75](/help/assets/icons/CrossSize75.svg). Se mais de um segmento for especificado, você poderá remover todos os segmentos usando **[!UICONTROL Remover tudo]**.
+O ➌ da barra de filtros mostra os segmentos ativos aplicados a partir do painel de filtros para a lista de segmentos (se houver). É possível remover um filtro rapidamente usando ![CrossSize75](/help/assets/icons/CrossSize75.svg). Se mais de um filtro for especificado, você poderá remover todos os filtros usando **[!UICONTROL Remover tudo]**.
 
-### Painel Segmento
+### Painel de filtro
 
-Você pode segmentar a lista de segmentos usando o ➍ do painel esquerdo ![Segmento](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]**. O painel Segmento exibe o tipo de segmento e o número de segmentos que respeitam o segmento específico. Selecione ![Segmento](/help/assets/icons/Filter.svg) para alternar a exibição do painel de segmentos.
+Você pode filtrar a lista de segmentos usando o ➍ do painel esquerdo ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]**. O painel de filtro exibe o tipo de filtro e o número de segmentos que respeitam o filtro específico. Selecione ![Filtro](/help/assets/icons/Filter.svg) para alternar a exibição do painel Filtro.
 
 Consulte [Filtrar a lista de segmentos](filters-filter.md) para obter mais informações.

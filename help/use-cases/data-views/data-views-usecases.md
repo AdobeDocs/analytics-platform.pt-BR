@@ -5,7 +5,7 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 33%
@@ -39,7 +39,7 @@ Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica
 1. Abra a seção **[!UICONTROL Incluir/Excluir Valores]** e especifique o seguinte:
    1. Habilitar **[!UICONTROL Definir inclusão/exclusão de valores]**.
    1. Selecione **[!UICONTROL Se todos os critérios forem atendidos]** de **[!UICONTROL Corresponder]**.
-   1. Especifique `confirmation`. Esse texto para page_title indica que essa página está relacionada à inserção de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores incluídos/excluídos pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, segmentos e em qualquer lugar que você puder usar as métricas padrão.
+   1. Especifique `confirmation`. Este texto para **[!UICONTROL page_title]** indica que esta página está relacionada à colocação de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores incluídos/excluídos pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, segmentos e em qualquer lugar que você puder usar as métricas padrão.
 
    ![Dimension para métrica](../assets/string-to-metric.gif){width=100%}
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
@@ -69,7 +69,7 @@ Você pode usar uma dimensão numérica para inserir métricas na visualização
 
 ## Fazer filtragem de subeventos {#sub-event}
 
-Esse recurso é especificamente aplicável a campos com base em matriz. A funcionalidade de inclusão/exclusão permite filtrar no nível do subevento, enquanto os segmentos criados no Construtor de segmentos fornecem apenas a filtragem no nível do evento. Você pode fazer a filtragem de subeventos usando incluir/excluir em Visualizações de dados e, em seguida, fazer referência a essa nova métrica/dimensão em um segmento no nível do evento.
+Esse recurso é especificamente aplicável a campos com base em matriz. A funcionalidade de inclusão/exclusão permite filtrar no nível do subevento, enquanto os segmentos criados no Construtor de segmentos fornecem apenas a segmentação no nível do evento. Você pode fazer a filtragem de subeventos usando incluir/excluir em Visualizações de dados e, em seguida, fazer referência a essa nova métrica/dimensão em um segmento no nível do evento.
 
 Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de dados para focalizar produtos que geraram vendas superiores a US$ 50. Portanto, se você tiver um pedido que inclua uma compra de produto de US$ 50 e uma compra de produto de US$ 25, a funcionalidade de inclusão/exclusão removerá a compra de produto de US$ 25, não o pedido inteiro.
 

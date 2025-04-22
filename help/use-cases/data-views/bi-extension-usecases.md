@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: be615a45a68b47f95517992cc4268a887ac1110a
+source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
 workflow-type: tm+mt
-source-wordcount: '14697'
+source-wordcount: '14696'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ Os seguintes casos de uso estão documentados:
    * [Dimensão única classificada](#single-dimension-ranked)
    * [Várias dimensões classificadas](#multiple-dimension-ranked)
    * [Contar valores de dimensão distintos](#count-distinct-dimension-values)
-   * [Usar nomes de intervalo de datas para segmentar](#use-date-range-names-to-segment)
+   * [Usar nomes de intervalo de datas para filtrar](#use-date-range-names-to-filter)
    * [Usar nomes de segmento para segmentar](#use-segment-names-to-segment)
    * [Usar valores de dimensão para segmentar](#use-dimension-values-to-segment)
    * [Classificar](#sort)
@@ -1737,17 +1737,17 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 
 
-## Usar nomes de filtro para filtrar
+## Usar nomes de segmento para segmentar
 
-Nesse caso de uso, é possível usar um filtro existente para a categoria Produtos de pesca, que você definiu no Customer Journey Analytics. Para filtrar e relatar nomes de produtos e ocorrências (eventos) durante janeiro de 2023.
+Nesse caso de uso, é possível usar um segmento existente para a categoria Produtos de pesca, que você definiu no Customer Journey Analytics. Segmentar e relatar nomes de produtos e ocorrências (eventos) durante janeiro de 2023.
 
 +++ Customer Journey Analytics
 
-Inspecione o filtro que deseja usar no Customer Journey Analytics.
+Inspecione o segmento que deseja usar no Customer Journey Analytics.
 
 ![Customer Journey Analytics Usar Nomes De Filtro Para Filtrar](assets/cja-fishing-products.png){zoomable="yes"}
 
-Você pode usar esse filtro em um exemplo **[!UICONTROL Usando o painel Nomes de intervalo de datas para filtrar]** para o caso de uso:
+Você pode usar esse segmento em um exemplo de **[!UICONTROL painel Usar nomes de segmentos para segmentos]** para o caso de uso:
 
 ![Valores de Contagem Distintos do Customer Journey Analytics](assets/cja-using-filter-names-to-filter.png){zoomable="yes"}
 
@@ -1901,18 +1901,18 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 +++
 
 
-## Usar valores de dimensão para filtrar
+## Usar valores de dimensão para segmentar
 
-Você usa o valor **[!UICONTROL Caça]** dinâmico para **[!UICONTROL Categoria de Produto]** para filtrar produtos da categoria de caça. Como alternativa, para as ferramentas de BI que não oferecem suporte à recuperação dinâmica de valores de categoria de produto, você cria um novo filtro no Customer Journey Analytics que filtra os produtos da categoria de produto de caça.
-Em seguida, use o novo filtro para relatar os nomes e as ocorrências (eventos) dos produtos da categoria de caça durante janeiro de 2023.
+Você usa o valor dinâmico de **[!UICONTROL Caça]** para **[!UICONTROL Categoria de Produto]** para segmentar produtos da categoria de caça. Como alternativa, para as ferramentas de BI que não oferecem suporte à recuperação dinâmica de valores de categoria de produto, você cria um novo segmento no Customer Journey Analytics que segmenta produtos da categoria de produto de caça.
+Em seguida, use o novo segmento para relatar nomes de produtos e ocorrências (eventos) de produtos da categoria de caça durante janeiro de 2023.
 
 +++ Customer Journey Analytics
 
-Crie um novo filtro com **[!UICONTROL Título]** `Hunting Products` no Customer Journey Analytics.
+Crie um novo segmento com **[!UICONTROL Título]** `Hunting Products` no Customer Journey Analytics.
 
-![Customer Journey Analytics Usar Valores Do Dimension Para Filtrar](assets/cja-hunting-products.png){zoomable="yes"}
+![Customer Journey Analytics Usar Valores De Dimension Para Segmentar](assets/cja-hunting-products.png){zoomable="yes"}
 
-Você pode usar esse filtro em um exemplo **[!UICONTROL usando o painel Valores de Dimension para Filtrar]** para o caso de uso:
+Você pode usar esse segmento em um exemplo **[!UICONTROL usando o painel Valores de Dimension para Filtrar]** para o caso de uso:
 
 ![Valores de Contagem Distintos do Customer Journey Analytics](assets/cja-using-dimension-values-to-filter.png){zoomable="yes"}
 
