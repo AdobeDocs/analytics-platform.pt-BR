@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
 workflow-type: tm+mt
 source-wordcount: '2580'
 ht-degree: 39%
@@ -13,9 +13,6 @@ ht-degree: 39%
 ---
 
 # Configuração guiada da Análise de conteúdo
-
-{{release-limited-testing}}
-
 
 A configuração guiada ajuda a configurar a Análise de conteúdo de forma rápida e fácil. A configuração guiada usa um assistente para definir os requisitos para configurar a Análise de conteúdo automaticamente para sua organização. Na tela **[!UICONTROL Configuração]**, você pode criar uma nova configuração ou editar uma configuração existente.
 
