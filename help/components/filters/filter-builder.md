@@ -1,10 +1,10 @@
 ---
 description: O Construtor de segmentos fornece uma tela para arrastar e soltar Dimensões de métricas, Segmentos e Eventos para segmentar pessoas com base na lógica, nas regras e nos operadores da hierarquia do contêiner. Essa ferramenta de desenvolvimento integrada permite criar e salvar segmentos simples ou complexos que identificam atributos e ações de pessoas em visitas e eventos.
 title: Construir segmentos
-feature: Filters
+feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
+source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 45%
