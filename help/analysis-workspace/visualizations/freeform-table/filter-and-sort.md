@@ -4,10 +4,10 @@ title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Você pode usar vários métodos para filtrar linhas de uma tabela de forma livr
 
 - Excluir linhas específicas de uma tabela
 - Aplicar filtros a uma tabela
-- Usar filtros de público-alvo
+- Usar segmentos de público
 
 Leia como cada método afeta [os totais da tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
@@ -96,7 +96,7 @@ Para filtrar dados em tabelas de forma livre:
 
 ### Usar segmentos de público
 
-Consulte [Visão geral de filtros](/help/components/filters/filters-overview.md) para obter mais detalhes.
+Consulte [Visão geral da segmentação](/help/components/filters/filters-overview.md) para obter mais detalhes.
 
 ## Classificar tabelas
 

@@ -4,7 +4,7 @@ title: Baixar dados do Customer Journey Analytics
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 98%
@@ -94,7 +94,7 @@ Os recursos da tabela serão aplicados ao arquivo baixado da seguinte maneira:
 * Os detalhamentos **acima** da dimensão selecionada na tabela são aplicados como filtros acima de cada coluna.
 * Detalhamentos **abaixo** da dimensão selecionada na tabela são removidos.
 
-No exemplo acima, os itens de Página são baixados com o filtro do painel (Novos clientes visitantes), os componentes acima (Canal de marketing = Email) são aplicados como filtros e os componentes abaixo (Tipo de dispositivo móvel) são removidos do CSV baixado.
+No exemplo acima, os itens de Página são baixados com o segmento do painel (Novos clientes visitantes), os componentes acima (Canal de marketing = Email) são aplicados como filtros e os componentes abaixo (Tipo de dispositivo móvel) são removidos do CSV baixado.
 
 ![O arquivo .csv baixado aberto no Excel.](assets/downloaded-file.png)
 
