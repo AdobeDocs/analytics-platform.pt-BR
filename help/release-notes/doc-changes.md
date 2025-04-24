@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: b880c63d22cec0e7de4f313eef72e86f41e85eca
 workflow-type: tm+mt
-source-wordcount: '4716'
-ht-degree: 94%
+source-wordcount: '5057'
+ht-degree: 91%
 
 ---
 
@@ -21,9 +21,16 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | --- | --- |
 | **Abril de 2025** | |
 | Visualizar e gerenciar o uso | A documentação sobre como [exibir](/help/connections/manage-connections.md#usage) e [gerenciar](/help/technotes/estimate-usage.md) o uso do Customer Journey Analytics foi retrabalhada |
-| Análise de conteúdo | [Documentação](/help/content-analytics/content-analytics.md) da Análise de conteúdo da Adobe. A Análise de conteúdo da Adobe permite investigar de maneira rápida e fácil grandes volumes de dados de conteúdo para descobrir tendências, detectar anomalias, identificar a fadiga do conteúdo e obter insights sobre a exposição do conteúdo. |
+| Adobe Content Analytics | O [Content Analytics](/help/content-analytics/content-analytics.md) permite investigar de maneira rápida e fácil grandes volumes de dados de conteúdo para descobrir tendências, detectar anomalias, identificar a fadiga do conteúdo e obter informações sobre a exposição do conteúdo. |
+| Campos XDM atualizados para coletar dados de mídia de transmissão na Adobe Experience Platform | Ao coletar dados de mídia de transmissão no Adobe Experience Platform, os caminhos de campo XDM mostrados no cabeçalho de &quot;Caminho do campo XDM&quot; da documentação de parâmetros de mídia de transmissão não devem mais ser usados. Esses caminhos de campo são encontrados nas seguintes páginas e são marcados como &quot;Obsoletos&quot;: [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Parâmetros de anúncios](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Parâmetros de capítulo](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Parâmetros de estado do player](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) e [Parâmetros de qualidade](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). |
+| Coleção de mídia: atualizações do conector de origem da Adobe para o novo XDM de relatórios de mídia | O Conector de origem do Analytics mapeia automaticamente dados de mídia de streaming no Adobe Analytics para os mesmos campos usados pelo SDK da web. Antes, os dados eram mapeados para os locais antigo e novo, mas somente o novo local será usado no futuro. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
+| **Alteração de terminologia: “Filtros” para “Segmentos”** | Anteriormente, o Adobe Customer Journey Analytics chamava os segmentos de “filtros”. Essa terminologia foi alinhada com o Adobe Analytics. Agora, os “filtros” são chamados de “segmentos”. (Obviamente, os filtros de pesquisa ainda são chamados de &quot;filtros&quot;.) A interface do usuário e a documentação foram atualizadas. |
 | **Março de 2025** | |
 | Casos de uso do Quantum Metric | Adição de casos de uso para coleta de dados do [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
+| Modelo de uso do produto | Um novo modelo do Workspace permite exibir como o produto Customer Journey Analytics é usado na sua organização. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/templates/use-templates). |
+| Guia de atualização do Customer Journey Analytics | Permite gerar um guia passo a passo para atualizar do Adobe Analytics para o Customer Journey Analytics. Para começar a gerar seu guia personalizado, faça logon no [!DNL Customer Journey Analytics] e selecione **[!UICONTROL Atualizar para o Customer Journey Analytics]** na guia **[!UICONTROL Workspace]**. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
+| Atualizações do item de linha &quot;Nenhum valor&quot; em dimensões numéricas | Para dimensões numéricas, essa atualização permite usar o item de dimensão &quot;Nenhum valor&quot; em um segmento e executar um detalhamento em um relatório no item de linha &quot;Nenhum valor&quot;. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
+| Coleção de mídia: atualizações do conector de origem da Adobe para o novo XDM de relatórios de mídia | O Conector de origem do Analytics mapeia automaticamente dados de mídia de streaming no Adobe Analytics para os mesmos campos usados pelo SDK da web. Antes, os dados eram mapeados para os locais antigo e novo, mas somente o novo local será usado no futuro. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **Fevereiro de 2025** |  |
 | Coleção de mídia: atualizações do conector de origem da Adobe para o novo XDM de relatórios de mídia | O conector de origem do Analytics [mapeia os dados de transmissão de mídia no Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) automaticamente para os mesmos campos usados pelo SDK da web. Antes, os dados eram mapeados para os locais antigo e novo, mas somente o novo local será usado no futuro.  |
 | Extensão BI: compatibilidade expandida | A extensão BI do Customer Journey Analytics agora é compatível com [Looker, Jupyter Notebook e R Studio](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |
