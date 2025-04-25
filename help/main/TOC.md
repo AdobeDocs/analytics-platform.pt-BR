@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 2581ff0f3d149a539ed730a941ce1b6288e9af0e
+source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
 workflow-type: tm+mt
 source-wordcount: '1214'
-ht-degree: 85%
+ht-degree: 83%
 
 ---
 
@@ -157,7 +157,7 @@ ht-degree: 85%
       + [Configurações de dados](../tools/product-usage/data-settings.md)
       + [Configurações de recusa](../tools/product-usage/opt-out-settings.md)
 
-+ Projetos do Workspace {#cja-workspace}
++ Projetos do espaço de trabalho {#cja-workspace}
    + [Visão geral do Analysis Workspace](../analysis-workspace/home.md)
    + [Realizar análise básica](../analysis-workspace/perform-basic-analysis.md)
    + [Realizar análise avançada](../analysis-workspace/perform-adv-analysis.md)
@@ -385,7 +385,7 @@ ht-degree: 85%
    + [Visão geral](../report-builder/report-buider-overview.md)
    + [Configuração do Report Builder](../report-builder/report-builder-setup.md)
    + [Criar um bloco de dados](../report-builder/create-a-data-block.md)
-   + [O Hub do Report Builder](../report-builder/report-builder-hub.md)
+   + [hub do Report Builder](../report-builder/report-builder-hub.md)
    + [Selecionar uma visualização de dados](../report-builder/select-data-view.md)
    + [Selecionar um intervalo de datas](../report-builder/select-date-range.md)
    + [Trabalhar com segmentos](../report-builder/work-with-filters.md)
@@ -394,6 +394,7 @@ ht-degree: 85%
    + [Programar pastas de trabalho](../report-builder/schedule-reportbuilder.md)
    + [Rótulos restritos](../report-builder/restricted-labels.md)
    + [Configurações do Report Builder](../report-builder/report-builder-settings.md)
+
 
 + Gerenciador de atividades de relatórios {#reporting-activity-manager}
    + [Visão geral](../reporting-activity-manager/reporting-activity-overview.md)

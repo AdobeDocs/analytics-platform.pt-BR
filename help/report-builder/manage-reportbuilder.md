@@ -6,92 +6,85 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: bd2d45b9fc1380e36fc482ee75e1a9bbb26f6cf7
+source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 57%
+source-wordcount: '523'
+ht-degree: 21%
 
 ---
 
-# Gerenciar blocos de dados no Report Builder
+# Gerenciar blocos de dados
 
-Você pode exibir e gerenciar todos os blocos de dados em uma pasta de trabalho usando o Gerenciador de blocos de dados. O Gerenciador de bloco de dados fornece recursos de pesquisa, filtro e classificação que permitem localizar rapidamente blocos de dados específicos. Após selecionar um ou mais blocos de dados, você pode editar, excluir ou atualizar os blocos de dados selecionados.
-
-![A tela do gerenciador de bloco de dados.](./assets/image52.png)
+Você pode exibir e gerenciar todos os blocos de dados em uma pasta de trabalho usando o [!UICONTROL gerenciador de blocos de dados]. O [!UICONTROL gerenciador de bloco de dados] fornece recursos de pesquisa, filtro e classificação que permitem localizar blocos de dados específicos. Após selecionar um ou mais blocos de dados, você pode editar, excluir ou atualizar os blocos de dados selecionados.
 
 ## Exibir blocos de dados
 
-Clique em **Gerenciar** para exibir uma lista de todos os blocos de dados em uma pasta de trabalho.
+Para exibir uma tabela que lista todos os blocos de dados em uma pasta de trabalho, selecione ![TableManage](/help/assets/icons/TableManage.svg) **[!UICONTROL Manage]**.
+
+![A opção Gerenciar para exibir uma lista de todos os blocos de dados.](./assets/image53.png){zoomable="yes"}
+
+O **[!UICONTROL gerenciador de bloco de dados]** mostra uma tabela com todos os blocos de dados presentes em uma pasta de trabalho.
+
+![A lista de todos os blocos de dados presentes em uma pasta de trabalho.](./assets/image52.png){zoomable="yes"}
+
+Você pode usar ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para selecionar quais colunas deseja exibir.
+
+## Classificar blocos de dados
+
+Você pode classificar a tabela de blocos de dados por uma coluna exibida. Por exemplo, você pode classificar blocos de dados por visualizações de dados, segmentos, intervalo de datas e outras variáveis.
+
+Para classificar a tabela de blocos de dados, selecione um cabeçalho de coluna. Selecione o mesmo cabeçalho de coluna para inverter a ordem de classificação.
 
 
-![A opção Gerenciar para exibir uma lista de todos os blocos de dados.](./assets/image53.png)
+## Pesquisar blocos de dados
 
-O Gerenciador de bloco de dados lista todos os blocos de dados presentes em uma pasta de trabalho. 
+Use o campo ![Pesquisa](/help/assets/icons/Search.svg) **[!UICONTROL _Pesquisa_]** para localizar qualquer item na tabela de blocos de dados. Por exemplo, você pode pesquisar métricas contidas nos blocos de dados ou na visualização de dados. Também é possível pesquisar datas que estejam aparecendo nas colunas intervalo de datas, data de modificação ou data da última execução.
 
-![A lista de todos os blocos de dados presentes em uma pasta de trabalho.](./assets/image52.png)
-
-## Classificar a lista de Blocos de dados
-
-Você pode classificar a lista de blocos de dados por uma coluna exibida. Por exemplo, você pode classificar a lista de bloqueios de dados por visualizações de dados, segmentos, intervalo de datas e outras variáveis.
-
-Para classificar a lista de blocos de dados, clique em um cabeçalho de coluna.
-
-![Classificando os blocos de dados.](./assets/image54.png)
-
-## Pesquisar a Lista de blocos de dados
-
-Use o campo Procurar para localizar qualquer item na tabela de blocos de dados. Por exemplo, você pode pesquisar métricas contidas nos blocos de dados ou na visualização de dados. Também é possível pesquisar datas que estejam aparecendo nas colunas intervalo de datas, data de modificação ou data da última execução.
-
-![Usando o campo Pesquisa para localizar qualquer item na tabela de blocos de dados.](./assets/image55.png)
 
 ## Editar blocos de dados
 
-É possível editar a visualização de dados, o intervalo de datas ou os segmentos aplicados a um ou mais blocos de dados.
+É possível editar visualizações de dados e blocos de dados de intervalos de datas. Ou os segmentos aplicados aos blocos de dados.
 
 Por exemplo, você pode substituir um segmento existente por um novo segmento em um ou mais blocos de dados.
 
 1. Selecione os blocos de dados que deseja atualizar. Você pode marcar a caixa de seleção de nível superior para selecionar todos os blocos de dados ou selecionar blocos de dados individuais.
 
-   ![O ícone de edição de lápis](./assets/image56.png)
+   ![O ícone de edição de lápis](./assets/image56.png){zoomable="yes"}
 
-1. Clique no ícone de edição para exibir a janela Edição rápida.
+1. Selecione ![Editar](/help/assets/icons/Edit.svg) para exibir a janela **[!UICONTROL Edição rápida]**.
 
-   ![A janela de Edição Rápida](./assets/image58.png)
+   ![A janela de Edição Rápida](./assets/image58.png){zoomable="yes"}
 
-1. Selecione um link de segmento para atualizar visualizações de dados, intervalos de datas ou segmentos.
+1. Selecione um link para atualizar visualizações de dados, intervalos de datas ou segmentos. Em **[!UICONTROL Edição Rápida]** - **[!UICONTROL Segmentos]**, você pode adicionar, remover ou atualizar os segmentos dos blocos de dados selecionados.
 
-   ![O campo Adicionar segmento na janela de edição rápida](./assets/image59.png)
+   ![O campo Adicionar segmento na janela de edição rápida](./assets/image59.png){zoomable="yes"}
 
 ## Atualizar blocos de dados
 
-Clique no ícone de atualização para atualizar os blocos de dados na lista.
+Selecione ![Atualizar](/help/assets/icons/Refresh.svg) para atualizar a tabela de blocos de dados.
 
-<img src="./assets/refresh-icon.png" width="15%" alt="Ícone Atualizar"/>
+Para verificar se um bloco de dados é atualizado, exiba o ícone de status de atualização:
 
-Para verificar se um bloco de dados é atualizado, exiba o ícone de status de atualização.
+- Um bloco de dados atualizado com êxito exibe um ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg).
 
-Um bloco de dados atualizado com êxito exibe uma marca de seleção em um círculo verde: <img src="./assets/refresh-success.png" width="5%" alt="Círculo verde com ícone de marca de seleção"/>.
-
-Um bloco de dados que não foi atualizado exibe um ícone de aviso: <img src="./assets/refresh-failure.png" width="5%" alt="Ícone de triângulo vermelho com ponto de exclamação"/>.Isso facilita a identificação de erros em blocos de dados.
+- Um bloco de dados que não foi atualizado exibe um ![AlertRed](/help/assets/icons/AlertRed.svg).
 
 
-![O gerenciador de bloco de dados mostra o status de atualização para cada bloco de dados listado.](./assets/image512.png)
+## Excluir blocos de dados
 
-## Excluir um bloco de dados
+Para excluir um ou mais blocos de dados:
 
-Clique no ícone de lixeira para excluir um bloco de dados selecionado.
+1. Selecione um ou mais blocos de dados.
+1. Clique em ![Excluir](/help/assets/icons/Delete.svg).
+1. Selecione **[!UICONTROL Excluir]** na caixa de diálogo **[!UICONTROL Excluir bloco de dados]** ou **[!UICONTROL Cancelar]** para cancelar a exclusão.
 
-## Blocos de dados do grupo
+## Agrupar blocos de dados
 
-Você pode agrupar blocos de dados usando o menu suspenso **Agrupar por** ou você pode clicar em um título de coluna. Para classificar blocos de dados por coluna, clique no título da coluna. Para agrupar blocos de dados por grupos, selecione um nome de grupo no menu suspenso **Agrupar por**. Por exemplo, a captura de tela abaixo mostra blocos de dados agrupados por Folha. Ela mostra blocos de dados agrupados por Folha1 e Folha2.  Isso é útil, por exemplo, no caso de uso de substituição de segmento. Se você tiver vários segmentos aplicados a cada bloco de dados, é útil criar um grupo contendo todos os blocos de dados que você deseja substituir. Em seguida, é possível selecionar e editar facilmente todos ao mesmo tempo.
+Você pode agrupar blocos de dados usando o menu suspenso **[!UICONTROL Agrupar por]** ou pode selecionar um título de coluna.
 
-![Gerenciador de bloco de dados mostrando a lista Agrupar por Planilha.](./assets/group-data-blocks.png)
+Para classificar blocos de dados por coluna, selecione o título da coluna. Para agrupar blocos de dados por grupos, selecione um nome de grupo no menu suspenso **[!UICONTROL Agrupar por]**. Por exemplo, a captura de tela abaixo mostra blocos de dados agrupados por Visualização de dados.
 
-## Modificar a exibição do Gerenciador de bloco de dados
+Você pode usar o agrupamento para selecionar rapidamente blocos de dados para os quais deseja modificar um elemento comum, como um segmento.
 
-Você pode modificar quais colunas estão visíveis na janela Gerenciador de bloco de dados.
+![Gerenciador de bloco de dados mostrando a lista Agrupar por Planilha.](./assets/group-data-blocks.png){zoomable="yes"}
 
-
-Clique na lista de colunas <img src="./assets/image515.png" width="3%" alt="Ícone da lista de colunas"/> ícone para selecionar quais colunas são listadas no Gerenciador de bloco de dados. Selecione um nome de coluna para exibir a coluna. Desmarque o nome da coluna para remover a coluna da exibição.
-
-![Gerenciador de bloco de dados mostrando a lista de colunas](./assets/image516.png)
