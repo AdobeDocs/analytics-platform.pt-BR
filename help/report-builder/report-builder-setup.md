@@ -6,20 +6,20 @@ feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 87%
+source-wordcount: '529'
+ht-degree: 26%
 
 ---
 
 # Configuração do Report Builder
 
-Você pode acessar rapidamente o Report Builder usando o menu Suplemento do Excel.
+Este artigo descreve os requisitos para usar o Report Builder para Customer Journey Analytics no Microsoft Excel. E como instalar e configurar o suplemento.
 
 ## Requisitos
 
-O Report Builder para o Customer Journey Analytics é compatível com os seguintes sistemas operacionais e navegadores da web.
+O Report Builder para Customer Journey Analytics é compatível com os seguintes sistemas operacionais e navegadores da Web.
 
 ### macOS
 
@@ -31,20 +31,20 @@ O Report Builder para o Customer Journey Analytics é compatível com os seguint
 - Windows 10, versão 1904 ou posterior
 - Versão do Excel 2106 ou posterior
 
-  Todos os usuários do Excel para desktop do Windows devem instalar o Microsoft Edge Webview2 para usar o suplemento. Para instalar o controlador:
+  Todos os usuários do Excel para desktop do Windows devem instalar o Microsoft Edge Webview2 para usar o suplemento. Para instalar:
 
-   1. Vá para <https://aka.ms/webview2installer>.
-   1. Selecione e baixe o instalador autônomo Evergreen.
-   1. Siga o assistente de instalação.
+   1. Vá para <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>.
+   1. Selecione e baixe a versão apropriada do **[!UICONTROL Instalador autônomo Evergreen]** para sua plataforma.
+   1. Execute o instalador e siga os prompts de instalação.
 
 ### Web Office
 
-- Suporta todos os navegadores e versões
+- Suporta todos os navegadores e versões.
 
 
-## Suplemento Report Builder para o Excel
+## Suplemento do Report Builder Excel
 
-É preciso instalar o Suplemnento Report Builder para Excel caso deseje usar o Report Builder para o Customer Journey Analytics. Depois de instalar o Suplemento Report Builder para Excel, você pode acessar o Report Builder a partir de uma pasta de trabalho aberta do Excel.
+Instale o complemento Report Builder Excel para usar o Report Builder para Customer Journey Analytics. Depois de instalar o complemento Report Builder Excel, você pode acessar o Report Builder de uma pasta de trabalho aberta do Excel.
 
 ### Baixe e instale o Suplemento Report Builder
 
@@ -52,68 +52,70 @@ Para baixar e instalar o Suplemento Report Builder
 
 1. Inicie o Excel e abra uma nova pasta de trabalho.
 
-1. Selecione Inserir > Obter Suplementos.
+1. Selecione **[!UICONTROL Inserir]** > **[!UICONTROL Suplementos]** > **[!UICONTROL Obter Suplementos]** no menu principal.
 
-1. Na caixa de diálogo Suplementos do Office, selecione a guia Loja.
+1. Na caixa de diálogo Suplementos do Office, selecione a guia **[!UICONTROL Loja]**.
 
-1. Procure por &quot;Report Builder&quot; e clique em Adicionar.
+1. Pesquise por `Report Builder` e selecione **[!UICONTROL Adicionar]**.
 
-1. Na caixa de diálogo Termos de licença e política de privacidade, clique em Continuar.
+1. Na caixa de diálogo Termos de licença e política de privacidade, selecione **[!UICONTROL Continuar]**.
 
-**Se a guia Loja não for exibida**
+Se a guia **[!UICONTROL Loja]** não for exibida:
 
-1. No Excel, selecione Arquivo > Conta >Gerenciar configurações.
+1. No Excel, selecione **[!UICONTROL Arquivo]** > **[!UICONTROL Conta]** > **[!UICONTROL Gerenciar Configurações]** no menu principal.
 
-1. Marque a caixa ao lado de &quot;Habilitar experiências conectadas opcionais&quot;
+1. Marque a caixa ao lado de **[!UICONTROL Habilitar experiências conectadas opcionais]**.
 
 1. Reinicie o Excel.
 
-**Se sua organização bloquear o acesso à Microsoft Store**
+Se sua organização bloquear o acesso à Microsoft Store:
 
-Entre em contato com a equipe de TI ou de segurança para solicitar aprovação para o Suplemento Report Builder. Após a concessão da aprovação, na caixa de diálogo Suplementos do Office, selecione a guia Administrador Gerenciado.
+- Entre em contato com a equipe de TI ou de segurança para solicitar aprovação para o suplemento do Report Builder. Após a concessão da aprovação, na caixa de diálogo **[!UICONTROL Suplementos]** do Office, selecione a guia **[!UICONTROL Administrador Gerenciado]**.
 
-![A guia Administrador Gerenciado na caixa de diálogo Suplementos do Office.](./assets/image1.png)
+  ![A guia Administrador Gerenciado na caixa de diálogo Suplementos do Office.](./assets/image1.png){zoomable="yes"}
 
-Depois de instalar o Suplemento Report Builder, o ícone de Report Builder é exibido na faixa de opções da guia Página inicial, do Excel.
+Depois de instalar o suplemento do Report Builder, o ícone ![AdobeLogoRedonWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** é exibido na faixa de opções do Excel, na guia **[!UICONTROL Página Inicial]**.
 
-![O ícone de Report Builder no Excel](./assets/rb_app_icon.png)
+![O ícone do Report Builder no Excel](./assets/rb_app_icon.png){zoomable="yes"}
+
 
 ## Fazer logon no Report Builder
 
-Depois de instalar o Suplemento Report Builder for Excel na sua plataforma operacional ou navegador, siga estas etapas para fazer logon no Report Builder.
+Após instalar o suplemento Report Builder for Excel para sua plataforma operacional ou navegador, siga estas etapas para fazer logon no Report Builder.
 
 1. Abra uma pasta de trabalho do Excel.
 
-1. Clique no ícone Report Builder para iniciar o Report Builder.
+1. Selecione ![AdobeLogoRedOnWhite](/help/assets/icons/AdobeLogoRedOnWhite.svg) **[!UICONTROL Report Builder]** para iniciar o Report Builder.
 
-1. Na barra de ferramentas do Adobe Report Builder, clique em **Logon**.
+1. Na barra de ferramentas do Adobe Report Builder, selecione **[!UICONTROL Logon]**.
 
-   ![Clique no botão de logon do Report Builder.](./assets/rb_login.png)
+   ![Clique no botão de logon do Report Builder.](./assets/rb_login.png){zoomable="yes"}
 
-1. Insira as informações da conta de ID da Adobe Experience. As informações da sua conta devem corresponder às suas credenciais do Customer Journey Analytics.
+1. Insira as informações da sua conta do Adobe. As informações da sua conta devem corresponder às suas credenciais do Customer Journey Analytics.
 
-   ![Seu ícone e organização de logon.](./assets/image4.png)
+   ![Seu ícone e organização de logon.](./assets/image4.png){zoomable="yes"}
 
 Depois de fazer logon, o ícone de logon e a organização aparecerão na parte superior do painel
 
+
 ## Alternar organizações
 
-Ao fazer logon pela primeira vez, você faz logon na organização padrão atribuída ao perfil.
+Ao fazer logon pela primeira vez, você faz logon na organização padrão atribuída ao perfil ou na organização selecionada como parte do fluxo de logon.
 
-1. Clique no nome da organização que é exibida ao fazer logon.
+1. Selecione o nome da organização que é exibido ao fazer logon.
 
 1. Selecione uma organização na lista de organizações disponíveis. Somente as organizações às quais você tem acesso são listadas.
 
-   ![A lista de organizações que você pode acessar.](./assets/image5.png)
+   ![A lista de organizações que você pode acessar.](./assets/image5.png){zoomable="yes"}
 
 ## Fazer logoff
 
-Você pode fazer logoff do Report Builder a partir do perfil do usuário.
+Para sair do Report Builder:
 
 1. Salve as alterações em qualquer pasta de trabalho aberta.
 
-1. Clique no ícone de avatar para exibir seu perfil de usuário.
+1. Selecione o ícone de avatar para exibir seu perfil de usuário.
 
-   ![O avatar do seu perfil de usuário e o botão Sair.](./assets/image6.png)
+   ![O avatar do seu perfil de usuário e o botão Sair.](./assets/image6.png){zoomable="yes"}
 
-1. Clique em **Fazer logoff**.
+1. Selecione **[!UICONTROL Sair]**.

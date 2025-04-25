@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: 48f5e9d6c5d3a33a5bae45e841eb8364b7172876
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 2%
+source-wordcount: '383'
+ht-degree: 1%
 
 ---
 
@@ -17,43 +17,41 @@ ht-degree: 2%
 
 Você pode selecionar uma visualização de dados na lista suspensa ou selecionar uma visualização de dados de uma célula e atualizar automaticamente seu bloco de dados com uma nova visualização de dados.
 
-**Selecionar exibição de dados da célula**
+## Selecionar visualização de dados de uma célula
 
-Selecionar uma visualização de dados de uma célula facilita a atualização de blocos de dados usando visualizações de dados diferentes. Se sua organização tiver várias visualizações de dados semelhantes ou idênticas entre si em termos de estrutura, em vez de criar relatórios totalmente novos com blocos de dados separados, você poderá atualizar blocos de dados com uma visualização de dados selecionada de uma célula. Isso também é útil se você tiver formatos de blocos de dados complicados que incluem componentes e layouts personalizados.
+Selecionar uma visualização de dados de uma célula facilita a atualização de blocos de dados usando visualizações de dados diferentes. Em vez de criar relatórios totalmente novos com blocos de dados separados, você pode atualizar blocos de dados com uma visualização de dados selecionada de uma célula.
 
-Para selecionar uma visualização de dados de uma célula, primeiro crie um bloco de dados e atribua várias visualizações de dados a uma célula fora do bloco de dados. Em seguida, use a visualização de dados do painel de células para atualizar seus blocos de dados de diferentes visualizações de dados.
+Selecionar uma visualização de dados em uma célula é útil quando você tem:
 
-1. Criar um bloco de dados.
-Para obter informações sobre como criar um bloco de dados, consulte [Criar um Bloco de Dados](/help/report-builder/create-a-data-block.md).
+* Várias visualizações de dados que são semelhantes ou idênticas entre si na estrutura.
+* Formatos de blocos de dados complicados que incluem componentes e layouts personalizados.
 
-1. Clique no *ícone de célula* na seção *Visualizações de dados*.
+Para selecionar uma visualização de dados de uma célula, primeiro crie um bloco de dados e atribua várias visualizações de dados a uma célula fora do bloco de dados. Em seguida, use o painel **[!UICONTROL Visualização de dados da célula]** para atualizar seus blocos de dados de visualizações de dados diferentes.
 
-   ![Criar nova janela de bloco de dados com o ícone de célula realçado.](/help/report-builder/assets/cell-icon.png)
+1. Criar um bloco de dados. Para obter informações sobre como criar um bloco de dados, consulte [Criar um bloco de dados](/help/report-builder/create-a-data-block.md).
 
-1. Selecione um local de célula para adicionar as visualizações de dados à célula selecionada.
+1. Selecione ![DataViewSelector](/help/assets/icons/DataViewSelector.svg) em **[!UICONTROL Data views]**.
 
-   Talvez você queira selecionar uma célula distante o suficiente das células do bloco de dados para que elas não se sobreponham.
+1. Selecione uma célula usando ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) fora do bloco de dados.
 
-1. Confirme o local da célula selecionada.
+1. Adicione uma ou mais exibições de dados da **[!UICONTROL Selecione as exibições de dados a serem adicionadas à exibição de dados da célula]** usando a função arrastar e soltar. Como alternativa, você pode selecionar duas vezes uma visualização de dados para adicioná-la à lista **[!UICONTROL Visualizações de dados incluídas]**.
 
-1. Selecione as visualizações de dados que deseja atribuir à célula.
+   * Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) **[!UICONTROL _Selecionar visualizações de dados_]** para procurar visualizações de dados.
+   * Use ![MaisPequeno](/help/assets/icons/MoreSmall.svg) para abrir um menu de contexto e mover as exibições de dados para cima ou para baixo na lista **[!UICONTROL Exibições de dados incluídas]**.
+   * Use ![CrossSize75](/help/assets/icons/CrossSize75.svg) para excluir uma exibição de dados da lista **[!UICONTROL Exibições de dados incluídas]**.
 
-   ![Painel de edição rápida do Report Builder mostrando as visualizações de dados Selecionar.](/help/report-builder/assets/select-data-view.png)
+   ![Selecionar exibição de dados de uma célula](assets/dataviews-from-a-cell.png){zoomable="yes"}
 
-1. Clique em **Aplicar**.
+1. Selecione **[!UICONTROL Aplicar]** para aplicar as visualizações de dados selecionadas à célula selecionada.
 
-   Ao concluir o bloco de dados, você pode atualizar o bloco de dados usando uma visualização de dados diferente da célula selecionada.
 
-   **Alterar a exibição de dados da célula**
+## Alterar a visualização de dados de uma célula
 
-1. Clique no local da célula de visualização de dados escolhido na Etapa 3.
+1. Selecione o local da célula de visualização de dados em sua planilha.
+1. No hub do Report Builder, selecione o link **[!UICONTROL Visualizações de dados da célula]** em **[!UICONTROL Edição rápida]**.
+1. Selecione uma exibição de dados no menu suspenso **[!UICONTROL Exibição de dados]**.
 
-   Um menu suspenso listando as visualizações de dados selecionadas anteriormente na Etapa 5 é exibido.
+   ![Alterar exibição de dados de uma célula](assets/change-data-view-from-cell.png){zoomable="yes"}
+1. Opcional, selecione **[!UICONTROL Atualizar bloco(s) de dados após a alteração]**.
 
-1. Selecione uma visualização de dados diferente na lista suspensa.
-
-1. (Opcional) **Selecione Atualizar bloco(s) de dados** após a alteração.
-
-1. Clique em **Aplicar**.
-
-   O Report Builder atualiza o bloco de dados com a visualização de dados escolhida.
+1. Selecione **[!UICONTROL Aplicar]**. O Report Builder atualiza o bloco de dados com base na visualização de dados selecionada.

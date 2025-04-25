@@ -1,126 +1,90 @@
 ---
-title: Como selecionar um intervalo de datas em Report Builder no Customer Journey Analytics
+title: Como selecionar um intervalo de datas no Report Builder no Customer Journey Analytics
 description: Descreve como usar o calendário, as datas do acumulado e as expressões personalizadas no Report Builder para Customer Journey Analytics
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: c56c77079aa21fb740fda6bec333731a1f82a48f
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 87%
+source-wordcount: '867'
+ht-degree: 49%
 
 ---
 
 # Selecionar um intervalo de datas
 
-Para alterar o intervalo de datas de um bloco de dados existente, selecione Editar um bloco de dados ou use o painel EDIÇÃO RÁPIDA.
+Para alterar o intervalo de datas de um bloco de dados existente:
+
+- Selecione **[!UICONTROL Editar um bloco de dados]** ou
+- Selecione o link **[!UICONTROL Intervalo de datas]** em **[!UICONTROL Edição rápida]**.
 
 Use as seguintes opções para alterar um intervalo de datas para um bloco de dados.
 
-**Calendário**
+## Calendário
 
-O Calendário permite criar datas estáticas ou contínuas usando as seguintes opções:
+A opção **[!UICONTROL Calendário]** permite criar datas estáticas ou contínuas usando estas opções:
 
-- Campo de intervalo de datas
-- Calendário
-- Menu suspenso Predefinição
-- Modo de data do acumulado
-- Personalizar expressões
+### Intervalo de datas
 
+O campo Intervalo de datas exibe o intervalo de datas atual para a solicitação de bloco de dados. Você pode inserir datas diretamente ou usar o ![Calendário](/help/assets/icons/Calendar.svg) para especificar um intervalo de datas.
 
-**A partir da célula**
+![Calendário de intervalo de datas](assets/date-range-calendar.png){zoomable="yes"}
 
-A opção A partir da célula permite fazer referência às datas inseridas em células da planilha.
+### Predefinições
 
-Você tem a opção de excluir o hoje em qualquer intervalo de datas selecionado.
+Use o menu suspenso Predefinições para selecionar uma predefinição. Também é possível digitar texto para procurar predefinições.
 
-Report Builder ![Painel de edição rápida com o calendário selecionado e Excluir hoje selecionado.](./assets/image17.png)
-
-## Usar o calendário
-
-Quando você usa o **Calendário**, o campo de intervalo de datas exibe o intervalo de datas atual para a solicitação de bloco de dados. Você pode inserir datas diretamente no campo de intervalo de datas ou usar uma opção de seleção de intervalo de datas.
-
-### Campo de intervalo de datas
-
-Inserção de datas diretamente no campo de intervalo de datas
-
-1. Clique no campo de intervalo de datas ao lado do ícone do calendário.
-
-1. Insira datas de início e término para seu intervalo de datas.
-
-### Calendário
-
-Para selecionar datas usando o calendário
-
-1. Clique no ícone de calendário para exibir um calendário mensal.
-
-1. Clique em uma data de início.
-
-1. Clique em uma data de término.
-
-Para definir um intervalo de datas invertido, clique primeiro na data final e, em seguida, clique na data inicial.
-
-Painel de intervalo de datas ![Report Builder mostrando o calendário, a data de término e a data de início selecionada.](./assets/image18.png)
-
-### Menu suspenso Predefinição
+![Predefinições de intervalo de datas](assets/date-range-presets.png){zoomable="yes"}
 
 O menu suspenso predefinido inclui um conjunto padrão de intervalos de datas predefinidos, além de componentes de intervalo de datas, para uma visualização de dados que você salvou ou para uma visualização de dados que foi compartilhada com você.
 
 ### Datas do acumulado
 
-A opção Datas em andamento permite selecionar um intervalo de datas usando datas em andamento.
+Para definir datas do acumulado:
 
-1. Selecionar **Usar datas do acumulado**.
+![Datas do acumulado](assets/date-range-rolling-date.png){zoomable="yes"}
 
-1. Selecione uma expressão em andamento para a data de início e/ou de término.
+1. Selecione **[!UICONTROL Usar datas do acumulado]** para definir a lógica de uma definição de data do acumulado. É possível selecionar o texto entre parênteses (por exemplo, **[!UICONTROL início fixo - rolagem diária]**) para estender o painel e especificar detalhes para **[!UICONTROL Início]** e **[!UICONTROL Fim]**.
 
-   Painel de intervalo de datas ![Report Builder mostrando Usar datas do acumulado selecionadas e a expressão do acumulado.](./assets/image19.png)
+1. Selecione **[!UICONTROL Início de]**, **[!UICONTROL Fim de]** ou **[!UICONTROL Dia fixo]**.
 
-   **Início do** — Permite selecionar o início de um dia, semana, mês, trimestre ou ano.
+   - Ao selecionar **[!UICONTROL Início de]** ou **[!UICONTROL Fim de]**, você pode criar uma expressão completa. Por exemplo: **[!UICONTROL Fim do]** **[!UICONTROL ano atual]** **[!UICONTROL mais]** `1` **[!UICONTROL dia]**. Escolha o valor apropriado para cada parte individual da expressão.
 
-   **Fim de** — Permite selecionar o fim de um dia, semana, mês, trimestre ou ano.
+      - Selecione um valor para o atual. Por exemplo, **[!UICONTROL ano atual]**.
+      - Selecione um valor para um cálculo adicional opcional. Por exemplo, **[!UICONTROL mais]**.
+      - Após definir um cálculo adicional, especifique um valor. Por exemplo, `1`.
+      - Depois de especificar um cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dia]**.
 
-   **Dia fixo** — Permite que você escolha uma data inicial ou final fixa enquanto a outra data está em andamento.
+   - Ao selecionar **[!UICONTROL Dia Fixo]**, especifique um dia fixo ou use o seletor para selecionar um dia.
 
-1. Escolha dia, semana, mês, trimestre ou ano como o período do acumulado.
+1. Selecione **[!UICONTROL ocultar]** para ocultar os detalhes do cálculo das datas do acumulado.
 
-   Painel de intervalo de datas ![Report Builder mostrando o dia atual selecionado.](./assets/image20.png)
-
-1. Adicione ou subtraia dias, semanas, meses, trimestres ou anos a partir da data em andamento.
-
-   Painel de intervalo de datas ![Report Builder mostrando o dia atual mais 14 dias selecionados.](./assets/image21.png)
-
-1. Clique em Próximo para definir o intervalo de datas.
-
-   Use a pré-visualização de data para confirmar se o intervalo de datas resultante é o intervalo desejado.
 
 ### Expressões personalizadas
 
 A opção de expressão personalizada permite alterar o intervalo de datas, criando uma expressão personalizada ou possibilitando a inserção de uma fórmula aritmética.
 
-1. Selecionar **Usar datas do acumulado**.
+![Expressão personalizada de intervalo de datas](assets/date-range-custom-expression.png){zoomable="yes"}
 
-1. Selecionar **Usar expressão personalizada**.
+1. Selecionar **[!UICONTROL Usar datas do acumulado]**.
 
-   Ao selecionar a opção **Usar expressão personalizada**, os controles padrão de intervalo de datas do acumulado são desativados.
+1. Selecionar **[!UICONTROL Usar expressão personalizada]**.
 
-   ![Selecione Usar expressão personalizada mostrando tm-1m a td-1d.](./assets/custom_expression.png)
+   Ao selecionar **[!UICONTROL Usar expressão personalizada]**, os controles padrão de intervalo de datas do acumulado são desabilitados.
 
-1. Insira uma expressão personalizada.
+1. Insira uma [expressão personalizada](#create-a-custom-expression).
 
-   Para obter uma lista de exemplos de expressões personalizadas, consulte **Expressões de datas**.
-
-1. Use a pré-visualização de data para verificar se o intervalo de datas resultante é o intervalo desejado.
+1. Use a **[!UICONTROL Visualização de data]** para verificar o intervalo de datas resultante.
 
 #### Criar uma expressão personalizada
 
-1. Insira uma **Referência da data**.
+1. Insira uma [referência de data](#date-references).
 
-1. Adicionar **Operadores de data** para mover a data para o passado ou futuro.
+1. Adicione um [operador de data](#date-operators) opcional para mover a data para o passado ou futuro.
 
-Você pode inserir uma expressão de data personalizada que inclui vários operadores, como ```tm-11m-1d```.
+Você pode inserir uma expressão personalizada que inclua vários operadores, como `tm-11m-1d`.
 
 #### Referências de data
 
@@ -128,24 +92,24 @@ A tabela a seguir lista exemplos de referência de data.
 
 | Referência de data | Tipo | Descrição |
 |----------------|--------------|----------------------------|
-| 1/1/10 | Data estática | Inserido no formato de Data ISO |
-| td | Data do acumulado | Início do dia atual |
-| tw | Data do acumulado | Início da semana atual |
-| tm | Data do acumulado | Início do mês atual |
-| tq | Data do acumulado | Início do trimestre atual |
-| ty | Data do acumulado | Início do ano atual |
+| `1/1/10` | Data estática | Inserido no formato de Data ISO |
+| `td` | Data do acumulado | Início do dia atual |
+| `tw` | Data do acumulado | Início da semana atual |
+| `tm` | Data do acumulado | Início do mês atual |
+| `tq` | Data do acumulado | Início do trimestre atual |
+| `ty` | Data do acumulado | Início do ano atual |
 
 #### Operadores de data
 
 A tabela a seguir lista exemplos de operadores de data.
 
-| Operadores de data | Unidade | Descrição |
+| Operador de data | Unidade | Descrição |
 |----------------|---------|--------------------|
-| +6d | Dia | Adicionar 6 dias à referência de data |
-| +1w | Semana | Adicionar uma semana inteira à referência de data |
-| -2m | Mês | Subtrair 2 meses completos da referência da data |
-| -4q | Trimestre | Subtrair 4 trimestres da referência de data |
-| -1y | Ano | Subtrair um ano da referência de data |
+| `+6d` | Dia | Adicionar 6 dias à referência de data |
+| `+1w` | Semana | Adicionar uma semana inteira à referência de data |
+| `-2m` | Mês | Subtrair 2 meses completos da referência da data |
+| `-4q` | Trimestre | Subtrair 4 trimestres da referência de data |
+| -`1y` | Ano | Subtrair um ano da referência de data |
 
 #### Expressões de datas
 
@@ -153,23 +117,26 @@ A tabela a seguir lista exemplos de expressão de data.
 
 | Expressão de data | Significado |
 |-----------------|--------------------------------------|
-| td-1w | Primeiro dia da semana passada |
-| tm-1d | Último dia do mês anterior |
-| td-52w | Mesmo dia 52 semanas atrás |
-| tm-11m-1d | Último dia do mesmo mês do ano passado |
-| &quot;09-2020&quot; | 9 de setembro de 2020 |
+| `td` | Hoje |
+| `td-1w` | Primeiro dia da semana passada |
+| `tm-1d` | Último dia do mês anterior |
+| `td-52w` | Mesmo dia 52 semanas atrás |
+| `tm-11m-1d` | Último dia do mesmo mês do ano passado |
+| `"2020-09-06"` | Data específica, 9 de setembro de 2020 |
+
+
 
 ## Intervalo de datas da célula
 
-O intervalo de datas pode ser especificado em células da planilha. Use a opção de **Intervalo de datas da célula** para escolher a data inicial e final do bloco de dados a partir das células selecionadas. Ao selecionar a opção **A partir da célula**, o painel é exibido **A partir de** e **Para** campos onde você pode inserir um local de célula.
+O intervalo de datas pode ser especificado em células da planilha. Use a opção **[!UICONTROL Intervalo de datas da célula]** para escolher a data inicial e final do bloco de dados a partir das células selecionadas. Ao selecionar a opção **[!UICONTROL Da célula]**, o painel exibe os campos **[!UICONTROL De]** e **[!UICONTROL Para]**, nos quais você pode inserir um local de célula ou usar ![DataBlockSelector](/help/assets/icons/DataBlockSelector.svg) para escolher a célula selecionada no momento.
 
-![Selecionar da célula Folha1!H4 para Folha1!I4](./assets/image23.png)
+![Selecionar da célula Folha1!H4 para Folha1!I4](./assets/date-range-from-cell.png){zoomable="yes"}
+
 
 ## Excluir hoje
 
-Escolha a opção **Excluir hoje** para excluir hoje de um intervalo de datas selecionado. Optar por incluir hoje pode obter dados incompletos para hoje.
+Selecione **[!UICONTROL Excluir hoje]** para excluir hoje de um intervalo de datas selecionado. O dia atual é excluído de todos os modos usados para definir um intervalo de datas: calendário, datas do acumulado ou expressões personalizadas.
 
-Quando selecionada, a opção **Excluir hoje** exclui o dia atual de todos os modos de intervalo de datas, incluindo calendário, datas do acumulado ou expressões personalizadas.
 
 ## Intervalos de datas válidos
 
@@ -179,27 +146,21 @@ A lista a seguir descreve formatos válidos de intervalo de datas.
 
 - A data de início deve ser anterior ou igual à data de término. Ambas as datas podem ser definidas para o futuro.
 
-- Ao usar datas em andamento, a data de início deve ser hoje ou no passado. Deve ser no passado se **Excluir hoje** estiver marcada.
+- Ao usar datas em andamento, a data de início deve ser hoje ou no passado. O dia de início deve estar no passado se **[!UICONTROL Excluir hoje]** estiver selecionado.
 
 - É possível criar um intervalo de datas estático para o futuro. Por exemplo, talvez seja necessário definir uma data futura para um lançamento de campanha de marketing na próxima semana. Essa opção cria um monitoramento de pasta de trabalho para uma campanha antecipadamente.
 
 ## Alterar intervalo de datas
 
-Você pode editar o intervalo de datas de um bloco de dados existente selecionando Editar bloco de dados no painel COMANDOS ou selecionando o link de intervalo de datas no painel EDIÇÃO RÁPIDA.
+É possível editar o intervalo de datas de um bloco de dados existente.
 
-**Editar bloco de dados** — Permite editar vários parâmetros de blocos de dados, incluindo o intervalo de datas, para um único bloco de dados.
+1. Selecione uma célula em seu bloco de dados.
 
-**Edição Rápida: intervalo de datas** — Permite editar o intervalo de datas de um ou mais blocos de dados.
+- Selecione **[!UICONTROL Editar bloco de dados]** no painel **[!UICONTROL Comandos]** ou
+- Selecione o link **[!UICONTROL Intervalo de datas]** no painel **[!UICONTROL Edição rápida]**.
 
-Para editar o intervalo de datas no painel EDIÇÃO RÁPIDA
+1. Modifique o intervalo de datas usando qualquer uma das opções de seleção de data disponíveis.
 
-1. Selecione células dentro de um ou mais blocos de dados em uma planilha.
-
-1. Clique no link **Intervalo de datas** no painel EDIÇÃO RÁPIDA.
-
-1. Selecione o intervalo de datas usando qualquer uma das opções de seleção de data.
-
-1. Clique em **Aplicar**.
-
+1. Selecione **[!UICONTROL Aplicar]**.
 
 O Report Builder aplica o novo intervalo de datas a todos os blocos de dados na seleção.

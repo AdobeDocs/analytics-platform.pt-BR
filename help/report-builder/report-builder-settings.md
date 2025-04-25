@@ -6,10 +6,10 @@ feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: 9efad7c7808a7a68bc25fc5f1700f4e4f8e18614
+source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 87%
+source-wordcount: '258'
+ht-degree: 29%
 
 ---
 
@@ -19,44 +19,41 @@ Use o painel **Configurações** para definir as configurações no nível do ap
 
 Para alterar as configurações do Report Builder
 
-1. Clique no ícone de **Configurações**.
+1. Selecione o ícone **Configurações**.
 
-1. Faça alterações para Ativar o modo offline, selecione um Idioma ou ative as configurações do log de Solução de problemas.
+1. Faça alterações em [habilitar ou desabilitar o modo offline](#off-line-mode), [selecionar um idioma](#language) ou [habilitar a solução de problemas](#troubleshooting).
 
-1. Clique em **Aplicar**.
+1. Selecione **[!UICONTROL Aplicar]**.
 
-   Painel de intervalo de datas ![Report Builder mostrando o botão Cancelar e Aplicar.](./assets/image38.png)
+   ![Painel de intervalo de datas do Report Builder mostrando o botão Cancelar e Aplicar.](./assets/report-builder-settings.png){zoomable="yes"}
 
 ## Modo offline
 
-Ao criar e editar um bloco de dados no modo off-line, os dados não são recuperados. Em vez disso, os dados de simulação são usados para que você possa criar e editar rapidamente um bloco de dados sem esperar a execução da solicitação. Quando você voltar a ficar online, o comando *Atualizar bloco de dados* ou o comando *Atualizar todos os blocos de dados* atualiza os blocos de dados criados com os dados reais.
+Ao criar e editar um bloco de dados no modo off-line, os dados não são recuperados. Em vez disso, os dados de simulação são usados para que você possa trabalhar rapidamente sem esperar a execução da solicitação. Quando você voltar a ficar online, selecione ![Atualizar](/help/assets/icons/Refresh.svg) **[!UICONTROL Atualizar bloco de dados]** ou ![AtualizarDocumento](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Atualizar todos os blocos de dados]** para atualizar os blocos de dados com dados reais.
 
 Para ativar o modo off-line
 
-1. Clique no ícone de **Configurações**.
+1. Selecione ![Configuração](/help/assets/icons/Setting.svg).
 
-1. Selecionar **Ativar modo off-line**.
+1. Ativar/desativar **[!UICONTROL modo offline]**.
 
-1. Insira um número inteiro positivo no **Exibir dados de métrica como** campo.
+1. Insira um número inteiro positivo no **[!UICONTROL Exibir dados de métrica]** como campo.
 
-1. Clique em **Aplicar**.
+1. Selecione **[!UICONTROL Aplicar]**.
+
 
 ## Idioma
 
-Você pode escolher o idioma para a interface do Report Builder. Todos os idiomas suportados pelo Adobe Analytics estão disponíveis.
+Você pode escolher o idioma para a interface do Report Builder. Todos os idiomas suportados pelo Customer Journey Analytics estão disponíveis.
 
-Para selecionar o idioma usado na interface do Report Builder
+Para selecionar o idioma usado na interface do Report Builder:
 
-1. Clique em Configurações.
+1. Selecione um idioma no menu suspenso **[!UICONTROL Idioma]**.
 
-1. Selecione um idioma no menu suspenso **Idioma**.
-
-   Painel de intervalo de datas ![Report Builder mostrando a lista Idioma com inglês selecionado.](./assets/image39.png)
-
-1. Clique em **Aplicar.**
+1. Selecione **Aplicar.**
 
 ## Solução de problemas
 
-Use a configuração Solução de problemas para registrar todos os dados do cliente/servidor em um arquivo local. Use essa opção para ajudar a resolver tíquetes de suporte.
+A configuração **[!UICONTROL Logs de solução de problemas]** registra todos os dados do cliente/servidor em um arquivo local. Use essa opção para ajudar a resolver tíquetes de suporte.
 
-Para ativar a opção Solução de problemas, selecione **Registrar solicitação do Report Builder no arquivo local**.
+Para habilitar logs de solução de problemas, verifique **[!UICONTROL Registrar solicitação do Report Builder no arquivo local]**.

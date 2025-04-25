@@ -6,20 +6,20 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 84%
+source-wordcount: '1105'
+ht-degree: 13%
 
 ---
 
 # Programar pastas de trabalho
 
-Depois de salvar a pasta de trabalho e concluir a análise, é possível compartilhar facilmente a pasta de trabalho com outras pessoas em sua equipe usando o recurso de programação. O recurso Programação permite criar um uma programação que atualiza automaticamente os dados na pasta de trabalho e envia por email o arquivo .xlsx da pasta de trabalho do Excel como um anexo para o público-alvo especificado em uma data e hora específicas. Configurar uma programação fornece atualizações regulares aos recipients automaticamente. Você também pode usar o recurso de programação para enviar a pasta de trabalho uma vez sem programar atualizações automáticas.
+Depois de salvar a pasta de trabalho e concluir a análise, é possível compartilhá-la com outras pessoas da equipe usando o recurso de agendamento. O recurso Agendar permite criar um agendamento que atualiza automaticamente os dados na pasta de trabalho. E envia por email o arquivo de pasta de trabalho do Excel como um anexo para o público-alvo especificado em uma data e hora específicas. Configurar um agendamento fornece aos recipients atualizações regulares automaticamente. Você também pode usar o recurso de programação para enviar a pasta de trabalho uma vez sem programar atualizações automáticas.
 
-Você pode criar várias programações para uma única pasta de trabalho. Por exemplo, você pode enviar uma pasta de trabalho para sua equipe diariamente e enviar a pasta de trabalho para seu gerente uma vez por semana criando duas programações diferentes.
+Você pode criar várias programações para uma única pasta de trabalho. Por exemplo, você cria dois cronogramas para enviar uma pasta de trabalho para sua equipe diariamente e para seu gerente uma vez por semana.
 
-O recurso Programação também permite que você configure a proteção por senha para uma pasta de trabalho e edite pastas de trabalho previamente programadas.
+O recurso de programação também permite configurar a proteção por senha para uma pasta de trabalho e editar pastas de trabalho programadas anteriormente.
 
 
 >[!BEGINSHADEBOX]
@@ -31,104 +31,152 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Agendar pas
 
 ## Agendar uma pasta de trabalho
 
-Use o botão Programar tarefa no hub do Report Builder para criar com rapidez uma programação para que você possa distribuir automaticamente um arquivo Excel de pasta de trabalho (.xlsx) para um indivíduo ou grupo.
+Para programar uma pasta de trabalho:
 
-1. Clique no botão Programação no hub do Report Builder.
+1. Selecione **[!UICONTROL Agendar]** no hub do Report Builder para criar um agendamento para que você possa distribuir automaticamente um arquivo de pasta de trabalho do Excel (.xlsx) para um indivíduo ou grupo.
 
-   ![Clique no botão Agendar para criar um agendamento.](./assets/schedule-button.png){width="55%"}
+   ![Selecione o botão Agendar para criar um agendamento.](./assets/schedule.png){zoomable="yes"}
 
-1. Clique em Programar pasta de trabalho ou no botão de mais no canto superior esquerdo para criar uma nova pasta de trabalho programada.
+1. Selecione **[!UICONTROL Agendar pasta de trabalho]** ou ![Adicionar](/help/assets/icons/Add.svg) para criar uma nova pasta de trabalho agendada.
 
-   ![A janela Agendar pastas de trabalho.](./assets/schedule-workbook.png){width="55%"}
+   ![A janela Agendar pastas de trabalho.](./assets/schedule-workbook.png){zoomable="yes"}
 
    O painel de programação exibe algumas informações predefinidas sobre a pasta de trabalho, como o nome da pasta de trabalho e a última data em que a pasta de trabalho foi modificada.
 
-   ![O painel de agendamento.](./assets/schedule-pane.png){width="55%"}
+### Arquivo
 
-1. (Opcional) Insira um nome de arquivo.
+Na seção **[!UICONTROL Arquivo]**, forneça detalhes sobre o tipo de arquivo, o nome e uma senha para proteger o arquivo.
 
-   O nome do arquivo da pasta de trabalho é padronizado com o nome da pasta de trabalho, mas você pode alterá-lo se quiser. Se estiver enviando a mesma pasta de trabalho para vários públicos-alvo e quiser nomeá-la de forma um pouco mais intuitiva para um determinado público-alvo, é possível alterar o nome.
+![O painel de agendamento.](./assets/schedule-pane.png){zoomable="yes"}
 
-1. (Opcional) Selecione **Anexar carimbo de data/hora ao nome do arquivo**.
+1. Use ![TableSelect](/help/assets/icons/TableSelect.svg) para selecionar a pasta de trabalho atual, se ainda não estiver selecionada.
 
-   Você pode anexar um carimbo de data e hora ao nome do arquivo para identificar a data em que a pasta de trabalho foi atualizada. Isso é útil para ver rapidamente qual versão de uma pasta de trabalho foi enviada em uma data específica. A **Visualização do nome do arquivo** mostra como o nome do arquivo da pasta de trabalho será exibido no email quando a pasta de trabalho for distribuída. O formato do carimbo de data e hora é AAAA-MM-DD.
+1. (Opcional) Insira um **[!UICONTROL Nome do arquivo]**.
 
-1. (Opcional) Selecione **Compactação .zip** para compactar o arquivo e configurar a proteção por senha no arquivo.
+   O nome de arquivo da pasta de trabalho é padronizado como o nome da pasta de trabalho, mas você pode alterar o nome do arquivo, se desejar.
 
-   Ao fazer essa seleção, você deverá digitar uma senha para abrir o arquivo. Isso é útil se você tiver dúvidas sobre a segurança de dados e quiser proteger a pasta de trabalho por senha. A proteção do arquivo com uma senha exige que você selecione **Compactação .zip**. A senha deve ter pelo menos 8 caracteres e conter um número e um caractere especial.
+1. Selecione um **[!UICONTROL Tipo de arquivo]**.
 
-   ![Insira uma senha no campo Proteger a pasta de trabalho com senha.](./assets/zip-compression.png){width="55%"}
+   * **[!UICONTROL Excel]**
+   * **[!UICONTROL PDF]**
+   * **[!UICONTROL CSV]**
 
-1. Insira os **Recipients**. Você pode inserir o nome de uma pessoa reconhecida em sua organização ou pode inserir um endereço de email de uma pessoa dentro ou fora da organização.
+   Ao selecionar **[!UICONTROL CSV]**, saiba que a pasta de trabalho agendada é enviada como um anexo zip. Algumas administrações de e-mail corporativas podem bloquear e-mails com anexos zip. Você verá um aviso adequadamente.
+
+1. (Opcional) Selecione **[!UICONTROL Anexar carimbo de data/hora ao nome do arquivo]**.
+
+   Você pode anexar um carimbo de data e hora ao nome do arquivo para identificar a data em que a pasta de trabalho foi atualizada. Um carimbo de data e hora é útil para ver qual versão de uma pasta de trabalho foi enviada em uma data específica. Quando selecionado, você pode escolher entre:
+
+   * **[!UICONTROL Formato ISO de data]**, que resulta na anexação de `YYYY-MM-DD` ao nome de arquivo.
+   * **[!UICONTROL Formato ISO de data + carimbo de data/hora]**, que resulta na anexação de `YYYY-MM-DD_HH-MM-SS` ao nome de arquivo.
+
+<!-- Does no longer seem to be an option? 
+1. (Optional) Select **.zip compression** to compress the file and set up password protection on the file.
+
+    When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.
+
+    ![Enter a password in the Password protect the workbook field.](./assets/zip-compression.png){zoomable="yes"}{width="55%"}
+-->
+
+1. Digite uma senha em **[!UICONTROL Proteger a pasta de trabalho com senha]**. Uma senha válida exige pelo menos 8 caracteres, um número e um caractere especial. Selecione ![VisibilityOff](/help/assets/icons/VisibilityOff.svg) para exibir a senha e ![Visibility](/help/assets/icons/Visibility.svg) para ocultar a senha (padrão).
+
+
+### Email
+
+Na seção **[!UICONTROL Email]**, forneça os destinatários, o assunto e a descrição do email.
+
+![Configurações de email de agendamento](assets/schedule-email.png){zoomable="yes"}
+
+1. Insira os **Recipients**. Você pode inserir o nome de uma pessoa reconhecida em sua organização. Ou você pode inserir um endereço de email de uma pessoa que esteja fora da sua organização.
 
 1. Insira o **Assunto** do email e uma descrição para seus recipients. O assunto assume o padrão do nome do arquivo da pasta de trabalho, mas você pode modificar o assunto, se necessário. Você pode adicionar detalhes na seção de descrição.
 
-   ![Insira um assunto no campo Assunto.](./assets/recipients-subject.png){width="55%"}
+1. Opcionalmente, você pode inserir uma descrição na área de texto **[!UICONTROL Descrição]**.
 
-1. Configure as opções de programação para definir a data e a hora em que deseja que a pasta de trabalho seja enviada por email para os recipients.
 
-   Escolha a data inicial e final e os intervalos de tempo. Pode ser a data de hoje ou uma data no futuro.
+### Agendar
 
-   Escolha a **Frequência** no menu suspenso. Você pode definir a frequência por hora, dia, semana, mês ou ano em um dia específico. Por exemplo, você pode configurar uma programação para enviar a pasta de trabalho na primeira noite de domingo do mês, para que os recipients tenham o email na caixa de entrada logo na segunda-feira de manhã.
+Na seção **[!UICONTROL Agendar]**, você pode definir o agendamento para enviar os emails com a pasta de trabalho para seus destinatários.
 
-   ![Selecione a frequência para agendar seu relatório.](./assets/frequency.png){width="55%"}
+![Definição de agendamento](assets/schedule-enable.png){zoomable="yes"}
 
-1. Após definir a programação, clique em **Enviar de acordo com a programação**.
+1. Selecione **[!UICONTROL Mostrar opções de agendamento]** para definir um agendamento.
 
-   ![Clique em Enviar de acordo com a programação.](./assets/send-on-schedule.png){width="55%"}
+1. Insira uma data de início em **[!UICONTROL A partir de]**. Como alternativa, selecione ![Calendário](/help/assets/icons/Calendar.svg) para escolher uma data de início no calendário.
 
-   Você verá uma confirmação na parte inferior do hub do Report Builder e a pasta de trabalho programada será listada na guia Pastas de trabalho.
+1. Insira uma data de término em **[!UICONTROL Terminando em]**. Como alternativa, selecione ![Calendário](/help/assets/icons/Calendar.svg) para escolher uma data de término no calendário.
 
-   ![Notificação do sistema](./assets/confirmation-toast.png){width="55%"}
+1. Selecione uma **[!UICONTROL Frequência]**. Dependendo da frequência selecionada, você tem opções adicionais. Consulte a tabela abaixo.
 
-## Enviar a pasta de trabalho apenas uma vez
+   | Frequência | Opções |
+   |---|---|
+   | **[!UICONTROL Enviar por hora]** | Insira um valor para **[!UICONTROL Enviar a cada número de horas]**. |
+   | **[!UICONTROL Enviar diariamente]** | Selecione uma **[!UICONTROL Frequência diária]**: **[!UICONTROL Enviar todos os dias]**, **[!UICONTROL Enviar todos os dias da semana]** ou **[!UICONTROL Frequência personalizada]**.<br/>Se você selecionar **[!UICONTROL Frequência personalizada]**, insira um valor para **[!UICONTROL Enviar todos os números de dias]**. |
+   | **[!UICONTROL Enviar semanalmente]** | Insira um valor para **[!UICONTROL Enviar a cada número de semanas]**. E selecione um **[!UICONTROL Dia da semana]**. |
+   | **[!UICONTROL Enviar mensalmente por dia da semana]** | Selecione um **[!UICONTROL Dia da semana]** e uma **[!UICONTROL Semana do mês]**. |
+   | **[!UICONTROL Enviar mensalmente por dia do mês]** | Selecione um valor de **[!UICONTROL Enviar neste dia do mês]**. |
+   | **[!UICONTROL Enviar anualmente por dia do mês]** | Selecione um **[!UICONTROL Dia da semana]**, selecione uma **[!UICONTROL Semana do mês]** e selecione um **[!UICONTROL Mensal do ano]**. |
+   | **[!UICONTROL Enviar anualmente por data específica]** | Selecione um **[!UICONTROL Mês do ano]** e selecione um valor de **[!UICONTROL Enviar neste dia do mês]**. |
 
-Você também pode enviar a pasta de trabalho apenas uma vez.
+### Enviar
 
-1. Desmarcar **Mostrar opções de programação**
+Para enviar a pasta de trabalho:
 
-   ![Clique em Desmarcar Mostrar opções de agendamento para enviar uma pasta de trabalho uma vez.](./assets/send-now.png){width="40%"}
+* Se você não tiver definido um agendamento usando **[!UICONTROL Mostrar opções de agendamento]**, selecione **[!UICONTROL Enviar agora]** para enviar a pasta de trabalho por email imediatamente.
+* Se você tiver definido um agendamento usando **[!UICONTROL Mostrar opções de agendamento]**, selecione **[!UICONTROL Enviar de acordo com o agendamento]** para enviar a pasta de trabalho por email usando o agendamento definido.
 
-1. Clique em **Enviar agora**.
+Em ambos os casos, você verá uma notificação de confirmação na parte inferior do hub do Report Builder.
 
-## Exibir e editar pastas de trabalho programadas
+Para cancelar o envio da pasta de trabalho, selecione **[!UICONTROL Cancelar]**.
 
-Você pode exibir e gerenciar todas as pastas de trabalho programadas em um local, na guia Pastas de trabalho.
 
-1. Na seção Programação do hub do Report Builder, clique na guia Pastas de trabalho. Use essa exibição para ver uma lista de todas as pastas de trabalho programadas.
+## Exibir e gerenciar pastas de trabalho agendadas
 
-1. Selecione uma pasta de trabalho. São exibidas várias ferramentas que permitem editar a pasta de trabalho, editar a tarefa de agendamento, pausar e reiniciar a tarefa de agendamento, baixar um relatório de tarefa agendada ou excluir a tarefa de agendamento.
+Você pode exibir e gerenciar todas as pastas de trabalho agendadas na guia **[!UICONTROL Pastas de trabalho]**.
 
-   ![Captura de tela mostrando os ícones de agendamento da pasta de trabalho.](./assets/schedule-icons.png){width="20%"}
+1. Selecione **[!UICONTROL Agendar]** no hub do Report Builder
 
-* (Opcional) Clique no ícone de lápis para editar a tarefa de programação da pasta de trabalho.
+1. Selecione a guia **[!UICONTROL Pastas de trabalho]**. Você verá uma lista de todas as pastas de trabalho agendadas.
 
-* (Opcional) Clique no ícone de relógio para exibir um histórico de cada tarefa agendada.
+   ![Pasta de trabalho agendada](assets/scheduled-workbooks.png){zoomable="yes"}
 
-* (Opcional) Clique no ícone de pausa para pausar e reiniciar a tarefa de programação de distribuição. Isso é útil se você precisar modificar a pasta de trabalho antes que ela seja enviada. Clique no ícone de pausa novamente quando quiser reiniciar a distribuição.
+   Você pode passar o mouse sobre o ícone para ver o status de uma pasta de trabalho agendada.
 
-* (Opcional) Clique no ícone de download para baixar uma cópia da tarefa de agendamento da pasta de trabalho.
+   Use a ![Pesquisa](/help/assets/icons/Search.svg) para procurar pastas de trabalho agendadas específicas.
+Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para definir quais colunas mostrar.
 
-* (Opcional) Clique na lixeira para excluir a tarefa programada.
+1. Selecione uma ou mais pastas de trabalho.
 
-  ![Captura de tela mostrando a lista de tarefas agendadas.](./assets/selected-workbook.png){width="40%"}
+   ![Agendar pastas de trabalho selecionadas](assets/scheduled-workbooks-selected.png){zoomable="yes"}
 
-## Revisar o status das tarefas programadas
+   Estas são as opções disponíveis:
 
-A exibição do histórico permite revisar o status de cada tarefa programada. Há uma linha separada que documenta a alteração de status para cada tarefa programada. No exemplo mostrado abaixo, a *Nova programação por hora* foi iniciada em 5 de janeiro, às 15h04. Às 15h05, ela foi atualizada com êxito e enviada aos recipients. A próxima pasta de trabalho, *Pasta de trabalho incorreta*, encontrou um erro durante o processo de atualização. Se uma pasta de trabalho tiver falha de envio, a guia Histórico ajudará a solucionar o problema, mostrando onde ocorreu o erro no processo. Nesse caso, é provavelmente devido a algum erro de bloco de dados, talvez um componente ausente, que impedia a atualização bem-sucedida da pasta de trabalho.
+   | Opção | Descrição |
+   |---|---|
+   | ![Editar](/help/assets/icons/Edit.svg) | Edite o agendamento de uma pasta de trabalho selecionada. |
+   | ![Histórico](/help/assets/icons/History.svg) | Mostrar o histórico de pastas de trabalho selecionadas. |
+   | ![Pausar](/help/assets/icons/Pause.svg) | Pausar o agendamento das pastas de trabalho selecionadas. |
+   | ![Reproduzir](/help/assets/icons/Play.svg) | Retomar o agendamento das pastas de trabalho selecionadas. |
+   | ![Baixar](/help/assets/icons/Download.svg) | Baixe a pasta de trabalho selecionada em uma nova pasta de trabalho. |
+   | ![Excluir](/help/assets/icons/Delete.svg) | Exclua o cronograma das pastas de trabalho selecionadas. |
 
-Uma marca de seleção verde indica que a pasta de trabalho foi enviada com êxito. Um ponto de exclamação em um triângulo vermelho indica que ocorreu um erro.
 
-Você pode escolher quais colunas exibir na guia de histórico clicando no ícone de configuração de colunas à direita da barra de pesquisa.
+## Histórico e status de pastas de trabalho agendadas
 
-![Clique no ícone de coluna para exibir ou ocultar colunas específicas.](./assets/history.png){width="55%"}
+Você pode exibir o histórico e o status de pastas de trabalho agendadas na guia **[!UICONTROL Histórico]**.
 
-Você pode filtrar o histórico para ver apenas o de uma única pasta de trabalho programada, acessando a guia Pastas de trabalho, selecionando a pasta de trabalho e clicando no ícone do histórico.
+1. Selecione **[!UICONTROL Agendar]** no hub do Report Builder.
 
-Também é possível exibir o histórico de uma pasta de trabalho específica na guia Pastas de trabalho. Na guia Pastas de trabalho, selecione a pasta de trabalho e clique no ícone Histórico.
+1. Selecione a guia **[!UICONTROL Histórico]**. Você verá uma lista de todas as pastas de trabalho agendadas.
 
-![O ícone do histórico de pastas de trabalho](./assets/history2.png){width="55%"}
+   ![Histórico agendado](assets/scheduled-workbooks-history.png){zoomable="yes"}
 
-O filtro da pasta de trabalho será exibido na parte superior do histórico. Para visualizar o histórico de todas as tarefas programadas novamente, clique no x ao lado do filtro.
+   Use a ![Pesquisa](/help/assets/icons/Search.svg) para procurar pastas de trabalho específicas na lista.
+Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para definir quais colunas mostrar.
 
-![O filtro de pasta de trabalho.](./assets/history3.png){width="55%"}
+   A guia **[!UICONTROL Histórico]** permite examinar o status de cada tarefa agendada. Uma linha separada documenta a alteração de status para cada tarefa agendada.
+
+   * Um ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) indica que a pasta de trabalho foi enviada com êxito.
+   * Um ![AlertRed](/help/assets/icons/AlertRed.svg) indica que ocorreu um erro.
+
+Como alternativa, você pode selecionar ![Histórico](/help/assets/icons/History.svg) para uma ou mais pastas de trabalho selecionadas na guia **[!UICONTROL Pastas de Trabalho]**. Esta ação mostra a guia **[!UICONTROL Histórico]** com uma lista filtrada por sua seleção. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover um filtro.
