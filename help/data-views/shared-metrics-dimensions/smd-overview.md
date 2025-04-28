@@ -2,7 +2,7 @@
 title: Visão geral de métricas e dimensões compartilhadas
 description: Use a mesma dimensão ou referência de métrica em várias visualizações de dados.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
+source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -89,7 +89,7 @@ Use a caixa de seleção ao lado de um componente para revelar todas as ações 
 ![Visualização das ações disponíveis](assets/smd-actions.png)
 
 * ![Ícone de lápis](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]**: abra as dimensões e métricas selecionadas no [editor de componentes compartilhados](shared-component-editor.md), que permite ajustar suas [configurações de componentes](/help/data-views/component-settings/overview.md). Quando você seleciona vários componentes para editar, todos eles são abertos no editor de componentes. Você pode deslocar os componentes com o botão + clique no editor de componentes para editar o mesmo campo para vários componentes.
-* ![Ícone Compartilhar](/help/assets/icons/Share.svg) **[!UICONTROL Compartilhar no(s) modo(s) de exibição de dados]**: abre uma janela que mostra todos os modos de exibição de dados disponíveis na conexão selecionada. Marque a caixa de seleção para cada visualização de dados na qual você deseja disponibilizar este componente e selecione **[!UICONTROL Compartilhar]**.
-* ![Ícone Cancelar compartilhamento](/help/assets/icons/SaveTo.svg) **[!UICONTROL Cancelar compartilhamento para visualizações de dados]**: abre uma janela que mostra todas as visualizações de dados com as quais este componente está compartilhado no momento. Marque a caixa de seleção para cada exibição de dados da qual você deseja remover a disponibilidade deste componente e selecione **[!UICONTROL Cancelar compartilhamento]**.
+* ![Ícone Compartilhar](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Compartilhar no(s) modo(s) de exibição de dados]**: abre uma janela que mostra todos os modos de exibição de dados disponíveis na conexão selecionada. Marque a caixa de seleção para cada visualização de dados na qual você deseja disponibilizar este componente e selecione **[!UICONTROL Compartilhar]**.
+* ![Ícone Cancelar compartilhamento](/help/assets/icons/SaveTo.svg) **[!UICONTROL Cancelar compartilhamento das visualizações de dados]**: abre uma janela que mostra todas as visualizações de dados com as quais este componente está compartilhado no momento. Marque a caixa de seleção para cada exibição de dados da qual você deseja remover a disponibilidade deste componente e selecione **[!UICONTROL Cancelar compartilhamento]**.
 * ![Ícone de duplicado](/help/assets/icons/Copy.svg) **[!UICONTROL Duplicado]**: cria uma cópia dos componentes selecionados. Uma nova ID de componente é gerada para componentes duplicados.
 * ![Ícone Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]**: remove os componentes selecionados da interface. Se os componentes selecionados forem compartilhados com qualquer visualização de dados, eles não serão compartilhados.
