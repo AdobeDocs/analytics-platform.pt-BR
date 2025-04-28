@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 157f70353f60da3fec83e016e7a09f69f7f514cf
+source-git-commit: 7cd0bd94ec45b1570d0be765d95b25defa3e1b87
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 10%
+source-wordcount: '462'
+ht-degree: 9%
 
 ---
 
@@ -34,7 +34,12 @@ O pacote do Customer Journey Analytics ao qual você está habilitado determina 
    - Uma solicitação para ativar a compilação.
    - A ID do conjunto de dados que você deseja rechavear.
    - O nome da coluna (caminho de identidade e namespace) da ID persistente para o conjunto de dados desejado (o identificador que aparece em cada linha).
-   - Para a compilação em campo, o nome da coluna da ID transitória para o conjunto de dados desejado (o identificador de pessoa, que também atua como um link entre conjuntos de dados no contexto de uma conexão). Para compilação baseada em gráfico, o namespace de identidade a ser usado para consultar o gráfico de identidade.
+   - Se o conjunto de dados suportar `identityMap`:
+      - Para a compilação em campo, especifique o namespace para as IDs persistente e transitória.
+      - Para a compilação baseada em gráfico, especifique o namespace da ID persistente e o namespace de identidade a ser usado para consultar o gráfico de identidade.
+   - Se o conjunto de dados não suportar `identityMap`:
+      - Para a compilação em campo, o nome da coluna da ID transitória para o conjunto de dados desejado (o identificador de pessoa, que também atua como um link entre conjuntos de dados no contexto de uma conexão).
+      - Para compilação baseada em gráfico, o namespace de identidade a ser usado para consultar o gráfico de identidade.
    - Sua preferência por janela de retrospectiva e frequência de repetição. Consulte seu pacote do Customer Journey Analytics para obter as [opções](#options) disponíveis.
    - Nome da sandbox.
 
