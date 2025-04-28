@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 9237549aabe73ec98fc42d593e899c98e12eb194
+source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 15%
@@ -29,7 +29,7 @@ A compilação baseada em campo oferece suporte ao uso do [`identifyMap` grupo d
 
   No exemplo abaixo, os namespaces e as identidades resultam em uma lista de identidades primárias classificada e, por fim, na identidade selecionada.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Namespaces</th>
        <th>Lista de identidades</th>
@@ -44,7 +44,7 @@ A compilação baseada em campo oferece suporte ao uso do [`identifyMap` grupo d
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Lista de identidades classificadas</th>
       <th>Identidade selecionada</th>
@@ -62,7 +62,7 @@ A compilação baseada em campo oferece suporte ao uso do [`identifyMap` grupo d
 
   No exemplo abaixo, os namespaces e as identidades resultam em uma lista de identidades classificadas para o namespace selecionado (ECID) e, por fim, na identidade selecionada.
 
-  <table>
+  <table style="table-layout:auto">
      <tr>
        <th>Namespaces</th>
        <th>Lista de identidades</th>
@@ -77,7 +77,7 @@ A compilação baseada em campo oferece suporte ao uso do [`identifyMap` grupo d
      </tr>
    </table>
 
-  <table>
+  <table style="table-layout:auto">
     <tr>
       <th>Lista de identidades classificadas</th>
       <th>Identidade selecionada</th>
