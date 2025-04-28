@@ -1,7 +1,8 @@
 ---
 title: Visão geral de métricas e dimensões compartilhadas
 description: Use a mesma dimensão ou referência de métrica em várias visualizações de dados.
-source-git-commit: 263767028893d9b04e5c8f8ae067b3e6283e4053
+exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
+source-git-commit: 5fd023f988e485f04654869a982e02cb0f3e52a1
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -81,7 +82,7 @@ Todas as dimensões e métricas compartilhadas são exibidas abaixo dos quatro c
    * **[!UICONTROL Última modificação]**: se o componente foi modificado depois de ter sido criado, a data em que foi modificado pela última vez.
 * **[!UICONTROL Histórico do trabalho]**: selecione o ícone ![Histórico](/help/assets/icons/History.svg) para abrir uma janela modal que mostre todas as instâncias de dimensões e métricas de importação de visualizações de dados individuais.
 
-## Edição de componentes ou compartilhamento de componentes em visualizações de dados
+## Editar componentes ou compartilhar componentes em visualizações de dados
 
 Use a caixa de seleção ao lado de um componente para revelar todas as ações disponíveis que você pode realizar. Várias seleções são aceitas.
 
