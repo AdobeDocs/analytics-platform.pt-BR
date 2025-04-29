@@ -1,8 +1,8 @@
 ---
-source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
+source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
 workflow-type: tm+mt
-source-wordcount: '3759'
-ht-degree: 30%
+source-wordcount: '4061'
+ht-degree: 34%
 
 ---
 # Trechos
@@ -239,3 +239,19 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 >[!INFO]
 >
 >Nesta documentação, artigos ou funcionalidades B2B específicos, disponíveis apenas com o Customer Journey Analytics B2B edition, são marcados com [!BADGE B2B edition]{type=Informative}.
+
+
+## Configurações comuns do conjunto de dados {#common-dataset-settings}
+
+| Configuração | Descrição |
+|---|---|
+| **[!UICONTROL Importar novos dados]** | Habilite essa opção se quiser estabelecer uma conexão contínua. Com uma conexão contínua, novos lotes de dados adicionados aos conjuntos de dados ficam disponíveis automaticamente no Workspace. |
+| **[!UICONTROL Preenchimento retroativo do conjunto de dados]** | Habilitar a opção **[!UICONTROL Preenchimento retroativo de todos os dados existentes]** para garantir que todos os dados existentes sejam preenchidos retroativamente.<br/><br/>Selecione **[!UICONTROL Solicitar preenchimento retroativo]** para preencher dados históricos retroativamente por um período específico. Você pode definir até 10 períodos de preenchimento retroativo de conjunto de dados.<ol><li>Defina o período inserindo dados de início e término ou selecionando datas usando o ![Calendário](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Selecione **[!UICONTROL Preenchimento retroativo de fila]** para adicionar o preenchimento retroativo à lista, ou **[!UICONTROL Cancelar]** para cancelar.</li></ol>Para cada entrada, selecione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) para editar o período ou ![Excluir](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) para excluir a entrada.<br/><br/>Em preenchimentos retroativos:<ul><li>Você pode preencher cada conjunto de dados individualmente.</li><li>Prioriza-se a adição de novos dados a um conjunto de dados na conexão, de modo que esses dados tenham a latência mais baixa.</li><li>Qualquer dado de preenchimento retroativo (histórico) é importado mais lentamente. A quantidade de dados históricos influencia a latência.</li><li>O conector de origem do Analytics importa até 13 meses de dados (independentemente do tamanho) para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é limitado a 3 meses.</li></ul> |
+| **[!UICONTROL Status do lote]** | Os possíveis indicadores de status são:<ul><li>Sucesso</li><li>Processamento de X preenchimentos retroativos</li><li>Desligado</li></ul> |
+| **[!UICONTROL ID do conjunto de dados]** | Essa ID é gerada automaticamente. |
+| **[!UICONTROL Descrição]** | A descrição fornecida para esse conjunto de dados quando ele foi criado. |
+| **[!UICONTROL Número de registros]** | O tamanho do conjunto de dados. |
+| **[!UICONTROL Esquema]** | É o esquema que foi usado como base para criar o conjunto de dados na Adobe Experience Platform. |
+| **[!UICONTROL Conjunto de dados]** | O nome do conjunto de dados. |
+| **[!UICONTROL Visualização: *nome do conjunto de dados *]** | Visualiza o conjunto de dados para as primeiras 10 linhas e as primeiras 10 colunas. |
+| ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remover]** | Você pode [excluir um conjunto de dados](/help/connections/create-connection.md#delete-a-dataset) sem excluir toda a conexão. A exclusão de um conjunto de dados de uma conexão reduz os custos envolvidos na assimilação de dados e o complicado processo de recriação de toda a conexão e visualizações de dados associadas. |
