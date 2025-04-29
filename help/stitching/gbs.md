@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: e0e80723e21b7e8c460c05ec39b699eef00abb8b
+source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 7%
@@ -21,7 +21,7 @@ Na compilação baseada em gráfico, você especifica um conjunto de dados de ev
 
 ## IdentityMap
 
-A compilação baseada em gráfico oferece suporte ao uso do [`identifyMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
 - Uso da identidade primária no namespace `identityMap` para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas de forma lexigáfica e a primeira identidade será selecionada.
