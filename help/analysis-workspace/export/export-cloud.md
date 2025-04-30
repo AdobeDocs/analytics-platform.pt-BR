@@ -5,10 +5,10 @@ title: Exportar relatórios do Customer Journey Analytics para a nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
 workflow-type: tm+mt
 source-wordcount: '2285'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -189,7 +189,7 @@ Os seguintes componentes não são compatíveis, e o Analysis Workspace solicita
    * Possui [persistência habilitada](/help/data-views/component-settings/persistence.md)
    * Não está usando uma [dimensão de vinculação](/help/use-cases/data-views/binding-dimensions-metrics.md)
 * Várias dimensões que são de campos que referenciam diferentes [matrizes de objetos](/help/use-cases/object-arrays.md). (Várias dimensões que referenciam a mesma matriz de objetos são permitidas.)
-* Mais de cinco dimensões e cinco métricas por relatório (até cinco dimensões e cinco métricas são permitidas)
+* Mais de 10 dimensões e 10 métricas por relatório (até 10 dimensões e 10 métricas são compatíveis)
 * Colunas da tabela:
    * Intervalos de datas
    * Dimensões
@@ -227,8 +227,8 @@ Se você tiver usado o Data Warehouse anteriormente para exportar dados do Adobe
 | Criar um relatório personalizado | Sim | Sim |
 | Métricas calculadas | Sim | Não |
 | Segmentos | Sim | Limitado |
-| Dimensões | Limite de 5 | Ilimitado |
-| Métricas | Limite de 5 | Ilimitado |
+| Dimensões | Limite de 10 | Ilimitado |
+| Métricas | Limite de 10 | Ilimitado |
 | Linhas dos relatórios | Limite de 3 milhões, 30 milhões, 150 milhões ou 300 milhões, dependendo do nível | Ilimitado |
 | Quantidade de relatórios | Ilimitado | Ilimitado |
 | Entrega ad hoc (uma vez) | Sim | Sim |
