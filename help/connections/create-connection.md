@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
+source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
 workflow-type: tm+mt
-source-wordcount: '6723'
-ht-degree: 60%
+source-wordcount: '6794'
+ht-degree: 59%
 
 ---
 
@@ -210,6 +210,8 @@ Na tela **[!UICONTROL Conexões]** > **[!UICONTROL *Nome da conexão *]**:
 
 Na tela **[!UICONTROL Conexões]** > **[!UICONTROL *Nome da conexão *]**:
 
+![Configurações de conexão sem título](assets/create-conn1-b2b.png)
+
 1. Defina as configurações de conexão.
 
    | Configuração | Descrição |
@@ -217,7 +219,7 @@ Na tela **[!UICONTROL Conexões]** > **[!UICONTROL *Nome da conexão *]**:
    | **[!UICONTROL Nome da conexão]** | Digite um nome exclusivo para a conexão. |
    | **[!UICONTROL Descrição da conexão]** | Descreva a finalidade desta conexão. |
    | **[!UICONTROL Tags]** | Especifique tags para adicionar tags à conexão e usá-las para pesquisar a conexão posteriormente. |
-   | **[!UICONTROL ID Primária]** | Selecione a ID primária apropriada para sua conexão: <ul><li>![Usuário](/help/assets/icons/User.svg) **[!UICONTROL Pessoa]** para um cenário B2C</li><li> ![Compilação](/help/assets/icons/Building.svg) **[!UICONTROL Conta]** para um cenário B2B.</li></ul>.<br/>Assim que adicionar um ou mais conjuntos de dados à conexão, você não poderá mais alterar a ID primária. <br/>A seleção da ID primária define se a conexão é baseada em pessoas ou em contas. A base de conexão determina as [configurações](#dataset-settings) disponíveis para determinados tipos de conjuntos de dados. |
+   | **[!UICONTROL ID Primária]** | Selecione a ID primária apropriada para sua conexão: <ul><li>![Usuário](/help/assets/icons/User.svg) **[!UICONTROL Pessoa]** de uma conexão baseada em pessoa que você normalmente usa em um cenário B2C.</li><li> ![Compilação](/help/assets/icons/Building.svg) **[!UICONTROL Conta]** para uma conexão baseada em conta que você normalmente usa em um cenário B2B.</li></ul>Assim que você adicionar um ou mais conjuntos de dados à conexão, não será mais possível alterar a ID primária. <br/>A seleção da ID primária define se a conexão é baseada em pessoas ou em contas. A base de conexão determina as [configurações](#dataset-settings) disponíveis para determinados tipos de conjuntos de dados. |
    | **[!UICONTROL Contêineres opcionais]** | Se você selecionou ![Compilação](/help/assets/icons/Building.svg) **[!UICONTROL Conta]** como a **[!UICONTROL ID Primária]**, selecione contêineres adicionais.<ul><li>**[!UICONTROL Conta global]**: habilita a configuração de contas globais em uma conexão.</li><li>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.</li><li>**[!UICONTROL Grupo de compras]**: habilita a configuração de grupos de compras em uma conexão.</li><ul> |
    | **[!UICONTROL Sandbox]** | Escolha uma sandbox no Experience Platform que contenha os conjuntos de dados para os quais você deseja criar uma conexão.<p>A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Você pode considerar as sandboxes como “silos de dados” que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.<p>Depois de selecionar a sandbox, o painel esquerdo mostra todos os conjuntos de dados que você pode obter dela. |
    | **[!UICONTROL Ativar janela de dados contínuos]** | Essa caixa de seleção, se marcada, permite definir a retenção de dados do Costumer Journey Analytics como uma janela contínua em meses (1 mês, 3 meses, 6 meses etc.), no nível da conexão.<p>A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não existe configuração de janela de dados contínuos para conjuntos de dados de perfil ou pesquisa, pois não há carimbos de data/hora aplicáveis. No entanto, se sua conexão incluir qualquer perfil ou conjuntos de dados de pesquisa (além de um ou mais conjuntos de dados de evento), esses dados serão retidos pelo mesmo período.<p> O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.<p><ul><li>Se deixar o padrão (desmarcado), a configuração de retenção de dados da Adobe Experience Platform terá precedência sobre o período de retenção. Se você tiver dados correspondentes a 25 meses na Experience Platform, o Customer Journey Analytics obterá 25 meses de dados por meio de preenchimento retroativo. Se você excluiu 10 desses meses na Platform, o Customer Journey Analytics manterá os 15 meses restantes.</li><li>Se você habilitar uma janela de dados contínuos, especifique em **[!UICONTROL Selecionar número de meses]** o número de meses para os quais habilita a janela de dados contínuos. |
@@ -463,7 +465,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="connection_datasetbackfill"
 >title="Preenchimento retroativo do conjunto de dados"
->abstract="Esta opção preencherá retroativamente os dados existentes (históricos) da Experience Platform para este conjunto de dados na conexão."
+>abstract="Essa opção preenche os dados existentes (históricos) do Experience Platform para esse conjunto de dados na conexão."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -483,7 +485,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >title="Mapa de conexão"
 >abstract="O Mapa de conexão visualiza as relações entre evento, pessoa, conta e conjuntos de dados de pesquisa relevantes (como oportunidades, membros da campanha e muito mais)."
 
-## Adicionar conjuntos de dados
+### Adicionar conjuntos de dados
 
 É possível adicionar um ou mais conjuntos de dados do Experience Platform ao criar ou editar uma conexão.
 
@@ -513,7 +515,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
    * Para exibir detalhes de um conjunto de dados, selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg).
 
 
-1. Selecione um ou mais conjuntos de dados e clique em **[!UICONTROL Próximo]**. Pelo menos um conjunto de dados de evento deve fazer parte da conexão.
+1. Selecione um ou mais conjuntos de dados e clique em **[!UICONTROL Próximo]**. Pelo menos um evento ou conjunto de dados de resumo deve fazer parte da conexão.
 
 1. Defina as [configurações para cada um dos conjuntos de dados selecionados](#dataset-settings), uma por uma, na etapa ➋ **[!UICONTROL Configurações de conjuntos de dados]** da caixa de diálogo **[!UICONTROL Adicionar conjuntos de dados]**.
 
@@ -552,34 +554,34 @@ As configurações específicas para um conjunto de dados de evento dependem do 
 
 ![Configurações B2C](assets/event-dataset-settings-b2c.png) do conjunto de dados do evento
 
-Para um conjunto de dados de evento em uma conexão baseada em pessoa, você pode especificar:
+Para um conjunto de dados de evento em uma conexão baseada em pessoas, você pode especificar:
 
 | Configuração | Descrição |
 | --- | --- |
 | **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte [Usar o Mapa de identidade como uma ID de pessoa](#id-map) para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>Se não houver IDs de pessoa para escolher, significa que nenhuma ID de pessoa está definida no esquema. Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) para obter mais informações. <p>O valor da ID de pessoa selecionada diferencia maiúsculas de minúsculas. Por exemplo, `abc123` e `ABC123` são dois valores diferentes. |
 | **[!UICONTROL Carimbo de data e hora]** | Essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão em esquemas baseados em eventos no Experience Platform. |
-| **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. <br/>Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
-| **[!UICONTROL Descrição da fonte de dados]** | Descreva a fonte de dados quando tiver selecionado Outro como o tipo de fonte de dados. |
+| **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
+| **[!UICONTROL Descrição da fonte de dados]** | Uma descrição da fonte de dados quando você seleciona Outro como o tipo de fonte de dados. |
 
 
 ##### Conexão baseada em conta
 
 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
-Para um conjunto de dados de evento em uma conexão baseada em conta, é possível especificar:
+Para um conjunto de dados de evento em uma conexão baseada em conta, você pode especificar:
 
 ![Configurações B2C](assets/event-dataset-settings-b2b.png) do conjunto de dados do evento
 
 | Configuração | Descrição |
 | --- | --- |
-| **[!UICONTROL ID da conta]** | Selecione uma ID de conta (o identificador exclusivo de uma conta) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform. |
-| **[!UICONTROL ID da Conta Global]** | Selecione uma ID de conta (o identificador exclusivo de uma conta) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform. |
+| **[!UICONTROL ID da conta]** | Selecione uma ID de conta global (o identificador exclusivo de uma conta) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform. Aplicável quando você adicionou a Conta global como um contêiner à conexão. |
+| **[!UICONTROL ID da Conta Global]** | Selecione uma ID de conta (o identificador exclusivo de uma conta) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform. Aplicável quando você não adicionou a Conta global como um contêiner à conexão. |
 | **[!UICONTROL ID da oportunidade]** | Selecione uma ID de oportunidade (o identificador exclusivo de uma oportunidade) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform. |
 | **[!UICONTROL ID do Grupo de Compras]** | Selecione uma ID do grupo de compra (o identificador exclusivo de um grupo de compra) entre as identidades disponíveis definidas no esquema do conjunto de dados na Experience Platform. |
 | **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte [Usar o Mapa de identidade como uma ID de pessoa](#id-map) para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>Se não houver IDs de pessoa para escolher, significa que uma ou mais IDs de pessoa não foram definidas no esquema. Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) para obter mais informações. <p>O valor da ID de pessoa selecionada diferencia maiúsculas de minúsculas. Por exemplo, `abc123` e `ABC123` são dois valores diferentes. |
 | **[!UICONTROL Carimbo de data e hora]** | Essa configuração é definida automaticamente para o campo de carimbo de data e hora padrão em esquemas baseados em eventos no Experience Platform. |
-| **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. <br/>Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
-| **[!UICONTROL Descrição da fonte de dados]** | Descreva a fonte de dados quando tiver selecionado Outro como o tipo de fonte de dados. |
+| **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
+| **[!UICONTROL Descrição da fonte de dados]** | Uma descrição da fonte de dados quando você seleciona Outro como o tipo de fonte de dados. |
 
 
 #### Conjunto de dados Perfil
@@ -590,13 +592,13 @@ As configurações específicas para um conjunto de dados de perfil dependem do 
 
 ![B2C](assets/profile-dataset-settings-b2c.png) das configurações do conjunto de dados de perfil
 
-Para um conjunto de dados de perfil em uma conexão baseada em pessoa, você especifica:
+Para um conjunto de dados de perfil em uma conexão baseada em pessoas, você especifica:
 
 | Configuração | Descrição |
 | --- | --- |
-| **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte [Usar o Mapa de identidade como uma ID de pessoa](#id-map) para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>Se não houver IDs de pessoa para escolher, significa que nenhuma ID de pessoa foi definida no esquema. Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) para obter mais informações. <p>O valor da ID de pessoa selecionada diferencia maiúsculas de minúsculas. Por exemplo, `abc123` e `ABC123` são dois valores diferentes. |
-| **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. <br/>Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
-| **[!UICONTROL Descrição da fonte de dados]** | Descreva a fonte de dados quando tiver selecionado Outro como o tipo de fonte de dados. |
+| **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte [Usar o Mapa de identidade como uma ID de pessoa](#id-map) para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>Se não houver IDs de pessoa para escolher, nenhuma ID de pessoa será definida no esquema. Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) para obter mais informações. <p>O valor da ID de pessoa selecionada diferencia maiúsculas de minúsculas. Por exemplo, `abc123` e `ABC123` são dois valores diferentes. |
+| **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
+| **[!UICONTROL Descrição da fonte de dados]** | Uma descrição da fonte de dados quando você seleciona Outro como o tipo de fonte de dados. |
 
 #### Conexão baseada em conta
 
@@ -606,10 +608,11 @@ Para um conjunto de dados de perfil em uma conexão baseada em conta, você espe
 
 | Configuração | Descrição |
 | --- | --- |
-| **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte [Usar o Mapa de identidade como uma ID de pessoa](#id-map) para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>Se não houver IDs de pessoa para escolher, significa que nenhuma ID de pessoa foi definida no esquema. Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) para obter mais informações. <p>O valor da ID de pessoa selecionada diferencia maiúsculas de minúsculas. Por exemplo, `abc123` e `ABC123` são dois valores diferentes. |
-| **[!UICONTROL ID da conta]** | Selecione uma ID de conta usada para oferecer suporte a relatórios baseados em conta para o conjunto de dados na lista suspensa de identidades disponíveis. |
-| **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. <br/>Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
-| **[!UICONTROL Descrição da fonte de dados]** | Descreva a fonte de dados quando tiver selecionado Outro como o tipo de fonte de dados. |
+| **[!UICONTROL ID de pessoa]** | Selecione uma ID de pessoa na lista suspensa de identidades disponíveis. Essas identidades foram definidas no esquema do conjunto de dados na Experience Platform. Consulte [Usar o Mapa de identidade como uma ID de pessoa](#id-map) para obter informações sobre como usar o Mapa de identidade como uma ID de pessoa.<p>Se não houver IDs de pessoa para escolher, nenhuma ID de pessoa será definida no esquema. Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) para obter mais informações. <p>O valor da ID de pessoa selecionada diferencia maiúsculas de minúsculas. Por exemplo, `abc123` e `ABC123` são dois valores diferentes. |
+| **[!UICONTROL Campo de Conta Global]** | Selecione um campo de conta global para oferecer suporte a relatórios baseados em conta para o conjunto de dados da lista suspensa de identidades disponíveis. Aplicável quando você adicionou a Conta global como um contêiner à conexão. |
+| **[!UICONTROL Campo de conta]** | Selecione um campo de conta para oferecer suporte a relatórios baseados em conta para o conjunto de dados da lista suspensa de identidades disponíveis. Aplicável quando você não adicionou a Conta global como um contêiner à conexão. |
+| **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
+| **[!UICONTROL Descrição da fonte de dados]** | Uma descrição da fonte de dados quando você seleciona Outro como o tipo de fonte de dados. |
 
 #### Conjunto de dados de pesquisa
 
@@ -617,16 +620,16 @@ As configurações específicas de um conjunto de dados de pesquisa dependem do 
 
 ##### Conexão baseada em pessoas
 
-![Baseado na pessoa das configurações do conjunto de dados do evento de pesquisa](assets/lookup-dataset-settings-b2c.png)
+![Configurações do conjunto de dados de evento de pesquisa com base em pessoa](assets/lookup-dataset-settings-b2c.png)
 
-Para um conjunto de dados de pesquisa em uma conexão baseada em pessoa, você especifica:
+Para um conjunto de dados de pesquisa em uma conexão baseada em pessoas, você especifica:
 
 | Configurações | Descrição |
 |---|---|
 | **[!UICONTROL Chave]** | A chave a ser usada para um conjunto de dados de pesquisa. |
 | **[!UICONTROL Chave correspondente]** | A chave correspondente a ser associada a um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento. |
-| **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. <br/>Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
-| **[!UICONTROL Descrição da fonte de dados]** | Descreva a fonte de dados quando tiver selecionado Outro como o tipo de fonte de dados. |
+| **[!UICONTROL Tipo de fonte de dados]** | Selecione um tipo de fonte de dados. Os tipos de fontes de dados incluem: <ul><li>[!UICONTROL Dados da Web]</li><li>[!UICONTROL Dados do aplicativo móvel]</li><li>[!UICONTROL Dados de POS]</li><li>[!UICONTROL Dados de CRM]</li><li>[!UICONTROL Dados de pesquisa]</li><li>[!UICONTROL Dados da central de atendimento]</li><li>[!UICONTROL Dados de produto]</li><li> [!UICONTROL Dados de contas]</li><li> [!UICONTROL Dados de transação]</li><li>[!UICONTROL Dados de feedback de clientes]</li><li> [!UICONTROL Outro]</li></ul>Este campo é usado para consultar os tipos de fontes de dados que estão sendo usados. |
+| **[!UICONTROL Descrição da fonte de dados]** | Uma descrição da fonte de dados quando você seleciona Outro como o tipo de fonte de dados. |
 | **[!UICONTROL Transformar conjunto de dados]** | Para conjuntos de dados de pesquisa B2B específicos, é possível habilitar a transformação de um conjunto de dados para cenários de relatório adequados baseados em pessoas B2B. Consulte [Transformar conjuntos de dados para pesquisas B2B](transform-datasets-b2b-lookups.md) para obter mais informações. |
 
 
@@ -635,7 +638,7 @@ Para um conjunto de dados de pesquisa em uma conexão baseada em pessoa, você e
 
 [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
-![Baseado na conta de configurações do conjunto de dados de evento de pesquisa](assets/lookup-dataset-settings-b2b.png)
+![Baseado em conta de configurações do conjunto de dados de evento de pesquisa](assets/lookup-dataset-settings-b2b.png)
 
 Para um conjunto de dados de pesquisa em uma conexão baseada em conta, você pode especificar:
 
@@ -675,6 +678,23 @@ Ao excluir um conjunto de dados, você é notificado sobre as implicações da e
 
 Ao selecionar ![Histórico](/help/assets/icons/History.svg) **[!UICONTROL Preenchimentos retroativos anteriores]** na interface, uma caixa de diálogo **[!UICONTROL Preenchimentos retroativos anteriores: _Nome do conjunto de dados_]**mostra os preenchimentos retroativos mais recentes do conjunto de dados.
 
+## Tipos de conjunto de dados {#dataset-types}
+
+Para cada conjunto de dados adicionado a essa conexão, o [!UICONTROL Customer Journey Analytics] define automaticamente o tipo de conjunto de dados, de acordo com os dados recebidos.
+
+>[!IMPORTANT]
+>
+>Adicione pelo menos um conjunto de dados de evento ou resumo como parte de uma conexão.
+
+Existem diferentes tipos de conjunto de dados: dados de [!UICONTROL Evento], [!UICONTROL Perfil], [!UICONTROL Pesquisa] e [!UICONTROL Resumo].
+
+| Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID de pessoa <br/> ID da conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} |
+|---|---|---|---|---|
+| **[!UICONTROL Evento]** | Dados que representam eventos no tempo. Por exemplo, visitas à web, interações, transações, dados de POS, dados de pesquisa, dados de impressão publicitária e assim por diante. Esses dados podem ser dados típicos de fluxo de cliques, com uma ID de cliente ou uma ID de cookie e um registro de data e hora. Os dados do evento fornecem flexibilidade em relação a qual ID é usada como a ID da pessoa. | Defina para o campo de carimbo de data/hora padrão a partir de esquemas baseados em eventos no [!UICONTROL Experience Platform]. | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento *Série de tempo*. Exemplos incluem *Evento de experiência XDM* ou *Evento de decisão XDM*. | Você pode escolher a ID de pessoa ou a ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} que deseja incluir. Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas identidades pode ser usada como a ID de pessoa ou a ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Os exemplos incluem ID de Cookie, ID com título, ID de Usuário, Código de Rastreamento, ID de Conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} e assim por diante. |
+| **[!UICONTROL Pesquisa]** | Você pode adicionar conjuntos de dados como pesquisas de campos em todos os tipos de conjuntos de dados: conjuntos de dados de perfil, pesquisa e evento (este último sempre foi compatível). Esse recurso adicional expande a capacidade de o Customer Journey Analytics aceitar modelos de dados complexos, incluindo B2B. Esses dados são usados para procurar valores ou chaves encontrados nos dados de evento, perfil ou pesquisa. Você pode adicionar até dois níveis de pesquisas. (Observe que [Campos derivados](/help/data-views/derived-fields/derived-fields.md) não podem ser usados como chaves correspondentes para pesquisas em Conexões). Por exemplo, você pode fazer upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte o [Exemplo de B2B](/help/use-cases/b2b/example.md). | N/A | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento *Registro*, exceto a classe *Perfil Individual XDM*. | N/A |
+| **[!UICONTROL Perfil]** | Dados aplicados à sua conta, pessoas, usuários ou clientes nos dados de [!UICONTROL Evento]. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe *Perfil Individual XDM*. | Você pode escolher que ID de pessoa/ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} deseja incluir. Cada conjunto de dados (exceto conjuntos de dados de resumo), definido em [!DNL Experience Platform], tem seu próprio conjunto de uma ou mais IDs de pessoa ou IDs de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} definidas. Por exemplo, ID de cookie, ID com título, ID de usuário, código de rastreamento, ID de conta e assim por diante.<br>![ID de pessoa ](assets/person-id.png)**Observação**: se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatório refletirá isso. Para mesclar conjuntos de dados, é necessário usar a mesma ID de pessoa ou ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
+| **Resumo** | Dados de série temporal que não estão associados a uma ID de pessoa individual. Os dados de resumo representam dados agregados em um nível diferente de agregação, por exemplo, campanhas. Você pode usar esses dados no Customer Journey Analytics para oferecer suporte a vários casos de uso. Veja [Dados resumidos](/help/data-views/summary-data.md) para obter mais informações. | Defina automaticamente para o campo de carimbo de data e hora padrão a partir de esquemas de Métricas de resumo baseadas em eventos no Experience Platform. Somente a granularidade por hora ou por dia é aceita. | Qualquer esquema incorporado ou personalizado baseado na classe *Métricas de resumo XDM*. | N/A |
+
 ## Visualização da conexão {#preview}
 
 Para visualizar a conexão criada, selecione ![PageSearch](/help/assets/icons/PageSearch.svg) **[!UICONTROL Visualização da conexão]** na caixa de diálogo de configurações da conexão.
@@ -694,26 +714,6 @@ Para ver um mapa das relações entre os conjuntos de dados que fazem parte da s
 
 Este mapa ajuda você a entender melhor como definiu sua conexão e configurar a relação entre seu evento, perfil, pesquisa e conjuntos de dados de resumo usando identificadores.
 
-## Tipos de conjunto de dados {#dataset-types}
-
-Para cada conjunto de dados adicionado a essa conexão, o [!UICONTROL Customer Journey Analytics] define automaticamente o tipo de conjunto de dados, de acordo com os dados recebidos.
-
->[!IMPORTANT]
->
->Adicione pelo menos um conjunto de dados de evento ou resumo como parte de uma conexão.
-
-Existem diferentes tipos de conjunto de dados: dados de [!UICONTROL Evento], [!UICONTROL Perfil], [!UICONTROL Pesquisa] e [!UICONTROL Resumo].
-
-| Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID de pessoa <br/> ID da conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} |
-|---|---|---|---|---|
-| **[!UICONTROL Evento]** | Dados que representam eventos no tempo. Por exemplo, visitas à web, interações, transações, dados de POS, dados de pesquisa, dados de impressão publicitária e assim por diante. Esses dados podem ser dados típicos de fluxo de cliques, com uma ID de cliente ou uma ID de cookie e um registro de data e hora. Os dados do evento fornecem flexibilidade em relação a qual ID é usada como a ID da pessoa. | Defina para o campo de carimbo de data/hora padrão a partir de esquemas baseados em eventos no [!UICONTROL Experience Platform]. | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento *Série de tempo*. Exemplos incluem *Evento de experiência XDM* ou *Evento de decisão XDM*. | Você pode escolher a ID de pessoa ou a ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} que deseja incluir. Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas identidades pode ser usada como a ID de pessoa ou a ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Os exemplos incluem ID de Cookie, ID com título, ID de Usuário, Código de Rastreamento, ID de Conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} e assim por diante. |
-| **[!UICONTROL Pesquisa]** | Você pode adicionar conjuntos de dados como pesquisas de campos em todos os tipos de conjuntos de dados: conjuntos de dados de perfil, pesquisa e evento (este último sempre foi compatível). Esse recurso adicional expande a capacidade de o Customer Journey Analytics aceitar modelos de dados complexos, incluindo B2B. Esses dados são usados para procurar valores ou chaves encontrados nos dados de evento, perfil ou pesquisa. Você pode adicionar até dois níveis de pesquisas. (Observe que [Campos derivados](/help/data-views/derived-fields/derived-fields.md) não podem ser usados como chaves correspondentes para pesquisas em Conexões). Por exemplo, você pode fazer upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte o [Exemplo de B2B](/help/use-cases/b2b/example.md). | N/A | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento *Registro*, exceto a classe *Perfil Individual XDM*. | N/A |
-| **[!UICONTROL Perfil]** | Dados aplicados à sua conta, pessoas, usuários ou clientes nos dados de [!UICONTROL Evento]. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe *Perfil Individual XDM*. | Você pode escolher que ID de pessoa/ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} deseja incluir. Cada conjunto de dados (exceto conjuntos de dados de resumo), definido em [!DNL Experience Platform], tem seu próprio conjunto de uma ou mais IDs de pessoa ou IDs de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} definidas. Por exemplo, ID de cookie, ID com título, ID de usuário, código de rastreamento, ID de conta e assim por diante.<br>![ID de pessoa ](assets/person-id.png)**Observação**: se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatório refletirá isso. Para mesclar conjuntos de dados, é necessário usar a mesma ID de pessoa ou ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
-| **Resumo** | Dados de série temporal que não estão associados a uma ID de pessoa individual. Os dados de resumo representam dados agregados em um nível diferente de agregação, por exemplo, campanhas. Você pode usar esses dados no Customer Journey Analytics para oferecer suporte a vários casos de uso. Veja [Dados resumidos](/help/data-views/summary-data.md) para obter mais informações. | Defina automaticamente para o campo de carimbo de data e hora padrão a partir de esquemas de Métricas de resumo baseadas em eventos no Experience Platform. Somente a granularidade por hora ou por dia é aceita. | Qualquer esquema incorporado ou personalizado baseado na classe *Métricas de resumo XDM*. | N/A |
-
->[!MORELIKETHIS]
->
->Blog: [Como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ## Usar campos numéricos como chaves de pesquisa e valores de pesquisa {#numeric}
 
@@ -779,5 +779,10 @@ Ao criar uma conexão, você pode adicionar grandes conjuntos de dados para fins
 E possível solicitar uma remoção algorítmica de um grande conjunto de dados de pesquisa. Essa remoção algorítmica mantém apenas os dados no conjunto de dados de pesquisa que correspondem às chaves no seu conjunto de dados de eventos. Dessa forma, não é preciso carregar todo o conjunto de dados de pesquisa não removido. Itens antigos ou usados com menos frequência são removidos, o que pode afetar ligeiramente os relatórios, mas oferece benefícios consideráveis. O algoritmo considera os últimos 90 dias e é atualizado semanalmente.
 
 Entre em contato com a equipe de suporte da Adobe para obter mais informações e habilitar esse recurso.
+
+
+>[!MORELIKETHIS]
+>
+>Blog: [Como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ![Compartilhar](/help/assets/icons/Share.svg)

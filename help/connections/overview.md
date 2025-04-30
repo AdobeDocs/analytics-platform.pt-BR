@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: e4ddb98b800457e407bb414ed4929c5d5018cf30
+source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '257'
 ht-degree: 10%
 
 ---
 
 # Visão geral das conexões
 
-As conexões permitem que os administradores de produtos da Customer Journey Analytics estabeleçam conexões com diferentes fontes de dados do [!DNL Adobe Experience Platform], como eventos, pesquisas, perfis e conjuntos de dados de resumo. Essas conexões permitem a integração de dados de uma conexão com uma Visualização de dados derivada. As conexões são a base do Customer Journey Analytics e são criadas a partir de [!DNL Experience Platform] conjuntos de dados de origem.
+As conexões permitem que os administradores de produtos da Customer Journey Analytics estabeleçam conexões com diferentes fontes de dados do [!DNL  Experience Platform], como eventos, pesquisas, perfis e conjuntos de dados de resumo. Essas conexões permitem a integração de dados de uma conexão com uma visualização de dados derivada. As conexões são a base do Customer Journey Analytics e são criadas a partir de [!DNL Experience Platform] conjuntos de dados de origem.
 
 >[!IMPORTANT]
 >
@@ -41,9 +41,9 @@ Em um alto nível, o fluxo de trabalho Conexões permite:
 |:---:|---|
 | ➊ | [Gerencie suas conexões e o uso geral](manage-connections.md) do Customer Journey Analytics a partir do Gerenciador de conexões. |
 | ➋ | [Inspecione os detalhes de uma conexão](manage-connections.md#connection-details), como registros de conjunto de dados assimilados, ignorados ou excluídos. |
-| ➌ | [Crie ou edite a configuração de uma conexão](create-connection.md#create-or-edit-a-connection), como uma janela de dados contínua, e quais conjuntos de dados fazem parte da conexão. |
+| ➌ | [Crie ou edite a configuração de uma conexão](create-connection.md#create-or-edit-a-connection), como uma janela de dados contínua, a sandbox a ser usada, quais conjuntos de dados fazem parte da conexão e muito mais. |
 | ➍ | [Adicionar conjuntos de dados a uma conexão](create-connection.md#add-datasets). Sua conexão deve ter pelo menos um evento ou conjunto de dados de resumo, mas pode conter vários eventos, perfis, pesquisas e conjuntos de dados de resumo. |
-| ➎ | [Defina as configurações](create-connection.md#dataset-settings) para os conjuntos de dados adicionados. Assim, você pode determinar como vincular diferentes conjuntos de dados com base em uma pessoa comum com base no identificador de conta do [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
+| ➎ | [Defina as configurações](create-connection.md#dataset-settings) para os conjuntos de dados adicionados. Você pode determinar como vincular diferentes conjuntos de dados com base em um identificador comum baseado em pessoas ou na conta do [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
 | ➏ | [Editar as configurações de um conjunto de dados existente](create-connection.md#edit-a-dataset). Você sempre pode rever as configurações do conjunto de dados em um estágio posterior. |
 
 
