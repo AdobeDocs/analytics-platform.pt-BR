@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
 workflow-type: tm+mt
-source-wordcount: '6794'
-ht-degree: 58%
+source-wordcount: '6802'
+ht-degree: 56%
 
 ---
 
@@ -331,8 +331,8 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
->title="Chave correspondente"
->abstract="Selecione como associar: com base em uma chave correspondente ou em um container correspondente.<br/><br/>**[!UICONTROL Chave correspondente ]**: selecione o campo a ser associado a um dos conjuntos de dados de evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Container correspondente]**: selecione um container a ser usado para associar a um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não configurou um ou mais contêineres."
+>title="Tipo de chave correspondente"
+>abstract="Selecione como unir: com base em uma correspondência por campo ou correspondência por contêiner.<br/><br/>**[!UICONTROL Corresponder por campo ]**: selecione um campo para ingressar com um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por contêiner]**: selecione um contêiner a ser usado para unir com um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não configurou um ou mais contêineres."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -446,8 +446,8 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
->title="Chave correspondente"
->abstract="Selecione como associar: com base em uma chave correspondente ou em um container correspondente.<br/><br/>**[!UICONTROL Chave correspondente ]**: selecione o campo a ser associado a um dos conjuntos de dados de evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Container correspondente]**: selecione um container a ser usado para associar a um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não configurou um ou mais contêineres."
+>title="Tipo de chave correspondente"
+>abstract="Selecione como unir: com base em uma correspondência por campo ou correspondência por contêiner.<br/><br/>**[!UICONTROL Corresponder por campo ]**: selecione um campo para ingressar com um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por contêiner]**: selecione um contêiner a ser usado para unir com um dos conjuntos de dados do evento. Se essa lista estiver vazia, você provavelmente não configurou um ou mais contêineres."
 
 <!-- markdownlint-enable MD034 -->
 
