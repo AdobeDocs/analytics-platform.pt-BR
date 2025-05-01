@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: d48a6fc306a84eeeb189e1b272bfded7ed26ed70
+source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '812'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Essas etapas pressupõem que você use tags na Coleção de dados da Adobe Exper
 
 Consulte a documentação da [Extensão de tag de métrica Quantum](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) para obter mais informações.
 
-## Etapa 1: criar um campo de esquema para acomodar dados de Métrica quântica
+## Etapa 1: Criar um campo de esquema para acomodar a ID da sessão de Métrica quântica
 
 Esse caso de uso requer um campo de esquema dedicado para enviar dados ao. Você pode criar esse campo em qualquer local desejado no esquema e nomeá-lo como desejar. Os valores de exemplo são fornecidos se sua organização não tiver uma preferência por nome ou local.
 
