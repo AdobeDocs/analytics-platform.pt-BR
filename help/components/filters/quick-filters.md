@@ -4,10 +4,10 @@ title: Segmentos rápidos
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: e9516455416c0e5f228d62d17dee5ef87c368337
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 26%
+source-wordcount: '1174'
+ht-degree: 23%
 
 ---
 
@@ -76,7 +76,7 @@ A área do cabeçalho determina o nome, o tipo e o escopo do segmento rápido. E
 | **[!UICONTROL Nome]** | O nome é derivado automaticamente da definição de segmento rápido. |
 | **[!UICONTROL Pessoas]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alerta](/help/assets/icons/Alert.svg) | Visualização visual dos dados resultantes do segmento rápido. Uma barra e uma porcentagem fornecem um insight sobre quanto dos dados gerais fazem parte do resultado do segmento rápido. Um ![Alerta](/help/assets/icons/Alert.svg) vermelho indica que o segmento rápido não retorna dados. |
 | **[!UICONTROL Incluir]**<br/>**[!UICONTROL Excluir]** | Na lista suspensa ![DivisaAbaixo](/help/assets/icons/ChevronDown.svg), selecione se deseja incluir ou excluir os resultados do segmento rápido dos dados no painel. |
-| **[!UICONTROL Evento]**<br/>**[!UICONTROL Sessão]**<br/>**[!UICONTROL Pessoa]** | Selecione o escopo do segmento rápido na lista suspensa ![Divisa](/help/assets/icons/ChevronDown.svg). |
+| **[!UICONTROL Evento]**<br/>**[!UICONTROL Sessão]**<br/>**[!UICONTROL Pessoa]** | Selecione o escopo do segmento rápido no menu suspenso ![Divisa](/help/assets/icons/ChevronDown.svg). |
 
 ### Área de condição
 
@@ -84,7 +84,7 @@ A área de condição especifica as condições (até três, no máximo). Para c
 
 | Elemento | Descrição |
 |---|---|
-| **[!UICONTROL Dimensão]**<br/>**[!UICONTROL Métrica]**<br/>**[!UICONTROL Intervalo de datas]** | Selecione na lista suspensa ![ChevronDown](/help/assets/icons/ChevronDown.svg) se deseja especificar uma condição para uma dimensão, métrica ou intervalo de datas. |
+| **[!UICONTROL Dimensão]**<br/>**[!UICONTROL Métrica]**<br/>**[!UICONTROL Intervalo de datas]** | Selecione no menu suspenso ![DivisaAbaixo](/help/assets/icons/ChevronDown.svg) se deseja especificar uma condição para uma dimensão, métrica ou intervalo de datas. |
 | **[!UICONTROL *componente *]** | O campo de componente da condição. Você pode [!UICONTROL *Digitar para adicionar*] um componente, selecionar um componente na lista ou arrastar e soltar um componente a partir do painel de componentes. Você só pode soltar componentes semelhantes no campo de componente da condição. Por exemplo, você só pode soltar um componente de dimensão do painel do componentes em uma condição de dimensão. <br/>Você também pode arrastar e soltar para substituir um componente existente.<br/>Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para excluir o componente do campo de componente. |
 | **[!UICONTROL *operador *]** | O operador do componente. Consulte [Operadores](operators.md) para mais informações. Disponível somente para dimensões e métricas. |
 | **[!UICONTROL *value *]** | O valor da condição. Dependendo do operador selecionado, o valor pode ser selecionado em uma lista ou inserido manualmente. |
@@ -94,7 +94,7 @@ A área de condição especifica as condições (até três, no máximo). Para c
 
 | Botão | Descrição |
 |---|---|
-| **[!UICONTROL E]**<br/>**[!UICONTROL OU]** | Disponível somente quando você define mais de uma condição. Selecione na lista suspensa ![ChevronDown](/help/assets/icons/ChevronDown.svg) entre as condições. A seleção determina a lógica booleana do segmento rápido. Não é possível misturar lógicas quando há três condições. A lógica booleana é **[!UICONTROL E]** ou **[!UICONTROL OU]**. |
+| **[!UICONTROL E]**<br/>**[!UICONTROL OU]** | Disponível somente quando você define mais de uma condição. Selecione no menu suspenso ![DivisaAbaixo](/help/assets/icons/ChevronDown.svg) entre as condições. A seleção determina a lógica booleana do segmento rápido. Não é possível misturar lógicas quando há três condições. A lógica booleana é **[!UICONTROL E]** ou **[!UICONTROL OU]**. |
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | Adiciona outra condição ao segmento rápido. Esse botão só estará disponível quando você tiver definido uma ou duas condições para o segmento rápido. |
 | **[!UICONTROL Aplicar]** | Aplique as alterações ao segmento rápido. |
 | **[!UICONTROL Abrir o construtor]** | A sua confirmação é solicitada com uma caixa de diálogo **[!UICONTROL Tem certeza?]**. Se você selecionar **[!UICONTROL OK]**, não será mais possível modificar seu segmento no [Construtor de segmentos rápido](#quick-filter-builder). Seu segmento rápido foi renomeado para **[!UICONTROL Segmento]** e agora tem uma barra azul mais escura à esquerda.<br/>O [Construtor de segmentos](filter-builder.md) comum é aberto com a opção de **[!UICONTROL Disponibilizar este segmento para todos os projetos e adicioná-lo à lista de componentes]**. <ul><li>Se você selecionar esta opção e selecionar **[!UICONTROL Aplicar]**, o segmento será adicionado à lista de componentes de ![Segmento](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmento]** no painel de componentes.</li><li>Se você não selecionar essa opção e selecionar **[!UICONTROL Aplicar]**, o segmento permanecerá um segmento somente de projeto do Workspace.</li></ul> |

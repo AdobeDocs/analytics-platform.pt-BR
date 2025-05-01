@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '14696'
 ht-degree: 2%
@@ -106,7 +106,7 @@ Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apro
    1. Na caixa de diálogo **[!UICONTROL Banco de dados PostgreSQL]** - **[!UICONTROL Banco de Dados]**:
       ![Usuário e Senha do Power BI Desktop](assets/powerbi-userpassword.png){zoomable="yes"}
       1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar os valores de **[!UICONTROL Nome de Usuário]** e **[!UICONTROL Senha]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform nos campos **[!UICONTROL Nome de usuário]** e **[!UICONTROL Senha]**. Se você estiver usando uma [credencial sem expiração](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use a senha da sua credencial sem expiração.
-      1. Verifique se o menu suspenso de **[!UICONTROL Selecione a qual nível aplicar essas configurações]** está definido como o **[!UICONTROL Servidor]** definido anteriormente.
+      1. Verifique se o menu suspenso do **[!UICONTROL Selecione a qual nível aplicar essas configurações]** está definido como o **[!UICONTROL Servidor]** definido anteriormente.
       1. Selecione **[!UICONTROL Conectar]**.
    1. Na caixa de diálogo **[!UICONTROL Navegador]**, as visualizações de dados são recuperadas. Essa recuperação pode levar algum tempo. Depois de recuperado, você verá o seguinte no Power BI Desktop.
       ![Dados de Carregamento do Power BI Desktop](assets/powerbi-navigator-load.png){zoomable="yes"}
@@ -529,7 +529,7 @@ Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
    1. Arraste e solte **[!UICONTROL Daterangeday]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**.
       * Selecione **[!UICONTROL Dia]** no menu suspenso **[!UICONTROL Dia_da_Data]**, para que o valor seja atualizado para **[!UICONTROL Dia(Dia_da_Data)]**.
    1. Arraste e solte **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**. O valor é convertido automaticamente em **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -541,7 +541,7 @@ Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
 1. Verifique se a folha de **[!UICONTROL Dados]** está selecionada. Na exibição **[!UICONTROL Dados]**:
    1. Selecione **[!UICONTROL Mostrar-me]** no canto superior direito e selecione **[!UICONTROL Tabela de texto]** (visualização superior esquerdo) para modificar o conteúdo do modo de exibição de Dados para uma tabela.
    1. Selecione **[!UICONTROL Trocar Linhas e Colunas]** na barra de ferramentas.
-   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -666,7 +666,7 @@ O ![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **não** entende como li
    1. Arraste e solte **[!UICONTROL Daterangehour]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**.
       * Selecione **[!UICONTROL Mais]** > **[!UICONTROL Horas]** no menu suspenso **[!UICONTROL Daterangeday]**, para atualizar o valor para **[!UICONTROL HOUR(Daterangeday)]**.
    1. Arraste e solte **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**. O valor é convertido automaticamente em **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -678,7 +678,7 @@ O ![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **não** entende como li
 1. Verifique se a folha de **[!UICONTROL Dados]** está selecionada. Na exibição **[!UICONTROL Dados]**:
    1. Selecione **[!UICONTROL Mostrar-me]** no canto superior direito e selecione **[!UICONTROL Tabela de texto]** (visualização superior esquerdo) para modificar o conteúdo do modo de exibição de Dados para uma tabela.
    1. Arraste **[!UICONTROL HOUR(Daterangeday)]** de **[!UICONTROL Colunas]** para **[!UICONTROL Linhas]**.
-   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -834,7 +834,7 @@ Um exemplo de painel **[!UICONTROL Tendência mensal]** para o caso de uso:
    1. Arraste e solte **[!UICONTROL Daterangeday]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**.
       * Selecione **[!UICONTROL MÊS]** no menu suspenso **[!UICONTROL Dia_da_data]**, para que o valor seja atualizado para **[!UICONTROL MÊS(Dia_da_data)]**.
    1. Arraste e solte **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**. O valor é convertido automaticamente em **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -846,7 +846,7 @@ Um exemplo de painel **[!UICONTROL Tendência mensal]** para o caso de uso:
 1. Verifique se a folha de **[!UICONTROL Dados]** está selecionada. Na visualização de dados:
    1. Selecione **[!UICONTROL Mostrar-me]** no canto superior direito e selecione **[!UICONTROL Tabela de texto]** (visualização superior esquerdo) para modificar o conteúdo do modo de exibição de Dados para uma tabela.
    1. Arraste **[!UICONTROL MONTH(Daterangeday)]** de **[!UICONTROL Colunas]** para **[!UICONTROL Linhas]**.
-   1. Modifique de **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
 
       A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
 
@@ -1032,7 +1032,7 @@ Um exemplo de painel **[!UICONTROL Dimension único classificado]** para o caso 
    1. Na caixa de diálogo **[!UICONTROL Filtrar \[Comprar receita\]]**, selecione **[!UICONTROL Intervalo de valores]** e insira os valores apropriados. Por exemplo: `1,000,000` - `2,000,000`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
    1. Para converter os dois gráficos de barras em um gráfico de combinação dupla, selecione **[!UICONTROL SOMA(Compras)]** em **[!UICONTROL Linhas]** e, no menu suspenso, selecione **[!UICONTROL Eixo Duplo]**. Os gráficos de barras se transformam em um gráfico de dispersão.
    1. Para modificar o gráfico de dispersão para um gráfico de barras:
-      1. Selecione **[!UICONTROL SUM(Purchases)]** na área **[!UICONTROL Marcas]** e selecione **[!UICONTROL Linha]** no menu suspenso.
+      1. Selecione **[!UICONTROL SUM(Purchases)]** na área **[!UICONTROL Marks]** e selecione **[!UICONTROL Line]** no menu suspenso.
       1. Selecione **[!UICONTROL SUM(Purchase Revenue)]** na área **[!UICONTROL Marcas]** e selecione **[!UICONTROL Barra]** no menu suspenso.
 
    A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
@@ -1261,9 +1261,9 @@ Um exemplo de painel **[!UICONTROL Vários Dimension Classificados]** para o cas
    1. Arraste **[!UICONTROL Categoria do Produto]** e solte ao lado de **[!UICONTROL Colunas]**.
    1. Arraste **[!UICONTROL Receita de Compra]** e solte ao lado de **[!UICONTROL Linhas]**. O valor muda para **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Arraste Compras e solte ao lado de **[!UICONTROL Linhas]**. O valor muda para **[!UICONTROL SUM(Purchases)]**.
-   1. Selecione **[!UICONTROL SOMA(Compras)]** e, no menu suspenso, selecione **[!UICONTROL Eixo Duplo]**.
+   1. Selecione **[!UICONTROL SUM(Purchases)]** e, no menu suspenso, selecione **[!UICONTROL Eixo duplo]**.
    1. Selecione **[!UICONTROL SUM(Purchases)]** em **[!UICONTROL Marks]** e selecione **[!UICONTROL Line]** no menu suspenso.
-   1. Selecione **[!UICONTROL SUM(Purchase Revenue)]** em **[!UICONTROL Marcas]** e selecione **[!UICONTROL Barra]** no menu suspenso.
+   1. Selecione **[!UICONTROL SOMA(Receita da Compra)]** em **[!UICONTROL Marcas]** e selecione **[!UICONTROL Barra]** no menu suspenso.
    1. Selecione **[!UICONTROL Exibição Inteira]** no menu **[!UICONTROL Ajustar]**.
    1. Selecione o título **[!UICONTROL Receita de compra]** no gráfico e verifique se a receita de compra está em ordem crescente.
 

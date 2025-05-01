@@ -5,10 +5,10 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 77%
+ht-degree: 74%
 
 ---
 
@@ -101,7 +101,7 @@ Detalhes sobre as configurações de expiração disponíveis.
 
 ## [!UICONTROL Dimensão de ligação]
 
-Uma lista suspensa que permite vincular a persistência de um valor de dimensão a valores de outra dimensão. As opções válidas incluem outras dimensões incluídas na exibição de dados.
+Um menu suspenso que permite vincular a persistência de um valor de dimensão a valores de outra dimensão. As opções válidas incluem outras dimensões incluídas na exibição de dados.
 
 Consulte [Uso de dimensões e métricas de vinculação no Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) para obter exemplos sobre como usar dimensões de vinculação de forma eficaz.
 
@@ -115,7 +115,7 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões 
 
 ## [!UICONTROL Métrica de ligação]
 
-Uma lista suspensa que permite escolher uma métrica que atue como um acionador de ligação. As opções válidas incluem métricas da exibição de dados.
+Um menu suspenso que permite escolher uma métrica que atue como um acionador de ligação. As opções válidas incluem métricas da exibição de dados.
 
 Essa configuração só aparece quando a Dimensão de ligação está mais abaixo no array de objetos do que no componente. Quando a métrica de ligação está presente em um evento, os valores de dimensão são copiados da dimensão de nível de evento para o nível de esquema inferior da dimensão de ligação.
 

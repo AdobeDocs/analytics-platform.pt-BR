@@ -5,10 +5,10 @@ title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1616'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -125,7 +125,7 @@ As configurações de visualização disponíveis dependem da visualização. A 
 | **[!UICONTROL Mostrar previsão]** | Aprimorar os gráficos de linha e tabelas de forma livre, exibindo os valores de previsão.  |
 | **[!UICONTROL Mostrar mín.]** | Mostrar o valor mínimo na visualização. |
 | **[!UICONTROL Mostrar máx.]** | Mostrar o valor máximo na visualização. |
-| **[!UICONTROL Mostrar linha de tendências]** | Mostrar uma linha de tendências na visualização. Quando selecionada, é possível escolher o tipo de linha de tendências no menu suspenso. |
+| **[!UICONTROL Mostrar linha de tendências]** | Mostrar uma linha de tendências na visualização. Quando selecionada, você pode selecionar o tipo de linha de tendência no menu suspenso. |
 
 É possível personalizar as configurações de todas as visualizações criadas. Para obter mais informações, consulte [Preferências do usuário](/help/analysis-workspace/user-preferences.md).
 

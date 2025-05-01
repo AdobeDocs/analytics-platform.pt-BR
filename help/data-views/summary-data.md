@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 99%
+source-wordcount: '1147'
+ht-degree: 97%
 
 ---
 
@@ -93,7 +93,7 @@ Para usar os dados de resumo corretamente nos seus relatórios e análises, vár
 
 ### Granularidade e fuso horário
 
-Ao configurar o conjunto de dados que contém os dados de resumo no Customer Journey Analytics, você verá que a granularidade é derivada automaticamente dos dados. As seleções dos menus suspensos **[!UICONTROL Carimbo de data/hora]** e **[!UICONTROL Fuso horário]** estão desabilitadas porque ambas são derivadas da definição do esquema.
+Ao configurar o conjunto de dados que contém os dados de resumo no Customer Journey Analytics, você verá que a granularidade é derivada automaticamente dos dados. As seleções para o menu suspenso **[!UICONTROL Carimbo de data/hora]** e **[!UICONTROL Fuso horário]** estão desabilitadas porque ambas são derivadas da definição do esquema.
 
 #### Granularidade
 

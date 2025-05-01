@@ -4,10 +4,10 @@ title: Como configurar uma visualização de fluxo
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1484'
-ht-degree: 86%
+ht-degree: 85%
 
 ---
 
@@ -39,7 +39,7 @@ Você pode configurar o início ou o fim do caminho em que está interessado. Ou
 
    * Use o menu suspenso para selecionar métricas ou dimensões.
    * Arraste dimensões ou métricas do painel esquerdo.
-   * Comece a digitar o nome de uma dimensão ou métrica e selecione-a quando aparecer na lista suspensa.
+   * Comece digitando o nome de uma dimensão ou métrica e selecione-a quando ela aparecer no menu suspenso.
 
    >[!IMPORTANT]
    >

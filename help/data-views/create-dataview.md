@@ -5,7 +5,7 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 6213cc09800743a1f7cb4828d71ee731439e529b
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 85%
@@ -70,7 +70,7 @@ Fornece configurações abrangentes para a visualização de dados.
 | Configuração | Descrição |
 | --- | --- |
 | **[!UICONTROL Conexão]** | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém um ou mais conjuntos de dados da Adobe Experience Platform. |
-| **[!UICONTROL Nome]** | Obrigatório. O nome da visualização de dados. Esse valor aparece na lista suspensa no canto superior direito do Analysis Workspace. |
+| **[!UICONTROL Nome]** | Obrigatório. O nome da visualização de dados. Esse valor aparece no menu suspenso no canto superior direito do Analysis Workspace. |
 | **[!UICONTROL ID externa]** | Obrigatório. O nome da visualização de dados que você pode usar em fontes externas, como ferramentas de business intelligence. O padrão é `unspecified`. Se você não especificar uma ID externa, o nome será gerado a partir do Nome da visualização de dados, substituindo espaços por sublinhados. |
 | **[!UICONTROL Descrição]** | Opcional. A Adobe recomenda uma descrição detalhada para que os usuários entendam por que a visualização de dados existe e para quem ela foi projetada. |
 

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '3247'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -70,7 +70,7 @@ Na Adobe Experience Platform:
 
 1. Selecione ![Criar consulta](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Criar consulta **]**.
 
-1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de dados]**. Por exemplo, `prod:cja`.
+1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de Dados]**. Por exemplo, `prod:cja`.
 
 1. Para realizar a consulta, digite a instrução SQL e clique no botão ![Reproduzir](assets/Smock_Play_18_N.svg) (ou pressione `[SHIFT]` + `[ENTER]`).
 
@@ -85,7 +85,7 @@ Na Adobe Experience Platform:
 
    1. Selecione **[!UICONTROL ** Credenciais **]** na barra superior.
 
-   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de dados]**.  Por exemplo, `prod:cja`.
+   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de Dados]**. Por exemplo, `prod:cja`.
 
    1. Para copiar a string de comando, use ![Copiar](assets/Smock_Copy_18_N.svg) na seção **[!UICONTROL ** comando PSQL **]**.
 
@@ -110,7 +110,7 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
    1. Selecione **[!UICONTROL ** Credenciais **]** na barra superior.
 
-   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de dados]**.  Por exemplo, `prod:cja`.
+   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de Dados]**. Por exemplo, `prod:cja`.
 
    1. Use ![Copiar](assets/Smock_Copy_18_N.svg) para copiar cada um dos parâmetros de credenciais do Postgres ([!UICONTROL Host], [!UICONTROL Porta], [!UICONTROL Banco de dados], [!UICONTROL Nome de usuário] e outros) quando necessário no Power BI.
 
@@ -153,7 +153,7 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
    1. Selecione **[!UICONTROL ** Credenciais **]** na barra superior.
 
-   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de dados]**.  Por exemplo, `prod:cja`.
+   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de Dados]**. Por exemplo, `prod:cja`.
 
    1. Use ![Copiar](assets/Smock_Copy_18_N.svg) para copiar cada um dos parâmetros de credenciais do Postgres ([!UICONTROL Host], [!UICONTROL Porta], [!UICONTROL Banco de dados], [!UICONTROL Nome de usuário] e outros) quando necessário no Tableau Desktop.
 
@@ -199,7 +199,7 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
    1. Selecione **[!UICONTROL ** Credenciais **]** na barra superior.
 
-   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de dados]**.  Por exemplo, `prod:cja`.
+   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de Dados]**. Por exemplo, `prod:cja`.
 
    1. Use ![Copiar](assets/Smock_Copy_18_N.svg) para copiar cada um dos parâmetros de credenciais do Postgres ([!UICONTROL Host], [!UICONTROL Porta], [!UICONTROL Banco de dados], [!UICONTROL Nome de usuário] e outros) quando necessário no Tableau.
 
@@ -226,7 +226,7 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
    1. Selecione **[!UICONTROL ** Credenciais **]** na barra superior.
 
-   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de dados]**.  Por exemplo, `prod:cja`.
+   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de Dados]**. Por exemplo, `prod:cja`.
 
    1. Use ![Copiar](assets/Smock_Copy_18_N.svg) para copiar cada um dos parâmetros das credenciais do Postgres ([!UICONTROL Host], [!UICONTROL Porta], [!UICONTROL Banco de dados], [!UICONTROL Nome de usuário] e outros) quando necessário no Jupyter Notebook.
 
@@ -250,7 +250,7 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
    1. Selecione **[!UICONTROL ** Credenciais **]** na barra superior.
 
-   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de dados]**.  Por exemplo, `prod:cja`.
+   1. Selecione o banco de dados `cja` para sua sandbox na lista de bancos de dados no menu suspenso **[!UICONTROL Banco de Dados]**. Por exemplo, `prod:cja`.
 
    1. Use ![Copiar](assets/Smock_Copy_18_N.svg) para copiar cada um dos parâmetros das credenciais do Postgres ([!UICONTROL Host], [!UICONTROL Porta], [!UICONTROL Banco de dados], [!UICONTROL Nome de usuário] e outros) quando necessário no Jupyter Notebook.
 

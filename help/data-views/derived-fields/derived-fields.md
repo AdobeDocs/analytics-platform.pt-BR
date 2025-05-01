@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '8844'
-ht-degree: 99%
+source-wordcount: '8857'
+ht-degree: 98%
 
 ---
 
@@ -73,7 +73,7 @@ Para definir uma regra no construtor de regras, use a interface de regras.
 | A | **Nome da regra** | Por padrão, o nome da regra é **Regra X** (X refere-se a um número de sequência). Para editar o nome de uma regra, selecione-o e digite o novo nome, como `Query Parameter`. |
 | B | **Nome da função** | O nome de função selecionado para a regra, como [!UICONTROL URL PARSE]. Quando a função é a última da sequência de funções e determina os valores da saída final, o nome da função é seguido por [!UICONTROL - FINAL OUTPUT]; por exemplo, [!UICONTROL URL PARSE - FINAL OUTPUT].  <br/>Para mostrar uma janela pop-up com mais informações sobre a função, selecione o ![Ícone de ajuda](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Descrição da regra** | Também é possível adicionar uma descrição a uma regra.<br/>Selecione o ![Ícone de mais](assets/More.svg) e **[!UICONTROL ** Adicionar descrição **]** para adicionar uma descrição, ou **[!UICONTROL ** Editar descrição **]** para editar uma descrição existente.<br/>Use o editor para inserir uma descrição. Você pode usar a barra de ferramentas para formatar o texto (utilizando o seletor de estilo, negrito, itálico, sublinhado, direita, esquerda, centralizado, cor, lista numerada, lista com marcadores) e adicionar links para informações externas. <br/>Para concluir a edição da descrição, clique fora do editor. |
-| D | **Área da função** | Define a lógica da função. A interface depende do tipo de função. A lista suspensa [!UICONTROL Campo] ou [!UICONTROL Valor] mostra todas as categorias de campos (regras, campos padrão, campos) disponíveis com base no tipo de entrada que a função espera. Alternativamente, você pode arrastar e soltar um campo do seletor de campos do esquema e campos padrão em um campo ou valor. Quando esse campo arrastado advém de um conjunto de dados de pesquisa, uma função de pesquisa é inserida automaticamente antes da função definida. <br/>Consulte [Referência da função](#function-reference) para informações detalhadas sobre cada uma das funções permitidas. |
+| D | **Área da função** | Define a lógica da função. A interface depende do tipo de função. O menu suspenso do [!UICONTROL Campo] ou [!UICONTROL Valor] mostra todas as categorias de campos (regras, campos padrão, campos) disponíveis, com base no tipo de entrada que a função espera. Alternativamente, você pode arrastar e soltar um campo do seletor de campos do esquema e campos padrão em um campo ou valor. Quando esse campo arrastado advém de um conjunto de dados de pesquisa, uma função de pesquisa é inserida automaticamente antes da função definida. <br/>Consulte [Referência da função](#function-reference) para informações detalhadas sobre cada uma das funções permitidas. |
 
 {style="table-layout:auto"}
 
@@ -1948,7 +1948,7 @@ As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 
 - Você pode usar no máximo dez campos de esquema diferentes (sem incluir campos padrão) ao definir regras para um campo derivado.
    - A partir desse máximo de dez campos de esquema diferentes, somente um máximo de três campos de esquema de pesquisa ou esquema de perfil são permitidos.
-- Você pode ter no máximo 100 campos derivados por conexão do Customer Journey Analytics.
+- É possível ter um número máximo de campos derivados por conexão do Customer Journey Analytics, dependendo do pacote que você licenciar. Consulte a [Descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html){target="_blank"} para obter mais informações.
 
 
 ### Resumo das limitações de função

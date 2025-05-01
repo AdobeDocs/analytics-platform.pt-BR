@@ -4,10 +4,10 @@ title: Configurar uma visualização de fallout
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,7 @@ Não há limite para o número de etapas que é possível adicionar ou o número
 ## Usar
 
 1. Adicione uma visualização de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL fallout]**. Consulte [Adicionar uma visualização a um painel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
-1. Arraste uma página, como a página inicial, da dimensão Página para o menu suspenso *Adicionar ponto de contato*.
+1. Arraste uma página, por exemplo, página inicial, da dimensão Página para o menu suspenso *Adicionar ponto de contato*.
 
    ![A página inicial da dimensão Página inicial arrastada para o campo Adicionar ponto de contato.](assets/fallout-drag.png)
 

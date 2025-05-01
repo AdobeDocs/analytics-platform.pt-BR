@@ -4,10 +4,10 @@ title: Construir segmentos
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 45%
+source-wordcount: '1572'
+ht-degree: 43%
 
 ---
 
@@ -68,8 +68,8 @@ Use o Criador de definições para criar a definição de segmento. Nessa constr
 
 Você pode configurar o tipo e o escopo da sua definição:
 
-1. Para especificar o tipo de definição, especifique se deseja criar uma definição de inclusão ou exclusão. Selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Opções]** e, na lista suspensa, selecione **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]**.
-1. Para especificar o escopo da definição, selecione na lista suspensa **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]** se deseja que o escopo da definição seja **[!UICONTROL Evento]**, **[!UICONTROL Sessão]**, **[!UICONTROL Pessoa]**, **[!UICONTROL Conta Global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} ou **[!UICONTROL Grupo de compras]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+1. Para especificar o tipo de definição, especifique se deseja criar uma definição de inclusão ou exclusão. Selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Opções]** e no menu suspenso **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]**.
+1. Para especificar o escopo da definição, selecione no menu suspenso **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]** se deseja que o escopo da definição seja **[!UICONTROL Evento]**, **[!UICONTROL Sessão]**, **[!UICONTROL Pessoa]**, **[!UICONTROL Conta Global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Grupo de compras]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 É sempre possível alterar essas configurações posteriormente.
 
@@ -87,7 +87,7 @@ Para adicionar um componente:
 
 Para editar um componente:
 
-* Selecione um novo operador para o componente no menu suspenso de operadores.
+* Selecione um novo operador para o componente no menu suspenso do operador.
 * Selecione ou especifique um valor diferente para o operador, se for o caso.
 * Se o tipo de componente for uma dimensão, será possível definir o modelo de atribuição. Consulte [Modelo de atribuição](#attribution-models) para mais informações.
 

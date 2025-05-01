@@ -4,10 +4,10 @@ title: Configurações de linha
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1046'
-ht-degree: 92%
+ht-degree: 89%
 
 ---
 
@@ -36,9 +36,9 @@ Para alterar o número de linhas exibidas:
 
 1. Clique no número ao lado de **[!UICONTROL Linhas]** na parte superior da primeira coluna da tabela.
 
-   ![Tabela de forma livre mostrando a lista suspensa para o número de linhas exibidas. Há 400 linhas selecionadas.](assets/change-row-count.gif)
+   ![Tabela de forma livre que mostra o menu suspenso do número de linhas exibidas. Há 400 linhas selecionadas.](assets/change-row-count.gif)
 
-1. Na lista suspensa, selecione o número de linhas que deseja que a tabela exiba.
+1. No menu suspenso, selecione o número de linhas que deseja que a tabela exiba.
 
 
 ## Menu de contexto

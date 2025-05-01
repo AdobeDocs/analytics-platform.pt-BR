@@ -4,10 +4,10 @@ description: Criar um intervalo de datas para uso em relatórios.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 79%
+ht-degree: 76%
 
 ---
 
@@ -55,7 +55,7 @@ A caixa de diálogo **[!UICONTROL Novo intervalo de datas]** ou **[!UICONTROL Ed
 1. Opcionalmente, especifique uma **[!UICONTROL Descrição]**.
 1. Organize o segmento criando ou aplicando uma ou mais **[!UICONTROL Marcas]**. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag.
 1. Selecione um **[!UICONTROL Intervalo de datas]**, escolhendo primeiro a data inicial e, em seguida, a data final.
-Também é possível selecionar uma **[!UICONTROL predefinição]** no menu suspenso [!UICONTROL *Selecionar uma predefinição*].
+Como alternativa, selecione uma **[!UICONTROL Predefinição]** no menu suspenso [!UICONTROL *Selecionar uma predefinição*].
 
 1. Ou selecione **[!UICONTROL Mostrar configurações avançadas]** para:
 

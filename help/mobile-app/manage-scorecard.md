@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: d8286e34edba128113ba99602ba24eea67c5dea8
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1806'
-ht-degree: 64%
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ Este tópico instrui os curadores de dados do Customer Journey Analytics sobre c
 
 ## Exibir e configurar propriedades de blocos {#tiles}
 
-Ao clicar em um bloco no construtor de cartões de pontuação, o painel direito exibe as propriedades e características associadas a esse bloco e seu slide de detalhes. Nesse painel, você pode fornecer um novo **Título** para o bloco e, como alternativa, configurá-lo aplicando segmentos.
+Ao clicar em um bloco no criador de cartões de pontuação, o painel direito exibe as propriedades e características associadas a esse bloco e seu slide de detalhes. Nesse painel, você pode fornecer um novo **Título** para o bloco e, como alternativa, configurá-lo aplicando segmentos.
 
 ![Bloco de propriedades](assets/properties-tile-new.png)
 
@@ -34,7 +34,7 @@ Os detalhamentos refinam sua análise ao detalhar métricas por itens de dimens�
 
 ![Detalhamento_exibição](assets/break_view.png)
 
-Cada dimensão adicionada ao bloco será mostrada em uma lista suspensa na exibição detalhada do aplicativo. O usuário executivo pode então escolher entre as opções indicadas na lista suspensa.
+Cada dimensão adicionada ao bloco será mostrada em um menu suspenso na exibição detalhada do aplicativo. O usuário executivo pode então escolher entre as opções listadas no menu suspenso.
 
 ## Personalizar slides de detalhes {#customize-detail-slide}
 
@@ -42,7 +42,7 @@ Os slides de detalhes personalizados permitem ter ainda mais controle sobre quai
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Exibições de detalhes personalizadas](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Exibições de detalhes personalizadas](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -71,7 +71,7 @@ Para adicionar texto a um slide de detalhes, selecione um layout que apresente o
 
 ## Remover componentes {#remove}
 
-Da mesma forma, para remover um componente aplicado a todo o cartão de pontuação, clique em qualquer lugar do cartão de pontuação fora dos blocos e remova-o clicando no **x** exibido ao passar o mouse sobre o componente, como mostrado abaixo para **Primeiras visitas**:
+Da mesma forma, para remover um componente aplicado a todo o cartão de pontuação, clique em qualquer lugar nele fora dos blocos e remova-o clicando no **x** que aparece ao passar o mouse sobre o componente, conforme mostrado abaixo para **Primeiras visitas**:
 
 ![Remover_componentes](assets/new_remove.png)
 
@@ -79,7 +79,7 @@ Da mesma forma, para remover um componente aplicado a todo o cartão de pontuaç
 
 Uma história de dados é uma coleção de pontos de dados de suporte, contexto comercial e métricas relacionadas com base em um tema ou métrica central.
 
-Por exemplo, se você se concentrar no tráfego da Web, sua métrica mais importante pode ser visitas, mas você também pode estar interessado em novas pessoas, pessoas únicas, e pode querer ver os dados detalhados por página da Web ou por que tipo de dispositivo o tráfego está vindo. As histórias de dados em projetos de cartões de pontuação móveis permitem colocar suas métricas mais importantes em primeiro plano ao mesmo tempo em que conta toda a história por trás das métricas com vários slides de detalhes.
+Por exemplo, se você se concentra no tráfego na web, sua métrica mais importante pode ser as visitas, mas você também pode estar interessado em pessoas novas, pessoas únicas, e pode querer ver dados divididos por página da web ou por tipo de dispositivo de onde o tráfego está vindo. As histórias de dados em projetos de cartões de pontuação móveis permitem colocar suas métricas mais importantes em primeiro plano ao mesmo tempo em que conta toda a história por trás das métricas com vários slides de detalhes.
 
 Assista ao vídeo para saber mais sobre como criar histórias de dados em projetos de cartões de pontuação móveis no Analysis Workspace.
 
@@ -168,7 +168,7 @@ Para compartilhar o cartão de pontuação com um usuário executivo:
 
 1. Clique no menu **[!UICONTROL Compartilhar]** e selecione **[!UICONTROL Compartilhar scorecard]**.
 
-1. No formulário **[!UICONTROL Compartilhar Scorecard para Dispositivos Móveis]**, preencha os campos da seguinte forma:
+1. No formulário **[!UICONTROL Compartilhar cartão de pontuação móvel]**, preencha os campos da seguinte forma:
 
    * Fornecer o nome do cartão de pontuação
    * Fornecer uma descrição do cartão de pontuação
@@ -179,13 +179,13 @@ Para compartilhar o cartão de pontuação com um usuário executivo:
 
 ![Compartilhar_Scorecards](assets/new_share.png)
 
-Depois de compartilhar um cartão de pontuação, os recipients podem acessá-lo nos painéis do Analytics. Se você fizer alterações subsequentes no cartão de pontuação usando o construtor de cartões de pontuação, elas serão atualizadas automaticamente no cartão de pontuação compartilhado. Os usuários executivos verão as alterações depois de atualizar o cartão de pontuação no aplicativo.
+Depois de compartilhar um cartão de pontuação, os recipients podem acessá-lo nos painéis do Analytics. Se você fizer alterações subsequentes no cartão de pontuação no criador de cartões de pontuação, elas serão atualizadas automaticamente no cartão de pontuação compartilhado. Os usuários executivos verão as alterações após atualizar o cartão de pontuação no aplicativo.
 
 Se você atualizar o cartão de pontuação adicionando novos componentes, será possível compartilhar o cartão de pontuação novamente (e marcar a opção **[!UICONTROL Compartilhar componentes integrados]**) para garantir que seus usuários executivos tenham acesso a essas mudanças.
 
 ### Compartilhar cartões de pontuação usando um link compartilhável
 
-Usar um link compartilhável facilita o compartilhamento de um cartão de pontuação em um aplicativo de email, documento ou mensagem de texto. O link compartilhável permite que os recipients abram o cartão de pontuação em seu desktop ou no aplicativo móvel de painéis. Deep linking compartilháveis facilitam ainda mais o compartilhamento de projetos e impulsionam o engajamento com as partes interessadas.
+Usar um link compartilhável facilita o compartilhamento de um cartão de pontuação em um email, documento ou aplicativo de mensagem de texto. O link compartilhável permite que os destinatários abram o cartão de pontuação no desktop ou no aplicativo móvel do painel. Deep linking compartilháveis facilitam ainda mais o compartilhamento de projetos e impulsionam o engajamento com as partes interessadas.
 
 Para compartilhar um cartão de pontuação usando um link compartilhável
 
@@ -195,11 +195,11 @@ Para compartilhar um cartão de pontuação usando um link compartilhável
 
 1. Copie o link e cole-o em um email, documento ou aplicativo de mensagens instantâneas.
 
-   Quando um recipient usa um aplicativo de desktop ou navegador para abrir o link, o projeto de cartão de pontuação para dispositivos móveis é aberto no Workspace.
+   Quando um destinatário usa um aplicativo de desktop ou navegador para abrir o link, o projeto de cartão de pontuação para dispositivos móveis é aberto no Workspace.
 
-   Quando um recipient abre o link em um dispositivo móvel, o cartão de pontuação é aberto diretamente no aplicativo de painéis do Adobe Analytics.
+   Quando um destinatário abre o link em um dispositivo móvel, o cartão de pontuação é aberto diretamente no aplicativo de painéis do Adobe Analytics.
 
-   Se um recipient não tiver baixado o aplicativo móvel, ele será direcionado para a lista de aplicativos na App Store ou na Google Play Store, onde poderá baixá-lo.
+   Se um destinatário não tiver baixado o aplicativo móvel, ele será direcionado para a lista de aplicativos na App Store ou na Google Play Store, onde poderá baixá-lo.
 
 
 ## Remover item de dimensão [!UICONTROL Não especificado] {#remove-dims}

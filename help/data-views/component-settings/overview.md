@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ As informações a seguir descrevem as configurações que um componente de visu
 | [!UICONTROL Nome do componente] | Obrigatório. Permite especificar o nome amigável que aparecerá no Analysis Workspace. É possível renomear um componente, dando a ele um nome específico para a visualização de dados. |
 | [!UICONTROL Descrição] | Opcional, mas recomendado. Fornece informações sobre o componente para outros usuários. |
 | [!UICONTROL Tags] | Opcional. Permite marcar o componente com tags personalizadas ou prontas para uso para facilitar a pesquisa/filtragem na interface do Analysis Workspace. |
-| [!UICONTROL Rótulos de contexto] | Opcional. Uma lista suspensa de rótulos definidos pelo sistema disponíveis que podem ser aplicados a um componente.  <p>Esses rótulos podem ser necessários nas seguintes situações:</p> <ul><li>Para definir um conjunto de componentes que você pode usar em relatórios de experimentação através do [painel Experimentação](/help/analysis-workspace/c-panels/experimentation.md) em projetos do Analysis Workspace.<p>Consulte [Integrar ao Journey Optimizer](/help/integrations/ajo.md#data-view) e [Relatórios do Target](/help/integrations/at.md) para mais informações.</p></li><li>Ao usar modelos fornecidos pela Adobe. Por padrão, alguns modelos fornecidos pela Adobe não funcionarão porque contêm componentes que não estão na sua visualização de dados.<p>Para cada componente ausente, um rótulo de contexto correspondente está disponível na visualização de dados. Você precisa adicionar o rótulo de contexto correspondente a um componente que já está na visualização de dados ou adicionar um novo componente à visualização e o seu respectivo rótulo de contexto.</p><p>Para obter mais informações, consulte [Adicionar componentes ausentes à visualização de dados para um determinado modelo](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) no artigo [Criar e gerenciar modelos](/help/analysis-workspace/templates/create-templates.md).</p> |
+| [!UICONTROL Rótulos de contexto] | Opcional. Um menu suspenso de rótulos disponíveis definidos pelo sistema que podem ser aplicados a um componente. <p>Esses rótulos podem ser necessários nas seguintes situações:</p> <ul><li>Para definir um conjunto de componentes que você pode usar em relatórios de experimentação através do [painel Experimentação](/help/analysis-workspace/c-panels/experimentation.md) em projetos do Analysis Workspace.<p>Consulte [Integrar ao Journey Optimizer](/help/integrations/ajo.md#data-view) e [Relatórios do Target](/help/integrations/at.md) para mais informações.</p></li><li>Ao usar modelos fornecidos pela Adobe. Por padrão, alguns modelos fornecidos pela Adobe não funcionarão porque contêm componentes que não estão na sua visualização de dados.<p>Para cada componente ausente, um rótulo de contexto correspondente está disponível na visualização de dados. Você precisa adicionar o rótulo de contexto correspondente a um componente que já está na visualização de dados ou adicionar um novo componente à visualização e o seu respectivo rótulo de contexto.</p><p>Para obter mais informações, consulte [Adicionar componentes ausentes à visualização de dados para um determinado modelo](/help/analysis-workspace/templates/create-templates.md#add-missing-components-to-the-data-view-for-a-given-template) no artigo [Criar e gerenciar modelos](/help/analysis-workspace/templates/create-templates.md).</p> |
 | [!UICONTROL Nome do campo de esquema] | O nome do campo de esquema. |
 | [!UICONTROL Tipo de conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de conjunto de dados (evento, pesquisa ou perfil) o componente veio. |
 | [!UICONTROL Conjunto de dados] | Um campo não editável que mostra de qual conjunto de dados o componente se originou. Este campo pode conter vários conjuntos de dados. |

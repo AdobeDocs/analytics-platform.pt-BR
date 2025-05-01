@@ -4,10 +4,10 @@ title: Visualização de gráficos de combinação
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -52,7 +52,7 @@ Lembre-se:
 
 1. Adicione uma visualização de ![Comentário](/help/assets/icons/ComboChart.svg) [!UICONTROL Combo]. Consulte [Adicionar uma visualização a um painel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
-1. Nas listas suspensas, selecione uma dimensão para o eixo X e uma métrica para o eixo Y.
+1. Nos menus suspensos, selecione uma dimensão para o eixo X e uma métrica para o eixo Y.
 
 1. Selecione o tipo de [!UICONTROL Comparação de linhas] que deseja usar.
 

@@ -2,9 +2,9 @@
 title: Visão geral de métricas e dimensões compartilhadas
 description: Use a mesma dimensão ou referência de métrica em várias visualizações de dados.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Todas as dimensões e métricas compartilhadas são exibidas abaixo dos quatro c
    * **[!UICONTROL Criado por]**: exibir somente componentes criados por um determinado usuário.
    * **[!UICONTROL Duplicatas]**: exibir somente componentes que tenham a mesma identificação de componente que outro componente. Esses filtros são idênticos à revisão de componentes por meio dos cartões de visão geral.
 * **Pesquisa**: use o ícone ![Pesquisar](../../assets/icons/Search.svg) para procurar um componente por nome.
-* **[!UICONTROL Conexão]**: uma lista suspensa que altera a [conexão](/help/connections/overview.md). As dimensões e métricas compartilhadas são sempre específicas para uma única conexão.
+* **[!UICONTROL Conexão]**: um menu suspenso que altera a [conexão](/help/connections/overview.md). As dimensões e métricas compartilhadas são sempre específicas para uma única conexão.
 * **[!UICONTROL Personalizar tabela]**: selecione o ícone ![Personalizar tabela](/help/assets/icons/ColumnSetting.svg) para mostrar ou ocultar colunas na tabela. As opções disponíveis incluem:
    * **[!UICONTROL Nome do campo]**: o nome da dimensão ou métrica compartilhada. Este campo está sempre visível.
    * **[!UICONTROL Tipo]**: indica se o componente é uma dimensão ou uma métrica. Este campo está sempre visível.

@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -203,7 +203,7 @@ Os detalhamentos refinam sua análise ao detalhar métricas por itens de dimens�
 
 ![Detalhamento_exibição](assets/break_view.png)
 
-Cada dimensão adicionada ao bloco será mostrada em uma lista suspensa na exibição detalhada do aplicativo. O usuário executivo pode então escolher entre as opções indicadas na lista suspensa.
+Cada dimensão adicionada ao bloco será mostrada em um menu suspenso na exibição detalhada do aplicativo. O usuário executivo pode então escolher entre as opções listadas no menu suspenso.
 
 ## Personalizar slides de detalhes {#customize-detail-slide}
 

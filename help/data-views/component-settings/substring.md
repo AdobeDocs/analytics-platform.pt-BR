@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '921'
-ht-degree: 98%
+ht-degree: 94%
 
 ---
 
@@ -32,16 +32,16 @@ As configurações do componente [!UICONTROL Substring] permitem executar métod
 
 ## Da esquerda/direita
 
-Pegue uma parte de uma string com base em sua posição no início ou no fim de uma string. Os métodos **[!UICONTROL Da esquerda]** e **[!UICONTROL Da direita]** oferecem duas listas suspensas: **[!UICONTROL De]** (onde a saída começa) e **[!UICONTROL Para]** (onde a saída termina).
+Pegue uma parte de uma string com base em sua posição no início ou no fim de uma string. Os métodos **[!UICONTROL Da Esquerda]** e **[!UICONTROL Da Direita]** fornecem dois menus suspensos: **[!UICONTROL De]** (em que a saída começa) e **[!UICONTROL Até]** (em que a saída termina).
 
 * **[!UICONTROL Início da string]**: o início da string.
 * **[!UICONTROL Fim da string]**: o fim da string.
 * **[!UICONTROL Posição]**: um número estático de caracteres da esquerda ou direita, dependendo do método.
-* **[!UICONTROL String]**: corresponder a um caractere ou sequência de caracteres para indicar o início ou o fim de uma string. Esta lista suspensa também revela opções adicionais:
+* **[!UICONTROL String]**: corresponder a um caractere ou sequência de caracteres para indicar o início ou o fim de uma string. Esse menu suspenso também revela opções adicionais:
    * **[!UICONTROL Corresponder]**: a string que será correspondida. Se a entrada não tiver correspondência com esse campo, [Nenhuma opção de valor](no-value-options.md) será aplicada.
    * **[!UICONTROL Índice]**: o critério **[!UICONTROL Corresponder]** pode ser apresentado várias vezes em uma string. Esse número inteiro determina qual correspondência deve iniciar ou finalizar a saída, dependendo do método. Por exemplo, um índice de `1` representa a primeira correspondência. Se o índice for superior ao número de correspondências disponíveis, [Nenhuma opção de valor](no-value-options.md) será aplicada.
    * **[!UICONTROL Incluir string]**: uma caixa de seleção que inclui a string **[!UICONTROL Corresponder]** na saída, se ativada.
-* **[!UICONTROL Comprimento]**: um número inteiro que especifica a contagem de caracteres a ser incluída após a posição inicial da saída. Disponível somente na lista suspensa **[!UICONTROL Para]**.
+* **[!UICONTROL Comprimento]**: um número inteiro que especifica a contagem de caracteres a ser incluída após a posição inicial da saída. Disponível somente no menu suspenso **[!UICONTROL Para]**.
 
 ## Delimitador
 

@@ -5,10 +5,10 @@ title: Gerenciar pastas no espaço de trabalho
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
-source-git-commit: 664756b796e8915a701ccabfb5f250e777701b60
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '427'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -44,7 +44,7 @@ Para mover pastas no espaço de trabalho:
 * Selecione uma pasta que deseja mover na [lista de projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
    1. Selecione **[!UICONTROL Mover para]** nas [ações](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) disponíveis no menu de contexto ![Mais](/help/assets/icons/More.svg) da pasta selecionada ou na barra de ação azul.
-   1. Na caixa de diálogo **[!UICONTROL Selecionar pasta]**, selecione uma pasta no menu suspenso **[!UICONTROL Pasta]** para a qual deseja mover a pasta.
+   1. Na caixa de diálogo **[!UICONTROL Selecionar Pasta]**, selecione uma pasta no menu suspenso **[!UICONTROL Pasta]** para onde mover a pasta.
 
    1. Selecione **[!UICONTROL Mover]**.
 
@@ -52,7 +52,7 @@ Para mover pastas no espaço de trabalho:
 
    1. Selecione **[!UICONTROL Mover pasta]** em ![Mais](/help/assets/icons/More.svg) na [área do título](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-   1. Na caixa de diálogo **[!UICONTROL Selecionar pasta]**, selecione uma pasta no menu suspenso **[!UICONTROL Pasta]** para a qual deseja mover a pasta.
+   1. Na caixa de diálogo **[!UICONTROL Selecionar Pasta]**, selecione uma pasta no menu suspenso **[!UICONTROL Pasta]** para onde mover a pasta.
 
    1. Selecione **[!UICONTROL Mover]**.
 

@@ -4,10 +4,10 @@ title: Paleta de cores de visualização
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -39,6 +39,6 @@ Lembre-se:
 ## Para alterar a paleta de cores:
 
 1. Navegue até **[!UICONTROL Workspace]** > **[!UICONTROL Projeto]** > **[!UICONTROL Informações e configurações do projeto]**.
-1. Na lista suspensa **[!UICONTROL Paleta de cores do projeto]**, você pode escolher um dos esquemas de cores predefinidos.
+1. No menu suspenso **[!UICONTROL Paleta de cores do projeto]**, você pode escolher um dos esquemas de cores predefinidos.
 1. Para especificar sua própria paleta, selecione **[!UICONTROL Paleta personalizada]** abaixo das opções predefinidas.
 1. Especifique até 16 valores hexadecimais delimitados por vírgulas (por exemplo, `#00a4e4`) para criar sua própria paleta de cores. Caso especifique, por exemplo, apenas quatro valores, as cores serão repetidas automaticamente em visualizações que contêm mais cores.

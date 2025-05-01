@@ -4,10 +4,10 @@ description: Como usar e interpretar o painel Média de público-alvo por minuto
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 97%
+source-wordcount: '1678'
+ht-degree: 92%
 
 ---
 
@@ -85,7 +85,7 @@ Use as configurações de entrada descritas nesta seção para configurar o pain
    | [!UICONTROL **Solte um segmento (ou qualquer outro componente) aqui.**] | Como outros painéis, essa configuração segmenta suas seleções com base nos segmentos criados. Essa é uma ótima maneira de observar plataformas específicas, fluxos ao vivo ou outros segmentos de mídia comuns. |
    | [!UICONTROL **Calcular métrica para**] | Escolha se você deseja ver o público-alvo médio por minuto para [**[!UICONTROL Conteúdo específico]**](#specific-content). Ou se você quiser ver a média de público-alvo por minuto de um [**[!UICONTROL Período personalizado]**](#custom-time-period).<br/><br/>Selecione [!UICONTROL **Período personalizado**]: <ul><li>Se a duração não estiver disponível ou </li><li>se você quiser exibir a média de público-alvo por minuto de uma série temporal com vários conteúdos, ou</li><li>para conteúdo sem uma duração específica atribuída (como durante um transmissão ou evento ao vivo)</li></ul></li></li></ul> <p>Essa configuração altera o fluxo de trabalho e a saída do relatório.</p> |
 
-1. Continue com [Conteúdo específico](#specific-content) ou [Período personalizado](#custom-time-period), dependendo da opção escolhida na lista suspensa [!UICONTROL **Calcular métrica para**].
+1. Continue com [Conteúdo específico](#specific-content) ou [Período personalizado](#custom-time-period), dependendo da opção escolhida no menu suspenso [!UICONTROL **Calcular métrica para**].
 
 #### Conteúdo específico
 
@@ -94,7 +94,7 @@ Use as configurações de entrada descritas nesta seção para configurar o pain
    | Configuração | Descrição |
    |---------|------------|
    | [!UICONTROL **Dimensão de relatório**] | Ao selecionar um conteúdo específico, você pode selecionar a saída do relatório para usar os campos de nome do vídeo ou ID do conteúdo para mostrar o conteúdo e sua média de público-alvo por minuto associada. |
-   | [!UICONTROL **Filtrar conteúdo por (opcional)**] | Escolha como filtrar o conteúdo específico, dependendo da visualização desejada ou da maneira como seus dados estão estruturados. <ul>[!UICONTROL **Programa, temporada, episódio**]: exibe os programas disponíveis no menu suspenso, que você pode filtrar usando uma pesquisa (ou arrastando e soltando o nome do programa da coluna da esquerda). Você pode terminar a seleção ali para ver todas as estações do programa, ou você pode filtrar por estações individuais e por episódios individuais. Esta configuração mostra os dados para esses programas, temporadas ou episódios do período selecionado.</li><li>[!UICONTROL **Dimensão personalizada**]: se o nome do programa estiver em uma dimensão personalizada, você poderá encontrá-lo pesquisando no menu suspenso de dimensões (opcional) ou usando a pesquisa na coluna da esquerda. O item de dimensão é preenchido automaticamente com base nessa seleção e é tratado como um episódio.</li><li>[!UICONTROL **Nenhum**]: mostra todos os nomes de vídeos que têm dados de média de público-alvo por minuto para a seleção que você escolheu. (Essa opção está selecionada por padrão.)</li></ul> |
+   | [!UICONTROL **Filtrar conteúdo por (opcional)**] | Escolha como filtrar o conteúdo específico, dependendo da visualização desejada ou da maneira como seus dados estão estruturados. <ul>[!UICONTROL **Programa, temporada, episódio**]: exibe os programas disponíveis no menu suspenso, que você pode filtrar usando uma pesquisa (ou arrastando e soltando o nome do programa da coluna da esquerda). Você pode terminar a seleção ali para ver todas as estações do programa, ou você pode filtrar por estações individuais e por episódios individuais. Esta configuração mostra os dados para esses programas, temporadas ou episódios do período selecionado.</li><li>[!UICONTROL **Dimensão personalizada**]: se o seu nome de exibição estiver em uma dimensão personalizada, você poderá encontrá-lo pesquisando no menu suspenso da dimensão (opcional) ou usando a pesquisa de coluna à esquerda. O item de dimensão é preenchido automaticamente com base nessa seleção e é tratado como um episódio.</li><li>[!UICONTROL **Nenhum**]: mostra todos os nomes de vídeos que têm dados de média de público-alvo por minuto para a seleção que você escolheu. (Essa opção está selecionada por padrão.)</li></ul> |
 
 1. Continue com [Configurações avançadas de conteúdo específico](#specific-content-advanced-settings) para definir configurações avançadas.
 
@@ -118,7 +118,7 @@ Use as configurações de entrada descritas nesta seção para configurar o pain
    | Opções | Descrição |
    |---------|------------|
    | **[!UICONTROL Granularidade]** | A granularidade padrão é [!UICONTROL **5 minutos**], mas você pode escolher qualquer uma das granularidades que são usadas como denominador para a série temporal no período selecionado. Por exemplo, selecionar 12h a 12h30 com uma granularidade de 5 minutos retorna a média de público-alvo por minuto durante a meia hora completa, bem como seis linhas com a média de público-alvo por minuto para cada período de 5 minutos. Essas linhas são usadas como pontos de dados para o gráfico de série de tempo. |
-   | [!UICONTROL **Filtrar conteúdo por (opcional)**] | Escolha como filtrar o conteúdo específico, dependendo da visualização desejada ou da maneira como seus dados estão estruturados. <ul>[!UICONTROL **Programa, temporada, episódio**]: exibe os programas disponíveis no menu suspenso, que você pode filtrar usando uma pesquisa (ou arrastando e soltando o nome do programa da coluna da esquerda). Você pode terminar a seleção ali para ver todas as estações do programa, ou você pode filtrar por estações individuais e por episódios individuais. Esta configuração mostra os dados para esses programas, temporadas ou episódios do período selecionado.</li><li>[!UICONTROL **Dimensão personalizada**]: se o nome do programa estiver em uma dimensão personalizada, você poderá encontrá-lo pesquisando no menu suspenso de dimensões (opcional) ou usando a pesquisa na coluna da esquerda. O item de dimensão é preenchido automaticamente com base nessa seleção e é tratado como um episódio.</li><li>[!UICONTROL **Nenhum**]: mostra todos os nomes de vídeos que têm dados de média de público-alvo por minuto para a seleção que você escolheu. (Essa opção está selecionada por padrão.)</li></ul> |
+   | [!UICONTROL **Filtrar conteúdo por (opcional)**] | Escolha como filtrar o conteúdo específico, dependendo da visualização desejada ou da maneira como seus dados estão estruturados. <ul>[!UICONTROL **Programa, temporada, episódio**]: exibe os programas disponíveis no menu suspenso, que você pode filtrar usando uma pesquisa (ou arrastando e soltando o nome do programa da coluna da esquerda). Você pode terminar a seleção ali para ver todas as estações do programa, ou você pode filtrar por estações individuais e por episódios individuais. Esta configuração mostra os dados para esses programas, temporadas ou episódios do período selecionado.</li><li>[!UICONTROL **Dimensão personalizada**]: se o seu nome de exibição estiver em uma dimensão personalizada, você poderá encontrá-lo pesquisando no menu de dimensão (opcional) ou usando a pesquisa de coluna à esquerda. O item de dimensão é preenchido automaticamente com base nessa seleção e é tratado como um episódio.</li><li>[!UICONTROL **Nenhum**]: mostra todos os nomes de vídeos que têm dados de média de público-alvo por minuto para a seleção que você escolheu. (Essa opção está selecionada por padrão.)</li></ul> |
 
 1. Continue com as [configurações avançadas do período personalizado](#custom-time-period-advanced-settings) para definir as configurações avançadas.
 

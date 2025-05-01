@@ -2,9 +2,9 @@
 title: Editor de componente compartilhado
 description: Crie ou edite dimensões e métricas compartilhadas.
 exl-id: 3f6a808a-d6ac-4a47-a5e2-63b9f17952e8
-source-git-commit: 62df631eeac40f2009304d91c93950c38a260dab
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ A interface inclui três colunas/seções principais:
 
 * **Seletor de campo de esquema**: localize os campos de esquema desejados e arraste-os para a área de componentes incluída.
    * **Conexão**: a conexão ativa. Altere a conexão ativa no [gerenciador de métricas e dimensões compartilhado](smd-overview.md).
-   * **Lista suspensa de componentes**: você pode escolher entre selecionar [!UICONTROL Campos de esquema] (novas dimensões e métricas compartilhadas) ou [!UICONTROL Métricas e dimensões] (componentes compartilhados existentes).
+   * **Lista de componentes**: você pode escolher entre selecionar [!UICONTROL Campos de esquema] (novas dimensões e métricas compartilhadas) ou [!UICONTROL Métricas e dimensões] (componentes compartilhados existentes) no menu suspenso.
    * **Pesquisa**: use a pesquisa de texto do ![ícone de Pesquisa](/help/assets/icons/Search.svg) para localizar o campo de esquema desejado ou o componente compartilhado por nome. Você também pode usar filtros ![Ícone de filtro](/help/assets/icons/Filter.svg) para restringir a lista de componentes. O filtro `Is not deprecated` está ativo por padrão.
    * **Criar campo derivado**: permite [criar um campo derivado](/help/data-views/derived-fields/derived-fields.md).
 * **Componentes incluídos**: os componentes configurados para serem compartilhados. Ao criar componentes compartilhados, você pode arrastar mais de um campo de esquema para essa área para criar vários componentes simultaneamente. Ao editar componentes compartilhados, você pode selecionar vários componentes para editar, o que lista todos os componentes selecionados nesta área.
