@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
+source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -90,3 +90,4 @@ Se um conjunto de dados de registro usar um campo Corresponder por, o conjunto d
 ## Relatório sobre dados baseados em pessoa e conta
 
 Se quiser criar relatórios sobre contêineres com base em pessoas (e identidades de pessoas) e contêineres com base em contas (e identidades de contas), configure duas conexões separadas no Customer Journey Analytics. Uma conexão em que você seleciona Pessoa como a ID principal e uma conexão em que você seleciona Conta como a ID principal. O Customer Journey Analytics não oferece suporte a relatórios com base em pessoas e em contas de uma única hierarquia de contêiner.
+
