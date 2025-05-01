@@ -2,10 +2,10 @@
 title: Visão geral de uso do produto
 description: Exiba insights e relatórios sobre como sua organização usa o Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '591'
+ht-degree: 88%
 
 ---
 
@@ -126,3 +126,11 @@ Ao habilitar o Uso do produto, as seguintes dimensões estão disponíveis. Se q
    * [!UICONTROL Venn]
 
 O uso do produto não rastreia componentes individuais do projeto quando um projeto é apenas aberto ou exibido. No entanto, a ação do usuário de abrir um projeto é rastreada.
+
+## Modelo disponível
+
+Um [modelo de Adobe](/help/analysis-workspace/templates/use-templates.md) está disponível e usa os componentes gerados automaticamente com base neste recurso.
+
+**[!UICONTROL Modelos do Adobe]** > **[!UICONTROL Outros]** > **[!UICONTROL Visão geral do uso do produto]**
+
+Selecione o modo de exibição de dados que o Uso do produto criou automaticamente no seletor de modo de exibição de dados e selecione o modelo **[!UICONTROL Visão geral do uso do produto]**. Selecione **[!UICONTROL Visualizar]** para ver quais painéis o modelo usa e saiba mais sobre casos de uso ideais, ou selecione **[!UICONTROL Usar modelo]** para abri-lo no Analysis Workspace.
