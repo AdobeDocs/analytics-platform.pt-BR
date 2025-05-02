@@ -4,10 +4,10 @@ title: Como configurar uma visualização de fluxo
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 915c1ecff6dcbe42a6ed81c74f4ec5b4a24eaaa5
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 85%
+source-wordcount: '1525'
+ht-degree: 84%
 
 ---
 
@@ -17,6 +17,17 @@ ht-degree: 85%
 >id="workspace_flow_container"
 >title="Container de fluxo"
 >abstract="Selecione o container a ser usado para exibir (números para) o caminho."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_disabled"
+>title="Incluir repetições (desativado)"
+>abstract="As repetições não podem ser removidas das visualizações de fluxo que incluem dimensões de vários valores."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_default"
+>title="Incluir repetições "
+>abstract="As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas. Por exemplo: recarregamentos de página."
+
 
 
 As visualizações de fluxo ajudam você a entender a jornada originada de um evento de conversão específico em seu site ou aplicativo. Ou que leva a um evento de conversão específico. A visualização rastreia um caminho pelas suas dimensões (e itens de dimensão) ou métricas.
