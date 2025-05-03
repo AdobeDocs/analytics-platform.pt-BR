@@ -4,14 +4,34 @@ title: Como configurar uma visualização de fluxo
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 915c1ecff6dcbe42a6ed81c74f4ec5b4a24eaaa5
+source-git-commit: 2a2e158c0eb0f60591a92ed98572bbb6c344e3be
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 84%
+source-wordcount: '1684'
+ht-degree: 78%
 
 ---
 
 # Configurar uma visualização de fluxo {#configure-a-flow-visualization}
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_startswith"
+>title="Começa com"
+>abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_contains"
+>title="Contém"
+>abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_endswith"
+>title="Termina com"
+>abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_pathingdimension"
+>title="Dimensão da definição de caminho"
+>abstract="Selecione uma dimensão para usar como o caminho conduzindo ou saindo do componente selecionado."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
@@ -25,8 +45,23 @@ ht-degree: 84%
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_include_repeats_default"
->title="Incluir repetições "
+>title="Incluir repetições"
 >abstract="As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas. Por exemplo: recarregamentos de página."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_limit_occurrence"
+>title="Limitar à primeira/última ocorrência"
+>abstract="Os resultados são limitados a caminhos quando o primeiro/último ponto de contato é uma entrada/saída."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_numberofcolumns"
+>title="Número de colunas"
+>abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_itemsexpandedpercolumn"
+>title="Itens expandidos por coluna"
+>abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
 
 
 
