@@ -19,7 +19,7 @@ As informações a seguir fornecem aos usuários executivos informações sobre 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Auxiliar executivos a acessar cartões de pontuação móveis](https://video.tv.adobe.com/v/343460/){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Auxiliar executivos a acessar cartões de pontuação móveis](https://video.tv.adobe.com/v/3444841?captions=por_br){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

@@ -33,7 +33,7 @@ Os recursos que aparecem na parte superior dessa visualização indicam que são
 * Os recursos na parte inferior esquerda da matriz são os recursos de **baixo impacto**. Eles não são amplamente adotados ou usados com frequência.
 * Os recursos na parte inferior direita da matriz são os recursos **únicos**. Eles são amplamente adotados, mas não são usados com frequência.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447472?captions=por_br)
 
 
 ## Casos de uso

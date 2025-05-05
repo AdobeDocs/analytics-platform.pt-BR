@@ -18,7 +18,7 @@ As [!UICONTROL configurações de coluna] permitem que você configure a formata
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de Forma livre](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de Forma livre](https://video.tv.adobe.com/v/328504/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
