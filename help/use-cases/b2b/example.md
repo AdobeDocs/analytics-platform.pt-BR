@@ -60,14 +60,14 @@ Para garantir uma configuração adequada de uma conexão que suporte pesquisas 
    |---|---|---|---| 
    | Conjunto de dados da atividade B2B | SourceKey <br/>**personKey.sourceKey** | | |
    | Conjunto de dados de pessoa B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | Conjunto de dados da conta B2B | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(Conjunto de Dados de Pessoa B2B)<br/>**b2b.accountKey.sourceKey**❶ |
-   | Conjunto de dados de oportunidade B2B | | Chave do Source <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/>(Conjunto de Dados de Relação de Oportunidade B2B)<br/>**opportunityKey.sourceKey**❷ |
-   | Conjunto de dados da campanha B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(Conjunto de Dados de Membro da Campanha B2B)<br/>**campaignKey.sourceKey**❸<br/> |
-   | Conjunto de dados da lista de marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(Conjunto de Dados de Membro da Lista de Marketing B2B)<br/>**marketingListKey.sourceKey**❹ |
-   | Conjunto de dados de relação pessoal da conta B2B | | SourceKey <br/>**personKey.sourceKey**❺ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**❺ |
-   | Conjunto de dados de relação pessoal da oportunidade B2B | | SourceKey <br/>**personKey.sourceKey** y❻ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**❻ |
-   | Conjunto de dados de membro da campanha B2B | | SourceKey <br/>**personKey.sourceKey**❼ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**❼ |
-   | Conjunto de dados do membro da Lista de marketing B2B | | SourceKey <br/>**personKey.sourceKey**❽ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**❽ |
+   | Conjunto de dados da conta B2B | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>(Conjunto de Dados de Pessoa B2B)<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
+   | Conjunto de dados de oportunidade B2B | | Chave do Source <br/>**opportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/>(Conjunto de Dados de Relação de Oportunidade B2B)<br/>**opportunityKey.sourceKey**&#x200B;❷ |
+   | Conjunto de dados da campanha B2B | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>(Conjunto de Dados de Membro da Campanha B2B)<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
+   | Conjunto de dados da lista de marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>(Conjunto de Dados de Membro da Lista de Marketing B2B)<br/>**marketingListKey.sourceKey**&#x200B;❹ |
+   | Conjunto de dados de relação pessoal da conta B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**&#x200B;❺ |
+   | Conjunto de dados de relação pessoal da oportunidade B2B | | SourceKey <br/>**personKey.sourceKey** y❻ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**&#x200B;❻ |
+   | Conjunto de dados de membro da campanha B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**&#x200B;❼ |
+   | Conjunto de dados do membro da Lista de marketing B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**&#x200B;❽ |
 
 {style="table-layout:auto"}
 

@@ -26,13 +26,13 @@ Para renomear pastas no espaço de trabalho:
 * Selecione a pasta que deseja renomear na [lista de projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
    1. Selecione **[!UICONTROL Renomear]** nas [ações](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) disponíveis no menu de contexto ![Mais](/help/assets/icons/More.svg) da pasta selecionada ou na barra de ação azul.
-   1. Na caixa de diálogo **[!UICONTROL Renomear: *nome da pasta *]**, digite um novo nome e selecione**[!UICONTROL Salvar ]**.
+   1. Na caixa de diálogo **[!UICONTROL Renomear: *nome da pasta *]**, digite um novo nome e selecione&#x200B;**[!UICONTROL Salvar &#x200B;]**.
 
 * Dentro da pasta que deseja renomear.
 
    1. Selecione **[!UICONTROL Renomear pasta]** em ![Mais](/help/assets/icons/More.svg) na [área do título](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-   1. Na caixa de diálogo **[!UICONTROL Renomear: *nome da pasta *]**, digite um novo nome e selecione**[!UICONTROL Salvar ]**.
+   1. Na caixa de diálogo **[!UICONTROL Renomear: *nome da pasta *]**, digite um novo nome e selecione&#x200B;**[!UICONTROL Salvar &#x200B;]**.
 
 
 ## Mover pastas

@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # Visão geral das conexões
 
-As conexões permitem que os administradores de produtos da Customer Journey Analytics estabeleçam conexões com diferentes fontes de dados do [!DNL  Experience Platform], como eventos, pesquisas, perfis e conjuntos de dados de resumo. Essas conexões permitem a integração de dados de uma conexão com uma visualização de dados derivada. As conexões são a base do Customer Journey Analytics e são criadas a partir de [!DNL Experience Platform] conjuntos de dados de origem.
+As conexões permitem que os administradores de produtos da Customer Journey Analytics estabeleçam conexões com diferentes fontes de dados do [!DNL &#x200B; Experience Platform], como eventos, pesquisas, perfis e conjuntos de dados de resumo. Essas conexões permitem a integração de dados de uma conexão com uma visualização de dados derivada. As conexões são a base do Customer Journey Analytics e são criadas a partir de [!DNL Experience Platform] conjuntos de dados de origem.
 
 >[!IMPORTANT]
 >

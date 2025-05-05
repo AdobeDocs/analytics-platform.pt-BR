@@ -65,7 +65,7 @@ Para usar o modelo:
 
 1. Selecione **[!UICONTROL Workspace]** no menu principal.
 1. Selecione uma Visualização de dados configurada para o Content Analytics.
-1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**s) para encontrar e selecionar o modelo **[!UICONTROL Análise de conteúdo]**.
+1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**&#x200B;s) para encontrar e selecionar o modelo **[!UICONTROL Análise de conteúdo]**.
 1. Selecione **[!UICONTROL Usar modelo]**.
 1. Na caixa de diálogo **[!UICONTROL Configurar seu modelo]**, selecione uma métrica na caixa de diálogo **[!UICONTROL Selecionar uma métrica de conversão]**. Por exemplo, **[!UICONTROL CTR do ativo]**.
 1. Selecione **[!UICONTROL Continuar]**.

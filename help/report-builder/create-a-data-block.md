@@ -69,7 +69,7 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
    - Os componentes do Dimension são adicionados à seção ![TableSelectRow](/help/assets/icons/TableSelectRow.svg) **[!UICONTROL Row]** ou à seção ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]** se você já tiver uma dimensão nas colunas.
    - Os componentes de data são adicionados à seção ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]**.
    - Componentes de segmento são adicionados à seção ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmentos]**.
-   - Os componentes de métricas são adicionados à seção ![Valores ]**de ](/help/assets/icons/Event.svg) de**[!UICONTROL  Eventos.
+   - Os componentes de métricas são adicionados à seção ![Valores ]&#x200B;**de (/help/assets/icons/Event.svg) de** Eventos.
 
 1. Organize os itens no painel Tabela para personalizar o layout do bloco de dados.
 

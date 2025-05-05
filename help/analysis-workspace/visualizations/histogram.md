@@ -25,7 +25,7 @@ ht-degree: 76%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização em Histograma no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Histograma](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) para a_![versão do Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)_**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização em Histograma no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Histograma](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/histogram) para a_![versão do Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)_&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 

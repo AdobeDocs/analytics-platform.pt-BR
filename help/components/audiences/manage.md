@@ -80,9 +80,9 @@ As ações a seguir são comuns no Gerenciador de projetos agendados. Você pode
 
 | Ícone | Ação | Descrição |
 |:---:|---|---|
-| ![Rótulos](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Marque os públicos-alvo selecionados. Na caixa de diálogo **[!UICONTROL Atualizar marcas: *nome do público-alvo *]**, selecione marcas no menu suspenso ou digite uma ou mais marcas novas. Selecione **[!UICONTROL Salvar ]** para salvar. |
+| ![Rótulos](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Marque os públicos-alvo selecionados. Na caixa de diálogo **[!UICONTROL Atualizar marcas: *nome do público-alvo *]**, selecione marcas no menu suspenso ou digite uma ou mais marcas novas. Selecione **[!UICONTROL Salvar &#x200B;]** para salvar. |
 | ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Exclua os públicos-alvo selecionados. |
-| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie o público-alvo selecionado. Use a caixa de diálogo **[!UICONTROL Renomear: *nome do público-alvo *]** para renomear o público-alvo e selecione **[!UICONTROL Salvar ]** para salvar. |
+| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie o público-alvo selecionado. Use a caixa de diálogo **[!UICONTROL Renomear: *nome do público-alvo *]** para renomear o público-alvo e selecione **[!UICONTROL Salvar &#x200B;]** para salvar. |
 
 As seguintes ações estão disponíveis na barra de ação azul ao selecionar um ou mais projetos agendados.
 

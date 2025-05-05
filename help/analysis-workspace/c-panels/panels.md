@@ -77,7 +77,7 @@ Para criar um painel:
 
 ## Visualização de dados
 
-Cada painel está associado a uma [visualização de dados](/help/data-views/data-views.md), identificada por ![Dados](/help/assets/icons/Data.svg) **[!UICONTROL *nome da visualização de dados *]**no menu suspenso na parte superior direita do painel.
+Cada painel está associado a uma [visualização de dados](/help/data-views/data-views.md), identificada por ![Dados](/help/assets/icons/Data.svg) **[!UICONTROL *nome da visualização de dados *]**&#x200B;no menu suspenso na parte superior direita do painel.
 
 Ao criar um projeto em branco no espaço de trabalho, a visualização de dados padrão do painel inicial é a visualização de dados na qual você trabalhou pela última vez no Customer Journey Analytics.
 
