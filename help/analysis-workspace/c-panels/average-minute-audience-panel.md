@@ -7,7 +7,7 @@ exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1678'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaaverageminuteaudience_panel"
 >title="Média de público-alvo por minuto de mídia"
->abstract="Mostra o desempenho de conteúdo de mídia específico ou o desempenho em um período personalizado. Especifique a dimensão de relatório e, opcionalmente, o conteúdo do segmento."
+>abstract="Mostra o desempenho de conteúdo de mídia específico ou ao longo de um período personalizado. Especifique a dimensão de relatório e, opcionalmente, o conteúdo do segmento."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '5247'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -1344,14 +1344,14 @@ Retorna Pi: 3,14159...
 
 
 
-## Variância das amostras
+## Variância da amostra
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
->title="Variância das amostras"
->abstract="Calcula uma estimativa da variação da amostra usando a fórmula (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). onde N é a contagem do contêiner de normalização. <br/>Isso é usado como parte dos cálculos de confiança de *qualquer tempo válido*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*."
+>title="Variância da amostra"
+>abstract="Calcula uma estimativa da variância da amostra usando a fórmula (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). onde N é a contagem do container de normalização. <br/>Isso é usado como parte dos cálculos de confiança *válidos a qualquer momento*. Geralmente esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*."
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VARIAÇÃO DE AMOSTRA(contêiner de normalização, métrica de sucesso)]**
 

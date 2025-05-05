@@ -7,7 +7,7 @@ exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 80%
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="Próximo item ou anterior"
->abstract="Analise quais são os locais mais comuns dos quais os visitantes vieram anteriormente ou vão para o próximo. Especifique a dimensão, o item de dimensão, a direção e o contêiner a ser usado para a visualização."
+>abstract="Analise quais são os lugares mais comuns de onde os visitantes vieram ou para onde irão em seguida. Especifique a dimensão, o item de dimensão, a direção e o container a ser usado para a visualização."
 
 
 
@@ -42,7 +42,7 @@ O painel **[!UICONTROL Próximo item ou anterior]** contém várias tabelas e vi
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_container"
 >title="Contêiner"
->abstract="Selecione o contêiner para determinar o escopo da pesquisa."
+>abstract="Selecione o container para determinar o escopo da pesquisa."
 
 Para usar um painel **[!UICONTROL Próximo item ou anterior]**:
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 86%
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 86%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="Tabela de coorte"
->abstract="Agrupe os usuários com base na conclusão de um evento e, em seguida, analise o envolvimento contínuo e a variação ao longo do tempo. Especifique configurações adicionais, como granularidade, tipo de análise de coorte e se deseja ou não usar o cálculo acumulado. É possível definir opções avançadas para criar uma tabela de latência ou um coorte de dimensão personalizado com base em uma dimensão selecionada."
+>abstract="Agrupe os usuários com base na conclusão de um evento e analise o engajamento contínuo e o churn ao longo do tempo. Especifique configurações adicionais, como granularidade, tipo de análise de coorte e se deseja ou não usar o cálculo acumulativo. É possível definir opções avançadas para criar uma tabela de latência ou uma coorte de dimensão personalizada com base em uma dimensão selecionada."
 
 <!-- markdownlint-enable MD034 -->
 

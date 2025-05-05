@@ -7,7 +7,7 @@ role: User
 source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
 workflow-type: tm+mt
 source-wordcount: '2179'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="Experimentação"
->abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é o melhor para gerar um resultado específico. Especifique o experimento, a variante de controle para comparação, a métrica de sucesso e a métrica de normalização. Como opção, defina limites superior e inferior para obter confiança."
+>abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é a melhor na geração de um resultado específico. Especifique o experimento, a variante de controle para comparação, a métrica de sucesso e a métrica de normalização. Como opção, defina os limites superior e inferior para obter confiança."
 
 <!-- markdownlint-enable MD034 -->
 

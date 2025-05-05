@@ -8,7 +8,7 @@ exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '1067'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 86%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-source-connector"
->title="Desative o conector de origem do Analytics para usar dados exclusivamente do Web SDK"
->abstract="O conector de origem do Analytics é usado para fornecer comparação de dados lado a lado, dados históricos e acesso a alguns recursos que não estão totalmente disponíveis no Customer Journey Analytics. Quando não precisar mais do Adobe Analytics para essas finalidades, você poderá desativar o conector de origem do Analytics."
+>title="Desabilite o conector de origem do Analytics para usar dados exclusivamente do SDK da web"
+>abstract="O conector de origem do Analytics é usado para fornecer comparações de dados lado a lado, dados históricos e acesso a alguns recursos que não estão totalmente disponíveis no Customer Journey Analytics. Quando não precisar mais do Adobe Analytics para essas finalidades, você poderá desabilitar o conector de origem do Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -73,7 +73,7 @@ Ao decidir se e quando sua organização deve desabilitar o Adobe Analytics, con
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-tags"
 >title="Desative a extensão do Analytics em tags"
->abstract="Com os dados do Web SDK totalmente funcionais, trabalhe com o administrador de tags para remover a extensão do Adobe Analytics da propriedade de tag. Antes de fazer isso, verifique se os usuários passaram do Adobe Analytics para o Customer Journey Analytics."
+>abstract="Com os dados do SDK da web totalmente funcionais, trabalhe com o admin de tags para remover a extensão do Adobe Analytics da propriedade de tag. Antes de fazer isso, certifique-se de que os usuários tenham migrado do Adobe Analytics para o Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -82,7 +82,7 @@ Ao decidir se e quando sua organização deve desabilitar o Adobe Analytics, con
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-disable-analytics-api"
 >title="Desabilitar a coleta de dados da API no Adobe Analytics"
->abstract="Com os dados do Web SDK totalmente funcionais, trabalhe com a equipe de engenharia aplicável para remover o código do Adobe Analytics do projeto. Antes de fazer isso, verifique se os usuários passaram do Adobe Analytics para o Customer Journey Analytics."
+>abstract="Com os dados do SDK da web totalmente funcionais, trabalhe com a equipe de engenharia aplicável para remover o código do Adobe Analytics do projeto. Antes de fazer isso, certifique-se de que os usuários tenham migrado do Adobe Analytics para o Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 

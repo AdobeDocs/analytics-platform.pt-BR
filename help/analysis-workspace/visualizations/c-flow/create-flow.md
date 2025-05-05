@@ -7,7 +7,7 @@ role: User
 source-git-commit: 933b4005724aa438c3daeb58191e940821b5bb5f
 workflow-type: tm+mt
 source-wordcount: '1709'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
 >title="Container de fluxo"
->abstract="Selecione o container a ser usado para exibir (números para) o caminho."
+>abstract="Selecione o container a ser usado para exibir (números para) a definição de caminho."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_include_repeats_disabled"

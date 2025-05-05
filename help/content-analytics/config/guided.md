@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2580'
-ht-degree: 39%
+ht-degree: 47%
 
 ---
 
@@ -66,7 +66,7 @@ O assistente de configuração guiado consiste em quatro seções ([Detalhes](#d
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Detalhes"
->abstract="Este guia define os requisitos necessários para configurar o Content Analytics. Forneça um nome para esta configuração"
+>abstract="Este guia define os requisitos necessários para configurar a Análise de conteúdo. Forneça um nome para esta configuração"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -97,7 +97,7 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
 >title="Nova visualização de dados"
->abstract="A seleção de uma nova visualização de dados resulta em uma atualização dessa visualização de dados para incluir métricas e dimensões do Content Analytics. Se necessário, a conexão associada também é atualizada para incluir conjuntos de dados da Análise de conteúdo. A conexão e a exibição de dados configuradas atualmente para a Análise de conteúdo não são modificadas."
+>abstract="Selecionar uma nova exibição de dados atualizará essa exibição para incluir métricas e dimensões de análise de conteúdo. Se necessário, a conexão associada também é atualizada para incluir conjuntos de dados da Análise de conteúdo. A conexão e a exibição de dados configuradas atualmente para a Análise de conteúdo não são modificadas."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_current_cleanup_labels_dialog"
@@ -107,7 +107,7 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_prev_cleanup_labels_dialog"
 >title="Limpar visualização de dados anterior"
->abstract="Você selecionou uma nova visualização de dados. A configuração do Content Analytics para a visualização de dados selecionada anteriormente é removida."
+>abstract="Você selecionou uma nova exibição de dados. A configuração do Content Analytics para a visualização de dados selecionada anteriormente é removida."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -238,12 +238,12 @@ Nesta seção, você configura como coletar os dados de análise de conteúdo.
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_button"
 >title="Coleção de dados"
->abstract="Defina qual propriedade de Tags você deseja usar ou crie uma nova. Defina também as páginas e os ativos que deseja incluir ou excluir usando expressões regulares."
+>abstract="Defina qual propriedade de Tags deseja usar ou crie uma nova. Defina também as páginas e os ativos que deseja incluir ou excluir usando expressões regulares."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tag_header"
 >title="Coleção de dados"
->abstract="**Forneça uma propriedade de Marcas**"
+>abstract="**Fornecer uma propriedade de Tags**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_boldheader"
@@ -268,17 +268,17 @@ Nesta seção, você configura como coletar os dados de análise de conteúdo.
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
 >title="Coleção de dados"
->abstract="Você pode editar as configurações de páginas na extensão Adobe Content Analytics na propriedade Tags associada à configuração atual."
+>abstract="É possível editar as configurações das páginas na extensão de análise de conteúdo da Adobe referente à propriedade de Tags associada à configuração atual."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_edit_button"
 >title="Coleção de dados"
->abstract="Você pode editar as configurações para ativos na extensão Adobe Content Analytics na propriedade Tags associada à configuração atual."
+>abstract="É possível editar as configurações de ativos na extensão de análise de conteúdo da Adobe referente à propriedade de Tags associada à configuração atual."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_tags_disabled_description "
 >title="Propriedade de tags desabilitada"
->abstract="A extensão do Content Analytics já está ativa."
+>abstract="A extensão de análise de conteúdo já está ativa."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -342,7 +342,7 @@ Depois de fornecer todos os detalhes necessários, um resumo fornecerá detalhes
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Confirmação de implementação"
->abstract="Se você selecionar **[!UICONTROL Implementar]**, configurará a Análise de conteúdo com base na entrada fornecida neste fluxo de trabalho. Várias configurações são escolhidas por padrão com base no que geralmente é útil para o Content Analytics, mas você (como controlador de dados) deve revisar as configurações de cada artefato para confirmar se as configurações são implementadas de acordo com sua política de privacidade, os direitos e obrigações contratuais e os requisitos de consentimento conforme a legislação aplicável.<br/><br/>Observe que nenhum dado será coletado até que a biblioteca de tags associada a esta configuração seja publicada manualmente.<br/><br/>Para derivar atributos de imagens e texto, o Adobe recupera os atributos usando:<ol><li>O URL, capturado no momento da visita do site do usuário, de acordo com as configurações de coleta de dados definidas e</li><li>O URL no qual a imagem está hospedada.</li></ol>Você não deve marcar imagens que estão hospedadas em sites de terceiros."
+>abstract="Se você selecionar **[!UICONTROL Implementar]**, configurará a Análise de conteúdo com base na entrada fornecida neste fluxo de trabalho. Há várias configurações definidas por padrão com base no que geralmente é útil para a análise de conteúdo, mas você (como controlador(a) de dados) deve revisar as configurações de cada artefato para confirmar se estão implementadas de acordo com a política de privacidade, os direitos e obrigações contratuais e os requisitos de consentimento da legislação aplicável.<br/><br/>Observe que nenhum dado será coletado até que a biblioteca de tags associada a esta configuração seja publicada manualmente.<br/><br/>Para derivar atributos de imagens e texto, a Adobe recupera os atributos usando:<ol><li>O URL capturado no momento da visita do usuário ao site, de acordo com as configurações de coleta de dados que você configurou e</li><li>O URL no qual a imagem está hospedada.</li></ol>Você não deve marcar imagens que estão hospedadas em sites de terceiros."
 
 <!-- markdownlint-enable MD034 -->
 

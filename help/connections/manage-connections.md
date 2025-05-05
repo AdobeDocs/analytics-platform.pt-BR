@@ -9,7 +9,7 @@ role: Admin
 source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
 workflow-type: tm+mt
 source-wordcount: '4135'
-ht-degree: 63%
+ht-degree: 65%
 
 ---
 
@@ -374,17 +374,17 @@ Quando uma linha de conjunto de dados é selecionada na tabela de conjuntos de d
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="Linhas principais relatáveis"
->abstract="As linhas reportáveis principais são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="As linhas relatáveis principais são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês do intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="Linhas históricas relatáveis"
->abstract="As linhas reportáveis históricas são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="As linhas relatáveis históricas são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês do intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
 >title="Linhas relatáveis cumulativas"
->abstract="As linhas reportáveis cumulativas são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="As linhas relatáveis cumulativas são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês do intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
 
 <!-- markdownlint-enable MD034 -->
 

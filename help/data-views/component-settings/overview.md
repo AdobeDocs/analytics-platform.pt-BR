@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Configurações de componente"
->abstract="Visualize e configure o nome, a descrição e outras configurações relacionadas a um componente. Marque esta caixa para ocultar este componente de usuários não administradores nos relatórios. Os administradores ainda podem acessar o componente selecionando **[!UICONTROL Mostrar todos os componentes]** em um projeto do Workspace."
+>abstract="Visualize e defina o nome, a descrição e outras configurações relacionadas a um componente. Marque esta caixa para ocultar este componente de usuários não admins nos relatórios. Admins ainda o poderão acessar, clicando em **[!UICONTROL Mostrar todos os componentes]** em um projeto do Workspace."
 
 <!-- markdownlint-enable MD034 -->
 

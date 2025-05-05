@@ -8,7 +8,7 @@ exl-id: 5086ac6e-5bee-4f0f-b7e5-a3d9bd8a1332
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 31%
+ht-degree: 90%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 31%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Usar o objeto de personalização no Adobe Journey Optimizer"
->abstract="Ao aproveitar as tecnologias de ponta em aprendizagem de máquina e aprendizagem profunda supervisionadas, a otimização personalizada permite que um usuário empresarial (profissional de marketing) defina objetivos de negócios e utilize os dados de clientes para treinar modelos orientados a negócios a fim de fornecer ofertas personalizadas e maximizar KPIs."
+>abstract="Ao aproveitar as tecnologias de última geração de aprendizado de máquina supervisionado e aprendizado profundo, a otimização personalizada permite que um usuário empresarial (profissional de marketing) defina objetivos de negócios e utiliza os dados de clientes para treinar modelos orientados a negócios a fim de fornecer ofertas personalizadas e maximizar KPIs."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-Ao aproveitar as tecnologias de ponta em aprendizagem de máquina e aprendizagem profunda supervisionadas, a otimização personalizada permite que um usuário empresarial (profissional de marketing) defina objetivos de negócios e utilize os dados de clientes para treinar modelos orientados a negócios a fim de fornecer ofertas personalizadas e maximizar KPIs.
+Ao aproveitar as tecnologias de última geração de aprendizado de máquina supervisionado e aprendizado profundo, a otimização personalizada permite que um usuário empresarial (profissional de marketing) defina objetivos de negócios e utiliza os dados de clientes para treinar modelos orientados a negócios a fim de fornecer ofertas personalizadas e maximizar KPIs.
 
 1. Siga as informações em [Modelo de otimização personalizado](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) no Guia do Journey Optimizer.
 

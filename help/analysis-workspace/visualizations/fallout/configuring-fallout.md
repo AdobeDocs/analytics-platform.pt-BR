@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -60,7 +60,7 @@ Não há limite para o número de etapas que é possível adicionar ou o número
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_container"
 >title="Container de fallout"
->abstract="Selecione um container para analisar a definição de caminho. Essa seleção ajuda você a entender o engajamento e restringe a análise ao contêiner selecionado."
+>abstract="Selecione um container para analisar a definição de caminho. Essa seleção ajuda a entender o engajamento e restringe a análise ao container selecionado."
 
 Como parte da visualização, há configurações específicas disponíveis.
 

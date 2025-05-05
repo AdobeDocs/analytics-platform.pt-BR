@@ -8,7 +8,7 @@ exl-id: b807099d-a61d-48f9-9fec-94ecc6b76213
 source-git-commit: 380ed5c9ee0c21ea9855a41728afec040637ce65
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 6%
+ht-degree: 20%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-media-edge"
 >title="Configurar e implementar o Media Edge"
->abstract="Se você planeja usar a Coleção de mídia de transmissão com o Customer Journey Analytics, é necessário fazer seleções específicas em determinadas etapas do processo de atualização. Por exemplo, você precisa adicionar o grupo de campos Detalhes de interações do MediaAnalytics ao esquema, ativar o Media Analytics na sequência de dados e muito mais."
+>abstract="Se você planeja usar a Coleção de mídia de streaming com o Customer Journey Analytics, é necessário selecionar opções específicas em determinadas etapas do processo de atualização. Por exemplo, é necessário adicionar o grupo de campos Detalhes de interações do MediaAnalytics ao esquema, habilitar o Media Analytics na sequência de dados, entre outras coisas."
 
 <!-- markdownlint-enable MD034 -->
 

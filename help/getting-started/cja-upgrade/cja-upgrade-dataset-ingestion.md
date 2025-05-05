@@ -8,7 +8,7 @@ exl-id: 35fcd213-d831-4da0-b946-f6f0d8561f60
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 50%
+ht-degree: 69%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 50%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataset-validate"
 >title="Validar dados no conjunto de dados"
->abstract="Agora que você configurou a implementação, é possível usar o gerenciador de atividades do conjunto de dados para ver lotes assimilados e com falha. Se a maior parte dos lotes exibidos tiverem sido assimilados, essa etapa está concluída. Se você vir principalmente lotes com falha ou sem lotes, verifique sua implementação para garantir que esteja enviando dados corretamente para a Adobe."
+>abstract="Agora que configurou a implementação, é possível usar o gerenciador de atividades do conjunto de dados para ver lotes assimilados e com falha. Se a maior parte dos lotes exibidos tiverem sido assimilados, essa etapa está concluída. Se você notar mais lotes com falha ou nenhum lote, verifique a implementação para garantir que ela esteja enviando os dados corretamente para a Adobe."
 
 <!-- markdownlint-enable MD034 -->
 
