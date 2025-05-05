@@ -39,4 +39,4 @@ De acordo com a CCPA, o Privacy Service dará suporte a solicitações de recusa
 
 >[!MORELIKETHIS]
 >
->* [Blog: Como manter uma governança eficaz no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)
+>* [Blog: Como manter uma governança eficaz no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=pt)

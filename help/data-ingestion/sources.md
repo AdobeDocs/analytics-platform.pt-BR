@@ -176,11 +176,11 @@ Dependendo de onde você recebe os dados de fidelidade, é possível escolher o 
 
 Você pode assimilar dados de várias fontes. Veja a seguir apenas algumas das muitas fontes disponíveis:
 
-- Aplicativos do Adobe (os conectores de origem incluem [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) e muito mais)
+- Aplicativos do Adobe (os conectores de origem incluem [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) e muito mais)
 
-- Armazenamento na nuvem (os conectores de origem incluem [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) e muito mais)
+- Armazenamento na nuvem (os conectores de origem incluem [Amazon S3](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/cloud-storage/blob) e muito mais)
 
-- Bancos de dados (os conectores de origem incluem [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) e muito mais)
+- Bancos de dados (os conectores de origem incluem [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/sql-server) e muito mais)
 
 Para configurar um conector de origem:
 
@@ -214,7 +214,7 @@ Consulte [Assimilar e usar dados do Adobe Analytics tradicional](./analytics.md)
 
 Consulte [Assimilar e usar dados de transmissão](./streaming.md) para obter informações sobre como usar o conector de origem da API HTTP.
 
-Consulte [Visão geral dos conectores de origem](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) para obter uma visão geral dos conectores de origem, incluindo links para mais informações sobre cada conector.
+Consulte [Visão geral dos conectores de origem](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=pt-BR#terms-and-conditions) para obter uma visão geral dos conectores de origem, incluindo links para mais informações sobre cada conector.
 
 
 ## Configurar uma conexão

@@ -68,7 +68,7 @@ Os seguintes itens são mostrados:
    * CREATE: uma ação “criar” foi executada.
    * DELETE: uma ação “excluir” foi executada.
    * EDIT: uma ação “editar” foi executada.
-   * EMBARGO: Quando você restringe uma solicitação no [Gerente de Atividades de Relatórios](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), a ação é registrada no Log de Auditoria em EMBARGO.
+   * EMBARGO: Quando você restringe uma solicitação no [Gerente de Atividades de Relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), a ação é registrada no Log de Auditoria em EMBARGO.
    * EXPORT: uma ação “exportar” foi executada.
    * ORG_CHANGE: uma ação de alteração da organização foi executada.
    * REFRESH: uma ação “atualizar” foi executada.

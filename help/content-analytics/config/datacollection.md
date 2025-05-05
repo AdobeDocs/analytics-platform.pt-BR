@@ -36,7 +36,7 @@ O Content Analytics exige que o Experience Platform Edge Network Web SDK colete 
 A biblioteca do Content Analytics coleta dados quando:
 
 * O Content Analytics está incluído na biblioteca de tags carregada na página.
-* A URL da página está configurada na [extensão do Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, parte da biblioteca de marcas incluída.
+* A URL da página está configurada na [extensão do Content Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, parte da biblioteca de marcas incluída.
 
 
 ## Evento do Content Analytics

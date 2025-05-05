@@ -30,9 +30,9 @@ Dados precisos do produto são a base de uma análise eficaz do produto. A assim
 Os seguintes recursos da Adobe Experience Platform e da Customer Journey Analytics permitem assimilar e gerenciar os dados do produto em escala:
 
 * Adobe Experience Platform
-   * [Conjuntos de dados&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
+   * [Conjuntos de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview)
    * [Preparação de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home)
-   * [Distiller de Dados&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
+   * [Distiller de Dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [Conexões&#x200B;](/help/connections/overview.md)
    * [Visualizações de dados](/help/data-views/data-views.md), incluindo [campos derivados&#x200B;](/help/data-views/derived-fields/derived-fields.md)
@@ -92,8 +92,8 @@ Os seguintes recursos no Experience Cloud permitem que você atue com eficiênci
 * [Criar e publicar públicos-alvo](/help/components/audiences/publish.md)&#x200B; para ativação do Customer Journey Analytics
 * Ativar públicos-alvo por meio de produtos da Experience Cloud:
    * [Execute experimentos](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) no AJO e no Adobe Target e meça o impacto das variações no Customer Journey Analytics usando o [Painel de experimentação](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Fornecer compromissos no aplicativo](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aos usuários no AJO
-* [Ativar públicos-alvo](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do Adobe&#x200B;
+   * [Fornecer compromissos no aplicativo](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aos usuários no AJO
+* [Ativar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do Adobe&#x200B;
 
 ## Compartilhar insights para a organização&#x200B;
 

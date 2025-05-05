@@ -22,7 +22,7 @@ Ao vincular repetições de sessão de métrica quântica aos dados do CJA, os c
 
 Essas etapas pressupõem que você use tags na Coleção de dados da Adobe Experience Platform. Você pode adaptar esses métodos de coleta de dados em direção a uma implementação manual do Web SDK se a sua organização não usar tags.
 
-Consulte a documentação da [Extensão de tag de métrica Quantum](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) para obter mais informações.
+Consulte a documentação da [Extensão de tag de métrica Quantum](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/analytics/quantum-metric) para obter mais informações.
 
 ## Etapa 1: Criar um campo de esquema para acomodar a ID da sessão de Métrica quântica
 

@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Um exemplo de projeto B2B
 
-Este artigo ilustra um caso de uso em que você deseja relatar corretamente no Customer Journey Analytics sobre dados pessoais no contexto de uma configuração B2B típica. Essa configuração faz parte da [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  O caso de uso explica como definir, configurar e relatar dados B2B baseados em nível de perfil (pessoa) no Customer Journey Analytics.
+Este artigo ilustra um caso de uso em que você deseja relatar corretamente no Customer Journey Analytics sobre dados pessoais no contexto de uma configuração B2B típica. Essa configuração faz parte da [Real-Time CDP B2B edition](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  O caso de uso explica como definir, configurar e relatar dados B2B baseados em nível de perfil (pessoa) no Customer Journey Analytics.
 
 ## Conexão
 
@@ -41,7 +41,7 @@ Defina sua conexão para incluir todos os conjuntos de dados B2B relevantes do E
 -->
 
 
-A relação entre os esquemas de pesquisa B2B, o esquema de perfil e o esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas no [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) e [Definir uma relação muitos para um entre dois esquemas no Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
+A relação entre os esquemas de pesquisa B2B, o esquema de perfil e o esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas no [Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/schemas/b2b) e [Definir uma relação muitos para um entre dois esquemas no Real-time Customer Data Platform B2B edition](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Para garantir uma configuração adequada de uma conexão que suporte pesquisas baseadas em pessoas de seus dados B2B, use a seguinte ilustração para obter uma visão geral e siga estas etapas:

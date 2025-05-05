@@ -66,7 +66,7 @@ Todas as dimensões e métricas compartilhadas são exibidas abaixo dos quatro c
    * **[!UICONTROL Descrição]**: a [descrição](/help/data-views/component-settings/overview.md) do componente.
    * **[!UICONTROL Rótulos de contexto]**: os [rótulos de contexto](/help/data-views/component-settings/overview.md) do componente.
    * **[!UICONTROL Incluir/Excluir valores]**: lista o número de regras conforme especificado em [Incluir/excluir valores](/help/data-views/component-settings/include-exclude-values.md).
-   * **[!UICONTROL Rótulos de uso de dados]**: os [rótulos de uso de dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) para o campo de esquema.
+   * **[!UICONTROL Rótulos de uso de dados]**: os [rótulos de uso de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview) para o campo de esquema.
    * **[!UICONTROL Obsoleto]**: indica se o sinalizador obsoleto está definido.
    * **[!UICONTROL Formato]**: o formato em que os valores aparecem. Os booleanos normalmente aparecem como `True | False`, as métricas normalmente aparecem como `Decimal`, etc.
    * **[!UICONTROL Desduplicação de métrica]**: as configurações de [Desduplicação de métrica](/help/data-views/component-settings/metric-deduplication.md) do componente.

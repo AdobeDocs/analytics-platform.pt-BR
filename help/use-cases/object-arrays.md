@@ -270,5 +270,5 @@ A aplicação dessa métrica calculada exibe os resultados desejados:
 
 ## Limitações
 
-As limitações se aplicam aos arrays nos dados usados pelo Customer Journey Analytics e modelados como parte de um esquema no Experience Platform. Consulte [Limites do modelo de dados](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) e [Limites de tamanho de dados](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) nas [Medidas de proteção padrão para dados e segmentação do Perfil do cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails).
+As limitações se aplicam aos arrays nos dados usados pelo Customer Journey Analytics e modelados como parte de um esquema no Experience Platform. Consulte [Limites do modelo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails#data-model-limits) e [Limites de tamanho de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails#data-size-limits) nas [Medidas de proteção padrão para dados e segmentação do Perfil do cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails).
 

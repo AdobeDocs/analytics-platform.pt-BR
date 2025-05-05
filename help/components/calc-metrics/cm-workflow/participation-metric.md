@@ -16,7 +16,7 @@ As Métricas de participação são usadas para quantificar como os valores indi
 
 >[!NOTE]
 >
->Os administradores podem criar métricas com modelos de atribuição não padrão, como Participação, como parte de uma [visualização de dados](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views). Consulte [Configurações do componente de atribuição](../../../data-views/component-settings/attribution.md) para obter mais detalhes.
+>Os administradores podem criar métricas com modelos de atribuição não padrão, como Participação, como parte de uma [visualização de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/data-views). Consulte [Configurações do componente de atribuição](../../../data-views/component-settings/attribution.md) para obter mais detalhes.
 
 As etapas abaixo mostram como qualquer usuário com [Permissão de criação de métrica calculada](/help/technotes//access-control.md#user-level-access) pode criar uma métrica de participação.
 

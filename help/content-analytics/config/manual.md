@@ -22,17 +22,17 @@ As opções de configuração disponíveis são as seguintes:
 
 Para iniciar a coleta de dados de uma configuração Content Analytics implementada:
 
-1. Siga o [fluxo de publicação](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. A biblioteca da propriedade Tags, que contém a configuração do Content Analytics, foi publicada com sucesso.
+1. Siga o [fluxo de publicação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview){target="_blank"}. A biblioteca da propriedade Tags, que contém a configuração do Content Analytics, foi publicada com sucesso.
 
-1. [Instalar](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) o código inserido no elemento `<head>` das páginas em seu ambiente de desenvolvimento, preparo ou publicação, sujeito ao Content Analytics.
+1. [Instalar](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/environments/environments#installation) o código inserido no elemento `<head>` das páginas em seu ambiente de desenvolvimento, preparo ou publicação, sujeito ao Content Analytics.
 
 
 ## Interromper coleta de dados
 
 Para interromper a coleta de dados de uma configuração Content Analytics implementada:
 
-1. Remova o [código inserido](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) no elemento `<head>` das páginas em seu ambiente de desenvolvimento, preparo ou produção, sujeito ao Content Analytics.
-1. [Exclua](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) a propriedade de marcas associada da sua configuração do Content Analytics.
+1. Remova o [código inserido](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/environments/environments) no elemento `<head>` das páginas em seu ambiente de desenvolvimento, preparo ou produção, sujeito ao Content Analytics.
+1. [Exclua](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview) a propriedade de marcas associada da sua configuração do Content Analytics.
 
 
 
@@ -40,32 +40,32 @@ Para interromper a coleta de dados de uma configuração Content Analytics imple
 
 Você pode fazer pequenas alterações em uma configuração implementada usando o [assistente de configuração guiado](guided.md). Por exemplo, altere a visualização de dados ou ative ou desative as experiências.
 
-Você usa a [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) na propriedade Tags associada à sua configuração do Content Analytics para fazer alterações nos seguintes artefatos:
+Você usa a [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview) na propriedade Tags associada à sua configuração do Content Analytics para fazer alterações nos seguintes artefatos:
 
-* [Sandbox e sequência de dados](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
+* [Sandbox e sequência de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
 
   >[!CAUTION]
   >
   >Verifique se a sandbox e a sequência de dados configuradas na extensão do Adobe Content Analytics já estão configuradas para o Content Analytics usando a [configuração guiada](guided.md) em um estágio anterior. Essa configuração garante que todos os artefatos necessários estejam disponíveis.<br/><br/>Verifique também se as atualizações da sandbox ou das sequências de dados não interferem com outra configuração do Content Analytics configurada para usar a mesma sandbox ou sequências de dados.
   >
 
-* [Captura e definição de experiência](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+* [Captura e definição de experiência](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
 
   Você pode ativar ou desativar experiências e editar as combinações de expressão regular e parâmetros de consulta para determinar como o conteúdo é renderizado em seu site.
 
-* [Segmentação de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Segmentação de eventos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   É possível editar expressões regulares para modificar como segmentar páginas e ativos.
 
 
-Depois de fazer alterações na extensão do Adobe Content Analytics, use o [fluxo de publicação](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} para iniciar a coleta de dados com base nas alterações feitas.
+Depois de fazer alterações na extensão do Adobe Content Analytics, use o [fluxo de publicação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview){target="_blank"} para iniciar a coleta de dados com base nas alterações feitas.
 
 
 
 >[!MORELIKETHIS]
 >
 >[Configuração guiada](guided.md)
->[Visão geral da publicação de Marcas de coleção de dados](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
+>[Visão geral da publicação de Marcas de coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview)
 >
 
 

@@ -440,4 +440,4 @@ No entanto, se você vincular o `product_finding_method` à métrica Adições a
 
 >[!MORELIKETHIS]
 >
->[Tutorial de Dimension de Ligação em Visualizações de Dados](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html).
+>[Tutorial de Dimension de Ligação em Visualizações de Dados](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=pt-BR).
