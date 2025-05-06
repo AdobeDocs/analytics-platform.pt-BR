@@ -38,7 +38,7 @@ Esse caso de uso requer um campo de esquema dedicado para enviar dados ao. Você
 
 ## Etapa 2: Capturar eventos de atrito usando a extensão de tag da Métrica Quantum
 
-Consulte [Extensão de métrica quântica](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) no guia de destinos do Adobe Experience Platform para obter instruções sobre como configurar suas tags para incluir dados de métrica quântica. O uso dessa extensão passa mais linhas para um conjunto de dados existente.
+Consulte [Extensão de métrica quântica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/analytics/quantum-metric) no guia de destinos do Adobe Experience Platform para obter instruções sobre como configurar suas tags para incluir dados de métrica quântica. O uso dessa extensão passa mais linhas para um conjunto de dados existente.
 
 Use tags na Coleção de dados da Adobe Experience Platform para definir manualmente o nome do evento de atrito, para que ele possa ser incluído no objeto XDM e analisado. Uma maneira de fazer isso é usando o código personalizado da regra:
 
