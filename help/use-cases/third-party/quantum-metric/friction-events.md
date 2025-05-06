@@ -4,12 +4,10 @@ description: Adicionar eventos de atrito coletados pela Métrica quântica aos d
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 11dc62cda2ceb7afabd3abd0944420601c8fa235
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '667'
 ht-degree: 1%
 
 ---
@@ -40,7 +38,7 @@ Esse caso de uso requer um campo de esquema dedicado para enviar dados ao. Você
 
 ## Etapa 2: Capturar eventos de atrito usando a extensão de tag da Métrica Quantum
 
-Consulte [Extensão de métrica quântica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/analytics/quantum-metric) no guia de destinos do Adobe Experience Platform para obter instruções sobre como configurar suas tags para incluir dados de métrica quântica. O uso dessa extensão passa mais linhas para um conjunto de dados existente.
+Consulte [Extensão de métrica quântica](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) no guia de destinos do Adobe Experience Platform para obter instruções sobre como configurar suas tags para incluir dados de métrica quântica. O uso dessa extensão passa mais linhas para um conjunto de dados existente.
 
 Use tags na Coleção de dados da Adobe Experience Platform para definir manualmente o nome do evento de atrito, para que ele possa ser incluído no objeto XDM e analisado. Uma maneira de fazer isso é usando o código personalizado da regra:
 
@@ -74,6 +72,8 @@ Com os dados do evento de atrito de Métrica quântica coletados junto com o res
 1. Selecione um projeto existente ou crie um projeto.
 1. Crie uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
 1. Arraste as dimensões e métricas desejadas para a tela do Workspace para análise.
+
+![Gráfico de atrito](assets/friction-graph.png)
 
 As possíveis ideias de análise incluem:
 

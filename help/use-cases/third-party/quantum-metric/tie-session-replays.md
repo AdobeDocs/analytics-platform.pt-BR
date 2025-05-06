@@ -4,12 +4,10 @@ description: A sessão de métrica quântica de link é repetida com dados do CJ
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '814'
 ht-degree: 2%
 
 ---
@@ -22,7 +20,7 @@ Ao vincular repetições de sessão de métrica quântica aos dados do CJA, os c
 
 Essas etapas pressupõem que você use tags na Coleção de dados da Adobe Experience Platform. Você pode adaptar esses métodos de coleta de dados em direção a uma implementação manual do Web SDK se a sua organização não usar tags.
 
-Consulte a documentação da [Extensão de tag de métrica Quantum](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/analytics/quantum-metric) para obter mais informações.
+Consulte a documentação da [Extensão de tag de métrica Quantum](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) para obter mais informações.
 
 ## Etapa 1: Criar um campo de esquema para acomodar a ID da sessão de Métrica quântica
 
@@ -109,6 +107,8 @@ Crie uma tabela de forma livre no Workspace e a configure para que os valores de
 1. Clique em **[!UICONTROL Criar]**.
 
 Cada ID de sessão agora é um link clicável. Consulte [Criar hiperlinks em uma tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md) para obter mais informações sobre como adicionar hiperlinks a itens de dimensão do Analysis Workspace.
+
+![Repetição de sessão](assets/session-replay.png)
 
 ## Etapa 5: Exibir sessões do Customer Journey Analytics
 
