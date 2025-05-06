@@ -1,20 +1,20 @@
 ---
 title: Visão geral das dimensões
-description: Saiba quais são as dimensões e como elas são usadas no Customer Journey Analytics
+description: Saiba o que são dimensões e como são usadas no Customer Journey Analytics
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: d37734ae415722fc609715868c37a36f2becdbf6
+source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '263'
+ht-degree: 36%
 
 ---
 
 # Visão geral das dimensões
 
-Dimension são um tipo de componente em Customer Journey Analytics usado para analisar dados. Por exemplo, você usa dimensões ao criar relatórios no [Analysis Workspace](/help/analysis-workspace/home.md) ou no [Report Builder](/help/report-builder/report-buider-overview.md).
+Dimensões são um tipo de componente no Customer Journey Analytics usado para analisar dados. Por exemplo, você usa dimensões ao criar relatórios no [Analysis Workspace](/help/analysis-workspace/home.md) ou no [Report Builder](/help/report-builder/rb-overview.md).
 
-as dimensões Customer Journey Analytics são do tipo ilimitado; os valores podem ser numéricos, texto, objetos, listas ou misturas de todos.
+As dimensões do Customer Journey Analytics são do tipo ilimitado; os valores podem ser numéricos, texto, objetos, listas ou misturas de todos.
 
 Um relatório básico no Customer Journey Analytics mostra linhas de dimensões (geralmente valores de sequência) em relação a uma coluna de métricas (geralmente valores numéricos).
 
@@ -60,4 +60,4 @@ Ao criar uma visualização de dados, os seguintes componentes baseados em tempo
 
 ## Adicionar descrições de dimensão
 
-Os administradores de Customer Journey Analytics podem adicionar descrições de dimensões e outros componentes na visualização de dados ou diretamente no Analysis Workspace. Para obter informações sobre como adicionar descrições a dimensões, consulte [Adicionar descrições de componentes](/help/components/add-component-descriptions.md).
+Os administradores do Customer Journey Analytics podem adicionar descrições de dimensões e outros componentes na visualização de dados ou diretamente no Analysis Workspace. Para obter informações sobre como adicionar descrições a dimensões, consulte [Adicionar descrições de componentes](/help/components/add-component-descriptions.md).

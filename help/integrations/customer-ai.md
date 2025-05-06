@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
-source-git-commit: c26829d7a53e9ba8d5faf731a8a1dca2e741bf21
-workflow-type: ht
-source-wordcount: '959'
-ht-degree: 100%
+source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ Veja um exemplo de um esquema XDM que o Customer Journey Analytics traria como p
 
 No Customer Journey Analytics, agora você pode prosseguir e [criar visualizações de dados](/help/data-views/create-dataview.md) com as dimensões (como pontuação, data de pontuação, probabilidade etc.) e métricas que foram trazidas como parte da conexão estabelecida.
 
-![Criar janela de visualização de dados](assets/create-dataview.png)
+![Criar janela de exibição de dados](assets/create-dataview.png)
 
 ## Etapa 4: relatório das pontuações de CAI no espaço de trabalho
 
