@@ -4,9 +4,9 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e37ac6f67da441e2e9491307dc44e31506383a0d
+source-git-commit: d618300480cdc3b4454e5c91e5e5adacc01d0c77
 workflow-type: tm+mt
-source-wordcount: '19815'
+source-wordcount: '19827'
 ht-degree: 95%
 
 ---
@@ -128,27 +128,27 @@ Para acessar todos os modelos pré-criados disponíveis:
 
    As seções a seguir correspondem às categorias disponíveis e fornecem informações sobre cada modelo.
 
-   * &lbrack;[](#most-popular)
+   * **[[!UICONTROL Mais popular]](#most-popular)**
 
-   * &lbrack;[](#engagement)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Participação]](#engagement)**
 
-   * &lbrack;[](#web-conversion)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Conversão]](#web-conversion)**
 
-   * &lbrack;[](#web-audience)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Público]](#web-audience)**
 
-   * &lbrack;[](#web-acquisition)
+   * **[[!UICONTROL Web]** > **[!UICONTROL Aquisição]](#web-acquisition)**
 
-   * &lbrack;[](#mobile-mobile-app)
+   * **[[!UICONTROL Aplicativo móvel]** > **[!UICONTROL Aplicativo móvel]](#mobile-mobile-app)**
 
-   * &lbrack;[](#mobile-mobile-device-information)
+   * **[[!UICONTROL Dispositivo móvel]** > **[!UICONTROL Informações do dispositivo móvel]](#mobile-mobile-device-information)**
 
-   * &lbrack;[](#time-parting)
+   * **[[!UICONTROL Hora do visitante]](#time-parting)**
 
-   * &lbrack;[](#cross-channel)
+   * **[[!UICONTROL Entre Canais]](#cross-channel)**
 
-   * &lbrack;[](#other-channels)
+   * **[[!UICONTROL Outros canais]](#other-channels)**
 
-   * &lbrack;[](#ajo)
+   * **[[!UICONTROL AJO]](#ajo)**
 
 ### Mais popular {#most-popular}
 
