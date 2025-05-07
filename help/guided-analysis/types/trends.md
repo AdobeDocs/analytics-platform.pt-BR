@@ -5,10 +5,10 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: e42f04eaa06a761803e76b64a5a16674fb4af57d
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 A análise de ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Tendências]** fornece informações valiosas sobre o desempenho do seu produto ou o comportamento dos seus usuários ao longo do tempo. O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os eventos desejados.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423444/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
 
 ## Casos de uso
 
@@ -47,7 +47,7 @@ O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Visualização]**: alternar entre esta análise e a [Frequência](frequency.md).
 * **[!UICONTROL Eventos e métricas]**: os eventos ou métricas que você deseja medir. Cada seleção é representada como uma série de gráficos e uma linha de tabela. Eventos e métricas não podem ser combinados na consulta; uma vez feita a primeira seleção, as seleções de consulta restantes devem ser do mesmo tipo. É possível escolher até cinco seleções.
-* **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. As opções incluem eventos, sessões, usuários, porcentagem de usuários, eventos por sessão e eventos por usuário. As opções de “Contado como” aplicam-se somente a consultas de eventos e são removidas para consultas de métricas.
+* **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. <ul><li>**[!UICONTROL As opções]** incluem [!UICONTROL Usuários], [!UICONTROL Eventos], [!UICONTROL Sessões], [!UICONTROL Porcentagem de usuários], [!UICONTROL Eventos por sessão] e [!UICONTROL Eventos por usuário].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} **[!UICONTROL Opções B2B]** adicionais estão disponíveis para o Customer Journey Analytics B2B edition: [!UICONTROL Contas globais], [!UICONTROL Contas], [!UICONTROL Grupos de compras], [!UICONTROL Oportunidades], [!UICONTROL Porcentagem de contas globais], [!UICONTROL Porcentagem de contas], [!UICONTROL Porcentagem de grupos de compras], [!UICONTROL Porcentagem de oportunidades], [!UICONTROL Eventos globais conta], [!UICONTROL Eventos por conta], [!UICONTROL Eventos por grupo de compras] e [!UICONTROL Eventos por oportunidade].</li></ul>As opções de “Contado como” aplicam-se somente a consultas de eventos e são removidas para consultas de métricas.
 * **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. Cada segmento selecionado dobra o número de séries de gráficos e linhas de tabela. É possível incluir até cinco segmentos.
 * **[!UICONTROL Propriedade de detalhamento]**: divide a série de gráficos e as linhas de tabela pelos valores da propriedade selecionada. Só é possível usar uma propriedade de detalhamento. Os 20 valores principais são exibidos na tabela e até 10 valores podem ser exibidos no gráfico. Você pode ocultar ou expor uma linha no gráfico, alternando o ícone ![Mostrar ícone de ocultar](../assets/hide-in-chart.png).
 
