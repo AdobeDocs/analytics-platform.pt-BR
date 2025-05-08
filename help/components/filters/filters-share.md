@@ -4,7 +4,7 @@ title: Compartilhar segmentos
 feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: cc1e5737b481a231e139562ca4a79fbdfd61d8a3
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 11%
@@ -38,6 +38,6 @@ Abaixo estão algumas práticas recomendadas para compartilhar segmentos e com q
 
 * Como administrador, compartilhe um segmento somente com Todos se você estiver convencido de que qualquer pessoa na sua organização está confortável em usar os segmentos. Você também pode considerar favorecer esses segmentos. Consulte [Marcar um segmento como favorito](filters-favorite.md) para obter mais informações.
 
-* Como administrador, compartilhe um segmento com um grupo específico se esse segmento fornecer valor de negócios para a parte dos usuários desse grupo
+* Como administrador, compartilhe um segmento com um grupo específico se esse segmento fornecer valor de negócios para a parte dos usuários desse grupo.
 
 * Como administrador ou usuário individual, compartilhe um segmento com um ou mais indivíduos para validar um segmento. Se os segmentos não forem úteis, você poderá excluí-los.
