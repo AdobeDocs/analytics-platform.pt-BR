@@ -4,7 +4,7 @@ title: Criar projetos
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
+source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 95%
@@ -12,15 +12,6 @@ ht-degree: 95%
 ---
 
 # Criar projetos {#create-projects}
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_project_countrepeatinstances"
->title="Contar instâncias repetidas"
->abstract="Especifica se as instâncias repetidas devem ser contadas nos relatórios.<br/><br/>Observação: essa configuração não se aplica às visualizações de fluxo ou fallout."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Os [projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md) do Analysis Workspace permitem que você crie e visualize análises vitais para os negócios.  Essas análises podem ser compartilhadas com as partes interessadas dentro ou fora da organização.
@@ -56,23 +47,21 @@ Agora que você criou um projeto do espaço de trabalho em branco, certifique-se
 
 ## Informações e configurações do projeto {#project-info-settings}
 
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="workspace_project_countrepeatinstances"
+>title="Contar instâncias repetidas"
+>abstract="Especifica se as instâncias repetidas devem ser contadas nos relatórios.<br/><br/>Observação: essa configuração não se aplica às visualizações de fluxo ou fallout."
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_repeatinstances"
 >title="Contar instâncias repetidas"
 >abstract="Especifica se as instâncias repetidas devem ser contadas nos relatórios.<br/>Observação: essa configuração não se aplica às visualizações de fluxo ou fallout."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="Permitir comentários"
 >abstract="Quando ativada, uma área de comentários fica disponível no painel direito do projeto no Analysis Workspace."
-
-<!-- markdownlint-enable MD034 -->
 
 
 As configurações do projeto fornecem informações sobre o projeto ativo no momento.
