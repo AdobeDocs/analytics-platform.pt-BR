@@ -5,7 +5,7 @@ title: Exportar relatórios do Customer Journey Analytics para a nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
+source-git-commit: 0fb04c116864f50b396ffbd1f22e2d6dad3da983
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 97%
@@ -123,7 +123,7 @@ Um arquivo de manifesto com o nome `cja-export-{reportInstanceId}-{idx}.json.gz`
 
 <!-- add in  what the file name, structure, and file format will be -->
 
-## Vantagens de exportar para a nuvem
+## Vantagens de exportar para a nuvem {#advantages}
 
 A exportação de dados do Customer Journey Analytics para a nuvem permite:
 
@@ -217,7 +217,7 @@ Se um modelo de atribuição não padrão estiver sendo usado em um relatório, 
   >
   >Relatórios multidimensionais são permitidos somente ao exportar dados para a nuvem, conforme descrito neste artigo.
 
-## Comparação da exportação de tabelas completas (no Customer Journey Analytics) para o Data Warehouse (no Adobe Analytics)
+## Comparação da exportação de tabelas completas (no Customer Journey Analytics) para o Data Warehouse (no Adobe Analytics) {#comparison}
 
 Se você tiver usado o Data Warehouse anteriormente para exportar dados do Adobe Analytics, a tabela a seguir poderá ajudar a entender as diferenças entre exportar tabelas completas no Customer Journey Analytics e exportar dados com o Data Warehouse no Adobe Analytics.
 
