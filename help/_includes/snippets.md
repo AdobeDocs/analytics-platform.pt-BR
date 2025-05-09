@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '4061'
-ht-degree: 34%
+source-wordcount: '5198'
+ht-degree: 35%
 
 ---
 # Trechos
@@ -255,3 +255,44 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 | **[!UICONTROL Conjunto de dados]** | O nome do conjunto de dados. |
 | **[!UICONTROL Visualização: *nome do conjunto de dados *]** | Visualiza o conjunto de dados para as primeiras 10 linhas e as primeiras 10 colunas. |
 | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remover]** | Você pode [excluir um conjunto de dados](/help/connections/create-connection.md#delete-a-dataset) sem excluir toda a conexão. A exclusão de um conjunto de dados de uma conexão reduz os custos envolvidos na assimilação de dados e o complicado processo de recriação de toda a conexão e visualizações de dados associadas. |
+
+## Dimensões padrão {#standard-dimensions}
+
+| Nome do componente | Notas |
+|---|---|
+| 15 minutos | A cada 15 minutos em que um determinado evento aconteceu (arredondados para baixo). O primeiro item de dimensão são os primeiros 15 minutos no intervalo de datas, e o último item de dimensão são os últimos 15 minutos no intervalo de datas. |
+| 30 minutos | A cada 30 minutos em que um determinado evento aconteceu (arredondados para baixo). O primeiro item de dimensão são os primeiros 30 minutos no intervalo de datas, e o último item de dimensão são os últimos 30 minutos no intervalo de datas. |
+| 5 minutos | A cada 5 minutos em que um determinado evento aconteceu (arredondados para baixo). O primeiro item de dimensão são os primeiros 15 minutos no intervalo de datas, e o último item de dimensão são os últimos 5 minutos no intervalo de datas. |
+| [!UICONTROL Dia] | O dia em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro dia no intervalo de datas, e o último item de dimensão é o último dia no intervalo de datas. |
+| [!UICONTROL Dia do mês] | O dia do mês em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro dia do mês no intervalo de datas, e o último item de dimensão é o último dia do mês no intervalo de datas. |
+| [!UICONTROL Dia da semana] | O dia da semana em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro dia da semana no intervalo de datas, e o último item de dimensão é o último dia da semana no intervalo de datas. |
+| [!UICONTROL Dia do mês] | O dia do mês em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro dia do mês no intervalo de datas, e o último item de dimensão é o último dia do mês no intervalo de datas. |
+| Profundidade do evento | Atribui valores numéricos sequenciais (1, 2, 3, etc.) a cada interação de evento em uma sessão. Com essa dimensão, você pode ativar o rastreamento e a análise detalhados de onde eventos específicos ocorrem no fluxo sequencial de interações do usuário em uma sessão. Você pode rastrear a progressão dos eventos do início ao fim em uma sessão limitada. Como exemplo: um visitante acessa a página inicial (evento 1, início da sessão), usa a função de pesquisa (evento 2), visualiza a página de detalhes do produto (evento 3), adiciona ao carrinho (evento 4), prossegue com o check-out (evento 5) e conclui uma compra (evento 6, fim da sessão). Você pode usar [!UICONTROL Profundidade do evento] agora em uma definição de segmento para segmentar dados com base na profundidade da interação. |
+| [!UICONTROL Hora] | A hora em que um determinado evento aconteceu (arredondada para baixo). O primeiro item de dimensão é a primeira hora no intervalo de datas, e o último item de dimensão é a última hora no intervalo de datas. |
+| [!UICONTROL Hora do dia] | A hora do dia em que um determinado evento aconteceu (arredondada para baixo). O primeiro item de dimensão é a primeira hora do dia no intervalo de datas, e o último item de dimensão é a última hora do dia no intervalo de datas. |
+| [!UICONTROL Minuto] | O minuto em que um determinado evento aconteceu (arredondado para baixo). O primeiro item de dimensão é o primeiro minuto no intervalo de datas, e o último item de dimensão é o último minuto no intervalo de datas. |
+| [!UICONTROL Minuto da hora] | O minuto da hora em que um determinado evento aconteceu (arredondado para baixo). O primeiro item de dimensão é o primeiro minuto da hora no intervalo de datas, e o último item de dimensão é o último minuto da hora no intervalo de datas. |
+| [!UICONTROL Mês] | O mês em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro mês no intervalo de datas, e o último item de dimensão é o último mês no intervalo de datas. |
+| [!UICONTROL Mês do Ano] | O mês do ano em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro mês do ano no intervalo de datas, e o último item de dimensão é o último mês do ano no intervalo de datas. |
+| [!UICONTROL Trimestre] | O trimestre em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro trimestre no intervalo de datas, e o último item de dimensão é o último trimestre no intervalo de datas. |
+| [!UICONTROL Trimestre do ano] | O trimestre do ano em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro trimestre do ano no intervalo de datas, e o último item de dimensão é o último trimestre do ano no intervalo de datas. |
+| [!UICONTROL Segundo] | O segundo em que um determinado evento aconteceu (arredondado para baixo). O primeiro item de dimensão é o primeiro segundo no intervalo de datas e o último item de dimensão é o último segundo no intervalo de datas. |
+| [!UICONTROL Semana] | A semana em que um determinado evento aconteceu. O primeiro item de dimensão é a primeira semana no intervalo de datas, e o último item de dimensão é a última semana no intervalo de datas. |
+| [!UICONTROL Semana do ano] | A semana do ano em que um determinado evento aconteceu. O primeiro item de dimensão é a primeira semana do ano no intervalo de datas, e o último item de dimensão é a última semana do ano no intervalo de datas. |
+| [!UICONTROL Ano] | O ano em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro ano no intervalo de datas, e o último item de dimensão é o ano mais recente no intervalo de datas. |
+
+
+## Métricas padrão {#standard-metrics}
+
+| Nome do componente | Notas |
+| --- | --- |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Contas] | Baseado na ID de Conta especificada em uma [!UICONTROL Conexão]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Grupo de compras] | Os grupos de compra, com base na ID do grupo de compra especificada na [!UICONTROL Conexão]. |
+| [!UICONTROL Eventos] | O número de linhas de todos os conjuntos de dados de eventos em uma [!UICONTROL Conexão]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Contas Globais] | Com base na ID de Contas Globais especificada na [!UICONTROL Conexão]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Oportunidades] | As oportunidades, com base na ID de Oportunidade especificada na [!UICONTROL Conexão]. |
+| [!UICONTROL Pessoas] | Baseado na ID de pessoa especificada em uma [!UICONTROL Conexão]. |
+| [!UICONTROL Sessão termina] | O número de eventos que foram o último evento de uma sessão. Semelhante a [!UICONTROL Inícios de sessão], também pode ser usado em uma definição de segmento para segmentar os itens até o último evento de cada sessão.<p>Esse componente precisa ser incluído na visualização de dados para a seguinte [métrica calculada](/help/components/calc-metrics/default-calcmetrics.md) estar disponível no Espaço de trabalho: <ul><li>Taxa de término da sessão</li></p> |
+| [!UICONTROL Sessão inicia] | O número de eventos que foram o primeiro evento de uma sessão. Quando usado em uma definição de segmento (por exemplo, &#39;[!UICONTROL Inícios de sessão] existe&#39;), ele segmenta somente para o primeiro evento de cada sessão.<p>Esse componente precisa ser incluído na visualização de dados para a seguinte [métrica calculada](/help/components/calc-metrics/default-calcmetrics.md) estar disponível no Espaço de trabalho: <ul><li>Taxa de início da sessão</li></p> |
+| [!UICONTROL Sessões] | Baseado nas configurações de sessão da visualização de dados. |
+| [!UICONTROL Tempo gasto (segundos)] | Soma o tempo entre dois valores diferentes para uma dimensão.<p>Esse componente precisa ser incluído na visualização de dados para a seguinte [métricas calculada](/help/components/calc-metrics/default-calcmetrics.md) estar disponível no Espaço de trabalho: <ul><li>Tempo gasto por pessoa</li><li>Tempo gasto por sessão</li></p> |

@@ -4,10 +4,10 @@ description: Página inicial do Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 90%
+source-wordcount: '737'
+ht-degree: 80%
 
 ---
 
@@ -19,7 +19,7 @@ O Customer Journey Analytics permite controlar como você conecta os dados onlin
 
 ## Novidades
 
-Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Customer Journey Analytics. Para obter uma lista de todos os recursos, melhorias e correções, confira as [Notas de versão](../release-notes/latest.md) detalhadas. Acesse a [página de atualizações da documentação](../release-notes/doc-changes.md) para ver as alterações mais recentes.
+Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Customer Journey Analytics. Para obter uma lista de todos os recursos, melhorias e correções, confira as [Notas de versão](../release-notes/latest.md) detalhadas. Visite a [página de atualizações da documentação](../release-notes/doc-changes.md) para se manter atualizado com as atualizações mais recentes da documentação.
 
 >[!BEGINTABS]
 
@@ -29,47 +29,60 @@ A Análise de conteúdo da Adobe permite investigar de maneira rápida e fácil 
 
 [![imagem](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
+>[!TAB Profundidade do evento]
+
+A Profundidade do evento é uma nova dimensão padrão que fornece novas maneiras de medir e entender melhor como os eventos são posicionados nas sessões do cliente. A dimensão Profundidade do evento permite o rastreamento detalhado e a análise de onde eventos específicos ocorrem no fluxo sequencial de interações do usuário em uma sessão.
+
+[![imagem](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
+
+
 >[!TAB Métricas e dimensões compartilhadas]
 
 As métricas e dimensões compartilhadas fornecem um local central para gerenciar dimensões e métricas que podem ser usadas em qualquer número de visualizações de dados. Esses componentes são especialmente valiosos para organizações que usam várias visualizações de dados, especialmente se essas visualizações de dados compartilharem configurações de componentes comuns.
 
 [![imagem](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
->[!TAB Assistente de IA]
 
-O Assistente de IA é uma experiência de conversação que permite que os profissionais executem tarefas em um ritmo rápido, seja entender conceitos, solucionar problemas ou pesquisar informações. Também permite que não especialistas realizem tarefas especializadas e aumenta a qualidade geral do trabalho.
+<!--
+>[!TAB AI Assistant] 
 
-[![imagem](assets/learn-more-button.svg)](/help/ai-assistant.md)
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
 
-
->[!TAB Análise guiada]
-
-A Análise guiada agora está disponível diretamente no Analysis Workspace, permitindo que os usuários criem painéis com insights abrangentes a partir de painéis, visualizações e análises guiadas.
-
-[![imagem](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
 
->[!TAB Legendas inteligentes v2]
+>[!TAB Guided Analysis] 
 
-As legendas inteligentes agora são compatíveis, com aprimoramentos de interface adicionais, com as visualizações de: [Linha](/help/analysis-workspace/visualizations/line.md) (incluindo multilinha), [Barra](/help/analysis-workspace/visualizations/bar.md), [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md), [Área](/help/analysis-workspace/visualizations/area.md) (incluindo várias linhas de área), [Rosquinha](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) e [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md).
+Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
 
-[![imagem](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
->[!TAB Alertas]
-
-Os alertas permitem que você seja notificado com base em pontos de dados específicos ou porcentagens alteradas. Você pode visualizar a frequência de acionamento de um alerta, enviar alertas por email ou SMS, criar alertas empilhados e muito mais.
-
-[![imagem](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 
->[!TAB Dados de resumo]
 
-Permite trazer dados de série temporal que não têm uma ID de pessoa. Esses dados de série temporal podem ser usados para apoiar vários casos de uso, como
+>[!TAB Intelligent captions v2] 
 
-- Apresentar indicadores de desempenho de alto nível como parte dos dados em nível de evento ou ao lado deles.
-- Fazer upload de metas ou objetivos por hora ou diariamente e, em seguida, posicionar essas metas ou objetivos em relação a métricas de nível de evento.
+Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
 
-[![imagem](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Alerts] 
+
+Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
+
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Summary data] 
+
+Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
+
+- Presenting high-level performance indicators as part of or next to event-level data. 
+- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
+
+[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+
+-->
 
 >[!TAB Compilação baseada em gráfico*]
 

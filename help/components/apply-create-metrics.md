@@ -4,10 +4,10 @@ title: Métricas
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: defe6ad6fc796a230525ba9b178d744caf340e2f
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 8%
+source-wordcount: '886'
+ht-degree: 9%
 
 ---
 
@@ -35,11 +35,19 @@ A Adobe oferece vários tipos de métricas para uso no Analysis Workspace:
    * **Sessões**: a métrica Sessões no Customer Journey Analytics é o que você define como parte da configuração das Configurações de sessões na sua visualização de dados. Consulte [Configurações da sessão](/help/data-views/session-settings.md).
    * **Eventos**: a métrica Eventos no Customer Journey Analytics é composta pelos eventos que fazem parte de qualquer conjunto de dados de evento configurado como parte da conexão.
 
+  Consulte [Métricas padrão](#standard-metrics) para obter a lista completa de métricas padrão.
+
 * **Métricas calculadas** ![Calculadora](/help/assets/icons/Calculator.svg): métricas definidas pelo usuário baseadas em métricas padrão, números estáticos ou funções algorítmicas.
 
 * **Modelos de métrica calculada** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : métricas definidas pela Adobe que se comportam de forma semelhante às métricas calculadas. Você pode usá-los como estão nos projetos do Workspace ou salvar uma cópia para personalizar a lógica. Consulte [Métricas calculadas padrão](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
 Você pode ver se uma métrica foi aprovada ![ícone Aprovado](https://spectrum.adobe.com/static/icons/ui_18/CheckmarkSize100.svg) ou não. Para obter mais detalhes sobre uma métrica, passe o mouse sobre a métrica e selecione ![Ícone de informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg). Consulte [Informações do componente](use-components-in-workspace.md#component-info) para obter mais informações.
+
+
+## Métricas padrão
+
+A lista completa de métricas padrão no Customer Journey Analytics:
+{{standard-metrics}}
 
 ## Comparar métricas com diferentes modelos de atribuição
 
@@ -57,7 +65,7 @@ Há várias maneiras de criar métricas calculadas. O método escolhido determin
 
 ### Criar métricas calculadas para todos os projetos
 
-Você pode usar o construtor de métrica calculada para criar métricas calculadas. Quando criadas dessa forma, as métricas calculadas ficam disponíveis na lista de componentes e podem ser usadas em projetos em toda a organização.
+É possível usar o construtor de métricas calculadas para essa tarefa. Quando criadas dessa forma, as métricas calculadas ficam disponíveis na lista de componentes e podem ser usadas em projetos em toda a organização.
 
 Para obter informações sobre como acessar o construtor de métricas calculadas, consulte [Criar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-workflow.md).
 

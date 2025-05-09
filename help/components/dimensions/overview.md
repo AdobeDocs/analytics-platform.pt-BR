@@ -3,10 +3,10 @@ title: Visão geral das dimensões
 description: Saiba o que são dimensões e como são usadas no Customer Journey Analytics
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 36%
+source-wordcount: '225'
+ht-degree: 26%
 
 ---
 
@@ -37,26 +37,10 @@ Os administradores do Customer Journey Analytics podem [criar dimensões em uma 
 
 ## Dimensões padrão
 
-Ao criar uma visualização de dados, os seguintes componentes baseados em tempo são adicionados por padrão como dimensões à visualização de dados:
+Ao criar uma visualização de dados, os seguintes componentes são adicionados por padrão como dimensões à visualização de dados:
 
-- 15 minutos
-- 30 minutos
-- 5 minutos
-- Dia
-- Dia do mês
-- Dia da semana
-- Dia do ano
-- Hora
-- Hora do dia
-- Minuto
-- Minuto da hora
-- Mês
-- Mês do ano
-- Trimestre
-- Trimestre do ano
-- Segundo
-- Semana do ano
-- Ano
+{{standard-dimensions}}
+
 
 ## Adicionar descrições de dimensão
 
