@@ -1,6 +1,6 @@
 ---
-title: Monitorar a assimilação do conjunto de dados ao atualizar para o Customer Journey Analytics
-description: Aprenda a monitorar a assimilação de conjuntos de dados ao atualizar para o Customer Journey Analytics
+title: Monitorar a ingestão do conjunto de dados ao atualizar para o Customer Journey Analytics
+description: Aprenda a monitorar a ingestão de conjuntos de dados ao atualizar para o Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -12,7 +12,7 @@ ht-degree: 69%
 
 ---
 
-# Monitorar a assimilação do conjunto de dados ao atualizar para o Customer Journey Analytics {#monitor-ingestion}
+# Monitorar a ingestão do conjunto de dados ao atualizar para o Customer Journey Analytics {#monitor-ingestion}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -31,7 +31,7 @@ Após configurar a implementação do Web SDK ou da API, é necessário verifica
 
 1. Na interface da Experience Platform, selecione **[!UICONTROL Monitoramento]** no menu de navegação esquerdo.
 
-   O painel de Monitoramento é exibido. Esse painel permite exibir os status dos dados de entrada da assimilação em lote ou por transmissão.
+   O painel de Monitoramento é exibido. Esse painel permite exibir os status dos dados de entrada da ingestão em lote ou por transmissão.
 
    <!-- insert screenshot -->
 
