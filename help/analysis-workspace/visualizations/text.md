@@ -4,10 +4,10 @@ title: Texto
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
-source-wordcount: '265'
-ht-degree: 100%
+source-git-commit: 75d45cd6a2149bb44949ec6e0f3808ea4a6995f5
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 86%
 
 ---
 
@@ -58,6 +58,10 @@ Para adicionar um hiperlink, realce o texto e selecione ![Link](/help/assets/ico
 
 ## Adicionar imagens {#images}
 
-Para adicionar uma imagem ao seu projeto, selecione ![Imagem](/help/assets/icons/Image.svg) no menu e insira o URL de uma imagem pública. A URL da imagem deve estar acessível publicamente, começar com `https` e ter o formato `.png`, `.jpeg`, `.jpg` ou `.gif`. Há suporte para imagens estáticas e animadas.
+Para adicionar uma imagem ao seu projeto, selecione ![Imagem](/help/assets/icons/Image.svg) no menu, especifique uma URL de imagem na **[!UICONTROL URL da Imagem]** (por exemplo `https://www.adobe.com/uploads/2018/06/Adobe.png`) e selecione **[!UICONTROL Salvar]**.
+
+A URL da imagem deve estar acessível publicamente, começar com `https` e ter o formato `.png`, `.jpeg`, `.jpg` ou `.gif`. Há suporte para imagens estáticas e animadas.
+
+Observe que a inserção de arrastar e soltar em uma imagem não é suportada.
 
 ![Opções de texto com o ícone de imagem selecionado.](assets/image.png)
