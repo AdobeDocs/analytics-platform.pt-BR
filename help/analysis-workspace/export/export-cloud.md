@@ -5,10 +5,10 @@ title: Exportar relatórios do Customer Journey Analytics para a nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 0fb04c116864f50b396ffbd1f22e2d6dad3da983
+source-git-commit: 9482dd11ecf4aa6f3f8a45c90c3838a4a3389c73
 workflow-type: tm+mt
-source-wordcount: '2285'
-ht-degree: 97%
+source-wordcount: '2312'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,16 @@ Use o processo a seguir para exportar tabelas completas para a nuvem:
 
 ![O processo completo de exportação de tabelas descrito nas etapas de 1 a 4.](assets/export-full-table-process.png)
 
-## Exportar como CSV do Analysis Workspace
+## Exportar como CSV do Analysis Workspace {#export-from-workspace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="Arquivo manifest"
+>abstract="Quando ativado, um arquivo de manifesto é incluído com qualquer delivery de exportação bem-sucedida. O arquivo de manifesto permite confirmar se todos os arquivos foram entregues com êxito."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
