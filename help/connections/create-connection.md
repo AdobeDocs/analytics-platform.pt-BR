@@ -106,7 +106,7 @@ A experiência de criação e edição de conexão reúne todos os conjuntos de 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar e editar uma conexão](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar e editar uma conexão](https://video.tv.adobe.com/v/3409303/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
