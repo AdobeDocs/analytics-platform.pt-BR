@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 17cd5170e62b410ebf6118c6ac562d20b81b4e21
 workflow-type: tm+mt
-source-wordcount: '1760'
-ht-degree: 7%
+source-wordcount: '2012'
+ht-degree: 8%
 
 ---
 
@@ -53,6 +53,10 @@ Alguns dos recursos e seu valor associado para o limite dependem do pacote do Cu
 | Painéis por projeto | 15 | Proteção imposta pelo sistema | Número máximo de [painéis](../analysis-workspace/home.md#panels) por projeto. |
 | Visualizações por painel | 25 | Proteção imposta pelo sistema | Número máximo de [visualizações](../analysis-workspace/home.md#visualizations) por painel. |
 | Campos derivados por tabela de forma livre | 5 | Proteção imposta pelo sistema | Número máximo de campos derivados diferentes em uma única tabela de forma livre. |
+| Comentários por projeto <p>**Observação:** a capacidade de comentar em projetos está na fase de teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).</p> | 1.000 | Proteção imposta pelo sistema | Número máximo de comentários por projeto. |
+| Respostas por comentário <p>**Observação:** a capacidade de comentar em projetos está na fase de teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).</p> | 100 | Proteção imposta pelo sistema | Número máximo de respostas por comentário. |
+| Imagens por comentário <p>**Observação:** a capacidade de comentar em projetos está na fase de teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).</p> | 5 | Proteção imposta pelo sistema | Número máximo de imagens por comentário. |
+| Tamanho da imagem <p>**Observação:** a capacidade de comentar em projetos está na fase de teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).</p> | 2 | Proteção imposta pelo sistema | Tamanho máximo do upload por imagem em MB para comentários em projetos |
 
 {style="table-layout:auto"}
 
@@ -138,7 +142,7 @@ Consulte também [Proteções da Real-time Customer Data Platform](https://exper
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform.
+Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform.
 
 
 ## Exportação de dados de destinos
@@ -150,7 +154,7 @@ Consulte também [Medidas de proteção para assimilação de dados](https://exp
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
+Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
 
 
 ## Zona de aterrissagem de dados
@@ -238,7 +242,7 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform para obter mais informações.
+>Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|
