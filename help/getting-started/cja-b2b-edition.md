@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: d0dfcce1a9ba2a2f3e55abc63116ed07a33c9411
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 {{draft-b2b}}
 
-O Adobe Analytics começou como uma ferramenta de análise digital e da Web para profissionais de marketing, enquanto o Customer Journey Analytics ampliou o escopo para incluir dados de vários canais, offline e entre plataformas.  Ambas as ferramentas ajudam as empresas B2C (Business to Consumer) a analisar e otimizar seus esforços de marketing e as experiências do cliente.
+O Adobe Analytics começou como uma ferramenta de análise digital e da Web para profissionais de marketing, enquanto o Customer Journey Analytics ampliou o escopo para incluir dados de vários canais, offline e entre plataformas.  Ambas as ferramentas ajudam as empresas B2C (Business to Consumer) a analisar e otimizar seus esforços de marketing e as experiências do cliente. E concentre-se em **análises e relatórios baseados em pessoas**: entenda a jornada do cliente, onde o cliente é uma pessoa que interage com sua marca em vários canais.
 
-Nas vendas B2B (B2B), a jornada de compra envolve várias partes, pontos de contato online e offline e estágios principais antes de fechar um acordo. As empresas B2B precisam rastrear todas essas interações em uma visualização de jornada unificada para analisar e otimizar efetivamente seus esforços de marketing e experiências de conta.
+O Customer Journey Analytics B2B edition adiciona **análise e relatório baseados em conta**. Nas vendas B2B (B2B), a jornada de compra envolve várias partes, pontos de contato online e offline e estágios principais antes de fechar um acordo. As empresas B2B precisam rastrear todas essas interações em uma visualização de jornada unificada para analisar e otimizar efetivamente seus esforços de marketing e experiências de conta.
 
 As características típicas das vendas B2B são:
 
