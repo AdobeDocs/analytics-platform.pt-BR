@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 83%
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 83%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_includeexcludevalues"
 >title="Incluir/excluir valores"
->abstract="Restrinja uma dimensão para incluir apenas valores que correspondam a critérios específicos. Inclusões e exclusões ocorrem antes da alocação e segmentação nos relatórios. Determine se a lógica de segmento especificada diferencia maiúsculas de minúsculas."
+>abstract="Restrinja uma dimensão para incluir apenas valores que correspondam a critérios específicos. As inclusões e exclusões ocorrem antes da alocação e da segmentação nos relatórios. Determine se a lógica do segmento especificado diferencia maiúsculas de minúsculas."
 
 <!-- markdownlint-enable MD034 -->
 

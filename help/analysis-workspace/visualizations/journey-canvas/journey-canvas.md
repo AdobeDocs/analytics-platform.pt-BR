@@ -7,7 +7,7 @@ exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
 workflow-type: tm+mt
 source-wordcount: '1988'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Tela de jornada"
->abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas de usuários criando um gráfico flexível de nós e setas que represente qualquer combinação de eventos, itens de dimensão e segmentos. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
+>abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas do usuário gerando um gráfico flexível de nós e setas que represente qualquer combinação de eventos, itens de dimensão e segmentos. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,13 +45,13 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Tela de jornada"
->abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas de usuários criando um gráfico flexível de nós e setas que represente qualquer combinação de eventos, itens de dimensão e segmentos. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
+>abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas do usuário gerando um gráfico flexível de nós e setas que represente qualquer combinação de eventos, itens de dimensão e segmentos. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de tela da jornada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Não há visualização equivalente no **Adobe Analytics**._
+_Este artigo documenta a Visualização de tela da jornada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Não há visualização equivalente no **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -263,5 +263,5 @@ Você pode criar análises na tela de jornada com base em qualquer dimensão ou 
 
 >[!MORELIKETHIS]
 >
-> * [Guia para Visualização da Tela de Jornada no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=pt)
+> * [Guia para Visualização da Tela de Jornada no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

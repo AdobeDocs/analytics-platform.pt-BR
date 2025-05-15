@@ -7,7 +7,7 @@ exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
 source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
 workflow-type: tm+mt
 source-wordcount: '1850'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -24,7 +24,7 @@ Pessoas da mesma empresa podem usar esses modelos da empresa conforme descrito e
 >[!CONTEXTUALHELP]
 >id="use-case-ajo-template"
 >title="Usar modelo no Journey Optimizer"
->abstract="Quando você usa esse modelo no Journey Optimizer, a visualização de dados definida como a visualização de dados padrão no Adobe Journey Optimizer é usada, independentemente da visualização de dados selecionada com esse modelo no Customer Journey Analytics."
+>abstract="Ao usar esse modelo no Journey Optimizer, a visualização de dados definida como padrão no Adobe Journey Optimizer é usada, independentemente da visualização de dados selecionada com esse modelo no Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,7 +77,7 @@ Os administradores podem editar ou excluir os modelos da empresa.
 
       ![Exibição em cartões dos modelos da empresa](assets/company-template-cards.png)
 
-   1. Passe o cursor do mouse sobre o modelo e selecione **[!UICONTROL Visualizar]**.
+   1. Passe o mouse sobre o modelo e selecione **[!UICONTROL Visualizar]**.
 
    1. Selecione o ícone de mais e clique em **[!UICONTROL Editar]** ou **[!UICONTROL Excluir]**.
 
@@ -164,7 +164,7 @@ Para adicionar componentes ausentes a um modelo:
 
          ![Exibição em cartões dos modelos da empresa](assets/company-template-cards.png)
 
-      1. Passe o cursor do mouse sobre o modelo e selecione **[!UICONTROL Visualizar]**.
+      1. Passe o mouse sobre o modelo e selecione **[!UICONTROL Visualizar]**.
 
          ![Página de visualização de modelos](assets/template-preview.png)
 

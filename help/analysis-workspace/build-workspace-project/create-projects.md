@@ -7,7 +7,7 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -61,7 +61,7 @@ Agora que você criou um projeto do espaço de trabalho em branco, certifique-se
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="Permitir comentários"
->abstract="Quando ativada, uma área de comentários fica disponível no painel direito do projeto no Analysis Workspace."
+>abstract="Quando habilitada, uma área de comentários fica disponível no painel direito do projeto no Analysis Workspace."
 
 
 As configurações do projeto fornecem informações sobre o projeto ativo no momento.

@@ -7,7 +7,7 @@ role: User
 source-git-commit: a7350b6fc8fa75de07238543ed0db48af42b7577
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 73%
+ht-degree: 83%
 
 ---
 
@@ -16,22 +16,22 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_startswith"
 >title="Começa com"
->abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
+>abstract="Esse campo só pode ser definido na criação inicial. Para atualizar esse campo, selecione **[!UICONTROL Redefinir]** para criar uma nova Visualização de fluxo."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_contains"
 >title="Contém"
->abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
+>abstract="Esse campo só pode ser definido na criação inicial. Para atualizar esse campo, selecione **[!UICONTROL Redefinir]** para criar uma nova Visualização de fluxo."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_endswith"
 >title="Termina com"
->abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
+>abstract="Esse campo só pode ser definido na criação inicial. Para atualizar esse campo, selecione **[!UICONTROL Redefinir]** para criar uma nova Visualização de fluxo."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_pathingdimension"
->title="Dimensão da definição de caminho"
->abstract="Selecione uma dimensão para usar como o caminho conduzindo ou saindo do componente selecionado."
+>title="Dimensão de definição de caminho"
+>abstract="Selecione uma dimensão para usar como caminho que conduz ou sai do componente selecionado."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_container"
@@ -40,13 +40,13 @@ ht-degree: 73%
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_include_repeats_disabled"
->title="Incluir repetições (desativado)"
->abstract="As repetições não podem ser removidas das visualizações de fluxo que incluem dimensões de vários valores."
+>title="Incluir repetições (desabilitado)"
+>abstract="As repetições não podem ser removidas das Visualizações de fluxo que incluem dimensões de vários valores."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_include_repeats_default"
 >title="Incluir repetições"
->abstract="As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas. Por exemplo: recarregamentos de página."
+>abstract="As visualizações de fluxo são baseadas em instâncias de uma dimensão. Essa configuração oferece a opção de incluir ou excluir instâncias repetidas, por exemplo, recarregamentos de página. "
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_limit_occurrence"
@@ -56,17 +56,17 @@ ht-degree: 73%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_numberofcolumns"
 >title="Número de colunas"
->abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
+>abstract="Esse campo só pode ser definido na criação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova Visualização de fluxo."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_itemsexpandedpercolumn"
 >title="Itens expandidos por coluna"
->abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
+>abstract="Esse campo só pode ser definido na criação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova Visualização de fluxo."
 
 >[!CONTEXTUALHELP]
 >id="workspace_flow_resettoupdate"
 >title="Redefinir para atualizar"
->abstract="Este campo só pode ser definido na compilação inicial. Para atualizar este campo, selecione **[!UICONTROL Redefinir]** para criar uma nova visualização de Fluxo."
+>abstract="Esse campo só pode ser definido na criação inicial. Para atualizar esse campo, selecione **[!UICONTROL Redefinir]** para criar uma nova Visualização de fluxo."
 
 
 As visualizações de fluxo ajudam você a entender a jornada originada de um evento de conversão específico em seu site ou aplicativo. Ou que leva a um evento de conversão específico. A visualização rastreia um caminho pelas suas dimensões (e itens de dimensão) ou métricas.
@@ -109,7 +109,7 @@ Você pode configurar o início ou o fim do caminho em que está interessado. Ou
    | **[!UICONTROL Limitar à primeira/última ocorrência]** | Limite os caminhos àqueles que começam ou terminam com a primeira ou última ocorrência de uma dimensão, item ou métrica. Consulte [Limitar à primeira/última ocorrência](#example-scenario-for-limit-to-firstlast-occurrence) para obter uma explicação mais detalhada. |
    | **[!UICONTROL Número de colunas]** | O número de colunas que você deseja no diagrama de fluxo. É possível especificar um máximo de cinco colunas. |
    | **[!UICONTROL Itens expandidos por coluna]** | O número de itens que você deseja em cada coluna. É possível especificar no máximo 10 itens expandidos por coluna. |
-   | **[!UICONTROL Container de fluxo]** | Você pode alternar entre **[!UICONTROL Conta Global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Grupo de Compras]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Sessões]** e **[!UICONTROL Pessoa]** para analisar a definição de caminho. Essas configurações ajudam você a entender o engajamento em um nível de contêiner específico (em várias sessões) ou restringir a análise a uma única sessão. |
+   | **[!UICONTROL Container de fluxo]** | Você pode alternar entre **[!UICONTROL Conta Global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Grupo de Compras]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Sessões]** e **[!UICONTROL Pessoa]** para analisar a definição de caminho. Essas configurações ajudam você a entender o engajamento em um nível de contêiner específico (em várias sessões) ou restringir a análise a uma única sessão. |
 
    >[!IMPORTANT]
    >
@@ -196,7 +196,7 @@ No exemplo abaixo, **todas** as ocorrências de *Categoria principal do produto*
 
   No exemplo abaixo, apenas as **últimas** ocorrências de *Categoria principal do produto* e *Adicionar ao carrinho* em cada etapa do fluxo são incluídas.
   ![Limitado, iniciar](assets/limitonlast.png)
-* As séries utilizadas diferem de acordo com o container. Se você usar o contêiner **[!UICONTROL Sessão]**, a série de eventos será limitada a uma sessão.  Se você usar qualquer um dos outros contêineres (por exemplo, **[!UICONTROL Pessoa]** ou **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} ou **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}), a série de eventos será baseada no contêiner especificado e poderá abranger várias sessões.
+* As séries utilizadas diferem de acordo com o container. Se você usar o contêiner **[!UICONTROL Sessão]**, a série de eventos será limitada a uma sessão.  Se você usar qualquer um dos outros contêineres (por exemplo, **[!UICONTROL Pessoa]** ou **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} ou **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}), a série de eventos será baseada no contêiner especificado e poderá abranger várias sessões.
 * A opção **[!UICONTROL Limitar à primeira/última ocorrência]** pode ser definida nas configurações avançadas ao usar uma métrica ou item de dimensão nos campos **[!UICONTROL Inicia com]** ou **[!UICONTROL Termina com]**.
 
 
