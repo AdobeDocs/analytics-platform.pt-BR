@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1225'
 ht-degree: 83%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 83%
    + [Guia do usuário para usuários do Adobe Analytics](../getting-started/aa-to-cja-user.md)
 
 + Assimilação de dados {#cja-data-ingestion}
-   + [Visão geral da assimilação de dados](../data-ingestion/data-ingestion.md)
+   + [Visão geral da ingestão de dados](../data-ingestion/data-ingestion.md)
    + Assimilar e usar guias de início rápido{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
@@ -171,7 +171,7 @@ ht-degree: 83%
       + [Abrir projetos](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Comentar em projetos](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Salvar projetos](../analysis-workspace/build-workspace-project/save-projects.md)
-      + Pastas no Workspace {#workspace-folders}
+      + Pastas no espaço de trabalho {#workspace-folders}
          + [Sobre pastas](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Criar pastas e subpastas](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Gerenciar pastas](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
@@ -393,7 +393,7 @@ ht-degree: 83%
    + [Selecionar uma visualização de dados](../report-builder/select-data-view.md)
    + [Selecionar um intervalo de datas](../report-builder/select-date-range.md)
    + [Trabalhar com segmentos](../report-builder/work-with-filters.md)
-   + [Filtrar dimensões](../report-builder/filter-dimensions.md)
+   + [Filtragem de dimensões](../report-builder/filter-dimensions.md)
    + [Gerenciar blocos de dados](../report-builder/manage-reportbuilder.md)
    + [Programar pastas de trabalho](../report-builder/schedule-reportbuilder.md)
    + [Rótulos restritos](../report-builder/restricted-labels.md)
@@ -411,6 +411,7 @@ ht-degree: 83%
    + [Compilação baseada em gráfico](/help/stitching/gbs.md)
    + [Usar compilação](/help/stitching/use-stitching.md)
    + [Criar e gerenciar conjuntos de dados compilados](/help/stitching/stitching-ui.md)
+   + [Validar compilação](/help/stitching/validate.md)
    + [Perguntas frequentes](/help/stitching/faq.md)
 
 + Integrações do Adobe {#integrations}
