@@ -4,9 +4,9 @@ title: Legendas inteligentes
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 4d566411778774d21be04c4f3d6cf2ffabed6db2
-workflow-type: ht
-source-wordcount: '876'
+source-git-commit: af8d4f07498211931e9549cadd4746eebb9f56f4
+workflow-type: tm+mt
+source-wordcount: '754'
 ht-degree: 100%
 
 ---
@@ -16,65 +16,10 @@ ht-degree: 100%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_area"
->title="Legendas inteligentes: área"
+>id="workspace_intelligentcaptions"
+>title="Legendas inteligentes"
 >abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_bar"
->title="Legendas inteligentes: barra"
->abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_donut"
->title="Legendas inteligentes: rosquinha"
->abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_horizontalbar"
->title="Legendas inteligentes: barra horizontal"
->abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_line"
->title="Legendas inteligentes: linha"
->abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_fallout"
->title="Legendas inteligentes: fallout"
->abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_flow"
->title="Legendas inteligentes: fluxo"
->abstract="Gere insights em formato de linguagem natural para ajudar a entender e interpretar dados nessa visualização mais facilmente."
-
-<!-- markdownlint-enable MD034 -->
 
 A funcionalidade de legendas inteligentes usa IA generativa avançada para fornecer insights importantes para as visualizações do Workspace usadas com mais frequência em linguagem natural.
 
@@ -85,7 +30,7 @@ As legendas inteligentes são voltadas para:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Legendas inteligentes](https://video.tv.adobe.com/v/3443143/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Legendas inteligentes](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
