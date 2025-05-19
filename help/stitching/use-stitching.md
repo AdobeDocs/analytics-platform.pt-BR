@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 7cd0bd94ec45b1570d0be765d95b25defa3e1b87
+source-git-commit: dd285caa3d9702d3ddccdba2bc656767a9fe4684
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 9%
@@ -14,7 +14,7 @@ ht-degree: 9%
 
 # Usar compilação
 
-Assim que sua organização atender a todos os [pré-requisitos](#prerequisites) e entender as limitações comuns de [limitações](#limitations) e do método de compilação específico ([baseado em campo](#limitations-1) e [baseado em gráfico](#limitations-2)), você poderá seguir essas etapas para começar a usar a compilação no Customer Journey Analytics.
+Assim que sua organização atender a todos os [pré-requisitos](overview.md#prerequisites) e entender as limitações comuns de [limitações](overview.md#limitations) e do método de compilação específico ([baseado em campo](fbs.md#limitations) e [baseado em gráfico](gbs.md#limitations)), você poderá seguir essas etapas para começar a usar a compilação no Customer Journey Analytics.
 
 ## Selecionar opções
 
