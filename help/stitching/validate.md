@@ -4,11 +4,10 @@ description: Como validar a compilação
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
+exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
+source-git-commit: 3b402e367d2385b336c84ef52897ab34387a948d
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ Embora esses métodos de análise possam ser usados para a compilação em campo
 
 >[!NOTE]
 >
->Este artigo não aborda o valor geral de uma configuração do Customer Journey Analytics que tem todos os conjuntos de dados no Experience Platform alinhados ao mesmo namespace de identidade. E que todos esses conjuntos de dados estejam bem unidos para realizar análises em toda a jornada do cliente.
+>A (validação da) compilação de um ou mais conjuntos de dados contribui, em última análise, para melhorar a análise e os insights. No entanto, este artigo não discute o valor geral de uma configuração do Customer Journey Analytics que tem todos os conjuntos de dados no Experience Platform alinhados ao mesmo namespace de identidade. E que todos esses conjuntos de dados estejam bem unidos para realizar análises em toda a jornada do cliente.
 
 
 ## Pré-requisitos da visualização de dados
@@ -88,7 +87,7 @@ Ao criar uma conexão, você precisa definir qual campo ou identidade é usada p
 
 Você deseja medir o desempenho de identificação antes e depois da compilação. Para fazer isso, crie três métricas calculadas adicionais:
 
-1. Uma **[!UICONTROL métrica calculada da taxa de autenticação compilada]** que calcula o número de eventos em que o namespace compilado é definido como a identidade desejada sobre o número total de eventos. Ao configurar a visualização de dados, você criou uma métrica de **[!UICONTROL Namespace compilado por email]** que incluía um filtro para contar somente quando um evento tivesse um namespace definido como email. A métrica calculada usa esta métrica de **[!UICONTROL Namespace compilado de email]** para fornecer uma indicação de qual porcentagem dos dados tem a identidade desejada.
+1. Uma **[!UICONTROL métrica calculada da taxa de autenticação compilada]** que calcula o número de eventos em que o namespace compilado é definido como a identidade desejada sobre o número total de eventos. Ao configurar a visualização de dados, você criou uma métrica **[!UICONTROL Namespace compilado por email]** que incluía um filtro para contar somente quando um evento tivesse um namespace definido como email. A métrica calculada usa esta métrica de **[!UICONTROL Namespace compilado de email]** para fornecer uma indicação de qual porcentagem dos dados tem a identidade desejada.
    ![Métrica calculada da taxa de autenticação compilada](assets/calcmetric-stitchedauthenticationrate.png)
 
 1. Uma métrica calculada de **[!UICONTROL Aumento percentual]** que calcula a alteração percentual bruta entre a taxa de identificação atual e a compilada.

@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: 1a697ce0372d1cb544940778850714a198a000ec
 workflow-type: tm+mt
-source-wordcount: '5155'
-ht-degree: 89%
+source-wordcount: '5173'
+ht-degree: 88%
 
 ---
 
@@ -20,16 +20,17 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Maio de 2025** | |
+| Validar compilação | Adição de documentação para [validar](/help/stitching/validate.md) como a identificação de compilação afeta as taxas de sucesso de autenticação e o desempenho geral da identificação de pessoas. |
 | Dimensão Profundidade do evento | Documentação da nova dimensão Profundidade do Evento, como parte das [dimensões padrão](/help/components/dimensions/overview.md#standard-dimensions) de uma visualização de dados. |
 | **Abril de 2025** | |
-| Limites de exportação de tabela completa aumentados | Alteração do [número de colunas](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) que os clientes podem usar com a exportação de tabela completa de 5 dimensões e 5 métricas para 10 dimensões e 10 métricas. |
+| Limites de exportação de tabela completa aumentados | Alteração do [número de colunas](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/export/export-cloud#comparison-of-full-table-export-in-customer-journey-analytics-to-data-warehouse-in-adobe-analytics) que os clientes podem usar com a exportação de tabela completa de 5 dimensões e 5 métricas para 10 dimensões e 10 métricas. |
 | Conexões | Reformulação e atualização da documentação de Conexões de Jornada do cliente para a próxima B2B edition de Jornada do cliente. |
 | Caso de uso de análise de produto | Adição da [Análise de produto no Customer Journey Analytics](/help/use-cases/product-analysis.md). |
 | Métricas e dimensões compartilhadas | Adição de documentação para o recurso [Métricas e dimensões compartilhadas](/help/data-views/shared-metrics-dimensions/smd-overview.md). |
 | Report Builder | Revisão e atualização da documentação do [Report Builder](/help/report-builder/rb-overview.md). |
 | Visualizar e gerenciar o uso | A documentação sobre como [exibir](/help/connections/manage-connections.md#usage) e [gerenciar](/help/technotes/estimate-usage.md) o uso do Customer Journey Analytics foi retrabalhada |
 | Adobe Content Analytics | O [Content Analytics](/help/content-analytics/content-analytics.md) permite investigar de maneira rápida e fácil grandes volumes de dados de conteúdo para descobrir tendências, detectar anomalias, identificar a fadiga do conteúdo e obter informações sobre a exposição do conteúdo. |
-| Campos XDM atualizados para coletar dados de mídia de transmissão na Adobe Experience Platform | Ao coletar dados de mídia de transmissão no Adobe Experience Platform, os caminhos de campo XDM mostrados no cabeçalho de &quot;Caminho do campo XDM&quot; da documentação de parâmetros de mídia de transmissão não devem mais ser usados. Esses caminhos de campo são encontrados nas seguintes páginas e são marcados como &quot;Obsoletos&quot;: [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Parâmetros de anúncios](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/ad-parameters), [Parâmetros de capítulo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters), [Parâmetros de estado do player](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/player-state-parameters) e [Parâmetros de qualidade](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/quality-parameters). |
+| Campos XDM atualizados para coletar dados de mídia de transmissão na Adobe Experience Platform | Ao coletar dados de mídia de transmissão no Adobe Experience Platform, os caminhos de campo XDM mostrados no cabeçalho de &quot;Caminho do campo XDM&quot; da documentação de parâmetros de mídia de transmissão não devem mais ser usados. Esses caminhos de campo são encontrados nas seguintes páginas e são marcados como &quot;Obsoletos&quot;: [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Parâmetros de anúncios](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/ad-parameters), [Parâmetros de capítulo](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters), [Parâmetros de estado do player](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/player-state-parameters) e [Parâmetros de qualidade](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/quality-parameters). |
 | Coleção de mídia: atualizações do conector de origem da Adobe para o novo XDM de relatórios de mídia | O Conector de origem do Analytics mapeia automaticamente dados de mídia de streaming no Adobe Analytics para os mesmos campos usados pelo SDK da web. Antes, os dados eram mapeados para os locais antigo e novo, mas somente o novo local será usado no futuro. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | Alteração de terminologia: &quot;Filtros&quot; para &quot;Segmentos&quot; | Anteriormente, o Adobe Customer Journey Analytics chamava os segmentos de “filtros”. Essa terminologia foi alinhada com o Adobe Analytics. Agora, os “filtros” são chamados de “segmentos”. (Obviamente, os filtros de pesquisa ainda são chamados de &quot;filtros&quot;.) A interface do usuário e a documentação foram atualizadas. |
 | **Março de 2025** | |
@@ -147,7 +148,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | O conteúdo sobre gerenciamento de projetos programados foi movido | Um novo artigo no Guia de componentes do Analytics chamado [Projetos programados](/help/components/scheduled-projects-manager.md) foi criado. Este conteúdo estava anteriormente localizado no artigo [Agendar projetos](/help/analysis-workspace/export/t-schedule-report.md) do Guia de ferramentas do Analytics. |
 | Compatibilidade com recursos do Adobe Customer Journey Analytics | Foram adicionadas mais informações na tabela *Compatível de uma nova maneira* sobre os recursos de sessão no Customer Journey Analytics em comparação ao Adobe Analytics. [Saiba mais](../getting-started/aa-vs-cja/cja-aa.md#supported-in-a-new-way) |
 | Evolução a partir do Adobe Analytics | Atualização da seção *(Re)configurar canais de marketing* com uma referência ao modelo de função Canais de marketing de campos derivados. [Saiba mais](../getting-started/aa-to-cja.md#3-reconfigure-your-marketing-channels) |
-| Guias de início rápido de assimilação de dados para aplicativos móveis e outras plataformas | Adição de guias de início rápido para assimilação de dados, que descrevem como assimilar e usar dados de aplicativos móveis ou outras plataformas (como aplicativos de desktop, jogos em consoles, aplicativos em decodificadores de sinais e dispositivos de IoT) no Customer Journey Analytics. [Saiba mais](../data-ingestion/data-ingestion.md) |
+| Guias de início rápido de ingestão de dados para aplicativos móveis e outras plataformas | Adição de guias de início rápido para ingestão de dados, que descrevem como ingerir e usar dados de aplicativos móveis ou outras plataformas (como aplicativos de desktop, jogos em consoles, aplicativos em decodificadores de sinais e dispositivos de IoT) no Customer Journey Analytics. [Saiba mais](../data-ingestion/data-ingestion.md) |
 | **Julho de 2023** | |
 | Configurações da sessão | Adição de um tópico para esta configuração de visualização de dados. [Saiba mais](/help/data-views/session-settings.md) |
 | Adobe Product Analytics | O Adobe Product Analytics fornece uma nova maneira de interagir com dados e insights de vários canais no Customer Journey Analytics. Esses novos recursos permitem que as equipes de produtos utilizem o autoatendimento de dados e insights sobre a experiência do produto por meio de fluxos de trabalho de [análise guiada](/help/guided-analysis/overview.md). |
@@ -193,7 +194,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Cartões de pontuação para dispositivos móveis | Nova seção de documentação para descrever como mostrar e ocultar intervalos de datas de comparação. Consulte [Mostrar intervalos de datas de comparação](/help/mobile-app/create-scorecard.md#show-comparison-dates) no Customer Journey Analytics. |
 | **Janeiro de 2023** | |
 | Filtrar e classificar tabelas | Conteúdo atualizado (incluindo a adição de procedimentos e a explicação das opções disponíveis) no artigo [Filtrar e classificar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md). Anteriormente, o nome desse artigo era “Paginação, filtragem e classificação de tabelas”. |
-| Guias de início rápido de assimilação de dados | Nova seção de documentação sobre como [assimilar e usar dados](/help/data-ingestion/data-ingestion.md) no Customer Journey Analytics. |
+| Guias de início rápido de ingestão de dados | Nova seção de documentação sobre como [assimilar e usar dados](/help/data-ingestion/data-ingestion.md) no Customer Journey Analytics. |
 | Pastas do espaço de trabalho | Páginas dedicadas para [Gerenciamento de pastas](/help/analysis-workspace/build-workspace-project/workspace-folders/about-folders.md). |
 | Preferências do usuário do espaço de trabalho | Várias preferências adicionais de usuário estão disponíveis em [Preferências](/help/analysis-workspace/user-preferences.md). |
 | Salvar automaticamente projetos do espaço de trabalho | Conteúdo atualizado para incluir a funcionalidade de salvamento automático em [Salvar projetos](/help/analysis-workspace/build-workspace-project/save-projects.md). |
@@ -226,11 +227,11 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Agosto de 2022 | Atualização significativa do artigo sobre [controle de acesso do Customer Journey Analytics](/help/technotes/access-control.md). |
 | Agosto de 2022 | Novo artigo sobre [compatibilidade do Customer Journey Analytics com rótulos e políticas de governança de dados](/help/data-views/data-governance.md). |
 | Agosto de 2022 | Novo artigo sobre [Comparação da terminologia de dados do Analytics transmitidos pelo conector de origem do Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
-| Agosto de 2022 | Nova documentação sobre [Publicação de público-alvo no perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=pt-BR). |
+| Agosto de 2022 | Nova documentação sobre [Publicação de público-alvo no perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |
 | **Julho de 2022** | |
 | Julho de 2022 | Documentação do [painel Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=pt-BR). |
 | Julho de 2022 | Documentação do [painel Visualizador simultâneo de mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=pt-BR). |
-| Julho de 2022 | Documentação de relatórios de [primeira sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat). |
+| Julho de 2022 | Documentação de relatórios de [primeira sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat). |
 | **Junho de 2022** | |
 | Junho de 2022 | Novo artigo sobre [AAID, ECID, AACUSTOMID e o conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=pt-BR) |
 | Junho de 2022 | Novo artigo sobre [Regras de processamento do Adobe Analytics, VISTA e classificações em relação ao preparo de dados do conector de origem do Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
@@ -268,7 +269,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | **Novembro de 2021** | |
 | Novembro de 2021 | Atualização da documentação de [[!UICONTROL Registros ignorados]](/help/connections/manage-connections.md) na página Detalhes das conexões. |
 | **Outubro de 2021** | |
-| Outubro de 2021 | Documentação sobre o [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html?lang=pt-BR#) no Customer Journey Analytics. |
+| Outubro de 2021 | Documentação sobre o [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html#) no Customer Journey Analytics. |
 | Outubro de 2021 | Documentação da API do [Log de auditoria](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) do Customer Journey Analytics |
 | Outubro de 2021 | [Visualizações documentadas para painéis do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=pt-BR#apply-visualizations) |
 | Outubro de 2021 | Documento para a janela contínua de [retenção de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#set-rolling-window-for-connection-data-retention) de [!UICONTROL conexão]. |
@@ -312,7 +313,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | 2 de novembro de 2020 | Atualizações na página de [suporte de recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). |
 | Novembro de 2020 | Adição de conteúdo sobre [remoção de limitações de preenchimento retroativo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#backfill-historical-data) para conexões. |
 | 7 de outubro de 2020 | Adição de um tópico sobre [conjuntos de dados de evento combinados](/help/connections/combined-dataset.md). |
-| 15 de setembro de 2020 | Adição de um tópico sobre [assimilação de dados](/help/data-ingestion/data-ingestion.md). |
+| 15 de setembro de 2020 | Adição de um tópico sobre [ingestão de dados](/help/data-ingestion/data-ingestion.md). |
 | 2 de setembro de 2020 | Atualização da seção sobre [permissões do usuário](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR). |
 | Julho de 2020 | Adição de informações sobre a opção [Mapa de identidade para ID de pessoa](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR). |
 | Julho de 2020 | Adição de um novo tópico sobre [matrizes de objetos](/help/use-cases/object-arrays.md) ou “hierarquias de dados”. |

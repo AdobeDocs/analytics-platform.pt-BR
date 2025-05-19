@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: c27d5f44243e2cda252ac6a484a70964f0999dfc
+source-git-commit: 1a697ce0372d1cb544940778850714a198a000ec
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '741'
 ht-degree: 15%
 
 ---
@@ -41,7 +41,7 @@ Antes de usar a compilação, verifique se sua organização está preparada com
 - Importe os dados desejados para o Adobe Experience Platform:
 
    - Para dados do Adobe Analytics, consulte [Utilização dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
-   - Para outros tipos de dados, consulte [Criar um esquema](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/create-schema-ui) e [Assimilar dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/home) na documentação da Adobe Experience Platform.
+   - Para outros tipos de dados, consulte [Criar um esquema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui) e [Assimilar dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/home) na documentação da Adobe Experience Platform.
 
 Você se beneficia da análise entre canais se combinar um ou mais conjuntos de dados compilados com outros conjuntos de dados, como dados da central de atendimento, como parte da definição da conexão do Customer Journey Analytics. Essa configuração de conexão pressupõe que esses outros conjuntos de dados já contenham uma ID de pessoa em cada linha, semelhante à ID compilada.
 
@@ -55,7 +55,7 @@ Você se beneficia da análise entre canais se combinar um ou mais conjuntos de 
 >
 >- Se você remover o conjunto de dados de origem, o conjunto de dados compilado parará de ser processado e será removido pelo sistema.
 >
->- Os rótulos de uso de dados não são propagados automaticamente para o esquema do conjunto de dados compilado. Se você tiver rótulos de uso de dados aplicados ao esquema do conjunto de dados de origem, será necessário aplicar esses rótulos de uso de dados manualmente ao esquema do conjunto de dados compilado. Consulte [Gerenciamento de rótulos de uso de dados no Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview) para obter mais informações.
+>- Os rótulos de uso de dados não são propagados automaticamente para o esquema do conjunto de dados compilado. Se você tiver rótulos de uso de dados aplicados ao esquema do conjunto de dados de origem, será necessário aplicar esses rótulos de uso de dados manualmente ao esquema do conjunto de dados compilado. Consulte [Gerenciamento de rótulos de uso de dados no Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) para obter mais informações.
 
 A costura é um recurso inovador e robusto, mas tem limitações na forma de uso.
 
@@ -74,5 +74,6 @@ Não confunda a compilação com:
 >[Compilação baseada em campo](fbs.md)
 >[Compilação baseada em gráfico](gbs.md)
 >[Usar compilação](use-stitching.md)
+>[Validar compilação](validate.md)
 >[Perguntas frequentes sobre compilação](faq.md)
 
