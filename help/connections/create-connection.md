@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 3aa8986569d5bb5d7767f95cbdaead3f09440383
 workflow-type: tm+mt
 source-wordcount: '7259'
-ht-degree: 58%
+ht-degree: 62%
 
 ---
 
@@ -77,27 +77,27 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="connection_change_personid"
 >title="Alterar ID de pessoa"
->abstract="Uma alteração da ID de pessoa exclui todos os dados existentes na conexão e assimila novamente todos os dados do conjunto de dados com base na nova ID de pessoa. Essa ação pode ter implicações de custos. <br/><br/>Quando você seleciona **[!UICONTROL Continuar]**, é possível atrasar os relatórios até que o processo seja concluído."
+>abstract="Uma alteração da ID de pessoa exclui todos os dados existentes na conexão e assimila novamente todos os dados do conjunto de dados com base na nova ID de pessoa. Essa ação pode ter implicações de custos. <br/><br/>Ao selecionar **[!UICONTROL Continuar]**, é possível atrasar os relatórios até que o processo seja concluído."
 
 >[!CONTEXTUALHELP]
 >id="connection_change_accountid"
 >title="Alterar ID da conta"
->abstract="Uma alteração na ID da conta exclui todos os dados existentes na conexão e assimila novamente todos os dados do conjunto de dados com base na nova ID da conta. Essa ação pode ter implicações de custos. <br/><br/>Quando você seleciona **[!UICONTROL Continuar]**, é possível atrasar os relatórios até que o processo seja concluído."
+>abstract="Uma alteração na ID da conta exclui todos os dados existentes na conexão e assimila novamente todos os dados do conjunto de dados com base na nova ID da conta. Essa ação pode ter implicações de custos. <br/><br/>Ao selecionar **[!UICONTROL Continuar]**, é possível atrasar os relatórios até que o processo seja concluído."
 
 >[!CONTEXTUALHELP]
 >id="connection_change_globalaccountid"
->title="Alterar ID de conta global"
->abstract="Uma alteração na ID da conta global exclui todos os dados existentes na conexão e assimila novamente todos os dados do conjunto de dados com base na nova ID da conta global. Essa ação pode ter implicações de custos. <br/><br/>Quando você seleciona **[!UICONTROL Continuar]**, é possível atrasar os relatórios até que o processo seja concluído."
+>title="Alterar ID da conta global"
+>abstract="Uma alteração na ID da conta global exclui todos os dados existentes na conexão e assimila novamente todos os dados do conjunto de dados com base na nova ID da conta global. Essa ação pode ter implicações de custos. <br/><br/>Ao selecionar **[!UICONTROL Continuar]**, é possível atrasar os relatórios até que o processo seja concluído."
 
 >[!CONTEXTUALHELP]
 >id="connection_change_opportunityid"
 >title="Alterar ID de oportunidade"
->abstract="Uma alteração da ID de oportunidade exclui todos os dados existentes na conexão e assimila novamente todos os dados do conjunto de dados com base na nova ID de oportunidade. Essa ação pode ter implicações de custos. <br/><br/>Quando você seleciona **[!UICONTROL Continuar]**, é possível atrasar os relatórios até que o processo seja concluído."
+>abstract="Uma alteração da ID de oportunidade exclui todos os dados existentes na conexão e assimila novamente todos os dados do conjunto de dados com base na nova ID de oportunidade. Essa ação pode ter implicações de custos. <br/><br/>Ao selecionar **[!UICONTROL Continuar]**, é possível atrasar os relatórios até que o processo seja concluído."
 
 >[!CONTEXTUALHELP]
 >id="connection_change_buyinggroupid"
->title="Alterar ID do grupo de compra"
->abstract="Uma alteração da ID do grupo de compra exclui todos os dados existentes na conexão e assimila novamente todos os dados do conjunto de dados com base na nova ID do grupo de compra. Essa ação pode ter implicações de custos. <br/><br/>Quando você seleciona **[!UICONTROL Continuar]**, é possível atrasar os relatórios até que o processo seja concluído."
+>title="Alterar ID de grupo de compras"
+>abstract="Uma alteração da ID de grupo de compras exclui todos os dados existentes na conexão e assimila novamente todos os dados do conjunto de dados com base na nova ID de grupo de compras. Essa ação pode ter implicações de custos. <br/><br/>Ao selecionar **[!UICONTROL Continuar]**, é possível atrasar os relatórios até que o processo seja concluído."
 
 
 A experiência de criação e edição de conexão reúne todos os conjuntos de dados e configurações de conexão no centro da tela com um fluxo de trabalho auxiliar. Ele fornece uma experiência detalhada de seleção, configuração e revisão de conjunto de dados. E permite especificar informações críticas como [tipo de conjunto de dados](#dataset-types), tamanho, esquema, ID do conjunto de dados, status do lote, status de preenchimento retroativo, identidades e muito mais, para reduzir o risco de configuração de conexão incorreta. Esta é uma visão geral dos recursos:
@@ -111,7 +111,7 @@ A experiência de criação e edição de conexão reúne todos os conjuntos de 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar e editar uma conexão](https://video.tv.adobe.com/v/3409303/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar e editar uma conexão](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -178,14 +178,14 @@ Na tela **[!UICONTROL Conexões]** > **[!UICONTROL *Nome da conexão *]**:
    | **[!UICONTROL ID de pessoa]** | A ID de pessoa usada para oferecer suporte a relatórios com base em pessoas para o conjunto de dados. |
    | **[!UICONTROL Chave]** | A chave usada para um conjunto de dados de pesquisa. |
    | **[!UICONTROL Chave correspondente]** | A chave correspondente usada para um conjunto de dados de pesquisa. |
-   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
-   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
+   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
+   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
 
    Você pode pesquisar um conjunto de dados específico usando o campo ![Pesquisa](/help/assets/icons/Search.svg).
 
 ### Customer Journey Analytics B2B edition
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Na tela **[!UICONTROL Conexões]** > **[!UICONTROL *Nome da conexão *]**:
 
@@ -224,8 +224,8 @@ Na tela **[!UICONTROL Conexões]** > **[!UICONTROL *Nome da conexão *]**:
    | **[!UICONTROL ID de pessoa]** | A ID de pessoa usada para oferecer suporte a relatórios com base em pessoas para o conjunto de dados. |
    | **[!UICONTROL Chave]** | A chave usada para um conjunto de dados de pesquisa. |
    | **[!UICONTROL Chave correspondente]** | A chave correspondente usada para um conjunto de dados de pesquisa. |
-   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
-   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
+   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
+   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
 
    Você pode pesquisar um conjunto de dados específico usando o campo ![Pesquisa](/help/assets/icons/Search.svg).
 
@@ -242,7 +242,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="Contêineres opcionais"
->abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global &#x200B;]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras &#x200B;]**: habilita a configuração de grupos de compras em uma conexão."
+>abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global ]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras ]**: habilita a configuração de grupos de compras em uma conexão."
 
 
 
@@ -274,12 +274,12 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="cja_connection_personid"
 >title="ID da pessoa"
->abstract="Selecione uma ID de pessoa (o identificador exclusivo de uma pessoa) entre as identidades disponíveis que você definiu no esquema do conjunto de dados na Experience Platform."
+>abstract="Selecione uma ID de pessoa (o identificador exclusivo de uma pessoa) entre as identidades disponíveis definidas no esquema do conjunto de dados da Experience Platform."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Tipo de chave correspondente"
->abstract="Selecione como associar: com base em uma correspondência por campo ou por container.<br/><br/>**[!UICONTROL Corresponder por campo &#x200B;]**: selecione um campo a ser associado a um dos conjuntos de dados de evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por contêiner]**: selecione um contêiner a ser usado para unir com um dos conjuntos de dados do evento."
+>abstract="Selecione como associar: com base em uma correspondência por campo ou por container.<br/><br/>**[!UICONTROL Corresponder por campo ]**: selecione um campo a ser associado a um dos conjuntos de dados de evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por container]**: selecione um container a ser associado a um dos conjuntos de dados de evento."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
@@ -309,7 +309,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="Contêineres opcionais"
->abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global &#x200B;]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras &#x200B;]**: habilita a configuração de grupos de compras em uma conexão."
+>abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global ]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras ]**: habilita a configuração de grupos de compras em uma conexão."
 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
@@ -344,7 +344,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
 >title="Tipo de chave correspondente"
->abstract="Selecione como associar: com base em uma correspondência por campo ou por container.<br/><br/>**[!UICONTROL Corresponder por campo &#x200B;]**: selecione um campo a ser associado a um dos conjuntos de dados de evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por contêiner]**: selecione um contêiner a ser usado para unir com um dos conjuntos de dados do evento."
+>abstract="Selecione como associar: com base em uma correspondência por campo ou por container.<br/><br/>**[!UICONTROL Corresponder por campo ]**: selecione um campo a ser associado a um dos conjuntos de dados de evento. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por container]**: selecione um container a ser associado a um dos conjuntos de dados de evento."
 
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
@@ -423,7 +423,7 @@ Para editar um conjunto de dados que já está configurado para uma conexão, na
 
 ### Configurações do conjunto de dados
 
-Ao adicionar conjuntos de dados ou editar um conjunto existente, você define as configurações de cada conjunto de dados. As configurações disponíveis dependem do [tipo de conjunto de dados](#dataset-types) e, para alguns tipos de conjunto de dados, do tipo de conexão (com base em pessoa ou na conta do [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}.).
+Ao adicionar conjuntos de dados ou editar um conjunto existente, você define as configurações de cada conjunto de dados. As configurações disponíveis dependem do [tipo de conjunto de dados](#dataset-types) e, para alguns tipos de conjunto de dados, do tipo de conexão (com base em pessoa ou na conta do [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}.).
 
 Todos os conjuntos de dados e tipos de conjuntos de dados têm [configurações e detalhes gerais](#general-dataset-settings-and-details), como importar ou não novos dados e solicitar preenchimentos retroativos.
 
@@ -447,7 +447,7 @@ Para um conjunto de dados de evento em uma conexão baseada em pessoas, você po
 
 ##### Conexão baseada em conta
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Para um conjunto de dados de evento em uma conexão baseada em conta, você pode especificar:
 
@@ -516,7 +516,7 @@ Para um conjunto de dados de pesquisa em uma conexão baseada em pessoas, você 
 
 ##### Conexão baseada em conta
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 ![Baseado em conta de configurações do conjunto de dados de evento de pesquisa](assets/lookup-dataset-settings-b2b.png)
 
@@ -575,7 +575,7 @@ Ao excluir um conjunto de dados, você é notificado sobre as implicações da e
 
 ### Preenchimentos retroativos anteriores
 
-Ao selecionar ![Histórico](/help/assets/icons/History.svg) **[!UICONTROL Preenchimentos retroativos anteriores]** na interface, uma caixa de diálogo **[!UICONTROL Preenchimentos retroativos anteriores: _Nome do conjunto de dados_]**&#x200B;mostra os preenchimentos retroativos mais recentes do conjunto de dados.
+Ao selecionar ![Histórico](/help/assets/icons/History.svg) **[!UICONTROL Preenchimentos retroativos anteriores]** na interface, uma caixa de diálogo **[!UICONTROL Preenchimentos retroativos anteriores: _Nome do conjunto de dados_]**mostra os preenchimentos retroativos mais recentes do conjunto de dados.
 
 ## Tipos de conjunto de dados {#dataset-types}
 
@@ -587,11 +587,11 @@ Para cada conjunto de dados adicionado a essa conexão, o [!UICONTROL Customer J
 
 Existem diferentes tipos de conjunto de dados: dados de [!UICONTROL Evento], [!UICONTROL Perfil], [!UICONTROL Pesquisa] e [!UICONTROL Resumo].
 
-| Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID de pessoa <br/> ID da conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} |
+| Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID de pessoa <br/> ID da conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} |
 |---|---|---|---|---|
-| **[!UICONTROL Evento]** | Dados que representam eventos no tempo. Por exemplo, visitas à web, interações, transações, dados de POS, dados de pesquisa, dados de impressão publicitária e assim por diante. Esses dados podem ser dados típicos de fluxo de cliques, com uma ID de cliente ou uma ID de cookie e um registro de data e hora. Os dados do evento fornecem flexibilidade em relação a qual ID é usada como a ID da pessoa. | Defina para o campo de carimbo de data/hora padrão a partir de esquemas baseados em eventos no [!UICONTROL Experience Platform]. | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento *Série de tempo*. Exemplos incluem *Evento de experiência XDM* ou *Evento de decisão XDM*. | Você pode escolher a ID de pessoa ou a ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} que deseja incluir. Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas identidades pode ser usada como a ID de pessoa ou a ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Os exemplos incluem ID de Cookie, ID com título, ID de Usuário, Código de Rastreamento, ID de Conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} e assim por diante. |
+| **[!UICONTROL Evento]** | Dados que representam eventos no tempo. Por exemplo, visitas à web, interações, transações, dados de POS, dados de pesquisa, dados de impressão publicitária e assim por diante. Esses dados podem ser dados típicos de fluxo de cliques, com uma ID de cliente ou uma ID de cookie e um registro de data e hora. Os dados do evento fornecem flexibilidade em relação a qual ID é usada como a ID da pessoa. | Defina para o campo de carimbo de data/hora padrão a partir de esquemas baseados em eventos no [!UICONTROL Experience Platform]. | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento *Série de tempo*. Exemplos incluem *Evento de experiência XDM* ou *Evento de decisão XDM*. | Você pode escolher a ID de pessoa ou a ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} que deseja incluir. Cada esquema de conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um Namespace de identidade. Qualquer uma dessas identidades pode ser usada como a ID de pessoa ou a ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Os exemplos incluem ID de Cookie, ID com título, ID de Usuário, Código de Rastreamento, ID de Conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} e assim por diante. |
 | **[!UICONTROL Pesquisa]** | Você pode adicionar conjuntos de dados como pesquisas de campos em todos os tipos de conjuntos de dados: conjuntos de dados de perfil, pesquisa e evento (este último sempre foi compatível). Esse recurso adicional expande a capacidade de o Customer Journey Analytics aceitar modelos de dados complexos, incluindo B2B. Esses dados são usados para procurar valores ou chaves encontrados nos dados de evento, perfil ou pesquisa. Você pode adicionar até dois níveis de pesquisas. (Observe que [Campos derivados](/help/data-views/derived-fields/derived-fields.md) não podem ser usados como chaves correspondentes para pesquisas em Conexões). Por exemplo, você pode fazer upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte o [Exemplo de B2B](/help/use-cases/b2b/example.md). | N/A | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento *Registro*, exceto a classe *Perfil Individual XDM*. | N/A |
-| **[!UICONTROL Perfil]** | Dados aplicados à sua conta, pessoas, usuários ou clientes nos dados de [!UICONTROL Evento]. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe *Perfil Individual XDM*. | Você pode escolher que ID de pessoa/ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} deseja incluir. Cada conjunto de dados (exceto conjuntos de dados de resumo), definido em [!DNL Experience Platform], tem seu próprio conjunto de uma ou mais IDs de pessoa ou IDs de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} definidas. Por exemplo, ID de cookie, ID com título, ID de usuário, código de rastreamento, ID de conta e assim por diante.<br>![ID de pessoa ](assets/person-id.png)**Observação**: se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatório refletirá isso. Para mesclar conjuntos de dados, é necessário usar a mesma ID de pessoa ou ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
+| **[!UICONTROL Perfil]** | Dados aplicados à sua conta, pessoas, usuários ou clientes nos dados de [!UICONTROL Evento]. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe *Perfil Individual XDM*. | Você pode escolher que ID de pessoa/ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} deseja incluir. Cada conjunto de dados (exceto conjuntos de dados de resumo), definido em [!DNL Experience Platform], tem seu próprio conjunto de uma ou mais IDs de pessoa ou IDs de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} definidas. Por exemplo, ID de cookie, ID com título, ID de usuário, código de rastreamento, ID de conta e assim por diante.<br>![ID de pessoa ](assets/person-id.png)**Observação**: se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatório refletirá isso. Para mesclar conjuntos de dados, é necessário usar a mesma ID de pessoa ou ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. |
 | **Resumo** | Dados de série temporal que não estão associados a uma ID de pessoa individual. Os dados de resumo representam dados agregados em um nível diferente de agregação, por exemplo, campanhas. Você pode usar esses dados no Customer Journey Analytics para oferecer suporte a vários casos de uso. Veja [Dados resumidos](/help/data-views/summary-data.md) para obter mais informações. | Defina automaticamente para o campo de carimbo de data e hora padrão a partir de esquemas de Métricas de resumo baseadas em eventos no Experience Platform. Somente a granularidade por hora ou por dia é aceita. | Qualquer esquema incorporado ou personalizado baseado na classe *Métricas de resumo XDM*. | N/A |
 
 ## Visualização da conexão {#preview}
@@ -605,7 +605,7 @@ Esta visualização contém algumas colunas que listam a configuração da conex
 
 ## Mapa de conexão
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Para ver um mapa das relações entre os conjuntos de dados que fazem parte da sua conexão, selecione ![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Mapa da conexão]** na caixa de diálogo de configurações de conexão.
 
@@ -682,6 +682,6 @@ Entre em contato com a equipe de suporte da Adobe para obter mais informações 
 
 >[!MORELIKETHIS]
 >
->Blog: [Como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=pt)
+>Blog: [Como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ![Compartilhar](/help/assets/icons/Share.svg)

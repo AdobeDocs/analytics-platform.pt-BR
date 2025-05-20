@@ -8,7 +8,7 @@ role: User
 source-git-commit: 9482dd11ecf4aa6f3f8a45c90c3838a4a3389c73
 workflow-type: tm+mt
 source-wordcount: '2312'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -58,7 +58,7 @@ Use o processo a seguir para exportar tabelas completas para a nuvem:
 >[!CONTEXTUALHELP]
 >id="export-manifest"
 >title="Arquivo manifest"
->abstract="Quando ativado, um arquivo de manifesto é incluído com qualquer delivery de exportação bem-sucedida. O arquivo de manifesto permite confirmar se todos os arquivos foram entregues com êxito."
+>abstract="Quando habilitada, um arquivo de manifesto é incluído em toda entrega de exportação bem-sucedida. O arquivo de manifesto permite confirmar se todos os arquivos foram entregues com êxito. "
 
 <!-- markdownlint-enable MD034 -->
 
