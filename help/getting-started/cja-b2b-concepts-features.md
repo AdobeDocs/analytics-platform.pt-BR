@@ -6,10 +6,10 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+source-git-commit: 6bfd54148736d4b3434eac3ee3aa6fc8a838d57a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1470'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ No Customer Journey Analytics B2B edition, você pode selecionar entre uma conex
 
 ## Containers
 
-No Customer Journey Analytics, os containers são gerados como parte da configuração de uma conexão e visualização de dados. Os containers armazenam grupos de identificadores para facilitar a execução rápida e eficiente de funcionalidades como segmentação, detalhamentos e muito mais.
+Em Customer Journey Analytics, os containers são gerados como parte da configuração de uma conexão e visualização de dados e fornecem a estrutura e o escopo de dados. Os contêineres armazenam grupos de identificadores para sequenciar todos os carimbos de data e hora do evento por identificadores exclusivos. Esse armazenamento facilita a execução rápida e eficiente de funcionalidades como segmentação, atribuição e visualizações.
 
 ### Contêineres padrão
 
@@ -64,6 +64,23 @@ A hierarquia e os relacionamentos entre os contêineres são predeterminados. Op
 >
 >* Se você tiver **habilitado** o contêiner de Conta Global em uma conexão baseada em conta, cada registro nos conjuntos de dados do evento deverá conter uma ID de Conta e uma ID de Conta Global. Caso contrário, o registro será ignorado.
 >* Se você **não habilitou** o contêiner de Conta Global em uma conexão baseada em conta, cada registro nos conjuntos de dados do evento deve conter uma ID de Conta. Caso contrário, o registro será ignorado.
+
+Você pode usar os contêineres B2B para a funcionalidade B2B específica no Analysis Workspace:
+
+* **Segmentação**: [Contêineres de segmentos B2B](/help/components/filters/filters-overview.md#b2b-containers) permitem que você crie segmentos com um escopo de contêiner além de pessoa, sessão ou evento. Por exemplo: um segmento Contas com registro de evento ou contas dos EUA com grupos de compra e segmento de oportunidades de estágio 5.
+
+  >[!NOTE]
+  >
+  >Os dados do evento B2B em uma configuração baseada em conta no Customer Journey Analytics B2B edition podem conter linhas de dados sem uma pessoa ou sessão. Por exemplo: uma linha que detalha a progressão do estágio de oportunidade. Ao avaliar seu segmento, lembre-se de que as pessoas e as sessões podem não ser mais os critérios corretos.
+  >
+
+* **Atribuição**: você pode usar os novos contêineres B2B no [painel de atribuição](/help/analysis-workspace/c-panels/attribution.md), nas [configurações de componente de atribuição](/help/data-views/component-settings/attribution.md), nas [métricas calculadas](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) ou nas [colunas em uma tabela de Forma livre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). As pesquisas de conta são estendidas para 13 meses.
+
+* **Visualizações**: [Fall out](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md), [Tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) e [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), as visualizações dão suporte aos novos contêineres B2B. Por exemplo: você pode usar os novos contêineres para entender como os grupos de compras consomem conteúdo ou como os coortes de oportunidades avançam para o fechamento de uma venda.
+Você também pode definir o container padrão para essas visualizações nas [preferências do usuário](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+
+Segmentos, atribuição e visualizações junto com os contêineres B2B oferecem suporte a você na análise e nos insights B2B profundos.
+
 
 ## Conjuntos de dados
 
