@@ -2,7 +2,7 @@
 title: Análise de produtos no Customer Journey Analytics
 description: Saiba quais recursos você pode usar no Customer Journey Analytics para executar análises de produto de maneira eficaz.
 exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
-source-git-commit: 40e6fbd49a92690253855e314e9999da28a7d2f6
+source-git-commit: 3d8ebd90156f0e44e4c45913a524ed91360dd39e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 1%
@@ -31,9 +31,9 @@ Dados precisos do produto são a base de uma análise eficaz do produto. A assim
 Os seguintes recursos da Adobe Experience Platform e da Customer Journey Analytics permitem assimilar e gerenciar os dados do produto em escala:
 
 * Adobe Experience Platform
-   * [Conjuntos de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview)
+   * [Conjuntos de dados&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
    * [Preparação de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home)
-   * [Distiller de Dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/data-distiller/overview)
+   * [Distiller de Dados&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [Conexões&#x200B;](/help/connections/overview.md)
    * [Visualizações de dados](/help/data-views/data-views.md), incluindo [campos derivados&#x200B;](/help/data-views/derived-fields/derived-fields.md)
@@ -50,8 +50,6 @@ O crescimento do produto depende de insights acionáveis de topo de funil que at
 
 ![Crescimento ativo](/help/guided-analysis/assets/active.png)
 
-![Análise de engajamento](/help/guided-analysis/assets/feature-matrix.png)
-
 Os seguintes recursos no Customer Journey Analytics permitem medir a aquisição e a ativação de maneira eficaz:
 
 * [Análise guiada&#x200B;: Crescimento ativo](/help/guided-analysis/types/active-growth.md)
@@ -63,6 +61,8 @@ Os seguintes recursos no Customer Journey Analytics permitem medir a aquisição
 ## Medir o engajamento e a adoção
 
 Adquirir novos usuários expande a parte superior do funil de produtos. O engajamento se concentra em orientar esses usuários mais para baixo no funil e remover obstáculos ao seu sucesso. O sucesso delas impulsiona diretamente o sucesso dos negócios.
+
+![Análise de engajamento](/help/guided-analysis/assets/feature-matrix.png)
 
 Os seguintes recursos no Customer Journey Analytics ajudam você a rastrear o envolvimento e a adoção do produto:
 
@@ -99,8 +99,8 @@ Os seguintes recursos no Experience Cloud permitem que você atue com eficiênci
 * [Criar e publicar públicos-alvo](/help/components/audiences/publish.md)&#x200B; para ativação do Customer Journey Analytics
 * Ativar públicos-alvo por meio de produtos da Experience Cloud:
    * [Execute experimentos](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) no AJO e no Adobe Target e meça o impacto das variações no Customer Journey Analytics usando o [Painel de experimentação](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Fornecer compromissos no aplicativo](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aos usuários no AJO
-* [Ativar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do Adobe&#x200B;
+   * [Fornecer compromissos no aplicativo](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aos usuários no AJO
+* [Ativar públicos-alvo](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do Adobe&#x200B;
 
 ## Compartilhar insights para a organização&#x200B;
 
