@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '277'
 ht-degree: 2%
 
 ---
 
 # Aumentar contas principais
+
+{{draft-b2b}}
 
 Aumentar e manter contas importantes é uma alta prioridade para empresas B2B. Um pré-requisito para garantir o progresso dos negócios é comunicar-se com as principais partes interessadas em suas contas de destino na hora certa.
 
@@ -51,4 +55,3 @@ Você pode usar estes recursos do Customer Journey Analytics B2B edition:
 1. [Alertas inteligentes](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 1. [Compartilhar com usuários do espaço de trabalho ou com qualquer pessoa](/help/analysis-workspace/curate-share/share-projects.md)
 1. [Comentários](/help/analysis-workspace/build-workspace-project/comment-projects.md)
-

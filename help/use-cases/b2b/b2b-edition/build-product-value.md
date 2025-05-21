@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # Criar valor do produto
+
+{{draft-b2b}}
 
 Você deseja fornecer insights de valor de produto B2B para gerentes de produtos e CMO ou CEOs. Por exemplo, por meio de uma análise de churn orientada por dados ou previsões. E torne esses insights digeríveis por meio de painéis móveis.
 
@@ -61,5 +65,3 @@ Você deseja criar um cartão de pontuação móvel que combine detalhes sobre c
 1. Use **[!UICONTROL Visualizar]** para visualizar o painel. O painel agora está disponível no aplicativo de painel do Adobe Analytics, disponível no [App Store](https://apps.apple.com/us/app/adobe-analytics-dashboards/id1509062264) ou [Google Play](https://play.google.com/store/apps/details?id=com.adobe.analyticsdashboards).
 
    ![Caso de uso B2B - Valor do produto de compilação - Democratizar insights - visualização do cartão de pontuação móvel](assets/b2b-uc-build-product-value-mobile-scorecard-preview.png)
-
-
