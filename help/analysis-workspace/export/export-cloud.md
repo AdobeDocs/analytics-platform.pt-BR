@@ -5,10 +5,10 @@ title: Exportar relatórios do Customer Journey Analytics para a nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c503b5bc65565b342e5e6bea8c019d8e1ee1e429
+source-git-commit: 0891aa2bed446e704b0222eff992c5f5bc200f82
 workflow-type: tm+mt
-source-wordcount: '2284'
-ht-degree: 97%
+source-wordcount: '2340'
+ht-degree: 95%
 
 ---
 
@@ -156,9 +156,9 @@ Os seguintes recursos não são compatíveis e são removidos automaticamente da
 * Linhas estáticas
 * Alinhamento de datas
 * Métricas de conjuntos de dados de resumo
-* Dimensões dinâmicas
+* Itens de dimensão dinâmicos
 
-  Para mais informações, consulte [Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+  Os itens de dimensão dinâmicos são criados quando você solta uma dimensão em um cabeçalho de coluna em uma tabela de forma livre, resultando na filtragem dinâmica da coluna pelos 5 itens de dimensão principais. No Analysis Workspace, esses 5 itens de dimensão principais são atualizados sempre que você carrega o projeto. Em uma exportação de tabela completa, esses itens de dimensão se tornam estáticos. Para mais informações, consulte [Itens de dimensão dinâmicos vs estáticos em tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 * As dimensões na primeira divisão são convertidas e adicionadas como uma dimensão secundária na linha da tabela exportada; qualquer outra divisão não é incluída na tabela
 * A ordenação não é aceita para a maioria dos conjuntos de dados; os dados podem ser ordenados no caso de pequenos conjuntos de dados
 
