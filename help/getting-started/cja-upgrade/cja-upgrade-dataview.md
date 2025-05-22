@@ -1,5 +1,5 @@
 ---
-title: Criar uma exibição de dados no Customer Journey Analytics
+title: Criar uma visualização de dados no Customer Journey Analytics
 description: Saiba mais sobre o caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
@@ -8,17 +8,17 @@ exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
 source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
 workflow-type: tm+mt
 source-wordcount: '401'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
-# Criar uma exibição de dados no Customer Journey Analytics {#upgrade-create-dataview}
+# Criar uma visualização de dados no Customer Journey Analytics {#upgrade-create-dataview}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataview"
->title="Criar uma exibição de dados no Customer Journey Analytics"
+>title="Criar uma visualização de dados no Customer Journey Analytics"
 >abstract="Uma exibição de dados é um container específico do Customer Journey Analytics que permite determinar como interpretar dados de uma conexão. <br><br>Embora a criação inicial da exibição de dados leve apenas alguns minutos, configurar cada dimensão e métrica com as definições de componente desejadas pode levar vários dias. O ajuste dessas configurações é retroativo para que sua organização possa refiná-los ao longo do tempo."
 
 <!-- markdownlint-enable MD034 -->
@@ -31,7 +31,7 @@ A criação de uma visualização de dados envolve criar métricas e dimensões 
 
 Para criar uma visualização de dados:
 
-1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e selecione **[!UICONTROL Visualizações de dados]**, como opção a partir de **[!UICONTROL Gerenciamento de dados]**, no menu superior.
+1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e selecione **[!UICONTROL Visualizações de dados]** ou use a seção **[!UICONTROL Gerenciamento de dados]** no menu superior.
 
 1. Selecione **[!UICONTROL Criar nova visualização de dados]**. Como alternativa, selecione uma visualização de dados existente na lista de visualizações de dados para editá-la.
 

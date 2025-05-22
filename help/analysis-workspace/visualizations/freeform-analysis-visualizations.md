@@ -8,7 +8,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1616'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 O Workspace oferece várias visualizações que permitem criar representações visuais dos seus dados. Como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão, entre outros.
 
-## Tipos
+##  Tipos
 
 Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
@@ -28,7 +28,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 | ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Marcador](/help/analysis-workspace/visualizations/bullet-graph.md) | Uma visualização de gráfico de marcadores que mostra uma comparação ou medição de um valor em relação a outros intervalos de desempenho (metas). |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Uma coorte é um grupo de pessoas com características em comum por um período específico. A tabela de coorte é útil para análise de retenção, churn ou latência. |
 | ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](combo-charts.md) | Um gráfico de combinação acelera a criação de uma visualização de comparação sem precisar criar uma tabela primeiro.  |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Rosca](/help/analysis-workspace/visualizations/donut.md) | Semelhante ao gráfico de pizza, uma visualização de rosca mostra os dados como partes ou segmentos de um todo. |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Rosca](/help/analysis-workspace/visualizations/donut.md) | Semelhante ao gráfico de pizza, a visualização de rosca mostra os dados como partes ou segmentos de um todo. |
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Uma visualização de fallout mostra onde os visitantes saíram e onde continuaram em uma sequência predefinida de páginas. |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) | Uma visualização de fluxo mostra os caminhos percorridos pelos clientes nos seus sites e aplicativos. |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Uma visualização de tabela de forma livre é uma visualização interativa. A visualização de tabela de forma livre é a base para a análise de dados no Workspace. |
@@ -44,7 +44,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 | ![123](/help/assets/icons/123.svg)</p> | [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Uma visualização de número do resumo mostra a célula selecionada como um número grande. |
 | ![Texto](/help/assets/icons/Text.svg) | [Texto](/help/analysis-workspace/visualizations/text.md) | Uma visualização de texto permite adicionar textos definidos pelo usuário ao Workspace. Útil para adicionar contexto à análise e aos insights, além de aproveitar as descrições do painel/da visualização |
 | ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p> | Uma visualização de mapa de árvore exibe dados hierárquicos (estruturados em formato de árvore) como um conjunto de retângulos aninhados. |
-| ![Tipo](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | Uma visualização de venn usa círculos para descrever a sobreposição de métrica de até três segmentos. |
+| ![Tipo](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | Uma visualização de Venn usa círculos para descrever a sobreposição de métricas de até 3 segmentos. |
 
 <!-- Add beneath Horizontal bar in the table above: | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Similar to Fallout, Journey canvas shows where persons left (fell out) and continued through (fell through) a predefined sequence of pages. <p>Unlike Fallout, Journey canvas supports not only linear journeys, but any number of entry points and paths. Furthermore, journeys can be created in Adobe Journey Optimizer and then analyzed in Journey canvas.</p> | -->
 
@@ -58,7 +58,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
    * No painel esquerdo, selecione **Visualizações** de ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) e arraste uma visualização até o painel ao qual deseja adicionar a visualização.
 
-   * No painel ao qual você deseja adicionar a visualização, selecione ![AddCircle](/help/assets/icons/AddCircle.svg) e escolha o ícone que representa a visualização que você deseja adicionar. Passe o cursor do mouse sobre o ícone de cada visualização para ver seu nome.
+   * No painel ao qual você deseja adicionar a visualização, selecione ![AddCircle](/help/assets/icons/AddCircle.svg) e escolha o ícone que representa a visualização que você deseja adicionar. Passe o mouse sobre o ícone de cada visualização para ver seu nome.
 
    * Adicione um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md) e selecione a visualização que deseja adicionar.
 
@@ -158,6 +158,6 @@ Algumas visualizações (como tabela de coorte, fallout, fluxo e outras) contêm
 
 ## Visualizar
 
-Se não tiver certeza de qual visualização selecionar, clique em **[!UICONTROL Visualizar]**  ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) em qualquer linha da tabela de forma livre (disponível ao passar o cursor do mouse). Essa seleção é a maneira mais rápida de adicionar uma visualização. O Analysis Workspace dá um palpite informado de qual visualização se adequaria melhor aso seus dados. Por exemplo, se você tiver uma linha selecionada, ela criará um [gráfico de linhas](line.md) de tendências. Se você tiver três linhas de segmento selecionadas, ele criará um diagrama [venn](venn.md).
+Se não tiver certeza de qual visualização selecionar, clique em **[!UICONTROL Visualizar]**  ![GraphBarVerticalAdd](/help/assets/icons/GraphBarVerticalAdd.svg) em qualquer linha da tabela de forma livre (disponível ao passar o cursor do mouse). Essa seleção é a maneira mais rápida de adicionar uma visualização. O Analysis Workspace dá um palpite informado de qual visualização se adequaria melhor aso seus dados. Por exemplo, se você tiver uma linha selecionada, ela criará um [gráfico de linhas](line.md) de tendências. Se você tiver três linhas de segmento selecionadas, será criado um diagrama de [Venn](venn.md).
 
 ![Visualização rápida](assets/quick-viz.png)

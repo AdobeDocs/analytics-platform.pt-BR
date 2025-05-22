@@ -61,7 +61,7 @@ Agora que você criou um projeto do espaço de trabalho em branco, certifique-se
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="Permitir comentários"
->abstract="Quando habilitada, uma área de comentários fica disponível no painel direito do projeto no Analysis Workspace."
+>abstract="Quando habilitado, uma área de comentários fica disponível no painel direito do projeto no Analysis Workspace."
 
 
 As configurações do projeto fornecem informações sobre o projeto ativo no momento.

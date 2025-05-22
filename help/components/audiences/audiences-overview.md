@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 76%
+ht-degree: 87%
 
 ---
 
@@ -31,7 +31,7 @@ Os públicos-alvo criados no Customer Journey Analytics não precisam se basear 
 
 **Público-alvo**: um conjunto ou lista de identidades que têm um namespace e uma ID específica relacionada a esse namespace. Os públicos-alvo podem ser transferidos da Adobe Experience Platform e dos aplicativos contidos nela (como o Customer Journey Analytics).  Os públicos-alvo podem conter namespaces mistos.
 
-**Segmento**: um conjunto de regras que, quando avaliado ao longo de um conjunto de dados por um período, produz um subconjunto de dados. Um segmento pode ser usado no processo de criação de um público-alvo quando combinado a outros serviços de suporte. Os segmentos são definidos e mantidos no Customer Journey Analytics.
+**Segmento**: um conjunto de regras que, quando avaliadas em um conjunto de dados por um período, produzem um subconjunto de dados. E possível usar um segmento no processo de criação de um público-alvo quando associado a outros serviços de suporte. Os segmentos são definidos e mantidos no Customer Journey Analytics.
 
 ## Permissões
 

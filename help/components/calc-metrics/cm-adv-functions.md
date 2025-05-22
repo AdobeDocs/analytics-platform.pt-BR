@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '5247'
-ht-degree: 89%
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ Para acessar essas funções, selecione **[!UICONTROL Mostrar tudo]** abaixo da 
 
 Uma função de tabela exibe um resultado igual para cada linha da tabela. Uma função de linha exibe um resultado diferente para cada linha da tabela.
 
-Quando aplicável e relevante, uma função é anotada com o tipo de função: [!BADGE Tabela]{type="Neutral"} ou [!BADGE Linha]{type="Neutral"}
+Quando aplicável e relevante, uma função é anotada com o tipo de função: [!BADGE Tabela]{type="Neutral"} ou [!BADGE Linha]{type="Neutral"}
 
 ## O que significa o parâmetro “incluir zeros”?
 
@@ -93,7 +93,7 @@ Um caso de uso comum para essa função é quando você deseja obter uma quantid
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ARC COSINE(metric)]**
 
 
-[!BADGE Linha]{type="Neutral"} Retorna o arco cosseno, ou o inverso do cosseno, de uma métrica. O arco cosseno é o ângulo cujo cosseno é número. O ângulo retornado é dado em radianos no intervalo de 0 (zero) a pi. Se quiser converter o resultado de radianos em graus, multiplique-o por 180/PI().
+[!BADGE Linha]{type="Neutral"} Retorna o arco cosseno, ou inverso do cosseno, de uma métrica. O arco cosseno é o ângulo cujo cosseno é número. O ângulo retornado é dado em radianos no intervalo de 0 (zero) a pi. Se quiser converter o resultado de radianos em graus, multiplique-o por 180/PI().
 
 
 | Argumento | Descrição |
@@ -116,7 +116,7 @@ Um caso de uso comum para essa função é quando você deseja obter uma quantid
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ARC SINE(metric)]**
 
 
-[!BADGE Linha]{type="Neutral"} Retorna o arco seno ou o seno inverso de um número. O arco seno é o ângulo cujo seno é um número. O ângulo retornado é dado em radianos no intervalo -pi/2 a pi/2. Para expressar o arco seno em graus, multiplique o resultado por 180/PI().
+[!BADGE Linha]{type="Neutral"} Retorna o arco seno, ou seno inverso, de um número. O arco seno é o ângulo cujo seno é um número. O ângulo retornado é dado em radianos no intervalo -pi/2 a pi/2. Para expressar o arco seno em graus, multiplique o resultado por 180/PI().
 
 
 | Argumento | Descrição |
@@ -139,7 +139,7 @@ Um caso de uso comum para essa função é quando você deseja obter uma quantid
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL ARC TANGENT(metric)]**
 
 
-[!BADGE Linha]{type="Neutral"} Retorna o arco tangente ou tangente inversa de um número. O arco tangente é o ângulo cuja tangente é um número. O ângulo retornado é dado em radianos no intervalo -pi/2 a pi/2. Para expressar o arco tangente em graus, multiplique o resultado por 180/PI().
+[!BADGE Linha]{type="Neutral"} Retorna o arco tangente, ou tangente inversa, de um número. O arco tangente é o ângulo cuja tangente é um número. O ângulo retornado é dado em radianos no intervalo -pi/2 a pi/2. Para expressar o arco tangente em graus, multiplique o resultado por 180/PI().
 
 
 | Argumento | Descrição |
@@ -186,13 +186,13 @@ CDF-T(x, ∞) ? cdf_z(x)
 >[!CONTEXTUALHELP]
 >id="functions-cdf-z"
 >title="Cdf-Z"
->abstract="Retorna a probabilidade de uma variável aleatória com uma distribuição normal ter uma pontuação z menor que col."
+>abstract="Retorna a probabilidade de uma variável aleatória com distribuição normal ter uma pontuação z menor que col."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CDF-Z(metric, number)]**
 
-Retorna a probabilidade de uma variável aleatória com uma distribuição normal ter uma pontuação z menor que col.
+Retorna a probabilidade de uma variável aleatória com distribuição normal ter uma pontuação z menor que col.
 
 | Argumento | Descrição |
 |---|---|
@@ -215,13 +215,13 @@ CDF-Z(-3) ? 0.0013499
 >[!CONTEXTUALHELP]
 >id="functions-ceil"
 >title="Teto"
->abstract="Retorna o menor número inteiro não inferior a um valor especificado. Por exemplo, se deseja evitar inserir os decimais de moeda na receita e um produto apresenta um valor de US$ 569,34, use a fórmula CEILING(Receita) para arredondar a receita para cima, neste caso, US$ 570."
+>abstract="Retorna o menor número inteiro não inferior a um valor especificado. Por exemplo, se você quiser evitar relatar decimais de moeda para a receita e um produto tiver US$ 569,34, use a fórmula CEILING(Receita) para arredondar a receita para o valor mais próximo em dólar, ou US$ 570."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CEILING(metric)]**
 
-[!BADGE Linha]{type="Neutral"} Retorna o menor inteiro não inferior a um valor especificado. Por exemplo, se deseja evitar inserir os decimais de moeda na receita e um produto apresenta um valor de US$ 569,34, use a fórmula CEILING(Receita) para arredondar a receita para cima, neste caso, US$ 570.
+[!BADGE Linha]{type="Neutral"} Retorna o menor número inteiro que não seja menor que o valor fornecido. Por exemplo, se você quiser evitar relatar decimais de moeda para a receita e um produto tiver US$ 569,34, use a fórmula CEILING(Receita) para arredondar a receita para o valor mais próximo em dólar, ou US$ 570.
 
 | Argumento | Descrição |
 |---|---|
@@ -260,7 +260,7 @@ Confiança é uma medida probabilística sobre quantos indícios existem de que 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-lower"
 >title="Confiança (Inferior)"
->abstract="Calcule a confiança **inferior** válida a qualquer momento usando o método WASKR conforme descrito em [Teorema central do limite uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476)."
+>abstract="Calcule a confiança **inferior** válida a qualquer momento usando o método WASKR, conforme descrito em [Teorema central do limite uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -284,7 +284,7 @@ Confiança é uma medida probabilística sobre quantos indícios existem de que 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-confidence-interval-upper"
 >title="Confiança (Superior)"
->abstract="Calcule a confiança **superior** válida a qualquer momento usando o método WASKR conforme descrito em [Teorema central do limite uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476)."
+>abstract="Calcule a confiança **superior** válida a qualquer momento usando o método WASKR, conforme descrito em [Teorema central do limite uniforme no tempo e sequências de confiança assintótica](https://arxiv.org/pdf/2103.06476)."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -315,7 +315,7 @@ Confiança é uma medida probabilística sobre quantos indícios existem de que 
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
-[!BADGE Linha]{type="Neutral"} Retorna o cosseno do ângulo especificado. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180.
+[!BADGE Linha]{type="Neutral"} Retorna o cosseno do ângulo fornecido. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180.
 
 | Argumento | Descrição |
 |---|---|
@@ -352,13 +352,13 @@ Retorna a raiz de cúbica positiva de um número. A raiz cúbica de um número �
 >[!CONTEXTUALHELP]
 >id="functions-cumul"
 >title="Cumulativo"
->abstract="Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos ou x. Se n &lt; 0, soma os elementos anteriores."
+>abstract="Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos de x. Se n &lt; 0, soma os elementos anteriores."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
-Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos ou x. Se n &lt; 0, soma os elementos anteriores.
+Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos de x. Se n &lt; 0, soma os elementos anteriores.
 
 | Argumento | Descrição |
 | --- | --- |
@@ -381,13 +381,13 @@ Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos 
 >[!CONTEXTUALHELP]
 >id="functions-cumul-avg"
 >title="Cumulativo (Média)"
->abstract="Retorna a média dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos ou x. Se n &lt; 0, soma os elementos anteriores."
+>abstract="Retorna a média dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos de x. Se n &lt; 0, soma os elementos precedentes."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
-Retorna a média dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos ou x. Se n &lt; 0, soma os elementos anteriores.
+Retorna a média dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos de x. Se n &lt; 0, soma os elementos precedentes.
 
 | Argumento | Descrição |
 | --- | --- |
@@ -440,7 +440,7 @@ Igual. A saída é 0 (falso) ou 1 (verdadeiro).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabela]{type="Neutral"} Regressão exponencial: Y = a exp(X) + b. Retorna o coeficiente de correlação.
+[!BADGE Tabela]{type="Neutral"} Regressão exponencial: Y = a exp(X) + b. Retorna o coeficiente de correlação.
 
 
 | Argumento | Descrição |
@@ -463,7 +463,7 @@ Igual. A saída é 0 (falso) ou 1 (verdadeiro).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Linha]{type="Neutral"} Regressão exponencial: Y = a exp(X) + b. Retorna Y.
+[!BADGE Linha]{type="Neutral"} Regressão exponencial: Y = a exp(X) + b. Retorna Y.
 
 
 | Argumento | Descrição |
@@ -487,7 +487,7 @@ Igual. A saída é 0 (falso) ou 1 (verdadeiro).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabela]{type="Neutral"} Regressão exponencial: Y = a exp(X) + b. Retorna b.
+[!BADGE Tabela]{type="Neutral"} Regressão exponencial: Y = a exp(X) + b. Retorna b.
 
 | Argumento | Descrição |
 |---|---|
@@ -510,7 +510,7 @@ Igual. A saída é 0 (falso) ou 1 (verdadeiro).
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabela]{type="Neutral"} Regressão exponencial: Y = a exp(X) + b. Retorna a.
+[!BADGE Tabela]{type="Neutral"} Regressão exponencial: Y = a exp(X) + b. Retorna a.
 
 
 | Argumento | Descrição |
@@ -527,13 +527,13 @@ Igual. A saída é 0 (falso) ou 1 (verdadeiro).
 >[!CONTEXTUALHELP]
 >id="functions-floor"
 >title="Piso"
->abstract="Retorna o maior número inteiro não superior a um valor especificado. Por exemplo, se deseja evitar inserir os decimais de moeda na receita e um produto apresenta um valor de US$ 569,34, use a fórmula FLOOR(Receita) para arredondar a receita para baixo, neste caso, US$ 569."
+>abstract="Retorna o maior número inteiro não superior a um valor especificado. Por exemplo, se você quiser evitar relatar decimais de moeda para a receita e um produto tiver US$ 569,34, use a fórmula FLOOR(Receita) para arredondar a receita para o valor mais próximo em dólar, ou US$ 569."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL FLOOR(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Linha]{type="Neutral"} Retorna o maior inteiro não maior que um valor especificado. Por exemplo, se deseja evitar inserir os decimais de moeda na receita e um produto apresenta um valor de US$ 569,34, use a fórmula FLOOR(Receita) para arredondar a receita para baixo, neste caso, US$ 569.
+[!BADGE Linha]{type="Neutral"} Retorna o maior número inteiro que não seja maior que um valor fornecido. Por exemplo, se você quiser evitar relatar decimais de moeda para a receita e um produto tiver US$ 569,34, use a fórmula FLOOR(Receita) para arredondar a receita para o valor mais próximo em dólar, ou US$ 569.
 
 | Argumento | Descrição |
 |---|---|
@@ -661,14 +661,14 @@ Maior ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 >[!CONTEXTUALHELP]
 >id="functions-if"
 >title="Se"
->abstract="Se o valor do parâmetro de condição for diferente de zero (verdadeiro), o resultado será o valor do parâmetro value_if_true. Caso contrário, será o valor do parâmetro value_if_false."
+>abstract="Se o valor do parâmetro de condição for diferente de zero (verdadeiro), o resultado será o valor do parâmetro value_if_true. Caso contrário, é o valor do parâmetro value_if_false."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL IF(logical_test, value_if_true, value_if_false)]**
 
 
-[!BADGE Linha]{type="Neutral"} Se o valor do parâmetro de condição for diferente de zero (true), o resultado será o valor do parâmetro value_if_true. Caso contrário, será o valor do parâmetro value_if_false.
+[!BADGE Linha]{type="Neutral"} Se o valor do parâmetro de condição for diferente de zero (verdadeiro), o resultado será o valor do parâmetro value_if_true. Caso contrário, é o valor do parâmetro value_if_false.
 
 
 | Argumento | Descrição |
@@ -736,13 +736,13 @@ Menor ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 >[!CONTEXTUALHELP]
 >id="functions-waskr-lift"
 >title="Aumento"
->abstract="A elevação da proporção em comparação ao valor de controle."
+>abstract="O aumento da proporção em comparação ao valor de controle."
 
 <!-- markdownlint-enable MD034 -->
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL LIFT(normalizing-container, success-metric, control)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL LIFT(container de normalização, métrica de sucesso, controle)]**
 
-A elevação da proporção em comparação ao valor de controle.
+O aumento da proporção em comparação ao valor de controle.
 
 | Argumento | Descrição |
 | --- | --- |
@@ -766,7 +766,7 @@ A elevação da proporção em comparação ao valor de controle.
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna o coeficiente de correlação.
+[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna o coeficiente de correlação.
 
 
 | Argumento | Descrição |
@@ -791,7 +791,7 @@ A elevação da proporção em comparação ao valor de controle.
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna b.
+[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna b.
 
 
 | Argumento | Descrição |
@@ -816,7 +816,7 @@ A elevação da proporção em comparação ao valor de controle.
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Linha]{type="Neutral"} Regressão linear: Y = a X + b. Retorna Y.
+[!BADGE Linha]{type="Neutral"} Regressão linear: Y = a X + b. Retorna Y.
 
 
 | Argumento | Descrição |
@@ -840,7 +840,7 @@ A elevação da proporção em comparação ao valor de controle.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna a.
+[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna a.
 
 | Argumento | Descrição |
 |---|---|
@@ -884,7 +884,7 @@ A elevação da proporção em comparação ao valor de controle.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão logarítmica: Y = a ln(X) + b. Retorna o coeficiente de correlação.
+[!BADGE Tabela]{type="Neutral"} Regressão logarítmica: Y = a ln(X) + b. Retorna o coeficiente de correlação.
 
 | Argumento | Descrição |
 |---|---|
@@ -906,7 +906,7 @@ A elevação da proporção em comparação ao valor de controle.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão de log: Y = a ln(X) + b. Retorna b.
+[!BADGE Tabela]{type="Neutral"} Regressão logarítmica: Y = a ln(X) + b. Retorna b.
 
 | Argumento | Descrição |
 |---|---|
@@ -929,7 +929,7 @@ A elevação da proporção em comparação ao valor de controle.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Linha]{type="Neutral"} Regressão logarítmica: Y = a ln(X) + b. Retorna Y.
+[!BADGE Linha]{type="Neutral"} Regressão logarítmica: Y = a ln(X) + b. Retorna Y.
 
 | Argumento | Descrição |
 |---|---|
@@ -952,7 +952,7 @@ A elevação da proporção em comparação ao valor de controle.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão de log: Y = a ln(X) + b. Retorna a.
+[!BADGE Tabela]{type="Neutral"} Regressão logarítmica: Y = a ln(X) + b. Retorna a.
 
 | Argumento | Descrição |
 |---|---|
@@ -1087,7 +1087,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna o coeficiente de correlação.
+[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna o coeficiente de correlação.
 
 | Argumento | Descrição |
 |---|---|
@@ -1111,7 +1111,7 @@ Retorna Pi: 3,14159...
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna b.
+[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna b.
 
 
 | Argumento | Descrição |
@@ -1134,7 +1134,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Linha]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna Y.
+[!BADGE Linha]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna Y.
 
 | Argumento | Descrição |
 |---|---|
@@ -1157,7 +1157,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna a.
+[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna a.
 
 | Argumento | Descrição |
 |---|---|
@@ -1180,7 +1180,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão quadrática: Y = (a + bX) ^ 2, Retorna o coeficiente de correlação.
+[!BADGE Tabela]{type="Neutral"} Regressão quadrática: Y = (a + bX) ^ 2. Retorna o coeficiente de correlação.
 
 | Argumento | Descrição |
 |---|---|
@@ -1201,7 +1201,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão quadrática: Y = (a + bX) ^ 2, Retorna a.
+[!BADGE Tabela]{type="Neutral"} Regressão quadrática: Y = (a + bX) ^ 2. Retorna a.
 
 | Argumento | Descrição |
 |---|---|
@@ -1223,7 +1223,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Linha]{type="Neutral"} Regressão quadrática: Y = (a + bX) ^ 2, Retorna Y.
+[!BADGE Linha]{type="Neutral"} Regressão quadrática: Y = (a + bX) ^ 2. Retorna Y.
 
 | Argumento | Descrição |
 |---|---|
@@ -1245,7 +1245,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL QUADRATIC REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão quadrática: Y = (a + bX) ^ 2, Retorna b.
+[!BADGE Tabela]{type="Neutral"} Regressão quadrática: Y = (a + bX) ^ 2. Retorna b.
 
 | Argumento | Descrição |
 |---|---|
@@ -1268,7 +1268,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão recíproca: Y = a + b X ^ -1. Retorna o coeficiente de correlação.
+[!BADGE Tabela]{type="Neutral"} Regressão recíproca: Y = a + b X ^ -1. Retorna o coeficiente de correlação.
 
 | Argumento | Descrição |
 |---|---|
@@ -1290,7 +1290,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão recíproca: Y = a + b X ^ -1. Retorna a.
+[!BADGE Tabela]{type="Neutral"} Regressão recíproca: Y = a + b X ^ -1. Retorna a.
 
 | Argumento | Descrição |
 |---|---|
@@ -1312,7 +1312,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Linha]{type="Neutral"} Regressão recíproca: Y = a + b X ^ -1. Retorna Y.
+[!BADGE Linha]{type="Neutral"} Regressão recíproca: Y = a + b X ^ -1. Retorna Y.
 
 | Argumento | Descrição |
 |---|---|
@@ -1334,7 +1334,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL RECIPROCAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão recíproca: Y = a + b X ^ -1. Retorna b.
+[!BADGE Tabela]{type="Neutral"} Regressão recíproca: Y = a + b X ^ -1. Retorna b.
 
 | Argumento | Descrição |
 |---|---|
@@ -1344,18 +1344,18 @@ Retorna Pi: 3,14159...
 
 
 
-## Variância da amostra
+## Variância de amostras
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
->title="Variância da amostra"
->abstract="Calcula uma estimativa da variância da amostra usando a fórmula (sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1)). onde N é a contagem do container de normalização. <br/>Isso é usado como parte dos cálculos de confiança *válidos a qualquer momento*. Geralmente esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*."
+>title="Variância de amostras"
+>abstract="Calcula uma estimativa da variância da amostra usando a fórmula (soma(métrica^2) / (N - 1)) - (soma(métrica))^2/(N*(N-1)). em que N é a contagem do container de normalização. <br/>Isso é usado como parte de cálculos de confiança *válidos em qualquer momento*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*."
 
-![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VARIAÇÃO DE AMOSTRA(contêiner de normalização, métrica de sucesso)]**
+![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VARIAÇÃO DE AMOSTRA(container de normalização, métrica de sucesso)]**
 
-Calcula uma estimativa da variação da amostra.
+Calcula uma estimativa da variância da amostra.
 
 | Argumento | Descrição |
 | --- | --- |
@@ -1380,7 +1380,7 @@ Calcula uma estimativa da variação da amostra.
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
-[!BADGE Linha]{type="Neutral"} Retorna o seno do ângulo especificado. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180.
+[!BADGE Linha]{type="Neutral"} Retorna o seno do ângulo fornecido. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180.
 
 
 | Argumento | Descrição |
@@ -1492,7 +1492,7 @@ Retorna a tangente do ângulo especificado. Se o ângulo estiver em graus, multi
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL Z-SCORE(metric, include_zeros)]**
 
-[!BADGE Linha]{type="Neutral"} O desvio da média dividido pelo desvio padrão.
+[!BADGE Linha]{type="Neutral"} O desvio da média dividido pelo desvio padrão.
 
 | Argumento | Descrição |
 |---|---|

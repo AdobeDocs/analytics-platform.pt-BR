@@ -6,8 +6,8 @@ exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 91%
+source-wordcount: '1145'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Insights rápidos no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Insights rápidos](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/quickinsight) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Insights rápidos no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [painel Insights rápidos](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/quickinsight) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -37,7 +37,7 @@ Ao começar a usar o [!UICONTROL Analysis Workspace] pela primeira vez, você po
 * quais visualizações são mais úteis,
 * quais dimensões e métricas podem facilitar os insights,
 * para onde arrastar e soltar itens,
-* onde criar um segmento,
+* onde criar um segmento
 * e muito mais.
 
 Para ajudar com essas questões, o painel [!UICONTROL Insights rápidos] usa um algoritmo que apresenta as dimensões, métricas, segmentos e intervalos de datas mais populares que sua empresa usa. Este algoritmo se baseia no uso de componentes de dados da sua própria empresa no [!UICONTROL Analysis Workspace]. Na verdade, você vê dimensões, métricas e segmentos marcados com [!UICONTROL POPULAR] no menu suspenso, como mostrado aqui:
@@ -62,7 +62,7 @@ Veja a seguir alguns dos termos básicos que você precisa conhecer. Cada tabela
 | [!UICONTROL Métrica] | Métricas são informações quantitativas sobre a atividade da pessoa, como exibições, click-throughs, recarregamentos, tempo médio gasto, unidades, pedidos, receita e assim por diante. |
 | **[!UICONTROL Visualização]** | O espaço de trabalho oferece [várias visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para criar representações visuais dos seus dados. Como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão, entre outros. |
 | **[!UICONTROL Detalhamento de dimensão]** | Um detalhamento de dimensão é uma forma de detalhar uma dimensão com outras dimensões. Por exemplo, você pode analisar os Estados Unidos por dispositivos móveis para obter o número de visitas em dispositivos móveis por estado. Também é possível detalhar dispositivos móveis por tipos de dispositivos móveis, por regiões, por campanhas internas e muito mais. |
-| **[!UICONTROL Segmento]** | Os segmentos permitem identificar subconjuntos de pessoas com base em características ou interações no site. Por exemplo, você pode criar segmentos de [!UICONTROL Pessoas] com base em <li>atributos: tipo de navegador, dispositivo, número de visitas, país, gênero ou</li><li>interações: campanhas, pesquisa por palavra-chave, mecanismo de pesquisa ou</li><li>saídas e entradas: pessoas do Facebook, uma página de destino definida, um domínio referenciador ou</li><li> variáveis personalizadas: campos de formulário, categorias definidas, ID do cliente. |
+| **[!UICONTROL Segmento]** | Os segmentos permitem identificar subconjuntos de pessoas com base em características ou interações no site. Por exemplo, você pode criar segmentos de [!UICONTROL Pessoas] com base em <li>atributos: tipo de navegador, dispositivo, número de visitas, país, gênero ou</li><li>interações: campanhas, pesquisa por palavra-chave, mecanismo de pesquisa ou</li><li>saídas e entradas: pessoas do Facebook, uma página de destino definida, um domínio referenciador ou</li><li> variáveis personalizadas: campos de formulário, categorias definidas, ID do cliente. |
 
 ## Usar
 
@@ -83,7 +83,7 @@ Selecione os blocos de construção:
 
 * **[!UICONTROL Analisar]**: especifique uma dimensão (laranja)
 * **[!UICONTROL por]**: especifique uma métrica (verde)
-* **[!UICONTROL segmentar por]** - especifique um segmento (azul)
+* **[!UICONTROL segmentar por]**: especifique um segmento (azul)
 * **[!UICONTROL em]**: especifique um intervalo de datas (roxo).
 
 É necessário selecionar pelo menos uma dimensão e uma métrica para que a visualização funcione corretamente.
@@ -105,7 +105,7 @@ Selecione **[!UICONTROL Limpar]** para limpar todos os campos de entrada.
 
    ![A tabela de forma livre que mostra a dimensão verticalmente e a métrica horizontalmente.](assets/quick-insights-output.png)
 
-   * Uma tabela de forma livre com a dimensão (código do país) e a métrica (sessões), segmentadas por sessões da Web nos últimos 12 meses.
+   * Uma tabela de forma livre com a dimensão (Código do país) e a métrica (Sessões), segmentadas por sessões da web nos últimos 12 meses.
 
    * Uma visualização complementar, neste caso um [gráfico de barras](/help/analysis-workspace/visualizations/bar.md). A visualização gerada tem como base o tipo de dados que você adicionou à tabela. Todos os dados baseados em tempo (como [!UICONTROL Sessões] por dia/mês) utilizam um gráfico de [!UICONTROL Linhas] por padrão. Todos os dados não baseados em tempo (como [!UICONTROL Sessões] por [!UICONTROL Dispositivo]) utilizam um gráfico de [!UICONTROL Barras] por padrão. Você pode alterar o tipo de visualização clicando na seta suspensa ao lado do tipo de visualização.
 
@@ -129,7 +129,7 @@ Outras dicas úteis aparecerão no [!UICONTROL Criador de insights rápidos] e a
 
    * Adicionar mais métricas **[!UICONTROL por]**: permite adicionar um máximo de duas métricas. Consulte ➍ e ➎.
 
-   * **[!UICONTROL segmentar por]**: você pode adicionar até mais 2 segmentos. Por exemplo, adicione Reservas como um segmento e combine-o com os segmentos Pessoas que reservam com frequência e Primeiro voo para fazer uma comparação. Consulte ➏, ➐ e ➑.
+   * **[!UICONTROL segmentar por]**: você pode adicionar mais 2 segmentos. Por exemplo, adicione Reservas como um segmento e combine-o com os segmentos Pessoas que reservam com frequência e Primeiro voo para fazer uma comparação. Consulte ➏, ➐ e ➑.
 
    * em: permite especificar o intervalo de datas. Consulte ➒.
 

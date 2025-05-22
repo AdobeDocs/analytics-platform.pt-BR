@@ -19,7 +19,7 @@ ht-degree: 97%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Configurações de componente"
->abstract="Visualize e defina o nome, a descrição e outras configurações relacionadas a um componente. Marque esta caixa para ocultar este componente de usuários não admins nos relatórios. Admins ainda o poderão acessar, clicando em **[!UICONTROL Mostrar todos os componentes]** em um projeto do Workspace."
+>abstract="Visualize e configure o nome, a descrição e outras configurações relacionadas a um componente. Marque esta caixa para ocultar este componente de usuários não admins nos relatórios. Admins ainda podem acessar o componente selecionando **[!UICONTROL Mostrar todos os componentes]** em um projeto do espaço de trabalho."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -7,7 +7,7 @@ exl-id: 5b4b2e2b-0a73-48df-a40c-98d2c47f94c8
 source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
 workflow-type: tm+mt
 source-wordcount: '996'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Para criar um alerta:
 
 ## Construtor de alertas
 
-A interface do Criador de alertas é semelhante àquela que cria segmentos ou métricas calculadas no Customer Journey Analytics:
+A interface do Criador de alertas é familiar para pessoas que criaram segmentos ou métricas calculadas no Customer Journey Analytics:
 
 ![Interface do criador de alertas](assets/alert-builder.png)
 

@@ -8,7 +8,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 88%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Para gerenciar componentes na interface principal do Customer Journey Analytics:
 
 Você pode gerenciar os seguintes componentes:
 
-* [Segmentos](filters/filters-overview.md): crie, gerencie, compartilhe e aplique segmentos avançados de público-alvo em seus relatórios. Os segmentos permitem identificar subconjuntos de pessoas com base em características ou interações.
+* [Segmentos](filters/filters-overview.md): crie, gerencie, compartilhe e aplique segmentos de público-alvo eficientes e com foco em seus relatórios. Os segmentos permitem identificar subconjuntos de pessoas com base em características ou interações.
 * [Métricas calculadas:](calc-metrics/calc-metr-overview.md) use métricas e fórmulas como novos componentes para relatórios
 * [Intervalos de data](date-ranges/create.md): personalize e ajuste os intervalos de data do Analysis Workspace.
 * [Anotações](/help/components/annotations/overview.md): comunique nuances e insights de dados contextuais à sua organização.
@@ -36,7 +36,7 @@ Você pode gerenciar os seguintes componentes:
 
 ## Componentes do Analysis Workspace
 
-Os componentes do Analysis Workspace consistem em métricas, dimensões, segmentos e intervalos de datas que você pode arrastar e soltar em painéis e visualizações no seu projeto do Workspace. Os componentes personalizados que você cria são adicionados a esses painéis, como uma métrica calculada ou um intervalo de datas personalizado.
+Os componentes no Analysis Workspace consistem em métricas, dimensões, segmentos e intervalos de datas que você pode arrastar e soltar em painéis e visualizações no seu projeto do espaço de trabalho. Os componentes personalizados que você cria são adicionados a esses painéis, como uma métrica calculada ou um intervalo de datas personalizado.
 
 Para acessar o painel Componentes, selecione ![Preparar](/help/assets/icons/Curate.svg) **[!UICONTROL Componentes]** no painel de botões.
 
@@ -72,7 +72,7 @@ Consulte [Criar um projeto](/help/analysis-workspace/home.md) para obter infor
    | ![Compartilhar](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Compartilhar**] | Compartilhe componentes com usuários em sua organização. Essa opção está disponível somente para componentes personalizados, como segmentos ou métricas calculadas. |
    | ![Excluir](/help/assets/icons/Delete.svg) [!UICONTROL **Excluir**] | Exclua componentes que não são mais necessários. Essa opção está disponível somente para componentes personalizados, como segmentos ou métricas calculadas. |
 
-Os componentes personalizados também podem ser gerenciados por meio de seus respectivos Gerenciadores de componentes. Por exemplo, consulte [Gerenciar segmentos](/help/components/filters/manage-filters.md).
+Os componentes personalizados também podem ser gerenciados por meio de seus respectivos Gerenciadores de componentes. Por exemplo, consulte [Gerenciar segmentos](/help/components/filters/manage-filters.md).
 
 ## Gerenciar a lista de componentes
 
@@ -84,7 +84,7 @@ Você pode pesquisar, filtrar e classificar a lista de componentes no painel esq
 
 2. No campo de pesquisa, comece a digitar o nome do componente que deseja usar em seu projeto.
 
-   Uma cor e um ícone identificam o tipo de componente. **Dimensões** ![Ícone de Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) são laranja, **Segmentos** ![Ícone de segmento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis, **Intervalos de datas** ![Ícone de intervalo de datas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxos e **Métricas** ![Ícone de métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) são verdes.<br/>O ícone do Adobe ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) indica um modelo de métrica calculada ou um modelo de segmento. O ícone de calculadora ![Ícone da calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indica uma métrica calculada criada por um(a) admin da organização.
+   Uma cor e um ícone identificam o tipo de componente. **Dimensões** ![Ícone de Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) são laranja, **Segmentos** ![Ícone de segmento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis, **Intervalos de datas** ![Ícone de intervalo de datas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxos e **Métricas** ![Ícone de métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) são verdes.<br/>O ícone da Adobe ![AdobeLogo](/help/assets/icons/AdobeLogoSmall.svg) indica um modelo de métrica calculado ou um modelo de segmento. O ícone de calculadora ![Ícone da calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indica uma métrica calculada criada por um(a) admin da organização.
 
 3. Selecione o componente no menu suspenso.
 
@@ -102,7 +102,7 @@ Você pode pesquisar, filtrar e classificar a lista de componentes no painel esq
    | ![Estrela](/help/assets/icons/Star.svg) | **[!UICONTROL Favoritos]** | Mostrar somente componentes que estão na lista de Favoritos. <br/>Para obter informações sobre como adicionar componentes à lista de favoritos, consulte [Gerenciar componentes](#manage-components). |
    | ![Dimensões](/help/assets/icons/Dimensions.svg) | **[!UICONTROL Dimensões]** | Mostrar somente componentes que são dimensões. |
    | ![Evento](/help/assets/icons/Event.svg) | **[!UICONTROL Métricas]** | Mostrar somente componentes que são métricas. |
-   | ![Segmentação](/help/assets/icons/Segmentation.svg) | **[!UICONTROL Segmentos]** | Mostrar somente componentes que sejam segmentos. |
+   | ![Segmentação](/help/assets/icons/Segmentation.svg) | **[!UICONTROL Segmentos]** | Mostrar somente componentes que são segmentos.  |
    | ![Calendário](/help/assets/icons/Calendar.svg) | **[!UICONTROL Intervalos de datas]** | Mostrar somente componentes que são intervalos de datas. |
    | ![Rótulo](/help/assets/icons/Label.svg) | **[!UICONTROL *Nome da tag *]** | Mostrar somente componentes com as tags específicas selecionadas. Há uma tag dedicada disponível para o modelo da Adobe, que são as [métricas calculadas padrão](/help/components/calc-metrics/default-calcmetrics.md) da Adobe. |
 

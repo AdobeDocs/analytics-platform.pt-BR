@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1053'
-ht-degree: 75%
+ht-degree: 95%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 75%
 
 
 
-[!UICONTROL Persistência] é a capacidade de um determinado valor de dimensão atribuir a uma métrica além do evento em que está definido. Ela usa uma combinação de alocação e expiração.
+[!UICONTROL Persistência] é a capacidade de um determinado valor de dimensão ser atribuído a uma métrica além do evento em que foi definido. Ela usa uma combinação de alocação e expiração.
 
 ![Janela de exibições de dados destacando as opções de Persistência](../assets/persistence.png)
 
-* **A Alocação** permite determinar qual valor manter quando mais de um item de dimensão puder persistir de cada vez em uma única coluna.
+* A **Alocação** permite determinar qual valor manter caso mais de um item de dimensão persista ao mesmo tempo em uma única coluna.
 
   >[!NOTE]
   >
@@ -45,8 +45,8 @@ A [!UICONTROL Persistência] está disponível somente em dimensões e é retroa
 | Configuração | Descrição |
 | --- | --- |
 | [!UICONTROL Definir persistência] | Habilite a persistência para a dimensão. Se a persistência não estiver habilitada, a dimensão se relacionará somente às métricas que existem no mesmo evento. Essa configuração é desativada pelo padrão. |
-| [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são:<ul><li>**[!UICONTROL Mais recente]**: os valores na dimensão persistem até serem substituídos por valores subsequentes</li><li> **[!UICONTROL Original]**: o primeiro valor desta dimensão persiste e não é substituído por valores subsequentes</li><li>**[!UICONTROL Todos]**: todos os valores desta dimensão persistem simultaneamente</li><li>**[!UICONTROL Primeiro conhecimento]**: o primeiro valor desta dimensão é usado e será aplicado a todos os eventos anteriores e posteriores.</li><li>**[!UICONTROL Último valor conhecido]**: o último valor desta dimensão é usado e será aplicado a todos os eventos anteriores e posteriores.</li></ul> |
-| [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: <ul><li>**[!UICONTROL Sessão]** (padrão)</li><li>**[!UICONTROL Pessoa]**</li><li>**[!UICONTROL Horário personalizado]**</li><li>**[!UICONTROL Métrica]**</li></ul>. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). O tempo máximo de expiração que pode ser definido é de 90 dias. Se você selecionar uma alocação de [!UICONTROL Todos], somente a expiração de [!UICONTROL Sessão] ou [!UICONTROL Pessoa] estará disponível. |
+| [!UICONTROL Alocação] | Permite especificar o modelo de alocação usado em uma dimensão para persistência. As opções são:<ul><li>**[!UICONTROL Mais recente]**: os valores na dimensão persistem até serem substituídos por valores subsequentes</li><li> **[!UICONTROL Original]**: o primeiro valor desta dimensão persiste e não é substituído por valores subsequentes</li><li>**[!UICONTROL Todos]**: todos os valores desta dimensão persistem simultaneamente</li><li>**[!UICONTROL Primeiro valor conhecido]**: o primeiro valor desta dimensão é usado e será aplicado a todos os eventos anteriores e posteriores.</li><li>**[!UICONTROL Último valor conhecido]**: o último valor desta dimensão é usado e será aplicado a todos os eventos anteriores e posteriores.</li></ul> |
+| [!UICONTROL Expiração] | Permite especificar a janela de persistência para uma dimensão. As opções são: <ul><li>**[!UICONTROL Sessão]** (padrão)</li><li>**[!UICONTROL Pessoa]**</li><li>**[!UICONTROL Hora personalizada]**</li><li>**[!UICONTROL Métrica]**</li></ul>. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). O tempo máximo de expiração que pode ser definido é de 90 dias. Se você selecionar uma alocação de [!UICONTROL Todos], somente a expiração de [!UICONTROL Sessão] ou [!UICONTROL Pessoa] estará disponível. |
 
 {style="table-layout:auto"}
 
@@ -90,11 +90,11 @@ Detalhes sobre as configurações de alocação disponíveis.
 Detalhes sobre as configurações de expiração disponíveis.
 
 * **Sessão**: expira após uma determinada sessão. Janela de expiração padrão.
-* **Janela de relatório da pessoa**: expira ao final da janela de relatório.
-* **Janela de Relatórios de Conta Global** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao final da janela de relatórios.
-* **Janela de relatório de conta** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao final da janela de relatório.
-* **Janela de relatório de oportunidade** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao final da janela de relatório.
-* **Janela de Relatório do Grupo de Compras** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao final da janela de relatório.
+* **Janela do relatório de pessoas**: expira no final da janela de relatórios.
+* **Janela de relatórios de contas globais** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao término da janela de relatórios.
+* **Janela de relatórios de conta** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao término da janela de relatórios.
+* **Janela de relatório de oportunidade** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao término da janela de relatórios.
+* **Janela de relatório de grupo de compra** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: expira ao término da janela de relatórios.
 * **Hora personalizada**: expira após um período específico (até 90 dias). Essa opção de expiração só está disponível para modelos de alocação Original e Mais recente. Ao usar a expiração com base em tempo, os valores anteriores ao início da janela de relatórios (até 90 dias) são considerados.
 * **Métrica**: quando esta métrica é vista em um evento, expira imediatamente o valor persistente na dimensão. Você pode usar qualquer métrica como o fim da expiração dessa dimensão. Essa opção de expiração só está disponível para as configurações de alocação Original e Mais recente.
 
@@ -108,7 +108,7 @@ Consulte [Uso de dimensões e métricas de vinculação no Customer Journey Ana
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões de vinculação](https://video.tv.adobe.com/v/3409296/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões de vinculação](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

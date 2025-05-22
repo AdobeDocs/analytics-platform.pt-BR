@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -77,7 +77,7 @@ Para criar um painel:
 
 ## Visualização de dados
 
-Cada painel está associado a uma [visualização de dados](/help/data-views/data-views.md), identificada por ![Dados](/help/assets/icons/Data.svg) **[!UICONTROL *nome da visualização de dados *]**&#x200B;no menu suspenso na parte superior direita do painel.
+Cada painel está associado a uma [visualização de dados](/help/data-views/data-views.md), identificada por ![Dados](/help/assets/icons/Data.svg) **[!UICONTROL *nome da visualização de dados *]**no menu suspenso na parte superior direita do painel.
 
 Ao criar um projeto em branco no espaço de trabalho, a visualização de dados padrão do painel inicial é a visualização de dados na qual você trabalhou pela última vez no Customer Journey Analytics.
 
@@ -107,7 +107,7 @@ O calendário do painel controla o intervalo de datas de relatórios para tabela
 ![A janela do calendário mostrando o intervalo de datas selecionado.](assets/panel-calendar.png)
 
 1. Selecione um intervalo de datas escolhendo primeiro a data inicial e, em seguida, a data final.
-Como alternativa, selecione uma **[!UICONTROL Predefinição]** no menu suspenso [!UICONTROL *Selecionar uma predefinição*].
+Também é possível selecionar uma **[!UICONTROL predefinição]** no menu suspenso [!UICONTROL *Selecionar uma predefinição*].
 
 1. Ou selecione **[!UICONTROL Mostrar configurações avançadas]** para:
 
@@ -147,15 +147,15 @@ Arraste e solte os segmentos do painel à esquerda na área de destino do painel
 Além dos segmentos, também é possível arrastar outros tipos de componentes diretamente para a zona de destino para criar segmentos rápidos, economizando o tempo e esforço de usar o [Construtor de segmentos](/help/components/filters/filter-builder.md). Segmentos criados dessa forma são definidos automaticamente como segmentos em nível de evento. Para modificar rapidamente essa definição, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado do nome do segmento.
 
 
-Para obter mais informações consulte [Segmentos rápidos](/help/components/filters/quick-filters.md).
+Para obter mais informações, consulte [Segmentos rápidos](/help/components/filters/quick-filters.md).
 
-![Segmentos ad hoc tornados públicos e colocados na zona de soltar](assets/adhoc-segment-filter.png)
+![Segmentos ad hoc que são tornados públicos e soltos na área de destino](assets/adhoc-segment-filter.png)
 
 ### Segmentos suspensos
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/30816?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -168,7 +168,7 @@ Os segmentos suspensos estáticos permitem interagir com os dados de forma contr
 
 Segmentos suspensos estáticos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes segmentos de País aplicados, é possível consolidar todas as versões em um único projeto e adicionar um segmento suspenso de País.
 
-![Segmentos suspensos estáticos mostrando o segmento &quot;Direto&quot; do Canal de mercado destacado. ](assets/dropdown-filter-intro.png)
+![Segmentos suspensos estáticos mostrando o segmento “Direto” do canal de mercado destacado. ](assets/dropdown-filter-intro.png)
 
 ##### Criar segmentos suspensos estáticos
 
@@ -221,7 +221,7 @@ Outras funcionalidades do painel estão disponíveis por meio do menu de context
 
 ![As opções disponibilizadas ao clicar com o botão direito em um cabeçalho de painel.](assets/right-click-menu.png)
 
-Estas são as opções disponíveis:
+As seguintes opções estão disponíveis:
 
 | Opção | Descrição |
 | --- | --- |

@@ -7,7 +7,7 @@ role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -18,12 +18,12 @@ Qualquer pessoa pode criar um intervalo de datas personalizado. Um intervalo de 
 
 ![Criar uma anotação](assets/create-date-range.png)
 
-* **A** - Na interface principal, selecione **[!UICONTROL Componentes]** e selecione **[!UICONTROL Intervalo de datas]**. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** no gerenciador de [[!UICONTROL Intervalo de datas]](/help/components/date-ranges/manage.md).
-* **B** - Em um projeto do Workspace, no menu de contexto em uma visualização, selecione **[!UICONTROL Intervalo de datas personalizado para este intervalo de datas]**.
-* **C** - Em um projeto do Workspace, selecione **[!UICONTROL Componentes]** no menu e selecione **[!UICONTROL Criar intervalo de datas]**
-* **D** - Em um projeto do Workspace, use o atalho **[!UICONTROL ctrl+shift+d]** (Windows) ou **[!UICONTROL shift+command+d]** (macOS).
-* **E** - Em um projeto do Workspace, no painel esquerdo Componentes, selecione ![Adicionar](/help/assets/icons/Add.svg) em ![Calendário](/help/assets/icons/Calendar.svg) **Intervalos de datas**.
-* **F** - Em uma visualização com suporte, como uma visualização de linha, no menu de contexto de um ponto de dados, selecione **[!UICONTROL Anotar Seleção]**.
+* **A**: na interface principal, selecione **[!UICONTROL Componentes]** e **[!UICONTROL Intervalo de datas]**. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** no gerenciador de [[!UICONTROL Intervalo de datas]](/help/components/date-ranges/manage.md).
+* **B**: em um projeto do espaço de trabalho, no menu de contexto da visualização, selecione **[!UICONTROL Intervalo de datas personalizado para este intervalo de datas]**.
+* **C**: em um projeto do espaço de trabalho, selecione **[!UICONTROL Componentes]** no menu e **[!UICONTROL Criar intervalo de datas]**
+* **D**: em um projeto do espaço de trabalho, use o atalho **[!UICONTROL Ctrl+Shift+D]** (Windows) ou **[!UICONTROL Shift+Command+D]** (macOS).
+* **E**: em um projeto do espaço de trabalho, no painel Componentes à esquerda, selecione ![Adicionar](/help/assets/icons/Add.svg) em ![Calendário](/help/assets/icons/Calendar.svg) **Intervalos de datas**.
+* **F**: em uma visualização compatível, como uma visualização em linha, no menu de contexto de um ponto de dados, selecione **[!UICONTROL Anotar seleção]**.
 
 Para definir a anotação, use o [[!UICONTROL Criador de intervalos de datas]](#annotation-builder):
 
@@ -55,7 +55,7 @@ A caixa de diálogo **[!UICONTROL Novo intervalo de datas]** ou **[!UICONTROL Ed
 1. Opcionalmente, especifique uma **[!UICONTROL Descrição]**.
 1. Organize o segmento criando ou aplicando uma ou mais **[!UICONTROL Marcas]**. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag.
 1. Selecione um **[!UICONTROL Intervalo de datas]**, escolhendo primeiro a data inicial e, em seguida, a data final.
-Como alternativa, selecione uma **[!UICONTROL Predefinição]** no menu suspenso [!UICONTROL *Selecionar uma predefinição*].
+Também é possível selecionar uma **[!UICONTROL predefinição]** no menu suspenso [!UICONTROL *Selecionar uma predefinição*].
 
 1. Ou selecione **[!UICONTROL Mostrar configurações avançadas]** para:
 

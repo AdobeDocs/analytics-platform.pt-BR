@@ -8,7 +8,7 @@ solution: Customer Journey Analytics
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2698'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ As informações a seguir instruem os curadores de dados do Customer Journey Ana
 
 >[!BEGINSHADEBOX]
 
-Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um cartão de pontuação móvel](https://video.tv.adobe.com/v/3409734?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um cartão de pontuação móvel](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -48,7 +48,7 @@ Como curador deste cartão de pontuação, você pode usar o criador de cartões
 
 Para criar o cartão de pontuação, é necessário fazer o seguinte:
 
-1. Acesse o modelo de [!UICONTROL Scorecard para dispositivos móveis em branco] no Workspace.
+1. Acesse o modelo [!UICONTROL Cartão de pontuação móvel em branco] no espaço de trabalho.
 2. Configure o cartão de pontuação com os dados e salve-o.
 
 ## Acesse o modelo de [!UICONTROL Scorecard para dispositivos móveis em branco] {#template}
@@ -58,7 +58,7 @@ Você pode acessar o modelo [!UICONTROL Cartão de pontuação para dispositivos
 ### Criar um novo projeto {#create}
 
 1. Abra o Customer Journey Analytics e clique na guia **[!UICONTROL Espaço de trabalho]**.
-1. No painel à esquerda, clique em **[!UICONTROL Projetos]**.
+1. No painel esquerdo, clique em **[!UICONTROL Projetos]**.
 1. Clique em **[!UICONTROL Criar projeto]** e selecione o modelo de projeto **[!UICONTROL Cartão de pontuação para dispositivos móveis em branco]**.
 1. Clique em **[!UICONTROL Criar]**.
 
@@ -73,7 +73,7 @@ Você pode acessar o modelo [!UICONTROL Cartão de pontuação para dispositivos
 
 Para implementar o modelo de cartão de pontuação:
 
-1. Em **[!UICONTROL Propriedades do scorecard]** (no painel direito), especifique uma **[!UICONTROL Exibição de dados do projeto]** cujos dados você deseja usar.
+1. Em **[!UICONTROL Propriedades do cartão de pontuação]** (no painel direito), especifique uma **[!UICONTROL visualização de dados do projeto]** da qual você deseja usar dados.
 
    ![Nova janela de cartão de pontuação móvel destacando a seleção da exibição de dados](assets/properties_save.png)
 
@@ -96,9 +96,9 @@ Por exemplo, é possível adicionar dimensões apropriadas (como **[!DNL Marketi
 
 Para aplicar segmentos a blocos individuais, arraste um segmento do painel esquerdo e solte-o diretamente na parte superior do bloco.
 
-Se deseja aplicar o segmento a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão. Ou você também pode aplicar segmentos selecionando-os no menu de segmentos abaixo dos intervalos de datas. Você [configura e aplica segmentos para seus cartões de pontuação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que faria no Customer Journey Analytics Workspace.
+Se deseja aplicar o segmento a todos os blocos no cartão de pontuação, solte o bloco sobre o cartão. Também é possível aplicar segmentos selecionando-os no menu de segmentos abaixo dos intervalos de datas. É possível [configurar e aplicar segmentos nos cartões de pontuação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=pt-BR) da mesma forma que você faria no espaço de trabalho do Customer Journey Analytics.
 
-![Seletor suspenso de segmentos que destaca os segmentos de compilação](assets/segment_ui.png)
+![Seletor suspenso de segmentos com destaque para os segmentos de criação](assets/segment_ui.png)
 
 ## Adicionar intervalos de datas {#dates}
 
@@ -212,7 +212,7 @@ Os slides de detalhes personalizados permitem ter ainda mais controle sobre quai
 
 >[!BEGINSHADEBOX]
 
-Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Exibições de detalhes personalizadas](https://video.tv.adobe.com/v/3417879?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Exibições de detalhes personalizadas](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 

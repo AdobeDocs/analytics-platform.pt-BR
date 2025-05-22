@@ -7,7 +7,7 @@ role: User
 source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 73%
+ht-degree: 93%
 
 ---
 
@@ -24,20 +24,20 @@ Veja a seguir uma lista de limitações conhecidas do Analysis Workspace e seus 
 
 ## Visualizações
 
-* As visualizações que usam segmentos, como [!UICONTROL Fallout], [!UICONTROL Fluxo], [!UICONTROL Coorte] e [!UICONTROL Histograma], não podem aceitar métricas calculadas como entradas.
+* Visualizações que aproveitam segmentos, como [!UICONTROL Fallout], [!UICONTROL Fluxo], [!UICONTROL Coorte] e [!UICONTROL Histograma], não podem aceitar métricas calculadas como entradas.
 * [!UICONTROL Fluxo]: as dimensões de entrada/saída, por exemplo, [!UICONTROL Página de entrada], não podem ser usadas em Fluxo.
 * [!UICONTROL Coorte]: não é possível usar números não inteiros como critérios de coorte.
 
 ## Segmentos
 
-* Determinadas métricas e dimensões não podem ser segmentadas, como [!UICONTROL Eventos], [!UICONTROL Pessoas], etc.
-* Segmentos ad hoc criados na [zona de destino do painel](/help/analysis-workspace/c-panels/panels.md) são um tipo de segmento rápido. Eles não aparecem no painel esquerdo do Workspace ou no Gerenciador de segmentos, a menos que sejam tornados públicos. Para obter mais informações consulte [Segmentos rápidos](/help/components/filters/quick-filters.md).
+* Certas métricas e dimensões não podem ser segmentadas, como [!UICONTROL Eventos], [!UICONTROL Pessoas] etc.
+* Segmentos ad hoc criados na [zona de destino do painel](/help/analysis-workspace/c-panels/panels.md) são um tipo de segmento rápido. Eles não aparecem no painel esquerdo do Workspace ou no Gerenciador de segmentos, a menos que sejam tornados públicos. Para obter mais informações, consulte [Segmentos rápidos](/help/components/filters/quick-filters.md).
 
 ## Métricas calculadas 
 
 * As métricas calculadas não podem ser usadas em determinadas visualizações. Consulte [Visualizações](#visualizations).
 * Métricas calculadas não podem ser usadas no painel [!UICONTROL Atribuição], já que podem incluir modelos de atribuição separados.
-* Determinados componentes e operadores não estarão disponíveis se uma métrica calculada for criada do Workspace (em vez de ser criada a partir de [!UICONTROL Componentes > segmentos]). Por exemplo, [!UICONTROL Endereço IP].
+* Certos componentes e operadores não estarão disponíveis se uma métrica calculada for criada do espaço de trabalho (em vez de ser criada a partir de [!UICONTROL Componentes > Segmentos]). Por exemplo, [!UICONTROL Endereço IP].
 
 ## Intervalos de datas
 

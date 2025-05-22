@@ -8,7 +8,7 @@ solution: Customer Journey Analytics
 role: User
 source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1469'
 ht-degree: 99%
 
 ---
@@ -19,7 +19,7 @@ O Analysis Workspace permite criar análises rapidamente para coletar insights e
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visão geral do Analysis Workspace](https://video.tv.adobe.com/v/35802/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visão geral do Analysis Workspace](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -59,10 +59,10 @@ As funcionalidades também estão disponíveis por meio do menu do espaço de tr
 Observe que é possível usar os seguintes símbolos do teclado:
 
 - **⇧** para **[!UICONTROL *Shift *]**.
-- **⌘** para **[!UICONTROL *Cmd *]**(command).
-- **⌃** para **[!UICONTROL *Ctrl *]**(control).
-- **⌥** para **[!UICONTROL *Opt *]**(option).
-- **⎇** para **[!UICONTROL *Alt *]**(alternate).
+- **⌘** para **[!UICONTROL *cmd *]**(comando).
+- **⌃** para **[!UICONTROL *ctrl *]**(controle).
+- **⌥** para **[!UICONTROL *opção *]**(opção).
+- **⎇** para **[!UICONTROL *alt *]**(alternativo).
 
 Consulte as tabelas abaixo para obter uma visão geral dos menus disponíveis.
 
@@ -106,7 +106,7 @@ Consulte as tabelas abaixo para obter uma visão geral dos menus disponíveis.
 
 | **[!UICONTROL Componentes]** | Atalho do Mac | Atalho do Windows | Descrição |
 |---|---|---|---|
-| **[!UICONTROL Criar segmento...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+ctrl+e *]** | Crie um novo [segmento](/help/components/filters/create-filters.md). |
+| **[!UICONTROL Criar segmento...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+ctrl+e *]** | Criar um novo [segmento](/help/components/filters/create-filters.md). |
 | **[!UICONTROL Criar métrica...]** | **[!UICONTROL *shift+cmd+c *]** | **[!UICONTROL *shift+ctrl+c *]** | Cria uma nova [métrica calculada](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Criar intervalo de datas...]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+ctrl+d *]** | Criar um novo [intervalo de datas](/help/components/date-ranges/overview.md). |
 | **[!UICONTROL Criar anotação...]** | **[!UICONTROL *shift+cmd+o *]** | **[!UICONTROL *shift+ctrl+o *]** | Cria uma nova [anotação](/help/components/annotations/overview.md). |

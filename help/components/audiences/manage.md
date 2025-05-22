@@ -6,8 +6,8 @@ feature: Audiences
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 76%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 76%
 
 Os públicos podem ser gerenciados no Customer Journey Analytics usando **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]**.
 
-## Entender as tarefas de gerenciamento de público
+## Entenda as tarefas de gerenciamento de público-alvo
 
 O gerenciamento de públicos-alvo criados anteriormente permite:
 
@@ -25,23 +25,23 @@ O gerenciamento de públicos-alvo criados anteriormente permite:
 * Obtenha insights sobre o **tempo necessário para produzir um público-alvo** no Customer Journey Analytics. E a quantidade de tempo que levou para que o público-alvo aparecesse na Real-time Customer Platform para fins de ativação.
 * Veja se os públicos-alvo no Customer Journey Analytics estão **sendo usados ativamente pela Real-time Customer Platform**. Ou (de preferência) qualquer aplicativo da Experience Platform que consuma os públicos-alvo criados pelo Customer Journey Analytics.
 
-Se você tiver acesso de [Exibição de público-alvo](/help/technotes/access-control.md#user-level-access), poderá exibir públicos-alvo. Se você tiver acesso de [Criação de público](/help/technotes/access-control.md#user-level-access), poderá editar e excluir públicos.
+Se você tiver acesso de [Exibição de público-alvo](/help/technotes/access-control.md#user-level-access), poderá exibir públicos-alvo. Se você tiver acesso para [criação de público-alvo](/help/technotes/access-control.md#user-level-access), será possível editar e excluir públicos-alvo.
 
-## Exibir públicos-alvo na lista de Públicos-alvo
+## Visualizar públicos-alvo na lista de públicos-alvo
 
-A ➊ Lista de públicos mostra os públicos existentes.
+A lista de Públicos-alvo ➊ mostra os públicos-alvo existentes.
 
-![Audience Manager](assets/audiences-manager.png)
+![Gerenciador de públicos-alvo](assets/audiences-manager.png)
 
-Para exibir a lista Público-alvo:
+Para ver a lista de públicos-alvo:
 
-1. No Customer Journey Analytics, selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]**.
+1. No Customer Journey Analytics, selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]**.
 
-1. (Opcional) Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para configurar quais colunas exibir.
+1. (Opcional) Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para configurar quais colunas exibir.
 
-1. (Opcional) Pesquise por um público usando ![Pesquisa](/help/assets/icons/Search.svg).
+1. (Opcional) Pesquise um público-alvo usando a opção ![Pesquisar](/help/assets/icons/Search.svg).
 
-   As seguintes colunas estão disponíveis com informações sobre cada público:
+   As colunas a seguir fornecem informações sobre cada público-alvo:
 
    | Coluna | Descrição |
    | --- | --- |
@@ -56,13 +56,13 @@ Para exibir a lista Público-alvo:
    | **[!UICONTROL Última atualização]** | Carimbo de data e hora da última atualização do público-alvo. |
    | **[!UICONTROL Última modificação]** | Carimbo de data e hora da última edição ou modificação do público-alvo. |
 
-## Editar públicos
+## Editar públicos-alvo
 
-É possível editar as configurações de um público-alvo a qualquer momento. Ao editar um público-alvo (seja um público-alvo único ou recorrente), é necessária uma republicação.
+É possível editar as configurações de um público-alvo a qualquer momento. Após editar um público-alvo (seja um público-alvo único ou recorrente), é necessário publicá-lo novamente.
 
 Para editar um público-alvo:
 
-1. No Customer Journey Analytics, selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]**.
+1. No Customer Journey Analytics, selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]**.
 
    A página Públicos-alvo é exibida.
 
@@ -70,7 +70,7 @@ Para editar um público-alvo:
 
    A caixa de diálogo **[!UICONTROL Editar público-alvo]** é exibida.
 
-1. Você pode atualizar qualquer um dos campos disponíveis para o público-alvo. Para obter informações sobre os campos que você pode atualizar, consulte o [Construtor de público-alvo](/help/components/audiences/publish.md#audience-builder) no artigo, [Criar e publicar públicos-alvo](/help/components/audiences/publish.md).
+1. É possível atualizar qualquer um dos campos disponíveis do público-alvo. Para obter informações sobre os campos que você pode atualizar, consulte [Construtor de públicos-alvo](/help/components/audiences/publish.md#audience-builder) no artigo [Criar e publicar públicos-alvo](/help/components/audiences/publish.md).
 
 1. Selecione **[!UICONTROL Republicar]**.
 
@@ -80,9 +80,9 @@ As ações a seguir são comuns no Gerenciador de projetos agendados. Você pode
 
 | Ícone | Ação | Descrição |
 |:---:|---|---|
-| ![Rótulos](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Marque os públicos-alvo selecionados. Na caixa de diálogo **[!UICONTROL Atualizar marcas: *nome do público-alvo *]**, selecione marcas no menu suspenso ou digite uma ou mais marcas novas. Selecione **[!UICONTROL Salvar &#x200B;]** para salvar. |
+| ![Rótulos](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Marque os públicos-alvo selecionados. Na caixa de diálogo **[!UICONTROL Atualizar marcas: *nome do público-alvo *]**, selecione marcas no menu suspenso ou digite uma ou mais marcas novas. Selecione **[!UICONTROL Salvar ]** para salvar. |
 | ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Exclua os públicos-alvo selecionados. |
-| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie o público-alvo selecionado. Use a caixa de diálogo **[!UICONTROL Renomear: *nome do público-alvo *]** para renomear o público-alvo e selecione **[!UICONTROL Salvar &#x200B;]** para salvar. |
+| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie o público-alvo selecionado. Use a caixa de diálogo **[!UICONTROL Renomear: *nome do público-alvo *]** para renomear o público-alvo e selecione **[!UICONTROL Salvar ]** para salvar. |
 
 As seguintes ações estão disponíveis na barra de ação azul ao selecionar um ou mais projetos agendados.
 
@@ -92,11 +92,11 @@ As seguintes ações estão disponíveis na barra de ação azul ao selecionar u
 | ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Exclua os públicos-alvo selecionados. |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar os públicos-alvo selecionados para um arquivo chamado `audiences.csv`. |
 
-## Filtrar a lista de públicos
+## Filtrar a lista de públicos-alvo
 
-Você pode filtrar a [Lista de públicos-alvo](#audiences-list) usando a ➋ do painel de filtro. Para mostrar ou ocultar o painel de filtro, use ![Filtro](/help/assets/icons/Filter.svg).
+Você pode filtrar a [Lista de públicos-alvo](#audiences-list) usando o painel de filtro ➋. Para mostrar ou ocultar o painel de filtro, use ![Filtro](/help/assets/icons/Filter.svg).
 
-![Audience Manager](assets/audiences-manager.png)
+![Gerenciador de públicos-alvo](assets/audiences-manager.png)
 
 O painel de filtro consiste nas seções a seguir.
 
