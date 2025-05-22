@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '705'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,21 +27,21 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="workspace_cohorttable_panel"
 >title="Tabela de coorte"
->abstract="Agrupe os usuários com base na conclusão de um evento e analise o engajamento contínuo e o churn ao longo do tempo. Especifique configurações adicionais, como granularidade, tipo de análise de coorte e se deseja ou não usar o cálculo acumulativo. É possível definir opções avançadas para criar uma tabela de latência ou uma coorte de dimensão personalizada com base em uma dimensão selecionada."
+>abstract="Agrupe os usuários com base na conclusão de um evento e analise o engajamento contínuo e a variação ao longo do tempo. Especifique configurações adicionais, como granularidade, tipo de análise de coorte e se deseja ou não usar o cálculo contínuo. Você pode definir opções avançadas para criar uma tabela de latência ou um coorte de dimensão personalizado com base em uma dimensão selecionada."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a tabela de coorte no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte a [tabela de coorte](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a tabela de coorte no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte a [tabela de coorte](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
 
 A *coorte* é um grupo de pessoas com características comuns em um período específico. A visualização da ![TextNumbered](/help/assets/icons/TextNumbered.svg) **[!UICONTROL tabela de coorte]** é útil, por exemplo, quando você deseja saber como uma coorte interage com uma marca. Você pode detectar facilmente as mudanças nas tendências e atuar de acordo com elas. (Há explicações sobre a [!UICONTROL análise de coorte] disponíveis na Web, por exemplo, em [Análise de coorte 101](https://pt.wikipedia.org/wiki/Cohort_analysis).)
 
-Após criar um relatório de coorte, você pode preparar seus componentes (dimensões, métricas e segmentos específicos), em seguida, compartilhá-lo com qualquer pessoa. Consulte [Preparar e compartilhar](/help/analysis-workspace/curate-share/curate.md).
+Após criar um relatório de coorte, você pode preparar seus componentes (dimensões, métricas e segmentos específicos) e compartilhá-lo com qualquer pessoa. Consulte [Preparar e compartilhar](/help/analysis-workspace/curate-share/curate.md).
 
 Exemplos do que é possível fazer com uma [!UICONTROL tabela de coorte]:
 
@@ -55,7 +55,7 @@ A [!UICONTROL tabela de coorte] está disponível a todos os clientes do Custome
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de coorte no Analysis Workspace](https://video.tv.adobe.com/v/3430078/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de coorte no Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -64,7 +64,7 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de
 
 >[!IMPORTANT]
 >
->A [!UICONTROL Análise de coorte] não oferece suporte a métricas não segmentáveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou Ocorrências. Somente as métricas que podem ser usadas em segmentos podem ser usadas na [!UICONTROL Análise de coorte], e só podem ser aumentadas 1 de cada vez.
+>A [!UICONTROL análise de coorte] não é compatível com métricas não segmentáveis (incluindo métricas calculadas), métricas não inteiras (como Receita) ou ocorrências. Somente métricas que podem ser usadas em segmentos são compatíveis com a [!UICONTROL análise de coorte] e só é possível incrementá-las uma por vez.
 
 As tabelas de coorte no Customer Journey Analytics são compatíveis com métricas de dois fatores (ou baseadas em números). Por exemplo, &quot;Purchase.Value&quot; (um valor duplo) pode ser usado como uma métrica de inclusão/retorno. Além disso, todas as métricas enviadas à Adobe Experience Platform por meio do conector de origem do Analytics também possuem valor duplo.
 

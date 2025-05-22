@@ -5,9 +5,9 @@ feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1174'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="workspace_mediaconcurrentviewers_panel"
 >title="Visualizadores simultâneos de mídia"
->abstract="Analise visualizadores simultâneos ao longo do tempo, o pico de simultaneidade e, opcionalmente, detalhe e compare usando segmentos, dimensões, itens de dimensão ou intervalos de datas."
+>abstract="Analise visualizadores simultâneos ao longo do tempo, visualize o pico de simultaneidade e, opcionalmente, detalhe e compare usando segmentos, dimensões, itens de dimensão ou intervalos de datas."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Visualizadores simultâneos de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) para a versão do_ ![Adobe  Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Visualizadores simultâneos de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [painel Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) para a versão do_ ![Adobe  Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ No Analysis Workspace, Visualizadores simultâneos é o número de visitantes ú
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [painel Visualizadores simultâneos de mídia](https://video.tv.adobe.com/v/35023/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [painel Visualizadores simultâneos de mídia](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -82,7 +82,7 @@ Você pode configurar o painel Visualizadores simultâneos de mídia usando esta
 | **[!UICONTROL Intervalo de datas do painel]** | O padrão do intervalo de datas do painel é Hoje.  Você pode editá-lo para exibir um único dia ou muitos meses de cada vez. <br> <br>Essa visualização é limitada a 1440 linhas de dados (por exemplo, 24 horas na granularidade no nível de minuto).  Se um intervalo de datas e combinação de granularidade resultar em mais de 1440 linhas, a granularidade será atualizada automaticamente para acomodar todo o intervalo de datas. |
 | **[!UICONTROL Granularidade]** | O padrão de granularidade é Minuto.<br>Essa visualização é limitada a 1440 linhas de dados (por exemplo, 24 horas na granularidade no nível de minuto).  Se um intervalo de datas e combinação de granularidade resultar em mais de 1440 linhas, a granularidade será atualizada automaticamente para acomodar todo o intervalo de datas. |
 | **[!UICONTROL Números de resumo do painel]** | Para visualizar os detalhes de data ou hora de visualizadores simultâneos, um número de resumo está disponível. O Máximo mostra detalhes para a simultaneidade de pico. O **[!UICONTROL Mínimo]** mostra detalhes para o período de baixa. O padrão do painel mostra somente Máximo, mas você pode alterá-lo para mostrar Mínimo ou Máximo e Mínimo.<br><br>Se você estiver usando detalhamentos, um número de resumo será exibido para cada um. |
-| **[!UICONTROL Detalhamento por séries]** | Como opção, você pode detalhar sua visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas.<br>É possível exibir até 10 linhas por vez. Os detalhamentos são limitados a um único nível.<br>Ao arrastar uma dimensão, os itens de dimensão principais serão selecionados automaticamente com base no intervalo de datas do painel selecionado.<br>Para comparar intervalos de datas, arraste dois ou mais intervalos de datas para o segmento de detalhamento por séries. |
+| **[!UICONTROL Detalhamento por séries]** | Como opção, você pode detalhar a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas.<br>É possível exibir até 10 linhas por vez. Os detalhamentos são limitados a um único nível.<br>Ao arrastar uma dimensão, os itens de dimensão principais serão selecionados automaticamente com base no intervalo de datas do painel selecionado.<br>Para comparar intervalos de datas, arraste 2 ou mais intervalos de datas para o segmento de detalhamento em série. |
 
 Aqui está um exemplo do painel configurado para granularidade de **[!UICONTROL Minuto]**, com números de resumo de **[!UICONTROL Máximo apenas]**. E detalhado por **[!UICONTROL Outros]**, **[!UICONTROL Tabela]**, **[!UICONTROL Celular]**, **[!UICONTROL Console de jogos]**, **[!UICONTROL Player de mídia]**, **[!UICONTROL Decodificador de sinais]**, **[!UICONTROL Televisão]**.
 
@@ -116,7 +116,7 @@ Uma tabela de forma livre não está disponível nessa visualização.  Para exi
 |---|---|
 | Onde está a tabela de forma livre? Como posso ver a fonte de dados? | A tabela de forma livre não está disponível nessa visualização.  Você pode baixar a fonte de dados no menu de contexto do gráfico de linhas e selecionar **[!UICONTROL Baixar dados como CSV]**. |
 | Por que minha granularidade mudou? | Essa visualização é limitada a 1440 linhas de dados (por exemplo, 24 horas na granularidade no nível de minuto).  Se uma combinação de intervalo de datas e granularidade resultar em mais de 1440 linhas, a granularidade será atualizada automaticamente para ajustar o intervalo de datas completo.<br><br>Ao alterar de um intervalo de datas maior para menor, a granularidade será atualizada para o detalhe mais baixo permitido quando o intervalo de datas for alterado. Para exibir uma granularidade mais alta, edite o painel e recrie. |
-| Como comparar nomes de vídeo, segmentos, tipos de conteúdo e outros? | Para comparar esses itens em uma única visualização, arraste segmentos, dimensões ou itens de dimensão específicos no segmento de detalhamento por séries.<br><br>A visualização é limitada a 10 detalhamentos.  Para exibir mais de 10, você deve usar vários painéis. |
+| Como comparar nomes de vídeos, segmentos, tipos de conteúdo e outros? | Para comparar esses itens em uma única visualização, arraste segmentos, dimensões ou itens de dimensão específicos para o segmento de detalhamento em série.<br><br>A visualização é limitada a 10 detalhamentos.  Para exibir mais de 10, você deve usar vários painéis. |
 | Como comparar intervalos de datas? | Para comparar intervalos de data em uma única visualização, use os detalhamentos por séries arrastando dois ou mais intervalos de datas.  Os intervalos de datas substituem o intervalo de datas do painel. |
 | Como alterar o tipo de visualização? | Esse painel permite somente a visualização de linha para a série de tempo. |
 | Posso executar a detecção de anomalias? | Não.  A detecção de anomalias não está disponível para esse painel. |

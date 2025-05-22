@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -25,16 +25,16 @@ ht-degree: 73%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização Venn no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Venn](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/venn) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização Venn no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Venn](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/venn) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
 
-A visualização ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** permite arrastar até 3 segmentos e uma métrica (do painel Componentes) para criar um diagrama Venn.
+A visualização de ![Tipo](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** permite arrastar até 3 segmentos e uma métrica (do painel Componentes) para criar um diagrama de Venn.
 
 ![Visualização de Venn que inclui três segmentos.](assets/venn.png)
 
-Você pode passar o mouse sobre os segmentos para obter mais insight em porcentagens e muito mais.
+Você pode passar o mouse sobre os segmentos para obter mais informações sobre porcentagens e muito mais.
 
 Para gerar uma [!UICONTROL Tabela de forma livre] a partir da visualização [!UICONTROL Venn], selecione o ![StatusOrange](/help/assets/icons/StatusOrange.svg) colorido ao lado do cabeçalho **[!UICONTROL Venn]** e selecione **[!UICONTROL Mostrar fonte de dados]**. Você verá uma tabela de forma livre de **[!UICONTROL dados Venn]** com os dados usados para criar a visualização [!UICONTROL Venn].
 

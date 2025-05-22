@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '475'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-tailored"
 >title="Usar um esquema personalizado"
->abstract="(Recomendado) A personalização do esquema permite que sua organização monitore somente o que é necessário e evita a sobrecarga relacionada a campos desnecessários e confusos. Essa opção inclui grupos de campos adicionados pelo SDK da web e grupos de campos personalizados para sua organização."
+>abstract="(Recomendado) A personalização do esquema permite que sua organização monitore somente o que é necessário e evita a sobrecarga relacionada a campos desnecessários e confusos. Esta opção inclui grupos de campos adicionados pelo SDK da Web e grupos de campos personalizados para sua organização."
 
 <!-- markdownlint-enable MD034 -->
 

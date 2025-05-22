@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 94a2bf2f-ad84-4f35-af8f-b8a5d9e5c607
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-no-selection"
->title="Implementar o SDK da web para a propriedade especificada"
+>title="Implementar o SDK da web para a propriedade fornecida"
 >abstract="Selecione o tipo de implementação desejado no guia de atualização para obter instruções mais detalhadas."
 
 <!-- markdownlint-enable MD034 -->
@@ -54,8 +54,8 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-websdk-third-party"
->title="Adicionar a biblioteca do SDK da web ao sistema de gerenciamento de tags de terceiros"
->abstract="Trabalhe com o admin no sistema de gerenciamento de tags para adicionar a biblioteca do SDK da web ao seu site.<br><br>O tempo de conclusão desta tarefa depende muito da capacidade de resposta da pessoa responsável pelo sistema de gerenciamento de tags. A adição da biblioteca do SDK da web pode ser fornecida com a lógica de implementação associada e implantada durante os ciclos de lançamento padrão de sua organização."
+>title="Adicionar a biblioteca de SDKs da web ao seu sistema de gerenciamento de tags de terceiros"
+>abstract="Trabalhe com o(a) admin do seu sistema de gerenciamento de tags para adicionar a biblioteca de SDK da web ao seu site.<br><br>O tempo de conclusão desta tarefa depende muito da capacidade de resposta do indivíduo responsável pelo seu sistema de gerenciamento de tags. A adição da biblioteca de SDK da web pode ser agrupada com a lógica de implementação associada e implantada durante os ciclos de lançamento padrão da sua organização."
 
 <!-- markdownlint-enable MD034 -->
 

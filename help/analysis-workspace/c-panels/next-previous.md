@@ -5,9 +5,9 @@ feature: Panels
 role: User, Admin
 exl-id: a5f6ce97-6720-4129-9ece-e2e834289d45
 source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 88%
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_panel"
 >title="Próximo item ou anterior"
->abstract="Analise quais são os lugares mais comuns de onde os visitantes vieram ou para onde irão em seguida. Especifique a dimensão, o item de dimensão, a direção e o container a ser usado para a visualização."
+>abstract="Analise quais são os lugares mais comuns de onde os visitantes vieram ou para onde irão em seguida. Especifique a dimensão, o item de dimensão, a direção e o container a serem usados para a visualização."
 
 
 
@@ -31,7 +31,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Próximo item ou anterior no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte [Painel Próximo item ou anterior](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/next-previous) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Próximo item ou anterior no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte [Painel Próximo item ou anterior](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/next-previous) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -41,8 +41,8 @@ O painel **[!UICONTROL Próximo item ou anterior]** contém várias tabelas e vi
 
 >[!CONTEXTUALHELP]
 >id="workspace_nextorpreviousitem_container"
->title="Contêiner"
->abstract="Selecione o container para determinar o escopo da pesquisa."
+>title="Container"
+>abstract="Selecione o container para determinar o escopo da sua consulta."
 
 Para usar um painel **[!UICONTROL Próximo item ou anterior]**:
 
@@ -63,7 +63,7 @@ Você pode configurar o painel [!UICONTROL Próximo ou item anterior] usando e
 | **[!UICONTROL Dimensão]** | Selecione a dimensão para a qual deseja explorar os itens seguintes ou anteriores. |
 | **[!UICONTROL Item de dimensão]** | Selecione o item de dimensão específico no centro da consulta seguinte/anterior. |
 | **[!UICONTROL Direção]** | Especifique se você está procurando pelo item de dimensão [!UICONTROL Próximo] ou [!UICONTROL Anterior]. |
-| **[!UICONTROL Contêiner]** | Selecione o contêiner, **[!UICONTROL Conta Global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Grupo de Compras]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Sessão]** ou **[!UICONTROL Pessoa]**, para determinar o escopo da sua consulta. |
+| **[!UICONTROL Contêiner]** | Selecione o container **[!UICONTROL Conta global]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Conta]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Grupo de compra]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Oportunidade]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Sessão]** ou **[!UICONTROL Pessoa]**, a fim de determinar o escopo da sua consulta. |
 
 {style="table-layout:auto"}
 

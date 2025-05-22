@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5086ac6e-5bee-4f0f-b7e5-a3d9bd8a1332
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-personalization"
 >title="Usar o objeto de personalização no Adobe Journey Optimizer"
->abstract="Ao aproveitar as tecnologias de última geração de aprendizado de máquina supervisionado e aprendizado profundo, a otimização personalizada permite que um usuário empresarial (profissional de marketing) defina objetivos de negócios e utiliza os dados de clientes para treinar modelos orientados a negócios a fim de fornecer ofertas personalizadas e maximizar KPIs."
+>abstract="Por aproveitar as tecnologias de ponta em aprendizado de máquina supervisionado e aprendizagem profunda, a otimização personalizada permite que usuários empresariais (profissionais de marketing) definam metas de negócios e utilizem os dados de clientes para treinar modelos orientados a negócios para fornecer ofertas personalizadas e maximizar os KPIs."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-Ao aproveitar as tecnologias de última geração de aprendizado de máquina supervisionado e aprendizado profundo, a otimização personalizada permite que um usuário empresarial (profissional de marketing) defina objetivos de negócios e utiliza os dados de clientes para treinar modelos orientados a negócios a fim de fornecer ofertas personalizadas e maximizar KPIs.
+Por aproveitar as tecnologias de ponta em aprendizado de máquina supervisionado e aprendizagem profunda, a otimização personalizada permite que usuários empresariais (profissionais de marketing) definam metas de negócios e utilizem os dados de clientes para treinar modelos orientados a negócios para fornecer ofertas personalizadas e maximizar os KPIs.
 
-1. Siga as informações em [Modelo de otimização personalizado](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) no Guia do Journey Optimizer.
+1. Siga as informações em [Modelo de otimização personalizado](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) no guia do Journey Optimizer.
 
 {{upgrade-final-step}}
 

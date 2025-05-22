@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '122'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ ht-degree: 66%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de rosca no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Rosca](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/donut) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de rosca no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Rosca](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/donut) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
 
-Semelhante ao gráfico de pizza, a visualização ![RoscaGráfico](/help/assets/icons/GraphDonut.svg) **[!UICONTROL Rosca]** mostra os dados como partes ou segmentos de um todo. Use uma visualização de rosca ao comparar porcentagens de um total, normalmente com um pequeno número de itens.
+Semelhante a um gráfico de pizza, a visualização de ![GraphDonut](/help/assets/icons/GraphDonut.svg) **[!UICONTROL rosca]** mostra dados como partes ou segmentos de um todo. Use uma visualização de rosca ao comparar porcentagens de um total, normalmente com um pequeno número de itens.
 
-![Um gráfico de Rosca que mostra dados como partes ou segmentos de um todo.](assets/donut.png)
+![Um gráfico de rosca mostrando dados como partes ou segmentos de um todo.](assets/donut.png)
 
 
 >[!BEGINSHADEBOX]

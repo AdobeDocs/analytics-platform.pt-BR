@@ -5,21 +5,21 @@ feature: Workspace Basics
 role: User
 exl-id: 5ef235e2-50d8-4202-bad7-06090102cf73
 source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Abrir projetos
 
-Você pode abrir um projeto diretamente na página [Projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md). Procure seu projeto na lista. Use a [pesquisa](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) ou o [painel de segmentos](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel) para restringir a lista.
+Você pode abrir um projeto diretamente na página [Projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md). Procure seu projeto na lista. Use a [pesquisa](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) ou o [painel de segmentos](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel) para restringir a lista.
 
 * Selecione o título do projeto para abri-lo no Analysis Workspace.
 
 Você também pode abrir um projeto enquanto trabalha em outro projeto.
 
-* Selecione **[!UICONTROL Abrir]** no menu **[!UICONTROL Projeto]**. Você verá uma caixa de diálogo semelhante à página [Projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md).  Use a [pesquisa](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) ou o [painel de segmentos](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel) para restringir a lista.
+* Selecione **[!UICONTROL Abrir]** no menu **[!UICONTROL Projeto]**. Você verá uma caixa de diálogo semelhante à página [Projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md).  Use a [pesquisa](/help/analysis-workspace/build-workspace-project/freeform-overview.md#search) ou o [painel de segmentos](/help/analysis-workspace/build-workspace-project/freeform-overview.md#segment-panel) para restringir a lista.
 * Selecione o título do projeto para abri-lo no Analysis Workspace.
 
 Se não conseguir encontrar o projeto e quiser iniciar um novo projeto, selecione **[!UICONTROL Criar novo]**.

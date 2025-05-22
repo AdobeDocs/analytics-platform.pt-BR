@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
 source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '806'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Para criar um conjunto de dados de pesquisa para uso com um esquema no Customer 
 
    O Platform fornece recomendações inteligentes automaticamente para campos mapeados automaticamente com base no esquema ou conjunto de dados de destino selecionado. Você pode ajustar manualmente as regras de mapeamento para atender aos seus casos de uso.
 
-   Para obter mais informações sobre o processo de mapeamento, consulte [Mapear um arquivo CSV para um esquema XDM existente](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) na documentação do Experience Platform.
+   Para obter mais informações sobre o processo de mapeamento, consulte [Mapear um arquivo CSV para um esquema XDM existente](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) na documentação do Experience Platform.
 
 1. Selecione **[!UICONTROL Concluir]**.
 
@@ -109,7 +109,7 @@ Repita esse processo para cada dimensão que contenha dados que você deseja cla
 
 Adicionar o conjunto de dados à sua conexão no Customer Journey Analytics
 
-1. No Customer Journey Analytics, selecione **[!UICONTROL Conexões]**, opcionalmente em **[!UICONTROL Gerenciamento de dados]**, no menu superior.
+1. (Opcional) No Customer Journey Analytics, selecione **[!UICONTROL Conexões]** em **[!UICONTROL Gerenciamento de dados]** no menu superior.
 
 1. Selecione o ![ícone Mais](assets/More.svg) ao lado da conexão à qual você deseja adicionar o conjunto de dados de pesquisa e selecione **[!UICONTROL Editar]**.
 

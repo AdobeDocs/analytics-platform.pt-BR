@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
 source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1988'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_panel"
 >title="Tela de jornada"
->abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas do usuário gerando um gráfico flexível de nós e setas que represente qualquer combinação de eventos, itens de dimensão e segmentos. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
+>abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Gere análises de jornadas do usuário criando um gráfico flexível de nós e setas para representar qualquer combinação de eventos, itens de dimensão e segmentos. Arraste os nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -45,19 +45,19 @@ ht-degree: 90%
 >[!CONTEXTUALHELP]
 >id="journeycanvas_panel"
 >title="Tela de jornada"
->abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Crie análises de jornadas do usuário gerando um gráfico flexível de nós e setas que represente qualquer combinação de eventos, itens de dimensão e segmentos. Arraste nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
+>abstract="Analise como as pessoas avançam ou abandonam uma jornada definida. Gere análises de jornadas do usuário criando um gráfico flexível de nós e setas para representar qualquer combinação de eventos, itens de dimensão e segmentos. Arraste os nós na tela para reorganizar os eventos e as condições da jornada. À medida que você faz isso, os dados são atualizados de acordo. <br/><br/>Clientes com acesso ao Adobe Journey Optimizer podem analisar jornadas existentes do Journey Optimizer."
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de tela da jornada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Não há visualização equivalente no **Adobe Analytics**._
+_Este artigo documenta a Visualização de tela da jornada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Não há visualização equivalente no **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 A Visualização de tela da jornada permite analisar e obter insights profundos sobre as jornadas fornecidas aos usuários e clientes. Ela permite definir uma jornada do zero ou visualizar uma no Journey Optimizer e então observar como as pessoas saíram ou continuaram na jornada.
 
-Você pode [criar análises de jornadas do usuário](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) usando qualquer combinação de eventos, itens de dimensão, segmentos e intervalos de datas para criar nós de jornada. Conecte os nós para criar o fluxo da jornada e incluir vários caminhos e pontos de decisão. Arraste nós na tela para reorganizar os eventos e as condições da jornada. Atualizações de dados em tempo real à medida que você faz alterações.
+Você pode [criar análises de jornadas do usuário](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) usando qualquer combinação de eventos, itens de dimensão, segmentos e intervalos de datas para criar nós de jornada. Conecte os nós para criar o fluxo da jornada e incluir vários caminhos e pontos de decisão. Arraste os nós na tela para reorganizar os eventos e as condições da jornada. Atualizações de dados em tempo real à medida que você faz alterações.
 
 [Os nós estão conectados](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) como um &quot;caminho eventual&quot;, o que significa que os visitantes são contados enquanto eventualmente se movem de um nó para outro, independentemente de qualquer evento que ocorra entre os dois nós. O tempo alocado para que os usuários percorram o caminho é determinado pela configuração do container.
 
@@ -170,7 +170,7 @@ A tela da jornada fornece uma análise profunda e completa que não é possível
 
 Usar a tela da jornada para analisar jornadas que foram criadas no Journey Optimizer oferece vários benefícios:
 
-* Crie eventos usando qualquer dimensão, métrica, segmento ou intervalo de datas do Customer Journey Analytics.
+* Crie eventos usando quaisquer dimensões, métricas, segmentos ou intervalos de datas do Customer Journey Analytics.
 
   No Journey Optimizer, um usuário técnico deve criar um evento antes que ele possa ser adicionado a uma jornada.
 
@@ -192,21 +192,21 @@ Usar a tela da jornada para analisar jornadas que foram criadas no Journey Optim
 
 ### Sincronização entre a tela do Journey Optimizer e do Journey
 
-Considere os seguintes comportamentos para entender a sincronização entre o Journey Optimizer e a tela do Jornada:
+Considere os seguintes comportamentos para entender a sincronização entre o Journey Optimizer e a tela da jornada:
 
 * **A sincronização de dados é apenas unidirecional**
 
   Depois de criar uma análise de uma jornada do Journey Optimizer na tela do Journey, os dados são sincronizados em apenas uma direção, do Journey Optimizer para a tela do Journey. Isso significa que as alterações feitas em uma jornada na tela do Journey nunca são refletidas no Journey Optimizer.
 
-* **A modificação de uma jornada na tela de Jornada interrompe a sincronização**
+* **A modificação de uma jornada na tela de jornada interrompe a sincronização**
 
-  As alterações feitas em uma jornada no Journey Optimizer são sincronizadas com a tela de Jornada [apenas se a jornada não tiver sido modificada significativamente na tela de Jornada](#differences-after-modifying-a-journey-in-journey-canvas). Depois de modificar uma jornada na tela do Journey, as alterações feitas na jornada no Journey Optimizer não são refletidas na tela do Journey. Para ver as alterações refletidas na tela do Journey, você pode excluir e [recriar a jornada na tela do Journey](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+  As alterações feitas em uma jornada no Journey Optimizer são sincronizadas com a tela de jornada [somente se a jornada não tiver recebido muitas modificações na tela de jornada](#differences-after-modifying-a-journey-in-journey-canvas). Depois de modificar uma jornada na tela do Journey, as alterações feitas na jornada no Journey Optimizer não são refletidas na tela do Journey. Para ver as alterações refletidas na tela do Journey, você pode excluir e [recriar a jornada na tela do Journey](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
-* **O uso do link &quot;Compartilhar com qualquer pessoa&quot; exige que o projeto seja salvo no Customer Journey Analytics depois que as alterações forem feitas no Journey Optimizer**
+* **Usar um link “Compartilhar com qualquer pessoa” requer que o projeto seja salvo no Customer Journey Analytics após as alterações serem feitas no Journey Optimizer**
 
-  Ao usar um link &quot;Compartilhar com qualquer pessoa&quot;, as alterações feitas no Journey Optimizer não são refletidas na tela do Jornada até que o projeto seja salvo no Customer Journey Analytics.
+  Ao usar um link “Compartilhar com qualquer pessoa”, as alterações feitas no Journey Optimizer não são refletidas na tela de jornada até que o projeto seja salvo no Customer Journey Analytics.
 
-  Para obter mais informações sobre os links &quot;Compartilhar com qualquer pessoa&quot;, consulte [Compartilhar um projeto com qualquer pessoa (não é mais necessário)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) em [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).
+  Para obter mais informações sobre os links “Compartilhar com qualquer pessoa”, consulte [Compartilhar um projeto com qualquer pessoa (sem necessidade de logon)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) em [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).
 
 ### Diferenças após modificar uma jornada na tela do Journey {#differences-after-modifying}
 
@@ -234,7 +234,7 @@ Isso ocorre porque, ao contrário do Journey Optimizer, a tela do Journey permit
 
 #### Diferenças nos recursos
 
-Depois de modificar uma jornada Journey Optimizer na tela de Jornada, as opções disponíveis no campo suspenso [!UICONTROL **Configurações de seta**] são alteradas, dependendo de suas modificações. Para mais informações, consulte [Ajustar configurações](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+Após modificar uma jornada do Journey Optimizer na tela de jornada, as opções disponíveis no campo suspenso [!UICONTROL **Configurações de seta**] mudam, dependendo das suas modificações. Para mais informações, consulte [Ajustar configurações](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 O campo [!UICONTROL **Tipo de nó**] está disponível somente no Journey Optimizer. Ele não está disponível ao visualizar uma jornada do Journey Optimizer na tela de jornada, independentemente de você fazer modificações na jornada na tela de jornada.
 
@@ -263,5 +263,5 @@ Você pode criar análises na tela de jornada com base em qualquer dimensão ou 
 
 >[!MORELIKETHIS]
 >
-> * [Guia para Visualização da Tela de Jornada no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=pt)
+> * [Guia para visualização da tela de jornada no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

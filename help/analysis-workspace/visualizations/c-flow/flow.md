@@ -5,9 +5,9 @@ feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '326'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 96%
 >[!CONTEXTUALHELP]
 >id="workspace_flow_panel"
 >title="Fluxo"
->abstract="Analise o fluxo de visitas ou visitantes de um ponto de contato para o próximo. Especifique um componente (métrica, dimensão ou item) para começar e terminar. Opcionalmente, é possível definir configurações avançadas para a visualização."
+>abstract="Analise o fluxo de visitas ou visitantes de um ponto de contato para o próximo. Especifique um componente (métrica, dimensão ou item) para começar e terminar. Como opção, você pode definir configurações avançadas para personalizar ainda mais a visualização."
 
 <!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel de fluxo no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Fluxo](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel de fluxo no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Fluxo](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -41,7 +41,7 @@ Com a visualização, é possível:
 
 * Visualizar a jornada do cliente pelo seu site ou aplicativo.
 * Analisar aonde os clientes vão antes e depois de pontos de verificação específicos, como a entrada, uma dimensão específica ou a saída.
-* Crie segmentos designando um ponto específico em um determinado caminho.
+* Crie segmentos designando um ponto específico em um caminho escolhido.
 
 
 >[!BEGINSHADEBOX]

@@ -1,25 +1,25 @@
 ---
-title: Transição do conector de origem do Analytics para o SDK da web do Customer Journey Analytics
+title: Transição do conector de origem do Analytics para o SDK da Web no Customer Journey Analytics
 description: Saiba como fazer a transição para o SDK da web do conector de origem do Analytics ao atualizar para o Customer Journey Analytics
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Transição do conector de origem do Analytics para o SDK da web do Customer Journey Analytics {#transition-from-source-connector}
+# Transição do conector de origem do Analytics para o SDK da Web no Customer Journey Analytics {#transition-from-source-connector}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector"
 >title="Implementação do conector de origem do Analytics"
->abstract="O conector de origem do Analytics permite aproveitar o valor do Customer Journey Analytics facilmente, mas exige que você pague pelo Adobe Analytics e pelo Customer Journey Analytics. Este guia pode ajudar a avançar para uma implementação independente do SDK da web."
+>abstract="O conector de origem do Analytics permite aproveitar o valor do Customer Journey Analytics facilmente, mas exige que você pague pelo Adobe Analytics e pelo Customer Journey Analytics. Este guia pode ajudar você a avançar para uma implementação independente do SDK da web."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,15 +28,15 @@ ht-degree: 92%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-delete"
 >title="Excluir o conector de origem existente do Analytics"
->abstract="O conector de origem do Analytics que você tem atualmente não é compatível com o esquema personalizado da sua organização. No entanto, os dados ainda existem no conjunto de relatórios do Analytics. Essa etapa remove o conector de origem atual do Analytics para que você possa recriá-lo usando o esquema correto em uma etapa subsequente.<br><br>Antes de excluir o conector de origem, talvez você queira coordenar com outras pessoas em sua organização para garantir que a remoção não afete os relatórios. Essa coordenação pode levar várias semanas para ser concluída."
+>abstract="O conector de origem do Analytics que você possui atualmente não é compatível com o esquema personalizado da sua organização. No entanto, os dados ainda existem no conjunto de relatórios do Analytics. Esta etapa remove o conector de origem atual do Analytics para que você possa recriá-lo usando o esquema correto em uma próxima etapa.<br><br>Antes de excluir o conector de origem, é recomendado conversar com outras pessoas na sua organização para garantir que a remoção do conector de origem não afete os relatórios dentro da organização. Esse processo pode levar várias semanas para ser concluído."
 
 <!-- markdownlint-enable MD034 -->
 
 {{upgrade-note}}
 
-Há desvantagens inerentes ao uso do conector de origem do Analytics como única implementação do Customer Journey Analytics.
+Há desvantagens inerentes ao uso do conector de origem do Analytics como a única implementação do Customer Journey Analytics.
 
-Se sua organização já tiver atualizado para o Customer Journey Analytics usando somente a implementação do conector de origem do Analytics, a Adobe recomenda a transição para uma nova implementação do Web SDK para coleta de dados contínua e o uso do conector de origem do Analytics somente para dados históricos.
+Se a sua organização já atualizou para o Customer Journey Analytics usando apenas a implementação do conector de origem do Analytics, a Adobe recomenda fazer a transição para uma nova implementação do SDK da Web para a coleta contínua de dados e usar o conector de origem do Analytics somente para dados históricos.
 
 ## Entenda as vantagens e desvantagens de usar exclusivamente o conector de origem do Analytics
 
@@ -54,7 +54,7 @@ A seguir está o processo de alto nível para transição do uso exclusivo do co
 
 1. Mapeie cada dimensão do Adobe Analytics do conector de origem do Analytics para a dimensão no esquema do SDK da web.
 
-   1. &#x200B;
+   1. 
       <!-- how do you get here -->
 
    1. Na seção **[!UICONTROL Mapear campos padrão]**, selecione a guia **[!UICONTROL Personalizado]**.

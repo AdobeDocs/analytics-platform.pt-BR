@@ -5,9 +5,9 @@ feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
 source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '661'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,20 +18,20 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_button"
 >title="Atribuição"
->abstract="Compare e visualize rapidamente quantos modelos de atribuição quiser usando métricas de sucesso, canais e janelas de retrospectiva."
+>abstract="Compare e visualize rapidamente qualquer número de modelos de atribuição usando métricas de sucesso, canal e janela de retrospectiva."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Painel do Attribution IQ"
 
 >[!CONTEXTUALHELP]
 >id="workspace_attribution_panel"
 >title="Painel de atribuição"
->abstract="Compare e visualize rapidamente quantos modelos de atribuição quiser com uma métrica de sucesso. Selecione o canal (dimensão), os modelos a serem incluídos e a janela de retrospectiva."
+>abstract="Compare e visualize rapidamente qualquer número de modelos de atribuição para uma métrica de sucesso. Selecione o canal (dimensão), os modelos a serem incluídos e a janela de retrospectiva."
 >additional-url="https://www.youtube.com/watch?v=Yu0hy2klzA0" text="Painel do Attribution IQ"
 
 <!-- markdownlint-enable MD034 -->
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Atribuição no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [Painel de atribuição](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/attribution) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Atribuição no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [Painel de atribuição](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/attribution) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -43,7 +43,7 @@ O Customer Journey Analytics aprimora a atribuição ao permitir:
 * Use comparação ilimitada de modelos de atribuição: compare dinamicamente quantos modelos desejar.
 * Evite alterações na implementação: com processamento em tempo de relatório e sessões com reconhecimento de contexto, o contexto da jornada do cliente pode ser incorporado e aplicado em tempo de execução.
 * Construir a sessão que melhor corresponde ao seu cenário de atribuição.
-* Detalhar atribuições por segmentos: compare facilmente o desempenho de seus canais de marketing entre segmentos importantes (por exemplo, clientes novos vs. repetidos, Produto X vs. Produto Y, Nível de fidelidade ou CLV).
+* Detalhar atribuições por segmentos: compare facilmente o desempenho dos canais de marketing em segmentos importantes (por exemplo: novos clientes e clientes recorrentes, produto X e produto Y, nível de fidelidade ou CLV).
 * Inspecionar canais cruzados e análises de multitoque: usando diagramas e histogramas de Venn e resultados de atribuição de tendência.
 * Analisar visualmente as principais sequências de marketing: explore visualmente caminhos que levaram à conversão usando as visualizações de fluxo de múltiplos nós e de fallout.
 * Criar métricas calculadas: use a quantidade de métodos de alocação de atribuição que desejar.

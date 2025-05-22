@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 1d17151b-3a12-468e-9a4f-9e5994599570
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ As informações desta página abordam a etapa 4 do processo de atualização, c
 
 >[!AVAILABILITY]
 >
->As informações nesta página estão sendo substituídas pelas seguintes informações de atualização mais abrangentes: <ul><li>**Etapas de atualização recomendadas**<p>Para obter informações detalhadas, consulte [Caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guia de Atualização do Customer Journey Analytics**<p>Um novo guia de atualização está disponível e gera dinamicamente etapas de atualização personalizadas para sua organização e suas circunstâncias exclusivas.</p><p>Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.</p></li></ul>
+>As informações nesta página estão sendo substituídas por informações de atualização mais abrangentes, conforme descrito a seguir: <ul><li>**Etapas de atualização recomendadas**<p>Para obter informações detalhadas, consulte [Caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guia de atualização do Customer Journey Analytics**<p>Há um novo guia de atualização disponível que gera dinamicamente etapas de atualização personalizadas para sua organização e suas circunstâncias específicas.</p><p>Para acessar o guia do Customer Journey Analytics, clique na guia **[!UICONTROL Espaço de trabalho]** e selecione **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.</p></li></ul>
 
 Escolha uma das seguintes opções para reter dados históricos ao migrar do Adobe Analytics para o Customer Journey Analytics:
 
@@ -46,9 +46,9 @@ Escolha uma das seguintes opções para reter dados históricos ao migrar do Ado
 
 ## Usar o conector de origem do Analytics
 
-Você pode usar o [Conector de origem do Analytics](/help/data-ingestion/analytics.md) para reter dados históricos. Independentemente do caminho de atualização escolhido (mesmo se você atualizar usando o Web SDK), é possível usar o conector de origem do Analytics para reter dados históricos do ambiente do Adobe Analytics.
+É possível usar o [conector de origem do Analytics](/help/data-ingestion/analytics.md) para reter dados históricos. Independentemente do caminho de atualização escolhido (mesmo que você atualize por meio do SDK da web), é possível usar o conector de origem do Analytics para reter dados históricos do seu ambiente do Adobe Analytics.
 
-Você pode usar o conector de origem do Analytics para reter dados históricos, trazendo dados históricos para o seu próprio local dedicado, separado dos dados atuais.
+É possível usar o conector de origem do Analytics para reter dados históricos, armazenando-os em um local dedicado e separado dos dados atuais.
 
 O conector de origem do Analytics deve estar funcionando enquanto você precisar acessar os dados históricos.
 

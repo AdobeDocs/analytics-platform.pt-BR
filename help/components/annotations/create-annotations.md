@@ -5,15 +5,15 @@ feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
 source-git-commit: 3cbf30778ff0fbb4198db16cbbabf3d62a87d384
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '873'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Criar anotações
 
-Por padrão, somente admins podem criar anotações. Os usuários têm o direito de visualizar anotações de maneira semelhante à forma como os usuários visualizam outros componentes (como segmentos, métricas calculadas etc.).
+Por padrão, somente admins podem criar anotações. Os usuários têm direitos para visualizar anotações, de forma semelhante a como os usuários visualizam outros componentes (como segmentos, métricas calculadas etc.).
 
 No entanto, admins podem conceder aos usuários a permissão **[!UICONTROL Criação de anotações]** para **[!UICONTROL ferramentas de relatórios]** em **[!UICONTROL Permissões de edição para acesso ao espaço de trabalho do CJA]** no Admin Console. Consulte [Controle de acesso de nível de usuário](/help/technotes/access-control.md#user-level-access) para obter mais informações.
 
@@ -21,11 +21,11 @@ Você pode criar uma anotação das seguintes maneiras:
 
 ![Criar uma anotação](assets/create-annotation.png)
 
-* **A**. Na interface principal, selecione **[!UICONTROL Componentes]** e selecione **[!UICONTROL Anotações]**. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Adicionar]**] no gerenciador de [[!UICONTROL Anotações]](/help/components/annotations/manage-annotations.md).
-* **B**. Em um projeto do Workspace, no menu de contexto de uma visualização, selecione **[!UICONTROL Criar anotação a partir da seleção]**.
-* **C**. Em um projeto do Workspace, no menu de contexto em um gráfico de linhas, selecione **[!UICONTROL Anotar Seleção]**.
-* **D**. Em um projeto do Workspace, selecione **[!UICONTROL Componentes]** no menu e selecione **[!UICONTROL Criar anotação]**.
-* **E**.  Em um projeto do Workspace, use o atalho **[!UICONTROL ctrl+shift+o]** (Windows) ou **[!UICONTROL shift+command+o]** (macOS)
+* **A**.  Na interface principal, selecione **[!UICONTROL Componentes]** e **[!UICONTROL Anotações]**. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Adicionar]**] no gerenciador de [[!UICONTROL Anotações]](/help/components/annotations/manage-annotations.md).
+* **B**. Em um projeto do espaço de trabalho, no menu de contexto da visualização, selecione **[!UICONTROL Criar anotação a partir da seleção]**.
+* **C**.  Em um projeto do espaço de trabalho, no menu de contexto do gráfico de linha, selecione **[!UICONTROL Anotar seleção]**.
+* **D**. Em um projeto do espaço de trabalho, selecione **[!UICONTROL Componentes]** no menu e **[!UICONTROL Criar anotação]**.
+* **E**.  Em um projeto do espaço de trabalho, use o atalho **[!UICONTROL Ctrl+Shift+O]** (Windows) ou **[!UICONTROL Shift+Command+O]** (macOS)
 
 Para definir a anotação, use o [[!UICONTROL Criador de anotações]](#annotation-builder):
 
@@ -81,7 +81,7 @@ A caixa de diálogo **[!UICONTROL Criador de anotações]** é usada para criar 
    | **[!UICONTROL Tags]** | Organize a anotação criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL Enter]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
    | **[!UICONTROL Data aplicada]** ![Obrigatório](/help/assets/icons/Required.svg) | Selecione a data ou o intervalo de datas que precisa estar presente para que a anotação seja visível. Ao criar uma anotação usando o atalho, a anotação utiliza um intervalo de datas como padrão para o dia atual. Ao criar uma anotação usando uma seleção em uma visualização, a anotação utiliza como padrão o intervalo de datas com base no intervalo de datas do painel ao qual a visualização pertence. |
    | **[!UICONTROL Cor]** | Aplicar uma cor à anotação. A anotação aparece no projeto com a cor selecionada. A cor pode ser usada para categorizar anotações, como feriados, eventos externos, problemas de rastreamento etc. |
-   | **[!UICONTROL Escopo]** | Arraste e solte métricas do painel do componente que aciona a anotação. Por exemplo: Pessoas, Sessões e Eventos. Em seguida, arraste e solte quaisquer dimensões ou segmentos do painel do componente que atuam como segmentos para determinar se a anotação deve ser exibida ou não. Se você não especificar um escopo, a anotação será aplicada a todos os seus dados. <br/>Você tem duas opções:<ul><li>**[!UICONTROL Qualquer uma dessas métricas está presente]**: arraste e solte até 10 métricas para acionar a exibição da anotação.<br/>Por exemplo, a métrica Receita parou de coletar dados de um intervalo de datas específico. Arraste a métrica Receita para esta caixa.</li><li>**[!UICONTROL Com todos esses segmentos]**: arraste e solte até 10 dimensões ou segmentos que segmentam se a anotação é exibida.</li></ul><p><p>**Observação:** qualquer anotação aplicada a um componente que é subsequentemente usado como parte de uma métrica calculada ou definição de segmento NÃO herda automaticamente a anotação. A métrica calculada desejada também deve ser adicionada à seção do escopo para exibir a anotação. No entanto, uma nova anotação deve ser criada para qualquer segmento que você deseja anotar com as mesmas informações. Por exemplo, suponhamos que você aplique uma anotação a [!UICONTROL Pedidos] em um dia específico. Em seguida, use [!UICONTROL Pedidos] em uma métrica calculada para o mesmo intervalo de datas. A nova métrica calculada não exibe automaticamente a anotação de pedidos. Adicione também a métrica calculada à seção de escopo para que a anotação seja exibida. |
+   | **[!UICONTROL Escopo]** | Arraste e solte métricas do painel do componente que aciona a anotação. Por exemplo: Pessoas, Sessões e Eventos. Em seguida, arraste e solte quaisquer dimensões ou segmentos do painel de componentes que atuam como segmentos para determinar se a anotação deve ou não ser exibida. Se você não especificar um escopo, a anotação será aplicada a todos os seus dados. <br/>Você tem duas opções:<ul><li>**[!UICONTROL Qualquer uma dessas métricas está presente]**: arraste e solte até 10 métricas para acionar a exibição da anotação.<br/>Por exemplo, a métrica Receita parou de coletar dados de um intervalo de datas específico. Arraste a métrica Receita para esta caixa.</li><li>**[!UICONTROL Com todos esses segmentos]**: arraste e solte até 10 dimensões ou segmentos que determinam se a anotação será exibida.</li></ul><p><p>**Observação:** qualquer anotação aplicada a um componente que depois é usada como parte de uma métrica calculada ou definição de segmento NÃO herda automaticamente a anotação. A métrica calculada desejada também deve ser adicionada à seção do escopo para exibir a anotação. No entanto, uma nova anotação deve ser criada para qualquer segmento que você deseja anotar com as mesmas informações. Por exemplo, suponhamos que você aplique uma anotação a [!UICONTROL Pedidos] em um dia específico. Em seguida, use [!UICONTROL Pedidos] em uma métrica calculada para o mesmo intervalo de datas. A nova métrica calculada não exibe automaticamente a anotação de pedidos. Adicione também a métrica calculada à seção de escopo para que a anotação seja exibida. |
    | **[!UICONTROL Aplicar a todas as visualizações de dados]** | Por padrão, a anotação se aplica à visualização de dados de origem. Ao marcar essa caixa de seleção, a anotação se aplicará a todas as visualizações de dados da empresa. |
 
    {style="table-layout:auto"}

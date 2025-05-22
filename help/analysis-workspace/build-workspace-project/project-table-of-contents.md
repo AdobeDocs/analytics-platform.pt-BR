@@ -6,9 +6,9 @@ feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
 source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um índice](https://video.tv.adobe.com/v/35023/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um índice](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -46,4 +46,4 @@ Para exibir o índice de um projeto:
 
 >[!MORELIKETHIS]
 >
->* [Simplifique a navegação no painel com o novo recurso de índice no Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=pt)
+>* [Simplifique a navegação no painel com o novo recurso de índice do Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)
