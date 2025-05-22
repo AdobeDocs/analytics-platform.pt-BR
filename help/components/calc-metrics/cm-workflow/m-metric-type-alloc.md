@@ -3,9 +3,9 @@ description: Saiba mais sobre tipo de métrica e atribuição
 title: Tipo de métrica e atribuição
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
-source-wordcount: '947'
+source-git-commit: 2d182004b12eb44f54ec9b4b5f63cb9072594aec
+workflow-type: tm+mt
+source-wordcount: '1007'
 ht-degree: 100%
 
 ---
@@ -45,122 +45,92 @@ Consulte [Exemplo](#example) para obter um exemplo de uso de um modelo de atribu
 
 ## Atribuição {#attribution}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_nondefaultattributionmodel"
 >title="Usar modelo de atribuição não-padrão"
 >abstract="Habilite um modelo de atribuição não padrão para a métrica selecionada."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attributionmodel"
 >title="Modelo"
 >abstract="Selecione um modelo de atribuição para a métrica."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lasttouch"
 >title="Último contato"
 >abstract="100% do crédito vai para o último valor de dimensão visto por um visitante."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_firsttouch"
 >title="Primeiro contato"
 >abstract="100% do crédito vai para o primeiro valor de dimensão visto por um visitante."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_linear"
 >title="Linear"
 >abstract="O crédito é distribuído uniformemente em todos os valores de dimensão."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_participation"
 >title="Participação"
 >abstract="100% de crédito para cada valor de dimensão visto por um visitante.<br/>Os totais da coluna estão exagerados."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_sametouch"
 >title="Mesmo contato"
 >abstract="O crédito é fornecido somente para valores de dimensão que ocorrem no mesmo evento que a conversão."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_instance"
+>title="Mesmo contato"
+>abstract="O crédito é fornecido somente para valores de dimensão que ocorrem no mesmo evento que a conversão."
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_ushaped"
 >title="Forma de U"
 >abstract="40% do crédito é atribuído ao primeiro valor de dimensão, 40% ao último, 20% é compartilhado pelo meio."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_jcurve"
 >title="Curva J"
 >abstract="60% do crédito é atribuído ao valor da última dimensão, 20% ao primeiro, 20% é compartilhado pelo meio."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_jshaped"
+>title="Curva J"
+>abstract="60% do crédito é atribuído ao valor da última dimensão, 20% ao primeiro, 20% é compartilhado pelo meio."
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_inversej"
 >title="J invertido"
 >abstract="60% do crédito é atribuído ao primeiro valor de dimensão, 20% ao último, 20% é compartilhado pelo meio."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_reversejshaped"
+>title="J invertido"
+>abstract="60% do crédito é atribuído ao primeiro valor de dimensão, 20% ao último, 20% é compartilhado pelo meio."
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_timedecay"
 >title="Declínio de tempo"
 >abstract="Os valores de dimensão mais próximos do tempo a uma conversão recebem mais crédito."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_custom"
 >title="Personalizado"
 >abstract="Defina sua própria posição com base na ponderação de atribuição."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_positionbased"
+>title="Personalizado"
+>abstract="Defina sua própria posição com base na ponderação de atribuição."
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_algorithmic"
 >title="Algorítmico"
 >abstract="O crédito é determinado dinamicamente em um algoritmo estatístico."
 
-<!-- markdownlint-enable MD034 -->
 
 
 {{attribution-models-details}}
@@ -190,25 +160,25 @@ Considere o exemplo a seguir:
 
 Dependendo da janela de retrospectiva e do modelo de atribuição, os canais recebem crédito diferente. Veja a seguir alguns exemplos:
 
-* Usando o modelo **primeiro contato** e uma **janela de pesquisa de sessão**, a atribuição analisa apenas a terceira visita. Entre email e exibição, o email foi o primeiro, portanto, o email recebe 100% de crédito pela compra de US$ 50.
+* Ao usar o modelo **primeiro contato** e uma **janela de retrospectiva de sessão**, a atribuição considera somente a terceira visita. Entre email e exibição, o email foi o primeiro, portanto, o email recebe 100% de crédito pela compra de US$ 50.
 
-* Usando o modelo **primeiro contato** e uma **janela de pesquisa de pessoa**, a atribuição analisa todas as três visitas. A pesquisa paga foi a primeira, portanto recebe 100% de crédito pela compra de US$ 50.
+* Ao usar o modelo **primeiro contato** e uma **janela de retrospectiva de pessoa**, a atribuição considera todas as três visitas. A pesquisa paga foi a primeira, portanto recebe 100% de crédito pela compra de US$ 50.
 
-* Usando o modelo **linear** e uma **janela de pesquisa de sessão**, o crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25.
-Usando o modelo **linear** e uma **janela de pesquisa de visitante**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 por esta compra.
+* Ao usar o modelo **linear** e uma **janela de retrospectiva de sessão**, o crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25.
+Ao usar o modelo **linear** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 por esta compra.
 
-* Usando o modelo em **Forma de J** e uma **janela de pesquisa de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição.
+* Ao usar o modelo **Forma de J** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição.
 
    * O crédito será de 60% para a exibição (US$ 30).
    * De 20% para a pesquisa paga (US$ 10).
    * Os 20% restantes são divididos entre redes sociais e email (US$ 5 para cada).
 
-* Usando o modelo **Declínio de tempo** e uma **janela de pesquisa de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Usando a meia-vida padrão de 7 dias:
+* Ao usar o modelo **Decaimento de tempo** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Usando a meia-vida padrão de 7 dias:
 
    * Intervalo de 0 dias entre o ponto de contato de exibição e a conversão. `2^(-0/7) = 1`
    * Intervalo de 0 dias entre o ponto de contato de email e a conversão. `2^(-0/7) = 1`
-   * Intervalo de 6 dias entre o ponto de contato de redes sociais e a conversão. `2^(-6/7) = 0.552`
-   * Intervalo de 9 dias entre o ponto de contato de pesquisa paga e a conversão. `2^(-9/7) = 0.41`
+   * Intervalo de seis dias entre o ponto de contato de rede social e a conversão. `2^(-6/7) = 0.552`
+   * Intervalo de nove dias entre o ponto de contato de pesquisa paga e a conversão. `2^(-9/7) = 0.41`
    * A normalização desses valores resulta no seguinte:
 
       * Exibição: 33,8%, crédito de US$ 16,88
