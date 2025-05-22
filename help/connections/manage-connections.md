@@ -203,7 +203,7 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 | **[!UICONTROL Chave]** | A chave especificada para um conjunto de dados de pesquisa. |
 | **[!UICONTROL Chave correspondente]** | A chave correspondente especificada para um conjunto de dados de pesquisa. |
 | **[!UICONTROL Carimbo de data e hora]** | O carimbo de data/hora definido para um conjunto de dados de evento. |
-| **[!UICONTROL Registros disponíveis]** | Representa a quantidade total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado por meio do calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. No entanto, quando você cria uma nova conexão, existe uma [latência](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
+| **[!UICONTROL Registros disponíveis]** | Representa a quantidade total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado por meio do calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. No entanto, quando você cria uma nova conexão, existe uma [latência](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
 | **[!UICONTROL Registros adicionados]** | O número de registros (linhas) do conjunto de dados adicionados a uma conexão durante o intervalo de datas selecionado. |
 | **[!UICONTROL Registros ignorados]** | O número de registros (linhas) de conjunto de dados ignorados durante a transferência de dados para uma conexão durante o intervalo de datas selecionado. |
 | **[!UICONTROL Lotes adicionados]** | O número de lotes que foram adicionados a uma conexão. |

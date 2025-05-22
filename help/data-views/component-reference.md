@@ -69,5 +69,5 @@ Os componentes padrão opcionais estão disponíveis em **[!UICONTROL Visualiza�
 
 >[!MORELIKETHIS]
 >
->[Descubra insights mais profundos do cliente com o recurso Profundidade do evento](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>[Descubra insights mais profundos do cliente com o recurso Profundidade do evento](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=pt#M576)
 >
