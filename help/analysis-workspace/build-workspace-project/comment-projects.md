@@ -4,9 +4,9 @@ title: Adicionar e exibir comentários em projetos
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
+source-git-commit: df147b92e19b6dee66fcf6346113596f1cde6fd1
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
@@ -104,19 +104,23 @@ Para adicionar comentários a um projeto no Analysis Workspace:
 
 ## Incluir outros em um comentário
 
-O recurso de comentário no Analysis Workspace facilita a colaboração com outras pessoas. Para incluir outra pessoa em seu comentário:
+O recurso de comentário no Analysis Workspace facilita a colaboração com outras pessoas.
+
+Considere o seguinte ao usar o símbolo @ para incluir pessoas em um comentário:
+
+* As pessoas que você incluir receberão notificações com base nas configurações de notificação da Adobe Experience Cloud. Por padrão, eles recebem uma [notificação do Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications).
+
+  Além disso, as pessoas podem definir suas configurações de notificação do Experience Cloud para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+
+* Você pode incluir qualquer pessoa em sua organização em um comentário, mas isso não concede acesso automático ao projeto. Somente as pessoas que já têm acesso ao projeto podem acessá-lo.
+
+Para incluir outra pessoa em seu comentário:
 
 1. Digite o símbolo @ e comece a digitar o nome, sobrenome ou endereço de email da pessoa que deseja incluir.
 
    ![usuário da tag](assets/comments-tag-user.png)
 
 1. Selecione o nome da pessoa quando ele for exibido no menu suspenso.
-
-Considere o seguinte ao usar o símbolo @ para incluir pessoas em um comentário:
-
-* As pessoas incluídas receberão uma notificação por email e uma notificação por Pulse.
-
-* Você pode incluir qualquer pessoa em sua organização em um comentário, mas isso não concede a ela automaticamente acesso ao projeto. Somente as pessoas que já têm acesso ao projeto podem acessá-lo.
 
 ## Responder a um comentário
 
@@ -126,7 +130,7 @@ Considere o seguinte ao usar o símbolo @ para incluir pessoas em um comentário
 
    Ou
 
-   Se desejar que sua resposta inclua o texto do comentário ao qual você está respondendo, com o texto original envolvido em uma tag de citação, selecione o ícone de três pontos ao lado do comentário ou resposta específica à qual você deseja responder e selecione **[!UICONTROL Citar resposta]**. Uma resposta de citação é uma boa maneira de indicar claramente o comentário ou a resposta à qual ele se refere.
+   Para incluir o texto do comentário que você está respondendo, com o texto original envolvido em uma marca de citação, selecione o ícone de três pontos ao lado do comentário ou resposta específica que você deseja responder e selecione **[!UICONTROL Citar resposta]**. Uma resposta de cotação é uma boa maneira de indicar a qual comentário ou resposta seu comentário se refere.
 
 1. No campo **[!UICONTROL Novo comentário]**, especifique seu comentário.
 
@@ -146,7 +150,7 @@ Se um comentário estiver disponível na área comentários no painel direito, m
 
 1. Selecione a área do projeto na qual você deseja colocar o selo do comentário existente.
 
-   Uma **medalha de comentário** ![medalha de comentário](assets/comment-indicator.png) é colocada na área do projeto Workspace selecionado. O comentário também aparece na parte superior da área de comentários no painel direito.
+   Uma **medalha de comentário** ![medalha de comentário](assets/comment-indicator.png) é colocada na área do projeto Workspace que você selecionou. O comentário também aparece na parte superior da área de comentários no painel direito.
 
    Consulte [Exibir selos de comentário em um projeto](#view-comment-badges-in-a-project) para obter mais informações.
 
