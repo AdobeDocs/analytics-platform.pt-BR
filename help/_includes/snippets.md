@@ -1,8 +1,8 @@
 ---
-source-git-commit: a7350b6fc8fa75de07238543ed0db48af42b7577
+source-git-commit: c936ebbc191353d9993cc3c56892df3f29a1a1df
 workflow-type: tm+mt
-source-wordcount: '5207'
-ht-degree: 35%
+source-wordcount: '5163'
+ht-degree: 38%
 
 ---
 # Trechos
@@ -195,7 +195,7 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 | **Métrica primária** | Qualquer métrica, incluindo métricas calculadas. | Somente sessão ou pessoa | Somente ocorrências (visualizações de caminho) |
 | **Métrica secundária** | Sim<p>Qualquer métrica, incluindo métricas calculadas.</p> | Não | Não |
 | **Suporte a componentes em nós ou pontos de contato** | Métricas, itens de dimensão, segmentos e intervalos de datas. | Métricas, itens de dimensão, segmentos e intervalos de datas. | Somente itens de dimensão (exceto para o ponto de contato inicial e final) |
-| **Comparar segmentos** | Não | Sim<p>Fazer comparações lado a lado de dois segmentos diferentes no mesmo relatório</p> | Não |
+| **Comparar segmentos** | Não | Sim<p>Fazer comparações lado a lado de dois segmentos diferentes no mesmo relatório.</p> | Não |
 | **Interação de componente arrastar e soltar** | Sim | Sim | Não |
 | **jornadas Adobe Journey Optimizer** | Sim</br>Abra jornadas do Journey Optimizer para análise e personalização mais profundas. | Não | Não |
 
@@ -211,11 +211,11 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 
 >[!NOTE]
 > 
->Siga as etapas desta página somente depois de concluir todas as etapas de atualização anteriores. Você pode seguir as etapas de atualização recomendadas (recomendadas para a maioria das organizações) ou seguir as etapas geradas dinamicamente para sua organização com o Guia de atualização do Customer Journey Analytics. <ul><li>**Etapas de atualização recomendadas** (recomendado para a maioria das organizações)<p>Um conjunto de etapas que levam a uma implementação ideal do Customer Journey Analytics.</p><p>Para obter informações detalhadas, consulte [Atualizar do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guia de Atualização do Customer Journey Analytics** (Etapas personalizadas adaptadas às necessidades específicas da sua organização)<p>Um novo guia de atualização está disponível e gera dinamicamente etapas de atualização personalizadas para sua organização e suas circunstâncias exclusivas.</p><p>Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.</p></li></ul>
+>Siga as etapas desta página somente depois de concluir todas as etapas de atualização anteriores. Você pode seguir as etapas de atualização recomendadas (recomendadas para a maioria das organizações) ou seguir as etapas geradas dinamicamente para sua organização com o Guia de atualização do Customer Journey Analytics. <ul><li>**Etapas de atualização recomendadas** (recomendado para a maioria das organizações)<p>Um conjunto de etapas que levam a uma implementação ideal do Customer Journey Analytics.</p><p>Para obter informações detalhadas, consulte [Atualizar do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).</p></li><li>**Guia de Atualização do Customer Journey Analytics** (Etapas personalizadas adaptadas às necessidades específicas da sua organização)<p>Há um novo guia de atualização disponível que gera dinamicamente etapas de atualização personalizadas para sua organização e suas circunstâncias específicas.</p><p>Para acessar o guia do Customer Journey Analytics, clique na guia **[!UICONTROL Espaço de trabalho]** e selecione **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.</p></li></ul>
 
 ## Etapa final da lista de verificação de atualização {#upgrade-final-step}
 
-1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as etapas de atualização geradas dinamicamente no Guia de Atualização do Customer Journey Analytics. Para acessar o guia pelo Customer Journey Analytics, selecione a guia **[!UICONTROL Workspace]** e clique em **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.
+1. Continue seguindo as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as etapas de atualização geradas dinamicamente no Guia de Atualização do Customer Journey Analytics. Para acessar o guia do Customer Journey Analytics, clique na guia **[!UICONTROL Espaço de trabalho]** e selecione **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.
 
 
 ## Rascunho da documentação do Content Analytics {#draft-aca}
@@ -253,7 +253,7 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 | **[!UICONTROL Número de registros]** | O tamanho do conjunto de dados. |
 | **[!UICONTROL Esquema]** | É o esquema que foi usado como base para criar o conjunto de dados na Adobe Experience Platform. |
 | **[!UICONTROL Conjunto de dados]** | O nome do conjunto de dados. |
-| **[!UICONTROL Visualização: *nome do conjunto de dados *]** | Visualiza o conjunto de dados para as primeiras 10 linhas e as primeiras 10 colunas. |
+| **[!UICONTROL Visualização: *nome do conjunto de dados *]** | Visualiza o conjunto de dados das primeiras 10 linhas e das primeiras 10 colunas. |
 | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remover]** | Você pode [excluir um conjunto de dados](/help/connections/create-connection.md#delete-a-dataset) sem excluir toda a conexão. A exclusão de um conjunto de dados de uma conexão reduz os custos envolvidos na assimilação de dados e o complicado processo de recriação de toda a conexão e visualizações de dados associadas. |
 
 ## Dimensões padrão {#standard-dimensions}
@@ -264,7 +264,6 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 | 30 minutos | A cada 30 minutos em que um determinado evento aconteceu (arredondados para baixo). O primeiro item de dimensão são os primeiros 30 minutos no intervalo de datas, e o último item de dimensão são os últimos 30 minutos no intervalo de datas. |
 | 5 minutos | A cada 5 minutos em que um determinado evento aconteceu (arredondados para baixo). O primeiro item de dimensão são os primeiros 15 minutos no intervalo de datas, e o último item de dimensão são os últimos 5 minutos no intervalo de datas. |
 | [!UICONTROL Dia] | O dia em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro dia no intervalo de datas, e o último item de dimensão é o último dia no intervalo de datas. |
-| [!UICONTROL Dia do mês] | O dia do mês em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro dia do mês no intervalo de datas, e o último item de dimensão é o último dia do mês no intervalo de datas. |
 | [!UICONTROL Dia da semana] | O dia da semana em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro dia da semana no intervalo de datas, e o último item de dimensão é o último dia da semana no intervalo de datas. |
 | [!UICONTROL Dia do mês] | O dia do mês em que um determinado evento aconteceu. O primeiro item de dimensão é o primeiro dia do mês no intervalo de datas, e o último item de dimensão é o último dia do mês no intervalo de datas. |
 | Profundidade do evento | Atribui valores numéricos sequenciais (1, 2, 3, etc.) a cada interação de evento em uma sessão. Com essa dimensão, você pode habilitar o rastreamento e a análise detalhados de onde ocorrem eventos específicos no fluxo sequencial de interações do usuário na [sessão de experiência limitada que você definiu para a sua visualização de dados](/help/data-views/session-settings.md#session-settings). Você pode rastrear a progressão dos eventos do início ao fim em uma sessão limitada. Como exemplo: um visitante acessa a página inicial (evento 1, início da sessão), usa a função de pesquisa (evento 2), visualiza a página de detalhes do produto (evento 3), adiciona ao carrinho (evento 4), prossegue com o check-out (evento 5) e conclui uma compra (evento 6, fim da sessão). Você pode usar [!UICONTROL Profundidade do evento] agora em uma definição de segmento para segmentar dados com base na profundidade da interação. |
@@ -286,11 +285,11 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 
 | Nome do componente | Notas |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Contas] | Baseado na ID de Conta especificada em uma [!UICONTROL Conexão]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Contas] | Com base na ID de conta especificada em uma [!UICONTROL Conexão]. |
 | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Grupo de compras] | Os grupos de compra, com base na ID do grupo de compra especificada na [!UICONTROL Conexão]. |
 | [!UICONTROL Eventos] | O número de linhas de todos os conjuntos de dados de eventos em uma [!UICONTROL Conexão]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Contas Globais] | Com base na ID de Contas Globais especificada na [!UICONTROL Conexão]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Oportunidades] | As oportunidades, com base na ID de Oportunidade especificada na [!UICONTROL Conexão]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Contas Globais] | Com base na ID de contas globais especificada na [!UICONTROL Conexão]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Oportunidades] | As oportunidades, com base na ID de oportunidade especificada na [!UICONTROL Conexão]. |
 | [!UICONTROL Pessoas] | Baseado na ID de pessoa especificada em uma [!UICONTROL Conexão]. |
 | [!UICONTROL Sessão termina] | O número de eventos que foram o último evento de uma sessão. Semelhante a [!UICONTROL Inícios de sessão], também pode ser usado em uma definição de segmento para segmentar os itens até o último evento de cada sessão.<p>Esse componente precisa ser incluído na visualização de dados para a seguinte [métrica calculada](/help/components/calc-metrics/default-calcmetrics.md) estar disponível no Espaço de trabalho: <ul><li>Taxa de término da sessão</li></p> |
 | [!UICONTROL Sessão inicia] | O número de eventos que foram o primeiro evento de uma sessão. Quando usado em uma definição de segmento (por exemplo, &#39;[!UICONTROL Inícios de sessão] existe&#39;), ele segmenta somente para o primeiro evento de cada sessão.<p>Esse componente precisa ser incluído na visualização de dados para a seguinte [métrica calculada](/help/components/calc-metrics/default-calcmetrics.md) estar disponível no Espaço de trabalho: <ul><li>Taxa de início da sessão</li></p> |
