@@ -5,16 +5,18 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: bef00aa251831cdb809a6243b5d5a8e2c0dda9bb
+source-git-commit: 730464719f05026eae141c8e6cc656fb0fe4f819
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1961'
 ht-degree: 3%
 
 ---
 
 # Visualizar dados com o Data Insights Agent no Customer Journey Analytics
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>A funcionalidade descrita neste artigo está disponível para todos os clientes elegíveis como parte de uma versão em fases a partir de 28 de maio de 2025 e pode não estar disponível ainda em seu ambiente. Essa nota será removida quando a funcionalidade estiver com disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [versões de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
 
 >[!AVAILABILITY]
 >
@@ -31,7 +33,7 @@ Usar o Data Insights Agent para responder perguntas centradas em dados no Analys
 | Recurso | No escopo | Fora do escopo |
 | --- | --- | --- |
 | **Tipos de visualização** | <ul><li>Linha</li><li>Várias linhas</li><li>Tabela de forma livre</li><li>Barra</li><li>Rosca</li><li>Número do resumo</li></ul> | <ul><li>Fluxo</li><li>Fallout</li><li>Tabela de coorte</li><li>Área, Área empilhada</li><li>Barra empilhada</li><li>Marcador</li><li>Combinado</li><li>Histograma</li><li>Barra horizontal, Barra horizontal empilhada</li><li>Resumo da métrica principal</li><li>Dispersão</li><li>Mudança de resumo</li><li>Texto</li><li>Mapa de árvore</li><li>Venn</li></ul> |
-| **Ações do Workspace e recursos do agente** | <ul><li>Criar e atualizar visualizações<p>Gera uma tabela de forma livre e uma visualização associada (como uma linha, barra, rosca e assim por diante).<p>Por exemplo, *Qual é o lucro entre SKUs de fevereiro a maio?*</p></li><li>Fazer perguntas de acompanhamento</li><li>Responder a um prompt no contexto de qualquer prompt anterior<p>Por exemplo:</p> <ul><li>Prompt 1: *Eventos de tendência de março.*</li><li>Prompt 2: *Mostrar os dados de março a abril*</li></ul> </li><li>Detecção de prompt fora do escopo<p>Se você enviar um prompt que está fora do escopo, como *Exportar este projeto*, a Data Insights Agent responderá informando que a pergunta está fora do escopo.</p></li></ul> | <ul><li>Botões da interface de ação contextual (adicionar ao gráfico, novo painel, nova tabela)</li><li>Compartilhar</li><li>Exportar</li><li>Baixar</li><li>Gerenciar preferências do usuário</li><li>Preparar</li><li>Gerenciar visualização de dados</li><li>aplicativo Painéis do Analytics</li><li>Atribuição</li><li>Resumo ou resposta em linha<p>O Data Insights Agent não pode responder embutido no painel de chat com uma resposta resumida de um prompt do usuário. Exemplos de prompts fora do escopo são: *Dê-me um resumo dos insights do meu último prompt* e *Resumir os destaques da visualização de linha.*</p></li></ul> |
+| **Ações do Workspace e recursos do agente** | <ul><li>Criar e atualizar visualizações<p>Gera uma tabela de forma livre e uma visualização associada (como uma linha, barra, rosca e assim por diante).<p>Por exemplo, *Qual é o lucro entre SKUs de fevereiro a maio?*</p></li><li>Fazer perguntas de acompanhamento<p>Responder a um prompt no contexto de qualquer prompt anterior. Por exemplo:</p> <ul><li>Prompt 1: *Eventos de tendência de março.*</li><li>Prompt 2: *Mostrar os dados de março a abril*</li></ul> </li><li>Detecção de prompt fora do escopo<p>Se você enviar um prompt que está fora do escopo, como *Exportar este projeto*, a Data Insights Agent responderá informando que a pergunta está fora do escopo.</p></li></ul> | <ul><li>Compartilhar</li><li>Exportar</li><li>Baixar</li><li>Gerenciar preferências do usuário</li><li>Gerenciar visualização de dados</li><li>aplicativo Painéis do Analytics</li><li>Atribuição</li><li>Resumo ou resposta em linha<p>O Data Insights Agent não pode responder embutido no painel de chat com uma resposta resumida de um prompt do usuário. Exemplos de prompts fora do escopo são: *Dê-me um resumo dos insights do meu último prompt* e *Resumir os destaques da visualização de linha.*</p></li></ul> |
 | **Esclarecimento de questões** | Se você fizer uma pergunta que não tenha contexto suficiente para o Data Insights Agent responder, ou que seja muito genérica, o Data Insights Agent responderá com uma pergunta esclarecedora ou com opções sugeridas. <p>As seguintes perguntas de esclarecimento são exemplos de perguntas relacionadas a componentes:</p><ul><li>Métrica: *Qual métrica de &quot;receita&quot; você quis dizer?*</li><li>Dimension: *Em qual das &quot;regiões&quot; abaixo você deseja se concentrar?*</li><li>Segmento: *Que segmento de &quot;Conta&quot; você deseja aplicar?*</li><li>Intervalo de datas: *Por &quot;último mês&quot;, você quis dizer o último mês completo ou os últimos 30 dias?*</li></ul><p>A pergunta esclarecedora a seguir é um exemplo de uma pergunta relacionada a itens de dimensão:</p> <ul><li>Que &quot;nome da loja&quot; você quis dizer? (Por exemplo, Armazenar #5274, Armazenar #2949 e assim por diante.)</li></ul> | As perguntas de esclarecimento estão limitadas a componentes e itens de dimensão. O Data Insights Agent não pode esclarecer aspectos como visualizações de dados, visualizações, granularidade de dados, comparação e escopo. Quando o esclarecimento de dúvidas não puder ser usado, o agente assumirá como padrão o que você provavelmente está solicitando. Se retornar uma visualização ou granularidade de dados inesperada, você poderá fazer uma pergunta complementar ou ajustar a visualização e os dados. |
 | **Verificabilidade e correção de dados** | A verificabilidade e a correção dos dados podem ser confirmadas visualizando-se a tabela de forma livre gerada e a visualização de dados. <p>Por exemplo, se você pedir à Data Insights Agent para *Fazer tendência de pedidos no mês passado*, será possível confirmar se a métrica (&quot;pedidos&quot;) e o intervalo de datas (&quot;mês passado&quot;) corretos foram selecionados no painel recém-gerado, na visualização de dados e na tabela de forma livre. | O Data Insights Agent não responde informando quais componentes ou visualizações foram adicionados.</p> |
 | **Mecanismos de feedback** | <ul><li>Polegar para cima</li><li>Polegar para baixo</li><li>Sinalizador</li></ul> |  |
@@ -72,7 +74,9 @@ Os seguintes parâmetros regulam o acesso ao Data Insights Agent no Customer Jou
 
       >[!IMPORTANT]
       >
-      >A Data Insights Agent pode fazer referência às visualizações de dados incluídas em algum momento durante o mesmo dia em que você as ativa no Admin Console.
+      >Considere o seguinte ao ativar as visualizações de dados:
+      >* É possível habilitar no máximo 50 visualizações de dados por organização IMS. Se você habilitar mais de 50 visualizações de dados em todos os perfis de produto para uma determinada organização, a Data Insights Agent usará as 50 visualizações de dados mais usadas.
+      >* A Data Insights Agent pode fazer referência às visualizações de dados incluídas em algum momento durante o mesmo dia em que você as ativa no Admin Console.
 
    1. Procure ou role até as visualizações de dados que deseja habilitar e selecione o ícone de adição ![AddCircle](/help/assets/icons/AddCircle.svg) ao lado do nome de cada visualização de dados.
 
