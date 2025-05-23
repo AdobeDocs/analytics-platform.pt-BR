@@ -3,10 +3,10 @@ description: Saiba mais sobre tipo de métrica e atribuição
 title: Tipo de métrica e atribuição
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 2d182004b12eb44f54ec9b4b5f63cb9072594aec
+source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 100%
+source-wordcount: '1017'
+ht-degree: 98%
 
 ---
 
@@ -132,11 +132,14 @@ Consulte [Exemplo](#example) para obter um exemplo de uso de um modelo de atribu
 >abstract="O crédito é determinado dinamicamente em um algoritmo estatístico."
 
 
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_container"
+>title="Container"
+>abstract="Selecione um contêiner para definir o escopo desejado para a atribuição."
+
 
 {{attribution-models-details}}
 
-
-### Janela de pesquisa {#lookback-window}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -145,7 +148,6 @@ Consulte [Exemplo](#example) para obter um exemplo de uso de um modelo de atribu
 >title="Janela de pesquisa"
 >abstract="Essa configuração determina a janela de atribuição de dados que será aplicada a cada conversão."
 
-<!-- markdownlint-enable MD034 -->
 
 {{attribution-lookback-window}}
 
