@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 91%
+source-wordcount: '836'
+ht-degree: 89%
 
 ---
 
@@ -60,18 +60,14 @@ O Content Analytics usa dados de exibição de imagem da Web em conjuntos de dad
 
 >[!NOTE]
 >
->Se você adquiriu uma licença do complemento Privacy and Security Shield, saiba que (quaisquer dados gerados a partir de) experiências e ativos sujeitos à análise de conteúdo não são cobertos pela rotulagem DULE ou pelas chaves gerenciadas pelo cliente.
+>Se você licenciou o complemento Privacy and Security Shield, saiba que (quaisquer dados gerados a partir de) experiências e ativos, sujeitos ao Content Analytics, não são cobertos pela rotulagem DULE ou pelas Chaves gerenciadas pelo cliente. Além disso, o Content Analytics não é um serviço HIPAA-Ready.
 >
 
->[!NOTE]
->
->O Content Analytics [envia eventos adicionais](config/datacollection.md#content-analytics-event) que provavelmente afetam qualquer definição de taxa de rejeição baseada no número de eventos em uma sessão ou página.
->
 
 >[!MORELIKETHIS]
 >
 >[Relatórios da análise de conteúdo](report/report.md)
 >[Configure a análise de conteúdo](config/configuration.md)
->[Calculando rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=pt#M454)
+>[Calculando rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

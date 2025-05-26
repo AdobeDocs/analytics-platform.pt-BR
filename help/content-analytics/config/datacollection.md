@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
+source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 80%
+source-wordcount: '628'
+ht-degree: 77%
 
 ---
 
@@ -94,6 +94,11 @@ Para reduzir o número de chamadas que saem da página, o Content Analytics cole
    * Bloquear a tela
 * O URL muda, o que resulta em um URL relevante modificado.
 * As visualizações de ativos registradas e prontas para envio excedem o total de 32.
+
+>[!NOTE]
+>
+>Os eventos adicionais do Content Analytics provavelmente afetam qualquer definição de taxa de rejeição baseada no número de eventos em uma sessão ou página.
+>
 
 
 ## Esquemas
