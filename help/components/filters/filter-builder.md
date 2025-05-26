@@ -4,10 +4,10 @@ title: Construir segmentos
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c383681cb5c454b79d33a89e25b0d54bd239da66
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 51%
+source-wordcount: '1569'
+ht-degree: 50%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 51%
 
 >[!CONTEXTUALHELP]
 >id="components_filters_datapreview"
->title="Pré-visualização de dados"
+>title="Visualização de dados"
 >abstract="Compara os dados desse segmento com os da visualização de dados. A porcentagem de visualização é baseada no número total na visualização de dados dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda pode estar preenchendo os dados."
 
 
@@ -157,7 +157,7 @@ Ou você poderia definir 52 segmentos: 50 segmentos para os estados dos EUA, um 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
 >title="Instância"
->abstract="Inclui instâncias e valores persistentes da dimensão."
+>abstract="Inclui instâncias da dimensão."
 
 
 >[!CONTEXTUALHELP]
