@@ -5,10 +5,10 @@ exl-id: 5ce13fe9-29fa-474c-bae3-65f275153a59
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
-workflow-type: ht
+source-git-commit: 6fdb6cbd6f12a0417f513565b02e3ad60c8df6cb
+workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 100%
 <!-- markdownlint-enable MD034 -->
 
 
-O formato permite definir como uma determinada métrica é exibida quando usada em relatórios.
+O Formato permite determinar como um determinado componente é exibido quando usado em relatórios.
 
-## Definir configurações de formato para uma métrica
+## Definir configurações de formato para um componente
 
-Você pode determinar como uma determinada métrica é exibida ajustando suas configurações de formato.
+Você pode determinar como um determinado componente é exibido ajustando suas configurações de formato.
 
 1. No Customer Journey Analytics, acesse a guia [!UICONTROL **Exibições de dados**].
 
@@ -44,13 +44,13 @@ Você pode determinar como uma determinada métrica é exibida ajustando suas co
 
    | Configuração | Descrição |
    | --- | --- |
-   | **[!UICONTROL Formato]** | Permite especificar a formatação de uma métrica como Decimal, Hora, Porcentagem ou Moeda. |
-   | **[!UICONTROL Decimal]** | Isso não é visível nos dados de esquema do tipo Integer. Permite especificar o número de casas decimais que uma métrica deve exibir. |
+   | **[!UICONTROL Formato]** | Permite especificar a formatação de um componente como Decimal, Hora, Porcentagem ou Moeda. |
+   | **[!UICONTROL Decimal]** | Isso não é visível nos tipos de dados Integer do esquema. Permite especificar o número de casas decimais que um componente exibe. |
    | **[!UICONTROL Data]** | Permite determinar como você deseja que o campo de data e hora seja exibido quando usado como uma dimensão no relatório. [Saiba mais](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
    | **[!UICONTROL Data e hora]** | Permite determinar como você deseja que o campo de data e hora seja exibido quando usado como uma dimensão no relatório. [Saiba mais](../../use-cases/data-views/data-views-usecases.md#date-and-date-time-use-cases) |
-   | **[!UICONTROL Moeda]** | Permite determinar em qual moeda a métrica será exibida.  <p>Se você analisar dados globais onde as transações ocorrem em moedas diferentes, consulte  [Usar conversão de moeda](#use-currency-conversion).</p> |
-   | **[!UICONTROL Exibir tendência ascendente como]** | Permite especificar se uma tendência de alta nessa métrica é boa (verde) ou ruim (vermelho). |
-   | **[!UICONTROL Valor verdadeiro]** e **[!UICONTROL Valor falso]** | Visível somente em dados de esquema do tipo Booleano. Permite personalizar o rótulo do item de dimensão para valores `true` e `false`. |
+   | **[!UICONTROL Moeda]** | Permite determinar em qual moeda o componente será exibido. <p>Se você analisar dados globais onde as transações ocorrem em moedas diferentes, consulte  [Usar conversão de moeda](#use-currency-conversion).</p> |
+   | **[!UICONTROL Exibir tendência ascendente como]** | Permite especificar se uma tendência de alta neste componente é boa (verde) ou ruim (vermelho). |
+   | **[!UICONTROL Valor verdadeiro]** e **[!UICONTROL Valor falso]** | Visível somente em tipos de dados Boolean do esquema. Permite personalizar o rótulo do item de dimensão para valores `true` e `false`. |
 
    {style="table-layout:auto"}
 
