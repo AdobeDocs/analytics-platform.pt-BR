@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 0ad3cd8ae88cc5fc5297a63067900b2f741778b1
+source-git-commit: f45e56b59b80552edc3b2662697e01dcc1b62ea5
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2486'
 ht-degree: 94%
 
 ---
@@ -118,13 +118,12 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 
 | Recurso | Notas |
 | --- | --- |
-| **Painéis** | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos e Analytics for Target (A4T) não são compatíveis. |
+| **painéis do Workspace** | Os painéis em branco, o painel de atribuição, o painel de forma livre e os insights rápidos são totalmente compatíveis. Os painéis Comparação de segmentos e Analytics for Target (A4T) não são compatíveis. |
 
 ## Sem suporte, mas planejado {#planned}
 
 | Recurso | Notas |
 | --- | --- |
-| **Análise de contribuição** | Suporte planejado. |
 | **Relatório em tempo real** | Suporte planejado. |
 | **Segment IQ** | Suporte planejado. |
 | **Fontes de dados de IDs de transação** | Suporte planejado. |
@@ -134,6 +133,7 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | Recurso | Notas |
 | --- | --- |
 | **Activity Map** | Suporte ainda não planejado. |
+| **Análise de contribuição** | Suporte ainda não planejado. |
 
 ## Nunca terá suporte {#never}
 
