@@ -6,7 +6,7 @@ exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
 workflow-type: tm+mt
 source-wordcount: '1017'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Consulte [Exemplo](#example) para obter um exemplo de uso de um modelo de atribu
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_container"
 >title="Container"
->abstract="Selecione um contêiner para definir o escopo desejado para a atribuição."
+>abstract="Selecione um container para definir o escopo desejado da atribuição."
 
 
 {{attribution-models-details}}
@@ -194,6 +194,6 @@ Os eventos de conversão que normalmente têm números inteiros são divididos s
 >[!MORELIKETHIS]
 >
 >[Configurações de componentes de atribuição](/help/data-views/component-settings/attribution.md)
->[Métrica de participação](participation-metric.md)
+>>[Métrica de participação](participation-metric.md)
 >
 
