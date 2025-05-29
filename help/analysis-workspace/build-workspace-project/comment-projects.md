@@ -113,9 +113,9 @@ O recurso de comentário no Analysis Workspace facilita a colaboração com outr
 
 Considere o seguinte ao usar o símbolo @ para incluir pessoas em um comentário:
 
-* As pessoas que você incluir receberão notificações com base nas configurações de notificação da Adobe Experience Cloud. Por padrão, eles recebem uma notificação no aplicativo, visível do [ícone de notificação do Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![ícone de notificação do Experience Cloud](assets/experience-cloud-notification.png) no Customer Journey Analytics.
+* As pessoas que você incluir receberão notificações com base nas configurações de notificação da Adobe Experience Cloud. Por padrão, eles recebem uma notificação no aplicativo, visível do [ícone de notificação do Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#view-notifications) ![ícone de notificação do Experience Cloud](assets/experience-cloud-notification.png) no Customer Journey Analytics.
 
-  Além disso, as pessoas podem definir suas configurações de notificação do Experience Cloud para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+  Além disso, as pessoas podem definir suas configurações de notificação do Experience Cloud para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#slack).
 
 * Você pode incluir qualquer pessoa em sua organização em um comentário, mas isso não concede acesso automático ao projeto. Somente as pessoas que já têm acesso ao projeto podem acessá-lo.
 
