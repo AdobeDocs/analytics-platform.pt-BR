@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 07f9a224d43658a58779abecd6473fceb7109ef4
+source-git-commit: f578b8e381f59abb1f22e00718531f216fefaef8
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 96%
+source-wordcount: '2453'
+ht-degree: 84%
 
 ---
 
@@ -19,7 +19,7 @@ A criação de uma visualização de dados envolve criar métricas e dimensões 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://video.tv.adobe.com/v/345560/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -100,10 +100,10 @@ Determina o nome dos containers para a visualização de dados. Os nomes dos con
 
 | Configuração | Descrição |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container da conta global &#x200B;]** | `Global Account` (padrão). O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container de conta &#x200B;]** | `Account` (padrão). O container [!UICONTROL Conta] inclui todas as sessões e eventos para contas no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container de oportunidade &#x200B;]** | `Opportunity` (padrão). O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container de grupo de compra &#x200B;]** | `Buying Group` (padrão). O container [!UICONTROL Grupo de compra] inclui todas as sessões e eventos para grupos de compra no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container da conta global ]** | `Global Account` (padrão). O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container de conta ]** | `Account` (padrão). O container [!UICONTROL Conta] inclui todas as sessões e eventos para contas no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container de oportunidade ]** | `Opportunity` (padrão). O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container de grupo de compra ]** | `Buying Group` (padrão). O container [!UICONTROL Grupo de compra] inclui todas as sessões e eventos para grupos de compra no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
 | **[!UICONTROL Nome do container de pessoas]** | `Person` (padrão). O container [!UICONTROL Pessoa] inclui todas as sessões e eventos de pessoas dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente (por exemplo, &quot;Visitante&quot; ou &quot;Usuário&quot;), você poderá renomear o container aqui. |
 | **[!UICONTROL Nome do container da sessão]** | `Session` (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
 | **[!UICONTROL Nome do container do evento]** | `Event` (padrão). O container [!UICONTROL Evento] define eventos individuais em um conjunto de dados. Se sua organização usar um termo diferente (por exemplo, &quot;Ocorrências&quot; ou &quot;Exibições de página&quot;), você poderá renomear o container aqui. |
@@ -140,9 +140,9 @@ Em seguida, você pode definir os componentes de uma visualização de dados, o 
 
 1. Procure um campo de esquema usando a opção ![Ícone de pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Pesquisar campos de esquema]** ou localize um campo acessando qualquer uma das coleções de conjunto de dados, como ![Ícone de pasta](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Conjuntos de dados de evento]**.<br/>Como alternativa, é possível criar um campo derivado usando a opção ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Criar campo derivado** . Consulte [Campos derivados](./derived-fields/derived-fields.md) para obter mais informações.
 
-1. Quando você encontrar o campo de esquema específico ou definir o campo derivado, arraste esse campo, como o ![Ícone de alça](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nome da página]**, do painel esquerdo para a seção Métricas ou Dimensões.
-Você pode arrastar o mesmo campo de esquema nas seções de dimensões ou métricas várias vezes e configurar a mesma dimensão ou métrica de maneiras diferentes. Por exemplo, no campo pageName, é possível criar uma dimensão chamada “Páginas de produto” e outra chamada “Páginas de erro”, usando diferentes [Configurações de componente](component-settings/overview.md) à direita.
-Se você arrastar uma pasta de campo de esquema do painel esquerdo, elas serão classificadas automaticamente em seções típicas. Os campos de sequência de caracteres terminam na seção [!UICONTROL Dimensão] e os esquemas do tipo numérico terminam na seção [!UICONTROL Métricas]. Você também pode clicar em **[!UICONTROL Adicionar tudo]** e todos os campos de esquema serão adicionados aos seus respectivos locais.
+1. Quando você encontrar o campo de esquema específico ou definir o campo derivado, arraste esse campo, como ![Ícone de Identificador](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nome da Página]**, do painel esquerdo para a seção **[!UICONTROL Métricas]** ou **[!UICONTROL Dimensões]** abaixo de **[!UICONTROL Componentes incluídos]**.
+Você pode arrastar o mesmo campo de esquema nas seções de dimensões ou métricas várias vezes e configurar a mesma dimensão ou métrica de maneiras diferentes. Por exemplo, no campo pageName, é possível criar uma dimensão denominada `Product Pages` e outra denominada `Error pages`, usando diferentes [Configurações de componente](component-settings/overview.md) à direita.
+Se você arrastar uma pasta de campo de esquema do painel esquerdo, os campos na pasta serão classificados automaticamente na seção apropriada. Os campos de sequência de caracteres terminam na seção [!UICONTROL Dimensão] e os esquemas do tipo numérico terminam na seção [!UICONTROL Métricas]. Você também pode clicar em **[!UICONTROL Adicionar tudo]** e todos os campos de esquema serão adicionados às suas respectivas seções.
 
 1. Ao selecionar um componente, as configurações são exibidas no lado direito.
 
@@ -161,11 +161,11 @@ Se você arrastar uma pasta de campo de esquema do painel esquerdo, elas serão 
 
 1. Selecione **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
-**Métricas ou dimensões duplicadas**
+### Métricas ou dimensões duplicadas
 
 Duplicar métricas ou dimensões e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões a partir de um único campo de esquema. Selecione a configuração [!UICONTROL Duplicar] abaixo do nome da métrica ou das dimensões no canto superior direito. Modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
 
-**Filtrar campos ou conjuntos de dados de esquema**
+### Filtrar campos ou conjuntos de dados de esquema
 
 Você pode filtrar ![Ícone de filtro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) campos de esquema no painel esquerdo por [!UICONTROL tipo de dados], [!UICONTROL conjuntos de dados], [!UICONTROL governança de dados] e [!UICONTROL outros] critérios ([!UICONTROL contém dados], [!UICONTROL é uma identidade] e [!UICONTROL não foi descontinuado]):
 
@@ -174,6 +174,71 @@ Você pode filtrar ![Ícone de filtro](https://spectrum.adobe.com/static/icons/w
 >[!TIP]
 >
 >Se os componentes não forem carregados corretamente na visualização de dados e uma mensagem de erro aparecer, consulte [Falta de permissões](../troubleshooting/lack-of-permissions.md) para obter uma resolução.
+
+
+### Componentes incluídos {#included-components}
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_custom"
+>title="Rótulos personalizados"
+>abstract="Além dos rótulos fornecidos pela Adobe, é possível definir seus próprios rótulos personalizados para a organização."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_contract"
+>title="Rótulos de contrato"
+>abstract="Os rótulos de contrato (C) são usados para categorizar dados que contêm obrigações contratuais ou estão relacionados às políticas de governança de dados da sua organização."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_identity"
+>title="Rótulos de identidade"
+>abstract="Os rótulos de identidade (I) são usados para categorizar dados que podem identificar ou entrar em contato com uma pessoa específica."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_sensitive"
+>title="Rótulos de sensibilidade"
+>abstract="Os rótulos de sensibilidade (S) são usados para categorizar dados que você e sua organização consideram sensíveis."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_partner_ecosystem"
+>title="Ecossistema do parceiro"
+>abstract="Os rótulos do Ecossistema de parceiros (P) são usados para categorizar dados compartilhados com parceiros de terceiros."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_policies"
+>title="Políticas"
+>abstract="Para que os rótulos de uso de dados estejam de acordo com a conformidade de dados, as políticas de uso de dados devem ser implementadas. As políticas de uso de dados são regras que descrevem os tipos de ações de marketing que você tem permissão para (ou está restrito de) realizar em dados da Experience Platform. Os filtros de políticas aplicam a política habilitada à exibição de dados."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_responsible_engagement"
+>title="Rótulos de engajamento responsáveis"
+>abstract="Os rótulos de envolvimento responsável são usados para oferecer suporte ao envolvimento responsável."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+
+
+Os **[!UICONTROL Componentes incluídos]** contêm a lista de **[!UICONTROL Métricas]** e **[!UICONTROL Dimensões]** que você configura para a visualização de dados.
+
+* Para pesquisar componentes, use ![Pesquisar](/help/assets/icons/Search.svg) **[!UICONTROL _Pesquisar componentes_]**.
+* Para filtrar os componentes incluídos listados, selecione ![Filtro](/help/assets/icons/Filter.svg).
+
+  ![Caixa de diálogo de filtro de componentes de Inclusão](assets/dataview_includedcomponents_filter.png)
+
+  Na caixa de diálogo **[!UICONTROL Filtrar campo por]**, você pode filtrar as seguintes categorias:
+
+   * **[!UICONTROL Tipo de dados]** - Você pode selecionar um ou mais dos seguintes tipos de dados: [!UICONTROL Cadeia de caracteres], [!UICONTROL Inteiro], [!UICONTROL Curto], [!UICONTROL Booleano], [!UICONTROL Duplo], [!UICONTROL Byte], [!UICONTROL Longo], [!UICONTROL Data] ou [!UICONTROL Data-hora].
+   * **[!UICONTROL Conjuntos de dados]** - Selecione um ou mais conjuntos de dados.
+   * **[!UICONTROL Governança de dados]**: selecione um ou mais rótulos das subcategorias [!UICONTROL Rótulos personalizados], [!UICONTROL Rótulos de contrato], [!UICONTROL Rótulos de identidade], [!UICONTROL Rótulos de sensibilidade], [!UICONTROL ecossistema de parceiro] ou [!UICONTROL Políticas].
+   * **[!UICONTROL Outros]** - Selecione uma ou mais das opções [!UICONTROL Contém dados], [!UICONTROL É identidade] ou [!UICONTROL Não está obsoleto].
+
+  Selecione **[!UICONTROL Aplicar]** para aplicar os filtros.
 
 
 
