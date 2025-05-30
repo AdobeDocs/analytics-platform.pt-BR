@@ -183,45 +183,45 @@ Você pode filtrar ![Ícone de filtro](https://spectrum.adobe.com/static/icons/w
 >id="dataview_includedcomponents_filter_datagovernance_custom"
 >title="Rótulos personalizados"
 >abstract="Além dos rótulos fornecidos pela Adobe, é possível definir seus próprios rótulos personalizados para a organização."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_contract"
 >title="Rótulos de contrato"
 >abstract="Os rótulos de contrato (C) são usados para categorizar dados que contêm obrigações contratuais ou estão relacionados às políticas de governança de dados da sua organização."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_identity"
 >title="Rótulos de identidade"
 >abstract="Os rótulos de identidade (I) são usados para categorizar dados que podem identificar ou entrar em contato com uma pessoa específica."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_sensitive"
 >title="Rótulos de sensibilidade"
 >abstract="Os rótulos de sensibilidade (S) são usados para categorizar dados que você e sua organização consideram sensíveis."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_partner_ecosystem"
 >title="Ecossistema do parceiro"
 >abstract="Os rótulos do Ecossistema de parceiros (P) são usados para categorizar dados compartilhados com parceiros de terceiros."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="Políticas"
 >abstract="Para que os rótulos de uso de dados estejam de acordo com a conformidade de dados, as políticas de uso de dados devem ser implementadas. As políticas de uso de dados são regras que descrevem os tipos de ações de marketing que você tem permissão para (ou está restrito de) realizar em dados da Experience Platform. Os filtros de políticas aplicam a política habilitada à exibição de dados."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_responsible_engagement"
 >title="Rótulos de engajamento responsáveis"
 >abstract="Os rótulos de envolvimento responsável são usados para oferecer suporte ao envolvimento responsável."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
 
 
 Os **[!UICONTROL Componentes incluídos]** contêm a lista de **[!UICONTROL Métricas]** e **[!UICONTROL Dimensões]** que você configura para a visualização de dados.
