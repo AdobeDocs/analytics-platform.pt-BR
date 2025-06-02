@@ -101,7 +101,7 @@ Cada etapa fornece uma explicação de alto nível de um processo mais detalhado
 
    1. Preencha um objeto do XDM e envie-o à sequência de dados.
 
-+++
+   +++
 
    +++Tags
 
@@ -113,7 +113,7 @@ Cada etapa fornece uma explicação de alto nível de um processo mais detalhado
 
    1. [Adicione a lógica da coleção de dados do XDM à sua tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md){target="_blank"}.
 
-+++
+   +++
 
 +++ API
 
