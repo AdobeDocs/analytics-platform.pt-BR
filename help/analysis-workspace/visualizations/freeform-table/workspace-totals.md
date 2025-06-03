@@ -7,7 +7,7 @@ role: User
 source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 91%
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="Total geral"
->abstract="O total geral não é compatível com tabelas ou detalhamentos com linhas estáticas."
+>abstract="O total geral não é compatível com tabelas e detalhamentos com linhas estáticas."
 
 
 Nas Tabelas de forma livre, aparece uma linha total em cada nível de detalhamento, que pode mostrar dois totais:
