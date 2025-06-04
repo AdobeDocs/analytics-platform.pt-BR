@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 3aa8986569d5bb5d7767f95cbdaead3f09440383
+source-git-commit: 578674b3d62a8c31f1ca13e9edbb7e8c14974dc6
 workflow-type: tm+mt
-source-wordcount: '7259'
-ht-degree: 67%
+source-wordcount: '7421'
+ht-degree: 65%
 
 ---
 
@@ -111,7 +111,7 @@ A experiência de criação e edição de conexão reúne todos os conjuntos de 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar e editar uma conexão](https://video.tv.adobe.com/v/3409303/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar e editar uma conexão](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -178,8 +178,8 @@ Na tela **[!UICONTROL Conexões]** > **[!UICONTROL *Nome da conexão *]**:
    | **[!UICONTROL ID de pessoa]** | A ID de pessoa usada para oferecer suporte a relatórios baseados em pessoas para o conjunto de dados. |
    | **[!UICONTROL Chave]** | A chave usada para um conjunto de dados de pesquisa. |
    | **[!UICONTROL Chave correspondente]** | A chave correspondente usada para um conjunto de dados de pesquisa. |
-   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
-   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
+   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
+   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
 
    Você pode pesquisar um conjunto de dados específico usando o campo ![Pesquisa](/help/assets/icons/Search.svg).
 
@@ -224,8 +224,8 @@ Na tela **[!UICONTROL Conexões]** > **[!UICONTROL *Nome da conexão *]**:
    | **[!UICONTROL ID de pessoa]** | A ID de pessoa usada para oferecer suporte a relatórios baseados em pessoas para o conjunto de dados. |
    | **[!UICONTROL Chave]** | A chave usada para um conjunto de dados de pesquisa. |
    | **[!UICONTROL Chave correspondente]** | A chave correspondente usada para um conjunto de dados de pesquisa. |
-   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
-   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
+   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
+   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
 
    Você pode pesquisar um conjunto de dados específico usando o campo ![Pesquisa](/help/assets/icons/Search.svg).
 
@@ -242,9 +242,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="Contêineres opcionais"
->abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global &#x200B;]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras &#x200B;]**: habilita a configuração de grupos de compras em uma conexão."
-
-
+>abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global ]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras ]**: habilita a configuração de grupos de compras em uma conexão."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
@@ -279,7 +277,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
 >title="Tipo de chave correspondente"
->abstract="Selecione como associar: com base em uma correspondência por campo ou por container.<br/><br/>**[!UICONTROL Correspondência por campo &#x200B;]**: selecione um campo para associar com um dos conjuntos de dados de eventos. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por container]**: selecione um container a ser associado a um dos conjuntos de dados de evento."
+>abstract="Selecione como associar: com base em uma correspondência por campo ou por container.<br/><br/>**[!UICONTROL Correspondência por campo ]**: selecione um campo para associar com um dos conjuntos de dados de eventos. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por container]**: selecione um container a ser associado a um dos conjuntos de dados de evento."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_importnewdata"
@@ -309,7 +307,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="Contêineres opcionais"
->abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global &#x200B;]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras &#x200B;]**: habilita a configuração de grupos de compras em uma conexão."
+>abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global ]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras ]**: habilita a configuração de grupos de compras em uma conexão."
 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
@@ -344,7 +342,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
 >title="Tipo de chave correspondente"
->abstract="Selecione como associar: com base em uma correspondência por campo ou por container.<br/><br/>**[!UICONTROL Correspondência por campo &#x200B;]**: selecione um campo para associar com um dos conjuntos de dados de eventos. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por container]**: selecione um container a ser associado a um dos conjuntos de dados de evento."
+>abstract="Selecione como associar: com base em uma correspondência por campo ou por container.<br/><br/>**[!UICONTROL Correspondência por campo ]**: selecione um campo para associar com um dos conjuntos de dados de eventos. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por container]**: selecione um container a ser associado a um dos conjuntos de dados de evento."
 
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
@@ -365,6 +363,43 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >id="connection_connectionmap"
 >title="Mapa de conexão"
 >abstract="O Mapa de conexão visualiza as relações entre evento, pessoa, conta e conjuntos de dados de pesquisa relevantes (como oportunidades, membros da campanha e muito mais)."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitching_enable"
+>title="Ativar identificação de identidade"
+>abstract="Ative a compilação de identidade para elevar esse conjunto de dados de evento para análise entre canais."
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/overview" text="Visão geral da compilação"
+
+>[!CONTEXTUALHELP]
+>id="connection_stitching_dialog"
+>title="Ativar identificação de identidade"
+>abstract="Ativar a identificação de identidade deriva uma ID compilada de um único conjunto de dados ou de vários conjuntos de dados. Esse processo pode incluir a mesclagem de dados do usuário de sessões autenticadas e não autenticadas.<br/><br/>Você é responsável por cumprir as leis e regulamentos aplicáveis. Essa conformidade inclui a obtenção das permissões de usuário final necessárias antes de mesclar conjuntos de dados."
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/overview" text="Visão geral da compilação"
+
+>[!CONTEXTUALHELP]
+>id="connection_persistent"
+>title="ID da pessoa"
+>abstract="Selecione uma ID persistente entre as identidades disponíveis. Uma ID persistente é um identificador que está disponível em todos os eventos no conjunto de dados do evento."
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/overview" text="Visão geral da compilação"
+
+>[!CONTEXTUALHELP]
+>id="connection_lookbackwindow"
+>title="Janela de pesquisa"
+>abstract="Selecione o período apropriado para a janela de pesquisa usar na repetição da compilação."
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/overview" text="Visão geral da compilação"
+
+>[!CONTEXTUALHELP]
+>id="connection_namespace_map"
+>title="Mapa de identidade do namespace"
+>abstract="Selecione o namespace a ser usado para escolher o identificador no mapa de identidade."
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/overview" text="Visão geral da compilação"
+
+>[!CONTEXTUALHELP]
+>id="connection_namespace_graph"
+>title="Gráfico de identidade de namespace"
+>abstract="Selecione o namespace a ser usado para atualizar o identificador no gráfico de identidade."
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/overview" text="Visão geral da compilação"
+
 
 ### Adicionar conjuntos de dados
 
@@ -575,7 +610,7 @@ Ao excluir um conjunto de dados, você é notificado sobre as implicações da e
 
 ### Preenchimentos retroativos anteriores
 
-Ao selecionar ![Histórico](/help/assets/icons/History.svg) **[!UICONTROL Preenchimentos retroativos anteriores]** na interface, uma caixa de diálogo **[!UICONTROL Preenchimentos retroativos anteriores: _Nome do conjunto de dados_]**&#x200B;mostra os preenchimentos retroativos mais recentes do conjunto de dados.
+Ao selecionar ![Histórico](/help/assets/icons/History.svg) **[!UICONTROL Preenchimentos retroativos anteriores]** na interface, uma caixa de diálogo **[!UICONTROL Preenchimentos retroativos anteriores: _Nome do conjunto de dados_]**mostra os preenchimentos retroativos mais recentes do conjunto de dados.
 
 ## Tipos de conjunto de dados {#dataset-types}
 
@@ -682,6 +717,6 @@ Entre em contato com a equipe de suporte da Adobe para obter mais informações 
 
 >[!MORELIKETHIS]
 >
->Blog: [como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=pt)
+>Blog: [como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
 ![Compartilhar](/help/assets/icons/Share.svg)
