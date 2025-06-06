@@ -4,9 +4,9 @@ title: Adicionar e exibir comentários em projetos
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 5831f1eea0d46000c15d0e2269717816785ee881
+source-git-commit: 02b85db81c384c78f7d388b19c8ad53d0028de43
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1816'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,9 @@ Você pode exibir comentários da área de comentários no painel direito ou do 
 
 Todos os comentários feitos em um projeto do Analysis Workspace ficam visíveis na área de comentários no painel direito.
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários no painel direito do Analysis Workspace.
+1. Por padrão, a área de comentários é expandida para cada projeto no Analysis Workspace na primeira vez que você abre um projeto.
+
+   Selecione o ícone da área de comentários no painel direito de um projeto para abrir ou fechar a área de comentários.
 
    ![Área de comentários fechada](assets/comments-area-closed.png)
 
@@ -113,11 +115,11 @@ O recurso de comentário no Analysis Workspace facilita a colaboração com outr
 
 Considere o seguinte ao usar o símbolo @ para incluir pessoas em um comentário:
 
-* As pessoas que você incluir receberão notificações com base nas configurações de notificação da Adobe Experience Cloud. Por padrão, eles recebem uma notificação no aplicativo, visível do [ícone de notificação do Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#view-notifications) ![ícone de notificação do Experience Cloud](assets/experience-cloud-notification.png) no Customer Journey Analytics.
+* As pessoas que você incluir receberão notificações com base nas configurações de notificação da Adobe Experience Cloud.
 
-  Além disso, as pessoas podem definir suas configurações de notificação do Experience Cloud para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#slack).
+  Para obter mais informações, consulte [Receber notificações sobre comentários](#receive-notifications-about-comments).
 
-* Você pode incluir qualquer pessoa em sua organização em um comentário, mas isso não concede acesso automático ao projeto. Somente as pessoas que já têm acesso ao projeto podem acessá-lo.
+* Você pode incluir qualquer pessoa em um comentário que esteja em sua organização e tenha acesso ao Customer Journey Analytics, mas isso não concede acesso automático para editar o projeto.
 
 Para incluir outra pessoa em seu comentário:
 
@@ -144,6 +146,12 @@ Para incluir outra pessoa em seu comentário:
 1. (Opcional) Notifique outra pessoa sobre seu comentário digitando o símbolo @ seguido pelo nome. Para obter mais informações sobre como usar o símbolo @ para notificar outros, consulte [Incluir outros em um comentário](#include-others-in-a-comment).
 
 1. Selecione **[!UICONTROL Enviar]**.
+
+## Receber notificações sobre comentários
+
+Os proprietários do projeto e [as pessoas específicas que você menciona](#include-others-in-a-comment) recebem notificações com base nas configurações de notificação do Adobe Experience Cloud. Por padrão, eles recebem uma notificação no aplicativo, visível do [ícone de notificação do Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![ícone de notificação do Experience Cloud](assets/experience-cloud-notification.png) no Customer Journey Analytics.
+
+Além disso, as pessoas podem definir suas configurações de notificação do Experience Cloud para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Inserir um selo para um comentário existente
 
