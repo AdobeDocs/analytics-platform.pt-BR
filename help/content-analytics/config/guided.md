@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: 6d4d6558f8f0ebb6a0885c958fe019d3e5afab4c
 workflow-type: tm+mt
 source-wordcount: '2677'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -231,7 +231,7 @@ Para editar experiências existentes ou incluir novas experiências em uma confi
    * O processo que gera atributos de experiência a partir de dados do evento da análise de conteúdo
    * O modelo de relatórios no Customer Journey Analytics.
 
-* Selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** para editar ainda mais a configuração da coleta de dados para experiências na análise de conteúdo. Sua tela será redirecionada para a [extensão da análise de conteúdo da Adobe](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) na propriedade de tags associada à configuração atual.
+* Selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** para editar ainda mais a configuração da coleta de dados para experiências na análise de conteúdo. Sua tela será redirecionada para a [extensão da análise de conteúdo da Adobe](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) na propriedade de tags associada à configuração atual.
 
 
 ### Coleção de dados {#onboarding-data-collection}
@@ -326,9 +326,9 @@ Em uma nova configuração, você precisa definir se deseja usar uma propriedade
 
 Para uma configuração existente, não é possível editar a propriedade de tags. No entanto, é possível editar as páginas e os ativos a incluir ou excluir.
 
-* Para editar quais páginas devem ser incluídas ou excluídas ao coletar dados para a análise de conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Experiência]**. Sua tela será redirecionada para a [extensão de análise de conteúdo da Adobe](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associada à propriedade de tags para a configuração atual da análise de conteúdo. É possível editar a expressão regular para incluir ou excluir páginas. Certifique-se de [publicar](#publish) suas alterações.
+* Para editar quais páginas devem ser incluídas ou excluídas ao coletar dados para a análise de conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Experiência]**. Sua tela será redirecionada para a [extensão de análise de conteúdo da Adobe](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associada à propriedade de tags para a configuração atual da análise de conteúdo. É possível editar a expressão regular para incluir ou excluir páginas. Certifique-se de [publicar](#publish) suas alterações.
 
-* Para editar quais ativos devem ser incluídos ou excluídos ao coletar dados para a análise de conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Ativo]**. Sua tela será redirecionada para a [extensão de análise de conteúdo da Adobe](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associada à propriedade de tags para a configuração atual da análise de conteúdo. É possível editar a expressão regular para incluir ou excluir ativos. Certifique-se de [publicar](#publish) suas alterações.
+* Para editar quais ativos devem ser incluídos ou excluídos ao coletar dados para a análise de conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Ativo]**. Sua tela será redirecionada para a [extensão de análise de conteúdo da Adobe](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associada à propriedade de tags para a configuração atual da análise de conteúdo. É possível editar a expressão regular para incluir ou excluir ativos. Certifique-se de [publicar](#publish) suas alterações.
 
 ### Resumo {#summary}
 
@@ -347,7 +347,7 @@ Depois de fornecer todas as informações necessárias, um resumo oferecerá det
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_implementation_warning_dialog"
 >title="Confirmação de implementação"
->abstract="Se você selecionar **[!UICONTROL Implementar]**, configurará a Análise de conteúdo com base na entrada fornecida neste fluxo de trabalho. Várias configurações são escolhidas por padrão com base no que geralmente é útil para a análise de conteúdo, mas você (como controlador(a) de dados) deve revisar as configurações de cada artefato para confirmar se as configurações estão implementadas de acordo com sua política de privacidade, direitos e obrigações contratuais e requisitos de consentimento da lei aplicável.<br/><br/>Observe que nenhum dado será coletado até que a biblioteca de tags associada a esta configuração seja publicada manualmente.<br/><br/>Para derivar atributos de imagens e texto, a Adobe recuperará os atributos usando:<ol><li>O URL da página, capturado no momento da visita do site do usuário, de acordo com as configurações de coleta de dados definidas e</li><li>O URL no qual a imagem está hospedada.</li></ol>Você não deve marcar imagens que estão hospedadas em sites de terceiros."
+>abstract="Se você selecionar **[!UICONTROL Implementar]**, configurará a Análise de conteúdo com base na entrada fornecida neste fluxo de trabalho. Várias configurações são escolhidas por padrão com base no que geralmente é útil para a análise de conteúdo, mas você (como controlador(a) de dados) deve revisar as configurações de cada artefato para confirmar se as configurações estão implementadas de acordo com sua política de privacidade, direitos e obrigações contratuais e requisitos de consentimento da lei aplicável.<br/><br/>Observe que nenhum dado será coletado até que a biblioteca de tags associada a esta configuração seja publicada manualmente.<br/><br/>Para derivar atributos de imagens e texto, a Adobe recuperará os atributos usando:<ol><li>O URL da página, capturado no momento da visita do usuário ao site de acordo com as configurações de coleta de dados configuradas e</li><li>O URL no qual a imagem está hospedada.</li></ol>Você não deve marcar imagens que estão hospedadas em sites de terceiros."
 
 <!-- markdownlint-enable MD034 -->
 
