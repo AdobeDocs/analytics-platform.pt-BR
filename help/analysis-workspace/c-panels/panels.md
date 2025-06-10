@@ -155,7 +155,7 @@ Para obter mais informações, consulte [Segmentos rápidos](/help/components/se
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/30816?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
