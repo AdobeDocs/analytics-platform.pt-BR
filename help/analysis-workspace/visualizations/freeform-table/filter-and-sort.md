@@ -4,7 +4,7 @@ title: Filtrar e classificar tabelas
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 9a15cb4d771892ff656fe72b8e53d890a3fd99f7
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 99%
@@ -17,7 +17,7 @@ As tabelas de forma livre do Analysis Workspace são a base para a análise inte
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/30795?captions=por_br)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrar tabelas
 
@@ -96,7 +96,7 @@ Para filtrar dados em tabelas de forma livre:
 
 ### Usar segmentos de público-alvo
 
-Consulte [Visão geral da segmentação](/help/components/filters/filters-overview.md) para obter mais detalhes.
+Consulte [Visão geral da segmentação](/help/components/segments/seg-overview.md) para obter mais detalhes.
 
 ## Classificar tabelas
 

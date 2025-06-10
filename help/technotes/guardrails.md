@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 17cd5170e62b410ebf6118c6ac562d20b81b4e21
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '2012'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -88,7 +88,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Segmentos de público | 20 | Proteção imposta pelo sistema | Número máximo de [segmentos](../components/filters/filters-overview.md) por público-alvo. |
+| Segmentos de público | 20 | Proteção imposta pelo sistema | Número máximo de [segmentos](../components/segments/seg-overview.md) por público-alvo. |
 | Número de identidades de público-alvo | 20 milhões | Proteção imposta pelo sistema | Número máximo de identidades por público-alvo. |
 | Frequência de atualização do público-alvo | 4 | Proteção imposta pelo sistema | A frequência máxima em horas que um [público-alvo](../components/audiences/audiences-overview.md) pode ser atualizado. |
 | Janela de pesquisa de atualização de público-alvo | 90 | Proteção imposta pelo sistema | Número máximo de dias para a janela de retrospectiva de atualização. |
@@ -142,7 +142,7 @@ Consulte também [Proteções da Real-time Customer Data Platform](https://exper
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform.
+Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform.
 
 
 ## Exportação de dados de destinos
@@ -154,7 +154,7 @@ Consulte também [Medidas de proteção para assimilação de dados](https://exp
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
+Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
 
 
 ## Zona de aterrissagem de dados
@@ -242,7 +242,7 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform para obter mais informações.
+>Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|

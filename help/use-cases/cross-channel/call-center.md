@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 88%
@@ -69,7 +69,7 @@ As visualizações a seguir podem ser usadas para obter insights do conjunto de 
 
 Essa visualização ajuda você a entender como a AVC compila os dados.
 
-1. Crie dois segmentos. A variável usada nesses dois segmentos é a mesma variável mencionada acima que reflete a fonte de dados de cada evento. Consulte [Criar um segmento](/help/components/filters/create-filters.md) para obter mais informações.
+1. Crie dois segmentos. A variável usada nesses dois segmentos é a mesma variável mencionada acima que reflete a fonte de dados de cada evento. Consulte [Criar um segmento](/help/components/segments/seg-create.md) para obter mais informações.
    * Container de pessoa em que a ID do conjunto de dados é igual aos seus dados da Web
    * Container de pessoa em que a ID do conjunto de dados é igual aos dados da central de atendimento
 2. No Analysis Workspace, arraste uma visualização [Venn](/help/analysis-workspace/visualizations/venn.md) para a tela do espaço de trabalho.

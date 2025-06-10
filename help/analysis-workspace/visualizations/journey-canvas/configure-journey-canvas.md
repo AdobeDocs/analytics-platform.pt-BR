@@ -4,7 +4,7 @@ title: Tela de jornada
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '6225'
 ht-degree: 1%
@@ -297,7 +297,7 @@ Os nós são conectados por uma seta. A direção e a largura da seta têm signi
 
 #### Lógica ao conectar nós
 
-Ao conectar nós na tela do Jornada, eles são conectados por meio do operador THEN. Isso também é conhecido como [segmentação sequencial](/help/components/filters/seg-sequential-build.md).
+Ao conectar nós na tela do Jornada, eles são conectados por meio do operador THEN. Isso também é conhecido como [segmentação sequencial](/help/components/segments/seg-sequential-build.md).
 
 Os nós são conectados como um &quot;caminho eventual&quot;, o que significa que os visitantes são contados desde que eventualmente se movam de um nó para outro, independentemente de quaisquer eventos que ocorram entre os dois nós. O tempo alocado para que os usuários percorram o caminho é determinado pela configuração do container. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
@@ -546,7 +546,7 @@ Para exibir dados de tendência:
 
 Você pode criar um novo segmento com base em um nó ou seta em uma jornada. Depois que o segmento é criado, é possível usá-lo em qualquer lugar do Analysis Workspace.
 
-Segmentos criados a partir da tela de Jornada usam a [segmentação sequencial](/help/components/filters/seg-sequential-build.md). Isso significa que o segmento usa o operador THEN para vincular a sequência de eventos (a jornada) pela qual as pessoas fluíram, levando até o nó ou a seta selecionada. Todos os eventos que correspondem ao nó ou à seta selecionada são incluídos no segmento.
+Segmentos criados a partir da tela de Jornada usam a [segmentação sequencial](/help/components/segments/seg-sequential-build.md). Isso significa que o segmento usa o operador THEN para vincular a sequência de eventos (a jornada) pela qual as pessoas fluíram, levando até o nó ou a seta selecionada. Todos os eventos que correspondem ao nó ou à seta selecionada são incluídos no segmento.
 
 Se você criar um segmento com base em um nó que tenha vários caminhos fluindo para ele, todos os caminhos serão incluídos no segmento. Caminhos separados são unidos com o operador OR.
 
@@ -558,7 +558,7 @@ Para criar um segmento:
 
    O Construtor de segmentos é exibido. Na seção [!UICONTROL **Definição**], a definição de segmento é criada com base no nó ou na seta selecionada e seu contexto dentro da jornada.
 
-1. Especifique um título para o segmento e faça outras alterações. Para obter mais informações sobre como criar um segmento, consulte [Construtor de segmentos](/help/components/filters/filter-builder.md).
+1. Especifique um título para o segmento e faça outras alterações. Para obter mais informações sobre como criar um segmento, consulte [Construtor de segmentos](/help/components/segments/seg-builder.md).
 
 1. Selecione [!UICONTROL **Salvar**] para salvar o segmento.
 

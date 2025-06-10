@@ -4,9 +4,9 @@ title: Gerenciar alertas
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '596'
 ht-degree: 21%
 
 ---
@@ -18,7 +18,7 @@ Você pode filtrar, marcar, excluir, renomear, copiar, habilitar, desabilitar, r
 
 * Selecione **[!UICONTROL Componentes]** na interface principal e **[!UICONTROL Alertas]**.
 
-O gerenciador de Alertas está estruturado como o [Gerenciador de segmentos](/help/components/filters/manage-filters.md) e o [Gerenciador de métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+O gerenciador de Alertas está estruturado como o [Gerenciador de segmentos](/help/components/segments/seg-manage.md) e o [Gerenciador de métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 
 ## Gerenciador de alertas
@@ -49,7 +49,7 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 
 ### Barra de ação
 
-É possível executar ações em alertas usando o ➋ da barra de ações. A barra de ação contém as seguintes ações:
+Você pode executar ações em alertas usando a barra de ações ➋. A barra de ação contém as seguintes ações:
 
 | Ícone | Ação | Descrição |
 |:---:|---|---|
@@ -66,12 +66,12 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 
 ### Barra de filtros ativos
 
-O ➌ da barra de filtros mostra os filtros ativos aplicados do painel de filtros à lista de alertas (se houver). É possível remover um filtro rapidamente usando ![CrossSize75](/help/assets/icons/CrossSize75.svg). Se mais de um filtro for especificado, você poderá remover todos os filtros usando **[!UICONTROL Remover tudo]**.
+A barra de filtros ➌ mostra os filtros ativos aplicados do painel de filtros à lista de alertas (se houver). É possível remover um filtro rapidamente usando ![CrossSize75](/help/assets/icons/CrossSize75.svg). Se mais de um filtro for especificado, você poderá remover todos os filtros usando **[!UICONTROL Remover tudo]**.
 
 
 ### Painel de filtro
 
-Você pode filtrar a lista de alertas usando a ➍ do painel esquerdo ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]**. O painel de filtros exibe o tipo de filtro e o número de alertas que respeitam o filtro específico.
+Você pode filtrar a lista de alertas usando o ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]** no painel esquerdo ➍. O painel de filtros exibe o tipo de filtro e o número de alertas que respeitam o filtro específico.
 
 
 1. Selecione ![Filtro](/help/assets/icons/Filter.svg) para abrir o painel Filtros. Se precisar de mais espaço para a lista Alertas, você pode selecionar ![Filtro](/help/assets/icons/Filter.svg) mais uma vez para fechar o painel.

@@ -3,10 +3,10 @@ description: O Gerenciador de métrica calculada permite compartilhar, filtrar, 
 title: Gerenciador de métricas calculadas
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 30%
+source-wordcount: '897'
+ht-degree: 29%
 
 ---
 
@@ -27,13 +27,13 @@ O gerenciador de métricas calculadas tem os seguintes elementos de interface:
 
 ### Lista de filtros
 
-A ➊ da lista de filtros exibe todas as métricas calculadas que você possui ou que foram compartilhadas com você. A lista tem as seguintes colunas:
+A lista de filtros ➊ exibe todas as métricas calculadas que você possui ou que foram compartilhadas com você. A lista tem as seguintes colunas:
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 
 | Coluna | Descrição |
 | --- | --- | 
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) uma métrica calculada. Consulte [Marcar métrica calculada como favorita](/help/components/filters/filters-favorite.md) |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) uma métrica calculada. Consulte [Marcar métrica calculada como favorita](/help/components/segments/seg-favorite.md) |
 | **[!UICONTROL Título e descrição]** | Para editar a métrica calculada, selecione o link de título, que abrirá o [Criador de métricas calculadas](cm-build-metrics.md). Uma métrica calculada compartilhada é indicada com ![Compartilhamento](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Visualização de dados]** | As visualizações de dados às quais essa métrica calculada se aplica. |
 | **[!UICONTROL Proprietário]** | Proprietário da métrica calculada. Como usuário, você só vê as anotações que possui ou as que são compartilhadas com você. |
@@ -49,7 +49,7 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 
 ### Barra de ação
 
-É possível executar ações relacionadas aos filtros por meio da barra de ação ➋. A barra de ação contém as seguintes ações:
+É possível executar ações em filtros usando a barra de ações ➋. A barra de ação contém as seguintes ações:
 
 | Ícone | Ação | Descrição |
 |:---:|---|---|
@@ -65,11 +65,11 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 
 ### Barra de filtros ativos
 
-O ➌ da barra de filtros mostra os filtros ativos aplicados do painel de filtros à lista de métricas calculadas (se houver). É possível remover um filtro rapidamente usando ![CrossSize75](/help/assets/icons/CrossSize75.svg). Se mais de um filtro for especificado, você poderá remover todos os filtros usando **[!UICONTROL Remover tudo]**.
+A barra de filtros ➌ mostra os filtros ativos aplicados do painel de filtros à lista de métricas calculadas (se houver). É possível remover um filtro rapidamente usando ![CrossSize75](/help/assets/icons/CrossSize75.svg). Se mais de um filtro for especificado, você poderá remover todos os filtros usando **[!UICONTROL Remover tudo]**.
 
 ### Painel de filtro
 
-Você pode filtrar a lista de métricas calculadas usando o ➍ do painel esquerdo ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]**. O painel de filtros exibe o tipo de filtro e o número de métricas calculadas que respeitam o filtro específico. Selecione ![Filtro](/help/assets/icons/Filter.svg) para alternar a exibição do painel de filtros.
+Você pode filtrar a lista de métricas calculadas usando o ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Filtro]** do painel esquerdo ➍. O painel de filtros exibe o tipo de filtro e o número de métricas calculadas que respeitam o filtro específico. Selecione ![Filtro](/help/assets/icons/Filter.svg) para alternar a exibição do painel de filtros.
 
 Consulte [Filtrar a lista de métricas calculadas](cm-filter.md) para obter mais informações.
 

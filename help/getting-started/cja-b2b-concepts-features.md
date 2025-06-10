@@ -6,7 +6,7 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 1a7b877d989764e737d7f35c05f515efe3e7a307
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 2%
@@ -67,7 +67,7 @@ A hierarquia e os relacionamentos entre os contêineres são predeterminados. Op
 
 Você pode usar os contêineres B2B para a funcionalidade B2B específica no Analysis Workspace:
 
-* **Segmentação**: [Contêineres de segmentos B2B](/help/components/filters/filters-overview.md#b2b-containers) permitem que você crie segmentos com um escopo de contêiner além de pessoa, sessão ou evento. Por exemplo: um segmento Contas com registro de evento ou contas dos EUA com grupos de compra e segmento de oportunidades de estágio 5.
+* **Segmentação**: [Contêineres de segmentos B2B](/help/components/segments/seg-overview.md#b2b-containers) permitem que você crie segmentos com um escopo de contêiner além de pessoa, sessão ou evento. Por exemplo: um segmento Contas com registro de evento ou contas dos EUA com grupos de compra e segmento de oportunidades de estágio 5.
 
   >[!NOTE]
   >

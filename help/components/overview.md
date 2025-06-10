@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 95%
@@ -23,7 +23,7 @@ Para gerenciar componentes na interface principal do Customer Journey Analytics:
 
 Você pode gerenciar os seguintes componentes:
 
-* [Segmentos](filters/filters-overview.md): crie, gerencie, compartilhe e aplique segmentos de público-alvo eficientes e com foco em seus relatórios. Os segmentos permitem identificar subconjuntos de pessoas com base em características ou interações.
+* [Segmentos](segments/seg-overview.md): crie, gerencie, compartilhe e aplique segmentos de público-alvo eficientes e com foco em seus relatórios. Os segmentos permitem identificar subconjuntos de pessoas com base em características ou interações.
 * [Métricas calculadas:](calc-metrics/calc-metr-overview.md) use métricas e fórmulas como novos componentes para relatórios
 * [Intervalos de data](date-ranges/create.md): personalize e ajuste os intervalos de data do Analysis Workspace.
 * [Anotações](/help/components/annotations/overview.md): comunique nuances e insights de dados contextuais à sua organização.
@@ -72,7 +72,7 @@ Consulte [Criar um projeto](/help/analysis-workspace/home.md) para obter infor
    | ![Compartilhar](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Compartilhar**] | Compartilhe componentes com usuários em sua organização. Essa opção está disponível somente para componentes personalizados, como segmentos ou métricas calculadas. |
    | ![Excluir](/help/assets/icons/Delete.svg) [!UICONTROL **Excluir**] | Exclua componentes que não são mais necessários. Essa opção está disponível somente para componentes personalizados, como segmentos ou métricas calculadas. |
 
-Os componentes personalizados também podem ser gerenciados por meio de seus respectivos Gerenciadores de componentes. Por exemplo, consulte [Gerenciar segmentos](/help/components/filters/manage-filters.md).
+Os componentes personalizados também podem ser gerenciados por meio de seus respectivos Gerenciadores de componentes. Por exemplo, consulte [Gerenciar segmentos](/help/components/segments/seg-manage.md).
 
 ## Gerenciar a lista de componentes
 

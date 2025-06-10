@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 7%
@@ -34,7 +34,7 @@ Embora alguns itens de dimensão individuais possam estar ausentes nos relatóri
 
 A melhor maneira de acomodar dimensões de alta cardinalidade é limitar o número de itens de dimensão que um relatório processa. Como todos os relatórios são processados no momento em que são solicitados, você pode ajustar os parâmetros do relatório para resultados imediatos. A Adobe recomenda qualquer uma das seguintes otimizações para dimensões de alta cardinalidade:
 
-* Use um [segmento](/help/components/filters/create-filters.md). Os segmentos são aplicados no momento em que cada servidor processa um subconjunto de dados.
+* Use um [segmento](/help/components/segments/seg-create.md). Os segmentos são aplicados no momento em que cada servidor processa um subconjunto de dados.
 * Use uma pesquisa. Os itens de Dimension excluídos do termo de pesquisa são removidos dos resultados do relatório, tornando mais provável que você veja os itens de dimensão desejados.
 * Use uma dimensão de conjunto de dados de pesquisa. As dimensões do conjunto de dados de pesquisa combinam itens de dimensão do conjunto de dados do evento, que limitam o número de valores únicos retornados.
 * Use a configuração de componente [Incluir/excluir](/help/data-views/component-settings/include-exclude-values.md) no gerenciador de visualização de dados.
