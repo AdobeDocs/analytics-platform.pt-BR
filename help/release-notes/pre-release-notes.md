@@ -4,9 +4,9 @@ description: Visualizar as notas de pré-lançamento mais recentes do Customer J
 feature: Release Notes
 hide: true
 hidefromtoc: true
-source-git-commit: aa6783f658a71ec25034b2564a714550f80ed5e6
+source-git-commit: 5abb6a96812920f073026bbb927beb2e18f9ef2b
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '523'
 ht-degree: 25%
 
 ---
@@ -20,6 +20,14 @@ ht-degree: 25%
 
 Essas notas de versão abrangem o período de lançamento de terça-feira, 2 de junho de 2025 a quarta-feira, 15 de julho de 2025. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md), que permite uma abordagem mais escalável e em fases para a implantação de recursos.
 
+Consulte a documentação a seguir para obter as notas de versão do Adobe Experience Platform e seus outros aplicativos:
+
+* [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes)
+* [Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes?lang=en)
+* [Adobe Journey Optimizer B2B](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/release-notes?lang=en)
+* [Composição de público-alvo federado](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/release-notes?lang=en)
+* [Real-Time CDP Collaboration](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/latest?lang=en)
+
 ## Recursos novos ou atualizados
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
@@ -29,6 +37,6 @@ Essas notas de versão abrangem o período de lançamento de terça-feira, 2 de 
 | **Suporte para Destinos Seguros no Report Builder** | Novos destinos de exportação foram adicionados ao suplemento do Report Builder. Os seguintes destinos de armazenamento em nuvem são compatíveis: <ul><li>Zona de destino de dados da AEP</li><li>Amazon S3 Role ARN</li><li>Google Cloud Platform</li><li>Azure SAS</li><li>Azure RBAC</li></ul> |  | Junho de 18,2025 |
 | **Nova experiência de visualização** | O painel de visualização, usado para visualizar segmentos, métricas calculadas e muito mais, agora está usando uma visualização de barra horizontal em vez de uma visualização de rosca. |  | quinta-feira, 18 de junho de 2025 |
 | **Caixa de diálogo do modelo de atribuição modificado** | Agora você pode definir o contêiner e o período de tempo separadamente na caixa de diálogo modelo de atribuição. |  | Junho de 18,2025 |
-| **Mapa de conexão** | Uma nova [interface do mapa de conexões](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-connections/create-connection#connection-map) está disponível para exibir visualmente a configuração da sua conexão. |  | quinta-feira, 18 de junho de 2025 |
-| **Adicionar e exibir comentários em projetos do Analysis Workspace** | Um novo recurso [de comentários](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) no Analysis Workspace permite que você compartilhe insights e faça perguntas no contexto de um projeto do Analysis Workspace. Isso pode simplificar as discussões sobre os dados, mantendo conversas no contexto dos dados que estão sendo discutidos. É possível <ul><li>Comentar em qualquer projeto do Analysis Workspace ao qual você tenha acesso</li><li>Comentar em um ponto específico em uma visualização ou fazer comentários gerais sobre um projeto</li><li>Marque outros usuários para notificá-los sobre seus comentários</li><li>Gerenciar comentários existentes (editar, fixar, resolver e assim por diante)</li></ul>Os administradores do Customer Journey Analytics podem [desabilitar comentários no nível da organização](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Os proprietários do projeto podem [desabilitar comentários no nível do projeto](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). |  | quinta-feira, 25 de junho de 2025 <p>(Planejado originalmente para lançamento em 29 de maio de 2025)</p> |
+| **Mapa de conexão** | Uma nova [interface do mapa de conexões](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection#connection-map) está disponível para exibir visualmente a configuração da sua conexão. |  | quinta-feira, 18 de junho de 2025 |
+| **Adicionar e exibir comentários em projetos do Analysis Workspace** | Um novo recurso [de comentários](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/comment-projects) no Analysis Workspace permite que você compartilhe insights e faça perguntas no contexto de um projeto do Analysis Workspace. Isso pode simplificar as discussões sobre os dados, mantendo conversas no contexto dos dados que estão sendo discutidos. É possível <ul><li>Comentar em qualquer projeto do Analysis Workspace ao qual você tenha acesso</li><li>Comentar em um ponto específico em uma visualização ou fazer comentários gerais sobre um projeto</li><li>Marque outros usuários para notificá-los sobre seus comentários</li><li>Gerenciar comentários existentes (editar, fixar, resolver e assim por diante)</li></ul>Os administradores do Customer Journey Analytics podem [desabilitar comentários no nível da organização](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/user-preferences#ims-organization-preferences). Os proprietários do projeto podem [desabilitar comentários no nível do projeto](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/create-projects). |  | quinta-feira, 25 de junho de 2025 <p>(Planejado originalmente para lançamento em 29 de maio de 2025)</p> |
 
