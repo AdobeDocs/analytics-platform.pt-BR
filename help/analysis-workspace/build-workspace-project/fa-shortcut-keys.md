@@ -18,11 +18,11 @@ Há teclas de atalho (atalhos do teclado) disponíveis no Analysis Workspace par
 
 Observe que é possível usar os seguintes símbolos do teclado:
 
-- **⇧** para **[!UICONTROL ** Shift **]**.
-- **⌘** para **[!UICONTROL ** cmd **]** (comando).
-- **⌃** para **[!UICONTROL ** ctrl **]** (controle).
-- **⌥** para **[!UICONTROL ** opção **]** (opção).
-- **⎇** para **[!UICONTROL ** alt **]** (alternativo).
+- **⇧** para **[!UICONTROL **&#x200B; Shift &#x200B;**]**.
+- **⌘** para **[!UICONTROL **&#x200B; cmd &#x200B;**]** (comando).
+- **⌃** para **[!UICONTROL **&#x200B; ctrl &#x200B;**]** (controle).
+- **⌥** para **[!UICONTROL **&#x200B; opção &#x200B;**]** (opção).
+- **⎇** para **[!UICONTROL **&#x200B; alt &#x200B;**]** (alternativo).
 
 ## Ações de navegação
 
