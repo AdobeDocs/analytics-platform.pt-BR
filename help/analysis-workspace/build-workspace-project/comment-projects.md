@@ -4,9 +4,9 @@ title: Adicionar e exibir comentários em projetos
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 02b85db81c384c78f7d388b19c8ad53d0028de43
+source-git-commit: 29db477c96ad5ca7c69a7f7055c1a7fd3c06eb04
 workflow-type: tm+mt
-source-wordcount: '1816'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -51,15 +51,15 @@ Todos os comentários feitos em um projeto do Analysis Workspace ficam visíveis
 
 ### Exibir selos de comentário em um projeto
 
-Os comentários feitos [em uma área específica do projeto](#comment-on-a-specific-area-of-the-project) têm uma **notificação de comentário** ![notificação de comentário](assets/comment-indicator.png) que é exibida na área do projeto à qual o comentário pertence. Selecione uma medalha para exibir o comentário. Depois de selecionar o símbolo, você pode selecionar o próprio comentário para realçá-lo na área de comentários no painel direito.
+Os comentários feitos [em uma área específica do projeto](#comment-on-a-specific-area-of-the-project) têm uma **notificação de comentário** ![notificação de comentário](assets/comment-indicator.svg) que é exibida na área do projeto à qual o comentário pertence. Selecione uma medalha para exibir o comentário. Depois de selecionar o símbolo, você pode selecionar o próprio comentário para realçá-lo na área de comentários no painel direito.
 
-Os números são exibidos em cada selo em um projeto e são ordenados na ordem em que foram criados. Se vários comentários forem colocados na mesma área de um projeto, o símbolo mostrará 3 pontos ![símbolo de comentário múltiplo](assets/comment-indicator-multiple.png). Selecione o selo de 3 pontos para revelar todos os comentários nessa área.
+Os números são exibidos em cada selo em um projeto e são ordenados na ordem em que foram criados. Se vários comentários forem colocados na mesma área de um projeto, o símbolo mostrará 3 pontos ![símbolo de comentário múltiplo](assets/comment-indicator-multiple.svg). Selecione o selo de 3 pontos para revelar todos os comentários nessa área.
 
 <!-- Insert screeshot-->
 
 Para ocultar todos os selos de comentário de um projeto:
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace.
+1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace.
 
 1. Na parte inferior da área de comentários, habilite a opção **[!UICONTROL Ocultar medalhas colocadas]**.
 
@@ -97,7 +97,7 @@ Para comentar em uma área específica do projeto (como um valor de métrica em 
 
 Para adicionar comentários a um projeto no Analysis Workspace:
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace. <!-- add screen shot -->
+1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace. <!-- add screen shot -->
 
 1. No campo **[!UICONTROL Novo comentário]**, especifique seu comentário.
 
@@ -131,7 +131,7 @@ Para incluir outra pessoa em seu comentário:
 
 ## Responder a um comentário
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace.
+1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace.
 
 1. Selecione **[!UICONTROL Responder]** ao lado do comentário ao qual deseja responder.
 
@@ -149,17 +149,17 @@ Para incluir outra pessoa em seu comentário:
 
 ## Receber notificações sobre comentários
 
-Os proprietários do projeto e [as pessoas específicas que você menciona](#include-others-in-a-comment) recebem notificações com base nas configurações de notificação do Adobe Experience Cloud. Por padrão, eles recebem uma notificação no aplicativo, visível do [ícone de notificação do Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#view-notifications) ![ícone de notificação do Experience Cloud](assets/experience-cloud-notification.png) no Customer Journey Analytics.
+Os proprietários do projeto e [as pessoas específicas que você menciona](#include-others-in-a-comment) recebem notificações com base nas configurações de notificação do Adobe Experience Cloud. Por padrão, eles recebem uma notificação no aplicativo, visível do [ícone de notificação do Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![ícone de notificação do Experience Cloud](assets/experience-cloud-notification.svg) no Customer Journey Analytics.
 
-Além disso, as pessoas podem definir suas configurações de notificação do Experience Cloud para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#slack).
+Além disso, as pessoas podem definir suas configurações de notificação do Experience Cloud para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Inserir um selo para um comentário existente
 
 Se um comentário estiver disponível na área comentários no painel direito, mas ainda não tiver uma medalha no projeto, você poderá adicionar a medalha.
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace.
+1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace.
 
-1. Selecione o ícone de mais ![comment-more-icon](assets/comment-more-icon.png) ao lado do comentário para o qual você deseja colocar uma medalha e selecione **[!UICONTROL Colocar medalha]**.
+1. Selecione o ícone Mais ![Ícone Mais](/help/assets/icons/MoreSmallList.svg) ao lado do comentário para o qual você deseja colocar uma medalha e selecione **[!UICONTROL Inserir medalha]**.
 
 1. Selecione a área do projeto na qual você deseja colocar o selo do comentário existente.
 
@@ -191,9 +191,9 @@ Você pode copiar o link para um comentário e compartilhá-lo com outras pessoa
 
 Para copiar o link para um comentário:
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace.
+1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace.
 
-1. Selecione o ícone de mais ![comment-more-icon](assets/comment-more-icon.png) ao lado do comentário cujo link você deseja copiar e selecione **[!UICONTROL Copiar link]**.
+1. Selecione o ícone mais ![ícone mais](/help/assets/icons/MoreSmallList.svg) ao lado do comentário cujo link você deseja copiar e selecione **[!UICONTROL Copiar link]**.
 
    O link é copiado para a área de transferência do sistema. Você pode colar o link em um email ou outro tipo de mensagem.
 
@@ -203,15 +203,15 @@ Você pode copiar o corpo de texto de um comentário e compartilhá-lo com outra
 
 Para copiar o corpo de texto de um comentário:
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace.
+1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace.
 
-1. Selecione o ícone de mais ![comment-more-icon](assets/comment-more-icon.png) ao lado do comentário que contém o texto que você deseja copiar e selecione **[!UICONTROL Copiar texto do corpo]**.
+1. Selecione o ícone mais ![Ícone mais](/help/assets/icons/MoreSmallList.svg) ao lado do comentário que contém o texto que você deseja copiar e selecione **[!UICONTROL Copiar corpo de texto]**.
 
    O corpo de texto do comentário é copiado para a área de transferência do sistema.
 
 ## Curtir um comentário
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace.
+1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace.
 
 1. Selecione **[!UICONTROL Curtir]** abaixo do comentário que você deseja endossar.
 
@@ -223,9 +223,9 @@ Comentários excluídos não podem ser recuperados.
 
 Para excluir um comentário:
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace.
+1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace.
 
-1. Selecione o ícone de mais ![comment-more-icon](assets/comment-more-icon.png) ao lado do comentário que você deseja excluir e selecione **[!UICONTROL Excluir]**.
+1. Selecione o ícone mais ![Ícone mais](/help/assets/icons/MoreSmallList.svg) ao lado do comentário que você deseja excluir e selecione **[!UICONTROL Excluir]**.
 
 1. Selecione **[!UICONTROL Excluir]** novamente para confirmar a exclusão.
 
@@ -235,9 +235,9 @@ Ao resolver um comentário, ele é marcado como resolvido e oculto na área de c
 
 Para resolver um comentário:
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![ícone da área de comentários](assets/comments-area-icon.png) no painel direito do Analysis Workspace.
+1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace.
 
-1. Selecione o ícone de mais ![comment-more-icon](assets/comment-more-icon.png) ao lado do comentário que você deseja resolver e selecione **[!UICONTROL Resolver]**.
+1. Selecione o ícone mais ![Ícone mais](/help/assets/icons/MoreSmallList.svg) ao lado do comentário que você deseja resolver e selecione **[!UICONTROL Resolver]**.
 
 1. Selecione **[!UICONTROL Resolver]** novamente para confirmar.
 
