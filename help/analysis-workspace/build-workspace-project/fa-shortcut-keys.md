@@ -5,10 +5,10 @@ feature: Workspace Basics
 title: Como usar as teclas de atalho do Workspace
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
-workflow-type: ht
-source-wordcount: '402'
-ht-degree: 100%
+source-git-commit: 61a7e21d3e5d586c341a5b0f12490e3da1054382
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 90%
 
 ---
 
@@ -19,10 +19,10 @@ Há teclas de atalho (atalhos do teclado) disponíveis no Analysis Workspace par
 Observe que é possível usar os seguintes símbolos do teclado:
 
 - **⇧** para **[!UICONTROL ** Shift **]**.
-- **⌘** para **[!UICONTROL ** Cmd **]** (command).
-- **⌃** para **[!UICONTROL ** Ctrl **]** (control).
-- **⌥** para **[!UICONTROL ** Opt **]** (option).
-- **⎇** para **[!UICONTROL ** Alt **]** (alternate).
+- **⌘** para **[!UICONTROL ** cmd **]** (comando).
+- **⌃** para **[!UICONTROL ** ctrl **]** (controle).
+- **⌥** para **[!UICONTROL ** opção **]** (opção).
+- **⎇** para **[!UICONTROL ** alt **]** (alternativo).
 
 ## Ações de navegação
 
@@ -35,8 +35,8 @@ Observe que é possível usar os seguintes símbolos do teclado:
 | Ir para o painel Componentes | **[!UICONTROL *Opt + Shift + 3 *]** | **[!UICONTROL *Alt + Shift + 3 *]** |
 | Recolher/expandir todos os painéis | **[!UICONTROL *Opt + M *]** | **[!UICONTROL *Alt + M *]** |
 | Recolher/expandir painel ativo | **[!UICONTROL *Opt + Cmd + M *]** | **[!UICONTROL *Alt + Ctrl + M *]** |
-| Mover para o próximo painel | **[!UICONTROL *Opt * + ▶︎]** | **[!UICONTROL *Alt * + ▶︎]** |
-| Mover para o painel anterior | **[!UICONTROL *Opt * + ◀︎]** | **[!UICONTROL *Alt * + ◀︎]** |
+| Mover para o próximo painel | **[!UICONTROL *opção *+ ▶︎]** | **[!UICONTROL *alt *+ ▶︎]** |
+| Mover para o painel anterior | **[!UICONTROL *opção *+ ◀︎]** | **[!UICONTROL *alt *+ ◀︎]** |
 
 ## Ações de análise
 
@@ -67,6 +67,13 @@ Observe que é possível usar os seguintes símbolos do teclado:
 | Novo gráfico de linha | **[!UICONTROL *Opt + 2 *]** | **[!UICONTROL *Alt + 2 *]** |
 | Novo gráfico de barras | **[!UICONTROL *Opt + 3 *]** | **[!UICONTROL *Alt + 3 *]** |
 | Novo gráfico de combinação | **[!UICONTROL *Opt + 4 *]** | **[!UICONTROL *Alt + 4 *]** |
+
+## Mover ações do painel
+
+| Ação | Atalho do Mac | Atalho do Windows |
+| --- | --- | --- | 
+| Mover painel para cima | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *alt + ctrl + up *]** |
+| Mover painel para baixo | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *alt + ctrl + down *]** |
 
 ## Ações de democratização
 
