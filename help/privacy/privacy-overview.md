@@ -4,10 +4,10 @@ description: Descreve como a governança de dados funciona no Customer Journey A
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+source-git-commit: 40706e3118cbaf7582d8625d307358b16f1836ac
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 90%
 
 ---
 
@@ -27,9 +27,15 @@ Essa integração permite gerenciar a conformidade com mais facilidade. Os admin
 
 [Saiba mais](/help/data-views/data-governance.md)
 
-## GDPR
+## Solicitações de privacidade
 
-O Customer Journey Analytics não assinará diretamente o Serviço central do Regulamento Geral sobre a Proteção de Dados (GDPR) e herdará todas as alterações no conjunto de dados feitas na Experience Platform. O Customer Journey Analytics depende do data lake da Platform para aplicar solicitações de exclusão do RGPD e notificar o Customer Journey Analytics quando as solicitações forem concluídas. Todas as alterações em lotes afetados no Customer Journey Analytics para conjuntos de dados de eventos são sincronizadas com os dados da Platform. Os conjuntos de dados de perfis e pesquisas afetados pelas solicitações de exclusão do RGPD são assimilados novamente após cada solicitação de exclusão. As solicitações de exclusão geralmente são concluídas em até sete dias após um evento de exclusão no data lake.
+O Adobe lida com solicitações de privacidade de acordo com as leis locais e internacionais aplicáveis.
+
+Como a Customer Journey Analytics usa dados disponíveis no Adobe Experience Platform, a Adobe oferece a [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e rechaveados.
+
+## RGPD
+
+O Customer Journey Analytics não assinará diretamente o Serviço central do Regulamento Geral sobre a Proteção de Dados (RGPD) e herdará todas as alterações no conjunto de dados feitas na Experience Platform. O Customer Journey Analytics depende do data lake da Platform para aplicar solicitações de exclusão do RGPD e notificar o Customer Journey Analytics quando as solicitações forem concluídas. Todas as alterações em lotes afetados no Customer Journey Analytics para conjuntos de dados de eventos são sincronizadas com os dados da Platform. Os conjuntos de dados de perfis e pesquisas afetados pelas solicitações de exclusão do RGPD são assimilados novamente após cada solicitação de exclusão. As solicitações de exclusão geralmente são concluídas em até sete dias após um evento de exclusão no data lake.
 
 ## CCPA
 
@@ -39,4 +45,4 @@ De acordo com a CCPA, o Privacy Service dará suporte a solicitações de recusa
 
 >[!MORELIKETHIS]
 >
->* [Blog: como manter uma governança eficaz no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=pt)
+>* [Blog: como manter uma governança eficaz no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)
