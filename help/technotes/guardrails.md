@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 9c8a2ed7712ad7e4e0bcada16d3b581d52a49472
+source-git-commit: 277e69432e4c8a93f692486b5f281329cbfc55db
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2061'
 ht-degree: 9%
 
 ---
@@ -142,7 +142,7 @@ Consulte também [Proteções da Real-time Customer Data Platform](https://exper
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform.
+Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform.
 
 
 ## Exportação de dados de destinos
@@ -154,7 +154,7 @@ Consulte também [Medidas de proteção para assimilação de dados](https://exp
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
+Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
 
 
 ## Zona de aterrissagem de dados
@@ -243,18 +243,19 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
-| Biblioteca compartilhada | 1 | Grade de Proteção Imposta pelo Sistema | Número máximo de bibliotecas compartilhadas para uma conexão. |
+| Biblioteca compartilhada | 1 | Proteção imposta pelo sistema | Número máximo de bibliotecas compartilhadas para uma conexão. |
 | Métricas compartilhadas | 10.000 | Proteção imposta pelo sistema | Número máximo de métricas compartilhadas por biblioteca compartilhada. |
-| Dimensões compartilhadas | 10.000 | Grade de Proteção Imposta pelo Sistema | Número máximo de dimensões compartilhadas por biblioteca compartilhada. |
+| Dimensões compartilhadas | 10.000 | Proteção imposta pelo sistema | Número máximo de dimensões compartilhadas por biblioteca compartilhada. |
 
 {style="table-layout:auto"}
+
 
 
 ## Latências
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform para obter mais informações.
+>Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|
