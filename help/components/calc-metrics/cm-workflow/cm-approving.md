@@ -3,7 +3,7 @@ description: No Gerenciador de métricas calculadas, é possível definir um flu
 title: Aprovar métricas calculadas
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
+source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 21%
@@ -16,7 +16,7 @@ No [Gerenciador de métricas calculadas](cm-manager.md), você pode aprovar e de
 
 Para aprovar métricas calculadas:
 
-1. No [Gerenciador de métricas calculadas](cm-approving.md), selecione uma ou mais métricas calculadas que deseja aprovar.
+1. No [Gerenciador de métricas calculadas](cm-manager.md), selecione uma ou mais métricas calculadas que deseja aprovar.
 1. Na barra de ações, selecione ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]**. As métricas calculadas aprovadas são indicadas com ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)
 
 Para cancelar a aprovação de métricas calculadas:

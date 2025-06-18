@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
-workflow-type: ht
+source-git-commit: 15a3d7b6f2ec4f37fd861315871e06ddefa5348a
+workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -47,11 +47,11 @@ Para definir o contexto de uma sessão em uma visualização de dados:
 
    2. Selecione uma métrica na lista **[!UICONTROL Solte uma métrica aqui]** abaixo de **[!UICONTROL Iniciar nova sessão com uma métrica]**. Como alternativa, é possível arrastar e soltar uma métrica do painel esquerdo em **[!UICONTROL Soltar um campo de métrica]**. A métrica selecionada define o início de uma nova sessão. É possível definir mais de uma métrica.
 
-      É possível usar qualquer tipo de métrica para definir uma nova sessão. Como exemplo, imagine que você deseja definir uma nova sessão sempre que um perfil iniciar seu aplicativo móvel. Em **[!UICONTROL Visualização de dados]** > **[!UICONTROL Componentes]**, defina um componente do tipo métrica, chamado **[!UICONTROL Inicializações]**, com base em um campo de esquema **[!UICONTROL appInteraction]** **[!UICONTROL Nome]**. Especifique ainda mais o componente de métrica **[!UICONTROL Inicializações]** para contar o valor somente quando o valor corresponder a `launch`.
+      É possível usar qualquer tipo de métrica para definir uma nova sessão. Como exemplo, imagine que você deseja definir uma nova sessão sempre que um perfil iniciar seu aplicativo móvel. Em **[!UICONTROL Visualização de dados]** > **[!UICONTROL Componentes]**, você define um componente do tipo métrica, chamado **[!UICONTROL Inicialização]**, com base em um campo de esquema **[!UICONTROL appInteraction]** **[!UICONTROL Nome]**. Especifique ainda o componente de métrica **[!UICONTROL Inicialização]** para contar somente o valor quando o valor corresponder a `launch`.
 
       ![Inicializações do componente de métrica de interação do aplicativo](assets/component-launches.png)
 
-      Em seguida, arraste e solte ou selecione a métrica **[!UICONTROL Inicializações]** como a métrica para definir uma nova sessão.
+      Em seguida, você arrasta e solta ou seleciona a métrica **[!UICONTROL Iniciar]** como a métrica para definir uma nova sessão.
 
       ![Inicializações de configurações da sessão](assets/session-settings-launches-metric.png)
 

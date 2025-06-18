@@ -6,7 +6,7 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B edition"
 exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 0%
@@ -14,8 +14,6 @@ ht-degree: 0%
 ---
 
 # Criar valor do produto
-
-{{draft-b2b}}
 
 Você deseja fornecer insights de valor de produto B2B para gerentes de produtos e CMO ou CEOs. Por exemplo, por meio de uma análise de churn orientada por dados ou previsões. E torne esses insights digeríveis por meio de painéis móveis.
 

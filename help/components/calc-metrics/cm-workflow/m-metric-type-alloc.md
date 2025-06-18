@@ -3,10 +3,10 @@ description: Saiba mais sobre tipo de métrica e atribuição
 title: Tipo de métrica e atribuição
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
+source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 100%
+source-wordcount: '612'
+ht-degree: 91%
 
 ---
 
@@ -33,23 +33,23 @@ Você pode configurar o tipo de métrica e o [modelo de atribuição](#attributi
          * Desabilitar a opção **[!UICONTROL Usar modelo de atribuição não padrão]** para usar o modelo de atribuição de coluna padrão, que é Último contato, com uma janela de pesquisa de 30 dias.
          * Habilitar a opçã o **[!UICONTROL Usar modelo de atribuição não padrão]**. Na caixa de diálogo **[!UICONTROL Modelo de atribuição de coluna]**,
 
-            * Selecione um **[!UICONTROL Modelo]** dos modelos de atribuição.
-            * Selecione uma **[!UICONTROL Janela de pesquisa]**. Se você selecionar **[!UICONTROL Tempo personalizado]**, será possível definir o período em **[!UICONTROL Minuto(s)]** até **[!UICONTROL Trimestre(s)]**. Consulte [Janela de pesquisa](#lookback-window) para obter mais informações.
+            * Selecione um **[!UICONTROL Modelo]** dos [modelos de atribuição](#attribution-models).
+            * Selecione um **[!UICONTROL Contêiner]** nas opções de [contêiner](#container).
+            * Selecione uma **[!UICONTROL Janela de retrospectiva]** nas opções da [janela de retrospectiva](#lookback-window). Se você selecionar **[!UICONTROL Tempo personalizado]**, será possível definir o período de **[!UICONTROL Minuto(s)]** até **[!UICONTROL Trimestre(s)]**.
 
       1. Selecione **[!UICONTROL Aplicar]** para aplicar o modelo de atribuição não padrão. Selecione Cancelar para cancelar.
 
      Se você já tiver definido um modelo de atribuição não padrão, selecione **[!UICONTROL Editar]** para modificar a seleção.
 
-Consulte [Exemplo](#example) para obter um exemplo de uso de um modelo de atribuição e uma janela de pesquisa.
+Consulte [Exemplo](#example) para obter um exemplo de uso de um modelo de atribuição, contêiner e janela de retrospectiva.
 
 
-## Atribuição {#attribution}
+## Modelos de atribuição {#attribution-models}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_nondefaultattributionmodel"
 >title="Usar modelo de atribuição não-padrão"
 >abstract="Habilite um modelo de atribuição não padrão para a métrica selecionada."
-
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attributionmodel"
@@ -131,65 +131,34 @@ Consulte [Exemplo](#example) para obter um exemplo de uso de um modelo de atribu
 >title="Algorítmico"
 >abstract="O crédito é determinado dinamicamente em um algoritmo estatístico."
 
+{{attribution-models-details}}
+
+
+## Container {#container}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_container"
 >title="Container"
 >abstract="Selecione um container para definir o escopo desejado da atribuição."
 
+{{attribution-container}}
 
-{{attribution-models-details}}
 
-
-<!-- markdownlint-disable MD034 -->
+## Janela de pesquisa {#lookback-winwow}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
 >title="Janela de pesquisa"
 >abstract="Essa configuração determina a janela de atribuição de dados que será aplicada a cada conversão."
 
-
 {{attribution-lookback-window}}
 
 
-### Exemplo de atribuição {#attribution-example}
 
-Considere o exemplo a seguir:
 
-1. Em 15 de setembro, um visitante chega ao seu site através de um anúncio de pesquisa pago e depois sai.
-1. Em 18 de setembro, a pessoa acessa seu site novamente por meio de um link de redes sociais que recebeu de um amigo. Eles adicionam vários itens ao carrinho, mas não compram nada.
-1. Em 24 de setembro, sua equipe de marketing envia um email com um cupom para alguns dos itens em seu carrinho. Eles aplicam o cupom, mas visitam vários outros sites para ver se existem outros cupons disponíveis. Eles encontram outro cupom por meio de um anúncio de exibição e, em seguida, fazem uma compra de US$ 50.
+## Exemplo
 
-Dependendo da janela de retrospectiva e do modelo de atribuição, os canais recebem crédito diferente. Veja a seguir alguns exemplos:
-
-* Ao usar o modelo **primeiro contato** e uma **janela de retrospectiva de sessão**, a atribuição considera somente a terceira visita. Entre email e exibição, o email foi o primeiro, portanto, o email recebe 100% de crédito pela compra de US$ 50.
-
-* Ao usar o modelo **primeiro contato** e uma **janela de retrospectiva de pessoa**, a atribuição considera todas as três visitas. A pesquisa paga foi a primeira, portanto recebe 100% de crédito pela compra de US$ 50.
-
-* Ao usar o modelo **linear** e uma **janela de retrospectiva de sessão**, o crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25.
-Ao usar o modelo **linear** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 por esta compra.
-
-* Ao usar o modelo **Forma de J** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição.
-
-   * O crédito será de 60% para a exibição (US$ 30).
-   * De 20% para a pesquisa paga (US$ 10).
-   * Os 20% restantes são divididos entre redes sociais e email (US$ 5 para cada).
-
-* Ao usar o modelo **Decaimento de tempo** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Usando a meia-vida padrão de 7 dias:
-
-   * Intervalo de 0 dias entre o ponto de contato de exibição e a conversão. `2^(-0/7) = 1`
-   * Intervalo de 0 dias entre o ponto de contato de email e a conversão. `2^(-0/7) = 1`
-   * Intervalo de seis dias entre o ponto de contato de rede social e a conversão. `2^(-6/7) = 0.552`
-   * Intervalo de nove dias entre o ponto de contato de pesquisa paga e a conversão. `2^(-9/7) = 0.41`
-   * A normalização desses valores resulta no seguinte:
-
-      * Exibição: 33,8%, crédito de US$ 16,88
-      * Email: 33,8%, crédito de US$ 16,88
-      * Redes sociais: 18,6%, crédito de US$ 9,32
-      * Pesquisa paga: 13,8%, crédito de US$ 6,92
-
-Os eventos de conversão que normalmente têm números inteiros são divididos se o crédito pertencer a mais de um canal. Por exemplo, se dois canais contribuem para um pedido usando um modelo de atribuição linear, ambos os canais recebem 0,5 desse pedido. Essas métricas parciais são somadas para todas as pessoas e depois arredondadas para o número inteiro mais próximo para fins de geração de relatórios.
-
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >

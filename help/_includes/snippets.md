@@ -1,7 +1,7 @@
 ---
-source-git-commit: fe705aade87a2c5ea8d47db3dcd727d239eafc76
+source-git-commit: 256b1a3901a13ff2873a5cb5782baf26c93b8e8d
 workflow-type: tm+mt
-source-wordcount: '5193'
+source-wordcount: '4947'
 ht-degree: 38%
 
 ---
@@ -124,21 +124,26 @@ Um modelo de atribuição determina quais itens de dimensão recebem crédito po
 
 {style="table-layout:auto"}
 
+## Contêiner de atribuição {#attribution-container}
+
+Um contêiner de atribuição define o escopo desejado para a atribuição. As opções possíveis são:
+
+* **Sessão**: retroage até o início da sessão em que ocorreu uma conversão. As janelas de retrospectiva de sessão respeitam o [tempo limite de sessão](/help/data-views/create-dataview.md#session-settings) modificado em uma visualização de dados.
+* **Pessoa**: verifica as conversões do escopo do contêiner de pessoas.
+* **Conta Global** [!BADGE B2B edition]{type=Informative}: verifica as conversões do escopo do contêiner de contas globais.
+* **Contas** [!BADGE B2B edition]{type=Informative}: verifica as conversões do escopo do contêiner de pessoas.
+* **Oportunidade** [!BADGE B2B edition]{type=Informative}: verifica as conversões do escopo do contêiner de oportunidade.
+* **Grupo de compras** [!BADGE B2B edition]{type=Informative}: verifica as conversões do escopo do contêiner de grupo de compras.
+
 ## Janela de retrospectiva de atribuição {#attribution-lookback-window}
 
-As janelas de retrospectiva representam quanto tempo uma conversão deve retroceder para incluir pontos de contato. Se um item de dimensão for definido fora da janela de pesquisa, o valor não será incluído em nenhum cálculo de atribuição.
+Uma janela de retrospectiva de atribuição é a quantidade de tempo que uma conversão deve retroceder para incluir pontos de contato. Se um item de dimensão for definido fora da janela de pesquisa, o valor não será incluído em nenhum cálculo de atribuição.
 
 * **14 Dias**: retroage até 14 dias a partir de quando a conversão ocorreu.
 * **30 Dias**: retroage até 30 dias a partir do momento em que a conversão ocorreu.
 * **60 Dias**: retroage até 60 dias a partir do momento da conversão.
 * **90 Dias**: retroage até 90 dias a partir do momento da conversão.
 * **13 Meses** [!BADGE B2B edition]{type=Informative}: retroage até 13 meses a partir do momento da conversão.
-* **Sessão**: retroage até o início da sessão em que ocorreu uma conversão. As janelas de retrospectiva de sessão respeitam o [tempo limite de sessão](/help/data-views/create-dataview.md#session-settings) modificado em uma visualização de dados.
-* **Pessoa (Janela de Relatório)**: verifica todas as visitas até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da pessoa será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
-* **Conta Global (Janela de Relatórios)** [!BADGE B2B edition]{type=Informative}: verifica todas as contas globais até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da conta global será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
-* **Contas (Janela de Relatório)** [!BADGE B2B edition]{type=Informative}: verifica todas as contas até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da conta será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
-* **Oportunidade (Janela de Relatório)** [!BADGE B2B edition]{type=Informative}: verifica todas as oportunidades até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas de um relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva da oportunidade será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
-* **Grupo de compras (Janela de Relatório)** [!BADGE B2B edition]{type=Informative}: verifica todos os grupos de compras até o primeiro dia do mês do intervalo de datas atual. Por exemplo, se o intervalo de datas do relatório for de 15 a 30 de setembro, o intervalo de datas da retrospectiva do grupo de compras será de 1º a 30 de setembro. Se você usar essa janela de lookback, poderá ver ocasionalmente que os itens de dimensão são atribuídos a datas fora da janela de relatórios.
 * **Tempo personalizado:** permite que você defina uma janela de pesquisa personalizada a partir de quando ocorreu uma conversão. Você pode especificar o número de minutos, horas, dias, semanas, meses ou trimestres. Por exemplo, se uma conversão ocorresse em 20 de fevereiro, uma janela de pesquisa de cinco dias avaliaria todos os pontos de contato de dimensão de 15 a 20 de fevereiro no modelo de atribuição.
 
 ## Exemplo de atribuição {#attribution-example}
@@ -149,35 +154,20 @@ Considere o exemplo a seguir:
 1. Em 18 de setembro, a pessoa acessa seu site novamente por meio de um link de redes sociais que recebeu de um amigo. Eles adicionam vários itens ao carrinho, mas não compram nada.
 1. Em 24 de setembro, sua equipe de marketing envia um email com um cupom para alguns dos itens em seu carrinho. Eles aplicam o cupom, mas visitam vários outros sites para ver se existem outros cupons disponíveis. Eles encontram outro cupom por meio de um anúncio de exibição e, em seguida, fazem uma compra de US$ 50.
 
-Dependendo da janela de retrospectiva e do modelo de atribuição, os canais recebem crédito diferente. Veja a seguir alguns exemplos:
+Dependendo do modelo de atribuição, o contêiner e os canais recebem crédito diferente. Consulte os exemplos na tabela abaixo:
 
-* Ao usar o modelo **primeiro contato** e uma **janela de retrospectiva de sessão**, a atribuição considera somente a terceira visita. Entre email e exibição, o email foi o primeiro, portanto, o email recebe 100% de crédito pela compra de US$ 50.
-
-* Ao usar o modelo **primeiro contato** e uma **janela de retrospectiva de pessoa**, a atribuição considera todas as três visitas. A pesquisa paga foi a primeira, portanto recebe 100% de crédito pela compra de US$ 50.
-
-* Ao usar o modelo **linear** e uma **janela de retrospectiva de sessão**, o crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25.
-Ao usar o modelo **linear** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 por esta compra.
-
-* Ao usar o modelo **Forma de J** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição.
-
-   * O crédito será de 60% para a exibição (US$ 30).
-   * De 20% para a pesquisa paga (US$ 10).
-   * Os 20% restantes são divididos entre redes sociais e email (US$ 5 para cada).
-
-* Ao usar o modelo **Decaimento de tempo** e uma **janela de retrospectiva de pessoa**, o crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Usando a meia-vida padrão de 7 dias:
-
-   * Intervalo de 0 dias entre o ponto de contato de exibição e a conversão. `2^(-0/7) = 1`
-   * Intervalo de 0 dias entre o ponto de contato de email e a conversão. `2^(-0/7) = 1`
-   * Intervalo de seis dias entre o ponto de contato de rede social e a conversão. `2^(-6/7) = 0.552`
-   * Intervalo de nove dias entre o ponto de contato de pesquisa paga e a conversão. `2^(-9/7) = 0.41`
-   * A normalização desses valores resulta no seguinte:
-
-      * Exibição: 33,8%, crédito de US$ 16,88
-      * Email: 33,8%, crédito de US$ 16,88
-      * Redes sociais: 18,6%, crédito de US$ 9,32
-      * Pesquisa paga: 13,8%, crédito de US$ 6,92
+| Modelo | Container | Janela de pesquisa | Explicação |
+|---|---|---|---|
+| Primeiro contato | Sessão | 30 dias | A atribuição considera somente a terceira visita. Entre email e exibição, o email foi o primeiro, portanto, o email recebe 100% de crédito pela compra de US$ 50. |
+| Primeiro contato | Pessoa | 30 dias | A atribuição considera todas as três visitas. A pesquisa paga foi a primeira, portanto recebe 100% de crédito pela compra de US$ 50. |
+| Linear | Sessão | 30 dias | O crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25 dólares. |
+| Linear | Pessoa | 30 dias | O crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 por esta compra. |
+| Forma de J | Pessoa | 30 dias | O crédito é dividido entre pesquisa paga, redes sociais, email e exibição.<ul><li>O crédito será de 60% para a exibição (US$ 30).</li><li>De 20% para a pesquisa paga (US$ 10).</li><li>Os 20% restantes são divididos entre redes sociais e email (US$ 5 para cada).</li></ul> |
+| Declínio de tempo | Pessoa | 30 dias | <ul><li>Intervalo de 0 dias entre o ponto de contato de exibição e a conversão. `2^(-0/7) = 1`</li><li>Intervalo de 0 dias entre o ponto de contato de email e a conversão. `2^(-0/7) = 1`</li><li>Intervalo de seis dias entre o ponto de contato de rede social e a conversão. `2^(-6/7) = 0.552`</li><li>Intervalo de nove dias entre o ponto de contato de pesquisa paga e a conversão. `2^(-9/7) = 0.41`</li>A normalização desses valores resulta no seguinte:<ul><li>Exibição: 33,8%, crédito de US$ 16,88</li><li>Email: 33,8%, crédito de US$ 16,88</li><li>Redes sociais: 18,6%, crédito de US$ 9,32</li><li>Pesquisa paga: 13,8%, crédito de US$ 6,92</li></ul></li></ul> |
 
 Os eventos de conversão que normalmente têm números inteiros são divididos se o crédito pertencer a mais de um canal. Por exemplo, se dois canais contribuem para um pedido usando um modelo de atribuição linear, ambos os canais recebem 0,5 desse pedido. Essas métricas parciais são somadas para todas as pessoas e depois arredondadas para o número inteiro mais próximo para fins de geração de relatórios.
+
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Use contêineres B2B específicos, como Contas ou Oportunidades, e janelas de pesquisa mais apropriadas (até 13 meses) para aplicar os modelos de atribuição acima em cenários B2B típicos.
 
 ## Jornada comparações de visualização {#journey-visualization-comparisons}
 

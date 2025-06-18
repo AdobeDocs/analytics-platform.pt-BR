@@ -6,10 +6,10 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: d0dfcce1a9ba2a2f3e55abc63116ed07a33c9411
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -17,8 +17,6 @@ ht-degree: 0%
 # Customer Journey Analytics B2B edition
 
 {{b2b-edition}}
-
-{{draft-b2b}}
 
 O Adobe Analytics começou como uma ferramenta de análise digital e da Web para profissionais de marketing, enquanto o Customer Journey Analytics ampliou o escopo para incluir dados de vários canais, offline e entre plataformas.  Ambas as ferramentas ajudam as empresas B2C (Business to Consumer) a analisar e otimizar seus esforços de marketing e as experiências do cliente. E concentre-se em **análises e relatórios baseados em pessoas**: entenda a jornada do cliente, onde o cliente é uma pessoa que interage com sua marca em vários canais.
 
@@ -45,5 +43,5 @@ O Customer Journey Analytics B2B edition ajuda as empresas B2B a alinhar suas eq
 >[!MORELIKETHIS]
 >
 >[Conceitos e recursos B2B](cja-b2b-concepts-features.md)
->[Guia de início rápido B2B](cja-b2b-quick-start-guide.md)
+>>[Guia de início rápido B2B](cja-b2b-quick-start-guide.md)
 >

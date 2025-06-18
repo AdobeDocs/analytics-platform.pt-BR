@@ -6,7 +6,7 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 2%
@@ -14,8 +14,6 @@ ht-degree: 2%
 ---
 
 # Aumentar contas principais
-
-{{draft-b2b}}
 
 Aumentar e manter contas importantes é uma alta prioridade para empresas B2B. Um pré-requisito para garantir o progresso dos negócios é comunicar-se com as principais partes interessadas em suas contas de destino na hora certa.
 
