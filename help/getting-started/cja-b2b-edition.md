@@ -43,5 +43,5 @@ O Customer Journey Analytics B2B edition ajuda as empresas B2B a alinhar suas eq
 >[!MORELIKETHIS]
 >
 >[Conceitos e recursos B2B](cja-b2b-concepts-features.md)
->>[Guia de início rápido B2B](cja-b2b-quick-start-guide.md)
+>&#x200B;>[Guia de início rápido B2B](cja-b2b-quick-start-guide.md)
 >
