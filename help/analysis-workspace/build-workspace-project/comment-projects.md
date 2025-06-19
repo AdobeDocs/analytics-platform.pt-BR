@@ -4,9 +4,9 @@ title: Adicionar e exibir comentários em projetos
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 29db477c96ad5ca7c69a7f7055c1a7fd3c06eb04
+source-git-commit: 91ac84764a186d81f3270bb3ec9673d93b11bd38
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Você pode exibir comentários da área de comentários no painel direito ou do 
 
 ### Exibir comentários na área de comentários
 
-Todos os comentários feitos em um projeto do Analysis Workspace ficam visíveis na área de comentários no painel direito.
+Todos os comentários feitos em um projeto do Analysis Workspace ficam visíveis na área de comentários no painel direito. O número total de comentários existentes é exibido no ícone de comentários.
 
 1. Por padrão, a área de comentários é expandida para cada projeto no Analysis Workspace na primeira vez que você abre um projeto.
 
@@ -131,13 +131,15 @@ Para incluir outra pessoa em seu comentário:
 
 ## Responder a um comentário
 
-1. Com o projeto aberto no Analysis Workspace, selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace.
+1. No Analysis Workspace, abra o projeto ao qual deseja adicionar um comentário.
 
-1. Selecione **[!UICONTROL Responder]** ao lado do comentário ao qual deseja responder.
+1. Selecione o ícone da área de comentários ![Ícone da área de comentários](/help/assets/icons/Comment.svg) no painel direito do Analysis Workspace e selecione **[!UICONTROL Responder]** ao lado do comentário ao qual deseja responder.
+
+   Para incluir o texto do comentário que você está respondendo, com o texto original envolvido em uma marca de citação, selecione o ícone de três pontos ao lado do comentário ou resposta específica que você deseja responder e selecione **[!UICONTROL Citar resposta]**. Uma resposta de cotação é uma boa maneira de indicar a qual comentário ou resposta seu comentário se refere.
 
    Ou
 
-   Para incluir o texto do comentário que você está respondendo, com o texto original envolvido em uma marca de citação, selecione o ícone de três pontos ao lado do comentário ou resposta específica que você deseja responder e selecione **[!UICONTROL Citar resposta]**. Uma resposta de cotação é uma boa maneira de indicar a qual comentário ou resposta seu comentário se refere.
+   Selecione o ícone de comentário no painel ou na visualização em que o comentário foi feito e selecione **[!UICONTROL Responder]**.
 
 1. No campo **[!UICONTROL Novo comentário]**, especifique seu comentário.
 
@@ -149,9 +151,9 @@ Para incluir outra pessoa em seu comentário:
 
 ## Receber notificações sobre comentários
 
-Os proprietários do projeto e [as pessoas específicas que você menciona](#include-others-in-a-comment) recebem notificações com base nas configurações de notificação do Adobe Experience Cloud. Por padrão, eles recebem uma notificação no aplicativo, visível do [ícone de notificação do Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#view-notifications) ![ícone de notificação do Experience Cloud](assets/experience-cloud-notification.svg) no Customer Journey Analytics.
+Os proprietários do projeto e [as pessoas específicas que você menciona](#include-others-in-a-comment) recebem notificações com base nas configurações de notificação do Adobe Experience Cloud. Por padrão, eles recebem uma notificação no aplicativo, visível do [ícone de notificação do Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![ícone de notificação do Experience Cloud](assets/experience-cloud-notification.svg) no Customer Journey Analytics.
 
-Além disso, as pessoas podem definir suas configurações de notificação do Experience Cloud para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#slack).
+Além disso, as pessoas podem definir suas configurações de notificação do Experience Cloud para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Inserir um selo para um comentário existente
 
