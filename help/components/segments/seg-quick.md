@@ -4,7 +4,7 @@ title: Segmentos rápidos
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 23%
@@ -19,7 +19,7 @@ Os segmentos rápidos permitem explorar dados em um projeto do Workspace rapidam
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos rápidos no Analysis Workspace](https://video.tv.adobe.com/v/345341/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos rápidos no Analysis Workspace](https://video.tv.adobe.com/v/341466/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -63,7 +63,7 @@ Para gerenciar um segmento rápido, passe o mouse sobre o **[!UICONTROL segmento
 
 Consulte abaixo um exemplo do construtor de segmentos rápido. No exemplo, o construtor é aberto para um segmento rápido chamado `Call Reason = Order Change AND Online Orders is greater than or equal 1`. Ambos os segmentos rápidos na parte superior se aplicam ao painel [!UICONTROL Média do valor do pedido] e a todas as visualizações dentro dele, como a tabela de forma livre [!UICONTROL Média do valor do pedido por país].
 
-![Criador de segmentos rápido](assets/quick-filter-builder.png)
+![Construtor de segmentos rápido](assets/quick-filter-builder.png)
 
 O construtor de segmentos rápido consiste nas seguintes áreas e botões.
 
@@ -107,6 +107,6 @@ Segmentos rápidos são exatamente o nome que recebem. É possível criar e edit
 Os segmentos têm as seguintes vantagens em comparação aos segmentos rápidos.
 
 * Segmentos podem ser disponibilizados em todos os projetos do Workspace
-* Os segmentos suportam mais complexidade usando contêineres aninhados e hierárquicos e sequências (usando segmentos de sequência).
+* Os segmentos suportam mais complexidade usando [contêineres](seg-builder.md#containers) aninhados e hierárquicos e sequências (usando [segmentos sequenciais](seg-sequential-build.md)).
 
 

@@ -3,10 +3,10 @@ description: Dependendo das suas permissões, é possível compartilhar métrica
 title: Compartilhar métricas calculadas
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 No [Gerenciador de métricas calculadas](cm-manager.md), você pode compartilhar métricas calculadas. Dependendo das suas permissões, você pode compartilhar métricas calculadas com toda a organização, com grupos ou com usuários individuais:
 
 * **Administradores**: os administradores podem compartilhar métricas calculadas com toda a organização, com grupos em uma organização e com usuários individuais. Consulte a [documentação do Admin Console](https://helpx.adobe.com/br/enterprise/using/manage-products.html) para obter mais informações.
-* **Não administradores**: não administradores podem compartilhar somente a métrica calculada que criaram e somente com usuários individuais. |
+* **Não administradores**: não administradores podem compartilhar somente a métrica calculada que criaram e somente com usuários individuais.
 
 Para compartilhar uma ou mais métricas calculadas:
 

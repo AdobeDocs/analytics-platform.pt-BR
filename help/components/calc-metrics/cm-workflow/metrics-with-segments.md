@@ -3,9 +3,9 @@ description: A segmentação de métricas individuais permite fazer comparaçõe
 title: Métricas segmentadas
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ Repita as etapas acima para a versão internacional da sua métrica calculada.
 
 ## Totais
 
-1. Crie dois novos segmentos com base no Total geral. Abra cada um dos segmentos criados anteriormente, renomeie o segmento, defina o **[!UICONTROL Tipo de métrica]** para **[!UICONTROL Pessoas]** como **[!UICONTROL Total geral]** e use **[!UICONTROL Salvar como]** para salvar o segmento usando o novo nome. Por exemplo:
+1. Crie duas novas métricas calculadas com base no Total geral. Abra cada um dos segmentos criados anteriormente, renomeie o segmento, defina o **[!UICONTROL Tipo de métrica]** para **[!UICONTROL Pessoas]** como **[!UICONTROL Total geral]** e use **[!UICONTROL Salvar como]** para salvar o segmento usando o novo nome. Por exemplo:
 
    ![Métrica total para a Alemanha](assets/calculated-metric-germany-total.png)
 
@@ -90,7 +90,7 @@ Repita as etapas acima para a versão internacional da sua métrica calculada.
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usar uma métrica calculada segmentada como uma métrica sem implementação](https://video.tv.adobe.com/v/32608?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usar uma métrica calculada segmentada como uma métrica sem implementação](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
