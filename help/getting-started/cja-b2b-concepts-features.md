@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1469'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ No Customer Journey Analytics B2B edition, você pode selecionar entre uma conex
 
 ## Containers
 
-Em Customer Journey Analytics, os containers são gerados como parte da configuração de uma conexão e visualização de dados e fornecem a estrutura e o escopo de dados. Os contêineres armazenam grupos de identificadores para sequenciar todos os carimbos de data e hora do evento por identificadores exclusivos. Esse armazenamento facilita a execução rápida e eficiente de funcionalidades como segmentação, atribuição e visualizações.
+Os containers do Customer Journey Analytics são gerados como parte da configuração de uma conexão e visualização de dados, além de fornecer a estrutura e o escopo dos dados. Os contêineres armazenam grupos de identificadores para sequenciar todos os carimbos de data e hora do evento por identificadores exclusivos. Esse armazenamento facilita a execução rápida e eficiente de funcionalidades como segmentação, atribuição e visualizações.
 
 ### Contêineres padrão
 

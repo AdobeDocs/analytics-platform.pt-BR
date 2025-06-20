@@ -5,16 +5,21 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: f149a2bd7f184f4e8f6e67979649e2d9f609d603
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '599'
+ht-degree: 85%
 
 ---
 
 # Configure o Content Analytics
 
-A configuração da análise de conteúdo consiste nas seguintes etapas:
+Este artigo documenta, em um nível superior, como configurar o Content Analytics.
+
+Antes de configurar o Content Analytics, verifique se os [pré-requisitos](#prerequisites) foram atendidos, se você tem o [controle de acesso](#access-control) necessário e se tem conhecimento das [limitações](#limitations).
+
+
+Etapas de alto nível
 
 ![Configuração da análise de conteúdo](../assets/aca-configuration.svg){zoomable="yes"}
 
@@ -60,6 +65,13 @@ Esse acesso exige que:
 
 1. A visualização de dados habilitada para análise de conteúdo esteja incluída como parte das permissões de visualização de dados de um perfil de produto específico do Customer Journey Analytics.
 1. Esse perfil específico de produto do Customer Journey Analytics seja um dos perfis de produto atribuídos ao usuário ou grupo de usuários.
+
+## Limitações
+
+O esquema usado para os dados de evento do Content Analytics pertence ao sistema. Um schema de propriedade do sistema não pode ser modificado, o que implica:
+
+* Não é possível incluir grupos de campos para o suporte de funcionalidades como geolocalização, detecção de bot ou pesquisa de dispositivo.
+* Não é possível adicionar um identificador específico para oferecer suporte à [compilação em campo](/help/stitching/fbs.md).
 
 >[!MORELIKETHIS]
 >

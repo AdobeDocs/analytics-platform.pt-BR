@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 2b2d1cc2-36da-4960-ab31-0a398d131ab8
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: a3d974733eef42050b0ba8dcce4ebcccf649faa7
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 96%
+source-wordcount: '640'
+ht-degree: 67%
 
 ---
 
@@ -53,7 +53,7 @@ Use a [extensão de Análise de conteúdo da Adobe](https://experienceleague.ado
 
   Você pode habilitar ou desabilitar experiências e editar as combinações de expressões regulares e parâmetros de consulta para determinar como o conteúdo é renderizado no seu site.
 
-* [Segmentação de eventos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Segmentação de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   É possível editar expressões regulares para modificar como segmentar páginas e ativos.
 
@@ -65,7 +65,7 @@ Depois de fazer alterações na extensão de Análise de conteúdo da Adobe, use
 >[!MORELIKETHIS]
 >
 >[Configuração guiada](guided.md)
->[Visão geral da publicação de tags de coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview)
+>>[Visão geral da publicação de tags de coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -87,3 +87,45 @@ window.adobe.getContentExperienceVersion = () => {
   return "1.0";
 };
 ```
+
+## Identidades
+
+O Content Analytics lida com identidades da seguinte maneira:
+
+* A ECID é preenchida automaticamente na parte `identityMap` do esquema do Content Analytics.
+* Se você precisar de outros valores de identidade no `identityMap`, será necessário definir esses valores no retorno de chamada `onBeforeEventSend` na extensão do Web SDK.
+* A compilação em campo não é compatível porque o esquema é de propriedade do sistema. Portanto, não é possível adicionar outro campo ao esquema para oferecer suporte à compilação em campo
+
+
+Para garantir que os dados de identidade da Content Analytics e do Adobe Experience Platform Web SDK sejam compilados corretamente no nível do campo, é necessário fazer modificações no Web SDK [em antes do retorno de chamada do evento ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} ser enviado.
+
+1. Navegue até a propriedade **[!UICONTROL Tags]**, que contém a extensão do Adobe Experience Platform Web SDK e a extensão do Adobe Content Analytics.
+1. Selecione ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensões]**.
+1. Selecione a extensão **[!UICONTROL Adobe Experience Platform Web SDK]**.
+1. Selecione **[!UICONTROL Configurar]**.
+1. Na seção **[!UICONTROL Instâncias do SDK]**, role para baixo até **[!UICONTROL Coleta de dados]** - **[!UICONTROL Ativada antes do retorno de chamada do envio de evento]**.
+
+   ![Ativado antes do retorno de chamada do envio do evento](/help/content-analytics/assets/onbeforeeventsendcallback.png)
+
+1. Selecione **[!UICONTROL &lt;/> Fornecer em antes do evento enviar o código de retorno de chamada]**.
+1. Adicione o seguinte código:
+
+   ```javascript
+   window.adobeContentAnalytics?.forwardEvent(content);
+   
+   content.xdm.identityMap = _satellite.getVar('identityMap');
+   if ((content.xdm.eventType === "content.contentEngagement") && (_satellite.getVar('identityMap') != null)) {
+      return true;
+   }
+   ```
+
+   ![Ativado antes do retorno de chamada do envio do evento](/help/content-analytics/assets/onbeforeeventsendcallbackcode.png)
+
+1. Selecione **[!UICONTROL Salvar]** para salvar o código.
+1. Selecione **[!UICONTROL Salvar]** para salvar a extensão.
+1. [Publique](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview) as atualizações para sua propriedade de marcas.
+
+
+
+
+
