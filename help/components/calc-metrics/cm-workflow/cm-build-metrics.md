@@ -3,10 +3,10 @@ description: O Criador de métricas calculadas oferece uma tela para arrastar e 
 title: Criar métricas calculadas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 95%
+source-wordcount: '1628'
+ht-degree: 94%
 
 ---
 
@@ -18,32 +18,16 @@ ht-degree: 95%
 >abstract="Indica onde é possível usar essa métrica calculada no Customer Journey Analytics, seja no Analysis Workspace, Report Builder e assim por diante. Algumas métricas calculadas não podem ser usadas com experimentação."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Usar métricas calculadas na experimentação"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_externalid"
 >title="ID externa"
 >abstract="Alterar o ID externo pode afetar como a métrica calculada aparece em fontes externas, como em ferramentas de business intelligence"
 
-<!-- markdownlint-enable MD034 -->
-
 O Customer Journey Analytics fornece uma tela para arrastar e soltar dimensões, métricas, segmentos e funções para criar métricas personalizadas com base na lógica, regras e operadores da hierarquia do container. Esta ferramenta de desenvolvimento integrado permite criar e salvar métricas calculadas simples e complexas.
-
-## Comece criando uma métrica calculada
 
 É possível usar o construtor de métricas calculadas para criar ou editar métricas calculadas. Quando criadas dessa forma, as métricas calculadas ficam disponíveis na lista de componentes e podem ser usadas em projetos por toda a organização. Como alternativa, é possível criar rapidamente uma métrica calculada que esteja disponível somente para o projeto em que foi criada, conforme descrito na seção [Criar métricas calculadas para um único projeto](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) em [Métricas](/help/components/apply-create-metrics.md).
 
-Acesse o construtor de métricas calculadas para começar a criar uma métrica calculada que esteja disponível na lista de componentes.
-
-1. Acesse o construtor de métricas calculadas de qualquer uma das seguintes maneiras:
-
-   * No Analysis Workspace, abra um projeto e selecione **[!UICONTROL Componentes]** > **[!UICONTROL Criar métrica]**.
-   * No Analysis Workspace, abra um projeto e selecione o ícone de **adição** ao lado da seção [!UICONTROL **Métricas**] no painel esquerdo.
-   * No [!DNL Customer Journey Analytics], acesse **[!UICONTROL Componentes]** > **[!UICONTROL Métricas calculadas]** e selecione **[!UICONTROL + Adicionar]** na parte superior da página Métricas calculadas.
-
-1. Prossiga para as [Áreas do construtor de métricas calculadas](#areas-of-the-calculated-metrics-builder).
+[Criar uma métrica calculada](cm-workflow.md) descreve as diferentes opções disponíveis para criar uma nova métrica calculada.
 
 ## Áreas do construtor de métricas calculadas
 
@@ -216,5 +200,5 @@ Para excluir um container, selecione ![Fechar](/help/assets/icons/Close.svg) no 
 >[!MORELIKETHIS]
 >
 >[Usar funções](cm-using-functions.md)
->&#x200B;>[Segmentos ](/help/components/segments/seg-overview.md)
+>>[Segmentos ](/help/components/segments/seg-overview.md)
 >

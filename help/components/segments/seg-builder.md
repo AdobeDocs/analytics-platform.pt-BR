@@ -4,7 +4,7 @@ title: Construir segmentos
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 51%
@@ -12,8 +12,6 @@ ht-degree: 51%
 ---
 
 # Construir segmentos {#build-segments}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="components_filters_createaudience"
@@ -24,7 +22,6 @@ ht-degree: 51%
 >id="components_filters_datapreview"
 >title="Visualização de dados"
 >abstract="Compara os dados desse segmento com os da visualização de dados. A porcentagem de visualização é baseada no número total na visualização de dados dos **últimos 90 dias**.<br><br/>Se a visualização não estiver carregando, a conexão ainda pode estar preenchendo os dados."
-
 
 A caixa de diálogo **[!UICONTROL Construtor de segmentos]** é usada para criar segmentos novos ou editar segmentos existentes. A caixa de diálogo é denominada **[!UICONTROL Novo segmento]** ou **[!UICONTROL Editar segmento]** para segmentos que você cria ou gerencia no gerenciador de [[!UICONTROL Segmento]](/help/components/segments/seg-manage.md).
 
@@ -202,5 +199,3 @@ A tabela abaixo explica, para cada modelo de atribuição, quais eventos de entr
 Um exemplo de relatório sobre eventos que usam os três segmentos é semelhante a:
 
 ![Resultados do modelo de atribuição de segmento](assets/filter-dimension-attribution-results.png)
-
-<!-- markdownlint-enable MD034 -->

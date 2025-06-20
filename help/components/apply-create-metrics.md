@@ -4,10 +4,10 @@ title: Métricas
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 9%
+source-wordcount: '866'
+ht-degree: 7%
 
 ---
 
@@ -49,13 +49,6 @@ Você pode ver se uma métrica foi aprovada ![ícone Aprovado](https://spectrum.
 A lista completa de métricas padrão no Customer Journey Analytics:
 {{standard-metrics}}
 
-## Comparar métricas com diferentes modelos de atribuição
-
-Para comparar rapidamente um modelo de atribuição com outro para uma métrica, selecione **[!UICONTROL Comparar modelos de atribuição]** no menu de contexto para uma métrica.
-
-![realce do painel do Workspace Comparar modelos de atribuição](assets/compare-attribution.png)
-
-Esse atalho permite comparar um modelo de atribuição a outro sem arrastar uma métrica e configurá-la duas vezes.
 
 ## Criar métricas calculadas
 
@@ -65,9 +58,7 @@ Há várias maneiras de criar métricas calculadas. O método escolhido determin
 
 ### Criar métricas calculadas para todos os projetos
 
-É possível usar o construtor de métricas calculadas para essa tarefa. Quando criadas dessa forma, as métricas calculadas ficam disponíveis na lista de componentes e podem ser usadas em projetos em toda a organização.
-
-Para obter informações sobre como acessar o construtor de métricas calculadas, consulte [Criar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-workflow.md).
+Você pode usar o [construtor de métrica calculada](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) para [criar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-workflow.md). Quando criadas dessa forma, as métricas calculadas ficam disponíveis na lista de componentes e podem ser usadas em projetos em toda a organização.
 
 ### Criar métricas calculadas para um único projeto
 
@@ -113,6 +104,13 @@ Para criar uma métrica calculada para um único projeto:
 
    * [!UICONTROL **Alteração de porcentagem**]: cria uma nova coluna que mostra a alteração de porcentagem entre as duas colunas selecionadas.
 
-[Métricas calculadas: métricas sem implementação](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=pt-BR) (3:42)
+
+## Comparar métricas com diferentes modelos de atribuição
+
+Para comparar rapidamente um modelo de atribuição com outro para uma métrica, selecione **[!UICONTROL Comparar modelos de atribuição]** no menu de contexto para uma métrica.
+
+![realce do painel do Workspace Comparar modelos de atribuição](assets/compare-attribution.png)
+
+Esse atalho permite comparar um modelo de atribuição a outro sem arrastar uma métrica e configurá-la duas vezes.
 
 
