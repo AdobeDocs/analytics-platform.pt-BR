@@ -65,7 +65,7 @@ Depois de fazer alterações na extensão de Análise de conteúdo da Adobe, use
 >[!MORELIKETHIS]
 >
 >[Configuração guiada](guided.md)
->>[Visão geral da publicação de tags de coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[Visão geral da publicação de tags de coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview)
 >
 
 
