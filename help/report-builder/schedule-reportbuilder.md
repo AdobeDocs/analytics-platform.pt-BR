@@ -6,14 +6,14 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
+source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 13%
+source-wordcount: '864'
+ht-degree: 15%
 
 ---
 
-# Programar pastas de trabalho
+# Agendar pastas de trabalho compartilhando por email
 
 Depois de salvar a pasta de trabalho e concluir a análise, é possível compartilhá-la com outras pessoas da equipe usando o recurso de agendamento. O recurso Agendar permite criar um agendamento que atualiza automaticamente os dados na pasta de trabalho. E envia por email o arquivo de pasta de trabalho do Excel como um anexo para o público-alvo especificado em uma data e hora específicas. Configurar um agendamento fornece aos recipients atualizações regulares automaticamente. Você também pode usar o recurso de programação para enviar a pasta de trabalho uma vez sem programar atualizações automáticas.
 
@@ -129,54 +129,7 @@ Em ambos os casos, você verá uma notificação de confirmação na parte infer
 
 Para cancelar o envio da pasta de trabalho, selecione **[!UICONTROL Cancelar]**.
 
+## Gerenciar pastas de trabalho agendadas
 
-## Exibir e gerenciar pastas de trabalho agendadas
+Para obter informações sobre como gerenciar pastas de trabalho já agendadas, consulte [Gerenciar pastas de trabalho agendadas](/help/report-builder/manage-schedules-reportbuilder.md).
 
-Você pode exibir e gerenciar todas as pastas de trabalho agendadas na guia **[!UICONTROL Pastas de trabalho]**.
-
-1. Selecione **[!UICONTROL Agendar]** no hub do Report Builder
-
-1. Selecione a guia **[!UICONTROL Pastas de trabalho]**. Você verá uma lista de todas as pastas de trabalho agendadas.
-
-   ![Pasta de trabalho agendada](assets/scheduled-workbooks.png){zoomable="yes"}
-
-   Você pode passar o mouse sobre o ícone para ver o status de uma pasta de trabalho agendada.
-
-   Use a ![Pesquisa](/help/assets/icons/Search.svg) para procurar pastas de trabalho agendadas específicas.
-Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para definir quais colunas mostrar.
-
-1. Selecione uma ou mais pastas de trabalho.
-
-   ![Agendar pastas de trabalho selecionadas](assets/scheduled-workbooks-selected.png){zoomable="yes"}
-
-   Estas são as opções disponíveis:
-
-   | Opção | Descrição |
-   |---|---|
-   | ![Editar](/help/assets/icons/Edit.svg) | Edite o agendamento de uma pasta de trabalho selecionada. |
-   | ![Histórico](/help/assets/icons/History.svg) | Mostrar o histórico de pastas de trabalho selecionadas. |
-   | ![Pausar](/help/assets/icons/Pause.svg) | Pausar o agendamento das pastas de trabalho selecionadas. |
-   | ![Reproduzir](/help/assets/icons/Play.svg) | Retomar o agendamento das pastas de trabalho selecionadas. |
-   | ![Baixar](/help/assets/icons/Download.svg) | Baixe a pasta de trabalho selecionada em uma nova pasta de trabalho. |
-   | ![Excluir](/help/assets/icons/Delete.svg) | Exclua o cronograma das pastas de trabalho selecionadas. |
-
-
-## Histórico e status de pastas de trabalho agendadas
-
-Você pode exibir o histórico e o status de pastas de trabalho agendadas na guia **[!UICONTROL Histórico]**.
-
-1. Selecione **[!UICONTROL Agendar]** no hub do Report Builder.
-
-1. Selecione a guia **[!UICONTROL Histórico]**. Você verá uma lista de todas as pastas de trabalho agendadas.
-
-   ![Histórico agendado](assets/scheduled-workbooks-history.png){zoomable="yes"}
-
-   Use a ![Pesquisa](/help/assets/icons/Search.svg) para procurar pastas de trabalho específicas na lista.
-Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para definir quais colunas mostrar.
-
-   A guia **[!UICONTROL Histórico]** permite examinar o status de cada tarefa agendada. Uma linha separada documenta a alteração de status para cada tarefa agendada.
-
-   * Um ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) indica que a pasta de trabalho foi enviada com êxito.
-   * Um ![AlertRed](/help/assets/icons/AlertRed.svg) indica que ocorreu um erro.
-
-Como alternativa, você pode selecionar ![Histórico](/help/assets/icons/History.svg) para uma ou mais pastas de trabalho selecionadas na guia **[!UICONTROL Pastas de Trabalho]**. Esta ação mostra a guia **[!UICONTROL Histórico]** com uma lista filtrada por sua seleção. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover um filtro.
