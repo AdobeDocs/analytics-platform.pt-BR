@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
 source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -42,21 +42,21 @@ Você pode usar o Customer Journey Analytics para fazer perguntas usando o ambie
 
 O Customer Journey Analytics usa uma avançada arquitetura própria que distribui a análise em centenas ou até milhares de servidores para exibir dados no Analysis Workspace em segundos. Algumas propriedades notáveis dessa arquitetura de processamento incluem:
 
-* **Otimização para consultas individuais relacionadas a clientes**: tecnicamente, o Customer Journey Analytics armazena os dados em um mecanismo de relatório distribuído que faz uso extensivo do armazenamento em cache. Esse mecanismo é ajustado para consultas responsivas em dados de eventos de nível individual e, como tal, é perfeitamente otimizado para consultas relacionadas ao cliente. O mecanismo de relatórios armazena dados em índices de bitmap orientados por coluna que permitem um cálculo rápido e preciso de métricas agregadas. Ele tem um mecanismo de segmentação extenso que permite uma segmentação/análise de público-alvo avançada. Ele também possui um entendimento geral da sequência dos pontos de dados, o que é útil para analisar o comportamento desses pontos de dados (a ordem em que as coisas ocorreram) e realizar atribuições usando vários modelos complexos.
+* **Otimização para consultas individuais relacionadas a clientes**: tecnicamente, o Customer Journey Analytics armazena os dados em um mecanismo de relatório distribuído que faz uso extensivo do armazenamento em cache. Esse mecanismo é ajustado para consultas responsivas em dados de eventos de nível individual e, como tal, é perfeitamente otimizado para consultas relacionadas ao cliente. O mecanismo de relatórios armazena dados em índices de bitmap orientados por coluna que permitem um cálculo rápido e preciso de métricas agregadas. Ele tem um amplo mecanismo de segmentação que permite uma análise eficiente da segmentação e do público-alvo. Ele também possui um entendimento geral da sequência dos pontos de dados, o que é útil para analisar o comportamento desses pontos de dados (a ordem em que as coisas ocorreram) e realizar atribuições usando vários modelos complexos.
 
-* **Aplicação rápida de caminhos e segmentos complexos**: o mecanismo de relatório funciona em conjuntos de dados hierárquicos parcialmente ordenados (por exemplo, pessoa -> sessões -> eventos). Todos os dados de um objeto de nível superior (perfis individuais) residem em um único nó de processamento para obter resultados precisos. Esse particionamento permite a aplicação rápida de caminhos e segmentos complexos. Operações complexas, como criação de sessões, atribuição, persistência de atributos de dados com monitoramento de estado e opções complexas de manipulação de dados são executadas em escala com uma rápida geração de relatórios. No contexto de BI, esses tipos de operações normalmente exigem a criação de novos cubos OLAP para cada caso de uso. O mecanismo de relatórios do Customer Journey Analytics permite acesso irrestrito a todo o conjunto de dados em cada consulta, resultando em dados totalmente correlacionados sem a necessidade de formação antecipada de cubos.
+* **Aplicação rápida de segmentos e caminhos complexos**: o mecanismo de relatórios funciona em conjuntos de dados hierárquicos parcialmente ordenados (por exemplo, pessoa -> sessões -> eventos). Todos os dados de um objeto de nível superior (perfis individuais) residem em um único nó de processamento para garantir resultados precisos. Esse particionamento permite a aplicação rápida de caminhos e segmentos complexos. Operações complexas, como criação de sessões, atribuição, persistência de atributos de dados com monitoramento de estado e opções complexas de manipulação de dados são executadas em escala com uma rápida geração de relatórios. No contexto de BI, esses tipos de operações normalmente exigem a criação de novos cubos OLAP para cada caso de uso. O mecanismo de relatórios do Customer Journey Analytics permite acesso irrestrito a todo o conjunto de dados em cada consulta, resultando em dados totalmente correlacionados sem a necessidade de formação antecipada de cubos.
 
 * **Consulta eficiente de sequências de dados complexas**: uma das maiores diferenças do mecanismo de relatórios se comparado a bancos de dados SQL e NoSQL tradicionais é sua capacidade de determinar predicados com base em relações orientadas por sequências em um nível fundamental. Essas operações fundamentais de consulta podem observar o fluxo de registro, que é composto por muitas sequências intercaladas (e até aninhadas). Eles executam uma consulta em relação a todos esses fluxos de dados interligados com a eficiência de uma única operação de sequência contígua.
 
 * **Desenvolvido para responder rapidamente a consultas grandes**: o mecanismo de relatórios não possui um propósito tão geral quanto os tradicionais sistemas de “big data”. No entanto, ele foi desenvolvido especificamente para responder consultas que abrangem milhões ou até bilhões de registros (dados de evento/eventos de experiência), geralmente em menos de um segundo. Ao contrário de outros sistemas “big data”, ele não faz isso amostrando os dados ou pré-calculando as respostas para todas as perguntas que acha que você pode fazer. Em vez disso, ele é capaz de computar as respostas com rapidez suficiente para dar suporte a casos de uso de consulta interativa. Esse design específico do mecanismo de relatórios do Customer Journey Analytics facilita a disponibilização dos dados em alta velocidade para análise e exploração contínuas, permitindo assim obter insights de maneira progressiva e entender as jornadas de cliente.
 
-* **Atua como uma solução de BI headless**: você define suas dimensões, métricas, segmentos em um local e, em seguida, qualquer cliente do Customer Journey Analytics (incluindo nossa API pública do Customer Journey Analytics) pode acessar esses componentes. Isso oculta as consultas complexas dos usuários finais e garante que os resultados sejam os mesmos, independentemente do cliente de relatório ou visualização usado.
+* **Atua como uma solução de BI sem interface**: é possível definir dimensões, métricas e segmentos de um só lugar, e qualquer cliente do Customer Journey Analytics (incluindo nossa API pública do Customer Journey Analytics) pode acessar esses componentes. Isso oculta as consultas complexas dos usuários finais e garante que os resultados sejam os mesmos, independentemente do cliente de relatório ou visualização usado.
 
 ## Recursos de visualização exclusivos do Customer Journey Analytics
 
 O mecanismo de relatórios é fundamental para o Customer Journey Analytics, permitindo que você interaja progressivamente e atue em todos os dados de jornada de cliente desse mecanismo. O Customer Journey Analytics vem com um conjunto extenso de componentes que capacitam você a fazer isso visualmente e por meio de uma interface de arrastar e soltar. As ferramentas de visualização de BI permitem explorar os limites dos dados preparados por SQL (conforme definido pela equipe de TI). O Customer Journey Analytics permite detalhar e destrinchar os dados o quanto quiser, sem precisar recorrer a equipe de TI para criar mais uma visualização de SQL.
 
-&quot;Progressivamente&quot; é um conceito importante aqui: ao contrário da maioria das visualizações em ferramentas de BI, a interface visual de arrastar e soltar no Customer Journey Analytics permite detalhar continuamente seus dados para suas necessidades específicas: você pode criar consultas visuais interativamente usando métricas, dimensões, segmentos, cálculos, linhas de tempo, anotações e outros valores de análise relevantes.
+A “progressividade” é um conceito-chave aqui, pois diferentemente da maioria das visualizações nas ferramentas de BI, a interface de arrastar e soltar do Customer Journey Analytics permite detalhar seus dados continuamente para suas necessidades específicas: é possível criar consultas visuais de forma interativa usando métricas, dimensões, segmentos, cálculos, linhas de tempo, anotações e outros componentes de análise relevantes.
 
 Integrados a esses componentes de visualização, estão recursos inteligentes como:
 
@@ -74,7 +74,7 @@ Integrados a esses componentes de visualização, estão recursos inteligentes c
 
 * **Curadoria e democratização**: os painéis criados no Customer Journey Analytics podem ser:
 
-   * [Preparados](/help/analysis-workspace/curate-share/curate.md) para exploração contínua por outros indivíduos da organização,
+   * [Preparados](/help/analysis-workspace/curate-share/curate.md) para exploração contínua por outras pessoas da organização,
    * Exportados para o Excel usando o [Report Builder](/help/report-builder/rb-overview.md) (um plug-in dedicado),
    * [Compartilhados](/help/analysis-workspace/curate-share/share-projects.md) em vários formatos, incluindo [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) e através de um [aplicativo móvel dedicado](/help/mobile-app/home.md), com aqueles que estão interessados nos relatórios finais e/ou visualizações.
 

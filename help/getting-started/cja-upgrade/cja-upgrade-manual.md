@@ -1,18 +1,18 @@
 ---
-title: Instale o SDK da web da Platform com alloy.js
-description: Saiba como instalar o Platform Web SDK com alloy.js
+title: Instalar o SDK da web da Platform com alloy.js
+description: Saiba como instalar o SDK da web da Platform com alloy.js
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0e508ce7-8f3b-41f1-808c-1348942c2716
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
-# Instale o SDK da web da Platform com alloy.js {#upgrade-manual}
+# Instalar o SDK da web da Platform com alloy.js {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -34,9 +34,9 @@ ht-degree: 70%
 
 {{upgrade-note-step}}
 
-Você pode instalar manualmente o Platform Web SDK adicionando o código base diretamente a cada página em sua implementação.
+É possível instalar manualmente o SDK da web da Platform adicionando o código base diretamente em cada página na sua implementação. 
 
-1. Siga as etapas da seção [Opção 2: Instalação da versão independente pré-criada](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) em [Instalar o Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) no Guia do Web SDK.
+1. Siga as etapas da seção [Opção 2: instalar a versão independente pré-criada](https://experienceleague.adobe.com/pt-BR/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) em [Instalar o SDK da web](https://experienceleague.adobe.com/pt-BR/docs/experience-platform/edge/fundamentals/installing-the-sdk) no guia do SDK da web.
 
 {{upgrade-final-step}}
 

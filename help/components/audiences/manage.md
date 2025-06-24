@@ -5,9 +5,9 @@ exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '766'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Se você tiver acesso de [Exibição de público-alvo](/help/technotes/access-co
 
 ## Visualizar públicos-alvo na lista de públicos-alvo
 
-A lista de Públicos-alvo ➊ mostra os públicos-alvo existentes.
+A lista de públicos-alvo ➊ mostra os públicos-alvo existentes.
 
 ![Gerenciador de públicos-alvo](assets/audiences-manager.png)
 
@@ -80,9 +80,9 @@ As ações a seguir são comuns no Gerenciador de projetos agendados. Você pode
 
 | Ícone | Ação | Descrição |
 |:---:|---|---|
-| ![Rótulos](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Marque os públicos-alvo selecionados. Na caixa de diálogo **[!UICONTROL Atualizar marcas: *nome do público-alvo *]**, selecione marcas no menu suspenso ou digite uma ou mais marcas novas. Selecione **[!UICONTROL Salvar &#x200B;]** para salvar. |
+| ![Rótulos](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Marque os públicos-alvo selecionados. Na caixa de diálogo **[!UICONTROL Atualizar tags: *nome do público-alvo *]**, selecione as tags no menu suspenso ou digite uma ou mais tags. Selecione **[!UICONTROL Salvar ]** para salvar. |
 | ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Exclua os públicos-alvo selecionados. |
-| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie o público-alvo selecionado. Use a caixa de diálogo **[!UICONTROL Renomear: *nome do público-alvo *]** para renomear o público-alvo e selecione **[!UICONTROL Salvar &#x200B;]** para salvar. |
+| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie o público-alvo selecionado. Use a caixa de diálogo **[!UICONTROL Renomear: *nome do público-alvo *]** para renomear o público-alvo e selecione **[!UICONTROL Salvar ]** para salvar. |
 
 As seguintes ações estão disponíveis na barra de ação azul ao selecionar um ou mais projetos agendados.
 
@@ -94,7 +94,7 @@ As seguintes ações estão disponíveis na barra de ação azul ao selecionar u
 
 ## Filtrar a lista de públicos-alvo
 
-Você pode filtrar a [Lista de públicos-alvo](#audiences-list) usando o painel de filtro ➋. Para mostrar ou ocultar o painel de filtro, use ![Filtro](/help/assets/icons/Filter.svg).
+Você pode filtrar a [Lista de públicos-alvo](#audiences-list) usando o painel de filtros ➋. Para mostrar ou ocultar o painel de filtro, use ![Filtro](/help/assets/icons/Filter.svg).
 
 ![Gerenciador de públicos-alvo](assets/audiences-manager.png)
 

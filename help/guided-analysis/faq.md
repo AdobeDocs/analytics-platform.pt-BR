@@ -6,9 +6,9 @@ feature: Guided Analysis
 keywords: product analytics
 role: User
 source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Embora o [Analysis Workspace](../analysis-workspace/home.md) e a análise guiada
 
 * **O Analysis Workspace é uma experiência centrada na dimensão.** No geral, as tabelas consistem em linhas dimensionais, enquanto as colunas são normalmente compostas por métricas. Os segmentos podem ser aplicados em linhas e colunas para obter os dados desejados.
 
-* **A análise guiada é um evento e uma experiência centrada no usuário.** Cada análise começa selecionando eventos, então dimensões e segmentos podem ser adicionados para refinar esses dados do evento.
+* **A análise guiada é um evento e uma experiência centrada no usuário.** Cada análise se inicia por meio da seleção de eventos; em seguida, é possível adicionar dimensões e segmentos para refinar esses dados do evento.
 
 ![Visualizações do Analysis Workspace e da análise guiada](assets/structure.png){style="border:1px solid gray"}
 

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
 source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 80%
 
 Este guia de documentação técnica fornece ajuda para o Customer Journey Analytics. O Customer Journey Analytics permite migrar dados de cliente de qualquer canal escolhido (online e offline) para a Adobe Experience Platform. Em seguida, é possível analisar esses dados da mesma forma que faria usando os dados digitais existentes do Analysis Workspace.
 
-O Customer Journey Analytics permite controlar como você conecta os dados online e offline no Analysis Workspace em qualquer ID de cliente comum, permitindo que você faça atribuição, segmentos, fluxo, fallout etc. em dados de cliente.
+O Customer Journey Analytics permite controlar como você conecta os dados online e offline no Analysis Workspace a qualquer ID de cliente comum, permitindo criar atribuições, segmentos, fluxos, fallouts etc. em dados de cliente.
 
 ## Novidades
 
-Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Customer Journey Analytics. Para obter uma lista de todos os recursos, melhorias e correções, confira as [Notas de versão](../release-notes/latest.md) detalhadas. Visite a [página de atualizações da documentação](../release-notes/doc-changes.md) para se manter atualizado com as atualizações mais recentes da documentação.
+Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Customer Journey Analytics. Para obter uma lista de todos os recursos, melhorias e correções, confira as [Notas de versão](../release-notes/latest.md) detalhadas. Acesse a [página de atualizações da documentação](../release-notes/doc-changes.md) para ver as últimas atualizações da documentação.
 
 >[!BEGINTABS]
 
@@ -31,14 +31,14 @@ A Análise de conteúdo da Adobe permite investigar de maneira rápida e fácil 
 
 >[!TAB Profundidade do evento]
 
-A Profundidade do evento é uma nova dimensão padrão que fornece novas maneiras de medir e entender melhor como os eventos são posicionados nas sessões do cliente. A dimensão Profundidade do evento permite o rastreamento detalhado e a análise de onde eventos específicos ocorrem no fluxo sequencial de interações do usuário em uma sessão.
+A Profundidade do evento é uma nova dimensão padrão que fornece novas maneiras de medir e entender melhor como os eventos são posicionados nas sessões do cliente. A dimensão Profundidade do evento permite monitorar e analisar em detalhes onde eventos específicos ocorrem no fluxo sequencial de interações do usuário em uma sessão.
 
 [![imagem](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
 
 
 >[!TAB Métricas e dimensões compartilhadas]
 
-As métricas e dimensões compartilhadas fornecem um local central para gerenciar dimensões e métricas que podem ser usadas em qualquer número de visualizações de dados. Esses componentes são especialmente valiosos para organizações que usam várias visualizações de dados, especialmente se essas visualizações de dados compartilharem configurações de componentes comuns.
+As métricas e dimensões compartilhadas fornecem um local central para gerenciar dimensões e métricas que podem ser usadas em visualizações de dados. Esses componentes são especialmente valiosos para organizações que usam várias visualizações de dados, principalmente se essas visualizações de dados compartilham configurações de componentes comuns.
 
 [![imagem](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 

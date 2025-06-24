@@ -1,26 +1,26 @@
 ---
-title: Visão geral da assimilação de dados
+title: Visão geral da ingestão de dados
 description: Entenda as diferentes maneiras de assimilar dados no Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
 source-git-commit: 8071e8d5e1ab7e9cfc5037d710361a4d10285704
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '957'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # Visão geral da assimilação de dados
 
-Você tem várias opções ao assimilar dados na Customer Journey Analytics. Algumas delas presumem que você deseja mover os dados tradicionais do Adobe Analytics, outras presumem que você usa dados assimilados no Adobe Experience Platform.
+Você tem várias opções para assimilar dados no Customer Journey Analytics. Algumas delas presumem que você deseja mover os dados tradicionais do Adobe Analytics, outras presumem que você usa dados assimilados no Adobe Experience Platform.
 
 >[!IMPORTANT]
 >
 >Em todos os cenários, os dados que você deseja _usar_ no Customer Journey Analytics é _assimilado_ na Adobe Experience Platform.
 
-Consulte a arquitetura de alto nível do Customer Journey Analytics mostrada anteriormente na [Visão geral](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-overview):
+Consulte a arquitetura de alto nível do Customer Journey Analytics mostrada anteriormente na [Visão geral](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html):
 
 ![Arquitetura do Customer Journey Analytics descrita nesta seção](./assets/cja-architecture.png)
 
@@ -32,9 +32,9 @@ O conjunto de dados na arquitetura acima pode se originar de várias fontes:
 
 - dados de uma implantação atual do Adobe Analytics,
 
-- dados do rastreamento do seu site/aplicativo móvel usando o Adobe Experience Platform Web/Mobile SDK,
+- dados do rastreamento do site/aplicativo móvel usando o SDK da web/móvel da Adobe Experience Platform,
 
-- dados do rastreamento de um aplicativo de desktop, jogo de console, decodificador de sinais ou dispositivo IoT usando a API do Adobe Experience Platform Edge Network Server ou
+- dados do rastreamento de um aplicativo de desktop, jogo de console, decodificador ou dispositivo IoT usando a API de servidor da Egde Network da Adobe Experience Platform ou
 
 - dados provenientes de um provedor de dados de terceiros para o qual a Adobe fornece um conector de origem.
 
@@ -42,17 +42,17 @@ E você pode ter muitos desses conjuntos de dados.
 
 Esta seção da documentação fornece guias de início rápido para vários cenários.
 
-## Priorização e latência de assimilação
+## Priorização de assimilação e latência
 
-Você pode assimilar os dados do evento na Customer Journey Analytics em 90 minutos (SLT), independentemente de os dados terem 24 horas, 48 horas ou 7 dias.
+Agora é possível assimilar dados de evento no Customer Journey Analytics em 90 minutos (SLT), não importa se os dados tenham sido gerados há 24 horas, 48 horas ou 7 dias. 
 
-Observe que esse recurso é diferente com base no pacote SKU que sua empresa adquiriu:
+Observe que esse recurso difere com base no pacote SKU que sua empresa adquiriu:
 
-- Básica de assimilação de prioridade: dados com 24 horas no processamento SLT de 90 minutos (disponível para **CJA Foundation** e **CJA Select**)
+- Assimilação de prioridade básica: dados gerados há 24 horas no processamento SLT de 90 minutos (disponível para o **CJA Foundation** e o **CJA Select**)
 
-- Assimilação de prioridade Intermediária: dados de 72 horas no processamento SLT de 90 minutos (disponível para o **CJA Prime**)
+- Assimilação de prioridade intermediária: dados gerados há 72 horas no processamento SLT de 90 minutos (disponível para o **CJA Prime**)
 
-- Assimilação de prioridade Avançada: dados com 1 semana de duração dentro do processamento SLT de 90 minutos (disponível para o **CJA Ultimate**)
+- Assimilação de prioridade avançada: dados gerados há 1 semana no processamento SLT de 90 minutos (disponível para o **CJA Ultimate**)
 
 ## Assimilar e usar dados do Adobe Analytics tradicional
 
@@ -63,23 +63,23 @@ Consulte [Assimilar e usar dados do Adobe Analytics tradicional](./analytics.md)
 
 ## Assimilar e usar dados por meio da Edge Network
 
-### Uso do Adobe Experience Platform Web SDK
+### Uso do SDK da web da Adobe Experience Platform
 
-Você deseja analisar seu site com a tecnologia da Adobe, migrando potencialmente de outra solução ou começar a rastrear o comportamento de sua pessoa. Você deseja seguir as práticas recomendadas da Adobe para implementação, que usam os SDKs da Adobe Experience Platform e a Rede de borda, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
+Você deseja analisar seu site com a tecnologia da Adobe e está considerando migrar de outra solução ou começar a monitorar o comportamento das pessoas. Você deseja seguir as práticas recomendadas da Adobe para implementação, que usam os SDKs da Adobe Experience Platform e a Rede de borda, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
 
-Consulte [Assimilar e usar dados por meio do Adobe Experience Platform Web SDK](./aepwebsdk.md) para obter mais informações.
+Consulte [Assimilar e usar dados por meio do SDK da web da Adobe Experience Platform](./aepwebsdk.md) para obter mais informações.
 
-### Uso do Adobe Experience Platform Mobile SDK
+### Uso do SDK móvel da Adobe Experience Platform
 
-Você deseja analisar seu aplicativo móvel com a tecnologia Adobe, migrando potencialmente de outra solução ou começando a rastrear o comportamento de uma pessoa no aplicativo do zero. Você deseja seguir as práticas recomendadas da Adobe para implementação, que usam os SDKs da Adobe Experience Platform e a Rede de borda, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
+Você deseja analisar seu aplicativo móvel com a tecnologia da Adobe e está considerando migrar de outra solução ou começar a monitorar o comportamento de uma pessoa no aplicativo do zero. Você deseja seguir as práticas recomendadas da Adobe para implementação, que usam os SDKs da Adobe Experience Platform e a Rede de borda, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
 
-Consulte [Assimilar e usar dados por meio do Adobe Experience Platform Mobile SDK](./aepmobilesdk.md) para obter mais informações.
+Consulte [Assimilar e usar dados por meio do SDK móvel da Adobe Experience Platform](./aepmobilesdk.md) para obter mais informações.
 
-### Uso da API do Adobe Experience Platform Edge Network Server
+### Uso da API de servidor da Edge Network da Adobe Experience Platform
 
-Você deseja analisar seu aplicativo de desktop, o jogo conforme é reproduzido em um console de jogos, o uso de um aplicativo de streaming de vídeo em um decodificador de sinais ou seu dispositivo IoT com tecnologia Adobe. Migração potencial de outra solução ou início do rastreamento do comportamento de uma pessoa nesses dispositivos do zero. Você deseja seguir as práticas recomendadas da Adobe para implementação, que é o uso das APIs de servidor do Adobe Experience Platform Edge Network e do Edge Network, para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
+Você deseja analisar seu aplicativo de desktop, um jogo de um console de videogame, o uso de um aplicativo de transmissão de vídeo em um decodificador ou seu dispositivo IoT com tecnologia da Adobe. Está considerando migrar de outra solução ou começar a rastrear o comportamento de uma pessoa nesses dispositivos do zero. Você deseja seguir as práticas recomendadas da Adobe para implementação, que envolve o uso de APIs de servidor da Edge Network da Adobe Experience Platform e a Edge Network para assimilar os dados. Em seguida, você pode usar, combinar e analisar os dados assimilados com dados de outros canais e fontes de dados no Customer Journey Analytics.
 
-Consulte [Assimilar e usar dados por meio da API do Adobe Experience Platform Edge Network Server](./serverapi.md) para obter mais informações.
+Consulte [Assimilar e usar dados por meio da API de servidor da Edge Network da Adobe Experience Platform](./serverapi.md) para obter mais informações.
 
 ## Assimilar e usar dados em lote
 
@@ -101,5 +101,5 @@ Consulte [Assimilar e usar dados usando conectores de origem](./sources.md) para
 
 >[!MORELIKETHIS]
 >
->Blog: [Análise detalhada do processamento e da assimilação de dados no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=pt)
+>Blog: [Análise detalhada do processamento e da assimilação de dados no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

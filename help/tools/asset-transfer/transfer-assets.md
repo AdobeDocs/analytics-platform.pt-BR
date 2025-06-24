@@ -5,25 +5,25 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
 source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '831'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Transferir ativos
 
-A ferramenta Transferência de ativos permite transferir a propriedade dos ativos para outros usuários. O Assets pode incluir componentes como projetos, segmentos, intervalos de datas, métricas calculadas, anotações, alertas e projetos agendados.
+A ferramenta Transferência de ativos permite transferir a propriedade dos ativos para outros usuários. Os ativos podem incluir componentes como projetos, segmentos, intervalos de datas, métricas calculadas, anotações, alertas e projetos agendados.
 
-Muitas vezes, o Assets é vinculado a um proprietário individual e, em alguns casos, como segmentos e métricas calculadas, não pode ser editado ou compartilhado nem mesmo pelos administradores. Quando os usuários saem da organização ou sua função muda, pode ser necessário transferir a propriedade desses ativos para outros usuários para garantir a continuidade e o acesso apropriado.
+Os ativos geralmente estão vinculados a um proprietário individual e, em alguns casos, como no de segmentos e métricas calculadas, não podem ser editados ou compartilhados nem mesmo por admins. Quando os usuários saem da organização ou sua função muda, pode ser necessário transferir a propriedade desses ativos para outros usuários para garantir a continuidade e o acesso apropriado.
 
 ## Permissões
 
-A transferência de ativos exige a permissão de Administrador de produto do Customer Journey Analytics.
+A transferência de ativos exige a permissão de admin de produto do Customer Journey Analytics.
 
 ## Transferir ativos
 
-1. No CJA, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Transferência de ativos]**.
+1. No CJA, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Transferência de ativos]**.
 
    ![Item de menu de transferência de ativos](/help/tools/asset-transfer/assets/asset-transfer.png)
 
@@ -31,7 +31,7 @@ A transferência de ativos exige a permissão de Administrador de produto do Cus
 
    >[!IMPORTANT]
    >
-   >Você só pode fazer uma transferência 1:1 de um usuário para outro. Não há suporte para transferências um para muitos ou muitos para um.
+   >Só é permitido fazer uma transferência 1:1, de um usuário para outro. Não há suporte para transferências “um para muitos” ou “muitos para um”.
 
 
 1. Depois de selecionar um usuário, a opção Transferir ativos é exibida na parte inferior da tela.
@@ -46,14 +46,14 @@ A transferência de ativos exige a permissão de Administrador de produto do Cus
 
    >[!NOTE]
    >
-   >A transferência de ativos de um administrador para um não administrador não atualiza o recipient para um administrador.
+   >A transferência de ativos de um usuário admin para um não admin não atualiza o destinatário para um usuário admin.
 
 
    >[!NOTE]
    >
-   >    Ao transferir ativos que fazem referência a outros componentes (por exemplo, projetos que fazem referência a outros segmentos e métricas calculadas), os componentes não pertencentes ao proprietário atual do projeto só serão compartilhados com o recipient. A propriedade de todos os outros componentes será transferida para o recipient.
+   >    Ao transferir ativos que fazem referência a outros componentes (por exemplo, projetos que fazem referência a outros segmentos e métricas calculadas), os componentes que não pertencem ao proprietário atual do projeto serão compartilhados somente com o destinatário. A propriedade de todos os outros componentes será transferida para o destinatário.
 
-1. Para selecionar _todos_ ativos em uma pasta, marque a caixa ao lado de **[!UICONTROL Nome]** na parte superior da tabela.
+1. Para selecionar _todos_ os ativos em uma pasta, marque a caixa ao lado de **[!UICONTROL Nome]** na parte superior da tabela.
 
    ![selecione os ativos a serem transferidos](/help/tools/asset-transfer/assets/select-assets.png)
 
@@ -65,49 +65,49 @@ A transferência de ativos exige a permissão de Administrador de produto do Cus
    >
    >Não feche a tela durante a transferência para evitar a interrupção do processo. Isso garante uma experiência de transferência perfeita.
 
-## Transferir resultados
+## Resultados da transferência
 
 Há três resultados possíveis para uma transferência:
 
-- **Transferência bem-sucedida**: &quot;Assets transferido com êxito.&quot;
+- **Transferência bem-sucedida**: “Ativos transferidos com sucesso.”
 
-- **Sucesso parcial**: &quot;Alguns ativos foram transferidos com êxito.&quot;
+- **Sucesso parcial**: “Alguns ativos foram transferidos com sucesso.”
 
-- **Falha na transferência**: &quot;Falha ao transferir ativos. Tente novamente.&quot;
+- **Falha na transferência**: “Falha ao transferir ativos. Tente novamente.”
 
-### Possíveis motivos de falha na transferência de ativos
+### Possíveis motivos para a falha na transferência de ativos
 
 - Serviços dependentes que causam falhas: a transferência de ativos interage com um serviço diferente para cada tipo de componente (por exemplo, problemas de rede, problemas de serviço downstream), portanto, isso pode causar uma falha parcial ou completa ou falhas intermitentes.
 
-- Componente ausente ou transferido por outro administrador: um componente foi excluído por outro usuário ou transferido por outro administrador para outra pessoa enquanto um trabalho de transferência de ativos ainda estava em andamento.
+- Componente ausente ou transferido por outro(a) admin: um componente foi excluído por outro usuário ou transferido por outro(a) admin para outra pessoa enquanto um trabalho de transferência de ativos ainda estava em andamento.
 
-- O corpo POST da API não é preenchido corretamente: um componente pode não ser enviado no corpo POST da API quando vários tipos de componentes são selecionados.
+- O corpo da API POST não é preenchido corretamente: um componente pode não ser enviado no corpo da API POST quando vários tipos de componentes são selecionados.
 
-- O usuário não existe: o usuário foi excluído no meio da transferência ou é inválido por outro motivo. Se o usuário for inválido antes do início da transferência, a ferramenta capturará isso e não processará o trabalho. Se o usuário foi excluído no meio da transferência, isso pode causar falhas parciais.
+- O usuário não existe: o usuário foi excluído durante a transferência ou se tornou inválido por outro motivo. Se o usuário se tornar inválido antes do início da transferência, a ferramenta detectará essa informação e não processará o trabalho. Se o usuário foi excluído durante a transferência, isso poderá causar falhas parciais.
 
-- Falha de conexão/rede: a conexão morre durante a transferência. Quaisquer lotes de trabalhos de transferência que já foram transmitidos ao backend ainda serão processados até a conclusão, mas o usuário não verá a mensagem do resultado da transferência com um resumo do que foi bem-sucedido e do que falhou.
+- Falha de conexão/rede: a conexão cai no meio da transferência. Todos os lotes de trabalhos de transferência que já foram transmitidos para o back-end ainda serão processados até a conclusão, mas o usuário não verá a mensagem de resultado da transferência com um resumo das tarefas bem-sucedidas e das que falharam.
 
-- Transferência intermediária fechada da guia do navegador: para transferências muito grandes, se a guia do navegador for fechada ou a página for retirada da transferência intermediária, somente as solicitações de rede feitas antes da navegação de fechamento/página da guia ocorrerão transferirão os ativos corretamente. Se o usuário navegar de volta para a página, não receberá a mensagem de status de resposta indicando quais ativos foram transferidos e quais não.
+- Guia do navegador fechada durante a transferência: no caso de transferências muito grandes, se a guia do navegador fechar ou a navegação pela página for interrompida durante a transferência, somente as solicitações de rede feitas antes disso ocorrer transferirão corretamente os ativos. Se o usuário navegar de volta para a página, a mensagem de status de resposta que indica quais ativos foram transferidos e quais não foram não será exibida.
 
 ## Transferir ativos durante a atualização do Adobe Analytics para o Customer Journey Analytics
 
-Um dos principais casos de uso para a transferência de ativos é durante a atualização do Adobe Analytics para o Customer Journey Analytics.
+Um dos principais casos de uso para transferência de ativos é durante a atualização do Adobe Analytics para o Customer Journey Analytics.
 
-O recurso [Migração de componentes](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/component-migration/component-migration) do Adobe Analytics permite migrar projetos de propriedade do administrador para outros administradores. Todos os componentes que compõem esses projetos são recriados no Customer Journey Analytics e o administrador do recipient é proprietário de todos esses componentes, independentemente de quem os criou.
+O recurso [Migração de componentes](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/component-migration/component-migration) do Adobe Analytics permite migrar projetos de propriedade do(a) admin para outros(as) admins. Todos os componentes que compõem esses projetos são recriados no Customer Journey Analytics e o(a) admin destinatário(a) tem a propriedade de todos esses componentes, independentemente de quem os criou.
 
-Essa ferramenta de Transferência de ativos permite que os administradores reatribuam componentes aos proprietários legítimos, sejam eles administradores ou não.
+Essa ferramenta de transferência de ativos permite que admins reatribuam componentes aos proprietários legítimos, sejam admins ou não.
 
 >[!IMPORTANT]
 >
->Embora seja possível transferir componentes usando essa ferramenta, você, como administrador, ainda precisará garantir que o recipient tenha acesso às visualizações de dados necessárias para exibir/usar esses componentes. Você pode exibir e atribuir permissões no [Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html).
+>Embora seja possível transferir componentes usando essa ferramenta, como admin você ainda precisará garantir que o destinatário tenha acesso às visualizações de dados necessárias para exibir/usar esses componentes. Você pode exibir e atribuir permissões no [Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html).
 
 ## Exportar para CSV
 
-A opção **[!UICONTROL Exportar para CSV]** permite que os administradores baixem apenas uma lista de usuários exibida para um arquivo .csv. Isso não permite exportar uma lista de ativos transferidos para um arquivo .csv.
+A opção **[!UICONTROL Exportar para CSV]** permite que admins baixem apenas uma lista de usuários exibida para um arquivo .csv. Não é possível exportar uma lista de ativos transferidos para um arquivo .csv.
 
 ## Usuários inativos
 
-Todos os usuários excluídos anteriormente aparecem abaixo de uma entrada &quot;Usuários inativos&quot;, juntamente com todos os seus componentes órfãos. Esses componentes podem ser transferidos para um novo recipient. Esse recurso estará disponível em janeiro.
+Todos os usuários excluídos anteriormente aparecem em uma lista de “Usuários inativos”, junto com todos os seus componentes órfãos. Esses componentes podem ser transferidos para um novo destinatário. Esse recurso estará disponível em janeiro.
 
-![Usuários inativos aparecendo na interface do usuário Transferir ativos](assets/inactive-users.png)
+![Usuários inativos aparecendo na interface Transferir ativos](assets/inactive-users.png)
 
