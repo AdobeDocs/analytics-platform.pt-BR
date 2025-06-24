@@ -5,13 +5,13 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: e653cbe7c1955d04830b9ed9ff6399973036ab64
+exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
+source-git-commit: 5a0cb6fa221282b70df5efb58362855ff58f76b8
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 38%
 
 ---
-
 
 # Agendar pastas de trabalho exportando para destinos na nuvem
 
@@ -35,7 +35,7 @@ Use o processo a seguir ao exportar pastas de trabalho do Report Builder para a 
 
 ![O processo de exportação descrito nas etapas 1 a 4.](assets/report-builder-export-process.png)
 
-## Exportar um relatório do Report Builder {#export-from-report-builder}
+## Exportar um relatório do Report Builder
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Para exportar relatórios do Report Builder:
 
 Após os dados serem exportados do Analysis Workspace, você poderá editar, reexportar, duplicar, marcar ou excluir exportações existentes, conforme descrito em [Gerenciar exportações](/help/components/exports/manage-exports.md).
 
-## Vantagens de exportar para a nuvem {#advantages}
+## Vantagens de exportar para a nuvem
 
 A exportação de dados do Customer Journey Analytics para a nuvem permite:
 
@@ -119,6 +119,3 @@ Verifique se os blocos de dados, o ambiente e as permissões atendem aos seguint
 * **Blocos de dados:** Todos os blocos de dados devem incluir pelo menos um componente para uma coluna, linha ou valor.
 
 * **Ambiente:** verifique se os [Endereços IP](/help/technotes/ip-addresses.md) e [Domínios](/help/technotes/domains.md) usados pelo Customer Journey Analytics são permitidos pelo firewall da organização.
-
-
-
