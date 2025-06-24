@@ -7,7 +7,7 @@ role: User
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '2129'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Para criar um painel:
 
 ## Visualização de dados
 
-Cada painel está associado a uma [visualização de dados](/help/data-views/data-views.md), identificada por ![Dados](/help/assets/icons/Data.svg) **[!UICONTROL *nome da visualização de dados *]**&#x200B;no menu suspenso na parte superior direita do painel.
+Cada painel é associado a uma [visualização de dados](/help/data-views/data-views.md), identificada pelo ![Dados](/help/assets/icons/Data.svg) **[!UICONTROL *nome da visualização de dados *]** no menu suspenso no canto superior direito do painel.
 
 Ao criar um projeto em branco no espaço de trabalho, a visualização de dados padrão do painel inicial é a visualização de dados na qual você trabalhou pela última vez no Customer Journey Analytics.
 
@@ -155,7 +155,7 @@ Para obter mais informações, consulte [Segmentos rápidos](/help/components/se
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/30816?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -200,7 +200,7 @@ Um segmento suspenso fornece as seguintes opções no menu de contexto:
 
 #### Segmentos suspensos dinâmicos
 
-Os segmentos suspensos dinâmicos permitem determinar os valores disponíveis com base nos dados dentro do intervalo de relatórios do painel e nos valores de outros segmentos suspensos. Por exemplo, você pode criar dois menus suspensos dinâmicos usando uma dimensão Países e uma dimensão Cidades. Quando você seleciona um país no menu suspenso **[!UICONTROL Países]**, o menu suspenso **[!UICONTROL Cidades]** se ajusta dinamicamente para mostrar apenas as cidades desse país.
+Os segmentos suspensos dinâmicos permitem determinar os valores disponíveis com base nos dados dentro do intervalo de relatórios do painel e nos valores de outros segmentos suspensos. Por exemplo, você pode criar dois menus suspensos dinâmicos usando uma dimensão Países e uma dimensão Cidades. Ao selecionar um país no menu suspenso **[!UICONTROL Países]**, o menu suspenso **[!UICONTROL Cidades]** se ajusta dinamicamente para mostrar apenas cidades daquele país.
 
 Esse mesmo conceito se aplica a todas as dimensões: somente os itens de dimensão que aparecem dentro do intervalo de datas do painel e dos segmentos selecionados são visíveis. Os itens de dimensão selecionados em segmentos suspensos estáticos afetam os valores disponíveis nos segmentos suspensos dinâmicos. No entanto, o inverso não é verdadeiro: os itens de dimensão selecionados em segmentos suspensos dinâmicos não afetam os valores disponíveis nos segmentos suspensos estáticos.
 

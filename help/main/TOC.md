@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 995a2a9250f4ef929890b781b8d55263a04d38a3
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 93%
       + [Comparar com soluções de BI](../getting-started/cja-vs-bi.md)
       + [Assistente de IA](../ai-assistant.md)
       + [Data Insights Agent](../data-analysis-ai.md)
-   + Customer Journey Analytics B2B edition {#cja-b2b}
+   + Customer Journey Analytics B2B Edition {#cja-b2b}
       + [Visão geral](/help/getting-started/cja-b2b-edition.md)
       + [Conceitos e recursos B2B](/help/getting-started/cja-b2b-concepts-features.md)
       + [Guia de início rápido](/help/getting-started/cja-b2b-quick-start-guide.md)
@@ -210,7 +210,7 @@ ht-degree: 93%
          + [Visão geral](../analysis-workspace/visualizations/c-flow/flow.md)
          + [Configurar](../analysis-workspace/visualizations/c-flow/create-flow.md)
          + [Fluxos interdimensionais](../analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md)
-      + Tela de jornada {#journey-canvas}
+      + Tela da jornada {#journey-canvas}
          + [Visão geral](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
          + [Configurar](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
          + [Solução de problemas](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
@@ -320,7 +320,7 @@ ht-degree: 93%
       + [Criar e publicar públicos-alvo](../components/audiences/publish.md)
       + [Gerenciar públicos-alvo](../components/audiences/manage.md)
    + Dimensões {#dimensions}
-      + [Visão geral das dimensões](../components/dimensions/overview.md)
+      + [Visão geral de dimensões](../components/dimensions/overview.md)
       + [Visualizar dimensões](../components/dimensions/view-dimensions.md)
       + [Analisar dimensões](../components/dimensions/t-breakdown-fa.md)
       + [Dimensões de separação de tempo](../components/dimensions/time-parting-dimensions.md)
@@ -392,7 +392,7 @@ ht-degree: 93%
    + [Visão geral](../report-builder/rb-overview.md)
    + [Configuração do Report Builder](../report-builder/report-builder-setup.md)
    + [Criar um bloco de dados](../report-builder/create-a-data-block.md)
-   + [hub do Report Builder](../report-builder/report-builder-hub.md)
+   + [Central do Report Builder](../report-builder/report-builder-hub.md)
    + [Selecionar uma visualização de dados](../report-builder/select-data-view.md)
    + [Selecionar um intervalo de datas](../report-builder/select-date-range.md)
    + [Trabalhar com segmentos](../report-builder/work-with-filters.md)
@@ -438,13 +438,13 @@ ht-degree: 93%
       + [Usar dimensões do canal de marketing](../use-cases/aa-data/marketing-channels.md)
       + [Combinar conjuntos de relatórios com esquemas diferentes](../use-cases/aa-data/combine-report-suites.md)
    + B2B {#b2b}
-      + [Um exemplo de projeto B2B com base em pessoas](../use-cases/b2b/example.md)
-      + B2B edition {#b2b-edition}
+      + [Um exemplo de projeto B2B baseado em pessoas](../use-cases/b2b/example.md)
+      + B2B Edition {#b2b-edition}
          + [Visão geral dos casos de uso](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
          + [Configuração](/help/use-cases/b2b/b2b-edition/setup.md)
          + [Otimizar o marketing da conta](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
-         + [Aumentar contas principais](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
-         + [Criar valor do produto](/help/use-cases/b2b/b2b-edition/build-product-value.md)
+         + [Desenvolvimento das contas principais](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
+         + [Agregar valor ao produto](/help/use-cases/b2b/b2b-edition/build-product-value.md)
    + Dados complexos {#complex-data}
       + [Uso de matrizes de objetos](../use-cases/object-arrays.md)
    + Dados entre canais {#cross-channel}

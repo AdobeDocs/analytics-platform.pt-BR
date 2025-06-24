@@ -8,7 +8,7 @@ exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1077'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Para tornar a experiência o mais suave possível para os usuários durante a tr
 
 2. Documentando suas definições, e
 
-3. Identificando quais campos serão necessários nos dados para replicá-los no Customer Journey Analytics como [Segmentos](/help/components/segments/seg-overview.md) e [Métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md).
+3. Identificando quais campos serão exigidos nos dados para replicá-los no Customer Journey Analytics como [Segmentos](/help/components/segments/seg-overview.md) e [Métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md).
 
 Estes são alguns vídeos para orientá-lo:
 

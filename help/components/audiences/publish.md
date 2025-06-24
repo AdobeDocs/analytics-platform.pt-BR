@@ -6,8 +6,8 @@ feature: Audiences
 role: User
 source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '2368'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    | --- | --- |
    | Na interface de **[!UICONTROL Públicos-alvo]** | Selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]** no menu principal do Customer Journey Analytics. A interface Públicos-alvo é exibida. Selecione **[!UICONTROL Criar público-alvo]** para abrir o [!UICONTROL Construtor de públicos-alvo]. |
    | De uma visualização no Analysis Workspace | Muitas visualizações no Analysis Workspace permitem criar um público-alvo usando o menu de contexto. Por exemplo, você pode selecionar **[!UICONTROL Criar público-alvo]** no menu de contexto de um item em uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou em um nó na [Tela de jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>Usar esse método preenche previamente o segmento no construtor com a dimensão ou item de dimensão que você selecionou.</p><p>As visualizações a seguir permitem criar um público-alvo usando o menu do botão direito do mouse:</p><ul><li>[Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Observação:** públicos-alvo não podem incluir métricas calculadas. Se você tentar criar um público-alvo que contenha uma métrica calculada, ela não será incluída na definição do público-alvo.</p> |
-   | Na interface de criação e edição de segmentos | Marque a caixa que diz **[!UICONTROL Criar um público-alvo a partir deste segmento]**. Usar esse método preenche previamente o segmento. Consulte [Criar segmentos](/help/components/segments/seg-create.md) para obter mais informações. |
+   | Na interface de criação e edição de segmentos | Marque a caixa que diz **[!UICONTROL Criar um público-alvo a partir deste segmento]**. Usar esse método preenche previamente o segmento. Consulte [Criar segmentos](/help/components/segments/seg-create.md) para obter mais informações. |
 
    {style="table-layout:auto"}
 
@@ -122,13 +122,13 @@ O painel Visualização de dados fornece as seguintes informações.
 
 ## O que acontece depois que um público-alvo é criado e publicado? {#after-audience-created}
 
-Depois de criar e publicar um público no Customer Journey Analytics, o público-alvo fica disponível no Experience Platform e pode ser visualizado no [Portal de público-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/ui/audience-portal). Com o público-alvo disponível no Experience Platform, ele pode ser usado em outros aplicativos da Experience Platform, como o Adobe Journey Optimizer.
+Depois de criar e publicar um público-alvo no Customer Journey Analytics, ele fica disponível na Experience Platform e pode ser visualizado no [Portal de públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/ui/audience-portal). Com o público-alvo disponível na Experience Platform, ele pode ser usado em outros aplicativos da Experience Platform, como o Adobe Journey Optimizer.
 
-Um segmento de streaming da Adobe Experience Platform só será criado se sua organização estiver configurada para a segmentação de streaming.
+Um segmento de transmissão da Adobe Experience Platform só será criado se sua organização estiver configurada para a segmentação de transmissão.
 
-Leve em consideração o seguinte ao trabalhar com públicos publicados do Customer Journey Analytics para a Experience Platform:
+Leve em consideração o seguinte ao trabalhar com públicos-alvo do Customer Journey Analytics publicados na Experience Platform:
 
-* O público-alvo no Experience Platform compartilha o mesmo nome e descrição do público-alvo do Customer Journey Analytics. O nome é anexado à ID de público-alvo do Customer Journey Analytics para garantir que o público-alvo seja único.
+* O público-alvo na Experience Platform compartilha o mesmo nome e descrição do público-alvo do Customer Journey Analytics. O nome é anexado à ID de público-alvo do Customer Journey Analytics para garantir que o público-alvo seja único.
 * Quaisquer alterações feitas no nome ou na descrição do público-alvo no Customer Journey Analytics são refletidas na Experience Platform.
 * Se um público-alvo for excluído no Customer Journey Analytics, ele continuará disponível na Experience Platform até que a associação de perfil do público-alvo expire. A associação de perfil expira após 420 dias para públicos-alvo únicos e após 16 dias para públicos-alvo recorrentes.
 
@@ -153,7 +153,7 @@ Em vários pontos antes, durante e após a publicação do público-alvo, podem 
 
 O Customer Journey Analytics coleta todas as combinações de namespace e ID do público-alvo publicado e as transmite para a Real-Time Customer Data Platform. O Customer Journey Analytics envia o público-alvo para a Experience Platform com a identidade principal definida, de acordo com o que foi selecionado como a [!UICONTROL ID de pessoa] quando a conexão foi configurada.
 
-Em seguida, a Real-Time Customer Data Platform examina cada combinação de namespace/ID e procura por um perfil do qual possam fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ela adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação de segmento. Por exemplo, <user@adobe.com> pode ser direcionado em todos os seus dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
+Em seguida, a Real-Time Customer Data Platform examina cada combinação de namespace/ID e procura por um perfil do qual possam fazer parte. Um perfil é basicamente um cluster de namespaces, IDs e dispositivos vinculados. Se encontrar um perfil, ela adicionará o namespace e a ID às outras IDs neste perfil como um atributo de associação a um segmento. Por exemplo, <user@adobe.com> pode ser direcionado em todos os seus dispositivos e canais. Se um perfil não for encontrado, um novo perfil será criado.
 
 Para exibir os públicos-alvo do Customer Journey Analytics na Platform:
 
