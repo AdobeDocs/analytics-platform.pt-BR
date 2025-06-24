@@ -6,10 +6,10 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: a2aea32eb14462ee2041405394afa6bd0c484e8d
+source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 98%
+source-wordcount: '472'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,8 @@ ht-degree: 98%
 
 O Adobe Analytics começou como uma ferramenta de análise digital e da web para profissionais de marketing, e o Customer Journey Analytics ampliou o escopo para incluir dados de vários canais, dados offline e dados de várias plataformas.  Ambas as ferramentas ajudam as empresas que utilizam o modelo B2C (empresa para consumidor) a analisar e otimizar suas campanhas de marketing e experiências do cliente. Isso também aumentou o foco em **relatórios e análises baseados em pessoas**: entenda a jornada do cliente, onde “o cliente” é uma pessoa que interage com sua marca em vários canais.
 
-O Customer Journey Analytics B2B Edition adiciona **relatórios e análises baseados em conta**. Nas vendas com o modelo B2B (empresa para empresa), a jornada de compra envolve várias partes, pontos de contato online e offline e estágios essenciais antes de fechar um acordo. As empresas B2B precisam rastrear todas essas interações em uma visualização de jornada unificada para analisar e otimizar as campanhas de marketing e as experiências de conta com eficácia.
+![Imagem herói B2B](assets/b2b-image.png)
+O Customer Journey Analytics B2B edition adiciona **análise e relatório baseados em conta**. Nas vendas com o modelo B2B (empresa para empresa), a jornada de compra envolve várias partes, pontos de contato online e offline e estágios essenciais antes de fechar um acordo. As empresas B2B precisam rastrear todas essas interações em uma visualização de jornada unificada para analisar e otimizar as campanhas de marketing e as experiências de conta com eficácia.
 
 As características típicas das vendas B2B são:
 
@@ -43,7 +44,7 @@ O Customer Journey Analytics B2B Edition ajuda as empresas B2B a alinhar suas eq
 >[!MORELIKETHIS]
 >
 >[Conceitos e recursos B2B](cja-b2b-concepts-features.md)
->&#x200B;>[Guia de início rápido B2B](cja-b2b-quick-start-guide.md)
->&#x200B;>[Guia de transição B2B](cja-b2b-transition.md)
->&#x200B;>[Casos de uso B2B](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+>>[Guia de início rápido B2B](cja-b2b-quick-start-guide.md)
+>>[Guia de transição B2B](cja-b2b-transition.md)
+>>[Casos de uso B2B](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >

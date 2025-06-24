@@ -4,10 +4,10 @@ description: Criar um intervalo de datas para uso em relatórios.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Qualquer pessoa pode criar um intervalo de datas personalizado. Um intervalo de 
 * **E**: em um projeto do espaço de trabalho, no painel Componentes à esquerda, selecione ![Adicionar](/help/assets/icons/Add.svg) em ![Calendário](/help/assets/icons/Calendar.svg) **Intervalos de datas**.
 * **F**: em uma visualização compatível, como uma visualização em linha, no menu de contexto de um ponto de dados, selecione **[!UICONTROL Anotar seleção]**.
 
-Para definir a anotação, use o [[!UICONTROL Criador de intervalos de datas]](#annotation-builder):
+Para definir a anotação, use o [[!UICONTROL Criador de intervalo de datas]](#annotation-builder).
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
