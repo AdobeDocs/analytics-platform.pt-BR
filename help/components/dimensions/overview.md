@@ -48,6 +48,6 @@ Admins do Customer Journey Analytics podem adicionar descrições para dimensõe
 
 >[!MORELIKETHIS]
 >
->[Descubra insights do cliente mais profundos com o recurso Profundidade do evento](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>[Descubra insights do cliente mais profundos com o recurso Profundidade do evento](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=pt#M576)
 >
 
