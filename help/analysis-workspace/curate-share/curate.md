@@ -17,7 +17,7 @@ ht-degree: 55%
 A preparação permite limitar os componentes (dimensões, métricas, segmentos, intervalos de datas) antes de compartilhar um projeto. Quando um recipient abre o projeto, ele vê um conjunto limitado de componentes que você preparou para eles. A preparação é uma etapa opcional, mas recomendada, antes de compartilhar um projeto.
 
 >[!NOTE]
-> Os perfis de produto são o principal mecanismo que controla os componentes que um usuário pode ver. Eles são gerenciados por meio do [Admin Console da Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-tool-experience-cloud). A preparação é um segmento secundário.
+> Os perfis de produto são o principal mecanismo que controla os componentes que um usuário pode ver. Eles são gerenciados por meio do [Admin Console da Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-tool-experience-cloud). A preparação é um segmento secundário.
 
 ## Aplicar preparação de projeto
 
