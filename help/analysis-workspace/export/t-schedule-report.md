@@ -6,10 +6,10 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
-source-wordcount: '1034'
-ht-degree: 100%
+source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 58%
 
 ---
 
@@ -21,69 +21,52 @@ As tags aplicadas ao projeto são automaticamente aplicadas à exportação.
 
 Outros métodos de exportação de dados do Customer Journey Analytics também estão disponíveis, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
 
-## Enviar arquivo agora {#now}
+![Enviar arquivo](assets/send-file.png)
 
-Para enviar um arquivo imediatamente aos destinatários por email:
+## Enviar arquivo
 
-1. Clique em **[!UICONTROL Compartilhar] > [!UICONTROL Exportar arquivo]**.
+Para enviar um arquivo aos recipients por email:
+
+1. Selecione **[!UICONTROL Compartilhar] > [!UICONTROL Enviar arquivo]**.
 1. Especifique o tipo de arquivo:
    * [!UICONTROL **CSV**]: escolha essa opção se desejar dados de texto simples.
    * [!UICONTROL **PDF**]: escolha essa opção se desejar que o arquivo baixado contenha todas as tabelas e visualizações exibidas (visíveis) no projeto.
-1. (Opcional) Adicione uma descrição que será incluída no email para explicar o arquivo que está sendo recebido.
-1. Adicione recipients ou grupos. Endereços de email também podem ser inseridos.
-1. (Somente para clientes do Healthcare Shield) Forneça uma senha. Consulte a seção Proteger com senha um relatório agendado.
-1. (Opcional) Clique em **[!UICONTROL Mostrar opções de agendamento]** para especificar um agendamento de delivery.
-1. Clique em **[!UICONTROL Enviar agora]**.
+1. (Opcional) Use **[!UICONTROL Descrição]** para adicionar uma descrição a ser incluída no email.
+1. Adicione recipients ou grupos. Você também pode inserir endereços de email.
+1. (Somente para clientes do Healthcare Shield) Forneça uma senha para [proteger com senha um relatório agendado](#password-protect-a-new-scheduled-project).
+1. (Opcional) Selecione **[!UICONTROL Mostrar opções de agendamento]** para [agendar uma exportação de arquivo](#schedule-file-export).
+1. Clique em **[!UICONTROL Enviar Agora]**. Selecione **[!UICONTROL Cancelar]** para cancelar.
 
-![A janela Enviar arquivo e o botão Enviar agora.](assets/send-file-no-scheduling-options.JPG)
 
-## Enviar arquivo agendado {#schedule}
+## Programar exportação de arquivo {#schedule}
 
-Para enviar um arquivo por email de acordo com uma programação recorrente a destinatários:
+Para enviar um arquivo por email de acordo com um agendamento para os recipients
 
-1. Clique em **[!UICONTROL Compartilhar] > [!UICONTROL Agendar exportação de arquivo]**.
-1. Especifique o tipo de arquivo (CSV ou PDF).
-1. (Opcional) Adicione uma descrição que será incluída no email para o arquivo que está sendo recebido.
-1. Adicione recipients ou grupos. Endereços de email também podem ser inseridos.
-1. (Somente para clientes do Healthcare Shield) Forneça uma senha. Consulte a seção Proteger com senha um relatório agendado.
-1. Especifique o intervalo ao longo do qual a programação deve ser entregue, modificando as entradas Início e Término. A data de término deve estar no prazo de um ano a partir do dia em que a programação foi criada ou modificada.
-1. Especifique a frequência do delivery. Cada frequência permite personalizações diferentes.
-1. Clique em **[!UICONTROL Enviar de acordo com a programação]**.
+1. Selecione **[!UICONTROL Compartilhar] > [!UICONTROL Agendar exportação de arquivo]**.
+1. Especifique o tipo de arquivo:
+   * [!UICONTROL **CSV**]: escolha essa opção se desejar dados de texto simples.
+   * [!UICONTROL **PDF**]: escolha essa opção se desejar que o arquivo baixado contenha todas as tabelas e visualizações exibidas (visíveis) no projeto.
+1. (Opcional) Use **[!UICONTROL Descrição]** para adicionar uma descrição a ser incluída no email.
+1. Adicione recipients ou grupos. Você também pode inserir endereços de email.
+1. (Somente para clientes do Healthcare Shield) Forneça uma senha para [proteger com senha um relatório agendado](#password-protect-a-new-scheduled-project).
+1. Verifique se **[!UICONTROL Mostrar opções de agendamento]** está selecionado.
+1. Selecione uma **[!UICONTROL Frequência]**. Você pode selecionar entre:
 
-![A janela Enviar arquivo e as opções de agendamento são exibidas para mostrar as datas de Início, Término e as configurações de frequência diária.](assets/send-file.JPG)
+   | Frequência | Opções |
+   |---|---|
+   | **[!UICONTROL Enviar por hora]** | Insira um valor para **[!UICONTROL Enviar a cada número de horas]**. |
+   | **[!UICONTROL Enviar diariamente]** | Selecione uma **[!UICONTROL Frequência diária]**: **[!UICONTROL Enviar todos os dias]**, **[!UICONTROL Enviar todos os dias da semana]** ou **[!UICONTROL Frequência personalizada]**.<br/>Se você selecionar **[!UICONTROL Frequência personalizada]**, insira um valor para **[!UICONTROL Enviar todos os números de dias]**. |
+   | **[!UICONTROL Enviar semanalmente]** | Insira um valor para **[!UICONTROL Enviar a cada número de semanas]**. E selecione um **[!UICONTROL Dia da semana]**. |
+   | **[!UICONTROL Enviar mensalmente por dia da semana]** | Selecione um **[!UICONTROL Dia da semana]** e uma **[!UICONTROL Semana do mês]**. |
+   | **[!UICONTROL Enviar mensalmente por dia do mês]** | Selecione um valor de **[!UICONTROL Enviar neste dia do mês]**. |
+   | **[!UICONTROL Enviar anualmente por dia do mês]** | Selecione um **[!UICONTROL Dia da semana]**, selecione uma **[!UICONTROL Semana do mês]** e selecione um **[!UICONTROL Mensal do ano]**. |
+   | **[!UICONTROL Enviar anualmente por data específica]** | Selecione um **[!UICONTROL Mês do ano]** e selecione um valor de **[!UICONTROL Enviar neste dia do mês]**. |
 
-## Gerenciador de projetos programados {#manager}
+1. Insira uma data de início em **[!UICONTROL A partir de]**. Como alternativa, selecione ![Calendário](/help/assets/icons/Calendar.svg) para escolher uma data de início no calendário.
 
-Os projetos agendados do Analysis Workspace podem ser gerenciados em **[!UICONTROL Analytics] > [!UICONTROL Componentes] > [!UICONTROL Projetos agendados]**.
+1. Insira uma data de término em **[!UICONTROL Terminando em]**. Como alternativa, selecione ![Calendário](/help/assets/icons/Calendar.svg) para escolher uma data de término no calendário.
+1. Selecione **[!UICONTROL Enviar conforme agendado]**. Selecione **[!UICONTROL Cancelar]** para cancelar.
 
-No Gerenciador de agendamento de projetos, é possível editar e excluir agendamentos de projetos recorrentes. Procure um agendamento na barra de pesquisa ou usando as opções de filtro no painel esquerdo. Você pode filtrar por tag, programação aprovada, proprietários e muito mais.
-
-| Campo | Descrição |
-| --- | --- |
-| [!UICONTROL Favoritos] | Selecionar o ícone de estrela torna esta programação uma favorita. |
-| [!UICONTROL ID da programação] | Essa ID é usada principalmente para fins de depuração. |
-| [!UICONTROL Título e descrição] | Título e descrição deste projeto. |
-| [!UICONTROL Proprietário] | A pessoa que criou e é proprietária do projeto. |
-| [!UICONTROL Tags] | (opcional) Adicionar tags é uma boa maneira de organizar projetos. Todos os usuários podem criar tags e aplicar uma ou mais tags a um projeto. No entanto, é possível visualizar tags somente para os projetos que você possui ou que foram compartilhados com você. |
-| [!UICONTROL Entregue a] | O(s) destinatário(s) deste projeto programado. |
-| [!UICONTROL Data de validade] | Você pode definir a data de expiração para até um ano, independentemente da frequência da programação. |
-| [!UICONTROL Frequência] | Com que frequência deseja que esse projeto programado seja enviado ao(s) destinatário(s). |
-| [!UICONTROL Tempo de execução] | Em que hora do dia esse projeto programado será enviado. |
-| [!UICONTROL Número de consultas] | O número de consultas relativas a este projeto. |
-
-As ações a seguir são comuns no Gerenciador de projetos programados:
-
-| Ação | Descrição |
-|---|---|
-| **[!UICONTROL Editar programação]** | Clique no título da programação para atualizar as configurações de delivery. |
-| **[!UICONTROL Excluir programação]** | Selecione o projeto programado na lista e clique em Excluir no menu. Essa ação eliminará o calendário selecionado para o projeto; o projeto em si não será excluído. |
-| **[!UICONTROL Adicionar tags]** | Selecione o projeto programado na lista e escolha “Tag” ou “Aprovar” para organizar as programações e facilitar a pesquisa. |
-| **[!UICONTROL Exibir programações com falha]** | Navegue até o painel esquerdo > Outros filtros > Falha ao ver as programações que falharam. |
-| **[!UICONTROL Exibir programações expiradas]** | Acesse o painel esquerdo > Outros filtros > Expirado para ver as programações que expiraram. Clique no título da programação para configurar uma nova programação de entrega. |
-| **[!UICONTROL Exibir ID de programação]** | Acesse as opções de coluna na parte superior direita e adicione a coluna ID de programação à tabela. A ID programada geralmente é útil para depuração. |
-
-O Gerenciador de agendamento de projetos mostra os itens criados por um usuário específico. Se a conta de usuário for desabilitada no aplicativo, todas as entregas programadas serão interrompidas.
-Para obter mais informações, consulte [Projetos agendados](/help/components/scheduled-projects-manager.md).
 
 ## Proteger com senha um projeto agendado {#password}
 
@@ -109,8 +92,6 @@ Depois que sua empresa adquirir o SKU Healthcare Shield e for habilitada para el
 
 * Quando um projeto agendado existente estiver prestes a ser enviado. O projeto agendado atualmente estará desabilitado até que a proteção por senha seja implementada. O proprietário do projeto agendado recebe um email informando sobre esse requisito.
 
-![A janela Editar projeto agendado e a notificação de criptografia de senha indicando que sua organização exige criptografia de senha.](assets/password.png)
-
 ### Requisitos de senha
 
 Os requisitos de senha estão em conformidade com os padrões da Adobe, exigindo um mínimo de 8 caracteres com pelo menos um número e um caractere especial.
@@ -122,7 +103,7 @@ Os requisitos de senha estão em conformidade com os padrões da Adobe, exigindo
 
 ### Proteger por senha um projeto agendado existente
 
-Antes de um projeto ser agendado, o proprietário do projeto recebe um email semelhante a este:
+Ao proteger com senha um projeto agendado existente, o proprietário do projeto recebe um email semelhante a este:
 
 ![A notificação por email do Customer Journey Analytics indicando que a criptografia de senha é necessária para sua organização.](assets/email-password.png)
 
@@ -130,3 +111,9 @@ Antes de um projeto ser agendado, o proprietário do projeto recebe um email sem
 1. Clique em **[!UICONTROL Exibir projeto agendado]**.
 1. Na caixa de diálogo **[!UICONTROL Editar projeto agendado]**, digite e digite novamente uma senha.
 1. Informe os destinatários do projeto agendado sobre esta senha. Não distribua a senha para pessoas que não sejam destinatárias do projeto agendado.
+
+
+
+## Gerenciador de projetos programados {#manager}
+
+Os projetos agendados do Analysis Workspace podem ser gerenciados na interface principal, usando **[!UICONTROL Componentes]** > **[!UICONTROL Projetos agendados]**. Para obter mais informações, consulte [Projetos agendados](/help/components/scheduled-projects-manager.md).

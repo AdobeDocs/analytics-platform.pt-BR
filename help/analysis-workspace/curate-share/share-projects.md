@@ -5,10 +5,10 @@ title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 1474a29dc9063ea65a78d34b3a2eb9861a71ee4e
-workflow-type: ht
-source-wordcount: '2091'
-ht-degree: 100%
+source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
+workflow-type: tm+mt
+source-wordcount: '2092'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Qualquer [preparação](curate.md) feita antes do compartilhamento será refleti
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhamento de projetos no Analysis Workspace](https://video.tv.adobe.com/v/40035/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhamento de projetos no Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -110,13 +110,14 @@ Se houver alterações não salvas, será solicitado que salve o projeto primeir
 
    Clique em **[!UICONTROL Preparar e compartilhar]** para fazer a preparação do projeto automaticamente. (Se o projeto já tiver sido compartilhado, selecione **[!UICONTROL Preparar e atualizar]**.) Saiba mais sobre a [preparação de projetos](curate.md).
 
+
 ## Compartilhar um link de um projeto
 
 Ao compartilhar um link conforme descrito nesta seção, considere o seguinte:
 
 * Os destinatários que usam o link precisam fazer logon no Customer Journey Analytics antes de obter acesso ao projeto.
 
-* Se uma função não for atribuída a um destinatário e ele receber um [link](/help/analysis-workspace/curate-share/shareable-links.md) para o projeto (**[!UICONTROL Compartilhar] > [!UICONTROL Obter link do projeto]**, ele receberá uma função por padrão. Administradores recebem **[!UICONTROL Editar original]** e os não administradores recebem **[!UICONTROL Editar cópia]**.
+* Se uma função não for atribuída a um destinatário e ele receber um [link compartilhável](/help/analysis-workspace/curate-share/shareable-links.md) para o projeto (**[!UICONTROL Compartilhar] > [!UICONTROL Obter link do projeto]**), ele receberá uma função por padrão. Administradores recebem **[!UICONTROL Editar original]** e os não administradores recebem **[!UICONTROL Editar cópia]**.
 
 Para compartilhar o link do projeto com os usuários em sua organização:
 
@@ -160,7 +161,7 @@ Para compartilhar o link do projeto com os usuários em sua organização:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar com qualquer pessoa](https://video.tv.adobe.com/v/3452457/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar com qualquer pessoa](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -215,7 +216,7 @@ Você pode compartilhar os componentes integrados que fazem parte do seu projeto
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar componentes integrados no Analysis Workspace](https://video.tv.adobe.com/v/30805/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar componentes integrados no Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 

@@ -5,10 +5,10 @@ title: Criar links compartilháveis
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 61%
+source-wordcount: '369'
+ht-degree: 58%
 
 ---
 
@@ -24,9 +24,9 @@ Se o destinatário do link não tiver uma [função do projeto](/help/analysis-w
 
 ## Obter um link de somente leitura para compartilhar com qualquer pessoa
 
-Você pode compartilhar um link somente leitura para projetos Analysis Workspace com pessoas que não têm acesso ao Customer Journey Analytics.
+Você pode compartilhar um link somente leitura para projetos do Analysis Workspace com pessoas que não têm acesso ao Customer Journey Analytics.
 
-Para obter mais informações, consulte “Compartilhar um projeto com qualquer pessoa (sem necessidade de fazer logon)” no artigo [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).
+Para obter mais informações, consulte [Compartilhar com qualquer pessoa](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required).
 
 ## Obter um painel ou link de visualização {#panel-link}
 
@@ -37,7 +37,7 @@ Você também pode compartilhar um link para uma parte específica de um projeto
 
 [Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=pt-BR) sobre como criar links e usá-los para direcionar recipients para partes específicas do seu projeto.
 
-![O menu suspenso após clicar com o botão direito do mouse no cabeçalho com o link Obter visualização realçado.](assets/get-viz-link.png)
+![O menu suspenso após clicar com o botão direito do mouse no cabeçalho com o link Obter visualização realçado.](assets/get-visualization-link.png)
 
 ## Usar links em um índice {#TOC}
 

@@ -1,22 +1,28 @@
 ---
-description: Projetos somente visualização no Espaço de trabalho
-keywords: Projetos do somente para visualização
-title: Projetos do somente para visualização
+description: Projetos somente leitura no Workspace
+keywords: Projetos somente leitura
+title: Projetos somente leitura
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 70%
+source-wordcount: '298'
+ht-degree: 37%
 
 ---
 
-# Projetos do somente para visualização
+# Projetos somente leitura
 
-Você pode compartilhar projetos &quot;somente para visualização&quot; com os recipients por meio do [Fluxo de trabalho de compartilhamento do projeto](/help/analysis-workspace/curate-share/share-projects.md). Os recipient colocados na função Pode visualizar terão uma experiência de projeto mais limitada. Essa opção pode ser útil se você estiver compartilhando um projeto com usuários menos familiarizados com a estrutura de dados da sua organização, com o Analysis Workspace ou o Customer Journey Analytics em geral, mas ainda assim quiser que eles consumam dados e insights em um ambiente seguro.
+Você pode compartilhar projetos como somente leitura com os destinatários por meio da [funcionalidade de compartilhamento](/help/analysis-workspace/curate-share/share-projects.md). Os destinatários colocados na função **[!UICONTROL Somente leitura]** receberão uma experiência de projeto mais limitada.
 
-![Um projeto compartilhado somente para visualização.](assets/view-only-project.png)
+Essa opção pode ser útil se você estiver compartilhando um projeto com usuários menos familiarizados com a estrutura de dados da sua organização, com o Analysis Workspace ou o Customer Journey Analytics em geral, mas ainda assim quiser que eles consumam dados e insights em um ambiente seguro.
+
+![Compartilhar como somente leitura](assets/read-only-project-sender.png)
+
+As interações para os recipients somente leitura são limitadas.
+
+![Compartilhamento como somente leitura recebido](assets/read-only-project-receiver.png)
 
 ## Interações desativadas
 
@@ -37,7 +43,14 @@ Algumas das interações ativadas mais importantes em um projeto somente visuali
 
 | Área | Interações ativadas |
 | --- | --- |
-| Tabelas de forma livre | <ul><li>Paginação e classificação</li><li>Passagem</li><li>Seleções de células que atualizam visualizações vinculadas</li><li>Clique com o botão direito do mouse em > Obter link de visualização</li><li>Clique com o botão direito do mouse em > Copiar para a área de transferência</li></ul> |
-| Visualizações | <ul><li>Clicar para ativar/desativar legenda</li><li>Passagem</li><li>Clique com o botão direito do mouse em > Obter link de visualização</li><li>Recolher/expandir</li><li>Fluxo - expandir nós de fluxo</li><li>Mapa - zoom</li></ul> |
-| Painéis | <ul><li>Segmentos suspensos interativos</li><li>Clique com o botão direito do mouse em > Obter link do painel</li><li>Recolher/expandir</li></ul> |
+| Tabelas de forma livre | <ul><li>Paginação e classificação</li><li>Passagem</li><li>Seleções de células que atualizam visualizações vinculadas</li><li>No menu de contexto > Obter link de visualização</li><li>No menu de contexto > Copiar para a área de transferência</li></ul> |
+| Visualizações | <ul><li>Clicar para ativar/desativar legenda</li><li>Passagem</li><li>No menu de contexto > Obter link de visualização</li><li>Recolher/expandir</li><li>Fluxo - expandir nós de fluxo</li><li>Mapa - zoom</li></ul> |
+| Painéis | <ul><li>Segmentos suspensos interativos</li><li>No menu de contexto > Obter link do painel</li><li>Recolher/expandir</li></ul> |
 | Projeto | <ul><li>Como inspecionar todos os ícones de informações</li><li>Menu Projeto - Novo, Abrir, Definir como página inicial, Atualizar, Baixar CSV/PDF, Informações e configurações limitadas do projeto</li><li>Menu Compartilhar - Obter link do projeto, Enviar arquivo agora</li><li>Menu Ajuda - Todas as ações, exceto as opções de Dicas e Depurador</li></ul> |
+
+
+## Compartilhe com qualquer pessoa
+
+Se você selecionou um projeto usando [Compartilhar com qualquer pessoa](share-projects.md#share-a-project-with-anyone-no-login-required), o destinatário do link só poderá visualizar o projeto e não interagir com ele.
+
+![Compartilhar com qualquer pessoa](assets/share-with-anyone-receiver.png)
