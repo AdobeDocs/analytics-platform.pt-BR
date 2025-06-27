@@ -1,49 +1,36 @@
 ---
-description: A sincronização de visualizações permite controlar qual tabela de dados ou fonte de dados corresponde a uma visualização.
+description: Saiba como sincronizar uma tabela de forma livre ou uma fonte de dados para a visualização correspondente.
 keywords: Analysis Workspace;Sincronizar visualização com a fonte de dados
 title: Gerenciar fontes de dados
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: 8f9c03607130bdeaf6cb7a32d8dd465712a47ea5
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 96%
+source-wordcount: '436'
+ht-degree: 89%
 
 ---
 
 # Gerenciar fontes de dados {#manage-data-sources}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection"
 >title="Bloquear seleção"
 >abstract="Habilite esta configuração para bloquear a visualização nas posições selecionadas ou nos itens selecionados na fonte de dados."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection_showtable"
 >title="Mostrar tabela"
 >abstract="Selecionar **[!UICONTROL Mostrar tabela]** gerará uma nova fonte de dados para a visualização atual, separada da fonte de dados original."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_showtable"
 >title="Mostrar tabela"
 >abstract="Selecione a opção **[!UICONTROL Mostrar tabela]** para gerar uma nova fonte de dados para a visualização atual, separada da fonte de dados original."
 
-<!-- markdownlint-enable MD034 -->
 
-
-
-A sincronização de visualizações permite controlar qual tabela de dados ou fonte de dados corresponde a uma visualização.
+A sincronização de visualizações permite controlar qual tabela de forma livre ou fonte de dados corresponde a uma visualização.
 
 >[!TIP]
 >

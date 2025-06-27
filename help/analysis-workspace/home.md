@@ -1,15 +1,15 @@
 ---
 keywords: Analysis Workspace
 title: Visão geral do Analysis Workspace
-description: Visão geral dos recursos do Analysis Workspace
+description: Saiba mais sobre o Analysis Workspace, a principal ferramenta de análise do Adobe Analytics. Use projetos, painéis, tabelas, visualizações e outros componentes para dar vida aos dados, preparar e compartilhar sua análise.
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1490'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,9 @@ O Analysis Workspace permite criar análises rapidamente para coletar insights e
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visão geral do Analysis Workspace](https://video.tv.adobe.com/v/35802/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visão geral do Analysis Workspace](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+{{videoaa}}
 
 >[!ENDSHADEBOX]
 
@@ -32,7 +34,7 @@ A imagem a seguir e a tabela que a acompanha explicam os principais elementos da
 | Localização | Nome e função |
 |:---------:|----------|
 | A | Contém o nome do projeto, uma estrutura de menu para acessar a funcionalidade, um botão ![Voltar](/help/assets/icons/ChevronLeft.svg) para retornar à lista de projetos e um botão **[!UICONTROL Compartilhar]** para [compartilhar o projeto do Workspace](/help/analysis-workspace/curate-share/share-projects.md). <br/>Selecione o nome do projeto (por exemplo: Novo projeto) a qualquer momento para alterar o nome. <br/>Selecione ![Remover dos favoritos](/help/assets/icons/StarOutline.svg) para marcar seu projeto como um favorito ![Adicionar aos favoritos](/help/assets/icons/Star.svg). |
-| B | **Painel de botões:** contém botões para acessar os [recursos](#features) principais do Analysis Workspace:<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL Painéis]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Análise guiada](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Análise guiada]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualizações]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Preparar](/help/assets/icons/Curate.svg) [[!UICONTROL Componentes]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL Índice]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Marcador](/help/assets/icons/Bookmark.svg) [[!UICONTROL Dicionário de dados]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
+| B | **Painel de botões:** Contém botões para acessar os [recursos](#features) principais do Analysis Workspace:<ul><li>![WebPage](/help/assets/icons/WebPage.svg) [[!UICONTROL Painéis]](/help/analysis-workspace/c-panels/panels.md)</li><li>![Análise guiada](/help/assets/icons/GuidedAnalysis.svg) [[!UICONTROL Análise guiada]](/help/guided-analysis/overview.md)</li><li>![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) [[!UICONTROL Visualizações]](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md)</li><li>![Preparar](/help/assets/icons/Curate.svg) [[!UICONTROL Componentes]](/help/components/overview.md)</li><li>![ViewList](/help/assets/icons/ViewList.svg) [[!UICONTROL Índice]](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md)</li><li>![Marcador](/help/assets/icons/Bookmark.svg) [[!UICONTROL Dicionário de dados]](/help/components/data-dictionary/data-dictionary-overview.md)</li></ul> |
 | C | **Painel esquerdo:** esta área contém painéis individuais, visualizações, componentes ou listas. O conteúdo depende do botão selecionado no painel de botões. |
 | D | **Tela:** essa é a área principal onde você arrasta o conteúdo dos painéis à esquerda para criar o projeto. O projeto é atualizado dinamicamente à medida que você adiciona painéis, visualizações a painéis e componentes a visualizações. É possível criar vários painéis, e dentro de cada painel é possível criar várias visualizações.<br/>Cada painel se baseia em uma visualização de dados selecionada. A visualização de dados selecionada determina a disponibilidade de componentes como métricas e dimensões. Consulte [Painéis: visualização de dados](/help/analysis-workspace/c-panels/panels.md#data-view) para obter mais informações. |
 
@@ -121,16 +123,16 @@ Consulte as tabelas abaixo para obter uma visão geral dos menus disponíveis.
 | **[!UICONTROL Agendar exportação de arquivo]** | **[!UICONTROL *shift+opt+s *]** | **[!UICONTROL *shift+alt+s *]** | [Envia o projeto como um arquivo CSV ou PDF para outros destinatários conforme o cronograma definido](/help/analysis-workspace/curate-share/send-schedule-files.md). |
 | **[!UICONTROL Preparar dados do projeto]** | **[!UICONTROL *shift+cmd+g *]** | **[!UICONTROL *shift+ctrl+g *]** | [Prepara os dados do projeto](/help/analysis-workspace/curate-share/curate.md). |
 
-| Ajuda | Atalho do Mac | Atalho do Windows | Descrição |
-|---|---|---|---|
-| **[!UICONTROL Vídeos]** | | | Abre o canal do YouTube do Customer Journey Analytics em uma nova guia do navegador. |
-| **[!UICONTROL Documentação de ajuda]** | | | Abre a documentação (a que você está lendo agora) em uma nova guia do navegador. |
-| **[!UICONTROL Fórum de ajuda]** | | | Abre o fórum das comunidades do Adobe Analytics na Experience League em uma nova guia do navegador. |
-| **[!UICONTROL Teclas de atalho]** | | | Mostra uma visão geral das teclas de atalho que você pode usar no espaço de trabalho. |
-| **[!UICONTROL Habilitar o depurador]** |  | | Habilita o depurador. Seu projeto será recarregado. |
-| **[!UICONTROL Desabilitar depurador]** | | | Desabilita o depurador. Seu projeto será recarregado. |
-| **[!UICONTROL Desempenho]** | | | Mostra uma caixa de diálogo com métricas de **[!UICONTROL desempenho do Analysis Workspace]**. Use **[!UICONTROL Baixar como CSV]** para baixar um arquivo CSV das métricas de desempenho. |
-| **[!UICONTROL Sobre o Workspace]** | | | Mostra uma caixa de diálogo **[!UICONTROL Sobre o Analysis Workspace]** com informações de versão, níveis de acesso a recursos e sinalizadores de recursos ativos. |
+| Ajuda | Descrição |
+|---|---|
+| **[!UICONTROL Vídeos]** | Abre o canal do YouTube do Customer Journey Analytics em uma nova guia do navegador. |
+| **[!UICONTROL Documentação de ajuda]** | Abre a documentação (a que você está lendo agora) em uma nova guia do navegador. |
+| **[!UICONTROL Fórum de ajuda]** | Abre o fórum das comunidades do Adobe Analytics na Experience League em uma nova guia do navegador. |
+| **[!UICONTROL Teclas de atalho]** | Mostra uma visão geral das teclas de atalho que você pode usar no espaço de trabalho. |
+| **[!UICONTROL Habilitar o depurador]** | Habilita o depurador. Seu projeto será recarregado. |
+| **[!UICONTROL Desabilitar depurador]** | Desabilita o depurador. Seu projeto será recarregado. |
+| **[!UICONTROL Desempenho]** | Mostra uma caixa de diálogo com métricas de **[!UICONTROL desempenho do Analysis Workspace]**. Use **[!UICONTROL Baixar como CSV]** para baixar um arquivo CSV das métricas de desempenho. |
+| **[!UICONTROL Sobre o Workspace]** | Mostra uma caixa de diálogo **[!UICONTROL Sobre o Analysis Workspace]** com informações de versão, níveis de acesso a recursos e sinalizadores de recursos ativos. |
 
 ## Fontes de dados
 

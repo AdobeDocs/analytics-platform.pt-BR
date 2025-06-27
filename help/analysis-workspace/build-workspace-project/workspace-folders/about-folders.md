@@ -1,22 +1,22 @@
 ---
-description: Saiba mais sobre Pastas no Espaço de trabalho
+description: Saiba como organizar projetos em pastas no Analysis Workspace.
 keywords: Analysis Workspace
 title: Visão geral das pastas
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 100%
+source-wordcount: '419'
+ht-degree: 97%
 
 ---
 
 # Visão geral das pastas
 
-As pastas no Customer Journey Analytics ficam disponíveis na página de destino do espaço de trabalho ao selecionar [Mostrar pastas e projetos](../freeform-overview.md#show-selector).
-
 As pastas do espaço de trabalho ajudam a organizar e categorizar seus projetos. Com a funcionalidade de pastas, é possível criar pastas e subpastas para gerenciar os projetos.
+
+As pastas no Customer Journey Analytics ficam disponíveis na página de destino do espaço de trabalho ao selecionar [Mostrar pastas e projetos](../freeform-overview.md#show-selector).
 
 Há dois tipos de pastas no espaço de trabalho: a pasta da empresa e as pastas pessoais. Uma pasta compartilhada da empresa permite que admins criem e compartilhem conteúdo com todos os usuários do espaço de trabalho.
 

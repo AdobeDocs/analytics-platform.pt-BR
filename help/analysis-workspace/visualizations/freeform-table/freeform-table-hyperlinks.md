@@ -1,17 +1,17 @@
 ---
-title: Criar hiperlinks em uma tabela de forma livre
-description: Saiba como criar hiperlinks para itens de dimensão em uma tabela de forma livre no Analysis Workspace
+title: Criar Hiperlinks Para Dimensões Em Uma Tabela De Forma Livre
+description: Saiba como criar hiperlinks para itens de dimensão em uma tabela de forma livre no Analysis Workspace.
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 98%
+source-wordcount: '1605'
+ht-degree: 97%
 
 ---
 
-# Criar hiperlinks em uma tabela de forma livre
+# Criar hiperlinks
 
 Você pode criar hiperlinks para itens de dimensão para torná-los clicáveis em uma tabela de forma livre no Analysis Workspace.
 
@@ -26,7 +26,7 @@ Essa funcionalidade é particularmente útil ao criar hiperlinks para os seguint
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar hiperlinks em uma tabela de forma livre](https://video.tv.adobe.com/v/3445788/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar hiperlinks em uma tabela de forma livre](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

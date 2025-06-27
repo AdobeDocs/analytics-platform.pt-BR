@@ -1,14 +1,14 @@
 ---
-description: Você pode criar segmentos a partir de um ponto de contato, adicionar segmentos como ponto de contato e comparar fluxos de trabalho principais em vários segmentos no Analysis Workspace.
-keywords: fallout e segmentos;segmentos na análise de fallout;comparar segmentos no fallout
-title: Aplicar segmentos na análise de fallout
+description: Saiba como criar segmentos a partir de um ponto de contato, adicionar segmentos como ponto de contato e comparar fluxos de trabalho principais em vários segmentos em uma análise de fallout no Analysis Workspace.
+keywords: fallout e segmentação;segmentos na análise de fallout;comparar segmentos no fallout
+title: Aplicar Segmentos Na Análise De Fallout
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 38%
+source-wordcount: '468'
+ht-degree: 34%
 
 ---
 
@@ -18,11 +18,14 @@ Você pode criar segmentos a partir de um ponto de contato, adicionar segmentos 
 
 >[!IMPORTANT]
 >
->Os segmentos usados como pontos de verificação no Fallout devem usar um contêiner que esteja em um nível inferior ao contexto geral da visualização do Fallout. Com um Fallout de contexto de pessoa, os segmentos usados como pontos de verificação devem ser segmentos baseados em sessão ou evento. Com um Fallout de contexto de sessão, os segmentos usados como ponto de verificação devem ser segmentos baseados em eventos. Se você usar uma combinação inválida, o fallout será de 100%. Você vê um aviso para a visualização de Fallout ao adicionar um segmento incompatível como ponto de contato. Determinadas combinações inválidas de contêineres de segmento resultam em diagramas de Fallout inválidos, por exemplo:
+>Os segmentos usados como pontos de verificação no Fallout devem usar um contêiner que esteja em um nível inferior ao contexto geral da visualização do Fallout. Com um Fallout de contexto de pessoa, os segmentos usados como pontos de verificação devem ser segmentos baseados em sessão ou evento. Com um Fallout de contexto de sessão, os segmentos usados como ponto de verificação devem ser segmentos baseados em eventos. Se você usar uma combinação inválida, o fallout será de 100%. Você vê um aviso na visualização de Fallout ao adicionar um segmento incompatível como ponto de contato. Determinadas combinações inválidas de contêineres de segmento resultam em diagramas de Fallout inválidos, por exemplo:
 >
->* Usar um segmento com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de pessoas
->* Usar um segmento com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de sessão
->* Usar um segmento baseado em sessão como um ponto de contato dentro de uma visualização de Fallout de contexto de sessão
+>* Usar um segmento com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de pessoa.
+>* Usar um segmento com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de sessão.
+>* Usar um segmento baseado em sessão como um ponto de contato dentro de uma visualização de Fallout de contexto de sessão.
+<!-- Should we add B2B context here?
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* -->
 
 ## Criar um segmento a partir de um ponto de contato
 

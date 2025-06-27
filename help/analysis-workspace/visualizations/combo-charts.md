@@ -1,13 +1,13 @@
 ---
-description: Permite visualizar facilmente os dados de comparação no Analysis Workspace, criando comparações com o mês passado, o ano passado e assim por diante.
-title: Visualização de gráficos de combinação
+description: Saiba como visualizar dados de comparação no Analysis Workspace, criando comparações com o mês passado, o ano passado e assim por diante.
+title: Combinado
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
 source-wordcount: '603'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização combinada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_Este artigo documenta a visualização combinada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
-_Consulte [Combinado](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Consulte [Combinado](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -99,6 +99,6 @@ Este é um exemplo de um gráfico de combinação com as funções Média cumula
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

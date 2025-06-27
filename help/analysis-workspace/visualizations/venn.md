@@ -1,13 +1,13 @@
 ---
-description: A visualização Venn permite que você arraste até três segmentos (de Componentes) e uma métrica para criar um diagrama Venn.
+description: Use a visualização de Venn para arrastar até três segmentos e uma métrica para criar um diagrama de Venn.
 title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '167'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 89%
 
 ---
 
@@ -56,7 +56,7 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualiza�
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

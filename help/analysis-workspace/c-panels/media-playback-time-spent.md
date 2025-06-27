@@ -1,13 +1,13 @@
 ---
 title: Painel Tempo gasto com a reprodução da mídia
-description: Como usar e interpretar o painel Tempo gasto com a reprodução de mídia no Analysis Workspace.
+description: Saiba como usar e interpretar o painel Tempo gasto com a reprodução de mídia no Analysis Workspace.
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '1073'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 98%
 
 ---
 
@@ -42,7 +42,7 @@ _Este artigo documenta o painel Tempo gasto com a reprodução de mídia no_ ![C
 >[!NOTE]
 >
 >O painel Público-alvo médio por minuto de mídia está disponível somente para clientes que adquiriram o complemento Coleção de mídia de streaming para o Customer Journey Analytics.
->Entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para obter mais informações.
+>>Entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para obter mais informações.
 >
 
 O painel **[!UICONTROL Tempo gasto com a reprodução de mídia]** permite analisar a reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar. 
@@ -122,13 +122,13 @@ A única métrica que pode ser usada nesse painel é Tempo gasto com a reproduç
 | <p>Por que minha granularidade mudou?</p> | <p>Essa visualização é limitada a 1440 linhas de dados (por exemplo, 24 horas na granularidade no nível de minuto). Se uma combinação de intervalo de datas e granularidade resultar em mais de 1440 linhas, a granularidade será atualizada automaticamente para ajustar o intervalo de datas completo.</p><p></p><p>Ao mudar de um intervalo de datas maior para um menor, a granularidade será atualizada para oferecer o mínimo de detalhes possível após a alteração. Para exibir uma granularidade mais alta, edite o painel e recrie.</p> |
 | <p></p><p>Como comparar nomes de vídeos, segmentos, tipos de conteúdo e muito mais?</p> | <p>Para compará-los em uma única visualização, arraste segmentos, dimensões ou itens de dimensão específicos para o segmento de detalhamento em série.</p><p></p><p>A visualização é limitada a 10 detalhamentos. Para exibir mais de 10, você deve usar vários painéis.</p> |
 | Como comparar intervalos de datas? | Para comparar intervalos de data em uma única visualização, use os detalhamentos por séries arrastando dois ou mais intervalos de datas. Esses intervalos de datas substituirão o intervalo de datas do painel. |
-| Como alterar o tipo de visualização? | <p></p><p>Esse painel permite somente a visualização de linha para a série de tempo.</p> |
+| Como alterar o tipo de visualização? | <p></p><p>Esse painel permite somente a visualização de linha para a série temporal.</p> |
 | Posso executar a detecção de anomalias? | <p></p><p>Não. A detecção de anomalias não está disponível para esse painel.</p> |
 
 
 >[!MORELIKETHIS]
 >
 >[Criar um painel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Painel de público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md)
->[Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
+>>[Painel de público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md)
+>>[Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
 >

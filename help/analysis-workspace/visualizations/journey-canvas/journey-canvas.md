@@ -1,13 +1,13 @@
 ---
-description: Visão geral da tela da jornada
-title: Tela de jornada
+description: Saiba como usar a tela de jornada no Analysis Workspace.
+title: Visão geral da tela de Jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
-workflow-type: ht
-source-wordcount: '1988'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '1996'
+ht-degree: 99%
 
 ---
 
@@ -263,5 +263,5 @@ Você pode criar análises na tela de jornada com base em qualquer dimensão ou 
 
 >[!MORELIKETHIS]
 >
-> * [Guia para visualização da tela de jornada no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=pt)
+> * [Guia para visualização da tela de jornada no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

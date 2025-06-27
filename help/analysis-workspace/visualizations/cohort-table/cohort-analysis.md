@@ -1,13 +1,13 @@
 ---
 title: Visão geral da tabela de coorte
-description: Saiba como usar uma tabela de coorte para análise de coorte no Analysis Workspace
+description: Saiba como pesquisar mais detalhes nos dados sobre seu público-alvo e dividir esses dados em grupos relacionados com a análise de coorte. Use a análise de coorte no Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '705'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ A [!UICONTROL tabela de coorte] está disponível a todos os clientes do Custome
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de coorte no Analysis Workspace](https://video.tv.adobe.com/v/3430078/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de coorte no Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -74,31 +74,31 @@ As seções a seguir descrevem os recursos da análise de coorte que permitem o 
 
 Para obter informações mais detalhadas sobre como criar uma coorte e executar um relatório de [!UICONTROL Análise de coorte], consulte [Configurar uma tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
-### Tabela de [!UICONTROL retenção]
+### Tabela de retenção
 
 Uma tabela de coorte de [!UICONTROL retenção] retorna pessoas: cada célula de dados mostra o número bruto e a porcentagem de pessoas da coorte que realizaram a ação durante esse período. É possível incluir até 3 métricas e 10 segmentos.
 
 ![Um relatório de coorte de retenção com as unidades e a porcentagem de pessoas na coorte.](assets/retention-report.png)
 
-### Tabela de [!UICONTROL churn]
+### Tabela de churn
 
 Uma tabela de coorte de [!UICONTROL churn] é o inverso da tabela de retenção e mostra as pessoas que abandonaram ou que nunca atenderam aos critérios de retorno da coorte ao longo do tempo. É possível incluir até 3 métricas e 10 segmentos.
 
 ![Uma tabela de churn com as unidades e a porcentagem de pessoas que não atenderam aos critérios de retorno para uma coorte.](assets/churn-report.png)
 
-### [!UICONTROL Cálculo contínuo]
+### Cálculo contínuo
 
 É possível calcular a retenção ou churn com base na coluna anterior, não na coluna incluída, o que é chamado de cálculo contínuo.
 
 ![Um relatório de retenção de coorte mostrando cálculos com base em uma coluna de dados anterior.](assets/retention-report-rolling.png)
 
-### Tabela de [!UICONTROL latência]
+### Tabela de latência
 
 Uma tabela de latência mede o tempo decorrido antes e depois da ocorrência do evento de inclusão. A medição da latência é uma ferramenta excelente para análise prévia e posterior. Uma coluna **[!UICONTROL Incluída]** encontra-se no centro da tabela e períodos de tempo anteriores e posteriores ao evento de inclusão são exibidos em ambos os lados.
 
 ![Um relatório de coorte que mostra o tempo decorrido antes e depois de um evento.](assets/retention-report-latency.png)
 
-### Coorte de [!UICONTROL dimensão personalizada]
+### Coorte de dimensão personalizada
 
 É possível criar coortes com base em uma dimensão selecionada ao invés de coortes baseadas em tempo (que são o padrão). Use dimensões como [!UICONTROL cidade geográfica], [!UICONTROL canal de marketing], [!UICONTROL campanha], [!UICONTROL produto], [!UICONTROL página], [!UICONTROL região] ou qualquer outra para mostrar como a retenção é alterada. Com base nos diferentes valores dessas dimensões.
 

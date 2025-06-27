@@ -1,32 +1,36 @@
 ---
-description: Saiba como salvar projetos em pastas no Espaço de trabalho
+description: Saiba como salvar um novo projeto em uma pasta no Analysis Workspace.
 keywords: Analysis Workspace
-title: Como salvar projetos em pastas
+title: Salvar Um Novo Projeto Em Uma Pasta
 feature: Workspace Basics
 exl-id: d08a558b-a2bb-4002-b179-437e1885c6c4
 role: User
-source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 100%
+source-wordcount: '35'
+ht-degree: 5%
 
 ---
 
-# Salvar um novo projeto em uma pasta
+# Salvar um novo projeto em um pôster
 
-<!-- Is this article still needed -->
+Consulte [Salvar projetos](../save-projects.md#save) para obter mais informações.
+
+<!-- Is this article still needed; removed from TOC
 
 
-Para salvar um novo projeto em uma pasta específica, selecione o nome da pasta na janela de diálogo Salvar projeto.
+To save a new project to a specific folder, select the folder name in the Save project dialogue window.
 
-1. No Workspace, crie um novo projeto.
+1. In Workspace, create a new project.
 
-   ![A janela da tabela de forma livre onde você pode criar um novo projeto.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
+    ![The Freeform table window where you can create a new project.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder1.png)
 
-1. Na caixa de diálogo **Projeto** > **Salvar**, selecione um nome de pasta no menu suspenso Pasta.
+1. In the **Project** > **Save** dialogue, select a folder name from the Folder drop-down menu.
 
-   ![A janela Salvar onde você salva o novo projeto em uma pasta.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
+    ![The Save window where you save your new project to a folder.](/help/analysis-workspace/build-workspace-project/assets/save-to-folder2.png)
 
-1. Clique em **Salvar**.
+1. Click **Save**.
 
-   O projeto é salvo na pasta selecionada.
+    The project is saved in the selected folder.
+
+-->

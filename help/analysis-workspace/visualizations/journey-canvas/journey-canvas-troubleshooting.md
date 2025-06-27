@@ -1,16 +1,17 @@
 ---
-description: Exemplos ao configurar uma visualização da tela de Jornada
-title: Jornada exemplos da tela de desenho
+description: Saiba como solucionar problemas ao configurar uma visualização de tela de jornada.
+title: Solução de problemas do Jornada Canvas
 feature: Visualizations
 role: User
-source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
+exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
 
-# Solução de problemas da tela de jornada
+# Solução de problemas da tela da jornada
 
 A visualização da tela de Jornada permite analisar e obter insights profundos sobre as jornadas fornecidas aos usuários e clientes.
 

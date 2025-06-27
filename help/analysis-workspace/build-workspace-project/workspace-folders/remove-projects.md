@@ -1,50 +1,56 @@
 ---
-description: Saiba como renomear projetos de pastas
+description: Saiba como remover projetos do Analysis Workspace.
 keywords: Analysis Workspace
-title: Remover projetos de pastas
+title: Remover Projetos
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
+source-git-commit: 9506cc42e80f25f68a891f21f38d60fb4d364588
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 94%
+source-wordcount: '27'
+ht-degree: 7%
 
 ---
 
-# Excluir projetos
-
-<!-- Is this article still needed -->
+# Remover projetos
 
 
-## Mover um projeto {#move-project-in-folder}
+Consulte [Ações em Gerenciar projetos](../freeform-overview.md#actions) sobre como remover projetos da Analysis Workspace.
 
-Você pode mover projetos de uma pasta para outra pasta que você criou.
 
-1. Em uma pasta de projeto, selecione o ícone de reticências **...** ao lado do nome do projeto.
+<!-- Is this article still needed; not in the TOC anymore
 
-   ![As opções de reticências.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1. Selecionar **Mover para** e selecione uma pasta para onde mover o projeto.
+## Move a project {#move-project-in-folder}
 
-   ![A janela Selecionar local.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+You can move projects from one folder to another folder that you created.
 
-1. Clique em **Mover**.
+1. From within a project folder, select the **...** ellipsis next to the project name.
 
-   ![Clique em Mover.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+    ![The ellipsis options.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-   Uma notificação confirma que o projeto foi movido.
+1. Select **Move to** and then select a folder to move the project to.
 
-   ![A notificação de confirmação de movimentação. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+    ![The Select Location window.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
-## Excluir um projeto de uma pasta de projeto {#delete-project-in-folder}
+1. Click **Move**.
 
-Ao excluir um projeto de uma pasta, ele é removido do sistema após 180 dias. Durante os 180 dias após a exclusão, os usuários ainda podem acessá-lo por meio da interface da Web se tiverem um URL direto para o projeto.
+    ![Click Move.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
-1. Em uma pasta de projeto, selecione o ícone de reticências **...** ao lado do nome do projeto.
+    A toast confirms that the project was moved.
 
-   ![As opções de reticências.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+    ![The move confirmation toast. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
-1. Clique em **Excluir**.
+## Delete a project from a project folder {#delete-project-in-folder}
 
-1. Uma janela de confirmação solicita que você confirme a exclusão.
+When you delete a project from a folder, it gets purged from the system after 180 days. During the 180 days after deletion, users can still access a deleted project via the Web interface if they have a direct URL to the project.
+
+1. From within a project folder, select the **...** ellipsis next to the project name.
+
+    ![The ellipsis options.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+
+1. Select **Delete**.
+
+1. A confirmation window asks you to confirm the deletion.
+
+-->

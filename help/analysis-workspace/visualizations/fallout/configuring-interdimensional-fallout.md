@@ -1,12 +1,12 @@
 ---
-description: O recurso de Fallout no Analysis Workspace permite combinar dimensões e métricas como pontos de contato em funis e fluxos de trabalho. Os fallouts oferecem mais flexibilidade ao definir as etapas de usuário que você deseja investigar.
+description: Saiba como a visualização de fallout no Analysis Workspace permite combinar dimensões e métricas como pontos de contato em funis e fluxos de trabalho. Entenda como isso oferece mais flexibilidade ao definir as etapas de usuário que você deseja investigar.
 title: Fallout interdimensional
 feature: Visualizations
 exl-id: 7975324c-4efc-4c36-bc83-dcde85d2febc
 role: User
-source-git-commit: 37158b4e614435724205c505f322c1d7a434c35d
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '226'
 ht-degree: 7%
 
 ---

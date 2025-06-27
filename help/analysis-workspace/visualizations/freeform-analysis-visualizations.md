@@ -1,14 +1,14 @@
 ---
-description: Representar visualmente seus dados no Analysis Workspace.
+description: Saiba como representar visualmente seus dados com as visualizações disponíveis no Analysis Workspace.
 keywords: Analysis Workspace
 title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 99%
+source-wordcount: '1622'
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 O Workspace oferece várias visualizações que permitem criar representações visuais dos seus dados. Como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão, entre outros.
 
-## Tipos
+##  Tipos
 
 Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 

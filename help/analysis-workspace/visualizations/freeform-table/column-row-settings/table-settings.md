@@ -1,13 +1,13 @@
 ---
-description: As configurações de linha variam de acordo com qual componente foi arrastado para a tabela.
+description: Saiba como usar configurações de linha e como as configurações de linha variam de acordo com qual componente você arrastou para uma tabela de forma livre no Analysis Workspace.
 title: Configurações de linha
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1046'
-ht-degree: 89%
+source-wordcount: '1056'
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 89%
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://video.tv.adobe.com/v/328504/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -88,6 +88,6 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 | **[!UICONTROL Criar segmento a partir da seleção]** | Abra o **[!UICONTROL Construtor de segmentos]** para criar um segmento a partir da seleção. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Abre a caixa de diálogo **[!UICONTROL Criar público-alvo]** para criar um público-alvo a partir da seleção. |
 
-## Alterar altura da linha
+## Modificar altura da linha
 
-Você pode definir a densidade da exibição de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density).
+Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**. .

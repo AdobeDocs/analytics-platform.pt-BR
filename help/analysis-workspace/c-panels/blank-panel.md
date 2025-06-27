@@ -1,13 +1,13 @@
 ---
-description: Como usar o painel em branco no Analysis Workspace?
+description: Saiba como criar um painel em branco como ponto de partida para qualquer visualização.
 title: Painel em branco
 feature: Panels
 exl-id: b65d0031-b4c0-4400-8d67-9416f3c993b6
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 90%
+source-wordcount: '253'
+ht-degree: 94%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel em branco no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [Painel em branco](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/blank-panel) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Em branco no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [painel Em branco](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/blank-panel) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 

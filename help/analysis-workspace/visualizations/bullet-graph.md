@@ -1,13 +1,13 @@
 ---
-description: Mostra a comparação ou a medição de um valor em relação a outros intervalos de desempenho (metas).
-title: Gráfico em marcadores
+description: Saiba como usar a visualização de marcadores no Analysis Workspace. A visualização de marcadores permite que você compare ou meça em relação a outros intervalos de desempenho (metas).
+title: Marcador
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '263'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 90%
 
 ---
 
@@ -45,7 +45,7 @@ O gráfico de marcadores apresenta uma só medida principal (por exemplo, receit
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de gráfico com marcadores](https://video.tv.adobe.com/v/30760/?quality=12/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de gráfico com marcadores](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -63,7 +63,7 @@ Você pode definir configurações específicas para uma visualização de [!UIC
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Menu de contexto de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

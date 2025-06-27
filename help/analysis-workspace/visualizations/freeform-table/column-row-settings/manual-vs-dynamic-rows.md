@@ -1,13 +1,13 @@
 ---
-title: Itens de dimensão dinâmicos vs estáticos
-description: Como interagir com itens de dimensão dinâmicos e estáticos em tabelas
+title: Itens Dinâmicos E Estáticos Do Dimension
+description: Saiba como usar itens de dimensão dinâmicos versus estáticos em tabelas de forma livre no Analysis Workspace.
 feature: Visualizations
 exl-id: 7806f535-15c7-40f4-955a-724d9752969d
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 93%
+source-wordcount: '544'
+ht-degree: 88%
 
 ---
 

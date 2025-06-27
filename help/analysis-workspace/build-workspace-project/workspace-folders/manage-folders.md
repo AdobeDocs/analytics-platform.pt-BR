@@ -1,21 +1,21 @@
 ---
-description: Saiba como gerenciar pastas no espaço de trabalho
+description: Saiba como gerenciar pastas no Analysis Workspace.
 keywords: Analysis Workspace
-title: Gerenciar pastas no espaço de trabalho
+title: Gerenciar pastas
 feature: Workspace Basics
 exl-id: dcc78e0e-49d6-40bf-a606-9a7f3f19911c
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 91%
+source-wordcount: '428'
+ht-degree: 86%
 
 ---
 
 
 # Gerenciar pastas
 
-Há duas maneiras de se gerenciar pastas no espaço de trabalho. De dentro da própria pasta ou a partir de uma ou mais pastas selecionadas na lista de projetos. O gerenciamento de pastas inclui renomear, mover ou excluir pastas.
+Há duas maneiras de se gerenciar pastas no espaço de trabalho. De dentro da própria pasta ou a partir de uma ou mais pastas selecionadas na lista de projetos. Gerenciar pastas inclui opções para renomear, mover ou excluir pastas.
 
 ## Renomear pastas
 
@@ -26,13 +26,13 @@ Para renomear pastas no espaço de trabalho:
 * Selecione a pasta que deseja renomear na [lista de projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md#project-list).
 
    1. Selecione **[!UICONTROL Renomear]** nas [ações](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions) disponíveis no menu de contexto ![Mais](/help/assets/icons/More.svg) da pasta selecionada ou na barra de ação azul.
-   1. Na caixa de diálogo **[!UICONTROL Renomear: *nome da pasta *]**, digite um novo nome e selecione&#x200B;**[!UICONTROL Salvar &#x200B;]**.
+   1. Na caixa de diálogo **[!UICONTROL Renomear: *nome da pasta *]**, digite um novo nome e selecione**[!UICONTROL Salvar ]**.
 
 * Dentro da pasta que deseja renomear.
 
    1. Selecione **[!UICONTROL Renomear pasta]** em ![Mais](/help/assets/icons/More.svg) na [área do título](/help/analysis-workspace/build-workspace-project/freeform-overview.md#title-area).
 
-   1. Na caixa de diálogo **[!UICONTROL Renomear: *nome da pasta *]**, digite um novo nome e selecione&#x200B;**[!UICONTROL Salvar &#x200B;]**.
+   1. Na caixa de diálogo **[!UICONTROL Renomear: *nome da pasta *]**, digite um novo nome e selecione**[!UICONTROL Salvar ]**.
 
 
 ## Mover pastas

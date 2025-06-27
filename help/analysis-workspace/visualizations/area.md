@@ -1,13 +1,13 @@
 ---
-description: A visualização da área se parece com um gráfico de linhas, mas apresenta uma área colorida abaixo da linha.
-title: Área e área empilhada
+description: Saiba mais sobre a área e a visualização de área empilhada.
+title: Área (empilhada)
 feature: Visualizations
 exl-id: d9662b29-fc41-4074-8cf6-031202994ece
 role: User
-source-git-commit: 0859a35bb0f34800b970ff256bc9b740ffe424c9
-workflow-type: ht
-source-wordcount: '204'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 94%
 
 ---
 
@@ -64,6 +64,6 @@ Use a opção **[!UICONTROL 100% empilhada]** em ![Setting](/help/assets/icons/S
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Menu de contexto de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

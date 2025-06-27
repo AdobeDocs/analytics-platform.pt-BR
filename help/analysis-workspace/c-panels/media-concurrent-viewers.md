@@ -1,13 +1,13 @@
 ---
-title: Painel de visualizadores simultâneos de mídia
-description: Como usar e interpretar o painel Visualizadores simultâneos de mídia no Analysis Workspace.
+title: Painel Visualizadores simultâneos de mídia
+description: Saiba como usar e interpretar o painel Visualizadores simultâneos de mídia no Analysis Workspace.
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
-workflow-type: ht
-source-wordcount: '1174'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '1175'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Visualizadores simultâneos de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [painel Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) para a versão do_ ![Adobe  Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Visualizadores simultâneos de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [painel Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) para a versão do_ ![Adobe  Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ No Analysis Workspace, Visualizadores simultâneos é o número de visitantes ú
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [painel Visualizadores simultâneos de mídia](https://video.tv.adobe.com/v/35023/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [painel Visualizadores simultâneos de mídia](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -118,7 +118,7 @@ Uma tabela de forma livre não está disponível nessa visualização.  Para exi
 | Por que minha granularidade mudou? | Essa visualização é limitada a 1440 linhas de dados (por exemplo, 24 horas na granularidade no nível de minuto).  Se uma combinação de intervalo de datas e granularidade resultar em mais de 1440 linhas, a granularidade será atualizada automaticamente para ajustar o intervalo de datas completo.<br><br>Ao alterar de um intervalo de datas maior para menor, a granularidade será atualizada para o detalhe mais baixo permitido quando o intervalo de datas for alterado. Para exibir uma granularidade mais alta, edite o painel e recrie. |
 | Como comparar nomes de vídeos, segmentos, tipos de conteúdo e outros? | Para comparar esses itens em uma única visualização, arraste segmentos, dimensões ou itens de dimensão específicos para o segmento de detalhamento em série.<br><br>A visualização é limitada a 10 detalhamentos.  Para exibir mais de 10, você deve usar vários painéis. |
 | Como comparar intervalos de datas? | Para comparar intervalos de data em uma única visualização, use os detalhamentos por séries arrastando dois ou mais intervalos de datas.  Os intervalos de datas substituem o intervalo de datas do painel. |
-| Como alterar o tipo de visualização? | Esse painel permite somente a visualização de linha para a série de tempo. |
+| Como alterar o tipo de visualização? | Esse painel permite somente a visualização de linha para a série temporal. |
 | Posso executar a detecção de anomalias? | Não.  A detecção de anomalias não está disponível para esse painel. |
 | Por que usar pessoas únicas em vez de sessões ativas? | O uso de pessoas únicas permite a remoção de picos indesejados nos limites de exibição (onde as sessões terminam e começam ao mesmo tempo). |
 | O que significa ter visualizadores simultâneos com maior granularidade do que um minuto? | Com uma granularidade maior que um minuto, visualizadores simultâneos é a soma de visualizadores simultâneos exclusivos para todos os minutos desse intervalo de tempo.  Por exemplo, na granularidade de nível de hora, os visualizadores simultâneos são a soma de visualizadores simultâneos exclusivos para todos os minutos dentro da hora. |
@@ -130,6 +130,6 @@ Uma tabela de forma livre não está disponível nessa visualização.  Para exi
 >[!MORELIKETHIS]
 >
 >[Criar um painel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Painel de tempo gasto na reprodução de mídia](media-playback-time-spent.md)
->[Painel de média de público-alvo por minuto de mídia](average-minute-audience-panel.md)
+>>[Painel de tempo gasto na reprodução de mídia](media-playback-time-spent.md)
+>>[Painel de média de público-alvo por minuto de mídia](average-minute-audience-panel.md)
 >

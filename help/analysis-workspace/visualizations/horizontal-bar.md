@@ -1,13 +1,13 @@
 ---
-description: Esta visualização mostra barras horizontais que representam vários valores de uma ou mais métricas.
-title: Barra horizontal e Barra horizontal empilhada
+description: Saiba como usar barras horizontais para representar vários valores em uma ou mais métricas.
+title: Barra Horizontal E Barra Horizontal Empilhada
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 89%
 
 ---
 
@@ -60,8 +60,8 @@ Use a opção **[!UICONTROL 100% empilhado]** em ![Configurações](/help/ass
 
 >[!MORELIKETHIS]
 >
->[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Menu de contexto de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Adicionar uma visualização em um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

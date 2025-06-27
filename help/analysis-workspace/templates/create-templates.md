@@ -1,13 +1,13 @@
 ---
-description: Uma visão geral de como usar modelos padrão no Analysis Workspace.
-title: Usar modelos
+description: Saiba como criar e gerenciar modelos no Analysis Workspace.
+title: Criar E Gerenciar Modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: 23cdf02f-56a1-4465-ae7f-b3a1bcad28af
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
-workflow-type: ht
-source-wordcount: '1850'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '1851'
+ht-degree: 99%
 
 ---
 

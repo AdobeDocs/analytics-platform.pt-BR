@@ -1,26 +1,26 @@
 ---
-description: Saiba mais sobre exemplos de casos de uso para análise de coorte.
+description: Saiba mais sobre alguns exemplos de casos de uso para análise de coorte.
 keywords: Analysis Workspace
-title: Casos de uso da análise de coorte
+title: Xases de uso da análise de coorte
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 52%
+source-wordcount: '974'
+ht-degree: 51%
 
 ---
 
-# [!UICONTROL Casos de uso da análise de coorte]
+# Casos de uso da análise de coorte
 
-Este artigo descreve alguns exemplos de casos de uso da [!UICONTROL Análise de coorte].
+Este artigo descreve alguns exemplos de casos de uso da análise de coorte.
 
 ## Caso de uso sobre interação com o aplicativo
 
 Suponha que você queira analisar o modo como os usuários usam o aplicativo instalado. Eles instalam e nunca usam o aplicativo? Eles usam por um tempo e depois desistem? Ou eles continuam usando ao longo do tempo?
 
-Você pode criar uma [!UICONTROL análise de coorte] de seis meses:
+Você pode criar uma análise de coorte de seis meses.
 
 **Granularidade**: mensalmente, de janeiro a junho de 2015
 

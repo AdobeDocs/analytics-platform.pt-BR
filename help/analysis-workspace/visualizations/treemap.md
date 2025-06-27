@@ -1,13 +1,13 @@
 ---
-description: Exibe dados hierárquicos (estruturados em formato de árvore) como um conjunto de retângulos aninhados.
+description: Entenda como exibir dados hierárquicos (estruturados em árvore) como um conjunto de retângulos aninhados.
 title: Mapas de árvore
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
-workflow-type: ht
-source-wordcount: '164'
-ht-degree: 100%
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="workspace_treemap_button"
->title="Mapas de árvore"
+>title="Mapa de árvore"
 >abstract="Crie uma visualização de mapa de árvore para mostrar dados hierárquicos (estruturados em árvore) com retângulos aninhados."
 
 <!-- markdownlint-enable MD034 -->
@@ -49,8 +49,8 @@ Veja ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualizaçã
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Menu de contexto de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
 

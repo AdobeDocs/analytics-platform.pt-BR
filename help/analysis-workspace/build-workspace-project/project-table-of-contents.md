@@ -1,14 +1,14 @@
 ---
-description: Informações sobre a funcionalidade do índice em um projeto do Workspace
+description: Saiba como usar o índice em um projeto no Analysis Workspace para acessar rapidamente painéis e visualizações.
 keywords: Analysis Workspace
-title: 'Índice '
+title: Sumário
 feature: Workspace Basics
 role: User
 exl-id: 4eb7de7a-ec40-4a59-afc4-94131e91a35f
-source-git-commit: 51a6341734163fdd6b994ae9cec53ef034959896
-workflow-type: ht
-source-wordcount: '200'
-ht-degree: 100%
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um índice](https://video.tv.adobe.com/v/35023/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um índice](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -46,4 +46,4 @@ Para exibir o índice de um projeto:
 
 >[!MORELIKETHIS]
 >
->* [Simplifique a navegação no painel com o novo recurso de índice do Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=pt)
+>* [Simplifique a navegação no painel com o novo recurso de índice do Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)
