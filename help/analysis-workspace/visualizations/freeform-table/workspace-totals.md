@@ -1,17 +1,17 @@
 ---
-description: Saiba como os totais do Workspace são calculados.
-title: Totais do Workspace
+description: Saiba como os totais em tabelas de forma livre no Analysis Workspace são calculados.
+title: Totais
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 94%
+source-wordcount: '488'
+ht-degree: 91%
 
 ---
 
-# Totais do Workspace {#workspace-totals}
+# Totais {#workspace-totals}
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
