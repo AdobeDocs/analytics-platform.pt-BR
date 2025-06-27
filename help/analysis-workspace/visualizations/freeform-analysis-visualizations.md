@@ -16,7 +16,7 @@ ht-degree: 98%
 
 O Workspace oferece várias visualizações que permitem criar representações visuais dos seus dados. Como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão, entre outros.
 
-##  Tipos
+## Tipos
 
 Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 

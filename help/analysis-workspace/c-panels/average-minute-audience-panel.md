@@ -33,7 +33,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Média de público-alvo por minuto de mídia no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o painel [Média de público-alvo por minuto de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Média de público-alvo por minuto de mídia no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o painel [Média de público-alvo por minuto de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -187,6 +187,6 @@ O painel Média de público-alvo por minuto de mídia usa apenas a métrica de m
 >[!MORELIKETHIS]
 >
 > [Criar um painel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> > [Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
-> > [Painel de tempo gasto com a reprodução da mídia](media-playback-time-spent.md)
+> &#x200B;> [Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
+> &#x200B;> [Painel de tempo gasto com a reprodução da mídia](media-playback-time-spent.md)
 >
