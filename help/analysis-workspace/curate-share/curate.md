@@ -1,14 +1,14 @@
 ---
-description: A preparação permite limitar os componentes antes de compartilhar um projeto.
+description: Saiba como preparar projetos no Analysis Workspace. A preparação limita o acesso a componentes antes de compartilhar um projeto.
 keywords: Preparação do Analysis Workspace
-title: Preparar projetos do
+title: Preparar projetos
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
-source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 55%
+source-wordcount: '500'
+ht-degree: 52%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 55%
 A preparação permite limitar os componentes (dimensões, métricas, segmentos, intervalos de datas) antes de compartilhar um projeto. Quando um recipient abre o projeto, ele vê um conjunto limitado de componentes que você preparou para eles. A preparação é uma etapa opcional, mas recomendada, antes de compartilhar um projeto.
 
 >[!NOTE]
-> Os perfis de produto são o principal mecanismo que controla os componentes que um usuário pode ver. Eles são gerenciados por meio do [Admin Console da Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-tool-experience-cloud). A preparação é um segmento secundário.
+> Os perfis de produto são o principal mecanismo que controla os componentes que um usuário pode ver. Eles são gerenciados por meio do [Admin Console da Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-tool-experience-cloud). A preparação é um segmento secundário.
 
 ## Aplicar preparação de projeto
 

@@ -4,7 +4,7 @@ title: Métricas
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 42%
@@ -44,7 +44,7 @@ Você pode usar ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para conf
 
 Procurar um projeto agendado usando ![Pesquisar](/help/assets/icons/Search.svg). Você também pode ver se algum filtro é aplicado no painel Filtros. Para remover um filtro, selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para um filtro. Para remover todos os filtros, selecione **[!UICONTROL Limpar tudo]**.
 
-Para editar um projeto agendado, selecione o título do projeto agendado. Use a caixa de diálogo **[!UICONTROL Editar projeto agendado]** para atualizar os detalhes do agendamento. Consulte [Enviar arquivos a outros](../analysis-workspace/export/t-schedule-report.md) para obter mais detalhes.
+Para editar um projeto agendado, selecione o título do projeto agendado. Use a caixa de diálogo **[!UICONTROL Editar projeto agendado]** para atualizar os detalhes do agendamento. Consulte [Enviar arquivos a outros](../analysis-workspace/curate-share/t-schedule-report.md) para obter mais detalhes.
 
 ![Editar projeto agendado](assets/edit-scheduled-project.png)
 

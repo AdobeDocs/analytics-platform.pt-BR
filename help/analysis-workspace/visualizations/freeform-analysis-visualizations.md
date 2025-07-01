@@ -5,10 +5,10 @@ title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 9c05319ceacb7287af7f15cfe56b8048a718559d
 workflow-type: tm+mt
 source-wordcount: '1622'
-ht-degree: 98%
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 O Workspace oferece várias visualizações que permitem criar representações visuais dos seus dados. Como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão, entre outros.
 
-## Tipos
+##  Tipos
 
 Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
@@ -139,11 +139,11 @@ Use o menu de contexto (disponível por meio da seleção alternativa, como, por
 | Opção | Descrição |
 | --- | --- |
 | **[!UICONTROL Inserir visualização copiada]** | Colar (inserir) uma visualização copiada em outro lugar dentro do projeto ou em um projeto totalmente diferente. |
-| **[!UICONTROL Copiar dados para a área de transferência]** | Copiar dados da visualização para a área de transferência. |
-| **[!UICONTROL Copiar seleção para a área de transferência]** | Copiar a seleção da visualização para a área de transferência. |
-| **[!UICONTROL Baixar itens como CSV (*nome da dimensão*)]** | Baixar os itens de dimensão (até, no máximo, 50 mil) da visualização para o seu dispositivo local. Até 50 mil itens de dimensão para a dimensão selecionada. |
+| **[!UICONTROL Copiar dados para a área de transferência]** | [Copiar dados](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) da visualização para a área de transferência. |
+| **[!UICONTROL Copiar seleção para a área de transferência]** | [Copie a seleção](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) da visualização para a área de transferência. |
+| **[!UICONTROL Baixar itens como CSV (*nome da dimensão*)]** | [Baixe os itens de dimensão](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (até um máximo de 50.000) da visualização em seu dispositivo local. Até 50 mil itens de dimensão para a dimensão selecionada. |
 | **[!UICONTROL Copiar visualização]** | Copiar a visualização, para que você possa inseri-la em outro lugar dentro do projeto ou em um projeto totalmente diferente. |
-| **[!UICONTROL Baixar dados como CSV]** | Baixar os dados exibidos da visualização para o seu dispositivo local. |
+| **[!UICONTROL Baixar dados como CSV]** | [Baixe os dados exibidos](/help/analysis-workspace/export/download-send.md#download-as-csv) da visualização no dispositivo local. |
 | **[!UICONTROL Exportar tabela completa]** | Exportar a tabela completa para locais designados na nuvem. Consulte [Exportar relatórios do Customer Journey Analytics para a nuvem](../export/export-cloud.md) |
 | **[!UICONTROL Duplicar visualização]** | Fazer uma duplicata exata da visualização. |
 | **[!UICONTROL Editar descrição]** | Adicionar (ou editar) uma descrição em texto para a visualização. Consulte [Texto](text.md). |
