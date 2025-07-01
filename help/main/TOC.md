@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: a3442e4cbb949228213a606b87ff65c8c562895b
 workflow-type: tm+mt
 source-wordcount: '1251'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -399,8 +399,8 @@ ht-degree: 96%
    + [Filtragem de dimensões](../report-builder/filter-dimensions.md)
    + [Gerenciar blocos de dados](../report-builder/manage-reportbuilder.md)
    + [Agendar pastas de trabalho para email](../report-builder/schedule-reportbuilder.md)
-   + [Agendar pastas de trabalho para exportações em nuvem](../report-builder/report-builder-export.md)
-   + [Gerenciar agendamentos da pasta de trabalho](/help/report-builder/manage-schedules-reportbuilder.md)
+   + [Agendar pastas de trabalho para exportações na nuvem](../report-builder/report-builder-export.md)
+   + [Gerenciar agendamentos de pastas de trabalho](/help/report-builder/manage-schedules-reportbuilder.md)
    + [Rótulos restritos](../report-builder/restricted-labels.md)
    + [Configurações do Report Builder](../report-builder/report-builder-settings.md)
 

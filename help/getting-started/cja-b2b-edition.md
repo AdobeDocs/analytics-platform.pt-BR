@@ -9,7 +9,7 @@ exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
 source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ O Customer Journey Analytics B2B Edition ajuda as empresas B2B a alinhar suas eq
 >[!MORELIKETHIS]
 >
 >[Conceitos e recursos B2B](cja-b2b-concepts-features.md)
->&#x200B;>[Guia de início rápido B2B](cja-b2b-quick-start-guide.md)
->&#x200B;>[Guia de transição B2B](cja-b2b-transition.md)
->&#x200B;>[Casos de uso B2B](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+>>[Guia de início rápido B2B](cja-b2b-quick-start-guide.md)
+>>[Guia de transição B2B](cja-b2b-transition.md)
+>>[Casos de uso B2B](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >

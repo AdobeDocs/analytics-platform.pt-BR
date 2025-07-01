@@ -2,7 +2,7 @@
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '4947'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 # Trechos
@@ -124,20 +124,20 @@ Um modelo de atribuição determina quais itens de dimensão recebem crédito po
 
 {style="table-layout:auto"}
 
-## Contêiner de atribuição {#attribution-container}
+## Container de atribuição {#attribution-container}
 
-Um contêiner de atribuição define o escopo desejado para a atribuição. As opções possíveis são:
+Um container de atribuição define o escopo desejado para a atribuição. As opções disponíveis são:
 
 * **Sessão:** retroage até o início da sessão onde ocorreu uma conversão. As janelas de retrospectiva de sessão respeitam o [tempo limite de sessão](/help/data-views/create-dataview.md#session-settings) modificado em uma visualização de dados.
-* **Pessoa**: verifica as conversões do escopo do contêiner de pessoas.
-* **Conta Global** [!BADGE B2B edition]{type=Informative}: verifica as conversões do escopo do contêiner de contas globais.
-* **Contas** [!BADGE B2B edition]{type=Informative}: verifica as conversões do escopo do contêiner de pessoas.
-* **Oportunidade** [!BADGE B2B edition]{type=Informative}: verifica as conversões do escopo do contêiner de oportunidade.
-* **Grupo de compras** [!BADGE B2B edition]{type=Informative}: verifica as conversões do escopo do contêiner de grupo de compras.
+* **Pessoa**: analisa as conversões do escopo do container de pessoa.
+* **Conta global** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de contas globais.
+* **Contas** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de pessoa.
+* **Oportunidade** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de oportunidade.
+* **Grupo de compras** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de grupo de compras.
 
 ## Janela de retrospectiva de atribuição {#attribution-lookback-window}
 
-Uma janela de retrospectiva de atribuição é a quantidade de tempo que uma conversão deve retroceder para incluir pontos de contato. Se um item de dimensão for definido fora da janela de retrospectiva, o valor não será incluído em nenhum cálculo de atribuição.
+Janela de retrospectiva de atribuição é a quantidade de tempo que uma conversão deve retroceder para incluir pontos de contato. Se um item de dimensão for definido fora da janela de retrospectiva, o valor não será incluído em nenhum cálculo de atribuição.
 
 * **14 dias**: retroage até 14 dias a partir do momento em que a conversão ocorreu.
 * **30 dias**: retroage até 30 dias a partir do momento em que a conversão ocorreu.
@@ -154,20 +154,20 @@ Considere o exemplo a seguir:
 1. Em 18 de setembro, a pessoa acessa seu site novamente por meio de um link de redes sociais que recebeu de um amigo. Eles adicionam vários itens ao carrinho, mas não compram nada.
 1. Em 24 de setembro, sua equipe de marketing envia um email com um cupom para alguns dos itens em seu carrinho. Eles aplicam o cupom, mas visitam vários outros sites para ver se existem outros cupons disponíveis. Eles encontram outro cupom por meio de um anúncio de exibição e, em seguida, fazem uma compra de US$ 50.
 
-Dependendo do modelo de atribuição, o contêiner e os canais recebem crédito diferente. Consulte os exemplos na tabela abaixo:
+Dependendo do modelo de atribuição, o container e os canais recebem créditos diferentes. Veja exemplos na tabela abaixo:
 
-| Modelo | Container | Janela de pesquisa | Explicação |
+| Modelo | Container | Janela de retrospectiva | Explicação |
 |---|---|---|---|
-| Primeiro contato | Sessão | 30 dias | A atribuição considera somente a terceira visita. Entre email e exibição, o email foi o primeiro, portanto, o email recebe 100% de crédito pela compra de US$ 50. |
-| Primeiro contato | Pessoa | 30 dias | A atribuição considera todas as três visitas. A pesquisa paga foi a primeira, portanto recebe 100% de crédito pela compra de US$ 50. |
-| Linear | Sessão | 30 dias | O crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25 dólares. |
-| Linear | Pessoa | 30 dias | O crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 por esta compra. |
+| Primeiro contato | Sessão | 30 dias | A atribuição analisa somente a terceira visita. Entre email e exibição, o email foi o primeiro, portanto, o email recebe 100% de crédito pela compra de US$ 50. |
+| Primeiro contato | Pessoa | 30 dias | A atribuição analisa as três visitas. A pesquisa paga foi a primeira, portanto recebe 100% de crédito pela compra de US$ 50. |
+| Linear | Sessão | 30 dias | O crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25. |
+| Linear | Pessoa | 30 dias | O crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 pela compra. |
 | Forma de J | Pessoa | 30 dias | O crédito é dividido entre pesquisa paga, redes sociais, email e exibição.<ul><li>O crédito será de 60% para a exibição (US$ 30).</li><li>De 20% para a pesquisa paga (US$ 10).</li><li>Os 20% restantes são divididos entre redes sociais e email (US$ 5 para cada).</li></ul> |
 | Declínio de tempo | Pessoa | 30 dias | <ul><li>Intervalo de 0 dias entre o ponto de contato de exibição e a conversão. `2^(-0/7) = 1`</li><li>Intervalo de 0 dias entre o ponto de contato de email e a conversão. `2^(-0/7) = 1`</li><li>Intervalo de seis dias entre o ponto de contato de rede social e a conversão. `2^(-6/7) = 0.552`</li><li>Intervalo de nove dias entre o ponto de contato de pesquisa paga e a conversão. `2^(-9/7) = 0.41`</li>A normalização desses valores resulta no seguinte:<ul><li>Exibição: 33,8%, crédito de US$ 16,88</li><li>Email: 33,8%, crédito de US$ 16,88</li><li>Redes sociais: 18,6%, crédito de US$ 9,32</li><li>Pesquisa paga: 13,8%, crédito de US$ 6,92</li></ul></li></ul> |
 
 Os eventos de conversão que normalmente têm números inteiros são divididos se o crédito pertencer a mais de um canal. Por exemplo, se dois canais contribuem para um pedido usando um modelo de atribuição linear, ambos os canais recebem 0,5 desse pedido. Essas métricas parciais são somadas para todas as pessoas e depois arredondadas para o número inteiro mais próximo para fins de geração de relatórios.
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Use contêineres B2B específicos, como Contas ou Oportunidades, e janelas de pesquisa mais apropriadas (até 13 meses) para aplicar os modelos de atribuição acima em cenários B2B típicos.
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Use containers B2B específicos, como Contas ou Oportunidades, e janelas de retrospectiva mais apropriadas (até 13 meses) para aplicar os modelos de atribuição acima em cenários B2B típicos.
 
 ## Comparações de visualização de jornadas {#journey-visualization-comparisons}
 
@@ -236,7 +236,7 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 | Configuração | Descrição |
 |---|---|
 | **[!UICONTROL Importar novos dados]** | Habilite essa opção se quiser estabelecer uma conexão contínua. Com uma conexão contínua, novos lotes de dados adicionados aos conjuntos de dados ficam disponíveis automaticamente no Workspace. |
-| **[!UICONTROL Preenchimento retroativo do conjunto de dados]** | Habilitar a opção **[!UICONTROL Preenchimento retroativo de todos os dados existentes]** para garantir que todos os dados existentes sejam preenchidos retroativamente.<br/><br/>Selecione **[!UICONTROL Solicitar preenchimento retroativo]** para preencher dados históricos retroativamente por um período específico. Você pode definir até 10 períodos de preenchimento retroativo de conjunto de dados.<ol><li>Defina o período inserindo dados de início e término ou selecionando datas usando o ![Calendário](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Selecione **[!UICONTROL Preenchimento retroativo de fila]** para adicionar o preenchimento retroativo à lista, ou **[!UICONTROL Cancelar]** para cancelar.</li></ol>Para cada entrada, selecione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) para editar o período ou ![Excluir](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) para excluir a entrada.<br/><br/>Em preenchimentos retroativos:<ul><li>Você pode preencher cada conjunto de dados individualmente.</li><li>Prioriza-se a adição de novos dados a um conjunto de dados na conexão, de modo que esses dados tenham a latência mais baixa.</li><li>Qualquer dado de preenchimento retroativo (histórico) é importado mais lentamente. A quantidade de dados históricos influencia a latência.</li><li>O conector de origem do Analytics importa até 13 meses de dados (independentemente do tamanho) para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é limitado a 3 meses.</li><li>Para sandboxes de produção, se você tiver licenciado o SKU adicional que o autoriza a importar mais de 13 meses de dados históricos de preenchimento retroativo, entre em contato com a Adobe para solicitar o preenchimento retroativo estendido.</li></ul> |
+| **[!UICONTROL Preenchimento retroativo do conjunto de dados]** | Habilitar a opção **[!UICONTROL Preenchimento retroativo de todos os dados existentes]** para garantir que todos os dados existentes sejam preenchidos retroativamente.<br/><br/>Selecione **[!UICONTROL Solicitar preenchimento retroativo]** para preencher dados históricos retroativamente por um período específico. Você pode definir até 10 períodos de preenchimento retroativo de conjunto de dados.<ol><li>Defina o período inserindo dados de início e término ou selecionando datas usando o ![Calendário](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).</li><li>Selecione **[!UICONTROL Preenchimento retroativo de fila]** para adicionar o preenchimento retroativo à lista, ou **[!UICONTROL Cancelar]** para cancelar.</li></ol>Para cada entrada, selecione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) para editar o período ou ![Excluir](https://spectrum.adobe.com/static/icons/ui_18/CrossSize500.svg) para excluir a entrada.<br/><br/>Em preenchimentos retroativos:<ul><li>Você pode preencher cada conjunto de dados individualmente.</li><li>Prioriza-se a adição de novos dados a um conjunto de dados na conexão, de modo que esses dados tenham a latência mais baixa.</li><li>Qualquer dado de preenchimento retroativo (histórico) é importado mais lentamente. A quantidade de dados históricos influencia a latência.</li><li>O conector de origem do Analytics importa até 13 meses de dados (independentemente do tamanho) para sandboxes de produção. O preenchimento retroativo em sandboxes de não produção é limitado a 3 meses.</li><li>Para sandboxes de produção, se você tiver a licença do SKU adicional que autoriza a importar mais de 13 meses de dados históricos de preenchimento retroativo, entre em contato com a Adobe para solicitar o preenchimento retroativo estendido.</li></ul> |
 | **[!UICONTROL Status do lote]** | Os possíveis indicadores de status são:<ul><li>Sucesso</li><li>Processamento de X preenchimentos retroativos</li><li>Desligado</li></ul> |
 | **[!UICONTROL ID do conjunto de dados]** | Essa ID é gerada automaticamente. |
 | **[!UICONTROL Descrição]** | A descrição fornecida para esse conjunto de dados quando ele foi criado. |
