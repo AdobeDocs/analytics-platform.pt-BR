@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Você pode gerenciar os seguintes componentes:
 * [Intervalos de data](date-ranges/create.md): personalize e ajuste os intervalos de data do Analysis Workspace.
 * [Anotações](/help/components/annotations/overview.md): comunique nuances e insights de dados contextuais à sua organização.
 * [Alertas inteligentes](/help/components/c-intelligent-alerts/intelligent-alerts.md): enviam notificações sobre porcentagens alteradas ou pontos de dados específicos.
-* [Projetos agendados](/help/analysis-workspace/curate-share/t-schedule-report.md#scheduled-projects-manager): gerencie seus projetos agendados.
+* [Projetos agendados](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager): gerencie seus projetos agendados.
 * [Preferências](/help/analysis-workspace/user-preferences.md): gerencie as preferências do Analysis Workspace.
 * [Públicos-alvo](/help/components/audiences/audiences-overview.md): crie e publique públicos-alvo do Customer Journey Analytics na [Real-Time Customer Data Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/home) da Experience Platform para direcionamento e personalização.
 * [Exportações](/help/components/exports/manage-export-locations.md): gerencie sua conta de exportação e seus locais.

@@ -5,7 +5,7 @@ title: Como exportar dados do projeto
 feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 55%
@@ -35,7 +35,7 @@ Há vários métodos disponíveis quando você deseja exportar do Analysis Works
 | Método de exportação | Use esse método se desejar... |
 |---------|----------|
 | [Baixar para a sua estação de trabalho](/help/analysis-workspace/export/download-send.md) | <li>Baixar projetos para a sua estação de trabalho pessoal.</li><li>Baixar somente dados ad hoc (não agendado).</li> <li>Baixe no máximo 50.000 linhas.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
-| [Enviar a outros usuários](/help/analysis-workspace/curate-share/t-schedule-report.md) | <li>Enviar dados do Customer Journey Analytics exportados por email a outros usuários da sua organização.</li><li>Envie o email ad hoc ou de acordo com um agendamento.</li> <li>Inclua no máximo 50.000 linhas no email.</li> <!--true?--> |
+| [Enviar a outros usuários](/help/analysis-workspace/export/t-schedule-report.md) | <li>Enviar dados do Customer Journey Analytics exportados por email a outros usuários da sua organização.</li><li>Envie o email ad hoc ou de acordo com um agendamento.</li> <li>Inclua no máximo 50.000 linhas no email.</li> <!--true?--> |
 | [Exportar para um aplicativo na nuvem](/help/analysis-workspace/export/export-cloud.md) | <li>Exportar para um local da nuvem, como <ul><li>Zona de destino de dados da Adobe Experience Platform</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>Exporte dados de forma ad hoc ou programada.</li><li>Armazenar quantidades maiores de dados do Customer Journey Analytics.</li><li>Exportar tabelas completas com milhares ou milhões de linhas.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
