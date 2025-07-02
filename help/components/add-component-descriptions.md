@@ -32,5 +32,5 @@ Para obter informações gerais sobre o Dicionário de Dados, consulte a [visão
 >[!MORELIKETHIS]
 >
 >[Configurações do componente de visualização de dados](/help/data-views/component-settings/overview.md)
->>[Entradas do componente do dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>&#x200B;>[Entradas do componente do dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

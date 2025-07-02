@@ -60,7 +60,7 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
 ## Usar dimensões numéricas como métricas em diagramas de fluxo {#numeric}
 
-Você pode usar uma dimensão numérica para inserir métricas na visualização [!UICONTROL  Fluxo].
+Você pode usar uma dimensão numérica para inserir métricas na visualização [!UICONTROL &#x200B; Fluxo].
 
 1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Espaço de trabalho, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
