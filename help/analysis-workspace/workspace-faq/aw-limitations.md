@@ -1,13 +1,13 @@
 ---
 description: Saiba mais sobre as limitações conhecidas do Adobe Analysis Workspace e seus componentes relacionados
-title: Limitações conhecidas do Analysis Workspace
+title: Limitações Conhecidas Do Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '313'
+ht-degree: 98%
 
 ---
 

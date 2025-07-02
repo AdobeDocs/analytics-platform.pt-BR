@@ -1,14 +1,14 @@
 ---
-title: Casos de uso para visualizações de dados no Customer Journey Analytics
-description: Vários casos de uso que mostram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics
+title: Casos de uso de visualizações de dados
+description: Saiba mais sobre vários casos de uso que mostram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 33%
+source-wordcount: '1358'
+ht-degree: 30%
 
 ---
 
@@ -39,7 +39,7 @@ Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica
 1. Abra a seção **[!UICONTROL Incluir/Excluir Valores]** e especifique o seguinte:
    1. Habilitar **[!UICONTROL Definir inclusão/exclusão de valores]**.
    1. Selecione **[!UICONTROL Se todos os critérios forem atendidos]** de **[!UICONTROL Corresponder]**.
-   1. Especifique `confirmation`. Este texto para **[!UICONTROL page_title]** indica que esta página está relacionada à colocação de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores incluídos/excluídos pode ser usada em qualquer outra métrica. Funciona com Attribution IQ, segmentos e em qualquer lugar que você puder usar as métricas padrão.
+   1. Especifique `confirmation`. O texto para **[!UICONTROL page_title]** indica que esta página está relacionada à colocação de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores incluídos/excluídos pode ser usada em qualquer outra métrica. Essas métricas funcionam com atribuição, segmentos e em qualquer lugar que você puder usar as métricas padrão.
 
    ![Dimension para métrica](../assets/string-to-metric.gif){width=100%}
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
@@ -60,9 +60,9 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
 ## Usar dimensões numéricas como métricas em diagramas de fluxo {#numeric}
 
-Você pode usar uma dimensão numérica para inserir métricas na visualização [!UICONTROL &#x200B; Fluxo].
+Você pode usar uma dimensão numérica para inserir métricas na visualização [!UICONTROL  Fluxo].
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Espaço de trabalho, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
 
 ![Fluxo do Canal de marketing dos emails para Saída/pedidos.](../assets/flow.png)
@@ -73,7 +73,7 @@ Esse recurso é especificamente aplicável a campos com base em matriz. A funcio
 
 Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de dados para focalizar produtos que geraram vendas superiores a US$ 50. Portanto, se você tiver um pedido que inclua uma compra de produto de US$ 50 e uma compra de produto de US$ 25, a funcionalidade de inclusão/exclusão removerá a compra de produto de US$ 25, não o pedido inteiro.
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema **[!UICONTROL Receita]** para a área **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema **[!UICONTROL Receita]** para a área **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
 1. Selecione a métrica e configure o seguinte no lado direito:
 a. Em **[!UICONTROL Formato]**, selecione **[!UICONTROL Moeda]**.
 b. Em **[!UICONTROL Moeda]**, selecione **[!UICONTROL USD]**.
@@ -86,7 +86,7 @@ Essas novas configurações permitem que você visualize somente a receita de al
 
 ## Usar a configuração [!UICONTROL Nenhuma opção de valor] {#no-value}
 
-Sua empresa pode ter passado tempo treinando os usuários para esperar &quot;Não especificado&quot; para dimensões em relatórios. O padrão para dimensões em Visualizações de dados é &quot;Sem valor&quot;. No entanto, é possível especificar por dimensão como Nenhum valor deve ser relatado. Consulte as opções Nenhum valor para um componente de dimensão.
+Sua empresa pode ter passado tempo treinando os usuários para esperar &quot;Não especificado&quot; para dimensões em relatórios. O padrão para dimensões em visualizações de dados é *Nenhum valor*. No entanto, é possível especificar por dimensão como Nenhum valor deve ser relatado. Consulte as opções **[!UICONTROL Nenhum valor]** para um componente de dimensão.
 
 ![Sem opções de valor](../assets/no-value-options.gif){width=100%}
 
@@ -112,11 +112,11 @@ Você pode determinar se uma sessão é realmente a primeira sessão de um usuá
 
 Uma dimensão e duas métricas facilitam esse relatório:
 
-* [Tipo de sessão](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-reference) - Esta dimensão tem dois valores: [!UICONTROL Novo] e [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item da linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão.
+* [Tipo de sessão](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Esta dimensão tem dois valores: [!UICONTROL Novo] e [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item da linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão.
 
-* [Primeiras sessões](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-reference). A métrica Primeiras sessões é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
+* [Primeiras sessões](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference). A métrica Primeiras sessões é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
 
-* [Sessões de Retorno](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-reference) A métrica de Sessões de Retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
+* [Sessões de Retorno](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) A métrica de Sessões de Retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
 
 Para acessar os componentes:
 
@@ -127,8 +127,7 @@ Para acessar os componentes:
 As novas sessões são relatadas com precisão quase sempre. As únicas exceções são:
 
 * Quando uma primeira sessão ocorreu antes da janela de retrospectiva de 13 meses. <br/>Esta sessão foi ignorada.
-
-* Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios. <br/>Por exemplo, você executa um relatório de 1º de junho a 15 de junho de 2022. A janela de retrospectiva se estenderia de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1º de junho de 2022, ela será incluída na janela de retrospectiva. E todas as sessões na janela de relatórios são contadas como sessões de retorno.
+* Quando uma sessão passa pela janela de retrospectiva e pela janela de relatórios.<br/>Por exemplo, você executa um relatório de 1º de junho de 2022 a 15 de junho de 2022. A janela de retrospectiva se estenderia de 1º de maio de 2021 a 31 de maio de 2022. Se uma sessão tiver início em 30 de maio de 2022 e terminar em 1º de junho de 2022, ela será incluída na janela de retrospectiva. E todas as sessões na janela de relatórios são contadas como sessões de retorno.
 
 ## Usar as funcionalidades de Data e Data e hora {#date}
 

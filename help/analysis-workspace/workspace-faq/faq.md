@@ -1,13 +1,13 @@
 ---
-description: Conheça as perguntas frequentes sobre o espaço de trabalho e veja dicas de solução de problemas.
+description: Perguntas frequentes sobre o Espaço de trabalho
 title: Perguntas frequentes
 feature: FAQ
 exl-id: d7233b26-9887-4b71-ad46-3c6ffe27d904
 role: User
-source-git-commit: f230283c69b2d8339d7bb2e3b170de54b9497135
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 60%
+source-wordcount: '226'
+ht-degree: 100%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 60%
 
 | Pergunta | Resposta |
 |--- |--- |
-| **Quais são os pré-requisitos para usar o Analysis Workspace?** | O uso do Analysis Workspace no Customer Journey Analytics requer uma implementação funcional do Customer Journey Analytics. Verifique se sua organização está enviando dados para a Adobe Experience Platform antes de usar o aplicativo. |
+| **Quais são os pré-requisitos para usar o Analysis Workspace?** | O uso do Analysis Workspace no Customer Journey Analytics requer uma implementação funcional do Customer Journey Analytics. Verifique se a sua organização está enviando dados à Adobe Experience Platform antes de usar o aplicativo. |
 | **Quais são os requisitos de administração e acesso para o Analysis Workspace?** | Consulte [Requisitos de administração](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
-| **O uso do Analysis Workspace afeta a coleta de dados?** | Como o Analysis Workspace é uma ferramenta de relatórios, ela não exerce impacto na coleta de dados. Se você arrastar componentes indiscriminadamente para um projeto para ver o que acontece, não haverá nenhuma repercussão. Arraste diferentes combinações de dimensões e métricas para o projeto do seu Workspace para ver o que está disponível. Se você arrastar acidentalmente um componente inválido para o projeto do seu espaço de trabalho ou quiser voltar uma etapa, pressione *ctrl+z* (Windows) ou *cmd+z* (macOS) para desfazer a última ação. Você também pode começar com uma tabulação limpa. Para fazer isso, selecione **[!UICONTROL Projeto]** > **[!UICONTROL Novo]** no menu Workspace. |
-| **Como posso implementar o Analysis Workspace?** | Não é necessária nenhuma implementação específica. O Analysis Workspace está disponível para todas as empresas com acesso ao Customer Journey Analytics. No entanto, as permissões padrão de conteúdo (como componentes de projeto) se aplicam para preparar e compartilhar projetos. Consulte [Requisitos de administração e acesso](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
+| **O uso do Analysis Workspace afeta a coleta de dados?** | Como o Analysis Workspace é uma ferramenta de relatórios, ela não exerce impacto na coleta de dados. Se você arrastar componentes indiscriminadamente para um projeto para ver o que acontece, não haverá nenhuma repercussão. Arraste diferentes combinações de dimensões e métricas para o projeto do seu Workspace para ver o que está disponível. Se você arrastar acidentalmente um componente inválido até o projeto do espaço de trabalho ou quiser reverter uma etapa, pressione *Ctrl + Z* (Windows) ou *Cmd + Z* (macOS) para desfazer a última ação realizada. Também é possível começar do zero. Para isso, selecione **[!UICONTROL Projeto]** > **[!UICONTROL Novo]** no menu do espaço de trabalho. |
+| **Como posso implementar o Analysis Workspace?** | Não é necessária nenhuma implementação específica. O Analysis Workspace está disponível para todas as empresas que têm acesso ao Customer Journey Analytics. No entanto, as permissões padrão de conteúdo (como componentes de projeto) se aplicam para preparar e compartilhar projetos. Consulte [Requisitos de administração e acesso](/help/analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md). |
 | **Como posso otimizar o desempenho do Analysis Workspace?** | Consulte [Otimizar o desempenho](/help/technotes/optimizing-performance.md). |

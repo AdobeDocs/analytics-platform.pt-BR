@@ -1,13 +1,13 @@
 ---
-description: Recursos de suporte para acessibilidade no Analysis Workspace
-title: Acessibilidade no Analysis Workspace
+description: Saiba mais sobre os recursos de suporte de acessibilidade no Analysis Workspace.
+title: Acessibilidade No Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: dca8b99dad97e939e8021a681cb21ab14ca1ff87
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 100%
+source-wordcount: '545'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,7 @@ O [!UICONTROL Analysis Workspace] fornece algumas ferramentas que o tornam acess
 A navegação no [!UICONTROL Analysis Workspace] funciona de cima para baixo e da esquerda para a direita. Os seguintes elementos de navegação facilitam a acessibilidade:
 
 * A tecla **[!UICONTROL Tab]** ativa atalhos de referência, permitindo a movimentação entre seções maiores dentro do espaço de trabalho. No painel esquerdo, **[!UICONTROL Tab]** também permite mover-se de uma opção arrastável para a próxima.
-* Os botões ◀︎ e ▶︎ possibilitam a movimentação entre elementos individuais depois que a tecla **[!UICONTROL Tab]** realça um elemento.
+* A ◀︎ e a ▶︎ se movem entre elementos individuais depois que a tecla **[!UICONTROL Tab]** realçou um elemento.
 * Pressionar a tecla **[!UICONTROL F6]** leva você até o primeiro painel no projeto e move-se entre as visualizações desse painel. Em seguida, ela leva você até o próximo painel no projeto e o processo se repete.
 * Aplicamos indicadores de foco para que os usuários de teclado com visão tenham uma indicação clara de qual elemento da interface está selecionado. O indicador é uma borda azul que realça o painel em foco. Além disso, a funcionalidade recém-selecionada é destacada com um plano de fundo cinza, bem como a seleção dentro da funcionalidade. No exemplo, [!UICONTROL Componentes] e a dimensão Página foram selecionados recentemente.
 

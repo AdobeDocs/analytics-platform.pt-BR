@@ -1,13 +1,13 @@
 ---
-title: Visão geral dos intervalos de data
-description: Saiba o que são intervalos de datas e como usá-los em relatórios.
+description: Use o calendário e os intervalos de dados para especificar intervalos de datas no Analysis Workspace.
+title: Visão geral dos intervalos de datas
 feature: Calendar
 exl-id: 99b31bd9-32f1-4da1-9e47-6d90c66282c5
 role: User
-source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
-workflow-type: ht
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ Os componentes de intervalo de datas permitem definir e substituir as configura�
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/30815?format=jpeg&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 
 {{videoaa}}
 +++

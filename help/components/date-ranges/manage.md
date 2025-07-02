@@ -1,13 +1,13 @@
 ---
 title: Gerenciar intervalos de datas
-description: Compartilhar, renomear ou excluir intervalos de datas no Analysis Workspace.
+description: Entenda como gerenciar intervalos de datas no Analysis Workspace.
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 12%
+source-wordcount: '603'
+ht-degree: 30%
 
 ---
 
@@ -31,7 +31,7 @@ A lista de intervalos de datas ➊ exibe todos os intervalos de datas. A lista t
 
 | Coluna | Descrição |
 | --- | --- | 
-| ![EstruturaEstrela](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um intervalo de datas. |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um intervalo de datas. |
 | **[!UICONTROL Título e descrição]** | Para editar o título e a descrição, selecione o link de título, que abre o [Criador de intervalo de datas](/help/components/date-ranges/create.md#date-range-builder). |
 | **[!UICONTROL Proprietário]** | O proprietário do intervalo de datas. |
 | **[!UICONTROL Tags]** | As tags para esse intervalo de datas. |
@@ -44,31 +44,31 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 
 ### Barra de ação
 
-É possível agir em intervalos de datas usando a ➋ da barra de ação. A barra de ação contém as seguintes ações:
+Você pode executar ações em intervalos de datas usando a barra de ação ➋. A barra de ação contém as seguintes ações:
 
 | Ícone | Ação | Descrição |
 |:---:|---|---|
-| ![AdicionarCírculo](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Adicionar]** | Adicione outro intervalo de datas, usando o [Construtor de intervalo de datas](create.md#date-range-builder). |
+| ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Adicionar]** | Adicione outro intervalo de datas, usando o [Construtor de intervalo de datas](create.md#date-range-builder). |
 | ![Pesquisar](/help/assets/icons/Search.svg) | [!UICONTROL *Pesquisar por título*] | Quando nenhum intervalo de datas for selecionado na lista, procure intervalos de datas usando esse campo de pesquisa. |
 | ![Rótulo](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Marcar os intervalos de datas selecionados. Na caixa de diálogo **[!UICONTROL Intervalo de datas da marca]**, selecione ou desmarque as marcas para os intervalos de datas selecionados. Selecione **[!UICONTROL Salvar]** para salvar as marcas para os intervalos de datas selecionados. |
 | ![Compartilhar](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Compartilhar]** | Compartilhar os intervalos de datas selecionados. Na caixa de diálogo **[!UICONTROL Compartilhar Intervalo de datas]**, você pode ![Pesquisar](/help/assets/icons/Search.svg) *Pesquisar pessoas físicas ou grupos* ou selecionar **[!UICONTROL Organização]** ou **[!UICONTROL Grupos]**. Selecione **[!UICONTROL Salvar]** para salvar os detalhes de compartilhamento dos intervalos de datas selecionados. |
 | ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Exclua os intervalos de datas selecionados. Será solicitada uma confirmação. |
 | ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie um único intervalo de datas selecionado. Quando selecionado, você pode renomear o intervalo de datas em linha. |
-| ![CírculoDeMarcaDeSeleção](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aprovar]** | Aprove os intervalos de datas selecionados. |
+| ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aprovar]** | Aprove os intervalos de datas selecionados. |
 | ![Copiar](/help/assets/icons/Copy.svg) | **[!UICONTROL Copiar]** | Copiar os intervalos de datas selecionados. Novos intervalos de datas são criados com o mesmo nome e sufixo (Copiar) |
-| ![ArquivoCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar os intervalos de datas selecionados para um arquivo `Date ranges List.csv`. |
+| ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar os intervalos de datas selecionados para um arquivo `Date ranges List.csv`. |
 
-### Barra de filtros ativa
+### Barra de filtros ativos
 
-O ➌ da barra de filtros mostra os filtros ativos (se houver). Você pode remover um filtro rapidamente usando ![CrossSize75](/help/assets/icons/CrossSize75.svg). Se mais de um filtro for especificado, use **[!UICONTROL Remover tudo]** para remover todos os filtros.
+A barra de filtros ➌ mostra os filtros ativos (se houver). É possível remover um filtro rapidamente usando ![CrossSize75](/help/assets/icons/CrossSize75.svg). Se mais de um filtro for especificado, use **[!UICONTROL Remover tudo]** para remover todos os filtros.
 
-### Painel Filtro
+### Painel de filtro
 
-Você pode filtrar intervalos de datas usando a ➍ do painel esquerdo **[!UICONTROL Filtro]**. O painel de filtro exibe o tipo de filtro e o número de intervalos de datas que respeitam o filtro. Selecione ![Filtro](/help/assets/icons/Filter.svg) para alternar a exibição do painel de filtro.
+Você pode filtrar intervalos de datas usando o **[!UICONTROL Filtro]** no painel esquerdo ➍. O painel de filtro exibe o tipo de filtro e o número de intervalos de datas que respeitam o filtro. Selecione ![Filtro](/help/assets/icons/Filter.svg) para alternar a exibição do painel de filtros.
 
 Para filtrar a lista de filtros:
 
-1. Selecione ![Filtro](/help/assets/icons/Filter.svg) para abrir o painel Filtros. Se você precisar de mais espaço para a lista de Filtros, poderá selecionar ![Filtro](/help/assets/icons/Filter.svg) mais uma vez para fechar o painel.
+1. Selecione ![Filtro](/help/assets/icons/Filter.svg) para abrir o painel Filtros. Se você precisar de mais espaço para a lista de filtros, selecione ![Filtro](/help/assets/icons/Filter.svg) mais uma vez para fechar o painel.
 1. Você pode filtrar os intervalos de datas usando qualquer uma das [seções de filtro](#filter-sections) disponíveis.
 
    >[!INFO]
@@ -76,21 +76,21 @@ Para filtrar a lista de filtros:
    >*Itens* referem-se aos itens do intervalo de datas exibidos na [lista de intervalos de datas](#date-ranges-list).
    > 
 
-#### Filtrar seções
+#### Seções de filtro
 
 {{tagfiltersection}}
 {{ownerfiltersection}}
 {{otherfiltersfiltersection}}
 
 
-A [lista de intervalos de datas](#date-ranges-list) é atualizada automaticamente com base na sua configuração de filtro. Você pode ver os filtros configurados na [Barra de filtros ativa](#active-filter-bar).
+A [lista de intervalos de datas](#date-ranges-list) é atualizada automaticamente com base na sua configuração de filtro. É possível ver os filtros configurados na [Barra de filtros ativos](#active-filter-bar).
 
 
 ## Editar intervalos de datas
 
 Você edita um intervalo de datas de duas maneiras:
 
-* Em um projeto do Workspace, use o ícone [Informações do componente](/help/components/use-components-in-workspace.md#component-info).
+* Em um projeto do espaço de trabalho, use o ícone [Informações do componente](/help/components/use-components-in-workspace.md#component-info).
 
 * Na lista [[!UICONTROL Intervalos de datas]](#date-ranges-list), selecione o título do intervalo de datas.
 

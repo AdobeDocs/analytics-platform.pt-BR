@@ -1,13 +1,13 @@
 ---
-description: Criar, editar ou excluir alertas.
+description: Saiba como gerenciar alertas.
 title: Gerenciar alertas
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 21%
+ht-degree: 22%
 
 ---
 
@@ -93,17 +93,17 @@ Você pode filtrar a lista de alertas usando o ![Filtro](/help/assets/icons/Filt
 {{ownerfiltersection}}
 
 
-#### Seção Filtro de status habilitado
+#### Seção de filtro de status habilitado
 
 {{enabledstatusfiltersection}}
 
 
-#### Seção do filtro de tipo
+#### Seção de filtro de tipo
 
 {{typefiltersection}}
 
 
-#### Seção de filtros de outros filtros
+#### Seção de outros filtros
 
 {{otherfiltersfiltersection}}
 

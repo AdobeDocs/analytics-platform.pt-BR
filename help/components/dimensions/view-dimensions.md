@@ -1,17 +1,17 @@
 ---
-description: Exibe os cinco principais valores para dimensões que não são de tempo (e 15 para dimensões de tempo).
-title: Como visualizar dimensões no Customer Journey Analytics Workspace
+description: Saiba como visualizar detalhes e os principais valores de uma dimensão no Analysis Workspace.
+title: Visualizar dimensões
 feature: Dimensions
 exl-id: 3e620bfa-825c-4f25-956c-83c905c49f84
 role: User
-source-git-commit: 5b441472a21db99728d012c19f12d98f984086f5
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 18%
+source-wordcount: '105'
+ht-degree: 4%
 
 ---
 
-# Visualizar dimensões no Analysis Workspace
+# Visualizar dimensões
 
 Você pode usar as [informações do componente](/help/components/use-components-in-workspace.md#component-info) de um componente para mostrar os itens principais de uma dimensão.
 
