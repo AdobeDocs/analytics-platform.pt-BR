@@ -7,7 +7,7 @@ exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 82%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 82%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Dicionário de dados"
->abstract="O Dicionário de dados ajuda usuários e administradores a rastrear e entender melhor os componentes em seu ambiente do Customer Journey Analytics. <br/>Os administradores do Customer Journey Analytics são responsáveis por preparar informações sobre cada componente do Dicionário de Dados."
+>abstract="O Dicionário de dados ajuda usuários e administradores a acompanhar e entender melhor os componentes em seus ambientes do Customer Journey Analytics. <br/>Os admins do Customer Journey Analytics são responsáveis por organizar as informações sobre cada componente no Dicionário de dados."
 
 <!-- markdownlint-enable MD034 -->
 
