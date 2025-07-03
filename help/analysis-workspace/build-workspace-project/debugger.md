@@ -75,7 +75,7 @@ Para usar o depurador para uma visualização específica:
    * JSON (resposta)
    * Solicitação de cURL
 
-1. Use ![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar para a área de transferência]**d abaixo de **[!UICONTROL Solicitação de cURL]** para copiar a solicitação para a área de transferência.
+1. Use ![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar para a área de transferência]**&#x200B;d abaixo de **[!UICONTROL Solicitação de cURL]** para copiar a solicitação para a área de transferência.
 1. Passe o mouse sobre qualquer uma das áreas de texto **[!UICONTROL Solicitação]** ou **[!UICONTROL Resposta]** para revelar e selecione ![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar para a área de transferência]** para copiar o conteúdo dessa área de texto (XML ou JSON) para a área de transferência.
 
 1. Troque qualquer informação que você tenha copiado e que o Suporte da Adobe solicitou para solucionar problemas de visualização em seu projeto do Analysis Workspace.

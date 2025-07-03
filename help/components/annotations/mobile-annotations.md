@@ -40,7 +40,7 @@ Quando as anotações estão habilitadas, os ícones de anotação ficam visíve
 
 ![Criador de cartões de pontuação com destaque para os ícones de anotação.](assets/annotations-scorecard.png)
 
-Quando esses ícones estão visíveis, não é possível visualizar completamente ou interagir com as anotações na tela do criador. Use o ícone de ![círculo de reprodução](/help/assets/icons/PlayCircle.svg)**** para visualizar e interagir com as anotações conforme elas aparecem no aplicativo.
+Quando esses ícones estão visíveis, não é possível visualizar completamente ou interagir com as anotações na tela do criador. Use o ícone de ![círculo de reprodução](/help/assets/icons/PlayCircle.svg)**&#x200B;** para visualizar e interagir com as anotações conforme elas aparecem no aplicativo.
 
 As cores da anotação são selecionadas após criar a anotação no espaço de trabalho. As anotações em cinza indicam a presença de mais de uma anotação.
 
