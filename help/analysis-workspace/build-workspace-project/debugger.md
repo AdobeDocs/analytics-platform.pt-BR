@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: Depurador de projetos
 role: User
-source-git-commit: 4d902bab01c1c795cb7d852066128f6b9db0823a
+source-git-commit: ae8c1fb127accae53ab9363a8cceedd5221a245b
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '466'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ O depurador de projetos ajuda você e o Suporte da Adobe a solucionar problemas 
 
 >[!NOTE]
 >
->Para usar o depurador, você deve ter acesso de **Edição** ou **Cópia** [ao projeto](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Para usar o depurador, você deve ter acesso de **Edição** ou **Cópia** [ao projeto](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 
@@ -55,7 +55,7 @@ Para usar o depurador para uma visualização específica:
 
    * **[!UICONTROL Solicitar carimbo de data/hora]**
    * **[!UICONTROL Carimbo de data/hora de resposta]**
-   * **[!UICONTROL Tempo de solicitação]**
+   * **[!UICONTROL Solicitar horário]**
    * **[!UICONTROL Tempo na fila]**
    * **[!UICONTROL Tempo de processamento do servidor]**
    * **[!UICONTROL Tempo de pesquisa]**
@@ -75,7 +75,7 @@ Para usar o depurador para uma visualização específica:
    * JSON (resposta)
    * Solicitação de cURL
 
-1. Use ![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar para a área de transferência]**&#x200B;d abaixo de **[!UICONTROL Solicitação de cURL]** para copiar a solicitação para a área de transferência.
+1. Use ![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar para a área de transferência]** abaixo de **[!UICONTROL cURL Solicitar]** para copiar a solicitação para a área de transferência.
 1. Passe o mouse sobre qualquer uma das áreas de texto **[!UICONTROL Solicitação]** ou **[!UICONTROL Resposta]** para revelar e selecione ![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar para a área de transferência]** para copiar o conteúdo dessa área de texto (XML ou JSON) para a área de transferência.
 
 1. Troque qualquer informação que você tenha copiado e que o Suporte da Adobe solicitou para solucionar problemas de visualização em seu projeto do Analysis Workspace.
