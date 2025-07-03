@@ -1,14 +1,14 @@
 ---
 title: Visão geral de anotações
-description: Como usar anotações no Analysis Workspace.
+description: Saiba como usar anotações no Analysis Workspace.
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 97%
+source-wordcount: '320'
+ht-degree: 96%
 
 ---
 

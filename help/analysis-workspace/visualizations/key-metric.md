@@ -4,10 +4,10 @@ title: Resumo da métrica principal
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 97%
+source-wordcount: '948'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização do resumo da métrica principal no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Resumo da métrica principal](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização do resumo da métrica principal no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Resumo da métrica principal](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -141,18 +141,16 @@ Como parte das configurações de visualização, configurações específicas d
 
 ## Editar visualização
 
-Após criar a visualização, ainda é possível editar a configuração original.
+Após criar a visualização, é possível editar a configuração original.
 
-1. Clique no ícone de lápis no canto superior direito da visualização (ao lado do ícone de engrenagem de configurações).
+1. Selecione ![Editar](/help/assets/icons/Edit.svg) no canto superior direito da visualização.
 
-   ![Ícone de edição de visualização](assets/edit-icon.png)
-
-   Você será levado de volta à visualização da configuração original.
+   Você foi levado de volta à [exibição de configuração](#configure) original.
 
 1. Altere a métrica, o intervalo de datas principal, o intervalo de datas de comparação ou o segmento, como preferir.
 
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)

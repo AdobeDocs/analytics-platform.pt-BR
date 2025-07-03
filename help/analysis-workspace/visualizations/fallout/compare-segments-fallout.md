@@ -5,7 +5,7 @@ title: Aplicar Segmentos Na Análise De Fallout
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 34%
@@ -23,19 +23,20 @@ Você pode criar segmentos a partir de um ponto de contato, adicionar segmentos 
 >* Usar um segmento com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de pessoa.
 >* Usar um segmento com base em pessoas como um ponto de contato dentro de uma visualização de Fallout de contexto de sessão.
 >* Usar um segmento baseado em sessão como um ponto de contato dentro de uma visualização de Fallout de contexto de sessão.
+
 <!-- Should we add B2B context here?
-* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
 * -->
 
 ## Criar um segmento a partir de um ponto de contato
 
 1. Crie um segmento a partir de um ponto de contato específico no qual esteja interessado e que possa ser útil para aplicar a outros relatórios. Clique com o botão direito no ponto de contato e selecione **[!UICONTROL Criar segmento a partir do ponto de contato]**.
 
-   ![O menu suspenso Ponto de Contato com a opção Criar segmento a partir do ponto de contato realçada.](assets/fallout-createfilter.png)
+   ![O menu suspenso Ponto de Contato com a opção Criar segmento a partir do ponto de contato realçada.](assets/fallout-createsegment.png)
 
    O [!UICONTROL Construtor de segmentos] é aberto, preenchido previamente com o segmento sequencial pré-construído que corresponde ao ponto de contato selecionado:
 
-   ![O Construtor de segmentos exibe o segmento sequencial pré-preenchido e pré-construído.](assets/fallout-definefilter.png)
+   ![O Construtor de segmentos exibe o segmento sequencial pré-preenchido e pré-construído.](assets/fallout-definesegment.png)
 
 1. Atribua um título e uma descrição ao segmento e salve-o.
 
@@ -57,7 +58,7 @@ Ou, você pode criar um ponto de contato AND, arrastando o segmento de usuários
 1. Arraste os três segmentos até a área de soltar Segmentos na parte superior da visualização.
 
 
-1. Opcional: Você pode manter *Todas as visitas* como o contêiner padrão ou excluir o contêiner.
+1. Opcional: Você pode manter *Todas as Pessoas* como o contêiner padrão ou excluir o contêiner.
 
    ![O Fallout mostra Todas as Visitas juntamente com os dois segmentos arrastados na etapa anterior.](assets/fallout-multiplefilters.png)
 

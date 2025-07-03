@@ -1,13 +1,13 @@
 ---
-description: Os administradores podem adicionar descrições para componentes na visualização de dados ou usando o dicionário de dados
+description: Saiba como os administradores podem adicionar descrições aos componentes usando uma visualização de dados ou o dicionário de dados.
 title: Adicionar descrições de componentes
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 12%
+source-wordcount: '168'
+ht-degree: 17%
 
 ---
 
@@ -17,11 +17,11 @@ As descrições ajudam os usuários a saber como usar os vários componentes ao 
 
 Os administradores do Customer Journey Analytics podem adicionar descrições de componentes (dimensões, métricas, segmentos e intervalos de datas) em uma visualização de dados ou usando o Dicionário de dados.
 
-## Adicionar descrições em uma visualização de dados
+## Visualização de dados
 
 É possível adicionar uma descrição a um componente adicionado à visualização de dados. Consulte [Configurações do componente](/help/data-views/component-settings/overview.md).
 
-## Adicionar descrições usando o Dicionário de dados
+## Dicionário de dados
 
 O Dicionário de dados no Analysis Workspace ajuda os usuários e administradores a rastrear e entender melhor os componentes em seu ambiente Customer Journey Analytics. O Dicionário de dados inclui a capacidade, para administradores, de adicionar descrições de componentes diretamente no Analysis Workspace.
 
@@ -32,5 +32,5 @@ Para obter informações gerais sobre o Dicionário de Dados, consulte a [visão
 >[!MORELIKETHIS]
 >
 >[Configurações do componente de visualização de dados](/help/data-views/component-settings/overview.md)
->&#x200B;>[Entradas do componente do dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[Entradas do componente do dicionário de dados](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

@@ -1,23 +1,23 @@
 ---
 description: Saiba como filtrar e classificar tabelas de forma livre no Analysis Workspace.
-title: Filtrar E Classificar Tabelas
+title: Filtrar e Classificar
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '841'
 ht-degree: 97%
 
 ---
 
-# Filtrar e classificar tabelas de forma livre
+# Filtrar e classificar
 
 As tabelas de forma livre do Analysis Workspace são a base para a análise interativa de dados. Sendo assim, elas podem conter milhares de linhas de informação. Filtrar e classificar os dados pode ser essencial para encontrar as informações mais importantes de maneira eficiente.
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/30795?captions=por_br)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrar tabelas
 

@@ -4,9 +4,9 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
+source-git-commit: 4d902bab01c1c795cb7d852066128f6b9db0823a
 workflow-type: tm+mt
-source-wordcount: '5261'
+source-wordcount: '5279'
 ht-degree: 99%
 
 ---
@@ -19,6 +19,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 | --- | --- |
+| **Julho de 2025** | |
+| Depurador | Novo artigo sobre como ativar, usar e desativar o depurador de projetos no Analysis Workspace. |
 | **Junho de 2025** | |
 | Novos atalhos | Os novos atalhos de teclado do Analysis Workspace agora permitem [mover painéis do Workspace](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#move-panel-actions) para cima e para baixo em um projeto. |
 | **Maio de 2025** | |
@@ -230,11 +232,11 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Agosto de 2022 | Atualização significativa do artigo sobre [controle de acesso do Customer Journey Analytics](/help/technotes/access-control.md). |
 | Agosto de 2022 | Novo artigo sobre [compatibilidade do Customer Journey Analytics com rótulos e políticas de governança de dados](/help/data-views/data-governance.md). |
 | Agosto de 2022 | Novo artigo sobre [Comparação da terminologia de dados do Analytics transmitidos pelo conector de origem do Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
-| Agosto de 2022 | Nova documentação sobre [Publicação de público-alvo no perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=pt-BR). |
+| Agosto de 2022 | Nova documentação sobre [Publicação de público-alvo no perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |
 | **Julho de 2022** | |
 | Julho de 2022 | Documentação do [painel Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=pt-BR). |
 | Julho de 2022 | Documentação do [painel Visualizador simultâneo de mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=pt-BR). |
-| Julho de 2022 | Documentação de relatórios de [primeira sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat). |
+| Julho de 2022 | Documentação de relatórios de [primeira sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat). |
 | **Junho de 2022** | |
 | Junho de 2022 | Novo artigo sobre [AAID, ECID, AACUSTOMID e o conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=pt-BR) |
 | Junho de 2022 | Novo artigo sobre [Regras de processamento do Adobe Analytics, VISTA e classificações em relação ao preparo de dados do conector de origem do Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
@@ -272,7 +274,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | **Novembro de 2021** | |
 | Novembro de 2021 | Atualização da documentação de [[!UICONTROL Registros ignorados]](/help/connections/manage-connections.md) na página Detalhes das conexões. |
 | **Outubro de 2021** | |
-| Outubro de 2021 | Documentação sobre o [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html?lang=pt-BR#) no Customer Journey Analytics. |
+| Outubro de 2021 | Documentação sobre o [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html#) no Customer Journey Analytics. |
 | Outubro de 2021 | Documentação da API do [Log de auditoria](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) do Customer Journey Analytics |
 | Outubro de 2021 | [Visualizações documentadas para painéis do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=pt-BR#apply-visualizations) |
 | Outubro de 2021 | Documento para a janela contínua de [retenção de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#set-rolling-window-for-connection-data-retention) de [!UICONTROL conexão]. |
@@ -317,7 +319,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Novembro de 2020 | Adição de conteúdo sobre [remoção de limitações de preenchimento retroativo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#backfill-historical-data) para conexões. |
 | 7 de outubro de 2020 | Adição de um tópico sobre [conjuntos de dados de evento combinados](/help/connections/combined-dataset.md). |
 | 15 de setembro de 2020 | Adição de um tópico sobre [ingestão de dados](/help/data-ingestion/data-ingestion.md). |
-| 2 de setembro de 2020 | Atualização da seção sobre [permissões do usuário](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR). |
+| 2 de setembro de 2020 | Atualização da seção sobre [permissões do usuário](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). |
 | Julho de 2020 | Adição de informações sobre a opção [Mapa de identidade para ID de pessoa](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR). |
 | Julho de 2020 | Adição de um novo tópico sobre [matrizes de objetos](/help/use-cases/object-arrays.md) ou “hierarquias de dados”. |
 | 14 de abril de 2020 | Atualizações na interface de usuário mais recente no tópico [Criar conexões](/help/connections/create-connection.md). |

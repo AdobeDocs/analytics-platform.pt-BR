@@ -1,13 +1,13 @@
 ---
-description: Entenda o que são métricas e como usá-las no Adobe Analytics.
+description: Entenda o que são métricas e como usá-las no Analysis Workspace.
 title: Métricas
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 8%
+source-wordcount: '868'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ As métricas permitem quantificar os pontos de dados no Analysis Workspace. Elas
 
 ## Utilização de métricas no Analysis Workspace
 
-As métricas são flexíveis em seu uso no Analysis Workspace. Arraste uma métrica para uma Tabela de forma livre vazia para ver a tendência da métrica no período do projeto. Você também pode arrastar uma métrica quando uma dimensão estiver presente para ver como essa métrica se compara a cada item de dimensão. Arrastar uma métrica para cima de um cabeçalho de métrica existente substitui a métrica existente, e arrastar uma métrica ao lado de um cabeçalho permite ver ambas as métricas lado a lado.
+As métricas são flexíveis em seu uso no Analysis Workspace. Arraste uma métrica para uma Tabela de forma livre vazia para ver a tendência da métrica no período do projeto. Você também pode arrastar uma métrica quando uma dimensão estiver presente para ver essa métrica em comparação com cada item de dimensão. Arrastar uma métrica para cima de um cabeçalho de métrica existente a substitui e arrastar uma métrica ao lado de um cabeçalho permite ver ambas as métricas lado a lado.
 
 Para obter informações sobre como adicionar métricas e outros tipos de componentes ao Analysis Workspace, consulte [Usar componentes no Analysis Workspace](/help/components/use-components-in-workspace.md).
 
@@ -27,11 +27,17 @@ Para obter informações sobre como adicionar métricas e outros tipos de compon
 A Adobe oferece vários tipos de métricas para uso no Analysis Workspace:
 
 
-* **Métricas padrão**: exemplos de métricas padrão são Pessoas, Sessões, Eventos, Contas do [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}.
+* **Métricas padrão**: exemplos de métricas padrão são Pessoas, Sessões, Eventos.
 
-  Ao contrário do Adobe Analytics, o Customer Journey Analytics permite definir métricas padrão de maneira flexível no escopo de uma conexão e de uma visualização de dados.  Consulte [Métricas padrão](#standard-metrics) para obter a lista completa de métricas padrão.
+  Ao contrário do Adobe Analytics, o Customer Journey Analytics permite definir métricas padrão de maneira flexível no escopo de uma conexão e de uma visualização de dados.
 
-* **Métricas calculadas** ![Calculadora](/help/assets/icons/Calculator.svg): [Métricas definidas pelo usuário](/help/components/calc-metrics/calc-metr-overview.md) que são baseadas em métricas padrão, números estáticos ou funções algorítmicas.
+   * **Pessoas**: a métrica Pessoas no Customer Journey Analytics é a contagem distinta das IDs de pessoa. Dependendo do que você escolher como a ID de pessoa ao configurar conjuntos de dados em sua conexão, a métrica de Pessoas pode ter significados diferentes.
+   * **Sessões**: a métrica Sessões no Customer Journey Analytics é o que você define como parte da configuração das Configurações de sessões na sua visualização de dados. Consulte [Configurações da sessão](/help/data-views/session-settings.md).
+   * **Eventos**: a métrica Eventos no Customer Journey Analytics é composta pelos eventos que fazem parte de qualquer conjunto de dados de evento configurado como parte da conexão.
+
+  Consulte [Métricas padrão](#standard-metrics) para obter a lista completa de métricas padrão.
+
+* **Métricas calculadas** ![Calculadora](/help/assets/icons/Calculator.svg): métricas definidas pelo usuário baseadas em métricas padrão, números estáticos ou funções algorítmicas.
 
 * **Modelos de métrica calculada** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : métricas definidas pela Adobe que se comportam de forma semelhante às métricas calculadas. Você pode usá-los como estão nos projetos do Workspace ou salvar uma cópia para personalizar a lógica. Consulte [Métricas calculadas padrão](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
@@ -46,7 +52,7 @@ A lista completa de métricas padrão no Customer Journey Analytics:
 
 ## Criar métricas calculadas
 
-Métricas calculadas permitem configurar como as métricas se relacionam entre si, usando operadores simples ou funções estatísticas. Consulte [Visão geral das métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md) para obter mais informações.
+Métricas calculadas permitem configurar facilmente como as métricas se relacionam entre si, usando operadores simples ou funções estatísticas. Consulte [Visão geral das métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md) para obter mais informações.
 
 Há várias maneiras de criar métricas calculadas. O método escolhido determina se a métrica calculada estará disponível na lista de componentes em todos os projetos ou somente no projeto em que foi criada.
 
@@ -76,15 +82,15 @@ Para criar uma métrica calculada para um único projeto:
 
    Quando uma única coluna é selecionada, as seguintes opções estão disponíveis:
 
-   * [!UICONTROL **Média**]: cria uma nova coluna que mostra o valor médio no conjunto de elementos de dimensão para a coluna. Este valor de coluna usa a função [Média](/help/components/calc-metrics/cm-functions.md#mean).
+   * [!UICONTROL **Média**]: cria uma nova coluna que mostra o valor médio no conjunto de elementos de dimensão para a coluna. Isto usa a função [Média](/help/components/calc-metrics/cm-functions.md#mean).
 
-   * [!UICONTROL **Mediana**]: cria uma nova coluna que mostra o valor mediano no conjunto de elementos de dimensão para a coluna. Este valor de coluna usa a função [Mediana](/help/components/calc-metrics/cm-functions.md#median).
+   * [!UICONTROL **Mediana**]: cria uma nova coluna que mostra o valor mediano no conjunto de elementos de dimensão para a coluna. Isto usa a função [Mediana](/help/components/calc-metrics/cm-functions.md#median).
 
-   * [!UICONTROL **Coluna máx**]: cria uma nova coluna que mostra o maior valor no conjunto de elementos de dimensão para a coluna. Este valor de coluna usa a função [Máximo de Colunas](/help/components/calc-metrics/cm-functions.md#column-maximum).
+   * [!UICONTROL **Coluna máx**]: cria uma nova coluna que mostra o maior valor no conjunto de elementos de dimensão para a coluna. Isto usa a função [Máximo da Coluna](/help/components/calc-metrics/cm-functions.md#column-maximum).
 
-   * [!UICONTROL **Coluna mín**]: cria uma nova coluna que mostra o menor valor no conjunto de elementos de dimensão para a coluna. Este valor de coluna usa a função [Mínimo de Coluna](/help/components/calc-metrics/cm-functions.md#column-minimum).
+   * [!UICONTROL **Coluna mín**]: cria uma nova coluna que mostra o menor valor no conjunto de elementos de dimensão para a coluna. Isto usa a função [Mínimo da Coluna](/help/components/calc-metrics/cm-functions.md#column-minimum).
 
-   * [!UICONTROL **Soma da coluna**]: cria uma nova coluna que adiciona todos os valores numéricos de uma métrica em uma coluna (entre os elementos de uma dimensão). Este valor de coluna usa a função [Soma de Coluna](/help/components/calc-metrics/cm-functions.md#column-sum).
+   * [!UICONTROL **Soma da coluna**]:Cria uma nova coluna que adiciona todos os valores numéricos de uma métrica em uma coluna (nos elementos de uma dimensão). Isto usa a função [Soma da Coluna](/help/components/calc-metrics/cm-functions.md#column-sum).
 
    Quando duas colunas são selecionadas, as seguintes opções estão disponíveis:
 
@@ -101,7 +107,7 @@ Para criar uma métrica calculada para um único projeto:
 
 ## Comparar métricas com diferentes modelos de atribuição
 
-Para comparar um modelo de atribuição rapidamente com outro para uma métrica, selecione **[!UICONTROL Comparar modelos de atribuição]** no menu de contexto para uma métrica.
+Para comparar rapidamente um modelo de atribuição com outro para uma métrica, selecione **[!UICONTROL Comparar modelos de atribuição]** no menu de contexto para uma métrica.
 
 ![realce do painel do Workspace Comparar modelos de atribuição](assets/compare-attribution.png)
 
