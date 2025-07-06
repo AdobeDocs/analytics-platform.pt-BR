@@ -1,13 +1,13 @@
 ---
 title: Funções básicas
-description: O Criador de métricas calculadas permite aplicar funções matemáticas e estatísticas para criar Métricas calculadas avançadas.
+description: Saiba mais sobre funções básicas de métricas calculadas.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 100%
+source-wordcount: '1868'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ O [Construtor de métricas calculadas](cm-workflow/cm-build-metrics.md) permite 
 
 Uma função de tabela exibe um resultado igual para cada linha da tabela. Uma função de linha exibe um resultado diferente para cada linha da tabela.
 
-Onde aplicável e relevante, uma função é anotada com o tipo de função: [!BADGE Tabela]{type="Neutral"}[!BADGE Linha]{type="Neutral"}
+Quando aplicável e relevante, uma função é anotada com o tipo de função: [!BADGE Tabela]{type="Neutral"} ou [!BADGE Linha]{type="Neutral"}
 
 ## O que significa o parâmetro “incluir zeros”?
 
@@ -52,7 +52,7 @@ Um cenário alternativo é o que você tem duas métricas de interesse e uma tem
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL ABSOLUTE VALUE(metric)]**
 
-[!BADGE Linha]{type="Neutral"}
+[!BADGE Linha]{type="Neutral"} Retorna o valor absoluto de um número. O valor absoluto de um número é o número com um valor positivo.
 
 | Argumento | Descrição |
 |---|---|
@@ -137,7 +137,7 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL COUNT(metric)]**
 
-[!BADGE Tabela]{type="Neutral"}
+[!BADGE Tabela]{type="Neutral"} Retorna o número ou a contagem de valores diferentes de zero para uma métrica em uma coluna (o número de elementos exclusivos relatados em uma dimensão).
 
 | Argumento | Descrição |
 |---|---|
@@ -157,7 +157,7 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENT(metric)]**
 
-[!BADGE Linha]{type="Neutral"}
+[!BADGE Linha]{type="Neutral"} Retorna e elevado à potência de um determinado número. A constante e é igual a 2,71828182845904, a base do logaritmo natural. EXPONENT é o inverso de LN, o logaritmo natural de um número.
 
 | Argumento | Descrição |
 |---|---|
@@ -178,7 +178,7 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MEAN(metric, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"}
+[!BADGE Tabela]{type="Neutral"} Retorna a média aritmética, ou a média, de uma métrica em uma coluna.
 
 | Argumento | Descrição |
 |---|---|
@@ -200,7 +200,7 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL MEDIAN(metric, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"}
+[!BADGE Tabela]{type="Neutral"} Retorna a mediana de uma métrica em uma coluna. A mediana é o número no meio de um conjunto de números. Ou seja, metade dos números tem valores maiores ou iguais à mediana e metade é menor ou igual à mediana.
 
 | Argumento | Descrição |
 |---|---|
@@ -259,7 +259,7 @@ MODULO(MODULO(x,y)+y,y)
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL PERCENTILE(metric, k, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"}
+[!BADGE Tabela]{type="Neutral"} Retorna o enésimo percentual, que é um valor entre 0 e 100. Quando n &lt; 0, a função usa zero. Quando n > 100, a função retorna 100.
 
 | Argumento | Descrição |
 |---|---|
@@ -304,7 +304,7 @@ Retorna x elevado à potência y.
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL QUARTILE(metric, quartile, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"}[MÍNIMO DA COLUNA](#column-minimum), [MEDIANA](#median) e [MÁXIMO DA COLUNA](#column-maximum) retornam o mesmo valor que [QUARTIL](#quartile) quando o quartil é igual a `0` (zero), `2` e `4`, respectivamente.
+[!BADGE Tabela]{type="Neutral"} Retorna o quartil dos valores de uma métrica. Por exemplo, os quartis podem ser usados para encontrar a porcentagem de 25% dos produtos com maior receita. [MÍNIMO DA COLUNA](#column-minimum), [MEDIANA](#median) e [MÁXIMO DA COLUNA](#column-maximum) retornam o mesmo valor que [QUARTIL](#quartile) quando o quartil é igual a `0` (zero), `2` e `4`, respectivamente.
 
 | Argumento | Descrição |
 |---|---|
@@ -330,7 +330,7 @@ Arredondar sem um parâmetro *numérico* é igual a arredondar com um parâmetro
 
 | Argumento | Descrição |
 |---|---|
-| métrica | A métrica que deseja arredondar. |
+| metric | A métrica que deseja arredondar. |
 | número | Quantos dígitos à direita do separador decimal devem retornar. (Se negativo, retorna zeros à esquerda do separador decimal). |
 
 ### Exemplos
@@ -435,7 +435,7 @@ A soma das colunas em cada linha.
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT(metric, include_zeros)]**
 
-[!BADGE Linha]{type="Neutral"}
+[!BADGE Linha]{type="Neutral"} Retorna a raiz quadrada positiva de um número. A raiz quadrada de um número é o valor desse número elevado à potência de 1/2.
 
 | Argumento | Descrição |
 |---|---|
@@ -455,7 +455,7 @@ A soma das colunas em cada linha.
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL STANDARD DEVIATION(metric, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"}
+[!BADGE Tabela]{type="Neutral"} Retorna o desvio padrão, ou a raiz quadrada da variação, com base em uma população de dados de exemplo.
 
 | Argumento | Descrição |
 |---|---|
@@ -476,7 +476,7 @@ A soma das colunas em cada linha.
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VARIANCE(metric, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"}
+[!BADGE Tabela]{type="Neutral"} Retorna a variação com base em uma população de dados de exemplo.
 
 | Argumento | Descrição |
 |---|---|

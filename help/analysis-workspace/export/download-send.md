@@ -1,12 +1,12 @@
 ---
 description: Saiba mais sobre as várias possibilidades de baixar dados do seu projeto do Analysis Workspace.
-title: Baixar Projetos E Dados Do Analysis Workspace
+title: Baixar Projetos E Dados
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1184'
 ht-degree: 25%
 
 ---
@@ -38,8 +38,8 @@ Para baixar um projeto como um arquivo PDF:
 1. Selecione **[!UICONTROL Projeto]** > **[!UICONTROL Baixar o PDF]**.
 Uma barra verde com a mensagem ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Seu download foi solicitado. Aguarde.]** é exibido.
 
-1. Assim que o download estiver pronto, uma barra verde com a mensagem ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Name of the project *PDF estará pronta.]**&#x200B;aparece.
-Selecione&#x200B;**[!UICONTROL Baixar]**&#x200B;para baixar a PDF. A forma como o PDF é apresentado ou baixado depende da configuração do navegador para lidar com os documentos do PDF.
+1. Assim que o download estiver pronto, uma barra verde com a mensagem ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Name of the project *PDF estará pronta.]**aparece.
+Selecione**[!UICONTROL Baixar]**para baixar a PDF. A forma como o PDF é apresentado ou baixado depende da configuração do navegador para lidar com os documentos do PDF.
 
 
 Para baixar um projeto como um arquivo CSV:
@@ -107,8 +107,8 @@ Os seguintes recursos de uma tabela de forma livre são aplicados ao arquivo bai
 
 À medida que o arquivo é baixado, você vê as seguintes notificações:
 
-* Um **[!UICONTROL _Nome de tabela _-_Dimension _.csv azul foi solicitado._x _% concluído]**&#x200B;indicando o progresso. Para cancelar o download a qualquer momento, selecione **[!UICONTROL Cancelar download]**. Selecione ![CrossSize100](/help/assets/icons/CrossSize100.svg) se desejar fechar a mensagem, o que não cancela o download.
-* Uma notificação de conclusão **[!UICONTROL _do nome da tabela _-_Dimension _.csv foi baixada]**&#x200B;assim que o download do arquivo foi concluído. O arquivo é baixado na pasta de downloads configurada para o seu navegador.
+* Um **[!UICONTROL _Nome de tabela _-_Dimension _.csv azul foi solicitado._x _% concluído]**indicando o progresso. Para cancelar o download a qualquer momento, selecione **[!UICONTROL Cancelar download]**. Selecione ![CrossSize100](/help/assets/icons/CrossSize100.svg) se desejar fechar a mensagem, o que não cancela o download.
+* Uma notificação de conclusão **[!UICONTROL _do nome da tabela _-_Dimension _.csv foi baixada]**assim que o download do arquivo foi concluído. O arquivo é baixado na pasta de downloads configurada para o seu navegador.
 
 Se solicitar mais de um download por vez, você receberá uma notificação de que cada download adicional será enfileirado até que o download anterior seja concluído.
 

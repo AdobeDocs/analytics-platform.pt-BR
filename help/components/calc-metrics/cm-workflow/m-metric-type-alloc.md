@@ -1,12 +1,12 @@
 ---
-description: Saiba mais sobre tipo de métrica e atribuição
-title: Tipo de métrica e atribuição
+description: Saiba mais sobre tipo de métrica e atribuição.
+title: Atribuição E Tipo De Métrica
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -33,15 +33,15 @@ Você pode configurar o tipo de métrica e o [modelo de atribuição](#attributi
          * Desabilitar a opção **[!UICONTROL Usar modelo de atribuição não padrão]** para usar o modelo de atribuição de coluna padrão, que é Último contato, com uma janela de pesquisa de 30 dias.
          * Habilitar a opçã o **[!UICONTROL Usar modelo de atribuição não padrão]**. Na caixa de diálogo **[!UICONTROL Modelo de atribuição de coluna]**,
 
-            * Selecione um **[!UICONTROL Modelo]** dos [modelos de atribuição](#attribution-models).
-            * Selecione um **[!UICONTROL Contêiner]** nas opções de [contêiner](#container).
-            * Selecione uma **[!UICONTROL Janela de retrospectiva]** nas opções da [janela de retrospectiva](#lookback-window). Se você selecionar **[!UICONTROL Tempo personalizado]**, será possível definir o período de **[!UICONTROL Minuto(s)]** até **[!UICONTROL Trimestre(s)]**.
+            * Selecione um **[!UICONTROL Modelo]** nos [modelos de atribuição](#attribution-models).
+            * Selecione um **[!UICONTROL Container]** nas opções de [container](#container).
+            * Selecione uma **[!UICONTROL Janela de retrospectiva]** nas opções da [janela de retrospectiva](#lookback-window). Se você selecionar **[!UICONTROL Hora personalizada]**, poderá definir o período em **[!UICONTROL Minuto(s)]** até **[!UICONTROL Trimestre(s)]**.
 
       1. Selecione **[!UICONTROL Aplicar]** para aplicar o modelo de atribuição não padrão. Selecione Cancelar para cancelar.
 
      Se você já tiver definido um modelo de atribuição não padrão, selecione **[!UICONTROL Editar]** para modificar a seleção.
 
-Consulte [Exemplo](#example) para obter um exemplo de uso de um modelo de atribuição, contêiner e janela de retrospectiva.
+Consulte [Exemplo](#example) para ver um exemplo de uso de um modelo de atribuição, container e janela de pesquisa.
 
 
 ## Modelos de atribuição {#attribution-models}
@@ -163,6 +163,6 @@ Consulte [Exemplo](#example) para obter um exemplo de uso de um modelo de atribu
 >[!MORELIKETHIS]
 >
 >[Configurações de componentes de atribuição](/help/data-views/component-settings/attribution.md)
->&#x200B;>[Métrica de participação](participation-metric.md)
+>>[Métrica de participação](participation-metric.md)
 >
 

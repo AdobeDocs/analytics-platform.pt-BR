@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1249'
-ht-degree: 97%
+source-wordcount: '1269'
+ht-degree: 96%
 
 ---
 
@@ -234,7 +234,7 @@ ht-degree: 97%
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Painéis {#panels}
       + [Visão geral](../analysis-workspace/c-panels/panels.md)
-      + [Em branco](../analysis-workspace/c-panels/blank-panel.md)
+      + [Painel em branco](../analysis-workspace/c-panels/blank-panel.md)
       + [Atribuição](../analysis-workspace/c-panels/attribution.md)
       + [Experimentação](../analysis-workspace/c-panels/experimentation.md)
       + [Forma livre](../analysis-workspace/c-panels/freeform-panel.md)
@@ -254,6 +254,12 @@ ht-degree: 97%
       + [Baixar](../analysis-workspace/export/download-send.md)
       + [Enviar e agendar](../analysis-workspace/export/t-schedule-report.md)
       + [Exportar para a nuvem](../analysis-workspace/export/export-cloud.md)
+   + Atribuição {#attribution}
+      + [Visão geral da atribuição](../analysis-workspace/attribution/overview.md)
+      + [Modelo, contêiner e janela de pesquisa](../analysis-workspace/attribution/models.md)
+      + [Atribuição algorítmica](../analysis-workspace/attribution/algorithmic.md)
+      + [Práticas recomendadas](../analysis-workspace/attribution/best-practices.md)
+      + [Perguntas frequentes](../analysis-workspace/attribution/faq.md)
    + Detecção de anomalias {#anomaly-detection}
       + [Visão geral](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [Exibir anomalias](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
@@ -268,7 +274,7 @@ ht-degree: 97%
       + [Otimizar o desempenho](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Erro e solução de problemas](../analysis-workspace/workspace-faq/error-messages.md)
       + [Limitações](../analysis-workspace/workspace-faq/aw-limitations.md)
-      + [Requisitos de administração](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [Requisitos](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Acessibilidade](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Análise de conteúdo {#content-analytics}
@@ -346,10 +352,12 @@ ht-degree: 97%
       + [Visão geral](../components/calc-metrics/calc-metr-overview.md)
       + Fluxo de trabalho {#cm-workflow}
          + [Criar métricas calculadas](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [Criar métricas calculadas](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Localizar métricas](../components/calc-metrics/cm-workflow/cm-finding.md)
-         + [Atribuição e tipo de métrica](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Criar uma métrica de participação](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Criar métricas calculadas](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Um exemplo simples](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Um exemplo mais complexo](../components/calc-metrics/cm-workflow/cm-orders-participation.md)
+         + [Tipo de métrica e atribuição](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
+         + [Métricas de participação](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Métricas segmentadas](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Empilhar e substituir segmentos](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Filtrar métricas calculadas](../components/calc-metrics/cm-workflow/cm-filter.md)

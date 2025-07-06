@@ -1,12 +1,12 @@
 ---
 title: Funções avançadas
-description: Para acessar essas funções, selecione Mostrar avançadas no menu suspenso Funções.
+description: Saiba mais sobre funções de métricas calculadas avançadas.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: ca1aae1291119214f3b051f9b6df8ddcd58faa6c
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '5247'
+source-wordcount: '5241'
 ht-degree: 99%
 
 ---
@@ -309,13 +309,13 @@ Confiança é uma medida probabilística sobre quantos indícios existem de que 
 >[!CONTEXTUALHELP]
 >id="functions-cos"
 >title="Cosseno"
->abstract="Retorna o cosseno do ângulo fornecido. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180."
+>abstract="Retorna o cosseno do ângulo fornecido. Se o ângulo estiver em graus, multiplique-o por PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL COSINE(metric)]**
 
-[!BADGE Linha]{type="Neutral"} Retorna o cosseno do ângulo fornecido. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180.
+[!BADGE Linha]{type="Neutral"} Retorna o cosseno do ângulo fornecido. Se o ângulo estiver em graus, multiplique-o por PI()/180.
 
 | Argumento | Descrição |
 |---|---|
@@ -1373,14 +1373,14 @@ Calcula uma estimativa da variância da amostra.
 >[!CONTEXTUALHELP]
 >id="functions-sin"
 >title="Seno"
->abstract="Retorna o seno do ângulo fornecido. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180."
+>abstract="Retorna o seno do ângulo fornecido. Se o ângulo estiver em graus, multiplique-o por PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL SINE(metric)]**
 
 
-[!BADGE Linha]{type="Neutral"} Retorna o seno do ângulo fornecido. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180.
+[!BADGE Linha]{type="Neutral"} Retorna o seno do ângulo fornecido. Se o ângulo estiver em graus, multiplique-o por PI()/180.
 
 
 | Argumento | Descrição |
@@ -1465,13 +1465,13 @@ O valor de retorno é a probabilidade de exibição da estatística de teste x, 
 >[!CONTEXTUALHELP]
 >id="functions-tan"
 >title="Tangente"
->abstract="Retorna a tangente do ângulo especificado. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180."
+>abstract="Retorna a tangente do ângulo especificado. Se o ângulo estiver em graus, multiplique-o por PI()/180."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL TANGENT(metric)]**
 
-Retorna a tangente do ângulo especificado. Se o ângulo estiver em graus, multiplique o ângulo por PI()/180.
+Retorna a tangente do ângulo especificado. Se o ângulo estiver em graus, multiplique-o por PI()/180.
 
 | Argumento | Descrição |
 |---|---|

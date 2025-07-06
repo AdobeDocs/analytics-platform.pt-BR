@@ -1,13 +1,13 @@
 ---
 description: Saiba mais sobre os recursos de suporte de acessibilidade no Analysis Workspace.
 title: Acessibilidade No Analysis Workspace
-feature: FAQ
+feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 94%
+source-wordcount: '546'
+ht-degree: 91%
 
 ---
 
@@ -54,7 +54,7 @@ O [!UICONTROL Analysis Workspace] possui uma interface de arrastar e soltar. No 
 
 ### Atalhos de teclado (teclas de atalho)
 
-O [!UICONTROL Analysis Workspace] oferece um vasto conjunto de [atalhos de teclado](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) para facilitar o fluxo de trabalho. 
+O [!UICONTROL Analysis Workspace] oferece um conjunto avançado de [atalhos de teclado (teclas de atalho)](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) para um fluxo de trabalho mais simples.
 
 ## Suporte para leitores de tela e ampliadores de tela
 

@@ -4,7 +4,7 @@ description: Saiba como usar e interpretar o painel Tempo gasto com a reproduç�
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 98%
@@ -34,7 +34,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Tempo gasto com a reprodução de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Tempo gasto com a reprodução de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [painel Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _Este artigo documenta o painel Tempo gasto com a reprodução de mídia no_ ![C
 >[!NOTE]
 >
 >O painel Público-alvo médio por minuto de mídia está disponível somente para clientes que adquiriram o complemento Coleção de mídia de streaming para o Customer Journey Analytics.
->&#x200B;>Entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para obter mais informações.
+>>Entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para obter mais informações.
 >
 
 O painel **[!UICONTROL Tempo gasto com a reprodução de mídia]** permite analisar a reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar. 
@@ -129,6 +129,6 @@ A única métrica que pode ser usada nesse painel é Tempo gasto com a reproduç
 >[!MORELIKETHIS]
 >
 >[Criar um painel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Painel de público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md)
->&#x200B;>[Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
+>>[Painel de público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md)
+>>[Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
 >

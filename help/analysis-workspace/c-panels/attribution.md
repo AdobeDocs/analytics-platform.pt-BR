@@ -4,10 +4,10 @@ description: Saiba como usar e interpretar o painel de atribuição no Analysis 
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 97%
+source-wordcount: '668'
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Atribuição no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [Painel de atribuição](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/attribution) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Atribuição no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [Painel de atribuição](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/attribution) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -66,7 +66,7 @@ Você pode configurar o painel de Atribuição usando estas configurações de e
 
    ![A janela Painel de atribuição mostrando várias dimensões e métricas selecionadas.](assets/attribution-panel.png)
 
-1. Selecione um ou mais [modelos de atribuição](#attribution-models) dos **[!UICONTROL Modelos incluídos]** e uma [janela de retrospectiva](#lookback-window) da **[!UICONTROL Janela de retrospectiva]** que você deseja usar para comparação.
+1. Selecione um ou mais [modelos de atribuição](#attribution-models) de **[!UICONTROL modelos incluídos]**, o [contêiner](#container) de **[!UICONTROL Contêiner]** e uma [janela de pesquisa](#lookback-window) da **[!UICONTROL janela de pesquisa]** que você deseja usar para comparação.
 
 1. Selecione **[!UICONTROL Criar]** para criar as visualizações no painel.
 
@@ -88,7 +88,7 @@ As visualizações a seguir fazem parte do resultado do painel.
 * **Desempenho com tendência**: mostra a tendência das conversões atribuídas para o item de dimensão principal. Selecionar outras linhas na tabela de forma livre adjacente atualizará a visualização para refletir a seleção.
 * **Fluxo**: permite ver com quais canais a interação é mais comum e em que ordem isso acontece na jornada de uma pessoa.
 
-## Modelos de atribuição
+## Modelo de atribuição
 
 {{attribution-models-details}}
 
@@ -96,7 +96,7 @@ As visualizações a seguir fazem parte do resultado do painel.
 
 {{attribution-container}}
 
-## Janela de pesquisa
+## Janela de retrospectiva
 
 {{attribution-lookback-window}}
 

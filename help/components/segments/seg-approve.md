@@ -1,13 +1,13 @@
 ---
-description: Você pode configurar um fluxo de trabalho que inclua a aprovação de segmentos para vários níveis do aplicativo, para departamentos ou grupos específicos, e que seja consistente com políticas de relatórios.
+description: Entenda como você, como administrador, pode aprovar segmentos.
 title: Aprovar segmentos
 feature: Filters, Segments
 exl-id: 3892ef54-3f24-4c7a-868f-f566efaea400
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 3%
+source-wordcount: '115'
+ht-degree: 1%
 
 ---
 
@@ -26,4 +26,4 @@ Para desaprovar segmentos:
 1. Na barra de ações, selecione ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Unapprove]**.
 
 
-Você pode segmentar sua lista de segmentos por segmentos aprovados. Selecione **[!UICONTROL Outros segmentos]** no painel ![Segmento](/help/assets/icons/Filter.svg) **[!UICONTROL Segmento]** e selecione **[!UICONTROL Aprovado]**. Consulte [Segmentar a lista de segmentos](/help/components/segments/seg-filter.md) para obter mais informações.
+Você pode segmentar sua lista de segmentos por segmentos aprovados. Selecione **[!UICONTROL Outros segmentos]** no painel ![Segmento](/help/assets/icons/Filter.svg) **[!UICONTROL Segmento]** e selecione **[!UICONTROL Aprovado]**. Consulte [Filtrar a lista de segmentos](/help/components/segments/seg-filter.md) para obter mais informações.
