@@ -20,7 +20,7 @@ As métricas calculadas são métricas personalizadas que podem ser criadas a pa
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introdução às métricas calculadas](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introdução às métricas calculadas](https://video.tv.adobe.com/v/35865/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

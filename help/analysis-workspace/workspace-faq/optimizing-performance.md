@@ -112,6 +112,6 @@ Outros fatores que não estão incluídos em Ajuda > Desempenho incluem:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dicas para aumentar a produtividade](https://video.tv.adobe.com/v/31157?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dicas para aumentar a produtividade](https://video.tv.adobe.com/v/33847?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
