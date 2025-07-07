@@ -61,9 +61,9 @@ Você pode compartilhar uma função específica com usuários ou grupos ou comp
 
 Ao compartilhar uma função de projeto específica com usuários e grupos em sua organização, considere o seguinte:
 
-* As funções do projeto (**[!UICONTROL Editar original]**, **[!UICONTROL Editar cópia]** e **[!UICONTROL Somente leitura]**) estão vinculadas ao usuário e à ID específica do projeto. As funções do projeto são independentes das permissões de usuário gerenciadas no [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started).
+* As funções do projeto (**[!UICONTROL Editar original]**, **[!UICONTROL Editar cópia]** e **[!UICONTROL Somente leitura]**) estão vinculadas ao usuário e à ID específica do projeto. As funções do projeto são independentes das permissões de usuário gerenciadas no [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-getting-started).
 
-* No Customer Journey Analytics, os grupos são definidos por perfis de produtos no [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started). Administradores podem compartilhar com qualquer grupo, incluindo *Todos*. Os não administradores podem compartilhar com qualquer grupo do qual sejam membros, exceto por *Todos*.
+* No Customer Journey Analytics, os grupos são definidos por perfis de produtos no [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-getting-started). Administradores podem compartilhar com qualquer grupo, incluindo *Todos*. Os não administradores podem compartilhar com qualquer grupo do qual sejam membros, exceto por *Todos*.
 
 * Um usuário que é colocado em várias funções sempre obtém a melhor experiência. Esse cenário pode ocorrer se um usuário for adicionado como um indivíduo e como parte de um grupo. Por exemplo, se um usuário receber a função **[!UICONTROL Editar original]** como um indivíduo e a função **[!UICONTROL Somente leitura]** como membro de um grupo, o usuário receberá uma experiência de projeto **[!UICONTROL Editar original]**.
 
