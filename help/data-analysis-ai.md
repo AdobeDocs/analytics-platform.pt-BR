@@ -8,7 +8,7 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: 3c3fd6b814485871f2fd9249b0ffa9a0b24a360c
 workflow-type: tm+mt
 source-wordcount: '2371'
-ht-degree: 82%
+ht-degree: 83%
 
 ---
 
@@ -246,7 +246,7 @@ Abaixo estão as práticas recomendadas para a configuração do Customer Journe
 >[!MORELIKETHIS]
 >
 >[Configurações de componente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dicionário de Dados](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Aprovar métrica calculada](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Compartilhar segmentos](/help/components/segments/seg-share.md)
+>>[Dicionário de Dados](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Aprovar métrica calculada](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Compartilhar segmentos](/help/components/segments/seg-share.md)
 >

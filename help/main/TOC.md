@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1269'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -252,7 +252,7 @@ ht-degree: 96%
    + Exportar {#export}
       + [Visão geral](../analysis-workspace/export/export-project-overview.md)
       + [Baixar](../analysis-workspace/export/download-send.md)
-      + [Enviar e agendar](../analysis-workspace/export/t-schedule-report.md)
+      + [Enviar e programar](../analysis-workspace/export/t-schedule-report.md)
       + [Exportar para a nuvem](../analysis-workspace/export/export-cloud.md)
    + Atribuição {#attribution}
       + [Visão geral da atribuição](../analysis-workspace/attribution/overview.md)

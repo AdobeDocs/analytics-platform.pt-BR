@@ -1,14 +1,14 @@
 ---
 description: Saiba como compartilhar projetos no Analysis Workspace.
 keywords: Compartilhamento no Analysis Workspace
-title: Compartilhamento de projetos
+title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
 source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
 workflow-type: tm+mt
 source-wordcount: '2089'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
@@ -40,14 +40,14 @@ Qualquer [preparação](curate.md) feita antes do compartilhamento será refleti
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhamento de projetos no Analysis Workspace](https://video.tv.adobe.com/v/40035/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhamento de projetos no Analysis Workspace](https://video.tv.adobe.com/v/36207/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-## Compartilhar com usuários e grupos em sua organização {#Add}
+## Compartilhar com usuários e grupos da sua organização {#Add}
 
 É possível compartilhar um projeto com usuários ou grupos do Adobe Analytics em sua organização. Ao compartilhar um projeto conforme descrito nesta seção, os usuários com os quais você compartilha já devem ter uma conta da Customer Journey Analytics.
 
@@ -61,9 +61,9 @@ Você pode compartilhar uma função específica com usuários ou grupos ou comp
 
 Ao compartilhar uma função de projeto específica com usuários e grupos em sua organização, considere o seguinte:
 
-* As funções do projeto (**[!UICONTROL Editar original]**, **[!UICONTROL Editar cópia]** e **[!UICONTROL Somente leitura]**) estão vinculadas ao usuário e à ID específica do projeto. As funções do projeto são independentes das permissões de usuário gerenciadas no [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-getting-started).
+* As funções do projeto (**[!UICONTROL Editar original]**, **[!UICONTROL Editar cópia]** e **[!UICONTROL Somente leitura]**) estão vinculadas ao usuário e à ID específica do projeto. As funções do projeto são independentes das permissões de usuário gerenciadas no [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started).
 
-* No Customer Journey Analytics, os grupos são definidos por perfis de produtos no [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-getting-started). Administradores podem compartilhar com qualquer grupo, incluindo *Todos*. Os não administradores podem compartilhar com qualquer grupo do qual sejam membros, exceto por *Todos*.
+* No Customer Journey Analytics, os grupos são definidos por perfis de produtos no [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started). Administradores podem compartilhar com qualquer grupo, incluindo *Todos*. Os não administradores podem compartilhar com qualquer grupo do qual sejam membros, exceto por *Todos*.
 
 * Um usuário que é colocado em várias funções sempre obtém a melhor experiência. Esse cenário pode ocorrer se um usuário for adicionado como um indivíduo e como parte de um grupo. Por exemplo, se um usuário receber a função **[!UICONTROL Editar original]** como um indivíduo e a função **[!UICONTROL Somente leitura]** como membro de um grupo, o usuário receberá uma experiência de projeto **[!UICONTROL Editar original]**.
 
@@ -117,7 +117,7 @@ Ao compartilhar um link conforme descrito nesta seção, considere o seguinte:
 
 * Os destinatários que usam o link precisam fazer logon no Customer Journey Analytics antes de obter acesso ao projeto.
 
-* Se uma função não for atribuída a um destinatário e ele receber um [link compartilhável](/help/analysis-workspace/curate-share/shareable-links.md) para o projeto (**[!UICONTROL Compartilhar] > [!UICONTROL Obter link do projeto]**), ele receberá uma função por padrão. Administradores recebem **[!UICONTROL Editar original]** e os não administradores recebem **[!UICONTROL Editar cópia]**.
+* Se um destinatário não tiver sido atribuído a uma função e receber um [link compartilhável](/help/analysis-workspace/curate-share/shareable-links.md) para o projeto (**[!UICONTROL Compartilhar] > [!UICONTROL Obter link do projeto]**), ele(a) receberá uma função por padrão. Administradores recebem **[!UICONTROL Editar original]** e os não administradores recebem **[!UICONTROL Editar cópia]**.
 
 Para compartilhar o link do projeto com os usuários em sua organização:
 
@@ -161,7 +161,7 @@ Para compartilhar o link do projeto com os usuários em sua organização:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar com qualquer pessoa](https://video.tv.adobe.com/v/3452457/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar com qualquer pessoa](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -216,7 +216,7 @@ Você pode compartilhar os componentes integrados que fazem parte do seu projeto
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar componentes integrados no Analysis Workspace](https://video.tv.adobe.com/v/30805/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar componentes integrados no Analysis Workspace](https://video.tv.adobe.com/v/24713/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 

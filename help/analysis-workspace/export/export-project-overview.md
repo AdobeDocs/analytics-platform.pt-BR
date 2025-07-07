@@ -8,13 +8,13 @@ role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 55%
+ht-degree: 98%
 
 ---
 
 # Visão geral de exportação
 
-Você pode exportar (parte de) projetos Customer Journey Analytics do Analysis Workspace. Talvez você queira exportar relatórios do Customer Journey Analytics por vários motivos, como para usar em ferramentas de terceiros ou combinar com dados externos.
+É possível exportar (partes de) projetos do Customer Journey Analytics a partir do Analysis Workspace. Pode ser uma boa ideia exportar relatórios do Customer Journey Analytics por vários motivos, como para usá-los em ferramentas de terceiros ou combiná-los com dados externos.
 
 As seções a seguir descrevem os tipos de arquivo compatíveis, os vários métodos de exportação disponíveis e as vantagens de cada método.
 
@@ -30,12 +30,12 @@ Você pode exportar relatórios do Customer Journey Analytics como um arquivo PD
 
 ## Métodos de exportação
 
-Há vários métodos disponíveis quando você deseja exportar do Analysis Workspace. Ao escolher um método de exportação, considere o que deseja exportar e quem precisa acessá-lo.
+Há vários métodos disponíveis para exportar a partir do Analysis Workspace. Ao escolher um método de exportação, considere o que você deseja exportar e quem precisa ter acesso.
 
-| Método de exportação | Use esse método se desejar... |
+| Método de exportação | Use este método se quiser... |
 |---------|----------|
-| [Baixar para a sua estação de trabalho](/help/analysis-workspace/export/download-send.md) | <li>Baixar projetos para a sua estação de trabalho pessoal.</li><li>Baixar somente dados ad hoc (não agendado).</li> <li>Baixe no máximo 50.000 linhas.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
-| [Enviar a outros usuários](/help/analysis-workspace/export/t-schedule-report.md) | <li>Enviar dados do Customer Journey Analytics exportados por email a outros usuários da sua organização.</li><li>Envie o email ad hoc ou de acordo com um agendamento.</li> <li>Inclua no máximo 50.000 linhas no email.</li> <!--true?--> |
-| [Exportar para um local da nuvem](/help/analysis-workspace/export/export-cloud.md) | <li>Exportar para um local da nuvem, como <ul><li>Zona de destino de dados da Adobe Experience Platform</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>Exporte dados de forma ad hoc ou programada.</li><li>Armazenar quantidades maiores de dados do Customer Journey Analytics.</li><li>Exportar tabelas completas com milhares ou milhões de linhas.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
+| [Baixar para a sua estação de trabalho](/help/analysis-workspace/export/download-send.md) | <li>Baixar projetos para a sua estação de trabalho pessoal.</li><li>Baixar somente dados ad hoc (não programado).</li> <li>Baixar até 50 mil linhas.</li> <!--true? Are there 2 different options to download to your workstation?--> <!-- is this emailing it? --> |
+| [Enviar a outros usuários](/help/analysis-workspace/export/t-schedule-report.md) | <li>Enviar dados exportados do Customer Journey Analytics por email a outros usuários da sua organização.</li><li>Enviar o email de maneira ad hoc ou conforme uma programação.</li> <li>Incluir até 50 mil linhas no email.</li> <!--true?--> |
+| [Exportar para um local da nuvem](/help/analysis-workspace/export/export-cloud.md) | <li>Exportar para um local na nuvem, como <ul><li>Zona de destino de dados da Adobe Experience Platform</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>Exportar dados de maneira ad hoc ou conforme uma programação.</li><li>Armazenar quantidades maiores de dados do Customer Journey Analytics.</li><li>Exportar tabelas completas com milhares ou milhões de linhas.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
