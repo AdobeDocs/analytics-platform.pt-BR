@@ -1,13 +1,13 @@
 ---
-description: O Dicionário de dados no Analysis Workspace permite que os usuários catalogem e acompanhem os vários componentes do Analysis Workspace, incluindo o uso pretendido, que está aprovado, quais são duplicatas e assim por diante.
+description: O dicionário de dados do Analysis Workspace permite que os usuários monitorem e criem um catálogo dos diversos componentes no Analysis Workspace, incluindo seu uso pretendido, quais estão aprovados, quais são duplicatas e assim por diante.
 title: Visão geral do dicionário de dados
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
 source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Dicionário de dados"
->abstract="O Dicionário de dados ajuda usuários e administradores a acompanhar e entender melhor os componentes em seus ambientes do Customer Journey Analytics. <br/>Os admins do Customer Journey Analytics são responsáveis por organizar as informações sobre cada componente no Dicionário de dados."
+>abstract="O dicionário de dados ajuda usuários e admins a monitorar e entender melhor os componentes em seus ambientes do Customer Journey Analytics. <br/>Admins do Customer Journey Analytics são responsáveis por preparar informações sobre cada componente do dicionário de dados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ Os administradores do Analytics são responsáveis por preparar informações so
 
 >[!BEGINSHADEBOX]
 
-Consulte o ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dicionário de dados do Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dicionário de dados do Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -58,7 +58,7 @@ Para obter informações sobre como acessar o Dicionário de dados e obter detal
 
 O dicionário de dados ajuda os administradores do sistema a acompanhar e preparar os componentes em seu ambiente do Analytics.
 
-Os administradores do Analytics podem usar o Dicionário de dados para estas finalidades:
+Admins do Analytics podem usar o dicionário de dados para estas finalidades:
 
 * Identificar componentes duplicados que precisam ser consolidados.
 
