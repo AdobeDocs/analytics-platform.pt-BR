@@ -4,11 +4,11 @@ description: Conceitos e recursos da B2B edition do Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
+source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1468'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ O Customer Journey Analytics é construído com base no conceito de três contê
 ![B2C](assets/b2c-containers.svg){zoomable="yes"}
 
 
-### Contêineres B2B
+### Containers B2B
 
 No Customer Journey Analytics B2B edition, um contêiner de Conta é adicionado à lista de contêineres gerados. E você tem a opção de configurar a geração de contêineres adicionais, como Conta global, Grupo de compra e Oportunidade.
 
@@ -87,7 +87,7 @@ O B2B do Customer Journey Analytics distingue entre os seguintes tipos de dados 
 | Tipo de dados | Séries cronológicas | Registros de contêiner | Registros de campo |
 |---|---|---|---|
 | **Conjuntos de dados** | **Conjuntos de dados de eventos**<br/> Por exemplo:<ul><li>Análise digital</li><li>Eventos do CRM</li><li>Eventos presenciais</li><li>Dados da central de atendimento</li></ul> | **Conjuntos de dados de perfil**<br/> Por exemplo:<ul><li>Registros CRM</li><li>Registros B2B do AJO</li><li>Registros da CDP</li><ul> | **Classificações**<br/> Por exemplo:<ul><li>Registros de campanha</li><li>Registros da lista de marketing</li><li>Metadados de conteúdo</li><li>Registros de produto</li></ul> |
-| Requisitos | **Carimbo de data/hora**<br> Todos os registros precisam:<ul><li>ID da Conta</li><li>ID da conta global</li><li>ID da pessoa</li></ul> | **ID da conta**<br> Os registros precisam de uma ID de contêiner, como:<ul><li>Conta</li><li>Pessoa</li><li>Oportunidade</li><li>Grupo de compra</li></ul> | **Chave correspondente**<br> Os registros precisam de uma ID contida em um contêiner ou conjunto de dados de evento, como:<ul><li>ID da campanha</li><li>ID de conteúdo</li><li>Identificação do produto</li></ul> |
+| Requisitos | **Carimbo de data/hora**<br> Todos os registros precisam:<ul><li>ID da Conta</li><li>ID de conta global (opcional)</li></ul> | **ID da conta**<br> Os registros precisam de uma ID de contêiner, como:<ul><li>Conta</li><li>Pessoa</li><li>Oportunidade</li><li>Grupo de compra</li></ul> | **Chave correspondente**<br> Os registros precisam de uma ID contida em um contêiner ou conjunto de dados de evento, como:<ul><li>ID da campanha</li><li>ID de conteúdo</li><li>Identificação do produto</li></ul> |
 
 {style="table-layout:fixed"}
 
