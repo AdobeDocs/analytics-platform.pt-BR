@@ -20,7 +20,7 @@ ht-degree: 79%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_persistence"
 >title="Persistência"
->abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação é aplicada antes dos segmentos nos relatórios."
+>abstract="Configure o modelo de alocação padrão aplicado a uma dimensão. A alocação aplica-se antes dos segmentos na geração de relatórios."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -108,7 +108,7 @@ Consulte [Uso de dimensões e métricas de ligação no Customer Journey Analyti
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões de vinculação](https://video.tv.adobe.com/v/3409296/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões de vinculação](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

@@ -7,7 +7,7 @@ role: User, Admin
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ Para definir a anotação, use o [[!UICONTROL Construtor de anotações]](#annot
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="Detalhes da anotação"
->abstract="As anotações permitem comunicar nuances de dados contextuais e insights à sua organização de maneira eficaz. As anotações permitem vincular eventos de calendário a dimensões e métricas específicas."
+>abstract="As anotações permitem comunicar nuances dos dados contextuais e insights à sua organização com eficácia. Com as anotações, é possível vincular eventos do calendário a dimensões e métricas específicas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +50,7 @@ Para definir a anotação, use o [[!UICONTROL Construtor de anotações]](#annot
 >[!CONTEXTUALHELP]
 >id="components_annotations_scope"
 >title="Escopo"
->abstract="O escopo permite personalizar quais dados são anotados. As métricas calculadas e os segmentos não herdam automaticamente anotações aplicadas aos componentes usados nas definições. É possível adicionar novas métricas calculadas à seção de escopo de uma anotação existente. Novos segmentos exigem uma nova anotação."
+>abstract="O escopo permite personalizar quais dados serão anotados. As métricas calculadas e os segmentos não herdam automaticamente as anotações aplicadas aos componentes usados em suas definições. É possível adicionar novas métricas calculadas à seção de escopo de uma anotação existente. Novos segmentos exigem uma nova anotação."
 
 <!-- markdownlint-enable MD034 -->
 
