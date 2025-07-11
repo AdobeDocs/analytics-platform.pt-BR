@@ -26,7 +26,7 @@ Para usar o relatório em tempo real, habilite a opção **[!UICONTROL Atualiza�
 * [Painel de forma livre](/help/analysis-workspace/c-panels/freeform-panel.md)
 * ...
 
-Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL  *Última atualização às 07:55 pm*].
+Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL &#x200B; *Última atualização às 07:55 pm*].
 
 Selecione o período em tempo real que deseja relatar no menu suspenso. As opções disponíveis são:
 
