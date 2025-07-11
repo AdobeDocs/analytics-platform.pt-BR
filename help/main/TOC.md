@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 97%
+source-wordcount: '1275'
+ht-degree: 98%
 
 ---
 
@@ -256,7 +256,7 @@ ht-degree: 97%
       + [Exportar para a nuvem](../analysis-workspace/export/export-cloud.md)
    + Atribuição {#attribution}
       + [Visão geral da atribuição](../analysis-workspace/attribution/overview.md)
-      + [Modelo, contêiner e janela de pesquisa](../analysis-workspace/attribution/models.md)
+      + [Modelo, container e janela de retrospectiva](../analysis-workspace/attribution/models.md)
       + [Atribuição algorítmica](../analysis-workspace/attribution/algorithmic.md)
       + [Práticas recomendadas](../analysis-workspace/attribution/best-practices.md)
       + [Perguntas frequentes](../analysis-workspace/attribution/faq.md)
@@ -321,7 +321,7 @@ ht-degree: 97%
       + [Criar anotações](../components/annotations/create-annotations.md)
       + [Gerenciar anotações](../components/annotations/manage-annotations.md)
       + [Exibir anotações](../components/annotations/view-annotations.md)
-      + [Anotações do cartão de pontuação para dispositivos móveis](../components/annotations/mobile-annotations.md)
+      + [Anotações de cartões de pontuação de dispositivos móveis](../components/annotations/mobile-annotations.md)
    + Públicos-alvo {#audiences}
       + [Visão geral de públicos-alvo](../components/audiences/audiences-overview.md)
       + [Criar e publicar públicos-alvo](../components/audiences/publish.md)
@@ -396,8 +396,10 @@ ht-degree: 97%
       + [Exibir informações de componente no dicionário de dados](../components/data-dictionary/view-data-dictionary.md)
       + [Editar entradas de componente no dicionário de dados](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Monitorar a integridade do dicionário de dados](../components/data-dictionary/monitor-data-dictionary-health.md)
+   + Relatório em tempo real {#real-time-reporting}
+      + [Visão geral](/help/components/real-time/real-time.md)
+      + [Usar relatórios em tempo real](/help/components/real-time/use-real-time.md)
    + [Projetos programados](../components/scheduled-projects-manager.md)
-
 + Report Builder {#cja-reportbuilder}
    + [Visão geral](../report-builder/rb-overview.md)
    + [Configuração do Report Builder](../report-builder/report-builder-setup.md)
