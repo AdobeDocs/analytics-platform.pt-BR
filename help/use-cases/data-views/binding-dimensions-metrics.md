@@ -1,10 +1,10 @@
 ---
 title: Uso de dimensões e métricas de ligação no Customer Journey Analytics
-description: Atribua dimensões a arrays de objetos para análise de persistência complexa.
+description: Atribua dimensões a matrizes de objetos para análise de persistência complexa.
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
+source-git-commit: db47e3414046a2222c2cb95588c4e3cc6988e6be
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 70%
@@ -16,7 +16,7 @@ ht-degree: 70%
 
 O Customer Journey Analytics oferece várias maneiras de persistir valores de dimensão além da ocorrência em que estão definidos. Um dos métodos de persistência que a Adobe oferece é conhecido como Ligação. Em versões anteriores do Adobe Analytics, esse conceito era conhecido como merchandising.
 
-Embora você possa usar dimensões de ligação com dados de evento de nível superior, esse conceito é melhor usado ao trabalhar com [Arrays de objetos](/help/use-cases/object-arrays.md). Você pode atribuir uma dimensão a uma parte de um array de objetos sem aplicar a dimensão a todos os atributos em um determinado evento. Por exemplo, você pode atribuir um termo de pesquisa a um produto no array de objetos do carrinho de compras sem vincular esse termo de pesquisa ao evento inteiro.
+Embora você possa usar dimensões de ligação com dados de evento de nível superior, esse conceito é melhor usado ao trabalhar com [Matrizes de objetos](/help/use-cases/object-arrays.md). Você pode atribuir uma dimensão a uma parte de um array de objetos sem aplicar a dimensão a todos os atributos em um determinado evento. Por exemplo, você pode atribuir um termo de pesquisa a um produto na matriz de objetos do carrinho de compras sem vincular esse termo de pesquisa ao evento inteiro.
 
 ## Exemplo 1: uso de dimensões de ligação para conceder atributos de produto adicionais a uma compra
 
@@ -83,7 +83,7 @@ Acesse **[!UICONTROL Visualizações de dados]** e associe a dimensão [!DNL Pro
 
 ![Dimensão de ligação](../assets/binding-dimension.png)
 
-Ao definir esse modelo de persistência, o Customer Journey Analytics anota o nome do produto sempre que a cor do produto é definida. Quando o mesmo nome de produto é reconhecido em um evento subsequente para essa pessoa, a cor do produto também é trazida. Ao vincular a cor do produto ao nome do produto, os mesmos dados seriam semelhantes ao seguinte:
+Ao definir esse modelo de persistência, a Customer Journey Analytics anota o nome do produto sempre que a cor do produto é definida. Quando o mesmo nome de produto é reconhecido em um evento subsequente para essa pessoa, a cor do produto também é trazida. Ao vincular a cor do produto ao nome do produto, os mesmos dados seriam semelhantes ao seguinte:
 
 | product.color | receita |
 | --- | --- |
@@ -354,7 +354,7 @@ O Analysis Workspace atribui o segundo episódio de Orangey ao termo de pesquisa
 
 ## Exemplo 4: avaliar o comportamento de navegação versus comportamento de pesquisa em uma configuração de varejo
 
-É possível vincular valores a dimensões definidas em eventos anteriores. Ao definir uma variável com uma dimensão de vínculo, o Customer Journey Analytics leva em consideração o valor persistente. Se esse comportamento for indesejado, é possível ajustar as configurações de persistência da dimensão de vínculo. Considere o exemplo a seguir em que o `product_finding_method` é definido em um evento e vinculado à métrica Adições ao carrinho no evento a seguir.
+É possível vincular valores a dimensões definidas em eventos anteriores. Ao definir uma variável com uma dimensão de ligação, o Customer Journey Analytics leva em consideração o valor persistente. Se esse comportamento for indesejado, é possível ajustar as configurações de persistência da dimensão de vínculo. Considere o exemplo a seguir em que o `product_finding_method` é definido em um evento e vinculado à métrica Adições ao carrinho no evento a seguir.
 
 1. Um visitante pesquisa por `camera`. Observe que nenhum produto está definido nesta página.
 
@@ -440,4 +440,4 @@ No entanto, se você vincular o `product_finding_method` à métrica Adições a
 
 >[!MORELIKETHIS]
 >
->[Tutorial de Dimension de Ligação em Visualizações de Dados](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=pt-BR).
+>[Tutorial de Dimensões de Ligação em Visualizações de Dados](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html).
