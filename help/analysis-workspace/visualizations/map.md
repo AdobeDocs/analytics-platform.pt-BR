@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 639c3d3c349615078c76f8806bcd5bb458b0f6f2
+source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 83%
+source-wordcount: '2270'
+ht-degree: 10%
 
 ---
 
@@ -42,8 +42,312 @@ ht-degree: 83%
 
 <!-- markdownlint-enable MD034 -->
 
+
+{{release-limited-testing}}
+
 >[!BEGINSHADEBOX]
 
-_Atualmente, não há visualização de mapa disponível no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) para obter a documentação de visualização de mapa no_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
+
+A visualização do ![Globo](/help/assets/icons/Globe.svg) **[!UICONTROL Mapa]** no Analysis Workspace permite criar um mapa visual de qualquer métrica (incluindo métricas calculadas). É útil para identificar e comparar dados de métrica em diferentes regiões geográficas.
+
+## Pré-requisitos
+
+### Adicionar rótulos de contexto em visualizações de dados
+
+Nas configurações de visualizações de dados do Customer Journey Analytics, os administradores podem adicionar [rótulos de contexto](/help/data-views/component-settings/overview.md) a uma dimensão ou métrica, e serviços do Customer Journey Analytics, como o [!UICONTROL mapa], podem usar esses rótulos para suas finalidades.
+
+#### Rótulos de contexto necessários para a visualização do mapa
+
+Rótulos de contexto são necessários para que a visualização de mapa funcione. Sem os rótulos de contexto a seguir, a visualização do mapa não funciona, pois não há dados de latitude e longitude para trabalhar.
+
+* [!UICONTROL Geografia: Latitude]
+* [!UICONTROL Geo: Longitude]
+
+Para adicionar esses rótulos de contexto:
+
+1. No Customer Journey Analytics, selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]**.
+
+1. Na página Visualizações de dados, selecione a visualização de dados que contém os dados que você deseja analisar na visualização de mapa.
+
+1. Selecione a guia **[!UICONTROL Componentes]** e selecione a dimensão que contém os dados de longitude.
+
+1. Na seção **[!UICONTROL Configurações do componente]** no painel direito, no campo **[!UICONTROL Rótulos de contexto]**, comece digitando `Longitude` e selecione-o no menu suspenso.
+
+   ![Rótulos de contexto de latitude e longitude](assets/map-context-labels-lat-long.png)
+
+1. Repita esse processo para adicionar o rótulo de contexto **[!UICONTROL Latitude]** à dimensão que contém os dados de latitude.
+
+1. Selecione **[!UICONTROL Salvar e continuar]** > **[!UICONTROL Salvar e concluir]**.
+
+#### Rótulos de contexto necessários para modelos geográficos
+
+O Adobe fornece vários [modelos pré-criados](/help/analysis-workspace/templates/use-templates.md#web-audience) que usam a visualização de mapa. Para usar cada modelo, você deve adicionar o rótulo de contexto correspondente a uma dimensão em sua visualização de dados.
+
+A seguir estão os modelos e o rótulo de contexto necessário. Sem a presença desses rótulos, os modelos não funcionam, pois não há dados geográficos para trabalhar.
+
+| Nome do modelo | Rótulo de contexto obrigatório |
+|---------|----------|
+| Países geográficos | [!UICONTROL Geo: Geo Country] |
+| Regiões geográficas | [!UICONTROL Geo: Região Geográfica] |
+| Cidades geográficas | [!UICONTROL Geo: Cidade Geográfica] |
+| Estados geográficos dos EUA | [!UICONTROL Geo: Estado Geográfico] |
+| DMA Geográfico dos EUA | [!UICONTROL Geo: Geo Dma] |
+
+Para adicionar esses rótulos de contexto:
+
+1. No Customer Journey Analytics, selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]**.
+
+1. Na página Visualizações de dados, selecione a visualização de dados que contém os dados que você deseja analisar com modelos pré-construídos que usam a visualização de mapa. Nesta visualização de dados, você escolherá cinco dimensões: uma com os dados do país, uma com os dados da região, uma com os dados da cidade, uma com os dados do estado e uma com os dados do DMA. Em seguida, você rotulará essas dimensões com o rótulo de contexto correspondente.
+
+1. Selecione a guia **[!UICONTROL Componentes]** e selecione a dimensão que contém os dados do país.
+
+1. Na seção **[!UICONTROL Configurações do componente]** no painel direito, no campo **[!UICONTROL Rótulos de contexto]**, comece digitando `Geo Country` e selecione-o no menu suspenso.
+
+   ![Rótulos de contexto de modelos](assets/map-context-labels-templates.png)
+
+1. Repita esse processo para adicionar o rótulo de contexto **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]** e **[!UICONTROL Geo: Dma]** a cada dimensão que contenha os dados correspondentes.
+
+1. Selecione **[!UICONTROL Salvar e continuar]** > **[!UICONTROL Salvar e concluir]**.
+
+### Os drivers gráficos devem suportar a renderização WebGL
+
+A visualização de mapa usa WebGL para exibição gráfica. Se os drivers gráficos não forem compatíveis com a renderização WebGL, talvez seja necessário atualizar os drivers.
+
+## Visualização de mapa no Customer Journey Analytics versus Adobe Analytics
+
+A visualização de mapa no Customer Journey Analytics difere da visualização de mapa no Adobe Analytics das seguintes maneiras:
+
+| Recurso | Customer Journey Analytics | Adobe Analytics |
+|---------|----------|---------|
+| Fonte de dados | Use qualquer segmento disponível na visualização de dados como fonte de dados. | Fornece as seguintes opções: <ul><li>Lat/long móveis</li><li>Dimension geográfico<br/>Representa dados de segmentação geográfica sobre a localização do visitante com base no endereço IP do visitante. </li></ul> |
+| Precisão | Para conjuntos de dados com grande precisão, é possível configurar as dimensões na visualização de dados para mostrar até 5 casas decimais. Isso permite que a visualização do mapa seja precisa em um único metro. <p>Para obter mais informações, consulte [Configurar locais precisos para dimensões](#configure-precise-locations-for-dimensions).</p> | Os dados estão precisos para o nível de [!UICONTROL País], [!UICONTROL Região] e [!UICONTROL Cidade]. (Ele não vai para o nível de DMA ou CEP.) |
+| Criar um segmento a partir de uma seleção | Crie um segmento com base em uma área específica selecionada na visualização de mapa. <p>Para obter mais informações, consulte [Criar um segmento da visualização de mapa](#create-a-segment-from-the-map-visualization).</p> | Crie um segmento com base nos dados que estão sendo relatados na visualização de mapa em geral. |
+| Criar um público-alvo a partir de uma seleção | Crie um público-alvo com base em uma área específica selecionada na visualização de mapa. <p>Para obter mais informações, consulte [Criar um público-alvo da visualização de mapa](#create-an-audience-from-the-map-visualization). | Não é possível criar um público-alvo a partir da visualização do mapa. |
+| Criar uma tendência a partir de uma seleção | Crie uma visualização de gráfico de linhas de tendência com base em uma área específica selecionada na visualização de mapa. <p>Para obter mais informações, consulte [Criar um gráfico de linhas de tendência a partir da visualização de mapa](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Não é possível criar uma tendência na visualização de mapa. |
+| Adicionar um detalhamento de uma seleção | Detalhe um item de dimensão, métrica, segmento ou intervalo de datas específico em uma área específica selecionada na visualização de mapa. <p>Para obter mais informações, consulte [Adicionar um detalhamento da visualização de mapa](#add-a-breakdown-from-the-map-visualization). | Não é possível adicionar um detalhamento da visualização do mapa. |
+
+## Começar a criar uma visualização de mapa {#begin-building-map}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_map_panel"
+>title="Configurar a visualização de mapa"
+>abstract="Escolha a métrica ou métrica calculada usada como base para a visualização do mapa. Você também pode adicionar um segmento se quiser se concentrar em um subconjunto específico dos dados.<p>É possível atualizar essas informações a qualquer momento após a renderização da visualização.</p>"
+
+<!-- markdownlint-enable MD034 -->
+
+1. Selecione o ícone [!UICONTROL **Visualizações**] no painel à esquerda e arraste o **[!UICONTROL Mapa]** da visualização ![Mapa](/help/assets/icons/Globe.svg) para um painel que contenha uma tabela de forma livre.
+
+   Ou
+
+   Adicione uma visualização de mapa de qualquer uma das maneiras descritas na seção [Adicionar visualizações a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel) em [Visão geral das visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md).
+
+   ![Configuração do mapa](assets/map-configuration.png){width="50%"}
+
+1. Especifique as seguintes informações básicas para configurar a visualização de mapa:
+
+   * **[!UICONTROL Adicionar métrica]**: na lista suspensa de métricas, selecione uma métrica ou métrica calculada. (Também é possível arrastar uma métrica do painel esquerdo.)
+
+     >[!IMPORTANT]
+     >
+     >Se você escolher uma métrica que tenha [atribuição aplicada](/help/data-views/component-settings/attribution.md#attribution-models), a mesma atribuição será aplicada aos pares de latitude e longitude dentro do visor atual da visualização de mapa.
+     >
+
+     <!-- Only choose metrics that use Last Touch as the [attribution model](/help/data-views/component-settings/attribution.md#attribution-models) (this is the default attribution model for all metrics). Choosing a metric that has an attribution model other than Last Touch results in inaccurate map data, because attribution is applied to the latitude and longitude pairs. -->
+
+   * **[!UICONTROL Adicionar segmento]**: (opcional) na lista suspensa de segmentos, selecione um segmento. Ou arraste um segmento da lista de segmentos.
+
+   Você pode atualizar essas informações depois que a visualização for criada selecionando o ícone de edição ![Editar](/help/assets/icons/Edit.svg) no cabeçalho da visualização.
+
+1. Selecione **[!UICONTROL Criar]**.
+
+   Uma visualização do mapa-múndi com propagações é gerada.
+
+   ![](assets/map-visualization.png)
+
+1. Continue com [Exibir uma visualização de mapa](#view-a-map-visualization) e [Definir configurações de visualização](#configure-visualization-settings).
+
+## Exibir uma visualização de mapa
+
+1. Caso ainda não o tenha feito, crie uma visualização de mapa conforme descrito em [Comece a criar uma visualização de mapa](#begin-building-a-map-visualization).
+
+1. Na visualização de mapa no Analysis Workspace, siga um destes procedimentos:
+
+   * **Mais zoom**: Você pode ampliar o mapa para ampliar determinadas áreas de qualquer uma das seguintes maneiras:
+
+      * Clique duas vezes no mapa com o mouse.
+
+      * Use a roda de rolagem do mouse ou uma ação semelhante no trackpad.
+
+      * Selecione o ícone de adição ![ícone de ampliação](assets/map-zoomin-icon.png) na visualização de mapa.
+
+     O mapa aumenta o zoom de acordo. A dimensão necessária (país > estado > cidade) é atualizada automaticamente com base no nível de zoom.
+
+   * **Reduzir**: você pode reduzir o mapa para exibir áreas maiores de qualquer uma das seguintes maneiras:
+
+      * Mantenha pressionada a tecla Shift e clique duas vezes no mapa com o mouse.
+
+      * Use a roda de rolagem do mouse ou uma ação semelhante no trackpad.
+
+      * Selecione o ícone de menos ![ícone de menos](assets/map-zoomout-icon.png) na visualização de mapa.
+
+     O mapa aumenta o zoom de acordo. A dimensão necessária (país > estado > cidade) é atualizada automaticamente com base no nível de zoom.
+
+   * **Girar**: você pode girar o mapa em 2D ou 3D mantendo a tecla [!UICONTROL Ctrl] pressionada enquanto arrasta o mapa com o mouse.
+
+     Para redefinir o mapa para seu alinhamento norte original, selecione o ícone de bússola ![ícone de bússola](assets/map-compass-icon.png).
+
+   * **Ferramenta de seleção**: é possível selecionar uma área do mapa para [criar um segmento](#create-a-segment-from-the-map-visualization), [criar uma tendência](#create-a-trended-line-chart-from-the-map-visualization) ou [adicionar um detalhamento](#add-a-breakdown-from-the-map-visualization).
+
+     Clique no ![ícone de seleção de mapa](assets/map-selection-icon.png) da ferramenta de seleção e arraste o mouse para selecionar a área desejada.
+
+   * **Comparar**: você pode comparar duas ou mais visualizações de mapa no mesmo projeto, colocando-as lado a lado.
+
+   * **Mostrar comparações período por período (como ano por ano)**:
+
+      * Mostrar números negativos.
+
+        Por exemplo, se estiver traçando uma métrica anual, o mapa pode apresentar -33% em Nova York.
+      * Com métricas do tipo *porcentagem*, o agrupamento calcula a média das porcentagens.
+      * Um esquema de cores verde e vermelho indica positivo e negativo.
+
+   * **Configurações de visualização adicionais**: selecione o ícone Configurações ![Configuração](/help/assets/icons/Setting.svg) no cabeçalho da visualização para exibir configurações adicionais para a visualização de mapa. Para obter mais informações, consulte [Definir configurações de visualização](#configure-visualization-settings).
+
+1. **Salve** o projeto para salvar todas as configurações do mapa (coordenadas, zoom, rotação).
+1. (Opcional) A tabela de forma livre abaixo da visualização pode ser preenchida arrastando as dimensões e métricas de localização do painel esquerdo.
+
+## Definir configurações de visualização
+
+Para definir as configurações da visualização de mapa:
+
+1. No Analysis Workspace, abra uma visualização de mapa existente ou [comece a criar uma nova](#begin-building-a-map-visualization).
+
+1. Passe o mouse sobre a visualização do mapa, em seguida, selecione o ícone Configurações ![Configuração](/help/assets/icons/Setting.svg) no cabeçalho da visualização.
+
+   As seguintes opções estão disponíveis:
+
+   | Seção | Configuração | Descrição |
+   | --- |--- |--- |
+   | **[!UICONTROL Tipo de mapa]** | | |
+   | | **[!UICONTROL Propagação]** | Faz a plotagem de eventos usando propagações. Um gráfico de propagação é um gráfico de muitas variáveis, que é um cruzamento entre um gráfico de dispersão e um gráfico de área proporcional. Essa exibição é o padrão. |
+   | | **[!UICONTROL Mapa de calor]** | Faz a plotagem de eventos usando um mapa de calor. Um mapa de calor é uma representação gráfica de dados onde os valores individuais contidos em uma matriz são representados como cores. |
+   | **[!UICONTROL Estilos]** | | |
+   | | **[!UICONTROL Tema de cores]** | Mostra o esquema de cor do mapa de calor e das propagações. Você pode optar por Coral, Vermelho, Verde ou Azul. O padrão é Coral. |
+   | | **[!UICONTROL Estilo do mapa]** | É possível escolher entre Básico, Ruas, Brilhante, Claro, Escuro e Satélite. |
+   | | **[!UICONTROL Raio do cluster]** | Agrupa os pontos de dados que estão dentro do número especificado de pixels. O padrão é 50. |
+   | | **[!UICONTROL Valor máximo personalizado]** | Permite alterar o limite para o valor máximo do mapa. O ajuste desse valor ajusta a escala para os valores de propagações ou de mapa de calor (cor e tamanho) relativos ao valor máximo personalizado definido. |
+   | | **[!UICONTROL Mostrar anotações]** | Mostra as anotações feitas nesta visualização. |
+   | | **[!UICONTROL Ocultar título]** | Oculta o título da visualização. |
+
+## Configuração de locais precisos para dimensões
+
+Se você tiver conjuntos de dados personalizados com precisão profunda, poderá configurar a visualização de mapa para obter a precisão da localização em um único medidor.
+
+1. No Customer Journey Analytics, selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]**.
+
+1. Selecione a visualização de dados que contém as dimensões que você deseja configurar para usar locais mais precisos.
+
+1. Na visualização de dados, selecione a guia **[!UICONTROL Componentes]**.
+
+1. Selecione a dimensão que deseja configurar.
+
+1. Configure o nível de precisão para a dimensão:
+
+   1. Com a dimensão que você deseja configurar ainda selecionada, expanda a seção **[!UICONTROL Formato]** no painel direito.
+
+      ![item de dimensão selecionado com seção de formato expandida](assets/map-dimension-format.png)
+
+   1. No campo **[!UICONTROL Casas decimais]**, altere o número de decimais para refletir o nível desejado de precisão:
+
+      * **0:** preciso ao nível de região ou país grande na visualização de mapa. Mostra 0 casas decimais nos relatórios do Espaço de trabalho.
+
+      * **1:** preciso ao nível da região ou cidade grande na visualização de mapa.  Mostra 1 casa decimal nos relatórios do Espaço de trabalho.
+
+      * **2:** preciso ao nível de cidade ou código postal na visualização de mapa. Mostra 2 casas decimais nos relatórios do Espaço de trabalho.
+
+        Esta é a seleção padrão.
+
+      * **3:** Preciso do nível muito pequeno da cidade ou bairro na visualização do mapa. Mostra 3 casas decimais nos relatórios do Espaço de trabalho.
+
+      * **4:** Preciso de uma parcela específica de terreno ou nível de edifício na visualização de mapa. Mostra 4 casas decimais nos relatórios do Espaço de trabalho.
+
+      * **5:** Preciso de um único metro na visualização de mapa. Mostra 5 casas decimais nos relatórios do Espaço de trabalho.
+
+1. Selecione **[!UICONTROL Salvar e continuar]** > **[!UICONTROL Salvar e concluir]**.
+
+## Criar um segmento a partir da visualização de mapa {#map-create-segment}
+
+Você pode criar um segmento com base em uma área específica selecionada na visualização de mapa. Quando você cria um segmento com base em uma área selecionada, todos os dados que estão dentro da latitude e longitude de sua seleção são incluídos no segmento.
+
+Para criar um segmento a partir da visualização de mapa:
+
+1. (Opcional) Aumente o zoom na área específica do mapa que contém os dados que você deseja usar para o segmento.
+
+1. Clique no ![ícone de seleção de mapa](assets/map-selection-icon.png) da ferramenta de seleção e arraste o mouse para selecionar a área desejada.
+
+1. Selecione **[!UICONTROL Criar segmento a partir da seleção]** no menu suspenso exibido.
+
+1. Use o Construtor de segmentos para definir o novo segmento. Para obter mais informações, consulte [Construtor de segmentos](/help/components/segments/seg-builder.md).
+
+## Criar um público-alvo a partir da visualização de mapa
+
+Você pode criar um público-alvo com base em uma área específica selecionada na visualização de mapa.
+
+Para criar um público-alvo a partir da visualização de mapa:
+
+1. (Opcional) Aumente o zoom na área específica do mapa que contém os dados que você deseja usar para o público-alvo.
+
+1. Clique no ![ícone de seleção de mapa](assets/map-selection-icon.png) da ferramenta de seleção e arraste o mouse para selecionar a área desejada.
+
+1. Selecione **[!UICONTROL Criar público-alvo a partir da seleção]** no menu suspenso exibido.
+
+1. Use o Construtor de público-alvo para definir o novo público-alvo. Para obter mais informações, consulte [Construtor de público](/help/components/audiences/publish.md#audience-builder) em [Criar e publicar públicos](/help/components/audiences/publish.md)
+
+## Criar um gráfico de linhas de tendência a partir da visualização de mapa
+
+É possível criar uma visualização de gráfico de linhas de tendência para os dados em uma área específica selecionada na visualização de mapa.
+
+Para criar um gráfico de linhas de tendência a partir da visualização de mapa:
+
+1. (Opcional) Aumente o zoom na área específica do mapa que contém os dados que você deseja usar para o gráfico de linhas de tendência.
+
+1. Clique no ![ícone de seleção de mapa](assets/map-selection-icon.png) da ferramenta de seleção e arraste o mouse para selecionar a área desejada.
+
+1. Selecione **[!UICONTROL Tendência]** no menu suspenso exibido.
+
+   É criada uma visualização de linha que inclui uma linha de tendência. Para obter mais informações sobre esta visualização, consulte [Linha](/help/analysis-workspace/visualizations/line.md).
+
+<!--
+
+Can you do this?
+
+## Add a breakdown from the map visualization
+
+You can break down a specific dimension item, metric, segment, or date range for the data within a designated area that you select in the map visualization.
+
+To add a breakdown from the map visualization:
+
+1. (Optional) Zoom in on the specific area of the map that contains the data where you want to add the breakdown.
+
+1. Click the selection tool ![map selection icon](assets/map-selection-icon.png), then drag your mouse to select the desired area.
+
+1. Select **[!UICONTROL Add breakdown]**. 
+
+-->
+
+<!--
+
+Can you do this?
+
+## Export the map visualization as a PDF
+
+To export the map visualization in PDF format:
+
+1. how...
+
+-->
+
