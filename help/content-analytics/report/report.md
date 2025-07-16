@@ -155,5 +155,5 @@ Um painel que consiste em uma tabela de forma livre que detalha onde os ativos m
 >[!MORELIKETHIS]
 >
 >[Componentes da análise de conteúdo](components.md)
->>[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>&#x200B;>[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
