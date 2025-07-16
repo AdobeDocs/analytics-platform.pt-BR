@@ -12,7 +12,7 @@ breadcrumb-title: Guia do Customer Journey Analytics
 source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
 workflow-type: tm+mt
 source-wordcount: '1275'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -272,7 +272,7 @@ ht-degree: 98%
    + Perguntas frequentes sobre o espaço de trabalho e muito mais {#workspace-faq}
       + [Perguntas frequentes](../analysis-workspace/workspace-faq/faq.md)
       + [Otimizar o desempenho](../analysis-workspace/workspace-faq/optimizing-performance.md)
-      + [Erro e solução de problemas](../analysis-workspace/workspace-faq/error-messages.md)
+      + [Erros e solução de problemas](../analysis-workspace/workspace-faq/error-messages.md)
       + [Limitações](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Requisitos](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Acessibilidade](../analysis-workspace/workspace-faq/aw-accessibility.md)
@@ -321,7 +321,7 @@ ht-degree: 98%
       + [Criar anotações](../components/annotations/create-annotations.md)
       + [Gerenciar anotações](../components/annotations/manage-annotations.md)
       + [Exibir anotações](../components/annotations/view-annotations.md)
-      + [Anotações de cartões de pontuação de dispositivos móveis](../components/annotations/mobile-annotations.md)
+      + [Anotações de cartão de pontuação](../components/annotations/mobile-annotations.md)
    + Públicos-alvo {#audiences}
       + [Visão geral de públicos-alvo](../components/audiences/audiences-overview.md)
       + [Criar e publicar públicos-alvo](../components/audiences/publish.md)
