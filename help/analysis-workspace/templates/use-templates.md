@@ -1,10 +1,10 @@
 ---
-description: Saiba mais sobre os modelos padrão no Analysis Workspace e como usar esses modelos padrão.
+description: Saiba mais sobre os modelos padrão no Analysis Workspace e como usá-los.
 title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: 5464ad539fc1f753941297c3d7634f20506f719b
 workflow-type: tm+mt
 source-wordcount: '19833'
 ht-degree: 99%
@@ -538,7 +538,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Saiba qual conteúdo e atributos de conteúdo apresentam melhor desempenho."
->abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. A análise de conteúdo usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics)<br/>**Com base no que aprender, você poderá** fazer várias coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto."
+>abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles.<a href="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics" target="_blank">Saiba mais</a> <br/>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto."
 
 <!-- markdownlint-enable MD034 -->
 
