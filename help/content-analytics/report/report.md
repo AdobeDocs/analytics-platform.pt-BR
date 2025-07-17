@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: c86da649c23ca06c3404b6e5db0b9970e8817a72
+source-git-commit: 51b3d533ef7b42ff03823f2dffcb2ccfbb9c4bbe
 workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 99%
@@ -31,7 +31,7 @@ Você verá miniaturas de ativos e dimensões com base nas dimensões específic
 
 Por padrão, as miniaturas são exibidas para dimensões relevantes da análise de conteúdo. Para configurar a exibição de miniaturas de uma dimensão da análise de conteúdo.
 
-* Passe o mouse sobre uma linha de cabeçalho de uma dimensão da análise de conteúdo. Por exemplo, **[!UICONTROL ID do ativo]** ou **[!UICONTROL IDs de experiência]**.
+* Passe o mouse sobre uma linha de cabeçalho de uma dimensão da análise de conteúdo. Por exemplo, **[!UICONTROL IDs de ativos]** ou **[!UICONTROL IDs de experiências]**.
 * Selecione ![Configuração](/help/assets/icons/Setting.svg).
 * Na janela pop-up **[!UICONTROL Configuração de linha]**, abaixo de **[!UICONTROL Configurações]**, marque ou desmarque a opção **[!UICONTROL Mostrar miniaturas]**.
 
@@ -155,5 +155,5 @@ Um painel que consiste em uma tabela de forma livre que detalha onde os ativos m
 >[!MORELIKETHIS]
 >
 >[Componentes da análise de conteúdo](components.md)
->&#x200B;>[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
