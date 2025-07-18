@@ -1,22 +1,20 @@
 ---
-description: Exemplo de intervalos de datas personalizados no Analysis Workspace.
+description: Saiba como definir intervalos de datas personalizados no Analysis Workspace.
 keywords: Analysis Workspace
 title: Exemplo de intervalos de datas personalizados
 feature: Calendar
 exl-id: 1a7df63a-bf18-4c38-b7e2-e83c2d278544
 role: User
-source-git-commit: 90d1c51c11f0ab4d7d61b8e115efa8257a985446
+source-git-commit: 2a152e09d4ff62a02182fc6ac085d4143105a665
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '113'
 ht-degree: 4%
 
 ---
 
 # Exemplo de intervalos de datas personalizados
 
-Este artigo mostra mais exemplos de intervalos de datas personalizados
-
-
+Este artigo mostra mais exemplos de intervalos de datas personalizados.
 
 ## Há dois meses
 
