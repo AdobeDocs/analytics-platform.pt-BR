@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
+source-git-commit: c5d550d92a7bf201d3b9f62243540d9c4e063fc8
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '2283'
 ht-degree: 13%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -212,7 +212,9 @@ A visualização de mapa no Customer Journey Analytics difere da visualização 
       * Mostrar números negativos.
 
         Por exemplo, se estiver traçando uma métrica anual, o mapa pode apresentar -33% em Nova York.
+
       * Com métricas do tipo *porcentagem*, o agrupamento calcula a média das porcentagens.
+
       * Um esquema de cores verde e vermelho indica positivo e negativo.
 
    * **Configurações de visualização adicionais**: selecione o ícone Configurações ![Configuração](/help/assets/icons/Setting.svg) no cabeçalho da visualização para exibir configurações adicionais para a visualização de mapa. Para obter mais informações, consulte [Definir configurações de visualização](#configure-visualization-settings).
@@ -238,7 +240,7 @@ Para definir as configurações da visualização de mapa:
    | **[!UICONTROL Estilos]** | | |
    | | **[!UICONTROL Tema de cores]** | Mostra o esquema de cor do mapa de calor e das propagações. Você pode optar por Coral, Vermelho, Verde ou Azul. O padrão é Coral. |
    | | **[!UICONTROL Estilo do mapa]** | É possível escolher entre Básico, Ruas, Brilhante, Claro, Escuro e Satélite. |
-   | | **[!UICONTROL Raio do cluster]** | Agrupa os pontos de dados que estão dentro do número especificado de pixels. O padrão é 50. |
+   | | **[!UICONTROL Raio do cluster]** | Agrupa os pontos de dados que estão dentro do número especificado de pixels. O padrão é 50.<p>Esta opção está disponível somente quando **[!UICONTROL Bolhas]** é selecionado como o **[!UICONTROL Tipo de mapa]**.</p> |
    | | **[!UICONTROL Valor máximo personalizado]** | Permite alterar o limite para o valor máximo do mapa. O ajuste desse valor ajusta a escala para os valores de propagações ou de mapa de calor (cor e tamanho) relativos ao valor máximo personalizado definido. |
    | | **[!UICONTROL Mostrar anotações]** | Mostra as anotações feitas nesta visualização. |
    | | **[!UICONTROL Ocultar título]** | Oculta o título da visualização. |
@@ -263,19 +265,19 @@ Se você tiver conjuntos de dados personalizados com precisão profunda, poderá
 
    1. No campo **[!UICONTROL Casas decimais]**, altere o número de decimais para refletir o nível desejado de precisão:
 
-      * **0:** preciso ao nível de região ou país grande na visualização de mapa. Mostra 0 casas decimais nos relatórios do Espaço de trabalho.
+      * **0:** preciso ao nível de região ou país grande na visualização de mapa. Mostra 0 casas decimais nos relatórios do Workspace.
 
-      * **1:** preciso ao nível da região ou cidade grande na visualização de mapa.  Mostra 1 casa decimal nos relatórios do Espaço de trabalho.
+      * **1:** preciso ao nível da região ou cidade grande na visualização de mapa.  Mostra 1 casa decimal nos relatórios do Workspace.
 
-      * **2:** preciso ao nível de cidade ou código postal na visualização de mapa. Mostra 2 casas decimais nos relatórios do Espaço de trabalho.
+      * **2:** preciso ao nível de cidade ou código postal na visualização de mapa. Mostra 2 casas decimais nos relatórios do Workspace.
 
         Esta é a seleção padrão.
 
-      * **3:** Preciso do nível muito pequeno da cidade ou bairro na visualização do mapa. Mostra 3 casas decimais nos relatórios do Espaço de trabalho.
+      * **3:** Preciso do nível muito pequeno da cidade ou bairro na visualização do mapa. Mostra 3 casas decimais nos relatórios do Workspace.
 
-      * **4:** Preciso de uma parcela específica de terreno ou nível de edifício na visualização de mapa. Mostra 4 casas decimais nos relatórios do Espaço de trabalho.
+      * **4:** Preciso de uma parcela específica de terreno ou nível de edifício na visualização de mapa. Mostra 4 casas decimais nos relatórios do Workspace.
 
-      * **5:** Preciso de um único metro na visualização de mapa. Mostra 5 casas decimais nos relatórios do Espaço de trabalho.
+      * **5:** Preciso de um único metro na visualização de mapa. Mostra 5 casas decimais nos relatórios do Workspace.
 
 1. Selecione **[!UICONTROL Salvar e continuar]** > **[!UICONTROL Salvar e concluir]**.
 
