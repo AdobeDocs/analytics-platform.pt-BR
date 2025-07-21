@@ -9,7 +9,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
 workflow-type: tm+mt
 source-wordcount: '2270'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -136,7 +136,7 @@ A visualização de mapa no Customer Journey Analytics difere da visualização 
 >[!CONTEXTUALHELP]
 >id="workspace_map_panel"
 >title="Configurar a visualização de mapa"
->abstract="Escolha a métrica ou métrica calculada usada como base para a visualização do mapa. Você também pode adicionar um segmento se quiser se concentrar em um subconjunto específico dos dados.<p>É possível atualizar essas informações a qualquer momento após a renderização da visualização.</p>"
+>abstract="Escolha a métrica ou métrica calculada que servirá de base para a sua visualização de mapa. Você também pode adicionar um segmento se quiser se focar em um subconjunto específico dos dados.<p>É possível atualizar essas informações a qualquer momento após a renderização da visualização.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
