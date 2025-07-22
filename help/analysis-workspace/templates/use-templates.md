@@ -4,9 +4,9 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: bf5d809588c7a0b2e7a97470c99a0f2565d6f713
+source-git-commit: 0b2cc64bd6134ea7a843499af4461b33147f4e41
 workflow-type: tm+mt
-source-wordcount: '19837'
+source-wordcount: '19835'
 ht-degree: 99%
 
 ---
@@ -538,7 +538,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Saiba qual conteúdo e atributos de conteúdo apresentam melhor desempenho."
->abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles.<a href="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics" target="_blank">Saiba mais</a> <br/>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto."
+>abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O [Content Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics){target="_blank"} usa a IA para gerar atributos automaticamente e marcar seu conteúdo com eles.<br/>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto."
 
 <!-- markdownlint-enable MD034 -->
 
