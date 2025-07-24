@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 82aefce30834d6400d338896dc1968e37596393e
+source-git-commit: fedb1337b32e44fc00989bace6a4d1788043f55f
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 14%
+source-wordcount: '1059'
+ht-degree: 13%
 
 ---
 
@@ -29,17 +29,17 @@ Consulte [comparação de relatórios](#reporting-comparison) para obter mais de
 >
 
 
-Para relatar a data do Marketo Engage no Customer Journey Analytics:
+Para criar relatórios sobre dados do Marketo Engage no Customer Journey Analytics:
 
 +++ &#x200B;1. Mapear campos de dados de origem do Marketo para seus destinos XDM
 
-Mapeie os objetos [Pessoas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) e [Atividades](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) aos respectivos campos de público-alvo do esquema XDM.
+Mapeie os objetos [Pessoas](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) e [Atividades](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) aos respectivos campos de público-alvo do esquema XDM.
 
 +++
 
 +++ &#x200B;2. Assimilar dados do Marketo na Adobe Experience Platform
 
-Use o [conector do Marketo Engage](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) para trazer os dados do Marketo para a Experience Platform e manter esses dados atualizados usando aplicativos conectados à Platform.
+Use o [conector do Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) para trazer os dados do Marketo para a Experience Platform e manter esses dados atualizados usando aplicativos conectados à Platform.
 
 +++
 
@@ -137,3 +137,6 @@ Consulte abaixo uma tabela de comparação rápida sobre os recursos de relatór
 | **Flexibilidade e relatórios personalizados** | BI avançado (complemento) para aprofundamento de programas e contas. | Altamente flexível na forma como você cria espaços de trabalho, painéis ou relatórios personalizados usando todos os dados disponíveis. |
 | **Análise de público-alvo** | Filtrar e segmentar listas de programas, engajamento e listas inteligentes. | Visualizações avançadas de persona e jornada, definição de caminho do público e análise de sobreposição de segmentos. |
 | **Usuários pretendidos** | Profissionais de marketing, operadores de marketing, funcionários de geração de demanda, gerentes de receita. | Analistas, cientistas de dados, estrategistas de marketing, profissionais de experiência do cliente. |
+| **Desduplicação de métrica** | Para relatórios de desempenho de email, as métricas são desduplicadas automaticamente pela id do lead, id da campanha e id de ativo de email. Se vários emails forem criados do mesmo ativo de email forem enviados para o mesmo lead do mesmo programa, esses emails serão contados apenas como um. | Sem filtros e métricas adicionais aplicados, os dados de relatório de email são relatados como uma contagem total do desempenho do email sem [desduplicação de métrica](/help/data-views/component-settings/metric-deduplication.md). |
+
+{style="table-layout:fixed"}
