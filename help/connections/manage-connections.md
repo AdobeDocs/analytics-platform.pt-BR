@@ -6,10 +6,10 @@ exl-id: 0a87518c-3608-44ad-b5e3-976f97560433
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f229b6c9241660d3e8a386638ae68d4cb3627ba1
+source-git-commit: 22b18c97baf7f55bf654cc298d2748298ea376d8
 workflow-type: tm+mt
-source-wordcount: '4163'
-ht-degree: 74%
+source-wordcount: '3934'
+ht-degree: 72%
 
 ---
 
@@ -55,14 +55,14 @@ As seguintes colunas ou ícones estão disponíveis na tabela.
 | **[!UICONTROL _Nome_]** | O nome amigável da conexão. Selecione o nome com hiperlink para ver os [detalhes da conexão](#connection-details). |
 | ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Para exibir informações sobre [!UICONTROL Conjuntos de dados incluídos], [!UICONTROL Sandbox], [!UICONTROL Proprietário] e muito mais, selecione ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ao lado do nome da conexão.<p>Uma janela pop-up exibe detalhes sobre o conjunto de dados. <p>![Pop-up de informações da conexão](assets/connection-info-popup.png) |
 | ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Selecione ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para abrir um menu de contexto. Você pode selecionar: <p>![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** para [editar](#edit-a-connection) uma conexão.<p>![Excluir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Excluir]** para [excluir](#delete-a-connection) uma conexão.<p>![Visualização de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Criar nova visualização de dados]** para [criar uma nova visualização de dados](#create-a-data-view) para a conexão.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Mapa de conexão]** para exibir um [mapa de conexão](#map-a-connection) para a conexão. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Tipo de conexão &#x200B;]** | O tipo de conexão: com base em **[!UICONTROL Pessoa]** ou em **[!UICONTROL Conta]**. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Tipo de conexão ]** | O tipo de conexão: com base em **[!UICONTROL Pessoa]** ou em **[!UICONTROL Conta]**. |
 | **[!UICONTROL Conjuntos de dados]** | Um ou mais links para os conjuntos de dados que fazem parte da conexão. É possível selecionar o hiperlink do conjunto de dados para exibi-lo na conexão. Se mais conjuntos de dados fizerem parte da conexão selecionada, selecione **[!UICONTROL +*x* mais]** para mostrar um painel **[!UICONTROL Conjuntos de dados incluídos]**. Este painel mostra links para todos os conjuntos de dados e uma opção para ![Pesquisar](/help/assets/icons/Search.svg) para procurar conjuntos de dados específicos que façam parte da conexão.<p>![Conjuntos de dados incluídos](assets/datasets-included.png)<p>Selecione um nome de conjunto de dados para abrir o conjunto de dados na interface do Experience Platform em uma nova guia. |
 | **[!UICONTROL Sandbox]** | A [sandbox da Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) da qual essa conexão obtém seus conjuntos de dados. Você seleciona essa sandbox ao criar a conexão. Não é possível alterar a sandbox depois que uma conexão é salva. |
 | **[!UICONTROL Proprietário]** | A pessoa que criou a conexão. |
-| **[!UICONTROL Importar novos dados]** | O status da importação de novos dados para conjuntos de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Em]**&#x200B;para conjuntos de dados configurados para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para conjuntos de dados não configurados para importar novos dados. |
+| **[!UICONTROL Importar novos dados]** | O status da importação de novos dados para conjuntos de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Em]**para conjuntos de dados configurados para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para conjuntos de dados não configurados para importar novos dados. |
 | **[!UICONTROL Data de criação]** | O carimbo de data e hora em que a conexão foi criada. |
 | **[!UICONTROL Última modificação]** | O carimbo de data e hora da última atualização da conexão. |
-| **[!UICONTROL Dados de preenchimento retroativo]** | O status para dados de preenchimento retroativo em conjuntos de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha entre conjuntos de dados,<p>![Status laranja](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de processamentos de preenchimentos retroativos em conjuntos de dados,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos para conjuntos de dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo seja definido para os conjuntos de dados na conexão. |
+| **[!UICONTROL Dados de preenchimento retroativo]** | O status para dados de preenchimento retroativo em conjuntos de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha entre conjuntos de dados,<p>![Status laranja](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de processamentos de preenchimentos retroativos em conjuntos de dados,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos para conjuntos de dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo seja definido para os conjuntos de dados na conexão. |
 
 Para definir quais colunas serão exibidas na tabela, selecione ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg). Na caixa de diálogo Personalizar tabela, selecione as colunas a serem mostradas.
 
@@ -151,8 +151,8 @@ A interface de detalhes das conexões fornece uma exibição detalhada do status
 | **[!UICONTROL Registros de dados do evento disponíveis]** | O número total de linhas do conjunto de dados de eventos disponíveis para relatórios, **para toda a conexão**. Essa contagem independe de qualquer intervalo de datas ou seleção de conjunto de dados. |
 | [!UICONTROL **[!UICONTROL Métricas]**] | Resuma os registros de evento, pesquisa, perfil e conjunto de dados de resumo que são adicionados, ignorados e excluídos, e o número de lotes adicionados. Essas métricas são baseadas em **o conjunto de dados e o intervalo de datas selecionados**.<p>Selecione **[!UICONTROL Verificar detalhes]** para mostrar o pop-up **[!UICONTROL Verificar detalhes ignorados]**. O pop-up lista o número de registros ignorados e o motivo para todos os conjuntos de dados de evento ou conjuntos de dados selecionados.<p>![Registros ignorados](assets/skipped-records.png)<p>Selecione o pop-up ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) com mais informações. Por alguns motivos ignorados, como [!UICONTROL ID de visitante vazia], o pop-up exibe **[!UICONTROL PSQL de Exemplo para EQS]** (Experience Platform para Serviço de Consulta) que você pode usar no [Serviço de Consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home) para consultar os registros ignorados no conjunto de dados. Selecione ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copiar PSQL de exemplo para EQS]** para copiar o SQL. |
 | **[!UICONTROL Registros adicionados]** | Uma visualização para indicar quantas linhas foram adicionadas no período selecionado, **para o conjunto de dados e o intervalo de datas selecionados**. Atualizações a cada 10 minutos. |
-| **[!UICONTROL Registros ignorados]** | Uma visualização para indicar quantas linhas foram ignoradas no período selecionado, **para o conjunto de dados e o intervalo de datas selecionados**. Os motivos para os registros serem ignorados são: carimbos de data e hora ausentes, ID de pessoa ausente ou inválida ou ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} e assim por diante. Atualizações a cada 10 minutos. <p>IDs inválidas (como `undefined`, `00000000` ou qualquer combinação de números e letras em uma [!UICONTROL ID de pessoa] que aparecem em um evento mais de 1 milhão de vezes em um determinado mês) são IDs que não podem ser atribuídas a nenhum usuário ou pessoa específica. Essas linhas não podem ser assimiladas no sistema e resultam em assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa ou IDs de conta inválidas [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, você tem três opções:<ul><li>Use [Compilação](/help/stitching/overview.md) para preencher as IDs de usuário indefinidas ou totalmente nulas com IDs de usuário válidas.</li><li>IDs de usuário em branco, que são ignoradas durante a assimilação (preferível a IDs de usuário inválidas ou totalmente nulas).</li><li>Corrija IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul> |
-| **[!UICONTROL Registros excluídos]** | Uma visualização para indicar quantas linhas foram excluídas no período selecionado, **para o conjunto de dados e o intervalo de datas selecionados**. Alguém pode ter excluído um conjunto de dados na [!DNL Experience Platform], por exemplo. Atualizações a cada 10 minutos.<p>Em alguns cenários, esse valor também pode incluir registros substituídos, como na compilação ou em algumas atualizações de conjunto de dados de pesquisa. Considere este exemplo:</p><ul><li>Você faz upload de um registro para um conjunto de dados de Perfil individual XDM, que o Customer Journey Analytics está configurado para assimilar como dados de pesquisa de perfil. Nos detalhes da conexão, esse conjunto de dados exibiria 1 registro adicionado.</li><li>Você faz upload de uma duplicata do registro original no mesmo conjunto de dados da AEP, que agora contém dois registros. O Customer Journey Analytics assimila o registro adicional do conjunto de dados de pesquisa de perfil ou conta [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}. Vendo que um perfil ou registro de conta já foi assimilado na conexão para essa ID de pessoa ou ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, a Customer Journey Analytics exclui sua versão anterior e adiciona os novos dados de perfil. Nos detalhes da conexão, esta ação representaria 1 registro adicionado e 1 registro excluído, pois a Customer Journey Analytics retém apenas os dados de pesquisa de perfil mais recentes para qualquer ID de pessoa ou ID de conta assimilada [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}.</li><li>No total, o conjunto de dados da AEP contém dois registros que são idênticos. Separadamente, os detalhes de conexão do Customer Journey Analytics exibem o status de seus dados assimilados: 2 registros adicionados e 1 registro excluído para esse conjunto de dados de perfil. </li></ul> |
+| **[!UICONTROL Registros ignorados]** | Uma visualização para indicar quantas linhas foram ignoradas no período selecionado, **para o conjunto de dados e o intervalo de datas selecionados**. Os motivos para os registros serem ignorados são: carimbos de data e hora ausentes, ID de pessoa ausente ou inválida ou ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} e assim por diante. Atualizações a cada 10 minutos. <p>IDs inválidas (como `undefined`, `00000000` ou qualquer combinação de números e letras em uma [!UICONTROL ID de pessoa] que aparecem em um evento mais de 1 milhão de vezes em um determinado mês) são IDs que não podem ser atribuídas a nenhum usuário ou pessoa específica. Essas linhas não podem ser assimiladas no sistema e resultam em assimilação e relatórios propensos a erros. Para corrigir IDs de pessoa ou IDs de conta inválidas [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, você tem três opções:<ul><li>Use [Compilação](/help/stitching/overview.md) para preencher as IDs de usuário indefinidas ou totalmente nulas com IDs de usuário válidas.</li><li>IDs de usuário em branco, que são ignoradas durante a assimilação (preferível a IDs de usuário inválidas ou totalmente nulas).</li><li>Corrija IDs de usuário inválidas em seu sistema antes de assimilar os dados.</li></ul> |
+| **[!UICONTROL Registros excluídos]** | Uma visualização para indicar quantas linhas foram excluídas no período selecionado, **para o conjunto de dados e o intervalo de datas selecionados**. Alguém pode ter excluído um conjunto de dados na [!DNL Experience Platform], por exemplo. Atualizações a cada 10 minutos.<p>Em alguns cenários, esse valor também pode incluir registros substituídos, como na compilação ou em algumas atualizações de conjunto de dados de pesquisa. Considere este exemplo:</p><ul><li>Você faz upload de um registro para um conjunto de dados de Perfil individual XDM, que o Customer Journey Analytics está configurado para assimilar como dados de pesquisa de perfil. Nos detalhes da conexão, esse conjunto de dados exibiria 1 registro adicionado.</li><li>Você faz upload de uma duplicata do registro original no mesmo conjunto de dados da AEP, que agora contém dois registros. O Customer Journey Analytics assimila o registro adicional do conjunto de dados de pesquisa de perfil ou conta [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Vendo que um perfil ou registro de conta já foi assimilado na conexão para essa ID de pessoa ou ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, a Customer Journey Analytics exclui sua versão anterior e adiciona os novos dados de perfil. Nos detalhes da conexão, esta ação representaria 1 registro adicionado e 1 registro excluído, pois a Customer Journey Analytics retém apenas os dados de pesquisa de perfil mais recentes para qualquer ID de pessoa ou ID de conta assimilada [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}.</li><li>No total, o conjunto de dados da AEP contém dois registros que são idênticos. Separadamente, os detalhes de conexão do Customer Journey Analytics exibem o status de seus dados assimilados: 2 registros adicionados e 1 registro excluído para esse conjunto de dados de perfil. </li></ul> |
 | ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) | Campo de pesquisa de conjunto de dados. Você pode pesquisar a tabela de conjuntos de dados pelo nome ou ID do conjunto de dados. |
 | [!UICONTROL Tabela de conjuntos de dados] | Os conjuntos de dados que fazem parte da conexão. Consulte a tabela abaixo para obter mais explicações. Selecione ![SelectBox](/help/assets/icons/SelectBox.svg) um único conjunto de dados para mostrar apenas os detalhes da conexão do conjunto de dados selecionado. Equivale à seleção de um conjunto de dados no **[!UICONTROL _Seletor de conjunto de dados_]**. |
 
@@ -170,9 +170,9 @@ A tabela de conjuntos de dados exibe as seguintes colunas para cada conjunto de 
 | **[!UICONTROL Tipo de fonte de dados]** | O tipo de origem. Você define o tipo de origem ao adicionar um conjunto de dados a uma conexão. |
 | **[!UICONTROL Tipo de conjunto de dados]** | O [tipo de conjunto de dados](create-connection.md#dataset-types). O tipo pode ser [!UICONTROL Evento], [!UICONTROL Perfil], [!UICONTROL Pesquisa] ou [!UICONTROL Resumo]. |
 | **[!UICONTROL Esquema]** | O esquema da Experience Platform no qual esse conjunto de dados se baseia. |
-| **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar uma nova importação de dados. |
-| **[!UICONTROL Transformar dados]** | O status de transformação dos conjuntos de dados de pesquisa B2B aplicáveis. Consulte [Transformar conjuntos de dados para pesquisas B2B](transform-datasets-b2b-lookups.md) para obter mais informações.<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;para conjuntos de dados aplicáveis habilitados para transformação, <p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para conjuntos de dados aplicáveis não habilitados para transformação e<p>**[!UICONTROL N/D]** para todos os outros conjuntos de dados, não aplicável para transformação. |
-| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso os preenchimentos retroativos não estejam configurados. |
+| **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar uma nova importação de dados. |
+| **[!UICONTROL Transformar dados]** | O status de transformação dos conjuntos de dados de pesquisa B2B aplicáveis. Consulte [Transformar conjuntos de dados para pesquisas B2B](transform-datasets-b2b-lookups.md) para obter mais informações.<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**para conjuntos de dados aplicáveis habilitados para transformação, <p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para conjuntos de dados aplicáveis não habilitados para transformação e<p>**[!UICONTROL N/D]** para todos os outros conjuntos de dados, não aplicável para transformação. |
+| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso os preenchimentos retroativos não estejam configurados. |
 
 >[!IMPORTANT]
 >
@@ -192,12 +192,12 @@ Quando nenhum conjunto de dados individual é selecionado na tabela de conjuntos
 | **[!UICONTROL Descrição da conexão]** | A descrição da conexão. |
 | **[!UICONTROL Sandbox]** | A [sandbox da Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) da qual essa conexão obtém seus conjuntos de dados. Você seleciona essa sandbox ao criar a conexão. Não é possível alterar a sandbox depois que uma conexão é salva. |
 | **[!UICONTROL ID da conexão]** | Um identificador gerado para a conexão. Você pode usar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o valor. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Tipo de ID Primária &#x200B;]** | O tipo de ID primária da conexão: **[!UICONTROL Pessoa]** para uma conexão baseada em pessoa, **[!UICONTROL Conta]** para uma conexão baseada em conta. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Contêineres &#x200B;]** | Os contêineres configurados para a conexão. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Tipo de ID Primária ]** | O tipo de ID primária da conexão: **[!UICONTROL Pessoa]** para uma conexão baseada em pessoa, **[!UICONTROL Conta]** para uma conexão baseada em conta. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Contêineres ]** | Os contêineres configurados para a conexão. |
 | **[!UICONTROL Visualizações de dados usando conexão]** | As visualizações de dados que usam essa conexão. |
-| **[!UICONTROL Importar novos dados]** | O status da importação de novos dados para conjuntos de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;para quantos conjuntos de dados estão configurados para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para quantos conjuntos de dados a nova importação de dados está desativada. |
-| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo para conjuntos de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha entre conjuntos de dados,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de processamentos de preenchimentos retroativos em conjuntos de dados,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos para conjuntos de dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo seja definido para os conjuntos de dados na conexão. |
-| **[!UICONTROL Transformar dados]** | O status de transformação dos conjuntos de dados de pesquisa B2B aplicáveis. Consulte [Transformar conjuntos de dados para pesquisas B2B](transform-datasets-b2b-lookups.md) para obter mais informações.<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;para o número de conjuntos de dados habilitados para transformação. |
+| **[!UICONTROL Importar novos dados]** | O status da importação de novos dados para conjuntos de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**para quantos conjuntos de dados estão configurados para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para quantos conjuntos de dados a nova importação de dados está desativada. |
+| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo para conjuntos de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha entre conjuntos de dados,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de processamentos de preenchimentos retroativos em conjuntos de dados,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos para conjuntos de dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo seja definido para os conjuntos de dados na conexão. |
+| **[!UICONTROL Transformar dados]** | O status de transformação dos conjuntos de dados de pesquisa B2B aplicáveis. Consulte [Transformar conjuntos de dados para pesquisas B2B](transform-datasets-b2b-lookups.md) para obter mais informações.<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**para o número de conjuntos de dados habilitados para transformação. |
 | **[!UICONTROL Criado por]** | O nome da pessoa que criou a conexão. |
 | **[!UICONTROL Última modificação]** | O carimbo de data/hora da última alteração feita na conexão. |
 | **[!UICONTROL Modificado pela última vez por]** | O nome da pessoa que modificou a conexão pela última vez. |
@@ -208,20 +208,20 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 | Detalhes | Descrição |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL ID da conta global &#x200B;]** | A identidade que você especificou como a ID de conta global para a conexão. Aplicável somente para uma conexão baseada em conta para a qual um contêiner de Conta global está configurado. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL ID da conta &#x200B;]** | A identidade que você especificou como a ID da conta para a conexão. Aplicável somente para uma conexão baseada em conta para a qual nenhum contêiner de Conta global está configurado. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID da conta global ]** | A identidade que você especificou como a ID de conta global para a conexão. Aplicável somente para uma conexão baseada em conta para a qual um contêiner de Conta global está configurado. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID da conta ]** | A identidade que você especificou como a ID da conta para a conexão. Aplicável somente para uma conexão baseada em conta para a qual nenhum contêiner de Conta global está configurado. |
 | **[!UICONTROL ID de pessoa]** | A identidade especificada como a ID de pessoa para a conexão. |
 | **[!UICONTROL Chave]** | A chave especificada para um conjunto de dados de pesquisa. |
 | **[!UICONTROL Chave correspondente]** | A chave correspondente especificada para um conjunto de dados de pesquisa. |
 | **[!UICONTROL Carimbo de data e hora]** | O carimbo de data/hora definido para um conjunto de dados de evento. |
-| **[!UICONTROL Registros disponíveis]** | Representa a quantidade total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado por meio do calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. No entanto, quando você cria uma nova conexão, existe uma [latência](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
+| **[!UICONTROL Registros disponíveis]** | Representa a quantidade total de linhas assimiladas para esse conjunto de dados durante o período específico selecionado por meio do calendário. Não há latência para que os dados apareçam nos relatórios, uma vez adicionados. No entanto, quando você cria uma nova conexão, existe uma [latência](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq). |
 | **[!UICONTROL Registros adicionados]** | O número de registros (linhas) do conjunto de dados adicionados a uma conexão durante o intervalo de datas selecionado. |
 | **[!UICONTROL Registros ignorados]** | O número de registros (linhas) de conjunto de dados ignorados durante a transferência de dados para uma conexão durante o intervalo de datas selecionado. |
 | **[!UICONTROL Lotes adicionados]** | O número de lotes que foram adicionados a uma conexão. |
 | **[!UICONTROL Registros excluídos]** | O número de registros (linhas) de conjunto de dados removidos de uma conexão durante o intervalo de datas selecionado. |
 | **[!UICONTROL Última adição]** | O carimbo de data e hora do lote mais recente que foi adicionado a uma conexão. |
-| **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
-| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]**, caso nenhum preenchimento retroativo tenha sido configurado.<p>Para mostrar uma caixa de diálogo com uma visão geral dos preenchimentos retroativos anteriores do conjunto de dados, selecione <img src="./assets/pastbackfill.svg" alt="Preenchimentos retroativos anteriores" width="15"/> **[!UICONTROL Preenchimentos retroativos anteriores]**. |
+| **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
+| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]**, caso nenhum preenchimento retroativo tenha sido configurado.<p>Para mostrar uma caixa de diálogo com uma visão geral dos preenchimentos retroativos anteriores do conjunto de dados, selecione <img src="./assets/pastbackfill.svg" alt="Preenchimentos retroativos anteriores" width="15"/> **[!UICONTROL Preenchimentos retroativos anteriores]**. |
 | **[!UICONTROL Tipo de fonte de dados]** | Tipo de fonte de dados conforme definido quando o conjunto de dados foi adicionado à conexão. |
 | **[!UICONTROL Tipo de conjunto de dados]** | O [tipo de conjunto de dados](create-connection.md#dataset-types). |
 | **[!UICONTROL Esquema]** | O esquema da Adobe Experience Platform no qual esse conjunto de dados se baseia. |
@@ -230,157 +230,63 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 ## Uso {#connections-usage}
 
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_keyusagemetrics"
->title="Principais métricas de uso"
->abstract="Forneça dados mensais e totais para linhas principais e históricas relatáveis."
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_monthlyingestedrows"
->title="Linhas assimiladas mensais"
->abstract="Mede o número total de registros adicionados ao sistema a cada mês para fornecer insights sobre o crescimento dos dados e as taxas de ingestão."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_monthlyreportablerows"
->title="Linhas relatáveis mensais"
->abstract="Rastreia o número de linhas disponíveis para relatórios. Linhas relatáveis são as linhas assimiladas menos as linhas que são ignoradas e excluídas durante a assimilação. As linhas relatáveis servem como uma métrica principal para cobrança e uso de dados."
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_detailbreakdown"
->title="Detalhamento."
->abstract="Você pode visualizar métricas detalhadas por conexão, conjunto de dados, sandbox e tags, com a opção de baixar um arquivo CSV desses dados."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_otherdatasets"
->title="Outros conjuntos de dados"
->abstract="Em meses anteriores a setembro de 2024, os dados eram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados são coletados em um nível de conjunto de dados granular, e *outros conjuntos de dados* não são mais exibidos."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_unknowndatasetsorconnections"
->title="Conjuntos de dados ou conexões desconhecidos"
->abstract="Conjuntos de dados ou conexões desconhecidos são exibidos usando suas IDs."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_usage_datanotavailable"
->title="Dados indisponíveis"
->abstract="Os dados históricos anteriores a setembro de 2024 não estão disponíveis devido a limitações do sistema. As métricas são coletadas e exibidas a partir de setembro de 2024. O gráfico mostra os últimos 18 meses na linha do tempo e dados futuros serão exibidos à medida que forem disponibilizados."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_corereportablerows"
->title="Principais linhas para relatório"
->abstract="Exibe o número total de linhas disponíveis nos últimos 13 meses. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_connections_historicalreportablerows"
->title="Linhas históricas para relatório"
->abstract="O número total de linhas disponíveis para o período com mais de 13 meses. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="connections_usage_keyusagemetrics"
 >title="Principais métricas de uso"
 >abstract="Forneça dados mensais e totais para linhas principais e históricas relatáveis."
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_monthlyingestedrows"
 >title="Linhas assimiladas mensais"
 >abstract="Mede o número total de registros adicionados ao sistema a cada mês para fornecer insights sobre o crescimento dos dados e as taxas de ingestão."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_monthlyreportablerows"
 >title="Linhas relatáveis mensais"
 >abstract="Rastreia o número de linhas disponíveis para relatórios. Linhas relatáveis são as linhas assimiladas menos as linhas que são ignoradas e excluídas durante a assimilação. As linhas relatáveis servem como uma métrica principal para cobrança e uso de dados."
-<!-- markdownlint-enable MD034 -->
-
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_detailbreakdown"
 >title="Detalhamento."
 >abstract="Você pode visualizar métricas detalhadas por conexão, conjunto de dados, sandbox e tags, com a opção de baixar um arquivo CSV desses dados."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_otherdatasets"
 >title="Outros conjuntos de dados"
 >abstract="Em meses anteriores a setembro de 2024, os dados eram coletados no nível do conjunto de dados e são exibidos como *Outros conjuntos de dados* para maior clareza. A partir de setembro de 2024, os dados são coletados em um nível de conjunto de dados granular, e *outros conjuntos de dados* não são mais exibidos."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_unknowndatasetsorconnections"
 >title="Conjuntos de dados ou conexões desconhecidos"
 >abstract="Conjuntos de dados ou conexões desconhecidos são exibidos usando suas IDs."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_datanotavailable"
 >title="Dados indisponíveis"
 >abstract="Os dados históricos anteriores a setembro de 2024 não estão disponíveis devido a limitações do sistema. As métricas são coletadas e exibidas a partir de setembro de 2024. O gráfico mostra os últimos 18 meses na linha do tempo e dados futuros serão exibidos à medida que forem disponibilizados."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_corereportablerows"
 >title="Principais linhas para relatório"
 >abstract="Exibe o número total de linhas disponíveis nos últimos 13 meses. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024."
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="connections_historicalreportablerows"
 >title="Linhas históricas para relatório"
 >abstract="O número total de linhas disponíveis para o período com mais de 13 meses. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023."
 
-<!-- markdownlint-enable MD034 -->
 
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="connections_averagerowsize"
+>title="Tamanho médio da linha"
+>abstract="O tamanho médio de uma linha de dados do mês atual com uma alteração de porcentagem em comparação ao mês anterior."
+
+
+>[!CONTEXTUALHELP]
+>id="connections_coredatavolume"
+>title="Volume de dados principais"
+>abstract="O volume de dados principais do mês atual. *Precisa de confirmação na definição exata!*"
+
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
@@ -396,9 +302,6 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 >id="connections_breakdown_cumulativereportablerows"
 >title="Linhas relatáveis cumulativas"
 >abstract="As linhas relatáveis cumulativas são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
-
-<!-- markdownlint-enable MD034 -->
-
 
 
 A interface de [!UICONTROL Uso] mostra o uso de linhas assimiladas e relatáveis em todas as conexões. Se não estiver selecionada, selecione a guia **[!UICONTROL Uso]** para acessar a interface.
@@ -490,5 +393,5 @@ A interface “Uso” consiste em dois painéis:
 >[!MORELIKETHIS]
 >
 >Tutorial sobre [Exibir, resolver problemas e modificar configurações de conexão](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
->&#x200B;>[Gerenciar o uso do Customer Journey Analytics](/help/technotes/estimate-usage.md)
+>>[Gerenciar o uso do Customer Journey Analytics](/help/technotes/estimate-usage.md)
 >
