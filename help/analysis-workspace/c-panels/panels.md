@@ -4,20 +4,14 @@ title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
-workflow-type: ht
-source-wordcount: '2143'
+source-git-commit: c26fbe37270171c80d77c96966dd21f2dd7c7ce9
+workflow-type: tm+mt
+source-wordcount: '2130'
 ht-degree: 100%
 
 ---
 
 # Visão geral dos painéis {#panels-overview}
-
->[!CONTEXTUALHELP]
->id="workspace_panel_realtime_refresh"
->title="Atualização em tempo real"
->abstract="Habilite para atualizar dados e visualizações neste painel em tempo real."
-
 
 Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode acessar os painéis utilizando o ícone no canto superior esquerdo do espaço de trabalho ou por meio de um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos, visualizações de dados ou casos de uso de análise.
 
@@ -161,7 +155,7 @@ Para obter mais informações, consulte [Segmentos rápidos](/help/components/se
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/30816?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
