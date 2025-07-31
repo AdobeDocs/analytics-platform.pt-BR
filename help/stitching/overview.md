@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Ao definir sua conexão do Customer Journey Analytics, você se beneficiará da 
 >[!IMPORTANT]
 >
 >
->- Aplique qualquer alteração feita ao esquema do conjunto de dados do evento de origem também ao novo esquema do conjunto de dados compilado.
+>- Aplique também qualquer alteração feita ao esquema de conjunto de dados do evento de origem ao novo esquema de conjunto de dados compilados.
 >
 >- Se você remover o conjunto de dados de origem, o processamento do conjunto de dados compilado será interrompido e ele será removido pelo sistema.
 >
@@ -72,8 +72,8 @@ Não confunda a compilação com:
 >[!MORELIKETHIS]
 >
 >[Compilação baseada em campos](fbs.md)
->&#x200B;>[Compilação baseada em gráficos](gbs.md)
->&#x200B;>[Usar compilação](use-stitching.md)
->&#x200B;>[Validar compilação](validate.md)
->&#x200B;>[Perguntas frequentes sobre compilação](faq.md)
+>>[Compilação baseada em gráficos](gbs.md)
+>>[Usar compilação](use-stitching.md)
+>>[Validar compilação](validate.md)
+>>[Perguntas frequentes sobre compilação](faq.md)
 
