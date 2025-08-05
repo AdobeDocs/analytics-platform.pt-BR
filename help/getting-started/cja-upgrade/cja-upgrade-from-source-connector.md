@@ -5,8 +5,8 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+source-git-commit: 5faf9668475818773c645b69915ddd5182500aea
+workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 100%
 
@@ -53,9 +53,6 @@ A seguir está o processo de alto nível para transição do uso exclusivo do co
 1. [Criar um esquema XDM para o conector de origem do Analytics](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md).
 
 1. Mapeie cada dimensão do Adobe Analytics do conector de origem do Analytics para a dimensão no esquema do SDK da web.
-
-   1. &#x200B;
-      <!-- how do you get here -->
 
    1. Na seção **[!UICONTROL Mapear campos padrão]**, selecione a guia **[!UICONTROL Personalizado]**.
 
