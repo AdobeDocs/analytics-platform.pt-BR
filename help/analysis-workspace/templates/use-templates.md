@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: c5a8a208e2d0390c35f2855113bb2cdeedb41293
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '19837'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -561,7 +561,7 @@ Estes são os modelos disponíveis:
 | **Páginas de entrada** | Veja as principais páginas que as pessoas acessam quando visitam o site pela primeira vez. <p>**Isso pode ajudar** a saber quais páginas estão gerando mais tráfego para o site ou entender melhor as primeiras impressões que visitantes têm sobre o site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar a experiência inicial que as pessoas têm no site ou garantir que as páginas que as pessoas veem ao entrar no site sejam acolhedoras e forneçam os links necessários para outras áreas do site.</p><p>Este modelo usa a métrica “Sessões”. Ele também usa a visualização de barras e a visualização de tabela de forma livre.</p> |
 | **Páginas de saída** | Confira as principais páginas que as pessoas acessam imediatamente antes de sair do site.<p>**Isso pode ajudar** a entender melhor quais páginas estão afastando as pessoas do site. </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como atualizar as páginas de saída comuns para otimizar a experiência que as pessoas têm antes de sair ou incluir conteúdo ou links para incentivar as pessoas a permanecerem no site.</p><p>Este modelo usa a métrica “Sessões”. Ele também usa a visualização de barras e a visualização de tabela de forma livre.</p> |
 | **Visão geral de uso do produto** | Visualize como o produto Customer Journey Analytics é usado em sua organização. <p>**Isso pode ajudar** a entender melhor quantas pessoas estão usando o Customer Journey Analytics, com que frequência o usam e as tendências de uso ao longo do tempo. Você também pode ver o número de projetos que estão sendo criados, detalhes sobre esses projetos (como quais componentes, visualizações e painéis são usados com mais frequência) e muitas outras estatísticas de uso.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como excluir projetos ou componentes não utilizados ou fornecer treinamento a usuários para recursos populares.</p> |
-| **Análise de conteúdo** | Saiba qual conteúdo e atributos de conteúdo apresentam melhor desempenho.<p>**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. A análise de conteúdo usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. Consulte [Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"} para obter mais informações.</p><p>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto.</p> |
+| **Análise de conteúdo** | Saiba qual conteúdo e atributos de conteúdo apresentam melhor desempenho.<p>**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. A análise de conteúdo usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. Consulte [Análise de conteúdo](/help/content-analytics/content-analytics.md){target="_blank"} para mais informações.</p><p>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto.</p> |
 
 ### Web: conversão {#web-conversion}
 
