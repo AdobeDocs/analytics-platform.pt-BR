@@ -7,9 +7,9 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: e7a7a297e303a410c73598f373219644e50ede74
+source-git-commit: 34dfbc98acecf1ca953434a7d1f0547ff45139a8
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '471'
 ht-degree: 1%
 
 ---
@@ -54,5 +54,8 @@ Você deve estar ciente da seguinte limitação para relatórios em tempo real:
 * O relatório em tempo real só relata os dados disponíveis em um período contínuo de 24 horas. Os dados que cruzam esse período contínuo de 24 horas não estão disponíveis.
 * A atribuição, a segmentação, as métricas calculadas e muito mais trabalharão apenas nos dados disponíveis no período acumulado de 24 horas.
 * O relatório em tempo real funciona melhor em dados de evento e nível de sessão, e você deve ter cuidado ao usar o relatório em tempo real para dados de nível de pessoa. <!--Need to explain this a bit better --> Como apenas eventos do período contínuo de 24 horas estão disponíveis para relatórios em tempo real, o histórico de eventos de uma pessoa também está limitado a essa janela. Considere a preferência por dados de evento e nível de sessão ao selecionar métricas de dimensão (calculadas). E quando você usa funcionalidades como detalhamentos, anteriores ou seguintes e muito mais no painel habilitado para atualização em tempo real.
-* Não é possível combinar a compilação com os relatórios em tempo real. <!-- Do we need to explain this in more detail, why? --> Como mencionado acima, os relatórios em tempo real abordam dados de nível de evento e sessão, e não tanto dados baseados em pessoas.
+* Não é possível combinar a compilação com os relatórios em tempo real. <!-- Do we need to explain this in more detail, why? --> Os relatórios em tempo real abordam dados de eventos e de sessões e são menos relevantes para dados com base em pessoas.
 * Nenhuma métrica de mídia coletada de heartbeat está disponível, com exceção das métricas de início de mídia e fechamento de mídia. Dessa forma, você ainda pode usar os relatórios em tempo real para ativar um caso de uso de mídia.
+* Ao usar as [opções de download ou exportação](/help/analysis-workspace/export/download-send.md) para baixar um projeto ou exportar dados de uma tabela de forma livre, considere o seguinte:
+   * Um projeto CSV baixado ou arquivo CSV exportado contém os dados em tempo real disponíveis no momento do download ou da exportação.
+   * Um projeto do PDF baixado contém dados que não são em tempo real, semelhantes aos dados que são mostrados quando a atualização em tempo real está desativada.

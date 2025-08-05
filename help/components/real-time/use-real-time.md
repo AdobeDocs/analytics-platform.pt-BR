@@ -7,10 +7,10 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: c26fbe37270171c80d77c96966dd21f2dd7c7ce9
+source-git-commit: 8f19ed6b4214c434dd4ca2dbb5e311c62da109c0
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 13%
+source-wordcount: '196'
+ht-degree: 14%
 
 ---
 
@@ -29,9 +29,8 @@ Para usar o relatório em tempo real, habilite a opção **[!UICONTROL Atualiza�
 * [Forma livre](/help/analysis-workspace/c-panels/freeform-panel.md)
 * [Atribuição](/help/analysis-workspace/c-panels/attribution.md)
 * [Próximo item ou anterior](/help/analysis-workspace/c-panels/next-previous.md)
-* [Insights rápidos](/help/analysis-workspace/c-panels/quickinsight.md)
 
-Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL &#x200B; *Última atualização às 07:55 pm*].
+Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL  *Última atualização às 07:55 pm*].
 
 Selecione o período em tempo real que deseja relatar no menu suspenso. As opções disponíveis são:
 
