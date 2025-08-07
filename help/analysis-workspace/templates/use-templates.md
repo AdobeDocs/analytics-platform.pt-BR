@@ -4,10 +4,10 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: c5a8a208e2d0390c35f2855113bb2cdeedb41293
-workflow-type: ht
-source-wordcount: '19837'
-ht-degree: 100%
+source-git-commit: 1b52969f178a31ef90f1969f3a1637258a480c57
+workflow-type: tm+mt
+source-wordcount: '20276'
+ht-degree: 97%
 
 ---
 
@@ -154,151 +154,89 @@ Para acessar todos os modelos pré-criados disponíveis:
 
 <!--AA only-->
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--unitsOvertimeReport"
 >title="Visualize o número total de unidades compradas em todos os pedidos. Os dados são mostrados durante um período e comparados com períodos anteriores."
 >abstract="**Isso pode ajudar** a entender melhor como as vendas de unidades estão aumentando ou diminuindo com o tempo. Você pode aplicar um segmento para saber quais clientes ou regiões geográficas estão comprando a maior parte das unidades e quais são as tendências dessas vendas ao longo do tempo.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar a eficácia de uma campanha de marketing iniciada recentemente ao comparar as vendas de unidades antes e depois do início da campanha. É possível também comparar as vendas de unidades durante feriados a cada ano.<br/>Este modelo usa a dimensão “Dia” e a métrica “Unidades”."
 
-<!-- markdownlint-enable MD034 -->
 
 <!--both AA and CJA-->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--training"
 >title="Modelo do tutorial de treinamento"
 >abstract="Saiba mais sobre a terminologia e as etapas comuns do Analysis Workspace para criar a sua primeira análise."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--pagesRankedReport"
 >title="Identifique as páginas mais e menos populares."
 >abstract="**Isso pode ajudar** a entender melhor o seu público-alvo e o tipo de informação em que estão mais interessados(as).<br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar metadados para aumentar a visibilidade de páginas menos visualizadas ou aprimorar o conteúdo das suas páginas mais visualizadas.<br/>Este modelo usa a dimensão “Página” e a métrica “Exibições da página”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--pageViewsOvertimeReport"
 >title="Veja o número total de exibições da página. Os dados são mostrados durante um período e comparados com períodos anteriores. "
 >abstract="**Isso pode ajudar** a entender melhor como o tráfego no site pode estar aumentando ou diminuindo com o tempo.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar a eficácia de uma campanha de marketing iniciada recentemente por comparar o tráfego do site antes e depois do início da campanha. Ou você pode comparar o tráfego em feriados de ano a ano.<br/>Este modelo usa a dimensão “Dia” e a métrica “Exibições da página”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--visitsOvertimeReport"
 >title="Veja o número total de visitas. Os dados são mostrados durante um período e comparados com períodos anteriores."
 >abstract="**Isso pode ajudar** a entender melhor como o tráfego no site pode estar aumentando ou diminuindo com o tempo.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar a eficácia de uma campanha de marketing iniciada recentemente por comparar o tráfego do site antes e depois do início da campanha. Ou você pode comparar o tráfego em feriados de ano a ano.<br/>Este modelo usa a dimensão “Dia” e a métrica “Visitas”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--visitorsOvertimeReport"
 >title="Veja o número total de visitantes únicos. Os dados são mostrados durante um período e comparados com períodos anteriores. "
 >abstract="**Isso pode ajudar** a entender melhor como o alcance e o tamanho do público-alvo do seu site estão aumentando ou diminuindo com o tempo ou em comparação com um período anterior.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se uma campanha de marketing iniciada recentemente teve êxito ao atrair novas pessoas para o site, comparando o número de visitantes únicos antes e depois do início da campanha. Ou você pode comparar o número de pessoas que visitam o site durante os feriados a cada ano.<br/>Este modelo usa a dimensão “Dia” e a métrica “Visitantes únicos”. "
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--keyMetricsReport"
 >title="Visualize um relatório que mostra as métricas de exibições da página, visitas e visitantes únicos lado a lado. Os dados são mostrados durante um período e comparados com períodos anteriores."
 >abstract="**Isso pode ajudar** a comparar essas métricas importantes para obter uma visão mais completa do número de pessoas únicas que visitam o site, o número de vezes que as páginas foram visitadas e o número de sessões.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar o número médio de páginas que cada pessoa visualizou ao visitar o site em uma determinada semana ou mês, e como isso mudou durante certos períodos do ano ou antes e depois que as campanhas de marketing foram executadas. <br/>Este modelo usa a dimensão “Dia” e as métricas “Exibições da página”, “Visitas” e “Visitantes únicos”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--siteSectionRankedReport"
 >title="Veja as seções mais populares ou de maior desempenho do seu site."
 >abstract="**Isso pode ajudar** a entender melhor quais seções do site são mais visitadas.<br>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar quais produtos ou serviços fornecidos geram mais interesse.<br/>Este modelo usa a dimensão “Seção do site” e a métrica “Visitas”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--next-page-report"
 >title="Veja os lugares mais comuns que as pessoas acessam imediatamente após a visita de uma determinada página."
 >abstract="**Isso pode ajudar** a entender melhor o comportamento dos usuários após a visita de uma determinada página.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se o design ou layout da página pode ser otimizado para direcionar as pessoas a páginas mais desejáveis, como uma página para fazer uma compra ou deixar uma avaliação.<br/>Este modelo usa a dimensão “Página” e a métrica “Eventos”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--previous-page-report"
 >title="Veja os lugares mais comuns que as pessoas acessam imediatamente antes de visitar uma determinada página."
 >abstract="**Isso pode ajudar** a entender melhor quais páginas direcionam mais tráfego para uma determinada página.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se as páginas que não estão aparecendo como páginas anteriores precisam de links mais evidentes para a página atual."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--campaignRankedReport"
 >title="Veja os links que obtiveram mais êxito em gerar tráfego para o seu site."
 >abstract="**Isso pode ajudar** a entender melhor quais códigos de rastreamento (e os links aos quais estão associados) foram os mais usados para acessar o seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar a sua estratégia para adicionar links para o seu site.<br/>Este modelo usa a dimensão “Código de rastreamento” e a métrica “Visitas”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--productsRankedReport"
 >title="Veja o número de pedidos por produto. Os dados representam um determinado período."
 >abstract="**Isso pode ajudar** a entender quais produtos têm a maior ou menor demanda.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as estratégias de marketing para promover produtos de alto desempenho ou para melhorar ou descontinuar produtos de baixo desempenho. Você também pode ajustar o inventário de produtos com base na análise dos dados.<br/>Este modelo usa a dimensão “Produto” e a métrica “Pedidos”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--lastTouchChannelRankedReport"
 >title="Veja os canais de marketing mais recentes utilizados por visitantes durante o período de engajamento (30 dias por padrão)."
 >abstract="**Isso pode ajudar** a entender quais canais de marketing foram mais eficazes para trazer pessoas ao site que resultou em conversões.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como alocar mais recursos a canais de alto desempenho ou reduzir a alocação de recursos para canais de baixo desempenho.<br/>Este modelo usa a dimensão “Canal de último contato” e a métrica “Visitantes únicos”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--lastTouchChannelDetailRankedReport"
 >title="Veja os detalhes dos canais de marketing mais recentes utilizados por visitantes durante o período de engajamento (30 dias por padrão)."
 >abstract="**Isso pode ajudar** a entender quais canais de marketing foram mais eficazes para trazer pessoas ao site que resultou em conversões, bem como os detalhes desses canais de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga”, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como alocar mais recursos a canais de alto desempenho ou reduzir a alocação de recursos para canais de baixo desempenho.<br/>Este modelo usa a dimensão “Detalhes do canal de último contato” e a métrica “Visitantes únicos”. "
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--revenueOvertimeReport"
 >title="Veja o valor monetário dos produtos comprados em todos os pedidos. Os dados são mostrados durante um período e comparados com períodos anteriores."
 >abstract="**Isso pode ajudar** a entender como a receita está aumentando ou diminuindo com o tempo. É possível combinar essa métrica com qualquer dimensão para saber quais itens de dimensão contribuíram para a receita.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como projetar a receita futura com base nas tendências anteriores. Também é possível adicionar outra dimensão, como a dimensão “Código de rastreamento”, para saber quais campanhas estão gerando mais receita.<br/>Este modelo usa a dimensão “Dia” e a métrica “Receita”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--ordersOvertimeReport"
 >title="Veja o número total de eventos de compra. Os dados são mostrados durante um período e comparados com períodos anteriores."
 >abstract="**Isso pode ajudar** a entender melhor como o interesse pelos seus produtos e serviços está aumentando ou diminuindo com o tempo. Você pode aplicar um segmento para saber quais clientes ou regiões geográficas estão fazendo mais pedidos, e quais são as tendências desses pedidos ao longo do tempo.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar a eficácia de uma campanha de marketing iniciada recentemente por comparar os pedidos antes e depois do início da campanha. Ou você pode comparar os pedidos feitos durante feriados a cada ano.<br/>Este modelo usa a dimensão “Dia” e a métrica “Pedidos”."
 
-<!-- markdownlint-enable MD034 -->
 
 Estes são os modelos disponíveis:
 
@@ -324,223 +262,128 @@ Estes são os modelos disponíveis:
 
 <!--AA only-->
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--real-time"
 >title="Visualize as dimensões e métricas que estão sendo coletadas no site."
 >abstract="**Isso pode ajudar** a entender melhor as tendências do site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como responder ao desempenho do conteúdo e das campanhas de marketing atuais e gerenciá-lo ativamente."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--timeSpentVisitOvertimeReport"
 >title="Visualize o tempo médio que os visitantes gastam no site durante cada visita. Os dados são mostrados durante um período e comparados com períodos anteriores."
 >abstract="**Isso pode ajudar** a entender melhor os níveis de engajamento dos visitantes e quanto tempo estão gastando no site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se as alterações no site resultam em visitantes permanecendo por mais tempo.<br/>Este modelo usa a dimensão &quot;Dia&quot; e a métrica &quot;Tempo gasto por visita&quot; (segundos)."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--timePriorRankedReport"
 >title="Visualize o tempo médio que os usuários gastam antes de um evento bem-sucedido."
 >abstract="**Isso pode ajudar** a entender melhor quanto tempo leva para que os visitantes realizem uma ação desejada, como fazer uma compra.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se as alterações no site melhoram a possibilidade dos visitantes gerarem rapidamente um evento bem-sucedido.<br/>Este modelo usa a dimensão &quot;Tempo anterior ao evento&quot; e a métrica “Visitantes únicos”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--falloutReport"
 >title="Visualize onde as pessoas saem ou continuam por uma sequência predefinida de páginas."
 >abstract="**Isso pode ajudar** a entender melhor de onde as pessoas estão saindo da jornada do usuário.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar taxas de conversão por meio de processos específicos no site (como um processo de compra ou registro) ou analisar correlações entre eventos no site. (Por exemplo, que porcentagem das pessoas que observaram sua política de privacidade compraram um produto.) Você também pode usar esse modelo para fazer comparações lado a lado de dois segmentos diferentes no mesmo relatório.<br/>Este modelo usa a visualização de fallout."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--cross-device-analysis"
 >title="Visualize quais dispositivos as pessoas usaram em todos os pontos da jornada."
 >abstract="**Isso pode ajudar** a entender melhor quantas pessoas interagem com a sua marca, os tipos de dispositivos que usam e como o uso dos vários dispositivos afeta a experiência. Por exemplo, com que frequência as pessoas iniciam uma tarefa em um dispositivo móvel e depois vão para o desktop para concluí-la? Quais são os caminhos mais comuns que os usuários fazem de um dispositivo para outro? Onde eles desistem? Onde são bem-sucedidas? E assim por diante.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar certas partes da jornada do usuário para uma experiência móvel.<br/>Este modelo usa a Visualização de fluxo, a Visualização de fallout, a Análise de coorte, a métrica &quot;Pessoas&quot; e a métrica &quot;Dispositivos exclusivos&quot;."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--web-retention"
 >title="Veja quem são seus usuários fiéis e o que estão fazendo no site."
 >abstract="**Isso pode ajudar** a entender melhor a quantidade de vezes que a pessoa média visita o site, a frequência com que retorna e o número de dias entre visitas recorrentes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar qual conteúdo é mais eficaz em trazer pessoas de volta ao site.<br/>Este modelo usa a métrica &quot;Visitas&quot; e a métrica &quot;Visitantes únicos&quot;."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--audio-consumption-template"
 >title="Veja as tendências e as principais métricas de consumo de mídia de áudio em todos os dispositivos digitais."
 >abstract="**Isso pode ajudar** a entender melhor como visitantes estão consumindo conteúdo de áudio no site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar qual conteúdo é mais consumido.<br/>Este modelo usa a métrica &quot;Visitas&quot; e a métrica &quot;Visitantes únicos&quot;."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--media-recency-frequency-loyalty"
 >title="Veja as tendências e as principais métricas de consumo de mídia em todos os dispositivos digitais."
 >abstract="**Isso pode ajudar** a entender melhor a quantidade de vezes que a pessoa média visita o site, a frequência com que retorna e o número de dias entre visitas recorrentes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar qual conteúdo é mais eficaz em trazer pessoas de volta ao site.<br/>Este modelo usa a métrica &quot;Visitas&quot; e a métrica &quot;Visitantes únicos&quot;."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--reloadsRankedReport"
 >title="Visualize o número de vezes que um item de dimensão estava presente durante um recarregamento. A atualização do navegador por um visitante é a maneira mais comum de acionar um recarregamento."
 >abstract="**Isso pode ajudar** a identificar em que momento podem estar ocorrendo problemas em uma determinada página que resultariam no recarregamento desta por visitantes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar quais páginas têm problemas que precisam ser resolvidos.<br/>Este modelo usa a métrica “Recarregamentos”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--timeSpentPageRankedReport"
 >title="Visualize o tempo médio que os visitantes gastam no site durante cada visita. Os dados são mostrados durante um período e comparados com períodos anteriores."
 >abstract="**Isso pode ajudar** a entender melhor os níveis de engajamento dos visitantes e quanto tempo estão gastando no site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se as alterações no site resultam em visitantes permanecendo por mais tempo.<br/>Este modelo usa a dimensão &quot;Dia&quot; e a métrica &quot;Tempo gasto por visita&quot; (segundos)."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--entryPageOriginalRankedReport"
 >title="Veja as principais páginas que as pessoas acessam quando visitam o site pela primeira vez durante o tempo de vida de visitante."
 >abstract="**Isso pode ajudar** a saber quais páginas estão gerando mais tráfego para o site ou entender melhor as primeiras impressões que visitantes têm sobre o site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar a experiência inicial que as pessoas têm no site ou garantir que as páginas que as pessoas veem ao entrar no site sejam acolhedoras e forneçam os links necessários para outras áreas do site.<br/>Este modelo usa a métrica “Sessões”. Ele também usa a visualização de barra e a visualização de tabela de forma livre."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--singlePageVisitsRankedReport"
 >title="Visualize o número de visitas que consistiram em uma única página."
 >abstract="**Isso pode ajudar** a entender melhor os níveis de engajamento dos visitantes e quanto tempo estão gastando no site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se as alterações no site resultam em visitantes permanecendo por mais tempo.<br/>Este modelo usa a dimensão &quot;Visitas de página única&quot;."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--sitePerformanceOverview"
 >title="Visualizar dados de desempenho do site do Adobe Experience Manager."
 >abstract="**Isso pode ajudar** a entender melhor a realização de valores do Adobe Experience Manager.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar as configurações do Experience Manager."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--formsPerformanceOverview"
 >title="Visualize dados de desempenho do Adobe Experience Manager Forms."
 >abstract="**Isso pode ajudar** a entender melhor a realização de valores do Adobe Experience Manager.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar as configurações do Experience Manager."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--itp-impact"
 >title="Visualize e analise os efeitos da Prevenção de Rastreamento Inteligente (ITP) na coleta de dados e nos relatórios."
 >abstract="**Isso pode ajudar** a entender melhor a possível perda de dados devido a restrições de cookies impostas pela ITP.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como adaptar a configuração de análise para minimizar o impacto da ITP."
 
-<!-- markdownlint-enable MD034 -->
 
 <!--Both AA and CJA-->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template_time_spent"
 >title="Veja o tempo médio que os visitantes gastam no site durante cada visita, bem como o tempo médio que os usuários gastam na visita até gerar um evento bem-sucedido. Os dados são mostrados durante um período e comparados com períodos anteriores."
 >abstract="**Isso pode ajudar** a entender melhor os níveis de engajamento dos visitantes e quanto tempo levam para executar a ação desejada, como fazer uma compra.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se as alterações no site melhoram a possibilidade dos visitantes gerarem rapidamente um evento bem-sucedido.<br/>Este modelo usa a dimensão “Dia” e a métrica “Tempo gasto por visita (segundos)”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--web-content-consumption"
 >title="Veja qual conteúdo da web é mais consumido e gera mais engajamento pelos usuários."
 >abstract="**Isso pode ajudar** a entender melhor o que as pessoas acessam ao entrar pela primeira vez no site, quais seções do site são mais visitadas e quais páginas tendem a afastar as pessoas do site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas às páginas mais importantes e quais páginas têm a maior probabilidade de afastá-las do site.<br/>Este modelo usa a dimensão “Página” e as métricas “Exibições da página”, “Visitas”, “Visitantes únicos”, “Taxa de entrada”, “Taxa de rejeição”, “Taxa de saída” e “Velocidade do conteúdo”. Ele também usa visualizações de fluxo para as seções de entrada, de saída e superior."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--media-content-consumption"
 >title="Veja qual conteúdo de mídia é mais consumido e gera mais engajamento pelos usuários."
 >abstract="**Isso pode ajudar** a entender melhor o que as pessoas acessam ao entrar pela primeira vez no site, quais seções do site são mais visitadas e quais páginas tendem a afastar as pessoas do site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar quais caminhos no site direcionam as pessoas às páginas mais importantes e quais páginas têm a maior probabilidade de afastá-las do site.<br/>Este modelo usa a dimensão “Página” e as métricas “Exibições da página”, “Visitas”, “Visitantes únicos”, “Taxa de entrada”, “Taxa de rejeição”, “Taxa de saída” e “Velocidade do conteúdo”. Ele também usa visualizações de fluxo para as seções de entrada, saída e a seção superior; uma visualização do gráfico de dispersão, que mostra as exibições das páginas mais comuns; uma visualização de barras, que mostra as exibições das páginas por tempo classificado; e uma visualização de linhas, que mostra uma exibição de tendências de tempo médio no site."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--flowreport"
 >title="Veja os lugares mais comuns que as pessoas acessam imediatamente após ou antes de visitar um determinado lugar."
 >abstract="**Isso pode ajudar** a entender como o tráfego passa de uma determinada página para outras partes do site e entender os caminhos que as pessoas percorrem para chegar a uma determinada página.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar se o design ou layout da página pode ser otimizado para direcionar as pessoas a páginas mais desejáveis, como uma página para fazer uma compra ou deixar uma avaliação. Ou avaliar se as informações na página atual fornecem a orientação ou as ações que as pessoas necessitam após acessarem as páginas anteriores. Ou você pode avaliar se as páginas que não aparecem como páginas anteriores precisam de links mais evidentes para a página atual.<br/>Este modelo usa o painel “Item seguinte ou anterior”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--page-summary-report"
 >title="Veja as principais informações sobre qualquer página nas suas propriedades. Mostra as exibições da página, uma linha de tendências, uma visualização de fluxo e muito mais."
 >abstract="**Isso pode ajudar** a entender melhor como as pessoas interagem com uma determinada página.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar o desempenho da página durante um período ou entender melhor o que gera tráfego para a página.<br/>Este modelo usa a métrica “Exibições da página”. Ele também usa a visualização de linha e a visualização de fluxo."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--entryPageRankedReport"
 >title="Veja as principais páginas que as pessoas acessam quando visitam o site pela primeira vez."
 >abstract="**Isso pode ajudar** a saber quais páginas estão gerando mais tráfego para o site ou entender melhor as primeiras impressões que visitantes têm sobre o site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar a experiência inicial que as pessoas têm no site ou garantir que as páginas que as pessoas veem ao entrar no site sejam acolhedoras e forneçam os links necessários para outras áreas do site.<br/>Este modelo usa a métrica “Sessões”. Ele também usa a visualização de barra e a visualização de tabela de forma livre."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--exitPageRankedReport"
 >title="Confira as principais páginas que as pessoas acessam imediatamente antes de sair do site."
 >abstract="**Isso pode ajudar** a entender melhor quais páginas estão afastando as pessoas do site. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como atualizar as páginas de saída comuns para otimizar a experiência que as pessoas têm antes de sair ou incluir conteúdo e links para incentivá-las a permanecerem no site.<br/>Este modelo usa a métrica “Sessões”. Ele também usa a visualização de barra e a visualização de tabela de forma livre."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--productUsageOverviewReport"
 >title="Visualize como o produto Customer Journey Analytics é usado em sua organização."
 >abstract="**Isso pode ajudar** a entender melhor quantas pessoas estão usando o Customer Journey Analytics, com que frequência o usam e as tendências de uso ao longo do tempo. Você também pode ver o número de projetos que estão sendo criados, detalhes sobre esses projetos (como quais componentes, visualizações e painéis são usados com mais frequência) e muitas outras estatísticas de uso.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como excluir projetos ou componentes não utilizados ou fornecer treinamento a usuários para recursos populares."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Saiba qual conteúdo e atributos de conteúdo apresentam melhor desempenho."
 >abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. A análise de conteúdo usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. <a href="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Saiba mais</a>.<br/>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Estes são os modelos disponíveis:
@@ -567,97 +410,59 @@ Estes são os modelos disponíveis:
 
 <!--AA only-->
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--categoryRankedReport"
 >title="Veja o número de visitas associado a cada categoria de produto no site. Isso é útil para implementações que usam a variável produtos e que desejam visualizar métricas sobre a categoria do produto. A dimensão que preenche este modelo pode ficar em branco se não houver produtos no site."
 >abstract="**Isso pode ajudar** a entender melhor os produtos mais vendidos ou os mais vistos. &lt;/br/>**Com base no que aprender, você poderá** fazer várias coisas, como medir a eficácia de uma campanha de marketing para um determinado produto.<br/>Este modelo usa a dimensão “Categoria” e a métrica “Visitas”. "
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--commerce-and-marketing-management"
 >title="Visualize insights pré-criados para varejistas em suas atividades comerciais para ajudar a melhorar as vendas. Isto é direcionado a usuários do Adobe Commerce, mas pode ser aproveitado por qualquer varejista online."
 >abstract="**Isso pode ajudar** a entender melhor como suas atividades comerciais estão contribuindo para os números de vendas.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar orçamentos para atividades que estão obtendo o maior ROI."
 
-<!-- markdownlint-enable MD034 -->
 
 <!--Both AA and CJA-->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--productConversionReport"
 >title="Visualize a conversão de produtos em uma visualização de funil que mostra carrinhos, check-outs e pedidos. É possível ver também porcentagens de conversão, médias de receita, médias de unidade e médias de pedido."
 >abstract="**Isso pode ajudar** a entender melhor como as pessoas progridem e abandonam durante o processo de conversão.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aprimorar o site para facilitar um processo de check-out mais fluido."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--retail-products-template"
 >title="Veja quais produtos têm o melhor desempenho."
 >abstract="**Isso pode ajudar** a entender melhor quais produtos são mais bem-sucedidos.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar os fundos destinados a produtos bem-sucedidos e diminuir os de produtos de menor sucesso.<br/>Este modelo usa as métricas “Exibições do produto”, “Adições ao carrinho”, “Pedidos”, “Receita” e “Unidades”. Ele também usa a dimensão Produto."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--cartConversionReport"
 >title="Veja o número de vezes que as pessoas executam eventos importantes de check-out, como adicionar itens ao carrinho, visualizar o carrinho, remover itens do carrinho e concluir o pagamento."
 >abstract="**Isso pode ajudar** a entender melhor quais partes do funil do processo de finalização levam à conversão e quais são mais propensos a abandono de carrinho.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como reduzir o atrito em determinadas etapas do processo de finalização.<br/>Este modelo usa"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--cartsOvertimeReport"
 >title="Veja o número de pessoas que adicionaram um produto ao carrinho."
 >abstract="**Isso pode ajudar** a entender melhor o número de pessoas que adicionam um produto ao carrinho, em vez do número geral de produtos adicionados a um carrinho.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como medir a eficácia das páginas dos seus produtos.<br/>Este modelo usa a métrica “Carrinhos”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--cartViewsOvertimeReport"
 >title="Veja o número de vezes que as pessoas visualizaram seus carrinhos de compras."
 >abstract="**Isso pode ajudar** a entender melhor a experiência de check-out na tentativa de reduzir as taxas de abandono de carrinho ou analisar o tempo entre as adições ao carrinho e os check-outs de diferentes produtos.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como oferecer promoções para produtos que permanecem mais tempo no carrinho e têm um risco maior de abandono.<br/>Este modelo usa a métrica “Exibições do carrinho”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--cartAdditionsOvertimeReport"
 >title="Veja o número de vezes que as pessoas adicionaram algo ao carrinho."
 >abstract="**Isso pode ajudar** a entender melhor a parte do funil de conversão na qual o interesse de clientes em um produto é alto o suficiente para que o adicionem ao carrinho.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar as recomendações de produto para clientes. Isso pode ser feito pela análise de quais produtos são adicionados com frequência aos mesmos carrinhos e pela sugestão de produtos relacionados com base em itens já presentes no carrinho."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--cartRemovalsOvertimeReport"
 >title="Veja o número de vezes que as pessoas removeram algo do carrinho."
 >abstract="**Isso pode ajudar** a entender melhor a parte do funil de conversão na qual clientes perdem o interesse no produto ou onde possam existir problemas no processo de finalização.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como remover possíveis barreiras que possam existir no processo de finalização, como uma experiência de usuário complicada.<br/>Este modelo usa a métrica “Remoções do carrinho”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--purchaseConversionReport"
 >title="Visualize a conversão de compras em uma visualização de funil que mostra sessões, carrinhos e pedidos. É possível ver também porcentagens de conversão, médias de receita, médias de unidade e médias de pedido."
 >abstract="**Isso pode ajudar** a entender melhor como as pessoas progridem e abandonam durante o processo de conversão.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aprimorar o site para facilitar um processo de check-out mais fluido."
 
-<!-- markdownlint-enable MD034 -->
 
 Estes são os modelos disponíveis:
 
@@ -679,277 +484,159 @@ Estes são os modelos disponíveis:
 
 <!--AA only-->
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--people"
 >title="Veja o número de pessoas que estão interagindo com a sua marca."
 >abstract="**Isso pode ajudar** a entender melhor as tendências de uso do site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como medir a eficácia dos esforços recentes de marketing em gerar novos visitantes para o site."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--bots"
 >title="Veja as visualizações de página e as tendências sobre o tráfego de bots no site."
 >abstract="**Isso pode ajudar** a entender melhor o quanto do tráfego de bots está sendo filtrado nos relatórios, de acordo com as regras de bot configuradas.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como continuar a monitorar atividades de bots para identificar novos padrões."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--firstvsrepeatvisitors"
 >title="Veja uma comparação entre novos visitantes e visitantes recorrentes."
 >abstract="**Isso pode ajudar** a entender melhor a eficácia do site na retenção da fidelidade do cliente ou a taxa com que você está adquirindo novos clientes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como oferecer incentivos para compras futuras a visitantes novos, incentivando o seu retorno."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--personid"
 >title="Visualize o comportamento individual de usuários em vários canais."
 >abstract="**Isso pode ajudar** a entender melhor a jornada completa do cliente e as interações em vários pontos de contato.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como personalizar as campanhas de marketing para direcionar melhor as preferências dos usuários."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--timeZoneRankedReport"
 >title="Visualize os principais fusos horários dos visitantes que acessam o site."
 >abstract="**Isso pode ajudar** a entender melhor em quais fusos horários estão os seus visitantes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar a manutenção do site para momentos em que um número menor de pessoas serão afetadas."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--location"
 >title="Tenha uma visão geral da localização do visitante em uma visualização de mapa."
 >abstract="**Isso pode ajudar** a entender melhor onde visitantes que estão visitando o site estão localizados. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como concentrar os recursos de marketing nos locais em que observar maior interesse e oportunidades."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--domainRankedReport"
 >title="Visualize os principais domínios dos visitantes acessando o site."
 >abstract="**Isso pode ajudar** a entender melhor de quais organizações seus visitantes vêm.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como direcionar o conteúdo aos seus maiores clientes."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--topLevelDomainRankedReport"
 >title="Visualize os principais domínios dos visitantes acessando o site."
 >abstract="**Isso pode ajudar** a entender melhor de quais organizações seus visitantes vêm.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como direcionar o conteúdo aos seus maiores clientes."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--browserWidthRankedReport"
 >title="Visualize as principais larguras de navegador que as pessoas usam para acessar o site."
 >abstract="**Isso pode ajudar** a entender melhor como o conteúdo é exibido para os visitantes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a qualidade do site ao testar novas versões dele usando as larguras de navegador mais comuns. Isso pode maximizar ações de controle de qualidade.<br/>Este modelo usa a dimensão “Navegador”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--browserHeightRankedReport"
 >title="Visualize as principais alturas de navegador que as pessoas usam para acessar o site."
 >abstract="**Isso pode ajudar** a entender melhor como o conteúdo é exibido para os visitantes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a qualidade do site ao testar novas versões dele usando as alturas de navegador mais comuns. Isso pode maximizar ações de controle de qualidade.<br/>Este modelo usa a dimensão “Navegador”. "
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--operatingSystemRankedReport"
 >title="Visualize o nome dos sistemas operacionais e a versão que as pessoas usam para acessar o site."
 >abstract="**Isso pode ajudar** a entender melhor os sistemas operacionais mais comuns e as versões que visitantes usam.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a qualidade do site ao testar novas versões dele usando os principais sistemas operacionais e versões. Isso pode maximizar ações de controle de qualidade."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--operatingSystemTypeRankedReport"
 >title="Visualize o nome dos sistemas operacionais que as pessoas usam para acessar o site."
 >abstract="**Isso pode ajudar** a entender melhor os sistemas operacionais mais comuns que visitantes usam.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a qualidade do site ao testar novas versões dele usando os principais sistemas operacionais. Isso pode maximizar ações de controle de qualidade."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--returnFrequencyRankedReport"
 >title="Veja a empresa de telecomunicação que fornece conectividade de rede celular aos dispositivos móveis que as pessoas usam para acessar o seu site."
 >abstract="**Isso pode ajudar** a entender melhor quais operadoras de celular são mais usadas pela sua base de usuários.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como adaptar a entrega de conteúdo com base nos recursos de rede de diferentes operadoras para garantir uma experiência de usuário fluida.<br/>Este modelo usa a dimensão “Operadora de celular”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--returnVisitorsOvertimeReport"
 >title="Veja a empresa de telecomunicação que fornece conectividade de rede celular aos dispositivos móveis que as pessoas usam para acessar o seu site."
 >abstract="**Isso pode ajudar** a entender melhor quais operadoras de celular são mais usadas pela sua base de usuários.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como adaptar a entrega de conteúdo com base nos recursos de rede de diferentes operadoras para garantir uma experiência de usuário fluida.<br/>Este modelo usa a dimensão “Operadora de celular”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--visitNumberRankedReport"
 >title="Visualize quantas vezes um visitante visitou o site."
 >abstract="**Isso pode ajudar** a entender melhor como os visitantes estão engajados ao retornar ao site. Ela se aplica ao tempo de vida do visitante, independentemente do intervalo de datas do projeto.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas de marketing para visitantes frequentes.<br/>Este modelo usa a dimensão &quot;Número da visita&quot;."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--customerLoyaltyRankedReport"
 >title="Veja o número de visitantes do site que fizeram 0 compras anteriores, 1 compra anterior, 2 compras anteriores ou mais de 3 compras anteriores."
 >abstract="**Isso pode ajudar** a entender melhor como o site afeta o comportamento de compra.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como concentrar-se em visitantes que retornam para fazer uma compra, a fim de incentivar comportamentos semelhantes em novos(as) visitantes.<br/>Este modelo usa a dimensão &quot;Fidelização do cliente&quot;."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--daysBeforeFirstPurchaseRankedReport"
 >title="Veja o número de dias que se passaram entre a primeira vez que um(a) visitante chega ao site e o momento em que realiza uma compra. Por exemplo, se um visitante efetua uma compra um dia após a primeira visita, qualquer visita ou evento subsequente pertence ao item de dimensão “1 dia”."
 >abstract="**Isso pode ajudar** a entender melhor quanto tempo os visitantes levam para fazer uma compra.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como atualizar o site para incentivar aquisições mais rápidas.<br/>Este modelo usa a dimensão &quot;Dias antes da primeira compra&quot;."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--daysSinceLastPurchaseRankedReport"
 >title="Visualize a quantidade de tempo decorrido entre a ocorrência atual do visitante e sua compra mais recente no momento."
 >abstract="**Isso pode ajudar** a entender melhor o comportamento do visitante após comprar algo no site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como atualizar o site para incentivar compras subsequentes.<br/>Este modelo usa a dimensão &quot;Dias desde a última compra&quot;."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--mobileScreenSizeRankedReport"
 >title="Visualize os principais tamanhos de tela de dispositivos móveis que as pessoas usam para acessar o site."
 >abstract="**Isso pode ajudar** a entender melhor como o conteúdo é exibido para visitantes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a qualidade do site ao testar novas versões dele usando os tamanhos de tela de dispositivos móveis mais comuns. Isso pode maximizar ações de controle de qualidade."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--mobileScreenHeightRankedReport"
 >title="Visualize as principais alturas de tela de dispositivos móveis que as pessoas usam para acessar o site."
 >abstract="**Isso pode ajudar** a entender melhor como o conteúdo é exibido para visitantes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a qualidade do site ao testar novas versões dele usando as alturas de tela de dispositivos móveis mais comuns. Isso pode maximizar ações de controle de qualidade."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--mobileScreenWidthRankedReport"
 >title="Visualize as principais larguras de tela de dispositivos móveis que as pessoas usam para acessar o site."
 >abstract="**Isso pode ajudar** a entender melhor como o conteúdo é exibido para visitantes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a qualidade do site ao testar novas versões dele usando as larguras de tela de dispositivos móveis mais comuns. Isso pode maximizar ações de controle de qualidade."
 
-<!-- markdownlint-enable MD034 -->
 
 <!--Both AA and CJA-->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--countryGeoReport"
 >title="Veja o país de origem das pessoas que visitam o site."
 >abstract="**Isso pode ajudar** a entender melhor quais são os principais países de origem de visitantes do site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como usar os dados para aumentar o foco das campanhas de marketing nesses países ou garantir que a experiência do site seja ideal em países com diferentes idiomas nativos.<br/>Este modelo usa a dimensão “Países”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--stateGeoReport"
 >title="Veja o estado (nos Estados Unidos) de origem das pessoas que visitaram o site. Ele é semelhante ao modelo “Regiões geográficas”, exceto pelo fato de ser específico para os Estados Unidos."
 >abstract="**Isso pode ajudar** a entender melhor os principais estados de origem dos usuários dos Estados Unidos que visitam o seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como usar os dados para aumentar o foco das campanhas de marketing nesses estados.<br/>Este modelo utiliza a dimensão “Estados dos EUA”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--regionGeoReport"
 >title="Veja a região geográfica de origem de visitantes do site. Uma região é uma área geográfica menor que um país, mas maior que uma cidade. Em alguns países, uma região é um estado, província ou distrito. Em outras áreas, é um país constituinte, departamento ou região metropolitana. "
 >abstract="**Isso pode ajudar** a entender melhor as regiões de origem principais de visitantes do seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como usar os dados para aumentar o foco das campanhas de marketing nessas regiões ou verificar se a experiência do site é ideal em regiões com diferentes idiomas nativos. <br/>Este modelo usa as dimensões “ID (variáveis/país geográfico)” e “Regiões”. "
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--cityGeoReport"
 >title="Veja a cidade de origem de visitantes do site."
 >abstract="**Isso pode ajudar** a entender melhor as cidades de origem principais de visitantes do seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como usar os dados para aumentar o foco das campanhas de marketing nessas cidades. <br/>Este modelo usa a dimensão “Cidades”"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--dmaGeoReport"
 >title="Veja as áreas de marketing designadas (DMAs) de origem de visitantes do site nos Estados Unidos."
 >abstract="**Isso pode ajudar** a entender melhor as regiões de origem principais de visitantes do seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como usar os dados para aumentar o foco das campanhas de marketing nas regiões mais bem-sucedidas. "
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--languageRankedReport"
 >title="Veja os principais idiomas nos quais visitantes preferem visualizar o conteúdo."
 >abstract="**Isso pode ajudar** a entender melhor os idiomas preferidos de visitantes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das atividades de localização ou campanhas de marketing nos idiomas mais populares.<br/>Este modelo usa a dimensão “Idioma”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--web-technology-template"
 >title="Veja as informações relacionadas à tecnologia que as pessoas usam para acessar o seu site, como sistemas operacionais, navegadores e dispositivos."
 >abstract="**Isso pode ajudar** a entender melhor quais tecnologias são usadas com mais frequência no acesso ao site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar o site para as tecnologias utilizadas."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--browserRankedReport"
 >title="Veja o nome e a versão dos principais navegadores que as pessoas usam para acessar o seu site."
 >abstract="**Isso pode ajudar** a entender melhor os navegadores mais comuns que visitantes usam.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a qualidade do site por testar novas versões dele nos principais navegadores. Isso pode maximizar ações de controle de qualidade.<br/>Este modelo usa a dimensão “Navegador”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--browserTypeRankedReport"
 >title="Veja os nomes das organizações que criaram os principais navegadores que as pessoas usam para acessar o seu site. Ele é diferente do modelo “Navegador”, pois não lista diferentes versões do mesmo navegador como itens de dimensão separados."
 >abstract="**Isso pode ajudar** a entender melhor os navegadores mais comuns que visitantes usam <br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a qualidade do site por testar novas versões dele nos principais navegadores. Isso pode maximizar os resultados do controle de qualidade. <br/>Esse modelo utiliza a dimensão “Tipo de navegador”. "
 
-<!-- markdownlint-enable MD034 -->
 
 Estes são os modelos disponíveis:
 
@@ -971,178 +658,104 @@ Estes são os modelos disponíveis:
 
 <!--AA only-->
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--mobile-app-acquisition-template"
 >title="Visualize como o site obtém visitantes em dispositivos móveis."
 >abstract="**Isso pode ajudar** a entender melhor os vários fatores que levam à aquisição, como palavras-chave de pesquisa, domínio de referência e assim por diante.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing nos canais mais eficientes.<br/>Este modelo usa as métricas “Taxa de rejeição” e “Rejeições”. Ele também usa as dimensões Mecanismo de pesquisa, Palavra-chave de pesquisa, Página de entrada, Domínio referenciador, Código de rastreamento e Referenciador."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="aa-template--advertisingAnalyticsPaidSearch"
 >title="Visualize todos os dados de pesquisa paga do Google e do Bing lado a lado."
 >abstract="**Isso pode ajudar** a entender melhor a quantidade de tráfego que está sendo enviada para o site e se os clientes estão sendo convertidos.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como estimar o custo/benefício de uma campanha publicitária."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="aa-template--searchEngineRankRankedReport"
 >title="Veja em qual página dos resultados da pesquisa um(a) visitante clicou para acessar o site. Por exemplo, se o site for exibido na segunda página dos resultados de pesquisa de um mecanismo de pesquisa, o item de dimensão para essa variável será Página de pesquisa 2."
 >abstract="**Isso pode ajudar** a entender melhor a classificação das suas páginas em resultados de pesquisa.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar sua estratégia de SEO para garantir que o conteúdo apareça na primeira página dos resultados de pesquisa."
 
-<!-- markdownlint-enable MD034 -->
 
 <!--Both AA and CJA-->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--marketing-channel-overview-template"
 >title="Por meio da atribuição personalizada, este modelo mostra como visitantes chegam ao seu site."
 >abstract="**Isso pode ajudar** a entender melhor quais dos seus canais de marketing são mais eficazes.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o investimento em canais de marketing eficazes e livrar-se de canais de marketing menos eficazes.<br/>Este modelo usa a dimensão “ID (variáveis/canal de marketing)” e a métrica “Receita”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--firstouchChannelRankedReport"
 >title="Veja o primeiro canal de marketing com o qual um visitante corresponde durante seu período de engajamento (30 dias, por padrão)."
 >abstract="**Isso pode ajudar** a entender melhor quais canais de marketing geram o tráfego inicial para o seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.<br/>Este modelo usa a dimensão “Canal de primeiro contato”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--firstouchChannelDetailRankedReport"
 >title="Veja os detalhes do primeiro canal de marketing que um(a) visitante utiliza durante o seu período de engajamento (30 dias por padrão)."
 >abstract="**Isso pode ajudar** a entender melhor o que contribuiu para que a visita ocorresse por meio daquele canal de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga”, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.<br/>Este modelo usa a dimensão “Detalhes do canal de primeiro contato”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--campaignConversionReport"
 >title="Veja o número de cliques e check-outs das suas campanhas."
 >abstract="**Isso pode ajudar** a entender melhor como as campanhas de marketing estão impulsionando a conversão.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como determinar quais campanhas de marketing estão gerando maior ROI."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--retail-campaign-performance-template"
 >title="Veja os detalhes do desempenho das suas campanhas de marketing."
 >abstract="**Isso pode ajudar** a entender melhor os vários indicadores de sucesso associados às campanhas, como receita, exibições de produtos, pedidos e assim por diante.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing nas maiores fontes de receita. <br/>Este modelo usa as métricas “Receita”, “Exibições do produto”, “Adições ao carrinho”, “Pedidos” e “Unidades”. Ele também usa a dimensão Código de rastreamento e Domínio referenciador."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--web-acquisition-template"
 >title="Veja como o seu site obtém visitantes."
 >abstract="**Isso pode ajudar** a entender melhor os vários fatores que levam à aquisição, como palavras-chave de pesquisa, domínio de referência e assim por diante.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing nos canais mais eficientes.<br/>Este modelo usa as métricas “Taxa de rejeição” e “Rejeições”. Ele também usa as dimensões Mecanismo de pesquisa, Palavra-chave de pesquisa, Página de entrada, Domínio referenciador, Código de rastreamento e Referenciador."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--searchKeywordRankedReport"
 >title="Confira as palavras-chave de pesquisa que os visitantes usam para acessar o seu site, sejam elas pagas ou naturais."
 >abstract="**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que resultam no tráfego do site. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave usadas e as que estão gerando tráfego para o site. <br/>Este modelo usa a dimensão “Palavra-chave de pesquisa”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--searchPaidKeywordRankedReport"
 >title="Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site que correspondem à detecção de pesquisa paga."
 >abstract="**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site.<br/>**Com base no que aprender, é possível** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave usadas e as que estão gerando tráfego para o site. <br/>Este modelo usa a dimensão “Palavra-chave de pesquisa paga”. "
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--searchNaturalKeywordRankedReport"
 >title="Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site e que não correspondem à detecção de pesquisa paga."
 >abstract="**Isso pode ajudar** a entender melhor as palavras-chave que as pessoas usam em pesquisas que geram tráfego para o site.<br/>**Com base no que aprender, é possível** fazer várias coisas, como identificar e preencher lacunas de SEO entre as palavras-chave usadas e as que estão gerando tráfego para o site. <br/>Este modelo usa a dimensão “Palavra-chave de pesquisa natural”. "
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--searchRankedReport"
 >title="Confira os mecanismos de pesquisa que os visitantes usam para acessar o seu site, sejam eles pagos ou naturais."
 >abstract="**Isso pode ajudar** a entender melhor os mecanismos de pesquisa usados pelas pessoas que resultam em tráfego para o site. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco de SEO nos mecanismos de pesquisa que geram mais tráfego para o site.<br/>Este modelo usa a dimensão “Mecanismo de pesquisa”. "
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--searchPaidRankedReport"
 >title="Veja os mecanismos de pesquisa que visitantes usam para acessar o seu site e que correspondem à detecção de pesquisa paga."
 >abstract="**Isso pode ajudar** a entender melhor os mecanismos de pesquisa usados pelas pessoas que resultam em tráfego para o site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco de SEO nos mecanismos de pesquisa que geram mais tráfego para o site. <br/>Este modelo usa a dimensão “Mecanismo de pesquisa paga”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--searchNaturalRankedReport"
 >title="Veja as palavras-chave de pesquisa que visitantes usam para acessar o seu site e que não correspondem à detecção de pesquisa paga."
 >abstract="**Isso pode ajudar** a entender melhor os mecanismos de pesquisa usados pelas pessoas que resultam em tráfego para o site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco de SEO nos mecanismos de pesquisa que geram mais tráfego para o site.<br/>Este modelo usa a dimensão “Mecanismo de pesquisa natural”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--referringDomainRankedReport"
 >title="Veja em quais domínios as pessoas clicam para acessar o seu site."
 >abstract="**Isso pode ajudar** a entender quais sites de terceiros geram mais tráfego para o seu site. (Deve haver um link no site externo e o(a) visitante precisa clicar nele para que o item de dimensão seja exibido.)<br/>**Com base no que aprender, você poderá** fazer várias coisas, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses de visitantes provenientes dos principais domínios referenciadores. <br/>Este modelo usa a dimensão “Domínio referenciador”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--referringDomainOriginalRankedReport"
 >title="Veja o primeiro domínio referenciador no qual as pessoas clicam para acessar o seu site. (Depois de definido, ele mantém o mesmo valor por toda a vida útil da ID do(a) visitante em questão.)"
 >abstract="**Isso pode ajudar** a entender melhor quais sites de terceiros originalmente geram tráfego para o seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses de visitantes provenientes dos principais domínios referenciadores originais. <br/>Este modelo usa a dimensão “Domínio referenciador original”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--referrerRankedReport"
 >title="Veja em quais URLs os visitantes estavam quando clicaram para chegar ao site. (Deve haver um link no URL externo e o(a) visitante precisa clicar nele para que o item de dimensão seja exibido.)"
 >abstract="**Isso pode ajudar** a entender quais URLs específicos geram mais tráfego para o seu site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses de visitantes provenientes dos principais URLs. <br/>Este modelo usa a dimensão “Domínio referenciador”.</p>"
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--referrerTypeRankedReport"
 >title="Veja em quais canais genéricos os(as) visitantes clicaram para acessar o seu site. A Adobe mantém as regras de cada canal. Os possíveis canais incluem mecanismos de pesquisa, redes sociais, outros sites, disco rígido ou email."
 >abstract="**Isso pode ajudar** a entender melhor qual tipo de referenciador gera mais tráfego para o site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses de visitantes provenientes de um determinado canal.<br/>Este modelo usa a dimensão “Tipo de referenciador”."
 
-<!-- markdownlint-enable MD034 -->
 
 Estes são os modelos disponíveis:
 
@@ -1170,79 +783,49 @@ Estes são os modelos disponíveis:
 
 ### Dispositivos móveis: aplicativo móvel {#mobile-app}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--mobileappscreens"
 >title="Visualize o número de eventos, sessões e pessoas associados a cada tela no aplicativo móvel."
 >abstract="**Isso pode ajudar** a entender melhor quais telas do site são as mais visitadas.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aprimorar o conteúdo nas telas mais populares."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--mobileappactions"
 >title="Confira as ações que as pessoas estão realizando no aplicativo móvel."
 >abstract="**Isso pode ajudar** a entender melhor como as pessoas estão usando o seu aplicativo e o valor que estão obtendo com ele.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como desenvolver recursos que complementem ou aprimorem as mais populares."
 
-<!-- markdownlint-enable MD034 -->
 
 <!--CJA only-->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--mobile-lifecycle-metrics-app-usage-template"
 >title="Visualize o número de usuários, inicializações e primeiras inicializações no seu aplicativo, bem como a duração média das sessões."
 >abstract="**Isso pode ajudar** a entender melhor o quanto o aplicativo é usado. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar o desempenho do aplicativo para adequá-lo ao nível de uso."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-journeys"
 >title="Veja os principais padrões de uso do aplicativo móvel."
 >abstract="**Isso pode ajudar** a entender melhor como as pessoas usam o aplicativo. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a transição de pessoas de uma tela à outra para direcionar os fluxos de trabalho mais comuns."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-key-metrics"
 >title="Veja algumas das métricas mais comuns do aplicativo móvel."
 >abstract="**Isso pode ajudar** a entender melhor o desempenho básico do aplicativo móvel.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como avaliar a integridade e o desempenho geral do aplicativo."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-messaging"
 >title="Visualize dados de desempenho de mensagens no aplicativo e por push."
 >abstract="**Isso pode ajudar** a entender melhor como as pessoas usam os recursos de mensagem no aplicativo, bem como a eficiência com que as notificações por push direcionam tráfego para o aplicativo.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a experiência de notificações por push e mensagens no aplicativo."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-performance-template"
 >title="Veja o desempenho do aplicativo e onde usuários estão com problemas."
 >abstract="**Isso pode ajudar** a entender se as pessoas que usam o aplicativo estão encontrando lentidão ou desempenho degradado. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como corrigir problemas existentes ou melhorar o desempenho do aplicativo antes que eles ocorram."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-retention"
 >title="Veja quais são os usuários mais fiéis do aplicativo e o que fazem nele."
 >abstract="**Isso pode ajudar** a entender melhor como os usuários mais fiéis usam o aplicativo.<br/>**Com base no que aprender, é possível** fazer várias coisas, como aprimorar as campanhas de marketing para os recursos que seus usuários mais fiéis usam."
 
-<!-- markdownlint-enable MD034 -->
 
 Estes são os modelos disponíveis:
 
@@ -1259,41 +842,26 @@ Estes são os modelos disponíveis:
 
 ### Dispositivos móveis: informações sobre dispositivos móveis {#mobile-devices}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--mobileCarrierRankedReport"
 >title="Veja a empresa de telecomunicação que fornece conectividade de rede celular aos dispositivos móveis que as pessoas usam para acessar o seu site."
 >abstract="**Isso pode ajudar** a entender melhor quais operadoras de celular são mais usadas pela sua base de usuários.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como adaptar a entrega de conteúdo com base nos recursos de rede de diferentes operadoras para garantir uma experiência de usuário fluida.<br/>Este modelo usa a dimensão “Operadora de celular”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--mobileDeviceNameRankedReport"
 >title="Veja a marca e o modelo dos dispositivos móveis que as pessoas usam para acessar o seu site."
 >abstract="**Isso pode ajudar** a entender melhor quais dispositivos móveis são mais usados pela sua base de usuários.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar a renderização do site para os dispositivos móveis mais comuns.<br/>Este modelo usa a dimensão “Nome do dispositivo móvel”."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="template--mobileDeviceTypeRankedReport"
 >title="Veja os tipos de dispositivos móveis que as pessoas usam para acessar o site, como celulares e tablets."
 >abstract="**Isso pode ajudar** a entender melhor os vários tipos de dispositivos móveis usados para acessar o site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar o site para os tipos de dispositivos móveis mais usados.<br/>Este modelo usa a dimensão “Tipo de dispositivo móvel”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="template--mobileManufacturerRankedReport"
 >title="Veja quais fabricantes produzem os dispositivos móveis que as pessoas usam para acessar o seu site, como Apple e Samsung."
 >abstract="**Isso pode ajudar** a entender melhor quais fabricantes são mais usados pela sua base de usuários.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como adaptar a entrega de conteúdo com base nos recursos de diferentes fabricantes para garantir uma experiência de usuário fluida.<br/>Este modelo usa a dimensão “Fabricante do dispositivo móvel”."
 
-<!-- markdownlint-enable MD034 -->
 
 Estes são os modelos disponíveis:
 
@@ -1308,95 +876,56 @@ Estes são os modelos disponíveis:
 
 <!--CJA only-->
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--minuteOfHour"
 >title="Visualize o número de eventos, sessões e pessoas no site, com detalhamento por minuto. Por exemplo, se você tiver um relatório com um período de relatório de um único dia, o primeiro minuto de cada hora do dia será agrupado no mesmo item de dimensão."
 >abstract="**Isso pode ajudar** a entender melhor as tendências em um nível detalhado.<br/>**Com base no que aprender, poderá** fazer várias coisas, como otimizar recursos para horários de pico, a cada minuto.<br/>Este modelo usa a dimensão &quot;Minuto da hora&quot;."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--hourOfDay"
 >title="Veja eventos, sessões e pessoas no site, divididos por hora do dia. Por exemplo, se você tiver um relatório que abrange de 1º de janeiro a 7 de janeiro, a primeira hora de cada dia será agrupada no mesmo item de dimensão."
 >abstract="**Isso pode ajudar** a entender melhor os momentos do dia em que o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como atribuir mais recursos de computação ao site durante horas de alto tráfego.<br/>Este modelo usa a dimensão &quot;Hora do dia&quot;."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--am-pm"
 >title="Visualize eventos, sessões e pessoas no site, divididos por AM e PM. Por exemplo, se você tiver um relatório que abrange de 1º de janeiro a 7 de janeiro, as horas AM de cada dia serão agrupadas no mesmo item de dimensão."
 >abstract="***Isso pode ajudar** a entender melhor os momentos do dia em que o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como atribuir mais recursos de computação ao site durante horas de alto tráfego.<br/>Este modelo usa a dimensão &quot;AM/PM&quot;."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--dayOfWeek"
 >title="Visualize eventos, sessões e pessoas no site, divididos por dia da semana. Por exemplo, se você tiver um relatório que abrange o mês de janeiro, cada dia da semana será agrupado no mesmo item de dimensão."
 >abstract="**Isso pode ajudar** a entender melhor quais os dias da semana em que o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como preparar a equipe da sua central de atendimento de forma mais adequada para dias de alto tráfego.<br/>Este modelo usa a dimensão &quot;Dia da semana&quot;."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--dayOfMonth"
 >title="Exibir eventos, sessões e pessoas no site, divididos por dia do mês. Por exemplo, se você tiver um relatório que abrange um ano inteiro, cada dia do mês será agrupado no mesmo item de dimensão."
 >abstract="**Isso pode ajudar** a entender melhor quais dias de cada mês em que o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como preparar a equipe da sua central de atendimento de forma mais adequada para dias de alto tráfego.<br/>Este modelo usa a dimensão &quot;Dia do mês&quot;."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--dayOfYear"
 >title="Visualize eventos, sessões e pessoas no site, divididos por dia do ano. Por exemplo, se você tiver um relatório que abrange vários anos, cada dia do ano será agrupado no mesmo item de dimensão."
 >abstract="**Isso pode ajudar** a entender melhor quais dias de cada ano em que o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como preparar a equipe da sua central de atendimento de forma mais adequada para dias de alto tráfego.<br/>Este modelo usa a dimensão &quot;Dia do ano&quot;."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--weekdayWeekend"
 >title="Visualize eventos, sessões e pessoas no site, divididos por dias da semana e fins de semana. Por exemplo, se você tiver um relatório que abrange o mês de janeiro, os dias da semana e os finais de semana serão agrupados em itens de dimensão separados."
 >abstract="**Isso pode ajudar** a entender melhor as diferenças no tráfego do site entre os dias da semana e os fins de semana.<br/>**Com base no que aprender, poderá** fazer várias coisas, como aumentar a equipe da sua central de atendimento nos fins de semana, se o relatório indicar que os fins de semana possuem um tráfego mais alto do que os dias de semana.<br/>Este modelo usa a dimensão &quot;Dia da semana/Fim de semana&quot;."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--weekOfYear"
 >title="Visualize eventos, sessões e pessoas no site, divididos por semana do ano. Por exemplo, se você tiver um relatório que abrange vários anos, cada semana será agrupada no mesmo item de dimensão."
 >abstract="**Isso pode ajudar** a entender melhor em quais semanas do ano o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como preparar a equipe da sua central de atendimento de forma mais adequada para semanas de alto tráfego, por exemplo, durante os feriados.<br/>Este modelo usa a dimensão &quot;Semana do ano&quot;."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--monthOfYear"
 >title="Visualize eventos, sessões e pessoas no site, divididos por mês do ano. Por exemplo, se você tiver um relatório que abrange vários anos, cada mês será agrupado no mesmo item de dimensão."
 >abstract="**Isso pode ajudar** a entender melhor em quais meses o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, poderá** fazer várias coisas, como preparar a equipe da sua central de atendimento de forma mais adequada para meses de alto tráfego, por exemplo, durante os feriados.<br/>Este modelo usa a dimensão “Mês do ano”."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--quarterOfYear"
 >title="Visualize eventos, sessões e pessoas no site, divididos por trimestre do ano. Por exemplo, se você tiver um relatório que abrange vários anos, cada trimestre será agrupado no mesmo item de dimensão."
 >abstract="**Isso pode ajudar** a entender melhor quais trimestres o site é visitado com maior e com menor frequência.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como agendar o lançamento de produtos para impulsionar trimestres com histórico de baixo tráfego.<br/>Este modelo usa a dimensão &quot;Trimestre do ano&quot;."
 
-<!-- markdownlint-enable MD034 -->
 
 Estes são os modelos disponíveis:
 
@@ -1417,41 +946,26 @@ Estes são os modelos disponíveis:
 
 <!--CJA only-->
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--multiChannelOverview"
 >title="Visualize a distribuição do tráfego entre vários canais."
 >abstract="**Isso pode ajudar** a entender melhor quais canais estão direcionando o tráfego e o engajamento com mais êxito. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como concentrar as campanhas de marketing nos canais que estão gerando o maior retorno do investimento.<br/>Este modelo usa as métricas &quot;usuário&quot;, &quot;sessão&quot; e &quot;evento&quot;."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--callCenterDeflection"
 >title="Visualize como o tráfego da web afeta o tráfego da central de atendimento."
 >abstract="**Isso pode ajudar** a entender melhor com que êxito o conteúdo de autoatendimento do site está desviando o tráfego da central de atendimento.<br/>**Com base no que aprender, poderá** fazer várias coisas, como aprimorar o conteúdo de autoatendimento para diminuir o tráfego da central de atendimento, ou medir o ROI do conteúdo de autoatendimento calculando a quantia economizada com menos chamadas de suporte.<br/>Este modelo usa as métricas &quot;Sessões da web&quot;, &quot;Sessões de aplicativo móvel&quot; e &quot;Sessões entre canais da web+aplicativo&quot;."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--webAppTemplate"
 >title="Visualize o tráfego da web e o tráfego móvel juntos."
 >abstract="**Isso pode ajudar** a entender melhor a distribuição do tráfego da web e do tráfego móvel no site.<br/>**Com base no que aprender, poderá** fazer várias coisas, como dedicar mais recursos à experiência de aplicativo móvel quando ela atingir um determinado nível de tráfego.<br/>Este modelo usa as métricas &quot;Sessões da web&quot;, &quot;Sessões de aplicativo móvel&quot; e &quot;Sessões entre canais da web+aplicativo&quot;."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--onlineOffline"
 >title="Visualize o tráfego online e offline em conjunto."
 >abstract="**Isso pode ajudar** a entender melhor sobre a distribuição do tráfego online e offline para o site.<br/>**Com base no que aprender, poderá** fazer várias coisas, como dedicar mais recursos à sua experiência online quando ela atingir um determinado nível de tráfego."
 
-<!-- markdownlint-enable MD034 -->
 
 Estes são os modelos disponíveis:
 
@@ -1463,8 +977,6 @@ Estes são os modelos disponíveis:
 | **Desvio da central de atendimento** | Visualize como o tráfego da web afeta o tráfego da central de atendimento.<p>**Isso pode ajudar** a entender melhor com que êxito o conteúdo de autoatendimento do site está desviando o tráfego da central de atendimento.</p><p>**Com base no que aprender, poderá** fazer várias coisas, como aprimorar o conteúdo de autoatendimento para diminuir o tráfego da central de atendimento, ou medir o ROI do conteúdo de autoatendimento calculando a quantia economizada com menos chamadas de suporte.</p><p>Este modelo usa as métricas Sessões da web, Sessões de aplicativo móvel e Sessões entre canais da web+aplicativo.</p> |
 
 ### Outros canais {#other-channels}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--callcenterdashboard"
@@ -1491,7 +1003,6 @@ Estes são os modelos disponíveis:
 >title="Veja como sua organização usa o Customer Journey Analytics. "
 >abstract="**Isso pode ajudar** a entender melhor quantas pessoas na organização usam o Customer Journey Analytics, a frequência de uso e as tendências desses dados ao longo do tempo. Também é possível ver o número de projetos criados e detalhes sobre esses projetos. Veja quais componentes, visualizações e painéis são usados com mais frequência, entre outras estatísticas de uso.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como excluir projetos ou componentes não utilizados ou fornecer treinamento a usuários para recursos populares."
 
-<!-- markdownlint-enable MD034 -->
 
 Estes são os modelos disponíveis:
 
@@ -1507,50 +1018,30 @@ Estes são os modelos disponíveis:
 
 <!--CJA only-->
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-campaign"
 >title="Visualize métricas essenciais para as campanhas do Journey Optimizer, incluindo campanhas por email, experimentação, no aplicativo, SMS, entre outras."
 >abstract="**Isso pode ajudar** a entender melhor detalhes como a contagem de cliques e o número de mensagens entregues, oferecendo um insight abrangente sobre a eficácia e o nível de engajamento da campanha.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas com base nos níveis de engajamento do público-alvo."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-journey"
 >title="Visualize métricas essenciais para as jornadas do Journey Optimizer, incluindo jornadas por email, experimentação, no aplicativo, SMS, entre outras."
 >abstract="**Isso pode ajudar** a entender melhor detalhes como a contagem de cliques e o número de mensagens entregues, oferecendo um insight abrangente sobre a eficácia e o nível de engajamento da jornada.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas com base nos níveis de engajamento do público-alvo."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-landing-page"
 >title="Visualize o comportamento do usuário, padrões de engajamento, taxas de conversão e outras métricas principais."
 >abstract="**Isso pode ajudar** a entender melhor a eficácia da página de destino. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar o desempenho da página de destino."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
 >title="Visualize um resumo completo das métricas de engajamento e tráfego para todas as campanhas e jornadas no ambiente."
 >abstract="**Isso pode ajudar** a entender melhor a eficácia de alto nível das campanhas e jornadas. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas e jornadas com base nos níveis de engajamento do público-alvo."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
 >title="Visualize assinaturas e cancelamentos de assinaturas de perfis associados a listas específicas."
 >abstract="**Isso pode ajudar** a entender melhor a eficácia de diferentes campanhas de assinatura e iniciativas na promoção do engajamento e das conversões.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas de assinatura com base nos níveis de engajamento do público-alvo."
-
-<!-- markdownlint-enable MD034 -->
 
 Estes são os modelos disponíveis:
 
@@ -1561,3 +1052,38 @@ Estes são os modelos disponíveis:
 | **Páginas de destino do Journey Optimizer** | Visualize o comportamento do usuário, padrões de engajamento, taxas de conversão e outras métricas principais.<p>**Isso pode ajudar** a entender melhor a eficiência da página de destino. </p><p>**Com base no que aprender, poderá** fazer várias coisas, como otimizar o desempenho da página de aterrisagem.</p> |
 | **Relatório de visão geral do Journey Optimizer** | Visualize um resumo completo das métricas de engajamento e tráfego para todas as campanhas e jornadas no ambiente.<p>**Isso pode ajudar** a entender melhor a eficiência de alto nível das campanhas e jornadas.  </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas e jornadas com base nos níveis de engajamento do público-alvo.</p> |
 | **Assinaturas do Journey Optimizer** | Visualize assinaturas e cancelamentos de assinaturas de perfis associados a listas específicas.<p>**Isso pode ajudar** a entender melhor a eficácia de diferentes campanhas de assinatura e iniciativas na promoção do engajamento e das conversões.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas de assinatura com base nos níveis de engajamento do público-alvo.</p> |
+
+
+
+
+### Modelos B2B {#b2b-templates}
+
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}
+
+
+{{release-limited-testing-section}}
+
+<!-- CJA B2B Edition only -->
+
+>[!CONTEXTUALHELP]
+>id="cja-template--b2b-account-engagement"
+>title="Veja como suas contas são ativas em eventos, pessoas e oportunidades."
+>abstract="**Isso pode ajudá-lo** a entender melhor se o envolvimento no nível da conta está aumentando ou diminuindo, comparar a atividade entre as contas e decidir onde concentrar os esforços de retenção ou aquisição.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como focalizar novamente sua atenção nas contas menos engajadas, mas que exigem mais atenção devido à importância da conta."
+
+>[!CONTEXTUALHELP]
+>id="cja-template--b2b-opportunity-enagement"
+>title="Rastreie o engajamento no nível da oportunidade e supere as negociações ganhando ou perdendo força."
+>abstract="**Isso pode ajudá-lo** a prever com mais precisão a progressão dos negócios e a focalizar a habilitação nos casos em que há picos ou interrupções no engajamento.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como colocar alguns esforços adicionais em ofertas que estão quase fechadas e pesquisar por que outras ofertas estão perdendo força."
+
+>[!CONTEXTUALHELP]
+>id="cja-template--b2b-buying-group-activity"
+>title="Visualize a atividade de grupos de compra em cada conta para informar as opções de marketing por conta e por grupo de compra."
+>abstract="**Isso pode ajudá-lo** a visualizar quais grupos de compras e quais pessoas dentro desses grupos estão mais engajadas, destacando as lacunas na participação dos grupos.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como tentar envolver mais as pessoas em grupos de compra que parecem não estar envolvidos."
+
+Estes são os modelos disponíveis:
+
+| Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **Visão geral do Envolvimento da Conta B2B**] | Veja como suas contas são ativas em eventos, pessoas e oportunidades.<p>**Isso pode ajudá-lo** a entender melhor se o envolvimento no nível da conta está aumentando ou diminuindo, comparar a atividade entre as contas e decidir onde concentrar os esforços de retenção ou aquisição.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como focalizar novamente sua atenção nas contas menos engajadas, mas que exigem mais atenção devido à importância da conta.</p> |
+| [!UICONTROL **Visão geral do Compromisso de Oportunidade B2B**] | Rastreie o engajamento no nível da oportunidade e supere as negociações ganhando ou perdendo força.<p>**Isso pode ajudá-lo** a prever com mais precisão a progressão dos negócios e a focalizar a habilitação nos casos em que há picos ou interrupções no engajamento.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como colocar alguns esforços adicionais em ofertas que estão quase fechadas e pesquisar por que outras ofertas estão perdendo força.</p> |
+| [!UICONTROL **Atividade de Grupo de Compras B2B**] | Visualize a atividade de grupos de compra em cada conta para informar as opções de marketing por conta e por grupo de compra.<p>**Isso pode ajudá-lo** a visualizar quais grupos de compras e quais pessoas dentro desses grupos estão mais engajadas, destacando as lacunas na participação dos grupos.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como tentar envolver mais as pessoas em grupos de compra que parecem não estar envolvidos.</p> |
