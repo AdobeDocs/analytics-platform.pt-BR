@@ -4,7 +4,7 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1b52969f178a31ef90f1969f3a1637258a480c57
+source-git-commit: df069a7a67c65db9eb70900869495202f63abd05
 workflow-type: tm+mt
 source-wordcount: '20276'
 ht-degree: 97%
@@ -1071,7 +1071,7 @@ Estes são os modelos disponíveis:
 >abstract="**Isso pode ajudá-lo** a entender melhor se o envolvimento no nível da conta está aumentando ou diminuindo, comparar a atividade entre as contas e decidir onde concentrar os esforços de retenção ou aquisição.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como focalizar novamente sua atenção nas contas menos engajadas, mas que exigem mais atenção devido à importância da conta."
 
 >[!CONTEXTUALHELP]
->id="cja-template--b2b-opportunity-enagement"
+>id="cja-template--b2b-opportunity-engagement"
 >title="Rastreie o engajamento no nível da oportunidade e supere as negociações ganhando ou perdendo força."
 >abstract="**Isso pode ajudá-lo** a prever com mais precisão a progressão dos negócios e a focalizar a habilitação nos casos em que há picos ou interrupções no engajamento.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como colocar alguns esforços adicionais em ofertas que estão quase fechadas e pesquisar por que outras ofertas estão perdendo força."
 
