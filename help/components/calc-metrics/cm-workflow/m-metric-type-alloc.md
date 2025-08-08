@@ -1,12 +1,12 @@
 ---
 description: Saiba mais sobre tipo de métrica e atribuição.
-title: Atribuição E Tipo De Métrica
+title: Tipo de métrica e atribuição
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -163,6 +163,6 @@ Consulte [Exemplo](#example) para ver um exemplo de uso de um modelo de atribu
 >[!MORELIKETHIS]
 >
 >[Configurações de componentes de atribuição](/help/data-views/component-settings/attribution.md)
->&#x200B;>[Métrica de participação](participation-metric.md)
+>>[Métrica de participação](participation-metric.md)
 >
 
